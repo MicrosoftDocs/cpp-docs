@@ -4,7 +4,6 @@ title: "CDC Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CDC", "AFXWIN/CDC", "AFXWIN/CDC::CDC", "AFXWIN/CDC::AbortDoc", "AFXWIN/CDC::AbortPath", "AFXWIN/CDC::AddMetaFileComment", "AFXWIN/CDC::AlphaBlend", "AFXWIN/CDC::AngleArc", "AFXWIN/CDC::Arc", "AFXWIN/CDC::ArcTo", "AFXWIN/CDC::Attach", "AFXWIN/CDC::BeginPath", "AFXWIN/CDC::BitBlt", "AFXWIN/CDC::Chord", "AFXWIN/CDC::CloseFigure", "AFXWIN/CDC::CreateCompatibleDC", "AFXWIN/CDC::CreateDC", "AFXWIN/CDC::CreateIC", "AFXWIN/CDC::DeleteDC", "AFXWIN/CDC::DeleteTempMap", "AFXWIN/CDC::Detach", "AFXWIN/CDC::DPtoHIMETRIC", "AFXWIN/CDC::DPtoLP", "AFXWIN/CDC::Draw3dRect", "AFXWIN/CDC::DrawDragRect", "AFXWIN/CDC::DrawEdge", "AFXWIN/CDC::DrawEscape", "AFXWIN/CDC::DrawFocusRect", "AFXWIN/CDC::DrawFrameControl", "AFXWIN/CDC::DrawIcon", "AFXWIN/CDC::DrawState", "AFXWIN/CDC::DrawText", "AFXWIN/CDC::DrawTextEx", "AFXWIN/CDC::Ellipse", "AFXWIN/CDC::EndDoc", "AFXWIN/CDC::EndPage", "AFXWIN/CDC::EndPath", "AFXWIN/CDC::EnumObjects", "AFXWIN/CDC::Escape", "AFXWIN/CDC::ExcludeClipRect", "AFXWIN/CDC::ExcludeUpdateRgn", "AFXWIN/CDC::ExtFloodFill", "AFXWIN/CDC::ExtTextOut", "AFXWIN/CDC::FillPath", "AFXWIN/CDC::FillRect", "AFXWIN/CDC::FillRgn", "AFXWIN/CDC::FillSolidRect", "AFXWIN/CDC::FlattenPath", "AFXWIN/CDC::FloodFill", "AFXWIN/CDC::FrameRect", "AFXWIN/CDC::FrameRgn", "AFXWIN/CDC::FromHandle", "AFXWIN/CDC::GetArcDirection", "AFXWIN/CDC::GetAspectRatioFilter", "AFXWIN/CDC::GetBkColor", "AFXWIN/CDC::GetBkMode", "AFXWIN/CDC::GetBoundsRect", "AFXWIN/CDC::GetBrushOrg", "AFXWIN/CDC::GetCharABCWidths", "AFXWIN/CDC::GetCharABCWidthsI", "AFXWIN/CDC::GetCharacterPlacement", "AFXWIN/CDC::GetCharWidth", "AFXWIN/CDC::GetCharWidthI", "AFXWIN/CDC::GetClipBox", "AFXWIN/CDC::GetColorAdjustment", "AFXWIN/CDC::GetCurrentBitmap", "AFXWIN/CDC::GetCurrentBrush", "AFXWIN/CDC::GetCurrentFont", "AFXWIN/CDC::GetCurrentPalette", "AFXWIN/CDC::GetCurrentPen", "AFXWIN/CDC::GetCurrentPosition", "AFXWIN/CDC::GetDCBrushColor", "AFXWIN/CDC::GetDCPenColor", "AFXWIN/CDC::GetDeviceCaps", "AFXWIN/CDC::GetFontData", "AFXWIN/CDC::GetFontLanguageInfo", "AFXWIN/CDC::GetGlyphOutline", "AFXWIN/CDC::GetGraphicsMode", "AFXWIN/CDC::GetHalftoneBrush", "AFXWIN/CDC::GetKerningPairs", "AFXWIN/CDC::GetLayout", "AFXWIN/CDC::GetMapMode", "AFXWIN/CDC::GetMiterLimit", "AFXWIN/CDC::GetNearestColor", "AFXWIN/CDC::GetOutlineTextMetrics", "AFXWIN/CDC::GetOutputCharWidth", "AFXWIN/CDC::GetOutputTabbedTextExtent", "AFXWIN/CDC::GetOutputTextExtent", "AFXWIN/CDC::GetOutputTextMetrics", "AFXWIN/CDC::GetPath", "AFXWIN/CDC::GetPixel", "AFXWIN/CDC::GetPolyFillMode", "AFXWIN/CDC::GetROP2", "AFXWIN/CDC::GetSafeHdc", "AFXWIN/CDC::GetStretchBltMode", "AFXWIN/CDC::GetTabbedTextExtent", "AFXWIN/CDC::GetTextAlign", "AFXWIN/CDC::GetTextCharacterExtra", "AFXWIN/CDC::GetTextColor", "AFXWIN/CDC::GetTextExtent", "AFXWIN/CDC::GetTextExtentExPointI", "AFXWIN/CDC::GetTextExtentPointI", "AFXWIN/CDC::GetTextFace", "AFXWIN/CDC::GetTextMetrics", "AFXWIN/CDC::GetViewportExt", "AFXWIN/CDC::GetViewportOrg", "AFXWIN/CDC::GetWindow", "AFXWIN/CDC::GetWindowExt", "AFXWIN/CDC::GetWindowOrg", "AFXWIN/CDC::GetWorldTransform", "AFXWIN/CDC::GradientFill", "AFXWIN/CDC::GrayString", "AFXWIN/CDC::HIMETRICtoDP", "AFXWIN/CDC::HIMETRICtoLP", "AFXWIN/CDC::IntersectClipRect", "AFXWIN/CDC::InvertRect", "AFXWIN/CDC::InvertRgn", "AFXWIN/CDC::IsPrinting", "AFXWIN/CDC::LineTo", "AFXWIN/CDC::LPtoDP", "AFXWIN/CDC::LPtoHIMETRIC", "AFXWIN/CDC::MaskBlt", "AFXWIN/CDC::ModifyWorldTransform", "AFXWIN/CDC::MoveTo", "AFXWIN/CDC::OffsetClipRgn", "AFXWIN/CDC::OffsetViewportOrg", "AFXWIN/CDC::OffsetWindowOrg", "AFXWIN/CDC::PaintRgn", "AFXWIN/CDC::PatBlt", "AFXWIN/CDC::Pie", "AFXWIN/CDC::PlayMetaFile", "AFXWIN/CDC::PlgBlt", "AFXWIN/CDC::PolyBezier", "AFXWIN/CDC::PolyBezierTo", "AFXWIN/CDC::PolyDraw", "AFXWIN/CDC::Polygon", "AFXWIN/CDC::Polyline", "AFXWIN/CDC::PolylineTo", "AFXWIN/CDC::PolyPolygon", "AFXWIN/CDC::PolyPolyline", "AFXWIN/CDC::PtVisible", "AFXWIN/CDC::RealizePalette", "AFXWIN/CDC::Rectangle", "AFXWIN/CDC::RectVisible", "AFXWIN/CDC::ReleaseAttribDC", "AFXWIN/CDC::ReleaseOutputDC", "AFXWIN/CDC::ResetDC", "AFXWIN/CDC::RestoreDC", "AFXWIN/CDC::RoundRect", "AFXWIN/CDC::SaveDC", "AFXWIN/CDC::ScaleViewportExt", "AFXWIN/CDC::ScaleWindowExt", "AFXWIN/CDC::ScrollDC", "AFXWIN/CDC::SelectClipPath", "AFXWIN/CDC::SelectClipRgn", "AFXWIN/CDC::SelectObject", "AFXWIN/CDC::SelectPalette", "AFXWIN/CDC::SelectStockObject", "AFXWIN/CDC::SetAbortProc", "AFXWIN/CDC::SetArcDirection", "AFXWIN/CDC::SetAttribDC", "AFXWIN/CDC::SetBkColor", "AFXWIN/CDC::SetBkMode", "AFXWIN/CDC::SetBoundsRect", "AFXWIN/CDC::SetBrushOrg", "AFXWIN/CDC::SetColorAdjustment", "AFXWIN/CDC::SetDCBrushColor", "AFXWIN/CDC::SetDCPenColor", "AFXWIN/CDC::SetGraphicsMode", "AFXWIN/CDC::SetLayout", "AFXWIN/CDC::SetMapMode", "AFXWIN/CDC::SetMapperFlags", "AFXWIN/CDC::SetMiterLimit", "AFXWIN/CDC::SetOutputDC", "AFXWIN/CDC::SetPixel", "AFXWIN/CDC::SetPixelV", "AFXWIN/CDC::SetPolyFillMode", "AFXWIN/CDC::SetROP2", "AFXWIN/CDC::SetStretchBltMode", "AFXWIN/CDC::SetTextAlign", "AFXWIN/CDC::SetTextCharacterExtra", "AFXWIN/CDC::SetTextColor", "AFXWIN/CDC::SetTextJustification", "AFXWIN/CDC::SetViewportExt", "AFXWIN/CDC::SetViewportOrg", "AFXWIN/CDC::SetWindowExt", "AFXWIN/CDC::SetWindowOrg", "AFXWIN/CDC::SetWorldTransform", "AFXWIN/CDC::StartDoc", "AFXWIN/CDC::StartPage", "AFXWIN/CDC::StretchBlt", "AFXWIN/CDC::StrokeAndFillPath", "AFXWIN/CDC::StrokePath", "AFXWIN/CDC::TabbedTextOut", "AFXWIN/CDC::TextOut", "AFXWIN/CDC::TransparentBlt", "AFXWIN/CDC::UpdateColors", "AFXWIN/CDC::WidenPath", "AFXWIN/CDC::m_hAttribDC", "AFXWIN/CDC::m_hDC"]
 helpviewer_keywords: ["CDC [MFC], CDC", "CDC [MFC], AbortDoc", "CDC [MFC], AbortPath", "CDC [MFC], AddMetaFileComment", "CDC [MFC], AlphaBlend", "CDC [MFC], AngleArc", "CDC [MFC], Arc", "CDC [MFC], ArcTo", "CDC [MFC], Attach", "CDC [MFC], BeginPath", "CDC [MFC], BitBlt", "CDC [MFC], Chord", "CDC [MFC], CloseFigure", "CDC [MFC], CreateCompatibleDC", "CDC [MFC], CreateDC", "CDC [MFC], CreateIC", "CDC [MFC], DeleteDC", "CDC [MFC], DeleteTempMap", "CDC [MFC], Detach", "CDC [MFC], DPtoHIMETRIC", "CDC [MFC], DPtoLP", "CDC [MFC], Draw3dRect", "CDC [MFC], DrawDragRect", "CDC [MFC], DrawEdge", "CDC [MFC], DrawEscape", "CDC [MFC], DrawFocusRect", "CDC [MFC], DrawFrameControl", "CDC [MFC], DrawIcon", "CDC [MFC], DrawState", "CDC [MFC], DrawText", "CDC [MFC], DrawTextEx", "CDC [MFC], Ellipse", "CDC [MFC], EndDoc", "CDC [MFC], EndPage", "CDC [MFC], EndPath", "CDC [MFC], EnumObjects", "CDC [MFC], Escape", "CDC [MFC], ExcludeClipRect", "CDC [MFC], ExcludeUpdateRgn", "CDC [MFC], ExtFloodFill", "CDC [MFC], ExtTextOut", "CDC [MFC], FillPath", "CDC [MFC], FillRect", "CDC [MFC], FillRgn", "CDC [MFC], FillSolidRect", "CDC [MFC], FlattenPath", "CDC [MFC], FloodFill", "CDC [MFC], FrameRect", "CDC [MFC], FrameRgn", "CDC [MFC], FromHandle", "CDC [MFC], GetArcDirection", "CDC [MFC], GetAspectRatioFilter", "CDC [MFC], GetBkColor", "CDC [MFC], GetBkMode", "CDC [MFC], GetBoundsRect", "CDC [MFC], GetBrushOrg", "CDC [MFC], GetCharABCWidths", "CDC [MFC], GetCharABCWidthsI", "CDC [MFC], GetCharacterPlacement", "CDC [MFC], GetCharWidth", "CDC [MFC], GetCharWidthI", "CDC [MFC], GetClipBox", "CDC [MFC], GetColorAdjustment", "CDC [MFC], GetCurrentBitmap", "CDC [MFC], GetCurrentBrush", "CDC [MFC], GetCurrentFont", "CDC [MFC], GetCurrentPalette", "CDC [MFC], GetCurrentPen", "CDC [MFC], GetCurrentPosition", "CDC [MFC], GetDCBrushColor", "CDC [MFC], GetDCPenColor", "CDC [MFC], GetDeviceCaps", "CDC [MFC], GetFontData", "CDC [MFC], GetFontLanguageInfo", "CDC [MFC], GetGlyphOutline", "CDC [MFC], GetGraphicsMode", "CDC [MFC], GetHalftoneBrush", "CDC [MFC], GetKerningPairs", "CDC [MFC], GetLayout", "CDC [MFC], GetMapMode", "CDC [MFC], GetMiterLimit", "CDC [MFC], GetNearestColor", "CDC [MFC], GetOutlineTextMetrics", "CDC [MFC], GetOutputCharWidth", "CDC [MFC], GetOutputTabbedTextExtent", "CDC [MFC], GetOutputTextExtent", "CDC [MFC], GetOutputTextMetrics", "CDC [MFC], GetPath", "CDC [MFC], GetPixel", "CDC [MFC], GetPolyFillMode", "CDC [MFC], GetROP2", "CDC [MFC], GetSafeHdc", "CDC [MFC], GetStretchBltMode", "CDC [MFC], GetTabbedTextExtent", "CDC [MFC], GetTextAlign", "CDC [MFC], GetTextCharacterExtra", "CDC [MFC], GetTextColor", "CDC [MFC], GetTextExtent", "CDC [MFC], GetTextExtentExPointI", "CDC [MFC], GetTextExtentPointI", "CDC [MFC], GetTextFace", "CDC [MFC], GetTextMetrics", "CDC [MFC], GetViewportExt", "CDC [MFC], GetViewportOrg", "CDC [MFC], GetWindow", "CDC [MFC], GetWindowExt", "CDC [MFC], GetWindowOrg", "CDC [MFC], GetWorldTransform", "CDC [MFC], GradientFill", "CDC [MFC], GrayString", "CDC [MFC], HIMETRICtoDP", "CDC [MFC], HIMETRICtoLP", "CDC [MFC], IntersectClipRect", "CDC [MFC], InvertRect", "CDC [MFC], InvertRgn", "CDC [MFC], IsPrinting", "CDC [MFC], LineTo", "CDC [MFC], LPtoDP", "CDC [MFC], LPtoHIMETRIC", "CDC [MFC], MaskBlt", "CDC [MFC], ModifyWorldTransform", "CDC [MFC], MoveTo", "CDC [MFC], OffsetClipRgn", "CDC [MFC], OffsetViewportOrg", "CDC [MFC], OffsetWindowOrg", "CDC [MFC], PaintRgn", "CDC [MFC], PatBlt", "CDC [MFC], Pie", "CDC [MFC], PlayMetaFile", "CDC [MFC], PlgBlt", "CDC [MFC], PolyBezier", "CDC [MFC], PolyBezierTo", "CDC [MFC], PolyDraw", "CDC [MFC], Polygon", "CDC [MFC], Polyline", "CDC [MFC], PolylineTo", "CDC [MFC], PolyPolygon", "CDC [MFC], PolyPolyline", "CDC [MFC], PtVisible", "CDC [MFC], RealizePalette", "CDC [MFC], Rectangle", "CDC [MFC], RectVisible", "CDC [MFC], ReleaseAttribDC", "CDC [MFC], ReleaseOutputDC", "CDC [MFC], ResetDC", "CDC [MFC], RestoreDC", "CDC [MFC], RoundRect", "CDC [MFC], SaveDC", "CDC [MFC], ScaleViewportExt", "CDC [MFC], ScaleWindowExt", "CDC [MFC], ScrollDC", "CDC [MFC], SelectClipPath", "CDC [MFC], SelectClipRgn", "CDC [MFC], SelectObject", "CDC [MFC], SelectPalette", "CDC [MFC], SelectStockObject", "CDC [MFC], SetAbortProc", "CDC [MFC], SetArcDirection", "CDC [MFC], SetAttribDC", "CDC [MFC], SetBkColor", "CDC [MFC], SetBkMode", "CDC [MFC], SetBoundsRect", "CDC [MFC], SetBrushOrg", "CDC [MFC], SetColorAdjustment", "CDC [MFC], SetDCBrushColor", "CDC [MFC], SetDCPenColor", "CDC [MFC], SetGraphicsMode", "CDC [MFC], SetLayout", "CDC [MFC], SetMapMode", "CDC [MFC], SetMapperFlags", "CDC [MFC], SetMiterLimit", "CDC [MFC], SetOutputDC", "CDC [MFC], SetPixel", "CDC [MFC], SetPixelV", "CDC [MFC], SetPolyFillMode", "CDC [MFC], SetROP2", "CDC [MFC], SetStretchBltMode", "CDC [MFC], SetTextAlign", "CDC [MFC], SetTextCharacterExtra", "CDC [MFC], SetTextColor", "CDC [MFC], SetTextJustification", "CDC [MFC], SetViewportExt", "CDC [MFC], SetViewportOrg", "CDC [MFC], SetWindowExt", "CDC [MFC], SetWindowOrg", "CDC [MFC], SetWorldTransform", "CDC [MFC], StartDoc", "CDC [MFC], StartPage", "CDC [MFC], StretchBlt", "CDC [MFC], StrokeAndFillPath", "CDC [MFC], StrokePath", "CDC [MFC], TabbedTextOut", "CDC [MFC], TextOut", "CDC [MFC], TransparentBlt", "CDC [MFC], UpdateColors", "CDC [MFC], WidenPath", "CDC [MFC], m_hAttribDC", "CDC [MFC], m_hDC"]
-ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
 ---
 # `CDC` Class
 
@@ -12,7 +11,7 @@ Defines a class of device-context objects.
 
 ## Syntax
 
-```
+```cpp
 class CDC : public CObject
 ```
 
@@ -49,21 +48,21 @@ class CDC : public CObject
 |[`CDC::DPtoHIMETRIC`](#dptohimetric)|Converts device units into `HIMETRIC` units.|
 |[`CDC::DPtoLP`](#dptolp)|Converts device units into logical units.|
 |[`CDC::Draw3dRect`](#draw3drect)|Draws a three-dimensional rectangle.|
-|[`CDC::DrawDragRect`](#drawdragrect)|Erases and redraws a rectangle as it is dragged.|
+|[`CDC::DrawDragRect`](#drawdragrect)|Erases and redraws a rectangle as it's dragged.|
 |[`CDC::DrawEdge`](#drawedge)|Draws the edges of a rectangle.|
-|[`CDC::DrawEscape`](#drawescape)|Accesses drawing capabilities of a video display that are not directly available through the graphics device interface (GDI).|
+|[`CDC::DrawEscape`](#drawescape)|Accesses drawing capabilities of a video display that aren't directly available through the graphics device interface (GDI).|
 |[`CDC::DrawFocusRect`](#drawfocusrect)|Draws a rectangle in the style used to indicate focus.|
 |[`CDC::DrawFrameControl`](#drawframecontrol)|Draw a frame control.|
 |[`CDC::DrawIcon`](#drawicon)|Draws an icon.|
 |[`CDC::DrawState`](#drawstate)|Displays an image and applies a visual effect to indicate a state.|
 |[`CDC::DrawText`](#drawtext)|Draws formatted text in the specified rectangle.|
-|[`CDC::DrawTextEx`](#drawtextex)|Draws formatted text in the specified rectangle using additional formats.|
+|[`CDC::DrawTextEx`](#drawtextex)|Draws formatted text in the specified rectangle using other formats.|
 |[`CDC::Ellipse`](#ellipse)|Draws an ellipse.|
 |[`CDC::EndDoc`](#enddoc)|Ends a print job started by the `StartDoc` member function.|
 |[`CDC::EndPage`](#endpage)|Informs the device driver that a page is ending.|
 |[`CDC::EndPath`](#endpath)|Closes a path bracket and selects the path defined by the bracket into the device context.|
 |[`CDC::EnumObjects`](#enumobjects)|Enumerates the pens and brushes available in a device context.|
-|[`CDC::Escape`](#escape)|Allows applications to access facilities that are not directly available from a particular device through GDI. Also allows access to Windows escape functions. Escape calls made by an application are translated and sent to the device driver.|
+|[`CDC::Escape`](#escape)|Allows applications to access facilities that aren't directly available from a particular device through GDI. Also allows access to Windows escape functions. Escape calls made by an application are translated and sent to the device driver.|
 |[`CDC::ExcludeClipRect`](#excludecliprect)|Creates a new clipping region that consists of the existing clipping region minus the specified rectangle.|
 |[`CDC::ExcludeUpdateRgn`](#excludeupdatergn)|Prevents drawing within invalid areas of a window by excluding an updated region in the window from a clipping region.|
 |[`CDC::ExtFloodFill`](#extfloodfill)|Fills an area with the current brush. Provides more flexibility than the [`CDC::FloodFill`](#floodfill) member function.|
@@ -76,7 +75,7 @@ class CDC : public CObject
 |[`CDC::FloodFill`](#floodfill)|Fills an area with the current brush.|
 |[`CDC::FrameRect`](#framerect)|Draws a border around a rectangle.|
 |[`CDC::FrameRgn`](#framergn)|Draws a border around a specific region using a brush.|
-|[`CDC::FromHandle`](#fromhandle)|Returns a pointer to a `CDC` object when given a handle to a device context. If a `CDC` object is not attached to the handle, a temporary `CDC` object is created and attached.|
+|[`CDC::FromHandle`](#fromhandle)|Returns a pointer to a `CDC` object when given a handle to a device context. If a `CDC` object isn't attached to the handle, a temporary `CDC` object is created and attached.|
 |[`CDC::GetArcDirection`](#getarcdirection)|Returns the current arc direction for the device context.|
 |[`CDC::GetAspectRatioFilter`](#getaspectratiofilter)|Retrieves the setting for the current aspect-ratio filter.|
 |[`CDC::GetBkColor`](#getbkcolor)|Retrieves the current background color.|
@@ -157,14 +156,14 @@ class CDC : public CObject
 |[`CDC::Pie`](#pie)|Draws a pie-shaped wedge.|
 |[`CDC::PlayMetaFile`](#playmetafile)|Plays the contents of the specified metafile on the given device. The enhanced version of `PlayMetaFile` displays the picture stored in the given enhanced-format metafile. The metafile can be played any number of times.|
 |[`CDC::PlgBlt`](#plgblt)|Performs a bit-block transfer of the bits of color data from the specified rectangle in the source device context to the specified parallelogram in the given device context.|
-|[`CDC::PolyBezier`](#polybezier)|Draws one or more Bzier splines. The current position is neither used nor updated.|
+|[`CDC::PolyBezier`](#polybezier)|Draws one or more Bzier splines. The current position isn't used or updated.|
 |[`CDC::PolyBezierTo`](#polybezierto)|Draws one or more Bzier splines, and moves the current position to the ending point of the last Bzier spline.|
 |[`CDC::PolyDraw`](#polydraw)|Draws a set of line segments and Bzier splines. This function updates the current position.|
 |[`CDC::Polygon`](#polygon)|Draws a polygon consisting of two or more points (vertices) connected by lines.|
 |[`CDC::Polyline`](#polyline)|Draws a set of line segments connecting the specified points.|
 |[`CDC::PolylineTo`](#polylineto)|Draws one or more straight lines and moves the current position to the ending point of the last line.|
 |[`CDC::PolyPolygon`](#polypolygon)|Creates two or more polygons that are filled using the current polygon-filling mode. The polygons may be disjoint or they may overlap.|
-|[`CDC::PolyPolyline`](#polypolyline)|Draws multiple series of connected line segments. The current position is neither used nor updated by this function.|
+|[`CDC::PolyPolyline`](#polypolyline)|Draws multiple series of connected line segments. The current position isn't used or updated by this function.|
 |[`CDC::PtVisible`](#ptvisible)|Specifies whether the given point is within the clipping region.|
 |[`CDC::RealizePalette`](#realizepalette)|Maps palette entries in the current logical palette to the system palette.|
 |[`CDC::Rectangle`](#rectangle)|Draws a rectangle using the current pen and fills it using the current brush.|
@@ -200,7 +199,7 @@ class CDC : public CObject
 |[`CDC::SetMiterLimit`](#setmiterlimit)|Sets the limit for the length of miter joins for the device context.|
 |[`CDC::SetOutputDC`](#setoutputdc)|Sets `m_hDC`, the output device context.|
 |[`CDC::SetPixel`](#setpixel)|Sets the pixel at the specified point to the closest approximation of the specified color.|
-|[`CDC::SetPixelV`](#setpixelv)|Sets the pixel at the specified coordinates to the closest approximation of the specified color. `SetPixelV` is faster than `SetPixel` because it does not need to return the color value of the point actually painted.|
+|[`CDC::SetPixelV`](#setpixelv)|Sets the pixel at the specified coordinates to the closest approximation of the specified color. `SetPixelV` is faster than `SetPixel` because it doesn't need to return the color value of the point painted.|
 |[`CDC::SetPolyFillMode`](#setpolyfillmode)|Sets the polygon-filling mode.|
 |[`CDC::SetROP2`](#setrop2)|Sets the current drawing mode.|
 |[`CDC::SetStretchBltMode`](#setstretchbltmode)|Sets the bitmap-stretching mode.|
@@ -239,7 +238,7 @@ class CDC : public CObject
 
 ## Remarks
 
-The `CDC` object provides member functions for working with a device context, such as a display or printer, as well as members for working with a display context associated with the client area of a window.
+The `CDC` object provides member functions for working with a device context, such as a display or printer, and members for working with a display context associated with the client area of a window.
 
 Do all drawing through the member functions of a `CDC` object. The class provides member functions for device-context operations, working with drawing tools, type-safe graphics device interface (GDI) object selection, and working with colors and palettes. It also provides member functions for getting and setting drawing attributes, mapping, working with the viewport, working with the window extent, converting coordinates, working with regions, clipping, drawing lines, and drawing simple shapes, ellipses, and polygons. Member functions are also provided for drawing text, working with fonts, using printer escapes, scrolling, and playing metafiles.
 
@@ -250,7 +249,7 @@ To use a `CDC` object, construct it, and then call its member functions that par
 
 For specific uses, the Microsoft Foundation Class Library provides several classes derived from `CDC` . `CPaintDC` encapsulates calls to `BeginPaint` and `EndPaint`. `CClientDC` manages a display context associated with a window's client area. `CWindowDC` manages a display context associated with an entire window, including its frame and controls. `CMetaFileDC` associates a device context with a metafile.
 
-`CDC` provides two member functions, [`GetLayout`](#getlayout) and [`SetLayout`](#setlayout), for reversing the layout of a device context, which does not inherit its layout from a window. Such right-to-left orientation is necessary for applications written for cultures, such as Arabic or Hebrew, where the character layout is not the European standard.
+`CDC` provides two member functions, [`GetLayout`](#getlayout) and [`SetLayout`](#setlayout), for reversing the layout of a device context, which doesn't inherit its layout from a window. Such right-to-left orientation is necessary for applications written for cultures, such as Arabic or Hebrew, where the character layout isn't the European standard.
 
 `CDC` contains two device contexts, [`m_hDC`](#m_hdc) and [`m_hAttribDC`](#m_hattribdc), which, on creation of a `CDC` object, refer to the same device. `CDC` directs all output GDI calls to `m_hDC` and most attribute GDI calls to `m_hAttribDC`. (An example of an attribute call is `GetTextColor`, while `SetTextColor` is an output call.)
 
@@ -303,7 +302,7 @@ This member function replaces the `ABORTDOC` printer escape.
 
 `AbortDoc` should be used to terminate the following:
 
-- Printing operations that do not specify an abort function using [`SetAbortProc`](#setabortproc).
+- Printing operations that don't specify an abort function using [`SetAbortProc`](#setabortproc).
 
 - Printing operations that have not yet reached their first `NEWFRAME` or `NEXTBAND` escape call.
 
@@ -311,7 +310,7 @@ If an application encounters a printing error or a canceled print operation, it 
 
 If the application displays a dialog box to allow the user to cancel the print operation, it must call `AbortDoc` before destroying the dialog box.
 
-If Print Manager was used to start the print job, calling `AbortDoc` erases the entire spool job — the printer receives nothing. If Print Manager was not used to start the print job, the data may have been sent to the printer before `AbortDoc` was called. In this case, the printer driver would have reset the printer (when possible) and closed the print job.
+If Print Manager was used to start the print job, calling `AbortDoc` erases the entire spool job—the printer receives nothing. If Print Manager wasn't used to start the print job, the data may have been sent to the printer before `AbortDoc` was called. In this case, the printer driver would have reset the printer (when possible) and closed the print job.
 
 ### Example
 
@@ -331,7 +330,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-If there is an open path bracket in the device context, the path bracket is closed and the path is discarded. If there is a closed path in the device context, the path is discarded.
+If there's an open path bracket in the device context, the path bracket is closed and the path is discarded. If there's a closed path in the device context, the path is discarded.
 
 ## <a name="addmetafilecomment"></a> `CDC::AddMetaFileComment`
 
@@ -345,10 +344,10 @@ BOOL AddMetaFileComment(
 
 ### Parameters
 
-*`nDataSize`*<br/>
+*`nDataSize`*\
 Specifies the length of the comment buffer, in bytes.
 
-*`pCommentData`*<br/>
+*`pCommentData`*\
 Points to the buffer that contains the comment.
 
 ### Return Value
@@ -357,7 +356,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-A comment may include any private information — for example, the source of the picture and the date it was created. A comment should begin with an application signature, followed by the data. Comments should not contain position-specific data. Position-specific data specifies the location of a record, and it should not be included because one metafile may be embedded within another metafile. This function can only be used with enhanced metafiles.
+A comment may include any private information — for example, the source of the picture and the date it was created. A comment should begin with an application signature, followed by the data. Comments shouldn't contain position-specific data. Position-specific data specifies the location of a record, and it shouldn't be included because one metafile may be embedded within another metafile. This function can only be used with enhanced metafiles.
 
 ## <a name="alphablend"></a> `CDC::AlphaBlend`
 
@@ -379,34 +378,34 @@ BOOL AlphaBlend(
 
 ### Parameters
 
-*`xDest`*<br/>
+*`xDest`*\
 Specifies the x-coordinate, in logical units, of the upper-left corner of the destination rectangle.
 
-*`yDest`*<br/>
+*`yDest`*\
 Specifies the y-coordinate, in logical units, of the upper-left corner of the destination rectangle.
 
-*`nDestWidth`*<br/>
+*`nDestWidth`*\
 Specifies the width, in logical units, of the destination rectangle.
 
-*`nDestHeight`*<br/>
+*`nDestHeight`*\
 Specifies the height, in logical units, of the destination rectangle.
 
-*`pSrcDC`*<br/>
+*`pSrcDC`*\
 A pointer to the source device context.
 
-*`xSrc`*<br/>
+*`xSrc`*\
 Specifies the x-coordinate, in logical units, of the upper-left corner of the source rectangle.
 
-*`ySrc`*<br/>
+*`ySrc`*\
 Specifies the y-coordinate, in logical units, of the upper-left corner of the source rectangle.
 
-*`nSrcWidth`*<br/>
+*`nSrcWidth`*\
 Specifies the width, in logical units, of the source rectangle.
 
-*`nSrcHeight`*<br/>
+*`nSrcHeight`*\
 Specifies the height, in logical units, of the source rectangle.
 
-*`blend`*<br/>
+*`blend`*\
 Specifies a [`BLENDFUNCTION`](/windows/win32/api/wingdi/ns-wingdi-blendfunction) structure.
 
 ### Return Value
@@ -432,19 +431,19 @@ BOOL AngleArc(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the center of the circle.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the center of the circle.
 
-*`nRadius`*<br/>
+*`nRadius`*\
 Specifies the radius of the circle in logical units. This value must be positive.
 
-*`fStartAngle`*<br/>
+*`fStartAngle`*\
 Specifies the starting angle in degrees relative to the x-axis.
 
-*`fSweepAngle`*<br/>
+*`fSweepAngle`*\
 Specifies the sweep angle in degrees relative to the starting angle.
 
 ### Return Value
@@ -457,7 +456,7 @@ The line segment is drawn from the current position to the beginning of the arc.
 
 `AngleArc` moves the current position to the ending point of the arc. The arc drawn by this function may appear to be elliptical, depending on the current transformation and mapping mode. Before drawing the arc, this function draws the line segment from the current position to the beginning of the arc. The arc is drawn by constructing an imaginary circle with the specified radius around the specified center point. The starting point of the arc is determined by measuring counterclockwise from the x-axis of the circle by the number of degrees in the start angle. The ending point is similarly located by measuring counterclockwise from the starting point by the number of degrees in the sweep angle.
 
-If the sweep angle is greater than 360 degrees the arc is swept multiple times. This function draws lines by using the current pen. The figure is not filled.
+If the sweep angle is greater than 360 degrees the arc is swept multiple times. This function draws lines by using the current pen. The figure isn't filled.
 
 ## <a name="arc"></a> `CDC::Arc`
 
@@ -482,38 +481,38 @@ BOOL Arc(
 
 ### Parameters
 
-*`x1`*<br/>
+*`x1`*\
 Specifies the x-coordinate of the upper-left corner of the bounding rectangle (in logical units).
 
-*`y1`*<br/>
+*`y1`*\
 Specifies the y-coordinate of the upper-left corner of the bounding rectangle (in logical units).
 
-*`x2`*<br/>
+*`x2`*\
 Specifies the x-coordinate of the lower-right corner of the bounding rectangle (in logical units).
 
-*`y2`*<br/>
+*`y2`*\
 Specifies the y-coordinate of the lower-right corner of the bounding rectangle (in logical units).
 
-*`x3`*<br/>
-Specifies the x-coordinate of the point that defines the arc's starting point (in logical units). This point does not have to lie exactly on the arc.
+*`x3`*\
+Specifies the x-coordinate of the point that defines the arc's starting point (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`y3`*<br/>
-Specifies the y-coordinate of the point that defines the arc's starting point (in logical units). This point does not have to lie exactly on the arc.
+*`y3`*\
+Specifies the y-coordinate of the point that defines the arc's starting point (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`x4`*<br/>
-Specifies the x-coordinate of the point that defines the arc's endpoint (in logical units). This point does not have to lie exactly on the arc.
+*`x4`*\
+Specifies the x-coordinate of the point that defines the arc's endpoint (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`y4`*<br/>
-Specifies the y-coordinate of the point that defines the arc's endpoint (in logical units). This point does not have to lie exactly on the arc.
+*`y4`*\
+Specifies the y-coordinate of the point that defines the arc's endpoint (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the bounding rectangle (in logical units). You can pass either an `LPRECT` or a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object for this parameter.
 
-*`ptStart`*<br/>
-Specifies the x- and y-coordinates of the point that defines the arc's starting point (in logical units). This point does not have to lie exactly on the arc. You can pass either a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
+*`ptStart`*\
+Specifies the x- and y-coordinates of the point that defines the arc's starting point (in logical units). This point doesn't have to lie exactly on the arc. You can pass either a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
 
-*`ptEnd`*<br/>
-Specifies the x- and y-coordinates of the point that defines the arc's ending point (in logical units). This point does not have to lie exactly on the arc. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
+*`ptEnd`*\
+Specifies the x- and y-coordinates of the point that defines the arc's ending point (in logical units). This point doesn't have to lie exactly on the arc. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
 ### Return Value
 
@@ -523,7 +522,7 @@ Nonzero if the function is successful; otherwise 0.
 
 The arc drawn by using the function is a segment of the ellipse defined by the specified bounding rectangle.
 
-The actual starting point of the arc is the point at which a ray drawn from the center of the bounding rectangle through the specified starting point intersects the ellipse. The actual ending point of the arc is the point at which a ray drawn from the center of the bounding rectangle through the specified ending point intersects the ellipse. The arc is drawn in a counterclockwise direction. Since an arc is not a closed figure, it is not filled. Both the width and height of the rectangle must be greater than 2 units and less than 32,767 units.
+The actual starting point of the arc is the point at which a ray drawn from the center of the bounding rectangle through the specified starting point intersects the ellipse. The actual ending point of the arc is the point at which a ray drawn from the center of the bounding rectangle through the specified ending point intersects the ellipse. The arc is drawn in a counterclockwise direction. Since an arc isn't a closed figure, it isn't filled. Both the width and height of the rectangle must be greater than 2 units and less than 32,767 units.
 
 ### Example
 
@@ -552,38 +551,38 @@ BOOL ArcTo(
 
 ### Parameters
 
-*`x1`*<br/>
+*`x1`*\
 Specifies the x-coordinate of the upper-left corner of the bounding rectangle (in logical units).
 
-*`y1`*<br/>
+*`y1`*\
 Specifies the y-coordinate of the upper-left corner of the bounding rectangle (in logical units).
 
-*`x2`*<br/>
+*`x2`*\
 Specifies the x-coordinate of the lower-right corner of the bounding rectangle (in logical units).
 
-*`y2`*<br/>
+*`y2`*\
 Specifies the y-coordinate of the lower-right corner of the bounding rectangle (in logical units).
 
-*`x3`*<br/>
-Specifies the x-coordinate of the point that defines the arc's starting point (in logical units). This point does not have to lie exactly on the arc.
+*`x3`*\
+Specifies the x-coordinate of the point that defines the arc's starting point (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`y3`*<br/>
-Specifies the y-coordinate of the point that defines the arc's starting point (in logical units). This point does not have to lie exactly on the arc.
+*`y3`*\
+Specifies the y-coordinate of the point that defines the arc's starting point (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`x4`*<br/>
-Specifies the x-coordinate of the point that defines the arc's endpoint (in logical units). This point does not have to lie exactly on the arc.
+*`x4`*\
+Specifies the x-coordinate of the point that defines the arc's endpoint (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`y4`*<br/>
-Specifies the y-coordinate of the point that defines the arc's endpoint (in logical units). This point does not have to lie exactly on the arc.
+*`y4`*\
+Specifies the y-coordinate of the point that defines the arc's endpoint (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the bounding rectangle (in logical units). You can pass either a pointer to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) data structure or a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object for this parameter.
 
-*`ptStart`*<br/>
-Specifies the x- and y-coordinates of the point that defines the arc's starting point (in logical units). This point does not have to lie exactly on the arc. You can pass either a [`POINT`](/windows/win32/api/windef/ns-windef-point) data structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
+*`ptStart`*\
+Specifies the x- and y-coordinates of the point that defines the arc's starting point (in logical units). This point doesn't have to lie exactly on the arc. You can pass either a [`POINT`](/windows/win32/api/windef/ns-windef-point) data structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
 
-*`ptEnd`*<br/>
-Specifies the x- and y-coordinates of the point that defines the arc's ending point (in logical units). This point does not have to lie exactly on the arc. You can pass either a `POINT` data structure or a `CPoint` object for this parameter.
+*`ptEnd`*\
+Specifies the x- and y-coordinates of the point that defines the arc's ending point (in logical units). This point doesn't have to lie exactly on the arc. You can pass either a `POINT` data structure or a `CPoint` object for this parameter.
 
 ### Return Value
 
@@ -593,7 +592,7 @@ Nonzero if the function is successful; otherwise 0.
 
 This function is similar to `CDC::Arc`, except that the current position is updated. The points ( *`x1`*, *`y1`*) and ( *`x2`*, *`y2`*) specify the bounding rectangle. An ellipse formed by the given bounding rectangle defines the curve of the arc. The arc extends counterclockwise (the default arc direction) from the point where it intersects the radial line from the center of the bounding rectangle to ( *`x3*`, *`y3`*). The arc ends where it intersects the radial line from the center of the bounding rectangle to ( *`x4`*, *`y4`*). If the starting point and ending point are the same, a complete ellipse is drawn.
 
-A line is drawn from the current position to the starting point of the arc. If no error occurs, the current position is set to the ending point of the arc. The arc is drawn using the current pen; it is not filled.
+A line is drawn from the current position to the starting point of the arc. If no error occurs, the current position is set to the ending point of the arc. The arc is drawn using the current pen; it isn't filled.
 
 ## <a name="attach"></a> `CDC::Attach`
 
@@ -605,7 +604,7 @@ BOOL Attach(HDC hDC);
 
 ### Parameters
 
-*`hDC`*<br/>
+*`hDC`*\
 A Windows device context.
 
 ### Return Value
@@ -656,28 +655,28 @@ BOOL BitBlt(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the upper-left corner of the destination rectangle.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the upper-left corner of the destination rectangle.
 
-*`nWidth`*<br/>
+*`nWidth`*\
 Specifies the width (in logical units) of the destination rectangle and source bitmap.
 
-*`nHeight`*<br/>
+*`nHeight`*\
 Specifies the height (in logical units) of the destination rectangle and source bitmap.
 
-*`pSrcDC`*<br/>
-Pointer to a `CDC` object that identifies the device context from which the bitmap will be copied. It must be `NULL` if *`dwRop`* specifies a raster operation that does not include a source.
+*`pSrcDC`*\
+Pointer to a `CDC` object that identifies the device context from which the bitmap will be copied. It must be `NULL` if *`dwRop`* specifies a raster operation that doesn't include a source.
 
-*`xSrc`*<br/>
+*`xSrc`*\
 Specifies the logical x-coordinate of the upper-left corner of the source bitmap.
 
-*`ySrc`*<br/>
+*`ySrc`*\
 Specifies the logical y-coordinate of the upper-left corner of the source bitmap.
 
-*`dwRop`*<br/>
+*`dwRop`*\
 Specifies the raster operation to be performed. Raster-operation codes define how the GDI combines colors in output operations that involve a current brush, a possible source bitmap, and a destination bitmap. See [`BitBlt`](/windows/win32/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of the raster-operation codes for *`dwRop`* and their descriptions
 
 For a complete list of raster-operation codes, see [About Raster Operation Codes](/windows/win32/gdi/raster-operation-codes) in the Windows SDK.
@@ -690,15 +689,15 @@ Nonzero if the function is successful; otherwise 0.
 
 The application can align the windows or client areas on byte boundaries to ensure that the `BitBlt` operations occur on byte-aligned rectangles. (Set the `CS_BYTEALIGNWINDOW` or `CS_BYTEALIGNCLIENT` flags when you register the window classes.)
 
-`BitBlt` operations on byte-aligned rectangles are considerably faster than `BitBlt` operations on rectangles that are not byte aligned. If you want to specify class styles such as byte-alignment for your own device context, you will have to register a window class rather than relying on the Microsoft Foundation classes to do it for you. Use the global function [`AfxRegisterWndClass`](../../mfc/reference/application-information-and-management.md#afxregisterwndclass).
+`BitBlt` operations on byte-aligned rectangles are considerably faster than `BitBlt` operations on rectangles that aren't byte aligned. If you want to specify class styles such as byte-alignment for your own device context, you'll have to register a window class rather than relying on the Microsoft Foundation classes to do it for you. Use the global function [`AfxRegisterWndClass`](../../mfc/reference/application-information-and-management.md#afxregisterwndclass).
 
-GDI transforms *`nWidth`* and *`nHeight`*, once by using the destination device context, and once by using the source device context. If the resulting extents do not match, GDI uses the Windows `StretchBlt` function to compress or stretch the source bitmap as necessary.
+GDI transforms *`nWidth`* and *`nHeight`*, once by using the destination device context, and once by using the source device context. If the resulting extents don't match, GDI uses the Windows `StretchBlt` function to compress or stretch the source bitmap as necessary.
 
-If destination, source, and pattern bitmaps do not have the same color format, the `BitBlt` function converts the source and pattern bitmaps to match the destination. The foreground and background colors of the destination bitmap are used in the conversion.
+If destination, source, and pattern bitmaps don't have the same color format, the `BitBlt` function converts the source and pattern bitmaps to match the destination. The foreground and background colors of the destination bitmap are used in the conversion.
 
 When the `BitBlt` function converts a monochrome bitmap to color, it sets white bits (1) to the background color and black bits (0) to the foreground color. The foreground and background colors of the destination device context are used. To convert color to monochrome, `BitBlt` sets pixels that match the background color to white and sets all other pixels to black. `BitBlt` uses the foreground and background colors of the color device context to convert from color to monochrome.
 
-Note that not all device contexts support `BitBlt`. To check whether a given device context does support `BitBlt`, use the `GetDeviceCaps` member function and specify the RASTERCAPS index.
+Not all device contexts support `BitBlt`. To check whether a given device context does support `BitBlt`, use the `GetDeviceCaps` member function and specify the RASTERCAPS index.
 
 ### Example
 
@@ -735,38 +734,38 @@ BOOL Chord(
 
 ### Parameters
 
-*`x1`*<br/>
+*`x1`*\
 Specifies the x-coordinate of the upper-left corner of the chord's bounding rectangle (in logical units).
 
-*`y1`*<br/>
+*`y1`*\
 Specifies the y-coordinate of the upper-left corner of the chord's bounding rectangle (in logical units).
 
-*`x2`*<br/>
+*`x2`*\
 Specifies the x-coordinate of the lower-right corner of the chord's bounding rectangle (in logical units).
 
-*`y2`*<br/>
+*`y2`*\
 Specifies the y-coordinate of the lower-right corner of the chord's bounding rectangle (in logical units).
 
-*`x3`*<br/>
+*`x3`*\
 Specifies the x-coordinate of the point that defines the chord's starting point (in logical units).
 
-*`y3`*<br/>
+*`y3`*\
 Specifies the y-coordinate of the point that defines the chord's starting point (in logical units).
 
-*`x4`*<br/>
+*`x4`*\
 Specifies the x-coordinate of the point that defines the chord's endpoint (in logical units).
 
-*`y4`*<br/>
+*`y4`*\
 Specifies the y-coordinate of the point that defines the chord's endpoint (in logical units).
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the bounding rectangle (in logical units). You can pass either a `LPRECT` or a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object for this parameter.
 
-*`ptStart`*<br/>
-Specifies the x- and y-coordinates of the point that defines the chord's starting point (in logical units). This point does not have to lie exactly on the chord. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
+*`ptStart`*\
+Specifies the x- and y-coordinates of the point that defines the chord's starting point (in logical units). This point doesn't have to lie exactly on the chord. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
-*`ptEnd*`<br/>
-Specifies the x- and y-coordinates of the point that defines the chord's ending point (in logical units). This point does not have to lie exactly on the chord. You can pass either a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
+*`ptEnd*`\
+Specifies the x- and y-coordinates of the point that defines the chord's ending point (in logical units). This point doesn't have to lie exactly on the chord. You can pass either a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
 
 ### Return Value
 
@@ -776,7 +775,7 @@ Nonzero if the function is successful; otherwise 0.
 
 The ( *`x1`*, *`y1`*) and ( *`x2`*, *`y2`*) parameters specify the upper-left and lower-right corners, respectively, of a rectangle bounding the ellipse that is part of the chord. The ( *`x3`*, *`y3`*) and ( *`x4`*, *`y4`*) parameters specify the endpoints of a line that intersects the ellipse. The chord is drawn by using the selected pen and filled by using the selected brush.
 
-The figure drawn by the `Chord` function extends up to, but does not include the right and bottom coordinates. This means that the height of the figure is *`y2`* - *`y1`* and the width of the figure is *`x2`* - *`x1`*.
+The figure drawn by the `Chord` function extends up to, but doesn't include the right and bottom coordinates. This means that the height of the figure is *`y2`* - *`y1`* and the width of the figure is *`x2`* - *`x1`*.
 
 ### Example
 
@@ -796,9 +795,9 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The function closes the figure by drawing a line from the current position to the first point of the figure (usually, the point specified by the most recent call to the `MoveTo` member function) and connects the lines by using the line join style. If a figure is closed by using the `LineTo` member function instead of `CloseFigure`, end caps are used to create the corner instead of a join. `CloseFigure` should only be called if there is an open path bracket in the device context.
+The function closes the figure by drawing a line from the current position to the first point of the figure (usually, the point specified by the most recent call to the `MoveTo` member function) and connects the lines by using the line join style. If a figure is closed by using the `LineTo` member function instead of `CloseFigure`, end caps are used to create the corner instead of a join. `CloseFigure` should only be called if there's an open path bracket in the device context.
 
-A figure in a path is open unless it is explicitly closed by using this function. (A figure can be open even if the current point and the starting point of the figure are the same.) Any line or curve added to the path after `CloseFigure` starts a new figure.
+A figure in a path is open unless it's explicitly closed by using this function. (A figure can be open even if the current point and the starting point of the figure are the same.) Any line or curve added to the path after `CloseFigure` starts a new figure.
 
 ## <a name="createcompatibledc"></a> `CDC::CreateCompatibleDC`
 
@@ -810,7 +809,7 @@ BOOL CreateCompatibleDC(CDC* pDC);
 
 ### Parameters
 
-*`pDC`*<br/>
+*`pDC`*\
 A pointer to a device context. If *`pDC`* is `NULL`, the function creates a memory device context that is compatible with the system display.
 
 ### Return Value
@@ -843,16 +842,16 @@ BOOL CreateDC(
 
 ### Parameters
 
-*`lpszDriverName`*<br/>
+*`lpszDriverName`*\
 Points to a null-terminated string that specifies the filename (without extension) of the device driver (for example, "`EPSON`"). You can also pass a `CString` object for this parameter.
 
-*`lpszDeviceName`*<br/>
+*`lpszDeviceName`*\
 Points to a null-terminated string that specifies the name of the specific device to be supported (for example, "`EPSON FX-80`"). The *`lpszDeviceName`* parameter is used if the module supports more than one device. You can also pass a `CString` object for this parameter.
 
-*`lpszOutput`*<br/>
+*`lpszOutput`*\
 Points to a null-terminated string that specifies the file or device name for the physical output medium (file or output port). You can also pass a `CString` object for this parameter.
 
-*`lpInitData`*<br/>
+*`lpInitData`*\
 Points to a `DEVMODE` structure containing device-specific initialization data for the device driver. The Windows `DocumentProperties` function retrieves this structure filled in for a given device. The *`lpInitData`* parameter must be `NULL` if the device driver is to use the default initialization (if any) specified by the user through the Control Panel.
 
 ### Return Value
@@ -879,16 +878,16 @@ BOOL CreateIC(
 
 ### Parameters
 
-*`lpszDriverName`*<br/>
+*`lpszDriverName`*\
 Points to a null-terminated string that specifies the filename (without extension) of the device driver (for example, "`EPSON`"). You can pass a `CString` object for this parameter.
 
-*`lpszDeviceName`*<br/>
+*`lpszDeviceName`*\
 Points to a null-terminated string that specifies the name of the specific device to be supported (for example, "`EPSON FX-80`"). The *`lpszDeviceName`* parameter is used if the module supports more than one device. You can pass a `CString` object for this parameter.
 
-*`lpszOutput`*<br/>
+*`lpszOutput`*\
 Points to a null-terminated string that specifies the file or device name for the physical output medium (file or port). You can pass a `CString` object for this parameter.
 
-*`lpInitData`*<br/>
+*`lpInitData`*\
 Points to device-specific initialization data for the device driver. The *`lpInitData`* parameter must be `NULL` if the device driver is to use the default initialization (if any) specified by the user through the Control Panel. See `CreateDC` for the data format for device-specific initialization.
 
 ### Return Value
@@ -903,7 +902,7 @@ Device names follow these conventions: an ending colon (:) is recommended, but o
 
 ## <a name="deletedc"></a> `CDC::DeleteDC`
 
-In general, do not call this function; the destructor will do it for you.
+In general, don't call this function; the destructor will do it for you.
 
 ```
 BOOL DeleteDC();
@@ -915,9 +914,9 @@ Nonzero if the function completed successfully; otherwise 0.
 
 ### Remarks
 
-The `DeleteDC` member function deletes the Windows device contexts that are associated with `m_hDC` in the current `CDC` object. If this `CDC` object is the last active device context for a given device, the device is notified and all storage and system resources used by the device are released.
+The `DeleteDC` member function deletes the Windows device contexts that are associated with `m_hDC` in the current `CDC` object. If this `CDC` object is the last active device context for a given device, all storage and system resources used by the device are released.
 
-An application should not call `DeleteDC` if objects have been selected into the device context. Objects must first be selected out of the device context before it is deleted.
+An application shouldn't call `DeleteDC` if objects have been selected into the device context. Objects must first be selected out of the device context before it's deleted.
 
 An application must not delete a device context whose handle was obtained by calling [`CWnd::GetDC`](../../mfc/reference/cwnd-class.md#getdc). Instead, it must call [`CWnd::ReleaseDC`](../../mfc/reference/cwnd-class.md#releasedc) to free the device context. The [`CClientDC`](../../mfc/reference/cclientdc-class.md) and [`CWindowDC`](../../mfc/reference/cwindowdc-class.md) classes are provided to wrap this functionality.
 
@@ -929,7 +928,7 @@ The `DeleteDC` function is generally used to delete device contexts created with
 
 ## <a name="deletetempmap"></a> `CDC::DeleteTempMap`
 
-Called automatically by the `CWinApp` idle-time handler, `DeleteTempMap` deletes any temporary `CDC` objects created by `FromHandle`, but does not destroy the device context handles ( `hDC`s) temporarily associated with the `CDC` objects.
+Called automatically by the `CWinApp` idle-time handler, `DeleteTempMap` deletes any temporary `CDC` objects created by `FromHandle`, but doesn't destroy the device context handles ( `hDC`s) temporarily associated with the `CDC` objects.
 
 ```
 static void PASCAL DeleteTempMap();
@@ -957,12 +956,12 @@ void DPtoHIMETRIC(LPSIZE lpSize) const;
 
 ### Parameters
 
-*`lpSize`*<br/>
+*`lpSize`*\
 Points to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure or [`CSize`](../../atl-mfc-shared/reference/csize-class.md) object.
 
 ### Remarks
 
-If the mapping mode of the device context object is `MM_LOENGLISH`, `MM_HIENGLISH`, `MM_LOMETRIC`, or `MM_HIMETRIC`, then the conversion is based on the number of pixels in the physical inch. If the mapping mode is one of the other non-constrained modes (e.g., `MM_TEXT`), then the conversion is based on the number of pixels in the logical inch.
+If the mapping mode of the device context object is `MM_LOENGLISH`, `MM_HIENGLISH`, `MM_LOMETRIC`, or `MM_HIMETRIC`, then the conversion is based on the number of pixels in the physical inch. If the mapping mode is one of the other non-constrained modes (for example, `MM_TEXT`), then the conversion is based on the number of pixels in the logical inch.
 
 ## <a name="dptolp"></a> `CDC::DPtoLP`
 
@@ -979,16 +978,16 @@ void DPtoLP(LPSIZE lpSize) const;
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of [`POINT`](/windows/win32/api/windef/ns-windef-point) structures or [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) objects.
 
-*`nCount`*<br/>
+*`nCount`*\
 The number of points in the array.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object. This parameter is used for the simple case of converting one rectangle from device points to logical points.
 
-*`lpSize`*<br/>
+*`lpSize`*\
 Points to a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or [`CSize`](../../atl-mfc-shared/reference/csize-class.md) object.
 
 ### Remarks
@@ -1016,25 +1015,25 @@ void Draw3dRect(
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the bounding rectangle (in logical units). You can pass either a pointer to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object for this parameter.
 
-*`clrTopLeft`*<br/>
+*`clrTopLeft`*\
 Specifies the color of the top and left sides of the three-dimensional rectangle.
 
-*`clrBottomRight`*<br/>
+*`clrBottomRight`*\
 Specifies the color of the bottom and right sides of the three-dimensional rectangle.
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the upper-left corner of the three-dimensional rectangle.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the upper-left corner of the three-dimensional rectangle.
 
-*`cx`*<br/>
+*`cx`*\
 Specifies the width of the three-dimensional rectangle.
 
-*`cy`*<br/>
+*`cy`*\
 Specifies the height of the three-dimensional rectangle.
 
 ### Remarks
@@ -1061,22 +1060,22 @@ void DrawDragRect(
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object that specifies the logical coordinates of a rectangle — in this case, the end position of the rectangle being redrawn.
 
-*`size`*<br/>
+*`size`*\
 Specifies the displacement from the top-left corner of the outer border to the top-left corner of the inner border (that is, the thickness of the border) of a rectangle.
 
-*`lpRectLast`*<br/>
+*`lpRectLast`*\
 Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object that specifies the logical coordinates of the position of a rectangle — in this case, the original position of the rectangle being redrawn.
 
-*`sizeLast`*<br/>
+*`sizeLast`*\
 Specifies the displacement from the top-left corner of the outer border to the top-left corner of the inner border (that is, the thickness of the border) of the original rectangle being redrawn.
 
-*`pBrush`*<br/>
+*`pBrush`*\
 Pointer to a brush object. Set to `NULL` to use the default halftone brush.
 
-*`pBrushLast`*<br/>
+*`pBrushLast`*\
 Pointer to the last brush object used. Set to `NULL` to use the default halftone brush.
 
 ### Remarks
@@ -1098,13 +1097,13 @@ BOOL DrawEdge(
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 A pointer to a `RECT` structure that contains the logical coordinates of the rectangle.
 
-*`nEdge`*<br/>
+*`nEdge`*\
 Specifies the type of inner and outer edge to draw. This parameter must be a combination of one inner-border flag and one outer-border flag. See [`DrawEdge`](/windows/win32/api/winuser/nf-winuser-drawedge) in the Windows SDK for a table of the parameter's types.
 
-*`nFlags`*<br/>
+*`nFlags`*\
 The flags that specify the type of border to be drawn. See `DrawEdge` in the Windows SDK for a table of the parameter's values. For diagonal lines, the `BF_RECT` flags specify the end point of the vector bounded by the rectangle parameter.
 
 ### Return Value
@@ -1113,7 +1112,7 @@ Nonzero if successful; otherwise 0.
 
 ## <a name="drawescape"></a> `CDC::DrawEscape`
 
-Accesses drawing capabilities of a video display that are not directly available through the graphics device interface (GDI).
+Accesses drawing capabilities of a video display that aren't directly available through the graphics device interface (GDI).
 
 ```
 int DrawEscape(
@@ -1124,18 +1123,18 @@ int DrawEscape(
 
 ### Parameters
 
-*`nEscape`*<br/>
+*`nEscape`*\
 Specifies the escape function to be performed.
 
-*`nInputSize`*<br/>
+*`nInputSize`*\
 Specifies the number of bytes of data pointed to by the *`lpszInputData`* parameter.
 
-*`lpszInputData`*<br/>
+*`lpszInputData`*\
 Points to the input structure required for the specified escape.
 
 ### Return Value
 
-Specifies the outcome of the function. Greater than zero if successful, except for the `QUERYESCSUPPORT` draw escape, which checks for implementation only; or zero if the escape is not implemented; or less than zero if an error occurred.
+Specifies the outcome of the function. Greater than zero if successful, except for the `QUERYESCSUPPORT` draw escape, which checks for implementation only; or zero if the escape isn't implemented; or less than zero if an error occurred.
 
 ### Remarks
 
@@ -1151,7 +1150,7 @@ void DrawFocusRect(LPCRECT lpRect);
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object that specifies the logical coordinates of the rectangle to be drawn.
 
 ### Remarks
@@ -1159,7 +1158,7 @@ Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or a [`
 Since this is a Boolean **XOR** (`^`) function, calling this function a second time with the same rectangle removes the rectangle from the display. The rectangle drawn by this function cannot be scrolled. To scroll an area containing a rectangle drawn by this function, first call `DrawFocusRect` to remove the rectangle from the display, then scroll the area, and then call `DrawFocusRect` again to draw the rectangle in the new position.
 
 > [!CAUTION]
-> `DrawFocusRect` works only in `MM_TEXT` mode. In other modes, this function does not draw the focus rectangle correctly, but it does not return error values.
+> `DrawFocusRect` works only in `MM_TEXT` mode. In other modes, this function doesn't draw the focus rectangle correctly, but it doesn't return error values.
 
 ## <a name="drawframecontrol"></a> `CDC::DrawFrameControl`
 
@@ -1174,13 +1173,13 @@ BOOL DrawFrameControl(
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 A pointer to a `RECT` structure that contains the logical coordinates of the rectangle.
 
-*`nType`*<br/>
+*`nType`*\
 Specifies the type of frame control to draw. See the *`uType`* parameter in [`DrawFrameControl`](/windows/win32/api/winuser/nf-winuser-drawframecontrol) in the Windows SDK for a list of this parameter's possible values.
 
-*`nState`*<br/>
+*`nState`*\
 Specifies the initial state of the frame control. Can be one or more of the values described for the *`uState`* parameter in `DrawFrameControl` in the Windows SDK. Use the *`nState`* value `DFCS_ADJUSTRECT` to adjust the bounding rectangle to exclude the surrounding edge of the push button.
 
 ### Return Value
@@ -1262,16 +1261,16 @@ BOOL DrawIcon(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the upper-left corner of the icon.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the upper-left corner of the icon.
 
-*`hIcon`*<br/>
+*`hIcon`*\
 Identifies the handle of the icon to be drawn.
 
-*`point`*<br/>
+*`point`*\
 Specifies the logical x- and y-coordinates of the upper-left corner of the icon. You can pass a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
 
 ### Return Value
@@ -1361,43 +1360,43 @@ BOOL DrawState(
 
 ### Parameters
 
-*`pt`*<br/>
+*`pt`*\
 Specifies the location of the image.
 
-*`size`*<br/>
+*`size`*\
 Specifies the size of the image.
 
-*`hBitmap`*<br/>
+*`hBitmap`*\
 A handle to a bitmap.
 
-*`nFlags`*<br/>
+*`nFlags`*\
 Flags that specify the image type and state. See [`DrawState`](/windows/win32/api/winuser/nf-winuser-drawstatew) in the Windows SDK for the possible *nFlags* types and states.
 
-*`hBrush`*<br/>
+*`hBrush`*\
 A handle to a brush.
 
-*`pBitmap`*<br/>
-A pointer to a CBitmap object.
+*`pBitmap`*\
+A pointer to a `CBitmap` object.
 
-*`pBrush`*<br/>
-A pointer to a CBrush object.
+*`pBrush`*\
+A pointer to a `CBrush` object.
 
-*`hIcon`*<br/>
+*`hIcon`*\
 A handle to an icon.
 
-*`lpszText`*<br/>
+*`lpszText`*\
 A pointer to text.
 
-*`bPrefixText`*<br/>
+*`bPrefixText`*\
 Text that may contain an accelerator mnemonic. The *`lData`* parameter specifies the address of the string, and the *`nTextLen`* parameter specifies the length. If *`nTextLen`* is 0, the string is assumed to be null-terminated.
 
-*`nTextLen`*<br/>
+*`nTextLen`*\
 Length of the text string pointed to by *`lpszText`*. If *`nTextLen`* is 0, the string is assumed to be null-terminated.
 
-*`lpDrawProc`*<br/>
-A pointer to a callback function used to render an image. This parameter is required if the image type in *`nFlags`* is `DST_COMPLEX`. It is optional and can be `NULL` if the image type is `DST_TEXT`. For all other image types, this parameter is ignored. For more information about the callback function, see the [`DrawStateProc`](/windows/win32/api/winuser/nc-winuser-drawstateproc) function in the Windows SDK.
+*`lpDrawProc`*\
+A pointer to a callback function used to render an image. This parameter is required if the image type in *`nFlags`* is `DST_COMPLEX`. It's optional and can be `NULL` if the image type is `DST_TEXT`. For all other image types, this parameter is ignored. For more information about the callback function, see the [`DrawStateProc`](/windows/win32/api/winuser/nc-winuser-drawstateproc) function in the Windows SDK.
 
-*`lData`*<br/>
+*`lData`*\
 Specifies information about the image. The meaning of this parameter depends on the image type.
 
 ### Return Value
@@ -1406,7 +1405,7 @@ Nonzero if successful; otherwise 0.
 
 ## <a name="drawtext"></a> `CDC::DrawText`
 
-Call this member function to format text in the given rectangle. To specify additional formatting options, use [`CDC::DrawTextEx`](#drawtextex).
+Call this member function to format text in the given rectangle. To specify more formatting options, use [`CDC::DrawTextEx`](#drawtextex).
 
 ```
 virtual int DrawText(
@@ -1423,19 +1422,19 @@ int DrawText(
 
 ### Parameters
 
-*`lpszString`*<br/>
+*`lpszString`*\
 Points to the string to be drawn. If *`nCount`* is -1, the string must be null-terminated.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the number of chars in the string. If *`nCount`* is -1, then *`lpszString`* is assumed to be a long pointer to a null-terminated string and `DrawText` computes the character count automatically.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object that contains the rectangle (in logical coordinates) in which the text is to be formatted.
 
-*`str`*<br/>
+*`str`*\
 A [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object that contains the specified characters to be drawn.
 
-*`nFormat`*<br/>
+*`nFormat`*\
 Specifies the method of formatting the text. It can be any combination of the values described for the *`uFormat`* parameter in [`DrawText`](/windows/win32/api/winuser/nf-winuser-drawtext) in the Windows SDK. (combine using the bitwise OR operator):
 
 > [!NOTE]
@@ -1449,13 +1448,13 @@ The height of the text if the function is successful.
 
 It formats text by expanding tabs into appropriate spaces, aligning text to the left, right, or center of the given rectangle, and breaking text into lines that fit within the given rectangle. The type of formatting is specified by *`nFormat`*.
 
-This member function uses the device context's selected font, text color, and background color to draw the text. Unless the `DT_NOCLIP` format is used, `DrawText` clips the text so that the text does not appear outside the given rectangle. All formatting is assumed to have multiple lines unless the `DT_SINGLELINE` format is given.
+This member function uses the device context's selected font, text color, and background color to draw the text. Unless the `DT_NOCLIP` format is used, `DrawText` clips the text so that the text doesn't appear outside the given rectangle. All formatting is assumed to have multiple lines unless the `DT_SINGLELINE` format is given.
 
-If the selected font is too large for the specified rectangle, the `DrawText` member function does not attempt to substitute a smaller font.
+If the selected font is too large for the specified rectangle, the `DrawText` member function doesn't attempt to substitute a smaller font.
 
 If the `DT_CALCRECT` flag is specified, the rectangle specified by *`lpRect`* will be updated to reflect the width and height needed to draw the text.
 
-If the `TA_UPDATECP` text-alignment flag has been set (see [`CDC::SetTextAlign`](#settextalign)), `DrawText` will display text starting at the current position, rather than at the left of the given rectangle. `DrawText` will not wrap text when the `TA_UPDATECP` flag has been set (that is, the `DT_WORDBREAK` flag will have no effect).
+If the `TA_UPDATECP` text-alignment flag has been set (see [`CDC::SetTextAlign`](#settextalign)), `DrawText` will display text starting at the current position, rather than at the left of the given rectangle. `DrawText` won't wrap text when the `TA_UPDATECP` flag has been set (that is, the `DT_WORDBREAK` flag will have no effect).
 
 The text color may be set by [`CDC::SetTextColor`](#settextcolor).
 
@@ -1480,26 +1479,26 @@ int DrawTextEx(
 
 ### Parameters
 
-*`lpszString`*<br/>
+*`lpszString`*\
 Points to the string to be drawn. If *`nCount`* is -1, the string must be null terminated.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the number of chars in the string. If *`nCount`* is -1, then *`lpszString`* is assumed to be a long pointer to a null-terminated string and `DrawText` computes the character count automatically.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object that contains the rectangle (in logical coordinates) in which the text is to be formatted.
 
-*`str`*<br/>
+*`str`*\
 A [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object that contains the specified characters to be drawn.
 
-*`nFormat`*<br/>
+*`nFormat`*\
 Specifies the method of formatting the text. It can be any combination of the values described for the *`uFormat`* parameter in [`DrawText`](/windows/win32/api/winuser/nf-winuser-drawtext) in the Windows SDK. (Combine using the bitwise **OR** operator):
 
 > [!NOTE]
 > Some *`uFormat`* flag combinations can cause the passed string to be modified. Using `DT_MODIFYSTRING` with either `DT_END_ELLIPSIS` or `DT_PATH_ELLIPSIS` may cause the string to be modified, causing an assertion in the `CString` override. The values `DT_CALCRECT`, `DT_EXTERNALLEADING`, `DT_INTERNAL`, `DT_NOCLIP`, and `DT_NOPREFIX` cannot be used with the `DT_TABSTOP` value.
 
-*`lpDTParams`*<br/>
-Pointer to a [`DRAWTEXTPARAMS`](/windows/win32/api/winuser/ns-winuser-drawtextparams) structure that specifies additional formatting options. This parameter can be `NULL`.
+*`lpDTParams`*\
+Pointer to a [`DRAWTEXTPARAMS`](/windows/win32/api/winuser/ns-winuser-drawtextparams) structure that specifies more formatting options. This parameter can be `NULL`.
 
 ### Remarks
 
@@ -1523,19 +1522,19 @@ BOOL Ellipse(LPCRECT lpRect);
 
 ### Parameters
 
-*`x1`*<br/>
+*`x1`*\
 Specifies the logical x-coordinate of the upper-left corner of the ellipse's bounding rectangle.
 
-*`y1`*<br/>
+*`y1`*\
 Specifies the logical y-coordinate of the upper-left corner of the ellipse's bounding rectangle.
 
-*`x2`*<br/>
+*`x2`*\
 Specifies the logical x-coordinate of the lower-right corner of the ellipse's bounding rectangle.
 
-*`y2`*<br/>
+*`y2`*\
 Specifies the logical y-coordinate of the lower-right corner of the ellipse's bounding rectangle.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the ellipse's bounding rectangle. You can also pass a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object for this parameter.
 
 ### Return Value
@@ -1546,7 +1545,7 @@ Nonzero if the function is successful; otherwise 0.
 
 The center of the ellipse is the center of the bounding rectangle specified by *`x1`*, *`y1`*, *`x2`*, and *`y2`*, or *`lpRect`*. The ellipse is drawn with the current pen, and its interior is filled with the current brush.
 
-The figure drawn by this function extends up to, but does not include, the right and bottom coordinates. This means that the height of the figure is *`y2`* - *`y1`* and the width of the figure is *`x2`* - *`x1`*.
+The figure drawn by this function extends up to, but doesn't include, the right and bottom coordinates. This means that the height of the figure is *`y2`* - *`y1`* and the width of the figure is *`x2`* - *`x1`*.
 
 If either the width or the height of the bounding rectangle is 0, no ellipse is drawn.
 
@@ -1568,7 +1567,7 @@ This member function replaces the `ENDDOC` printer escape, and should be called 
 
 If an application encounters a printing error or a canceled print operation, it must not attempt to terminate the operation by using either `EndDoc` or [`AbortDoc`](#abortdoc). GDI automatically terminates the operation before returning the error value.
 
-This function should not be used inside metafiles.
+This function shouldn't be used inside metafiles.
 
 ### Example
 
@@ -1627,13 +1626,13 @@ int EnumObjects(
 
 ### Parameters
 
-*`nObjectType`*<br/>
+*`nObjectType`*\
 Specifies the object type. It can have the values `OBJ_BRUSH` or `OBJ_PEN`.
 
-*`lpfn`*<br/>
+*`lpfn`*\
 Is the procedure-instance address of the application-supplied callback function. See the "Remarks" section below.
 
-*`lpData`*<br/>
+*`lpData`*\
 Points to the application-supplied data. The data is passed to the callback function along with the object information.
 
 ### Return Value
@@ -1644,17 +1643,17 @@ Specifies the last value returned by the [callback function](callback-functions-
 
 For each object of a given type, the callback function that you pass is called with the information for that object. The system calls the callback function until there are no more objects or the callback function returns 0.
 
-Note that new features of Microsoft Visual C++ let you use an ordinary function as the function passed to `EnumObjects`. The address passed to `EnumObjects` is a pointer to a function exported with **`EXPORT`** and with the Pascal calling convention. In protect-mode applications, you do not have to create this function with the Windows `MakeProcInstance` function or free the function after use with the `FreeProcInstance` Windows function.
+New features of Microsoft Visual C++ let you use an ordinary function as the function passed to `EnumObjects`. The address passed to `EnumObjects` is a pointer to a function exported with **`EXPORT`** and with the Pascal calling convention. In protect-mode applications, you don't have to create this function with the Windows `MakeProcInstance` function or free the function after use with the `FreeProcInstance` Windows function.
 
-You also do not have to export the function name in an **`EXPORTS`** statement in your application's module-definition file. You can instead use the **`EXPORT`** function modifier, as in
+You also don't have to export the function name in an **`EXPORTS`** statement in your application's module-definition file. You can instead use the **`EXPORT`** function modifier, as in
 
 **int CALLBACK EXPORT** AFunction **(LPSTR**, **LPSTR);**
 
 to cause the compiler to emit the proper export record for export by name without aliasing. This works for most needs. For some special cases, such as exporting a function by ordinal or aliasing the export, you still need to use an **`EXPORTS`** statement in a module-definition file.
 
-For compiling Microsoft Foundation programs, you will normally use the `/GA` and `/GEs` compiler options. The `/Gw` compiler option is not used with the Microsoft Foundation classes. (If you do use the Windows function `MakeProcInstance`, you will need to explicitly cast the returned function pointer from `FARPROC` to the type needed in this API.) Callback registration interfaces are now type-safe (you must pass in a function pointer that points to the right kind of function for the specific callback).
+For compiling Microsoft Foundation programs, you'll normally use the `/GA` and `/GEs` compiler options. The `/Gw` compiler option isn't used with the Microsoft Foundation classes. (If you do use the Windows function `MakeProcInstance`, you'll need to explicitly cast the returned function pointer from `FARPROC` to the type needed in this API.) Callback registration interfaces are now type-safe (you must pass in a function pointer that points to the right kind of function for the specific callback).
 
-Also note that all callback functions must trap Microsoft Foundation exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).
+Also, all callback functions must trap Microsoft Foundation exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).
 
 ### Example
 
@@ -1681,35 +1680,35 @@ int Escape(
 
 ### Parameters
 
-*`nEscape`*<br/>
+*`nEscape`*\
 Specifies the escape function to be performed.
 
 For a complete list of escape functions, see [`Escape`](/windows/win32/api/wingdi/nf-wingdi-escape) in the Windows SDK.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the number of bytes of data pointed to by *`lpszInData`*.
 
-*`lpszInData`*<br/>
+*`lpszInData`*\
 Points to the input data structure required for this escape.
 
-*`lpOutData`*<br/>
+*`lpOutData`*\
 Points to the structure that is to receive output from this escape. The *`lpOutData`* parameter is `NULL` if no data is returned.
 
-*`nInputSize`*<br/>
+*`nInputSize`*\
 Specifies the number of bytes of data pointed to by the *`lpszInputData`* parameter.
 
-*`lpszInputData`*<br/>
+*`lpszInputData`*\
 Points to the input structure required for the specified escape.
 
-*`nOutputSize`*<br/>
+*`nOutputSize`*\
 Specifies the number of bytes of data pointed to by the *`lpszOutputData`* parameter.
 
-*`lpszOutputData`*<br/>
+*`lpszOutputData`*\
 Points to the structure that receives output from this escape. This parameter should be `NULL` if no data is returned.
 
 ### Return Value
 
-A positive value is returned if the function is successful, except for the `QUERYESCSUPPORT` escape, which only checks for implementation. Zero is returned if the escape is not implemented. A negative value is returned if an error occurred. The following are common error values:
+A positive value is returned if the function is successful, except for the `QUERYESCSUPPORT` escape, which only checks for implementation. Zero is returned if the escape isn't implemented. A negative value is returned if an error occurred. The following are common error values:
 
 - `SP_ERROR` General error.
 
@@ -1739,7 +1738,7 @@ For Win32 programming, `CDC` now provides six member functions that supersede th
 
 In addition, [`CDC::GetDeviceCaps`](#getdevicecaps) supports Win32 indexes that supersede other printer escapes. See [`GetDeviceCaps`](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) in the Windows SDK for more information.
 
-This member function allows applications to access facilities of a particular device that are not directly available through GDI.
+This member function allows applications to access facilities of a particular device that aren't directly available through GDI.
 
 Use the first version if your application uses predefined escape values. Use the second version if your application defines private escape values. See [`ExtEscape`](/windows/win32/api/wingdi/nf-wingdi-extescape) in the Windows SDK for more information about the second version.
 
@@ -1759,19 +1758,19 @@ int ExcludeClipRect(LPCRECT lpRect);
 
 ### Parameters
 
-*`x1`*<br/>
+*`x1`*\
 Specifies the logical x-coordinate of the upper-left corner of the rectangle.
 
-*`y1`*<br/>
+*`y1`*\
 Specifies the logical y-coordinate of the upper-left corner of the rectangle.
 
-*`x2`*<br/>
+*`x2`*\
 Specifies the logical x-coordinate of the lower-right corner of the rectangle.
 
-*`y2`*<br/>
+*`y2`*\
 Specifies the logical y-coordinate of the lower-right corner of the rectangle.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the rectangle. Can also be a `CRect` object.
 
 ### Return Value
@@ -1800,7 +1799,7 @@ int ExcludeUpdateRgn(CWnd* pWnd);
 
 ### Parameters
 
-*`pWnd`*<br/>
+*`pWnd`*\
 Points to the window object whose window is being updated.
 
 ### Return Value
@@ -1829,16 +1828,16 @@ BOOL ExtFloodFill(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the point where filling begins.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the point where filling begins.
 
-*`crColor`*<br/>
+*`crColor`*\
 Specifies the color of the boundary or of the area to be filled. The interpretation of *`crColor`* depends on the value of *`nFillType`*.
 
-*`nFillType`*<br/>
+*`nFillType`*\
 Specifies the type of flood fill to be performed. It must be either of the following values:
 
 - `FLOODFILLBORDER` The fill area is bounded by the color specified by *`crColor`*. This style is identical to the filling performed by `FloodFill`.
@@ -1847,7 +1846,7 @@ Specifies the type of flood fill to be performed. It must be either of the follo
 
 ### Return Value
 
-Nonzero if the function is successful; otherwise 0 if the filling could not be completed, if the given point has the boundary color specified by *`crColor`* (if `FLOODFILLBORDER` was requested), if the given point does not have the color specified by *`crColor`* (if `FLOODFILLSURFACE` was requested), or if the point is outside the clipping region.
+Nonzero if the function is successful; otherwise 0 if the filling couldn't be completed, if the given point has the boundary color specified by *`crColor`* (if `FLOODFILLBORDER` was requested), if the given point doesn't have the color specified by *`crColor`* (if `FLOODFILLSURFACE` was requested), or if the point is outside the clipping region.
 
 ### Remarks
 
@@ -1884,32 +1883,32 @@ BOOL ExtTextOut(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the character cell for the first character in the specified string.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the top of the character cell for the first character in the specified string.
 
-*`nOptions`*<br/>
+*`nOptions`*\
 Specifies the rectangle type. This parameter can be one, both, or neither of the following values:
 
 - `ETO_CLIPPED` Specifies that text is clipped to the rectangle.
 
 - `ETO_OPAQUE` Specifies that the current background color fills the rectangle. (You can set and query the current background color with the [`SetBkColor`](#setbkcolor) and [`GetBkColor`](#getbkcolor) member functions.)
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure that determines the dimensions of the rectangle. This parameter can be `NULL`. You can also pass a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object for this parameter.
 
-*`lpszString`*<br/>
+*`lpszString`*\
 Points to the specified character string to be drawn. You can also pass a [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the number of characters in the string.
 
-*`lpDxWidths`*<br/>
+*`lpDxWidths`*\
 Points to an array of values that indicate the distance between origins of adjacent character cells. For instance, *`lpDxWidths`*[ *`i`*] logical units will separate the origins of character cell *`i`* and character cell *`i`* + 1. If *`lpDxWidths`* is `NULL`, `ExtTextOut` uses the default spacing between characters.
 
-*`str`*<br/>
+*`str`*\
 A `CString` object that contains the specified characters to be drawn.
 
 ### Return Value
@@ -1920,7 +1919,7 @@ Nonzero if the function is successful; otherwise 0.
 
 The rectangular region can be opaque (filled with the current background color), and it can be a clipping region.
 
-If *`nOptions`* is 0 and *`lpRect`* is `NULL`, the function writes text to the device context without using a rectangular region. By default, the current position is not used or updated by the function. If an application needs to update the current position when it calls `ExtTextOut`, the application can call the `CDC` member function [`SetTextAlign`](#settextalign) with *`nFlags`* set to `TA_UPDATECP`. When this flag is set, Windows ignores *`x`* and *`y`* on subsequent calls to `ExtTextOut` and uses the current position instead. When an application uses `TA_UPDATECP` to update the current position, `ExtTextOut` sets the current position either to the end of the previous line of text or to the position specified by the last element of the array pointed to by *`lpDxWidths`*, whichever is greater.
+If *`nOptions`* is 0 and *`lpRect`* is `NULL`, the function writes text to the device context without using a rectangular region. By default, the current position isn't used or updated by the function. If an application needs to update the current position when it calls `ExtTextOut`, the application can call the `CDC` member function [`SetTextAlign`](#settextalign) with *`nFlags`* set to `TA_UPDATECP`. When this flag is set, Windows ignores *`x`* and *`y`* on subsequent calls to `ExtTextOut` and uses the current position instead. When an application uses `TA_UPDATECP` to update the current position, `ExtTextOut` sets the current position either to the end of the previous line of text or to the position specified by the last element of the array pointed to by *`lpDxWidths`*, whichever is greater.
 
 ## <a name="fillpath"></a> `CDC::FillPath`
 
@@ -1950,19 +1949,19 @@ void FillRect(
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure that contains the logical coordinates of the rectangle to be filled. You can also pass a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object for this parameter.
 
-*`pBrush`*<br/>
+*`pBrush`*\
 Identifies the brush used to fill the rectangle.
 
 ### Remarks
 
-The function fills the complete rectangle, including the left and top borders, but it does not fill the right and bottom borders.
+The function fills the complete rectangle, including the left and top borders, but it doesn't fill the right and bottom borders.
 
 The brush needs to either be created using the [`CBrush`](../../mfc/reference/cbrush-class.md) member functions [`CreateHatchBrush`](../../mfc/reference/cbrush-class.md#createhatchbrush), [`CreatePatternBrush`](../../mfc/reference/cbrush-class.md#createpatternbrush), and [`CreateSolidBrush`](../../mfc/reference/cbrush-class.md#createsolidbrush), or retrieved by the `GetStockObject` Windows function.
 
-When filling the specified rectangle, `FillRect` does not include the rectangle's right and bottom sides. GDI fills a rectangle up to, but does not include, the right column and bottom row, regardless of the current mapping mode. `FillRect` compares the values of the `top`, `bottom`, `left`, and `right` members of the specified rectangle. If `bottom` is less than or equal to `top`, or if `right` is less than or equal to `left`, the rectangle is not drawn.
+When filling the specified rectangle, `FillRect` doesn't include the rectangle's right and bottom sides. GDI fills a rectangle up to, but doesn't include, the right column and bottom row, regardless of the current mapping mode. `FillRect` compares the values of the `top`, `bottom`, `left`, and `right` members of the specified rectangle. If `bottom` is less than or equal to `top`, or if `right` is less than or equal to `left`, the rectangle isn't drawn.
 
 `FillRect` is similar to [`CDC::FillSolidRect`](#fillsolidrect); however, `FillRect` takes a brush and therefore can be used to fill a rectangle with a solid color, a dithered color, hatched brushes, or a pattern. `FillSolidRect` uses only solid colors (indicated by a `COLORREF` parameter). `FillRect` usually is slower than `FillSolidRect`.
 
@@ -1978,10 +1977,10 @@ BOOL FillRgn(
 
 ### Parameters
 
-*`pRgn`*<br/>
+*`pRgn`*\
 A pointer to the region to be filled. The coordinates for the given region are specified in logical units.
 
-*`pBrush`*<br/>
+*`pBrush`*\
 Identifies the brush to be used to fill the region.
 
 ### Return Value
@@ -2015,21 +2014,21 @@ void FillSolidRect(
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the bounding rectangle (in logical units). You can pass either a pointer to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) data structure or a `CRect` object for this parameter.
 
 *`clr`* Specifies the color to be used to fill the rectangle.
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the upper-left corner of the rectangle.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the upper-left corner of the destination rectangle.
 
-*`cx`*<br/>
+*`cx`*\
 Specifies the width of the rectangle.
 
-*`cy`*<br/>
+*`cy`*\
 Specifies the height of the rectangle.
 
 ### Remarks
@@ -2064,18 +2063,18 @@ BOOL FloodFill(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the point where filling begins.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the point where filling begins.
 
-*`crColor`*<br/>
+*`crColor`*\
 Specifies the color of the boundary.
 
 ### Return Value
 
-Nonzero if the function is successful; otherwise 0 is returned if the filling could not be completed, the given point has the boundary color specified by *`crColor`*, or the point is outside the clipping region.
+Nonzero if the function is successful; otherwise 0 is returned if the filling couldn't be completed, the given point has the boundary color specified by *`crColor`*, or the point is outside the clipping region.
 
 ### Remarks
 
@@ -2097,19 +2096,19 @@ void FrameRect(
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object that contains the logical coordinates of the upper-left and lower-right corners of the rectangle. You can also pass a `CRect` object for this parameter.
 
-*`pBrush`*<br/>
+*`pBrush`*\
 Identifies the brush to be used for framing the rectangle.
 
 ### Remarks
 
 The function uses the given brush to draw the border. The width and height of the border is always 1 logical unit.
 
-If the rectangle's `bottom` coordinate is less than or equal to `top`, or if `right` is less than or equal to `left`, the rectangle is not drawn.
+If the rectangle's `bottom` coordinate is less than or equal to `top`, or if `right` is less than or equal to `left`, the rectangle isn't drawn.
 
-The border drawn by `FrameRect` is in the same position as a border drawn by the `Rectangle` member function using the same coordinates (if `Rectangle` uses a pen that is 1 logical unit wide). The interior of the rectangle is not filled by `FrameRect`.
+The border drawn by `FrameRect` is in the same position as a border drawn by the `Rectangle` member function using the same coordinates (if `Rectangle` uses a pen that is 1 logical unit wide). The interior of the rectangle isn't filled by `FrameRect`.
 
 ## <a name="framergn"></a> `CDC::FrameRgn`
 
@@ -2125,16 +2124,16 @@ BOOL FrameRgn(
 
 ### Parameters
 
-*`pRgn`*<br/>
+*`pRgn`*\
 Points to the `CRgn` object that identifies the region to be enclosed in a border. The coordinates for the given region are specified in logical units.
 
-*`pBrush`*<br/>
+*`pBrush`*\
 Points to the `CBrush` object that identifies the brush to be used to draw the border.
 
-*`nWidth`*<br/>
+*`nWidth`*\
 Specifies the width of the border in vertical brush strokes in device units.
 
-*`nHeight`*<br/>
+*`nHeight`*\
 Specifies the height of the border in horizontal brush strokes in device units.
 
 ### Return Value
@@ -2155,16 +2154,16 @@ static CDC* PASCAL FromHandle(HDC hDC);
 
 ### Parameters
 
-*`hDC`*<br/>
+*`hDC`*\
 Contains a handle to a Windows device context.
 
 ### Return Value
 
-The pointer may be temporary and should not be stored beyond immediate use.
+The pointer may be temporary and shouldn't be stored beyond immediate use.
 
 ### Remarks
 
-If a `CDC` object is not attached to the handle, a temporary `CDC` object is created and attached.
+If a `CDC` object isn't attached to the handle, a temporary `CDC` object is created and attached.
 
 ### Example
 
@@ -2238,7 +2237,7 @@ The current background mode, which can be `OPAQUE` or `TRANSPARENT`.
 
 ### Remarks
 
-The background mode defines whether the system removes existing background colors on the drawing surface before drawing text, hatched brushes, or any pen style that is not a solid line.
+The background mode defines whether the system removes existing background colors on the drawing surface before drawing text, hatched brushes, or any pen style that isn't a solid line.
 
 ## <a name="getboundsrect"></a> `CDC::GetBoundsRect`
 
@@ -2252,13 +2251,13 @@ UINT GetBoundsRect(
 
 ### Parameters
 
-*`lpRectBounds`*<br/>
+*`lpRectBounds`*\
 Points to a buffer that will receive the current bounding rectangle. The rectangle is returned in logical coordinates.
 
-*`flags`*<br/>
-Specifies whether the bounding rectangle is to be cleared after it is returned. This parameter should be zero or set to the following value:
+*`flags`*\
+Specifies whether the bounding rectangle is to be cleared after it's returned. This parameter should be zero or set to the following value:
 
-- `DCB_RESET` Forces the bounding rectangle to be cleared after it is returned.
+- `DCB_RESET` Forces the bounding rectangle to be cleared after it's returned.
 
 ### Return Value
 
@@ -2268,7 +2267,7 @@ Specifies the current state of the bounding rectangle if the function is success
 
 - `DCB_RESET` Bounding rectangle is empty.
 
-- `DCB_SET` Bounding rectangle is not empty.
+- `DCB_SET` Bounding rectangle isn't empty.
 
 - `DCB_ENABLE` Bounding accumulation is on.
 
@@ -2311,22 +2310,22 @@ DWORD GetCharacterPlacement(
 
 ### Parameters
 
-*`lpString`*<br/>
+*`lpString`*\
 A pointer to the character string to process.
 
-*`nCount`*<br/>
-Specifies the length of the string. For the ANSI version, it is a `BYTE` count and for the Unicode function it is a `WORD` count. For more information, see [`GetCharacterPlacement`](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw).
+*`nCount`*\
+Specifies the length of the string. For the ANSI version, it's a `BYTE` count and for the Unicode function it's a `WORD` count. For more information, see [`GetCharacterPlacement`](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw).
 
-*`nMaxExtent`*<br/>
+*`nMaxExtent`*\
 Specifies the maximum extent (in logical units) to which the string is processed. Characters that, if processed, would exceed this extent are ignored. Computations for any required ordering or glyph arrays apply only to the included characters. This parameter is used only if the `GCP_MAXEXTENT` value is specified in the *`dwFlags`* parameter. As the function processes the input string, each character and its extent is added to the output, extent, and other arrays only if the total extent has not yet exceeded the maximum. Once the limit is reached, processing will stop.
 
-*`lpResults`*<br/>
+*`lpResults`*\
 Pointer to a [`GCP_Results`](/windows/win32/api/wingdi/ns-wingdi-gcp_resultsw) structure that receives the results of the function.
 
-*`dwFlags`*<br/>
+*`dwFlags`*\
 Specifies how to process the string into the required arrays. This parameter can be one or more of the values listed in the *`dwFlags`* section of the [`GetCharacterPlacement`](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw) topic.
 
-*`str`*<br/>
+*`str`*\
 A pointer to a [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object to process.
 
 ### Return Value
@@ -2357,16 +2356,16 @@ BOOL GetCharABCWidths(
 
 ### Parameters
 
-*`nFirstChar`*<br/>
+*`nFirstChar`*\
 Specifies the first character in the range of characters from the current font for which character widths are returned.
 
-*`nLastChar`*<br/>
+*`nLastChar`*\
 Specifies the last character in the range of characters from the current font for which character widths are returned.
 
-*`lpabc`*<br/>
+*`lpabc`*\
 Points to an array of [`ABC`](/windows/win32/api/wingdi/ns-wingdi-abc) structures that receive the character widths when the function returns. This array must contain at least as many `ABC` structures as there are characters in the range specified by the *`nFirstChar`* and *`nLastChar`* parameters.
 
-*`lpABCF`*<br/>
+*`lpABCF`*\
 Points to an application-supplied buffer with an array of [`ABCFLOAT`](/windows/win32/api/wingdi/ns-wingdi-abcfloat) structures to receive the character widths when the function returns. The widths returned by this function are in the IEEE floating-point format.
 
 ### Return Value
@@ -2401,16 +2400,16 @@ BOOL GetCharABCWidthsI(
 
 ### Parameters
 
-*`giFirst`*<br/>
+*`giFirst`*\
 Specifies the first glyph index in the group of consecutive glyph indices from the current font. This parameter is only used if the *`pgi`* parameter is `NULL`.
 
-*`cgi`*<br/>
+*`cgi`*\
 Specifies the number of glyph indices.
 
-*`pgi`*<br/>
+*`pgi`*\
 A pointer to an array containing glyph indices. If the value is `NULL`, the *`giFirst`* parameter is used instead. The *`cgi`* parameter specifies the number of glyph indices in this array.
 
-*`lpabc`*<br/>
+*`lpabc`*\
 Pointer to an array of [`ABC`](/windows/win32/api/wingdi/ns-wingdi-abc) structures receiving the character widths. This array must contain at least as many `ABC` structures as there are glyph indices specified by the *`cgi`* parameter.
 
 ### Return Value
@@ -2439,16 +2438,16 @@ BOOL GetCharWidth(
 
 ### Parameters
 
-*`nFirstChar`*<br/>
+*`nFirstChar`*\
 Specifies the first character in a consecutive group of characters in the current font.
 
-*`nLastChar`*<br/>
+*`nLastChar`*\
 Specifies the last character in a consecutive group of characters in the current font.
 
-*`lpBuffer`*<br/>
+*`lpBuffer`*\
 Points to a buffer that will receive the width values for a consecutive group of characters in the current font.
 
-*`lpFloatBuffer`*<br/>
+*`lpFloatBuffer`*\
 Points to a buffer to receive the character widths. The returned widths are in the 32-bit IEEE floating-point format. (The widths are measured along the base line of the characters.)
 
 ### Return Value
@@ -2461,7 +2460,7 @@ For example, if *`nFirstChar`* identifies the letter 'a' and *`nLastChar`* ident
 
 The function stores the values in the buffer pointed to by *`lpBuffer`*. This buffer must be large enough to hold all of the widths. That is, there must be at least 26 entries in the example given.
 
-If a character in the consecutive group of characters does not exist in a particular font, it will be assigned the width value of the default character.
+If a character in the consecutive group of characters doesn't exist in a particular font, it will be assigned the width value of the default character.
 
 ## <a name="getcharwidthi"></a> `CDC::GetCharWidthI`
 
@@ -2477,16 +2476,16 @@ BOOL GetCharWidthI(
 
 ### Parameters
 
-*`giFirst`*<br/>
+*`giFirst`*\
 Specifies the first glyph index in the group of consecutive glyph indices from the current font. This parameter is only used if the *`pgi`* parameter is `NULL`.
 
-*`cgi`*<br/>
+*`cgi`*\
 Specifies the number of glyph indices.
 
-*`pgi`*<br/>
+*`pgi`*\
 A pointer to an array containing glyph indices. If the value is `NULL`, the *`giFirst`* parameter is used instead. The *`cgi`* parameter specifies the number of glyph indices in this array.
 
-*`lpBuffer`*<br/>
+*`lpBuffer`*\
 A pointer to a buffer that receives the widths.
 
 ### Return Value
@@ -2507,7 +2506,7 @@ virtual int GetClipBox(LPRECT lpRect) const;
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to the [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object that is to receive the rectangle dimensions.
 
 ### Return Value
@@ -2516,7 +2515,7 @@ The clipping region's type. It can be any of the following values:
 
 - `COMPLEXREGION` Clipping region has overlapping borders.
 
-- `ERROR` Device context is not valid.
+- `ERROR` Device context isn't valid.
 
 - `NULLREGION` Clipping region is empty.
 
@@ -2536,7 +2535,7 @@ BOOL GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const;
 
 ### Parameters
 
-*`lpColorAdjust`*<br/>
+*`lpColorAdjust`*\
 Points to a [`COLORADJUSTMENT`](/windows/win32/api/wingdi/ns-wingdi-coloradjustment) data structure to receive the color adjustment values.
 
 ### Return Value
@@ -2685,7 +2684,7 @@ int GetDeviceCaps(int nIndex) const;
 
 ### Parameters
 
-*`nIndex`*<br/>
+*`nIndex`*\
 Specifies the type of information to return. See [`GetDeviceCaps`](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) in the Windows SDK for a list of values.
 
 ### Return Value
@@ -2710,16 +2709,16 @@ DWORD GetFontData(
 
 ### Parameters
 
-*`dwTable`*<br/>
+*`dwTable`*\
 Specifies the name of the metric table to be returned. This parameter can be one of the metric tables documented in the TrueType Font Files specification published by Microsoft Corporation. If this parameter is 0, the information is retrieved starting at the beginning of the font file.
 
-*`dwOffset`*<br/>
+*`dwOffset`*\
 Specifies the offset from the beginning of the table at which to begin retrieving information. If this parameter is 0, the information is retrieved starting at the beginning of the table specified by the *`dwTable`* parameter. If this value is greater than or equal to the size of the table, `GetFontData` returns 0.
 
-*`lpData`*<br/>
+*`lpData`*\
 Points to a buffer that will receive the font information. If this value is `NULL`, the function returns the size of the buffer required for the font data specified in the *`dwTable`* parameter.
 
-*`cbData`*<br/>
+*`cbData`*\
 Specifies the length, in bytes, of the information to be retrieved. If this parameter is 0, `GetFontData` returns the size of the data specified in the *`dwTable`* parameter.
 
 ### Return Value
@@ -2732,7 +2731,7 @@ The information to retrieve is identified by specifying an offset into the font 
 
 An application can sometimes use the `GetFontData` member function to save a TrueType font with a document. To do this, the application determines whether the font can be embedded and then retrieves the entire font file, specifying 0 for the *`dwTable`*, *`dwOffset`*, and *`cbData`* parameters.
 
-Applications can determine whether a font can be embedded by checking the `otmfsType` member of the [`OUTLINETEXTMETRIC`](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) structure. If bit 1 of `otmfsType` is set, embedding is not permitted for the font. If bit 1 is clear, the font can be embedded. If bit 2 is set, the embedding is read only.
+Applications can determine whether a font can be embedded by checking the `otmfsType` member of the [`OUTLINETEXTMETRIC`](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) structure. If bit 1 of `otmfsType` is set, embedding isn't permitted for the font. If bit 1 is clear, the font can be embedded. If bit 2 is set, the embedding is read only.
 
 If an application attempts to use this function to retrieve information for a non-TrueType font, the `GetFontData` member function returns -1.
 
@@ -2768,10 +2767,10 @@ DWORD GetGlyphOutline(
 
 ### Parameters
 
-*`nChar`*<br/>
+*`nChar`*\
 Specifies the character for which information is to be returned.
 
-*`nFormat`*<br/>
+*`nFormat`*\
 Specifies the format in which the function is to return information. It can be one of the following values, or 0:
 
 |Value|Meaning|
@@ -2779,23 +2778,23 @@ Specifies the format in which the function is to return information. It can be o
 |`GGO_BITMAP`|Returns the glyph bitmap. When the function returns, the buffer pointed to by *`lpBuffer`* contains a 1-bit-per-pixel bitmap whose rows start on doubleword boundaries.|
 |`GGO_NATIVE`|Returns the curve data points in the rasterizer's native format, using device units. When this value is specified, any transformation specified in *`lpmat2`* is ignored.|
 
-When the value of *`nFormat`* is 0, the function fills in a [`GLYPHMETRICS`](/windows/win32/api/wingdi/ns-wingdi-glyphmetrics) structure but does not return glyph-outline data.
+When the value of *`nFormat`* is 0, the function fills in a [`GLYPHMETRICS`](/windows/win32/api/wingdi/ns-wingdi-glyphmetrics) structure but doesn't return glyph-outline data.
 
-*`lpgm`*<br/>
+*`lpgm`*\
 Points to a `GLYPHMETRICS` structure that describes the placement of the glyph in the character cell.
 
-*`cbBuffer`*<br/>
+*`cbBuffer`*\
 Specifies the size of the buffer into which the function copies information about the outline character. If this value is 0 and the *`nFormat`* parameter is either the `GGO_BITMAP` or `GGO_NATIVE` values, the function returns the required size of the buffer.
 
-*`lpBuffer`*<br/>
+*`lpBuffer`*\
 Points to a buffer into which the function copies information about the outline character. If *`nFormat`* specifies the `GGO_NATIVE` value, the information is copied in the form of `TTPOLYGONHEADER` and `TTPOLYCURVE` structures. If this value is `NULL` and *`nFormat`* is either the `GGO_BITMAP` or `GGO_NATIVE` value, the function returns the required size of the buffer.
 
-*`lpmat2`*<br/>
+*`lpmat2`*\
 Points to a [`MAT2`](/windows/win32/api/wingdi/ns-wingdi-mat2) structure that contains a transformation matrix for the character. This parameter cannot be `NULL`, even when the `GGO_NATIVE` value is specified for *`nFormat`*.
 
 ### Return Value
 
-The size, in bytes, of the buffer required for the retrieved information if *`cbBuffer`* is 0 or *`lpBuffer`* is `NULL`. Otherwise, it is a positive value if the function is successful, or -1 if there is an error.
+The size, in bytes, of the buffer required for the retrieved information if *`cbBuffer`* is 0 or *`lpBuffer`* is `NULL`. Otherwise, it's a positive value if the function is successful, or -1 if there's an error.
 
 ### Remarks
 
@@ -2837,9 +2836,11 @@ A pointer to a `CBrush` object if successful; otherwise `NULL`.
 
 ### Remarks
 
-A halftone brush shows pixels that are alternately foreground and background colors to create a dithered pattern. The following is an example of a dithered pattern created by a halftone brush.
+A halftone brush shows pixels that are alternately foreground and background colors to create a dithered pattern. The following diagram shows an example of a dithered pattern created by a halftone brush:
 
-![Detail of a dithered pen stroke.](../../mfc/reference/media/vc318s1.gif "Detail of a dithered pen stroke")
+:::image type="complex" source="../../mfc/reference/media/vc318s1.gif" alt-text="Diagram that shows how a dithered pen stroke is composed.":::
+The diagram shows how the background color of black, and the foreground color of yellow, are combined into a pattern by alternating the black and yellow pixels with each other to create a dithered pen stroke.
+:::image-end:::  
 
 ## <a name="getkerningpairs"></a> `CDC::GetKerningPairs`
 
@@ -2853,10 +2854,10 @@ int GetKerningPairs(
 
 ### Parameters
 
-*`nPairs`*<br/>
-Specifies the number of [`KERNINGPAIR`](/windows/win32/api/wingdi/ns-wingdi-kerningpair) structures pointed to by *`lpkrnpair`*. The function will not copy more kerning pairs than specified by *`nPairs`*.
+*`nPairs`*\
+Specifies the number of [`KERNINGPAIR`](/windows/win32/api/wingdi/ns-wingdi-kerningpair) structures pointed to by *`lpkrnpair`*. The function won't copy more kerning pairs than specified by *`nPairs`*.
 
-*`lpkrnpair`*<br/>
+*`lpkrnpair`*\
 Points to an array of `KERNINGPAIR` structures that receive the kerning pairs when the function returns. This array must contain at least as many structures as specified by *`nPairs`*. If this parameter is `NULL`, the function returns the total number of kerning pairs for the font.
 
 ### Return Value
@@ -2924,7 +2925,7 @@ COLORREF GetNearestColor(COLORREF crColor) const;
 
 ### Parameters
 
-*`crColor`*<br/>
+*`crColor`*\
 Specifies the color to be matched.
 
 ### Return Value
@@ -2947,13 +2948,13 @@ UINT GetOutlineTextMetrics(
 
 ### Parameters
 
-*`lpotm`*<br/>
+*`lpotm`*\
 Points to an array of [`OUTLINETEXTMETRIC`](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) structures. If this parameter is `NULL`, the function returns the size of the buffer required for the retrieved metric data.
 
-*`cbData`*<br/>
+*`cbData`*\
 Specifies the size, in bytes, of the buffer to which information is returned.
 
-*`lpotm`*<br/>
+*`lpotm`*\
 Points to an `OUTLINETEXTMETRIC` structure. If this parameter is `NULL`, the function returns the size of the buffer required for the retrieved metric information.
 
 ### Return Value
@@ -2962,7 +2963,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The [`OUTLINETEXTMETRIC`](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) structure contains most of the font metric information provided with the TrueType format, including a [`TEXTMETRIC`](/windows/win32/api/wingdi/ns-wingdi-textmetricw) structure. The last four members of the `OUTLINETEXTMETRIC` structure are pointers to strings. Applications should allocate space for these strings in addition to the space required for the other members. Because there is no system-imposed limit to the size of the strings, the simplest method for allocating memory is to retrieve the required size by specifying NULL for *`lpotm`* in the first call to the `GetOutlineTextMetrics` function.
+The [`OUTLINETEXTMETRIC`](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) structure contains most of the font metric information provided with the TrueType format, including a [`TEXTMETRIC`](/windows/win32/api/wingdi/ns-wingdi-textmetricw) structure. The last four members of the `OUTLINETEXTMETRIC` structure are pointers to strings. Applications should allocate space for these strings in addition to the space required for the other members. Because there's no system-imposed limit to the size of the strings, the simplest method for allocating memory is to retrieve the required size by specifying NULL for *`lpotm`* in the first call to the `GetOutlineTextMetrics` function.
 
 ## <a name="getoutputcharwidth"></a> `CDC::GetOutputCharWidth`
 
@@ -2977,13 +2978,13 @@ BOOL GetOutputCharWidth(
 
 ### Parameters
 
-*`nFirstChar`*<br/>
+*`nFirstChar`*\
 Specifies the first character in a consecutive group of characters in the current font.
 
-*`nLastChar`*<br/>
+*`nLastChar`*\
 Specifies the last character in a consecutive group of characters in the current font.
 
-*`lpBuffer`*<br/>
+*`lpBuffer`*\
 Points to a buffer that will receive the width values for a consecutive group of characters in the current font.
 
 ### Return Value
@@ -2996,7 +2997,7 @@ For example, if *`nFirstChar`* identifies the letter 'a' and *`nLastChar`* ident
 
 The function stores the values in the buffer pointed to by *`lpBuffer`*. This buffer must be large enough to hold all of the widths; that is, there must be at least 26 entries in the example given.
 
-If a character in the consecutive group of characters does not exist in a particular font, it will be assigned the width value of the default character.
+If a character in the consecutive group of characters doesn't exist in a particular font, it will be assigned the width value of the default character.
 
 ## <a name="getoutputtabbedtextextent"></a>`CDC::GetOutputTabbedTextExtent`
 
@@ -3017,19 +3018,19 @@ CSize GetOutputTabbedTextExtent(
 
 ### Parameters
 
-*`lpszString`*<br/>
+*`lpszString`*\
 Points to a character string to be measured. You can also pass a [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the [length of the string](/windows/win32/gdi/specifying-length-of-text-output-string) pointed to by *`lpszString`*.
 
-*`nTabPositions`*<br/>
+*`nTabPositions`*\
 Specifies the number of tab-stop positions in the array pointed to by *`lpnTabStopPositions`*.
 
-*`lpnTabStopPositions`*<br/>
-Points to an array of integers containing the tab-stop positions in logical units. The tab stops must be sorted in increasing order; the smallest x-value should be the first item in the array. Back tabs are not allowed.
+*`lpnTabStopPositions`*\
+Points to an array of integers containing the tab-stop positions in logical units. The tab stops must be sorted in increasing order; the smallest x-value should be the first item in the array. Back tabs aren't allowed.
 
-*`str`*<br/>
+*`str`*\
 A `CString` object that contains the specified characters to be measured.
 
 ### Return Value
@@ -3040,9 +3041,9 @@ The dimensions of the string (in logical units) in a [`CSize`](../../atl-mfc-sha
 
 If the string contains one or more tab characters, the width of the string is based upon the tab stops specified by *`lpnTabStopPositions`*. The function uses the currently selected font to compute the dimensions of the string.
 
-The current clipping region does not offset the width and height returned by the `GetOutputTabbedTextExtent` function.
+The current clipping region doesn't offset the width and height returned by the `GetOutputTabbedTextExtent` function.
 
-Since some devices do not place characters in regular cell arrays (that is, they kern the characters), the sum of the extents of the characters in a string may not be equal to the extent of the string.
+Since some devices don't place characters in regular cell arrays (that is, they kern the characters), the sum of the extents of the characters in a string may not be equal to the extent of the string.
 
 If *`nTabPositions`* is 0 and *`lpnTabStopPositions`* is `NULL`, tabs are expanded to eight average character widths. If *`nTabPositions`* is 1, the tab stops will be separated by the distance specified by the first value in the array to which *`lpnTabStopPositions`* points. If *`lpnTabStopPositions`* points to more than a single value, a tab stop is set for each value in the array, up to the number specified by *`nTabPositions`*.
 
@@ -3060,13 +3061,13 @@ CSize GetOutputTextExtent(const CString& str) const;
 
 ### Parameters
 
-*`lpszString`*<br/>
+*`lpszString`*\
 Points to a string of characters. You can also pass a [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the [length of the string](/windows/win32/gdi/specifying-length-of-text-output-string) pointed to by *`lpszString`*.
 
-*`str`*<br/>
+*`str`*\
 A `CString` object that contains the specified characters to be measured.
 
 ### Return Value
@@ -3075,9 +3076,9 @@ The dimensions of the string (in logical units) returned in a [`CSize`](../../at
 
 ### Remarks
 
-The current clipping region does not affect the width and height returned by `GetOutputTextExtent`.
+The current clipping region doesn't affect the width and height returned by `GetOutputTextExtent`.
 
-Since some devices do not place characters in regular cell arrays (that is, they carry out kerning), the sum of the extents of the characters in a string may not be equal to the extent of the string.
+Since some devices don't place characters in regular cell arrays (that is, they carry out kerning), the sum of the extents of the characters in a string may not be equal to the extent of the string.
 
 ## <a name="getoutputtextmetrics"></a> `CDC::GetOutputTextMetrics`
 
@@ -3089,7 +3090,7 @@ BOOL GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const;
 
 ### Parameters
 
-*`lpMetrics`*<br/>
+*`lpMetrics`*\
 Points to the [`TEXTMETRIC`](/windows/win32/api/wingdi/ns-wingdi-textmetricw) structure that receives the metrics.
 
 ### Return Value
@@ -3109,10 +3110,10 @@ int GetPath(
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of [`POINT`](/windows/win32/api/windef/ns-windef-point) data structures or `CPoint` objects where the line endpoints and curve control points are placed.
 
-*`lpTypes`*<br/>
+*`lpTypes`*\
 Points to an array of bytes where the vertex types are placed. Values are one of the following:
 
 - `PT_MOVETO` Specifies that the corresponding point in *`lpPoints`* starts a disjoint figure.
@@ -3127,7 +3128,7 @@ Points to an array of bytes where the vertex types are placed. Values are one of
 
 - `PT_CLOSEFIGURE` Specifies that the figure is automatically closed after the corresponding line or curve is drawn. The figure is closed by drawing a line from the line or curve endpoint to the point corresponding to the last `PT_MOVETO`.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the total number of [`POINT`](/windows/win32/api/windef/ns-windef-point) data structures that may be placed in the *`lpPoints`* array. This value must be the same as the number of bytes that may be placed in the *`lpTypes`* array.
 
 ### Return Value
@@ -3156,22 +3157,22 @@ COLORREF GetPixel(POINT point) const;
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the point to be examined.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the point to be examined.
 
-*`point`*<br/>
+*`point`*\
 Specifies the logical x- and y-coordinates of the point to be examined.
 
 ### Return Value
 
-For either version of the function, an RGB color value for the color of the given point. It is -1 if the coordinates do not specify a point in the clipping region.
+For either version of the function, an RGB color value for the color of the given point. It's -1 if the coordinates don't specify a point in the clipping region.
 
 ### Remarks
 
-The point must be in the clipping region. If the point is not in the clipping region, the function has no effect and returns -1.
+The point must be in the clipping region. If the point isn't in the clipping region, the function has no effect and returns -1.
 
 Not all devices support the `GetPixel` function. For more information, see the `RC_BITBLT` raster capability under the [`GetDeviceCaps`](#getdevicecaps) member function.
 
@@ -3262,19 +3263,19 @@ CSize GetTabbedTextExtent(
 
 ### Parameters
 
-*`lpszString`*<br/>
+*`lpszString`*\
 Points to a character string. You can also pass a [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the [length of the string](/windows/win32/gdi/specifying-length-of-text-output-string) pointed to by *`lpszString`*.
 
-*`nTabPositions`*<br/>
+*`nTabPositions`*\
 Specifies the number of tab-stop positions in the array pointed to by *`lpnTabStopPositions`*.
 
-*`lpnTabStopPositions`*<br/>
-Points to an array of integers containing the tab-stop positions in logical units. The tab stops must be sorted in increasing order; the smallest x-value should be the first item in the array. Back tabs are not allowed.
+*`lpnTabStopPositions`*\
+Points to an array of integers containing the tab-stop positions in logical units. The tab stops must be sorted in increasing order; the smallest x-value should be the first item in the array. Back tabs aren't allowed.
 
-*`str`*<br/>
+*`str`*\
 A `CString` object that contains the specified characters to be drawn.
 
 ### Return Value
@@ -3285,9 +3286,9 @@ The dimensions of the string (in logical units) in a [`CSize`](../../atl-mfc-sha
 
 If the string contains one or more tab characters, the width of the string is based upon the tab stops specified by *`lpnTabStopPositions`*. The function uses the currently selected font to compute the dimensions of the string.
 
-The current clipping region does not offset the width and height returned by the `GetTabbedTextExtent` function.
+The current clipping region doesn't offset the width and height returned by the `GetTabbedTextExtent` function.
 
-Since some devices do not place characters in regular cell arrays (that is, they kern the characters), the sum of the extents of the characters in a string may not be equal to the extent of the string.
+Since some devices don't place characters in regular cell arrays (that is, they kern the characters), the sum of the extents of the characters in a string may not be equal to the extent of the string.
 
 If *`nTabPositions`* is 0 and *`lpnTabStopPositions`* is `NULL`, tabs are expanded to eight times the average character width. If *`nTabPositions`* is 1, the tab stops will be separated by the distance specified by the first value in the array to which *`lpnTabStopPositions`* points. If *`lpnTabStopPositions`* points to more than a single value, a tab stop is set for each value in the array, up to the number specified by *`nTabPositions`*.
 
@@ -3311,7 +3312,7 @@ The status of the text-alignment flags. The return value is one or more of the f
 
 - `TA_LEFT` Specifies alignment of the y-axis and the left side of the bounding rectangle.
 
-- `TA_NOUPDATECP` Specifies that the current position is not updated.
+- `TA_NOUPDATECP` Specifies that the current position isn't updated.
 
 - `TA_RIGHT` Specifies alignment of the y-axis and the right side of the bounding rectangle.
 
@@ -3321,7 +3322,7 @@ The status of the text-alignment flags. The return value is one or more of the f
 
 ### Remarks
 
-The text-alignment flags determine how the `TextOut` and `ExtTextOut` member functions align a string of text in relation to the string's starting point. The text-alignment flags are not necessarily single-bit flags and may be equal to 0. To test whether a flag is set, an application should follow these steps:
+The text-alignment flags determine how the `TextOut` and `ExtTextOut` member functions align a string of text in relation to the string's starting point. The text-alignment flags aren't necessarily single-bit flags and may be equal to 0. To test whether a flag is set, an application should follow these steps:
 
 1. Apply the bitwise **OR** (`|`) operator to the flag and its related flags, grouped as follows:
 
@@ -3383,13 +3384,13 @@ CSize GetTextExtent(const CString& str) const;
 
 ### Parameters
 
-*`lpszString`*<br/>
+*`lpszString`*\
 Points to a string of characters. You can also pass a [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the number of characters in the string.
 
-*`str`*<br/>
+*`str`*\
 A `CString` object that contains the specified characters.
 
 ### Return Value
@@ -3402,9 +3403,9 @@ The information is retrieved from [`m_hAttribDC`](#m_hattribdc), the attribute d
 
 By default, `GetTextExtent` assumes the text for which it retrieves the dimension is set along a horizontal line (that is, the escapement is 0). If you create a font specifying a non-zero escapement, you must convert the angle of the text explicitly to get the dimensions of the string.
 
-The current clipping region does not affect the width and height returned by `GetTextExtent`.
+The current clipping region doesn't affect the width and height returned by `GetTextExtent`.
 
-Since some devices do not place characters in regular cell arrays (that is, they carry out kerning), the sum of the extents of the characters in a string may not be equal to the extent of the string.
+Since some devices don't place characters in regular cell arrays (that is, they carry out kerning), the sum of the extents of the characters in a string may not be equal to the extent of the string.
 
 ## <a name="gettextextentexpointi"></a> `CDC::GetTextExtentExPointI`
 
@@ -3422,22 +3423,22 @@ BOOL GetTextExtentExPointI(
 
 ### Parameters
 
-*`pgiIn`*<br/>
+*`pgiIn`*\
 A pointer to an array of glyph indices for which extents are to be retrieved.
 
-*`cgi`*<br/>
+*`cgi`*\
 Specifies the number of glyphs in the array pointed to by *`pgiIn`*.
 
-*`nMaxExtent`*<br/>
+*`nMaxExtent`*\
 Specifies the maximum allowable width, in logical units, of the formatted string.
 
-*`lpnFit`*<br/>
+*`lpnFit`*\
 A pointer to an integer that receives a count of the maximum number of characters that will fit in the space specified by *`nMaxExtent`*. When *`lpnFit`* is `NULL`, *`nMaxExtent`* is ignored.
 
-*`alpDx`*<br/>
-A pointer to an array of integers that receives partial glyph extents. Each element in the array gives the distance, in logical units, between the beginning of the glyph indices array and one of the glyphs that fits in the space specified by *`nMaxExtent`*. Although this array should have at least as many elements as glyph indices specified by *`cgi`*, the function fills the array with extents only for as many glyph indices as are specified by *`lpnFit`*. If *`lpnDx`* is `NULL`, the function does not compute partial string widths.
+*`alpDx`*\
+A pointer to an array of integers that receives partial glyph extents. Each element in the array gives the distance, in logical units, between the beginning of the glyph indices array and one of the glyphs that fits in the space specified by *`nMaxExtent`*. Although this array should have at least as many elements as glyph indices specified by *`cgi`*, the function fills the array with extents only for as many glyph indices as are specified by *`lpnFit`*. If *`lpnDx`* is `NULL`, the function doesn't compute partial string widths.
 
-*`lpSize`*<br/>
+*`lpSize`*\
 Pointer to a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure that receives the dimensions of the glyph indices array, in logical units. This value cannot be `NULL`.
 
 ### Return Value
@@ -3461,13 +3462,13 @@ BOOL GetTextExtentPointI(
 
 ### Parameters
 
-*`pgiIn`*<br/>
+*`pgiIn`*\
 A pointer to an array of glyph indices for which extents are to be retrieved.
 
-*`cgi`*<br/>
+*`cgi`*\
 Specifies the number of glyphs in the array pointed to by *`pgiIn`*.
 
-*`lpSize`*<br/>
+*`lpSize`*\
 Pointer to a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure that receives the dimensions of the glyph indices array, in logical units. This value cannot be `NULL`.
 
 ### Return Value
@@ -3492,18 +3493,18 @@ int GetTextFace(CString& rString) const;
 
 ### Parameters
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the size of the buffer (in bytes). If the typeface name is longer than the number of bytes specified by this parameter, the name is truncated.
 
-*`lpszFacename`*<br/>
+*`lpszFacename`*\
 Points to the buffer for the typeface name.
 
-*`rString`*<br/>
+*`rString`*\
 A reference to a [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object.
 
 ### Return Value
 
-The number of bytes copied to the buffer, not including the terminating null character. It is 0 if an error occurs.
+The number of bytes copied to the buffer, not including the terminating null character. It's 0 if an error occurs.
 
 ### Remarks
 
@@ -3519,7 +3520,7 @@ BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const;
 
 ### Parameters
 
-*`lpMetrics`*<br/>
+*`lpMetrics`*\
 Points to the [`TEXTMETRIC`](/windows/win32/api/wingdi/ns-wingdi-textmetricw) structure that receives the metrics.
 
 ### Return Value
@@ -3600,7 +3601,7 @@ BOOL GetWorldTransform(XFORM& rXform) const;
 
 ### Parameters
 
-*`rXform`*<br/>
+*`rXform`*\
 Reference to an [`XFORM`](/windows/win32/api/wingdi/ns-wingdi-xform) structure that receives the current world-space to page-space transformation.
 
 ### Return Value
@@ -3630,19 +3631,19 @@ BOOL GradientFill(
 
 ### Parameters
 
-*`pVertices`*<br/>
+*`pVertices`*\
 Pointer to an array of [`TRIVERTEX`](/windows/win32/api/wingdi/ns-wingdi-trivertex) structures that each define a triangle vertex.
 
-*`nVertices`*<br/>
+*`nVertices`*\
 The number of vertices.
 
-*`pMesh`*<br/>
+*`pMesh`*\
 Array of [`GRADIENT_TRIANGLE`](/windows/win32/api/wingdi/ns-wingdi-gradient_triangle) structures in triangle mode, or an array of [`GRADIENT_RECT`](/windows/win32/api/wingdi/ns-wingdi-gradient_rect) structures in rectangle mode.
 
-*`nMeshElements`*<br/>
+*`nMeshElements`*\
 The number of elements (triangles or rectangles) in *`pMesh`*.
 
-*`dwMode`*<br/>
+*`dwMode`*\
 Specifies gradient fill mode. For a list of possible values, see [`GradientFill`](/windows/win32/api/wingdi/nf-wingdi-gradientfill) in the Windows SDK.
 
 ### Return Value
@@ -3674,28 +3675,28 @@ virtual BOOL GrayString(
 
 ### Parameters
 
-*`pBrush`*<br/>
+*`pBrush`*\
 Identifies the brush to be used for dimming (graying).
 
-*`lpfnOutput`*<br/>
+*`lpfnOutput`*\
 Specifies the procedure-instance address of the application-supplied callback function that will draw the string. For more information, see the description of the Windows `OutputFunc` [callback function](callback-functions-used-by-mfc.md#graystring). If this parameter is `NULL`, the system uses the Windows `TextOut` function to draw the string, and *`lpData`* is assumed to be a long pointer to the character string to be output.
 
-*`lpData`*<br/>
+*`lpData`*\
 Specifies a far pointer to data to be passed to the output function. If *`lpfnOutput`* is `NULL`, *`lpData`* must be a long pointer to the string to be output.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the number of characters to be output. If this parameter is 0, `GrayString` calculates the length of the string (assuming that *`lpData`* is a pointer to the string). If *`nCount`* is 1 and the function pointed to by *`lpfnOutput`* returns 0, the image is shown but not dimmed.
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the starting position of the rectangle that encloses the string.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the starting position of the rectangle that encloses the string.
 
-*`nWidth`*<br/>
+*`nWidth`*\
 Specifies the width (in logical units) of the rectangle that encloses the string. If *`nWidth`* is 0, `GrayString` calculates the width of the area, assuming *`lpData`* is a pointer to the string.
 
-*`nHeight`*<br/>
+*`nHeight`*\
 Specifies the height (in logical units) of the rectangle that encloses the string. If *`nHeight`* is 0, `GrayString` calculates the height of the area, assuming *`lpData`* is a pointer to the string.
 
 ### Return Value
@@ -3706,15 +3707,15 @@ Nonzero if the string is drawn, or 0 if either the `TextOut` function or the app
 
 The function dims the text regardless of the selected brush and background. The `GrayString` member function uses the currently selected font. The `MM_TEXT` mapping mode must be selected before using this function.
 
-An application can draw dimmed (grayed) strings on devices that support a solid gray color without calling the `GrayString` member function. The system color `COLOR_GRAYTEXT` is the solid-gray system color used to draw disabled text. The application can call the `GetSysColor` Windows function to retrieve the color value of `COLOR_GRAYTEXT`. If the color is other than 0 (black), the application can call the `SetTextColor` member function to set the text color to the color value and then draw the string directly. If the retrieved color is black, the application must call `GrayString` to dim (gray) the text.
+An application can draw dimmed (grayed) strings on devices that support a solid gray color without calling the `GrayString` member function. The system color `COLOR_GRAYTEXT` is the solid-gray system color used to draw disabled text. The application can call the `GetSysColor` Windows function to retrieve the color value of `COLOR_GRAYTEXT`. If the color is other than 0 (black), the application can call the `SetTextColor` member function to set the text color to the color value, and then draw the string directly. If the retrieved color is black, the application must call `GrayString` to dim (gray) the text.
 
 If *`lpfnOutput`* is `NULL`, GDI uses the Windows [`TextOut`](/windows/win32/api/wingdi/nf-wingdi-textoutw) function, and *`lpData`* is assumed to be a far pointer to the character to be output. If the characters to be output cannot be handled by the `TextOut` member function (for example, the string is stored as a bitmap), the application must supply its own output function.
 
-Also note that all callback functions must trap Microsoft Foundation exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).
+All callback functions must trap Microsoft Foundation exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).
 
 The callback function passed to `GrayString` must use the **`__stdcall`** calling convention and must be exported with **`__declspec`**.
 
-When the framework is in preview mode, a call to the `GrayString` member function is translated to a `TextOut` call, and the callback function is not called.
+When the framework is in preview mode, a call to the `GrayString` member function is translated to a `TextOut` call, and the callback function isn't called.
 
 ## <a name="himetrictodp"></a> `CDC::HIMETRICtoDP`
 
@@ -3726,12 +3727,12 @@ void HIMETRICtoDP(LPSIZE lpSize) const;
 
 ### Parameters
 
-*`lpSize`*<br/>
+*`lpSize`*\
 Points to a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or [`CSize`](../../atl-mfc-shared/reference/csize-class.md) object.
 
 ### Remarks
 
-If the mapping mode of the device context object is `MM_LOENGLISH`, `MM_HIENGLISH`, `MM_LOMETRIC` or `MM_HIMETRIC`, then the conversion is based on the number of pixels in the physical inch. If the mapping mode is one of the other non-constrained modes (e.g., `MM_TEXT`), then the conversion is based on the number of pixels in the logical inch.
+If the mapping mode of the device context object is `MM_LOENGLISH`, `MM_HIENGLISH`, `MM_LOMETRIC` or `MM_HIMETRIC`, then the conversion is based on the number of pixels in the physical inch. If the mapping mode is one of the other non-constrained modes (for example, `MM_TEXT`), then the conversion is based on the number of pixels in the logical inch.
 
 ## <a name="himetrictolp"></a> `CDC::HIMETRICtoLP`
 
@@ -3743,7 +3744,7 @@ void HIMETRICtoLP(LPSIZE lpSize) const;
 
 ### Parameters
 
-*`lpSize`*<br/>
+*`lpSize`*\
 Points to a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or [`CSize`](../../atl-mfc-shared/reference/csize-class.md) object.
 
 ### Remarks
@@ -3768,19 +3769,19 @@ int IntersectClipRect(LPCRECT lpRect);
 
 ### Parameters
 
-*`x1`*<br/>
+*`x1`*\
 Specifies the logical x-coordinate of the upper-left corner of the rectangle.
 
-*`y1`*<br/>
+*`y1`*\
 Specifies the logical y-coordinate of the upper-left corner of the rectangle.
 
-*`x2`*<br/>
+*`x2`*\
 Specifies the logical x-coordinate of the lower-right corner of the rectangle.
 
-*`y2`*<br/>
+*`y2`*\
 Specifies the logical y-coordinate of the lower-right corner of the rectangle.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the rectangle. You can pass either a `CRect` object or a pointer to a `RECT` structure for this parameter.
 
 ### Return Value
@@ -3789,7 +3790,7 @@ The new clipping region's type. It can be any one of the following values:
 
 - `COMPLEXREGION` New clipping region has overlapping borders.
 
-- `ERROR` Device context is not valid.
+- `ERROR` Device context isn't valid.
 
 - `NULLREGION` New clipping region is empty.
 
@@ -3809,7 +3810,7 @@ void InvertRect(LPCRECT lpRect);
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a `RECT` that contains the logical coordinates of the rectangle to be inverted. You can also pass a `CRect` object for this parameter.
 
 ### Remarks
@@ -3832,7 +3833,7 @@ BOOL InvertRgn(CRgn* pRgn);
 
 ### Parameters
 
-*`pRgn`*<br/>
+*`pRgn`*\
 Identifies the region to be inverted. The coordinates for the region are specified in logical units.
 
 ### Return Value
@@ -3869,13 +3870,13 @@ BOOL LineTo(POINT point);
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the endpoint for the line.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the endpoint for the line.
 
-*`point`*<br/>
+*`point`*\
 Specifies the endpoint for the line. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
 ### Return Value
@@ -3905,16 +3906,16 @@ void LPtoDP(LPSIZE lpSize) const;
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of points. Each point in the array is a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object.
 
-*`nCount`*<br/>
+*`nCount`*\
 The number of points in the array.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or a [`CRect`](../../atl-mfc-shared/reference/crect-class.md) object. This parameter is used for the common case of mapping a rectangle from logical to device units.
 
-*`lpSize`*<br/>
+*`lpSize`*\
 Points to a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or a [`CSize`](../../atl-mfc-shared/reference/csize-class.md) object.
 
 ### Remarks
@@ -3933,12 +3934,12 @@ void LPtoHIMETRIC(LPSIZE lpSize) const;
 
 ### Parameters
 
-*`lpSize`*<br/>
+*`lpSize`*\
 Points to a `SIZE` structure or a `CSize` object.
 
 ### Remarks
 
-Use this function when you give `HIMETRIC` sizes to OLE, converting from your application's natural mapping mode. Note that the extents of the device's window and viewport will affect the result.
+Use this function when you give `HIMETRIC` sizes to OLE, converting from your application's natural mapping mode. The extents of the device's window and viewport will affect the result.
 
 The conversion is accomplished by first converting the logical units into pixels using the device context's current mapping units and then converting these units into `HIMETRIC` units.
 
@@ -3987,37 +3988,37 @@ BOOL MaskBlt(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the upper-left corner of the destination rectangle.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the upper-left corner of the destination rectangle.
 
-*`nWidth`*<br/>
+*`nWidth`*\
 Specifies the width, in logical units, of the destination rectangle and source bitmap.
 
-*`nHeight`*<br/>
+*`nHeight`*\
 Specifies the height, in logical units, of the destination rectangle and source bitmap.
 
-*`pSrcDC`*<br/>
-Identifies the device context from which the bitmap is to be copied. It must be zero if the *`dwRop`* parameter specifies a raster operation that does not include a source.
+*`pSrcDC`*\
+Identifies the device context from which the bitmap is to be copied. It must be zero if the *`dwRop`* parameter specifies a raster operation that doesn't include a source.
 
-*`xSrc`*<br/>
+*`xSrc`*\
 Specifies the logical x-coordinate of the upper-left corner of the source bitmap.
 
-*`ySrc`*<br/>
+*`ySrc`*\
 Specifies the logical y-coordinate of the upper-left corner of the source bitmap.
 
-*`maskBitmap`*<br/>
+*`maskBitmap`*\
 Identifies the monochrome mask bitmap combined with the color bitmap in the source device context.
 
-*`xMask`*<br/>
+*`xMask`*\
 Specifies the horizontal pixel offset for the mask bitmap specified by the *`maskBitmap`* parameter.
 
-*`yMask`*<br/>
+*`yMask`*\
 Specifies the vertical pixel offset for the mask bitmap specified by the *`maskBitmap`* parameter.
 
-*`dwRop`*<br/>
+*`dwRop`*\
 Specifies both foreground and background ternary raster operation codes, which the function uses to control the combination of source and destination data. The background raster operation code is stored in the high byte of the high word of this value; the foreground raster operation code is stored in the low byte of the high word of this value; the low word of this value is ignored, and should be zero. The macro `MAKEROP4` creates such combinations of foreground and background raster operation codes. See the Remarks section for a discussion of foreground and background in the context of this function. See the `BitBlt` member function for a list of common raster operation codes.
 
 ### Return Value
@@ -4026,11 +4027,11 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-A value of 1 in the mask specified by *`maskBitmap`* indicates that the foreground raster operation code specified by *`dwRop`* should be applied at that location. A value of 0 in the mask indicates that the background raster operation code specified by *`dwRop`* should be applied at that location. If the raster operations require a source, the mask rectangle must cover the source rectangle. If it does not, the function will fail. If the raster operations do not require a source, the mask rectangle must cover the destination rectangle. If it does not, the function will fail.
+A value of 1 in the mask specified by *`maskBitmap`* indicates that the foreground raster operation code specified by *`dwRop`* should be applied at that location. A value of 0 in the mask indicates that the background raster operation code specified by *`dwRop`* should be applied at that location. If the raster operations require a source, the mask rectangle must cover the source rectangle. If it doesn't, the function fails. If the raster operations don't require a source, the mask rectangle must cover the destination rectangle. If it doesn't, the function fails.
 
 If a rotation or shear transformation is in effect for the source device context when this function is called, an error occurs. However, other types of transformations are allowed.
 
-If the color formats of the source, pattern, and destination bitmaps differ, this function converts the pattern or source format, or both, to match the destination format. If the mask bitmap is not a monochrome bitmap, an error occurs. When an enhanced metafile is being recorded, an error occurs (and the function returns 0) if the source device context identifies an enhanced-metafile device context. Not all devices support `MaskBlt`. An application should call `GetDeviceCaps` to determine whether a device supports this function. If no mask bitmap is supplied, this function behaves exactly like `BitBlt`, using the foreground raster operation code. The pixel offsets in the mask bitmap map to the point (0,0) in the source device context's bitmap. This is useful for cases in which a mask bitmap contains a set of masks; an application can easily apply any one of them to a mask-blitting task by adjusting the pixel offsets and rectangle sizes sent to `MaskBlt`.
+If the color formats of the source, pattern, and destination bitmaps differ, this function converts the pattern or source format, or both, to match the destination format. If the mask bitmap isn't a monochrome bitmap, an error occurs. When an enhanced metafile is being recorded, an error occurs (and the function returns 0) if the source device context identifies an enhanced-metafile device context. Not all devices support `MaskBlt`. An application should call `GetDeviceCaps` to determine whether a device supports this function. If no mask bitmap is supplied, this function behaves exactly like `BitBlt`, using the foreground raster operation code. The pixel offsets in the mask bitmap map to the point (0,0) in the source device context's bitmap. This is useful for cases in which a mask bitmap contains a set of masks; an application can easily apply any one of them to a mask-blitting task by adjusting the pixel offsets and rectangle sizes sent to `MaskBlt`.
 
 ## <a name="modifyworldtransform"></a> `CDC::ModifyWorldTransform`
 
@@ -4044,10 +4045,10 @@ BOOL ModifyWorldTransform(
 
 ### Parameters
 
-*`rXform`*<br/>
+*`rXform`*\
 Reference to an [`XFORM`](/windows/win32/api/wingdi/ns-wingdi-xform) structure used to modify the world transformation for the given device context.
 
-*`iMode`*<br/>
+*`iMode`*\
 Specifies how the transformation data modifies the current world transformation. For a list of the values that this parameter can take, see [`ModifyWorldTransform`](/windows/win32/api/wingdi/nf-wingdi-modifyworldtransform).
 
 ### Return Value
@@ -4076,13 +4077,13 @@ CPoint MoveTo(POINT point);
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the new position.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the new position.
 
-*`point`*<br/>
+*`point`*\
 Specifies the new position. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
 ### Return Value
@@ -4107,13 +4108,13 @@ int OffsetClipRgn(SIZE size);
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the number of logical units to move left or right.
 
-*`y`*<br/>
+*`y`*\
 Specifies the number of logical units to move up or down.
 
-*`size`*<br/>
+*`size`*\
 Specifies the amount to offset.
 
 ### Return Value
@@ -4122,7 +4123,7 @@ The new region's type. It can be any one of the following values:
 
 - `COMPLEXREGION` Clipping region has overlapping borders.
 
-- `ERROR` Device context is not valid.
+- `ERROR` Device context isn't valid.
 
 - `NULLREGION` Clipping region is empty.
 
@@ -4144,10 +4145,10 @@ virtual CPoint OffsetViewportOrg(
 
 ### Parameters
 
-*`nWidth`*<br/>
+*`nWidth`*\
 Specifies the number of device units to add to the current origin's x-coordinate.
 
-*`nHeight`*<br/>
+*`nHeight`*\
 Specifies the number of device units to add to the current origin's y-coordinate.
 
 ### Return Value
@@ -4166,10 +4167,10 @@ CPoint OffsetWindowOrg(
 
 ### Parameters
 
-*`nWidth`*<br/>
+*`nWidth`*\
 Specifies the number of logical units to add to the current origin's x-coordinate.
 
-*`nHeight`*<br/>
+*`nHeight`*\
 Specifies the number of logical units to add to the current origin's y-coordinate.
 
 ### Return Value
@@ -4202,7 +4203,7 @@ BOOL PaintRgn(CRgn* pRgn);
 
 ### Parameters
 
-*`pRgn`*<br/>
+*`pRgn`*\
 Identifies the region to be filled. The coordinates for the given region are specified in logical units.
 
 ### Return Value
@@ -4224,19 +4225,19 @@ BOOL PatBlt(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the upper-left corner of the rectangle that is to receive the pattern.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the upper-left corner of the rectangle that is to receive the pattern.
 
-*`nWidth`*<br/>
+*`nWidth`*\
 Specifies the width (in logical units) of the rectangle that is to receive the pattern.
 
-*`nHeight`*<br/>
+*`nHeight`*\
 Specifies the height (in logical units) of the rectangle that is to receive the pattern.
 
-*`dwRop`*<br/>
+*`dwRop`*\
 Specifies the raster-operation code. Raster-operation codes (ROPs) define how GDI combines colors in output operations that involve a current brush, a possible source bitmap, and a destination bitmap. This parameter can be one of the following values:
 
 - `PATCOPY` Copies pattern to destination bitmap.
@@ -4282,38 +4283,38 @@ BOOL Pie(
 
 ### Parameters
 
-*`x1`*<br/>
+*`x1`*\
 Specifies the x-coordinate of the upper-left corner of the bounding rectangle (in logical units).
 
-*`y1`*<br/>
+*`y1`*\
 Specifies the y-coordinate of the upper-left corner of the bounding rectangle (in logical units).
 
-*`x2`*<br/>
+*`x2`*\
 Specifies the x-coordinate of the lower-right corner of the bounding rectangle (in logical units).
 
-*`y2`*<br/>
+*`y2`*\
 Specifies the y-coordinate of the lower-right corner of the bounding rectangle (in logical units).
 
-*`x3`*<br/>
-Specifies the x-coordinate of the arc's starting point (in logical units). This point does not have to lie exactly on the arc.
+*`x3`*\
+Specifies the x-coordinate of the arc's starting point (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`y3`*<br/>
-Specifies the y-coordinate of the arc's starting point (in logical units). This point does not have to lie exactly on the arc.
+*`y3`*\
+Specifies the y-coordinate of the arc's starting point (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`x4`*<br/>
-Specifies the x-coordinate of the arc's endpoint (in logical units). This point does not have to lie exactly on the arc.
+*`x4`*\
+Specifies the x-coordinate of the arc's endpoint (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`y4`*<br/>
-Specifies the y-coordinate of the arc's endpoint (in logical units). This point does not have to lie exactly on the arc.
+*`y4`*\
+Specifies the y-coordinate of the arc's endpoint (in logical units). This point doesn't have to lie exactly on the arc.
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the bounding rectangle. You can pass either a `CRect` object or a pointer to a `RECT` structure for this parameter.
 
-*`ptStart`*<br/>
-Specifies the starting point of the arc. This point does not have to lie exactly on the arc. You can pass either a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
+*`ptStart`*\
+Specifies the starting point of the arc. This point doesn't have to lie exactly on the arc. You can pass either a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
 
-*`ptEnd`*<br/>
-Specifies the endpoint of the arc. This point does not have to lie exactly on the arc. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
+*`ptEnd`*\
+Specifies the endpoint of the arc. This point doesn't have to lie exactly on the arc. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
 ### Return Value
 
@@ -4323,9 +4324,9 @@ Nonzero if the function is successful; otherwise 0.
 
 The center of the arc is the center of the bounding rectangle specified by *`x1`*, *`y1`*, *`x2`*, and *`y2`* (or by *`lpRect`*). The starting and ending points of the arc are specified by *`x3`*, *`y3`*, *`x4`*, and *`y4`* (or by *`ptStart`* and *`ptEnd`*).
 
-The arc is drawn with the selected pen, moving in a counterclockwise direction. Two additional lines are drawn from each endpoint to the arc's center. The pie-shaped area is filled with the current brush. If *`x3`* equals *`x4`* and *`y3`* equals *`y4`*, the result is an ellipse with a single line from the center of the ellipse to the point (*`x3`*, *`y3`*) or (*`x4`*, *`y4`*).
+The arc is drawn with the selected pen, moving in a counterclockwise direction. Two more lines are drawn from each endpoint to the arc's center. The pie-shaped area is filled with the current brush. If *`x3`* equals *`x4`* and *`y3`* equals *`y4`*, the result is an ellipse with a single line from the center of the ellipse to the point (*`x3`*, *`y3`*) or (*`x4`*, *`y4`*).
 
-The figure drawn by this function extends up to but does not include the right and bottom coordinates. This means that the height of the figure is *`y2`* - *`y1`* and the width of the figure is *`x2`* - *`x1`*. Both the width and the height of the bounding rectangle must be greater than 2 units and less than 32,767 units.
+The figure drawn by this function extends up to but doesn't include the right and bottom coordinates. This means that the height of the figure is *`y2`* - *`y1`* and the width of the figure is *`x2`* - *`x1`*. Both the width and the height of the bounding rectangle must be greater than 2 units and less than 32,767 units.
 
 ### Example
 
@@ -4345,13 +4346,13 @@ BOOL PlayMetaFile(
 
 ### Parameters
 
-*`hMF`*<br/>
+*`hMF`*\
 Identifies the metafile to be played.
 
-*`hEnhMetaFile`*<br/>
+*`hEnhMetaFile`*\
 Identifies the enhanced metafile.
 
-*`lpBounds`*<br/>
+*`lpBounds`*\
 Points to a `RECT` structure or a `CRect` object that contains the coordinates of the bounding rectangle used to display the picture. The coordinates are specified in logical units.
 
 ### Return Value
@@ -4387,31 +4388,31 @@ BOOL PlgBlt(
 
 ### Parameters
 
-*`lpPoint`*<br/>
+*`lpPoint`*\
 Points to an array of three points in logical space that identifies three corners of the destination parallelogram. The upper-left corner of the source rectangle is mapped to the first point in this array, the upper-right corner to the second point in this array, and the lower-left corner to the third point. The lower-right corner of the source rectangle is mapped to the implicit fourth point in the parallelogram.
 
-*`pSrcDC`*<br/>
+*`pSrcDC`*\
 Identifies the source device context.
 
-*`xSrc`*<br/>
+*`xSrc`*\
 Specifies the x-coordinate, in logical units, of the upper-left corner of the source rectangle.
 
-*`ySrc`*<br/>
+*`ySrc`*\
 Specifies the y-coordinate, in logical units, of the upper-left corner of the source rectangle.
 
-*`nWidth`*<br/>
+*`nWidth`*\
 Specifies the width, in logical units, of the source rectangle.
 
-*`nHeight`*<br/>
+*`nHeight`*\
 Specifies the height, in logical units, of the source rectangle.
 
-*`maskBitmap`*<br/>
+*`maskBitmap`*\
 Identifies an optional monochrome bitmap that is used to mask the colors of the source rectangle.
 
-*`xMask`*<br/>
+*`xMask`*\
 Specifies the x-coordinate of the upper-left corner of the monochrome bitmap.
 
-*`yMask`*<br/>
+*`yMask`*\
 Specifies the y-coordinate of the upper-left corner of the monochrome bitmap.
 
 ### Return Value
@@ -4424,13 +4425,13 @@ If the given bitmask handle identifies a valid monochrome bitmap, the function u
 
 The fourth vertex of the parallelogram (D) is defined by treating the first three points (A, B, and C) as vectors and computing D = B + C - A.
 
-If the bitmask exists, a value of 1 in the mask indicates that the source pixel color should be copied to the destination. A value of 0 in the mask indicates that the destination pixel color is not to be changed.
+If the bitmask exists, a value of 1 in the mask indicates that the source pixel color should be copied to the destination. A value of 0 in the mask indicates that the destination pixel color isn't to be changed.
 
 If the mask rectangle is smaller than the source and destination rectangles, the function replicates the mask pattern.
 
-Scaling, translation, and reflection transformations are allowed in the source device context; however, rotation and shear transformations are not. If the mask bitmap is not a monochrome bitmap, an error occurs. The stretching mode for the destination device context is used to determine how to stretch or compress the pixels, if that is necessary. When an enhanced metafile is being recorded, an error occurs if the source device context identifies an enhanced-metafile device context.
+Scaling, translation, and reflection transformations are allowed in the source device context; however, rotation and shear transformations aren't. If the mask bitmap isn't a monochrome bitmap, an error occurs. The stretching mode for the destination device context is used to determine how to stretch or compress the pixels, if that is necessary. When an enhanced metafile is being recorded, an error occurs if the source device context identifies an enhanced-metafile device context.
 
-The destination coordinates are transformed according to the destination device context; the source coordinates are transformed according to the source device context. If the source transformation has a rotation or shear, an error is returned. If the destination and source rectangles do not have the same color format, `PlgBlt` converts the source rectangle to match the destination rectangle. Not all devices support `PlgBlt`. For more information, see the description of the `RC_BITBLT` raster capability in the `CDC::GetDeviceCaps` member function.
+The destination coordinates are transformed according to the destination device context; the source coordinates are transformed according to the source device context. If the source transformation has a rotation or shear, an error is returned. If the destination and source rectangles don't have the same color format, `PlgBlt` converts the source rectangle to match the destination rectangle. Not all devices support `PlgBlt`. For more information, see the description of the `RC_BITBLT` raster capability in the `CDC::GetDeviceCaps` member function.
 
 If the source and destination device contexts represent incompatible devices, `PlgBlt` returns an error.
 
@@ -4446,11 +4447,11 @@ BOOL PolyBezier(
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of [`POINT`](/windows/win32/api/windef/ns-windef-point) data structures that contain the endpoints and control points of the spline(s).
 
-*`nCount`*<br/>
-Specifies the number of points in the *`lpPoints`* array. This value must be one more than three times the number of splines to be drawn, because each Bzier spline requires two control points and an endpoint, and the initial spline requires an additional starting point.
+*`nCount`*\
+Specifies the number of points in the *`lpPoints`* array. This value must be one more than three times the number of splines to be drawn, because each Bzier spline requires two control points and an endpoint, and the initial spline requires another starting point.
 
 ### Return Value
 
@@ -4460,7 +4461,7 @@ Nonzero if the function is successful; otherwise 0.
 
 This function draws cubic Bzier splines by using the endpoints and control points specified by the *`lpPoints`* parameter. The first spline is drawn from the first point to the fourth point by using the second and third points as control points. Each subsequent spline in the sequence needs exactly three more points: the end point of the previous spline is used as the starting point, the next two points in the sequence are control points, and the third is the end point.
 
-The current position is neither used nor updated by the `PolyBezier` function. The figure is not filled. This function draws lines by using the current pen.
+The current position isn't used or updated by the `PolyBezier` function. The figure isn't filled. This function draws lines by using the current pen.
 
 ## <a name="polybezierto"></a> `CDC::PolyBezierTo`
 
@@ -4474,10 +4475,10 @@ BOOL PolyBezierTo(
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of [`POINT`](/windows/win32/api/windef/ns-windef-point) data structures that contains the endpoints and control points.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the number of points in the *`lpPoints`* array. This value must be three times the number of splines to be drawn, because each Bzier spline requires two control points and an end point.
 
 ### Return Value
@@ -4486,7 +4487,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-This function draws cubic Bzier splines by using the control points specified by the *`lpPoints`* parameter. The first spline is drawn from the current position to the third point by using the first two points as control points. For each subsequent spline, the function needs exactly three more points, and uses the end point of the previous spline as the starting point for the next. `PolyBezierTo` moves the current position to the end point of the last Bzier spline. The figure is not filled. This function draws lines by using the current pen.
+This function draws cubic Bzier splines by using the control points specified by the *`lpPoints`* parameter. The first spline is drawn from the current position to the third point by using the first two points as control points. For each subsequent spline, the function needs exactly three more points, and uses the end point of the previous spline as the starting point for the next. `PolyBezierTo` moves the current position to the end point of the last Bzier spline. The figure isn't filled. This function draws lines by using the current pen.
 
 ### Example
 
@@ -4505,10 +4506,10 @@ BOOL PolyDraw(
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of [`POINT`](/windows/win32/api/windef/ns-windef-point) data structures that contains the endpoints for each line segment and the endpoints and control points for each Bzier spline.
 
-*`lpTypes`*<br/>
+*`lpTypes`*\
 Points to an array that specifies how each point in the *`lpPoints`* array is used. Values can be one of the following:
 
 - `PT_MOVETO` Specifies that this point starts a disjoint figure. This point becomes the new current position.
@@ -4517,7 +4518,7 @@ Points to an array that specifies how each point in the *`lpPoints`* array is us
 
 - `PT_BEZIERTO` Specifies that this point is a control point or ending point for a Bzier spline.
 
-`PT_BEZIERTO` types always occur in sets of three. The current position defines the starting point for the Bzier spline. The first two `PT_BEZIERTO` points are the control points, and the third `PT_BEZIERTO` point is the ending point. The ending point becomes the new current position. If there are not three consecutive `PT_BEZIERTO` points, an error results.
+`PT_BEZIERTO` types always occur in sets of three. The current position defines the starting point for the Bzier spline. The first two `PT_BEZIERTO` points are the control points, and the third `PT_BEZIERTO` point is the ending point. The ending point becomes the new current position. If there aren't three consecutive `PT_BEZIERTO` points, an error results.
 
    A `PT_LINETO` or `PT_BEZIERTO` type can be combined with the following constant by using the bitwise operator **OR** to indicate that the corresponding point is the last point in a figure and the figure is closed:
 
@@ -4525,7 +4526,7 @@ Points to an array that specifies how each point in the *`lpPoints`* array is us
 
    This flag is combined with the `PT_LINETO` type for a line, or with the `PT_BEZIERTO` type of ending point for a Bzier spline, by using the bitwise **OR** operator. The current position is set to the ending point of the closing line.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the total number of points in the *`lpPoints`* array, the same as the number of bytes in the *`lpTypes`* array.
 
 ### Return Value
@@ -4534,7 +4535,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-This function can be used to draw disjoint figures in place of consecutive calls to `CDC::MoveTo`, `CDC::LineTo`, and `CDC::PolyBezierTo` member functions. The lines and splines are drawn using the current pen, and figures are not filled. If there is an active path started by calling the `CDC::BeginPath` member function, `PolyDraw` adds to the path. The points contained in the *`lpPoints`* array and in *`lpTypes`* indicate whether each point is part of a `CDC::MoveTo`, a `CDC::LineTo`, or a `CDC::BezierTo` operation. It is also possible to close figures. This function updates the current position.
+This function can be used to draw disjoint figures in place of consecutive calls to `CDC::MoveTo`, `CDC::LineTo`, and `CDC::PolyBezierTo` member functions. The lines and splines are drawn using the current pen, and figures aren't filled. If there's an active path started by calling the `CDC::BeginPath` member function, `PolyDraw` adds to the path. The points contained in the *`lpPoints`* array and in *`lpTypes`* indicate whether each point is part of a `CDC::MoveTo`, a `CDC::LineTo`, or a `CDC::BezierTo` operation. It's also possible to close figures. This function updates the current position.
 
 ### Example
 
@@ -4552,10 +4553,10 @@ BOOL Polygon(
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of points that specifies the vertices of the polygon. Each point in the array is a `POINT` structure or a `CPoint` object.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the number of vertices in the array.
 
 ### Return Value
@@ -4584,10 +4585,10 @@ BOOL Polyline(
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of `POINT` structures or `CPoint` objects to be connected.
 
-*`nCount`*`<br/>
+*`nCount`*`\
 Specifies the number of points in the array. This value must be at least 2.
 
 ### Return Value
@@ -4596,7 +4597,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The lines are drawn from the first point through subsequent points using the current pen. Unlike the `LineTo` member function, the `Polyline` function neither uses nor updates the current position.
+The lines are drawn from the first point through subsequent points using the current pen. Unlike the `LineTo` member function, the `Polyline` function doesn't use or update the current position.
 
 For more information, see [`PolyLine`](/windows/win32/api/wingdi/nf-wingdi-polyline) in the Windows SDK.
 
@@ -4612,10 +4613,10 @@ BOOL PolylineTo(
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of [`POINT`](/windows/win32/api/windef/ns-windef-point) data structures that contains the vertices of the line.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the number of points in the array.
 
 ### Return Value
@@ -4624,7 +4625,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-A line is drawn from the current position to the first point specified by the *`lpPoints`* parameter by using the current pen. For each additional line, the function draws from the ending point of the previous line to the next point specified by *`lpPoints`*. `PolylineTo` moves the current position to the ending point of the last line. If the line segments drawn by this function form a closed figure, the figure is not filled.
+A line is drawn from the current position to the first point specified by the *`lpPoints`* parameter by using the current pen. For each additional line, the function draws from the ending point of the previous line to the next point specified by *`lpPoints`*. `PolylineTo` moves the current position to the ending point of the last line. If the line segments drawn by this function form a closed figure, the figure isn't filled.
 
 ## <a name="polypolygon"></a> `CDC::PolyPolygon`
 
@@ -4639,13 +4640,13 @@ BOOL PolyPolygon(
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of `POINT` structures or `CPoint` objects that define the vertices of the polygons.
 
-*`lpPolyCounts`*<br/>
+*`lpPolyCounts`*\
 Points to an array of integers, each of which specifies the number of points in one of the polygons in the *`lpPoints`* array.
 
-*`nCount`*<br/>
+*`nCount`*\
 The number of entries in the *`lpPolyCounts`* array. This number specifies the number of polygons to be drawn. This value must be at least 2.
 
 ### Return Value
@@ -4656,7 +4657,7 @@ Nonzero if the function is successful; otherwise 0.
 
 The polygons may be disjoint or overlapping.
 
-Each polygon specified in a call to the `PolyPolygon` function must be closed. Unlike polygons created by the `Polygon` member function, the polygons created by `PolyPolygon` are not closed automatically.
+Each polygon specified in a call to the `PolyPolygon` function must be closed. Unlike polygons created by the `Polygon` member function, the polygons created by `PolyPolygon` aren't closed automatically.
 
 The function creates two or more polygons. To create a single polygon, an application should use the `Polygon` member function.
 
@@ -4675,13 +4676,13 @@ BOOL PolyPolyline(
 
 ### Parameters
 
-*`lpPoints`*<br/>
+*`lpPoints`*\
 Points to an array of structures that contains the vertices of the polylines. The polylines are specified consecutively.
 
-*`lpPolyPoints`*<br/>
+*`lpPolyPoints`*\
 Points to an array of variables specifying the number of points in the *`lpPoints`* array for the corresponding polygon. Each entry must be greater than or equal to 2.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the total number of counts in the *`lpPolyPoints`* array.
 
 ### Return Value
@@ -4690,7 +4691,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The line segments are drawn by using the current pen. The figures formed by the segments are not filled. The current position is neither used nor updated by this function.
+The line segments are drawn by using the current pen. The figures formed by the segments aren't filled. The current position isn't used or updated by this function.
 
 ## <a name="ptvisible"></a> `CDC::PtVisible`
 
@@ -4706,13 +4707,13 @@ BOOL PtVisible(POINT point) const;
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the point.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the point.
 
-*`point`*<br/>
+*`point`*\
 Specifies the point to check in logical coordinates. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
 ### Return Value
@@ -4729,7 +4730,7 @@ BOOL QueryAbort() const;
 
 ### Return Value
 
-The return value is nonzero if printing should continue or if there is no abort procedure. It is 0 if the print job should be terminated. The return value is supplied by the abort function.
+The return value is nonzero if printing should continue or if there's no abort procedure. It's 0 if the print job should be terminated. The return value is supplied by the abort function.
 
 ## <a name="realizepalette"></a> `CDC::RealizePalette`
 
@@ -4767,19 +4768,19 @@ BOOL Rectangle(LPCRECT lpRect);
 
 ### Parameters
 
-*`x1`*<br/>
+*`x1`*\
 Specifies the x-coordinate of the upper-left corner of the rectangle (in logical units).
 
-*`y1`*<br/>
+*`y1`*\
 Specifies the y-coordinate of the upper-left corner of the rectangle (in logical units).
 
-*`x2`*<br/>
+*`x2`*\
 Specifies the x-coordinate of the lower-right corner of the rectangle (in logical units).
 
-*`y2`*<br/>
+*`y2`*\
 Specifies the y-coordinate of the lower-right corner of the rectangle (in logical units).
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the rectangle in logical units. You can pass either a `CRect` object or a pointer to a `RECT` structure for this parameter.
 
 ### Return Value
@@ -4790,7 +4791,7 @@ Nonzero if the function is successful; otherwise 0.
 
 The interior of the rectangle is filled using the current brush.
 
-The rectangle extends up to, but does not include, the right and bottom coordinates. This means that the height of the rectangle is *`y2`* - *`y1`* and the width of the rectangle is *`x2`* - *`x1`*. Both the width and the height of a rectangle must be greater than 2 units and less than 32,767 units.
+The rectangle extends up to, but doesn't include, the right and bottom coordinates. This means that the height of the rectangle is *`y2`* - *`y1`* and the width of the rectangle is *`x2`* - *`x1`*. Both the width and the height of a rectangle must be greater than 2 units and less than 32,767 units.
 
 ### Example
 
@@ -4806,7 +4807,7 @@ virtual BOOL RectVisible(LPCRECT lpRect) const;
 
 ### Parameters
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Points to a `RECT` structure or a `CRect` object that contains the logical coordinates of the specified rectangle.
 
 ### Return Value
@@ -4823,7 +4824,7 @@ virtual void ReleaseAttribDC();
 
 ### Remarks
 
-This does not cause a `Detach` to occur. Only the output device context is attached to the `CDC` object, and only it can be detached.
+This doesn't cause a `Detach` to occur. Only the output device context is attached to the `CDC` object, and only it can be detached.
 
 ## <a name="releaseoutputdc"></a> `CDC::ReleaseOutputDC`
 
@@ -4847,7 +4848,7 @@ BOOL ResetDC(const DEVMODE* lpDevMode);
 
 ### Parameters
 
-*`lpDevMode`*<br/>
+*`lpDevMode`*\
 A pointer to a Windows `DEVMODE` structure.
 
 ### Return Value
@@ -4874,7 +4875,7 @@ virtual BOOL RestoreDC(int nSavedDC);
 
 ### Parameters
 
-*`nSavedDC`*<br/>
+*`nSavedDC`*\
 Specifies the device context to be restored. It can be a value returned by a previous `SaveDC` function call. If *`nSavedDC`* is -1, the most recently saved device context is restored.
 
 ### Return Value
@@ -4885,7 +4886,7 @@ Nonzero if the specified context was restored; otherwise 0.
 
 `RestoreDC` restores the device context by popping state information off a stack created by earlier calls to the `SaveDC` member function.
 
-The stack can contain the state information for several device contexts. If the context specified by *`nSavedDC`* is not at the top of the stack, `RestoreDC` deletes all state information between the device context specified by *`nSavedDC`* and the top of the stack. The deleted information is lost.
+The stack can contain the state information for several device contexts. If the context specified by *`nSavedDC`* isn't at the top of the stack, `RestoreDC` deletes all state information between the device context specified by *`nSavedDC`* and the top of the stack. The deleted information is lost.
 
 ## <a name="roundrect"></a> `CDC::RoundRect`
 
@@ -4907,28 +4908,28 @@ BOOL RoundRect(
 
 ### Parameters
 
-*`x1`*<br/>
+*`x1`*\
 Specifies the x-coordinate of the upper-left corner of the rectangle (in logical units).
 
-*`y1`*<br/>
+*`y1`*\
 Specifies the y-coordinate of the upper-left corner of the rectangle (in logical units).
 
-*`x2`*<br/>
+*`x2`*\
 Specifies the x-coordinate of the lower-right corner of the rectangle (in logical units).
 
-*`y2`*<br/>
+*`y2`*\
 Specifies the y-coordinate of the lower-right corner of the rectangle (in logical units).
 
-*`x3`*<br/>
+*`x3`*\
 Specifies the width of the ellipse used to draw the rounded corners (in logical units).
 
-*`y3`*<br/>
+*`y3`*\
 Specifies the height of the ellipse used to draw the rounded corners (in logical units).
 
-*`lpRect`*<br/>
+*`lpRect`*\
 Specifies the bounding rectangle in logical units. You can pass either a `CRect` object or a pointer to a `RECT` structure for this parameter.
 
-*`point`*<br/>
+*`point`*\
 The x-coordinate of *`point`* specifies the width of the ellipse to draw the rounded corners (in logical units). The y-coordinate of *`point`* specifies the height of the ellipse to draw the rounded corners (in logical units). You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
 ### Return Value
@@ -4939,7 +4940,7 @@ Nonzero if the function is successful; otherwise 0.
 
 The interior of the rectangle is filled using the current brush.
 
-The figure this function draws extends up to but does not include the right and bottom coordinates. This means that the height of the figure is *`y2`* - *`y1`* and the width of the figure is *`x2`* - *`x1`*. Both the height and the width of the bounding rectangle must be greater than 2 units and less than 32,767 units.
+The figure this function draws extends up to but doesn't include the right and bottom coordinates. This means that the height of the figure is *`y2`* - *`y1`* and the width of the figure is *`x2`* - *`x1`*. Both the height and the width of the bounding rectangle must be greater than 2 units and less than 32,767 units.
 
 ### Example
 
@@ -4955,7 +4956,7 @@ virtual int SaveDC();
 
 ### Return Value
 
-An integer identifying the saved device context. It is 0 if an error occurs. This return value can be used to restore the device context by calling `RestoreDC`.
+An integer identifying the saved device context. It's 0 if an error occurs. This return value can be used to restore the device context by calling `RestoreDC`.
 
 ### Remarks
 
@@ -4977,16 +4978,16 @@ virtual CSize ScaleViewportExt(
 
 ### Parameters
 
-*`xNum`*<br/>
+*`xNum`*\
 Specifies the amount by which to multiply the current x-extent.
 
-*`xDenom`*<br/>
+*`xDenom`*\
 Specifies the amount by which to divide the result of multiplying the current x-extent by the value of the *`xNum`* parameter.
 
-*`yNum`*<br/>
+*`yNum`*\
 Specifies the amount by which to multiply the current y-extent.
 
-*`yDenom`*<br/>
+*`yDenom`*\
 Specifies the amount by which to divide the result of multiplying the current y-extent by the value of the *`yNum`* parameter.
 
 ### Return Value
@@ -5017,16 +5018,16 @@ virtual CSize ScaleWindowExt(
 
 ### Parameters
 
-*`xNum`*<br/>
+*`xNum`*\
 Specifies the amount by which to multiply the current x-extent.
 
-*`xDenom`*<br/>
+*`xDenom`*\
 Specifies the amount by which to divide the result of multiplying the current x-extent by the value of the *`xNum`* parameter.
 
-*`yNum`*<br/>
+*`yNum`*\
 Specifies the amount by which to multiply the current y-extent.
 
-*`yDenom`*<br/>
+*`yDenom`*\
 Specifies the amount by which to divide the result of multiplying the current y-extent by the value of the *`yNum`* parameter.
 
 ### Return Value
@@ -5059,22 +5060,22 @@ BOOL ScrollDC(
 
 ### Parameters
 
-*`dx`*<br/>
+*`dx`*\
 Specifies the number of horizontal scroll units.
 
-*`dy`*<br/>
+*`dy`*\
 Specifies the number of vertical scroll units.
 
-*`lpRectScroll`*<br/>
+*`lpRectScroll`*\
 Points to the `RECT` structure or `CRect` object that contains the coordinates of the scrolling rectangle.
 
-*`lpRectClip`*<br/>
+*`lpRectClip`*\
 Points to the `RECT` structure or `CRect` object that contains the coordinates of the clipping rectangle. When this rectangle is smaller than the original one pointed to by *`lpRectScroll`*, scrolling occurs only in the smaller rectangle.
 
-*`pRgnUpdate`*<br/>
-Identifies the region uncovered by the scrolling process. The `ScrollDC` function defines this region; it is not necessarily a rectangle.
+*`pRgnUpdate`*\
+Identifies the region uncovered by the scrolling process. The `ScrollDC` function defines this region; it isn't necessarily a rectangle.
 
-*`lpRectUpdate`*<br/>
+*`lpRectUpdate`*\
 Points to the `RECT` structure or `CRect` object that receives the coordinates of the rectangle that bounds the scrolling update region. This is the largest rectangular area that requires repainting. The values in the structure or object when the function returns are in client coordinates, regardless of the mapping mode for the given device context.
 
 ### Return Value
@@ -5083,9 +5084,9 @@ Nonzero if scrolling is executed; otherwise 0.
 
 ### Remarks
 
-If *`lpRectUpdate`* is `NULL`, Windows does not compute the update rectangle. If both *`pRgnUpdate`* and *`lpRectUpdate`* are `NULL`, Windows does not compute the update region. If *`pRgnUpdate`* is not `NULL`, Windows assumes that it contains a valid pointer to the region uncovered by the scrolling process (defined by the `ScrollDC` member function). The update region returned in *`lpRectUpdate`* can be passed to `CWnd::InvalidateRgn` if required.
+If *`lpRectUpdate`* is `NULL`, Windows doesn't compute the update rectangle. If both *`pRgnUpdate`* and *`lpRectUpdate`* are `NULL`, Windows doesn't compute the update region. If *`pRgnUpdate`* isn't `NULL`, Windows assumes that it contains a valid pointer to the region uncovered by the scrolling process (defined by the `ScrollDC` member function). The update region returned in *`lpRectUpdate`* can be passed to `CWnd::InvalidateRgn` if required.
 
-An application should use the `ScrollWindow` member function of class `CWnd` when it is necessary to scroll the entire client area of a window. Otherwise, it should use `ScrollDC`.
+An application should use the `ScrollWindow` member function of class `CWnd` when it's necessary to scroll the entire client area of a window. Otherwise, it should use `ScrollDC`.
 
 ## <a name="selectclippath"></a> `CDC::SelectClipPath`
 
@@ -5097,7 +5098,7 @@ BOOL SelectClipPath(int nMode);
 
 ### Parameters
 
-*`nMode`*<br/>
+*`nMode`*\
 Specifies the way to use the path. The following values are allowed:
 
 - `RGN_AND` The new clipping region includes the intersection (overlapping areas) of the current clipping region and the current path.
@@ -5132,14 +5133,14 @@ int SelectClipRgn(
 
 ### Parameters
 
-*`pRgn`*<br/>
+*`pRgn`*\
 Identifies the region to be selected.
 
 - For the first version of this function, if this value is `NULL`, the entire client area is selected and output is still clipped to the window.
 
 - For the second version of this function, this handle can be `NULL` only when the `RGN_COPY` mode is specified.
 
-*`nMode`*<br/>
+*`nMode`*\
 Specifies the operation to be performed. It must be one of the following values:
 
 - `RGN_AND` The new clipping region combines the overlapping areas of the current clipping region and the region identified by *`pRgn`*.
@@ -5158,7 +5159,7 @@ The region's type. It can be any of the following values:
 
 - `COMPLEXREGION` New clipping region has overlapping borders.
 
-- `ERROR` Device context or region is not valid.
+- `ERROR` Device context or region isn't valid.
 
 - `NULLREGION` New clipping region is empty.
 
@@ -5187,33 +5188,33 @@ CGdiObject* SelectObject(CGdiObject* pObject);
 
 ### Parameters
 
-*`pPen`*<br/>
+*`pPen`*\
 A pointer to a [`CPen`](../../mfc/reference/cpen-class.md) object to be selected.
 
-*`pBrush`*<br/>
+*`pBrush`*\
 A pointer to a [`CBrush`](../../mfc/reference/cbrush-class.md) object to be selected.
 
-*`pFont`*<br/>
+*`pFont`*\
 A pointer to a [`CFont`](../../mfc/reference/cfont-class.md) object to be selected.
 
-*`pBitmap`*<br/>
+*`pBitmap`*\
 A pointer to a [`CBitmap`](../../mfc/reference/cbitmap-class.md) object to be selected.
 
-*`pRgn`*<br/>
+*`pRgn`*\
 A pointer to a [`CRgn`](../../mfc/reference/crgn-class.md) object to be selected.
 
-*`pObject`*<br/>
+*`pObject`*\
 A pointer to a [`CGdiObject`](../../mfc/reference/cgdiobject-class.md) object to be selected.
 
 ### Return Value
 
-A pointer to the object being replaced. This is a pointer to an object of one of the classes derived from `CGdiObject`, such as `CPen`, depending on which version of the function is used. The return value is `NULL` if there is an error. This function may return a pointer to a temporary object. This temporary object is only valid during the processing of one Windows message. For more information, see `CGdiObject::FromHandle`.
+A pointer to the object being replaced. This is a pointer to an object of one of the classes derived from `CGdiObject`, such as `CPen`, depending on which version of the function is used. The return value is `NULL` if there's an error. This function may return a pointer to a temporary object. This temporary object is only valid during the processing of one Windows message. For more information, see `CGdiObject::FromHandle`.
 
 The version of the member function that takes a region parameter performs the same task as the `SelectClipRgn` member function. Its return value can be any of the following:
 
 - `COMPLEXREGION` New clipping region has overlapping borders.
 
-- `ERROR` Device context or region is not valid.
+- `ERROR` Device context or region isn't valid.
 
 - `NULLREGION` New clipping region is empty.
 
@@ -5223,9 +5224,9 @@ The version of the member function that takes a region parameter performs the sa
 
 Class `CDC` provides five versions specialized for particular kinds of GDI objects, including pens, brushes, fonts, bitmaps, and regions. The newly selected object replaces the previous object of the same type. For example, if *`pObject`* of the general version of `SelectObject` points to a [`CPen`](../../mfc/reference/cpen-class.md) object, the function replaces the current pen with the pen specified by *`pObject`*.
 
-An application can select a bitmap into memory device contexts only and into only one memory device context at a time. The format of the bitmap must either be monochrome or compatible with the device context; if it is not, `SelectObject` returns an error.
+An application can select a bitmap into memory device contexts only and into only one memory device context at a time. The format of the bitmap must either be monochrome or compatible with the device context; if it isn't, `SelectObject` returns an error.
 
-For Windows 3.1 and later, the `SelectObject` function returns the same value whether it is used in a metafile or not. Under previous versions of Windows, `SelectObject` returned a nonzero value for success and 0 for failure when it was used in a metafile.
+For Windows 3.1 and later, the `SelectObject` function returns the same value whether it's used in a metafile or not. Under previous versions of Windows, `SelectObject` returned a nonzero value for success and 0 for failure when it was used in a metafile.
 
 ## <a name="selectpalette"></a> `CDC::SelectPalette`
 
@@ -5239,21 +5240,21 @@ CPalette* SelectPalette(
 
 ### Parameters
 
-*`pPalette`*<br/>
+*`pPalette`*\
 Identifies the logical palette to be selected. This palette must already have been created with the `CPalette` member function [`CreatePalette`](../../mfc/reference/cpalette-class.md#createpalette).
 
-*`bForceBackground`*<br/>
+*`bForceBackground`*\
 Specifies whether the logical palette is forced to be a background palette. If *`bForceBackground`* is nonzero, the selected palette is always a background palette, regardless of whether the window has the input focus. If *`bForceBackground`* is 0 and the device context is attached to a window, the logical palette is a foreground palette when the window has the input focus.
 
 ### Return Value
 
-A pointer to a `CPalette` object identifying the logical palette replaced by the palette specified by *`pPalette`*. It is `NULL` if there is an error.
+A pointer to a `CPalette` object identifying the logical palette replaced by the palette specified by *`pPalette`*. It's `NULL` if there's an error.
 
 ### Remarks
 
 The new palette becomes the palette object used by GDI to control colors displayed in the device context and replaces the previous palette.
 
-An application can select a logical palette into more than one device context. However, changes to a logical palette will affect all device contexts for which it is selected. If an application selects a palette into more than one device context, the device contexts must all belong to the same physical device.
+An application can select a logical palette into more than one device context. However, changes to a logical palette will affect all device contexts for which it's selected. If an application selects a palette into more than one device context, the device contexts must all belong to the same physical device.
 
 ## <a name="selectstockobject"></a> `CDC::SelectStockObject`
 
@@ -5265,7 +5266,7 @@ virtual CGdiObject* SelectStockObject(int nIndex);
 
 ### Parameters
 
-*`nIndex`*<br/>
+*`nIndex`*\
 Specifies the kind of stock object desired. It can be one of the following values:
 
 - `BLACK_BRUSH` Black brush.
@@ -5296,7 +5297,7 @@ Specifies the kind of stock object desired. It can be one of the following value
 
 - `OEM_FIXED_FONT` OEM-dependent fixed font.
 
-- `SYSTEM_FONT` The system font. By default, Windows uses the system font to draw menus, dialog-box controls, and other text. It is best, however, not to rely on `SYSTEM_FONT` to obtain the font used by dialogs and windows. Instead, use the `SystemParametersInfo` function with the `SPI_GETNONCLIENTMETRICS` parameter to retrieve the current font. `SystemParametersInfo` takes into account the current theme and provides font information for captions, menus, and message dialogs.
+- `SYSTEM_FONT` The system font. By default, Windows uses the system font to draw menus, dialog-box controls, and other text. It's best, however, not to rely on `SYSTEM_FONT` to obtain the font used by dialogs and windows. Instead, use the `SystemParametersInfo` function with the `SPI_GETNONCLIENTMETRICS` parameter to retrieve the current font. `SystemParametersInfo` takes into account the current theme and provides font information for captions, menus, and message dialogs.
 
 - `SYSTEM_FIXED_FONT` The fixed-width system font used in Windows prior to version 3.0. This object is available for compatibility with earlier versions of Windows.
 
@@ -5316,7 +5317,7 @@ int SetAbortProc(BOOL (CALLBACK* lpfn)(HDC, int));
 
 ### Parameters
 
-*`lpfn`*<br/>
+*`lpfn`*\
 A pointer to the abort function to install as the abort procedure. For more about the callback function, see [Callback Function for `CDC::SetAbortProc`](callback-functions-used-by-mfc.md#setabortproc).
 
 ### Return Value
@@ -5333,11 +5334,11 @@ Specifies the outcome of the `SetAbortProc` function. Some of the following valu
 
 ### Remarks
 
-If an application is to allow the print job to be canceled during spooling, it must set the abort function before the print job is started with the [`StartDoc`](#startdoc) member function. The Print Manager calls the abort function during spooling to allow the application to cancel the print job or to process out-of-disk-space conditions. If no abort function is set, the print job will fail if there is not enough disk space for spooling.
+If an application is to allow the print job to be canceled during spooling, it must set the abort function before the print job is started with the [`StartDoc`](#startdoc) member function. The Print Manager calls the abort function during spooling to allow the application to cancel the print job or to process out-of-disk-space conditions. If no abort function is set, the print job will fail if there isn't enough disk space for spooling.
 
-Note that the features of Microsoft Visual C++ simplify the creation of the callback function passed to `SetAbortProc`. The address passed to the `EnumObjects` member function is a pointer to a function exported with `__declspec(dllexport)` and with the **`__stdcall`** calling convention.
+The features of Microsoft Visual C++ simplify the creation of the callback function passed to `SetAbortProc`. The address passed to the `EnumObjects` member function is a pointer to a function exported with `__declspec(dllexport)` and with the **`__stdcall`** calling convention.
 
-You also do not have to export the function name in an **`EXPORTS`** statement in your application's module-definition file. You can instead use the **`EXPORT`** function modifier, as in
+You also don't have to export the function name in an **`EXPORTS`** statement in your application's module-definition file. You can instead use the **`EXPORT`** function modifier, as in
 
 `BOOL CALLBACK EXPORT AFunction( HDC, int );`
 
@@ -5345,7 +5346,7 @@ to cause the compiler to emit the proper export record for export by name withou
 
 Callback registration interfaces are now type-safe (you must pass in a function pointer that points to the right kind of function for the specific callback).
 
-Also note that all callback functions must trap Microsoft Foundation exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).
+All callback functions must trap Microsoft Foundation exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).
 
 ## <a name="setarcdirection"></a> `CDC::SetArcDirection`
 
@@ -5357,7 +5358,7 @@ int SetArcDirection(int nArcDirection);
 
 ### Parameters
 
-*`nArcDirection`*<br/>
+*`nArcDirection`*\
 Specifies the new arc direction. This parameter can be either of the following values:
 
 - `AD_COUNTERCLOCKWISE` Figures drawn counterclockwise.
@@ -5388,12 +5389,12 @@ virtual void SetAttribDC(HDC hDC);
 
 ### Parameters
 
-*`hDC`*<br/>
+*`hDC`*\
 A Windows device context.
 
 ### Remarks
 
-This member function does not attach the device context to the `CDC` object. Only the output device context is attached to a `CDC` object.
+This member function doesn't attach the device context to the `CDC` object. Only the output device context is attached to a `CDC` object.
 
 ## <a name="setbkcolor"></a> `CDC::SetBkColor`
 
@@ -5405,7 +5406,7 @@ virtual COLORREF SetBkColor(COLORREF crColor);
 
 ### Parameters
 
-*`crColor`*<br/>
+*`crColor`*\
 Specifies the new background color.
 
 ### Return Value
@@ -5428,12 +5429,12 @@ int SetBkMode(int nBkMode);
 
 ### Parameters
 
-*`nBkMode`*<br/>
+*`nBkMode`*\
 Specifies the mode to be set. This parameter can be either of the following values:
 
 - `OPAQUE` Background is filled with the current background color before the text, hatched brush, or pen is drawn. This is the default background mode.
 
-- `TRANSPARENT` Background is not changed before drawing.
+- `TRANSPARENT` Background isn't changed before drawing.
 
 ### Return Value
 
@@ -5441,7 +5442,7 @@ The previous background mode.
 
 ### Remarks
 
-The background mode defines whether the system removes existing background colors on the drawing surface before drawing text, hatched brushes, or any pen style that is not a solid line.
+The background mode defines whether the system removes existing background colors on the drawing surface before drawing text, hatched brushes, or any pen style that isn't a solid line.
 
 ### Example
 
@@ -5459,10 +5460,10 @@ UINT SetBoundsRect(
 
 ### Parameters
 
-*`lpRectBounds`*<br/>
+*`lpRectBounds`*\
 Points to a `RECT` structure or `CRect` object that is used to set the bounding rectangle. Rectangle dimensions are given in logical coordinates. This parameter can be `NULL`.
 
-*`flags`*<br/>
+*`flags`*\
 Specifies how the new rectangle will be combined with the accumulated rectangle. This parameter can be a combination of the following values:
 
 - `DCB_ACCUMULATE` Add the rectangle specified by *`lpRectBounds`* to the bounding rectangle (using a rectangle-union operation).
@@ -5475,7 +5476,7 @@ Specifies how the new rectangle will be combined with the accumulated rectangle.
 
 The current state of the bounding rectangle, if the function is successful. Like *`flags`*, the return value can be a combination of **`DCB_`** values:
 
-- `DCB_ACCUMULATE` The bounding rectangle is not empty. This value will always be set.
+- `DCB_ACCUMULATE` The bounding rectangle isn't empty. This value will always be set.
 
 - `DCB_DISABLE` Bounds accumulation is off.
 
@@ -5499,13 +5500,13 @@ CPoint SetBrushOrg(POINT point);
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the x-coordinate (in device units) of the new origin. This value must be in the range 0-7.
 
-*`y`*<br/>
+*`y`*\
 Specifies the y-coordinate (in device units) of the new origin. This value must be in the range 0-7.
 
-*`point`*<br/>
+*`point`*\
 Specifies the x- and y-coordinates of the new origin. Each value must be in the range 0-7. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
 ### Return Value
@@ -5516,7 +5517,7 @@ The previous origin of the brush in device units.
 
 The default coordinates for the brush origin are (0, 0). To alter the origin of a brush, call the `UnrealizeObject` function for the `CBrush` object, call `SetBrushOrg`, and then call the `SelectObject` member function to select the brush into the device context.
 
-Do not use `SetBrushOrg` with stock `CBrush` objects.
+Don't use `SetBrushOrg` with stock `CBrush` objects.
 
 ## <a name="setcoloradjustment"></a> `CDC::SetColorAdjustment`
 
@@ -5528,7 +5529,7 @@ BOOL SetColorAdjustment(const COLORADJUSTMENT* lpColorAdjust);
 
 ### Parameters
 
-*`lpColorAdjust`*<br/>
+*`lpColorAdjust`*\
 Points to a [`COLORADJUSTMENT`](/windows/win32/api/wingdi/ns-wingdi-coloradjustment) data structure containing the color adjustment values.
 
 ### Return Value
@@ -5549,7 +5550,7 @@ COLORREF SetDCBrushColor(COLORREF crColor);
 
 ### Parameters
 
-*`crColor`*<br/>
+*`crColor`*\
 Specifies the new brush color.
 
 ### Return Value
@@ -5572,7 +5573,7 @@ COLORREF SetDCPenColor(COLORREF crColor);
 
 ### Parameters
 
-*`crColor`*<br/>
+*`crColor`*\
 Specifies the new pen color.
 
 ### Return Value
@@ -5593,7 +5594,7 @@ int SetGraphicsMode(int iMode);
 
 ### Parameters
 
-*`iMode`*<br/>
+*`iMode`*\
 Specifies the graphics mode. For a list of the values that this parameter can take, see [`SetGraphicsMode`](/windows/win32/api/wingdi/nf-wingdi-setgraphicsmode).
 
 ### Return Value
@@ -5616,7 +5617,7 @@ DWORD SetLayout(DWORD dwLayout);
 
 ### Parameters
 
-*`dwLayout`*<br/>
+*`dwLayout`*\
 Device context layout and bitmap control flags. It can be a combination of the following values.
 
 |Value|Meaning|
@@ -5633,7 +5634,7 @@ If unsuccessful, `GDI_ERROR`. To get extended error information, call [`GetLastE
 
 ### Remarks
 
-Normally, you would not call `SetLayout` for a window. Rather, you control the right-to-left layout in a window by setting the [extended window styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) such as `WS_EX_RTLREADING`. A device context, such as a printer or a metafile, does not inherit this layout. The only way to set the device context for a right-to-left layout is by calling `SetLayout`.
+Normally, you would not call `SetLayout` for a window. Rather, you control the right-to-left layout in a window by setting the [extended window styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) such as `WS_EX_RTLREADING`. A device context, such as a printer or a metafile, doesn't inherit this layout. The only way to set the device context for a right-to-left layout is by calling `SetLayout`.
 
 If you call **`SetLayout(LAYOUT_RTL)`**, `SetLayout` automatically changes the mapping mode to `MM_ISOTROPIC`. As a result, a subsequent call to [`GetMapMode`](#getmapmode) will return `MM_ISOTROPIC` instead of `MM_TEXT`.
 
@@ -5651,10 +5652,10 @@ virtual int SetMapMode(int nMapMode);
 
 ### Parameters
 
-*`nMapMode`*<br/>
+*`nMapMode`*\
 Specifies the new mapping mode. It can be any one of the following values:
 
-- `MM_ANISOTROPIC` Logical units are converted to arbitrary units with arbitrarily scaled axes. Setting the mapping mode to `MM_ANISOTROPIC` does not change the current window or viewport settings. To change the units, orientation, and scaling, call the [`SetWindowExt`](#setwindowext) and [`SetViewportExt`](#setviewportext) member functions.
+- `MM_ANISOTROPIC` Logical units are converted to arbitrary units with arbitrarily scaled axes. Setting the mapping mode to `MM_ANISOTROPIC` doesn't change the current window or viewport settings. To change the units, orientation, and scaling, call the [`SetWindowExt`](#setwindowext) and [`SetViewportExt`](#setviewportext) member functions.
 
 - `MM_HIENGLISH` Each logical unit is converted to 0.001 inch. Positive x is to the right; positive y is up.
 
@@ -5678,7 +5679,7 @@ The previous mapping mode.
 
 The mapping mode defines the unit of measure used to convert logical units to device units; it also defines the orientation of the device's x- and y-axes. GDI uses the mapping mode to convert logical coordinates into the appropriate device coordinates. The `MM_TEXT` mode allows applications to work in device pixels, where 1 unit is equal to 1 pixel. The physical size of a pixel varies from device to device.
 
-The `MM_HIENGLISH`, `MM_HIMETRIC`, `MM_LOENGLISH`, `MM_LOMETRIC`, and `MM_TWIPS` modes are useful for applications that must draw in physically meaningful units (such as inches or millimeters). The `MM_ISOTROPIC` mode ensures a 1:1 aspect ratio, which is useful when it is important to preserve the exact shape of an image. The `MM_ANISOTROPIC` mode allows the x- and y-coordinates to be adjusted independently.
+The `MM_HIENGLISH`, `MM_HIMETRIC`, `MM_LOENGLISH`, `MM_LOMETRIC`, and `MM_TWIPS` modes are useful for applications that must draw in physically meaningful units (such as inches or millimeters). The `MM_ISOTROPIC` mode ensures a 1:1 aspect ratio, which is useful when it's important to preserve the exact shape of an image. The `MM_ANISOTROPIC` mode allows the x- and y-coordinates to be adjusted independently.
 
 > [!NOTE]
 > If you call [`SetLayout`](#setlayout) to change the DC (device context) to right-to-left layout, `SetLayout` automatically changes the mapping mode to `MM_ISOTROPIC`.
@@ -5697,7 +5698,7 @@ DWORD SetMapperFlags(DWORD dwFlag);
 
 ### Parameters
 
-*`dwFlag`*<br/>
+*`dwFlag`*\
 Specifies whether the font mapper attempts to match a font's aspect height and width to the device. When this value is `ASPECT_FILTERING`, the mapper selects only fonts whose x-aspect and y-aspect exactly match those of the specified device.
 
 ### Return Value
@@ -5708,7 +5709,7 @@ The previous value of the font-mapper flag.
 
 An application can use `SetMapperFlags` to cause the font mapper to attempt to choose only a physical font that exactly matches the aspect ratio of the specified device.
 
-An application that uses only raster fonts can use the `SetMapperFlags` function to ensure that the font selected by the font mapper is attractive and readable on the specified device. Applications that use scalable (TrueType) fonts typically do not use `SetMapperFlags`.
+An application that uses only raster fonts can use the `SetMapperFlags` function to ensure that the font selected by the font mapper is attractive and readable on the specified device. Applications that use scalable (TrueType) fonts typically don't use `SetMapperFlags`.
 
 If no physical font has an aspect ratio that matches the specification in the logical font, GDI chooses a new aspect ratio and selects a font that matches this new aspect ratio.
 
@@ -5722,7 +5723,7 @@ BOOL SetMiterLimit(float fMiterLimit);
 
 ### Parameters
 
-*`fMiterLimit`*<br/>
+*`fMiterLimit`*\
 Specifies the new miter limit for the device context.
 
 ### Return Value
@@ -5743,12 +5744,12 @@ virtual void SetOutputDC(HDC hDC);
 
 ### Parameters
 
-*`hDC`*<br/>
+*`hDC`*\
 A Windows device context.
 
 ### Remarks
 
-This member function can only be called when a device context has not been attached to the `CDC` object. This member function sets `m_hDC` but does not attach the device context to the `CDC` object.
+This member function can only be called when a device context has not been attached to the `CDC` object. This member function sets `m_hDC` but doesn't attach the device context to the `CDC` object.
 
 ## <a name="setpixel"></a> `CDC::SetPixel`
 
@@ -5767,25 +5768,25 @@ COLORREF SetPixel(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the point to be set.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the point to be set.
 
-*`crColor`*<br/>
+*`crColor`*\
 A `COLORREF` RGB value that specifies the color used to paint the point. See [`COLORREF`](/windows/win32/gdi/colorref) in the Windows SDK for a description of this value.
 
-*`point`*<br/>
+*`point`*\
 Specifies the logical x- and y-coordinates of the point to be set. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
 ### Return Value
 
-An RGB value for the color that the point is actually painted. This value can be different from that specified by *`crColor`* if an approximation of that color is used. If the function fails (if the point is outside the clipping region), the return value is -1.
+An RGB value for the color that the point is painted. This value can be different from that specified by *`crColor`* if an approximation of that color is used. If the function fails (if the point is outside the clipping region), the return value is -1.
 
 ### Remarks
 
-The point must be in the clipping region. If the point is not in the clipping region, the function does nothing.
+The point must be in the clipping region. If the point isn't in the clipping region, the function does nothing.
 
 Not all devices support the `SetPixel` function. To determine whether a device supports `SetPixel`, call the `GetDeviceCaps` member function with the `RASTERCAPS` index and check the return value for the `RC_BITBLT` flag.
 
@@ -5806,16 +5807,16 @@ BOOL SetPixelV(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the x-coordinate, in logical units, of the point to be set.
 
-*`y`*<br/>
+*`y`*\
 Specifies the y-coordinate, in logical units, of the point to be set.
 
-*`crColor`*<br/>
+*`crColor`*\
 Specifies the color to be used to paint the point.
 
-*`point`*<br/>
+*`point`*\
 Specifies the logical x- and y-coordinates of the point to be set. You can pass either a [`POINT`](/windows/win32/api/windef/ns-windef-point) data structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
 
 ### Return Value
@@ -5824,7 +5825,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The point must be in both the clipping region and the visible part of the device surface. Not all devices support the member function. For more information, see the `RC_BITBLT` capability in the `CDC::GetDeviceCaps` member function. `SetPixelV` is faster than `SetPixel` because it does not need to return the color value of the point actually painted.
+The point must be in both the clipping region and the visible part of the device surface. Not all devices support the member function. For more information, see the `RC_BITBLT` capability in the `CDC::GetDeviceCaps` member function. `SetPixelV` is faster than `SetPixel` because it doesn't need to return the color value of the point painted.
 
 ## <a name="setpolyfillmode"></a> `CDC::SetPolyFillMode`
 
@@ -5836,7 +5837,7 @@ int SetPolyFillMode(int nPolyFillMode);
 
 ### Parameters
 
-*`nPolyFillMode`*<br/>
+*`nPolyFillMode`*\
 Specifies the new filling mode. This value may be either `ALTERNATE` or `WINDING`. The default mode set in Windows is `ALTERNATE`.
 
 ### Return Value
@@ -5859,7 +5860,7 @@ int SetROP2(int nDrawMode);
 
 ### Parameters
 
-*`nDrawMode`*<br/>
+*`nDrawMode`*\
 Specifies the new drawing mode. It can be any of the following values:
 
 - `R2_BLACK` Pixel is always black.
@@ -5904,7 +5905,7 @@ It can be any of the values given in the Windows SDK.
 
 The drawing mode specifies how the colors of the pen and the interior of filled objects are combined with the color already on the display surface.
 
-The drawing mode is for raster devices only; it does not apply to vector devices. Drawing modes are binary raster-operation codes representing all possible Boolean combinations of two variables, using the binary operators `&`, `|`, and `^` (exclusive `|`), and the unary operation `~`.
+The drawing mode is for raster devices only; it doesn't apply to vector devices. Drawing modes are binary raster-operation codes representing all possible Boolean combinations of two variables, using the binary operators `&`, `|`, and `^` (exclusive `|`), and the unary operation `~`.
 
 ## <a name="setstretchbltmode"></a> `CDC::SetStretchBltMode`
 
@@ -5916,7 +5917,7 @@ int SetStretchBltMode(int nStretchMode);
 
 ### Parameters
 
-*`nStretchMode`*<br/>
+*`nStretchMode`*\
 Specifies the stretching mode. It can be any of the following values:
 
 |Value|Description|
@@ -5941,9 +5942,9 @@ The bitmap-stretching mode defines how information is removed from bitmaps that 
 
 The `BLACKONWHITE`(`STRETCH_ANDSCANS`) and `WHITEONBLACK`(`STRETCH_ORSCANS`) modes are typically used to preserve foreground pixels in monochrome bitmaps. The `COLORONCOLOR`(`STRETCH_DELETESCANS`) mode is typically used to preserve color in color bitmaps.
 
-The `HALFTONE` mode requires more processing of the source image than the other three modes; it is slower than the others, but produces higher quality images. Also note that `SetBrushOrgEx` must be called after setting the `HALFTONE` mode to avoid brush misalignment.
+The `HALFTONE` mode requires more processing of the source image than the other three modes; it's slower than the others, but produces higher quality images. Also, `SetBrushOrgEx` must be called after setting the `HALFTONE` mode to avoid brush misalignment.
 
-Additional stretching modes might also be available depending on the capabilities of the device driver.
+More stretching modes might also be available depending on the capabilities of the device driver.
 
 ## <a name="settextalign"></a> `CDC::SetTextAlign`
 
@@ -5955,7 +5956,7 @@ UINT SetTextAlign(UINT nFlags);
 
 ### Parameters
 
-*`nFlags`*<br/>
+*`nFlags`*\
 Specifies text-alignment flags. The flags specify the relationship between a point and a rectangle that bounds the text. The point can be either the current position or coordinates specified by a text-output function. The rectangle that bounds the text is defined by the adjacent character cells in the text string. The *`nFlags`* parameter can be one or more flags from the following three categories. Choose only one flag from each category. The first category affects text alignment in the x-direction:
 
 - `TA_CENTER` Aligns the point with the horizontal center of the bounding rectangle.
@@ -5974,7 +5975,7 @@ The second category affects text alignment in the y-direction:
 
 The third category determines whether the current position is updated when text is written:
 
-- `TA_NOUPDATECP` Does not update the current position after each call to a text-output function. This is the default setting.
+- `TA_NOUPDATECP` Doesn't update the current position after each call to a text-output function. This is the default setting.
 
 - `TA_UPDATECP` Updates the current x-position after each call to a text-output function. The new position is at the right side of the bounding rectangle for the text. When this flag is set, the coordinates specified in calls to the `TextOut` member function are ignored.
 
@@ -5996,8 +5997,8 @@ int SetTextCharacterExtra(int nCharExtra);
 
 ### Parameters
 
-*`nCharExtra`*<br/>
-Specifies the amount of extra space (in logical units) to be added to each character. If the current mapping mode is not `MM_TEXT`, *`nCharExtra`* is transformed and rounded to the nearest pixel.
+*`nCharExtra`*\
+Specifies the amount of extra space (in logical units) to be added to each character. If the current mapping mode isn't `MM_TEXT`, *`nCharExtra`* is transformed and rounded to the nearest pixel.
 
 ### Return Value
 
@@ -6017,7 +6018,7 @@ virtual COLORREF SetTextColor(COLORREF crColor);
 
 ### Parameters
 
-*`crColor`*<br/>
+*`crColor`*\
 Specifies the color of the text as an RGB color value.
 
 ### Return Value
@@ -6026,7 +6027,7 @@ An RGB value for the previous text color.
 
 ### Remarks
 
-The system will use this text color when writing text to this device context and also when converting bitmaps between color and monochrome device contexts.
+The system uses this text color when writing text to this device context and also when converting bitmaps between color and monochrome device contexts.
 
 If the device cannot represent the specified color, the system sets the text color to the nearest physical color. The background color for a character is specified by the `SetBkColor` and `SetBkMode` member functions.
 
@@ -6046,10 +6047,10 @@ int SetTextJustification(
 
 ### Parameters
 
-*`nBreakExtra`*<br/>
-Specifies the total extra space to be added to the line of text (in logical units). If the current mapping mode is not `MM_TEXT`, the value given by this parameter is converted to the current mapping mode and rounded to the nearest device unit.
+*`nBreakExtra`*\
+Specifies the total extra space to be added to the line of text (in logical units). If the current mapping mode isn't `MM_TEXT`, the value given by this parameter is converted to the current mapping mode and rounded to the nearest device unit.
 
-*`nBreakCount`*<br/>
+*`nBreakCount`*\
 Specifies the number of break characters in the line.
 
 ### Return Value
@@ -6084,13 +6085,13 @@ CSize SetViewportExt(SIZE size);
 
 ### Parameters
 
-*`cx`*<br/>
+*`cx`*\
 Specifies the x-extent of the viewport (in device units).
 
-*`cy`*<br/>
+*`cy`*\
 Specifies the y-extent of the viewport (in device units).
 
-*`size`*<br/>
+*`size`*\
 Specifies the x- and y-extents of the viewport (in device units).
 
 ### Return Value
@@ -6128,13 +6129,13 @@ CPoint SetViewportOrg(POINT point);
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the x-coordinate (in device units) of the origin of the viewport. The value must be within the range of the device coordinate system.
 
-*`y`*<br/>
+*`y`*\
 Specifies the y-coordinate (in device units) of the origin of the viewport. The value must be within the range of the device coordinate system.
 
-*`point`*<br/>
+*`point`*\
 Specifies the origin of the viewport. The values must be within the range of the device coordinate system. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
 ### Return Value
@@ -6165,13 +6166,13 @@ CSize SetWindowExt(SIZE size);
 
 ### Parameters
 
-*`cx`*<br/>
+*`cx`*\
 Specifies the x-extent (in logical units) of the window.
 
-*`cy`*<br/>
+*`cy`*\
 Specifies the y-extent (in logical units) of the window.
 
-*`size`*<br/>
+*`size`*\
 Specifies the x- and y-extents (in logical units) of the window.
 
 ### Return Value
@@ -6216,13 +6217,13 @@ CPoint SetWindowOrg(POINT point);
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the new origin of the window.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the new origin of the window.
 
-*`point`*<br/>
+*`point`*\
 Specifies the logical coordinates of the new origin of the window. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
 ### Return Value
@@ -6245,7 +6246,7 @@ BOOL SetWorldTransform(const XFORM& rXform);
 
 ### Parameters
 
-*`rXform`*<br/>
+*`rXform`*\
 Reference to an [`XFORM`](/windows/win32/api/wingdi/ns-wingdi-xform) structure that contains the transformation data.
 
 ### Return Value
@@ -6271,10 +6272,10 @@ int StartDoc(LPCTSTR lpszDocName);
 
 ### Parameters
 
-*`lpDocInfo`*<br/>
+*`lpDocInfo`*\
 Points to a [`DOCINFO`](/windows/win32/api/wingdi/ns-wingdi-docinfow) structure containing the name of the document file and the name of the output file.
 
-*`lpszDocName`*<br/>
+*`lpszDocName`*\
 Pointer to a string containing the name of the document file.
 
 ### Return Value
@@ -6285,11 +6286,11 @@ If the function fails, the return value is less than or equal to zero.
 
 ### Remarks
 
-This ensures that documents longer than one page will not be interspersed with other jobs.
+This ensures that documents longer than one page won't be interspersed with other jobs.
 
-For Windows versions 3.1 and later, this function replaces the `STARTDOC` printer escape. Using this function ensures that documents containing more than one page are not interspersed with other print jobs.
+For Windows versions 3.1 and later, this function replaces the `STARTDOC` printer escape. Using this function ensures that documents containing more than one page aren't interspersed with other print jobs.
 
-`StartDoc` should not be used inside metafiles.
+`StartDoc` shouldn't be used inside metafiles.
 
 ### Example
 
@@ -6341,34 +6342,34 @@ BOOL StretchBlt(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the x-coordinate (in logical units) of the upper-left corner of the destination rectangle.
 
-*`y`*<br/>
+*`y`*\
 Specifies the y-coordinate (in logical units) of the upper-left corner of the destination rectangle.
 
-*`nWidth`*<br/>
+*`nWidth`*\
 Specifies the width (in logical units) of the destination rectangle.
 
-*`nHeight`*<br/>
+*`nHeight`*\
 Specifies the height (in logical units) of the destination rectangle.
 
-*`pSrcDC`*<br/>
+*`pSrcDC`*\
 Specifies the source device context.
 
-*`xSrc`*<br/>
+*`xSrc`*\
 Specifies the x-coordinate (in logical units) of the upper-left corner of the source rectangle.
 
-*`ySrc`*<br/>
+*`ySrc`*\
 Specifies the y-coordinate (in logical units) of the upper-left corner of the source rectangle.
 
-*`nSrcWidth`*<br/>
+*`nSrcWidth`*\
 Specifies the width (in logical units) of the source rectangle.
 
-*`nSrcHeight`*<br/>
+*`nSrcHeight`*\
 Specifies the height (in logical units) of the source rectangle.
 
-*`dwRop`*<br/>
+*`dwRop`*\
 Specifies the raster operation to be performed. Raster operation codes define how GDI combines colors in output operations that involve a current brush, a possible source bitmap, and a destination bitmap. This parameter may be one of the following values:
 
 - `BLACKNESS` Turns all output black.
@@ -6413,9 +6414,9 @@ The `StretchBlt` function moves the bitmap from the source device given by *`pSr
 
 The `StretchBlt` function creates a mirror image of a bitmap if the signs of the *`nSrcWidth`* and *`nWidth`* or *`nSrcHeight`* and *`nHeight`* parameters differ. If *`nSrcWidth`* and *`nWidth`* have different signs, the function creates a mirror image of the bitmap along the x-axis. If *`nSrcHeight`* and *`nHeight`* have different signs, the function creates a mirror image of the bitmap along the y-axis.
 
-The `StretchBlt` function stretches or compresses the source bitmap in memory and then copies the result to the destination. If a pattern is to be merged with the result, it is not merged until the stretched source bitmap is copied to the destination. If a brush is used, it is the selected brush in the destination device context. The destination coordinates are transformed according to the destination device context; the source coordinates are transformed according to the source device context.
+The `StretchBlt` function stretches or compresses the source bitmap in memory and then copies the result to the destination. If a pattern is to be merged with the result, it isn't merged until the stretched source bitmap is copied to the destination. If a brush is used, it's the selected brush in the destination device context. The destination coordinates are transformed according to the destination device context; the source coordinates are transformed according to the source device context.
 
-If the destination, source, and pattern bitmaps do not have the same color format, `StretchBlt` converts the source and pattern bitmaps to match the destination bitmaps. The foreground and background colors of the destination device context are used in the conversion.
+If the destination, source, and pattern bitmaps don't have the same color format, `StretchBlt` converts the source and pattern bitmaps to match the destination bitmaps. The foreground and background colors of the destination device context are used in the conversion.
 
 If `StretchBlt` must convert a monochrome bitmap to color, it sets white bits (1) to the background color and black bits (0) to the foreground color. To convert color to monochrome, it sets pixels that match the background color to white (1) and sets all other pixels to black (0). The foreground and background colors of the device context with color are used.
 
@@ -6435,7 +6436,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The device context must contain a closed path. The `StrokeAndFillPath` member function has the same effect as closing all the open figures in the path, and stroking and filling the path separately, except that the filled region will not overlap the stroked region even if the pen is wide.
+The device context must contain a closed path. The `StrokeAndFillPath` member function has the same effect as closing all the open figures in the path, and stroking and filling the path separately, except that the filled region won't overlap the stroked region even if the pen is wide.
 
 ## <a name="strokepath"></a> `CDC::StrokePath`
 
@@ -6478,28 +6479,28 @@ CSize TabbedTextOut(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the starting point of the string.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the starting point of the string.
 
-*`lpszString`*<br/>
+*`lpszString`*\
 Points to the character string to draw. You can pass either a pointer to an array of characters or a [`CString`](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the [length of the string](/windows/win32/gdi/specifying-length-of-text-output-string) pointed to by *`lpszString`*.
 
-*`nTabPositions`*<br/>
+*`nTabPositions`*\
 Specifies the number of values in the array of tab-stop positions.
 
-*`lpnTabStopPositions`*<br/>
+*`lpnTabStopPositions`*\
 Points to an array containing the tab-stop positions (in logical units). The tab stops must be sorted in increasing order; the smallest x-value should be the first item in the array.
 
-*`nTabOrigin`*<br/>
+*`nTabOrigin`*\
 Specifies the x-coordinate of the starting position from which tabs are expanded (in logical units).
 
-*`str`*<br/>
+*`str`*\
 A `CString` object that contains the specified characters.
 
 ### Return Value
@@ -6512,7 +6513,7 @@ Text is written in the currently selected font. If *`nTabPositions`* is 0 and *`
 
 If *`nTabPositions`* is 1, the tab stops are separated by the distance specified by the first value in the *`lpnTabStopPositions`* array. If the *`lpnTabStopPositions`* array contains more than one value, a tab stop is set for each value in the array, up to the number specified by *`nTabPositions`*. The *`nTabOrigin`* parameter allows an application to call the `TabbedTextOut` function several times for a single line. If the application calls the function more than once with the *`nTabOrigin`* set to the same value each time, the function expands all tabs relative to the position specified by *`nTabOrigin`*.
 
-By default, the current position is not used or updated by the function. If an application needs to update the current position when it calls the function, the application can call the [`SetTextAlign`](#settextalign) member function with *`nFlags`* set to `TA_UPDATECP`. When this flag is set, Windows ignores the *`x`* and *`y`* parameters on subsequent calls to `TabbedTextOut`, using the current position instead.
+By default, the current position isn't used or updated by the function. If an application needs to update the current position when it calls the function, the application can call the [`SetTextAlign`](#settextalign) member function with *`nFlags`* set to `TA_UPDATECP`. When this flag is set, Windows ignores the *`x`* and *`y`* parameters on subsequent calls to `TabbedTextOut`, using the current position instead.
 
 ## <a name="textout"></a> `CDC::TextOut`
 
@@ -6533,19 +6534,19 @@ BOOL TextOut(
 
 ### Parameters
 
-*`x`*<br/>
+*`x`*\
 Specifies the logical x-coordinate of the starting point of the text.
 
-*`y`*<br/>
+*`y`*\
 Specifies the logical y-coordinate of the starting point of the text.
 
-*`lpszString`*<br/>
+*`lpszString`*\
 Points to the character string to be drawn.
 
-*`nCount`*<br/>
+*`nCount`*\
 Specifies the number of characters in the string.
 
-*`str`*<br/>
+*`str`*\
 A `CString` object that contains the characters to be drawn.
 
 ### Return Value
@@ -6554,7 +6555,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-Character origins are at the upper-left corner of the character cell. By default, the current position is not used or updated by the function.
+Character origins are at the upper-left corner of the character cell. By default, the current position isn't used or updated by the function.
 
 If an application needs to update the current position when it calls `TextOut`, the application can call the `SetTextAlign` member function with *`nFlags`* set to `TA_UPDATECP`. When this flag is set, Windows ignores the *`x`* and *`y`* parameters on subsequent calls to `TextOut`, using the current position instead.
 
@@ -6582,34 +6583,34 @@ BOOL TransparentBlt(
 
 ### Parameters
 
-*`xDest`*<br/>
+*`xDest`*\
 Specifies the x-coordinate, in logical units, of the upper-left corner of the destination rectangle.
 
-*`yDest`*<br/>
+*`yDest`*\
 Specifies the y-coordinate, in logical units, of the upper-left corner of the destination rectangle.
 
-*`nDestWidth`*<br/>
+*`nDestWidth`*\
 Specifies the width, in logical units, of the destination rectangle.
 
-*`nDestHeight`*<br/>
+*`nDestHeight`*\
 Specifies the height, in logical units, of the destination rectangle.
 
-*`pSrcDC`*<br/>
+*`pSrcDC`*\
 Pointer to the source device context.
 
-*`xSrc`*<br/>
+*`xSrc`*\
 Specifies the x-coordinate, in logical units, of the source rectangle.
 
-*`ySrc`*<br/>
+*`ySrc`*\
 Specifies the y-coordinate, in logical units, of the source rectangle.
 
-*`nSrcWidth`*<br/>
+*`nSrcWidth`*\
 Specifies the width, in logical units, of the source rectangle.
 
-*`nSrcHeight`*<br/>
+*`nSrcHeight`*\
 Specifies the height, in logical units, of the source rectangle.
 
-*`clrTransparent`*<br/>
+*`clrTransparent`*\
 The RGB color in the source bitmap to treat as transparent.
 
 ### Return Value
@@ -6656,9 +6657,9 @@ This function is successful only if the current pen is a geometric pen created b
 
 ## See also
 
-[`CObject` Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[`CPaintDC` Class](../../mfc/reference/cpaintdc-class.md)<br/>
-[`CWindowDC` Class](../../mfc/reference/cwindowdc-class.md)<br/>
-[`CClientDC` Class](../../mfc/reference/cclientdc-class.md)<br/>
+[`CObject` Class](../../mfc/reference/cobject-class.md)\
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
+[`CPaintDC` Class](../../mfc/reference/cpaintdc-class.md)\
+[`CWindowDC` Class](../../mfc/reference/cwindowdc-class.md)\
+[`CClientDC` Class](../../mfc/reference/cclientdc-class.md)\
 [`CMetaFileDC` Class](../../mfc/reference/cmetafiledc-class.md)
