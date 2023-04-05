@@ -522,7 +522,7 @@ Reference-type variables can be declared without initializers only in the follow
 
 When initializing a reference-type variable, the compiler uses the decision graph shown in the following figure to select between creating a reference to an object or creating a temporary object to which the reference points.
 
-::image type="complex" source="../cpp/media/vc38s71.gif" alt-text="Decision graph for initialization of reference types.":::
+:::image type="complex" source="../cpp/media/vc38s71.gif" alt-text="Decision graph for initialization of reference types.":::
 The decision graph begins with: is the initializer an lvalue of the same type or a type derived from the type of reference? If yes, the reference refers to the object specified in the initializer. If no, the next decision is whether the reference-type variable is a const T reference being initialized and can the initializer be implicitly converted to a T? If yes, the temporary is created and the reference variable becomes a name for that temporary. If no, it's an error.
 :::image-end:::
 Decision graph for initialization of reference types
