@@ -3,7 +3,6 @@ description: "Learn more about: Standard conversions"
 title: "Standard conversions"
 ms.date: "10/02/2019"
 helpviewer_keywords: ["standard conversions, categories of", "L-values [C++]", "conversions, standard"]
-ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
 ---
 # Standard conversions
 
@@ -181,7 +180,9 @@ The first case is when the specified base class is accessible and the conversion
 
 Whether a base class is accessible depends on the kind of inheritance used in derivation. Consider the inheritance illustrated in the following figure.
 
-![Inheritance graph showing base class accessibility.](../cpp/media/vc38xa1.gif)<br/>
+:::image type="complex" source="../cpp/media/vc38xt1.gif" alt-text="Diagram showing an inheritance graph and base class accessibility.":::
+The diagram shows base class A. Class B inherits from A using private protected public. Finally, class C inherits from B with public B.
+:::image-end:::
 Inheritance Graph for Illustration of Base-Class Accessibility
 
 The following table shows the base-class accessibility for the situation illustrated in the figure.

@@ -3,7 +3,6 @@ description: "Learn more about: Multiple Base Classes"
 title: "Multiple Base Classes"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["base classes [C++], multiple", "derived classes [C++], multiple bases", "multiple inheritance, class declaration", "multiple base classes [C++]"]
-ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
 ---
 # Multiple Base Classes
 
@@ -43,12 +42,16 @@ When declaring a virtual base class, the **`virtual`** keyword appears in the ba
 
 Consider the class hierarchy in the following figure, which illustrates a simulated lunch line.
 
-![Graph of simulated lunch line.](../cpp/media/vc38xp1.gif "Graph of simulated lunch line") <br/>
+:::image type="complex" source="../cpp/media/vc38xp1.gif" alt-text="Diagram of a simulated lunch line.":::
+The base class in the hierarchy is Queue. Cashier Queue and Lunch Queue both inherit from Queue. Finally, Lunch Cashier Queue inherits from both Cashier Queue and Lunch Queue.
+:::image-end:::
 Simulated lunch-line graph
 
 In the figure, `Queue` is the base class for both `CashierQueue` and `LunchQueue`. However, when both classes are combined to form `LunchCashierQueue`, the following problem arises: the new class contains two subobjects of type `Queue`, one from `CashierQueue` and the other from `LunchQueue`. The following figure shows the conceptual memory layout (the actual memory layout might be optimized).
 
-![Simulated lunch line object.](../cpp/media/vc38xp2.gif) <br/>
+:::image type="complex" source="../cpp/media/vc38xp2.gif" alt-text="Diagram of a simulated lunch line object.":::
+The figure shows a Lunch Cashier Queue object with two subobjects in it: Cashier Queue and Lunch Queue. Both Cashier Queue an Lunch Queue show that they contain a Queue."
+:::image-end:::
 Simulated lunch-line object
 
 Note that there are two `Queue` subobjects in the `LunchCashierQueue` object. The following code declares `Queue` to be a virtual base class:
@@ -64,17 +67,23 @@ class LunchCashierQueue : public LunchQueue, public CashierQueue {};
 
 The **`virtual`** keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).
 
-![Diagram showing a simulated lunch line object, with virtual base classes.](../cpp/media/vc38xp3.gif)<br/>
+:::image type="complex" source="../cpp/media/vc38xp3.gif" alt-text="Diagram of a simulated lunch line object, with virtual base classes depicted.":::
+The diagram shows a lunch cashier queue object, which contains a queue subobject. The queue subobject contains two subobjects: a cashier queue subobject and a lunch queue subobject.
+:::image-end:::
 Simulated lunch-line object with virtual base classes
 
 A class can have both a virtual component and a nonvirtual component of a given type. This happens in the conditions illustrated in the following figure.
 
-![Diagram showing virtual and non virtual components of a class.](../cpp/media/vc38xp4.gif)<br/>
+:::image type="complex" source="../cpp/media/vc38xp4.gif" alt-text="Diagram of virtual and non virtual components of a class.":::
+The diagram starts with the queue base class. A cashier queue class and lunch queue class inherit virtually from Queue. A third class, takeout queue, inherits non virtually from queue. The next level down, lunch cashier queue inherits from both cashier queue and lunch queue. The next level down, lunch takeout cashier queue inherits from both lunch cashier queue and takeout queue.
+:::image-end:::
 Virtual and non-virtual components of the same class
 
 In the figure, `CashierQueue` and `LunchQueue` use `Queue` as a virtual base class. However, `TakeoutQueue` specifies `Queue` as a base class, not a virtual base class. Therefore, `LunchTakeoutCashierQueue` has two subobjects of type `Queue`: one from the inheritance path that includes `LunchCashierQueue` and one from the path that includes `TakeoutQueue`. This is illustrated in the following figure.
 
-![Diagram showing virtual and non virtual inheritance in object layout.](../cpp/media/vc38xp5.gif)<br/>
+:::image type="complex" source="../cpp/media/vc38xp5.gif" alt-text="Diagram of the object layout for virtual and non virtual inheritance.":::
+A lunch takeout cashier queue object is shown with two subobjects: Takeout queue, which contains a queue subobject, and lunch cashier queue. Lunch cashier queue contains a lunch cashier queue subobject, which in turn contains a queue subobject, which in turn contains two subobjects: cashier queue and lunch queue.
+:::image-end:::
 Object layout with virtual and non-virtual inheritance
 
 > [!NOTE]
@@ -183,7 +192,9 @@ Explicit and implicit conversions from pointers or references to class types can
 
 - The effect of explicitly converting the pointer obtained using the address-of operator to the base-class type `A`. Note that coercing the address of the object to type `A*` does not always provide the compiler with enough information as to which subobject of type `A` to select; in this case, two subobjects exist.
 
-![Diagram showing ambiguous conversion of pointers to base classes.](../cpp/media/vc38xt1.gif "Ambiguous conversion of pointers to base classes") <br/>
+:::image type="complex" source="../cpp/media/vc38xt1.gif" alt-text="Diagram showing ambiguous conversion of pointers to base classes.":::
+The diagram first shows the inheritance hierarchy: A is the base class. B and C inherit from A. D inherits from B and C. Then, the memory layout is shown for object D. There are three subobjects in D: B, which includes subobject A; C, which includes a subobject A. The code & d points to the A in subobject B. The code ( * A ) & d points to both subobject B and the A in subobject C.
+:::image-end:::
 Ambiguous conversion of pointers to base classes
 
 The conversion to type `A*` (pointer to `A`) is ambiguous because there is no way to discern which subobject of type `A` is the correct one. Note that you can avoid the ambiguity by explicitly specifying which subobject you mean to use, as follows:
@@ -199,7 +210,9 @@ If virtual base classes are used, functions, objects, types, and enumerators can
 
 The following figure shows how objects are composed using virtual and nonvirtual inheritance.
 
-![Diagram showing virtual derivation and nonvirtual derivation.](../cpp/media/vc38xr1.gif)<br/>
+:::image type="complex" source="../cpp/media/vc38xr1.gif" alt-text="[Diagram showing virtual derivation and nonvirtual derivation.":::
+The diagram first shows the inheritance hierarchy: A is the base class. B and C inherit from A. D inherits from B and C. Then, the layout of D if composed using virtual inheritance is shown as containing two subobjects, B and C which both share a subobject A. Then the layout is shown if D is composed using nonvirtual inheritance. In that view, D contains the subobjects B and C. Both B and C contain their own copy of the subobject A.
+:::image-end:::
 Virtual and non-virtual derivation
 
 In the figure, accessing any member of class `A` through nonvirtual base classes causes an ambiguity; the compiler has no information that explains whether to use the subobject associated with `B` or the subobject associated with `C`. However, when `A` is specified as a virtual base class, there is no question which subobject is being accessed.

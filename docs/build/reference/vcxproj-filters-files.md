@@ -6,9 +6,11 @@ helpviewer_keywords: ["vcxproj.filters", "filters file [C++]"]
 ---
 # vcxproj.filters files
 
-The *filters* file (\*.vcxproj.filters) is an XML file in MSBuild format that is located in the root project folder. It specifies which file types go into which logical folder in **Solution Explorer**. In the following illustration, the *.cpp* files are under the **Source Files** node. the *.h* files are under the **Header Files** node, and *.ico* and *.rc* files are under **Resource Files**. This placement is controlled by the filters file.
+The *filters* file (`*.vcxproj.filters`) is an XML file in MSBuild format that is located in the root project folder. It specifies which file types go into which logical folder in **Solution Explorer**. In the following illustration, the *.cpp* files are under the **Source Files** node. the *.h* files are under the **Header Files** node, and *.ico* and *.rc* files are under **Resource Files**. This placement is controlled by the filters file.
 
-![Screenshot of the Logical folders view in Solution Explorer.](media/solution-explorer-filters.png)
+:::image type="complex" source="media/solution-explorer-filters.png" alt-text="Screenshot of the Logical folders view in Solution Explorer.":::
+The solution explorer is shown with callouts for the nodes for the header files which contains files like MFCApplication1.h, the resource files which contains files like MFCApplication1.ico, and the source files, which contains files like MFCApplication1.cpp.
+:::image-end:::
 
 ## Creating a custom filters file
 

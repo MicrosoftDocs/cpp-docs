@@ -4,7 +4,6 @@ description: "The Microsoft C++ reference to the __try and __finally structured 
 ms.date: 08/25/2020
 f1_keywords: ["__try", "_try", "__leave_cpp", "__leave", "__finally_cpp", "__try_cpp", "__finally", "_finally"]
 helpviewer_keywords: ["__try keyword [C++]", "__finally keyword [C++]", "__leave keyword [C++]", "try-catch keyword [C++], try-finally keyword", "try-finally keyword [C++]", "__finally keyword [C++], try-finally statement syntax", "__leave keyword [C++], try-finally statement", "structured exception handling [C++], try-finally"]
-ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
 ---
 # `try-finally` statement
 
@@ -51,7 +50,10 @@ If an exception occurs in the **`__try`** block, the operating system must find 
 
 For example, suppose a series of function calls links function A to function D, as shown in the following figure. Each function has one termination handler. If an exception is raised in function D and handled in A, the termination handlers are called in this order as the system unwinds the stack: D, C, B.
 
-![Diagram of the order of termination handler execution.](../cpp/media/vc38cx1.gif)<br/>
+:::image type="complex" source="../cpp/media/vc38cx1.gif" alt-text="Diagram of the order of termination handler execution.":::
+The diagram starts with function A which calls B which alls C which calls D. Function D raises an exception. The order of termination handlers are then called in this order: D's termination handler, then C's, then B's, and then the exception is handled by A.
+:::image-end:::
+
 Order of Termination-Handler Execution
 
 > [!NOTE]
