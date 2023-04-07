@@ -178,9 +178,9 @@ There are two cases in which a pointer to a class can be converted to a pointer 
 
 The first case is when the specified base class is accessible and the conversion is unambiguous. For more information about ambiguous base-class references, see [Multiple base classes](../cpp/multiple-base-classes.md).
 
-Whether a base class is accessible depends on the kind of inheritance used in derivation. Consider the inheritance illustrated in the following figure.
+Whether a base class is accessible depends on the kind of inheritance used in derivation. Consider the inheritance illustrated in the following figure:
 
-:::image type="complex" source="../cpp/media/vc38xt1.gif" alt-text="Diagram showing an inheritance graph and base class accessibility.":::
+:::image type="complex" source="../cpp/media/vc38xa1.gif" alt-text="Diagram showing an inheritance graph and base class accessibility.":::
 The diagram shows base class A. Class B inherits from A via private protected public. Class C inherits from B via public B.
 :::image-end:::
 *Inheritance graph illustrating base-class accessibility*

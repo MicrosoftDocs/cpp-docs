@@ -22,7 +22,7 @@ To access the **VC++ Directories** property page:
 VC++ Directories properties apply to a project, not the top-level solution node. If you don't see **VC++ Directories** under **Configuration Properties**, select a C++ project node in the **Solution Explorer** window:
 
 :::image type="complex" source="../media/vcppdir.png" alt-text="Screenshot of the Solution Explorer window with the Project node selected.":::
-In the property pages dialog, Configuration properties > VC++ directories is selected, which lists the various C++ directories such as: executable directories, include directories, library directories, source directories, and so on.
+In the property pages dialog, Configuration properties > VC++ directories is selected. The various C++ directories are listed, such as: executable directories, include directories, library directories, source directories, and so on.
 :::image-end:::
 
 The **VC++ Directories** property page for cross-platform projects looks different. For information specific to Linux C++ projects, see [VC++ Directories (Linux C++)](../../linux/prop-pages/directories-linux.md).
