@@ -242,7 +242,7 @@ A pointer to a function can be converted to type `void *`, if type `void *` is l
 
 Pointers to type **`void`** can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). A pointer to any type can be converted implicitly to a pointer to type **`void`**. A pointer to an incomplete object of a type can be converted to a pointer to **`void`** (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it's declared, but there's insufficient information available to determine its size or base class.
 
-A pointer to any object that is not **`const`** or **`volatile`** can be implicitly converted to a pointer of type `void *`.
+A pointer to any object that isn't **`const`** or **`volatile`** can be implicitly converted to a pointer of type `void *`.
 
 ### const and volatile pointers
 
@@ -292,7 +292,7 @@ A pointer to a member of a base class can be converted to a pointer to a member 
 
 - The inverse conversion, from pointer to derived class to base-class pointer, is accessible.
 
-- The derived class does not inherit virtually from the base class.
+- The derived class doesn't inherit virtually from the base class.
 
 When the left operand is a pointer to member, the right operand must be of pointer-to-member type or be a constant expression that evaluates to 0. This assignment is valid only in the following cases:
 
