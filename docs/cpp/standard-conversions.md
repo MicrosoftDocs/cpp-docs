@@ -181,13 +181,13 @@ The first case is when the specified base class is accessible and the conversion
 Whether a base class is accessible depends on the kind of inheritance used in derivation. Consider the inheritance illustrated in the following figure.
 
 :::image type="complex" source="../cpp/media/vc38xt1.gif" alt-text="Diagram showing an inheritance graph and base class accessibility.":::
-The diagram shows base class A. Class B inherits from A using private protected public. Finally, class C inherits from B with public B.
+The diagram shows base class A. Class B inherits from A via private protected public. Class C inherits from B via public B.
 :::image-end:::
 *Inheritance graph illustrating base-class accessibility*
 
 The following table shows the base-class accessibility for the situation illustrated in the figure.
 
-|Type of Function|Derivation|Conversion from<br /><br /> B* to A\* Legal?|
+|Type of Function|Derivation|Conversion from<br /><br /> `B*` to `A*` legal?|
 |----------------------|----------------|-------------------------------------------|
 |External (not class-scoped) function|Private|No|
 ||Protected|No|
