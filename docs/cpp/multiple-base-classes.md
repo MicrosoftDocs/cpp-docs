@@ -21,7 +21,7 @@ class CollectionOfBook : public Book, public Collection {
 
 The order in which base classes are specified isn't significant except in certain cases where constructors and destructors are invoked. In these cases, the order in which base classes are specified affects the following:
 
-- The order in which initialization by constructor takes place. If your code relies on the `Book` portion of `CollectionOfBook` to be initialized before the `Collection` part, the order of specification is significant. Initialization takes place in the order the classes are specified in the *base-list*.
+- The order in which constructors are called. If your code relies on the `Book` portion of `CollectionOfBook` to be initialized before the `Collection` part, the order of specification is significant. Initialization takes place in the order the classes are specified in the *base-list*.
 
 - The order in which destructors are invoked to clean up. Again, if a particular "part" of the class must be present when the other part is being destroyed, the order is significant. Destructors are called in the reverse order of the classes specified in the *base-list*.
 
@@ -76,15 +76,14 @@ A class can have both a virtual component and a nonvirtual component of a given 
 
 :::image type="complex" source="../cpp/media/vc38xp4.gif" alt-text="Diagram of virtual and non virtual components of a class.":::
 The diagram starts with the queue base class. A cashier queue class and lunch queue class inherit virtually from Queue. A third class, takeout queue, inherits non virtually from queue. The next level down, lunch cashier queue inherits from both cashier queue and lunch queue. The next level down, lunch takeout cashier queue inherits from both lunch cashier queue and takeout queue.
-:::image-end:::
+:::image-end:::\
 *Virtual and nonvirtual components of the same class*
 
 In the figure, `CashierQueue` and `LunchQueue` use `Queue` as a virtual base class. However, `TakeoutQueue` specifies `Queue` as a base class, not a virtual base class. Therefore, `LunchTakeoutCashierQueue` has two subobjects of type `Queue`: one from the inheritance path that includes `LunchCashierQueue` and one from the path that includes `TakeoutQueue`. This is illustrated in the following figure.
 
 :::image type="complex" source="../cpp/media/vc38xp5.gif" alt-text="Diagram of the object layout for virtual and non virtual inheritance.":::
 A lunch takeout cashier queue object is shown with two subobjects: Takeout queue, which contains a queue subobject, and lunch cashier queue. Lunch cashier queue contains a lunch cashier queue subobject, which in turn contains a queue subobject, which in turn contains two subobjects: cashier queue and lunch queue.
-:::image-end:::
-*Object layout with virtual and nonvirtual inheritance*
+:::image-end::: *Object layout with virtual and nonvirtual inheritance*
 
 > [!NOTE]
 > Virtual inheritance provides significant size benefits when compared with nonvirtual inheritance. However, it can introduce extra processing overhead.
@@ -190,14 +189,14 @@ Explicit and implicit conversions from pointers or references to class types can
 
 - The effect of applying the address-of operator (**&**) to that object. The address-of operator always supplies the base address of the object.
 
-- The effect of explicitly converting the pointer obtained using the address-of operator to the base-class type `A`. Coercing the address of the object to type `A*` does not always provide the compiler with enough information as to which subobject of type `A` to select; in this case, two subobjects exist.
+- The effect of explicitly converting the pointer obtained using the address-of operator to the base-class type `A`. Coercing the address of the object to type `A*` doesn't always provide the compiler with enough information as to which subobject of type `A` to select; in this case, two subobjects exist.
 
 :::image type="complex" source="../cpp/media/vc38xt1.gif" alt-text="Diagram showing ambiguous conversion of pointers to base classes.":::
 The diagram first shows the inheritance hierarchy: A is the base class. B and C inherit from A. D inherits from B and C. Then, the memory layout is shown for object D. There are three subobjects in D: B, which includes subobject A; C, which includes a subobject A. The code & d points to the A in subobject B. The code ( * A ) & d points to both subobject B and the A in subobject C.
 :::image-end:::
 *Ambiguous conversion of pointers to base classes*
 
-The conversion to type `A*` (pointer to `A`) is ambiguous because there is no way to discern which subobject of type `A` is the correct one. You can avoid the ambiguity by explicitly specifying which subobject you mean to use, as follows:
+The conversion to type `A*` (pointer to `A`) is ambiguous because there's no way to discern which subobject of type `A` is the correct one. You can avoid the ambiguity by explicitly specifying which subobject you mean to use, as follows:
 
 ```cpp
 (A *)(B *)&d       // Use B subobject.
@@ -206,7 +205,7 @@ The conversion to type `A*` (pointer to `A`) is ambiguous because there is no wa
 
 ### Ambiguities and virtual base classes
 
-If virtual base classes are used, functions, objects, types, and enumerators can be reached through multiple-inheritance paths. Because there is only one instance of the base class, there is no ambiguity when accessing these names.
+If virtual base classes are used, functions, objects, types, and enumerators can be reached through multiple-inheritance paths. Because there's only one instance of the base class, there's no ambiguity when accessing these names.
 
 The following figure shows how objects are composed using virtual and nonvirtual inheritance.
 
@@ -215,7 +214,7 @@ The diagram first shows the inheritance hierarchy: A is the base class. B and C 
 :::image-end:::
 *Virtual and nonvirtual derivation*
 
-In the figure, accessing any member of class `A` through nonvirtual base classes causes an ambiguity; the compiler has no information that explains whether to use the subobject associated with `B` or the subobject associated with `C`. However, when `A` is specified as a virtual base class, there is no question which subobject is being accessed.
+In the figure, accessing any member of class `A` through nonvirtual base classes causes an ambiguity; the compiler has no information that explains whether to use the subobject associated with `B` or the subobject associated with `C`. However, when `A` is specified as a virtual base class, there's no question which subobject is being accessed.
 
 ## See also
 

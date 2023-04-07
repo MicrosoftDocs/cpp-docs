@@ -46,15 +46,14 @@ Control reaches a **`__try`** statement by simple sequential execution (fall thr
 
    A **`__finally`** statement doesn't block searching for an appropriate exception handler.
 
-If an exception occurs in the **`__try`** block, the operating system must find a handler for the exception or the program will fail. If a handler is found, any and all **`__finally`** blocks are executed and execution resumes in the handler.
+If an exception occurs in the **`__try`** block, the operating system must find a handler for the exception, or the program will fail. If a handler is found, any and all **`__finally`** blocks are executed and execution resumes in the handler.
 
 For example, suppose a series of function calls links function A to function D, as shown in the following figure. Each function has one termination handler. If an exception is raised in function D and handled in A, the termination handlers are called in this order as the system unwinds the stack: D, C, B.
 
 :::image type="complex" source="../cpp/media/vc38cx1.gif" alt-text="Diagram of the order of termination handler execution.":::
-The diagram starts with function A, which calls B, which calls C, which calls D. Function D raises an exception. The order of termination handlers are then called in this order: D's termination handler, then C's, then B's, and then A handles the exception.
+The diagram starts with function A, which calls B, which calls C, which calls D. Function D raises an exception. The termination handlers are then called in this order: D's termination handler, then C's, then B's, and then A handles the exception.
 :::image-end:::
-
-Order of Termination-Handler Execution
+*Order of Termination-Handler Execution*
 
 > [!NOTE]
 > The behavior of try-finally is different from some other languages that support the use of **`finally`**, such as C#.  A single **`__try`** may have either, but not both, of **`__finally`** and **`__except`**.  If both are to be used together, an outer try-except statement must enclose the inner try-finally statement.  The rules specifying when each block executes are also different.

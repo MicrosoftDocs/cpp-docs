@@ -51,7 +51,6 @@ As shown earlier, many of the inherited paths are provided as macros. To examine
 
 You can search for partial or complete matches of a macro in the edit box. The following screenshot shows all the macros that contain the string "WindowsSDK". It also shows the current path that each macro evaluates to:
 
-![]( "Dialog to edit macros")
 :::image type="complex" source="../media/vcppdir_libdir_macros.png" alt-text="Screenshot of the Library Directories dialog with the list of macro values displayed.":::
 The Library Directories dialog lists macros containing WindowsSDK such as $ ( Windows SDK _ Executable Path ), $ ( Windows SDK _ Include Path ), $ ( Windows SDK _ Library Path ), and more. There's an inherited values area that shows which macro values are inherited from a parent or project. There's an evaluated value area that shows the path values after all macros have been expanded. There's a checkbox, checked, that says Inherit from parent or project defaults. There's a macros button and an Insert, OK, and Cancel button.
 :::image-end:::

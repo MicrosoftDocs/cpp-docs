@@ -116,7 +116,7 @@ In the preceding example, `u` is an **`unsigned short`** integral object that mu
 
 ## Floating point conversions
 
-An object of a floating type can be safely converted to a more precise floating type — that is, the conversion causes no loss of significance. For example, conversions from **`float`** to **`double`** or from **`double`** to **`long double`** are safe, and the value is unchanged.
+An object of a floating type can be safely converted to a more precise floating type—that is, the conversion causes no loss of significance. For example, conversions from **`float`** to **`double`** or from **`double`** to **`long double`** are safe, and the value is unchanged.
 
 An object of a floating type can also be converted to a less precise type, if it's in a range representable by that type. (See [Floating Limits](../cpp/floating-limits.md) for the ranges of floating types.) If the original value isn't representable precisely, it can be converted to either the next higher or the next lower representable value. The result is undefined if no such value exists. Consider the following example:
 
@@ -124,7 +124,7 @@ An object of a floating type can also be converted to a less precise type, if it
 cout << (float)1E300 << endl;
 ```
 
-The maximum value representable by type **`float`** is 3.402823466E38 — a much smaller number than 1E300. Therefore, the number is converted to infinity, and the result is "inf".
+The maximum value representable by type **`float`** is 3.402823466E38 which is a much smaller number than 1E300. Therefore, the number is converted to infinity, and the result is "inf".
 
 ## Conversions between integral and floating point types
 
@@ -183,7 +183,7 @@ Whether a base class is accessible depends on the kind of inheritance used in de
 :::image type="complex" source="../cpp/media/vc38xt1.gif" alt-text="Diagram showing an inheritance graph and base class accessibility.":::
 The diagram shows base class A. Class B inherits from A using private protected public. Finally, class C inherits from B with public B.
 :::image-end:::
-Inheritance Graph for Illustration of Base-Class Accessibility
+*Inheritance graph illustrating base-class accessibility*
 
 The following table shows the base-class accessibility for the situation illustrated in the figure.
 
