@@ -42,7 +42,7 @@ Because the `_ASSERTE` macro specifies the failed expression, and `_ASSERT_EXPR`
 Unless you specify otherwise with the [`_CrtSetReportMode`](crtsetreportmode.md) and [`_CrtSetReportFile`](crtsetreportfile.md) functions, messages appear in a pop-up dialog box equivalent to setting:
 
 ```C
-_CrtSetReportMode(CRT_ASSERT, _CRTDBG_MODE_WNDW);
+_CrtSetReportMode(_CRT_ASSERT, _CRTDBG_MODE_WNDW);
 ```
 
 `_CrtDbgReportW` generates the debug report and determines its destination or destinations, based on the current report mode or modes and file defined for the `_CRT_ASSERT` report type. By default, assertion failures and errors are directed to a debug message window. The [`_CrtSetReportMode`](crtsetreportmode.md) and [`_CrtSetReportFile`](crtsetreportfile.md) functions are used to define the destinations for each report type.
