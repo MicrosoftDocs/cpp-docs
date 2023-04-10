@@ -1,7 +1,7 @@
 ---
 title: "Error: heap-use-after-free"
 description: "Source examples and live debug screenshots for heap use after free errors."
-ms.date: 03/02/2021
+ms.date: 04/06/2023
 f1_keywords: ["heap-use-after-free"]
 helpviewer_keywords: ["heap-use-after-free error", "AddressSanitizer error heap-use-after-free"]
 ---
@@ -35,9 +35,13 @@ cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
+When Visual Studio appears, press `F5` to run example 1.
+
 ### Resulting error
 
-:::image type="content" source="media/heap-use-after-free-example-1.png" alt-text="Screenshot of debugger displaying heap-use-after-free error in example 1.":::
+:::image type="complex" source="media/heap-use-after-free-example-1.png" alt-text="Screenshot of the debugger displaying use of deallocated memory error for example 1." border="true":::
+The exception thrown dialog points to line 11, return x [ 5 ], and says: Address Sanitizer Error Use of deallocated memory. Not shown in the screenshot is the output in the console window that shows memory addresses, and a key to identify addressable bytes, partially addressable bytes, freed heap regions, and heap left red zone bytes in the area of the error.
+:::image-end:::
 
 ## Example - `operator new`
 
@@ -64,9 +68,13 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
+When Visual Studio appears, press `F5` to run example 2.
+
 ### Resulting error - operator new
 
-:::image type="content" source="media/heap-use-after-free-example-2.png" alt-text="Screenshot of debugger displaying heap-use-after-free error in example 2.":::
+:::image type="complex" source="media/heap-use-after-free-example-2.png" alt-text="Screenshot of the debugger displaying use of deallocated memory error in example 2." border="true":::
+The exception thrown dialog points to line 11, buffer[0] = 42, and says: Address Sanitizer Error: Use of deallocated memory. Not shown in the screenshot is the output in the console window that shows memory addresses, and a key to identify addressable bytes, partially addressable bytes, freed heap regions, and heap left alloca red zone bytes in the area of the error.
+:::image-end:::
 
 ## Example - `realloc`
 
@@ -93,9 +101,13 @@ cl example3.cpp /fsanitize=address /Zi
 devenv /debugexe example3.exe
 ```
 
+When Visual Studio appears, press `F5` to run example 3.
+
 ### Resulting error - realloc
 
-:::image type="content" source="media/heap-use-after-free-example-3.png" alt-text="Screenshot of debugger displaying heap-use-after-free error in example 3.":::
+:::image type="complex" source="media/heap-use-after-free-example-3.png" alt-text="Screenshot of the debugger displaying use of deallocated memory error in example 3." border="true":::
+The exception thrown dialog points to line 11, buffer[0] = 42, and says: Address Sanitizer Error: Use of deallocated memory. Not shown in the screenshot is the output in the console window that shows memory addresses, and a key to identify addressable bytes, partially addressable bytes, freed heap regions, and heap left red zone bytes in the area of the error.
+:::image-end:::
 
 ## Example - volatile
 
@@ -122,9 +134,13 @@ cl example4.cpp /fsanitize=address /Zi
 devenv /debugexe example4.exe
 ```
 
+When Visual Studio appears, press `F5` to run example 4.
+
 ### Resulting error - volatile
 
-:::image type="content" source="media/heap-use-after-free-example-4.png" alt-text="Screenshot of debugger displaying error in example 4.":::
+:::image type="complex" source="media/heap-use-after-free-example-4.png" alt-text="Screenshot of the debugger displaying a use of deallocated memory error in example 4." border="true":::
+The exception thrown dialog points to line 12, *x = 42, and says: Address Sanitizer Error: Use of deallocated memory. Not shown in the screenshot is the output in the console window that shows memory addresses, and a key to identify addressable bytes, heap left red zone bytes, and some addressable and partially addressable bytes in the area of the error.
+:::image-end:::
 
 ## See also
 
