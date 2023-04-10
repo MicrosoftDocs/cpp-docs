@@ -3,7 +3,6 @@ description: "Learn more about: Standard conversions"
 title: "Standard conversions"
 ms.date: "10/02/2019"
 helpviewer_keywords: ["standard conversions, categories of", "L-values [C++]", "conversions, standard"]
-ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
 ---
 # Standard conversions
 
@@ -117,7 +116,7 @@ In the preceding example, `u` is an **`unsigned short`** integral object that mu
 
 ## Floating point conversions
 
-An object of a floating type can be safely converted to a more precise floating type — that is, the conversion causes no loss of significance. For example, conversions from **`float`** to **`double`** or from **`double`** to **`long double`** are safe, and the value is unchanged.
+An object of a floating type can be safely converted to a more precise floating type—that is, the conversion causes no loss of significance. For example, conversions from **`float`** to **`double`** or from **`double`** to **`long double`** are safe, and the value is unchanged.
 
 An object of a floating type can also be converted to a less precise type, if it's in a range representable by that type. (See [Floating Limits](../cpp/floating-limits.md) for the ranges of floating types.) If the original value isn't representable precisely, it can be converted to either the next higher or the next lower representable value. The result is undefined if no such value exists. Consider the following example:
 
@@ -125,7 +124,7 @@ An object of a floating type can also be converted to a less precise type, if it
 cout << (float)1E300 << endl;
 ```
 
-The maximum value representable by type **`float`** is 3.402823466E38 — a much smaller number than 1E300. Therefore, the number is converted to infinity, and the result is "inf".
+The maximum value representable by type **`float`** is 3.402823466E38 which is a much smaller number than 1E300. Therefore, the number is converted to infinity, and the result is "inf".
 
 ## Conversions between integral and floating point types
 
@@ -179,14 +178,16 @@ There are two cases in which a pointer to a class can be converted to a pointer 
 
 The first case is when the specified base class is accessible and the conversion is unambiguous. For more information about ambiguous base-class references, see [Multiple base classes](../cpp/multiple-base-classes.md).
 
-Whether a base class is accessible depends on the kind of inheritance used in derivation. Consider the inheritance illustrated in the following figure.
+Whether a base class is accessible depends on the kind of inheritance used in derivation. Consider the inheritance illustrated in the following figure:
 
-![Inheritance graph showing base class accessibility.](../cpp/media/vc38xa1.gif)<br/>
-Inheritance Graph for Illustration of Base-Class Accessibility
+:::image type="complex" source="../cpp/media/vc38xa1.gif" alt-text="Diagram showing an inheritance graph and base class accessibility.":::
+The diagram shows base class A. Class B inherits from A via private protected public. Class C inherits from B via public B.
+:::image-end:::
+*Inheritance graph illustrating base-class accessibility*
 
 The following table shows the base-class accessibility for the situation illustrated in the figure.
 
-|Type of Function|Derivation|Conversion from<br /><br /> B* to A\* Legal?|
+|Type of Function|Derivation|Conversion from<br /><br /> `B*` to `A*` legal?|
 |----------------------|----------------|-------------------------------------------|
 |External (not class-scoped) function|Private|No|
 ||Protected|No|
@@ -241,7 +242,7 @@ A pointer to a function can be converted to type `void *`, if type `void *` is l
 
 Pointers to type **`void`** can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). A pointer to any type can be converted implicitly to a pointer to type **`void`**. A pointer to an incomplete object of a type can be converted to a pointer to **`void`** (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it's declared, but there's insufficient information available to determine its size or base class.
 
-A pointer to any object that is not **`const`** or **`volatile`** can be implicitly converted to a pointer of type `void *`.
+A pointer to any object that isn't **`const`** or **`volatile`** can be implicitly converted to a pointer of type `void *`.
 
 ### const and volatile pointers
 
@@ -291,7 +292,7 @@ A pointer to a member of a base class can be converted to a pointer to a member 
 
 - The inverse conversion, from pointer to derived class to base-class pointer, is accessible.
 
-- The derived class does not inherit virtually from the base class.
+- The derived class doesn't inherit virtually from the base class.
 
 When the left operand is a pointer to member, the right operand must be of pointer-to-member type or be a constant expression that evaluates to 0. This assignment is valid only in the following cases:
 

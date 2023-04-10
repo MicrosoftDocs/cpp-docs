@@ -4,7 +4,6 @@ title: "VC++ Directories Property Page"
 ms.date: 02/17/2022
 f1_keywords: ["VC.Project.VCDirectories.IncludePath", "VC.Project.VCDirectories.ReferencePath", "VC.Project.VCDirectories.SourcePath", "VC.Project.VCDirectories.LibraryWPath", "VC.Project.VCDirectories.ExecutablePath", "VC.Project.VCDirectories.LibraryPath", "VS.ToolsOptionsPages.Projects.VCDirectories", "VC.Project.VCDirectories.ExcludePath", "VC.Project.VCDirectories.ExternalIncludePath", "VC.Project.VCConfiguration.PublicIncludeDirectories", "VC.Project.VCConfiguration.AllProjectIncludesArePublic", "VC.Project.VCConfiguration.PublicModuleDirectories", "VC.Project.VCConfiguration.AllProjectBMIsArePublic"]
 helpviewer_keywords: ["VC++ Directories Property Page"]
-ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
 ---
 # VC++ Directories Property Page (Windows)
 
@@ -22,7 +21,9 @@ To access the **VC++ Directories** property page:
 
 VC++ Directories properties apply to a project, not the top-level solution node. If you don't see **VC++ Directories** under **Configuration Properties**, select a C++ project node in the **Solution Explorer** window:
 
-![Screenshot of the Solution Explorer window with the Project node selected.](../media/vcppdir.png "Select the project node to see the VC++ Directories properties")
+:::image type="complex" source="../media/vcppdir.png" alt-text="Screenshot of the Solution Explorer window with the Project node selected.":::
+In the property pages dialog, Configuration properties > VC++ directories is selected. The various C++ directories are listed, such as: executable directories, include directories, library directories, source directories, and so on.
+:::image-end:::
 
 The **VC++ Directories** property page for cross-platform projects looks different. For information specific to Linux C++ projects, see [VC++ Directories (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
@@ -40,21 +41,25 @@ To view the values for any of the directories:
 
 You now see a dialog box like this:
 
-![Screenshot of the Library Directories dialog.](../media/vcppdir_libdir.png "Dialog to add or remove library paths")
+:::image type="complex" source="../media/vcppdir_libdir.png" alt-text="Screenshot of the Library Directories dialog.":::
+The library directories dialog has a library directories area and an evaluated value area that shows the path values after all macros have been expanded. There's an inherited values area that shows the macro values inherited from the parent or the project. There's a checkbox, checked, that says Inherit from parent or project defaults. There's a macros button and an OK and Cancel button.
+:::image-end:::
 
 Use this dialog to view the current directories. However, if you want to change or add a directory, it's better to use **Property Manager** to create a property sheet or modify the default user property sheet. For more information, see [Share or reuse Visual Studio C++ project settings](../create-reusable-property-configurations.md).
 
-As shown above, many of the inherited paths are given as macros.  To examine the current value of a macro, choose the **Macros** button in the lower right corner of the dialog box. Many macros depend on the configuration type. A macro in a debug build might evaluate to a different path than the same macro in a release build.
+As shown earlier, many of the inherited paths are provided as macros. To examine the current value of a macro, choose the **Macros** button in the lower right corner of the dialog box. Many macros depend on the configuration type. A macro in a debug build might evaluate to a different path than the same macro in a release build, for example. For information about examining macros values, see [Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md).
 
-You can search for partial or complete matches in the edit box. The following illustration shows all the macros that contain the string "WindowsSDK". It also shows the current path that each macro evaluates to:
+You can search for partial or complete matches of a macro in the edit box. The following screenshot shows all the macros that contain the string "WindowsSDK". It also shows the current path that each macro evaluates to:
 
-![Screenshot of the Library Directories dialog with the list of macro values displayed.](../media/vcppdir_libdir_macros.png "Dialog to edit macros")
+:::image type="complex" source="../media/vcppdir_libdir_macros.png" alt-text="Screenshot of the Library Directories dialog with the list of macro values displayed.":::
+The Library Directories dialog is shown, and a filtered list of macros. Results include macros that contain the string "WindowsSDK", such as $ ( Windows SDK _ Executable Path ), $ ( Windows SDK _ Include Path ), $ ( Windows SDK _ Library Path ), and more. There's an inherited values area that shows which macro values are inherited from a parent or project. There's an evaluated value area that shows the path values after all macros have been expanded. There's a checkbox, checked, that says Inherit from parent or project defaults. There's a macros button and an Insert, OK, and Cancel button.
+:::image-end:::
 
 This list is populated as you type. Don't press **Enter**.
 
 For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-For a list of commonly used macros, see [Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md).
+For information about examining the values of the macros, see [Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md). That topic also lists commonly used macros.
 
 You can define your own macros in two ways:
 
