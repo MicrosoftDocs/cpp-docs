@@ -138,9 +138,9 @@ The Microsoft-specific `[[msvc::intrinsic]]` attribute tells the compiler to inl
 
 The `[[msvc::intrinsic]]` attribute has three constraints on the function it's applied to:
 
-1. The function can't be recursive; its body must only have a return statement with a cast.
-1. The function can only accept a single parameter.
-1. The **`/permissive-`** compiler option is required. (The **`/std:c++20`** and later options imply **`/permissive-`** by default.)
+- The function can't be recursive; its body must only have a return statement with a cast.
+- The function can only accept a single parameter.
+- The **`/permissive-`** compiler option is required. (The **`/std:c++20`** and later options imply **`/permissive-`** by default.)
 
 #### Example
 
