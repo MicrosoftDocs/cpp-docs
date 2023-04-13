@@ -136,7 +136,7 @@ The first call to `foo`, and both calls to `bar`, are treated as if they were de
 
 The Microsoft-specific `[[msvc::intrinsic]]` attribute tells the compiler to inline a metafunction that acts as a named cast from the parameter type to the return type. When the attribute is present on a function definition, the compiler replaces all calls to that function with a simple cast. The `[[msvc::intrinsic]]` attribute is available in Visual Studio 2022 version 17.5 preview 2 and later versions. This attribute applies only to the specific function that follows it.
 
-The `[[msvc::intrinsic]]` attribute has two constraints on the function it's applied to:
+The `[[msvc::intrinsic]]` attribute has three constraints on the function it's applied to:
 
 1. The function can't be recursive; its body must only have a return statement with a cast.
 1. The function can only accept a single parameter.
