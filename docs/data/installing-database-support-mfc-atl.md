@@ -8,7 +8,7 @@ ms.custom: intro-installation
 ---
 # Installing Database Support (MFC/ATL)
 
-Visual C++ does not include any database products. To
+Visual C++ does not include any database products.
 
 ## See also
 
