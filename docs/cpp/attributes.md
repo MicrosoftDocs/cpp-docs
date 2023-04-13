@@ -37,7 +37,7 @@ The `[[carries_dependency]]` attribute specifies that the function propagates da
 
 ### `[[deprecated]]`
 
-**Visual Studio 2015 and later:** The `[[deprecated]]` attribute specifies that a function isn't intended for use. Or, that it might not exist in future versions of a library interface. The `[[deprecated]]` attribute can be applied to declaration of a class, a typedef-name, a variable, a non-static data member, a function, a namespace, an enumeration, an enumerator, or a template specialization. The compiler can use this attribute to generate an informational message when client code attempts to call the function. When the Microsoft C++ compiler detects the use of a `[[deprecated]]` item, it raises compiler warning [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
+**Visual Studio 2015 and later:** The `[[deprecated]]` attribute specifies that a function isn't intended for use. Or, that it might not exist in future versions of a library interface. The `[[deprecated]]` attribute can be applied to declaration of a class, a typedef-name, a variable, a nonstatic data member, a function, a namespace, an enumeration, an enumerator, or a template specialization. The compiler can use this attribute to generate an informational message when client code attempts to call the function. When the Microsoft C++ compiler detects the use of a `[[deprecated]]` item, it raises compiler warning [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
 
 ### `[[fallthrough]]`
 
@@ -49,7 +49,7 @@ The `[[carries_dependency]]` attribute specifies that the function propagates da
 
 ### `[[maybe_unused]]`
 
-**Visual Studio 2017 version 15.3 and later:** (Available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and later.) The `[[maybe_unused]]` attribute specifies that a variable, function, class, typedef, non-static data member, enum, or template specialization may be intentionally unused. The compiler doesn't warn when an entity marked `[[maybe_unused]]` isn't used. An entity that's declared without the attribute can later be redeclared with the attribute and vice-versa. An entity is considered *marked* after its first declaration that's marked `[[maybe_unused]]` gets analyzed, and for the rest of the current translation unit.
+**Visual Studio 2017 version 15.3 and later:** (Available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and later.) The `[[maybe_unused]]` attribute specifies that a variable, function, class, typedef, nonstatic data member, enum, or template specialization may be intentionally unused. The compiler doesn't warn when an entity marked `[[maybe_unused]]` isn't used. An entity that's declared without the attribute can later be redeclared with the attribute and vice-versa. An entity is considered *marked* after its first declaration that's marked `[[maybe_unused]]` gets analyzed, and for the rest of the current translation unit.
 
 ### `[[nodiscard]]`
 
@@ -105,7 +105,7 @@ The first two warnings fire when you compile this code with the CppCoreCheck cod
 
 ### `[[msvc::flatten]]`
 
-The Microsoft-specific attribute `[[msvc::flatten]]` is very similar to `[[msvc::forceinline_calls]]`, and can be used in the same places and in the same way. The difference is that `[[msvc::flatten]]` will `[[msvc::forceinline_calls]]` all calls in the scope it is applied to recursively, until no calls are left. This may have consequences for the resulting code size growth of the function or the throughput of the compiler, which you must manage manually.
+The Microsoft-specific attribute `[[msvc::flatten]]` is very similar to `[[msvc::forceinline_calls]]`, and can be used in the same places and in the same way. The difference is that `[[msvc::flatten]]` will `[[msvc::forceinline_calls]]` all calls in the scope it's applied to recursively, until no calls are left. This may have consequences for the resulting code size growth of the function or the throughput of the compiler, which you must manage manually.
 
 ### `[[msvc::forceinline]]`
 
@@ -162,7 +162,7 @@ When placed before a function declaration, the Microsoft-specific attribute `[[m
 
 ### `[[msvc::noinline_calls]]`
 
-The Microsoft-specific attribute `[[msvc::noinline_calls]]` has the same usage as `[[msvc::forceinline_calls]]`. It can be placed before any statement or block. Rather than force-inlining all calls in that block, it has the effect of turning off inlining for the scope it is applied to.
+The Microsoft-specific attribute `[[msvc::noinline_calls]]` has the same usage as `[[msvc::forceinline_calls]]`. It can be placed before any statement or block. Rather than force-inlining all calls in that block, it has the effect of turning off inlining for the scope it's applied to.
 
 ### `[[msvc::no_tls_guard]]`
 
