@@ -18,7 +18,7 @@ The descriptions of the algorithm function templates employ several shorthand ph
 
 - The phrase "the lowest value of *N* in the range \[*A*, *B*) such that *X*" means that the condition *X* is determined for each *N* in the range \[*A*, *B*) until the condition *X* is met.
 
-- The phrase "the highest value of *N* in the range \[*A*, *B*) such that *X* means that *X* is determined for each *N* in the range \[*A*, *B*). The function stores in *K* a copy of *N* each time the condition *X* is met. If any such store occurs, the function replaces the final value of *N*, which equals *B*, with the value of *K*. For a bidirectional or random-access iterator, however, it can also mean that *N* begins with the highest value in the range and is decremented over the range until the condition *X* is met.
+- The phrase "the highest value of *N* in the range \[*A*, *B*) such that *X*" means that *X* is determined for each *N* in the range \[*A*, *B*). The function stores in *K* a copy of *N* each time the condition *X* is met. If any such store occurs, the function replaces the final value of *N*, which equals *B*, with the value of *K*. For a bidirectional or random-access iterator, however, it can also mean that *N* begins with the highest value in the range and is decremented over the range until the condition *X* is met.
 
 - Expressions such as *X* - *Y*, where *X* and *Y* can be iterators other than random-access iterators, are intended in the mathematical sense. The function doesn't necessarily evaluate operator **-** if it must determine such a value. The same is also true for expressions such as *X* + *N* and *X* - *N*, where *N* is an integer type.
 

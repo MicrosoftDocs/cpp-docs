@@ -142,7 +142,7 @@ In general, elements inserted into a C++ Standard Library container can be of ju
 
 The destructor isn't permitted to throw an exception.
 
-Ordered associative containers—described earlier in this article—must have a public comparison operator defined. (By default, the operator is `operator<`, but even types that don't work with `operator<` are supported.
+Ordered associative containers—described earlier in this article—must have a public comparison operator defined. By default, the operator is `operator<`, but even types that don't work with `operator<` are supported.
 
 Some operations on containers might also require a public default constructor and a public equivalence operator. For example, the unordered associative containers require support for equality and hashing.
 
