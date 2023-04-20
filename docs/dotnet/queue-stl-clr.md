@@ -10,7 +10,7 @@ helpviewer_keywords: ["<queue> header [STL/CLR]", "queue class [STL/CLR]", "<cli
 
 The template class describes an object that controls a varying length sequence of elements that has first-in first-out access. Use the container adapter `queue` to manage an underlying container as a queue.
 
-In the description below, `GValue` is the same as *`Value`* unless the latter is a ref type, in which case it's `Value^`. Similarly, `GContainer` is the same as *`Container`* unless the latter is a ref type, in which case it's `Container^`.
+In the following description, `GValue` is the same as *`Value`* unless the latter is a ref type, in which case it's `Value^`. Similarly, `GContainer` is the same as *`Container`* unless the latter is a ref type, in which case it's `Container^`.
 
 ## Syntax
 
@@ -162,7 +162,7 @@ reference back();
 
 ### Remarks
 
-The member function returns a reference to the last element of the controlled sequence, which must be non-empty. You use it to access the last element, when you know one exists.
+The member function returns a reference to the last element of the controlled sequence, which must be nonempty. You use it to access the last element, when you know one exists.
 
 ### Example
 
@@ -215,7 +215,7 @@ property value_type back_item;
 
 ### Remarks
 
-The property accesses the last element of the controlled sequence, which must be non-empty. You use it to read or write the last element, when you know one exists.
+The property accesses the last element of the controlled sequence, which must be nonempty. You use it to read or write the last element, when you know one exists.
 
 ### Example
 
@@ -470,7 +470,7 @@ reference front();
 
 ### Remarks
 
-The member function returns a reference to the first element of the controlled sequence, which must be non-empty. You use it to access the first element, when you know one exists.
+The member function returns a reference to the first element of the controlled sequence, which must be nonempty. You use it to access the first element, when you know one exists.
 
 ### Example
 
@@ -523,7 +523,7 @@ property value_type front_item;
 
 ### Remarks
 
-The property accesses the first element of the controlled sequence, which must be non-empty. You use it to read or write the first element, when you know one exists.
+The property accesses the first element of the controlled sequence, which must be nonempty. You use it to read or write the first element, when you know one exists.
 
 ### Example
 
@@ -796,7 +796,7 @@ void pop();
 
 ### Remarks
 
-Removes the first element of the controlled sequence, which must be non-empty.
+Removes the first element of the controlled sequence, which must be nonempty.
 
 ### Example
 
