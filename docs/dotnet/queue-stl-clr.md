@@ -1,15 +1,14 @@
 ---
 description: "Learn more about: queue (STL/CLR)"
 title: "queue (STL/CLR)"
-ms.date: "11/04/2016"
+ms.date: "4/20/2023"
 ms.topic: "reference"
 f1_keywords: ["cliext::queue", "cliext::queue::assign", "cliext::queue::back", "cliext::queue::back_item", "cliext::queue::const_reference", "cliext::queue::container_type", "cliext::queue::difference_type", "cliext::queue::empty", "cliext::queue::front", "cliext::queue::front_item", "cliext::queue::generic_container", "cliext::queue::generic_value", "cliext::queue::get_container", "cliext::queue::operator=", "cliext::queue::pop", "cliext::queue::push", "cliext::queue::queue", "cliext::queue::reference", "cliext::queue::size", "cliext::queue::size_type", "cliext::queue::to_array", "cliext::queue::value_type"]
 helpviewer_keywords: ["<queue> header [STL/CLR]", "queue class [STL/CLR]", "<cliext/queue> header [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> member [STL/CLR]", "operator>= member [STL/CLR]", "assign member [STL/CLR]", "back member [STL/CLR]", "back_item member [STL/CLR]", "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "front member [STL/CLR]", "front_item member [STL/CLR]", "generic_container member [STL/CLR]", "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", "push member [STL/CLR]", "queue member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "to_array member [STL/CLR]", "value_type member [STL/CLR]"]
-ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
 ---
 # `queue` (STL/CLR)
 
-The template class describes an object that controls a varying-length sequence of elements that has first-in first-out access. You use the container adapter `queue` to manage an underlying container as a queue.
+The template class describes an object that controls a varying length sequence of elements that has first-in first-out access. Use the container adapter `queue` to manage an underlying container as a queue.
 
 In the description below, `GValue` is the same as *`Value`* unless the latter is a ref type, in which case it's `Value^`. Similarly, `GContainer` is the same as *`Container`* unless the latter is a ref type, in which case it's `Container^`.
 
@@ -35,9 +34,12 @@ The type of the underlying container.
 
 ## Requirements
 
-**Header:** \<cliext/queue>
+**Header:** `<cliext/queue>`
 
 **Namespace:** `cliext`
+
+> [!IMPORTANT]
+> To compile the examples in this topic, ensure that you have installed C++/CLI support as described in [Install C++/CLI support in Visual Studio 2022](dotnet-programming-with-cpp-cli-visual-cpp.md#install-ccli-support-in-visual-studio-2022). For the project type, create a *CLR Console app (.NET Framework)*.
 
 ## Declarations
 
@@ -117,29 +119,30 @@ The member function assigns `right.get_container()` to the underlying container.
 ```cpp
 // cliext_queue_assign.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// assign a repetition of values
+    // assign a repetition of values
     Myqueue c2;
     c2.assign(c1);
     for each (wchar_t elem in c2.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -166,31 +169,32 @@ The member function returns a reference to the last element of the controlled se
 ```cpp
 // cliext_queue_back.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// inspect last item
+    // inspect last item
     System::Console::WriteLine("back() = {0}", c1.back());
 
-// alter last item and reinspect
+    // alter last item and reinspect
     c1.back() = L'x';
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -218,31 +222,32 @@ The property accesses the last element of the controlled sequence, which must be
 ```cpp
 // cliext_queue_back_item.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// inspect last item
+    // inspect last item
     System::Console::WriteLine("back_item = {0}", c1.back_item);
 
-// alter last item and reinspect
+    // alter last item and reinspect
     c1.back_item = L'x';
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -270,17 +275,18 @@ The type describes a constant reference to an element.
 ```cpp
 // cliext_queue_const_reference.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for (; !c1.empty(); c1.pop())
         {   // get a const reference to an element
         Myqueue::const_reference cref = c1.front();
@@ -288,7 +294,7 @@ int main()
         }
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -314,23 +320,24 @@ The type is a synonym for the template parameter `Container`.
 ```cpp
 // cliext_queue_container_type.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c" using container_type
+    // display contents "a b c" using container_type
     Myqueue::container_type wc1 = c1.get_container();
     for each (wchar_t elem in wc1)
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -356,29 +363,30 @@ The type describes a possibly negative element count.
 ```cpp
 // cliext_queue_difference_type.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// compute negative difference
+    // compute negative difference
     Myqueue::difference_type diff = c1.size();
     c1.push(L'd');
     c1.push(L'e');
     diff -= c1.size();
     System::Console::WriteLine("pushing 2 = {0}", diff);
 
-// compute positive difference
+    // compute positive difference
     diff = c1.size();
     c1.pop();
     c1.pop();
@@ -386,7 +394,7 @@ int main()
     diff -= c1.size();
     System::Console::WriteLine("popping 3 = {0}", diff);
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -414,31 +422,32 @@ The member function returns true for an empty controlled sequence. It's equivale
 ```cpp
 // cliext_queue_empty.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     System::Console::WriteLine("size() = {0}", c1.size());
     System::Console::WriteLine("empty() = {0}", c1.empty());
 
-// clear the container and reinspect
+    // clear the container and reinspect
     c1.pop();
     c1.pop();
     c1.pop();
     System::Console::WriteLine("size() = {0}", c1.size());
     System::Console::WriteLine("empty() = {0}", c1.empty());
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -468,31 +477,32 @@ The member function returns a reference to the first element of the controlled s
 ```cpp
 // cliext_queue_front.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// inspect first item
+    // inspect first item
     System::Console::WriteLine("front() = {0}", c1.front());
 
-// alter first item and reinspect
+    // alter first item and reinspect
     c1.front() = L'x';
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -520,31 +530,32 @@ The property accesses the first element of the controlled sequence, which must b
 ```cpp
 // cliext_queue_front_item.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// inspect last item
+    // inspect last item
     System::Console::WriteLine("front_item = {0}", c1.front_item);
 
-// alter last item and reinspect
+    // alter last item and reinspect
     c1.front_item = L'x';
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -573,40 +584,41 @@ The type describes the generic interface for this template container adapter cla
 ```cpp
 // cliext_queue_generic_container.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// construct a generic container
+    // construct a generic container
     Myqueue::generic_container^ gc1 = %c1;
     for each (wchar_t elem in gc1->get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// modify generic and display original
+    // modify generic and display original
     gc1->push(L'd');
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// modify original and display generic
+    // modify original and display generic
     c1.push(L'e');
     for each (wchar_t elem in gc1->get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -635,28 +647,29 @@ The type describes an object of type `GValue` that describes the stored element 
 ```cpp
 // cliext_queue_generic_value.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// get interface to container
+    // get interface to container
     Myqueue::generic_container^ gc1 = %c1;
     for each (wchar_t elem in gc1->get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// display in order using generic_value
+    // display in order using generic_value
     for (; !gc1->empty(); gc1->pop())
         {
         Myqueue::generic_value elem = gc1->front();
@@ -665,7 +678,7 @@ int main()
         }
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -693,22 +706,23 @@ The member function returns the underlying container. You use it to bypass the r
 ```cpp
 // cliext_queue_get_container.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -739,29 +753,30 @@ The member operator copies *`right`* to the object, then returns **`*this`**. Yo
 ```cpp
 // cliext_queue_operator_as.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// assign to a new container
+    // assign to a new container
     Myqueue c2;
     c2 = c1;
     for each (wchar_t elem in c2.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -771,7 +786,7 @@ a b c
 
 ## <a name="pop"></a> `queue::pop`
 
-Removes the last element.
+Removes the first element.
 
 ### Syntax
 
@@ -781,35 +796,36 @@ void pop();
 
 ### Remarks
 
-The member function removes the last element of the controlled sequence, which must be non-empty. You use it to shorten the `queue` by one element at the back.
+Removes the first element of the controlled sequence, which must be non-empty.
 
 ### Example
 
 ```cpp
 // cliext_queue_pop.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// pop an element and redisplay
+    // pop an element and redisplay
     c1.pop();
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -836,22 +852,23 @@ The member function adds an element with value `val` at the end of the queue. Yo
 ```cpp
 // cliext_queue_push.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -910,6 +927,7 @@ uses the existing container *`wrapped`* as the wrapped container. You use it to 
 ```cpp
 // cliext_queue_construct.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 #include <cliext/list>
 
@@ -917,31 +935,31 @@ typedef cliext::queue<wchar_t> Myqueue;
 typedef cliext::list<wchar_t> Mylist;
 typedef cliext::queue<wchar_t, Mylist> Myqueue_list;
 int main()
-    {
-// construct an empty container
+{
+    // construct an empty container
     Myqueue c1;
     System::Console::WriteLine("size() = {0}", c1.size());
 
-// construct from an underlying container
+    // construct from an underlying container
     Mylist v2(5, L'x');
     Myqueue_list c2(v2);
     for each (wchar_t elem in c2.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// construct by copying another container
+    // construct by copying another container
     Myqueue_list c3(c2);
     for each (wchar_t elem in c3.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// construct by copying another container through handle
+    // construct by copying another container through handle
     Myqueue_list c4(%c2);
     for each (wchar_t elem in c4.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -970,29 +988,30 @@ The type describes a reference to an element.
 ```cpp
 // cliext_queue_reference.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// modify back of queue and redisplay
+    // modify back of queue and redisplay
     Myqueue::reference ref = c1.back();
     ref = L'x';
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1019,32 +1038,33 @@ The member function returns the length of the controlled sequence. You use it to
 ```cpp
 // cliext_queue_size.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     System::Console::WriteLine("size() = {0} starting with 3", c1.size());
 
-// pop an item and reinspect
+    // pop an item and reinspect
     c1.pop();
     System::Console::WriteLine("size() = {0} after popping", c1.size());
 
-// add two elements and reinspect
+    // add two elements and reinspect
     c1.push(L'a');
     c1.push(L'b');
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1073,29 +1093,30 @@ The type describes a non-negative element count.
 ```cpp
 // cliext_queue_size_type.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display initial contents " a b c"
+    // display initial contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// compute positive difference
+    // compute positive difference
     Myqueue::size_type diff = c1.size();
     c1.pop();
     c1.pop();
     diff -= c1.size();
     System::Console::WriteLine("size difference = {0}", diff);
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1122,17 +1143,18 @@ The member function returns an array containing the controlled sequence. You use
 ```cpp
 // cliext_queue_to_array.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// copy the container and modify it
+    // copy the container and modify it
     cli::array<wchar_t>^ a1 = c1.to_array();
 
     c1.push(L'd');
@@ -1140,12 +1162,12 @@ int main()
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// display the earlier array copy
+    // display the earlier array copy
     for each (wchar_t elem in a1)
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1172,17 +1194,18 @@ The type is a synonym for the template parameter *`Value`*.
 ```cpp
 // cliext_queue_value_type.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display reversed contents " a b c" using value_type
+    // display reversed contents "a b c" using value_type
     for (; !c1.empty(); c1.pop())
         {   // store element in value_type object
         Myqueue::value_type val = c1.front();
@@ -1191,7 +1214,7 @@ int main()
         }
     System::Console::WriteLine();
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1228,28 +1251,29 @@ The operator function returns `!(left == right)`. You use it to test whether *`l
 ```cpp
 // cliext_queue_operator_ne.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// assign to a new container
+    // assign to a new container
     Myqueue c2;
     c2.push(L'a');
     c2.push(L'b');
     c2.push(L'd');
 
-// display contents " a b d"
+    // display contents "a b d"
     for each (wchar_t elem in c2.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
@@ -1259,7 +1283,7 @@ int main()
     System::Console::WriteLine("[a b c] != [a b d] is {0}",
         c1 != c2);
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1299,28 +1323,29 @@ The operator function returns true if, for the lowest position `i` for which `!(
 ```cpp
 // cliext_queue_operator_lt.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// assign to a new container
+    // assign to a new container
     Myqueue c2;
     c2.push(L'a');
     c2.push(L'b');
     c2.push(L'd');
 
-// display contents " a b d"
+    // display contents "a b d"
     for each (wchar_t elem in c2.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
@@ -1330,7 +1355,7 @@ int main()
     System::Console::WriteLine("[a b c] < [a b d] is {0}",
         c1 < c2);
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1370,28 +1395,29 @@ The operator function returns `!(right < left)`. You use it to test whether *`le
 ```cpp
 // cliext_queue_operator_le.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// assign to a new container
+    // assign to a new container
     Myqueue c2;
     c2.push(L'a');
     c2.push(L'b');
     c2.push(L'd');
 
-// display contents " a b d"
+/    / display contents "a b d"
     for each (wchar_t elem in c2.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
@@ -1401,7 +1427,7 @@ int main()
     System::Console::WriteLine("[a b d] <= [a b c] is {0}",
         c2 <= c1);
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1441,28 +1467,29 @@ The operator function returns true only if the sequences controlled by *`left`* 
 ```cpp
 // cliext_queue_operator_eq.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// assign to a new container
+    // assign to a new container
     Myqueue c2;
     c2.push(L'a');
     c2.push(L'b');
     c2.push(L'd');
 
-// display contents " a b d"
+    // display contents "a b d"
     for each (wchar_t elem in c2.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
@@ -1472,7 +1499,7 @@ int main()
     System::Console::WriteLine("[a b c] == [a b d] is {0}",
         c1 == c2);
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1512,28 +1539,29 @@ The operator function returns `right < left`. You use it to test whether *`left`
 ```cpp
 // cliext_queue_operator_gt.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// assign to a new container
+    // assign to a new container
     Myqueue c2;
     c2.push(L'a');
     c2.push(L'b');
     c2.push(L'd');
 
-// display contents " a b d"
+    // display contents "a b d"
     for each (wchar_t elem in c2.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
@@ -1543,7 +1571,7 @@ int main()
     System::Console::WriteLine("[a b d] > [a b c] is {0}",
         c2 > c1);
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1583,28 +1611,29 @@ The operator function returns `!(left < right)`. You use it to test whether *`le
 ```cpp
 // cliext_queue_operator_ge.cpp
 // compile with: /clr
+#include "pch.h"
 #include <cliext/queue>
 
 typedef cliext::queue<wchar_t> Myqueue;
 int main()
-    {
+{
     Myqueue c1;
     c1.push(L'a');
     c1.push(L'b');
     c1.push(L'c');
 
-// display contents " a b c"
+    // display contents "a b c"
     for each (wchar_t elem in c1.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
 
-// assign to a new container
+    // assign to a new container
     Myqueue c2;
     c2.push(L'a');
     c2.push(L'b');
     c2.push(L'd');
 
-// display contents " a b d"
+    // display contents "a b d"
     for each (wchar_t elem in c2.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();
@@ -1614,7 +1643,7 @@ int main()
     System::Console::WriteLine("[a b c] >= [a b d] is {0}",
         c1 >= c2);
     return (0);
-    }
+}
 ```
 
 ```Output
