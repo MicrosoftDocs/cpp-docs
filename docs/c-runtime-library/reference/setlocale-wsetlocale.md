@@ -1,7 +1,7 @@
 ---
 title: "setlocale, _wsetlocale"
 description: "Describes the Microsoft C runtime (CRT) library functions setlocale and _wsetlocale."
-ms.date: 05/05/2022
+ms.date: 4/20/2023
 api_name: ["_wsetlocale", "setlocale", "_o__wsetlocale", "_o_setlocale"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -21,6 +21,7 @@ char *setlocale(
    int category,
    const char *locale
 );
+
 wchar_t *_wsetlocale(
    int category,
    const wchar_t *locale
@@ -40,9 +41,17 @@ Locale specifier.
 If a valid *`locale`* and *`category`* are given, the functions return a pointer to the string associated with the specified *`locale`* and *`category`*.
 If the *`locale`*  argument is `NULL`, the functions return the current locale.
 
-If the *`locale`* or *`category`* isn't valid, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, each function sets `errno` to `EINVAL`, and returns `NULL`.
+If an invalid argument is passed to either function, the return value is `NULL`.
+The behavior for invalid arguments is as follows:
 
-The call
+|Function | Invalid parameter | Invalid handler invoked as described in [Parameter validation](../parameter-validation.md)| Sets `errno` |
+|---------|---------|---------|
+| `setlocale` | *`category`*  | yes | yes |
+| `setlocale` | *`locale`*  | no | no |
+| `_wsetlocale` | *`category`* | yes | yes |
+| `_wsetlocale` | *`locale`*  | no | no |
+
+The call:
 
 ```C
 setlocale( LC_ALL, "en-US" );
