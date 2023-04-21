@@ -1,7 +1,7 @@
 ---
 title: "setlocale, _wsetlocale"
 description: "Describes the Microsoft C runtime (CRT) library functions setlocale and _wsetlocale."
-ms.date: 05/05/2022
+ms.date: 4/20/2023
 api_name: ["_wsetlocale", "setlocale", "_o__wsetlocale", "_o_setlocale"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -21,6 +21,7 @@ char *setlocale(
    int category,
    const char *locale
 );
+
 wchar_t *_wsetlocale(
    int category,
    const wchar_t *locale
@@ -40,9 +41,17 @@ Locale specifier.
 If a valid *`locale`* and *`category`* are given, the functions return a pointer to the string associated with the specified *`locale`* and *`category`*.
 If the *`locale`*  argument is `NULL`, the functions return the current locale.
 
-If the *`locale`* or *`category`* isn't valid, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, each function sets `errno` to `EINVAL`, and returns `NULL`.
+If an invalid argument is passed to either function, the return value is `NULL`.
+The behavior for invalid arguments is as follows:
 
-The call
+|Function | Invalid parameter | Invalid handler invoked as described in [Parameter validation](../parameter-validation.md)| Sets `errno` |
+|---------|---------|---------|
+| `setlocale` | *`category`*  | yes | yes |
+| `setlocale` | *`locale`*  | no | no |
+| `_wsetlocale` | *`category`* | yes | yes |
+| `_wsetlocale` | *`locale`*  | no | no |
+
+The call:
 
 ```C
 setlocale( LC_ALL, "en-US" );
@@ -78,7 +87,7 @@ The *`category`* argument specifies the parts of a program's locale information 
 | `LC_COLLATE` | The `strcoll`, `_stricoll`, `wcscoll`, `_wcsicoll`, `strxfrm`, `_strncoll`, `_strnicoll`, `_wcsncoll`, `_wcsnicoll`, and `wcsxfrm` functions. |
 | `LC_CTYPE` | The character-handling functions (except `isdigit`, `isxdigit`, `mbstowcs`, and `mbtowc`, which are unaffected). |
 | `LC_MONETARY` | Monetary-formatting information returned by the `localeconv` function. |
-| `LC_NUMERIC` | Decimal-point character for the formatted output routines (such as `printf`), for the data-conversion routines, and for the non-monetary formatting information returned by `localeconv`. In addition to the decimal-point character, `LC_NUMERIC` sets the thousands separator and the grouping control string returned by [`localeconv`](localeconv.md). |
+| `LC_NUMERIC` | Decimal-point character for the formatted output routines (such as `printf`), for the data-conversion routines, and for the nonmonetary formatting information returned by `localeconv`. In addition to the decimal-point character, `LC_NUMERIC` sets the thousands separator and the grouping control string returned by [`localeconv`](localeconv.md). |
 | `LC_TIME` | The `strftime` and `wcsftime` functions. |
 
 This function validates the category parameter. If the category parameter isn't one of the values given in the previous table, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns `NULL`.
@@ -173,7 +182,7 @@ The function [`_configthreadlocale`](configthreadlocale.md) is used to control w
 
 ## UTF-8 support
 
-Starting in Windows 10 version 1803 (10.0.17134.0), the Universal C Runtime supports using a UTF-8 code page. The change means that `char` strings passed to C runtime functions can expect strings in the UTF-8 encoding. To enable UTF-8 mode, use `".UTF8"` as the code page when using **`setlocale`**. For example, `setlocale(LC_ALL, ".UTF8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
+Starting in Windows 10 version 1803 (10.0.17134.0), the Universal C Runtime supports using a UTF-8 code page. The change means that `char` strings passed to C runtime functions can expect strings in the UTF-8 encoding. To enable UTF-8 mode, use `".UTF8"` as the code page when using **`setlocale`**. For example, `setlocale(LC_ALL, ".UTF8")` uses the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
 
 The string to specify UTF-8 mode is:
 
@@ -192,7 +201,7 @@ The following examples show how to specify the UTF-8 string:
 
 After calling `setlocale(LC_ALL, ".UTF8")`, you may pass "😊" to `mbtowcs` and it will be properly translated to a `wchar_t` string. Previously, there wasn't a locale setting available to do this translation.
 
-UTF-8 mode is also enabled for functions that have historically translated `char` strings using the default Windows ANSI code page (ACP). For example, calling [`_mkdir("😊")`](../reference/mkdir-wmkdir.md) while using a UTF-8 code page will correctly produce a directory with that emoji as the folder name, instead of requiring the ACP to be changed to UTF-8 before running your program. Likewise, calling [`_getcwd()`](../reference/getcwd-wgetcwd.md) in that folder will return a UTF-8 encoded string. For compatibility, the ACP is still used if the C locale code page isn't set to UTF-8.
+UTF-8 mode is also enabled for functions that have historically translated `char` strings using the default Windows ANSI code page (ACP). For example, calling [`_mkdir("😊")`](../reference/mkdir-wmkdir.md) while using a UTF-8 code page will correctly produce a directory with that emoji as the folder name, instead of requiring the ACP to be changed to UTF-8 before running your program. Likewise, calling [`_getcwd()`](../reference/getcwd-wgetcwd.md) in that folder returns a UTF-8 encoded string. For compatibility, the ACP is still used if the C locale code page isn't set to UTF-8.
 
 The following aspects of the C Runtime can't use UTF-8 because they're set during program startup and must use the default Windows ANSI code page (ACP): [`__argv`](../argc-argv-wargv.md), [`_acmdln`](../acmdln-tcmdln-wcmdln.md), and [`_pgmptr`](../pgmptr-wpgmptr.md).
 
