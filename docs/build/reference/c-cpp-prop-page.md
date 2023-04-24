@@ -1,10 +1,9 @@
 ---
 title: "C/C++ Project Properties (Visual Studio)"
 description: "Reference guide to the Visual Studio Microsoft C/C++ project Property Pages properties."
-ms.date: 11/17/2022
+ms.date: 4/24/2023
 ms.topic: "article"
 f1_keywords: ["VC.Project.VCCLCompilerTool.AdditionalModuleDirectories", "VC.Project.VCCLCompilerTool.ScanSourceForModuleDependencies"]
-ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
 ---
 # C/C++ Property Pages
 
@@ -332,10 +331,6 @@ Spectre mitigations for CVE 2017-5753. Sets [`/Qspectre`](qspectre.md).
 
 Suppresses or enables language extensions. Sets [`/Za`](za-ze-disable-language-extensions.md).
 
-### Conformance mode
-
-Enables or suppresses conformance mode. Sets [`/permissive-`](permissive-standards-conformance.md).
-
 ### Treat wchar_t As Built in Type
 
 When specified, the type **`wchar_t`** becomes a native type that maps to **`__wchar_t`** in the same way that **`short`** maps to **`__int16`**. [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) is on by default.
@@ -360,9 +355,9 @@ Adds code for checking C++ object types at run time (*runtime type information*,
 
 Enables OpenMP 2.0 language extensions. Sets [`/openmp`](openmp-enable-openmp-2-0-support.md).
 
-### C++ Language Standard
+### <a name="cpplang"></a> C++ Language Standard
 
-Determines the C++ language standard the compiler enables. The default value doesn't set a standard option, so the compiler uses its default C++14 setting. If you select a specific value, the corresponding [`/std`](std-specify-language-standard-version.md) compiler option is set.md).
+Determines the C++ language standard that the compiler enables. The default value doesn't set a standard option, so the compiler uses its default C++14 setting. If you select a specific value, the corresponding [`/std`](std-specify-language-standard-version.md) compiler option is set.md).
 
 #### Choices
 
@@ -371,10 +366,28 @@ Determines the C++ language standard the compiler enables. The default value doe
 - **ISO C++17 Standard (/std:c++17)**
 - **ISO C++20 Standard (/std:c++20)**
 - **Preview - Features from the Latest C++ Working Draft  (/std:c++latest)**
+ 
+### C Language Standard
 
-### Enable C++ Modules (experimental)
+Determines the C language standard that the compiler enables. The default value doesn't set a standard option, so the compiler uses its default legacy MSVC setting. If you select a specific value, the corresponding [`/std`](std-specify-language-standard-version.md) compiler option is set.md).
+
+#### Choices
+
+- **Default (Legacy MSVC)**
+- **ISO C11 Standard (/std:c11)**
+- **ISO C17 (2018) Standard (/std:c17)**
+
+### Conformance mode
+
+Enables or suppresses conformance mode. Sets [`/permissive-`](permissive-standards-conformance.md).
+
+### Enable Experimental C++ Standard Library Modules
 
 Experimental support for the C++ Modules TS and Standard Library modules.
+
+### Build ISO C++23 Standard Library Modules
+
+When enabled, and the [C++ Language Standard](#cpplang) is set to `/std:c++latest`, VC projects automatically find and build ISO C++23 Standard Library modules. This enables you to `import std` or `import std.compat` in your C++ code. This property is on by default.
 
 ## C/C++ Precompiled Headers Properties
 
