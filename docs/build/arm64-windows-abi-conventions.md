@@ -204,7 +204,7 @@ A type is considered to be an HFA or HVA if all of the following hold:
 - It doesn't have any non-trivial default or copy constructors, destructors, or assignment operators,
 - All of its members have the same HFA or HVA type, or are float, double, or neon types that match the other members' HFA or HVA types.
 
-HFA and HVA values with four or fewer elements are returned in s0-s3, d0-d3, or v0-v3, as appropriate.
+HVA values with four or fewer elements are returned in s0-s3, d0-d3, or v0-v3, as appropriate.
 
 Types returned by value are handled differently depending on whether they have certain properties, and whether the function is a non-static member function. Types which have all of these properties,
 
@@ -214,9 +214,10 @@ Types returned by value are handled differently depending on whether they have c
 
 and are returned by non-member functions or static member functions, use the following return style:
 
+- Types that are HFAs with four or fewer elements are returned in s0-s3, d0-d3, or v0-v3, as appropriate.
 - Types less than or equal to 8 bytes are returned in x0.
 - Types less than or equal to 16 bytes are returned in x0 and x1, with x0 containing the lower-order 8 bytes.
-- For types greater than 16 bytes, the caller shall reserve a block of memory of sufficient size and alignment to hold the result. The address of the memory block shall be passed as an additional argument to the function in x8. The callee may modify the result memory block at any point during the execution of the subroutine. The callee isn't required to preserve the value stored in x8.
+- For other aggregate types, the caller shall reserve a block of memory of sufficient size and alignment to hold the result. The address of the memory block shall be passed as an additional argument to the function in x8. The callee may modify the result memory block at any point during the execution of the subroutine. The callee isn't required to preserve the value stored in x8.
 
 All other types use this convention:
 
