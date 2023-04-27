@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: fopen, _wfopen"
 title: "fopen, _wfopen"
-ms.date: 05/18/2022
+ms.date: 04/27/2023
 api_name: ["_wfopen", "fopen", "_o__wfopen", "_o_fopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -106,7 +106,7 @@ In addition to the earlier values, the following characters can be appended to *
 
 | *`mode`* modifier | Translation mode |
 |--|--|
-| **`t`** | Open in text (translated) mode. |
+| **`t`** | Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. |
 | **`b`** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
 In text mode, `CTRL`+**Z** is interpreted as an EOF character on input. In files that are opened for reading/writing by using **`"a+"`**, **`fopen`** checks for a `CTRL`+**Z** at the end of the file and removes it, if it's possible. It's removed because using [`fseek`](fseek-fseeki64.md) and **`ftell`** to move within a file that ends with `CTRL`+**Z** may cause [`fseek`](fseek-fseeki64.md) to behave incorrectly near the end of the file.
@@ -127,8 +127,8 @@ The following options can be appended to *`mode`* to specify more behaviors.
 | **`N`** | Specifies that the file isn't inherited by child processes. |
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
-| **`T`** | Specifies a file as temporary. If possible, it isn't flushed to disk. |
-| **`D`** | Specifies a file as temporary. It's deleted when the last file pointer is closed. |
+| **`T`** | Specifies a file that isn't written to disk unless memory pressure requires it. |
+| **`D`** | Specifies a temporary file that is deleted when the last file pointer to it is closed. |
 | **`ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or `UNICODE`) for this file. Leave unspecified if you want ANSI encoding. This flag is separated from flags that precede it by a comma (`,`). For example: `FILE *f = fopen("newfile.txt", "rt+, ccs=UTF-8");` |
 
 Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdopen`** correspond to *`oflag`* arguments that are used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as follows.
@@ -142,7 +142,7 @@ Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdo
 | **`w`** | `_O_WRONLY` (usually `_O_WRONLY | _O_CREAT | _O_TRUNC`) |
 | **`w+`** | `_O_RDWR` (usually `_O_RDWR | _O_CREAT | _O_TRUNC`) |
 | **`b`** | `_O_BINARY` |
-| **`t`** | `_O_TEXT` |
+| **`t`** | `_O_TEXT` (translated) |
 | **`x`** | `_O_EXCL` |
 | **`c`** | None |
 | **`n`** | None |
@@ -155,6 +155,11 @@ Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdo
 | **`ccs=UTF-16LE`** | `_O_UTF16` |
 
 If you're using **`rb`** mode, you don't have to port your code, and if you expect to read most of a large file or aren't concerned about network performance, you might also consider whether to use memory mapped Win32 files as an option.
+
+Regarding `T` and `D`:
+- `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](https://learn.microsoft.com/archive/blogs/larryosterman/its-only-temporary).
+- `D` specifies a regular file that is written to disk. The difference is that it will be automatically deleted when it is closed.
+You can combine `TD` to get both semantics.
 
 ## Requirements
 

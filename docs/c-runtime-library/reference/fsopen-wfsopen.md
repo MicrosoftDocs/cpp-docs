@@ -1,14 +1,13 @@
 ---
 description: "Learn more about: _fsopen, _wfsopen"
 title: "_fsopen, _wfsopen"
-ms.date: "4/2/2020"
+ms.date: 4/27/2023
 api_name: ["_wfsopen", "_fsopen", "_o__fsopen", "_o__wfsopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wfsopen", "fsopen", "tfsopen", "_tfsopen", "_wfsopen", "_fsopen"]
 helpviewer_keywords: ["opening files, streams", "fsopen function", "tfsopen function", "wfsopen function", "_fsopen function", "files [C++], opening", "_tfsopen function", "_wfsopen function", "file sharing [C++]"]
-ms.assetid: 5e4502ab-48a9-4bee-a263-ebac8d638dec
 ---
 # `_fsopen`, `_wfsopen`
 
@@ -71,10 +70,15 @@ When a file is opened with the **"`a`"** or **"`a+`"** access type, all write op
 | **`b`** | Opens a file in binary (untranslated) mode; the above translations are suppressed. |
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
-| **`T`** | Specifies a file as temporary. If possible, it isn't flushed to disk. |
-| **`D`** | Specifies a file as temporary. It's deleted when the last file pointer is closed. |
+| **`T`** | Specifies a file that isn't written to disk unless memory pressure requires it. |
+| **`D`** | Specifies a temporary file that is deleted when the last file pointer to it is closed. |
 
 If **`t`** or **`b`** isn't given in *`mode`*, the translation mode is defined by the default-mode variable **`_fmode`**. If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`. For a discussion of text and binary modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
+
+Regarding `T` and `D`:
+- `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](https://learn.microsoft.com/archive/blogs/larryosterman/its-only-temporary).
+- `D` specifies a regular file that is written to disk. The difference is that it will be automatically deleted when it is closed.
+You can combine `TD` to get both semantics.
 
 The argument *`shflag`* is a constant expression consisting of one of the following manifest constants, defined in `Share.h`.
 

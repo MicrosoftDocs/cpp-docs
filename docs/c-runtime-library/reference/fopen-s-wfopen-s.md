@@ -1,7 +1,7 @@
 ---
 title: "fopen_s, _wfopen_s"
 description: "Describes the API for `fopen_s` and `_wfopen_s`"
-ms.date: 05/18/2022
+ms.date: 04/27/2023
 api_name: ["_wfopen_s", "fopen_s", "_o__wfopen_s", "_o_fopen_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -34,7 +34,7 @@ errno_t _wfopen_s(
 A pointer to the file pointer that will receive the pointer to the opened file.
 
 *`filename`*\
-Filename.
+Name of the file to open.
 
 *`mode`*\
 Type of access permitted.
@@ -55,7 +55,7 @@ Zero if successful; an error code on failure. For more information about these e
 
 The **`fopen_s`** and **`_wfopen_s`** functions can't open a file for sharing. If you need to share the file, use [`_fsopen` or `_wfsopen`](fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, use `_SH_DENYNO` for read/write sharing.
 
-The **`fopen_s`** function opens the file that's specified by *`filename`*. **`_wfopen_s`** is a wide-character version of **`fopen_s`**; the arguments to **`_wfopen_s`** are wide-character strings. **`_wfopen_s`** and **`fopen_s`** behave identically otherwise.
+The **`fopen_s`** function opens the file that's specified by *`filename`*. **`_wfopen_s`** is a wide-character version of **`fopen_s`** and the arguments to **`_wfopen_s`** are wide-character strings. **`_wfopen_s`** and **`fopen_s`** behave identically, otherwise.
 
 **`fopen_s`** accepts paths that are valid on the file system at the point of execution; UNC paths and paths that involve mapped network drives are accepted by **`fopen_s`** as long as the system that's executing the code has access to the share or mapped network drive at the time of execution. When you construct paths for **`fopen_s`**, don't make assumptions about the availability of drives, paths, or network shares in the execution environment. You can use either forward slashes (/) or backslashes (\\) as the directory separators in a path.
 
@@ -115,10 +115,10 @@ In addition to the values above, the following characters can be included in *`m
 
 | *`mode`* modifier | Translation mode |
 |--|--|
-| **`t`** | Open in text (translated) mode. |
+| **`t`** | Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or reading/writing, **`_fsopen`** checks for a CTRL+Z at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file that ends with a CTRL+Z might cause [`fseek`](fseek-fseeki64.md) to behave improperly near the end of the file. |
 | **`b`** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
-In text (translated) mode, `CTRL`+**Z** is interpreted as an end-of-file character on input. In files opened for reading/writing with **`"a+"`**, **`fopen_s`** checks for a `CTRL`+**Z** at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file that ends with a `CTRL`+**Z**, may cause **`fseek`** to behave improperly near the end of the file.
+In text (translated) mode, `CTRL`+**Z** is interpreted as an end-of-file character on input. For files opened for reading/writing with **`"a+"`**, **`fopen_s`** checks for a `CTRL`+**Z** at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file that ends with a `CTRL`+**Z**, may cause **`fseek`** to behave improperly near the end of the file.
 
 Also, in text mode, carriage return/line feed (CRLF) combinations are translated into single line feed (LF) characters on input, and LF characters are translated to CRLF combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. The Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the **`mbtowc`** function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the **`wctomb`** function).
 
@@ -133,8 +133,8 @@ For more information about using text and binary modes in Unicode and multibyte 
 | **`N`** | Specifies that the file isn't inherited by child processes. |
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
-| **`t`** | Specifies a file as temporary. If possible, it isn't flushed to disk. |
-| **`D`** | Specifies a file as temporary. It's deleted when the last file pointer is closed. |
+| **`T`** | Specifies a file that isn't written to disk unless memory pressure requires it. |
+| **`D`** | Specifies a temporary file that is deleted when the last file pointer to it is closed. |
 | **`ccs=UNICODE`** | Specifies UNICODE as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
 | **`ccs=UTF-8`** | Specifies UTF-8 as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
 | **`ccs=UTF-16LE`** | Specifies UTF-16LE as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
@@ -150,20 +150,25 @@ Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](f
 | **`w`** | `_O_WRONLY` (usually `_O_WRONLY | _O_CREAT | _O_TRUNC`) |
 | **`w+`** | `_O_RDWR` (usually **`_O_RDWR | _O_CREAT | _O_TRUNC`) |
 | **`b`** | `_O_BINARY` |
-| **`t`** | `_O_TEXT` |
+| **`t`** | `_O_TEXT` (translated) |
 | **`c`** | None |
 | **`n`** | None |
 | **`S`** | `_O_SEQUENTIAL` |
 | **`R`** | `_O_RANDOM` |
-| **`t`** | `_O_SHORTLIVED` |
+| **`T`** | `_O_SHORTLIVED` |
 | **`D`** | `_O_TEMPORARY` |
 | **`ccs=UNICODE`** | `_O_WTEXT` |
 | **`ccs=UTF-8`** | `_O_UTF8` |
 | **`ccs=UTF-16LE`** | `_O_UTF16` |
 
-The **`c`**, **`n`**, and **`t`** *`mode`* options are Microsoft extensions for **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) and shouldn't be used where you want ANSI portability.
+The **`c`**, **`n`**, and **`T`** *`mode`* options are Microsoft extensions for **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) and shouldn't be used when you want ANSI portability.
 
 If you're using **`rb`** mode, memory mapped Win32 files might also be an option if you don't need to port your code, you expect to read much of the file, or you don't care about network performance.
+
+Regarding `T` and `D`:
+- `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](https://learn.microsoft.com/archive/blogs/larryosterman/its-only-temporary).
+- `D` specifies a regular file that is written to disk. The difference is that it will be automatically deleted when it is closed.
+You can combine `TD` to get both semantics.
 
 ## Requirements
 
