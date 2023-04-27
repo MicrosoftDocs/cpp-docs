@@ -42,9 +42,9 @@ For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`
 
 ## Remarks
 
-The **`fopen`** function opens the file that is specified by *`filename`*. By default, a narrow *`filename`* string is interpreted using the ANSI codepage (`CP_ACP`). In Windows Desktop applications, it can be changed to the OEM codepage (`CP_OEMCP`) by using the [`SetFileApisToOEM`](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem) function. You can use the [`AreFileApisANSI`](/windows/win32/api/fileapi/nf-fileapi-arefileapisansi) function to determine whether *`filename`* is interpreted using the ANSI or the system default OEM codepage. **`_wfopen`** is a wide-character version of **`fopen`**; the **`_wfopen`** arguments are wide-character strings. Otherwise, **`_wfopen`** and **`fopen`** behave identically. Just using **`_wfopen`** doesn't affect the coded character set that's used in the file stream.
+The **`fopen`** function opens the file specified by *`filename`*. By default, a narrow *`filename`* string is interpreted using the ANSI codepage (`CP_ACP`). In Windows Desktop applications, it can be changed to the OEM codepage (`CP_OEMCP`) by using the [`SetFileApisToOEM`](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem) function. You can use the [`AreFileApisANSI`](/windows/win32/api/fileapi/nf-fileapi-arefileapisansi) function to determine whether *`filename`* is interpreted using the ANSI or the system default OEM codepage. **`_wfopen`** is a wide-character version of **`fopen`**; the **`_wfopen`** arguments are wide-character strings. Otherwise, **`_wfopen`** and **`fopen`** behave identically. Just using **`_wfopen`** doesn't affect the coded character set that's used in the file stream.
 
-**`fopen`** accepts paths that are valid on the file system at the point of execution; **`fopen`** accepts UNC paths and paths that involve mapped network drives as long as the system that executes the code has access to the share or mapped drive at the time of execution. When you construct paths for **`fopen`**, make sure that drives, paths, or network shares will be available in the execution environment. You can use either forward slashes (`/`) or backslashes (`\`) as the directory separators in a path.
+**`fopen`** accepts paths that are valid on the file system at the point of execution; **`fopen`** accepts UNC paths and paths that involve mapped network drives as long as the system that executes the code has access to the share or mapped drive at the time of execution. When you construct paths for **`fopen`**, make sure that drives, paths, or network shares are available in the execution environment. You can use either forward slashes (`/`) or backslashes (`\`) as the directory separators in a path.
 
 Always check the return value to see whether the pointer is NULL before you perform any other operations on the file. If an error occurs, the global variable `errno` is set, and may be used to obtain specific error information. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -60,7 +60,7 @@ Allowed values for **`ccs`** encoding are `UNICODE`, **`UTF-8`**, and **`UTF-16L
 
 When a file is opened in Unicode mode, input functions translate the data that's read from the file into UTF-16 data stored as type **`wchar_t`**. Functions that write to a file opened in Unicode mode expect buffers that contain UTF-16 data stored as type **`wchar_t`**. If the file is encoded as UTF-8, then UTF-16 data is translated into UTF-8 when it's written. The file's UTF-8-encoded content is translated into UTF-16 when it's read. An attempt to read or write an odd number of bytes in Unicode mode causes a [parameter validation](../parameter-validation.md) error. To read or write data that's stored in your program as UTF-8, use a text or binary file mode instead of a Unicode mode. You're responsible for any required encoding translation.
 
-If the file already exists and is opened for reading or appending, then any byte order mark (BOM) in the file determines the encoding. The BOM encoding takes precedence over the encoding that's specified by the **`ccs`** flag. The **`ccs`** encoding is only used when no BOM is present or the file is a new file.
+If the file already exists and is opened for reading or appending, then any byte order mark (BOM) in the file determines the encoding. The BOM encoding takes precedence over the encoding specified by the **`ccs`** flag. The **`ccs`** encoding is only used when no BOM is present or the file is a new file.
 
 > [!NOTE]
 > BOM detection only applies to files that are opened in Unicode mode (that is, by passing the **`ccs`** flag).
@@ -158,7 +158,7 @@ If you're using **`rb`** mode, you don't have to port your code, and if you expe
 
 Regarding `T` and `D`:
 - `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](https://learn.microsoft.com/archive/blogs/larryosterman/its-only-temporary).
-- `D` specifies a regular file that is written to disk. The difference is that it will be automatically deleted when it is closed.
+- `D` specifies a regular file that is written to disk. The difference is that it's automatically deleted when it's closed.
 You can combine `TD` to get both semantics.
 
 The **`c`**, **`n`**, **`R`**, **`S`**, **`t`**, **`T`**, and **`D`** *`mode`* options are Microsoft extensions for `fopen` and `_wfopen` and shouldn't be used when you want ANSI portability.

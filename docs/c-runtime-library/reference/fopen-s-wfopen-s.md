@@ -31,10 +31,10 @@ errno_t _wfopen_s(
 ### Parameters
 
 *`pFile`*\
-A pointer to the file pointer that will receive the pointer to the opened file.
+A pointer to the file pointer that receives the pointer to the opened file.
 
 *`filename`*\
-Name of the file to open.
+The file to open.
 
 *`mode`*\
 Type of access permitted.
@@ -55,7 +55,7 @@ Zero if successful; an error code on failure. For more information about these e
 
 The **`fopen_s`** and **`_wfopen_s`** functions can't open a file for sharing. If you need to share the file, use [`_fsopen` or `_wfsopen`](fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, use `_SH_DENYNO` for read/write sharing.
 
-The **`fopen_s`** function opens the file that's specified by *`filename`*. **`_wfopen_s`** is a wide-character version of **`fopen_s`** and the arguments to **`_wfopen_s`** are wide-character strings. **`_wfopen_s`** and **`fopen_s`** behave identically, otherwise.
+The **`fopen_s`** function opens the file specified by *`filename`*. **`_wfopen_s`** is a wide-character version of **`fopen_s`** and the arguments to **`_wfopen_s`** are wide-character strings. **`_wfopen_s`** and **`fopen_s`** behave identically, otherwise.
 
 **`fopen_s`** accepts paths that are valid on the file system at the point of execution; UNC paths and paths that involve mapped network drives are accepted by **`fopen_s`** as long as the system that's executing the code has access to the share or mapped network drive at the time of execution. When you construct paths for **`fopen_s`**, don't make assumptions about the availability of drives, paths, or network shares in the execution environment. You can use either forward slashes (/) or backslashes (\\) as the directory separators in a path.
 
@@ -111,7 +111,7 @@ When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both re
 
 Starting in C11, you can append **`"x"`** to **`"w"`** or **`"w+"`** to cause the function fail if the file exists, instead of overwriting it.
 
-In addition to the values above, the following characters can be included in *`mode`* to specify the translation mode for newline characters:
+In addition to the previous values, the following characters can be included in *`mode`* to specify the translation mode for newline characters:
 
 | *`mode`* modifier | Translation mode |
 |--|--|
@@ -134,7 +134,7 @@ For more information about using text and binary modes in Unicode and multibyte 
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **`T`** | Specifies a file that isn't written to disk unless memory pressure requires it. |
-| **`D`** | Specifies a temporary file that is deleted when the last file pointer to it is closed. |
+| **`D`** | Specifies a temporary file that is deleted when the last file pointer to it's closed. |
 | **`ccs=UNICODE`** | Specifies UNICODE as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
 | **`ccs=UTF-8`** | Specifies UTF-8 as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
 | **`ccs=UTF-16LE`** | Specifies UTF-16LE as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
@@ -153,10 +153,10 @@ Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](f
 | **`t`** | `_O_TEXT` (translated) |
 | **`c`** | None |
 | **`n`** | None |
-| **`S`** | `_O_SEQUENTIAL` |
-| **`R`** | `_O_RANDOM` |
-| **`T`** | `_O_SHORTLIVED` |
 | **`D`** | `_O_TEMPORARY` |
+| **`R`** | `_O_RANDOM` |
+| **`S`** | `_O_SEQUENTIAL` |
+| **`T`** | `_O_SHORTLIVED` |
 | **`ccs=UNICODE`** | `_O_WTEXT` |
 | **`ccs=UTF-8`** | `_O_UTF8` |
 | **`ccs=UTF-16LE`** | `_O_UTF16` |
@@ -167,7 +167,7 @@ If you're using **`rb`** mode, memory mapped Win32 files might also be an option
 
 Regarding `T` and `D`:
 - `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](https://learn.microsoft.com/archive/blogs/larryosterman/its-only-temporary).
-- `D` specifies a regular file that is written to disk. The difference is that it will be automatically deleted when it is closed.
+- `D` specifies a regular file that is written to disk. The difference is that it's automatically deleted when it's closed.
 You can combine `TD` to get both semantics.
 
 ## Requirements
