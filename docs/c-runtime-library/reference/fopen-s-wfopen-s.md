@@ -115,7 +115,7 @@ In addition to the values above, the following characters can be included in *`m
 
 | *`mode`* modifier | Translation mode |
 |--|--|
-| **`t`** | Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or reading/writing, **`_fsopen`** checks for a CTRL+Z at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file that ends with a CTRL+Z might cause [`fseek`](fseek-fseeki64.md) to behave improperly near the end of the file. |
+| **`t`** | Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. |
 | **`b`** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
 In text (translated) mode, `CTRL`+**Z** is interpreted as an end-of-file character on input. For files opened for reading/writing with **`"a+"`**, **`fopen_s`** checks for a `CTRL`+**Z** at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file that ends with a `CTRL`+**Z**, may cause **`fseek`** to behave improperly near the end of the file.
@@ -161,7 +161,7 @@ Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](f
 | **`ccs=UTF-8`** | `_O_UTF8` |
 | **`ccs=UTF-16LE`** | `_O_UTF16` |
 
-The **`c`**, **`n`**, and **`T`** *`mode`* options are Microsoft extensions for **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) and shouldn't be used when you want ANSI portability.
+The **`c`**, **`n`**, **`R`**, **`S`**, **`t`**, **`T`**, and **`D`** *`mode`* options are Microsoft extensions for `fopen_s` and `_wfopen_s` and shouldn't be used when you want ANSI portability.
 
 If you're using **`rb`** mode, memory mapped Win32 files might also be an option if you don't need to port your code, you expect to read much of the file, or you don't care about network performance.
 

@@ -161,6 +161,8 @@ Regarding `T` and `D`:
 - `D` specifies a regular file that is written to disk. The difference is that it will be automatically deleted when it is closed.
 You can combine `TD` to get both semantics.
 
+The **`c`**, **`n`**, **`R`**, **`S`**, **`t`**, **`T`**, and **`D`** *`mode`* options are Microsoft extensions for `fopen` and `_wfopen` and shouldn't be used when you want ANSI portability.
+
 ## Requirements
 
 | Function | Required header |
