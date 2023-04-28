@@ -80,8 +80,6 @@ Regarding `T` and `D`:
 - `D` specifies a regular file that is written to disk. The difference is that it's automatically deleted when it's closed.
 You can combine `TD` to get both semantics.
 
-The **`c`**, **`n`**, **`R`**, **`S`**, **`t`**, **`T`**, and **`D`** *`mode`* options are Microsoft extensions for `_fsopen` and `_wfsopen` and shouldn't be used when you want ANSI portability.
-
 The argument *`shflag`* is a constant expression consisting of one of the following manifest constants, defined in `Share.h`.
 
 | Term | Definition |
@@ -90,6 +88,8 @@ The argument *`shflag`* is a constant expression consisting of one of the follow
 | `_SH_DENYRD` | Denies read access to the file. |
 | `_SH_DENYRW` | Denies read and write access to the file. |
 | `_SH_DENYWR` | Denies write access to the file. |
+
+`_fsopen` and `_wfsopen` are Microsoft-specific variants of [`fopen`](fopen-wfopen.md). They aren't part of the ANSI standard. For a more portable function, consider [`_wfopen_s` or `fopen_s`](fopen-s-wfopen-s.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

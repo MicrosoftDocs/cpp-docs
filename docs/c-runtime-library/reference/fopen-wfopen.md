@@ -77,7 +77,7 @@ The following table summarizes the modes that are used for various **`ccs`** fla
 
 Files opened for writing in Unicode mode have a BOM written to them automatically.
 
-If *`mode`* is **`a, ccs=encoding`** for some `encoding` value, **`fopen`** first tries to open the file by using both read and write access. If this action succeeds, the function reads the BOM to determine the encoding for the file. If it fails, the function uses the default encoding for the file. In either case, **`fopen`** will then reopen the file by using write-only access. (This behavior applies to **`"a"`** mode only, not to **`"a+"`** mode.)
+If *`mode`* is **`a, ccs=encoding`** for some `encoding` value, **`fopen`** first tries to open the file by using both read and write access. If this action succeeds, the function reads the BOM to determine the encoding for the file. If it fails, the function uses the default encoding for the file. In either case, **`fopen`** reopens the file using write-only access. (This behavior applies to **`"a"`** mode only, not to **`"a+"`** mode.)
 
 ### Generic-text routine mappings
 
