@@ -134,7 +134,7 @@ For more information about using text and binary modes in Unicode and multibyte 
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **`T`** | Specifies a file that isn't written to disk unless memory pressure requires it. |
-| **`D`** | Specifies a temporary file that is deleted when the last file pointer to it's closed. |
+| **`D`** | Specifies a temporary file that is deleted when the last file pointer to it is closed. |
 | **`ccs=UNICODE`** | Specifies UNICODE as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
 | **`ccs=UTF-8`** | Specifies UTF-8 as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
 | **`ccs=UTF-16LE`** | Specifies UTF-16LE as the encoded character set to use for this file. Leave unspecified if you want ANSI encoding. |
