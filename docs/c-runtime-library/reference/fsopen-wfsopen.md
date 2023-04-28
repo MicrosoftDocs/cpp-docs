@@ -68,7 +68,7 @@ When a file is opened with the **"`a`"** or **"`a+`"** access type, all write op
 |---|---|
 | **`t`** | Opens a file in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or reading/writing, **`_fsopen`** checks for a CTRL+Z at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file that ends with a CTRL+Z might cause [`fseek`](fseek-fseeki64.md) to behave improperly near the end of the file. |
 | **`b`** | Opens a file in binary (untranslated) mode; the above translations are suppressed. |
-| **`D`** | Specifies a temporary file that is deleted when the last file pointer to it is closed. |
+| **`D`** | Specifies a temporary file that's deleted when the last file pointer to it is closed. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`T`** | Specifies a file that isn't written to disk unless memory pressure requires it. |
@@ -80,6 +80,8 @@ Regarding `T` and `D`:
 - `D` specifies a regular file that is written to disk. The difference is that it's automatically deleted when it's closed.
 You can combine `TD` to get both semantics.
 
+`_fsopen` and `_wfsopen` are Microsoft-specific variants of [`fopen`](fopen-wfopen.md). They aren't part of the ANSI standard. For a more portable and secure function, if you don't require file sharing, consider [`_wfopen_s` or `fopen_s`](fopen-s-wfopen-s.md).
+
 The argument *`shflag`* is a constant expression consisting of one of the following manifest constants, defined in `Share.h`.
 
 | Term | Definition |
@@ -89,7 +91,6 @@ The argument *`shflag`* is a constant expression consisting of one of the follow
 | `_SH_DENYRW` | Denies read and write access to the file. |
 | `_SH_DENYWR` | Denies write access to the file. |
 
-`_fsopen` and `_wfsopen` are Microsoft-specific variants of [`fopen`](fopen-wfopen.md). They aren't part of the ANSI standard. For a more portable function, consider [`_wfopen_s` or `fopen_s`](fopen-s-wfopen-s.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

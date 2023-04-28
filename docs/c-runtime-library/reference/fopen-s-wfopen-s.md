@@ -34,7 +34,7 @@ errno_t _wfopen_s(
 A pointer to the file pointer that receives the pointer to the opened file.
 
 *`filename`*\
-The file to open.
+The name of the file to open.
 
 *`mode`*\
 Type of access permitted.
@@ -115,7 +115,7 @@ In addition to the previous values, the following characters can be included in 
 
 | *`mode`* modifier | Translation mode |
 |--|--|
-| **`t`** | Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. |
+| **`t`** | Open in text (translated) mode. Carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. CTRL+Z is interpreted as an end-of-file character on input. |
 | **`b`** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
 In text (translated) mode, `CTRL`+**Z** is interpreted as an end-of-file character on input. For files opened for reading/writing with **`"a+"`**, **`fopen_s`** checks for a `CTRL`+**Z** at the end of the file and removes it, if possible. It's removed because using [`fseek`](fseek-fseeki64.md) and [`ftell`](ftell-ftelli64.md) to move within a file that ends with a `CTRL`+**Z**, may cause **`fseek`** to behave improperly near the end of the file.

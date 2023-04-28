@@ -106,7 +106,7 @@ In addition to the earlier values, the following characters can be appended to *
 
 | *`mode`* modifier | Translation mode |
 |--|--|
-| **`t`** | Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. |
+| **`t`** | Open in text (translated) mode. Carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. |
 | **`b`** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
 In text mode, `CTRL`+**Z** is interpreted as an EOF character on input. In files that are opened for reading/writing by using **`"a+"`**, **`fopen`** checks for a `CTRL`+**Z** at the end of the file and removes it, if it's possible. It's removed because using [`fseek`](fseek-fseeki64.md) and **`ftell`** to move within a file that ends with `CTRL`+**Z** may cause [`fseek`](fseek-fseeki64.md) to behave incorrectly near the end of the file.
@@ -128,7 +128,7 @@ The following options can be appended to *`mode`* to specify more behaviors.
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **`T`** | Specifies a file that isn't written to disk unless memory pressure requires it. |
-| **`D`** | Specifies a temporary file that is deleted when the last file pointer to it is closed. |
+| **`D`** | Specifies a temporary file that's deleted when the last file pointer to it is closed. |
 | **`ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or `UNICODE`) for this file. Leave unspecified if you want ANSI encoding. This flag is separated from flags that precede it by a comma (`,`). For example: `FILE *f = fopen("newfile.txt", "rt+, ccs=UTF-8");` |
 
 Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdopen`** correspond to *`oflag`* arguments that are used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as follows.
