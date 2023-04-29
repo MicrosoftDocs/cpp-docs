@@ -25,7 +25,7 @@ An ActiveX control is a reusable software component based on the Component Objec
 
 In the wizard, you can add more than one interface in an ActiveX control. You can also create classes from more than one ActiveX control in a single wizard session.
 
-You can add classes from ActiveX controls registered in your system, or you can add classes from ActiveX controls located in type library files (.tlb, .olb, .dll, .ocx, or .exe) without first registering them in your system. For more information about registering ActiveX controls, see [Registering OLE controls](../mfc/reference/registering-ole-controls.md).
+You can add classes from ActiveX controls registered in your system, or you can add classes from ActiveX controls located in type library files (`.tlb`, `.olb`, `.dll`, `.ocx`, or `.exe`) without first registering them in your system. For more information about registering ActiveX controls, see [Registering OLE controls](../mfc/reference/registering-ole-controls.md).
 
 The wizard creates an MFC class, derived from [CWnd](../mfc/reference/cwnd-class.md) or from [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md), for each interface you add from the selected ActiveX control.
 
