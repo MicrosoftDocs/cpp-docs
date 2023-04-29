@@ -1,15 +1,14 @@
 ---
 description: "Learn more about: Add a class from an ActiveX control"
 title: "Add a class from an ActiveX control"
-ms.date: "03/01/2022"
+ms.date: 04/28/2023
 f1_keywords: ["vc.codewiz.class.axcontrol"]
 helpviewer_keywords: ["ActiveX controls [C++], adding classes", "classes [C++], creating", "ActiveX Control Wizard", "add class from ActiveX control wizard [C++]"]
-ms.assetid: 729fcb37-54b8-44d5-9b4e-50bb16e0eea4
 ms.custom: devdivchpfy22
 ---
 # Add a class from an ActiveX control
 
-Use this wizard to create an MFC class from an interface in an available ActiveX control. You can add an MFC class to an [MFC application](../mfc/reference/creating-an-mfc-application.md), an [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md), or an [MFC ActiveX control](../mfc/reference/creating-an-mfc-activex-control.md).
+Use this wizard to create an MFC class from an interface in an available ActiveX control. For this wizard to be available, you must have Visual Studio 2019 or later, and be in one of the following project types: [MFC application](../mfc/reference/creating-an-mfc-application.md), [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md), or [MFC ActiveX control](../mfc/reference/creating-an-mfc-activex-control.md).
 
 > [!NOTE]
 > You don't need to create your MFC project with Automation enabled to add a class from an ActiveX control.
@@ -26,13 +25,9 @@ An ActiveX control is a reusable software component based on the Component Objec
 
 In the wizard, you can add more than one interface in an ActiveX control. You can also create classes from more than one ActiveX control in a single wizard session.
 
-You can add classes from ActiveX controls registered in your system, or you can add classes from ActiveX controls located in type library files (.tlb, .olb, .dll, .ocx, or .exe) without first registering them in your system. For more information about registering ActiveX controls, see [Registering OLE controls](../mfc/reference/registering-ole-controls.md).
+You can add classes from ActiveX controls registered in your system, or you can add classes from ActiveX controls located in type library files (`.tlb`, `.olb`, `.dll`, `.ocx`, or `.exe`) without first registering them in your system. For more information about registering ActiveX controls, see [Registering OLE controls](../mfc/reference/registering-ole-controls.md).
 
 The wizard creates an MFC class, derived from [CWnd](../mfc/reference/cwnd-class.md) or from [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md), for each interface you add from the selected ActiveX control.
-
-## In this section
-
-- [Add class from ActiveX control wizard](#add-class-from-activex-control-wizard)
 
 ## Add class from ActiveX control wizard
 
