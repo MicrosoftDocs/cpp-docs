@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Add a class from an ActiveX control"
 title: "Add a class from an ActiveX control"
-ms.date: "03/01/2022"
+ms.date: 04/28/2023
 f1_keywords: ["vc.codewiz.class.axcontrol"]
 helpviewer_keywords: ["ActiveX controls [C++], adding classes", "classes [C++], creating", "ActiveX Control Wizard", "add class from ActiveX control wizard [C++]"]
 ms.custom: devdivchpfy22
