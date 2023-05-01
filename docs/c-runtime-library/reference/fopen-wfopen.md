@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: fopen, _wfopen"
 title: "fopen, _wfopen"
-ms.date: 05/18/2022
+ms.date: 04/27/2023
 api_name: ["_wfopen", "fopen", "_o__wfopen", "_o_fopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -42,9 +42,9 @@ For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`
 
 ## Remarks
 
-The **`fopen`** function opens the file that is specified by *`filename`*. By default, a narrow *`filename`* string is interpreted using the ANSI codepage (`CP_ACP`). In Windows Desktop applications, it can be changed to the OEM codepage (`CP_OEMCP`) by using the [`SetFileApisToOEM`](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem) function. You can use the [`AreFileApisANSI`](/windows/win32/api/fileapi/nf-fileapi-arefileapisansi) function to determine whether *`filename`* is interpreted using the ANSI or the system default OEM codepage. **`_wfopen`** is a wide-character version of **`fopen`**; the **`_wfopen`** arguments are wide-character strings. Otherwise, **`_wfopen`** and **`fopen`** behave identically. Just using **`_wfopen`** doesn't affect the coded character set that's used in the file stream.
+The **`fopen`** function opens the file specified by *`filename`*. By default, a narrow *`filename`* string is interpreted using the ANSI codepage (`CP_ACP`). In Windows Desktop applications, it can be changed to the OEM codepage (`CP_OEMCP`) by using the [`SetFileApisToOEM`](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem) function. You can use the [`AreFileApisANSI`](/windows/win32/api/fileapi/nf-fileapi-arefileapisansi) function to determine whether *`filename`* is interpreted using the ANSI or the system default OEM codepage. **`_wfopen`** is a wide-character version of **`fopen`**; the **`_wfopen`** arguments are wide-character strings. Otherwise, **`_wfopen`** and **`fopen`** behave identically. Just using **`_wfopen`** doesn't affect the coded character set that's used in the file stream.
 
-**`fopen`** accepts paths that are valid on the file system at the point of execution; **`fopen`** accepts UNC paths and paths that involve mapped network drives as long as the system that executes the code has access to the share or mapped drive at the time of execution. When you construct paths for **`fopen`**, make sure that drives, paths, or network shares will be available in the execution environment. You can use either forward slashes (`/`) or backslashes (`\`) as the directory separators in a path.
+**`fopen`** accepts paths that are valid on the file system at the point of execution; **`fopen`** accepts UNC paths and paths that involve mapped network drives as long as the system that executes the code has access to the share or mapped drive at the time of execution. When you construct paths for **`fopen`**, make sure that drives, paths, or network shares are available in the execution environment. You can use either forward slashes (`/`) or backslashes (`\`) as the directory separators in a path.
 
 Always check the return value to see whether the pointer is NULL before you perform any other operations on the file. If an error occurs, the global variable `errno` is set, and may be used to obtain specific error information. For more information, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -60,7 +60,7 @@ Allowed values for **`ccs`** encoding are `UNICODE`, **`UTF-8`**, and **`UTF-16L
 
 When a file is opened in Unicode mode, input functions translate the data that's read from the file into UTF-16 data stored as type **`wchar_t`**. Functions that write to a file opened in Unicode mode expect buffers that contain UTF-16 data stored as type **`wchar_t`**. If the file is encoded as UTF-8, then UTF-16 data is translated into UTF-8 when it's written. The file's UTF-8-encoded content is translated into UTF-16 when it's read. An attempt to read or write an odd number of bytes in Unicode mode causes a [parameter validation](../parameter-validation.md) error. To read or write data that's stored in your program as UTF-8, use a text or binary file mode instead of a Unicode mode. You're responsible for any required encoding translation.
 
-If the file already exists and is opened for reading or appending, then any byte order mark (BOM) in the file determines the encoding. The BOM encoding takes precedence over the encoding that's specified by the **`ccs`** flag. The **`ccs`** encoding is only used when no BOM is present or the file is a new file.
+If the file already exists and is opened for reading or appending, then any byte order mark (BOM) in the file determines the encoding. The BOM encoding takes precedence over the encoding specified by the **`ccs`** flag. The **`ccs`** encoding is only used when no BOM is present or the file is a new file.
 
 > [!NOTE]
 > BOM detection only applies to files that are opened in Unicode mode (that is, by passing the **`ccs`** flag).
@@ -77,7 +77,7 @@ The following table summarizes the modes that are used for various **`ccs`** fla
 
 Files opened for writing in Unicode mode have a BOM written to them automatically.
 
-If *`mode`* is **`a, ccs=encoding`** for some `encoding` value, **`fopen`** first tries to open the file by using both read and write access. If this action succeeds, the function reads the BOM to determine the encoding for the file. If it fails, the function uses the default encoding for the file. In either case, **`fopen`** will then reopen the file by using write-only access. (This behavior applies to **`"a"`** mode only, not to **`"a+"`** mode.)
+If *`mode`* is **`a, ccs=encoding`** for some `encoding` value, **`fopen`** first tries to open the file by using both read and write access. If this action succeeds, the function reads the BOM to determine the encoding for the file. If it fails, the function uses the default encoding for the file. In either case, **`fopen`** reopens the file using write-only access. (This behavior applies to **`"a"`** mode only, not to **`"a+"`** mode.)
 
 ### Generic-text routine mappings
 
@@ -106,7 +106,7 @@ In addition to the earlier values, the following characters can be appended to *
 
 | *`mode`* modifier | Translation mode |
 |--|--|
-| **`t`** | Open in text (translated) mode. |
+| **`t`** | Open in text (translated) mode. Carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. |
 | **`b`** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
 In text mode, `CTRL`+**Z** is interpreted as an EOF character on input. In files that are opened for reading/writing by using **`"a+"`**, **`fopen`** checks for a `CTRL`+**Z** at the end of the file and removes it, if it's possible. It's removed because using [`fseek`](fseek-fseeki64.md) and **`ftell`** to move within a file that ends with `CTRL`+**Z** may cause [`fseek`](fseek-fseeki64.md) to behave incorrectly near the end of the file.
@@ -127,8 +127,8 @@ The following options can be appended to *`mode`* to specify more behaviors.
 | **`N`** | Specifies that the file isn't inherited by child processes. |
 | **`S`** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
-| **`T`** | Specifies a file as temporary. If possible, it isn't flushed to disk. |
-| **`D`** | Specifies a file as temporary. It's deleted when the last file pointer is closed. |
+| **`T`** | Specifies a file that isn't written to disk unless memory pressure requires it. |
+| **`D`** | Specifies a temporary file that's deleted when the last file pointer to it is closed. |
 | **`ccs=encoding`** | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or `UNICODE`) for this file. Leave unspecified if you want ANSI encoding. This flag is separated from flags that precede it by a comma (`,`). For example: `FILE *f = fopen("newfile.txt", "rt+, ccs=UTF-8");` |
 
 Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdopen`** correspond to *`oflag`* arguments that are used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as follows.
@@ -142,7 +142,7 @@ Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdo
 | **`w`** | `_O_WRONLY` (usually `_O_WRONLY | _O_CREAT | _O_TRUNC`) |
 | **`w+`** | `_O_RDWR` (usually `_O_RDWR | _O_CREAT | _O_TRUNC`) |
 | **`b`** | `_O_BINARY` |
-| **`t`** | `_O_TEXT` |
+| **`t`** | `_O_TEXT` (translated) |
 | **`x`** | `_O_EXCL` |
 | **`c`** | None |
 | **`n`** | None |
@@ -155,6 +155,13 @@ Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdo
 | **`ccs=UTF-16LE`** | `_O_UTF16` |
 
 If you're using **`rb`** mode, you don't have to port your code, and if you expect to read most of a large file or aren't concerned about network performance, you might also consider whether to use memory mapped Win32 files as an option.
+
+Regarding `T` and `D`:
+- `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](https://learn.microsoft.com/archive/blogs/larryosterman/its-only-temporary).
+- `D` specifies a regular file that is written to disk. The difference is that it's automatically deleted when it's closed.
+You can combine `TD` to get both semantics.
+
+The **`c`**, **`n`**, **`R`**, **`S`**, **`t`**, **`T`**, and **`D`** *`mode`* options are Microsoft extensions for `fopen` and `_wfopen` and shouldn't be used when you want ANSI portability.
 
 ## Requirements
 
