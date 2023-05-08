@@ -63,6 +63,9 @@ You can download other versions and languages from [Update for Visual C++ 2013 R
 
 ## Visual Studio 2012 (VC++ 11.0) Update 4
 
+> [!NOTE]
+> Visual Studio 2012 [reached end of extended support on January 10, 2023](/lifecycle/products/visual-studio-2012)
+
 These links download the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2012 Update 4. You can download other versions and languages from [Microsoft Visual C++ Redistributable Packages for Visual Studio 2012 Update 4](https://www.microsoft.com/download/details.aspx?id=30679) or from [my.visualstudio.com](https://my.visualstudio.com/Downloads?pid=1452).
 
 | Architecture | Version | Link |
