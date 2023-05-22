@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: Transporting exceptions between threads"
 title: "Transporting exceptions between threads"
-ms.date: "05/07/2019"
+ms.date: 05/02/2023
 helpviewer_keywords: ["std::current_exception", "transporting exceptions between threads", "std::copy_exception", "exception_ptr", "std::exception_ptr", "std::rethrow_exception", "current_exception", "transport exceptions between threads", "copy_exception", "rethrow_exception", "move exceptions between threads"]
-ms.assetid: 5c95d57b-acf5-491f-8122-57c5df0edd98
 ---
 # Transporting exceptions between threads
 
@@ -24,23 +23,23 @@ namespace std
 
 ### Parameters
 
-*unspecified*\
+*`unspecified`*\
 An unspecified internal class that is used to implement the `exception_ptr` type.
 
-*p*\
+*`p`*\
 An `exception_ptr` object that references an exception.
 
-*E*\
+*`E`*\
 A class that represents an exception.
 
-*e*\
+*`e`*\
 An instance of the parameter `E` class.
 
 ## Return value
 
-The `current_exception` function returns an `exception_ptr` object that references the exception that is currently in progress. If no exception is in progress, the function returns an `exception_ptr` object that is not associated with any exception.
+The `current_exception` function returns an `exception_ptr` object that references the exception that is currently in progress. If no exception is in progress, the function returns an `exception_ptr` object that isn't associated with any exception.
 
-The `make_exception_ptr` function returns an `exception_ptr` object that references the exception specified by the *e* parameter.
+The `make_exception_ptr` function returns an `exception_ptr` object that references the exception specified by the *`e`* parameter.
 
 ## Remarks
 
@@ -52,7 +51,7 @@ However, if a secondary thread throws an exception, you want the primary thread 
 
 ### Solution
 
-To handle the previous scenario, the C++ Standard supports transporting an exception between threads. If a secondary thread throws an exception, that exception becomes the *current exception*. By analogy to the real world, the current exception is said to be *in flight*. The current exception is in flight from the time it is thrown until the exception handler that catches it returns.
+To handle the previous scenario, the C++ Standard supports transporting an exception between threads. If a secondary thread throws an exception, that exception becomes the *current exception*. By analogy to the real world, the current exception is said to be *in flight*. The current exception is in flight from the time it's thrown until the exception handler that catches it returns.
 
 The secondary thread can catch the current exception in a **`catch`** block, and then call the `current_exception` function to store the exception in an `exception_ptr` object. The `exception_ptr` object must be available to the secondary thread and to the primary thread. For example, the `exception_ptr` object can be a global variable whose access is controlled by a mutex. The term *transport an exception* means an exception in one thread can be converted to a form that can be accessed by another thread.
 
@@ -60,24 +59,24 @@ Next, the primary thread calls the `rethrow_exception` function, which extracts 
 
 Finally, the primary thread can catch the current exception in a **`catch`** block and then process it or throw it to a higher level exception handler. Or, the primary thread can ignore the exception and allow the process to end.
 
-Most applications do not have to transport exceptions between threads. However, this feature is useful in a parallel computing system because the system can divide work among secondary threads, processors, or cores. In a parallel computing environment, a single, dedicated thread can handle all the exceptions from the secondary threads and can present a consistent exception-handling model to any application.
+Most applications don't have to transport exceptions between threads. However, this feature is useful in a parallel computing system because the system can divide work among secondary threads, processors, or cores. In a parallel computing environment, a single, dedicated thread can handle all the exceptions from the secondary threads and can present a consistent exception-handling model to any application.
 
 For more information about the C++ Standards committee proposal, search the Internet for document number N2179, titled "Language Support for Transporting Exceptions between Threads".
 
 ### Exception-handling models and compiler options
 
-Your application's exception-handling model determines whether it can catch and transport an exception. Visual C++ supports three models that can handle C++ exceptions, structured exception handling (SEH) exceptions, and common language runtime (CLR) exceptions. Use the [/EH](../build/reference/eh-exception-handling-model.md) and [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler options to specify your application's exception-handling model.
+Your application's exception-handling model determines whether it can catch and transport an exception. Visual C++ supports three models for handling C++ exceptions: [ISO-standard C++ exception handling](/cpp/cpp/errors-and-exception-handling-modern-cpp), [structured exception handling (SEH)](/windows/win32/debug/structured-exception-handling), and [common language runtime (CLR) exceptions](/cpp/extensions/exception-handling-cpp-component-extensions). Use the [`/EH`](../build/reference/eh-exception-handling-model.md) and [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler options to specify your application's exception-handling model.
 
-Only the following combination of compiler options and programming statements can transport an exception. Other combinations either cannot catch exceptions, or can catch but cannot transport exceptions.
+Only the following combination of compiler options and programming statements can transport an exception. Other combinations either can't catch exceptions, or can catch but can't transport exceptions.
 
-- The **/EHa** compiler option and the **`catch`** statement can transport SEH and C++ exceptions.
+- The **`/EHa`** compiler option and the **`catch`** statement can transport SEH and C++ exceptions.
 
-- The **/EHa**, **/EHs**, and **/EHsc** compiler options and the **`catch`** statement can transport C++ exceptions.
+- The **`/EHa`**, **`/EHs`**, and **`/EHsc`** compiler options and the **`catch`** statement can transport C++ exceptions.
 
-- The **/CLR** compiler option and the **`catch`** statement can transport C++ exceptions. The **/CLR** compiler option implies specification of the **/EHa** option. Note that the compiler does not support transporting managed exceptions. This is because managed exceptions, which are derived from the [System.Exception class](../standard-library/exception-class.md), are already objects that you can move between threads by using the facilities of the common languange runtime.
+- The **`/clr`** compiler option and the **`catch`** statement can transport C++ exceptions. The **`/clr`** compiler option implies specification of the **`/EHa`** option. The compiler doesn't support transporting managed exceptions. This is because managed exceptions, which are derived from the [System.Exception class](../standard-library/exception-class.md), are already objects that you can move between threads by using the facilities of the common language runtime.
 
    > [!IMPORTANT]
-   > We recommend that you specify the **/EHsc** compiler option and catch only C++ exceptions. You expose yourself to a security threat if you use the **/EHa** or **/CLR** compiler option and a **`catch`** statement with an ellipsis *exception-declaration* (`catch(...)`). You probably intend to use the **`catch`** statement to capture a few specific exceptions. However, the `catch(...)` statement captures all C++ and SEH exceptions, including unexpected ones that should be fatal. If you ignore or mishandle an unexpected exception, malicious code can use that opportunity to undermine the security of your program.
+   > We recommend that you specify the **`/EHsc`** compiler option and catch only C++ exceptions. You expose yourself to a security threat if you use the **`/EHa`** or **`/clr`** compiler option and a **`catch`** statement with an ellipsis *exception-declaration* (`catch(...)`). You probably intend to use the **`catch`** statement to capture a few specific exceptions. However, the `catch(...)` statement captures all C++ and SEH exceptions, including unexpected ones that should be fatal. If you ignore or mishandle an unexpected exception, malicious code can use that opportunity to undermine the security of your program.
 
 ## Usage
 
@@ -85,17 +84,17 @@ The following sections describe how to transport exceptions by using the `except
 
 ## exception_ptr type
 
-Use an `exception_ptr` object to reference the current exception or an instance of a user-specified exception. In the Microsoft implementation, an exception is represented by an [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) structure. Each `exception_ptr` object includes an exception reference field that points to a copy of the `EXCEPTION_RECORD` structure that represents the exception.
+Use an `exception_ptr` object to reference the current exception or an instance of a user-specified exception. In the Microsoft implementation, an exception is represented by an [`EXCEPTION_RECORD`](/windows/win32/api/winnt/ns-winnt-exception_record) structure. Each `exception_ptr` object includes an exception reference field that points to a copy of the `EXCEPTION_RECORD` structure that represents the exception.
 
-When you declare an `exception_ptr` variable, the variable is not associated with any exception. That is, its exception reference field is NULL. Such an `exception_ptr` object is called a *null exception_ptr*.
+When you declare an `exception_ptr` variable, the variable isn't associated with any exception. That is, its exception reference field is NULL. Such an `exception_ptr` object is called a *null exception_ptr*.
 
-Use the `current_exception` or `make_exception_ptr` function to assign an exception to an `exception_ptr` object. When you assign an exception to an `exception_ptr` variable, the variable's exception reference field points to a copy of the exception. If there is insufficient memory to copy the exception, the exception reference field points to a copy of a [std::bad_alloc](../standard-library/bad-alloc-class.md) exception. If the `current_exception` or `make_exception_ptr` function cannot copy the exception for any other reason, the function calls the [terminate](../c-runtime-library/reference/terminate-crt.md) function to exit the current process.
+Use the `current_exception` or `make_exception_ptr` function to assign an exception to an `exception_ptr` object. When you assign an exception to an `exception_ptr` variable, the variable's exception reference field points to a copy of the exception. If there is insufficient memory to copy the exception, the exception reference field points to a copy of a [std::bad_alloc](../standard-library/bad-alloc-class.md) exception. If the `current_exception` or `make_exception_ptr` function can't copy the exception for any other reason, the function calls the [terminate](../c-runtime-library/reference/terminate-crt.md) function to exit the current process.
 
-Despite its name, an `exception_ptr` object is not itself a pointer. It does not obey pointer semantics and cannot be used with the pointer member access (`->`) or indirection (`*`) operators. The `exception_ptr` object has no public data members or member functions.
+Despite its name, an `exception_ptr` object isn't itself a pointer. It doesn't obey pointer semantics and can't be used with the pointer member access (`->`) or indirection (`*`) operators. The `exception_ptr` object has no public data members or member functions.
 
 ### Comparisons
 
-You can use the equal (`==`) and not-equal (`!=`) operators to compare two `exception_ptr` objects. The operators do not compare the binary value (bit pattern) of the `EXCEPTION_RECORD` structures that represent the exceptions. Instead, the operators compare the addresses in the exception reference field of the `exception_ptr` objects. Consequently, a null `exception_ptr` and the NULL value compare as equal.
+You can use the equal (`==`) and not-equal (`!=`) operators to compare two `exception_ptr` objects. The operators don't compare the binary value (bit pattern) of the `EXCEPTION_RECORD` structures that represent the exceptions. Instead, the operators compare the addresses in the exception reference field of the `exception_ptr` objects. So, a null `exception_ptr` and the NULL value compare as equal.
 
 ## current_exception function
 
@@ -105,21 +104,21 @@ Call the `current_exception` function in a **`catch`** block. If an exception is
 
 The `current_exception` function captures the exception that is in flight regardless of whether the **`catch`** statement specifies an [exception-declaration](../cpp/try-throw-and-catch-statements-cpp.md) statement.
 
-The destructor for the current exception is called at the end of the **`catch`** block if you do not rethrow the exception. However, even if you call the `current_exception` function in the destructor, the function returns an `exception_ptr` object that references the current exception.
+The destructor for the current exception is called at the end of the **`catch`** block if you don't rethrow the exception. However, even if you call the `current_exception` function in the destructor, the function returns an `exception_ptr` object that references the current exception.
 
-Successive calls to the `current_exception` function return `exception_ptr` objects that refer to different copies of the current exception. Consequently, the objects compare as unequal because they refer to different copies, even though the copies have the same binary value.
+Successive calls to the `current_exception` function return `exception_ptr` objects that refer to different copies of the current exception. So, the objects compare as unequal because they refer to different copies, even though the copies have the same binary value.
 
 ### SEH exceptions
 
-If you use the **/EHa** compiler option, you can catch an SEH exception in a C++ **`catch`** block. The `current_exception` function returns an `exception_ptr` object that references the SEH exception. And the `rethrow_exception` function throws the SEH exception if you call it with thetransported `exception_ptr` object as its argument.
+If you use the **`/EHa`** compiler option, you can catch an SEH exception in a C++ **`catch`** block. The `current_exception` function returns an `exception_ptr` object that references the SEH exception. And the `rethrow_exception` function throws the SEH exception if you call it with the transported `exception_ptr` object as its argument.
 
 The `current_exception` function returns a null `exception_ptr` if you call it in an SEH **`__finally`** termination handler, an **`__except`** exception handler, or the **`__except`** filter expression.
 
-A transported exception does not support nested exceptions. A nested exception occurs if another exception is thrown while an exception is being handled. If you catch a nested exception, the `EXCEPTION_RECORD.ExceptionRecord` data member points to a chain of `EXCEPTION_RECORD` structures that describe the associated exceptions. The `current_exception` function does not support nested exceptions because it returns an `exception_ptr` object whose `ExceptionRecord` data member is zeroed out.
+A transported exception doesn't support nested exceptions. A nested exception occurs if another exception is thrown while an exception is being handled. If you catch a nested exception, the `EXCEPTION_RECORD.ExceptionRecord` data member points to a chain of `EXCEPTION_RECORD` structures that describe the associated exceptions. The `current_exception` function doesn't support nested exceptions because it returns an `exception_ptr` object whose `ExceptionRecord` data member is zeroed out.
 
 If you catch an SEH exception, you must manage the memory referenced by any pointer in the `EXCEPTION_RECORD.ExceptionInformation` data member array. You must guarantee that the memory is valid during the lifetime of the corresponding `exception_ptr` object, and that the memory is freed when the `exception_ptr` object is deleted.
 
-You can use structured exception (SE) translator functions together with the transport exceptions feature. If an SEH exception is translated to a C++ exception, the `current_exception` function returns an `exception_ptr` that references the translated exception instead of the original SEH exception. The `rethrow_exception` function subsequently throws the translated exception, not the original exception. For more information about SE translator functions, see [_set_se_translator](../c-runtime-library/reference/set-se-translator.md).
+You can use structured exception (SE) translator functions together with the transport exceptions feature. If an SEH exception is translated to a C++ exception, the `current_exception` function returns an `exception_ptr` that references the translated exception instead of the original SEH exception. The `rethrow_exception` function throws the translated exception, not the original exception. For more information about SE translator functions, see [_set_se_translator](../c-runtime-library/reference/set-se-translator.md).
 
 ## rethrow_exception function
 
@@ -133,7 +132,7 @@ The `make_exception_ptr` function takes an instance of a class as its argument a
 
 Calling the `make_exception_ptr` function is equivalent to throwing a C++ exception, catching it in a **`catch`** block, and then calling the `current_exception` function to return an `exception_ptr` object that references the exception. The Microsoft implementation of the `make_exception_ptr` function is more efficient than throwing and then catching an exception.
 
-An application typically does not require the `make_exception_ptr` function, and we discourage its use.
+An application typically doesn't require the `make_exception_ptr` function, and we discourage its use.
 
 ## Example
 
@@ -241,10 +240,10 @@ exception_ptr 1: Caught a  myException exception.
 
 ## Requirements
 
-**Header:** \<exception>
+**Header:** `<exception>`
 
 ## See also
 
-[Exception Handling](../cpp/exception-handling-in-visual-cpp.md)<br/>
-[/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md)<br/>
-[/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)
+[Exception Handling](../cpp/exception-handling-in-visual-cpp.md)
+[`/EH` (Exception Handling Model)](../build/reference/eh-exception-handling-model.md)\
+[`/clr` (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)
