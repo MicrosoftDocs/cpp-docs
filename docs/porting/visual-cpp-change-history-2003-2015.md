@@ -253,6 +253,10 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    The `smallheap` link option has been removed. See [Link Options](../c-runtime-library/link-options.md).
 
+- **_stat**
+
+   The [`_stat`](../c-runtime-library/reference/stat-functions.md) family of functions use `CreateFile` in Visual Studio 2015, instead of `FindFirstFile` as in Visual Studio 2013 and earlier. This means that `_stat` on a path ending with a slash succeeds if the path refers to a directory, as opposed to before when the function would error with `errno` set to `ENOENT`.
+
 #### \<string.h>
 
 - **wcstok**
