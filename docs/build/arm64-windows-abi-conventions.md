@@ -68,9 +68,8 @@ The AArch64 architecture supports 32 integer registers:
 
 | Register | Volatility | Role |
 | - | - | - |
-| x0 | Volatile | Parameter/scratch register 1, result register |
-| x1-x7 | Volatile | Parameter/scratch register 2-8 |
-| x8-x15 | Volatile | Scratch registers |
+| x0-x8 | Volatile | Parameter/Result scratch registers |
+| x9-x15 | Volatile | Scratch registers |
 | x16-x17 | Volatile | Intra-procedure-call scratch registers |
 | x18 | N/A | Reserved platform register: in kernel mode, points to KPCR for the current processor; In user mode, points to TEB |
 | x19-x28 | Non-volatile | Scratch registers |
@@ -91,8 +90,7 @@ The AArch64 architecture also supports 32 floating-point/SIMD registers, summari
 
 | Register | Volatility | Role |
 | - | - | - |
-| v0 | Volatile | Parameter/scratch register 1, result register |
-| v1-v7 | Volatile | Parameter/scratch registers 2-8 |
+| v0-v7 | Volatile | Parameter/Result scratch registers |
 | v8-v15 | Both | Low 64 bits are Non-Volatile. High 64 bits are Volatile. |
 | v16-v31 | Volatile | Scratch registers |
 
