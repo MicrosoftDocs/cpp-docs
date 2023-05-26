@@ -72,7 +72,7 @@ The AArch64 architecture supports 32 integer registers:
 | x1-x7 | Volatile | Parameter/scratch register 2-8 |
 | x8-x15 | Volatile | Scratch registers |
 | x16-x17 | Volatile | Intra-procedure-call scratch registers |
-| x18 | N/A | Reserved platform register: in kernel mode, points to KPCR for the current processor; in user mode, points to TEB |
+| x18 | N/A | Reserved platform register: in kernel mode, points to KPCR for the current processor; In user mode, points to TEB |
 | x19-x28 | Non-volatile | Scratch registers |
 | x29/fp | Non-volatile | Frame pointer |
 | x30/lr | Both | Link Register: Callee function must preserve it for its own return, but caller's value will be lost. |
