@@ -66,16 +66,16 @@ Default layout alignment for globals and statics:
 
 The AArch64 architecture supports 32 integer registers:
 
-| Register | Save | Role |
+| Register | Volatility | Role |
 | - | - | - |
-| x0 | Caller | Parameter/scratch register 1, result register |
-| x1-x7 | Caller | Parameter/scratch register 2-8 |
-| x8-x15 | Caller | Scratch registers |
-| x16-x17 | Caller | Intra-procedure-call scratch registers |
-| x18 | N/A | Platform register: in kernel mode, points to KPCR for the current processor; in user mode, points to TEB |
-| x19-x28 | Callee | Scratch registers |
-| x29/fp | Callee | Frame pointer |
-| x30/lr | Callee | Link registers |
+| x0 | Volatile | Parameter/scratch register 1, result register |
+| x1-x7 | Volatile | Parameter/scratch register 2-8 |
+| x8-x15 | Volatile | Scratch registers |
+| x16-x17 | Volatile | Intra-procedure-call scratch registers |
+| x18 | N/A | Reserved platform register: in kernel mode, points to KPCR for the current processor; in user mode, points to TEB |
+| x19-x28 | Non-volatile | Scratch registers |
+| x29/fp | Non-volatile | Frame pointer |
+| x30/lr | Both | Link Register: Callee function must preserve it for its own return, but caller's value will be lost. |
 
 Each register may be accessed as a full 64-bit value (via x0-x30) or as a 32-bit value (via w0-w30). 32-bit operations zero-extend their results up to 64 bits.
 
@@ -89,18 +89,18 @@ The frame pointer (x29) is required for compatibility with fast stack walking us
 
 The AArch64 architecture also supports 32 floating-point/SIMD registers, summarized below:
 
-| Register | Save | Role |
+| Register | Volatility | Role |
 | - | - | - |
-| v0 | Caller | Parameter/scratch register 1, result register |
-| v1-v7 | Caller | Parameter/scratch registers 2-8 |
-| v8-v15 | Caller/Callee | Low 64 bits are Callee-Saved. High 64 bits are Caller-Saved. |
-| v16-v31 | Caller | Scratch registers |
+| v0 | Volatile | Parameter/scratch register 1, result register |
+| v1-v7 | Volatile | Parameter/scratch registers 2-8 |
+| v8-v15 | Both | Low 64 bits are Non-Volatile. High 64 bits are Volatile. |
+| v16-v31 | Volatile | Scratch registers |
 
 Each register may be accessed as a full 128-bit value (via v0-v31 or q0-q31). It may be accessed as a 64-bit value (via d0-d31), as a 32-bit value (via s0-s31), as a 16-bit value (via h0-h31), or as an 8-bit value (via b0-b31). Accesses smaller than 128 bits only access the lower bits of the full 128-bit register. They leave the remaining bits untouched unless otherwise specified. (AArch64 is different from AArch32, where the smaller registers were packed on top of the larger registers.)
 
 The floating-point control register (FPCR) has certain requirements on the various bitfields within it:
 
-| Bits | Meaning | Save | Role |
+| Bits | Meaning | Volatility | Role |
 | - | - | - | - |
 | 26 | AHP | Callee | Alternative half-precision control. |
 | 25 | DN | Callee | Default NaN mode control. |
