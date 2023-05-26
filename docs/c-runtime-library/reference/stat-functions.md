@@ -1,14 +1,13 @@
 ---
 description: "Learn more about: _stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32"
 title: "_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32"
-ms.date: "4/2/2020"
+ms.date: "5/25/2023"
 api_name: ["_wstat64", "_stati64", "_stat32", "_stat32i64", "_stat", "_wstati64", "_wstat32", "_wstat64i32", "_wstat", "_stat64", "_stat64i32", "_wstat32i64", "_o__stat32", "_o__stat32i64", "_o__stat64", "_o__stat64i32", "_o__wstat32", "_o__wstat32i64", "_o__wstat64", "_o__wstat64i32"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["stat/_stat", "stat/_stat32", "stat/_stat32i64", "stat/_stat64", "stat/_stat64i32", "stat/_stati64", "stat/__stat64", "TCHAR/_tstat", "TCHAR/_tstat32", "TCHAR/_tstat32i64", "TCHAR/_tstat64", "TCHAR/_tstat64i32", "TCHAR/_tstati64", "stat/_wstat", "stat/_wstat32", "stat/_wstat32i64", "stat/_wstat64", "stat/_wstat64i32", "stat/_wstati64", "_stat", "_stat32", "_stat32i64", "_stat64", "_stat64i32", "_stati64", "__stat64", "_tstat", "_tstat32", "_tstat32i64", "_tstat64", "_tstat64i32", "_tstati64", "_wstat", "_wstat32", "_wstat32i64", "_wstat64", "_wstat64i32", "_wstati64", "stat", "stat32", "stat32i64", "stat64", "stat64i32", "stati64", "tstat", "tstat32", "tstat32i64", "tstat64", "tstat64i32", "tstati64", "wstat", "wstat32", "wstat32i64", "wstat64", "wstat64i32", "wstati64"]
 helpviewer_keywords: ["files [C++], status information", "_stat function", "_wstat function", "_stat64i32 function", "tstat function", "_tstat64i32 function", "_stati64 function", "_stat64 function", "tstati64 function", "wstati64 function", "wstat64 function", "_wstat64i32 function", "_tstat32i64 function", "_stat32i64 function", "stat function", "status of files", "_tstat32 function", "tstat64 function", "_wstat64 function", "_tstat function", "_stat32 function", "wstat function", "_wstat32i64 function", "_tstati64 function", "_wstat32 function", "stat64 function", "stati64 function", "_wstati64 function", "_tstat64 function", "files [C++], getting status information"]
-ms.assetid: 99a75ae6-ff26-47ad-af70-5ea7e17226a5
 ---
 # `_stat`, `_stat32`, `_stat64`, `_stati64`, `_stat32i64`, `_stat64i32`, `_wstat`, `_wstat32`, `_wstat64`, `_wstati64`, `_wstat32i64`, `_wstat64i32`
 
@@ -95,6 +94,7 @@ Variations of these functions support 32-bit or 64-bit time types, and 32-bit or
 
 > [!NOTE]
 > **`_wstat`** does not work with Windows Vista symbolic links. In these cases, **`_wstat`** will always report a file size of 0. **`_stat`** does work correctly with symbolic links.
+> The `_stat`family of functions use `CreateFile` in Visual Studio 2015, instead of `FindFirstFile` as in Visual Studio 2013 and earlier. This means that `_stat` on a path ending with a slash succeeds if the path refers to a directory, as opposed to before when the function would error with `errno` set to `ENOENT`.
 
 This function validates its parameters. If either *`path`* or *`buffer`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
