@@ -2,7 +2,7 @@
 description: "Learn more about: How to: Create and Use shared_ptr instances"
 title: "How to: Create and use shared_ptr instances"
 ms.custom: "how-to"
-ms.date: "11/19/2019"
+ms.date: "05/26/2023"
 ms.topic: "conceptual"
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
 ---
