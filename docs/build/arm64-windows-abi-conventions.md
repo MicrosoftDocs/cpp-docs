@@ -102,11 +102,11 @@ The floating-point control register (FPCR) has certain requirements on the vario
 
 | Bits | Meaning | Volatility | Role |
 | - | - | - | - |
-| 26 | AHP | Callee | Alternative half-precision control. |
-| 25 | DN | Callee | Default NaN mode control. |
-| 24 | FZ | Callee | Flush-to-zero mode control. |
-| 23-22 | RMode | Callee | Rounding mode control. |
-| 15,12-8 | IDE/IXE/etc | Callee | Exception trap enable bits, must always be 0. |
+| 26 | AHP | Non-Volatile | Alternative half-precision control. |
+| 25 | DN | Non-Volatile | Default NaN mode control. |
+| 24 | FZ | Non-volatile | Flush-to-zero mode control. |
+| 23-22 | RMode | Non-volatile | Rounding mode control. |
+| 15,12-8 | IDE/IXE/etc | Non-Volatile | Exception trap enable bits, must always be 0. |
 
 ## System registers
 
