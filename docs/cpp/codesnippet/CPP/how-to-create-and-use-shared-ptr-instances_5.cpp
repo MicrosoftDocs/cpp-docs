@@ -20,5 +20,10 @@ void test() {
 
     // Pass the underlying pointer or a reference to the underlying object.
     use_raw_pointer(sp.get());
-    use_reference(*sp.get());
+    use_reference(*sp);
+
+    // Pass the shared_ptr by value.
+    // This invokes the move constructor, which doesn't increment the reference count
+    // but in fact transfers ownership to the callee.
+    use_shared_ptr_by_value(move(sp));
 }
