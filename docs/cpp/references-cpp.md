@@ -69,7 +69,7 @@ struct S {
 
 int main() {
    S  s;   // Declare the object.
-   S& SRef = s;   // Declare the reference.
+   S& SRef = s;   // Declare and initialize the reference.
    s.i = 3;
 
    printf_s("%d\n", s.i);
