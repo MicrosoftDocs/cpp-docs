@@ -628,7 +628,7 @@ items:
                   href: ../build/reference/j-default-char-type-is-unsigned.md
                 - name: /JMC (Just My Code debugging)
                   href: ../build/reference/jmc.md
-                - name: /jumptablerdata (Specify the section for switch case jump tables)
+                - name: /jumptablerdata (place switch case jump tables in .rdata)
                   href: ../build/reference/jump-table-rdata.md
                 - name: /kernel (Create kernel mode binary)
                   href: ../build/reference/kernel-create-kernel-mode-binary.md

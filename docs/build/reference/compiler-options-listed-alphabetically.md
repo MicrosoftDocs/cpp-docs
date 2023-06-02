@@ -116,9 +116,9 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/interface`](interface.md) | Treat the input file as a module interface unit. |
 | [`/internalPartition`](internal-partition.md) | Treat the input file as an internal partition unit. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Changes the default **`char`** type. |
-| [`/jumptablerdata`](jump-table-rdata.md) | Specify whether switch case statement jump tables are placed in the `.rdata` section instead of with the code in the `.text` section |
+| [`/jumptablerdata`](jump-table-rdata.md) | Place switch case statement jump tables in the `.rdata` section. |
 | [`/JMC`](jmc.md) | Supports native C++ Just My Code debugging. |
-| [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker will create a binary that can be executed in the Windows kernel. |
+| [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker create a binary that can be executed in the Windows kernel. |
 | [`/LD`](md-mt-ld-use-run-time-library.md) | Creates a dynamic-link library. |
 | [`/LDd`](md-mt-ld-use-run-time-library.md) | Creates a debug dynamic-link library. |
 | [`/link`](link-pass-options-to-linker.md) | Passes the specified option to LINK. |
@@ -240,9 +240,9 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Zc:throwingNew[-]`](zc-throwingnew-assume-operator-new-throws.md) | Assume **`operator new`** throws on failure (off by default). |
 | [`/Zc:tlsGuards[-]`](zc-tlsguards.md) | Generate runtime checks for TLS variable initialization (on by default). |
 | [`/Zc:trigraphs`](zc-trigraphs-trigraphs-substitution.md) | Enable trigraphs (obsolete, off by default). |
-| [`/Zc:twoPhase[-]`](zc-twophase.md) | Use non-conforming template parsing behavior (conforming by default). |
+| [`/Zc:twoPhase[-]`](zc-twophase.md) | Use nonconforming template parsing behavior (conforming by default). |
 | [`/Zc:wchar_t[-]`](zc-wchar-t-wchar-t-is-native-type.md) | **`wchar_t`** is a native type, not a typedef (on by default). |
-| [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for 0-size arrays of objects (on by default). |
+| [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for zero-size arrays of objects (on by default). |
 | [`/Ze`](za-ze-disable-language-extensions.md) | Deprecated. Enables C89 language extensions. |
 | [`/Zf`](zf.md) | Improves PDB generation time in parallel builds. |
 | [`/ZH:[MD5|SHA1|SHA_256]`](zh.md) | Specifies MD5, SHA-1, or SHA-256 for checksums in debug info. |

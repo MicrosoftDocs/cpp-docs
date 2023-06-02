@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: /jumptablerdata (Specify where switch case jump tables are placed)"
-title: "/jumptablerdata (Specify the location of switch case jump tables)"
-ms.date: "11/04/2016"
+description: "Learn more about: /jumptablerdata (Place switch case jump tables in .rdata)"
+title: "/jumptablerdata (put switch case jump tables in `.rdata`)"
+ms.date: 06/02/2023
 f1_keywords: ["/jumptable"]
 helpviewer_keywords: ["-jumptablerdata compiler option [C++]", "/jumptablerdata compiler option [C++]"]
 ---
-# /jumptablerdata (specify switch case jump table section)
+# /jumptablerdata (put switch case jump tables in `.rdata`)
 
-Forces writes to the program database (PDB) file—created by [/Zi](z7-zi-zi-debug-information-format.md) or [/ZI](z7-zi-zi-debug-information-format.md)—to be serialized through MSPDBSRV.EXE.
+Puts the generated switch case jump tables in the `.rdata` section instead of alongside code in the `.text` section.
 
 ## Syntax
 
@@ -17,9 +17,10 @@ Forces writes to the program database (PDB) file—created by [/Zi](z7-zi-zi-deb
 
 ## Remarks
 
-This flag allows the jump tables generated for switch case statements to be placed in the `.rdata` section instead of the default, which is along with the code in `.text` section. This prevents the jump table from being loaded into both Icache and Dcache, potentially increasing performance.
+Putting jump tables generated for switch case statements in the `.rdata` section prevents the jump table from being loaded into both Icache and Dcache, potentially increasing performance. The `.rdata` section is where const initialized data is stored.
 
-This flag only is relevant for x64 code.
+> [!IMPORTANT]
+> This flag only applies to x64 code.
 
 ### To set this compiler option in the Visual Studio development environment
 

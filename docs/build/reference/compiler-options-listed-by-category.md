@@ -75,7 +75,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) | Deprecated. Enables fast checks. (Same as [`/RTC1`](rtc-run-time-error-checks.md)) |
 | [`/homeparams`](homeparams-copy-register-parameters-to-stack.md) | Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile). |
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Creates a hotpatchable image. |
-| [`jumptablerdata`](jump-table-rdata.md) | Specify whether switch case statement jump tables are placed in the `.rdata` section instead of with the code in the `.text` section |
+| [`/jumptablerdata`](jump-table-rdata.md) | Place switch case statement jump tables in the `.rdata` section. |
 | [`/Qfast_transcendentals`](qfast-transcendentals-force-fast-transcendentals.md) | Generates fast transcendentals. |
 | [`/QIfist`](qifist-suppress-ftol.md) | Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only) |
 | [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | Removes `fwait` commands inside **`try`** blocks. |
@@ -200,7 +200,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/Zc:throwingNew[-]`](zc-throwingnew-assume-operator-new-throws.md) | Assume **`operator new`** throws on failure (off by default). |
 | [`/Zc:tlsGuards[-]`](zc-tlsguards.md) | Generate runtime checks for TLS variable initialization (on by default). |
 | [`/Zc:trigraphs`](zc-trigraphs-trigraphs-substitution.md) | Enable trigraphs (obsolete, off by default). |
-| [`/Zc:twoPhase[-]`](zc-twophase.md) | Use non-conforming template parsing behavior (conforming by default). |
+| [`/Zc:twoPhase[-]`](zc-twophase.md) | Use nonconforming template parsing behavior (conforming by default). |
 | [`/Zc:wchar_t[-]`](zc-wchar-t-wchar-t-is-native-type.md) | **`wchar_t`** is a native type, not a typedef (on by default). |
 | [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for 0-size arrays of objects (on by default). |
 | [`/Ze`](za-ze-disable-language-extensions.md) | Deprecated. Enables C89 language extensions. |
@@ -247,7 +247,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/HELP`](help-compiler-command-line-help.md) | Lists the compiler options. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Changes the default **`char`** type. |
 | [`/JMC`](jmc.md) | Supports native C++ Just My Code debugging. |
-| [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker will create a binary that can be executed in the Windows kernel. |
+| [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker create a binary that can be executed in the Windows kernel. |
 | [`/MP`](mp-build-with-multiple-processes.md) | Builds multiple source files concurrently. |
 | [`/nologo`](nologo-suppress-startup-banner-c-cpp.md) | Suppresses display of sign-on banner. |
 | `/presetPadding` | Zero initialize padding for stack based class types. |
