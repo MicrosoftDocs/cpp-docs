@@ -1,7 +1,7 @@
 ---
 title: "Compiler options listed alphabetically"
 description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
-ms.date: 11/07/2022
+ms.date: 06/02/2023
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
@@ -116,6 +116,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/interface`](interface.md) | Treat the input file as a module interface unit. |
 | [`/internalPartition`](internal-partition.md) | Treat the input file as an internal partition unit. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Changes the default **`char`** type. |
+| [`/jumptablerdata`](jump-table-rdata.md) | Specify whether switch case statement jump tables are placed in the `.rdata` section instead of with the code in the `.text` section |
 | [`/JMC`](jmc.md) | Supports native C++ Just My Code debugging. |
 | [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker will create a binary that can be executed in the Windows kernel. |
 | [`/LD`](md-mt-ld-use-run-time-library.md) | Creates a dynamic-link library. |

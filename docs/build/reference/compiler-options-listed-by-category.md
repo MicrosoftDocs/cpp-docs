@@ -1,9 +1,8 @@
 ---
 title: "Compiler Options Listed by Category"
 description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
-ms.date: 11/07/2022
+ms.date: 06/02/2023
 helpviewer_keywords: ["compiler options, C++"]
-ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
 # Compiler options listed by category
 
@@ -76,6 +75,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) | Deprecated. Enables fast checks. (Same as [`/RTC1`](rtc-run-time-error-checks.md)) |
 | [`/homeparams`](homeparams-copy-register-parameters-to-stack.md) | Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile). |
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Creates a hotpatchable image. |
+| [`jumptablerdata`](jump-table-rdata.md) | Specify whether switch case statement jump tables are placed in the `.rdata` section instead of with the code in the `.text` section |
 | [`/Qfast_transcendentals`](qfast-transcendentals-force-fast-transcendentals.md) | Generates fast transcendentals. |
 | [`/QIfist`](qifist-suppress-ftol.md) | Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only) |
 | [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | Removes `fwait` commands inside **`try`** blocks. |
