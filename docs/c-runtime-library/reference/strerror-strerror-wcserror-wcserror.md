@@ -1,14 +1,13 @@
 ---
 title: "strerror, _strerror, _wcserror, __wcserror"
 description: "Describes the Microsoft C Runtime Library (CRT) functions strerror, _strerror, _wcserror, and __wcserror."
-ms.date: "4/2/2020"
+ms.date: "5/31/2023"
 api_name: ["strerror", "_strerror", "_wcserror", "__wcserror", "_o___wcserror", "_o__strerror", "_o__wcserror", "_o_strerror"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["__sys_errlist", "wcserror", "_strerror", "__wcserror", "strerror", "__sys_nerr", "_tcserror", "_wcserror", "tcserror"]
 helpviewer_keywords: ["strerror function", "_strerror function", "__sys_errlist", "wcserror function", "error messages, printing", "__sys_nerr", "tcserror function", "printing error messages", "_wcserror function", "_tcserror function", "__wcserror function", "error messages, getting"]
-ms.assetid: 27b72255-f627-43c0-8836-bcda8b003e14
 ---
 # `strerror`, `_strerror`, `_wcserror`, `__wcserror`
 
@@ -51,7 +50,7 @@ if (( _access( "datafile", 2 )) == -1 )
    fprintf( stderr, _strerror(NULL) );
 ```
 
-If *`strErrMsg`* is passed as `NULL`, **`_strerror`** returns a pointer to a string. It contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). When *`strErrMsg`* isn't `NULL`, the string contains, in order: your *`strErrMsg`* string, a colon, a space, the system error message, and a newline character. Your string message can be, at most, 94 characters long, in either narrow (**`_strerror`**) or wide (**`__wcserror`**) characters.
+If *`strErrMsg`* is passed as `NULL`, **`_strerror`** returns a pointer to a string. It contains the system error message for the last library call that produced an error. If you call  `__wcserror`, the error-message string is terminated by the newline character (`'\n'`). The other functions don't add `'\n'`. When *`strErrMsg`* isn't `NULL`, the string contains, in order: your *`strErrMsg`* string, a colon, a space, the system error message. Your string message can be, at most, 94 characters long, in either narrow (**`_strerror`**) or wide (**`__wcserror`**) characters.
 
 The actual error number for **`_strerror`** is stored in the variable [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md). To produce accurate results, call **`_strerror`** immediately after a library routine returns an error. Otherwise, later calls to library routines may overwrite the `errno` value.
 
