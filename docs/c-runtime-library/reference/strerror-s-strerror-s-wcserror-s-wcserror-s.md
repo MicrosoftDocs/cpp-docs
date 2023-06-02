@@ -105,7 +105,7 @@ if (( _access( "datafile",2 )) == -1 )
 
 If *`strErrMsg`* is `NULL`, **`_strerror_s`** returns a string in *`buffer`* that contains the system error message for the last library call that produced an error. If *`strErrMsg`* isn't equal to `NULL`, then **`_strerror_s`** returns a string in *`buffer`* that contains (in order) your string message, a colon, a space, the system error message for the last library call that produced an error. Your string message can be, at most, 94 characters long.
 
-These functions truncate the error message if its length exceeds the size of the buffer - 1. The resulting string in *`buffer`* will always be null-terminated.
+These functions truncate the error message if its length exceeds the size of the buffer - 1. The resulting string in *`buffer`* is always null-terminated.
 
 The actual error number for **`_strerror_s`** is stored in the variable [`errno`](../errno-doserrno-sys-errlist-and-sys-nerr.md). The system error messages are accessed through the variable [`_sys_errlist`](../errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. **`_strerror_s`** accesses the appropriate error message by using the `errno` value as an index to the variable `_sys_errlist`. The value of the variable [`_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the `_sys_errlist` array. To produce accurate results, call **`_strerror_s`** immediately after a library routine return with an error. Otherwise, subsequent calls to **`strerror_s`** or **`_strerror_s`** can overwrite the `errno` value.
 
