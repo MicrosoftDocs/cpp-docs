@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /Zc:lambda (Enable updated lambda processor)"
 title: "/Zc:lambda (Enable updated lambda processor)"
-ms.date: 08/11/2021
+ms.date: 06/01/2023
 f1_keywords: ["/Zc:lambda"]
 helpviewer_keywords: ["-Zc:lambda compiler option (C++)", "/Zc:lambda compiler option (C++)"]
 ---
@@ -17,7 +17,8 @@ The **`/Zc:lambda`** compiler option enables conforming lambda grammar and proce
 
 The **`/Zc:lambda`** compiler option enables the conforming lambda processor. It parses and implements lambda code according to the C++ standard. This option is off by default, which uses the legacy lambda processor. Use this option to enable conformance-mode syntax checks of generic lambdas when you use the default [`/std:c++14`](std-specify-language-standard-version.md) or the [`/std:c++17`](std-specify-language-standard-version.md) compiler options.
 
-**`/Zc:lambda`** is automatically enabled by the [`/std:c++20`](std-specify-language-standard-version.md), [`/std:c++latest`](std-specify-language-standard-version.md), and [`/experimental:module`](experimental-module.md) options. You can disable it explicitly by using **`/Zc:lambda-`**. The [`/permissive-`](permissive-standards-conformance.md) option doesn't enable **`/Zc:lambda`**.
+**`/Zc:lambda`** is automatically enabled by the [`/std:c++20`](std-specify-language-standard-version.md), [`/std:c++latest`]
+(std-specify-language-standard-version.md), [`/permissive-`](permissive-standards-conformance.md), and [`/experimental:module`](experimental-module.md) options. You can disable it explicitly by using **`/Zc:lambda-`**.
 
 The **`/Zc:lambda`** option is available starting in Visual Studio 2019 version 16.8. It's available as **`/experimental:newLambdaProcessor`** starting in Visual Studio 2019 version 16.3, but this spelling is now deprecated.
 
