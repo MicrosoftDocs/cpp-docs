@@ -116,7 +116,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/interface`](interface.md) | Treat the input file as a module interface unit. |
 | [`/internalPartition`](internal-partition.md) | Treat the input file as an internal partition unit. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Changes the default **`char`** type. |
-| [`/jumptablerdata`](jump-table-rdata.md) | Place switch case statement jump tables in the `.rdata` section. |
+| [`/jumptablerdata`](jump-table-rdata.md) | Put switch case statement jump tables in the `.rdata` section. |
 | [`/JMC`](jmc.md) | Supports native C++ Just My Code debugging. |
 | [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker create a binary that can be executed in the Windows kernel. |
 | [`/LD`](md-mt-ld-use-run-time-library.md) | Creates a dynamic-link library. |
