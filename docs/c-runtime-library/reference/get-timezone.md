@@ -33,7 +33,7 @@ Zero if successful or an `errno` value if an error occurs.
 
 ## Remarks
 
-The **`_get_timezone`** function retrieves the difference in seconds between UTC and local time as an integer. The default value is 28,800 seconds, for Pacific Standard Time (eight hours behind UTC). You should call [_tzset](tzset.md) first to initialize the timezone, if you don't want to get the default vaule.
+The **`_get_timezone`** function retrieves the difference in seconds between UTC and local time as an integer. The default value is 28,800 seconds, for Pacific Standard Time (eight hours behind UTC). If you don't want the default value, call _tzset first to initialize the timezone.
 
 If *`seconds`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
