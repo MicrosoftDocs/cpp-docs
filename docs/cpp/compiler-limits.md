@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: Compiler Limits"
 title: "Compiler Limits"
-ms.date: "05/06/2019"
+ms.date: "06/05/2023"
 helpviewer_keywords: ["cl.exe compiler, limits for language constructs"]
-ms.assetid: f1fa59c6-55b4-414b-80c5-3df72952160d
 ---
 # Compiler Limits
 
