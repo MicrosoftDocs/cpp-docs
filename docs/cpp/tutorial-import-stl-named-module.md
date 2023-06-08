@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Import the standard library (STL) using modules from the command line (C++)"
-ms.date: 04/24/2023
+ms.date: 06/08/2023
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -33,8 +33,8 @@ It's now possible to import the standard library as a module instead of as a tan
 
 The C++23 standard library introduces two named modules: `std` and `std.compat`.
 
-- `std` exports the declarations and names defined in the C++ standard library namespace `std` such as `std::vector` and `std::sort`. It also exports the contents of C wrapper headers such as `<cstdio>` and `<cstdlib>`, which provide functions like `std::printf()`. C functions defined in the *global namespace*, such as `::printf()`, aren't exported. This improves the situation where including a C wrapper header like `<cstdio>` *also* included C header files like `stdio.h`, which brought in the C global namespace versions. This is no longer a problem if you import `std`.
-- `std.compat` exports everything in `std` and adds the global namespace counterparts of the C runtime such as `::printf`, `::fopen`, `::size_t`, `::strlen`, and so on. This module makes it easier to work with a codebase that refers to many C runtime functions/types in the global namespace.
+- `std` exports the declarations and names defined in the C++ standard library namespace `std`, such as `std::vector` and `std::sort`. It also exports the contents of C wrapper headers such as `<cstdio>` and `<cstdlib>`, which provide functions like `std::printf()`. C functions defined in the *global namespace*, such as `::printf()`, aren't exported. This improves the situation where including a C wrapper header like `<cstdio>` *also* included C header files like `stdio.h`, which brought in the C global namespace versions. This is not a problem if you import `std`.
+- `std.compat` exports everything in `std` and adds the C runtime global namespaces such as `::printf`, `::fopen`, `::size_t`, `::strlen`, and so on. The `std.compat` module makes it easier to work with codebases that refer to many C runtime functions/types in the global namespace.
 
 The compiler imports the entire standard library when you use `import std;` or `import std.compat;` and does it faster than bringing in a single header file. That is, it's faster to bring in the entire standard library with `import std;` (or `import std.compat`) than it's to `#include <vector>`, for example.
 

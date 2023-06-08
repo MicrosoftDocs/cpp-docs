@@ -331,7 +331,7 @@ Spectre mitigations for CVE 2017-5753. Sets [`/Qspectre`](qspectre.md).
 
 Suppresses or enables language extensions. Sets [`/Za`](za-ze-disable-language-extensions.md).
 
-### Treat wchar_t As Built in Type
+### Treat WChar_t As Built in Type
 
 When specified, the type **`wchar_t`** becomes a native type that maps to **`__wchar_t`** in the same way that **`short`** maps to **`__int16`**. [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) is on by default.
 
@@ -387,7 +387,7 @@ Experimental support for the C++ Modules TS and Standard Library modules.
 
 ### Build ISO C++23 Standard Library Modules
 
-When enabled, and the [C++ Language Standard](#cpplang) is set to `/std:c++latest`, VC projects automatically find and build ISO C++23 Standard Library modules. This enables you to `import std` or `import std.compat` in your C++ code. This property is on by default.
+When enabled, and [C++ Language Standard](#cpplang) is set to `/std:c++latest`, VC projects automatically find and build ISO C++23 Standard Library modules. This enables you to `import std` or `import std.compat` in your C++ code. This property is on by default.
 
 ## C/C++ Precompiled Headers Properties
 
