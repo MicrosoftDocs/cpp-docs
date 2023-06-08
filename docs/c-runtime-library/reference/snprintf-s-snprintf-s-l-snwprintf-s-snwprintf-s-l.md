@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l"
 title: "_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l"
-ms.date: "3/9/2021"
+ms.date: 06/06/2023
 api_name: ["_snprintf_s", "_snprintf_s_l", "_snwprintf_s", "_snwprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -68,7 +68,7 @@ int _snwprintf_s(
 Storage location for the output.
 
 *`sizeOfBuffer`*\
-The size of the storage location for output. Size in **`bytes`** for **`_snprintf_s`** or size in **`words`** for **`_snwprintf_s`**.
+The size of the storage location for output. Size in **bytes** for **`_snprintf_s`** or size in **words** for **`_snwprintf_s`**.
 
 *`count`*\
 Maximum number of characters to store, or [`_TRUNCATE`](../truncate.md).
@@ -84,27 +84,38 @@ The locale to use.
 
 ## Return value
 
-**`_snprintf_s`** returns the number of characters stored in *`buffer`*, not counting the terminating null character. **`_snwprintf_s`** returns the number of wide characters stored in *`buffer`*, not counting the terminating null wide character.
+**`_snprintf_s`** and **`_snwprintf_s`** return the number of characters written, not including the terminating `NULL`. For **`_snwprintf_s`**, the returned value is a count of wide characters written. -1 is returned if the data is truncated.
 
-If the storage required to store the data and a terminating null exceeds *`sizeOfBuffer`*, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *`buffer`* to an empty string, set `errno` to `ERANGE`, and return -1.
+### Summary of behavior
 
-If *`buffer`* or *`format`* is a `NULL` pointer, or if *`count`* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
+| Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md)|
+|--|--|--|--|--|
+| Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops | -1 | `EILSEQ (42)` | No |
+| Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | -1 | `EILSEQ (42)` | No |
+| `buffer == NULL` and `sizeOfBuffer == 0` and `count == 0` | 0 | n/a | No |
+| `buffer == NULL` and `sizeOfBuffer != 0` or `count != 0` | -1 | `EINVAL` (22) | n/a | Yes |
+| `buffer == NULL` and `sizeOfBuffer == 0` | No data is written | -1 | `EINVAL` (22) | Yes |
+| `buffer != NULL` and `sizeOfBuffer == 0` | No data is written | -1 | `EINVAL` (22) | Yes |
+1] ok | `count < sizeOfBuffer` and number of characters of data > `count` | The first *`count`* characters are written. Remaining data is truncated. | -1 | N/A | No |
+2] ok | `count < sizeOfBuffer` and number of characters of data <= `count` | All of the data is written and a terminating `NULL` is appended | -1 | N/A | No |
+3]| `count >= sizeOfBuffer` and number of characters of data < `sizeOfBuffer` | All of the data is written (with a terminating `NULL`) | -1 | N/A | No |
+4]| `count >= sizeOfBuffer` and number of characters of data >= `sizeOfBuffer` and `count != _TRUNCATE` | If execution continues after invalid parameter handler executes, sets `buffer[0] == NULL`. | -1 | `ERANGE` (34) | Yes |
+5]| `count == _TRUNCATE` | The number of characters of data equals or exceeds `sizeOfBuffer`, writes as much of the string as will fit in *`buffer`* (with terminating `NULL`) | -1 | n/a | No |
+6]| `count == _TRUNCATE` | The number of characters of data is less than `sizeOfBuffer`, writes the entire string into *`buffer`* (with terminating `NULL`)  | Number of characters written | n/a | No |
+7]| `format == NULL` | No data is written. | -1 | `EINVAL` (22) | Yes |
 
-For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 The **`_snprintf_s`** function formats and stores *`count`* or fewer characters in *`buffer`* and appends a terminating null. Each argument (if any) is converted and output according to the corresponding format specification in *`format`*. The formatting is consistent with the **`printf`** family of functions; see [Format specification syntax: `printf` and `wprintf` functions](../format-specification-syntax-printf-and-wprintf-functions.md). If copying occurs between strings that overlap, the behavior is undefined.
 
-If *`count`* is [`_TRUNCATE`](../truncate.md), then **`_snprintf_s`** writes as much of the string as will fit in *`buffer`* while leaving room for a terminating null. If the entire string (with terminating null) fits in *`buffer`*, then **`_snprintf_s`** returns the number of characters written (not including the terminating null); otherwise, **`_snprintf_s`** returns -1 to indicate that truncation occurred.
-
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string.
 >
->
 > Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
 
-**`_snwprintf_s`** is a wide-character version of **`_snprintf_s`**; the pointer arguments to **`_snwprintf_s`** are wide-character strings. Detection of encoding errors in **`_snwprintf_s`** might differ from the detection in **`_snprintf_s`**. **`_snwprintf_s`**, like **`swprintf_s`**, writes output to a string rather than to a destination of type `FILE`.
+**`_snwprintf_s`** is a wide-character version of **`_snprintf_s`**; the pointer arguments to **`_snwprintf_s`** are wide-character strings. Detection of encoding errors in **`_snwprintf_s`** might differ from that in **`_snprintf_s`**. **`_snwprintf_s`**, like **`swprintf_s`**, writes output to a string rather than to a destination of type **`FILE`**.
 
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -112,17 +123,17 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 ### Generic-text routine mappings
 
-| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---|---|---|---|
-| `_sntprintf_s` | **`_snprintf_s`** | **`_snprintf_s`** | **`_snwprintf_s`** |
-| `_sntprintf_s_l` | **`_snprintf_s_l`** | **`_snprintf_s_l`** | **`_snwprintf_s_l`** |
+|**`_sntprintf_s`**|**`_snprintf_s`**|**`_snprintf_s`**|**`_snwprintf_s`**|
+|**`_sntprintf_s_l`**|**`_snprintf_s_l`**|**`_snprintf_s_l`**|**`_snwprintf_s_l`**|
 
 ## Requirements
 
-| Routine | Required header |
+|Routine|Required header|
 |---|---|
-| **`_snprintf_s`**, **`_snprintf_s_l`** | `<stdio.h>` |
-| **`_snwprintf_s`**, **`_snwprintf_s_l`** | `<stdio.h>` or `<wchar.h>` |
+|**`_snprintf_s`**, **`_snprintf_s_l`**|`<stdio.h>`|
+|**`_snwprintf_s`**, **`_snwprintf_s_l`**|`<stdio.h>` or `<wchar.h>`|
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
