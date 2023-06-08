@@ -1,9 +1,8 @@
 ---
 title: "Microsoft C/C++ change history 2003 - 2015"
 description: "Find all the breaking changes in Microsoft C/C++ from Visual Studio 2003 through Visual Studio 2015 here."
-ms.date: "10/21/2019"
+ms.date: "5/25/2023"
 helpviewer_keywords: ["breaking changes [C++]"]
-ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
 ---
 # Microsoft C/C++ change history 2003 - 2015
 
@@ -38,37 +37,35 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **Refactored binaries**
 
-   The CRT Library has been refactored into a two different binaries: a Universal CRT (ucrtbase), which contains most of the standard functionality, and a VC Runtime Library (vcruntime). The vcruntime library contains the compiler-related functionality such as exception handling, and intrinsics. If you are using the default project settings, then this change doesn't impact you since the linker will use the new default libraries automatically. If you've set the project's **Linker** property **Ignore All Default Libraries** to **Yes** or you are using the `/NODEFAULTLIB` linker option on the command line, then you must update your list of libraries (in the **Additional Dependencies** property) to include the new, refactored libraries. Replace the old CRT library (libcmt.lib, libcmtd.lib, msvcrt.lib, msvcrtd.lib) with the equivalent refactored libraries. For each of the two refactored libraries, there are static (.lib) and dynamic (.dll) versions, and release (with no suffix) and debug versions (with the "d" suffix). The dynamic versions have an import library that you link with. The two refactored libraries are Universal CRT, specifically ucrtbase.dll or ucrtbase.lib, ucrtbased.dll or ucrtbased.lib, and the VC runtime library, libvcruntime.lib, vcruntime*version*.dll, libvcruntimed.lib, and vcruntimed*version*.dll. The *version* in both Visual Studio 2015 and Visual Studio 2017 is 140. See [CRT Library Features](../c-runtime-library/crt-library-features.md).
+   The CRT Library has been refactored into a two different binaries: a Universal CRT (ucrtbase), which contains most of the standard functionality, and a VC Runtime Library (vcruntime). The vcruntime library contains the compiler-related functionality such as exception handling, and intrinsics. If you are using the default project settings, then this change doesn't impact you since the linker uses the new default libraries automatically. If you've set the project's **Linker** property **Ignore All Default Libraries** to **Yes** or you are using the `/NODEFAULTLIB` linker option on the command line, then you must update your list of libraries (in the **Additional Dependencies** property) to include the new, refactored libraries. Replace the old CRT library (`libcmt.lib`, `libcmtd.lib`, `msvcrt.lib`, `msvcrtd.lib`) with the equivalent refactored libraries. For each of the two refactored libraries, there are static (.lib) and dynamic (.dll) versions, and release (with no suffix) and debug versions (with the "d" suffix). The dynamic versions have an import library that you link with. The two refactored libraries are Universal CRT, specifically ucrtbase.dll or ucrtbase.lib, ucrtbased.dll or ucrtbased.lib, and the VC runtime library, `libvcruntime.lib`, vcruntime*version*.dll, `libvcruntimed.lib`, and vcruntimed*version*.dll. The *version* in both Visual Studio 2015 and Visual Studio 2017 is 140. See [CRT Library Features](../c-runtime-library/crt-library-features.md).
 
-#### \<locale.h>
+#### `<locale.h>`
 
-- **localeconv**
+- **`localeconv`**
 
-   The [localeconv](../c-runtime-library/reference/localeconv.md) function declared in locale.h now works correctly when [per-thread locale](../parallel/multithreading-and-locales.md) is enabled. In previous versions of the library, this function would return the `lconv` data for the global locale, not the thread's locale.
+   The [`localeconv`](../c-runtime-library/reference/localeconv.md) function declared in locale.h now works correctly when [per-thread locale](../parallel/multithreading-and-locales.md) is enabled. In previous versions of the library, this function would return the `lconv` data for the global locale, not the thread's locale.
 
    If you use per-thread locales, you should check your use of `localeconv`. If your code assumes that the `lconv` data returned is for the global locale, you should correct it.
 
-#### \<math.h>
+#### `<math.h>`
 
 - **C++ overloads of math library functions**
 
-   In previous versions, \<math.h> defined some, but not all, of the C++ overloads for the math library functions. The rest of the overloads were in the \<cmath> header. Code that only included \<math.h> could have problems with function overload resolution. Now the C++ overloads have been removed from \<math.h> and are only found in \<cmath>.
+   In previous versions, `<math.h>` defined some, but not all, of the C++ overloads for the math library functions. The rest of the overloads were in the `<cmath>` header. Code that only included `<math.h>` could have problems with function overload resolution. Now the C++ overloads have been removed from `<math.h>` and are only found in `<cmath>`.
 
-   To resolve errors, include \<cmath> to get the declarations of the functions that were removed from \<math.h>. These functions were moved:
+   To resolve errors, include `<cmath>` to get the declarations of the functions that were removed from `<math.h>`. These functions were moved:
 
   - `double abs(double)` and `float abs(float)`
-
   - `double pow(double, int)`, `float pow(float, float)`, `float pow(float, int)`, `long double pow(long double, long double)`, `long double pow(long double, int)`
-
   - **`float`** and **`long double`** versions of floating point functions `acos`, `acosh`, `asin`, `asinh`, `atan`, `atanh`, `atan2`, `cbrt`, `ceil`, `copysign`, `cos`, `cosh`, `erf`, `erfc`, `exp`, `exp2`, `expm1`, `fabs`, `fdim`, `floor`, `fma`, `fmax`, `fmin`, `fmod`, `frexp`, `hypot`, `ilogb`, `ldexp`, `lgamma`, `llrint`, `llround`, `log`, `log10`, `log1p`, `log2`, `lrint`, `lround`, `modf`, `nearbyint`, `nextafter`, `nexttoward`, `remainder`, `remquo`, `rint`, `round`, `scalbln`, `scalbn`, `sin`, `sinh`, `sqrt`, `tan`, `tanh`, `tgamma`, and `trunc`
 
-  If you have code that uses `abs` with a floating point type that only includes the \<math.h> header, the floating point versions will no longer be available. The call now resolves to `abs(int)`, even with a floating point argument, which produces the error:
+  If you have code that uses `abs` with a floating point type that only includes the `<math.h>` header, the floating point versions will no longer be available. The call now resolves to `abs(int)`, even with a floating point argument, which produces the error:
 
     ```Output
     warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
     ```
 
-  The fix for this warning is to replace the call to `abs` with a floating point version of `abs`, such as `fabs` for a double argument or `fabsf` for a float argument, or include the \<cmath> header and continue to use `abs`.
+  The fix for this warning is to replace the call to `abs` with a floating point version of `abs`, such as `fabs` for a double argument or `fabsf` for a float argument, or include the `<cmath>` header and continue to use `abs`.
 
 - **Floating point conformance**
 
@@ -80,40 +77,40 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    In Visual Studio 2013, the FLT_ROUNDS macro expanded to a constant expression, which was incorrect because the rounding mode is configurable at runtime, for example, by calling fesetround. The FLT_ROUNDS macro is now dynamic and correctly reflects the current rounding mode.
 
-#### \<new> and \<new.h>
+#### `<new>` and `<new.h>`
 
-- **new and delete**
+- **`new` and `delete`**
 
    In previous versions of the library, the implementation-defined operator new and delete functions were exported from the runtime library DLL (for example, msvcr120.dll). These operator functions are now always statically linked into your binaries, even when using the runtime library DLLs.
 
    This isn't a breaking change for native or mixed code (`/clr`), however for code compiled as [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md), this change might cause your code to fail to compile. If you compile code as `/clr:pure`, you may need to add `#include <new>` or `#include <new.h>` to work around build errors due to this change. The`/clr:pure` option is deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017. Code that needs to be "pure" should be ported to C#.
 
-#### \<process.h>
+#### `<process.h>`
 
-- **_beginthread and _beginthreadex**
+- **`_beginthread` and `_beginthreadex`**
 
-   The [_beginthread](../c-runtime-library/reference/beginthread-beginthreadex.md) and [_beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md) functions now hold a reference to the module in which the thread procedure is defined for the duration of the thread. This helps to ensure that modules aren't unloaded until a thread has run to completion.
+   The [`_beginthread`](../c-runtime-library/reference/beginthread-beginthreadex.md) and [`_beginthreadex`](../c-runtime-library/reference/beginthread-beginthreadex.md) functions now hold a reference to the module in which the thread procedure is defined for the duration of the thread. This helps to ensure that modules aren't unloaded until a thread has run to completion.
 
-#### \<stdarg.h>
+#### `<stdarg.h>`
 
-- **va_start and reference types**
+- **`va_start` and reference types**
 
-   When compiling C++ code, [va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) now validates at compile-time that the argument passed to it isn't of reference type. Reference-type arguments are prohibited by the C++ Standard.
+   When compiling C++ code, [`va_start`](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) now validates at compile-time that the argument passed to it isn't of reference type. Reference-type arguments are prohibited by the C++ Standard.
 
-#### <a name="stdio_and_conio"></a> \<stdio.h> and \<conio.h>
+#### <a name="stdio_and_conio"></a> `<stdio.h>` and `<conio.h>`
 
 - **The printf and scanf family of functions are now defined inline.**
 
-   The definitions of all of the `printf` and `scanf` functions have been moved inline into \<stdio.h>, \<conio.h>, and other CRT headers. This breaking change leads to a linker error (LNK2019, unresolved external symbol) for any programs that declared these functions locally without including the appropriate CRT headers. If possible, you should update the code to include the CRT headers (that is, add `#include <stdio.h>`) and the inline functions, but if you do not want to modify your code to include these header files, an alternative solution is to add an additional library to your linker input, legacy_stdio_definitions.lib.
+   The definitions of all of the `printf` and `scanf` functions have been moved inline into `<stdio.h>`, `<conio.h>`, and other CRT headers. This breaking change leads to a linker error (LNK2019, unresolved external symbol) for any programs that declared these functions locally without including the appropriate CRT headers. If possible, you should update the code to include the CRT headers (that is, add `#include <stdio.h>`) and the inline functions, but if you do not want to modify your code to include these header files, an alternative solution is to add `legacy_stdio_definitions.lib` to your linker input.
 
    To add this library to your linker input in the IDE, open the context menu for the project node, choose **Properties**, then in the **Project Properties** dialog box, choose **Linker**, and edit the **Linker Input** to add `legacy_stdio_definitions.lib` to the semi-colon-separated list.
 
-   If your project links with static libraries that were compiled with a release of Visual Studio earlier than 2015, the linker might report an unresolved external symbol. These errors might reference internal definitions for `_iob`, `_iob_func`, or related imports for certain \<stdio.h> functions in the form of _imp_\*. Microsoft recommends that you recompile all static libraries with the latest version of the C++ compiler and libraries when you upgrade a project. If the library is a third-party library for which source isn't available, you should either request an updated binary from the third party or encapsulate your usage of that library into a separate DLL that you compile with the older version of the compiler and libraries.
+   If your project links with static libraries that were compiled with a release of Visual Studio earlier than 2015, the linker might report an unresolved external symbol. These errors might reference internal definitions for `_iob`, `_iob_func`, or related imports for certain `<stdio.h>` functions in the form of _imp_\*. Microsoft recommends that you recompile all static libraries with the latest version of the C++ compiler and libraries when you upgrade a project. If the library is a third-party library for which source isn't available, you should either request an updated binary from the third party or encapsulate your usage of that library into a separate DLL that you compile with the older version of the compiler and libraries.
 
     > [!WARNING]
     > If you are linking with Windows SDK 8.1 or earlier, you might encounter these unresolved external symbol errors. In that case, you should resolve the error by adding legacy_stdio_definitions.lib to the linker input as described previously.
 
-   To troubleshoot unresolved symbol errors, you can try using [dumpbin.exe](../build/reference/dumpbin-reference.md) to examine the symbols defined in a binary. Try the following command line to view symbols defined in a library.
+   To troubleshoot unresolved symbol errors, you can try using [`dumpbin.exe`](../build/reference/dumpbin-reference.md) to examine the symbols defined in a binary. Try the following command line to view symbols defined in a library.
 
     ```cpp
     dumpbin.exe /LINKERMEMBER somelibrary.lib
@@ -155,7 +152,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **Floating point formatting and parsing**
 
-   New floating point formatting and parsing algorithms have been introduced to improve correctness. This change affects the [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) and [scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) families of functions, as well as functions like [strtod](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).
+   New floating point formatting and parsing algorithms have been introduced to improve correctness. This change affects the [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) and [scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) families of functions, and functions like [strtod](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).
 
    The old formatting algorithms would generate only a limited number of digits, then would fill the remaining decimal places with zero. They could usually generate strings that would round-trip back to the original floating point value, but weren't great if you wanted the exact value (or the closest decimal representation thereof). The new formatting algorithms generate as many digits as are required to represent the value (or to fill the specified precision). As an example of the improvement; consider the results when printing a large power of two:
 
@@ -219,7 +216,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **snprintf and vsnprintf**
 
-   The [snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) and [vsnprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) functions are now implemented. Older code often provided definitions macro versions of these functions because they were not implemented by the CRT library, but they're no longer needed in newer versions. If [snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) or [vsnprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) is defined as a macro before including \<stdio.h>, compilation now fails with an error that indicates where the macro was defined.
+   The [snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) and [vsnprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) functions are now implemented. Older code often provided definitions macro versions of these functions because they were not implemented by the CRT library, but they're no longer needed in newer versions. If [snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) or [vsnprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) is defined as a macro before including `<stdio.h>`, compilation now fails with an error that indicates where the macro was defined.
 
    Normally, the fix to this problem is to delete any declarations of `snprintf` or `vsnprintf` in user code.
 
@@ -229,13 +226,13 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **FILE Encapsulation**
 
-   In previous versions, the complete FILE type was defined publicly in \<stdio.h>, so it was possible for user code to reach into a FILE and modify its internals. The library has been changed to hide implementation details. As part of this change, FILE as defined in \<stdio.h> is now an opaque type and its members are inaccessible from outside of the CRT itself.
+   In previous versions, the complete FILE type was defined publicly in `<stdio.h>`, so it was possible for user code to reach into a FILE and modify its internals. The library has been changed to hide implementation details. As part of this change, FILE as defined in `<stdio.h>` is now an opaque type and its members are inaccessible from outside of the CRT itself.
 
 - **_outp and _inp**
 
    The functions [_outp](../c-runtime-library/outp-outpw-outpd.md), [_outpw](../c-runtime-library/outp-outpw-outpd.md), [_outpd](../c-runtime-library/outp-outpw-outpd.md), [_inp](../c-runtime-library/inp-inpw-inpd.md), [_inpw](../c-runtime-library/inp-inpw-inpd.md), and [_inpd](../c-runtime-library/inp-inpw-inpd.md) have been removed.
 
-#### \<stdlib.h>, \<malloc.h>, and \<sys/stat.h>
+#### `<stdlib.h>`, `<malloc.h>`, and `<sys/stat.h>`
 
 - **strtof and wcstof**
 
@@ -253,9 +250,13 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    The `smallheap` link option has been removed. See [Link Options](../c-runtime-library/link-options.md).
 
-#### \<string.h>
+- **_stat**
 
-- **wcstok**
+   The [`_stat`](../c-runtime-library/reference/stat-functions.md) family of functions use `CreateFile` in Visual Studio 2015, instead of `FindFirstFile` as in Visual Studio 2013 and earlier. This means that `_stat` on a path ending with a slash succeeds if the path refers to a directory, as opposed to before when the function would error with `errno` set to `ENOENT`.
+
+#### `<string.h>`
+
+- **`wcstok`**
 
    The signature of the `wcstok` function has been changed to match what is required by the C Standard. In previous versions of the library, the signature of this function was:
 
@@ -267,21 +268,21 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    A new `_wcstok` function has been added with the old signature to ease porting. When compiling C++ code, there is also an inline overload of `wcstok` that has the old signature. This overload is declared as deprecated. In C code, you may define_CRT_NON_CONFORMING_WCSTOK to cause `_wcstok` to be used in place of `wcstok`.
 
-#### \<time.h>
+#### `<time.h>`
 
 - **clock**
 
-   In previous versions, the [clock](../c-runtime-library/reference/clock.md) function was implemented using the Windows API [GetSystemTimeAsFileTime](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime). With this implementation, the clock function was sensitive to the system time, and was thus not necessarily monotonic. The clock function has been reimplemented in terms of [QueryPerformanceCounter](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) and is now monotonic.
+   In previous versions, the [`clock`](../c-runtime-library/reference/clock.md) function was implemented using the Windows API [`GetSystemTimeAsFileTime`](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime). With this implementation, the clock function was sensitive to the system time, and was thus not necessarily monotonic. The clock function has been reimplemented in terms of [`QueryPerformanceCounter`](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) and is now monotonic.
 
 - **fstat and _utime**
 
-   In previous versions, the [_stat](../c-runtime-library/reference/stat-functions.md), [fstat](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md), and [_utime](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md) functions handle daylight savings time incorrectly. Prior to Visual Studio 2013, all of these functions incorrectly adjusted standard time times as if they were in daylight time.
+   In previous versions, the [`_stat`](../c-runtime-library/reference/stat-functions.md), [`fstat`](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md), and [`_utime`](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md) functions handle daylight savings time incorrectly. Prior to Visual Studio 2013, all of these functions incorrectly adjusted standard time times as if they were in daylight time.
 
-   In Visual Studio 2013, the problem was fixed in the **_stat** family of functions, but the similar problems in the **fstat** and **_utime** families of functions were not fixed. This partial fix led to problems due to the inconsistency between the functions. The **fstat** and **_utime** families of functions have now been fixed, so all of these functions now handle daylight savings time correctly and consistently.
+   In Visual Studio 2013, the problem was fixed in the **`_stat`** family of functions, but the similar problems in the **`fstat`** and **`_utime`** families of functions were not fixed. This partial fix led to problems due to the inconsistency between the functions. The **`fstat`** and **`_utime`** families of functions have now been fixed, so all of these functions now handle daylight savings time correctly and consistently.
 
 - **asctime**
 
-   In previous versions, the [asctime](../c-runtime-library/reference/asctime-wasctime.md) function would pad single-digit days with a leading zero, for example: `Fri Jun 06 08:00:00 2014`. The specification requires that such days be padded with a leading space, as in `Fri Jun  6 08:00:00 2014`. This issue has been fixed.
+   In previous versions, the [`asctime`](../c-runtime-library/reference/asctime-wasctime.md) function would pad single-digit days with a leading zero, for example: `Fri Jun 06 08:00:00 2014`. The specification requires that such days be padded with a leading space, as in `Fri Jun  6 08:00:00 2014`. This issue has been fixed.
 
 - **strftime and wcsftime**
 
@@ -291,7 +292,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **timespec and TIME_UTC**
 
-   The \<time.h> header now defines the `timespec` type and the `timespec_get` function from the C11 Standard. In addition, the TIME_UTC macro, for use with the `timespec_get` function, is now defined. This update is a breaking change for code that has a conflicting definition for any of these identifiers.
+   The `<time.h>` header now defines the `timespec` type and the `timespec_get` function from the C11 Standard. In addition, the TIME_UTC macro, for use with the `timespec_get` function, is now defined. This update is a breaking change for code that has a conflicting definition for any of these identifiers.
 
 - **CLOCKS_PER_SEC**
 
@@ -303,11 +304,11 @@ To enable new optimizations and debugging checks, the Visual Studio implementati
 
 - **C++ Standard Library include files**
 
-   Some changes have been made to the include structure in the C++ Standard Library headers. C++ Standard Library headers are allowed to include each other in unspecified ways. In general, you should write your code so that it carefully includes all of the headers that it needs according to the C++ standard, and doesn't rely on which C++ Standard Library headers include which other C++ Standard Library headers. This makes code portable across versions and platforms. At least two header changes in Visual Studio 2015 affect user code. First, \<string> no longer includes \<iterator>. Second, \<tuple> now declares `std::array` without including all of \<array>, which can break code through the following combination of code constructs: your code has a variable named "array", and you have a using-directive "using namespace std;", and you include a C++ Standard Library header (such as \<functional>) that includes \<tuple>, which now declares `std::array`.
+   Some changes have been made to the include structure in the C++ Standard Library headers. C++ Standard Library headers are allowed to include each other in unspecified ways. In general, you should write your code so that it carefully includes all of the headers that it needs according to the C++ standard, and doesn't rely on which C++ Standard Library headers include which other C++ Standard Library headers. This makes code portable across versions and platforms. At least two header changes in Visual Studio 2015 affect user code. First, `<string>` no longer includes `<iterator>`. Second, `<tuple>` now declares `std::array` without including all of `<array>`, which can break code through the following combination of code constructs: your code has a variable named "array", and you have a using-directive "using namespace std;", and you include a C++ Standard Library header (such as `<functional>`) that includes `<tuple>`, which now declares `std::array`.
 
 - **steady_clock**
 
-   The \<chrono> implementation of [steady_clock](../standard-library/steady-clock-struct.md) has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on [QueryPerformanceCounter](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in Visual Studio `steady_clock::time_point` is now a typedef for `chrono::time_point<steady_clock>`; however, this isn't necessarily the case for other implementations.
+   The `<chrono>` implementation of [`steady_clock`](../standard-library/steady-clock-struct.md) has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on [`QueryPerformanceCounter`](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in Visual Studio `steady_clock::time_point` is now a typedef for `chrono::time_point<steady_clock>`; however, this isn't necessarily the case for other implementations.
 
 - **allocators and const**
 
@@ -325,19 +326,19 @@ To enable new optimizations and debugging checks, the Visual Studio implementati
 
 - **const elements**
 
-   The C++ standard has always forbidden containers of const elements (such as vector\<const T> or set\<const T>). Visual Studio 2013 and earlier accepted such containers. In the current version, such containers fail to compile.
+   The C++ standard has always forbidden containers of const elements (such as `vector<const T>` or `set<const T>`). Visual Studio 2013 and earlier accepted such containers. In the current version, such containers fail to compile.
 
 - **std::allocator::deallocate**
 
-   In Visual Studio 2013 and earlier, `std::allocator::deallocate(p, n)` ignored the argument passed in for *n*.  The C++ standard has always required that *n* must be equal to the value passed as the first argument to the invocation of `allocate` which returned *p*. However, in the current version, the value of *n* is inspected. Code that passes arguments for *n* that differ from what the standard requires might crash at runtime.
+   In Visual Studio 2013 and earlier, `std::allocator::deallocate(p, n)` ignored the argument passed in for *n*.  The C++ standard has always required that *n* must be equal to the value passed as the first argument to the invocation of `allocate`, which returned *p*. However, in the current version, the value of *n* is inspected. Code that passes arguments for *n* that differ from what the standard requires might crash at runtime.
 
 - **hash_map and hash_set**
 
-   The non-standard header files \<hash_map> and \<hash_set> are deprecated in Visual Studio 2015 and will be removed in a future release. Use \<unordered_map> and \<unordered_set> instead.
+   The non-standard header files `<hash_map>` and `<hash_set>` are deprecated in Visual Studio 2015 and will be removed in a future release. Use `<unordered_map>` and `<unordered_set>` instead.
 
 - **comparators and operator()**
 
-   Associative containers (the \<map> family) now require their comparators to have const-callable function call operators. The following code in a comparator class declaration now fails to compile:
+   Associative containers (the `<map>` family) now require their comparators to have const-callable function call operators. The following code in a comparator class declaration now fails to compile:
 
     ```cpp
     bool operator()(const X& a, const X& b)
@@ -2936,7 +2937,7 @@ The C++ compiler in Visual Studio 2013 detects mismatches in _ITERATOR_DEBUG_LEV
 
 - `reference_wrapper`, `ref()`, and `cref()` now forbid binding to temporary objects.
 
-- \<random> now strictly enforces its compile-time preconditions.
+- `<random>` now strictly enforces its compile-time preconditions.
 
 - Various C++ Standard Library type traits have the precondition "T shall be a complete type". Although the compiler now enforces this precondition more strictly, it may not enforce it in all situations. (Because C++ Standard Library precondition violations trigger undefined behavior, the Standard doesn't guarantee enforcement.)
 
@@ -2946,7 +2947,7 @@ The C++ compiler in Visual Studio 2013 detects mismatches in _ITERATOR_DEBUG_LEV
 
    As a side-effect of this change, the identity case no longer works (`common_type<T>` doesn't always result in type `T`). This behavior conforms to the Proposed Resolution, but it breaks any code that relied on the previous behavior.
 
-   If you require an identity type trait, don't use the non-standard `std::identity` that's defined in \<type_traits> because it won't work for \<void>. Instead, implement your own identity type trait to suit your needs. Here's an example:
+   If you require an identity type trait, don't use the non-standard `std::identity` that's defined in `<type_traits>` because it won't work for `<void>`. Instead, implement your own identity type trait to suit your needs. Here's an example:
 
     ```cpp
     template < typename T> struct Identity {
@@ -3062,7 +3063,7 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 ### MFC and ATL
 
-- Removed Fusion support (afxcomctl32.h); therefore, all methods that are defined in \<afxcomctl32.h> have been removed. Header files \<afxcomctl32.h> and \<afxcomctl32.inl> have been deleted.
+- Removed Fusion support (afxcomctl32.h); therefore, all methods that are defined in `<afxcomctl32.h>` have been removed. Header files `<afxcomctl32.h>` and `<afxcomctl32.inl>` have been deleted.
 
 - Changed the name of `CDockablePane::RemoveFromDefaultPaneDividier` to `CDockablePane::RemoveFromDefaultPaneDivider`.
 
@@ -3272,9 +3273,9 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 ### Standard Library
 
-- The \<iterator> header is no longer included automatically by many other header files. Instead, include that header explicitly if you require support for the standalone iterators defined in the header. An existing project is affected if it depends on the previous build tool, VCBUILD.exe, or project file suffix, .vcproj.iterator.
+- The `<iterator>` header is no longer included automatically by many other header files. Instead, include that header explicitly if you require support for the standalone iterators defined in the header. An existing project is affected if it depends on the previous build tool, VCBUILD.exe, or project file suffix, .vcproj.iterator.
 
-- In the \<algorithm> header, the checked_* and unchecked_\* functions are removed. And in the \<iterator>> header, the `checked_iterator` class is removed, and the `unchecked_array_iterator` class has been added.
+- In the `<algorithm>` header, the `checked_*` and `unchecked_*` functions are removed. And in the `<iterator>`> header, the `checked_iterator` class is removed, and the `unchecked_array_iterator` class has been added.
 
 - The `CComPtr::CComPtr(int)` constructor is removed. That constructor allowed a `CComPtr` object to be constructed from the NULL macro, but was unnecessary and allowed nonsensical constructions from non-zero integers.
 
@@ -3460,11 +3461,11 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 ### Standard Library (2005)
 
-- The exception class (located in the \<exception> header) has been moved to the `std` namespace. In previous versions, this class was in the global namespace. To resolve any errors indicating that the exception class can't be found, add the following using statement to your code: `using namespace std;`
+- The exception class (located in the `<exception>` header) has been moved to the `std` namespace. In previous versions, this class was in the global namespace. To resolve any errors indicating that the exception class can't be found, add the following using statement to your code: `using namespace std;`
 
 - When calling `valarray::resize()`, the contents of the `valarray` will be lost and will be replaced by default values. The `resize()` method is intended to reinitialize the `valarray` rather than grow it dynamically like a vector.
 
-- Debug Iterators: Applications built with a debug version of the C-Runtime Library and which use iterators incorrectly might begin to see asserts at runtime. To disable these asserts, you must define _HAS_ITERATOR_DEBUGGING (superseded by [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) after Visual Studio 2010) to 0. For more information, see [Debug Iterator Support](../standard-library/debug-iterator-support.md)
+- Debug Iterators: Applications built with a debug version of the C-Runtime Library and which use iterators incorrectly might begin to see asserts at runtime. To disable these asserts, you must define _HAS_ITERATOR_DEBUGGING (superseded by [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md) after Visual Studio 2010) to 0. For more information, see [Debug Iterator Support](../standard-library/debug-iterator-support.md)
 
 ## Visual C++ .NET 2003 Breaking Changes
 

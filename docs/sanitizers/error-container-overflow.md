@@ -15,6 +15,7 @@ In Visual Studio 2022 version 17.2 and later, the MSVC standard library (STL) is
 | Standard container type | Disable annotations macro | Supported in version |
 |--|--|--|
 | `std::vector` | `_DISABLE_VECTOR_ANNOTATION` | Visual Studio 2022 17.2 |
+| `std::string` | `_DISABLE_STRING_ANNOTATION` | Visual Studio 2022 17.6 |
 
 When a standard type has annotations enabled, to avoid one-definition-rule (ODR) violations, each static library and object used to link the binary must also enable those annotations. Effectively, you must build those static libraries and objects with AddressSanitizer enabled. Mixing code with different annotation settings causes an error:
 

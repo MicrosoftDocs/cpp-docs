@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: Compiler Limits"
 title: "Compiler Limits"
-ms.date: "05/06/2019"
+ms.date: "06/05/2023"
 helpviewer_keywords: ["cl.exe compiler, limits for language constructs"]
-ms.assetid: f1fa59c6-55b4-414b-80c5-3df72952160d
 ---
 # Compiler Limits
 
@@ -11,9 +10,9 @@ The C++ standard recommends limits for various language constructs. The followin
 
 - Nesting levels of compound statements, iteration control structures, and selection control structures - C++ standard: 256, Microsoft C++ compiler: depends on the combination of statements that are nested, but generally between 100 and 110.
 
-- Parameters in one macro definition - C++ standard: 256, Microsoft C++ compiler: 127.
+- Parameters in one macro definition - C++ standard: 256, Microsoft C++ compiler using `/Zc:preprocessor-`:127 or using `/Zc:preprocessor`:32767.
 
-- Arguments in one macro invocation - C++ standard: 256, Microsoft C++ compiler 127.
+- Arguments in one macro invocation - C++ standard: 256, Microsoft C++ compiler using `/Zc:preprocessor-`:127 or using `/Zc:preprocessor`:32767.
 
 - Characters in a character string literal or wide string literal (after concatenation) - C++ standard: 65536, Microsoft C++ compiler: 65535 single-byte characters, including the NULL terminator, and 32767 double-byte characters, including the NULL terminator.
 

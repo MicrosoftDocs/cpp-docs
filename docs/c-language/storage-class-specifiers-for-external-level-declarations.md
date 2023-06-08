@@ -51,6 +51,7 @@ The example below illustrates external declarations:
 #include <stdio.h>
 
 extern int i;                // Reference to i, defined below
+extern void other ( void );  // Reference to other(), defined in second source file
 void next( void );           // Function prototype
 
 int main()
