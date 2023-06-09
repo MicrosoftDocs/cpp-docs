@@ -366,7 +366,7 @@ Determines the C++ language standard that the compiler enables. The default valu
 - **ISO C++17 Standard (/std:c++17)**
 - **ISO C++20 Standard (/std:c++20)**
 - **Preview - Features from the Latest C++ Working Draft  (/std:c++latest)**
- 
+
 ### C Language Standard
 
 Determines the C language standard that the compiler enables. The default value doesn't set a standard option, so the compiler uses its default legacy MSVC setting. If you select a specific value, the corresponding [`/std`](std-specify-language-standard-version.md) compiler option is set.md).
@@ -387,7 +387,7 @@ Experimental support for the C++ Modules TS and Standard Library modules.
 
 ### Build ISO C++23 Standard Library Modules
 
-When enabled, and [C++ Language Standard](#cpplang) is set to `/std:c++latest`, VC projects automatically find and build ISO C++23 Standard Library modules. This enables you to `import std` or `import std.compat` in your C++ code. This property is on by default.
+Starting in Visual Studio 17.6, when this property is enabled and [C++ Language Standard](#cpplang) is set to `/std:c++latest`, Visual C++ projects automatically find and build ISO C++23 Standard Library modules. This enables you to `import std` or `import std.compat` in your C++ code. This property is on by default.
 
 ## C/C++ Precompiled Headers Properties
 
