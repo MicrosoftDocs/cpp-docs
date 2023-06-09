@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Import the standard library (STL) using modules from the command line (C++)"
-ms.date: 2/23/2023
+ms.date: 06/08/2023
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -10,7 +10,7 @@ description: Learn how to import the C++ standard library (STL) using modules fr
 
 # Tutorial: Import the C++ standard library using modules from the command line
 
-Learn how to import the C++ standard library using C++ library modules. This is significantly faster to compile and more robust than using header files or header units or precompiled headers (PCH).
+Learn how to import the C++ standard library using C++ library modules. This results in significantly faster compilation and is more robust than using header files or header units or precompiled headers (PCH).
 
 In this tutorial, learn about:
 
@@ -27,24 +27,24 @@ This tutorial requires Visual Studio 2022 17.5 or later.
 
 ## An introduction to the standard library modules
 
-Header files suffer from semantics that change depending on macro definitions, semantics that change depending on the order you include them, and they slow compilation. Modules solve these problems.
+Header files suffer from semantics that change depending on macro definitions, the order in which you include them, and they slow compilation. Modules solve these problems.
 
 It's now possible to import the standard library as a module instead of as a tangle of header files. This is significantly faster and more robust than including header files or header units or precompiled headers (PCH).
 
 The C++23 standard library introduces two named modules: `std` and `std.compat`.
 
-- `std` exports the declarations and names defined in the C++ standard library namespace `std` such as `std::vector` and `std::sort`. It also exports the contents of C wrapper headers such as `<cstdio>` and `<cstdlib>`, which provide functions like `std::printf()`. C functions defined in the *global namespace*, such as `::printf()`, aren't exported. This improves the situation where including a C wrapper header like `<cstdio>` *also* included C header files like `stdio.h`, which brought in the C global namespace versions. This is no longer a problem if you import `std`.
-- `std.compat` exports everything in `std` and adds the global namespace counterparts of the C runtime such as `::printf`, `::fopen`, `::size_t`, `::strlen`, and so on. This module makes it easier to work with a codebase that refers to many C runtime functions/types in the global namespace.
+- `std` exports the declarations and names defined in the C++ standard library namespace `std`, such as `std::vector` and `std::sort`. It also exports the contents of C wrapper headers such as `<cstdio>` and `<cstdlib>`, which provide functions like `std::printf()`. C functions defined in the *global namespace*, such as `::printf()`, aren't exported. This improves the situation where including a C wrapper header like `<cstdio>` *also* included C header files like `stdio.h`, which brought in the C global namespace versions. This is not a problem if you import `std`.
+- `std.compat` exports everything in `std` and adds the C runtime global namespaces such as `::printf`, `::fopen`, `::size_t`, `::strlen`, and so on. The `std.compat` module makes it easier to work with codebases that refer to many C runtime functions/types in the global namespace.
 
 The compiler imports the entire standard library when you use `import std;` or `import std.compat;` and does it faster than bringing in a single header file. That is, it's faster to bring in the entire standard library with `import std;` (or `import std.compat`) than it's to `#include <vector>`, for example.
 
 Because named modules don't expose macros, macros like `assert`, `errno`, `offsetof`, `va_arg`, and others aren't available when you import `std` or `std.compat`. See [Standard library named module considerations](#standard-library-named-module-considerations) for workarounds.
 
-## A little about C++ modules
+## About C++ modules
 
 Header files are how declarations and definitions have been shared between source files in C++. Prior to standard library modules, you'd include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are or aren't defined. They also slow compilation because they're reprocessed by every source file that includes them.
 
-C++20 introduces a modern alternative called *modules*. In C++23, we were able to capitalize on module support to introduce named modules for the standard library.
+C++20 introduces a modern alternative called *modules*. In C++23, we were able to capitalize on module support to introduce named modules to represent the standard library.
 
 Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules aren't fragile and are easier to compose because their semantics don't change due to macro definitions or the order in which you import them. The compiler can process modules significantly faster than it can process `#include` files, and uses less memory at compile time as well. Named modules don't expose macro definitions or private implementation details.
 
@@ -54,7 +54,7 @@ This article demonstrates the new and best way to consume the standard library. 
 
 ## Import the standard library with `std`
 
-The following examples demonstrate how to consume the standard library as a module using the command line compiler. The Visual Studio IDE experience for importing the standard library as a module is being implemented.
+The following examples demonstrate how to consume the standard library as a module using the command line compiler. For information about how to do this in the Visual Studio IDE, see [Build ISO C++23 Standard Library Modules](..\build\reference\c-cpp-prop-page.md#build-iso-c23-standard-library-modules).
 
 The statement `import std;` or `import std.compat;` imports the standard library into your application. But first, you must compile the standard library named modules. The following steps demonstrate how.
 
@@ -132,7 +132,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
 The C++ standard library includes the ISO C standard library. The `std.compat` module provides all of the functionality of the `std` module like `std::vector`, `std::cout`, `std::printf`, `std::scanf`, and so on. But it also provides the global namespace versions of these functions such as `::printf`, `::scanf`, `::fopen`, `::size_t`, and so on.
 
-The `std.compat` named module is a compatibility layer provided to ease migrating existing code that refers to C runtime functions in the global namespace. If you want to avoid adding names to the global namespace, use `import std;`. If you need to ease migrating a codebase that uses many unqualified (that is, global namespace) C runtime functions, use `import std.compat;`. This provides the global namespace C runtime names so that you don't have to qualify all the global name mentions with `std::`. If you don't have any existing code that uses the global namespace C runtime functions, then you don't need to use `import std.compat;`. If you only call a few C runtime functions in your code, it may be better to use `import std;` and qualify the few global namespace C runtime names that need it with `std::`, for example, `std::printf()`. If you see an error like `error C3861: 'printf': identifier not found` when you try to compile your code, consider using `import std.compat;` to import the global namespace C runtime functions.
+The `std.compat` named module is a compatibility layer provided to ease migrating existing code that refers to C runtime functions in the global namespace. If you want to avoid adding names to the global namespace, use `import std;`. If you need to ease migrating a codebase that uses many unqualified (that is, global namespace) C runtime functions, use `import std.compat;`. This provides the global namespace C runtime names so that you don't have to qualify all the global name mentions with `std::`. If you don't have any existing code that uses the global namespace C runtime functions, then you don't need to use `import std.compat;`. If you only call a few C runtime functions in your code, it may be better to use `import std;` and qualify the few global namespace C runtime names that need it with `std::`. For example, `std::printf()`. If you see an error like `error C3861: 'printf': identifier not found` when you try to compile your code, consider using `import std.compat;` to import the global namespace C runtime functions.
 
 ### Example: `std.compat`
 
