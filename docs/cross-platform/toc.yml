@@ -15,6 +15,8 @@ items:
   items:
   - name: Create an Android Native Activity app
     href: ../cross-platform/create-an-android-native-activity-app.md
+  - name: Build an OpenGL ES application on Android and iOS
+    href: ../cross-platform/build-an-opengl-es-application-on-android-and-ios.md
   - name: Import an Xcode project
     href: ../cross-platform/import-an-xcode-project.md
   - name: Sync changes between Xcode and Visual Studio
