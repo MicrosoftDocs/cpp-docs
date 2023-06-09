@@ -1,7 +1,7 @@
 ---
 title: "C/C++ Project Properties (Visual Studio)"
 description: "Reference guide to the Visual Studio Microsoft C/C++ project Property Pages properties."
-ms.date: 4/24/2023
+ms.date: 6/9/2023
 ms.topic: "article"
 f1_keywords: ["VC.Project.VCCLCompilerTool.AdditionalModuleDirectories", "VC.Project.VCCLCompilerTool.ScanSourceForModuleDependencies"]
 ---
@@ -387,7 +387,7 @@ Experimental support for the C++ Modules TS and Standard Library modules.
 
 ### Build ISO C++23 Standard Library Modules
 
-Starting in Visual Studio 17.6, when this property is enabled and [C++ Language Standard](#cpplang) is set to `/std:c++latest`, Visual C++ projects automatically find and build ISO C++23 Standard Library modules. This enables you to `import std` or `import std.compat` in your C++ code. This property is on by default.
+Starting in Visual Studio 17.6, when this property is enabled and [C++ Language Standard](#cpplang) is set to `/std:c++latest`, Visual C++ projects automatically find and build ISO C++23 Standard Library modules. This enables you to `import std` or `import std.compat` in your C++ code.
 
 ## C/C++ Precompiled Headers Properties
 
