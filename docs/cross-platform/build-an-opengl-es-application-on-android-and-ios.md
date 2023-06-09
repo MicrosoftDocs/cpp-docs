@@ -1,16 +1,19 @@
 ---
 description: "Learn more about: Build an OpenGL ES application on Android and iOS"
 title: "Build an OpenGL ES application on Android and iOS"
-ms.date: "10/09/2019"
-ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
+ms.date: "06/09/2023"
 ---
+
 # Build an OpenGL ES application on Android and iOS
 
 You can create Visual Studio solutions and projects for iOS apps and Android apps that share common code. This article guides you through a combined solution template. It creates both an iOS app, and an Android Native Activity app. The apps have C++ code in common that uses OpenGL ES to display the same animated rotating cube on each platform. OpenGL ES (OpenGL for Embedded Systems or GLES) is a 2D and 3D graphics API. It's supported on many mobile devices.
 
 ## Requirements
 
-Meet all the system requirements to create an OpenGL ES app for iOS and Android. If you haven't already, install the Mobile Development with C++ workload in the Visual Studio Installer. To get the OpenGL ES templates, and to build for iOS, include the optional C++ iOS development tools. To build for Android, install the C++ Android development tools and the required third-party tools: Android NDK, Apache Ant, and Google Android Emulator.
+> [!IMPORTANT]
+> OpenGL support is no longer available. It was last available in Visual Studio 17.3.
+
+Here are the system requirements to create an OpenGL ES app for iOS and Android. If you haven't already, install the Mobile Development with C++ workload in the Visual Studio Installer. To get the OpenGL ES templates, and to build for iOS, include the optional C++ iOS development tools. To build for Android, install the C++ Android development tools and the required third-party tools: Android NDK, Apache Ant, and Google Android Emulator.
 
 For better emulator performance on Intel platforms, one option is to install the Intel Hardware Accelerated Execution Manager (HAXM). For detailed instructions, see [Install cross-platform mobile development with C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md).
 
