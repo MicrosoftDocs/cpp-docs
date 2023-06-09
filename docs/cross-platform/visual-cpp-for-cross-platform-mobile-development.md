@@ -22,6 +22,60 @@ Development using C++ for cross-platform mobile development has several advantag
 
 Mobile development with C++ is an installable workload that comes with Visual Studio. For prerequisites and installation instructions, see [Install cross-platform mobile development with C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). To build code for iOS, you also need a Mac computer and an Apple iOS Developer Account. For more information, see [Install and configure tools to build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
+## Come up to speed
+
+If you're coming from Android or iOS development, we have some great material on how to get started. Visual Studio is an expressive and capable development environment. To learn how to use it, try [Get started for Android developers](/previous-versions/windows/apps/dn275875\(v=win.10\)) or [Get started for iOS developers](/previous-versions/windows/apps/jj657966\(v=win.10\)). These articles introduce you to Visual Studio, and to the concepts you'll need to develop cross-platform apps for Windows and Windows Store. To get started writing your first cross-platform app for iOS and Android, see [Build an OpenGL ES application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
+
+The Mobile development with C++ workload includes several templates to help you get started on your apps:
+
+- Native-Activity Application (Android)
+
+  Creates a complete C++ OpenGL app as an Android Native Activity project.
+
+- OpenGLES Application (Android, iOS)
+
+  Creates a solution with a set of projects to build both an Android Native Activity app and an iOS app. These apps use platform-specific libraries created by using common C++ OpenGL ES code to draw the same spinning cube in each app.
+
+- Shared Library (Android, iOS)
+
+  Creates a solution with projects to create an Android dynamic library (.so) file and an iOS static library (.a) file by using common C++ code in a shared project.
+
+- Basic Application (Android, Ant)
+
+  Creates an Android "Hello, World" app project that uses only Java source code and the Ant build system.
+
+- Basic Application (Android, Gradle)
+
+  Creates an Android "Hello, World" app project that uses only Java source code and the Gradle build system.
+
+- Basic Library (Android, Ant)
+
+  Creates an Android "Hello, World" library project that uses only Java source code and the Ant build system.
+
+- Basic Library (Android, Gradle)
+
+  Creates an Android "Hello, World" library project that uses only Java source code and the Gradle build system.
+
+- Dynamic Shared Library (Android)
+
+  Creates an Android dynamic library (.so) file by using C++ code.
+
+- OpenGLES 2 Application (iOS)
+
+  Creates a solution with a set of projects to build an OpenGL ES 2 iOS app. The app uses a library of C++ OpenGL ES code to draw the spinning cube in an iOS app. This app can be a good starting point for seeing how to import C++ libraries into your iOS app.
+
+- Static Library (Android)
+
+  Creates a project to build a static library for Android. You can only link one dynamic library in an Android app, but you can link any number of static libraries.
+
+- Static Library (iOS)
+
+  Creates a project to build a static library for iOS.
+
+- Makefile Project (Android)
+
+  Creates a project wrapper for your own Android makefile projects.
+
 ## Try out sample code
 
 Download samples that show how to create shared code libraries you can use in Windows, Android, and iOS apps. And, see examples of how to create complete Native Activity apps for Android. To get started, see [Cross-platform mobile development examples](../cross-platform/cross-platform-mobile-development-examples.md).
@@ -31,4 +85,5 @@ Download samples that show how to create shared code libraries you can use in Wi
 [Install cross-platform mobile development with C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)\
 [Install and configure tools to build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)\
 [Create an Android native activity app](../cross-platform/create-an-android-native-activity-app.md)\
+[Build an OpenGL ES application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)\
 [Cross-platform mobile development examples](../cross-platform/cross-platform-mobile-development-examples.md)
