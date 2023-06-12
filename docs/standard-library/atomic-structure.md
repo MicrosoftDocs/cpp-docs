@@ -250,7 +250,7 @@ The result of the bitwise "and" (`&`).
 
 This operator performs a read-modify-write operation to replace the stored value of **`*this`** with a bitwise "and" (`&`) of *`Value`* and the current value that is stored in **`*this`**, within the constraints of the `memory_order_seq_cst` [`memory_order`](atomic-enums.md).
 
-## <a name="op_or_eq"></a> `atomic::operator|;=`
+## <a name="op_or_eq"></a> `atomic::operator|=`
 
 Performs a bitwise "or" (`|`) on a specified value and the stored value of **`*this`**. Used only by integral specializations.
 
