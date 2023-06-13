@@ -77,14 +77,14 @@ Microsoft recommends you use AddressSanitizer in these three standard workflows:
   - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
   - Local Machine
 
-This article covers the information you require to enable the three workflows listed above. The information is specific to the **platform-dependent** Windows 10 implementation of AddressSanitizer. This documentation supplements the excellent documentation from [Google, Apple, and GCC](#external-docs) already published.
+This article covers the information you require to enable the three workflows listed previously. The information is specific to the **platform-dependent** Windows 10 implementation of AddressSanitizer. This documentation supplements the excellent documentation from [Google, Apple, and GCC](#external-docs) already published.
 
 > [!NOTE]
 > Current support is limited to x86 and x64 on Windows 10. [Send us feedback](https://aka.ms/vsfeedback/browsecpp) on what you'd like to see in future releases. Your feedback helps us prioritize other sanitizers for the future, such as **`/fsanitize=thread`**, **`/fsanitize=leak`**, **`/fsanitize=memory`**, **`/fsanitize=undefined`**, or **`/fsanitize=hwaddress`**. You can [report bugs here](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## <a name="command-prompt"></a> Use AddressSanitizer from a developer command prompt
 
-Use the **`/fsanitize=address`** compiler option in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts) to enable compiling for the AddressSanitizer runtime. The **`/fsanitize=address`** option is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL`, and `PGO`). The option works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). It works whether you create an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In the example below, `cl /fsanitize=address /Zi` is passed on the command line.
+Use the **`/fsanitize=address`** compiler option in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts) to enable compiling for the AddressSanitizer runtime. The **`/fsanitize=address`** option is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL`, and `PGO`). The option works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). It works whether you create an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In the following example, `cl /fsanitize=address /Zi` is passed on the command line.
 
 The AddressSanitizer libraries (.lib files) are linked for you automatically. For more information, see [AddressSanitizer language, build, and debugging reference](asan-building.md).
 
@@ -103,9 +103,9 @@ int main() {
 
 Using a developer command prompt for Visual Studio 2019, compile *`main.cpp`* using `/fsanitize=address /Zi`
 
-:::image type="content" source="media/asan-command-basic-global-overflow.png" alt-text="Screenshot of a command prompt showing the command to compile with AddressSanitizer options. The command is: cl main.cpp -faanitize-address /Zi.":::
+:::image type="content" source="media/asan-command-basic-global-overflow.png" alt-text="Screenshot of a command prompt showing the command to compile with AddressSanitizer options. The command is: `cl main.cpp -faanitize-address /Zi`.":::
 
-When you run the resulting *`main.exe`* at the command line, it creates the formatted error report seen below.
+When you run the resulting *`main.exe`* at the command line, it creates the formatted error report that follows.
 
 Consider the overlaid, red boxes that highlight seven key pieces of information:
 
@@ -138,7 +138,7 @@ To build from the IDE, opt out of any [incompatible options](./asan-known-issues
 - Turn off [`/RTC1` (runtime checks)](../build/reference/rtc-run-time-error-checks.md)
 - Turn off [`/INCREMENTAL` (incremental linking)](../build/reference/incremental-link-incrementally.md)
 
-To build and run the debugger, press **F5**. You'll see an **Exception Thrown** window in Visual Studio:
+To build and run the debugger, press **F5**. An **Exception Thrown** window appears in Visual Studio:
 
 :::image type="content" source="media/asan-global-buffer-overflow-F5.png" alt-text="Screenshot of the debugger showing a global buffer overflow error.":::
 
@@ -163,7 +163,7 @@ To enable AddressSanitizer for a [CMake project created to target Windows](../bu
 }
 ```
 
-It will look something like this, afterwards:
+It looks something like this, afterwards:
 
 ```json
     "configurePresets": [
@@ -189,7 +189,7 @@ It will look something like this, afterwards:
       },
 ```
 
-1. Address sanitizer doesn't work if edit-and-continue is specified (`/ZI`), which is enabled by default for new CMake projects. In `CMakeLists.txt`, comment out (prefix with `#`) the line that starts with `set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT"`. That line will look something like this, afterwards:
+1. Address sanitizer doesn't work if edit-and-continue is specified (`/ZI`), which is enabled by default for new CMake projects. In `CMakeLists.txt`, comment out (prefix with `#`) the line that starts with `set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT"`. That line looks something like this, afterwards:
 
 ```json
 # set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
@@ -218,7 +218,7 @@ int main()
 
 This screenshot captures the error from the CMake build.
 
-:::image type="content" source="media/asan-cmake-error-f5.png" alt-text="Screenshot of an exception that says: Address Sanitizer Error: Global buffer overflow". In the background, address sanitizer output is visible in command window:::
+:::image type="content" source="media/asan-cmake-error-f5.png" alt-text="Screenshot of an exception that says: Address Sanitizer Error: Global buffer overflow. In the background, address sanitizer output is visible in command window":::
 
 ## <a name="crash-dumps"></a> AddressSanitizer crash dumps
 
