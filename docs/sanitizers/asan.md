@@ -144,82 +144,82 @@ To build and run the debugger, press **F5**. An **Exception Thrown** window appe
 
 ## <a name="ide-cmake"></a> Use AddressSanitizer from Visual Studio: CMake
 
-To enable AddressSanitizer for a [CMake project created to target Windows](../build/cmake-projects-in-visual-studio.md), take these steps:
+To enable AddressSanitizer for a [CMake project created to target Windows](../build/cmake-projects-in-visual-studio.md), follow these steps:
 
 1. Open the **Configurations** dropdown in the toolbar at the top of the IDE and select **Manage Configurations**.
 
-   :::image type="content" source="media/asan-cmake-configuration-dropdown.png" alt-text="Screenshot of the CMake configuration dropdown.":::
+   :::image type="content" source="media/asan-cmake-configuration-dropdown.png" alt-text="Screenshot of the CMake configuration dropdown. It displays options like x64 Debug, x64 Release, and so on. At the bottom of the list, Manage Configurations... is highlighted.":::
 
-   That selection opens the CMake Project Settings editor, which reflects the contents of the `CMakeSettings.json` file in your project.
+   That opens the CMake Project Settings editor, which reflects the contents of your project's `CMakeSettings.json` file.
 
 1. Choose the **Edit JSON** link in the editor. This selection switches the view to raw JSON.
 
 1. Add the following snippet to the `"windows-base"` preset, inside `"configurePresets":` to turn on Address Sanitizer:
 
-```json
-"environment": {
-  "CFLAGS": "/fsanitize=address",
-  "CXXFLAGS": "/fsanitize=address"
-}
-```
-
-It looks something like this, afterwards:
-
-```json
-    "configurePresets": [
-      {
-        "name": "windows-base",
-        "hidden": true,
-        "generator": "Ninja",
-        "binaryDir": "${sourceDir}/out/build/${presetName}",
-        "installDir": "${sourceDir}/out/install/${presetName}",
-        "cacheVariables": {
-          "CMAKE_C_COMPILER": "cl.exe",
-          "CMAKE_CXX_COMPILER": "cl.exe"
-        },
-        "condition": {
-          "type": "equals",
-          "lhs": "${hostSystemName}",
-          "rhs": "Windows"
-        },
-        "environment": {
-          "CFLAGS": "/fsanitize=address",
-          "CXXFLAGS": "/fsanitize=address"
-        }
-      },
-```
+    ```json
+    "environment": {
+      "CFLAGS": "/fsanitize=address",
+      "CXXFLAGS": "/fsanitize=address"
+    }
+    ```
+    
+    `"configurePresets"` looks something like this, afterwards:
+    
+    ```json
+        "configurePresets": [
+          {
+            "name": "windows-base",
+            "hidden": true,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "installDir": "${sourceDir}/out/install/${presetName}",
+            "cacheVariables": {
+              "CMAKE_C_COMPILER": "cl.exe",
+              "CMAKE_CXX_COMPILER": "cl.exe"
+            },
+            "condition": {
+              "type": "equals",
+              "lhs": "${hostSystemName}",
+              "rhs": "Windows"
+            },
+            "environment": {
+              "CFLAGS": "/fsanitize=address",
+              "CXXFLAGS": "/fsanitize=address"
+            }
+          },
+    ```
 
 1. Address sanitizer doesn't work if edit-and-continue is specified (`/ZI`), which is enabled by default for new CMake projects. In `CMakeLists.txt`, comment out (prefix with `#`) the line that starts with `set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT"`. That line looks something like this, afterwards:
 
-```json
-# set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
-```
+    ```json
+    # set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
+    ```
 
 1. Enter **Ctrl+S** to save this JSON file
-1. Clear your CMake cache directory and reconfigure: choose **Project** > **Delete cache and Reconfigure**. Choose **Yes** when the prompt appears to clear your cache directory and reconfigure.
-1. Replace the contents of the cpp file (for example, `CMakeProject1.cpp`) with the following:
+1. Clear your CMake cache directory and reconfigure by choosing from the Visual Studio menu: **Project** > **Delete cache and Reconfigure**. Choose **Yes** when the prompt appears to clear your cache directory and reconfigure.
+1. Replace the contents of the source file (for example, `CMakeProject1.cpp`) with the following:
 
-```cpp
-// CMakeProject1.cpp : Defines the entry point for the application
-
-#include <stdio.h>
-
-int x[100];
-
-int main()
-{
-    printf("Hello!\n");
-    x[100] = 5; // Boom!
-    return 0;
-}
-```
+    ```cpp
+    // CMakeProject1.cpp : Defines the entry point for the application
+    
+    #include <stdio.h>
+    
+    int x[100];
+    
+    int main()
+    {
+        printf("Hello!\n");
+        x[100] = 5; // Boom!
+        return 0;
+    }
+    ```
 
 1. Choose **F5** to recompile and run under the debugger.
 
-This screenshot captures the error from the CMake build.
-
-:::image type="content" source="media/asan-cmake-error-f5.png" alt-text="Screenshot of an exception that says: Address Sanitizer Error: Global buffer overflow. In the background, address sanitizer output is visible in command window":::
-
+    This screenshot captures the error from the CMake build.
+    
+    :::image type="content" source="media/asan-cmake-error-f5.png" alt-text="Screenshot of an exception that says: Address Sanitizer Error: Global buffer overflow. In the background, address sanitizer output is visible in command window":::
+    
 ## <a name="crash-dumps"></a> AddressSanitizer crash dumps
 
 We introduced new functionality in AddressSanitizer for use with cloud and distributed workflows. This functionality allows offline viewing of an AddressSanitizer error in the IDE. The error gets overlaid on top of your source, just as you would experience in a live debug session.
