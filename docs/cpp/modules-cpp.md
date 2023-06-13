@@ -1,14 +1,14 @@
 ---
 title: "Overview of modules in C++"
-ms.date: 03/30/2022
+ms.date: 04/24/2023
 helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
 description: Modules in C++20 provide a modern alternative to header files.
 ---
 # Overview of modules in C++
 
-C++20 introduces *modules*, a modern solution that turns C++ libraries and programs into components. A *module* is a set of source code files that are compiled independently of the [translation units](https://wikipedia.org/wiki/Translation_unit_(programming)) that import them. Modules eliminate or reduce many of the problems associated with the use of header files. They often reduce compilation times. Macros, preprocessor directives, and non-exported names declared in a module aren't visible outside the module. They have no effect on the compilation of the translation unit that imports the module. You can import modules in any order without concern for macro redefinitions. Declarations in the importing translation unit don't participate in overload resolution or name lookup in the imported module. After a module is compiled once, the results are stored in a binary file that describes all the exported types, functions, and templates. The compiler can process that file much faster than a header file. And, the compiler can reuse it every place where the module is imported in a project.
+C++20 introduces *modules*, a modern solution that turns C++ libraries and programs into components. A *module* is a set of source code files that are compiled independently of the source files (or more precisely, the [translation units](https://wikipedia.org/wiki/Translation_unit_(programming)) that import them. Modules eliminate or reduce many of the problems associated with the use of header files. They often reduce compilation times. Macros, preprocessor directives, and non-exported names declared in a module aren't visible outside the module. They have no effect on the compilation of the translation unit that imports the module. You can import modules in any order without concern for macro redefinitions. Declarations in the importing translation unit don't participate in overload resolution or name lookup in the imported module. After a module is compiled once, the results are stored in a binary file that describes all the exported types, functions, and templates. The compiler can process that file much faster than a header file. And, the compiler can reuse it every place where the module is imported in a project.
 
-You can use modules side by side with header files. A C++ source file can `import` modules and also `#include` header files. In some cases, you can import a header file as a module rather than include it textually by using `#include` in the preprocessor. We recommend you use modules in new projects rather than header files as much as possible. For larger existing projects under active development, experiment with converting legacy headers to modules. Base your adoption on whether you get a meaningful reduction in compilation times.
+You can use modules side by side with header files. A C++ source file can `import` modules and also `#include` header files. In some cases, you can import a header file as a module, which is faster than using `#include` to process it with the preprocessor. We recommend that you use modules in new projects rather than header files as much as possible. For larger existing projects under active development, experiment with converting legacy headers to modules. Base your adoption on whether you get a meaningful reduction in compilation times.
 
 To contrast modules with other ways to import the standard library, see [Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md).
 
@@ -16,7 +16,7 @@ To contrast modules with other ways to import the standard library, see [Compare
 
 As of Visual Studio 2022 version 17.1, C++20 standard modules are fully implemented in the Microsoft C++ compiler.
 
-Before it was specified by the C++20 standard, Microsoft had experimental support for modules in the Microsoft C++ compiler. The compiler also supported importing the Standard Library as modules, described below.
+Before it was specified by the C++20 standard, Microsoft had experimental support for modules. The compiler also supported importing pre-built Standard Library modules, described below.
 
 Starting with Visual Studio 2022 version 17.5, importing the Standard Library as a module is both standardized and fully implemented in the Microsoft C++ compiler. This section describes the older, experimental method, which is still supported. For information about the new standardized way to import the Standard Library using modules, see [Import the C++ standard library using modules](tutorial-import-stl-named-module.md).
 

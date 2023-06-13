@@ -29,8 +29,6 @@ landingContent:
             url: visual-cpp-for-cross-platform-mobile-development.md
       - linkListType: tutorial
         links:
-          - text: Build an OpenGL ES application on Android and iOS
-            url: build-an-opengl-es-application-on-android-and-ios.md
           - text: Create an Android Native Activity App
             url: create-an-android-native-activity-app.md
       - linkListType: learn
