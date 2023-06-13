@@ -39,14 +39,14 @@ AddressSanitizer is integrated with the Visual Studio project system, the CMake 
 Starting in Visual Studio 2019 version 16.9, Microsoft's AddressSanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. If you set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable before you run your program, a crash dump file is created with extra metadata for efficient [post-mortem debugging](#crash-dumps) of precisely diagnosed bugs. These dump files make extended use of AddressSanitizer easier for:
 
 - Local machine testing
-- On-premise distributed testing
+- On-premises distributed testing
 - Cloud-based workflows for testing
 
 ### Install AddressSanitizer
 
 C++ workloads in the Visual Studio Installer install the AddressSanitizer libraries and IDE integration by default. However, if you're upgrading from an older version of Visual Studio 2019, use the Installer to enable ASan support after the upgrade. You can open the installer from the Visual Studio main menu via **Tools** > **Get Tools and Features...** Choose **Modify** on your existing Visual Studio installation from the Visual Studio Installer to get to the following screen.
 
-:::image type="content" source="media/asan-installer-option.png" alt-text="Screenshot of the Visual Studio Installer. The C++ AddressSanitizer component, under the Optional section, is highlighted":::
+:::image type="content" source="media/asan-installer-option.png" alt-text="Screenshot of the Visual Studio Installer. The C++ AddressSanitizer component, under the Optional section, is highlighted.":::
 
 > [!NOTE]
 > If you run Visual Studio on the new update but haven't installed ASan, you'll get an error when you run your code:
@@ -146,9 +146,9 @@ To build and run the debugger, press **F5**. An **Exception Thrown** window appe
 
 To enable AddressSanitizer for a [CMake project created to target Windows](../build/cmake-projects-in-visual-studio.md), follow these steps:
 
-1. Open the **Configurations** dropdown in the toolbar at the top of the IDE and select **Manage Configurations**.
+1. Open the **Configurations** drop-down in the toolbar at the top of the IDE and select **Manage Configurations**.
 
-   :::image type="content" source="media/asan-cmake-configuration-dropdown.png" alt-text="Screenshot of the CMake configuration dropdown. It displays options like x64 Debug, x64 Release, and so on. At the bottom of the list, Manage Configurations... is highlighted.":::
+   :::image type="content" source="media/asan-cmake-configuration-drop-down.png" alt-text="Screenshot of the CMake configuration drop-down. It displays options like x64 Debug, x64 Release, and so on. At the bottom of the list, Manage Configurations... is highlighted.":::
 
    That opens the CMake Project Settings editor, which reflects the contents of your project's `CMakeSettings.json` file.
 
@@ -218,7 +218,7 @@ To enable AddressSanitizer for a [CMake project created to target Windows](../bu
 
     This screenshot captures the error from the CMake build.
     
-    :::image type="content" source="media/asan-cmake-error-f5.png" alt-text="Screenshot of an exception that says: Address Sanitizer Error: Global buffer overflow. In the background, address sanitizer output is visible in command window":::
+    :::image type="content" source="media/asan-cmake-error-f5.png" alt-text="Screenshot of an exception that says: Address Sanitizer Error: Global buffer overflow. In the background, address sanitizer output is visible in command window.":::
     
 ## <a name="crash-dumps"></a> AddressSanitizer crash dumps
 
