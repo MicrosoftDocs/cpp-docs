@@ -21,7 +21,7 @@ When you initially create the progress control ([CProgressCtrl::Create](../mfc/r
 
 In addition, you can specify two styles that apply only to the progress control, PBS_VERTICAL and PBS_SMOOTH.
 
-Use PBS_VERTICAL to adjust the control vertically, rather than horizontally. Use PBS_SMOOTH to fill the control completely, rather than displaying small delineated squares that fill the control incrementally.
+Use PBS_VERTICAL to orient the control vertically, rather than horizontally. Use PBS_SMOOTH to fill the control completely, rather than displaying small delineated squares that fill the control incrementally.
 
 Without PBS_SMOOTH style:
 
