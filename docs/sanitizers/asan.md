@@ -146,9 +146,9 @@ To build and run the debugger, press **F5**. An **Exception Thrown** window appe
 
 To enable AddressSanitizer for a [CMake project created to target Windows](../build/cmake-projects-in-visual-studio.md), follow these steps:
 
-1. Open the **Configurations** drop-down in the toolbar at the top of the IDE and select **Manage Configurations**.
+1. Open the **Configurations** dropdown in the toolbar at the top of the IDE and select **Manage Configurations**.
 
-   :::image type="content" source="media/asan-cmake-configuration-drop-down.png" alt-text="Screenshot of the CMake configuration drop-down. It displays options like x64 Debug, x64 Release, and so on. At the bottom of the list, Manage Configurations... is highlighted.":::
+   :::image type="content" source="media/asan-cmake-configuration-drop-down.png" alt-text="Screenshot of the CMake configuration dropdown. It displays options like x64 Debug, x64 Release, and so on. At the bottom of the list, Manage Configurations... is highlighted.":::
 
    That opens the CMake Project Settings editor, which reflects the contents of your project's `CMakeSettings.json` file.
 
