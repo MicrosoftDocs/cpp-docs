@@ -64,7 +64,7 @@ The `towlower` and `towupper` functions return a converted copy of `c` if and on
 #include <ctype.h>
 #include <string.h>
 
-char msg[] = "Some of THESE letters are Capitals.";
+char msg[] = "Some of THESE letters are Uppercase.";
 char *p;
 
 int main( void )
@@ -85,8 +85,8 @@ int main( void )
 ```
 
 ```Output
-Some of THESE letters are Capitals.
-sOME OF these LETTERS ARE cAPITALS.
+Some of THESE letters are Uppercase.
+sOME OF these LETTERS ARE uPPERCASE.
 ```
 
 ## See also

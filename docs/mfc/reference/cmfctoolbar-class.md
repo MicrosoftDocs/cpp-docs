@@ -464,7 +464,7 @@ virtual CSize CalcFixedLayout(
 [in] `TRUE` to stretch the toolbar to the size of the parent frame.
 
 *`bHorz`*\
-[in] `TRUE` to orient the toolbar horizontally; `FALSE` to orient the toolbar vertically.
+[in] `TRUE` to adjust the toolbar horizontally; `FALSE` to adjust the toolbar vertically.
 
 ### Return Value
 
