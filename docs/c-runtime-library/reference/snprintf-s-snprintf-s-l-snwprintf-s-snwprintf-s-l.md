@@ -84,7 +84,15 @@ The locale to use.
 
 ## Return value
 
-**`_snprintf_s`** and **`_snwprintf_s`** return the number of characters written, not including the terminating `NULL`. For **`_snwprintf_s`**, the returned value is a count of wide characters written. -1 is returned if the data is truncated.
+- **`_snprintf_s`** and **`_snwprintf_s`** return the number of characters written, not including the terminating `NULL`
+- **`_snwprintf_s`** returns the number of wide characters written.
+- -1 is returned if the data is truncated.
+
+See [Summary of behavior](#summary-of-behavior) for details.
+
+## Remarks
+
+The **`_snprintf_s`** function formats and stores *`count`* or fewer characters in *`buffer`* and appends a terminating null. Each argument (if any) is converted and output according to the corresponding format specification in *`format`*. The formatting is consistent with the **`printf`** family of functions; see [Format specification syntax: `printf` and `wprintf` functions](../format-specification-syntax-printf-and-wprintf-functions.md). If copying occurs between strings that overlap, the behavior is undefined.
 
 ### Summary of behavior
 
@@ -105,10 +113,6 @@ The locale to use.
 7]| `format == NULL` | No data is written. | -1 | `EINVAL` (22) | Yes |
 
 For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
-
-## Remarks
-
-The **`_snprintf_s`** function formats and stores *`count`* or fewer characters in *`buffer`* and appends a terminating null. Each argument (if any) is converted and output according to the corresponding format specification in *`format`*. The formatting is consistent with the **`printf`** family of functions; see [Format specification syntax: `printf` and `wprintf` functions](../format-specification-syntax-printf-and-wprintf-functions.md). If copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string.

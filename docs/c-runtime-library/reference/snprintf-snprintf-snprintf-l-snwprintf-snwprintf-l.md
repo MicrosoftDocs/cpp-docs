@@ -1,7 +1,7 @@
 ---
 title: "snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l"
 description: "API reference for snprintf, _snprintf, _snprintf_l, _snwprintf, and _snwprintf_; which write formatted data to a string."
-ms.date: "3/9/2021"
+ms.date: 06/15/2023
 api_name: ["_snwprintf", "_snprintf", "_snprintf_l", "_snwprintf_l", "snprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -86,7 +86,8 @@ int _snwprintf_l(
 Storage location for the output.
 
 *`count`*\
-Maximum number of characters to store.
+Maximum number of characters to store for **`snprintf`** and **`_snprintf`**.\
+The number of wide characters to store for **`_snwprintf`**.
 
 *`format`*\
 Format-control string.
@@ -101,23 +102,39 @@ For more information, see [Format specification syntax: `printf` and `wprintf` f
 
 ## Return value
 
-Let **`len`** be the length of the formatted data string, not including the terminating null. Both **`len`** and **`count`** are the number of characters for **`snprintf`** and **`_snprintf`**, and the number of wide characters for **`_snwprintf`**.
+Let **`len`** be the length of the formatted data string, not including the terminating null.\
+For all functions, if **`len`** < *`count`*, **`len`** characters are stored in *`buffer`*, a null-terminator is appended, and the number of characters written, not including the terminating `NULL`, is returned.
 
-For all functions, if **`len`** < *`count`*, **`len`** characters are stored in *`buffer`*, a null-terminator is appended, and **`len`** is returned.
+The wide character versions of these functions return the number of wide characters written, not including the terminating `NULL`.
 
-The **`snprintf`** function truncates the output when **`len`** is greater than or equal to *`count`*, by placing a null-terminator at `buffer[count-1]`. The value returned is **`len`**, the number of characters that would have been output if *`count`* was large enough. The **`snprintf`** function returns a negative value if an encoding error occurs.
-
-For all functions other than **`snprintf`**, if **`len`** = *`count`*, **`len`** characters are stored in *`buffer`*, no null-terminator is appended, and **`len`** is returned. If **`len`** > *`count`*, *`count`* characters are stored in *`buffer`*, no null-terminator is appended, and a negative value is returned.
-
-If *`buffer`* is a null pointer and *`count`* is zero, **`len`** is returned as the count of characters required to format the output, not including the terminating null. To make a successful call with the same *`argument`* and *`locale`* parameters, allocate a buffer holding at least **`len`** + 1 characters.
-
-If *`buffer`* is a null pointer and *`count`* is nonzero, or if *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
-
-For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
+See [Summary of behavior](#summary-of-behavior) for details.
 
 ## Remarks
 
-The **`snprintf`** function and the **`_snprintf`** family of functions format and store *`count`* or fewer characters in *`buffer`*. The **`snprintf`** function always stores a terminating null character, truncating the output if necessary. The **`_snprintf`** family of functions only appends a terminating null character if the formatted string length is strictly less than *`count`* characters. Each *`argument`* (if any) is converted and is output according to the corresponding format specification in *`format`*. The format consists of ordinary characters and has the same form and function as the *`format`* argument for [`printf`](printf-printf-l-wprintf-wprintf-l.md). If copying occurs between strings that overlap, the behavior is undefined.
+- **`snprintf`** and the **`_snprintf`** family of functions format and store *`count`* or fewer characters in *`buffer`*.
+- **`snprintf`** always stores a terminating `NULL` character, truncating the output if necessary.
+- If **`snprintf`** returns a value > *`count`* - 1, the output has been truncated.
+- The **`_snprintf`** family of functions only appends a terminating null character if the formatted string length is strictly less than *`count`* characters.
+- Each *`argument`* (if any) is converted and is output according to the corresponding format specification in *`format`*. The format consists of ordinary characters and has the same form and function as the *`format`* argument for [`printf`](printf-printf-l-wprintf-wprintf-l.md). If copying occurs between strings that overlap, the behavior is undefined.
+
+### Summary of behavior
+
+For the following table, let **`len`** be the length of the formatted data string, not including the terminating `NULL`.
+
+| Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md)|
+|--|--|--|--|--|
+| `len == count` | For all functions other than **`snprintf`**, characters are stored in *`buffer`*, no NULL-terminator is appended | **`len`** | N/A | No |
+| `len > count`| *`count`* characters are stored in *`buffer`*, no null-terminator is appended | -1 | N/A | No |
+| `len < count` | **`len`** characters are stored in *`buffer`* and a null-terminator is appended | **`len`** | N/A | No |
+| `len >= count` and `count == 0` | **`snprintf`** returns the number of characters that would have been output if *`count`* was large enough |  **`len`** | N/A | No |
+| `len >= count` and `count > 0` | **`snprintf`** truncates the output by placing a null-terminator at `buffer[count-1]` and returns the number of characters that would have been output if *`count`* was large enough | **`len`** | N/A | No |
+| `count == 0` | **`snprintf`** no characters are stored in *`buffer`* whether *`buffer`* is a NULL pointer or not.| 0 | N/A | No |
+| Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops | -1 | `EILSEQ (42)` | No |
+| Encoding error during formatting | **Microsoft-specific**: If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | -1 | `EILSEQ (42)` | No |
+| `buffer == NULL` and `count == 0` | Returns the count of characters to format the input, not including the terminating `NULL`. To make a successful call with the same *`argument`* and *`locale`* parameters, allocate a buffer holding at least **`len`** + 1 characters. | `len` | N/A | No |
+|  `buffer == NULL` and `count != 0` or *`format == NULL` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` | Yes |
+
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string. Because the **`_snprintf`** functions do not guarantee null termination—in particular, when the return value is *`count`*—make sure that they are followed by code that adds the null terminator. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
