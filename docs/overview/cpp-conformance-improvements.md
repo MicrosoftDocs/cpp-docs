@@ -1,14 +1,88 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 03/01/2023
+ms.date: 06/19/2023
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022
 
-Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use the list below **In this article**.
+Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use **In this article** links, above.
 
-This document lists the changes in Visual Studio 2022. For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md). For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md). For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+This document lists the changes in Visual Studio 2022:
+
+- For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).
+- For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
+- For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+
+## <a name="improvements_176"></a> Conformance improvements in Visual Studio 2022 version 17.6
+
+Visual Studio 2022 version 17.6 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+### Compound `volatile` assignments no longer deprecated
+
+C++20 deprecated applying certain operators to types qualified with `volatile`. For example, when the following code is compiled with `cl /std:c++20 /Wall test.cpp`:
+
+```cpp
+void f(volatile int& expr)
+{
+   ++expr;
+}
+```
+
+The compiler produces `test.cpp(3): warning C5214: applying '++' to an operand with a volatile qualified type is deprecated in C++20`.
+
+In C++20, compound assignment operators (operators of the form `@=`) were deprecated. In C++23, compound operators excluded in C++20 are no longer deprecated. For example, in C++23 the following code doesn't produce a warning, whereas it does in C++20:
+
+```cpp
+void f(volatile int& e1, int e2)
+{
+   e1 += e2;
+}
+```
+
+For more information about this change, see [CWG:2654](https://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#2654)
+
+### Rewriting equality in expressions is less of a breaking change (P2468R2)
+
+In C++20, [P2468R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2468r2.html) changed the compiler to accept code such as:
+
+```cpp
+struct S
+{
+    bool operator==(const S&);
+    bool operator!=(const S&);
+};
+bool b = S{} != S{};
+```
+
+This code is accepted by the Microsoft Visual Studio C++ compiler. This means that the compiler is more strict with programs such as:
+
+```c++
+struct S
+{
+  operator bool() const;
+  bool operator==(const S&);
+};
+
+bool b = S{} == S{};
+```
+
+In version 17.5 the previous program is accepted. In 17.6 it is rejected. To fix it, add `const` to `operator==` to remove the ambiguity. Or, add a corresponding `operator!=` to the definition as shown in the following example:
+
+```cpp
+struct S
+{
+  operator bool() const;
+  bool operator==(const S&);
+  bool operator!=(const S&);
+};
+
+bool b = S{} == S{};
+```
+
+The previous program is accepted by the Microsoft Visual Studio C++ compiler versions 17.5 and 17.6, and calls `S::operator==` in both versions.
+
+The general programming model outlined in P2468R2 is that if there is a corresponding `operator!=` for a type, it will typically suppress the rewrite behavior. Adding a corresponding `operator!=` is the suggested fix for code that previously compiled in C++17. For more information, see [Programming Model](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2468r2.html#programming-model).
 
 ## <a name="improvements_174"></a> Conformance improvements in Visual Studio 2022 version 17.4
 
