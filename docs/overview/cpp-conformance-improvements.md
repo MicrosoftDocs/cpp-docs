@@ -80,9 +80,9 @@ struct S
 bool b = S{} == S{};
 ```
 
-The previous program is accepted by the Microsoft Visual Studio C++ compiler versions 17.5 and 17.6, and calls `S::operator==` in both versions.
+Microsoft C/C++ compiler versions 17.5 and 17.6 accept the previous program, and calls `S::operator==` in both versions.
 
-The general programming model outlined in P2468R2 is that if there's a corresponding `operator!=` for a type, it will typically suppress the rewrite behavior. Adding a corresponding `operator!=` is the suggested fix for code that previously compiled in C++17. For more information, see [Programming Model](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2468r2.html#programming-model).
+The general programming model outlined in P2468R2 is that if there's a corresponding `operator!=` for a type, it typically suppresses the rewrite behavior. Adding a corresponding `operator!=` is the suggested fix for code that previously compiled in C++17. For more information, see [Programming Model](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2468r2.html#programming-model).
 
 ## <a name="improvements_174"></a> Conformance improvements in Visual Studio 2022 version 17.4
 
