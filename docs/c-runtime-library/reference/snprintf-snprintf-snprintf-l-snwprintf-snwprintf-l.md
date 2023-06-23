@@ -123,6 +123,7 @@ For the following table, let **`len`** be the length of the formatted data strin
 
 | Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md)|
 |--|--|--|--|--|
+| Successful write operation | The number of characters written | N/A | No |
 | `len == count` | For all functions other than **`snprintf`**, characters are stored in *`buffer`*, no NULL-terminator is appended | **`len`** | N/A | No |
 | `len > count`| *`count`* characters are stored in *`buffer`*, no null-terminator is appended | -1 | N/A | No |
 | `len < count` | **`len`** characters are stored in *`buffer`* and a null-terminator is appended | **`len`** | N/A | No |
