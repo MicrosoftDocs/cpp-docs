@@ -86,8 +86,8 @@ int _snwprintf_l(
 Storage location for the output.
 
 *`count`*\
-Maximum number of characters to store for **`snprintf`** and **`_snprintf`**.\
-The number of wide characters to store for **`_snwprintf`**.
+Maximum number of characters to store for the functions that take `char`, such as **`snprintf`** and **`_snprintf`**.\
+Maximum number of wide characters to store for the functions that take `wchar_t`, such as **`_snwprintf`** and **`_snwprintf_l`**
 
 *`format`*\
 Format-control string.
@@ -114,7 +114,7 @@ See [Summary of behavior](#summary-of-behavior) for details.
 - **`snprintf`** and the **`_snprintf`** family of functions format and store *`count`* or fewer characters in *`buffer`*.
 - **`snprintf`** always stores a terminating `NULL` character, truncating the output if necessary.
 - If **`snprintf`** returns a value > *`count`* - 1, the output has been truncated.
-- The **`_snprintf`** family of functions only appends a terminating null character if the formatted string length is strictly less than *`count`* characters.
+- The **`_snprintf`** family of functions only appends a terminating `NULL` character if the formatted string length is strictly less than *`count`* characters.
 - Each *`argument`* (if any) is converted and is output according to the corresponding format specification in *`format`*. The format consists of ordinary characters and has the same form and function as the *`format`* argument for [`printf`](printf-printf-l-wprintf-wprintf-l.md). If copying occurs between strings that overlap, the behavior is undefined.
 
 ### Summary of behavior
@@ -128,10 +128,10 @@ For the following table, let **`len`** be the length of the formatted data strin
 | `len < count` | **`len`** characters are stored in *`buffer`* and a null-terminator is appended | **`len`** | N/A | No |
 | `len >= count` and `count == 0` | **`snprintf`** returns the number of characters that would have been output if *`count`* was large enough |  **`len`** | N/A | No |
 | `len >= count` and `count > 0` | **`snprintf`** truncates the output by placing a null-terminator at `buffer[count-1]` and returns the number of characters that would have been output if *`count`* was large enough | **`len`** | N/A | No |
-| `count == 0` | **`snprintf`** no characters are stored in *`buffer`* whether *`buffer`* is a NULL pointer or not.| 0 | N/A | No |
+| `count == 0` | No characters are stored in *`buffer`* whether *`buffer`* is a NULL pointer or not.| *`sn_printf`* returns the number of characters that would have been output if *`count`* was large enough, not including the trailing NULL.</br>All of the other functions return -1  | N/A | No |
 | Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops | -1 | `EILSEQ (42)` | No |
 | Encoding error during formatting | **Microsoft-specific**: If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | -1 | `EILSEQ (42)` | No |
-| `buffer == NULL` and `count == 0` | Returns the count of characters to format the input, not including the terminating `NULL`. To make a successful call with the same *`argument`* and *`locale`* parameters, allocate a buffer holding at least **`len`** + 1 characters. | `len` | N/A | No |
+| `buffer == NULL` and `count == 0` | Returns the count of characters necessary to format the input, not including the terminating `NULL`. To make a successful call with the same *`argument`* and *`locale`* parameters, allocate a buffer holding at least **`len`** + 1 characters. | `len` | N/A | No |
 |  `buffer == NULL` and `count != 0` or *`format == NULL` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` | Yes |
 
 For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
