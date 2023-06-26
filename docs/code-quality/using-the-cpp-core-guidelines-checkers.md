@@ -290,7 +290,7 @@ Code Analysis requires a few environment variables and compiler command-line opt
 
 - **Environment variables**
   - `set esp.extensions=cppcorecheck.dll` This tells the engine to load the C++ Core Guidelines module.
-  - Old documentation suggested setting the `esp.annotationbuildlevel` environment variable. This is no longer recommended, setting that variable can result in additional false positives. When seeing unexpected results, try removing this variable from your environment.
+  - Since Visual Studio 2019 we no longer recommend setting the `esp.annotationbuildlevel` environment variable because setting it can result in false positives. If seeing unexpected results, remove this variable from your environment.
   - `set caexcludepath=%include%` We highly recommend that you disable warnings that fire on standard headers. You can add more paths here, for example the path to the common headers in your project.
 
 - **Command-line options**
