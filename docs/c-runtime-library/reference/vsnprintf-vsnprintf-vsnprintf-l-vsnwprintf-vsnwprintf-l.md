@@ -102,7 +102,7 @@ int _vsnwprintf_l(
 Storage location for output.
 
 *`count`*\
-Maximum number of characters to write.
+Maximum number of characters to write. For the functions that take `wchar_t`, it is the number of wide characters to write.
 
 *`format`*\
 Format specification.
@@ -123,10 +123,9 @@ See [Summary of behavior](#summary-of-behavior) for details.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *`count`* characters  to the memory pointed to by *`buffer`*. The **`vsnprintf`** function always writes a null terminator, even if it truncates the output. When you use **`_vsnprintf`** and **`_vsnwprintf`**, the buffer is null-terminated only if there's room at the end (that is, if the number of characters to write is less than *`count`*).
+Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *`count`* characters to the memory pointed to by *`buffer`*. The **`vsnprintf`** function always writes a null terminator, even if it truncates the output. When you use **`_vsnprintf`** and **`_vsnwprintf`**, the buffer is null-terminated only if there's room at the end (that is, if the number of characters to write is less than *`count`*).
 
-Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`vsnprintf`** is no longer identical to **`_vsnprintf`**. The **`vsnprintf`** function conforms to the C99 standard; **`_vnsprintf`** is kept for backward compatibility with older code. The difference is that **`vsnprintf`** is now C99 standard conformant. That is, if you run out of buffer, `vsnprintf` null-terminates the end of the buffer and returns the number of characters that would have been required, while `_vsnprintf` doesn't null-terminate the buffer and returns -1.
-Also, `_vsnprintf()` includes one additional character in the output because it doesn't null-terminate the buffer.
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`vsnprintf`** is no longer identical to **`_vsnprintf`**. The **`vsnprintf`** function conforms to the C99 standard; **`_vnsprintf`** is kept for backward compatibility with older code. The difference is that if you run out of buffer, `vsnprintf` null-terminates the end of the buffer and returns the number of characters that would have been required, while `_vsnprintf` doesn't null-terminate the buffer and returns -1. Also, `_vsnprintf()` includes one additional character in the output because it doesn't null-terminate the buffer.
 
 > [!IMPORTANT]
 > To prevent certain kinds of security risks, ensure that *`format`* isn't a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -135,7 +134,7 @@ Also, `_vsnprintf()` includes one additional character in the output because it 
 > [!NOTE]
 > To ensure that there's room for the terminating null when calling **`_vsnprintf`**, **`_vsnprintf_l`**, **`_vsnwprintf`** and **`_vsnwprintf_l`**, be sure that *`count`* is strictly less than the buffer length and initialize the buffer to null prior to calling the function.
 >
-> Because **`vsnprintf`** always writes the terminating null, the *`count`* parameter may be equal to the size of the buffer.
+> Because **`vsnprintf`** always writes a terminating null, the *`count`* parameter may be equal to the size of the buffer.
 
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -151,7 +150,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 | `buffer == NULL` and `count == 0` | No data is written | The number of characters that would have been written, not including the terminating `NULL`. You can use this result to allocate sufficient buffer space for the string and a terminating `NULL`, and then call the function again to fill the buffer. | n/a | No |
 | `buffer == NULL` and `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value.| -1 | `EINVAL` (22) | n/a | Yes |
 | `buffer != NULL` and `count == 0` | No data is written | The number of characters that would have been written, not including the terminating `NULL`.  | N/A | No |
-| `count < 0`| Unsafe: writes out all of the formatted data which may result in a buffer overrun. | The number of characters written | N/A | No |
+| `count < 0`| Unsafe: the value is treated as unsigned, potentially creating a very large value that results in overwriting the memory that follows the buffer | The number of characters written | N/A | No |
 | `count` > amount of data to format | All of the data is written and a terminating `NULL` is appended | The number of characters or wide characters written | N/A | No |
 | `count` < amount of data to format | The first *`count-1`* characters are written followed by a `NULL`. Remaining data is truncated. | The number of characters that would be written, not counting the `NULL` character, if *`count`* were sufficiently large | N/A | No |
 | `count >= ` the size of the buffer. | Unsafe: Overwrites the memory that follows the buffer | The number of characters written | N/A | No |

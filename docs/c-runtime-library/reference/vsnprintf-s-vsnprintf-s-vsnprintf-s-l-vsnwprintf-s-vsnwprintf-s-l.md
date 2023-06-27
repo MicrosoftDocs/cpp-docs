@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l"
 title: "vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l"
-ms.date: 06/22/2023
+ms.date: 06/27/2023
 api_name: ["_vsnwprintf_s", "_vsnwprintf_s_l", "_vsnprintf_s", "vsnprintf_s", "_vsnprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -23,6 +23,7 @@ int vsnprintf_s(
    const char *format,
    va_list argptr
 );
+
 int _vsnprintf_s(
    char *buffer,
    size_t sizeOfBuffer,
@@ -30,6 +31,7 @@ int _vsnprintf_s(
    const char *format,
    va_list argptr
 );
+
 int _vsnprintf_s_l(
    char *buffer,
    size_t sizeOfBuffer,
@@ -38,6 +40,7 @@ int _vsnprintf_s_l(
    _locale_t locale,
    va_list argptr
 );
+
 int _vsnwprintf_s(
    wchar_t *buffer,
    size_t sizeOfBuffer,
@@ -45,6 +48,7 @@ int _vsnwprintf_s(
    const wchar_t *format,
    va_list argptr
 );
+
 int _vsnwprintf_s_l(
    wchar_t *buffer,
    size_t sizeOfBuffer,
@@ -53,6 +57,7 @@ int _vsnwprintf_s_l(
    _locale_t locale,
    va_list argptr
 );
+
 template <size_t size>
 int _vsnprintf_s(
    char (&buffer)[size],
@@ -60,6 +65,7 @@ int _vsnprintf_s(
    const char *format,
    va_list argptr
 ); // C++ only
+
 template <size_t size>
 int _vsnwprintf_s(
    wchar_t (&buffer)[size],
@@ -78,7 +84,7 @@ Storage location for output.
 The size of the *`buffer`* for output. Size in **bytes** for the functions that take `char`, and **words** for those that take `wchar_t`.
 
 *`count`*\
-Maximum number of characters to write not including the terminating `NULL`, or [`_TRUNCATE`](../truncate.md).
+Maximum number of characters to write not including the terminating `NULL`. For the functions that take `wchar_t`, it is the number of wide characters to write. Or [`_TRUNCATE`](../truncate.md).
 
 *`format`*\
 Format specification.
@@ -93,9 +99,7 @@ For more information, see [Format specifications](../format-specification-syntax
 
 ## Return value
 
-**`vsnprintf_s`**, **`_vsnprintf_s`** and **`_vsnwprintf_s`** return the number of characters written, not including the terminating `NULL`.
-
-A negative value is returned if either truncation of the data or an output error occurs.
+The number of characters written, not including the terminating `NULL`, or a negative value if an output error occurs.
 
 See [Summary of behavior](#summary-of-behavior) for details.
 
