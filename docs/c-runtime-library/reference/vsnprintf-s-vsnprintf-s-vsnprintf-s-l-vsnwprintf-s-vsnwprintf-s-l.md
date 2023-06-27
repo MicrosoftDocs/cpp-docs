@@ -113,17 +113,17 @@ The versions of these functions with the **`_l`** suffix are identical except th
 |--|--|--|--|--|
 | Success | Writes the characters (wide characters for **`_vsnwprintf_s`**) into the buffer using the specified format string | The number of characters written | N/A | No |
 | Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops | -1 | `EILSEQ (42)` | No |
-| Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | -1 | `EILSEQ (42)` | No |
+| Encoding error during formatting | Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | The number of characters written, not including the terminating `NULL` | `EILSEQ (42)` | No |
 | `buffer == NULL` and `sizeOfBuffer == 0` and `count == 0` | No data is written | 0 | n/a | No |
-| `buffer == NULL` and `sizeOfBuffer != 0` or `count != 0` | No data is written | -1 | `EINVAL` (22) | n/a | Yes |
+| `buffer == NULL` and `sizeOfBuffer != 0` or `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value.| -1 | `EINVAL` (22) | n/a | Yes |
 | `buffer != NULL` and `sizeOfBuffer == 0` | No data is written | -1 | `EINVAL` (22) | Yes |
 | `count <= 0`| If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
-| `count < sizeOfBuffer` and data is <= `count` characters | All of the data is written and a terminating `NULL` is appended | The number of characters or wide characters written | N/A | No |
-| `count < sizeOfBuffer` and data exceeds `count` characters | The first *`count`* characters are written. Remaining data is truncated. | -1 | N/A | No |
-| `count >= sizeOfBuffer` and number of characters of data < `sizeOfBuffer` | All of the data is written with a terminating `NULL` | The number of characters written | N/A | No |
-| `count >= sizeOfBuffer` and number of characters of data >= `sizeOfBuffer` and `count != _TRUNCATE` | If execution continues after invalid parameter handler executes, sets `buffer[0] == NULL`. | -1 | `ERANGE` (34) | Yes |
-| `count == _TRUNCATE` and the number of characters of data equals or exceeds `sizeOfBuffer` | Writes as much of the string as will fit in *`buffer`* (with terminating `NULL`) | -1 | N/A | No |
-| `count == _TRUNCATE` and number of characters of data is less than `sizeOfBuffer` | Writes the entire string into *`buffer`* with terminating `NULL` | Number of characters written | N/A | No |
+| `count < sizeOfBuffer` and formatted data is <= `count` characters | All of the data is written and a terminating `NULL` is appended | The number of characters or wide characters written | N/A | No |
+| `count < sizeOfBuffer` and formatted data exceeds `count` characters | The first *`count`* characters are written. Remaining data is truncated. | -1 | N/A | No |
+| `count >= sizeOfBuffer` and number of characters of formatted data < `sizeOfBuffer` | All of the data is written with a terminating `NULL` | The number of characters written | N/A | No |
+| `count >= sizeOfBuffer` and number of characters of formatted data >= `sizeOfBuffer` and `count != _TRUNCATE` | If execution continues after invalid parameter handler executes, sets `buffer[0] == NULL`. | -1 | `ERANGE` (34) | Yes |
+| `count == _TRUNCATE` and the number of characters of formatted data >= `sizeOfBuffer` | Writes as much of the string as will fit in *`buffer`* (with terminating `NULL`) | -1 | N/A | No |
+| `count == _TRUNCATE` and number of characters of formatted data < `sizeOfBuffer` | Writes the entire string into *`buffer`* with terminating `NULL` | Number of characters written | N/A | No |
 | `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
 
 For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).

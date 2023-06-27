@@ -1,7 +1,7 @@
 ---
 title: "snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l"
 description: "API reference for snprintf, _snprintf, _snprintf_l, _snwprintf, and _snwprintf_; which write formatted data to a string."
-ms.date: 06/15/2023
+ms.date: 06/26/2023
 api_name: ["_snwprintf", "_snprintf", "_snprintf_l", "_snwprintf_l", "snprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -86,8 +86,8 @@ int _snwprintf_l(
 Storage location for the output.
 
 *`count`*\
-Maximum number of characters to store for the functions that take `char`, such as **`snprintf`** and **`_snprintf`**.\
-Maximum number of wide characters to store for the functions that take `wchar_t`, such as **`_snwprintf`** and **`_snwprintf_l`**
+Maximum number of characters to store for the functions that take `char`, such as **`snprintf`** and **`_snprintf`**\
+Maximum number of wide characters to store for the functions that take `wchar_t`, such as **`_snwprintf`** and **`_snwprintf_l`**\
 
 *`format`*\
 Format-control string.
@@ -96,20 +96,24 @@ Format-control string.
 Optional arguments.
 
 *`locale`*\
-The locale to use.
+The locale to use to format the output.
 
 For more information, see [Format specification syntax: `printf` and `wprintf` functions](../format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Return value
 
-Let **`len`** be the length of the formatted data string, not including the terminating null.\
-For all functions, if **`len`** < *`count`*, **`len`** characters are stored in *`buffer`*, a null-terminator is appended, and the number of characters written, not including the terminating `NULL`, is returned.
+Returns the number of characters that which would have been written to the buffer if `count` was ignored. The count doesn't include the trailing `NULL` character.
+
+Let **`len`** be the length of the formatted data string, not including the terminating `NULL`.\
+For all functions, if `len < count`, then **`len`** characters are stored in *`buffer`*, a null-terminator is appended, and the number of characters written, not including the terminating `NULL`, is returned.
 
 The wide character versions of these functions return the number of wide characters written, not including the terminating `NULL`.
 
 See [Summary of behavior](#summary-of-behavior) for details.
 
 ## Remarks
+
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** behavior is now C99 standard conformant. That is, if you run out of buffer, `snprintf` will null-terminate the end of the buffer and return the number of characters required, while `_snprintf` won't null-terminate the buffer and returns -1.
 
 - **`snprintf`** and the **`_snprintf`** family of functions format and store *`count`* or fewer characters in *`buffer`*.
 - **`snprintf`** always stores a terminating `NULL` character, truncating the output if necessary.
@@ -119,21 +123,20 @@ See [Summary of behavior](#summary-of-behavior) for details.
 
 ### Summary of behavior
 
-For the following table, let **`len`** be the length of the formatted data string, not including the terminating `NULL`.
+For the following table, let `sizeOfBuffer` be the size of `buffer`. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words.
 
 | Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md)|
 |--|--|--|--|--|
-| Successful write operation | The number of characters written | N/A | No |
-| `len == count` | For all functions other than **`snprintf`**, characters are stored in *`buffer`*, no NULL-terminator is appended | **`len`** | N/A | No |
-| `len > count`| *`count`* characters are stored in *`buffer`*, no null-terminator is appended | -1 | N/A | No |
-| `len < count` | **`len`** characters are stored in *`buffer`* and a null-terminator is appended | **`len`** | N/A | No |
-| `len >= count` and `count == 0` | **`snprintf`** returns the number of characters that would have been output if *`count`* was large enough |  **`len`** | N/A | No |
-| `len >= count` and `count > 0` | **`snprintf`** truncates the output by placing a null-terminator at `buffer[count-1]` and returns the number of characters that would have been output if *`count`* was large enough | **`len`** | N/A | No |
-| `count == 0` | No characters are stored in *`buffer`* whether *`buffer`* is a NULL pointer or not.| *`sn_printf`* returns the number of characters that would have been output if *`count`* was large enough, not including the trailing NULL.</br>All of the other functions return -1  | N/A | No |
-| Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops | -1 | `EILSEQ (42)` | No |
-| Encoding error during formatting | **Microsoft-specific**: If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | -1 | `EILSEQ (42)` | No |
-| `buffer == NULL` and `count == 0` | Returns the count of characters necessary to format the input, not including the terminating `NULL`. To make a successful call with the same *`argument`* and *`locale`* parameters, allocate a buffer holding at least **`len`** + 1 characters. | `len` | N/A | No |
-|  `buffer == NULL` and `count != 0` or *`format == NULL` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` | Yes |
+| Success | Writes the characters (wide characters for **`_snwprintf`**) into the buffer using the specified format string | The number of characters written | N/A | No |
+| Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops, a NULL is placed at the beginning of the buffer | -1 | `EILSEQ (42)` | No |
+| Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | The number of characters written, not including the terminating `NULL` | `EILSEQ (42)` | No |
+| `count <= 0` | No data is written | The number of characters that would have been written | n/a | No |
+| `buffer == NULL` and `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | n/a | Yes |
+| `count < sizeOfBuffer` and the formatted data is <= `count` characters | All of the data is written and a terminating `NULL` is appended | The number of characters or wide characters written | N/A | No |
+| `count < sizeOfBuffer` and the formatted data exceeds `count` characters | The first *`count`* characters are written followed by a null-terminator. Remaining data is truncated. | The number of characters that would have been written had `count` matched the number of characters to output | N/A | No |
+| `count >= sizeOfBuffer` and number of characters of formatted data < `sizeOfBuffer` | All of the data is written with a terminating `NULL` | The number of characters written, not including the terminating `NULL` | N/A | No |
+| `count >= sizeOfBuffer` and number of characters of formatted data >= `sizeOfBuffer` | unsafe: writes over memory that follows the buffer | The number of characters written, not including the terminating `NULL` | N/A | No |
+| `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
 
 For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -141,8 +144,6 @@ For information about these and other error codes, see [`errno`, `_doserrno`, `_
 > Ensure that *`format`* is not a user-defined string. Because the **`_snprintf`** functions do not guarantee null termination—in particular, when the return value is *`count`*—make sure that they are followed by code that adds the null terminator. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 >
 > Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with [`legacy_stdio_float_rounding.obj`](../link-options.md).
-
-Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** function behavior is now C99 standard conformant.
 
 **`_snwprintf`** is a wide-character version of **`_snprintf`**; the pointer arguments to **`_snwprintf`** are wide-character strings. Detection of encoding errors in **`_snwprintf`** might differ from the detection in **`_snprintf`**. **`_snwprintf`**, just like **`swprintf`**, writes output to a string instead of a destination of type `FILE`.
 
