@@ -113,7 +113,7 @@ See [Summary of behavior](#summary-of-behavior) for details.
 
 ## Remarks
 
-Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** behavior is now C99 standard conformant. That is, if you run out of buffer, `snprintf` null-terminates the end of the buffer and return the number of characters required, while `_snprintf` doesn't null-terminate the buffer and returns -1.
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** behavior is now C99 standard conformant. That is, if you run out of buffer, `snprintf` null-terminates the end of the buffer and returns the number of characters that would have been required, while `_snprintf` doesn't null-terminate the buffer and returns -1. Also, `snprintf()` includes one additional character in the output because it doesn't null-terminate the buffer.
 
 - **`snprintf`** and the **`_snprintf`** family of functions format and store *`count`* or fewer characters in *`buffer`*.
 - **`snprintf`** always stores a terminating `NULL` character, truncating the output if necessary.
@@ -135,7 +135,7 @@ For the following table, let `sizeOfBuffer` be the size of `buffer`. If the func
 | `count < sizeOfBuffer` and the formatted data is <= `count` characters | All of the data is written and a terminating `NULL` is appended | The number of characters or wide characters written | N/A | No |
 | `count < sizeOfBuffer` and the formatted data exceeds `count` characters | The first *`count`* characters are written followed by a null-terminator. Remaining data is truncated. | The number of characters that would have been written had `count` matched the number of characters to output | N/A | No |
 | `count >= sizeOfBuffer` and number of characters of formatted data < `sizeOfBuffer` | All of the data is written with a terminating `NULL` | The number of characters written, not including the terminating `NULL` | N/A | No |
-| `count >= sizeOfBuffer` and number of characters of formatted data >= `sizeOfBuffer` | unsafe: writes over memory that follows the buffer | The number of characters written, not including the terminating `NULL` | N/A | No |
+| `count >= sizeOfBuffer` and number of characters of formatted data >= `sizeOfBuffer` | Unsafe: overwrites the memory that follows the buffer | The number of characters written, not including the terminating `NULL` | N/A | No |
 | `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
 
 For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
