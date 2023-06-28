@@ -102,7 +102,7 @@ int _vsnwprintf_l(
 Storage location for output.
 
 *`count`*\
-Maximum number of characters to write. For the functions that take `wchar_t`, it is the number of wide characters to write.
+Maximum number of characters to write. For the functions that take `wchar_t`, it's the number of wide characters to write.
 
 *`format`*\
 Format specification.
@@ -125,7 +125,7 @@ See [Behavior summary](#behavior-summary) for details.
 
 Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *`count`* characters to the memory pointed to by *`buffer`*. The **`vsnprintf`** function always writes a null terminator, even if it truncates the output. When you use **`_vsnprintf`** and **`_vsnwprintf`**, the buffer is null-terminated only if there's room at the end (that is, if the number of characters to write is less than *`count`*).
 
-Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`vsnprintf`** is no longer identical to **`_vsnprintf`**. The **`vsnprintf`** function conforms to the C99 standard; **`_vnsprintf`** is kept for backward compatibility with older code. The difference is that if you run out of buffer, `vsnprintf` null-terminates the end of the buffer and returns the number of characters that would have been required, while `_vsnprintf` doesn't null-terminate the buffer and returns -1. Also, `_vsnprintf()` includes one additional character in the output because it doesn't null-terminate the buffer.
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`vsnprintf`** is no longer identical to **`_vsnprintf`**. The **`vsnprintf`** function conforms to the C99 standard; **`_vnsprintf`** is kept for backward compatibility with older code. The difference is that if you run out of buffer, `vsnprintf` null-terminates the end of the buffer and returns the number of characters that would have been required, while `_vsnprintf` doesn't null-terminate the buffer and returns -1. Also, `_vsnprintf()` includes one more character in the output because it doesn't null-terminate the buffer.
 
 > [!IMPORTANT]
 > To prevent certain kinds of security risks, ensure that *`format`* isn't a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -153,11 +153,11 @@ For the following table:
 | Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error. | The number of characters written, not including the terminating `NULL`. | `EILSEQ` (42) | No |
 | `buffer == NULL` and `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value.| -1 | `EINVAL` (22) | Yes |
 | `count == 0` | No data is written | The number of characters that would have been written, not including the terminating `NULL`. You can use this result to allocate sufficient buffer space for the string and a terminating `NULL`, and then call the function again to fill the buffer. | N/A | No |
-| `count < 0`| Unsafe: the value is treated as unsigned, likely creating a very large value that results in overwriting the memory that follows the buffer. | The number of characters written. | N/A | No |
+| `count < 0`| Unsafe: the value is treated as unsigned, likely creating a large value that results in overwriting the memory that follows the buffer. | The number of characters written. | N/A | No |
 | `count < sizeOfBuffer` and `len <= count` | All of the data is written and a terminating `NULL` is appended. | The number of characters or wide characters written, not including the terminating `NULL`. | N/A | No |
 | `count < sizeOfBuffer` and `len > count` | The first *`count-1`* characters are written followed by a null-terminator. Remaining data is truncated. | The number of characters that would have been written had `count` matched the number of characters to output, not including the null-terminator. | N/A | No |
 | `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL`. | The number of characters written, not including the terminating `NULL`. | N/A | No |
-| `count >= sizeOfBuffer` and `len > = sizeOfBuffer` | Unsafe: the value is treated as unsigned, potentially creating a very large value that results in overwriting the memory that follows the buffer. | The number of characters written, not including the terminating `NULL`. | N/A | No |
+| `count >= sizeOfBuffer` and `len > = sizeOfBuffer` | Unsafe: overwrites the memory that follows the buffer. | The number of characters written, not including the terminating `NULL`. | N/A | No |
 | `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
 
 For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
