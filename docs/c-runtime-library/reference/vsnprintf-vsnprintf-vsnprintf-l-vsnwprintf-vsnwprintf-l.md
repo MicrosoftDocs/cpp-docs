@@ -148,17 +148,18 @@ For the following table:
 
 | Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md)|
 |--|--|--|--|--|
-| Success | Writes the characters (wide characters for **`_vsnwprintf`**) into the buffer using the specified format string | The number of characters written, not counting the terminating null character | N/A | No |
-| Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops | -1 | `EILSEQ (42)` | No |
-| Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | The number of characters written, not including the terminating `NULL` | `EILSEQ (42)` | No |
+| Success | Writes the characters (wide characters for **`_vsnwprintf`**) into the buffer using the specified format string. | The number of characters written, not counting the terminating null character. | N/A | No |
+| Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops. | -1 | `EILSEQ` (42) | No |
+| Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error. | The number of characters written, not including the terminating `NULL`. | `EILSEQ` (42) | No |
 | `buffer == NULL` and `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value.| -1 | `EINVAL` (22) | Yes |
-| `count == 0` | No data is written | The number of characters that would have been written, not including the terminating `NULL`. You can use this result to allocate sufficient buffer space for the string and a terminating `NULL`, and then call the function again to fill the buffer. | n/a | No |
-| `count < 0`| Unsafe: the value is treated as unsigned, likely creating a very large value that results in overwriting the memory that follows the buffer | The number of characters written | N/A | No |
-| `count < sizeOfBuffer` and `len <= count` | All of the data is written and a terminating `NULL` is appended | The number of characters or wide characters written, not including the terminating `NULL` | N/A | No |
-| `count < sizeOfBuffer` and `len > count` | The first *`count-1`* characters are written followed by a null-terminator. Remaining data is truncated. | The number of characters that would have been written had `count` matched the number of characters to output, not including the null-terminator | N/A | No |
-| `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL` | The number of characters written, not including the terminating `NULL` | N/A | No |
-| `count >= sizeOfBuffer` and `len > = sizeOfBuffer` | Unsafe: the value is treated as unsigned, potentially creating a very large value that results in overwriting the memory that follows the buffer | The number of characters written, not including the terminating `NULL` | N/A | No |
+| `count == 0` | No data is written | The number of characters that would have been written, not including the terminating `NULL`. You can use this result to allocate sufficient buffer space for the string and a terminating `NULL`, and then call the function again to fill the buffer. | N/A | No |
+| `count < 0`| Unsafe: the value is treated as unsigned, likely creating a very large value that results in overwriting the memory that follows the buffer. | The number of characters written. | N/A | No |
+| `count < sizeOfBuffer` and `len <= count` | All of the data is written and a terminating `NULL` is appended. | The number of characters or wide characters written, not including the terminating `NULL`. | N/A | No |
+| `count < sizeOfBuffer` and `len > count` | The first *`count-1`* characters are written followed by a null-terminator. Remaining data is truncated. | The number of characters that would have been written had `count` matched the number of characters to output, not including the null-terminator. | N/A | No |
+| `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL`. | The number of characters written, not including the terminating `NULL`. | N/A | No |
+| `count >= sizeOfBuffer` and `len > = sizeOfBuffer` | Unsafe: the value is treated as unsigned, potentially creating a very large value that results in overwriting the memory that follows the buffer. | The number of characters written, not including the terminating `NULL`. | N/A | No |
 | `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
+
 For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### Generic-text routine mappings
