@@ -97,6 +97,8 @@ The **`_snprintf_s`** function formats and stores *`count`* or fewer characters 
 
 ### Summary of behavior
 
+For the following table, let `len` be the size of the formatted data.
+
 | Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md)|
 |--|--|--|--|--|
 | Success | Writes the characters (wide characters for **`_snwprintf`**) into the buffer using the specified format string | The number of characters written, not including the terminating `NULL` | N/A | No |
@@ -106,12 +108,12 @@ The **`_snprintf_s`** function formats and stores *`count`* or fewer characters 
 | `buffer == NULL` and `sizeOfBuffer != 0` or `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | n/a | Yes |
 | `buffer != NULL` and `sizeOfBuffer == 0` | No data is written | -1 | `EINVAL` (22) | Yes |
 | `count <= 0`| Unsafe: the value is treated as unsigned, potentially creating a very large value that results in overwriting the memory that follows the buffer | The number of characters written, not including the terminating `NULL` | N/A | No |
-| `count < sizeOfBuffer` and formatted data is <= `count` characters | All of the data is written and a terminating `NULL` is appended | The number of characters or wide characters written | N/A | No |
-| `count < sizeOfBuffer` and formatted data exceeds `count` characters | The first *`count`* characters are written. Remaining data is truncated. | -1 | N/A | No |
-| `count >= sizeOfBuffer` and number of characters of formatted data < `sizeOfBuffer` | All of the data is written with a terminating `NULL` | The number of characters written | N/A | No |
-| `count >= sizeOfBuffer` and number of characters of formatted data >= `sizeOfBuffer` and `count != _TRUNCATE` | If execution continues after invalid parameter handler executes, sets `buffer[0] == NULL`. | -1 | `ERANGE` (34) | Yes |
-| `count == _TRUNCATE` and the number of characters of formatted data >= `sizeOfBuffer` | Writes as much of the string as fits in *`buffer`* (with terminating `NULL`) | -1 | N/A | No |
-| `count == _TRUNCATE` and number of characters of formatted data < `sizeOfBuffer` | Writes the entire string into *`buffer`* with terminating `NULL` | Number of characters written, not including the terminating `NULL` | N/A | No |
+| `count < sizeOfBuffer` and `len <= count` | All of the data is written and a terminating `NULL` is appended | The number of characters or wide characters written | N/A | No |
+| `count < sizeOfBuffer` and `len > count` | The first *`count`* characters are written. Remaining data is truncated. | -1 | N/A | No |
+| `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL` | The number of characters written | N/A | No |
+| `count >= sizeOfBuffer` and `len >= sizeOfBuffer` and `count != _TRUNCATE` | If execution continues after invalid parameter handler executes, sets `buffer[0] == NULL`. | -1 | `ERANGE` (34) | Yes |
+| `count == _TRUNCATE` and `len >= sizeOfBuffer` | Writes as much of the string as fits in *`buffer`* (with terminating `NULL`) | -1 | N/A | No |
+| `count == _TRUNCATE` and `len < sizeOfBuffer` | Writes the entire string into *`buffer`* with terminating `NULL` | Number of characters written, not including the terminating `NULL` | N/A | No |
 | `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
 
 For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
