@@ -104,8 +104,8 @@ For the following table, let `len` be the size of the formatted data. If the fun
 | Success | Writes the characters (wide characters for **`_snwprintf`**) into the buffer using the specified format string | The number of characters written, not including the terminating `NULL` | N/A | No |
 | Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops | -1 | `EILSEQ (42)` | No |
 | Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | The number of characters written, not including the terminating `NULL` | `EILSEQ (42)` | No |
-| `buffer == NULL` and `sizeOfBuffer == 0` and `count == 0` | No data is written | 0 | n/a | No |
-| `buffer == NULL` and `sizeOfBuffer != 0` or `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | n/a | Yes |
+| `buffer == NULL` and `sizeOfBuffer == 0` and `count == 0` | No data is written | 0 | N/A | No |
+| `buffer == NULL` and `sizeOfBuffer != 0` or `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
 | `buffer != NULL` and `sizeOfBuffer == 0` | No data is written | -1 | `EINVAL` (22) | Yes |
 | `count == 0`| A `NULL` is placed at the beginning of the buffer | -1 | N/A | No |
 | `count <= 0`| Unsafe: the value is treated as unsigned, likely creating a very large value that results in overwriting the memory that follows the buffer | The number of characters written, not including the terminating `NULL` | N/A | No |
