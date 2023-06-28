@@ -34,9 +34,17 @@ When you link the VCAsan library to your executable, users can enable it to gene
 
 `set ASAN_SAVE_DUMPS=MyFileName.dmp`
 
-The file must have a .dmp suffix to follow the Visual Studio IDE conventions.
+The file must have a `.dmp` extension to follow the Visual Studio IDE conventions. (Prior to 17.7)
 
 Here's what happens when a dump file is specified for `ASAN_SAVE_DUMPS`: If an error gets caught by the AddressSanitizer runtime, it saves a crash dump file that has the metadata associated with the error. The debugger in Visual Studio version 16.9 and later can parse the metadata that's saved in the dump file. You can set `ASAN_SAVE_DUMPS` on a per-test basis, store these binary artifacts, and then view them in the IDE with proper source indexing.
+
+In Visual Studio version 17.7 and later, these capabilities were expanded to handle a variety of scenarios:
+
+1. Quotes will be stripped to accommodate spaces in directory or file names. In previous versions depending on the environment, setting the environment variable to have quotes or spaces would not work.
+
+1. If the `.dmp` extension is explicitly entered, VCAsan will try to use that explicitly and not add an associated process ID to the dump file name. 
+
+1. If somehow a dmp already exists, VCAsan will attempt to write to a different file name similar to other Windows programs by appending a number in parentheses. If this does not work after several attempts, a temporary path will be used. If they all fail, an error message is displayed with diagnostic information.
 
 ## See also
 
@@ -47,3 +55,4 @@ Here's what happens when a dump file is specified for `ASAN_SAVE_DUMPS`: If an e
 [AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer error examples](./asan-error-examples.md)
+
