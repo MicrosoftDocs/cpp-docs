@@ -116,7 +116,7 @@ For all functions, if `len < count`, then **`len`** characters are stored in *`b
 
 The wide character versions of these functions return the number of wide characters written, not including the terminating `NULL`.
 
-See [Summary of behavior](#summary-of-behavior) for details.
+See [Behavior summary](#behavior-summary) for details.
 
 ## Remarks
 
@@ -128,11 +128,11 @@ Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is 
 - The **`_snprintf`** family of functions only appends a terminating `NULL` character if the formatted string length is strictly less than *`count`* characters.
 - Each *`argument`* (if any) is converted and is output according to the corresponding format specification in *`format`*. The format consists of ordinary characters and has the same form and function as the *`format`* argument for [`printf`](printf-printf-l-wprintf-wprintf-l.md). If copying occurs between strings that overlap, the behavior is undefined.
 
-### Summary of behavior
+### Behavior summary
 
 For the following table:
 - let `sizeOfBuffer` be the size of `buffer`. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words.
-- let `len` be the size of the formatted data
+- let `len` be the size of the formatted data. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words.
 
 | Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md)|
 |--|--|--|--|--|
@@ -141,9 +141,9 @@ For the following table:
 | Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | The number of characters written, not including the terminating `NULL` | `EILSEQ (42)` | No |
 | `buffer == NULL` and `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
 | `count == 0` | Calculates the number of characters required to store the output | The number of characters required to store the output, not including the trailing `NULL`. | N/A | No |
-| `count < 0`| Unsafe: the value is treated as unsigned, potentially creating a very large value that results in overwriting the memory that follows the buffer | The number of characters written | N/A | No |
+| `count < 0`| Unsafe: the value is treated as unsigned, likely creating a very large value that results in overwriting the memory that follows the buffer | The number of characters written | N/A | No |
 | `count < sizeOfBuffer` and `len <= count` | All of the data is written and a terminating `NULL` is appended | The number of characters or wide characters written, not including the terminating `NULL` | N/A | No |
-| `count < sizeOfBuffer` and `len > count` | The first *`count`* characters are written followed by a null-terminator. Remaining data is truncated. | The number of characters that would have been written had `count` matched the number of characters to output, not including the null-terminator | N/A | No |
+| `count < sizeOfBuffer` and `len > count` | The first *`count-1`* characters are written and a terminating `NULL` is appended. Remaining data isn't written. | The number of characters that would have been written had `count` matched the number of characters to output, not including the null-terminator | N/A | No |
 | `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL` | The number of characters written, not including the terminating `NULL` | N/A | No |
 | `count >= sizeOfBuffer` `len >= sizeOfBuffer` | Unsafe: the value is treated as unsigned, potentially creating a very large value that results in overwriting the memory that follows the buffer | The number of characters written, not including the terminating `NULL` | N/A | No |
 | `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |

@@ -89,15 +89,15 @@ The locale to use.
 
 ## Return value
 
-The number of characters written, not including the terminating `NULL`. A negative value is returned if an output error occurs. See [Summary of behavior](#summary-of-behavior) for details.
+The number of characters written, not including the terminating `NULL`. A negative value is returned if an output error occurs. See [Behavior summary](#behavior-summary) for details.
 
 ## Remarks
 
 The **`_snprintf_s`** function formats and stores *`count`* or fewer characters in *`buffer`* and appends a terminating `NULL`. Each argument (if any) is converted and output according to the corresponding format specification in *`format`*. The formatting is consistent with the **`printf`** family of functions; see [Format specification syntax: `printf` and `wprintf` functions](../format-specification-syntax-printf-and-wprintf-functions.md). If copying occurs between strings that overlap, the behavior is undefined.
 
-### Summary of behavior
+### Behavior summary
 
-For the following table, let `len` be the size of the formatted data.
+For the following table, let `len` be the size of the formatted data. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words.
 
 | Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md)|
 |--|--|--|--|--|
@@ -107,9 +107,10 @@ For the following table, let `len` be the size of the formatted data.
 | `buffer == NULL` and `sizeOfBuffer == 0` and `count == 0` | No data is written | 0 | n/a | No |
 | `buffer == NULL` and `sizeOfBuffer != 0` or `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | n/a | Yes |
 | `buffer != NULL` and `sizeOfBuffer == 0` | No data is written | -1 | `EINVAL` (22) | Yes |
-| `count <= 0`| Unsafe: the value is treated as unsigned, potentially creating a very large value that results in overwriting the memory that follows the buffer | The number of characters written, not including the terminating `NULL` | N/A | No |
+| `count == 0`| A `NULL` is placed at the beginning of the buffer | -1 | N/A | No |
+| `count <= 0`| Unsafe: the value is treated as unsigned, likely creating a very large value that results in overwriting the memory that follows the buffer | The number of characters written, not including the terminating `NULL` | N/A | No |
 | `count < sizeOfBuffer` and `len <= count` | All of the data is written and a terminating `NULL` is appended | The number of characters or wide characters written | N/A | No |
-| `count < sizeOfBuffer` and `len > count` | The first *`count`* characters are written. Remaining data is truncated. | -1 | N/A | No |
+| `count < sizeOfBuffer` and `len > count` | The first *`count`* characters are written and a terminating `NULL` is appended. Remaining data isn't written. | -1 | N/A | No |
 | `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL` | The number of characters written | N/A | No |
 | `count >= sizeOfBuffer` and `len >= sizeOfBuffer` and `count != _TRUNCATE` | If execution continues after invalid parameter handler executes, sets `buffer[0] == NULL`. | -1 | `ERANGE` (34) | Yes |
 | `count == _TRUNCATE` and `len >= sizeOfBuffer` | Writes as much of the string as fits in *`buffer`* (with terminating `NULL`) | -1 | N/A | No |

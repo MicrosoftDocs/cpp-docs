@@ -101,7 +101,7 @@ For more information, see [Format specifications](../format-specification-syntax
 
 The number of characters written, not including the terminating `NULL`, or a negative value if an output error occurs.
 
-See [Summary of behavior](#summary-of-behavior) for details.
+See [Behavior summary](#behavior-summary) for details.
 
 ## Remarks
 
@@ -111,9 +111,9 @@ Each of these functions takes a pointer to an argument list, then formats and wr
 
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-### Summary of behavior
+### Behavior summary
 
-For the following table, let `len` be the size of the formatted data.
+For the following table, let `len` be the size of the formatted data. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words.
 
 | Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) |
 |--|--|--|--|--|
