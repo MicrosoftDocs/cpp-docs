@@ -119,7 +119,6 @@ For the following table:
 - Characters refer to `char` characters for functions that take a `char` buffer, and to `wchar_t` characters for functions that take a `wchar_t` buffer.
 - For more information about the invalid parameter handler, see [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-
 | Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler|
 |--|--|--|--|--|
 | Success | Writes the characters into the buffer using the specified format string | The number of characters written | N/A | No |
