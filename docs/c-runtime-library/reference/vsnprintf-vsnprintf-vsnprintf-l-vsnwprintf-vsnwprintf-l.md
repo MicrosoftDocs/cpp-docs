@@ -143,10 +143,11 @@ In C++, these functions have template overloads that invoke the newer, secure co
 ### Behavior summary
 
 For the following table:
+
 - Let `sizeOfBuffer` be the size of `buffer`. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words.
 - Let `len` be the size of the formatted data. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words.
 - Characters refer to `char` characters for functions that take a `char` buffer, and to `wchar_t` characters for functions that take a `wchar_t` buffer.
-- For more information about the invalid parameter handler, see [Parameter Validation](../../c-runtime-library/parameter-validation.md)
+- For more information about the invalid parameter handler, see [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 | Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler|
 |--|--|--|--|--|
@@ -159,7 +160,7 @@ For the following table:
 | `count < sizeOfBuffer` and `len <= count` | All of the data is written and a terminating `NULL` is appended. | The number of characters written, not including the terminating `NULL`. | N/A | No |
 | `count < sizeOfBuffer` and `len > count` | The first *`count-1`* characters are written followed by a null-terminator. | The number of characters that would have been written had `count` matched the number of characters to output, not including the null-terminator. | N/A | No |
 | `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL`. | The number of characters written, not including the terminating `NULL`. | N/A | No |
-| `count >= sizeOfBuffer` and `len > = sizeOfBuffer` | Unsafe: overwrites the memory that follows the buffer. | The number of characters written, not including the terminating `NULL`. | N/A | No |
+| `count >= sizeOfBuffer` and `len >= sizeOfBuffer` | Unsafe: overwrites the memory that follows the buffer. | The number of characters written, not including the terminating `NULL`. | N/A | No |
 | `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
 
 For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).

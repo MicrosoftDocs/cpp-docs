@@ -114,24 +114,25 @@ The versions of these functions with the **`_l`** suffix are identical except th
 ### Behavior summary
 
 For the following table:
+
 - Let `len` be the size of the formatted data. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words. 
 - Characters refer to `char` characters for functions that take a `char` buffer, and to `wchar_t` characters for functions that take a `wchar_t` buffer.
-- For more information about the invalid parameter handler, see [Parameter Validation](../../c-runtime-library/parameter-validation.md)
+- For more information about the invalid parameter handler, see [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 
 | Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler|
 |--|--|--|--|--|
 | Success | Writes the characters into the buffer using the specified format string | The number of characters written | N/A | No |
-| Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops | -1 | `EILSEQ (42)` | No |
-| Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error | The number of characters written, not including the terminating `NULL`. | `EILSEQ (42)` | No |
-| `buffer == NULL` and `sizeOfBuffer == 0` and `count == 0` | No data is written. | 0 | n/a | No |
-| `buffer == NULL` and `sizeOfBuffer != 0` or `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value.| -1 | `EINVAL` (22) | Yes |
+| Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops. | -1 | `EILSEQ (42)` | No |
+| Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error. | The number of characters written, not including the terminating `NULL`. | `EILSEQ (42)` | No |
+| `buffer == NULL` and `sizeOfBuffer == 0` and `count == 0` | No data is written. | 0 | N/A | No |
+| `buffer == NULL` and either `sizeOfBuffer != 0` or `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value.| -1 | `EINVAL` (22) | Yes |
 | `buffer != NULL` and `sizeOfBuffer == 0` | No data is written. | -1 | `EINVAL` (22) | Yes |
 | `count <= 0`| If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
 | `count < sizeOfBuffer` and `len <= count`  | All of the data is written and a terminating `NULL` is appended. | The number of characters written. | N/A | No |
 | `count < sizeOfBuffer` and `len > count` | The first *`count`* characters are written. | -1 | N/A | No |
-| `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL` | The number of characters written, not including the terminating `NULL`. | N/A | No |
-| `count >= sizeOfBuffer` and `len >= sizeOfBuffer` and `count != _TRUNCATE` | If execution continues after invalid parameter handler executes, sets `buffer[0] == NULL`. | -1 | `ERANGE` (34) | Yes |
+| `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL`. | The number of characters written, not including the terminating `NULL`. | N/A | No |
+| `count >= sizeOfBuffer` and `len >= sizeOfBuffer` and `count != _TRUNCATE` | If execution continues after invalid parameter handler executes, sets `errno`, sets `buffer[0] == NULL`, and returns a negative value. | -1 | `ERANGE` (34) | Yes |
 | `count == _TRUNCATE` and `len >= sizeOfBuffer` | Writes as much of the string as fits in *`buffer`*, including the terminating `NULL`. | -1 | N/A | No |
 | `count == _TRUNCATE` and `len < sizeOfBuffer` | Writes the entire string into *`buffer`* with terminating `NULL`. | Number of characters written. | N/A | No |
 | `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
