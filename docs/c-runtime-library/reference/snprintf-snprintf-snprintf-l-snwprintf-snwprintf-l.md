@@ -120,7 +120,7 @@ See [Behavior summary](#behavior-summary) for details.
 
 ## Remarks
 
-Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** behavior is now C99 standard conformant. The difference is that if you run out of buffer, `snprintf` null-terminates the end of the buffer and returns the number of characters that would have been required; while `_snprintf` doesn't null-terminate the buffer and returns -1. Also, `snprintf()` includes one more character in the output because it doesn't null-terminate the buffer.
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** behavior is now C99 standard conformant. The difference is that if you run out of buffer, `snprintf` null-terminates the end of the buffer and returns the number of characters that would have been required whereas `_snprintf` doesn't null-terminate the buffer and returns -1. Also, `snprintf()` includes one more character in the output because it doesn't null-terminate the buffer.
 
 - **`snprintf`** and the **`_snprintf`** family of functions format and store *`count`* or fewer characters in *`buffer`*.
 - **`snprintf`** always stores a terminating `NULL` character, truncating the output if necessary.
@@ -143,7 +143,7 @@ For the following table:
 | Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops, a `NULL` is placed at the beginning of the buffer. | -1 | `EILSEQ` (42) | No |
 | Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error. | The number of characters written, not including the terminating `NULL`. | `EILSEQ` (42) | No |
 | `buffer == NULL` and `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
-| `count == 0` | Calculates the number of characters required to store the output. | The number of characters required to store the output, not including the terminating `NULL`. | N/A | No |
+| `count == 0` | The number of characters that would have been written, not including the terminating `NULL`. You can use this result to allocate sufficient buffer space for the string and a terminating `NULL`, and then call the function again to fill the buffer. | N/A | No |
 | `count < 0`| Unsafe: the value is treated as unsigned, likely creating a large value that results in overwriting the memory that follows the buffer. | The number of characters written | N/A | No |
 | `count < sizeOfBuffer` and `len <= count` | All of the data is written and a terminating `NULL` is appended. | The number of characters written, not including the terminating `NULL`. | N/A | No |
 | `count < sizeOfBuffer` and `len > count` | The first *`count-1`* characters are written followed by a null-terminator. | The number of characters that would have been written had `count` matched the number of characters to output, not including the null-terminator. | N/A | No |
