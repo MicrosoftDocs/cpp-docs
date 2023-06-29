@@ -1,6 +1,6 @@
 ---
 title: "for each, in"
-description: "C++/CLI for each, in statement description and examples."
+description: "C++/CLI for each, in, statement descriptions and examples."
 ms.date: 06/29/2023
 ms.topic: "reference"
 f1_keywords: ["cliext::foreach", "each_CPP", "in_CPP", "for each_CPP", "for each", "in"]
@@ -8,9 +8,9 @@ helpviewer_keywords: ["for each keyword [C++]"]
 ---
 # `for each`, `in`
 
-Iterates through an array or collection. This non-standard keyword is available in both C++/CLI and native C++ projects. However, using it isn't recommended. Consider using a standard [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) instead.
+Iterates through an array or collection. This nonstandard keyword is available in both C++/CLI and native C++ projects. However, using a standard [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) is preferred, instead.
 
-## All Runtimes
+## All runtimes
 
 ### Syntax
 
