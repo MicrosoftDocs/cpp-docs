@@ -1,17 +1,16 @@
 ---
 title: "for each, in"
-description: "C++/CLI for each, in statement description and examples."
-ms.date: 04/15/2022
+description: "C++/CLI for each, in, statement descriptions and examples."
+ms.date: 06/29/2023
 ms.topic: "reference"
 f1_keywords: ["cliext::foreach", "each_CPP", "in_CPP", "for each_CPP", "for each", "in"]
 helpviewer_keywords: ["for each keyword [C++]"]
-ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
 ---
 # `for each`, `in`
 
-Iterates through an array or collection. This non-standard keyword is available in both C++/CLI and native C++ projects. However, its use isn't recommended. Consider using a standard [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) instead.
+Iterates through an array or collection. This nonstandard keyword is available in both C++/CLI and native C++ projects. However, using a standard [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) is preferred, instead.
 
-## All Runtimes
+## All runtimes
 
 ### Syntax
 
@@ -57,29 +56,34 @@ This example shows how to use `for each` to iterate through a string.
 #include <stdio.h>
 using namespace Platform;
 
-ref struct MyClass {
+ref struct MyClass
+{
    property String^ MyStringProperty;
 };
 
-int main() {
+int main()
+{
    String^ MyString = ref new String("abcd");
 
    for each ( char c in MyString )
+   {
       wprintf("%c", c);
+   }
 
-   wprintf("/n");
+   wprintf("\n");
 
    MyClass^ x = ref new MyClass();
    x->MyStringProperty = "Testing";
 
    for each( char c in x->MyStringProperty )
+   {
       wprintf("%c", c);
+   }
 }
 ```
 
 ```Output
 abcd
-
 Testing
 ```
 
@@ -107,29 +111,34 @@ This example shows how to use `for each` to iterate through a string.
 // compile with: /clr
 using namespace System;
 
-ref struct MyClass {
+ref struct MyClass
+{
    property String ^ MyStringProperty;
 };
 
-int main() {
+int main()
+{
    String ^ MyString = gcnew String("abcd");
 
    for each ( Char c in MyString )
+   {
       Console::Write(c);
+   }
 
    Console::WriteLine();
 
-   MyClass ^ x = gcnew MyClass();
+   MyClass ^x = gcnew MyClass();
    x->MyStringProperty = "Testing";
 
    for each( Char c in x->MyStringProperty )
+   {
       Console::Write(c);
+   }
 }
 ```
 
 ```Output
 abcd
-
 Testing
 ```
 
