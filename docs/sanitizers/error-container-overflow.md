@@ -86,7 +86,7 @@ Ideally, we'd mark the shadow memory, which Address Sanitizer sets aside for eve
 
 `std::allocator` uses the `_Minimum_asan_allocation_alignment` static member variable to tell `vector` and `string` that they can trust the allocator not to put data right after the allocation. This ensures that the allocator won't use the memory between the end of the allocation and end of the chunk. Thus that part of the chunk can be marked as inacessible by the Address Sanitizer to catch overruns.
 
-If you want the implementation to trust your custom allocator, set `_Minimum_asan_allocation_alignment` to your actual minimum alignment. For AddressSanitizer to work correctly, the alignment must be at least 8.
+If you want the implementation to trust that your custom allocator is handling the memory between the end of the allocation and the end of the chunk so that it can mark that memory as inaccessible and catch overruns, set `_Minimum_asan_allocation_alignment` to your actual minimum alignment. For AddressSanitizer to work correctly, the alignment must be at least 8.
 
 ## See also
 
