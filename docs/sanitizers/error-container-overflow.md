@@ -17,7 +17,7 @@ In Visual Studio 2022 version 17.2 and later, the Microsoft Visual C++ standard 
 | `std::vector` | `_DISABLE_VECTOR_ANNOTATION` | Visual Studio 2022 17.2 |
 | `std::string` | `_DISABLE_STRING_ANNOTATION` | Visual Studio 2022 17.6 |
 
-There are checks to ensure that there are no one-definition-rule (ODR) violations. An ODR violation occurs when one translation unit annotates a standard type, such as `vector`, with ASan annotations, but another translation unit doesn't. In that case, the linker encounters an ODR violation because there is one `Vector::push_back`, for example, that has address sanitizer annotation update code while the `Vector::push_back` in the other translation unit doesn't. To avoid this problem, each static library and object used to link the binary must also enable ASan annotations. Effectively, you must build those static libraries and objects with AddressSanitizer enabled. Mixing code with different annotation settings causes an error:
+There are checks to ensure that there are no one-definition-rule (ODR) violations. An ODR violation occurs when one translation unit annotates a standard type, such as `vector`, with ASan annotations, but another translation unit doesn't. In that case, the linker encounters an ODR violation because there's one `vector::push_back`, for example, that has address sanitizer annotation update code while the `Vector::push_back` in the other translation unit doesn't. To avoid this problem, each static library and object used to link the binary must also enable ASan annotations. Effectively, you must build those static libraries and objects with AddressSanitizer enabled. Mixing code with different annotation settings causes an error:
 
 ```Output
 my_static.lib(my_code.obj) : error LNK2038: mismatch detected for 'annotate_vector': value '0' doesn't match value '1' in main.obj
@@ -49,7 +49,7 @@ int main() {
 }
 ```
 
-To build and test this example, run the following commands in a Visual Studio 2022 version 17.2 or later [Developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts) window:
+To build and test this example, run the following commands in a Visual Studio 2022 version 17.2, or later [Developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts) window:
 
 ```cmd
 cl /EHsc example1.cpp /fsanitize=address /Zi
@@ -84,7 +84,7 @@ In the previous example, chunk 3 has 4 bytes of memory that are assumed to be in
 
 Ideally, we'd mark the shadow memory, which Address Sanitizer sets aside for every 8-byte block of memory to track which bytes in that 8-byte block are valid and which are invalid (and why), such that `v.data() + [0, v.size())` are accessible, and `v.data() + [v.size(), v.capacity())` are inaccessible. Note the use of interval notation here: '[' means inclusive of, and ')' means exclusive of. If the user is using a custom allocator, we don't know whether the memory after `v.data() + v.capacity()` is accessible or not. We must assume that it is. We'd prefer to mark those bytes as inaccessible in the shadow memory, but we must mark them as accessible so that it remains possible to access those bytes after the allocation.
 
-`std::allocator` uses the `_Minimum_asan_allocation_alignment` static member variable to tell `vector` and `string` that they can trust the allocator not to put data right after the allocation. This ensures that the allocator won't use the memory between the end of the allocation and end of the chunk. Thus that part of the chunk can be marked as inacessible by the Address Sanitizer to catch overruns.
+`std::allocator` uses the `_Minimum_asan_allocation_alignment` static member variable to tell `vector` and `string` that they can trust the allocator not to put data right after the allocation. This ensures that the allocator won't use the memory between the end of the allocation and end of the chunk. Thus that part of the chunk can be marked inaccessible by the Address Sanitizer to catch overruns.
 
 If you want the implementation to trust that your custom allocator is handling the memory between the end of the allocation and the end of the chunk so that it can mark that memory as inaccessible and catch overruns, set `_Minimum_asan_allocation_alignment` to your actual minimum alignment. For AddressSanitizer to work correctly, the alignment must be at least 8.
 
