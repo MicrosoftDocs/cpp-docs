@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l"
 title: "vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l"
-ms.date: 09/29/2022
+ms.date: 06/27/2023
 api_name: ["_vsnwprintf_s", "_vsnwprintf_s_l", "_vsnprintf_s", "vsnprintf_s", "_vsnprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -23,6 +23,7 @@ int vsnprintf_s(
    const char *format,
    va_list argptr
 );
+
 int _vsnprintf_s(
    char *buffer,
    size_t sizeOfBuffer,
@@ -30,6 +31,7 @@ int _vsnprintf_s(
    const char *format,
    va_list argptr
 );
+
 int _vsnprintf_s_l(
    char *buffer,
    size_t sizeOfBuffer,
@@ -38,6 +40,7 @@ int _vsnprintf_s_l(
    _locale_t locale,
    va_list argptr
 );
+
 int _vsnwprintf_s(
    wchar_t *buffer,
    size_t sizeOfBuffer,
@@ -45,6 +48,7 @@ int _vsnwprintf_s(
    const wchar_t *format,
    va_list argptr
 );
+
 int _vsnwprintf_s_l(
    wchar_t *buffer,
    size_t sizeOfBuffer,
@@ -53,6 +57,7 @@ int _vsnwprintf_s_l(
    _locale_t locale,
    va_list argptr
 );
+
 template <size_t size>
 int _vsnprintf_s(
    char (&buffer)[size],
@@ -60,6 +65,7 @@ int _vsnprintf_s(
    const char *format,
    va_list argptr
 ); // C++ only
+
 template <size_t size>
 int _vsnwprintf_s(
    wchar_t (&buffer)[size],
@@ -75,10 +81,10 @@ int _vsnwprintf_s(
 Storage location for output.
 
 *`sizeOfBuffer`*\
-The size of the *`buffer`* for output, as the character count.
+The size of the *`buffer`* for output. Size in **bytes** for the functions that take `char`, and **words** for those that take `wchar_t`.
 
 *`count`*\
-Maximum number of characters to write (not including the terminating null), or [`_TRUNCATE`](../truncate.md).
+Maximum number of characters to write not including the terminating `NULL`. For the functions that take `wchar_t`, it's the number of wide characters to write. Or [`_TRUNCATE`](../truncate.md).
 
 *`format`*\
 Format specification.
@@ -87,44 +93,51 @@ Format specification.
 Pointer to list of arguments.
 
 *`locale`*\
-The locale to use.
+The locale to use when formatting the output.
 
 For more information, see [Format specifications](../format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Return value
 
-**`vsnprintf_s`**, **`_vsnprintf_s`** and **`_vsnwprintf_s`** return the number of characters written, not including the terminating null, or a negative value if either truncation of the data or an output error occurs.
+The number of characters written, not including the terminating `NULL`, or a negative value if an output error occurs.
 
-* If *`count`* is less than *`sizeOfBuffer`* and the number of characters of data is less than or equal to *`count`*, or *`count`* is [`_TRUNCATE`](../truncate.md) and the number of characters of data is less than *`sizeOfBuffer`*, then all of the data is written and the number of characters is returned.
-
-* If *`count`* is less than *`sizeOfBuffer`* but the data exceeds *`count`* characters, then the first *`count`* characters are written. Truncation of the remaining data occurs and -1 is returned without invoking the invalid parameter handler.
-
-* If *`count`* is [`_TRUNCATE`](../truncate.md) and the number of characters of data equals or exceeds *`sizeOfBuffer`*, then as much of the string as will fit in *`buffer`* (with terminating null) is written. Truncation of the remaining data occurs and -1 is returned without invoking the invalid parameter handler.
-
-* If *`count`* is equal to or exceeds *`sizeOfBuffer`* but the number of characters of data is less than *`sizeOfBuffer`*, then all of the data is written (with terminating null) and the number of characters is returned.
-
-* If *`count`* and the number of characters of data both equal or exceed *`sizeOfBuffer`*, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *`buffer`* to an empty string, set `errno` to `ERANGE`, and return -1.
-
-* If *`buffer`* or *`format`* is a `NULL` pointer, or if *`count`* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
-
-### Error conditions
-
-| Condition | Return value | `errno` |
-|---|---|---|
-| *`buffer`* is `NULL` | -1 | `EINVAL` |
-| *`format`* is `NULL` | -1 | `EINVAL` |
-| *`count`* <= 0 | -1 | `EINVAL` |
-| *`sizeOfBuffer`* too small (and *`count`* != `_TRUNCATE`) | -1 (and *`buffer`* set to an empty string) | `ERANGE` |
+See [Behavior summary](#behavior-summary) for details.
 
 ## Remarks
 
-**`vsnprintf_s`** is identical to **`_vsnprintf_s`**. **`vsnprintf_s`** is included for conformance to the ANSI standard. **`_vnsprintf`** is retained for backward compatibility.
+**`vsnprintf_s`** is identical to **`_vsnprintf_s`** and is included for conformance to the ANSI standard. **`_vnsprintf`** is retained for backward compatibility.
 
 Each of these functions takes a pointer to an argument list, then formats and writes up to *`count`* characters of the given data to the memory pointed to by *`buffer`* and appends a terminating null.
 
-If *`count`* is [`_TRUNCATE`](../truncate.md), then these functions write as much of the string as will fit in *`buffer`* while leaving room for a terminating null. If the entire string (with terminating null) fits in *`buffer`*, then these functions return the number of characters written (not including the terminating null); otherwise, these functions return -1 to indicate that truncation occurred.
-
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+
+### Behavior summary
+
+For the following table:
+
+- Let `len` be the size of the formatted data. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words. 
+- Characters refer to `char` characters for functions that take a `char` buffer, and to `wchar_t` characters for functions that take a `wchar_t` buffer.
+- For more information about the invalid parameter handler, see [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+
+| Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler|
+|--|--|--|--|--|
+| Success | Writes the characters into the buffer using the specified format string | The number of characters written | N/A | No |
+| Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops. | -1 | `EILSEQ (42)` | No |
+| Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error. | The number of characters written, not including the terminating `NULL`. | `EILSEQ (42)` | No |
+| `buffer == NULL` and `sizeOfBuffer == 0` and `count == 0` | No data is written. | 0 | N/A | No |
+| `buffer == NULL` and either `sizeOfBuffer != 0` or `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value.| -1 | `EINVAL` (22) | Yes |
+| `buffer != NULL` and `sizeOfBuffer == 0` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
+| `count == 0`| Doesn't write any data and returns the number of characters that would have been written, not including the terminating `NULL`. | The number of characters that would have been written not including the terminating `NULL`. | N/A | No |
+| `count < 0` | Unsafe: the value is treated as unsigned, likely creating a large value that results in overwriting the memory that follows the buffer. | The number of characters written, not including the terminating `NULL`. | N/A | No |
+| `count < sizeOfBuffer` and `len <= count`  | All of the data is written and a terminating `NULL` is appended. | The number of characters written. | N/A | No |
+| `count < sizeOfBuffer` and `len > count` | The first *`count`* characters are written. | -1 | N/A | No |
+| `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL`. | The number of characters written, not including the terminating `NULL`. | N/A | No |
+| `count >= sizeOfBuffer` and `len >= sizeOfBuffer` and `count != _TRUNCATE` | If execution continues after invalid parameter handler executes, sets `errno`, sets `buffer[0] == NULL`, and returns a negative value. | -1 | `ERANGE` (34) | Yes |
+| `count == _TRUNCATE` and `len >= sizeOfBuffer` | Writes as much of the string as fits in *`buffer`*, including the terminating `NULL`. | -1 | N/A | No |
+| `count == _TRUNCATE` and `len < sizeOfBuffer` | Writes the entire string into *`buffer`* with terminating `NULL`. | Number of characters written. | N/A | No |
+| `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
+
+For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -196,4 +209,4 @@ nSize: -1, buff: Hi there!
 [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
 [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)\
 [`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
-[`va_arg`, `va_copy`, `va_end`, `va_start`](va-arg-va-copy-va-end-va-start.md)\
+[`va_arg`, `va_copy`, `va_end`, `va_start`](va-arg-va-copy-va-end-va-start.md)
