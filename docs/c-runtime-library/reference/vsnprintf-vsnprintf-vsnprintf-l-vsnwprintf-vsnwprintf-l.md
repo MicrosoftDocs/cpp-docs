@@ -1,7 +1,7 @@
 ---
 title: "vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l"
 description: "API reference for vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, and _vsnwprintf_l; which write formatted output using a pointer to a list of arguments."
-ms.date: "3/9/2021"
+ms.date: 06/27/2023
 api_name: ["_vsnprintf", "_vsnprintf_l", "_vsnwprintf", "_vsnwprintf_l", "_vsnprintf", "_vsnprintf;", "vsnprintf; _vsnprintf", "_vsnwprintf;", "_vsnprintf_l;", "_vsnwprintf_l;"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll"]
 api_type: ["DLLExport"]
@@ -22,12 +22,14 @@ int vsnprintf(
    const char *format,
    va_list argptr
 );
+
 int _vsnprintf(
    char *buffer,
    size_t count,
    const char *format,
    va_list argptr
 );
+
 int _vsnprintf_l(
    char *buffer,
    size_t count,
@@ -35,12 +37,14 @@ int _vsnprintf_l(
    _locale_t locale,
    va_list argptr
 );
+
 int _vsnwprintf(
    wchar_t *buffer,
    size_t count,
    const wchar_t *format,
    va_list argptr
 );
+
 int _vsnwprintf_l(
    wchar_t *buffer,
    size_t count,
@@ -48,6 +52,7 @@ int _vsnwprintf_l(
    _locale_t locale,
    va_list argptr
 );
+
 template <size_t size>
 int vsnprintf(
    char (&buffer)[size],
@@ -55,6 +60,7 @@ int vsnprintf(
    const char *format,
    va_list argptr
 ); // C++ only
+
 template <size_t size>
 int _vsnprintf(
    char (&buffer)[size],
@@ -62,6 +68,7 @@ int _vsnprintf(
    const char *format,
    va_list argptr
 ); // C++ only
+
 template <size_t size>
 int _vsnprintf_l(
    char (&buffer)[size],
@@ -70,6 +77,7 @@ int _vsnprintf_l(
    _locale_t locale,
    va_list argptr
 ); // C++ only
+
 template <size_t size>
 int _vsnwprintf(
    wchar_t (&buffer)[size],
@@ -77,6 +85,7 @@ int _vsnwprintf(
    const wchar_t *format,
    va_list argptr
 ); // C++ only
+
 template <size_t size>
 int _vsnwprintf_l(
    wchar_t (&buffer)[size],
@@ -93,7 +102,7 @@ int _vsnwprintf_l(
 Storage location for output.
 
 *`count`*\
-Maximum number of characters to write.
+Maximum number of characters to write. For the functions that take `wchar_t`, it's the number of wide characters to write.
 
 *`format`*\
 Format specification.
@@ -108,19 +117,15 @@ For more information, see [Format specification syntax](../format-specification-
 
 ## Return value
 
-The **`vsnprintf`** function returns the number of characters that are written, not counting the terminating null character. If the buffer size specified by *`count`* isn't sufficiently large to contain the output specified by *`format`* and *`argptr`*, the return value of **`vsnprintf`** is the number of characters that would be written, not counting the null character, if *`count`* were sufficiently large. If the return value is greater than *`count`* - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.
+The number of characters written, not including the terminating `NULL`, or a negative value if an output error occurs.
 
-Both **`_vsnprintf`** and **`_vsnwprintf`** functions return the number of characters written if the number of characters to write is less than or equal to *`count`*. If the number of characters to write is greater than *`count`*, these functions return -1 indicating that output has been truncated.
-
-The value returned by all these functions doesn't include the terminating null, whether one is written or not.
-
-- If *`count`* is zero and *`buffer`* is `NULL`, the value returned is the number of characters the functions would write. The value doesn't take into account a terminating `NULL`. You can use this result to allocate sufficient buffer space for the string and a terminating null, and then call the function again to fill the buffer.
-- If *`count`* is zero but *`buffer`* isn't `NULL`, nothing is written and the function returns `-1`.
-- If *`format`* is `NULL`, or if *`buffer`* is `NULL` and *`count`* isn't equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
+See [Behavior summary](#behavior-summary) for details.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *`count`* characters  to the memory pointed to by *`buffer`*. The **`vsnprintf`** function always writes a null terminator, even if it truncates the output. When you use **`_vsnprintf`** and **`_vsnwprintf`**, the buffer is null-terminated only if there's room at the end (that is, if the number of characters to write is less than *`count`*).
+Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *`count`* characters to the memory pointed to by *`buffer`*. The **`vsnprintf`** function always writes a null terminator, even if it truncates the output. When you use **`_vsnprintf`** and **`_vsnwprintf`**, the buffer is null-terminated only if there's room at the end (that is, if the number of characters to write is less than *`count`*).
+
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`vsnprintf`** is no longer identical to **`_vsnprintf`**. The **`vsnprintf`** function conforms to the C99 standard; **`_vnsprintf`** is kept for backward compatibility with older code. The difference is that if you run out of buffer, `vsnprintf` null-terminates the end of the buffer and returns the number of characters that would have been required, while `_vsnprintf` doesn't null-terminate the buffer and returns -1. Also, `_vsnprintf()` includes one more character in the output because it doesn't null-terminate the buffer.
 
 > [!IMPORTANT]
 > To prevent certain kinds of security risks, ensure that *`format`* isn't a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -129,13 +134,36 @@ Each of these functions takes a pointer to an argument list, then formats the da
 > [!NOTE]
 > To ensure that there's room for the terminating null when calling **`_vsnprintf`**, **`_vsnprintf_l`**, **`_vsnwprintf`** and **`_vsnwprintf_l`**, be sure that *`count`* is strictly less than the buffer length and initialize the buffer to null prior to calling the function.
 >
-> Because **`vsnprintf`** always writes the terminating null, the *`count`* parameter may be equal to the size of the buffer.
-
-Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`vsnprintf`** is no longer identical to **`_vsnprintf`**. The **`vsnprintf`** function conforms to the C99 standard; **`_vnsprintf`** is kept for backward compatibility with older Visual Studio code.
+> Because **`vsnprintf`** always writes a terminating null, the *`count`* parameter may be equal to the size of the buffer.
 
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure template overloads](../secure-template-overloads.md).
+
+### Behavior summary
+
+For the following table:
+
+- Let `sizeOfBuffer` be the size of `buffer`. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words.
+- Let `len` be the size of the formatted data. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words.
+- Characters refer to `char` characters for functions that take a `char` buffer, and to `wchar_t` characters for functions that take a `wchar_t` buffer.
+- For more information about the invalid parameter handler, see [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+
+| Condition | Behavior | Return value | `errno` | Invokes invalid parameter handler|
+|--|--|--|--|--|
+| Success | Writes the characters into the buffer using the specified format string. | The number of characters written, not counting the terminating null character. | N/A | No |
+| Encoding error during formatting | If processing string specifier `s`, `S`, or `Z`, format specification processing stops. | -1 | `EILSEQ` (42) | No |
+| Encoding error during formatting | If processing character specifier `c` or `C`, the invalid character is skipped. The number of characters written isn't incremented for the skipped character, nor is any data written for it. Processing the format specification continues after skipping the specifier with the encoding error. | The number of characters written, not including the terminating `NULL`. | `EILSEQ` (42) | No |
+| `buffer == NULL` and `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value.| -1 | `EINVAL` (22) | Yes |
+| `count == 0` | No data is written | The number of characters that would have been written, not including the terminating `NULL`. You can use this result to allocate sufficient buffer space for the string and a terminating `NULL`, and then call the function again to fill the buffer. | N/A | No |
+| `count < 0`| Unsafe: the value is treated as unsigned, likely creating a large value that results in overwriting the memory that follows the buffer. | The number of characters written. | N/A | No |
+| `count < sizeOfBuffer` and `len <= count` | All of the data is written and a terminating `NULL` is appended. | The number of characters written, not including the terminating `NULL`. | N/A | No |
+| `count < sizeOfBuffer` and `len > count` | The first *`count-1`* characters are written followed by a null-terminator. | The number of characters that would have been written had `count` matched the number of characters to output, not including the null-terminator. | N/A | No |
+| `count >= sizeOfBuffer` and `len < sizeOfBuffer` | All of the data is written with a terminating `NULL`. | The number of characters written, not including the terminating `NULL`. | N/A | No |
+| `count >= sizeOfBuffer` and `len >= sizeOfBuffer` | Unsafe: overwrites the memory that follows the buffer. | The number of characters written, not including the terminating `NULL`. | N/A | No |
+| `format == NULL` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
+
+For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### Generic-text routine mappings
 
