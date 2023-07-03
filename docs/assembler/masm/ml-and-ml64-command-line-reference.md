@@ -1,10 +1,9 @@
 ---
 title: "ML and ML64 command-line reference"
 description: "Reference guide to the Microsoft MASM ML and ML64 assembler command-line options."
-ms.date: 02/01/2022
+ms.date: 7/3/2023
 f1_keywords: ["ML"]
 helpviewer_keywords: ["/W* MASM compiler option", "/c MASM compiler option", "/EP MASM compiler option", "/Fe MASM compiler option", "/Zp MASM compiler option", "/AT MASM compiler option", "/Zm MASM compiler option", "/Sf MASM compiler option", "/Sp MASM compiler option", "/w MASM compiler option", "/Fl MASM compiler option", "/coff MASM compiler option", "/St MASM compiler option", "/Cx MASM compiler option", "/Sl MASM compiler option", "/Cu MASM compiler option", "MASM (Microsoft Macro Assembler), ML command-line reference", "/FPi MASM compiler option", "/Zf MASM compiler option", "ML environment variable", "/Fr MASM compiler option", "/help MASM compiler option", "/Sa MASM compiler option", "/Zd MASM compiler option", "/I MASM compiler option", "/? MASM compiler option", "/Bl MASM compiler option", "/Fm MASM compiler option", "/Fo MASM compiler option", "command-line reference [ML]", "/Sn MASM compiler option", "/Gd MASM compiler option", "/D* MASM compiler option", "environment variables, ML", "/Gc MASM compiler option", "/F* MASM compiler option", "/Sc MASM compiler option", "/H MASM compiler option", "/Zs MASM compiler option", "/omf MASM compiler option", "/Sg MASM compiler option", "/Cp MASM compiler option", "/Zi MASM compiler option", "/nologo MASM compiler option", "/Sx MASM compiler option", "/WX MASM compiler option", "/Ss MASM compiler option", "command line, reference [ML]", "/Ta MASM compiler option"]
-ms.assetid: 712623c6-f77e-47ea-a945-089e57c50b40
 ---
 # ML and ML64 command-line reference
 
@@ -45,7 +44,7 @@ The options listed in the following table:
 | **`/FR`**⟦*`filename`*⟧ | Generates an extended form of a source browser *`.sbr`* file. |
 | **`/Gc`** | Specifies use of FORTRAN- or Pascal-style conventions for function calls and names. Same as **`OPTION LANGUAGE:PASCAL`**.<br /> Not available in ml64.exe. |
 | **`/Gd`** | Specifies use of C-style conventions for function calls and names. Same as **`OPTION LANGUAGE:C`**.<br /> Not available in ml64.exe. |
-| **`/GZ`** | Specifies use of `__stdcall` conventions for function calls and names. Same as **`OPTION LANGUAGE:STDCALL`**.<br /> Not available in ml64.exe. |
+| **`/Gz`** | Specifies use of `__stdcall` conventions for function calls and names. Same as **`OPTION LANGUAGE:STDCALL`**.<br /> Not available in ml64.exe. |
 | **`/H`** *`number`* | Restricts external names to *`number`* significant characters. The default is 31 characters.<br /> Not available in ml64.exe. |
 | **`/help`** | Displays a summary of ML command-line syntax and options. |
 | **`/I`** *`pathname`* | Sets path for include file. A maximum of 10 **`/I`** options is allowed. |
