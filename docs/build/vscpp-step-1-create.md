@@ -21,15 +21,21 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **Create a new Project** dialog. Select the **Console App** template that has **C++**, **Windows**, and **Console** tags, and then choose **Next**.
 
-   ![Create a new project dialog.](media/vs2019-choose-console-app.png "Open the Create a new project dialog")
+    :::image type="complex" source="media/vs2019-choose-console-app.png" alt-text="Screenshot of the create a new project dialog.":::
+    The create a new project dialog with Console App selected, which says: Run code in a windows terminal. Prints hello world by default. Has the tags c++, Windows, and Console.
+    :::image-end:::
 
 1. In the **Configure your new project** dialog, enter *HelloWorld* in the **Project name** edit box. Choose **Create** to create the project.
 
-   ![Screenshot of the Configure your new project dialog box with Hello World typed in the Project name text field.](media/vs2019-configure-new-project-hello-world.png "Name and create the new project")
+    :::image type="complex" source="media/vs2019-configure-new-project-hello-world.png" alt-text="Screenshot of Configure your new project dialog.":::
+    The Configure your new project dialog with HelloWorld entered into the Project name field.
+    :::
 
-   Visual Studio creates a new project. It's ready for you to add and edit your source code. By default, the Console App template provides source code for a "Hello World" app, like this:
+    Visual Studio creates a new project. It's ready for you to add and edit your source code. By default, the Console App template provides source code for a "Hello World" app, like this:
 
-   ![Screenshot of the Hello World project in the IDE.](media/vs2019-hello-world-code.png "The default Hello World code provided by the Console App template project in the IDE. It consists of #include iostream and a main() function that contains the line: std::cout << "hello world!\n";")
+   :::image type="complex" source="media/vs2019-hello-world-code.png" alt-text="Screenshot of the NEW Hello World project.":::
+   Shows the new project. The HelloWorld.cpp file is open, showing the default code that is included with this template. It consists of #include iostream and a main() function that contains the line: std::cout << quote hello world!\n quote;
+   :::
 
    When the code looks like this in the editor, you're ready to go on to the next step and build your app.
 
