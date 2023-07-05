@@ -93,7 +93,7 @@ Visual studio creates a new, empty source code file and opens it in an editor wi
 
    The code should look like this in the editor window:
 
-   ![Screenshot of the Hello World code in the editor.](media/vscpp-hello-world-editor.png "The default Hello World code provided by the Console App template project in the IDE. It consists of #include iostream and a main() function that contains the lines: std::cout << "hello world!\n"; followed by return 0;")
+   ![Screenshot of the Hello World code in the editor.](media/vscpp-hello-world-editor.png "The default Hello World code provided by the Console App template project in the IDE. It consists of #include iostream and a main() function that contains the lines: std::cout << \"hello world!\n\"; followed by return 0;")
 
 When the code looks like this in the editor, you're ready to go on to the next step and build your app.
 
