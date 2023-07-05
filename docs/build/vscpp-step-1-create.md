@@ -29,13 +29,13 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
     :::image type="complex" source="media/vs2019-configure-new-project-hello-world.png" alt-text="Screenshot of Configure your new project dialog.":::
     The Configure your new project dialog with HelloWorld entered into the Project name field.
-    :::
+    :::image-end:::
 
     Visual Studio creates a new project. It's ready for you to add and edit your source code. By default, the Console App template provides source code for a "Hello World" app, like this:
 
    :::image type="complex" source="media/vs2019-hello-world-code.png" alt-text="Screenshot of the NEW Hello World project.":::
    Shows the new project. The HelloWorld.cpp file is open, showing the default code that is included with this template. It consists of #include iostream and a main() function that contains the line: std::cout << quote hello world!\n quote;
-   :::
+   :::image-end:::
 
    When the code looks like this in the editor, you're ready to go on to the next step and build your app.
 
