@@ -2,10 +2,9 @@
 title: Build and run a C++ console app project
 description: "Build and run a Hello World console app in Visual C++"
 ms.custom: "mvc"
-ms.date: 04/20/2020
+ms.date: 07/05/2023
 ms.topic: "tutorial"
 ms.devlang: "cpp"
-ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
 ---
 # Build and run a C++ console app project
 
@@ -15,7 +14,7 @@ You've created a C++ console app project and entered your code. Now you can buil
 
 - Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, follow the steps in [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
 
-- Create a "Hello, World!" project and enter its source code. If you haven't done this step yet, follow the steps in [Create a C++ console app project](vscpp-step-1-create.md).
+- Create a "Hello, World!" project. By default, it contains code to print `Hello World!`. If you haven't done this step yet, follow the steps in [Create a C++ console app project](vscpp-step-1-create.md).
 
 If Visual Studio looks like this, you're ready to build and run your app:
 
@@ -39,11 +38,20 @@ Congratulations! You've created your first "Hello, world!" console app in Visual
 
 ## Run your code in a command window
 
-Normally, you run console apps at the command prompt, not in Visual Studio. Once your app is built by Visual Studio, you can run it from any command window. Here's how to find and run your new app in a command prompt window.
+Normally, you run console apps at the command prompt, not in Visual Studio. Once your app is built by Visual Studio, you can run it from a command window. Here's how to find and run your new app in a command prompt window.
 
 1. In **Solution Explorer**, select the HelloWorld solution (not the HelloWorld project) and right-click to open the context menu. Choose **Open Folder in File Explorer** to open a **File Explorer** window in the HelloWorld solution folder.
 
-1. In the **File Explorer** window, open the Debug folder. This folder contains your app, *HelloWorld.exe*, and a couple of other debugging files. Hold down the **Shift** key and right-click on *HelloWorld.exe* to open the context menu. Choose **Copy as path** to copy the path to your app to the clipboard.
+::: moniker range="<msvc-170"
+
+1. In the **File Explorer** window, open the `Debug` folder. This folder contains your app, `HelloWorld.exe`, and debugging files. Hold down the **Shift** key and right-click on `HelloWorld.exe` to open the context menu. Choose **Copy as path** to copy the path to your app to the clipboard.
+
+::: moniker-end
+::: moniker range=">=msvc-170"
+
+1. In the **File Explorer** window, open the `x64` folder and then the `Debug` folder. This folder contains your app, `HelloWorld.exe`, and debugging files. Hold down the **Shift** key and right-click on `HelloWorld.exe` to open the context menu. Choose **Copy as path** to copy the path to your app to the clipboard.
+
+::: moniker-end
 
 1. To open a command prompt window, press **Windows+R** to open the **Run** dialog. Enter *cmd.exe* in the **Open** textbox, then choose **OK** to run a command prompt window.
 
@@ -71,7 +79,7 @@ If red squiggles appear under anything in the source code editor, the build may 
 
 ### Run your code in a command window: issues
 
-If the path shown in File Explorer ends in *\\HelloWorld\\HelloWorld*, you've opened the HelloWorld *project* instead of the HelloWorld *solution*. You'll be confused by a Debug folder that doesn't contain your app. Navigate up a level in File Explorer to get to the solution folder, the first *HelloWorld* in the path. This folder also contains a Debug folder, and you'll find your app there.
+If the path shown in File Explorer ends in `\HelloWorld\HelloWorld`, you've opened the HelloWorld *project* instead of the HelloWorld *solution*. You'll be confused by a Debug folder that doesn't contain your app. Navigate up a level in File Explorer to get to the solution folder, the first *HelloWorld* in the path. This folder also contains a Debug folder, and you'll find your app there.
 
 You can also navigate to the solution Debug folder at the command line to run your app. Your app won't run from other directories without specifying the path to the app. However, you can copy your app to another directory and run it from there. It's also possible to copy it to a directory specified by your PATH environment variable, then run it from anywhere.
 
