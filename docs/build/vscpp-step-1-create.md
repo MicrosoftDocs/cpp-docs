@@ -7,7 +7,7 @@ ms.topic: "tutorial"
 ---
 # Create a C++ console app project
 
-The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create in Visual Studio in this step.
+The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you create in Visual Studio in this step.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Create your app project
 
-Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It manages the relationship between all the project's files and any external files. To create your app, first, you'll create a new project and solution.
+Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It manages the relationship between all the project's files and any external files. To create your app, first, create a new project and solution.
 
 ::: moniker range=">=msvc-160"
 
@@ -29,7 +29,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
    Visual Studio creates a new project. It's ready for you to add and edit your source code. By default, the Console App template provides source code for a "Hello World" app, like this:
 
-   ![Screenshot of the Hello World project in the IDE.](media/vs2019-hello-world-code.png "The default Hello World code provided by the Console App template project in the IDE. It consists of #include <iostream>, and a main() function that contains the line: std::cout << "hello world!\n";")
+   ![Screenshot of the Hello World project in the IDE.](media/vs2019-hello-world-code.png "The default Hello World code provided by the Console App template project in the IDE. It consists of #include iostream and a main() function that contains the line: std::cout << "hello world!\n";")
 
    When the code looks like this in the editor, you're ready to go on to the next step and build your app.
 
@@ -47,7 +47,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
    ![Screenshot of the New Project dialog box with Installed > Visual C plus plus selected and called out, the Empty Project option called out, and Hello World typed in the Name text box.](media/vscpp-concierge-project-name-callouts.png "Name and create the new project")
 
-Visual Studio creates a new, empty project. It's ready for you to specialize for the kind of app you want to create and to add your source code files. You'll do that next.
+Visual Studio creates a new, empty project. It's ready for you to specialize for the kind of app you want to create and to add your source code files. You do that next.
 
 [I ran into a problem.](#create-your-app-project-issues)
 
@@ -61,7 +61,7 @@ Visual Studio can create all kinds of apps and components for Windows and other 
 
    ![View of using the Property Pages dialog to set the Subsystem property.](media/vscpp-properties-linker-subsystem.gif "Open the Property Pages dialog")
 
-Visual Studio now knows to build your project to run in a console window. Next, you'll add a source code file and enter the code for your app.
+Visual Studio now knows to build your project to run in a console window. Next, you add a source code file and enter the code for your app.
 
 [I ran into a problem.](#make-your-project-a-console-app-issues)
 
@@ -93,7 +93,7 @@ Visual studio creates a new, empty source code file and opens it in an editor wi
 
    The code should look like this in the editor window:
 
-   ![Screenshot of the Hello World code in the editor.](media/vscpp-hello-world-editor.png "The default Hello World code provided by the Console App template project in the IDE. It consists of #include <iostream>, and a main() function that contains the lines: std::cout << "hello world!\n"; followed by return 0;")
+   ![Screenshot of the Hello World code in the editor.](media/vscpp-hello-world-editor.png "The default Hello World code provided by the Console App template project in the IDE. It consists of #include iostream and a main() function that contains the lines: std::cout << "hello world!\n"; followed by return 0;")
 
 When the code looks like this in the editor, you're ready to go on to the next step and build your app.
 

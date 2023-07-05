@@ -43,14 +43,10 @@ Normally, you run console apps at the command prompt, not in Visual Studio. Once
 1. In **Solution Explorer**, select the HelloWorld solution (not the HelloWorld project) and right-click to open the context menu. Choose **Open Folder in File Explorer** to open a **File Explorer** window in the HelloWorld solution folder.
 
 ::: moniker range="<msvc-170"
-
 1. In the **File Explorer** window, open the `Debug` folder. This folder contains your app, `HelloWorld.exe`, and debugging files. Hold down the **Shift** key and right-click on `HelloWorld.exe` to open the context menu. Choose **Copy as path** to copy the path to your app to the clipboard.
-
 ::: moniker-end
 ::: moniker range=">=msvc-170"
-
 1. In the **File Explorer** window, open the `x64` folder and then the `Debug` folder. This folder contains your app, `HelloWorld.exe`, and debugging files. Hold down the **Shift** key and right-click on `HelloWorld.exe` to open the context menu. Choose **Copy as path** to copy the path to your app to the clipboard.
-
 ::: moniker-end
 
 1. To open a command prompt window, press **Windows+R** to open the **Run** dialog. Enter *cmd.exe* in the **Open** textbox, then choose **OK** to run a command prompt window.
