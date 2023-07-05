@@ -6,6 +6,8 @@ items:
   items:
     - name: "AddressSanitizer overview"
       href: ../sanitizers/asan.md
+    - name: Continue on error feature
+      href: ../sanitizers/asan-continue-on-error.md
     - name: "Build and language reference"
       href: ../sanitizers/asan-building.md
     - name: "Runtime reference"
