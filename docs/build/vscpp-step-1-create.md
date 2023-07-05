@@ -22,7 +22,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **Create a new Project** dialog. Select the **Console App** template that has **C++**, **Windows**, and **Console** tags, and then choose **Next**.
 
     :::image type="complex" source="media/vs2019-choose-console-app.png" alt-text="Screenshot of the create a new project dialog.":::
-    The create a new project dialog with Console App selected, which says: Run code in a windows terminal. Prints hello world by default. Has the tags c++, Windows, and Console.
+    The create a new project dialog with the Console App template selected. That template says: Run code in a windows terminal. Prints hello world by default. Has the tags c++, Windows, and Console.
     :::image-end:::
 
 1. In the **Configure your new project** dialog, enter *HelloWorld* in the **Project name** edit box. Choose **Create** to create the project.
@@ -34,7 +34,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
     Visual Studio creates a new project. It's ready for you to add and edit your source code. By default, the Console App template provides source code for a "Hello World" app, like this:
 
    :::image type="complex" source="media/vs2019-hello-world-code.png" alt-text="Screenshot of the NEW Hello World project.":::
-   Shows the new project. The HelloWorld.cpp file is open, showing the default code that is included with this template. It consists of #include iostream and a main() function that contains the line: std::cout << quote hello world!\n quote;
+   Shows the new project. The HelloWorld.cpp file is open, showing the default code that is included with this template. That code consists of #include iostream and a main() function that contains the line: std::cout << quote hello world!\n quote;
    :::image-end:::
 
    When the code looks like this in the editor, you're ready to go on to the next step and build your app.
@@ -99,7 +99,7 @@ Visual studio creates a new, empty source code file and opens it in an editor wi
 
    The code should look like this in the editor window:
 
-   ![Screenshot of the Hello World code in the editor.](media/vscpp-hello-world-editor.png "The default Hello World code provided by the Console App template project in the IDE. It consists of #include iostream and a main() function that contains the lines: std::cout << \"hello world!\n\"; followed by return 0;")
+   ![Screenshot of the Hello World code in the editor.](media/vscpp-hello-world-editor.png "The default Hello World code provided by the Console App template project in the IDE. The code consists of #include iostream and a main() function that contains the line: std::cout << \"hello world!\n\"; followed by return 0;")
 
 When the code looks like this in the editor, you're ready to go on to the next step and build your app.
 
