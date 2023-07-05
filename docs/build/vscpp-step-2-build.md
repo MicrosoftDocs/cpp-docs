@@ -90,7 +90,7 @@ You can also navigate to the solution `Debug` folder at the command line to run 
 
 If the path shown in File Explorer ends in `\HelloWorld\HelloWorld`, you've opened the HelloWorld *project* instead of the HelloWorld *solution*. You'll be confused by a `x64\Debug` folder that doesn't contain your app. Navigate up a level in File Explorer to get to the solution folder, the first `HelloWorld` in the path. This folder also contains a `x64\Debug` folder, and you'll find your app there.
 
-You can also navigate to the solution `Debug` folder at the command line to run your app. Your app won't run from other directories without specifying the path to the app. However, you can copy your app to another directory and run it from there. It's also possible to copy it to a directory specified by your `PATH` environment variable, then run it from anywhere.
+You can also navigate to the solution `x64\Debug` folder at the command line to run your app. Your app won't run from other directories without specifying the path to the app. However, you can copy your app to another directory and run it from there. It's also possible to copy it to a directory specified by your `PATH` environment variable, then run it from anywhere.
 
 ::: moniker-end
 
