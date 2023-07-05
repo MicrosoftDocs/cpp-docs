@@ -2,13 +2,12 @@
 title: Create a C++ console app project
 description: "Create a Hello World console app using Microsoft C++ in Visual Studio."
 ms.custom: "mvc"
-ms.date: 04/20/2020
+ms.date: 07/05/2023
 ms.topic: "tutorial"
-ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
 # Create a C++ console app project
 
-The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create in Visual Studio in this step.
+The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you create in Visual Studio in this step.
 
 ## Prerequisites
 
@@ -16,21 +15,27 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Create your app project
 
-Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It manages the relationship between all the project's files and any external files. To create your app, first, you'll create a new project and solution.
+Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It manages the relationship between all the project's files and any external files. To create your app, first, create a new project and solution.
 
 ::: moniker range=">=msvc-160"
 
 1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **Create a new Project** dialog. Select the **Console App** template that has **C++**, **Windows**, and **Console** tags, and then choose **Next**.
 
-   ![Create a new project dialog.](media/vs2019-choose-console-app.png "Open the Create a new project dialog")
+    :::image type="complex" source="media/vs2019-choose-console-app.png" alt-text="Screenshot of the create a new project dialog.":::
+    The create a new project dialog with the Console App template selected. That template says: Run code in a windows terminal. Prints hello world by default. Has the tags c++, Windows, and Console.
+    :::image-end:::
 
 1. In the **Configure your new project** dialog, enter *HelloWorld* in the **Project name** edit box. Choose **Create** to create the project.
 
-   ![Screenshot of the Configure your new project dialog box with Hello World typed in the Project name text field.](media/vs2019-configure-new-project-hello-world.png "Name and create the new project")
+    :::image type="complex" source="media/vs2019-configure-new-project-hello-world.png" alt-text="Screenshot of Configure your new project dialog.":::
+    The Configure your new project dialog with HelloWorld entered into the Project name field.
+    :::image-end:::
 
-   Visual Studio creates a new project. It's ready for you to add and edit your source code. By default, the Console App template fills in your source code with a "Hello World" app:
+    Visual Studio creates a new project. It's ready for you to add and edit your source code. By default, the Console App template provides source code for a "Hello World" app, like this:
 
-   ![Screenshot of the Hello World project in the IDE.](media/vs2019-hello-world-code.png "Hello World project in the IDE")
+   :::image type="complex" source="media/vs2019-hello-world-code.png" alt-text="Screenshot of the NEW Hello World project.":::
+   Shows the new project. The HelloWorld.cpp file is open, showing the default code that is included with this template. That code consists of #include iostream and a main() function that contains the line: std::cout << quote hello world!\n quote;
+   :::image-end:::
 
    When the code looks like this in the editor, you're ready to go on to the next step and build your app.
 
@@ -48,7 +53,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
    ![Screenshot of the New Project dialog box with Installed > Visual C plus plus selected and called out, the Empty Project option called out, and Hello World typed in the Name text box.](media/vscpp-concierge-project-name-callouts.png "Name and create the new project")
 
-Visual Studio creates a new, empty project. It's ready for you to specialize for the kind of app you want to create and to add your source code files. You'll do that next.
+Visual Studio creates a new, empty project. It's ready for you to specialize for the kind of app you want to create and to add your source code files. You do that next.
 
 [I ran into a problem.](#create-your-app-project-issues)
 
@@ -62,7 +67,7 @@ Visual Studio can create all kinds of apps and components for Windows and other 
 
    ![View of using the Property Pages dialog to set the Subsystem property.](media/vscpp-properties-linker-subsystem.gif "Open the Property Pages dialog")
 
-Visual Studio now knows to build your project to run in a console window. Next, you'll add a source code file and enter the code for your app.
+Visual Studio now knows to build your project to run in a console window. Next, you add a source code file and enter the code for your app.
 
 [I ran into a problem.](#make-your-project-a-console-app-issues)
 
@@ -94,7 +99,7 @@ Visual studio creates a new, empty source code file and opens it in an editor wi
 
    The code should look like this in the editor window:
 
-   ![Screenshot of the Hello World code in the editor.](media/vscpp-hello-world-editor.png "Hello World code in editor")
+   ![Screenshot of the Hello World code in the editor.](media/vscpp-hello-world-editor.png "The default Hello World code provided by the Console App template project in the IDE. The code consists of #include iostream and a main() function that contains the line: std::cout << \"hello world!\n\"; followed by return 0;")
 
 When the code looks like this in the editor, you're ready to go on to the next step and build your app.
 
@@ -102,7 +107,7 @@ When the code looks like this in the editor, you're ready to go on to the next s
 
 ::: moniker-end
 
-## Next Steps
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Build and run a C++ project](vscpp-step-2-build.md)
@@ -119,7 +124,7 @@ The **New Project** dialog should show a **Console App** template that has **C++
 
 To install **Desktop development with C++**, you can run the installer right from the **New Project** dialog. Choose the **Install more tools and features** link at the bottom of the template list to start the installer. If the **User Account Control** dialog requests permissions, choose **Yes**. In the installer, make sure the **Desktop development with C++** workload is checked. Then choose **Modify** to update your Visual Studio installation.
 
-If another project with the same name already exists, choose another name for your project. Or, delete the existing project and try again. To delete an existing project, delete the solution folder (the folder that contains the *helloworld.sln* file) in File Explorer.
+If another project with the same name already exists, choose another name for your project. Or, delete the existing project and try again. To delete an existing project, delete the solution folder (the folder that contains the `helloworld.sln` file) in File Explorer.
 
 [Go back](#create-your-app-project).
 
@@ -133,7 +138,7 @@ If the **New Project** dialog doesn't show a **Visual C++** entry under **Instal
 
 ::: moniker range="<=msvc-150"
 
-If another project with the same name already exists, choose another name for your project. Or, delete the existing project and try again. To delete an existing project, delete the solution folder (the folder that contains the *helloworld.sln* file) in File Explorer.
+If another project with the same name already exists, choose another name for your project. Or, delete the existing project and try again. To delete an existing project, delete the solution folder (the folder that contains the `helloworld.sln` file) in File Explorer.
 
 [Go back](#create-your-app-project).
 
