@@ -107,7 +107,7 @@ When the code looks like this in the editor, you're ready to go on to the next s
 
 ::: moniker-end
 
-## Next Steps
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Build and run a C++ project](vscpp-step-2-build.md)
