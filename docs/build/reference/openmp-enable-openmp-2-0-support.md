@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /openmp (Enable OpenMP Support)"
 title: "/openmp (Enable OpenMP Support)"
-ms.date: 04/01/2021
+ms.date: 07/05/2023
 f1_keywords: ["/openmp", "/openmp:experimental", "/openmp:llvm", "VC.Project.VCCLCompilerTool.OpenMP"]
 helpviewer_keywords: ["/openmp compiler option [C++]", "/openmp:experimental compiler option [C++]", "/openmp:llvm compiler option [C++]", "-openmp compiler option [C++]"]
 ---
@@ -31,11 +31,11 @@ Causes the compiler to process [`#pragma omp`](../../preprocessor/omp.md) direct
 
 ::: moniker range=">= msvc-160"
 
-The C++ compiler currently supports the OpenMP 2.0 standard. However, Visual Studio 2019 also now offers SIMD functionality. To use SIMD, compile by using the **`/openmp:experimental`** option. This option enables both the usual OpenMP features, and OpenMP SIMD features not available when using the **`/openmp`** switch.
+The C++ compiler currently supports the OpenMP 2.0 standard. Visual Studio 2019 also now offers SIMD functionality. To use SIMD, compile using the **`/openmp:experimental`** option. This option enables both the usual OpenMP features, and OpenMP SIMD features not available when using the **`/openmp`** switch.
 
 Starting in Visual Studio 2019 version 16.9, you can use the experimental **`/openmp:llvm`** option instead of **`/openmp`** to target the LLVM OpenMP runtime. Support currently isn't available for production code, since the required libomp DLLs aren't redistributable. The option supports the same OpenMP 2.0 directives as **`/openmp`**. And, it supports all the SIMD directives supported by the **`/openmp:experimental`** option. It also supports unsigned integer indices in parallel for loops according to the OpenMP 3.0 standard. For more information, see [Improved OpenMP Support for C++ in Visual Studio](https://devblogs.microsoft.com/cppblog/improved-openmp-support-for-cpp-in-visual-studio/).
 
-Currently, the **`/openmp:llvm`** option only works on the x64 architecture. The option isn't compatible with **`/clr`** or **`/ZW`**.
+The **`/openmp:llvm`** option supports the x64 architecture. Starting with Visual Studio 2019 version 16.10, it also supports the x86 and ARM64 architectures. This option isn't compatible with **`/clr`** or **`/ZW`**.
 
 ::: moniker-end
 
