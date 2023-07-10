@@ -54,8 +54,8 @@ int main()
 ```
 
 ```Output
-byteswap of 102030405060708 = 807060504030201
-byteswap of 1020304 = 4030201
+byteswap of 0102030405060708 = 0807060504030201
+byteswap of 01020304 = 04030201
 ```
 
 ## See also

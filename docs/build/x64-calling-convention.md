@@ -7,6 +7,8 @@ ms.date: 05/17/2022
 
 This section describes the standard processes and conventions that one function (the caller) uses to make calls into another function (the callee) in x64 code.
 
+For more information on the `__vectorcall` calling convention, see [__vectorcall](../cpp/vectorcall.md).
+
 ## Calling convention defaults
 
 The x64 Application Binary Interface (ABI) uses a four-register fast-call calling convention by default. Space is allocated on the call stack as a shadow store for callees to save those registers.

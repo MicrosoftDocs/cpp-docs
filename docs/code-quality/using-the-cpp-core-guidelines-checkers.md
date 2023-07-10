@@ -1,7 +1,7 @@
 ---
 title: Using the C++ Core Guidelines checkers
 description: "How to set up and use the Microsoft C++ Code Analysis rules for C++ Core Guidelines."
-ms.date: 12/16/2020
+ms.date: 06/21/2023
 ms.topic: "conceptual"
 dev_langs:
  - CPP
@@ -231,9 +231,9 @@ You can use the command-line option to temporarily disable all code analysis for
 
 Sometimes it's useful to do focused code analysis and still use the Visual Studio IDE. Try the following sample scenario for large projects. It can save build time and make it easier to filter results:
 
-1. In the command shell, set the `esp.extension` and `esp.annotationbuildlevel` environment variables.
+1. In the command shell, set the `esp.extension` environment variable.
 
-1. To inherit these variables, open Visual Studio from the command shell.
+1. To inherit this variable, open Visual Studio from the command shell.
 
 1. Load your project and open its properties.
 
@@ -269,10 +269,6 @@ You can run the C++ Core Checker only on specified files. Use the same approach 
 
 ```xml
 <ItemGroup>
-    <BuildMacro Include="Esp_AnnotationBuildLevel">
-      <EnvironmentVariable>true</EnvironmentVariable>
-      <Value>Ignore</Value>
-    </BuildMacro>
     <BuildMacro Include="Esp_Extensions">
       <EnvironmentVariable>true</EnvironmentVariable>
       <Value>CppCoreCheck.dll</Value>
@@ -294,7 +290,7 @@ Code Analysis requires a few environment variables and compiler command-line opt
 
 - **Environment variables**
   - `set esp.extensions=cppcorecheck.dll` This tells the engine to load the C++ Core Guidelines module.
-  - `set esp.annotationbuildlevel=ignore` This disables the logic that processes SAL annotations. Annotations don't affect code analysis in the C++ Core Guidelines Checker, yet their processing takes time (sometimes a long time). This setting is optional, but highly recommended.
+  - Since Visual Studio 2019 we no longer recommend setting the `esp.annotationbuildlevel` environment variable because setting it can result in false positives. If seeing unexpected results, remove this variable from your environment.
   - `set caexcludepath=%include%` We highly recommend that you disable warnings that fire on standard headers. You can add more paths here, for example the path to the common headers in your project.
 
 - **Command-line options**
