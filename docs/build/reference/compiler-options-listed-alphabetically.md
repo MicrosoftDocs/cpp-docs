@@ -47,7 +47,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/EHr`](eh-exception-handling-model.md) | Always generate `noexcept` runtime termination checks. |
 | [`/EHs`](eh-exception-handling-model.md) | Enable C++ exception handling (no SEH exceptions). |
 | [`/EP`](ep-preprocess-to-stdout-without-hash-line-directives.md) | Copies preprocessor output to standard output. |
-| [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
+| [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings control error reporting. |
 | [`/execution-charset`](execution-charset-set-execution-character-set.md) | Set execution character set. |
 | [`/experimental:module`](experimental-module.md) | Enables experimental module support. |
 | [`/exportHeader`](module-exportheader.md) | Create the header units files (*`.ifc`*) specified by the input arguments. |

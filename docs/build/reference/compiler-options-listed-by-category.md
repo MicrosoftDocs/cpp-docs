@@ -238,7 +238,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/bigobj`](bigobj-increase-number-of-sections-in-dot-obj-file.md) | Increases the number of addressable sections in an .obj file. |
 | [`/c`](c-compile-without-linking.md) | Compiles without linking. |
 | [`/cgthreads`](cgthreads-code-generation-threads.md) | Specifies number of *cl.exe* threads to use for optimization and code generation. |
-| [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
+| [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings control error reporting. |
 | [`/execution-charset`](execution-charset-set-execution-character-set.md) | Set execution character set. |
 | `/fastfail` | Enable fast-fail mode. |
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Displays the full path of source code files passed to *cl.exe* in diagnostic text. |
