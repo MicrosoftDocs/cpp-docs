@@ -20,7 +20,7 @@ Puts the generated switch case jump tables in the `.rdata` section instead of al
 Putting jump tables generated for switch case statements in the `.rdata` section prevents the jump table from being loaded into both the instruction cache (iCache) and data cache (dCache), potentially increasing performance. The `.rdata` section is where const initialized data is stored.
 
 > [!IMPORTANT]
-> This flag only applies to x64 code.
+> This flag only applies to x64 code. This flag was introduced in Visual Studio 17.7.
 
 ### To set this compiler option in the Visual Studio development environment
 
