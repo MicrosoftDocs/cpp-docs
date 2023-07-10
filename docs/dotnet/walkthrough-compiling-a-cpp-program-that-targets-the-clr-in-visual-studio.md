@@ -26,7 +26,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 1. In **Solution Explorer**, right-click on the top  to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, type **CLR** in the search box and then choose **CLR Empty Project** from the results list.
+1. At the top of the dialog, type **CLR** in the search box and then choose **CLR Empty Project (.NET Framework)** from the results list.
 
 1. Choose the **Create** button to create the project.
 
