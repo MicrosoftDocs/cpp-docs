@@ -1,22 +1,73 @@
 ---
-title: "AddressSanitizer: continue on error"
-description: "Top-level description of the AddressSanitizer feature for Microsoft C/C++."
-ms.date: 06/13/2023
+title: "Walkthrough: Use Address Sanitizer continue_on_error to find memory safety issues"
+description: "Learn how to use Address Sanitizer continue on error to to find memory safety errors in your app."
+ms.date: 07/10/2023
 f1_keywords: ["AddressSanitizer", "continue_on_error"]
 helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compiling for AddressSanitizer", "continue_on_error", "ASAN continue on error", "Address Sanitizer continue on error"]
 ---
 
-# Address Sanitizer: continue_on_error
+# Walkthrough: Use Address Sanitizer continue_on_error to find memory safety issues
 
-[Memory safety errors](https://learn.microsoft.com/en-us/cpp/sanitizers/asan?view=msvc-170#error-types) such as out-of-bounds memory reads and writes, using memory after it has been freed, `NULL` pointer dereferences, and so on, in C/C++ code are a [top concern](#_Top_Concern_%E2%80%93) for the industry. Visual Studio 17.6 introduces an experimental Address Sanitizer (ASAN) feature called continue_on_error (COE). You compile as before, and simply add the compiler flag `-fsanitizer=address.` With Visual Studio 17.6, you can enable continue_on_error by setting environment variables from the command line.
+Memory safety errors--such as out-of-bounds memory reads and writes, using memory after it has been freed, `NULL` pointer dereferences, and so on--are a top concern for C/C++ code. Address Sanitizer (ASAN) is a compiler and runtime technology that exposes many hard-to-find bugs of this kind with zero false positives. For an overview of ASAN, see [AddressSanitizer](asan.md)
 
-When you create a standard C++ checked build of your app with `-fsanitizer=address.`, calls to allocators, deallocators, `memcpy`, `memset`, and so on are forwarded to the ASAN runtime. The ASAN runtime provides the same semantics for these functions, but then monitors what happens with the memory to diagnose and report hidden memory safety errors--with zero false positives--as your app runs.
+Continue_on_error (COE) is a new ASAN feature that allows you to create a checked build for your C and C++ programs that automatically diagnoses and reports unique memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to stdout, stderr, or a log file of your choice.
 
-Previously, ASAN would stop after it found the first memory safety error. One of the reasons for this is that the memory safety error it reported could have damaged the ASAN runtime itself. The ASAN runtime has been re-architected to guard against this outcome, and the new continue-on-error (COE) feature returns control to your app after each memory safety violation has been reported. This is particularly useful for running a large suite of test cases because they will continue running as they normally did, without short-circuiting your tests. Plus, you'll get a summary of the memory errors that occurred.
+A significant advantage of COE is that, unlike the previous ASAN behavior, your program doesn't stop running when a memory error is encountered. Instead, it continues to run and provides a summary of all the memory issues that were found after it exits. This allows you to run an ASAN checked build of your app in your normal test harness to exercise its code paths. Then, you'll get a summary of the memory issues encountered afterwards. You should consider using this feature to create a new shipping gate by deciding not to ship any code that encounters memory safety errors during a test pass.
 
-If you are familiar with earlier versions of ASAN, you know that you needed the `llvm_symbolzer.exe` binary. With the new ASAN runtime, this is no longer necessary. Which makes it even easier to use ASAN with your normal test harness because you don't have to accomodate extra binaries.
+This walkthrough shows how to create a checked build that has COE enabled, and what the output looks like for code that has memory safety errors.
 
-## Introduction
+## Prerequisites
+
+To complete this walkthrough, you must have installed either Visual Studio 2022 17.6 or later and the optional Desktop development with C++ workload, or the command-line Build Tools for Visual Studio.
+
+## Out of bounds memory access example
+
+When you create a standard C++ checked build of your app with `-fsanitizer=address`, calls to allocators, deallocators, `memcpy`, `memset`, and so on are forwarded to the ASAN runtime. The ASAN runtime provides the same semantics for these functions, but then monitors what happens with the memory to diagnose and report hidden memory safety errors--with zero false positives--as your app runs.
+
+In this example, you'll create a checked build and set an environment variable to output the address sanitizer information to stdout.
+
+### Build a checked build with ASAN enabled
+
+1. Open a developer command prompt. For example, open the Start menu, type *Developer*, and select **Developer Command Prompt for VS 2022** from the list of matches.
+1. Create a directory on your machine to run this example in. For example, `%USERPROFILE%\Desktop\COE`.
+1. In that directory, create a source file, for example, `coe.cpp`, and use the following code as its contents:
+
+```cpp
+#include <stdlib.h> 
+
+char* func(char* buf, size_t sz)
+{ 
+    char* local = (char*)malloc(sz); 
+    for (auto ii = 0; ii <= sz; ii++) // bad loop exit test 
+    {
+        local[ii] = ~buf[ii]; // Two memory safety errors 
+    }
+ 
+    return local; 
+} 
+
+char buffer[10] = {0,1,2,3,4,5,6,7,8,9}; 
+
+void main()
+{   
+    char* inverted_buf= func(buffer, 10); 
+}
+```
+
+1. Compile the code using the `-fsanitize=address` and `-Zi` switches: `cl -fsanitize=address -Zi coe.cpp`
+1. Set the ASAN_OPTIONS environment variable to output to stdout: `set ASAN_OPTIONS=continue_on_error=1`
+1. Run the test code: `coe.exe`
+
+The output indicates the buffer overflow and a call stack for where it happened. There is information about the shadow bytes in the vicinity of the buffer overflow. For more information about shadow bytes, see [shadowbytes]().
+Then there is a summary of 
+
+There are different options for where the output from ASAN can go. They are:
+
+- Output to stdout: `set ASAN_OPTIONS=continue_on_error=1`
+- Output to stderr: `set ASAN_OPTIONS=continue_on_error=2`
+- Output to a log file of your choice: `set COE_LOG_FILE=yourfile.log`
+ 
+### Set an environment variable to output to stdout
 
 To stream unique memory safety errors to stdout(1) or stderr(2):
 
@@ -26,6 +77,9 @@ To stream unique memory safety errors to stdout(1) or stderr(2):
 To stream to a log file of your choice:
 
 - set COE_LOG_FILE=your.file.log
+
+
+### Run the test and examine the output
 
 When you opt into the new continue on error (COE) feature, your application automatically diagnoses and reports unique memory safety errors as it runs. At program exit, the runtime produces a [final summary](#_Example) that follows the detailed reports normally produced by the Address Sanitizer.
 
@@ -259,4 +313,25 @@ There were six categories of C++ [memory safety](https://learn.microsoft.com/en-
 This new feature is designed to enable developers to implement a simple new gate for shipping C++ on Windows. Using this technology will significantly reduce memory safety errors. If your tests pass but continue_on_error reports any hidden memory safety errors, you should not ship or integrate new code into the development branch.
 
 **We intend that continue_on_error be used as pass/fail gate, for all CI/CD pipelines using C and C++.**
+
+## See also
+
+[top concern](#_Top_Concern_%E2%80%93)
+[Memory safety errors](https://learn.microsoft.com/en-us/cpp/sanitizers/asan?view=msvc-170#error-types)
+
+
+SPARE PARTS
+
+Visual Studio 17.6 introduced an experimental Address Sanitizer (ASAN) feature called continue_on_error (COE). You compile as before but with the the compiler flag `-fsanitizer=address.` With Visual Studio 17.6, you enable continue_on_error by setting environment variables from the command line.
+
+If you are familiar with earlier versions of ASAN, you know that you needed the `llvm_symbolzer.exe` binary. With the new ASAN runtime, this is no longer necessary. Which makes it even easier to use ASAN with your normal test harness because you don't have to accomodate extra binaries.
+
+In the Visual Studio development environment, set the compiler switch [/fsanitizer=address](../build/reference/fsanitize.md):
+
+1. Open your project's **Property Pages** dialog box.
+1. Select the **Configuration Properties** > **C/C++** > **General** property page.
+1. Modify the **Enable Address Sanitizer** property. To enable it, choose Yes (/fsanitize=address).
+1. Choose OK to save your changes.
+
+Build the app from the main menu with **Build** > **Build Solution**.
 
