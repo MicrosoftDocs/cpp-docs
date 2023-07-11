@@ -72,7 +72,7 @@ The type that represents the stored allocator object that encapsulates details a
 |[`copy`](#copy)|Copies at most a specified number of characters from an indexed position in a source string to a target character array. Deprecated. Use [`basic_string::_Copy_s`](#copy_s) instead.|
 |[`crbegin`](#crbegin)|Returns a const iterator that addresses the first element in a reversed string.|
 |[`crend`](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed string.|
-|[`_Copy_s`](#copy_s)|**Microsoft Specific**<br/>Copies at most a specified number of characters from an indexed position in a source string to a target character array.<br/>**END Microsoft Specific**|
+|[`_Copy_s`](#copy_s)|**Microsoft Specific**: Copies at most a specified number of characters from an indexed position in a source string to a target character array.|
 |[`data`](#data)|Converts the contents of a string into an array of characters.|
 |[`empty`](#empty)|Tests whether the string contains characters.|
 |[`end`](#end)|Returns an iterator that addresses the location succeeding the last element in a string.|
@@ -1477,8 +1477,6 @@ A `const` reverse iterator that addresses the location succeeding the last eleme
 
 ## <a name="copy_s"></a> `basic_string::_Copy_s`
 
-**Microsoft Specific**
-
 Copies at most a specified number of characters from an indexed position in a source string to a target character array.
 
 ```cpp
@@ -1510,6 +1508,7 @@ The number of characters copied.
 ### Remarks
 
 A null character isn't appended to the end of the copy.
+This function is Microsoft specific.
 
 ### Example
 
@@ -1557,8 +1556,6 @@ The copied characters array1 is: Hello World
 The number of copied characters in array2 is: 5
 The copied characters array2 is: World
 ```
-
-**END Microsoft Specific**
 
 ## <a name="data"></a> `basic_string::data`
 
