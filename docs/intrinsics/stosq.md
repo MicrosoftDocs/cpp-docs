@@ -15,7 +15,7 @@ Generates a store string instruction (`rep stosq`).
 ## Syntax
 
 ```C
-void __stosb(
+void __stosq(
    unsigned __int64* Destination,
    unsigned __int64 Data,
    size_t Count
