@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: type_info Class"
 title: "type_info Class"
-ms.date: "11/04/2016"
+ms.date: "07/11/2023"
 f1_keywords: ["type_info"]
 helpviewer_keywords: ["class type_info", "type_info class"]
 ms.assetid: 894ddda2-7de4-4da3-9404-d2c74e356c16
@@ -38,7 +38,11 @@ There is no link between the collating order of types and inheritance relationsh
 
 The `type_info::name` member function returns a `const char*` to a null-terminated string representing the human-readable name of the type. The memory pointed to is cached and should never be directly deallocated.
 
+**Microsoft Specific**
+
 The `type_info::raw_name` member function returns a `const char*` to a null-terminated string representing the decorated name of the object type. The name is actually stored in its decorated form to save space. Consequently, this function is faster than `type_info::name` because it doesn't need to undecorate the name. The string returned by the `type_info::raw_name` function is useful in comparison operations but is not readable. If you need a human-readable string, use the `type_info::name` function instead.
+
+**END Microsoft Specific**
 
 Type information is generated for polymorphic classes only if the [/GR (Enable Run-Time Type Information)](../build/reference/gr-enable-run-time-type-information.md) compiler option is specified.
 
