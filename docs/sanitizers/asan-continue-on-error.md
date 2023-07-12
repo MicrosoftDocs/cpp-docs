@@ -1,20 +1,20 @@
 ---
-title: "Walkthrough: Use Address Sanitizer continue_on_error to find memory safety issues"
+title: "Walkthrough: Use Address Sanitizer Continue On Error to find memory safety issues"
 description: "Learn how to use Address Sanitizer continue on error to to find memory safety errors in your app."
 ms.date: 07/10/2023
-f1_keywords: ["AddressSanitizer", "continue_on_error"]
-helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compiling for AddressSanitizer", "continue_on_error", "ASAN continue on error", "Address Sanitizer continue on error"]
+f1_keywords: ["AddressSanitizer", "Continue On Error"]
+helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compiling for AddressSanitizer", "Continue On Error", "ASAN continue on error", "Address Sanitizer continue on error"]
 ---
 
-# Walkthrough: Use Address Sanitizer continue_on_error to find memory safety issues
+# Walkthrough: Use Address Sanitizer Continue On Error to find memory safety issues
 
 Memory safety errors--such as out-of-bounds memory reads and writes, using memory after it has been freed, `NULL` pointer dereferences, and so on--are a top concern for C/C++ code. Address Sanitizer (ASAN) is a compiler and runtime technology that exposes many hard-to-find bugs of this kind with zero false positives. For an overview of ASAN, see [AddressSanitizer](asan.md)
 
-Continue_on_error (COE) is a new ASAN feature that allows you to create a checked build for your C and C++ programs that automatically diagnoses and reports unique memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to stdout, stderr, or a log file of your choice.
+Continue On Error (COE) is a new ASAN feature that allows you to create a checked build for your C and C++ programs that automatically diagnoses and reports unique memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to stdout, stderr, or the log file of your choice.
 
-A significant advantage of COE is that, unlike the previous ASAN behavior, your program doesn't stop running when a memory error is encountered. Instead, it continues to run and provides a summary of all the memory issues that were found after it exits. This allows you to run an ASAN checked build of your app in your normal test harness to exercise its code paths. Then, you'll get a summary of the memory issues encountered afterwards. You should consider using this feature to create a new shipping gate by deciding not to ship any code that encounters memory safety errors during a test pass.
+A significant advantage of COE is that, unlike the previous ASAN behavior, your program doesn't stop running and report the error when the first memory error is encountered. Instead, it notes the error and continues to run. When your app exits, a summary is provided of all the memory issues that were encountered as it ran. This means you can run an ASAN checked build of your app in your normal test harness to exercise its code paths without interfering with the tests. Afterwards you can examine the summary of memory issues encountered. You can consider using this feature as a way to create a new shipping gate by deciding not to ship any code that encounters memory safety errors during your test passes.
 
-This walkthrough shows how to create a checked build that has COE enabled, and what the output looks like for code that has memory safety errors.
+This walkthrough shows how to create a checked build that has COE enabled and what the output looks like for code that has memory safety errors.
 
 ## Prerequisites
 
@@ -28,9 +28,9 @@ In this example, you'll create a checked build and set an environment variable t
 
 ### Build a checked build with ASAN enabled
 
-1. Open a developer command prompt. For example, open the Start menu, type *Developer*, and select **Developer Command Prompt for VS 2022** from the list of matches.
+1. Open a developer command prompt: for example, open the **Start** menu, type *Developer*, and select **Developer Command Prompt for VS 2022** from the list of matches.
 1. Create a directory on your machine to run this example in. For example, `%USERPROFILE%\Desktop\COE`.
-1. In that directory, create a source file, for example, `coe.cpp`, and use the following code as its contents:
+1. In that directory, create a source file, for example, `coe.cpp`, and paste the following code:
 
 ```cpp
 #include <stdlib.h> 
@@ -55,24 +55,63 @@ void main()
 ```
 
 1. Compile the code using the `-fsanitize=address` and `-Zi` switches: `cl -fsanitize=address -Zi coe.cpp`
-1. Set the ASAN_OPTIONS environment variable to output to stdout: `set ASAN_OPTIONS=continue_on_error=1`
+1. Set the `ASAN_OPTIONS` environment variable to have ASAN output to stdout: `set ASAN_OPTIONS=Continue On Error=1`
 1. Run the test code: `coe.exe`
 
-The output indicates the buffer overflow and a call stack for where it happened. There is information about the shadow bytes in the vicinity of the buffer overflow. For more information about shadow bytes, see [shadowbytes]().
-Then there is a summary of 
+The output indicates that there were two memory buffer overflow errors and a call stack for where they happened, for example:
+
+```dos
+==9776==ERROR: AddressSanitizer: global-buffer-overflow on address 0x0047b08a at pc 0x003c121b bp 0x012ffaec sp 0x012ffae0
+READ of size 1 at 0x0047b08a thread T0
+	 #0  func                           C:\Users\xxx\Desktop\COE\coe.cpp(8)
+	 #1  main                           C:\Users\xxx\Desktop\COE\coe.cpp(18)
+	 #2  __scrt_common_main_seh         D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl(288)
+	 #3  BaseThreadInitThunk            Windows
+	 #4  RtlInitializeExceptionChain    Windows
+```
+
+Then there is information about the shadow bytes in the vicinity of the buffer overflow. For more information about shadow bytes, see [shadowbytes]().
+
+Then there is the summary report of source files where the memory errors happened. It is sorted in  order of the unique call stacks there are for memory errors in that file. The reason for this sorting is that 5 unique call stacks leading to different memory safety errors in the same file is potentially even more worrisome than one error that hits many times. It looks like this:
+
+```dos
+=== Files in priority order ===
+
+File: C:\Users\xxx\Desktop\COE\coe.cpp Unique call stacks: 2
+```
+
+Finally, the report contains a summary of where the memory errors occurred. It'll look something like this:
+
+```dos
+=== Source Code Details: Unique errors caught at instruction offset from source line number, in functions, in the same file. === 
+
+File: C:\Users\xxx\Desktop\COE\coe.cpp 
+	Func: func()
+		Line: 8 Unique call stacks (paths) leading to error at line 8 : 2
+			Bug: heap-buffer-overflow at instr 124 bytes from start of line
+
+>>>Total: 2 Unique Memory Safety Issues (based on call stacks not source position) <<<
+
+#0 C:\Users\xxx\Desktop\COE\coe.cpp Function: func(Line:8) 
+	Raw HitCnt: 1  On Reference: 1-byte-read-global-buffer-overflow 
+#1 C:\Users\xxx\Desktop\COE\coe.cpp Function: func(Line:8) 
+	Raw HitCnt: 1  On Reference: 1-byte-write-heap-buffer-overflow 
+```
+
+Finally, there is a 
 
 There are different options for where the output from ASAN can go. They are:
 
-- Output to stdout: `set ASAN_OPTIONS=continue_on_error=1`
-- Output to stderr: `set ASAN_OPTIONS=continue_on_error=2`
+- Output to stdout: `set ASAN_OPTIONS=Continue On Error=1`
+- Output to stderr: `set ASAN_OPTIONS=Continue On Error=2`
 - Output to a log file of your choice: `set COE_LOG_FILE=yourfile.log`
  
 ### Set an environment variable to output to stdout
 
 To stream unique memory safety errors to stdout(1) or stderr(2):
 
-- set ASAN_OPTIONS=continue_on_error=1
-- set ASAN_OPTIONS=continue_on_error=2
+- set ASAN_OPTIONS=Continue On Error=1
+- set ASAN_OPTIONS=Continue On Error=2
 
 To stream to a log file of your choice:
 
@@ -114,13 +153,13 @@ void main()
 }
 ```
 
-In this example, where the parameter `sz` is 10 and the original buffer is 10-bytes, there are two memory safety errors: one is a load and the other is a store on the `for` loop. With continue_on_error, you will see both errors in the summary and the program will run to completion. The summary will look something like this:
+In this example, where the parameter `sz` is 10 and the original buffer is 10-bytes, there are two memory safety errors: one is a load and the other is a store on the `for` loop. With Continue On Error, you will see both errors in the summary and the program will run to completion. The summary will look something like this:
 
 ![](RackMultipart20230703-1-hvjsrt_html_b744b1efcbe3ccc2.png) JTW get picture
 
 _ **Figure 2** _
 
-Note that continue_on_error reports two distinct errors that occur on the same source line. The first error reads memory at a global address in the .data section, and the other writes to memory allocated from the heap.
+Note that Continue On Error reports two distinct errors that occur on the same source line. The first error reads memory at a global address in the .data section, and the other writes to memory allocated from the heap.
 
 # Description
 
@@ -179,7 +218,7 @@ int main()
 
 _ **Figure 3** _
 
-With continue_on_error, the program in Figure 3 above, produces the summary in Figure 4. That summary is printed _ **after** _ streaming all unique detailed error reports which are produced using the existing default mode of the Address Sanitizer. The existing default mode is "one-n-done". The previous Address Sanitizer only prints one detailed error report, and then exits your process. With continue_on_error, we continue to execute after various memory safety errors. This summary illustrates continuing after many memory safety errors:
+With Continue On Error, the program in Figure 3 above, produces the summary in Figure 4. That summary is printed _ **after** _ streaming all unique detailed error reports which are produced using the existing default mode of the Address Sanitizer. The existing default mode is "one-n-done". The previous Address Sanitizer only prints one detailed error report, and then exits your process. With Continue On Error, we continue to execute after various memory safety errors. This summary illustrates continuing after many memory safety errors:
 
 ![](RackMultipart20230703-1-hvjsrt_html_d751003cd5ba2429.png)
 
@@ -298,11 +337,11 @@ _ **Figure 9** _
 
 The previous example, in Figure 9, prints **pass** without -fsanitize=address. That's because **cnt==1** due to an exception. It will fail when compiled with that flag and run with the Address Sanitizer runtime. In main() we pass a large number to foo_redundant, which is passed to _alloca().
 
-With the Address Sanitizer in continue_on_error (COE) mode, this program runs to completion, but prints **fail**. The code generation from the compiler must match the ABI for the Address Sanitizer runtime. For the Address Sanitizer runtime, the compiler grows the allocation size and aligns it 0 mod 32 (a cache line). That math will cause an integer overflow (i.e., wrap around) creating a reasonable, small positive number as the parameter to _alloca.
+With the Address Sanitizer in Continue On Error (COE) mode, this program runs to completion, but prints **fail**. The code generation from the compiler must match the ABI for the Address Sanitizer runtime. For the Address Sanitizer runtime, the compiler grows the allocation size and aligns it 0 mod 32 (a cache line). That math will cause an integer overflow (i.e., wrap around) creating a reasonable, small positive number as the parameter to _alloca.
 
 **There will be no stack overflow exception to process the __except handler.`**
 
-We have not had time to document or clearly define the subtle differences when a program has undefined behavior. This was a reason for releasing continue_on_error as experimental at first.
+We have not had time to document or clearly define the subtle differences when a program has undefined behavior. This was a reason for releasing Continue On Error as experimental at first.
 
 **NOTE: The frequency with which this concern has become visible, has been rare with our testing infrastructure.**
 
@@ -310,9 +349,9 @@ We have not had time to document or clearly define the subtle differences when a
 
 There were six categories of C++ [memory safety](https://learn.microsoft.com/en-us/cpp/sanitizers/asan?view=msvc-170#error-types) errors in the 2021 Common Weakness Enumeration (CWE) [Top 25 Most Dangerous Software Weaknesses](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcwe.mitre.org%2Ftop25%2Farchive%2F2021%2F2021_cwe_top25.html&data=05%7C01%7Cjradigan%40microsoft.com%7C9962b611c58546f2df3308db4add742b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638186087241566753%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=ZWphesh6v9f2PKasnd2qxKrq26EebWpv8Tb6JK1RFXg%3D&reserved=0). The best [Remote Code Execution Bug](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpwnies.com%2Fwinners%2F&data=05%7C01%7Cjradigan%40microsoft.com%7C9962b611c58546f2df3308db4add742b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638186087241566753%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=%2BbYI%2FqxTAHAPZzkmdmnFgpaQ%2Bb4%2B1a953XrBDUVZ9OI%3D&reserved=0) was a 20 year old heap-buffer-overflow. This award in 2022 went to BugHunter010 at Cyber KunLun Lab. This engineer discovered a heap-buffer-overflow vulnerability in the RPC protocol with CVSS score 9.8. This bug has existed in the Windows system for more than 20 years. There are new C++ memory safety bugs introduced daily because traditional testing can't expose these types of bugs without compiler and runtime support.
 
-This new feature is designed to enable developers to implement a simple new gate for shipping C++ on Windows. Using this technology will significantly reduce memory safety errors. If your tests pass but continue_on_error reports any hidden memory safety errors, you should not ship or integrate new code into the development branch.
+This new feature is designed to enable developers to implement a simple new gate for shipping C++ on Windows. Using this technology will significantly reduce memory safety errors. If your tests pass but Continue On Error reports any hidden memory safety errors, you should not ship or integrate new code into the development branch.
 
-**We intend that continue_on_error be used as pass/fail gate, for all CI/CD pipelines using C and C++.**
+**We intend that Continue On Error be used as pass/fail gate, for all CI/CD pipelines using C and C++.**
 
 ## See also
 
@@ -322,7 +361,7 @@ This new feature is designed to enable developers to implement a simple new gate
 
 SPARE PARTS
 
-Visual Studio 17.6 introduced an experimental Address Sanitizer (ASAN) feature called continue_on_error (COE). You compile as before but with the the compiler flag `-fsanitizer=address.` With Visual Studio 17.6, you enable continue_on_error by setting environment variables from the command line.
+Visual Studio 17.6 introduced an experimental Address Sanitizer (ASAN) feature called Continue On Error (COE). You compile as before but with the the compiler flag `-fsanitizer=address.` With Visual Studio 17.6, you enable Continue On Error by setting environment variables from the command line.
 
 If you are familiar with earlier versions of ASAN, you know that you needed the `llvm_symbolzer.exe` binary. With the new ASAN runtime, this is no longer necessary. Which makes it even easier to use ASAN with your normal test harness because you don't have to accomodate extra binaries.
 
