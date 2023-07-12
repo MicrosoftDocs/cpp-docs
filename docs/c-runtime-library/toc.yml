@@ -326,7 +326,7 @@ items:
       href: ../c-runtime-library/fseek-lseek-constants.md
     - name: Heap constants
       href: ../c-runtime-library/heap-constants.md
-    - name: `_HEAP_MAXREQ`
+    - name: _HEAP_MAXREQ
       href: ../c-runtime-library/heap-maxreq.md
     - name: HUGE_VAL, _HUGE
       href: ../c-runtime-library/huge-val-huge.md
