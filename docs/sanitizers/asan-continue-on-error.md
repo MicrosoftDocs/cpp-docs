@@ -8,19 +8,19 @@ helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compilin
 
 # Walkthrough: Use Address Sanitizer Continue On Error to find memory safety issues
 
-Memory safety errors--such as out-of-bounds memory reads and writes, using memory after it has been freed, `NULL` pointer dereferences, and so on--are a top concern for C/C++ code. Address Sanitizer (ASAN) is a compiler and runtime technology that exposes hard-to-find bugs of this kind, and with zero false positives. For an overview of ASAN, see [AddressSanitizer](asan.md)
+Memory safety errors such as out-of-bounds memory reads and writes, using memory after it has been freed, `NULL` pointer dereferences, and so on, are a top concern for C/C++ code. Address Sanitizer (ASAN) is a compiler and runtime technology that exposes hard-to-find bugs of this kind, and with zero false positives. For an overview of ASAN, see [AddressSanitizer](asan.md)
 
-Continue On Error (COE) is a new ASAN feature that automatically diagnoses and reports unique memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to stdout, stderr, or the log file of your choice.
+Continue On Error (COE) is a new ASAN feature that automatically diagnoses and reports unique memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to `stdout`, `stderr`, or the log file of your choice.
 
-A significant advantage of COE is that, unlike the previous ASAN behavior, your program doesn't stop running when the first memory error is encountered. Instead, it notes the error and continues to run. When your app exits, a summary of all the memory issues that were encountered is provided.
+A significant advantage of COE is that, unlike the previous ASAN behavior, your program doesn't stop running when the first memory error is encountered. Instead, ASAN notes the error and continues to run. After your app exits, a summary of all the memory issues is provided.
 
-You can create a checked build for your C and C++ programs with ASAN turned on that you run in your test harness. As your tests exercise the code paths in your app for bugs, you'll also find out if those code paths also harbor memory safety issues. And without interfering with the tests.
+You can create a checked build for your C and C++ programs with ASAN turned on and run in your test harness. As your tests exercise the code paths in your app looking for bugs, you'll also find out if those code paths harbor memory safety issues. And without interfering with the tests.
 
-Afterwards, you get a summary of the memory issues encountered. With COE, you can compile and deploy an existing application into limited production to find memory safety issues while running for days (albeit the app will run slower).
+Afterwards, you get a summary of the memory issues. With COE, you can compile and deploy an existing application into limited production to find memory safety issues. You can run the checked build for days to fully exercise the code, although the app will run slower due to the ASAN instrumentation.
 
-You can use this feature to create a new shipping gate: if all your existing tests pass but this new feature reports a memory safety error or a leak, don’t ship the new code or integrate it into a parent branch.
+You can use this feature to create a new shipping gate. That is, if all your existing tests pass, but this new feature reports a memory safety error or a leak, don’t ship the new code or integrate it into a parent branch.
 
-This walkthrough shows how to create a checked build that has COE enabled, and what the output looks like for code that has memory safety errors.
+This walkthrough shows how to create a checked build that has COE enabled, and what the output looks like for code with memory safety errors.
 
 ## Prerequisites
 
@@ -28,9 +28,9 @@ To complete this walkthrough, you need Visual Studio 2022 17.6 or later with the
 
 ## Out of bounds memory access example
 
-When you create a standard C++ checked build of your app with `-fsanitizer=address`, calls to allocators, deallocators, `memcpy`, `memset`, and so on, are forwarded to the ASAN runtime. The ASAN runtime provides the same semantics for these functions, but also monitors what happens with the memory. ASAN diagnoses and reports hidden memory safety errors--with zero false positives--as your app runs.
+When you create a standard C++ checked build of your app with `-fsanitizer=address`, calls to allocators, deallocators, `memcpy`, `memset`, and so on, are forwarded to the ASAN runtime. The ASAN runtime provides the same semantics for these functions, but also monitors what happens with the memory. ASAN diagnoses and reports hidden memory safety errors, with zero false positives, as your app runs.
 
-In this example, create a checked build and set an environment variable to output the address sanitizer information to `stdout`.
+In this example, create a checked build and set an environment variable to output the address sanitizer information to `stdout` to see the memory safety errors that ASAN reports.
 
 ### Create a checked build with ASAN enabled
 
@@ -60,24 +60,22 @@ void main()
 }
 ```
 
-In the preceding code, the parameter `sz` is 10 and the original buffer is 10 bytes. There are two memory safety errors that we will see if COE finds:
+In the preceding code, the parameter `sz` is 10 and the original buffer is 10 bytes. There are two memory safety errors:
 
 - an out-of-bounds load from `buf` in the `for` loop
 - an out-of-bounds store to `local` in the `for` loop
 
-The buffer buffer overflow is due to the loop exit test `<=sz`. When the example runs, it's *secure by coincidence*. That's because of the over-allocation and alignment done by most C++ runtime implementations. When `sz % 16 == 0`, the final write to `local[ii]` corrupts memory. Other cases only read/write to the "malloc slop" which is due to the C Runtime (CRT) padding allocations out to a 0 mod 16 aggregate boundary.
+The buffer overflow is due to the loop exit test `<=sz`. When this example runs, it's *secure by coincidence*. That's because of the over-allocation and alignment done by most C++ runtime implementations. When `sz % 16 == 0`, the final write to `local[ii]` corrupts memory. Other cases only read/write to the "malloc slop", which is due to the C Runtime (CRT) padding allocations out to a 0 mod 16 aggregate boundary.
 
-Errors are only observable if the following page is unmapped, or upon use of corrupted data. All other cases are silent in the following example. With Continue On Error, you see both errors in the summary and the program will run to completion.
+Errors are only observable if the following page is unmapped, or upon use of corrupted data. All other cases are silent in this example. With Continue On Error, you see both errors in the summary after the program runs to completion.
 
 Create a checked build of the preceding code with COE turned on:
 
-1. Compile the code using the `-fsanitize=address` (turn on COE) and `-Zi` (create a separate PDB file) switches: `cl -fsanitize=address -Zi coe.cpp`
+1. Compile the code using the `-fsanitize=address` (turns on COE) and `-Zi` (creates a separate PDB file that address sanitizer uses to display memory error location information) switches: `cl -fsanitize=address -Zi coe.cpp`
 1. Set the `ASAN_OPTIONS` environment variable to send ASAN output to stdout: `set ASAN_OPTIONS=Continue On Error=1`
 1. Run the test code: `coe.exe`
 
-The output shows that there were two memory buffer overflow errors, as expected, and gives the call stack for where they happened.
-
-COE reports two distinct errors that occur on the same source line. The first error reads memory at a global address in the `.data` section, and the other writes to memory allocated from the heap. The report looks like this:
+The output shows that there were two memory buffer overflow errors and gives the call stack for where they happened. The report starts out like this:
 
 ```cmd
 ==9776==ERROR: AddressSanitizer: global-buffer-overflow on address 0x0047b08a at pc 0x003c121b bp 0x012ffaec sp 0x012ffae0
@@ -93,7 +91,7 @@ Next, there's information about the shadow bytes in the vicinity of the buffer o
 
 Then there's a summary of the source files where the memory errors happened. It's sorted in order of the unique call stacks for the memory errors in that file. What determines a unique call stack is the type of error and the call stack where the error occurred.
 
-The reason for this sorting is that five unique call stacks leading to different memory safety errors in the same file is potentially more worrisome than one error that hits many times. The summary looks like this:
+The reason for this sorting is to prioritize memory safety issues that may be the most concerning. For example, five unique call stacks leading to different memory safety errors in the same file is potentially more worrisome than one error that hits many times. The summary looks like this:
 
 ```cmd
 === Files in priority order ===
@@ -101,7 +99,7 @@ The reason for this sorting is that five unique call stacks leading to different
 File: C:\Users\xxx\Desktop\COE\coe.cpp Unique call stacks: 2
 ```
 
-Finally, the report contains a summary of where the memory errors occurred. Continue On Error reports two distinct errors that occur on the same source line. The first error reads memory at a global address in the `.data` section, and the other writes to memory allocated from the heap.It looks like this:
+Finally, the report contains a summary of where the memory errors occurred. Continue On Error reports two distinct errors that occur on the same source line. The first error reads memory at a global address in the `.data` section, and the other writes to memory allocated from the heap. It looks like this:
 
 ```cmd
 === Source Code Details: Unique errors caught at instruction offset from source line number, in functions, in the same file. === 
@@ -119,7 +117,7 @@ File: C:\Users\xxx\Desktop\COE\coe.cpp
 	Raw HitCnt: 1  On Reference: 1-byte-write-heap-buffer-overflow 
 ```
 
-The default Address Sanitizer runtime behavior terminates your application after reporting the first error encountered while running your program. It does not allow the "bad" machine instruction to execute. The new Address Sanitizer runtime diagnoses and reports errors, but then executes subsequent instructions. COE tries to automatically return control back to the application after reporting each memory safety error. There are times when it can't, such as when there is a memory access violation (AV) or a failed memory allocation. COE doesn't continue after access violations that aren't caught by the program's structured exception handling. If COE can't return execution to the app, a `CONTINUE CANCELLED - Deadly Signal. Shutting down.` message is output.
+The default Address Sanitizer runtime behavior terminates the app after reporting the first error it finds. It doesn't allow the "bad" machine instruction to execute. The new Address Sanitizer runtime diagnoses and reports errors, but then executes subsequent instructions. COE tries to automatically return control back to the application after reporting each memory safety error. There are situations when it can't, such as when there's a memory access violation (AV) or a failed memory allocation. COE doesn't continue after access violations that the program's structured exception handling doesn't catch. If COE can't return execution to the app, a `CONTINUE CANCELLED - Deadly Signal. Shutting down.` message is output.
 
 ### Set an environment variable to output to stdout
 
@@ -131,7 +129,7 @@ There are different options for where the output from ASAN goes. They are:
 
 ## Handling undefined behavior
 
-The ASAN runtime doesn't mimic all undefined behaviors for C and C++. The following example demonstrates an example where code generation from the compiler and the runtime implementation differ for **_alloca**:
+The ASAN runtime doesn't mimic all of the undefined behaviors for C and C++. The following example demonstrates an example where code generation from the compiler and the runtime implementation differs for **_alloca**:
 
 ```cpp
 #include <cstdio>
@@ -191,17 +189,18 @@ void main()
 }
 ```
 
-In `main()`, a large number is passed to `foo_redundant` which is ultimately passed to `_alloca()` which causes `_alloca()` to fail.
+In `main()`, a large number is passed to `foo_redundant`, which is ultimately passed to `_alloca()`, which causes `_alloca()` to fail.
 
-This example outputs `pass` when compiled without the `-fsanitize=address` switch because `cnt==1` due to the exception. However, it will fail when compiled with `-fsanitize=address` because with the Address Sanitizer in Continue On Error mode, the program will run to completion.
-
-The code generation from the compiler must match the ABI for the Address Sanitizer runtime. For the Address Sanitizer runtime, the compiler grows the allocation size and aligns it 0 mod 32 (a cache line). That math will cause an integer overflow creating a reasonable, small positive number as the parameter to `_alloca()`. Thus there is no stack overflow exception to process.
+This example outputs `pass` when compiled without the `-fsanitize=address` switch because `cnt==1` because the exception code matches `RET_STACK_EXCEPTION`. However, it fails when compiled with `-fsanitize=address` because the thrown exception is an Address Sanitizer error: dynamic-stack-buffer-overflow. So the code returns `RET_OTHER_EXCEPTION` instead of `RET_STACK_EXCEPTION`.
 
 ## Other benefits
 
-Earlier versions of ASAN required the `llvm_symbolzer.exe` binary. With the new ASAN runtime, this is no longer necessary. This makes it even easier to use ASAN with your normal test harness because you don't have to accomodate extra binaries.
+Earlier versions of ASAN required the `llvm_symbolizer.exe` binary. With the new ASAN runtime, this isn't necessary. This makes it even easier to use ASAN with your normal test harness because you don't have to manage extra binaries.
 
 ## See also
 
+[AddressSanitizer Continue on Error blog post](https://devblogs.microsoft.com/cppblog/addresssanitizer-continue_on_error)\
 [Example memory safety errors](asan.md#error-types)\
-[Top 25 most dangerous software weaknesses](https://cwe.mitre.org/top25/archive/2021/2021_cwe_top25.html)
+[Top 25 most dangerous software weaknesses](https://cwe.mitre.org/top25/archive/2021/2021_cwe_top25.html)\
+[-Zi](../build/reference/z7-zi-zi-debug-information-format.md#zi)\
+[-fsanitize=address](../build/reference/fsanitize.md)
