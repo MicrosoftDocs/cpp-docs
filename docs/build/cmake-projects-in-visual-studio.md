@@ -5,6 +5,7 @@ ms.date: 02/14/2022
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
+
 # CMake projects in Visual Studio
 
 [CMake](https://cmake.org) is a cross-platform, open-source tool for defining build processes that run on multiple platforms. This article assumes you're familiar with CMake. For more information about CMake, see the [CMake documentation](https://cmake.org/cmake/help/latest/index.html#). The [CMake tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html#guide:CMake%20Tutorial) is a good starting point to learn more.
@@ -44,6 +45,10 @@ When you **open a folder** containing a *`CMakeLists.txt`* file, the following t
 Once CMake cache generation has succeeded, you can also view your projects organized logically by targets. Choose the **Select View** button on the **Solution Explorer** toolbar. From the list in **Solution Explorer - Views**, select **CMake Targets View** and press **Enter** to open the targets view:
 
 :::image type="content" source="media/cmake-targets-view2.png" alt-text="Screenshot of the Solution Explorer Views window with the C Make Targets View highlighted.":::
+
+Additionally, you can simply switch views by right-clicking on any file or folder in your Solution Explorer and selecting **Switch to CMake Targets View**.
+
+![Context Menu item to Switch to CMake Targets View.](media/cmake-projects-in-visual-studio/screenshot-2023-07-14-153155.png)
 
 Choose the **Show All Files** button at the top of **Solution Explorer** to see all the CMake-generated output in the *`out/build/<config>`* folders.
 
@@ -400,3 +405,4 @@ In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://c
 [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)\
 [Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)\
 [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
+
