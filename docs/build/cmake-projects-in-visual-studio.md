@@ -46,9 +46,9 @@ Once CMake cache generation has succeeded, you can also view your projects organ
 
 :::image type="content" source="media/cmake-targets-view2.png" alt-text="Screenshot of the Solution Explorer Views window with the C Make Targets View highlighted.":::
 
-Additionally, you can simply switch views by right-clicking on any file or folder in your Solution Explorer and selecting **Switch to CMake Targets View**.
+You can also switch views by right-clicking on any file or folder in your Solution Explorer and selecting **Switch to CMake Targets View**.
 
-![Context Menu item to Switch to CMake Targets View.](media/cmake-projects-in-visual-studio/screenshot-2023-07-14-153155.png)
+![This is a picture of the right-clicking on any file or folder in the Solution Explorer and seeing the Context Menu item to Switch to CMake Targets View.](media/cmake-projects-in-visual-studio/screenshot-2023-07-14-153155.png)
 
 Choose the **Show All Files** button at the top of **Solution Explorer** to see all the CMake-generated output in the *`out/build/<config>`* folders.
 
