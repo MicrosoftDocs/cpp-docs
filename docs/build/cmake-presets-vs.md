@@ -23,7 +23,7 @@ We recommend *`CMakePresets.json`* as an alternative to *`CMakeSettings.json`*. 
 
 The supported *`CMakePresets.json`* and *`CMakeUserPresets.json`* schema versions depend on your version of Visual Studio:
 - Visual Studio 2019 version 16.10 and later support schema versions 2 and 3.
-- Visual Studio 2022 version 17.4 preview 1 adds support for schema version 4
+- Visual Studio 2022 version 17.4 preview 1 adds support for schema version 4.
 - Visual Studio 2022 version 17.5 preview 1 adds support for schema version 5.
 
 You can update the version by changing the `"version"` field in the root object. For an example and more information, see [`CMakePresets.json` format](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#format).
