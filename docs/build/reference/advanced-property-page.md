@@ -119,7 +119,7 @@ This option sets a `ManagedAssembly` build property that enables building only s
 
 ### .NET Target Windows Version
 
-In managed projects targeting .NET (not .NET Framework), specifies the minimum Windows version that the project could leverage. The value is used by NuGet when determining the compatibility of projects and  NuGet packages in the dependencies graph: the rule is that a project A depending on project B must have a .NET target Windows version greater or equal than the depending one.
+In managed projects targeting .NET (not .NET Framework), specifies the minimum Windows version that the project could leverage. The value is used by NuGet when determining the compatibility of projects and NuGet packages in the dependencies graph: the rule is that a project A depending on project B must have a .NET target Windows version greater or equal than the depending one.
 
 ::: moniker-end
 
