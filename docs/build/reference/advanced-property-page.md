@@ -107,7 +107,13 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 ### .NET Target Framework Version
 
-In managed projects that target .NET Framework (not .NET), this property specifies the .NET Framework version to target.
+This property is applicable only when the **Common Language Runtime support** property is set to **.NET Framework Runtime Support**, that is the project target [.NET Framework](/dotnet/standard/glossary#net-framework), and it specifies the version of the .NET Framework.
+
+### .NET Target Framework
+
+This property is applicable only when the **Common Language Runtime support** property is set to **.NET Runtime Support**, that is the project target [.NET](/dotnet/standard/glossary#net).
+
+This property specifies the .NET 5+ Target Framework Moniker this project targets, e.g. `net6.0-windows` or `net7.0-windows8.0`.
 
 ### Enable Managed Incremental Build
 
@@ -119,7 +125,8 @@ This option sets a `ManagedAssembly` build property that enables building only s
 
 ### .NET Target Windows Version
 
-In managed projects that target .NET (not .NET Framework), this property specifies the minimum Windows version that the project supports. This value is used by NuGet to determine the compatibility of projects and NuGet package dependencies. If a project A depends on project B, project A's .NET target Windows version must be greater or equal to project B.
+This property is applicable only when the **Common Language Runtime support** property is set to **.NET Runtime Support**, that is the project target [.NET](/dotnet/standard/glossary#net).
+This property specifies the minimum Windows version that the project supports: this value is used by NuGet to determine the compatibility of projects and NuGet package dependencies. If a project A depends on project B, project A's .NET target Windows version must be greater or equal to project B.
 
 ::: moniker-end
 
