@@ -111,9 +111,9 @@ This property is applicable only when the **Common Language Runtime support** pr
 
 ### .NET Target Framework
 
-This property is applicable only when the **Common Language Runtime support** property is set to **.NET Runtime Support**, that is the project target [.NET](/dotnet/standard/glossary#net).
+This property is applicable only when the **Common Language Runtime support** property is set to **.NET Runtime Support**, that is the project targets [.NET](/dotnet/standard/glossary#net).
 
-This property specifies the .NET 5+ Target Framework Moniker this project targets, e.g. `net6.0-windows` or `net7.0-windows8.0`.
+This property specifies the .NET 5+ Target Framework Moniker this project targets, e.g., `net6.0-windows` or `net7.0-windows8.0`.
 
 ### Enable Managed Incremental Build
 
