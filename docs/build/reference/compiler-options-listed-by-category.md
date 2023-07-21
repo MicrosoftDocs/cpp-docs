@@ -1,9 +1,8 @@
 ---
 title: "Compiler Options Listed by Category"
 description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
-ms.date: 11/07/2022
+ms.date: 06/02/2023
 helpviewer_keywords: ["compiler options, C++"]
-ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
 # Compiler options listed by category
 
@@ -76,6 +75,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) | Deprecated. Enables fast checks. (Same as [`/RTC1`](rtc-run-time-error-checks.md)) |
 | [`/homeparams`](homeparams-copy-register-parameters-to-stack.md) | Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile). |
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Creates a hotpatchable image. |
+| [`/jumptablerdata`](jump-table-rdata.md) | Put switch case statement jump tables in the `.rdata` section. |
 | [`/Qfast_transcendentals`](qfast-transcendentals-force-fast-transcendentals.md) | Generates fast transcendentals. |
 | [`/QIfist`](qifist-suppress-ftol.md) | Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only) |
 | [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | Removes `fwait` commands inside **`try`** blocks. |
@@ -200,7 +200,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/Zc:throwingNew[-]`](zc-throwingnew-assume-operator-new-throws.md) | Assume **`operator new`** throws on failure (off by default). |
 | [`/Zc:tlsGuards[-]`](zc-tlsguards.md) | Generate runtime checks for TLS variable initialization (on by default). |
 | [`/Zc:trigraphs`](zc-trigraphs-trigraphs-substitution.md) | Enable trigraphs (obsolete, off by default). |
-| [`/Zc:twoPhase[-]`](zc-twophase.md) | Use non-conforming template parsing behavior (conforming by default). |
+| [`/Zc:twoPhase[-]`](zc-twophase.md) | Use nonconforming template parsing behavior (conforming by default). |
 | [`/Zc:wchar_t[-]`](zc-wchar-t-wchar-t-is-native-type.md) | **`wchar_t`** is a native type, not a typedef (on by default). |
 | [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for 0-size arrays of objects (on by default). |
 | [`/Ze`](za-ze-disable-language-extensions.md) | Deprecated. Enables C89 language extensions. |
@@ -238,7 +238,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/bigobj`](bigobj-increase-number-of-sections-in-dot-obj-file.md) | Increases the number of addressable sections in an .obj file. |
 | [`/c`](c-compile-without-linking.md) | Compiles without linking. |
 | [`/cgthreads`](cgthreads-code-generation-threads.md) | Specifies number of *cl.exe* threads to use for optimization and code generation. |
-| [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
+| [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings control error reporting. |
 | [`/execution-charset`](execution-charset-set-execution-character-set.md) | Set execution character set. |
 | `/fastfail` | Enable fast-fail mode. |
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Displays the full path of source code files passed to *cl.exe* in diagnostic text. |
@@ -247,7 +247,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/HELP`](help-compiler-command-line-help.md) | Lists the compiler options. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Changes the default **`char`** type. |
 | [`/JMC`](jmc.md) | Supports native C++ Just My Code debugging. |
-| [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker will create a binary that can be executed in the Windows kernel. |
+| [`/kernel`](kernel-create-kernel-mode-binary.md) | The compiler and linker create a binary that can be executed in the Windows kernel. |
 | [`/MP`](mp-build-with-multiple-processes.md) | Builds multiple source files concurrently. |
 | [`/nologo`](nologo-suppress-startup-banner-c-cpp.md) | Suppresses display of sign-on banner. |
 | `/presetPadding` | Zero initialize padding for stack based class types. |
