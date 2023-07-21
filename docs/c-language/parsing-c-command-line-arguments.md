@@ -34,7 +34,7 @@ This list illustrates the rules above by showing the interpreted result passed t
 | `a\\\b d"e f"g h` | `a\\\b` | `de fg` | `h` |
 | `a\\\"b c d` | `a\"b` | `c` | `d` |
 | `a\\\\"b c" d e` | `a\\b c` | `d` | `e` |
-| `a"b"" c d` | `ab" c d` |  |  |
+| `a"b"" c d` | `ab"` | `c` | `d` |
 
 ## Example
 
