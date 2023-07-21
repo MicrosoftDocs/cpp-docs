@@ -40,11 +40,11 @@ Here's what happens when a dump file is specified for `ASAN_SAVE_DUMPS`: If an e
 
 In Visual Studio version 17.7 and later, these capabilities were expanded to handle a variety of scenarios:
 
-1. Quotes will be stripped to accommodate spaces in directory or file names. In previous versions depending on the environment, setting the environment variable to have quotes or spaces would not work.
+1. Quotes will be stripped to accommodate spaces in directory or file names. In previous versions for environments inside of Visual Studio or when using PowerShell, setting the environment variable to have quotes or spaces would not work.
 
-1. If the `.dmp` extension is explicitly entered, VCAsan will try to use that explicitly and not add an associated process ID to the dump file name. 
+2. If the `.dmp` extension is explicitly specified (e.g. `set ASAN_SAVE_DUMPS=MyDmp.dmp`), VCAsan will try to use that explicitly and not add an associated process ID to the dump file name. 
 
-1. If somehow a dmp already exists, VCAsan will attempt to write to a different file name similar to other Windows programs by appending a number in parentheses. If this does not work after several attempts, a temporary path will be used. If they all fail, an error message is displayed with diagnostic information.
+3. If somehow a dmp file already exists with the same name, VCAsan will attempt to write to a different file name similar to other Windows programs by appending a number in parentheses. If this does not work after several attempts, a temporary path is used. If they all fail, an error message is displayed with diagnostic information. This applies in all scenarios.
 
 ## See also
 
