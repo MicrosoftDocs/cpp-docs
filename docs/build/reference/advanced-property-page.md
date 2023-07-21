@@ -125,7 +125,7 @@ This option sets a `ManagedAssembly` build property that enables building only s
 
 ### .NET Target Windows Version
 
-This property is applicable only when the **Common Language Runtime support** property is set to **.NET Runtime Support**, that is the project target [.NET](/dotnet/standard/glossary#net).
+This property is applicable only when the **Common Language Runtime support** property is set to **.NET Runtime Support**, that is the project targets [.NET](/dotnet/standard/glossary#net).
 This property specifies the minimum Windows version that the project supports: this value is used by NuGet to determine the compatibility of projects and NuGet package dependencies. If a project A depends on project B, project A's .NET target Windows version must be greater or equal to project B's.
 
 ::: moniker-end
