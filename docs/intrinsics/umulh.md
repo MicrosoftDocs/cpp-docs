@@ -62,13 +62,13 @@ int main()
     unsigned __int64 result;
     result = __umulh(i, j); // result has the high 64 bits
                             // of the product.
-    printf_s("0x%I64x * 0x%I64x = 0x%I64x%I64x \n", i, j, result, k);
+    printf_s("0x%016I64x * 0x%016I64x = 0x%016I64x_%016I64x \n", i, j, result, k);
     return 0;
 }
 ```
 
 ```Output
-0x10 * 0xfedcba9876543210 = 0xfedcba98765432100
+0x0000000000000010 * 0xfedcba9876543210 = 0x000000000000000f_edcba98765432100
 ```
 
 **END Microsoft Specific**
