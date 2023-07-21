@@ -107,7 +107,7 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 ### .NET Target Framework Version
 
-In managed projects targeting .NET Framework (not .NET), specifies the .NET Framework version to target.
+In managed projects that target .NET Framework (not .NET), this property specifies the .NET Framework version to target.
 
 ### Enable Managed Incremental Build
 
@@ -119,7 +119,7 @@ This option sets a `ManagedAssembly` build property that enables building only s
 
 ### .NET Target Windows Version
 
-In managed projects targeting .NET (not .NET Framework), specifies the minimum Windows version that the project could leverage. The value is used by NuGet when determining the compatibility of projects and NuGet packages in the dependencies graph: the rule is that a project A depending on project B must have a .NET target Windows version greater or equal than the depending one.
+In managed projects that target .NET (not .NET Framework), this property specifies the minimum Windows version that the project supports. This value is used by NuGet to determine the compatibility of projects and NuGet package dependencies. If a project A depends on project B, project A's .NET target Windows version must be greater or equal to project B.
 
 ::: moniker-end
 
