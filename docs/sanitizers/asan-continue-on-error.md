@@ -16,7 +16,7 @@ A significant advantage of COE is that, unlike the previous ASAN behavior, your 
 
 You can create a checked build for your C and C++ programs with ASAN turned on and run in your test harness. As your tests exercise the code paths in your app looking for bugs, you'll also find out if those code paths harbor memory safety issues. And without interfering with the tests.
 
-Afterwards, you get a summary of the memory issues. With COE, you can compile and deploy an existing application into limited production to find memory safety issues. You can run the checked build for days to fully exercise the code, although the app will run slower due to the ASAN instrumentation.
+Afterwards, you get a summary of the memory issues. With COE, you can compile and deploy an existing application into limited production to find memory safety issues. You can run the checked build for days to fully exercise the code, although the app runs slower due to the ASAN instrumentation.
 
 You can use this feature to create a new shipping gate. That is, if all your existing tests pass, but this new feature reports a memory safety error or a leak, don’t ship the new code or integrate it into a parent branch.
 
@@ -65,7 +65,7 @@ In the preceding code, the parameter `sz` is 10 and the original buffer is 10 by
 - an out-of-bounds load from `buf` in the `for` loop
 - an out-of-bounds store to `local` in the `for` loop
 
-The buffer overflow is due to the loop exit test `<=sz`. When this example runs, it's *secure by coincidence*. That's because of the over-allocation and alignment done by most C++ runtime implementations. When `sz % 16 == 0`, the final write to `local[ii]` corrupts memory. Other cases only read/write to the "malloc slop", which is due to the C Runtime (CRT) padding allocations out to a 0 mod 16 aggregate boundary.
+The buffer overflow is due to the loop exit test `<=sz`. When this example runs, it's *secure by coincidence*. That's because of the over-allocation and alignment done by most C++ runtime implementations. When `sz % 16 == 0`, the final write to `local[ii]` corrupts memory. Other cases only read/write to the "malloc slop," which is due to the C Runtime (CRT) padding allocations out to a 0 mod 16 aggregate boundary.
 
 Errors are only observable if the following page is unmapped, or upon use of corrupted data. All other cases are silent in this example. With Continue On Error, you see both errors in the summary after the program runs to completion.
 
