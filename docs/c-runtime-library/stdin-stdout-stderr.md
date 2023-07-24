@@ -10,9 +10,9 @@ helpviewer_keywords: ["stdout function", "standard output stream", "standard err
 ## Syntax
 
 ```C
-#define stdin  (__acrt_iob_func(0))
-#define stdout (__acrt_iob_func(1))
-#define stderr (__acrt_iob_func(2))
+#define stdin  /* implementation defined */
+#define stdout /* implementation defined */
+#define stderr /* implementation defined */
 ```
 
 ## Remarks
