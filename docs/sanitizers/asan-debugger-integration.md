@@ -38,13 +38,16 @@ The file must have a `.dmp` extension to follow the Visual Studio IDE convention
 
 Here's what happens when a dump file is specified for `ASAN_SAVE_DUMPS`: If an error gets caught by the AddressSanitizer runtime, it saves a crash dump file that has the metadata associated with the error. The debugger in Visual Studio version 16.9 and later can parse the metadata that's saved in the dump file. You can set `ASAN_SAVE_DUMPS` on a per-test basis, store these binary artifacts, and then view them in the IDE with proper source indexing.
 
-In Visual Studio version 17.7 and later, these capabilities were expanded to handle various scenarios:
+Visual Studio version 17.7 and later supports the following:
 
-1. Quotes are stripped to accommodate spaces in directory or file names. In previous versions for environments inside of Visual Studio or when using PowerShell, setting the environment variable to contain quotes or spaces would fail to create the expected dump.
+* Quoted strings are now handled correctly. In previous versions, for environments inside of Visual Studio or when using PowerShell, setting the environment variable to contain quotes or spaces would fail to create the expected dump file.
 
-2. If the `.dmp` extension is explicitly specified (for example, `set ASAN_SAVE_DUMPS=MyDmp.dmp`), VCAsan attempts using that explicitly, and will not add an associated process ID to the dump file name. 
+* When the `.dmp` extension is explicitly specified (for example, `set ASAN_SAVE_DUMPS=MyDmp.dmp`), VCAsan uses it explicitly, and will not add an associated process ID to the dump file name. 
 
-3. If a `.dmp` file already exists with the same name specified from the environment variable, VCAsan tries to append a number in parentheses similar to other Windows programs (for example, `MyDmp (1).dmp`. If file creation does not work after several attempts, a temporary path is used. If file creation continues to fail, an error message is displayed with diagnostic information. This applies for all VCAsan scenarios.
+* If a `.dmp` file already exists with the same name specified from the environment variable, VCAsan modifies the file name as follows:
+  * Appends a number to the filename in parentheses. For example, `Myfile (1).dmp`.
+  * If after several attempts appending a number in parentheses fails to generate a unique name, the file is saved to an `%APPLOCAL%` temporary path.
+  * If saving to a temporary path fails, a diagnostic error is displayed.
 
 ## See also
 
