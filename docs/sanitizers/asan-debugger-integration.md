@@ -46,7 +46,7 @@ Visual Studio version 17.7 and later supports the following:
 
 * If a `.dmp` file already exists with the same name specified from the environment variable, VCAsan modifies the file name as follows:
   * Appends a number to the filename in parentheses. For example, `Myfile (1).dmp`.
-  * If after several attempts appending a number in parentheses fails to generate a unique name, the file is saved to an `%APPLOCAL%` temporary path.
+  * If after several attempts appending a number in parentheses fails to generate a unique name, the file is saved to an `%APPLOCAL%` temporary path that VCAsan will print. For example, `C:\Users\~\AppData\Local\Temp\Dump.dmp`.
   * If saving to a temporary path fails, a diagnostic error is displayed.
 
 ## See also
