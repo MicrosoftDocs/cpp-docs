@@ -55,7 +55,7 @@ The Microsoft C compiler also generates warnings for differences in sign. For ex
 
 ```C
 signed int *pi;
-unsigned int *pu
+unsigned int *pu;
 
 pi = pu;  /* Now generates warning */
 ```

@@ -67,7 +67,7 @@ int list[20]; // Declares an array of 20 int values named list
 char *cp;     // Declares a pointer to a char value
 double func( void ); // Declares a function named func, with no
                      // arguments, that returns a double value
-int *aptr[10] // Declares an array of 10 pointers
+int *aptr[10]; // Declares an array of 10 pointers
 ```
 
 **Microsoft Specific**
