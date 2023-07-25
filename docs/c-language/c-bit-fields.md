@@ -19,7 +19,7 @@ The *`constant-expression`* specifies the width of the field in bits. The *`type
 
 Unnamed bit fields can't be referenced, and their contents at run time are unpredictable. They can be used as "dummy" fields, for alignment purposes. An unnamed bit field whose width is specified as 0 guarantees that storage for the member following it in the *struct-declaration-list* begins on an **`int`** boundary.
 
-Bit fields should not exceed the total number of bits of their underlying type. For example, these two statements aren't legal:
+The number of bits in a bit field must be less than or equal to the size of the underlying type. For example, these two statements aren't legal:
 
 ```C
 short a:17;        /* Illegal! */
