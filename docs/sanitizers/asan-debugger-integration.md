@@ -34,9 +34,20 @@ When you link the VCAsan library to your executable, users can enable it to gene
 
 `set ASAN_SAVE_DUMPS=MyFileName.dmp`
 
-The file must have a .dmp suffix to follow the Visual Studio IDE conventions.
+The file must have a `.dmp` extension to follow the Visual Studio IDE conventions. (Prior to 17.7)
 
 Here's what happens when a dump file is specified for `ASAN_SAVE_DUMPS`: If an error gets caught by the AddressSanitizer runtime, it saves a crash dump file that has the metadata associated with the error. The debugger in Visual Studio version 16.9 and later can parse the metadata that's saved in the dump file. You can set `ASAN_SAVE_DUMPS` on a per-test basis, store these binary artifacts, and then view them in the IDE with proper source indexing.
+
+Visual Studio version 17.7 and later supports the following:
+
+* Quoted strings are now handled correctly. In previous versions, for environments inside of Visual Studio or when using PowerShell, setting the environment variable to contain quotes or spaces would fail to create the expected dump file.
+
+* When the `.dmp` extension is explicitly specified (for example, `set ASAN_SAVE_DUMPS=MyDmp.dmp`), VCAsan uses it explicitly, and will not add an associated process ID to the dump file name. 
+
+* If a `.dmp` file already exists with the same name specified from the environment variable, VCAsan modifies the file name as follows:
+  * Appends a number to the filename in parentheses. For example, `Myfile (1).dmp`.
+  * If after several attempts appending a number in parentheses fails to generate a unique name, the file is saved to an `%APPLOCAL%` temporary path that VCAsan will print. For example, `C:\Users\~\AppData\Local\Temp\Dump.dmp`.
+  * If saving to a temporary path fails, a diagnostic error is displayed.
 
 ## See also
 
@@ -47,3 +58,4 @@ Here's what happens when a dump file is specified for `ASAN_SAVE_DUMPS`: If an e
 [AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer error examples](./asan-error-examples.md)
+
