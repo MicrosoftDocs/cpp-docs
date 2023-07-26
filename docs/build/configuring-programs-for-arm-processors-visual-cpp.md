@@ -2,7 +2,6 @@
 description: "Learn more about: Configure C++ projects for ARM processors"
 title: "Configure C++ projects for ARM processors"
 ms.date: "07/11/2018"
-ms.assetid: 3d95f221-656a-480d-9651-9ad263895747
 ---
 # Configure C++ projects for ARM processors
 
@@ -26,6 +25,12 @@ Describes the encoding scheme for stack unwinding during structured exception ha
 Describes the encoding scheme for stack unwinding during structured exception handling in Windows on ARM64.
 
 ## Related Sections
+
+[Get started with Arm64EC](/windows/arm/arm64ec-build)\
+Describes how to get started building your app or project using [Arm64EC](/windows/arm/arm64ec).
+
+[How to: Configure projects to target platforms](/visualstudio/ide/how-to-configure-projects-to-target-platforms)\  
+Describes how to set up your application builds to target different processor architectures, including Arm64.
 
 [ARM intrinsics](../intrinsics/arm-intrinsics.md)\
 Describes compiler intrinsics for processors that use the ARM architecture.
