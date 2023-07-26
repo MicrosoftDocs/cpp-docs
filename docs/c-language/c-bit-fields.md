@@ -19,7 +19,7 @@ The *`constant-expression`* specifies the width of the field in bits. The *`type
 
 Unnamed bit fields can't be referenced, and their contents at run time are unpredictable. They can be used as "dummy" fields, for alignment purposes. An unnamed bit field whose width is specified as 0 guarantees that storage for the member following it in the *struct-declaration-list* begins on an **`int`** boundary.
 
-Bit fields must also be long enough to contain the bit pattern. For example, these two statements aren't legal:
+The number of bits in a bit field must be less than or equal to the size of the underlying type. For example, these two statements aren't legal:
 
 ```C
 short a:17;        /* Illegal! */
@@ -72,7 +72,7 @@ the bits of `test` would be arranged as follows:
 cccccccb bbbbaaaa
 ```
 
-Since the 8086 family of processors stores the low byte of integer values before the high byte, the integer `0x01F2` would be stored in physical memory as `0xF2` followed by `0x01`.
+Since the 8086 family of processors store the low byte of integer values before the high byte, the integer `0x01F2` would be stored in physical memory as `0xF2` followed by `0x01`.
 
 The ISO C99 standard lets an implementation choose whether a bit field may straddle two storage instances. Consider this structure, which stores bit fields that total 64 bits:
 
