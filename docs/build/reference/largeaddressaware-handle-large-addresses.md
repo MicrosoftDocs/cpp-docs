@@ -18,6 +18,8 @@ The /LARGEADDRESSAWARE option tells the linker that the application can handle a
 
 If an application was linked with /LARGEADDRESSAWARE, DUMPBIN [/HEADERS](headers.md) will display information to that effect.
 
+Linking 64-bit applications with **`/LARGEADDRESSAWARE:NO`** is not recommended because it severely restricts the amount of available address space and can result in runtime failures.
+
 ### To set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
