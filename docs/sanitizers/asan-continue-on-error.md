@@ -22,7 +22,7 @@ When your app finishes, you get a summary of the memory issues. With COE, you ca
 
 You can use this feature to create a new shipping gate. That is, if all your existing tests pass, but COE reports a memory safety error or a leak, don’t ship the new code or integrate it into a parent branch.
 
-It's important not to deploy a build with COE enabled into production. COE is intended to be used in testing and development environments only. You shouldn't use an ASAN enabled build in production. That's because of the performance impact of the instrumentation added to detect memory errors, the risk of exposing the internal implementation if errors are reported, and because the implementation of the library functions that ASAN substitutes for memory allocation, freeing, etc. should not be used in production to avoid increasing the surface area of possible security exploits.
+It's important not to deploy a build with COE enabled into production. COE is intended to be used in testing and development environments only. You shouldn't use an ASAN enabled build in production because of the performance impact of the instrumentation added to detect memory errors, the risk of exposing the internal implementation if errors are reported, and to avoid increasing the surface area of possible security exploits by shipping the library functions that ASAN substitutes for memory allocation, freeing, and so on.
 
 In the following examples, you create checked builds and set an environment variable to output the address sanitizer information to `stdout` to see the memory safety errors that ASAN reports.
 
