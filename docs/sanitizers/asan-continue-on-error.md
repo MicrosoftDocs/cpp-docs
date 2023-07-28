@@ -38,27 +38,27 @@ In this example, you create a checked build with ASAN enabled to test what happe
 1. Create a directory on your machine to run this example. For example, `%USERPROFILE%\Desktop\COE`.
 1. In that directory, create a source file, for example, `doublefree.cpp`, and paste the following code:
 
-```cpp
-#include <stdio.h>
-#include <stdlib.h>
-
-void BadFunction(int *pointer)
-{
-    free(pointer);
-    free(pointer); // double-free!
-}
-
-int main(int argc, const char *argv[])
-{
-    int *pointer = static_cast<int *>(malloc(4));
-    BadFunction(pointer);
-
-    // Normally we'd crash before this, but with COE we can see heap-use-after-free error as well
-    printf("\n\n******* Pointer value: %d\n", *pointer);
-
-    return 1;
-}
-```
+    ```cpp
+    #include <stdio.h>
+    #include <stdlib.h>
+    
+    void BadFunction(int *pointer)
+    {
+        free(pointer);
+        free(pointer); // double-free!
+    }
+    
+    int main(int argc, const char *argv[])
+    {
+        int *pointer = static_cast<int *>(malloc(4));
+        BadFunction(pointer);
+    
+        // Normally we'd crash before this, but with COE we can see heap-use-after-free error as well
+        printf("\n\n******* Pointer value: %d\n", *pointer);
+    
+        return 1;
+    }
+    ```
 
 In the preceding code, `pointer` is freed twice. This is a contrived example, but double frees are an easy mistake to make in more complex C++ code.
 
@@ -176,27 +176,27 @@ In this example, you create a checked build with ASAN enabled to test what happe
 1. Create a directory on your machine to run this example. For example, `%USERPROFILE%\Desktop\COE`.
 1. In that directory, create a source file, for example, `coe.cpp`, and paste the following code:
 
-```cpp
-#include <stdlib.h> 
-
-char* func(char* buf, size_t sz)
-{ 
-    char* local = (char*)malloc(sz); 
-    for (auto ii = 0; ii <= sz; ii++) // bad loop exit test 
-    {
-        local[ii] = ~buf[ii]; // Two memory safety errors 
+    ```cpp
+    #include <stdlib.h> 
+    
+    char* func(char* buf, size_t sz)
+    { 
+        char* local = (char*)malloc(sz); 
+        for (auto ii = 0; ii <= sz; ii++) // bad loop exit test 
+        {
+            local[ii] = ~buf[ii]; // Two memory safety errors 
+        }
+     
+        return local; 
+    } 
+    
+    char buffer[10] = {0,1,2,3,4,5,6,7,8,9}; 
+    
+    void main()
+    {   
+        char* inverted_buf= func(buffer, 10); 
     }
- 
-    return local; 
-} 
-
-char buffer[10] = {0,1,2,3,4,5,6,7,8,9}; 
-
-void main()
-{   
-    char* inverted_buf= func(buffer, 10); 
-}
-```
+    ```
 
 In the preceding code, the parameter `sz` is 10 and the original buffer is 10 bytes. There are two memory safety errors:
 
@@ -335,7 +335,7 @@ void main()
 
 In `main()`, a large number is passed to `foo_redundant`, which is ultimately passed to `_alloca()`, which causes `_alloca()` to fail.
 
-This example outputs `pass` when compiled without ASAN (that is, no `-fsanitize=address` switch) but outputs `fail` when compiled with ASAN turned on. That's because without ASAN, the exception code matches `RET_STACK_EXCEPTION` so `cnt` is set to 1. It fails when compiled with ASAN on because the thrown exception is an Address Sanitizer error instead: dynamic-stack-buffer-overflow. That means the code returns `RET_OTHER_EXCEPTION` instead of `RET_STACK_EXCEPTION` so `cnt` isn't set to 1.
+This example outputs `pass` when compiled without ASAN (that is, no `-fsanitize=address` switch) but outputs `fail` when compiled with ASAN turned on (that is, with the `-fsanitize=address` switch). That's because without ASAN, the exception code matches `RET_STACK_EXCEPTION` so `cnt` is set to 1. It fails when compiled with ASAN on because the thrown exception is an Address Sanitizer error instead: dynamic-stack-buffer-overflow. That means the code returns `RET_OTHER_EXCEPTION` instead of `RET_STACK_EXCEPTION` so `cnt` isn't set to 1.
 
 ## Other benefits
 
@@ -345,6 +345,6 @@ With the new ASAN runtime, no extra binaries need to be deployed with your app. 
 
 [AddressSanitizer Continue on Error blog post](https://devblogs.microsoft.com/cppblog/addresssanitizer-continue_on_error)\
 [Example memory safety errors](asan.md#error-types)\
+[-Zi compiler flag](../build/reference/z7-zi-zi-debug-information-format.md#zi)\
+[-fsanitize=address compiler flag](../build/reference/fsanitize.md)
 [Top 25 most dangerous software weaknesses](https://cwe.mitre.org/top25/archive/2021/2021_cwe_top25.html)\
-[-Zi](../build/reference/z7-zi-zi-debug-information-format.md#zi)\
-[-fsanitize=address](../build/reference/fsanitize.md)
