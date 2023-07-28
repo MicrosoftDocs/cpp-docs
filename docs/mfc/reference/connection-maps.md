@@ -218,8 +218,6 @@ For in-process connections, TRUE indicates that creating the connection should c
 
 *pdwCookie.* 
 
-This is a deprecated parameter that must now be set to TRUE<br/>
-
 A pointer to a DWORD where a connection identifier is returned. This value should be passed as the *dwCookie* parameter to `AfxConnectionUnadvise` when disconnecting the connection.
 
 ### Return Value
