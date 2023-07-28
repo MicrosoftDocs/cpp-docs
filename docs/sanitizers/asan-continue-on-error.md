@@ -32,12 +32,13 @@ To complete this walkthrough, you need Visual Studio 2022 17.6 or later with the
 
 ## Double free example
 
-In this example, you create a checked build with ASAN enabled to test what happens when memory is double freed. ASAN detects this error and reports it. In this example, the program continues to run after the error is detected, which leads to a second error--using memory that's been freed. A summary of the errors is output to `stdout` when the program exits:
+In this example, you create a checked build with ASAN enabled to test what happens when memory is double freed. ASAN detects this error and reports it. In this example, the program continues to run after the error is detected, which leads to a second error--using memory that's been freed. A summary of the errors is output to `stdout` when the program exits.
+
+Create the example:
 
 1. Open a developer command prompt: open the **Start** menu, type *Developer*, and select the latest command prompt such as **Developer Command Prompt for VS 2022** from the list of matches.
 1. Create a directory on your machine to run this example. For example, `%USERPROFILE%\Desktop\COE`.
 1. In that directory, create a source file, for example, `doublefree.cpp`, and paste the following code:
-
     ```cpp
     #include <stdio.h>
     #include <stdlib.h>
@@ -170,7 +171,9 @@ File: C:\Users\xxx\Desktop\COE\doublefree.cpp
 
 ## Out of bounds memory access example
 
-In this example, you create a checked build with ASAN enabled to test what happens when an app access memory that is out-of-bounds. ASAN detects this error and reports a summary of the errors to `stdout` when the program exits:
+In this example, you create a checked build with ASAN enabled to test what happens when an app access memory that is out-of-bounds. ASAN detects this error and reports a summary of the errors to `stdout` when the program exits.
+
+Create the example:
 
 1. Open a developer command prompt: open the **Start** menu, type *Developer*, and select the latest command prompt such as **Developer Command Prompt for VS 2022** from the list of matches.
 1. Create a directory on your machine to run this example. For example, `%USERPROFILE%\Desktop\COE`.
