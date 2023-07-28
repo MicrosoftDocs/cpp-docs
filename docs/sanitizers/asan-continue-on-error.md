@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Use Address Sanitizer Continue On Error to find memory safety issues"
 description: "Learn how to use Address Sanitizer continue on error to find memory safety errors in your app."
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 f1_keywords: ["AddressSanitizer", "Continue On Error"]
 helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compiling for AddressSanitizer", "Continue On Error", "ASAN continue on error", "Address Sanitizer continue on error"]
 ---
@@ -10,19 +10,19 @@ helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compilin
 
 In this walkthrough, create checked builds that find and report memory safety errors.
 
-Memory safety errors such as out-of-bounds memory reads and writes, using memory after it has been freed, `NULL` pointer dereferences, and so on, are a top concern for C/C++ code. Address Sanitizer (ASAN) is a compiler and runtime technology that exposes hard-to-find bugs of this kind, and with zero false positives. For an overview of ASAN, see [AddressSanitizer](asan.md).
+Memory safety errors like out-of-bounds memory reads and writes, using memory after it has been freed, `NULL` pointer dereferences, and so on, are a top concern for C/C++ code. Address Sanitizer (ASAN) is a compiler and runtime technology that exposes these kinds of hard-to-find bugs, and does it with zero false positives. For an overview of ASAN, see [AddressSanitizer](asan.md).
 
-Continue On Error (COE) is a new ASAN feature that automatically diagnoses and reports memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to `stdout`, `stderr`, or a log file of your choice. When you create a standard C++ checked build with `-fsanitizer=address`, calls to allocators, deallocators such as `free`, `memcpy`, `memset`, and so on, are forwarded to the ASAN runtime. The ASAN runtime provides the same semantics for these functions, but also monitors what happens with the memory. ASAN diagnoses and reports hidden memory safety errors, with zero false positives, as your app runs.
+Continue On Error (COE) is a new ASAN feature that automatically diagnoses and reports memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to `stdout`, `stderr`, or a log file of your choice. When you create a standard C++ checked build with `-fsanitizer=address`, calls to allocators, deallocators such as `free`, `memcpy`, `memset`, and so on, are forwarded to the ASAN runtime. The ASAN runtime provides the same semantics for these functions, but monitors what happens with the memory. ASAN diagnoses and reports hidden memory safety errors, with zero false positives, as your app runs.
 
 A significant advantage of COE is that, unlike the previous ASAN behavior, your program doesn't stop running when the first memory error is encountered. Instead, ASAN notes the error and your app continues to run. After your app exits, a summary of all the memory issues is output.
 
-You can create a checked build of your C or C++ app with ASAN turned on, and then run your app in your test harness. As your tests exercise the code paths in your app looking for bugs, you'll also find out if those code paths harbor memory safety issues without interfering with the tests.
+It's a good practice to create a checked build of your C or C++ app with ASAN turned on, and then run your app in your test harness. As your tests exercise the code paths in your app looking for bugs, you'll also find out if those code paths harbor memory safety issues--without interfering with the tests.
 
-Afterwards, you get a summary of the memory issues. With COE, you can compile and deploy an existing application into limited production to find memory safety issues. You can run the checked build for days to fully exercise the code, although the app will run slower due to the ASAN instrumentation.
+When your app finishes, you get a summary of the memory issues. With COE, you can compile and deploy an existing application into limited production to find memory safety issues. You can run the checked build for days to fully exercise the code, although the app will run slower due to the ASAN instrumentation.
 
 You can use this feature to create a new shipping gate. That is, if all your existing tests pass, but COE reports a memory safety error or a leak, don’t ship the new code or integrate it into a parent branch.
 
-It's important to be aware that you shouldn't deploy a build with COE enabled into production. COE is intended to be used in testing and development environments only. You shouldn't use an ASAN enabled build in production because of the performance impact of the instrumentation that ASAN adds to detect memory safety errors, the risk of exposing the internal implementation if errors are reported, and because the implementation of the library functions that ASAN substitutes for memory allocation, freeing, etc. should not be used in production to avoid increasing the surface area of possible security exploits.
+It's important not to deploy a build with COE enabled into production. COE is intended to be used in testing and development environments only. You shouldn't use an ASAN enabled build in production. That's because of the performance impact of the instrumentation added to detect memory errors, the risk of exposing the internal implementation if errors are reported, and because the implementation of the library functions that ASAN substitutes for memory allocation, freeing, etc. should not be used in production to avoid increasing the surface area of possible security exploits.
 
 In the following examples, you create checked builds and set an environment variable to output the address sanitizer information to `stdout` to see the memory safety errors that ASAN reports.
 
@@ -32,9 +32,9 @@ To complete this walkthrough, you need Visual Studio 2022 17.6 or later with the
 
 ## Double free example
 
-Create a checked build with ASAN enabled to test what happens when memory is double freed. Double freeing memory is a common error. ASAN detects this error and reports it. In this example, the program continues to run after the error is detected, and a summary of the error is output to `stdout` when the program exits:
+In this example, you create a checked build with ASAN enabled to test what happens when memory is double freed. ASAN detects this error and reports it. In this example, the program continues to run after the error is detected, which leads to a second error--using memory that's been freed. A summary of the errors is output to `stdout` when the program exits:
 
-1. Open a developer command prompt: open the **Start** menu, type *Developer*, and select the latest command prompt, such as **Developer Command Prompt for VS 2022** from the list of matches.
+1. Open a developer command prompt: open the **Start** menu, type *Developer*, and select the latest command prompt such as **Developer Command Prompt for VS 2022** from the list of matches.
 1. Create a directory on your machine to run this example. For example, `%USERPROFILE%\Desktop\COE`.
 1. In that directory, create a source file, for example, `doublefree.cpp`, and paste the following code:
 
@@ -53,7 +53,7 @@ int main(int argc, const char *argv[])
     int *pointer = static_cast<int *>(malloc(4));
     BadFunction(pointer);
 
-    // Normally we'd crash before this, but with COE we can see heap-use-after-free
+    // Normally we'd crash before this, but with COE we can see heap-use-after-free error as well
     printf("\n\n******* Pointer value: %d\n", *pointer);
 
     return 1;
@@ -69,7 +69,7 @@ Create a checked build of the preceding code with COE turned on:
     `set ASAN_OPTIONS=continue_on_error=1`
 1. Run the test code with: `doublefree.exe`
 
-The output shows that there was a double free error and the call stack where it happened. The report starts out like this with a calls stack that shows the error happened in `BadFunction`:
+The output shows that there was a double free error and the call stack where it happened. The report starts out with a call stack that shows the error happened in `BadFunction`:
 
 ```cmd
 ==22976==ERROR: AddressSanitizer: attempting double-free on 0x01e03550 in thread T0:
@@ -81,7 +81,7 @@ The output shows that there was a double free error and the call stack where it 
     #5  RtlInitializeExceptionChain    Windows
 ```
 
-Next, there's information about the freed memory and a call stack for where it was allocated:
+Next, there's information about the freed memory and a call stack for where the memory was allocated:
 
 ```cmd
 0x01e03550 is located 0 bytes inside of 4-byte region [0x01e03550,0x01e03554)
@@ -101,7 +101,7 @@ previously allocated by thread T0 here:
     #4  RtlInitializeExceptionChain    Windows
 ```
 
-Then there's information about the heap-use-after-free error. That refers to using `*pointer` in the `printf()` call because the memory `pointer` refers to was freed earlier. The call stack where the error occurs is listed, as is the call stack where this memory was allocated and freed:
+Then there's information about the heap-use-after-free error. This refers to using `*pointer` in the `printf()` call because the memory `pointer` refers to was freed earlier. The call stack where the error occurs is listed, as are the call stacks where this memory was allocated and freed:
 
 ```cmd
 ==35680==ERROR: AddressSanitizer: heap-use-after-free on address 0x02a03550 at pc 0x00e91097 bp 0x012ffc64 sp 0x012ffc58READ of size 4 at 0x02a03550 thread T0
@@ -135,7 +135,7 @@ Following the shadow byte information, you'll see the output from the program, w
 ******* Pointer value: xxx
 ```
 
-Then there's a summary of the source files where the memory error happened. It's sorted in order of the unique call stacks for the memory errors in that file. A unique call stack is determined by the type of error and the call stack where the error occurred.
+Then there's a summary of the source files where the memory error happened. It's sorted by the unique call stacks for the memory errors in that file. A unique call stack is determined by the type of error and the call stack where the error occurred.
 
 This sorting prioritizes memory safety issues that may be the most concerning. For example, five unique call stacks leading to different memory safety errors in the same file is potentially more worrisome than one error that hits many times. The summary looks like this:
 
@@ -170,9 +170,10 @@ File: C:\Users\xxx\Desktop\COE\doublefree.cpp
 
 ## Out of bounds memory access example
 
-For the next example, create a checked build with ASAN enabled to test what happens when an app access memory that is out-of-bounds:
+In this example, you create a checked build with ASAN enabled to test what happens when an app access memory that is out-of-bounds. ASAN detects this error and reports a summary of the errors to `stdout` when the program exits:
 
-1. Using the developer command prompt you opened for the previous example, create a directory on your machine to run this example such as `%USERPROFILE%\Desktop\COE`.
+1. Open a developer command prompt: open the **Start** menu, type *Developer*, and select the latest command prompt such as **Developer Command Prompt for VS 2022** from the list of matches.
+1. Create a directory on your machine to run this example. For example, `%USERPROFILE%\Desktop\COE`.
 1. In that directory, create a source file, for example, `coe.cpp`, and paste the following code:
 
 ```cpp
@@ -208,7 +209,7 @@ Errors are only observable if the page following the allocation is unmapped, or 
 
 Create a checked build of the preceding code with COE turned on:
 
-1. Compile the code with `cl -fsanitize=address -Zi coe.cpp`. The `-fsanitize=address` switch turns on COE, and `-Zi` creates a separate PDB file that address sanitizer uses to display memory error location information.
+1. Compile the code with `cl -fsanitize=address -Zi coe.cpp`. The `-fsanitize=address` switch turns on ASAN, and `-Zi` creates a separate PDB file that address sanitizer uses to display memory error location information.
 1. To send ASAN output to `stdout`, set the `ASAN_OPTIONS` environment variable: `set ASAN_OPTIONS=continue_on_error=1`
 1. Run the test code with: `coe.exe`
 
@@ -226,7 +227,7 @@ READ of size 1 at 0x0047b08a thread T0
 
 Next, there's information about the shadow bytes in the vicinity of the buffer overflow. For more information about shadow bytes, see [AddressSanitizer shadow bytes](asan-shadow-bytes.md).
 
-Following the shadow byte report, there's a summary of the source files where the memory errors happened. It's sorted in order of the unique call stacks for the memory errors in that file. A unique call stack is determined by the type of error and the call stack where the error occurred.
+Following the shadow byte report, there's a summary of the source files where the memory errors happened. It's sorted by the unique call stacks for the memory errors in that file. A unique call stack is determined by the type of error and the call stack where the error occurred.
 
 This sorting prioritizes memory safety issues that may be the most concerning. For example, five unique call stacks leading to different memory safety errors in the same file is potentially more worrisome than one error that hits many times.
 
@@ -238,7 +239,7 @@ The summary looks like this:
 File: C:\Users\xxx\Desktop\COE\coe.cpp Unique call stacks: 2
 ```
 
-Finally, the report contains a summary of where the memory errors occurred. Continue On Error reports two distinct errors that occur on the same source line. The first error reads memory at a global address in the `.data` section, and the other writes to memory allocated from the heap. 
+Finally, the report contains a summary of where the memory errors occurred. Continue On Error reports two distinct errors that occur on the same source line. The first error reads memory at a global address in the `.data` section, and the other writes to memory allocated from the heap.
 
 The report looks like this:
 
@@ -264,7 +265,7 @@ COE tries to automatically return control back to the application after reportin
 
 ## Select where to send ASAN output
 
-There are different options for where to send ASAN output. They are:
+Use the `ASAN_OPTIONS` environment variable to determine where to send ASAN output as follows:
 
 - Output to stdout: `set ASAN_OPTIONS=continue_on_error=1`
 - Output to stderr: `set ASAN_OPTIONS=continue_on_error=2`
@@ -272,7 +273,7 @@ There are different options for where to send ASAN output. They are:
 
 ## Handling undefined behavior
 
-The ASAN runtime doesn't mimic all of the undefined behaviors of the C and C++ allocation/deallocation functions. The following example demonstrates where behavior differs for **_alloca**:
+The ASAN runtime doesn't mimic all of the undefined behaviors of the C and C++ allocation/deallocation functions. The following example demonstrates how the ASAN version **_alloca** differs from the C runtime version:
 
 ```cpp
 #include <cstdio>
@@ -294,7 +295,7 @@ int foo_redundant(unsigned long arg_var)
     {
         if ((arg_var+3) > arg_var)
         {
-            // Call to alloca using parameter from main
+            // Call to _alloca using parameter from main
             a = (char *) _alloca(arg_var);
             memset(a, 0, 10);
         }
