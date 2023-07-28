@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["connection maps"]
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
 ---
+
 # Connection Maps
 
 OLE controls are able to expose interfaces to other applications. These interfaces only allow access from a container into that control. If an OLE control wants to access external interfaces of other OLE objects, a connection point must be established. This connection point allows a control outgoing access to external dispatch maps, such as event maps or notification functions.
@@ -207,10 +208,18 @@ A pointer to the object that implements the interface.
 *iid*<br/>
 The interface ID of the connection.
 
-*bRefCount*<br/>
-TRUE indicates that creating the connection should cause the reference count of *pUnkSink* to be incremented. FALSE indicates that the reference count should not be incremented.
+*bRefCount*
 
-*pdwCookie*<br/>
+For out-of-process connections, this parameter must be TRUE, and indicates that creating the connection should cause the reference count of *pUnkSink* to be incremented.
+
+For in-process connections, TRUE indicates that creating the connection should cause the reference count of *pUnkSink* to be incremented. FALSE indicates that the reference count should not be incremented.
+
+**Warning**: In general, it cannot be predicted which connections are in-process and which connections are out-of-process, so it is recommended to always set this parameter to TRUE.
+
+*pdwCookie.* 
+
+This is a deprecated parameter that must now be set to TRUE<br/>
+
 A pointer to a DWORD where a connection identifier is returned. This value should be passed as the *dwCookie* parameter to `AfxConnectionUnadvise` when disconnecting the connection.
 
 ### Return Value
@@ -250,9 +259,15 @@ A pointer to the object that implements the interface.
 The interface ID of the connection point interface.
 
 *bRefCount*<br/>
-TRUE indicates that disconnecting the connection should cause the reference count of *pUnkSink* to be decremented. FALSE indicates that the reference count should not be decremented.
+
+For out-of-process connections, this parameter must be TRUE, and indicates that creating the connection should cause the reference count of *pUnkSink* to be decremented.
+
+For in-process connections, TRUE indicates that creating the connection should cause the reference count of *pUnkSink* to be decremented. FALSE indicates that the reference count should not be decremented.
+
+**Warning**: In general, it cannot be predicted which connections are in-process and which connections are out-of-process, so it is recommended to always set this parameter to TRUE.
 
 *dwCookie*<br/>
+
 The connection identifier returned by `AfxConnectionAdvise`.
 
 ### Return Value
@@ -270,3 +285,4 @@ Nonzero if a connection was disconnected; otherwise 0.
 ## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+
