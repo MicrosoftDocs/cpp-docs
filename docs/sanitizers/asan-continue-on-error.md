@@ -64,7 +64,7 @@ In the preceding code, `pointer` is freed twice. This is a contrived example, bu
 
 Create a checked build of the preceding code with COE turned on:
 
-1. Compile the code using `cl -fsanitize=address -Zi doublefree.cpp`. The `-fsanitize=address` switch turns on COE, and `-Zi` creates a separate PDB file that address sanitizer uses to display memory error location information.
+1. Compile the code using `cl -fsanitize=address -Zi doublefree.cpp`. The `-fsanitize=address` switch turns on ASAN, and `-Zi` creates a separate PDB file that address sanitizer uses to display memory error location information.
 1. To send ASAN output to `stdout`, set the `ASAN_OPTIONS` environment variable:
     `set ASAN_OPTIONS=continue_on_error=1`
 1. Run the test code with: `doublefree.exe`
@@ -81,7 +81,7 @@ The output shows that there was a double free error and the call stack where it 
     #5  RtlInitializeExceptionChain    Windows
 ```
 
-Next, there's information about the freed memory and a callstack for where it was allocated:
+Next, there's information about the freed memory and a call stack for where it was allocated:
 
 ```cmd
 0x01e03550 is located 0 bytes inside of 4-byte region [0x01e03550,0x01e03554)
@@ -99,6 +99,32 @@ previously allocated by thread T0 here:
     #2  __scrt_common_main_seh         D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl(288)
     #3  BaseThreadInitThunk            Windows
     #4  RtlInitializeExceptionChain    Windows
+```
+
+Then there's information about the heap-use-after-free error. That refers to using `*pointer` in the `printf()` call because the memory `pointer` refers to was freed earlier. The call stack where the error occurs is listed, as is the call stack where this memory was allocated and freed:
+
+```cmd
+==35680==ERROR: AddressSanitizer: heap-use-after-free on address 0x02a03550 at pc 0x00e91097 bp 0x012ffc64 sp 0x012ffc58READ of size 4 at 0x02a03550 thread T0
+         #0  main                           C:\Users\xxx\Desktop\Projects\ASAN\doublefree.cpp(18)
+         #1  __scrt_common_main_seh         D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl(288)
+         #2  BaseThreadInitThunk            Windows
+         #3  RtlInitializeExceptionChain    Windows
+
+0x02a03550 is located 0 bytes inside of 4-byte region [0x02a03550,0x02a03554)
+freed by thread T0 here:
+         #0  free                           D:\a\_work\1\s\src\vctools\asan\llvm\compiler-rt\lib\asan\asan_malloc_win_thunk.cpp(69)
+         #1  BadFunction                    C:\Users\xxx\Desktop\Projects\ASAN\doublefree.cpp(7)
+         #2  main                           C:\Users\xxx\Desktop\Projects\ASAN\doublefree.cpp(14)
+         #3  __scrt_common_main_seh         D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl(288)
+         #4  BaseThreadInitThunk            Windows
+         #5  RtlInitializeExceptionChain    Windows
+
+previously allocated by thread T0 here:
+         #0  malloc                         D:\a\_work\1\s\src\vctools\asan\llvm\compiler-rt\lib\asan\asan_malloc_win_thunk.cpp(85)
+         #1  main                           C:\Users\xxx\Desktop\Projects\ASAN\doublefree.cpp(13)
+         #2  __scrt_common_main_seh         D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl(288)
+         #3  BaseThreadInitThunk            Windows
+         #4  RtlInitializeExceptionChain    Windows
 ```
 
 Next, there's information about the shadow bytes in the vicinity of the buffer overflow. For more information about shadow bytes, see [AddressSanitizer shadow bytes](asan-shadow-bytes.md).
@@ -120,10 +146,10 @@ File: D:\a\_work\1\s\src\vctools\asan\llvm\compiler-rt\lib\asan\asan_malloc_win_
 File: C:\Users\xxx\Desktop\COE\doublefree.cpp Unique call stacks: 1
 ``````
 
-Finally, the report contains a summary of where the memory error occurred. It looks like this:
+Finally, the report contains a summary of where the memory errors occurred. It looks like this:
 
 ```cmd
-=== Source Code Details: Unique errors caught at instruction offset fron source line number, in functions, in the same file. ===
+=== Source Code Details: Unique errors caught at instruction offset from source line number, in functions, in the same file. ===
 
 File: D:\a\_work\1\s\src\vctools\asan\llvm\compiler-rt\lib\asan\asan_malloc_win_thunk.cpp
         Func: free()
