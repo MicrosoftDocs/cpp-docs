@@ -1,10 +1,9 @@
 ---
 description: "Learn more about: Compiler Error C2039"
 title: "Compiler Error C2039"
-ms.date: "11/04/2016"
+ms.date: "8/1/2023"
 f1_keywords: ["C2039"]
 helpviewer_keywords: ["C2039"]
-ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
 ---
 # Compiler Error C2039
 
@@ -57,9 +56,9 @@ int S::get_Count() { return 0; }   // C2039
 int S::Count::get() { return 0; }   // OK
 ```
 
-C2039 can also occur if you attempt to access a default indexer incorrectly. The following sample defines a component authored in C#.
+C2039 can also occur if you attempt to access a default indexer incorrectly. To demonstrate, the following code defines a component authored in C# that will be accessed by the C++/CLI code that follows:
 
-```
+```c#
 // C2039_d.cs
 // compile with: /target:library
 // a C# program
@@ -72,7 +71,7 @@ public class B {
 };
 ```
 
-The following sample generates C2039.
+The following sample generates C2039 when it uses the previously defined C# component's default indexer incorrectly from C++/CLI:
 
 ```cpp
 // C2039_e.cpp
