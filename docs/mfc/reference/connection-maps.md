@@ -210,7 +210,7 @@ The interface ID of the connection.
 *`bRefCount`*\
 For out-of-process connections, this parameter must be `TRUE`, and indicates that creating the connection should cause the reference count of *`pUnkSink`* to be incremented.
 
-For in-process connections, `TRUE` indicates that creating the connection should cause the reference count of *`pUnkSink`* to be incremented. `FALSE` indicates that the reference count should not be incremented.
+For in-process connections, `TRUE` indicates that creating the connection should cause the reference count of *`pUnkSink`* to be incremented. `FALSE` indicates that the reference count shouldn't be incremented.
 
 **Warning**: In general, it can't be predicted which connections are in-process and which connections are out-of-process, so it is recommended to always set this parameter to `TRUE`.
 
@@ -231,7 +231,7 @@ Nonzero if a connection was established; otherwise 0.
 
 ## <a name="AfxConnectionUnadvise"></a> `AfxConnectionUnadvise`
 
-Call this function to disconnect a connection between a source, specified by *pUnkSrc*, and a sink, specified by *`pUnkSink`*.
+Call this function to disconnect a connection between a source, specified by *`pUnkSrc`*, and a sink, specified by *`pUnkSink`*.
 
 ```cpp
 BOOL AFXAPI AfxConnectionUnadvise(
@@ -256,9 +256,9 @@ The interface ID of the connection point interface.
 *`bRefCount`*\
 For out-of-process connections, this parameter must be `TRUE`, and indicates that creating the connection should cause the reference count of *`pUnkSink`* to be decremented.
 
-For in-process connections, `TRUE` indicates that creating the connection should cause the reference count of *`pUnkSink`* to be decremented. `FALSE` indicates that the reference count should not be decremented.
+For in-process connections, `TRUE` indicates that creating the connection should cause the reference count of *`pUnkSink`* to be decremented. `FALSE` indicates that the reference count shouldn't be decremented.
 
-**Warning**: In general, it cannot be predicted which connections are in-process and which connections are out-of-process, so it is recommended to always set this parameter to `TRUE`.
+**Warning**: In general, it can't be predicted which connections are in-process and which connections are out-of-process, so it is recommended to always set this parameter to `TRUE`.
 
 *`dwCookie`*\
 The connection identifier returned by ``AfxConnectionAdvise``.
@@ -273,7 +273,7 @@ Nonzero if a connection was disconnected; otherwise 0.
 
 ### Requirements
 
-**Header:** afxctl.h
+**Header:** `afxctl.h`
 
 ## See also
 
