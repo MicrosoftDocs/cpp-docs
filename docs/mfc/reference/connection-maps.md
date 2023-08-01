@@ -5,13 +5,14 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["connection maps"]
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
 ---
+
 # Connection Maps
 
 OLE controls are able to expose interfaces to other applications. These interfaces only allow access from a container into that control. If an OLE control wants to access external interfaces of other OLE objects, a connection point must be established. This connection point allows a control outgoing access to external dispatch maps, such as event maps or notification functions.
 
 The Microsoft Foundation Class Library offers a programming model that supports connection points. In this model, "connection maps" are used to designate interfaces or connection points for the OLE control. Connection maps contain one macro for each connection point. For more information on connection maps, see the [CConnectionPoint](../../mfc/reference/cconnectionpoint-class.md) class.
 
-Typically, a control will support just two connection points: one for events and one for property notifications. These are implemented by the `COleControl` base class and require no additional work by the control writer. Any additional connection points you want to implement in your class must be added manually. To support connection maps and points, MFC provides the following macros:
+Typically, a control supports just two connection points: one for events and one for property notifications. These are implemented by the `COleControl` base class and require no extra work by the control writer. Any other connection points you want to implement in your class must be added manually. To support connection maps and points, MFC provides the following macros:
 
 ### Connection Map Declaration and Demarcation
 
@@ -52,7 +53,7 @@ Specifies the name of the local class that implements the connection point.
 
 ### Remarks
 
-In the declaration (.h) file that defines the member functions for your class, start the connection point with the BEGIN_CONNECTION_PART macro, then add the CONNECTION_IID macro and any other member functions you wish to implement, and complete the connection point map with the END_CONNECTION_PART macro.
+In the declaration (.h) file that defines the member functions for your class, start the connection point with the BEGIN_CONNECTION_PART macro. Then add the CONNECTION_IID macro and any other member functions you wish to implement. Finally, complete the connection point map with the END_CONNECTION_PART macro.
 
 ### Requirements
 
@@ -90,7 +91,7 @@ The interface ID of the interface called by the connection point.
 
 ### Remarks
 
-The *iid* argument is an interface ID used to identify the interface that the connection point will call on its connected sinks. For example:
+The *iid* argument is an interface ID used to identify the interface that the connection point calls on its connected sinks. For example:
 
 [!code-cpp[NVC_MFCConnectionPoints#10](../../mfc/codesnippet/cpp/connection-maps_1.h)]
 
@@ -177,7 +178,7 @@ For example:
 
 [!code-cpp[NVC_MFCConnectionPoints#2](../../mfc/codesnippet/cpp/connection-maps_2.cpp)]
 
-implements a connection map, with a connection point, that calls the `IID_ISinkInterface` interface .
+implements a connection map, with a connection point, that calls the `IID_ISinkInterface` interface.
 
 ### Requirements
 
@@ -208,9 +209,13 @@ A pointer to the object that implements the interface.
 The interface ID of the connection.
 
 *bRefCount*<br/>
-TRUE indicates that creating the connection should cause the reference count of *pUnkSink* to be incremented. FALSE indicates that the reference count should not be incremented.
+For out-of-process connections, this parameter must be TRUE, and indicates that creating the connection should cause the reference count of *pUnkSink* to be incremented.
 
-*pdwCookie*<br/>
+For in-process connections, TRUE indicates that creating the connection should cause the reference count of *pUnkSink* to be incremented. FALSE indicates that the reference count should not be incremented.
+
+**Warning**: In general, it can't be predicted which connections are in-process and which connections are out-of-process, so it is recommended to always set this parameter to TRUE.
+
+*pdwCookie.*<br/>
 A pointer to a DWORD where a connection identifier is returned. This value should be passed as the *dwCookie* parameter to `AfxConnectionUnadvise` when disconnecting the connection.
 
 ### Return Value
@@ -250,7 +255,11 @@ A pointer to the object that implements the interface.
 The interface ID of the connection point interface.
 
 *bRefCount*<br/>
-TRUE indicates that disconnecting the connection should cause the reference count of *pUnkSink* to be decremented. FALSE indicates that the reference count should not be decremented.
+For out-of-process connections, this parameter must be TRUE, and indicates that creating the connection should cause the reference count of *pUnkSink* to be decremented.
+
+For in-process connections, TRUE indicates that creating the connection should cause the reference count of *pUnkSink* to be decremented. FALSE indicates that the reference count should not be decremented.
+
+**Warning**: In general, it cannot be predicted which connections are in-process and which connections are out-of-process, so it is recommended to always set this parameter to TRUE.
 
 *dwCookie*<br/>
 The connection identifier returned by `AfxConnectionAdvise`.
@@ -270,3 +279,4 @@ Nonzero if a connection was disconnected; otherwise 0.
 ## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+
