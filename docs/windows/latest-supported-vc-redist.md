@@ -33,7 +33,11 @@ Unlike older versions of Visual Studio, which have infrequent redist updates, th
 | X86 | [https://aka.ms/vs/17/release/vc_redist.x86.exe](https://aka.ms/vs/17/release/vc_redist.x86.exe) | Permalink for latest supported x86 version |
 | X64 | [https://aka.ms/vs/17/release/vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe) | Permalink for latest supported x64 version. The X64 Redistributable package contains both ARM64 and X64 binaries. This package makes it easy to install required Visual C++ ARM64 binaries when the X64 Redistributable is installed on an ARM64 device. |
 
-Download other languages and versions, including versions for long term servicing release channels (LTSC), from [my.visualstudio.com](https://my.visualstudio.com/).
+Download other versions, including for long term servicing release channels (LTSC), from [my.visualstudio.com](https://my.visualstudio.com/).
+
+> [!NOTE]
+> The Visual C++ Redistributable for Visual Studio 2015-2022 does not have separate packages for each language. It contains EULAs for all supported languages.
+
 
 > [!NOTE]
 > Some of the downloads that are mentioned in this article are currently available on [my.visualstudio.com](https://my.visualstudio.com/). Make sure to log in by using a Visual Studio Subscription account so that you can access the download links. If you're asked for credentials, use your existing Visual Studio subscription account. Or, create a free account by selecting the link in **No account? Create one!**
@@ -61,7 +65,10 @@ You can download other versions and languages from [Update for Visual C++ 2013 R
 - [Multibyte MFC Library for Visual Studio 2013](https://my.visualstudio.com/Downloads?pid=1430). This MFC add-on for Visual Studio 2013 contains the multibyte character set (MBCS) version of the Microsoft Foundation Class (MFC) Library.
 - [Visual C++ 2013 Runtime for Sideloaded Windows 8.1 apps](https://download.microsoft.com/download/5/f/0/5f0f8404-9329-44a9-8176-ed6f7f746f25/vclibs_redist_packages.zip). For more information, see [C++ Runtime for Sideloaded Windows 8.1 apps](https://devblogs.microsoft.com/cppblog/c-runtime-for-sideloaded-windows-8-1-apps/) on the C++ Team Blog.
 
-## Visual Studio 2012 (VC++ 11.0) Update 4
+## Visual Studio 2012 (VC++ 11.0) Update 4  (no longer supported)
+
+> [!NOTE]
+> Visual Studio 2012 [reached end of extended support on Jan 10, 2023](/lifecycle/products/visual-studio-2012)
 
 These links download the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2012 Update 4. You can download other versions and languages from [Microsoft Visual C++ Redistributable Packages for Visual Studio 2012 Update 4](https://www.microsoft.com/download/details.aspx?id=30679) or from [my.visualstudio.com](https://my.visualstudio.com/Downloads?pid=1452).
 
@@ -104,3 +111,4 @@ Download Redistributable files for other languages and architectures from:
 > Visual Studio 2005 [reached end of extended support on April 12, 2016](/lifecycle/products/microsoft-visual-studio-2005)
 
 - Redistributable files for X86, X64, and IA64 architectures are available from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update](https://www.microsoft.com/download/details.aspx?id=26347).
+
