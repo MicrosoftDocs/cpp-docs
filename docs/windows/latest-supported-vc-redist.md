@@ -37,7 +37,7 @@ Download other versions, including long term servicing release channel (LTSC) ve
 
 ### Notes
 
-- The Visual C++ Redistributable for Visual Studio 2015-2022 does not have separate packages for different languages. It contains EULAs for all supported languages.
+- The Visual C++ Redistributable for Visual Studio 2015-2022 doesn't have separate packages for different languages. It contains EULAs for all supported languages.
 
 -  Some of the downloads that are mentioned in this article are currently available on [my.visualstudio.com](https://my.visualstudio.com/). Log in using a Visual Studio Subscription account so that you can access the download links. If you're asked for credentials, use your existing Visual Studio subscription account. Or, create a free account by choosing the **No account? Create one!** link.
 
