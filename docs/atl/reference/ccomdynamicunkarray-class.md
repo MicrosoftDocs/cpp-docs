@@ -211,6 +211,8 @@ Returns the `IUnknown` pointer, or NULL if no matching cookie is found.
 
 Call this method to remove an `IUnknown` pointer from the array.
 
+Note: All other elements are unchanged and retain their index and cookie.
+
 ```
 BOOL Remove(DWORD dwCookie);
 ```
@@ -228,4 +230,5 @@ Returns TRUE if the pointer is removed; otherwise FALSE.
 
 [CComUnkArray Class](../../atl/reference/ccomunkarray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)
+
 
