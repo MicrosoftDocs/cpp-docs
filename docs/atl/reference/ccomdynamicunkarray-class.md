@@ -6,7 +6,6 @@ f1_keywords: ["CComDynamicUnkArray", "ATLCOM/ATL::CComDynamicUnkArray", "ATLCOM/
 helpviewer_keywords: ["connection points [C++], managing", "CComDynamicUnkArray class"]
 ms.assetid: 202470d7-9a1b-498f-b96d-659d681acd65
 ---
-
 # CComDynamicUnkArray Class
 
 This class stores an array of `IUnknown` pointers.
@@ -129,7 +128,7 @@ Frees resources allocated by the class constructor.
 
 ## <a name="end"></a> CComDynamicUnkArray::end
 
-Returns a pointer to one-past the last element in the array's allocated buffer. 
+Returns a pointer to one-past the last element in the array's allocated buffer.
 
 Note: this means that the last-inserted pointer is not guaranteed to be found at `end()-1`, since the array's capacity might not have yet been reached.
 
@@ -234,5 +233,3 @@ Returns TRUE if the pointer is removed; otherwise FALSE.
 
 [CComUnkArray Class](../../atl/reference/ccomunkarray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)
-
-
