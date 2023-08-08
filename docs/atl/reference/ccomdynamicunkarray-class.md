@@ -6,7 +6,6 @@ f1_keywords: ["CComDynamicUnkArray", "ATLCOM/ATL::CComDynamicUnkArray", "ATLCOM/
 helpviewer_keywords: ["connection points [C++], managing", "CComDynamicUnkArray class"]
 ms.assetid: 202470d7-9a1b-498f-b96d-659d681acd65
 ---
-
 # CComDynamicUnkArray Class
 
 This class stores an array of `IUnknown` pointers.
@@ -188,7 +187,7 @@ int GetSize() const;
 
 ### Return Value
 
-The number of elements for which the array has currently allocated space. `GetSize() == end() - begin()`. 
+The number of elements for which the array has currently allocated space. `GetSize() == end() - begin()`.
 
 ##  CComDynamicUnkArray::GetUnknown
 
@@ -230,5 +229,3 @@ Returns TRUE if the pointer is removed; otherwise FALSE.
 
 [CComUnkArray Class](../../atl/reference/ccomunkarray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)
-
-
