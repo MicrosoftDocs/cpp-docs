@@ -74,6 +74,7 @@ Returns the cookie associated with the newly added pointer. Use this cookie to r
 ### Remarks
 
 The position where this item is inserted won't necessarily be directly after the last-inserted item if `Remove()` was previously called on this array. Use the returned cookie to reliably access the inserted pointer.
+The array's size might be increased to accomodate for more items. The new size can be obtained via `GetSize()`.
 
 ## <a name="begin"></a> CComDynamicUnkArray::begin
 
