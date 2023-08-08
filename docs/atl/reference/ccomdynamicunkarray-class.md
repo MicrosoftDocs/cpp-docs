@@ -35,7 +35,7 @@ class CComDynamicUnkArray
 |[CComDynamicUnkArray::end](#end)|Returns a pointer to one past the last `IUnknown` pointer in the collection.|
 |[CComDynamicUnkArray::GetAt](#getat)|Retrieves the element at the specified index.|
 |[CComDynamicUnkArray::GetCookie](#getcookie)|Call this method to get the cookie associated with a given `IUnknown` pointer.|
-|[CComDynamicUnkArray::GetSize](#getsize)|Returns the allocated capacity of the array.|
+|[CComDynamicUnkArray::GetSize](#getsize)|Returns the number of elements the array can store.|
 |[CComDynamicUnkArray::GetUnknown](#getunknown)|Call this method to get the `IUnknown` pointer associated with a given cookie.|
 |[CComDynamicUnkArray::Remove](#remove)|Call this method to remove an `IUnknown` pointer from the array.|
 
@@ -73,7 +73,7 @@ Returns the cookie associated with the newly added pointer. Use this cookie to r
 
 ### Remarks
 
-The position this item is inserted will not necessarily be directly after the last-inserted item, if `Remove()` was previously called on this array. Use the returned cookie to reliably access the inserted pointer.
+The position where this item is inserted won't necessarily be directly after the last-inserted item if `Remove()` was previously called on this array. Use the returned cookie to reliably access the inserted pointer.
 
 ## <a name="begin"></a> CComDynamicUnkArray::begin
 
@@ -96,7 +96,7 @@ Before using the `IUnknown` interface, you should check that it is not NULL.
 
 ## <a name="clear"></a> CComDynamicUnkArray::clear
 
-Empties the array, resetting the size to 0.
+Empties the array. Resets the size to 0.
 
 ```cpp
 void clear();
@@ -130,7 +130,7 @@ Frees resources allocated by the class constructor.
 
 Returns a pointer to one-past the last element in the array's allocated buffer.
 
-Note: this means that the last-inserted pointer is not guaranteed to be found at `end()-1`, since the array's capacity might not have yet been reached.
+Note: this means that the last-inserted pointer is not guaranteed to be at `end()-1` because the array may not be filled to capacity.
 
 ```
 IUnknown**
@@ -156,7 +156,7 @@ The index of the element to retrieve.
 
 ### Return Value
 
-A pointer to an [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface, if an element was previously added and exists at this index; NULL otherwise.
+A pointer to an [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface if an element was previously added and exists at this index; otherwise `NULL`.
 
 ## <a name="getcookie"></a> CComDynamicUnkArray::GetCookie
 
@@ -191,9 +191,9 @@ int GetSize() const;
 
 ### Return Value
 
-The number of elements for which the array has currently allocated space. `GetSize() == end() - begin()`.
+The number of elements the array can store. `GetSize() == end() - begin()`.
 
-##  CComDynamicUnkArray::GetUnknown
+##  <a name="getunknown"></a> CComDynamicUnkArray::GetUnknown
 
 Call this method to get the `IUnknown` pointer associated with a given cookie.
 
@@ -214,7 +214,7 @@ Returns the `IUnknown` pointer, or NULL if no matching cookie is found.
 
 Call this method to remove an `IUnknown` pointer from the array.
 
-Note: All other elements are unchanged and retain their index and cookie.
+All other elements are unchanged and retain their index and cookie.
 
 ```
 BOOL Remove(DWORD dwCookie);
