@@ -72,6 +72,10 @@ The `IUnknown` pointer to add to the array.
 
 Returns the cookie associated with the newly added pointer. Use this cookie to retrieve the pointer from the array with [CComDynamicUnkArray::GetAt](#getat).
 
+### Remarks
+
+The position this item is inserted will not necessarily be directly after the last-inserted item, if `Remove()` was previously called on this array. Use the returned cookie to reliably access the inserted pointer.
+
 ## <a name="begin"></a> CComDynamicUnkArray::begin
 
 Returns a pointer to the beginning of the collection of `IUnknown` interface pointers.
@@ -230,4 +234,5 @@ Returns TRUE if the pointer is removed; otherwise FALSE.
 
 [CComUnkArray Class](../../atl/reference/ccomunkarray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)
+
 
