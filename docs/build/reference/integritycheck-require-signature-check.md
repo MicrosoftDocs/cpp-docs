@@ -25,9 +25,7 @@ Microsoft has new signing guidance for DLL and executable files linked by using 
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. To build an image which requires digital signature verification to be loaded, add *`/INTEGRITYCHECK`* to the **Additional Options** command line.
-
-1. To disable the feature, remove the *`/INTEGRITYCHECK`* option.
+1. To build an image which requires digital signature verification to be loaded, add *`/INTEGRITYCHECK`* to the **Additional Options** command line. By default, **`/INTEGRITYCHECK`** is off.
 
 1. Choose **OK** to save your changes.
 
