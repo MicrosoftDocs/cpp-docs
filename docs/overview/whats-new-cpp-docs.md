@@ -118,7 +118,8 @@ This article lists major changes to the Microsoft C++ docs May 2023 through Augu
 **Updated articles**
 
 - [Use the C++ Core Guidelines checkers](../code-quality/using-the-cpp-core-guidelines-checkers.md) - No longer suggest turning off annotation processing for CppCoreChecks.
-- Clarified behavior for the following warnings:
+
+Clarified behavior for the following warnings:
 - [Warning C6011](../code-quality/c6011.md), [Warning C6200](../code-quality/c6200.md)
 - [Warning C26437](../code-quality/c26437.md), [Warning C26439](../code-quality/c26439.md)
 - [Warning C26441](../code-quality/c26441.md), [Warning C26444](../code-quality/c26444.md)
