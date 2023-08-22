@@ -74,7 +74,7 @@ This article lists major changes to the Microsoft C++ docs May 2023 through Augu
 - [Build and run a C++ console app project](../build/vscpp-step-2-build.md) - Updated steps to accommodate Visual Studio version differences regarding the location of the debug folder.
 - [`/ZW` (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md) - Added a note about an incompatibility
 - [Configure and build with CMake Presets in Visual Studio](../build/cmake-presets-vs.md) - Updated supported CMake and  *`CMakePresets.json`* versions
-- [`/Zc:lambda` (Enable updated lambda processor)](../build/reference/zc-lambda.md) - Added note that it is implied by `/permissive-`
+- [`/Zc:lambda` (Enable updated lambda processor)](../build/reference/zc-lambda.md) - Added note that `/permissive-` implies `/Zc:lambda`.
 - [C/C++ Property Pages](../build/reference/c-cpp-prop-page.md) - Added description for C language and building ISO standard library modules properties.
 - [Overview of ARM64 ABI conventions](../build/arm64-windows-abi-conventions.md) - Clarified terminology regarding register volatility.
 
@@ -82,9 +82,9 @@ This article lists major changes to the Microsoft C++ docs May 2023 through Augu
 
 **New articles**
 
-- [Visual Studio Tools for Unreal Engine overview](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-overview.md)
-- [Install Visual Studio Tools for Unreal Engine](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-install.md)
-- [Quickstart: Visual Studio Tools for Unreal Engine](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart.md)
+- [Visual Studio Tools for Unreal Engine overview](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-overview)
+- [Install Visual Studio Tools for Unreal Engine](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-install)
+- [Quickstart: Visual Studio Tools for Unreal Engine](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart)
 
 **Updated articles**
 
@@ -163,11 +163,11 @@ This article lists major changes to the Microsoft C++ docs May 2023 through Augu
 
 **Updated articles**
 
-- [Microsoft Visual C++ Redistributable latest supported downloads](../windows/latest-supported-vc-redist.md) - Noted that VS 2012 reached end of extended support and clarified that the Visual C++ Redistributable for Visual Studio 2015-2022 does not have separate packages for different languages.
+- [Microsoft Visual C++ Redistributable latest supported downloads](../windows/latest-supported-vc-redist.md) - Noted that VS 2012 reached end of extended support and clarified that the Visual C++ Redistributable for Visual Studio 2015-2022 doesn't have separate packages for different languages.
 
 ### Community contributors
 
-The following people contributed to the C++, C, and Assembler docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
+The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See our [contributor guide](https://learn.microsoft.com/contribute) if you'd like to learn how to contribute.
 
 - [moonlit-melody](https://github.com/moonlit-melody) - melody ![4 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-4-green)
 - [AlexGuteniev](https://github.com/AlexGuteniev) - Alex Guteniev ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
@@ -196,7 +196,7 @@ For what's new related to C++ in Visual Studio, see [What's new for C++ in Visua
 - [`setlocale`, `_wsetlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md) - Clarified behavior for invalid arguments.
 - [`_getch`, `_getwch`](../c-runtime-library/reference/getch-getwch.md) - Removed statement that the function can't read Ctrl+C.
 - [`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf`, `_swprintf_l`, `__swprintf_l`](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) - Documented `_swprintf` and how `_CRT_NON_CONFORMING_SWPRINTFS` maps calls to `swprintf` to `_swprintf`.
-- [`strtok`, `_strtok_l`, `wcstok`, `_wcstok_l`, `_mbstok`, `_mbstok_l`](../c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) - Noted the non-standard `wcstok()` and how to call it.
+- [`strtok`, `_strtok_l`, `wcstok`, `_wcstok_l`, `_mbstok`, `_mbstok_l`](../c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) - Noted the nonstandard `wcstok()` and how to call it.
 - [`wcstombs`, `_wcstombs_l`](../c-runtime-library/reference/wcstombs-wcstombs-l.md) - Added note about UTF-8 support.
 - [`fma`, `fmaf`, `fmal`](../c-runtime-library/reference/fma-fmaf-fmal.md) - Corrected the documentation for `fmaf`
 
@@ -265,6 +265,7 @@ For what's new related to C++ in Visual Studio, see [What's new for C++ in Visua
 
 **New articles**
 
+- [Walkthrough: Use Address Sanitizer Continue On Error to find memory safety issues](../cpp/sanitizers/asan-continue-on-error.md)
 - [Warning  C6030](../code-quality/c6030.md)
 - [Warning C6065](../code-quality/c6065.md)
 
@@ -306,7 +307,7 @@ For what's new related to C++ in Visual Studio, see [What's new for C++ in Visua
 
 ## Community contributors
 
-The following people contributed to the C++, C, and Assembler docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
+The following people contributed to the C++, C, and Assembler docs during this period. Thank you! The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See our [contributor guide](https://learn.microsoft.com/contribute) if you'd like to learn how to contribute.
 
 - [fsb4000](https://github.com/fsb4000) - Igor Zhukov ![3 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
 - [fjh1997](https://github.com/fjh1997) - FunnyBiu ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
