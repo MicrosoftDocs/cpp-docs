@@ -6,9 +6,9 @@ ms.custom: intro-whats-new
 monikerRange: '>=msvc-160'
 ---
 
-# Microsoft C++ docs: What's new for August 2023
+# Microsoft C++ docs: What's new for May 2023 to August 2023
 
-This article lists major changes to the Microsoft C++ docs May 2023 through August 2023. These changes correspond to Visual Studio version 17.7.
+This article lists major changes to the Microsoft C++ docs May 2023 through August 2023. These changes correspond approximately to Visual Studio version 17.7.
 
 - For what was new in the docs in previous months, see [What's new history](#whats-new-history).
 - For what's new related to C++ in Visual Studio, see [What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md).
@@ -39,10 +39,10 @@ This article lists major changes to the Microsoft C++ docs May 2023 through Augu
 **Updated articles**
 
 - [`_iob`](../c-runtime-library/iob.md) - Clarified value of `_IOB_ENTRIES` across VS versions.
-- [`_snprintf_s`, `_snprintf_s_l`, `_snwprintf_s`, `_snwprintf_s_l`](../c-runtime-library/reference/snprintf-s-snprintf-s-l-snwprintf-s-snwprintf-s-l.md) - Summarized behavior for various argument value combinations.
-- [`snprintf`, `_snprintf`, `_snprintf_l`, `_snwprintf`, `_snwprintf_l`](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) - Summarized behavior for various argument value combinations.
-- [`vsnprintf_s`, `_vsnprintf_s`, `_vsnprintf_s_l`, `_vsnwprintf_s`, `_vsnwprintf_s_l`](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md) - Summarized behavior for various argument value combinations.
-- [`vsnprintf`, `_vsnprintf`, `_vsnprintf_l`, `_vsnwprintf`, `_vsnwprintf_l`](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) - Summarized behavior for various argument value combinations.
+- [`_snprintf_s`, `_snprintf_s_l`, `_snwprintf_s`, `_snwprintf_s_l`](../c-runtime-library/reference/snprintf-s-snprintf-s-l-snwprintf-s-snwprintf-s-l.md) - Summarized behavior for argument value combinations.
+- [`snprintf`, `_snprintf`, `_snprintf_l`, `_snwprintf`, `_snwprintf_l`](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) - Summarized behavior for argument value combinations.
+- [`vsnprintf_s`, `_vsnprintf_s`, `_vsnprintf_s_l`, `_vsnwprintf_s`, `_vsnwprintf_s_l`](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md) - Summarized behavior for argument value combinations.
+- [`vsnprintf`, `_vsnprintf`, `_vsnprintf_l`, `_vsnwprintf`, `_vsnwprintf_l`](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) - Summarized behavior for argument value combinations.
 - [`to` functions](../c-runtime-library/to-functions.md) - Fixed code example.
 - [`strerror_s`, `_strerror_s`, `_wcserror_s`, `__wcserror_s`](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md) - Clarified behavior.
 - [`strerror`, `_strerror`, `_wcserror`, `__wcserror`](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md) - Clarified behavior.
@@ -119,9 +119,9 @@ This article lists major changes to the Microsoft C++ docs May 2023 through Augu
 
 - [Use the C++ Core Guidelines checkers](../code-quality/using-the-cpp-core-guidelines-checkers.md) - No longer suggest turning off annotation processing for CppCoreChecks.
 - Clarified behavior for the following warnings:
-- [Warning C6011](../code-quality/c6011.md), [Warning C6200](../code-quality/c6200.md) - Clarified behavior.
-- [Warning C26437](../code-quality/c26437.md), [Warning C26439](../code-quality/c26439.md) - Clarified behavior.
-- [Warning C26441](../code-quality/c26441.md), [Warning C26444](../code-quality/c26444.md) - Clarified behavior.
+- [Warning C6011](../code-quality/c6011.md), [Warning C6200](../code-quality/c6200.md)
+- [Warning C26437](../code-quality/c26437.md), [Warning C26439](../code-quality/c26439.md)
+- [Warning C26441](../code-quality/c26441.md), [Warning C26444](../code-quality/c26444.md)
 - [Warning C26449](../code-quality/c26449.md), [Warning C26450](../code-quality/c26450.md)
 - [Warning C26451](../code-quality/c26451.md), [Warning C26452](../code-quality/c26452.md)
 - [Warning C26453](../code-quality/c26453.md), [Warning C26454](../code-quality/c26454.md)
@@ -164,7 +164,7 @@ The following people contributed to the C++, C, and Assembler docs during this p
 
 ## What's new history
 
-This section lists major changes to the Microsoft C++ docs February 2023 through May 2023. These changes correspond to Visual Studio version 17.6.
+This section lists major changes to the Microsoft C++ docs February 2023 through May 2023. These changes correspond approximately to Visual Studio version 17.6.
 
 For what's new related to C++ in Visual Studio, see [What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md).
 
