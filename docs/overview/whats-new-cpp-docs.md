@@ -181,7 +181,7 @@ This section lists major changes to the Microsoft C++ docs February 2023 through
 
 For what's new related to C++ in Visual Studio, see [What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md).
 
-## C runtime library
+### C runtime library
 
 **Updated articles**
 
@@ -195,7 +195,7 @@ For what's new related to C++ in Visual Studio, see [What's new for C++ in Visua
 - [`wcstombs`, `_wcstombs_l`](../c-runtime-library/reference/wcstombs-wcstombs-l.md) - Added note about UTF-8 support.
 - [`fma`, `fmaf`, `fmal`](../c-runtime-library/reference/fma-fmaf-fmal.md) - Corrected the documentation for `fmaf`.
 
-## C/C++ compiler and tools errors and warnings
+### C/C++ compiler and tools errors and warnings
 
 **New articles**
 
@@ -208,9 +208,9 @@ For what's new related to C++ in Visual Studio, see [What's new for C++ in Visua
 - [Compiler Warnings by compiler version](../error-messages/compiler-warnings/compiler-warnings-by-compiler-version.md) - Updated with changes for VS 17.5.
 - [Compiler warnings C4800 through C5999](../error-messages/compiler-warnings/compiler-warnings-c4800-through-c4999.md) - Updated with changes for VS 17.5.
 
-## C/C++ compiler intrinsics and assembly language
+### C/C++ compiler intrinsics and assembly language
 
-## C/C++ in Visual Studio overview
+### C/C++ in Visual Studio overview
 
 **Updated articles**
 
@@ -218,14 +218,14 @@ For what's new related to C++ in Visual Studio, see [What's new for C++ in Visua
 - [Microsoft C/C++ language conformance by Visual Studio version](../overview/visual-cpp-language-conformance.md) - Update with changes for VS 17.5.
 - [What's new for C++ in Visual Studio 2022](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) - Update with changes for VS 17.5.
 
-## C/C++ preprocessor reference
+### C/C++ preprocessor reference
 
 **Updated articles**
 
 - [Predefined macros](../preprocessor/predefined-macros.md) - Update _MSC_VER values for 17.3, 17.4, and 17.5.
 - [Compiler warnings that are off by default](../preprocessor/compiler-warnings-that-are-off-by-default.md) - Update with changes for VS 17.5.
 
-## C/C++ projects and build systems
+### C/C++ projects and build systems
 
 **Updated articles**
 
@@ -237,26 +237,26 @@ For what's new related to C++ in Visual Studio, see [What's new for C++ in Visua
 - [ARM64 exception handling](../build/arm64-exception-handling.md) - In the compressed format, PAC is identified by CR=2, not 3.
 - [Reference: vcperf commands](../build-insights/reference/vcperf-commands.md) - Updated which commands require administrative privileges.
 
-## C++ in Visual Studio
+### C++ in Visual Studio
 
 **Updated articles**
 
 - [Transporting exceptions between threads](../cpp/transporting-exceptions-between-threads.md) - fix section about types of exception handling.
 - [Tutorial: Import the C++ standard library using modules from the command line](../cpp/tutorial-import-stl-named-module.md) - Updated wording and fixed problems with the path and suggested directory location.
 
-## C++ in Visual Studio tutorials
+### C++ in Visual Studio tutorials
 
 **Updated articles**
 
 - [Create a console calculator in C++](../get-started/tutorial-console-cpp.md) - updated screenshots and updated the result and exception error format.
 
-## C++ Standard Template Library (STL) reference
+### C++ Standard Template Library (STL) reference
 
 **Updated articles**
 
 - [`directory_iterator` class](../standard-library/directory-iterator-class.md) - remove experimental.
 
-## Code quality
+### Code quality
 
 **New articles**
 
@@ -275,26 +275,26 @@ For what's new related to C++ in Visual Studio, see [What's new for C++ in Visua
 - [Warning C6101](../code-quality/c6101.md) - Clarified text.
 - [Warning C6217](../code-quality/c6217.md) - Clarified text.
 
-## Linux with C++ in Visual Studio
+### Linux with C++ in Visual Studio
 
 **Updated articles**
 
 - [Connect to your target Linux system in Visual Studio](../linux/connect-to-your-remote-linux-computer.md) - Added note regarding `ssh-keygen`.
 
-## Overview of Windows programming in C++
+### Overview of Windows programming in C++
 
 **Updated articles**
 
 - [Microsoft Visual C++ Redistributable latest supported downloads](../windows/latest-supported-vc-redist.md) - explained why there aren't version numbers listed for VS 2015-2022.
 
-## Read and write code using C++ in Visual Studio
+### Read and write code using C++ in Visual Studio
 
 **Updated articles**
 
 - [Add a class from an ActiveX control](../ide/adding-a-class-from-an-activex-control-visual-cpp.md) - Clarified which project types the wizard applies to.
 - [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) - Updated for Visual Studio 17.5.
 
-## STL/CLR library reference
+### STL/CLR library reference
 
 **Updated articles**
 
