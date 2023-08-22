@@ -167,7 +167,7 @@ This article lists major changes to the Microsoft C++ docs May 2023 through Augu
 
 ### Community contributors
 
-The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See our [contributor guide](https://learn.microsoft.com/contribute) if you'd like to learn how to contribute.
+The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See our [contributor guide](/contribute) if you'd like to learn how to contribute.
 
 - [moonlit-melody](https://github.com/moonlit-melody) - melody ![4 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-4-green)
 - [AlexGuteniev](https://github.com/AlexGuteniev) - Alex Guteniev ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
@@ -265,7 +265,7 @@ For what's new related to C++ in Visual Studio, see [What's new for C++ in Visua
 
 **New articles**
 
-- [Walkthrough: Use Address Sanitizer Continue On Error to find memory safety issues](../cpp/sanitizers/asan-continue-on-error.md)
+- [Walkthrough: Use Address Sanitizer Continue On Error to find memory safety issues](../sanitizers/asan-continue-on-error.md)
 - [Warning  C6030](../code-quality/c6030.md)
 - [Warning C6065](../code-quality/c6065.md)
 
@@ -307,7 +307,7 @@ For what's new related to C++ in Visual Studio, see [What's new for C++ in Visua
 
 ## Community contributors
 
-The following people contributed to the C++, C, and Assembler docs during this period. Thank you! The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See our [contributor guide](https://learn.microsoft.com/contribute) if you'd like to learn how to contribute.
+The following people contributed to the C++, C, and Assembler docs during this period. Thank you! The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See our [contributor guide](/contribute) if you'd like to learn how to contribute.
 
 - [fsb4000](https://github.com/fsb4000) - Igor Zhukov ![3 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
 - [fjh1997](https://github.com/fjh1997) - FunnyBiu ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
