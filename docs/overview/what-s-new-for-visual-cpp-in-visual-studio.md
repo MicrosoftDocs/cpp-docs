@@ -14,17 +14,17 @@ For more information on what's new in all of Visual Studio, see [What's new in V
 
 ## What's new for C++ in Visual Studio version 17.7
 
-For a summary of new C++ features in Visual Studio 17.7, see [What’s New for C++ Developers in Visual Studio 2022 17.7](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-7/).
+For a summary of new C++ features in Visual Studio 17.7, see [What’s New for C++ Developers in Visual Studio 2022 17.7](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-7/). Briefly, some of the new features are: faster debugging sessions and faster project load times, step-by-step visualization of macro exspansions, one-click download for Windows Subsystem for Linux (WSL), improved support for Doxygen comments, C++ Build Insights for game development, and Unreal Engine project improvements such as much faster IntelliSense and syntax colorization, the ability to find all Unreal Engine Blueprint references, and more.
 
 For a summary of new C++ features that are specific to game development, see [Unleashing the Power of Visual Studio 2022 for C++ Game Development](https://devblogs.microsoft.com/visualstudio/unleashing-the-power-of-visual-studio-2022-for-c-game-development/#:~:text=Unleashing%20the%20Power%20of%20Visual%20Studio%202022%20for,6%20Optimizing%20Build%20Times%20in%20Visual%20Studio%20)
 
-For a summary of new features in Visual Studio 17.7, see[Visual Studio 2022 version 17.7 Release Notes](/visualstudio/releases/2022/release-notes).
+For a summary of new features in the Visual Studio 17.7 IDE, see[Visual Studio 2022 version 17.7 Release Notes](/visualstudio/releases/2022/release-notes).
 
 ## What's new for C++ in Visual Studio version 17.6
 
-For a summary of new C++ features in Visual Studio 17.6, see [What’s New for C++ Developers in Visual Studio 2022 17.6](https://devblogs.microsoft.com/cppblog/visual-studio-17-6-for-cpp-devs/).
+For a summary of new C++ features in Visual Studio 17.6, see [What’s New for C++ Developers in Visual Studio 2022 17.6](https://devblogs.microsoft.com/cppblog/visual-studio-17-6-for-cpp-devs/). Briefly, some of the new features are: a CMAKE debugger to debug CMake scripts, built-in support for High Level Shading Language (HLSL) and an Unreal Engine Log viewer, initial support for C++20 in C++/CLI projects, vcpkg is now added by default, and a few C++23 standard library features have been added for ranges, amongst others.
 
-For a summary of new features in Visual Studio 17.6, see [Visual Studio 2022 version 17.6 Release Notes](/visualstudio/releases/2022/release-notes-v17.6).
+For a summary of new features in Visual Studio 17.6 IDE, see [Visual Studio 2022 version 17.6 Release Notes](/visualstudio/releases/2022/release-notes-v17.6).
 
 ## What's new for C++ in Visual Studio version 17.5
 
