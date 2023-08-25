@@ -1,23 +1,43 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 02/28/2023
+ms.date: 08/23/2023
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
+
 # What's new for C++ in Visual Studio 2022
 
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We've added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
 
 For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md)
 
+## What's new for C++ in Visual Studio version 17.7
+
+For a summary of new C++ features in Visual Studio 17.7, see [What’s New for C++ Developers in Visual Studio 2022 17.7](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-7/).
+
+Briefly, some of the new features are: faster debugging sessions and faster project load times, step-by-step visualization of macro expansion, one-click download for Windows Subsystem for Linux (WSL), improved support for Doxygen comments, C++ Build Insights for game development, and Unreal Engine project improvements such as faster IntelliSense and syntax colorization, the ability to find all Unreal Engine Blueprint references, and more.
+
+For a summary of new C++ features that are specific to game development, see [Unleashing the Power of Visual Studio 2022 for C++ Game Development](https://devblogs.microsoft.com/visualstudio/unleashing-the-power-of-visual-studio-2022-for-c-game-development/#:~:text=Unleashing%20the%20Power%20of%20Visual%20Studio%202022%20for,6%20Optimizing%20Build%20Times%20in%20Visual%20Studio%20)
+
+For a summary of new features in the Visual Studio 17.7 IDE, see[Visual Studio 2022 version 17.7 Release Notes](/visualstudio/releases/2022/release-notes).
+
+## What's new for C++ in Visual Studio version 17.6
+
+For a summary of new C++ features in Visual Studio 17.6, see [What’s New for C++ Developers in Visual Studio 2022 17.6](https://devblogs.microsoft.com/cppblog/visual-studio-17-6-for-cpp-devs/).
+
+Briefly, some of the new features are: CMake script debugging, built-in support for High Level Shading Language (HLSL), an Unreal Engine Log viewer, initial support for C++20 in C++/CLI projects, vcpkg is now added by default, and some C++23 standard library features for ranges. To see a full list of new features added to the standard library, see the [STL changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-176).
+
+For a summary of new features in Visual Studio 17.6 IDE, see [Visual Studio 2022 version 17.6 Release Notes](/visualstudio/releases/2022/release-notes-v17.6).
+
 ## What's new for C++ in Visual Studio version 17.5
 
-For a summary of new features and bug fixes in Visual Studio in version 17.5, see [Visual Studio 2022 version 17.5 Release Notes](/visualstudio/releases/2022/release-notes-v17.5).
+For a summary of new C++ features in Visual Studio in version 17.5, see [What’s New for C++ Developers in Visual Studio 2022 17.5](https://devblogs.microsoft.com/cppblog/visual-studio-17-5-for-cpp-devs/).
+For a summary of new features and bug fixes in the Visual Studio IDE version 17.5, see [Visual Studio 2022 version 17.5 Release Notes](/visualstudio/releases/2022/release-notes-v17.5).
 
 - `std::move`, `std::forward`, `std::move_if_noexcept`, and `std::forward_like` now don't produce function calls in generated code, even in debug mode. This change avoids named casts causing unnecessary overhead in debug builds. `/permissive-` (or an option that implies it, such as `/std:c++20` or `std:c++latest`) is required.
 
-- Added [`[[msvc::intrinsic]]`](../cpp/attributes.md#msvcintrinsic) to support the above item. You can apply this attribute to non-recursive functions consisting of a single cast, which take only one parameter.
+- Added [`[[msvc::intrinsic]]`](../cpp/attributes.md#msvcintrinsic) to support the above item. You can apply this attribute to nonrecursive functions consisting of a single cast, which take only one parameter.
 
 - Added support for Linux Console in the Integrated Terminal, which allows for terminal I/O.
 
@@ -67,7 +87,7 @@ For a summary of new features and bug fixes in Visual Studio in version 17.5, se
 
 ## What's new for C++ in Visual Studio version 17.4
 
-For a summary of new features and bug fixes in Visual Studio in version 17.4, see [Visual Studio 2022 version 17.4 Release Notes](/visualstudio/releases/2022/release-notes-v17.4).
+For a summary of new features and bug fixes in Visual Studio in version 17.4, see [Visual Studio 2022 version 17.4 Release Notes](/visualstudio/releases/2022/release-notes-v17.4) and [What’s New for C++ Developers in Visual Studio 2022 17.4](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-4/).
 
 - Improved compiler error messages to provide more correct and useful information, especially for concepts.
 
@@ -88,7 +108,7 @@ For a summary of new features and bug fixes in Visual Studio in version 17.4, se
 
 - You can now use Dev Containers for your C++ projects. Learn more about this feature in our [Dev Containers for C++](https://aka.ms/vscppdevcontainer) blog post.
 
-- IntelliSense now respects the order of pre-included headers when one is a PCH. Previously, when a PCH was used via **`/Yu`** and force-included via **`/FI`**, IntelliSense would always process it first, before any other headers included via **`/FI`**. This behavior didn't match the build behavior. With this change, **`/FI`** headers are processed in the order they're specified.
+- IntelliSense now respects the order of preincluded headers when one of them is a PCH. Previously, when a PCH was used via **`/Yu`** and force-included via **`/FI`**, IntelliSense would always process it first, before any other headers included via **`/FI`**. This behavior didn't match the build behavior. With this change, **`/FI`** headers are processed in the order they're specified.
 
 - Removed internal prefixes from CTest names in Test Explorer.
 
@@ -123,7 +143,7 @@ For a summary of new features and bug fixes in Visual Studio in version 17.4, se
 
 ## What's new for C++ in Visual Studio version 17.3
 
-For a summary of new features and bug fixes in Visual Studio in version 17.3, see [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.3).
+For a summary of new features and bug fixes in Visual Studio in version 17.3, see [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.3) and [C++ improvements](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-3-is-now-available/#c-improvements).
 
 - The Arm64EC toolchain is no longer marked as experimental and is ready for production use.
 
@@ -187,9 +207,8 @@ For a summary of new features and bug fixes in Visual Studio in version 17.1, se
 
 - Visual Studio's CMake integration is only active when a *`CMakeLists.txt`* is identified at the root of the open workspace. If a *`CMakeLists.txt`* is identified at another level of the workspace, then you're prompted to activate Visual Studio's CMake integration with a notification.
 
-- Added a new register visualization window for embedded targets, available through **Debug** > **Windows** > **Embedded Registers**.
-
-- Added a new thread view for RTOS projects, available through **Debug** > **Windows** > **RTOS Objects**.
+- New views that enable you to inspect and interact with peripheral registers on microcontrollers and real time operating systems (RTOS) objects, available through **Debug** > **Windows** > **Embedded Registers**
+- Added a new thread view for RTOS projects, available through **Debug** > **Windows** > **RTOS Objects**. For more information, see [Embedded Software Development in Visual Studio](https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/).
 
 ## What's new for C++ in Visual Studio version 17.0
 
