@@ -39,7 +39,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/CLRIMAGETYPE`](clrimagetype-specify-type-of-clr-image.md) | Sets the type (IJW, pure, or safe) of a CLR image. |
 | [`/CLRSUPPORTLASTERROR`](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md) | Preserves the last error code of functions that are called through the P/Invoke mechanism. |
 | [`/CLRTHREADATTRIBUTE`](clrthreadattribute-set-clr-thread-attribute.md) | Specifies the threading attribute to apply to the entry point of your CLR program. |
-| [`/CLRUNMANAGEDCODECHECK`](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md) | Specifies whether the linker will apply the `SuppressUnmanagedCodeSecurity` attribute to linker-generated P/Invoke stubs that call from managed code into native DLLs. |
+| [`/CLRUNMANAGEDCODECHECK`](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md) | Specifies whether the linker applies the `SuppressUnmanagedCodeSecurity` attribute to linker-generated P/Invoke stubs that call from managed code into native DLLs. |
 | [`/DEBUG`](debug-generate-debug-info.md) | Creates debugging information. |
 | [`/DEBUGTYPE`](debugtype-debug-info-options.md) | Specifies which data to include in debugging information. |
 | [`/DEF`](def-specify-module-definition-file.md) | Passes a module-definition (.def) file to the linker. |
@@ -71,7 +71,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/INCREMENTAL`](incremental-link-incrementally.md) | Controls incremental linking. |
 | [`/INFERASANLIBS`](inferasanlibs.md) | Uses inferred sanitizer libraries. |
 | [`/INTEGRITYCHECK`](integritycheck-require-signature-check.md) | Specifies that the module requires a signature check at load time. |
-| [`/KERNEL`](kernel-mode-code-check.md) | Create a kernel mode binary. |
+| [`/KERNEL`](link-code-for-kernel-mode.md) | Create a kernel mode binary. |
 | [`/KEYCONTAINER`](keycontainer-specify-a-key-container-to-sign-an-assembly.md) | Specifies a key container to sign an assembly. |
 | [`/KEYFILE`](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) | Specifies a key or key pair to sign an assembly. |
 | [`/LARGEADDRESSAWARE`](largeaddressaware-handle-large-addresses.md) | Tells the compiler that the application supports addresses larger than 2 gigabytes |

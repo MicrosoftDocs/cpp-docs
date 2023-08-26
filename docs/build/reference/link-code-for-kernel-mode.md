@@ -1,6 +1,6 @@
 ---
 description: "Learn more about: /KERNEL (Create kernel mode binary)."
-title: "/KERNEL
+title: /KERNEL
 ms.date: "08/25/2023"
 ---
 # /KERNEL (Create kernel mode binary)
