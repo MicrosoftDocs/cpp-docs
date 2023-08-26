@@ -1,10 +1,9 @@
 ---
 title: "MSVC Linker options"
 description: "A list of the options supported by the Microsoft LINK linker."
-ms.date: 09/27/2022
+ms.date: 08/25/2023
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
-ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
 ---
 # Linker options
 
@@ -13,11 +12,8 @@ LINK.exe links Common Object File Format (COFF) object files and libraries to cr
 The following table lists options for LINK.exe. For more information about LINK, see:
 
 - [Compiler-controlled LINK options](compiler-controlled-link-options.md)
-
 - [LINK input files](link-input-files.md)
-
 - [LINK output](link-output.md)
-
 - [Reserved words](reserved-words.md)
 
 On the command line, linker options aren't case-sensitive; for example, `/base` and `/BASE` mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
@@ -75,6 +71,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/INCREMENTAL`](incremental-link-incrementally.md) | Controls incremental linking. |
 | [`/INFERASANLIBS`](inferasanlibs.md) | Uses inferred sanitizer libraries. |
 | [`/INTEGRITYCHECK`](integritycheck-require-signature-check.md) | Specifies that the module requires a signature check at load time. |
+| [`/KERNEL`](kernel-mode-code-check.md) | Create a kernel mode binary. |
 | [`/KEYCONTAINER`](keycontainer-specify-a-key-container-to-sign-an-assembly.md) | Specifies a key container to sign an assembly. |
 | [`/KEYFILE`](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) | Specifies a key or key pair to sign an assembly. |
 | [`/LARGEADDRESSAWARE`](largeaddressaware-handle-large-addresses.md) | Tells the compiler that the application supports addresses larger than 2 gigabytes |
