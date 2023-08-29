@@ -24,28 +24,28 @@ Here are the **`/Zc`** compiler options:
 |--|--|
 | [`/Zc:__cplusplus[-]`](zc-cplusplus.md) | Enable the `__cplusplus` macro to report the supported standard. Off by default. |
 | [`/Zc:__STDC__`](zc-stdc.md) | Enable the `__STDC__` macro to report the C standard is supported. Off by default. |
-| [`/Zc:alignedNew[-]`](zc-alignednew.md) | Enable C++17 over-aligned dynamic allocation. Off by default except when **`/std:c++17`** or later is specified. |
+| [`/Zc:alignedNew[-]`](zc-alignednew.md) | Enable C++17 over-aligned dynamic allocation. Off by default unless **`/std:c++17`** or later is specified. |
 | [`/Zc:auto[-]`](zc-auto-deduce-variable-type.md) | Enforce the new Standard C++ meaning for **`auto`**. On by default. |
-| [`/Zc:char8_t[-]`](zc-char8-t.md) | Enable or disable C++20 native `u8` literal support as `const char8_t`. Off by default except when **`/std:c++20`** or later is specified. |
+| [`/Zc:char8_t[-]`](zc-char8-t.md) | Enable or disable C++20 native `u8` literal support as `const char8_t`. Off by default unless **`/std:c++20`** or later is specified. |
 | [`/Zc:enumTypes[-]`](zc-enumtypes.md) | Enable Standard C++ rules for `enum` type deduction. Off by default. |
-| [`/Zc:externC[-]`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions. Off by default except when **`/permissive-`** is specified. |
+| [`/Zc:externC[-]`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables. Off by default. |
 | [`/Zc:forScope[-]`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules. On by default. |
-| [`/Zc:gotoScope[-]`](zc-gotoscope.md) | Enforce Standard C++ **`goto`** rules around local variable initialization. Off by default except when **`/permissive-`** is specified. |
-| [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules. Off by default except when **`/permissive-`**  is specified. |
+| [`/Zc:gotoScope[-]`](zc-gotoscope.md) | Enforce Standard C++ **`goto`** rules around local variable initialization. Off by default unless **`/permissive-`** is specified. |
+| [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules. Off by default unless **`/permissive-`**  is specified. |
 | [`/Zc:implicitNoexcept[-]`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions. On by default. |
 | [`/Zc:inline[-]`](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced functions or data if they're COMDAT or have internal linkage only. Off by default. |
-| [`/Zc:lambda[-]`](zc-lambda.md) | Enable new lambda processor for conformance-mode syntactic checks in generic lambdas. Off by default except when **`/std:c++20`** or later is specified. |
-| [`/Zc:noexceptTypes[-]`](zc-noexcepttypes.md) | Enforce C++17 **`noexcept`** rules. Off by default except when **`/std:c++17`** or later is specified. |
-| [`/Zc:nrvo[-]`](zc-nrvo.md) | Enable optional copy and move elisions. Off by default except when **`/O2`**, **`/permissive-`**, or **`/std:c++20`** or later is specified. |
-| [`/Zc:preprocessor[-]`](zc-preprocessor.md) | Use the new conforming preprocessor. Off by default except when **`/std:c11`** or later is specified. |
-| [`/Zc:referenceBinding[-]`](zc-referencebinding-enforce-reference-binding-rules.md) | A UDT temporary won't bind to a nonconst lvalue reference. Off by default except when **`/permissive-`** is specified. |
-| [`/Zc:rvalueCast[-]`](zc-rvaluecast-enforce-type-conversion-rules.md) | Enforce Standard C++ explicit type conversion rules. Off by default except when **`/permissive-`** is specified. |
+| [`/Zc:lambda[-]`](zc-lambda.md) | Enable new lambda processor for conformance-mode syntactic checks in generic lambdas. Off by default unless **`/std:c++20`** or later is specified. |
+| [`/Zc:noexceptTypes[-]`](zc-noexcepttypes.md) | Enforce C++17 **`noexcept`** rules. Off by default unless **`/std:c++17`** or later is specified. |
+| [`/Zc:nrvo[-]`](zc-nrvo.md) | Enable optional copy and move elisions. Off by default unless **`/O2`**, **`/permissive-`**, or **`/std:c++20`** or later is specified. |
+| [`/Zc:preprocessor[-]`](zc-preprocessor.md) | Use the new conforming preprocessor. Off by default unless **`/std:c11`** or later is specified. |
+| [`/Zc:referenceBinding[-]`](zc-referencebinding-enforce-reference-binding-rules.md) | A UDT temporary won't bind to a nonconst lvalue reference. Off by default unless **`/permissive-`** is specified. |
+| [`/Zc:rvalueCast[-]`](zc-rvaluecast-enforce-type-conversion-rules.md) | Enforce Standard C++ explicit type conversion rules. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:sizedDealloc[-]`](zc-sizeddealloc-enable-global-sized-dealloc-functions.md) | Enable C++14 global sized deallocation functions. On by default. |
-| [`/Zc:strictStrings[-]`](zc-strictstrings-disable-string-literal-type-conversion.md) | Disable string-literal to `char*` or `wchar_t*` conversion. Off by default except when **`/permissive-`** is specified. |
-| [`/Zc:static_assert[-]`](zc-static-assert.md) | strict handling of `static_assert`. Off by default except when **`/permissive-`** is specified. |
+| [`/Zc:strictStrings[-]`](zc-strictstrings-disable-string-literal-type-conversion.md) | Disable string-literal to `char*` or `wchar_t*` conversion. Off by default unless **`/permissive-`** is specified. |
+| [`/Zc:static_assert[-]`](zc-static-assert.md) | strict handling of `static_assert`. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:templateScope[-]`](zc-templatescope.md) | Enforce Standard C++ template parameter shadowing rules. Off by default. |
-| [`/Zc:ternary[-]`](zc-ternary.md) | Enforce conditional operator rules on operand types. Off by default except when **`/permissive-`** is specified. |
+| [`/Zc:ternary[-]`](zc-ternary.md) | Enforce conditional operator rules on operand types. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:threadSafeInit[-]`](zc-threadsafeinit-thread-safe-local-static-initialization.md) | Enable thread-safe local static initialization. On by default. |
 | [`/Zc:throwingNew[-]`](zc-throwingnew-assume-operator-new-throws.md) | Assume **`operator new`** throws on failure. Off by default. |
 | [`/Zc:tlsGuards[-]`](zc-tlsguards.md) | Generate runtime checks for TLS variable initialization. On by default. |
