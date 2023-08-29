@@ -16,11 +16,17 @@ For more information on what's new in all of Visual Studio, see [What's new in V
 
 For a summary of new C++ features in Visual Studio 17.7, see [What’s New for C++ Developers in Visual Studio 2022 17.7](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-7/).
 
-Briefly, some of the new features are: faster debugging sessions and faster project load times, step-by-step visualization of macro expansion, one-click download for Windows Subsystem for Linux (WSL), improved support for Doxygen comments, C++ Build Insights for game development, and Unreal Engine project improvements such as faster IntelliSense and syntax colorization, the ability to find all Unreal Engine Blueprint references, and more.
+Briefly, some of the new features are:
+* Faster debugging sessions and faster project load times
+* Step-by-step visualization of macro expansion
+* One-click download for Windows Subsystem for Linux (WSL)
+* Improved support for Doxygen comments
+* C++ Build Insights for game development
+* Unreal Engine project improvements such as faster IntelliSense and syntax colorization, the ability to find all Unreal Engine Blueprint references, and more.
 
 For a summary of new C++ features that are specific to game development, see [Unleashing the Power of Visual Studio 2022 for C++ Game Development](https://devblogs.microsoft.com/visualstudio/unleashing-the-power-of-visual-studio-2022-for-c-game-development/#:~:text=Unleashing%20the%20Power%20of%20Visual%20Studio%202022%20for,6%20Optimizing%20Build%20Times%20in%20Visual%20Studio%20)
 
-For a summary of new features in the Visual Studio 17.7 IDE, see[Visual Studio 2022 version 17.7 Release Notes](/visualstudio/releases/2022/release-notes).
+For a summary of new features in the Visual Studio 17.7 IDE, see [Visual Studio 2022 version 17.7 Release Notes](/visualstudio/releases/2022/release-notes).
 
 ## What's new for C++ in Visual Studio version 17.6
 
