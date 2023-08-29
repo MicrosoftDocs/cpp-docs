@@ -997,6 +997,8 @@ items:
               href: ../build/reference/inferasanlibs.md
             - name: /INTEGRITYCHECK (Require signature check)
               href: ../build/reference/integritycheck-require-signature-check.md
+            - name: /KERNEL (Create a kernel mode binary)
+              href: ../build/reference/link-code-for-kernel-mode.md
             - name: /KEYCONTAINER (Specify a key container to sign an assembly)
               href: ../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md
             - name: /KEYFILE (Specify key or key pair to sign an assembly)
