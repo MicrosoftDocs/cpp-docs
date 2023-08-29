@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /INTEGRITYCHECK (Require signature check)"
 title: "/INTEGRITYCHECK (Require signature check)"
-ms.date: 04/21/2021
+ms.date: 08/29/2023
 ---
 # `/INTEGRITYCHECK` (Require signature check)
 
@@ -25,14 +25,14 @@ Microsoft has new signing guidance for DLL and executable files linked by using 
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. To build an image which requires digital signature verification to be loaded, add *`/INTEGRITYCHECK`* to the **Additional Options** command line. By default, **`/INTEGRITYCHECK`** is off.
+1. To create a digitally-signed image, include `/INTEGRITYCHECK` in the **Additional Options** command line. A digitally-signed image must pass a verification check before it is loaded. This feature is disabled by default.
 
 1. Choose **OK** to save your changes.
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
-[MSVC linker options](linker-options.md)<br/>
-[Forced integrity signing of portable executable (PE) files](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)<br/>
-[Kernel-mode code signing requirements](/windows-hardware/drivers/install/kernel-mode-code-signing-requirements--windows-vista-and-later-)<br/>
+[MSVC linker reference](linking.md)\
+[MSVC linker options](linker-options.md)\
+[Forced integrity signing of portable executable (PE) files](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)\
+[Kernel-mode code signing requirements](/windows-hardware/drivers/install/kernel-mode-code-signing-requirements--windows-vista-and-later-)\
 [AppInit DLLs and Secure Boot](/windows/win32/dlls/secure-boot-and-appinit-dlls)
