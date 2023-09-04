@@ -1,7 +1,7 @@
 ---
 title: "/Zc (Conformance)"
 description: "The /Zc conformance compiler options enable or disable support for conforming or backward-compatible behavior."
-ms.date: 08/29/2023
+ms.date: 08/31/2023
 helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "Conformance compiler options", "Zc compiler options [C++]"]
 ---
 # `/Zc` (Conformance)
@@ -27,6 +27,7 @@ Here are the **`/Zc`** compiler options:
 | [`/Zc:alignedNew[-]`](zc-alignednew.md) | Enable C++17 over-aligned dynamic allocation. Off by default unless **`/std:c++17`** or later is specified. |
 | [`/Zc:auto[-]`](zc-auto-deduce-variable-type.md) | Enforce the new Standard C++ meaning for **`auto`**. On by default. |
 | [`/Zc:char8_t[-]`](zc-char8-t.md) | Enable or disable C++20 native `u8` literal support as `const char8_t`. Off by default unless **`/std:c++20`** or later is specified. |
+| [`/Zc:checkGwOdr[-]`](zc-check-gwodr.md) | Enforce Standard C++ ODR violations under `/Gw`. |
 | [`/Zc:enumTypes[-]`](zc-enumtypes.md) | Enable Standard C++ rules for `enum` type deduction. Off by default. |
 | [`/Zc:externC[-]`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables. Off by default. |
