@@ -773,7 +773,7 @@ items:
                 - name: /Zc (Conformance)
                   expanded: false
                   items: 
-                    - name: /Zc (Conformance)
+                    - name: "/Zc (Conformance)"
                       href: ../build/reference/zc-conformance.md
                     - name: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
                       href: ../build/reference/zc-cplusplus.md
@@ -785,7 +785,9 @@ items:
                       href: ../build/reference/zc-auto-deduce-variable-type.md
                     - name: "/Zc:char8_t (Enable C++20 char8_t type)"
                       href: ../build/reference/zc-char8-t.md
-                    - name: '/Zc:enumTypes (Enable enum type deduction)'
+                    - name: "/Zc:checkGwOdr (Enforce Standard C++ ODR violations under /Gw)"
+                      href: ../build/reference/zc-check-gwodr.md
+                    - name: "/Zc:enumTypes (Enable enum type deduction)"
                       href: ../build/reference/zc-enumtypes.md
                     - name: '/Zc:externC (Use Standard C++ extern "C" rules)'
                       href: ../build/reference/zc-externc.md
