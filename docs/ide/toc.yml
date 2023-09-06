@@ -8,6 +8,8 @@ items:
       href: ../ide/writing-and-refactoring-code-cpp.md
     - name: Navigate C++ code
       href: ../ide/navigate-code-cpp.md
+    - name: Include cleanup
+      href: ../ide/include-cleanup.md
     - name: Set your C++ coding preferences
       href: ../ide/how-to-set-preferences.md
     - name: Collaborate using Live Share for C++
