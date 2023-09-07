@@ -176,6 +176,8 @@ additionalContent:
         # Card
         - title: Features
           links:
+            - text: Build reliable and secure programs
+              url: code-quality/build-reliable-secure-programs.md
             - text: Edit and refactor code
               url: ide/writing-and-refactoring-code-cpp.md
             - text: Build code projects
