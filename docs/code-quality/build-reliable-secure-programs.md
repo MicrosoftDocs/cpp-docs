@@ -25,7 +25,7 @@ Threat modeling is best used as one part of a dynamic Security Development Lifec
 1. Apply threat modeling in a targeted way. Don't apply threat modeling to all features, but tactically to complex or critical features. Do apply it regularly instead as part of a top-down product review.
 1. Apply threat modeling early (as with all security requirements), when there is still opportunity to change the design. Also, threat models serve as an input to other processes, such as attack surface reduction or designing for security (see below). Threat models that are done later are at best "surveys" for pen test (penetration testing) or areas that need security testing such as fuzzing. After creating a baseline threat model early, plan to iterate on it as the attack surface changes.
 1. Use asset inventory and compliance to appropriately track what makes up a product, and track security artifacts (including threat models) along with the assets they apply to. This enables better automated risk assessment and focusing of security efforts on the specific components or features that change.
-1. **In Azure**, the Microsoft Threat Modeling Tool was updated in 2022 for Azure development. For more information, see [Microsoft Threat Modeling Tool overview - Azure](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool).
+1. **In Azure**, the Microsoft Threat Modeling Tool was updated in 2022 for Azure development. For more information, see [Microsoft Threat Modeling Tool overview - Azure](/azure/security/develop/threat-modeling-tool)
 
 **Supporting factors and practices**
 
@@ -78,7 +78,7 @@ There are several types of automated tests, and while not all are applicable to 
 
 **Visual Studio**
 
-Visual Studio Test Explorer natively supports many of the most popular C++ testing frameworks and options to install extensions for more frameworks. This is helpful for running a subset of tests covering the code you're working on, as well as making it easy to debug test failures as they arise. Visual Studio also makes it easy to set up new test suites for existing projects, as well as providing helpful tools such as CodeLens to make it easier to manage these tests. For help writing, running, and managing C/C++ tests with Visual Studio, see [Write unit tests for C/C++ - Visual Studio (Windows)](/visualstudio/test/writing-unit-tests-for-c-cpp.md)
+Visual Studio Test Explorer natively supports many of the most popular C++ testing frameworks and options to install extensions for more frameworks. This is helpful for running a subset of tests covering the code you're working on, as well as making it easy to debug test failures as they arise. Visual Studio also makes it easy to set up new test suites for existing projects, as well as providing helpful tools such as CodeLens to make it easier to manage these tests. For help writing, running, and managing C/C++ tests with Visual Studio, see [Write unit tests for C/C++ - Visual Studio (Windows)](/visualstudio/test/writing-unit-tests-for-c-cpp).
 
 **In Azure and GitHub CI/CD**
 
@@ -100,7 +100,7 @@ Tests that do deeper verification and take longer to run, such as static analysi
 
 **Key tools** Be aware of and use the following:
 
-- [Code analysis documentation - C++ and .NET](visualstudio/code-quality.md)
+- [Code analysis documentation - C++ and .NET](visualstudio/code-quality/)
 - [`/analyze` - Visual C++ compiler](../build/reference/analyze-code-analysis.md)
 - [`/W4` and `/WX` - Visual C++ compiler](../build/reference/compiler-option-warning-level.md)
 - [Use the C++ Core Guidelines Checkers](using-the-cpp-core-guidelines-checkers.md)
@@ -177,7 +177,7 @@ AzDO users can scan their code through Microsoft Defender for DevOps for known t
 
 - [Microsoft Defender for DevOps Preview](https://www.microsoft.com/security/business/cloud-security/microsoft-defender-devops)
 - [GitHub advanced security for Azure DevOps (GHAS for AzDO) | GitHub](https://partner.github.com/2022/10/12/azure-devops-article.html)
-- [Detect exposed secrets in code](https://learn.microsoft.com/azure/defender-for-cloud/detect-exposed-secrets)
+- [Detect exposed secrets in code](/azure/defender-for-cloud/detect-exposed-secrets)
 
 **In GitHub**
 
@@ -225,7 +225,7 @@ Code should utilize development methodologies, language versions, framework, API
 - See [C++ Core Guidelines' Guideline Support Library (GSL)](https://github.com/isocpp/CppCoreGuidelines) for guidance to write modern, safe, and consistent C++ code that follows best practices and avoids common pitfalls.
 - See [Microsoft GSL implementation](https://github.com/microsoft/GSL) for functions and types that the C++ Core Guidelines suggest you use.
 - [Resource-safe C++ containers, C runtime library (CRT) memory overflow protections](???) Prefer [`std::vector`](https://learn.microsoft.com/cpp/standard-library/vector-class) and [`std::string`](https://learn.microsoft.com/cpp/standard-library/string), which are resource-safe. If you must use C data, use the [secure versions of CRT functions](https://learn.microsoft.com/cpp/c-runtime-library/security-features-in-the-crt?view=msvc-170) which are designed to help prevent memory corruption due to buffer misuse and undefined language behaviors.
-- The [SafeInt library](https://learn.microsoft.com/cpp/safeint/safeint-library) protects against integer overflow in mathematical and comparison operations.
+- The [SafeInt library](/cpp/safeint/safeint-library) protects against integer overflow in mathematical and comparison operations.
 
 **Consume secure dependencies**
 
@@ -235,9 +235,9 @@ Binaries shouldn't link to insecure libraries and dependencies. Development team
 
 Compilation should enable strong code provenance guarantees to help detect and prevent introduction of backdoors and other malicious code. The resulting data, also critical to debugging and investigation, should be archived for all software releases to drive efficient security response in the event of compromise. The following compiler switches generate information that is critical to a security response:
 
-- [`/ZH:SHA_SHA256` in Visual C++](https://learn.microsoft.com/cpp/build/reference/zh) - All PDB source file hashes should be generated by a cryptographically secure algorithm.
-- [`/Zi`, `/ZI` (Debug Information Format) in Visual C++](https://learn.microsoft.com/cpp/build/reference/z7-zi-zi-debug-information-format) - In addition to publishing stripped symbols for collecting crash data and other public use scenarios, builds should produce and archive private PDBs for all released binaries. Full symbols are required by binary analysis tools to verify whether many security mitigations were enabled at compile-time. Private symbols are critical in security response, lowering debugging and investigation costs when engineers are racing to assess, limit and correct damage to organizations when code has been exploited by an attacker.
-- [`/SOURCELINK` in Visual C++ Linker - Include Sourcelink file in PDB](https://learn.microsoft.com/cpp/build/reference/sourcelink?view=msvc-170): Source link is a language- and source-control agnostic system providing source debugging for binaries. Source debugging greatly increases the efficiency the range of pre-release security validations and post-release incident response.
+- [`/ZH:SHA_SHA256` in Visual C++](../build/reference/zh.md) - All PDB source file hashes should be generated by a cryptographically secure algorithm.
+- [`/Zi`, `/ZI` (Debug Information Format) in Visual C++](../build/reference/z7-zi-zi-debug-information-format.md) - In addition to publishing stripped symbols for collecting crash data and other public use scenarios, builds should produce and archive private PDBs for all released binaries. Full symbols are required by binary analysis tools to verify whether many security mitigations were enabled at compile-time. Private symbols are critical in security response, lowering debugging and investigation costs when engineers are racing to assess, limit and correct damage to organizations when code has been exploited by an attacker.
+- [`/SOURCELINK` in Visual C++ Linker - Include Sourcelink file in PDB](../build/reference/sourcelink.md): Source link is a language- and source-control agnostic system providing source debugging for binaries. Source debugging greatly increases the efficiency the range of pre-release security validations and post-release incident response.
 
 **Enable compiler errors to prevent issues at code authoring time**
 
@@ -257,7 +257,7 @@ Compiler settings should opt into code generation features that detect and mitig
 - Code flow integrity
     - [`/guard:cf` - Enable Control Flow Guard](https://aka.ms/ControlFlowGuard) - Inserts runtime verifications for indirect call targets.
     - [`/CETCOMPAT` - CET shadow stack compatible](https://aka.ms/CETShadowStack) - Marks an executable image as compatible with Microsoft's implementation of Intel's [Control-flow Enforcement Technology (CET)](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) Shadow Stack feature.
-    - [`/guard:ehcont` - Enable EH continuation metadata](https://learn.microsoft.com/cpp/build/reference/guard-enable-eh-continuation-metadata?view=msvc-170) - Generates a list of safe relative virtual addresses (RVA) of all exception handling continuation targets.
+    - [`/guard:ehcont` - Enable EH continuation metadata](../build/reference/guard-enable-eh-continuation-metadata.md) - Generates a list of safe relative virtual addresses (RVA) of all exception handling continuation targets.
 - Data execution prevention
     - [`/NXCOMPAT` - Compatible with Data Execution Prevention](https://aka.ms/DataExecutionPrevention) - Marks a 32-bit executable image as compatible with the [Windows Data Execution Prevention](https://support.microsoft.com/topic/what-is-data-execution-prevention-dep-60dabc2b-90db-45fc-9b18-512419135817) feature. (A 64-bit build has this by default.)
 
@@ -267,7 +267,7 @@ Compiler settings should opt into sensitive information discovery prevention. In
 
 At the software level, confidential data may be transmitted to attackers if unexpectedly leaked. Failure to zero-initialize buffers and other buffer misuse may leak private confidential data to attackers that call trusted API. This class of problem best handled by enabling additional static analysis and the use of secure resource containers as described previously.
 
-- [`/Qspectre` - Mitigate speculative execution side-channel attacks](https://aka.ms/SpectreMitigations) - Inserts barrier instructions that helps prevent the disclosure of sensitive data produced by speculative execution. These mitigations should be enabled for code that stores sensitive data in memory and operates across a trust boundary. Microsoft always recommends measuring performance impact against appropriate benchmarks when enabling Spectre-mitigations due to the possibility of introducing runtime checks in performance-critical blocks or loops. These code paths can disable mitigations via the [`spectre(nomitigation)`](https://learn.microsoft.com/cpp/cpp/spectre) `declspec` modifier. Projects that enable `/Qspectre`` should also link to libraries that are also compiled with these mitigations, including the Microsoft runtime libraries.
+- [`/Qspectre` - Mitigate speculative execution side-channel attacks](https://aka.ms/SpectreMitigations) - Inserts barrier instructions that helps prevent the disclosure of sensitive data produced by speculative execution. These mitigations should be enabled for code that stores sensitive data in memory and operates across a trust boundary. Microsoft always recommends measuring performance impact against appropriate benchmarks when enabling Spectre-mitigations due to the possibility of introducing runtime checks in performance-critical blocks or loops. These code paths can disable mitigations via the [`spectre(nomitigation)`](../cpp/spectre.md) `declspec` modifier. Projects that enable `/Qspectre`` should also link to libraries that are also compiled with these mitigations, including the Microsoft runtime libraries.
 
 ## 2.6 Black box test cases
 
@@ -287,12 +287,12 @@ Run these tests on a regular basis and compare the results to previous runs to c
 
 These tests help find issues with reliability, being able to test many different scenarios that may run into crashes, hangs, deadlocks, and so on. By collecting crash dumps as part of test failures, you can import those into Visual Studio to further investigate what areas are hitting these issues. Along with that, functional tests can be run from within the Visual Studio IDE, making replicating failures and debugging them to see exactly where within the black box of the product the test fails easily, as well as testing code changes and fixes quickly.
 
-To get started with debugging tests, see [Debug unit tests with Test Explorer - Visual Studio (Windows)](https://learn.microsoft.com/visualstudio/test/debug-unit-tests-with-test-explorer?view=vs-2022)
+To get started with debugging tests, see [Debug unit tests with Test Explorer - Visual Studio (Windows)](/visualstudio/test/debug-unit-tests-with-test-explorer)
 
 **In Azure**
 
 Azure DevOps can also help manage and validate these tests with the use of Test Plans. These can be used to ensure sign off with manual validation, as well as run automated tests associated with product requirements. More information on Azure Test Plans and using them to run automated testing can be found here:
-- [What is Azure Test Plans? Manual, exploratory, and automated test tools. - Azure Test Plans](https://learn.microsoft.com/azure/devops/test/overview?view=azure-devops)
+- [What is Azure Test Plans? Manual, exploratory, and automated test tools. - Azure Test Plans](/azure/devops/test/overview)
 - [Run automated tests from test plans - Azure Test Plans](https://learn.microsoft.com/azure/devops/test/run-automated-tests-from-test-hub?view=azure-devops)
 
 ## 2.7 Code-based test cases
@@ -315,16 +315,16 @@ The test explorer tools in Visual Studio make it easy to run these tests frequen
 
 For more information, see:
 
-- [Unit testing fundamentals - Visual Studio (Windows)](https://learn.microsoft.com/visualstudio/test/unit-test-basics?view=vs-2022) - an introduction and overview
-- [Run unit tests with Test Explorer - Visual Studio (Windows)](https://learn.microsoft.com/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2022) - a deeper look at what's available to help manage the potentially large set of unit tests with the Test Explorer
+- [Unit testing fundamentals - Visual Studio (Windows)](/visualstudio/test/unit-test-basics) - an introduction and overview
+- [Run unit tests with Test Explorer - Visual Studio (Windows)](/visualstudio/test/run-unit-tests-with-test-explorer) - a deeper look at what's available to help manage the potentially large set of unit tests with the Test Explorer
 
 Visual Studio also comes with tools for tracking the code coverage that allow developers to ensure that code changes they make are covered by existing tests, or adding new tests to cover new and untested code paths. It also shows the code coverage percentage to ensure it is maintained above a target level for confidence in overall code quality.
 
-For information about these tools, see [Code coverage testing - Visual Studio (Windows)](https://learn.microsoft.com/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested?view=vs-2022&tabs=csharp)
+For information about these tools, see [Code coverage testing - Visual Studio (Windows)](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
 
 **In Azure**
 
-Azure DevOps can also help in tracking code coverage results for the whole product as part of the build pipeline process. For more information, see [Review code coverage - Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/test/review-code-coverage-results?view=azure-devops).
+Azure DevOps can also help in tracking code coverage results for the whole product as part of the build pipeline process. For more information, see [Review code coverage - Azure Pipelines](/azure/devops/pipelines/test/review-code-coverage-results).
 
 ## 2.8 Historical test cases
 
@@ -343,7 +343,7 @@ Since they test for bug regressions, these tests should be quick and easy to run
 - [Link work items to other objects - Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/notifications/add-links-to-work-items?toc=%2Fazure%2Fdevops%2Fboards%2Ftoc.json&view=azure-devops)
 
 Eventually, integrating these tests into the unit testing area that is supposed to cover the code section helps keep the test suite organized and easier to manage. Leveraging the Test Explorer's test grouping is a good way to keep track of tests that belong together as well. For more information, see:
-- [Run unit tests with Test Explorer - Visual Studio (Windows)](https://learn.microsoft.com/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2022#group-and-filter-the-test-list)
+- [Run unit tests with Test Explorer - Visual Studio (Windows)](/visualstudio/test/run-unit-tests-with-test-explorer#group-and-filter-the-test-list)
 
 ## 2.9 Fuzzing
 
