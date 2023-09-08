@@ -9,7 +9,9 @@ ms.topic: "conceptual"
 
 The United States government publication [NISTIR 8397: Guidelines on Minimum Standards for Developer Verification of Software](https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8397.pdf) contains excellent guidance on how to build reliable and secure software in any programming language.
 
-This document follows the same structure as NISTIR 8397. Each section summarizes how to use Microsoft developer products for C++ and other languages to meet that section's security needs, and provides guidance to get the most value in each area.
+This document follows the same structure as NISTIR 8397. Each section:
+- summarizes how to use Microsoft developer products for C++ and other languages to meet that section's security needs, and
+- provides guidance to get the most value in each area.
 
 ## 2.1 Threat modeling
 
@@ -19,12 +21,12 @@ Threat modeling is valuable, especially when applied in a way that scales to mee
 
 **Recommendations**
 
-Threat modeling is best used as one part of a dynamic Security Development Lifecycle (SDL) approach that can meet individual development teams' needs and enhance security while minimizing wasted cycles and blocking. We suggest that for your product as a whole, for a specific feature, or for a major design or implementation change:
+Threat modeling should be one part of your dynamic Security Development Lifecycle (SDL). We suggest that for your product as a whole, for a specific feature, or for a major design or implementation change:
 
 1. Have a solid, dynamic SDL that allows for early engagement with developer teams and rightsizing of approach.
 1. Apply threat modeling in a targeted way. Don't apply threat modeling to all features, but tactically to complex or critical features. Do apply it regularly instead as part of a top-down product review.
-1. Apply threat modeling early (as with all security requirements), when there's still opportunity to change the design. Also, threat models serve as an input to other processes, such as attack surface reduction or designing for security (see below). Threat models that are done later are at best "surveys" for pen test (penetration testing) or areas that need security testing such as fuzzing. After creating a baseline threat model early, plan to iterate on it as the attack surface changes.
-1. Use asset inventory and compliance to appropriately track what makes up a product, and track security artifacts (including threat models) along with the assets they apply to. This enables better automated risk assessment and focusing of security efforts on the specific components or features that change.
+1. Apply threat modeling early (as with all security requirements), when there's still opportunity to change the design. Also, threat models serve as an input to other processes, such as attack surface reduction or designing for security. Threat models that are done later are at best "surveys" for pen test (penetration testing) or areas that need security testing such as fuzzing. After creating a baseline threat model early, plan to iterate on it as the attack surface changes.
+1. Use asset inventory and compliance to appropriately track what makes up a product, and track security artifacts (including threat models) along with the assets they apply to. This approach enables better automated risk assessment and focusing of security efforts on the specific components or features that change.
 1. **In Azure**, the Microsoft Threat Modeling Tool was updated in 2022 for Azure development. For more information, see [Microsoft Threat Modeling Tool overview - Azure](/azure/security/develop/threat-modeling-tool)
 
 **Supporting factors and practices**
@@ -33,24 +35,35 @@ To properly apply threat modeling and avoid underuse/overuse, we have found that
 
 *Development approach*
 
-First, understand the team's development approach. For teams with agile development workflows that push dozens of changes to production daily, it's not practical or reasonable to require that every functional change has a threat model. Instead, consider having a security requirements questionnaire that focuses on specific questions to ask about the feature to determine what future aspects of your SDL apply. For example:
+First, understand the team's development approach. For teams with agile development workflows that push dozens of changes to production daily, it's not practical or reasonable to require that every functional change has a threat model. Instead, from the start when writing a feature's functional requirements, consider including a security requirements questionnaire. The questionnaire should focus on specific questions about the feature to determine what future aspects of your SDL apply. For example:
 - Does the feature make a major change in design of how we provide customer isolation in a multi-tenant environment? If so, consider performing a full threat model.
 - Does a new feature allow file uploads? If so, perhaps what's more appropriate is a web application security assessment.
-- Is this primarily just a functional UI change? If so, perhaps nothing is needed beyond your traditional automated tooling.
+- Is this change primarily just a functional UI change? If so, perhaps nothing is needed beyond your traditional automated tooling.
 
-Having a security questionnaire affixed to a security requirements phase that ties to when the development team is making functional requirements for a feature allows us to apply the right SDL techniques to the unit of development and the SDLC timelines that our development partners are using, avoiding unnecessary blocking and wasted cycles.
+The security questionnaire results will inform which SDL techniques to tie to which unit of development. It will also inform development partners of the feature's SDL timelines, so they can collaborate at the right times.
 
 *Product inventory*
 
-Second, maintain a strong asset inventory of the products you're tasked with assessing. Products are growing in complexity. We now have devices in Operational Technology (OT) spaces that have connectivity with sensors (such as passenger rail and vehicles), bus-based networks that talk to other IoT / OT components in the vehicle (such as CANBUS or PROFIBUS), wireless/cellular/Bluetooth for communication with customer devices and cloud back ends, machine learning in the cloud feeding back into the device or a fleet management application, and so on. In such a complex product, it's not effective to require traditional SDL modeling of each functional unit in isolation. Having a strong asset inventory enables you to view the entirely of the product stack to see the complete picture, and see the key points that need to evaluate how a new/changed feature impacts product security.
+Second, maintain a strong asset inventory of the products you're tasked with assessing. Products are growing in complexity. It's common to write software for connected devices that have:
+- sensors (such as passenger rail and vehicles),
+- bus-based networks that talk to other components in the vehicle (such as CANBUS or PROFIBUS),
+- wireless/cellular/Bluetooth for communication with customer devices and cloud back ends,
+- machine learning in the cloud feeding back into the device or a fleet management application,
+- and more.
+
+In such complex products, it's not effective to require traditional SDL modeling of each functional unit in isolation. Having a strong asset inventory enables you to view the entirely of the product stack to see the complete picture, and see the key points that need to evaluate how a new/changed feature impacts product security.
 
 *Granularity and integration*
 
-Establish compliance systems that let you establish and measure compliance metrics for feature level development (generally with higher frequency and smaller granularity, sometimes even on the developer's system or at code commit/merge time), and tie them into asset inventory systems that let you periodically evaluate security for the broader product a feature or component is being consumed by (typically with less frequency and broader granularity, such as at module or system testing time).
+Establish systems to measure compliance using clear metrics.
+- Regularly measure compliance for feature level development. Feature compliance generally should be measured with higher frequency and smaller granularity, sometimes even on the developer's system or at code commit/merge time.
+- Periodically evaluate security for the broader product in which a feature or component is being consumed. Broader evaluations typically will be done with lower frequency and broader granularity, such as at module or system testing time.
 
 *Scale*
 
-Keep a proper asset inventory system, that captures and preserves security artifacts and the output of threat model reviews. This lets you evaluate them for patterns, and make intelligent decisions on how to refine the product security program regularly. Ideally, you can combine requirements-phase security questionnaires, threat modeling results, security assessment results, and results from automated tools to automate a viewpoint of relative risk of a given product (ideally as a "dashboard"), and this can be translated into what security teams should focus on to maximize return on threat modeling investment.
+Keep a proper asset inventory system, that captures and preserves security artifacts and the output of threat model reviews. Having a clear inventory lets you evaluate review outputs for patterns, and make intelligent decisions on how to refine the product security program regularly.
+
+Try to combine requirements-phase security questionnaires, threat modeling results, security assessment results, and results from automated tools. Combining them enables you to automate a viewpoint of relative risk of a given product (ideally as a "dashboard"), to inform your security teams what to focus on to get the best value out of the threat modeling.
 
 ## 2.2 Automated testing
 
