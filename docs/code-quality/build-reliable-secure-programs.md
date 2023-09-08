@@ -293,7 +293,7 @@ To get started with debugging tests, see [Debug unit tests with Test Explorer - 
 
 Azure DevOps can also help manage and validate these tests with the use of Test Plans. These can be used to ensure sign off with manual validation, as well as run automated tests associated with product requirements. More information on Azure Test Plans and using them to run automated testing can be found here:
 - [What is Azure Test Plans? Manual, exploratory, and automated test tools. - Azure Test Plans](/azure/devops/test/overview)
-- [Run automated tests from test plans - Azure Test Plans](https://learn.microsoft.com/azure/devops/test/run-automated-tests-from-test-hub?view=azure-devops)
+- [Run automated tests from test plans - Azure Test Plans](/azure/devops/test/run-automated-tests-from-test-hub)
 
 ## 2.7 Code-based test cases
 
@@ -357,9 +357,9 @@ Use fuzzing on all software that may process untrusted inputs that an attacker c
 
 When fuzzing reports a failure, it always naturally provides a reproducible test case that demonstrates the bug. This test case can be reproduced, resolved, and then added to the Historical Test Cases.
 
-When using both sanitizers (for example, [Address Sanitizer (ASAN)](../cpp/sanitizers/asan.md) and fuzzing:
+When using both sanitizers such as [Address Sanitizer (ASAN)](../sanitizers/asan.md) and fuzzing:
 - First run your normal tests with sanitizers enabled to see if there are issues, then once the code is sanitizer-clean start fuzzing.
-- For C or C++, there are compilers that automate injection of runtime assertions and meta-data that enable Asan and LSan. When compiled for ASan and LSan, the resulting binaries link with a runtime library that can precisely diagnose [15+ categories of memory safety errors](../cpp/sanitizers/asan.md#error-types) with zero false positives. For C or C++ when you have source, use [LibFuzzer](https://www.llvm.org/docs/LibFuzzer.html), which is enabled by ASAN.
+- For C or C++, there are compilers that automate injection of runtime assertions and meta-data that enable Asan and LSan. When compiled for ASan and LSan, the resulting binaries link with a runtime library that can precisely diagnose [15+ categories of memory safety errors](../sanitizers/asan.md#error-types) with zero false positives. For C or C++ when you have source, use [LibFuzzer](https://www.llvm.org/docs/LibFuzzer.html), which is enabled by ASAN.
 - For libraries written in Java, C#, Python, Rust, and so on, use the [AFL++ framework](https://aflplus.plus/).
 
 **Key qualities**
