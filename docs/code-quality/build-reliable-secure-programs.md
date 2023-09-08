@@ -23,7 +23,7 @@ Threat modeling is best used as one part of a dynamic Security Development Lifec
 
 1. Have a solid, dynamic SDL that allows for early engagement with developer teams and rightsizing of approach.
 1. Apply threat modeling in a targeted way. Don't apply threat modeling to all features, but tactically to complex or critical features. Do apply it regularly instead as part of a top-down product review.
-1. Apply threat modeling early (as with all security requirements), when there is still opportunity to change the design. Also, threat models serve as an input to other processes, such as attack surface reduction or designing for security (see below). Threat models that are done later are at best "surveys" for pen test (penetration testing) or areas that need security testing such as fuzzing. After creating a baseline threat model early, plan to iterate on it as the attack surface changes.
+1. Apply threat modeling early (as with all security requirements), when there's still opportunity to change the design. Also, threat models serve as an input to other processes, such as attack surface reduction or designing for security (see below). Threat models that are done later are at best "surveys" for pen test (penetration testing) or areas that need security testing such as fuzzing. After creating a baseline threat model early, plan to iterate on it as the attack surface changes.
 1. Use asset inventory and compliance to appropriately track what makes up a product, and track security artifacts (including threat models) along with the assets they apply to. This enables better automated risk assessment and focusing of security efforts on the specific components or features that change.
 1. **In Azure**, the Microsoft Threat Modeling Tool was updated in 2022 for Azure development. For more information, see [Microsoft Threat Modeling Tool overview - Azure](/azure/security/develop/threat-modeling-tool)
 
@@ -42,7 +42,7 @@ Having a security questionnaire affixed to a security requirements phase that ti
 
 *Product inventory*
 
-Second, maintain a strong asset inventory of the products you are tasked with assessing. Products are growing in complexity. We now have devices in Operational Technology (OT) spaces that have connectivity with sensors (such as passenger rail and vehicles), bus-based networks that talk to other IoT / OT components in the vehicle (such as CANBUS or PROFIBUS), wireless/cellular/Bluetooth for communication with customer devices and cloud back ends, machine learning in the cloud feeding back into the device or a fleet management application, and so on. In such a complex product, it's generally not effective to require traditional SDL modeling of each functional unit in isolation. Having a strong asset inventory enables you to view the entirely of the product stack to see the complete picture, and see the key points that need to evaluate how a new/changed feature impacts product security.
+Second, maintain a strong asset inventory of the products you're tasked with assessing. Products are growing in complexity. We now have devices in Operational Technology (OT) spaces that have connectivity with sensors (such as passenger rail and vehicles), bus-based networks that talk to other IoT / OT components in the vehicle (such as CANBUS or PROFIBUS), wireless/cellular/Bluetooth for communication with customer devices and cloud back ends, machine learning in the cloud feeding back into the device or a fleet management application, and so on. In such a complex product, it's not effective to require traditional SDL modeling of each functional unit in isolation. Having a strong asset inventory enables you to view the entirely of the product stack to see the complete picture, and see the key points that need to evaluate how a new/changed feature impacts product security.
 
 *Granularity and integration*
 
@@ -50,17 +50,17 @@ Establish compliance systems that let you establish and measure compliance metri
 
 *Scale*
 
-Keep a proper asset inventory system, that captures and preserves security artifacts and the output of threat model reviews. This lets you evaluate them for patterns, and make intelligent decisions on how to refine the product security program on a regular basis. Ideally, you can combine requirements-phase security questionnaires, threat modeling results, security assessment results, and results from automated tools to automate a viewpoint of relative risk of a given product (ideally as a "dashboard"), and this can be translated into what security teams should focus on to maximize return on threat modeling investment.
+Keep a proper asset inventory system, that captures and preserves security artifacts and the output of threat model reviews. This lets you evaluate them for patterns, and make intelligent decisions on how to refine the product security program regularly. Ideally, you can combine requirements-phase security questionnaires, threat modeling results, security assessment results, and results from automated tools to automate a viewpoint of relative risk of a given product (ideally as a "dashboard"), and this can be translated into what security teams should focus on to maximize return on threat modeling investment.
 
 ## 2.2 Automated testing
 
 **Summary**
 
-Automated tests are an important way to ensure the quality and safety of your code. They are an integral piece in supporting other areas mentioned in this document, such as Threat Modeling. When paired with other secure coding practices, they help to protect against bugs and vulnerabilities being introduced into the codebase.
+Automated tests are an important way to ensure the quality and safety of your code. They're an integral piece in supporting other areas mentioned in this document, such as Threat Modeling. When paired with other secure coding practices, they help to protect against bugs and vulnerabilities being introduced into the codebase.
 
 **Key attributes**
 
-Tests should be reliable, consistent, and isolated. These tests should cover as much of the code as possible. All new features and bug fixes should be accompanied by corresponding tests to ensure the long-term security and reliability of the code when possible. The best way to ensure automated tests are run and cover all areas is to have them running in as many environments as possible:
+Tests should be reliable, consistent, and isolated. These tests should cover as much of the code as possible. All new features and bug fixes should have corresponding tests to ensure the long-term security and reliability of the code when possible. The best way to ensure automated tests are run and cover all areas is to have them running in as many environments as possible:
 
 - The first place they should run is on the machine that is making the changes. This is most easily done within the IDE that is being used for editing, or as a script on the command line as the developer makes the changes.
 - The next place they should run is as part of the pull request commit/merge process.
@@ -70,11 +70,11 @@ The scope of the tests should increase at each step, with the last step providin
 
 **Continuous use and maintenance**
 
-Test reliability is an important part of maintaining the effectiveness of the testing suite. Test failures should be assigned and investigated, with potential security issues getting high priority and getting updated within a prompt and predetermined timeframe. Ignoring test failures should not be a common practice, but should require strong justification and approval. Test failures due to issues within the test suite itself should be treated the same as other failures, as this presents a lapse in coverage and can cause product issues to be missed.
+Test reliability is an important part of maintaining the effectiveness of the testing suite. Test failures should be assigned and investigated, with potential security issues getting high priority and getting updated within a prompt and predetermined timeframe. Ignoring test failures shouldn't be a common practice, but should require strong justification and approval. Test failures due to issues within the test suite itself should be treated the same as other failures, as this presents a lapse in coverage and can cause product issues to be missed.
 
 **Kinds of tests, especially unit tests**
 
-There are several types of automated tests, and while not all are applicable to all applications, a good test suite will contain a selection of several different types. Code Based Test Cases such as unit tests are the most common and most integral, being applicable to all applications and intentionally covering as many code paths as possible for correctness. These tests should be small, quick, and not affect the state of the machine, so that the full suite of these can be run quickly and often. As part of the wider test infrastructure running remotely, these tests can also easily be run on multiple machine hardware setups, which can catch issues that cannot always be reproduced on a single developer's machine.
+There are several types of automated tests, and while not all are applicable to all applications, a good test suite will contain a selection of several different types. Code Based Test Cases such as unit tests are the most common and most integral, being applicable to all applications and intentionally covering as many code paths as possible for correctness. These tests should be small, quick, and not affect the state of the machine, so that the full suite of these can be run quickly and often. As part of the wider test infrastructure running remotely, these tests can also easily be run on multiple machine hardware setups, which can catch issues that can't always be reproduced on a single developer's machine.
 
 **Visual Studio**
 
@@ -89,7 +89,7 @@ Tests that do deeper verification and take longer to run, such as static analysi
 
 ## 2.3 Code-based, or static, analysis
 
-**Summary** Static code/binary analysis should be enabled by default, to be secure by default. Static analysis is a compiler technology that analyzes a program (either in source code form or in compiled executable form) for required safety and security policies when it is being built, not at execution time when an exploit can occur on the customer's machine.
+**Summary** Static code/binary analysis should be enabled by default, to be secure by default. Static analysis is a compiler technology that analyzes a program (either in source code form or in compiled executable form) for required safety and security policies when it's being built, not at execution time when an exploit can occur on the customer's machine.
 
 **Recommendations** Microsoft recommends that you:
 
@@ -100,7 +100,7 @@ Tests that do deeper verification and take longer to run, such as static analysi
 
 **Key tools** Be aware of and use the following:
 
-- [Code analysis documentation - C++ and .NET](visualstudio/code-quality/)
+- [Code analysis documentation - C++ and .NET](/visualstudio/code-quality/)
 - [`/analyze` - Visual C++ compiler](../build/reference/analyze-code-analysis.md)
 - [`/W4` and `/WX` - Visual C++ compiler](../build/reference/compiler-option-warning-level.md)
 - [Use the C++ Core Guidelines Checkers](using-the-cpp-core-guidelines-checkers.md)
@@ -111,7 +111,7 @@ Tests that do deeper verification and take longer to run, such as static analysi
 Notes:
 
 - `/analyze` enables static analysis of C++ code at compile time to identify critical security and reliability code vulnerabilities. It should be enabled throughout a C++ program's entire development timeline. Start by enabling at least the "Microsoft Native Recommended" by default as a minimum baseline, then consult the documentation for how to specify additional rules beyond those, notably the C++ Core Guidelines rules, as required by your engineering policies. The source code Static Analysis capability is available in both the Visual C++ IDE and in the command-line Build Tools.
-- `/W4` and `/WX` should be enabled wherever possible, to ensure you compile your code cleanly at high warning levels (`W4`) and treat warnings as errors that must be fixed (`WX`). Note that these include warnings from the compiler back-end that can and do find uninitialized uses that other static analysis tools cannot, because the compiler does perform interprocedural analysis and inlining when the checking runs.
+- `/W4` and `/WX` should be enabled wherever possible, to ensure you compile your code cleanly at high warning levels (`W4`) and treat warnings as errors that must be fixed (`WX`). Note that these include warnings from the compiler back-end that can and do find uninitialized uses that other static analysis tools can't, because the compiler does perform interprocedural analysis and inlining when the checking runs.
 - BinSkim binary analysis ensures that projects enable a broad range of security features and generate outputs (such as PDBs) that maximize chain-of-custody verification and efficiency of security response. Microsoft recommends running the BinSkim tool to analyze all executable binaries (`.sys`, `.dll` or `.exe`) produced for or consumed by your programs.  Consult the BinSkim User Guide linked above for how to install and run the binary analyzer, and the full list of supported security standards. Microsoft recommends that you fix all issues reported as "errors" by the BinSkim tool. Microsoft recommends caution and selectively fixing issues reported as "warnings," as resolving these problems may have performance implications or simply may not be required for all scenarios.
 
 **In Azure and GitHub CI/CD** Microsoft recommends always enabling source code and binary static analysis in release CI/CD scenarios. Running source code analysis in context of the local developer machine will prevent introduction of issues early and lower overall costs. The rate-of-introduction of binary-level issues tends to be slower than in program code. And so it may be sufficient to run this analysis in less frequent pre-release CI/CD scenarios (such as nightly or weekly builds) rather than on every developer commit or pull request.
@@ -120,11 +120,11 @@ Notes:
 
 **Summary**
 
-Don't hardcode secrets within software. To find and remove secrets from the source code, it is most efficient to use a reliable tool that can scan the entire source code and find them. Once found, move them to a safe place following the guideline for secure storage and use of secrets.
+Don't hardcode secrets within software. To find and remove secrets from the source code, it's most efficient to use a reliable tool that can scan the entire source code and find them. Once found, move them to a safe place following the guideline for secure storage and use of secrets.
 
 **Problem**
 
-Secrets for software refer to entities that establish identity and provide access to resources or are used to protect important or sensitive data by signing or encrypting the data (for example, passwords, storage keys, connection strings, private keys). It is tempting to keep secrets in the software product so they can be readily obtained when needed by the software. However, these hardcoded secrets (either in plain text or encrypted but with easily discoverable decryption key) can lead to severe or catastrophic security incidents as they are easily discovered and can be used to compromise your service and data.
+Secrets for software refer to entities that establish identity and provide access to resources or are used to protect important or sensitive data by signing or encrypting the data (for example, passwords, storage keys, connection strings, private keys). It's tempting to keep secrets in the software product so they can be readily obtained when needed by the software. However, these hardcoded secrets (either in plain text or encrypted but with easily discoverable decryption key) can lead to severe or catastrophic security incidents as they're easily discovered and can be used to compromise your service and data.
 
 **Prevention**
 
@@ -136,7 +136,7 @@ Secrets hardcoded in source code (as plain text or encrypted blob) are a securit
 - Don't encrypt a secret with an easily discoverable decryption key. For example, don't store a PFX file along with a file that contains its password.
 - Don't encrypt a secret with a weak decryption. For example, don't encrypt a PFX file with a weak or common password.
 - Avoid putting encrypted credentials in source code. Instead, use placeholders in your source that will be replaced with secrets from approved stores using the capabilities provided by your chosen deployment system. See below for more details.
-- Apply the same principles to secrets in environments such as testing, staging, and so on, as you do in production deployments. Adversaries often target non-production systems as they are less well managed, then use them to pivot into production.
+- Apply the same principles to secrets in environments such as testing, staging, and so on, as you do in production deployments. Adversaries often target non-production systems as they're less well managed, then use them to pivot into production.
 - Don't share secrets between deployments (for example, testing, staging, production).
 
 While not directly related to hardcoded secrets, also remember securing secrets for your test, development, and production:
@@ -153,7 +153,7 @@ Legacy components of your product may contain hidden hardcoded secrets in their 
 
 **Remediation**
 
-When credentials are found in your source code, the immediate urgent need is to invalidate the exposed key and perform a risk analysis based on exposure. If there is a running system that needs to stay up, if a secret manager needs to be put into play, remediation should follow these steps:
+When credentials are found in your source code, the immediate urgent need is to invalidate the exposed key and perform a risk analysis based on exposure. If there's a running system that needs to stay up, if a secret manager needs to be put into play, remediation should follow these steps:
 
 1. If remediation allows switch-over to managed identities or requires dropping in a secret manager such as Azure Key Vault (AKV), complete that work, and redeploy with updated identity/key.
 1. Invalidate the exposed secret.
@@ -210,7 +210,7 @@ Binary hardening is done by applying compile-time security controls. These inclu
 
 Microsoft provides a set of facilities specific to C++ projects to help developers write and ship safer and more secure code. C++ developers should also adhere to security standards common to languages that generate executable code. Microsoft maintains a public OSS binary checker, BinSkim, that helps enforce use of many protections described below. For more information about BinSkim, see [Binskim user guide | GitHub](https://github.com/microsoft/binskim/blob/main/docs/UserGuide.md)
 
-Binary-level controls differ according to where they are applied in the engineering process. It is useful to distinguish among compiler and linker options that: are strictly compile time, alter code generation with run-time overhead, and alter code generation to achieve compatibility with OS protections.
+Binary-level controls differ according to where they're applied in the engineering process. It's useful to distinguish among compiler and linker options that: are strictly compile time, alter code generation with run-time overhead, and alter code generation to achieve compatibility with OS protections.
 
 Developer settings will tend towards enabling maximal static analysis, the production of private data to accelerate debugging, and so on. Release builds will be tuned to an appropriate combination of security, performance, and other code generation concerns. Release processes must be configured to properly generate and manage public vs. privately consumed build data (for example, public vs. private symbols).
 
@@ -224,7 +224,7 @@ Code should utilize development methodologies, language versions, framework, API
 
 - See [C++ Core Guidelines' Guideline Support Library (GSL)](https://github.com/isocpp/CppCoreGuidelines) for guidance to write modern, safe, and consistent C++ code that follows best practices and avoids common pitfalls.
 - See [Microsoft GSL implementation](https://github.com/microsoft/GSL) for functions and types that the C++ Core Guidelines suggest you use.
-- [Resource-safe C++ containers, C runtime library (CRT) memory overflow protections](???) Prefer [`std::vector`](https://learn.microsoft.com/cpp/standard-library/vector-class) and [`std::string`](https://learn.microsoft.com/cpp/standard-library/string), which are resource-safe. If you must use C data, use the [secure versions of CRT functions](https://learn.microsoft.com/cpp/c-runtime-library/security-features-in-the-crt?view=msvc-170) which are designed to help prevent memory corruption due to buffer misuse and undefined language behaviors.
+- [Resource-safe C++ containers, C runtime library (CRT) memory overflow protections](???) Prefer [`std::vector`](../cpp/standard-library/vector-class.md) and [`std::string`](../cpp/standard-library/string.md), which are resource-safe. If you must use C data, use the [secure versions of CRT functions](../cpp/c-runtime-library/security-features-in-the-crt.md), which are designed to help prevent memory corruption due to buffer misuse and undefined language behaviors.
 - The [SafeInt library](/cpp/safeint/safeint-library) protects against integer overflow in mathematical and comparison operations.
 
 **Consume secure dependencies**
@@ -273,7 +273,7 @@ At the software level, confidential data may be transmitted to attackers if unex
 
 **Summary**
 
-Black box tests are tests that validate the components without knowledge or need of the inner workings, they are meant to test the end-to-end functionality of the features in the product at virtually at any layer or level. These include all functional tests, UI tests, performance tests, and integration tests. These are valuable for covering general reliability and functional correctness, and ensuring the product behaves as expected.
+Black box tests are tests that validate the components without knowledge or need of the inner workings, they're meant to test the end-to-end functionality of the features in the product at virtually at any layer or level. These include all functional tests, UI tests, performance tests, and integration tests. These are valuable for covering general reliability and functional correctness, and ensuring the product behaves as expected.
 
 **Relation to other sections** 
 
@@ -299,7 +299,7 @@ Azure DevOps can also help manage and validate these tests with the use of Test 
 
 **Summary**
 
-Code-based test cases are an integral part of maintaining the security and reliability of your product. These tests should be small and fast and should not have an impact on each other so they can be run in parallel. This makes it easy for developers to run these tests locally on their machine any time they make changes to the code without worrying about slowing down their development cycle.
+Code-based test cases are an integral part of maintaining the security and reliability of your product. These tests should be small and fast and shouldn't have an impact on each other so they can be run in parallel. This makes it easy for developers to run these tests locally on their machine any time they make changes to the code without worrying about slowing down their development cycle.
 
 **Types, and relation to other sections**
 
@@ -316,9 +316,9 @@ The test explorer tools in Visual Studio make it easy to run these tests frequen
 For more information, see:
 
 - [Unit testing fundamentals - Visual Studio (Windows)](/visualstudio/test/unit-test-basics) - an introduction and overview
-- [Run unit tests with Test Explorer - Visual Studio (Windows)](/visualstudio/test/run-unit-tests-with-test-explorer) - a deeper look at what's available to help manage the potentially large set of unit tests with the Test Explorer
+- [Run unit tests with Test Explorer - Visual Studio (Windows)](/visualstudio/test/run-unit-tests-with-test-explorer#group-and-filter-the-test-list) - a deeper look at what's available to help manage the potentially large set of unit tests with the Test Explorer
 
-Visual Studio also comes with tools for tracking the code coverage that allow developers to ensure that code changes they make are covered by existing tests, or adding new tests to cover new and untested code paths. It also shows the code coverage percentage to ensure it is maintained above a target level for confidence in overall code quality.
+Visual Studio also comes with tools for tracking the code coverage that allow developers to ensure that code changes they make are covered by existing tests, or adding new tests to cover new and untested code paths. It also shows the code coverage percentage to ensure it's maintained above a target level for confidence in overall code quality.
 
 For information about these tools, see [Code coverage testing - Visual Studio (Windows)](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
 
@@ -339,11 +339,10 @@ Since they test for bug regressions, these tests should be quick and easy to run
 **Visual Studio**
 
  Using Visual Studio, it's easy to add tests to the suite when making the changes to fix the bug, and then quickly run the tests and code coverage to ensure all new cases are considered. Referencing the bug ID from your issue tracking system in your code where you write the test is a good way to connect regression tests to the corresponding issues. For even more robust tracking, using Azure DevOps boards, test plans, and Visual Studio to associate tests, test cases, and issues can keep track of all aspects of an issue and its corresponding tests. For more information, see:
-- [Associate automated tests with test cases - Azure Test Plans](https://learn.microsoft.com/azure/devops/test/associate-automated-test-with-test-case?view=azure-devops)
-- [Link work items to other objects - Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/notifications/add-links-to-work-items?toc=%2Fazure%2Fdevops%2Fboards%2Ftoc.json&view=azure-devops)
+- [Associate automated tests with test cases - Azure Test Plans](/azure/devops/test/associate-automated-test-with-test-case)
+- [Link work items to other objects - Azure DevOps](/azure/devops/organizations/notifications/add-links-to-work-items)
 
-Eventually, integrating these tests into the unit testing area that is supposed to cover the code section helps keep the test suite organized and easier to manage. Leveraging the Test Explorer's test grouping is a good way to keep track of tests that belong together as well. For more information, see:
-- [Run unit tests with Test Explorer - Visual Studio (Windows)](/visualstudio/test/run-unit-tests-with-test-explorer#group-and-filter-the-test-list)
+Eventually, integrating these tests into the unit testing area that is supposed to cover the code section helps keep the test suite organized and easier to manage. Leveraging the Test Explorer's test grouping is a good way to keep track of tests that belong together as well. For more information, see [Run unit tests with Test Explorer - Visual Studio (Windows)](/visualstudio/test/run-unit-tests-with-test-explorer#group-and-filter-the-test-list)
 
 ## 2.9 Fuzzing
 
@@ -352,15 +351,15 @@ Fuzzing (also known as fuzz testing) is an automated software testing technique 
 
 **Guidance**
 
-Use fuzzing on all software that may process untrusted inputs that an attacker could control. If you are building a new application and its associated test suite, include fuzzing for key modules as early as possible. Running fuzzing for the first time on a piece of software nearly always uncovers actual vulnerabilities that were previously unknown. Once you start fuzzing, never stop.
+Use fuzzing on all software that may process untrusted inputs that an attacker could control. If you're building a new application and its associated test suite, include fuzzing for key modules as early as possible. Running fuzzing for the first time on a piece of software nearly always uncovers actual vulnerabilities that were previously unknown. Once you start fuzzing, never stop.
 
 **Relation to other sections**
 
 When fuzzing reports a failure, it always naturally provides a reproducible test case that demonstrates the bug. This test case can be reproduced, resolved, and then added to the Historical Test Cases.
 
-When using both sanitizers (for example, [Address Sanitizer (ASAN)](https://learn.microsoft.com/cpp/sanitizers/asan?view=msvc-170)) and fuzzing:
+When using both sanitizers (for example, [Address Sanitizer (ASAN)](../cpp/sanitizers/asan.md) and fuzzing:
 - First run your normal tests with sanitizers enabled to see if there are issues, then once the code is sanitizer-clean start fuzzing.
-- For C or C++, there are compilers that automate injection of runtime assertions and meta-data that enable Asan and LSan. When compiled for ASan and LSan, the resulting binaries link with a runtime library that can precisely diagnose [15+ categories of memory safety errors](https://learn.microsoft.com/cpp/sanitizers/asan?view=msvc-170#error-types) with zero false positives. For C or C++ when you have source, use [LibFuzzer](https://www.llvm.org/docs/LibFuzzer.html) which is enabled by ASAN.
+- For C or C++, there are compilers that automate injection of runtime assertions and meta-data that enable Asan and LSan. When compiled for ASan and LSan, the resulting binaries link with a runtime library that can precisely diagnose [15+ categories of memory safety errors](../cpp/sanitizers/asan.md#error-types) with zero false positives. For C or C++ when you have source, use [LibFuzzer](https://www.llvm.org/docs/LibFuzzer.html), which is enabled by ASAN.
 - For libraries written in Java, C#, Python, Rust, and so on, use the [AFL++ framework](https://aflplus.plus/).
 
 **Key qualities**
@@ -368,7 +367,7 @@ When using both sanitizers (for example, [Address Sanitizer (ASAN)](https://lear
 - Fuzzing finds vulnerabilities often missed by static program analysis, exhaustive feature testing and manual code inspection.
 - Fuzzing is an effective way to find security and reliability bugs in software, so much so that the [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/) requires fuzzing at every untrusted interface of every product (see also Threat Modeling).
 - Always use fuzzing for software that may process untrusted inputs.
-- Fuzzing is particularly effective for standalone applications with large data parsers.
+- Fuzzing is effective for standalone applications with large data parsers.
 
 **Azure and GitHub CI/CD**
 
@@ -382,7 +381,7 @@ Within the scope of Microsoft Visual C++ on Windows, Microsoft recommends:
 
 - Prefer TypeScript, JavaScript, and ASP.NET for web applications.
 - Don't write  web extensions in C++. Microsoft has banned using ActiveX.
-- When code is compiled to Emscripten/WASM, it is no longer C++ and other tools apply.
+- When code is compiled to Emscripten/WASM, it's no longer C++ and other tools apply.
 - Microsoft provides [RESTler, a stateful REST API fuzzer](https://github.com/microsoft/restler-fuzzer).
 
 **Overview and key qualities**
