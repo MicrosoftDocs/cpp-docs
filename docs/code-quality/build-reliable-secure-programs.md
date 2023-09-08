@@ -224,8 +224,8 @@ Code should utilize development methodologies, language versions, framework, API
 
 - See [C++ Core Guidelines' Guideline Support Library (GSL)](https://github.com/isocpp/CppCoreGuidelines) for guidance to write modern, safe, and consistent C++ code that follows best practices and avoids common pitfalls.
 - See [Microsoft GSL implementation](https://github.com/microsoft/GSL) for functions and types that the C++ Core Guidelines suggest you use.
-- [Resource-safe C++ containers, C runtime library (CRT) memory overflow protections](???) Prefer [`std::vector`](../cpp/standard-library/vector-class.md) and [`std::string`](../standard-library/string.md), which are resource-safe. If you must use C data, use the [secure versions of CRT functions](../c-runtime-library/security-features-in-the-crt.md), which are designed to help prevent memory corruption due to buffer misuse and undefined language behaviors.
-- The [SafeInt library](../safeint/safeint-library) protects against integer overflow in mathematical and comparison operations.
+- [Resource-safe C++ containers, C runtime library (CRT) memory overflow protections](???) Prefer [`std::vector`](../standard-library/vector-class.md) and [`std::string`](../standard-library/string.md), which are resource-safe. If you must use C data, use the [secure versions of CRT functions](../c-runtime-library/security-features-in-the-crt.md), which are designed to help prevent memory corruption due to buffer misuse and undefined language behaviors.
+- The [SafeInt library](../safeint/safeint-library.md) protects against integer overflow in mathematical and comparison operations.
 
 **Consume secure dependencies**
 
