@@ -176,9 +176,8 @@ To safeguard cryptographic keys and other secrets used by cloud apps and service
 
 If an exposure compromises certain customer data/PII, it may require other compliance/reporting requirements.
 
-Remove the now-invalidated secrets from your source code, and replace them with alternative methods that don't expose the secrets directly in your source code. Look for opportunities to eliminate secrets where possible by using tools like MSI, dMSI, Azure AD, or dKDS. You can update your authentication methods to take advantage of managed identities (MSI) via Azure Active Directory (AAD). Only use approved stores to store and manage secrets such as Azure Key Vault (AKV). For more information, see:
+Remove the now-invalidated secrets from your source code, and replace them with alternative methods that don't expose the secrets directly in your source code. Look for opportunities to eliminate secrets where possible by using tools like dMSI, Azure AD, or dKDS. You can update your authentication methods to take advantage of managed identities via Azure Active Directory (AAD). Only use approved stores to store and manage secrets such as Azure Key Vault (AKV). For more information, see:
 
-- [MSI: Server to server authentication](https://review.learn.microsoft.com/identity/microsoft-identity-platform/msa-server-to-server?branch=main)
 - [dMSI: dSTS managed service identity](https://accessmanagementdocs.azurewebsites.net/dsts/advanced/dMSISupportDetails.html)
 - [Azure AD: Implementing auto-rotation using Azure Active Directory (AAD)](https://eng.ms/docs/products/onecert-certificates-key-vault-and-dsms/key-vault-dsms/autorotationandecr/scenarios/aad)
 - [dKDS: Datacenter key distribution service](https://msazure.visualstudio.com/AzureCoreSecurityServices/_wiki/wikis/AzureCoreSecurityServices.wiki/20522/Key-Distribution-Service-(dKDS))
@@ -242,7 +241,7 @@ Code should utilize development methodologies, language versions, framework, API
 
 - See [C++ Core Guidelines' Guideline Support Library (GSL)](https://github.com/isocpp/CppCoreGuidelines) for guidance to write modern, safe, and consistent C++ code that follows best practices and avoids common pitfalls.
 - See [Microsoft GSL implementation](https://github.com/microsoft/GSL) for functions and types that the C++ Core Guidelines suggest you use.
-- [Resource-safe C++ containers, C runtime library (CRT) memory overflow protections](???) Prefer [`std::vector`](../standard-library/vector-class.md) and [`std::string`](../standard-library/string.md), which are resource-safe. If you must use C data, use the [secure versions of CRT functions](../c-runtime-library/security-features-in-the-crt.md), which are designed to help prevent memory corruption due to buffer misuse and undefined language behaviors.
+- Resource-safe C++ containers, C runtime library (CRT) memory overflow protections: Prefer [`std::vector`](../standard-library/vector-class.md) and [`std::string`](../standard-library/string.md), which are resource-safe. If you must use C data, use the [secure versions of CRT functions](../c-runtime-library/security-features-in-the-crt.md), which are designed to help prevent memory corruption due to buffer misuse and undefined language behaviors.
 - The [SafeInt library](../safeint/safeint-library.md) protects against integer overflow in mathematical and comparison operations.
 
 **Consume secure dependencies**
