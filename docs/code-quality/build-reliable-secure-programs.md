@@ -291,25 +291,25 @@ At the software level, confidential data may be transmitted to attackers if unex
 
 **Summary**
 
-Black box tests are tests that validate the components without knowledge or need of the inner workings, they're meant to test the end-to-end functionality of the features in the product at virtually at any layer or level. These include all functional tests, UI tests, performance tests, and integration tests. These are valuable for covering general reliability and functional correctness, and ensuring the product behaves as expected.
+Black box tests don't rely on knowing the tested component's inner workings. Black box tests are designed to test the end-to-end functionality of the features in the product at at any layer or level. Black box tests can be functional tests, UI tests, performance tests, and integration tests. Black box tests are valuable for measuring general reliability and functional correctness, and ensuring that the product behaves as expected.
 
 **Relation to other sections** 
 
-These types of requirement-based tests are useful for validating the assumptions made in the Threat Model as well as covering potential threats as brought up in that section. These tests are useful for testing the integration between separate components of the product, especially ones that are across trust boundaries as described in the threat model. Black box test cases are also useful for testing all kinds of edge cases for user input validation. Both known edge case and error case testing is useful, as well as Fuzzing for less obvious cases.
+These types of requirement-based tests are useful for validating the assumptions made in the Threat Model and covering potential threats as brought up in that section. These tests are useful for testing the integration between separate components of the product, especially ones that are across trust boundaries as described in the threat model. Black box test cases are also useful for testing all kinds of edge cases for user input validation. Testing known edge cases and error cases are both useful. Fuzzing is also useful to test less obvious cases.
 
 **Automation and regression**
 
-Run these tests on a regular basis and compare the results to previous runs to catch breaking changes or performance regressions. Also, running these tests on many different machines and installation setups can help cover any issues that may arise from different architectures or setup changes.
+Run these tests regularly, and compare the results to previous runs to catch breaking changes or performance regressions. Also, running these tests on many different machines and installation setups can help cover any issues that may arise from different architectures or setup changes.
 
 **Crash dumps**
 
-These tests help find issues with reliability, being able to test many different scenarios that may run into crashes, hangs, deadlocks, and so on. By collecting crash dumps as part of test failures, you can import those into Visual Studio to further investigate what areas are hitting these issues. Along with that, functional tests can be run from within the Visual Studio IDE, making replicating failures and debugging them to see exactly where within the black box of the product the test fails easily, as well as testing code changes and fixes quickly.
+These tests help find issues with reliability, being able to test many different scenarios that may run into crashes, hangs, deadlocks, and so on. By collecting crash dumps as part of test failures, you can import the dumps directly into Visual Studio to further investigate what parts of the code are hitting these issues. Running functional tests from within Visual Studio makes it easy to replicate and debug failures, by showing you exactly where within the black box of the product the test fails, and by letting you test code changes and fixes quickly.
 
 To get started with debugging tests, see [Debug unit tests with Test Explorer - Visual Studio (Windows)](/visualstudio/test/debug-unit-tests-with-test-explorer)
 
 **In Azure**
 
-Azure DevOps can also help manage and validate these tests with the use of Test Plans. These can be used to ensure sign off with manual validation, as well as run automated tests associated with product requirements. More information on Azure Test Plans and using them to run automated testing can be found here:
+Azure DevOps can also help manage and validate these tests with the use of Test Plans. These can be used to ensure sign off with manual validation, and to run automated tests associated with product requirements. More information on Azure Test Plans and using them to run automated testing can be found here:
 - [What is Azure Test Plans? Manual, exploratory, and automated test tools. - Azure Test Plans](/azure/devops/test/overview)
 - [Run automated tests from test plans - Azure Test Plans](/azure/devops/test/run-automated-tests-from-test-hub)
 
