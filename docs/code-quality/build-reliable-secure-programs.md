@@ -84,7 +84,7 @@ Visual Studio Test Explorer natively supports many of the most popular C++ testi
 
 Tests that do deeper verification and take longer to run, such as static analysis, component detection, and so on, are good candidates for pull request testing or continuous integration testing. These validations are easily set up through Azure DevOps or GitHub [Actions](https://docs.github.com/en/actions) and can be set to run automatically and block checking in code if any of these validations fails. Having these blockers helps ensure that all code being checked in is secure based on these more rigorous checks being run. This can be done by leveraging Azure Pipelines and Azure DevOps Build Validation, as described here:
 
-- [Git branch policies and settings - Azure Repos](https://learn.microsoft.com/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser#build-validation)
+- [Git branch policies and settings - Azure Repos](/azure/devops/repos/git/branch-policies#build-validation)
 - [Defining the mergeability of pull requests | GitHub Docs](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests)
 
 ## 2.3 Code-based, or static, analysis
@@ -224,8 +224,8 @@ Code should utilize development methodologies, language versions, framework, API
 
 - See [C++ Core Guidelines' Guideline Support Library (GSL)](https://github.com/isocpp/CppCoreGuidelines) for guidance to write modern, safe, and consistent C++ code that follows best practices and avoids common pitfalls.
 - See [Microsoft GSL implementation](https://github.com/microsoft/GSL) for functions and types that the C++ Core Guidelines suggest you use.
-- [Resource-safe C++ containers, C runtime library (CRT) memory overflow protections](???) Prefer [`std::vector`](../cpp/standard-library/vector-class.md) and [`std::string`](../cpp/standard-library/string.md), which are resource-safe. If you must use C data, use the [secure versions of CRT functions](../cpp/c-runtime-library/security-features-in-the-crt.md), which are designed to help prevent memory corruption due to buffer misuse and undefined language behaviors.
-- The [SafeInt library](/cpp/safeint/safeint-library) protects against integer overflow in mathematical and comparison operations.
+- [Resource-safe C++ containers, C runtime library (CRT) memory overflow protections](???) Prefer [`std::vector`](../cpp/standard-library/vector-class.md) and [`std::string`](../standard-library/string.md), which are resource-safe. If you must use C data, use the [secure versions of CRT functions](../c-runtime-library/security-features-in-the-crt.md), which are designed to help prevent memory corruption due to buffer misuse and undefined language behaviors.
+- The [SafeInt library](../safeint/safeint-library) protects against integer overflow in mathematical and comparison operations.
 
 **Consume secure dependencies**
 
