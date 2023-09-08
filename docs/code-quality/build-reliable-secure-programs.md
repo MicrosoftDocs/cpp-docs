@@ -127,17 +127,17 @@ Notes:
 - `/W4` and `/WX` should be enabled wherever possible, to ensure you compile your code cleanly at high warning levels (`W4`) and treat warnings as errors that must be fixed (`WX`). These options enable warnings from the compiler back-end that can find uninitialized data errors that other static analysis tools can't, because the errors become visible to the compiler only after back-end interprocedural analysis and inlining.
 - BinSkim binary analysis ensures that projects enable a broad range of security features. BinSkim generates outputs, such as PDBs, that make it easier to verify chain-of-custody and to respond efficiently to security issues. Microsoft recommends running the BinSkim tool to analyze all executable binaries (`.sys`, `.dll` or `.exe`) produced for or consumed by your programs.  The BinSkim User Guide includes a list of supported security standards. Microsoft recommends that you fix all issues reported as "errors" by the BinSkim tool. For issues reported as only "warnings," be cautious and address them selectively, because resolving these problems can have performance implications or may not be required for all scenarios.
 
-**In Azure and GitHub CI/CD** Microsoft recommends always enabling source code and binary static analysis in release CI/CD scenarios. Running source code analysis in context of the local developer machine prevents introduction of bugs early, and lowers overall costs. The rate-of-introduction of binary-level issues tends to be slower than in program code. And so it may be sufficient to run this analysis in less frequent pre-release CI/CD scenarios (such as nightly or weekly builds) rather than on every developer commit or pull request.
+**In Azure and GitHub CI/CD** Microsoft recommends always enabling source code and binary static analysis in release CI/CD scenarios. Source code bugs usually outnumber binary level bugs, so you should run source code analysis right on the local developer's machine to catch source bugs as early as possible and minimize overall costs. Binary-level issues tends to be introduced more slowly than in program code. And so it may be sufficient to run this analysis in less frequent pre-release CI/CD scenarios (such as nightly or weekly builds) rather than on every developer commit or pull request.
 
 ## 2.4 Review for hardcoded secrets
 
 **Summary**
 
-Don't hardcode secrets within software. To find and remove secrets from the source code, it's most efficient to use a reliable tool that can scan the entire source code and find them. Once found, move them to a safe place following the guideline for secure storage and use of secrets.
+Don't hardcode secrets within software. You can find and remove secrets from the source code efficiently by using reliable tools that can scan your entire source code base. Once you find secrets, move them to a safe place following the guideline for secure storage and use of secrets.
 
 **Problem**
 
-Secrets for software refer to entities that establish identity and provide access to resources or are used to protect important or sensitive data by signing or encrypting the data (for example, passwords, storage keys, connection strings, private keys). It's tempting to keep secrets in the software product so they can be readily obtained when needed by the software. However, these hardcoded secrets (either in plain text or encrypted but with easily discoverable decryption key) can lead to severe or catastrophic security incidents as they're easily discovered and can be used to compromise your service and data.
+"Secrets" means entities that establish identity and provide access to resources, or that are used to protect important or sensitive data by signing or encrypting the data. Examples include passwords, storage keys, connection strings, and private keys. It's tempting to keep secrets in the software product so they can be readily obtained when needed by the software. However, these hardcoded secrets can lead to severe or catastrophic security incidents as they're easily discovered and can be used to compromise your service and data.
 
 **Prevention**
 
@@ -148,7 +148,7 @@ Secrets hardcoded in source code (as plain text or encrypted blob) are a securit
 - Don't store clear text credentials in SharePoint, OneNote, file shares, and so on. Or share them via email, IM, and so on.
 - Don't encrypt a secret with an easily discoverable decryption key. For example, don't store a PFX file along with a file that contains its password.
 - Don't encrypt a secret with a weak decryption. For example, don't encrypt a PFX file with a weak or common password.
-- Avoid putting encrypted credentials in source code. Instead, use placeholders in your source that will be replaced with secrets from approved stores using the capabilities provided by your chosen deployment system. See below for more details.
+- Avoid putting encrypted credentials in source code. Instead, use placeholders in your source, and let your deployment system replace them with secrets from approved stores.
 - Apply the same principles to secrets in environments such as testing, staging, and so on, as you do in production deployments. Adversaries often target non-production systems as they're less well managed, then use them to pivot into production.
 - Don't share secrets between deployments (for example, testing, staging, production).
 
@@ -166,9 +166,9 @@ Legacy components of your product may contain hidden hardcoded secrets in their 
 
 **Remediation**
 
-When credentials are found in your source code, the immediate urgent need is to invalidate the exposed key and perform a risk analysis based on exposure. If there's a running system that needs to stay up, if a secret manager needs to be put into play, remediation should follow these steps:
+When credentials are found in your source code, the immediate urgent need is to invalidate the exposed key and perform a risk analysis based on exposure. Even if your system needs to stay running, you can enable a secret manager for remediation using these steps:
 
-1. If remediation allows switch-over to managed identities or requires dropping in a secret manager such as Azure Key Vault (AKV), complete that work, and redeploy with updated identity/key.
+1. If remediation allows switching over to managed identities, or requires dropping in a secret manager such as Azure Key Vault (AKV), first complete that work and then redeploy with updated identity or key.
 1. Invalidate the exposed secret.
 1. Perform auditing/risk assessment of potential damage due to compromise.
 
@@ -176,7 +176,7 @@ To safeguard cryptographic keys and other secrets used by cloud apps and service
 
 If an exposure compromises certain customer data/PII, it may require other compliance/reporting requirements.
 
-Remove the (now-invalidated) secrets from your source code and replace them with alternative methods that won't expose the secrets directly in your source code. Look for opportunities to eliminate secrets where possible by using MSI, dMSI, Azure AD, dKDS, and so on. You can update your authentication methods to take advantage of managed identities (MSI) via Azure Active Directory (AAD). Only use approved stores to store and manage secrets such as Azure Key Vault (AKV). For more details, see:
+Remove the now-invalidated secrets from your source code, and replace them with alternative methods that don't expose the secrets directly in your source code. Look for opportunities to eliminate secrets where possible by using tools like MSI, dMSI, Azure AD, or dKDS. You can update your authentication methods to take advantage of managed identities (MSI) via Azure Active Directory (AAD). Only use approved stores to store and manage secrets such as Azure Key Vault (AKV). For more details, see:
 
 - [MSI: Server to server authentication](https://review.learn.microsoft.com/identity/microsoft-identity-platform/msa-server-to-server?branch=main)
 - [dMSI: dSTS managed service identity](https://accessmanagementdocs.azurewebsites.net/dsts/advanced/dMSISupportDetails.html)
@@ -197,7 +197,7 @@ AzDO users can scan their code through Microsoft Defender for DevOps for known t
 Secret scanning is available on GitHub.com in two forms:
 
 - *Secret scanning alerts for partners.* Runs automatically on all public repositories. Any strings that match patterns that were provided by secret scanning partners are reported directly to the relevant partner.
-- *Secret scanning alerts for users.* You can enable and configure additional scanning for repositories owned by organizations that use GitHub Enterprise Cloud and have a license for GitHub Advanced Security. This includes private and internal repositories.
+- *Secret scanning alerts for users.* You can enable and configure extra scanning for repositories owned by organizations that use GitHub Enterprise Cloud and have a license for GitHub Advanced Security. These tools also support private and internal repositories.
 
 GitHub provides known patterns of secrets for partners and users that can be configured to meet your needs. For more details, please see:
 
