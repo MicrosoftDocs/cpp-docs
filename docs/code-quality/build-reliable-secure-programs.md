@@ -63,7 +63,7 @@ Establish systems to measure compliance using clear metrics.
 
 Keep a proper asset inventory system, that captures and preserves security artifacts and the output of threat model reviews. Having a clear inventory lets you evaluate review outputs for patterns, and make intelligent decisions on how to refine the product security program regularly.
 
-Try to combine requirements-phase security questionnaires, threat modeling results, security assessment results, and results from automated tools. Combining them enables you to automate a viewpoint of relative risk of a given product (ideally as a "dashboard"), to inform your security teams what to focus on to get the best value out of the threat modeling.
+Try to combine requirements-phase security questionnaires, threat modeling results, security assessment results, and results from automated tools. Combining them enables you to automate a viewpoint of relative risk of a given product, ideally as a "dashboard," to inform your security teams what to focus on to get the best value out of the threat modeling.
 
 ## 2.2 Automated testing
 
@@ -75,7 +75,7 @@ Automated tests are an important way to ensure the quality and safety of your co
 
 Tests should be reliable, consistent, and isolated. These tests should cover as much of the code as possible. All new features and bug fixes should have corresponding tests to ensure the long-term security and reliability of the code when possible. The best way to ensure automated tests are run and cover all areas is to have them running in as many environments as possible:
 
-- The first place they should run is on the machine that is making the changes. This is most easily done within the IDE that is being used for editing, or as a script on the command line as the developer makes the changes.
+- The first place they should run is on the machine that is making the changes. Running tests is most easily done within the IDE that is being used for editing, or as a script on the command line as the developer makes the changes.
 - The next place they should run is as part of the pull request commit/merge process.
 - The last place to run tests is as part of a Continuous Integration and Continuous Deployment (CI/CD) pipeline, or on your release candidate builds.
 
@@ -83,19 +83,19 @@ The scope of the tests should increase at each step, with the last step providin
 
 **Continuous use and maintenance**
 
-Test reliability is an important part of maintaining the effectiveness of the testing suite. Test failures should be assigned and investigated, with potential security issues getting high priority and getting updated within a prompt and predetermined timeframe. Ignoring test failures shouldn't be a common practice, but should require strong justification and approval. Test failures due to issues within the test suite itself should be treated the same as other failures, as this presents a lapse in coverage and can cause product issues to be missed.
+Test reliability is an important part of maintaining the effectiveness of the testing suite. Test failures should be assigned and investigated, with potential security issues getting high priority and getting updated within a prompt and predetermined timeframe. Ignoring test failures shouldn't be a common practice, but should require strong justification and approval. Test failures due to issues within the test suite itself should be treated the same as other failures, to prevent a lapse in coverage in which product issues could be missed.
 
 **Kinds of tests, especially unit tests**
 
-There are several types of automated tests, and while not all are applicable to all applications, a good test suite will contain a selection of several different types. Code Based Test Cases such as unit tests are the most common and most integral, being applicable to all applications and intentionally covering as many code paths as possible for correctness. These tests should be small, quick, and not affect the state of the machine, so that the full suite of these can be run quickly and often. As part of the wider test infrastructure running remotely, these tests can also easily be run on multiple machine hardware setups, which can catch issues that can't always be reproduced on a single developer's machine.
+There are several types of automated tests, and while not all are applicable to all applications, a good test suite contains a selection of several different types. Code Based Test Cases such as unit tests are the most common and most integral, being applicable to all applications and intentionally covering as many code paths as possible for correctness. These tests should be small, quick, and not affect the state of the machine, so that the full suite of tests can be run quickly and often. If possible, run tests on many machines that have different hardware setups, because this will catch problems that aren't reproducible on a single type of machine.
 
 **Visual Studio**
 
-Visual Studio Test Explorer natively supports many of the most popular C++ testing frameworks and options to install extensions for more frameworks. This is helpful for running a subset of tests covering the code you're working on, as well as making it easy to debug test failures as they arise. Visual Studio also makes it easy to set up new test suites for existing projects, as well as providing helpful tools such as CodeLens to make it easier to manage these tests. For help writing, running, and managing C/C++ tests with Visual Studio, see [Write unit tests for C/C++ - Visual Studio (Windows)](/visualstudio/test/writing-unit-tests-for-c-cpp).
+Visual Studio Test Explorer natively supports many of the most popular C++ testing frameworks, and has options to install extensions for more frameworks. This flexibility is helpful for running a subset of tests covering the code you're working on, and makes it easy to debug test failures as they arise. Visual Studio also makes it easy to set up new test suites for existing projects, and provides helpful tools such as CodeLens to make it easier to manage these tests. For help writing, running, and managing C/C++ tests with Visual Studio, see [Write unit tests for C/C++ - Visual Studio (Windows)](/visualstudio/test/writing-unit-tests-for-c-cpp).
 
 **In Azure and GitHub CI/CD**
 
-Tests that do deeper verification and take longer to run, such as static analysis, component detection, and so on, are good candidates for pull request testing or continuous integration testing. These validations are easily set up through Azure DevOps or GitHub [Actions](https://docs.github.com/en/actions) and can be set to run automatically and block checking in code if any of these validations fails. Having these blockers helps ensure that all code being checked in is secure based on these more rigorous checks being run. This can be done by leveraging Azure Pipelines and Azure DevOps Build Validation, as described here:
+Tests that do deeper verification and take longer to run, such as static analysis, component detection, and so on, are good candidates for pull request testing or continuous integration testing. You can easily set up these validations through Azure DevOps or GitHub [Actions](https://docs.github.com/en/actions), and can set them to run automatically and to block code checkins if a validation fails. Automated enforcement helps ensure that all code being checked in is secure based on these more rigorous checks being run. This can be done using Azure Pipelines and Azure DevOps Build Validation, as described here:
 
 - [Git branch policies and settings - Azure Repos](/azure/devops/repos/git/branch-policies#build-validation)
 - [Defining the mergeability of pull requests | GitHub Docs](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests)
