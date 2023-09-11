@@ -5,7 +5,7 @@ ms.date: 09/07/2023
 ms.topic: "conceptual"
 ---
 
-# Build reliable and secure apps in C++
+# Build reliable and secure programs
 
 The United States government publication [NISTIR 8397: Guidelines on Minimum Standards for Developer Verification of Software](https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8397.pdf) contains excellent guidance on how to build reliable and secure software in any programming language.
 
