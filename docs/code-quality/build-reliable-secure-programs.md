@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Building reliable and secure apps in C++ by applying NISTIR 8397 guidelines."
-title: Build reliable and secure apps in C++
+description: "Learn more about: Building reliable and secure programs by applying NISTIR 8397 guidelines."
+title: Build reliable and secure programs
 ms.date: 09/07/2023
 ms.topic: "conceptual"
 ---
