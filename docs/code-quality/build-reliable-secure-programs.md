@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: Building reliable and secure programs by applying NISTIR 8397 guidelines."
-title: Build reliable and secure programs
+description: "Learn more about: Building reliable and secure C++ programs by applying NISTIR 8397 guidelines."
+title: Build reliable and secure C++ programs
 ms.date: 09/07/2023
 ms.topic: "conceptual"
 ---
 
-# Build reliable and secure programs
+# Build reliable and secure C++ programs
 
 The United States government publication [NISTIR 8397: Guidelines on Minimum Standards for Developer Verification of Software](https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8397.pdf) contains excellent guidance on how to build reliable and secure software in any programming language.
 
