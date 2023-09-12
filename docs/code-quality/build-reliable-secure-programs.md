@@ -127,7 +127,7 @@ Notes:
 - `/W4` and `/WX` should be enabled wherever possible, to ensure you compile your code cleanly at high warning levels (`W4`) and treat warnings as errors that must be fixed (`WX`). These options enable finding uninitialized data errors that other static analysis tools can't check, because the errors only become visible after the compiler back-end performs interprocedural analysis and inlining.
 - BinSkim binary analysis ensures that projects enable a broad range of security features. BinSkim generates PDBs and other outputs that make it easier to verify chain-of-custody and to respond efficiently to security issues. Microsoft recommends running the BinSkim tool to analyze all executable binaries (`.sys`, `.dll` or `.exe`) produced for or consumed by your programs.  The BinSkim User Guide includes a list of supported security standards. Microsoft recommends that you fix all issues reported as "errors" by the BinSkim tool. Issues reported as "warnings" should be evaluated selectively, because resolving them can have performance implications or may not be necessary.
 
-**In Azure and GitHub CI/CD** Microsoft recommends always enabling source code and binary static analysis in release CI/CD scenarios. Run source code analysis immediately on the local developer's machine, or at least for every commit or pull request. This helps to catch source bugs as early as possible and minimize overall costs. Binary level bugs tend to be introduced more slowly, so it may be sufficient to run binary analysis in less frequent prerelease CI/CD scenarios (such as nightly or weekly builds).
+**In Azure and GitHub CI/CD** Microsoft recommends always enabling source code and binary static analysis in release CI/CD scenarios. Run source code analysis immediately on the local developer's machine, or at least for every commit or pull request, to catch source bugs as early as possible and minimize overall costs. Binary level bugs tend to be introduced more slowly, so it may be sufficient to run binary analysis in less frequent prerelease CI/CD scenarios (such as nightly or weekly builds).
 
 ## 2.4 Review for hardcoded secrets
 
@@ -302,7 +302,7 @@ Run these tests regularly, and compare the results to previous runs to catch bre
 
 **Crash dumps**
 
-These tests help find issues with reliability, being able to test many different scenarios that may run into crashes, hangs, deadlocks, and so on. By collecting crash dumps as part of test failures, you can import the dumps directly into Visual Studio to further investigate what parts of the code are hitting these issues. Running functional tests from within Visual Studio makes it easy to replicate and debug failures, by letting you see into the black box to exactly where the test fails and by letting you test code changes quickly.
+These tests help find issues with reliability, being able to test many different scenarios that may run into crashes, hangs, deadlocks, and so on. By collecting crash dumps as part of test failures, you can import the dumps directly into Visual Studio to further investigate what parts of the code are hitting these issues. If you run functional tests from within Visual Studio, you can easily replicate and debug failures by seeing exactly where inside the black box the test fails, and you can test fixes quickly.
 
 To get started with debugging tests, see [Debug unit tests with Test Explorer - Visual Studio (Windows)](/visualstudio/test/debug-unit-tests-with-test-explorer)
 
@@ -361,7 +361,11 @@ Since they test for bug regressions, these tests should be quick and easy to run
 
 **Visual Studio**
 
-Visual Studio lets you easily add tests to the suite while making the changes to fix the bug, and quickly run the tests and code coverage to ensure all new cases get considered. Referencing the bug ID from your issue tracking system in your code where you write the test is a good way to connect regression tests to the corresponding issues. You can use Azure DevOps boards and test plans together with Visual Studio to associate tests, test cases, and issues, and track of all aspects of an issue and its corresponding tests. For more information, see:
+Visual Studio lets you easily add tests to the suite while making the changes to fix the bug, and quickly run the tests and code coverage to ensure all new cases get considered. Referencing the bug ID from your issue tracking system in your code where you write the test is a good way to connect regression tests to the corresponding issues. Prefer to use Azure DevOps boards and test plans together with Visual Studio:
+- to associate tests, test cases, and issues; and
+- to track of all aspects of an issue and its corresponding tests.
+
+For more information, see:
 - [Associate automated tests with test cases - Azure Test Plans](/azure/devops/test/associate-automated-test-with-test-case)
 - [Link work items to other objects - Azure DevOps](/azure/devops/organizations/notifications/add-links-to-work-items)
 
