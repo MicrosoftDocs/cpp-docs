@@ -176,7 +176,7 @@ To safeguard cryptographic keys and other secrets used by cloud apps and service
 
 If an exposure compromises certain customer data/PII, it may require other compliance/reporting requirements.
 
-Remove the now-invalidated secrets from your source code, and replace them with alternative methods that don't expose the secrets directly in your source code. Look for opportunities to eliminate secrets where possible by using tools like dMSI, Azure AD, or dKDS. You can update your authentication methods to take advantage of managed identities via Azure Active Directory (AAD). Only use approved stores to store and manage secrets such as Azure Key Vault (AKV). For more information, see:
+Remove the now-invalidated secrets from your source code, and replace them with alternative methods that don't expose the secrets directly in your source code. Look for opportunities to eliminate secrets where possible by using tools like Azure AD. You can update your authentication methods to take advantage of managed identities via Azure Active Directory (AAD). Only use approved stores to store and manage secrets such as Azure Key Vault (AKV). For more information, see:
 
 - [Azure AD: Implementing autorotation using Azure Active Directory (AAD)](https://eng.ms/docs/products/onecert-certificates-key-vault-and-dsms/key-vault-dsms/autorotationandecr/scenarios/aad)
 
