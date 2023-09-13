@@ -17,15 +17,15 @@ This document follows the same structure as NISTIR 8397. Each section:
 
 **Summary**
 
-Threat modeling is valuable, especially when applied in a way that scales to meet your development needs and that reduces noise.
+Threat modeling is a valuable process, especially when applied in a way that scales to meet your development needs and that reduces noise.
 
 **Recommendations**
 
 Threat modeling should be one part of your dynamic Security Development Lifecycle (SDL). We suggest that for your product as a whole, for a specific feature, or for a major design or implementation change:
 
 1. Have a solid, dynamic SDL that allows for early engagement with developer teams and rightsizing of approach.
-1. Apply threat modeling in a targeted way. Don't apply threat modeling to all features, but tactically to complex or critical features. Do apply it regularly instead as part of a top-down product review.
-1. Apply threat modeling early (as with all security requirements), when there's still opportunity to change the design. Also, threat models serve as an input to other processes, such as attack surface reduction or designing for security. Threat models that are done later are at best "surveys" for pen test (penetration testing) or areas that need security testing such as fuzzing. After you create a baseline threat model, plan to continue iterating on it as the attack surface changes.
+1. Apply threat modeling in a targeted way. Apply threat modeling to all features, but tactically start with exposed, complex or critical features. Do apply it regularly instead as part of a top-down product review.
+1. Apply threat modeling early (as with all security requirements), when there's still opportunity to change the design. Also, threat models serve as an input to other processes, such as attack surface reduction or designing for security. Threat models that are created later are at best "surveys" for pen test (penetration testing) or areas that need security testing such as fuzzing. After you create a baseline threat model, plan to continue iterating on it as the attack surface changes.
 1. Use asset inventory and compliance to appropriately track what makes up a product, and track security artifacts (including threat models) along with the assets they apply to. This approach enables better automated risk assessment and focusing of security efforts on the specific components or features that change.
 1. **In Azure**, the Microsoft Threat Modeling Tool was updated in 2022 for Azure development. For more information, see [Microsoft Threat Modeling Tool overview - Azure](/azure/security/develop/threat-modeling-tool)
 
@@ -35,7 +35,7 @@ To properly apply threat modeling and avoid underuse/overuse, we have found that
 
 *Development approach*
 
-First, understand the team's development approach. For teams with agile development workflows that push dozens of changes to production daily, it's not practical or reasonable to require that every functional change has a threat model. Instead, from the start when writing a feature's functional requirements, consider including a security requirements questionnaire. The questionnaire should focus on specific questions about the feature to determine what future aspects of your SDL apply. For example:
+First, understand the team's development approach. For teams with agile development workflows that push dozens of changes to production daily, it's not practical or reasonable to require that every functional change requir an update to the threat model. Instead, from the start when writing a feature's functional requirements, consider including a security requirements questionnaire. The questionnaire should focus on specific questions about the feature to determine what future aspects of your SDL apply. For example:
 - Does the feature make a major change in design of how we provide customer isolation in a multi-tenant environment? If so, consider performing a full threat model.
 - Does a new feature allow file uploads? If so, perhaps what's more appropriate is a web application security assessment.
 - Is this change primarily just a functional UI change? If so, perhaps nothing is needed beyond your traditional automated tooling.
@@ -51,7 +51,7 @@ Second, maintain a strong asset inventory of the products you're tasked with ass
 - machine learning in the cloud feeding back into the device or a fleet management application,
 - and more.
 
-In such complex products, it's not effective to require traditional SDL modeling of each functional unit in isolation. Having a strong asset inventory enables you to view the entirely of the product stack to see the complete picture, and see the key points that need to evaluate how a new/changed feature impacts product security.
+In such complex products, threat modeling is critical and having a strong asset inventory enables you to view the entirely of the product stack to see the complete picture, and see the key points that need to evaluate how a new/changed feature impacts product security.
 
 *Granularity and integration*
 
@@ -109,7 +109,7 @@ Tests that do deeper verification and take longer to run, such as static analysi
 - Enable static analysis for all C++ programs, for both the input source code (before compilation) and the executable binaries (after compilation). "Enable" might mean to run analysis during each build on the developer's machine, or as a separate build to inspect the code later or as a checkin requirement.
 - Incorporate static analysis into CI pipelines as a form of testing.
 - Static analysis by definition comes with false positives, and be prepared to incorporate that fact into your quality feedback loop. Be  quick to enable all low-false-positive warnings up front. Then be proactive to gradually increase the number of rules for which your code base compiles warning-clean as you regularly add more rules that flag important bugs at the expense of gradually higher false positives (initially, before the code base has been cleaned for those rules too).
-- Always use the latest supported versions of Visual Studio, and set up your engineering environment to be able to quickly consume the latest patch releases as soon as they become available, without delaying to the next development stage/cycle.
+- Always use the latest supported versions of Visual Studio, and set up your engineering environment to quickly consume the latest patch releases as soon as they become available, without delaying to the next development stage/cycle.
 
 **Key tools** Be aware of and use the following:
 
@@ -172,16 +172,13 @@ When credentials are found in your source code, the immediate urgent need is to 
 1. Invalidate the exposed secret.
 1. Perform auditing/risk assessment of potential damage due to compromise.
 
-To safeguard cryptographic keys and other secrets used by cloud apps and services, use [Azure Key Vault](https://azure.microsoft.com/products/key-vault).
+To safeguard cryptographic keys and other secrets used by cloud apps and services, use [Azure Key Vault](https://azure.microsoft.com/products/key-vault) with an appropriate access policy.
 
 If an exposure compromises certain customer data/PII, it may require other compliance/reporting requirements.
 
 Remove the now-invalidated secrets from your source code, and replace them with alternative methods that don't expose the secrets directly in your source code. Look for opportunities to eliminate secrets where possible by using tools like dMSI, Azure AD, or dKDS. You can update your authentication methods to take advantage of managed identities via Azure Active Directory (AAD). Only use approved stores to store and manage secrets such as Azure Key Vault (AKV). For more information, see:
 
-- [dMSI: dSTS managed service identity](https://accessmanagementdocs.azurewebsites.net/dsts/advanced/dMSISupportDetails.html)
 - [Azure AD: Implementing autorotation using Azure Active Directory (AAD)](https://eng.ms/docs/products/onecert-certificates-key-vault-and-dsms/key-vault-dsms/autorotationandecr/scenarios/aad)
-- [dKDS: Datacenter key distribution service](https://msazure.visualstudio.com/AzureCoreSecurityServices/_wiki/wikis/AzureCoreSecurityServices.wiki/20522/Key-Distribution-Service-(dKDS))
-- [Key Vault & dSMS & Secrets Management: What is certificate autorotation?](https://eng.ms/docs/products/onecert-certificates-key-vault-and-dsms/key-vault-dsms/autorotationandecr/getstartedcerts#how-do-i-procure-and-store-the-cert)
 
 **Azure DevOps (AzDO)**
 
@@ -264,7 +261,7 @@ Compilation should enable security-relevant compiler checks as breaking errors, 
 
 **Mark binaries as compatible with OS runtime security mitigations**
 
-Compiler settings should opt into code generation features that detect and mitigate malicious code execution, including:
+Compiler and linker settings should opt into code generation features that detect and mitigate malicious code execution, including:
 - Stack corruption prevention
     - [`/SAFESEH` - Image has safe exception handlers](https://aka.ms/SafeExceptionHandlers) - Produces a table of the image's safe exception handlers for x86 binaries.
     - [`/GS` - Buffer Security Check](https://aka.ms/BufferSecurityCheck) - Detects some buffer overruns that overwrite return addresses, exception handler addresses or certain types of parameters.
@@ -407,7 +404,7 @@ Modify your build(s) to support continuous creation of executables that use LibF
 Within the scope of Microsoft Visual C++ on Windows, Microsoft recommends:
 
 - Prefer TypeScript, JavaScript, and ASP.NET for web applications.
-- Don't write  web extensions in C++. Microsoft has banned using ActiveX.
+- Don't write web extensions in C++. Microsoft has deprecated ActiveX.
 - When code is compiled to Emscripten/WASM, it's no longer C++ and other tools apply.
 - Microsoft provides [RESTler, a stateful REST API fuzzer](https://github.com/microsoft/restler-fuzzer).
 
