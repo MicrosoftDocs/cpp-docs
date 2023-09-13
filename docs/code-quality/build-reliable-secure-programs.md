@@ -35,7 +35,7 @@ To properly apply threat modeling and avoid underuse/overuse, we have found that
 
 *Development approach*
 
-First, understand the team's development approach. For teams with agile development workflows that push dozens of changes to production daily, it's not practical or reasonable to require that every functional change requir an update to the threat model. Instead, from the start when writing a feature's functional requirements, consider including a security requirements questionnaire. The questionnaire should focus on specific questions about the feature to determine what future aspects of your SDL apply. For example:
+First, understand the team's development approach. For teams with agile development workflows that push dozens of changes to production daily, it's not practical or reasonable to require that every functional change require an update to the threat model. Instead, from the start when writing a feature's functional requirements, consider including a security requirements questionnaire. The questionnaire should focus on specific questions about the feature to determine what future aspects of your SDL apply. For example:
 - Does the feature make a major change in design of how we provide customer isolation in a multi-tenant environment? If so, consider performing a full threat model.
 - Does a new feature allow file uploads? If so, perhaps what's more appropriate is a web application security assessment.
 - Is this change primarily just a functional UI change? If so, perhaps nothing is needed beyond your traditional automated tooling.
