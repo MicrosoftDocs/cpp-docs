@@ -383,7 +383,7 @@ When fuzzing reports a failure, it always naturally provides a reproducible test
 
 When using both sanitizers such as [Address Sanitizer (ASan)](../sanitizers/asan.md) and fuzzing:
 - First run your normal tests with sanitizers enabled to see if there are issues, then once the code is sanitizer-clean start fuzzing.
-- For C or C++, there are compilers that automate injection of runtime assertions and meta-data that enable ASan and LSan. When compiled for ASan and LSan, the resulting binaries link with a runtime library that can precisely diagnose [15+ categories of memory safety errors](../sanitizers/asan.md#error-types) with zero false positives. For C or C++ when you have source, use [LibFuzzer](https://www.llvm.org/docs/LibFuzzer.html); if you enable ASan, LibFuzzer is enabled automatically.
+- For C or C++, there are compilers that automate injection of runtime assertions and meta-data that enable ASan. When compiled for ASan, the resulting binaries link with a runtime library that can precisely diagnose [15+ categories of memory safety errors](../sanitizers/asan.md#error-types) with zero false positives. For C or C++ when you have source, use [LibFuzzer](https://www.llvm.org/docs/LibFuzzer.html); if you enable ASan, LibFuzzer is enabled automatically.
 - For libraries written in Java, C#, Python, Rust, and so on, use the [AFL++ framework](https://aflplus.plus/).
 
 **Key qualities**
