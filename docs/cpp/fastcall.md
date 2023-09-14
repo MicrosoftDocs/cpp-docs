@@ -18,7 +18,7 @@ The **`__fastcall`** calling convention specifies that arguments to functions ar
 |Name-decoration convention|At sign (\@) is prefixed to names; an at sign followed by the number of bytes (in decimal) in the parameter list is suffixed to names.|
 |Case-translation convention|No case translation performed.|
 |Classes, structs, and unions|Treated as "multibyte" types (regardless of size) and passed on the stack. |
-|Enums and enum classes | Passed by register if their underlying type would be passed by register. For example, if the underlying type is `int` or `unsigned int` of size 8, 16, or 32 bits. |
+|Enums and enum classes | Passed by register if their underlying type is passed by register. For example, if the underlying type is `int` or `unsigned int` of size 8, 16, or 32 bits. |
 
 > [!NOTE]
 > Future compiler versions may use different registers to store parameters.
@@ -27,7 +27,7 @@ Using the [/Gr](../build/reference/gd-gr-gv-gz-calling-convention.md) compiler o
 
 The **`__fastcall`** keyword is accepted and ignored by the compilers that target ARM and x64 architectures; on an x64 chip, by convention, the first four arguments are passed in registers when possible, and additional arguments are passed on the stack. For more information, see [x64 Calling Convention](../build/x64-calling-convention.md). On an ARM chip, up to four integer arguments and eight floating-point arguments may be passed in registers, and additional arguments are passed on the stack.
 
-For non-static class functions, if the function is defined out-of-line, the calling convention modifier does not have to be specified on the out-of-line definition. That is, for class non-static member methods, the calling convention specified during declaration is assumed at the point of definition. Given this class definition:
+For nonstatic class functions, if the function is defined out-of-line, the calling convention modifier doesn't have to be specified on the out-of-line definition. That is, for class non-static member methods, the calling convention specified during declaration is assumed at the point of definition. Given this class definition:
 
 ```cpp
 struct CMyClass {
