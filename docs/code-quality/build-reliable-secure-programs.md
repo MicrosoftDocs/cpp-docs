@@ -23,11 +23,11 @@ Threat modeling is a valuable process, especially when applied in a way that sca
 
 Threat modeling should be one part of your dynamic Security Development Lifecycle (SDL). We suggest that for your product as a whole, for a specific feature, or for a major design or implementation change:
 
-1. Have a solid, dynamic SDL that allows for early engagement with developer teams and rightsizing of approach.
-1. Apply threat modeling in a targeted way. Apply threat modeling to all features, but tactically start with exposed, complex or critical features. Do apply it regularly instead as part of a top-down product review.
-1. Apply threat modeling early (as with all security requirements), when there's still opportunity to change the design. Also, threat models serve as an input to other processes, such as attack surface reduction or designing for security. Threat models that are created later are at best "surveys" for pen test (penetration testing) or areas that need security testing such as fuzzing. After you create a baseline threat model, plan to continue iterating on it as the attack surface changes.
-1. Use asset inventory and compliance to appropriately track what makes up a product, and track security artifacts (including threat models) along with the assets they apply to. This approach enables better automated risk assessment and focusing of security efforts on the specific components or features that change.
-1. **In Azure**, the Microsoft Threat Modeling Tool was updated in 2022 for Azure development. For more information, see [Microsoft Threat Modeling Tool overview - Azure](/azure/security/develop/threat-modeling-tool)
+- Have a solid, dynamic SDL that allows for early engagement with developer teams and rightsizing of approach.
+- Apply threat modeling in a targeted way. Apply threat modeling to all features, but tactically start with exposed, complex or critical features. Do apply it regularly instead as part of a top-down product review.
+- Apply threat modeling early (as with all security requirements), when there's still opportunity to change the design. Also, threat models serve as an input to other processes, such as attack surface reduction or designing for security. Threat models that are created later are at best "surveys" for pen test (penetration testing) or areas that need security testing such as fuzzing. After you create a baseline threat model, plan to continue iterating on it as the attack surface changes.
+- Use asset inventory and compliance to appropriately track what makes up a product, and track security artifacts (including threat models) along with the assets they apply to. This approach enables better automated risk assessment and focusing of security efforts on the specific components or features that change.
+- **In Azure**, the Microsoft Threat Modeling Tool was updated in 2022 for Azure development. For more information, see [Microsoft Threat Modeling Tool overview - Azure](/azure/security/develop/threat-modeling-tool)
 
 **Supporting factors and practices**
 
