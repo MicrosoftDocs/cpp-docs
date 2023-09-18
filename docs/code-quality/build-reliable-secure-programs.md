@@ -35,7 +35,7 @@ To properly apply threat modeling and avoid underuse/overuse, we have found that
 
 *Development approach*
 
-First, understand the team's development approach. For teams with agile development workflows that push dozens of changes to production daily, it's not practical or reasonable to require that every functional change require an update to the threat model. Instead, from the start when writing a feature's functional requirements, consider including a security requirements questionnaire. The questionnaire should focus on specific questions about the feature to determine what future aspects of your SDL apply. For example:
+First, understand the team's development approach. For teams with agile development workflows that push dozens of changes to production daily, it's not practical or reasonable to require a threat model update for every functional change. Instead, from the start when writing a feature's functional requirements, consider including a security requirements questionnaire. The questionnaire should focus on specific questions about the feature to determine what future aspects of your SDL apply. For example:
 - Does the feature make a major change in design of how we provide customer isolation in a multi-tenant environment? If so, consider performing a full threat model.
 - Does a new feature allow file uploads? If so, perhaps what's more appropriate is a web application security assessment.
 - Is this change primarily just a functional UI change? If so, perhaps nothing is needed beyond your traditional automated tooling.
@@ -51,7 +51,7 @@ Second, maintain a strong asset inventory of the products you're tasked with ass
 - machine learning in the cloud feeding back into the device or a fleet management application,
 - and more.
 
-In such complex products, threat modeling is critical and having a strong asset inventory enables you to view the entirely of the product stack to see the complete picture, and see the key points that need to evaluate how a new/changed feature impacts product security.
+In such complex products, threat modeling is critical. Having a strong asset inventory lets you view the entire product stack to see the complete picture, and to see the key places that need to be evaluated for how a new or changed feature impacts product security.
 
 *Granularity and integration*
 
@@ -127,7 +127,7 @@ Notes:
 - `/W4` and `/WX` should be enabled wherever possible, to ensure you compile your code cleanly at high warning levels (`W4`) and treat warnings as errors that must be fixed (`WX`). These options enable finding uninitialized data errors that other static analysis tools can't check, because the errors only become visible after the compiler back-end performs interprocedural analysis and inlining.
 - BinSkim binary analysis ensures that projects enable a broad range of security features. BinSkim generates PDBs and other outputs that make it easier to verify chain-of-custody and to respond efficiently to security issues. Microsoft recommends running the BinSkim tool to analyze all executable binaries (`.sys`, `.dll` or `.exe`) produced for or consumed by your programs.  The BinSkim User Guide includes a list of supported security standards. Microsoft recommends that you fix all issues reported as "errors" by the BinSkim tool. Issues reported as "warnings" should be evaluated selectively, because resolving them can have performance implications or may not be necessary.
 
-**In Azure and GitHub CI/CD** Microsoft recommends always enabling source code and binary static analysis in release CI/CD scenarios. Run source code analysis immediately on the local developer's machine, or at least for every commit or pull request, to catch source bugs as early as possible and minimize overall costs. Binary level bugs tend to be introduced more slowly, so it may be sufficient to run binary analysis in less frequent prerelease CI/CD scenarios (such as nightly or weekly builds).
+**In Azure and GitHub CI/CD** Microsoft recommends always enabling source code and binary static analysis in release CI/CD scenarios. Run source analysis immediately on the local developer's machine, or at least for every commit or pull request, to catch source bugs as early as possible and minimize overall costs. Binary level bugs tend to be introduced more slowly, so it may be sufficient to run binary analysis in less frequent prerelease CI/CD scenarios (such as nightly or weekly builds).
 
 ## 2.4 Review for hardcoded secrets
 
