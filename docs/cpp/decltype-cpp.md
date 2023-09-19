@@ -1,10 +1,9 @@
 ---
 description: "Learn more about: decltype (C++)"
 title: "decltype (C++)"
-ms.date: 09/27/2022
+ms.date: 09/14/2023
 f1_keywords: ["decltype_cpp"]
 helpviewer_keywords: ["operators [C++], decltype", "decltype operator", "operators [C++], type of an expression", "operators [C++], deduce expression type"]
-ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
 ---
 # `decltype` (C++)
 
@@ -40,7 +39,7 @@ The following code example demonstrates some uses of the **`decltype`** type spe
 ```cpp
 int var;
 const int&& fx();
-struct A { double x; }
+struct A { double x; };
 const A* a = new A();
 ```
 

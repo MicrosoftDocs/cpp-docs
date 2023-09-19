@@ -6,6 +6,8 @@ items:
   href: ../code-quality/code-analysis-for-c-cpp-overview.md
 - name: Quickstart
   href: ../code-quality/quick-start-code-analysis-for-c-cpp.md
+- name: Build reliable and secure programs
+  href: ../code-quality/build-reliable-secure-programs.md
 - name: Analyze C/C++ code for defects
   href: ../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md
 - name: Sample project
