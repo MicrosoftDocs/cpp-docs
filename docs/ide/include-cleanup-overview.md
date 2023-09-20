@@ -1,42 +1,40 @@
 ---
-title: "Cleanup #includes in C++ code in Visual Studio"
+title: "Cleanup C++ #includes in Visual Studio"
 description: "Learn about using the C++ code editor in Visual Studio to remove, add, and transitively add the includes needed in your project."
-ms.date: 09/15/2023
+ms.date: 09/21/2023
 ms.topic: "overview"
 ms.custom: intro-overview
 ---
-# Cleanup #includes in C++ code in Visual Studio
+# Cleanup C++ #includes in Visual Studio
 
-Starting with Visual Studio 17.7 preview 3, Visual Studio has an #include cleanup tool that improves the quality of your code in the following ways:
+Starting with Visual Studio 17.7 preview 3, Visual Studio has an `#include` cleanup tool that improves the quality of your code in the following ways:
 - Identifies unused header files in your code and offers to remove them--which improves your build times.
 - Add headers for code that is only working because the header file for it is indirectly included by another header file. This reduces the brittleness of your code because your code doesn't rely on hidden dependencies in other header files.
 
-This article provides an overview of what the #include cleanup tool in Visual Studio can do.
+This article provides an overview of what the `#include` cleanup tool in Visual Studio can do.
 
 ## Configure #include cleanup
 
-To configure the #include cleanup tool, go to **Tools** > **Options** > **C/C++** > **Intellisense** and select **Enable #include cleanup**.
+To configure the `#include` cleanup tool, go to **Tools** > **Options** > **C/C++** > **Intellisense** and select **Enable #include cleanup**.
 
 :::image type="content" source="media/vs2022_include_cleanup_option.png" alt-text="The Tools options dialog for C/C++ > Intellisense. The area in focus is the Enable # include cleanup checkbox and a dropdown for Remove unused includes tags and Add missing includes tags with the values Refactoring only, dimmed, warning, error, and suggestion.":::
 
-Use the following options to configure how you'd like to be notified about unused headers and for adding missing headers:
+Use the following options to configure how you want to be notified about unused headers and for adding missing headers:
 
-**Refactoring only**
-The cleanup tool will only offer to remove unused headers when you invoke refactoring by hovering the cursor over the include to bring up the light bulb. You can also press Ctrl+period while the cursor is in the #include to bring up the refactoring lightbulb:
+**Refactoring only**\
+The cleanup tool only offers to remove unused headers when you invoke refactoring by hovering the cursor over an `#include` to bring up the lightbulb. You can also press Ctrl+period while the cursor is in the `#include` to bring up the refactoring lightbulb:
 
 :::image type="content" source="media/include-cleanup-refactor-lightbulb.png" alt-text="When hovering the cursor over # include iostream, a lightbulb appears with the text that # include iostream is not used in this file.":::
 
-**Suggestion, Warning, Error**
-The #include cleanup tool will offer to remove unused headers and show a suggestion, warning, or error in the Error List window.
+**Suggestion, Warning, Error**\
+The `#include` cleanup tool will offer to remove unused headers and show a suggestion, warning, or error in the Error List window.
 
-**Dimmed**
-The #include cleanup tool will offer to remove unused header by dimming #include in the code editor. Hover your cursor over the dimmed #include to bring up the refactoring options to remove the unused header.
+**Dimmed**\
+The `#include` cleanup tool will offer to remove unused header by dimming `#include` in the code editor. Hover your cursor over the dimmed `#include` to bring up the refactoring options to remove the unused header.
 
+## Direct vs indirect headers
 
-
-## Direct vs Indirect headers
-
-First, some terminology. Direct headers are headers that you explicitly #include in your code because you use something from them. Indirect headers are headers that are included by other headers that you may inadvertently take a dependency on. Here's an example:
+First, some terminology. Direct headers are headers that you explicitly `#include` in your code. Indirect headers are headers included by a header you directly included. You can inadvertently take a dependency on the indirect header. Here's an example:
 
 File: header.h
 
@@ -73,7 +71,7 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 the walkthrough
 the reference
