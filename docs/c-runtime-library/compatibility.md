@@ -33,6 +33,6 @@ Except as noted within the documentation for specific functions, the UCRT is com
 | [UWP apps, the Windows Runtime, and the C runtime](./windows-store-apps-the-windows-runtime-and-the-c-run-time.md) | Describes when UCRT routines aren't compatible with Universal Windows apps or Microsoft Store apps. |
 | [ANSI C conformance](./ansi-c-compliance.md) | Describes standard-conforming names in the UCRT. |
 | [UNIX](./unix.md) | Provides guidelines for porting programs to UNIX. |
-| [Windows platforms (CRT)](./windows-platforms-crt.md) | Lists the operating systems that are the CRT supports. |
+| [Windows platforms (CRT)](./windows-platforms-crt.md) | Lists the operating systems that CRT supports. |
 | [Backward compatibility](./backward-compatibility.md) | Describes how to map old CRT names to the new ones. |
 | [C runtime (CRT) and C++ Standard Library (STL) `.lib` files](./crt-library-features.md) | Provides an overview of the CRT library (.lib) files and the associated compiler options. |
