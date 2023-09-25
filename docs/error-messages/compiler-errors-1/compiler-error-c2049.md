@@ -12,3 +12,21 @@ helpviewer_keywords: ["C2049"]
 The **`inline`** keyword may be used on a namespace definition extension only if it was also used on the original namespace definition.
 
 To resolve this issue, make the use of the **`inline`** specifier consistent across all parts of the namespace.
+
+The following sample generates C2049:
+
+```cpp
+// C2049.cpp
+namespace ns {}
+
+inline namespace ns {}   // C2049
+```
+
+Possible resolution:
+
+```cpp
+// C2049b.cpp
+namespace ns {}
+
+namespace ns {}
+```
