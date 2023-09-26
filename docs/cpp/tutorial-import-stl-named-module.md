@@ -60,7 +60,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
 ### Example: `std`
 
-1. Open a x86 Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 preview version 17.5 or above. You'll get errors if you use the wrong version of the prompt. The examples used in this tutorial are for the CMD shell. If you use PowerShell, substitute `"%VCToolsInstallDir\modules\std.ixx"` for `"$Env:VCToolsInstallDir\modules\std.ixx"`.
+1. Open a x86 Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 preview version 17.5 or above. You'll get errors if you use the wrong version of the prompt. The examples used in this tutorial are for the CMD shell. If you use PowerShell, use `"$Env:VCToolsInstallDir\modules\std.ixx"` instead of `"%VCToolsInstallDir\modules\std.ixx"`.
 1. Create a directory, such as `%USERPROFILE%\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors such as not being able to open the output file `std.ifc`.
 1. Compile the `std` named module with the following command:
 
