@@ -32,10 +32,10 @@ items:
         href: ../ide/lnt-logical-bitwise-mismatch.md
       - name: lnt-int-naming-convention
         href: ../ide/lnt-int-naming-convention.md
-      - name: lnt-uninitialized-local
-        href: ../ide/lnt-uninitialized-local.md
       - name: lnt-make-member-function-const
         href: ../ide/lnt-make-member-function-const.md
+      - name: lnt-uninitialized-local
+        href: ../ide/lnt-uninitialized-local.md
     - name: Change signature
       href: ../ide/refactoring/change-signature.md
     - name: Convert to raw string literal

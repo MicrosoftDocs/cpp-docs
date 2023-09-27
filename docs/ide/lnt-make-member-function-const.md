@@ -8,7 +8,7 @@ monikerRange: ">=msvc-170"
 ---
 # `make-member-function-const`
 
-When member functions don’t modify their object state, mark them as const. This guidance comes from the [C++ Core Guideline Con.2](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con2-by-default-make-member-functions-const).
+When member functions don’t modify their object state, annotate them with the `const` keyword. This guidance comes from the [C++ Core Guideline Con.2](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con2-by-default-make-member-functions-const).
 
 ## Example
 
@@ -18,13 +18,11 @@ class MyClass
 public: 
 
   int getValue() { return value; }  // Flagged: ‘getValue’ doesn't modify the object's state. 
-
   void setValue(int newValue) { value = newValue; }  // OK: ‘setValue’ modifies the object's state.   
 
 private: 
 
   int value = 42; 
-
 }; 
 
 double getRadius()
@@ -35,7 +33,9 @@ double getRadius()
 
 ## How to fix the issue
 
-The solution proposed by the linter is to mark member functions `const` when they don't modify the object's state. This provides a clear indication to both developers and the compiler that the function is safe to call on `const` objects. In the following example, `const` has been added to `getValue()` and `getRadius()`:
+The solution proposed by the linter is to mark member functions `const` when they don't modify the object's state. This provides a clear indication to both developers and the compiler that the function is safe to call on `const` objects.
+
+In the following example, `const` has been added to `getValue()` and `getRadius()`:
 
 ```cpp
 class MyClass
@@ -57,11 +57,13 @@ double getRadius() const // added const
 }  
 ```
 
-The editor can make this change for you. Place the cursor on the flagged symbol, and choose **Show potential fixes** and then **Make member const**:
+The editor can make this change for you. Place the cursor on the flagged symbol and choose **Show potential fixes** and then **Make member const**:
 
 :::image type="content" source="media/make-member-function-const.png" alt-text="Screenshot of the editor suggesting to make member const." :::
 The cursor is on the line int getValue() and **Show potential fixes** appeared and was chosen. Now **Make member const** is visible and it shows the get value function with const added to it. You can now choose **Make member const** to make the change.
 :::image-end:::
+
+Make this change for all flagged member functions.
 
 ## Remarks
 
