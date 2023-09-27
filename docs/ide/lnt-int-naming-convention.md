@@ -1,78 +1,71 @@
 ---
-title: lnt-int-naming-convention
-description: "Reference for Visual Studio C++ IntelliSense Linter check lnt-int-naming-convention."
-ms.date: 09/29/2021
-f1_keywords: ["lnt-int-naming-convention"]
-helpviewer_keywords: ["lnt-int-naming-convention"]
-monikerRange: ">=msvc-160"
+title: int-naming-convention
+description: "Reference for Visual Studio C++ IntelliSense Linter check int-naming-convention."
+ms.date: 09/27/2023
+f1_keywords: ["int-naming-convention"]
+helpviewer_keywords: ["int-naming-convention"]
+monikerRange: ">=msvc-170"
 ---
-# `lnt-int-naming-convention`
+# `int-naming-convention`
 
-A copy is being made because `auto` doesn't deduce references.
+Ensure that the naming convention for symbols aligns with the coding style specified in the project's `.editorconfig` file.
 
-Variables declared by using `auto` are never deduced to be type references. If you initialize an `auto` variable from the result of a function that returns by reference, it results in a copy. Sometimes this effect is desirable, but in many cases it causes an unintentional copy.
+To enable this feature, add an `.editorconfig` file in the same directory as your project file. The `.editorconfig` specifies the naming conventions for symbols in your project. For an example `.editorconfig` that specifies the naming conventions for Unreal Engine projects, see [`.editorconfig` on ](https://raw.githubusercontent.com/microsoft/vc-ue-extensions/main/Source/.editorconfig).
 
-The `lnt-int-naming-convention` check is controlled by the **Accidental Copy** setting in the C/C++ Code Style options. For information on how to change this setting, see [Configure the linter](cpp-linter-overview.md#configure-the-linter).
+Once you have the `.editorconfig` file in your project, turn on the `int-naming-convention` check with the **Naming Convention** setting in the C/C++ Code Style options. For information about how to change this setting, see [Configure the linter](cpp-linter-overview.md#configure-the-linter).
 
-## Examples
+## Example
+
+The For example, an `editorconfig` file that contains:
 
 ```cpp
-#include <string>
-#include <vector>
+class MyClass
+{ 
 
-std::string& return_by_ref();
+public: 
 
-int& return_int_by_ref();
+  int getValue() { return value; }  // Flagged: ‘getValue’ doesn't modify the object's state. 
 
-void accidental_copy(std::vector<std::string>& strings)
+  void setValue(int newValue) { value = newValue; }  // OK: ‘setValue’ modifies the object's state.   
+
+private: 
+
+  int value = 42; 
+
+}; 
+``````
+
+flags the following code:
+
+```cpp
+void example()
 {
-    for (auto s : strings) {} // Flagged: A new copy of each string is
-                              // made when the vector is iterated.
-
-    auto s = return_by_ref(); // Flagged: the function returns by-reference
-                              // but a copy is made to initialize 's'.
-
-    auto i = return_int_by_ref(); // Not flagged because no copy constructor is called.
+    bool myFlag = true; // flagged because it doesn't follow the naming convention specified in the .editorconfig
 }
 ```
 
 ## How to fix the issue
 
-The fix the linter suggests is to change `auto` to `auto&` on the declaration.
+Change the naming based on the code style specified in the `.editorconfig`. For example:
 
 ```cpp
-#include <string>
-
-std::string& return_by_ref();
-
-void accidental_copy(std::vector<std::string>& strings)
-{
-    for (auto& s : strings) {}
-
-    auto& s = return_by_ref();
-}
+void example()
+{ 
+    bool bMyFlag = true; // fixed to follow the code style specified in the .editorconfig
+} 
 ```
+
+The editor can make the change for you. Place the cursor on the flagged symbol, and choose **Show potential fixes** and then **Apply naming convention**:
+
+:::image type="content" source="media/int-naming-convention-apply-naming-convention.png" :::
+The code editor shows bool myFlag = true. With the cursor on that line of code, **Show potential fixes** appeared and was chosen. Now **Apply naming convention** is visible and it shows bool my Flag = true in red and the suggested change, bool b My Flag, in green. You can now choose **Apply naming convention** to change the flagged code to bool b My Flag = true.
+:::image-end:::
 
 ## Remarks
 
-The suggested fix isn't safe to apply in all cases. The fix may cause a compilation error or change the behavior of the code. It's important to understand how the suggested fix affects the code before applying it.
-
-In cases where a temporary is returned, `const auto&` is necessary to prevent a compilation error. In this case, it may be preferable to continue to use `auto`.
-
-Sometimes a copy is intentional, such as when you want to modify the copy without affecting the source instance, as shown in this example.
-
-```cpp
-void modifies_string(std::string& s);
-
-void example(std::vector<std::string>& strings)
-{
-    for (auto s : strings) {
-        modifies_string(s);    // In this case, the copy may be intended so that
-                               // the original strings are not modified.
-    }
-}
-```
+The `int-naming-convention` linter check ensures that naming conventions align with naming conventions specified in the `editorconfig` file. This check check can be applied to any project that has an `editorconfig` file, and can customize your `.editorconfig` file to suit your project's coding style.
 
 ## See also
 
+[Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options)\
 [IntelliSense code linter for C++ overview](cpp-linter-overview.md)
