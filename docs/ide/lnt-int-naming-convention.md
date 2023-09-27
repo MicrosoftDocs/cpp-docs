@@ -57,13 +57,13 @@ void example()
 
 The editor can make the change for you. Place the cursor on the flagged symbol, and choose **Show potential fixes** and then **Apply naming convention**:
 
-:::image type="content" source="media/int-naming-convention-apply-naming-convention.png" :::
+:::image type="content" source="media/int-naming-convention-apply-naming-convention.png" alt-text="Screenshot of the IDE suggesting to apply naming convention.":::
 The code editor shows bool myFlag = true. With the cursor on that line of code, **Show potential fixes** appeared and was chosen. Now **Apply naming convention** is visible and it shows bool my Flag = true in red and the suggested change, bool b My Flag, in green. You can now choose **Apply naming convention** to change the flagged code to bool b My Flag = true.
 :::image-end:::
 
 ## Remarks
 
-The `int-naming-convention` linter check ensures that naming conventions align with naming conventions specified in the `editorconfig` file. This check check can be applied to any project that has an `editorconfig` file, and can customize your `.editorconfig` file to suit your project's coding style.
+The `int-naming-convention` linter check ensures that naming conventions align with naming conventions specified in the `editorconfig` file. You can apply this check to any project that has an `editorconfig` file. You can also customize your `.editorconfig` file to suit your project's coding style.
 
 ## See also
 
