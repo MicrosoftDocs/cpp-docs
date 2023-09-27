@@ -1,25 +1,25 @@
 ---
-title: "Cleanup C++ #includes in Visual Studio"
+title: "Clean up C++ #includes in Visual Studio"
 description: "Learn about using the C++ code editor in Visual Studio to remove, add, and transitively add the includes needed in your project."
-ms.date: 09/21/2023
+ms.date: 10/03/2023
 ms.topic: "overview"
 ms.custom: intro-overview
 ---
-# Cleanup C++ #includes in Visual Studio
+# Clean up C++ #includes in Visual Studio
 
 Starting with Visual Studio 17.7 preview 3, Visual Studio provides an `#include` cleanup tool that improves the quality of your code in the following ways:
-- Identifies unused header files--improving your build time.
-- Add headers for code that is only working because the another header file includes the necessary header file. This reduces the brittleness of your code by removing its reliance on hidden dependencies.
+- Identifies and offers to remove unused header files--improving your build time.
+- Identifies and offers to add headers for code that is only working because another header file includes the necessary header file. This reduces the brittleness of your code by removing its reliance on hidden dependencies.
 
 This article provides an overview of the `#include` cleanup tool.
 
 ## Configure #include cleanup
 
-Turn on the `#include` cleanup tool via **Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup** and select **Enable #include cleanup**.
+Turn on the `#include` cleanup tool via **Tools** > **Options** > **Text Editor** > **Code Cleanup** > **Code Cleanup** and select **Configure Code Cleanup**.
 
 Then use the dropdowns to configure how you want to be notified about opportunities to remove unused headers and add missing headers:
 
-:::image type="content" source="media/vs2022-include-cleanup-option.png" alt-text="The Tools options dialog opened at Text Editor > C/C++ > Code Cleanup. The Enable # include cleanup checkbox is checked. The dropdowns for Remove unused includes tags and Add missing includes tags are shown. The contents of the dropdown are shown, which are: Refactoring only, Suggestion, Warning, and Error. The Remove unused includes tags dropdown offers the same contents but also adds dimmed.":::
+:::image type="content" source="media/vs2022-include-cleanup-option.png" alt-text="The Tools options dialog opened at Text Editor > C/C++ > Code Cleanup. The Enable # include cleanup checkbox is checked. The dropdowns for Remove unused includes tags and Add missing includes tags are shown. The contents of the dropdown are shown, which are: **Refactoring only**, **Suggestion**, **Warning**, and **Error**. The **Remove unused includes tags** dropdown offers the same contents but also adds dimmed.":::
 
 **Refactoring only:**\
 The cleanup tool only offers to remove unused headers when you invoke refactoring by hovering the cursor over an `#include` to bring up the light bulb. You can also press Ctrl+period while the cursor is in the `#include` to bring up the refactoring light bulb:
