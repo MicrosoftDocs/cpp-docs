@@ -23,7 +23,7 @@ cpp_naming_style.boolean_style.capitalization = pascal_case
 cpp_naming_style.boolean_style.required_prefix = b
 ```
 
-The linter will flag the following code because it isn't prefixed with 'b' and because it isn't Pascal case, as specified in the `.editorconfig` file:
+The linter flags the following code because it isn't prefixed with 'b' and because it isn't Pascal case, as specified in the `.editorconfig` file:
 
 ```cpp
 void example()
@@ -45,7 +45,7 @@ void example()
 
 The editor can make the change for you. Place the cursor on the flagged symbol. Choose **Show potential fixes** and then **Apply naming convention**:
 
-:::image type="complex" source="media/lnt-naming-convention-apply-naming-convention.png" alt-text="Screenshot of the IDE suggesting applying naming convention.":::
+:::image type="complex" source="media/lnt-apply-naming-convention.png" alt-text="Screenshot of the IDE suggesting applying naming convention.":::
 The code editor shows bool myFlag = true. With the cursor on that line of code, **Show potential fixes** appeared and was chosen. Now **Apply naming convention** is visible and it shows bool my Flag = true in red and the suggested change, bool b My Flag, in green. You can now choose **Apply naming convention** to change the flagged code to bool b My Flag = true.
 :::image-end:::
 
