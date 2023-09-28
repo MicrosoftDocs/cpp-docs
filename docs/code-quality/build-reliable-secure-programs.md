@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Building reliable and secure C++ programs by applying NISTIR 8397 guidelines."
 title: Build reliable and secure C++ programs
-ms.date: 09/20/2023
+ms.date: 09/28/2023
 ms.topic: "conceptual"
 ---
 
@@ -182,11 +182,11 @@ Remove the now-invalidated secrets from your source code, and replace them with 
 
 **Azure DevOps (AzDO)**
 
-AzDO users can scan their code through Microsoft Defender for DevOps for known types of secrets. Defender for DevOps, a service available in Defender for Cloud, empowers security teams to manage DevOps security across multi-pipeline environments. Defender for DevOps is current in preview, available for free trial. Defender for DevOps provides the scanning service through GitHub Advanced Security for Azure DevOps (GHAS for AzDO).  For more information on how to detect hardcoded secrets in code in Azure DevOps, see "Detect exposed secrets in code" in the following list of links:
+AzDO users can scan their code through GitHub Advanced Security for Azure DevOps (GHAzDO). GHAzDO also allows users to prevent secret exposures by enabling Push Protection on their repositories, catching potential exposures before they're ever leaked. For more information on how to detect hardcoded secrets in code in Azure DevOps, see *Secret Scanning for Github Advanced Security for Azure DevOps* in each of the following links:
 
+- [GitHub advanced security for Azure DevOps](https://azure.microsoft.com/products/devops/github-advanced-security)
+- [Secret Scanning for GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-secret-scanning)
 - [Microsoft Defender for DevOps Preview](https://www.microsoft.com/security/business/cloud-security/microsoft-defender-devops)
-- [GitHub advanced security for Azure DevOps (GHAS for AzDO) | GitHub](https://partner.github.com/2022/10/12/azure-devops-article.html)
-- [Detect exposed secrets in code](/azure/defender-for-cloud/detect-exposed-secrets)
 
 **In GitHub**
 
@@ -201,7 +201,7 @@ GitHub provides known patterns of secrets for partners and users that can be con
 - [About secret scanning in GitHub](https://docs.github.com/en/enterprise-cloud@latest/code-security/secret-scanning/about-secret-scanning)
 
 > [!NOTE]
-> During the Microsoft Defender for DevOps preview period, GitHub Advanced Security for Azure DevOps (GHAS for AzDO) is also providing a free trial of secret scanning. GitHub Advanced Security for Azure DevOps brings the same secret scanning, dependency scanning and CodeQL code scanning solutions already available for GitHub users and natively integrates them into Azure DevOps to protect your Azure Repos and Pipelines.
+> GitHub Advanced Security for Azure DevOps brings the same secret scanning, dependency scanning and CodeQL code scanning solutions already available for GitHub users and natively integrates them into Azure DevOps to protect your Azure Repos and Pipelines.
 
 **Additional resources**
 
@@ -383,7 +383,7 @@ When fuzzing reports a failure, it always naturally provides a reproducible test
 
 When using both sanitizers such as [Address Sanitizer (ASan)](../sanitizers/asan.md) and fuzzing:
 - First run your normal tests with sanitizers enabled to see if there are issues, then once the code is sanitizer-clean start fuzzing.
-- For C or C++, there are compilers that automate injection of runtime assertions and meta-data that enable ASan. When compiled for ASan, the resulting binaries link with a runtime library that can precisely diagnose [15+ categories of memory safety errors](../sanitizers/asan.md#error-types) with zero false positives. For C or C++ when you have source, use [LibFuzzer](https://www.llvm.org/docs/LibFuzzer.html) which requires ASan to be enabled first.
+- For C or C++, there are compilers that automate injection of runtime assertions and meta-data that enable ASan. When compiled for ASan, the resulting binaries link with a runtime library that can precisely diagnose [15+ categories of memory safety errors](../sanitizers/asan.md#error-types) with zero false positives. For C or C++ when you have source, use [LibFuzzer](https://www.llvm.org/docs/LibFuzzer.html), which requires ASan to be enabled first.
 - For libraries written in Java, C#, Python, Rust, and so on, use the [AFL++ framework](https://aflplus.plus/).
 
 **Key qualities**
