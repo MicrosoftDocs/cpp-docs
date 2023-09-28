@@ -8,9 +8,11 @@ monikerRange: ">=msvc-170"
 ---
 # `lnt-make-member-function-const`
 
-When member functions don’t modify the object's state, annotate them with the `const` keyword. This guidance comes from the [C++ Core Guideline Con.2](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con2-by-default-make-member-functions-const).
+When a member function doesn’t modify the object's state, annotate it with the `const` keyword. This guidance comes from the [C++ Core Guideline Con.2](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con2-by-default-make-member-functions-const).
 
 ## Example
+
+The following code is flagged twice by the linter because `getValue()` and `getRadius()` don't modify the object's state:
 
 ```cpp
 class MyClass
@@ -33,7 +35,7 @@ double getRadius()
 
 ## How to fix the issue
 
-Mark member functions `const` when they don't modify the object's state. This lets both developers and the compiler know that the function is safe to call on a `const` object.
+Mark member functions `const` when they don't modify the object's state. This lets readers of the code and the compiler know that the function is safe to call on a `const` object.
 
 In the following example, `const` has been added to `getValue()` and `getRadius()`:
 

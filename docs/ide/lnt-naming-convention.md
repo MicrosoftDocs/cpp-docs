@@ -8,15 +8,15 @@ monikerRange: ">=msvc-170"
 ---
 # `lnt-naming-convention`
 
-Ensure that the naming convention for symbols aligns with the coding style specified in the project's `.editorconfig` file.
+Ensure that the naming convention for symbols aligns with your coding style, as specified in the project's `.editorconfig` file.
 
-To enable this feature, add an `.editorconfig` file in the same directory as your project file. The `.editorconfig` specifies the naming conventions for symbols in your project. For an example `.editorconfig` that specifies the naming conventions for Unreal Engine projects, see this example on [GitHub](https://raw.githubusercontent.com/microsoft/vc-ue-extensions/main/Source/.editorconfig).
+To enable this feature, add an `.editorconfig` file in the same directory as your project file. The `.editorconfig` specifies the naming conventions for symbols in your project. As an example, the naming conventions for Unreal Engine projects are specified in an `.editorconfig` on [GitHub](https://raw.githubusercontent.com/microsoft/vc-ue-extensions/main/Source/.editorconfig).
 
 Once you have the `.editorconfig` file in your project, turn on the `lnt-naming-convention` check with the **Naming Convention** setting in the C/C++ Code Style options. For information about how to change this setting, see [Configure the linter](cpp-linter-overview.md#configure-the-linter).
 
 ## Example
 
-Given an `editorconfig` file that contains:
+Suppose that you have an `.editorconfig` file that contains:
 
 ```
 cpp_naming_style.boolean_style.capitalization = pascal_case
@@ -51,7 +51,7 @@ The code editor shows bool myFlag = true. With the cursor on that line of code, 
 
 ## Remarks
 
-Introduced in Visual Studio 2022 17.7, the `lnt-naming-convention` linter check ensures that naming conventions align with naming conventions specified in the `editorconfig` file. You can apply this check to any project that has an `editorconfig` file. You can also customize your `.editorconfig` file to suit your project's coding style.
+Introduced in Visual Studio 2022 17.7, the `lnt-naming-convention` linter check ensures that naming conventions align with those specified in the `.editorconfig` file. You can apply this check to any project that has an `.editorconfig` file. You can also customize your `.editorconfig` file to suit your project's coding style.
 
 ## See also
 
