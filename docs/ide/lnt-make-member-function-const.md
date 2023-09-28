@@ -12,7 +12,7 @@ When a member function doesn’t modify the object's state, annotate it with the
 
 ## Example
 
-The following code is flagged twice by the linter because `getValue()` and `getRadius()` don't modify the object's state:
+The linter flags the following code twice because `getValue()` and `getRadius()` don't modify the object's state:
 
 ```cpp
 class MyClass
