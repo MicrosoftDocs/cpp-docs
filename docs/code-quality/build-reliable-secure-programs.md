@@ -182,7 +182,7 @@ Remove the now-invalidated secrets from your source code, and replace them with 
 
 **Azure DevOps (AzDO)**
 
-AzDO users can scan their code through GitHub Advanced Security for Azure DevOps (GHAzDO). GHAzDO also allows users to prevent secret exposures by enabling Push Protection on their repositories, catching potential exposures before they are ever leaked. For more information on how to detect hardcoded secrets in code in Azure DevOps, see *Secret Scanning for Github Advanced Security for Azure DevOps* in each of the following links:
+AzDO users can scan their code through GitHub Advanced Security for Azure DevOps (GHAzDO). GHAzDO also allows users to prevent secret exposures by enabling Push Protection on their repositories, catching potential exposures before they're ever leaked. For more information on how to detect hardcoded secrets in code in Azure DevOps, see *Secret Scanning for Github Advanced Security for Azure DevOps* in each of the following links:
 
 - [GitHub advanced security for Azure DevOps](https://azure.microsoft.com/products/devops/github-advanced-security)
 - [Secret Scanning for GitHub Advanced Security for Azure DevOps](devops/repos/security/github-advanced-security-secret-scanning)
@@ -383,7 +383,7 @@ When fuzzing reports a failure, it always naturally provides a reproducible test
 
 When using both sanitizers such as [Address Sanitizer (ASan)](../sanitizers/asan.md) and fuzzing:
 - First run your normal tests with sanitizers enabled to see if there are issues, then once the code is sanitizer-clean start fuzzing.
-- For C or C++, there are compilers that automate injection of runtime assertions and meta-data that enable ASan. When compiled for ASan, the resulting binaries link with a runtime library that can precisely diagnose [15+ categories of memory safety errors](../sanitizers/asan.md#error-types) with zero false positives. For C or C++ when you have source, use [LibFuzzer](https://www.llvm.org/docs/LibFuzzer.html) which requires ASan to be enabled first.
+- For C or C++, there are compilers that automate injection of runtime assertions and meta-data that enable ASan. When compiled for ASan, the resulting binaries link with a runtime library that can precisely diagnose [15+ categories of memory safety errors](../sanitizers/asan.md#error-types) with zero false positives. For C or C++ when you have source, use [LibFuzzer](https://www.llvm.org/docs/LibFuzzer.html), which requires ASan to be enabled first.
 - For libraries written in Java, C#, Python, Rust, and so on, use the [AFL++ framework](https://aflplus.plus/).
 
 **Key qualities**
