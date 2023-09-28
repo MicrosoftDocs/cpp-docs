@@ -30,10 +30,10 @@ items:
         href: ../ide/lnt-integer-float-division.md
       - name: lnt-logical-bitwise-mismatch
         href: ../ide/lnt-logical-bitwise-mismatch.md
-      - name: lnt-int-naming-convention
-        href: ../ide/lnt-int-naming-convention.md
       - name: lnt-make-member-function-const
         href: ../ide/lnt-make-member-function-const.md
+      - name: lnt-naming-convention
+        href: ../ide/lnt-naming-convention.md
       - name: lnt-uninitialized-local
         href: ../ide/lnt-uninitialized-local.md
     - name: Change signature
