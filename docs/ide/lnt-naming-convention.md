@@ -1,7 +1,7 @@
 ---
 title: lnt-naming-convention
 description: "Reference for Visual Studio C++ IntelliSense Linter check lnt-naming-convention."
-ms.date: 09/27/2023
+ms.date: 09/28/2023
 f1_keywords: ["lnt-naming-convention"]
 helpviewer_keywords: ["lnt-naming-convention"]
 monikerRange: ">=msvc-170"
@@ -23,7 +23,7 @@ cpp_naming_style.boolean_style.capitalization = pascal_case
 cpp_naming_style.boolean_style.required_prefix = b
 ```
 
-The linter will flag the following code because it isn't prefixed with 'b' and it isn't Pascal case, as specified in the `.editorconfig` file:
+The linter will flag the following code because it isn't prefixed with 'b' and because it isn't Pascal case, as specified in the `.editorconfig` file:
 
 ```cpp
 void example()
@@ -51,7 +51,7 @@ The code editor shows bool myFlag = true. With the cursor on that line of code, 
 
 ## Remarks
 
-The `lnt-naming-convention` linter check ensures that naming conventions align with naming conventions specified in the `editorconfig` file. You can apply this check to any project that has an `editorconfig` file. You can also customize your `.editorconfig` file to suit your project's coding style.
+Introduced in Visual Studio 2022 17.7, the `lnt-naming-convention` linter check ensures that naming conventions align with naming conventions specified in the `editorconfig` file. You can apply this check to any project that has an `editorconfig` file. You can also customize your `.editorconfig` file to suit your project's coding style.
 
 ## See also
 
