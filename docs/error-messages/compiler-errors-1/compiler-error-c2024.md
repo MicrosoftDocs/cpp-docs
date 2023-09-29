@@ -12,3 +12,22 @@ helpviewer_keywords: ["C2024"]
 The compiler found an **`alignas`** specifier applied to a function or other type that can't be aligned.
 
 To resolve this error, remove the **`alignas`** specifier.
+
+The following sample generates C2024:
+
+```cpp
+// C2024.cpp
+namespace alignas(2) ns {   // C2024
+   void func(alignas(8) int x) {}   // C2024
+}
+```
+
+Possible resolution:
+
+```cpp
+// C2024b.cpp
+// compile with: /c
+namespace ns {
+   void func(int x) {}
+}
+```
