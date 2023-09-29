@@ -8,16 +8,16 @@ ms.custom: intro-overview
 # Clean up C++ #includes in Visual Studio
 
 Starting with Visual Studio 17.7 preview 3, Visual Studio provides an `#include` cleanup tool that improves the quality of your code in the following ways:
-- Identifies and offers to remove unused header files--improving your build time.
-- Identifies and offers to add header files for code that is only working because another header file includes the necessary header file. This reduces the brittleness of your code by removing its reliance on hidden dependencies.
+- Offers to remove unused header files--improving your build time.
+- Offers to add header files for code that is only working because another header file includes the necessary header file. This reduces the brittleness of your code by removing its reliance on hidden dependencies.
 
-This article provides an overview of the `#include` cleanup tool.
+This article provides an introduction to the `#include` cleanup tool.
 
 ## Turn on #include cleanup
 
 Turn on the `#include` cleanup tool via **Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup** and select **Enable #include cleanup**.
 
-Then use the dropdowns to configure how you want to be notified about opportunities to remove unused headers and add missing headers:
+Then use the dropdowns to configure how you want to be notified about opportunities to remove unused headers or add missing headers:
 
 :::image type="complex" source="media/vs2022-include-cleanup-option.png" alt-text="The Tools options dialog opened at Text Editor > C/C++ > Code Cleanup.":::
 The Enable # include cleanup checkbox is checked. The dropdowns for Remove unused includes suggestion level, and Add missing includes suggestion level, are shown. The contents of the dropdown are shown, which are: **Refactoring only**, **Suggestion**, **Warning**, and **Error**. The **Remove unused includes tags** dropdown offers the same options but also adds dimmed.:::image-end:::
@@ -25,22 +25,26 @@ The Enable # include cleanup checkbox is checked. The dropdowns for Remove unuse
 The options are:
 
 **Refactoring only**\
-The cleanup tool offers actions it can take when you hover the mouse pointer over an `#include`. Or, place the cursor on the `#include` line and press Ctrl+period to bring up the quick action menu:
+The cleanup tool offers actions it can take through the quick action menu when you hover the mouse pointer over an `#include` or place the cursor on the `#include` line and press Ctrl+period:
 
 :::image type="content" source="media/include-cleanup-refactor-lightbulb.png" alt-text="A screenshot of the quick action to remove an unused header":::
 When hovering the cursor over # include iostream, a light bulb appears with the text that # include iostream isn't used in this file."
 :::image-end:::
 
-**Suggestion, Warning, Error**\
-The cleanup tool offers suggestions via a suggestion, warning, or error in the Error List window. In this screenshot, the `#include` cleanup tool is configured to indicate unused headers with a warning. Ensure that **Build + Intellisense** is chosen in the dropdown filter so that you can see the cleanup tool output:
+**Suggestion, Warning, Error**
 
-:::image type="complex" source="media/include-cleanup-error-list.png" alt-text="A screenshot of the Error List window.":::The dropdown filter is set to Build + IntelliSense. A warning is visible: VCIC002 - #include < iostream > is not used in this file.":::image-end:::
+The cleanup tool offers suggestions via suggestions, warnings, or errors in the Error List window. You determine which. In this screenshot, the `#include` cleanup tool is configured to indicate unused headers with a warning. Ensure that **Build + Intellisense** is chosen in the dropdown filter so that you can see the cleanup tool output:
+
+:::image type="complex" source="media/include-cleanup-error-list.png" alt-text="A screenshot of the Error List window.":::
+The dropdown filter is set to Build + IntelliSense. A warning is visible: VCIC002 - #include < iostream > is not used in this file."
+:::image-end:::
 
 **Dimmed:**\
 The `#include` cleanup tool indicates unused headers by dimming the line of the unused `#include` in the code editor. Hover your cursor over the dimmed `#include` to bring up the quick action menu to remove the unused header.
 
-
-include-cleanup-dimmed-include.png
+:::image type="complex" source="media/include-cleanup-dimmed-include.png" alt-text="A screenshot of a dimmed #include < iostream > line.":::
+The line for #include < iostream > is dimmed becasue the line of code that uses iostream is commented out. That line of code is // std::cout << "charSize = " << charSize; The quick action menu is also visible for this line. It says the #include < iostream > is not used in this file, and has a link to Show potential fixes.
+:::image-end:::
 
 For the exercises in this article, Remove unused includes tags is set to **Dimmed** and add missing includes tags is set to **Refactoring only**.
 
