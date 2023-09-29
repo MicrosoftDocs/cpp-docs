@@ -11,7 +11,7 @@ ms.custom: devdivchpfy22
 
 Wraps a smart pointer around a resource that ensures the resource is destroyed automatically when control leaves a block.
 
-The more capable `unique_ptr` class supersedes `auto_ptr`. For more information, see [unique_ptr Class](../standard-library/unique-ptr-class.md).
+The more capable `unique_ptr` class supersedes `auto_ptr`. For more information, see [unique_ptr Class](../standard-library/unique-ptr-class.md). The `auto_ptr` class is deprecated in C++11 and removed in C++17.
 
 For more information about `throw()` and exception handling, see [Exception Specifications (throw)](../cpp/exception-specifications-throw-cpp.md).
 
