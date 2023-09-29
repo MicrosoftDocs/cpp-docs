@@ -20,14 +20,15 @@ Turn on the `#include` cleanup tool via **Tools** > **Options** > **Text Editor*
 Then use the dropdowns to configure how you want to be notified about opportunities to remove unused headers or add missing headers:
 
 :::image type="complex" source="media/vs2022-include-cleanup-option.png" alt-text="The Tools options dialog opened at Text Editor > C/C++ > Code Cleanup.":::
-The Enable # include cleanup checkbox is checked. The dropdowns for Remove unused includes suggestion level, and Add missing includes suggestion level, are shown. The contents of the dropdown are shown, which are: **Refactoring only**, **Suggestion**, **Warning**, and **Error**. The **Remove unused includes tags** dropdown offers the same options but also adds dimmed.:::image-end:::
+The Enable # include cleanup checkbox is checked. The dropdowns for Remove unused includes suggestion level, and Add missing includes suggestion level, are shown. The contents of the dropdown are shown, which are: **Refactoring only**, **Suggestion**, **Warning**, and **Error**. The **Remove unused includes tags** dropdown offers the same options but also adds dimmed.
+:::image-end:::
 
 The options are:
 
 **Refactoring only**\
 The cleanup tool offers actions it can take through the quick action menu when you hover the mouse pointer over an `#include` or place the cursor on the `#include` line and press Ctrl+period:
 
-:::image type="content" source="media/include-cleanup-refactor-lightbulb.png" alt-text="A screenshot of the quick action to remove an unused header":::
+:::image type="complex" source="media/include-cleanup-refactor-lightbulb.png" alt-text="A screenshot of the quick action to remove an unused header":::
 When hovering the cursor over # include iostream, a light bulb appears with the text that # include iostream isn't used in this file."
 :::image-end:::
 
