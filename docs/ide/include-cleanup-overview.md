@@ -49,7 +49,7 @@ The `#include` cleanup tool indicates unused headers by dimming the line of the 
 The line for #include < iostream > is dimmed becasue the line of code that uses iostream is commented out. That line of code is // std::cout << "charSize = " << charSize; The quick action menu is also visible for this line. It says the #include < iostream > is not used in this file, and has a link to Show potential fixes.
 :::image-end:::
 
-For the exercises in this article, **Remove unused includes suggestion level** is set to **Dimmed** and **Add missing includes suggestion level** is set to **Suggestion**.
+For the exercise in this article, **Remove unused includes suggestion level** is set to **Dimmed** and **Add missing includes suggestion level** is set to **Suggestion**.
 
 There are more options for configuring the `#include` cleanup tool such as excluding specified includes from cleanup suggestions, indicating that some header files are required so that the tool doesn't mark them as unused, and so on. For more information, see [Configure code cleanup](/visualstudio/ide/code-cleanup#configure-code-cleanup-JTW_TO_WRITE).
 
@@ -60,7 +60,7 @@ To understand what the include cleanup tool can do, here's some terminology:
 - Direct headers are headers that you explicitly `#include` in your code.
 - Indirect headers are included by another header that you directly include. You can inadvertently take a dependency on the indirect header. 
 
-Here's an example:
+Here's an example of using an indirect header:
 
 ```cpp
 #include <stdlib.h>
@@ -71,13 +71,13 @@ int main()
 }
 ```
 
-In this example, `CHAR_BIT` is defined in `limits.h`. The reason this code compiles is because `stdlib.h` happens to include `limits.h` If `stdlib.h` ever stopped including `limits.h`, this code would break because it doesn't directly include a dependency it needs.
+`CHAR_BIT` is defined in `limits.h`. The reason this code compiles is because `stdlib.h` happens to include `limits.h`. If `stdlib.h` ever stopped including `limits.h`, this code would break because it doesn't directly include a dependency it needs.
 
 Per the C++ guidelines, it's better to explicitly include headers for all your dependencies so that your code isn't subject to brittleness caused by changes to header files. For more information, see [C++ Core Guidelines SF.10](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#sf10-avoid-dependencies-on-implicitly-included-names). The C++ include cleanup tool helps you find and fix issues like this.
 
 ## Unused headers
 
-As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project, and over time your build time may be impacted by the compiler processing header files that aren't used. The C++ include cleanup tool helps you find and remove these unused headers. For example:
+As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project, and over time your build time may be impacted by the compiler processing header files that aren't used. The C++ include cleanup tool helps you find and remove unused headers. For example:
 
 ```cpp
 #include <stdlib.h>
@@ -96,13 +96,13 @@ In the following screenshot, `#include <iostream>` is dimmed because it isn't us
 
 ## Add transitively used headers
 
-It might be surprising that both `stdlib.h` and `iostream` are dimmed. The reason that `stdlib.h` is dimmed is because it isn't used in this file. Because `stdlib.h` includes `<limits.h>`, which defines `CHAR_BIT`, the code compiles. But we are getting `limits.h` indirectly through `stdlib.h`. The situation we really want is to not include `stdlib.h` because the compiler is just processing a bunch of stuff we don't need, but we do want to include `limits.h` because we are using that. The `#include` cleanup tool can help with this.
+It might be surprising that both `stdlib.h` and `iostream` were dimmed. The reason that `stdlib.h` is dimmed is because it isn't used in this file. But because `stdlib.h` includes `<limits.h>`, which defines `CHAR_BIT`, the code compiles. But we are getting `limits.h` indirectly through `stdlib.h`. The situation we really want is to not include `stdlib.h` because the compiler is just processing extra stuff we don't need, but we do want to include `limits.h` because we are using that. The `#include` cleanup tool can help with this.
 
 Hover your cursor over the dimmed `#include <stdlib.h>` to bring up the quick action lightbulb. Click the lightbulb (or choose the **Show potential fixes** link) and choose **Add all transitively used and remove all unused #includes**:
 
 :::image type="content" source="media/include-cleanup-add-transitively-used.png" alt-text="Three refactoring options are shown: Remove # include stdlib.h, remove all unused includes, and Add all transitively used and remove all unused # includes.":::
 
-This removes unused headers and adds any headers that are being used because they are indirectly included by other header files. In this case, `#include <limits.h>` is added because `CHAR_BIT` is defined in that header. And `stdlib.h` is removed because we aren't using anything from it.  The result is:
+This removes unused headers and adds any used headers that are indirectly included by other header files. In this case, `#include <limits.h>` is added because `CHAR_BIT` is defined in that header. And `stdlib.h` is removed because we aren't using anything from it. The result is:
 
 ```cpp
 #include <limits.h>
@@ -114,7 +114,10 @@ int main()
 }
 ```
 
-In this brief overview, you've seen how the #include cleanup tool can help you remove unused headers, add headers that were indirectly included by other headers so that now your code follows best practices and is less brittle, and add missing headers. For a practical introduction to improving code quality and build times, see [Cleanup tool walkthrough - TBD naming](link-somewhere). For more information about customizing how the #include cleanup generates suggestions for your project and across your team, see [Cleanup tool configuration reference](link-somewhere).
+In this brief overview, you've seen how the #include cleanup tool can help you remove unused headers, add headers that were indirectly included by other headers so that now your code follows best practices and is less brittle, and add missing headers. 
+
+For a practical introduction to improving code quality and build times, see [Cleanup tool walkthrough - TBD naming](link-somewhere).\
+For more information about customizing how the #include cleanup generates suggestions for your project and across your team, see [Cleanup tool configuration reference](link-somewhere).
 
 ## See also
 
