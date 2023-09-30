@@ -20,11 +20,18 @@ The following sample generates C2061:
 
 ```cpp
 // C2061.cpp
-// compile with: /c
-template < A a >   // C2061
-// try the following line instead
-// template < typename b >
-class c{};
+// compile with: /c /std:c++17
+template <A a>   // C2061
+// Replace identifier `A` with `typename`:
+// template <typename a>
+class C1 {};
+
+template <typename T>
+class C2 {
+   // Both are valid since C++20
+   using Type1 = T::Type;   // C2061
+   using Type2 = typename T::Type;   // OK
+};
 ```
 
 C2061 can occur if you pass an instance name to [typeid](../../extensions/typeid-cpp-component-extensions.md):
