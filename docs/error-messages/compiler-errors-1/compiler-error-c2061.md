@@ -20,7 +20,7 @@ The following sample generates C2061:
 
 ```cpp
 // C2061.cpp
-// compile with: /c /std:c++17
+// compile with: /std:c++17
 template <A a>   // C2061
 // Replace identifier `A` with `typename`:
 // template <typename a>
@@ -32,6 +32,13 @@ class C2 {
    using Type1 = T::Type;   // C2061
    using Type2 = typename T::Type;   // OK
 };
+
+int main() {
+   int x;
+   unsigned a1 = alignof(x);   // C2061
+   unsigned a2 = alignof(int);   // OK
+   unsigned a3 = alignof(decltype(x));   // OK
+}
 ```
 
 C2061 can occur if you pass an instance name to [typeid](../../extensions/typeid-cpp-component-extensions.md):
