@@ -7,7 +7,7 @@ helpviewer_keywords: ["align __declspec keyword", "__declspec keyword [C++], ali
 ---
 # `align` (C++)
 
-In Visual Studio 2015 and later, use the C++11 standard **`alignas`** specifier to control alignment. For more information, see [Alignment](../cpp/alignment-cpp-declarations.md).
+In Visual Studio 2015 and later, use the C++11 standard [**`alignas`** specifier](../cpp/alignas-specifier.md) to control alignment.
 
 **Microsoft Specific**
 
