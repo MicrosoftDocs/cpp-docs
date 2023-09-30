@@ -114,15 +114,7 @@ int main()
 }
 ```
 
-## Add unused headers
-
-Now let's see how to add headers by uncommenting the line: `// std::cout << "charSize = " << charSize;`. This code now uses `std::cout`, but it doesn't directly include the header that defines it.Hover your cursor over that line and choose **Show potential fixes** (or click the light bulb). Then choose **Add '#include <iostream'**:
-
-:::image type="content" source="media/include-cleanup-add-iostream.png" alt-text="Three refactoring options are shown: Remove # include stdlib.h, remove all unused includes, and Add all transitively used and remove all unused # includes.":::
-
-Now your code compiles again, and does so by only bringing in the headers that it's actually using.
-
-In this brief overview, you've seen how the #include cleanup tool can help you remove unused headers, add headers that were indirectly included by other headers so that now your code follows best practices and is less brittle, and add missing headers. For a practical introduction to improving code quality and build times, see [Cleanup tool walkthrough - TBD naming](link-somewhere).
+In this brief overview, you've seen how the #include cleanup tool can help you remove unused headers, add headers that were indirectly included by other headers so that now your code follows best practices and is less brittle, and add missing headers. For a practical introduction to improving code quality and build times, see [Cleanup tool walkthrough - TBD naming](link-somewhere). For more information about customizing how the #include cleanup generates suggestions for your project and across your team, see [Cleanup tool configuration reference](link-somewhere).
 
 ## See also
 
