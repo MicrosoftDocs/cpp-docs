@@ -7,7 +7,7 @@ helpviewer_keywords: ["alignas [C++]", "alignment of structures", "__alignof key
 ---
 # `alignas` Specifier
 
-The **`alignas`** specifier changes the alignment of a type or object. You should prefer usage of **`alignas`** over [`__declspec(align(#))`](align-cpp.md) for code portability.
+The **`alignas`** specifier changes the alignment of a type or object. You should prefer usage of **`alignas`** over [`__declspec(align(#))`](align-cpp.md) for code portability. For more information, see [Alignment](../cpp/alignment-cpp-declarations.md).
 
 ## Syntax
 
@@ -97,3 +97,7 @@ int main()
 ```
 
 For more information, see error [C2023](../error-messages/compiler-errors-1/compiler-error-c2023.md) and warning [C4359](../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md).
+
+## See also
+
+[`#pragma pack`](../preprocessor/pack.md)
