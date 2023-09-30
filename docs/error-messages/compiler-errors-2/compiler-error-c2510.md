@@ -11,3 +11,18 @@ ms.assetid: bf6d28db-f2f4-48f8-8f4e-7d662ed278fe
 'identifier' : left of '::' must be a class/struct/union
 
 A class, structure, or union name must appear on the left side of the scope-resolution operator (`::`) operator.
+
+The following sample generates C2510:
+
+```cpp
+// C2510.cpp
+struct S {
+   static const int x = 1;
+};
+
+int main() {
+   S s;
+   int num1 = s::x;   // C2510
+   int num2 = S::x;   // OK
+}
+```
