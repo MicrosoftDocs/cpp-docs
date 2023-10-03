@@ -8,116 +8,100 @@ ms.custom: intro-overview
 # Clean up C++ #includes in Visual Studio
 
 Starting with Visual Studio 17.7 preview 3, Visual Studio provides an `#include` cleanup tool that improves the quality of your code in the following ways:
-- Offers to remove unused header files--improving build times.
-- Offers to add header files for code that is only working because another header file includes the necessary header file.
+- Offers to remove unused header files--improving build times and code cleanliness.
+- Offers to add header files for code that is only working because another header file includes the necessary header file, removing dependencies on indirectly included headers.
 
-This article provides an introduction to the `#include` cleanup tool.
-
-## Turn on #include cleanup
-
-Turn on the `#include` cleanup tool via **Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup** and select **Enable #include cleanup**.
-
-Then use the dropdowns to configure how you want to be notified about opportunities to remove unused headers or add missing headers:
-
-:::image type="complex" source="media/vs2022-include-cleanup-option.png" alt-text="The Tools options dialog opened at Text Editor > C/C++ > Code Cleanup.":::
-The Enable # include cleanup checkbox is checked. The dropdowns for Remove unused includes suggestion level, and Add missing includes suggestion level, are shown. The contents of the dropdown are shown, which are: **Refactoring only**, **Suggestion**, **Warning**, and **Error**. The **Remove unused includes suggestion level** dropdown offers the same options but also adds dimmed.
-:::image-end:::
-
-The meaning of the suggestion level options are:
-
-**Refactoring only**
-
-The cleanup tool offers actions it can take through the quick action menu when you hover the mouse pointer over an `#include`, or place the cursor on the `#include` line and press Ctrl+period:
-
-:::image type="complex" source="media/include-cleanup-refactor-lightbulb.png" alt-text="A screenshot of the quick action to remove an unused header":::
-When hovering the cursor over # include iostream, a light bulb appears with the text that # include iostream isn't used in this file."
-:::image-end:::
-
-**Suggestion, Warning, Error**
-
-The cleanup tool offers actions it can take via suggestions, warnings, or errors in the Error List window. You determine which. In the following screenshot of the Error List, the `#include` cleanup tool was configured to show unused headers with a warning. Ensure that **Build + Intellisense** is selected in the dropdown filter so that you can see the cleanup tool output:
-
-:::image type="complex" source="media/include-cleanup-error-list.png" alt-text="A screenshot of the Error List window.":::
-The dropdown filter is set to Build + IntelliSense. A warning is visible: VCIC002 - #include < iostream > is not used in this file."
-:::image-end:::
-
-**Dimmed**
-
-The `#include` cleanup tool indicates unused headers by dimming the line of the unused header file in the code editor. Hover your cursor over the dimmed `#include` to bring up the quick action menu and choose **Show potential fixes** to see actions related to the unused file.
-
-:::image type="complex" source="media/include-cleanup-dimmed-include.png" alt-text="A screenshot of a dimmed #include < iostream > line.":::
-The line for #include < iostream > is dimmed becasue the line of code that uses iostream is commented out. That line of code is // std::cout << "charSize = " << charSize; The quick action menu is also visible for this line. It says the #include < iostream > is not used in this file, and has a link to Show potential fixes.
-:::image-end:::
-
-For the exercise in this article, **Remove unused includes suggestion level** is set to **Dimmed** and **Add missing includes suggestion level** is set to **Suggestion**.
-
-There are more options for configuring the `#include` cleanup tool such as excluding specified includes from cleanup suggestions, indicating that some header files are required so that the tool doesn't mark them as unused, and so on. For more information, see [Configure code cleanup](/visualstudio/ide/code-cleanup#configure-code-cleanup-JTW_TO_WRITE).
+The `#include` cleanup tool is on by default. To learn how to configure it, see [Config the C++ #include tool in Visual Studio](include-cleanup-config.md).
 
 ## Direct vs indirect headers
 
-To understand what the include cleanup tool can do, here's some terminology:
+To understand what the include cleanup tool does, here's some terminology:
 
-- Direct headers are headers that you explicitly `#include` in your code.
-- Indirect headers are included by another header that you directly include. You can inadvertently take a dependency on the indirect header. 
+- A direct header is a header that you explicitly `#include` in your code.
+- An indirect header is a header that is included by another header file that you directly include. We also say that the indirect header is a transitively included header file.
 
-Here's an example of using an indirect header:
+The include cleanup tool analyzes your code and determines which headers are directly included and which are indirectly included. Consider the following header file and the program that uses it:
+
+A header file:
 
 ```cpp
-#include <stdlib.h>
+// myHeader.h
 
-int main()
+#pragma once
+
+#include <string>
+#include <iostream>
+
+void myFunc()
 {
-    int charSize = CHAR_BIT; // CHAR_BIT is defined in limits.h
+    std::string s = "test()\n";
+    std::cout << s;
 }
 ```
 
-`CHAR_BIT` is defined in `limits.h`. The reason this code compiles is because `stdlib.h` happens to include `limits.h`. If `stdlib.h` ever stopped including `limits.h`, this code would break because it doesn't directly include a dependency it needs.
+And the program that uses it:
 
-Per the C++ guidelines, it's better to explicitly include headers for all your dependencies so that your code isn't subject to brittleness caused by changes to header files. For more information, see [C++ Core Guidelines SF.10](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#sf10-avoid-dependencies-on-implicitly-included-names). The C++ include cleanup tool helps you find and fix issues like this.
+```cpp
+// myProgram.cpp
+#include "myHeader.h"
+
+int main()
+{
+    std::string s = "main()"; // string is indirectly included from myHeader.h
+    std::cout << s; // cout is indirectly included from myHeader.h
+    test();
+}
+```
+
+In `myProgram.cpp`, `myHeader.h` is a direct header because it is directly included. `myHeader.h` includes `<string>` and `<iostream>`, so those are indirect headers. The problem here is that `myProgram.cpp` is using `std::string` and `std::cout` but doesn't directly include the headers that define those types. This code happens to compile because `myHeader.h` includes those headers, but this code is brittle because it depends on `myHeader.h` to include those headers. If `myHeader.h` ever stopped including either one of them, this code would break.
+
+Per the C++ guidelines, it's better to explicitly include headers for all your dependencies so that your code isn't subject to brittleness caused by changes to header files. For more information, see [C++ Core Guidelines SF.10](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#sf10-avoid-dependencies-on-implicitly-included-names). 
+
+The C++ include cleanup tool helps you find and fix issues like this. The cleanup tool analyzes your code and determines which headers are directly included and which are indirectly included. It provides feedback, based on the settings described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md), such as warnings, suggestions, and so on, so that you can choose to remove unused headers, add missing headers, and so on.
 
 ## Unused headers
 
-As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project, and over time your build time may be impacted by the compiler processing header files that aren't used. The C++ include cleanup tool helps you find and remove unused headers. For example:
+As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project, and over time your build time may be impacted by the compiler processing header files that aren't used. The C++ include cleanup tool helps you find and remove unused headers. For example, what if test() is commented out in `myProgram.cpp`? 
 
 ```cpp
-#include <stdlib.h>
-#include <iostream>
+// myProgram.cpp
+#include "myHeader.h"
 
 int main()
 {
-    int charSize = CHAR_BIT; // CHAR_BIT is defined in limits.h
-    // std::cout << "charSize = " << charSize << std::endl; // Commenting this line means <iostream> isn't needed
+    std::string s = "main()"; // string is indirectly included from myHeader.h
+    std::cout << s; // cout is indirectly included from myHeader.h
+    // test();
 }
 ```
 
-In the following screenshot, `#include <iostream>` is dimmed because it isn't used since `std::cout` is commented out. Hover your cursor over the dimmed `#include` to bring up the quick action lightbulb. Click the lightbulb (or choose the **Show potential fixes** link) and choose **Remove #include <iostream** to remove the unused header:
+In the following screenshot, `#include "myHeader.h"` is dimmed because it isn't used since `test()` is commented out. Hover your cursor over the dimmed `#include` to bring up the quick action menu. Click the lightbulb (or choose the **Show potential fixes** link) to see actions related to the unused file.:
 
-:::image type="content" source="media/vs2022-include-cleanup-refactor-options.png" alt-text="Three refactoring options are shown: Remove # include iostream, remove all unused includes, and Add all transitively used and remove all unused # includes.":::
+:::image type="content" source="media/vs2022-include-cleanup-refactor-options.png" alt-text="Three refactoring options are shown: Remove # include myHeader.h, remove all unused includes, and Add all transitively used and remove all unused # includes.":::
 
 ## Add transitively used headers
 
-It might be surprising that both `stdlib.h` and `iostream` were dimmed. The reason that `stdlib.h` is dimmed is because it isn't used in this file. But because `stdlib.h` includes `<limits.h>`, which defines `CHAR_BIT`, the code compiles. But we are getting `limits.h` indirectly through `stdlib.h`. The situation we really want is to not include `stdlib.h` because the compiler is just processing extra stuff we don't need, but we do want to include `limits.h` because we are using that. The `#include` cleanup tool can help with this.
-
-Hover your cursor over the dimmed `#include <stdlib.h>` to bring up the quick action lightbulb. Click the lightbulb (or choose the **Show potential fixes** link) and choose **Add all transitively used and remove all unused #includes**:
-
-:::image type="content" source="media/include-cleanup-add-transitively-used.png" alt-text="Three refactoring options are shown: Remove # include stdlib.h, remove all unused includes, and Add all transitively used and remove all unused # includes.":::
-
-This removes unused headers and adds any used headers that are indirectly included by other header files. In this case, `#include <limits.h>` is added because `CHAR_BIT` is defined in that header. And `stdlib.h` is removed because we aren't using anything from it. The result is:
+We could choose to remove the unused header file, but that results in the code breaking since we will no longer be indirectly including `<string>` and `<iostream>`. Instead, we can choose **Add all transitvely used and remove all unused #includes**. This removes the now unused header `myHeader.h`, but also adds any *used* headers that are indirectly included by other header files. In this case, `#include <string>` and `#include <iostream>` are added because they are indirectly included by `myHeader.h`. You can think of the order of operations with this step as first determining what indirect header files are being included by the unused header file that is about to be removed, they are added, the unused header file is removed, and the result in this case is:
 
 ```cpp
-#include <limits.h>
+// myProgram.cpp
+#include <iostream>
+#include <string>
 
 int main()
 {
-    int charSize = CHAR_BIT; // CHAR_BIT is defined in limits.h
-    //std::cout << "charSize = " << charSize;
+    std::string s = "main()"; // string is directly included from <string>
+    std::cout << s; // cout is directly included from <string>
+    // test();
 }
 ```
 
-In this brief overview, you've seen how the #include cleanup tool can help you remove unused headers, add headers that were indirectly included by other headers so that now your code follows best practices and is less brittle, and add missing headers. 
+The tool doesn't update the comments, but you can see that the code is now using `std::string` and `std::cout` directly. This code is no longer brittle because it doesn't depend on `myHeader.h` to include those headers.
+
+In this brief overview, you've seen how the #include cleanup tool can help you remove unused headers, and add headers that were indirectly included by other headers. This helps you keep your code clean, potentially build faster, and reduces the brittleness of your code.
 
 For a practical introduction to improving code quality and build times, see [Cleanup tool walkthrough - TBD naming](link-somewhere).\
-For more information about customizing how the #include cleanup generates suggestions for your project and across your team, see [Cleanup tool configuration reference](link-somewhere).
+For more information about customizing how the #include cleanup generates suggestions for your project and across your team, see [Cleanup tool configuration reference](include-cleanup-config.md).
 
 ## See also
 
