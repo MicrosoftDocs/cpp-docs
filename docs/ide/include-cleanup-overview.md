@@ -5,7 +5,7 @@ ms.date: 10/03/2023
 ms.topic: "overview"
 ms.custom: intro-overview
 ---
-# Clean up C++ #includes in Visual Studio
+# Clean up C and C++ #includes in Visual Studio
 
 Starting with Visual Studio 17.7 preview 3, Visual Studio provides an `#include` cleanup tool that improves the quality of your code in the following ways:
 - Offers to remove unused header files--improving build times and code cleanliness.
@@ -82,6 +82,7 @@ In the following screenshot, `#include "myHeader.h"` is dimmed (a setting descri
 We could choose to remove the unused header file, but that results in the code breaking since we will no longer be indirectly including `<string>` and `<iostream>`. 
 
 Instead, we can choose **Add all transitvely used and remove all unused #includes**. This removes the now unused header `myHeader.h`, but also adds any headers that are being used that were indirectly included by the removed header file. In this case, `#include <string>` and `#include <iostream>` are added because they are indirectly included by `myHeader.h`, which is then removed. You can think of the order of operations as:
+
 - first determine which indirect header files are being used and are included by the unused header file that is about to be removed
 - add `#include`s for the indirect header files
 - remove the unused header file
@@ -105,10 +106,6 @@ The tool doesn't update the comments, but you can see that the code is now using
 
 In this brief overview, you've seen how the #include cleanup tool can help you remove unused headers, and add headers that were indirectly included by other headers. This helps you keep your code clean, potentially build faster, and reduces the brittleness of your code.
 
-For a practical introduction to improving code quality and build times, see [Cleanup tool walkthrough - TBD naming](link-somewhere).\
-For more information about customizing how the #include cleanup generates suggestions for your project and across your team, see [Cleanup tool configuration reference](include-cleanup-config.md).
-
 ## See also
 
-[Cleanup tool walkthrough - TBD naming](link-somewhere)\
 [Cleanup tool configuration reference](link-somewhere)

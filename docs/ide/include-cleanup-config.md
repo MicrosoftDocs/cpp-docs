@@ -1,13 +1,13 @@
 ---
-title: "Config the C++ #include cleanup tool"
-description: "Learn how to configure the C++ include cleanup tool for individual users and for your team."
+title: "Config C/C++ #include cleanup in Visual Studio"
+description: "Learn how to configure C/C++ include cleanup."
 ms.date: 10/10/2023
 ms.topic: "how-to"
 ms.custom: intro-overview
 ---
-# Config the C++ #include tool in Visual Studio
+# Config C/C++ #include cleanup in Visual Studio
 
-Starting with Visual Studio 17.7 preview 3, Visual Studio provides the `#include` cleanup tool to improve the quality of your code in the following ways:
+Starting with Visual Studio 17.7 preview 3, Visual Studio provides the `#include` cleanup tool to improve the quality of your C and C++ code in the following ways:
 - Offers to remove unused header files--improving build times.
 - Offers to add header files for code that is only working because another header file includes the necessary header file.
 
@@ -49,10 +49,21 @@ The `#include` cleanup tool indicates unused headers by dimming the line of the 
 The line for #include < iostream > is dimmed becasue the line of code that uses iostream is commented out. That line of code is // std::cout << "charSize = " << charSize; The quick action menu is also visible for this line. It says the #include < iostream > is not used in this file, and has a link to Show potential fixes.
 :::image-end:::
 
-For the exercise in this article, **Remove unused includes suggestion level** is set to **Dimmed** and **Add missing includes suggestion level** is set to **Suggestion**.
+## Configure the include cleanup tool with `.editorconfig`
 
-There are more options for configuring the `#include` cleanup tool such as excluding specified includes from cleanup suggestions, indicating that some header files are required so that the tool doesn't mark them as unused, and so on. For more information, see [Configure code cleanup](/visualstudio/ide/code-cleanup#configure-code-cleanup-JTW_TO_WRITE).
+There are more options for configuring the `#include` cleanup tool, such as excluding specified includes from cleanup suggestions, indicating that some header files are required so that the tool doesn't mark them as unused, and so on. These options are defined in an `.editorconfig` file which, among other things, can be added to your project to enforce consistent coding styles for everyone that works in the codebase. For more information about adding an `.editorconfig` file to your project, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options).
+
+The `.editorconfig` settings that you can use with include cleanup are:
+
+| Setting | Description | Values | Example |
+|--|--|--|--|
+| `cpp_include_cleanup_add_missing_error_tag_type` | Sets the error level of add transitive include suggestions. | `none`</br>`suggestion`</br>`warning`</br>`error` | `cpp_include_cleanup_add_missing_error_tag_type = suggestion` |
+| `cpp_include_cleanup_remove_unused_error_tag_type` | Sets the error level of remove unused include suggestions. | `none`</br>`suggestion`</br>`warning`</br>`error`</br>`dimmed` | `cpp_include_cleanup_remove_unused_error_tag_type = dimmed` |
+| `cpp_include_cleanup_excluded_files` | Excludes the specified files from include tool cleanup suggestions. | filename | `cpp_include_cleanup_excluded_files = vcruntime.h,vcruntime_string.h` |
+| `cpp_include_cleanup_required_files` | Ensures that required files won’t be marked as unused. | indirect header file:filename | `cpp_include_cleanup_required_files = atlwin.h:altbase.h,atlcom.h:altbase.h` |
+| `cpp_include_cleanup_replacement_files` | Redirect the usage of the first file to using the second file. | file to replace:replacing file | `cpp_include_cleanup_replacement_files = stdio.h:cstdio,stdint.h:cstdint` |
+| `cpp_include_cleanup_alternate_files` | Prevent #include cleanup from generating suggestions for alternate matches. | file to exclude:alternate file | `cpp_include_cleanup_alternate_files = windows.h:minwindef.h,windows.h:winerror.h` |
 
 ## See also
 
-[Clean up C++ #includes in Visual Studio](/visualstudio/ide/include-cleanup-overview)
+[Clean up C and C++ #includes in Visual Studio](/visualstudio/ide/include-cleanup-overview)
