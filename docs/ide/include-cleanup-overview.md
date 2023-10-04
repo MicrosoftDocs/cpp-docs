@@ -7,20 +7,20 @@ ms.custom: intro-overview
 ---
 # Clean up C and C++ #includes in Visual Studio
 
-Starting with Visual Studio 17.7 preview 3, Visual Studio provides an `#include` cleanup tool that improves the quality of your code in the following ways:
+Starting with Visual Studio 17.7 preview 3, Visual Studio provides an `#include` cleanup feature that improves the quality of your code in the following ways:
 - Offers to remove unused header files--improving build times and code cleanliness.
 - Offers to add header files for code that is only working because another header file includes the necessary header file.
 
-The `#include` cleanup tool is on by default. To learn how to configure it, see [Config the C++ #include tool in Visual Studio](include-cleanup-config.md).
+Include cleanup is on by default. To learn how to configure it, see [Config C/C++ include cleanup in Visual Studio](include-cleanup-config.md).
 
 ## Direct vs indirect headers
 
-Here's some terminology to help you understand what the include cleanup tool does:
+Here's some terminology to help you understand what include cleanup does:
 
 - A direct header is a header that you explicitly `#include` in your code.
 - An indirect header is a header that you don't explicitly `#include`, but that is included by a header file that you directly include. We also say that an indirect header is a transitively included header file.
 
-The include cleanup tool analyzes your code and determines which headers are directly included and which are indirectly included. It also determines which header files aren't used. Consider the following header file and the program that uses it:
+Include cleanup analyzes your code and determines which headers are directly included and which are indirectly included. It also determines which header files aren't used. Consider the following header file and the program that uses it:
 
 ```cpp
 // myHeader.h
@@ -55,11 +55,11 @@ The problem is that `myProgram.cpp` is using `std::string` and `std::cout` but d
 
 Per the C++ guidelines, it's better to explicitly include headers for all your dependencies so that your code isn't subject to brittleness caused by changes to header files. For more information, see [C++ Core Guidelines SF.10](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#sf10-avoid-dependencies-on-implicitly-included-names). 
 
-The C++ include cleanup tool helps you find and fix issues like this. The cleanup tool analyzes your code and determines which headers are directly included and which are indirectly included. It provides feedback, based on the settings described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md), such as warnings, suggestions, and so on, so that you can choose to remove unused headers, and add indirectly included headers directly.
+Include cleanup helps you find and fix issues like this. It analyzes your code and determines which headers are directly included and which are indirectly included. It provides feedback, based on the settings described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md), such as warnings, suggestions, and so on, so that you can choose to remove unused headers, and add indirectly included headers directly.
 
 ## Unused headers
 
-As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project, and over time your build time may be impacted by the compiler processing header files that aren't used. The C++ include cleanup tool helps you find and remove unused headers. For example, what if `myFunc()` is commented out in `myProgram.cpp`:
+As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project, and over time your build time may be impacted by the compiler processing header files that aren't used. Include cleanup helps you find and remove unused headers. For example, what if `myFunc()` is commented out in `myProgram.cpp`:
 
 ```cpp
 // myProgram.cpp
@@ -104,8 +104,8 @@ int main()
 
 The tool doesn't update the comments, but you can see that the code is now using `std::string` and `std::cout` directly. This code is no longer brittle because it doesn't depend on `myHeader.h` to include those headers.
 
-In this brief overview, you've seen how the #include cleanup tool can help you remove unused headers, and add headers that were indirectly included by other headers. This helps you keep your code clean, potentially build faster, and reduces the brittleness of your code.
+In this brief overview, you've seen how include cleanup can help you remove unused headers and add headers that were indirectly included. This helps you keep your code clean, potentially build faster, and reduces the brittleness of your code.
 
 ## See also
 
-[Cleanup tool configuration reference](link-somewhere)
+[Config C/C++ include cleanup in Visual Studio](include-cleanup-config.md)
