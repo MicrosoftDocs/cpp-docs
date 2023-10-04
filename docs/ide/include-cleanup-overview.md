@@ -60,7 +60,7 @@ Include cleanup helps you find and fix issues like this. It analyzes your code a
 
 ## Unused headers
 
-As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project, and over time your build time may be impacted by the compiler processing header files that aren't needed. Include cleanup helps you find and remove unused headers. For example, what if `myFunc()` is commented out in `myProgram.cpp`:
+As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project. Over time your build time may be slowed by the compiler processing unnecessary header files. Include cleanup helps you find and remove unused headers. For example, what if `myFunc()` is commented out in `myProgram.cpp`:
 
 ```cpp
 // myProgram.cpp
@@ -82,7 +82,7 @@ Hover your cursor over the dimmed `#include` to bring up the quick action menu. 
 
 ## Add transitively used headers
 
-We could choose to remove the unused header file, but that breaks the code since `<string>` and `<iostream>` is not indirectly included via `myheader.h`.
+We could choose to remove the unused header file, but that breaks the code since `<string>` and `<iostream>` isn't indirectly included via `myheader.h`.
 
 Instead, we can choose **Add all transitively used and remove all unused #includes**. This removes the unused header `myHeader.h`, but also adds any headers that are being used that were indirectly included by the removed header file. In this case, `#include <string>` and `#include <iostream>` are added because they're indirectly included by `myHeader.h`, which is then removed. You can think of the order of operations followed by include cleanup as:
 
