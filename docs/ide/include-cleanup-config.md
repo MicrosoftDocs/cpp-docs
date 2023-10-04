@@ -9,7 +9,7 @@ ms.custom: intro-overview
 
 Starting with Visual Studio 17.7 preview 3, Visual Studio can cleanup your `#include`s to improve the quality of your C and C++ code in the following ways:
 - Offers to remove unused header files--improving build times.
-- Offers to add header files for code that is only working because a needed header file is included only indirectly by another header file.
+- Offers to add header files for code that is only working because the needed header file is included indirectly.
 
 This article describes how to configure include cleanup in Visual Studio. For more information about include cleanup, see [C/C++ include cleanup overview](/visualstudio/ide/include-cleanup-overview).
 
@@ -47,7 +47,7 @@ The line for #include < iostream > is dimmed becasue the line of code that uses 
 
 ## Configure include cleanup with `.editorconfig`
 
-There are more options for configuring include cleanup such as excluding specified includes from cleanup suggestions, indicating that some header files are required so that the tool doesn't mark them as unused, and so on. These options are defined in an `.editorconfig` file which, among other things, can be added to your project to enforce consistent coding styles for everyone that works in the codebase. For more information about adding an `.editorconfig` file to your project, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options).
+There are more options for configuring include cleanup such as excluding specified includes from cleanup suggestions, indicating that some header files are required so that the tool doesn't mark them as unused, and so on. These options are defined in an `.editorconfig` file, that, among other things, can be added to your project to enforce consistent coding styles for everyone that works in the codebase. For more information about adding an `.editorconfig` file to your project, see [Create portable, custom editor settings with EditorConfig](/visualstudio/ide/create-portable-custom-editor-options).
 
 The `.editorconfig` settings that you can use with include cleanup are:
 
@@ -55,10 +55,10 @@ The `.editorconfig` settings that you can use with include cleanup are:
 |--|--|--|--|
 | `cpp_include_cleanup_add_missing_error_tag_type` | Sets the error level of add transitive include suggestions. | `none`</br>`suggestion`</br>`warning`</br>`error` | `cpp_include_cleanup_add_missing_error_tag_type = suggestion` |
 | `cpp_include_cleanup_remove_unused_error_tag_type` | Sets the error level of remove unused include suggestions. | `none`</br>`suggestion`</br>`warning`</br>`error`</br>`dimmed` | `cpp_include_cleanup_remove_unused_error_tag_type = dimmed` |
-| `cpp_include_cleanup_excluded_files` | Excludes the specified files from include tool cleanup suggestions. | filename | `cpp_include_cleanup_excluded_files = vcruntime.h,vcruntime_string.h` |
-| `cpp_include_cleanup_required_files` | Ensures that required files won’t be marked as unused. | indirect header file:filename | `cpp_include_cleanup_required_files = atlwin.h:altbase.h,atlcom.h:altbase.h` |
-| `cpp_include_cleanup_replacement_files` | Redirect the usage of the first file to using the second file. | file to replace:replacing file | `cpp_include_cleanup_replacement_files = stdio.h:cstdio,stdint.h:cstdint` |
-| `cpp_include_cleanup_alternate_files` | Prevent include cleanup from generating suggestions for alternate matches. | file to exclude:alternate file | `cpp_include_cleanup_alternate_files = windows.h:minwindef.h,windows.h:winerror.h` |
+| `cpp_include_cleanup_excluded_files` | Excludes the specified files from include tool cleanup suggestions. You won’t get a suggestion related to the header at all, whether to add it or that it is unused. | filename | `cpp_include_cleanup_excluded_files = vcruntime.h, vcruntime_string.h` |
+| `cpp_include_cleanup_required_files` | Specify that usage of file1 requires file2. For example, specify that if you use `atlwin.h` that `altbase.h` must also be included. | file1:file2 | `cpp_include_cleanup_required_files = atlwin.h:altbase.h, atlcom.h:altbase.h` |
+| `cpp_include_cleanup_replacement_files` | Suggest that the usage of file1 be replaced by file2. | file1:file2 | `cpp_include_cleanup_replacement_files = stdio.h:cstdio,stdint.h:cstdint` |
+| `cpp_include_cleanup_alternate_files` | Suggest that file1 be used as an alternative to file2. Useful for facade files. | file1:file2 | `cpp_include_cleanup_alternate_files = windows.h:minwindef.h, windows.h:winerror.h` |
 
 ## See also
 

@@ -10,7 +10,7 @@ items:
       href: ../ide/navigate-code-cpp.md
     - name: C/C++ include cleanup overview
       href: ../ide/include-cleanup-overview.md
-    - name: Config the C++ include tool in Visual Studio
+    - name: Configure C/C++ include cleanup
       href: ../ide/include-cleanup-config.md
     - name: Set your C++ coding preferences
       href: ../ide/how-to-set-preferences.md

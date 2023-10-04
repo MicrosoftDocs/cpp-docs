@@ -7,10 +7,10 @@ ms.custom: intro-overview
 ---
 # Clean up C/C++ includes in Visual Studio
 
-Starting with Visual Studio 17.7 preview 3, Visual Studio provides include cleanup which improves the quality of your code in the following ways:
+Starting with Visual Studio 17.7 preview 3, Visual Studio provides include cleanup that improves the quality of your code in the following ways:
 
 - Offers to remove unused header files--improving build times and code cleanliness.
-- Offers to add header files for code that is only working because a needed header file is included only indirectly by another header file.
+- Offers to add header files for code that is only working because a needed header file is included indirectly.
 
 Include cleanup is on by default. To learn how to configure it, see [Config C/C++ include cleanup in Visual Studio](include-cleanup-config.md).
 
@@ -21,7 +21,7 @@ First some terminology:
 - A direct header is a header that you explicitly `#include` in your code.
 - An indirect header is a header that you don't explicitly `#include`, but that is included by a header file that you do directly include. We also say that an indirect header is included `transitively`.
 
-Include cleanup analyzes your code and determines which headers are not used and which are indirectly included. Consider the following header file and the program that uses it:
+Include cleanup analyzes your code and determines which headers aren't used and which are indirectly included. Consider the following header file and the program that uses it:
 
 ```cpp
 // myHeader.h
@@ -56,7 +56,7 @@ The issue is that `myProgram.cpp` uses `std::string` and `std::cout`, but doesn'
 
 Per the C++ guidelines, it's better to explicitly include headers for all your dependencies so that your code isn't subject to brittleness caused by changes to header files. For more information, see [C++ Core Guidelines SF.10](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#sf10-avoid-dependencies-on-implicitly-included-names). 
 
-Include cleanup helps you find and fix issues like this. It analyzes your code and determines which headers are indirectly included and which aren't used at all. It provides feedback, based on settings described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md), such as warnings, suggestions, and so on, so that you can choose to remove unused headers and add indirectly included headers.
+Include cleanup helps you find and fix issues like this. It analyzes your code and determines which headers are indirectly included and which aren't used at all. It provides feedback, based on settings described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md). Those settings determine whether suggestions to remove unused headers and add indirectly included headers via warnings, suggestions, and so on.
 
 ## Unused headers
 
@@ -76,15 +76,15 @@ int main()
 
 In the following screenshot, `#include "myHeader.h"` is dimmed (a setting described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md)) because it isn't used since `myFunc()` is commented out.
 
-Hover your cursor over the dimmed `#include` to bring up the quick action menu. Click the lightbulb (or choose the **Show potential fixes** link) to see actions related to the unused file:
+Hover your cursor over the dimmed `#include` to bring up the quick action menu. Click the light bulb (or choose the **Show potential fixes** link) to see actions related to the unused file:
 
 :::image type="content" source="media/vs2022-include-cleanup-refactor-options.png" alt-text="Three refactoring options are shown: Remove # include myHeader.h, remove all unused includes, and Add all transitively used and remove all unused # includes.":::
 
 ## Add transitively used headers
 
-We could choose to remove the unused header file, but that will break the code since we will no longer be indirectly including `<string>` and `<iostream>` through `myheader.h`.
+We could choose to remove the unused header file, but that breaks the code since `<string>` and `<iostream>` is not indirectly included via `myheader.h`.
 
-Instead, we can choose **Add all transitvely used and remove all unused #includes**. This removes the unused header `myHeader.h`, but also adds any headers that are being used that were indirectly included by the removed header file. In this case, `#include <string>` and `#include <iostream>` are added because they are indirectly included by `myHeader.h`, which is then removed. You can think of the order of operations followed by include cleanup as:
+Instead, we can choose **Add all transitively used and remove all unused #includes**. This removes the unused header `myHeader.h`, but also adds any headers that are being used that were indirectly included by the removed header file. In this case, `#include <string>` and `#include <iostream>` are added because they're indirectly included by `myHeader.h`, which is then removed. You can think of the order of operations followed by include cleanup as:
 
 - determine which indirect header files are being used
 - add `#include`s for the indirect header files
