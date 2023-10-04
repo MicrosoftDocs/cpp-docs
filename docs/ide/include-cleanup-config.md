@@ -9,15 +9,15 @@ ms.custom: intro-overview
 
 Starting with Visual Studio 17.7 preview 3, Visual Studio can cleanup your `#include`s to improve the quality of your C and C++ code in the following ways:
 - Offers to remove unused header files--improving build times.
-- Offers to add header files for code that is only working because another header file includes the necessary header file.
+- Offers to add header files for code that is only working because a needed header file is included only indirectly by another header file.
 
-This article describes how to configure include cleanup in Visual Studio. For more information about include cleanup, see [Clean up C++ #includes in Visual Studio](/visualstudio/ide/include-cleanup-overview).
+This article describes how to configure include cleanup in Visual Studio. For more information about include cleanup, see [C/C++ include cleanup overview](/visualstudio/ide/include-cleanup-overview).
 
 ## Turn on include cleanup
 
-The `#include` cleanup feature is on by default. If it isn't active, you can turn it on via **Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup** and select **Enable #include cleanup**.
+The include cleanup feature is on by default. If it isn't active, you can turn it on via **Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup** and select **Enable #include cleanup**.
 
-Then use the dropdowns to configure how you want to be notified about opportunities to remove unused headers or add missing headers:
+Then use the dropdowns to configure how you want to be notified about opportunities to remove unused headers or add indirect headers:
 
 :::image type="complex" source="media/vs2022-include-cleanup-option.png" alt-text="The Tools options dialog opened at Text Editor > C/C++ > Code Cleanup.":::
 The Enable # include cleanup checkbox is checked. The dropdowns for Remove unused includes suggestion level, and Add missing includes suggestion level, are shown. The contents of the dropdown are shown, which are: **Refactoring only**, **Suggestion**, **Warning**, and **Error**. The **Remove unused includes suggestion level** dropdown offers the same options but also adds dimmed.
@@ -25,17 +25,13 @@ The Enable # include cleanup checkbox is checked. The dropdowns for Remove unuse
 
 The meaning of the suggestion level options are:
 
-**Refactoring only**
-
-Include cleanup offers actions it can take through the quick action menu when you hover the mouse pointer over an `#include`, or place the cursor on the `#include` line and press Ctrl+period:
+**Refactoring only**: Include cleanup offers actions it can take through the quick action menu when you hover the mouse pointer over an `#include`, or place the cursor on the `#include` line and press Ctrl+period:
 
 :::image type="complex" source="media/include-cleanup-refactor-lightbulb.png" alt-text="A screenshot of the quick action to remove an unused header":::
 When hovering the cursor over # include iostream, a light bulb appears with the text that # include iostream isn't used in this file."
 :::image-end:::
 
-**Suggestion, Warning, Error**
-
-Include cleanup offers actions it can take via suggestions, warnings, or errors in the Error List window. You determine which. In the following screenshot of the Error List, include cleanup is configured to show unused headers with a warning. Ensure that **Build + Intellisense** is selected in the dropdown filter so that you can see the include cleanup output:
+**Suggestion, Warning, Error**: Include cleanup offers actions it can take via suggestions, warnings, or errors in the Error List window. You determine which. In the following screenshot of the Error List, include cleanup is configured to show unused headers with a warning. Ensure that **Build + Intellisense** is selected in the dropdown filter so that you can see the include cleanup output:
 
 :::image type="complex" source="media/include-cleanup-error-list.png" alt-text="A screenshot of the Error List window.":::
 The dropdown filter is set to Build + IntelliSense. A warning is visible: VCIC002 - #include < iostream > is not used in this file."
@@ -66,4 +62,4 @@ The `.editorconfig` settings that you can use with include cleanup are:
 
 ## See also
 
-[Clean up C and C++ #includes in Visual Studio](/visualstudio/ide/include-cleanup-overview)
+[C/C++ include cleanup overview](/visualstudio/ide/include-cleanup-overview)

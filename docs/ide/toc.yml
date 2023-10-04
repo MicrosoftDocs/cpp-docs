@@ -8,7 +8,7 @@ items:
       href: ../ide/writing-and-refactoring-code-cpp.md
     - name: Navigate C++ code
       href: ../ide/navigate-code-cpp.md
-    - name: Include cleanup overview
+    - name: C/C++ include cleanup overview
       href: ../ide/include-cleanup-overview.md
     - name: Config the C++ include tool in Visual Studio
       href: ../ide/include-cleanup-config.md
