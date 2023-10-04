@@ -7,10 +7,10 @@ ms.custom: intro-overview
 ---
 # Clean up C/C++ includes in Visual Studio
 
-Starting with Visual Studio 17.7 preview 3, Visual Studio provides include cleanup that improves the quality of your code in the following ways:
+Starting with Visual Studio 17.8 Preview 1, Visual Studio provides include cleanup that improves the quality of your code in the following ways:
 
 - Offers to remove unused header files--improving build times and code cleanliness.
-- Offers to add header files for code that is only working because a needed header file is included indirectly.
+- Offers to add header files for code that compiles because a needed header file is included indirectly.
 
 Include cleanup is on by default. To learn how to configure it, see [Config C/C++ include cleanup in Visual Studio](include-cleanup-config.md).
 
