@@ -107,6 +107,8 @@ int main()
 
 The tool doesn't update the comments, but you can see that the code is now using `std::string` and `std::cout` directly. This code is no longer brittle because it doesn't depend on `myHeader.h` to include the other required headers.
 
+If you want a more conservative approach to include cleanup, you can first add direct headers where indirect headers are used, and then go through and remove the unused includes.
+
 In this brief overview, you've seen how include cleanup can help you remove unused headers, and add headers that were indirectly included. This helps you keep your code clean, potentially build faster, and reduces the brittleness of your code.
 
 ## See also
