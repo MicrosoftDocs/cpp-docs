@@ -107,9 +107,19 @@ int main()
 
 The tool doesn't update the comments, but you can see that the code is now using `std::string` and `std::cout` directly. This code is no longer brittle because it doesn't depend on `myHeader.h` to include the other required headers.
 
-## Working with large codebases
+## Using include cleanup with large codebases
 
-If your codebase is large, you may want a more conservative approach to cleaning up your includes. A good approach is to first add direct headers where indirect headers are used. Places where code relies on an indirect include will have a squiggle. You can right-click those lines and choose to add the header. After you have done this for all indirect headers in the file, then remove the unused includes using the **Remove all unused includes** quick action.
+If your codebase is large, the recommended approach to clean up the #includes is to first add direct headers where indirect headers are used. After you have done this for all indirect headers in the file, then remove the unused includes.
+
+To do this, set your the include cleanup setting for **Add missing includes suggestion level** to **Suggestion** (**Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup**). Also set **Remove unused includes suggestion level** to **Suggestion**.
+
+1. In the error list, make sure the filter is set to **Build + IntelliSense** and look for an instance of 'Content from #include x is used in this file and transitively included'.
+1. Hover your cursor over line with the suggestion and invoke the quick action menu by clicking the broom or pressing Ctrl+period.
+1. Choose **Add all transitively used includes**
+1. In the error list, look for all instances of `#include x is not used in this file'.
+1. Hover your cursor over the unused header and choose **Remove #include <header>**.
+1. Repeat these steps until there are no more suggestions about transitively include includes or unused includes and the file compiles cleanly.
+1. Repeat these steps for the other files in your project that you wish to cleanup.
 
 In this brief overview, you've seen how include cleanup can help you remove unused headers, and add headers that were indirectly included. This helps you keep your code clean, potentially build faster, and reduces the brittleness of your code.
 
