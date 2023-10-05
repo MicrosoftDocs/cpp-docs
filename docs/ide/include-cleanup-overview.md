@@ -111,16 +111,16 @@ The tool doesn't update the comments, but you can see that the code is now using
 
 If your codebase is large, the recommended approach is to clean up the #includes by first adding direct headers where indirect headers are used. After you have done that for all indirect headers in the file, then remove any unused includes.
 
-To do this, set your the include cleanup setting for **Add missing includes suggestion level** to **Suggestion** (**Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup**). Also set **Remove unused includes suggestion level** to **Suggestion**.
+To do this, set the include cleanup setting for **Add missing includes suggestion level** to **Suggestion** (**Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup**). Also set **Remove unused includes suggestion level** to **Suggestion**.
 
 1. In the error list, make sure the filter is set to **Build + IntelliSense**.
-1. Look for instances of 'Content from #include x is used in this file and transitively included'.
+1. Look for instances of "Content from #include x is used in this file and transitively included".
 1. Hover your cursor over line with the suggestion and invoke the quick action menu by clicking the broom or pressing Ctrl+period.
 1. Choose **Add all transitively used includes**.
 1. Remove unused includes: in the error list, look for all instances of `#include x is not used in this file'.
 1. Hover your cursor over the unused header and choose **Remove #include \<header\>**.
-1. Repeat these steps until there are no more suggestions about transitively include includes or unused includes.
-1. Repeat these steps for the other files in your project that you wish to cleanup.
+1. Repeat these steps until there are no more suggestions about transitive includes or unused includes.
+1. Repeat these steps for the other files in your project that you wish to clean up.
 
 In this brief overview, you've seen how include cleanup can help you remove unused headers, and add headers that were indirectly included. This helps you keep your code clean, potentially build faster, and reduces the brittleness of your code.
 

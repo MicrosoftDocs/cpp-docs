@@ -7,7 +7,7 @@ ms.custom: intro-overview
 ---
 # Configure C/C++ include cleanup in Visual Studio
 
-Starting with Visual Studio 17.7 preview 3, Visual Studio can cleanup your `#include`s to improve the quality of your C and C++ code in the following ways:
+Starting with Visual Studio 17.7 preview 3, Visual Studio can clean up your `#include`s to improve the quality of your C and C++ code in the following ways:
 - Offers to remove unused header files--improving build times.
 - Offers to add header files for code that is only working because the needed header file is included indirectly.
 
