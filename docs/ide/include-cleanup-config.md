@@ -8,9 +8,9 @@ helpviewer_keywords: ["config include cleanup"]
 ---
 # Configure C/C++ include cleanup in Visual Studio
 
-Starting with Visual Studio 17.7 preview 3, Visual Studio can clean up your `#include`s to improve the quality of your C and C++ code in the following ways:
-- Offers to remove unused header files--improving build times.
+Starting with 17.8 Preview 1, Visual Studio can clean up your `#include`s to improve the quality of your C and C++ code in the following ways:
 - Offers to add header files for code that is only working because the needed header file is included indirectly.
+- Offers to remove unused header files--improving build times.
 
 This article describes how to configure include cleanup in Visual Studio. For more information about include cleanup, see [C/C++ include cleanup overview](include-cleanup-overview.md).
 
@@ -18,7 +18,7 @@ This article describes how to configure include cleanup in Visual Studio. For mo
 
 The include cleanup feature is on by default. If it isn't active, you can turn it on via **Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup** and select **Enable #include cleanup**.
 
-Then use the dropdowns to configure how you want to be notified about opportunities to remove unused headers or add indirect headers:
+Then use the dropdowns to configure how you want to be notified about opportunities to add indirect headers or remove unused headers:
 
 :::image type="complex" source="media/vs2022-include-cleanup-option.png" alt-text="The Tools options dialog opened at Text Editor > C/C++ > Code Cleanup.":::
 The Enable # include cleanup checkbox is checked. The dropdowns for Remove unused includes suggestion level, and Add missing includes suggestion level, are shown. The contents of the dropdown are shown, which are: **Refactoring only**, **Suggestion**, **Warning**, and **Error**. The **Remove unused includes suggestion level** dropdown offers the same options but also adds dimmed.

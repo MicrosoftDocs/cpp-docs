@@ -11,8 +11,8 @@ helpviewer_keywords: ["include cleanup"]
 
 Starting with Visual Studio 17.8 Preview 1, Visual Studio provides include cleanup that improves the quality of your code in the following ways:
 
-- Offers to remove unused header files--improving build times and code cleanliness.
 - Offers to add header files for code that compiles because a needed header file is included indirectly.
+- Offers to remove unused header files--improving build times and code cleanliness.
 
 Include cleanup is on by default. To learn how to configure it, see [Config C/C++ include cleanup in Visual Studio](include-cleanup-config.md).
 
@@ -111,7 +111,7 @@ The tool doesn't update the comments, but you can see that the code is now using
 
 ## Using include cleanup with large codebases
 
-If your codebase is large, the recommended approach is to clean up the #includes by first adding direct headers where indirect headers are used. After you have done that for all indirect headers in the file, then remove any unused includes.
+The recommended approach is to clean up the #includes by first adding direct headers where indirect headers are used. After you have done that for all indirect headers in the file, then remove any unused includes.
 
 To do this, set the include cleanup setting for **Add missing includes suggestion level** to **Suggestion** (**Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup**). Also set **Remove unused includes suggestion level** to **Suggestion**.
 
