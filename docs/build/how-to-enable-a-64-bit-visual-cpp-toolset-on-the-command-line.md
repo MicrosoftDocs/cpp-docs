@@ -12,7 +12,7 @@ Visual Studio includes C++ compilers, linkers, and other tools that you can use 
 
 To access these command prompts on Windows, on the **Start** menu type `x64` and then choose one of the x64 native or cross-tool developer command prompts.
 
-:::image type="complex" source="./media/x64-native-tools-command-prompt.png" alt-text="Screenshot showing the start menu with "x64" typed into the search box and the x64 Native Tools Command Prompt shortcut selected.":::
+:::image type="complex" source="./media/x64-native-tools-command-prompt.png" alt-text="Screenshot showing the start menu with "x64" in the search box and the x64 Native Tools Command Prompt shortcut selected.":::
 If you have different versions of Visual Studio installed, other versions of the prompt appear. Choose the prompt for the version of Visual Studio that you want to use.
 :::image-end:::
 
