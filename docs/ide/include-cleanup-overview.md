@@ -4,6 +4,8 @@ description: "Learn about using C/C++ include cleanup in Visual Studio to remove
 ms.date: 10/5/2023
 ms.topic: "overview"
 ms.custom: intro-overview
+f1_keywords: ["include cleanup"]
+helpviewer_keywords: ["include cleanup"]
 ---
 # Clean up C/C++ includes in Visual Studio
 
@@ -56,7 +58,7 @@ The issue is that `myProgram.cpp` uses `std::string` and `std::cout`, but doesn'
 
 Per the C++ guidelines, it's better to explicitly include headers for all of your dependencies so that your code isn't subject to brittleness caused by changes to header files. For more information, see [C++ Core Guidelines SF.10](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#sf10-avoid-dependencies-on-implicitly-included-names).
 
-Include cleanup helps you find and fix issues like this. It analyzes your code and determines which headers are indirectly included and which aren't used at all. It provides feedback, based on settings described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md). Those settings determine how to notify you about opportunities to remove unused headers and add indirectly included headers. You can be notified by error list warnings, suggestions, and so on.
+Include cleanup helps you find and fix issues like this. It analyzes your code and determines which headers are indirectly included and which aren't used at all. It provides feedback, based on settings described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md). Those settings determine how to notify you about opportunities to remove unused headers and add indirectly included headers. You can be notified by error list warnings, suggestions, and so on. More more information about the messages include cleanup provides, see [Include cleanup messages](include-cleanup-messages.md).
 
 ## Unused headers
 
@@ -126,4 +128,5 @@ In this brief overview, you've seen how include cleanup can help you remove unus
 
 ## See also
 
-[Config C/C++ include cleanup in Visual Studio](include-cleanup-config.md)
+[Config C/C++ include cleanup in Visual Studio](include-cleanup-config.md)\
+[Include cleanup messages](include-cleanup-messages.md)

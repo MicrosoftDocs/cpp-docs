@@ -3,6 +3,8 @@ title: "Configure C/C++ include cleanup in Visual Studio"
 description: "Learn how to configure C/C++ include cleanup."
 ms.date: 10/10/2023
 ms.topic: "how-to"
+f1_keywords: ["config include cleanup"]
+helpviewer_keywords: ["config include cleanup"]
 ---
 # Configure C/C++ include cleanup in Visual Studio
 
@@ -61,4 +63,5 @@ The `.editorconfig` settings that you can use with include cleanup are:
 
 ## See also
 
-[C/C++ include cleanup overview](include-cleanup-overview.md)
+[C/C++ include cleanup overview](include-cleanup-overview.md)\
+[Include cleanup messages](include-cleanup-messages.md)
