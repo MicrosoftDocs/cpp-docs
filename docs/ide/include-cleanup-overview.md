@@ -107,7 +107,9 @@ int main()
 
 The tool doesn't update the comments, but you can see that the code is now using `std::string` and `std::cout` directly. This code is no longer brittle because it doesn't depend on `myHeader.h` to include the other required headers.
 
-If you want a more conservative approach to include cleanup, you can first add direct headers where indirect headers are used, and then go through and remove the unused includes.
+## Working with large codebases
+
+If your codebase is large, you may want a more conservative approach to cleaning up your includes. A good approach is to first add direct headers where indirect headers are used. Places where code relies on an indirect include will have a squiggle. You can right-click those lines and choose to add the header. After you have done this for all indirect headers in the file, then remove the unused includes using the **Remove all unused includes** quick action.
 
 In this brief overview, you've seen how include cleanup can help you remove unused headers, and add headers that were indirectly included. This helps you keep your code clean, potentially build faster, and reduces the brittleness of your code.
 
