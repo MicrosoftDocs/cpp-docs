@@ -1,7 +1,7 @@
 ---
 title: "Clean up C/C++ #includes in Visual Studio"
 description: "Learn about using C/C++ include cleanup in Visual Studio to remove unused headers, and transitively add indirect headers needed in your project."
-ms.date: 10/04/2023
+ms.date: 10/5/2023
 ms.topic: "overview"
 ms.custom: intro-overview
 ---
@@ -21,7 +21,7 @@ First some terminology:
 - A direct header is a header that you explicitly `#include` in your code.
 - An indirect header is a header that you don't explicitly `#include`, but that is included by a header file that you do directly include. We also say that an indirect header is included `transitively`.
 
-Include cleanup analyzes your code and determines which headers aren't used and which are indirectly included. Consider the following header file and the program that uses it:
+Include cleanup analyzes your code and determines which headers aren't used and which are indirectly included. Consider the following header file and the program that #includes it:
 
 ```cpp
 // myHeader.h
@@ -50,17 +50,17 @@ int main()
 }
 ```
 
-`myHeader.h` is a direct header because `myProgram.cpp` explicitly includes it. `myHeader.h` includes `<string>` and `<iostream>`, so those are indirect headers, as far as `myProgram.cpp` is concerned.
+`myHeader.h` is a direct header because `myProgram.cpp` explicitly includes it. `myHeader.h` includes `<string>` and `<iostream>`, so those are indirect headers.
 
-The issue is that `myProgram.cpp` uses `std::string` and `std::cout`, but doesn't directly include the headers that define those types. This code happens to compile because `myHeader.h` includes those headers. This code is brittle because it depends on `myHeader.h` to include those headers. If `myHeader.h` ever stopped including either one of them, this code would break.
+The issue is that `myProgram.cpp` uses `std::string` and `std::cout`, but doesn't directly include the headers that define them. This code happens to compile because `myHeader.h` includes those headers. This code is brittle because if `myHeader.h` ever stopped including either one of them, `myProgram.cpp` wouldn't compile anymore.
 
-Per the C++ guidelines, it's better to explicitly include headers for all your dependencies so that your code isn't subject to brittleness caused by changes to header files. For more information, see [C++ Core Guidelines SF.10](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#sf10-avoid-dependencies-on-implicitly-included-names). 
+Per the C++ guidelines, it's better to explicitly include headers for all of your dependencies so that your code isn't subject to brittleness caused by changes to header files. For more information, see [C++ Core Guidelines SF.10](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#sf10-avoid-dependencies-on-implicitly-included-names).
 
-Include cleanup helps you find and fix issues like this. It analyzes your code and determines which headers are indirectly included and which aren't used at all. It provides feedback, based on settings described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md). Those settings determine whether suggestions to remove unused headers and add indirectly included headers via warnings, suggestions, and so on.
+Include cleanup helps you find and fix issues like this. It analyzes your code and determines which headers are indirectly included and which aren't used at all. It provides feedback, based on settings described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md). Those settings determine how to notify you about opportunities to remove unused headers and add indirectly included headers. You can be notified by error list warnings, suggestions, and so on.
 
 ## Unused headers
 
-As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project. Over time your build time may be slowed by the compiler processing unnecessary header files. Include cleanup helps you find and remove unused headers. For example, what if `myFunc()` is commented out in `myProgram.cpp`:
+As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project. Over time, your build time may be slowed by the compiler processing unnecessary header files. Include cleanup helps you find and remove unused headers. For example, what if `myFunc()` is commented out in `myProgram.cpp`:
 
 ```cpp
 // myProgram.cpp
@@ -82,9 +82,9 @@ Hover your cursor over the dimmed `#include` to bring up the quick action menu. 
 
 ## Add transitively used headers
 
-We could choose to remove the unused header file, but that breaks the code since `<string>` and `<iostream>` isn't indirectly included via `myheader.h`.
+We could choose to remove the unused header file, but that breaks the code since `<string>` and `<iostream>` are indirectly included via `myheader.h`.
 
-Instead, we can choose **Add all transitively used and remove all unused #includes**. This removes the unused header `myHeader.h`, but also adds any headers that are being used that were indirectly included by the removed header file. In this case, `#include <string>` and `#include <iostream>` are added because they're indirectly included by `myHeader.h`, which is then removed. You can think of the order of operations followed by include cleanup as:
+Instead, we can choose **Add all transitively used and remove all unused #includes**. This removes the unused header `myHeader.h`, but also adds any headers that are being used that were indirectly included by the removed header file. In this case, `#include <string>` and `#include <iostream>` are added because they're indirectly included by `myHeader.h`, which is then removed. A good order of operations for using include cleanup is:
 
 - determine which indirect header files are being used
 - add `#include`s for the indirect header files
@@ -109,16 +109,17 @@ The tool doesn't update the comments, but you can see that the code is now using
 
 ## Using include cleanup with large codebases
 
-If your codebase is large, the recommended approach to clean up the #includes is to first add direct headers where indirect headers are used. After you have done this for all indirect headers in the file, then remove the unused includes.
+If your codebase is large, the recommended approach is to clean up the #includes by first adding direct headers where indirect headers are used. After you have done that for all indirect headers in the file, then remove any unused includes.
 
 To do this, set your the include cleanup setting for **Add missing includes suggestion level** to **Suggestion** (**Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup**). Also set **Remove unused includes suggestion level** to **Suggestion**.
 
-1. In the error list, make sure the filter is set to **Build + IntelliSense** and look for an instance of 'Content from #include x is used in this file and transitively included'.
+1. In the error list, make sure the filter is set to **Build + IntelliSense**.
+1. Look for instances of 'Content from #include x is used in this file and transitively included'.
 1. Hover your cursor over line with the suggestion and invoke the quick action menu by clicking the broom or pressing Ctrl+period.
-1. Choose **Add all transitively used includes**
-1. In the error list, look for all instances of `#include x is not used in this file'.
-1. Hover your cursor over the unused header and choose **Remove #include <header>**.
-1. Repeat these steps until there are no more suggestions about transitively include includes or unused includes and the file compiles cleanly.
+1. Choose **Add all transitively used includes**.
+1. Remove unused includes: in the error list, look for all instances of `#include x is not used in this file'.
+1. Hover your cursor over the unused header and choose **Remove #include \<header\>**.
+1. Repeat these steps until there are no more suggestions about transitively include includes or unused includes.
 1. Repeat these steps for the other files in your project that you wish to cleanup.
 
 In this brief overview, you've seen how include cleanup can help you remove unused headers, and add headers that were indirectly included. This helps you keep your code clean, potentially build faster, and reduces the brittleness of your code.
