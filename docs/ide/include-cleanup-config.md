@@ -3,7 +3,6 @@ title: "Configure C/C++ include cleanup in Visual Studio"
 description: "Learn how to configure C/C++ include cleanup."
 ms.date: 10/10/2023
 ms.topic: "how-to"
-ms.custom: intro-overview
 ---
 # Configure C/C++ include cleanup in Visual Studio
 
@@ -25,7 +24,7 @@ The Enable # include cleanup checkbox is checked. The dropdowns for Remove unuse
 
 The meanings of the suggestion level options are:
 
-**Refactoring only**: Include cleanup offers actions it can take through the quick action menu when you hover the mouse pointer over an `#include`, or place the cursor on the `#include` line and press Ctrl+period:
+**Refactoring only**: Include cleanup offers actions you can take through the quick action menu when you hover the mouse pointer over an `#include`, or place the cursor on the `#include` line and press Ctrl+period:
 
 :::image type="complex" source="media/include-cleanup-refactor-lightbulb.png" alt-text="A screenshot of the quick action to remove an unused header":::
 When hovering the cursor over # include iostream, a light bulb appears with the text that # include iostream isn't used in this file."
