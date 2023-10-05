@@ -109,11 +109,11 @@ int main()
 
 The tool doesn't update the comments, but you can see that the code is now using `std::string` and `std::cout` directly. This code is no longer brittle because it doesn't depend on `myHeader.h` to include the other required headers.
 
-## Using include cleanup with large codebases
+## Best practice
 
-The recommended approach is to clean up the #includes by first adding direct headers where indirect headers are used. After you have done that for all indirect headers in the file, then remove any unused includes.
+Don't remove what appear to be unused header files without first adding indirectly included header files. That's because you may be relying on indirect includes that you (and the tool) aren't aware of in a header file that is otherwise unused. The tool can't tell if you're relying on indirect includes, so add transitively used headers first. Then when you remove unused headers, you won't have code that doesn't compile due to a missing header that was included indirectly by a header file you've removed.
 
-To do this, set the include cleanup setting for **Add missing includes suggestion level** to **Suggestion** (**Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup**). Also set **Remove unused includes suggestion level** to **Suggestion**.
+To do this, set the include cleanup setting for **Add missing includes suggestion level** to **Suggestion** (**Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup**). Also set **Remove unused includes suggestion level** to **Suggestion**.  Then:
 
 1. In the error list, make sure the filter is set to **Build + IntelliSense**.
 1. Look for instances of "Content from #include x is used in this file and transitively included".
