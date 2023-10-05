@@ -27,11 +27,13 @@ Include cleanup generates the following messages:
 
 ## `VCIC001`: Content from #include is used in this file and transitively included
 
-This message means that you're using content from a header file that is included indirectly. For example, you may be directly including a header file that also contains `#include <string>`. If you use `string` in your code, but don't `#include <string>` in that file, it works as long as the other header file continues to indirectly include `<string>` for you. This message identifies that this is going on in your code so that you can take action to directly include the transitively included header file. For more information, see [Direct vs indirect headers](include-cleanup-overview.md#direct-vs-indirect-headers).
+This message means that you're using content from a header file that is included indirectly.
+
+For example, you may be directly including a header file that also contains `#include <string>`. If you use `string` in your code, but don't `#include <string>` in that file, it works as long as the other header file continues to indirectly include `<string>` for you. This message identifies this sitution in your code so that you can take action to directly include the transitively included header file. For more information, see [Direct vs indirect headers](include-cleanup-overview.md#direct-vs-indirect-headers).
 
 ## `VCIC002`: #include is not used in this file
 
-This message indicates that the specified header file is not used in the current file. You can remove the associated `#include` directive to cleanup your includes and improve your build times.
+This message means that the specified header file is not used in the current file. You can remove the associated `#include` directive to cleanup your includes and improve your build times.
 
 ## See also
 
