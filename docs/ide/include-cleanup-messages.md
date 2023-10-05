@@ -15,7 +15,7 @@ Starting with Visual Studio 17.7 preview 3, Visual Studio can clean up your `#in
 
 This article describes the messages that you may see from the include cleanup feature. For more information about include cleanup, see [C/C++ include cleanup overview](include-cleanup-overview.md).
 
-Include cleanup offers actions you can take via suggestions, warnings, or errors in the Error List window. You determine which based on settings in Visual Studio tools options. For more details, see [Config C/C++ include cleanup in Visual Studio](include-cleanup-config.md).
+Include cleanup offers actions you can take via suggestions, warnings, or errors in the Error List window. The message is the same, but you can choose the specific form it takes based on settings in Visual Studio tools options. For more information, see [Config C/C++ include cleanup in Visual Studio](include-cleanup-config.md).
 
 In the following screenshot of the Error List, include cleanup is configured to show unused headers with a warning:
 
@@ -23,15 +23,15 @@ In the following screenshot of the Error List, include cleanup is configured to 
 The dropdown filter is set to Build + IntelliSense. A warning is visible: VCIC002 - #include < iostream > isn't used in this file."
 :::image-end:::
 
-The following describes the messages that you may see from include cleanup:
+These are the messages that you may see from include cleanup:
 
 ## `VCIC001`: Content from #include is used in this file and transitively included
 
-This message means that you are using content from a header file that is included indirectly. For example, you may be directly including a header file and that header file may `#include <string>`. If you use `string` in your code, but don't actually `#include <string>` yourself, it will work as long as the other header file continues to indirectly include `<string>` for you. That's an undesirable situation and this message identifies that this is going on in your code. See [Direct vs indirect headers](include-cleanup-overview.md#direct-vs-indirect-headers) for more information.
+This message means that you're using content from a header file that is included indirectly. For example, you may be directly including a header file and that header file may `#include <string>`. If you use `string` in your code, but don't actually `#include <string>` yourself, it works as long as the other header file continues to indirectly include `<string>` for you. This message identifies that this is going on in your code. See [Direct vs indirect headers](include-cleanup-overview.md#direct-vs-indirect-headers) for more information.
 
 ## `VCIC002`: #include is not used in this file
 
-This indicates that the specified header file is not used in the current file. You can remove the `#include` directive.
+This message indicates that the specified header file is not used in the current file. You can remove the `#include` directive.
 
 ## See also
 
