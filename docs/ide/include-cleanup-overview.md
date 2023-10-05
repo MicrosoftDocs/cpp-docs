@@ -62,7 +62,7 @@ Include cleanup helps you find and fix issues like this. It analyzes your code a
 
 ## Unused headers
 
-As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project. Over time, your build time may be slowed by the compiler processing unnecessary header files. Include cleanup helps you find and remove unused headers. For example, what if `myFunc()` is commented out in `myProgram.cpp`:
+As your code evolves, you may no longer need some header files. This is hard to keep track of in a complex project. Over time, your builds may take longer because the compiler is processing unnecessary header files. Include cleanup helps you find and remove unused headers. For example, what if `myFunc()` is commented out in `myProgram.cpp`:
 
 ```cpp
 // myProgram.cpp
@@ -111,15 +111,15 @@ The tool doesn't update the comments, but you can see that the code is now using
 
 ## Best practice
 
-Don't remove what appear to be unused header files without first adding indirectly included header files. That's because you may be relying on indirect includes that you (and the tool) aren't aware of in a header file that is otherwise unused. The tool can't tell if you're relying on indirect includes, so add transitively used headers first. Then when you remove unused headers, you won't have code that doesn't compile due to a missing header that was included indirectly by a header file you've removed.
+Don't remove what appear to be unused header files without first adding indirectly included header files. That's because you may be relying on indirect includes that you (and the tool) aren't aware of in a header file that is otherwise unused. The tool can't tell if you're relying on indirect includes, so add transitively used headers first. Then when you remove unused headers, you won't have compilation errors due to a missing header file that was included indirectly by a header file you've removed.
 
 To do this, set the include cleanup setting for **Add missing includes suggestion level** to **Suggestion** (**Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup**). Also set **Remove unused includes suggestion level** to **Suggestion**.  Then:
 
 1. In the error list, make sure the filter is set to **Build + IntelliSense**.
-1. Look for instances of "Content from #include x is used in this file and transitively included".
+1. Look for instances of "Content from #include x is used in this file and transitively included."
 1. Hover your cursor over line with the suggestion and invoke the quick action menu by clicking the broom or pressing Ctrl+period.
 1. Choose **Add all transitively used includes**.
-1. Remove unused includes: in the error list, look for all instances of `#include x is not used in this file'.
+1. Remove unused includes: in the error list, look for all instances of "#include x is not used in this file."
 1. Hover your cursor over the unused header and choose **Remove #include \<header\>**.
 1. Repeat these steps until there are no more suggestions about transitive includes or unused includes.
 1. Repeat these steps for the other files in your project that you wish to clean up.
