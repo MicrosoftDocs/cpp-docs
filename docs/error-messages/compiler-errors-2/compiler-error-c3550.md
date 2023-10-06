@@ -10,7 +10,31 @@ ms.assetid: 9f2d5ffc-e429-41a1-89e3-7acc4fd47e14
 
 only plain 'decltype(auto)' is allowed in this context
 
-If `decltype(auto)` is used as a placeholder for the return type of a function, it must be used by itself. It cannot be used as part of a pointer declaration (`decltype(auto*)`), a reference declaration (`decltype(auto&)`), or any other such qualification.
+If [`decltype(auto)`](../../cpp/decltype-cpp.md#decltype-and-auto) is used as a placeholder for the return type of a function, it must be used by itself. It cannot be used as part of a pointer declaration (`decltype(auto)*`), a reference declaration (`decltype(auto)&`), or any other such qualification.
+
+## Example
+
+The following sample generates C3550:
+
+```cpp
+// C3550.cpp
+// compile with: /c
+int dummy;
+
+decltype(auto)* func1() {   // C3550
+   return &dummy;
+}
+
+decltype(auto)& func2() {   // C3550
+   return dummy;
+}
+
+decltype(auto)&& func3() {   // C3550
+   return 123;
+}
+```
+
+To resolve the error remove all illegal qualification on `decltype(auto)`.
 
 ## See also
 
