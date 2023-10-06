@@ -1327,7 +1327,6 @@ template <typename S> void print(const S& s) {
 
 int main()
 {
-
     // insert single values
     set<int> s1;
     // call insert(const value_type&) version

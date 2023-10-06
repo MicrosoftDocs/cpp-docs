@@ -130,7 +130,6 @@ void unsafe_operation() {}
 
 int main()
 {
-
     if (auto it = m.find(10); it != m.end())
     {
         cout << it->second;
