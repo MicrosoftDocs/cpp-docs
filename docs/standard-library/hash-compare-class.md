@@ -12,8 +12,9 @@ The class template describes an object that can be used by any of the hash assoc
 
 ## Syntax
 
+```cpp
 class hash_compare
-   {
+{
    Traits comp;
    public:
    const size_t bucket_size = 4;
@@ -24,7 +25,8 @@ class hash_compare
    bool operator()(
    const Key& key1,
    const Key& key2) const;
-   };
+};
+```
 
 ## Remarks
 
