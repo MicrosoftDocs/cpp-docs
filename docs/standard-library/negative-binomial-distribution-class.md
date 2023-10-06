@@ -12,7 +12,7 @@ Generates a negative binomial distribution.
 
 ## Syntax
 
-```
+```cpp
 template<class IntType = int>
 class negative_binomial_distribution
 {
