@@ -24,7 +24,7 @@ template <>
 struct logical_and<void>
 {
   template <class T, class U>
-  auto operator()(T&& Left, U&& Right) const`
+  auto operator()(T&& Left, U&& Right) const
     -> decltype(std::forward<T>(Left) && std::forward<U>(Right));
 };
 ```

@@ -24,7 +24,7 @@ template <>
 struct negate<void>
 {
   template <class Type>
-  auto operator()(Type&& Left) const`
+  auto operator()(Type&& Left) const
     -> decltype(-std::forward<Type>(Left));
 };
 ```
