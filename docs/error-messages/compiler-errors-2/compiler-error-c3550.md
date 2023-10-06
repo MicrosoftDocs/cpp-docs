@@ -19,19 +19,9 @@ The following sample generates C3550:
 ```cpp
 // C3550.cpp
 // compile with: /c
-int dummy;
-
-decltype(auto)* func1() {   // C3550
-   return &dummy;
-}
-
-decltype(auto)& func2() {   // C3550
-   return dummy;
-}
-
-decltype(auto)&& func3() {   // C3550
-   return 123;
-}
+decltype(auto)* func1();   // C3550
+decltype(auto)& func2();   // C3550
+decltype(auto)&& func3();   // C3550
 ```
 
 To resolve the error remove all illegal qualification on `decltype(auto)`.
