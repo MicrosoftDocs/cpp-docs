@@ -75,7 +75,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 |-|-|
 |[from_chars_result](../standard-library/from-chars-result-structure.md)|A struct used for `from_chars`.|
 |[identity](../standard-library/identity-structure.md)|A struct that provides a type definition as the template parameter.|
-|[in_place_t](../standard-library/in-place-t-struct.md)|Also includes structs `in_place_type_t` and `in_place_index_t`.|
+|[in_place_t, in_place_type_t, in_place_index_t](../standard-library/in-place-t-struct-in-place-type-t-struct-in-place-index-t-struct.md)|Types used to control in-place construction.|
 |[integer_sequence](../standard-library/integer-sequence-class.md)|Represents an integer sequence.|
 |[pair](../standard-library/pair-structure.md)|A type that provides for the ability to treat two objects as a single object.|
 |[piecewise_construct_t](../standard-library/piecewise-construct-t-structure.md)|A type used to keep separate constructor and function overloading.|
