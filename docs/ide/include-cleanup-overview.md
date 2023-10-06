@@ -21,7 +21,7 @@ Include Cleanup is on by default. To learn how to configure it, see [Config C/C+
 First some terminology:
 
 - A direct header is a header that you explicitly `#include` in your code.
-- An indirect header is a header that you don't explicitly `#include`, but that is included by a header file that you do directly include. We also say that an indirect header is included `transitively`.
+- An indirect header is a header that you don't explicitly `#include`. Instead, a header file that you do directly include, includes it. We also say that an indirect header is included `transitively`.
 
 Include Cleanup analyzes your code and determines which headers aren't used and which are indirectly included. Consider the following header file:
 
@@ -105,16 +105,16 @@ The tool doesn't update the comments, but you can see that the code is now using
 
 ## Best practice
 
-Don't remove what appear to be unused header files without first adding indirectly included header files. That's because your code may rely on indirect includes in a header file that is otherwise unused. Add transitively used headers first. Then, when you remove unused headers, you won't have compilation errors due to missing header files that were included indirectly by a header file you've removed.
+Don't remove what appear to be unused header files without first adding indirectly included header files. That's because your code may rely on indirect includes in a header file that is otherwise unused. Add transitively used headers first. Then, when you remove unused headers, you don't get compilation errors due to missing header files that are included indirectly by a header file you've removed.
 
-One way to do this is to set the Include Cleanup setting for **Add missing includes suggestion level** to **Suggestion** (**Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup**). Also set **Remove unused includes suggestion level** to **Suggestion**.  Then:
+One way to do this is to set the Include Cleanup setting for **Add missing includes suggestion level** to **Suggestion** (**Tools** > **Options** > **Text Editor** > **C/C++** > **Code Cleanup**). Also set **Remove unused includes suggestion level** to **Suggestion**. Then:
 
 1. In the error list, make sure the filter is set to **Build + IntelliSense**.
 1. Look for instances of "Content from #include x is used in this file and transitively included."
-1. Hover your cursor over a line with the suggestion. From the lightbulb dropdown, select **Add all transitively used includes**.
+1. Hover your cursor over a line with the suggestion. From the light bulb dropdown, select **Add all transitively used includes**.
 1. Repeat these steps in your project until all suggestions regarding transitive includes are addressed.
 1. Remove unused includes: in the error list, look for an instance of "#include x is not used in this file."
-1. Hover your cursor over the unused header. From the lightbulb dropdown, select **Remove all unused includes**.
+1. Hover your cursor over the unused header. From the light bulb dropdown, select **Remove all unused includes**.
 1. Repeat these steps in your project until all Include Cleanup suggestions are addressed.
 
 In this brief overview, you've seen how Include Cleanup can help you remove unused headers, and add headers that were indirectly included. This helps you keep your code clean, potentially build faster, and reduces the brittleness of your code.

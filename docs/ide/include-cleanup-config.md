@@ -40,7 +40,7 @@ The dropdown filter is set to Build + IntelliSense. A warning is visible: VCIC00
 
 **Dimmed**
 
-Include Cleanup shows unused headers by dimming the line of the unused header file in the code editor. Hover your cursor over the dimmed `#include` to bring up the quick action menu and choose **Show potential fixes**, or click on the lightbulb dropdown, to see actions related to the unused file.
+Include Cleanup shows unused headers by dimming the line of the unused header file in the code editor. Hover your cursor over the dimmed `#include` to bring up the quick action menu and choose **Show potential fixes**, or click on the light bulb dropdown, to see actions related to the unused file.
 
 :::image type="complex" source="media/include-cleanup-dimmed-include.png" alt-text="A screenshot of a dimmed #include < iostream > line.":::
 The line for #include < iostream > is dimmed because the line of code that uses iostream is commented out. That line of code is // std::cout << "charSize = " << charSize; The quick action menu is also visible for this line. It says the #include < iostream > isn't used in this file, and has a link to Show potential fixes.
