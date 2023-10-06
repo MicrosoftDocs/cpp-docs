@@ -8,11 +8,11 @@ items:
       href: ../ide/writing-and-refactoring-code-cpp.md
     - name: Navigate C++ code
       href: ../ide/navigate-code-cpp.md
-    - name: C/C++ include cleanup overview
+    - name: C/C++ Include Cleanup overview
       href: ../ide/include-cleanup-overview.md
-    - name: Configure C/C++ include cleanup
+    - name: Configure C/C++ Include Cleanup
       href: ../ide/include-cleanup-config.md
-    - name: Include cleanup messages
+    - name: Include Cleanup messages
       href: ../ide/include-cleanup-messages.md
     - name: Set your C++ coding preferences
       href: ../ide/how-to-set-preferences.md
