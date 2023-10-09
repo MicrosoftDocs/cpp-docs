@@ -12,3 +12,22 @@ helpviewer_keywords: ["C2023"]
 The compiler found an alignment specifier for a class type that's different from a previous declaration, or an **`enum`** alignment specifier that's different from the natural alignment of the base type.
 
 To resolve this error, make sure all declarations and definitions of the type use the same alignment value.
+
+The following sample generates C2023:
+
+```cpp
+// C2023.cpp
+class alignas(2) C;
+
+class alignas(4) C {};   // C2023
+```
+
+Possible resolution:
+
+```cpp
+// C2023b.cpp
+// compile with: /c
+class alignas(2) C;
+
+class alignas(2) C {};
+```
