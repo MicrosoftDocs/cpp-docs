@@ -56,7 +56,7 @@ To simplify the explanation. To see the documentation for your preferred version
 
    ![Screenshot of the Add New Item dialog box in Visual Studio 2019. The C plus plus File (.cpp) option is selected. The name field is set to Hello Windows Desktop.cpp.](../build/media/desktop-app-add-cpp-file-153.png)
 
-Your project is now created and your source file is opened in the editor. To continue, proceed to [The code](#the-code).
+Your project is now created and your source file is opened in the editor.
 
 ::: moniker-end
 
@@ -84,7 +84,7 @@ Your project is now created and your source file is opened in the editor. To con
 
    ![Screenshot of the Add New Item dialog box in Visual Studio 2017. Installed > Visual C plus plus is selected on the left and the C plus plus File option is highlighted.](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
 
-Your project is now created and your source file is opened in the editor. To continue, skip ahead to [The code](#the-code).
+Your project is now created and your source file is opened in the editor.
 
 ::: moniker-end
 
