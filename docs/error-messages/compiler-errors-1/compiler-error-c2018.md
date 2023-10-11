@@ -11,3 +11,21 @@ ms.assetid: 86b54573-dca0-4446-be1a-e3ac489c073b
 unknown character 'hexnumber'
 
 The source file contains an unexpected ASCII character, which is identified by its hex number. To resolve the error, remove the character.
+
+The following sample generates C2018:
+
+```cpp
+// C2018.cpp
+int main() {
+   @   // C2018
+}
+```
+
+Possible resolution:
+
+```cpp
+// C2018b.cpp
+int main() {
+
+}
+```
