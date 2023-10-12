@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # How to specify additional code information by using `_Analysis_assume_`
 
-You can provide hints to the code analysis tool for C/C++ code that will help the analysis process and reduce warnings. To provide additional information, use the following function macro:
+You can provide hints to the code analysis tool for C/C++ code that help the analysis process and reduce warnings. To provide additional information, use the following function macro:
 
 `_Analysis_assume_( expr )`
 
@@ -44,7 +44,7 @@ void test()
 }
 ```
 
-Note that `_Analysis_assume_` should be used as a last resort, we should first try to make the contracts of the functions more precise. In this case we could improve the contract of `FreeAndNull` instead of using `_Analysis_assume_`:
+`_Analysis_assume_` should be used as a last resort, we should first try to make the contracts of the functions more precise. In this case we could improve the contract of `FreeAndNull` instead of using `_Analysis_assume_`:
 
 ```cpp
 #include <windows.h>
