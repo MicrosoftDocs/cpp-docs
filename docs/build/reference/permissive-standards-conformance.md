@@ -32,7 +32,7 @@ The **`/permissive-`** option sets the [`/Zc:referenceBinding`](zc-referencebind
 
 In versions of the compiler beginning in Visual Studio 2017 version 15.3, the **`/permissive-`** option sets the [`/Zc:ternary`](zc-ternary.md) option. The compiler also implements more of the requirements for two-phase name look-up. When the **`/permissive-`** option is set, the compiler parses function and class template definitions, and identifies dependent and non-dependent names used in the templates. In this release, only name dependency analysis is performed.
 
-As of Visual Studio 2022 Update 17.6, the **`/permissive-`** option sets the [`Zc:lambda`](zc-lamda.md) and [`/Zc:externConstexpr`](zc-externconstexpr.md) options. In prior versions, **`/permissive-`** didn't set either one.
+As of Visual Studio 2022 Update 17.6, the **`/permissive-`** option sets the [`/Zc:lambda`](zc-lambda.md) and [`/Zc:externConstexpr`](zc-externconstexpr.md) options. In prior versions, **`/permissive-`** didn't set either one.
 
 Environment-specific extensions and language areas that the standard leaves up to the implementation aren't affected by **`/permissive-`**. For example, the Microsoft-specific **`__declspec`**, calling convention and structured exception handling keywords, and compiler-specific `pragma` directives or attributes aren't flagged by the compiler in **`/permissive-`** mode.
 
