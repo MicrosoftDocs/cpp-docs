@@ -45,7 +45,7 @@ import std.regex;
 
 To consume the Microsoft Standard Library modules, compile your program with [`/EHsc`](../build/reference/eh-exception-handling-model.md) and [`/MD`](../build/reference/md-mt-ld-use-run-time-library.md) options.
 
-## Basic example
+## Example
 
 The following example shows a simple module definition in a source file called *`Example.ixx`*. The *`.ixx`* extension is required for module interface files in Visual Studio. In this example, the interface file contains both the function definition and the declaration. However, you can also place the definitions in one or more separate module implementation files, as shown in a later example. The `export module Example;` statement indicates that this file is the primary interface for a module called `Example`. The **`export`** modifier on `f()` indicates that this function is visible when `Example` is imported by another program or module. The module references a namespace `Example_NS`.
 

@@ -76,17 +76,14 @@ When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. To apply the **`/ifcMap`** option in the IDE, select the file in **Solution Explorer**. Right-click to open the context menu and select **Properties** to open the **Property Pages** dialog.
+1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Set the **Configuration** dropdown to **All Configurations**. Set the **Platform** dropdown to **All Platforms**.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Open the **Configuration Properties** > **C/C++** > **Output Files** property page.
-
-1. Use the dropdown control to modify the **Module Output File Name** property to a directory name (ending in `\`) or an alternate file name. Or you can specify a directory + file name, for example, `c:\example\mymodule.ifc`. Choose **OK** or **Apply** to save your changes.
-
-Alternatively, you can specify the `/ifcMap` switch with a right-click on the project name in the **Solution Explorer** > **Configuration Properties** > **C/C++** > **Command Line**.
+1. In the **Additional options** box, add `/ifcMap tomlfile.toml`.
 
 ## See also
 
 [Overview of modules in C++](../../cpp/modules-cpp.md)\
+[Walkthrough: Build and import header units in Visual C++ projects](../../cpp/build/walkthrough-build-and-import-header-units-in-visual-cpp-projects.md)\
 [Using C++ Modules in MSVC from the Command Line](https://devblogs.microsoft.com/cppblog/using-cpp-modules-in-msvc-from-the-command-line-part-1/)
