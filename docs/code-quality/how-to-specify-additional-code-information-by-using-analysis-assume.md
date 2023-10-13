@@ -44,7 +44,7 @@ void test()
 }
 ```
 
-`_Analysis_assume_` should be used as a last resort, we should first try to make the contracts of the functions more precise. In this case we could improve the contract of `FreeAndNull` instead of using `_Analysis_assume_`:
+`_Analysis_assume_` should be used as a last resort. We should first try to make the contracts of the functions more precise. In this case we could improve the contract of `FreeAndNull` instead of using `_Analysis_assume_`:
 
 ```cpp
 #include <windows.h>
