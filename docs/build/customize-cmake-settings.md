@@ -192,9 +192,9 @@ You can also directly edit *`CMakeSettings.json`* to create custom configuration
 
 JSON IntelliSense helps you edit the *`CMakeSettings.json`* file:
 
-    :::image type="complex" source="media/cmake-json-intellisense.png" alt-text="Screenshot of the CMake JSON IntelliSense pop-up in the editor.":::
+   :::image type="complex" source="media/cmake-json-intellisense.png" alt-text="Screenshot of the CMake JSON IntelliSense pop-up in the editor.":::
    The JSON IntelliSense pop-up for "configurations" shows buildCommandArgs, buildRoot, cmakeCommandArgs, configurationType, among several others.
-    :::image-end:::
+   :::image-end:::
     
 For more information about each of the properties in the file, see [`CMakeSettings.json` schema reference](cmakesettings-reference.md).
 
