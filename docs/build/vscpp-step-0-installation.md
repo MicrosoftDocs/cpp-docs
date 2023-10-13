@@ -64,7 +64,7 @@ After the installer is installed, you can use it to customize your installation 
 
 1. Find the workload you want in the **Installing Visual Studio** screen.
 
-   :::image type="content" source="../get-started/media/vs2022-installer-workloads.png" alt-text="Visual studio installer with the Desktop development with C++ workload checked." "lightbox="../get-started/media/vs2022-installer-workloads.png":::
+   :::image type="content" source="../get-started/media/vs2022-installer-workloads.png" alt-text="Visual studio installer with the Desktop development with C++ workload checked." lightbox="../get-started/media/vs2022-installer-workloads.png":::
 
    For core C and C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
 
