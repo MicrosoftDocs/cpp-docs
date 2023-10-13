@@ -19,7 +19,7 @@ To open the CMake settings editor, select the **Configuration** drop-down in the
 Now you see the **Settings Editor** with the installed configurations on the left.
 
 :::image type="complex" source="media/cmake-settings-editor.png" alt-text="Screenshot of the CMake settings editor.":::
-The left pane shows the installed configurations (x86-Debug). The right pane shows the settings for the selected configuration. THe settings include the configuration name, configuration type (set to Debug), toolset (set to msvc_x86), CMake toolchain file (empty), build root (contains ${env:USERPROFILE}\CMakeBuilds\${workspaceHash}\build\${name}), CMake command arguments (empty), and build command arguments (-v).
+The left pane shows the installed configurations (x86-Debug). The right pane shows the settings for the selected configuration. The settings include the configuration name, configuration type (set to Debug), toolset (set to msvc_x86), CMake toolchain file (empty), build root (contains ${env:USERPROFILE}\CMakeBuilds\${workspaceHash}\build\${name}), CMake command arguments (empty), and build command arguments (-v).
 :::image-end:::
 
 Visual Studio provides one `x64-Debug` configuration by default. You can add more configurations by choosing the green plus sign. The settings that you see in the editor might vary depending on which configuration is selected.
@@ -36,7 +36,7 @@ Corresponds to the **name** setting. This name appears in the C++ configuration 
 
 ### Configuration type
 
-Corresponds to the **configurationType** setting. Defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo". It maps to [`CMAKE_BUILD_TYPE`](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html).
+Corresponds to the **configurationType** setting. Defines the build configuration type for the selected generator. Currently supported values are Debug, MinSizeRel, Release, and RelWithDebInfo. It maps to [`CMAKE_BUILD_TYPE`](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html).
 
 ### Toolset
 
@@ -98,7 +98,7 @@ Corresponds to **generator**. Maps to the CMake **`-G`** switch, and specifies t
 - "Visual Studio 14 2015 Win64"
 - "Visual Studio 14 2015 ARM"
   
-Because Ninja is designed for fast build speeds instead of flexibility and function, it's set as the default. However, some CMake projects may be unable to correctly build using Ninja. If that occurs, you can instruct CMake to generate a Visual Studio project instead.
+Because Ninja is designed for fast build speeds instead of flexibility and function, it's set as the default. However, some CMake projects might be unable to correctly build using Ninja. If that occurs, you can instruct CMake to generate a Visual Studio project instead.
 
 ### IntelliSense mode
 

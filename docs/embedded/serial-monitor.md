@@ -15,7 +15,7 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 # [Visual Studio](#tab/visual-studio)
 
 :::image type="complex" source="./media/serial-monitor.png" alt-text="Screenshot of the Visual Studio Serial Monitor window.":::
-The window is split into two sections. The top section shows the monitoring mode (serial), Port (virtual COM port COM3), baud rate (115200), line ending (None), and a Stop monitoring button. The bottom section shows the messages, consisting of four lines of the text Hello, World!.
+The window is split into two sections. The top section shows the monitoring mode (serial), Port (virtual COM port COM3), baud rate (115200), line ending (None), and a Stop monitoring button. The bottom section shows the messages, consisting of four lines of the text Hello, World!
 :::image-end:::
 
 ## Capabilities
