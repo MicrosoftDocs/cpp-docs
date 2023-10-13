@@ -64,9 +64,7 @@ After the installer is installed, you can use it to customize your installation 
 
 1. Find the workload you want in the **Installing Visual Studio** screen.
 
-   :::image type="complex" source="../get-started/media/vs2022-installer-workloads.png" alt-text="Visual studio installer with the Desktop development with C++ workload checked." lightbox="../get-started/media/vs2022-installer-workloads.png":::
-    more stuff
-   :::image-end
+   :::image type="content" source="../get-started/media/vs2022-installer-workloads.png" alt-text="Visual studio installer with the Desktop development with C++ workload selected." lightbox="../get-started/media/vs2022-installer-workloads.png":::
 
    For core C and C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
 
@@ -89,7 +87,7 @@ If you don't want to use the Workloads feature to customize your Visual Studio i
 
 By default, the installer program tries to match the language of the operating system when it runs for the first time. To install Visual Studio in a language of your choosing, choose the **Language packs** tab from the Visual Studio Installer, and then follow the prompts.
 
-   :::image type="content" source="../get-started/media/vs-installer-language-packs.png" alt-text="Screenshot of the Visual Studio Installer, showing the Install language packs tab view and the languages you can choose from like English, Spanish, Chinese (simplified or traditional), and many others." lightbox="../get-started/media/vs-installer-language-packs.png":::
+   :::image type="content" source="../get-started/media/vs-installer-language-packs.png" alt-text="Screenshot of the Visual Studio Installer, showing the Install language packs tab view and the languages you can choose from like English, Spanish, Chinese (simplified or traditional), and more." lightbox="../get-started/media/vs-installer-language-packs.png":::
 
 #### Change the installer language from the command line
 
