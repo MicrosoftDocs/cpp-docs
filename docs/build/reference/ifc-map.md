@@ -17,7 +17,7 @@ This switch tells the compiler where to find the [TOML](https://toml.io/en/) fil
 
 ## Remarks
 
-The *`filename`* argument specifies a TOML file (Tom's Obvious Minimal Language). The file can be relative to the working directory of the compiler or an absolute path.
+The *`filename`* argument specifies a TOML (Tom's Obvious Minimal Language) file. The file can be relative to the compiler's working directory, or an absolute path.
 Multiple `/ifcMap` arguments can be provided to the compiler.
 
 The TOML file can contain a mix of `[[module]]` and `[[header-unit]]` references. Syntax errors or unrecognized table names result in compiler error `C7696` (TOML parse error).
@@ -26,7 +26,7 @@ The TOML file can contain a mix of `[[module]]` and `[[header-unit]]` references
 
 The format of the TOML file must adhere to the following specification for named modules:
 
-```cpp
+```
 # Using literal strings
 [[module]]
 name = 'M'
@@ -38,7 +38,7 @@ name = "N"
 ifc = "C:\\modules\\N.ifc"
 ```
 
-This TOML file maps the named modules 'M' and 'N' to their respective IFC files. The equivalent [`/reference'](module-reference.md) is:
+This TOML file maps the named modules `'M'` and `'N'` to their respective IFC files. The equivalent [`/reference'](module-reference.md) is:
 
 ```cmd
 /reference M=C:\modules\M.ifc /reference N=C:\modules\N.ifc
@@ -70,7 +70,7 @@ name = ["angle", "algorithm"]
 ifc = "C:\\header-units\\algorithm.ifc"
 ```
 
-When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md) like how it's implicitly enabled when [`/headerUnit`](headerunit.md) is used. For more information about the behavior of the 'angle' and 'quote' lookup methods, see the [/headerUnit Remarks](headerunit.md#remarks).
+When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md), just as it's implicitly enabled when [`/headerUnit`](headerunit.md) is used. For more information about the behavior of the 'angle' and 'quote' lookup methods, see the [/headerUnit Remarks](headerunit.md#remarks).
 
 ### To set this compiler option in the Visual Studio development environment
 
