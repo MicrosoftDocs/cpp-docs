@@ -5,7 +5,6 @@ ms.custom: vs-acquisition, intro-installation
 ms.date: 11/08/2021
 ms.topic: "tutorial"
 ms.devlang: "cpp"
-ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
 # Install C and C++ support in Visual Studio
 
@@ -22,7 +21,7 @@ Welcome to Visual Studio 2022! In this version, it's easy to choose and install 
 
 Want to know more about what else is new in this version? See the Visual Studio [release notes](/visualstudio/releases/2022/release-notes/).
 
-Ready to install? We'll walk you through it, step-by-step.
+Ready to install? We walk you through it, step-by-step.
 
 ### Step 1 - Make sure your computer is ready for Visual Studio
 
@@ -57,7 +56,7 @@ Run the bootstrapper file you downloaded to install the Visual Studio Installer.
 
    If you receive a User Account Control notice, choose **Yes** to allow the bootstrapper to run.
 
-1. We'll ask you to acknowledge the Microsoft [License Terms](https://visualstudio.microsoft.com/license-terms/) and the Microsoft [Privacy Statement](https://privacy.microsoft.com/privacystatement). Choose **Continue**.
+1. We ask you to acknowledge the Microsoft [License Terms](https://visualstudio.microsoft.com/license-terms/) and the Microsoft [Privacy Statement](https://privacy.microsoft.com/privacystatement). Choose **Continue**.
 
 ### Step 4 - Choose workloads
 
@@ -65,14 +64,14 @@ After the installer is installed, you can use it to customize your installation 
 
 1. Find the workload you want in the **Installing Visual Studio** screen.
 
-   :::image type="complex" source="../get-started/media/vs2022-installer-workloads.png" alt-text="Visual studio installer with the Desktop development with C++ workload checked."
+   :::image type="content" source="../get-started/media/vs2022-installer-workloads.png" alt-text="Visual studio installer with the Desktop development with C++ workload checked."
    lightbox="../get-started/media/vs2022-installer-workloads.png":::
    On the right in the installation details pane, the various components of the workload are shown.
    :::image-end:::
 
    For core C and C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
 
-   Additional workloads support other kinds of development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
+   Other workloads support more kinds of development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
 
    The **Installation details** pane lists the included and optional components installed by each workload. You can select or deselect optional components in this list. For example, to support development by using the Visual Studio 2017 or 2015 compiler toolsets, choose the MSVC v141 or MSVC v140 optional components. You can add support for MFC, the experimental Modules language extension, IncrediBuild, and more.
 
@@ -131,7 +130,7 @@ Welcome to Visual Studio 2019! In this version, it's easy to choose and install 
 
 Want to know more about what else is new in this version? See the Visual Studio [release notes](/visualstudio/releases/2019/release-notes/).
 
-Ready to install? We'll walk you through it, step-by-step.
+Ready to install? We walk you through it, step-by-step.
 
 ### Step 1 - Make sure your computer is ready for Visual Studio
 
@@ -166,7 +165,7 @@ Run the bootstrapper file you downloaded to install the Visual Studio Installer.
 
    If you receive a User Account Control notice, choose **Yes** to allow the bootstrapper to run.
 
-1. We'll ask you to acknowledge the Microsoft [License Terms](https://visualstudio.microsoft.com/license-terms/) and the Microsoft [Privacy Statement](https://privacy.microsoft.com/privacystatement). Choose **Continue**.
+1. We ask you to acknowledge the Microsoft [License Terms](https://visualstudio.microsoft.com/license-terms/) and the Microsoft [Privacy Statement](https://privacy.microsoft.com/privacystatement). Choose **Continue**.
 
 ### Step 4 - Choose workloads
 
@@ -178,7 +177,7 @@ After the installer is installed, you can use it to customize your installation 
 
    For core C and C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
 
-   Additional workloads support other kinds of development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
+   Other workloads support more kinds of development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
 
    The **Installation details** pane lists the included and optional components installed by each workload. You can select or deselect optional components in this list. For example, to support development by using the Visual Studio 2017 or 2015 compiler toolsets, choose the MSVC v141 or MSVC v140 optional components. You can add support for MFC, the experimental Modules language extension, IncrediBuild, and more.
 
@@ -251,7 +250,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
    >[!Tip]
    > The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install Visual Studio 2017 Professional or Visual Studio 2017 Enterprise.
 
-1. Find the installer file you downloaded and run it. The downloaded file may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you're having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
+1. Find the installer file you downloaded and run it. The downloaded file might be displayed in your browser, or you might find it in your Downloads folder. The installer needs Administrator privileges to run. You might see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you're having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
 
    ![What you see when you download and install the Visual Studio Installer.](media/vscpp-concierge-run-installer.gif "Download and install the Visual Studio Installer")
 
@@ -267,11 +266,11 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
    The first time you run Visual Studio, you're asked to sign in with a Microsoft Account. If you don't have one, you can create one for free. You must also choose a theme. Don't worry, you can change it later if you want to.
 
-   It may take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
+   It might take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
 
    ![Visual Studio sign in dialog.](media/vscpp-quickstart-first-run.gif "Visual Studio 2017 sign in")
 
-   Visual Studio starts much faster when you run it again.
+   Visual Studio starts faster when you run it again.
 
 1. When Visual Studio opens, check to see if the flag icon in the title bar is highlighted:
 
