@@ -161,8 +161,12 @@ The code base of a software project is often contained in multiple C or C++ sour
 
 The figure uses three diagrammatic devices to show the flow of the build process. Named rectangles represent each file or macro; the three macros represent one or more files. Shaded areas represent each compile or link action. Arrows show which files and macros are combined during the compilation or linking process.
 
-![Diagram showing example inputs and outputs of a makefile that uses a precompiled header file.](media/vc30ow1.gif)\
+![ The diagram is described in the text following the diagram.]()\
 Structure of a makefile that uses a precompiled header file
+
+:::image type="complex" source="media/vc30ow1.gif" alt-text="Diagram showing example inputs and outputs of a makefile that uses a precompiled header file.":::
+The diagram shows `$(STABLEHDRS)` and `$(BOUNDRY)` feeding into CL /c /W3 /Yc$(BOUNDRY) applib.cpp myapp.cpp. The output of that is $(STABLE.PCH). Then, applib.cpp and $(UNSTABLEHDRS) and $(STABLE.PCH) feed into CL /c /w3 /Yu $(BOUNDRY) applib.cpp, which produces applib.obj. myapp.cpp, $(UNSTABLEHDR), and $(STABLE.PCH) feed into CL /c /w3 /Yu $(BOUNDRY) myapp.cpp, which produces myapp.obj.  Finally, applib.obj and myapp.obj are combined by LINK /NOD ONERROR:NOEXE $(OBJS), myapp, NUL, $(LIBS), NUL to produce myapp.exe.
+:::image-end:::
 
 Beginning at the top of the diagram, both `STABLEHDRS` and `BOUNDRY` are NMAKE macros in which you list files not likely to need recompilation. These files are compiled by the command string
 
