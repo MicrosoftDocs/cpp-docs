@@ -83,5 +83,5 @@ When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables
 ## See also
 
 [Overview of modules in C++](../../cpp/modules-cpp.md)\
-[Walkthrough: Build and import header units in Visual C++ projects](../walkthrough-build-and-import-header-units-in-visual-cpp-projects.md)\
+[Walkthrough: Build and import header units in Visual C++ projects](../walkthrough-header-units.md)\
 [Using C++ Modules in MSVC from the Command Line](https://devblogs.microsoft.com/cppblog/using-cpp-modules-in-msvc-from-the-command-line-part-1/)
