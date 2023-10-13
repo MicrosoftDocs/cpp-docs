@@ -45,7 +45,7 @@ import std.regex;
 
 To consume the Microsoft Standard Library modules, compile your program with [`/EHsc`](../build/reference/eh-exception-handling-model.md) and [`/MD`](../build/reference/md-mt-ld-use-run-time-library.md) options.
 
-## Basic example
+## Example
 
 The following example shows a simple module definition in a source file called *`Example.ixx`*. The *`.ixx`* extension is required for module interface files in Visual Studio. In this example, the interface file contains both the function definition and the declaration. However, you can also place the definitions in one or more separate module implementation files, as shown in a later example. The `export module Example;` statement indicates that this file is the primary interface for a module called `Example`. The **`export`** modifier on `f()` indicates that this function is visible when `Example` is imported by another program or module. The module references a namespace `Example_NS`.
 
@@ -111,7 +111,7 @@ The `import` declaration can appear only at global scope.
 
 A *module interface* exports the module name and all the namespaces, types, functions, and so on that make up the public interface of the module. A *module implementation* defines the things exported by the module. In its simplest form, a module can consist of a single file that combines the module interface and implementation. You can also put the implementations in one or more separate module implementation files, similar to how *`.h`* and *`.cpp`* files are used.
 
-For larger modules, you can split parts of the module into submodules called *partitions*. Each partition consists of a module interface file that exports a module partition name. A partition may also have one or more partition implementation files. The module as a whole has one *primary module interface*, the public interface of the module that may also import and export the partition interfaces.
+For larger modules, you can split parts of the module into submodules called *partitions*. Each partition consists of a module interface file that exports a module partition name. A partition might also have one or more partition implementation files. The module as a whole has one *primary module interface*, the public interface of the module that might also import and export the partition interfaces.
 
 A module consists of one or more *module units*. A module unit is a translation unit (a source file) that contains a module declaration. There are several types of module units:
 
