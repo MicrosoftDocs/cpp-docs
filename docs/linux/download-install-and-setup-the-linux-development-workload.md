@@ -33,7 +33,7 @@ For any of these scenarios, the **Linux development with C++** workload is requi
 1. Look for the installer under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux development with C++** workload.
 
    :::image type="complex" source="./media/linuxworkload.png" alt-text="Screenshot highlighting the Visual C++ for Linux Development workload item in Visual Studio Installer.":::
-   The Linux Development workload is selected. The Installation details pane is highlighted, which lists what's included in the workload, including Visual Studio C++ core features, Windows Universal C runtime, Visual C++ for Linux development. An optional component is also selected: Visual C++ tools for CMake and Linux.
+   The Linux Development workload is selected. The Installation details pane is highlighted, which lists what's included in the workload. Which includes: Visual Studio C++ core features, Windows Universal C runtime, Visual C++ for Linux development. An optional component is also selected: Visual C++ tools for CMake and Linux.
    :::image-end:::
 
 1. If you're targeting IoT or embedded platforms, go to the **Installation details** pane on the right. Under **Linux development with C++**, expand **Optional Components**, and choose the components you need. CMake support for Linux is selected by default.
@@ -101,7 +101,7 @@ The target Linux system must have **openssh-server**, **g++**, **gdb**, and **ma
    sudo apt-get install openssh-server g++ gdb make ninja-build rsync zip
    ```
 
-   You may be prompted for your root password to run the sudo command. If so, enter it and continue. Once complete, the required services and tools are installed.
+   You might be prompted for your root password to run the `sudo` command. If so, enter it and continue. Once complete, the required services and tools are installed.
 
 1. Ensure the ssh service is running on your Linux computer by running:
 
@@ -139,7 +139,7 @@ The target machine running Fedora uses the **dnf** package installer. To downloa
    sudo dnf install openssh-server gcc-g++ gdb ninja-build make rsync zip
    ```
 
-   You may be prompted for your root password to run the sudo command. If so, enter it and continue. Once complete, the required services and tools are installed.
+   You might be prompted for your root password to run the sudo command. If so, enter it and continue. Once complete, the required services and tools are installed.
 
 1. Ensure the ssh service is running on your Linux computer by running:
 
