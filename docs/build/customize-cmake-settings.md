@@ -14,11 +14,13 @@ If you maintain projects that use a *`CMakeSettings.json`* file for CMake build 
 
 To open the CMake settings editor, select the **Configuration** drop-down in the main toolbar and choose **Manage Configurations**.
 
-![Screenshot of the CMake configuration drop-down that highlights the Manage Configurations selection.](media/vs2019-cmake-manage-configurations.png)
+![Screenshot of the CMake configuration drop-down. Manage Configurations is highlighted.](media/vs2019-cmake-manage-configurations.png)
 
 Now you see the **Settings Editor** with the installed configurations on the left.
 
-![Screenshot of the CMake settings editor.](media/cmake-settings-editor.png)
+:::image type="complex" source="media/cmake-settings-editor.png" alt-text="Screenshot of the CMake settings editor.":::
+The left pane shows the installed configurations (x86-Debug). The right pane shows the settings for the selected configuration. THe settings include the configuration name, configuration type (set to Debug), toolset (set to msvc_x86), CMake toolchain file (empty), build root (contains ${env:USERPROFILE}\CMakeBuilds\${workspaceHash}\build\${name}), CMake command arguments (empty), and build command arguments (-v).
+:::image-end:::
 
 Visual Studio provides one `x64-Debug` configuration by default. You can add more configurations by choosing the green plus sign. The settings that you see in the editor might vary depending on which configuration is selected.
 
@@ -190,8 +192,10 @@ You can also directly edit *`CMakeSettings.json`* to create custom configuration
 
 JSON IntelliSense helps you edit the *`CMakeSettings.json`* file:
 
-   ![Screenshot of the CMake JSON IntelliSense pop-up in the editor.](media/cmake-json-intellisense.png "CMake JSON IntelliSense")
-
+    :::image type="complex" source="media/cmake-json-intellisense.png" alt-text="Screenshot of the CMake JSON IntelliSense pop-up in the editor.":::
+   The JSON IntelliSense pop-up for "configurations" shows buildCommandArgs, buildRoot, cmakeCommandArgs, configurationType, among several others.
+    :::image-end:::
+    
 For more information about each of the properties in the file, see [`CMakeSettings.json` schema reference](cmakesettings-reference.md).
 
 ::: moniker-end
