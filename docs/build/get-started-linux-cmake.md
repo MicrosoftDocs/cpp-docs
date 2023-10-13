@@ -26,8 +26,8 @@ In this tutorial, you learn how to:
 
 * Set up a Linux machine for Cross Platform C++ Development
 
-  * Visual Studio doesn't require any specific distribution of Linux. The OS can be running on a physical machine, in a VM, or in the cloud. You could also use the Windows Subsystem for Linux (WSL). However, for this tutorial a graphical environment is required. WSL isn't recommended here, because it's intended primarily for command-line operations.
-  * Visual Studio requires these tools on the Linux machine: C++ compilers, gdb, ssh, rsync, make, and zip. On Debian-based systems, you can use this command to install these dependencies:
+  * Visual Studio doesn't require any specific distribution of Linux. The OS can be running on a physical machine, in a VM, or in the cloud. You could also use the Windows Subsystem for Linux (WSL). However, for this tutorial, a graphical environment is required. WSL isn't recommended here, because it's intended primarily for command-line operations.
+  * Visual Studio requires these tools on the Linux machine: C++ compilers, `gdb`, `ssh`, `rsync`, `make`, and `zip`. On Debian-based systems, you can use this command to install these dependencies:
 
     ```cmd
     sudo apt install -y openssh-server build-essential gdb rsync make zip
@@ -51,13 +51,13 @@ In this tutorial, you learn how to:
 
 ## Clone an open-source CMake project from GitHub
 
-This tutorial uses the Bullet Physics SDK on GitHub. It provides collision detection and physics simulations for many applications. The SDK includes sample executable programs that compile and run without having to write additional code. This tutorial doesn't modify any of the source code or build scripts. To start, clone the *bullet3* repository from GitHub on the machine where you have Visual Studio installed.
+This tutorial uses the Bullet Physics SDK on GitHub. It provides collision detection and physics simulations for many applications. The SDK includes sample executable programs that compile and run without having to write other code. This tutorial doesn't modify any of the source code or build scripts. To start, clone the *bullet3* repository from GitHub on the machine where you have Visual Studio installed.
 
 ```cmd
 git clone https://github.com/bulletphysics/bullet3.git
 ```
 
-1. On the Visual Studio main menu, choose **File > Open > CMake**. Navigate to the `CMakeLists.txt` file in the root of the bullet3 repo you just downloaded.
+1. On the Visual Studio main menu, choose **File > Open > CMake**. Navigate to the `CMakeLists.txt` file in the root of the bullet3 repo you downloaded.
 
     ![Screenshot of Visual Studio menu showing File > Open > C Make. A folder has yet to be opened. This is just the menu opened to this point.](media/cmake-open-cmake.png)
 
@@ -75,7 +75,7 @@ git clone https://github.com/bulletphysics/bullet3.git
 
 When you open a folder that uses CMake, Visual Studio automatically generates the CMake cache. This operation might take a few moments, depending on the size of your project.
 
-1. In the **Output Window**, select **Show output from** and then choose **CMake** to monitor the status of the cache generation process. When the operation is complete, it says "Target info extraction done".
+1. In the **Output Window**, select **Show output from** and then choose **CMake** to monitor the status of the cache generation process. When the operation is complete, it says "Target info extraction done."
 
    ![Screenshot of the Output window. The Show output from: dropdown is set to CMake.](media/cmake-bullet3-output-window.png)
 
@@ -85,7 +85,7 @@ When you open a folder that uses CMake, Visual Studio automatically generates th
 
    ![Screenshot of the Solutions and Folders button in the Solution Explorer. It is selected, showing a dropdown with a choice for c:\projects\bullet3 and another choice for CMake Targets View, which is selected.](media/cmake-bullet3-show-targets.png)
 
-   Here is what that view looks like for the Bullet SDK:
+   Here's what that view looks like for the Bullet SDK:
 
    ![Screenshot of the Solution Explorer CMake targets view. It contains an entry called BULLET_PHYSICS Project, under which are entries like App_BasicExample (executable), App_ExampleBrowser (executable), and so on.](media/cmake-bullet3-targets-view.png)
 
@@ -105,11 +105,11 @@ Visual Studio creates a default **x64-Debug** configuration for Windows. Configu
 
    ![Screenshot of the Add Configuration to CMakeSettings dialog. It has entries such as Linux-Debug, x86-Debug. x64-Debug is selected.](media/cmake-bullet3-add-configuration-x64-debug.png)
 
-   This dialog shows all the configurations included with Visual Studio, plus any custom configurations that you create. If you want to continue to use a **x64-Debug** configuration, that should be the first one you add. Select **x64-Debug**, and then choose the **Select** button. Visual Studio creates the CMakeSettings.json file with a configuration for **x64-Debug**, and saves it to disk. You can use whatever names you like for your configurations by changing the name parameter directly in CMakeSettings.json.
+   This dialog shows all the configurations included with Visual Studio, plus any custom configurations that you create. If you want to continue to use a **x64-Debug** configuration that should be the first one you add. Select **x64-Debug**, and then choose the **Select** button. Visual Studio creates the CMakeSettings.json file with a configuration for **x64-Debug**, and saves it to disk. You can use whatever names you like for your configurations by changing the name parameter directly in CMakeSettings.json.
 
 ## Set a breakpoint, build, and run on Windows
 
-In this step, we'll debug an example program that demonstrates the Bullet Physics library.
+In this step, we debug an example program that demonstrates the Bullet Physics library.
   
 1. In **Solution Explorer**, select AppBasicExampleGui and expand it.
 
@@ -127,7 +127,7 @@ In this step, we'll debug an example program that demonstrates the Bullet Physic
 
 1. Place a breakpoint on the first line within this function. It gets hit when you click a mouse button within the window of the application, when run under the Visual Studio debugger.
 
-1. To launch the application, select the launch drop-down in the toolbar. It's the one with the green play icon that says "Select Startup Item". In the drop-down, select AppBasicExampleGui.exe. The executable name now displays on the launch button:
+1. To launch the application, select the launch drop-down in the toolbar. It's the one with the green play icon that says "Select Startup Item." In the drop-down, select AppBasicExampleGui.exe. The executable name now displays on the launch button:
 
    ![Screenshot of the Visual Studio toolbar launch drop-down. AppBasicExampleGui.exe is selected, but other options are visible such as App_ExampleBrowser.exe, App_HelloWorld.exe, and others.](media/cmake-bullet3-launch-button.png)
 
@@ -149,18 +149,17 @@ In this step, we'll debug an example program that demonstrates the Bullet Physic
 
    If it's the first time you're connecting to a Linux system, the **Connect to Remote System** dialog appears.
 
-   ![. It has fields for the host name, ]()
     :::image type="complex" source="./media/cmake-bullet3-connection-manager.png" alt-text="Screenshot of the Visual Studio Connect to Remote System dialog.":::
-    The dialog has fields for the host name, port, user name, Authentication type, and password. All of the fields are blank except Port is set to 22 and Authentication type is set to Password.
+    The dialog has fields for the host name, port, user name, authentication type, and password. All of the fields are blank except Port is set to 22 and Authentication type is set to Password.
     :::image-end:::
     
    If you've already added a remote connection, you can open this window by navigating to **Tools > Options > Cross Platform > Connection Manager**.
 
-1. Provide the [connection information to your Linux machine](../linux/connect-to-your-remote-linux-computer.md) and choose **Connect**. Visual Studio adds that machine as to CMakeSettings.json as your default connection for **Linux-Debug**. It also pulls down the headers from your remote machine, so you get [IntelliSense specific to that remote connection](../linux/configure-a-linux-project.md#remote_intellisense). Next, Visual Studio sends your files to the remote machine and generates the CMake cache on the remote system. These steps may take some time, depending on the speed of your network and power of your remote machine. You'll know it's complete when the message "Target info extraction done" appears in the CMake output window.
+1. Provide the [connection information to your Linux machine](../linux/connect-to-your-remote-linux-computer.md) and choose **Connect**. Visual Studio adds that machine as to CMakeSettings.json as your default connection for **Linux-Debug**. It also pulls down the headers from your remote machine, so you get [IntelliSense specific to that remote connection](../linux/configure-a-linux-project.md#remote_intellisense). Next, Visual Studio sends your files to the remote machine and generates the CMake cache on the remote system. These steps might take some time, depending on the speed of your network and power of your remote machine. You know it's complete when the message "Target info extraction done" appears in the CMake output window.
 
 ## Set a breakpoint, build, and run on Linux
 
-Because it's a desktop application, you need to provide some additional configuration information to the debug configuration.
+Because it's a desktop application, you need to provide some more configuration information to the debug configuration.
 
 1. In the CMake Targets view, right-click AppBasicExampleGui and choose **Debug and Launch Settings** to open the launch.vs.json file that's in the hidden **.vs** subfolder. This file is local to your development environment. You can move it into the root of your project if you wish to check it in and save it with your team. In this file, a configuration has been added for AppBasicExampleGui. These default settings work in most cases, but not here. Because it's a desktop application, you need to provide some additional information to launch the program so you can see it on your Linux machine.
 
@@ -170,7 +169,7 @@ Because it's a desktop application, you need to provide some additional configur
    echo $DISPLAY
    ```
 
-   In the configuration for AppBasicExampleGui, there's a parameter array, "pipeArgs". It contains a line: "${debuggerCommand}". It's the command that launches gdb on the remote machine. Visual Studio must export the display into this context before that command runs. For example, if the value of your display is `:1`, modify that line as follows:
+   In the configuration for AppBasicExampleGui, there's a parameter array, "pipeArgs". It contains a line: "${debuggerCommand}". It's the command that launches `gdb` on the remote machine. Visual Studio must export the display into this context before that command runs. For example, if the value of your display is `:1`, modify that line as follows:
 
    ```cmd
    "export DISPLAY=:1;${debuggerCommand}",
@@ -184,11 +183,10 @@ Because it's a desktop application, you need to provide some additional configur
     The output in the window indicates that the C11 functions dynamically loaded using dlopen/dlsym is OK, a GL 3.0 context has been created and the Direct GLX rendering context obtained and made current. The window has various version information for GL_VENDOR, GL_VERSION, GL_SHADING_LANGUAGE_VERSION, and so on.
     :::image-end:::
 
-1. You can inspect the application variables, objects, threads, memory, and step through your code interactively using Visual Studio. But this time, you're doing it all on a remote Linux machine instead of your local Windows environment. You can choose **Continue** to let the application resume and exit normally, or you can choose the stop button, just as with local execution.
+1. You can inspect the application variables, objects, threads, memory, and step through your code interactively using Visual Studio. But this time, you're doing it all on a remote Linux machine instead of your local Windows environment. You can choose **Continue** to let the application resume and exit normally, or you can choose the stop button, as with local execution.
 
 1. Look at the Call Stack window and view the Calls to `x11OpenGLWindow` since Visual Studio launched the application on Linux.
 
-   ![C.](media/cmake-bullet3-linux-callstack.png)
     :::image type="complex" source="media/cmake-bullet3-linux-console.png" alt-text="The Visual Studio Call Stack window, showing Linux call stack.":::
     The callstack shows the breakpoint on CommonRigidBodyBase::mouseMoveCallback, and the calls that precede it such as OnMouseMove, X11OpenGLWindow::pumpMessage, and so on.
     :::image-end:::
