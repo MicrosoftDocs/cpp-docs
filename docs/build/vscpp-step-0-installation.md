@@ -67,6 +67,10 @@ After the installer is installed, you can use it to customize your installation 
 
    ![Visual Studio 2022: Install a workload.](../get-started/media/vs2022-installer-workloads.png)
 
+   :::image type="content" source="../get-started/media/vs2022-installer-workloads.png" alt-text="Visual studio installer with the Desktop development with C++ workload checked.":::
+   On the right in the installation details pane, the various components of the workload are shown." lightbox="../get-started/media/vs2022-installer-workloads.png"
+   :::image-end:::
+
    For core C and C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
 
    Additional workloads support other kinds of development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
