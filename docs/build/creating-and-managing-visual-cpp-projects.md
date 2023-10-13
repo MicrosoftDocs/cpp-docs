@@ -65,7 +65,7 @@ To configure build settings for a project, right-click on the project in **Solut
 
 To compile and run the new project, press **F5** or click the *debug dropdown* with the green arrow on the main toolbar. The *configuration dropdown* is where you choose whether to perform a *Debug* or *Release* build (or some other custom configuration).
 
-A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning doesn't. All errors and warnings appear both in the Output Window and in the Error List when you build the project.
+A new project compiles without errors. When adding your own code, you might occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning doesn't. All errors and warnings appear both in the Output Window and in the Error List when you build the project.
 
    ![Screenshot of the Output window and Error list, showing a syntax error for a misplaced colon.](../overview/media/vs2017-output-error-list.png)
 
