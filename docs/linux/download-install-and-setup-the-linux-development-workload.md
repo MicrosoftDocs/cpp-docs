@@ -32,7 +32,9 @@ For any of these scenarios, the **Linux development with C++** workload is requi
 
 1. Look for the installer under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux development with C++** workload.
 
-   ![Screenshot highlighting the Visual C++ for Linux Development workload item in Visual Studio Installer.](media/linuxworkload.png)
+   :::image type="complex" source="./media/linuxworkload.png" alt-text="Screenshot highlighting the Visual C++ for Linux Development workload item in Visual Studio Installer.":::
+   The Linux Development workload is selected. The Installation details pane is highlighted, which lists what's included in the workload, including Visual Studio C++ core features, Windows Universal C runtime, Visual C++ for Linux development. An optional component is also selected: Visual C++ tools for CMake and Linux.
+   :::image-end:::
 
 1. If you're targeting IoT or embedded platforms, go to the **Installation details** pane on the right. Under **Linux development with C++**, expand **Optional Components**, and choose the components you need. CMake support for Linux is selected by default.
 
