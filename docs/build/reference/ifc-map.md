@@ -18,9 +18,9 @@ This switch tells the compiler where to find the [TOML](https://toml.io/en/) fil
 ## Remarks
 
 The *`filename`* argument specifies a TOML file (Tom's Obvious Minimal Language). The file can be relative to the working directory of the compiler or an absolute path.
-Multiple `/ifcMap` arguments may be provided to the compiler.
+Multiple `/ifcMap` arguments can be provided to the compiler.
 
-The TOML file may contain a mix of `[[module]]` and `[[header-unit]]` references. Syntax errors or unrecognized table names result in compiler error `C7696` (TOML parse error).
+The TOML file can contain a mix of `[[module]]` and `[[header-unit]]` references. Syntax errors or unrecognized table names result in compiler error `C7696` (TOML parse error).
 
 ### TOML for named modules
 
@@ -43,8 +43,6 @@ This TOML file maps the named modules 'M' and 'N' to their respective IFC files.
 ```cmd
 /reference M=C:\modules\M.ifc /reference N=C:\modules\N.ifc
 ```
-
-When `[[module]]` is specified in the TOML, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md) similarly to how it is implicitly enabled when [`/module`](module.md) is used. For more information about the behavior of the 'angle' and 'quote' lookup methods, see the [/module Remarks](module.md#remarks).
 
 For more information about what types of module names are valid for the `name` field, see [`/reference remarks`](module-reference.md#remarks).
 
@@ -72,7 +70,7 @@ name = ["angle", "algorithm"]
 ifc = "C:\\header-units\\algorithm.ifc"
 ```
 
-When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md) like how it is implicitly enabled when [`/headerUnit`](headerunit.md) is used. For more information about the behavior of the 'angle' and 'quote' lookup methods, see the [/headerUnit Remarks](headerunit.md#remarks).
+When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md) like how it's implicitly enabled when [`/headerUnit`](headerunit.md) is used. For more information about the behavior of the 'angle' and 'quote' lookup methods, see the [/headerUnit Remarks](headerunit.md#remarks).
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -85,5 +83,5 @@ When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables
 ## See also
 
 [Overview of modules in C++](../../cpp/modules-cpp.md)\
-[Walkthrough: Build and import header units in Visual C++ projects](../../cpp/build/walkthrough-build-and-import-header-units-in-visual-cpp-projects.md)\
+[Walkthrough: Build and import header units in Visual C++ projects](../walkthrough-build-and-import-header-units-in-visual-cpp-projects.md)\
 [Using C++ Modules in MSVC from the Command Line](https://devblogs.microsoft.com/cppblog/using-cpp-modules-in-msvc-from-the-command-line-part-1/)
