@@ -4,7 +4,7 @@ description: "Map named modules and header units to IFC files."
 ms.date: 10/13/2023
 author: "tylermsft"
 ms.author: "twhitney"
-f1_keywords: ["/ifcMap", "VC.Project.VCCLCompilerTool.ifcMap"]
+f1_keywords: ["/ifcMap"]
 helpviewer_keywords: ["/ifcMap", "Specify named module and header unit mappings to IFC files."]
 ---
 # `/ifcMap`
@@ -70,15 +70,13 @@ name = ["angle", "algorithm"]
 ifc = "C:\\header-units\\algorithm.ifc"
 ```
 
-When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md), just as it's implicitly enabled when [`/headerUnit`](headerunit.md) is used. For more information about the behavior of the 'angle' and 'quote' lookup methods, see the [/headerUnit Remarks](headerunit.md#remarks).
+The equivalent [`/headerUnit`](headerunit.md) for the previous TOML is:
 
-### To set this compiler option in the Visual Studio development environment
+```cmd
+/headerUnit:quote my-utility=C:\header-units\my-utility.h.ifc /headerUnit:angle vector=C:\header-units\vector.ifc /headerUnit:quote my-engine.h=C:\header-units\my-engine.h.ifc /headerUnit:angle algorithm=C:\header-units\algorithm.ifc
+```
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
-1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
-
-1. In the **Additional options** box, add `/ifcMap tomlfile.toml`.
+When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md), just as it's implicitly enabled when [`/headerUnit`](headerunit.md) is used. For more information about the behavior of the 'angle' and 'quote' lookup methods, see the [/headerUnit remarks](headerunit.md#remarks).
 
 ## See also
 
