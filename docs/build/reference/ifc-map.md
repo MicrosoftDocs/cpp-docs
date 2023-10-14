@@ -76,7 +76,7 @@ The equivalent [`/headerUnit`](headerunit.md) for the previous TOML is:
 /headerUnit:quote my-utility=C:\header-units\my-utility.h.ifc /headerUnit:angle vector=C:\header-units\vector.ifc /headerUnit:quote my-engine.h=C:\header-units\my-engine.h.ifc /headerUnit:angle algorithm=C:\header-units\algorithm.ifc
 ```
 
-When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md), just as it's implicitly enabled when [`/headerUnit`](headerunit.md) is used. For more information about the behavior of the 'angle' and 'quote' lookup methods, see the [/headerUnit Remarks](headerunit.md#remarks).
+When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md), just as it's implicitly enabled when [`/headerUnit`](headerunit.md) is used. For more information about the behavior of the 'angle' and 'quote' lookup methods, see the [/headerUnit remarks](headerunit.md#remarks).
 
 ## See also
 
