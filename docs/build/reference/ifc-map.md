@@ -4,7 +4,7 @@ description: "Map named modules and header units to IFC files."
 ms.date: 10/13/2023
 author: "tylermsft"
 ms.author: "twhitney"
-f1_keywords: ["/ifcMap", "VC.Project.VCCLCompilerTool.ifcMap"]
+f1_keywords: ["/ifcMap"]
 helpviewer_keywords: ["/ifcMap", "Specify named module and header unit mappings to IFC files."]
 ---
 # `/ifcMap`
