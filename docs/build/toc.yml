@@ -620,6 +620,8 @@ items:
                   href: ../build/reference/i-additional-include-directories.md
                 - name: /ifcOutput (Specify where the compiled `.ifc` should go.)
                   href: ../build/reference/ifc-output.md
+                - name: /ifcMap (Map named modules and header units to IFC files.)
+                  href: ../build/reference/ifc-map.md
                 - name: /interface (Treat input file as a module interface unit)
                   href: ../build/reference/interface.md
                 - name: /internalPartition (Treat the input file as an internal partition unit.)
