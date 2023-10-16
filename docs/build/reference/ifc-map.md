@@ -1,7 +1,7 @@
 ---
 title: "/ifcMap"
 description: "Map named modules and header units to IFC files."
-ms.date: 10/13/2023
+ms.date: 10/16/2023
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/ifcMap"]
@@ -9,7 +9,7 @@ helpviewer_keywords: ["/ifcMap", "Specify named module and header unit mappings 
 ---
 # `/ifcMap`
 
-This switch tells the compiler where to find the [TOML](https://toml.io/en/) file that maps named modules and header units to their respective IFC (.ifc) files.
+This switch tells the compiler where to find the IFC reference map file, which maps references to named modules and header units to their corresponding IFC (`.ifc`) files.
 
 ## Syntax
 
@@ -17,14 +17,17 @@ This switch tells the compiler where to find the [TOML](https://toml.io/en/) fil
 
 ## Remarks
 
-The *`filename`* argument specifies a TOML (Tom's Obvious Minimal Language) file. The file can be relative to the compiler's working directory, or an absolute path.
-Multiple `/ifcMap` arguments can be provided to the compiler.
+The `*filename*` argument specifies the IFC reference map file. It can be relative to the compiler's working directory, or an absolute path.
 
-The TOML file can contain a mix of `[[module]]` and `[[header-unit]]` references. Syntax errors or unrecognized table names result in compiler error `C7696` (TOML parse error).
+You can provide multiple `/ifcMap` arguments to the compiler.
 
-### TOML for named modules
+The IFC reference map file format is a subset of the [TOML](https://toml.io/en/) file format. The IFC reference map file can contain a mix of `[[module]]` and `[[header-unit]]` references.
 
-The format of the TOML file must adhere to the following specification for named modules:
+Syntax errors or unrecognized table names result in compiler error `C7696` (TOML parse error).
+
+### Map named modules
+
+The format of the IFC reference map file for named modules is:
 
 ```
 # Using literal strings
@@ -38,7 +41,7 @@ name = "N"
 ifc = "C:\\modules\\N.ifc"
 ```
 
-This TOML file maps the named modules `'M'` and `'N'` to their respective IFC files. The equivalent [`/reference'](module-reference.md) is:
+This IFC reference map file maps the named modules `'M'` and `'N'` to their respective IFC files. The equivalent [`/reference'](module-reference.md) is:
 
 ```cmd
 /reference M=C:\modules\M.ifc /reference N=C:\modules\N.ifc
@@ -46,9 +49,9 @@ This TOML file maps the named modules `'M'` and `'N'` to their respective IFC fi
 
 For more information about what types of module names are valid for the `name` field, see [`/reference remarks`](module-reference.md#remarks).
 
-### TOML for header units
+### Map header units
 
-The format of the TOML for header units is:
+The format of the IFC reference map file for header units is:
 
 ```
 # Using literal strings
@@ -70,13 +73,13 @@ name = ["angle", "algorithm"]
 ifc = "C:\\header-units\\algorithm.ifc"
 ```
 
-The equivalent [`/headerUnit`](headerunit.md) for the previous TOML is:
+This IFC reference map file maps `"my-utility.h"` to `C:\header-units\my-utility.h.ifc`, and `<vector>` to `C:\header-units\vector.ifc`, and so on. The equivalent [`/headerUnit`](headerunit.md) is:
 
 ```cmd
 /headerUnit:quote my-utility=C:\header-units\my-utility.h.ifc /headerUnit:angle vector=C:\header-units\vector.ifc /headerUnit:quote my-engine.h=C:\header-units\my-engine.h.ifc /headerUnit:angle algorithm=C:\header-units\algorithm.ifc
 ```
 
-When `[[header-unit]]` is specified in the TOML, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md), just as it's implicitly enabled when [`/headerUnit`](headerunit.md) is used. For more information about the behavior of the 'angle' and 'quote' lookup methods, see the [/headerUnit remarks](headerunit.md#remarks).
+When `[[header-unit]]` is specified in an IFC reference map file, the compiler implicitly enables [`/Zc:preprocessor`](zc-preprocessor.md), just as it's implicitly enabled when [`/headerUnit`](headerunit.md) is used. For more information about the behavior of the `angle` and `quote` lookup methods, see [/headerUnit remarks](headerunit.md#remarks).
 
 ## See also
 
