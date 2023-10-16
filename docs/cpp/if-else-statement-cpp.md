@@ -7,13 +7,13 @@ helpviewer_keywords: ["if keyword [C++]", "else keyword [C++]"]
 ---
 # if-else statement (C++)
 
-An if-else statement controls conditional branching. Statements in the *`if-branch`* are executed only if the *`condition`* evaluates to a non-zero value (or **`true`**). If the value of *`condition`* is nonzero, the following statement gets executed, and the statement following the optional **`else`** gets skipped. Otherwise, the following statement gets skipped, and if there's an **`else`** then the statement following the **`else`** gets executed.
+An if-else statement controls conditional branching. Statements in the *`if-branch`* are executed only if the *`condition`* evaluates to a nonzero value (or **`true`**). If the value of *`condition`* is nonzero, the following statement gets executed, and the statement following the optional **`else`** gets skipped. Otherwise, the following statement gets skipped, and if there's an **`else`** then the statement following the **`else`** gets executed.
 
-*`condition`* expressions that evaluate to non-zero are:
+*`condition`* expressions that evaluate to nonzero are:
 
 - **`true`**
 - a non-null pointer,
-- any non-zero arithmetic value, or
+- any nonzero arithmetic value, or
 - a class type that defines an unambiguous conversion to an arithmetic, boolean, or pointer type. (For information about conversions, see [Standard Conversions](../cpp/standard-conversions.md).)
 
 ## Syntax
@@ -109,7 +109,7 @@ x < 11 is true!
 
 ## <a name="if_with_init"></a> if statement with an initializer
 
-Starting in C++17, an **`if`** statement may also contain an *`init-statement`* expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-statement. **Microsoft-specific**: This form is available starting in Visual Studio 2017 version 15.3, and requires at least the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option.
+Starting in C++17, an **`if`** statement might also contain an *`init-statement`* expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-statement. **Microsoft-specific**: This form is available starting in Visual Studio 2017 version 15.3, and requires at least the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
 ### Example
 
@@ -201,9 +201,9 @@ int main()
 }
 ```
 
-The **`if constexpr`** statement is evaluated at compile time, and the compiler only generates code for the **`if`** branch that matches the type of the argument sent to the function template. If you comment out the **`if constexpr`** statement and uncomment the **`if`** statement, the compiler generates code for both branches. That means you'll get an error:
-- If you call `ShowValue(a);` you'll get an error on `return *t` because `t` is not a pointer, even though the **`if`** statement is false and the code is never executed. 
-- If you call `ShowValue(pB);` you'll get an error on `return t` because `t` is a pointer, even though the **`if`** statement is true and the code is never executed.
+The **`if constexpr`** statement is evaluated at compile time, and the compiler only generates code for the **`if`** branch that matches the type of the argument sent to the function template. If you comment out the **`if constexpr`** statement and uncomment the **`if`** statement, the compiler generates code for both branches. That means you get an error:
+- If you call `ShowValue(a);` you get an error on `return *t` because `t` isn't a pointer, even though the **`if`** statement is false and the code is never executed. 
+- If you call `ShowValue(pB);` you get an error on `return t` because `t` is a pointer, even though the **`if`** statement is true and the code is never executed.
  
 Using `if constexpr` solves this problem because only the statement that matches the type of the argument sent to the function template is compiled.
 
