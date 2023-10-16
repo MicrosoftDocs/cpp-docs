@@ -102,7 +102,7 @@ int main()
 
 Output:
 
-```cmd
+```output
 x < 11 is true!
 25
 ```
@@ -158,7 +158,7 @@ int main()
 
 Output:
 
-```cmd
+```Output
 ten
 x is 42
 setting shared_flag to false
@@ -180,7 +180,7 @@ This example shows how you can conditionally compile a template based on the typ
 template<typename T>
 auto Show(T t)
 {
-    //if (std::is_pointer_v<T>) // Given Show(a), results in compiler error for return *t
+    //if (std::is_pointer_v<T>) // Show(a) results in compiler error for return *t. Show(b) results in compiler error for return t.
     if constexpr (std::is_pointer_v<T>) // This statement goes away for Show(a)
     {
         return *t;
@@ -208,7 +208,8 @@ The **`if constexpr`** statement is evaluated at compile time, and the compiler 
 Using `if constexpr` solves this problem because only the statement that matches the type of the argument sent to the function template is compiled.
 
 Output:
-```cmd
+
+```output
 42
 42
 ```
