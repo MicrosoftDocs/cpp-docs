@@ -14,7 +14,9 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 
 # [Visual Studio](#tab/visual-studio)
 
-![Serial Monitor in VS](media/serial-monitor.png)
+:::image type="complex" source="./media/serial-monitor.png" alt-text="Screenshot of the Visual Studio Serial Monitor window.":::
+The window is split into two sections. The top section shows the monitoring mode (serial), Port (virtual COM port COM3), baud rate (115200), line ending (None), and a Stop monitoring button. The bottom section shows the messages, consisting of four lines of the text Hello, World!
+:::image-end:::
 
 ## Capabilities
 
@@ -42,8 +44,13 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-![Serial Monitor in VSCode](media/serial-monitor-vscode.png)
-![Serial Monitor in VSCode - TCP](media/serial-monitor-vscode-tcp.png)
+:::image type="complex" source="./media/serial-monitor-vscode.png" alt-text="Screenshot of the VS Code Serial Monitor window.":::
+The window is split into two sections. The top section shows the monitoring mode (serial), Port (virtual COM port COM3), baud rate (115200), line ending (None), and a Stop monitoring button. The bottom section where messages are displayed is empty.
+:::image-end:::
+
+:::image type="complex" source="./media/serial-monitor-vscode-tcp.png" alt-text="Screenshot of the VS Code TCP Serial Monitor window.":::
+The window is split into two sections. The top section shows the monitoring mode (TCP), Host (::1), Port (1234), and a Start monitoring button. The bottom section shows the messages, starting with "Opening the TCP connection on ::1:1234. Then Connected to ::1:1234. Then five lines of the text Hello, World!. Then Closed the TCP connection ::1:1234.
+:::image-end:::
 
 ## Capabilities
 

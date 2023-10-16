@@ -11,14 +11,16 @@ ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
 > [!CAUTION]
 > Editing resources such as dialog boxes, images, or menus in the **Binary Editor** is dangerous. Incorrect editing could corrupt the resource, making it unreadable in its native editor.
 
-The **Binary Editor** allows you to edit any resource at the binary level in either hexadecimal or ASCII format. You can also use the [Find command](/visualstudio/ide/reference/find-command) to search for either ASCII strings or hexadecimal bytes. Use the **Binary Editor** only when you need to view or make minor changes to custom resources or resource types not supported by the Visual Studio environment. The **Binary Editor** is not available in Express editions.
+The **Binary Editor** allows you to edit any resource at the binary level in either hexadecimal or ASCII format. You can also use the [Find command](/visualstudio/ide/reference/find-command) to search for either ASCII strings or hexadecimal bytes. Use the **Binary Editor** only when you need to view or make minor changes to custom resources or resource types not supported by the Visual Studio environment. The **Binary Editor** isn't available in Express editions.
 
 - To open the **Binary Editor** on a new file, go to menu **File** > **New** > **File**, select the type of file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**. The dropdown selection in the New file dialog isn't available in Visual Studio 2019, but is available in Visual Studio 2022.
 
 - To open the **Binary Editor** on an existing file, go to menu **File** > **Open** > **File**, select the file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
 
-   ![Binary Editor.](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
-   Binary data for a dialog box displayed in the **Binary Editor**
+    :::image type="complex" source="../mfc/media/vcbinaryeditor2.gif" alt-text="Screenshot of the Binary Editor.":::
+    The binary editor is open on a file called Scribble.rc. mydata.rc. The file is split into three sections. The left section shows the address from the start of the file. The middle section shows columns of hexadecimal values from the file. The right section shows the ASCII characters that correspond to the hexadecimal values.
+    :::image-end:::
+    Binary data for a dialog box displayed in the **Binary Editor**
 
 Only certain ASCII values are represented in the **Binary Editor** (0x20 through 0x7E). Extended characters are displayed as periods in the right panel ASCII value section of the **Binary Editor**. The printable characters are ASCII values 32 through 126.
 
@@ -80,7 +82,7 @@ You can create a new custom or data resource by placing the resource in a separa
 
 1. [Create a .rc file](how-to-create-a-resource-script-file.md) that contains the custom or data resource.
 
-   You can type custom data in a .rc file as null-terminated quoted strings, or as integers in decimal, hexadecimal, or octal format.
+   You can type custom data in an `.rc` file as null-terminated quoted strings, or as integers in decimal, hexadecimal, or octal format.
 
 1. In **Solution Explorer**, right-click your project's .rc file and select **Resource Includes**.
 
