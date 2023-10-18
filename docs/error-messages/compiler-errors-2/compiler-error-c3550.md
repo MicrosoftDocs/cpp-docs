@@ -22,9 +22,11 @@ The following sample generates C3550:
 decltype(auto)* func1();   // C3550
 decltype(auto)& func2();   // C3550
 decltype(auto)&& func3();   // C3550
+
+auto* func4();   // OK
 ```
 
-To resolve the error remove all illegal qualification on `decltype(auto)`.
+To resolve the error remove all illegal qualification on `decltype(auto)`. For instance, `decltype(auto)* func1()` can be turned into `auto* func1()`.
 
 ## See also
 
