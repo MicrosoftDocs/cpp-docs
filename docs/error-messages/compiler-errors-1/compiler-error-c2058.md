@@ -23,4 +23,4 @@ int main() {
 }
 ```
 
-Possible resolutions include removing the construct or modifying the operand to an appropriate integer constant expression.
+To resolve the issue, use an integer constant expression. For example, `int arr[2];`
