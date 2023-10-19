@@ -13742,7 +13742,7 @@
     },
     {
       "source_path": "docs/error-messages/compiler-warnings/compiler-warning-level-3-c4310.md",
-      "redirect_url": "docs/error-messages/compiler-warnings/compiler-warning-level-4-c4310",
+      "redirect_url": "/cpp/error-messages/compiler-warnings/compiler-warning-level-4-c4310",
       "redirect_document_id": false
     }
   ]
