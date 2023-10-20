@@ -12,7 +12,7 @@ A predefined function object that performs the arithmetic negation operation (un
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct negate : public unary_function<Type, Type>
 {

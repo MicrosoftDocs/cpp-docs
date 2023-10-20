@@ -12,7 +12,7 @@ A predefined function object that performs the subtraction operation (binary `op
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct minus : public binary_function <Type, Type, Type>
 {
