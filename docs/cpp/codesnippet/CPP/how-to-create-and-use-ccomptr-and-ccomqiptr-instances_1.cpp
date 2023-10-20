@@ -1,6 +1,5 @@
 void CComPtrDemo()
 {
-
     HRESULT hr = CoInitialize(NULL);
 
     // Declare the smart pointer.

@@ -83,7 +83,6 @@ using namespace std;
 
 class X
 {
-
    template <class T>
    struct Y
    {

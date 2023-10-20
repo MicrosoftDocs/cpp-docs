@@ -401,7 +401,6 @@ using namespace std;
 
 class C
 {
-
 public:
     C() {/*expensive initialization*/}
     vector<unsigned> get_data() &

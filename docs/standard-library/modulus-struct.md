@@ -12,7 +12,7 @@ A predefined function object that performs the modulus division operation (`oper
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct modulus : public binary_function <Type, Type, Type>
 {
@@ -24,7 +24,7 @@ template <>
 struct modulus<void>
 {
   template <class T, class U>
-  auto operator()(T&& Left, U&& Right) const`
+  auto operator()(T&& Left, U&& Right) const
     -> decltype(std::forward<T>(Left) % std::forward<U>(Right));
 };
 ```

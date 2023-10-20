@@ -12,7 +12,7 @@ A predefined function object that performs the logical disjunction operation ( `
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct logical_or : public binary_function<Type, Type, bool>
 {
@@ -24,7 +24,7 @@ template <>
 struct logical_or<void>
 {
   template <class T, class U>
-  auto operator()(T&& Left, U&& Right) const`
+  auto operator()(T&& Left, U&& Right) const
     -> decltype(std::forward<T>(Left) || std::forward<U>(Right));
 };
 ```

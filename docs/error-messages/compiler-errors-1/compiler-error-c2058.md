@@ -11,3 +11,16 @@ ms.assetid: 81e08e6b-15f7-41b4-980a-53763e19990c
 constant expression is not integral
 
 The context requires an integer constant expression.
+
+The following sample generates C2058:
+
+```cpp
+// C2058.cpp
+struct alignas(1.5) S {};   // C2058
+
+int main() {
+   int arr[1.5];   // C2058
+}
+```
+
+To resolve the issue, use an integer constant expression. For example, `int arr[2];`
