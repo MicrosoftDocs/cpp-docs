@@ -24,7 +24,7 @@ You can also start a debug session from Solution Explorer. First, switch to **CM
 
 Then, right-click on an executable and select **Debug**. This command automatically starts debugging the selected target based on your active configuration.
 
-Starting in Visual Studio 17.6, you can also start a debugging session on your CMakeLists.txt file. To do so, just set a breakpoint in your CMakeLists.txt file and run **Configure Project with CMake Debugger** from the **Project** dropdown
+Starting in Visual Studio 2022 Version 17.6, you can also start a debugging session on your CMakeLists.txt file. To do so, just set a breakpoint in your CMakeLists.txt file and run **Configure Project with CMake Debugger** from the **Project** dropdown
 
 ![Screenshot of CMake Debugger dropdown.](media/cmake-debugger-entry.png "CMake Debugger dropdown")
 
