@@ -225,7 +225,6 @@ private:
 
 int main()
 {
-
     typedef std::vector< std::function<int (int)> > vf_t;
 
     vf_t v;

@@ -198,7 +198,6 @@ For the overloads that don't have an `Index` parameter, the element to return is
 using namespace std;
 int main()
 {
-
     typedef pair<int, double> MyPair;
 
     MyPair c0(9, 3.14);
