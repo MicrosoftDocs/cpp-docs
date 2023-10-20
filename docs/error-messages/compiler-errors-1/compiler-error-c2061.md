@@ -47,6 +47,7 @@ int main()
 
 To resolve the error with `template<A a> class C1{};`, use `template <typename a> class C1 {};`
 To resolve the issue with `using Type1 = T::Type;`, use `using Type1 = typename T::Type;`
+To resolve the issue with `alignof(x)`, replace the argument with the type of `x`. In this case, `int` or `decltype(x);`
 
 C2061 can occur if you pass an instance name to [typeid](../../extensions/typeid-cpp-component-extensions.md):
 
