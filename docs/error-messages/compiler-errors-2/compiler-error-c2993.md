@@ -10,7 +10,7 @@ helpviewer_keywords: ["C2993"]
 'identifier' : illegal type for non-type template parameter 'parameter'
 
 - Prior to C++20, you cannot declare a template with a structure, class, or union argument. Pointers can be used in place of these types as template parameters.
-- Since C++20, structure, class, or unions *can* be used as non-type template parameters. A non-type template parameter cannot be a rvalue reference type. Neither is a parameter pack of rvalue types allowed.
+- Since C++20, structure, class, or unions *can* be used as non-type template parameters. A non-type template parameter can't be a rvalue reference type or a parameter pack of rvalue types.
 
 The following sample generates C2993:
 
@@ -36,8 +36,7 @@ template <class T, MyStruct* S>   // OK
 class MyClass2 {};
 ```
 
-With C++17 and earlier, you cannot have floating point non-type template parameters. Since C++20, floating point non-type template parameters are allowed as with literal class types.
-If it's a function template, use a function argument to pass the floating point non-type template parameter.
+With C++17 and earlier, you can't have floating point non-type template parameters. Since C++20, floating point non-type template parameters are allowed. Use a function argument to pass the floating point non-type template parameter to function templates.
 
 Before MSVC 19.26, the following code emitted C2993. It now emits C7582:
 
