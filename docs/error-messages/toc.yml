@@ -3607,7 +3607,7 @@ items:
         - name: Compiler warning (level 2) C4309
           href: compiler-warnings/compiler-warning-level-2-c4309.md
         - name: Compiler warning (level 4) C4310
-          href: compiler-warnings/compiler-warning-level-4-c4310.md
+          href: compiler-warnings/compiler-warning-level-3-c4310.md
         - name: Compiler warning (level 1) C4311
           href: compiler-warnings/compiler-warning-level-1-c4311.md
         - name: Compiler warning (level 1) C4312

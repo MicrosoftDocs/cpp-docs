@@ -99,7 +99,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 2) C4307](../../error-messages/compiler-warnings/compiler-warning-level-2-c4307.md)|'*operator*': integral constant overflow|
 |[Compiler warning (level 2) C4308](../../error-messages/compiler-warnings/compiler-warning-level-2-c4308.md)|negative integral constant converted to unsigned type|
 |[Compiler warning (level 2) C4309](../../error-messages/compiler-warnings/compiler-warning-level-2-c4309.md)|'*conversion*': truncation of constant value|
-|[Compiler warning (level 4) C4310](../../error-messages/compiler-warnings/compiler-warning-level-4-c4310.md)|cast truncates constant value|
+|[Compiler warning (level 3) C4310](../../error-messages/compiler-warnings/compiler-warning-level-3-c4310.md)|cast truncates constant value|
 |[Compiler warning (level 1) C4311](../../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md)|'*variable*': pointer truncation from '*type1*' to '*type2*'|
 |[Compiler warning (level 1) C4312](../../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md)|'*operation*': conversion from '*type1*' to '*type2*' of greater size|
 |[Compiler warning (level 1) C4313](../../error-messages/compiler-warnings/compiler-warning-level-1-c4313.md)|'*function*': '*format_specifier*' in format string conflicts with argument '*argument_number*' of type '*type*'|
