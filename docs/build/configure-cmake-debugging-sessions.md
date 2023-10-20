@@ -16,13 +16,17 @@ Native CMake support is available in Visual Studio 2017 and later. To see the do
 
 All executable CMake targets are shown in the **Startup Item** dropdown in the toolbar. Select one to start a debugging session and launch the debugger.
 
-![Screenshot of the CMake startup item dropdown.](media/cmake-startup-item-dropdown.png "CMake startup item dropdown")
+![Screenshot of the CMake startup item dropdown.](media/new-dropdowns.png "CMake startup item dropdown")
 
 You can also start a debug session from Solution Explorer. First, switch to **CMake Targets View** in the **Solution Explorer** window.
 
-![Screenshot of the CMake targets view command.](media/cmake-targets-view.png  "CMake Targets View menu item")
+![Screenshot of the CMake targets view command.](media/switch-to-targets-view.png  "CMake Targets View menu item")
 
 Then, right-click on an executable and select **Debug**. This command automatically starts debugging the selected target based on your active configuration.
+
+Starting in Visual Studio 17.6, you can also start a debugging session on your CMakeLists.txt file. To do so, just set a breakpoint in your CMakeLists.txt file and run **Configure Project with CMake Debugger** from the **Project** dropdown
+
+![Screenshot of CMake Debugger dropdown.](media/cmake-debugger-entry.png "CMake Debugger dropdown")
 
 ## Customize debugger settings
 
