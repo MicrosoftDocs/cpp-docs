@@ -23,7 +23,6 @@ Because a lambda expression is typed, you can assign it to an **`auto`** variabl
 
 int main()
 {
-
     using namespace std;
 
     // Assign the lambda expression that adds two numbers to an auto variable.

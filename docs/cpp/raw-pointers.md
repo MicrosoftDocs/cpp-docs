@@ -150,7 +150,6 @@ void func(int arr[], int length)
 
 int main()
 {
-
     int i[5]{ 1,2,3,4,5 };
     // sizeof(i) = total bytes
     int j = sizeof(i) / sizeof(i[0]);
@@ -170,7 +169,6 @@ using namespace std;
 
 int main()
 {
-
     BITMAPINFOHEADER header;
     header.biHeight = 100; // Multiple of 4 for simplicity.
     header.biWidth = 100;

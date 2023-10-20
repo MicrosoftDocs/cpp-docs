@@ -5091,7 +5091,6 @@ void PrintResult(const string& msg, const pair<vector<int>::iterator, vector<int
 
 int main()
 {
-
     vector<int> vec_1{ 0, 5, 10, 15, 20, 25 };
     vector<int> vec_2{ 0, 5, 10, 15, 20, 25, 30 };
 

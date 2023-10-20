@@ -12,9 +12,11 @@ Tests if type is a placeholder.
 
 ## Syntax
 
+```cpp
 struct is_placeholder {
    static const int value;
 };
+```
 
 ## Remarks
 

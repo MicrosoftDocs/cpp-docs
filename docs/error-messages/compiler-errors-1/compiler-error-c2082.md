@@ -16,8 +16,11 @@ The following sample generates C2082:
 
 ```cpp
 // C2082.cpp
-void func(int i) {
-   int i;   // C2082
-   int ii;   // OK
+void func(int num1) {
+   int num1;   // C2082
+   int num2;   // OK
+
+   auto lambda1 = [](int num1){ int num1; };   // C2082
+   auto lambda2 = [](int num1){ int num2; };   // OK
 }
 ```

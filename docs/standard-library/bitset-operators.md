@@ -162,7 +162,6 @@ The template function extracts elements from *i_str* and inserts them into the b
 using namespace std;
 int main()
 {
-
    bitset<5> b1;
    cout << "Enter string of (0 or 1) bits for input into bitset<5>.\n"
         << "Try bit string of length less than or equal to 5,\n"

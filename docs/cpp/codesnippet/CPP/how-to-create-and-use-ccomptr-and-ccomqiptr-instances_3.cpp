@@ -1,6 +1,5 @@
 void COMAutomationSmartPointerDemo()
 {
-
     CComPtr<IDispatch> pWord;
     CComQIPtr<IDispatch, &IID_IDispatch> pqi = pWord;
     CComDispatchDriver pDriver = pqi;

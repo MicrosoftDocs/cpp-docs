@@ -1434,7 +1434,6 @@ template <typename M> void print(const M& m) {
 
 int main()
 {
-
     // insert single values
     map<int, int> m1;
     // call insert(const value_type&) version

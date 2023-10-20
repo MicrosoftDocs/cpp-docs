@@ -105,7 +105,6 @@ enum PIPES { READ, WRITE }; /* Constants 0 and 1 for READ and WRITE */
 
 int main( int argc, char *argv[] )
 {
-
    int fdpipe[2];
    char hstr[20];
    int pid, problem, c;
