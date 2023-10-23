@@ -13739,11 +13739,6 @@
       "source_path": "docs/c-runtime-library/operator-new-crt.md",
       "redirect_url": "docs/c-runtime-library/new-operator-crt",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/error-messages/compiler-warnings/compiler-warning-level-3-c4310.md",
-      "redirect_url": "docs/error-messages/compiler-warnings/compiler-warning-level-4-c4310",
-      "redirect_document_id": false
     }
   ]
 }
