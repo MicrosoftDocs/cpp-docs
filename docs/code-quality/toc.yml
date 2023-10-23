@@ -172,6 +172,8 @@ items:
     href: ../code-quality/c26477.md
   - name: Warning C26478
     href: ../code-quality/c26478.md
+  - name: Warning C26479
+    href: ../code-quality/c26479.md
   - name: Warning C26481
     href: ../code-quality/c26481.md
   - name: Warning C26482
@@ -479,6 +481,8 @@ items:
     href: ../code-quality/c6389.md
   - name: Warning C6390
     href: ../code-quality/c6390.md
+  - name: Warning C6395
+    href: ../code-quality/c6395.md
   - name: Warning C6400
     href: ../code-quality/c6400.md
   - name: Warning C6401
