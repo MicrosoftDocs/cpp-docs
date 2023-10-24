@@ -20,23 +20,23 @@ All executable CMake targets are shown in the **Startup Item** dropdown in the t
 There is a play button dropdown to select the current debug target. It shows your debug targets. In this example, the HelloWorld.exe debug target is available.
 :::image-end:::
 
-![Screenshot of the CMake startup item dropdown.](media/new-dropdowns.png "CMake startup item dropdown")
-
 You can also start a debug session from Solution Explorer. First, switch to **CMake Targets View** in the **Solution Explorer** window.
 
 :::image type="complex" source="media/switch-to-targets-view.png" alt-text="Screenshot of the CMake Targets View menu":::
 The solution explorer is shown. A right-click on an item in the Folder View has opened a menu. On that menu, the Switch to Targets View item is highlighted.
 :::image-end:::
 
-![Screenshot of the CMake targets view command.](media/switch-to-targets-view.png  "CMake Targets View menu item")
-
 Then, right-click on an executable and select **Debug**. This command automatically starts debugging the selected target based on your active configuration.
 
-![Screenshot of right-click Debug option in the CMake Targets View.](media/debug-targets-view.png "CMake Targets View debug option")
+:::image type="complex" source="media/debug-targets-view.png" alt-text="Screenshot of the CMake Targets View debug option menu":::
+When you right click on a target in the CMake Targets view, there is an option to debug a chosen target. The Debug option is highlighted.
+:::image-end:::
 
 Starting in Visual Studio 2022 Version 17.6, you can also start a debugging session on your CMakeLists.txt file. To do so, just set a breakpoint in your CMakeLists.txt file and run **Configure Project with CMake Debugger** from the **Project** dropdown
 
-![Screenshot of CMake Debugger dropdown.](media/cmake-debugger-entry.png "CMake Debugger dropdown")
+:::image type="complex" source="media/cmake-debugger-entry.png" alt-text="Screenshot of the CMake Debugger dropdown":::
+The Project dropdown is shown. The option to Configure Project with CMake debugger is highlighted.
+:::image-end:::
 
 ## Customize debugger settings
 
