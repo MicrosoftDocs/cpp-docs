@@ -16,7 +16,7 @@ Native CMake support is available in Visual Studio 2017 and later. To see the do
 
 All executable CMake targets are shown in the **Startup Item** dropdown in the toolbar. Select one to start a debugging session and launch the debugger.
 
-:::image type="complex" source="/media/new-dropdowns.png" alt-text="Picture depicting the CMake startup items.":::
+:::image type="complex" source="media/new-dropdowns.png" alt-text="Picture depicting the CMake startup items.":::
 There is a play button dropdown to select your current debug target. From there, you can see all your debug targets. In this example, there is a HelloWorld.exe debug target available.
 :::image-end:::
 
@@ -24,7 +24,7 @@ There is a play button dropdown to select your current debug target. From there,
 
 You can also start a debug session from Solution Explorer. First, switch to **CMake Targets View** in the **Solution Explorer** window.
 
-:::image type="complex" source="/media/switch-to-targets-view.png" alt-text="CMake Targets View menu items":::
+:::image type="complex" source="media/switch-to-targets-view.png" alt-text="CMake Targets View menu items":::
 Right click context menu from the Folder View in the Solution Explorer in Visual Studio that has an option to Switch to Targets View
 :::image-end:::
 
