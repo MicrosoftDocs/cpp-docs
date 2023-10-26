@@ -28,13 +28,13 @@ The solution explorer is shown. A right-click on an item in the Folder View has 
 
 Then, right-click on an executable and select **Debug**. This command automatically starts debugging the selected target based on your active configuration.
 
-:::image type="complex" source="media/debug-targets-view.png" alt-text="Screenshot of the CMake Targets View debug option menu":::
-When you right click on a target in the CMake Targets view, there is an option to debug a chosen target. The Debug option is highlighted.
+:::image type="complex" source="media/debug-targets-view.png" alt-text="Screenshot of the CMake Targets View debug option menu.":::
+When you right-click on a target in the CMake Targets view, there is an option to debug a chosen target. The Debug option is highlighted.
 :::image-end:::
 
-Starting in Visual Studio 2022 Version 17.6, you can also start a debugging session on your CMakeLists.txt file. To do so, just set a breakpoint in your CMakeLists.txt file and run **Configure Project with CMake Debugger** from the **Project** dropdown
+Starting in Visual Studio 2022 Version 17.6, you can also start a debugging session on your CMakeLists.txt file. To do so, just set a breakpoint in your CMakeLists.txt file and run **Configure Project with CMake Debugger** from the **Project** dropdown.
 
-:::image type="complex" source="media/cmake-debugger-entry.png" alt-text="Screenshot of the CMake Debugger dropdown":::
+:::image type="complex" source="media/cmake-debugger-entry.png" alt-text="Screenshot of the CMake Debugger dropdown.":::
 The Project dropdown is shown. The option to Configure Project with CMake debugger is highlighted.
 :::image-end:::
 
