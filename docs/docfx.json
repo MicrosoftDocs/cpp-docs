@@ -38,7 +38,6 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "~/_breadcrumb/toc.yml",
-      "extendBreadcrumb": "true",
       "uhfHeaderId": "MSDocsHeader-CPP",
       "ROBOTS": "INDEX,FOLLOW",
       "manager": "markl",
