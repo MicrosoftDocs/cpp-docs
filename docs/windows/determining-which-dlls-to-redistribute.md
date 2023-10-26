@@ -27,7 +27,7 @@ We only support using a Redistributable package that's the same as or newer than
 
 It's also possible to include the Redistributable DLLs with your installer in *merge modules*. **This method is now deprecated because libraries deployed this way can't be updated automatically by Windows Update.** Redistributable merge modules, or Microsoft Installer modules (*`.msm`* files), are optional components available in the Visual Studio Installer. When installed, merge modules for the Redistributable DLLs are found in your Visual Studio installation directory under `%VCToolsRedistDir%\MergeModules\`. In Visual Studio 2015 and earlier versions of Visual Studio, these files are found in your *Program Files* or *Program Files (x86)* directory in a `Common Files\Merge Modules` subdirectory. For more information about use of these files, see [Redistributing components by using Merge Modules](redistributing-components-by-using-merge-modules.md).
 
-The individual Redistributable DLLs are also included in your installation of Visual Studio. By default, they're installed in the Visual the `%VCToolsRedistDir%\debug_nonredist\[architecture]\Microsoft.[toolset].[library]` folders, where `[architecture]` represents the target architecture, `[toolset]` represents the toolset version, and `[library]` is the Debug library that has the debug DLLs.
+The individual Redistributable DLLs are also included in your installation of Visual Studio. By default, they're installed in the Visual the `%VCToolsRedistDir%\[architecture]\Microsoft.[toolset].[library]` folders, where `[architecture]` represents the target architecture, `[toolset]` represents the toolset version, and `[library]` represents the library.
 
 :::moniker-end
 
