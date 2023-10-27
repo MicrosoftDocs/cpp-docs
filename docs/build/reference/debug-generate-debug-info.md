@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /DEBUG (Generate debug info)"
 title: "/DEBUG (Generate Debug Info)"
-ms.date: 12/05/2022
+ms.date: 10/26/2023
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateDebugInformation", "/debug"]
 helpviewer_keywords: ["DEBUG linker option", "/DEBUG linker option", "-DEBUG linker option", "PDB files", "debugging [C++], debug information files", "generate debug info linker option", "pdb files, generating debug info", ".pdb files, generating debug info", "debugging [C++], linker option", "program databases [C++]"]
 ms.assetid: 1af389ae-3f8b-4d76-a087-1cdf861e9103
@@ -20,7 +20,7 @@ The **`/DEBUG`** option puts the debugging information from linked object and li
 
 An executable (an EXE or DLL file) created for debugging contains the name and path of the corresponding PDB. The debugger reads the embedded name and uses the PDB when you debug the program. The linker uses the base name of the program and the extension *`.pdb`* to name the program database, and embeds the path where it was created. To override this default, set the [`/PDB`](pdb-use-program-database.md) option and specify a different file name.
 
-The **`/DEBUG:FASTLINK`** option is available in Visual Studio 2017 and later. This option generates a limited PDB that indexes into the debug information in the object files and libraries used to build the executable instead of making a full copy. You can only use this limited PDB to debug from the computer where the binary and its libraries were built. If you deploy the binary elsewhere, you may debug it remotely from the build computer, but not directly on the test computer. In Visual Studio 2017, this option can sometimes greatly improve link times compared with **`/DEBUG:FULL`**. In Visual Studio 2019 and later, **`/DEBUG:FULL`** is faster than in earlier versions. Now, **`/DEBUG:FASTLINK`** isn't always faster than **`/DEBUG:FULL`**, and it's rarely more than twice as fast.
+The **`/DEBUG:FASTLINK`** option is available in Visual Studio 2017 and later. This option generates a limited PDB that indexes into the debug information in the object files and libraries used to build the executable instead of making a full copy. You can only use this limited PDB to debug from the computer where the binary and its libraries were built. If you deploy the binary elsewhere, you may debug it remotely from the build computer, but not directly on the test computer. Despite its name, **`/DEBUG:FASTLINK`** is generally slower than **`/DEBUG:FULL`**, so this option is not recommended.
 
 A **`/DEBUG:FASTLINK`** PDB can be converted to a full PDB that you can deploy to a test machine for local debugging. In Visual Studio, use the **Property Pages** dialog as described below to create a full PDB for the project or solution. In a developer command prompt, you can use the `mspdbcmf.exe` tool to create a full PDB.
 
@@ -28,7 +28,7 @@ The **`/DEBUG:FULL`** option moves all private symbol information from individua
 
 The **`/DEBUG:NONE`** option doesn't generate a PDB.
 
-In Visual Studio 2015 and earlier versions, when you specify **`/DEBUG`** with no extra arguments, the linker defaults to **`/DEBUG:FULL`** for command line and makefile builds, for release builds in the Visual Studio IDE, and for both debug and release builds. Beginning in Visual Studio 2017, the build system in the IDE defaults to **`/DEBUG:FASTLINK`** when you specify the **`/DEBUG`** option for debug builds. Other defaults are unchanged to maintain backward compatibility.
+Specifying **`/DEBUG`** with no extra arguments is equivalent to specifying **`/DEBUG:FULL`**.
 
 The compiler's [`/Z7`](z7-zi-zi-debug-information-format.md) (C7 Compatible) option causes the compiler to leave the debugging information in the object (OBJ) files. You can also use the [`/Zi`](z7-zi-zi-debug-information-format.md) (Program Database) compiler option to store the debugging information in a PDB for the OBJ file. The linker looks for the object's PDB first in the absolute path written in the OBJ file, and then in the directory that contains the OBJ file. You can't specify an object's PDB file name or location to the linker.
 
