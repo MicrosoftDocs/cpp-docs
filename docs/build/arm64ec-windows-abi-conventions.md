@@ -50,7 +50,7 @@ Special helper routines like `__chkstk_arm64ec` use custom calling conventions a
 | `x15` | `mm7` (low 64 bits of x87 `R7` register) | volatile | volatile | volatile |
 | `x16` | High 16 bits of each of the x87 `R0`-`R3` registers | volatile(`xip0`) | volatile(`xip0`) | volatile |
 | `x17` | High 16 bits of each of the x87 `R4`-`R7` registers | volatile(`xip1`) | volatile(`xip1`) | volatile |
-| `x18` | N/A | fixed(TEB) | fixed(TEB) | N/A |
+| `x18` | GS.base | fixed(TEB) | fixed(TEB) | N/A |
 | `x19` | `r12` | non-volatile | non-volatile | non-volatile |
 | `x20` | `r13` | non-volatile | non-volatile | non-volatile |
 | `x21` | `r14` | non-volatile | non-volatile | non-volatile |
@@ -62,7 +62,7 @@ Special helper routines like `__chkstk_arm64ec` use custom calling conventions a
 | `x27` | `rbx` | non-volatile | non-volatile | non-volatile |
 | `x28` | N/A | disallowed | disallowed | N/A |
 | `fp` | `rbp` | non-volatile | non-volatile | non-volatile |
-| `lr` | `mm0` (low 64 bits of x87 `R0` register) | volatile | volatile | volatile |
+| `lr` | `mm0` (low 64 bits of x87 `R0` register) | both | both | both |
 | `sp` | `rsp` | non-volatile | non-volatile | non-volatile |
 | `pc` | `rip` | instruction pointer | instruction pointer | instruction pointer |
 | `PSTATE` subset: `N`/`Z`/`C`/`V`/`SS` <sup>1, 2</sup> | `RFLAGS` subset: `SF`/`ZF`/`CF`/`OF`/`TF` | volatile | volatile | volatile |
