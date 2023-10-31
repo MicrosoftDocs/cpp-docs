@@ -122,6 +122,8 @@ items:
           href: ../cpp/decltype-cpp.md
         - name: Attributes
           href: ../cpp/attributes.md
+        - name: alignas specifier
+          href: ../cpp/alignas-specifier.md
     - name: Built-in operators, precedence, and associativity
       items: 
         - name: Built-in operators, precedence, and associativity
