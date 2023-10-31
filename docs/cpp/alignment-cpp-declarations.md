@@ -1,8 +1,7 @@
 ---
 title: "Alignment"
 description: "How data alignment is specified in modern C++."
-ms.date: "12/11/2019"
-ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
+ms.date: 10/31/2023
 ---
 # Alignment
 
