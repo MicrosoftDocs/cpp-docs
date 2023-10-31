@@ -9,7 +9,7 @@ One of the low-level features of C++ is the ability to specify the precise align
 
 In most scenarios, you never have to be concerned with alignment because the default alignment is already optimal. In some cases, however, you can achieve significant performance improvements, or memory savings, by specifying a custom alignment for your data structures. Before Visual Studio 2015 you could use the Microsoft-specific keywords **`__alignof`** and **`__declspec(align)`** to specify an alignment greater than the default. Starting in Visual Studio 2015 you should use the C++11 standard keywords **`alignof`** and **`alignas`** for maximum code portability. The new keywords behave in the same way under the hood as the Microsoft-specific extensions. The documentation for those extensions also applies to the new keywords. For more information, see [`alignof` Operator](../cpp/alignof-operator.md), [`alignas` Specifier](../cpp/alignas-specifier.md) and [align](../cpp/align-cpp.md). The C++ standard doesn't specify packing behavior for alignment on boundaries smaller than the compiler default for the target platform, so you still need to use the Microsoft [`#pragma pack`](../preprocessor/pack.md) in that case.
 
-Use the [aligned_storage class](../standard-library/aligned-storage-class.md) for memory allocation of data structures with custom alignments. The [aligned_union class](../standard-library/aligned-union-class.md) is for specifying alignment for unions with non-trivial constructors or destructors.
+Use the [aligned_storage class](../standard-library/aligned-storage-class.md) for memory allocation of data structures with custom alignments. The [aligned_union class](../standard-library/aligned-union-class.md) is for specifying alignment for unions with nontrivial constructors or destructors.
 
 ## Alignment and memory addresses
 
@@ -57,8 +57,7 @@ Both declarations return `sizeof(struct x_)` as 12 bytes.
 The second declaration includes two padding elements:
 
 1. `char _pad0[3]` to align the `int b` member on a 4-byte boundary.
-
-1. `char _pad1[1]` to align the array elements of the structure `struct _x bar[3];` on a four-byte boundary.
+1. `char _pad1[1]` to align the array elements of the structure `struct _x bar[3];` on a 4-byte boundary.
 
 The padding aligns the elements of `bar[3]` in a way that allows natural access.
 
@@ -95,7 +94,7 @@ The **`alignas`** specifier is a portable, C++ standard way to specify custom al
 
 ## Example
 
-You can use **`alignas`** on a class, struct or union, or on individual members. When multiple **`alignas`** specifiers are encountered, the compiler will choose the strictest one, (the one with the largest value).
+You can use **`alignas`** on a class, struct or union, or on individual members. When multiple **`alignas`** specifiers are encountered, the compiler chooses the one with the largest value.
 
 ```cpp
 // alignas_alignof.cpp

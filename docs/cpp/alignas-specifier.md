@@ -21,7 +21,7 @@ alignas(pack...)
 
 You can use **`alignas`** specifier on a **`struct`**, **`class`**, **`union`**, or variable declaration.
 
-For `alignas(expression)`, the expression must be an integral constant expression that is `0` or a power of 2 (1, 2, 4, 8, 16, 32, 64...). All other expressions are ill-formed.
+For `alignas(expression)`, the expression must be an integral constant expression that is 0 or a power of 2 (1, 2, 4, 8, 16, 32, 64...). All other expressions are ill-formed.
 
 Prefer **`alignas`** over [`__declspec(align(#))`](align-cpp.md) for code portability.
 
@@ -36,10 +36,9 @@ struct alignas(8) S1
 static_assert(alignof(S1) == 8, "alignof(S1) should be 8");
 ```
 
-When multiple **`alignas`** are applied to the same declaration, the one with the largest value is used.\
-When the **`alignas`** value is `0`, **`alignas`** is ignored.\
+When multiple **`alignas`** are applied to the same declaration, the one with the largest value is used. When the **`alignas`** value is `0`, **`alignas`** is ignored.
 
-The following example shows how to use `alignas`:
+The following example shows how to use `alignas` with a user-defined type:
 
 ```cpp
 class alignas(4) alignas(16) C1 {};
@@ -61,7 +60,7 @@ static_assert(alignof(C1) == 16, "alignof(C1) should be 16");
 static_assert(alignof(U1) == alignof(U2), "alignof(U1) should be equivalent to alignof(U2)");
 ```
 
-Instead of using an integral constant for the alignment value, you can supply a type. The type's default alignment is used as the alignment value, as shown in the following example:
+You can supply a type as the alignment value. The type's default alignment is used as the alignment value, as shown in the following example:
 
 ```cpp
 struct alignas(double) S2
@@ -72,7 +71,7 @@ struct alignas(double) S2
 static_assert(alignof(S2) == alignof(double), "alignof(S2) should be equivalent to alignof(double)");
 ```
 
-A template parameter pack (`alignas ( pack... )`) can be used as the alignment value. Only the strictest alignment is used.
+A template parameter pack (`alignas ( pack... )`) can also be used as the alignment value. The largest alignment of all the elements in the pack is used.
 
 ```cpp
 template <typename... Ts>
@@ -87,7 +86,7 @@ static_assert(alignof(C2<short, int>) == 4, "alignof(C2<short, int>) should be 4
 static_assert(alignof(C2<int, float, double>) == 8, "alignof(C2<int, float, double>) should be 8");
 ```
 
-If multiple **`alignas`** are applied, the resulting alignment is the largest of all the **`alignas`** values, and can't be less than the natural alignment of the type it is applied to.
+If multiple **`alignas`** are applied, the resulting alignment is the largest of all the **`alignas`** values, and can't be less than the natural alignment of the type it's applied to.
 The declaration and definition of user-defined types must have the same alignment value.
 
 ```cpp
