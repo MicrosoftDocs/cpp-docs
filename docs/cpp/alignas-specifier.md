@@ -1,11 +1,11 @@
 ---
 description: "Learn more about: alignas specifier"
-title: "alignas specifier"
-ms.date: 10/31/2023
+title: "alignas (C++)"
+ms.date: 11/01/2023
 f1_keywords: ["alignas"]
 helpviewer_keywords: ["alignas [C++]", "__alignof keyword [C++]", "alignof [C++]", "types [C++], alignment requirements"]
 ---
-# `alignas` specifier
+# `alignas` (C++)
 
 The **`alignas`** specifier changes the alignment of a type or object in memory.
 
@@ -107,5 +107,5 @@ int main()
 [`#pragma pack`](../preprocessor/pack.md)\
 [Alignment](../cpp/alignment-cpp-declarations.md)\
 [`alignof`](alignof-operator.md)\
-[C2023](../error-messages/compiler-errors-1/compiler-error-c2023.md)\
-[C4359](../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md)
+[Compiler error C2023](../error-messages/compiler-errors-1/compiler-error-c2023.md)\
+[Compiler warning C4359](../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md)
