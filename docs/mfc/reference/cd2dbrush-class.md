@@ -34,7 +34,7 @@ class CD2DBrush : public CD2DResource;
 |[CD2DBrush::Detach](#detach)|Detaches resource interface from the object|
 |[CD2DBrush::Get](#get)|Returns ID2D1Brush interface|
 |[CD2DBrush::GetOpacity](#getopacity)|Gets the degree of opacity of this brush|
-|[CD2DBrush::GetTransform](#gettransform)|Gets the current transform of the render target|
+|[CD2DBrush::GetTransform](#gettransform)|Gets the current transform of the brush|
 |[CD2DBrush::IsValid](#isvalid)|Checks resource validity (Overrides [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
 |[CD2DBrush::SetOpacity](#setopacity)|Sets the degree of opacity of this brush|
 |[CD2DBrush::SetTransform](#settransform)|Applies the specified transform to the brush, replacing the existing transformation. All subsequent drawing operations occur in the transformed space|
@@ -82,7 +82,7 @@ void Attach(ID2D1Brush* pResource);
 
 ### Parameters
 
-*pResource*<br/>
+*pResource*\
 Existing resource interface. Cannot be NULL.
 
 ## <a name="cd2dbrush"></a> CD2DBrush::CD2DBrush
@@ -98,13 +98,13 @@ CD2DBrush(
 
 ### Parameters
 
-*pParentTarget*<br/>
+*pParentTarget*\
 A pointer to the render target.
 
-*pBrushProperties*<br/>
+*pBrushProperties*\
 A pointer to the opacity and transformation of a brush.
 
-*bAutoDestroy*<br/>
+*bAutoDestroy*\
 Indicates that the object will be destroyed by owner (pParentTarget).
 
 ## <a name="destroy"></a> CD2DBrush::Destroy
@@ -161,7 +161,7 @@ void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
 
 ### Parameters
 
-*transform*<br/>
+*transform*\
 When this returns, contains the current transform of the brush. This parameter is passed uninitialized.
 
 ## <a name="isvalid"></a> CD2DBrush::IsValid
@@ -214,7 +214,7 @@ void SetOpacity(FLOAT opacity);
 
 ### Parameters
 
-*opacity*<br/>
+*opacity*\
 A value between zero and 1 that indicates the opacity of the brush. This value is a constant multiplier that linearly scales the alpha value of all pixels filled by the brush. The opacity values are clamped in the range 0 to 1 before they are multiplied together.
 
 ## <a name="settransform"></a> CD2DBrush::SetTransform
@@ -227,7 +227,7 @@ void SetTransform(const D2D1_MATRIX_3X2_F* transform);
 
 ### Parameters
 
-*transform*<br/>
+*transform*\
 The transform to apply to the brush
 
 ## See also
