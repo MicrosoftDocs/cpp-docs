@@ -37,7 +37,7 @@ class CD2DBrush : public CD2DResource;
 |[CD2DBrush::GetTransform](#gettransform)|Gets the current transform of the render target|
 |[CD2DBrush::IsValid](#isvalid)|Checks resource validity (Overrides [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
 |[CD2DBrush::SetOpacity](#setopacity)|Sets the degree of opacity of this brush|
-|[CD2DBrush::SetTransform](#settransform)|Applies the specified transform to the render target, replacing the existing transformation. All subsequent drawing operations occur in the transformed space|
+|[CD2DBrush::SetTransform](#settransform)|Applies the specified transform to the brush, replacing the existing transformation. All subsequent drawing operations occur in the transformed space|
 
 ### Public Operators
 
