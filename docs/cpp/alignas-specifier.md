@@ -81,7 +81,6 @@ class alignas(Ts...) C2
 };
 
 static_assert(alignof(C2<>) == 1, "alignof(C2<>) should be 1");
-// Empty angle brackets can be omitted since C++17,: static_assert(alignof(C2) == 1, "alignof(C2) should be 1");
 static_assert(alignof(C2<short, int>) == 4, "alignof(C2<short, int>) should be 4");
 static_assert(alignof(C2<int, float, double>) == 8, "alignof(C2<int, float, double>) should be 8");
 ```
