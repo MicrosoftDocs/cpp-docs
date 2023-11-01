@@ -21,11 +21,11 @@ alignas(pack...)
 
 You can use **`alignas`** specifier on a **`struct`**, **`class`**, **`union`**, or variable declaration.
 
-For `alignas(expression)`, the expression must be an integral constant expression that is 0 or a power of 2 (1, 2, 4, 8, 16, 32, 64...). All other expressions are ill-formed.
+For `alignas(expression)`, the expression must be an integral constant expression that is 0 or a power of 2 (1, 2, 4, 8, 16, ...). All other expressions are ill-formed.
 
-Prefer **`alignas`** over [`__declspec(align(#))`](align-cpp.md) for code portability.
+Use **`alignas`** instead of [`__declspec(align(#))`](align-cpp.md) for code portability.
 
-A common use of `alignas` is to control the alignment of a user-defined type as shown in the following example:
+A common use of `alignas` is to control the alignment of a user-defined type, as shown in the following example:
 
 ```cpp
 struct alignas(8) S1
@@ -36,7 +36,7 @@ struct alignas(8) S1
 static_assert(alignof(S1) == 8, "alignof(S1) should be 8");
 ```
 
-When multiple **`alignas`** are applied to the same declaration, the one with the largest value is used. When the **`alignas`** value is `0`, **`alignas`** is ignored.
+When multiple **`alignas`** are applied to the same declaration, the one with the largest value is used. An **`alignas`** value of `0` is ignored.
 
 The following example shows how to use `alignas` with a user-defined type:
 
@@ -71,7 +71,7 @@ struct alignas(double) S2
 static_assert(alignof(S2) == alignof(double), "alignof(S2) should be equivalent to alignof(double)");
 ```
 
-A template parameter pack (`alignas ( pack... )`) can also be used as the alignment value. The largest alignment of all the elements in the pack is used.
+A template parameter pack (`alignas (pack...)`) can be used for the alignment value. The largest alignment value of all the elements in the pack is used.
 
 ```cpp
 template <typename... Ts>
@@ -86,6 +86,7 @@ static_assert(alignof(C2<int, float, double>) == 8, "alignof(C2<int, float, doub
 ```
 
 If multiple **`alignas`** are applied, the resulting alignment is the largest of all the **`alignas`** values, and can't be less than the natural alignment of the type it's applied to.
+
 The declaration and definition of user-defined types must have the same alignment value.
 
 ```cpp
