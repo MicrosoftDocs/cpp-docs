@@ -153,7 +153,7 @@ A value between zero and 1 that indicates the opacity of the brush. This value i
 
 ## <a name="gettransform"></a> CD2DBrush::GetTransform
 
-Gets the current transform of the render target
+Gets the current transform of the brush
 
 ```cpp
 void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
@@ -162,7 +162,7 @@ void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
 ### Parameters
 
 *transform*<br/>
-When this returns, contains the current transform of the render target. This parameter is passed uninitialized.
+When this returns, contains the current transform of the brush. This parameter is passed uninitialized.
 
 ## <a name="isvalid"></a> CD2DBrush::IsValid
 
@@ -219,7 +219,7 @@ A value between zero and 1 that indicates the opacity of the brush. This value i
 
 ## <a name="settransform"></a> CD2DBrush::SetTransform
 
-Applies the specified transform to the render target, replacing the existing transformation. All subsequent drawing operations occur in the transformed space.
+Applies the specified transform to the brush, replacing the existing transformation. All subsequent drawing operations occur in the transformed space.
 
 ```cpp
 void SetTransform(const D2D1_MATRIX_3X2_F* transform);
@@ -228,7 +228,7 @@ void SetTransform(const D2D1_MATRIX_3X2_F* transform);
 ### Parameters
 
 *transform*<br/>
-The transform to apply to the render target
+The transform to apply to the brush
 
 ## See also
 
