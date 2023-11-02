@@ -14,7 +14,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 
 :::row:::
     :::column:::
-        [`alignas`](align-cpp.md)\
+        [`alignas`](alignas-specifier.md)\
         [`alignof`](alignof-operator.md)\
         [`and`](logical-and-operator-amp-amp.md) <sup>b</sup>\
         [`and_eq`](assignment-operators.md) <sup>b</sup>\

@@ -102,6 +102,8 @@ items:
           href: ../cpp/declarations-and-definitions-cpp.md
         - name: Storage classes
           href: ../cpp/storage-classes-cpp.md
+        - name: alignas
+          href: ../cpp/alignas-specifier.md
         - name: auto
           href: ../cpp/auto-cpp.md
         - name: const
