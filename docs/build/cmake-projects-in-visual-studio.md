@@ -3,7 +3,6 @@ title: "CMake projects in Visual Studio"
 description: "How to create and build C++ projects using CMake in Visual Studio."
 ms.date: 02/14/2022
 helpviewer_keywords: ["CMake in Visual C++"]
-ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
 # CMake projects in Visual Studio
 
@@ -221,7 +220,10 @@ In Visual Studio 2019 version 16.9 and later, Visual Studio automatically config
 
 ## Vcpkg integration
 
-CMake projects opened in Visual Studio integrate with vcpkg, a cross-platform C/C++ dependency manager. Before using vcpkg with Visual Studio, you must run `vcpkg integrate install`. For instructions and more information on vcpkg, see the [vcpkg documentation](https://vcpkg.io/).
+CMake projects opened in Visual Studio integrate with vcpkg, a cross-platform C/C++ dependency manager. Before using vcpkg with Visual Studio, you must run `vcpkg integrate install`. For instructions and more information about vcpkg, see:
+
+- [Install and use packages with CMake in Visual Studio](/vcpkg/get_started/get-started-vs)
+- [vcpkg in CMake projects](/vcpkg/users/buildsystems/cmake-integration)
 
 If *`CMakeSettings.json`* is your active configuration file, Visual Studio automatically passes the vcpkg toolchain file (`vcpkg.cmake`) to CMake. This behavior is disabled automatically when you specify any other toolchain in your CMake Settings configuration.
 
@@ -399,4 +401,6 @@ In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://c
 [`CMakeSettings.json` schema reference](cmakesettings-reference.md)\
 [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)\
 [Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)\
-[CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
+[CMake predefined configuration reference](cmake-predefined-configuration-reference.md)\
+[vcpkg in CMake projects](/vcpkg/users/buildsystems/cmake-integration)\
+[Install and use packages with CMake in Visual Studio](/vcpkg/get_started/get-started-vs)

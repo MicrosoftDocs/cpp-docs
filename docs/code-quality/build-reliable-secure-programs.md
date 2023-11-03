@@ -453,4 +453,4 @@ Produce an SBOM (software bill of materials) with your product listing all depen
 Microsoft solutions include the following guidance and products:
 - [Microsoft Supply Chain Platform | Microsoft](https://www.microsoft.com/microsoft-cloud/solutions/microsoft-supply-chain-platform)
 - [Secure your software supply chain | GitHub Security](https://github.com/features/security/software-supply-chain)
-- [vcpkg | vcpkg.io](https://vcpkg.io/en/) - vcpkg private registries allow redirection of OSS acquisition to Enterprise-controlled resources for acquiring sources for a dependency, to minimize risk of upstream or over-the-wire attacks.
+- [vcpkg](/vcpkg/) - vcpkg private registries allow redirection of OSS acquisition to Enterprise-controlled resources for acquiring sources for a dependency, to minimize risk of upstream or over-the-wire attacks.

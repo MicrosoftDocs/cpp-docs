@@ -247,7 +247,7 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 
 ### Open-source library support
 
-**Vcpkg** is an open-source command-line tool that greatly simplifies the process of acquiring and building open-source C++ static libs and DLLS in Visual Studio. For more information, see [vcpkg](https://vcpkg.io/).
+**Vcpkg** is an open-source command-line tool that greatly simplifies the process of acquiring and building open-source C++ static libs and DLLS in Visual Studio. For more information, see [vcpkg](/vcpkg/).
 
 ### CPPRest SDK 2.9.0
 

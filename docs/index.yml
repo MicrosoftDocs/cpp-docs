@@ -118,7 +118,7 @@ conceptualContent:
         - text: Use C++ on Linux
           url: https://code.visualstudio.com/docs/cpp/config-linux
           itemType: tutorial
-        - text: Use C++ on MacOS
+        - text: Use C++ on macOS
           url: https://code.visualstudio.com/docs/cpp/config-clang-mac
           itemType: tutorial
 

@@ -94,7 +94,7 @@ A static library that was built using a version of Visual Studio before Visual S
 
 ## Third-party library issues and vcpkg
 
-If you see this error when you're trying to configure a third-party library as part of your build, consider using [vcpkg](https://vcpkg.io/). **vcpkg** is a C++ package manager that uses your existing Visual Studio tools to install and build the library. **vcpkg** supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports). It sets all the configuration properties and dependencies required for successful builds as part of your project.
+If you see this error when you're trying to configure a third-party library as part of your build, consider using [vcpkg](/vcpkg/). **vcpkg** is a C++ package manager that uses your existing Visual Studio tools to install and build the library. **vcpkg** supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports). It sets all the configuration properties and dependencies required for successful builds as part of your project.
 
 ## Diagnosis tools
 
