@@ -239,7 +239,7 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 - `std::inplace_merge` now skips over elements that are already in position.
 - Constructing `std::random_device` no longer constructs and then destroys a `std::string`.
 - `std::equal` and `std::partition` had a jump-threading optimization pass that saves an iterator comparison.
-- When `std::reverse` is passed pointers to trivially copyable `T`, it now dispatchs to a handwritten vectorized implementation.
+- When `std::reverse` is passed pointers to trivially copyable `T`, it now dispatches to a handwritten vectorized implementation.
 - `std::fill`, `std::equal`, and `std::lexicographical_compare` were taught how to dispatch to `memset` and `memcmp` for `std::byte` and `gsl::byte` (and other char-like enums and enum classes). Since `std::copy` dispatches using `is_trivially_copyable`, it didn't need any changes.
 - The standard library no longer contains empty-braces destructors whose only behavior was to make types non-trivially-destructible.
 
