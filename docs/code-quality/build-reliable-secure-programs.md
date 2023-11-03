@@ -36,7 +36,7 @@ To properly apply threat modeling and avoid underuse/overuse, we have found that
 *Development approach*
 
 First, understand the team's development approach. For teams with agile development workflows that push dozens of changes to production daily, it's not practical or reasonable to require a threat model update for every functional change. Instead, from the start when writing a feature's functional requirements, consider including a security requirements questionnaire. The questionnaire should focus on specific questions about the feature to determine what future aspects of your SDL apply. For example:
-- Does the feature make a major change in design of how we provide customer isolation in a multi-tenant environment? If so, consider performing a full threat model.
+- Does the feature make a major change in design of how we provide customer isolation in a multitenant environment? If so, consider performing a full threat model.
 - Does a new feature allow file uploads? If so, perhaps what's more appropriate is a web application security assessment.
 - Is this change primarily just a functional UI change? If so, perhaps nothing is needed beyond your traditional automated tooling.
 
@@ -79,7 +79,7 @@ Tests should be reliable, consistent, and isolated. These tests should cover as 
 - The next place they should run is as part of the pull request commit/merge process.
 - The last place to run tests is as part of a Continuous Integration and Continuous Deployment (CI/CD) pipeline, or on your release candidate builds.
 
-The scope of the tests should increase at each step, with the last step providing full coverage for anything the other steps may miss.
+The scope of the tests should increase at each step, with the last step providing full coverage for anything the other steps might miss.
 
 **Continuous use and maintenance**
 
@@ -125,9 +125,9 @@ Notes:
 
 - `/analyze` enables static analysis of C++ code at compile time to identify critical security and reliability code vulnerabilities. It should be enabled throughout a C++ program's entire development timeline. Start by enabling at least the "Microsoft Native Recommended" by default as a minimum baseline. Then consult the documentation for how to specify more rules, especially the C++ Core Guidelines rules, as required by your engineering policies. The source code Static Analysis capability is available in both the Visual C++ IDE and in the command-line Build Tools.
 - `/W4` and `/WX` should be enabled wherever possible, to ensure you compile your code cleanly at high warning levels (`W4`) and treat warnings as errors that must be fixed (`WX`). These options enable finding uninitialized data errors that other static analysis tools can't check, because the errors only become visible after the compiler back-end performs interprocedural analysis and inlining.
-- BinSkim binary analysis ensures that projects enable a broad range of security features. BinSkim generates PDBs and other outputs that make it easier to verify chain-of-custody and to respond efficiently to security issues. Microsoft recommends running the BinSkim tool to analyze all executable binaries (`.sys`, `.dll` or `.exe`) produced for or consumed by your programs.  The BinSkim User Guide includes a list of supported security standards. Microsoft recommends that you fix all issues reported as "errors" by the BinSkim tool. Issues reported as "warnings" should be evaluated selectively, because resolving them can have performance implications or may not be necessary.
+- BinSkim binary analysis ensures that projects enable a broad range of security features. BinSkim generates PDBs and other outputs that make it easier to verify chain-of-custody and to respond efficiently to security issues. Microsoft recommends running the BinSkim tool to analyze all executable binaries (`.sys`, `.dll` or `.exe`) produced for or consumed by your programs.  The BinSkim User Guide includes a list of supported security standards. Microsoft recommends that you fix all issues reported as "errors" by the BinSkim tool. Issues reported as "warnings" should be evaluated selectively, because resolving them can have performance implications or might not be necessary.
 
-**In Azure and GitHub CI/CD** Microsoft recommends always enabling source code and binary static analysis in release CI/CD scenarios. Run source analysis immediately on the local developer's machine, or at least for every commit or pull request, to catch source bugs as early as possible and minimize overall costs. Binary level bugs tend to be introduced more slowly, so it may be sufficient to run binary analysis in less frequent prerelease CI/CD scenarios (such as nightly or weekly builds).
+**In Azure and GitHub CI/CD** Microsoft recommends always enabling source code and binary static analysis in release CI/CD scenarios. Run source analysis immediately on the local developer's machine, or at least for every commit or pull request, to catch source bugs as early as possible and minimize overall costs. Binary level bugs tend to be introduced more slowly, so it might be sufficient to run binary analysis in less frequent prerelease CI/CD scenarios (such as nightly or weekly builds).
 
 ## 2.4 Review for hardcoded secrets
 
@@ -154,13 +154,13 @@ Secrets hardcoded in source code (as plain text or encrypted blob) are a securit
 
 While not directly related to hardcoded secrets, also remember securing secrets for your test, development, and production:
 
-- Rotate your secrets periodically and whenever they may have been exposed. Having a demonstrated ability to rotate/redeploy secrets is evidence of a secure system. More notably, the absence of this capability is even stronger evidence of an inevitable vulnerability.
+- Rotate your secrets periodically and whenever they might have been exposed. Having a demonstrated ability to rotate/redeploy secrets is evidence of a secure system. More notably, the absence of this capability is even stronger evidence of an inevitable vulnerability.
 - Don't give in to the common developer rationale that "my test credentials don't create risk." In practice, they nearly always do.
 - Consider moving away from secrets (for example, passwords, bearer keys) entirely in preference of RBAC/identity-driven solutions as a good engineering solution that can sidestep secret mismanagement entirely.
 
 **Detection**
 
-Legacy components of your product may contain hidden hardcoded secrets in their source code. Sometimes secrets from developers' desktop machines can creep into remote branch and merge into the release branch, leaking secrets unintentionally. To discover secrets that might be hiding in your source code, you can use tools that can scan your code for hardcoded secrets:
+Legacy components of your product might contain hidden hardcoded secrets in their source code. Sometimes secrets from developers' desktop machines can creep into remote branch and merge into the release branch, leaking secrets unintentionally. To discover secrets that might be hiding in your source code, you can use tools that can scan your code for hardcoded secrets:
 
 - [Microsoft sarif-pattern-matcher tool](https://github.com/microsoft/sarif-pattern-matcher)
 
@@ -174,11 +174,11 @@ When credentials are found in your source code, the immediate urgent need is to 
 
 To safeguard cryptographic keys and other secrets used by cloud apps and services, use [Azure Key Vault](https://azure.microsoft.com/products/key-vault) with an appropriate access policy.
 
-If an exposure compromises certain customer data/PII, it may require other compliance/reporting requirements.
+If an exposure compromises certain customer data/PII, it might require other compliance/reporting requirements.
 
-Remove the now-invalidated secrets from your source code, and replace them with alternative methods that don't expose the secrets directly in your source code. Look for opportunities to eliminate secrets where possible by using tools like Azure AD. You can update your authentication methods to take advantage of managed identities via Azure Active Directory (AAD). Only use approved stores to store and manage secrets such as Azure Key Vault (AKV). For more information, see:
+Remove the now-invalidated secrets from your source code, and replace them with alternative methods that don't expose the secrets directly in your source code. Look for opportunities to eliminate secrets where possible by using tools like Azure AD. You can update your authentication methods to take advantage of managed identities via Azure Active Directory). Only use approved stores to store and manage secrets such as Azure Key Vault (AKV). For more information, see:
 
-- [Azure AD: Implementing autorotation using Azure Active Directory (AAD)](https://eng.ms/docs/products/onecert-certificates-key-vault-and-dsms/key-vault-dsms/autorotationandecr/scenarios/aad)
+- [Azure AD: Implementing autorotation using Azure Active Directory](https://eng.ms/docs/products/onecert-certificates-key-vault-and-dsms/key-vault-dsms/autorotationandecr/scenarios/aad)
 
 **Azure DevOps (AzDO)**
 
@@ -207,7 +207,7 @@ GitHub provides known patterns of secrets for partners and users that can be con
 
 - [Credential Scanning | Microsoft Code With Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/credential_scanning/).
 - [detect-secrets: Credential scanning tool | GitHub](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets/) - an aptly named module for detecting secrets within a code base.
-- [Running detect-secrets in Azure DevOps pipelines](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets-ado/).
+- [Running detect-secrets in Azure Pipelines](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets-ado/).
 - [Git-secrets | GitHub awslabs](https://github.com/awslabs/git-secrets) - prevents you from committing passwords and other sensitive information to a git repository.
 - [Secrets Management | Microsoft Code with Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/continuous-delivery/secrets-management/) - provides general guidelines on how secrets should be managed.
 
@@ -230,7 +230,7 @@ Developer settings should prefer to enable as much static analysis as possible, 
 
 **Stay current: Always use up-to-date compilers and tools**
 
-Compile all code with current toolsets to benefit from up-to-date language support, static analysis, code generation and security controls. Because compilers impact every generated component, the potential for regression on tool update is relatively high. Using outdated compilers creates a particular risk for corrective action while responding to a security incident, because teams may not have enough time to upgrade compilers. Microsoft recommends that teams develop the facility to regularly refresh and test compiler updates.
+Compile all code with current toolsets to benefit from up-to-date language support, static analysis, code generation and security controls. Because compilers impact every generated component, the potential for regression on tool update is relatively high. Using outdated compilers creates a particular risk for corrective action while responding to a security incident, because teams might not have enough time to upgrade compilers. Microsoft recommends that teams develop the facility to regularly refresh and test compiler updates.
 
 **Use secure development methods, language versions, frameworks/APIs**
 
@@ -279,7 +279,7 @@ Compiler and linker settings should opt into code generation features that detec
 
 Compiler settings should opt into sensitive information discovery prevention. In recent years, researchers have uncovered unintended information leakage that originates with hardware features such as speculative execution.
 
-At the software level, confidential data may be transmitted to attackers if unexpectedly leaked. Failure to zero-initialize buffers and other buffer misuse may leak private confidential data to attackers that call trusted API. This class of problem best handled by enabling extra static analysis and using secure resource containers as described previously.
+At the software level, confidential data might be transmitted to attackers if unexpectedly leaked. Failure to zero-initialize buffers and other buffer misuse might leak private confidential data to attackers that call trusted API. This class of problem best handled by enabling extra static analysis and using secure resource containers as described previously.
 
 - [`/Qspectre` - Mitigate speculative execution side-channel attacks](https://aka.ms/SpectreMitigations) - Inserts barrier instructions that help prevent the disclosure of sensitive data produced by speculative execution. These mitigations should be enabled for code that stores sensitive data in memory and operates across a trust boundary. Microsoft always recommends measuring performance impact against appropriate benchmarks when enabling Spectre-mitigations due to the possibility of introducing runtime checks in performance-critical blocks or loops. These code paths can disable mitigations via the [`spectre(nomitigation)`](../cpp/spectre.md) `declspec` modifier. Projects that enable `/Qspectre`` should also link to libraries that are also compiled with these mitigations, including the Microsoft runtime libraries.
 
@@ -295,11 +295,11 @@ These types of requirement-based tests are useful for validating the assumptions
 
 **Automation and regression**
 
-Run these tests regularly, and compare the results to previous runs to catch breaking changes or performance regressions. Also, running these tests on many different machines and installation setups can help cover any issues that may arise from different architectures or setup changes.
+Run these tests regularly, and compare the results to previous runs to catch breaking changes or performance regressions. Also, running these tests on many different machines and installation setups can help cover any issues that might arise from different architectures or setup changes.
 
 **Crash dumps**
 
-These tests help find issues with reliability, being able to test many different scenarios that may run into crashes, hangs, deadlocks, and so on. By collecting crash dumps as part of test failures, you can import the dumps directly into Visual Studio to further investigate what parts of the code are hitting these issues. If you run functional tests from within Visual Studio, you can easily replicate and debug failures by seeing exactly where inside the black box the test fails, and you can test fixes quickly.
+These tests help find issues with reliability, being able to test many different scenarios that might run into crashes, hangs, deadlocks, and so on. By collecting crash dumps as part of test failures, you can import the dumps directly into Visual Studio to further investigate what parts of the code are hitting these issues. If you run functional tests from within Visual Studio, you can easily replicate and debug failures by seeing exactly where inside the black box the test fails, and you can test fixes quickly.
 
 To get started with debugging tests, see [Debug unit tests with Test Explorer - Visual Studio (Windows)](/visualstudio/test/debug-unit-tests-with-test-explorer)
 
@@ -358,7 +358,7 @@ Since they test for bug regressions, these tests should be quick and easy to run
 
 **Visual Studio**
 
-Visual Studio lets you easily add tests to the suite while making the changes to fix the bug, and quickly run the tests and code coverage to ensure all new cases get considered. Referencing the bug ID from your issue tracking system in your code where you write the test is a good way to connect regression tests to the corresponding issues. Prefer to use Azure DevOps boards and test plans together with Visual Studio:
+Visual Studio lets you easily add tests to the suite while making the changes to fix the bug, and quickly run the tests and code coverage to ensure all new cases get considered. Referencing the bug ID from your issue tracking system in your code where you write the test is a good way to connect regression tests to the corresponding issues. Prefer to use Azure Boards and test plans together with Visual Studio:
 - to associate tests, test cases, and issues; and
 - to track of all aspects of an issue and its corresponding tests.
 
@@ -375,7 +375,7 @@ Fuzzing (also known as fuzz testing) is an automated software testing technique 
 
 **Guidance**
 
-Use fuzzing on all software that may process untrusted inputs that an attacker could control. If you're building a new application and its associated test suite, include fuzzing for key modules as early as possible. Running fuzzing for the first time on a piece of software nearly always uncovers actual vulnerabilities that were previously unknown. Once you start fuzzing, never stop.
+Use fuzzing on all software that might process untrusted inputs that an attacker could control. If you're building a new application and its associated test suite, include fuzzing for key modules as early as possible. Running fuzzing for the first time on a piece of software nearly always uncovers actual vulnerabilities that were previously unknown. Once you start fuzzing, never stop.
 
 **Relation to other sections**
 
@@ -390,7 +390,7 @@ When using both sanitizers such as [Address Sanitizer (ASan)](../sanitizers/asan
 
 - Fuzzing finds vulnerabilities often missed by static program analysis, exhaustive feature testing and manual code inspection.
 - Fuzzing is an effective way to find security and reliability bugs in software, so much so that the [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/) requires fuzzing at every untrusted interface of every product (see also Threat Modeling).
-- Always use fuzzing for software that may process untrusted inputs.
+- Always use fuzzing for software that might process untrusted inputs.
 - Fuzzing is effective for standalone applications with large data parsers.
 
 **Azure and GitHub CI/CD**
@@ -453,4 +453,4 @@ Produce an SBOM (software bill of materials) with your product listing all depen
 Microsoft solutions include the following guidance and products:
 - [Microsoft Supply Chain Platform | Microsoft](https://www.microsoft.com/microsoft-cloud/solutions/microsoft-supply-chain-platform)
 - [Secure your software supply chain | GitHub Security](https://github.com/features/security/software-supply-chain)
-- [vcpkg | vcpkg.io](https://vcpkg.io/en/) - vcpkg private registries allow redirection of OSS acquisition to Enterprise-controlled resources for acquiring sources for a dependency, to minimize risk of upstream or over-the-wire attacks.
+- [vcpkg](/vcpkg/) - vcpkg private registries allow redirection of OSS acquisition to Enterprise-controlled resources for acquiring sources for a dependency, to minimize risk of upstream or over-the-wire attacks.

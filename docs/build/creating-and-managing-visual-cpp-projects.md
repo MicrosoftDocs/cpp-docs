@@ -53,7 +53,13 @@ Add source code files, icons, or any other items to your project by right-clicki
 
 ## Add third-party libraries to a project
 
-Over 900 C++ open source libraries are available via the [vcpkg](https://vcpkg.io/) package manager. Run the Visual Studio integration step to set up the paths to that library when you reference it from any Visual Studio project.
+Over 900 C++ open source libraries are available via the [vcpkg](/vcpkg/) package manager. Run the Visual Studio integration step to set up the paths to that library when you reference it from any Visual Studio project.
+
+For more information about consuming a library that you have downloaded by using the **vcpkg** package manager, see:
+- [vcpkg in CMake projects](/vcpkg/users/buildsystems/cmake-integration)
+- [Install and use packages with CMake in Visual Studio](/vcpkg/get_started/get-started-vs)
+- [vcpkg in MSBuild projects](/vcpkg/users/buildsystems/msbuild-integration)
+- [Tutorial: Install and use packages with MSBuild in Visual Studio](/vcpkg/get_started/get-started-msbuild)
 
 They're also commercial third-party libraries that you can install. Follow their installation instructions.
 

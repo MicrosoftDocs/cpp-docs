@@ -118,7 +118,7 @@ conceptualContent:
         - text: Use C++ on Linux
           url: https://code.visualstudio.com/docs/cpp/config-linux
           itemType: tutorial
-        - text: Use C++ on MacOS
+        - text: Use C++ on macOS
           url: https://code.visualstudio.com/docs/cpp/config-clang-mac
           itemType: tutorial
 
@@ -207,5 +207,7 @@ additionalContent:
               url: cloud/cloud-and-web-programming-in-visual-cpp.md
             - text: Universal Windows Platform libraries
               url: cppcx/namespaces-reference-c-cx.md
+            - text: vcpkg package manager
+              url: /vcpkg/
   # footer (optional)
   footer: "[Microsoft Learn Q&A](/answers/topics/c%2B%2B.html) - [C++ Team Blog](https://devblogs.microsoft.com/cppblog/) - [Twitter](https://twitter.com/visualc) - [Developer Community](https://aka.ms/vsfeedback/browsecpp) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++) - [How to report an issue](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [Suggest a feature](https://aka.ms/feedback/suggest?space=62) - Contribute to C++ docs: Read our [contributor guide](/contribute/)."

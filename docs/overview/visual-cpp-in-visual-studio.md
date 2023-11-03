@@ -200,7 +200,7 @@ Programming for the common language runtime (CLR).
 
 ## Third-party open source C++ libraries in Visual Studio
 
-The cross-platform **vcpkg** command-line tool greatly simplifies the discovery and installation of over 900 C++ open source libraries. For more information, see [vcpkg](https://vcpkg.io/).
+The cross-platform **vcpkg** command-line tool greatly simplifies the discovery and installation of over 900 C++ open source libraries. For more information, see [vcpkg](/vcpkg/).
 
 ## Visual Studio C++ feedback and community
 
