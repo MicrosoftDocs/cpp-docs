@@ -207,4 +207,5 @@ Learn more about configuring and debugging CMake projects in Visual Studio:
 > [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)<br/><br/>
 > [Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)<br/><br/>
 > [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
->
+> [vcpkg in CMake projects](/vcpkg/users/buildsystems/cmake-integration)
+> [Install and use packages with CMake in Visual Studio](/vcpkg/get_started/get-started-vs)

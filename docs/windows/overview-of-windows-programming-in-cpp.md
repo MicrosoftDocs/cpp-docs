@@ -68,7 +68,7 @@ A Windows *service* is a program that can run in the background with little or n
 
 Visual Studio includes the C Runtime Library (CRT), the C++ Standard Library, and other Microsoft-specific libraries. Most of the include folders that contain header files for these libraries are located in the Visual Studio installation directory under the \VC\ folder. The Windows and CRT header files are found in the Windows SDK installation folder.
 
-The vcpkg package manager lets you conveniently install hundreds of third-party open-source libraries for Windows. For more information, see [vcpkg](https://vcpkg.io/).
+The vcpkg package manager lets you conveniently install hundreds of third-party open-source libraries for Windows. For more information, see [vcpkg](/vcpkg/).
 
 The Microsoft libraries include:
 
@@ -84,7 +84,7 @@ Many Windows programming scenarios also require the Windows SDK, which includes 
 
 **Program Files (x86)\Windows Kits** is the default location for all versions of the Windows SDK that you've installed.
 
-Other platforms such as Xbox and Azure have their own SDKs that you may have to install. For more information, see the DirectX Developer Center and the Azure Developer Center.
+Other platforms such as Xbox and Azure have their own SDKs that you might have to install. For more information, see the DirectX Developer Center and the Azure Developer Center.
 
 ## Development Tools
 
@@ -99,7 +99,7 @@ Visual Studio includes a powerful debugger for native code, static analysis tool
 | [Windows Desktop Wizard](windows-desktop-wizard.md) | Use the wizard to create new Windows projects. |
 | [Active Template Library (ATL)](../atl/atl-com-desktop-components.md) | Use the ATL library to create COM components in C++. |
 | [Microsoft Foundation Classes (MFC)](../mfc/mfc-desktop-applications.md) | Use MFC to create large or small Windows applications with dialogs and controls |
-| [ATL and MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md) | Use classes such as CString that are shared in ATL and MFC. |
+| [ATL and MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md) | Use classes such as `CString` that are shared in ATL and MFC. |
 | [Data Access](../data/data-access-in-cpp.md) | OLE DB and ODBC |
 | [Text and Strings](../text/text-and-strings-in-visual-cpp.md) | Various string types on Windows. |
 | [Resources for Creating a Game Using DirectX](resources-for-creating-a-game-using-directx.md) |
@@ -116,4 +116,4 @@ Visual Studio includes a powerful debugger for native code, static analysis tool
 [.NET Development with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|Create wrappers for native C++ libraries that enable it to communication with .NET applications and components.|
 |[Component Extensions for .NET and UWP](../extensions/component-extensions-for-runtime-platforms.md)|Reference for syntax elements shared by C++/CX and C++/CLI.|
 |[Universal Windows Apps (C++)](../cppcx/universal-windows-apps-cpp.md)|Write UWP applications using C++/CX or Windows Runtime Template Library (WRL).|
-|[C++ Attributes for COM and .NET](attributes/cpp-attributes-com-net.md)|Non-standard attributes for Windows-only programming using .NET or COM.|
+|[C++ Attributes for COM and .NET](attributes/cpp-attributes-com-net.md)|Nonstandard attributes for Windows-only programming using .NET or COM.|
