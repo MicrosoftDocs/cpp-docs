@@ -36,7 +36,7 @@ int main() {
 ```
 
 For more information, see [Usual Arithmetic Conversions](../../c-language/usual-arithmetic-conversions.md).\
-For more information about setting the warning level in Visual Studio, see[To set the compiler options in the Visual Studio development environment](../build/reference/compiler-option-warnings-level#to-set-the-compiler-options-in-the-visual-studio-development-environment.md)
+For more information about setting the warning level in Visual Studio, see [To set the compiler options in the Visual Studio development environment](../../build/reference/compiler-option-warning-level.md#to-set-the-compiler-options-in-the-visual-studio-development-environment)
 
 ```cpp
 // C4244_level3.cpp
@@ -50,7 +50,7 @@ int main() {
 }
 ```
 
-Warning C4244 can occur when building code for 64-bit targets that does not generate the warning when building for 32-bit targets. For example, a pointer is a 32-bit quantity on 32-bit platforms, but a 64-bit quantity on 64-bit platforms.
+Warning C4244 can occur when building code for 64-bit targets that does not generate the warning when building for 32-bit targets. For example, pointer arithmetic results in a 32-bit quantity on 32-bit platforms, but a 64-bit quantity on 64-bit platforms.
 
 The following sample generates C4244 when compiled for 64-bit targets:
 
