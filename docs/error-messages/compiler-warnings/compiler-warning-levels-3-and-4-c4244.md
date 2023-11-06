@@ -1,15 +1,15 @@
 ---
 description: "Learn more about: Compiler Warning (levels 3 and 4) C4244"
 title: "Compiler Warning (levels 3 and 4) C4244"
-ms.date: "11/04/2016"
+ms.date: "11/6/2023"
 ---
 # Compiler Warning (levels 3 and 4) C4244
 
 'conversion' conversion from 'type1' to 'type2', possible loss of data
 
 An integer type is converted to a smaller integer type.
-- This is a level-4 warning if *type1* is a signed or unsigned **`int`** and *type2* is a smaller--such as a signed or unsigned **`short`**.
-- It is a level 3 warning if a value of type [__int64](../../cpp/int8-int16-int32-int64.md) or **`unsigned __int64`** is assigned to a signed or unsigned **`int`**. A possible loss of data may have occurred due to a narrowing conversion, which might lead to unexpected results.
+- This is a level-4 warning if *type1* is a signed or unsigned **`int`** and *type2* is a smaller, such as a signed or unsigned **`short`**.
+- It is a level 3 warning if a value of type [`__int64`](../../cpp/int8-int16-int32-int64.md) or **`unsigned __int64`** is assigned to a signed or unsigned **`int`**. A possible loss of data may have occurred due to a narrowing conversion, which might lead to unexpected results.
 
 To fix this warning, either change your program to use compatible types, or add logic that ensures that the range of possible values is compatible with the types you are using. If the conversion is intended, use an explicit cast to silence the warning.
 
@@ -27,7 +27,7 @@ int main() {
    unsigned int uint1 = 2;
 
    short short1 = int1;   // C4244
-   short short2 = (short)int1;   // OK
+   short short2 = (short)int1;   // warning silenced - explicit cast
 
    short short3 = uint1;   // C4244
    unsigned short ushort = uint1; // C4244
@@ -36,7 +36,7 @@ int main() {
 ```
 
 For more information, see [Usual Arithmetic Conversions](../../c-language/usual-arithmetic-conversions.md).\
-For more information about setting the warning level in Visual Studio, see[](../build/reference/compiler-option-warnings-level#to-set-the-compiler-options-in-the-visual-studio-development-environment.md)
+For more information about setting the warning level in Visual Studio, see[To set the compiler options in the Visual Studio development environment](../build/reference/compiler-option-warnings-level#to-set-the-compiler-options-in-the-visual-studio-development-environment.md)
 
 ```cpp
 // C4244_level3.cpp
