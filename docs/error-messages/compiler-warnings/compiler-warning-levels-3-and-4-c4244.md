@@ -2,24 +2,25 @@
 description: "Learn more about: Compiler Warning (levels 3 and 4) C4244"
 title: "Compiler Warning (levels 3 and 4) C4244"
 ms.date: "11/04/2016"
-ms.assetid: f116bb09-c479-4b4e-a647-fe629a1383f6
 ---
 # Compiler Warning (levels 3 and 4) C4244
 
 'conversion' conversion from 'type1' to 'type2', possible loss of data
 
-An integer type is converted to a smaller integer type. This is a level-4 warning if *type1* is **`int`**/**`unsigned int`** and *type2* is smaller than **`int`**/**`unsigned int`**, such as **`short`** and **`unsigned short`**. Otherwise, it is a level 3 if a value of type [__int64](../../cpp/int8-int16-int32-int64.md)/**`unsigned __int64`** is assigned to a variable of type **`int`**/**`unsigned int`**. A possible loss of data may have occurred due to a narrowing conversion, which may lead to unexpected effects.
+An integer type is converted to a smaller integer type.
+- This is a level-4 warning if *type1* is a signed or unsigned **`int`** and *type2* is a smaller--such as a signed or unsigned **`short`**.
+- It is a level 3 warning if a value of type [__int64](../../cpp/int8-int16-int32-int64.md) or **`unsigned __int64`** is assigned to a signed or unsigned **`int`**. A possible loss of data may have occurred due to a narrowing conversion, which might lead to unexpected results.
 
-If you get C4244, you should either change your program to use compatible types, or add some logic to your code, to ensure that the range of possible values will always be compatible with the types you are using. If the conversion is intended, an explicit cast can be added to silence the warning.
+To fix this warning, either change your program to use compatible types, or add logic that ensures that the range of possible values is compatible with the types you are using. If the conversion is intended, use an explicit cast to silence the warning.
 
-C4244 can also fire at level 2; see [Compiler Warning (level 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md) for more information.
+C4244 can also appear when the warning level is 2; see [Compiler Warning (level 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md) for more information.
 
 The following sample generates C4244:
 
 ```cpp
 // C4244_level4.cpp
 // compile with: /W4
-void foo(unsigned short num) {}
+void test(unsigned short num) {}
 
 int main() {
    int int1 = 1;
@@ -29,11 +30,13 @@ int main() {
    short short2 = (short)int1;   // OK
 
    short short3 = uint1;   // C4244
-   foo(uint1);   // C4244
+   unsigned short ushort = uint1; // C4244
+   test(uint1);   // C4244
 }
 ```
 
-For more information, see [Usual Arithmetic Conversions](../../c-language/usual-arithmetic-conversions.md).
+For more information, see [Usual Arithmetic Conversions](../../c-language/usual-arithmetic-conversions.md).\
+For more information about setting the warning level in Visual Studio, see[](../build/reference/compiler-option-warnings-level#to-set-the-compiler-options-in-the-visual-studio-development-environment.md)
 
 ```cpp
 // C4244_level3.cpp
