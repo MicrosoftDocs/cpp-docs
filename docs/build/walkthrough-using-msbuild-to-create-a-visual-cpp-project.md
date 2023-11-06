@@ -14,11 +14,8 @@ This walkthrough demonstrates how to use MSBuild in a command prompt to build a 
 This walkthrough illustrates these tasks:
 
 - Creating the C++ source files for your project.
-
 - Creating the XML MSBuild project file.
-
 - Using MSBuild to build your project.
-
 - Using MSBuild to customize your project.
 
 ## Prerequisites
@@ -26,7 +23,6 @@ This walkthrough illustrates these tasks:
 You need these prerequisites to complete this walkthrough:
 
 - A copy of Visual Studio with the **Desktop development with C++** workload installed.
-
 - A general understanding of the MSBuild system.
 
 ::: moniker range="msvc-140"
@@ -57,7 +53,6 @@ In this walkthrough, you'll create a project that has a source file and a header
 ### To create the C++ source files for your project
 
 1. Create a folder for your project.
-
 1. Create a file named *`main.cpp`* and add this code to the file:
 
     ```cpp
@@ -83,9 +78,7 @@ In this walkthrough, you'll create a project that has a source file and a header
 An MSBuild project file is an XML file that contains a project root element (`<Project>`). In the example project you'll build, the `<Project>` element contains seven child elements:
 
 - Three item group tags (`<ItemGroup>`) that specify project configuration and platform, source file name, and header file name.
-
 - Three import tags (`<Import>`) that specify the location of Microsoft Visual C++ settings.
-
 - A property group tag (`<PropertyGroup>`) that specifies project settings.
 
 ### To create the MSBuild project file
@@ -209,13 +202,9 @@ The application should display "Hello, from MSBuild!" in the console window.
 MSBuild enables you to execute predefined build targets, apply user-defined properties, and use custom tools, events, and build steps. This section illustrates these tasks:
 
 - Using MSBuild with build targets.
-
 - Using MSBuild with build properties.
-
 - Using MSBuild with the 64-bit compiler and tools.
-
 - Using MSBuild with different toolsets.
-
 - Adding MSBuild customizations.
 
 ### Using MSBuild with Build Targets
@@ -277,7 +266,10 @@ To rebuild your project with the Visual C++ 11.0 Windows XP toolset, enter this 
 MSBuild provides various ways to customize your build process. These articles show how to add custom build steps, tools, and events to your MSBuild project:
 
 - [How to: Add a Custom Build Step to MSBuild Projects](how-to-add-a-custom-build-step-to-msbuild-projects.md)
-
 - [How to: Add Custom Build Tools to MSBuild Projects](how-to-add-custom-build-tools-to-msbuild-projects.md)
-
 - [How to: Use Build Events in MSBuild Projects](how-to-use-build-events-in-msbuild-projects.md)
+
+## See also
+
+- [vcpkg in MSBuild projects](/vcpkg/users/buildsystems/msbuild-integration)
+- [Tutorial: Install and use packages with MSBuild in Visual Studio](/vcpkg/get_started/get-started-msbuild)

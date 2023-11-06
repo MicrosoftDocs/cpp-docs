@@ -3,7 +3,6 @@ title: "CMake projects in Visual Studio"
 description: "How to create and build C++ projects using CMake in Visual Studio."
 ms.date: 02/14/2022
 helpviewer_keywords: ["CMake in Visual C++"]
-ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
 # CMake projects in Visual Studio
 
@@ -177,7 +176,7 @@ You can add an existing CMake cache to an open project. It's done the same way y
 
 Visual Studio uses the CMake [file-based API](https://cmake.org/cmake/help/latest/manual/cmake-file-api.7.html) (in versions 3.14 and later) to populate the editor with information specific to your project structure. For more information, see the C++ team blog post on [multi-root workspaces and file-based API](https://devblogs.microsoft.com/cppblog/visual-studio-code-cmake-tools-extension-multi-root-workspaces-and-file-based-api/).
 
-Before generating the CMake cache, your custom or preferred tools may need to create a query file named *`.cmake/api/v1/query/client-MicrosoftVS/query.json`* in your build output folder (the folder that contains *`CMakeCache.txt`*). The query file should contain this content:
+Before generating the CMake cache, your custom or preferred tools might need to create a query file named *`.cmake/api/v1/query/client-MicrosoftVS/query.json`* in your build output folder (the folder that contains *`CMakeCache.txt`*). The query file should contain this content:
 
 ```json
 {"requests":[{"kind":"cache","version":2},{"kind":"cmakeFiles","version":1},{"kind":"codemodel","version":2}]}
@@ -221,7 +220,10 @@ In Visual Studio 2019 version 16.9 and later, Visual Studio automatically config
 
 ## Vcpkg integration
 
-CMake projects opened in Visual Studio integrate with vcpkg, a cross-platform C/C++ dependency manager. Before using vcpkg with Visual Studio, you must run `vcpkg integrate install`. For instructions and more information on vcpkg, see the [vcpkg documentation](https://vcpkg.io/).
+CMake projects opened in Visual Studio integrate with vcpkg, a cross-platform C/C++ dependency manager. Before using vcpkg with Visual Studio, you must run `vcpkg integrate install`. For instructions and more information about vcpkg, see:
+
+- [Install and use packages with CMake in Visual Studio](/vcpkg/get_started/get-started-vs)
+- [vcpkg in CMake projects](/vcpkg/users/buildsystems/cmake-integration)
 
 If *`CMakeSettings.json`* is your active configuration file, Visual Studio automatically passes the vcpkg toolchain file (`vcpkg.cmake`) to CMake. This behavior is disabled automatically when you specify any other toolchain in your CMake Settings configuration.
 
@@ -346,7 +348,7 @@ As soon as you save the file, the configuration step automatically runs again an
 
 When significant changes are made to the  *`CMakeSettings.json`* or to *`CMakeLists.txt`* files, Visual Studio automatically reruns the CMake configure step. If the configure step finishes without errors, the information that's collected is available in C++ IntelliSense and language services. It's also used in build and debug operations.
 
-Multiple CMake projects may use the same CMake configuration name (for example, x86-Debug). All of them are configured and built (in their own build root folder) when that configuration is selected. You can debug the targets from all of the CMake projects that participate in that CMake configuration.
+Multiple CMake projects might use the same CMake configuration name (for example, x86-Debug). All of them are configured and built (in their own build root folder) when that configuration is selected. You can debug the targets from all of the CMake projects that participate in that CMake configuration.
 
    ![CMake Build Only menu item.](media/cmake-build-only.png "CMake Build Only menu item")
 
@@ -399,4 +401,6 @@ In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://c
 [`CMakeSettings.json` schema reference](cmakesettings-reference.md)\
 [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)\
 [Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)\
-[CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
+[CMake predefined configuration reference](cmake-predefined-configuration-reference.md)\
+[vcpkg in CMake projects](/vcpkg/users/buildsystems/cmake-integration)\
+[Install and use packages with CMake in Visual Studio](/vcpkg/get_started/get-started-vs)
