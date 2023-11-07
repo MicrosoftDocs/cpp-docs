@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fegetround", "fesetround", "fenv/fegetround", "fenv/fesetround"]
 helpviewer_keywords: ["fegetround function", "fesetround function"]
-ms.assetid: 596af00b-be2f-4f57-b2f5-460485f9ff0b
 ---
 # `fegetround`, `fesetround`
 
@@ -18,10 +17,7 @@ Gets or sets the current floating-point rounding mode.
 
 ```C
 int fegetround(void);
-
-int fesetround(
-   int round_mode
-);
+int fesetround(int round_mode);
 ```
 
 ### Parameters
@@ -51,30 +47,29 @@ The default behavior of `FE_TONEAREST` is to round results midway between repres
 The current rounding mode affects these operations:
 
 - String conversions.
-
 - The results of floating-point arithmetic operators outside of constant expressions.
-
 - The library rounding functions, such as `rint` and `nearbyint`.
-
 - Return values from standard library mathematical functions.
 
 The current rounding mode doesn't affect these operations:
 
 - The `trunc`, `ceil`, `floor`, and `lround` library functions.
-
 - Floating-point to integer implicit casts and conversions, which always round towards zero.
-
 - The results of floating-point arithmetic operators in constant expressions, which always round to the nearest value.
 
 To use these functions, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [`fenv_access`](../../preprocessor/fenv-access.md).
+
+> [!IMPORTANT]  
+> Prior to Windows 10 version 14393, `fenv.h` defined `FE_UPWARD = 0x0100` and `FE_DOWNWARD = 0x0200`. In Windows version 14393, this header was updated to address a bug in which some APIs would interpret `FE_UPWARD` as `FE_DOWNWARD`, and vice-versa. Starting in Windows version 14393, `FE_UPWARD = 0x0200` and `FE_DOWNWARD = 0x0100`, reversing their previous values.
+> If you compiled your app against an old Windows SDK version (this issue depends on SDK version, not OS version or VS version) you might encounter this issue. Update your app to target the latest Windows SDK so that the definitions of `FE_UPWARD` and `FE_DOWNWARD` are consistent with the Windows implementation. If you can't update your app to target a later Windows SDK, you can define `FE_UPWARD` as `0x0100` and `FE_DOWNWARD` as `0x0200` in your code.
 
 ## Requirements
 
 | Function | C header | C++ header |
 |---|---|---|
-| **`fegetround`**, **`fesetround`** | \<fenv.h> | \<cfenv> |
+| **`fegetround`**, **`fesetround`** | `<fenv.h>` | `<cfenv>` |
 
-For more compatibility information, see [Compatibility](../compatibility.md).
+For more information, see [Compatibility](../compatibility.md).
 
 ## See also
 
