@@ -92,6 +92,8 @@ items:
           href: ../preprocessor/hash-undef-directive-c-cpp.md
         - name: "#using directive (C++/CLI)"
           href: ../preprocessor/hash-using-directive-cpp.md
+        - name: "#warning directive (C/C++)"
+          href: ../preprocessor/hash-warning-directive-c-cpp.md
     - name: Preprocessor operators
       expanded: false
       items: 
