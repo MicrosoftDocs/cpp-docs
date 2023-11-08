@@ -724,7 +724,6 @@ The type of the elements to extract from the stream.
 
 A [`basic_istream_view`](basic-istream-view-class.md).
 
-
 This range adaptor is equivalent to `ranges::basic_istream_view<Val, typename U::char_type, typename U::traits_type>(str)`, where `U` is the type of `str`.
 
 ### Example: `istream`
