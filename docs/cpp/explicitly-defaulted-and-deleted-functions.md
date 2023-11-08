@@ -36,7 +36,7 @@ This is convenient for simple types, but complex types often define one or more 
 > - If a copy constructor or destructor is explicitly declared, then automatic generation of the copy-assignment operator is deprecated.
 > - If a copy-assignment operator or destructor is explicitly declared, then automatic generation of the copy constructor is deprecated.
 >
-> In both cases, Visual Studio continues to automatically generate the necessary functions implicitly, and does not emit a warning.
+> In both cases, Visual Studio continues to automatically generate the necessary functions implicitly, and does not emit a warning by default. Since Visual Studio 2022 version 17.7, [C5267](../error-messages/compiler-warnings/c5267.md) can be enabled to emit a warning.
 
 The consequences of these rules can also leak into object hierarchies. For example, if for any reason a base class fails to have a default constructor that's callable from a deriving class—that is, a **`public`** or **`protected`** constructor that takes no parameters—then a class that derives from it cannot automatically generate its own default constructor.
 
