@@ -19,19 +19,29 @@ If the compiler finds a function with a control path that does not return a valu
 
 ## Example
 
-In the following sample,the **`else`** clause does not contain a return statement.  Declaring `fatal` as **`__declspec(noreturn)`** avoids an error or warning message.
+In the following sample, when the argument for `get_num` is negative, a call to `fatal` is made, but there is no return statement in that control path. Declaring `fatal` as **`__declspec(noreturn)`** avoids an error or warning message in `get_num`.
 
 ```cpp
 // noreturn2.cpp
-__declspec(noreturn) extern void fatal () {}
+#include <exception>
+
+__declspec(noreturn) void fatal() {
+   std::terminate();
+}
+
+int get_num(int val) {
+   if (val == 0) {
+      return 0;
+   }
+   else if (val > 0) {
+      return 1;
+   }
+
+   fatal();
+}
 
 int main() {
-   if(1)
-     return 1;
-   else if(0)
-     return 0;
-   else
-     fatal();
+   get_num(123);
 }
 ```
 
@@ -39,5 +49,5 @@ int main() {
 
 ## See also
 
-[__declspec](../cpp/declspec.md)<br/>
+[__declspec](../cpp/declspec.md)\
 [Keywords](../cpp/keywords-cpp.md)
