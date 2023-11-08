@@ -29,7 +29,8 @@ The preprocessor recognizes the following directives:
    :::column span="":::
       [`#import`](../preprocessor/hash-import-directive-cpp.md)\
       [`#include`](../preprocessor/hash-include-directive-c-cpp.md)\
-      [`#line`](../preprocessor/hash-line-directive-c-cpp.md)
+      [`#line`](../preprocessor/hash-line-directive-c-cpp.md)\
+      [`#warning`](../preprocessor/hash-warning-directive-c-cpp.md)
    :::column-end:::
    :::column span="":::
       [`#pragma`](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
