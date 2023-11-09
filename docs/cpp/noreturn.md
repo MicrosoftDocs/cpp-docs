@@ -19,7 +19,7 @@ If the compiler finds a function with a control path that does not return a valu
 
 ## Example
 
-In the following example, when the argument for `isZeroOrPositive` is negative, a call to `fatal` is made. There is no return statement in that control path, which results in warning C4715 that not all control paths return a value. Declaring `fatal` as **`__declspec(noreturn)`** mitigates that warning because there is no point in it since `fatal()` terminates the program.
+In the following example, when the argument for `isZeroOrPositive` is negative, `fatal` is called. There isn't a return statement in that control path, which results in warning C4715 that not all control paths return a value. Declaring `fatal` as **`__declspec(noreturn)`** mitigates that warning, which is desirable because there is no point in it since `fatal()` terminates the program.
 
 ```cpp
 // noreturn2.cpp
