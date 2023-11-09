@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 06/19/2023
+ms.date: 11/08/2023
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022
@@ -13,6 +13,101 @@ This document lists the changes in Visual Studio 2022:
 - For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).
 - For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
 - For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+
+## <a name="improvements_178"></a> Conformance improvements in Visual Studio 2022 version 17.8
+
+Visual Studio 2022 version 17.8 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler. For a more detailed summary of changes made to the C++ Standard Library, see [STL Changelog VS 2022 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178-preview-3).
+
+### /FU issues an error
+
+The C compiler used to accept the `/FU` option, even though it hasn't support managed compilation for some time. It now issues an error. Projects that pass this option need to restrict it to C++/CLI projects only.
+
+### C++ Standard Library improvements
+
+- The C++23 named modules `std` and `std.compat` are now available when compiling with `/std:c++20`.
+
+## <a name="improvements_177"></a> Conformance improvements in Visual Studio 2022 version 17.7
+
+Visual Studio 2022 version 17.7 contains the following highlighted conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler. For a more detailed summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.7](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-177).
+
+### Standard Library improvements
+
+- The addition of the `<print>` library. See [P2093R14 Formatted output](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2093r14.html).
+- Improved how `views::cartesian_product` detects ranges with maximum sizes that are known at compile time.
+
+### `using` conformance
+
+Previously, `using` directive behavior could cause names from used namespaces to remain visible in cases where they shouldn't This could cause a name from a namespace to be found by unqualified lookup even if there is no `using` directive active.
+
+Here are some examples of the new and old behavior. References in the comments to "(1)" mean the call to `f<K>(t)` in namespace `A` in the following code:
+
+```cpp
+namespace A
+{ 
+    template<typename K, typename T> 
+    auto f2(T t)
+    { 
+        return f<K>(t); // (1) Unqualified lookup should not find anything
+    } 
+} 
+
+namespace B
+{ 
+    template<typename K, typename T> 
+    auto f(T t) noexcept
+    { // Previous behavior: This function was erroneously found during unqualified lookup at (1)
+        return A::f2<K>(t); 
+    } 
+} 
+
+namespace C
+{ 
+    template<typename T> 
+    struct S {}; 
+
+    template<typename, typename U> 
+    U&& f(U&&) noexcept; // New behavior: ADL at (1) correctly finds this function 
+} 
+
+namespace D
+{ 
+    using namespace B; 
+
+    void h()
+    { 
+        D::f<void>(C::S<int>()); 
+    } 
+} 
+```
+
+The same underlying issue can cause code that previously compiled to now be rejected:
+
+```cpp
+#include <memory>
+namespace Addin {}
+namespace Gui
+{
+    using namespace Addin;
+}
+
+namespace Addin
+{
+    using namespace std;
+}
+
+// This previously compiled, but now emits error C2065 for undeclared name 'allocator'.
+// This should be declared as 'std::allocator<T*>' because the using directive nominating
+// 'std' is not active at this point.
+template <class T, class U = allocator<T*>>
+class resource_list
+{
+};
+
+namespace Gui
+{
+    typedef resource_list<int> intlist;
+}
+```
 
 ## <a name="improvements_176"></a> Conformance improvements in Visual Studio 2022 version 17.6
 
