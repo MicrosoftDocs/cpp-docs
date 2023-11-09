@@ -34,7 +34,7 @@ Visual Studio 2022 version 17.7 contains the following highlighted conformance i
 
 The `<print>` library is now supported. See [P2093R14 Formatted output](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2093r14.html).
 
-Improved how `views::cartesian_product` detects ranges with maximum sizes that are known at compile time.
+Implemented `views::cartesian_product`.
 
 ### `using` conformance
 
@@ -306,9 +306,9 @@ bidi.cpp(8): warning C5255: unterminated bidirectional character encountered: 'U
 
 ### `from_chars()` `float` tiebreaker
 
-Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even", and "even" happened to be "down", but the implementation incorrectly rounded "up". (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
+Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even," and "even" happened to be "down", but the implementation incorrectly rounded "up." (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
 
-This change affects runtime behavior in the specified range of cases.
+This change affects runtime behavior in the specified range of cases:
 
 #### Example
 
@@ -474,7 +474,7 @@ int main(void)
 
 ### Error on a nondependent `static_assert`
 
-In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression as soon as it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
+In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression when it is parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
 
 This change is a source breaking change. It applies in any mode that implies **`/permissive-`** or **`/Zc:static_assert`**.  This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
 
