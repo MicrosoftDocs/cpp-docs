@@ -16,7 +16,7 @@ This document lists the changes in Visual Studio 2022:
 
 ## <a name="improvements_178"></a> Conformance improvements in Visual Studio 2022 version 17.8
 
-Visual Studio 2022 version 17.8 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler. For a more detailed summary of changes made to the C++ Standard Library, see [STL Changelog VS 2022 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178-preview-3).
+Visual Studio 2022 version 17.8 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 ### /FU issues an error
 
@@ -26,15 +26,19 @@ The C compiler used to accept the `/FU` option, even though it hasn't support ma
 
 The C++23 named modules `std` and `std.compat` are now available when compiling with `/std:c++20`.
 
+For a broader summary of changes made to the C++ Standard Library, see [STL Changelog VS 2022 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178-preview-3).
+
 ## <a name="improvements_177"></a> Conformance improvements in Visual Studio 2022 version 17.7
 
-Visual Studio 2022 version 17.7 contains the following highlighted conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler. For a more detailed summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.7](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-177).
+Visual Studio 2022 version 17.7 contains the following highlighted conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 ### C++ Standard Library
 
 The `<print>` library is now supported. See [P2093R14 Formatted output](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2093r14.html).
 
 Implemented `views::cartesian_product`.
+
+For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.7](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-177).
 
 ### `using` conformance
 
