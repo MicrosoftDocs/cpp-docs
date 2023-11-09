@@ -10,38 +10,43 @@ ms.assetid: 9c6517e5-22d7-4051-9974-3d2200ae4d1d
 
 **Microsoft Specific**
 
-This **`__declspec`** attribute tells the compiler that a function does not return. As a consequence, the compiler knows that the code following a call to a **`__declspec(noreturn)`** function is unreachable.
+The **`__declspec`** attribute tells the compiler that a function does not return. The compiler then knows that the code following a call to a **`__declspec(noreturn)`** function is unreachable.
 
-If the compiler finds a function with a control path that does not return a value, it generates a warning (C4715) or error message (C2202). If the control path cannot be reached due to a function that never returns, you can use **`__declspec(noreturn)`** to prevent this warning or error.
+If the compiler finds a function with a control path that does not return a value, it generates a warning (C4715) or error message (C2202). If the control path cannot be reached due to a function that never returns, use **`__declspec(noreturn)`** to prevent this warning or error.
 
 > [!NOTE]
 > Adding **`__declspec(noreturn)`** to a function that is expected to return can result in undefined behavior.
 
 ## Example
 
-In the following sample, when the argument for `get_num` is negative, a call to `fatal` is made, but there is no return statement in that control path. Declaring `fatal` as **`__declspec(noreturn)`** avoids an error or warning message in `get_num`.
+In the following example, when the argument for `isZeroOrPositive` is negative, a call to `fatal` is made. There is no return statement in that control path, which results in warning C4715 that not all control paths return a value. Declaring `fatal` as **`__declspec(noreturn)`** mitigates that warning because there is no point in it since `fatal()` terminates the program.
 
 ```cpp
 // noreturn2.cpp
 #include <exception>
 
-__declspec(noreturn) void fatal() {
+__declspec(noreturn) void fatal()
+{
    std::terminate();
 }
 
-int get_num(int val) {
-   if (val == 0) {
+int isZeroOrPositive(int val)
+{
+   if (val == 0)
+   {
       return 0;
    }
-   else if (val > 0) {
+   else if (val > 0)
+   {
       return 1;
    }
-
+   // this function terminates if val is negative
    fatal();
 }
 
-int main() {
-   get_num(123);
+int main()
+{
+   isZeroOrPositive(123);
 }
 ```
 
