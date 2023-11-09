@@ -81,7 +81,6 @@ void func_B(MyClass mc)
     mc.print(); // "Erika, 21"
 }
 
-
 int main()
 {
     // Use the * operator to declare a pointer type
