@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 06/19/2023
+ms.date: 11/08/2023
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022
@@ -13,6 +13,107 @@ This document lists the changes in Visual Studio 2022:
 - For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).
 - For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
 - For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+
+## <a name="improvements_178"></a> Conformance improvements in Visual Studio 2022 version 17.8
+
+Visual Studio 2022 version 17.8 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+### /FU issues an error
+
+The C compiler used to accept the `/FU` option, even though it hasn't support managed compilation for some time. It now issues an error. Projects that pass this option need to restrict it to C++/CLI projects only.
+
+### C++ Standard Library
+
+The C++23 named modules `std` and `std.compat` are now available when compiling with `/std:c++20`.
+
+For a broader summary of changes made to the C++ Standard Library, see [STL Changelog VS 2022 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178-preview-3).
+
+## <a name="improvements_177"></a> Conformance improvements in Visual Studio 2022 version 17.7
+
+Visual Studio 2022 version 17.7 contains the following highlighted conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+### C++ Standard Library
+
+The `<print>` library is now supported. See [P2093R14 Formatted output](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2093r14.html).
+
+Implemented `views::cartesian_product`.
+
+For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.7](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-177).
+
+### `using` conformance
+
+Previously, the `using` directive could cause names from used namespaces to remain visible when they shouldn't. This could cause unqualified name lookup to find a name in a namespace even when there's no `using` directive active.
+
+Here are some examples of the new and old behavior.\
+References in the following comments to "(1)" mean the call to `f<K>(t)` in namespace `A`:
+
+```cpp
+namespace A
+{ 
+    template<typename K, typename T> 
+    auto f2(T t)
+    { 
+        return f<K>(t); // (1) Unqualified lookup should not find anything
+    } 
+} 
+
+namespace B
+{ 
+    template<typename K, typename T> 
+    auto f(T t) noexcept
+    { // Previous behavior: This function was erroneously found during unqualified lookup at (1)
+        return A::f2<K>(t); 
+    } 
+} 
+
+namespace C
+{ 
+    template<typename T> 
+    struct S {}; 
+
+    template<typename, typename U> 
+    U&& f(U&&) noexcept; // New behavior: ADL at (1) correctly finds this function 
+} 
+
+namespace D
+{ 
+    using namespace B; 
+
+    void h()
+    { 
+        D::f<void>(C::S<int>()); 
+    } 
+} 
+```
+
+The same underlying issue can cause code that previously compiled to now be rejected:
+
+```cpp
+#include <memory>
+namespace Addin {}
+namespace Gui
+{
+    using namespace Addin;
+}
+
+namespace Addin
+{
+    using namespace std;
+}
+
+// This previously compiled, but now emits error C2065 for undeclared name 'allocator'.
+// This should be declared as 'std::allocator<T*>' because the using directive nominating
+// 'std' is not active at this point.
+template <class T, class U = allocator<T*>>
+class resource_list
+{
+};
+
+namespace Gui
+{
+    typedef resource_list<int> intlist;
+}
+```
 
 ## <a name="improvements_176"></a> Conformance improvements in Visual Studio 2022 version 17.6
 
@@ -94,7 +195,7 @@ In versions of Visual Studio before Visual Studio 2022 version 17.4, the C++ com
 
 The C++ Standard requires the underlying type of an **`enum`** to be large enough to hold all enumerators in that **`enum`**. Sufficiently large enumerators can set the underlying type of the **`enum`** to **`unsigned int`**, **`long long`**, or **`unsigned long long`**. Previously, such **`enum`** types always had an underlying type of **`int`** in the Microsoft compiler, regardless of enumerator values.
 
-When enabled, the **`/Zc:enumTypes`** option is a potential source and binary breaking change. It's off by default, and not enabled by **`/permissive-`**, because the fix may affect binary compatibility. Some enumeration types change size when the conformant fix is enabled. Certain Windows SDK headers include such enumeration definitions.
+When enabled, the **`/Zc:enumTypes`** option is a potential source and binary breaking change. It's off by default, and not enabled by **`/permissive-`**, because the fix might affect binary compatibility. Some enumeration types change size when the conformant fix is enabled. Certain Windows SDK headers include such enumeration definitions.
 
 #### Example
 
@@ -134,7 +235,7 @@ In versions of Visual Studio before Visual Studio 2022 version 17.4, the C++ com
 
 The C++ Standard specifies that within an enumeration definition of no fixed underlying type, initializers determine the types of enumerators. Or, for the enumerators with no initializer, by the type of the previous enumerator (accounting for overflow). Previously, such enumerators were always given the deduced type of the enumeration, with a placeholder for the underlying type (typically **`int`**).
 
-When enabled, the **`/Zc:enumTypes`** option is a potential source and binary breaking change. It's off by default, and not enabled by **`/permissive-`**, because the fix may affect binary compatibility. Some enumeration types change size when the conformant fix is enabled. Certain Windows SDK headers include such enumeration definitions.
+When enabled, the **`/Zc:enumTypes`** option is a potential source and binary breaking change. It's off by default, and not enabled by **`/permissive-`**, because the fix might affect binary compatibility. Some enumeration types change size when the conformant fix is enabled. Certain Windows SDK headers include such enumeration definitions.
 
 #### Example
 
@@ -209,9 +310,9 @@ bidi.cpp(8): warning C5255: unterminated bidirectional character encountered: 'U
 
 ### `from_chars()` `float` tiebreaker
 
-Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even" and "even" happened to be "down", but the implementation incorrectly rounded "up". (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
+Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even," and "even" happened to be "down", but the implementation incorrectly rounded "up." (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
 
-This change affects runtime behavior in the specified range of cases.
+This change affects runtime behavior in the specified range of cases:
 
 #### Example
 
@@ -377,7 +478,7 @@ int main(void)
 
 ### Error on a nondependent `static_assert`
 
-In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression as soon as it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
+In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression when it is parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
 
 This change is a source breaking change. It applies in any mode that implies **`/permissive-`** or **`/Zc:static_assert`**.  This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
 
@@ -449,7 +550,7 @@ bool f(int *p)
 }
 ```
 
-WG21 paper [N3478](https://wg21.link/n3478) removed this oversight. MSVC has now implemented this change. When the example is compiled by using **`/permissive-`** (and **`/diagnostics:caret`**), it emits the following error:
+WG21 paper [N3478](https://wg21.link/n3478) removed this oversight. This change is implemented in MSVC. When the example is compiled by using **`/permissive-`** (and **`/diagnostics:caret`**), it emits the following error:
 
 ```Output
 t.cpp(3,14): error C7664: '>=': ordered comparison of pointer and integer zero ('int *' and 'int')
