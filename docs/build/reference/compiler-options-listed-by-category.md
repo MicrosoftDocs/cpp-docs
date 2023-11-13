@@ -299,6 +299,7 @@ Experimental options may only be supported by certain versions of the compiler. 
 
 | Option | Purpose |
 |--|--|
+| [`/experimental:log`](experimental-log.md) | Enables experimental structured SARIF output. |
 | [`/experimental:module`](experimental-module.md) | Enables experimental module support. |
 
 ## Deprecated and removed compiler options
