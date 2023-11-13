@@ -58,7 +58,7 @@ The following sections list the warnings introduced by each version of Visual C+
 
 ## Warnings introduced in Visual Studio 2022 version 17.7 (compiler version 19.37)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.36`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.36`**.
 
 | Warning | Message |
 |--|--|
@@ -66,7 +66,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2022 version 17.5 (compiler version 19.35)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.34`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.34`**.
 
 | Warning | Message |
 |--|--|
@@ -75,7 +75,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2022 version 17.4 (compiler version 19.34)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.33`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.33`**.
 
 | Warning | Message |
 |--|--|
@@ -87,7 +87,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2022 version 17.3 (compiler version 19.33)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.32`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.32`**.
 
 | Warning | Message |
 |--|--|
@@ -95,7 +95,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2022 version 17.2 (compiler version 19.32)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.31`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.31`**.
 
 | Warning | Message |
 |--|--|
@@ -111,7 +111,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2022 version 17.1 (compiler version 19.31)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.30`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.30`**.
 
 | Warning | Message |
 |--|--|
@@ -121,7 +121,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2022 version 17.0 (compiler version 19.30)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.29`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.29`**.
 
 | Warning | Message |
 |--|--|
@@ -138,7 +138,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.11 (compiler version 19.29.30100.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.29.30099`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.29.30099`**.
 
 | Warning | Message |
 |--|--|
@@ -147,7 +147,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.10 (compiler version 19.29.30000.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.28`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.28`**.
 
 | Warning | Message |
 |--|--|
@@ -165,7 +165,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.9 (compiler version 19.28.29700.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.28.29699`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.28.29699`**.
 
 | Warning | Message |
 |--|--|
@@ -173,7 +173,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.8 (compiler version 19.28.29333.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.27`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.27`**.
 
 | Warning | Message |
 |--|--|
@@ -192,7 +192,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.7 (compiler version 19.27.29112.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.26`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.26`**.
 
 | Warning | Message |
 |--|--|
@@ -212,7 +212,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.6 (compiler version 19.26.28805.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.25`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.25`**.
 
 | Warning | Message |
 |--|--|
@@ -221,7 +221,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.5 (compiler version 19.25.28610.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.24`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.24`**.
 
 |Warning|Message|
 |-|-|
@@ -235,7 +235,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.4 (compiler version 19.24.28314.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.23`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.23`**.
 
 | Warning | Message |
 |--|--|
@@ -246,7 +246,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.3 (compiler version 19.23.28105.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.22`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.22`**.
 
 | Warning | Message |
 |--|--|
@@ -255,7 +255,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.2 (compiler version 19.22.27905.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.21`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.21`**.
 
 | Warning | Message |
 |--|--|
@@ -270,7 +270,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 version 16.1 (compiler version 19.21.27702.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.20`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.20`**.
 
 | Warning | Message |
 |--|--|
@@ -279,7 +279,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2019 RTW (compiler version 19.20.27004.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.15`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.15`**.
 
 | Warning | Message |
 |--|--|
@@ -292,7 +292,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2017 version 15.8 (compiler version 19.15.26726.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.14`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.14`**.
 
 | Warning | Message |
 |--|--|
@@ -318,7 +318,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2017 version 15.7 (compiler version 19.14.26428.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.13`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.13`**.
 
 | Warning | Message |
 |--|--|
@@ -327,7 +327,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2017 version 15.6 (compiler version 19.13.26128.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.12`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.12`**.
 
 | Warning | Message |
 |--|--|
@@ -335,7 +335,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2017 version 15.5 (compiler version 19.12.25830.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.11`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.11`**.
 
 | Warning | Message |
 |--|--|
@@ -349,7 +349,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2017 version 15.3 (compiler version 19.11.25506.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.10`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.10`**.
 
 | Warning | Message |
 |--|--|
@@ -371,7 +371,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2017 RTM (compiler version 19.10.25017.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.00`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.00`**.
 
 | Warning | Message |
 |--|--|
@@ -384,7 +384,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2015 Update 3 (compiler version 19.00.24215.1)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.00.23918`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.00.23918`**.
 
 | Warning | Message |
 |--|--|
@@ -395,7 +395,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2015 Update 2 (compiler version 19.00.23918.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.00.23506`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.00.23506`**.
 
 | Warning | Message |
 |--|--|
@@ -406,7 +406,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2015 Update 1 (compiler version 19.00.23506.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.00.23026`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.00.23026`**.
 
 | Warning | Message |
 |--|--|
@@ -417,7 +417,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2015 RTM (compiler version 19.00.23026.0)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:18`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:18`**.
 
 | Warning | Message |
 |--|--|
@@ -476,7 +476,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2013 (compiler version 18.00.21005.1)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:17`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:17`**.
 
 | Warning | Message |
 |--|--|
@@ -505,7 +505,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2012 (compiler version 17.00.51106.1)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:16`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:16`**.
 
 | Warning | Message |
 |--|--|
@@ -548,7 +548,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2010 (compiler version 16.00.40219.01)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:15`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:15`**.
 
 | Warning | Message |
 |--|--|
@@ -564,7 +564,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2008 (compiler version 15.00.21022.08)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:14`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:14`**.
 
 | Warning | Message |
 |--|--|
@@ -579,7 +579,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2005 (compiler version 14.00.50727.762)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:13`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:13`**.
 
 | Warning | Message |
 |--|--|
@@ -722,7 +722,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2003 (compiler version 13.10.3077)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:13.00.9466`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:13.00.9466`**.
 
 | Warning | Message |
 |--|--|
@@ -758,7 +758,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ## Warnings introduced in Visual Studio 2002 (compiler version 13.00.9466)
 
-These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:12`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:12`**.
 
 | Warning | Message |
 |--|--|
