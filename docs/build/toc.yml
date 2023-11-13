@@ -515,6 +515,8 @@ items:
                   href: ../build/reference/errorreport-report-internal-compiler-errors.md
                 - name: /execution-charset (Set execution character set)
                   href: ../build/reference/execution-charset-set-execution-character-set.md
+                - name: /experimental:log
+                  href: ../build/reference/experimental-log.md
                 - name: /experimental:module
                   href: ../build/reference/experimental-module.md
                 - name: /experimental:preprocessor
@@ -859,6 +861,8 @@ items:
                   href: ../build/reference/zs-syntax-check-only.md
                 - name: /ZW (Windows Runtime compilation)
                   href: ../build/reference/zw-windows-runtime-compilation.md
+        - name: Structured SARIF output
+          href: ../build/reference/sarif-output.md
         - name: Unicode support in the compiler and linker
           href: ../build/reference/unicode-support-in-the-compiler-and-linker.md
     - name: MSVC linker reference

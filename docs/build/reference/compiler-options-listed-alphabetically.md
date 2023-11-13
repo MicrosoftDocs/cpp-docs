@@ -49,6 +49,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/EP`](ep-preprocess-to-stdout-without-hash-line-directives.md) | Copies preprocessor output to standard output. |
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings control error reporting. |
 | [`/execution-charset`](execution-charset-set-execution-character-set.md) | Set execution character set. |
+| [`/experimental:log`](experimental-log.md) | Enables experimental structured SARIF output. |
 | [`/experimental:module`](experimental-module.md) | Enables experimental module support. |
 | [`/exportHeader`](module-exportheader.md) | Create the header units files (*`.ifc`*) specified by the input arguments. |
 | [`/external:anglebrackets`](external-external-headers-diagnostics.md) | Treat all headers included via `<>` as external. |
