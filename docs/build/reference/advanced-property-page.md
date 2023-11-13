@@ -97,6 +97,10 @@ Specifies the full version of the MSVC toolset that's used to build the project.
 
 Specifies the full version of the LLVM toolset that's used to build the project. This property is available when **LLVM (clang-cl)** is selected as the platform toolset, starting in Visual Studio 2019 version 16.9. For more information, see [Set a custom LLVM toolset version](..\clang-support-msbuild.md#custom_llvm_toolset).
 
+### Enable MSVC Structured Output
+
+Specifies whether to enable [structured SARIF output](sarif-output.md), which enables the [**Problem Details** window](/visualstudio/ide/reference/problem-details-window) and hierarchical output in the [**Output** window](/visualstudio/ide/reference/output-window) in Visual Studio.  
+
 ## C++/CLI Properties
 
 ### Common Language Runtime support
