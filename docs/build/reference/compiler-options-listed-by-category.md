@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options Listed by Category"
 description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
-ms.date: 06/02/2023
+ms.date: 11/13/2023
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed by category
@@ -165,6 +165,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/std:c++latest`](std-specify-language-standard-version.md) | The latest draft C++ standard preview features. |
 | [`/std:c11`](std-specify-language-standard-version.md) | C11 standard ISO/IEC 9899:2011. |
 | [`/std:c17`](std-specify-language-standard-version.md) | C17 standard ISO/IEC 9899:2018. |
+| [`/std:clatest`](std-specify-language-standard-version.md) | The latest draft C standard preview features. |
 | [`/vd{0|1|2}`](vd-disable-construction-displacements.md) | Suppresses or enables hidden `vtordisp` class members. |
 | [`/vmb`](vmb-vmg-representation-method.md) | Uses best base for pointers to members. |
 | [`/vmg`](vmb-vmg-representation-method.md) | Uses full generality for pointers to members. |
