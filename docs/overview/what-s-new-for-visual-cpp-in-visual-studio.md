@@ -26,6 +26,7 @@ Briefly, some of the new features are:
     * Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile and the number of ForceInlines.
 * Remote Linux unit test support now lets you run your CTest and GTest tests on your remote Linux machines from Visual Studio’s Test Explorer, just like your local tests.
 
+For a more comprehensive summary of new C++ features in Visual Studio 17.8, see [What’s New for C++ Developers in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-8).\
 For a summary of new features in the Visual Studio 17.8 IDE, see [Visual Studio 2022 version 17.8 Release Notes](/visualstudio/releases/2022/release-notes).
 
 ## What's new for C++ in Visual Studio version 17.7
