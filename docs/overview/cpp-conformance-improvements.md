@@ -1,24 +1,24 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 11/08/2023
+ms.date: 11/14/2023
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022
 
 Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use **In this article** links, above.
 
-This document lists the changes in Visual Studio 2022:
+This document lists the changes in Visual Studio 2022.
 
-- For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).
-- For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
-- For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).\
+For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).\
+For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ## <a name="improvements_178"></a> Conformance improvements in Visual Studio 2022 version 17.8
 
 Visual Studio 2022 version 17.8 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
-### /FU issues an error
+### `/FU` issues an error
 
 The C compiler used to accept the `/FU` option, even though it hasn't support managed compilation for some time. It now issues an error. Projects that pass this option need to restrict it to C++/CLI projects only.
 
@@ -26,7 +26,7 @@ The C compiler used to accept the `/FU` option, even though it hasn't support ma
 
 The C++23 named modules `std` and `std.compat` are now available when compiling with `/std:c++20`.
 
-For a broader summary of changes made to the C++ Standard Library, see [STL Changelog VS 2022 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178-preview-3).
+For a broader summary of changes made to the C++ Standard Library, see [STL Changelog VS 2022 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178).
 
 ## <a name="improvements_177"></a> Conformance improvements in Visual Studio 2022 version 17.7
 

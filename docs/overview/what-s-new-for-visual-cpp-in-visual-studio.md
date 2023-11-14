@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 11/09/2023
+ms.date: 11/14/2023
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
@@ -10,7 +10,7 @@ ms.custom: intro-whats-new
 
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
 
-For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md)
+For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md).
 
 ## What's new for C++ in Visual Studio version 17.8
 
@@ -26,6 +26,7 @@ Briefly, some of the new features are:
     * Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile and the number of ForceInlines.
 * Remote Linux unit test support now lets you run your CTest and GTest tests on your remote Linux machines from Visual Studio’s Test Explorer, just like your local tests.
 
+For a more comprehensive summary of new C++ features in Visual Studio 17.8, see [What’s New for C++ Developers in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-8).\
 For a summary of new features in the Visual Studio 17.8 IDE, see [Visual Studio 2022 version 17.8 Release Notes](/visualstudio/releases/2022/release-notes).
 
 ## What's new for C++ in Visual Studio version 17.7
