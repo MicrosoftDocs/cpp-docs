@@ -1,8 +1,8 @@
 ---
 title: "/std (Specify Language Standard Version)"
 description: "The MSVC compiler option /std specifies the C or C++ language standard supported by the compiler."
-ms.date: 07/07/2022
-f1_keywords: ["/std", "-std", "/std:c++14", "/std:c++17", "/std:c11", "/std:c17", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
+ms.date: 11/13/2023
+f1_keywords: ["/std", "-std", "/std:c++14", "/std:c++17", "/std:c++20", "/std:c11", "/std:c17", "/std:clatest", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 ---
 # `/std` (Specify Language Standard Version)
 
@@ -15,7 +15,8 @@ Enable supported C and C++ language features from the specified version of the C
 > **`/std:c++20`**\
 > **`/std:c++latest`**\
 > **`/std:c11`**\
-> **`/std:c17`**
+> **`/std:c17`**\
+> **`/std:clatest`**
 
 ## Remarks
 
@@ -106,6 +107,9 @@ The compiler doesn't support most optional features of ISO C11. Several of these
 - [Defect report 400](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2148.htm#dr_400) support is currently unimplemented for `realloc` because this change would break the ABI.
 
 - Variable length array (VLA) support isn't planned. VLAs provide attack vectors comparable to [`gets`](../../c-runtime-library/gets-getws.md), which is deprecated and planned for removal.
+
+**`/std:clatest`**\
+The **`/std:clatest`** option behaves like the `/std:c++latest` switch for the C++ compiler. The switch enables all currently implemented compiler and standard library features proposed for the next draft C standard, as well as some in-progress and experimental features.
 
 For more information, see the C Standard library features section of [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
 

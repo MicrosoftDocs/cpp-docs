@@ -1,7 +1,7 @@
 ---
 title: "Compiler options listed alphabetically"
 description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
-ms.date: 06/02/2023
+ms.date: 11/13/2023
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
@@ -177,6 +177,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/std:c++latest`](std-specify-language-standard-version.md) | The latest draft C++ standard preview features. |
 | [`/std:c11`](std-specify-language-standard-version.md) | C11 standard ISO/IEC 9899:2011. |
 | [`/std:c17`](std-specify-language-standard-version.md) | C17 standard ISO/IEC 9899:2018. |
+| [`/std:clatest`](std-specify-language-standard-version.md) | The latest draft C standard preview features. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C source file. |
 | [`/TP`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C++. |
