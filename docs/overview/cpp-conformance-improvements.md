@@ -32,6 +32,10 @@ For a broader summary of changes made to the C++ Standard Library, see [STL Chan
 
 Visual Studio 2022 version 17.7 contains the following highlighted conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
+### Added `/std:clatest` to the C compiler
+
+This switch behaves like the `/std:c++latest` switch for the C++ compiler. The switch enables all currently implemented compiler and standard library features proposed for the next draft C standard, as well as some in-progress and experimental features.
+
 ### C++ Standard Library
 
 The `<print>` library is now supported. See [P2093R14 Formatted output](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2093r14.html).
