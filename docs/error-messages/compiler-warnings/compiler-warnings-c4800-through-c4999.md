@@ -247,6 +247,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 1, error, off) C5262](c5262.md) | implicit fall-through occurs here; are you missing a break statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases |
 | Compiler warning (level 4, off) C5263 | calling '`std::move`' on a temporary object prevents copy elision |
 | Compiler warning (level 4, off) C5264 | '*variable-name*': 'const' variable is not used |
+| [Compiler warning C5267](c5267.md) | definition of implicit copy constructor/assignment operator for '*type*' is deprecated because it has a user-provided assignment operator/copy constructor |
 | Compiler warning (level 1, error) C5300 | '#pragma omp atomic': left operand of '*operator*' must match left hand side of assignment-expression |
 | [Compiler warning (level 1) C5301](c5301-c5302.md) | '#pragma omp for': '*loop-index*' increases while loop condition uses '*comparison*'; non-terminating loop? |
 | [Compiler warning (level 1) C5302](c5301-c5302.md) | '#pragma omp for': '*loop-index*' decreases while loop condition uses '*comparison*'; non-terminating loop? |
