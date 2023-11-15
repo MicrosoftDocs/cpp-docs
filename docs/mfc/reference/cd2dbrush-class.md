@@ -104,7 +104,7 @@ A pointer to the render target.
 A pointer to the opacity and transformation of a brush.
 
 *`bAutoDestroy`*\
-Indicates that the owner (`pParentTarget`) will destroy the object.
+Indicates that the owner (`pParentTarget`) destroys the object.
 
 ## <a name="destroy"></a> `CD2DBrush::Destroy`
 
