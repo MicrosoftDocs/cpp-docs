@@ -5,7 +5,6 @@ void run()
    size_t negative_count = 0;
    size_t positive_count = 0;
 
-
    // Write the counts to the message buffers.
    send(_negatives, negative_count);
    send(_positives, positive_count);
