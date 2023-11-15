@@ -54,7 +54,7 @@ The input string is a sequence of characters that can be interpreted as a numeri
 
 The *`str`* argument to **`atol`** has the following form:
 
-> [*`whitespace`*] [*`sign`*] [*`digits`*]]
+> [*`whitespace`*] [*`sign`*] [*`digits`*]
 
 A *`whitespace`* consists of space or tab characters, which are ignored; *`sign`* is either plus (`+`) or minus (`-`); and *`digits`* are one or more digits.
 
