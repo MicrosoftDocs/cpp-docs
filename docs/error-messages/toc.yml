@@ -4363,7 +4363,7 @@ items:
           href: compiler-warnings/c5248.md
         - name: Compiler warning (level 1, error, off) C5262
           href: compiler-warnings/c5262.md
-        - name: Compiler warning C5267
+        - name: Compiler warning (level 4) C5267
           href: compiler-warnings/c5267.md
         - name: Compiler warning (level 1) C5301 and C5302
           href: compiler-warnings/c5301-c5302.md
