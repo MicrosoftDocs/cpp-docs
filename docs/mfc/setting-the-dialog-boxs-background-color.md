@@ -8,7 +8,7 @@ helpviewer_keywords: ["CSS, background attributes in styles [MFC]", "HTML elemen
 
 You can set the background color of your dialog boxes by handling `WM_CTLCOLOR` messages for the dialog box window. The color you set is used for only the specified dialog box.
 
-For example, the following code fragment sets the background color of the dialog box to dark grey. The following code imagines a MFC application with an About dialog. The `OnCtlColor` member function is called whenever the dialog box is redrawn:
+For example, the following code fragment sets the background color of the dialog box to dark grey. The `OnCtlColor` member function is called whenever the dialog box is redrawn:
 
 ```cpp
 HBRUSH CAboutDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
@@ -18,8 +18,8 @@ HBRUSH CAboutDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 ```
 
 For the previous code fragment to work:
-- add `virtual HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);` to the `protected:` section of the class definition for your dialog
-- add the following to the class definition for your dialog and change `CMyDialog` to the name of your dialog class:
+- add `virtual HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);` to the `protected:` section of the class definition for your dialog.
+- add the following to the class definition for your dialog, and change `CMyDialog` to the name of your dialog class:
 
 ```cpp
 BEGIN_MESSAGE_MAP(CMyDialog, CDialogEx)
