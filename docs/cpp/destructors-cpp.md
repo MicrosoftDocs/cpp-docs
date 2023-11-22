@@ -6,7 +6,7 @@ helpviewer_keywords: ["objects [C++], destroying", "destructors, C++"]
 ---
 # Destructors (C++)
 
-A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to **`delete`**. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.
+A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to **`delete`** or **`delete[]`**. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.
 
 If you don't define a destructor, the compiler provides a default one; for many classes this is sufficient. You only need to define a custom destructor when the class stores handles to system resources that need to be released, or pointers that own the memory they point to.
 
@@ -49,7 +49,7 @@ int main() {
 }
 ```
 
-In the preceding example, the destructor `String::~String` uses the **`delete`** operator to deallocate the space dynamically allocated for text storage.
+In the preceding example, the destructor `String::~String` uses the **`delete[]`** operator to deallocate the space dynamically allocated for text storage.
 
 ## Declaring destructors
 
@@ -71,7 +71,7 @@ Destructors are called when one of the following events occurs:
 
 - A local (automatic) object with block scope goes out of scope.
 
-- An object allocated using the **`new`** operator is explicitly deallocated using **`delete`**.
+- An object allocated using the **`new`** or **`new[]`** operator is explicitly deallocated using **`delete`** or **`delete[]`**.
 
 - The lifetime of a temporary object ends.
 
@@ -124,7 +124,7 @@ int main() {
    delete b2;
 }
 
-Output: A3 dtor
+/* Output: A3 dtor
 A2 dtor
 A1 dtor
 
@@ -133,6 +133,7 @@ B1 dtor
 B3 dtor
 B2 dtor
 B1 dtor
+*/
 ```
 
 ### Virtual base classes
@@ -143,14 +144,14 @@ Destructors for virtual base classes are called in the reverse order of their ap
 Five classes, labeled A through E, are arranged in an inheritance graph. Class E is the base class of B, C, and D. Classes C and D are the base class of A and B.
 :::image-end:::
 
-The following lists the class heads for the classes shown in the figure.
+The following lists the class definitions for the classes shown in the figure:
 
 ```cpp
-class A
-class B
-class C : virtual public A, virtual public B
-class D : virtual public A, virtual public B
-class E : public C, public D, virtual public B
+class A {};
+class B {};
+class C : virtual public A, virtual public B {};
+class D : virtual public A, virtual public B {};
+class E : public C, public D, virtual public B {};
 ```
 
 To determine the order of destruction of the virtual base classes of an object of type `E`, the compiler builds a list by applying the following algorithm:
@@ -239,5 +240,5 @@ Explicitly defining a destructor, copy constructor, or copy assignment operator 
 
 ## See also
 
-[Copy Constructors and Copy Assignment Operators](../cpp/copy-constructors-and-copy-assignment-operators-cpp.md)</br>
+[Copy Constructors and Copy Assignment Operators](../cpp/copy-constructors-and-copy-assignment-operators-cpp.md)\
 [Move Constructors and Move Assignment Operators](../cpp/move-constructors-and-move-assignment-operators-cpp.md)
