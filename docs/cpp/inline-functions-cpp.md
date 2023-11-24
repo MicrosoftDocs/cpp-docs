@@ -202,6 +202,10 @@ Assuming coordinate manipulation is a relatively common operation in a client of
 
 - Return
 
+## Inline functions vs. macros
+
+inline functions are parsed by the compiler, and macros are expanded by the preprocessor.
+
 ## See also
 
 [`noinline`](../cpp/noinline.md)\
