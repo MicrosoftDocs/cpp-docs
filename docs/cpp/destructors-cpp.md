@@ -1,14 +1,14 @@
 ---
 description: "Learn more about: Destructors (C++)"
 title: "Destructors (C++)"
-ms.date: "07/20/2019"
+ms.date: "11/29/2023"
 helpviewer_keywords: ["objects [C++], destroying", "destructors, C++"]
 ---
 # Destructors (C++)
 
-A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to **`delete`** or **`delete[]`**. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.
+A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to **`delete`** or **`delete[]`**. A destructor has the same name as the class and is preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.
 
-If you don't define a destructor, the compiler provides a default one; for many classes this is sufficient. You only need to define a custom destructor when the class stores handles to system resources that need to be released, or pointers that own the memory they point to.
+If you don't define a destructor, the compiler provides a default one, and for some classes this is sufficient. You need to define a custom destructor when the class maintains resources that must be explicitly released, such as handles to system resources or pointers to memory that should be released when an instance of the class is destroyed.
 
 Consider the following declaration of a `String` class:
 
@@ -58,11 +58,8 @@ Destructors are functions with the same name as the class but preceded by a tild
 Several rules govern the declaration of destructors. Destructors:
 
 - Don't accept arguments.
-
 - Don't return a value (or **`void`**).
-
 - Can't be declared as **`const`**, **`volatile`**, or **`static`**. However, they can be invoked for the destruction of objects declared as **`const`**, **`volatile`**, or **`static`**.
-
 - Can be declared as **`virtual`**. Using virtual destructors, you can destroy objects without knowing their type—the correct destructor for the object is invoked using the virtual function mechanism. Destructors can also be declared as pure virtual functions for abstract classes.
 
 ## Using destructors
@@ -70,15 +67,10 @@ Several rules govern the declaration of destructors. Destructors:
 Destructors are called when one of the following events occurs:
 
 - A local (automatic) object with block scope goes out of scope.
-
-- An object allocated using the **`new`** operator is explicitly deallocated using **`delete`**. If **`delete[]`** is used instead, it would result in undefined behaviour.
-
-- Objects allocated using the **`new[]`** operator is explicitly deallocated using **`delete[]`**. If **`delete`** is used instead, it would result in undefined behaviour.
-
+- Use **`delete`** to deallocate an object allocated using **`new`**. Using **`delete[]`** results in undefined behaviour.
+- Use **`delete[]`** to deallocate an object allocated using **`new[]`**. Using **`delete`** results in undefined behaviour.
 - The lifetime of a temporary object ends.
-
 - A program ends and global or static objects exist.
-
 - The destructor is explicitly called using the destructor function's fully qualified name.
 
 Destructors can freely call class member functions and access class member data.
@@ -160,35 +152,22 @@ class E : public C, public D, virtual public B {};
 To determine the order of destruction of the virtual base classes of an object of type `E`, the compiler builds a list by applying the following algorithm:
 
 1. Traverse the graph left, starting at the deepest point in the graph (in this case, `E`).
-
 1. Perform leftward traversals until all nodes have been visited. Note the name of the current node.
-
 1. Revisit the previous node (down and to the right) to find out whether the node being remembered is a virtual base class.
-
 1. If the remembered node is a virtual base class, scan the list to see whether it has already been entered. If it isn't a virtual base class, ignore it.
-
 1. If the remembered node isn't yet in the list, add it to the bottom of the list.
-
 1. Traverse the graph up and along the next path to the right.
-
 1. Go to step 2.
-
 1. When the last upward path is exhausted, note the name of the current node.
-
 1. Go to step 3.
-
 1. Continue this process until the bottom node is again the current node.
 
 Therefore, for class `E`, the order of destruction is:
 
 1. The non-virtual base class `E`.
-
 1. The non-virtual base class `D`.
-
 1. The non-virtual base class `C`.
-
 1. The virtual base class `B`.
-
 1. The virtual base class `A`.
 
 This process produces an ordered list of unique entries. No class name appears twice. Once the list is constructed, it's walked in reverse order, and the destructor for each of the classes in the list from the last to the first is called.
