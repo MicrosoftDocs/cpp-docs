@@ -71,7 +71,9 @@ Destructors are called when one of the following events occurs:
 
 - A local (automatic) object with block scope goes out of scope.
 
-- An object allocated using the **`new`** or **`new[]`** operator is explicitly deallocated using **`delete`** or **`delete[]`**.
+- An object allocated using the **`new`** operator is explicitly deallocated using **`delete`**. If **`delete[]`** is used instead, it would result in undefined behaviour.
+
+- Objects allocated using the **`new[]`** operator is explicitly deallocated using **`delete[]`**. If **`delete`** is used instead, it would result in undefined behaviour.
 
 - The lifetime of a temporary object ends.
 
@@ -123,8 +125,10 @@ int main() {
    B3 * b2 = new B3;
    delete b2;
 }
+```
 
-/* Output: A3 dtor
+```output
+A3 dtor
 A2 dtor
 A1 dtor
 
@@ -133,7 +137,6 @@ B1 dtor
 B3 dtor
 B2 dtor
 B1 dtor
-*/
 ```
 
 ### Virtual base classes
