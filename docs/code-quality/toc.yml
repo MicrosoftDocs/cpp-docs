@@ -41,7 +41,7 @@ items:
     href: ../code-quality/intrinsic-functions.md
   - name: Best practices and examples (SAL)
     href: ../code-quality/best-practices-and-examples-sal.md
-- name: Specify additional code information by using _Analysis_assume_
+- name: Specify more code information by using _Analysis_assume_
   href: ../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md
 - name: C++ Core Guidelines checker warnings
   items:
@@ -481,6 +481,10 @@ items:
     href: ../code-quality/c6389.md
   - name: Warning C6390
     href: ../code-quality/c6390.md
+  - name: Warning C6393
+    href: ../code-quality/c6393.md
+  - name: Warning C6394
+    href: ../code-quality/c6394.md
   - name: Warning C6395
     href: ../code-quality/c6395.md
   - name: Warning C6400
@@ -625,10 +629,20 @@ items:
     href: ../code-quality/c26833.md
   - name: Warning C26835
     href: ../code-quality/c26835.md
+  - name: Warning C26837
+    href: ../code-quality/c26837.md
   - name: Warning C26859
     href: ../code-quality/c26859.md
   - name: Warning C26860
     href: ../code-quality/c26860.md
+  - name: Warning C26861
+    href: ../code-quality/c26861.md
+  - name: Warning C26862
+    href: ../code-quality/c26862.md
+  - name: Warning C26863
+    href: ../code-quality/c26863.md
+  - name: Warning C26864
+    href: ../code-quality/c26864.md
   - name: Warning C28020
     href: ../code-quality/c28020.md
   - name: Warning C28021
