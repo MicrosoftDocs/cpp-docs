@@ -23,7 +23,7 @@ These options and functionality are incompatible with [`/fsanitize=address`](../
 - [C++ AMP](../parallel/amp/cpp-amp-overview.md) is unsupported, and should be disabled.
 - [Universal Windows Platform](../cppcx/universal-windows-apps-cpp.md) (UWP) applications are unsupported.
 - [Special case list](https://clang.llvm.org/docs/SanitizerSpecialCaseList.html) files are unsupported.
-- [MFC](../mfc) using the optional [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch) runtime option is unsupported.
+- [MFC]((../mfc/mfc-concepts.md) using the optional [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch) runtime option is unsupported.
 
 ## Standard library support
 
