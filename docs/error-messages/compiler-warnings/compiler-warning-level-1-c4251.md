@@ -11,7 +11,7 @@ helpviewer_keywords: ["C4251"]
 
 ## Remarks
 
-This warning happens if a class is marked with `__declspec(dllexport)` or `__declspec(dllimport)` and a non-static data member that is a member of the class or a member of one of its base classes, has a type that is a class type that isn't marked with `__declspec(dllexport)` or `__declspec(dllimport)`. See [Example](#example).
+This warning happens if a class is marked with `__declspec(dllexport)` or `__declspec(dllimport)` and a nonstatic data member that is a member of the class or a member of one of its base classes, has a type that is a class type that isn't marked with `__declspec(dllexport)` or `__declspec(dllimport)`. See [Example](#example).
 
 To minimize the possibility of data corruption when exporting a class declared as [`__declspec(dllexport)`](../../cpp/dllexport-dllimport.md), ensure that:
 
@@ -20,11 +20,15 @@ To minimize the possibility of data corruption when exporting a class declared a
 - No inlined methods of your class use CRT functions or other library functions that use static data. For more information, see [Potential errors passing CRT objects across DLL boundaries](../../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).
 - No methods of your class (whether inlined or not) can use types where the instantiation in the EXE and DLL have static data differences.
 
-You can avoid issues when exporting a class from a DLL by defining your class to have virtual functions, a virtual destructor, and functions to instantiate and delete objects of the type. You can then call virtual functions on the type.
+You can avoid issues when exporting a class from a DLL by:
 
-C4251 can be ignored if your class is derived from a type in the C++ Standard Library, you're compiling a debug release (**`/MTd`**), and where the compiler error message refers to `_Container_base`.
+- define your class to have virtual functions
+- define a virtual destructor
+- define functions to instantiate and delete instances of the type
 
-Think carefully about adding `__declspec(dllexport)` or `__declspec(dllimport)` to a class because it is almost always not the right choice and it can make maintenance more difficult because it makes changing implementation details harder.
+You can ignore C4251 if your class is derived from a type in the C++ Standard Library, you're compiling a debug release (**`/MTd`**), and the compiler error message refers to `_Container_base`.
+
+Think carefully about adding `__declspec(dllexport)` or `__declspec(dllimport)` to a class because it's almost always not the right choice and it can make maintenance more difficult because it makes changing implementation details harder.
 
 ## Example
 
