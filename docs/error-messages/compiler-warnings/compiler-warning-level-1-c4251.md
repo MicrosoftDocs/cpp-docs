@@ -22,9 +22,9 @@ To minimize the possibility of data corruption when exporting a class declared a
 
 You can avoid issues when exporting a class from a DLL by:
 
-- define your class to have virtual functions
-- define a virtual destructor
-- define functions to instantiate and delete instances of the type
+- Defining your class to have virtual functions.
+- Defining a virtual destructor.
+- Defining functions to instantiate and delete instances of the type.
 
 You can ignore C4251 if your class is derived from a type in the C++ Standard Library, you're compiling a debug release (**`/MTd`**), and the compiler error message refers to `_Container_base`.
 
