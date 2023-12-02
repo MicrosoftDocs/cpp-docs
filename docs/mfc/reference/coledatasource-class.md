@@ -227,7 +227,7 @@ For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/n
 
 ## <a name="dodragdrop"></a> COleDataSource::DoDragDrop
 
-Call the `DoDragDrop` member function to perform a drag-and-drop operation for this data source, typically in an [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown) handler.
+Call the `DoDragDrop` member function to perform a drag-and-drop operation for this data source, typically in a [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown) handler.
 
 ```
 DROPEFFECT DoDragDrop(
