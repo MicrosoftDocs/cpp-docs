@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer known issues"
 description: "Technical description of the AddressSanitizer for Microsoft C/C++ known issues."
-ms.date: 04/15/2022
+ms.date: 12/1/2023
 helpviewer_keywords: ["AddressSanitizer known issues"]
 ---
 
@@ -23,10 +23,11 @@ These options and functionality are incompatible with [`/fsanitize=address`](../
 - [C++ AMP](../parallel/amp/cpp-amp-overview.md) is unsupported, and should be disabled.
 - [Universal Windows Platform](../cppcx/universal-windows-apps-cpp.md) (UWP) applications are unsupported.
 - [Special case list](https://clang.llvm.org/docs/SanitizerSpecialCaseList.html) files are unsupported.
+- [MFC](../mfc/mfc-concepts.md) using the optional [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md) runtime option is unsupported.
 
 ## Standard library support
 
-The MSVC standard library (STL) is partially enlightened to understand the AddressSanitizer and provide additional checks. For more information, see [container-overflow error](./error-container-overflow.md).
+The MSVC standard library (STL) is partially enlightened to understand the AddressSanitizer and provide other checks. For more information, see [container-overflow error](./error-container-overflow.md).
 
 When annotations are disabled or in versions without support, AddressSanitizer exceptions raised in STL code do still identify true bugs. However, they aren't as precise as they could be.
 
@@ -56,7 +57,7 @@ int main() {
 
 ## Windows versions
 
-As there are dependencies with specific Windows versions, support is focused on Windows 10. MSVC AddressSanitizer was tested on 10.0.14393 (RS1), and 10.0.21323 (pre-release insider build). [Report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
+As there are dependencies with specific Windows versions, support is focused on Windows 10. MSVC AddressSanitizer was tested on 10.0.14393 (RS1), and 10.0.21323 (prerelease insider build). [Report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Memory usage
 
@@ -68,7 +69,7 @@ The *`clang_rt.asan*.dll`* runtime files are installed next to the compilers in 
 
 ## Custom property sheet support
 
-The Property Manager window in the Visual Studio IDE allows you to add custom *`.props`* files to your projects. Even though the **Enable Address Sanitizer** property (`<EnableASAN>`) is shown, it's not honored by the build. That's because the custom *`.props`* files get included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
+The Property Manager window in the Visual Studio IDE allows you to add custom *`.props`* files to your projects. Even though the **Enable Address Sanitizer** property (`<EnableASAN>`) is shown, the build doesn't honor it. That's because the custom *`.props`* files get included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
 
 As a workaround, you can create a *`Directory.Build.props`* file in the root of your project to define the `<EnableASAN>` property. For more information, see [Customize C++ builds](/visualstudio/msbuild/customize-your-build#customize-c-builds).
 
