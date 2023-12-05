@@ -14,7 +14,7 @@ The following is a list of class constants:
 
 ## <a name="_mfc_variant_data_constants"></a> Variant Data Constants
 
-- VTS_COLOR A 32-bit integer used to represent a RGB color value.
+- VTS_COLOR A 32-bit integer used to represent an RGB color value.
 
 - VTS_FONT A pointer to the `IFontDisp` interface of an OLE font object.
 

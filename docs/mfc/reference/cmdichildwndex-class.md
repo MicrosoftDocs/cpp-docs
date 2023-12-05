@@ -953,7 +953,7 @@ BOOL IsTaskbarTabsSupportEnabled();
 
 ### Return Value
 
-TRUE if the MDI child can appear on Windows 7 taskbar tabs; FALSE if the MDI child can not appear on Windows 7 taskbar tabs.
+TRUE if the MDI child can appear on Windows 7 taskbar tabs; FALSE if the MDI child cannot appear on Windows 7 taskbar tabs.
 
 ### Remarks
 

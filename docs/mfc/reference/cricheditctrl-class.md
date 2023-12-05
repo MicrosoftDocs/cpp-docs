@@ -1195,7 +1195,7 @@ Contains the index value for the desired line in the text of the edit control, o
 
 ### Return Value
 
-The character index of the line specified in *`nLine`* or -1 if the specified line number is greater then the number of lines in the edit control.
+The character index of the line specified in *`nLine`* or -1 if the specified line number is greater than the number of lines in the edit control.
 
 ### Remarks
 

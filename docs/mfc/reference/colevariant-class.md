@@ -150,7 +150,7 @@ A [CByteArray](../../mfc/reference/cbytearray-class.md) object to be copied into
 A [CLongBinary](../../mfc/reference/clongbinary-class.md) object to be copied into the new `COleVariant` object.
 
 *pidl*<br/>
-A pointer to a [ITEMIDLIST](/windows/win32/api/shtypes/ns-shtypes-itemidlist) structure to be copied into the new `COleVariant` object.
+A pointer to an [ITEMIDLIST](/windows/win32/api/shtypes/ns-shtypes-itemidlist) structure to be copied into the new `COleVariant` object.
 
 ### Remarks
 

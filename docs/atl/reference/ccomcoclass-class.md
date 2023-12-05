@@ -170,7 +170,7 @@ A standard HRESULT value. For details, see Remarks.
 
 ### Remarks
 
-To call `Error`, your object must implement the `ISupportErrorInfo Interface` interface.
+To call `Error`, your object must implement the `ISupportErrorInfo` interface.
 
 If the *hRes* parameter is nonzero, then `Error` returns the value of *hRes*. If *hRes* is zero, then the first four versions of `Error` return DISP_E_EXCEPTION. The last two versions return the result of the macro **MAKE_HRESULT( 1, FACILITY_ITF,** *nID* **)**.
 

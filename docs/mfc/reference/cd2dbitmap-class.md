@@ -70,7 +70,7 @@ class CD2DBitmap : public CD2DResource;
 |[CD2DBitmap::m_lpszType](#m_lpsztype)|Resource type.|
 |[CD2DBitmap::m_pBitmap](#m_pbitmap)|Stores a pointer to an ID2D1Bitmap object.|
 |[CD2DBitmap::m_sizeDest](#m_sizedest)|Bitmap destination size.|
-|[CD2DBitmap::m_strPath](#m_strpath)|Botmap file path.|
+|[CD2DBitmap::m_strPath](#m_strpath)|Bitmap file path.|
 |[CD2DBitmap::m_uiResID](#m_uiresid)|Bitmap resource ID.|
 
 ## Inheritance Hierarchy

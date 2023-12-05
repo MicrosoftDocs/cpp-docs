@@ -222,7 +222,7 @@ A wrapper for `D2D1_RECT_F`.
 A wrapper for `D2D1_RECT_U`.
 
 [`CD2DResource` Class](../../mfc/reference/cd2dresource-class.md)<br/>
-An abstract class that provides a interface for creating and managing `D2D` resources such as brushes, layers, and texts.
+An abstract class that provides an interface for creating and managing `D2D` resources such as brushes, layers, and texts.
 
 [`CD2DRoundedRect` Class](../../mfc/reference/cd2droundedrect-class.md)<br/>
 A wrapper for `D2D1_ROUNDED_RECT`.
@@ -840,7 +840,7 @@ Mimics the appearance of Microsoft Windows XP or Microsoft Vista when the user s
 Gives an application the appearance of a Windows 7 application.
 
 [`CMFCWindowsManagerDialog` Class](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)<br/>
-Enables a user to manage MDI child windows in a MDI application.
+Enables a user to manage MDI child windows in an MDI application.
 
 [`CMiniFrameWnd` Class](../../mfc/reference/cminiframewnd-class.md)<br/>
 Represents a half-height frame window typically seen around floating toolbars.
