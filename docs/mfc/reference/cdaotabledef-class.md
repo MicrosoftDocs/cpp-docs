@@ -420,7 +420,7 @@ The path as shown in the table below is the full path for the directory containi
 
 The table in [CDaoTableDef::SetConnect](#setconnect) shows possible database types and their corresponding database specifiers and paths:
 
-For Microsoft Jet database base tables, the specifier is a empty string ("").
+For Microsoft Jet database base tables, the specifier is an empty string ("").
 
 If a password is required but not provided, the ODBC driver displays a login dialog box the first time a table is accessed and again if the connection is closed and reopened. If an attached table has the `dbAttachSavePWD` attribute, the login prompt will not appear when the table is reopened.
 

@@ -306,7 +306,7 @@ Specifies the illegal file name.
 
 ### Return Value
 
-Should return FALSE if this file name can not be passed further to the file dialog. In this case, focus is set back to the edit control and the user should continue editing. The default implementation displays a message box telling the user about the illegal file name and returns FALSE. You can override this method, correct the file name, and return TRUE for further processing.
+Should return FALSE if this file name cannot be passed further to the file dialog. In this case, focus is set back to the edit control and the user should continue editing. The default implementation displays a message box telling the user about the illegal file name and returns FALSE. You can override this method, correct the file name, and return TRUE for further processing.
 
 ### Remarks
 

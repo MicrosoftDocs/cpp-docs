@@ -205,7 +205,7 @@ void Cancel();
 
 ### Remarks
 
-The MFC ODBC classes no longer use asynchronous processing; to perform an asychronous operation, you must directly call the ODBC API function `SQLSetConnectOption`. For more information, see "Executing Functions Asynchronously" in the *ODBC SDK Programmer's Guide*.
+The MFC ODBC classes no longer use asynchronous processing; to perform an asynchronous operation, you must directly call the ODBC API function `SQLSetConnectOption`. For more information, see "Executing Functions Asynchronously" in the *ODBC SDK Programmer's Guide*.
 
 ## <a name="cancelupdate"></a> `CRecordset::CancelUpdate`
 
@@ -1474,7 +1474,7 @@ When you call `Open`, a query, usually a SQL **`SELECT`** statement, selects rec
 |**`SELECT`** column-list **`FROM`** table-list|The specified columns from the specified table(s).|`"SELECT CustId, CustName FROM`<br /><br /> `Customer"`|
 
 > [!CAUTION]
-> Don't insert extra whitespace in your SQL string. For example, if you insert whitespace between the curly brace and the **`CALL`** keyword, MFC will misinterpret the SQL string as a table name and incorporate it into a **`SELECT`** statement, which will result in an exception being thrown. Similarly, if your predefined query uses an output parameter, don't insert whitespace between the curly brace and the '' symbol. Finally, you must not insert whitespace before the curly brace in a **`CALL`** statement or before the **`SELECT`** keyword in a **`SELECT`** statment.
+> Don't insert extra whitespace in your SQL string. For example, if you insert whitespace between the curly brace and the **`CALL`** keyword, MFC will misinterpret the SQL string as a table name and incorporate it into a **`SELECT`** statement, which will result in an exception being thrown. Similarly, if your predefined query uses an output parameter, don't insert whitespace between the curly brace and the '' symbol. Finally, you must not insert whitespace before the curly brace in a **`CALL`** statement or before the **`SELECT`** keyword in a **`SELECT`** statement.
 
 The usual procedure is to pass `NULL` to `Open`; in this case, `Open` calls [GetDefaultSQL](#getdefaultsql). If you're using a derived `CRecordset` class, `GetDefaultSQL` gives the table name(s) you specified in `ClassWizard`. You can instead specify other information in the `lpszSQL` parameter.
 

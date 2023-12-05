@@ -32,7 +32,7 @@ class CD2DPathGeometry : public CD2DGeometry;
 |[CD2DPathGeometry::Create](#create)|Creates a CD2DPathGeometry. (Overrides [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|
 |[CD2DPathGeometry::Destroy](#destroy)|Destroys a CD2DPathGeometry object. (Overrides [CD2DGeometry::Destroy](../../mfc/reference/cd2dgeometry-class.md#destroy).)|
 |[CD2DPathGeometry::Detach](#detach)|Detaches resource interface from the object|
-|[CD2DPathGeometry::GetFigureCount](#getfigurecount)|Retrieves tthe number of figures in the path geometry.|
+|[CD2DPathGeometry::GetFigureCount](#getfigurecount)|Retrieves the number of figures in the path geometry.|
 |[CD2DPathGeometry::GetSegmentCount](#getsegmentcount)|Retrieves the number of segments in the path geometry.|
 |[CD2DPathGeometry::Open](#open)|Retrieves the geometry sink that is used to populate the path geometry with figures and segments.|
 |[CD2DPathGeometry::Stream](#stream)|Copies the contents of the path geometry to the specified ID2D1GeometrySink.|
