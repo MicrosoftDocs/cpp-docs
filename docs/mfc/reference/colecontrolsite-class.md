@@ -358,7 +358,7 @@ Specifies whether the control site wishes to stop accepting events. Nonzero if t
 
 ### Remarks
 
-If *bFreeze* is TRUE, the control site requests the control to stop fring events. If *bFreeze* is FALSE, the control site requests the control to continue firing events.
+If *bFreeze* is TRUE, the control site requests the control to stop firing events. If *bFreeze* is FALSE, the control site requests the control to continue firing events.
 
 > [!NOTE]
 > The control is not required to stop firing events if requested by the control site. It can continue firing but all subsequent events will be ignored by the control site.
@@ -1012,7 +1012,7 @@ Pointer to the list of arguments.
 
 ### Remarks
 
-Extra parameters for the method or property being invoked can be passeed using the *arg_list* parameter. If `SetProperty` encounters an error, an exception is thrown.
+Extra parameters for the method or property being invoked can be passed using the *arg_list* parameter. If `SetProperty` encounters an error, an exception is thrown.
 
 The type of exception is determined by the return value of the attempt to set the property or method. If the return value is `DISP_E_EXCEPTION`, a `COleDispatchExcpetion` is thrown; otherwise a `COleException`.
 

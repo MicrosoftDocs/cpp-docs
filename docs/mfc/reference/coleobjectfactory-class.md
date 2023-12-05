@@ -178,7 +178,7 @@ BOOL IsLicenseValid();
 
 ### Return Value
 
-TRUE if successul; otherwise false.
+TRUE if successful; otherwise false.
 
 ## <a name="isregistered"></a> COleObjectFactory::IsRegistered
 
