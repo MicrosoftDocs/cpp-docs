@@ -246,7 +246,7 @@ int main( )
    cout << "The set of bits in bitset<5> b1( 6 ) is: ( "
         << b1 << " )." << endl;
 
-   // The template parameter N can be an expresssion
+   // The template parameter N can be an expression
    bitset< 2 * sizeof ( int ) > b2;
    cout << "The set of bits in bitset<2 * sizeof ( int ) > b2 is: ( "
         << b2 << " )." << endl;
@@ -1321,7 +1321,7 @@ int main( )
 
    bitset<5> b1r3;
    b1r3 = b1.reset( 2 );
-   cout << "The collecion of bits obtained from resetting the\n"
+   cout << "The collection of bits obtained from resetting the\n"
         << "third bit of bitset b1 is: ( "<< b1r3 << " )"
         << endl;
 

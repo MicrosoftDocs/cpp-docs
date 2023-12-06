@@ -419,7 +419,7 @@ The following list contains the type traits that are supported by the compiler. 
     ref class R {};
     value struct V {};
     value struct V2 {
-    R ^ r;   // not a simnple value type
+    R ^ r;   // not a simple value type
     };
 
     int main() {

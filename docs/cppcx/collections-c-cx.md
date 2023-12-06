@@ -12,9 +12,9 @@ The Windows Runtime defines the interfaces for collections and related types, an
 
 ![Diagram of C plus plus C X inheritance tree for collection types.](../cppcx/media/cppcxcollectionsinheritancetree.png)
 
-- The [Platform::Collections::Vector class](../cppcx/platform-collections-vector-class.md) resembles the [std::vector class](../standard-library/vector-class.md).
+- The [Platform::Collections::Vector Class](../cppcx/platform-collections-vector-class.md) resembles the [std::vector class](../standard-library/vector-class.md).
 
-- The [Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md) class resembles the [std::map class](../standard-library/map-class.md).
+- The [Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md) resembles the [std::map class](../standard-library/map-class.md).
 
 - [Platform::Collections::VectorView Class](../cppcx/platform-collections-vectorview-class.md) and[Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md) are read-only versions of `Vector` and `Map`.
 

@@ -93,7 +93,7 @@ int main( )
    transform ( v1.begin( ), v1.end( ), v2.begin( ), v3.begin ( ),
       not_equal_to<double>( ) );
 
-   cout << "The result of the element-wise not_equal_to comparsion\n"
+   cout << "The result of the element-wise not_equal_to comparison\n"
       << "between v1 & v2 is: ( " ;
    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
       cout << *Iter3 << " ";

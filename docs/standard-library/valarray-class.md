@@ -1962,7 +1962,7 @@ int main( )
     // value_type declaration and initialization:
     valarray<int>::value_type Right = 10;
 
-    cout << "The decalared value_type Right is: "
+    cout << "The declared value_type Right is: "
             << Right << endl;
     va *= Right;
     cout << "The resulting valarray is:  ( ";

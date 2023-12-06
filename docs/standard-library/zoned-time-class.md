@@ -131,7 +131,7 @@ A `zoned_time` pointer that is `std::move(zt)`'d into the constructed `zoned_tim
 
 ### Example: construct a `zoned_time`
 
-The following shows how to create a `zoned_time` instance for the time zone `"Antartica/Casey"`, on 9/15/2021 at 4:45pm:
+The following shows how to create a `zoned_time` instance for the time zone `"Antarctica/Casey"`, on 9/15/2021 at 4:45pm:
 
 ```cpp
 // compile using: /std:c++latest

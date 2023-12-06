@@ -723,7 +723,7 @@ int main( )
 
    vaNE = ( vaL < vaR );
    cout << "The element-by-element result of "
-        << "the less-than comparson test is the\n"
+        << "the less-than comparison test is the\n"
         << "valarray: ( ";
       for (i = 0 ; i < 10 ; i++ )
          cout << vaNE [ i ] << " ";

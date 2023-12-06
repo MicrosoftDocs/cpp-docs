@@ -143,7 +143,7 @@ int main()
         {"Music", Thursday}
     };
 
-    // lambda to get a reference to the the day of the week for a class
+    // lambda to get a reference to the day of the week for a class
     auto getDay = [](classes& c) -> weekday&
     {
         return c.startDay;
