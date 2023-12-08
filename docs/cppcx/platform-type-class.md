@@ -100,7 +100,7 @@ The equivalent of the GetTypeCode() member method is the **`typeid`** property.
 
 ## <a name="tostring"></a> Type::ToString Method
 
-Retrieves a the name of the type.
+Retrieves the name of the type.
 
 ### Syntax
 

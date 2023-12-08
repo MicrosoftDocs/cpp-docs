@@ -24,7 +24,7 @@ static_assert( constant-expression ); // C++17 (Visual Studio 2017 and later)
 An integral constant expression that can be converted to a Boolean. If the evaluated expression is zero (false), the *string-literal* parameter is displayed and the compilation fails with an error. If the expression is nonzero (true), the **`static_assert`** declaration has no effect.
 
 *string-literal*\
-An message that is displayed if the *constant-expression* parameter is zero. The message is a string of characters in the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
+A message that is displayed if the *constant-expression* parameter is zero. The message is a string of characters in the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
 
 ## Remarks
 

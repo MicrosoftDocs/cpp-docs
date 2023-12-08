@@ -30,7 +30,7 @@ The typename of the InputIterator template class.
 |Name|Description|
 |----------|-----------------|
 |`difference_type`|A pointer difference (ptrdiff_t).|
-|`iterator_category`|The category of a input iterator (::std::input_iterator_tag).|
+|`iterator_category`|The category of an input iterator (::std::input_iterator_tag).|
 |`pointer`|A pointer to a `const X`|
 |`reference`|A reference to a `const X`|
 |`value_type`|The `X` typename.|

@@ -68,7 +68,7 @@ static IntPtr::operator IntPtr( void* value1);   static IntPtr::operator IntPtr(
 A pointer to a handle or IntPtr.
 
 *value2*<br/>
-An 32-bit integer that can be converted to an IntPtr.
+A 32-bit integer that can be converted to an IntPtr.
 
 *value3*<br/>
 An IntPtr.

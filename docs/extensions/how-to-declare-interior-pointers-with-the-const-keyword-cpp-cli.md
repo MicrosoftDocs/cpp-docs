@@ -66,7 +66,7 @@ int main() {
    // h_G->msg = "test";   error h_G is const
    interior_ptr<String^ const> int_ptr_G = &(h_G->msg);
 
-   G ^ const h_G2 = gcnew G;   // interior pointers to this obejct cannot be dereferenced and changed
+   G ^ const h_G2 = gcnew G;   // interior pointers to this object cannot be dereferenced and changed
    h_G2->msg = "test";
    interior_ptr<String^ const> int_ptr_G2 = &(h_G->msg);
 };

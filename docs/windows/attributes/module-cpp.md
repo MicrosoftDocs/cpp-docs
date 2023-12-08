@@ -21,7 +21,7 @@ Defines the library block in the .idl file.
 *type*<br/>
 (Optional) Can be one of the following:
 
-- `dll` Adds functions and classes that allow the resulting DLL to function as a in-process COM server. This is the default value.
+- `dll` Adds functions and classes that allow the resulting DLL to function as an in-process COM server. This is the default value.
 
 - `exe` Adds functions and classes that allow the resulting executable to function as a out of process COM server.
 
