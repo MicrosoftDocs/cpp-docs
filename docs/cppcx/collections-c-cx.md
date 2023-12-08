@@ -12,11 +12,11 @@ The Windows Runtime defines the interfaces for collections and related types, an
 
 ![Diagram of C plus plus C X inheritance tree for collection types.](../cppcx/media/cppcxcollectionsinheritancetree.png)
 
-- The [Platform::Collections::Vector Class](../cppcx/platform-collections-vector-class.md) resembles the [std::vector class](../standard-library/vector-class.md).
+- The [Platform::Collections::Vector class](../cppcx/platform-collections-vector-class.md) resembles the [std::vector class](../standard-library/vector-class.md).
 
-- The [Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md) resembles the [std::map class](../standard-library/map-class.md).
+- The [Platform::Collections::Map class](../cppcx/platform-collections-map-class.md) resembles the [std::map class](../standard-library/map-class.md).
 
-- [Platform::Collections::VectorView Class](../cppcx/platform-collections-vectorview-class.md) and[Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md) are read-only versions of `Vector` and `Map`.
+- [Platform::Collections::VectorView class](../cppcx/platform-collections-vectorview-class.md) and[Platform::Collections::MapView class](../cppcx/platform-collections-mapview-class.md) are read-only versions of `Vector` and `Map`.
 
 - Iterators are defined in the [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md). These iterators satisfy the requirements for STL iterators and enable the use of [std::find](../standard-library/algorithm-functions.md#find),  [std::count_if](../standard-library/algorithm-functions.md#count_if), and other STL algorithms on any [Windows::Foundation::Collections](/uwp/api/windows.foundation.collections) interface type or [Platform::Collections](../cppcx/platform-collections-namespace.md) concrete type. For example, this means that you can iterate a collection in a Windows Runtime component that's created in C# and apply an STL algorithm to it.
 
@@ -95,27 +95,27 @@ Collections fall into four categories: modifiable versions and read-only version
 
 Elements of a modifiable collection can be changed, but elements of a read-only collection, which is known as a *view*, can only be read. Elements of a [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) or[Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md) collection can be accessed by using an iterator or the collection's [Vector::GetAt](../cppcx/platform-collections-vector-class.md#getat) and an index. Elements of an associative collection can be accessed by using the collection's [Map::Lookup](../cppcx/platform-collections-map-class.md#lookup) and a key.
 
-[Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md)<br/>
+[Platform::Collections::Map class](../cppcx/platform-collections-map-class.md)<br/>
 A modifiable, associative collection. Map elements are key-value pairs. Looking up a key to retrieve its associated value, and iterating through all key-value pairs, are both supported.
 
 `Map` and `MapView` are templated on `<K, V, C = std::less<K>>`; therefore, you can customize the comparator.  Additionally, `Vector` and `VectorView` are templated on `<T, E = std::equal_to<T>>` so that you can customize the behavior of `IndexOf()`. This is important mostly for `Vector` and `VectorView` of value structs. For example, to create a Vector\<Windows::Foundation::DateTime>, you must provide a custom comparator because DateTime does not overload the == operator.
 
-[Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md)<br/>
+[Platform::Collections::MapView class](../cppcx/platform-collections-mapview-class.md)<br/>
 A read-only version of a `Map`.
 
-[Platform::Collections::Vector Class](../cppcx/platform-collections-vector-class.md)<br/>
+[Platform::Collections::Vector class](../cppcx/platform-collections-vector-class.md)<br/>
 A modifiable sequence collection. `Vector<T>` supports constant-time random access and amortized-constant-time [Append](../cppcx/platform-collections-vector-class.md#append) operations..
 
-[Platform::Collections::VectorView Class](../cppcx/platform-collections-vectorview-class.md)<br/>
+[Platform::Collections::VectorView class](../cppcx/platform-collections-vectorview-class.md)<br/>
 A read-only version of a `Vector`.
 
-[Platform::Collections::InputIterator Class](../cppcx/platform-collections-inputiterator-class.md)<br/>
+[Platform::Collections::InputIterator class](../cppcx/platform-collections-inputiterator-class.md)<br/>
 An STL iterator that satisfies the requirements of an STL input iterator.
 
-[Platform::Collections::VectorIterator Class](../cppcx/platform-collections-vectoriterator-class.md)<br/>
+[Platform::Collections::VectorIterator class](../cppcx/platform-collections-vectoriterator-class.md)<br/>
 An STL iterator that satisfies the requirements of an STL mutable random-access iterator.
 
-[Platform::Collections::VectorViewIterator Class](../cppcx/platform-collections-vectorviewiterator-class.md)<br/>
+[Platform::Collections::VectorViewIterator class](../cppcx/platform-collections-vectorviewiterator-class.md)<br/>
 An STL iterator that satisfies the requirements of an STL  **`const`** random-access iterator.
 
 ### begin() and end() functions
