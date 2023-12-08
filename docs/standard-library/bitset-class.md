@@ -248,7 +248,7 @@ int main( )
 
    // The template parameter N can be an expression
    bitset< 2 * sizeof ( int ) > b2;
-   cout << "The set of bits in bitset<2 * sizeof ( int ) > b2 is: ( "
+   cout << "The set of bits in bitset< 2 * sizeof ( int ) > b2 is: ( "
         << b2 << " )." << endl;
 
    // The base two representation will be truncated
