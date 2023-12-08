@@ -106,7 +106,7 @@ To make an `index_sequence` for a parameter pack, use `index_sequence_for`\<T...
 
 Header: \<type_traits\>
 
-Namespace: std
+Namespace: `std`
 
 ## See also
 
