@@ -700,6 +700,8 @@ items:
                       href: ../build/reference/qsafe-fp-loads.md
                     - name: /Qspectre
                       href: ../build/reference/qspectre.md
+                    - name: /Qspectre-jmp
+                      href: ../build/reference/qspectre-jmp.md
                     - name: /Qspectre-load
                       href: ../build/reference/qspectre-load.md
                     - name: /Qspectre-load-cf

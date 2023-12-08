@@ -78,7 +78,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 |`m_bShowDocColorsWhenDocked`|A Boolean that indicates whether to show document colors when the color bar is docked. For more information, see [CMFCColorBar::SetDocumentColors](#setdocumentcolors).|
 |`m_bStdColorDlg`|A Boolean that indicates whether to show the standard system color dialog box or the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) dialog box. For more information, see [CMFCColorBar::EnableOtherButton](#enableotherbutton).|
 |`m_ColorAutomatic`|A [COLORREF](/windows/win32/gdi/colorref) that stores the current automatic color. For more information, see [CMFCColorBar::EnableOtherButton](#enableotherbutton).|
-|`m_ColorNames`|An [CMap](../../mfc/reference/cmap-class.md) object that associates a set of RGB colors with their names.|
+|`m_ColorNames`|A [CMap](../../mfc/reference/cmap-class.md) object that associates a set of RGB colors with their names.|
 |`m_colors`|A [CArray](../../mfc/reference/carray-class.md) of [COLORREF](/windows/win32/gdi/colorref) values that contains the colors that are displayed in the color bar control.|
 |`m_ColorSelected`|A [COLORREF](/windows/win32/gdi/colorref) value that is the color that the user has currently selected from the color bar control.|
 |`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) of [COLORREF](/windows/win32/gdi/colorref) values that contains the colors that are currently used in a document.|

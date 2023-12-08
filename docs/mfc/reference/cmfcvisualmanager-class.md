@@ -556,7 +556,7 @@ An application can only have one `CMFCVisualManager` object associated with it. 
 
 ## <a name="getmditabsborderssize"></a> CMFCVisualManager::GetMDITabsBordersSize
 
-The framework calls this method to determine the border size of a MDITabs window before it draws the window.
+The framework calls this method to determine the border size of an MDITabs window before it draws the window.
 
 ```
 virtual int GetMDITabsBordersSize();

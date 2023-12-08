@@ -114,7 +114,7 @@ The following procedure shows you how to add functionality to the `CTaskDialog` 
     taskDialog.LoadCommandControls(TEMP_LINE1, TEMP_LINE2);
     taskDialog.SetExpansionArea(
         expansionInfo, collapsedLabel, expandedLabel);
-    taskDialog.SetFooterText(L"This is the a small footnote to the user");
+    taskDialog.SetFooterText(L"This is a small footnote to the user");
     taskDialog.SetVerificationCheckboxText(L"Remember your selection");
     ```
 
