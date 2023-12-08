@@ -1974,7 +1974,7 @@ int main( )
 
 ```Output
 The initial operand valarray is:  ( 0 -1 2 -1 4 -1 6 -1 8 -1 ).
-The decalared value_type Right is: 10
+The declared value_type Right is: 10
 The resulting valarray is:  ( 0 -10 20 -10 40 -10 60 -10 80 -10 ).
 ```
 
