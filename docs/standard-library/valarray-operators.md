@@ -734,7 +734,7 @@ int main( )
 ```Output
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
-The element-by-element result of the less-than comparson test is the
+The element-by-element result of the less-than comparison test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 ```
 
