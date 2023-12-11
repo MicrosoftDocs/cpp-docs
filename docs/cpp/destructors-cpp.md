@@ -14,42 +14,42 @@ Consider the following declaration of a `String` class:
 
 ```cpp
 // spec1_destructors.cpp
-#include <string>
+#include <string> // strlen()
 
-class String {
+class String
+{
     public:
         String(const char* ch);  // Declare constructor
-        ~String() noexcept;           //  and destructor.
+        ~String() noexcept;      //  and destructor.
     private:
-        char* _text{ nullptr };
-        size_t  sizeOfText{ 0 };
+        char* _text{nullptr};
 };
 
 // Define the constructor.
-String::String(const char* ch) {
-    sizeOfText = strlen(ch) + 1;
+String::String(const char* ch)
+{
+    size_t sizeOfText = strlen(ch) + 1; // +1 to account for trailing NULL
 
     // Dynamically allocate the correct amount of memory.
     _text = new char[sizeOfText];
 
     // If the allocation succeeds, copy the initialization string.
     if (_text)
+    {
         strcpy_s(_text, sizeOfText, ch);
+    }
 }
 
 // Define the destructor.
-String::~String() noexcept {
-    // Deallocate the memory that was previously reserved
-    //  for this string.
+String::~String()
+{
+    // Deallocate the memory that was previously reserved for the string.
     delete[] _text;
-    _text = nullptr;
 }
 
 int main()
 {
-    String str("The piper in the glen...");
-
-    return 0;
+    String str("We love C++");
 }
 ```
 
