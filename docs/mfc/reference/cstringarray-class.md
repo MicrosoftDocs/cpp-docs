@@ -4,7 +4,6 @@ title: "CStringArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringArray", "AFXCOLL/CStringArray", "AFXCOLL/CStringArray::CStringArray", "AFXCOLL/CStringArray::Add", "AFXCOLL/CStringArray::Append", "AFXCOLL/CStringArray::Copy", "AFXCOLL/CStringArray::ElementAt", "AFXCOLL/CStringArray::FreeExtra", "AFXCOLL/CStringArray::GetAt", "AFXCOLL/CStringArray::GetCount", "AFXCOLL/CStringArray::GetData", "AFXCOLL/CStringArray::GetSize", "AFXCOLL/CStringArray::GetUpperBound", "AFXCOLL/CStringArray::InsertAt", "AFXCOLL/CStringArray::IsEmpty", "AFXCOLL/CStringArray::RemoveAll", "AFXCOLL/CStringArray::RemoveAt", "AFXCOLL/CStringArray::SetAt", "AFXCOLL/CStringArray::SetAtGrow", "AFXCOLL/CStringArray::SetSize"]
 helpviewer_keywords: ["CStringArray [MFC], CStringArray", "CStringArray [MFC], Add", "CStringArray [MFC], Append", "CStringArray [MFC], Copy", "CStringArray [MFC], ElementAt", "CStringArray [MFC], FreeExtra", "CStringArray [MFC], GetAt", "CStringArray [MFC], GetCount", "CStringArray [MFC], GetData", "CStringArray [MFC], GetSize", "CStringArray [MFC], GetUpperBound", "CStringArray [MFC], InsertAt", "CStringArray [MFC], IsEmpty", "CStringArray [MFC], RemoveAll", "CStringArray [MFC], RemoveAt", "CStringArray [MFC], SetAt", "CStringArray [MFC], SetAtGrow", "CStringArray [MFC], SetSize"]
-ms.assetid: 6c637e06-bba8-4c08-b0fc-cf8cb067ce34
 ---
 # `CStringArray` Class
 
@@ -12,7 +11,7 @@ Supports arrays of [`CString`](../../atl-mfc-shared/using-cstring.md) objects.
 
 ## Syntax
 
-```
+```cpp
 class CStringArray : public CObject
 ```
 
@@ -24,7 +23,7 @@ The member functions of `CStringArray` are similar to the member functions of cl
 
 for example, translates to
 
-`CString CStringArray::GetAt( int <nIndex> ) const;`
+`const CString& CStringArray::GetAt( int <nIndex> ) const;`
 
 and
 
