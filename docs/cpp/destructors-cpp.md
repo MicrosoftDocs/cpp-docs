@@ -19,13 +19,13 @@ Consider the following declaration of a `String` class:
 class String
 {
     public:
-        String(const char* ch);  // Declare constructor
-        ~String() noexcept;      //  and destructor.
+        String(const char* ch);  // Declare the constructor
+        ~String();               // Declare the destructor
     private:
         char* _text{nullptr};
 };
 
-// Define the constructor.
+// Define the constructor
 String::String(const char* ch)
 {
     size_t sizeOfText = strlen(ch) + 1; // +1 to account for trailing NULL
