@@ -79,7 +79,8 @@ In this program, calls are made to the `_ASSERT` and `_ASSERTE` macros to test t
 
 int main()
 {
-   char *p1, *p2;
+    char* p1 = NULL;
+    char* p2 = NULL;
 
    // The Reporting Mode and File must be specified
    // before generating a debug report via an assert
@@ -93,10 +94,12 @@ int main()
    _CrtSetReportFile(_CRT_ASSERT, _CRTDBG_FILE_STDOUT);
 
    // Allocate and assign the pointer variables.
-   p1 = (char *)malloc(10);
-   strcpy_s(p1, 10, "I am p1");
-   p2 = (char *)malloc(10);
-   strcpy_s(p2, 10, "I am p2");
+   p1 = (char*)malloc(10);
+   if(p1 != NULL)       // _ASSERT(p1 != NULL);
+       strcpy_s(p1, 10, "I am p1");
+   p2 = (char*)malloc(10);
+   if(p2 != NULL)       // _ASSERT(p2 != NULL);
+       strcpy_s(p2, 10, "I am p2");
 
    // Use the report macros as a debugging
    // warning mechanism, similar to printf.
