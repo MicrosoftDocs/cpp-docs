@@ -171,7 +171,7 @@ A `BYTE` value to be copied into the new `_variant_t` object.
 A **`char`** value to be copied into the new `_variant_t` object.
 
 *`usSrc`*\
-A **`unsigned short`** value to be copied into the new `_variant_t` object.
+An **`unsigned short`** value to be copied into the new `_variant_t` object.
 
 *`ulSrc`*\
 A **`unsigned long`** value to be copied into the new `_variant_t` object.

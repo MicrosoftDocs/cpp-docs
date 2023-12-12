@@ -46,7 +46,7 @@ Allowed types are:
 
 - public enum class
 
-**UnorderedMap** is basically a wrapper for [std::unordered_map](../standard-library/unordered-map-class.md) that supports storage of Windows Runtime types. It is the a concrete implementation of the [Windows::Foundation::Collections::IMap](/uwp/api/windows.foundation.collections.imap-2) and [IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap-2) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::UnorderedMap` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap](/uwp/api/windows.foundation.collections.imap-2).
+**UnorderedMap** is basically a wrapper for [std::unordered_map](../standard-library/unordered-map-class.md) that supports storage of Windows Runtime types. It is the concrete implementation of the [Windows::Foundation::Collections::IMap](/uwp/api/windows.foundation.collections.imap-2) and [IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap-2) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::UnorderedMap` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap](/uwp/api/windows.foundation.collections.imap-2).
 
 For more information, see [Collections](../cppcx/collections-c-cx.md).
 
@@ -119,7 +119,7 @@ A convenient way to hold the iterator returned by First() is to assign the retur
 
 ## <a name="getview"></a> UnorderedMap::GetView Method
 
-Returns a read-only view of the current UnorderedMap; that is, an [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView](/uwp/api/windows.foundation.collections.imapview-2) interface.
+Returns a read-only view of the current UnorderedMap; that is, a [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView](/uwp/api/windows.foundation.collections.imapview-2) interface.
 
 ### Syntax
 

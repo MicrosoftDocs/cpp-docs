@@ -573,7 +573,7 @@ Create a view that contains the elements of a range that match the specified con
 
 ```cpp
 1) template<ranges::viewable_range R, class P>
-    requires requires {filter_view(forward<R>(rg), forward<P>(predicate));}
+    requires {filter_view(forward<R>(rg), forward<P>(predicate));}
 constexpr ranges::view auto filter(R&& rg, P&& predicate);
 
 2) template<class P>

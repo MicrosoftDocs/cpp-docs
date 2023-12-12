@@ -43,7 +43,7 @@ Ordered maps and sets support bi-directional iterators, and their unordered coun
 
 The ordered associative containers (map, multimap, set, and multiset) now support heterogeneous lookup, which means that you're no longer required to pass the exact same object type as the key or element in member functions such as `find()` and `lower_bound()`. Instead, you can pass any type for which an overloaded `operator<` is defined that enables comparison to the key type.
 
-Heterogenous lookup is enabled on an opt-in basis when you specify the `std::less<>` or `std::greater<>` "diamond functor" comparator when declaring the container variable, as shown here:
+Heterogeneous lookup is enabled on an opt-in basis when you specify the `std::less<>` or `std::greater<>` "diamond functor" comparator when declaring the container variable, as shown here:
 
 ```cpp
 std::set<BigObject, std::less<>> myNewSet;
