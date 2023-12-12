@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer known issues"
 description: "Technical description of the AddressSanitizer for Microsoft C/C++ known issues."
-ms.date: 12/1/2023
+ms.date: 12/11/2023
 helpviewer_keywords: ["AddressSanitizer known issues"]
 ---
 
@@ -56,7 +56,7 @@ int main() {
 
 ## Overriding operator new and delete
 
-AddressSanitizer (ASAN) has a custom version of `operator new` and `operator delete` that it uses to help ASAN find more allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Running the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) ensures that ASan's `new`/`delete` override has low precedence, so that any `operator new` or `operator delete` overrides in other libraries are chosen by the linker over ASan's. When this happens, ASAN may not be able to catch some errors that rely on its custom `operator new` and `operator delete`.
+AddressSanitizer (ASAN) has a custom version of `operator new` and `operator delete` that it uses to find more allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Running the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) ensures that ASAN's `new`/`delete` override has low precedence, so that the linker chooses any `operator new` or `operator delete` overrides in other libraries over ASAN's custom versions. When this happens, ASAN may not be able to catch some errors that rely on its custom `operator new` and `operator delete`.
 
 [MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete` and so might miss errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md).
 
