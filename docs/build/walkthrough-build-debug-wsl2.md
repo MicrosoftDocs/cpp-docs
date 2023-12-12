@@ -128,7 +128,7 @@ If you have a MSBuild-based Linux project, then you can upgrade to the WSL 2 too
 
 If you're targeting a WSL 2 distribution and you don't want to use the WSL 2 toolset, then in the **Platform Toolset** dropdown, select the **GCC for Windows Subsystem for Linux** or **Clang for Windows Subsystem for Linux** toolset. If either of these toolsets are selected, Visual Studio won't maintain a copy of your source files in the WSL file system and will instead access source files over the mounted Windows drive (`/mnt/`…). System headers are still automatically copied to the Windows file system to provide a native IntelliSense experience. Customize the headers that are included or excluded from this copy in **Property Pages** > **General**.
 
-In most cases, it's best to use the WSL 2 toolset with WSL 2 distributions because WSL 2 is slower when project files are stored in the Windows file system. To to learn more, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
+In most cases, it's best to use the WSL 2 toolset with WSL 2 distributions because WSL 2 is slower when project files are stored in the Windows file system. To learn more, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
 
 ## See also
 

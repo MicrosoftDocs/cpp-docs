@@ -189,7 +189,7 @@ S_OK if successful; otherwise, the HRESULT returned by GetActivationFactory.
 
 ## <a name="getclassobject"></a> Module::GetClassObject
 
-Retreives a cache of class factories.
+Retrieves a cache of class factories.
 
 ```cpp
 HRESULT GetClassObject(
@@ -309,7 +309,7 @@ The number of CLSIDs to register.
 
 ### Return Value
 
-S_OK if successfu; otherwise, an HRESULT such as CO_E_OBJISREG that indicates the reason the operation failed.
+S_OK if successful; otherwise, an HRESULT such as CO_E_OBJISREG that indicates the reason the operation failed.
 
 ### Remarks
 

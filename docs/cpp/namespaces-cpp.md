@@ -64,7 +64,7 @@ The **`using`** directive allows all the names in a **`namespace`** to be used w
 Typically, you declare a namespace in a header file. If your function implementations are in a separate file, then qualify the function names, as in this example.
 
 ```cpp
-//contosoData.h
+// contosoData.h
 #pragma once
 namespace ContosoDataServer
 {
@@ -144,7 +144,7 @@ Ordinary nested namespaces can be used to encapsulate internal implementation de
 In contrast to an ordinary nested namespace, members of an inline namespace are treated as members of the parent namespace. This characteristic enables argument dependent lookup on overloaded functions to work on functions that have overloads in a parent and a nested inline namespace. It also enables you to declare a specialization in a parent namespace for a template that is declared in the inline namespace. The following example shows how external code binds to the inline namespace by default:
 
 ```cpp
-//Header.h
+// Header.h
 #include <string>
 
 namespace Test
@@ -160,6 +160,7 @@ namespace Test
     }
 }
 
+// main.cpp
 #include "header.h"
 #include <string>
 #include <iostream>

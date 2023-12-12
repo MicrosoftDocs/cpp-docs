@@ -139,7 +139,7 @@ STDMETHOD(
 ### Parameters
 
 *iidCount*<br/>
-When this operation completes, the number of interace IDs in the *iids* array.
+When this operation completes, the number of interface IDs in the *iids* array.
 
 *iids*<br/>
 When this operation completes, an array of implemented interface IDs.

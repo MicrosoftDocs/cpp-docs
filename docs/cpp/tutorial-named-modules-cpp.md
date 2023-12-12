@@ -271,7 +271,7 @@ module; // optional. Defines the beginning of the global module fragment
 export module [module-name]; // Required. Marks the beginning of the module preamble
 
 // import statements go here. They're available to all files that belong to the named module
-// Put #includes in in the global module fragment, above
+// Put #includes in the global module fragment, above
 
 // After any import statements, the module purview begins here
 // Put exported functions, types, and templates here
