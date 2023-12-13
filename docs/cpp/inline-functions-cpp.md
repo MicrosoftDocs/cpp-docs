@@ -7,11 +7,11 @@ helpviewer_keywords: ["inline functions [C++], class members"]
 ---
 # Inline functions (C++)
 
-The **`inline`** keyword suggests that the compiler substitute the code within the function definition for every instance of a function call.
+The **`inline`** keyword suggests that the compiler substitute the code within the function definition in place of each call to that function.
 
-In theory, using inline functions can make your program faster because they eliminate the overhead associated with function calls. Calling a function requires pushing the return address on the stack, pushing arguments onto the stack, jumping to the function body, and then executing a return instruction when the function finishes. This process is eliminated by inlining the function. The compiler can optimize functions expanded inline in ways that aren't available for a normal functions. A tradeoff is that the overall size of your program can increase.
+In theory, using inline functions can make your program faster because they eliminate the overhead associated with function calls. Calling a function requires pushing the return address on the stack, pushing arguments onto the stack, jumping to the function body, and then executing a return instruction when the function finishes. This process is eliminated by inlining the function. The compiler also has different opportunities to optimize functions expanded inline versus those that aren't. A tradeoff of inline functions is that the overall size of your program can increase.
 
-Inline code substitution occurs at the compiler's discretion. For example, the compiler won't inline a function if its address is taken or if the compiler decides it is too large to be practical to inline.
+Inline code substitution is done at the compiler's discretion. For example, the compiler won't inline a function if its address is taken or if the compiler decides it is too large.
 
 A function defined in the body of a class declaration is implicitly an inline function.
 
@@ -76,7 +76,7 @@ The **`inline`** keyword tells the compiler that inline expansion is preferred. 
 - Recursive functions.
 - Functions that are referred to through a pointer elsewhere in the translation unit.
 
-These reasons may interfere with inlining, *as may others*, at the discretion of the compiler. Don't depend on the **`inline`** specifier to cause a function to be inlined.
+These reasons may interfere with inlining, *as may others*, at determined by the compiler. Don't depend on the **`inline`** specifier to cause a function to be inlined.
 
 Rather than expand an inline function defined in a header file, the compiler may create it as a callable function in more than one translation unit. The compiler marks the generated function for the linker to prevent one-definition-rule (ODR) violations.
 
@@ -188,7 +188,7 @@ Assuming coordinate manipulation is a relatively common operation in a client of
 
 ## Inline functions vs. macros
 
-A macro may seem to have some of the properties of an `inline` function. But there are important differences. Consider the following example:
+A macro has some things in common with an `inline` function. But there are important differences. Consider the following example:
 
 ```cpp
 #include <iostream>
@@ -220,12 +220,12 @@ int main()
 Here are some of the differences between the macro and the inline function:
 
 - Macros are always expanded inline. However, an inline function is only inlined when the compiler determines it is the optimal thing to do.
-- The macro may result in unexpected behavior. For example, the macro `mult(5+5,5+5)` expands to `5 + 5 * 5 + 5` resulting in 35, whereas the function evaluates `10 * 10`.
-- An inline function is subject to semantic processing by the compiler, whereas the expansion of a macro is done by the preprocessor and doesn't benefit from the same semantic processing. Thus, macros aren't type-safe, whereas functions are.
+- The macro may result in unexpected behavior. For example, the macro `mult(5+5,5+5)` expands to `5 + 5 * 5 + 5` resulting in 35, whereas the function evaluates `10 * 10`. You could address that by defining the macro as #define `mult(a, b) ((a)*(b))`, but you'd need to remember to do that.
+- An inline function is subject to semantic processing by the compiler, whereas the preprocessor expands macros without that same benefit. Macros aren't type-safe, whereas functions are.
 - Expressions passed as arguments to inline functions are evaluated once. In some cases, expressions passed as arguments to macros can be evaluated more than once. For example, consider the following:
 
 ```cpp
-#define sqr(a) a * a
+#define sqr(a) ((a) * (a))
 
 int main()
 {
@@ -235,7 +235,7 @@ int main()
 }
 ```
 
-In this example, the expression `c++` is evaluated twice, once for each occurrence of `a` in the macro expansion. Instead, if `sqr` were an inline function, the expression `c++` would be evaluated only once.
+In this example, the expression `c++` is evaluated twice: once for each occurrence of `a` in the macro expansion. Instead, if `sqr` were an inline function, the expression `c++` would be evaluated only once.
 
 ## See also
 
