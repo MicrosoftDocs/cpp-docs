@@ -11,7 +11,7 @@ The **`inline`** keyword suggests that the compiler substitute the code within t
 
 In theory, using inline functions can make your program faster because they eliminate the overhead associated with function calls. Calling a function requires pushing the return address on the stack, pushing arguments onto the stack, jumping to the function body, and then executing a return instruction when the function finishes. This process is eliminated by inlining the function. The compiler also has different opportunities to optimize functions expanded inline versus those that aren't. A tradeoff of inline functions is that the overall size of your program can increase.
 
-Inline code substitution is done at the compiler's discretion. For example, the compiler won't inline a function if its address is taken or if the compiler decides it is too large.
+Inline code substitution is done at the compiler's discretion. For example, the compiler won't inline a function if its address is taken or if the compiler decides it's too large.
 
 A function defined in the body of a class declaration is implicitly an inline function.
 
@@ -71,18 +71,18 @@ The compiler treats the inline expansion options and keywords as suggestions. Th
 
 For compatibility with previous versions, **`_inline`** and **`_forceinline`** are synonyms for **`__inline`** and **`__forceinline`**, respectively, unless compiler option [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
-The **`inline`** keyword tells the compiler that inline expansion is preferred. However, the compiler can ignore this. Two cases where this behavior can happen are:
+The **`inline`** keyword tells the compiler that inline expansion is preferred. However, the compiler can ignore it. Two cases where this behavior can happen are:
 
 - Recursive functions.
 - Functions that are referred to through a pointer elsewhere in the translation unit.
 
-These reasons may interfere with inlining, *as may others*, at determined by the compiler. Don't depend on the **`inline`** specifier to cause a function to be inlined.
+These reasons may interfere with inlining, *as may others*, as determined by the compiler. Don't depend on the **`inline`** specifier to cause a function to be inlined.
 
 Rather than expand an inline function defined in a header file, the compiler may create it as a callable function in more than one translation unit. The compiler marks the generated function for the linker to prevent one-definition-rule (ODR) violations.
 
 As with normal functions, there's no defined order for argument evaluation in an inline function. In fact, it could be different from the argument evaluation order when passed using the normal function-call protocol.
 
-The [`/Ob`](../build/reference/ob-inline-function-expansion.md) compiler optimization option helps to determine whether inline function expansion actually occurs.\
+Use the [`/Ob`](../build/reference/ob-inline-function-expansion.md) compiler optimization option to influence whether inline function expansion actually occurs.\
 [`/LTCG`](../build/reference/ltcg-link-time-code-generation.md) does cross-module inlining whether it's requested in source code or not.
 
 ### Example 1
@@ -146,7 +146,7 @@ For more information on using the **`inline`** specifier, see:
 
 ## When to use inline functions
 
-Inline functions are best used for small functions such as accessing private data members. The main purpose of these one- or two-line accessor functions is to return state information about objects. Short functions are sensitive to the overhead of function calls. Longer functions spend proportionately less time in the calling and returning sequence and benefit less from inlining.
+Inline functions are best used for small functions, such as those that provide access to data members. Short functions are sensitive to the overhead of function calls. Longer functions spend proportionately less time in the calling and returning sequence and benefit less from inlining.
 
 A `Point` class can be defined as follows:
 
@@ -220,7 +220,7 @@ int main()
 Here are some of the differences between the macro and the inline function:
 
 - Macros are always expanded inline. However, an inline function is only inlined when the compiler determines it is the optimal thing to do.
-- The macro may result in unexpected behavior. For example, the macro `mult(5+5,5+5)` expands to `5 + 5 * 5 + 5` resulting in 35, whereas the function evaluates `10 * 10`. You could address that by defining the macro as #define `mult(a, b) ((a)*(b))`, but you'd need to remember to do that.
+- The macro may result in unexpected behavior. For example, the macro `mult(5+5,5+5)` expands to `5 + 5 * 5 + 5` resulting in 35, whereas the function evaluates `10 * 10`. You could address that by defining the macro as #define `mult(a, b) ((a)*(b))`.
 - An inline function is subject to semantic processing by the compiler, whereas the preprocessor expands macros without that same benefit. Macros aren't type-safe, whereas functions are.
 - Expressions passed as arguments to inline functions are evaluated once. In some cases, expressions passed as arguments to macros can be evaluated more than once. For example, consider the following:
 
@@ -235,7 +235,7 @@ int main()
 }
 ```
 
-In this example, the expression `c++` is evaluated twice: once for each occurrence of `a` in the macro expansion. Instead, if `sqr` were an inline function, the expression `c++` would be evaluated only once.
+In this example, the expression `c++` is evaluated twice; once for each occurrence of `a` in the macro expansion. Instead, if `sqr` were an inline function, the expression `c++` would be evaluated only once.
 
 ## See also
 
