@@ -332,7 +332,7 @@ Returns `true` if the `subrange` has no elements. Otherwise, returns `false`.
 Get the sentinel at the end of the `subrange`
 
 ```cpp
-[[NODISCARD]] constexpr S end() const;
+[[nodiscard]] constexpr S end() const;
 ```
 
 ### Parameters

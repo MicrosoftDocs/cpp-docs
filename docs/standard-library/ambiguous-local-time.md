@@ -98,7 +98,7 @@ You typically won't create this exception. It's thrown by functions that convert
 Gets a string describing the details of the ambiguity.
 
 ```cpp
-[nodiscard] virtual const char* what() const noexcept;
+[[nodiscard]] virtual const char* what() const noexcept;
 ```
 
 ### Return value
