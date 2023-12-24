@@ -14,7 +14,7 @@ This exception is thrown when attempting to convert a `local_time` to a `sys_tim
 ## Syntax
 
 ```cpp
-class ambiguous_local_time : public runtime_error; // C++ 20
+class ambiguous_local_time : public runtime_error; // C++20
 ```
 
 ## Remarks

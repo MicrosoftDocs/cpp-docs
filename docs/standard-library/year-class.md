@@ -230,7 +230,7 @@ If the incremented result exceeds 32767, it overflows to -32768
 Unary minus. Negate the `year`.
 
 ```cpp
-constexpr year operator-() const noexcept; // C++ 20
+constexpr year operator-() const noexcept; // C++20
 ```
 
 ### Return value

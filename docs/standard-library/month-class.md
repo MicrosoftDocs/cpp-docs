@@ -13,7 +13,7 @@ Represents a month of a year. For example, July.
 ## Syntax
 
 ```cpp
-class month; // C++ 20
+class month; // C++20
 ```
 
 ## Remarks

@@ -70,7 +70,7 @@ The [`year`](year-class.md) value is stored in the constructed `year_month_day_l
 
 ## Remarks
 
-For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_day_last`
 

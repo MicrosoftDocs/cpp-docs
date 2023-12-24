@@ -65,7 +65,7 @@ Construct a `month_day` with a month value of *`m`*.
 1\) The default constructor doesn't initialize the month or day values.\
 2\) Construct a `month_day` with the month value initialized to `m` and the day value initialized to `d`.
 
-For information about C++ 20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `month_day`
 
