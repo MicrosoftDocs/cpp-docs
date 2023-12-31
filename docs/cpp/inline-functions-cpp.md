@@ -20,35 +20,38 @@ A function defined in the body of a class declaration is implicitly an inline fu
 In the following class declaration, the `Account` constructor is an inline function because it is defined in the body of the class declaration. The member functions `GetBalance`, `Deposit`, and `Withdraw` are specified `inline` in their definitions. The `inline` keyword is optional in the function declarations in the class declaration.
 
 ```cpp
-// Inline_Member_Functions.cpp
+// account.h
 class Account
 {
 public:
-    Account(double initial_balance) { balance = initial_balance; }
-    double GetBalance();
-    double Deposit( double Amount );
-    double Withdraw( double Amount );
+    Account(double initial_balance)
+    {
+        balance = initial_balance;
+    }
+
+    double GetBalance() const;
+    double Deposit(double amount);
+    double Withdraw(double amount);
+
 private:
     double balance;
 };
 
-inline double Account::GetBalance()
+inline double Account::GetBalance() const
 {
     return balance;
 }
 
-inline double Account::Deposit( double Amount )
+inline double Account::Deposit(double amount)
 {
-    return ( balance += Amount );
+    balance += amount;
+    return balance;
 }
 
-inline double Account::Withdraw( double Amount )
+inline double Account::Withdraw(double amount)
 {
-    return ( balance -= Amount );
-}
-
-int main()
-{
+    balance -= amount;
+    return balance;
 }
 ```
 
@@ -90,10 +93,9 @@ Use the [`/Ob`](../build/reference/ob-inline-function-expansion.md) compiler opt
 ```cpp
 // inline_keyword1.cpp
 // compile with: /c
-inline int max( int a , int b ) {
-   if( a > b )
-      return a;
-   return b;
+inline int max(int a, int b)
+{
+    return a < b ? b : a;
 }
 ```
 
@@ -105,13 +107,14 @@ A class's member functions can be declared inline, either by using the **`inline
 // inline_keyword2.cpp
 // compile with: /EHsc /c
 #include <iostream>
-using namespace std;
 
-class MyClass {
+class MyClass
+{
 public:
-   void print() { cout << i << ' '; }   // Implicitly inline
+    void print() { std::cout << i; }   // Implicitly inline
+
 private:
-   int i;
+    int i;
 };
 ```
 
@@ -152,13 +155,15 @@ A `Point` class can be defined as follows:
 
 ```cpp
 // when_to_use_inline_functions.cpp
+// compile with: /c
 class Point
 {
 public:
-    // Define "accessor" functions as
-    //  reference types.
+    // Define "accessor" functions
+    // as reference types.
     unsigned& x();
     unsigned& y();
+
 private:
     unsigned _x;
     unsigned _y;
@@ -168,12 +173,10 @@ inline unsigned& Point::x()
 {
     return _x;
 }
+
 inline unsigned& Point::y()
 {
     return _y;
-}
-int main()
-{
 }
 ```
 
@@ -193,7 +196,9 @@ A macro has some things in common with an `inline` function. But there are impor
 ```cpp
 #include <iostream>
 
-#define mult(a, b) a * b
+#define mult1(a, b) a * b
+#define mult2(a, b) (a) * (b)
+#define mult3(a, b) ((a) * (b))
 
 inline int multiply(int a, int b)
 {
@@ -202,17 +207,21 @@ inline int multiply(int a, int b)
 
 int main()
 {
-    std::cout << mult(5 + 5, 5 + 5) << std::endl; // outputs 35
-    std::cout << multiply(5 + 5, 5 + 5) << std::endl; // outputs 100
+    std::cout << (48 / mult1(2 + 2, 3 + 3)) << std::endl; // outputs 33
+    std::cout << (48 / mult2(2 + 2, 3 + 3)) << std::endl; // outputs 72
+    std::cout << (48 / mult3(2 + 2, 3 + 3)) << std::endl; // outputs 2
+    std::cout << (48 / multiply(2 + 2, 3 + 3)) << std::endl; // outputs 2
 
-    std::cout << mult(2, 2.2) << std::endl>>; // no warning
+    std::cout << mult3(2, 2.2) << std::endl; // no warning
     std::cout << multiply(2, 2.2); // Warning C4244	'argument': conversion from 'double' to 'int', possible loss of data
 }
 ```
 
 ```Output
-35
-100
+33
+72
+2
+2
 4.4
 4
 ```
@@ -220,22 +229,45 @@ int main()
 Here are some of the differences between the macro and the inline function:
 
 - Macros are always expanded inline. However, an inline function is only inlined when the compiler determines it is the optimal thing to do.
-- The macro may result in unexpected behavior. For example, the macro `mult(5+5,5+5)` expands to `5 + 5 * 5 + 5` resulting in 35, whereas the function evaluates `10 * 10`. You could address that by defining the macro as #define `mult(a, b) ((a)*(b))`.
+- The macro may result in unexpected behavior, which can lead to subtle bugs. For example, the expression `mult1(2 + 2, 3 + 3)` expands to `2 + 2 * 3 + 3` which evaluates to 11, but the expected result is 24. A seemingly valid fix is to add parentheses around both arguments of the function macro, resulting in `#define mult2(a, b) (a) * (b)`, which will solve the issue at hand but can still cause surprising behavior when part of a larger expression. That was demonstrated in the preceding example, and the problem could be addressed by defining the macro as such `#define mult3(a, b) ((a) * (b))`.
 - An inline function is subject to semantic processing by the compiler, whereas the preprocessor expands macros without that same benefit. Macros aren't type-safe, whereas functions are.
 - Expressions passed as arguments to inline functions are evaluated once. In some cases, expressions passed as arguments to macros can be evaluated more than once. For example, consider the following:
 
 ```cpp
+#include <iostream>
+
 #define sqr(a) ((a) * (a))
+
+int increment(int& number)
+{
+    return number++;
+}
+
+inline int square(int a)
+{
+    return a * a;
+}
 
 int main()
 {
     int c = 5;
-    std::cout << sqr(c++) << std::endl; // outputs 25
-    std::cout << c << std::endl; // outputs 7!
+    std::cout << sqr(increment(c)) << std::endl; // outputs 30
+    std::cout << c << std::endl; // outputs 7
+
+    c = 5;
+    std::cout << square(increment(c)) << std::endl; // outputs 25
+    std::cout << c; // outputs 6
 }
 ```
 
-In this example, the expression `c++` is evaluated twice; once for each occurrence of `a` in the macro expansion. Instead, if `sqr` were an inline function, the expression `c++` would be evaluated only once.
+```Output
+30
+7
+25
+6
+```
+
+In this example, the function `increment` is called twice as the expression `sqr(increment(c))` expands to `((increment(c)) * (increment(c)))`. This caused the second invocation of `increment` to return 6, hence the expression evaluates to 30. Any expression that contains side effects may affect the result when used in a macro, examine the fully expanded macro to check if the behavior is intended. Instead, if the inline function `square` was used, the function `increment` would only be called once and the correct result of 25 will be obtained.
 
 ## See also
 
