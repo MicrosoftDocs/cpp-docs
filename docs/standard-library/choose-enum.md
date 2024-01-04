@@ -14,7 +14,7 @@ Used with [`time_zone`](time-zone-class.md) and [`zoned_time`](zoned-time-class.
 ## Syntax
 
 ```cpp
-enum class choose { // C++ 20
+enum class choose { // C++20
     earliest,
     latest
 };

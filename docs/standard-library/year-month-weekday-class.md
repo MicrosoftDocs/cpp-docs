@@ -14,7 +14,7 @@ Represents a specific year, month, and nth weekday of the month.
 ## Syntax
 
 ```cpp
-class year_month_weekday; // C++ 20
+class year_month_weekday; // C++20
 ```
 
 ## Remarks
@@ -98,7 +98,7 @@ The [`year`](year-class.md) value.
 
 4\) Constructs a `year_month_weekday` that corresponds to the date represented by *`dp`*.  For any `year_month_weekday` (ymdl) for which `ok()` is `true`, comparison with `operator==` to `year_month_weekday{sys_days{ymdl}}` will be `true`.
 
-For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_weekday`
 

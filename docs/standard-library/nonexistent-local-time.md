@@ -14,7 +14,7 @@ This exception is thrown when attempting to convert a `local_time` to a non-exis
 ## Syntax
 
 ```cpp
-class nonexistent_local_time : public runtime_error; // c++ 20
+class nonexistent_local_time : public runtime_error; // C++20
 ```
 
 ## Remarks

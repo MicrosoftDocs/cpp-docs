@@ -14,7 +14,7 @@ dev_langs: ["C++"]
 ## Syntax
 
 ```cpp
-class month_day_last; // C++ 20
+class month_day_last; // C++20
 ```
 
 ## Members
@@ -56,7 +56,7 @@ Construct a `month_day_last` for the month specified by *`m`*.
 
 ## Remarks
 
-For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `month_day_last`
 

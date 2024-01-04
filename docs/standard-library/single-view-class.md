@@ -62,7 +62,7 @@ The value in the `single_view` can be modified unless the template value is `con
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 

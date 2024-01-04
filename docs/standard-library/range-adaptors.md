@@ -783,7 +783,7 @@ A [`join_view`](join-view-class.md) that contains the elements of all the ranges
 int main()
 {
     // a range of two ranges
-    std::vector<std::string> rangeOfRanges[2]{{"C++", "20", "contains:"}, {"ranges", "modules", "concepts & more."}};
+    std::vector<std::string> rangeOfRanges[2]{{"C++20", "contains:"}, {"ranges", "modules", "concepts & more."}};
 
     for (const auto& elem : std::views::join(rangeOfRanges))
     {
@@ -793,7 +793,7 @@ int main()
 ```
 
 ```output
-C++ 20 contains: ranges modules concepts & more.
+C++20 contains: ranges modules concepts & more.
 ```
 
 ### Remarks

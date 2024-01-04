@@ -14,13 +14,13 @@ A type trait that determines whether the specified type meets the requirements t
 ## Syntax
 
 ```cpp
-template<class T> struct is_clock; // c++ 20
+template<class T> struct is_clock; // C++20
 ```
 
 **Helper variable template**
 
 ```cpp
- template<class T> inline constexpr bool is_clock_v = is_clock<T>::value; // c++ 20
+ template<class T> inline constexpr bool is_clock_v = is_clock<T>::value; // C++20
 ```
 
 ### Parameters

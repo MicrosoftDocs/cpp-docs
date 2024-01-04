@@ -46,7 +46,7 @@ See [Weekday constants](#weekday-constants), below, for constants that you can u
 
 ## Requirements
 
-**Header:** `<chrono>` Since C++ 20
+**Header:** `<chrono>` Since C++20
 
 **Namespace:** `std::chrono`
 
@@ -267,8 +267,8 @@ The value of `*this - d`. The result will be modulo 7, in the range \[0, 6].
 Create a [weekday_indexed](weekdayindexed-class.md) or [weekday_last](weekdaylast-class.md) from this `weekday`.
 
 ```cpp
-1) std::chrono::weekday_indexed(*this, index) // C++ 20
-2) std::chrono::weekday_last(*this) // C++ 20
+1) std::chrono::weekday_indexed(*this, index) // C++20
+2) std::chrono::weekday_last(*this) // C++20
 ```
 
 ### Return value
