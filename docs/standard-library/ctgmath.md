@@ -5,7 +5,7 @@ ms.date: "6/28/2021"
 f1_keywords: ["<ctgmath>"]
 helpviewer_keywords: ["ctgmath header"]
 ---
-# `<ctgmath>`;
+# `<ctgmath>`
 
 In effect, includes the C++ standard library headers `<complex>` and `<cmath>`, which provide type-generic math macros equivalent to `<tgmath.h>`.
 

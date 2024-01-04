@@ -13,7 +13,7 @@ Represents a copy of the time zone database.
 ## Syntax
 
 ```cpp
-struct tzdb; // C++ 20
+struct tzdb; // C++20
 ```
 
 ## Remarks

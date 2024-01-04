@@ -7,13 +7,13 @@ ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
 ---
 # Nonstandard Behavior
 
-The following sections list some of the places where the Microsoft implementation of C++ doesn't conform to the C++ standard. The section numbers given below refer to the section numbers in the C++ 11 standard (ISO/IEC 14882:2011(E)).
+The following sections list some of the places where the Microsoft implementation of C++ doesn't conform to the C++ standard. The section numbers given below refer to the section numbers in the C++11 standard (ISO/IEC 14882:2011(E)).
 
 The list of compiler limits that differ from those defined in the C++ standard is given in [Compiler Limits](../cpp/compiler-limits.md).
 
 ## Covariant Return Types
 
-Virtual base classes are not supported as covariant return types when the virtual function has a variable number of arguments. This doesn't conform to section 10.3, paragraph 7 of the C++ 11 ISO specification. The following sample doesn't compile; it generates compiler error [C2688](../error-messages/compiler-errors-2/compiler-error-c2688.md):
+Virtual base classes are not supported as covariant return types when the virtual function has a variable number of arguments. This doesn't conform to section 10.3, paragraph 7 of the C++11 ISO specification. The following sample doesn't compile; it generates compiler error [C2688](../error-messages/compiler-errors-2/compiler-error-c2688.md):
 
 ```cpp
 // CovariantReturn.cpp
@@ -30,7 +30,7 @@ class B : virtual A
 
 ## Binding Nondependent Names in Templates
 
-The Microsoft C++ compiler doesn't currently support binding nondependent names when initially parsing a template. This doesn't conform to section 14.6.3 of the C++ 11 ISO specification. This can cause overloads declared after the template (but before the template is instantiated) to be seen.
+The Microsoft C++ compiler doesn't currently support binding nondependent names when initially parsing a template. This doesn't conform to section 14.6.3 of the C++11 ISO specification. This can cause overloads declared after the template (but before the template is instantiated) to be seen.
 
 ```cpp
 #include <iostream>
@@ -56,7 +56,7 @@ int main() {
 
 ## Function Exception Specifiers
 
-Function exception specifiers other than `throw()` are parsed but not used. This doesn't conform to section 15.4 of the ISO C++ 11 specification. For example:
+Function exception specifiers other than `throw()` are parsed but not used. This doesn't conform to section 15.4 of the ISO C++11 specification. For example:
 
 ```cpp
 void f() throw(int); // parsed but not used
@@ -67,7 +67,7 @@ For more information on exception specifications, see [Exception Specifications]
 
 ## char_traits::eof()
 
-The C++ standard states that [char_traits::eof](../standard-library/char-traits-struct.md#eof) must not correspond to a valid `char_type` value. The Microsoft C++ compiler enforces this constraint for type **`char`**, but not for type **`wchar_t`**. This doesn't conform to the requirement in Table 62 in section 12.1.1 of the C++ 11 ISO specification. The example below demonstrates this behavior.
+The C++ standard states that [char_traits::eof](../standard-library/char-traits-struct.md#eof) must not correspond to a valid `char_type` value. The Microsoft C++ compiler enforces this constraint for type **`char`**, but not for type **`wchar_t`**. This doesn't conform to the requirement in Table 62 in section 12.1.1 of the C++11 ISO specification. The example below demonstrates this behavior.
 
 ```cpp
 #include <iostream>

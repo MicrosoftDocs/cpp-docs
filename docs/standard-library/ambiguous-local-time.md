@@ -14,7 +14,7 @@ This exception is thrown when attempting to convert a `local_time` to a `sys_tim
 ## Syntax
 
 ```cpp
-class ambiguous_local_time : public runtime_error; // C++ 20
+class ambiguous_local_time : public runtime_error; // C++20
 ```
 
 ## Remarks
@@ -98,7 +98,7 @@ You typically won't create this exception. It's thrown by functions that convert
 Gets a string describing the details of the ambiguity.
 
 ```cpp
-[nodiscard] virtual const char* what() const noexcept;
+[[nodiscard]] virtual const char* what() const noexcept;
 ```
 
 ### Return value

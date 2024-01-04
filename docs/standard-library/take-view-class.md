@@ -57,7 +57,7 @@ For a description of the following entries, see [View class characteristics](vie
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 

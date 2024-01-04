@@ -60,7 +60,7 @@ This view is useful when you want to combine multiple ranges into a single view.
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 

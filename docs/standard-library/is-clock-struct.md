@@ -14,13 +14,13 @@ A type trait that determines whether the specified type meets the requirements t
 ## Syntax
 
 ```cpp
-template<class T> struct is_clock; // c++ 20
+template<class T> struct is_clock; // C++20
 ```
 
 **Helper variable template**
 
 ```cpp
- template<class T> inline constexpr bool is_clock_v = is_clock<T>::value; // c++ 20
+ template<class T> inline constexpr bool is_clock_v = is_clock<T>::value; // C++20
 ```
 
 ### Parameters
@@ -50,14 +50,13 @@ The following code works because `is_clock`, derives from `Cpp17UnaryTypeTrait`,
 #include <iostream>
 #include <chrono>
 
-using namespace `std::chrono`;
+using namespace std::chrono;
 
 int main()
 {
     is_clock<system_clock> ic;
 
     std::cout << std::boolalpha << ic.value << ", " << ic() << ", " << (bool)ic;
-    return 0;
 }
 ```
 

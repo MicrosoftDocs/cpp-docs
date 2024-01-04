@@ -139,7 +139,7 @@ namespace ContosoDataServer
 
 Ordinary nested namespaces can be used to encapsulate internal implementation details that are not part of the public interface of the parent namespace.
 
-## Inline namespaces (C++ 11)
+## Inline namespaces (C++11)
 
 In contrast to an ordinary nested namespace, members of an inline namespace are treated as members of the parent namespace. This characteristic enables argument dependent lookup on overloaded functions to work on functions that have overloads in a parent and a nested inline namespace. It also enables you to declare a specialization in a parent namespace for a template that is declared in the inline namespace. The following example shows how external code binds to the inline namespace by default:
 

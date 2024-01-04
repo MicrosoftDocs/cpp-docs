@@ -73,7 +73,7 @@ for (int i : iota_view{1, 10}) // iterate over a view of the integers 1 through 
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 

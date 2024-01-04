@@ -53,7 +53,7 @@ inline namespace literals {
     constexpr chrono::duration<double, nano> operator"" ns(long double Val);
 
     // return integral year
-    constexpr chrono::year operator""y(unsigned long long y) noexcept; // C++ 20
+    constexpr chrono::year operator""y(unsigned long long y) noexcept; // C++20
   } // inline namespace chrono_literals
 } // inline namespace literals
 ```
