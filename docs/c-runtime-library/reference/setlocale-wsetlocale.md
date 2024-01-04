@@ -1,7 +1,7 @@
 ---
 title: "setlocale, _wsetlocale"
 description: "Describes the Microsoft C runtime (CRT) library functions setlocale and _wsetlocale."
-ms.date: 4/20/2023
+ms.date: 01/04/2024
 api_name: ["_wsetlocale", "setlocale", "_o__wsetlocale", "_o_setlocale"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -12,7 +12,7 @@ no-loc: [setlocale, _wsetlocale]
 ---
 # `setlocale`, `_wsetlocale`
 
-Sets or retrieves the run-time locale.
+Set or retrieve the run-time locale.
 
 ## Syntax
 
@@ -258,9 +258,8 @@ int get_date(unsigned char* str)
     return 0;
 }
 
-// This thread sets its locale to the argument
-// and prints the date.
-uintptr_t __stdcall SecondThreadFunc( void* pArguments )
+// This thread sets its locale to the argument and prints the date.
+unsigned __stdcall SecondThreadFunc(void* pArguments)
 {
     unsigned char str[BUFF_SIZE];
     char * locale = (char *)pArguments;
@@ -298,7 +297,7 @@ int main()
     // Create the second thread with a German locale.
     // Our thread function takes an argument of the locale to use.
     hThread = (HANDLE)_beginthreadex( NULL, 0, &SecondThreadFunc,
-                                      "de-DE", 0, &threadID );
+                                      (void*)"de-DE", 0, &threadID );
 
     if (get_date(str) == 0)
     {
@@ -316,10 +315,10 @@ int main()
 
 ```Output
 The thread locale is now set to en-US.
-The time in en-US locale is: 'Wednesday, May 12, 2004'
+The date in en-US locale is: 'Thursday, January 4, 2024'
 
 The thread locale is now set to de-DE.
-The time in de-DE locale is: 'Mittwoch, 12. Mai 2004'
+The date in de-DE locale is: 'Donnerstag, 4. Januar 2024'
 ```
 
 ## See also
