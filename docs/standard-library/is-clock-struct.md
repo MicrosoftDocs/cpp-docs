@@ -50,14 +50,13 @@ The following code works because `is_clock`, derives from `Cpp17UnaryTypeTrait`,
 #include <iostream>
 #include <chrono>
 
-using namespace `std::chrono`;
+using namespace std::chrono;
 
 int main()
 {
     is_clock<system_clock> ic;
 
     std::cout << std::boolalpha << ic.value << ", " << ic() << ", " << (bool)ic;
-    return 0;
 }
 ```
 
