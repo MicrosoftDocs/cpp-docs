@@ -44,7 +44,7 @@ class weekday_last; // C++20
 
 ## Requirements
 
-**Header:** `<chrono>` Since C++ 20
+**Header:** `<chrono>` Since C++20
 
 **Namespace:** `std::chrono`
 

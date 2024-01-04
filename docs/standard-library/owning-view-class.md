@@ -66,7 +66,7 @@ This view is useful when you want a range that doesn't depend on the lifetime of
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 

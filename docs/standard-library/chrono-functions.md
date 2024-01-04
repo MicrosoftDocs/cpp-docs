@@ -128,7 +128,7 @@ Converts a [`time_point`](time-point-class.md) for one clock to an equivalent `t
 
 ```cpp
 template <class DestClock, class SourceClock, class Duration> 
-auto clock_cast(const time_point<SourceClock, Duration>& t); // C++ 20
+auto clock_cast(const time_point<SourceClock, Duration>& t); // C++20
 ```
 
 ### Parameters

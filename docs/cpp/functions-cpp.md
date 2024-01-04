@@ -180,7 +180,7 @@ When a function modifies an argument that is passed by reference, it modifies th
 void DoSomething(const std::string& input){...}
 ```
 
-**C++ 11:**  To explicitly handle arguments that are passed by rvalue-reference or lvalue-reference, use a double-ampersand on the parameter to indicate a universal reference:
+**C++11:**  To explicitly handle arguments that are passed by rvalue-reference or lvalue-reference, use a double-ampersand on the parameter to indicate a universal reference:
 
 ```cpp
 void DoSomething(const std::string&& input){...}

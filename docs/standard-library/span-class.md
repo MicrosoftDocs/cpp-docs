@@ -78,7 +78,7 @@ Unlike `array` or `vector`, a `span` doesn't "own" the elements inside it. A `sp
 
 ## Requirements
 
-**Header:** `<span>` (since C++ 20)
+**Header:** `<span>` (since C++20)
 
 **Namespace:** `std`
 
