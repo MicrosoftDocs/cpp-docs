@@ -94,7 +94,7 @@ You typically won't create this exception. It's thrown by functions that convert
 Gets a string describing why the time is non-existent.
 
 ```cpp
-[nodiscard] virtual const char* what() const noexcept;
+[[nodiscard]] virtual const char* what() const noexcept;
 ```
 
 ### Return value
