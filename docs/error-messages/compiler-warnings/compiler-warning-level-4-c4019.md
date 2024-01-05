@@ -14,6 +14,9 @@ A semicolon at global scope is not preceded by a statement.
 
 This warning may be fixed if you remove the extra semicolon.
 
+> [!Important] 
+> This warning only applies to C programs.
+
 ## Example
 
 ```c
