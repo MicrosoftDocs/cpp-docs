@@ -70,7 +70,7 @@ The options listed in the following table:
 | **`/ZH:SHA_256`** | Use SHA256 for checksum in debug info (default in Visual Studio 2022 version 17.0 and later). |
 | **`/Zi`** | Generates CodeView information in object file. |
 | **`/Zm`** | Enables **`M510`** option for maximum compatibility with MASM 5.1.<br /> Not available in ml64.exe. |
-| **`/Zp`**⟦*`alignment`*⟧ | Packs structures on the specified byte boundary. The *`alignment`* can be 1, 2, or 4. |
+| **`/Zp`**⟦*`alignment`*⟧ | Packs structures on the specified byte boundary. The *`alignment`* can be 1, 2, 4, 8, or 16. |
 | **`/Zs`** | Performs a syntax check only. |
 | **`/?`** | Displays a summary of ML command-line syntax and options. |
 
