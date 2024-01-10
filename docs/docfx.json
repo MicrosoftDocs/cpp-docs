@@ -44,7 +44,7 @@
       "ms.date": "11/16/2016",
       "ms.topic": "conceptual",
       "audience": "developer",
-      "ms.prod": "visual-cpp",
+      "ms.service": "visual-cpp",
       "ms.tgt_pltfrm": "Windows",
       "ms.workload": [
         "cplusplus"
@@ -117,7 +117,7 @@
         "standard-library/**.md": "reference",
         "windows/attributes/**.md": "reference"
       },
-      "ms.technology": {
+      "ms.subservice": {
         "assembler/**.md": "cpp-masm",
         "attributes/**.md": "cpp-cli",
         "atl/**.md": "cpp-atl",
