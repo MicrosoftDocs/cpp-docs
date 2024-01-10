@@ -923,6 +923,8 @@ items:
               href: ../build/reference/allowisolation-manifest-lookup.md
             - name: /APPCONTAINER (UWP/Microsoft Store app)
               href: ../build/reference/appcontainer-windows-store-app.md
+            - name: /ARM64XFUNCTIONPADMINX64 (Minimum x64 function padding)
+              href: ../build/reference/arm64-function-pad-min-x64.md
             - name: /ASSEMBLYDEBUG (Add DebuggableAttribute)
               href: ../build/reference/assemblydebug-add-debuggableattribute.md
             - name: /ASSEMBLYLINKRESOURCE (Link to .NET Framework resource)
@@ -1053,6 +1055,8 @@ items:
               href: ../build/reference/nodefaultlib-ignore-libraries.md
             - name: /NOENTRY (No entry point)
               href: ../build/reference/noentry-no-entry-point.md
+            - name: /NOFUNCTIONPADSECTION (Disable function padding)
+              href: ../build/reference/no-function-pad-section.md
             - name: /NOLOGO (Suppress startup banner) (Linker)
               href: ../build/reference/nologo-suppress-startup-banner-linker.md
             - name: /NXCOMPAT (Compatible with Data Execution Prevention)
