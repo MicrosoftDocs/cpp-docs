@@ -2,7 +2,8 @@
 title: "C++ conformance improvements in Visual Studio 2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.date: 06/29/2022
-ms.technology: "cpp-language"
+ms.service: "visual-cpp"
+ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2019
 

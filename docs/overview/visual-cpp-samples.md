@@ -2,8 +2,8 @@
 title: "Visual Studio C++ Samples"
 description: "Summary descriptions of the samples available in the archived Visual Studio C++ samples repository on GitHub."
 ms.date: "03/23/2020"
-ms.technology: "cpp-language"
-ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
+ms.service: "visual-cpp"
+ms.subservice: "cpp-lang"
 ---
 # Visual Studio C++ Samples
 

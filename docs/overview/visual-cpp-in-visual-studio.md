@@ -2,7 +2,8 @@
 title: "C and C++ in Visual Studio"
 description: "Learn how to use the Microsoft C/C++ compiler and related tools to develop C++ and assembly programs for Windows, Linux, Android, and iOS."
 ms.date: 09/29/2022
-ms.technology: "cpp-ide"
+ms.service: "visual-cpp"
+ms.subservice: "ide"
 helpviewer_keywords: ["Visual C++, home page"]
 ---
 # C and C++ in Visual Studio
