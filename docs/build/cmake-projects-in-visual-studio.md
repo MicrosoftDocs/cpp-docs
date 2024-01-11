@@ -3,6 +3,7 @@ title: "CMake projects in Visual Studio"
 description: "How to create and build C++ projects using CMake in Visual Studio."
 ms.date: 02/14/2022
 helpviewer_keywords: ["CMake in Visual C++"]
+f1_keywords: ["VS.ToolsOptionsPages.CMake.General"] 
 ---
 # CMake projects in Visual Studio
 

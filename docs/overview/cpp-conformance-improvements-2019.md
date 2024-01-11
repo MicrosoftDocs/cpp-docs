@@ -2,7 +2,8 @@
 title: "C++ conformance improvements in Visual Studio 2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.date: 06/29/2022
-ms.technology: "cpp-language"
+ms.service: "visual-cpp"
+ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2019
 
@@ -464,7 +465,7 @@ We fixed a minor type traits bug, where `add_const_t` and related functions are 
 
 ### char8_t
 
-[P0482r6](https://wg21.link/p0482r6). C++20 adds a new character type that is used to represent UTF-8 code units. `u8` string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case previously. Similar changes have been proposed for the C standard in [N2231](https://wg14.link/n2231). Suggestions for **`char8_t`** backward compatibility remediation are given in [P1423r3](https://wg21.link/p1423r3). The Microsoft C++ compiler adds support for **`char8_t`** in Visual Studio 2019 version 16.1 when you specify the [`/Zc:char8_t`](../build/reference/zc-char8-t.md) compiler option. It can be reverted to C++17 behavior via **`/Zc:char8_t-`**. The EDG compiler that powers IntelliSense doesn't yet support it in Visual Studio 2019 version 16.1. You may see spurious IntelliSense-only errors that don't affect the actual compilation.
+[P0482r6](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). C++20 adds a new character type that is used to represent UTF-8 code units. `u8` string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case previously. Similar changes have been proposed for the C standard in [N2231](https://wg14.link/n2231). Suggestions for **`char8_t`** backward compatibility remediation are given in [P1423r3](https://wg21.link/p1423r3). The Microsoft C++ compiler adds support for **`char8_t`** in Visual Studio 2019 version 16.1 when you specify the [`/Zc:char8_t`](../build/reference/zc-char8-t.md) compiler option. It can be reverted to C++17 behavior via **`/Zc:char8_t-`**. The EDG compiler that powers IntelliSense doesn't yet support it in Visual Studio 2019 version 16.1. You may see spurious IntelliSense-only errors that don't affect the actual compilation.
 
 #### Example
 
@@ -2078,7 +2079,7 @@ With this change, a destructor is also potentially throwing if it has a virtual 
 
 Core Working Group issue [CWG 2352](https://wg21.link/cwg2352) deals with an inconsistency between the reference binding rules and changes to type similarity. The inconsistency was introduced in earlier Defect Reports (such as [CWG 330](https://wg21.link/cwg330)). This affected Visual Studio 2019 versions 16.0 through 16.8.
 
-With this change, starting in Visual Studio 2019 version 16.9, code that previously bound a reference to a temporary in Visual Studio 2019 version 16.0 throught 16.8 may now bind directly when the types involved differ only by cv-qualifiers.
+With this change, starting in Visual Studio 2019 version 16.9, code that previously bound a reference to a temporary in Visual Studio 2019 version 16.0 through 16.8 may now bind directly when the types involved differ only by cv-qualifiers.
 
 Visual Studio 2019 version 16.9 implements the changed behavior in all **`/std`** compiler modes. It's potentially a source breaking change.
 
