@@ -6,7 +6,7 @@ brand: visual-studio
 metadata:
   title: Microsoft C/C++ Documentation
   description: Learn how to use C++ to develop applications, services, and tools for your platforms and devices.
-  ms.prod: visual-cpp
+  ms.service: visual-cpp
   ms.topic: hub-page
   author: tylermsft
   ms.author: twhitney

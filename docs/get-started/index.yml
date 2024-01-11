@@ -12,8 +12,7 @@ metadata:
   author: tylermsft
   ms.author: twhitney 
   manager: markl
-  ms.prod: visual-cpp
-  ms.technology: vs-acquisition  
+  ms.service: visual-cpp
   dev_langs:
     - C++
 
