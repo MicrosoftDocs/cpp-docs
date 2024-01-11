@@ -2,7 +2,8 @@
 title: "Microsoft C/C++ language conformance"
 description: "Microsoft C and C++ conformance updates by Visual Studio version."
 ms.date: 03/01/2023
-ms.technology: "cpp-language"
+ms.service: "visual-cpp"
+ms.subservice: "cpp-lang"
 ---
 # Microsoft C/C++ language conformance by Visual Studio version
 
