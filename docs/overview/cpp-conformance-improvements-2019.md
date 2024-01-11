@@ -2079,7 +2079,7 @@ With this change, a destructor is also potentially throwing if it has a virtual 
 
 Core Working Group issue [CWG 2352](https://wg21.link/cwg2352) deals with an inconsistency between the reference binding rules and changes to type similarity. The inconsistency was introduced in earlier Defect Reports (such as [CWG 330](https://wg21.link/cwg330)). This affected Visual Studio 2019 versions 16.0 through 16.8.
 
-With this change, starting in Visual Studio 2019 version 16.9, code that previously bound a reference to a temporary in Visual Studio 2019 version 16.0 throught 16.8 may now bind directly when the types involved differ only by cv-qualifiers.
+With this change, starting in Visual Studio 2019 version 16.9, code that previously bound a reference to a temporary in Visual Studio 2019 version 16.0 through 16.8 may now bind directly when the types involved differ only by cv-qualifiers.
 
 Visual Studio 2019 version 16.9 implements the changed behavior in all **`/std`** compiler modes. It's potentially a source breaking change.
 
