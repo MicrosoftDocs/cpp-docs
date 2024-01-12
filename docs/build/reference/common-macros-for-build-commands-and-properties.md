@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Common macros for MSBuild commands and properties"
 title: "Common macros for MSBuild commands and properties"
-ms.date: 02/13/2023
+ms.date: 01/12/2024
 helpviewer_keywords: ["$(FrameworkSDKDir) macro", "ProjectName macro $(ProjectName)", "DevEnvDir macro $(DevEnvDir)", "$(DevEnvDir) macro", "TargetPath macro $(TargetPath)", "VSInstallDir macro $(VSInstallDir)", "$(InputFileName) macro", "$(SolutionFileName) macro", "macros [C++], build macros", "InputFileName macro $(InputFileName)", "$(VCInstallDir) macro", "$(IntDir) macro", "$(ConfigurationName) macro", "SolutionDir macro $(SolutionDir)", "$(TargetPath) macro", "$(Inherit) macro", "$(SolutionPath) macro", "WebDeployRoot macro $(WebDeployRoot)", "WebDeployPath macro $(WebDeployPath)", "StopEvaluating macro $(StopEvaluating)", "$(RootNamespace) macro", "$(WebDeployRoot) macro", "ProjectPath macro $(ProjectPath)", "$(ProjectPath) macro", "$(InputDir) macro", "SolutionName macro $(SolutionName)", "ProjectExt macro $(ProjectExt)", "$(TargetExt) macro", "$(ProjectFileName) macro", "TargetName macro $(TargetName)", "$(References) macro", "References macro $(References)", "TargetExt macro $(TargetExt)", "ProjectDir macro $(ProjectDir)", "$(TargetDir) macro", "SolutionExt macro $(SolutionExt)", "$(SolutionDir) macro", "ProjectFileName macro $(ProjectFileName)", "VCInstallDir macro $(VCInstallDir)", "$(InputExt) macro", "$(TargetFileName) macro", "$(SolutionExt) macro", "PlatformName macro $(PlatformName)", "IntDir macro $(IntDir)", "$(FrameworkVersion) macro", "$(ProjectDir) macro", "build macros [C++]", "InputPath macro $(InputPath)", "$(VSInstallDir) macro", "$(WebDeployPath) macro", "TargetFileName macro $(TargetFileName)", "NoInherit macro $(NoInherit)", "ConfigurationName macro $(ConfigurationName)", "$(ProjectExt) macro", "TargetDir macro $(TargetDir)", "InputName macro $(InputName)", "$(ProjectName) macro", "FrameworkSDKDir macro $(FrameworkSDKDir)", "$(ParentName) macro", "InputExt macro $(InputExt)", "$(SafeRootNamespace) macro", "InputDir macro $(InputDir)", "$(FxCopDir) macro", "$(RemoteMachine) macro", "Inherit macro $(Inherit)", "FrameworkVersion macro $(FrameworkVersion)", "$(StopEvaluating) macro", "$(OutDir) macro", "FrameworkDir macro $(FrameworkDir)", "SolutionFileName macro $(SolutionFileName)", "$(NoInherit) macro", "RemoteMachine macro $(RemoteMachine)", "properties [C++], build property macros", "$(TargetName) macro", "$(SolutionName) macro", "$(InputPath) macro", "ParentName macro $(ParentName)", "OutDir macro $(OutDir)", "SafeRootNamespace macro $(SafeRootNamespace)", "FxCopDir macro $(FxCopDir)", "$(InputName) macro", "RootNamespace macro $(RootNamespace)", "builds [C++], macros", "$(FrameworkDir) macro", "$(PlatformName) macro", "$(PlatformShortName) macro","SolutionPath macro $(SolutionPath)"]
 ---
 # Common macros for MSBuild commands and properties
@@ -31,29 +31,29 @@ This table describes a commonly used subset of the available macros; there are m
 | Macro | Description |
 |--|--|
 | **`$(Configuration)`** | The name of the current project configuration, for example, "Debug". |
-| **`$(DevEnvDir)`** | The installation directory of Visual Studio (defined as drive + path); includes the trailing backslash '\\'. |
+| **`$(DevEnvDir)`** | The installation directory of Visual Studio (defined as drive + path); includes the trailing backslash (\\). |
 | **`$(FrameworkDir)`** | The directory into which the .NET Framework was installed. |
 | **`$(FrameworkSDKDir)`** | The directory into which you installed the .NET Framework. The .NET Framework could have been installed as part of Visual Studio or separately. |
 | **`$(FrameworkVersion)`** | The version of the .NET Framework used by Visual Studio. Combined with **`$(FrameworkDir)`**, the full path to the version of the .NET Framework use by Visual Studio. |
 | **`$(FxCopDir)`** | The path to the *`fxcop.cmd`* file. The *`fxcop.cmd`* file isn't installed in all Visual Studio editions. |
-| **`$(IntDir)`** | Path to the directory specified for intermediate files. If it's a relative path, intermediate files go to this path appended to the project directory. This path should have a trailing slash. It resolves to the value for the **Intermediate Directory** property. Don't use **`$(OutDir)`** to define this property. |
-| **`$(OutDir)`** | Path to the output file directory. If it's a  relative path, output files go to this path appended to the project directory. This path should have a trailing slash. It resolves to the value for the **Output Directory** property. Don't use **`$(IntDir)`** to define this property. |
+| **`$(IntDir)`** | Path to the directory specified for intermediate files. If it's a relative path, intermediate files go to this path appended to the project directory. This path should have a trailing backslash (\\). It resolves to the value for the **Intermediate Directory** property. Don't use **`$(OutDir)`** to define this property. |
+| **`$(OutDir)`** | Path to the output file directory. If it's a  relative path, output files go to this path appended to the project directory. This path should have a trailing backslash (\\). It resolves to the value for the **Output Directory** property. Don't use **`$(IntDir)`** to define this property. |
 | **`$(Platform)`** | The name of current project platform, for example, "Win32". |
 | **`$(PlatformShortName)`** | The short name of current architecture, for example, "x86" or "x64". |
-| **`$(ProjectDir)`** | The directory of the project (defined as drive + path); includes the trailing backslash '\\'. |
+| **`$(ProjectDir)`** | The directory of the project (defined as drive + path); includes the trailing backslash (\\). |
 | **`$(ProjectExt)`** | The file extension of the project. It includes the '.' before the file extension. |
 | **`$(ProjectFileName)`** | The file name of the project (defined as base name + file extension). |
 | **`$(ProjectName)`** | The base name of the project. |
 | **`$(ProjectPath)`** | The absolute path name of the project (defined as drive + path + base name + file extension). |
-| **`$(PublishDir)`** | The output location for the publish target; includes the trailing backslash '\\'. Defaults to the **`$(OutDir)app.publish\`** folder. |
+| **`$(PublishDir)`** | The output location for the publish target; includes the trailing backslash (\\). Defaults to the **`$(OutDir)app.publish\`** folder. |
 | **`$(RemoteMachine)`** | Set to the value of the **Remote Machine** property on the Debug property page. For more information, see [Changing Project Settings for a C/C++ Debug Configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration). |
 | **`$(RootNameSpace)`** | The namespace, if any, containing the application. |
-| **`$(SolutionDir)`** | The directory of the solution (defined as drive + path); includes the trailing backslash '\\'. Defined only when building a solution in the IDE. |
+| **`$(SolutionDir)`** | The directory of the solution (defined as drive + path); includes the trailing backslash (\\). Defined only when building a solution in the IDE. |
 | **`$(SolutionExt)`** | The file extension of the solution. It includes the '.' before the file extension. Defined only when building a solution in the IDE. |
 | **`$(SolutionFileName)`** | The file name of the solution (defined as base name + file extension). Defined only when building a solution in the IDE. |
 | **`$(SolutionName)`** | The base name of the solution. Defined only when building a solution in the IDE. |
 | **`$(SolutionPath)`** | The absolute path name of the solution (defined as drive + path + base name + file extension). Defined only when building a solution in the IDE. |
-| **`$(TargetDir)`** | The directory of the primary output file for the build (defined as drive + path); includes the trailing backslash '\\'. |
+| **`$(TargetDir)`** | The directory of the primary output file for the build (defined as drive + path); includes the trailing backslash (\\). |
 | **`$(TargetExt)`** | The file extension of the primary output file for the build. It includes the '.' before the file extension. |
 | **`$(TargetFileName)`** | The file name of the primary output file for the build (defined as base name + file extension). |
 | **`$(TargetName)`** | The base name of the primary output file for the build. |
@@ -69,7 +69,7 @@ The build system for C++ was changed significantly between Visual Studio 2008 an
 
 | Macro | Description |
 |--|--|
-| **`$(InputDir)`** | (Migrated.) The directory of the input file (defined as drive + path); includes the trailing backslash '\\'. If the project is the input, then this macro is equivalent to **`$(ProjectDir)`**. |
+| **`$(InputDir)`** | (Migrated.) The directory of the input file (defined as drive + path); includes the trailing backslash (\\). If the project is the input, then this macro is equivalent to **`$(ProjectDir)`**. |
 | **`$(InputExt)`** | (Migrated.) The file extension of the input file. It includes the '.' before the file extension. If the project is the input, then this macro is equivalent to **`$(ProjectExt)`**. For source files, it's equivalent to **`%(Extension)`**. |
 | **`$(InputFileName)`** | (Migrated.) The file name of the input file (defined as base name + file extension). If the project is the input, then this macro is equivalent to **`$(ProjectFileName)`**. For source files, it's equivalent to **`%(Identity)`**. |
 | **`$(InputName)`** | (Migrated.) The base name of the input file. If the project is the input, then this macro is equivalent to **`$(ProjectName)`**. For source files, it's equivalent to **`%(Filename)`**. |
