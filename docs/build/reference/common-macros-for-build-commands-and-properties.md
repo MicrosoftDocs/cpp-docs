@@ -14,9 +14,9 @@ To display all of the currently available macros, open the project property page
 
 For example, in the left pane, select **Configuration Properties** > **VC++ Directories**, and then in the right pane, select **Include directories**. The value for **Include directories** is `$(VC_IncludePath);$(WindowsSDK_IncludePath);`.
 
-The dollar sign and parenthesis surrounding these two values indicates that they are macros. The expansion of those two macros sets the include directories to search.
+The dollar sign and parenthesis surrounding these two values indicates that they're macros. The expansion of those two macros sets the include directories to search.
 
-Select **Include Directories** and a dropdown will appear at the end of the row. Select the dropdown button, then select **Edit**. In the **Include Directories** dialog box that appears, select the **Macros>>** button.
+Select **Include Directories** and a dropdown appears at the end of the row. Select the dropdown button, then select **Edit**. In the **Include Directories** dialog box that appears, select the **Macros>>** button.
 
 That expands the dialog to show the current set of properties and macros visible to Visual Studio, along with the current value for each. For more information, see the **Specifying User-Defined Values** section of [C++ project property page reference](property-pages-visual-cpp.md).
 
@@ -33,7 +33,7 @@ This table describes a commonly used subset of the available macros; there are m
 | **`$(Configuration)`** | The name of the current project configuration, for example, "Debug". |
 | **`$(DevEnvDir)`** | The installation directory of Visual Studio (defined as drive + path); includes the trailing backslash (\\). |
 | **`$(FrameworkDir)`** | The directory into which the .NET Framework was installed. |
-| **`$(FrameworkSDKDir)`** | The directory into which you installed the .NET Framework. The .NET Framework could have been installed as part of Visual Studio or separately. |
+| **`$(FrameworkSDKDir)`** | The directory into which you installed the .NET Framework. The .NET Framework may have been installed as part of Visual Studio or separately. |
 | **`$(FrameworkVersion)`** | The version of the .NET Framework used by Visual Studio. Combined with **`$(FrameworkDir)`**, the full path to the version of the .NET Framework use by Visual Studio. |
 | **`$(FxCopDir)`** | The path to the *`fxcop.cmd`* file. The *`fxcop.cmd`* file isn't installed in all Visual Studio editions. |
 | **`$(IntDir)`** | Path to the directory specified for intermediate files. If it's a relative path, intermediate files go to this path appended to the project directory. This path should have a trailing backslash (\\). It resolves to the value for the **Intermediate Directory** property. Don't use **`$(OutDir)`** to define this property. |
@@ -65,7 +65,7 @@ This table describes a commonly used subset of the available macros; there are m
 
 ## Obsolete macros
 
-The build system for C++ was changed significantly between Visual Studio 2008 and Visual Studio 2010. Many macros used in earlier project types have been changed to new ones. These macros are no longer used or have been replaced by one or more equivalent properties or [item metadata macro](/visualstudio/msbuild/itemmetadata-element-msbuild) (**`%(item-name)`**) values. Macros marked "migrated" can be updated by the project migration tool. If a project containing the macro is migrated from Visual Studio 2008 or earlier to Visual Studio 2010, Visual Studio converts the macro to the equivalent current macro. Later versions of Visual Studio can't convert projects from Visual Studio 2008 and earlier to the new project type. You must convert these projects in two steps; first convert them to Visual Studio 2010, and then convert the result to your newer version of Visual Studio. For more information, see [Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md).
+The build system for C++ was changed significantly between Visual Studio 2008 and Visual Studio 2010. Many macros used in earlier project types changed to new ones. These macros are no longer used or are replaced by one or more equivalent properties or [item metadata macro](/visualstudio/msbuild/itemmetadata-element-msbuild) (**`%(item-name)`**) values. The migration tool can update macros marked "migrated". If a project containing the macro is migrated from Visual Studio 2008 or earlier to Visual Studio 2010, Visual Studio converts the macro to the equivalent current macro. Later versions of Visual Studio can't convert projects from Visual Studio 2008 and earlier to the new project type. You must convert these projects in two steps; first convert them to Visual Studio 2010, and then convert the result to your newer version of Visual Studio. For more information, see [Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md).
 
 | Macro | Description |
 |--|--|
@@ -77,7 +77,7 @@ The build system for C++ was changed significantly between Visual Studio 2008 an
 | **`$(ParentName)`** | Name of the item containing this project item. This macro is the parent folder name, or project name. |
 | **`$(SafeInputName)`** | The name of the file as a valid class name, minus file extension. This property doesn't have an exact equivalent. |
 | **`$(SafeParentName)`** | The name of the immediate parent in valid name format. For example, a form is the parent of a *`.resx`* file. This property doesn't have an exact equivalent. |
-| **`$(SafeRootNamespace)`** | The namespace name in which the project wizards will add code. This namespace name only contains characters that would be permitted in a valid C++ identifier. This property doesn't have an exact equivalent. |
+| **`$(SafeRootNamespace)`** | The namespace name where the project wizards should add code. This namespace name only contains characters that would be permitted in a valid C++ identifier. This property doesn't have an exact equivalent. |
 
 ## See also
 
