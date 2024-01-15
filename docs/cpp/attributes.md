@@ -5,6 +5,7 @@ f1_keywords: ["deprecated", "no_return", "carries_dependency", "fallthrough", "n
 helpviewer_keywords: ["deprecated", "no_return", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::intrinsic", "msvc::no_tls_guard"]
 ms.date: 4/13/2023
 ---
+
 # Attributes in C++
 
 The C++ Standard defines a common set of attributes. It also allows compiler vendors to define their own attributes within a vendor-specific namespace. However, compilers are only required to recognize the attributes defined in the standard.
@@ -134,13 +135,13 @@ The first call to `foo`, and both calls to `bar`, are treated as if they were de
 
 ### `[[msvc::intrinsic]]`
 
-The Microsoft-specific `[[msvc::intrinsic]]` attribute tells the compiler to inline a metafunction that acts as a named cast from the parameter type to the return type. When the attribute is present on a function definition, the compiler replaces all calls to that function with a simple cast. The `[[msvc::intrinsic]]` attribute is available in Visual Studio 2022 version 17.5 preview 2 and later versions. This attribute applies only to the specific function that follows it.
-
 The `[[msvc::intrinsic]]` attribute has three constraints on the function it's applied to:
 
-- The function can't be recursive; its body must only have a return statement with a cast.
+- The function can't be recursive; its body must only have a return statement with a `static_cast` from the parameter type to the return type.
 - The function can only accept a single parameter.
 - The **`/permissive-`** compiler option is required. (The **`/std:c++20`** and later options imply **`/permissive-`** by default.)
+
+The Microsoft-specific `[[msvc::intrinsic]]` attribute tells the compiler to inline a metafunction that acts as a named cast from the parameter type to the return type. When the attribute is present on a function definition, the compiler replaces all calls to that function with a simple cast. The `[[msvc::intrinsic]]` attribute is available in Visual Studio 2022 version 17.5 preview 2 and later versions. This attribute applies only to the specific function that follows it.
 
 #### Example
 
