@@ -21,7 +21,7 @@ The following sample generates C5266:
 ```cpp
 // compile with: /W4 /c
 
-#pragma warning(default : 5266) // enable warning C5266 because it's off by default (or compile with /W45266)
+#pragma warning(default : 5266) // enable warning C5266 because it's off by default (or compile with /w45266)
 
 const int f() // warning C5266: 'const' qualifier on return type has no effect
 {
@@ -31,4 +31,4 @@ const int f() // warning C5266: 'const' qualifier on return type has no effect
 
 ## See also
 
-[Enable warnings that are off by default](..\preprocessor\compiler-warnings-that-are-off-by-default.md)
+[Enable warnings that are off by default](compiler-warnings-that-are-off-by-default.md)
