@@ -58,9 +58,16 @@
       ],
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/cpp-docs",
-      "feedback_product_url": "https://aka.ms/feedback/report?space=62"
+      "feedback_product_url": "https://developercommunity.visualstudio.com/cpp/",
+      "feedback_help_link_url": "https://learn.microsoft.com/en-us/answers/tags/314/cpp",
+      "feedback_help_link_type": "get-help-at-qna"
     },
     "fileMetadata": {
+      "feedback_help_link_url": {
+         "dotnet/*.md": "https://learn.microsoft.com/en-us/answers/tags/308/dotnetcli",
+         "ide/*.md": "https://learn.microsoft.com/en-us/answers/tags/176/vs",
+         "windows/*.md": "https://learn.microsoft.com/en-us/answers/tags/184/windows-app-sdk"
+      },
       "ms.tgt_pltfrm": {
         "linux/**.md": "Linux"
       },
