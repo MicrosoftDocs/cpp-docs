@@ -71,7 +71,7 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 
 | Warning | Message |
 |--|--|
-| C5266 | 'const' qualifier on return type has no effect |
+| [C5266](compiler-warning-level-4-c5266.md) | 'const' qualifier on return type has no effect |
 
 ## Warnings introduced in Visual Studio 2022 version 17.5 (compiler version 19.35)
 
