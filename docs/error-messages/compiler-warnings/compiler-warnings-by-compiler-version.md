@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version"
 description: "Table of Microsoft C/C++ compiler warnings by compiler version."
-ms.date: 02/28/2023
+ms.date: 01/18/2024
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 ---
 # Compiler Warnings by compiler version
@@ -48,6 +48,7 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2022 version 17.3 | 19.33 |
 | Visual Studio 2022 version 17.4 | 19.34 |
 | Visual Studio 2022 version 17.5 | 19.35 |
+| Visual Studio 2022 version 17.6 | 19.36 |
 | Visual Studio 2022 version 17.7 | 19.37 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
@@ -63,6 +64,14 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 | Warning | Message |
 |--|--|
 | C5267 | definition of implicit copy constructor/assignment operator for '*type*' is deprecated because it has a user-provided assignment operator/copy constructor |
+
+## Warnings introduced in Visual Studio 2022 version 17.6 (compiler version 19.36)
+
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.35`**.
+
+| Warning | Message |
+|--|--|
+| [C5266](compiler-warning-level-4-c5266.md) | 'const' qualifier on return type has no effect |
 
 ## Warnings introduced in Visual Studio 2022 version 17.5 (compiler version 19.35)
 
