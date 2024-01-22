@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler warnings that are off by default"
 title: "Compiler warnings that are off by default"
-ms.date: 11/15/2023
+ms.date: 01/18/2024
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ---
 # Compiler warnings that are off by default
@@ -190,6 +190,7 @@ The following warnings are turned off by default in Visual Studio 2022 and later
 | [C5262](../error-messages/compiler-warnings/c5262.md) (level 1, error) | implicit fall-through occurs here; are you missing a `break` statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases <sup>17.4</sup> |
 | C5263 (level 4) | calling '`std::move`' on a temporary object prevents copy elision <sup>17.4</sup> |
 | C5264 (level 4) | '*variable-name*': 'const' variable is not used <sup>17.4</sup> |
+| [C5266 (level 4)](../error-messages/compiler-warnings/compiler-warning-level-4-c5266.md) | 'const' qualifier on return type has no effect <sup>17.6</sup> |
 | [C5267](../error-messages/compiler-warnings/c5267.md) (level 4) | definition of implicit copy constructor/assignment operator for '*type*' is deprecated because it has a user-provided assignment operator/copy constructor <sup>17.7</sup> |
 
 <sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.\
