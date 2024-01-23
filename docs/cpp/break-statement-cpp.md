@@ -12,13 +12,13 @@ The **`break`** statement ends execution of the nearest enclosing loop or condit
 
 ## Syntax
 
-```
+```cpp
 break;
 ```
 
 ## Remarks
 
-The **`break`** statement is used with the conditional [switch](../cpp/switch-statement-cpp.md) statement and with the [do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md), and [while](../cpp/while-statement-cpp.md) loop statements.
+The **`break`** statement is used with the conditional [`switch`](../cpp/switch-statement-cpp.md) statement and with the [`do`](../cpp/do-while-statement-cpp.md), [`for`](../cpp/for-statement-cpp.md), and [`while`](../cpp/while-statement-cpp.md) loop statements.
 
 In a **`switch`** statement, the **`break`** statement causes the program to execute the next statement outside the **`switch`** statement. Without a **`break`** statement, every statement from the matched **`case`** label to the end of the **`switch`** statement, including the **`default`** clause, is executed.
 
@@ -58,7 +58,9 @@ int nums []{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 ```
 
 ```Output
-In each case:
+1
+2
+3
 1
 2
 3
@@ -93,7 +95,10 @@ int main() {
 ```
 
 ```Output
-In each case:
+0
+1
+2
+3
 0
 1
 2
