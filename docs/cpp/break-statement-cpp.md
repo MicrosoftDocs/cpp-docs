@@ -94,7 +94,10 @@ int main() {
 
 ```Output
 In each case:
-0123
+0
+1
+2
+3
 ```
 
 The following code shows how to use **`break`** in a switch statement. You must use **`break`** in every case if you want to handle each case separately; if you do not use **`break`**, the code execution falls through to the next case.
