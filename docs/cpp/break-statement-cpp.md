@@ -4,9 +4,8 @@ title: "break Statement (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["break_cpp"]
 helpviewer_keywords: ["break keyword [C++]"]
-ms.assetid: 63739928-8985-4b05-93ce-016322e6da3d
 ---
-# break Statement (C++)
+# `break` statement (C++)
 
 The **`break`** statement ends execution of the nearest enclosing loop or conditional statement in which it appears. Control passes to the statement that follows the end of the statement, if any.
 
