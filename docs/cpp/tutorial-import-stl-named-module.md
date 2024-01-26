@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Import the standard library (STL) using modules from the command line (C++)"
-ms.date: 06/08/2023
+ms.date: 01/26/2024
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -58,16 +58,16 @@ The statement `import std;` or `import std.compat;` imports the standard library
 ### Example: `std`
 
 1. Open a x86 Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 preview version 17.5 or above. You'll get errors if you use the wrong version of the prompt. The examples used in this tutorial are for the CMD shell. If you use PowerShell, use `"$Env:VCToolsInstallDir\modules\std.ixx"` instead of `"%VCToolsInstallDir\modules\std.ixx"`.
-1. Create a directory, such as `%USERPROFILE%\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors such as not being able to open the output file `std.ifc`.
+1. Create a directory, such as `%USERPROFILE%\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors during compilation such as not being able to open the output file `std.ifc`.
 1. Compile the `std` named module with the following command:
 
-    ```dos
-    cl /std:c++latest /EHsc /nologo /W4 /MTd /c "%VCToolsInstallDir%\modules\std.ixx"
+    ```cmd
+    cl /c /nologo /std:c++latest /EHsc /W4 "%VCToolsInstallDir%\modules\std.ixx"
     ```
 
     If you get errors, ensure that you're using the correct version of the command prompt. If you're still having issues, please file a bug at [Visual Studio Developer Community](https://developercommunity.visualstudio.com/home).
 
-    You should compile the `std` named module using the same compiler settings that you intend to use with the code that imports it. If you have a multi-project solution, you can compile the standard library named module once, and then refer to it from all of your projects by using the [`/reference`](../build/reference/module-reference.md) compiler option.
+    Compile the `std` named module using the same compiler settings that you intend to use with the code that imports it. If you have a multi-project solution, you can compile the standard library named module once, and then refer to it from all of your projects by using the [`/reference`](../build/reference/module-reference.md) compiler option.
 
     Using the previous compiler command, the compiler outputs two files:
     - `std.ifc` is the compiled binary representation of the named module interface that the compiler consults to process the `import std;` statement. This is a compile-time only artifact. It doesn't ship with your application.
@@ -77,12 +77,16 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
     | Switch | Meaning |
     |---|---|
+    | [`/c`](../build/reference/c-compile-without-linking.md) | Compile without linking, because we are just building the binary named module interface at this point. |
     | [`/std:c++:latest`](../build/reference/std-specify-language-standard-version.md) | Use the latest version of the C++ language standard and library. Although module support is available under `/std:c++20`, you need the latest standard library to get support for standard library named modules. |
     | [`/EHsc`](../build/reference/eh-exception-handling-model.md) | Use C++ exception handling, except for functions marked `extern "C"`. |
-    | [`/MTd`](../build/reference/md-mt-ld-use-run-time-library.md) | Use the static multithreaded debug run-time library. |
-    | [`/c`](../build/reference/c-compile-without-linking.md) | Compile without linking. |
+    | [`/W4`](../build/reference/w4-enable-all-warnings.md) | Enable all warnings. |
 
-1. To try out importing the `std` library, start by creating a file named `importExample.cpp` with the following content:
+    As an aside, you can control the object file name and the named module interface file name with the following switches:
+    - [`/Fo`](../build/reference/fo-object-file-name.md). For example, `/Fo "somethingelse.obj"`. By default, the compiler creates a file name that is the same as the module name you are compiling. In the example, the output name is `std.obj` because we are compiling the file `std.ixx`.
+    - [`/ifcOutput`](../build/reference/ifcoutput-named-module-interface-file-name.md). For example, `/ifcOutput "somethingelse.ifc"`. In the example, the generated `ifc` file is `std.ifc` because we are compiling the file `std.ixx`.
+
+1. Try out importing the `std` library by creating a file named `importExample.cpp` with the following content:
 
     ```cpp
     // requires /std:c++latest
@@ -104,16 +108,16 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
 1. Compile the example by using the following command in the same directory as the previous step:
 
-    ```dos
-    cl /std:c++latest /EHsc /nologo /W4 /MTd importExample.cpp std.obj
+    ```cmd
+    cl /std:c++latest /EHsc /nologo /W4 /reference "std=std.ifc" importExample.cpp std.obj
     ```
 
-    We didn't have to specify `std.ifc` on the command line because the compiler automatically looks for the `.ifc` file matching the module name specified by the `import` statement. When the compiler encounters `import std;`, it finds `std.ifc` since we put it in the same directory as the source code--relieving us of the need to specify it on the command line. If the `.ifc` file is in a different directory than the source code, use the [`/reference`](../build/reference/module-reference.md) compiler switch to refer to it.
+    It isn't necessary to specify `/reference "std=std.ifc"` on the command line in this example because the compiler automatically looks for the `.ifc` file matching the module name specified by the `import` statement. When the compiler encounters `import std;`, it can find `std.ifc` if it is located in the same directory as the source code. If the `.ifc` file is in a different directory than the source code, use the [`/reference`](../build/reference/module-reference.md) compiler switch to refer to it.
 
     If you're building a single project, you can combine the steps of building the `std` standard library named module and the step of building your application by adding `"%VCToolsInstallDir%\modules\std.ixx"` to the command line. Make sure to put it before any `.cpp` files that consume it. By default, the output executable's name is taken from the first input file. Use the `/Fe` compiler option to specify the output file name you want. This tutorial shows compiling the `std` named module as a separate step because you only need to build the standard library named module once, and then you can refer to it from your project, or from multiple projects. But it may be convenient to build everything together, as shown by this command line:
 
-    ```dos
-    cl /FeimportExample /std:c++latest /EHsc /nologo /W4 /MTd "%VCToolsInstallDir%\modules\std.ixx" importExample.cpp
+    ```cmd
+    cl /FeimportExample /std:c++latest /EHsc /nologo /W4 "%VCToolsInstallDir%\modules\std.ixx" importExample.cpp
     ```
 
     Given the previous command line, the compiler produces an executable named `importExample.exe`. When you run it, it produces the following output:
@@ -139,8 +143,8 @@ Before you can use `import std.compat;` you must compile the module interface fi
 1. Create a directory to try this example, such as `%USERPROFILE%\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors such as not being able to open the output file `std.ifc`.
 1. Compile the `std` and `std.compat` named modules with the following command:
 
-    ```dos
-    cl /std:c++latest /EHsc /nologo /W4 /MTd /c "%VCToolsInstallDir%\modules\std.ixx" "%VCToolsInstallDir%\modules\std.compat.ixx"
+    ```cmd
+    cl /std:c++latest /EHsc /nologo /W4 /c "%VCToolsInstallDir%\modules\std.ixx" "%VCToolsInstallDir%\modules\std.compat.ixx"
     ```
 
     You should compile `std` and `std.compat` using the same compiler settings that you intend to use with the code that imports them. If you have a multi-project solution, you can compile them once, and then refer to them from all of your projects using the [`/reference`](../build/reference/module-reference.md) compiler option.
@@ -175,7 +179,7 @@ Before you can use `import std.compat;` you must compile the module interface fi
 1. Compile the example by using the following command:
 
     ```cmd
-    cl /std:c++latest /EHsc /nologo /W4 /MTd stdCompatExample.cpp std.obj std.compat.obj
+    cl /std:c++latest /EHsc /nologo /W4 stdCompatExample.cpp std.obj std.compat.obj
     ```
 
     We didn't have to specify `std.compat.ifc` on the command line because the compiler automatically looks for the `.ifc` file that matches the module name in an `import` statement. When the compiler encounters `import std.compat;` it finds `std.compat.ifc` since we put it in the same directory as the source code--relieving us of the need to specify it on the command line. If the `.ifc` file is in a different directory than the source code, use the [`/reference`](../build/reference/module-reference.md) compiler switch to refer to it.
@@ -184,8 +188,8 @@ Before you can use `import std.compat;` you must compile the module interface fi
 
     If you're building a single project, you can combine the step of building the `std` and `std.compat` standard library named modules with the step of building your application by adding `"%VCToolsInstallDir%\modules\std.ixx"` and `"%VCToolsInstallDir%\modules\std.compat.ixx"` (in that order) to the command line. Make sure to put them before any `.cpp` files that consume them, and specify `/Fe` to name the built `exe` as shown in this example:
 
-    ```dos
-    cl /FestdCompatExample /std:c++latest /EHsc /nologo /W4 /MTd "%VCToolsInstallDir%\modules\std.ixx" "%VCToolsInstallDir%\modules\std.compat.ixx" stdCompatExample.cpp
+    ```cmd
+    cl /FestdCompatExample /std:c++latest /EHsc /nologo /W4 "%VCToolsInstallDir%\modules\std.ixx" "%VCToolsInstallDir%\modules\std.compat.ixx" stdCompatExample.cpp
     ```
 
     I've shown them as separate steps in this tutorial because you only need to build the standard library named modules once, and then you can refer to them from your project, or from multiple projects. But it may be convenient to build them all at once.
