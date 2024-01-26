@@ -186,20 +186,21 @@ Before you can use `import std.compat;` you must compile the module interface fi
 1. Compile the example by using the following command:
 
     ```cmd
-    cl /std:c++latest /EHsc /nologo /W4 stdCompatExample.cpp std.obj std.compat.obj
+    cl /std:c++latest /EHsc /nologo /W4 stdCompatExample.cpp
+    link stdCompatExample.obj std.obj std.compat.obj
     ```
 
     We didn't have to specify `std.compat.ifc` on the command line because the compiler automatically looks for the `.ifc` file that matches the module name in an `import` statement. When the compiler encounters `import std.compat;` it finds `std.compat.ifc` since we put it in the same directory as the source code--relieving us of the need to specify it on the command line. If the `.ifc` file is in a different directory than the source code, or has a different name, use the [`/reference`](../build/reference/module-reference.md) compiler switch to refer to it.
 
     When you import `std.compat`, you must also link against `std.obj` because `std.compat` builds on top of the implementation in `std.obj`.
 
-    If you're building a single project, you can combine the steps of building the `std` and `std.compat` standard library named modules with the step of building your application by adding `"%VCToolsInstallDir%\modules\std.ixx"` and `"%VCToolsInstallDir%\modules\std.compat.ixx"` (in that order) to the command line. Make sure to put them before any `.cpp` files that consume them, and specify `/Fe` to name the built `exe` as shown in this example:
+    If you're building a single project, you can combine the steps of building the `std` and `std.compat` standard library named modules with the step of building your application by adding `"%VCToolsInstallDir%\modules\std.ixx"` and `"%VCToolsInstallDir%\modules\std.compat.ixx"` (in that order) to the command line. This tutorial shows building the standard library modules as a separate step because you only need to build the standard library named modules once, and then you can refer to them from your project, or from multiple projects. But if it's convenient to build them all at once, you can, just make sure to put them before any `.cpp` files that consume them, and specify `/Fe` to name the built `exe` as shown in this example:
 
     ```cmd
     cl /FestdCompatExample /std:c++latest /EHsc /nologo /W4 "%VCToolsInstallDir%\modules\std.ixx" "%VCToolsInstallDir%\modules\std.compat.ixx" stdCompatExample.cpp
     ```
 
-    This tutorial shows building the standard library modules as a separate step because you only need to build the standard library named modules once, and then you can refer to them from your project, or from multiple projects. But if it's convenient to build them all at once, you can.
+    In this example, compiling your source code and linking the module's implementation into your application are separate steps. They don't have to be. You could have used `cl /std:c++latest /EHsc /nologo /W4 stdCompatExample.cpp std.obj std.compat.obj` to compile and link in one step. But it may be convenient to build and link separately because then you only need to build the standard library named modules once, and then you can refer to them from your project, or from multiple projects, in your build's link step.
 
     The previous compiler command produces an executable named `stdCompatExample.exe`. When you run it, it produces the following output:
 
