@@ -57,7 +57,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
 ### Example: `std`
 
-1. Open a x86 Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 preview version 17.5 or above. You'll get errors if you use the wrong version of the prompt. The examples used in this tutorial are for the CMD shell. If you use PowerShell, use `"$Env:VCToolsInstallDir\modules\std.ixx"` instead of `"%VCToolsInstallDir\modules\std.ixx"`.
+1. Open a x86 Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 version 17.5 or above. You'll get errors if you use the wrong version of the prompt. The examples used in this tutorial are for the CMD shell.
 1. Create a directory, such as `%USERPROFILE%\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors during compilation such as not being able to open the output file `std.ifc`.
 1. Compile the `std` named module with the following command:
 
@@ -67,7 +67,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
     If you get errors, ensure that you're using the correct version of the command prompt. If you're still having issues, please file a bug at [Visual Studio Developer Community](https://developercommunity.visualstudio.com/home).
 
-    Compile the `std` named module using the same compiler settings that you intend to use with the code that imports it. If you have a multi-project solution, you can compile the standard library named module once, and then refer to it from all of your projects by using the [`/reference`](../build/reference/module-reference.md) compiler option.
+    Compile the `std` named module using the same compiler settings that you intend to use with the code that imports the built module. If you have a multi-project solution, you can compile the standard library named module once, and then refer to it from all of your projects by using the [`/reference`](../build/reference/module-reference.md) compiler option.
 
     Using the previous compiler command, the compiler outputs two files:
     - `std.ifc` is the compiled binary representation of the named module interface that the compiler consults to process the `import std;` statement. This is a compile-time only artifact. It doesn't ship with your application.
@@ -86,7 +86,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
     - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo "somethingelse.obj"`. By default, the compiler uses the same name as the module source file (`.ixx`) you are compiling. In the example, the output name is `std.obj` by default because we're compiling the module file `std.ixx`.
     - [`/ifcOutput`](../build/reference/ifc-output.md) sets the name of the named module interface file (`.ifc`). For example, `/ifcOutput "somethingelse.ifc"`. By default, the compiler uses the same name as the module source file (`.ixx`) you are compiling. In the example, the generated `ifc` file is `std.ifc` by default because we're compiling the module file `std.ixx`.
 
-1. Importing the `std` library you just built by creating a file named `importExample.cpp` with the following content:
+1. Importing the `std` library you just built by first creating a file named `importExample.cpp` with the following content:
 
     ```cpp
     // requires /std:c++latest
@@ -142,7 +142,7 @@ The `std.compat` named module is a compatibility layer provided to ease migratin
 
 Before you can use `import std.compat;` you must compile the module interface file found in source code form in `std.compat.ixx`. Visual Studio ships the source code for the module so that you can compile the module using the compiler settings that match your project. The steps are similar to for building the `std` named module. The `std` named module is built first because `std.compat` depends on it:
 
-1. Open a Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 preview version 17.5 or above. You'll get compiler errors if you use the wrong version of the prompt.
+1. Open a Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 version 17.5 or above. You'll get compiler errors if you use the wrong version of the prompt.
 1. Create a directory to try this example, such as `%USERPROFILE%\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors such as not being able to open the output file `std.ifc`.
 1. Compile the `std` and `std.compat` named modules with the following command:
 
@@ -152,14 +152,14 @@ Before you can use `import std.compat;` you must compile the module interface fi
 
     You should compile `std` and `std.compat` using the same compiler settings that you intend to use with the code that imports them. If you have a multi-project solution, you can compile them once, and then refer to them from all of your projects using the [`/reference`](../build/reference/module-reference.md) compiler option.
 
-    If you get errors, ensure that you're using the correct version of the command prompt. If you're still having issues, please file a bug at [Visual Studio Developer Community](https://developercommunity.visualstudio.com/home). While this feature is still in preview, you can find a list of known problems under [Standard library header units and modules tracking issue 1694](https://github.com/microsoft/stl/issues/1694).
+    If you get errors, ensure that you're using the correct version of the command prompt. If you're still having issues, please file a bug at [Visual Studio Developer Community](https://developercommunity.visualstudio.com/home).
 
     The compiler outputs four files from the previous two steps:
     - `std.ifc` is the compiled binary named module interface that the compiler consults to process the `import std;` statement. The compiler also consults `std.ifc` to process `import std.compat;` because `std.compat` builds on `std`. This is a compile-time only artifact. It doesn't ship with your application.
     - `std.obj` contains the implementation of the standard library.
     - `std.compat.ifc` is the compiled binary named module interface that the compiler consults to process the `import std.compat;` statement. This is a compile-time only artifact. It doesn't ship with your application.
     - `std.compat.obj` contains implementation. However, most of the implementation is provided by `std.obj`. Add `std.obj` to the command line when you compile the sample app to statically link the functionality that you use from the standard library into your application.
-    - 
+
     As before in the `std` example, you can control the object file name and the named module interface file name with the following switches:
     - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo "somethingelse.obj"`. By default, the compiler uses the same name as the module source file (`.ixx`) you are compiling. In the example, the output names are `std.obj` and `std.compat.obj` by default because we're compiling the module files `std.ixx` and `std.compat.obj`.
     - [`/ifcOutput`](../build/reference/ifc-output.md) sets the name of the named module interface file (`.ifc`). For example, `/ifcOutput "somethingelse.ifc"`. By default, the compiler uses the same name as the module source file (`.ixx`) you are compiling. In the example, the generated `ifc` files are `std.ifc` and `std.compat.ifc` by default because we're compiling the module files `std.ixx` and `std.compat.ixx`.
@@ -191,7 +191,7 @@ Before you can use `import std.compat;` you must compile the module interface fi
 
     We didn't have to specify `std.compat.ifc` on the command line because the compiler automatically looks for the `.ifc` file that matches the module name in an `import` statement. When the compiler encounters `import std.compat;` it finds `std.compat.ifc` since we put it in the same directory as the source code--relieving us of the need to specify it on the command line. If the `.ifc` file is in a different directory than the source code, or has a different name, use the [`/reference`](../build/reference/module-reference.md) compiler switch to refer to it.
 
-    When you import `std.compat`, you must also link against `std.obj` because `std.compat` builds on top of the implementation in `std.obj`. If you don't link against `std.obj`, you'll get linker errors such as `LNK2019: unresolved external symbol "public: __cdecl std::vector<int,class std::allocator<int> >::~vector<int,class std::allocator<int> >(void) noexcept"`
+    When you import `std.compat`, you must also link against `std.obj` because `std.compat` builds on top of the implementation in `std.obj`.
 
     If you're building a single project, you can combine the steps of building the `std` and `std.compat` standard library named modules with the step of building your application by adding `"%VCToolsInstallDir%\modules\std.ixx"` and `"%VCToolsInstallDir%\modules\std.compat.ixx"` (in that order) to the command line. Make sure to put them before any `.cpp` files that consume them, and specify `/Fe` to name the built `exe` as shown in this example:
 
@@ -210,7 +210,7 @@ Before you can use `import std.compat;` you must compile the module interface fi
 
 ## Standard library named module considerations
 
-Versioning for named modules is the same as for headers. The `.ixx` named module files are installed alongside the headers, for example: `"%VCToolsInstallDir%\modules\std.ixx`, which resolves to `C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.35.32019\modules\std.ixx` in the version of the tools used at the time of this writing. Select the version of the named module the same way you choose the version of the header file to use--by the directory you refer to them from.
+Versioning for named modules is the same as for headers. The `.ixx` named module files are installed alongside the headers, for example: `"%VCToolsInstallDir%\modules\std.ixx`, which resolves to `C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.38.33130\modules\std.ixx` in the version of the tools used at the time of this writing. Select the version of the named module the same way you choose the version of the header file to use--by the directory you refer to them from.
 
 Don't mix and match importing header units and named modules. For example, don't `import <vector>;` and `import std;` in the same file.
 
