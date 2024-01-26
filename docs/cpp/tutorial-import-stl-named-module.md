@@ -77,12 +77,12 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
     | Switch | Meaning |
     |---|---|
-    | [`/c`](../build/reference/c-compile-without-linking.md) | Compile without linking, because we are just building the binary named module interface at this point. |
     | [`/std:c++:latest`](../build/reference/std-specify-language-standard-version.md) | Use the latest version of the C++ language standard and library. Although module support is available under `/std:c++20`, you need the latest standard library to get support for standard library named modules. |
     | [`/EHsc`](../build/reference/eh-exception-handling-model.md) | Use C++ exception handling, except for functions marked `extern "C"`. |
+    | [`/c`](../build/reference/c-compile-without-linking.md) | Compile without linking, because we are just building the binary named module interface at this point. |
     | [`/W4`](../build/reference/w4-enable-all-warnings.md) | Using /W4 is generally recommended, especially for new projects because it enables all level 1, level 2, level 3, and most level 4 (informational) warnings, which can help you catch potential issues early. It essentially provides lint-like warnings that can help ensure the fewest possible hard-to-find code defects. |
 
-    You can control the object file name and the named module interface file name with the following switches:
+    If your build scenario requires it, you can control the object file name and the named module interface file name with the following switches:
     - [`/Fo`](../build/reference/fo-object-file-name.md). For example, `/Fo "somethingelse.obj"`. By default, the compiler creates a file name that is the same as the module name you are compiling. In the example, the output name is `std.obj` because we are compiling the file `std.ixx`.
     - [`/ifcOutput`](../build/reference/ifcoutput-named-module-interface-file-name.md). For example, `/ifcOutput "somethingelse.ifc"`. In the example, the generated `ifc` file is `std.ifc` because we are compiling the file `std.ixx`.
 
