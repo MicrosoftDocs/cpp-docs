@@ -10,7 +10,7 @@ description: Learn how to import the C++ standard library (STL) using modules fr
 
 # Tutorial: Import the C++ standard library using modules from the command line
 
-Learn how to import the C++ standard library using C++ library modules. This results in significantly faster compilation and is more robust than using header files or header units or precompiled headers (PCH).
+Learn how to import the C++ standard library using C++ library modules. This results in faster compilation and is more robust than using header files or header units or precompiled headers (PCH).
 
 In this tutorial, learn about:
 
@@ -26,24 +26,24 @@ This tutorial requires Visual Studio 2022 17.5 or later.
 
 Header files suffer from semantics that can change depending on macro definitions, the order in which you include them, and they slow compilation. Modules solve these problems.
 
-It's now possible to import the standard library as a module instead of as a tangle of header files. This is significantly faster and more robust than including header files or header units or precompiled headers (PCH).
+It's now possible to import the standard library as a module instead of as a tangle of header files. This is much faster and more robust than including header files or header units or precompiled headers (PCH).
 
 The C++23 standard library introduces two named modules: `std` and `std.compat`:
 
-- `std` exports the declarations and names defined in the C++ standard library namespace `std`, such as `std::vector`. It also exports the contents of C wrapper headers such as `<cstdio>` and `<cstdlib>`, which provide functions like `std::printf()`. C functions defined in the global namespace, such as `::printf()`, aren't exported. This improves the situation where including a C wrapper header like `<cstdio>` *also* includes C header files like `stdio.h`, which bring in the C global namespace versions. This is not a problem if you import `std`.
+- `std` exports the declarations and names defined in the C++ standard library namespace `std`, such as `std::vector`. It also exports the contents of C wrapper headers such as `<cstdio>` and `<cstdlib>`, which provide functions like `std::printf()`. C functions defined in the global namespace, such as `::printf()`, aren't exported. This improves the situation where including a C wrapper header like `<cstdio>` *also* includes C header files like `stdio.h`, which bring in the C global namespace versions. This isn't a problem if you import `std`.
 - `std.compat` exports everything in `std` and adds the C runtime global namespaces such as `::printf`, `::fopen`, `::size_t`, `::strlen`, and so on. The `std.compat` module makes it easier to work with codebases that refer to many C runtime functions/types in the global namespace.
 
-The compiler imports the entire standard library when you use `import std;` or `import std.compat;` and does it faster than bringing in a single header file. It's faster to bring in the entire standard library with `import std;` (or `import std.compat`) than it is to `#include <vector>`, for example.
+The compiler imports the entire standard library when you use `import std;` or `import std.compat;` and does it faster than bringing in a single header file. It's faster to bring in the entire standard library with `import std;` (or `import std.compat`) than to `#include <vector>`, for example.
 
 Because named modules don't expose macros, macros like `assert`, `errno`, `offsetof`, `va_arg`, and others aren't available when you import `std` or `std.compat`. See [Standard library named module considerations](#standard-library-named-module-considerations) for workarounds.
 
 ## About C++ modules
 
-Header files are how declarations and definitions have been shared between source files in C++. Prior to standard library modules, you'd include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are or aren't defined. They also slow compilation because they're reprocessed by every source file that includes them.
+Header files are how declarations and definitions have been shared between source files in C++. Prior to standard library modules, you'd include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are defined. They also slow compilation because they're reprocessed by every source file that includes them.
 
 C++20 introduces a modern alternative called *modules*. In C++23, we were able to capitalize on module support to introduce named modules to represent the standard library.
 
-Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules aren't fragile and are easier to compose because their semantics don't change due to macro definitions or the order in which you import them. The compiler can process modules significantly faster than it can process `#include` files, and uses less memory at compile time as well. Named modules don't expose macro definitions or private implementation details.
+Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules aren't fragile and are easier to compose because their semantics don't change due to macro definitions or the order in which you import them. The compiler can process modules much faster than it can process `#include` files, and uses less memory at compile time as well. Named modules don't expose macro definitions or private implementation details.
 
 For in depth information about modules, see [Overview of modules in C++](modules-cpp.md) That article also discusses consuming the C++ standard library as modules, but uses an older and experimental way of doing it.
 
@@ -100,7 +100,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
     }
     ```
 
-    In the preceding code, `import std;` replaces `#include <vector>` and `#include <iostream>`. The statement `import std;` makes all of the standard library available with one statement. Importing the entire standard library is often significantly faster than processing a single standard library header file such as `#include <vector>`.
+    In the preceding code, `import std;` replaces `#include <vector>` and `#include <iostream>`. The statement `import std;` makes all of the standard library available with one statement. Importing the entire standard library is often much faster than processing a single standard library header file such as `#include <vector>`.
 
 1. Compile the example by using the following command in the same directory as the previous step:
 
@@ -133,7 +133,7 @@ The `std.compat` named module is a compatibility layer provided to ease migratin
 
 ### Example: `std.compat`
 
-Before you can use `import std.compat;` you must compile the a module interface file found in source code form in `std.compat.ixx`. Visual Studio ships the source code for the module so that you can compile the module using the compiler settings that match your project. The steps are similar to for building the `std` named module. The `std` named module is built first because `std.compat` depends on it:
+Before you can use `import std.compat;` you must compile the module interface file found in source code form in `std.compat.ixx`. Visual Studio ships the source code for the module so that you can compile the module using the compiler settings that match your project. The steps are similar to for building the `std` named module. The `std` named module is built first because `std.compat` depends on it:
 
 1. Open a Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 preview version 17.5 or above. You'll get compiler errors if you use the wrong version of the prompt.
 1. Create a directory to try this example, such as `%USERPROFILE%\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors such as not being able to open the output file `std.ifc`.
