@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: CSimpleStringT Class"
 title: "CSimpleStringT Class"
-ms.date: 10/04/2021
+ms.date: 01/26/2024
 f1_keywords: ["CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::PCXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::PXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::Append", "ATLSIMPSTR/ATL::CSimpleStringT::AppendChar", "ATLSIMPSTR/ATL::CSimpleStringT::CopyChars", "ATLSIMPSTR/ATL::CSimpleStringT::CopyCharsOverlapped", "ATLSIMPSTR/ATL::CSimpleStringT::Empty", "ATLSIMPSTR/ATL::CSimpleStringT::FreeExtra", "ATLSIMPSTR/ATL::CSimpleStringT::GetAllocLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetAt", "ATLSIMPSTR/ATL::CSimpleStringT::GetBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::GetBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetManager", "ATLSIMPSTR/ATL::CSimpleStringT::GetString", "ATLSIMPSTR/ATL::CSimpleStringT::IsEmpty", "ATLSIMPSTR/ATL::CSimpleStringT::LockBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::Preallocate", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::SetAt", "ATLSIMPSTR/ATL::CSimpleStringT::SetManager", "ATLSIMPSTR/ATL::CSimpleStringT::SetString", "ATLSIMPSTR/ATL::CSimpleStringT::StringLength", "ATLSIMPSTR/ATL::CSimpleStringT::Truncate", "ATLSIMPSTR/ATL::CSimpleStringT::UnlockBuffer"]
 helpviewer_keywords: ["shared classes, CSimpleStringT", "strings [C++], ATL class", "CSimpleStringT class"]
 ---
@@ -445,7 +445,7 @@ An `PXSTR` pointer to the object's (null-terminated) character buffer.
 
 Call this method to return the buffer contents of the `CSimpleStringT` object. The returned `PXSTR` is not a constant and therefore allows direct modification of `CSimpleStringT` contents.
 
-If you use the pointer returned by `GetBuffer` to change the string contents, you must call [`ReleaseBuffer`](#releasebuffer) before you use any other `CSimpleStringT` member methods.
+If you use the pointer returned by `GetBuffer` to change the string contents, you must call [`ReleaseBuffer`](#releasebuffer) to update the internal state of `CSimpleStringT` before you use any other `CSimpleStringT` methods.
 
 The address returned by `GetBuffer` may not be valid after the call to `ReleaseBuffer` because additional `CSimpleStringT` operations can cause the `CSimpleStringT` buffer to be reallocated. The buffer is not reallocated if you do not change the length of the `CSimpleStringT`.
 
@@ -491,7 +491,7 @@ A `PXSTR` pointer to the object's (null-terminated) character buffer.
 
 Call this method to retrieve a specified length of the internal buffer of the `CSimpleStringT` object. The returned `PXSTR` pointer is not **`const`** and thus allows direct modification of `CSimpleStringT` contents.
 
-If you use the pointer returned by [`GetBufferSetLength`](#getbuffersetlength) to change the string contents, call `ReleaseBuffer` to update the internal state of `CsimpleStringT` before you use any other `CSimpleStringT` methods.
+If you use the pointer returned by [`GetBufferSetLength`](#getbuffersetlength) to change the string contents, call `ReleaseBuffer` to update the internal state of `CSimpleStringT` before you use any other `CSimpleStringT` methods.
 
 The address returned by `GetBufferSetLength` may not be valid after the call to `ReleaseBuffer` because additional `CSimpleStringT` operations can cause the `CSimpleStringT` buffer to be reallocated. The buffer is not reassigned if you do not change the length of the `CSimpleStringT`.
 
@@ -502,9 +502,7 @@ If you keep track of the string length yourself, do not append the terminating n
 For more information about reference counting, see the following articles:
 
 - [Managing Object Lifetimes through Reference Counting](/windows/win32/com/managing-object-lifetimes-through-reference-counting) in the Windows SDK.
-
 - [Implementing Reference Counting](/windows/win32/com/implementing-reference-counting) in the Windows SDK.
-
 - [Rules for Managing Reference Counts](/windows/win32/com/rules-for-managing-reference-counts) in the Windows SDK.
 
 ### Example
@@ -520,6 +518,8 @@ pstr[2] = _T('p');
 
 // No need for trailing zero or call to ReleaseBuffer()
 // because GetBufferSetLength() set it for us.
+// If we had called GetBuffer() instead of GetBufferSetLength()
+// then we would have needed to call ReleaseBuffer(). 
 
 str += _T(" soccer is best!");
 ASSERT(_tcscmp(str, _T("Cup soccer is best!")) == 0);
