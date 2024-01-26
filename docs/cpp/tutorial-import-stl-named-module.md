@@ -22,10 +22,7 @@ In this tutorial, learn about:
 
 This tutorial requires Visual Studio 2022 17.5 or later.
 
-> [!WARNING]
-> This tutorial is for a preview feature. The feature is subject to change between preview releases. You shouldn't use preview features in production code.
-
-## An introduction to the standard library modules
+## Introduction to standard library modules
 
 Header files suffer from semantics that can change depending on macro definitions, the order in which you include them, and they slow compilation. Modules solve these problems.
 
