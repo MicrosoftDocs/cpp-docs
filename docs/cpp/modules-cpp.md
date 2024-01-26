@@ -47,7 +47,7 @@ To consume the Microsoft Standard Library modules, compile your program with [`/
 
 ## Example
 
-The following example shows a simple module definition in a source file called *`Example.ixx`*. The *`.ixx`* extension is required for module interface files in Visual Studio. In this example, the interface file contains both the function definition and the declaration. However, you can also place the definitions in one or more separate module implementation files, as shown in a later example. The `export module Example;` statement indicates that this file is the primary interface for a module called `Example`. The **`export`** modifier on `f()` indicates that this function is visible when `Example` is imported by another program or module. The module references a namespace `Example_NS`.
+The following example shows a simple module definition in a source file called *`Example.ixx`*. The *`.ixx`* extension is required for module interface files in Visual Studio. In this example, the interface file contains both the function definition and the declaration. However, you can also place the definitions in one or more separate module implementation files, as shown in a later example. The `export module Example;` statement indicates that this file is the primary interface for a module called `Example`. The **`export`** modifier on `f()` indicates that this function is visible when another program or module imports `Example`. The module references a namespace `Example_NS`.
 
 ```cpp
 // Example.ixx
@@ -109,15 +109,15 @@ The `import` declaration can appear only at global scope.
 
 ## Implementing modules
 
-A *module interface* exports the module name and all the namespaces, types, functions, and so on that make up the public interface of the module. A *module implementation* defines the things exported by the module. In its simplest form, a module can consist of a single file that combines the module interface and implementation. You can also put the implementations in one or more separate module implementation files, similar to how *`.h`* and *`.cpp`* files are used.
+A *module interface* exports the module name and all the namespaces, types, functions, and so on, that make up the public interface of the module. A *module implementation* defines the things exported by the module. In its simplest form, a module can consist of a single file that combines the module interface and implementation. You can also put the implementation in one or more separate module implementation files, similar to how *`.h`* and *`.cpp`* files do it.
 
-For larger modules, you can split parts of the module into submodules called *partitions*. Each partition consists of a module interface file that exports a module partition name. A partition might also have one or more partition implementation files. The module as a whole has one *primary module interface*, the public interface of the module that might also import and export the partition interfaces.
+For larger modules, you can split parts of the module into submodules called *partitions*. Each partition consists of a module interface file that exports a module partition name. A partition may also have one or more partition implementation files. The module as a whole has one *primary module interface*, which is the public interface of the module and may export the partition interfaces.
 
 A module consists of one or more *module units*. A module unit is a translation unit (a source file) that contains a module declaration. There are several types of module units:
 
 - A *module interface unit* is a module unit that exports a module name or module partition name. A module interface unit has `export module` in its module declaration.
 
-- A *module implementation unit* is a module unit that doesn't export a module name or module partition name. As the name implies, it's used to implement a module.
+- A *module implementation unit* is a module unit that doesn't export a module name or module partition name. As the name implies, it implements a module.
 
 - A *primary module interface unit* is a module interface unit that exports the module name. There must be one and only one primary module interface unit in a module.
 
@@ -131,7 +131,7 @@ The **`export`** keyword is used in interface files only. An implementation file
 
 The rules for namespaces in modules are the same as in any other code. If a declaration within a namespace is exported, the enclosing namespace (excluding nonexported members) is also implicitly exported. If a namespace is explicitly exported, all declarations within that namespace definition are exported.
 
-When it does argument-dependent lookup for overload resolutions in the importing translation unit, the compiler considers functions declared in the same translation unit (including module interfaces) as where the type of the function's arguments are defined.
+When the compiler does argument-dependent lookup for overload resolutions in the importing translation unit, it considers functions declared in the same translation unit (including module interfaces) as where the type of the function's arguments are defined.
 
 ### Module partitions
 
