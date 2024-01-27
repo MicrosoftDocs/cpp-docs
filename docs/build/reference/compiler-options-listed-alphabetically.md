@@ -97,7 +97,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/GS[-]`](gs-buffer-security-check.md) | Checks buffer security. |
 | [`/Gs[n]`](gs-control-stack-checking-calls.md) | Controls stack probes. |
 | [`/GT`](gt-support-fiber-safe-thread-local-storage.md) | Supports fiber safety for data allocated by using static thread-local storage. |
-| `/Gu[-]` | Ensure distinct functions have distinct addresses. |
+| [`/Gu[-]`] | Ensure distinct functions have distinct addresses. |
 | [`/guard:cf[-]`](guard-enable-control-flow-guard.md) | Adds control flow guard security checks. |
 | [`/guard:ehcont[-]`](guard-enable-eh-continuation-metadata.md) | Enables EH continuation metadata. |
 | [`/Gv`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__vectorcall`** calling convention. (x86 and x64 only) |
