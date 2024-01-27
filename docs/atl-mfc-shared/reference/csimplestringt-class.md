@@ -1162,19 +1162,19 @@ The following example demonstrates the use of `CSimpleStringT::Truncate`.
 CAtlString basestr;
 IAtlStringMgr* pMgr = basestr.GetManager();
 CSimpleString str(_T("abcdefghi"), pMgr);
-_tprintf_s(_T("Allocated length: %d\n"), str.GetLength());
-_tprintf_s(_T("Contents: %s\n"), str);
+_tprintf_s(_T("String length: %d / Allocated length: %d\n"), str.GetLength(), str.GetAllocLength());
+_tprintf_s(_T("Contents: %s\n"), (LPCTSTR)str);
 str.Truncate(4);
-_tprintf_s(_T("Allocated length: %d\n"), str.GetLength());
-_tprintf_s(_T("Contents: %s\n"), str);
+_tprintf_s(_T("String length: %d / Allocated length: %d\n"), str.GetLength(), , str.GetAllocLength());
+_tprintf_s(_T("Contents: %s\n"), (LPCTSTR)str);
 ```
 
 The output from this example is:
 
 ```Output
-Allocated length: 9
+String length: 9 / Allocated length: 15
 Contents: abcdefghi
-Allocated length: 4
+String length: 4 / Allocated length: 15
 Contents: abcd
 ```
 
