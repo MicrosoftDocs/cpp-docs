@@ -83,10 +83,10 @@ The statement `import std;` or `import std.compat;` imports the standard library
     | [`/c`](../build/reference/c-compile-without-linking.md) | Compile without linking, because we're just building the binary named module interface at this point. |
 
     You can control the object file name and the named module interface file name with the following switches:
-    - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo"somethingelse.obj"` (note: no space between the flag and the quote). By default, the compiler uses the same name for the object file as the module source file (`.ixx`) you're compiling. In the example, the object file name is `std.obj` by default because we're compiling the module file `std.ixx`.
+    - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo:"somethingelse"`. By default, the compiler uses the same name for the object file as the module source file (`.ixx`) you're compiling. In the example, the object file name is `std.obj` by default because we're compiling the module file `std.ixx`.
     - [`/ifcOutput`](../build/reference/ifc-output.md) sets the name of the named module interface file (`.ifc`). For example, `/ifcOutput "somethingelse.ifc"`. By default, the compiler uses the same name for the module interface file (`.ifc`) as the module source file (`.ixx`) you're compiling. In the example, the generated `ifc` file is `std.ifc` by default because we're compiling the module file `std.ixx`.
 
-1. Importing the `std` library you just built by first creating a file named `importExample.cpp` with the following content:
+1. Import the `std` library you built by first creating a file named `importExample.cpp` with the following content:
 
     ```cpp
     // requires /std:c++latest
@@ -161,10 +161,10 @@ Before you can use `import std.compat;` you must compile the module interface fi
     - `std.compat.obj` contains implementation. However, most of the implementation is provided by `std.obj`. Add `std.obj` to the command line when you compile the sample app to statically link the functionality that you use from the standard library into your application.
 
     You can control the object file name and the named module interface file name with the following switches:
-    - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo"somethingelse.obj"` (note: no space between the flag and the quote). By default, the compiler uses the same name for the object file as the module source file (`.ixx`) you're compiling. In the example, the object file names are `std.obj` and `std.compat.obj` by default because we're compiling the module files `std.ixx` and `std.compat.obj`.
+    - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo:"somethingelse"`. By default, the compiler uses the same name for the object file as the module source file (`.ixx`) you're compiling. In the example, the object file names are `std.obj` and `std.compat.obj` by default because we're compiling the module files `std.ixx` and `std.compat.obj`.
     - [`/ifcOutput`](../build/reference/ifc-output.md) sets the name of the named module interface file (`.ifc`). For example, `/ifcOutput "somethingelse.ifc"`. By default, the compiler uses the same name for the module interface file (`.ifc`) as the module source file (`.ixx`) you're compiling. In the example, the generated `ifc` files are `std.ifc` and `std.compat.ifc` by default because we're compiling the module files `std.ixx` and `std.compat.ixx`.
 
-1. Try out importing the `std.compat` library by first creating a file named `stdCompatExample.cpp` with the following content:
+1. Import the `std.compat` library by first creating a file named `stdCompatExample.cpp` with the following content:
 
     ```cpp
     import std.compat;
