@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Import the standard library (STL) using modules from the command line (C++)"
-ms.date: 01/26/2024
+ms.date: 01/29/2024
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -83,7 +83,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
     | [`/c`](../build/reference/c-compile-without-linking.md) | Compile without linking, because we're just building the binary named module interface at this point. |
 
     You can control the object file name and the named module interface file name with the following switches:
-    - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo "somethingelse.obj"`. By default, the compiler uses the same name for the object file as the module source file (`.ixx`) you're compiling. In the example, the object file name is `std.obj` by default because we're compiling the module file `std.ixx`.
+    - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo"somethingelse.obj"` (note: no space between the flag and the quote). By default, the compiler uses the same name for the object file as the module source file (`.ixx`) you're compiling. In the example, the object file name is `std.obj` by default because we're compiling the module file `std.ixx`.
     - [`/ifcOutput`](../build/reference/ifc-output.md) sets the name of the named module interface file (`.ifc`). For example, `/ifcOutput "somethingelse.ifc"`. By default, the compiler uses the same name for the module interface file (`.ifc`) as the module source file (`.ixx`) you're compiling. In the example, the generated `ifc` file is `std.ifc` by default because we're compiling the module file `std.ixx`.
 
 1. Importing the `std` library you just built by first creating a file named `importExample.cpp` with the following content:
@@ -115,7 +115,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
     It isn't necessary to specify `/reference "std=std.ifc"` on the command line in this example because the compiler automatically looks for the `.ifc` file matching the module name specified by the `import` statement. When the compiler encounters `import std;` it can find `std.ifc` if it's located in the same directory as the source code. If the `.ifc` file is in a different directory than the source code, use the [`/reference`](../build/reference/module-reference.md) compiler switch to refer to it.
 
-    In this example, compiling the source code and linking the module's implementation into your application are separate steps. They don't have to be. You could use `cl /std:c++latest /EHsc /nologo /W4 /reference "std=std.ifc" importExample.cpp std.obj` to compile and link in one step. But it may be convenient to build and link separately because then you only need to build the standard library named module once, and then you can refer to it from your project, or from multiple projects, in your build's link step.
+    In this example, compiling the source code and linking the module's implementation into the application are separate steps. They don't have to be. You could use `cl /std:c++latest /EHsc /nologo /W4 /reference "std=std.ifc" importExample.cpp std.obj` to compile and link in one step. But it may be convenient to build and link separately because then you only need to build the standard library named module once, and then you can refer to it from your project, or from multiple projects, in your build's link step.
 
     If you're building a single project, you can combine the steps of building the `std` standard library named module and the step of building your application by adding `"%VCToolsInstallDir%\modules\std.ixx"` to the command line. Put it before any `.cpp` files that consume the `std` module.
 
@@ -150,7 +150,7 @@ Before you can use `import std.compat;` you must compile the module interface fi
     cl /std:c++latest /EHsc /nologo /W4 /c "%VCToolsInstallDir%\modules\std.ixx" "%VCToolsInstallDir%\modules\std.compat.ixx"
     ```
 
-    You should compile `std` and `std.compat` using the same compiler settings that you intend to use with the code that imports them. If you have a multi-project solution, you can compile them once, and then refer to them from all of your projects using the [`/reference`](../build/reference/module-reference.md) compiler option.
+    You should compile `std` and `std.compat` using the same compiler settings that you intend to use with the code that will import them. If you have a multi-project solution, you can compile them once, and then refer to them from all of your projects using the [`/reference`](../build/reference/module-reference.md) compiler option.
 
     If you get errors, ensure that you're using the correct version of the command prompt.
 
@@ -161,7 +161,7 @@ Before you can use `import std.compat;` you must compile the module interface fi
     - `std.compat.obj` contains implementation. However, most of the implementation is provided by `std.obj`. Add `std.obj` to the command line when you compile the sample app to statically link the functionality that you use from the standard library into your application.
 
     You can control the object file name and the named module interface file name with the following switches:
-    - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo "somethingelse.obj"`. By default, the compiler uses the same name for the object file as the module source file (`.ixx`) you're compiling. In the example, the object file names are `std.obj` and `std.compat.obj` by default because we're compiling the module files `std.ixx` and `std.compat.obj`.
+    - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo"somethingelse.obj"` (note: no space between the flag and the quote). By default, the compiler uses the same name for the object file as the module source file (`.ixx`) you're compiling. In the example, the object file names are `std.obj` and `std.compat.obj` by default because we're compiling the module files `std.ixx` and `std.compat.obj`.
     - [`/ifcOutput`](../build/reference/ifc-output.md) sets the name of the named module interface file (`.ifc`). For example, `/ifcOutput "somethingelse.ifc"`. By default, the compiler uses the same name for the module interface file (`.ifc`) as the module source file (`.ixx`) you're compiling. In the example, the generated `ifc` files are `std.ifc` and `std.compat.ifc` by default because we're compiling the module files `std.ixx` and `std.compat.ixx`.
 
 1. Try out importing the `std.compat` library by first creating a file named `stdCompatExample.cpp` with the following content:
@@ -192,7 +192,7 @@ Before you can use `import std.compat;` you must compile the module interface fi
 
     We didn't have to specify `std.compat.ifc` on the command line because the compiler automatically looks for the `.ifc` file that matches the module name in an `import` statement. When the compiler encounters `import std.compat;` it finds `std.compat.ifc` since we put it in the same directory as the source code--relieving us of the need to specify it on the command line. If the `.ifc` file is in a different directory than the source code, or has a different name, use the [`/reference`](../build/reference/module-reference.md) compiler switch to refer to it.
 
-    When you import `std.compat`, you must link against both `std.compat` and `std.obj` because `std.compat` builds on the implementation in `std.obj`.
+    When you import `std.compat`, you must link against both `std.compat` and `std.obj` because `std.compat` uses code in `std.obj`.
 
     If you're building a single project, you can combine the steps of building the `std` and `std.compat` standard library named modules by adding `"%VCToolsInstallDir%\modules\std.ixx"` and `"%VCToolsInstallDir%\modules\std.compat.ixx"` (in that order) to the command line. This tutorial shows building the standard library modules as a separate step because you only need to build the standard library named modules once, and then you can refer to them from your project, or from multiple projects. But if it's convenient to build them all at once, make sure to put them before any `.cpp` files that consume them, and specify `/Fe` to name the built `exe` as shown in this example:
 
