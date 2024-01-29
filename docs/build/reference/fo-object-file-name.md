@@ -11,7 +11,7 @@ Specifies an object (*`.obj`*) file name or directory to be used instead of the 
 
 ## Syntax
 
-> **`/Fo"pathname"`
+> **`/Fo"pathname"`\
 > **`/Fo:`**[** **]**`"pathname"`
 
 ## Remarks
