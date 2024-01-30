@@ -1,10 +1,9 @@
 ---
 title: "/Fo (Object file name)"
 description: "Reference guide to the Microsoft C++ /Fo (Object file name) compiler option in Visual Studio."
-ms.date: 12/12/2022
+ms.date: 01/29/2024
 f1_keywords: ["/Fo", "VC.Project.VCCLCompilerTool.ObjectFile", "VC.Project.VCCLWCECompilerTool.ObjectFile"]
 helpviewer_keywords: ["Fo compiler option [C++]", "object files, naming", "/Fo compiler option [C++]", "-Fo compiler option [C++]"]
-ms.assetid: 0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6
 ---
 # `/Fo` (Object File Name)
 
@@ -12,7 +11,8 @@ Specifies an object (*`.obj`*) file name or directory to be used instead of the 
 
 ## Syntax
 
-> **`/Fo`***`pathname`*
+> **`/Fo"pathname"`**\
+> **`/Fo:[ ]"pathname"`**
 
 ## Remarks
 
@@ -25,6 +25,12 @@ To use the **`/Fo`** option to rename an object file, specify the output filenam
 To use the **`/Fo`** option to set an output directory for all object files created by the CL command, specify the directory as the *`pathname`* argument. A directory is indicated by a trailing slash or backslash in the *`pathname`* argument. Use an escaped backslash (a double backslash), if you're using a quoted path. The directory path can be absolute, or relative to the source directory. The specified directory must exist, or the compiler reports error D8003. The directory isn't created automatically.
 
 ## Example
+
+This command line demonstrates the format that allows for an optional space between the `/Fo` option and the *`pathname`* argument. It creates an object file named *`test.obj`* in the current directory.
+
+```cmd
+CL /Fo: "test" /EHsc /c sample1.cpp
+```
 
 The following command line creates object files named *`sample1.obj`* and *`sample2.obj`* in an existing directory, *`D:\intermediate\`*. It uses escaped backslash characters as path segment separators in a quoted path:
 
