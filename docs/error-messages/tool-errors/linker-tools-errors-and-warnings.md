@@ -140,7 +140,7 @@ The linker tools LINK, LIB, DUMPBIN, and EDITBIN share a common executable that 
 [Linker Tools Warning LNK4254](../../error-messages/tool-errors/linker-tools-warning-lnk4254.md) \
 [Linker Tools Warning LNK4286](../../error-messages/tool-errors/linker-tools-warning-lnk4286.md) \
 [Linker Tools Warning LNK4306](../../error-messages/tool-errors/linker-tools-warning-lnk4306.md) \
-[Linker Tools Warning LNK4207](../../error-messages/tool-errors/linker-tools-warning-lnk4307.md) \
+[Linker Tools Warning LNK4307](../../error-messages/tool-errors/linker-tools-warning-lnk4307.md)
 
 ## See also
 
