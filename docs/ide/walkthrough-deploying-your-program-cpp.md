@@ -15,9 +15,9 @@ The walkthrough shows how to use Windows Installer to deploy your application. Y
 - The walkthrough assumes that you understand the fundamentals of the C++ language.
 - It also assumes that you've completed the earlier related walkthroughs that are listed in [Using the Visual Studio IDE for C++ Desktop Development](using-the-visual-studio-ide-for-cpp-desktop-development.md).
 - The walkthrough can't be completed in Express editions of Visual Studio.
-- The walkthrough can't be completed without the *Microsoft Visual Studio Installer Project* extension. Instructions for installing it follow.
+- The walkthrough can't be completed without the *Microsoft Visual Studio Installer Project* extension. Instructions for how to install it follow.
 
-## Install the Visual Studio setup and deployment project template
+## Install the Visual Studio setup and deployment projects template
 
 The steps in this section vary depending on which version of Visual Studio you have installed. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. The control near the top of the table of contents on this page.
 
@@ -37,7 +37,9 @@ If you haven't already done so, download the *Microsoft Visual Studio Installer 
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box. In the search box, type `Setup` and from the results choose **Setup Project** and then **Next**.
 
-1. Enter a name for the setup project in the **Name** box, such as `Setup`. In the **Solution** drop-down list, select **Add to solution**. Choose **Create** to create the setup project. A **File System (setup project name)** tab opens in the editor window.
+1. Enter a name for the setup project in the **Name** box, such as `Setup`.
+
+1. In the **Solution** drop-down list, select **Add to solution**. Choose **Create** to create the setup project. A **File System** tab opens in the editor window.
 
 1. Right-click the **Application Folder** node in the left pane and select **Add** > **Project Output** to open the **Add Project Output Group** dialog box.
 
@@ -53,13 +55,16 @@ If you haven't already done so, download the *Microsoft Visual Studio Installer 
 
 ### Build the setup project
 
-1. From the main menu, choose **Build** > **Configuration Manager**. In the **Project contexts** table, under the **Build** column, check the box for **Game Installer**. Click **Close**.
+1. From the main menu, choose **Build** > **Configuration Manager**.
 
-1. From the menu bar, choose **Build** > **Build Solution** to build the Game project and the Game Installer project.
+1. In the **Project contexts** table, under the **Build** column, check the box for the setup project, **Setup**. Click **Close**.
+
+1. From the menu bar, choose **Build** > **Build Solution** to build the Game project and the installer project.
 
 ### Run the setup project
 
-1. In the solution explorer, use the button to **Switch between solutions and available views** to switch to folder view. Then navigate to the setup folder and the **Debug** folder under that. Run the `setup.exe` program there, which was built from the Game Installer project, to install the Game application on your computer. You can copy this file (and GameInstaller.msi) to install the application and its required library files on another computer.
+1. In the solution explorer, press the button to **Switch between solutions and available views** to switch to folder view.
+1. Navigate to the setup folder and the **Debug** folder under that. You can run the `setup.exe` program there, which was built from the setup project, to install the Game application on your computer. You can copy this file (and Setup.msi) to install the application and its required library files on another computer.
 
 ::: moniker-end
 
@@ -83,7 +88,9 @@ If you haven't already done so, download the *Microsoft Visual Studio Installer 
 
 1. In the left pane of the dialog box, expand the **Installed** > **Other Project Types** nodes, and then select **Visual Studio Installer**. In the center pane, select **Setup Project**.
 
-1. Enter a name for the setup project in the **Name** box. For this example, enter *Game Installer*. In the **Solution** drop-down list, select **Add to solution**. Choose the **OK** button to create the setup project. A **File Assistant (Game Installer)** tab opens in the editor window.
+1. Enter a name for the setup project in the **Name** box. For this example, enter *Game Installer*.
+
+1. In the **Solution** drop-down list, select **Add to solution**. Choose the **OK** button to create the setup project. A **File Assistant (Game Installer)** tab opens in the editor window.
 
 1. Right-click the **Application Folder** node and select **Add** > **Project Output** to open the **Add Project Output Group** dialog box.
 
@@ -97,7 +104,7 @@ If you haven't already done so, download the *Microsoft Visual Studio Installer 
 
 1. Specify the other details the way you want them to appear in the installer.  For example, use *Contoso* for **Manufacturer**, *Game Installer* for **Product Name**, and *https\://www.contoso.com* for **SupportUrl**.
 
-1. On the menu bar, choose **Build** > **Configuration Manager**. In the **Project** table, under the **Build** column, check the box for **Game Installer**. Click **Close**.
+1. On the menu bar, choose **Build** > **Configuration Manager**. In the **Project** table, under the **Build** column, check the box for the **Setup** project. Click **Close**.
 
 1. On the menu bar, choose **Build** > **Build Solution** to build the Game project and the Game Installer project.
 
