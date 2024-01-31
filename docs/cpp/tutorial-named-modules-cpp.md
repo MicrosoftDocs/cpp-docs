@@ -92,19 +92,19 @@ This line identifies this file as the primary module interface and gives the mod
 
 This name is also where the "named" in "named module" comes from. The files that are part of this module use this name to identify themselves as part of the named module. A named module is the collection of module units with the same module name.
 
-We should talk about the API we'll implement for a moment before going further. It impacts the choices we make next. The API represents different shapes. We're only going to provide a couple shapes in this example: `Point` and `Rectangle`. `Point` is meant to be used as part of more complex shapes, such as `Rectangle`.
+We should talk about the API we'll implement for a moment before going further. It impacts the choices we make next. The API represents different shapes. We're only going to provide a couple shapes in this example: `Point` and `Rectangle`. `Point` is meant to be used as part of more complex shapes such as `Rectangle`.
 
 To illustrate some features of modules, we'll factor this API into pieces. One piece will be the `Point` API. The other part will be `Rectangle`. Imagine that this API will grow into something more complex. The division is useful for separating concerns or easing code maintenance.
 
-So far, we've created the primary module interface that will expose this API. Let's now build the `Point` API. We want it to be part of this module. For reasons of logical organization, and potential build efficiency, we want to make this part of the API easily understandable on its own. To do so, we'll create a *module partition* file.
+So far, we've created the primary module interface that will expose this API. Let's now build the `Point` API. We want it to be part of this module. For reasons of logical organization, and potential build efficiency, we want to make the code for this part of the API a *module partition* file.
 
-A module partition file is a piece, or component, of a module. What makes it unique is that it can be treated as an individual piece of the module, but only within the module. Module partitions can't be consumed outside of a module. Module partitions are useful for dividing the module implementation into manageable pieces.
+Module partitions are useful for dividing the module implementation into manageable pieces. A module partition file is a piece, or component, of a module. What makes it unique is that it can be treated as an individual piece of the module--but only within the module. Module partitions can't be consumed outside of a module.
 
 When you import a partition into the primary module, all its declarations become visible to the primary module regardless of whether they're exported. Partitions can be imported into any partition interface, primary module interface, or module unit that belongs to the named module.
 
 ## Create a module partition file
 
-### `Point` module partition
+### `Point` module partition example
 
 To create a module partition file, in the **Solution Explorer** right-click **Source Files**, then select **Add** > **Module**. Name the file *`BasicPlane.Figures-Point.ixx`* and choose **Add**.
 
@@ -123,11 +123,11 @@ export struct Point
 
 The file starts with `export module`. These keywords are also how the primary module interface begins. What makes this file different is the colon (`:`) following the module name, followed by the partition name. This naming convention identifies the file as a *module partition*. Because it defines the module interface for a partition, it isn't considered the primary module interface.
 
-The name `BasicPlane.Figures:Point` identifies this partition as part of the module `BasicPlane.Figures`. (Remember, the period in the name has no special meaning to the compiler). The colon indicates that this file contains a module partition named `Point` that belongs to the module `BasicPlane.Figures`. We can import this partition into other files that are part of this named module.
+The name `BasicPlane.Figures:Point` identifies this partition as part of the module `BasicPlane.Figures` (remember, the period in the name has no special meaning to the compiler). The colon indicates that this file contains a module partition named `Point` that belongs to the module `BasicPlane.Figures`. We can import this partition into other files that are part of this named module.
 
 In this file, the `export` keyword makes `struct Point` visible to consumers.
 
-### `Rectangle` module partition
+### `Rectangle` module partition example
 
 The next partition we'll define is `Rectangle`. Create another module file using the same steps as before: In **Solution Explorer**, right-click on **Source Files**, then select **Add** > **Module**. Name the file *`BasicPlane.Figures-Rectangle.ixx`* and select **Add**.
 
