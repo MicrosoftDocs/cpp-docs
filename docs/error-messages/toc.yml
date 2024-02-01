@@ -4829,6 +4829,10 @@ items:
       href: tool-errors/linker-tools-warning-lnk4254.md
     - name: Linker tools warning LNK4286
       href: tool-errors/linker-tools-warning-lnk4286.md
+    - name: Linker tools warning LNK4306
+      href: tool-errors/linker-tools-warning-lnk4306.md
+    - name: Linker tools warning LNK4307
+      href: tool-errors/linker-tools-warning-lnk4307.md
 - name: Math errors
   expanded: false
   items: 
