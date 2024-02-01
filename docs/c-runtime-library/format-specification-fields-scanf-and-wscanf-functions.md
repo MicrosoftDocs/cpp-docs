@@ -3,7 +3,6 @@ description: "Learn more about: Format specification fields: scanf and wscanf fu
 title: "Format specification fields: scanf and wscanf functions"
 ms.date: 05/13/2022
 ms.topic: "reference"
-ms.custom: contperf-fy21q1
 helpviewer_keywords: ["width, specifications in scanf function", "scanf format specifications", "scanf width specifications", "scanf type field characters", "type fields, scanf function", "format specification fields for scanf function", "type fields"]
 ---
 # Format specification fields: `scanf` and `wscanf` functions
