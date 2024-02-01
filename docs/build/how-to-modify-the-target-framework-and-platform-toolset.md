@@ -1,7 +1,6 @@
 ---
 description: "Learn more about: How to: Modify the Target Framework and Platform Toolset"
 title: "How to: Modify the Target Framework and Platform Toolset"
-ms.custom: "contperf-fy21q3"
 ms.date: 03/31/2021
 helpviewer_keywords: ["msbuild (c++), howto: modify target framework and platform toolset"]
 ---
