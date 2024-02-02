@@ -71,7 +71,7 @@ You can expand a macro one step at a time. This is useful when there are nested 
 1. Choose **Visualize Expansion**.
 1. The macro expansion window appears. The first expansion of the `WORK` macro is visible: `(FORCE() * DISTANCE())`:
 
-    :::image type="complex" source="media/vs2022-work-macro.expansion.png" alt-text="The macro expansion window, which allows you to step through the WORK macro expansion one step at a time.":::
+    :::image type="complex" source="media/vs2022-work-macro.expansion.png" alt-text="Screenshot of the macro expansion window, which allows you to step through the WORK macro expansion one step at a time.":::
     The macro visualization window is open on FORCE to show that it initially expands to (FORCE()*DISTANCE()). There are single angle brackets in the window for moving forwards and backwards a single expansion at a time. The double angle brackets fully expand or fully undo the macro expansion.
     :::image-end:::
 
