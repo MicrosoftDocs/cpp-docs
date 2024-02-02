@@ -52,20 +52,15 @@ You can inspect a macro's expanded value, even when several preprocessor steps a
     :::image-end:::
 
 1. Choose **Copy**.
-1. Create a comment following the `POWER` line and choose paste (`Ctrl+V`). THe expansion of the macro, as a comment near your macro, looks like: ```// (((10.0 * 20.0)* (5.0 * 2.0)) / 2.0)```.
+1. Create a comment following the `POWER` line and choose paste (`Ctrl+V`). The expansion of the macro, as a comment near your macro, looks like: ```// (((10.0 * 20.0)* (5.0 * 2.0)) / 2.0)```.
 
-## Expand a macro
+## Expand a macro inline
 
 Use the following steps to expand a macro inline, which replaces the macro with its expansion:
 
 1. Place the cursor on the `POWER` macro in the previous example.
-1. As you hover over the macro, options appear to **Copy**, **Expand Inline**, **Visualize Expansion**, and **Search Online**:
-
-    :::image type="complex" source="media/vs2022-hover-macro.png" alt-text="The macro window, showing the POWER macro expansion.":::
-    The macro window is open on POWER to show that it expands to (((10.0 * 20.0) * (5.0 * 2.0)) / 2.0). Options to copy, expand inline, visual expansion, and search online appear at the bottom of the window.
-    :::image-end:::
-
-1. Choose **Expand Inline**. The `POWER()` macro is replaced with its expanded value: ```std::cout << "Power: " << (((10.0 * 20.0) * (5.0 * 2.0)) / 2.0) << std::endl;```.
+1. As you hover over the macro, options appear to **Copy**, **Expand Inline**, **Visualize Expansion**, and **Search Online**
+1. Choose **Expand Inline**. The `POWER()` macro is replaced with its expanded value: ```std::cout << "Power: " << (((10.0 * 20.0) * (5.0 * 2.0)) / 2.0) << std::endl;```
 
 ## Visualize macro expansion
 
