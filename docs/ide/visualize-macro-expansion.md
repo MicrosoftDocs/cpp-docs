@@ -47,7 +47,7 @@ You can inspect a macro's expanded value, even when several preprocessor steps a
 1. Place the cursor on the `POWER` a macro in the sample.
 1. As you hover over the macro, options appear to **Copy**, **Expand Inline**, **Visualize Expansion**, and **Search Online**:
 
-    :::image type="complex" source="media/vs2022-hover-macro.png" alt-text="The macro window, showing the POWER macro expansion.":::
+    :::image type="complex" source="media/vs2022-hover-macro.png" alt-text="Screenshot of the macro window, showing the POWER macro expansion.":::
     The macro window is open on POWER to show that it expands to (((10.0 * 20.0) * (5.0 * 2.0)) / 2.0). Options to copy, expand inline, visual expansion, and search online appear at the bottom of the window.
     :::image-end:::
 
