@@ -8,7 +8,7 @@ helpviewer_keywords: ["macro expansion", "macro visualization"]
 ---
 # Visualize C/C++ macro expansion
 
-Long macros can be difficult to read. Visual Studio can now expand C and C++ macros: you can get a copy on the clipboard of what the expanded macro will look like, replace the macro inline with its expansion, and step-by-step expand a macro so you can see what it looks like at each stage of expansion. This article allows you to experiment with these features.
+Long macros can be difficult to read. Visual Studio can now expand C and C++ macros: you can get a copy on the clipboard of what the expanded macro looks like, replace the macro inline with its expansion, and step-by-step expand a macro so you can see what it looks like at each stage of expansion. This article allows you to experiment with these features.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ You can inspect a macro's expanded value, even when several preprocessor steps a
     :::image-end:::
 
 1. Choose **Copy**.
-1. Create a comment following the `POWER` line and choose paste (`Ctrl+V`). You'll see the expansion of the macro as a comment near your macro: ```// (((10.0 * 20.0)* (5.0 * 2.0)) / 2.0)```.
+1. Create a comment following the `POWER` line and choose paste (`Ctrl+V`). THe expansion of the macro, as a comment near your macro, looks like: ```// (((10.0 * 20.0)* (5.0 * 2.0)) / 2.0)```.
 
 ## Expand a macro
 
