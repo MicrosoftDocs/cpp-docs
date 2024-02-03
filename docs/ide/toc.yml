@@ -4,6 +4,8 @@ items:
   items: 
     - name: Read and understand C++ code
       href: ../ide/read-and-understand-code-cpp.md
+    - name: Visualize macro expansions
+      href: ../ide/visualize-macro-expansion.md
     - name: Edit and refactor C++ code
       href: ../ide/writing-and-refactoring-code-cpp.md
     - name: Navigate C++ code
