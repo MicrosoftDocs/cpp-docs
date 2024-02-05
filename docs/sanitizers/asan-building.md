@@ -110,7 +110,7 @@ Stack frames are allocated in the heap and remain after functions return. The ru
 
 ### `/INFERASANLIBS[:NO]` linker option
 
-The **`/fsanitize=address`** compiler option marks objects to specify the AddressSanitizer library to link into your executable. The libraries have names that begin with *`clang_rt.asan*`*. The [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) linker option (on by default) links these libraries from their default locations automatically. Here are the libraries chosen and automatically linked in.
+The **`/fsanitize=address`** compiler option marks objects to specify which AddressSanitizer library to link into your executable. The libraries have names that begin with *`clang_rt.asan*`*. The [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) linker option (on by default) links these libraries from their default locations automatically. Here are the libraries chosen and automatically linked in.
 
 > [!NOTE]
 > In the following table, *`{arch}`* is either *`i386`* or *`x86_64`*.
@@ -120,6 +120,8 @@ The **`/fsanitize=address`** compiler option marks objects to specify the Addres
 |--|--|--|
 | MT or MTd | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_static_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
 | MD or MDd | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
+
+The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error.
 
 **Previous Versions**
 
@@ -134,8 +136,6 @@ Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`*
 | **`/MTd`**  | EXE | *`clang_rt.asan_dbg-{arch}`*, *`clang_rt.asan_dbg_cxx-{arch}`* |
 | **`/MTd`**  | DLL | *`clang_rt.asan_dbg_dll_thunk-{arch}`* |
 | **`/MDd`**  | Either | *`clang_rt.asan_dbg_dynamic-{arch}`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}`* |
-
-The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error.
 
 ## Visual Studio integration
 
