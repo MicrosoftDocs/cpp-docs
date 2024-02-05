@@ -9,11 +9,11 @@ helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "
 
 The AddressSanitizer runtime library intercepts common memory allocation functions and operations to enable inspection of memory accesses. There are several different runtime libraries that support the various types of executables the compiler may generate. The compiler and linker automatically link the appropriate runtime libraries, as long as you pass the [`/fsanitize=address`](../build/reference/fsanitize.md) option at compile time. You can override the default behavior by using the **`/NODEFAULTLIB`** option at link time. For more information, see the section on [linking](./asan-building.md#linker) in the [AddressSanitizer language, build, and debugging reference](./asan-building.md).
 
-Below is an inventory of runtime libraries for linking to the AddressSanitizer runtime, where *`{arch}`* is either *`i386`* or *`x86_64`*, as of Visual Studio 17.7 Preview 3.
+The list of runtime libraries for linking to the AddressSanitizer runtime as of Visual Studio 17.7 Preview 3, follows. For more information about the `/MT` and `/MD` options, see [/MD, /MT, /LD (Use Run-Time Library)](../build/reference/md-mt-ld-use-run-time-library.md).
 
 > [!NOTE]
-> These libraries keep the Clang conventions for architecture names. The MSVC conventions are normally x86 and x64 rather than i386 and x86_64. They refer to the same architectures.
-> 
+> In the following table, *`{arch}`* is either *`i386`* or *`x86_64`*.
+> These libraries use Clang conventions for architecture names. MSVC conventions are normally `x86` and `x64` rather than `i386` and `x86_64`. They refer to the same architectures.
 
 | CRT option | AddressSanitizer runtime library (.lib) | Address runtime binary (.dll)
 |--|--|--|
@@ -24,7 +24,7 @@ When compiling with `cl /fsanitize=address`, the compiler generates instructions
 
 ### Previous versions
 
-Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds did not use a DLL dependency and instead fully statically linked in the AddressSanitizer runtime into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Additionally, dynamically linked projects (**`/MD`** or **`/MTd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. These changes and their motivations are discussed further on the MSVC Blog: [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
+Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds did not use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Also, dynamically linked projects (**`/MD`** or **`/MTd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
 
 | CRT option | DLL or EXE | DEBUG? | AddressSanitizer runtime binaries libraries | Address runtime binary (.dll)
 |--|--|--|--|--|

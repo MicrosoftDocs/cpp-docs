@@ -110,16 +110,30 @@ Stack frames are allocated in the heap and remain after functions return. The ru
 
 ### `/INFERASANLIBS[:NO]` linker option
 
-The **`/fsanitize=address`** compiler option marks objects to specify the AddressSanitizer library to link into your executable. The libraries have names that begin with *`clang_rt.asan*`*. The [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) linker option (on by default) links these libraries from their default locations automatically. Here are the libraries chosen and automatically linked in:
+The **`/fsanitize=address`** compiler option marks objects to specify the AddressSanitizer library to link into your executable. The libraries have names that begin with *`clang_rt.asan*`*. The [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) linker option (on by default) links these libraries from their default locations automatically. Here are the libraries chosen and automatically linked in.
 
-| Runtime option | DLL or EXE | AddressSanitizer runtime libraries |
+> [!NOTE]
+> In the following table, *`{arch}`* is either *`i386`* or *`x86_64`*.
+> These libraries use Clang conventions for architecture names. MSVC conventions are normally `x86` and `x64` rather than `i386` and `x86_64`. They refer to the same architectures.
+
+| CRT option | AddressSanitizer runtime library (.lib) | Address runtime binary (.dll)
+|--|--|--|
+| MT or MTd | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_static_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
+| MD or MDd | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
+
+**Previous Versions**
+
+Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds did not use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Also, dynamically linked projects (**`/MD`** or **`/MTd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
+
+
+| CRT runtime option | DLL or EXE | AddressSanitizer runtime libraries |
 |--|--|--|
 | **`/MT`** | EXE | *`clang_rt.asan-{arch}`*, *`clang_rt.asan_cxx-{arch}`* |
 | **`/MT`** | DLL | *`clang_rt.asan_dll_thunk-{arch}`* |
-| **`/MD`** | EITHER | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* |
+| **`/MD`** | Either | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* |
 | **`/MTd`**  | EXE | *`clang_rt.asan_dbg-{arch}`*, *`clang_rt.asan_dbg_cxx-{arch}`* |
 | **`/MTd`**  | DLL | *`clang_rt.asan_dbg_dll_thunk-{arch}`* |
-| **`/MDd`**  | EITHER | *`clang_rt.asan_dbg_dynamic-{arch}`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}`* |
+| **`/MDd`**  | Either | *`clang_rt.asan_dbg_dynamic-{arch}`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}`* |
 
 The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error.
 
