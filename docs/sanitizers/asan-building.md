@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer language, build, and debugging reference"
 description: "Technical description of building for the AddressSanitizer"
-ms.date: 09/15/2021
+ms.date: 02/05/2024
 f1_keywords: ["__SANITIZE_ADDRESS__", "ASAN_VCASAN_DEBUGGING"]
 helpviewer_keywords: ["ASan reference", "AddressSanitizer reference", "Address Sanitizer reference"]
 ---
@@ -118,8 +118,8 @@ The **`/fsanitize=address`** compiler option marks objects to specify which Addr
 
 | CRT option | AddressSanitizer runtime library (.lib) | Address runtime binary (.dll)
 |--|--|--|
-| MT or MTd | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_static_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
-| MD or MDd | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
+| `/MT` or `/MTd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_static_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
+| `/MD` or `/MDd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
 
 The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error.
 

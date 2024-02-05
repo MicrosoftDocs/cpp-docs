@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer runtime"
 description: "Technical description of the AddressSanitizer runtime for Microsoft C/C++."
-ms.date: 09/14/2023
+ms.date: 02/05/2024
 helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "clang_rt.asan", "Clang runtime", "Asan runtime"]
 ---
 
@@ -17,8 +17,8 @@ The list of runtime libraries for linking to the AddressSanitizer runtime as of 
 
 | CRT option | AddressSanitizer runtime library (.lib) | Address runtime binary (.dll)
 |--|--|--|
-| `MT` or `MTd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_static_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
-| `MD` or `MDd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
+| `/MT` or `/MTd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_static_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
+| `/MD` or `/MDd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
 
 When compiling with `cl /fsanitize=address`, the compiler generates instructions to manage and check the [shadow bytes](./asan-shadow-bytes.md). Your program uses this instrumentation to check memory accesses on the stack, in the heap, or in the global scope. The compiler also produces metadata describing stack and global variables. This metadata enables the runtime to generate precise error diagnostics: function names, lines, and columns in your source code. Combined, the compiler checks and runtime libraries can precisely diagnose many types of [memory safety bugs](./asan-error-examples.md) if they're encountered at run-time.
 
@@ -28,12 +28,12 @@ Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`*
 
 | CRT option | DLL or EXE | DEBUG? | AddressSanitizer runtime binaries libraries | Address runtime binary (.dll)
 |--|--|--|--|--|
-| MT | EXE | No | *`clang_rt.asan-{arch}`*, *`clang_rt.asan_cxx-{arch}`* | None
-| MT | DLL | No | *`clang_rt.asan_dll_thunk-{arch}`* | None
-| MD | Either | No | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
-| MT | EXE | Yes | *`clang_rt.asan_dbg-{arch}`*, *`clang_rt.asan_dbg_cxx-{arch}`* | None
-| MT | DLL | Yes | *`clang_rt.asan_dbg_dll_thunk-{arch}`* | None
-| MD | Either | Yes | *`clang_rt.asan_dbg_dynamic-{arch}`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dbg_dynamic-{arch}`*
+| `/MT` | EXE | No | *`clang_rt.asan-{arch}`*, *`clang_rt.asan_cxx-{arch}`* | None
+| `/MT` | DLL | No | *`clang_rt.asan_dll_thunk-{arch}`* | None
+| `/MD` | Either | No | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
+| `/MT` | EXE | Yes | *`clang_rt.asan_dbg-{arch}`*, *`clang_rt.asan_dbg_cxx-{arch}`* | None
+| `/MT` | DLL | Yes | *`clang_rt.asan_dbg_dll_thunk-{arch}`* | None
+| `/MD` | Either | Yes | *`clang_rt.asan_dbg_dynamic-{arch}`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dbg_dynamic-{arch}`*
 
 ## Function interception
 
