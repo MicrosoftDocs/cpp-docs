@@ -28,7 +28,7 @@ You can use the **`/execution-charset`** option to specify an execution characte
 
 By default, Visual Studio detects a byte-order mark to determine if the source file is in an encoded Unicode format, for example, UTF-16 or UTF-8. If no byte-order mark is found, it assumes that the source file is encoded in the current user code page, unless you used the **`/source-charset`** or **`/utf-8`** option to specify a character set name or code page. Visual Studio allows you to save your C++ source code in any of several character encodings. For information about source and execution character sets, see [Character sets](../../cpp/character-sets.md) in the language documentation.
 
-If you want to set both the source character set and the execution character set to UTF-8, you can use the **`/utf-8*`** compiler option as a shortcut. It's equivalent to **`/source-charset:utf-8 /execution-charset:utf-8`** on the command line. Any of these options also enables the **`/validate-charset`** option by default.
+If you want to set both the source character set and the execution character set to UTF-8, you can use the **`/utf-8`** compiler option as a shortcut. It's equivalent to **`/source-charset:utf-8 /execution-charset:utf-8`** on the command line. Any of these options also enables the **`/validate-charset`** option by default.
 
 ### To set this compiler option in the Visual Studio development environment
 
