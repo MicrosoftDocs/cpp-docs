@@ -56,7 +56,7 @@ void test3() {
 
 ### `/fsanitize=address` compiler option
 
-The [**`/fsanitize=address`**](../build/reference/fsanitize.md) compiler option instruments memory references in your code to catch memory safety errors at runtime. The instrumentation hooks loads, stores, scopes, `alloca`, and CRT functions. It can detect hidden bugs such as out-of-bounds, use-after-free, use-after-scope, and so on. For a non-exhaustive list of errors detected at runtime, see [AddressSanitizer error examples](./asan-error-examples.md).
+The [**`/fsanitize=address`**](../build/reference/fsanitize.md) compiler option instruments memory references in your code to catch memory safety errors at runtime. The instrumentation hooks loads, stores, scopes, `alloca`, and CRT functions. It can detect hidden bugs such as out-of-bounds, use-after-free, use-after-scope, and so on. For a nonexhaustive list of errors detected at runtime, see [AddressSanitizer error examples](./asan-error-examples.md).
 
 **`/fsanitize=address`** is compatible with all existing C++ or C optimization levels (for example, **`/Od`**, **`/O1`**, **`/O2`**, **`/O2 /GL`**, and profile guided optimization). The code produced with this option works with static and dynamic CRTs (for example, **`/MD`**, **`/MDd`**, **`/MT`**, and **`/MTd`**). This compiler option can be used to create an .EXE or .DLL targeting x86 or x64. Debug information is required for optimal formatting of call stacks.
 
@@ -82,7 +82,7 @@ These libraries are added to the default library list when you specify **`/fsani
 | **`/MTd`** | *`clang_rt.fuzzer_MTd-{arch}`* |
 | **`/MDd`** | *`clang_rt.fuzzer_MDd-{arch}`* |
 
-LibFuzzer libraries that omit the **`main`** function are also available. It's your responsibility to define **`main`** and to call **`LLVMFuzzerInitialize`** and **`LLVMFuzzerTestOneInput`** when you use these libraries. To use one of these libraries, specify [`/NODEFAULTLIB`](../build/reference/nodefaultlib-ignore-libraries.md) and explicitly link with the library below that corresponds to your runtime and architecture:
+LibFuzzer libraries that omit the **`main`** function are also available. It's your responsibility to define **`main`** and to call **`LLVMFuzzerInitialize`** and **`LLVMFuzzerTestOneInput`** when you use these libraries. To use one of these libraries, specify [`/NODEFAULTLIB`](../build/reference/nodefaultlib-ignore-libraries.md) and explicitly link with the following library that corresponds to your runtime and architecture:
 
 | Runtime option | LibFuzzer no_main library |
 |--|--|
@@ -100,7 +100,7 @@ By default, the MSVC compiler (unlike Clang) doesn't generate code to allocate f
 1. Compile using the [`/fsanitize-address-use-after-return`](../build/reference/fsanitize.md) option.
 2. Before executing your program, run `set ASAN_OPTIONS=detect_stack_use_after_return=1` to set the runtime check option.
 
-The **`/fsanitize-address-use-after-return`** option causes the compiler to generate code to use a dual stack frame in the heap when locals are considered "address taken". This code is *much slower* than just using **`/fsanitize=address`** alone. For more information and an example, see [Error: `stack-use-after-return`](error-stack-use-after-return.md).
+The **`/fsanitize-address-use-after-return`** option causes the compiler to generate code to use a dual stack frame in the heap when locals are considered "address taken." This code is *much slower* than just using **`/fsanitize=address`** alone. For more information and an example, see [Error: `stack-use-after-return`](error-stack-use-after-return.md).
 
 The dual stack frame in the heap remains after the return from the function that created it. Consider an example where the address of a local, allocated to a slot in the heap, is used after the return. The shadow bytes associated with the fake heap frame contain the value 0xF9. That 0xF9 means a stack-use-after-return error when the runtime reports the error.
 
@@ -125,7 +125,7 @@ The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) pre
 
 **Previous Versions**
 
-Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds did not use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Also, dynamically linked projects (**`/MD`** or **`/MTd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
+Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds didn't use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Also, dynamically linked projects (**`/MD`** or **`/MTd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
 
 
 | CRT runtime option | DLL or EXE | AddressSanitizer runtime libraries |
@@ -152,7 +152,7 @@ The library chosen depends on the compiler options, and is automatically linked 
 | **`/MTd`**       | *`libvcasand.lib`* |
 | **`/MDd`**       | *`vcasand.lib`*    |
 
-However, if you compile using **`/Zl`** (Omit default library name), you'll need to manually specify the library. If you don't, you'll get an unresolved external symbol link error. Here are some typical examples:
+However, if you compile using **`/Zl`** (Omit default library name), you must manually specify the library. If you don't, you'll get an unresolved external symbol link error. Here are some typical examples:
 
 ```Output
 error LNK2001: unresolved external symbol __you_must_link_with_VCAsan_lib
