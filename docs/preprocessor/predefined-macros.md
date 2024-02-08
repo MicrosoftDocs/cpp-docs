@@ -246,40 +246,7 @@ MSVC supports these additional predefined macros.
 
 - `_MSC_VER` Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Microsoft C/C++ compiler is 17.00.51106.1, the `_MSC_VER` macro evaluates to 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
 
-   | Visual Studio version | `_MSC_VER` |
-   |--|--|
-   | Visual Studio 6.0 | 1200 |
-   | Visual Studio .NET 2002 (7.0) | 1300 |
-   | Visual Studio .NET 2003 (7.1) | 1310 |
-   | Visual Studio 2005 (8.0) | 1400 |
-   | Visual Studio 2008 (9.0) | 1500 |
-   | Visual Studio 2010 (10.0) | 1600 |
-   | Visual Studio 2012 (11.0) | 1700 |
-   | Visual Studio 2013 (12.0) | 1800 |
-   | Visual Studio 2015 (14.0) | 1900 |
-   | Visual Studio 2017 RTW (15.0) | 1910 |
-   | Visual Studio 2017 version 15.3 | 1911 |
-   | Visual Studio 2017 version 15.5 | 1912 |
-   | Visual Studio 2017 version 15.6 | 1913 |
-   | Visual Studio 2017 version 15.7 | 1914 |
-   | Visual Studio 2017 version 15.8 | 1915 |
-   | Visual Studio 2017 version 15.9 | 1916 |
-   | Visual Studio 2019 RTW (16.0) | 1920 |
-   | Visual Studio 2019 version 16.1 | 1921 |
-   | Visual Studio 2019 version 16.2 | 1922 |
-   | Visual Studio 2019 version 16.3 | 1923 |
-   | Visual Studio 2019 version 16.4 | 1924 |
-   | Visual Studio 2019 version 16.5 | 1925 |
-   | Visual Studio 2019 version 16.6 | 1926 |
-   | Visual Studio 2019 version 16.7 | 1927 |
-   | Visual Studio 2019 version 16.8, 16.9 | 1928 |
-   | Visual Studio 2019 version 16.10, 16.11 | 1929 |
-   | Visual Studio 2022 RTW (17.0) | 1930 |
-   | Visual Studio 2022 version 17.1 | 1931 |
-   | Visual Studio 2022 version 17.2 | 1932 |
-   | Visual Studio 2022 version 17.3 | 1933 |
-   | Visual Studio 2022 version 17.4 | 1934 |
-   | Visual Studio 2022 version 17.5 | 1935 |
+See [C++ compiler versioning](../overview/cpp-compiler-versioning.md) for more information about the compiler version numbers and the Visual Studio versions they correspond to.
 
    To test for compiler releases or updates in a given version of Visual Studio or after, use the `>=` operator. You can use it in a conditional directive to compare `_MSC_VER` against that known version. If you have several mutually exclusive versions to compare, order your comparisons in descending order of version number. For example, this code checks for compilers released in Visual Studio 2017 and later. Next, it checks for compilers released in or after Visual Studio 2015. Then it checks for all compilers released before Visual Studio 2015:
 
