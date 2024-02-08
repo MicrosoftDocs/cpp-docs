@@ -1,7 +1,7 @@
 ---
 title: "Latest supported Visual C++ Redistributable downloads"
 description: "This article lists the download links for the latest versions of Visual C++ Redistributable packages."
-ms.date: 08/02/2023
+ms.date: 02/08/2024
 helpviewer_keywords:
   [
     "redist",
@@ -26,6 +26,11 @@ For details on how to install and redistribute Visual Studio components, see [Re
 This table lists the latest supported English (en-US) Microsoft Visual C++ Redistributable packages for Visual Studio 2015, 2017, 2019, and 2022. The latest supported version has the most recently implemented C++ features, security, reliability, and performance improvements. It also includes the latest C++ standard language and library standards conformance updates. We recommend that you install this version for all applications created using Visual Studio 2015, 2017, 2019, or 2022.
 
 Unlike older versions of Visual Studio, which have infrequent redist updates, the version number isn't listed in the following table for Visual Studio 2015-2022 because the redist is updated frequently. To find the version number of the latest redist, download the redist you're interested in using one of the following links. Then, look at its properties using Windows File Explorer. In the **Details** pane, the **File version** contains the version of the redist.
+
+## Latest Microsoft Visual C++ Redistributable Version
+The latest version is `14.38.33135.0`
+
+Use the following links to download this version for each supported architecture:
 
 | Architecture | Link | Notes |
 |--|:-:|-:|
