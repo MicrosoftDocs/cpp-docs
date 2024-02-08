@@ -1,7 +1,7 @@
 ---
 title: "Latest supported Visual C++ Redistributable downloads"
 description: "This article lists the download links for the latest versions of Visual C++ Redistributable packages."
-ms.date: 08/02/2023
+ms.date: 02/08/2024
 helpviewer_keywords:
   [
     "redist",
