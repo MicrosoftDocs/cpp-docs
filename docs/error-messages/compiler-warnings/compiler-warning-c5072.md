@@ -9,7 +9,7 @@ helpviewer_keywords: ["c5072"]
 
 > ASAN enabled without debug information emission. Enable debug info for better ASAN error reporting
 
-This warning occurs when you compile with [Address Sanitizer](/cpp/sanitizers/asan) (ASAN) turned on, but you don't instruct the compiler to emit debug info. ASAN uses debug info to provide better diagnostics.
+This warning occurs when you compile with [Address Sanitizer](/cpp/sanitizers/asan) (ASAN) turned on, but you don't also instruct the compiler to emit debug info. ASAN uses debug info to provide better diagnostics.
 
 ## Example
 
@@ -19,7 +19,7 @@ The following command line generates warning `C5072`:
  cl /fsanitize=address /EHsc test.cpp
 ```
 
-To fix it, add [`/Zi`](/cpp/build/reference/z7-zi-zi-debug-information-format#zi) or [`/Z7`](/cpp/build/reference/z7-zi-zi-debug-information-format#z7), like this: `cl /fsanitize=address /EHsc /Zi test.cpp`
+To fix it, have the compiler generate debug information by using a switch like [`/Zi`](/cpp/build/reference/z7-zi-zi-debug-information-format#zi) or [`/Z7`](/cpp/build/reference/z7-zi-zi-debug-information-format#z7), like this: `cl /fsanitize=address /EHsc /Zi test.cpp`
 
 ## See also
 

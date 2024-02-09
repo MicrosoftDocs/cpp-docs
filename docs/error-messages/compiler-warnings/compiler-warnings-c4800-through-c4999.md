@@ -173,7 +173,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 4) C5061 | the use of a comma operator as a subscript expression has been deprecated |
 | Compiler warning (level 4) C5062 | enum direct list initialization between 'type-1' and 'type-2' is no longer supported |
 | Compiler warning (level 1) C5063 | '`std::is_constant_evaluated`' always evaluates to true in manifestly constant-evaluated expressions |
-| Compiler warning (level 1) C5072 | ASAN enabled without debug information emission. Enable debug info for better ASAN error reporting |
+| [Compiler warning (level 1) C5072](compiler-warning-c5072.md) | ASAN enabled without debug information emission. Enable debug info for better ASAN error reporting |
 | Compiler warning (level 1) C5081 | Secure hotpatch is not supported with `/GENPROFILE`, `/FASTGENPROFILE` or `/LTCG:PGI`, disabling secure hotpatch. |
 | Compiler warning (level 1) C5100 | `__VA_ARGS__` is reserved for use in variadic macros |
 | Compiler warning (level 1) C5101 | use of preprocessor directive in function-like macro argument list is undefined behavior |
