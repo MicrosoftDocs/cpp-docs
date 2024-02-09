@@ -25,7 +25,7 @@ items:
     - name: Supported target platforms
       href: ../overview/supported-platforms-visual-cpp.md
     - name: C++ Compiler versions
-      href: cpp-compiler-versions.md
+      href: compiler-versions.md
     - name: C++ Tools and Features in Visual Studio Editions
       href: ../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md
     - name: Install C11 and C17 support in Visual Studio

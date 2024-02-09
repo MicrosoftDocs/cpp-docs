@@ -1,5 +1,5 @@
 ---
-description: "Learn more about the microsoft visual c++ compiler versioning story"
+description: "Learn more about Microsoft Visual C++ compiler versioning."
 title: "Microsoft Visual C++ compiler versions (Visual C++)"
 ms.date: 02/08/2024
 ms.service: "visual-cpp"
@@ -11,12 +11,13 @@ helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
 The Microsoft Visual C++ compiler version consists of a major and minor version number, which is reflected in the [`_MSC_VER`](../preprocessor/predefined-macros.md) macro as a number, such as 1938.
 
 Starting with Visual Studio 15:
+
 - each major release increments the 'hundreds' place of the version number.
 - each minor release increments the 'ones' place of the version number.
 
-For example, the major version changed between VS 2013 and VS 2015, reflected by a change in `_MSC_VER` from 1800 to 1900. An example of a minor change is from 17.1 to 17.2, when `_MSC_VER` changed from 1931 to 1932.
+For example, the major version changed between Visual Studio 2013 and Visual Studio 2015, reflected by a change in `_MSC_VER` from 1800 to 1900. An example of a minor change is from 17.1 to 17.2, when `_MSC_VER` changed from 1931 to 1932.
 
-The following table lists the Visual C++ compiler version numbers and the Visual Studio version in which they were released:
+The following table lists the Visual C++ compiler `_MSC_VER` for each Visual Studio release:
 
 | Visual Studio version | `_MSC_VER` |
 |--|--|

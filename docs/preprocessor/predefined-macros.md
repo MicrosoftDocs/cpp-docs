@@ -60,7 +60,7 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 ## Microsoft-specific predefined macros
 
-MSVC supports these additional predefined macros.
+MSVC supports other predefined macros:
 
 - `__ATOM__` Defined as 1 when the [`/favor:ATOM`](../build/reference/favor-optimize-for-architecture-specifics.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
@@ -246,7 +246,7 @@ MSVC supports these additional predefined macros.
 
 - `_MSC_VER` Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Microsoft C/C++ compiler is 17.00.51106.1, the `_MSC_VER` macro evaluates to 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
 
-See [C++ compiler versioning](../overview/cpp-compiler-versioning.md) for more information about the compiler version numbers and the Visual Studio versions they correspond to.
+   See [C++ compiler versioning](../overview/compiler-versions.md) for more information about the compiler version numbers and the Visual Studio versions they correspond to.
 
    To test for compiler releases or updates in a given version of Visual Studio or after, use the `>=` operator. You can use it in a conditional directive to compare `_MSC_VER` against that known version. If you have several mutually exclusive versions to compare, order your comparisons in descending order of version number. For example, this code checks for compilers released in Visual Studio 2017 and later. Next, it checks for compilers released in or after Visual Studio 2015. Then it checks for all compilers released before Visual Studio 2015:
 
