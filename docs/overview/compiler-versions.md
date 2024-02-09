@@ -6,7 +6,7 @@ ms.service: "visual-cpp"
 ms.subservice: "tools"
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
 ---
-# Microsoft Visual C++ compiler versionsSupported platforms (Visual C++)
+# Microsoft Visual C++ compiler versions
 
 The Microsoft Visual C++ compiler version consists of a major and minor version number, which is reflected in the [`_MSC_VER`](../preprocessor/predefined-macros.md) macro as a number, such as 1938.
 
