@@ -4349,6 +4349,8 @@ items:
           href: compiler-warnings/c5055.md
         - name: Compiler warning (level 1) C5056
           href: compiler-warnings/c5056.md
+        - name: Compiler warning (level 1) C5072
+          href: compiler-warnings/compiler-warning-c5072.md
         - name: Compiler warning (level 1) C5105
           href: compiler-warnings/c5105.md
         - name: Compiler warning (level 1) C5208
