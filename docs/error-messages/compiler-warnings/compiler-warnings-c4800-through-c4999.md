@@ -222,7 +222,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 1) C5236 | JSON ill-formed: *message*; ignoring '*filename*' |
 | Compiler warning (level 1) C5237 | cannot resolve header unit entry '*name*' to a header file in '*filename*'; ignoring entry |
 | Compiler warning (level 1) C5238 | file system error: cannot open '*filename*' for reading; ignoring |
-| Compiler warning (level 4) C5239 | '*symbol*': potentially-throwing function called from a function declared `__declspec(nothrow)`. Undefined behavior may occur if an exception is thrown. |
+| Compiler warning (level 4) C5239 | '*symbol*': potentially throwing function called from a function declared `__declspec(nothrow)`. Undefined behavior may occur if an exception is thrown. |
 | [Compiler warning (level 4) C5240](c5240.md) | '*attribute-name*': attribute is ignored in this syntactic position |
 | Compiler warning (level 1) C5241 | '`/exportHeader`' usage to lookup header-name is deprecated; prefer '/headerName:name value=filename' |
 | Compiler warning (level 1) C5242 | syntax error in pragma '*identifier*' |
