@@ -1,19 +1,59 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 12/07/2023
+ms.date: 2/6/2024
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022
 
-Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use **In this article** links, above.
+Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use the **In this article** links.
 
 This document lists the changes in Visual Studio 2022.
 
-For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).\
+For changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).\
 For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).\
-For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+For changes in older versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+
+## <a name="improvements_179"></a> Conformance improvements in Visual Studio 2022 version 17.9
+
+Visual Studio 2022 version 17.9 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.9](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-179).
+
+### `__VA_OPT__` is enabled as an extension under `/Zc:preprocessor`
+
+`__VA_OPT__` was added to C++20 and C23. Previous to its addition, there wasn't a standard way to elide a comma in a variadic macro. To provide better backward compatibility, `__VA_OPT__` is enabled under the token based preprocessor `/Zc:preprocessor` across all language versions.
+
+For example, this now compiles without error:
+
+```cpp
+#define LOG_WRAPPER(message, ...) WRITE_LOG(__LINE__, message __VA_OPT__(, __VA_ARGS__))
+
+// Failed to build under /std:c11, now succeeds.
+LOG_WRAPPER("Log message");
+LOG_WRAPPER("Log message with %s", "argument")
+```
+
+### C23 language ###
+
+For C23, the following are available when using the `/std:clatest` compiler switch:
+
+[`typeof`](../c-language/typeof-c.md)\
+[`typeof_unqual`](../c-language/typeof-unqual-c.md)
+
+The following are available for all C language versions:
+
+[`__typeof__`](../c-language/typeof-c.md)\
+[`__typeof_unqual__`](../c-language/typeof-unqual-c.md)
+
+### C++ Standard Library
+
+**C++23 features**
+
+- `formattable`, `range_format`, `format_kind`, and `set_debug_format()` as part of [P2286R8 Formatting Ranges](https://wg21.link/P2286R8)
+- `<mdspan>` per [P0009R18](https://wg21.link/P0009R18) and subsequent wording changes that were applied to the C++23 Standard.
+- `format()` pointers per [P2510R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf).
 
 ## <a name="improvements_178"></a> Conformance improvements in Visual Studio 2022 version 17.8
 
@@ -315,7 +355,7 @@ bidi.cpp(8): warning C5255: unterminated bidirectional character encountered: 'U
 
 ### `from_chars()` `float` tiebreaker
 
-Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even," and "even" happened to be "down", but the implementation incorrectly rounded "up." (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
+Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even", and "even" happened to be "down", but the implementation incorrectly rounded "up" (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
 
 This change affects runtime behavior in the specified range of cases:
 
@@ -483,7 +523,7 @@ int main(void)
 
 ### Error on a nondependent `static_assert`
 
-In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression when it is parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
+In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression when it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
 
 This change is a source breaking change. It applies in any mode that implies **`/permissive-`** or **`/Zc:static_assert`**.  This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
 

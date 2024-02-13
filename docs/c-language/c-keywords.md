@@ -47,6 +47,8 @@ The C language uses the following keywords:
         **`struct`**\
         **`switch`**\
         **`typedef`**\
+        **[`typeof`](typeof-c.md)**\
+        **[`typeof_unqual`](typeof-unqual-c.md)**\
         **`union`**\
         **`unsigned`**\
         **`void`**\
@@ -67,12 +69,9 @@ The C language uses the following keywords:
     :::column-end:::
 :::row-end:::
 
-<sup>1</sup>  Keywords introduced in ISO C99.
-
-<sup>2</sup>   Keywords introduced in ISO C11.
-
-<sup>a</sup>  Starting in Visual Studio 2019 version 16.8, these keywords are supported in code compiled as C when the **`/std:c11`** or **`/std:c17`** compiler options are specified.
-
+<sup>1</sup>  Keywords introduced in ISO C99.\
+<sup>2</sup>   Keywords introduced in ISO C11.\
+<sup>a</sup>  Starting in Visual Studio 2019 version 16.8, these keywords are supported in code compiled as C when the **`/std:c11`** or **`/std:c17`** compiler options are specified.\
 <sup>b</sup>  Starting in Visual Studio 2019 version 16.8, these keywords are recognized but not supported by the compiler in code compiled as C when the **`/std:c11`** or **`/std:c17`** compiler options are specified.
 
 You can't redefine keywords. However, you can specify text to replace keywords before compilation by using C [preprocessor directives](../preprocessor/preprocessor-directives.md).
@@ -105,6 +104,8 @@ The following keywords and special identifiers are recognized by the Microsoft C
     :::column:::
         **`__stdcall`**<sup>5</sup>\
         **`__try`**<sup>5</sup>\
+        **[`__typeof__`](typeof-c.md)**\
+        **[`__typeof_unqual__`](typeof-unqual-c.md)**\
         **`dllexport`**<sup>4</sup>\
         **`dllimport`**<sup>4</sup>\
         **`naked`**<sup>4</sup>\
@@ -113,17 +114,14 @@ The following keywords and special identifiers are recognized by the Microsoft C
     :::column-end:::
 :::row-end:::
 
-<sup>3</sup> The **`__based`** keyword has limited uses for 32-bit and 64-bit target compilations.
-
-<sup>4</sup> These are special identifiers when used with **`__declspec`**; their use in other contexts is unrestricted.
-
-<sup>5</sup> For compatibility with previous versions, these keywords are available both with two leading underscores and a single leading underscore when Microsoft extensions are enabled.
-
+<sup>3</sup> The **`__based`** keyword has limited uses for 32-bit and 64-bit target compilations.\
+<sup>4</sup> These are special identifiers when used with **`__declspec`**; their use in other contexts is unrestricted.\
+<sup>5</sup> For compatibility with previous versions, these keywords are available both with two leading underscores and a single leading underscore when Microsoft extensions are enabled.\
 <sup>6</sup> If you don't include <assert.h>, the Microsoft Visual C compiler maps **`static_assert`** to the C11 **`_Static_assert`** keyword.
 
-Microsoft extensions are enabled by default. To assist in creating portable code, you can disable Microsoft extensions by specifying the [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) option during compilation. When you use this option, some Microsoft-specific keywords are disabled.
+Microsoft extensions are enabled by default. To help create portable code, you can disable Microsoft extensions by specifying the [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) option during compilation. When you use this option, some Microsoft-specific keywords are disabled.
 
-When Microsoft extensions are enabled, you can use the keywords listed above in your programs. To conform to the language standard, most of these keywords are prefaced by a double underscore. The four exceptions, **`dllexport`**, **`dllimport`**, **`naked`**, and **`thread`**, are used only with **`__declspec`** and don't require a leading double underscore. For backward compatibility, single-underscore versions of the rest of the keywords are supported.
+When Microsoft extensions are enabled, you can use the keywords listed above in your programs. To conform to the language standard, most of these keywords have a leading double underscore. The four exceptions, **`dllexport`**, **`dllimport`**, **`naked`**, and **`thread`**, are used only with **`__declspec`** and don't require a leading double underscore. For backward compatibility, single-underscore versions of the rest of the keywords are supported.
 
 ## See also
 
