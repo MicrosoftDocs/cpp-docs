@@ -3,7 +3,6 @@ description: "Learn more about: C Type Specifiers"
 title: "C Type Specifiers"
 ms.date: "01/29/2018"
 helpviewer_keywords: ["type specifiers, C", "specifiers, type"]
-ms.assetid: fbe13441-04c3-4829-b047-06d374adc2b6
 ---
 # C Type Specifiers
 
@@ -70,4 +69,6 @@ You can create more type specifiers with **`typedef`** declarations, as describe
 
 ## See also
 
-[Declarations and Types](../c-language/declarations-and-types.md)
+[Declarations and Types](../c-language/declarations-and-types.md)\
+[`typeof, __typeof__` (C23)](typeof-c.md)\
+[`typeof_unqual, __typeof_unqual__` (C23)](typeof-unqual-c.md)
