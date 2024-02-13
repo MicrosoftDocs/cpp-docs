@@ -12,7 +12,9 @@ no-loc: [_ATL_VER, __ATOM__, __AVX__, __AVX2__, __AVX512BW__, __AVX512CD__, __AV
 
 The Microsoft C/C++ compiler (MSVC) predefines certain preprocessor macros, depending on the language (C or C++), the compilation target, and the chosen compiler options.
 
-MSVC supports the predefined preprocessor macros required by the ANSI/ISO C99, C11, and C17 standards, and the ISO C++14, C++17, and C++20 standards. The implementation also supports several more Microsoft-specific preprocessor macros. Some macros are defined only for specific build environments or compiler options. Except where noted, the macros are defined throughout a translation unit as if they were specified as **`/D`** compiler option arguments. When defined, the macros are expanded to the specified values by the preprocessor before compilation. The predefined macros take no arguments and can't be redefined.
+MSVC supports the predefined preprocessor macros required by the ANSI/ISO C99, C11, and C17 standards, and the ISO C++14, C++17, and C++20 standards. The implementation also supports several more Microsoft-specific preprocessor macros.
+
+Some macros are defined only for specific build environments or compiler options. Except where noted, the macros are defined throughout a translation unit as if they were specified as **`/D`** compiler option arguments. When defined, the preprocessor expands macros their specified values before compilation. The predefined macros take no arguments and can't be redefined.
 
 ## Standard predefined identifier
 
@@ -38,7 +40,7 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 - `__LINE__` Defined as the integer line number in the current source file. The value of the `__LINE__` macro can be changed by using a `#line` directive. The integral type of the value of `__LINE__` can vary depending on context. This macro is always defined.
 
-- `__STDC__` Defined as 1 when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Starting in Visual Studio 2022 version 17.2, it's also defined as 1 when compiled as C and if the [`/std:c11`](../build/reference/std-specify-language-standard-version.md) or [`/std:c17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. Otherwise, undefined.
+- `__STDC__` Defined as 1 when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Starting in Visual Studio 2022 version 17.2, it's defined as 1 when compiled as C and if the [`/std:c11`](../build/reference/std-specify-language-standard-version.md) or [`/std:c17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. Otherwise, undefined.
 
 - `__STDC_HOSTED__` Defined as 1 if the implementation is a *hosted implementation*, one that supports the entire required standard library. Otherwise, defined as 0.
 
@@ -262,7 +264,7 @@ MSVC supports other predefined macros:
 
    To test for compiler versions that share major and minor numbers, use the major, minor, and build numbers in `_MSC_FULL_VER` for comparisons. The compilers in Visual Studio 2019 version 16.9 have an `_MSC_FULL_VER` value of 192829500 or greater. The compilers in Visual Studio 2019 version 16.11 have an `_MSC_FULL_VER` value of 192930100 or greater.
 
-   For more information about compiler versioning see [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) in the Microsoft C++ Team Blog.
+   For more information about compiler versioning, see [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) in the Microsoft C++ Team Blog.
 
 - `_MSVC_LANG` Defined as an integer literal that specifies the C++ language standard targeted by the compiler. It's set only in code compiled as C++. The macro is the integer literal value `201402L` by default, or when the [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `201703L` if the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `202002L` if the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. It's set to a higher, unspecified value when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) option is specified. Otherwise, the macro is undefined. The `_MSVC_LANG` macro and [`/std` (Specify language standard version)](../build/reference/std-specify-language-standard-version.md) compiler options are available beginning in Visual Studio 2015 Update 3.
 

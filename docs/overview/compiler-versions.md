@@ -8,7 +8,7 @@ helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
 ---
 # Microsoft Visual C++ compiler versions
 
-The Microsoft Visual C++ compiler version consists of a four-part major and minor version number. The compiler version is reflected in the [`_MSC_VER`](../preprocessor/predefined-macros.md) macro as a number, such as 1938, and can be used to distinguish between different versions of the compiler.
+The Microsoft Visual C++ compiler version consists of a four-part major and minor version number. The compiler version is reflected in the [`_MSC_VER`](../preprocessor/predefined-macros.md) macro as a number, such as 1938. It is used to distinguish between different versions of the compiler.
 
 ## A brief history of Visual C++ compiler versioning
 
@@ -16,22 +16,23 @@ The Microsoft Visual C++ compiler version consists of a four-part major and mino
 
 - For major releases, `_MSC_VER`  increases by 100. `_MSC_FULL_VER` increases by 10,000,000.
 - For minor releases, `_MSC_VER` increases by 10. `_MSC_FULL_VER` increases by 1,000,000.
+
 Note: Visual Studio .NET 2003 was considered a minor release.
 
 ### Visual Studio 2017
 
 - For major releases, the minor version increases by 10.
-- Starting with Visual Studio 2017 version 15.3, each minor update increases the minor version by 1.
+- Starting with Visual Studio 2017 version 15.3, the minor version increases by 1.
 
 ### Service releases starting with Visual Studio 2017
 
-- Distinguish servicing releases using `_MSC_FULL_VER`. The build field (the 3rd element of the period-delimited version number) typically increases by 1.
+- Distinguish servicing releases using `_MSC_FULL_VER`. The build field (the third element of the period-delimited version number) typically increases by 1.
 - Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER` instead. The same is true for distinguishing Visual Studio 2019 16.10 and 16.11.
 
-## Summary of macros
+## Version macros
 
-- [`_MSC_VER`](../preprocessor/predefined-macros.md) distinguishes between different versions of the compiler at a high level. It is used to distinguish between major and minor releases.
-- [`_MSC_FULL_VER`](../preprocessor/predefined-macros.md) represents the major, minor, and build version of the compiler. It is used to distinguish between different versions of the compiler, including servicing releases. Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The same is true for Visual Studio 2019 16.10 and 16.11.
+- [`_MSC_VER`](../preprocessor/predefined-macros.md) distinguishes between different versions of the compiler at a high level. It's used to distinguish between major and minor releases.
+- [`_MSC_FULL_VER`](../preprocessor/predefined-macros.md) represents the major, minor, and build version of the compiler. It's used to distinguish between different versions of the compiler, including servicing releases. Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The same is true for Visual Studio 2019 16.10 and 16.11.
 - [`_MSC_BUILD`](../preprocessor/predefined-macros.md) represents the build version of the compiler. Use it to distinguish between servicing releases.
 
 For example, the major version changed between Visual Studio 2013 and Visual Studio 2015, reflected by a change in `_MSC_VER` from 1800 to 1900. An example of a minor change is from 17.1 to 17.2, when `_MSC_VER` changed from 1931 to 1932.
@@ -79,6 +80,7 @@ The following table lists the Visual C++ compiler `_MSC_VER` for each Visual Stu
 | Visual Studio 2022 version 17.10 | 1940 |
 
 <sup>a</sup> Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. `MSC_FULL_VER` for 16.8 is 192829333. `MSC_FULL_VER` for 16.9 is 192829913.
+
 <sup>b</sup> Visual Studio 2019 16.10 and 16.11 share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. `MSC_FULL_VER` for 16.10 is ???. `MSC_FULL_VER` for 16.11 is 192930133.
 
 ## See also
