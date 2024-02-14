@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 12/07/2023
+ms.date: 02/07/2024
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 ms.custom: intro-whats-new
@@ -9,9 +9,37 @@ ms.custom: intro-whats-new
 
 # What's new for C++ in Visual Studio 2022
 
-Visual Studio 2022 brings many updates and fixes to the Microsoft C++ environment. We added features and fixed many bugs and issues in the compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
+Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
 
-For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md).
+- For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true).
+- For an overview of C++ improvements in Visual Studio, VS Code, and vcpkg during 2023, see [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg)
+- For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md).
+
+## What's new for C++ in Visual Studio version 17.9
+
+Briefly, some of the new features are:
+* `#include` diagnostics, which provides a detailed analysis of your `#include` directives. Activate this feature by right-clicking an `#include` and choosing **#include directives** > **Turn #include directive diagnostics on**. Above each `#include` is the number of times your code references that `#include` file. Click the **reference** link to navigate to where your code uses something from that header file. To view the build time of your `#include` directives, run Build Insights by navigating to **Build** > **Run Build Insights on Solution** > **Build**.
+    :::image type="complex" source="media/include-diagnostics.png" alt-text="Screenshot of #include diagnostics":::
+    Above the include is a **reference** link and a number of the references to this include file (in this case 1). The build time is also listed (in this case less than 1/2 a second).
+    :::image-end:::
+* Memory layout visualization, which shows how memory is arranged for your classes, structs, and unions. Hover over a type and choose the **Memory Layout** link in the **Quick Info** to open a dedicated window displaying the memory layout of the selected type. Hovering over individual data types within this window provides detailed information about their size and offset within the type.
+    :::image type="complex" source="media/memory-layout-window.png" alt-text="Screenshot of the memory layout window":::
+    The memory layout window shows the contents of the Snake class. It shows the memory offsets of the various fields of the class such as Point classes for the location of the head and body, the score, and so on.
+    :::image-end:::
+* You can now specify your own custom CMake executable. This feature is useful if you want to use a specific version of CMake that isn't shipped with Visual Studio. Navigate to **Tools** > **Options** and select **CMake** > **General**. Select **Enable custom CMake executable** and specify the directory path of your CMake executable.
+    :::image type="complex" source="media/custom-cmake-option.png" alt-text="Screenshot of the CMake options dialog":::
+    The CMake options dialog with the "Enable custom CMake executable" option and "CMake Executable Directory" field highlighted.
+    :::image-end:::
+* Improved IntelliSense for Unreal Engine projects.
+* Improved C++23 support:
+    `std::format` and `std::span`
+    `formattable`, `range_format`, `format_kind`, and `set_debug_format()` as part of [P2286R8 Formatting Ranges](https://wg21.link/P2286R8)
+    `<mdspan>` per [P0009R18](https://wg21.link/P0009R18) and subsequent wording changes that were applied to the C++23 Standard.
+    Also, `format()` can format pointers per [P2510R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf).
+
+For a comprehensive summary of new C++ features in Visual Studio 17.9, see [What’s New for C++ Developers in Visual Studio 2022 17.9](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-9/).
+
+For a summary of new features in the Visual Studio 17.9 IDE, see [Visual Studio 2022 version 17.9 Release Notes](/visualstudio/releases/2022/release-notes).
 
 ## What's new for C++ in Visual Studio version 17.8
 
@@ -20,7 +48,7 @@ Briefly, some of the new features are:
 * A feature that lets you visualize the size and alignment of your classes, structs, unions, base types, or enums even before the code is compiled. Hover over the identifier and a Quick Info displays the size and alignment information.
 * A feature that suggests when to mark member functions `const` because they don’t modify the object’s state. Hover over a member function and click the light bulb icon to mark the function as `const`.
 * Visual Studio now prompts you to mark global functions as static via a screwdriver icon that appears by the function name. Click the screwdriver icon to mark the function as static.
-* Unused #include directives are dimmed in the editor. You can hover over a dimmed include and use the light bulb menu to either remove that include or all unused includes. You can also add `#include` directives for entities that are currently indirectly included via other headers. For more information, see [Clean up C/C++ includes in Visual Studio](../ide/include-cleanup-overview.md).
+* Unused #include directives are dimmed in the editor. You can hover over a dimmed include and use the light bulb menu to either remove that include or all unused includes. You can also add `#include` directives for entities that are indirectly included via other headers. For more information, see [Clean up C/C++ includes in Visual Studio](../ide/include-cleanup-overview.md).
 * More Unreal Engine support:
     * Unreal Engine Test Adapter lets you discover, run, manage, and debug your Unreal Engine tests without leaving the Visual Studio IDE.
     * With Unreal Engine Code Snippets, you can find common Unreal Engine constructs as snippets in your member list.
