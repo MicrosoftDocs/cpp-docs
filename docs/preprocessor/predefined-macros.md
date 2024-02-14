@@ -38,7 +38,7 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 - `__FILE__` The name of the current source file. `__FILE__` expands to a character string literal. To ensure that the full path to the file is displayed, use [**`/FC`** (Full Path of Source Code File in Diagnostics)](../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md). This macro is always defined.
 
-- `__LINE__` Defined as the integer line number in the current source file. The value of the `__LINE__` macro can be changed by using a `#line` directive. The integral type of the value of `__LINE__` can vary depending on context. This macro is always defined.
+- `__LINE__` Defined as the integer line number in the current source file. The value of this macro can be changed by using a `#line` directive. The integral type of the value of `__LINE__` can vary depending on context. This macro is always defined.
 
 - `__STDC__` Defined as 1 when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Starting in Visual Studio 2022 version 17.2, it's defined as 1 when compiled as C and if the [`/std:c11`](../build/reference/std-specify-language-standard-version.md) or [`/std:c17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. Otherwise, undefined.
 
@@ -244,8 +244,9 @@ MSVC supports other predefined macros:
 
 - `_MSC_EXTENSIONS` Defined as 1 if the on-by-default [**`/Ze`** (Enable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md) compiler option is set. Otherwise, undefined.
 
-- `_MSC_FULL_VER` Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element. For example, if the version number of the Microsoft C/C++ compiler is 15.00.20706.01, the `_MSC_FULL_VER` macro evaluates to 150020706. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined. `_MSC_FULL_VER` must be used to distinguish between Visual Studio 2019 16.8 and 16.9 because those versions share the same major and minor versions (and `_MSC_VER`). The same is true for Visual Studio 2019 16.10 and 16.11.
-
+- `_MSC_FULL_VER` Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element. For example, if the Microsoft C/C++ compiler version is 19.39.33519, `_MSC_FULL_VER` evaluates to 193933519. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
+  Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for 16.9 is 192829910.
+  Visual Studio 2019 16.10 and 16.11 also share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for 16.11 is 192930129.
 - `_MSC_VER` Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Microsoft C/C++ compiler is 17.00.51106.1, the `_MSC_VER` macro evaluates to 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
 
    See [C++ compiler versioning](../overview/compiler-versions.md) for more information about the history of compiler versioning, and compiler version numbers and the Visual Studio versions they correspond to.
@@ -262,7 +263,8 @@ MSVC supports other predefined macros:
    #endif
    ```
 
-   To test for compiler versions that share major and minor numbers, use the major, minor, and build numbers in `_MSC_FULL_VER` for comparisons. The compilers in Visual Studio 2019 version 16.9 have an `_MSC_FULL_VER` value of 192829500 or greater. The compilers in Visual Studio 2019 version 16.11 have an `_MSC_FULL_VER` value of 192930100 or greater.
+   To test for compiler versions that share major and minor numbers, use the major, minor, and build numbers in `_MSC_FULL_VER` for comparisons. `_MSC_FULL_VER` for Visual Studio 2019 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.9 is 192829910.
+   Visual Studio 2019 16.10 and 16.11 also share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.11 is 192930129.
 
    For more information about compiler versioning, see [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) in the Microsoft C++ Team Blog.
 
@@ -315,9 +317,9 @@ MSVC supports other predefined macros:
 
 No preprocessor macros that identify the ATL or MFC library version are predefined by the compiler. ATL and MFC library headers define these version macros internally. They're undefined in preprocessor directives made before the required header is included.
 
-- `_ATL_VER` Defined in \<atldef.h> as an integer literal that encodes the ATL version number.
+- `_ATL_VER` Defined in `<atldef.h>` as an integer literal that encodes the ATL version number.
 
-- `_MFC_VER` Defined in \<afxver_.h> as an integer literal that encodes the MFC version number.
+- `_MFC_VER` Defined in `<afxver_.h>` as an integer literal that encodes the MFC version number.
 
 ## See also
 
