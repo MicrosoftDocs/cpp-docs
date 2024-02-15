@@ -240,12 +240,14 @@ MSVC supports other predefined macros:
 
 - `_MANAGED` Defined as 1 when the [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
 
-- `_MSC_BUILD` Defined as an integer literal that contains the revision number element of the compiler's version number. The revision number is the fourth element of the period-delimited version number. For example, if the version number of the Microsoft C/C++ compiler is 15.00.20706.01, the `_MSC_BUILD` macro evaluates to 1. This macro is always defined.
+- `_MSC_BUILD` Defined as an integer literal that contains the revision number element of the compiler's version number. The revision number is the last element of the period-delimited version number. For example, if the version number of the Microsoft C/C++ compiler is 15.00.20706.01, the `_MSC_BUILD` macro evaluates to 1. This macro is always defined.
 
 - `_MSC_EXTENSIONS` Defined as 1 if the on-by-default [**`/Ze`** (Enable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md) compiler option is set. Otherwise, undefined.
 
 - `_MSC_FULL_VER` Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element. For example, if the Microsoft C/C++ compiler version is 19.39.33519, `_MSC_FULL_VER` evaluates to 193933519. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.\
+
    Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for 16.9 is 192829910.\
+
    Visual Studio 2019 16.10 and 16.11 also share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for 16.11 is 192930129.
 
 - `_MSC_VER` Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Microsoft C/C++ compiler is 17.00.51106.1, the `_MSC_VER` macro evaluates to 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
@@ -264,8 +266,9 @@ MSVC supports other predefined macros:
    #endif
    ```
 
-   To test for compiler versions that share major and minor numbers, use the major, minor, and build numbers in `_MSC_FULL_VER` for comparisons. `_MSC_FULL_VER` for Visual Studio 2019 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.9 is 192829910.
-   Visual Studio 2019 16.10 and 16.11 also share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.11 is 192930129.
+   Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and consequently have the same value for `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.9 is 192829910.
+
+   Visual Studio 2019 16.10 and 16.11 share the same major and minor versions (and consequently have the same value for `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.11 is 192930129.
 
    For more information about compiler versioning, see [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) in the Microsoft C++ Team Blog.
 
