@@ -34,8 +34,6 @@ The macros reflect these values like this:
 
 Note: Visual Studio 2019 16.8 and 16.9 share the same major and minor versions, and so have the same value for `_MSC_VER`. As do Visual Studio 2019 16.10 and 16.11. To distinguish them, use `_MSC_FULL_VER` as described in [Service releases starting with Visual Studio 2017](#service-releases-starting-with-visual-studio-2017).
 
-How these fields change to distinguish between different versions of the compiler is described in the following sections.
-
 ## A brief history of Visual C++ compiler versioning
 
 ### Visual Studio 6.0 through Visual Studio 2015 (14.0)
@@ -52,7 +50,7 @@ How these fields change to distinguish between different versions of the compile
 
 ### Service releases starting with Visual Studio 2017
 
-- Servicing releases can be distinguished by `_MSC_FULL_VER`. The build field (the BBBBB in the MMNNBBBBB version number) typically increases by 1.
+Servicing releases can be distinguished by `_MSC_FULL_VER`. The build field (the BBBBB in the MMNNBBBBB version number) typically increases by 1.
 
 For example, two cases where `_MSC_FULL_VER` is useful is to distinguish Visual Studio 2019 16.8 from 16.9, and Visual Studio 2019 16.10 from 16.11. That's because those versions share the same major and minor versions, and so have the same value for `_MSC_VER`.
 
