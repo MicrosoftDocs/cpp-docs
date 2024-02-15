@@ -10,9 +10,11 @@ no-loc: [_ATL_VER, __ATOM__, __AVX__, __AVX2__, __AVX512BW__, __AVX512CD__, __AV
 ---
 # Predefined macros
 
-The Microsoft C/C++ compiler (MSVC) predefines certain preprocessor macros, depending on the language (C or C++), the compilation target, and the chosen compiler options.
+The Microsoft C/C++ compiler (MSVC) predefines certain preprocessor macros depending on the language (C or C++), the compilation target, and the chosen compiler options.
 
-MSVC supports the predefined preprocessor macros required by the ANSI/ISO C99, C11, and C17 standards, and the ISO C++14, C++17, and C++20 standards. The implementation also supports several more Microsoft-specific preprocessor macros. Some macros are defined only for specific build environments or compiler options. Except where noted, the macros are defined throughout a translation unit as if they were specified as **`/D`** compiler option arguments. When defined, the macros are expanded to the specified values by the preprocessor before compilation. The predefined macros take no arguments and can't be redefined.
+MSVC supports the predefined preprocessor macros required by the ANSI/ISO C99, C11, and C17 standards, and the ISO C++14, C++17, and C++20 standards. The implementation also supports several more Microsoft-specific preprocessor macros.
+
+Some macros are defined only for specific build environments or compiler options. Except where noted, the macros are defined throughout a translation unit as if they were specified as **`/D`** compiler option arguments. When defined, the preprocessor expands macros their specified values before compilation. The predefined macros take no arguments and can't be redefined.
 
 ## Standard predefined identifier
 
@@ -36,9 +38,9 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 - `__FILE__` The name of the current source file. `__FILE__` expands to a character string literal. To ensure that the full path to the file is displayed, use [**`/FC`** (Full Path of Source Code File in Diagnostics)](../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md). This macro is always defined.
 
-- `__LINE__` Defined as the integer line number in the current source file. The value of the `__LINE__` macro can be changed by using a `#line` directive. The integral type of the value of `__LINE__` can vary depending on context. This macro is always defined.
+- `__LINE__` Defined as the integer line number in the current source file. The value of this macro can be changed by using a `#line` directive. The integral type of the value of `__LINE__` can vary depending on context. This macro is always defined.
 
-- `__STDC__` Defined as 1 when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Starting in Visual Studio 2022 version 17.2, it's also defined as 1 when compiled as C and if the [`/std:c11`](../build/reference/std-specify-language-standard-version.md) or [`/std:c17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. Otherwise, undefined.
+- `__STDC__` Defined as 1 when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Starting in Visual Studio 2022 version 17.2, it's defined as 1 when compiled as C and if the [`/std:c11`](../build/reference/std-specify-language-standard-version.md) or [`/std:c17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. Otherwise, undefined.
 
 - `__STDC_HOSTED__` Defined as 1 if the implementation is a *hosted implementation*, one that supports the entire required standard library. Otherwise, defined as 0.
 
@@ -60,7 +62,7 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 ## Microsoft-specific predefined macros
 
-MSVC supports these additional predefined macros.
+MSVC supports other predefined macros:
 
 - `__ATOM__` Defined as 1 when the [`/favor:ATOM`](../build/reference/favor-optimize-for-architecture-specifics.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
@@ -238,50 +240,17 @@ MSVC supports these additional predefined macros.
 
 - `_MANAGED` Defined as 1 when the [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
 
-- `_MSC_BUILD` Defined as an integer literal that contains the revision number element of the compiler's version number. The revision number is the fourth element of the period-delimited version number. For example, if the version number of the Microsoft C/C++ compiler is 15.00.20706.01, the `_MSC_BUILD` macro evaluates to 1. This macro is always defined.
+- `_MSC_BUILD` Defined as an integer literal that contains the revision number element of the compiler's version number. The revision number is the last element of the period-delimited version number. For example, if the version number of the Microsoft C/C++ compiler is 15.00.20706.01, the `_MSC_BUILD` macro is 1. This macro is always defined.
 
 - `_MSC_EXTENSIONS` Defined as 1 if the on-by-default [**`/Ze`** (Enable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md) compiler option is set. Otherwise, undefined.
 
-- `_MSC_FULL_VER` Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element. For example, if the version number of the Microsoft C/C++ compiler is 15.00.20706.01, the `_MSC_FULL_VER` macro evaluates to 150020706. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
+- `_MSC_FULL_VER` Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element.
 
-- `_MSC_VER` Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Microsoft C/C++ compiler is 17.00.51106.1, the `_MSC_VER` macro evaluates to 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
+   For example, if the Microsoft C/C++ compiler version is 19.39.33519, `_MSC_FULL_VER` is 193933519. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined. For more information about compiler versioning, see [C++ compiler versioning](../overview/compiler-versions.md) and specifically [Service releases starting with Visual Studio 2017](../overview/compiler-versions.md#service-releases-starting-with-visual-studio-2017) for more information about Visual Studio 2019 16.8, 16.9, 16.10 and 16.11, which require `_MSC_FULL_VER` to tell them apart.
 
-   | Visual Studio version | `_MSC_VER` |
-   |--|--|
-   | Visual Studio 6.0 | 1200 |
-   | Visual Studio .NET 2002 (7.0) | 1300 |
-   | Visual Studio .NET 2003 (7.1) | 1310 |
-   | Visual Studio 2005 (8.0) | 1400 |
-   | Visual Studio 2008 (9.0) | 1500 |
-   | Visual Studio 2010 (10.0) | 1600 |
-   | Visual Studio 2012 (11.0) | 1700 |
-   | Visual Studio 2013 (12.0) | 1800 |
-   | Visual Studio 2015 (14.0) | 1900 |
-   | Visual Studio 2017 RTW (15.0) | 1910 |
-   | Visual Studio 2017 version 15.3 | 1911 |
-   | Visual Studio 2017 version 15.5 | 1912 |
-   | Visual Studio 2017 version 15.6 | 1913 |
-   | Visual Studio 2017 version 15.7 | 1914 |
-   | Visual Studio 2017 version 15.8 | 1915 |
-   | Visual Studio 2017 version 15.9 | 1916 |
-   | Visual Studio 2019 RTW (16.0) | 1920 |
-   | Visual Studio 2019 version 16.1 | 1921 |
-   | Visual Studio 2019 version 16.2 | 1922 |
-   | Visual Studio 2019 version 16.3 | 1923 |
-   | Visual Studio 2019 version 16.4 | 1924 |
-   | Visual Studio 2019 version 16.5 | 1925 |
-   | Visual Studio 2019 version 16.6 | 1926 |
-   | Visual Studio 2019 version 16.7 | 1927 |
-   | Visual Studio 2019 version 16.8, 16.9 | 1928 |
-   | Visual Studio 2019 version 16.10, 16.11 | 1929 |
-   | Visual Studio 2022 RTW (17.0) | 1930 |
-   | Visual Studio 2022 version 17.1 | 1931 |
-   | Visual Studio 2022 version 17.2 | 1932 |
-   | Visual Studio 2022 version 17.3 | 1933 |
-   | Visual Studio 2022 version 17.4 | 1934 |
-   | Visual Studio 2022 version 17.5 | 1935 |
+- `_MSC_VER` Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Microsoft C/C++ compiler is 17.00.51106.1, the value of `_MSC_VER` is 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
 
-   To test for compiler releases or updates in a given version of Visual Studio or after, use the `>=` operator. You can use it in a conditional directive to compare `_MSC_VER` against that known version. If you have several mutually exclusive versions to compare, order your comparisons in descending order of version number. For example, this code checks for compilers released in Visual Studio 2017 and later. Next, it checks for compilers released in or after Visual Studio 2015. Then it checks for all compilers released before Visual Studio 2015:
+   To test for compiler releases or updates in a given version of Visual Studio or later, use the `>=` operator. You can use it in a conditional directive to compare `_MSC_VER` against that known version. If you have several mutually exclusive versions to compare, order your comparisons in descending order of version number. For example, this code checks for compilers released in Visual Studio 2017 and later. Next, it checks for compilers released in or after Visual Studio 2015. Then it checks for all compilers released before Visual Studio 2015:
 
    ```cpp
    #if _MSC_VER >= 1910
@@ -293,9 +262,9 @@ MSVC supports these additional predefined macros.
    #endif
    ```
 
-   To test for compiler versions that share major and minor numbers, use the major, minor, and build numbers in `_MSC_FULL_VER` for comparisons. The compilers in Visual Studio 2019 version 16.9 have an `_MSC_FULL_VER` value of 192829500 or greater. The compilers in Visual Studio 2019 version 16.11 have an `_MSC_FULL_VER` value of 192930100 or greater.
+   For more information about Visual Studio 2019 16.8 and 16.9, and 16.10 and 16.11, which share the same major and minor versions (and so have the same value for `_MSC_VER`), see [Service releases starting with Visual Studio 2017](../overview/compiler-versions.md#service-releases-starting-with-visual-studio-2017).
 
-   For more information, see [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) in the Microsoft C++ Team Blog.
+   For more information about the history of compiler versioning, and compiler version numbers and the Visual Studio versions they correspond to, see [C++ compiler versioning](../overview/compiler-versions.md). Also, [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) on the Microsoft C++ team blog.
 
 - `_MSVC_LANG` Defined as an integer literal that specifies the C++ language standard targeted by the compiler. It's set only in code compiled as C++. The macro is the integer literal value `201402L` by default, or when the [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `201703L` if the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `202002L` if the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. It's set to a higher, unspecified value when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) option is specified. Otherwise, the macro is undefined. The `_MSVC_LANG` macro and [`/std` (Specify language standard version)](../build/reference/std-specify-language-standard-version.md) compiler options are available beginning in Visual Studio 2015 Update 3.
 
@@ -346,9 +315,9 @@ MSVC supports these additional predefined macros.
 
 No preprocessor macros that identify the ATL or MFC library version are predefined by the compiler. ATL and MFC library headers define these version macros internally. They're undefined in preprocessor directives made before the required header is included.
 
-- `_ATL_VER` Defined in \<atldef.h> as an integer literal that encodes the ATL version number.
+- `_ATL_VER` Defined in `<atldef.h>` as an integer literal that encodes the ATL version number.
 
-- `_MFC_VER` Defined in \<afxver_.h> as an integer literal that encodes the MFC version number.
+- `_MFC_VER` Defined in `<afxver_.h>` as an integer literal that encodes the MFC version number.
 
 ## See also
 
