@@ -10,7 +10,7 @@ no-loc: [_ATL_VER, __ATOM__, __AVX__, __AVX2__, __AVX512BW__, __AVX512CD__, __AV
 ---
 # Predefined macros
 
-The Microsoft C/C++ compiler (MSVC) predefines certain preprocessor macros, depending on the language (C or C++), the compilation target, and the chosen compiler options.
+The Microsoft C/C++ compiler (MSVC) predefines certain preprocessor macros depending on the language (C or C++), the compilation target, and the chosen compiler options.
 
 MSVC supports the predefined preprocessor macros required by the ANSI/ISO C99, C11, and C17 standards, and the ISO C++14, C++17, and C++20 standards. The implementation also supports several more Microsoft-specific preprocessor macros.
 
@@ -244,15 +244,11 @@ MSVC supports other predefined macros:
 
 - `_MSC_EXTENSIONS` Defined as 1 if the on-by-default [**`/Ze`** (Enable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md) compiler option is set. Otherwise, undefined.
 
-- `_MSC_FULL_VER` Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element. For example, if the Microsoft C/C++ compiler version is 19.39.33519, `_MSC_FULL_VER` evaluates to 193933519. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
+- `_MSC_FULL_VER` Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element.
 
-   Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for 16.9 is 192829910.
-
-   Visual Studio 2019 16.10 and 16.11 also share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for 16.11 is 192930129.
+   For example, if the Microsoft C/C++ compiler version is 19.39.33519, `_MSC_FULL_VER` evaluates to 193933519. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined. See [C++ compiler versioning](../overview/compiler-versions.md) for more information about compiler versioning, and specifically [Service releases starting with Visual Studio 2017](../overview/compiler-versions.md#service-releases-starting-with-visual-studio-2017) for more information about Visual Studio 2019 16.8, 16.9, 16.10 and 16.11 which require `_MSC_FULL_VER` to tell them apart.
 
 - `_MSC_VER` Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Microsoft C/C++ compiler is 17.00.51106.1, the `_MSC_VER` macro evaluates to 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
-
-   See [C++ compiler versioning](../overview/compiler-versions.md) for more information about the history of compiler versioning, and compiler version numbers and the Visual Studio versions they correspond to.
 
    To test for compiler releases or updates in a given version of Visual Studio or after, use the `>=` operator. You can use it in a conditional directive to compare `_MSC_VER` against that known version. If you have several mutually exclusive versions to compare, order your comparisons in descending order of version number. For example, this code checks for compilers released in Visual Studio 2017 and later. Next, it checks for compilers released in or after Visual Studio 2015. Then it checks for all compilers released before Visual Studio 2015:
 
@@ -266,11 +262,9 @@ MSVC supports other predefined macros:
    #endif
    ```
 
-   Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and consequently have the same value for `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.9 is 192829910.
+   For more information about Visual Studio 2019 16.8 and 16.9, and 16.10 and 16.11, which share the same major and minor versions (and consequently have the same value for `_MSC_VER`), see [Service releases starting with Visual Studio 2017](../overview/compiler-versions.md#service-releases-starting-with-visual-studio-2017) for more information.
 
-   Visual Studio 2019 16.10 and 16.11 share the same major and minor versions (and consequently have the same value for `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.11 is 192930129.
-
-   For more information about compiler versioning, see [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) in the Microsoft C++ Team Blog.
+   For more information about the history of compiler versioning, and compiler version numbers and the Visual Studio versions they correspond to, see [C++ compiler versioning](../overview/compiler-versions.md). Also, [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) on the Microsoft C++ team blog.
 
 - `_MSVC_LANG` Defined as an integer literal that specifies the C++ language standard targeted by the compiler. It's set only in code compiled as C++. The macro is the integer literal value `201402L` by default, or when the [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `201703L` if the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `202002L` if the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. It's set to a higher, unspecified value when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) option is specified. Otherwise, the macro is undefined. The `_MSVC_LANG` macro and [`/std` (Specify language standard version)](../build/reference/std-specify-language-standard-version.md) compiler options are available beginning in Visual Studio 2015 Update 3.
 
