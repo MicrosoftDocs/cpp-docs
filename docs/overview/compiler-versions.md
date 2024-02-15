@@ -8,22 +8,26 @@ helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
 ---
 # Microsoft Visual C++ compiler versioning
 
-The Microsoft Visual C++ compiler version consists of four fields. They're reflected in various Microsoft-specific compiler macros that can be used to distinguish which version of the compiler is compiling your code.
+The Microsoft Visual C++ compiler version consists of four fields:
 
-The version number consists of four fields:
-
-M - major version (two digits)\
-N - minor version (two digits)\
-B - build version (five digits)\
-R - revision version
-
+    M - major version (two digits)\
+    N - minor version (two digits)\
+    B - build version (five digits)\
+    R - revision version
+    
 Microsoft-specific compiler macros encode these fields as follows:
 
-`_MSC_VER = MMNN`
-`_MSC_FULL_VER = MMNNBBBBB`
+`_MSC_VER = MMNN`\
+`_MSC_FULL_VER = MMNNBBBBB`\
 `_MSC_BUILD = R`
 
-For example, for Visual Studio 2022 version 17.9.0, the compiler version is 19.39.33519. The major version is 19, the minor version is 39, the build version is 33519, and the revision version is 0. In other words, `_MSC_VER` is 1939, `_MSC_FULL_VER` is 193933519, and `_MSC_BUILD` (the revision) is 0.
+For example, the compiler version for Visual Studio 2022 version 17.9.0 is 19.39.33519. In this case:
+- The major version is 19
+- The minor version is 39
+- The build version is 33519
+- The revision version is 0
+
+The macros reflect these values as `_MSC_VER = 1939`, `_MSC_FULL_VER = 193933519` and `_MSC_BUILD` (the revision) is 0.
 
 Note: Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER` instead as described in [Service releases starting with Visual Studio 2017](#service-releases-starting-with-visual-studio-2017). The same is true for distinguishing Visual Studio 2019 16.10 from 16.11.
 
@@ -47,7 +51,7 @@ Note: Visual Studio .NET 2003 was considered a minor release.
 
 - Servicing releases can be distinguished using `_MSC_FULL_VER`. The build field (the BBBBB in the MMNNBBBBB version number) typically increases by 1.
 
-For example, two cases where `_MSC_FULL_VER` is useful is to distinguish between Visual Studio 2019 16.8 and 16.9, as well as Visual Studio 2019 16.10 and 16.11. The reason is that those versions share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`.
+For example, two cases where `_MSC_FULL_VER` is useful is to distinguish between Visual Studio 2019 16.8 and 16.9, as well as Visual Studio 2019 16.10 and 16.11. That's because those versions share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`.
 
 ## Version macros
 
@@ -60,12 +64,12 @@ R - revision version
 
 [`_MSC_VER`](../preprocessor/predefined-macros.md) distinguishes between different versions of the compiler at a high level. Use it to distinguish between major and minor releases. `_MSC_VER = MMNN`.
 
-[`_MSC_FULL_VER`](../preprocessor/predefined-macros.md) represents the major, minor, and build version of the compiler. `_MSC_FULL_VER = MMNNBBBBB`. Use it used to distinguish between different versions of the compiler, including servicing releases. Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The same is true for Visual Studio 2019 16.10 and 16.11.
+[`_MSC_FULL_VER`](../preprocessor/predefined-macros.md) represents the major, minor, and build version of the compiler. That is, `_MSC_FULL_VER = MMNNBBBBB`. Use it to distinguish between different versions of the compiler, including servicing releases. Because Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and `_MSC_VER`), distinguish them using `_MSC_FULL_VER`. The same is true for Visual Studio 2019 16.10 and 16.11.
 
-[`_MSC_BUILD`](../preprocessor/predefined-macros.md) represents the build version of the compiler. `_MSC_BUILD` = R. Use it to distinguish between servicing releases.
+[`_MSC_BUILD`](../preprocessor/predefined-macros.md) represents the build version of the compiler. `_MSC_BUILD = R`. Use it to distinguish between servicing releases.
 
-For example, the major version changed between Visual Studio 2013 and Visual Studio 2015, reflected by a change in `_MSC_VER` from 1800 to 1900.\
-An example of a minor change is from Visual Studio 2022 17.1 to Visual Studio 2022 17.2, when `_MSC_VER` changed from 1931 to 1932.
+When the major version changed between Visual Studio 2013 and Visual Studio 2015, `_MSC_VER` reflected the change by going from 1800 to 1900.\
+An example of a minor change is from Visual Studio 2022 17.1 to Visual Studio 2022 17.2. In that case, `_MSC_VER` changed from 1931 to 1932.
 
 The following table lists the Visual C++ compiler `_MSC_VER` for each Visual Studio release:
 
