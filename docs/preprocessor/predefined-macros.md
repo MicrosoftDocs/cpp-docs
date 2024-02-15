@@ -246,7 +246,7 @@ MSVC supports other predefined macros:
 
 - `_MSC_FULL_VER` Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element.
 
-   For example, if the Microsoft C/C++ compiler version is 19.39.33519, `_MSC_FULL_VER` evaluates to 193933519. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined. See [C++ compiler versioning](../overview/compiler-versions.md) for more information about compiler versioning, and specifically [Service releases starting with Visual Studio 2017](../overview/compiler-versions.md#service-releases-starting-with-visual-studio-2017) for more information about Visual Studio 2019 16.8, 16.9, 16.10 and 16.11 which require `_MSC_FULL_VER` to tell them apart.
+   For example, if the Microsoft C/C++ compiler version is 19.39.33519, `_MSC_FULL_VER` evaluates to 193933519. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined. For more information about compiler versioning, see [C++ compiler versioning](../overview/compiler-versions.md) and specifically [Service releases starting with Visual Studio 2017](../overview/compiler-versions.md#service-releases-starting-with-visual-studio-2017) for more information about Visual Studio 2019 16.8, 16.9, 16.10 and 16.11, which require `_MSC_FULL_VER` to tell them apart.
 
 - `_MSC_VER` Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Microsoft C/C++ compiler is 17.00.51106.1, the `_MSC_VER` macro evaluates to 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
 
@@ -262,7 +262,7 @@ MSVC supports other predefined macros:
    #endif
    ```
 
-   For more information about Visual Studio 2019 16.8 and 16.9, and 16.10 and 16.11, which share the same major and minor versions (and consequently have the same value for `_MSC_VER`), see [Service releases starting with Visual Studio 2017](../overview/compiler-versions.md#service-releases-starting-with-visual-studio-2017) for more information.
+   For more information about Visual Studio 2019 16.8 and 16.9, and 16.10 and 16.11, which share the same major and minor versions (and so have the same value for `_MSC_VER`), see [Service releases starting with Visual Studio 2017](../overview/compiler-versions.md#service-releases-starting-with-visual-studio-2017).
 
    For more information about the history of compiler versioning, and compiler version numbers and the Visual Studio versions they correspond to, see [C++ compiler versioning](../overview/compiler-versions.md). Also, [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) on the Microsoft C++ team blog.
 
