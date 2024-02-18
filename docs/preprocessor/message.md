@@ -42,7 +42,7 @@ The following code fragment uses the **`message`** pragma to display messages du
 #define STRING2(x) #x
 #define STRING(x) STRING2(x)
 
-#pragma message (__FILE__ "[" STRING(__LINE__) "]: test")
+#pragma message (__FILE__ "(" STRING(__LINE__) "): test")
 
 #pragma message("")
 ```
