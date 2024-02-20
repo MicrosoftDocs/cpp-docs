@@ -23,23 +23,24 @@ For a broader summary of changes made to the Standard Template Library, see [STL
 
 ### Application of `_Alignas` on a structured type in C
 
-In versions of Visual C++ before Visual Studio 2022 version 17.9, when the `_Alignas` specifier appeared adjacent to a structured type in a declaration, it wasn't applied correctly according to the ISO-C Standard. For example:
+In versions of Visual C++ before Visual Studio 2022 version 17.9, when `_Alignas` appeared next to a structure type in a declaration, it wasn't applied correctly according to the ISO-C Standard. For example:
 
 ```c
 // compile with /std:c17
 #include <stddef.h>
-struct Outer {
+struct Outer
+{
     _Alignas(32) struct Inner { int i; } member1;
     struct Inner member2;
 };
 static_assert(offsetof(struct Outer, member2)==4, "incorrect alignment");
 ```
 
-According to the ISO-C Standard, this code should compile without the `static_assert` emitting a diagnostic. The `_Alignas` directive applies only to the member variable `member1`. It must not change the alignment of `struct Inner`. However, before release 17.9.1 of Visual Studio, the diagnostic "incorrect alignment" was  emitted. The compiler aligned `member2` to a 32-byte offset within `struct Outer`.
+According to the ISO-C Standard, this code should compile without the `static_assert` emitting a diagnostic. The `_Alignas` directive applies only to the member variable `member1`. It must not change the alignment of `struct Inner`. However, before release 17.9.1 of Visual Studio, the diagnostic "incorrect alignment" was  emitted. The compiler aligned `member2` to a 32 byte offset within `struct Outer`.
 
-Fixing this is a binary breaking change, so when this change takes effect a warning is emitted. Warning C5274, "`_Alignas` no longer applies to the type 'Inner' (only applies to declared data objects)" is now emitted at warning level 1 for the preceding code.
+Fixing this is a binary breaking change, so when this change in behavior is applied a warning is emitted. For the preceding code, Warning C5274, "`_Alignas` no longer applies to the type 'Inner' (only applies to declared data objects)" is now emitted at warning level 1.
 
-In previous versions of Visual Studio, the `_Alignas` specifier was ignored when it appeared adjacent to an anonymous type declaration. For example:
+In previous versions of Visual Studio, `_Alignas` was ignored when it appeared next to an anonymous type declaration. For example:
 
 ```c
 // compile with /std:c17
@@ -333,7 +334,7 @@ enum Enum {
 static_assert(B == 1); // previously failed, now succeeds under /Zc:enumTypes
 ```
 
-In this example the enumerator `A` should have type **`char`** prior to the closing brace of the enumeration, so `B` should be initialized using `sizeof(char)`. Before the **`/Zc:enumTypes`** fix, `A` had enumeration type `Enum` with a deduced underlying type **`int`**, and `B` was initialized using `sizeof(Enum)`, or 4.
+In this example the enumerator `A` should have type **`char`** before the closing brace of the enumeration, so `B` should be initialized using `sizeof(char)`. Before the **`/Zc:enumTypes`** fix, `A` had enumeration type `Enum` with a deduced underlying type **`int`**, and `B` was initialized using `sizeof(Enum)`, or 4.
 
 ## <a name="improvements_173"></a> Conformance improvements in Visual Studio 2022 version 17.3
 
