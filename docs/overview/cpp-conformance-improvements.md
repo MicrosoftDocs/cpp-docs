@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 2/6/2024
+ms.date: 02/20/2024
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -20,6 +20,46 @@ For changes in older versions, see [Visual C++ What's New 2003 through 2015](../
 Visual Studio 2022 version 17.9 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.9](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-179).
+
+### Application of `_Alignas` on a structured type in C
+
+In versions of Visual C++ before Visual Studio 2022 version 17.9, when the `_Alignas` specifier appeared adjacent to a structured type in a declaration, it wasn't applied correctly according to the ISO-C Standard. For example:
+
+```c
+// compile with /std:c17
+#include <stddef.h>
+struct Outer {
+    _Alignas(32) struct Inner { int i; } member1;
+    struct Inner member2;
+};
+static_assert(offsetof(struct Outer, member2)==4, "incorrect alignment");
+```
+
+According to the ISO-C Standard, this code should compile without the `static_assert` emitting a diagnostic. The `_Alignas` directive applies only to the member variable `member1`. It must not change the alignment of `struct Inner`. However, before release 17.9.1 of Visual Studio, the diagnostic "incorrect alignment" was  emitted. The compiler aligned `member2` to a 32-byte offset within `struct Outer`.
+
+Fixing this is a binary breaking change, so when this change takes effect a warning is emitted. Warning C5274, "`_Alignas` no longer applies to the type 'Inner' (only applies to declared data objects)" is now emitted at warning level 1 for the preceding code.
+
+In previous versions of Visual Studio, the `_Alignas` specifier was ignored when it appeared adjacent to an anonymous type declaration. For example:
+
+```c
+// compile with /std:c17
+#include <stddef.h>
+struct S {
+    _Alignas(32) struct { int anon_member; };
+    int k;
+};
+static_assert(offsetof(struct S, k)==4, "incorrect offsetof");
+static_assert(sizeof(struct S)==32, "incorrect size");
+```
+
+Previously, both `static_assert` statements failed when compiling this code. The code now compiles, but with the following level 1 warnings:
+
+```c
+warning C5274: behavior change: _Alignas no longer applies to the type '<unnamed-tag>' (only applies to declared data objects)
+warning C5273: behavior change: _Alignas on anonymous type no longer ignored (promoted members will align)
+```
+
+If you want the earlier behavior, replace `_Alignas(N)` with `__declspec(align(N))`. Unlike `_Alignas`, `declspec(align)` can be applied to a type.
 
 ### `__VA_OPT__` is enabled as an extension under `/Zc:preprocessor`
 
