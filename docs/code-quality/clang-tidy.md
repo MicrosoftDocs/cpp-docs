@@ -31,13 +31,50 @@ For more information, see [How to: Set Code Analysis Properties for C/C++ Projec
 
 ## CMake
 
-In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`*. Once opened, select "Edit JSON" in the top right-hand corner of the CMake Project Settings Editor. The following keys are recognized:
+In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`* or *`CMakePresets.json`*. 
+
+The following keys are recognized for clang-tidy:
 
 - `enableMicrosoftCodeAnalysis`: Enables Microsoft Code Analysis
 - `enableClangTidyCodeAnalysis`: Enables Clang-Tidy analysis
 - `clangTidyChecks`: Clang-Tidy configuration, specified as a comma-separated list, that is, checks to be enabled or disabled
 
 If neither of the "enable" options are specified, Visual Studio will select the analysis tool matching the Platform Toolset used.
+
+### CMake Settings
+To edit your clang-tidy settings, open your CMake Settings, select "Edit JSON" in the top right-hand corner of the CMake Project Settings Editor. You can use the keys above to fill out your clang-tidy specifications in the CMake Settings json file. 
+An example CMake settings implementation would look like this:
+```
+{
+  "configurations": [
+  {
+    "name": "x64-debug",
+    "generator": "Ninja",
+    ....
+   "clangTidyChecks": "",
+   "enableMicrosoftCodeAnalysis": true,
+   "enableClangTidyCodeAnalysis": true
+  }
+  ]
+}
+```
+
+### CMake Presets
+The same keys can be used in your CMake presets via the `vendor` object.
+An example CMake preset implementation would look like this:
+```"configurePreset": [
+{ "name": "base",
+  ....
+  "vendor": {
+    "microsoft.com/VisualStudioSettings/CMake/1.0": {
+      "clangTidyChecks": "",
+      "enableMicrosoftCodeAnalysis": true,
+      "enableClangTidyCodeAnalysis": true
+      }
+    }
+}
+]
+```
 
 ## Warning display
 
