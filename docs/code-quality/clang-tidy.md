@@ -37,13 +37,13 @@ The following keys are recognized for clang-tidy:
 
 - `enableMicrosoftCodeAnalysis`: Enables Microsoft Code Analysis
 - `enableClangTidyCodeAnalysis`: Enables Clang-Tidy analysis
-- `clangTidyChecks`: Clang-Tidy configuration, specified as a comma-separated list, that is, checks to be enabled or disabled
+- `clangTidyChecks`: Clang-Tidy configuration. A comma-separated list, that is, checks to be enabled or disabled (e.g. "cert-oop58-cpp, -cppcoreguidelines-no-malloc, google-runtime-int" enables `cert-oop58-cpp` and `google-runtime-int` checks and disables via the `-` operator the `cppcoreguidelines-no-malloc` check)
 
 If neither of the "enable" options are specified, Visual Studio will select the analysis tool matching the Platform Toolset used.
 
 ### CMake Settings
-To edit your clang-tidy settings, open your CMake Settings, select "Edit JSON" in the top right-hand corner of the CMake Project Settings Editor. You can use the keys above to fill out your clang-tidy specifications in the CMake Settings json file. 
-An example CMake settings implementation would look like this:
+To edit your clang-tidy settings, open your CMake Settings, select **Edit JSON** in the CMake Project Settings Editor. You can use the keys above to fill out your clang-tidy specifications in the CMake Settings json file. 
+An example CMake settings implementation looks like this:
 ```
 {
   "configurations": [
@@ -51,7 +51,7 @@ An example CMake settings implementation would look like this:
     "name": "x64-debug",
     "generator": "Ninja",
     ....
-   "clangTidyChecks": "",
+   "clangTidyChecks": "llvm-include-order, -modernize-use-override",
    "enableMicrosoftCodeAnalysis": true,
    "enableClangTidyCodeAnalysis": true
   }
@@ -61,13 +61,13 @@ An example CMake settings implementation would look like this:
 
 ### CMake Presets
 The same keys can be used in your CMake presets via the `vendor` object.
-An example CMake preset implementation would look like this:
+An example CMake preset implementation looks like this:
 ```"configurePreset": [
 { "name": "base",
   ....
   "vendor": {
     "microsoft.com/VisualStudioSettings/CMake/1.0": {
-      "clangTidyChecks": "",
+      "clangTidyChecks": "llvm-include-order, -modernize-use-override",
       "enableMicrosoftCodeAnalysis": true,
       "enableClangTidyCodeAnalysis": true
       }
