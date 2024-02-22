@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 02/07/2024
+ms.date: 02/21/2024
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 ms.custom: intro-whats-new
@@ -37,7 +37,9 @@ Briefly, some of the new features are:
     `<mdspan>` per [P0009R18](https://wg21.link/P0009R18) and subsequent wording changes that were applied to the C++23 Standard.
     Also, `format()` can format pointers per [P2510R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf).
 
-For a comprehensive summary of new C++ features in Visual Studio 17.9, see [What’s New for C++ Developers in Visual Studio 2022 17.9](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-9/).
+For a comprehensive summary of new C++ features in Visual Studio 17.9, see [MSVC Backend Updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/).
+
+For a summary of C++ compiler backend improvements since Visual Studio 17.3 until now, see [What's new in the Visual C++ compiler backend](https://devblogs.microsoft.com/cppblog/whats-new-in-the-visual-cpp-compiler-backend/).
 
 For a summary of new features in the Visual Studio 17.9 IDE, see [Visual Studio 2022 version 17.9 Release Notes](/visualstudio/releases/2022/release-notes).
 
