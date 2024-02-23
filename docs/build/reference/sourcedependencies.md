@@ -1,7 +1,7 @@
 ---
 title: "/sourceDependencies (Report source-level dependencies)"
 description: "Describes the /sourceDependencies compiler option in Microsoft C++."
-ms.date: 05/19/2022
+ms.date: 02/23/2024
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies"]
@@ -65,7 +65,7 @@ where `...` represents your other compiler options. This command line produces a
 
 ```JSON
 {
-    "Version": "1.1",
+    "Version": "1.2",
     "Data": {
         "Source": "F:\\Sample\\myproject\\modulee.ixx",
         "ProvidedModule": "ModuleE",
@@ -88,10 +88,6 @@ where `...` represents your other compiler options. This command line produces a
             {
                 "Header": "f:\\visual studio 16 main\\vc\\tools\\msvc\\14.29.30030\\include\\iostream",
                 "BMI": "F:\\Sample\\Outputs\\Intermediate\\HeaderUnits\\x64\\Debug\\iostream_W4L4JYGFJ3GL8OG9.ifc"
-            },
-            {
-                "Header": "f:\\visual studio 16 main\\vc\\tools\\msvc\\14.29.30030\\include\\yvals_core.h",
-                "BMI": "F:\\Sample\\Outputs\\Intermediate\\HeaderUnits\\x64\\Debug\\yvals_core.h.ifc"
             }
         ]
     }
