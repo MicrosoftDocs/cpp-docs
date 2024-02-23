@@ -1,7 +1,7 @@
 ---
 title: "Assignment operators"
 description: "The C++ standard language assignment operators syntax and use."
-ms.date: 07/24/2020
+ms.date: 02/23/2024
 f1_keywords: ["=", "*=", "/=", "%=", "+=", "-=", "<<=", ">>=", "&=", "^=", "|="]
 helpviewer_keywords: ["operators [C++], assignment", "assignment operators [C++], C++", "&= operator", "^= operator", "+= operator", ">>= operator", "|= operator", "operator>>=", "*= operator", "%= operator", "^= operator", "operator >>=", "= operator", "-= operator", "/= operator", "<<= operator"]
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
