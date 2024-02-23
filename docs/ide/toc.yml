@@ -16,7 +16,7 @@ items:
       href: ../ide/include-cleanup-config.md
     - name: Include Cleanup messages
       href: ../ide/include-cleanup-messages.md
-    - name: Include diagnostics
+    - name: Include Diagnostics
       href: include-diagnostics.md
     - name: Set your C++ coding preferences
       href: ../ide/how-to-set-preferences.md
