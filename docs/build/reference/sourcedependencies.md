@@ -1,7 +1,7 @@
 ---
 title: "/sourceDependencies (Report source-level dependencies)"
 description: "Describes the /sourceDependencies compiler option in Microsoft C++."
-ms.date: 05/19/2022
+ms.date: 02/23/2024
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies"]
