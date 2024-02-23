@@ -56,9 +56,6 @@ The first two error conditions invoke the invalid parameter handler, as describe
 
 The **`_gmtime32_s`** function breaks down the *`sourceTime`* value and stores it in a structure of type `tm`, defined in `Time.h`. The address of the structure is passed in *`tmDest`*. The value of *`sourceTime`* is often obtained from a call to the [`time`](time-time32-time64.md) function.
 
-> [!NOTE]
-> The target environment should try to determine whether daylight savings time is in effect. The C run-time library assumes the United States rules for implementing the calculation of daylight saving time .
-
 Each of the structure fields is of type **`int`**, as shown in the following table.
 
 | Field | Description |
