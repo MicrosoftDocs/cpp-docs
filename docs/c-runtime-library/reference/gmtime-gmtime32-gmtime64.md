@@ -54,9 +54,6 @@ These functions validate their parameters. If *`sourceTime`* is a `NULL` pointer
 
 The **`_gmtime32`** function breaks down the *`sourceTime`* value and stores it in a statically allocated structure of type `tm`, defined in `TIME.H`. The value of *`sourceTime`* is typically obtained from a call to the [`time`](time-time32-time64.md) function.
 
-> [!NOTE]
-> In most cases, the target environment tries to determine whether daylight savings time is in effect. The C run-time library assumes that the United States rules for implementing the calculation of Daylight Saving Time (DST) are used.
-
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
