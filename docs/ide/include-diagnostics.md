@@ -1,12 +1,12 @@
 ---
-title: "Include Diagnostics"
+title: "C++ Include Diagnostics"
 description: "Learn how to use #include Diagnostics in Visual Studio to analyze how often something from an include file is used and how an #include impacts build time."
 ms.date: 10/10/2023
 ms.topic: "how-to"
 f1_keywords: ["include diagnostics"]
 helpviewer_keywords: ["include diagnostics"]
 ---
-# Include Diagnostics in Visual Studio
+# C++ Include Diagnostics in Visual Studio
 
 Starting with Visual Studio 17.8, Visual Studio helps you analyze your C++ `#include` files:
 
