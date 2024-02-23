@@ -8,7 +8,7 @@ helpviewer_keywords: ["include diagnostics"]
 ---
 # Include Diagnostics in Visual Studio
 
-Starting with Visual Studio 17.8, Visual Studio helps you analyze your `#include` files in C and C++:
+Starting with Visual Studio 17.8, Visual Studio helps you analyze your C++ `#include` files:
 
 - Displays how often and where something from a header file is used.
 - Displays the build time for each `#include` file--which helps you identify opportunities to optimize your build time.
@@ -21,7 +21,7 @@ The Include Diagnostics feature is off by default. To turn it on, right-click in
 The context menu shows the include directives option highlighted, which reveals two options: Sort # include directives and turn # include diagnostics on.
 :::image-end:::
 
-Information about your #include files is displayed via CodeLens, which is off by default. To turn the relevant CodeLens settings on, navigate to **Tools** > **Options** > **Text Editor** > **All Languages** > **CodeLens** and confirm both **Show C++ #include references** and **Show C++ compilation times** are enabled.
+Information about your #include files is displayed via CodeLens, which is off by default. To turn on the relevant CodeLens settings, navigate to **Tools** > **Options** > **Text Editor** > **All Languages** > **CodeLens** and confirm both **Show C++ #include references** and **Show C++ compilation times** are enabled.
 
 :::image type="complex" source="media/vs2022-enable-code-lens-for-includes.png" alt-text="A screenshot of the options window.":::
 The options window is set to Text Editor > All Languages > CodeLens. The Show C++ # include references and Show C++ compilation times options are highlighted.
@@ -29,7 +29,7 @@ The options window is set to Text Editor > All Languages > CodeLens. The Show C+
 
 ## View `#include` references
 
-Create a new C++ console project to try out Include Diagnostics. Replace the contents of the main `.cpp` file with the following code:
+To try out Include Diagnostics, create a new C++ console project. Replace the contents of the main `.cpp` file with the following code:
 
 ```cpp
 #include <iostream>
@@ -87,7 +87,7 @@ Select an item to go to its location in your code.
 
 To see the build time for each file you `#include`, first build using Build Insights.
 
-Turn on Build Insights from the main menu bar by selecting **Build** > **Run Build Insights on Solution** > **Build**. After the build completes, a window appears to list the build times for the various files that are compiled. Return to the source code window, and the build time for each `#include` file is displayed in CodeLens. It will look similar to this:
+Turn on Build Insights from the main menu bar by selecting **Build** > **Run Build Insights on Solution** > **Build**. After the build completes, a window appears to list the build times for the various files that are compiled. Return to the source code window, and the build time for each `#include` file is displayed in CodeLens. It looks similar to this:
 
 ```cpp
 6 references | Build: 0.3560s
