@@ -1,7 +1,7 @@
 ---
 title: "Latest supported Visual C++ Redistributable downloads"
 description: "This article lists the download links for the latest versions of Visual C++ Redistributable packages."
-ms.date: 02/08/2024
+ms.date: 02/26/2024
 helpviewer_keywords:
   [
     "redist",
@@ -113,3 +113,17 @@ Download Redistributable files for other languages and architectures from:
 > Visual Studio 2005 [reached end of extended support on April 12, 2016](/lifecycle/products/microsoft-visual-studio-2005)
 
 - Redistributable files for X86, X64, and IA64 architectures are available from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update](https://www.microsoft.com/download/details.aspx?id=26347).
+
+## C++ conformance and release notes
+
+- [Microsoft C/C++ language conformance by Visual Studio version](../overview/visual-cpp-language-conformance.md)\
+- [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md)\
+- [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md)\
+- [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)\
+- [What's new for C++ in Visual Studio](https://learn.microsoft.com/en-us/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio)\
+- [Visual Studio 2022 release notes](https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes)\
+- [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)\
+- [MSVC Backend Updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/)\
+- [Standard Template Libary (STL) changelog](https://github.com/microsoft/STL/wiki/Changelog)\
+- [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg)\
+- [Microsoft Visual C++ compiler versioning](../overview/compiler-versions.md)

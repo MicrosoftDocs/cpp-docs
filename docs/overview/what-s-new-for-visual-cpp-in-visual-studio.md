@@ -18,44 +18,44 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 ## What's new for C++ in Visual Studio version 17.9
 
 Briefly, some of the new features are:
-* `#include` diagnostics, which provides a detailed analysis of your `#include` directives. Activate this feature by right-clicking an `#include` and choosing **#include directives** > **Turn #include directive diagnostics on**. Above each `#include` is the number of times your code references that `#include` file. Click the **reference** link to navigate to where your code uses something from that header file. To view the build time of your `#include` directives, run Build Insights by navigating to **Build** > **Run Build Insights on Solution** > **Build**.
+
+- `#include` diagnostics, which provides a detailed analysis of your `#include` directives. Activate this feature by right-clicking an `#include` and choosing **#include directives** > **Turn #include directive diagnostics on**. Above each `#include` is the number of times your code references that `#include` file. Click the **reference** link to navigate to where your code uses something from that header file. To view the build time of your `#include` directives, run Build Insights by navigating to **Build** > **Run Build Insights on Solution** > **Build**.
     :::image type="complex" source="media/include-diagnostics.png" alt-text="Screenshot of #include diagnostics":::
     Above the include is a **reference** link and a number of the references to this include file (in this case 1). The build time is also listed (in this case less than 1/2 a second).
     :::image-end:::
-* Memory layout visualization, which shows how memory is arranged for your classes, structs, and unions. Hover over a type and choose the **Memory Layout** link in the **Quick Info** to open a dedicated window displaying the memory layout of the selected type. Hovering over individual data types within this window provides detailed information about their size and offset within the type.
+- Memory layout visualization, which shows how memory is arranged for your classes, structs, and unions. Hover over a type and choose the **Memory Layout** link in the **Quick Info** to open a dedicated window displaying the memory layout of the selected type. Hovering over individual data types within this window provides detailed information about their size and offset within the type.
     :::image type="complex" source="media/memory-layout-window.png" alt-text="Screenshot of the memory layout window":::
     The memory layout window shows the contents of the Snake class. It shows the memory offsets of the various fields of the class such as Point classes for the location of the head and body, the score, and so on.
     :::image-end:::
-* You can now specify your own custom CMake executable. This feature is useful if you want to use a specific version of CMake that isn't shipped with Visual Studio. Navigate to **Tools** > **Options** and select **CMake** > **General**. Select **Enable custom CMake executable** and specify the directory path of your CMake executable.
+- You can now specify your own custom CMake executable. This feature is useful if you want to use a specific version of CMake that isn't shipped with Visual Studio. Navigate to **Tools** > **Options** and select **CMake** > **General**. Select **Enable custom CMake executable** and specify the directory path of your CMake executable.
     :::image type="complex" source="media/custom-cmake-option.png" alt-text="Screenshot of the CMake options dialog":::
     The CMake options dialog with the "Enable custom CMake executable" option and "CMake Executable Directory" field highlighted.
     :::image-end:::
-* Improved IntelliSense for Unreal Engine projects.
-* Improved C++23 support:
+- Improved IntelliSense for Unreal Engine projects.
+- Improved C++23 support:
     `std::format` and `std::span`
     `formattable`, `range_format`, `format_kind`, and `set_debug_format()` as part of [P2286R8 Formatting Ranges](https://wg21.link/P2286R8)
     `<mdspan>` per [P0009R18](https://wg21.link/P0009R18) and subsequent wording changes that were applied to the C++23 Standard.
     Also, `format()` can format pointers per [P2510R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf).
 
-For a comprehensive summary of new C++ features in Visual Studio 17.9, see [MSVC Backend Updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/).
-
-For a summary of C++ compiler backend improvements since Visual Studio 17.3 until now, see [What's new in the Visual C++ compiler backend](https://devblogs.microsoft.com/cppblog/whats-new-in-the-visual-cpp-compiler-backend/).
+For a summary of C++ backend updates, see [MSVC Backend updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/).
 
 For a summary of new features in the Visual Studio 17.9 IDE, see [Visual Studio 2022 version 17.9 Release Notes](/visualstudio/releases/2022/release-notes).
 
 ## What's new for C++ in Visual Studio version 17.8
 
 Briefly, some of the new features are:
-* C++ structured diagnostics in the Output window and a new problem details window that provides more information about the error. For more information, see [Structured SARIF Output](../build/reference/sarif-output.md) and [Problem Details Window](/visualstudio/ide/reference/problem-details-window).
-* A feature that lets you visualize the size and alignment of your classes, structs, unions, base types, or enums even before the code is compiled. Hover over the identifier and a Quick Info displays the size and alignment information.
-* A feature that suggests when to mark member functions `const` because they don’t modify the object’s state. Hover over a member function and click the light bulb icon to mark the function as `const`.
-* Visual Studio now prompts you to mark global functions as static via a screwdriver icon that appears by the function name. Click the screwdriver icon to mark the function as static.
-* Unused #include directives are dimmed in the editor. You can hover over a dimmed include and use the light bulb menu to either remove that include or all unused includes. You can also add `#include` directives for entities that are indirectly included via other headers. For more information, see [Clean up C/C++ includes in Visual Studio](../ide/include-cleanup-overview.md).
-* More Unreal Engine support:
-    * Unreal Engine Test Adapter lets you discover, run, manage, and debug your Unreal Engine tests without leaving the Visual Studio IDE.
-    * With Unreal Engine Code Snippets, you can find common Unreal Engine constructs as snippets in your member list.
-    * Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile and the number of ForceInlines.
-* Remote Linux unit test support now lets you run your CTest and GTest tests on your remote Linux machines from Visual Studio’s Test Explorer, just like your local tests.
+
+- C++ structured diagnostics in the Output window and a new problem details window that provides more information about the error. For more information, see [Structured SARIF Output](../build/reference/sarif-output.md) and [Problem Details Window](/visualstudio/ide/reference/problem-details-window).
+- A feature that lets you visualize the size and alignment of your classes, structs, unions, base types, or enums even before the code is compiled. Hover over the identifier and a Quick Info displays the size and alignment information.
+- A feature that suggests when to mark member functions `const` because they don’t modify the object’s state. Hover over a member function and click the light bulb icon to mark the function as `const`.
+- Visual Studio now prompts you to mark global functions as static via a screwdriver icon that appears by the function name. Click the screwdriver icon to mark the function as static.
+- Unused #include directives are dimmed in the editor. You can hover over a dimmed include and use the light bulb menu to either remove that include or all unused includes. You can also add `#include` directives for entities that are indirectly included via other headers. For more information, see [Clean up C/C++ includes in Visual Studio](../ide/include-cleanup-overview.md).
+- More Unreal Engine support:
+  - Unreal Engine Test Adapter lets you discover, run, manage, and debug your Unreal Engine tests without leaving the Visual Studio IDE.
+  - With Unreal Engine Code Snippets, you can find common Unreal Engine constructs as snippets in your member list.
+  - Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile and the number of ForceInlines.
+- Remote Linux unit test support now lets you run your CTest and GTest tests on your remote Linux machines from Visual Studio’s Test Explorer, just like your local tests.
 
 For a comprehensive summary of new C++ features in Visual Studio 17.8, see [What’s New for C++ Developers in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-8).
 
@@ -82,7 +82,7 @@ For a summary of new features in the Visual Studio 17.7 IDE, see [Visual Studio 
 
 For a summary of new C++ features in Visual Studio 17.6, see [What’s New for C++ Developers in Visual Studio 2022 17.6](https://devblogs.microsoft.com/cppblog/visual-studio-17-6-for-cpp-devs/).
 
-Briefly, some of the new features are: CMake script debugging, built-in support for High Level Shading Language (HLSL), an Unreal Engine Log viewer, initial support for C++20 in C++/CLI projects, vcpkg is now added by default, and some C++23 standard library features for ranges. To see a full list of new features added to the standard library, see the [STL changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-176).
+Briefly, some of the new features are: CMake script debugging, built-in support for High Level Shading Language (HLSL), an Unreal Engine Log viewer, initial support for C++20 in C++/CLI projects, VCPKG is now added by default, and some C++23 standard library features for ranges. To see a full list of new features added to the standard library, see the [STL changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-176).
 
 For a summary of new features in Visual Studio 17.6 IDE, see [Visual Studio 2022 version 17.6 Release Notes](/visualstudio/releases/2022/release-notes-v17.6).
 
@@ -122,23 +122,15 @@ For a summary of new features and bug fixes in the Visual Studio IDE version 17.
 - Concurrent monitoring is now supported in the Serial Monitor. Concurrent monitoring allows you to monitor multiple ports at the same time side by side. Press the plus button to open another Serial Monitor and get started.
 
 - You can now view properties from base classes modified in an Unreal Blueprint asset without leaving Visual Studio. Double-click in a Blueprint reference for a C++ class or property to open the UE Asset Inspector in Visual Studio.
-
 - Enabled running DevContainers on a remote Linux machine.
-
 - Enabled selection of multiple targets to build in the CMake Targets view.
-
 - Added support for CMakePresets.json version 5. See the [CMake documentation](https://cmake.org/cmake/help/v3.24/manual/cmake-presets.7.html) for information of new features.
-
 - Enabled Test Explorer to build and test multiple CMake targets in parallel.
-
 - Added "Open container in terminal" option to Dev Containers.
-
 - Implemented standard library features:
 
   - [P2508R1](https://wg21.link/P2508R1) `basic_format_string`, `format_string`, `wformat_string`
-
   - [P2322R6](https://wg21.link/P2322R6) `ranges::fold_left`, `ranges::fold_right`, and so on.
-
   - [P2321R2](https://wg21.link/P2321R2) `views::zip` (doesn't include `zip_transform`, `adjacent`, and `adjacent_transform`)
 
 ## What's new for C++ in Visual Studio version 17.4
