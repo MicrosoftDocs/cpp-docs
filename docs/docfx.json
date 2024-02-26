@@ -56,7 +56,7 @@
       "searchScope": [
         "C++"
       ],
-      "feedback_system": "GitHub",
+      "feedback_system": "Standard",
       "feedback_github_repo": "MicrosoftDocs/cpp-docs",
       "feedback_product_url": "https://developercommunity.visualstudio.com/cpp/",
       "feedback_help_link_url": "https://learn.microsoft.com/en-us/answers/tags/314/cpp",
