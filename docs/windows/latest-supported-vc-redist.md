@@ -116,8 +116,8 @@ Download Redistributable files for other languages and architectures from:
 
 ## Release notes
 
-- [What's new for C++ in Visual Studio](../overview//what-s-new-for-visual-cpp-in-visual-studio.md)
 - [Visual Studio 2022 release notes](/visualstudio/releases/2022/release-notes)
+- [What's new for C++ in Visual Studio](../overview//what-s-new-for-visual-cpp-in-visual-studio.md)
 - [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)
 - [MSVC Backend Updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/)
 - [Standard Template Library (STL) changelog](https://github.com/microsoft/STL/wiki/Changelog)
@@ -126,7 +126,7 @@ Download Redistributable files for other languages and architectures from:
 
 ## C++ conformance notes
 
-- [Microsoft C/C++ language conformance by Visual Studio version](../overview/visual-cpp-language-conformance.md)
 - [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)
 - [C++ conformance improvements in Visual Studio 2019](../overview/cpp-conformance-improvements-2019.md)
 - [C++ conformance improvements in Visual Studio 2017](../overview/cpp-conformance-improvements-2017.md)
+- [Microsoft C/C++ language conformance by Visual Studio version](../overview/visual-cpp-language-conformance.md)

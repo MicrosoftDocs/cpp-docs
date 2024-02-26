@@ -21,7 +21,7 @@ Briefly, some of the new features are:
 
 - `#include` diagnostics, which provides a detailed analysis of your `#include` directives. Activate this feature by right-clicking an `#include` and choosing **#include directives** > **Turn #include directive diagnostics on**. Above each `#include` is the number of times your code references that `#include` file. Click the **reference** link to navigate to where your code uses something from that header file. To view the build time of your `#include` directives, run Build Insights by navigating to **Build** > **Run Build Insights on Solution** > **Build**.
     :::image type="complex" source="media/include-diagnostics.png" alt-text="Screenshot of #include diagnostics":::
-    Above the include is a **reference** link and a number of the references to this include file (in this case 1). The build time is also listed (in this case less than 1/2 a second).
+    Above the # include is a **reference** link and a number of the references to this # include file (in this case 1). The build time is also listed (in this case less than 1/2 a second).
     :::image-end:::
 - Memory layout visualization, which shows how memory is arranged for your classes, structs, and unions. Hover over a type and choose the **Memory Layout** link in the **Quick Info** to open a dedicated window displaying the memory layout of the selected type. Hovering over individual data types within this window provides detailed information about their size and offset within the type.
     :::image type="complex" source="media/memory-layout-window.png" alt-text="Screenshot of the memory layout window":::
@@ -352,7 +352,7 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 
 ## Release notes for older versions
 
-Release notes for older C++ versions are also available. For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019.](what-s-new-for-cpp-2019.md) For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017.](what-s-new-for-cpp-2017.md) For information on what's new in earlier versions, see [Visual C++ What's New 2003 through 2015.](../porting/visual-cpp-what-s-new-2003-through-2015.md)
+Release notes for older C++ versions are also available. For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-cpp-2019.md). For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](what-s-new-for-cpp-2017.md). For information on what's new in earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ## Known issues
 
