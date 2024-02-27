@@ -37,7 +37,7 @@ Clang-Tidy recognizes the following keys:
 
 - `enableMicrosoftCodeAnalysis`: Enables Microsoft Code Analysis
 - `enableClangTidyCodeAnalysis`: Enables Clang-Tidy analysis
-- `clangTidyChecks`: Clang-Tidy configuration. A comma-separated list of checks to enable or disable. A leading `-` disables the check. For example, "cert-oop58-cpp, -cppcoreguidelines-no-malloc, google-runtime-int" enables `cert-oop58-cpp` and `google-runtime-int`, but disables the `cppcoreguidelines-no-malloc`.
+- `clangTidyChecks`: Clang-Tidy configuration. A comma-separated list of checks to enable or disable. A leading `-` disables the check. For example, "cert-oop58-cpp, -cppcoreguidelines-no-malloc, google-runtime-int" enables `cert-oop58-cpp` and `google-runtime-int`, but disables `cppcoreguidelines-no-malloc`.
 
 If neither of the "enable" options are specified, Visual Studio will select the analysis tool matching the Platform Toolset used.
 
