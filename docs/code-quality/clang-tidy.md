@@ -33,16 +33,16 @@ For more information, see [How to: Set Code Analysis Properties for C/C++ Projec
 
 In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`* or *`CMakePresets.json`*. 
 
-The following keys are recognized for clang-tidy:
+Clang-Tidy recognizes the following keys:
 
 - `enableMicrosoftCodeAnalysis`: Enables Microsoft Code Analysis
 - `enableClangTidyCodeAnalysis`: Enables Clang-Tidy analysis
-- `clangTidyChecks`: Clang-Tidy configuration. A comma-separated list, that is, checks to be enabled or disabled (e.g. "cert-oop58-cpp, -cppcoreguidelines-no-malloc, google-runtime-int" enables `cert-oop58-cpp` and `google-runtime-int` checks and disables via the `-` operator the `cppcoreguidelines-no-malloc` check)
+- `clangTidyChecks`: Clang-Tidy configuration. A comma-separated list of checks to enable or disable. A leading `-` disables the check. For example, "cert-oop58-cpp, -cppcoreguidelines-no-malloc, google-runtime-int" enables `cert-oop58-cpp` and `google-runtime-int`, but disables the `cppcoreguidelines-no-malloc`.
 
 If neither of the "enable" options are specified, Visual Studio will select the analysis tool matching the Platform Toolset used.
 
 ### CMake Settings
-To edit your clang-tidy settings, open your CMake Settings, select **Edit JSON** in the CMake Project Settings Editor. You can use the keys above to fill out your clang-tidy specifications in the CMake Settings json file. 
+To edit your clang-tidy settings, open your CMake Settings, and select **Edit JSON** in the CMake Project Settings Editor. You can use the keys above to fill out your clang-tidy specifications in the CMake Settings json file. 
 An example CMake settings implementation looks like this:
 ```
 {
