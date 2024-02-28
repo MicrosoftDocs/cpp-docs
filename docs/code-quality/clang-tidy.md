@@ -43,7 +43,7 @@ If neither of the "enable" options are specified, Visual Studio will select the 
 
 ### CMake settings
 
-To edit your Clang-Tidy settings, open your CMake settings, and select **Edit JSON** in the CMake Project Settings Editor. You can use the keys above to fill out your clang-tidy specifications in the CMake Settings json file. 
+To edit your Clang-Tidy settings, open your CMake settings, and select **Edit JSON** in the CMake Project Settings Editor. You can use the keys above to fill out your Clang-Tidy specifications in the CMake Settings json file. 
 
 An example CMake settings implementation looks like this:
 
