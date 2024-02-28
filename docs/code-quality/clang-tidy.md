@@ -44,7 +44,7 @@ If neither of the "enable" options are specified, Visual Studio will select the 
 ### CMake Settings
 To edit your clang-tidy settings, open your CMake Settings, and select **Edit JSON** in the CMake Project Settings Editor. You can use the keys above to fill out your clang-tidy specifications in the CMake Settings json file. 
 An example CMake settings implementation looks like this:
-```
+```json
 {
   "configurations": [
   {
@@ -62,7 +62,8 @@ An example CMake settings implementation looks like this:
 ### CMake Presets
 The same keys can be used in your CMake presets via the `vendor` object.
 An example CMake preset implementation looks like this:
-```"configurePreset": [
+```json
+"configurePreset": [
 { "name": "base",
   ....
   "vendor": {
