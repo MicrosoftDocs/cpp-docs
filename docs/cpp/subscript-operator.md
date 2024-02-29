@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Subscript Operator []"
-title: "Subscript Operator []"
+description: "Learn more about: Subscript Operator: []"
+title: "Subscript Operator: []"
 ms.date: "11/04/2016"
 f1_keywords: ["[]"]
 helpviewer_keywords: ["operators [C++], subscript", "postfix operators [C++]", "[] operator", "subscript operator [C++], syntax"]
-ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
 ---
-# Subscript Operator []
+# Subscript Operator: `[]`
 
 ## Syntax
 
@@ -98,8 +97,8 @@ The subscript operator is commutative. Therefore, the expressions *array*[*index
 
 ## See also
 
-[Postfix Expressions](../cpp/postfix-expressions.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Arrays](../cpp/arrays-cpp.md)<br/>
-[One-Dimensional Arrays](../c-language/one-dimensional-arrays.md)<br/>
-[Multidimensional Arrays](../c-language/multidimensional-arrays-c.md)<br/>
+[Postfix Expressions](../cpp/postfix-expressions.md)\
+[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
+[Arrays](../cpp/arrays-cpp.md)\
+[One-Dimensional Arrays](../c-language/one-dimensional-arrays.md)\
+[Multidimensional Arrays](../c-language/multidimensional-arrays-c.md)
