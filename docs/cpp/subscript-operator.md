@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Subscript Operator: `[]`"
+description: "Learn more about: Subscript Operator: []"
 title: "Subscript Operator: []"
 ms.date: "11/04/2016"
 f1_keywords: ["[]"]
