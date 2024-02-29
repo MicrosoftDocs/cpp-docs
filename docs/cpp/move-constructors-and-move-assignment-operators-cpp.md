@@ -125,12 +125,18 @@ The following procedures describe how to write a move constructor and a move ass
     }
     ```
 
-1. In the move assignment operator, add a conditional statement that performs no operation if you try to assign the object to itself.
+1. In the move assignment operator, we need to keep the self-assignment safe, and the simple way is to add a judgment directly.
 
     ```cpp
     if (this != &other)
     {
     }
+    ```
+
+    There are many other ways, too, such as `copy-and-swap`.
+
+    ```cpp
+    shared_ptr(_Right).swap(*this);
     ```
 
 1. In the conditional statement, free any resources (such as memory) from the object that is being assigned to.
