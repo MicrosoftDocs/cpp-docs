@@ -49,7 +49,7 @@ Copies *`count`* bytes (**`memmove`**) or characters (**`wmemmove`**) from *`src
 
 **Security Note** Make sure that the destination buffer is large enough to accommodate the number of moved characters. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-The **`memmove`** and **`wmemmove`** functions will only be deprecated if the constant `_CRT_SECURE_DEPRECATE_MEMORY` is defined before the inclusion statement in order for the functions to be deprecated, such as in the example below:
+The **`memmove`** and **`wmemmove`** functions are only deprecated if the constant `_CRT_SECURE_DEPRECATE_MEMORY` is defined before the `#include` statement, as shown in the following example:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY

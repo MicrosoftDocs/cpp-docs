@@ -55,7 +55,7 @@ The value of *`dest`*.
 >
 > Because **`memcpy`** usage by the VC++ compiler and libraries has been so carefully scrutinized, these calls are permitted within code that otherwise conforms with the SDL.  **`memcpy`** calls introduced in application source code only conform with the SDL when that use has been reviewed by security experts.
 
-The **`memcpy`** and **`wmemcpy`** functions are only deprecated if the constant `_CRT_SECURE_DEPRECATE_MEMORY` is defined before the include statement, as in the example below:
+The **`memcpy`** and **`wmemcpy`** functions are only deprecated if the constant `_CRT_SECURE_DEPRECATE_MEMORY` is defined before the `#include` statement, as in the following examples:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
