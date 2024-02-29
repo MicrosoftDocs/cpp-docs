@@ -26,7 +26,7 @@ To install and use the vcremote remote agent to develop code for iOS, you must f
 
    You can get a free account that allows sideloading apps to an iOS device for testing only but not for distribution.
 
-- [Xcode](https://developer.apple.com/xcode/downloads/) version 10.2.1 or later
+- [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12/) version 10.2.1 or later
 
    Xcode can be downloaded from the App Store.
 
