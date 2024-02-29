@@ -1,10 +1,9 @@
 ---
 description: "Learn more about: Subscript Operator: `[]`"
-title: "Subscript Operator: `[]`"
+title: "Subscript Operator: []"
 ms.date: "11/04/2016"
 f1_keywords: ["[]"]
 helpviewer_keywords: ["operators [C++], subscript", "postfix operators [C++]", "[] operator", "subscript operator [C++], syntax"]
-ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
 ---
 # Subscript Operator: `[]`
 
