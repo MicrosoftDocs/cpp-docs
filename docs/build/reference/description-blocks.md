@@ -156,7 +156,7 @@ In this example, UPDATE is a pseudotarget.
 
 ```makefile
 UPDATE : *.*
-!COPY $** c:\product\release
+COPY $** c:\product\release
 ```
 
 When UPDATE is evaluated, NMAKE copies all files in the current directory to the specified drive and directory.
