@@ -15,7 +15,7 @@ The default parameter list is missing a parameter. If you supply a default param
 
 The following sample generates C2548 for:
 
-- `func1` because it's missing the default argument `b`
+- `func1` because it's missing the default argument `b`.
 - `func3` because it's missing the default argument `c`.
 
 The following sample doesn't generate C2548 for:
