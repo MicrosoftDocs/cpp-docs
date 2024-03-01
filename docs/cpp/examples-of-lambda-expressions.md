@@ -3,7 +3,6 @@ description: "Learn more about: Examples of Lambda Expressions"
 title: "Examples of Lambda Expressions"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["lambda expressions [C++], examples"]
-ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
 ---
 # Examples of Lambda Expressions
 
@@ -424,7 +423,7 @@ int main()
     // Create another vector that contains index values.
     vector<int> indices(3);
     indices[0] = 0;
-    indices[1] = -1; // This is not a valid subscript. It will trigger an exception.
+    indices[-1] = 1; // This is not a valid subscript. It will trigger an exception.
     indices[2] = 2;
 
     // Use the values from the vector of index values to
