@@ -1,7 +1,7 @@
 ---
 title: "Assignment operators"
 description: "The C++ standard language assignment operators syntax and use."
-ms.date: 07/24/2020
+ms.date: 02/23/2024
 f1_keywords: ["=", "*=", "/=", "%=", "+=", "-=", "<<=", ">>=", "&=", "^=", "|="]
 helpviewer_keywords: ["operators [C++], assignment", "assignment operators [C++], C++", "&= operator", "^= operator", "+= operator", ">>= operator", "|= operator", "operator>>=", "*= operator", "%= operator", "^= operator", "operator >>=", "= operator", "-= operator", "/= operator", "<<= operator"]
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
@@ -83,7 +83,7 @@ The simple assignment operator (**`=`**) causes the value of the second operand 
 
 Objects of **`const`** and **`volatile`** types can be assigned to l-values of types that are only **`volatile`**, or that aren't **`const`** or **`volatile`**.
 
-Assignment to objects of class type (**`struct`**, **`union`**, and **`class`** types) is performed by a function named `operator=`. The default behavior of this operator function is to perform a bitwise copy; however, this behavior can be modified using overloaded operators. For more information, see [Operator overloading](../cpp/operator-overloading.md). Class types can also have *copy assignment* and *move assignment* operators. For more information, see [Copy constructors and copy assignment operators](copy-constructors-and-copy-assignment-operators-cpp.md) and [Move constructors and move assignment operators](move-constructors-and-move-assignment-operators-cpp.md).
+Assignment to objects of class type (**`struct`**, **`union`**, and **`class`** types) is performed by a function named `operator=`. The default behavior of this operator function is to perform a member-wise copy assignment of the object's non-static data members and direct base classes; however, this behavior can be modified using overloaded operators. For more information, see [Operator overloading](../cpp/operator-overloading.md). Class types can also have *copy assignment* and *move assignment* operators. For more information, see [Copy constructors and copy assignment operators](copy-constructors-and-copy-assignment-operators-cpp.md) and [Move constructors and move assignment operators](move-constructors-and-move-assignment-operators-cpp.md).
 
 An object of any unambiguously derived class from a given base class can be assigned to an object of the base class. The reverse isn't true because there's an implicit conversion from derived class to base class, but not from base class to derived class. For example:
 
@@ -154,18 +154,20 @@ The compound assignment operators are shown in the [Assignment operators table](
 
 - a pointer, if *op* is **`+`** or **`-`**
 
-The *e1* *op*= *e2* form behaves as *e1* **`=`** *e1* *op* *e2*, but *e1* is evaluated only once.
+- a type for which there exists a matching `operator *op*=` overload for the type of *e1*
+
+The built-in *e1* *op*= *e2* form behaves as *e1* **`=`** *e1* *op* *e2*, but *e1* is evaluated only once.
 
 Compound assignment to an enumerated type generates an error message. If the left operand is of a pointer type, the right operand must be of a pointer type, or it must be a constant expression that evaluates to 0. When the left operand is of an integral type, the right operand must not be of a pointer type.
 
-## Result of assignment operators
+## Result of built-in assignment operators
 
-The assignment operators return the value of the object specified by the left operand after the assignment. The resultant type is the type of the left operand. The result of an assignment expression is always an l-value. These operators have right-to-left associativity. The left operand must be a modifiable l-value.
+The built-in assignment operators return the value of the object specified by the left operand after the assignment (and the arithmetic/logical operation in the case of compound assignment operators). The resultant type is the type of the left operand. The result of an assignment expression is always an l-value. These operators have right-to-left associativity. The left operand must be a modifiable l-value.
 
 In ANSI C, the result of an assignment expression isn't an l-value. That means the legal C++ expression `(a += b) += c` isn't allowed in C.
 
 ## See also
 
-[Expressions with binary operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Expressions with binary operators](../cpp/expressions-with-binary-operators.md)\
+[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [C assignment operators](../c-language/c-assignment-operators.md)

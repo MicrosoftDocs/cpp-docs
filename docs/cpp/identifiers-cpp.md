@@ -77,7 +77,7 @@ int main() {
 }
 ```
 
-The range of characters allowed in an identifier is less restrictive when compiling C++/CLI code. Identifiers in code compiled by using /clr should follow  [Standard ECMA-335: Common Language Infrastructure (CLI)](https://www.ecma-international.org/publications/standards/Ecma-335.htm).
+The range of characters allowed in an identifier is less restrictive when compiling C++/CLI code. Identifiers in code compiled by using /clr should follow  [Standard ECMA-335: Common Language Infrastructure (CLI)](https://ecma-international.org/publications-and-standards/standards/ecma-335/).
 
 **END Microsoft Specific**
 
