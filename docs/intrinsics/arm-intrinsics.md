@@ -166,6 +166,8 @@ The primary difference between MSVC and the ARM compiler is that the MSVC adds `
 |_CountLeadingSigns64||unsigned int _CountLeadingSigns64(\__int64)|
 |_CountLeadingZeros||unsigned int _CountLeadingZeros(unsigned long)|
 |_CountLeadingZeros64||unsigned int _CountLeadingZeros64(unsigned \__int64)|
+|_CountTrailingZeros||unsigned _CountTrailingZeros(unsigned long)|
+|_CountTrailingZeros64||unsigned _CountTrailingZeros64(unsigned \__int64)|
 |_CountOneBits||unsigned int _CountOneBits(unsigned long)|
 |_CountOneBits64||unsigned int _CountOneBits64(unsigned \__int64)|
 |_DAddSatInt|QDADD|int _DAddSatInt(int, int)|
