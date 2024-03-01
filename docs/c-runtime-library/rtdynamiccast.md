@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["RTTIDATA/__RTDynamicCast", "__RTDynamicCast"]
 helpviewer_keywords: ["__RTDynamicCast"]
-ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
 ---
 # `__RTDynamicCast`
 
@@ -17,13 +16,13 @@ Runtime implementation of the [`dynamic_cast`](../cpp/dynamic-cast-operator.md) 
 ## Syntax
 
 ```cpp
-PVOID __RTDynamicCast (
+PVOID __RTDynamicCast(
    PVOID inptr,
    LONG VfDelta,
    PVOID SrcType,
    PVOID TargetType,
    BOOL isReference
-   ) throw(...)
+) throw(...)
 ```
 
 #### Parameters
@@ -45,7 +44,7 @@ Intended result of cast.
 
 ## Return value
 
-Pointer to the appropriate subobject, if successful; otherwise, `NULL`.
+Pointer to the appropriate subobject if successful; otherwise, `NULL`.
 
 ## Exceptions
 
@@ -59,4 +58,4 @@ Converts `inptr` to an object of type `TargetType`. The type of `inptr` must be 
 
 | Routine | Required header |
 |---|---|
-| **`__RTDynamicCast`** | `<rtti.h>` |
+| **`__RTDynamicCast`** | `<rttidata.h>` |
