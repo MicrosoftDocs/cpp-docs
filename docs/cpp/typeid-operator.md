@@ -5,7 +5,7 @@ ms.date: "10/04/2019"
 helpviewer_keywords: ["typeid operator"]
 ms.assetid: 8871cee6-d6b9-4301-a5cb-bf3dc9798d61
 ---
-# typeid Operator
+# `typeid` Operator
 
 ## Syntax
 
@@ -26,9 +26,9 @@ The **`typeid`** operator does a run-time check when applied to an l-value of a 
 
 - A reference to a class
 
-- A pointer, dereferenced with `*`
+- A pointer, dereferenced with **`*`**
 
-- A subscripted pointer (`[ ]`). (It's not safe to use a subscript with a pointer to a polymorphic type.)
+- A subscripted pointer (**`[ ]`**). (It's not safe to use a subscript with a pointer to a polymorphic type.)
 
 If the *expression* points to a base class type, yet the object is actually of a type derived from that base class, a `type_info` reference for the derived class is the result. The *expression* must point to a polymorphic type (a class with virtual functions). Otherwise, the result is the `type_info` for the static class referred to in the *expression*. Further, the pointer must be dereferenced so that the object used is the one it points to. Without dereferencing the pointer, the result will be the `type_info` for the pointer, not what it points to. For example:
 
