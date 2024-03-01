@@ -31,13 +31,57 @@ For more information, see [How to: Set Code Analysis Properties for C/C++ Projec
 
 ## CMake
 
-In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`*. Once opened, select "Edit JSON" in the top right-hand corner of the CMake Project Settings Editor. The following keys are recognized:
+In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`* or *`CMakePresets.json`*. 
+
+Clang-Tidy recognizes the following keys:
 
 - `enableMicrosoftCodeAnalysis`: Enables Microsoft Code Analysis
 - `enableClangTidyCodeAnalysis`: Enables Clang-Tidy analysis
-- `clangTidyChecks`: Clang-Tidy configuration, specified as a comma-separated list, that is, checks to be enabled or disabled
+- `clangTidyChecks`: Clang-Tidy configuration. A comma-separated list of checks to enable or disable. A leading `-` disables the check. For example, "cert-oop58-cpp, -cppcoreguidelines-no-malloc, google-runtime-int" enables `cert-oop58-cpp` and `google-runtime-int`, but disables `cppcoreguidelines-no-malloc`.
 
 If neither of the "enable" options are specified, Visual Studio will select the analysis tool matching the Platform Toolset used.
+
+### CMake settings
+
+To edit your Clang-Tidy settings, open your CMake settings, and select **Edit JSON** in the CMake Project Settings Editor. You can use the keys above to fill out your Clang-Tidy specifications in the CMake Settings json file. 
+
+An example CMake settings implementation looks like this:
+
+```json
+{
+  "configurations": [
+  {
+    "name": "x64-debug",
+    "generator": "Ninja",
+    ....
+   "clangTidyChecks": "llvm-include-order, -modernize-use-override",
+   "enableMicrosoftCodeAnalysis": true,
+   "enableClangTidyCodeAnalysis": true
+  }
+  ]
+}
+```
+
+### CMake presets
+
+The same keys can be used in your CMake presets via the `vendor` object.
+
+An example CMake preset implementation looks like this:
+
+```json
+"configurePreset": [
+{ "name": "base",
+  ....
+  "vendor": {
+    "microsoft.com/VisualStudioSettings/CMake/1.0": {
+      "clangTidyChecks": "llvm-include-order, -modernize-use-override",
+      "enableMicrosoftCodeAnalysis": true,
+      "enableClangTidyCodeAnalysis": true
+      }
+    }
+}
+]
+```
 
 ## Warning display
 

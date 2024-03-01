@@ -6,7 +6,7 @@ f1_keywords: ["!=", "==", "not_eq_cpp"]
 helpviewer_keywords: ["!= operator", "equality operator", "not equal to comparison operator", "equality operator [C++], syntax", "== operator", "not_eq operator", "equal to operator"]
 ms.assetid: ba4e9659-2392-4fb4-be5a-910a2a6df45a
 ---
-# Equality operators: == and !=
+# Equality operators: `==` and `!=`
 
 ## Syntax
 
@@ -47,6 +47,6 @@ Equality operators can compare pointers to members of the same type. In such a c
 
 ## See also
 
-[Expressions with binary operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ built-in operators, precedence; and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Expressions with binary operators](../cpp/expressions-with-binary-operators.md)\
+[C++ built-in operators, precedence; and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [C relational and equality operators](../c-language/c-relational-and-equality-operators.md)
