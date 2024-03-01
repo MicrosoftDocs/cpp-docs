@@ -6,7 +6,7 @@ f1_keywords: ["sizeof_cpp"]
 helpviewer_keywords: ["sizeof operator"]
 ms.assetid: 8bc3b6fb-54a1-4eb7-ada0-05f8c5efc532
 ---
-# sizeof Operator
+# `sizeof` Operator
 
 Yields the size of its operand with respect to the size of type **`char`**.
 
@@ -17,7 +17,7 @@ Yields the size of its operand with respect to the size of type **`char`**.
 
 ```
 sizeof unary-expression
-sizeof  ( type-name )
+sizeof ( type-name )
 ```
 
 ## Remarks
@@ -98,5 +98,5 @@ sizeof array / sizeof array[0]
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
+[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)\
 [Keywords](../cpp/keywords-cpp.md)

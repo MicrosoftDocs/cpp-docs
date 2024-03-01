@@ -168,6 +168,6 @@ In ANSI C, the result of an assignment expression isn't an l-value. That means t
 
 ## See also
 
-[Expressions with binary operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Expressions with binary operators](../cpp/expressions-with-binary-operators.md)\
+[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [C assignment operators](../c-language/c-assignment-operators.md)
