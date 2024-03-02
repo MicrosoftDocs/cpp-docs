@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["* operator", "indirection operator", "operators [C++], indirection", "indirection operator [C++], syntax"]
 ms.assetid: c50309e1-6c02-4184-9fcb-2e13c1f4ac03
 ---
-# Indirection Operator: *
+# Indirection Operator: `*`
 
 ## Syntax
 
@@ -15,7 +15,7 @@ ms.assetid: c50309e1-6c02-4184-9fcb-2e13c1f4ac03
 
 ## Remarks
 
-The unary indirection operator (<strong>\*</strong>) dereferences a pointer; that is, it converts a pointer value to an l-value. The operand of the indirection operator must be a pointer to a type. The result of the indirection expression is the type from which the pointer type is derived. The use of the <strong>\*</strong> operator in this context is different from its meaning as a binary operator, which is multiplication.
+The unary indirection operator (**`*`**) dereferences a pointer; that is, it converts a pointer value to an l-value. The operand of the indirection operator must be a pointer to a type. The result of the indirection expression is the type from which the pointer type is derived. The use of the **`*`** operator in this context is different from its meaning as a binary operator, which is multiplication.
 
 If the operand points to a function, the result is a function designator. If it points to a storage location, the result is an l-value designating the storage location.
 
@@ -53,7 +53,7 @@ If the pointer value is invalid, the result is undefined. The following list inc
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Address-of Operator: &](../cpp/address-of-operator-amp.md)<br/>
+[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)\
+[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
+[Address-of Operator: &](../cpp/address-of-operator-amp.md)\
 [Indirection and Address-of Operators](../c-language/indirection-and-address-of-operators.md)

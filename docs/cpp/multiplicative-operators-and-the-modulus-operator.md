@@ -20,11 +20,11 @@ expression % expression
 
 The multiplicative operators are:
 
-- Multiplication (<strong>\*</strong>)
+- Multiplication (**`*`**)
 
-- Division (**/**)
+- Division (**`/`**)
 
-- Modulus (remainder from division) (**%**)
+- Modulus (remainder from division) (**`%`**)
 
 These binary operators have left-to-right associativity.
 
@@ -78,6 +78,6 @@ int main() {
 
 ## See also
 
-[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)\
+[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [C Multiplicative Operators](../c-language/c-multiplicative-operators.md)

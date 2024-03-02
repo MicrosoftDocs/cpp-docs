@@ -54,5 +54,5 @@ int main() {
 
 ## See also
 
-[C++ built-in operators, precedence, and associativity](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++ built-in operators, precedence, and associativity](cpp-built-in-operators-precedence-and-associativity.md)\
 [C logical operators](../c-language/c-logical-operators.md)

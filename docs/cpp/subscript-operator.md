@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Subscript Operator []"
-title: "Subscript Operator []"
+description: "Learn more about: Subscript Operator: []"
+title: "Subscript Operator: []"
 ms.date: "11/04/2016"
 f1_keywords: ["[]"]
 helpviewer_keywords: ["operators [C++], subscript", "postfix operators [C++]", "[] operator", "subscript operator [C++], syntax"]
-ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
 ---
-# Subscript Operator []
+# Subscript Operator: `[]`
 
 ## Syntax
 
@@ -16,7 +15,7 @@ postfix-expression [ expression ]
 
 ## Remarks
 
-A postfix expression (which can also be a primary expression) followed by the subscript operator, **[ ]**, specifies array indexing.
+A postfix expression (which can also be a primary expression) followed by the subscript operator, **`[ ]`**, specifies array indexing.
 
 For information about managed arrays in C++/CLI, see [Arrays](../extensions/arrays-cpp-component-extensions.md).
 
@@ -44,7 +43,7 @@ A subscript expression can also have multiple subscripts, as follows:
 
 *expression1* **[** *expression2* **] [** *expression3* **]** ...
 
-Subscript expressions associate from left to right. The leftmost subscript expression, *expression1* **[** *expression2* **]**, is evaluated first. The address that results from adding *expression1* and *expression2* forms a pointer expression; then *expression3* is added to this pointer expression to form a new pointer expression, and so on until the last subscript expression has been added. The indirection operator (<strong>\*</strong>) is applied after the last subscripted expression is evaluated, unless the final pointer value addresses an array type.
+Subscript expressions associate from left to right. The leftmost subscript expression, *expression1* **[** *expression2* **]**, is evaluated first. The address that results from adding *expression1* and *expression2* forms a pointer expression; then *expression3* is added to this pointer expression to form a new pointer expression, and so on until the last subscript expression has been added. The [indirection operator (**`*`**)](../cpp/indirection-operator-star.md) is applied after the last subscripted expression is evaluated, unless the final pointer value addresses an array type.
 
 Expressions with multiple subscripts refer to elements of multidimensional arrays. A multidimensional array is an array whose elements are arrays. For example, the first element of a three-dimensional array is an array with two dimensions. The following example declares and initializes a simple two-dimensional array of characters:
 
@@ -98,8 +97,8 @@ The subscript operator is commutative. Therefore, the expressions *array*[*index
 
 ## See also
 
-[Postfix Expressions](../cpp/postfix-expressions.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Arrays](../cpp/arrays-cpp.md)<br/>
-[One-Dimensional Arrays](../c-language/one-dimensional-arrays.md)<br/>
-[Multidimensional Arrays](../c-language/multidimensional-arrays-c.md)<br/>
+[Postfix Expressions](../cpp/postfix-expressions.md)\
+[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
+[Arrays](../cpp/arrays-cpp.md)\
+[One-Dimensional Arrays](../c-language/one-dimensional-arrays.md)\
+[Multidimensional Arrays](../c-language/multidimensional-arrays-c.md)
