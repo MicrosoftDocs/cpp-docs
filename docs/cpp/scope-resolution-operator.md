@@ -168,5 +168,5 @@ int main() {
 
 ## See also
 
-[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [Namespaces](../cpp/namespaces-cpp.md)

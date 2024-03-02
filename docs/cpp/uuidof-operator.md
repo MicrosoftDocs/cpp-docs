@@ -70,5 +70,5 @@ StringFromCLSID(__LIBID_, &lpolestr);
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
+[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)\
 [Keywords](../cpp/keywords-cpp.md)
