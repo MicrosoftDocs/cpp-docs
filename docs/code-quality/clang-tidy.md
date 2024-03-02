@@ -1,7 +1,7 @@
 ---
 title: Using Clang-Tidy in Visual Studio
 description: "How to use Clang-Tidy in Visual Studio for Microsoft C++ code analysis."
-ms.date: 02/22/2022
+ms.date: 03/1/2022
 ms.topic: "conceptual"
 f1_keywords: ["vs.codeanalysis.clangtidy"]
 ---
@@ -31,13 +31,13 @@ For more information, see [How to: Set Code Analysis Properties for C/C++ Projec
 
 ## CMake
 
-In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`* or *`CMakePresets.json`*. 
+In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`* or *`CMakePresets.json`*.
 
 Clang-Tidy recognizes the following keys:
 
 - `enableMicrosoftCodeAnalysis`: Enables Microsoft Code Analysis
 - `enableClangTidyCodeAnalysis`: Enables Clang-Tidy analysis
-- `clangTidyChecks`: Clang-Tidy configuration. A comma-separated list of checks to enable or disable. A leading `-` disables the check. For example, "cert-oop58-cpp, -cppcoreguidelines-no-malloc, google-runtime-int" enables `cert-oop58-cpp` and `google-runtime-int`, but disables `cppcoreguidelines-no-malloc`.
+- `clangTidyChecks`: Clang-Tidy configuration. A comma-separated list of checks to enable or disable. A leading `-` disables the check. For example, "cert-oop58-cpp, -cppcoreguidelines-no-malloc, google-runtime-int" enables `cert-oop58-cpp` and `google-runtime-int`, but disables `cppcoreguidelines-no-malloc`. For a list of Clang-Tidy checks, see the [Clang-Tidy documentation](https://clang.llvm.org/extra/clang-tidy/checks/list.html).
 
 If neither of the "enable" options are specified, Visual Studio will select the analysis tool matching the Platform Toolset used.
 
@@ -93,7 +93,7 @@ By default, Clang-Tidy does not set any checks when enabled. To see the list of 
 
 ## See also
 
-- [Clang/LLVM support for MSBuild projects](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)
-- [Clang/LLVM support for CMake projects](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)
+[Clang/LLVM support for MSBuild projects](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)\
+[Clang/LLVM support for CMake projects](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)
 
 ::: moniker-end
