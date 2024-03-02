@@ -15,13 +15,13 @@ Visual Studio provides two different technologies for deploying Windows applicat
 
 To deploy a Visual C++ application using ClickOnce, you first have to build a [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest) and a [ClickOnce Deployment Manifest](/visualstudio/deployment/clickonce-deployment-manifest) using the [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) or its graphical user interface version (for information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)).
 
-You first use Mage.exe to build the application manifest; the resulting file will have the extension .manifest. You then use Mage.exe to build the deployment manifest; the resulting file will have the extension .application. You then sign the manifests.
+You first use Mage.exe to build the application manifest; the resulting file will have the extension .manifest. You then use Mage.exe to build the deployment manifest; the resulting file will have the extension `.application`. You then sign the manifests.
 
 The application manifest must specify the target processor (**x86**, **x64**, or **ARM**). See [Deploying Prerequisites for 64-bit Applications](/visualstudio/deployment/deploying-prerequisites-for-64-bit-applications) for information on these options.
 
 Also, the name of the application and deployment manifests must be different from the name of the C++ application. This avoids conflict between the application manifest created by Mage.exe and the external manifest that is part of the C++ application.
 
-Your deployment will need to install any Visual C++ libraries on which your application depends. To determine the dependencies for a particular application, you can use depends.exe or the DUMPBIN utility with the /DEPENDENTS option. For more information on dependencies, see [Understanding the Dependencies of a Visual C++ Application](understanding-the-dependencies-of-a-visual-cpp-application.md). You might need to run VCRedist.exe; this utility installs Visual C++ libraries on the target computer.
+Your deployment needs to install any Visual C++ libraries on which your application depends. To determine the dependencies for a particular application, you can use depends.exe or the `DUMPBIN` utility with the `/DEPENDENTS` option. For more information on dependencies, see [Understanding the Dependencies of a Visual C++ Application](understanding-the-dependencies-of-a-visual-cpp-application.md). You might need to run VCRedist.exe; this utility installs Visual C++ libraries on the target computer.
 
 You may also need to build a bootstrapper (prerequisites installer) for your application to deploy prerequisite components; for information on the bootstrapper, see [Creating Bootstrapper Packages](/visualstudio/deployment/creating-bootstrapper-packages).
 
