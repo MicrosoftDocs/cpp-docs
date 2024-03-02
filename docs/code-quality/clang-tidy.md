@@ -1,7 +1,7 @@
 ---
 title: Using Clang-Tidy in Visual Studio
 description: "How to use Clang-Tidy in Visual Studio for Microsoft C++ code analysis."
-ms.date: 02/22/2022
+ms.date: 03/1/2022
 ms.topic: "conceptual"
 f1_keywords: ["vs.codeanalysis.clangtidy"]
 ---
@@ -9,7 +9,7 @@ f1_keywords: ["vs.codeanalysis.clangtidy"]
 
 ::: moniker range="<=msvc-150"
 
-Support for Clang-Tidy requires Visual Studio 2019 version 16.4 or later. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019 or later. It's found at the top of the table of contents on this page.
+Support for Clang-Tidy requires Visual Studio 2019 version 16.4 or later. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019 or later. It's at the top of the table of contents on this page.
 
 ::: moniker-end
 
@@ -31,19 +31,19 @@ For more information, see [How to: Set Code Analysis Properties for C/C++ Projec
 
 ## CMake
 
-In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`* or *`CMakePresets.json`*. 
+In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`* or *`CMakePresets.json`*.
 
 Clang-Tidy recognizes the following keys:
 
 - `enableMicrosoftCodeAnalysis`: Enables Microsoft Code Analysis
 - `enableClangTidyCodeAnalysis`: Enables Clang-Tidy analysis
-- `clangTidyChecks`: Clang-Tidy configuration. A comma-separated list of checks to enable or disable. A leading `-` disables the check. For example, "cert-oop58-cpp, -cppcoreguidelines-no-malloc, google-runtime-int" enables `cert-oop58-cpp` and `google-runtime-int`, but disables `cppcoreguidelines-no-malloc`.
+- `clangTidyChecks`: Clang-Tidy configuration. A comma-separated list of checks to enable or disable. A leading `-` disables the check. For example, `cert-oop58-cpp, -cppcoreguidelines-no-malloc, google-runtime-int` enables `cert-oop58-cpp` and `google-runtime-int`, but disables `cppcoreguidelines-no-malloc`. For a list of Clang-Tidy checks, see the [Clang-Tidy documentation](https://clang.llvm.org/extra/clang-tidy/checks/list.html).
 
-If neither of the "enable" options are specified, Visual Studio will select the analysis tool matching the Platform Toolset used.
+If neither of the "enable" options are specified, Visual Studio selects the analysis tool matching the Platform Toolset used.
 
 ### CMake settings
 
-To edit your Clang-Tidy settings, open your CMake settings, and select **Edit JSON** in the CMake Project Settings Editor. You can use the keys above to fill out your Clang-Tidy specifications in the CMake Settings json file. 
+To edit your Clang-Tidy settings, open your CMake settings, and select **Edit JSON** in the CMake Project Settings Editor. You can use the keys above to fill out your Clang-Tidy specifications in the CMake Settings JSON file.
 
 An example CMake settings implementation looks like this:
 
@@ -85,7 +85,7 @@ An example CMake preset implementation looks like this:
 
 ## Warning display
 
-Clang-Tidy runs result in warnings displayed in the Error List, and as in-editor squiggles underneath relevant sections of code. Use the "Category" column in the Error List to sort and organize Clang-Tidy warnings. You can configure in-editor warnings by toggling the "Disable Code Analysis Squiggles" setting under **Tools** > **Options**.
+Clang-Tidy runs result in warnings displayed in the Error List, and as in-editor squiggles underneath relevant sections of code. To sort and organize Clang-Tidy warnings, use the **Category** column in the **Error List** window. You can configure in-editor warnings by toggling the **Disable Code Analysis Squiggles** setting under **Tools** > **Options**.
 
 ## Clang-Tidy configuration
 
@@ -93,7 +93,7 @@ By default, Clang-Tidy does not set any checks when enabled. To see the list of 
 
 ## See also
 
-- [Clang/LLVM support for MSBuild projects](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)
-- [Clang/LLVM support for CMake projects](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)
+[Clang/LLVM support for MSBuild projects](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)\
+[Clang/LLVM support for CMake projects](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)
 
 ::: moniker-end
