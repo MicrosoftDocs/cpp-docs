@@ -31,7 +31,7 @@ For more information, see [How to: Set Code Analysis Properties for C/C++ Projec
 
 ## CMake
 
-In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`* or *`CMakePresets.json`*.
+In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`* or *`CMakePresets.json`*. 
 
 Clang-Tidy recognizes the following keys:
 
@@ -82,7 +82,6 @@ An example CMake preset implementation looks like this:
 }
 ]
 ```
-
 ## Warning display
 
 Clang-Tidy runs result in warnings displayed in the Error List, and as in-editor squiggles underneath relevant sections of code. To sort and organize Clang-Tidy warnings, use the **Category** column in the **Error List** window. You can configure in-editor warnings by toggling the **Disable Code Analysis Squiggles** setting under **Tools** > **Options**.
