@@ -21,3 +21,6 @@ int main(void)
     int* ptr = &x;   // C2103
 }
 ```
+
+> [!NOTE]
+> This error applies to C code.
