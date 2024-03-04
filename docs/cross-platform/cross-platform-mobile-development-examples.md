@@ -13,7 +13,7 @@ Several of the templates installed by the **Mobile development with C++** worklo
 
 - [TwoLibs Android Library Sample](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/TwoLibs%20Android%20Library%20Sample)
 
-   This sample is a port of the Android NDK TwoLibs sample. It uses both a dynamically loaded shared library, and a static C++ Android native library, that implements a method called from a Java Native Interface app. This sample is a good starting point for developers to understand how to use static/dynamic shared libraries to build an end-to-end JNI Android application with Visual Studio.
+   This sample is a port of the Android NDK TwoLibs sample. It uses both a dynamically loaded shared library and a static C++ Android native library that implements a method called from a Java Native Interface app. This sample is a good starting point for developers to understand how to use static/dynamic shared libraries to build an end-to-end JNI Android application with Visual Studio.
 
 - [test-libstdcpp Android Library Sample](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/test-libstdcpp%20Android%20Library%20Sample)
 
@@ -25,4 +25,4 @@ Several of the templates installed by the **Mobile development with C++** worklo
 
 ## See also
 
-[Additional Android NDK samples](https://github.com/android/ndk-samples/tree/master/)
+[Android NDK samples](https://github.com/android/ndk-samples/tree/master/)
