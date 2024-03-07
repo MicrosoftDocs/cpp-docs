@@ -14,13 +14,13 @@ We've changed this behavior in Visual Studio 2015 and later versions. The runtim
 
 There are three important restrictions on binary compatibility between the v140, v141, v142, and v143 toolsets and minor numbered version updates:
 
-- Binaries created with different versions of the v140, v141, v142, and v143 toolsets can be combined. The key rule is that the linker must be as recent as, or more recent than, the newest toolset used to build any binary in the app. That is:
-    - The linker must be as recent as, or more recent than, the newest toolset used to build any binary in the app. In other words, the linker should only work with inputs built by toolsets that are either earlier or the same version as itself. For example:
+- Binaries created with different versions of the v140, v141, v142, and v143 toolsets can be combined. The key rule is that the linker should only work with inputs built by toolsets that are either earlier or the same version as itself. For example:
     - An app compiled with a 2017 toolset (v141, versions 15.0 to 15.9) can be linked to a static library compiled with Visual Studio 2019 version 16.2 (v142), but the linking must be done using a version 16.2 or later toolset.
     - A version 16.2 library can be linked to a version 16.4 app, but only if you use the 16.4 or later toolset.
     - Apps and libraries built using VS 2015, 2017, or 2019 can be linked together, but the linking must be done using a version of the toolset that is as recent as, or more recent than, the most recent toolset used to build any of the binaries.
     - If you have three binaries built with toolsets from VS 2015 version 14.3, VS 2017 version 15.1, and VS 2017 version 15.6, you can link them using any toolset version that is 15.6 or later.
-In some cases, this will also work for import libraries, especially if the import library strictly uses extern “C” for the imports/exports.
+
+    In some cases, this will also work for import libraries, especially if the import library strictly uses extern “C” for the imports/exports.
 
 - The Redistributable your app uses has a similar binary-compatibility restriction. When you mix binaries built by different supported versions of the toolset, the Redistributable version must be at least as new as the latest toolset used by any app component.
 
