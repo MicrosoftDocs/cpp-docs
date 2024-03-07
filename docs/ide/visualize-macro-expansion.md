@@ -52,7 +52,7 @@ You can inspect a macro's expanded value, even when several preprocessor steps a
     :::image-end:::
 
 1. Choose **Copy**.
-1. Create a comment following the `POWER` line and choose paste (`Ctrl+V`). The expansion of the macro, as a comment near your macro, looks like: `// (((10.0 * 20.0)* (5.0 * 2.0)) / 2.0).` The keyboard shortcut for this action is `Ctrl+M, Ctrl+C`.
+1. Create a comment following the `POWER` line and choose paste (CTRL+V). The expansion of the macro, as a comment near your macro, looks like: `// (((10.0 * 20.0)* (5.0 * 2.0)) / 2.0).` The keyboard shortcut for this action is CTRL+M, CTRL+C.
 
 ## Expand a macro inline
 
@@ -60,7 +60,7 @@ Use the following steps to expand a macro inline, which replaces the macro with 
 
 1. Place the cursor on the `POWER` macro inside `main()` in the example.
 1. As you hover over the macro, options appear to **Copy**, **Expand Inline**, **Visualize Expansion**, and **Search Online**
-1. Choose **Expand Inline**. The `POWER()` macro is replaced with its expanded value: ```std::cout << "Power: " << (((10.0 * 20.0) * (5.0 * 2.0)) / 2.0) << std::endl;```. The keyboard shortcut for this action is `Ctrl+M, Ctrl+I`.
+1. Choose **Expand Inline**. The `POWER()` macro is replaced with its expanded value: ```std::cout << "Power: " << (((10.0 * 20.0) * (5.0 * 2.0)) / 2.0) << std::endl;```. The keyboard shortcut for this action is CTRL+M, CTRL+I.
 
 ## Visualize macro expansion
 
@@ -68,7 +68,7 @@ You can expand a macro one step at a time. This is useful when there are nested 
 
 1. Place the cursor on the `WORK` macro inside `main()` in the example.
 1. As you hover over the macro, options appear to **Copy**, **Expand Inline**, **Visualize Expansion**, and **Search Online**.
-1. Choose **Visualize Expansion**. The keyboard shortcut for this action is `Ctrl+M` followed by `Ctrl+V`.
+1. Choose **Visualize Expansion**. The keyboard shortcut for this action is CTRL+M followed by CTRL+V.
 1. The macro expansion window appears. The first expansion of the `WORK` macro is visible: `(FORCE() * DISTANCE())`:
 
     :::image type="complex" source="media/visual-studio-2022-work-macro-expansion.png" alt-text="Screenshot of the macro expansion window, which allows you to step through the WORK macro expansion one step at a time.":::
