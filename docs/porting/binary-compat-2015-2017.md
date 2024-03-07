@@ -1,7 +1,7 @@
 ---
 title: "C++ binary compatibility 2015-2022"
 description: "Describes how binary compatibility works between compiled C++ files in Visual Studio 2015, 2017, 2019, and 2022. One Microsoft Visual C++ Redistributable package works for all three versions."
-ms.date: 10/22/2021
+ms.date: 03/07/2024
 helpviewer_keywords: ["binary compatibility, Visual C++"]
 ---
 # C++ binary compatibility between Visual Studio versions
@@ -14,7 +14,7 @@ We've changed this behavior in Visual Studio 2015 and later versions. The runtim
 
 There are three important restrictions on binary compatibility between the v140, v141, v142, and v143 toolsets and minor numbered version updates:
 
-- You can mix binaries built by different versions of the v140, v141, v142, and v143 toolsets. However, you must link by using a toolset at least as recent as the most recent binary in your app. Here's an example: you can link an app compiled using any 2017 toolset (v141, versions 15.0 through 15.9) to a static library compiled using, say, Visual Studio 2019 version 16.2 (v142). You just have to link them by using a version 16.2 or later toolset. You can link a version 16.2 library to a version 16.4 app as long as you use a 16.4 or later toolset.
+- Binaries created with different versions of the v140, v141, v142, and v143 toolsets can be combined. The key rule is that the linker must be as recent as, or more recent than, the newest toolset used to build any binary in the app. This means the linker should only work with inputs built by toolsets that are either earlier or the same version as itself, and should never receive inputs built by a newer toolset. For example, an app compiled with a 2017 toolset (v141, versions 15.0 to 15.9) can be linked to a static library compiled with Visual Studio 2019 version 16.2 (v142). But the linking must be done using a version 16.2 or later toolset. Similarly, a version 16.2 library can be linked to a version 16.4 app, but only if you use the 16.4 or later toolset. If your apps and libraries (including both static libraries and import libraries for [implicitly linked](../build/linking-an-executable-to-a-dll.md#implicit-linking) DLLs) are built using VS 2015, 2017, or 2019, then they can be linked together. But the linking must be done using a version of the toolset that is as recent as, or more recent than, the most recent toolset used to build any of the binaries. For example, if you have three binaries built with toolsets from VS 2015 version 14.3, VS 2017 version 15.1, and VS 2017 version 15.6, you can link them using any toolset version that is 15.6 or later. In some cases, this will also work for import libraries--especially if the import library strictly uses extern"C" for the imports/exports.
 
 - The Redistributable your app uses has a similar binary-compatibility restriction. When you mix binaries built by different supported versions of the toolset, the Redistributable version must be at least as new as the latest toolset used by any app component.
 
