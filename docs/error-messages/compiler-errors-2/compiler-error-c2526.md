@@ -21,6 +21,6 @@ class A {};
 
 extern "C" A<int> func()   // C2526
 {
-    return {};
+    return A<int>();
 }
 ```
