@@ -11,6 +11,8 @@ helpviewer_keywords: ["C2526"]
 
 A function defined with C linkage cannot return a user-defined type.
 
+The following sample generates C2526:
+
 ```cpp
 // C2526.cpp
 // compile with: /c
