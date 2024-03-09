@@ -78,6 +78,8 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1, Error) C4462](../../error-messages/compiler-warnings/compiler-warning-level-1-c4462.md)|'*type*' : cannot determine the GUID of the type. Program may fail at runtime.|
 |[Compiler warning (level 4) C4463](compiler-warning-level-4-c4463.md)|overflow; assigning '*value*' to bit-field that can only hold values from '*min_value*' to '*max_value*'|
 |[Compiler warning (level 4) C4464](../../error-messages/compiler-warnings/compiler-warning-level-4-c4464.md)|relative include path contains '..'|
+|Compiler warning (level 1) C4467|usage of ATL attributes is deprecated|
+|Compiler warning (level 1) C4468|the [[fallthrough]] attribute must be followed by a case label or a default label|
 |[Compiler warning (level 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|floating-point control pragmas ignored under /clr|
 |[Compiler warning (level 4) C4471](compiler-warning-level-4-c4471.md)|'*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)|
 |Compiler warning (level 1) C4472|'*identifier*' is a native enum: add an access specifier (private/public) to declare a 'WinRT\|managed' enum|
@@ -181,6 +183,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 1, Error) C4586|'*type*': A public type cannot be declared in a top-level namespace called 'Windows'|
 |Compiler warning (level 1) C4587|'*anonymous_structure*': behavior change: constructor is no longer implicitly called|
 |Compiler warning (level 1) C4588|'*anonymous_structure*': behavior change: destructor is no longer implicitly called|
+|Compiler warning (level 4) C4589|Constructor of abstract class '*class1*' ignores initializer for virtual base class '*class2*'|
 |Compiler warning (level 1) C4591|'constexpr' call-depth limit of *number* exceeded (/constexpr:depth\<NUMBER>)|
 |Compiler warning (level 3) C4592|'*function*': 'constexpr' call evaluation failed; function will be called at run-time|
 |Compiler warning (level 1) C4593|'*function*': 'constexpr' call evaluation step limit of '*limit*' exceeded; use /constexpr:steps\<NUMBER> to increase the limit|
