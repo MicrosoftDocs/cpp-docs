@@ -151,7 +151,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1) C4550](../../error-messages/compiler-warnings/compiler-warning-level-1-c4550.md)|expression evaluates to a function which is missing an argument list|
 |[Compiler warning (level 1) C4551](../../error-messages/compiler-warnings/compiler-warning-level-1-c4551.md)|function call missing argument list|
 |[Compiler warning (level 1) C4552](../../error-messages/compiler-warnings/compiler-warning-level-1-c4552.md)|'*operator*': operator has no effect; expected operator with side-effect|
-|[Compiler warning (level 1) C4553](../../error-messages/compiler-warnings/compiler-warning-level-1-c4553.md)|'*operator*': operator has no effect; did you intend 'operator?|
+|[Compiler warning (level 1) C4553](../../error-messages/compiler-warnings/compiler-warning-level-1-c4553.md)|'*operator*': operator has no effect; did you intend 'operator'?|
 |[Compiler warning (level 3) C4554](../../error-messages/compiler-warnings/compiler-warning-level-3-c4554.md) C4554|'*operator*': check operator precedence for possible error; use parentheses to clarify precedence|
 |[Compiler warning (level 1) C4555](../../error-messages/compiler-warnings/compiler-warning-level-1-c4555.md)|expression has no effect; expected expression with side-effect|
 |[Compiler warning (level 1) C4556](../../error-messages/compiler-warnings/compiler-warning-level-1-c4556.md)|value of intrinsic immediate argument '*value*' is out of range '*lower_bound* - *upper_bound*'|
