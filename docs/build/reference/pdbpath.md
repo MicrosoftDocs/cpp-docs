@@ -21,9 +21,9 @@ The name of the .dll or `.exe` file for which you want to find the matching `.pd
 
 ## Remarks
 
-`/PDBPATH` will search your computer along the same paths that the debugger would search for a `.pdb` file and will report which, if any, `.pdb` files correspond to the file specified in *filename*.
+`/PDBPATH` searches your computer along the same paths that the debugger searches for a `.pdb` file and reports which, if any, `.pdb` files correspond to the file specified in *filename*.
 
-When using the Visual Studio debugger, you may experience a problem due to the fact that the debugger is using a `.pdb` file for a different version of the file you are debugging.
+When using the Visual Studio debugger, you may experience a problem because the debugger is using a `.pdb` file for a different version of the file you're debugging.
 
 `/PDBPATH` will search for `.pdb` files along the following paths:
 
