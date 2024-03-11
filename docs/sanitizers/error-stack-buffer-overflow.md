@@ -95,7 +95,7 @@ int main(void) {
     Child *c = (Child*)&p;
     c->extra_field = 42;  // Boom !
 
-    return 0;
+    return (c->extra_field == 42);
 }
 ```
 

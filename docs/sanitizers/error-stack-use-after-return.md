@@ -33,7 +33,7 @@ int main() {
     foo();
     *x = 42; // Boom!
 
-    return 0;
+    return (*x == 42);
 }
 ```
 
@@ -96,10 +96,12 @@ int main(int argc, char* argv[]) {
 To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
-cl example2.cpp /fsanitize=address /fsanitize-address-use-after-return /Zi
+cl example2.cpp /fsanitize=address /fsanitize-address-use-after-return /Zi /Od
 set ASAN_OPTIONS=detect_stack_use_after_return=1
 devenv /debugexe example2.exe 1
 ```
+
+ASAN is a form of dynamic analysis, which means it can only detect bad code that is actually executed. An optimizer may determine that the value of `t[100 + Idx]` or `sink` is never used and elide the assignment. As a result, this example requires the `/Od` flag.
 
 ### Resulting error - C++ and templates
 
