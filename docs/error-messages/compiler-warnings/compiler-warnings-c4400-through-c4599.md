@@ -78,8 +78,8 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1, Error) C4462](../../error-messages/compiler-warnings/compiler-warning-level-1-c4462.md)|'*type*' : cannot determine the GUID of the type. Program may fail at runtime.|
 |[Compiler warning (level 4) C4463](compiler-warning-level-4-c4463.md)|overflow; assigning '*value*' to bit-field that can only hold values from '*min_value*' to '*max_value*'|
 |[Compiler warning (level 4) C4464](../../error-messages/compiler-warnings/compiler-warning-level-4-c4464.md)|relative include path contains '..'|
-|Compiler warning (level 1) C4467|usage of ATL attributes is deprecated|
-|Compiler warning (level 1) C4468|the [[fallthrough]] attribute must be followed by a case label or a default label|
+|Compiler warning (level 1) C4467|Usage of ATL attributes is deprecated|
+|Compiler warning (level 1) C4468|The [[fallthrough]] attribute must be followed by a `case` label or a `default` label|
 |[Compiler warning (level 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|floating-point control pragmas ignored under /clr|
 |[Compiler warning (level 4) C4471](compiler-warning-level-4-c4471.md)|'*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)|
 |Compiler warning (level 1) C4472|'*identifier*' is a native enum: add an access specifier (private/public) to declare a 'WinRT\|managed' enum|
