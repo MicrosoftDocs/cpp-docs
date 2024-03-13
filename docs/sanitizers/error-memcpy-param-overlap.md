@@ -39,7 +39,7 @@ cl example1.cpp /fsanitize=address /Zi /Oi
 devenv /debugexe example1.exe
 ```
 
-The [/Oi flag](../../build/reference/oi-generate-intrinsic-functions.md) tells the compiler to treat memcpy and memmove as intrinsic functions. This is necessary because some versions of the standard library implement memcpy and memmove in the same way. Because ASAN is a dynamic analysis tool, it only detects errors with an observable runtime effect.
+The [/Oi flag](../build/reference/oi-generate-intrinsic-functions.md) tells the compiler to treat memcpy and memmove as intrinsic functions. This is necessary because some versions of the standard library implement memcpy and memmove in the same way. Because ASAN is a dynamic analysis tool, it only detects errors with an observable runtime effect.
 
 ### Resulting error
 
