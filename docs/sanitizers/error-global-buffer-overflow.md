@@ -126,8 +126,10 @@ int main(int argc, char **argv) {
     case 'g': return global[one * 11];     //Boom! simple global
     case 'c': return C::array[one * 11];   //Boom! class static
     case 'f':
+    {
         static int array[10] = {};
         return array[one * 11];            //Boom! function static
+    }
     case 'l':
         // literal global ptr created by compiler
         const char *str = "0123456789";

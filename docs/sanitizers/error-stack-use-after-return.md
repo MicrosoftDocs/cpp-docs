@@ -21,7 +21,7 @@ This check can slow your application down substantially. Consider the [Clang sum
 ```cpp
 // example1.cpp
 // stack-use-after-return error
-char* x;
+volatile char* x;
 
 void foo() {
     char stack_buffer[42];

@@ -86,7 +86,7 @@ public:
 
 class Child : public Parent {
 public:
-    int extra_field;
+    volatile int extra_field;
 };
 
 int main(void) {
