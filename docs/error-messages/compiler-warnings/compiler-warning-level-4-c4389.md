@@ -1,8 +1,8 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4389"
 title: "Compiler Warning (level 4) C4389"
-description: "Microsoft C/C++ compiler warning C4389, its causes and resolution."
 ms.date: 10/16/2020
-f1_keywords: ["c4389"]
+f1_keywords: ["C4389"]
 helpviewer_keywords: ["C4389"]
 ---
 # Compiler Warning (level 4) C4389

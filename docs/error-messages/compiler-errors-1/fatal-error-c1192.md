@@ -2,9 +2,8 @@
 description: "Learn more about: Fatal Error C1192"
 title: "Fatal Error C1192"
 ms.date: "11/04/2016"
-f1_keywords: ["c1192"]
+f1_keywords: ["C1192"]
 helpviewer_keywords: ["C1192"]
-ms.assetid: 54cff717-a3eb-471d-9bd4-1c2e673dbbef
 ---
 # Fatal Error C1192
 
