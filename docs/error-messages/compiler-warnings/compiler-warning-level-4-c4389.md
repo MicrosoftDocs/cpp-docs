@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4389"
 title: "Compiler Warning (level 4) C4389"
+description: "Learn more about: Compiler Warning (level 4) C4389"
 ms.date: 10/16/2020
 f1_keywords: ["C4389"]
 helpviewer_keywords: ["C4389"]
