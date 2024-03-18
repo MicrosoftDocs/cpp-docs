@@ -18,6 +18,8 @@ Given the expanded register set, x64 uses the [__fastcall](../cpp/fastcall.md) c
 
 The **`__fastcall`** convention uses registers for the first four arguments, and the stack frame to pass more arguments. For details on the x64 calling convention, including register usage, stack parameters, return values, and stack unwinding, see [x64 calling convention](x64-calling-convention.md).
 
+For more information on the `__vectorcall` calling convention, see [__vectorcall](../cpp/vectorcall.md).
+
 ## Enable x64 compiler optimization
 
 The following compiler option helps you optimize your application for x64:
