@@ -76,7 +76,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C2857](compiler-error-c2857.md) | '#include' statement specified with the /Yc*filename* command-line option was not found in the source file |
 | [Compiler error C2858](compiler-error-c2858.md) | command-line option '/Yc (/Fd*filename*)' inconsistent with precompiled header, which used '/Fd*filename*' (Obsolete in Visual Studio 2022.) |
 | [Compiler error C2859](compiler-error-c2859.md) | *filename* is not the *filetype* file that was used when this precompiled header was created, recreate the precompiled header. |
-| [Compiler error C2860](compiler-error-c2860.md) | 'void' cannot be an argument type, except for '(void)' |
+| [Compiler error C2860](compiler-error-c2860.md) | 'void' cannot be used as a function parameter except for '(void)' |
 | [Compiler error C2861](compiler-error-c2861.md) | '*declaration*': an interface member function cannot be defined |
 | [Compiler error C2862](compiler-error-c2862.md) | '*interface*': an interface can only have public members |
 | [Compiler error C2863](compiler-error-c2863.md) | '*interface*': an interface cannot have friends |
