@@ -2,9 +2,8 @@
 description: "Learn more about: Compiler Warning (level 4) C4254"
 title: "Compiler Warning (level 4) C4254"
 ms.date: "11/04/2016"
-f1_keywords: ["c4254"]
+f1_keywords: ["C4254"]
 helpviewer_keywords: ["C4254"]
-ms.assetid: c7dcef24-d535-4c98-bb41-fc3d2b88fd11
 ---
 # Compiler Warning (level 4) C4254
 

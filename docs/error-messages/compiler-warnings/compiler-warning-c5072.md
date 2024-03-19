@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) c5072"
-title: "Compiler Warning (level 1) c5072"
+description: "Learn more about: Compiler Warning (level 1) C5072"
+title: "Compiler Warning (level 1) C5072"
 ms.date: 02/09/2024
-f1_keywords: ["c5072"]
-helpviewer_keywords: ["c5072"]
+f1_keywords: ["C5072"]
+helpviewer_keywords: ["C5072"]
 ---
-# Compiler Warning (level 1) c5072
+# Compiler Warning (level 1) C5072
 
 > ASAN enabled without debug information emission. Enable debug info for better ASAN error reporting
 
