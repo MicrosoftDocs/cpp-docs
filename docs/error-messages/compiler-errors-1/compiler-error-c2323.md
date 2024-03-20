@@ -11,7 +11,7 @@ helpviewer_keywords: ["C2323"]
 
 The `new` and `delete` overload operators must be non-static, defined in the global namespace or as a class members.
 
-The following sample generates C2323:
+The following generates C2323:
 
 ```cpp
 // C2323.cpp
