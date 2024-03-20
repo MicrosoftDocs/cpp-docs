@@ -7,22 +7,22 @@ helpviewer_keywords: ["C2323"]
 ---
 # Compiler Error C2323
 
-'identifier': non-member operator new or delete functions may not be declared static or in a namespace other than the global namespace
+'identifier': non-member operator `new` or `delete` functions may not be declared `static` or in a namespace other than the global namespace.
 
-Overloads for the `new` and `delete` operators must be defined as non-static in the global namespace or as a class member function.
+The `new` and `delete` overload operators must be non-static, defined in the global namespace or as a class members.
 
 The following sample generates C2323:
 
 ```cpp
 // C2323.cpp
 // compile with: /c
-static void* operator new(size_t);   // C2323
-static void operator delete(void*);   // C2323
+static void* operator new(size_t);   // C2323 since static
+static void operator delete(void*);  // C2323 since static
 
 namespace NS
 {
-    void* operator new(size_t);   // C2323
-    void operator delete(void*);   // C2323
+    void* operator new(size_t);   // C2323 since not defined in the global namespace
+    void operator delete(void*);  // C2323 since not defined in the global namespace
 }
 ```
 
