@@ -9,7 +9,7 @@ helpviewer_keywords: ["C2323"]
 
 'identifier': non-member operator `new` or `delete` functions may not be declared `static` or in a namespace other than the global namespace.
 
-The `new` and `delete` overload operators must be non-static, defined in the global namespace or as a class members.
+The `new` and `delete` overload operators must be non-static, defined in the global namespace or as class members.
 
 The following generates C2323:
 
