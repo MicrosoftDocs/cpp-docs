@@ -12,23 +12,29 @@ You've created a C++ console app project and entered your code. Now you can buil
 
 ## Prerequisites
 
-- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, follow the steps in [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
+- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed, follow the steps in [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
 
 - Create a "Hello, World!" project. By default, it contains code to print `Hello World!`. If you haven't done this step yet, follow the steps in [Create a C++ console app project](vscpp-step-1-create.md).
 
 If Visual Studio looks like this, you're ready to build and run your app:
 
-   ![Screenshot of Visual Studio showing the Hello World source code in the editor.](media/vscpp-ready-to-build.png "Ready to build the new project")
+   :::image type="complex" source="media/vscpp-ready-to-build.png" alt-text="Screenshot of the Hello World source code in the Visual Studio editor.":::
+   The source consists of #include \<iostream\> and a main function that does std::cout hello world and returns 0 from the function.
+   :::image-end:::
 
 ## Build and run your code in Visual Studio
 
 1. To build your project, choose **Build Solution** from the **Build** menu. The **Output** window shows the results of the build process.
 
-   ![View of the sequence of actions you take to build the project.](media/vscpp-build-solution.gif "Build the project")
+   :::image type="complex" source="media/vscpp-build-solution.gif" alt-text="Animated screenshot showing the sequence of actions taken to build a project in Visual Studio.":::
+   First, Build is selected from the main menu. Then Build Solution is selected. The Output window shows the build output messages, including that the build is successful.
+   :::image-end:::                                                                                                                                                                                                                                                            
 
 1. To run the code, on the menu bar, choose **Debug**, **Start without debugging**.
 
-   ![View of the actions you take to start the project.](media/vscpp-start-without-debugging.gif "Start the project")
+   :::image type="complex" source="media/vscpp-start-without-debugging.gif" alt-text="Video showing the actions taken to start a project in Visual Studio.":::
+   First, Debug is selected from the main menu. Then 'Start without debugging' is selected. A console window appears with the output of the program: Hello, World!
+   :::image-end:::
 
    A console window opens and then runs your app. When you start a console app in Visual Studio, it runs your code, then prints "Press any key to continue . . ." to give you a chance to see the output.
 
@@ -57,9 +63,11 @@ Normally, you run console apps at the command prompt, not in Visual Studio. Once
 
 4. In the command prompt window, right-click to paste the path to your app into the command prompt. Press Enter to run your app.
 
-   ![View of what happens when you run the app at the command prompt.](media/vscpp-run-in-cmd.gif "Run the app at the command prompt")
+   :::image type="complex" source="media/vscpp-run-in-cmd.gif" alt-text="Animated screenshot of Visual Studio 2022 that shows running an app from the command prompt.":::
+   First, the path of the program is determined by right-clicking the solution and selecting open folder in file explorer. The file explorer is navigated to the 'Debug' folder where the HelloWorld app is. The app is right-clicked, and Copy as Path selected. The run dialog is invoked and cmd.exe is run. A command line console appears. The path to the HelloWorld app is pasted in. The app runs, displaying: Hello World!
+   :::image-end:::
 
-Congratulations, you've built and run a console app in Visual Studio!
+Congratulations, you built and ran a console app in Visual Studio!
 
 [I ran into a problem.](#run-your-code-in-a-command-window-issues)
 
@@ -81,14 +89,14 @@ If red squiggles appear under anything in the source code editor, the build may 
 
 ::: moniker range="<msvc-170"
 
-If the path shown in File Explorer ends in `\HelloWorld\HelloWorld`, you've opened the HelloWorld *project* instead of the HelloWorld *solution*. You'll be confused by a `Debug` folder that doesn't contain your app. Navigate up a level in File Explorer to get to the solution folder, the first *HelloWorld* in the path. This folder also contains a `Debug` folder, and you'll find your app there.
+If the path shown in File Explorer ends in `\HelloWorld\HelloWorld`, you've opened the HelloWorld *project* instead of the HelloWorld *solution*. You'll be confused by a `Debug` folder that doesn't contain your app. Navigate up a level in File Explorer to get to the solution folder, the first *HelloWorld* in the path. This folder also contains a `Debug` folder, where your app is.
 
 You can also navigate to the solution `Debug` folder at the command line to run your app. Your app won't run from other directories without specifying the path to the app. However, you can copy your app to another directory and run it from there. It's also possible to copy it to a directory specified by your `PATH` environment variable, then run it from anywhere.
 
 ::: moniker-end
 ::: moniker range=">=msvc-170"
 
-If the path shown in File Explorer ends in `\HelloWorld\HelloWorld`, you've opened the HelloWorld *project* instead of the HelloWorld *solution*. You'll be confused by a `x64\Debug` folder that doesn't contain your app. Navigate up a level in File Explorer to get to the solution folder, the first `HelloWorld` in the path. This folder also contains a `x64\Debug` folder, and you'll find your app there.
+If the path shown in File Explorer ends in `\HelloWorld\HelloWorld`, you've opened the HelloWorld *project* instead of the HelloWorld *solution*. You'll be confused by a `x64\Debug` folder that doesn't contain your app. Navigate up a level in File Explorer to get to the solution folder, the first `HelloWorld` in the path. This folder also contains a `x64\Debug` folder, where your app is.
 
 You can also navigate to the solution `x64\Debug` folder at the command line to run your app. Your app won't run from other directories without specifying the path to the app. However, you can copy your app to another directory and run it from there. It's also possible to copy it to a directory specified by your `PATH` environment variable, then run it from anywhere.
 
