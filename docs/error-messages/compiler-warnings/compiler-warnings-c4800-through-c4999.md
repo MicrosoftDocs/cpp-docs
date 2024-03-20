@@ -16,6 +16,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | Warning | Message |
 |--|--|
 | [Compiler warning (level 4, off) C4800](compiler-warning-level-3-c4800.md) | Implicit conversion from '*type*' to `bool`. Possible information loss |
+|Compiler warning C4801|Return by reference is not verifiable: *message*|
 | [Compiler warning (level 1) C4803](compiler-warning-level-1-c4803.md) | '*method*': the raise method has a different storage class from that of the event, '*event*' |
 | [Compiler warning (level 1) C4804](compiler-warning-level-1-c4804.md) | '*operation*': unsafe use of type '`bool`' in operation |
 | [Compiler warning (level 1) C4805](compiler-warning-level-1-c4805.md) | '*operation*': unsafe mix of type '*type1*' and type '*type2*' in operation |
@@ -27,6 +28,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 1) C4811](compiler-warning-level-1-c4811.md) | value of `pragma conform(forScope, show)` == *value* |
 | [Compiler warning (level 1) C4812](compiler-warning-level-1-c4812.md) | obsolete declaration style: please use '*new_syntax*' instead |
 | [Compiler warning (level 1) C4813](compiler-warning-level-1-c4813.md) | '*function*': a friend function of a local class must have been previously declared |
+|Compiler warning (level 4) C4815|'*object name*': zero-sized array in stack object will have no elements (unless the object is an aggregate that has been aggregate initialized)|
 | [Compiler warning (level 4) C4816](compiler-warning-level-4-c4816.md) | '*param*': parameter has a zero-sized array which will be truncated (unless the object is passed by reference) |
 | [Compiler warning (level 1) C4817](compiler-warning-level-1-c4817.md) | '*member*': illegal use of '.' to access this member; compiler replaced with '->' |
 | [Compiler warning (level 1) C4819](compiler-warning-level-1-c4819.md) | The file contains a character that cannot be represented in the current code page (number). Save the file in Unicode format to prevent data loss |
@@ -36,6 +38,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 3) C4823](compiler-warning-level-3-c4823.md) | '*function*': uses pinning pointers but unwind semantics are not enabled. Consider using `/EHa` |
 | Compiler warning (level 2, off) C4826 | Conversion from '*type1*' to '*type2*' is sign-extended. This may cause unexpected runtime behavior. |
 | Compiler warning (level 3) C4827 | A public '`ToString`' method with 0 parameters should be marked as `virtual` and `override` |
+|Compiler warning (level 1) C4828|The file contains a character starting at offset 0x*HexOffset* that is illegal in the current source character set (codepage *codepage*).|
 | [Compiler warning (level 1) C4829](compiler-warning-level-1-c4829.md) | Possibly incorrect parameters to function `main`. Consider '`int main(Platform::Array<Platform::String^>^ argv)`' |
 | [Compiler warning (level 1) C4834](c4834.md) | discarding return value of function with 'nodiscard' attribute |
 | [Compiler warning (level 1) C4835](compiler-warning-level-1-c4835.md) | '*variable*': the initializer for exported data will not be run until managed code is first executed in the host assembly |
@@ -51,20 +54,28 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 4) C4846 | '*value*' is not a valid argument for '`/d1initall`': command-line flag ignored |
 | Compiler warning (level 4) C4847 | '`__declspec(no_init_all)`' can only be applied to a function, a class type, or a local variable: ignored |
 | Compiler warning (level 1) C4848 | support for standard attribute '`no_unique_address`' in C++17 and earlier is a vendor extension |
+|Compiler warning (level 1) C4849|OpenMP '*clause*' clause ignored in '*directive*' directive|
 | Compiler warning (Level 1, error) C4854 | binding dereferenced null pointer to reference has undefined behavior |
 | Compiler warning (level 1, off) C4855 | implicit capture of '`this`' via '`[=]`' is deprecated in 'version' |
 | Compiler warning (level 4) C4856 | '*value*' is not a valid argument for '`/d1initAll:FillPattern`' (value must be between 0 and 255). Command-line flag ignored |
 | Compiler warning (level 1) C4857 | C++/CLI mode does not support C++ versions newer than C++17; setting language to `/std:c++17` |
+|Compiler warning (level 1) C4858|discarding return value: *function name*|
+|Compiler warning (level 4) C4859|'*value*' is not a valid argument for '`/presetWarn`': it must be a decimal value > 0. Command-line flag ignored|
+|Compiler warning (level 4) C4860|'*object name*': compiler zero initialized '*number*' bytes of storage|
+|Compiler warning (level 4) C4861|compiler zero initialized '*number*' bytes of storage|
 | [Compiler warning (level 4) C4866](c4866.md) | compiler may not enforce left-to-right evaluation order for call to *operator_name* |
 | [Compiler warning (level 1, error) C4867](compiler-warning-c4867.md) | '*function*': function call missing argument list; use '*call*' to create a pointer to member |
 | [Compiler warning (level 4) C4868](compiler-warning-c4868.md) | '*file*(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list |
+|Compiler warning (level 3) C4869|'`nodiscard`' may only be applied to classes, enumerations, and functions|
 | Compiler warning (level 2) C4872 | floating point division by zero detected when compiling the call graph for the `concurrency::parallel_for_each` at: '*location*' |
 | Compiler warning (level 1) C4880 | casting from 'const *type_1*' to '*type_2*': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function |
 | Compiler warning (level 4) C4881 | the constructor and/or the destructor will not be invoked for `tile_static` variable '*variable-name*' |
 | Compiler warning (level 1) C4882 | passing functors with non-const call operators to `concurrency::parallel_for_each` is deprecated |
+|Compiler warning C4883|'*function name*': function size suppresses optimizations|
 | [Compiler warning C4900](compiler-warning-level-1-c4900.md) | Il mismatch between '*tool1*' version '*version1*' and '*tool2*' version '*version2*' |
 | [Compiler warning (level 1, off) C4905](compiler-warning-level-1-c4905.md) | wide string literal cast to '`LPSTR`' |
 | [Compiler warning (level 1, off) C4906](compiler-warning-level-1-c4906.md) | string literal cast to '`LPWSTR`' |
+|Compiler warning (Error) C4907|multiple calling conventions cannot be specified; last given will be used|
 | [Compiler warning (level 1) C4910](compiler-warning-level-1-c4910.md) | '\<identifier>: '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation |
 | [Compiler warning (level 1) C4912](compiler-warning-level-1-c4912.md) | '*attribute*': attribute has undefined behavior on a nested UDT |
 | [Compiler warning (level 4) C4913](compiler-warning-level-4-c4913.md) | user defined binary operator '`,`' exists but no overload could convert all operands, default built-in binary operator '`,`' used |
@@ -115,6 +126,8 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 1, Error) C4972](compiler-warning-c4972.md) | Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable |
 | Compiler warning (level 1) C4973 | '*symbol*': marked as deprecated |
 | Compiler warning (level 1) C4974 | '*symbol*': marked as deprecated |
+|Compiler warning (level 1) C4975|modopt '[*modifier*]' was ignored for formal parameter '*parameter*'|
+|Compiler warning (level 1) C4976|invalid value '*value*' for '`/W`'; assuming '1'|
 | Compiler warning (level 3) C4981 | Warbird: function '*function*' marked as __forceinline not inlined because it contains exception semantics |
 | Compiler warning (level 3) C4983 | '/analyze:sarif:hashname' ignored because the argument to '/analyze:log' is a single file rather than a directory |
 | [Compiler warning C4984](compiler-warning-c4984.md) | '`if constexpr`' is a C++17 language extension |
@@ -184,6 +197,8 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 1) C5106 | macro redefined with different parameter names |
 | Compiler warning (level 1) C5107 | missing terminating '*char*' character |
 | Compiler warning (level 1) C5108 | `__VA_OPT__` is reserved for use in variadic macros |
+|Compiler warning (level 1) C5109|`__VA_OPT__` use in macro requires '`/Zc:preprocessor`'|
+|Compiler warning (level 4, off) C5110|`__VA_OPT__` is an extension prior to C++20 or C23|
 | Compiler warning (level 1) C5200 | feature 'feature-name' requires compiler flag 'option-name' |
 | Compiler warning (level 1) C5201 | a module declaration can appear only at the start of a translation unit unless a global module fragment is used |
 | Compiler warning (level 1) C5202 | a global module fragment can only contain preprocessor directives |
@@ -248,11 +263,24 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 1, error, off) C5262](c5262.md) | implicit fall-through occurs here; are you missing a break statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases |
 | Compiler warning (level 4, off) C5263 | calling '`std::move`' on a temporary object prevents copy elision |
 | Compiler warning (level 4, off) C5264 | '*variable-name*': 'const' variable is not used |
+|Compiler warning (level 1) C5265|cannot open search path '*path*'|
 | [Compiler warning (level 4, off) C5266](compiler-warning-level-4-c5266.md) | 'const' qualifier on return type has no effect |
 | [Compiler warning C5267](c5267.md) | definition of implicit copy constructor/assignment operator for '*type*' is deprecated because it has a user-provided assignment operator/copy constructor |
+|Compiler warning (level 1) C5268|Failed to allocate memory at fixed address 0x*address*. Use `/Yb` to specify a specific address base if bit-identical .pch files are required.|
+|Compiler warning (level 1) C5269|Failed to allocate PCH memory at fixed address 0x*address*. Use `/Ym` to specify a specific address base if bit-identical .pch files are required.|
+|Compiler warning (level 3) C5270|'*value*' is not allowed for option '*switch name*'; allowed values are: *value list*|
+|Compiler warning (level 4) C5271|previously imported assembly '*assembly1*' has the same name as assembly '*assembly2*' being imported. Is this intentional?|
+|Compiler warning (level 1) C5272|throwing an object of non-copyable type '*type*' is non-standard. If a copy is needed at runtime it will be made as if by `memcpy`.|
+|Compiler warning (level 1) C5273|behavior change: `_Alignas` on anonymous type no longer ignored (promoted members will align)|
+|Compiler warning (level 1) C5274|behavior change: `_Alignas` no longer applies to the type '*type*' (only applies to declared data objects)|
+|Compiler warning (Error) C5275|facade assembly '*name*' being imported under '`/clr`'; missing option '`/clr:netcore`'?|
 | Compiler warning (level 1, error) C5300 | '#pragma omp atomic': left operand of '*operator*' must match left hand side of assignment-expression |
 | [Compiler warning (level 1) C5301](c5301-c5302.md) | '#pragma omp for': '*loop-index*' increases while loop condition uses '*comparison*'; non-terminating loop? |
 | [Compiler warning (level 1) C5302](c5301-c5302.md) | '#pragma omp for': '*loop-index*' decreases while loop condition uses '*comparison*'; non-terminating loop? |
+|Compiler warning (level 1) C5303|function marked with `[[msvc::intrinsic]]` did not result in a no-op cast|
+|Compiler warning (level 1) C5304|a declaration designated by the using-declaration '*name1*' exported from this module has internal linkage and using such a name outside the module is ill-formed; consider declaring '*name2*' '`inline`' to use it outside of this module|
+|Compiler warning (level 1) C5305|'*name*': an explicit instantiation declaration that follows an explicit instantiation definition is ignored|
+
 
 ## See also
 
