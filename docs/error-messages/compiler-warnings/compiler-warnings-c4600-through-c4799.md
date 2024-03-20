@@ -54,6 +54,9 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 4) C4639](../../error-messages/compiler-warnings/compiler-warning-level-4-c4639.md)|MSXML error, XML document comments will not be processed. Reason|
 |[Compiler warning (level 3) C4640](../../error-messages/compiler-warnings/compiler-warning-level-3-c4640.md)|'instance': construction of local static object is not thread-safe|
 |[Compiler warning (level 3) C4641](../../error-messages/compiler-warnings/compiler-warning-level-3-c4641.md)|XML document comment has an ambiguous cross reference:|
+|Compiler warning (level 1) C4642|'*class*': could not import the constraints for generic parameter '*name*'|
+|Compiler warning (level 4, off) C4643|Forward declaring '*identifier*' in namespace std is not permitted by the C++ Standard.|
+|Compiler warning (level 1) C4644|usage of the macro-based `offsetof` pattern in constant expressions is non-standard; use `offsetof` defined in the C++ standard library instead|
 |[Compiler warning (level 3) C4645](compiler-warning-level-3-c4645.md)|function declared with __declspec(noreturn) has a return statement|
 |[Compiler warning (level 3) C4646](compiler-warning-level-3-c4646.md)|function declared with __declspec(noreturn) has non-void return type|
 |Compiler warning (level 3) C4647|behavior change: __is_pod(*type*) has different value in previous versions|
@@ -124,10 +127,12 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1) C4727](../../error-messages/compiler-warnings/compiler-warning-level-1-c4727.md)|PCH named pch_file with same timestamp found in obj_file_1 and obj_file_2.  Using first PCH.|
 |Compiler warning (level 1) C4728|/Yl- option ignored because PCH reference is required|
 |Compiler warning (level 4) C4729|function too big for flow graph based warnings|
-|[Compiler warning (Level 1) C4730](../../error-messages/compiler-warnings/compiler-warning-level-1-c4730.md)Compiler warning (level 1) C4730|'main': mixing _m64 and floating point expressions may result in incorrect code|
+|[Compiler warning (Level 1) C4730](../../error-messages/compiler-warnings/compiler-warning-level-1-c4730.md)|'main': mixing _m64 and floating point expressions may result in incorrect code|
 |[Compiler warning (Level 1) C4731](../../error-messages/compiler-warnings/compiler-warning-level-1-c4731.md)|'pointer': frame pointer register 'register' modified by inline assembly code|
 |Compiler warning (level 1) C4732|intrinsic '%s' is not supported in this architecture|
 |[Compiler warning (Level 1) C4733](../../error-messages/compiler-warnings/compiler-warning-level-1-c4733.md)|Inline asm assigning to 'FS:0': handler not registered as safe handler|
+|Compiler warning C4735|`align_function` attribute argument '*argument*' is not a power of two and is not positive. Ignoring attribute|
+|Compiler warning C4736|`align_function` attribute ignored because `/Gy` was not specified|
 |[Compiler warning (Level 3) C4738](../../error-messages/compiler-warnings/compiler-warning-level-3-c4738.md)|storing 32-bit float result in memory, possible loss of performance|
 |[Compiler warning (level 1) C4739](compiler-warning-level-1-c4739.md)|reference to variable 'var' exceeds its storage space|
 |[Compiler warning (Level 4) C4740](../../error-messages/compiler-warnings/compiler-warning-level-4-c4740.md)|flow in or out of inline asm code suppresses global optimization|
@@ -140,6 +145,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1) C4750](compiler-warning-level-1-c4750.md)|'identifier': function with _alloca() inlined into a loop|
 |Compiler warning (level 4) C4751|/arch:AVX does not apply to Intel(R) Streaming SIMD Extensions that are within inline ASM|
 |Compiler warning (level 4) C4752|found Intel(R) Advanced Vector Extensions; consider using /arch:AVX|
+|Compiler warning C4753|Cannot find bounds for pointer; MPX intrinsic function ignored|
 |[Compiler warning (level 4) C4754](compiler-warning-level-4-c4754.md)|Conversion rules for arithmetic operations in the comparison at %s(%d) mean that one branch cannot be executed. Cast '%s' to '%s' (or similar type of %d bytes).|
 |Compiler warning C4755|Conversion rules for arithmetic operations in the comparison at %s(%d) mean that one branch cannot be executed in an inlined function. Cast '%s' to '%s' (or similar type of %d bytes).|
 |[Compiler warning (level 2) C4756](../../error-messages/compiler-warnings/compiler-warning-level-2-c4756.md)|overflow in constant arithmetic|
