@@ -2,9 +2,8 @@
 description: "Learn more about: Compiler errors C2300 Through C2399"
 title: "Compiler errors C2300 Through C2399"
 ms.date: "04/21/2019"
-f1_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2323", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
-helpviewer_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2323", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
-ms.assetid: 07ca45b5-b2f0-4049-837b-40a7a3caed88
+f1_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
+helpviewer_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
 ---
 # Compiler errors C2300 Through C2399
 
@@ -39,7 +38,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2320](compiler-error-c2320.md)|expected ':' to follow access specifier '*specifier*'|
 |Compiler error C2321|'*identifier*' is a keyword, and cannot be used in this context|
 |[Compiler error C2322](compiler-error-c2322.md)|'*identifier*': address of dllimport '*identifier*' is not static|
-|Compiler error C2323|'*identifier*': non-member operator new or delete functions may not be declared static or in a namespace other than the global namespace|
+|[Compiler error C2323](compiler-error-c2323.md)|'*identifier*': non-member operator new or delete functions may not be declared static or in a namespace other than the global namespace|
 |[Compiler error C2324](compiler-error-c2324.md)|'*identifier*': unexpected to the right of '::~'|
 |[Compiler error C2325](compiler-error-c2325.md)|'*type1*': unexpected type to the right of '->~': expected '*type2*'|
 |[Compiler error C2326](compiler-error-c2326.md)|'*declarator*': function cannot access '*identifier*'|
