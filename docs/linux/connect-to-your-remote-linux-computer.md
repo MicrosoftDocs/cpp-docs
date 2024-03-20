@@ -25,7 +25,7 @@ You can configure a Linux project to target a remote machine or the Windows Subs
 
 ::: moniker range=">=msvc-150"
 
-When using a remote connection, Visual Studio builds C++ Linux projects on the remote machine. It doesn't matter if it's a physical machine, a VM in the cloud, or WSL.
+When using a remote connection, Visual Studio builds C++ Linux projects on the remote machine. It doesn't matter if it's a physical machine, a virtual machine in the cloud, or WSL.
 To build the project, Visual Studio copies the source code to your remote Linux computer. Then, the code gets compiled based on Visual Studio settings.
 
 ::: moniker-end
@@ -64,11 +64,13 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
 1. In the Connection Manager dialog, choose the **Add** button to add a new connection.
 
-   ![Screenshot showing the options pane and CrossPlatform > C plus plus > Connection Manager selected. The Add button is highlighted.](media/settings_connectionmanager.png)
+   :::image type="content" source="media/settings_connectionmanager.png" alt-text="Screenshot of the Visual Studio options pane. CrossPlatform > C++ > Connection Manager is selected and the Add button is highlighted.":::
 
    In either scenario, the **Connect to Remote System** window is displayed.
 
-   ![Screenshot showing the Connect to Remote System window which has fields for host name, port, user name, authentication type, and password.](media/connect.png)
+   :::image type="content" source="media/connect.png" alt-text="Screenshot of the Visual Studio Connect to Remote System window.":::
+   There are fields for host name, port, user name, authentication type, and password. Port is set to 22. Authentication type is set to 'Password'.
+   :::image-end:::
 
 1. Enter the following information:
 
@@ -84,7 +86,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
    You can use either a password or a key file and passphrase for authentication. For many development scenarios, password authentication is sufficient, but key files are more secure. If you already have a key pair, it's possible to reuse it.
 
-   Versions of Visual Studio before 17.10 support EC, RSA and DSA keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported. To create a key pair compatible with the connection manager use the command:
+   Versions of Visual Studio before 17.10 support EC, RSA, and DSA keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported. To create a key pair compatible with the connection manager use the command:
    `ssh-keygen -m pem -t ecdsa -f <key-name>`
    
    > [!NOTE]
@@ -96,7 +98,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
    If the connection fails, the entry boxes that need to be changed are outlined in red.
 
-   ![Screenshot of the Connect to Remote System window with the host name and port fields outlined in red to indicate that they are incorrect.](media/settings_connectionmanagererror.png)
+   :::image type="content" source="media/settings_connectionmanagererror.png" alt-text="Screenshot of the Visual Studio Connect to Remote System window. The host name and port fields are outlined in red to indicate incorrect entries.":::
 
    If you use key files for authentication, make sure the target machine's SSH server is running and configured properly.
 
@@ -108,11 +110,11 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
 ## Host key verification
 
-In Visual Studio version 16.10 or later, you'll be asked to verify the server's host key fingerprint whenever Visual Studio connects to a remote system for the first time. You may be familiar with this process if you've used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server. Visual Studio uses the fingerprint to ensure it's connecting to the intended and trusted server.
+In Visual Studio version 16.10 or later, you are asked to verify the server's host key fingerprint whenever Visual Studio connects to a remote system for the first time. You may be familiar with this process if you've used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server. Visual Studio uses the fingerprint to ensure it's connecting to the intended and trusted server.
 
-The first time Visual Studio establishes a new remote connection, you'll be asked to accept or deny the host key fingerprint presented by the server. Or, anytime there are changes to a cached fingerprint. You can also verify a fingerprint on demand: select a connection in the Connection Manager and choose **Verify**.
+The first time Visual Studio establishes a new remote connection, you are asked to accept or deny the host key fingerprint presented by the server. Or, anytime there are changes to a cached fingerprint. You can also verify a fingerprint on demand: select a connection in the Connection Manager and choose **Verify**.
 
-If you upgrade to Visual Studio 16.10 or later from an older version, it treats any existing remote connections as new connections. You'll be prompted to accept the host key fingerprint first. Then, Visual Studio establishes a connection and caches the accepted fingerprint.
+If you upgrade to Visual Studio 16.10 or later from an older version, it treats any existing remote connections as new connections. You are prompted to accept the host key fingerprint first. Then, Visual Studio establishes a connection and caches the accepted fingerprint.
 
 You can also update remote connections from `ConnectionManager.exe` using the `update` argument.
 
@@ -131,11 +133,11 @@ Starting in Visual Studio version 16.9, support for older, insecure SSH algorith
 
 First, a little background. You can't select the SSH algorithm to use from Visual Studio. Instead, the algorithm is determined during the initial handshake with the SSH server. Each side (client and server) provides a list of algorithms it supports, and then the first algorithm common to both is selected. The connection succeeds as long as there's at least one algorithm in common between Visual Studio and the server for encryption, HMAC, key exchange, and so on.
 
-The Open SSH configuration file (*`sshd_config`*) doesn't configure which algorithm to use by default. The SSH server should use secure defaults when no algorithms are specified. Those defaults depend on the version and vendor of the SSH server.  If Visual Studio doesn't support those defaults, you'll likely see an error like: "Could not connect to the remote system. No common client to server HMAC algorithm was found." The error may also appear if the SSH server is configured to use algorithms that Visual Studio doesn't support.
+The Open SSH configuration file (*`sshd_config`*) doesn't configure which algorithm to use by default. The SSH server should use secure defaults when no algorithms are specified. Those defaults depend on the version and vendor of the SSH server. If Visual Studio doesn't support those defaults, you'll likely see an error like: "Could not connect to the remote system. No common client to server HMAC algorithm was found." The error may also appear if the SSH server is configured to use algorithms that Visual Studio doesn't support.
 
 The default SSH server on most modern Linux distributions should work with Visual Studio. However, you may be running an older SSH server that's configured to use older, insecure algorithms. The following example explains how to update to more secure versions.
 
-In the following example, the SSH server uses the insecure `hmac-sha1` algorithm, which isn't supported by Visual Studio 16.9. If the SSH server uses OpenSSH, you can edit the `/etc/ssh/sshd_config` file as shown below to enable more secure algorithms. For other SSH servers, refer to the server's documentation for how to configure them.
+In the following example, the SSH server uses the insecure `hmac-sha1` algorithm, which Visual Studio 16.9 doesn't support. If the SSH server uses OpenSSH, you can edit the `/etc/ssh/sshd_config` file as shown below to enable more secure algorithms. For other SSH servers, refer to the server's documentation for how to configure them.
 
 First, verify that the set of algorithms your server is using  includes algorithms supported by Visual Studio. Run the following command on the remote machine to list the algorithms supported by the server:
 
@@ -155,7 +157,7 @@ ecdsa-sha2-nistp521-cert-v01@openssh.com
 sk-ecdsa-sha2-nistp256-cert-v01@openssh.com
 ```
 
-The output lists all the encryption, HMAC, key exchange, and host key algorithms supported by your SSH server. If the list doesn't include algorithms supported by Visual Studio, then you'll need to upgrade your SSH server before proceeding.
+The output lists all the encryption, HMAC, key exchange, and host key algorithms supported by your SSH server. If the list doesn't include algorithms supported by Visual Studio, then upgrade your SSH server before proceeding.
 
 You can enable algorithms supported by Visual Studio by editing `/etc/ssh/sshd_config` on the remote machine. The following examples show how to add various types of algorithms to that configuration file.
 
@@ -187,7 +189,9 @@ For example: `HostKeyAlgorithms ecdsa-sha2-nistp256,ecdsa-sha2-nistp384`
 
    You can enable logging to help troubleshoot connection problems. On the menu bar, select **Tools > Options**. In the **Options** dialog, select **Cross Platform > Logging**:
 
-   ![Screenshot of the Remote Logging screen with options to enable logging, log file location, and whether to log to the output window.](media/remote-logging-vs2019.png)
+   :::image type="complex" source="media/remote-logging-vs2019.png" alt-text="Screenshot of the Visual Studio options screen.":::
+   The options are open to Cross Platform > Connection Manager > Logging. Enable logging is checked, log to a file is checked, the logfile directory is set the documents folder, and log to the 'Cross Platform Logging' pane in the output window is checked.
+   :::image-end:::
 
    Logs include connections, all commands sent to the remote machine (their text, exit code and execution time), and all output from Visual Studio to the shell. Logging works for any cross-platform CMake project or MSBuild-based Linux project in Visual Studio.
 
@@ -203,13 +207,15 @@ For example: `HostKeyAlgorithms ecdsa-sha2-nistp256,ecdsa-sha2-nistp384`
 
 ## TCP Port Forwarding
 
-The `rsync` command is used by both MSBuild-based Linux projects and CMake projects to [copy headers from your remote system to Windows for use by IntelliSense](configure-a-linux-project.md#remote_intellisense). When you can't enable TCP port forwarding, disable the automatic download of remote headers. To disable it, use **Tools > Options > Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. If the remote system doesn't have TCP port forwarding enabled, you'll see this error when the download of remote headers for IntelliSense begins:
+The `rsync` command is used by both MSBuild-based Linux projects and CMake projects to [copy headers from your remote system to Windows for use by IntelliSense](configure-a-linux-project.md#remote_intellisense). When you can't enable TCP port forwarding, disable the automatic download of remote headers. To disable it, use **Tools > Options > Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. If the remote system doesn't have TCP port forwarding enabled, this error appears when the download of remote headers for IntelliSense begins:
 
-![Screenshot showing an error that the SSH channel couldn't be opened, and a path to log file for more details.](media/port-forwarding-headers-error.png)
+:::image type="content" source="media/port-forwarding-headers-error.png" alt-text="Screenshot of a Visual Studio error message that the SSH channel couldn't be opened. The path to a log file is provided.":::
 
-`rsync` is also used by Visual Studio's CMake support to copy source files to the remote system. If you can't enable TCP port forwarding, you can use `sftp` as your remote copy sources method. `sftp` is often slower than `rsync`, but doesn't have a dependency on TCP port forwarding. You can manage your remote copy sources method with the `remoteCopySourcesMethod` property in the [CMake Settings Editor](../build/cmakesettings-reference.md#settings-for-cmake-linux). If TCP port forwarding is disabled on your remote system, you'll see an error in the CMake output window the first time it invokes `rsync`.
+`rsync` is also used by Visual Studio's CMake support to copy source files to the remote system. If you can't enable TCP port forwarding, you can use `sftp` as your remote copy sources method. `sftp` is often slower than `rsync`, but doesn't have a dependency on TCP port forwarding. You can manage your remote copy sources method with the `remoteCopySourcesMethod` property in the [CMake Settings Editor](../build/cmakesettings-reference.md#settings-for-cmake-linux). If TCP port forwarding is disabled on your remote system, an error appears in the CMake output window the first time it invokes `rsync`.
 
-![Screenshot of the output window which shows an Rsync Error that the SSH channel couldn't be opened.](media/port-forwarding-copy-error.png)
+:::image type="complex" source="media/port-forwarding-copy-error.png" alt-text="Screenshot of the Visual Studio output window displaying a Rsync Error message.":::
+The output window includes these messages: Verify that TCP forwarding is enabled on the server, rsync: did not see server greeting, rsync error: error starting client-server protocol (code 5) at main.c(1675) [sender=3.1.3], An SSH channel couldn't be opened.
+:::image-end:::
 
 `gdbserver` can be used for debugging on embedded devices. If you can't enable TCP port forwarding, then you must use `gdb` for all remote debugging scenarios. `gdb` is used by default when debugging projects on a remote system.
 

@@ -14,29 +14,31 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Prerequisites
 
-- Have Visual Studio with the **Desktop development with C++** workload installed and running on your computer. If it's not installed yet, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md).
+- Have Visual Studio with the **Desktop development with C++** workload installed and running on your computer. If it's not installed, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md).
 - This tutorial demonstrates a feature called edit and continue which allows you to make changes to your code while the app is running. To ensure that edit and continue can function for this article, from the main menu choose **Tools** > **Options** > **Debugging** > **General** and ensure that **Require source files to exactly match the original version** is checked.
 
 ## Create your app project
 
 Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It also manages the relationship between all the project's files and any external files. To create your app, first, create a new project and solution.
 
-1. If you've started Visual Studio, the Visual Studio Start dialog box appears. Choose **Create a new project** to get started.
+1. Start Visual Studio and the Visual Studio Start dialog box appears. Choose **Create a new project** to get started.
 
-   ![Screenshot of the Visual Studio 2022 initial dialog with options such as create a new project, open an existing project, and more.](./media/calc-vs2022-initial-dialog.png)
+   :::image type="complex" source="./media/calc-vs2022-initial-dialog.png" alt-text="Screenshot of dialog that appears when Visual Studio 2022 starts.":::
+   The dialog has options to clone a repository, open a project or solution, open a local folder, and create a new project."
+   :::image-end:::
 
    Otherwise, on the menubar in Visual Studio, choose **File** > **New** > **Project**. The **Create a new project** window opens.
 
 1. In the list of project templates, choose **Console App**, then choose **Next**.
 
-   ![Screenshot of the Create a new project dialog, with the Console App template selected.](./media/calc-vs2019-choose-console-app.png "Choose the Console App template")
+   :::image type="content" source="./media/calc-vs2019-choose-console-app.png" alt-text="Screenshot of the Visual Studio Create a new project dialog. The Console App template option is highlighted.":::
 
    > [!Important]
    > Make sure you choose the C++ version of the **Console App** template. It has the **C++**, **Windows**, and **Console** tags, and the icon has "++" in the corner.
 
 1. In the **Configure your new project** dialog box, select the **Project name** edit box, name your new project *CalculatorTutorial*, then choose **Create**.
 
-   ![Screenshot of the Configure your new project dialog, which has fields for the project name, project location, and so on.](./media/calc-vs2019-name-your-project.png "Name your project in the Configure your new project dialog")
+   :::image type="content" source="./media/calc-vs2019-name-your-project.png" alt-text="Screenshot of the Visual Studio Configure your new project dialog. It has fields for project name, project location, and Solution name.":::
 
    An empty C++ Windows console application gets created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
 
@@ -69,11 +71,11 @@ The template for a new Windows console application creates a simple C++ "Hello W
 
 1. To build your project, choose **Build Solution** from the **Build** menu. The **Output** window shows the results of the build process.
 
-   ![Screenshot of the Visual Studio Output window showing the result of the build.](./media/calc-vs2019-build-your-project.png "Build the project")
+   :::image type="content" source="./media/calc-vs2019-build-your-project.png" alt-text="Screenshot of the Visual Studio Output window. It is displaying a message that the build succeeded.":::
 
 1. To run the code, on the menu bar, choose **Debug**, **Start without debugging**.
 
-   ![Screenshot of the Visual Studio Debug Console showing the output: "Hello World!"](./media/calc-vs2019-hello-world-console.png "Run the project")
+   :::image type="content" source="./media/calc-vs2019-hello-world-console.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the output of the application: Hello World!.":::
 
    A console window opens and then runs your app. When you start a console app in Visual Studio, it runs your code, then prints "Press any key to close this window . . ." to give you a chance to see the output. Congratulations! You've created your first "Hello, world!" console app in Visual Studio!
 
@@ -136,13 +138,17 @@ It's time to add some math logic.
 
 1. Go to the **Project** menu and choose **Add Class**. In the **Class Name** edit box, enter *Calculator*. Choose **OK**. Two new files get added to your project. To save all your changed files at once, press **Ctrl+Shift+S**. It's a keyboard shortcut for **File** > **Save All**. There's also a toolbar button for **Save All**, an icon of two floppy disks, found beside the **Save** button. In general, it's good practice to do **Save All** frequently, so you don't miss any files when you save.
 
-   ![Screenshot of the Add Class dialog box with Calculator typed in the Class Name text box.](./media/calc-vs2019-create-calculator-class.png "Create the Calculator class")
+   :::image type="complex" source="./media/calc-vs2019-create-calculator-class.png" alt-text="Screenshot of the Visual Studio Add Class dialog box.":::
+   The class name field is set to calculator. The .h file field contains Calculator.h. The .cpp file field contains Calculator.cpp. The base class field is empty. Other options for virtual destructor, inline, and unmanaged are unchecked.
+   :::image-end:::
 
    A class is like a blueprint for an object that does something. In this case, we define a calculator and how it should work.
 
    The **Add Class** wizard you used previously created `.h` and `.cpp` files that have the same name as the class. You can see a full list of your project files in the **Solution Explorer** window, visible on the side of the IDE. If the window isn't visible, you can open it from the menu bar: choose **View** > **Solution Explorer**.
 
-   ![Screenshot of the Visual Studio 2019 Solution Explorer window displaying the Calculator Tutorial project.](./media/calc-vs2019-solution-explorer.png "Solution Explorer")
+   :::image type="complex" source="./media/calc-vs2019-solution-explorer.png" alt-text="Screenshot of the Visual Studio Solution Explorer window.":::
+   The calculator tutorial project has a header files node containing Calculator.h. A Source Files node contains Calculator.cpp and CalculatorTutorial.cpp. Nodes for references, external dependencies, and resource files are visible but closed.
+   :::image-end:::
 
    You should now have three tabs open in the editor: *`CalculatorTutorial.cpp`*, *`Calculator.h`*, and *`Calculator.cpp`*. If you accidentally close one of them, you can reopen it by double-clicking it in the **Solution Explorer** window.
 
@@ -165,11 +171,13 @@ It's time to add some math logic.
 
 1. A green squiggle appears under `Calculate` because we haven't defined the `Calculate` function in the `.cpp` file. Hover over `Calculate`, click the down arrow on the screwdriver that appears, and choose **Create definition of 'Calculate' in `Calculator.cpp`**.
 
-   ![Screenshot of Visual Studio showing a tool tip dropdown with Create definition of Calculate in Calculator C P P highlighted.](./media/calc-vs2019-create-definition.png "Create definition of Calculate")
+   :::image type="content" source="./media/calc-vs2019-create-definition.png" alt-text="Screenshot of a screwdriver dropdown in the Visual Studio editor window. The option 'Create definition of Calculate in Calculator.cpp' is highlighted.":::
 
    A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
 
-   !["Screenshot of a pop-up displaying the definition of Calculate."](./media/calc-vs2019-pop-up-definition.png)
+   :::image type="complex" source="./media/calc-vs2019-pop-up-definition.png" alt-text="Screenshot of a pop-up window in the Visual Studio editor showing the definition of the 'Calculate' ctor function.":::
+   The definition of the constructor is: double Calculator::Calculate( double x, char oper, double y) { return 0.0; }
+   :::image-end:::
 
    Currently, it just returns 0.0. Let's change that. Press **Esc** to close the pop-up.
 
@@ -259,7 +267,9 @@ Now it's time to test the program again to make sure everything works properly.
 
 1. Enter `5+5`, and press **Enter**. Verify that the result is 10.
 
-   ![Screenshot showing a command line with this output: "Result of 5+5 is: 10".](./media/calc-vs2019-five-plus-five.png "Screenshot of the Visual Studio Debug Console.")
+   :::image type="complex" source="./media/calc-vs2019-five-plus-five.png" alt-text="Screenshot of a command window showing the results of running the program.":::
+   The app output the message: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5+5. The app output: Result of 5+5 is: 10
+   :::image-end:::
 
 ## Debug the app
 
@@ -269,29 +279,33 @@ Since the user is free to type anything into the console window, let's make sure
 
 1. Set a breakpoint on the `result = c.Calculate(x, oper, y);` line. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window. A red dot appears.
 
-   ![Screenshot of Visual Studio with a red dot representing a breakpoint to the left of the line: result = c.Calculate(x, oper, y).](./media/calc-vs2019-set-breakpoint.png "Set a breakpoint.")
+   :::image type="content" source="./media/calc-vs2019-set-breakpoint.png" alt-text="Screenshot of the Visual Studio editor. A red dot representing a breakpoint appears on the line: result = c.Calculate(x, oper, y).":::
 
    Now when we debug the program, it always pauses execution at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time, let's make the breakpoint conditional.
 
 1. Right-click the red dot that represents the breakpoint, and choose **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Choose the **Close** button when you're done to save the breakpoint condition.
 
-   ![Screenshot of Visual Studio showing the Breakpoint Settings pop up and the condition y==0 && oper == '/' for the Is true value.](./media/calc-vs2019-conditional-breakpoint.png "Set a conditional breakpoint")
+   :::image type="complex" source="./media/calc-vs2019-conditional-breakpoint.png" alt-text="Screenshot of Visual Studio displaying the Breakpoint Settings pop-up."
+   The condition for the breakpoint is: y==0 && oper == '/' Is true.
+   :::image-end:::
 
    Now we pause execution at the breakpoint specifically if a division by 0 is attempted.
 
 1. To debug the program, press **F5**, or choose the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers: `cin` is smart enough to parse the input appropriately.
 
-   ![Screenshot of Visual Studio showing the program paused at the conditional breakpoint on the line: result = c.Calculate(x, oper, y);.](./media/calc-vs2019-debug-breakpoint.png "Pause at the conditional breakpoint")
+   :::image type="content" source="./media/calc-vs2019-debug-breakpoint.png" alt-text="Screenshot of Visual Studio editor. Program execution halted at the conditional breakpoint on the line: result = c.Calculate(x, oper, y);.":::
 
 ### Useful windows in the debugger
 
 Whenever you debug your code, you may notice that some new windows appear. These windows can assist your debugging experience. Take a look at the **Autos** window. The **Autos** window shows you the current values of variables used at least three lines before and up to the current line. To see all of the variables from that function, switch to the **Locals** window. You can modify the values of these variables while debugging, to see what effect they would have on the program. In this case, we leave them alone.
 
-   ![Screenshot of the Visual Studio Locals window showing the values of local variables.](./media/calc-vs2019-debug-locals.png "The Locals window")
+   :::image type="complex" source="./media/calc-vs2019-debug-locals.png" alt-text="Screenshot of the Locals window in Visual Studio, displaying the current values of local variables while debugging.":::
+   The value of oper is 47 '/', result is 0, x is 10, and y is 0.
+   :::image-end:::
 
-You can also just hover over variables in the code itself to see their current values where the execution is currently paused. Make sure the editor window is in focus by clicking on it first.
+You can also hover over variables in the code to see their current values where the execution is currently paused. Make sure the editor window is in focus by clicking on it first.
 
-   ![Screenshot of a tooltip displaying the value of the variable oper, which is the character `/`.](./media/calc-vs2019-hover-tooltip.png "Hover to view current variable values")
+   :::image type="content" source="./media/calc-vs2019-hover-tooltip.png" alt-text="Screenshot of a tooltip showing the value of the variable 'oper', which is 47 or '/'.":::
 
 ### To continue debugging
 
@@ -303,9 +317,11 @@ You can also just hover over variables in the code itself to see their current v
 
    It looks like the program is doing what is expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value `inf`, which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
-   ![Screenshot of the Visual Studio Debug Console showing the result of dividing by zero, which is inf.](./media/calc-vs2019-divide-by-zero-fail.png "The result of divide by zero")
+   :::image type="complex" source="./media/calc-vs2019-divide-by-zero-fail.png" alt-text="Screenshot of a command window displaying the result of a division by zero.":::
+   The user entered 10 / 0. The program output: Result of 10/0 is: inf.
+   :::imnage-end:::
 
-   This result happens because division by zero is undefined, so the program doesn't have a numerical answer to the requested operation.
+   This result is because division by zero is undefined, so the program doesn't have a numerical answer for the requested operation.
 
 ### To fix the "divide by zero" error
 
@@ -354,8 +370,8 @@ Let's handle division by zero more gracefully so that it's easier for the user t
 
 1. Now press **F5** once. Program execution continues all the way until it has to pause to ask for user input. Enter `10 / 0` again. Now, a more helpful message is printed. The user is asked for more input, and the program continues executing normally.
 
-   :::image type="complex" source="./media/calc-vs2019-final-verification.png" alt-text="Screenshot of the Visual Studio Debug Console showing the final result after changes":::
-    The console window displays two lines: 10 / 0 Result is: inf, followed by, 10 / 0 Division by 0 exception.
+   :::image type="complex" source="./media/calc-vs2019-final-verification.png" alt-text="Screenshot of a console window showing the final output after implementing changes to handle division by zero.":::
+    The console window displays two lines: 10 / 0 Result is: inf, followed by, 10 / 0 Math error: Attempted to divide by zero.
     :::image-end:::
 
    > [!Note]
@@ -404,7 +420,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 3. In the **Name** edit box at the bottom, name the new project *CalculatorTutorial*, then choose **OK**.
 
-   ![Screenshot of the New Project dialog with the Windows Console Application project type selected and the Name text box set to CalculatorTutorial.](./media/calculator-new-project-dialog.png "The New Project dialog")
+   :::image type="content" source="./media/calculator-new-project-dialog.png" alt-text="Screenshot of the New Project dialog with the Windows Console Application project type selected and the Name text box set to CalculatorTutorial.":::
 
    An empty C++ Windows console application gets created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
 
@@ -437,11 +453,11 @@ The template for a new windows console application creates a simple C++ "Hello W
 
 1. To build your project, choose **Build Solution** from the **Build** menu. The **Output** window shows the results of the build process.
 
-   ![Screenshot of the Visual Studio Output window showing that the build was successful.](./media/calculator-initial-build-output.png "Build the project")
+   :::image type="content" source="./media/calculator-initial-build-output.png" alt-text="Screenshot of the Visual Studio Output window showing that the build was successful.":::
 
 1. To run the code, on the menu bar, choose **Debug**, **Start without debugging**.
 
-   ![Screenshot of the Visual Studio Debug Console showing the output: Hello World!.](./media/calculator-hello-world-console.png "Start the project")
+   :::image type="content" source="./media/calculator-hello-world-console.png" alt-text="Screenshot of the Visual Studio Debug Console showing the output: Hello World!.":::
 
    A console window opens and then runs your app. When you start a console app in Visual Studio, it runs your code, then prints "Press any key to continue . . ." to give you a chance to see the output. Congratulations! You've created your first "Hello, world!" console app in Visual Studio!
 
@@ -493,8 +509,8 @@ Now let's turn the code in this template into a calculator app.
 
 1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and choose **Start Without Debugging**. If you get a pop-up that says **This project is out of date**, you may select **Do not show this dialog again**, and then choose **Yes** to build your application. You should see a console window appear that displays the text specified in the code.
 
-   :::image type="complex" source="./media/calculator-first-launch.gif" alt-text="Short video of running the calculator app.":::
-   Short video showing Debug > Start without debugging. A dialog is visible that asks whether to build because the project is out of date. The checkbox for 'Do not show this dialog again' is selected. 'Yes' is selected to build the project, the calculator project builds, and then launches in a Windows console window.
+   :::image type="complex" source="./media/calculator-first-launch.gif" alt-text="Video showing the process of running the calculator app in the IDE.":::
+   First a dialog box appears that asks whether to build because the project is out of date. The checkbox for 'Do not show this dialog again' is selected. 'Yes' is selected to build the project, the calculator project builds, and then launches in a Windows console window.
    :::image-end:::
 
 1. Close the console window when you're done.
@@ -507,13 +523,15 @@ It's time to add some math logic.
 
 1. Go to the **Project** menu and choose **Add Class**. In the **Class Name** edit box, enter *Calculator*. Choose **OK**. Two new files get added to your project. To save all your changed files at once, press **Ctrl+Shift+S**. It's a keyboard shortcut for **File** > **Save All**. There's also a toolbar button for **Save All**, an icon of two floppy disks, found beside the **Save** button. In general, it's good practice to do **Save All** frequently, so you don't miss any files when you save.
 
-   ![Short video showing the user opening the Add Class dialog box, typing Calculator in the Class Name field, and selecting O K.](./media/calculator-create-class.gif "Create the Calculator class")
+   :::image type="content" source="./media/calculator-create-class.gif" alt-text="Video showing the user opening the Add Class dialog box, typing 'Calculator' in the Class Name field, and clicking OK.":::
 
    A class is like a blueprint for an object that does something. In this case, we define a calculator and how it should work.
 
    The **Add Class** wizard you used previously created `.h` and `.cpp` files that have the same name as the class. You can see a full list of your project files in the **Solution Explorer** window, visible on the side of the IDE. If the window isn't visible, you can open it from the menu bar: choose **View** > **Solution Explorer**.
 
-   ![Screenshot of the Solution Explorer window displaying the Calculator Tutorial project.](./media/calculator-solution-explorer.png "Solution Explorer")
+   :::image type="complex" source="./media/calculator-solution-explorer.png" alt-text="Screenshot of the Visual Studio Solution Explorer window.":::
+   The calculator tutorial project has a header files node containing Calculator.h, stdafx.h, and targetver.h. A Source Files node contains Calculator.cpp, CalculatorTutorial.cpp, and stdafx.cpp. Nodes for references, external depndencies, and resource files are visible but closed.
+   :::image-end:::
 
    You should now have three tabs open in the editor: *`CalculatorTutorial.cpp`*, *`Calculator.h`*, and *`Calculator.cpp`*. If you accidentally close one of them, you can reopen it by double-clicking it in the **Solution Explorer** window.
 
@@ -536,7 +554,7 @@ It's time to add some math logic.
 
 1. A green squiggle appears under `Calculate` because we haven't defined the `Calculate` function in the `.cpp` file. Hover over `Calculate`, click the down arrow on the light bulb that appears, and choose **Create definition of 'Calculate' in `Calculator.cpp`**. A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
 
-   ![Short video showing the user selecting the Create definition of Calculate in Calculator C P P option.](./media/calculator-create-definition.gif "Create definition of Calculate")
+   :::image type="content" source="./media/calculator-create-definition.gif" alt-text="Video showing using the light bulb dropdown to select Create definition of Calculate in Calculator.cpp.":::
 
    Currently, it just returns 0.0. Let's change that. Press **Esc** to close the pop-up.
 
@@ -625,7 +643,7 @@ Now it's time to test the program again to make sure everything works properly.
 
 1. Enter `5+5`, and press **Enter**. Verify that the result is 10.
 
-   ![Screenshot of the Microsoft Visual Studio Debug Console showing the correct result of 5 + 5.](./media/calculator-five-plus-five.png "The result of 5 + 5")
+   :::image type="content" source="./media/calculator-five-plus-five.png" alt-text="Screenshot of a command window running the Calculator app. It shows that the result of 5 + 5 is 10.":::
 
 ## Debug the app
 
@@ -635,35 +653,41 @@ Since the user is free to type anything into the console window, let's make sure
 
 1. Set a breakpoint on the `result = c.Calculate(x, oper, y);` line. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window. A red dot appears.
 
-   ![Short video of Visual Studio showing the user setting a breakpoint which creates a red dot to the left of the line of code.](./media/calculator-set-breakpoint.gif "Set a breakpoint")
+   :::image type="content" source="./media/calculator-set-breakpoint.gif" alt-text="Video showing the user setting a breakpoint on line 25: result = c.Calculate(x, oper, y);.":::
 
    Now when we debug the program, it always pauses execution at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time, let's make the breakpoint conditional.
 
 1. Right-click the red dot that represents the breakpoint, and choose **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Choose the **Close** button when you're done to save the breakpoint condition.
 
-   :::image type="complex" source="./media/calculator-conditional-breakpoint.gif" alt-text="Set a conditional breakpoint":::
-    Short video showing a right-click on the breakpoint. The breakpoint is on the line of code that reads result = c dot Calculate ( x, oper, y). 'Conditions...' is selected in the dropdown, which opens the breakpoint settings window. In the text box following the Conditional Expression and Is true dropdowns, the user enters y == 0 && oper == '/', and then selects close to set the conditional breakpoint.
+   :::image type="complex" source="./media/calculator-conditional-breakpoint.gif" alt-text="Video demonstrating the process of setting a conditional breakpoint.":::
+    The breakpoint is on the line: result = c dot Calculate ( x, oper, y). 'Conditions...' is selected in the breakpoint dropdown, which opens the breakpoint settings window. The Condition option is checked, underneath which the dropdowns are set as: 'Conditional Expression' and 'Is true'. The user enters y == 0 && oper == '/' into the condition textbox and then selects close to set the conditional breakpoint.
     :::image-end:::
 
    Now we pause execution at the breakpoint specifically if a division by 0 is attempted.
 
 1. To debug the program, press **F5**, or choose the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers; `cin` is smart enough to parse the input appropriately.
 
-   ![Short video showing the program paused at the conditional breakpoint.](./media/calculator-debug-conditional.gif "Pause at the conditional breakpoint")
+   :::image type="complex" source="./media/calculator-debug-conditional.gif" alt-text="Video showing the program execution paused at the conditional breakpoint.":::
+   The user enters 5 - 0. The app outputs: Result is 5. The user then enters 10/0 and because the condition for the conditional breakpoint is met, execution stops on the line: result = c.Calculate(x, oper, y);
+   :::image-end:::
 
 ### Useful windows in the debugger
 
 Whenever you debug your code, you may notice that some new windows appear. These windows can assist your debugging experience. Take a look at the **Autos** window. The **Autos** window shows you the current values of variables used at least three lines before and up to the current line.
 
-   ![Screenshot of the Autos window showing the values of c, oper, result, x, and y.](./media/calculator-autos.png "The Autos window")
+   :::image type="complex" source="./media/calculator-autos.png" alt-text="Screenshot of the Visual Studio debugger Autos window.":::
+   The value of oper is 47 '/', result is 5, x is 10, and y is 0.
+   :::image-end:::
 
 To see all of the variables from that function, switch to the **Locals** window. You can modify the values of these variables while debugging, to see what effect they would have on the program. In this case, we leave them alone.
 
-   ![Screenshot of the Locals window showing the values of the function's local variables.](./media/calculator-locals.png "The Locals window")
+   :::image type="complex" source="./media/calculator-locals.png" alt-text="Screenshot of the Visual Studio debugger Locals window.":::
+   The current values of the function's local variables are visible. The value of oper is 47 '/', result is 5, x is 10, and y is 0."
+   :::image-end:::
 
-You can also just hover over variables in the code itself to see their current values where the execution is currently paused. Make sure the editor window is in focus by clicking on it first.
+You can also hover over variables in the code itself to see their current values where the execution is currently paused. Make sure the editor window is in focus by clicking on it first.
 
-   ![Short video showing the tooltip that appears when you hover over a variable. The tooltip displays the variable's value.](./media/calculator-hover-tooltip.gif "Hover to view current variable values")
+   :::image type="content" source="./media/calculator-hover-tooltip.gif" alt-text="Video demonstrating a tooltip that appears while hovering over the variable y. It displays y's current value, which is 0.":::
 
 ### To continue debugging
 
@@ -673,11 +697,15 @@ You can also just hover over variables in the code itself to see their current v
 
 1. Continue using **F10** to **Step Over** each line until you get back to the `main()` function in the other file, and stop on the `cout` line.
 
-   ![Short video of stepping over lines in the Calculate function until back in main(). Then hovering over the result variable and seeing its value: inf.](./media/calculator-undefined-zero.gif "Step out of Calculate and check result")
+   :::image type="complex" source="./media/calculator-undefined-zero.gif" alt-text="Video showing stepping over each line of code in the Calculate function.":::
+   Each line of code in the Calculate function is stepped over until control returns to the main function. The user then hovers over the variable named result to see its value, which is: inf."
+   :::image-end:::
 
    It looks like the program is doing what is expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
-   ![Screenshot of the Visual Studio Debug Console which shows the result of dividing by zero: inf](./media/calculator-divide-by-zero-fail.png "The result of divide by zero")
+   :::image type="complex" source="./media/calculator-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
+   The app output: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. THe user entered 10/0. The app output: Result is: inf
+   :::image-end:::
 
    This result happens because division by zero is undefined, so the program doesn't have a numerical answer to the requested operation.
 
@@ -728,7 +756,7 @@ Let's handle division by zero more gracefully, so a user can understand the prob
 
 1. Now press **F5** once. Program execution continues all the way until it has to pause to ask for user input. Enter `10 / 0` again. Now, a more helpful message is printed. The user is asked for more input, and the program continues executing normally.
 
-   ![Short video of the Debug Console which shows the final result after changes. 10 / 0 is entered and the program displays: Division by 0 exception.](./media/calculator-final-verification.gif "The final result after changes")
+   :::image type="content" source="./media/calculator-final-verification.gif" alt-text="Video of the Debug Console showing the final result after code changes. 10 / 0 is entered and the program displays 'Division by 0 exception'.":::
 
    > [!Note]
    > When you edit code while in debugging mode, there is a risk of code becoming stale. This happens when the debugger is still running your old code, and has not yet updated it with your changes. The debugger pops up a dialog to inform you when this happens. Sometimes, you may need to press **F5** to refresh the code being executed. In particular, if you make a change inside a function while the point of execution is inside that function, step out of the function, then back into it again to get the updated code. If that doesn't work for some reason and you see an error message, you can stop debugging by clicking on the red square in the toolbar under the menus at the top of the IDE, then start debugging again by entering **F5** or by choosing the green "play" arrow beside the stop button on the toolbar.
