@@ -19,7 +19,7 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Create your app project
 
-Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize the project(s). A project contains all the options, configurations, and rules used to build an app. It also manages the relationship between all the project's files and any external files. To create your app, first, create a new project and solution.
+Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize one or more projects. A project contains all the options, configurations, and rules used to build an app. It also manages the relationship between all the project's files and any external files. To create your app, first, create a new project and solution.
 
 1. Start Visual Studio--the Visual Studio Start dialog box appears. Select **Create a new project** to get started.
 
@@ -146,7 +146,7 @@ A class is like a blueprint for an object that does something. In this case, we 
 
     Two new files get added to your project. To save all your changed files at once, press **Ctrl+Shift+S**. It's a keyboard shortcut for **File** > **Save All**. There's also a toolbar button for **Save All**, an icon of two floppy disks, found beside the **Save** button. In general, it's good practice to do **Save All** frequently, so you don't miss any files when you save.
 
-   The **Add Class** wizard you used previously created `.h` and `.cpp` files that have the same name as the class. You can see a full list of your project files in the **Solution Explorer** window, visible on the side of the IDE. If the window isn't visible, you can open it from the menu bar: select **View** > **Solution Explorer**.
+   The **Add Class** wizard creates `.h` and `.cpp` files that have the same name as the class. You can see a full list of your project files in the **Solution Explorer** window, visible on the side of the IDE. If the window isn't visible, you can open it from the menu bar: select **View** > **Solution Explorer**.
 
    :::image type="complex" source="./media/calc-vs2019-solution-explorer.png" alt-text="Screenshot of the Visual Studio Solution Explorer window.":::
    The calculator tutorial project has a header files node containing Calculator.h. A Source Files node contains Calculator.cpp and CalculatorTutorial.cpp. Nodes for references, external dependencies, and resource files are visible but closed.
@@ -171,7 +171,7 @@ A class is like a blueprint for an object that does something. In this case, we 
    > - C++ code is organized into *header* (`.h`) files and *source* (`.cpp`) files. Several other file extensions are supported by various compilers, but these are the main ones to know about. Functions and variables are normally *declared*, that is, given a name and a type, in header files, and *implemented*, or given a definition, in source files. To access code defined in another file, you can use `#include "filename.h"`, where `filename.h` is the name of the file that declares the variables or functions you want to use.
    > - It's good practice to organize your code into different files based on what it does, so it's easy to find the code you need later. In our case, we define the `Calculator` class separately from the file containing the `main()` function, but we plan to reference the `Calculator` class in `main()`.
 
-1. A green squiggle appears under `Calculate` because although the `Calculate` function has been *declared*, it hasn't been *defined*.  Hover over `Calculate`, click the down arrow on the screwdriver that appears, and select **Create definition of 'Calculate' in `Calculator.cpp`**.
+1. A green squiggle appears under `Calculate` because although the `Calculate` function is *declared*, it isn't *defined*. Hover over `Calculate`, click the down arrow on the screwdriver that appears, and select **Create definition of 'Calculate' in `Calculator.cpp`**.
 
    :::image type="content" source="./media/calc-vs2019-create-definition.png" alt-text="Screenshot of a screwdriver dropdown in the Visual Studio editor window. The option 'Create definition of Calculate in Calculator.cpp' is highlighted.":::
 
@@ -213,7 +213,7 @@ A class is like a blueprint for an object that does something. In this case, we 
 
 If you build and run the code again at this point, it will immediately exit after asking which operation to perform. So, modify the `main` function to do multiple calculations.
 
-### To call the `Calculator` class member functions
+### Call the `Calculator` class member functions
 
 1. Update the `main` function in *`CalculatorTutorial.cpp`* as follows:
 
@@ -321,7 +321,7 @@ You can also hover over variables in the code to see their current values at the
 
 1. Continue using **F10** to **Step Over** each line until you get back to the `main()` function in the other file, and stop on the `cout` line.
 
-   It looks like the program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value `inf`, which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
+   The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value `inf`, which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
    :::image type="complex" source="./media/calc-vs2019-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
    The app output: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. THe user entered 10/0. The app output: Result is: inf
@@ -400,7 +400,7 @@ Let's handle division by zero more gracefully so that it's easier for the user t
 
 ## The finished app
 
-Congratulations! You've completed the code for the calculator app, built and debugged it, and added it to a repo, all in Visual Studio.
+Congratulations! You completed the code for the calculator app, built and debugged it, and added it to a repo, all in Visual Studio.
 
 ## Next steps
 
@@ -410,7 +410,7 @@ Congratulations! You've completed the code for the calculator app, built and deb
 
 ::: moniker range="<msvc-160"
 
-The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. You'll start with that in this article, and then we move on to something more challenging: a calculator app.
+The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. You start with that in this article, and then we move on to something more challenging: a calculator app.
 
 ## Prerequisites
 
@@ -418,7 +418,7 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Create your app project
 
-Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize the project(s). A project contains all the options, configurations, and rules used to build an app. It also manages the relationship between all the project's files and any external files. To create your app, first, create a new project and solution.
+Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize one or more projects. A project contains all the options, configurations, and rules used to build an app. It also manages the relationship between all the project's files and any external files. To create your app, first, create a new project and solution.
 
 1. On the menubar in Visual Studio, select **File** > **New** > **Project**. The **New Project** window opens.
 2. On the left sidebar, make sure **Visual C++** is selected. In the center, select **Windows Console Application**.
@@ -562,7 +562,7 @@ A class is like a blueprint for an object that does something. In this case, we 
    > - C++ code is organized into *header* (`.h`) files and *source* (`.cpp`) files. Several other file extensions are supported by various compilers, but these are the main ones to know about. Functions and variables are normally *declared*, that is, given a name and a type, in header files, and *implemented*, or given a definition, in source files. To access code defined in another file, you can use `#include "filename.h"`, where `filename.h` is the name of the file that declares the variables or functions you want to use.
    > - It's good practice to organize your code into different files based on what it does, so it's easy to find the code you need later. In our case, we define the `Calculator` class separately from the file containing the `main()` function, but we plan to reference the `Calculator` class in `main()`.
 
-1. A green squiggle appears under `Calculate` because although the `Calculate` function has been *declared*, it hasn't been *defined*.  Hover over `Calculate`, click the down arrow on the screwdriver that appears, and select **Create definition of 'Calculate' in `Calculator.cpp`**. A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
+1. A green squiggle appears under `Calculate` because although the `Calculate` function is *declared*, it isn't *defined*. Hover over `Calculate`, click the down arrow on the screwdriver that appears, and select **Create definition of 'Calculate' in `Calculator.cpp`**. A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
 
    :::image type="content" source="./media/calculator-create-definition.gif" alt-text="Video showing using the light bulb dropdown to select Create definition of Calculate in Calculator.cpp.":::
 
@@ -600,7 +600,7 @@ A class is like a blueprint for an object that does something. In this case, we 
 
 If you build and run the code again at this point, it will still exit after asking which operation to perform. Next, modify the `main` function to do some calculations.
 
-### To call the Calculator class member functions
+### Call the Calculator class member functions
 
 1. Now let's update the `main` function in *`CalculatorTutorial.cpp`*:
 
@@ -711,7 +711,7 @@ You can also hover over variables in the code itself to see their current values
    Each line of code in the Calculate function is stepped over until control returns to the main function. The user then hovers over the variable named result to see its value, which is: inf."
    :::image-end:::
 
-   It looks like the program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
+   The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
    :::image type="complex" source="./media/calculator-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
    The app output: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. THe user entered 10/0. The app output: Result is: inf
