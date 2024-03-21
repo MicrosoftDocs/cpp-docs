@@ -2,7 +2,7 @@
 title: "Create a console calculator in C++"
 description: "Create a Hello World console app and a calculator app in Visual C++"
 ms.custom: "acquisition, mvc"
-ms.date: 03/16/2023
+ms.date: 03/20/2024
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ---
@@ -15,32 +15,30 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 ## Prerequisites
 
 - Have Visual Studio with the **Desktop development with C++** workload installed and running on your computer. If it's not installed, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md).
-- This tutorial demonstrates a feature called edit and continue which allows you to make changes to your code while the app is running. To ensure that edit and continue can function for this article, from the main menu choose **Tools** > **Options** > **Debugging** > **General** and ensure that **Require source files to exactly match the original version** is checked.
+- This tutorial demonstrates a feature called edit and continue which allows you to make changes to your code while the app is running. To ensure that edit and continue can function for this article, from the main menu select **Tools** > **Options** > **Debugging** > **General** and ensure that **Require source files to exactly match the original version** is checked.
 
 ## Create your app project
 
 Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It also manages the relationship between all the project's files and any external files. To create your app, first, create a new project and solution.
 
-1. Start Visual Studio and the Visual Studio Start dialog box appears. Choose **Create a new project** to get started.
+1. Start Visual Studio--the Visual Studio Start dialog box appears. Select **Create a new project** to get started.
 
    :::image type="complex" source="./media/calc-vs2022-initial-dialog.png" alt-text="Screenshot of dialog that appears when Visual Studio 2022 starts.":::
    The dialog has options to clone a repository, open a project or solution, open a local folder, and create a new project."
    :::image-end:::
 
-   Otherwise, on the menubar in Visual Studio, choose **File** > **New** > **Project**. The **Create a new project** window opens.
-
-1. In the list of project templates, choose **Console App**, then choose **Next**.
+1. In the list of project templates, select **Console App**, then select **Next**.
 
    :::image type="content" source="./media/calc-vs2019-choose-console-app.png" alt-text="Screenshot of the Visual Studio Create a new project dialog. The Console App template option is highlighted.":::
 
    > [!Important]
-   > Make sure you choose the C++ version of the **Console App** template. It has the **C++**, **Windows**, and **Console** tags, and the icon has "++" in the corner.
+   > Make sure you select the C++ version of the **Console App** template. It has the **C++**, **Windows**, and **Console** tags, and the icon has "++" in the corner.
 
-1. In the **Configure your new project** dialog box, select the **Project name** edit box, name your new project *CalculatorTutorial*, then choose **Create**.
+1. In the **Configure your new project** dialog box, select the **Project name** edit box, name your new project *CalculatorTutorial*, then select **Create**.
 
    :::image type="content" source="./media/calc-vs2019-name-your-project.png" alt-text="Screenshot of the Visual Studio Configure your new project dialog. It has fields for project name, project location, and Solution name.":::
 
-   An empty C++ Windows console application gets created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
+   An empty C++ Windows console application is created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -69,11 +67,11 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 The template for a new Windows console application creates a simple C++ "Hello World" app. At this point, you can see how Visual Studio builds and runs the apps you create right from the IDE.
 
-1. To build your project, choose **Build Solution** from the **Build** menu. The **Output** window shows the results of the build process.
+1. To build your project, select **Build Solution** from the **Build** menu. The **Output** window shows the results of the build process.
 
    :::image type="content" source="./media/calc-vs2019-build-your-project.png" alt-text="Screenshot of the Visual Studio Output window. It is displaying a message that the build succeeded.":::
 
-1. To run the code, on the menu bar, choose **Debug**, **Start without debugging**.
+1. To run the code, on the menu bar, select **Debug**, **Start without debugging**.
 
    :::image type="content" source="./media/calc-vs2019-hello-world-console.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the output of the application: Hello World!.":::
 
@@ -124,9 +122,9 @@ Now let's turn the code in this template into a calculator app.
    > - The `endl` keyword is like the Enter key; it ends the line and moves the cursor to the next line. It is a better practice to put a `\n` inside the string (contained by `""`) to do the same thing because `endl` always flushes the buffer which can hurt the performance of the program. But since this is a very small app, `endl` is used instead for better readability.
    > - All C++ statements must end with semicolons and all C++ applications must contain a `main()` function. This function is what the program runs at the start. All code must be accessible from `main()` in order to be used.
 
-1. To save the file, press **Ctrl+S**, or choose the **Save** icon near the top of the IDE, the floppy disk icon in the toolbar under the menu bar.
+1. To save the file, press **Ctrl+S**, or select the **Save** icon near the top of the IDE, the floppy disk icon in the toolbar under the menu bar.
 
-1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and choose **Start Without Debugging**. You should see a console window appear that displays the text specified in the code.
+1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and select **Start Without Debugging**. You should see a console window appear that displays the text specified in the code.
 
 1. Close the console window when you're done.
 
@@ -136,7 +134,7 @@ It's time to add some math logic.
 
 ### To add a Calculator class
 
-1. Go to the **Project** menu and choose **Add Class**. In the **Class Name** edit box, enter *Calculator*. Choose **OK**. Two new files get added to your project. To save all your changed files at once, press **Ctrl+Shift+S**. It's a keyboard shortcut for **File** > **Save All**. There's also a toolbar button for **Save All**, an icon of two floppy disks, found beside the **Save** button. In general, it's good practice to do **Save All** frequently, so you don't miss any files when you save.
+1. Go to the **Project** menu and select **Add Class**. In the **Class Name** edit box, enter *Calculator*. Select **OK**. Two new files get added to your project. To save all your changed files at once, press **Ctrl+Shift+S**. It's a keyboard shortcut for **File** > **Save All**. There's also a toolbar button for **Save All**, an icon of two floppy disks, found beside the **Save** button. In general, it's good practice to do **Save All** frequently, so you don't miss any files when you save.
 
    :::image type="complex" source="./media/calc-vs2019-create-calculator-class.png" alt-text="Screenshot of the Visual Studio Add Class dialog box.":::
    The class name field is set to calculator. The .h file field contains Calculator.h. The .cpp file field contains Calculator.cpp. The base class field is empty. Other options for virtual destructor, inline, and unmanaged are unchecked.
@@ -144,13 +142,13 @@ It's time to add some math logic.
 
    A class is like a blueprint for an object that does something. In this case, we define a calculator and how it should work.
 
-   The **Add Class** wizard you used previously created `.h` and `.cpp` files that have the same name as the class. You can see a full list of your project files in the **Solution Explorer** window, visible on the side of the IDE. If the window isn't visible, you can open it from the menu bar: choose **View** > **Solution Explorer**.
+   The **Add Class** wizard you used previously created `.h` and `.cpp` files that have the same name as the class. You can see a full list of your project files in the **Solution Explorer** window, visible on the side of the IDE. If the window isn't visible, you can open it from the menu bar: select **View** > **Solution Explorer**.
 
    :::image type="complex" source="./media/calc-vs2019-solution-explorer.png" alt-text="Screenshot of the Visual Studio Solution Explorer window.":::
    The calculator tutorial project has a header files node containing Calculator.h. A Source Files node contains Calculator.cpp and CalculatorTutorial.cpp. Nodes for references, external dependencies, and resource files are visible but closed.
    :::image-end:::
 
-   You should now have three tabs open in the editor: *`CalculatorTutorial.cpp`*, *`Calculator.h`*, and *`Calculator.cpp`*. If you accidentally close one of them, you can reopen it by double-clicking it in the **Solution Explorer** window.
+   You can open a file by double-clicking it in the **Solution Explorer** window. Double-click `Calculator.h` to open it.
 
 1. Replace the contents of **`Calculator.h`** with the following code so that the file now looks like this:
 
@@ -169,23 +167,21 @@ It's time to add some math logic.
    > - C++ code is organized into *header* (`.h`) files and *source* (`.cpp`) files. Several other file extensions are supported by various compilers, but these are the main ones to know about. Functions and variables are normally *declared*, that is, given a name and a type, in header files, and *implemented*, or given a definition, in source files. To access code defined in another file, you can use `#include "filename.h"`, where `filename.h` is the name of the file that declares the variables or functions you want to use.
    > - It's good practice to organize your code into different files based on what it does, so it's easy to find the code you need later. In our case, we define the `Calculator` class separately from the file containing the `main()` function, but we plan to reference the `Calculator` class in `main()`.
 
-1. A green squiggle appears under `Calculate` because we haven't defined the `Calculate` function in the `.cpp` file. Hover over `Calculate`, click the down arrow on the screwdriver that appears, and choose **Create definition of 'Calculate' in `Calculator.cpp`**.
+1. A green squiggle appears under `Calculate` because we haven't defined the `Calculate` function in the `.cpp` file. Hover over `Calculate`, click the down arrow on the screwdriver that appears, and select **Create definition of 'Calculate' in `Calculator.cpp`**.
 
    :::image type="content" source="./media/calc-vs2019-create-definition.png" alt-text="Screenshot of a screwdriver dropdown in the Visual Studio editor window. The option 'Create definition of Calculate in Calculator.cpp' is highlighted.":::
 
-   A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
+   This code is added to *`Calculator.cpp`*:
 
-   :::image type="complex" source="./media/calc-vs2019-pop-up-definition.png" alt-text="Screenshot of a pop-up window in the Visual Studio editor showing the definition of the 'Calculate' ctor function.":::
+   :::image type="complex" source="./media/calc-vs2022-ctor-definition.png" alt-text="Screenshot of the Visual Studio editor showing the definition of the 'Calculate' ctor function.":::
    The definition of the constructor is: double Calculator::Calculate( double x, char oper, double y) { return 0.0; }
    :::image-end:::
 
-   Currently, it just returns 0.0. Let's change that. Press **Esc** to close the pop-up.
+   Currently, it just returns 0.0. Let's change that.
 
-1. Switch to the *`Calculator.cpp`* file in the editor window. Remove the `Calculator()` and `~Calculator()` sections (as you did in the `.h` file) and add the following code to `Calculate()`:
+1. Switch to the *`Calculator.cpp`* file in the editor window. Replace the contents of *`Calculator::Calculate(double x, char oper, double y)`* with:
 
     ```cpp
-    #include "Calculator.h"
-
     double Calculator::Calculate(double x, char oper, double y)
     {
         switch(oper)
@@ -211,11 +207,11 @@ It's time to add some math logic.
    > - The **`double`** keyword denotes a type of number that supports decimals. This way, the calculator can handle both decimal math and integer math. The `Calculate` function is required to always return such a number due to the **`double`** at the very start of the code (this denotes the function's return type), which is why we return 0.0 even in the default case.
    > - The `.h` file declares the function *prototype*, which tells the compiler upfront what parameters it requires, and what return type to expect from it. The `.cpp` file has all the implementation details of the function.
 
-If you build and run the code again at this point, it will still exit after asking which operation to perform. Next, modify the `main` function to do some calculations.
+If you build and run the code again at this point, it will still exit after asking which operation to perform. So, modify the `main` function to do some calculations.
 
 ### To call the `Calculator` class member functions
 
-1. Now let's update the `main` function in *`CalculatorTutorial.cpp`*:
+1. Update the `main` function in *`CalculatorTutorial.cpp`* as follows:
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -261,7 +257,7 @@ If you build and run the code again at this point, it will still exit after aski
 
 ### Build and test the code again
 
-Now it's time to test the program again to make sure everything works properly.
+Now test the program again to make sure everything works properly.
 
 1. Press **Ctrl+F5** to rebuild and start the app.
 
@@ -273,17 +269,17 @@ Now it's time to test the program again to make sure everything works properly.
 
 ## Debug the app
 
-Since the user is free to type anything into the console window, let's make sure the calculator handles some input as expected. Instead of running the program, let's debug it instead, so we can inspect what it's doing in detail, step-by-step.
+Since the user is free to type anything into the console window, let's make sure the calculator handles some input as expected. Instead of running the program, let's debug it so we can inspect what it's doing in detail, step-by-step.
 
-### To run the app in the debugger
+### Run the app in the debugger
 
-1. Set a breakpoint on the `result = c.Calculate(x, oper, y);` line. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window. A red dot appears.
+1. In `CalcuatorTutorial.cpp`, set a breakpoint on line: `result = c.Calculate(x, oper, y);`. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window. A red dot appears.
 
    :::image type="content" source="./media/calc-vs2019-set-breakpoint.png" alt-text="Screenshot of the Visual Studio editor. A red dot representing a breakpoint appears on the line: result = c.Calculate(x, oper, y).":::
 
-   Now when we debug the program, it always pauses execution at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time, let's make the breakpoint conditional.
+   Now when we debug the program, execution will pause at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time we call `Calculate()`, let's make the breakpoint conditional.
 
-1. Right-click the red dot that represents the breakpoint, and choose **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Choose the **Close** button when you're done to save the breakpoint condition.
+1. Right-click the red dot that represents the breakpoint, and select **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Select the **Close** button when you're done to save the breakpoint condition.
 
    :::image type="complex" source="./media/calc-vs2019-conditional-breakpoint.png" alt-text="Screenshot of Visual Studio displaying the Breakpoint Settings pop-up."
    The condition for the breakpoint is: y==0 && oper == '/' Is true.
@@ -291,7 +287,7 @@ Since the user is free to type anything into the console window, let's make sure
 
    Now we pause execution at the breakpoint specifically if a division by 0 is attempted.
 
-1. To debug the program, press **F5**, or choose the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers: `cin` is smart enough to parse the input appropriately.
+1. To debug the program, press **F5**, or select the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers: `cin` is smart enough to parse the input appropriately.
 
    :::image type="content" source="./media/calc-vs2019-debug-breakpoint.png" alt-text="Screenshot of Visual Studio editor. Program execution halted at the conditional breakpoint on the line: result = c.Calculate(x, oper, y);.":::
 
@@ -377,7 +373,7 @@ Let's handle division by zero more gracefully so that it's easier for the user t
    > [!Note]
    > When you edit code while in debugging mode, there is a risk of code becoming stale. This happens when the debugger is still running your old code, and has not yet updated it with your changes. The debugger displays a dialog to inform you when this happens. Sometimes, you may need to press **F5** to refresh the code being executed. In particular, if you make a change inside a function while the point of execution is inside that function, you need to step out of the function, then back into it again to get the updated code. If that doesn't work for some reason and you see an error message, you can stop debugging by clicking on the red square in the toolbar under the menus at the top of the IDE, then start debugging again by entering **F5** or by choosing the green "play" arrow beside the stop button on the toolbar.
    >
-   > Another reason edit and continue may fail is if you see a message that says "The Require source files to exactly match the original version setting under Debug->Options->General needs to be enabled..." To fix this, from the main menu choose **Tools** > **Options** > **Debugging** > **General** and ensure that **Require source files to exactly match the original version** is checked.
+   > Another reason edit and continue may fail is if you see a message that says "The Require source files to exactly match the original version setting under Debug->Options->General needs to be enabled..." To fix this, from the main menu select **Tools** > **Options** > **Debugging** > **General** and ensure that **Require source files to exactly match the original version** is checked.
 
    > Understanding the Run and Debug shortcuts
    >
@@ -414,15 +410,15 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It also manages the relationship between all the project's files and any external files. To create your app, first, you create a new project and solution.
 
-1. On the menubar in Visual Studio, choose **File** > **New** > **Project**. The **New Project** window opens.
+1. On the menubar in Visual Studio, select **File** > **New** > **Project**. The **New Project** window opens.
 
-2. On the left sidebar, make sure **Visual C++** is selected. In the center, choose **Windows Console Application**.
+2. On the left sidebar, make sure **Visual C++** is selected. In the center, select **Windows Console Application**.
 
-3. In the **Name** edit box at the bottom, name the new project *CalculatorTutorial*, then choose **OK**.
+3. In the **Name** edit box at the bottom, name the new project *CalculatorTutorial*, then select **OK**.
 
    :::image type="content" source="./media/calculator-new-project-dialog.png" alt-text="Screenshot of the New Project dialog with the Windows Console Application project type selected and the Name text box set to CalculatorTutorial.":::
 
-   An empty C++ Windows console application gets created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
+   An empty C++ Windows console application is created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -451,11 +447,11 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 The template for a new windows console application creates a simple C++ "Hello World" app. At this point, you can see how Visual Studio builds and runs the apps you create right from the IDE.
 
-1. To build your project, choose **Build Solution** from the **Build** menu. The **Output** window shows the results of the build process.
+1. To build your project, select **Build Solution** from the **Build** menu. The **Output** window shows the results of the build process.
 
    :::image type="content" source="./media/calculator-initial-build-output.png" alt-text="Screenshot of the Visual Studio Output window showing that the build was successful.":::
 
-1. To run the code, on the menu bar, choose **Debug**, **Start without debugging**.
+1. To run the code, on the menu bar, select **Debug**, **Start without debugging**.
 
    :::image type="content" source="./media/calculator-hello-world-console.png" alt-text="Screenshot of the Visual Studio Debug Console showing the output: Hello World!.":::
 
@@ -505,9 +501,9 @@ Now let's turn the code in this template into a calculator app.
    > - The `endl` keyword is like the Enter key; it ends the line and moves the cursor to the next line. It is a better practice to put a `\n` inside the string (contained by `""`) to do the same thing because `endl` always flushes the buffer and can hurt the performance of the program. But since this is a very small app, `endl` is used instead for better readability.
    > - All C++ statements must end with semicolons and all C++ applications must contain a `main()` function. This function is what the program runs at the start. All code must be accessible from `main()` in order to be used.
 
-1. To save the file, press **Ctrl+S**, or choose the **Save** icon near the top of the IDE, the floppy disk icon in the toolbar under the menu bar.
+1. To save the file, press **Ctrl+S**, or select the **Save** icon near the top of the IDE, the floppy disk icon in the toolbar under the menu bar.
 
-1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and choose **Start Without Debugging**. If you get a pop-up that says **This project is out of date**, you may select **Do not show this dialog again**, and then choose **Yes** to build your application. You should see a console window appear that displays the text specified in the code.
+1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and select **Start Without Debugging**. If you get a pop-up that says **This project is out of date**, you may select **Do not show this dialog again**, and then select **Yes** to build your application. You should see a console window appear that displays the text specified in the code.
 
    :::image type="complex" source="./media/calculator-first-launch.gif" alt-text="Video showing the process of running the calculator app in the IDE.":::
    First a dialog box appears that asks whether to build because the project is out of date. The checkbox for 'Do not show this dialog again' is selected. 'Yes' is selected to build the project, the calculator project builds, and then launches in a Windows console window.
@@ -521,13 +517,13 @@ It's time to add some math logic.
 
 ### To add a Calculator class
 
-1. Go to the **Project** menu and choose **Add Class**. In the **Class Name** edit box, enter *Calculator*. Choose **OK**. Two new files get added to your project. To save all your changed files at once, press **Ctrl+Shift+S**. It's a keyboard shortcut for **File** > **Save All**. There's also a toolbar button for **Save All**, an icon of two floppy disks, found beside the **Save** button. In general, it's good practice to do **Save All** frequently, so you don't miss any files when you save.
+1. Go to the **Project** menu and select **Add Class**. In the **Class Name** edit box, enter *Calculator*. Select **OK**. Two new files get added to your project. To save all your changed files at once, press **Ctrl+Shift+S**. It's a keyboard shortcut for **File** > **Save All**. There's also a toolbar button for **Save All**, an icon of two floppy disks, found beside the **Save** button. In general, it's good practice to do **Save All** frequently, so you don't miss any files when you save.
 
    :::image type="content" source="./media/calculator-create-class.gif" alt-text="Video showing the user opening the Add Class dialog box, typing 'Calculator' in the Class Name field, and clicking OK.":::
 
    A class is like a blueprint for an object that does something. In this case, we define a calculator and how it should work.
 
-   The **Add Class** wizard you used previously created `.h` and `.cpp` files that have the same name as the class. You can see a full list of your project files in the **Solution Explorer** window, visible on the side of the IDE. If the window isn't visible, you can open it from the menu bar: choose **View** > **Solution Explorer**.
+   The **Add Class** wizard you used previously created `.h` and `.cpp` files that have the same name as the class. You can see a full list of your project files in the **Solution Explorer** window, visible on the side of the IDE. If the window isn't visible, you can open it from the menu bar: select **View** > **Solution Explorer**.
 
    :::image type="complex" source="./media/calculator-solution-explorer.png" alt-text="Screenshot of the Visual Studio Solution Explorer window.":::
    The calculator tutorial project has a header files node containing Calculator.h, stdafx.h, and targetver.h. A Source Files node contains Calculator.cpp, CalculatorTutorial.cpp, and stdafx.cpp. Nodes for references, external depndencies, and resource files are visible but closed.
@@ -552,7 +548,7 @@ It's time to add some math logic.
    > - C++ code is organized into *header* (`.h`) files and *source* (`.cpp`) files. Several other file extensions are supported by various compilers, but these are the main ones to know about. Functions and variables are normally *declared*, that is, given a name and a type, in header files, and *implemented*, or given a definition, in source files. To access code defined in another file, you can use `#include "filename.h"`, where `filename.h` is the name of the file that declares the variables or functions you want to use.
    > - It's good practice to organize your code into different files based on what it does, so it's easy to find the code you need later. In our case, we define the `Calculator` class separately from the file containing the `main()` function, but we plan to reference the `Calculator` class in `main()`.
 
-1. A green squiggle appears under `Calculate` because we haven't defined the `Calculate` function in the `.cpp` file. Hover over `Calculate`, click the down arrow on the light bulb that appears, and choose **Create definition of 'Calculate' in `Calculator.cpp`**. A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
+1. A green squiggle appears under `Calculate` because we haven't defined the `Calculate` function in the `.cpp` file. Hover over `Calculate`, click the down arrow on the light bulb that appears, and select **Create definition of 'Calculate' in `Calculator.cpp`**. A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
 
    :::image type="content" source="./media/calculator-create-definition.gif" alt-text="Video showing using the light bulb dropdown to select Create definition of Calculate in Calculator.cpp.":::
 
@@ -637,7 +633,7 @@ If you build and run the code again at this point, it will still exit after aski
 
 ### Build and test the code again
 
-Now it's time to test the program again to make sure everything works properly.
+Test the program again to make sure everything works properly.
 
 1. Press **Ctrl+F5** to rebuild and start the app.
 
@@ -649,7 +645,7 @@ Now it's time to test the program again to make sure everything works properly.
 
 Since the user is free to type anything into the console window, let's make sure the calculator handles some input as expected. Instead of running the program, let's debug it instead, so we can inspect what it's doing in detail, step-by-step.
 
-### To run the app in the debugger
+### Run the app in the debugger
 
 1. Set a breakpoint on the `result = c.Calculate(x, oper, y);` line. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window. A red dot appears.
 
@@ -657,7 +653,7 @@ Since the user is free to type anything into the console window, let's make sure
 
    Now when we debug the program, it always pauses execution at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time, let's make the breakpoint conditional.
 
-1. Right-click the red dot that represents the breakpoint, and choose **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Choose the **Close** button when you're done to save the breakpoint condition.
+1. Right-click the red dot that represents the breakpoint, and select **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Select the **Close** button when you're done to save the breakpoint condition.
 
    :::image type="complex" source="./media/calculator-conditional-breakpoint.gif" alt-text="Video demonstrating the process of setting a conditional breakpoint.":::
     The breakpoint is on the line: result = c dot Calculate ( x, oper, y). 'Conditions...' is selected in the breakpoint dropdown, which opens the breakpoint settings window. The Condition option is checked, underneath which the dropdowns are set as: 'Conditional Expression' and 'Is true'. The user enters y == 0 && oper == '/' into the condition textbox and then selects close to set the conditional breakpoint.
@@ -665,7 +661,7 @@ Since the user is free to type anything into the console window, let's make sure
 
    Now we pause execution at the breakpoint specifically if a division by 0 is attempted.
 
-1. To debug the program, press **F5**, or choose the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers; `cin` is smart enough to parse the input appropriately.
+1. To debug the program, press **F5**, or select the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers; `cin` is smart enough to parse the input appropriately.
 
    :::image type="complex" source="./media/calculator-debug-conditional.gif" alt-text="Video showing the program execution paused at the conditional breakpoint.":::
    The user enters 5 - 0. The app outputs: Result is 5. The user then enters 10/0 and because the condition for the conditional breakpoint is met, execution stops on the line: result = c.Calculate(x, oper, y);
@@ -761,7 +757,7 @@ Let's handle division by zero more gracefully, so a user can understand the prob
    > [!Note]
    > When you edit code while in debugging mode, there is a risk of code becoming stale. This happens when the debugger is still running your old code, and has not yet updated it with your changes. The debugger pops up a dialog to inform you when this happens. Sometimes, you may need to press **F5** to refresh the code being executed. In particular, if you make a change inside a function while the point of execution is inside that function, step out of the function, then back into it again to get the updated code. If that doesn't work for some reason and you see an error message, you can stop debugging by clicking on the red square in the toolbar under the menus at the top of the IDE, then start debugging again by entering **F5** or by choosing the green "play" arrow beside the stop button on the toolbar.
    >
-   > Another reason edit and continue may fail is that you need to go to the main menu and choose **Tools** > **Options** > **Debugging** > **General** and ensure that **Require source files to exactly match the original version** is checked.
+   > Another reason edit and continue may fail is that you need to go to the main menu and select **Tools** > **Options** > **Debugging** > **General** and ensure that **Require source files to exactly match the original version** is checked.
 
    > Understanding the Run and Debug shortcuts
    >
