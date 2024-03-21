@@ -35,9 +35,11 @@ int main(int argc, char **argv) {
 To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
-cl example1.cpp /fsanitize=address /Zi
+cl example1.cpp /fsanitize=address /Zi /Oi
 devenv /debugexe example1.exe
 ```
+
+The [/Oi flag](../build/reference/oi-generate-intrinsic-functions.md) tells the compiler to treat `memcpy` and `memmove` as intrinsic functions. This is necessary because some versions of the standard library implement `memcpy` and `memmove` in the same way. Because ASAN is a dynamic analysis tool, it only detects errors with an observable runtime effect.
 
 ### Resulting error
 

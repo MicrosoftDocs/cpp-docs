@@ -931,6 +931,8 @@ items:
           href: compiler-errors-1/compiler-error-c2320.md
         - name: Compiler error C2322
           href: compiler-errors-1/compiler-error-c2322.md
+        - name: Compiler error C2323
+          href: compiler-errors-1/compiler-error-c2323.md
         - name: Compiler error C2324
           href: compiler-errors-1/compiler-error-c2324.md
         - name: Compiler error C2325

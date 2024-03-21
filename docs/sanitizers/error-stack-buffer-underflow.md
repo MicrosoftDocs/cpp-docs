@@ -31,9 +31,11 @@ int main() {
 To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
-cl example1.cpp /fsanitize=address /Zi
+cl example1.cpp /fsanitize=address /Zi /Od
 devenv /debugexe example1.exe
 ```
+
+ASAN is a form of dynamic analysis, which means it can only detect bad code that is actually executed. An optimizer will remove the assignment to `buffer[subscript]` because `buffer[subscript]` is never read from. As a result, this example requires the `/Od` flag.
 
 ### Resulting error
 
