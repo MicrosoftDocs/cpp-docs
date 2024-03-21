@@ -86,7 +86,7 @@ public:
 
 class Child : public Parent {
 public:
-    int extra_field;
+    volatile int extra_field;
 };
 
 int main(void) {
@@ -95,7 +95,7 @@ int main(void) {
     Child *c = (Child*)&p;
     c->extra_field = 42;  // Boom !
 
-    return 0;
+    return (c->extra_field == 42);
 }
 ```
 
