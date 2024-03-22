@@ -3,38 +3,33 @@ description: "Learn more about: References (C++)"
 title: "References (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [C++], referencing", "references [C++]", "references, to pointers", "declarations, references", "references, declaring", "referencing objects, declarator syntax"]
-ms.assetid: 68156f7f-97a0-4b66-b26d-b25ade5e3bd8
 ---
 # References (C++)
 
-A reference, like a pointer, stores the address of an object that is located elsewhere in memory. Unlike a pointer, a reference after it is initialized cannot be made to refer to a different object or set to null. There are two kinds of references: lvalue references which refer to a named variable and rvalue references which refer to a [temporary object](../cpp/temporary-objects.md). The & operator signifies an lvalue reference and the && operator signifies either an rvalue reference, or a universal reference (either rvalue or lvalue) depending on the context.
+A reference, like a pointer, stores the address of an object that is located elsewhere in memory. Unlike a pointer, a reference after it's initialized can't be made to refer to a different object or set to null. There are two kinds of references: *lvalue* references, which refer to a named variable and *rvalue* references, which refer to a [temporary object](../cpp/temporary-objects.md). The `&` operator signifies an lvalue reference and the `&&` operator signifies either an rvalue reference, or a universal reference (either rvalue or lvalue) depending on the context.
 
 References may be declared using the following syntax:
 
-> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[*ms-modifier*] *declarator* \[**=** *expression*]**;**
+> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[*ms-modifier*] *declarator* \[**`=`** *expression*]**`;`**
 
 Any valid declarator specifying a reference may be used. Unless the reference is a reference to function or array type, the following simplified syntax applies:
 
-> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[**&** or **&&**] \[*cv-qualifiers*] *identifier* \[**=** *expression*]**;**
+> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[**`&`** or **`&&`**] \[*cv-qualifiers*] *identifier* \[**`=`** *expression*]**`;`**
 
 References are declared using the following sequence:
 
 1. The declaration specifiers:
 
    - An optional storage class specifier.
-
    - Optional **`const`** and/or **`volatile`** qualifiers.
-
    - The type specifier: the name of a type.
 
 1. The declarator:
 
    - An optional Microsoft-specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
 
-   - The **&** operator or **&&** operator.
-
+   - The **`&`** operator or **`&&`** operator.
    - Optional **`const`** and/or **`volatile`** qualifers.
-
    - The identifier.
 
 1. An optional initializer.
@@ -48,7 +43,7 @@ int &i;
 int &i, &j;
 ```
 
-References, pointers and objects may be declared together:
+References, pointers, and objects may be declared together:
 
 ```cpp
 int &ref, *ptr, k;
