@@ -229,7 +229,7 @@ namespace Contoso
             T Multiply(T a, T b);
             std::vector<double> Log(double);
             T Accumulate(std::vector<T> nums);
-      };
+        };
     }
 }
 ```
