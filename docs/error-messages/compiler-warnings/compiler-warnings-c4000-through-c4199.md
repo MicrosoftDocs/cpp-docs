@@ -15,7 +15,7 @@ The articles in this section of the documentation explain a subset of the warnin
 
 |Warning|Message|
 |-------------|-------------|
-|Compiler warning C4000|UNKNOWN WARNING<br /><br /> Please choose the Technical Support command on the Visual C++<br /><br /> Help menu, or open the Technical Support help file for more information|
+|Compiler warning C4000|UNKNOWN WARNING<br/> Please choose the Technical Support command on the Visual C++<br/> Help menu, or open the Technical Support help file for more information|
 |[Compiler warning (level 4) C4001](../../error-messages/compiler-warnings/compiler-warning-level-4-c4001.md)|nonstandard extension 'single line comment' was used|
 |[Compiler warning (level 1) C4002](compiler-warning-level-1-c4002.md)|too many actual parameters for macro 'identifier'|
 |[Compiler warning (level 1) C4003](../../error-messages/compiler-warnings/compiler-warning-level-1-c4003.md)|not enough actual parameters for macro 'identifier'|
@@ -135,7 +135,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1) C4162](../../error-messages/compiler-warnings/compiler-warning-level-1-c4162.md)|'identifier': no function with C linkage found|
 |[Compiler warning (level 1) C4163](compiler-warning-level-1-c4163.md)|'identifier': not available as an intrinsic function|
 |[Compiler warning (level 1) C4164](compiler-warning-level-1-c4164.md)|'function': intrinsic function not declared|
-|[Compiler warning (level 1) C4165](compiler-warning-level-1-c4165.md)|'HRESULT' is being converted to 'bool'; are you sure this is what you want?|
+|[Compiler warning (level 3, off) C4165](compiler-warning-level-1-c4165.md)|'HRESULT' is being converted to 'bool'; are you sure this is what you want?|
 |[Compiler warning (level 1) C4166](compiler-warning-level-1-c4166.md)|illegal calling convention for constructor/destructor|
 |[Compiler warning (level 1) C4167](compiler-warning-level-1-c4167.md)|'function': only available as an intrinsic function|
 |[Compiler warning (level 1) C4168](compiler-warning-level-1-c4168.md)|compiler limit: out of debugger types, delete program database 'database' and rebuild|
