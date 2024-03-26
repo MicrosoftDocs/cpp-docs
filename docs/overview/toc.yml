@@ -2,7 +2,7 @@ items:
 - name: Microsoft C/C++ in Visual Studio
   expanded: false
   items: 
-    - name: C++ in Visual Studio
+    - name: C and C++ in Visual Studio
       href: ../overview/visual-cpp-in-visual-studio.md
     - name: Overview of C++ development in Visual Studio
       href: ../overview/overview-of-cpp-development.md

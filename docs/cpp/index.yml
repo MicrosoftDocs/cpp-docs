@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: C++ language documentation
+title: C++ documentation
 summary: Learn to use C++ and the C++ standard library.
 
 metadata:
@@ -76,7 +76,7 @@ landingContent:
             url: ../build/reference/compiling-a-c-cpp-program.md
           - text: Linker reference
             url: ../build/reference/linking.md
-          - text: Additional build tools
+          - text: More build tools
             url: ../build/reference/c-cpp-build-tools.md
           - text: Errors and warnings
             url: ../error-messages/compiler-errors-1/c-cpp-build-errors.md

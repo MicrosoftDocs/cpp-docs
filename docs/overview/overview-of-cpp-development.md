@@ -66,9 +66,9 @@ If your program has a user interface, you can use a designer to quickly populate
 
 ![Screenshot of the Designer and Toolbox windows.](media/vs2017-toolbox-designer.png "Visual Studio 2017 Toolbox and designer")
 
-For more information about designing a user interface for a Universal Windows Platform app, see [Design and UI](https://developer.microsoft.com/windows/design).
-
-For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For information about Win32 Windows programs, see [Windows Desktop Applications](../windows/desktop-applications-visual-cpp.md).
+- For more information about designing a user interface for a Universal Windows Platform app, see [Design and UI](https://developer.microsoft.com/windows/design).
+- For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](../mfc/mfc-desktop-applications.md).
+- For information about Win32 Windows programs, see [Windows C++ desktop application types](../windows/overview-of-windows-programming-in-cpp.md).
 
 ## Write code
 
