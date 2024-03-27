@@ -7,15 +7,15 @@ helpviewer_keywords: ["C4165"]
 ---
 # Compiler Warning (level 3, off) C4165
 
-'HRESULT' is being converted to 'bool'; are you sure this is what you want?
+'`HRESULT`' is being converted to '`bool`'; are you sure this is what you want?
 
-When an HRESULT is used in an [if](../../cpp/if-else-statement-cpp.md) statement, the HRESULT is converted to a [bool](../../cpp/bool-cpp.md) unless you explicitly test for the variable as an HRESULT.
+When an `HRESULT` is used in an [`if`](../../cpp/if-else-statement-cpp.md) statement, the `HRESULT` is converted to a [`bool`](../../cpp/bool-cpp.md) unless you explicitly test for the variable as an `HRESULT`.
 
 Warning C4165 is off by default. For more information, see [Compiler Warnings That Are Off By Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
 ## Example
 
-The following sample generates C4165.
+The following sample generates C4165:
 
 ```cpp
 // C4165.cpp
