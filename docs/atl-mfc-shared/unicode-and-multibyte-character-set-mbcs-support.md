@@ -12,7 +12,7 @@ Some languages, for example, Japanese and Chinese, have large character sets. To
 
 - [Multibyte Character Sets (MBCS)](#mfc-support-for-mbcs-strings), **`char`** based single or double-byte characters and strings encoded in a locale-specific character set.
 
-Microsoft has recommended the MFC Unicode libraries for all new development, and the MBCS libraries were deprecated in Visual Studio 2013 and Visual Studio 2015. This is no longer the case. The MBCS deprecation warnings have been removed in Visual Studio 2017.
+Microsoft has recommended the MFC Unicode libraries for all new development, and the MBCS libraries were deprecated in Visual Studio 2013 and Visual Studio 2015. This is no longer the case. The MBCS deprecation warnings have been removed in Visual Studio 2017 and we will continue to provide MBCS support in future releases.
 
 ## MFC Support for Unicode Strings
 
