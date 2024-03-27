@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: memmove, wmemmove"
 title: "memmove, wmemmove"
+description: "Learn more about: memmove, wmemmove"
 ms.date: "1/14/2021"
 api_name: ["memmove", "wmemmove"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
@@ -114,4 +114,4 @@ New string: aaaabb
 [`_memccpy`](memccpy.md)\
 [`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
 [`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)\
-[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
+[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)

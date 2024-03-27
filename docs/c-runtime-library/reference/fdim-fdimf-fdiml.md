@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fdim", "fdimf", "fdiml", "math/fdim", "math/fdimf", "math/fdiml"]
 helpviewer_keywords: ["fdim function", "fdimf function", "fdiml function"]
-ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
 ---
 # `fdim`, `fdimf`, `fdiml`
 
@@ -93,4 +92,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
 [`fmax`, `fmaxf`, `fmaxl`](fmax-fmaxf-fmaxl.md)\
-[`abs`, `labs`, `llabs`, `_abs64`](abs-labs-llabs-abs64.md)\
+[`abs`, `labs`, `llabs`, `_abs64`](abs-labs-llabs-abs64.md)

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about the /Zc:zeroSizeArrayNew (Call member new/delete on arrays) compiler option."
 title: "/Zc:zeroSizeArrayNew (Call member new/delete on arrays)"
+description: "Learn more about the /Zc:zeroSizeArrayNew (Call member new/delete on arrays) compiler option."
 ms.date: 11/08/2022
 f1_keywords: ["/Zc:zeroSizeArrayNew"]
 helpviewer_keywords: ["-Zc:zeroSizeArrayNew compiler option (C++)", "/Zc:zeroSizeArrayNew compiler option (C++)"]
@@ -29,4 +29,4 @@ The **`/Zc:zeroSizeArrayNew`** option may cause a breaking change in code that r
 
 ## See also
 
-[`/Zc` (Conformance)](zc-conformance.md)\
+[`/Zc` (Conformance)](zc-conformance.md)
