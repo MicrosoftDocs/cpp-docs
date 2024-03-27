@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/windows/desktop-applications-visual-cpp.md",
+      "redirect_url": "/cpp/windows/overview-of-windows-programming-in-cpp",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/cpp-conformance-improvements-2017.md",
       "redirect_url": "/cpp/overview/cpp-conformance-improvements",
       "redirect_document_id": true
