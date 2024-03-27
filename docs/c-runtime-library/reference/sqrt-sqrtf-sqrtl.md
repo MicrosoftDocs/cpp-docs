@@ -97,4 +97,4 @@ The square root of 45.35 is 6.73
 [`exp`, `expf`, `expl`](exp-expf.md)\
 [`log`, `logf`, `log10`, `log10f`](log-logf-log10-log10f.md)\
 [`pow`, `powf`, `powl`](pow-powf-powl.md)\
-[`_CIsqrt`](../cisqrt.md)\
+[`_CIsqrt`](../cisqrt.md)

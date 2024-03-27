@@ -56,4 +56,4 @@ To use `typeof`, compile with [`/std:clatest`](../build/reference/std-specify-la
 
 ## See also
 
-[`/std` (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md)\
+[`/std` (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md)

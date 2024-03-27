@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: memcpy, wmemcpy"
 title: "memcpy, wmemcpy"
+description: "Learn more about: memcpy, wmemcpy"
 ms.date: "1/14/2021"
 api_name: ["memcpy", "wmemcpy"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
@@ -91,4 +91,4 @@ See [`memmove`](memmove-wmemmove.md) for a sample of how to use **`memcpy`**.
 [`memmove`, `wmemmove`](memmove-wmemmove.md)\
 [`memset`, `wmemset`](memset-wmemset.md)\
 [`strcpy_s`, `wcscpy_s`, `_mbscpy_s`](strcpy-s-wcscpy-s-mbscpy-s.md)\
-[`strncpy_s`, `_strncpy_s_l`, `wcsncpy_s`, `_wcsncpy_s_l`, `_mbsncpy_s`, `_mbsncpy_s_l`](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)\
+[`strncpy_s`, `_strncpy_s_l`, `wcsncpy_s`, `_wcsncpy_s_l`, `_mbsncpy_s`, `_mbsncpy_s_l`](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)
