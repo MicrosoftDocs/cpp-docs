@@ -3403,7 +3403,7 @@ items:
           href: compiler-warnings/compiler-warning-level-1-c4163.md
         - name: Compiler warning (level 1) C4164
           href: compiler-warnings/compiler-warning-level-1-c4164.md
-        - name: Compiler warning (level 1) C4165
+        - name: Compiler warning (level 3, off) C4165
           href: compiler-warnings/compiler-warning-level-1-c4165.md
         - name: Compiler warning (level 1) C4166
           href: compiler-warnings/compiler-warning-level-1-c4166.md
