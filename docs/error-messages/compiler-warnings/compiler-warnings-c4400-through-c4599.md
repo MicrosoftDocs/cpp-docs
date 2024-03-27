@@ -78,6 +78,8 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1, Error) C4462](../../error-messages/compiler-warnings/compiler-warning-level-1-c4462.md)|'*type*' : cannot determine the GUID of the type. Program may fail at runtime.|
 |[Compiler warning (level 4) C4463](compiler-warning-level-4-c4463.md)|overflow; assigning '*value*' to bit-field that can only hold values from '*min_value*' to '*max_value*'|
 |[Compiler warning (level 4) C4464](../../error-messages/compiler-warnings/compiler-warning-level-4-c4464.md)|relative include path contains '..'|
+|Compiler warning (level 1) C4467|Usage of ATL attributes is deprecated|
+|Compiler warning (level 1) C4468|The [[fallthrough]] attribute must be followed by a `case` label or a `default` label|
 |[Compiler warning (level 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|floating-point control pragmas ignored under /clr|
 |[Compiler warning (level 4) C4471](compiler-warning-level-4-c4471.md)|'*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)|
 |Compiler warning (level 1) C4472|'*identifier*' is a native enum: add an access specifier (private/public) to declare a 'WinRT\|managed' enum|
@@ -149,7 +151,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1) C4550](../../error-messages/compiler-warnings/compiler-warning-level-1-c4550.md)|expression evaluates to a function which is missing an argument list|
 |[Compiler warning (level 1) C4551](../../error-messages/compiler-warnings/compiler-warning-level-1-c4551.md)|function call missing argument list|
 |[Compiler warning (level 1) C4552](../../error-messages/compiler-warnings/compiler-warning-level-1-c4552.md)|'*operator*': operator has no effect; expected operator with side-effect|
-|[Compiler warning (level 1) C4553](../../error-messages/compiler-warnings/compiler-warning-level-1-c4553.md)|'*operator*': operator has no effect; did you intend 'operator?|
+|[Compiler warning (level 1) C4553](../../error-messages/compiler-warnings/compiler-warning-level-1-c4553.md)|'*operator*': operator has no effect; did you intend 'operator'?|
 |[Compiler warning (level 3) C4554](../../error-messages/compiler-warnings/compiler-warning-level-3-c4554.md) C4554|'*operator*': check operator precedence for possible error; use parentheses to clarify precedence|
 |[Compiler warning (level 1) C4555](../../error-messages/compiler-warnings/compiler-warning-level-1-c4555.md)|expression has no effect; expected expression with side-effect|
 |[Compiler warning (level 1) C4556](../../error-messages/compiler-warnings/compiler-warning-level-1-c4556.md)|value of intrinsic immediate argument '*value*' is out of range '*lower_bound* - *upper_bound*'|
@@ -181,6 +183,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 1, Error) C4586|'*type*': A public type cannot be declared in a top-level namespace called 'Windows'|
 |Compiler warning (level 1) C4587|'*anonymous_structure*': behavior change: constructor is no longer implicitly called|
 |Compiler warning (level 1) C4588|'*anonymous_structure*': behavior change: destructor is no longer implicitly called|
+|Compiler warning (level 4) C4589|Constructor of abstract class '*class1*' ignores initializer for virtual base class '*class2*'|
 |Compiler warning (level 1) C4591|'constexpr' call-depth limit of *number* exceeded (/constexpr:depth\<NUMBER>)|
 |Compiler warning (level 3) C4592|'*function*': 'constexpr' call evaluation failed; function will be called at run-time|
 |Compiler warning (level 1) C4593|'*function*': 'constexpr' call evaluation step limit of '*limit*' exceeded; use /constexpr:steps\<NUMBER> to increase the limit|

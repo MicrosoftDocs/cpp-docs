@@ -121,7 +121,7 @@ Create unit tests using the Microsoft Unit Testing Framework for C++, Google Tes
 
 ## Write C/C++ applications using Visual Studio
 
-[Desktop applications (C++)](../windows/desktop-applications-visual-cpp.md)\
+[Windows C++ desktop application types](../windows/overview-of-windows-programming-in-cpp.md)\
 Learn how to create traditional native C++ desktop applications for Windows.
 
 [.NET programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)\

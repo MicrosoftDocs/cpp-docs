@@ -599,4 +599,4 @@ Congratulations! You've built a traditional Windows desktop application.
 
 ## See also
 
-[Windows Desktop Applications](./desktop-applications-visual-cpp.md)
+[Windows C++ desktop application types](overview-of-windows-programming-in-cpp.md)

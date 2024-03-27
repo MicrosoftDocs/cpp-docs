@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Walkthrough: Creating a Standard C++ Program (C++)"
-title: "Walkthrough: Creating a Standard C++ Program (C++)"
+description: "Learn more about: Walkthrough: Create a Standard C++ Program (C++)"
+title: "Walkthrough: Create a Standard C++ Program (C++)"
 ms.custom: "get-started-article"
 ms.date: 10/27/2021
 helpviewer_keywords: ["command-line applications [C++], standard", "standard applications [C++]"]
-ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
 ---
-# Walkthrough: Creating a Standard C++ Program (C++)
+# Walkthrough: Create a Standard C++ Program (C++)
 
 You can use Visual Studio to create Standard C++ programs. By following the steps in this walkthrough, you can create a project, add a new file to the project, modify the file to add C++ code, and then compile and run the program by using Visual Studio.
 
