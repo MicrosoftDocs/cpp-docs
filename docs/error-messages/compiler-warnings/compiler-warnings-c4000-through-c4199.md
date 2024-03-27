@@ -70,7 +70,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 3) C4073](../../error-messages/compiler-warnings/compiler-warning-level-3-c4073.md)|initializers put in library initialization area|
 |[Compiler warning (level 1) C4074](../../error-messages/compiler-warnings/compiler-warning-level-1-c4074.md)|initializers put in compiler reserved initialization area|
 |[Compiler warning (level 1) C4075](compiler-warning-level-1-c4075.md)|initializers put in unrecognized initialization area|
-|[Compiler warning (level 1) C4076](compiler-warning-level-1-c4076.md)|'type_modifier': can not be used with type 'typename'|
+|[Compiler warning (level 1) C4076](compiler-warning-level-1-c4076.md)|'type_modifier': can't be used with type 'typename'|
 |[Compiler warning (level 1) C4077](compiler-warning-level-1-c4077.md)|unknown check_stack option|
 |[Compiler warning (level 1) C4079](../../error-messages/compiler-warnings/compiler-warning-level-1-c4079.md)|unexpected token 'token'|
 |[Compiler warning (level 1) C4080](compiler-warning-level-1-c4080.md)|expected identifier for segment name; found 'symbol'|
