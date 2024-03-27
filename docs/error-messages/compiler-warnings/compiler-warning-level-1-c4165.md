@@ -10,13 +10,13 @@ ms.assetid: f5bed515-2290-4f88-8dab-b45d95fe26ef
 
 'HRESULT' is being converted to 'bool'; are you sure this is what you want?
 
-When using an HRESULT in an [if](../../cpp/if-else-statement-cpp.md) statement, the HRESULT will be converted to a [bool](../../cpp/bool-cpp.md) unless you explicitly test for the variable as an HRESULT. This warning is off by default.
+When using an HRESULT in an [if](../../cpp/if-else-statement-cpp.md) statement, the HRESULT is converted to a [bool](../../cpp/bool-cpp.md) unless you explicitly test for the variable as an HRESULT. This warning is off by default.
 
 Warning C4165 is off by default. For more information, see [Compiler Warnings That Are Off By Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
 ## Example
 
-The following sample generates C4165
+The following sample generates C4165.
 
 ```cpp
 // C4165.cpp
