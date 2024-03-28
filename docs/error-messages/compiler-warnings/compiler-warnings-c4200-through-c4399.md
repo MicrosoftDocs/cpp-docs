@@ -175,7 +175,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 3) C4398](compiler-warning-level-3-c4398.md)|'*variable*': per-process global object might not work correctly with multiple appdomains; consider using __declspec(appdomain)|
 |[Compiler warning (level 1, Error) C4399](compiler-warning-level-1-c4399.md)|'*symbol*': per-process symbol should not be marked with __declspec('dllimport') when compiled with /clr:pure|
 
-# See also
+## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
 [Compiler warnings C4000 - C5999](compiler-warnings-c4000-c5999.md)
