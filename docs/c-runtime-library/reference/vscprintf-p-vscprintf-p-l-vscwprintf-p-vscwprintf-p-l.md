@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l"
 title: "_vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l"
+description: "Learn more about: _vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l"
 ms.date: "10/21/2021"
 api_name: ["_vscprintf_p_l", "_vscprintf_p", "_vscwprintf_p_l", "_vscwprintf_p"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -89,4 +89,4 @@ See the example for [`vsprintf`](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswpr
 
 [`vprintf` functions](../vprintf-functions.md)\
 [`_scprintf_p`, `_scprintf_p_l`, `_scwprintf_p`, `_scwprintf_p_l`](scprintf-p-scprintf-p-l-scwprintf-p-scwprintf-p-l.md)\
-[`_vscprintf`, `_vscprintf_l`, `_vscwprintf`, `_vscwprintf_l`](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)\
+[`_vscprintf`, `_vscprintf_l`, `_vscwprintf`, `_vscwprintf_l`](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)

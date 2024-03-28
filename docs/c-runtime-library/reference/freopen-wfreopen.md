@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: freopen, _wfreopen"
 title: "freopen, _wfreopen"
+description: "Learn more about: freopen, _wfreopen"
 ms.date: "2/23/2021"
 api_name: ["freopen", "_wfreopen", "_o__wfreopen", "_o_freopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -141,4 +141,4 @@ This will go to the file 'freopen.out'
 [`_fileno`](fileno.md)\
 [`fopen`, `_wfopen`](fopen-wfopen.md)\
 [`_open`, `_wopen`](open-wopen.md)\
-[`_setmode`](setmode.md)\
+[`_setmode`](setmode.md)

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _read"
 title: "_read"
+description: "Learn more about: _read"
 ms.date: "4/2/2020"
 api_name: ["_read", "_o__read"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -123,4 +123,4 @@ Read 19 bytes from file
 [`_creat`, `_wcreat`](creat-wcreat.md)\
 [`fread`](fread.md)\
 [`_open`, `_wopen`](open-wopen.md)\
-[`_write`](write.md)\
+[`_write`](write.md)

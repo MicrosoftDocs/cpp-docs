@@ -56,7 +56,7 @@ Along with the inherited members from its [Activity](activity.md) base class, th
 
 [InputSourcePath](#input-source-path)\
 [OutputObjectPath](#output-object-path)\
-[PassCode](#pass-code)\
+[PassCode](#pass-code)
 
 ## <a name="compiler-pass"></a> CompilerPass
 
