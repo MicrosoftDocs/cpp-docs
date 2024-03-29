@@ -23,7 +23,7 @@ These attributes explicitly define the DLL's interface to its client, which can 
 
 If a class is marked `__declspec(dllexport)`, any specializations of class templates in the class hierarchy are implicitly marked as `__declspec(dllexport)`. It means that class templates are explicitly instantiated and the class's members must be defined.
 
-**`dllexport`** of a function exposes the function with its decorated name, sometimes known as "name mangling". For C++ functions, the decorated name includes extra characters that encode type and parameter information. C functions or functions that are declared as `extern "C"` include platform-specific decoration that's based on the calling convention. No name decoration is applied to exported C functions or C++ `extern "C"` functions that use the **`__cdecl`** calling convention. For more information on name decoration in C/C++ code, see [Decorated names](../build/reference/decorated-names.md).
+**`dllexport`** of a function exposes the function with its decorated name, sometimes known as "name mangling". For C++ functions, the decorated name includes extra characters that encode type and parameter information. C functions or functions that are declared as `extern "C"` follow C name decoration rules. For more information on name decoration in C/C++ code, see [Decorated names](../build/reference/decorated-names.md).
 
 To export an undecorated name, you can link by using a Module Definition (`.def`) file that defines the undecorated name in an `EXPORTS` section. For more information, see [`EXPORTS`](../build/reference/exports.md). Another way to export an undecorated name is to use a `#pragma comment(linker, "/export:alias=decorated_name")` directive in the source code.
 
