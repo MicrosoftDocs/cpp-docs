@@ -127,12 +127,12 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 4) C4338|#pragma *directive*: standard section '*section*' is used|
 |[Compiler warning (level 4, off) C4339](compiler-warning-level-4-c4339.md)|'*type*': use of undefined type detected in 'WinRT\|CLR' meta-data - use of this type may lead to a runtime exception|
 |[Compiler warning (level 1) C4340](compiler-warning-level-1-c4340.md)|'*value*': value wrapped from positive to negative value|
-|[Compiler warning (removed) C4342](compiler-warning-level-1-c4342.md)|behavior change: '*function*' called, but a member operator was called in previous versions|
+|[Compiler warning (level 1, off, no longer emitted) C4342](compiler-warning-level-1-c4342.md)|behavior change: '*function*' called, but a member operator was called in previous versions|
 |[Compiler warning (level 4) C4343](compiler-warning-level-4-c4343.md)|#pragma optimize("g",off) overrides /Og option|
 |[Compiler warning (level 1) C4344](compiler-warning-level-1-c4344.md)|behavior change: use of explicit template arguments results in call to '*function*'|
 |[Compiler warning (level 1) C4346](compiler-warning-level-1-c4346.md)|'*name*': dependent name is not a type|
 |[Compiler warning (level 1) C4348](compiler-warning-level-1-c4348.md)|'*type*': redefinition of default parameter: parameter '*parameter_number*'|
-|[Compiler warning (removed) C4350](compiler-warning-level-1-c4350.md)|behavior change: '*member1*' called instead of '*member2*'|
+|[Compiler warning (level 1, off, no longer emitted) C4350](compiler-warning-level-1-c4350.md)|behavior change: '*member1*' called instead of '*member2*'|
 |Compiler warning (level 1) C4352|'*identifier*': intrinsic function already defined|
 |[Compiler warning (level 1) C4353](compiler-warning-level-1-c4353.md)|nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead|
 |[Compiler warning C4355](compiler-warning-c4355.md)Compiler warning (level 1 and level 4) C4355|'this': used in base member initializer list|
