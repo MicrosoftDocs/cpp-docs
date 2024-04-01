@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: move_iterator Class"
 title: "move_iterator Class"
+description: "Learn more about: move_iterator Class"
 ms.date: 06/17/2022
 f1_keywords: ["iterator/std::move_iterator", "iterator/std::move_iterator::iterator_type", "iterator/std::move_iterator::iterator_category", "iterator/std::move_iterator::value_type", "iterator/std::move_iterator::difference_type", "iterator/std::move_iterator::pointer", "iterator/std::move_iterator::reference", "iterator/std::move_iterator::base"]
 helpviewer_keywords: ["std::move_iterator [C++]", "std::move_iterator [C++], iterator_type", "std::move_iterator [C++], iterator_category", "std::move_iterator [C++], value_type", "std::move_iterator [C++], difference_type", "std::move_iterator [C++], pointer", "std::move_iterator [C++], reference", "std::move_iterator [C++], base"]
-ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
 ms.custom: devdivchpfy22
 ---
 
@@ -51,7 +50,7 @@ A `move_iterator` might be capable of operations that aren't defined by the wrap
 
 |Operator|Description|
 |-|-|
-|[move_iterator::operator*](#op_star)|Returns `(reference)*base().`|
+|[move_iterator::operator*](#op_star)|Returns `(reference)*base()`.|
 |[move_iterator::operator++](#op_add_add)|Increments the stored iterator. Exact behavior depends on whether it's a preincrement or a postincrement operation.|
 |[move_iterator::operator--](#operator--)|Decrements the stored iterator. Exact behavior depends on whether it's a predecrement or a postdecrement operation.|
 |[`move_iterator::operator->`](#op_arrow)|Returns `&**this`.|
