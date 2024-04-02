@@ -2,29 +2,47 @@
 title: "AddressSanitizer runtime"
 description: "Technical description of the AddressSanitizer runtime for Microsoft C/C++."
 ms.date: 02/05/2024
-helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "clang_rt.asan", "Clang runtime", "Asan runtime"]
+helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "clang_rt.asan", "Clang runtime", "ASan runtime"]
 ---
 
 # AddressSanitizer runtime
 
 The AddressSanitizer runtime library intercepts common memory allocation functions and operations to enable inspection of memory accesses. There are several different runtime libraries that support the various types of executables the compiler may generate. The compiler and linker automatically link the appropriate runtime libraries, as long as you pass the [`/fsanitize=address`](../build/reference/fsanitize.md) option at compile time. You can override the default behavior by using the **`/NODEFAULTLIB`** option at link time. For more information, see the section on [linking](./asan-building.md#linker) in the [AddressSanitizer language, build, and debugging reference](./asan-building.md).
 
-The list of runtime libraries for linking to the AddressSanitizer runtime as of Visual Studio 17.7 Preview 3, follows. For more information about the `/MT` and `/MD` options, see [/MD, /MT, /LD (Use Run-Time Library)](../build/reference/md-mt-ld-use-run-time-library.md).
+The list of runtime libraries for linking to the AddressSanitizer runtime as of Visual Studio 17.7 Preview 3, follows. For more information about the `/MT` (statically link the runtime) and `/MD` (dynamically link the redist at runtime) options, see [/MD, /MT, /LD (Use Run-Time Library)](../build/reference/md-mt-ld-use-run-time-library.md).
 
 > [!NOTE]
 > In the following table, *`{arch}`* is either *`i386`* or *`x86_64`*.
-> These libraries use Clang conventions for architecture names. MSVC conventions are normally `x86` and `x64` rather than `i386` and `x86_64`. They refer to the same architectures.
+> These libraries use Clang conventions for architecture names. MSVC conventions are normally `x86` and `x64` rather than `i386` and `x86_64`, but they refer to the same architectures.
 
 | CRT option | AddressSanitizer runtime library (.lib) | Address runtime binary (.dll)
 |--|--|--|
 | `/MT` or `/MTd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_static_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
 | `/MD` or `/MDd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
 
+The following diagram shows how the runtime library is linked given the `/MT`, `/MTd`, `/MD`, and `/MDd` compiler options:
+
+:::image type="complex" source="runtime-configurations.png" alt-text="Diagram of how the runtime libraries are linked for various compiler options."
+The image shows three scenarios for linking the runtime library. The first is /MT or /MTd. My_exe.exe and my_dll.dll are both shown with their own copies of the statically linked VCRuntime, Universal CRT, and STL runtimes. The scenarios show /MD in which both my_exe.exe and my_dll.dll share vcruntime140.dll, ucrtbase.dll, and msvcp140.dll. The last scenario shows /MDd in which both my_exe.exe and my_dll.dll share the debug versions of the runtimes: vcruntime140d.dll, ucrtbased.dll, and msvcp140d.dll
+:::image-end:::
+
 When compiling with `cl /fsanitize=address`, the compiler generates instructions to manage and check the [shadow bytes](./asan-shadow-bytes.md). Your program uses this instrumentation to check memory accesses on the stack, in the heap, or in the global scope. The compiler also produces metadata describing stack and global variables. This metadata enables the runtime to generate precise error diagnostics: function names, lines, and columns in your source code. Combined, the compiler checks and runtime libraries can precisely diagnose many types of [memory safety bugs](./asan-error-examples.md) if they're encountered at run-time.
+
+The following diagram shows how the ASan library is linked given various compiler options:
+
+:::image type="complex" source="asan-one-dll.png" alt-text="Diagram of how the ASan runtime dll is linked."
+The image shows four scenarios for linking the ASan runtime library. The scenarios are for /MT (statically link the runtime), /MTd (statically link the debug runtime), /MD (dynamically link the redist at runtime), /MDd (dynamically link the debug redist at runtime). In all cases, my_exe.exe links and it's associates my_dll.dll link to a single instance of clang-rt.asan-dynamix-x86_64.dll. 
+:::image-end:::
 
 ### Previous versions
 
-Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds didn't use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Also, dynamically linked projects (**`/MD`** or **`/MTd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
+Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds didn't use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Also, dynamically linked projects (**`/MD`** or **`/MDd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
+
+The following diagram shows how the ASan library was linked prior to VS 2022 17.7 preview 3 for various compiler options:
+
+:::image type="complex" source="asan-library-linking-previous-versions" alt-text="Diagram of how the ASan runtime dll was linked prior to VS 2022 preview 3."
+The image shows four scenarios for linking the ASan runtime library. The scenarios are for /MT (statically link the runtime), /MTd (statically link the debug runtime), /MD (dynamically link the redist at runtime), /MDd (dynamically link the debug redist at runtime). For /MT, my_exe.exe has a statically linked copy of the ASan runtime. my_dll.dll, links to the ASan runtime in my_exe.exe. For /MTd, the diagram is the same except it uses the debug statically linked ASan runtime. For /MD, both my_exe.exe and my_dll.dll link to the dynamically linked ASan runtime named clang_rt.asan_dynamic-x86_64.dll. For /MDd, the diagram is the same except my_exe.exe and my_dll.dll link to the debug ASan runtime named clang_rt.asan_dbg_dynamic-x86_64.dll.
+:::image-end:::
 
 | CRT option | DLL or EXE | DEBUG? | AddressSanitizer runtime binaries libraries | Address runtime binary (.dll)
 |--|--|--|--|--|
