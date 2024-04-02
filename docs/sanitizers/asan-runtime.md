@@ -34,6 +34,8 @@ The following diagram shows how the ASan library is linked for various compiler 
 The image shows four scenarios for linking the ASan runtime library. The scenarios are for /MT (statically link the runtime), /MTd (statically link the debug runtime), /MD (dynamically link the redist at runtime), /MDd (dynamically link the debug redist at runtime). In all cases, my_exe.exe links and its associates my_dll.dll link to a single instance of clang-rt.asan-dynamix-x86_64.dll.
 :::image-end:::
 
+Even when statically linking, the ASan runtime DLL must be present at runtime--unlike other C Runtime components.
+
 ### Previous versions
 
 Before Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds didn't use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality.
@@ -51,9 +53,9 @@ The following table describes the previous behavior of the AddressSanitizer runt
 | `/MT` | DLL | Yes | *`clang_rt.asan_dbg_dll_thunk-{arch}`* | None
 | `/MD` | Either | Yes | *`clang_rt.asan_dbg_dynamic-{arch}`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dbg_dynamic-{arch}`*
 
-The following diagram shows how the ASan library was linked for various compiler options before Visual Studio 2022 17.7 preview 3:
+The following diagram shows how the ASan library was linked for various compiler options before Visual Studio 2022 17.7 Preview 3:
 
-:::image type="complex" source="media/asan-library-linking-previous-versions.png" alt-text="Diagram of how the ASan runtime dll was linked prior to Visual Studio 2022 preview 3."
+:::image type="complex" source="media/asan-library-linking-previous-versions.png" alt-text="Diagram of how the ASan runtime dll was linked prior to Visual Studio 2022 Preview 3."
 The image shows four scenarios for linking the ASan runtime library. The scenarios are for /MT (statically link the runtime), /MTd (statically link the debug runtime), /MD (dynamically link the redist at runtime), /MDd (dynamically link the debug redist at runtime). For /MT, my_exe.exe has a statically linked copy of the ASan runtime. my_dll.dll links to the ASan runtime in my_exe.exe. For /MTd, the diagram is the same except it uses the debug statically linked ASan runtime. For /MD, both my_exe.exe and my_dll.dll link to the dynamically linked ASan runtime named clang_rt.asan_dynamic-x86_64.dll. For /MDd, the diagram is the same except my_exe.exe and my_dll.dll link to the debug ASan runtime named clang_rt.asan_dbg_dynamic-x86_64.dll.
 :::image-end:::
 
@@ -119,7 +121,7 @@ For more information, see the [Differences with Clang 12.0](asan.md#differences)
   > The option `windows_hook_rtl_allocators`, previously an opt-in feature while AddressSanitizer was experimental, is now enabled by default. In versions before Visual Studio 2022 version 17.4.6, the default option value is `false`. In Visual Studio 2022 version 17.4.6 and later versions, the option `windows_hook_rtl_allocators` defaults to `true`.
 
 - `iat_overwrite`
-  String, set to `"error"` by default. Other possible values are `"protect"` and `"ignore"`. Some modules may overwrite the [`import address table`](/windows/win32/debug/pe-format#import-address-table) of other modules to customize implementations of certain functions. For example, drivers commonly provide custom implementations for specific hardware. The `iat_overwrite` option manages the AddressSanitizer runtime's protection against overwrites for specific [`memoryapi.h`](/windows/win32/api/memoryapi/) functions. The runtime currently tracks the [`VirtualAlloc`](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc), [`VirtualProtect`](/windows/win32/api/memoryapi/nf-memoryapi-virtualprotect), and [`VirtualQuery`](/windows/win32/api/memoryapi/nf-memoryapi-virtualquery) functions for protection. This option is available in Visual Studio 2022 version 17.5 preview 1 and later versions. The following `iat_overwrite` values control how the runtime reacts when protected functions are overwritten:
+  String, set to `"error"` by default. Other possible values are `"protect"` and `"ignore"`. Some modules may overwrite the [`import address table`](/windows/win32/debug/pe-format#import-address-table) of other modules to customize implementations of certain functions. For example, drivers commonly provide custom implementations for specific hardware. The `iat_overwrite` option manages the AddressSanitizer runtime's protection against overwrites for specific [`memoryapi.h`](/windows/win32/api/memoryapi/) functions. The runtime currently tracks the [`VirtualAlloc`](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc), [`VirtualProtect`](/windows/win32/api/memoryapi/nf-memoryapi-virtualprotect), and [`VirtualQuery`](/windows/win32/api/memoryapi/nf-memoryapi-virtualquery) functions for protection. This option is available in Visual Studio 2022 version 17.5 Preview 1 and later versions. The following `iat_overwrite` values control how the runtime reacts when protected functions are overwritten:
 
   - If set to `"error"` (the default), the runtime reports an error whenever an overwrite is detected.
   - If set to `"protect"`, the runtime attempts to avoid using the overwritten definition and proceeds. Effectively, the original `memoryapi` definition of the function is used from inside the runtime to avoid infinite recursion. Other modules in the process still use the overwritten definition.
