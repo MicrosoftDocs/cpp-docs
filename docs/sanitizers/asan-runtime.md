@@ -36,11 +36,13 @@ The image shows four scenarios for linking the ASan runtime library. The scenari
 
 ### Previous versions
 
-Before Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds didn't use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Also, dynamically linked projects (**`/MD`** or **`/MDd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
+Before Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds didn't use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality.
+
+Dynamically linked projects (**`/MD`** or **`/MDd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
 
 The following table describes the previous behavior of the AddressSanitizer runtime library linking, before Visual Studio 17.7 Preview 3:
 
-| CRT option | DLL or EXE | DEBUG? | AddressSanitizer runtime binaries libraries | Address runtime binary (.dll)
+| CRT option | DLL or EXE | DEBUG? | ASan library (`.lib`) | ASan runtime binary (`.dll`) |
 |--|--|--|--|--|
 | `/MT` | EXE | No | *`clang_rt.asan-{arch}`*, *`clang_rt.asan_cxx-{arch}`* | None
 | `/MT` | DLL | No | *`clang_rt.asan_dll_thunk-{arch}`* | None
