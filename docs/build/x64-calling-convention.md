@@ -109,7 +109,7 @@ These examples show how parameters and return values are passed for functions wi
 
 ### Example of return value 1 - 64-bit result
 
-```Output
+```cpp
 __int64 func1(int a, float b, int c, int d, int e);
 // Caller passes a in RCX, b in XMM1, c in R8, d in R9, e pushed on stack,
 // callee returns __int64 result in RAX.
@@ -117,7 +117,7 @@ __int64 func1(int a, float b, int c, int d, int e);
 
 ### Example of return value 2 - 128-bit result
 
-```Output
+```cpp
 __m128 func2(float a, double b, int c, __m64 d);
 // Caller passes a in XMM0, b in XMM1, c in R8, d in R9,
 // callee returns __m128 result in XMM0.
@@ -125,7 +125,7 @@ __m128 func2(float a, double b, int c, __m64 d);
 
 ### Example of return value 3 - user type result by pointer
 
-```Output
+```cpp
 struct Struct1 {
    int j, k, l;    // Struct1 exceeds 64 bits.
 };
@@ -137,7 +137,7 @@ Struct1 func3(int a, double b, int c, float d);
 
 ### Example of return value 4 - user type result by value
 
-```Output
+```cpp
 struct Struct2 {
    int j, k;    // Struct2 fits in 64 bits, and meets requirements for return by value.
 };

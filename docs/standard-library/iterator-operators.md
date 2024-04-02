@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: <iterator> operators"
 title: "<iterator> operators"
+description: "Learn more about: <iterator> operators"
 ms.date: 09/30/2022
 f1_keywords: ["xutility/std::operator!=", "xutility/std::operator>", "xutility/std::operator>=", "xutility/std::operator<", "xutility/std::operator<=", "xutility/std::operator+", "xutility/std::operator-", "xutility/std::operator=="]
 helpviewer_keywords: ["std::operator!= (iterator)", "std::operator> (iterator)", "std::operator>= (iterator)", "std::operator< (iterator)", "std::operator<= (iterator), std::operator== (iterator)"]
@@ -724,7 +724,7 @@ An iterator.
 
 ### Return Value
 
-The difference between two iterators `.`
+The difference between two iterators.
 
 ### Remarks
 
