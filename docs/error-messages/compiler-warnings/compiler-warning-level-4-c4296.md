@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4296"
-title: "Compiler Warning (level 4) C4296"
+description: "Learn more about: Compiler Warning (level 4, off) C4296"
+title: "Compiler Warning (level 4, off) C4296"
 ms.date: "11/04/2016"
 f1_keywords: ["C4296"]
 helpviewer_keywords: ["C4296"]
-ms.assetid: 9d99aafe-f6bd-4ee0-b8d0-98ce5712274d
 ---
-# Compiler Warning (level 4) C4296
+# Compiler Warning (level 4, off) C4296
 
-'operator' : expression is always false
+> 'operator' : expression is always false
 
 An unsigned variable was used in a comparison operation with zero.
 
