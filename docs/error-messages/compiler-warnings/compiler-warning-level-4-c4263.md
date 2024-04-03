@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4263"
-title: "Compiler Warning (level 4) C4263"
+description: "Learn more about: Compiler Warning (level 4, off) C4263"
+title: "Compiler Warning (level 4, off) C4263"
 ms.date: "11/04/2016"
 f1_keywords: ["C4263"]
 helpviewer_keywords: ["C4263"]
-ms.assetid: daabb05d-ab56-460f-ab6c-c74d222ef649
 ---
-# Compiler Warning (level 4) C4263
+# Compiler Warning (level 4, off) C4263
 
 'function' : member function does not override any base class virtual member function
 
