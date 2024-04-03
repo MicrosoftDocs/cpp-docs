@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4265"
-title: "Compiler Warning (level 3) C4265"
+description: "Learn more about: Compiler Warning (level 3, off) C4265"
+title: "Compiler Warning (level 3, off) C4265"
 ms.date: "11/04/2016"
 f1_keywords: ["C4265"]
 helpviewer_keywords: ["C4265"]
-ms.assetid: 20547159-6f30-4cc4-83aa-927884c8bb4c
 ---
-# Compiler Warning (level 3) C4265
+# Compiler Warning (level 3, off) C4265
 
 'class' : class has virtual functions, but destructor is not virtual
 
