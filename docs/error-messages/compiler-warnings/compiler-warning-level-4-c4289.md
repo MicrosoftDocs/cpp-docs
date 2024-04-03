@@ -1,16 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4289"
-title: "Compiler Warning (level 4) C4289"
+description: "Learn more about: Compiler Warning (level 4, off) C4289"
+title: "Compiler Warning (level 4, off) C4289"
 ms.date: "11/04/2016"
 f1_keywords: ["C4289"]
 helpviewer_keywords: ["C4289"]
-ms.assetid: 0dbd2863-4cde-4e16-894b-104a2d5fa724
 ---
-# Compiler Warning (level 4) C4289
+# Compiler Warning (level 4, off) C4289
 
-nonstandard extension used : 'var' : loop control variable declared in the for-loop is used outside the for-loop scope
+> nonstandard extension used : 'var' : loop control variable declared in the `for`-loop is used outside the `for`-loop scope
 
-When compiling with [/Ze](../../build/reference/za-ze-disable-language-extensions.md) and **/Zc:forScope-**, a variable declared in a [for](../../cpp/for-statement-cpp.md) loop was used after the **`for`**-loop scope.
+When compiling with [/Ze](../../build/reference/za-ze-disable-language-extensions.md) and **/Zc:forScope-**, a variable declared in a [`for`](../../cpp/for-statement-cpp.md) loop was used after the **`for`**-loop scope.
 
 See [/Zc:forScope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) for information about how to specify standard behavior in **`for`** loops with **/Ze**.
 
