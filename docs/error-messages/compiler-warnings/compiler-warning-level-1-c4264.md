@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4264"
-title: "Compiler Warning (level 1) C4264"
+description: "Learn more about: Compiler Warning (level 4, off) C4264"
+title: "Compiler Warning (level 4, off) C4264"
 ms.date: "11/04/2016"
 f1_keywords: ["C4264"]
 helpviewer_keywords: ["C4264"]
-ms.assetid: 315a13c1-ca54-4a90-9d2b-dd996463af5d
 ---
-# Compiler Warning (level 1) C4264
+# Compiler Warning (level 4, off) C4264
 
 'virtual_function' : no override available for virtual member function from base 'class'; function is hidden
 
