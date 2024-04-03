@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4287"
-title: "Compiler Warning (level 3) C4287"
+description: "Learn more about: Compiler Warning (level 3, off) C4287"
+title: "Compiler Warning (level 3, off) C4287"
 ms.date: "11/04/2016"
 f1_keywords: ["C4287"]
 helpviewer_keywords: ["C4287"]
-ms.assetid: 1bf3bff8-6402-4d06-95ba-431678a790a7
 ---
-# Compiler Warning (level 3) C4287
+# Compiler Warning (level 3, off) C4287
 
-'operator' : unsigned/negative constant mismatch
+> 'operator' : unsigned/negative constant mismatch
 
 An unsigned variable was used in an operation with a negative number.
 
