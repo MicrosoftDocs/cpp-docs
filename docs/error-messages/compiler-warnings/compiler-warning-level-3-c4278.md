@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4278"
-title: "Compiler Warning (level 3) C4278"
+description: "Learn more about: Compiler Warning (level 3 and level 4) C4278"
+title: "Compiler Warning (level 3 and level 4) C4278"
 ms.date: "08/27/2018"
 f1_keywords: ["C4278"]
 helpviewer_keywords: ["C4278"]
-ms.assetid: 4b6053fb-df62-4c04-b6c8-c011759557b8
 ---
-# Compiler Warning (level 3) C4278
+# Compiler Warning (level 3 and level 4) C4278
 
 > '*identifier*': identifier in type library '*tlb*' is already a macro; use the 'rename' qualifier
 
