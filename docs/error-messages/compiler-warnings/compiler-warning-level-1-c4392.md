@@ -7,9 +7,9 @@ helpviewer_keywords: ["C4392"]
 ---
 # Compiler Warning (level 1, Error) C4392
 
-'signature' : incorrect number of arguments for intrinsic function, expected 'number' arguments
+> 'signature' : incorrect number of arguments for intrinsic function, expected 'number' arguments
 
-A function declaration for a compiler intrinsic had the wrong number of arguments. The resulting image may not run correctly. To fix this warning, either correct the declaration or delete the declaration and simply #include the appropriate header file.
+A function declaration for a compiler intrinsic had the wrong number of arguments. The resulting image may not run correctly. To fix this warning, either correct the declaration or delete the declaration and `#include` the appropriate header file.
 
 This warning is always issued as an error. Use the [warning](../../preprocessor/warning.md) pragma to disable or change the warning level.
 
