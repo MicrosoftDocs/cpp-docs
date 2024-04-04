@@ -372,7 +372,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C3856](compiler-error-c3856.md)|'*class*': class is not a class template/generic|
 |[Compiler error C3857](compiler-error-c3857.md)|'*template*': multiple template/generic parameter lists are not allowed|
 |[Compiler error C3858](compiler-error-c3858.md)|'*identifier*': cannot be redeclared in current scope|
-|[Compiler error C3859](compiler-error-c3859.md)|virtual memory range for PCH exceeded; please recompile with a command line option of '`-Zm`*number*' or greater|
+|[Compiler error C3859](compiler-error-c3859.md)|Failed to create virtual memory for PCH|
 |[Compiler error C3860](compiler-error-c3860.md)|template/generic argument list following class template/generic name must list parameters in the order used in template/generic parameter list|
 |[Compiler error C3861](compiler-error-c3861.md)|'*identifier*': identifier not found|
 |[Compiler error C3862](compiler-error-c3862.md)|'*function*': cannot compile an unmanaged function with `/clr:pure` or `/clr:safe`|
