@@ -13,11 +13,11 @@ helpviewer_keywords: ["C4373"]
 
 Your application contains a method in a derived class that overrides a virtual method in a base class. The parameters in the overriding method differ by a [`const`](../../cpp/const-cpp.md) or [`volatile`](../../cpp/volatile-cpp.md) qualifier from the parameters of the virtual method.
 
-Prior to Visual Studio 2008, the compiler would bind the function to the method in the base class. Later versions of the compiler ignore the **`const`** or **`volatile`** qualifier, bind the function to the method in the derived class, then issue warning **C4373**. The latter behavior conforms to the C++ standard.
+Before Visual Studio 2008, the compiler would bind the function to the method in the base class. Later versions of the compiler ignore the **`const`** or **`volatile`** qualifier, bind the function to the method in the derived class, then issue warning **C4373**. The latter behavior conforms to the C++ standard.
 
 ## Example
 
-The following code example generates warning C4373. To resolve this issue, you can either make the override use the same CV-qualifiers as the base member function, or if you didn't intend to create an override, you can give the function in the derived class a different name.
+The following code example generates warning C4373. To resolve this issue, make the override use the same CV-qualifiers as the base member function. If you didn't intend to create an override, rename the function in the derived class.
 
 ```cpp
 // c4373.cpp
