@@ -9,7 +9,7 @@ helpviewer_keywords: ["C4359"]
 
 > 'type': actual alignment (8) is greater than the value specified in __declspec(align())
 
-The alignment specified for a type is less than the alignment of the type of one of its data members.  For more information, see [align](../../cpp/align-cpp.md).
+The alignment specified for a type is less than the alignment of the type of one of its data members. For more information, see [align](../../cpp/align-cpp.md).
 
 ## Example
 
