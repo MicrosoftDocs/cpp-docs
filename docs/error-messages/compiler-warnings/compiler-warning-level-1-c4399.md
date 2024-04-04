@@ -14,7 +14,7 @@ ms.assetid: f58d9ba7-71a0-4c3b-b26f-f946dda8af30
 
 The **/clr:pure** compiler option is deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
-Data from a native image or an image with native and common language runtime (CLR) constructs cannot be imported into a pure image. To resolve this warning, compile with **/clr** (not **/clr:pure**) or delete `__declspec(dllimport)`.
+Data from a native image or an image with native and common language runtime (CLR) constructs can't be imported into a pure image. To resolve this warning, compile with **/clr** (not **/clr:pure**) or delete `__declspec(dllimport)`.
 
 This warning can be issued as an error. Use the [warning](../../preprocessor/warning.md) pragma to disable or change the warning level.
 
