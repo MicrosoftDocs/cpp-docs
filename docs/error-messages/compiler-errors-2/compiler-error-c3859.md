@@ -8,8 +8,22 @@ ms.assetid: 40e93b25-4393-4467-90de-035434a665c7
 ---
 # Compiler Error C3859
 
-> virtual memory range for PCH exceeded; please recompile with a command line option of '-Zm*value*' or greater
+> Failed to create virtual memory for PCH
 
-The virtual memory allocated for your precompiled header is too small for the amount of data the compiler is trying to put in it. Starting in Visual Studio 2015, the **`/Zm`** recommendation is only significant when using the `#pragma hdrstop` directive. In other cases, it's a spurious error that indicates Windows virtual memory pressure issues.
+The error will have one of the following continuations:
+>PCH: Address is not a multiple of the system's allocation granularity
+>PCH: The chunk has not been previously reserved
+>PCH: Commit size too large
+>PCH: Unable to commit memory across file map
+>PCH: Exhausted chunk list before committing all bytes
+>PCH: Unexpected end of chunk list while trying to free
+>PCH: Shouldn't be hitting a file map in the decommit case
+>PCH: Invalid chunk
+>PCH: Map size too large
+>PCH: Unable to map file: memory already committed
+>PCH: File map already in place
+>PCH: Unable to get the requested block of memory
+>consider using /Fp to allow the compiler to reserve the memory early
 
-If your precompiled header uses a `#pragma hdrstop` directive, use the **`/Zm`** compiler flag to specify a larger value for the precompiled header file. Otherwise, consider reducing the number of parallel compilation processes in your build. For more information, see [`/Zm` (Specify precompiled header memory allocation limit)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).
+The virtual memory allocated for your precompiled header is too small for the amount of data the compiler is trying to put in it. If your precompiled header uses an explicit `#pragma hdrstop` directive, use the **`/Zm`** compiler flag to specify a larger value for the precompiled header file. Otherwise, consider reducing the number of parallel compilation processes in your build. For more information, see [`/Zm` (Specify precompiled header memory allocation limit)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).
+
