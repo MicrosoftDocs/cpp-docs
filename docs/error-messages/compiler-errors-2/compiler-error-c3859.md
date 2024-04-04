@@ -4,7 +4,6 @@ title: "Compiler Error C3859"
 ms.date: 02/22/2022
 f1_keywords: ["C3859"]
 helpviewer_keywords: ["C3859"]
-ms.assetid: 40e93b25-4393-4467-90de-035434a665c7
 ---
 # Compiler Error C3859
 
