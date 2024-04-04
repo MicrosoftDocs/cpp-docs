@@ -7,11 +7,11 @@ helpviewer_keywords: ["C4265"]
 ---
 # Compiler Warning (level 3, off) C4265
 
-'class' : class has virtual functions, but destructor is not virtual
+> 'class' : class has virtual functions, but destructor is not virtual
 
 When a class has virtual functions but a nonvirtual destructor, objects of the type might not be destroyed properly when the class is destroyed through a base class pointer.
 
-This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+This warning is off by default. For more information see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
 The following sample generates C4265:
 
