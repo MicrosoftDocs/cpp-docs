@@ -128,7 +128,6 @@ The following people contributed to the C++, C, and Assembler docs during this p
 - [0xbadfca11](https://github.com/0xbadfca11) ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [edmund-leibert](https://github.com/edmund-leibert) - Edmund Leibert III ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [glenn-slayden](https://github.com/glenn-slayden) - Glenn Slayden ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [JiaT75](https://github.com/JiaT75) - Jia Tan ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [lb90](https://github.com/lb90) ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [tsuyo](https://github.com/tsuyo) - Tsuyoshi Miyake ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 
