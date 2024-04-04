@@ -9,11 +9,11 @@ helpviewer_keywords: ["C4394"]
 
 > 'function' : per-appdomain symbol should not be marked with __declspec(dllexport)
 
-A function marked with the [appdomain](../../cpp/appdomain.md) **`__declspec`** modifier is compiled to MSIL (not to native), and export tables ([export](../../windows/attributes/export.md) **`__declspec`** modifier) are not supported for managed functions.
+A function marked with the [appdomain](../../cpp/appdomain.md) **`__declspec`** modifier is compiled to MSIL (not native), and export tables ([export](../../windows/attributes/export.md) **`__declspec`** modifier) aren`t supported for managed functions.
 
 You can declare a managed function to have public accessibility. For more information, see [Type visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) and [Member visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Member_visibility).
 
-C4394 is always issued as an error.  You can turn off this warning or change its level with `#pragma warning` or **/wd**; see [warning](../../preprocessor/warning.md) or [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](../../build/reference/compiler-option-warning-level.md) for more information.
+C4394 is always issued as an error. You can turn off this warning or change its level with `#pragma warning` or **/wd**; see [warning](../../preprocessor/warning.md) or [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](../../build/reference/compiler-option-warning-level.md) for more information.
 
 ## Example
 
