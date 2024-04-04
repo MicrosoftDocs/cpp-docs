@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4373"
-title: "Compiler Warning (level 3) C4373"
+description: "Learn more about: Compiler Warning (level 4) C4373"
+title: "Compiler Warning (level 4) C4373"
 ms.date: "11/04/2016"
 f1_keywords: ["C4373"]
 helpviewer_keywords: ["C4373"]
-ms.assetid: 670c0ba3-b7d6-4aed-b207-1cb84da3bcde
 ---
-# Compiler Warning (level 3) C4373
+# Compiler Warning (level 4) C4373
 
 > '*function*': virtual function overrides '*base_function*', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
 
