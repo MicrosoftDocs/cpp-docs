@@ -1,7 +1,7 @@
 ---
 title: "/std (Specify Language Standard Version)"
 description: "The MSVC compiler option /std specifies the C or C++ language standard supported by the compiler."
-ms.date: 11/13/2023
+ms.date: 4/5/2023
 f1_keywords: ["/std", "-std", "/std:c++14", "/std:c++17", "/std:c++20", "/std:c11", "/std:c17", "/std:clatest", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 ---
 # `/std` (Specify Language Standard Version)
@@ -130,6 +130,6 @@ For more information, see the C Standard library features section of [Microsoft 
 
 ## See also
 
-[`/Zc:__cplusplus[-]`](zc-cplusplus.md)<br/>
-[MSVC compiler options](compiler-options.md)<br/>
+[`/Zc:__cplusplus[-]`](zc-cplusplus.md)\
+[MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)
