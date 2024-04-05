@@ -28,6 +28,8 @@ The Microsoft C++ compiler in Visual Studio 2017 and later versions doesn't supp
 
 The **`/std`** option in effect during a C++ compilation can be detected by use of the [`_MSVC_LANG`](../../preprocessor/predefined-macros.md) preprocessor macro. For more information, see [Preprocessor Macros](../../preprocessor/predefined-macros.md).
 
+The [`/Zc:__cplusplus`](zc-cplusplus.md) option must additionally be used for the `__cplusplus` macro to be correctly defined for the appropriate C++ standard. 
+
 **`/std:c++14`**\
 The **`/std:c++14`** option enables C++14 standard-specific features implemented by the MSVC compiler. This option is the default for code compiled as C++. It's available starting in Visual Studio 2015 Update 3.
 
@@ -123,5 +125,6 @@ For more information, see the C Standard library features section of [Microsoft 
 
 ## See also
 
+[`/Zc:__cplusplus[-]`](zc-cplusplus.md)<br/>
 [MSVC compiler options](compiler-options.md)<br/>
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)
