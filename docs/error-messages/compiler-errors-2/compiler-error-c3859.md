@@ -9,7 +9,7 @@ helpviewer_keywords: ["C3859"]
 
 > Failed to create virtual memory for PCH
 
-The message will have one of the following notes:
+The message has one of the following notes:
 >the system returned code *error code*: *OS error message*\
 >PCH: Address is not a multiple of the system's allocation granularity\
 >PCH: The chunk has not been previously reserved\
@@ -29,6 +29,6 @@ There isn't enough virtual memory allocated for your precompiled header. If your
 
 This disganotic primarily in two scenarios. 
 
-The first scenario is that the system is overloaded with multiple `/Yu` compile requests at the same time. In this scenario setting the maximum starting virtual memory size typically resolves the issue.
+The first scenario is that the system is overloaded with multiple `/Yu` compile requests at the same time. Setting the maximum starting virtual memory size typically resolves this issue.
 
-The second scenario is when the the Windows loader injects a DLL into the process at startup. That injected DLL can allocate memory which conflicts with where the PCH must reside. For example, `msbuild.exe` will inject `FileTracker.dll` into every `CL.exe` process at startup. In this scenario, using the [`/Fp` (Name .pch file)](../../build/reference/fp-name-dot-pch-file.md) flag will ensure that the memory for the PCH is allocated as early as possible in the `CL.exe` process, before any injected DLL. These failures can be intermittent because Windows ASLR will allocate memory at different address across different process invocations. Without `/Fp`, memory for the PCH cannot be allocated until the compiler has compiled enough of the program to see the header file specified in the `/Yu` command line option or the `#pragma hdrstop`. By this time, it is much more likely that the memory required by the PCH will already be reserved.
+The second scenario is when the the Windows loader injects a DLL into the process at startup. That injected DLL can allocate memory that conflicts with where the PCH must reside. For example, `msbuild.exe` injects `FileTracker.dll` into every `CL.exe` process at startup. In this scenario, using the [`/Fp` (Name .pch file)](../../build/reference/fp-name-dot-pch-file.md) flag ensures that the memory for the PCH is allocated as early as possible in the `CL.exe` process, before any injected DLL. These failures can be intermittent because Windows ASLR allocates memory at different address across different process invocations. Without `/Fp`, memory for the PCH can't be allocated until the compiler finds the header file `#include` specified in the `/Yu` command line option or the `#pragma hdrstop`. By this time, it's much more likely that the memory required by the PCH is reserved by somthing else.
