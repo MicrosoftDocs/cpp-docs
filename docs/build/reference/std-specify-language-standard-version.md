@@ -30,6 +30,7 @@ The **`/std`** option in effect during a C++ compilation can be detected by use 
 
 > [!IMPORTANT]
 > Because some existing code depends on the value of the macro `__cplusplus` being 199711L, the MSVC compiler doesn't change the value of this macro unless you explicitly opt in by setting [`/Zc:__cplusplus`](zc-cplusplus.md). Here are the values for `__cplusplus` depending on the language version you are compiling with:
+>
 > | Language version | __cplusplus value |
 > | `/std:c++14` | 201402 |
 > | `/std:c++17` | 201703 |
