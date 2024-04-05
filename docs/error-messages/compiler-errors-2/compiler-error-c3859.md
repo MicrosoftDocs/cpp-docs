@@ -10,7 +10,7 @@ helpviewer_keywords: ["C3859"]
 > Failed to create virtual memory for PCH
 
 The message has one of the following notes:
->the system returned code *error code*: *OS error message*\
+>The system returned code *error code*: *OS error message*\
 >PCH: Address is not a multiple of the system's allocation granularity\
 >PCH: The chunk has not been previously reserved\
 >PCH: Commit size too large\
@@ -23,7 +23,7 @@ The message has one of the following notes:
 >PCH: Unable to map file: memory already committed\
 >PCH: File map already in place\
 >PCH: Unable to get the requested block of memory\
->consider using /Fp to allow the compiler to reserve the memory early\
+>Consider using /Fp to allow the compiler to reserve the memory early
 
 There isn't enough virtual memory allocated for your precompiled header. If your precompiled header uses an explicit `#pragma hdrstop` directive, use the **`/Zm`** compiler flag to specify a larger value for the precompiled header file. Otherwise, consider reducing the number of parallel compilation processes in your build. For more information, see [`/Zm` (Specify precompiled header memory allocation limit)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).
 
