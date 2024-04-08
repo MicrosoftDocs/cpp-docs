@@ -1,7 +1,7 @@
 ---
 title: "/std (Specify Language Standard Version)"
 description: "The MSVC compiler option /std specifies the C or C++ language standard supported by the compiler."
-ms.date: 11/13/2023
+ms.date: 4/5/2023
 f1_keywords: ["/std", "-std", "/std:c++14", "/std:c++17", "/std:c++20", "/std:c11", "/std:c17", "/std:clatest", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 ---
 # `/std` (Specify Language Standard Version)
@@ -27,6 +27,15 @@ The Microsoft C++ compiler in Visual Studio 2017 and later versions doesn't supp
 ### C++ standards support
 
 The **`/std`** option in effect during a C++ compilation can be detected by use of the [`_MSVC_LANG`](../../preprocessor/predefined-macros.md) preprocessor macro. For more information, see [Preprocessor Macros](../../preprocessor/predefined-macros.md).
+
+> [!IMPORTANT]
+> Because some existing code depends on the value of the macro `__cplusplus` being 199711L, the MSVC compiler doesn't change the value of this macro unless you explicitly opt in by setting [`/Zc:__cplusplus`](zc-cplusplus.md). Here are the values for `__cplusplus` depending on the language version you are compiling with:
+>
+> | Language version | __cplusplus value |
+> |------------------|-------------------|
+> | `/std:c++14` | 201402 |
+> | `/std:c++17` | 201703 |
+> | `/std:c++20` | 202002 |
 
 **`/std:c++14`**\
 The **`/std:c++14`** option enables C++14 standard-specific features implemented by the MSVC compiler. This option is the default for code compiled as C++. It's available starting in Visual Studio 2015 Update 3.
@@ -123,5 +132,6 @@ For more information, see the C Standard library features section of [Microsoft 
 
 ## See also
 
-[MSVC compiler options](compiler-options.md)<br/>
+[`/Zc:__cplusplus[-]`](zc-cplusplus.md)\
+[MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)
