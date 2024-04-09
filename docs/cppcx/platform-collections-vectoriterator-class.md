@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::Collections::VectorIterator Class"
 title: "Platform::Collections::VectorIterator Class"
+description: "Learn more about: Platform::Collections::VectorIterator Class"
 ms.date: "03/27/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::VectorIterator::VectorIterator"]
 helpviewer_keywords: ["VectorIterator Class"]
-ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
 ---
 # Platform::Collections::VectorIterator Class
 
@@ -34,7 +33,7 @@ The typename of the VectorIterator template class.
 |`difference_type`|A pointer difference (ptrdiff_t).|
 |`iterator_category`|The category of a random access iterator (::std::random_access_iterator_tag).|
 |`pointer`|A pointer to an internal type, Platform::Collections::Details::VectorProxy\<T>, that is required for the implementation of VectorIterator.|
-|`reference`|A reference to an internal type, Platform::Collections::Details::VectorProxy\<T>,, that is required for the implementation of VectorIterator.|
+|`reference`|A reference to an internal type, Platform::Collections::Details::VectorProxy\<T>, that is required for the implementation of VectorIterator.|
 |`value_type`|The `T` typename.|
 
 ### Public Constructors
