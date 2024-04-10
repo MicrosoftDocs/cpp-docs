@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: CSimpleStringT Class"
 title: "CSimpleStringT Class"
+description: "Learn more about: CSimpleStringT class"
 ms.date: 01/26/2024
 f1_keywords: ["CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::PCXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::PXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::Append", "ATLSIMPSTR/ATL::CSimpleStringT::AppendChar", "ATLSIMPSTR/ATL::CSimpleStringT::CopyChars", "ATLSIMPSTR/ATL::CSimpleStringT::CopyCharsOverlapped", "ATLSIMPSTR/ATL::CSimpleStringT::Empty", "ATLSIMPSTR/ATL::CSimpleStringT::FreeExtra", "ATLSIMPSTR/ATL::CSimpleStringT::GetAllocLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetAt", "ATLSIMPSTR/ATL::CSimpleStringT::GetBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::GetBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetManager", "ATLSIMPSTR/ATL::CSimpleStringT::GetString", "ATLSIMPSTR/ATL::CSimpleStringT::IsEmpty", "ATLSIMPSTR/ATL::CSimpleStringT::LockBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::Preallocate", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::SetAt", "ATLSIMPSTR/ATL::CSimpleStringT::SetManager", "ATLSIMPSTR/ATL::CSimpleStringT::SetString", "ATLSIMPSTR/ATL::CSimpleStringT::StringLength", "ATLSIMPSTR/ATL::CSimpleStringT::Truncate", "ATLSIMPSTR/ATL::CSimpleStringT::UnlockBuffer"]
 helpviewer_keywords: ["shared classes, CSimpleStringT", "strings [C++], ATL class", "CSimpleStringT class"]
@@ -18,7 +18,7 @@ class CSimpleStringT
 
 ### Parameters
 
-*`BaseType`*<br/>
+*`BaseType`*\
 The character type of the string class. Can be one of the following:
 
 - **`char`** (for ANSI character strings).
@@ -1165,7 +1165,7 @@ CSimpleString str(_T("abcdefghi"), pMgr);
 _tprintf_s(_T("String length: %d / Allocated length: %d\n"), str.GetLength(), str.GetAllocLength());
 _tprintf_s(_T("Contents: %s\n"), (LPCTSTR)str);
 str.Truncate(4);
-_tprintf_s(_T("String length: %d / Allocated length: %d\n"), str.GetLength(), , str.GetAllocLength());
+_tprintf_s(_T("String length: %d / Allocated length: %d\n"), str.GetLength(), str.GetAllocLength());
 _tprintf_s(_T("Contents: %s\n"), (LPCTSTR)str);
 ```
 
@@ -1210,5 +1210,5 @@ Call this method to destroy the `CSimpleStringT` object.
 
 ## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

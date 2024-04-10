@@ -209,7 +209,7 @@ Adds a new tab to the tab control.
 virtual void AddTab(
     CWnd* pTabWnd,
     LPCTSTR lpszTabLabel,
-    UINT uiImageId = (UINT)-1,,
+    UINT uiImageId = (UINT)-1,
     BOOL bDetachable = TRUE);
 
 virtual void AddTab(
