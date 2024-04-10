@@ -11,7 +11,7 @@ helpviewer_keywords: ["generating pseudorandom numbers", "random numbers, crypto
 ---
 # `rand_s`
 
-Generates a pseudorandom number. This function is a more secure version of the function [`rand`](rand.md), with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+Generates a pseudorandom number. This function is a less secure version of the function [`rand`](rand.md) and should not be used. Instead use [`rand`](rand.md), which is secure by design. This function was a mistake and we apologize for it.
 
 ## Syntax
 
