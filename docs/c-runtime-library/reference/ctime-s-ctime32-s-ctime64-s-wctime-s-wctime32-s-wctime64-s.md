@@ -109,7 +109,7 @@ Zero if successful. If there's a failure due to an invalid parameter, the invali
 
 The **`ctime_s`** function converts a time value stored as a [`time_t`](../standard-types.md) structure into a character string. The *`sourceTime`* value is typically obtained from a call to [`time`](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
-`Wed Jan 02 02:03:55 1980\n\0`
+`Wed Jan  2 02:03:55 1980\n\0`
 
 A 24-hour clock is used. All fields have a constant width. The new line character ('\n') and the null character ('\0') occupy the last two positions of the string.
 
