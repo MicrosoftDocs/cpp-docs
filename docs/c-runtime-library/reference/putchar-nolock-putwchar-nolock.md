@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _putchar_nolock, _putwchar_nolock"
 title: "_putchar_nolock, _putwchar_nolock"
+description: "Learn more about: _putchar_nolock, _putwchar_nolock"
 ms.date: "11/04/2016"
 api_name: ["_putchar_nolock", "_putwchar_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -8,11 +8,10 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["putwchar_nolock", "_puttchar_nolock", "_putchar_nolock", "_putwchar_nolock", "putchar_nolock"]
 helpviewer_keywords: ["_puttchar_nolock function", "putchar_nolock function", "characters, writing", "standard output, writing to", "putwchar_nolock function", "_putchar_nolock function", "_putwchar_nolock function", "puttchar_nolock function"]
-ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
 ---
 # `_putchar_nolock`, `_putwchar_nolock`
 
-Writes a character to `stdout` without locking the thread.
+Writes a character to `stdout` without locking.
 
 ## Syntax
 
