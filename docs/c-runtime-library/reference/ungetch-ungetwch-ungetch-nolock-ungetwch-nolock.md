@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock"
 title: "_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock"
+description: "Learn more about: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock"
 ms.date: "4/2/2020"
 api_name: ["_ungetch_nolock", "_ungetwch_nolock", "_ungetwch", "_ungetch", "_o__ungetch", "_o__ungetch_nolock", "_o__ungetwch", "_o__ungetwch_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CONIO/_ungetch", "CONIO/_ungetch_nolock", "CORECRT_WCONIO/_ungetwch", "CORECRT_WCONIO/_ungetwch_nolock", "TCHAR/_ungettch", "TCHAR/_ungettch_nolock", "_ungetch", "_ungetch_nolock", "_ungetwch", "_ungetwch_nolock", "_ungettch", "_ungettch_nolock"]
 helpviewer_keywords: ["_ungetch function", "ungetwch function", "characters, pushing back to console", "_ungettch_nolock function", "ungettch function", "_ungettch function", "ungetch_nolock function", "ungettch_nolock function", "_ungetwch_nolock function", "_ungetch_nolock function", "ungetwch_nolock function", "_ungetwch function"]
-ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
 ---
 # `_ungetch`, `_ungetwch`, `_ungetch_nolock`, `_ungetwch_nolock`
 
