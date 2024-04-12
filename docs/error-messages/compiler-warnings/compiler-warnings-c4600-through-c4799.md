@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler warnings C4600 Through C4799"
 title: "Compiler warnings C4600 Through C4799"
+description: "Learn more about: Compiler warnings C4600 Through C4799"
 ms.date: 05/03/2021
-f1_keywords: ["C4609", "C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4728", "C4732", "C4751", "C4752", "C4755", "C4757", "C4767"]
-helpviewer_keywords: ["C4609", "C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4728", "C4732", "C4751", "C4752", "C4755", "C4757", "C4767"]
-ms.assetid: 22bd4392-f3be-445c-9f23-6126aebac901
+f1_keywords: ["C4604", "C4605", "C4609", "C4631", "C4642", "C4643", "C4644", "C4647", "C4648", "C4649", "C4654", C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4725", "C4726", "C4728", "C4729", "C4732", "C4734", "C4735", "C4736", "C4745", "C4749", "C4751", "C4752", "C4753", "C4755", "C4757", "C4761", "C4767", "C4771", "C4774", "C4775", "C4776", "C4777", "C4778", "C4792", "C4798"]
+helpviewer_keywords: ["C4604", "C4605", "C4609", "C4631", "C4642", "C4643", "C4644", "C4647", "C4648", "C4649", "C4654", C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4725", "C4726", "C4728", "C4729", "C4732", "C4734", "C4735", "C4736", "C4745", "C4749", "C4751", "C4752", "C4753", "C4755", "C4757", "C4761", "C4767", "C4771", "C4774", "C4775", "C4776", "C4777", "C4778", "C4792", "C4798"]
 ---
 # Compiler warnings C4600 Through C4799
 
@@ -124,6 +123,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 3) C4723](../../error-messages/compiler-warnings/compiler-warning-level-3-c4723.md)|potential divide by 0|
 |[Compiler warning (level 3) C4724](compiler-warning-level-3-c4724.md)|potential mod by 0|
 |Compiler warning (level 3) C4725|instruction may be inaccurate on some Pentiums|
+|Compiler warning C4726|ARM arch4/4T supports only '<cpsr_f> or <spsr_f>' with immediate value|
 |[Compiler warning (level 1) C4727](../../error-messages/compiler-warnings/compiler-warning-level-1-c4727.md)|PCH named pch_file with same timestamp found in obj_file_1 and obj_file_2.  Using first PCH.|
 |Compiler warning (level 1) C4728|/Yl- option ignored because PCH reference is required|
 |Compiler warning (level 4) C4729|function too big for flow graph based warnings|
@@ -131,6 +131,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (Level 1) C4731](../../error-messages/compiler-warnings/compiler-warning-level-1-c4731.md)|'pointer': frame pointer register 'register' modified by inline assembly code|
 |Compiler warning (level 1) C4732|intrinsic '%s' is not supported in this architecture|
 |[Compiler warning (Level 1) C4733](../../error-messages/compiler-warnings/compiler-warning-level-1-c4733.md)|Inline asm assigning to 'FS:0': handler not registered as safe handler|
+|Compiler warning C4734|More than 64k line numbers in a COFF debug info section; stop emitting COFF debug line numbers for module 'module'|
 |Compiler warning C4735|`align_function` attribute argument '*argument*' is not a power of two and is not positive. Ignoring attribute|
 |Compiler warning C4736|`align_function` attribute ignored because `/Gy` was not specified|
 |[Compiler warning (Level 3) C4738](../../error-messages/compiler-warnings/compiler-warning-level-3-c4738.md)|storing 32-bit float result in memory, possible loss of performance|
@@ -139,6 +140,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (Level 1) C4742](../../error-messages/compiler-warnings/compiler-warning-level-1-c4742.md)|'var' has different alignment in 'file1' and 'file2': number and number|
 |[Compiler warning (Level 1) C4743](../../error-messages/compiler-warnings/compiler-warning-level-1-c4743.md)|'type' has different size in 'file1' and 'file2': number and number bytes|
 |[Compiler warning (Level 1) C4744](../../error-messages/compiler-warnings/compiler-warning-level-1-c4744.md)|'var' has different type in 'file1' and 'file2': 'type1' and 'type2'|
+|Compiler warning C4745|volatile access of 'name' cannot be honored due to its size|
 |[Compiler warning C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile access of '*expression*' is subject to /volatile:\<iso\|ms> setting; consider using __iso_volatile_load/store intrinsic functions|
 |[Compiler warning (level 1) C4747](../../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md)|Calling managed 'entrypoint': Managed code may not be run under loader lock, including the DLL entrypoint and calls reached from the DLL entrypoint|
 |Compiler warning (level 4) C4749|conditionally supported: offsetof applied to non-standard-layout type '*type*'|
@@ -150,6 +152,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning C4755|Conversion rules for arithmetic operations in the comparison at %s(%d) mean that one branch cannot be executed in an inlined function. Cast '%s' to '%s' (or similar type of %d bytes).|
 |[Compiler warning (level 2) C4756](../../error-messages/compiler-warnings/compiler-warning-level-2-c4756.md)|overflow in constant arithmetic|
 |Compiler warning (level 4) C4757|subscript is a large unsigned value, did you intend a negative constant?|
+|Compiler warning C4761|integral size mismatch in argument; conversion supplied|
 |[Compiler warning (level 4) C4764](compiler-warning-level-4-c4764.md)|Can not align catch objects to greater than 16 bytes|
 |Compiler warning (level 4) C4767|section name '%s' is longer than 8 characters and will be truncated by the linker|
 |[Compiler warning (level 3) C4768](c4768.md)|__declspec attributes before linkage specification are ignored|
@@ -166,9 +169,10 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 2) C4792|function '%s' declared using sysimport and referenced from native code; import library required to link|
 |[Compiler warning (level 1 and 3) C4793](../../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md)|'function': function compiled as native: 'reason'|
 |[Compiler warning (level 1) C4794](compiler-warning-level-1-c4794.md)|segment of thread local storage variable '%s' changed from '%s' to '%s'|
+|Compiler warning C4798|native code generated for p-code function 'name' with exception handler or unwind semantics|
 |[Compiler warning (level 1) C4799](../../error-messages/compiler-warnings/compiler-warning-level-1-c4799.md)|function 'function' has no EMMS instruction|
 
 ## See also
 
-[C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
+[C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md)\
 [Compiler warnings C4000 - C5999](compiler-warnings-c4000-c5999.md)
