@@ -2,7 +2,6 @@
 description: "Learn more about: Install cross-platform mobile development with C++"
 title: "Install cross-platform mobile development with C++"
 ms.date: "10/17/2019"
-ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 ms.custom: intro-installation
 ---
 # Install cross-platform mobile development with C++
@@ -32,7 +31,7 @@ This article describes how to install the tools and third-party software require
 
 To build apps for specific device platforms, there are some additional requirements:
 
-- The x86 Android emulators that come with the Android SDK work best on computers that can use hardware acceleration, such as the Intel Hardware Accelerated Execution Manager (HAXM). For more information, see [Hardware acceleration for emulator performance (Hyper-V & HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin&pivots=windows).
+- The x86 Android emulators that come with the Android SDK work best on computers that can use hardware acceleration. For more information, see [How to enable hardware acceleration with Android emulators (Hyper-V & AEHD)](/dotnet/maui/android/emulator/hardware-acceleration?view=net-maui-8.0).
 
 - Building code for iOS requires an Apple ID, an iOS Developer Program account, and a Mac computer that can run [Xcode](https://developer.apple.com/xcode/) version 10.2 or later on OS X Mavericks (version 10.9) or later versions. For a link to installation steps, see [Install tools for iOS](#install-tools-for-ios).
 
@@ -89,7 +88,7 @@ You don't have to install all the third-party dependencies when you install the 
 
 You can run the SDK Manager app in the Android SDK directory again to update the SDK. And, to install optional tools and additional API levels. Updates may fail to install unless you use **Run as administrator** to run the SDK Manager app. If you have problems building an Android app, check the SDK Manager for updates to your installed SDKs.
 
-To use some of the Android SDK emulators, you may need to set up hardware acceleration. For more information, see [Hardware acceleration for emulator performance (Hyper-V & HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+To use some of the Android SDK emulators, you may need to set up hardware acceleration. For more information, see [How to enable hardware acceleration with Android emulators (Hyper-V & AEHD)](/dotnet/maui/android/emulator/hardware-acceleration?view=net-maui-8.0).
 
 In most cases, Visual Studio can detect the configurations for the third-party software you've installed. It maintains the installation paths in internal environment variables. You can override the default paths of these cross-platform development tools in the Visual Studio IDE.
 
