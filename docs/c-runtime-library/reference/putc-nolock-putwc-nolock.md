@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _putc_nolock, _putwc_nolock"
 title: "_putc_nolock, _putwc_nolock"
+description: "Learn more about: _putc_nolock, _putwc_nolock"
 ms.date: "4/2/2020"
 api_name: ["_putc_nolock", "_putwc_nolock", "_o__putc_nolock", "_o__putwc_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -8,11 +8,10 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_puttc_nolock", "puttc_nolock", "putwc_nolock", "_putwc_nolock", "_putc_nolock", "putc_nolock"]
 helpviewer_keywords: ["puttc_nolock function", "putc_nolock function", "_putc_nolock function", "streams, writing characters to", "characters, writing", "putwc_nolock function", "_puttc_nolock function", "_putwc_nolock function"]
-ms.assetid: 3cfc7f21-c9e8-4b7f-b0fb-af0d4d85e7e1
 ---
 # `_putc_nolock`, `_putwc_nolock`
 
-Writes a character to a stream without locking the thread.
+Writes a character to a stream without locking.
 
 ## Syntax
 
