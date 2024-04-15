@@ -2,8 +2,8 @@
 title: "Compiler warnings C4800 Through C5999"
 description: "Table of Microsoft C/C++ compiler warnings C4800 through C5999."
 ms.date: 02/09/2024
-f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4983", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5072", "C5081", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254", "C5255", "C5256", "C5257", "C5258", "C5259", "C5260", "C5261", "C5263", "C5264", "C5266", "C5300"]
-helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4983", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5072", "C5081", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254", "C5255", "C5256", "C5257", "C5258", "C5259", "C5260", "C5261", "C5263", "C5264", "C5266", "C5300"]
+f1_keywords: ["C4801", "C4808", "C4809", "C4815", "C4827", "C4828", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4849", "C4854", "C4855", "C4856", "C4857", "C4858", "C4859", "C4860", "C4861", "C4869", "C4872", "C4880", "C4881", "C4882", "C4883", "C4907", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4975", "C4976", "C4981", "C4983", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5081", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5109", "C5110", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254", "C5255", "C5256", "C5257", "C5258", "C5259", "C5260", "C5261", "C5263", "C5264", "C5265", "C5268", "C5269", "C5270", "C5271", "C5272", "C5273", "C5274", "C5275", "C5300", "C5303", "C5304", "C5305"]
+helpviewer_keywords: ["C4801", "C4808", "C4809", "C4815", "C4827", "C4828", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4849", "C4854", "C4855", "C4856", "C4857", "C4858", "C4859", "C4860", "C4861", "C4869", "C4872", "C4880", "C4881", "C4882", "C4883", "C4907", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4975", "C4976", "C4981", "C4983", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5081", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5109", "C5110", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254", "C5255", "C5256", "C5257", "C5258", "C5259", "C5260", "C5261", "C5263", "C5264", "C5265", "C5268", "C5269", "C5270", "C5271", "C5272", "C5273", "C5274", "C5275", "C5300", "C5303", "C5304", "C5305"]
 ---
 # Compiler warnings C4800 through C5999
 
@@ -28,7 +28,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 1) C4811](compiler-warning-level-1-c4811.md) | value of `pragma conform(forScope, show)` == *value* |
 | [Compiler warning (level 1) C4812](compiler-warning-level-1-c4812.md) | obsolete declaration style: please use '*new_syntax*' instead |
 | [Compiler warning (level 1) C4813](compiler-warning-level-1-c4813.md) | '*function*': a friend function of a local class must have been previously declared |
-|Compiler warning (level 4) C4815|'*object name*': zero-sized array in stack object will have no elements (unless the object is an aggregate that has been aggregate initialized)|
+| Compiler warning (level 4) C4815 | '*object name*': zero-sized array in stack object will have no elements (unless the object is an aggregate that has been aggregate initialized) |
 | [Compiler warning (level 4) C4816](compiler-warning-level-4-c4816.md) | '*param*': parameter has a zero-sized array which will be truncated (unless the object is passed by reference) |
 | [Compiler warning (level 1) C4817](compiler-warning-level-1-c4817.md) | '*member*': illegal use of '.' to access this member; compiler replaced with '->' |
 | [Compiler warning (level 1) C4819](compiler-warning-level-1-c4819.md) | The file contains a character that cannot be represented in the current code page (number). Save the file in Unicode format to prevent data loss |
@@ -54,19 +54,19 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 4) C4846 | '*value*' is not a valid argument for '`/d1initall`': command-line flag ignored |
 | Compiler warning (level 4) C4847 | '`__declspec(no_init_all)`' can only be applied to a function, a class type, or a local variable: ignored |
 | Compiler warning (level 1) C4848 | support for standard attribute '`no_unique_address`' in C++17 and earlier is a vendor extension |
-|Compiler warning (level 1) C4849|OpenMP '*clause*' clause ignored in '*directive*' directive|
+| Compiler warning (level 1) C4849 | OpenMP '*clause*' clause ignored in '*directive*' directive |
 | Compiler warning (Level 1, error) C4854 | binding dereferenced null pointer to reference has undefined behavior |
 | Compiler warning (level 1, off) C4855 | implicit capture of '`this`' via '`[=]`' is deprecated in 'version' |
 | Compiler warning (level 4) C4856 | '*value*' is not a valid argument for '`/d1initAll:FillPattern`' (value must be between 0 and 255). Command-line flag ignored |
 | Compiler warning (level 1) C4857 | C++/CLI mode does not support C++ versions newer than C++17; setting language to `/std:c++17` |
-|Compiler warning (level 1) C4858|discarding return value: *function name*|
-|Compiler warning (level 4) C4859|'*value*' is not a valid argument for '`/presetWarn`': it must be a decimal value > 0. Command-line flag ignored|
-|Compiler warning (level 4) C4860|'*object name*': compiler zero initialized '*number*' bytes of storage|
-|Compiler warning (level 4) C4861|compiler zero initialized '*number*' bytes of storage|
+| Compiler warning (level 1) C4858 | discarding return value: *function name* |
+| Compiler warning (level 4) C4859 | '*value*' is not a valid argument for '`/presetWarn`': it must be a decimal value > 0. Command-line flag ignored |
+| Compiler warning (level 4) C4860 | '*object name*': compiler zero initialized '*number*' bytes of storage |
+| Compiler warning (level 4) C4861 | compiler zero initialized '*number*' bytes of storage |
 | [Compiler warning (level 4) C4866](c4866.md) | compiler may not enforce left-to-right evaluation order for call to *operator_name* |
 | [Compiler warning (level 1, error) C4867](compiler-warning-c4867.md) | '*function*': function call missing argument list; use '*call*' to create a pointer to member |
 | [Compiler warning (level 4) C4868](compiler-warning-c4868.md) | '*file*(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list |
-|Compiler warning (level 3) C4869|'`nodiscard`' may only be applied to classes, enumerations, and functions|
+| Compiler warning (level 3) C4869 | '`nodiscard`' may only be applied to classes, enumerations, and functions |
 | Compiler warning (level 2) C4872 | floating point division by zero detected when compiling the call graph for the `concurrency::parallel_for_each` at: '*location*' |
 | Compiler warning (level 1) C4880 | casting from 'const *type_1*' to '*type_2*': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function |
 | Compiler warning (level 4) C4881 | the constructor and/or the destructor will not be invoked for `tile_static` variable '*variable-name*' |
@@ -126,8 +126,8 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 1, Error) C4972](compiler-warning-c4972.md) | Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable |
 | Compiler warning (level 1) C4973 | '*symbol*': marked as deprecated |
 | Compiler warning (level 1) C4974 | '*symbol*': marked as deprecated |
-|Compiler warning (level 1) C4975|modopt '[*modifier*]' was ignored for formal parameter '*parameter*'|
-|Compiler warning (level 1) C4976|invalid value '*value*' for '`/W`'; assuming '1'|
+| Compiler warning (level 1) C4975 | modopt '[*modifier*]' was ignored for formal parameter '*parameter*' |
+| Compiler warning (level 1) C4976 | invalid value '*value*' for '`/W`'; assuming '1' |
 | Compiler warning (level 3) C4981 | Warbird: function '*function*' marked as __forceinline not inlined because it contains exception semantics |
 | Compiler warning (level 3) C4983 | '/analyze:sarif:hashname' ignored because the argument to '/analyze:log' is a single file rather than a directory |
 | [Compiler warning C4984](compiler-warning-c4984.md) | '`if constexpr`' is a C++17 language extension |
@@ -263,23 +263,23 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 1, error, off) C5262](c5262.md) | implicit fall-through occurs here; are you missing a break statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases |
 | Compiler warning (level 4, off) C5263 | calling '`std::move`' on a temporary object prevents copy elision |
 | Compiler warning (level 4, off) C5264 | '*variable-name*': 'const' variable is not used |
-|Compiler warning (level 1) C5265|cannot open search path '*path*'|
+| Compiler warning (level 1) C5265 | cannot open search path '*path*' |
 | [Compiler warning (level 4, off) C5266](compiler-warning-level-4-c5266.md) | 'const' qualifier on return type has no effect |
 | [Compiler warning C5267](c5267.md) | definition of implicit copy constructor/assignment operator for '*type*' is deprecated because it has a user-provided assignment operator/copy constructor |
-|Compiler warning (level 1) C5268|Failed to allocate memory at fixed address 0x*address*. Use `/Yb` to specify a specific address base if bit-identical .pch files are required.|
-|Compiler warning (level 1) C5269|Failed to allocate PCH memory at fixed address 0x*address*. Use `/Ym` to specify a specific address base if bit-identical .pch files are required.|
-|Compiler warning (level 3) C5270|'*value*' is not allowed for option '*switch name*'; allowed values are: *value list*|
-|Compiler warning (level 4) C5271|previously imported assembly '*assembly1*' has the same name as assembly '*assembly2*' being imported. Is this intentional?|
-|Compiler warning (level 1) C5272|throwing an object of non-copyable type '*type*' is non-standard. If a copy is needed at runtime it will be made as if by `memcpy`.|
-|Compiler warning (level 1) C5273|behavior change: `_Alignas` on anonymous type no longer ignored (promoted members will align)|
-|Compiler warning (level 1) C5274|behavior change: `_Alignas` no longer applies to the type '*type*' (only applies to declared data objects)|
-|Compiler warning (Error) C5275|facade assembly '*name*' being imported under '`/clr`'; missing option '`/clr:netcore`'?|
+| Compiler warning (level 1) C5268 | Failed to allocate memory at fixed address 0x*address*. Use `/Yb` to specify a specific address base if bit-identical .pch files are required. |
+| Compiler warning (level 1) C5269 | Failed to allocate PCH memory at fixed address 0x*address*. Use `/Ym` to specify a specific address base if bit-identical .pch files are required. |
+| Compiler warning (level 3) C5270 | '*value*' is not allowed for option '*switch name*'; allowed values are: *value list* |
+| Compiler warning (level 4) C5271 | previously imported assembly '*assembly1*' has the same name as assembly '*assembly2*' being imported. Is this intentional? |
+| Compiler warning (level 1) C5272 | throwing an object of non-copyable type '*type*' is non-standard. If a copy is needed at runtime it will be made as if by `memcpy`. |
+| Compiler warning (level 1) C5273 | behavior change: `_Alignas` on anonymous type no longer ignored (promoted members will align) |
+| Compiler warning (level 1) C5274 | behavior change: `_Alignas` no longer applies to the type '*type*' (only applies to declared data objects) |
+| Compiler warning (Error) C5275 | facade assembly '*name*' being imported under '`/clr`'; missing option '`/clr:netcore`'? |
 | Compiler warning (level 1, error) C5300 | '#pragma omp atomic': left operand of '*operator*' must match left hand side of assignment-expression |
 | [Compiler warning (level 1) C5301](c5301-c5302.md) | '#pragma omp for': '*loop-index*' increases while loop condition uses '*comparison*'; non-terminating loop? |
 | [Compiler warning (level 1) C5302](c5301-c5302.md) | '#pragma omp for': '*loop-index*' decreases while loop condition uses '*comparison*'; non-terminating loop? |
-|Compiler warning (level 1) C5303|function marked with `[[msvc::intrinsic]]` did not result in a no-op cast|
-|Compiler warning (level 1) C5304|a declaration designated by the using-declaration '*name1*' exported from this module has internal linkage and using such a name outside the module is ill-formed; consider declaring '*name2*' '`inline`' to use it outside of this module|
-|Compiler warning (level 1) C5305|'*name*': an explicit instantiation declaration that follows an explicit instantiation definition is ignored|
+| Compiler warning (level 1) C5303 | function marked with `[[msvc::intrinsic]]` did not result in a no-op cast |
+| Compiler warning (level 1) C5304 | a declaration designated by the using-declaration '*name1*' exported from this module has internal linkage and using such a name outside the module is ill-formed; consider declaring '*name2*' '`inline`' to use it outside of this module |
+| Compiler warning (level 1) C5305 | '*name*': an explicit instantiation declaration that follows an explicit instantiation definition is ignored |
 
 
 ## See also
