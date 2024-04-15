@@ -27,7 +27,7 @@ The message has one of the following notes:
 
 There isn't enough virtual memory allocated for your precompiled header. If your precompiled header uses an explicit `#pragma hdrstop` directive, use the **`/Zm`** compiler flag to specify a larger value for the precompiled header file. Otherwise, consider reducing the number of parallel compilation processes in your build. For more information, see [`/Zm` (Specify precompiled header memory allocation limit)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).
 
-This disganotic primarily in two scenarios. 
+This diagnostic shows up mostly in two scenarios: 
 
 The first scenario is that the system is overloaded with multiple `/Yu` compile requests at the same time. Setting the maximum starting virtual memory size typically resolves this issue.
 
