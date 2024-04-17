@@ -16,7 +16,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | Warning | Message |
 |--|--|
 | [Compiler warning (level 4, off) C4800](compiler-warning-level-3-c4800.md) | Implicit conversion from '*type*' to `bool`. Possible information loss |
-|Compiler warning C4801|Return by reference is not verifiable: *message*|
+| Compiler warning C4801 | Return by reference is not verifiable: *message* |
 | [Compiler warning (level 1) C4803](compiler-warning-level-1-c4803.md) | '*method*': the raise method has a different storage class from that of the event, '*event*' |
 | [Compiler warning (level 1) C4804](compiler-warning-level-1-c4804.md) | '*operation*': unsafe use of type '`bool`' in operation |
 | [Compiler warning (level 1) C4805](compiler-warning-level-1-c4805.md) | '*operation*': unsafe mix of type '*type1*' and type '*type2*' in operation |
@@ -38,7 +38,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 3) C4823](compiler-warning-level-3-c4823.md) | '*function*': uses pinning pointers but unwind semantics are not enabled. Consider using `/EHa` |
 | Compiler warning (level 2, off) C4826 | Conversion from '*type1*' to '*type2*' is sign-extended. This may cause unexpected runtime behavior. |
 | Compiler warning (level 3) C4827 | A public '`ToString`' method with 0 parameters should be marked as `virtual` and `override` |
-|Compiler warning (level 1) C4828|The file contains a character starting at offset 0x*HexOffset* that is illegal in the current source character set (codepage *codepage*).|
+| Compiler warning (level 1) C4828 | The file contains a character starting at offset 0x*HexOffset* that is illegal in the current source character set (codepage *codepage*). |
 | [Compiler warning (level 1) C4829](compiler-warning-level-1-c4829.md) | Possibly incorrect parameters to function `main`. Consider '`int main(Platform::Array<Platform::String^>^ argv)`' |
 | [Compiler warning (level 1) C4834](c4834.md) | discarding return value of function with 'nodiscard' attribute |
 | [Compiler warning (level 1) C4835](compiler-warning-level-1-c4835.md) | '*variable*': the initializer for exported data will not be run until managed code is first executed in the host assembly |
@@ -71,11 +71,11 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 1) C4880 | casting from 'const *type_1*' to '*type_2*': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function |
 | Compiler warning (level 4) C4881 | the constructor and/or the destructor will not be invoked for `tile_static` variable '*variable-name*' |
 | Compiler warning (level 1) C4882 | passing functors with non-const call operators to `concurrency::parallel_for_each` is deprecated |
-|Compiler warning C4883|'*function name*': function size suppresses optimizations|
+| Compiler warning C4883 | '*function name*': function size suppresses optimizations |
 | [Compiler warning C4900](compiler-warning-level-1-c4900.md) | Il mismatch between '*tool1*' version '*version1*' and '*tool2*' version '*version2*' |
 | [Compiler warning (level 1, off) C4905](compiler-warning-level-1-c4905.md) | wide string literal cast to '`LPSTR`' |
 | [Compiler warning (level 1, off) C4906](compiler-warning-level-1-c4906.md) | string literal cast to '`LPWSTR`' |
-|Compiler warning (Error) C4907|multiple calling conventions cannot be specified; last given will be used|
+| Compiler warning (Error) C4907 | multiple calling conventions cannot be specified; last given will be used |
 | [Compiler warning (level 1) C4910](compiler-warning-level-1-c4910.md) | '\<identifier>: '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation |
 | [Compiler warning (level 1) C4912](compiler-warning-level-1-c4912.md) | '*attribute*': attribute has undefined behavior on a nested UDT |
 | [Compiler warning (level 4) C4913](compiler-warning-level-4-c4913.md) | user defined binary operator '`,`' exists but no overload could convert all operands, default built-in binary operator '`,`' used |
