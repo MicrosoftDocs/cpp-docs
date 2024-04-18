@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: Compiler Warning (levels 2 and 4) C4200"
-title: "Compiler Warning (levels 2 and 4) C4200"
+description: "Learn more about: Compiler Warning (level 2 and level 4) C4200"
+title: "Compiler Warning (level 2 and level 4) C4200"
 ms.date: "11/04/2016"
 f1_keywords: ["C4200"]
 helpviewer_keywords: ["C4200"]
-ms.assetid: e44d6073-937f-42b7-acc1-65e802b475c6
 ---
-# Compiler Warning (levels 2 and 4) C4200
+# Compiler Warning (level 2 and level 4) C4200
 
-nonstandard extension used : zero-sized array in struct/union
+> nonstandard extension used: zero-sized array in struct/union
 
 Indicates that a structure or union contains an array that has zero size.
 
