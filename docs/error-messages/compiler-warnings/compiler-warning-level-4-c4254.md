@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4254"
-title: "Compiler Warning (level 4) C4254"
+description: "Learn more about: Compiler Warning (level 4, off) C4254"
+title: "Compiler Warning (level 4, off) C4254"
 ms.date: "11/04/2016"
 f1_keywords: ["C4254"]
 helpviewer_keywords: ["C4254"]
 ---
 # Compiler Warning (level 4) C4254
 
-'operator' : conversion from 'type1' to 'type2', possible loss of data
+> '*operator*': conversion from '*type1*':'*field_bits*' to '*type2*':'*field_bits*', possible loss of data
 
 A larger bit field was assigned to a smaller bit field. There could be a loss of data.
 
