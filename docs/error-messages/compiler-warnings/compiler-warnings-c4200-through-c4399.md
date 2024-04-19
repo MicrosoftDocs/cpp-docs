@@ -1,12 +1,12 @@
 ---
-title: "Compiler warnings C4200 Through C4399"
-description: "Table of Microsoft C/C++ compiler warnings C4200 through C4389."
+title: "Microsoft C/C++ Compiler warnings C4200 through C4399"
+description: "Table of Microsoft C/C++ compiler warnings C4200 through C4399."
 ms.date: 10/18/2020
 f1_keywords: ["C4203", "C4277", "C4279", "C4298", "C4299", "C4301", "C4303", "C4314", "C4315", "C4317", "C4318", "C4321", "C4322", "C4323", "C4327", "C4328", "C4330", "C4338", "C4352", "C4362", "C4367", "C4370", "C4380", "C4387"]
 ---
-# Compiler warnings C4200 through C4399
+# Microsoft C/C++ compiler warnings C4200 through C4399
 
-The articles in this section of the documentation explain a subset of the warning messages that the compiler generates.
+The articles in this section describe Microsoft C/C++ compiler warning messages C4200 through C4399.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
