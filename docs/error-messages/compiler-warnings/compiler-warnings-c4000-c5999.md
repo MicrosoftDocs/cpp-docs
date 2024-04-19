@@ -1,9 +1,9 @@
 ---
-title: "Microsoft C/C++ compiler warnings C4000 through C5399"
-description: "Table of Microsoft C/C++ compiler warnings."
+title: "Microsoft C/C++ compiler (MSVC) warnings C4000 through C5399"
+description: "Table of Microsoft C/C++ compiler (MSVC) warnings."
 ms.date: "04/19/2024"
 ---
-# Microsoft C/C++ compiler warnings C4000 through C5399
+# Microsoft C/C++ compiler (MSVC) warnings C4000 through C5399
 
 This article links to descriptions of Microsoft C/C++ compiler warnings C4000-C5399.
 

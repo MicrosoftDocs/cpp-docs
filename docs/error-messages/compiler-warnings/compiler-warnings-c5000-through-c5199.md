@@ -1,11 +1,11 @@
 ---
-title: "Microsoft C/C++ compiler warnings C5000 through C5199"
-description: "Table of Microsoft C/C++ compiler warnings C5000 through C5199."
+title: "Microsoft C/C++ compiler (MSVC) warnings C5000 through C5199"
+description: "Table of Microsoft C/C++ (MSVC) compiler warnings C5000 through C5199."
 ms.date: 04/17/2024
 f1_keywords: ["C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5081", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5109", "C5110"]
 helpviewer_keywords: ["C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5081", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5109", "C5110"]
 ---
-# Microsoft C/C++ compiler warnings C5000 through C5199
+# Microsoft C/C++ compiler (MSVC) warnings C5000 through C5199
 
 The articles in this section describe Microsoft C/C++ compiler warning messages C5000 through C5199.
 
