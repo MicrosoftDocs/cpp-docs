@@ -1,16 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4091"
-title: "Compiler Warning (level 1) C4091"
+description: "Learn more about: Compiler Warning (level 1 and level 2) C4091"
+title: "Compiler Warning (level 1 and level 2) C4091"
 ms.date: "11/04/2016"
 f1_keywords: ["C4091"]
 helpviewer_keywords: ["C4091"]
-ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
 ---
-# Compiler Warning (level 1) C4091
+# Compiler Warning (level 1 and level 2) C4091
 
-'keyword' : ignored on left of 'type' when no variable is declared
+> '*keyword*': ignored on left of '*type*' when no variable is declared
 
-The compiler detected a situation where the user probably intended a variable to be declared, but the compiler was not able to declare the variable.
+The compiler detected a situation where the user probably intended a variable to be declared, but the compiler wasn't able to declare the variable.
 
 ## Examples
 
@@ -29,7 +28,7 @@ __declspec(dllimport) class X2 {} varX;
 class __declspec(dllimport) X3 {};
 ```
 
-If an identifier is a typedef, it cannot also be a variable name. The following sample generates C4091.
+If an identifier is a typedef, it can't also be a variable name. The following sample generates C4091.
 
 ```cpp
 // C4091_b.cpp

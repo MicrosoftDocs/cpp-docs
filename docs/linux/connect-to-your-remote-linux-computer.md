@@ -64,14 +64,16 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
 1. In the Connection Manager dialog, choose the **Add** button to add a new connection.
 
-   :::image type="content" source="media/settings_connectionmanager.png" alt-text="Screenshot of the Visual Studio options pane. CrossPlatform > C++ > Connection Manager is selected and the Add button is highlighted.":::
-
-   In either scenario, the **Connect to Remote System** window is displayed.
-
-   :::image type="content" source="media/connect.png" alt-text="Screenshot of the Visual Studio Connect to Remote System window.":::
-   There are fields for host name, port, user name, authentication type, and password. Port is set to 22. Authentication type is set to 'Password'.
+   :::image type="complex" source="media/connect-to-your-remote-linux-computer/settings-connection-manager-updated.png" alt-text="Screenshot of the Visual Studio options pane.":::
+   In the options pane, CrossPlatform > C++ > Connection Manager is selected and the Add button is highlighted.
    :::image-end:::
 
+   To edit an existing connection, choose **Edit**. In either scenario, the **Connect to Remote System** window is displayed.
+   
+   :::image type="complex" source="media/connect-to-your-remote-linux-computer/connect-updated.png" alt-text="Screenshot of the Visual Studio Connect to Remote System window.":::
+   In the Connect to Remote System window, there are fields for host name, port, user name, authentication type, and password. Port is set to 22. Authentication type is set to 'Password'.
+   :::image-end:::
+   
 1. Enter the following information:
 
    | Entry | Description |
@@ -83,22 +85,24 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    | **Password** | Password for the entered user name |
    | **Private key file** | Private key file created for ssh connection |
    | **Passphrase** | Passphrase used with private key selected above |
-
+   
+   You can't click the **Connect** button until all the required fields are completed and the port is set to an integer between 1 and 65535.
+   
    You can use either a password or a key file and passphrase for authentication. For many development scenarios, password authentication is sufficient, but key files are more secure. If you already have a key pair, it's possible to reuse it.
 
    Versions of Visual Studio before 17.10 support EC, RSA, and DSA keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported. To create a key pair compatible with the connection manager use the command:
    `ssh-keygen -m pem -t ecdsa -f <key-name>`
    
    > [!NOTE]
-   > If using `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key will not be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`. 
+   > If using `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key will not be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`.
 
 1. Choose the **Connect** button to attempt a connection to the remote computer.
 
    If the connection succeeds, Visual Studio configures IntelliSense to use the remote headers. For more information, see [IntelliSense for headers on remote systems](configure-a-linux-project.md#remote_intellisense).
 
-   If the connection fails, the entry boxes that need to be changed are outlined in red.
+   If the connection fails, an info bar with error information appears and the fields that you may need to change are outlined in red.
 
-   :::image type="content" source="media/settings_connectionmanagererror.png" alt-text="Screenshot of the Visual Studio Connect to Remote System window. The host name and port fields are outlined in red to indicate incorrect entries.":::
+   :::image type="content" source="media/connect-to-your-remote-linux-computer/settings-connection-manager-error-updated.png" alt-text="Screenshot of the Visual Studio Connect to Remote System window. The host name and port fields are outlined in red to indicate incorrect entries.":::
 
    If you use key files for authentication, make sure the target machine's SSH server is running and configured properly.
 
@@ -110,17 +114,17 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
 ## Host key verification
 
-In Visual Studio version 16.10 or later, you are asked to verify the server's host key fingerprint whenever Visual Studio connects to a remote system for the first time. You may be familiar with this process if you've used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server. Visual Studio uses the fingerprint to ensure it's connecting to the intended and trusted server.
+In Visual Studio version 16.10 or later, you're asked to verify the server's host key fingerprint whenever Visual Studio connects to a remote system for the first time. You may be familiar with this process if you've used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server. Visual Studio uses the fingerprint to ensure it's connecting to the intended and trusted server.
 
-The first time Visual Studio establishes a new remote connection, you are asked to accept or deny the host key fingerprint presented by the server. Or, anytime there are changes to a cached fingerprint. You can also verify a fingerprint on demand: select a connection in the Connection Manager and choose **Verify**.
+The first time Visual Studio establishes a new remote connection, you're asked to accept or deny the host key fingerprint presented by the server. Or, anytime there are changes to a cached fingerprint. You can also verify a fingerprint on demand: select a connection in the Connection Manager and choose **Verify**.
 
-If you upgrade to Visual Studio 16.10 or later from an older version, it treats any existing remote connections as new connections. You are prompted to accept the host key fingerprint first. Then, Visual Studio establishes a connection and caches the accepted fingerprint.
+If you upgrade to Visual Studio 16.10 or later from an older version, it treats any existing remote connections as new connections. You're prompted to accept the host key fingerprint first. Then, Visual Studio establishes a connection and caches the accepted fingerprint.
 
 You can also update remote connections from `ConnectionManager.exe` using the `update` argument.
 
 ## Supported SSH algorithms
 
-Starting in Visual Studio version 16.9, support for older, insecure SSH algorithms used to encrypt data and exchange keys, has been removed. Only the following algorithms are supported. They're supported for both client-to-server and server-to-client SSH communication:
+Starting in Visual Studio version 16.9, support for older, insecure SSH algorithms used to encrypt data and exchange keys is removed. Only the following algorithms are supported. They're supported for both client-to-server and server-to-client SSH communication:
 
 | Algorithm type | Supported algorithms |
 |--|--|

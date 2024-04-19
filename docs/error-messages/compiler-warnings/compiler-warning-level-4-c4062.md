@@ -1,16 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4062"
-title: "Compiler Warning (level 4) C4062"
+description: "Learn more about: Compiler Warning (level 4, off) C4062"
+title: "Compiler Warning (level 4, off) C4062"
 ms.date: "04/05/2019"
 f1_keywords: ["C4062"]
 helpviewer_keywords: ["C4062"]
-ms.assetid: 36d1c6ae-c917-4b08-bf30-2eb49ee94169
 ---
-# Compiler Warning (level 4) C4062
+# Compiler Warning (level 4, off) C4062
 
-> enumerator '*identifier*' in switch of enum '*enumeration*' is not handled
+> enumerator '*identifier*' in switch of `enum` '*enumeration*' is not handled
 
-The enumerator *identifier* has no associated `case` handler in a **`switch`** statement, and there's no **`default`** label that can catch it. The missing case may be an oversight, and is a potential error in your code. For a related warning on unused enumerators in **`switch`** statements that have a **`default`** case, see [C4061](compiler-warning-level-4-c4061.md).
+The enumerator *identifier* doesn't have a `case` handler associated with it in a **`switch`** statement, and there's no **`default`** label that can catch it. The missing case may be an oversight, and is a potential error in your code. For a related warning on unused enumerators in **`switch`** statements that have a **`default`** case, see [C4061](compiler-warning-level-4-c4061.md).
 
 This warning is off by default. For more information about how to enable warnings that are off by default, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
@@ -30,9 +29,6 @@ void func ( E e ) {
    // case c:  // to fix, uncomment this line
       break;   // no default label
    }   // C4062, enumerator 'c' not handled
-}
-
-int main() {
 }
 ```
 
