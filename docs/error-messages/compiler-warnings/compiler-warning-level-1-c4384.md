@@ -4,13 +4,12 @@ title: "Compiler Warning (level 1) C4384"
 ms.date: "11/04/2016"
 f1_keywords: ["C4384"]
 helpviewer_keywords: ["C4384"]
-ms.assetid: fafa8eb2-cbfc-4edb-8b0f-511ff5d37ac0
 ---
 # Compiler Warning (level 1) C4384
 
-\#pragma 'make_public' should only be used at global scope
+> `#pragma` '*pragma_name*' should only be used at global scope
 
-The [make_public](../../preprocessor/make-public.md) pragma was applied incorrectly.
+A `pragma` that must be applied at a global scope, was found in a different scope. This affects [`detect_mismatch`](../../preprocessor/detect-mismatch.md), `extern_absolute`, and [`make_public`](../../preprocessor/make-public.md).
 
 ## Example
 
