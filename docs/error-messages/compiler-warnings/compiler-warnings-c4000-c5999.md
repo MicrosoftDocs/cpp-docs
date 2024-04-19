@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler warnings C4000 - C5999"
 title: "Compiler warnings C4000 - C5999"
-ms.date: "04/22/2019"
+description: "Learn more about: Compiler warnings C4000 - C5999"
+ms.date: "04/17/2024"
 ---
 # Compiler warnings C4000 - C5999
 
@@ -9,11 +9,13 @@ The articles in this section of the documentation explain a subset of the warnin
 
 ## In this section
 
-[Compiler warnings C4000 through C4199](../compiler-warnings/compiler-warnings-c4000-through-c4199.md) \
-[Compiler warnings C4200 through C4399](../compiler-warnings/compiler-warnings-c4200-through-c4399.md) \
-[Compiler warnings C4400 through C4599](../compiler-warnings/compiler-warnings-c4400-through-c4599.md) \
-[Compiler warnings C4600 through C4799](../compiler-warnings/compiler-warnings-c4600-through-c4799.md) \
-[Compiler warnings C4800 through C5999](../compiler-warnings/compiler-warnings-c4800-through-c4999.md)
+[Compiler warnings C4000 through C4199](../compiler-warnings/compiler-warnings-c4000-through-c4199.md)\
+[Compiler warnings C4200 through C4399](../compiler-warnings/compiler-warnings-c4200-through-c4399.md)\
+[Compiler warnings C4400 through C4599](../compiler-warnings/compiler-warnings-c4400-through-c4599.md)\
+[Compiler warnings C4600 through C4799](../compiler-warnings/compiler-warnings-c4600-through-c4799.md)\
+[Compiler warnings C4800 through C4999](../compiler-warnings/compiler-warnings-c4800-through-c4999.md)\
+[Compiler warnings C5000 through C5199](../compiler-warnings/compiler-warnings-c5000-through-c5199.md)\
+[Compiler warnings C5200 through C5399](../compiler-warnings/compiler-warnings-c5200-through-c5399.md)
 
 ## See also
 
