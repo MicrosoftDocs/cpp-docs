@@ -50,6 +50,10 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2022 version 17.5 | 19.35 |
 | Visual Studio 2022 version 17.6 | 19.36 |
 | Visual Studio 2022 version 17.7 | 19.37 |
+| Visual Studio 2022 version 17.8 | 19.38 |
+| Visual Studio 2022 version 17.9 | 19.39 |
+| Visual Studio 2022 version 17.10 | 19.40 |
+
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
@@ -57,13 +61,52 @@ The following sections list the warnings introduced by each version of Visual C+
 
 ::: moniker range=">= msvc-170"
 
+## Warnings introduced in Visual Studio 2022 version 17.10 (compiler version 19.40)
+
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.40`**.
+
+| Warning | Message |
+|--|--|
+|C4859 | '*value*' is not a valid argument for '`/presetWarn`': it must be a decimal value > 0. Command-line flag ignored|
+|C4860 | '*object name*': compiler zero initialized '*number*' bytes of storage|
+|C4861 | compiler zero initialized '*number*' bytes of storage|
+|C5273 | behavior change: `_Alignas` on anonymous type no longer ignored (promoted members will align)|
+|C5274 | behavior change: `_Alignas` no longer applies to the type '*type*' (only applies to declared data objects)|
+|C5275 | facade assembly '*name*' being imported under '`/clr`'; missing option '`/clr:netcore`'?|
+|C5304 | a declaration designated by the using-declaration '*name1*' exported from this module has internal linkage and using such a name outside the module is ill-formed; consider declaring '*name2*' '`inline`' to use it outside of this module|
+|C5305 | '*name*': an explicit instantiation declaration that follows an explicit instantiation definition is ignored|
+
+## Warnings introduced in Visual Studio 2022 version 17.9 (compiler version 19.39)
+
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.39`**.
+
+| Warning | Message |
+|--|--|
+|C4975 | modopt '[*modifier*]' was ignored for formal parameter '*parameter*'|
+|C5272 | throwing an object of non-copyable type '*type*' is non-standard. If a copy is needed at runtime it will be made as if by `memcpy`.|
+
+## Warnings introduced in Visual Studio 2022 version 17.8 (compiler version 19.38)
+
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.38`**.
+
+| Warning | Message |
+|--|--|
+|C5109|`__VA_OPT__` use in macro requires '`/Zc:preprocessor`'|
+|C5110|`__VA_OPT__` is an extension prior to C++20 or C23|
+|C5271 | previously imported assembly '*assembly1*' has the same name as assembly '*assembly2*' being imported. Is this intentional?|
+|C5303 | function marked with `[[msvc::intrinsic]]` did not result in a no-op cast|
+
 ## Warnings introduced in Visual Studio 2022 version 17.7 (compiler version 19.37)
 
 These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.36`**.
 
 | Warning | Message |
 |--|--|
-| [C5267](c5267.md) | definition of implicit copy constructor/assignment operator for '*type*' is deprecated because it has a user-provided assignment operator/copy constructor |
+|C4907|multiple calling conventions cannot be specified; last given will be used|
+|[C5267](c5267.md) | definition of implicit copy constructor/assignment operator for '*type*' is deprecated because it has a user-provided assignment operator/copy constructor|
+|C5268 | Failed to allocate memory at fixed address 0x*address*. Use `/Yb` to specify a specific address base if bit-identical .pch files are required.|
+|C5269 | Failed to allocate PCH memory at fixed address 0x*address*. Use `/Ym` to specify a specific address base if bit-identical .pch files are required.|
+|C5270 | '*value*' is not allowed for option '*switch name*'; allowed values are: *value list*|
 
 ## Warnings introduced in Visual Studio 2022 version 17.6 (compiler version 19.36)
 
@@ -71,7 +114,7 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 
 | Warning | Message |
 |--|--|
-| [C5266](compiler-warning-level-4-c5266.md) | 'const' qualifier on return type has no effect |
+|[C5266](compiler-warning-level-4-c5266.md) | 'const' qualifier on return type has no effect|
 
 ## Warnings introduced in Visual Studio 2022 version 17.5 (compiler version 19.35)
 
@@ -79,8 +122,8 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 
 | Warning | Message |
 |--|--|
-| C5082 | second argument to '`va_start`' is not the last named parameter |
-| C5265 | cannot open search path '*pathname*' |
+|C5082|second argument to 'va_start' is not the last named parameter|
+|C5265 | cannot open search path '*path*'|
 
 ## Warnings introduced in Visual Studio 2022 version 17.4 (compiler version 19.34)
 
@@ -115,8 +158,8 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 | C5257 | '*enumeration*': enumeration was previously declared without a fixed underlying type |
 | C5258 | explicit capture of '*symbol*' is not required for this use |
 | C5300 | '#pragma omp atomic': left operand of '*operator*' must match left hand side of assignment-expression |
-| [C5301](c5301-c5302.md) | '#pragma omp for': '*symbol*' increases while loop condition uses '*comparison*'; non-terminating loop? |
-| [C5302](c5301-c5302.md) | '#pragma omp for': '*symbol*' decreases while loop condition uses '*comparison*'; non-terminating loop? |
+|[C5301](c5301-c5302.md) | '#pragma omp for': '*loop-index*' increases while loop condition uses '*comparison*'; non-terminating loop?|
+|[C5302](c5301-c5302.md) | '#pragma omp for': '*loop-index*' decreases while loop condition uses '*comparison*'; non-terminating loop?|
 
 ## Warnings introduced in Visual Studio 2022 version 17.1 (compiler version 19.31)
 
