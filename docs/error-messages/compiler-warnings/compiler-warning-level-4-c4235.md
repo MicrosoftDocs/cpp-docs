@@ -9,6 +9,6 @@ helpviewer_keywords: ["C4235"]
 
 > nonstandard extension used: '*keyword*' keyword not supported on this architecture
 
-The compiler does not support the keyword you used.
+The compiler doesn't support the keyword you used on the architecture your build is targeting.
 
 This warning is always issued as an error. Use the [warning](../../preprocessor/warning.md) pragma to disable.
