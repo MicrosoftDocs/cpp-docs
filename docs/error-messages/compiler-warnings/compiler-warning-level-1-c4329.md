@@ -9,7 +9,7 @@ helpviewer_keywords: ["C4329"]
 
 > alignment specifier is ignored on enum
 
-Use of the alignment specifierson on `enum` is not allowed. This includes the use of the [`align`](../../cpp/align-cpp.md) [`__declspec`](../../cpp/declspec.md) modifier. The following sample generates C4329:
+Use of the alignment specifiers on `enum` isn't allowed. This patern includes the use of the [`align`](../../cpp/align-cpp.md) [`__declspec`](../../cpp/declspec.md) modifier. The following sample generates C4329:
 
 ```cpp
 // C4329.cpp
