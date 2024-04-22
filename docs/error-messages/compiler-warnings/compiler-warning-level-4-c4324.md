@@ -9,7 +9,7 @@ helpviewer_keywords: ["C4324"]
 
 > '*structname*': structure was padded due to alignment specifier
 
-Padding was added at the end of a structure because you specified an alighment specifier, such as [__declspec(align)](../../cpp/align-cpp.md).
+Padding was added at the end of a structure because you specified an alignment specifier, such as [__declspec(align)](../../cpp/align-cpp.md).
 
 For example, the following code generates C4324:
 
