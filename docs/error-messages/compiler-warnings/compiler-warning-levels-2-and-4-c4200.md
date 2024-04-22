@@ -9,21 +9,21 @@ helpviewer_keywords: ["C4200"]
 
 > nonstandard extension used: zero-sized array in struct/union
 
-Indicates that a structure or union contains an array that has zero size.
-
-Declaration of a zero-sized array is a Microsoft extension. This causes a Level-2 warning when a C++ file is compiled and a Level-4 warning when a C file is compiled. C++ compilation also gives this warning: "Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array." This example generates warning C4200:
+C++ only:
+> This member will be ignored by a defaulted constructor or copy/move assignment operator
+ 
+This warning indicates that a structure or union contains an array that has zero size. Declaration of a zero-sized array is a nonstandard compiler extension. This causes a Level-2 warning when a C++ file is compiled and a Level-4 warning when a C file is compiled. This example generates warning C4200:
 
 ```cpp
 // C4200.cpp
 // compile by using: cl /W4 c4200.cpp
 struct A {
+    int len;
     int a[0];  // C4200
 };
-int main() {
-}
 ```
 
-This non-standard extension is often used to interface code with external data structures that have a variable length. If this scenario applies to your code, you can disable the warning:
+This nonstandard extension is often used to interface code with external data structures that have a variable length. If this scenario applies to your code, you can disable the warning:
 
 ## Example
 
@@ -32,8 +32,7 @@ This non-standard extension is often used to interface code with external data s
 // compile by using: cl /W4 c4200a.cpp
 #pragma warning(disable : 4200)
 struct A {
+    int len;
     int a[0];
 };
-int main() {
-}
 ```
