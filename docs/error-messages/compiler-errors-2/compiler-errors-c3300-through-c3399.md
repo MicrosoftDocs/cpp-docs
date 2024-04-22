@@ -34,7 +34,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C3315 | ' *function*': must be a member function |
 | Compiler error C3316 | '*type*': an array of unknown size cannot be used in a range-based for statement |
 | Compiler error C3317 | '*identifier*': an overload function cannot be used as the expression in a range-based for statement |
-| Compiler error C3318 | '*type*': an array cannot have an element type that contains 'auto' |
+| Compiler error C3318 | '*type*': an array cannot have an element type that contains 'auto' <br/> No longer emitted in Visual Studio 2022 version 17.11 |
 | Compiler error C3319 | Obsolete. |
 | [Compiler error C3320](compiler-error-c3320.md) | '*type*': type cannot have the same name as the module 'name' property |
 | Compiler error C3321 | an initializer list is unexpected in this context |
