@@ -9,9 +9,9 @@ helpviewer_keywords: ["C4384"]
 
 > `#pragma` '*pragma_name*' should only be used at global scope
 
-A `pragma` that must be applied at a global scope, was found in a different scope.
+A `pragma` directive that must be applied at a global scope, was found in a different scope.
 
-The warning applies to the following:
+The warning applies to the following `pragma` directives:
 * [`detect_mismatch`](../../preprocessor/detect-mismatch.md)
 * `extern_absolute`
 * [`make_public`](../../preprocessor/make-public.md)
