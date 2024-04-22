@@ -11,7 +11,7 @@ helpviewer_keywords: ["C4254"]
 
 A larger bit field was assigned to a smaller bit field. There could be a loss of data.
 
-This warning is off by default. For mote information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
 The following sample generates C4254:
 
