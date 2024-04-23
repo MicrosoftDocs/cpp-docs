@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Build Insights functions view"
 description: "Tutorial on how to use Build Insights function view to troubleshoot build time and forceinlines function inlining costs."
-ms.date: 4/15/2024
+ms.date: 4/25/2024
 helpviewer_keywords: ["C++ Build Insights", "inline function analysis", "build time analysis", "__forceinline analysis", "inlines analysis"]
 ---
 # Tutorial: Use Build Insights to troubleshoot build time and function inlining problems
@@ -23,7 +23,7 @@ The list of installed components is shown. C++ Build Insights is highlighted and
 
 ## Overview
 
-Build Insights is a tool, now integrated into Visual Studio, designed to help you optimize your build times--especially for large projects like AAA games. Build Insights provides various analytics such as **Functions** view, which helps diagnose slow code generation time. It displays the time it takes to generate code for each function, and shows the impact of [`__forceinline`](../../cpp/inline-functions-cpp.md#inline-__inline-and-__forceinline).
+Build Insights, now integrated into Visual Studio, designed to help you optimize your build times--especially for large projects like AAA games. Build Insights provides various analytics such as **Functions** view, which helps diagnose slow code generation time. It displays the time it takes to generate code for each function, and shows the impact of [`__forceinline`](../../cpp/inline-functions-cpp.md#inline-__inline-and-__forceinline).
 
 The `__forceinline` directive tells the compiler to inline a function regardless of its size or complexity. Inlining a function can improve runtime performance by reducing the overhead of calling the function, but it can increase the size of the binary and impact your build times. For optimized builds, the time spent generating code is a significant contributor to the total build time. In general, C++ function optimization happens quickly. But in exceptional cases, some functions can become large and complex enough to put pressure on the optimizer and noticeably slow down your builds.
 
@@ -76,7 +76,7 @@ You can search for a specific function by using the **Filter Functions** box. If
 
 ## Improve build time and function inlining
 
-In this case, we can see that the `foo` function is taking the most time to compile. Investigating further, by opening the function, we see that the `foo2` function is marked with `__forceinline`. This function is inlined into many other functions, which is causing the build time to increase. We can remove the `__forceinline` directive from the `foo` function to reduce the build time.
+We can see that the `foo` function is taking the most time to compile. Investigating further, by opening the function, we see that the `foo2` function is marked with `__forceinline`. This function is inlined into many other functions, which is causing the build time to increase. We can remove the `__forceinline` directive from the `foo` function to reduce the build time.
 
 ## Troubleshooting
 
