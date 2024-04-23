@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4265"]
 ---
 # Compiler Warning (level 3, off) C4265
 
-> 'class' : class has virtual functions, but destructor is not virtual
+> '*classname*': class has virtual functions, but its non-trivial destructor is not virtual; instances of this class may not be destructed correctly
 
 When a class has virtual functions but a nonvirtual destructor, objects of the type might not be destroyed properly when the class is destroyed through a base class pointer.
 
