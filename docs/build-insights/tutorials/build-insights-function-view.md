@@ -6,7 +6,7 @@ helpviewer_keywords: ["C++ Build Insights", "inline function analysis", "build t
 ---
 # Tutorial: Use Build Insights to troubleshoot build time and function inlining problems
 
-Use Build Insights **Functions** view to troubleshoot the impact of function inlining on build time.
+Use Build Insights **Functions** view to troubleshoot the impact of function inlining on build time in your C++ projects.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ The list of installed components is shown. C++ Build Insights is highlighted and
 
 ## Overview
 
-Build Insights, now integrated into Visual Studio, designed to help you optimize your build times--especially for large projects like AAA games. Build Insights provides various analytics such as **Functions** view, which helps diagnose slow code generation time. It displays the time it takes to generate code for each function, and shows the impact of [`__forceinline`](../../cpp/inline-functions-cpp.md#inline-__inline-and-__forceinline).
+Build Insights, now integrated into Visual Studio, designed to help you optimize your build times--especially for large projects like AAA games. Build Insights provides analytics such as **Functions** view, which helps diagnose slow code generation time. It displays the time it takes to generate code for each function, and shows the impact of [`__forceinline`](../../cpp/inline-functions-cpp.md#inline-__inline-and-__forceinline).
 
 The `__forceinline` directive tells the compiler to inline a function regardless of its size or complexity. Inlining a function can improve runtime performance by reducing the overhead of calling the function, but it can increase the size of the binary and impact your build times. For optimized builds, the time spent generating code is a significant contributor to the total build time. In general, C++ function optimization happens quickly. But in exceptional cases, some functions can become large and complex enough to put pressure on the optimizer and noticeably slow down your builds.
 
@@ -48,9 +48,9 @@ Set the optimization level to maximum optimizations:
 
 - Click **OK** to close the dialog.
 
-## Run build insights 
+## Run build insights
 
-On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing **Build** > **Run Build Insights on Solution** > **Build**. Or, you can run Build Insights on a specific project in a multi-project solution by right-clicking the project in Solution Explorer and selecting **Run Build Insights**.
+On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing **Build** > **Run Build Insights on Solution** > **Build**. You can run Build Insights on a specific project in a multi-project solution by right-clicking the project in Solution Explorer and selecting **Run Build Insights**.
 
 When the build finishes, an Event Trace Log (ETL) file opens similar to the example that follows. It's saved in the `%temp%` folder on your machine. The generated name is based on the time of collection. This file shows the time spent processing `#include` files, the build time for each function, and how much `__forceinline` impacted the size of the function.
 

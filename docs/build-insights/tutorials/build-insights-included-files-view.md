@@ -6,7 +6,7 @@ helpviewer_keywords: ["C++ Build Insights", "included files view", "include tree
 ---
 # Tutorial: Use Build Insights to troubleshoot #include files on build time
 
-Use Build Insights **Included Files** and **Include Tree** views to troubleshoot the impact of `#include` files on build time.
+Use Build Insights **Included Files** and **Include Tree** views to troubleshoot the impact of `#include` files on build time in your C and C++ projects.
 
 ## Prerequisites
 
@@ -23,49 +23,71 @@ The list of installed components is shown. C++ Build Insights is highlighted and
 
 ## Overview
 
-Build Insights, now integrated into Visual Studio, is designed to help you optimize your build times--especially for large projects like AAA games. Build Insights provides various analytics such as **Included** view, which helps diagnose the impact of repeatedly parsing `#include` files. It displays the time it takes to generate code for each function, and shows the impact of [`__forceinline`](../../cpp/inline-functions-cpp.md#inline-__inline-and-__forceinline).
+Build Insights, now integrated into Visual Studio, is designed to help you optimize your build times--especially for large projects like AAA games. When a large header file is repeatedly parsed, there is an impact on build time. Build Insights provides analytics in the **Included Files** view, which helps diagnose the impact of repeatedly parsing `#include` files. It displays the time it takes to parse each header file as well as a view of which header files are included by other header files.
 
-Parsing header files has an impact on build time. When a large header file is repeatedly parsed, there is an even greater impact on compile time.  The `__forceinline` directive tells the compiler to inline a function regardless of its size or complexity. Inlining a function can improve runtime performance by reducing the overhead of calling the function, but it can increase the size of the binary and impact your build times. For optimized builds, the time spent generating code is a significant contributor to the total build time. In general, C++ function optimization happens quickly. But in exceptional cases, some functions can become large and complex enough to put pressure on the optimizer and noticeably slow down your builds.
-
-In this article, learn how to use the Build Insights **Functions** view to identify bottlenecks in your build process and improve build time and function inlining.
+In this article, learn how to use the Build Insights **Included Files** view to identify bottlenecks in your build process and improve build time.
 
 ## Set build options
 
-To measure the results of `__forceinline`, use a **Release** build where optimizations for `__forceinline` impact release build times the most. Set the build for **Release** and **x64**:
+First, set the build options for the type of build you want to measure. For example, if you are most concerned about your x64 debug build times set the build for **Debug** and **x64**:
 
-- In the **Solution Configurations** dropdown, choose **Release**.
+- In the **Solution Configurations** dropdown, choose **Debug**.
 - In the **Solution Platforms** dropdown, choose **x64**.
 
-:::image type="content" source="./media/" alt-text="Screenshot showing the Solution Configuration dropdown set to Release, and the Solution Platform dropdown set to x64":::
-
-Set the optimization level to maximum optimizations:
-
-- In the **Solution Explorer**, right-click the project name and select **Properties**.
-- In the project properties, navigate to **C/C++** > **Optimization**.
-- Set the **Optimization** dropdown to **Maximum Optimization (Favor Speed) (/O2)**.
-
-:::image type="content" source="./media/" alt-text="Screenshot showing the project property pages dialog. The settings are open to Configuration Properties > C/C++ > Optimization. The Optimization dropdown is set to Maximum Optimization (Favor Speed) (/O2)":::
+:::image type="complex" source="./media/build-options.png" alt-text="Screenshot showing the Solution Configuration dropdowns" with options for Debug, Release. The Solution Platform dropdown is set to x64":::
+The Solution Configuration dropdown is shown with options for Debug and Release. The Solution Platform dropdown is set to x64
+:::image-end:::
 
 - Click **OK** to close the dialog.
 
 ## Run build insights
 
-On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing **Build** > **Run Build Insights on Solution** > **Build**. Or, you can run Build Insights on a specific project in a multi-project solution by right-clicking the project in Solution Explorer and selecting **Run Build Insights**.
+On a project of your choosing, run Build Insights by choosing **Build** > **Run Build Insights on Solution** > **Build**. You can run Build Insights on a specific project in a multi-project solution by right-clicking the project in Solution Explorer and selecting **Run Build Insights**.
 
-When the build finishes, an Event Trace Log (ETL) file opens similar to the example that follows. It's saved in the `%temp%` folder on your machine. The generated name is based on the time of collection. This file shows the time spent processing `#include` files, the build time for each function, and how much `__forceinline` impacted the size of the function.
-
-:::image type="complex" source="./media/" alt-text="alt text stuff":::
-big ole’ long description
-:::image-end:::
+When the build finishes, an Event Trace Log (ETL) file opens that will be resemble the example that follows. It's saved in the `%temp%` folder on your machine. The generated name is based on the time of collection.
 
 ## Included Files View
 
-time is aggregate time spent parsing the file
+The ETL file has tabs for the different Build Insight views. Choose the **Include Files** tab. This view shows the time spent processing `#include` files. For this example, the first file, `iostream`, is particularly expensive to parse in terms of time. Files that take up 10% or more of the build time are marked with a flame symbol to indicate that it is priority file to investigate. The **Time** column shows that 2.937 seconds were spent parsing this file altogether, which is 11.1% of the overall time spent parsing files. It was parsed 6 times.
 
+:::image type="complex" source="./media/included-files-view.png" alt-text="Screenshot of the included files view":::
+An example ETL file showing the includes files for a sample project. In the file path column, some files are shown as being particularly expensive to parse in terms of time. They have a fire icon next to them to indicate that they are worth investigating. The time column shows the time spent parsing each file. The parse count column shows how many time the header file was parsed."
+:::image-end:::
+
+Click the chevron next to a file to expand the view to show which files include this file. This can give you an idea about how 'popular' this header file is. In this example, `iostream` is included by `main.cpp`, `renderer.cpp`, and it was included 4 times by `Utils.h` What this suggests is that `iostream` is a common header file that is included by many other files. If you can reduce the number of times `iostream` is parsed, you can improve your build time.  We'll talk about how to do that in the next section.
+
+The next file in the list is `istream`. Expand that file to see that it is included by `iostream` six times. This increases our desire to find a way to reduce how many times `iostream` is parsed, because that would also reduce the number of times `istream` is parsed, which would improve build time given that parsing it also consumes 11.1% of the overall build time.
+
+:::image type="complex" source="./media/included-files-expanded-view.png" alt-text="Screenshot of the included files view":::
+An example ETL file showing the includes files for a sample project. In the file path column, some files are shown as being particularly expensive to parse in terms of time. They have a fire icon next to them to indicate that they are worth investigating. The time column shows the time spent parsing each file. The parse count column shows how many time the header file was parsed."
+:::image-end:::
+
+We could likewise examine the other files in the list to see if there are other common header files that are parsed multiple times, and consider ways to reduce the number of times they are parsed.
 
 ## Include Tree View
 
-right click on a file to: 
+The **Include Tree** view shows the hierarchy of `#include` files. It shows which files include other files, and which files are included by other files. This can help you understand the relationships between header files and identify opportunities to reduce the number of times a header file is parsed. Select the **Include Tree** tab in the ETL file to see the Include Tree view:
+
+:::image type="complex" source="./media/include-tree-view.png" alt-text="Screenshot of the Include Tree view":::
+An example ETL file showing the include tree for a project. In the file path column, each file that includes other files is listed, along with how many files it includes and the time it took to parse it.
+:::image-end:::
+
+In this example, we see that the file `CollisionDetector.cpp` includes two files (as indicated in the **Include Count** column) and took 1.439 seconds (or 5.4% of the overall build time) to parse. Select the chevron next to `CollisionDetector.cpp` to see what files it includes. We can do this recursively. For example, `CollisionDetector.cpp` includes `CollisionDetector.h`, which includes `PhysicsObject.h` and `vector`. This can help you understand the relationships between header files and identify opportunities to reduce the number of times a header file is parsed:
+
+:::image type="complex" source="./media/include-tree-view-expanded.png" alt-text="Screenshot of the Include Tree view with an expanded node":::
+The include tree for a project with CollisionDetector.cpp expanded showing that it includes Utils.h and CollisionDector.h.  CollisionDetector.h is also expanded, showing that it includes PhysicsObject.h and vector.
+:::image-end:::
+
+
+The example ETL file shows the include tree for a project. In the file path column, each file that includes other files is listed, along with how many times it was included. The project that it was included in is also listed. Select the chevron next to a file to expand the view to see which files include this file. This can help you understand the relationships between header files and identify opportunities to reduce the number of times a header file is parsed.
+
+## Improve build time with precompiled headers
+
+Because we know that `iostream` is 
+
+show how to build a precompiled header or link to topic for it
+    - this topic shows how to build PCH: https://devblogs.microsoft.com/cppblog/faster-builds-with-pch-suggestions-from-c-build-insights/
+Talk about header units
 
 In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to compile each function. If a function's code generation time is too small, it won't be displayed because build events with negligible impact are discarded to avoid degrading build event collection performance.
 
@@ -81,11 +103,21 @@ Select the chevron next to a function to expand the function and see the list of
 
 You can search for a specific function by using the **Filter Functions** box. If a function's code generation time is too small, it doesn't appear in the Functions View.
 
-## Improve build time with precompiled headers
+## Navigate between views
 
-show how to build a precompiled header or link to topic for it
-    - this topic shows how to build PCH: https://devblogs.microsoft.com/cppblog/faster-builds-with-pch-suggestions-from-c-build-insights/
-Talk about header units
+right click to go to other view
+double-click to go to the file
+
+## Tips
+
+open WPA window
+Drag columns to change order
+
+Filter box: One of the files it includes is `Utils.h`. In the filter box, you can search for a specific file to see where what all it includes. In this example, we've searched for `Utils.h` and then selected the chevron next to its name. We see that it includes `iostream` and `chrono`.  include-tree-view-utils-h-expanded.png
+
+Sometimes parse time for the same header will differ. This can be due to the interplay of different `#define`s that may affect which parts of the header are expanded, caching, and other system factors.
+
+If you forget what exactly the view is showing you, hover over the tab to see a tooltip that describes the view. For example, if you hover over the **Include Tree** tab, the tooltip says, "View that shows include statistics for every file where the children nodes are the files included by the parent node."
 
 ## Troubleshooting
 
