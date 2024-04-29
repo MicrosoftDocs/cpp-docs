@@ -11,7 +11,7 @@ Use Build Insights **Functions** view to troubleshoot the impact of function inl
 ## Prerequisites
 
 - Visual Studio 2022 17.8 or greater.
-- C++ Build insights is enabled by default if you installed either the Desktop development with C++ workload or the Game development with C++ workload.
+- C++ Build insights is enabled by default if you install either the Desktop development with C++ workload or the Game development with C++ workload.
 
 :::image type="complex" source="./media/installer-desktop-cpp-build-insights.png" alt-text="Screenshot of the Visual Studio Installer with the Desktop development with C++ workload selected.":::
 The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate that it is included in the installation.
