@@ -25,7 +25,7 @@ The list of installed components is shown. C++ Build Insights is highlighted and
 
 Build Insights, now integrated into Visual Studio, is designed to help you optimize your build times--especially for large projects like AAA games. When a large header file is repeatedly parsed, there is an impact on build time. Build Insights provides analytics in the **Included Files** view, which helps diagnose the impact of repeatedly parsing `#include` files. It displays the time it takes to parse each header file as well as a view of which header files are included by other header files.
 
-In this article, learn how to use the Build Insights **Included Files** view to identify bottlenecks in your build process and improve build time. We'll use a hypothetical project to demonstrate how to use Build Insights to identify the most expensive header files to parse and how to optimize build time by creating a precompiled header file.
+In this article, learn how to use the Build Insights **Included Files** and **INclude Tree** views to identify bottlenecks in your build process and improve build time. We'll use a hypothetical project to demonstrate how to use Build Insights to identify the most expensive header files to parse and how to optimize build time by creating a precompiled header file.
 
 ## Set build options
 
@@ -44,7 +44,7 @@ The Solution Configuration dropdown is shown with options for Debug and Release.
 
 The solution for this example calculator project consists of several projects and one of them is taking longer to build than we think it should. We suspect that the time is being spent parsing header files. We'll use Build Insights to investigate.
 
-We first clean the project because we want to make sure to measure the build time for the project and not for just the files may be dirty right now. We do this by right-clicking the project in the **Solution Explorer** and choosing **Project only** > **Clean only <prj name>**.
+We first clean the project because we want to make sure to measure the build time for the project and not for just the files may be dirty right now. We do this by right-clicking the project in the **Solution Explorer** and choosing **Project only** > **Clean only \<prj name\>**.
 
 We then select the project in the **Solution Explorer** and run Build Insights from the Visual Studio menu by choosing **Build** > **Run Build Insights on Selection** > **Build**.
 
@@ -75,7 +75,9 @@ Click the chevron next to each header to see which file is including it. The **P
 
 The **Translation Unit** column shows which translation unit was being processed when the file was included. It will list which file was being processed when the included file was processed. In this example, `winrtHeaders.h` was included when `Grapher.cpp` was being compiled:
 
-:::image type="content" source="./media/included-files-translation-unit.png" alt-text="":::
+:::image type="complex" source="./media/included-files-translation-unit.png" alt-text="Screenshot of the Included Files view":::
+An example ETL file showing the includes files for a sample project. In the file path column, winrtHeaders.h is selected and expanded. It takes 8.219 seconds to build which is 50.1% of the build time. It's child node is Grapher.cpp, which is also listed as the tranlsation unit."
+:::image-end:::
 
 We know that `winrtHeaders.h` is expensive to parse, but we can find out more. We can use the **Include Tree** view to see which files `winrtHeaders.h` includes.
 
@@ -105,7 +107,7 @@ The technique we'll use to process it faster is precompiled headers.
 
 ## Improve build time with precompiled headers
 
-Because we know from the **Included Files** view that `winrtHeaders` is one of the most expensive headers to parse, and because we know from the **Include Tree** view that `winrtHeaders` also includes several other header files that are expensive3 to parse, we'll build a [Precompiled header file](../build/creating-precompiled-header-files.md) (PCH) out of those headers to reduce the number of times these files are parsed.
+Because we know from the **Included Files** view that `winrtHeaders` is one of the most expensive headers to parse, and because we know from the **Include Tree** view that `winrtHeaders` also includes several other header files that are expensive3 to parse, we'll build a [Precompiled header file](../../build/creating-precompiled-header-files.md) (PCH) out of those headers to reduce the number of times these files are parsed.
 
 In the example project, we added `pch.h` that includes these headers, and looks like this:
 
@@ -128,7 +130,7 @@ Then we set our project to use the PCH. In the project properties, navigate to *
 
 :::image type="complex" source="./media/precompiled-header-settings.png" alt-text="Screenshot of the project properties dialog with the Precompiled Headers settings open":::
 
-To use the PCH, we add it as the first entry in all the source files. Or, for simplicity, we can do this by modifying the project properties to include `pch.h` at the beginning of every file in the solution even if we don’t explicitly add an include directive. That's done in the project properties: **C/C++** > **Advanced** > **Forced Include File** to `pch.h`.
+To use the PCH, we add it as the first entry in all the source files. Or, for simplicity, we can do this by modifying the project properties to include `pch.h` at the beginning of every file in the solution even if we don’t explicitly add an include directive. That's done in the project properties: **C/C++** \> **Advanced** \> **Forced Include File** to `pch.h`.
 
 Since the PCH includes `winrtHeaders`, we could remove `winrtHeaders` from all the files that currently include it. It's not strictly necessary, though, because the compiler will realize that `winrtHeaders` is already included and not parse it again. Some developers prefer to keep the includes around for clarity, or in case the PCH changes to no longer include that particular header file.
 
@@ -140,9 +142,9 @@ Because this project uses a precompiled header (PCH), we don't want to measure t
 
 Now we rerun Build Insights in the **Solution Explorer** by right-clicking the project and choosing **Project Only** >> **Run Build Insights on Build**. When the ETL files appears, we see that build time has gone from 16.404 seconds to 6.615 seconds. Put `winrtHeaders` into the filter box and nothing appears. This is because the time spent parsing it is now negligible since it is being pulled in via the precompiled header.
 
-:::image type="complex" source="./media/precompiled-header-settings.png" alt-text="Screenshot of the project properties dialog with the Precompiled Headers settings open":::
+:::image type="content" source="./media/included-files-after-fix.png" alt-text="Screenshot of the Include Tree pane in the trace file. winrtHeaders is no longer listed.":::
 
-This example uses precompiled headers because they are a common solution for code prior to C++ 20. However, starting with C++20, there are other faster, less brittle ways to include header files such as header units and modules. See [Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md) for more information.
+This example uses precompiled headers because they are a common solution for code prior to C++ 20. However, starting with C++20, there are other faster, less brittle ways to include header files such as header units and modules. See [Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md) for more information.
 
 ## Navigate between views
 
@@ -157,7 +159,7 @@ Save as, the ETL file for future use
 
 rt-click, switch between views
 
-double click, or <enter> to go to a file or right-click context menu
+double click, or **Enter** to go to a file or right-click context menu
 
 Filter box: One of the files it includes is `Utils.h`. In the filter box, you can search for a specific file to see where what all it includes. In this example, we've searched for `Utils.h` and then selected the chevron next to its name. We see that it includes `iostream` and `chrono`.  include-tree-view-utils-h-expanded.png
 
@@ -172,7 +174,7 @@ If you forget what exactly the view is showing you, hover over the tab to see a 
 
 ## See also
 
-[Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md)\
+[Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md)\
 [Build Insights in Visual Studio video - Pure Virtual C++ 2023](https://learn.microsoft.com/en-us/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)
 [Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)\
 [Reference: vcperf commands](../reference/vcperf-commands.md)\
