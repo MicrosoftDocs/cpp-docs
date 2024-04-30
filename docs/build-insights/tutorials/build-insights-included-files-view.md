@@ -136,7 +136,7 @@ Since the PCH includes `winrtHeaders`, we could remove `winrtHeaders` from all t
 
 ## Test the changes
 
-We first clean the project to make sure we are comparing the same thing as before. We do this by right-clicking the project in the **Solution Explorer** and choosing **Project only** > **Clean only <prj name>**.
+We first clean the project to make sure we are comparing the same thing as before. We do this by right-clicking the project in the **Solution Explorer** and choosing **Project only** \> **Clean only \<prj name\>**.
 
 Because this project uses a precompiled header (PCH), we don't want to measure time spent building the PCH because that only happens once. We do this by loading the pch.cpp file and choosing **Ctrl+F7** to build just this file. We could also compile this file by right-clicking `pch.cpp` in the solution explorer and choosing `Compile`.
 
@@ -175,7 +175,7 @@ If you forget what exactly the view is showing you, hover over the tab to see a 
 ## See also
 
 [Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md)\
-[Build Insights in Visual Studio video - Pure Virtual C++ 2023](https://learn.microsoft.com/en-us/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)
+[Build Insights in Visual Studio video - Pure Virtual C++ 2023](events/pure-virtual-cpp-2023/build-insights-in-visual-studio)
 [Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)\
 [Reference: vcperf commands](../reference/vcperf-commands.md)\
 [Reference: Windows Performance Analyzer views](../reference/wpa-views.md)\
