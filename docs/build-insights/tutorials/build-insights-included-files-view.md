@@ -4,9 +4,9 @@ description: "Tutorial on how to use Build Insights function view to troubleshoo
 ms.date: 4/25/2024
 helpviewer_keywords: ["C++ Build Insights", "included files view", "include tree view", "#include analysis", "build time analysis"]
 ---
-# Tutorial: Use Build Insights to troubleshoot #include files on build time
+# Tutorial: Use Build Insights to troubleshoot #include files build time
 
-Use Build Insights **Included Files** and **Include Tree** views to troubleshoot the impact of `#include` files on build time in your C and C++ projects.
+Use Build Insights **Included Files** and **Include Tree** views to troubleshoot the impact of `#include` files on C and C++ build times.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ The list of installed components is shown. C++ Build Insights is highlighted and
 
 Build Insights, now integrated into Visual Studio, is designed to help you optimize your build times--especially for large projects like AAA games. When a large header file is repeatedly parsed, there is an impact on build time. Build Insights provides analytics in the **Included Files** view, which helps diagnose the impact of repeatedly parsing `#include` files. It displays the time it takes to parse each header file as well as a view of which header files are included by other header files.
 
-In this article, learn how to use the Build Insights **Included Files** and **INclude Tree** views to identify bottlenecks in your build process and improve build time. We'll use a hypothetical project to demonstrate how to use Build Insights to identify the most expensive header files to parse and how to optimize build time by creating a precompiled header file.
+In this article, learn how to use the Build Insights **Included Files** and **Include Tree** views to identify bottlenecks in your build process and improve build time. We'll use a hypothetical project to demonstrate how to use Build Insights to identify the most expensive header files to parse and how to optimize build time by creating a precompiled header file.
 
 ## Set build options
 
@@ -34,82 +34,76 @@ Before gathering Build Insights data, set the build options for the type of buil
 - In the **Solution Configurations** dropdown, choose **Debug**.
 - In the **Solution Platforms** dropdown, choose **x64**.
 
-:::image type="complex" source="./media/build-options.png" alt-text="Screenshot showing the Solution Configuration dropdowns.":::
-The Solution Configuration dropdown is shown with options for Debug and Release. The Solution Platform dropdown is set to x64
-:::image-end:::
+    :::image type="complex" source="./media/build-options.png" alt-text="Screenshot showing the Solution Configuration dropdowns.":::
+    The Solution Configuration dropdown is shown. It has options for Debug, Release, and Configuration manager. The Solution Platform dropdown is set to x64
+    :::image-end:::
 
 - Click **OK** to close the dialog.
 
 ## Run Build Insights
 
-The solution for this example calculator project consists of several projects and one of them is taking longer to build than we think it should. We suspect that the time is being spent parsing header files. We'll use Build Insights to investigate.
+The story for this article is about a solution consisting of several projects for a calculator project. One of the projects takes suspiciously long to build. We'll use Build Insights to investigate.
 
-We first clean the project because we want to make sure to measure the build time for the project and not for just the files may be dirty right now. We do this by right-clicking the project in the **Solution Explorer** and choosing **Project only** > **Clean only \<prj name\>**.
-
-We then select the project in the **Solution Explorer** and run Build Insights from the Visual Studio menu by choosing **Build** > **Run Build Insights on Selection** > **Build**.
+We select the slow building project in the **Solution Explorer** and run Build Insights from the Visual Studio main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose rebuild instead of build to make sure to measure the build time for the entire project and not for just the few files may be dirty right now.
 
 :::image type="content" source="./media/build-insights-rebuild-project.png" alt-text="Screenshot of the main menu with Run Build Insights on Selection > Rebuild selected.":::
 
 >[!TIP]
 > You can also right-click a project in Solution Explorer and select **Run Build Insights on Build Solution**. Or from the main menu choose **Build** > **Run Build Insights on Selection** > **Rebuild**.
 
-When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the `%temp%` folder on your machine. The generated name is based on the collection time.
+When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the `%temp%` folder. The generated name is based on the collection time.
 
 ## Included Files View
 
-The trace file shows the build time--which for this example was 16.404 seconds.
+The trace file shows the build time--which for the example was 16.404 seconds. The **Diagnostics Session** is the overall time to run the Build Insights session. Choose the **Included Files** tab.
 
-There are tabs for the different Build Insight views. Choose the **Included Files** tab.
-
-This view shows the time spent processing `#include` files. Files that take up 10% or more of the build time are shown with a flame symbol to indicate that it is likely a priority to investigate.
+This view shows the time spent processing `#include` files. The children nodes are the files that included the parent node. Files that take up 10% or more of the build time are shown with a flame symbol to indicate that they are a likely candidate to investigate.
 
 :::image type="complex" source="./media/included-files-before-fix.png" alt-text="Screenshot of the included files view":::
-An example ETL file showing the includes files for a sample project. In the file path column, some files are particularly expensive to parse in terms of time. They have a fire icon next to them to indicate that they are worth investigating. The time column shows the time spent parsing each file. The parse count column shows how many time the header file was parsed."
+In the file path column, several files with a fire icon are highlighted because they take over 10% of the build time to parse. winrtHeaders.h is the biggest one at 8.581 seconds or 52.3% of the 16.404 second build time."
 :::image-end:::
 
-In the **File Path** column, some files have a fire icon next to them to indicate that they take up 10% or more of the build time, and thus are worth investigating. The time column shows the time spent parsing each file. The parse count column shows how many time the header file was parsed.
+In the **File Path** column, some files have a fire icon next to them to indicate that they take up 10% or more of the build time. The time column shows the time spent parsing each file. The parse count column shows how many time the header file was parsed.
 
-The first header file highlighted in this list is `winrtHeaders.h` It takes 50% of the build time. The next most expensive is `Windows.UI.Xaml.Interop.h` and then `Windows.Xaml.h`.
+The first header file highlighted in this list is `winrtHeaders.h` It takes 8.581 seconds of the overall 16.404 second build time, or 52.3% of the build time. The next most expensive is `Windows.UI.Xaml.Interop.h` and then `Windows.Xaml.h`.
 
-Click the chevron next to each header to see which file is including it. The **Parse Count** column can also be helpful by pointing out how many times a header file is included by other files.
+Click the chevron next to each header to see which file includes it. The **Parse Count** column can be helpful by pointing out how many times a header file is included by other files. Perhaps a header file is included multiple times, which could be a sign that it's a good candidate for a precompiled header file.
 
-The **Translation Unit** column shows which translation unit was being processed when the file was included. It will list which file was being processed when the included file was processed. In this example, `winrtHeaders.h` was included when `Grapher.cpp` was being compiled:
+The **Translation Unit** column shows which translation unit was being processed when the file was included. It lists which file was being processed when the included file was processed. In this example, `winrtHeaders.h` was included while `Grapher.cpp` was compiled:
 
 :::image type="complex" source="./media/included-files-translation-unit.png" alt-text="Screenshot of the Included Files view":::
 An example ETL file showing the includes files for a sample project. In the file path column, winrtHeaders.h is selected and expanded. It takes 8.219 seconds to build which is 50.1% of the build time. It's child node is Grapher.cpp, which is also listed as the tranlsation unit."
 :::image-end:::
 
-We know that `winrtHeaders.h` is expensive to parse, but we can find out more. We can use the **Include Tree** view to see which files `winrtHeaders.h` includes.
+We know that `winrtHeaders.h` is expensive to parse, but we can find out more. We can use the **Include Tree** view to see which files `winrtHeaders.h` includes. Choose the **Include Tree** tab to see this view.
 
-## Include Tree View
+## Include Tree view
 
-Expanding an entry in the **Include Tree** view shows which files that entry includes. This can help you understand the relationships between header files and identify opportunities to reduce the number of times a header file is parsed.
+This view shows include statistics for every file where the children nodes are the files included by the parent node. Expanding an entry in the **Include Tree** view shows which files that entry includes. This can help you understand the relationships between header files and identify opportunities to reduce the number of times a header file is parsed.
 
 Select the **Include Tree** tab in the ETL file to see the Include Tree view:
 
 :::image type="complex" source="./media/include-tree-view.png" alt-text="Screenshot of the Include Tree view":::
-An example ETL file showing the include tree for a project. In the file path column, each file that includes other files is listed, along with how many files it includes and the time it took to parse it.
+Shows the include tree for a project. In the file path column, each file that includes other files is listed, along with how many files it includes and the time it took to parse it.
 :::image-end:::
 
-In this view, we see the header files that are included by other files. The **File Path** column shows each file that includes other files, along with how many files it includes in the **Include Count** and the time it took to parse it.
+In this view, the **File Path** column shows each file that includes other files. The **Include Count** lists how many files this header file includes. The time to parse this file is listed, and when expanded, lists the time it took to parse each individual header file that this header file includes.
 
-Earlier, we saw that `winrtHeaders.h` is expensive file to parse. Let's dig in to see what else we can find out about this header.
-
-In the Filter Files text box, enter `winrtHeaders` to filter the view to entries that contain `winrtHeaders` in the name. Click the chevron next to `winrtHeaders` to see which files it includes.
+Earlier, we saw that `winrtHeaders.h` is expensive to parse. In the **Filter Files** text box, if we enter `winrtHeaders` we can filter the view to only the entries that contain `winrtHeaders` in the name. Clicking the chevron next to `winrtHeaders` shows which files it includes:
 
 :::image type="complex" source="./media/include-tree-view-expanded.png" alt-text="Screenshot of the Include Tree view":::
-An example ETL file showing the include tree for a project. In the file path column, each file that includes other files is listed, along with how many files it includes and the time it took to parse it.
+The file path column lists each file that includes other files, along with how many files it includes and the time it took to parse it. winrtHeaders.h is selected and expanded to show the files it includes. Windows.UI.Xaml.Interop.h is one of those files and is expanded to show Windows.UI.Xaml.Interop.h which is expanded to show the header files it includes.
 :::image-end:::
 
-We see that `winrtHeaders` includes `Windows.UI.Xaml.Interop.h`. Remember from the **Included Files** view that this was also expensive to parse. Click the chevron next to that to see that it includes `Windows.UI.Xaml.h`. Not only that, we see that this file includes 21 other header files, two of which are also on the hot list. If we improve the time it takes to process `winrtHeaders.h`, that'll address the processing time for multiple expensive headers
+We see that `winrtHeaders` includes `Windows.UI.Xaml.Interop.h`. Remember from the **Included Files** view that this was also expensive to parse. Click the chevron next to that to see that it includes `Windows.UI.Xaml.h` which includes 21 other header files, two of which are also on the hot list. If we improve the time it takes to process `winrtHeaders.h`, it'll address the processing time for multiple expensive headers.
 
 The technique we'll use to process it faster is precompiled headers.
 
 ## Improve build time with precompiled headers
 
-Because we know from the **Included Files** view that `winrtHeaders` is one of the most expensive headers to parse, and because we know from the **Include Tree** view that `winrtHeaders` also includes several other header files that are expensive3 to parse, we'll build a [Precompiled header file](../../build/creating-precompiled-header-files.md) (PCH) out of those headers to reduce the number of times these files are parsed.
+Because we know from the **Included Files** view that `winrtHeaders` is expensive header to parse, and because we know from the **Include Tree** view that `winrtHeaders` includes several other header files that are expensive to parse, we'll build a [Precompiled header file](../../build/creating-precompiled-header-files.md) (PCH) to reduce the number of times these files are parsed.
 
-In the example project, we added `pch.h` that includes these headers, and looks like this:
+In the example project, we added a `pch.h` to include these headers, which looks like this:
 
 ```cpp
 #ifndef CALC_PCH
@@ -120,7 +114,7 @@ In the example project, we added `pch.h` that includes these headers, and looks 
 #endif // CALC_PCH
 ```
 
-PCH files must be compiled before they can be used. So we add a file, arbitrarily named `pch.cpp`, that includes `pch.h`. It looks like this:
+PCH files must be compiled before they can be used. So we add a file to the project, arbitrarily named `pch.cpp`, that includes `pch.h`. It looks like this:
 
 ```cpp
 #include "pch.h"
@@ -129,22 +123,28 @@ PCH files must be compiled before they can be used. So we add a file, arbitraril
 Then we set our project to use the PCH. In the project properties, navigate to **C/C++** > **Precompiled Headers** and set **Precompiled Header** to **Use (/Yu)** and **Precompiled Header File** to **pch.h**.
 
 :::image type="complex" source="./media/precompiled-header-settings.png" alt-text="Screenshot of the project properties dialog with the Precompiled Headers settings open":::
+Precompiled Header is set to: Use (/Yu). The Precompiled Header File is set to pch.h.
+:::image-end:::
 
-To use the PCH, we add it as the first entry in all the source files. Or, for simplicity, we can do this by modifying the project properties to include `pch.h` at the beginning of every file in the solution even if we don’t explicitly add an include directive. That's done in the project properties: **C/C++** \> **Advanced** \> **Forced Include File** to `pch.h`.
+To use the PCH, we include it as the first line in the source files that use `winrtHeaders` because it must come before any other include files. Or, for simplicity, we could do this by modifying the project properties to include `pch.h` at the beginning of every file in the solution even if we don’t explicitly add an include directive. That's done in the project properties: **C/C++** \> **Advanced** \> **Forced Include File** to `pch.h`:
 
-Since the PCH includes `winrtHeaders`, we could remove `winrtHeaders` from all the files that currently include it. It's not strictly necessary, though, because the compiler will realize that `winrtHeaders` is already included and not parse it again. Some developers prefer to keep the includes around for clarity, or in case the PCH changes to no longer include that particular header file.
+:::image type="complex" source="./media/precompiled-header-settings-force-include.png" alt-text="Screenshot of the project properties dialog with the Advanced settings open":::
+Forced Include File is set to pch.h.
+:::image-end:::
+
+Since the PCH includes `winrtHeaders`, we could remove `winrtHeaders` from all the files that currently include it. It's not strictly necessary because the compiler will realize that `winrtHeaders` is already included and not parse it again. Some developers prefer to keep the includes for clarity, or in case the PCH changes to no longer include that particular header file.
 
 ## Test the changes
 
 We first clean the project to make sure we are comparing the same thing as before. We do this by right-clicking the project in the **Solution Explorer** and choosing **Project only** \> **Clean only \<prj name\>**.
 
-Because this project uses a precompiled header (PCH), we don't want to measure time spent building the PCH because that only happens once. We do this by loading the pch.cpp file and choosing **Ctrl+F7** to build just this file. We could also compile this file by right-clicking `pch.cpp` in the solution explorer and choosing `Compile`.
+Because this project uses a precompiled header (PCH), we don't want to measure the time spent building the PCH because that only happens once. We do this by loading the `pch.cpp` file and choosing **Ctrl+F7** to build just that file. We could also compile this file by right-clicking `pch.cpp` in the Solution Explorer and choosing `Compile`.
 
-Now we rerun Build Insights in the **Solution Explorer** by right-clicking the project and choosing **Project Only** >> **Run Build Insights on Build**. When the ETL files appears, we see that build time has gone from 16.404 seconds to 6.615 seconds. Put `winrtHeaders` into the filter box and nothing appears. This is because the time spent parsing it is now negligible since it is being pulled in via the precompiled header.
+Now we rerun Build Insights in the **Solution Explorer** by right-clicking the project and choosing **Project Only** > **Run Build Insights on Build**. When the ETL files appears, we see that build time has gone from 16.404 seconds to 6.615 seconds. Put `winrtHeaders` into the filter box and nothing appears. This is because the time spent parsing it is now negligible since it is being pulled in via the precompiled header.
 
 :::image type="content" source="./media/included-files-after-fix.png" alt-text="Screenshot of the Include Tree pane in the trace file. winrtHeaders is no longer listed.":::
 
-This example uses precompiled headers because they are a common solution for code prior to C++ 20. However, starting with C++20, there are other faster, less brittle ways to include header files such as header units and modules. See [Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md) for more information.
+This example uses precompiled headers because they are a common solution prior to C++ 20. However, starting with C++20, there are other faster, less brittle ways to include header files such as header units and modules. See [Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md) for more information to see if they are a better fit for your project.
 
 ## Navigate between views
 
