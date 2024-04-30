@@ -175,7 +175,7 @@ If you forget what exactly the view is showing you, hover over the tab to see a 
 ## See also
 
 [Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md)\
-[Build Insights in Visual Studio video - Pure Virtual C++ 2023](events/pure-virtual-cpp-2023/build-insights-in-visual-studio)
+[Build Insights in Visual Studio video - Pure Virtual C++ 2023](https://learn.microsoft.com/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)in
 [Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)\
 [Reference: vcperf commands](../reference/vcperf-commands.md)\
 [Reference: Windows Performance Analyzer views](../reference/wpa-views.md)\
