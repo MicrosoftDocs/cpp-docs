@@ -148,29 +148,28 @@ This example uses precompiled headers because they are a common solution prior t
 
 ## Navigate between views
 
-right click to go to other view
-double-click to go to the file
+Some navigation tips for the **Included Files** and **Include Tree** views:
+
+- Double-click a file (or press **Enter**) in either the **Included Files** or **Include Tree** view the source code for that file.
+- Right click on a header file to find that file to go to other view. For example, in the Included Files view, right-click on `winrtHeaders.h` and choose **Find in Include Tree** to see where it is included. Conversely, you can right-click a file in the **Include Tree** view to jump to where it is listed in the **Included Files** view.
+
+:::image type="content" source="./media/included-files-show-in-include-tree.png" alt-text="Screenshot of a right-click on a file in the Included Files view. The menu option Show in Include Tree View is highlighted.":::
 
 ## Tips
 
-open WPA window
-Drag columns to change order
-Save as, the ETL file for future use
-
-rt-click, switch between views
-
-double click, or **Enter** to go to a file or right-click context menu
-
-Filter box: One of the files it includes is `Utils.h`. In the filter box, you can search for a specific file to see where what all it includes. In this example, we've searched for `Utils.h` and then selected the chevron next to its name. We see that it includes `iostream` and `chrono`.  include-tree-view-utils-h-expanded.png
-
-Sometimes parse time for the same header will differ. This can be due to the interplay of different `#define`s that may affect which parts of the header are expanded, caching, and other system factors.
-
-If you forget what exactly the view is showing you, hover over the tab to see a tooltip that describes the view. For example, if you hover over the **Include Tree** tab, the tooltip says, "View that shows include statistics for every file where the children nodes are the files included by the parent node."
+- You can **Save As** the ETL file to keep a record of the build time. You can compare it to future builds to see if your changes are improving build time.
+- Click the Open in WPA button in the bottom right of the ETL window to dig deeper into the data with Windows Performance Analyzer.
+- Drag columns to change the order of the columns. For instance, you may prefer moving the Time column to be the first column.
+- double click, or **Enter** to go to a file or right-click context menu
+- **Included Files** and **Include Tree** views, use the Use the filter box to find a particular header file that you are interested in.
+- Sometimes the parse time for the same header will differ. This can be due to the interplay of different `#define`s that may affect which parts of the header are expanded, file caching, and other system factors.
+- If you forget what the **Included Files** or **Include Tree** views shows, hover over the tab to see a tooltip that describes the view. For example, if you hover over the **Include Tree** tab, the tooltip says, "View that shows include statistics for every file where the children nodes are the files included by the parent node."
+- If you closed the Build Insights window, reopen it by finding the `.etl` file in your `%temp%` folder, where `%temp%` is a Windows environment variable that contains the path to your temporary files folder.
 
 ## Troubleshooting
 
-- If the Build Insights window doesn't appear, do a rebuild instead of a build: **Build** > **Run Build Insights on Solution** > **Rebuild**. It won't appear if nothing actually builds so your build may not be 'dirty'.
-- If you closed the Build Insights window, reopen it by finding the `.etl` file in your `%temp%` folder, where `%temp%` is a Windows environment variable that contains the path to your temporary files folder.
+- If the Build Insights window doesn't appear, do a rebuild instead of a build: **Build** > **Run Build Insights on Solution** > **Rebuild**. The Build Insights window won't appear if nothing actually builds.
+- If a header file you are interested in doesn't appear in the **Included Files** or **Include Tree** views, it may be that it's build time is not significant enough to be listed.
 
 ## See also
 
