@@ -1,10 +1,10 @@
 ---
-title: "Tutorial: Build Insights functions view"
-description: "Tutorial on how to use Build Insights function view to troubleshoot build time and forceinlines function inlining costs."
-ms.date: 4/25/2024
+title: "Tutorial: Troubleshoot build time with Build Insights functions view"
+description: "Tutorial on how to use Build Insights function view to troubleshoot the impact of function inlining on build time in your C++ projects."
+ms.date: 5/1/2024
 helpviewer_keywords: ["C++ Build Insights", "inline function analysis", "build time analysis", "__forceinline analysis", "inlines analysis"]
 ---
-# Tutorial: Use Build Insights to troubleshoot build time and function inlining problems
+# Tutorial: Troubleshoot build time with Build Insights functions view
 
 Use Build Insights **Functions** view to troubleshoot the impact of function inlining on build time in your C++ projects.
 
@@ -63,10 +63,10 @@ big ole’ long description
 In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to compile each function. If a function's code generation time is too small, it won't be displayed because build events with negligible impact are discarded to avoid degrading build event collection performance.
 
 :::image type="complex" source="./media/" alt-text="alt text stuff":::
-Just show the functions tab portion of the dialog with the forceinline size column, time column
+Just show the functions tab portion of the dialog with the Forceinline size column, Time column
 :::image-end:::
 
-The **Time [sec, %]** column shows how long it took to compile each function. The **Forceinline Size** column shows the impact of each `__forceinline` function in terms of roughly how many intermediate instructions were generated for the inlined function. These numbers are summed, and the impact for all the inlined functions is listed for the containing function. You can sort the list by clicking on the **Time** column to see which functions are taking the most time to compile. A 'fire' icon indicates that cost of generating that function is particularly high and is worth investigating.
+The **Time [sec, %]** column shows how long it took to compile each function. The **Forceinline Size** column shows the impact of each `__forceinline` function in terms of roughly how many intermediate instructions were generated for the inlined function. These numbers are summed, and the impact for all the inlined functions is listed for the containing function. You can sort the list by clicking on the **Time** column to see which functions are taking the most time to compile. A 'fire' icon indicates that cost of generating that function is high and is worth investigating.
 
 The `Project` column indicates which project the function belongs to. Double click the **File** column to go to the source file where the function is defined.
 
@@ -80,14 +80,11 @@ We can see that the `foo` function is taking the most time to compile. Investiga
 
 ## Troubleshooting
 
-- If the Functions view doesn't show any functions, you may not be building with the right optimization settings. Ensure that you're building Release with full optimizations, as described in [Set build options](#set-build-options). Also, if a function's code generation time is too small, it won't appear in the list.
+- If the Functions view doesn't show any functions, you may not be building with the right optimization settings. Ensure that you're building Release with full optimizations, as described in [Set build options](#set-build-options). Also, if a function's code generation time is too small, it doesn't appear in the list.
 - If the Build Insights window doesn't appear, do a rebuild instead of a build: **Build** > **Run Build Insights on Solution** > **Rebuild**.
 - If you closed the Build Insights window, reopen it by finding the `.etl` file in your `%temp%` folder, where `%temp%` is a Windows environment variable that contains the path to your temporary files folder.
 
 ## See also
 
 [Inline functions (C++)](../../cpp/inline-functions-cpp.md)\
-[Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)\
-[Reference: vcperf commands](../reference/vcperf-commands.md)\
-[Reference: Windows Performance Analyzer views](../reference/wpa-views.md)\
-[Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
+[Tutorial: Use Build Insights to troubleshoot #include build time](build-insights-included-files-view.md)
