@@ -14,16 +14,16 @@ Use Build Insights **Included Files** and **Include Tree** views to troubleshoot
 - C++ Build Insights is enabled by default if you install either the Desktop development with C++ workload or the Game development with C++ workload.
 
 :::image type="complex" source="./media/installer-desktop-cpp-build-insights.png" alt-text="Screenshot of the Visual Studio Installer with the Desktop development with C++ workload selected.":::
-The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate that it's included in the installation.
+The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate it's included in the installation.
 :::image-end:::
 
 :::image type="complex" source="./media/installer-gamedev-cpp-build-insights.png" alt-text="Screenshot of the Visual Studio Installer with the Game development with C++ workload selected.":::
-The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate that it's included in the installation.
+The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate it's included in the installation.
 :::image-end:::
 
 ## Overview
 
-Build Insights, now integrated into Visual Studio, is designed to help you optimize your build times--especially for large projects like triple-A games. When a large header file is repeatedly parsed, there is an impact on build time. Build Insights provides analytics in the **Included Files** view, which helps diagnose the impact of repeatedly parsing `#include` files. It displays the time it takes to parse each header file and a view of the relationships between header files.
+Build Insights, now integrated into Visual Studio, is designed to help you optimize your build times--especially for large projects like triple-A games. When a large header file is repeatedly parsed, there's an impact on build time. Build Insights provides analytics in the **Included Files** view, which helps diagnose the impact of repeatedly parsing `#include` files. It displays the time it takes to parse each header file and a view of the relationships between header files.
 
 In this article, learn how to use the Build Insights **Included Files** and **Include Tree** views to identify bottlenecks in your build process and improve build time. We use a hypothetical project to demonstrate how to use Build Insights to identify the most expensive header files to parse and how to optimize build time by creating a precompiled header file.
 
@@ -63,7 +63,7 @@ In the file path column, several files with a fire icon are highlighted because 
 
 In the **File Path** column, some files have a fire icon next to them to indicate that they take up 10% or more of the build time. The time column shows the time spent parsing each file. The parse count column shows how many time the header file was parsed.
 
-The first header file highlighted in this list is `winrtHeaders.h` It takes 8.581 seconds of the overall 16.404 second build time, or 52.3% of the build time. The next most expensive is `Windows.UI.Xaml.Interop.h` and then `Windows.Xaml.h`.
+The first header file highlighted in this list is `winrtHeaders.h` It takes 8.581 seconds of the overall 16.404-second build time, or 52.3% of the build time. The next most expensive is `Windows.UI.Xaml.Interop.h` and then `Windows.Xaml.h`.
 
 To see which file includes it, click the chevron next to the header. The **Parse Count** column can be helpful by pointing out how many times a header file is included by other files. Perhaps a header file is included multiple times, which could be a sign that it's a good candidate for a precompiled header file.
 
@@ -93,7 +93,7 @@ Earlier, we saw that `winrtHeaders.h` is expensive to parse. In the **Filter Fil
 The file path column lists each file that includes other files, along with how many files it includes and the time it took to parse it. winrtHeaders.h is selected and expanded to show the files it includes. Windows.UI.Xaml.Interop.h is one of those files and is expanded to show `Windows.UI.Xaml.Interop.h` that is expanded to show the header files it includes.
 :::image-end:::
 
-We see that `winrtHeaders` includes `Windows.UI.Xaml.Interop.h`. Remember from the **Included Files** view that this was also expensive to parse. Click the chevron next to that to see that it includes `Windows.UI.Xaml.h` which includes 21 other header files, two of which are also on the hot list. The technique we use to process it faster is precompiled headers.
+We see that `winrtHeaders` includes `Windows.UI.Xaml.Interop.h`. Remember from the **Included Files** view that this was also expensive to parse. Click the chevron next to that to see that it includes `Windows.UI.Xaml.h`, which includes 21 other header files, two of which are also on the hot list. The technique we use to process it faster is precompiled headers.
 
 ## Improve build time with precompiled headers
 
@@ -122,17 +122,17 @@ Then we set our project to use the PCH. In the project properties, navigate to *
 Precompiled Header is set to: Use (/Yu). The Precompiled Header File is set to pch.h.
 :::image-end:::
 
-To use the PCH, we include it as the first line in the source files that use `winrtHeaders` because it must come before any other include files. Or, for simplicity, we could do this by modifying the project properties to include `pch.h` at the beginning of every file in the solution even if we don’t explicitly add an include directive. That's done in the project properties: **C/C++** \> **Advanced** \> **Forced Include File** to `pch.h`:
+To use the PCH, we include it as the first line in the source files that use `winrtHeaders` because it must come before any other include files. Or, for simplicity, we could modify the project properties to include `pch.h` at the beginning of every file in the solution by setting the project property: **C/C++** \> **Advanced** \> **Forced Include File** to `pch.h`:
 
 :::image type="complex" source="./media/precompiled-header-settings-force-include.png" alt-text="Screenshot of the project properties dialog with the Advanced settings open":::
 Forced Include File is set to pch.h.
 :::image-end:::
 
-Since the PCH includes `winrtHeaders`, we could remove `winrtHeaders` from all the files that currently include it. It's not strictly necessary because the compiler will realize that `winrtHeaders` is already included and not parse it again. Some developers prefer to keep the includes in the source file for clarity, or in case the PCH changes to no longer include that particular header file.
+Since the PCH includes `winrtHeaders`, we could remove `winrtHeaders` from all the files that currently include it. It's not strictly necessary because the compiler realizes that `winrtHeaders` is already included and not parse it again. Some developers prefer to keep the includes in the source file for clarity, or in case the PCH changes to no longer include that particular header file.
 
 ## Test the changes
 
-We first clean the project to make sure we are comparing the same thing as before. To clean just one project, right-click the project in the **Solution Explorer** and choose **Project only** \> **Clean only \<prj name\>**.
+We first clean the project to make sure we're comparing the same thing as before. To clean just one project, right-click the project in the **Solution Explorer** and choose **Project only** \> **Clean only \<prj name\>**.
 
 Because this project uses a precompiled header (PCH), we don't want to measure the time spent building the PCH because that only happens once. We do this by loading the `pch.cpp` file and choosing **Ctrl+F7** to build just that file. We could also compile this file by right-clicking `pch.cpp` in the Solution Explorer and choosing `Compile`.
 
@@ -147,7 +147,7 @@ This example uses precompiled headers because they're a common solution before C
 Some navigation tips for the **Included Files** and **Include Tree** views:
 
 - Double-click a file (or press **Enter**) in either the **Included Files** or **Include Tree** view the source code for that file.
-- Right click on a header file to find that file to go to other view. For example, in the Included Files view, right-click on `winrtHeaders.h` and choose **Find in Include Tree** to see where it's included. Conversely, you can right-click a file in the **Include Tree** view to jump to where it's listed in the **Included Files** view.
+- Right click on a header file to find that file to go to other view. For example, in the **Included File**s view, right-click on `winrtHeaders.h` and choose **Find in Include Tree** to see it in that view. Conversely, you can right-click a file in the **Include Tree** view to jump to it in the **Included Files** view.
 
 :::image type="content" source="./media/included-files-show-in-include-tree.png" alt-text="Screenshot of a right-click on a file in the Included Files view. The menu option Show in Include Tree View is highlighted.":::
 
