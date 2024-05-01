@@ -1,7 +1,8 @@
 ---
 description: "Learn more about: Range-based for Statement (C++)"
 title: "Range-based for Statement (C++)"
-ms.date: 04/29/2024
+ms.date: "11/04/2016"
+ms.assetid: 5750ba1d-ba48-4236-a923-e32de8345c2d
 ---
 # Range-based for Statement (C++)
 
