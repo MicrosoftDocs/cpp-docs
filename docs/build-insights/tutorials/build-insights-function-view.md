@@ -1,10 +1,10 @@
 ---
-title: "Tutorial: Troubleshoot build time with Build Insights functions view"
+title: "# Tutorial: Troubleshoot function inlining on build time"
 description: "Tutorial on how to use Build Insights function view to troubleshoot the impact of function inlining on build time in your C++ projects."
 ms.date: 5/1/2024
 helpviewer_keywords: ["C++ Build Insights", "inline function analysis", "build time analysis", "__forceinline analysis", "inlines analysis"]
 ---
-# Tutorial: Troubleshoot build time with Build Insights functions view
+# Tutorial: Troubleshoot function inlining on build time
 
 Use Build Insights **Functions** view to troubleshoot the impact of function inlining on build time in your C++ projects.
 
@@ -23,7 +23,7 @@ The list of installed components is shown. C++ Build Insights is highlighted and
 
 ## Overview
 
-Build Insights, now integrated into Visual Studio, designed to help you optimize your build times--especially for large projects like AAA games. Build Insights provides analytics such as **Functions** view, which helps diagnose slow code generation time. It displays the time it takes to generate code for each function, and shows the impact of [`__forceinline`](../../cpp/inline-functions-cpp.md#inline-__inline-and-__forceinline).
+Build Insights, now integrated into Visual Studio, helps you optimize your build times--especially for large projects like AAA games. Build Insights provides analytics such as **Functions** view, which helps diagnose slow code generation time. It displays the time it takes to generate code for each function, and shows the impact of [`__forceinline`](../../cpp/inline-functions-cpp.md#inline-__inline-and-__forceinline).
 
 The `__forceinline` directive tells the compiler to inline a function regardless of its size or complexity. Inlining a function can improve runtime performance by reducing the overhead of calling the function, but it can increase the size of the binary and impact your build times. For optimized builds, the time spent generating code is a significant contributor to the total build time. In general, C++ function optimization happens quickly. But in exceptional cases, some functions can become large and complex enough to put pressure on the optimizer and noticeably slow down your builds.
 
@@ -87,4 +87,4 @@ We can see that the `foo` function is taking the most time to compile. Investiga
 ## See also
 
 [Inline functions (C++)](../../cpp/inline-functions-cpp.md)\
-[Tutorial: Use Build Insights to troubleshoot #include build time](build-insights-included-files-view.md)
+[Troubleshoot header file impact on build time](build-insights-included-files-view.md)
