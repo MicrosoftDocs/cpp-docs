@@ -14,11 +14,11 @@ Use Build Insights **Included Files** and **Include Tree** views to troubleshoot
 - C++ Build Insights is enabled by default if you install either the Desktop development with C++ workload or the Game development with C++ workload.
 
 :::image type="complex" source="./media/installer-desktop-cpp-build-insights.png" alt-text="Screenshot of the Visual Studio Installer with the Desktop development with C++ workload selected.":::
-The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate it's included in the installation.
+The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate it's installed.
 :::image-end:::
 
 :::image type="complex" source="./media/installer-gamedev-cpp-build-insights.png" alt-text="Screenshot of the Visual Studio Installer with the Game development with C++ workload selected.":::
-The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate it's included in the installation.
+The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate it's installed.
 :::image-end:::
 
 ## Overview
@@ -128,7 +128,7 @@ To use the PCH, we include it as the first line in the source files that use `wi
 Forced Include File is set to pch.h.
 :::image-end:::
 
-Since the PCH includes `winrtHeaders`, we could remove `winrtHeaders` from all the files that currently include it. It's not strictly necessary because the compiler realizes that `winrtHeaders` is already included and not parse it again. Some developers prefer to keep the includes in the source file for clarity, or in case the PCH changes to no longer include that particular header file.
+Since the PCH includes `winrtHeaders`, we could remove `winrtHeaders` from all the files that currently include it. It's not strictly necessary because the compiler realizes that `winrtHeaders` is already included and not parse it again. Some developers prefer to keep the #includes in the source file for clarity, or in case the PCH changes to no longer include that particular header file.
 
 ## Test the changes
 
@@ -154,7 +154,7 @@ Some navigation tips for the **Included Files** and **Include Tree** views:
 ## Tips
 
 - You can **Save As** the ETL file to keep a record of the build time. You can compare it to future builds to see if your changes are improving build time.
-- Click the Open in WPA button in the bottom right of the ETL window to dig deeper into the data with Windows Performance Analyzer.
+- To dig into the data with Windows Performance Analyzer (WPA), click the **Open in WPA** button in the bottom right of the ETL window.
 - Drag columns to change the order of the columns. For instance, you may prefer moving the Time column to be the first column.
 - double click, or **Enter** to go to a file or right-click context menu
 - **Included Files** and **Include Tree** views, use the Use the filter box to find a particular header file that you're interested in.
