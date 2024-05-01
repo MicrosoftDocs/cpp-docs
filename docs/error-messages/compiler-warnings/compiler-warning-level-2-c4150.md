@@ -35,7 +35,7 @@ void NoDestruct( IncClass* pIncClass )
 }
 ```
 
-C4150 can also occur when the class is defined after the destructor call in the same translation unit. In the following example `IncClass` is declared before it is used, but not defined until after:
+C4150 can also occur when the class is defined after the destructor call in the same translation unit. In the following example `IncClass` is declared before being used, but not defined until after:
 
 ```cpp
 // C4150.cpp
