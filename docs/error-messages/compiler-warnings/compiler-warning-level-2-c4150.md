@@ -23,7 +23,7 @@ void NoDestruct( IncClass* pIncClass )
 }
 ```
 
-To fix the issue, put the definition of `IncClass` in the same translation unit or file as the `delete`. If the class is declared in a header file, it can be included in the translation unit. If the class isn't declared in a header file, the `NoDestruct` definition may need to be moved into the same file as the `IncClass` definition.
+To fix the issue, put the definition of `IncClass` in the same file as the `delete`. If the class is declared in a header file, it can be added to the file using `#include`. If the class isn't declared in a header file, the `NoDestruct` function definition may need to be moved into the same file as the `IncClass` definition.
 
 ```cpp
 // compile with: /W2
@@ -35,7 +35,7 @@ void NoDestruct( IncClass* pIncClass )
 }
 ```
 
-C4150 can also occur when the class is defined after the destructor call in the same translation unit. In the following example `IncClass` is declared before being used, but not defined until after:
+C4150 will be emitted when the class is defined after the destructor call in the same file. In the following example `IncClass` is declared before being used, but defined after the `delete`:
 
 ```cpp
 // C4150.cpp
