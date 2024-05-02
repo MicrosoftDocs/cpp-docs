@@ -54,6 +54,9 @@ Download other versions, including long term servicing release channel (LTSC) ve
 
 ## Visual Studio 2013 (VC++ 12.0)
 
+> [!NOTE]
+> Visual Studio 2013 [reached end of extended support on Apr 9, 2024](/lifecycle/products/visual-studio-2013)
+
 These links download the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2013.
 You can download other versions and languages from [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from [my.visualstudio.com](https://my.visualstudio.com/).
 
