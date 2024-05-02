@@ -25,18 +25,20 @@ The list of installed components is shown. C++ Build Insights is highlighted and
 
 Build Insights, now integrated into Visual Studio, helps you optimize your build times--especially for large projects like AAA games. Build Insights provides analytics such as **Functions** view, which helps diagnose slow code generation time. It displays the time it takes to generate code for each function, and shows the impact of [`__forceinline`](../../cpp/inline-functions-cpp.md#inline-__inline-and-__forceinline).
 
-The `__forceinline` directive tells the compiler to inline a function regardless of its size or complexity. Inlining a function can improve runtime performance by reducing the overhead of calling the function, but it can increase the size of the binary and impact your build times. For optimized builds, the time spent generating code is a significant contributor to the total build time. In general, C++ function optimization happens quickly. But in exceptional cases, some functions can become large and complex enough to put pressure on the optimizer and noticeably slow down your builds.
+The `__forceinline` directive tells the compiler to inline a function regardless of its size or complexity. Inlining a function can improve runtime performance by reducing the overhead of calling the function, but it can increase the size of the binary and impact your build times.
 
-In this article, learn how to use the Build Insights **Functions** view to identify bottlenecks in your build process and improve build time and function inlining.
+For optimized builds, the time spent generating code contributes significantly to the total build time. In general, C++ function optimization happens quickly. But in exceptional cases, some functions can become large enough and complex enough to put pressure on the optimizer and noticeably slow down your builds.
+
+In this article, learn how to use the Build Insights **Functions** view to inlining bottlenecks in your build.
 
 ## Set build options
 
-To measure the results of `__forceinline`, use a **Release** build where optimizations for `__forceinline` impact release build times the most. Set the build for **Release** and **x64**:
+To measure the results of `__forceinline`, use a **Release** build because optimizations for `__forceinline` impact release build times the most. Set the build for **Release** and **x64**:
 
 - In the **Solution Configurations** dropdown, choose **Release**.
 - In the **Solution Platforms** dropdown, choose **x64**.
 
-:::image type="content" source="./media/" alt-text="Screenshot showing the Solution Configuration dropdown set to Release, and the Solution Platform dropdown set to x64":::
+:::image type="content" source="./media/build-options-release.png" alt-text="Screenshot showing the Solution Configuration dropdown set to Release, and the Solution Platform dropdown set to x64":::
 
 Set the optimization level to maximum optimizations:
 
@@ -44,17 +46,19 @@ Set the optimization level to maximum optimizations:
 - In the project properties, navigate to **C/C++** > **Optimization**.
 - Set the **Optimization** dropdown to **Maximum Optimization (Favor Speed) (/O2)**.
 
-:::image type="content" source="./media/" alt-text="Screenshot showing the project property pages dialog. The settings are open to Configuration Properties > C/C++ > Optimization. The Optimization dropdown is set to Maximum Optimization (Favor Speed) (/O2)":::
+:::image type="content" source="./media/max-optimization-setting.png" alt-text="Screenshot showing the project property pages dialog. The settings are open to Configuration Properties > C/C++ > Optimization. The Optimization dropdown is set to Maximum Optimization (Favor Speed) (/O2)":::
 
 - Click **OK** to close the dialog.
 
-## Run build insights
+## Run Build Insights
 
-On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing **Build** > **Run Build Insights on Solution** > **Build**. You can run Build Insights on a specific project in a multi-project solution by right-clicking the project in Solution Explorer and selecting **Run Build Insights**.
+On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
 
-When the build finishes, an Event Trace Log (ETL) file opens similar to the example that follows. It's saved in the `%temp%` folder on your machine. The generated name is based on the time of collection. This file shows the time spent processing `#include` files, the build time for each function, and how much `__forceinline` impacted the size of the function.
+When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the folder pointed to by the `TEMP` environment variable. The generated name is based on the collection time.
 
-:::image type="complex" source="./media/" alt-text="alt text stuff":::
+This file shows the time spent processing `#include` files, the build time for each function, and how `__forceinline` impacted the size of each function.
+
+:::image type="complex" source="./media/build-" alt-text="alt text stuff":::
 big ole’ long description
 :::image-end:::
 
@@ -62,11 +66,14 @@ big ole’ long description
 
 In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to compile each function. If a function's code generation time is too small, it won't be displayed because build events with negligible impact are discarded to avoid degrading build event collection performance.
 
-:::image type="complex" source="./media/" alt-text="alt text stuff":::
-Just show the functions tab portion of the dialog with the Forceinline size column, Time column
+:::image type="complex" source="./media/functions-view-before-fix.png" alt-text="Screenshot of the Functions view.":::
+In the Function Name column, performPhysicsCalcuations() is highlighted and marked with a fire icon.:::
 :::image-end:::
 
-The **Time [sec, %]** column shows how long it took to compile each function. The **Forceinline Size** column shows the impact of each `__forceinline` function in terms of roughly how many intermediate instructions were generated for the inlined function. These numbers are summed, and the impact for all the inlined functions is listed for the containing function. You can sort the list by clicking on the **Time** column to see which functions are taking the most time to compile. A 'fire' icon indicates that cost of generating that function is high and is worth investigating.
+, indicating that the cost of generating that function is high and is worth investigating. The Time column shows how long it took to compile each function. The Forceinline Size column shows the impact of each `__forceinline` function in terms of roughly how many intermediate instructions were generated for the inlined function.
+
+
+The **Time [sec, %]** column shows how long it took to compile each function. The **Forceinline Size** column shows how roughly how many intermediate instructions were generated for the function. If you click the chevron before the function nameThese numbers are summed, and the impact for all the inlined functions is listed for the containing function. You can sort the list by clicking on the **Time** column to see which functions are taking the most time to compile. A 'fire' icon indicates that cost of generating that function is high and is worth investigating.
 
 The `Project` column indicates which project the function belongs to. Double click the **File** column to go to the source file where the function is defined.
 

@@ -38,13 +38,13 @@ Before gathering Build Insights data, set the build options for the type of buil
 - In the **Solution Configurations** dropdown, choose **Debug**.
 - In the **Solution Platforms** dropdown, choose **x64**.
 
-    :::image type="complex" source="./media/build-options.png" alt-text="Screenshot showing the Solution Configuration dropdowns.":::
+    :::image type="complex" source="./media/build-options-debug.png" alt-text="Screenshot showing the Solution Configuration dropdowns.":::
     The Solution Configuration dropdown is shown. It has options for Debug, Release, and Configuration manager. The Solution Platform dropdown is set to x64
     :::image-end:::
 
 ## Run Build Insights
 
-This articles uses a hypothetical solution consisting of several projects for a calculator project. One of the projects takes suspiciously long to build. We use Build Insights to investigate by selecting the slow building project in the **Solution Explorer** and then run Build Insights from the Visual Studio main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
+On a project of your choosing, and using the **Debug** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
 
 :::image type="content" source="./media/build-insights-rebuild-project.png" alt-text="Screenshot of the main menu with Run Build Insights on Selection > Rebuild selected.":::
 
@@ -57,7 +57,7 @@ The trace file shows the build time--which for this example was 16.404 seconds. 
 This view shows the time spent processing `#include` files.
 
 :::image type="complex" source="./media/included-files-before-fix.png" alt-text="Screenshot of the included files view":::
-In the file path column, several files with a fire icon are highlighted because they take over 10% of the build time to parse. winrtHeaders.h is the biggest one at 8.581 seconds or 52.3% of the 16.404 second build time."
+In the file path column, several files with a fire icon are highlighted because they take over 10% of the build time to parse. winrtHeaders.h is the biggest one at 8.581 seconds or 52.3% of the 16.404 second build time.
 :::image-end:::
 
 In the **File Path** column, some files have a fire icon next to them to indicate that they take up 10% or more of the build time. The **Time [sec, %]** column shows the time spent parsing the header file and what percentage of the overall time it took. The **Parse Count** column shows how many time the header file was parsed.
