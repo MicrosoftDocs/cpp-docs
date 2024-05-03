@@ -76,7 +76,7 @@ You can search for a specific function by using the **Filter Functions** box. If
 
 In this example, the `performPhysicsCalculations` function is taking the most time to compile.
 
-:::image type="complex" source="./media/functions-view-performPhysicsCalculationsUnexpanded.png" alt-text="Screenshot of the Build Insights Functions view.":::
+:::image type="complex" source="./media/functions-view-before-fix.png" alt-text="Screenshot of the Build Insights Functions view.":::
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
 :::image-end:::
 
