@@ -23,13 +23,13 @@ The list of installed components is shown. C++ Build Insights is highlighted and
 
 ## Overview
 
-Build Insights, now integrated into Visual Studio, helps you optimize your build times--especially for large projects like AAA games. Build Insights provides analytics such as **Functions** view, which helps diagnose slow code generation time. It displays the time it takes to generate code for each function, and shows the impact of [`__forceinline`](../../cpp/inline-functions-cpp.md#inline-__inline-and-__forceinline).
+Build Insights, now integrated into Visual Studio, helps you optimize your build times--especially for large projects like AAA games. Build Insights provides analytics such as **Functions** view, which helps diagnose expensive code generation during build time. It displays the time it takes to generate code for each function, and shows the impact of [`__forceinline`](../../cpp/inline-functions-cpp.md#inline-__inline-and-__forceinline).
 
-The `__forceinline` directive tells the compiler to inline a function regardless of its size or complexity. Inlining a function can improve runtime performance by reducing the overhead of calling the function, but the tradeoff is that it can increase the size of the binary and impact your build times.
+The `__forceinline` directive tells the compiler to inline a function regardless of its size or complexity. Inlining a function can improve runtime performance by reducing the overhead of calling the function. The tradeoff is that it can increase the size of the binary and impact your build times.
 
 For optimized builds, the time spent generating code contributes significantly to the total build time. In general, C++ function optimization happens quickly. In exceptional cases, some functions can become large enough and complex enough to put pressure on the optimizer and noticeably slow down your builds.
 
-In this article, learn how to use the Build Insights **Functions** view to inlining bottlenecks in your build.
+In this article, learn how to use the Build Insights **Functions** view to find inlining bottlenecks in your build.
 
 ## Set build options
 
@@ -52,11 +52,11 @@ Set the optimization level to maximum optimizations:
 
 ## Run Build Insights
 
-On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
+On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
 
 :::image type="content" source="./media/build-insights-rebuild-project.png" alt-text="Screenshot of the main menu with Run Build Insights on Selection > Rebuild selected.":::
 
-When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the folder pointed to by the `TEMP` environment variable. The generated name is based on the collection time.
+When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the folder pointed to by the Windows `TEMP` environment variable. The generated name is based on the collection time.
 
 ## Function view
 
@@ -70,19 +70,23 @@ The **Time [sec, %]** column shows how long it took to compile each function. Th
 
 You can sort the list by clicking on the **Time** column to see which functions are taking the most time to compile. A 'fire' icon indicates that cost of generating that function is high and is worth investigating. Excessive use of `__forceinline` functions can significantly slow compilation.
 
-You can search for a specific function by using the **Filter Functions** box. If a function's code generation time is too small, it doesn't appear in the Functions View.
+You can search for a specific function by using the **Filter Functions** box. If a function's code generation time is too small, it doesn't appear in the **Functions** View.
 
 ## Improve build time by adjusting function inlining
 
 In this example, the `performPhysicsCalculations` function is taking the most time to compile.
 
 :::image type="complex" source="./media/functions-view-before-fix.png" alt-text="Screenshot of the Build Insights Functions view.":::
-In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
+In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.
 :::image-end:::
 
- Investigating further, by selecting the chevron before that function, and then sorting the **Forceinline Size** column from highest to lowest, we see the biggest contributors to the problem.
+Investigating further, by selecting the chevron before that function, and then sorting the **Forceinline Size** column from highest to lowest, we see the biggest contributors to the problem.
 
-There are some larger inlined functions, such as `Vector2D<float>::complexOperation()` and `Vector2D<float>::recursiveHelper()` that are contributing to the problem. But there are many instances (not all shown here) of `Vector2d<float>::sin(float)`, `Vector2d<float>::cos(float)`, `Vector2D<float>::power(float,int)`, and `Vector2D<float>::factorial(int)`. When you add those up, they quickly dwarf the few larger generated functions.
+:::image type="complex" source="./media/functions-view-expanded.png" alt-text="Screenshot of the Build Insights Functions view with an expanded function.":::
+performPhysicsCalculations() is expanded and shows a long list of functions that were inlined inside it. There are mutliple instances of functions such as complexOperation(), recursiveHelper(), and sin() shown. The Forceinline Size column shows that complexOperation() is the largest inlined function at 315 instructions. recursiveHelper() has 119 instructions. Sin() has 75 instructions but there are many instances of than the other functions.
+:::image-end:::
+
+There are some larger inlined functions, such as `Vector2D<float>::complexOperation()` and `Vector2D<float>::recursiveHelper()` that are contributing to the problem. But there are many more instances (not all shown here) of `Vector2d<float>::sin(float)`, `Vector2d<float>::cos(float)`, `Vector2D<float>::power(float,int)`, and `Vector2D<float>::factorial(int)`. When you add those up, the total number of generated instructions quickly exceeds the few larger generated functions.
 
 Looking at those functions in the source code, we see that execution time is going to be spent inside loops. For example, here's the code for `factorial()`:
 
@@ -99,28 +103,30 @@ static __forceinline T factorial(int n)
 }
 ```
 
-Perhaps the cost of calling this function is insignicant compared to the cost of the function itself. We can try removing the `__forceinline` directive from it to see if it helps. The code for `power`, `sin()` and `cos()` is similar in that the code is inside a loop that will execute many times. We can try removing the `__forceinline` directive from those functions as well.
+Perhaps the cost of calling this function is insignificant compared to the cost of the function itself. We can try removing the `__forceinline` directive from it to see if it helps the build time. The code for `power`, `sin()` and `cos()` is similar in that the code consists of a loop that will execute many times. We can try removing the `__forceinline` directive from those functions as well.
 
-We rerun Build Insights from the main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
+We rerun Build Insights from the main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project, as before, and not for just the few files may be dirty right now.
 
-The build time goes from 25.181 seconds to 13.376 seconds and the `performPhysicsCalculations` function doesn't show up in the **Functions** view because it doesn't contribute enough to the build time to be counted.
+The build time goes from 25.181 seconds to 13.376 seconds and the `performPhysicsCalculations` function doesn't show up anymore in the **Functions** view because it doesn't contribute enough to the build time to be counted.
 
 :::image type="complex" source="./media/functions-view-after-fix.png" alt-text="Screenshot of the 2D vector header file.":::
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
 :::image-end:::
 
-The next step would be to profile the application to see if the performance of the application has been impacted by the change. If it has, we can selectively add `__forceinline` back to the functions we see after profiling could benefit from it.
+The Diagnostics Session time is the overall time it took do the build plus any overhead for gathering the Build Insights data.
+
+The next step would be to profile the application to see if the performance of the application is negatively impacted by the change. If it has, we can selectively add `__forceinline` back as needed.
 
 ## Navigate to the source code
 
-- Double-click, right-click, or press **Enter** while on a file in the **Functions** view to open the source code for that file. 
+Double-click, right-click, or press **Enter** while on a file in the **Functions** view to open the source code for that file.
 
 :::image type="content" source="./media/functions-view-goto-file.png" alt-text="Screenshot of a right-click on a file in the Functions view. The menu option Go To Source File is highlighted.":::
 
 ## Tips
 
 - You can **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
-- If you inadvertently close the Build Insights window, reopen it by finding the `.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
+- If you inadvertently close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
 - To dig into the Build Insights data with Windows Performance Analyzer (WPA), click the **Open in WPA** button in the bottom right of the ETL window.
 - Drag columns to change the order of the columns. For instance, you may prefer moving the Time column to be the first column. You can also hide some columns by right-clicking on the column header and deselecting the columns you don't want to see.
 - The **Functions** view provides a filter box to find a function that you're interested in. It does partial matches on the name you provide.
@@ -134,4 +140,6 @@ The next step would be to profile the application to see if the performance of t
 ## See also
 
 [Inline functions (C++)](../../cpp/inline-functions-cpp.md)\
-[Troubleshoot header file impact on build time](build-insights-included-files-view.md)
+[Build Insights in Visual Studio video - Pure Virtual C++ 2023](/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
+[Troubleshoot header file impact on build time](build-insights-included-files-view.md)\
+[Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)

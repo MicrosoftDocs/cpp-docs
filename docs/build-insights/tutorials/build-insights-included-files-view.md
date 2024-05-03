@@ -44,11 +44,11 @@ Before gathering Build Insights data, set the build options for the type of buil
 
 ## Run Build Insights
 
-On a project of your choosing, and using the **Debug** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
+On a project of your choosing, and using the **Debug** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
 
 :::image type="content" source="./media/build-insights-rebuild-project.png" alt-text="Screenshot of the main menu with Run Build Insights on Selection > Rebuild selected.":::
 
-When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the folder pointed to by the `TEMP` environment variable. The generated name is based on the collection time.
+When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the folder pointed to by the Windows `TEMP` environment variable. The generated name is based on the collection time.
 
 ## Included Files view
 
@@ -161,7 +161,7 @@ Conversely, you can right-click a file in the **Include Tree** view to jump to i
 ## Tips
 
 - You can **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
-- If you inadvertently close the Build Insights window, reopen it by finding the `.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
+- If you inadvertently close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
 - To dig into the Build Insights data with Windows Performance Analyzer (WPA), click the **Open in WPA** button in the bottom right of the ETL window.
 - Drag columns to change the order of the columns. For instance, you may prefer moving the Time column to be the first column. You can also hide some columns by right-clicking on the column header and deselecting the columns you don't want to see.
 - **Included Files** and **Include Tree** views provide a filter box to find a header file that you're interested in. It does partial matches on the name you provide.
