@@ -161,17 +161,17 @@ Conversely, you can right-click a file in the **Include Tree** view to jump to i
 ## Tips
 
 - You can **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
+- If you inadvertently close the Build Insights window, reopen it by finding the `.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
 - To dig into the Build Insights data with Windows Performance Analyzer (WPA), click the **Open in WPA** button in the bottom right of the ETL window.
 - Drag columns to change the order of the columns. For instance, you may prefer moving the Time column to be the first column. You can also hide some columns by right-clicking on the column header and deselecting the columns you don't want to see.
 - **Included Files** and **Include Tree** views provide a filter box to find a header file that you're interested in. It does partial matches on the name you provide.
 - Sometimes the parse time reported for a header file differs depending on which file includes it. This can be due to the interplay of different `#define`s that affect which parts of the header are expanded, file caching, and other system factors.
-- If you closed the Build Insights window, reopen it by finding the `.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
-- If you forget what the **Included Files** or **Include Tree** view is trying to show you, hover over the tab to see a tooltip that describes the view. For example, if you hover over the **Include Tree** tab, the tooltip says, "View that shows include statistics for every file where the children nodes are the files included by the parent node."
+- If you forget what the **Included Files** or **Include Tree** view is trying to show you, hover over the tab to see a tooltip that describes the view. For example, if you hover over the **Include Tree** tab, the tooltip says: "View that shows include statistics for every file where the children nodes are the files included by the parent node."
 - You may see cases (like `Windows.h`) where the aggregated duration of all the times for a header file is longer than the duration of the entire build. What’s happening is that headers are parsed on many threads at the same time, adding seconds to the aggregated duration beyond what’s physically possible.
 
 ## Troubleshooting
 
-- If the Build Insights window doesn't appear, do a rebuild instead of a build. The Build Insights window doesn't appear if nothing actually builds which may be the case if no files have changed since the last build.
+- If the Build Insights window doesn't appear, do a rebuild instead of a build. The Build Insights window doesn't appear if nothing actually builds; which may be the case if no files have changed since the last build.
 - If a header file you're interested in doesn't appear in the **Included Files** or **Include Tree** views, it either didn't build or its build time isn't significant enough to be listed.
 
 ## See also
