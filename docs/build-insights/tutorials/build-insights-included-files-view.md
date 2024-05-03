@@ -50,7 +50,7 @@ On a project of your choosing, and using the **Debug** build options set in the 
 
 When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the folder pointed to by the `TEMP` environment variable. The generated name is based on the collection time.
 
-## Included Files View
+## Included Files view
 
 The trace file shows the build time--which for this example was 16.404 seconds. The **Diagnostics Session** is the overall time taken to run the Build Insights session. Choose the **Included Files** tab.
 

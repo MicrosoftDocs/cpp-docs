@@ -54,17 +54,13 @@ Set the optimization level to maximum optimizations:
 
 On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
 
+:::image type="content" source="./media/build-insights-rebuild-project.png" alt-text="Screenshot of the main menu with Run Build Insights on Selection > Rebuild selected.":::
+
 When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the folder pointed to by the `TEMP` environment variable. The generated name is based on the collection time.
-
-This file shows the time spent processing `#include` files, the build time for each function, and how `__forceinline` impacted the size of each function.
-
-:::image type="complex" source="./media/build-" alt-text="alt text stuff":::
-big ole’ long description
-:::image-end:::
 
 ## Function view
 
-In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to compile each function. If a function's code generation time is too small, it won't be displayed because build events with negligible impact are discarded to avoid degrading build event collection performance.
+In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to compile each function. If a function's code generation time is too small, it won't appear in the list because build events with negligible impact are discarded to avoid degrading build event collection performance.
 
 :::image type="complex" source="./media/functions-view-before-fix.png" alt-text="Screenshot of the Build Insights Functions view file.":::
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
@@ -107,7 +103,7 @@ Perhaps the cost of calling this function is insignicant compared to the cost of
 
 We rerun Build Insights from the main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
 
-The build time goes from 25.181 seconds to 13.376 seconds and the `performPhysicsCalculations` function doesn't even show up any longer in the **Functions** view because it doesn't contribute enough to the build time to be counted.
+The build time goes from 25.181 seconds to 13.376 seconds and the `performPhysicsCalculations` function doesn't show up in the **Functions** view because it doesn't contribute enough to the build time to be counted.
 
 :::image type="complex" source="./media/functions-view-after-fix.png" alt-text="Screenshot of the 2D vector header file.":::
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
