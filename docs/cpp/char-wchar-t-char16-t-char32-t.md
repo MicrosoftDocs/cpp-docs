@@ -5,7 +5,7 @@ ms.date: 04/23/2021
 ---
 # char, wchar_t, char8_t, char16_t, char32_t
 
-The types **`char`**, **`wchar_t`**, **`char8_t`**, **`char16_t`**, and **`char32_t`** are built-in types that represent alphanumeric characters, non-alphanumeric glyphs, and non-printing characters.
+The types **`char`**, **`wchar_t`**, **`char8_t`**, **`char16_t`**, and **`char32_t`** are built-in types that represent alphanumeric characters, nonalphanumeric glyphs, and nonprinting characters.
 
 ## Syntax
 
