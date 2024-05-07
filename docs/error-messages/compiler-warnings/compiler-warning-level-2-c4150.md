@@ -11,6 +11,8 @@ helpviewer_keywords: ["C4150"]
 
 The `delete` operator is called to delete a type that was declared but not defined. The compiler can't find the destructor to call because the definition isn't in the same translation unit as the `delete`.
 
+## Example
+
 The following sample generates C4150 by declaring but not defining `class IncClass`:
 
 ```cpp
@@ -75,3 +77,8 @@ void NoDestruct( IncClass* pIncClass )
 }
 
 ```
+
+## See Also
+
+* [Projects and build systems](../../build/projects-and-build-systems-cpp.md)
+* [Source files and source programs](../../c-language/source-files-and-source-programs.md)
