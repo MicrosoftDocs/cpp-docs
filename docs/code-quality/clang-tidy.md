@@ -3,7 +3,7 @@ title: Using Clang-Tidy in Visual Studio
 description: "How to use Clang-Tidy in Visual Studio for Microsoft C++ code analysis."
 ms.date: 03/1/2022
 ms.topic: "conceptual"
-f1_keywords: ["vs.codeanalysis.clangtidy"]
+f1_keywords: ["vs.codeanalysis.clangtidy","vs.codeanalysis.propertypages.ClangTidyToolPath"]
 ---
 # Using Clang-Tidy in Visual Studio
 
@@ -89,6 +89,10 @@ Clang-Tidy runs result in warnings displayed in the Error List, and as in-editor
 ## Clang-Tidy configuration
 
 By default, Clang-Tidy does not set any checks when enabled. To see the list of checks in the command-line version, run `clang-tidy -list-checks` in a developer command prompt. You can configure the checks that Clang-Tidy runs inside Visual Studio. In the project Property Pages dialog, open the **Configuration Properties** > **Code Analysis** > **Clang-Tidy** page. Enter checks to run in the **Clang-Tidy Checks** property. A good default set is `clang-analyzer-*`. This property value is provided to the **`--checks`** argument of the tool. Any further configuration can be included in custom *`.clang-tidy`* files. For more information, see the [Clang-Tidy documentation on LLVM.org](https://clang.llvm.org/extra/clang-tidy/).
+
+## Clang-Tidy Tool Directory
+
+If you'd like to have custom rules built into your clang-tidy executable and run it in VS, you can change the path to the executable that Visual Studio runs. In the project Property Pages dialog, open the **Configuration Properties** > **Code Analysis** > **Clang-Tidy** page. Manually type in the path or Browse and select the path under the **Clang-Tidy Tool Directory** property. Once the change is saved, the new executable will be used after the next succesful compilation.
 
 ## See also
 
