@@ -49,3 +49,4 @@ Custom build steps and custom build tools share the information specified in the
 [How to: Add a custom build step to MSBuild projects](how-to-add-a-custom-build-step-to-msbuild-projects.md)\
 [Common macros for MSBuild commands and properties](reference/common-macros-for-build-commands-and-properties.md)\
 [MSBuild well-known item metadata](/visualstudio/msbuild/msbuild-well-known-item-metadata)
+
