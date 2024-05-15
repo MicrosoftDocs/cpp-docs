@@ -42,6 +42,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/EHc`](eh-exception-handling-model.md) | `extern "C"` defaults to `nothrow`. |
 | [`/EHr`](eh-exception-handling-model.md) | Always generate `noexcept` runtime termination checks. |
 | [`/EHs`](eh-exception-handling-model.md) | Enable C++ exception handling (no SEH exceptions). |
+| [`/feature`](feature-arm64.md) | Enable architecture features. |
 | [`/fp:contract`](fp-specify-floating-point-behavior.md) | Consider floating-point contractions when generating code. |
 | [`/fp:except[-]`](fp-specify-floating-point-behavior.md) | Consider floating-point exceptions when generating code. |
 | [`/fp:fast`](fp-specify-floating-point-behavior.md) | "fast" floating-point model; results are less predictable. |

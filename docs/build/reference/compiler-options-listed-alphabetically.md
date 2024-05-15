@@ -65,6 +65,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Displays the full path of source code files passed to *cl.exe* in diagnostic text. |
 | [`/Fd`](fd-program-database-file-name.md) | Renames program database file. |
 | [`/Fe`](fe-name-exe-file.md) | Renames the executable file. |
+| [`/feature`](feature-arm64.md) | Enable architecture features. |
 | [`/FI<file>`](fi-name-forced-include-file.md) | Preprocesses the specified include file. |
 | [`/Fi`](fi-preprocess-output-file-name.md) | Specifies the preprocessed output file name. |
 | [`/Fm`](fm-name-mapfile.md) | Creates a mapfile. |
