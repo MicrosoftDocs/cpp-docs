@@ -24,7 +24,8 @@ Specifies the Armv9-A architecture, where **`x`** is a required extension value 
 
 You may specify an ARM64 extension from Armv8.0-A through Armv8.9-A and Armv9.0-A through Armv9.4-A. Optionally, one or more architecture features can be enabled by appending a feature argument to the option. For example, in order to target Armv8.0-A and enable feature FEAT_LSE, append feature argument **`lse`** so that the option becomes **`/arch:armv8.0+lse`**. For more information about available features and their requirements, see [`/feature` (ARM64)](feature-arm64.md).
 
->[!NOTE] Depending on your version of Visual Studio, the compiler may not yet generate instructions from all feature sets required by the extension level you specify. For example, **`/arch:armv8.1`** allows the `_Interlocked*` intrinsic functions to use the appropriate atomic instruction that was introduced with the Armv8.1-A extension feature FEAT_LSE, but compiler support requires Visual Studio 2022 version 17.2 or later.
+> [!NOTE]
+> Depending on your version of Visual Studio, the compiler may not yet generate instructions from all feature sets required by the extension level you specify. For example, **`/arch:armv8.1`** allows the `_Interlocked*` intrinsic functions to use the appropriate atomic instruction that was introduced with the Armv8.1-A extension feature FEAT_LSE, but compiler support requires Visual Studio 2022 version 17.2 or later.
 
 The `_M_ARM64` macro is defined by default when compiling for an ARM64 target. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md).
 
