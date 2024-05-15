@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /arch (ARM64)"
 title: "/arch (ARM64)"
-ms.date: 05/16/2024
+ms.date: 05/15/2024
 ---
 # `/arch` (ARM64)
 
