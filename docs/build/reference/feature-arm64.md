@@ -25,7 +25,7 @@ Example usage: to enable FEAT_LSE, use feature argument **`lse`** so that the op
 
 If there are conflicting feature arguments specified by **`/feature`**, the right-most feature is enabled. Enabling a feature that is not supported by a targeted architecture may cause unexpected behavior, especially if a CPU does not implement the feature.
 
-If you use **`/feature`** in combination of **`/arch`** (ARM64), it will result in the same behavior as appending feature arguments to **`/arch`** (ARM64). For example, if you are using both **`/feature:lse`** and **`/arch:armv8.0`**, it is the same as if you're only using **`/arch:armv8.0+lse`**. **`/feature`** exists as another way to specify features without having to specify them in **`/arch`** (ARM64).
+You can use either **`/feature`** or only **`/arch`** (ARM64) to specify features. For example, if you want to enable FEAT_LSE when targeting Armv8.0-A, you can either use both **`/feature:lse`** and **`/arch:armv8.0`** or only use **`/arch:armv8.0+lse`**. **`/feature`** exists as another way to specify features without having to specify them in **`/arch`** (ARM64).
 
 ### To set the `/feature` compiler option in Visual Studio
 
