@@ -28,7 +28,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 | Option | Purpose |
 |--|--|
-| [`/arch:<IA32|SSE|SSE2|AVX|AVX2|AVX512>`](arch-x86.md) | Minimum CPU architecture requirements. IA32, SSE, and SSE2 are x86 only. |
+| [`/arch`](arch-minimum-cpu-architecture.md) | Minimum CPU architecture requirements. |
 | [`/clr`](clr-common-language-runtime-compilation.md) | Produces an output file to run on the common language runtime. |
 | [`/clr:implicitKeepAlive-`](clr-common-language-runtime-compilation.md) | Turn off implicit emission of `System::GC::KeepAlive(this)`. |
 | [`/clr:initialAppDomain`](clr-common-language-runtime-compilation.md) | Enable initial AppDomain behavior of Visual C++ 2002. |

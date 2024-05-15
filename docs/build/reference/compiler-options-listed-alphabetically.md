@@ -16,7 +16,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/?`](help-compiler-command-line-help.md) | Lists the compiler options. |
 | [`/AI<dir>`](ai-specify-metadata-directories.md) | Specifies a directory to search to resolve file references passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
 | [`/analyze`](analyze-code-analysis.md) | Enables code analysis. |
-| [`/arch:<IA32|SSE|SSE2|AVX|AVX2|AVX512>`](arch-x86.md) | Minimum CPU architecture requirements. IA32, SSE, and SSE2 are x86 only. |
+| [`/arch`](arch-minimum-cpu-architecture.md) | Minimum CPU architecture requirements. |
 | `/arm64EC` | Generate code compatible with the arm64EC ABI. |
 | [`/await`](await-enable-coroutine-support.md) | Enable coroutines (resumable functions) extensions. |
 | [`/await:strict`](await-enable-coroutine-support.md) | Enable standard C++20 coroutine support with earlier language versions. |
