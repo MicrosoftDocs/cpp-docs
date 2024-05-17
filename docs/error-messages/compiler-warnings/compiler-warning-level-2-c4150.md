@@ -78,7 +78,7 @@ void NoDestruct( IncClass* pIncClass )
 
 ```
 
-## See Also
+## See also
 
 * [Projects and build systems](../../build/projects-and-build-systems-cpp.md)
 * [Source files and source programs](../../c-language/source-files-and-source-programs.md)
