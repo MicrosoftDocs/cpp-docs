@@ -11,7 +11,7 @@ File I/O operations take place in one of two translation modes, *text* or *binar
 
 - Retain the current default setting and specify the alternative mode only when you open selected files.
 
-- Use the function [`_set_fmode`](./reference/set-fmode.md) to change the default mode for newly opened files. Use [`_get_fmode`](./reference/get-fmode.md) to find the current default mode. The initial default setting is text mode (`_O_TEXT`).
+- Use the function [`_set_fmode`](./reference/set-fmode.md) to change the default mode for newly opened files. Use [`_get_fmode`](./reference/get-fmode.md) to find the current default mode. The initial default setting is ANSI text mode (`_O_TEXT`).
 
 - Change the default translation mode directly by setting the global variable [`_fmode`](./fmode.md) in your program. The function `_set_fmode` sets the value of this variable, but it can also be set directly.
 

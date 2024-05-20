@@ -88,7 +88,7 @@ The integer expression *`oflag`* is formed by combining one or more of the follo
 | `_O_RDONLY` | Opens a file for reading only. Can't be specified with `_O_RDWR` or `_O_WRONLY`. |
 | `_O_RDWR` | Opens a file for both reading and writing. Can't be specified with `_O_RDONLY` or `_O_WRONLY`. |
 | `_O_SEQUENTIAL` | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
-| `_O_TEXT` | Opens a file in text (translated) mode. (For more information, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [`fopen`](fopen-wfopen.md).) |
+| `_O_TEXT` | Opens a file in ANSI text (translated) mode. (For more information, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [`fopen`](fopen-wfopen.md).) |
 | `_O_TRUNC` | Opens a file and truncates it to zero length; the file must have write permission. Can't be specified with `_O_RDONLY`. `_O_TRUNC` used with `_O_CREAT` opens an existing file or creates a file. **Note:** The `_O_TRUNC` flag destroys the contents of the specified file. |
 | `_O_WRONLY` | Opens a file for writing only. Can't be specified with `_O_RDONLY` or `_O_RDWR`. |
 | `_O_U16TEXT` | Opens a file in Unicode UTF-16 mode. |
