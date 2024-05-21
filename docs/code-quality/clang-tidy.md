@@ -92,7 +92,7 @@ By default, Clang-Tidy does not set any checks when enabled. To see the list of 
 
 ## Clang-Tidy Tool Directory
 
-If you'd like to have custom rules built into your clang-tidy executable and run it in Microsoft Visual Studio, you can change the path to the executable that Visual Studio runs. In the project Property Pages dialog, open the **Configuration Properties** > **Code Analysis** > **Clang-Tidy** page. Manually type in the path or **Browse** and select the path under the **Clang-Tidy Tool Directory** property. Once the change is saved, the new executable will be used after the next succesful compilation.
+If you'd like to have custom rules built into your clang-tidy executable and run it in Microsoft Visual Studio, you can change the path to the executable that Visual Studio runs. In the project Property Pages dialog, open the **Configuration Properties** > **Code Analysis** > **Clang-Tidy** page. Manually type in the path or **Browse** and select the path under the **Clang-Tidy Tool Directory** property. Once the change is saved, the new executable is used once the change is saved and the app is recompiled.
 
 ## See also
 
