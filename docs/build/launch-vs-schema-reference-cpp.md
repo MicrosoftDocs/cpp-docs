@@ -18,7 +18,7 @@ To create the file, right-click on an executable file in **Solution Explorer** a
 | `buildConfigurations` | array | A key-value pair that specifies the name of the build mode to apply the configurations. For example, `Debug` or `Release` and the configurations to use according to the selected build mode. |
 | `currentDir` | string | Specifies the full directory path to the Build Target. The directory is detected automatically unless this parameter is set. |
 | `cwd` | string | Full path to the directory on the remote system where the program will run. Defaults to `"${debugInfo.defaultWorkingDirectory}"` |
-| `debugType` | string | Specifies the debugging mode according to the type of code (native, managed, or mixed). The mode is automatically detected unless this parameter is set. Allowed values: `"native"`", `"managed"`, `"mixed"`. |
+| `debugType` | string | Specifies the debugging mode according to the type of code (native, managed, or mixed). The mode is automatically detected unless this parameter is set. Allowed values: `"native"`, `"managed"`, `"mixed"`. |
 | `env` | array | Specifies a key-value list of custom environment variables. For example: `env:{"myEnv":"myVal"}`. |
 | `inheritEnvironments` | array | Specifies a set of environment variables inherited from multiple sources. You can define some variables in files like *`CMakeSettings.json`* or *`CppProperties.json`* and make them available to debug context.  **Visual Studio 16.4:** Specify environment variables on a per-target basis using the `env.VARIABLE_NAME` syntax. To unset a variable, set it to `"null"`. |
 | `name` | string | Specifies the name of the entry in the **Startup Item** dropdown. |
