@@ -45,7 +45,7 @@ When you use [`/clr`](clr-common-language-runtime-compilation.md) to compile, **
 
 <sup>1</sup> Armv8-A architecture extension `armv8.9` is available starting in Visual Studio 2022 version 17.10.\
 <sup>2</sup> Armv9-A architecture extensions are available starting in Visual Studio 2022 version 17.10.\
-<sup>3</sup> ARM architecture feature enablement is available starting in Visual Studio 2022 version 17.10.
+<sup>3</sup> Architecture feature enablement is available starting in Visual Studio 2022 version 17.10.
 
 ## See also
 
