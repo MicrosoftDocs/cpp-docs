@@ -13,7 +13,7 @@ Immediately terminates the calling process with minimum overhead.
 ## Syntax
 
 ```C
-void __fastfail(unsigned int code);
+__declspec(noreturn) void __fastfail(unsigned int code);
 ```
 
 ### Parameters
