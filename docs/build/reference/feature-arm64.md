@@ -12,7 +12,7 @@ Enable one or more Arm A-Profile architecture features for an ARM64 extension as
 > **`/feature:<arg1>`**[**`+arg2`**]
 
 ## Arguments
-To enable one or more features a targeted ARM64 extension supports, specify one or more of the following feature arguments.
+To enable one or more features the targeted ARM64 extension supports, specify one or more of the following feature arguments.
 
 | Feature argument | Feature identifier | Optional from | Enabled by default | Description |
 |--|--|--|--|--|
