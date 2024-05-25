@@ -12,7 +12,7 @@ Enable one or more Arm A-Profile architecture features for an ARM64 extension as
 > **`/feature:<arg1>`**[**`+arg2`**]
 
 ## Arguments
-Specify one or more of the following ARM64 extension features to enable if the targeted ARM64 extension supports it.
+To enable one or more features a targeted ARM64 extension supports, specify one or more of the following feature arguments.
 
 | Feature argument | Feature identifier | Optional from | Enabled by default | Description |
 |--|--|--|--|--|
@@ -23,7 +23,7 @@ Specify one or more of the following ARM64 extension features to enable if the t
 
 Example usage: to enable `FEAT_LSE`, specify **`/feature:lse`**.
 
-If there are conflicting feature arguments specified by **`/feature`**, the right-most feature is enabled. Enabling a feature that is not supported by a targeted architecture may cause unexpected behavior, especially if a CPU does not implement the feature.
+If there are conflicting feature arguments specified by **`/feature`**, the right-most feature is enabled. Enabling a feature a targeted ARM64 extension doesn't support may cause unexpected behavior, especially if a CPU doesn't implement the feature.
 
 Use either **`/feature`** or only **`/arch`** (ARM64) to specify features. For example, to enable `FEAT_LSE` when targeting Armv8.0-A, use either both **`/feature:lse`** and **`/arch:armv8.0`**, or specify **`/arch:armv8.0+lse`**. **`/feature`** exists as another way to specify features without specifying them in **`/arch`** (ARM64).
 
