@@ -5,7 +5,7 @@ ms.date: 05/24/2024
 ---
 # `/arch` (ARM64)
 
-Specifies the Arm A-Profile architecture extension for code generation on ARM64. For more information on **`/arch`** for other target architectures, see [`/arch` (x86)](arch-x86.md), [`/arch` (x64)](arch-x64.md), and [`/arch` (ARM)](arch-arm.md).
+Specifies the Arm A-Profile architecture extension for code generation on ARM64. For more information about **`/arch`** for other target architectures, see [`/arch` (x86)](arch-x86.md), [`/arch` (x64)](arch-x64.md), and [`/arch` (ARM)](arch-arm.md).
 
 ## Syntax
 
@@ -22,14 +22,14 @@ Specifies the Armv9-A architecture, where **`x`** is a required extension value 
 
 ## Remarks
 
-You may specify an ARM64 extension from Armv8.0-A through Armv8.9-A, and Armv9.0-A through Armv9.4-A. Optionally, enable one or more architecture features by appending a feature argument to the option<sup>3</sup>. For example, in order to target Armv8.0-A and enable feature `FEAT_LSE`, append feature argument **`lse`** so that the option becomes **`/arch:armv8.0+lse`**. For more information about available features and their requirements, see [`/feature` (ARM64)](feature-arm64.md)<sup>3</sup>.
+You may specify an ARM64 extension from Armv8.0-A through Armv8.9-A, and Armv9.0-A through Armv9.4-A. Optionally, enable one or more architecture features by appending a feature argument to the option<sup>3</sup>. For example, to target Armv8.0-A and enable feature `FEAT_LSE`, append feature argument **`lse`** so that the option becomes **`/arch:armv8.0+lse`**. For more information about available features and their requirements, see [`/feature` (ARM64)](feature-arm64.md)<sup>3</sup>.
 
 > [!NOTE]
 > Depending on your version of Visual Studio, the compiler may not yet generate instructions from all feature sets required by the extension level you specify. For example, **`/arch:armv8.1`** allows the `*Interlocked*` intrinsic functions to use the appropriate atomic instruction introduced with the Armv8.1-A extension feature `FEAT_LSE`, but compiler support requires Visual Studio 2022 version 17.2 or later.
 
 The `_M_ARM64` macro is defined by default when compiling for an ARM64 target. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md).
 
-When you use [`/clr`](clr-common-language-runtime-compilation.md) to compile, **`/arch`** has no effect on code generation for managed functions. **`/arch`** only affects code generation for native functions.
+**`/arch`** only affects code generation for native functions. When you use [`/clr`](clr-common-language-runtime-compilation.md) to compile, **`/arch`** has no effect on code generation for managed functions.
 
 ### To set the `/arch` compiler option in Visual Studio
 
