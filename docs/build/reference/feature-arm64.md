@@ -1,18 +1,18 @@
 ---
 description: "Learn more about: /feature (ARM64)"
 title: "/feature (ARM64)"
-ms.date: 05/24/2024
+ms.date: 05/28/2024
 ---
 # `/feature` (ARM64)
 
-Enable one or more Arm A-Profile architecture features for an ARM64 extension as specified by **`/arch`** (ARM64). For more information on **`/arch`** (ARM64), see [`/arch` (ARM64)](arch-arm64.md).
+Enable one or more Arm A-Profile architecture features for an ARM64 extension as specified by **`/arch`** (ARM64). For more information about **`/arch`** (ARM64), see [`/arch` (ARM64)](arch-arm64.md).
 
 ## Syntax
 
 > **`/feature:<arg1>`**[**`+arg2`**]
 
 ## Arguments
-To enable one or more features the targeted ARM64 extension supports, specify one or more of the following feature arguments.
+To enable one or more features the targeted ARM64 extension supports, specify one or more of the following feature arguments:
 
 | Feature argument | Feature identifier | Optional from | Enabled by default | Description |
 |--|--|--|--|--|
@@ -23,9 +23,9 @@ To enable one or more features the targeted ARM64 extension supports, specify on
 
 Example usage: to enable `FEAT_LSE`, specify **`/feature:lse`**.
 
-If there are conflicting feature arguments specified by **`/feature`**, the right-most feature is enabled. Enabling a feature a targeted ARM64 extension doesn't support may cause unexpected behavior, especially if a CPU doesn't implement the feature.
+If there are conflicting feature arguments specified by **`/feature`**, the right-most feature is enabled. Enabling a feature the targeted ARM64 extension doesn't support may cause unexpected behavior, especially if a CPU doesn't implement the feature.
 
-Use either **`/feature`** or only **`/arch`** (ARM64) to specify features. For example, to enable `FEAT_LSE` when targeting Armv8.0-A, use either both **`/feature:lse`** and **`/arch:armv8.0`**, or specify **`/arch:armv8.0+lse`**. **`/feature`** exists as another way to specify features without specifying them in **`/arch`** (ARM64).
+Use either **`/feature`** or only **`/arch`** (ARM64) to specify features. For example, to enable `FEAT_LSE` when targeting Armv8.0-A, use both **`/feature:lse`** and **`/arch:armv8.0`**, or specify **`/arch:armv8.0+lse`**. **`/feature`** is a way to specify features without specifying them in **`/arch`** (ARM64).
 
 ### To set the `/feature` compiler option in Visual Studio
 
