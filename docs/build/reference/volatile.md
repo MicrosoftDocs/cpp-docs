@@ -18,13 +18,13 @@ Generate metadata on volatile memory accesses to improve performance when runnin
 ## Arguments
 
 **`-`**\
-Turns off `/volatileMetadata`. This may result in worse performance if your code is run in emulation mode on ARM because the emulator will pessimistically assume that every load/store needs a barrier.
+Turns off `/volatileMetadata`. This may result in worse performance when your code runs in emulation mode on ARM because the emulator pessimistically assumes that every load/store needs a barrier.
 
 ## Remarks
 
-Starting with Visual Studio 2019 16.10, `/volatileMetadata` is on by default when generating x64 code meant to run on ARM. It improves the emulation performance of x64 code on ARM by generating metadata that identifies volatile memory addresses. This metadata can be used by an emulator to improve performance because it then knows which addresses aren't volatile. Without this metadata, the emulator assumes that all addresses are volatile, and uses acquire and release semantics to access them.
+Starting with Visual Studio 2019 16.10, `/volatileMetadata` is on by default when generating x64 code. It improves the emulation performance of x64 code on ARM by generating metadata that identifies volatile memory addresses. An emulator can use this metadata improve performance by not using acquire/release semantics on accesses it knows aren't volatile. Without this metadata, the emulator assumes that all addresses are volatile, and uses acquire and release semantics to access them.
 
-One side effect `/volatileMetadata` is you may see `npad` macros in the generated code. This macro expands to a specified number of NOP instructions to create an address to associate with the memory barrier. That address is then recorded in the metadata.
+One side effect `/volatileMetadata` is you may see `npad` macros in the generated code. This macro expands to a specified number of `NOP` instructions that create an address to associate with the memory barrier. That address is then recorded in the metadata.
 
 `/volatileMetadata` can be disabled by using `/volatileMetadata-`.
 
@@ -32,7 +32,7 @@ One side effect `/volatileMetadata` is you may see `npad` macros in the generate
 
 ## Requirements
 
-Visual Studio 16.10 or later.
+Visual Studio 2019 version 16.10 or later.
 
 ## See also
 
