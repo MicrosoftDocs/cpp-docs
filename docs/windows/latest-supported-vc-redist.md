@@ -1,7 +1,7 @@
 ---
 title: "Latest supported Visual C++ Redistributable downloads"
 description: "This article lists the download links for the latest versions of Visual C++ Redistributable packages."
-ms.date: 02/26/2024
+ms.date: 5/28/2024
 helpviewer_keywords:
   [
     "redist",
@@ -52,7 +52,7 @@ Download other versions, including long term servicing release channel (LTSC) ve
 
 - The Visual C++ Redistributable supports several command-line options. For more information, see [Command-line options for the Redistributable packages](./redistributing-visual-cpp-files.md#command-line-options-for-the-redistributable-packages).
 
-## Visual Studio 2013 (VC++ 12.0)
+## Visual Studio 2013 (VC++ 12.0)  (no longer supported)
 
 These links download the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2013.
 You can download other versions and languages from [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from [my.visualstudio.com](https://my.visualstudio.com/).
