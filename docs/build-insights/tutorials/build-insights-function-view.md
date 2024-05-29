@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Troubleshoot function inlining on build time"
 description: "Tutorial on how to use Build Insights function view to troubleshoot the impact of function inlining on build time in your C++ projects."
-ms.date: 5/1/2024
+ms.date: 5/29/2024
 helpviewer_keywords: ["C++ Build Insights", "inline function analysis", "build time analysis", "__forceinline analysis", "inlines analysis"]
 ---
 # Tutorial: Troubleshoot function inlining on build time
@@ -33,7 +33,7 @@ In this article, learn how to use the Build Insights **Functions** view to find 
 
 ## Set build options
 
-To measure the results of `__forceinline`, use a **Release** build because optimizations for `__forceinline` impact release build times the most. Set the build for **Release** and **x64**:
+To measure the results of `__forceinline`, use a **Release** build because debug builds don't inline `__forceinline` since debug builds use the [`/Ob0`](../build/reference/ob-inline-function-expansion.md) compiler switch, which disables that optimization. Set the build for **Release** and **x64**:
 
 - In the **Solution Configurations** dropdown, choose **Release**.
 - In the **Solution Platforms** dropdown, choose **x64**.
@@ -60,13 +60,13 @@ When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the 
 
 ## Function view
 
-In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to compile each function. If a function's code generation time is too small, it won't appear in the list because build events with negligible impact are discarded to avoid degrading build event collection performance.
+In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to compile each function. If the amount of code generated for a function is negligible, it won't appear in the list to avoid degrading build event collection performance.
 
 :::image type="complex" source="./media/functions-view-before-fix.png" alt-text="Screenshot of the Build Insights Functions view file.":::
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
 :::image-end:::
 
-The **Time [sec, %]** column shows how long it took to compile each function. The **Forceinline Size** column shows roughly how many instructions were generated for the function. Click the chevron before the function name to see the individual inlined functions that were expanded in that function how roughly how many instructions were generated for each.
+The **Time [sec, %]** column shows how long it took to compile each function in [wall clock time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). The **Forceinline Size** column shows roughly how many instructions were generated for the function. Click the chevron before the function name to see the individual inlined functions that were expanded in that function how roughly how many instructions were generated for each.
 
 You can sort the list by clicking on the **Time** column to see which functions are taking the most time to compile. A 'fire' icon indicates that cost of generating that function is high and is worth investigating. Excessive use of `__forceinline` functions can significantly slow compilation.
 
@@ -103,7 +103,7 @@ static __forceinline T factorial(int n)
 }
 ```
 
-Perhaps the cost of calling this function is insignificant compared to the cost of the function itself. We can try removing the `__forceinline` directive from it to see if it helps the build time. The code for `power`, `sin()` and `cos()` is similar in that the code consists of a loop that will execute many times. We can try removing the `__forceinline` directive from those functions as well.
+Perhaps the overall cost of calling this function is insignificant compared to the cost of the function itself. Making a function inline is most beneficial when the time it takes to call the function (pushing arguments on the stack, jumping to the function, popping return arguments, and returning from the function) is roughly similar to the time it takes to execute the function, and when calling the function happens a lot. When that's not the case, or the function isn't called very often, there may be diminishing returns on making it inline. We can try removing the `__forceinline` directive from it to see if it helps the build time. The code for `power`, `sin()` and `cos()` is similar in that the code consists of a loop that will execute many times. We can try removing the `__forceinline` directive from those functions as well.
 
 We rerun Build Insights from the main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project, as before, and not for just the few files may be dirty right now.
 
@@ -140,6 +140,7 @@ Double-click, right-click, or press **Enter** while on a file in the **Functions
 ## See also
 
 [Inline functions (C++)](../../cpp/inline-functions-cpp.md)\
+[Faster C++ builds, simplified: a new metric for time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time)\
 [Build Insights in Visual Studio video - Pure Virtual C++ 2023](/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
 [Troubleshoot header file impact on build time](build-insights-included-files-view.md)\
 [Functions View for Build Insights in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/functions-view-for-build-insights-in-visual-studio-2022-17-8/)\

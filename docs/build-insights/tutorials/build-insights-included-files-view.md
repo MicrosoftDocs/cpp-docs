@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Troubleshoot header file impact on build time"
 description: "Tutorial on how to use Build Insights Includes Files and Includes Tree views to troubleshoot the impact of #include files on build time."
-ms.date: 5/1/2024
+ms.date: 5/29/2024
 helpviewer_keywords: ["C++ Build Insights", "header file build time", "included files view", "include tree view", "#include analysis", "build time analysis"]
 ---
 # Tutorial: Troubleshoot header file impact on build time
@@ -60,7 +60,7 @@ This view shows the time spent processing `#include` files.
 In the file path column, several files with a fire icon are highlighted because they take over 10% of the build time to parse. winrtHeaders.h is the biggest one at 8.581 seconds or 52.3% of the 16.404 second build time.
 :::image-end:::
 
-In the **File Path** column, some files have a fire icon next to them to indicate that they take up 10% or more of the build time. The **Time [sec, %]** column shows the time spent parsing the header file and what percentage of the overall time it took. The **Parse Count** column shows how many time the header file was parsed.
+In the **File Path** column, some files have a fire icon next to them to indicate that they take up 10% or more of the build time. The **Time [sec, %]** column shows the time in [wall clock time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism) spent parsing the header file and what percentage of the overall time it took. The **Parse Count** column shows how many time the header file was parsed.
 
 The first header file highlighted in this list is `winrtHeaders.h` It takes 8.581 seconds of the overall 16.404-second build time, or 52.3% of the build time. The next most expensive is `Windows.UI.Xaml.Interop.h` and then `Windows.Xaml.h`.
 
@@ -178,5 +178,6 @@ Conversely, you can right-click a file in the **Include Tree** view to jump to i
 
 [Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md)\
 [Build Insights in Visual Studio video - Pure Virtual C++ 2023](/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
+[Faster C++ builds, simplified: a new metric for time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time)\
 [Tutorial: Troubleshoot function inlining on build time](build-insights-function-view.md)\
 [Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)
