@@ -16,7 +16,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/?`](help-compiler-command-line-help.md) | Lists the compiler options. |
 | [`/AI<dir>`](ai-specify-metadata-directories.md) | Specifies a directory to search to resolve file references passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
 | [`/analyze`](analyze-code-analysis.md) | Enables code analysis. |
-| [`/arch:<IA32|SSE|SSE2|AVX|AVX2|AVX512>`](arch-x86.md) | Minimum CPU architecture requirements. IA32, SSE, and SSE2 are x86 only. |
+| [`/arch`](arch-minimum-cpu-architecture.md) | Minimum CPU architecture requirements. |
 | `/arm64EC` | Generate code compatible with the arm64EC ABI. |
 | [`/await`](await-enable-coroutine-support.md) | Enable coroutines (resumable functions) extensions. |
 | [`/await:strict`](await-enable-coroutine-support.md) | Enable standard C++20 coroutine support with earlier language versions. |
@@ -65,6 +65,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Displays the full path of source code files passed to *cl.exe* in diagnostic text. |
 | [`/Fd`](fd-program-database-file-name.md) | Renames program database file. |
 | [`/Fe`](fe-name-exe-file.md) | Renames the executable file. |
+| [`/feature`](feature-arm64.md) | Enable architecture features.<sup>17.10</sup> |
 | [`/FI<file>`](fi-name-forced-include-file.md) | Preprocesses the specified include file. |
 | [`/Fi`](fi-preprocess-output-file-name.md) | Specifies the preprocessed output file name. |
 | [`/Fm`](fm-name-mapfile.md) | Creates a mapfile. |
@@ -256,6 +257,8 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Zp[n]`](zp-struct-member-alignment.md) | Packs structure members. |
 | [`/Zs`](zs-syntax-check-only.md) | Checks syntax only. |
 | [`/ZW`](zw-windows-runtime-compilation.md) | Produces an output file to run on the Windows Runtime. |
+
+<sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.
 
 ## See also
 
