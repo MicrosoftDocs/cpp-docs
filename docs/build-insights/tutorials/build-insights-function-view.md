@@ -33,7 +33,7 @@ In this article, learn how to use the Build Insights **Functions** view to find 
 
 ## Set build options
 
-To measure the results of `__forceinline`, use a **Release** build because debug builds don't inline `__forceinline` since debug builds use the [`/Ob0`](../build/reference/ob-inline-function-expansion.md) compiler switch, which disables that optimization. Set the build for **Release** and **x64**:
+To measure the results of `__forceinline`, use a **Release** build because debug builds don't inline `__forceinline` since debug builds use the [`/Ob0`](../../build/reference/ob-inline-function-expansion.md) compiler switch, which disables that optimization. Set the build for **Release** and **x64**:
 
 - In the **Solution Configurations** dropdown, choose **Release**.
 - In the **Solution Platforms** dropdown, choose **x64**.
