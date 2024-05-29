@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 02/20/2024
+ms.date: 05/29/2024
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -14,6 +14,16 @@ This document lists the changes in Visual Studio 2022.
 For changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).\
 For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).\
 For changes in older versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+
+## <a name="improvements_1710"></a> Conformance improvements in Visual Studio 2022 version 17.10
+
+Visual Studio 2022 version 17.10 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
+
+
+
+
 
 ## <a name="improvements_179"></a> Conformance improvements in Visual Studio 2022 version 17.9
 
