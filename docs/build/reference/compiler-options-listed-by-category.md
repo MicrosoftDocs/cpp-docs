@@ -262,7 +262,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/utf-8`](utf-8-set-source-and-executable-character-sets-to-utf-8.md) | Set source and execution character sets to UTF-8. |
 | [`/V`](v-version-number.md) | Deprecated. Sets the version string. |
 | [`/validate-charset`](validate-charset-validate-for-compatible-characters.md) | Validate UTF-8 files for only compatible characters. |
-| `/volatileMetadata` | Generate metadata on volatile memory accesses. |
+| [`/volatileMetadata`](volatile.md) | Generate metadata on volatile memory accesses. |
 | [`/Yc`](yc-create-precompiled-header-file.md) | Create *`.PCH`* file. |
 | [`/Yd`](yd-place-debug-information-in-object-file.md) | Deprecated. Places complete debugging information in all object files. Use [`/Zi`](z7-zi-zi-debug-information-format.md) instead. |
 | [`/Yl`](yl-inject-pch-reference-for-debug-library.md) | Injects a PCH reference when creating a debug library. |

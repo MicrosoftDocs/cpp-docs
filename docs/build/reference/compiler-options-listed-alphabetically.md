@@ -197,7 +197,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/vmv`](vmm-vms-vmv-general-purpose-representation.md) | Declares virtual inheritance. |
 | [`/volatile:iso`](volatile-volatile-keyword-interpretation.md) | Acquire/release semantics not guaranteed on volatile accesses. |
 | [`/volatile:ms`](volatile-volatile-keyword-interpretation.md) | Acquire/release semantics guaranteed on volatile accesses. |
-| `/volatileMetadata` | Generate metadata on volatile memory accesses. |
+| [`/volatileMetadata`](volatile.md) | Generate metadata on volatile memory accesses. |
 | [`/w`](compiler-option-warning-level.md) | Disable all warnings. |
 | [`/W0`, `/W1`, `/W2`, `/W3`, `/W4`](compiler-option-warning-level.md) | Set output warning level. |
 | [`/w1<n>`, `/w2<n>`, `/w3<n>`, `/w4<n>`](compiler-option-warning-level.md) | Set warning level for the specified warning. |
