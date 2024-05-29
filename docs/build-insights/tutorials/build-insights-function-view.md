@@ -66,7 +66,9 @@ In the window for the ETL file, choose the **Functions** tab. It shows the funct
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
 :::image-end:::
 
-The **Time [sec, %]** column shows how long it took to compile each function in [wall clock time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). The **Forceinline Size** column shows roughly how many instructions were generated for the function. Click the chevron before the function name to see the individual inlined functions that were expanded in that function how roughly how many instructions were generated for each.
+The **Time [sec, %]** column shows how long it took to compile each function in [wall clock time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). Wall clock time aggregates the time it takes to compile a function across multiple compiler threads. It may only take a second to compile a function by your watch, but if the work to compile that function during that second was split across 3 threads, then the wall clock time is 3 seconds.
+
+The **Forceinline Size** column shows roughly how many instructions were generated for the function. Click the chevron before the function name to see the individual inlined functions that were expanded in that function how roughly how many instructions were generated for each.
 
 You can sort the list by clicking on the **Time** column to see which functions are taking the most time to compile. A 'fire' icon indicates that cost of generating that function is high and is worth investigating. Excessive use of `__forceinline` functions can significantly slow compilation.
 
