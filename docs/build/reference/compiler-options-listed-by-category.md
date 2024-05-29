@@ -28,7 +28,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 | Option | Purpose |
 |--|--|
-| [`/arch:<IA32|SSE|SSE2|AVX|AVX2|AVX512>`](arch-x86.md) | Minimum CPU architecture requirements. IA32, SSE, and SSE2 are x86 only. |
+| [`/arch`](arch-minimum-cpu-architecture.md) | Minimum CPU architecture requirements. |
 | [`/clr`](clr-common-language-runtime-compilation.md) | Produces an output file to run on the common language runtime. |
 | [`/clr:implicitKeepAlive-`](clr-common-language-runtime-compilation.md) | Turn off implicit emission of `System::GC::KeepAlive(this)`. |
 | [`/clr:initialAppDomain`](clr-common-language-runtime-compilation.md) | Enable initial AppDomain behavior of Visual C++ 2002. |
@@ -42,6 +42,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/EHc`](eh-exception-handling-model.md) | `extern "C"` defaults to `nothrow`. |
 | [`/EHr`](eh-exception-handling-model.md) | Always generate `noexcept` runtime termination checks. |
 | [`/EHs`](eh-exception-handling-model.md) | Enable C++ exception handling (no SEH exceptions). |
+| [`/feature`](feature-arm64.md) | Enable architecture features.<sup>17.10</sup> |
 | [`/fp:contract`](fp-specify-floating-point-behavior.md) | Consider floating-point contractions when generating code. |
 | [`/fp:except[-]`](fp-specify-floating-point-behavior.md) | Consider floating-point exceptions when generating code. |
 | [`/fp:fast`](fp-specify-floating-point-behavior.md) | "fast" floating-point model; results are less predictable. |
@@ -324,6 +325,8 @@ Experimental options may only be supported by certain versions of the compiler. 
 | [`/Zc:forScope-`](zc-forscope-force-conformance-in-for-loop-scope.md) | Deprecated. Disables conformance in for loop scope. |
 | [`/Ze`](za-ze-disable-language-extensions.md) | Deprecated. Enables language extensions. |
 | [`/Zg`](zg-generate-function-prototypes.md) | Removed in Visual Studio 2015. Generates function prototypes. |
+
+<sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.
 
 ## See also
 
