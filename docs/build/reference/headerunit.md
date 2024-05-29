@@ -1,7 +1,7 @@
 ---
 title: "/headerUnit (Use header unit IFC)"
 description: "Use the /headerUnit compiler option to associate a header file with the header unit to import in its place."
-ms.date: 02/01/2022
+ms.date: 5/28/2024
 f1_keywords: ["/headerUnit"]
 helpviewer_keywords: ["/headerUnit", "Use header unit IFC"]
 author: "tylermsft"
@@ -14,8 +14,8 @@ Imports a header unit. Tells the compiler where to find the *`.ifc`* file (the b
 ## Syntax
 
 > **`/headerUnit`** *`header-filename`*=*`ifc-filename`*\
-> **`/headerUnit:quote`** \[*`header-filename`*=*`ifc-filename`*\]\
-> **`/headerUnit:angle`** \[*`header-filename`*=*`ifc-filename`*\]
+> **`/headerUnit:quote`** *`header-filename`*=*`ifc-filename`*\
+> **`/headerUnit:angle`** *`header-filename`*=*`ifc-filename`*
 
 ### Arguments
 
@@ -39,7 +39,7 @@ When the compiler comes across `import "file";` or `import <file>;` this compile
 
 - **`/headerUnit:angle`** looks up the compiled header unit file using the same rules as `#include <file>`.
 
-The compiler can't map a single *`header-name`* to multiple *`.ifc`* files. Mapping multiple *`header-name`* arguments to a single *`.ifc`* is possible, but it isn't recommended. The contents of the *`.ifc`* are imported as if it was only the header specified by *`header-name`*.
+The compiler can't map a single *`header-name`* to multiple *`.ifc`* files. You can map multiple *`header-name`* arguments to a single *`.ifc`*. The contents of the *`.ifc`* are imported as if it was only the header specified by *`header-name`*.
 
 The compiler implicitly enables the new preprocessor when this option is used. If any form of `/headerUnit` is specified on the command line, then [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler. To opt out of the implicit `/Zc:preprocessor`, specify: `/Zc:preprocessor-`
 
