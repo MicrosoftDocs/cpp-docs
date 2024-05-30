@@ -35,18 +35,18 @@ In this article, learn how to use the Build Insights **Functions** view to find 
 
 To measure the results of `__forceinline`, use a **Release** build because debug builds don't inline `__forceinline` since debug builds use the [`/Ob0`](../../build/reference/ob-inline-function-expansion.md) compiler switch, which disables that optimization. Set the build for **Release** and **x64**:
 
-- In the **Solution Configurations** dropdown, choose **Release**.
-- In the **Solution Platforms** dropdown, choose **x64**.
+1. In the **Solution Configurations** dropdown, choose **Release**.
+1. In the **Solution Platforms** dropdown, choose **x64**.
 
-:::image type="content" source="./media/build-options-release.png" alt-text="Screenshot showing the Solution Configuration dropdown set to Release, and the Solution Platform dropdown set to x64":::
+:::image type="content" source="./media/build-options-release.png" alt-text="Screenshot of the Solution Configuration dropdown set to Release, and the Solution Platform dropdown set to x64.":::
 
 Set the optimization level to maximum optimizations:
 
-- In the **Solution Explorer**, right-click the project name and select **Properties**.
-- In the project properties, navigate to **C/C++** > **Optimization**.
-- Set the **Optimization** dropdown to **Maximum Optimization (Favor Speed) ([`/O2`](../../build/reference/ob-inline-function-expansion.md))**.
+1. In the **Solution Explorer**, right-click the project name and select **Properties**.
+1. In the project properties, navigate to **C/C++** > **Optimization**.
+1. Set the **Optimization** dropdown to **Maximum Optimization (Favor Speed) ([`/O2`](../../build/reference/ob-inline-function-expansion.md))**.
 
-:::image type="content" source="./media/max-optimization-setting.png" alt-text="Screenshot showing the project property pages dialog. The settings are open to Configuration Properties > C/C++ > Optimization. The Optimization dropdown is set to Maximum Optimization (Favor Speed) (/O2)":::
+:::image type="content" source="./media/max-optimization-setting.png" alt-text="Screenshot of the project property pages dialog. The settings are open to Configuration Properties > C/C++ > Optimization. The Optimization dropdown is set to Maximum Optimization (Favor Speed) (/O2).":::
 
 - Click **OK** to close the dialog.
 

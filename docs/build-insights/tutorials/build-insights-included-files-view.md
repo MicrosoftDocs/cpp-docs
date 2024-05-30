@@ -38,8 +38,8 @@ Before gathering Build Insights data, set the build options for the type of buil
 - In the **Solution Configurations** dropdown, choose **Debug**.
 - In the **Solution Platforms** dropdown, choose **x64**.
 
-    :::image type="complex" source="./media/build-options-debug.png" alt-text="Screenshot showing the Solution Configuration dropdowns.":::
-    The Solution Configuration dropdown is shown. It has options for Debug, Release, and Configuration manager. The Solution Platform dropdown is set to x64
+    :::image type="complex" source="./media/build-options-debug.png" alt-text="Screenshot of the Solution Configuration dropdowns.":::
+    The Solution Configuration dropdown is shown. It has options for Debug, Release, and Configuration manager. The Solution Platform dropdown is set to x64.
     :::image-end:::
 
 ## Run Build Insights
@@ -56,7 +56,7 @@ The trace file shows the build time--which for this example was 16.404 seconds. 
 
 This view shows the time spent processing `#include` files.
 
-:::image type="complex" source="./media/included-files-before-fix.png" alt-text="Screenshot of the included files view":::
+:::image type="complex" source="./media/included-files-before-fix.png" alt-text="Screenshot of the included files view.":::
 In the file path column, several files with a fire icon are highlighted because they take over 10% of the build time to parse. winrtHeaders.h is the biggest one at 8.581 seconds or 52.3% of the 16.404-second build time.
 :::image-end:::
 
@@ -72,7 +72,7 @@ To see which file includes `winrtHeaders.h`, click the chevron next to it. The *
 
 The **Translation Unit** column shows which file was being processed when the included file was processed. In this example, `winrtHeaders.h` was included while `Grapher.cpp` was compiled:
 
-:::image type="complex" source="./media/included-files-translation-unit.png" alt-text="Screenshot of the Included Files view":::
+:::image type="complex" source="./media/included-files-translation-unit.png" alt-text="Screenshot of the Included Files view.":::
 An example ETL file showing the includes files for a sample project. In the file path column, winrtHeaders.h is selected and expanded. It takes 8.219 seconds to build which is 50.1% of the build time. Its child node is Grapher.cpp, which is also listed as the translation unit."
 :::image-end:::
 
@@ -86,7 +86,7 @@ In this view, the children nodes are the files included by the parent node. This
 
 Select the **Include Tree** tab in the ETL file to see the Include Tree view:
 
-:::image type="complex" source="./media/include-tree-view.png" alt-text="Screenshot of the Include Tree view":::
+:::image type="complex" source="./media/include-tree-view.png" alt-text="Screenshot of the Include Tree view.":::
 Shows the include tree for a project. In the file path column, each file that includes other files is listed, along with how many files it includes and the time to parse it.
 :::image-end:::
 
@@ -94,8 +94,8 @@ In this view, the **File Path** column shows each file that includes other files
 
 Earlier, we saw that parsing `winrtHeaders.h` is time consuming. In the **Filter Files** text box, if we enter `winrtHeaders.h`, we can filter the view to only the entries that contain `winrtHeaders.h` in the name. Clicking the chevron next to `winrtHeaders.h` shows which files it includes:
 
-:::image type="complex" source="./media/include-tree-view-expanded.png" alt-text="Screenshot of the expanded Include Tree view":::
-The file path column lists each file that includes other files, along with how many files it includes and the time it took to parse it. winrtHeaders.h is selected and expanded to show the files it includes. Windows.UI.Xaml.Interop.h is one of those files and is expanded to show `Windows.UI.Xaml.Interop.h` that is expanded to show the header files it includes.
+:::image type="complex" source="./media/include-tree-view-expanded.png" alt-text="Screenshot of the expanded Include Tree view.":::
+The file path column lists each file that includes other files, along with how many files it includes and the time it took to parse it. winrtHeaders.h is selected and expanded to show the files it includes. Windows.UI.Xaml.Interop.h is one of those files and is expanded to show Windows.UI.Xaml.Interop.h that is expanded to show the header files it includes.
 :::image-end:::
 
 We see that `winrtHeaders.h` includes `Windows.UI.Xaml.Interop.h`. Remember from the **Included Files** view that this was also time consuming to parse. Click the chevron next to `Windows.UI.Xaml.Interop.h` to see that it includes `Windows.UI.Xaml.h`, which includes 21 other header files, two of which are also on the hot list.
@@ -125,13 +125,13 @@ PCH files must be compiled before they can be used, so we add a file to the proj
 
 Then we set our project to use the PCH. That's done in project properties via **C/C++** > **Precompiled Headers** and setting **Precompiled Header** to **Use (/Yu)** and **Precompiled Header File** to **pch.h**.
 
-:::image type="complex" source="./media/precompiled-header-settings.png" alt-text="Screenshot of the project properties dialog with the Precompiled Headers settings open":::
+:::image type="complex" source="./media/precompiled-header-settings.png" alt-text="Screenshot of the project properties dialog with the Precompiled Headers settings open.":::
 Precompiled Header is set to: Use (/Yu). The Precompiled Header File is set to pch.h.
 :::image-end:::
 
 To use the PCH, we include it as the first line in the source files that use `winrtHeaders.h`. It must come before any other include files. Or, for simplicity, we could modify the project properties to include `pch.h` at the beginning of every file in the solution by setting the project property: **C/C++** > **Advanced** > **Forced Include File** to `pch.h`:
 
-:::image type="complex" source="./media/precompiled-header-settings-force-include.png" alt-text="Screenshot of the project properties dialog with the Advanced settings open":::
+:::image type="complex" source="./media/precompiled-header-settings-force-include.png" alt-text="Screenshot of the project properties dialog with the Advanced settings open.":::
 Forced Include File is set to pch.h.
 :::image-end:::
 
