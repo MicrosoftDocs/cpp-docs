@@ -46,7 +46,7 @@ Set the optimization level to maximum optimizations:
 1. In the project properties, navigate to **C/C++** > **Optimization**.
 1. Set the **Optimization** dropdown to **Maximum Optimization (Favor Speed) ([`/O2`](../../build/reference/ob-inline-function-expansion.md))**.
 
-:::image type="content" source="./media/max-optimization-setting.png" alt-text="Screenshot of the project property pages dialog. The settings are open to Configuration Properties > C/C++ > Optimization. The Optimization dropdown is set to Maximum Optimization (Favor Speed) (/O2).":::
+    :::image type="content" source="./media/max-optimization-setting.png" alt-text="Screenshot of the project property pages dialog. The settings are open to Configuration Properties > C/C++ > Optimization. The Optimization dropdown is set to Maximum Optimization (Favor Speed) (/O2).":::
 
 1. Click **OK** to close the dialog.
 
