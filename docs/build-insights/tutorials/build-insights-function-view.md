@@ -44,7 +44,7 @@ Set the optimization level to maximum optimizations:
 
 - In the **Solution Explorer**, right-click the project name and select **Properties**.
 - In the project properties, navigate to **C/C++** > **Optimization**.
-- Set the **Optimization** dropdown to **Maximum Optimization (Favor Speed) (/O2)**.
+- Set the **Optimization** dropdown to **Maximum Optimization (Favor Speed) ([`/O2`](../../build/reference/ob-inline-function-expansion.md))**.
 
 :::image type="content" source="./media/max-optimization-setting.png" alt-text="Screenshot showing the project property pages dialog. The settings are open to Configuration Properties > C/C++ > Optimization. The Optimization dropdown is set to Maximum Optimization (Favor Speed) (/O2)":::
 
@@ -60,13 +60,13 @@ When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the 
 
 ## Function view
 
-In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to compile each function. If the amount of code generated for a function is negligible, it won't appear in the list to avoid degrading build event collection performance.
+In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to generate the code for each function. If the amount of code generated for a function is negligible, it won't appear in the list to avoid degrading build event collection performance.
 
 :::image type="complex" source="./media/functions-view-before-fix.png" alt-text="Screenshot of the Build Insights Functions view file.":::
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
 :::image-end:::
 
-The **Time [sec, %]** column shows how long it took to compile each function in [wall clock time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). Wall clock time aggregates the time it takes to compile a function across multiple compiler threads. It may only take a second to compile a function by your watch, but if the work to compile that function during that second was split across 3 threads, then the wall clock time is 3 seconds.
+The **Time [sec, %]** column shows how long it took to compile each function in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). Wall clock responsibility time aggregates the time it takes to compile a function across multiple compiler threads. It may only take a second to compile a function by your watch, but if the work to compile that function during that second was split across 3 threads, then the reported time is 3 seconds.
 
 The **Forceinline Size** column shows roughly how many instructions were generated for the function. Click the chevron before the function name to see the individual inlined functions that were expanded in that function how roughly how many instructions were generated for each.
 
