@@ -21,9 +21,156 @@ Visual Studio 2022 version 17.10 contains the following conformance improvements
 
 For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
 
+---------------------- TW
+### Conversion operator specialization with explicitly specified return type
 
+This is a source code breaking change. The compiler used to specialize these conversion operators incorrectly in some cases which can lead to mismatched return type. These invalid specializations no longer happen.
 
+#### Example (before/after)
 
+```cpp
+// Example 1
+struct S
+{
+    template<typename T> operator const T*();
+};
+
+void test()
+{
+    S{}.operator int*(); // this is invalid now
+    S{}.operator const int*(); // this is valid
+}
+```
+
+```cpp
+// Example 2
+// In some cases, the overload resolution result may change
+struct S
+{
+    template <typename T> operator T*(); // overload 1
+    template <typename T> operator const T*(); // overload 2
+};
+
+void test() {
+    S{}.operator int*(); // this used to call overload 2, now it calls overload 1
+}
+```
+
+### Added Support for `#elifdef` and `#elifndef`
+
+Support added for WG21 p2334r1 (C++23) and WG14 n2645 (C23) which introduced the `#elifdef` and `#elifndef` preprocessor directives.
+Requires `/std:clatest` or `/std:c++latest`.
+
+#### Example (before/after)
+
+Before:
+
+```cpp
+#ifdef __cplusplus
+  #include <atomic>
+#elif !defined(__STDC_NO_ATOMICS__)
+  #include <stdatomic.h>
+#else
+  #include <custom_atomics_library.h>
+#endif
+```
+
+After:
+
+```cpp
+#ifdef __cplusplus
+  #include <atomic>
+#elifndef __STDC_NO_ATOMICS__
+  #include <stdatomic.h>
+#else
+  #include <custom_atomics_library.h>
+#endif
+```
+
+# Application of `_Alignas` on a structured type in C (also added to 17.9) <!-- Sound-bite description of the change -->
+
+<!-- Metadata -->
+| Source/Binary Breaking Change? | Compiler mode | Backward compatible? | EDG Behavior | Commit |
+| ------------------------------ | ------------- | -------------------- | ------------ | ------ |
+| Yes                            | C (C17 and later) |  No             |  Unchanged     | fe_20231031.02|
+
+### Description/Rationale
+In versions of Visual C++ before Visual Studio 2022 version 17.9, when the `_Alignas` specifier appeared adjacent to a structured type in a declaration, it was not applied correctly according to the ISO-C Standard.
+
+### Example
+```
+// compile with /std:c17
+#include <stddef.h>
+struct Outer {
+    _Alignas(32) struct Inner { int i; } member1;
+    struct Inner member2;
+};
+static_assert(offsetof(struct Outer, member2)==4, "incorrect alignment");
+```
+
+According to the ISO-C Standard, this code should compile without the 'static_assert' emitting a diagnostic.  The '_Alignas' directive applies only to the member variable 'member1'.  It must not change the alignment of 'struct Inner'. However, before release 17.9.1 of Visual Studio, the diagnostic "incorrect alignment" would be emitted.  The compiler would align 'member2' to an offset of 32 bytes within the 'struct Outer' type.
+
+Since fixing this bug is a binary breaking change, a warning is now emitted when this change takes effect.  Warning C5274 is now emitted at warning level 1 for the code above:
+```
+warning C5274: behavior change: _Alignas no longer applies to the type 'Inner' (only applies to declared data objects)
+```
+A second fix was made to _Alignof in this release.  In previous versions of Visual Studio, when the _Alignas specifier appeared adjacent to an anonymous type declaration, it was ignored.
+###Example
+```
+// compile with /std:c17
+#include <stddef.h>
+struct S {
+    _Alignas(32) struct { int anon_member; };
+    int k;
+};
+static_assert(offsetof(struct S, k)==4, "incorrect offsetof");
+static_assert(sizeof(struct S)==32, "incorrect size");
+```
+Previously, both `static_assert` statements would fail when this code was compiled.  Now the code will compile, but with the following level 1 warnings emitted:
+```
+warning C5274: behavior change: _Alignas no longer applies to the type '<unnamed-tag>' (only applies to declared data objects)
+warning C5273: behavior change: _Alignas on anonymous type no longer ignored (promoted members will align)
+```
+The previous behavior can be achieved by replacing uses of `_Alignas(N)` with `__declspec(align(N))`.  This declspec is a documented feature of Visual C and C++ for many releases.  Unlike `_Alignas`, use of `declspec(align)` will apply to the type.
+
+# Improved Warning C4706
+
+<!-- Metadata -->
+| Source/Binary Breaking Change? | Compiler mode | Backward compatible? | EDG Behavior | Commit |
+| ------------------------------ | ------------- | -------------------- | ------------ | ------ |
+|  Yes                               | All               |  Yes                     |     N/A         |   fe_20240221.03     |
+
+### Description/Rationale
+
+Previously this warning was emitted by the optimizer, c2.dll: one side-effect of this was that the compiler could not detect the convention for suppressing the warning: i.e., wrapping the assignment in parentheses (if an assignment really was intended). By moving the warning from the optimizer to the parser, c1.dll or c1xx.dll, the compiler can now detect the parentheses and hence suppress the warning in these cases.
+
+When the warning was in the optimizer it would only check functions that were, in some way, referenced and hence passed to the optimizer to process. If a function was not referenced, then the optimizer would never see it and the warning would not be emitted.
+
+Now that the warning is in the parser it will be emitted for all functions regardless of whether they are referenced or not.
+
+### Example
+```
+#pragma warning(error: 4706)
+
+struct S {
+   auto mf() {
+      if (value = 9)
+         return value + 4;
+      else
+         return value;
+   }
+
+   int value = 9;
+};
+```
+Previously, as 'mf' is an inline function that is never referenced, it would not be passed to the optimizer and hence warning C4706 would not be emitted for this code: but now that the parser is being used to detect this situation the warning is emitted.
+```
+t.cpp(5): error C4706: assignment used as a condition
+t.cpp(5): note: if an assignment is intended you can enclose it in parentheses, '(e1 = e2)', to silence this warning
+```
+The fix is to either switch to an equality operator, 'value == 9', if this is what was intended, or to wrap the assignment in parentheses, '(value = 9)', if an assignment really was intended. Or, as the function is unreferenced, it can be removed.
+
+---------------------- /TW
 
 ## <a name="improvements_179"></a> Conformance improvements in Visual Studio 2022 version 17.9
 
