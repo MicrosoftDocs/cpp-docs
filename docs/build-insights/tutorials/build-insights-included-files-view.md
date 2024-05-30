@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Troubleshoot header file impact on build time"
 description: "Tutorial on how to use Build Insights Includes Files and Includes Tree views to troubleshoot the impact of #include files on build time."
-ms.date: 5/29/2024
+ms.date: 5/30/2024
 helpviewer_keywords: ["C++ Build Insights", "header file build time", "included files view", "include tree view", "#include analysis", "build time analysis"]
 ---
 # Tutorial: Troubleshoot header file impact on build time
@@ -25,7 +25,7 @@ The list of installed components is shown. C++ Build Insights is highlighted and
 
 ## Overview
 
-Build Insights, now integrated into Visual Studio, helps you optimize your build times--especially for large projects like triple-A games. When a large header file is parsed, and particularly when it's repeatedly parsed, there's an impact on build time.
+Build Insights, now integrated into Visual Studio, helps you optimize your build times--especially for large projects like triple-A games. When a large header file is parsed, and especially when it's repeatedly parsed, there's an impact on build time.
 
 Build Insights provides analytics in the **Included Files** view, which helps diagnose the impact of parsing `#include` files in your project. It displays the time it takes to parse each header file and a view of the relationships between header files.
 
@@ -44,7 +44,7 @@ Before gathering Build Insights data, set the build options for the type of buil
 
 ## Run Build Insights
 
-On a project of your choosing, and using the **Debug** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
+On a project of your choosing, and using the **Debug** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
 
 :::image type="content" source="./media/build-insights-rebuild-project.png" alt-text="Screenshot of the main menu with Run Build Insights on Selection > Rebuild selected.":::
 
@@ -60,11 +60,13 @@ This view shows the time spent processing `#include` files.
 In the file path column, several files with a fire icon are highlighted because they take over 10% of the build time to parse. winrtHeaders.h is the biggest one at 8.581 seconds or 52.3% of the 16.404-second build time.
 :::image-end:::
 
-In the **File Path** column, some files have a fire icon next to them to indicate that they take up 10% or more of the build time. The **Time [sec, %]** column shows how long it took to compile each function in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). This metric distributes the wall clock time it takes to parse files based on their use of parallel threads. For example, if two different threads are parsing two different files simultaneously within a one-second period, each file's WCTR is recorded as 0.5 seconds. This reflects each file's proportional share of the total compilation time, taking into account the resources each consumed during parallel execution. Thus, WCTR provides a better measure of the impact each file has on the overall build time in environments where multiple compilation activities occur simultaneously.
+In the **File Path** column, some files have a fire icon next to them to indicate that they take up 10% or more of the build time.
+
+The **Time [sec, %]** column shows how long it took to compile each function in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). This metric distributes the wall clock time it takes to parse files based on their use of parallel threads. For example, if two different threads are parsing two different files simultaneously within a one-second period, each file's WCTR is recorded as 0.5 seconds. This reflects each file's proportional share of the total compilation time, taking into account the resources each consumed during parallel execution. Thus, WCTR provides a better measure of the impact each file has on the overall build time in environments where multiple compilation activities occur simultaneously.
 
 The **Parse Count** column shows how many time the header file was parsed.
 
-The first header file highlighted in this list is `winrtHeaders.h` It takes 8.581 seconds of the overall 16.404-second build time, or 52.3% of the build time. The next most expensive is `Windows.UI.Xaml.Interop.h` and then `Windows.Xaml.h`.
+The first header file highlighted in this list is `winrtHeaders.h` It takes 8.581 seconds of the overall 16.404-second build time, or 52.3% of the build time. The next most expensive is `Windows.UI.Xaml.Interop.h`, and then `Windows.Xaml.h`.
 
 To see which file includes `winrtHeaders.h`, click the chevron next to it. The **Parse Count** column can be helpful by pointing out how many times a header file is included by other files. Perhaps a header file is included multiple times, which could be a sign that it's a good candidate for a precompiled header file or refactoring.
 
@@ -102,7 +104,7 @@ Having identified some of the most expensive header files to parse, and seeing t
 
 ## Improve build time with precompiled headers
 
-Because we know from the **Included Files** view that `winrtHeaders.h` is time consuming to parse, and because we know from the **Include Tree** view that `winrtHeaders.h` includes several other header files that are time consuming to parse, we build a [Precompiled header file](../../build/creating-precompiled-header-files.md) (PCH) to reduce the number of times these files are parsed.
+Because we know from the **Included Files** view that `winrtHeaders.h` is time consuming to parse, and because we know from the **Include Tree** view that `winrtHeaders.h` includes several other header files that are time consuming to parse, we build a [Precompiled header file](../../build/creating-precompiled-header-files.md) (PCH) to speed that up by only parsing them once into a PCH.
 
 We add a `pch.h` to include `winrtHeaders.h`, which would look like this:
 
@@ -133,21 +135,21 @@ To use the PCH, we include it as the first line in the source files that use `wi
 Forced Include File is set to pch.h.
 :::image-end:::
 
-Since the PCH includes `winrtHeaders.h`, we could remove `winrtHeaders.h` from all the files that currently include it. It's not strictly necessary because the compiler realizes that `winrtHeaders.h` is already included and not parse it again. Some developers prefer to keep the `#include` in the source file for clarity, or in case the PCH is refactored and no longer includes that header file.
+Since the PCH includes `winrtHeaders.h`, we could remove `winrtHeaders.h` from all the files that currently include it. It's not strictly necessary because the compiler realizes that `winrtHeaders.h` is already included and doesn't parse it again. Some developers prefer to keep the `#include` in the source file for clarity, or in case the PCH is likely to be refactored and may not include that header file anymore.
 
 ## Test the changes
 
 We first clean the project to make sure we're comparing building the same files as before. To clean just one project, right-click the project in the **Solution Explorer** and choose **Project only** > **Clean only \<prj name\>**.
 
-Because this project uses a precompiled header (PCH), we don't want to measure the time spent building the PCH because that only happens once. We do this by loading the `pch.cpp` file and choosing **Ctrl+F7** to build just that file. We could also compile this file by right-clicking `pch.cpp` in the Solution Explorer and choosing `Compile`.
+Because this project now uses a precompiled header (PCH), we don't want to measure the time spent building the PCH because that only happens once. We do this by loading the `pch.cpp` file and choosing **Ctrl+F7** to build just that file. We could also compile this file by right-clicking `pch.cpp` in the Solution Explorer and choosing `Compile`.
 
-Now we rerun Build Insights in the **Solution Explorer** by right-clicking the project and choosing **Project Only** > **Run Build Insights on Build**. We don't want **Rebuild** this time because that will rebuild the PCH, which we don't want to measure. We cleaned the project earlier, which means that a normal build compiles all the project files we want to measure.
+Now we rerun Build Insights in the **Solution Explorer** by right-clicking the project and choosing **Project Only** > **Run Build Insights on Build**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Build**. We don't want **Rebuild** this time because that will rebuild the PCH, which we don't want to measure. We cleaned the project earlier, which means that a normal build compiles all the project files we want to measure.
 
-When the ETL files appear, we see that build time went from 16.404 seconds to 6.615 seconds. Put `winrtHeaders.h` into the filter box and nothing appears. This is because the time spent parsing it is now negligible since it's being pulled in via the precompiled header.
+When the ETL files appear, we see that build time went from 16.404 seconds to 6.615 seconds. Put `winrtHeaders.h` into the filter box and nothing appears. This is because the time spent parsing it is now negligible since it's being pulled in by the precompiled header.
 
 :::image type="content" source="./media/included-files-after-fix.png" alt-text="Screenshot of the Include Tree pane in the trace file. winrtHeaders is no longer listed.":::
 
-This example uses precompiled headers because they're a common solution before C++20. However, starting with C++20, there are other faster, less brittle ways to include header files such as header units and modules. For more information, see [Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md).
+This example uses precompiled headers because they're a common solution before C++20. However, starting with C++20, there are other, faster, less brittle, ways to include header files--such as header units and modules. For more information, see [Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md).
 
 ## Navigate between views
 
@@ -158,18 +160,18 @@ There are some navigation features for both the **Included Files** and **Include
 
 :::image type="content" source="./media/included-files-show-in-include-tree.png" alt-text="Screenshot of a right-click on a file in the Included Files view. The menu option Show in Include Tree View is highlighted.":::
 
-Conversely, you can right-click a file in the **Include Tree** view to jump to it in the **Included Files** view.
+Or, you can right-click a file in the **Include Tree** view to jump to it in the **Included Files** view.
 
 ## Tips
 
-- You can **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
+- You can **File** > **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
 - If you inadvertently close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
 - To dig into the Build Insights data with Windows Performance Analyzer (WPA), click the **Open in WPA** button in the bottom right of the ETL window.
-- Drag columns to change the order of the columns. For instance, you may prefer moving the Time column to be the first column. You can also hide some columns by right-clicking on the column header and deselecting the columns you don't want to see.
-- **Included Files** and **Include Tree** views provide a filter box to find a header file that you're interested in. It does partial matches on the name you provide.
-- Sometimes the parse time reported for a header file differs depending on which file includes it. This can be due to the interplay of different `#define`s that affect which parts of the header are expanded, file caching, and other system factors.
+- Drag columns to change the order of the columns. For instance, you may prefer moving the **Time** column to be the first column. You can hide columns by right-clicking on the column header and deselecting the columns you don't want to see.
+- The **Included Files** and **Include Tree** views provide a filter box to find a header file that you're interested in. It does partial matches on the name you provide.
+- Sometimes the parse time reported for a header file is different depending on which file includes it. This can be due to the interplay of different `#define`s that affect which parts of the header are expanded, file caching, and other system factors.
 - If you forget what the **Included Files** or **Include Tree** view is trying to show you, hover over the tab to see a tooltip that describes the view. For example, if you hover over the **Include Tree** tab, the tooltip says: "View that shows include statistics for every file where the children nodes are the files included by the parent node."
-- You may see cases (like `Windows.h`) where the aggregated duration of all the times for a header file is longer than the duration of the entire build. What’s happening is that headers are parsed on many threads at the same time, adding seconds to the aggregated duration beyond what’s physically possible.
+- You may see cases (like `Windows.h`) where the aggregated duration of all the times for a header file is longer than the duration of the entire build. What’s happening is that headers are being parsed on multiple threads at the same time. If two threads simultaneously spend one second parsing a header file, that's 2 seconds of build time even though only one second of wall clock time has gone by. For more information, see [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism).
 
 ## Troubleshooting
 

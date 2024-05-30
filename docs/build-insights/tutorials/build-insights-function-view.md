@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Troubleshoot function inlining on build time"
 description: "Tutorial on how to use Build Insights function view to troubleshoot the impact of function inlining on build time in your C++ projects."
-ms.date: 5/29/2024
+ms.date: 5/30/2024
 helpviewer_keywords: ["C++ Build Insights", "inline function analysis", "build time analysis", "__forceinline analysis", "inlines analysis"]
 ---
 # Tutorial: Troubleshoot function inlining on build time
@@ -52,7 +52,7 @@ Set the optimization level to maximum optimizations:
 
 ## Run Build Insights
 
-On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
+On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
 
 :::image type="content" source="./media/build-insights-rebuild-project.png" alt-text="Screenshot of the main menu with Run Build Insights on Selection > Rebuild selected.":::
 
@@ -107,7 +107,7 @@ static __forceinline T factorial(int n)
 
 Perhaps the overall cost of calling this function is insignificant compared to the cost of the function itself. Making a function inline is most beneficial when the time it takes to call the function (pushing arguments on the stack, jumping to the function, popping return arguments, and returning from the function) is roughly similar to the time it takes to execute the function, and when the function is called a lot. When that's not the case, there may be diminishing returns on making it inline. We can try removing the `__forceinline` directive from it to see if it helps the build time. The code for `power`, `sin()` and `cos()` is similar in that the code consists of a loop that will execute many times. We can try removing the `__forceinline` directive from those functions as well.
 
-We rerun Build Insights from the main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project, as before, and not for just the few files may be dirty right now.
+We rerun Build Insights from the main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project, as before, and not for just the few files may be dirty right now.
 
 The build time goes from 25.181 seconds to 13.376 seconds and the `performPhysicsCalculations` function doesn't show up anymore in the **Functions** view because it doesn't contribute enough to the build time to be counted.
 
@@ -117,7 +117,7 @@ In the Function Name column, performPhysicsCalculations() is highlighted and mar
 
 The Diagnostics Session time is the overall time it took do the build plus any overhead for gathering the Build Insights data.
 
-The next step would be to profile the application to see if the performance of the application is negatively impacted by the change. If it has, we can selectively add `__forceinline` back as needed.
+The next step would be to profile the application to see if the performance of the application is negatively impacted by the change. If it is, we can selectively add `__forceinline` back as needed.
 
 ## Navigate to the source code
 
@@ -127,12 +127,12 @@ Double-click, right-click, or press **Enter** while on a file in the **Functions
 
 ## Tips
 
-- You can **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
+- You can **File** > **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
 - If you inadvertently close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
 - To dig into the Build Insights data with Windows Performance Analyzer (WPA), click the **Open in WPA** button in the bottom right of the ETL window.
-- Drag columns to change the order of the columns. For instance, you may prefer moving the Time column to be the first column. You can also hide some columns by right-clicking on the column header and deselecting the columns you don't want to see.
+- Drag columns to change the order of the columns. For instance, you may prefer moving the **Time** column to be the first column. You can hide columns by right-clicking on the column header and deselecting the columns you don't want to see.
 - The **Functions** view provides a filter box to find a function that you're interested in. It does partial matches on the name you provide.
-- If you forget what the **Functions** view is trying to show you, hover over the tab to see a tooltip that describes the view. If you hover over the **Functions** tab, the tooltip says: "View that shows statistics for functions where the children nodes are force-inlined functions."
+- If you forget how to interpret what the **Functions** view is trying to show you, hover over the tab to see a tooltip that describes the view. If you hover over the **Functions** tab, the tooltip says: "View that shows statistics for functions where the children nodes are force-inlined functions."
 
 ## Troubleshooting
 
