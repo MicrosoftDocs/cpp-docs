@@ -48,7 +48,7 @@ Set the optimization level to maximum optimizations:
 
 :::image type="content" source="./media/max-optimization-setting.png" alt-text="Screenshot of the project property pages dialog. The settings are open to Configuration Properties > C/C++ > Optimization. The Optimization dropdown is set to Maximum Optimization (Favor Speed) (/O2).":::
 
-- Click **OK** to close the dialog.
+1. Click **OK** to close the dialog.
 
 ## Run Build Insights
 
