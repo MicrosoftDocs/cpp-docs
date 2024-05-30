@@ -14,11 +14,11 @@ Use Build Insights **Functions** view to troubleshoot the impact of function inl
 - C++ Build insights is enabled by default if you install either the Desktop development with C++ workload or the Game development with C++ workload.
 
 :::image type="complex" source="./media/installer-desktop-cpp-build-insights.png" alt-text="Screenshot of the Visual Studio Installer with the Desktop development with C++ workload selected.":::
-The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate it's installed.
+The list of installed components is shown. C++ Build Insights is highlighted and is selected which means it's installed.
 :::image-end:::
 
 :::image type="complex" source="./media/installer-gamedev-cpp-build-insights.png" alt-text="Screenshot of the Visual Studio Installer with the Game development with C++ workload selected.":::
-The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate it's installed.
+The list of installed components is shown. C++ Build Insights is highlighted and is selected which means it's installed.
 :::image-end:::
 
 ## Overview
@@ -66,7 +66,7 @@ In the window for the ETL file, choose the **Functions** tab. It shows the funct
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
 :::image-end:::
 
-The **Time [sec, %]** column shows how long it took to compile each function in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). This metric distributes the wall clock time among functions based on their use of parallel compiler threads. For example, if two functions are being compiled simultaneously by two different threads within a one-second period, each function’s WCTR would be recorded as 0.5 seconds. This reflects each function’s proportional share of the total compilation time, taking into account the resources each consumed during parallel execution. Thus, WCTR provides a better measure of the impact each function has on the overall build time in environments where multiple compilation activities occur simultaneously.
+The **Time [sec, %]** column shows how long it took to compile each function in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). This metric distributes the wall clock time among functions based on their use of parallel compiler threads. For example, if two different threads are compiling two different functions simultaneously within a one-second period, each function’s WCTR is recorded as 0.5 seconds. This reflects each function’s proportional share of the total compilation time, taking into account the resources each consumed during parallel execution. Thus, WCTR provides a better measure of the impact each function has on the overall build time in environments where multiple compilation activities occur simultaneously.
 
 The **Forceinline Size** column shows roughly how many instructions were generated for the function. Click the chevron before the function name to see the individual inlined functions that were expanded in that function how roughly how many instructions were generated for each.
 
@@ -85,7 +85,7 @@ In the Function Name column, performPhysicsCalculations() is highlighted and mar
 Investigating further, by selecting the chevron before that function, and then sorting the **Forceinline Size** column from highest to lowest, we see the biggest contributors to the problem.
 
 :::image type="complex" source="./media/functions-view-expanded.png" alt-text="Screenshot of the Build Insights Functions view with an expanded function.":::
-performPhysicsCalculations() is expanded and shows a long list of functions that were inlined inside it. There are mutliple instances of functions such as complexOperation(), recursiveHelper(), and sin() shown. The Forceinline Size column shows that complexOperation() is the largest inlined function at 315 instructions. recursiveHelper() has 119 instructions. Sin() has 75 instructions but there are many instances of than the other functions.
+performPhysicsCalculations() is expanded and shows a long list of functions that were inlined inside it. There are multiple instances of functions such as complexOperation(), recursiveHelper(), and sin() shown. The Forceinline Size column shows that complexOperation() is the largest inlined function at 315 instructions. recursiveHelper() has 119 instructions. Sin() has 75 instructions, but there are many more instances of it than the other functions.
 :::image-end:::
 
 There are some larger inlined functions, such as `Vector2D<float>::complexOperation()` and `Vector2D<float>::recursiveHelper()` that are contributing to the problem. But there are many more instances (not all shown here) of `Vector2d<float>::sin(float)`, `Vector2d<float>::cos(float)`, `Vector2D<float>::power(float,int)`, and `Vector2D<float>::factorial(int)`. When you add those up, the total number of generated instructions quickly exceeds the few larger generated functions.
@@ -105,7 +105,7 @@ static __forceinline T factorial(int n)
 }
 ```
 
-Perhaps the overall cost of calling this function is insignificant compared to the cost of the function itself. Making a function inline is most beneficial when the time it takes to call the function (pushing arguments on the stack, jumping to the function, popping return arguments, and returning from the function) is roughly similar to the time it takes to execute the function, and when calling the function happens a lot. When that's not the case, or the function isn't called very often, there may be diminishing returns on making it inline. We can try removing the `__forceinline` directive from it to see if it helps the build time. The code for `power`, `sin()` and `cos()` is similar in that the code consists of a loop that will execute many times. We can try removing the `__forceinline` directive from those functions as well.
+Perhaps the overall cost of calling this function is insignificant compared to the cost of the function itself. Making a function inline is most beneficial when the time it takes to call the function (pushing arguments on the stack, jumping to the function, popping return arguments, and returning from the function) is roughly similar to the time it takes to execute the function, and when the function is called a lot. When that's not the case, there may be diminishing returns on making it inline. We can try removing the `__forceinline` directive from it to see if it helps the build time. The code for `power`, `sin()` and `cos()` is similar in that the code consists of a loop that will execute many times. We can try removing the `__forceinline` directive from those functions as well.
 
 We rerun Build Insights from the main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project, as before, and not for just the few files may be dirty right now.
 
@@ -136,7 +136,7 @@ Double-click, right-click, or press **Enter** while on a file in the **Functions
 
 ## Troubleshooting
 
-- If the Build Insights window doesn't appear, do a rebuild instead of a build. The Build Insights window doesn't appear if nothing actually builds; which may be the case if no files have changed since the last build.
+- If the Build Insights window doesn't appear, do a rebuild instead of a build. The Build Insights window doesn't appear if nothing actually builds; which may be the case if no files changed since the last build.
 - If the Functions view doesn't show any functions, you may not be building with the right optimization settings. Ensure that you're building Release with full optimizations, as described in [Set build options](#set-build-options). Also, if a function's code generation time is too small, it doesn't appear in the list.
 
 ## See also

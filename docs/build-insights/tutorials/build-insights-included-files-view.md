@@ -14,18 +14,18 @@ Use Build Insights **Included Files** and **Include Tree** views to troubleshoot
 - C++ Build Insights is enabled by default if you install either the Desktop development with C++ workload using the Visual Studio installer:
 
 :::image type="complex" source="./media/installer-desktop-cpp-build-insights.png" alt-text="Screenshot of the Visual Studio Installer with the Desktop development with C++ workload selected.":::
-The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate it's installed.
+The list of installed components is shown. C++ Build Insights is highlighted and is selected which means it's installed.
 :::image-end:::
 
 Or the Game development with C++ workload:
 
 :::image type="complex" source="./media/installer-gamedev-cpp-build-insights.png" alt-text="Screenshot of the Visual Studio Installer with the Game development with C++ workload selected.":::
-The list of installed components is shown. C++ Build Insights is highlighted and is selected to indicate it's installed.
+The list of installed components is shown. C++ Build Insights is highlighted and is selected which means it's installed.
 :::image-end:::
 
 ## Overview
 
-Build Insights, now integrated into Visual Studio, helps you optimize your build times--especially for large projects like triple-A games. When a large header file is parsed, and particularly when it is repeatedly parsed, there's an impact on build time.
+Build Insights, now integrated into Visual Studio, helps you optimize your build times--especially for large projects like triple-A games. When a large header file is parsed, and particularly when it's repeatedly parsed, there's an impact on build time.
 
 Build Insights provides analytics in the **Included Files** view, which helps diagnose the impact of parsing `#include` files in your project. It displays the time it takes to parse each header file and a view of the relationships between header files.
 
@@ -57,10 +57,10 @@ The trace file shows the build time--which for this example was 16.404 seconds. 
 This view shows the time spent processing `#include` files.
 
 :::image type="complex" source="./media/included-files-before-fix.png" alt-text="Screenshot of the included files view":::
-In the file path column, several files with a fire icon are highlighted because they take over 10% of the build time to parse. winrtHeaders.h is the biggest one at 8.581 seconds or 52.3% of the 16.404 second build time.
+In the file path column, several files with a fire icon are highlighted because they take over 10% of the build time to parse. winrtHeaders.h is the biggest one at 8.581 seconds or 52.3% of the 16.404-second build time.
 :::image-end:::
 
-In the **File Path** column, some files have a fire icon next to them to indicate that they take up 10% or more of the build time. The **Time [sec, %]** column shows how long it took to compile each function in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). This metric distributes the wall clock time it takes to parse files based on their use of parallel threads. For example, if two files are being parsed simultaneously by two different threads within a one-second period, each file's WCTR would be recorded as 0.5 seconds. This reflects each file's proportional share of the total compilation time, taking into account the resources each consumed during parallel execution. Thus, WCTR provides a better measure of the impact each file has on the overall build time in environments where multiple compilation activities occur simultaneously.
+In the **File Path** column, some files have a fire icon next to them to indicate that they take up 10% or more of the build time. The **Time [sec, %]** column shows how long it took to compile each function in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). This metric distributes the wall clock time it takes to parse files based on their use of parallel threads. For example, if two different threads are parsing two different files simultaneously within a one-second period, each file's WCTR is recorded as 0.5 seconds. This reflects each file's proportional share of the total compilation time, taking into account the resources each consumed during parallel execution. Thus, WCTR provides a better measure of the impact each file has on the overall build time in environments where multiple compilation activities occur simultaneously.
 
 The **Parse Count** column shows how many time the header file was parsed.
 
@@ -141,9 +141,9 @@ We first clean the project to make sure we're comparing building the same files 
 
 Because this project uses a precompiled header (PCH), we don't want to measure the time spent building the PCH because that only happens once. We do this by loading the `pch.cpp` file and choosing **Ctrl+F7** to build just that file. We could also compile this file by right-clicking `pch.cpp` in the Solution Explorer and choosing `Compile`.
 
-Now we rerun Build Insights in the **Solution Explorer** by right-clicking the project and choosing **Project Only** > **Run Build Insights on Build**. We don't want **Rebuild** this time because that will rebuild the PCH, which we don't want to measure. We cleaned the project earlier which means that a normal build will compile all the project files we want to measure.
+Now we rerun Build Insights in the **Solution Explorer** by right-clicking the project and choosing **Project Only** > **Run Build Insights on Build**. We don't want **Rebuild** this time because that will rebuild the PCH, which we don't want to measure. We cleaned the project earlier, which means that a normal build compiles all the project files we want to measure.
 
-When the ETL files appears, we see that build time went from 16.404 seconds to 6.615 seconds. Put `winrtHeaders.h` into the filter box and nothing appears. This is because the time spent parsing it is now negligible since it's being pulled in via the precompiled header.
+When the ETL files appear, we see that build time went from 16.404 seconds to 6.615 seconds. Put `winrtHeaders.h` into the filter box and nothing appears. This is because the time spent parsing it is now negligible since it's being pulled in via the precompiled header.
 
 :::image type="content" source="./media/included-files-after-fix.png" alt-text="Screenshot of the Include Tree pane in the trace file. winrtHeaders is no longer listed.":::
 
@@ -173,7 +173,7 @@ Conversely, you can right-click a file in the **Include Tree** view to jump to i
 
 ## Troubleshooting
 
-- If the Build Insights window doesn't appear, do a rebuild instead of a build. The Build Insights window doesn't appear if nothing actually builds; which may be the case if no files have changed since the last build.
+- If the Build Insights window doesn't appear, do a rebuild instead of a build. The Build Insights window doesn't appear if nothing actually builds; which may be the case if no files changed since the last build.
 - If a header file you're interested in doesn't appear in the **Included Files** or **Include Tree** views, it either didn't build or its build time isn't significant enough to be listed.
 
 ## See also
