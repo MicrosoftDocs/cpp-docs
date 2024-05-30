@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /volatileMetadata"
 title: "/volatileMetadata (Generate metadata on volatile memory accesses)"
-ms.date: 5/29/2024
+ms.date: 5/30/2024
 f1_keywords: ["/volatileMetadata"]
 helpviewer_keywords: ["/volatileMetadata", "-volatileMetadata compiler option", "/volatileMetadata compiler option", "volatileMetadata"]
 ---
@@ -29,8 +29,6 @@ One side effect of `/volatileMetadata` is you may see `npad` macros used in the 
 `/volatileMetadata` is ignored when targeting x86.
 
 `/volatileMetadata` can be disabled by using `/volatileMetadata-`.
-
-`/volatileMetadata` is ignored when targeting x86.
 
 ## Requirements
 
