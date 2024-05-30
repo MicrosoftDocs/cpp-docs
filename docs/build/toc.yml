@@ -746,6 +746,8 @@ items:
                   href: ../build/reference/vmm-vms-vmv-general-purpose-representation.md
                 - name: /volatile (volatile keyword interpretation)
                   href: ../build/reference/volatile-volatile-keyword-interpretation.md
+                - name: /volatileMetadata
+                  href: ../build/reference/volatile.md
                 - name: /w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning level)
                   href: ../build/reference/compiler-option-warning-level.md
                 - name: /WL (Enable one-line diagnostics)
