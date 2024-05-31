@@ -195,7 +195,12 @@ To fix this warning, either use an equality operator, `value == 9`, if this is w
 
 [LWG-3897](https://wg21.link/lwg3897) `inout_ptr` will not update raw pointer to null. Previously, the `std::inout_ptr_t` destructor didn't update a raw pointer to be `null`, but now it does. This change ensures that the raw pointer is correctly set to `nullptr` when the `std::inout_ptr_t` object goes out of scope.
 
-LWG-3946 #4187 The definition of const_iterator_t should be reworked
+[LWG-3946](https://wg21.link/lwg3946) The definition of `const_iterator_t` should be reworked. In the freestanding library, the definition of `template<range R> using const_iterator_t = const_iterator<iterator_t<R>>` is now `template<range R> using const_iterator_t = decltype(ranges::cbegin(declval<R&>()))`. This change is because `const_iterator_t<R>` doesn't necessarily provide the same type as `decltype(ranges::cbegin(r))`.
+
+[LWG-3947](https://wg21.link/lwg3947) Unexpected constraints on `adjacent_transform_view::base()`. In this change, the constraint on `adjacent_transform_view::base()` was relaxed from `adjacent_view<V,N>` to just `V`.
+
+[LWG-3949](https://wg21.link/lwg3949) `atomic<bool>`'s trivial destructor dropped in C++17 spec wording. `std::atomic<bool>` was originally required to have a trivial default constructor and a trivial destructor. A wording change in C++17 removed the requirement for a trivial destructor. This change reinstates the trivial destructor. One outcome is that `std::atomic<bool>` now has the same guarantees as `std::atomic<int>`.
+
     
 **C++20 changes**
 
