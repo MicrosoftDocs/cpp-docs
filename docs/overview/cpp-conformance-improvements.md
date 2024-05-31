@@ -170,66 +170,6 @@ t.cpp(5): note: if an assignment is intended you can enclose it in parentheses, 
 
 To fix this warning, either use an equality operator, `value == 9`, if this is what was intended, or wrap the assignment in parentheses, `(value = 9)`, if assignment is what is intended. Or, since the function is unreferenced, remove it.
 
----------------------- end /TW for compiler conformance.  START FOR STL
-### C++ Standard Library
-
-**LWG issue resolutions**
-
-[LWG-3749](https://wg21.link/lwg3749) `common_iterator` should handle integer-class difference types. Previously, given:
-    ```cpp
-    template<input_iterator I, class S>
-    struct iterator_traits<common_iterator<I, S>>
-    {
-      using iterator_concept = see below;
-      using iterator_category = see below;
-      using value_type = iter_value_t<I>;
-      using difference_type = iter_difference_t<I>;
-      using pointer = see below;
-      using reference = iter_reference_t<I>;
-    };
-    ```
-    
-    Where `difference_type` is defined as `iter_difference_t<I>` and `iterator_category` is defined as at least `input_iterator_tag`. However, when `difference_type` is an integer-class type, `common_iterator` didn't satisfy `Cpp17InputIterator`, defining `iterator_category` incorrectly as `input_iterator_tag`. This issue is resolved by defining `difference_type` as `ptrdiff_t` when `iter_difference_t<I>` is an integer-class type.
-
-[LWG-3809](https://wg21.link/lwg3809) `subtract_with_carry_engine<uint16_t>` now works. Previously, `subtract_with_carry_engine<uint16_t>` didn't work because the `subtract_with_carry_engine` template was specialized for `uint32_t` and `uint64_t` only. This issue is resolved by adding a specialization for `uint16_t`.
-
-[LWG-3897](https://wg21.link/lwg3897) `inout_ptr` will not update raw pointer to null. Previously, the `std::inout_ptr_t` destructor didn't update a raw pointer to be `null`, but now it does. This change ensures that the raw pointer is correctly set to `nullptr` when the `std::inout_ptr_t` object goes out of scope.
-
-[LWG-3946](https://wg21.link/lwg3946) The definition of `const_iterator_t` should be reworked. In the freestanding library, the definition of `template<range R> using const_iterator_t = const_iterator<iterator_t<R>>` is now `template<range R> using const_iterator_t = decltype(ranges::cbegin(declval<R&>()))`. This change is because `const_iterator_t<R>` doesn't necessarily provide the same type as `decltype(ranges::cbegin(r))`.
-
-[LWG-3947](https://wg21.link/lwg3947) Unexpected constraints on `adjacent_transform_view::base()`. In this change, the constraint on `adjacent_transform_view::base()` was relaxed from `adjacent_view<V,N>` to just `V`.
-
-[LWG-3949](https://wg21.link/lwg3949) `atomic<bool>`'s trivial destructor dropped in C++17 spec wording. `std::atomic<bool>` was originally required to have a trivial default constructor and a trivial destructor. A wording change in C++17 removed the requirement for a trivial destructor. This change reinstates the trivial destructor. One outcome is that `std::atomic<bool>` now has the same guarantees as `std::atomic<int>`.
-
-    
-**C++20 changes**
-
-- Defect report [P2905R2](https://wg21.link/P2905R2) Runtime Format Strings. Now `make_format_args` takes lvalue references instead of forwarding references, which means the following problematic code no longer compiles:
-    ```cpp
-    std::filesystem::path path = "path/etic/experience";
-    auto args = std::make_format_args(path.string()); // undefined behavior because format arguments store a reference to a temporary that is destroyed before use.
-    ```
-- [P2909R4](https://wg21.link/P2909R4) Fix Formatting Of Code Units As Integers. When `std::format` formats `char` as an integer via `d` and `x`, it now takes the signedness of char into account. This is a breaking change that only affects the output of negative/large code units when output via opt-in format specifiers. The output is no longer implementation-defined making code porting more reliable. For example:
-    ```cpp
-    for (char c : std::string("🤷"))
-    {
-        std::print("\\x{:02x}", c);
-    }
-    ```
-
-    This code would output `\xf0\x9f\xa4\xb7` or `\x-10\x-61\x-5c\x-49` depending on platform. Now ...
-
-**C++23 changes**
-
-- [P2836R1](https://wg21.link/P2836R1) `basic_const_iterator` should follow its underlying type's convertibility. Now `basic_const_iterator<I>` is implicitly convertible to any constant iterator that `I` can be implicitly and explicitly convertible to.
-- [P2286R8](https://wg21.link/P2286R8) Formatting Ranges: Implemented `formatter<vector<bool>::reference>`.
-
-**C++26 changes**
-
-- [P2510R3](https://wg21.link/P2510R3) Formatting Pointers: The number of formatting options for pointer types is limited when compared to integer types. This change makes formatting pointer types more useful, reducing the need for to write your own formatters or cast a pointer type to an integer type.
-- [P2937R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2937r0.html) Remove `strtok` from the freestanding library. It is still available in the hosted environment.
----------------------- /TW
-
 ## <a name="improvements_179"></a> Conformance improvements in Visual Studio 2022 version 17.9
 
 Visual Studio 2022 version 17.9 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
