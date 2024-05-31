@@ -21,8 +21,6 @@ Visual Studio 2022 version 17.10 contains the following conformance improvements
 
 For an in-depth summary of changes made to the Standard Template Library, including bug fixes and performance improvements, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
 
----------------------- TW
-
 ### Conversion operator specialization with explicitly specified return type
 
 The compiler used to specialize conversion operators incorrectly in some cases which can lead to mismatched return type. These invalid specializations no longer happen. This is a source code breaking change.
