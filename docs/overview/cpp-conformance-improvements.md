@@ -19,14 +19,13 @@ For changes in older versions, see [Visual C++ What's New 2003 through 2015](../
 
 Visual Studio 2022 version 17.10 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
-For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
+For an in-depth summary of changes made to the Standard Template Library, including bug fixes and performance improvements, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
 
 ---------------------- TW
+
 ### Conversion operator specialization with explicitly specified return type
 
-This is a source code breaking change. The compiler used to specialize these conversion operators incorrectly in some cases which can lead to mismatched return type. These invalid specializations no longer happen.
-
-#### Example (before/after)
+The compiler used to specialize conversion operators incorrectly in some cases which can lead to mismatched return type. These invalid specializations no longer happen. This is a source code breaking change.
 
 ```cpp
 // Example 1
@@ -51,7 +50,8 @@ struct S
     template <typename T> operator const T*(); // overload 2
 };
 
-void test() {
+void test()
+{
     S{}.operator int*(); // this used to call overload 2, now it calls overload 1
 }
 ```
@@ -60,8 +60,6 @@ void test() {
 
 Support added for WG21 p2334r1 (C++23) and WG14 n2645 (C23) which introduced the `#elifdef` and `#elifndef` preprocessor directives.
 Requires `/std:clatest` or `/std:c++latest`.
-
-#### Example (before/after)
 
 Before:
 
@@ -87,73 +85,72 @@ After:
 #endif
 ```
 
-# Application of `_Alignas` on a structured type in C (also added to 17.9) <!-- Sound-bite description of the change -->
+### Application of `_Alignas` on a structured type in C
 
-<!-- Metadata -->
-| Source/Binary Breaking Change? | Compiler mode | Backward compatible? | EDG Behavior | Commit |
-| ------------------------------ | ------------- | -------------------- | ------------ | ------ |
-| Yes                            | C (C17 and later) |  No             |  Unchanged     | fe_20231031.02|
+Applies to the C language (C17 and later). Also added to Microsoft Visual Studio 17.9
 
-### Description/Rationale
-In versions of Visual C++ before Visual Studio 2022 version 17.9, when the `_Alignas` specifier appeared adjacent to a structured type in a declaration, it was not applied correctly according to the ISO-C Standard.
+In versions of Visual C++ before Visual Studio 2022 version 17.9, when the `_Alignas` specifier appeared adjacent to a structured type in a declaration, it wasn't applied correctly according to the ISO-C Standard.
 
-### Example
-```
+```cpp
 // compile with /std:c17
 #include <stddef.h>
-struct Outer {
+
+struct Outer
+{
     _Alignas(32) struct Inner { int i; } member1;
     struct Inner member2;
 };
 static_assert(offsetof(struct Outer, member2)==4, "incorrect alignment");
 ```
 
-According to the ISO-C Standard, this code should compile without the 'static_assert' emitting a diagnostic.  The '_Alignas' directive applies only to the member variable 'member1'.  It must not change the alignment of 'struct Inner'. However, before release 17.9.1 of Visual Studio, the diagnostic "incorrect alignment" would be emitted.  The compiler would align 'member2' to an offset of 32 bytes within the 'struct Outer' type.
+According to the ISO-C Standard, this code should compile without `static_assert` emitting a diagnostic.
 
-Since fixing this bug is a binary breaking change, a warning is now emitted when this change takes effect.  Warning C5274 is now emitted at warning level 1 for the code above:
-```
+The `_Alignas` directive applies only to the member variable `member1`.  It must not change the alignment of `struct Inner`. However, before Visual Studio 17.9.1, the diagnostic "incorrect alignment" was emitted. The compiler  aligned `member2` to an offset of 32 bytes within the `struct Outer` type.
+
+This is a binary breaking change, so a warning is now emitted when this change takes effect.  Warning C5274 is now emitted at warning level 1 for the previous code:
+
+```cpp
 warning C5274: behavior change: _Alignas no longer applies to the type 'Inner' (only applies to declared data objects)
 ```
-A second fix was made to _Alignof in this release.  In previous versions of Visual Studio, when the _Alignas specifier appeared adjacent to an anonymous type declaration, it was ignored.
-###Example
-```
+
+Also, in previous versions of Visual Studio, when the `_Alignas` specifier appeared adjacent to an anonymous type declaration, it was ignored.
+
+```cpp
 // compile with /std:c17
 #include <stddef.h>
-struct S {
+struct S
+{
     _Alignas(32) struct { int anon_member; };
     int k;
 };
+
 static_assert(offsetof(struct S, k)==4, "incorrect offsetof");
 static_assert(sizeof(struct S)==32, "incorrect size");
 ```
-Previously, both `static_assert` statements would fail when this code was compiled.  Now the code will compile, but with the following level 1 warnings emitted:
-```
+
+Previously, both `static_assert` statements failed when compiling this code. Now the code compiles, but emits the following level 1 warnings:
+
+```cpp
 warning C5274: behavior change: _Alignas no longer applies to the type '<unnamed-tag>' (only applies to declared data objects)
 warning C5273: behavior change: _Alignas on anonymous type no longer ignored (promoted members will align)
 ```
-The previous behavior can be achieved by replacing uses of `_Alignas(N)` with `__declspec(align(N))`.  This declspec is a documented feature of Visual C and C++ for many releases.  Unlike `_Alignas`, use of `declspec(align)` will apply to the type.
 
-# Improved Warning C4706
+To get the previous behavior, replace `_Alignas(N)` with `__declspec(align(N))`. Unlike `_Alignas`, `declspec(align)` applies to the type.
 
-<!-- Metadata -->
-| Source/Binary Breaking Change? | Compiler mode | Backward compatible? | EDG Behavior | Commit |
-| ------------------------------ | ------------- | -------------------- | ------------ | ------ |
-|  Yes                               | All               |  Yes                     |     N/A         |   fe_20240221.03     |
+### Improved warning C4706
 
-### Description/Rationale
+This is a source code breaking change. Previously, the compiler didn't detect the convention for suppressing the warning. That is, wrapping the assignment in parentheses (if an assignment really was intended). The compiler now detects the parentheses and suppresses the warning.
 
-Previously this warning was emitted by the optimizer, c2.dll: one side-effect of this was that the compiler could not detect the convention for suppressing the warning: i.e., wrapping the assignment in parentheses (if an assignment really was intended). By moving the warning from the optimizer to the parser, c1.dll or c1xx.dll, the compiler can now detect the parentheses and hence suppress the warning in these cases.
+The compiler now also emits the warning in cases where the function isn't referenced.
 
-When the warning was in the optimizer it would only check functions that were, in some way, referenced and hence passed to the optimizer to process. If a function was not referenced, then the optimizer would never see it and the warning would not be emitted.
-
-Now that the warning is in the parser it will be emitted for all functions regardless of whether they are referenced or not.
-
-### Example
-```
+```cpp
+// example
 #pragma warning(error: 4706)
 
-struct S {
-   auto mf() {
+struct S
+{
+   auto mf()
+   {
       if (value = 9)
          return value + 4;
       else
@@ -163,13 +160,69 @@ struct S {
    int value = 9;
 };
 ```
-Previously, as 'mf' is an inline function that is never referenced, it would not be passed to the optimizer and hence warning C4706 would not be emitted for this code: but now that the parser is being used to detect this situation the warning is emitted.
-```
+
+Previously, because `mf` is an inline function that isn't referenced, warning C4706 wasn't emitted for this code. Now the warning is emitted:
+
+```cpp
 t.cpp(5): error C4706: assignment used as a condition
 t.cpp(5): note: if an assignment is intended you can enclose it in parentheses, '(e1 = e2)', to silence this warning
 ```
-The fix is to either switch to an equality operator, 'value == 9', if this is what was intended, or to wrap the assignment in parentheses, '(value = 9)', if an assignment really was intended. Or, as the function is unreferenced, it can be removed.
 
+To fix this warning, either use an equality operator, `value == 9`, if this is what was intended, or wrap the assignment in parentheses, `(value = 9)`, if assignment is what is intended. Or, since the function is unreferenced, remove it.
+
+---------------------- end /TW for compiler conformance.  START FOR STL
+### C++ Standard Library
+
+**LWG issue resolutions**
+
+[LWG-3749](https://wg21.link/lwg3749) `common_iterator` should handle integer-class difference types. Previously, given:
+    ```cpp
+    template<input_iterator I, class S>
+    struct iterator_traits<common_iterator<I, S>>
+    {
+      using iterator_concept = see below;
+      using iterator_category = see below;
+      using value_type = iter_value_t<I>;
+      using difference_type = iter_difference_t<I>;
+      using pointer = see below;
+      using reference = iter_reference_t<I>;
+    };
+    ```
+    
+    Where `difference_type` is defined as `iter_difference_t<I>` and `iterator_category` is defined as at least `input_iterator_tag`. However, when `difference_type` is an integer-class type, `common_iterator` didn't satisfy `Cpp17InputIterator`, defining `iterator_category` incorrectly as `input_iterator_tag`. This issue is resolved by defining `difference_type` as `ptrdiff_t` when `iter_difference_t<I>` is an integer-class type.
+
+[LWG-3809](https://wg21.link/lwg3809) `subtract_with_carry_engine<uint16_t>` now works. Previously, `subtract_with_carry_engine<uint16_t>` didn't work because the `subtract_with_carry_engine` template was specialized for `uint32_t` and `uint64_t` only. This issue is resolved by adding a specialization for `uint16_t`.
+
+[LWG-3897](https://wg21.link/lwg3897) `inout_ptr` will not update raw pointer to null. Previously, the `std::inout_ptr_t` destructor didn't update a raw pointer to be `null`, but now it does. This change ensures that the raw pointer is correctly set to `nullptr` when the `std::inout_ptr_t` object goes out of scope.
+
+LWG-3946 #4187 The definition of const_iterator_t should be reworked
+    
+**C++20 changes**
+
+- Defect report [P2905R2](https://wg21.link/P2905R2) Runtime Format Strings. Now `make_format_args` takes lvalue references instead of forwarding references, which means the following problematic code no longer compiles:
+    ```cpp
+    std::filesystem::path path = "path/etic/experience";
+    auto args = std::make_format_args(path.string()); // undefined behavior because format arguments store a reference to a temporary that is destroyed before use.
+    ```
+- [P2909R4](https://wg21.link/P2909R4) Fix Formatting Of Code Units As Integers. When `std::format` formats `char` as an integer via `d` and `x`, it now takes the signedness of char into account. This is a breaking change that only affects the output of negative/large code units when output via opt-in format specifiers. The output is no longer implementation-defined making code porting more reliable. For example:
+    ```cpp
+    for (char c : std::string("🤷"))
+    {
+        std::print("\\x{:02x}", c);
+    }
+    ```
+
+    This code would output `\xf0\x9f\xa4\xb7` or `\x-10\x-61\x-5c\x-49` depending on platform. Now ...
+
+**C++23 changes**
+
+- [P2836R1](https://wg21.link/P2836R1) `basic_const_iterator` should follow its underlying type's convertibility. Now `basic_const_iterator<I>` is implicitly convertible to any constant iterator that `I` can be implicitly and explicitly convertible to.
+- [P2286R8](https://wg21.link/P2286R8) Formatting Ranges: Implemented `formatter<vector<bool>::reference>`.
+
+**C++26 changes**
+
+- [P2510R3](https://wg21.link/P2510R3) Formatting Pointers: The number of formatting options for pointer types is limited when compared to integer types. This change makes formatting pointer types more useful, reducing the need for to write your own formatters or cast a pointer type to an integer type.
+- [P2937R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2937r0.html) Remove `strtok` from the freestanding library. It is still available in the hosted environment.
 ---------------------- /TW
 
 ## <a name="improvements_179"></a> Conformance improvements in Visual Studio 2022 version 17.9
