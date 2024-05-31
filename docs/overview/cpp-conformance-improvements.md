@@ -23,7 +23,7 @@ For an in-depth summary of changes made to the Standard Template Library, includ
 
 ### Conversion operator specialization with explicitly specified return type
 
-The compiler used to specialize conversion operators incorrectly in some cases which can lead to mismatched return type. These invalid specializations no longer happen. This is a source code breaking change.
+The compiler used to specialize conversion operators incorrectly in some cases which could lead to mismatched return type. These invalid specializations no longer happen. This is a source code breaking change.
 
 ```cpp
 // Example 1
@@ -56,7 +56,7 @@ void test()
 
 ### Added Support for `#elifdef` and `#elifndef`
 
-Support added for WG21 p2334r1 (C++23) and WG14 n2645 (C23) which introduced the `#elifdef` and `#elifndef` preprocessor directives.
+Support added for WG21 [P2334R1](https://www.open-std.org/JTC1/SC22/WG21/docs/papers/2021/p2334r1.pdf) (C++23) and WG14 [N2645](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2645.pdf) (C23) which introduced the `#elifdef` and `#elifndef` preprocessor directives.
 Requires `/std:clatest` or `/std:c++latest`.
 
 Before:
@@ -87,7 +87,7 @@ After:
 
 Applies to the C language (C17 and later). Also added to Microsoft Visual Studio 17.9
 
-In versions of Visual C++ before Visual Studio 2022 version 17.9, when the `_Alignas` specifier appeared adjacent to a structured type in a declaration, it wasn't applied correctly according to the ISO-C Standard.
+In versions of Visual C++ before Visual Studio 2022 version 17.9, if the `_Alignas` specifier appeared adjacent to a structured type in a declaration, it wasn't applied correctly according to the ISO-C Standard.
 
 ```cpp
 // compile with /std:c17
@@ -137,12 +137,9 @@ To get the previous behavior, replace `_Alignas(N)` with `__declspec(align(N))`.
 
 ### Improved warning C4706
 
-This is a source code breaking change. Previously, the compiler didn't detect the convention for suppressing the warning. That is, wrapping the assignment in parentheses (if an assignment really was intended). The compiler now detects the parentheses and suppresses the warning.
-
-The compiler now also emits the warning in cases where the function isn't referenced.
+This is a source code breaking change. Previously, the compiler didn't detect the convention of wrapping an assignment in parentheses, if assignment was intended, to suppress the warning. The compiler now detects the parentheses and suppresses the warning.
 
 ```cpp
-// example
 #pragma warning(error: 4706)
 
 struct S
@@ -159,14 +156,14 @@ struct S
 };
 ```
 
-Previously, because `mf` is an inline function that isn't referenced, warning C4706 wasn't emitted for this code. Now the warning is emitted:
+The compiler now also emits the warning in cases where the function isn't referenced. Previously, because `mf` is an inline function that isn't referenced, warning C4706 wasn't emitted for this code. Now the warning is emitted:
 
 ```cpp
 t.cpp(5): error C4706: assignment used as a condition
 t.cpp(5): note: if an assignment is intended you can enclose it in parentheses, '(e1 = e2)', to silence this warning
 ```
 
-To fix this warning, either use an equality operator, `value == 9`, if this is what was intended, or wrap the assignment in parentheses, `(value = 9)`, if assignment is what is intended. Or, since the function is unreferenced, remove it.
+To fix this warning, either use an equality operator, `value == 9`, if this is what was intended. Or, wrap the assignment in parentheses, `(value = 9)`, if assignment is intended. Otherwise, since the function is unreferenced, remove it.
 
 ## <a name="improvements_179"></a> Conformance improvements in Visual Studio 2022 version 17.9
 
