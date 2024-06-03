@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: /ASSEMBLYDEBUG (Add DebuggableAttribute)"
+description: "Learn more about: /LINKREPROFULLPATHRSP (Generate absolute paths for linked files))"
 title: "/LINKREPROFULLPATHRSP (Generate absolute paths for linked files)"
 ms.date: 06/3/2024
 f1_keywords: ["VC.Project.VCLinkerTool.LinkReproFullPathRSP", "/LINKREPROFULLPATHRSP"]
@@ -9,7 +9,7 @@ helpviewer_keywords: ["/LINKREPROFULLPATHRSP linker option", "-LINKREPROFULLPATH
 
  Generates a response file (.RSP) containing the absolute paths to all the files that the linker took as input.
 
-This flag was introduced in Visual Studio 2022 version 17.11 Preview 2.
+This flag was introduced in Visual Studio 2022 version 17.11.
 
 ## Syntax
 
