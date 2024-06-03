@@ -640,6 +640,8 @@ items:
                   href: ../build/reference/kernel-create-kernel-mode-binary.md
                 - name: /link (Pass options to linker)
                   href: ../build/reference/link-pass-options-to-linker.md
+                - name: /LINKREPROFULLPATHRSP (Generate absolute paths for linked files)
+                  href: ../build/reference/link-repro-full-path-rsp.md
                 - name: /LN (Create MSIL module)
                   href: ../build/reference/ln-create-msil-module.md
                 - name: /MD, /MT, /LD (Use Run-time library)
