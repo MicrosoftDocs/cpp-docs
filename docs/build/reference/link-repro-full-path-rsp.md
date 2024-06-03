@@ -19,7 +19,10 @@ This flag was introduced in Visual Studio 2022 version 17.11.
 
 Rather than generating a full link repro like `/LINKREPRO` (copying all the files to a directory and creating a response file with relative paths to that directory), this option writes the names of the files used during linking to the specified file.
 
-For example, given a directory `c:\temp\test` which contains the files `test.cpp`, `f1.cpp`, `f2.cpp` and the linker command line: `link f1.obj f2.obj test.obj /out:test.exe /LINKREPROFULLPATHRSP:test.rsp`, the file `test.rsp` that the linker generates contains the following lines to reflect the fully qualified paths of the input files:
+For example, given:
+- a directory `c:\temp\test`, that contains the files `test.cpp`, `f1.cpp`, `f2.cpp`
+- the linker command line: `link f1.obj f2.obj test.obj /out:test.exe /LINKREPROFULLPATHRSP:test.rsp`
+Then the linker produces the file `test.rsp` containing the following lines to reflect the fully qualified paths of the input files:
 
 ```cmd
 "c:\temp\test\f1.obj"
