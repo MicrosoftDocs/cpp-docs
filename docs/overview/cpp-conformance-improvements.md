@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 02/20/2024
+ms.date: 05/31/2024
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -14,6 +14,153 @@ This document lists the changes in Visual Studio 2022.
 For changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).\
 For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).\
 For changes in older versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+
+## <a name="improvements_1710"></a> Conformance improvements in Visual Studio 2022 version 17.10
+
+Visual Studio 2022 version 17.10 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes and performance improvements, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
+
+### Conversion operator specialization with explicitly specified return type
+
+The compiler used to specialize conversion operators incorrectly in some cases which could lead to a mismatched return type. These invalid specializations no longer happen. This is a source code breaking change.
+
+```cpp
+// Example 1
+struct S
+{
+    template<typename T> operator const T*();
+};
+
+void test()
+{
+    S{}.operator int*(); // this is invalid now
+    S{}.operator const int*(); // this is valid
+}
+```
+
+```cpp
+// Example 2
+// In some cases, the overload resolution result may change
+struct S
+{
+    template <typename T> operator T*(); // overload 1
+    template <typename T> operator const T*(); // overload 2
+};
+
+void test()
+{
+    S{}.operator int*(); // this used to call overload 2, now it calls overload 1
+}
+```
+
+### Added Support for `#elifdef` and `#elifndef`
+
+Support added for WG21 [P2334R1](https://www.open-std.org/JTC1/SC22/WG21/docs/papers/2021/p2334r1.pdf) (C++23) and WG14 [N2645](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2645.pdf) (C++23) which introduced the `#elifdef` and `#elifndef` preprocessor directives.
+Requires `/std:clatest` or `/std:c++latest`.
+
+Before:
+
+```cpp
+#ifdef __cplusplus
+  #include <atomic>
+#elif !defined(__STDC_NO_ATOMICS__)
+  #include <stdatomic.h>
+#else
+  #include <custom_atomics_library.h>
+#endif
+```
+
+After:
+
+```cpp
+#ifdef __cplusplus
+  #include <atomic>
+#elifndef __STDC_NO_ATOMICS__
+  #include <stdatomic.h>
+#else
+  #include <custom_atomics_library.h>
+#endif
+```
+
+### Application of `_Alignas` on a structured type in C
+
+Applies to the C language (C17 and later). Also added to Microsoft Visual Studio 17.9
+
+In versions of Visual C++ before Visual Studio 2022 version 17.9, if the `_Alignas` specifier appeared adjacent to a structured type in a declaration, it wasn't applied correctly according to the ISO-C Standard.
+
+```cpp
+// compile with /std:c17
+#include <stddef.h>
+
+struct Outer
+{
+    _Alignas(32) struct Inner { int i; } member1;
+    struct Inner member2;
+};
+static_assert(offsetof(struct Outer, member2)==4, "incorrect alignment");
+```
+
+According to the ISO-C Standard, this code should compile without `static_assert` emitting a diagnostic.
+
+The `_Alignas` directive applies only to the member variable `member1`. It must not change the alignment of `struct Inner`. However, before Visual Studio 17.9.1, the diagnostic "incorrect alignment" was emitted. The compiler aligned `member2` to an offset of 32 bytes within the `struct Outer` type.
+
+This is a binary breaking change, so a warning is now emitted when this change takes effect. Warning C5274 is now emitted at warning level 1 for the previous example: `
+warning C5274: behavior change: _Alignas no longer applies to the type 'Inner' (only applies to declared data objects)`.
+
+Also, in previous versions of Visual Studio, when the `_Alignas` specifier appeared adjacent to an anonymous type declaration, it was ignored.
+
+```cpp
+// compile with /std:c17
+#include <stddef.h>
+struct S
+{
+    _Alignas(32) struct { int anon_member; };
+    int k;
+};
+
+static_assert(offsetof(struct S, k)==4, "incorrect offsetof");
+static_assert(sizeof(struct S)==32, "incorrect size");
+```
+
+Previously, both `static_assert` statements failed when compiling this code. Now the code compiles, but emits the following level 1 warnings:
+
+```c
+warning C5274: behavior change: _Alignas no longer applies to the type '<unnamed-tag>' (only applies to declared data objects)
+warning C5273: behavior change: _Alignas on anonymous type no longer ignored (promoted members will align)
+```
+
+To get the previous behavior, replace `_Alignas(N)` with `__declspec(align(N))`. Unlike `_Alignas`, `declspec(align)` applies to the type.
+
+### Improved warning C4706
+
+This is a source code breaking change. Previously, the compiler didn't detect the convention of wrapping an assignment in parentheses, if assignment was intended, to suppress [warning C4706](../error-messages/compiler-warnings/compiler-warning-level-4-c4706.md) about assignment within a conditional expression. The compiler now detects the parentheses and suppresses the warning.
+
+```cpp
+#pragma warning(error: 4706)
+
+struct S
+{
+   auto mf()
+   {
+      if (value = 9)
+         return value + 4;
+      else
+         return value;
+   }
+
+   int value = 9;
+};
+```
+
+The compiler now also emits the warning in cases where the function isn't referenced. Previously, because `mf` is an inline function that isn't referenced, warning C4706 wasn't emitted for this code. Now the warning is emitted:
+
+```cpp
+error C4706: assignment used as a condition
+note: if an assignment is intended you can enclose it in parentheses, '(e1 = e2)', to silence this warning
+```
+
+To fix this warning, either use an equality operator, `value == 9`, if this is what was intended. Or, wrap the assignment in parentheses, `(value = 9)`, if assignment is intended. Otherwise, since the function is unreferenced, remove it.
 
 ## <a name="improvements_179"></a> Conformance improvements in Visual Studio 2022 version 17.9
 
@@ -566,7 +713,7 @@ int main(void)
 
 In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression when it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
 
-This change is a source breaking change. It applies in any mode that implies **`/permissive-`** or **`/Zc:static_assert`**.  This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
+This change is a source breaking change. It applies in any mode that implies **`/permissive-`** or **`/Zc:static_assert`**. This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
 
 #### Example
 
