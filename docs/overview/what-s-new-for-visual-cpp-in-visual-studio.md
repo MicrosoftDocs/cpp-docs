@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 02/21/2024
+ms.date: 06/6/2024
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 ms.custom: intro-whats-new
@@ -12,12 +12,42 @@ ms.custom: intro-whats-new
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
 
 - For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true).
-- For an overview of C++ improvements in Visual Studio, VS Code, and vcpkg during 2023, see [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg)
 - For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md).
+- For information about version build dates, see [Visual Studio 2022 Release History](https://learn.microsoft.com/visualstudio/releases/2022/release-history).
+
+## What's new for C++ in Visual Studio version 17.10
+
+*Released May 2024*
+
+Briefly, a few of the new features are:
+
+- **MSVC Toolset Update**: The MSVC toolset version is updated from 19.39 to 19.40. This may affect projects that have version assumptions.
+- **Standard Library Enhancements**: The standard library now includes formatting pointers from C++26 and performance improvements such as vectorized `std::min_element`.
+- **Build Insights**: Now provides template instantiation information.
+- **Unreal Engine Plugin**: There is a new opt-in feature for the Unreal Engine Plugin to run in the background, reducing startup costs.
+- **CMake Targets**: You can now pin targets in the CMake Targets View.
+- **Connection Manager UX**: The user experience provides a more seamless experience when connecting to remote systems.
+- **Pull Request Comments**: You can now view GitHub and Azure DevOps comments directly in your working file.
+- **AI-Generated Content**: GitHub Copilot can now draft pull request descriptions.
+- **Image Preview**: You can hover over an image path to see a preview with size details.
+- **Breakpoint/Tracepoint Creation**: You can now create breakpoints and tracepoints directly from expressions in the source code.
+- **Attach to Process Dialog**: The functionality provided by the Attach to Process dialog is improved and is more user-friendly.
+- **GitHub Copilot Integration**: There is a unified experience with Copilot Chat in Visual Studio.
+
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.10](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-10/) |
+| Standard Library (STL): Merged C++26, C+23, C++20 defect reports, LWG issue resolutions, and fixed bugs | [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
+| New features in the Visual Studio 17.10 IDE |[Visual Studio 2022 version 17.10 Release Notes](/visualstudio/releases/2022/release-notes) |
+| C++ language conformance improvements in Visual Studio 2022 17.10 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_1710) |
 
 ## What's new for C++ in Visual Studio version 17.9
 
-Briefly, some of the new features are:
+*Released Feb 2024*
+
+For an overview of C++ improvements in Visual Studio, VS Code, and vcpkg during 2023, see [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg)
+
+Briefly, a few of the new features are:
 
 - `#include` diagnostics, which provides a detailed analysis of your `#include` directives. Activate this feature by right-clicking an `#include` and choosing **#include directives** > **Turn #include directive diagnostics on**. Above each `#include` is the number of times your code references that `#include` file. Click the **reference** link to navigate to where your code uses something from that header file. To view the build time of your `#include` directives, run Build Insights by navigating to **Build** > **Run Build Insights on Solution** > **Build**.
     :::image type="complex" source="media/include-diagnostics.png" alt-text="Screenshot of #include diagnostics":::
@@ -44,7 +74,9 @@ For a summary of new features in the Visual Studio 17.9 IDE, see [Visual Studio 
 
 ## What's new for C++ in Visual Studio version 17.8
 
-Briefly, some of the new features are:
+*Released Nov 2023*
+
+Briefly, a few of the new features are:
 
 - C++ structured diagnostics in the Output window and a new problem details window that provides more information about the error. For more information, see [Structured SARIF Output](../build/reference/sarif-output.md) and [Problem Details Window](/visualstudio/ide/reference/problem-details-window).
 - A feature that lets you visualize the size and alignment of your classes, structs, unions, base types, or enums even before the code is compiled. Hover over the identifier and a Quick Info displays the size and alignment information.
@@ -63,9 +95,11 @@ For a summary of new features in the Visual Studio 17.8 IDE, see [Visual Studio 
 
 ## What's new for C++ in Visual Studio version 17.7
 
+*Released Aug 2023*
+
 For a summary of new C++ features in Visual Studio 17.7, see [What’s New for C++ Developers in Visual Studio 2022 17.7](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-7/).
 
-Briefly, some of the new features are:
+Briefly, *some* of the new features are:
 * Faster debugging sessions and faster project load times
 * Step-by-step visualization of macro expansion
 * One-click download for Windows Subsystem for Linux (WSL)
@@ -80,6 +114,8 @@ For a summary of new features in the Visual Studio 17.7 IDE, see [Visual Studio 
 
 ## What's new for C++ in Visual Studio version 17.6
 
+*Released May 2023*
+
 For a summary of new C++ features in Visual Studio 17.6, see [What’s New for C++ Developers in Visual Studio 2022 17.6](https://devblogs.microsoft.com/cppblog/visual-studio-17-6-for-cpp-devs/).
 
 Briefly, some of the new features are: CMake script debugging, built-in support for High Level Shading Language (HLSL), an Unreal Engine Log viewer, initial support for C++20 in C++/CLI projects, VCPKG is now added by default, and some C++23 standard library features for ranges. To see a full list of new features added to the standard library, see the [STL changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-176).
@@ -88,39 +124,28 @@ For a summary of new features in Visual Studio 17.6 IDE, see [Visual Studio 2022
 
 ## What's new for C++ in Visual Studio version 17.5
 
+*Released Feb 2023*
+
 For a summary of new C++ features in Visual Studio in version 17.5, see [What’s New for C++ Developers in Visual Studio 2022 17.5](https://devblogs.microsoft.com/cppblog/visual-studio-17-5-for-cpp-devs/).
+
 For a summary of new features and bug fixes in the Visual Studio IDE version 17.5, see [Visual Studio 2022 version 17.5 Release Notes](/visualstudio/releases/2022/release-notes-v17.5).
 
 - `std::move`, `std::forward`, `std::move_if_noexcept`, and `std::forward_like` now don't produce function calls in generated code, even in debug mode. This change avoids named casts causing unnecessary overhead in debug builds. `/permissive-` (or an option that implies it, such as `/std:c++20` or `std:c++latest`) is required.
 
-- Added [`[[msvc::intrinsic]]`](../cpp/attributes.md#msvcintrinsic) to support the above item. You can apply this attribute to nonrecursive functions consisting of a single cast, which take only one parameter.
-
+- Added [`[[msvc::intrinsic]]`](../cpp/attributes.md#msvcintrinsic). You can apply this attribute to nonrecursive functions consisting of a single cast, which take only one parameter.
 - Added support for Linux Console in the Integrated Terminal, which allows for terminal I/O.
-
 - Added initial experimental support for C11 atomic primitives (`<stdatomic.h>`). You can enable this experimental feature with the `/experimental:c11atomics` option in `/std:c11` mode or later.
-
 - Added a new set of experimental high-confidence checks to the Lifetime Checker for reduced noise.
-
 - A new preview feature, Remote File Explorer, lets you view the file directory on your remote machines within VS, and upload and download files to it.
-
 - Changed versioning of CMake executables shipped with Visual Studio to match Kitware versions.
-
 - Added support for Hot Reload to the CMake Project template.
-
 - Go To Definition for C++ now uses a more subtle indicator of the operation taking more time, replacing the modal dialog from previous versions.
-
 - Started rollout of an experiment providing more smart results in the C++ autocompletion and member list. This functionality was previously known as Predictive IntelliSense but now uses a new presentation method.
-
 - We now ship a native Arm64 Clang toolset with our LLVM workload, allowing native compilation on Arm64 machines.
-
 - Added localization to the [Image Watch Extension](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatchForVisualStudio2022) (This extension is available in the Marketplace, and isn't bundled through the Visual Studio Installer).
-
 - Added support for opening a Terminal window into the currently running Developer Container.
-
 - Made several improvements to IntelliSense macro expansion. Notably, we enabled recursive expansion in more contexts, and we added options to the pop up to copy the expansion to the clipboard or expand the macro inline.
-
 - Concurrent monitoring is now supported in the Serial Monitor. Concurrent monitoring allows you to monitor multiple ports at the same time side by side. Press the plus button to open another Serial Monitor and get started.
-
 - You can now view properties from base classes modified in an Unreal Blueprint asset without leaving Visual Studio. Double-click in a Blueprint reference for a C++ class or property to open the UE Asset Inspector in Visual Studio.
 - Enabled running DevContainers on a remote Linux machine.
 - Enabled selection of multiple targets to build in the CMake Targets view.
@@ -135,40 +160,31 @@ For a summary of new features and bug fixes in the Visual Studio IDE version 17.
 
 ## What's new for C++ in Visual Studio version 17.4
 
+*Released Nov 2022*
+
 For a summary of new features and bug fixes in Visual Studio in version 17.4, see [Visual Studio 2022 version 17.4 Release Notes](/visualstudio/releases/2022/release-notes-v17.4) and [What’s New for C++ Developers in Visual Studio 2022 17.4](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-4/).
 
+For a summary of C++ backend updates, see [MSVC Backend updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/).
+
 - Improved compiler error messages to provide more correct and useful information, especially for concepts.
-
 - Added experimental MSVC option [`/experimental:log<directory>`](../build/reference/experimental-log.md) to output [structured SARIF diagnostics](../build/reference/sarif-output.md) to the specified directory.
-
 - Added support for C23 attributes to IntelliSense and continued progress in C++20 modules support.
-
 - Improved indexing performance when opening a new solution. Large projects could see a 20-35% improvement from 17.3.
-
 - Improved Named Return Value Optimization (NRVO):
   - NRVO is enabled for cases that involve exception handling or loops.
   - NRVO is enabled even under **`/Od`** if the user passes the **`/Zc:nrvo`** option, or **`/std:c++20`** or later, or **`/permissive-`**.
   - You can now disable NRVO with the **`/Zc:nrvo-`** option.
-
 - Upgraded the version of LLVM shipped with Visual Studio to 15.0.1. For more information on what is available, see the [LLVM](https://releases.llvm.org/15.0.0/docs/ReleaseNotes.html) and [Clang](https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html) release notes.
-
 - Added support to Visual Studio for vcpkg artifacts with CMake projects. For projects that include a vcpkg manifest, the environment is activated automatically on project open. Learn more about this feature in the [vcpkg environment activation in Visual Studio](https://aka.ms/vsvcpkgenv) blog post.
-
 - You can now use Dev Containers for your C++ projects. Learn more about this feature in our [Dev Containers for C++](https://aka.ms/vscppdevcontainer) blog post.
-
 - IntelliSense now respects the order of preincluded headers when one of them is a PCH. Previously, when a PCH was used via **`/Yu`** and force-included via **`/FI`**, IntelliSense would always process it first, before any other headers included via **`/FI`**. This behavior didn't match the build behavior. With this change, **`/FI`** headers are processed in the order they're specified.
-
 - Removed internal prefixes from CTest names in Test Explorer.
-
 - Updated the version of CMake shipped with Visual Studio to version 3.24.1. For details of what is available, see the [CMake release notes](https://cmake.org/cmake/help/v3.24/release/3.24.html).
-
 - Android SDK update:
   - Ant scripts were removed, so users no longer see Ant-based templates in the New Project dialog. For help migrating from Ant templates to Gradle templates, see [Migrating Builds From Apache Ant](https://docs.gradle.org/current/userguide/migrating_from_ant.html)
   - Added support for building with NDK 23 and 24
   - Updated NDK component to the LTS version 23
-
 - Added vectorized implementations of `ranges::min_element()`, `ranges::max_element()`, and `ranges::minmax_element()`
-
 - We continue to track the latest developments in C++ standardization. Support for these C++23 features is available by including [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) in your compiler options:
   - [P2302R4](https://wg21.link/p2302r4) `ranges::contains`, `ranges::contains_subrange`
   - [P2499R0](https://wg21.link/p2499r0) `string_view` Range Constructor Should Be `explicit`
@@ -182,14 +198,13 @@ For a summary of new features and bug fixes in Visual Studio in version 17.4, se
   - [P2441R2](https://wg21.link/p2441r2) `views::join_with`
 
 - Added an option "Navigation after Create Declaration/Definition" to allow you to choose the navigation behavior of the Create Declaration/Definition feature. You can select between peeking (the default) or opening the document, or no navigation.
-
 - Arm64 builds of Visual Studio now bundle Arm64 versions of CMake and Ninja.
-
 - Added support for CMake Presets version 4. For details of what is available, see the [CMake release notes](https://cmake.org/cmake/help/v3.23/release/3.23.html#id6).
-
 - Remote system connections using the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md) now support SSH ProxyJump. ProxyJump is used to access an SSH host via another SSH host (for example, to access a host behind a firewall).
 
 ## What's new for C++ in Visual Studio version 17.3
+
+*Released Aug 2022*
 
 For a summary of new features and bug fixes in Visual Studio in version 17.3, see [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.3) and [C++ improvements](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-3-is-now-available/#c-improvements).
 
@@ -220,6 +235,8 @@ The responsiveness of **Go To All** is improved. Previously, results appeared af
 
 ## What's new for C++ in Visual Studio version 17.2
 
+*Released May 2022*
+
 For a summary of new features and bug fixes in Visual Studio in version 17.2, see [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.2).
 
 - Added compiler support for C++23 feature [deducing `this`](https://wg21.link/p0847), available under the **`/std:c++latest`** option.
@@ -245,6 +262,8 @@ For a summary of new features and bug fixes in Visual Studio in version 17.2, se
 
 ## What's new for C++ in Visual Studio version 17.1
 
+*Released Feb 2022*
+
 For a summary of new features and bug fixes in Visual Studio in version 17.1, see [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.1).
 
 - A new **Configure Preset** template is added to configure and build CMake projects on a remote macOS system with *`CMakePresets.json`*. You can also launch CMake targets on a remote macOS system, and then debug remotely in the Visual Studio debugger backed by GDB or LLDB.
@@ -255,6 +274,8 @@ For a summary of new features and bug fixes in Visual Studio in version 17.1, se
 - Added a new thread view for RTOS projects, available through **Debug** > **Windows** > **RTOS Objects**. For more information, see [Embedded Software Development in Visual Studio](https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/).
 
 ## What's new for C++ in Visual Studio version 17.0
+
+*Released Nov 2021*
 
 For a summary of new features and bug fixes in Visual Studio, see [Visual Studio 2022 version 17.0 Release Notes](/visualstudio/releases/2022/release-notes-v17.0).
 
@@ -352,7 +373,11 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 
 ## Release notes for older versions
 
-Release notes for older C++ versions are also available. For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-cpp-2019.md). For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](what-s-new-for-cpp-2017.md). For information on what's new in earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+Release notes for older C++ versions are also available:
+
+- For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-cpp-2019.md).
+- For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](what-s-new-for-cpp-2017.md).
+- For information on what's new in earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ## Known issues
 
