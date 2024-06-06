@@ -13,7 +13,7 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 
 - For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true).
 - For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md).
-- For information about version build dates, see [Visual Studio 2022 Release History](https://learn.microsoft.com/visualstudio/releases/2022/release-history).
+- For information about version build dates, see [Visual Studio 2022 Release History](/visualstudio/releases/2022/release-history).
 
 ## What's new for C++ in Visual Studio version 17.10
 
@@ -45,8 +45,6 @@ Briefly, a few of the new features are:
 
 *Released Feb 2024*
 
-For an overview of C++ improvements in Visual Studio, VS Code, and vcpkg during 2023, see [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg)
-
 Briefly, a few of the new features are:
 
 - `#include` diagnostics, which provides a detailed analysis of your `#include` directives. Activate this feature by right-clicking an `#include` and choosing **#include directives** > **Turn #include directive diagnostics on**. Above each `#include` is the number of times your code references that `#include` file. Click the **reference** link to navigate to where your code uses something from that header file. To view the build time of your `#include` directives, run Build Insights by navigating to **Build** > **Run Build Insights on Solution** > **Build**.
@@ -68,9 +66,14 @@ Briefly, a few of the new features are:
     `<mdspan>` per [P0009R18](https://wg21.link/P0009R18) and subsequent wording changes that were applied to the C++23 Standard.
     Also, `format()` can format pointers per [P2510R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf).
 
-For a summary of C++ backend updates, see [MSVC Backend updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/).
-
-For a summary of new features in the Visual Studio 17.9 IDE, see [Visual Studio 2022 version 17.9 Release Notes](/visualstudio/releases/2022/release-notes).
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.9](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-9/) |
+| Standard Library (STL): Merged C++26, C+23, C++20 defect reports, LWG issue resolutions, and fixed bugs | [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-179) |
+| New features in the Visual Studio 17.9 IDE |[Visual Studio 2022 version 17.9 Release Notes](/visualstudio/releases/2022/release-notes-v17.9) |
+| C++ language conformance improvements in Visual Studio 2022 17.10 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_179) |
+| An overview of C++ improvements in Visual Studio, VS Code, and vcpkg during 2023 | [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg) |
+| Summary of C++ backend updates | [MSVC Backend updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/) |
 
 ## What's new for C++ in Visual Studio version 17.8
 
@@ -89,9 +92,14 @@ Briefly, a few of the new features are:
   - Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile and the number of ForceInlines.
 - Remote Linux unit test support now lets you run your CTest and GTest tests on your remote Linux machines from Visual Studio’s Test Explorer, just like your local tests.
 
-For a comprehensive summary of new C++ features in Visual Studio 17.8, see [What’s New for C++ Developers in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-8).
-
-For a summary of new features in the Visual Studio 17.8 IDE, see [Visual Studio 2022 version 17.8 Release Notes](/visualstudio/releases/2022/release-notes).
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-8/) |
+| Standard Library (STL): Merged C++26, C+23, C++20 defect reports, LWG issue resolutions, and fixed bugs | [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178) |
+| New features in the Visual Studio 17.8 IDE |[Visual Studio 2022 version 17.8 Release Notes](/visualstudio/releases/2022/release-notes-v17.8) |
+| C++ language conformance improvements in Visual Studio 2022 17.8 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_178) |
+| An overview of C++ improvements in Visual Studio, VS Code, and vcpkg during 2023 | [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg) |
+| Summary of C++ backend updates | [MSVC Backend updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/) |
 
 ## What's new for C++ in Visual Studio version 17.7
 
