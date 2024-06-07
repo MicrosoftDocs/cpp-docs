@@ -23,7 +23,7 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.10](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-10/) |
-| Standard Library (STL): Merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
+| Standard Library (STL) merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
 | New features in the Visual Studio 17.10 IDE |[Visual Studio 2022 version 17.10 Release Notes](/visualstudio/releases/2022/release-notes) |
 | C++ language conformance improvements in Visual Studio 2022 17.10 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.10](cpp-conformance-improvements.md#improvements_1710) |
 
@@ -48,7 +48,7 @@ A partial list of new features:
     :::image type="complex" source="media/github-copilot-install-option.png" alt-text="Screenshot of the Visual Studio Installer GitHub Copilot installation option." lightbox="media/github-copilot-install-option-expanded.png":::
     The Visual Studio installer is open to the Workloads tab. In the installation details pane, GitHub Copilot is shown as selected.
     :::image-end:::
-    The GitHub Copilot interface in the top-right corner of Visual Studio. It has a search bar, a button to open the Copilot Chat, and a button to open the Copilot settings. To use it, you need an active GitHub Copilot subscription. The interface is in the top-right corner of Visual Studio:
+    The GitHub Copilot interface is in the top-right corner of Visual Studio. To use it, you need an active GitHub Copilot subscription.
     :::image type="complex" source="media/unified-github-copilot-button.png" alt-text="Screenshot of GitHub Copilot button.":::
     The GitHub Copilot button is shown in the top-right corner of Visual Studio. It has options to open a chat window, GitHub Copilot settings, learn more, and manage copilot subscription.
     :::image-end:::
@@ -60,7 +60,7 @@ A partial list of new features:
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.9](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-9/) |
-| Standard Library (STL): Merged C++23 features, performance improvements, enhanced behavior, LWG issue resolutions, and fixed bugs | [STL Changelog 17.9](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-179) |
+| Standard Library (STL) merged C++23 features, performance improvements, enhanced behavior, LWG issue resolutions, and fixed bugs | [STL Changelog 17.9](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-179) |
 | New features in the Visual Studio 17.9 IDE |[Visual Studio 2022 version 17.9 Release Notes](/visualstudio/releases/2022/release-notes-v17.9) |
 | C++ language conformance improvements in Visual Studio 2022 17.9 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_179) |
 | Summary of C++ backend updates | [MSVC Backend updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/) |
@@ -93,7 +93,7 @@ A partial list of new features:
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-8/) |
-| Standard Library (STL): Merged C++26, C++23 features, C++20 extensions, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178) |
+| Standard Library (STL) merged C++26, C++23 features, C++20 extensions, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178) |
 | New features in the Visual Studio 17.8 IDE |[Visual Studio 2022 version 17.8 Release Notes](/visualstudio/releases/2022/release-notes-v17.8) |
 | C++ language conformance improvements in Visual Studio 2022 17.8 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_178) |
 | An overview of C++ improvements in Visual Studio, VS Code, and vcpkg during 2023 | [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg) |
@@ -108,7 +108,7 @@ A partial list of new features:
 - More Unreal Engine support:
   - Unreal Engine Test Adapter lets you discover, run, manage, and debug your Unreal Engine tests without leaving the Visual Studio IDE.
   - With Unreal Engine Code Snippets, you can find common Unreal Engine constructs as snippets in your member list.
-  - Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile and the number of ForceInlines, and the impact of header files on build time. For more information, see:[Tutorial: Troubleshoot function inlining on build time](../build-insights/tutorials/build-insights-function-view.md) and [Tutorial: Troubleshoot header file impact on build time](../build-insights/tutorials/build-insights-included-files-view.md). 
+  - Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile and the number of ForceInlines, and the impact of header files on build time. For more information, see [Tutorial: Troubleshoot function inlining on build time](../build-insights/tutorials/build-insights-function-view.md) and [Tutorial: Troubleshoot header file impact on build time](../build-insights/tutorials/build-insights-included-files-view.md).
 - Remote Linux unit test support now lets you run your CTest and GTest tests on your remote Linux machines from Visual Studio’s Test Explorer, just like your local tests.
 
 ## What's new for C++ in Visual Studio version 17.7
@@ -119,7 +119,7 @@ A partial list of new features:
 |---|---|
 | What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2022 17.7](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-7/) |
 | New C++ features specific to game development | [Unleashing the Power of Visual Studio 2022 for C++ Game Development](https://devblogs.microsoft.com/visualstudio/unleashing-the-power-of-visual-studio-2022-for-c-game-development/) |
-| Standard Library (STL): Merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.7](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-177) |
+| Standard Library (STL) merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.7](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-177) |
 | New features in the Visual Studio 17.7 IDE |[Visual Studio 2022 version 17.7 Release Notes](/visualstudio/releases/2022/release-notes-v17.7) |
 | C++ language conformance improvements in Visual Studio 2022 17.7 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_177) |
 
@@ -140,7 +140,7 @@ A partial list of new features:
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2022 17.6](https://devblogs.microsoft.com/cppblog/visual-studio-17-6-for-cpp-devs/) |
-| Standard Library (STL): Merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.6](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-176) |
+| Standard Library (STL) merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.6](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-176) |
 | New features in the Visual Studio 17.6 IDE | [Visual Studio 2022 version 17.6 Release Notes](/visualstudio/releases/2022/release-notes-v17.6) |
 | C++ language conformance improvements in Visual Studio 2022 17.6 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_176) |
 
@@ -158,7 +158,7 @@ A partial list of new features includes:
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2022 17.5](https://devblogs.microsoft.com/cppblog/visual-studio-17-5-for-cpp-devs/) |
-| Standard Library (STL): Merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.5](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-175) |
+| Standard Library (STL) merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.5](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-175) |
 | New features in the Visual Studio 17.5 IDE | [Visual Studio 2022 version 17.5 Release Notes](/visualstudio/releases/2022/release-notes-v17.5) |
 
 A partial list of new features includes:
@@ -197,7 +197,7 @@ A partial list of new features includes:
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2022 17.4](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-4/) |
-| Standard Library (STL): Merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.4](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-174) |
+| Standard Library (STL) merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.4](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-174) |
 | New features in the Visual Studio 17.4 IDE | [Visual Studio 2022 version 17.4 Release Notes](/visualstudio/releases/2022/release-notes-v17.4) |
 | C++ language conformance improvements in Visual Studio 2022 17.4 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_174) |
 
@@ -246,7 +246,7 @@ A partial list of new features in 17.4:
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [C++ improvements in 17.3](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-3-is-now-available/#c-improvements) |
-| Standard Library (STL): Merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.3](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-173) |
+| Standard Library (STL) merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.3](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-173) |
 | New features in the Visual Studio 17.3 IDE | [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.3) |
 | C++ language conformance improvements in Visual Studio 2022 17.3 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_173) |
 
@@ -273,7 +273,7 @@ The responsiveness of **Go To All** is improved. Previously, results appeared af
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [Visual Studio 2022 17.2 is now available](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-2-is-now-available/) |
-| Standard Library (STL): Merged C++20 defect reports, C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.2](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-172) |
+| Standard Library (STL) merged C++20 defect reports, C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.2](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-172) |
 | New features in the Visual Studio 17.2 IDE | [Visual Studio 2022 version 17.2 Release Notes](/visualstudio/releases/2022/release-notes-v17.2) |
 | C++ language conformance improvements in Visual Studio 2022 17.2 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_172) |
 
@@ -300,7 +300,7 @@ A partial list of new features in 17.2:
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [Visual Studio 2022 17.1 is now available!](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-1-is-now-available/) |
-| Standard Library (STL): Merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.1](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-171) |
+| Standard Library (STL) merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.1](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-171) |
 | New features in the Visual Studio 17.1 IDE | [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.1) |
 | C++ language conformance improvements in Visual Studio 2022 17.1 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_171) |
 
@@ -320,7 +320,7 @@ A partial list of new features in 17.1:
 | For more information about | See |
 |---|---|
 | New features in the Visual Studio 17.0 IDE | [Visual Studio 2022 version 17.0 Release Notes](/visualstudio/releases/2022/release-notes-v17.0) |
-| Standard Library (STL): Merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.0](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
+| Standard Library (STL) merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.0](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
 | C++ language conformance improvements in Visual Studio 2022 17.0 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.10](cpp-conformance-improvements.md#improvements_170) |
 
 An overview of some of the new features in Visual Studio 2022 version 17.0:
