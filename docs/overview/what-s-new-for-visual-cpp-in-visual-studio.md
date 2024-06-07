@@ -39,7 +39,7 @@ A partial list of new features:
 - **Pull request comments**: You can now view GitHub and Azure DevOps comments directly in your working file. Enable the feature flag, **Pull Request Comments** in **Options** > **Environment** > **Preview Features** and checkout the pull request branch to get started.
 - **AI-Generated Content**: GitHub Copilot can now draft pull request descriptions. Requires an active GitHub Copilot subscription. Try it out by clicking the **Add AI Generated Pull Request Description** sparkle pen icon within the **Create a Pull Request** window.
 - **Image Preview**: Hover over an image path to see a preview with size details. The size is capped to 500px wide and high.
-  :::image type="complex" source="media/hover-preview.png" alt-text="Screenshot of hover preview":::
+  :::image type="complex" source="media/hover-preview.png" alt-text="Screenshot of hover preview" lightbox="media/github-copilot-install-option-expanded.png":::
     The mouse is hovering over the line std::filesystem::path vs_logo_path = "../images/vs_logo.png". Underneath appears a preview of the Visual Studio logo and the information that it is 251 x 500 pixels and 13.65 KB in size.
     :::image-end:::
 - **Breakpoint/Tracepoint Creation**: You can now create conditional breakpoints or tracepoints directly from expressions in the source code from the right-click menu. This works on property or field names and values from autos, locals, watch windows, or DataTips.
@@ -49,7 +49,7 @@ A partial list of new features:
     The Visual Studio installer is open to the Workloads tab. In the installation details pane, GitHub Copilot is shown as selected.
     :::image-end:::
     The GitHub Copilot interface in the top-right corner of Visual Studio. It has a search bar, a button to open the Copilot Chat, and a button to open the Copilot settings. To use it, you need an active GitHub Copilot subscription. The interface is in the top-right corner of Visual Studio:
-    :::image type="complex" source="media/unified-github-copilot-button" alt-text="Screenshot of GitHub Copilot button.":::
+    :::image type="complex" source="media/unified-github-copilot-button.png" alt-text="Screenshot of GitHub Copilot button.":::
     The GitHub Copilot button is shown in the top-right corner of Visual Studio. It has options to open a chat window, GitHub Copilot settings, learn more, and manage copilot subscription.
     :::image-end:::
 
