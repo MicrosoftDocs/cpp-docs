@@ -39,13 +39,13 @@ A partial list of new features:
 - **Pull request comments**: You can now view GitHub and Azure DevOps comments directly in your working file. Enable the feature flag, **Pull Request Comments** in **Options** > **Environment** > **Preview Features** and checkout the pull request branch to get started.
 - **AI-Generated Content**: GitHub Copilot can now draft pull request descriptions. Requires an active GitHub Copilot subscription. Try it out by clicking the **Add AI Generated Pull Request Description** sparkle pen icon within the **Create a Pull Request** window.
 - **Image Preview**: Hover over an image path to see a preview with size details. The size is capped to 500px wide and high.
-  :::image type="complex" source="media/hover-preview.png" alt-text="Screenshot of hover preview" lightbox="media/github-copilot-install-option-expanded.png":::
-    The mouse is hovering over the line std::filesystem::path vs_logo_path = "../images/vs_logo.png". Underneath appears a preview of the Visual Studio logo and the information that it is 251 x 500 pixels and 13.65 KB in size.
-    :::image-end:::
+  :::image type="complex" source="media/hover-preview.png" alt-text="Screenshot of hover preview":::
+  The mouse is hovering over the line std::filesystem::path vs_logo_path = "../images/vs_logo.png". Underneath appears a preview of the Visual Studio logo and the information that it is 251 x 500 pixels and 13.65 KB in size.
+  :::image-end:::
 - **Breakpoint/Tracepoint Creation**: You can now create conditional breakpoints or tracepoints directly from expressions in the source code from the right-click menu. This works on property or field names and values from autos, locals, watch windows, or DataTips.
 - **Attach to Process Dialog**: The functionality provided by the Attach to Process dialog is more user-friendly. You can now easily switch between tree and list views, organize processes better with collapsible sections, and select code types with a simplified combobox. Also, the "Select/Track Window" feature is now easier to use, allowing two-way tracking: selecting a process highlights its window, and clicking on a window selects its process.
 - **GitHub Copilot Integration**: We have unified the GitHub Copilot and Copilot Chat extensions and now ship them directly in Visual Studio. To install it, install the **GitHub Copilot** component in the **Visual Studio Installer**:
-    :::image type="complex" source="media/github-copilot-install-option.png" alt-text="Screenshot of the Visual Studio Installer GitHub Copilot installation option.":::
+    :::image type="complex" source="media/github-copilot-install-option.png" alt-text="Screenshot of the Visual Studio Installer GitHub Copilot installation option." lightbox="media/github-copilot-install-option-expanded.png":::
     The Visual Studio installer is open to the Workloads tab. In the installation details pane, GitHub Copilot is shown as selected.
     :::image-end:::
     The GitHub Copilot interface in the top-right corner of Visual Studio. It has a search bar, a button to open the Copilot Chat, and a button to open the Copilot settings. To use it, you need an active GitHub Copilot subscription. The interface is in the top-right corner of Visual Studio:
