@@ -19,7 +19,7 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 
 *Released May 2024*
 
-Briefly, a few of the new features are:
+A partial list of new features:
 
 - **MSVC Toolset Update**: The MSVC toolset version is updated from 19.39 to 19.40. This may affect projects that have version assumptions.
 - **Standard Library Enhancements**: The standard library now includes formatting pointers from C++26 and performance improvements such as vectorized `std::min_element`.
@@ -45,7 +45,7 @@ Briefly, a few of the new features are:
 
 *Released Feb 2024*
 
-Briefly, a few of the new features are:
+A partial list of new features:
 
 - `#include` diagnostics, which provides a detailed analysis of your `#include` directives. Activate this feature by right-clicking an `#include` and choosing **#include directives** > **Turn #include directive diagnostics on**. Above each `#include` is the number of times your code references that `#include` file. Click the **reference** link to navigate to where your code uses something from that header file. To view the build time of your `#include` directives, run Build Insights by navigating to **Build** > **Run Build Insights on Solution** > **Build**.
     :::image type="complex" source="media/include-diagnostics.png" alt-text="Screenshot of #include diagnostics":::
@@ -78,7 +78,7 @@ Briefly, a few of the new features are:
 
 *Released Nov 2023*
 
-Briefly, a few of the new features are:
+A partial list of new features:
 
 - C++ structured diagnostics in the Output window and a new problem details window that provides more information about the error. For more information, see [Structured SARIF Output](../build/reference/sarif-output.md) and [Problem Details Window](/visualstudio/ide/reference/problem-details-window).
 - A feature that lets you visualize the size and alignment of your classes, structs, unions, base types, or enums even before the code is compiled. Hover over the identifier and a Quick Info displays the size and alignment information.
@@ -103,7 +103,8 @@ Briefly, a few of the new features are:
 
 *Released Aug 2023*
 
-Briefly, *some* of the new features are:
+A partial list of new features:
+
 * Faster debugging sessions and faster project load times
 * Step-by-step visualization of macro expansion
 * One-click download for Windows Subsystem for Linux (WSL)
@@ -124,7 +125,7 @@ Briefly, *some* of the new features are:
 
 *Released May 2023*
 
-Briefly, some of the new features are: CMake script debugging, built-in support for High Level Shading Language (HLSL), an Unreal Engine Log viewer, initial support for C++20 in C++/CLI projects, VCPKG is now added by default, and some C++23 standard library features for ranges. To see a full list of new features added to the standard library, see the [STL changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-176).
+A partial list of new features includes: CMake script debugging, built-in support for High Level Shading Language (HLSL), an Unreal Engine Log viewer, initial support for C++20 in C++/CLI projects, VCPKG is now added by default, and some C++23 standard library features for ranges.
 
 | For more information about | See |
 |---|---|
@@ -138,9 +139,7 @@ Briefly, some of the new features are: CMake script debugging, built-in support 
 
 *Released Feb 2023*
 
-For a summary of new C++ features in Visual Studio in version 17.5, see [What’s New for C++ Developers in Visual Studio 2022 17.5](https://devblogs.microsoft.com/cppblog/visual-studio-17-5-for-cpp-devs/).
-
-For a summary of new features and bug fixes in the Visual Studio IDE version 17.5, see [Visual Studio 2022 version 17.5 Release Notes](/visualstudio/releases/2022/release-notes-v17.5).
+A partial list of new features includes:
 
 - `std::move`, `std::forward`, `std::move_if_noexcept`, and `std::forward_like` now don't produce function calls in generated code, even in debug mode. This change avoids named casts causing unnecessary overhead in debug builds. `/permissive-` (or an option that implies it, such as `/std:c++20` or `std:c++latest`) is required.
 
@@ -170,13 +169,18 @@ For a summary of new features and bug fixes in the Visual Studio IDE version 17.
   - [P2322R6](https://wg21.link/P2322R6) `ranges::fold_left`, `ranges::fold_right`, and so on.
   - [P2321R2](https://wg21.link/P2321R2) `views::zip` (doesn't include `zip_transform`, `adjacent`, and `adjacent_transform`)
 
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2022 17.5](https://devblogs.microsoft.com/cppblog/visual-studio-17-5-for-cpp-devs/) |
+| New C++ features specific to game development | [Unleashing the Power of Visual Studio 2022 for C++ Game Development](https://devblogs.microsoft.com/visualstudio/unleashing-the-power-of-visual-studio-2022-for-c-game-development/) |
+| Standard Library (STL): Merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.5](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-175) |
+| New features in the Visual Studio 17.5 IDE | [Visual Studio 2022 version 17.5 Release Notes](/visualstudio/releases/2022/release-notes-v17.5) |
+
 ## What's new for C++ in Visual Studio version 17.4
 
 *Released Nov 2022*
 
-For a summary of new features and bug fixes in Visual Studio in version 17.4, see [Visual Studio 2022 version 17.4 Release Notes](/visualstudio/releases/2022/release-notes-v17.4) and [What’s New for C++ Developers in Visual Studio 2022 17.4](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-4/).
-
-For a summary of C++ backend updates, see [MSVC Backend updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/).
+A partial list of new features in 17.4:
 
 - Improved compiler error messages to provide more correct and useful information, especially for concepts.
 - Added experimental MSVC option [`/experimental:log<directory>`](../build/reference/experimental-log.md) to output [structured SARIF diagnostics](../build/reference/sarif-output.md) to the specified directory.
@@ -214,69 +218,72 @@ For a summary of C++ backend updates, see [MSVC Backend updates since Visual Stu
 - Added support for CMake Presets version 4. For details of what is available, see the [CMake release notes](https://cmake.org/cmake/help/v3.23/release/3.23.html#id6).
 - Remote system connections using the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md) now support SSH ProxyJump. ProxyJump is used to access an SSH host via another SSH host (for example, to access a host behind a firewall).
 
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2022 17.4](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-4/) |
+| Standard Library (STL): Merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.4](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-174) |
+| New features in the Visual Studio 17.4 IDE | [Visual Studio 2022 version 17.4 Release Notes](/visualstudio/releases/2022/release-notes-v17.4) |
+| C++ language conformance improvements in Visual Studio 2022 17.4 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_174) |
+
 ## What's new for C++ in Visual Studio version 17.3
 
 *Released Aug 2022*
 
-For a summary of new features and bug fixes in Visual Studio in version 17.3, see [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.3) and [C++ improvements](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-3-is-now-available/#c-improvements).
+A partial list of new features in 17.3:
 
 - The Arm64EC toolchain is no longer marked as experimental and is ready for production use.
-
 - The Visual Studio Terminal can now be used as an SSH client with your stored SSH connections. With the C++ for Linux Tools installed, open the Terminal tool window. The Terminal dropdown is populated with your stored connections. When you select a connection, a new Terminal window opens inside Visual Studio that shows a pseudo-terminal on your remote system. Control characters, colors, and cursor positional awareness are all supported.
-
 - Visual Studio can now add Unreal Engine class templates for your UE projects. To try this feature, ensure **IDE support for Unreal Engine** is selected in the **Game development with C++** workload in the Visual Studio Installer. When you're working on a UE project, right-click in the project or a folder/filter and select **Add** > **UE Class**.
-
 - **Go to Definition** now remembers the prior signature and navigates accordingly when a better match isn't available (for example, after you manually change the signature of one of the pair).
 The responsiveness of **Go To All** is improved. Previously, results appeared after you stopped typing. In the new experience, results show as you type.
-
 - In contexts requiring `enum` type completion (for example, assignments to `enum` variables, case labels, returning `enum` type, and so on), the autocompletion list is now filtered to just the matching enumerators and related constructs.
-
 - Added NuGet PackageReference support for C++/CLI MSBuild projects targeting .NET Core. This change was made to unblock mixed codebases from being able to adopt .NET Core. This support doesn't work for other C++ project types or any C++ project types targeting .NET Framework. There are no plans to extend PackageReference support to other C++ scenarios. The team is working on separate experiences involving vcpkg for non-MSBuild scenarios and to add greater functionality.
-
 - Added a Serial Monitor window for embedded development, available through **Debug** > **Windows** > **Serial Monitor**.
-
 - Improved C++ indexing by ~66% compared to 17.2.
-
 - Updated the version of CMake shipped with Visual Studio to version 3.23. See the [CMake 3.23 release notes](https://cmake.org/cmake/help/v3.23/release/3.23.html) for details of what is available.
-
 - Upgraded the versions of LLVM tools shipped with Visual Studio to v14. For details of what is available, see the [LLVM](https://releases.llvm.org/14.0.0/docs/ReleaseNotes.html) and [Clang](https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html) release notes.
-
 - Updated the side-by-side Dev 16.11 C++ Toolset to version 14.29.30145.00. The latest version of the Dev 16.11 C++ Toolset contains important bug fixes, including fixing all remaining C++20 defect reports. For more information about bug fixes, including C++20 defect reports in Dev 16.11, see [Visual Studio 2019 version 16.11.14 release notes](/visualstudio/releases/2019/release-notes#16.11.14).
-
 - Made various improvements to the in-editor experience of C++ modules. We're continuously working on improving the quality of the experience but encourage you to try them in 17.3. Report remaining issues through [Developer Community](https://aka.ms/vsfeedback/browsecpp).
+
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [C++ improvements in 17.3](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-3-is-now-available/#c-improvements) |
+| Standard Library (STL): Merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.3](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-173) |
+| New features in the Visual Studio 17.3 IDE | [Visual Studio 2022 version 17.3 Release Notes](/visualstudio/releases/2022/release-notes-v17.3) |
+| C++ language conformance improvements in Visual Studio 2022 17.3 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_173) |
 
 ## What's new for C++ in Visual Studio version 17.2
 
 *Released May 2022*
 
-For a summary of new features and bug fixes in Visual Studio in version 17.2, see [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.2).
+A partial list of new features in 17.3:
 
 - Added compiler support for C++23 feature [deducing `this`](https://wg21.link/p0847), available under the **`/std:c++latest`** option.
-
 - Added IntelliSense support for C++23 features [deducing `this`](https://wg21.link/p0847) and [`if consteval`](http://wg21.link/p1938).
-
 - Added inline parameter name and type hint support, toggled by pressing **Alt+F1** or double-tapping **Ctrl**. This behavior can be customized under **Tools > Options > Text Editors > C/C++ > IntelliSense**.
-
 - Added experimental support for C++20 modules in CMake projects. This support is currently only available with the Visual Studio (MSBuild) generator.
-
 - In 17.1, we introduced peripheral register and RTOS views for embedded developers. We continue to improve the capabilities of those views with usability improvements in 17.2:
   - The RTOS tool window is now hidden by default. It prevents showing a tool window with error messages that aren't relevant when you're not using an RTOS.
   - When you double-click an RTOS object in the tool window, it adds a watch for the object.
   - When you select the start and end values for the stack pointer in the RTOS tool window, it opens in the memory window.
   - Added thread awareness for device targets to the call stack window.
   - Users can now select a pin icon next to peripherals, registers, or fields to pin them the top of the Peripheral View.
-
 - Added implementations of the remaining C++20 defect reports (also known as *backports*). All C++20 features are now available under the **`/std:c++20`** option. For more information about the implemented backports, see the [C++20 Defect Reports project](https://github.com/microsoft/STL/projects/9) in the Microsoft/STL GitHub repository and the [MSVC's STL Completes `/std:c++20`](https://devblogs.microsoft.com/cppblog/msvcs-stl-completes-stdc20/) blog post.
-
 - We added various C++23 Library features, available under the **`/std:c++latest`** option. For more information about the new features, see the [STL Repo changelog](https://github.com/microsoft/STL/wiki/Changelog).
-
 - Improved performance of the initial C++ indexing by up to 20%, depending on the depth of the include graph.
+
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [Visual Studio 2022 17.2 is now available!]((https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-2-is-now-available/) |
+| Standard Library (STL): Merged C++20 defect reports, C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.2](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-172) |
+| New features in the Visual Studio 17.2 IDE | [Visual Studio 2022 version 17.2 Release Notes](/visualstudio/releases/2022/release-notes-v17.2) |
+| C++ language conformance improvements in Visual Studio 2022 17.2 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_172) |
 
 ## What's new for C++ in Visual Studio version 17.1
 
 *Released Feb 2022*
 
-For a summary of new features and bug fixes in Visual Studio in version 17.1, see [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.1).
+A partial list of new features in 17.1:
 
 - A new **Configure Preset** template is added to configure and build CMake projects on a remote macOS system with *`CMakePresets.json`*. You can also launch CMake targets on a remote macOS system, and then debug remotely in the Visual Studio debugger backed by GDB or LLDB.
 - You can now debug core dumps on a remote macOS system from Visual Studio with LLDB or GDB.
@@ -285,16 +292,28 @@ For a summary of new features and bug fixes in Visual Studio in version 17.1, se
 - New views that enable you to inspect and interact with peripheral registers on microcontrollers and real time operating systems (RTOS) objects, available through **Debug** > **Windows** > **Embedded Registers**
 - Added a new thread view for RTOS projects, available through **Debug** > **Windows** > **RTOS Objects**. For more information, see [Embedded Software Development in Visual Studio](https://devblogs.microsoft.com/cppblog/visual-studio-embedded-development/).
 
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [Visual Studio 2022 17.1 is now available!](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-1-is-now-available/) |
+| Standard Library (STL): Merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.2](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-172) |
+| New features in the Visual Studio 17.1 IDE | [Visual Studio 2022 version 17.1 Release Notes](/visualstudio/releases/2022/release-notes-v17.1) |
+| C++ language conformance improvements in Visual Studio 2022 17.1 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_171) |
+
 ## What's new for C++ in Visual Studio version 17.0
 
 *Released Nov 2021*
 
-For a summary of new features and bug fixes in Visual Studio, see [Visual Studio 2022 version 17.0 Release Notes](/visualstudio/releases/2022/release-notes-v17.0).
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.10](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-10/) |
+| Standard Library (STL): Merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
+| New features in the Visual Studio 17.0 IDE | [Visual Studio 2022 version 17.0 Release Notes](/visualstudio/releases/2022/release-notes-v17.0) |
+| C++ language conformance improvements in Visual Studio 2022 17.0 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.10](cpp-conformance-improvements.md#improvements_170) |
+
+An overview of some of the new features in Visual Studio 2022 version 17.0:
 
 - The Visual Studio IDE, *`devenv.exe`*, is now a native 64-bit application.
-
 - The MSVC toolset now defaults to SHA-256 source hashing in debug records. Previously, the toolset used MD5 for source hashing by default.
-
 - The v143 build tools are now available through the Visual Studio installer and in the [standalone build tools](https://aka.ms/vs/17/pre/vs_BuildTools.exe).
 
 ### Hot Reload for native C++
@@ -350,7 +369,6 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 - LLVM tools shipped with Visual Studio are upgraded to LLVM 12. For more information, see the [LLVM release notes](https://releases.llvm.org/12.0.0/docs/ReleaseNotes.html).
 
 - Clang-cl support was updated to LLVM 12.
-
 - You can now debug processes running on a remote system from Visual Studio by using LLDB.
 
 ### C++ AMP deprecated
@@ -360,27 +378,20 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 ### IntelliSense improvements
 
 - We made improvements in C++ IntelliSense when providing navigation and syntax highlighting for types from imported Modules and Header Units. IntelliSense is an active area of investment for us. Help us improve: Share your feedback on Developer Community by using **Help** > **Send Feedback**.
-
 - We improved C++ IntelliSense performance by optimizing cached header usage and symbol database access, providing improved load times to get into your code.
-
 - The IntelliSense Code Linter for C++ is now on by default, providing instant as-you-type suggestions and fix suggestions for common code defects.
-
 - C++ IntelliSense for CMake projects now works when using a preset with a display name.
 
 ### C++ Workload updates
 
 - Updated to NDK r21 LTS in the **C++ Mobile Development** workload.
-
 - The **Game development with C++** workload now installs the latest Unreal Engine with support for Visual Studio 2022.
 
 ### Code analysis improvements
 
 - Code analysis now enforces that return values of functions annotated with `_Check_return_` or `_Must_inspect_result_` must be checked.
-
 - Null pointer dereference detection is improved in our code analysis tooling.
-
 - Added support for `gsl::not_null` to code analysis.
-
 - Support for Libfuzzer under the **`/fsanitize=fuzzer`** compiler option.
 
 ## Release notes for older versions
