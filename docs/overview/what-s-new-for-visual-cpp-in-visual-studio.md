@@ -20,7 +20,7 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 
 *Released May 2024*
 
- For more information about | See |
+| For more information about | See |
 |---|---|
 | What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.10](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-10/) |
 | Standard Library (STL): Merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
@@ -30,17 +30,28 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 A partial list of new features:
 
 - **MSVC Toolset Update**: The MSVC toolset version is updated from 19.39 to 19.40. This may affect projects that have version assumptions. For more information about some ways in which this will affect projects that assume that MSVC versions are all 19.3X for Visual Studio 2022 releases, see [MSVC Toolset Minor Version Number 14.40 in VS 2022 v17.10](https://devblogs.microsoft.com/cppblog/msvc-toolset-minor-version-number-14-40-in-vs-2022-v17-10/).
-- **Standard Library Enhancements**: The standard library now includes formatting pointers from C++26 and performance improvements such as vectorized `std::min_element`.
+- **Standard Library Enhancements**: The standard library added support for [P2510R3 Formatting Pointers](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf) which brings the set of format specifiers for pointers when using `std::format` more in line with those that already exist for integers. Improved the vectorized implementations of `std::min_element`, `std::ranges::min`, and friends.
 - **Build Insights**: Now provides template instantiation information. See [Templates View for Build Insights in Visual Studio](https://devblogs.microsoft.com/cppblog/templates-view-for-build-insights-in-visual-studio-2/) or the [Pure Virtual C++ - Templates view for Build Insights in Visual Studio](https://youtu.be/68pOEQ5YA5s) recording.
-- **Unreal Engine Plugin**: There's a new opt-in feature for the Unreal Engine Plugin to run in the background, reducing startup costs.
-- **CMake Targets**: You can now pin targets in the CMake Targets View.
+- **Unreal Engine Plugin**: There's a new opt-in feature for the Unreal Engine Plugin to run in the background, reducing startup costs. This is an opt-in feature that is activated via **Tools** > **Options** > **Unreal Engine**.
+- **New features for Linux**: See [New Linux Development Features in Visual Studio](https://youtu.be/jZTMRvm8AwY).
+- **CMake Targets**: You can now pin targets in the **CMake Targets View**.
 - **Connection Manager UX**: The user experience provides a more seamless experience when connecting to remote systems. For more information, see [Usability Improvements in the Visual Studio Connection Manager](https://devblogs.microsoft.com/cppblog/usability-improvements-in-the-visual-studio-connection-manager/).
-- **Pull Request Comments**: You can now view GitHub and Azure DevOps comments directly in your working file.
-- **AI-Generated Content**: GitHub Copilot can now draft pull request descriptions.
-- **Image Preview**: You can hover over an image path to see a preview with size details.
-- **Breakpoint/Tracepoint Creation**: You can now create breakpoints and tracepoints directly from expressions in the source code.
-- **Attach to Process Dialog**: The functionality provided by the Attach to Process dialog is improved and is more user-friendly.
-- **GitHub Copilot Integration**: There's a unified experience with Copilot Chat in Visual Studio.
+- **Pull request comments**: You can now view GitHub and Azure DevOps comments directly in your working file. Enable the feature flag, **Pull Request Comments** in **Options** > **Environment** > **Preview Features** and checkout the pull request branch to get started.
+- **AI-Generated Content**: GitHub Copilot can now draft pull request descriptions. Requires an active GitHub Copilot subscription. Try it out by clicking the **Add AI Generated Pull Request Description** sparkle pen icon within the **Create a Pull Request** window.
+- **Image Preview**: Hover over an image path to see a preview with size details. The size is capped to 500px wide and high.
+  :::image type="complex" source="media/hover-preview.png" alt-text="Screenshot of hover preview":::
+    The mouse is hovering over the line std::filesystem::path vs_logo_path = "../images/vs_logo.png". Underneath appears a preview of the Visual Studio logo and the information that it is 251 x 500 pixels and 13.65 KB in size.
+    :::image-end:::
+- **Breakpoint/Tracepoint Creation**: You can now create conditional breakpoints or tracepoints directly from expressions in the source code from the right-click menu. This works on property or field names and values from autos, locals, watch windows, or DataTips.
+- **Attach to Process Dialog**: The functionality provided by the Attach to Process dialog is more user-friendly. You can now easily switch between tree and list views, organize processes better with collapsible sections, and select code types with a simplified combobox. Also, the "Select/Track Window" feature is now easier to use, allowing two-way tracking: selecting a process highlights its window, and clicking on a window selects its process.
+- **GitHub Copilot Integration**: We have unified the GitHub Copilot and Copilot Chat extensions and now ship them directly in Visual Studio. To install it, install the **GitHub Copilot** component in the **Visual Studio Installer**:
+    :::image type="complex" source="media/github-copilot-install-option.png" alt-text="Screenshot of the Visual Studio Installer GitHub Copilot installation option.":::
+    The Visual Studio installer is open to the Workloads tab. In the installation details pane, GitHub Copilot is shown as selected.
+    :::image-end:::
+    The GitHub Copilot interface in the top-right corner of Visual Studio. It has a search bar, a button to open the Copilot Chat, and a button to open the Copilot settings. To use it, you need an active GitHub Copilot subscription. The interface is in the top-right corner of Visual Studio:
+    :::image type="complex" source="media/unified-github-copilot-button" alt-text="Screenshot of GitHub Copilot button.":::
+    The GitHub Copilot button is shown in the top-right corner of Visual Studio. It has options to open a chat window, GitHub Copilot settings, learn more, and manage copilot subscription.
+    :::image-end:::
 
 ## What's new for C++ in Visual Studio version 17.9
 
