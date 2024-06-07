@@ -108,7 +108,7 @@ A partial list of new features:
 - More Unreal Engine support:
   - Unreal Engine Test Adapter lets you discover, run, manage, and debug your Unreal Engine tests without leaving the Visual Studio IDE.
   - With Unreal Engine Code Snippets, you can find common Unreal Engine constructs as snippets in your member list.
-  - Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile and the number of ForceInlines.
+  - Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile and the number of ForceInlines, and the impact of header files on build time. For more information, see:[Tutorial: Troubleshoot function inlining on build time](../build-insights/tutorials/build-insights-function-view.md) and [Tutorial: Troubleshoot header file impact on build time](../build-insights/tutorials/build-insights-included-files-view.md). 
 - Remote Linux unit test support now lets you run your CTest and GTest tests on your remote Linux machines from Visual Studio’s Test Explorer, just like your local tests.
 
 ## What's new for C++ in Visual Studio version 17.7
