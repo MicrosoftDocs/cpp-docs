@@ -39,7 +39,7 @@ A partial list of new features:
 - **Pull request comments**: You can now view GitHub and Azure DevOps comments directly in your working file. Enable the feature flag, **Pull Request Comments** in **Options** > **Environment** > **Preview Features** and checkout the pull request branch to get started.
 - **AI-Generated Content**: GitHub Copilot can now draft pull request descriptions. Requires an active GitHub Copilot subscription. Try it out by clicking the **Add AI Generated Pull Request Description** sparkle pen icon within the **Create a Pull Request** window.
 - **Image Preview**: Hover over an image path to see a preview with size details. The size is capped to 500px wide and high.
-  :::image type="complex" source="media/hover-preview.png" alt-text="Screenshot of hover preview":::
+  :::image type="complex" source="media/hover-preview.png" alt-text="Screenshot of hover preview.":::
   The mouse is hovering over the line std::filesystem::path vs_logo_path = "../images/vs_logo.png". Underneath appears a preview of the Visual Studio logo and the information that it is 251 x 500 pixels and 13.65 KB in size.
   :::image-end:::
 - **Breakpoint/Tracepoint Creation**: You can now create conditional breakpoints or tracepoints directly from expressions in the source code from the right-click menu. This works on property or field names and values from autos, locals, watch windows, or DataTips.
@@ -68,7 +68,7 @@ A partial list of new features:
 A partial list of new features:
 
 - `#include` diagnostics, which provides a detailed analysis of your `#include` directives. Activate this feature by right-clicking an `#include` and choosing **#include directives** > **Turn #include directive diagnostics on**. Above each `#include` is the number of times your code references that `#include` file. Click the **reference** link to navigate to where your code uses something from that header file. To view the build time of your `#include` directives, run Build Insights by navigating to **Build** > **Run Build Insights on Solution** > **Build**.
-    :::image type="complex" source="media/include-diagnostics.png" alt-text="Screenshot of #include diagnostics":::
+    :::image type="complex" source="media/include-diagnostics.png" alt-text="Screenshot of #include diagnostics.":::
     Above the # include is a **reference** link and a number of the references to this # include file (in this case 1). The build time is also listed (in this case less than 1/2 a second).
     :::image-end:::
 - Memory layout visualization, which shows how memory is arranged for your classes, structs, and unions. Hover over a type and choose the **Memory Layout** link in the **Quick Info** to open a dedicated window displaying the memory layout of the selected type. Hovering over individual data types within this window provides detailed information about their size and offset within the type.
