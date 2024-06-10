@@ -54,7 +54,7 @@ If the calling thread already owns the `mutex`, the behavior is undefined.
 ## <a name="mutex"></a> Constructor
 
 Constructs a `mutex` object that isn't locked.\
-Microsoft's implementation of this constructor is not `constexpr`.
+Prior to Visual Studio 2022 17.10, Microsoft's implementation of this constructor wasn't `constexpr`. Now it is `constexpr`.
 
 ```cpp
 mutex() noexcept;
