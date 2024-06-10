@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 05/31/2024
+ms.date: 06/06/2024
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -17,13 +17,13 @@ For changes in older versions, see [Visual C++ What's New 2003 through 2015](../
 
 ## <a name="improvements_1710"></a> Conformance improvements in Visual Studio 2022 version 17.10
 
-Visual Studio 2022 version 17.10 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+Visual Studio 2022 version 17.10 has the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
-For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes and performance improvements, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
 
 ### Conversion operator specialization with explicitly specified return type
 
-The compiler used to specialize conversion operators incorrectly in some cases which could lead to a mismatched return type. These invalid specializations no longer happen. This is a source code breaking change.
+The compiler used to specialize conversion operators incorrectly in some cases, which could lead to a mismatched return type. These invalid specializations no longer happen. This is a source code breaking change.
 
 ```cpp
 // Example 1
@@ -87,7 +87,7 @@ After:
 
 Applies to the C language (C17 and later). Also added to Microsoft Visual Studio 17.9
 
-In versions of Visual C++ before Visual Studio 2022 version 17.9, if the `_Alignas` specifier appeared adjacent to a structured type in a declaration, it wasn't applied correctly according to the ISO-C Standard.
+In versions of Visual C++ before Visual Studio 2022 version 17.9, if the `_Alignas` specifier appeared next to a structured type in a declaration, it wasn't applied correctly according to the ISO-C Standard.
 
 ```cpp
 // compile with /std:c17
@@ -108,7 +108,7 @@ The `_Alignas` directive applies only to the member variable `member1`. It must 
 This is a binary breaking change, so a warning is now emitted when this change takes effect. Warning C5274 is now emitted at warning level 1 for the previous example: `
 warning C5274: behavior change: _Alignas no longer applies to the type 'Inner' (only applies to declared data objects)`.
 
-Also, in previous versions of Visual Studio, when the `_Alignas` specifier appeared adjacent to an anonymous type declaration, it was ignored.
+Also, in previous versions of Visual Studio, when the `_Alignas` specifier appeared next to an anonymous type declaration, it was ignored.
 
 ```cpp
 // compile with /std:c17
@@ -590,7 +590,7 @@ This rounded DOWN.
 
 The C standard requires that a conforming C implementation defines `__STDC__` as `1`. Due to the behavior of the UCRT, which doesn't expose POSIX functions when `__STDC__` is `1`, it isn't possible to define this macro for C by default without introducing breaking changes to the stable language versions. Visual Studio 2022 version 17.2 and later add a conformance option [`/Zc:__STDC__`](../build/reference/zc-stdc.md) that defines this macro. There's no negative version of the option. Currently, we plan to use this option by default for future versions of C.
 
-This change is a source breaking change. It applies when C11 or C17 mode is enabled, **`/std:c11`** or **`/std:c17`**, together with **`/Zc:__STDC__`**.
+This change is a source breaking change. It applies when C11 or C17 mode is enabled (**`/std:c11`** or **`/std:c17`**) and **`/Zc:__STDC__`** is specified.
 
 #### Example
 
