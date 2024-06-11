@@ -628,7 +628,7 @@ items:
                   href: ../build/reference/ifc-map.md
                 - name: /interface (Treat input file as a module interface unit)
                   href: ../build/reference/interface.md
-                - name: /internalPartition (Treat the input file as an internal partition unit.)
+                - name: /internalPartition (Treat the input file as an internal partition unit)
                   href: ../build/reference/internal-partition.md
                 - name: /J (Default char type is unsigned)
                   href: ../build/reference/j-default-char-type-is-unsigned.md
@@ -640,6 +640,8 @@ items:
                   href: ../build/reference/kernel-create-kernel-mode-binary.md
                 - name: /link (Pass options to linker)
                   href: ../build/reference/link-pass-options-to-linker.md
+                - name: /LINKREPROFULLPATHRSP (Generate file containing absolute paths of linked files)
+                  href: ../build/reference/link-repro-full-path-rsp.md
                 - name: /LN (Create MSIL module)
                   href: ../build/reference/ln-create-msil-module.md
                 - name: /MD, /MT, /LD (Use Run-time library)
