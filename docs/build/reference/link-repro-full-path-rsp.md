@@ -38,7 +38,7 @@ The linker produces `test.rsp` containing the following lines to reflect the ful
 
 ### To set this linker option programmatically
 
-- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.additionaloptions>.
+- See [VCLinkerTool.AdditionalOptions](/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.additionaloptions?view=visualstudiosdk-2022)
 
 ## See also
 
