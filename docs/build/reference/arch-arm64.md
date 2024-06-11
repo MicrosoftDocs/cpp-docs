@@ -22,12 +22,44 @@ Specifies the Armv9-A architecture, where **`x`** is a required extension value 
 
 ## Remarks
 
-You may specify an ARM64 extension from Armv8.0-A through Armv8.9-A, and Armv9.0-A through Armv9.4-A. Optionally, enable one or more architecture features by appending a feature argument to the option<sup>3</sup>. For example, to target Armv8.0-A and enable feature `FEAT_LSE`, append feature argument **`lse`** so that the option becomes **`/arch:armv8.0+lse`**. For more information about available features and their requirements, see [`/feature` (ARM64)](feature-arm64.md)<sup>3</sup>.
+You can specify an ARM64 extension from Armv8.0-A through Armv8.9-A, and Armv9.0-A through Armv9.4-A. Optionally, enable one or more architecture features by appending a feature argument to the option<sup>3</sup>. For example, to target Armv8.0-A and enable feature `FEAT_LSE`, append feature argument **`lse`** so that the option becomes **`/arch:armv8.0+lse`**. For more information about available features and their requirements, see [`/feature` (ARM64)](feature-arm64.md)<sup>3</sup>.
 
 > [!NOTE]
 > Depending on your version of Visual Studio, the compiler may not yet generate instructions from all feature sets required by the extension level you specify. For example, **`/arch:armv8.1`** allows the `*Interlocked*` intrinsic functions to use the appropriate atomic instruction introduced with the Armv8.1-A extension feature `FEAT_LSE`, but compiler support requires Visual Studio 2022 version 17.2 or later.
 
-The `_M_ARM64` macro is defined by default when compiling for an ARM64 target. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md).
+The `_M_ARM64` macro is defined by default when compiling for an ARM64 target. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md)\
+
+The `__ARM_ARCH` macro is defined for `/arch:ARMv8.0` and higher. It indicates the ARM architecture extension level that the compiler is targeting. For example:
+
+```cpp
+// test.cpp
+#define STRINGIZE_IMPL(X) #X
+#define STRINGIZE(X)      STRINGIZE_IMPL(X)
+#pragma message("__ARM_ARCH is " STRINGIZE(__ARM_ARCH))
+```
+
+Compiled with:
+
+```cmd
+"C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Auxiliary\Build\vcvarsall.bat" x64_arm64
+cl /EHsc /nologo /W4 /c test.cpp
+test.cpp
+__ARM_ARCH is 8
+
+C:\Temp>cl /EHsc /nologo /W4 /c /arch:armv8.0 test.cpp
+test.cpp
+__ARM_ARCH is 8
+
+C:\Temp>cl /EHsc /nologo /W4 /c /arch:armv8.1 test.cpp
+test.cpp
+__ARM_ARCH is 801
+
+C:\Temp>cl /EHsc /nologo /W4 /c /arch:armv8.2 test.cpp
+test.cpp
+__ARM_ARCH is 802
+
+REM And so on...
+```
 
 **`/arch`** only affects code generation for native functions. When you use [`/clr`](clr-common-language-runtime-compilation.md) to compile, **`/arch`** has no effect on code generation for managed functions.
 
@@ -50,5 +82,6 @@ The `_M_ARM64` macro is defined by default when compiling for an ARM64 target. F
 ## See also
 
 [`/arch` (Minimum CPU architecture)](arch-minimum-cpu-architecture.md)\
+[Predefined macros](../../preprocessor/predefined-macros.md)\
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)
