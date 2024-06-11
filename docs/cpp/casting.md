@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: Casting in C++"
 title: "Casting"
+description: "Learn more about: Casting in C++"
 ms.date: 6/11/2024
 helpviewer_keywords: ["casting [C++]", "coercion [C++]", "virtual functions [C++], in derived classes [C++]", "static cast operator", "dynamic cast operator", "polymorphic classes [C++]", "classes [C++], polymorphism"]
 ai.
 ---
 # Casting
 
-The C++ language provides that if a class is derived from a base class containing virtual functions, a pointer to that base class type can be used to call virtual functions in the derived class object. A class containing virtual functions is sometimes called a "polymorphic class".
+The C++ language provides that if a class is derived from a base class containing virtual functions, a pointer to that base class type can be used to call virtual functions in the derived class object. A class containing virtual functions is sometimes called a "polymorphic class."
 
 ![Diagram of a class hierarchy where C derives from B, which derives from A.](../cpp/media/vc38zz1.gif "Class hierarchy")<br/>
 Class hierarchy
@@ -15,15 +15,15 @@ Class hierarchy
 An object of type `C` could be visualized as shown in the following figure.
 
 ![Diagram of Class C with subobjects B and A.](../cpp/media/vc38zz2.gif "Class C with subobjects B and A") <br/>
-Class C with sub-objects B and A
+Class C with subobjects B and A
 
-Given an instance of class `C`, there is a `B` subobject and an `A` subobject. The instance of `C`, including the `A` and `B` subobjects, is the "complete object."
+Given an instance of class `C`, there's a `B` subobject and an `A` subobject. The instance of `C`, including the `A` and `B` subobjects, is the "complete object."
 
-Since a derived class completely contains the definitions of all the base classes from which it is derived, it is safe to cast a pointer to any of the base classes (an upcast). Given a pointer to a base class, it may be safe to cast the pointer to an instance of a derived class (downcast). The actual object is said to be the "complete object." The pointer to the base class is said to point to a "subobject" of the complete object. For example, consider the class hierarchy shown in the following figure.
+Since a derived class completely contains the definitions of all the base classes from which it's derived, it's safe to cast a pointer to any of the base classes (an upcast). Given a pointer to a base class, it may be safe to cast the pointer to an instance of a derived class (downcast). The actual object is said to be the "complete object." The pointer to the base class is said to point to a "subobject" of the complete object. For example, consider the class hierarchy shown in the following figure.
 
-Using run-time type information, it is possible to check whether a pointer actually points to a complete object and can be safely cast to point to another object in its hierarchy. Use the [dynamic_cast](../cpp/dynamic-cast-operator.md) operator to make safe casts. It performs the run-time check necessary to ensure that the operation is safe.
+Using run-time type information, it's possible to check whether a pointer actually points to a complete object and can be safely cast to point to another object in its hierarchy. Use the [dynamic_cast](../cpp/dynamic-cast-operator.md) operator to make safe casts. It performs the run-time check necessary to ensure that the operation is safe.
 
-For conversion of nonpolymorphic types, you can use the [static_cast](../cpp/static-cast-operator.md) operator (this topic explains the difference between static and dynamic casting conversions, and when it is appropriate to use each).
+For conversion of nonpolymorphic types, you can use the [static_cast](../cpp/static-cast-operator.md) operator (this topic explains the difference between static and dynamic casting conversions, and when it's appropriate to use each).
 
 The following example demonstrates the use of the `dynamic_cast` and `static_cast` operators:
 
