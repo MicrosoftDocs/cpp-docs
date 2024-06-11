@@ -38,7 +38,7 @@ The `__ARM_ARCH` macro is defined for `/arch:ARMv8.0` and higher. It indicates t
 #pragma message("__ARM_ARCH is " STRINGIZE(__ARM_ARCH))
 ```
 
-Compiled with:
+Produces the following when compiled with different `/arch` options:
 
 ```cmd
 "C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Auxiliary\Build\vcvarsall.bat" x64_arm64
