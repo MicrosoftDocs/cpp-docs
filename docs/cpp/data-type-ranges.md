@@ -19,7 +19,7 @@ The Microsoft C++ 32-bit and 64-bit compilers recognize the types in the table l
 - long long (unsigned long long)
 ```
 
-If its name begins with two underscores (`__`), the data type is non-standard.
+If its name begins with two underscores (`__`), the data type is nonstandard.
 
 The ranges specified in the following table are inclusive-inclusive.
 
@@ -46,16 +46,16 @@ The ranges specified in the following table are inclusive-inclusive.
 |**`long long`**|8|none (but equivalent to **`__int64`**)|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|
 |**`unsigned long long`**|8|none (but equivalent to **`unsigned __int64`**)|0 to 18,446,744,073,709,551,615|
 |**`enum`**|varies|none| |
-|**`float`**|4|none|3.4E +/- 38 (7 digits)|
-|**`double`**|8|none|1.7E +/- 308 (15 digits)|
+|**`float`**|4|none|3.4E +/- 38 (seven digits)|
+|**`double`**|8|none|1.7E +/- 308 (fifteen digits)|
 |**`long double`**|same as **`double`**|none|Same as **`double`**|
 |**`wchar_t`**|2|**`__wchar_t`**|0 to 65,535|
 
-Depending on how it's used, a variable of **`__wchar_t`** designates either a wide-character type or multibyte-character type. Use the `L` prefix before a character or string constant to designate the wide-character-type constant.
+A variable of **`__wchar_t`** designates either a wide-character type or multibyte-character type. Use the `L` prefix before a character or string constant to designate the wide-character-type constant.
 
 **`signed`** and **`unsigned`** are modifiers that you can use with any integral type except **`bool`**. Note that **`char`**, **`signed char`**, and **`unsigned char`** are three distinct types for the purposes of mechanisms like overloading and templates.
 
-The **`int`** and **`unsigned int`** types have a size of four bytes. However, portable code should not depend on the size of **`int`** because the language standard allows this to be implementation-specific.
+The **`int`** and **`unsigned int`** types have a size of 4 bytes. However, portable code shouldn't depend on the size of **`int`** because the language standard allows this to be implementation-specific.
 
 C/C++ in Visual Studio also supports sized integer types. For more information, see [`__int8, __int16, __int32, __int64`](../cpp/int8-int16-int32-int64.md) and [Integer Limits](../cpp/integer-limits.md).
 

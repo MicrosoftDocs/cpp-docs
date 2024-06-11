@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Casting in C++"
 title: "Casting"
-ms.date: 6/10/2024
+ms.date: 6/11/2024
 helpviewer_keywords: ["casting [C++]", "coercion [C++]", "virtual functions [C++], in derived classes [C++]", "static cast operator", "dynamic cast operator", "polymorphic classes [C++]", "classes [C++], polymorphism"]
 ai.
 ---
@@ -9,7 +9,7 @@ ai.
 
 The C++ language provides that if a class is derived from a base class containing virtual functions, a pointer to that base class type can be used to call virtual functions in the derived class object. A class containing virtual functions is sometimes called a "polymorphic class".
 
-![Diagram of a class hierarchy where C derives from B, which derives from A.](../cpp/media/vc38zz1.gif "Class hierarchy") <br/>
+![Diagram of a class hierarchy where C derives from B, which derives from A.](../cpp/media/vc38zz1.gif "Class hierarchy")<br/>
 Class hierarchy
 
 An object of type `C` could be visualized as shown in the following figure.
