@@ -65,7 +65,7 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 MSVC supports other predefined macros:
 
-- `__ARM_ARCH` Defined as an integer literal that represents the ARM architecture version. The value is 8 by default when compiling for ARM but no version is specified, 8 for `/arch:armv8.0`, 801 for `/arch:armv8.1`, 802 for `/arch:armv8.2`, and so on. To set the ARM architecture version, see [`/arch`](../build/reference/arch-arm.md). If it is undefined, for example while compiling x86 code, the value is `__ARM_ARCH`.
+- `__ARM_ARCH` Defined as an integer literal that represents the ARM architecture version. The value is 8 by default when compiling for ARM but no version is specified, 8 for `/arch:armv8.0`, 801 for `/arch:armv8.1`, 802 for `/arch:armv8.2`, and so on. To set the ARM architecture version, see [`/arch`](../build/reference/arch-arm.md). If it's undefined, for example while compiling x86 code, the value is `__ARM_ARCH`.
 
 - `__ATOM__` Defined as 1 when the [`/favor:ATOM`](../build/reference/favor-optimize-for-architecture-specifics.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
@@ -98,7 +98,7 @@ MSVC supports other predefined macros:
 
 - `_CONTROL_FLOW_GUARD` Defined as 1 when the [**`/guard:cf`** (Enable Control Flow Guard)](../build/reference/guard-enable-control-flow-guard.md) compiler option is set. Otherwise, undefined.
 
-- `__COUNTER__` Expands to an integer literal that starts at 0. The value is incremented by 1 every time it's used in a source file, or in included headers of the source file. `__COUNTER__` remembers its state when you use precompiled headers. This macro is always defined.
+- `__COUNTER__` Expands to an integer literal that starts at 0. The value increments by 1 every time it's used in a source file, or in included headers of the source file. `__COUNTER__` remembers its state when you use precompiled headers. This macro is always defined.
 
   This example uses `__COUNTER__` to assign unique identifiers to three different objects of the same type. The `exampleClass` constructor takes an integer as a parameter. In `main`, the application declares three objects of type `exampleClass`, using `__COUNTER__` as the unique identifier parameter:
 
@@ -269,7 +269,7 @@ MSVC supports other predefined macros:
 
    For more information about the history of compiler versioning, and compiler version numbers and the Visual Studio versions they correspond to, see [C++ compiler versioning](../overview/compiler-versions.md). Also, [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) on the Microsoft C++ team blog.
 
-- `_MSVC_LANG` Defined as an integer literal that specifies the C++ language standard targeted by the compiler. It's set only in code compiled as C++. The macro is the integer literal value `201402L` by default, or when the [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `201703L` if the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `202002L` if the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. It's set to a higher, unspecified value when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) option is specified. Otherwise, the macro is undefined. The `_MSVC_LANG` macro and [`/std` (Specify language standard version)](../build/reference/std-specify-language-standard-version.md) compiler options are available beginning in Visual Studio 2015 Update 3.
+- `_MSVC_LANG` Defined as an integer literal that specifies the C++ language standard targeted by the compiler. Only code compiled as C++ sets it. The macro is the integer literal value `201402L` by default, or when the [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `201703L` if the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `202002L` if the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. It's set to a higher, unspecified value when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) option is specified. Otherwise, the macro is undefined. The `_MSVC_LANG` macro and [`/std` (Specify language standard version)](../build/reference/std-specify-language-standard-version.md) compiler options are available beginning in Visual Studio 2015 Update 3.
 
 - `__MSVC_RUNTIME_CHECKS` Defined as 1 when one of the [`/RTC`](../build/reference/rtc-run-time-error-checks.md) compiler options is set. Otherwise, undefined.
 
