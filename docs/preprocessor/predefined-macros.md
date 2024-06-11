@@ -65,7 +65,7 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 MSVC supports other predefined macros:
 
-- `__ARM_ARCH` Defined as an integer literal that represents the ARM architecture version. The value is defined as 8 for the Armv8-A architecture. For 8.1 and onwards, the value is scaled to include minor versions such as X.Y using the formula X * 100 + Y. For example, for Armv8.1, `__ARM_ARCH` is 8 * 100 + 1 or 801. To set the ARM architecture version, see [`/arch`](../build/reference/arch-arm.md). This macro was introduced in Visual Studio 2022 version 17.10.
+- `__ARM_ARCH` Defined as an integer literal that represents the ARM architecture version. The value is defined as 8 for the Armv8-A architecture. For 8.1 and onwards, the value is scaled to include minor versions such as X.Y using the formula X * 100 + Y. For example, for Armv8.1, `__ARM_ARCH` is 8 * 100 + 1 or 801. To set the ARM architecture version, see [`/arch`](../build/reference/arch-arm.md). This macro was introduced in Visual Studio 2022 version 17.10. For more information about this macro, see [ARM C Language Extensions](https://arm-software.github.io/acle/main/acle.html#markdown-toc-arm-architecture-level).
 
 - `__ATOM__` Defined as 1 when the [`/favor:ATOM`](../build/reference/favor-optimize-for-architecture-specifics.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
