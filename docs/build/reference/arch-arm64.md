@@ -33,32 +33,12 @@ The `__ARM_ARCH` macro is defined for `/arch:ARMv8.0` and higher. It indicates t
 
 ```cpp
 // test.cpp
-#define STRINGIZE_IMPL(X) #X
-#define STRINGIZE(X)      STRINGIZE_IMPL(X)
-#pragma message("__ARM_ARCH is " STRINGIZE(__ARM_ARCH))
-```
-
-Produces the following when compiled with different `/arch` options:
-
-```cmd
-"C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Auxiliary\Build\vcvarsall.bat" x64_arm64
-cl /EHsc /nologo /W4 /c test.cpp
-test.cpp
-__ARM_ARCH is 8
-
-C:\Temp>cl /EHsc /nologo /W4 /c /arch:armv8.0 test.cpp
-test.cpp
-__ARM_ARCH is 8
-
-C:\Temp>cl /EHsc /nologo /W4 /c /arch:armv8.1 test.cpp
-test.cpp
-__ARM_ARCH is 801
-
-C:\Temp>cl /EHsc /nologo /W4 /c /arch:armv8.2 test.cpp
-test.cpp
-__ARM_ARCH is 802
-
-REM And so on...
+int main()
+{
+    #if __ARM_ARCH >= 802
+        // code that requires ARMv8.2...
+    #endif
+}
 ```
 
 **`/arch`** only affects code generation for native functions. When you use [`/clr`](clr-common-language-runtime-compilation.md) to compile, **`/arch`** has no effect on code generation for managed functions.
