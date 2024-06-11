@@ -38,7 +38,7 @@ The linker produces `test.rsp` containing the following lines to reflect the ful
 
 ### To set this linker option programmatically
 
-- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AssemblyDebug%2A>.
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.additionaloptions>.
 
 ## See also
 
