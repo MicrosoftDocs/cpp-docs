@@ -29,16 +29,12 @@ You can specify an ARM64 extension from Armv8.0-A through Armv8.9-A, and Armv9.0
 
 The `_M_ARM64` macro is defined by default when compiling for an ARM64 target. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md)\
 
-The `__ARM_ARCH` macro is defined for `/arch:ARMv8.0` and higher. It indicates the ARM architecture extension level that the compiler is targeting. For example:
+The `__ARM_ARCH` macro is defined for `/arch:ARMv8.0` and higher. It indicates the ARM architecture extension level that the compiler is targeting. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md).
 
 ```cpp
-// test.cpp
-int main()
-{
-    #if __ARM_ARCH >= 802
-        // code that requires ARMv8.2...
-    #endif
-}
+#if __ARM_ARCH >= 802
+    // code that requires ARMv8.2...
+#endif
 ```
 
 **`/arch`** only affects code generation for native functions. When you use [`/clr`](clr-common-language-runtime-compilation.md) to compile, **`/arch`** has no effect on code generation for managed functions.
