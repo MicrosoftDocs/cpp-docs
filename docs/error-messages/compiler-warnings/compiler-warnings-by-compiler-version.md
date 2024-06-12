@@ -635,7 +635,6 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 
 | Warning | Message |
 |--|--|
-| C4000 | `UNKNOWN WARNING    Please choose the Technical Support command on the Visual C++     Help menu, or open the Technical Support help file for more information` |
 | [C4272](compiler-warning-level-1-c4272.md) | `'type': is marked __declspec(dllimport); must specify native calling convention when importing a function.` |
 | [C4333](compiler-warning-level-1-c4333.md) | `'expression': right shift by too large amount, data loss` |
 | [C4334](compiler-warning-level-3-c4334.md) | `'expression': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)` |
