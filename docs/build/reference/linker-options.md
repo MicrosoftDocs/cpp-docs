@@ -1,7 +1,7 @@
 ---
 title: "MSVC Linker options"
 description: "A list of the options supported by the Microsoft LINK linker."
-ms.date: 06/03/2024
+ms.date: 06/10/2024
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ---
@@ -78,7 +78,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/LARGEADDRESSAWARE`](largeaddressaware-handle-large-addresses.md) | Tells the compiler that the application supports addresses larger than 2 gigabytes |
 | [`/LIBPATH`](libpath-additional-libpath.md) | Specifies a path to search before the environmental library path. |
 | [`/LINKREPRO`](linkrepro.md) | Specifies a path to generate link repro artifacts in. |
-| [`LINKREPROFULLPATHRSP`](link-repro-full-path-rsp.md) | Generates a response file containing the absolute paths to all the files that the linker took as input. |
+| [`/LINKREPROFULLPATHRSP`](link-repro-full-path-rsp.md) | Generates a response file containing the absolute paths to all the files that the linker took as input. |
 | [`/LINKREPROTARGET`](linkreprotarget.md) | Generates a link repro only when producing the specified target.<sup>16.1</sup> |
 | [`/LTCG`](ltcg-link-time-code-generation.md) | Specifies link-time code generation. |
 | [`/MACHINE`](machine-specify-target-platform.md) | Specifies the target platform. |
