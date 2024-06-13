@@ -54,7 +54,7 @@ If the calling thread already owns the `mutex`, the behavior is undefined.
 ## <a name="mutex"></a> Constructor
 
 Constructs a `mutex` object that isn't locked.\
-Microsoft's implementation of this constructor is not `constexpr`.
+Before Visual Studio 2022 17.10, Microsoft's implementation of this constructor wasn't `constexpr`. Now it's `constexpr`.
 
 ```cpp
 mutex() noexcept;
@@ -82,7 +82,7 @@ native_handle_type native_handle();
 
 ### Return Value
 
-`native_handle_type` is defined as a `Concurrency::critical_section *` that's cast as `void *`.
+`native_handle_type` is defined as a `Concurrency::critical_section *`. It's cast as `void *`.
 
 ## <a name="try_lock"></a> `try_lock`
 
