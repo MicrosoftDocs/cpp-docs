@@ -14,7 +14,6 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 
 |Warning|Message|
 |-------------|-------------|
-|Compiler warning C4000|UNKNOWN WARNING<br/> Please choose the Technical Support command on the Visual C++<br/> Help menu, or open the Technical Support help file for more information|
 |[Compiler warning (level 4, no longer emitted) C4001](compiler-warning-level-4-c4001.md)|nonstandard extension 'single line comment' was used|
 |[Compiler warning (level 1, Error) C4002](compiler-warning-level-1-c4002.md)|too many arguments for function-like macro invocation '*identifier*'|
 |[Compiler warning (level 1, Error) C4003](compiler-warning-level-1-c4003.md)|not enough arguments for function-like macro invocation '*identifier*'|

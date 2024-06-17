@@ -16,8 +16,6 @@ The articles in this section of the documentation explain a subset of the error 
 
 | Error | Message |
 |--|--|
-| [Fatal error C999](fatal-error-c999.md) | UNKNOWN MESSAGE<br />Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
-| [Fatal error C1000](fatal-error-c1000-c1999.md) | UNKNOWN FATAL ERROR<br />Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
 | [Fatal error C1001](fatal-error-c1001.md) | An internal error has occurred in the compiler.<br /> (compiler file '*file*', line *number*)<br /> To work around this problem, try simplifying or changing the program near the locations listed above. Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
 | [Fatal error C1002](fatal-error-c1002.md) | compiler is out of heap space in pass 2 |
 | [Fatal error C1003](fatal-error-c1003.md) | error count exceeds *number*; stopping compilation |
@@ -207,7 +205,6 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1905](fatal-error-c1905.md) | Front end and back end not compatible (must target same processor). |
 | Fatal error C1906 | assembly reference '*name*' not resolved for type '*type-name*'; missing option '-FU *filename*.dll'? |
 | Fatal error C1907 | unable to recover from previous error(s); stopping compilation |
-| [Fatal error C1999](fatal-error-c1000-c1999.md) | UNKNOWN FATAL ERROR Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
 
 ## See also
 
