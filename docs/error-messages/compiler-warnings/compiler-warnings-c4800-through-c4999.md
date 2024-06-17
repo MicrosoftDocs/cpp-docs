@@ -143,7 +143,6 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 | [Compiler warning (level 3) C4996](compiler-warning-level-3-c4996.md) | '*deprecated-declaration*': *deprecation-message* (or "was declared deprecated") |
 | [Compiler warning (level 1) C4997](compiler-warning-level-1-c4997.md) | '*class*': coclass does not implement a COM interface or pseudo-interface |
 | Compiler warning (level 1) C4998 | EXPECTATION FAILED: *expectation*(*value*) |
-| [Compiler warning C4999](compiler-warning-level-1-c4999.md) | UNKNOWN WARNING Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
 
 ## See also
 

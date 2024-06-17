@@ -115,7 +115,6 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C2996](compiler-error-c2996.md) | '*function*': recursive function template definition |
 | Compiler error C2997 | '*function*': array bound cannot be deduced from a default member initializer |
 | [Compiler error C2998](compiler-error-c2998.md) | '*declarator*': cannot be a template definition |
-| Compiler error C2999 | UNKNOWN ERROR  Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
 
 ## See also
 
