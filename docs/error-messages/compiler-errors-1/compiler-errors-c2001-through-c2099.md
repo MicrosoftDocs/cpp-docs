@@ -16,7 +16,6 @@ The articles in this section of the documentation explain a subset of the error 
 
 | Error | Message |
 |--|--|
-| Compiler error C2000 | UNKNOWN ERROR<br /> Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
 | [Compiler error C2001](compiler-error-c2001.md) | newline in constant |
 | [Compiler error C2002](compiler-error-c2002.md) | invalid wide-character constant |
 | [Compiler error C2003](compiler-error-c2003.md) | expected 'defined id' |
