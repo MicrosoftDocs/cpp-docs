@@ -263,7 +263,7 @@ bool operator!=(const scoped_allocator_adaptor<OuterA1, InnerAllocs...>& a,
 const scoped_allocator_adaptor<OuterA2, InnerAllocs...>& b) noexcept;
 ```
 
-## <a name="outer_allocator" /></a> scoped_allocator_adaptor::outer_allocator
+## <a name="outer_allocator" /> scoped_allocator_adaptor::outer_allocator
 
 Retrieves a reference to the stored object of type `outer_allocator_type`.
 
