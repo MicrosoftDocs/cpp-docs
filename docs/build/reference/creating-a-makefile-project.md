@@ -16,7 +16,7 @@ If you have an existing makefile project, you have these choices if you want to 
 - **Visual Studio 2017 and later**: Use the **Open Folder** feature to edit and build a makefile project as-is without any involvement of the MSBuild system. For more information, see [Open Folder projects for C++](../open-folder-projects-cpp.md).
 - **Visual Studio 2019 and later**: Create a UNIX makefile project for Linux.
 
-## <a name="create_a_makefile_project"> To create a makefile project with the makefile project template
+## <a name="create_a_makefile_project" /> To create a makefile project with the makefile project template
 
 In Visual Studio 2017 and later, the Makefile project template is available when the C++ Desktop Development workload is installed.
 

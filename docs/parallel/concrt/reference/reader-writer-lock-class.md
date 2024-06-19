@@ -158,7 +158,7 @@ explicit _CRTIMP scoped_lock_read(reader_writer_lock& _Reader_writer_lock);
 *_Reader_writer_lock*<br/>
 The `reader_writer_lock` object to acquire as a reader.
 
-## <a name="scoped_lock_read_dtor">  reader_writer_lock::scoped_lock_read::~scoped_lock_read Destructor
+## <a name="scoped_lock_read_dtor" />  reader_writer_lock::scoped_lock_read::~scoped_lock_read Destructor
 
 Destroys a `scoped_lock_read` object and releases the lock supplied in its constructor.
 
