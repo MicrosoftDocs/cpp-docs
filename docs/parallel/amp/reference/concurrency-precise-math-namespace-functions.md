@@ -1049,7 +1049,7 @@ Floating-point value
 
 Returns the floor of the argument
 
-## <a name="fma"> fma
+## <a name="fma" /> fma
 
 Computes the product of the first and second specified arguments, then adds the third specified argument to the result; the entire computation is performed as a single operation.
 
