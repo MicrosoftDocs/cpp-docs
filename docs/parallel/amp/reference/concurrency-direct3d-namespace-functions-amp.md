@@ -262,7 +262,7 @@ An array on a Direct3D accelerator_view for which the underlying Direct3D buffer
 
 The IUnknown interface pointer corresponding to the Direct3D buffer underlying the array.
 
-## <a name="get_device"> get_device
+## <a name="get_device" /> get_device
 
 Get the D3D device interface underlying a accelerator_view.
 

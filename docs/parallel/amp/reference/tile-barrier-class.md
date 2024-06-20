@@ -79,7 +79,7 @@ Blocks execution of all threads in a tile until all threads in a tile have reach
 void wait_with_all_memory_fence() const restrict(amp);
 ```
 
-## <a name="wait_with_global_memory_fence"> wait_with_global_memory_fence
+## <a name="wait_with_global_memory_fence" /> wait_with_global_memory_fence
 
 Blocks execution of all threads in a tile until all threads in a tile have reached this call. This ensures that all global memory accesses are visible to other threads in the thread tile, and have been executed in program order.
 
@@ -89,7 +89,7 @@ Blocks execution of all threads in a tile until all threads in a tile have reach
 void wait_with_global_memory_fence() const  restrict(amp);
 ```
 
-## <a name="wait_with_tile_static_memory_fence"> wait_with_tile_static_memory_fence
+## <a name="wait_with_tile_static_memory_fence" /> wait_with_tile_static_memory_fence
 
 Blocks execution of all threads in a tile until all threads in a tile have reached this call. This ensures that `tile_static` memory accesses are visible to other threads in the thread tile, and have been executed in program order.
 

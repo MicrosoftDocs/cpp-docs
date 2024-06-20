@@ -37,7 +37,7 @@ IntPtr has the following members:
 
 **Metadata:** platform.winmd
 
-## <a name="ctor"> </a> IntPtr::IntPtr Constructor
+## <a name="ctor" /> </a> IntPtr::IntPtr Constructor
 
 Initializes a new instance of an IntPtr with the specified value.
 

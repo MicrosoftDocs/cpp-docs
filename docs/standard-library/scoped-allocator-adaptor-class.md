@@ -240,14 +240,14 @@ size_type max_size();
 
 `Outer_traits::max_size(outer_allocator())`
 
-## <a name="op_as">  scoped_allocator_adaptor::operator=
+## <a name="op_as" />  scoped_allocator_adaptor::operator=
 
 ```cpp
 scoped_allocator_adaptor& operator=(const scoped_allocator_adaptor&) = default;
 scoped_allocator_adaptor& operator=(scoped_allocator_adaptor&&) = default;
 ```
 
-## <a name="op_eq_eq">  scoped_allocator_adaptor::operator==
+## <a name="op_eq_eq" />  scoped_allocator_adaptor::operator==
 
 ```cpp
 template <class OuterA1, class OuterA2, class... InnerAllocs>
@@ -255,7 +255,7 @@ bool operator==(const scoped_allocator_adaptor<OuterA1, InnerAllocs...>& a,
 const scoped_allocator_adaptor<OuterA2, InnerAllocs...>& b) noexcept;
 ```
 
-## <a name="op_noeq">  scoped_allocator_adaptor::operator!=
+## <a name="op_noeq" />  scoped_allocator_adaptor::operator!=
 
 ```cpp
 template <class OuterA1, class OuterA2, class... InnerAllocs>
@@ -263,7 +263,7 @@ bool operator!=(const scoped_allocator_adaptor<OuterA1, InnerAllocs...>& a,
 const scoped_allocator_adaptor<OuterA2, InnerAllocs...>& b) noexcept;
 ```
 
-## <a name="outer_allocator"></a> scoped_allocator_adaptor::outer_allocator
+## <a name="outer_allocator" /> scoped_allocator_adaptor::outer_allocator
 
 Retrieves a reference to the stored object of type `outer_allocator_type`.
 
