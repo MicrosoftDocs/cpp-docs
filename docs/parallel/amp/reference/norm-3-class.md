@@ -200,7 +200,7 @@ The value for initialization.
 *_Other*<br/>
 The object used to initialize.
 
-## <a name="size"> size Constant
+## <a name="size" /> size Constant
 
 ### Syntax
 
