@@ -19,6 +19,8 @@ NEON intrinsics are supported, as provided in the header file `arm64_neon.h`. Th
 
 ## <a name="A"></a> ARM64-specific intrinsics listing
 
+ARM64-specific intrinsics are supported, as provided in the header file `intrin.h`.
+
 |Function Name|Instruction|Function Prototype|
 |-------------------|-----------------|------------------------|
 |__break|BRK|void __break(int)|
