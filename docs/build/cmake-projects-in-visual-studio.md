@@ -134,11 +134,11 @@ You can customize a CMake debugging session by setting properties in the *`launc
 
 ### Just My Code for CMake projects
 
-When you build for Windows using the MSVC compiler, CMake projects have support for Just My Code debugging. To change the Just My Code setting, go to **Tools** > **Options** > **Debugging** > **General**.
+When you build for Windows using the MSVC compiler, CMake projects have support for Just My Code debugging. To change the Just My Code setting, go to **Tools** > **Options** > **Debugging** > **General**. For more information on Just My Code debugging, see [Debug only user code with Just My Code](/visualstudio/debugger/just-my-code).
 
 ### Edit and Continue for CMake projects
 
-When you build for Windows with the MSVC compiler, CMake projects have support for Edit and Continue. Add the following code to your *`CMakeLists.txt`* file to enable Edit and Continue.
+When you build for Windows with the MSVC compiler, CMake projects have support for Edit and Continue. Add the following code to your *`CMakeLists.txt`* file to enable Edit and Continue. For more information on Edit and Continue, see [Configure Edit and Continue (C#, VB, C++)](/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue).
 
 ```
 if(MSVC)
