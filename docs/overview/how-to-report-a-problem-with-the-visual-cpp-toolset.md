@@ -379,7 +379,10 @@ Beneath the community tabs, near the top of each page, is a search box. You can 
 For issues with the C++ compiler, linker, and other tools and libraries, first search the [C++ Developer Community](https://aka.ms/vsfeedback/browsecpp) page. If you search for your problem, and it hasn't been reported before, choose the **Report a problem** button next to the search box. You can include your repro code and command line, screenshots, links to related discussions, and any other information you think is relevant and useful.
 
 > [!TIP]
-> For other kinds of problems you might find in Visual Studio that are unrelated to the C++ toolset (For example, UI issues, broken IDE functionality, or general crashes), use the **Report a Problem** tool in the IDE. This is the best choice, due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've found. These kinds of errors can also be looked up on the Visual Studio [Developer Community](https://aka.ms/feedback/report?space=8) site. For more information, see [How to report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio). Information in the initial Developer Community report will always be public. If this is a concern, see the next section regarding privacy.
+> Information in the initial Developer Community report will always be public. If this is a concern, see the next section regarding privacy.
+
+> [!TIP]
+> For other kinds of problems you might find in Visual Studio that are unrelated to the C++ toolset (For example, UI issues, broken IDE functionality, or general crashes), use the **Report a Problem** tool in the IDE. This is the best choice, due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've found. These kinds of errors can also be looked up on the Visual Studio [Developer Community](https://aka.ms/feedback/report?space=8) site. For more information, see [How to report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Reports and privacy
 
