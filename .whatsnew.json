@@ -1,5 +1,5 @@
 {
-  "$schema": "https://whatsnewapi.azurewebsites.net/schema",
+  "$schema": "https://github.com/dotnet/docs-tools/blob/main/WhatsNew.Infrastructure/Configuration/reposettings.schema.json",
   "docSetProductName": "C++, C, and Assembler",
   "rootDirectory": "docs/",
   "docLinkSettings": {
