@@ -6,30 +6,30 @@ ms.custom: intro-whats-new
 monikerRange: '>=msvc-160'
 ---
 
-# Microsoft C++ docs: What's new for August 2023 to November 2023
+# Microsoft C++ docs: What's new for November 2023 to June 2024
 
-This article lists major changes to the Microsoft C++ docs for May 2023 through early November 2023.
+This article lists major changes to the Microsoft C++ docs for November 2023 to June 2024.
 
 - For what was new in the docs in previous months, see [What's new history](#whats-new-history).
 - For what's new related to C++ in Visual Studio, see [What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md).
 - For the latest C and C++ conformance with ISO standards status, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md).
 
-## C/C++ compiler intrinsics and assembly language
+### C/C++ compiler intrinsics and assembly language
 
-### Updated articles
+**Updated articles**
 
 - [ARM64 intrinsics](../intrinsics/arm64-intrinsics.md) - Added entries to table for new arm64 intrinsics
 
-## Active Template Library (ATL), Microsoft Foundation Classes (MFC)
+### Active Template Library (ATL), Microsoft Foundation Classes (MFC)
 
-### Updated articles
+**Updated articles**
 
 - [Setting the Dialog Box's Background Color](../mfc/setting-the-dialog-boxs-background-color.md) - add code example for setting a dialog box's background color
 - [Unicode and Multibyte Character Set (MBCS) Support](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md) - Clarified MBCS support in unicode-and-multibyte-character-set-mbcs-support.md
 
 ## C/C++ projects and build systems
 
-### New articles
+**New articles**
 
 - [/ARM64XFUNCTIONPADMINX64 (Minimum x64 function padding)](../build/reference/arm64-function-pad-min-x64.md)
 - [/NOFUNCTIONPADSECTION (Disable function padding)](../build/reference/no-function-pad-section.md)
@@ -42,7 +42,7 @@ This article lists major changes to the Microsoft C++ docs for May 2023 through 
 - [Tutorial: Troubleshoot function inlining on build time](../build-insights/tutorials/build-insights-function-view.md)
 - [Tutorial: Troubleshoot header file impact on build time](../build-insights/tutorials/build-insights-included-files-view.md)
 
-### Updated articles
+**Updated articles**
 
 - [/LARGEADDRESSAWARE (Handle Large Addresses)](../build/reference/largeaddressaware-handle-large-addresses.md) - largeaddressaware:no isn't recommended for 64-bit apps
 - [/Qspectre](../build/reference/qspectre.md) - New /QSpectre flag
@@ -53,21 +53,21 @@ This article lists major changes to the Microsoft C++ docs for May 2023 through 
   - new linker switches for 17.8
 - [Linking](../build/reference/linking.md) - new linker switches for 17.8
 
-## C language
+### C language
 
-### New articles
+**New articles**
 
 - [`typeof_unqual`, `__typeof_unqual__` (C23)](../c-language/typeof-unqual-c.md)
 - [`typeof`, `__typeof__` (C23)](../c-language/typeof-c.md)
 
-### Updated articles
+**Updated articles**
 
-- [C Keywords](../c-language/c-keywords.md) - Conformance
-- [C Type Specifiers](../c-language/c-type-specifiers.md) - Conformance
+- [C Keywords](../c-language/c-keywords.md) - Conformance updates
+- [C Type Specifiers](../c-language/c-type-specifiers.md) - Conformance updates
 
-## Code quality
+### Code quality
 
-### New articles
+**New articles**
 
 - [Warning C26459](../code-quality/c26459.md)
 - [Warning C26837](../code-quality/c26837.md)
@@ -82,36 +82,36 @@ This article lists major changes to the Microsoft C++ docs for May 2023 through 
 - [Warning C6397](../code-quality/c6397.md)
 - [Warning C6398](../code-quality/c6398.md)
 
-### Updated articles
+**Updated articles**
 
 - [Using Clang-Tidy in Visual Studio](../code-quality/clang-tidy.md) - fix code example
 - [Warning C6031](../code-quality/c6031.md) - fix some code examples
 - [Warning C6059](../code-quality/c6059.md) - Add heuristics
 - [Warning C6201](../code-quality/c6201.md) - Add heuristics
 
-## C++ in Visual Studio
+### C++ in Visual Studio
 
-### Updated articles
+**Updated articles**
 
 - [`break` statement (C++)](../cpp/break-statement-cpp.md) - Break statement documentation fix
 - [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md) - fix code example
 - [Inline functions (C++)](../cpp/inline-functions-cpp.md) - Address mistakes in inline functions cpp and remove content contrasting inline functions and macros
 
-## Cross platform development
+### Cross platform development
 
-### Updated articles
+**Updated articles**
 
 - [Install cross-platform mobile development with C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md) - updates regarding Xamarin
 
-## C runtime library
+### C runtime library
 
-### Updated articles
+**Updated articles**
 
-- [Translation mode constants](../c-runtime-library/translation-mode-constants.md) - Clarify that _O_TEXT is ANSI.
+- [Translation mode constants](../c-runtime-library/translation-mode-constants.md) - Clarify that `_O_TEXT` is ANSI
 
-## C/C++ compiler and tools errors and warnings
+### C/C++ compiler and tools errors and warnings
 
-### New articles
+**New articles**
 
 - [Compiler Error C2323](../error-messages/compiler-errors-1/compiler-error-c2323.md)
 - [Compiler Warning (level 1) C5072](../error-messages/compiler-warnings/compiler-warning-c5072.md)
@@ -122,68 +122,64 @@ This article lists major changes to the Microsoft C++ docs for May 2023 through 
 - [Microsoft C/C++ compiler warnings C5000 through C5199](../error-messages/compiler-warnings/compiler-warnings-c5000-through-c5199.md)
 - [Microsoft C/C++ compiler warnings C5200 through C5399](../error-messages/compiler-warnings/compiler-warnings-c5200-through-c5399.md)
 
-### Updated articles
+**Updated articles**
 
-- Updated many compiler error and warning topics to include or refine examples.
-- [Linker tools errors and warnings (LNKxxxx)](../error-messages/tool-errors/linker-tools-errors-and-warnings.md) - new linker warnings: 4306 & 4307
+- Updated several compiler error and warning topics to include or refine examples.
 
-## C++ in Visual Studio tutorials
+### C++ in Visual Studio tutorials
 
-### Updated articles
+**Updated articles**
 
 - [Create a console calculator in C++](../get-started/tutorial-console-cpp.md)
 
-## Read and write code using C++ in Visual Studio
+### Read and write code using C++ in Visual Studio
 
-### New articles
+**New articles**
 
 - [C++ Include Diagnostics in Visual Studio](../ide/include-diagnostics.md)
 - [Visualize C/C++ macro expansion](../ide/visualize-macro-expansion.md)
 
-### Updated articles
+**Updated articles**
 
-- [Visualize C/C++ macro expansion](../ide/visualize-macro-expansion.md) - add keyboard accelerators
 - [Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md) - update steps
 
-## Linux with C++ in Visual Studio
+### Linux with C++ in Visual Studio
 
-### Updated articles
+**Updated articles**
 
 - [Connect to your target Linux system in Visual Studio](../linux/connect-to-your-remote-linux-computer.md)
 
-## C/C++ in Visual Studio overview
+### C/C++ in Visual Studio overview
 
-### New articles
+**New articles**
 
 - [Microsoft Visual C++ compiler versioning](../overview/compiler-versions.md)
 
-### Updated articles
+**Updated articles**
 
-- [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](../overview/cpp-conformance-improvements.md) - updates for 17.10, add `_alignof`
+- [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](../overview/cpp-conformance-improvements.md) - updates for 17.10, added `_alignof`
 - [Microsoft C++ docs: What's new for August 2023 to November 2023](../overview/whats-new-cpp-docs.md)
 - [What's new for C++ in Visual Studio 2022](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) - updates for 17.10
 
-## C++ porting and upgrade guide
+### C++ porting and upgrade guide
 
-### Updated articles
+**Updated articles**
 
 - [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md) - clarify linking binaries built with different versions of the toolset
 
-## C/C++ preprocessor reference
+### C/C++ preprocessor reference
 
-### Updated articles
+**Updated articles**
 
 - [Compiler warnings that are off by default](../preprocessor/compiler-warnings-that-are-off-by-default.md) - add new warning for VS 17.6 - C5266, add warning level info, new warning topic for C5267
-- [Predefined macros](../preprocessor/predefined-macros.md) - document `__arm_arch` macro
-
-## C++ Standard Template Library (STL) reference
+- [Predefined macros](../preprocessor/predefined-macros.md) - documented `__arm_arch` macro
 
 ## Overview of Windows programming in C++
 
-### Updated articles
+**Updated articles**
 
 - [ClickOnce Deployment for Visual C++ Applications](../windows/clickonce-deployment-for-visual-cpp-applications.md) - fixed code example
-- [Microsoft Visual C++ Redistributable latest supported downloads](../windows/latest-supported-vc-redist.md) - note 2013 no longer supported and other updates.
+- [Microsoft Visual C++ Redistributable latest supported downloads](../windows/latest-supported-vc-redist.md) - note 2013 no longer supported, and other updates
 
 ## What's new history
 
@@ -206,10 +202,10 @@ This section lists major changes to the Microsoft C++ docs for August 2023 to ea
 **Updated articles**
 
 - [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md) - Updated screenshots.
-- [`/permissive-` (Standards conformance)](../build/reference/permissive-standards-conformance.md) - Reflect new behavior as of 17.6.
-- [`/Zc:externConstexpr` (Enable extern constexpr variables)](../build/reference/zc-externconstexpr.md) - Reflect new behavior as of 17.6.
-- [Overview of ARM64EC ABI conventions](../build/arm64ec-windows-abi-conventions.md) - Updated register mapping for integer registers table.
-- [`/DEBUG` (Generate debug info)](../build/reference/debug-generate-debug-info.md) - Fix documentation for `/DEBUG:FASTLINK` and `/DEBUG`.
+- [`/permissive-` (Standards conformance)](../build/reference/permissive-standards-conformance.md) - Reflect new behavior as of 17.6
+- [`/Zc:externConstexpr` (Enable extern constexpr variables)](../build/reference/zc-externconstexpr.md) - Reflect new behavior as of 17.6
+- [Overview of ARM64EC ABI conventions](../build/arm64ec-windows-abi-conventions.md) - Updated register mapping for integer registers table
+- [`/DEBUG` (Generate debug info)](../build/reference/debug-generate-debug-info.md) - Fix documentation for `/DEBUG:FASTLINK` and `/DEBUG`
 
 ### Code quality
 
@@ -221,7 +217,7 @@ This section lists major changes to the Microsoft C++ docs for August 2023 to ea
 
 **Updated articles**
 
-- [How to specify additional code information by using `_Analysis_assume_`](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md) - Updated remarks.
+- [How to specify additional code information by using `_Analysis_assume_`](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md) - Updated remarks
 
 Clarified behavior for the following warnings:
 
@@ -238,11 +234,11 @@ Clarified behavior for the following warnings:
 
 **Updated articles**
 
-- [`alignas` (C++)](../cpp/alignas-specifier.md) - Several updates to the remarks.
-- [if-else statement (C++)](../cpp/if-else-statement-cpp.md) - Improved code examples.
-- [__fastcall](../cpp/fastcall.md) - Added info about classes, structs, and unions.
-- [`decltype` (C++)](../cpp/decltype-cpp.md) - Fixed code example.
-- [noreturn](../cpp/noreturn.md) - Improved example.
+- [`alignas` (C++)](../cpp/alignas-specifier.md) - Updates to the remarks
+- [if-else statement (C++)](../cpp/if-else-statement-cpp.md) - Improved code examples
+- [__fastcall](../cpp/fastcall.md) - Added info about classes, structs, and unions
+- [`decltype` (C++)](../cpp/decltype-cpp.md) - Fixed code example
+- [noreturn](../cpp/noreturn.md) - Improved example
 
 ### C runtime library
 
