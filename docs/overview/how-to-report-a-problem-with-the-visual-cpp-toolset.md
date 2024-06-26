@@ -392,7 +392,7 @@ If you're concerned about revealing your identity, [create a new Microsoft accou
 
 **Don't put anything you want to keep private in the title or content of the initial report, which is public.** Instead, say that you'll send details privately in a separate comment. To make sure that your report is directed to the right people, include **cppcompiler** in the topic list of your problem report. Once the problem report is created, it's now possible to specify who can see your replies and attachments.
 
-#### To create a problem report for private informationF
+#### To create a problem report for private information
 
 1. In the report you created, choose **Add comment** to create your private description of the problem.
 
