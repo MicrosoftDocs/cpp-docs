@@ -18,7 +18,7 @@ This article lists major changes to the Microsoft C++ docs for November 2023 to 
 
 **Updated articles**
 
-- [ARM64 intrinsics](../intrinsics/arm64-intrinsics.md) - Added entries to table for new arm64 intrinsics
+- [ARM64 intrinsics](../intrinsics/arm64-intrinsics.md) - added entries to table for new arm64 intrinsics
 
 ### Active Template Library (ATL), Microsoft Foundation Classes (MFC)
 
@@ -47,7 +47,7 @@ This article lists major changes to the Microsoft C++ docs for November 2023 to 
 - [/LARGEADDRESSAWARE (Handle Large Addresses)](../build/reference/largeaddressaware-handle-large-addresses.md) - largeaddressaware:no isn't recommended for 64-bit apps
 - [/Qspectre](../build/reference/qspectre.md) - New /QSpectre flag
 - [`/arch` (ARM64)](../build/reference/arch-arm64.md) - document __arm_arch macro
-- [Advanced Property Page](../build/reference/advanced-property-page.md) - Add SARIF diagnostics documentation
+- [Advanced Property Page](../build/reference/advanced-property-page.md) - add SARIF diagnostics documentation
 - [Linker options](../build/reference/linker-options.md)
   - new flag: /LINKREPROFULLPATHRSP
   - new linker switches for 17.8
@@ -62,8 +62,8 @@ This article lists major changes to the Microsoft C++ docs for November 2023 to 
 
 **Updated articles**
 
-- [C Keywords](../c-language/c-keywords.md) - Conformance updates
-- [C Type Specifiers](../c-language/c-type-specifiers.md) - Conformance updates
+- [C Keywords](../c-language/c-keywords.md) - conformance updates
+- [C Type Specifiers](../c-language/c-type-specifiers.md) - conformance updates
 
 ### Code quality
 
@@ -84,18 +84,18 @@ This article lists major changes to the Microsoft C++ docs for November 2023 to 
 
 **Updated articles**
 
-- [Using Clang-Tidy in Visual Studio](../code-quality/clang-tidy.md) - fix code example
+- [Using Clang-Tidy in Visual Studio](../code-quality/clang-tidy.md) - fixed code example
 - [Warning C6031](../code-quality/c6031.md) - fix some code examples
-- [Warning C6059](../code-quality/c6059.md) - Add heuristics
-- [Warning C6201](../code-quality/c6201.md) - Add heuristics
+- [Warning C6059](../code-quality/c6059.md) - add heuristics
+- [Warning C6201](../code-quality/c6201.md) - add heuristics
 
 ### C++ in Visual Studio
 
 **Updated articles**
 
-- [`break` statement (C++)](../cpp/break-statement-cpp.md) - Break statement documentation fix
-- [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md) - fix code example
-- [Inline functions (C++)](../cpp/inline-functions-cpp.md) - Address mistakes in inline functions cpp and remove content contrasting inline functions and macros
+- [`break` statement (C++)](../cpp/break-statement-cpp.md) - doc fix
+- [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md) - fixed code example
+- [Inline functions (C++)](../cpp/inline-functions-cpp.md) - address mistakes in inline functions cpp and remove content contrasting inline functions and macros
 
 ### Cross platform development
 
@@ -107,7 +107,7 @@ This article lists major changes to the Microsoft C++ docs for November 2023 to 
 
 **Updated articles**
 
-- [Translation mode constants](../c-runtime-library/translation-mode-constants.md) - Clarify that `_O_TEXT` is ANSI
+- [Translation mode constants](../c-runtime-library/translation-mode-constants.md) - clarify that `_O_TEXT` is ANSI
 
 ### C/C++ compiler and tools errors and warnings
 
@@ -171,7 +171,7 @@ This article lists major changes to the Microsoft C++ docs for November 2023 to 
 
 **Updated articles**
 
-- [Compiler warnings that are off by default](../preprocessor/compiler-warnings-that-are-off-by-default.md) - add new warning for VS 17.6 - C5266, add warning level info, new warning topic for C5267
+- [Compiler warnings that are off by default](../preprocessor/compiler-warnings-that-are-off-by-default.md) - add new warning for VS 17.6 - C5266 & C5267 and add warning level info
 - [Predefined macros](../preprocessor/predefined-macros.md) - documented `__arm_arch` macro
 
 ## Overview of Windows programming in C++
@@ -179,7 +179,7 @@ This article lists major changes to the Microsoft C++ docs for November 2023 to 
 **Updated articles**
 
 - [ClickOnce Deployment for Visual C++ Applications](../windows/clickonce-deployment-for-visual-cpp-applications.md) - fixed code example
-- [Microsoft Visual C++ Redistributable latest supported downloads](../windows/latest-supported-vc-redist.md) - note 2013 no longer supported, and other updates
+- [Microsoft Visual C++ Redistributable latest supported downloads](../windows/latest-supported-vc-redist.md) - note 2013 no longer supported and other updates
 
 ## What's new history
 
@@ -189,7 +189,7 @@ This section lists major changes to the Microsoft C++ docs for August 2023 to ea
 
 **Updated articles**
 
-- [CComDynamicUnkArray Class](../atl/reference/ccomdynamicunkarray-class.md) - Updated remarks.
+- [CComDynamicUnkArray Class](../atl/reference/ccomdynamicunkarray-class.md) - updated remarks
 
 ### C/C++ projects and build systems
 
@@ -201,11 +201,11 @@ This section lists major changes to the Microsoft C++ docs for August 2023 to ea
 
 **Updated articles**
 
-- [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md) - Updated screenshots.
-- [`/permissive-` (Standards conformance)](../build/reference/permissive-standards-conformance.md) - Reflect new behavior as of 17.6
-- [`/Zc:externConstexpr` (Enable extern constexpr variables)](../build/reference/zc-externconstexpr.md) - Reflect new behavior as of 17.6
-- [Overview of ARM64EC ABI conventions](../build/arm64ec-windows-abi-conventions.md) - Updated register mapping for integer registers table
-- [`/DEBUG` (Generate debug info)](../build/reference/debug-generate-debug-info.md) - Fix documentation for `/DEBUG:FASTLINK` and `/DEBUG`
+- [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md) - updated screenshots.
+- [`/permissive-` (Standards conformance)](../build/reference/permissive-standards-conformance.md) - reflect new behavior as of 17.6
+- [`/Zc:externConstexpr` (Enable extern constexpr variables)](../build/reference/zc-externconstexpr.md) - reflect new behavior as of 17.6
+- [Overview of ARM64EC ABI conventions](../build/arm64ec-windows-abi-conventions.md) - ppdated register mapping for integer registers table
+- [`/DEBUG` (Generate debug info)](../build/reference/debug-generate-debug-info.md) - correct documentation for `/DEBUG:FASTLINK` and `/DEBUG`
 
 ### Code quality
 
@@ -217,7 +217,7 @@ This section lists major changes to the Microsoft C++ docs for August 2023 to ea
 
 **Updated articles**
 
-- [How to specify additional code information by using `_Analysis_assume_`](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md) - Updated remarks
+- [How to specify additional code information by using `_Analysis_assume_`](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md) - updated remarks
 
 Clarified behavior for the following warnings:
 
@@ -234,17 +234,17 @@ Clarified behavior for the following warnings:
 
 **Updated articles**
 
-- [`alignas` (C++)](../cpp/alignas-specifier.md) - Updates to the remarks
-- [if-else statement (C++)](../cpp/if-else-statement-cpp.md) - Improved code examples
-- [__fastcall](../cpp/fastcall.md) - Added info about classes, structs, and unions
-- [`decltype` (C++)](../cpp/decltype-cpp.md) - Fixed code example
-- [noreturn](../cpp/noreturn.md) - Improved example
+- [`alignas` (C++)](../cpp/alignas-specifier.md) - updated remarks
+- [if-else statement (C++)](../cpp/if-else-statement-cpp.md) - improved code examples
+- [__fastcall](../cpp/fastcall.md) - added info about classes, structs, and unions
+- [`decltype` (C++)](../cpp/decltype-cpp.md) - fixed code example
+- [noreturn](../cpp/noreturn.md) - improved example
 
 ### C runtime library
 
 **Updated articles**
 
-- [`fegetround`, `fesetround`](../c-runtime-library/reference/fegetround-fesetround2.md) - Noted change of the values for `FE_UPWARD` and `FE_DOWNWARD`.
+- [`fegetround`, `fesetround`](../c-runtime-library/reference/fegetround-fesetround2.md) - noted change of values for `FE_UPWARD` and `FE_DOWNWARD`
 
 ### C/C++ compiler and tools errors and warnings
 
@@ -274,19 +274,19 @@ Clarified behavior for the following warnings:
 
 **Updated articles**
 
-- [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](../overview/cpp-conformance-improvements.md) - Added conformance updates for 17.7 and 17.8.
-- [What's new for C++ in Visual Studio 2022](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) - Updated what's new in C++.
+- [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](../overview/cpp-conformance-improvements.md) - added conformance updates for 17.7 and 17.8.
+- [What's new for C++ in Visual Studio 2022](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) - updated what's new in C++.
 
 ### C++ Standard Template Library (STL) reference
 
 **Updated articles**
 
-- [auto_ptr class](../standard-library/auto-ptr-class.md) - Added deprecation info
+- [auto_ptr class](../standard-library/auto-ptr-class.md) - added deprecation info
 
 ### Active Template Library (ATL), Microsoft Foundation Classes (MFC)
 
 **Updated articles**
 
-- [Connection maps](../mfc/reference/connection-maps.md) - Corrected parameter description of `pRefCount` in `AfxConnection(Un)Advise`.
-- [`CSimpleStringT` Class](../atl-mfc-shared/reference/csimplestringt-class.md) - Updated code example.
-- [MFC class hierarchy chart](../mfc/hierarchy-chart.md) - Updated MFC hierarchy chart.
+- [Connection maps](../mfc/reference/connection-maps.md) - corrected parameter description of `pRefCount` in `AfxConnection(Un)Advise`
+- [`CSimpleStringT` Class](../atl-mfc-shared/reference/csimplestringt-class.md) - updated code example
+- [MFC class hierarchy chart](../mfc/hierarchy-chart.md) - updated MFC hierarchy chart
