@@ -530,8 +530,8 @@ A group of papers listed together indicates a Standard feature along with one or
 | &emsp;Alignment specifiers `<stdalign.h>` | VS 2019 16.8 <sup>[C11](#note_C11), [2104](#note_2104)</sup> |
 | &emsp;`aligned_alloc` | No <sup>[M](#note_M)</sup> |
 | &emsp;No return specifiers `<stdnoreturn.h>` | VS 2019 16.8 <sup>[C11](#note_C11), [2104](#note_2104)</sup> |
-| &emsp;Threading support `<threads.h>` | No |
-| &emsp;Atomic support `<stdatomic.h>` | No |
+| &emsp;Threading support `<threads.h>` | yes |
+| &emsp;Atomic support `<stdatomic.h>` | yes - experimental |
 | &emsp;`char16_t`, `char32_t` `<uchar.h>` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
 | &emsp;`gets()` removed | VS 2019 16.8 <sup>[C11](#note_C11), [N](#note_N)</sup> |
 | &emsp;`gets_s()` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
@@ -541,6 +541,7 @@ A group of papers listed together indicates a Standard feature along with one or
 | &emsp;`quick_exit` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
 | &emsp;`<complex.h>` macros | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
 | &emsp;floating point characteristics `<float.h>` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
+| &emsp;C11 threads `<threads.h>` | VS 2022 17.8 <sup>[C11](#note_C11)</sup> |
 
 ### Supported values
 

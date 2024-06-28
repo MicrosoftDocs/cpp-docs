@@ -2,7 +2,7 @@
 title: Build and run a C++ console app project
 description: "Build and run a Hello World console app in Visual C++"
 ms.custom: "mvc"
-ms.date: 07/05/2023
+ms.date: 06/28/2024
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ---
@@ -24,11 +24,11 @@ If Visual Studio looks like this, you're ready to build and run your app:
 
 ## Build and run your code in Visual Studio
 
-1. To build your project, choose **Build Solution** from the **Build** menu. The **Output** window shows the results of the build process.
+1. To build your project, **Build** > **Build Solution**. The **Output** window shows the results of the build process.
 
    :::image type="complex" source="media/vscpp-build-solution.gif" alt-text="Animated screenshot showing the sequence of actions taken to build a project in Visual Studio.":::
    First, Build is selected from the main menu. Then Build Solution is selected. The Output window shows the build output messages, including that the build is successful.
-   :::image-end:::                                                                                                                                                                                                                                                            
+   :::image-end:::
 
 1. To run the code, on the menu bar, choose **Debug**, **Start without debugging**.
 
@@ -50,12 +50,12 @@ Normally, you run console apps at the command prompt, not in Visual Studio. Once
 
 ::: moniker range="<msvc-170"
 
-2. In the **File Explorer** window, open the `Debug` folder. This folder contains your app, `HelloWorld.exe`, and debugging files. Hold down the **Shift** key and right-click on `HelloWorld.exe` to open the context menu. Choose **Copy as path** to copy the path to your app to the clipboard.
+2. In the **File Explorer** window, open the `Debug` folder. This folder contains your app, `HelloWorld.exe`, and debugging files. Hold down the **Shift** key and right-click on `HelloWorld.exe` to open the context menu. Choose **Copy as path** to copy the path to your app to the clipboard. If you see `HelloWorld.exe.recipe`, it's because you did the **Open Folder in File Explorer** step on the HelloWorld *project* instead of the HelloWorld *solution*. Navigate up a level in File Explorer to get to the solution folder. This folder also contains a `Debug` folder, where `HelloWorld.exe` is.
 
 ::: moniker-end
 ::: moniker range=">=msvc-170"
 
-2. In the **File Explorer** window, open the `x64` folder and then the `Debug` folder. This folder contains your app, `HelloWorld.exe`, and debugging files. Hold down the **Shift** key and right-click on `HelloWorld.exe` to open the context menu. Choose **Copy as path** to copy the path to your app to the clipboard.
+2. In the **File Explorer** window, open the `x64` folder and then the `Debug` folder. This folder contains your app, `HelloWorld.exe`, and debugging files. Hold down the **Shift** key and right-click on `HelloWorld.exe` to open the context menu. Choose **Copy as path** to copy the path to your app to the clipboard. If you see `HelloWorld.exe.recipe`, it's because you did the **Open Folder in File Explorer** step on the HelloWorld *project* instead of the HelloWorld *solution*. Navigate up a level in File Explorer to get to the solution folder. This folder also contains a `x64\Debug\` folder, where `HelloWorld.exe` is.
 
 ::: moniker-end
 
