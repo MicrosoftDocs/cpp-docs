@@ -531,7 +531,7 @@ A group of papers listed together indicates a Standard feature along with one or
 | &emsp;`aligned_alloc` | No <sup>[M](#note_M)</sup> |
 | &emsp;No return specifiers `<stdnoreturn.h>` | VS 2019 16.8 <sup>[C11](#note_C11), [2104](#note_2104)</sup> |
 | &emsp;Threading support `<threads.h>` | yes |
-| &emsp;Atomic support `<stdatomic.h>` | yes - experimental |
+| &emsp;Atomic support `<stdatomic.h>` | experimental |
 | &emsp;`char16_t`, `char32_t` `<uchar.h>` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
 | &emsp;`gets()` removed | VS 2019 16.8 <sup>[C11](#note_C11), [N](#note_N)</sup> |
 | &emsp;`gets_s()` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |

@@ -24,7 +24,7 @@ If Visual Studio looks like this, you're ready to build and run your app:
 
 ## Build and run your code in Visual Studio
 
-1. To build your project, **Build** > **Build Solution**. The **Output** window shows the results of the build process.
+1. To build your project, from the main menu choose **Build** > **Build Solution**. The **Output** window shows the results of the build process.
 
    :::image type="complex" source="media/vscpp-build-solution.gif" alt-text="Animated screenshot showing the sequence of actions taken to build a project in Visual Studio.":::
    First, Build is selected from the main menu. Then Build Solution is selected. The Output window shows the build output messages, including that the build is successful.
