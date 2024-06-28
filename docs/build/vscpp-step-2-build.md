@@ -8,7 +8,7 @@ ms.devlang: "cpp"
 ---
 # Build and run a C++ console app project
 
-In [Create a C++ console app project](vscpp-step-1-create) you created a C++ console app project and entered your code. Now you can build and run it within Visual Studio. Then, run it as a stand-alone app from the command line.
+In [Create a C++ console app project](vscpp-step-1-create.md) you created a C++ console app project and entered your code. Now you can build and run it within Visual Studio. Then, run it as a stand-alone app from the command line.
 
 ## Prerequisites
 
