@@ -6,15 +6,17 @@ api_name: ["_wputenv_s", "_putenv_s", "_o__putenv_s", "_o__wputenv_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["putenv_s", "wputenv_s", "_wputenv_s", "_putenv_s"]
-helpviewer_keywords: ["wputenv_s function", "_putenv_s function", "environment variables, deleting", "putenv_s function", "_wputenv_s function", "environment variables, creating", "environment variables, modifying"]
+f1_keywords: ["putenv_s", "wputenv_s", "_wputenv_s", "_putenv_s", "_tputenv_s"]
+helpviewer_keywords: ["wputenv_s function", "_putenv_s function", "environment variables, deleting", "putenv_s function", "_wputenv_s function", "environment variables, creating", "environment variables, modifying", "_tputenv_s function"]
 ---
-# `_putenv_s`, `_wputenv_s`
+# `_putenv_s`, `_wputenv_s`, `_tputenv_s`
 
 Creates, modifies, or removes environment variables. These functions are versions of [`_putenv`, `_wputenv`](putenv-wputenv.md) that have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+For the `t_*` function variants, see [Generic-text routine mappings](#generic-text-routine-mappings).
 
 ## Syntax
 
