@@ -16,7 +16,7 @@ Creates, modifies, or removes environment variables. These functions are version
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-For the `t_*` function variants, see [Generic-text routine mappings](#generic-text-routine-mappings).
+For `_tputenv_s`, see [Generic-text routine mappings](#generic-text-routine-mappings).
 
 ## Syntax
 

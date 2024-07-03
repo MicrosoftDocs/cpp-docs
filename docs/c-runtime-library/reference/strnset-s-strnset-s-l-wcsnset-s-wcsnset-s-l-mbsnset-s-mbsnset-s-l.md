@@ -6,7 +6,7 @@ api_name: ["_mbsnset_s_l", "_strnset_s", "_mbsnset_s", "_strnset_s_l", "_wcsnset
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_mbsnset_s_l", "wcsnset_s", "_tcsnset_s_l", "_wcsnset_s", "_mbsnset_s", "_wcsnset_s_l", "_strnset_s_l", "strnset_s_l", "_tcsnset_s", "_strnset_s", "strnset_s", "mbsnset_s_l", "mbsnset_s", "wcsnset_s_l", "_tcsncset_s", "_tcsncset_s", "_tcsncset_s_l"]
+f1_keywords: ["_mbsnset_s_l", "wcsnset_s", "_tcsnset_s_l", "_wcsnset_s", "_mbsnset_s", "_wcsnset_s_l", "_strnset_s_l", "strnset_s_l", "_tcsnset_s", "_strnset_s", "strnset_s", "mbsnset_s_l", "mbsnset_s", "wcsnset_s_l", "_tcsncset_s", "_tcsncset_s_l"]
 helpviewer_keywords: ["tcsnset_s function", "mbsnset_s_l function", "initializing characters", "wcsnset_s function", "mbsnset_s function", "_tcsnset_s_l function", "_strnset_s_l function", "_mbsnset_s function", "strnset_s_l function", "_tcsnset_s function", "_strnset_s function", "tcsnset_s_l function", "_mbsnset_s_l function", "strnset_s function", "_wcsnset_s function", "_tcsncset_s function", "_tcsncset_s_l function"]
 ---
 # `_strnset_s`, `_strnset_s_l`, `_wcsnset_s`, `_wcsnset_s_l`, `_mbsnset_s`, `_mbsnset_s_l`, `_tcsncset_s`, `_tcsncset_s_l`
@@ -16,7 +16,7 @@ Initializes characters of a string to a given character. These versions of [`_st
 > [!IMPORTANT]
 > **`_mbsnset_s`** and **`_mbsnset_s_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-For the `_t*` function variants, see [Generic-text routine mappings](#generic-text-routine-mappings).
+For `_tcsncset_s` and `_tcsncset_s_l` functions, see [Generic-text routine mappings](#generic-text-routine-mappings).
 
 ## Syntax
 

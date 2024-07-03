@@ -16,7 +16,7 @@ Copies characters of one string to another.  These versions of [`strncpy`, `_str
 > [!IMPORTANT]
 > **`_mbsncpy_s`** and **`_mbsncpy_s_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-For the `_t_*` function variants, see [Generic-text routine mappings](#generic-text-routine-mappings).
+For `_tcsnccpy_s` and `_tcsnccpy_s_l`, see [Generic-text routine mappings](#generic-text-routine-mappings).
 
 ## Syntax
 
@@ -177,8 +177,6 @@ By default, this function's global state is scoped to the application. To change
 | `_tcsncpy_s_l` | **`_strncpy_s_l`** | **`_mbsnbcpy_s_l`** | **`_wcsncpy_s_l`** |
 | `_tcsnccpy_s` | **`strncpy_s`** | **`_mbsncpy_s`** | **`_wcsncpy_s`** |
 | `_tcsnccpy_s_l` | **`_strncpy_s_l`** | **`_mbsncpy_s_l`** | **`_wcsncpy_s_l`** |
-
-
 
 > [!NOTE]
 > **`_strncpy_s_l`**, **`_wcsncpy_s_l`** and **`_mbsncpy_s_l`** have no locale dependence. They're provided just for `_tcsncpy_s_l` and aren't intended to be called directly.

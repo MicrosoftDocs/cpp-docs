@@ -6,14 +6,14 @@ api_name: ["_access_s", "_waccess_s", "_o__access_s", "_o__waccess_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["waccess_s", "access_s", "_waccess_s", "_access_s"]
-helpviewer_keywords: ["access_s function", "taccess_s function", "_taccess_s function", "waccess_s function", "_access_s function", "_waccess_s function"]
+f1_keywords: ["waccess_s", "access_s", "_waccess_s", "_access_s", "taccess_s"]
+helpviewer_keywords: ["access_s function", "taccess_s function", "waccess_s function", "_access_s function", "_waccess_s function"]
 ---
 # `_access_s`, `_waccess_s`, `taccess_s`
 
 Determines file read/write permissions. These functions are versions of [`_access`, `_waccess`](access-waccess.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
-For the `t_*` function variants, see [Generic-text routine mappings](#generic-text-routine-mappings).
+For `taccess_s`, see [Generic-text routine mappings](#generic-text-routine-mappings).
 
 ## Syntax
 
@@ -69,7 +69,7 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_taccess_s` | **`_access_s`** | **`_access_s`** | **`_waccess_s`** |
 
@@ -77,8 +77,8 @@ By default, this function's global state is scoped to the application. To change
 
 | Routine | Required header | Optional header |
 |---|---|---|
-| **`_access_s`** | \<io.h> | \<errno.h> |
-| **`_waccess_s`** | \<wchar.h> or \<io.h> | \<errno.h> |
+| **`_access_s`** | `<io.h>` | `<errno.h>` |
+| **`_waccess_s`** | `<wchar.h>` or `<io.h>` | `<errno.h>` |
 
 ## Example
 
