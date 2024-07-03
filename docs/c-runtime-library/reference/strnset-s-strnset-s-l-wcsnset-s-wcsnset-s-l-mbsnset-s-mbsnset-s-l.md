@@ -16,7 +16,7 @@ Initializes characters of a string to a given character. These versions of [`_st
 > [!IMPORTANT]
 > **`_mbsnset_s`** and **`_mbsnset_s_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-For `_tcsncset_s` and `_tcsncset_s_l` functions, see [Generic-text routine mappings](#generic-text-routine-mappings).
+For `_tcsncset_s` and `_tcsncset_s_l`, see [Generic-text routine mappings](#generic-text-routine-mappings).
 
 ## Syntax
 
