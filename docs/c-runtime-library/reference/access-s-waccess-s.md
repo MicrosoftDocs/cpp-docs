@@ -69,7 +69,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-| `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_taccess_s` | **`_access_s`** | **`_access_s`** | **`_waccess_s`** |
 

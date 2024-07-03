@@ -75,7 +75,9 @@ Like the non-secure versions (see [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprin
 
 ### Generic-text routine mappings
 
-| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_ftprintf_p` | **`_fprintf_p`** | **`_fprintf_p`** | **`_fwprintf_p`** |
 | `_ftprintf_p_l` | **`_fprintf_p_l`** | **`_fprintf_p_l`** | **`_fwprintf_p_l`** |

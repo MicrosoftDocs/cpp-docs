@@ -171,7 +171,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-text routine mappings
 
-| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_tcsncpy_s` | **`strncpy_s`** | **`_mbsnbcpy_s`** | **`wcsncpy_s`** |
 | `_tcsncpy_s_l` | **`_strncpy_s_l`** | **`_mbsnbcpy_s_l`** | **`_wcsncpy_s_l`** |
