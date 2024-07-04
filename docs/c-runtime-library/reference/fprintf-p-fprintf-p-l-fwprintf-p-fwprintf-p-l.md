@@ -79,8 +79,8 @@ The function in the `tchar.h` column maps to the function in the other columns d
 
 | `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| `_ftprintf_p` | **`_fprintf_p`** | **`_fprintf_p`** | **`_fwprintf_p`** |
-| `_ftprintf_p_l` | **`_fprintf_p_l`** | **`_fprintf_p_l`** | **`_fwprintf_p_l`** |
+| `_ftprintf_p` | `_fprintf_p` | `_fprintf_p` | `_fwprintf_p` |
+| `_ftprintf_p_l` | `_fprintf_p_l` | `_fprintf_p_l` | `_fwprintf_p_l` |
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 
@@ -88,8 +88,8 @@ For more information, see [Format specification syntax](../format-specification-
 
 | Function | Required header |
 |---|---|
-| **`_fprintf_p`**, **`_fprintf_p_l`** | \<stdio.h> |
-| **`_fwprintf_p`**, **`_fwprintf_p_l`** | \<stdio.h> or \<wchar.h> |
+| `_fprintf_p`, `_fprintf_p_l` | `<stdio.h>` |
+| `_fwprintf_p`, `_fwprintf_p_l` | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

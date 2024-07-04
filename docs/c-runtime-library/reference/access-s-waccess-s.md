@@ -73,7 +73,7 @@ The function in the `tchar.h` column maps to the function in the other columns d
 
 | `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| `_taccess_s` | **`_access_s`** | **`_access_s`** | **`_waccess_s`** |
+| `_taccess_s` | `_access_s` | `_access_s` | `_waccess_s` |
 
 ## Requirements
 

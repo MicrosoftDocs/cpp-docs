@@ -100,10 +100,10 @@ In C++, using these functions is simplified by template overloads. The overloads
 
 The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
 
-| `tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| `_vstprintf_s` | **`vsprintf_s`** | **`vsprintf_s`** | **`vswprintf_s`** |
-| `_vstprintf_s_l` | **`_vsprintf_s_l`** | **`_vsprintf_s_l`** | **`_vswprintf_s_l`** |
+| `_vstprintf_s` | `vsprintf_s` | `vsprintf_s` | `vswprintf_s` |
+| `_vstprintf_s_l` | `_vsprintf_s_l` | `_vsprintf_s_l` | `_vswprintf_s_l` |
 
 ## Requirements
 

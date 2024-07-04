@@ -80,8 +80,8 @@ The function in the `tchar.h` column maps to the function in the other columns d
 
 | `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| **`_ftprintf_s`** | **`fprintf_s`** | **`fprintf_s`** | **`fwprintf_s`** |
-| **`_ftprintf_s_l`** | **`_fprintf_s_l`** | **`_fprintf_s_l`** | **`_fwprintf_s_l`** |
+| `_ftprintf_s` | `fprintf_s` | `fprintf_s` | `fwprintf_s` |
+| `_ftprintf_s_l` | `_fprintf_s_l` | `_fprintf_s_l` | `_fwprintf_s_l` |
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 

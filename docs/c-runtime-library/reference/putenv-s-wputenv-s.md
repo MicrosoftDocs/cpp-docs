@@ -62,9 +62,9 @@ By default, this function's global state is scoped to the application. To change
 
 The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
 
-| `tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| `_tputenv_s` | **`_putenv_s`** | **`_putenv_s`** | **`_wputenv_s`** |
+| `_tputenv_s` | `_putenv_s` | `_putenv_s` | `_wputenv_s` |
 
 *`varname`* is the name of the environment variable to be added or modified and *`value_string`* is the variable's value. If *`varname`* is already part of the environment, its value is replaced by *`value_string`*; otherwise, the new *`varname`* variable and its *`value_string`* are added to the environment. You can remove a variable from the environment by specifying an empty string (that is, `""`) for *`value_string`*.
 

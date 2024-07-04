@@ -101,12 +101,12 @@ By default, this function's global state is scoped to the application. To change
 
 The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
 
-| `tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| `_tcsnset_s` | **`_strnset_s`** | **`_mbsnbset_s`** | **`_wcsnset_s`** |
-| `_tcsnset_s_l` | **`_strnset_s_l`** | **`_mbsnbset_s_l`** | **`_wcsnset_s_l`** |
-| `_tcsncset_s` | **`_strnset_s`** | **`_mbsnset_s`** | **`_wcsnset_s`** |
-| `_tcsncset_s_l` | **`_strnset_s_l`** | **`_mbsnset_s_l`** | **`_wcsnset_s_l`** |
+| `_tcsnset_s` | `_strnset_s` | `_mbsnbset_s` | `_wcsnset_s` |
+| `_tcsnset_s_l` | `_strnset_s_l` | `_mbsnbset_s_l` | `_wcsnset_s_l` |
+| `_tcsncset_s` | `_strnset_s` | `_mbsnset_s` | `_wcsnset_s` |
+| `_tcsncset_s_l` | `_strnset_s_l` | `_mbsnset_s_l` | `_wcsnset_s_l` |
 
 ## Requirements
 

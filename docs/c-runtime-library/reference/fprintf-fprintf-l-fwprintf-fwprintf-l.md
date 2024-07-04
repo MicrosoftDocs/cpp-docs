@@ -79,8 +79,8 @@ The function in the `tchar.h` column maps to the function in the other columns d
 
 | `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| **`_ftprintf`** | **`fprintf`** | **`fprintf`** | **`fwprintf`** |
-| **`_ftprintf_l`** | **`_fprintf_l`** | **`_fprintf_l`** | **`_fwprintf_l`** |
+| `_ftprintf` | `fprintf` | `fprintf` | `fwprintf` |
+| `_ftprintf_l` | `_fprintf_l` | `_fprintf_l` | `_fwprintf_l` |
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 
