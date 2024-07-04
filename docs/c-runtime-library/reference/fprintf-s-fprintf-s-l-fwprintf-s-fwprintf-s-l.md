@@ -6,8 +6,8 @@ api_name: ["_fprintf_s_l", "fwprintf_s", "fprintf_s", "_fwprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_ftprintf_s", "fprintf_s", "fwprintf_s"]
-helpviewer_keywords: ["ftprintf_s_l function", "ftprintf_s function", "_fprintf_s_l function", "_ftprintf_s function", "_ftprintf_s_l function", "fwprintf_s_l function", "fwprintf_s function", "fprintf_s_l function", "fprintf_s function", "_fwprintf_s_l function", "print formatted data to streams"]
+f1_keywords: ["_ftprintf_s", "fprintf_s", "fwprintf_s", "_fwprintf_s_l"]
+helpviewer_keywords: ["ftprintf_s_l function", "ftprintf_s function", "_fprintf_s_l function", "_ftprintf_s function", "_ftprintf_s_l function", "fwprintf_s_l function", "fwprintf_s function", "fprintf_s_l function", "fprintf_s function", "_fwprintf_s_l function", "_fwprintf_s_l function", "print formatted data to streams"]
 ---
 # `fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`
 
@@ -76,10 +76,12 @@ Like the non-secure versions (see [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprin
 
 ### Generic-text routine mappings
 
-| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| **`_ftprintf_s`** | **`fprintf_s`** | **`fprintf_s`** | **`fwprintf_s`** |
-| **`_ftprintf_s_l`** | **`_fprintf_s_l`** | **`_fprintf_s_l`** | **`_fwprintf_s_l`** |
+| `_ftprintf_s` | `fprintf_s` | `fprintf_s` | `fwprintf_s` |
+| `_ftprintf_s_l` | `_fprintf_s_l` | `_fprintf_s_l` | `_fwprintf_s_l` |
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 

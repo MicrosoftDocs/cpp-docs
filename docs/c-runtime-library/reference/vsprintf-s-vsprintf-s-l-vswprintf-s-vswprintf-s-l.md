@@ -6,12 +6,14 @@ api_name: ["_vswprintf_s_l", "vsprintf_s", "vswprintf_s", "_vsprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["CORECRT_WSTDIO/vswprintf_s", "STDIO/vsprintf_s", "TCHAR/_vstprintf_s", "vswprintf_s", "vsprintf_s", "_vstprintf_s"]
+f1_keywords: ["CORECRT_WSTDIO/vswprintf_s", "STDIO/vsprintf_s", "TCHAR/_vstprintf_s", "vswprintf_s", "vsprintf_s", "_vstprintf_s", "_vswprintf_s_l"]
 helpviewer_keywords: ["_vstprintf_s_l function", "vsprintf_s_l function", "_vstprintf_s function", "vswprintf_s function", "vstprintf_s function", "vstprintf_s_l function", "vswprintf_s_l function", "vsprintf_s function", "_vsprintf_s_l function", "formatted text [C++]", "_vswprintf_s_l function"]
 ---
 # `vsprintf_s`, `_vsprintf_s_l`, `vswprintf_s`, `_vswprintf_s_l`
 
 Write formatted output using a pointer to a list of arguments. These functions are versions of [`vsprintf`, `_vsprintf_l`, `vswprintf`, `_vswprintf_l`, \`__vswprintf_l`](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+
+For `_vstprintf_s` and `_vstprintf_s_l`, see [Generic-text routine mappings](#generic-text-routine-mappings).
 
 ## Syntax
 
@@ -96,10 +98,12 @@ In C++, using these functions is simplified by template overloads. The overloads
 
 ### Generic-text routine mappings
 
-| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| `_vstprintf_s` | **`vsprintf_s`** | **`vsprintf_s`** | **`vswprintf_s`** |
-| `_vstprintf_s_l` | **`_vsprintf_s_l`** | **`_vsprintf_s_l`** | **`_vswprintf_s_l`** |
+| `_vstprintf_s` | `vsprintf_s` | `vsprintf_s` | `vswprintf_s` |
+| `_vstprintf_s_l` | `_vsprintf_s_l` | `_vsprintf_s_l` | `_vswprintf_s_l` |
 
 ## Requirements
 
