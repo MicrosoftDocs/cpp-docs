@@ -6,8 +6,8 @@ api_name: ["fwprintf", "fprintf", "_fprintf_l", "_fwprintf_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["fprintf", "fwprintf", "_ftprintf"]
-helpviewer_keywords: ["_fwprintf_l function", "fprintf function", "fprintf_l function", "_fprintf_l function", "_ftprintf function", "fwprintf function", "ftprintf_l function", "ftprintf function", "_ftprintf_l function", "print formatted data to streams", "fwprintf_l function"]
+f1_keywords: ["fprintf", "fwprintf", "_ftprintf", "_fwprintf_l"]
+helpviewer_keywords: ["_fwprintf_l function", "fprintf function", "fprintf_l function", "_fprintf_l function", "_ftprintf function", "fwprintf function", "ftprintf_l function", "ftprintf function", "_fwprintf_l function", "_ftprintf_l function", "print formatted data to streams", "fwprintf_l function"]
 ---
 # `fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`
 
@@ -75,10 +75,12 @@ The versions of these functions with the **`_l`** suffix are identical except th
 
 ### Generic-text routine mappings
 
-| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| **`_ftprintf`** | **`fprintf`** | **`fprintf`** | **`fwprintf`** |
-| **`_ftprintf_l`** | **`_fprintf_l`** | **`_fprintf_l`** | **`_fwprintf_l`** |
+| `_ftprintf` | `fprintf` | `fprintf` | `fwprintf` |
+| `_ftprintf_l` | `_fprintf_l` | `_fprintf_l` | `_fwprintf_l` |
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 
