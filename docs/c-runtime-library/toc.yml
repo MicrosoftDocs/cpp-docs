@@ -477,7 +477,7 @@ items:
       href: ../c-runtime-library/reference/access-crt.md
     - name: _access, _waccess
       href: ../c-runtime-library/reference/access-waccess.md
-    - name: _access_s, _waccess_s
+    - name: _access_s, _waccess_s, taccess_s
       href: ../c-runtime-library/reference/access-s-waccess-s.md
     - name: acos, acosf, acosl
       href: ../c-runtime-library/reference/acos-acosf-acosl.md
@@ -1457,7 +1457,7 @@ items:
       href: ../c-runtime-library/reference/putenv.md
     - name: _putenv, _wputenv
       href: ../c-runtime-library/reference/putenv-wputenv.md
-    - name: _putenv_s, _wputenv_s
+    - name: _putenv_s, _wputenv_s, _tputenv_s
       href: ../c-runtime-library/reference/putenv-s-wputenv-s.md
     - name: puts, _putws
       href: ../c-runtime-library/reference/puts-putws.md
@@ -1737,7 +1737,7 @@ items:
       href: ../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md
     - name: strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
       href: ../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md
-    - name: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
+    - name: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l, _tcsnccpy_s, _tcsnccpy_s_l
       href: ../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md
     - name: _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
       href: ../c-runtime-library/reference/strnextc-wcsnextc-mbsnextc-mbsnextc-l.md
@@ -1755,7 +1755,7 @@ items:
       href: ../c-runtime-library/reference/strnset-wcsnset.md
     - name: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
       href: ../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md
-    - name: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
+    - name: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l, _tcsncset_s, _tcsncset_s_l
       href: ../c-runtime-library/reference/strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md
     - name: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
       href: ../c-runtime-library/reference/strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md
