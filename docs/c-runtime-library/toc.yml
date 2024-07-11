@@ -475,7 +475,7 @@ items:
       href: ../c-runtime-library/reference/abs-labs-llabs-abs64.md
     - name: access (CRT)
       href: ../c-runtime-library/reference/access-crt.md
-    - name: _access, _waccess
+    - name: _access, _waccess, taccess_s
       href: ../c-runtime-library/reference/access-waccess.md
     - name: _access_s, _waccess_s, taccess_s
       href: ../c-runtime-library/reference/access-s-waccess-s.md
@@ -945,7 +945,7 @@ items:
       href: ../c-runtime-library/reference/fpieee-flt.md
     - name: _fpreset
       href: ../c-runtime-library/reference/fpreset.md
-    - name: fprintf, _fprintf_l, fwprintf, _fwprintf_l
+    - name: fprintf, _fprintf_l, fwprintf, _fwprintf_l, _ftprintf, _ftprintf_l
       href: ../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md
     - name: _fprintf_p, _fprintf_p_l, _ftprintf_p, _ftprintf_p_l, _fwprintf_p, _fwprintf_p_l
       href: ../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md
@@ -1929,7 +1929,7 @@ items:
       href: ../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md
     - name: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
       href: ../c-runtime-library/reference/vsprintf-p-vsprintf-p-l-vswprintf-p-vswprintf-p-l.md
-    - name: vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
+    - name: vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l, _vstprintf_s, _vstprintf_s_l
       href: ../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md
     - name: vsscanf, vswscanf
       href: ../c-runtime-library/reference/vsscanf-vswscanf.md

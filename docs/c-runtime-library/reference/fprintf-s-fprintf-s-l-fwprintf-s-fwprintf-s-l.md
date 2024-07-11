@@ -13,6 +13,8 @@ helpviewer_keywords: ["ftprintf_s_l function", "ftprintf_s function", "_ftprintf
 
 Print formatted data to a stream. These functions are versions of [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
+For `_ftprintf_s` and `_ftprintf_s_l`, see [Generic-text function mappings](#generic-text-function-mappings).
+
 ## Syntax
 
 ```C
@@ -73,7 +75,7 @@ The versions of these functions with the **`_l`** suffix are identical except th
 
 Like the non-secure versions (see [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), these functions validate their parameters and invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md), if either *`stream`* or *`format`* is a `NULL` pointer. The format string itself is also validated. If there are any unknown or badly formed formatting specifiers, these functions generate the invalid parameter exception. In all cases, If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`. For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
 The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
 

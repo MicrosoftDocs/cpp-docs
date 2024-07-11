@@ -13,6 +13,8 @@ helpviewer_keywords: ["fprintf_p_l function", "fprintf_p function", "_fprintf_p_
 
 Prints formatted data to a stream.
 
+For `_ftprintf_p` and `_ftprintf_p_l`, see [Generic-text function mappings](#generic-text-function-mappings).
+
 ## Syntax
 
 ```C
@@ -73,7 +75,7 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 Like the non-secure versions (see [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), these functions validate their parameters and invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md), if either *`stream`* or *`format`* is a null pointer or if there are any unknown or badly formed formatting specifiers. If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
 The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
 

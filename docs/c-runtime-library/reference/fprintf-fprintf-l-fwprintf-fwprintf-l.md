@@ -1,15 +1,15 @@
 ---
-description: "Learn more about: fprintf, _fprintf_l, fwprintf"
-title: "fprintf, _fprintf_l, fwprintf, _fwprintf_l"
+description: "Learn more about: fprintf, _fprintf_l, fwprintf, _ftprintf, _ftprintf_l"
+title: "fprintf, _fprintf_l, fwprintf, _fwprintf_l, _ftprintf, _ftprintf_l"
 ms.date: "3/9/2021"
-api_name: ["fwprintf", "fprintf", "_fprintf_l", "_fwprintf_l"]
+api_name: ["fwprintf", "fprintf", "_fprintf_l", "_fwprintf_l", "_ftprintf", "_ftprintf_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["fprintf", "fwprintf", "_ftprintf", "_fwprintf_l"]
-helpviewer_keywords: ["_fwprintf_l function", "fprintf function", "fprintf_l function", "_fprintf_l function", "_ftprintf function", "fwprintf function", "ftprintf_l function", "ftprintf function", "_fwprintf_l function", "print formatted data to streams", "fwprintf_l function"]
+f1_keywords: ["fprintf", "fwprintf", "_ftprintf", "_fwprintf_l", "_ftprintf_l"]
+helpviewer_keywords: ["fprintf function", "fprintf_l function", "_fprintf_l function", "_ftprintf function", "fwprintf function", "ftprintf_l function", "ftprintf function", "print formatted data to streams", "fwprintf_l function", "_ftprintf_l function"]
 ---
-# `fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`
+# `fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`, `_ftprintf`, `_ftprintf_l`
 
 Print formatted data to a stream. More secure versions of these functions are available; see [`fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
 

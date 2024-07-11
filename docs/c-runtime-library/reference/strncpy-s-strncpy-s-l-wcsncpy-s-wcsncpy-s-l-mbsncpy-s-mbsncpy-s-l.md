@@ -16,7 +16,7 @@ Copies characters of one string to another.  These versions of [`strncpy`, `_str
 > [!IMPORTANT]
 > **`_mbsncpy_s`** and **`_mbsncpy_s_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-For `_tcsnccpy_s` and `_tcsnccpy_s_l`, see [Generic-text routine mappings](#generic-text-routine-mappings).
+For `_tcsnccpy_s`, `_tcsnccpy_s_l`, `_tcsnccpy_s`, and `_tcsnccpy_s_l` see [Generic-text function mappings](#generic-text-function-mappings).
 
 ## Syntax
 
@@ -169,7 +169,7 @@ The debug library versions of these functions first fill the buffer with 0xFE. T
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
 The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
 

@@ -1,19 +1,19 @@
 ---
-description: "Learn more about: _access_s, _waccess_s"
-title: "_access_s, _waccess_s"
+description: "Learn more about: _access_s, _waccess_s, _taccess_s"
+title: "_access_s, _waccess_s, _taccess_s"
 ms.date: "4/2/2020"
-api_name: ["_access_s", "_waccess_s", "_o__access_s", "_o__waccess_s"]
+api_name: ["_access_s", "_waccess_s", "_taccess_s", "_o__access_s", "_o__waccess_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["waccess_s", "access_s"]
-helpviewer_keywords: ["access_s function", "waccess_s function"]
+f1_keywords: ["waccess_s", "access_s", "_taccess_s"]
+helpviewer_keywords: ["access_s function", "waccess_s function", "_taccess_s function"]
 ---
-# `_access_s`, `_waccess_s`
+# `_access_s`, `_waccess_s`, `_taccess_s`
 
 Determines file read/write permissions. These functions are versions of [`_access`, `_waccess`](access-waccess.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
-For `taccess_s`, see [Generic-text function mappings](#generic-text-function-mappings).
+For `_taccess_s`, see [Generic-text function mappings](#generic-text-function-mappings).
 
 ## Syntax
 
