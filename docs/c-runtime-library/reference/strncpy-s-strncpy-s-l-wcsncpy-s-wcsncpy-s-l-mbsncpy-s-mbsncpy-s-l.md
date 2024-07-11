@@ -2,7 +2,7 @@
 description: "Learn more about: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l"
 title: "strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l, _tcsncpy_s, _tcsncpy_s_l, _tcsnccpy_s, _tcsnccpy_s_l"
 ms.date: "4/2/2020"
-api_name: ["_mbsncpy_s_l", "wcsncpy_s", "_strncpy_s_l", "strncpy_s", "_mbsncpy_s", "_wcsncpy_s_l", "_o__mbsncpy_s", "_o__mbsncpy_s_l", "_o_strncpy_s", "_o_wcsncpy_s", "_tcsnccpy_s", "_tcsnccpy_s_l", "_tcsncpy_s"]
+api_name: ["_mbsncpy_s_l", "wcsncpy_s", "_strncpy_s_l", "strncpy_s", "_mbsncpy_s", "_wcsncpy_s_l", "_o__mbsncpy_s", "_o__mbsncpy_s_l", "_o_strncpy_s", "_o_wcsncpy_s", "_tcsnccpy_s", "_tcsnccpy_s_l", "_tcsncpy_s", "_tcsncpy_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
