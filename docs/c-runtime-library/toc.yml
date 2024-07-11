@@ -385,7 +385,7 @@ items:
       href: ../c-runtime-library/data-type-mappings.md
     - name: Constant and global variable mappings
       href: ../c-runtime-library/constant-and-global-variable-mappings.md
-    - name: Routine mappings
+    - name: Generic-text function mappings
       href: ../c-runtime-library/routine-mappings.md
 - name: Locale names, languages, and country-region strings
   expanded: false

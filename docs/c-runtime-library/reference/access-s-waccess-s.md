@@ -6,14 +6,14 @@ api_name: ["_access_s", "_waccess_s", "_o__access_s", "_o__waccess_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["waccess_s", "access_s", "_waccess_s", "_access_s", "taccess_s"]
-helpviewer_keywords: ["access_s function", "taccess_s function", "waccess_s function", "_access_s function", "_waccess_s function"]
+f1_keywords: ["waccess_s", "access_s"]
+helpviewer_keywords: ["access_s function", "waccess_s function"]
 ---
-# `_access_s`, `_waccess_s`, `taccess_s`
+# `_access_s`, `_waccess_s`
 
 Determines file read/write permissions. These functions are versions of [`_access`, `_waccess`](access-waccess.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
-For `taccess_s`, see [Generic-text routine mappings](#generic-text-routine-mappings).
+For `taccess_s`, see [Generic-text function mappings](#generic-text-function-mappings).
 
 ## Syntax
 
@@ -67,7 +67,7 @@ These functions validate their parameters. If *`path`* is `NULL` or *`mode`* doe
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
 The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
 
