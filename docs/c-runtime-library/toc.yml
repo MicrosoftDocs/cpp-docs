@@ -947,9 +947,9 @@ items:
       href: ../c-runtime-library/reference/fpreset.md
     - name: fprintf, _fprintf_l, fwprintf, _fwprintf_l
       href: ../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md
-    - name: _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
+    - name: _fprintf_p, _fprintf_p_l, _ftprintf_p, _ftprintf_p_l, _fwprintf_p, _fwprintf_p_l
       href: ../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md
-    - name: fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l
+    - name: fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l, _ftprintf, _ftprintf_l, _ftprintf_s, _ftprintf_s_l
       href: ../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md
     - name: fputc, fputwc
       href: ../c-runtime-library/reference/fputc-fputwc.md
@@ -1737,7 +1737,7 @@ items:
       href: ../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md
     - name: strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
       href: ../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md
-    - name: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l, _tcsnccpy_s, _tcsnccpy_s_l
+    - name: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l, _tcsncpy_s, _tcsncpy_s_l, _tcsnccpy_s, _tcsnccpy_s_l
       href: ../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md
     - name: _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
       href: ../c-runtime-library/reference/strnextc-wcsnextc-mbsnextc-mbsnextc-l.md
