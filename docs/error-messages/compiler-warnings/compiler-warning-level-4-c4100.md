@@ -21,7 +21,7 @@ The following sample generates C4100:
 // compile with: /W4
 void func(int i) {   // C4100, delete the unreferenced parameter to
                      //resolve the warning
-   // i;   // or, add a reference like this
+   i;   // or, add a reference like this
 }
 
 int main()
