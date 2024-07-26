@@ -72,7 +72,7 @@ intptr_t _wfindfirst64i32(
 Target file specification (can include wildcard characters).
 
 *`fileinfo`*\
-File information buffer. For more information about the `fileinfo` structs, see the Remarks in [Filename search functions](../filename-search-functions.md) and see [Data type mappings](data-type-mappings.md). The structs are defined in the same header file as the function that uses them as a parameter.
+File information buffer. For more information about the `fileinfo` structs, see the Remarks in [Filename search functions](../filename-search-functions.md) and see [Data type mappings](../data-type-mappings.md). The structs are defined in the same header file as the function that uses them as a parameter.
 
 ## Return value
 
