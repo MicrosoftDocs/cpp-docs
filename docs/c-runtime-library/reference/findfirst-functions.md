@@ -72,7 +72,7 @@ intptr_t _wfindfirst64i32(
 Target file specification (can include wildcard characters).
 
 *`fileinfo`*\
-File information buffer.
+File information buffer. For more information about the `fileinfo` structs, see the Remarks in [Filename search functions](../filename-search-functions.md) and see [Data type mappings](../data-type-mappings.md). The structs are defined in the same header file as the function that uses them as a parameter.
 
 ## Return value
 
@@ -101,7 +101,7 @@ These functions use various forms of the **`_finddata_t`** structure for the *`f
 
 The variations that use a 64-bit time type enable file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC. The ones that use 32-bit time types represent dates only through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
-Unless you have a specific reason to use the versions that specify the time size explicitly, use **`_findfirst`** or **`_wfindfirst`** or, if you need to support file sizes larger than 3 GB, use **`_findfirsti64`** or **`_wfindfirsti64`**. All these functions use the 64-bit time type. In earlier versions, these functions used a 32-bit time type. If this change is a breaking change for an application, you might define `_USE_32BIT_TIME_T` to revert to the old behavior. If `_USE_32BIT_TIME_T` is defined, **`_findfirst`**, **`_finfirsti64`**, and their corresponding Unicode versions use a 32-bit time.
+Unless you have a specific reason to use the versions that specify the time size explicitly, use **`_findfirst`** or **`_wfindfirst`** or, if you need to support file sizes larger than 3 GB, use **`_findfirsti64`** or **`_wfindfirsti64`**. All these functions use the 64-bit time type. In earlier versions, these functions used a 32-bit time type. If this change is a breaking change for an application, you might define `_USE_32BIT_TIME_T` to revert to the old behavior. If `_USE_32BIT_TIME_T` is defined, **`_findfirst`**, **`_findfirsti64`**, and their corresponding Unicode versions use a 32-bit time.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
