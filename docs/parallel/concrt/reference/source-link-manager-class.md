@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: source_link_manager Class"
 title: "source_link_manager Class"
+description: "Learn more about: source_link_manager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["source_link_manager", "AGENTS/concurrency::source_link_manager", "AGENTS/concurrency::source_link_manager::source_link_manager", "AGENTS/concurrency::source_link_manager::add", "AGENTS/concurrency::source_link_manager::begin", "AGENTS/concurrency::source_link_manager::contains", "AGENTS/concurrency::source_link_manager::count", "AGENTS/concurrency::source_link_manager::reference", "AGENTS/concurrency::source_link_manager::register_target_block", "AGENTS/concurrency::source_link_manager::release", "AGENTS/concurrency::source_link_manager::remove", "AGENTS/concurrency::source_link_manager::set_bound"]
 helpviewer_keywords: ["source_link_manager class"]
-ms.assetid: 287487cf-e0fe-4c35-aa3c-24f081d1ddae
 ---
 # source_link_manager Class
 
@@ -56,7 +55,7 @@ The network link registry.
 
 ## Remarks
 
-Currently, the source blocks are reference counted. This is a wrapper on a `network_link_registry` object that allows concurrent access to the links and provides the ability to reference the links through callbacks. Message blocks ( `target_block`s or `propagator_block`s) should use this class for their source links.
+Currently, the source blocks are reference counted. This is a wrapper on a `network_link_registry` object that allows concurrent access to the links and provides the ability to reference the links through callbacks. Message blocks (`target_block`s or `propagator_block`s) should use this class for their source links.
 
 ## Inheritance Hierarchy
 
@@ -203,6 +202,6 @@ Destroys the `source_link_manager` object.
 
 ## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[single_link_registry Class](single-link-registry-class.md)<br/>
+[concurrency Namespace](concurrency-namespace.md)\
+[single_link_registry Class](single-link-registry-class.md)\
 [multi_link_registry Class](multi-link-registry-class.md)
