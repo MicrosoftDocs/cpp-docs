@@ -56,7 +56,7 @@ The **`nextafter`** and **`nexttoward`** function families are equivalent, excep
 
 Because C++ allows overloading, if you include `<cmath>` you can call overloads of **`nextafter`** and **`nexttoward`** that return **`float`** and **`long double`** types. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`nextafter`** and **`nexttoward`** always return **`double`**.
 
-If you use the `nextafter` or `nexttoward`macro from `<tgmath.h>`, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
+If you use the `nextafter` or `nexttoward` macro from `<tgmath.h>`, the type of the argument determines which version of the function is selected. See [Type-generic math](../tgmath.md) for details.
 
 The **`_nextafter`** and **`_nextafterf`** functions are Microsoft-specific. The **`_nextafterf`** function is only available when compiling for x64.
 
