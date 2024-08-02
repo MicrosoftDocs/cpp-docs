@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 06/6/2024
+ms.date: 8/2/2024
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 ms.custom: intro-whats-new
@@ -15,6 +15,41 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 - For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true).
 - For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md).
 - For information about version build dates, see [Visual Studio 2022 Release History](/visualstudio/releases/2022/release-history).
+
+## What's new for C++ in Visual Studio version 17.11
+
+*Released August 2024*
+
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.11](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-11/) |
+| Standard Library (STL) merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.11](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1711) |
+| New features in the Visual Studio 17.11 IDE |[Visual Studio 2022 version 17.11 Release Notes](/visualstudio/releases/2022/release-notes) |
+| C++ language conformance improvements in Visual Studio 2022 17.11 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.11](cpp-conformance-improvements.md#improvements_1711) |
+
+A partial list of new features:
+
+- Standard Library Enhancements:
+    - Advancements to our formatted output implementation include `std::range_formatter` and formatters for `std::pair` and `std::tuple`. Also added support for calling `std::println()` with no arguments, which prints a blank line as proposed in [P3142R0](https://wg21.link/P3142R0).
+    - Improved vectorization for several algorithms including `replace_copy()`, `replace_copy_if()`, `ranges::replace_copy`, `ranges::replace_copy_if`, `find_first_of()` and `ranges::find_first_of` for 8-bit and 16-bit elements, `mismatch()`, `ranges::mismatch`, `count()` `ranges::count`, `find()`, `ranges::find`, `ranges::find_last`, and `ranges::iota`.
+
+- Game development in C++
+    - Unreal Engine: You can now add common Unreal Engine class templates, modules, and plugins from within Visual Studio. For more information, see [Add Unreal Engine classes, modules, and plugins in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-add-class-module-plugin).
+    - The new Unreal Engine toolbar provides quick access to Unreal Engine related actions from within Visual Studio. The toolbar is available when you have an Unreal Engine project loaded in Visual Studio. The toolbar allows you to quickly attach to Unreal Engine processes, rescan the Blueprints cache, quickly access the Unreal Engine Log, and provides quick access to the Unreal Engine Configuration Page for Visual Studio. For more information, see [Unreal Engine Toolbar](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#unreal-engine-toolbar).
+
+- CMake debugging
+    - You can now debug your CMake scripts and `CMakeLists.txt` files in the Visual Studio debugger for CMake projects that target Linux via Windows Subsystem for Linux (WSL) or SSH. To start a CMake debugging session in Visual Studio, set a breakpoint in your `CMakeLists.txt` file and then navigate to **Project** > **Configure Cache with CMake Debugging**.
+
+- Copilot
+    - When you hover over symbols in the code editor, click the Copilot **Tell me more** button in the Quick Info dialog to learn more about a given symbol:
+    :::image type="complex" source="media/github-copilot-quick-info" alt-text="A screenshot of the Quick Info window.":::
+      The Quick Info window is shown above a function. The Tell me more link is highlighted.
+    :::image-end:::
+    - GitHub Copilot can generate naming suggestions for your identifiers (variables, methods, or classes) based on how your identifier is being used and the style of your code.
+      :::image type="complex" source="media/copilot-rename.png" alt-text="A screenshot of the GitHub Copilot Rename dialog":::
+      The Rename dialog has a New name field with a dropdown list that shows these choices: text_color,font_color, display_color, console_color, and menu_text_color.
+      :::image-end:::
+    You need an active [GitHub Copilot subscription](https://visualstudio.microsoft.com/github-copilot/). Right-click the variable you wish to rename, and choose **Rename** (`Ctrl+R`, `Ctrl+R`). Select the GitHub Copilot sparkle icon to generate naming suggestions.
 
 ## What's new for C++ in Visual Studio version 17.10
 
