@@ -42,7 +42,7 @@ A partial list of new features:
 
 - Copilot
     - When you hover over symbols in the code editor, click the Copilot **Tell me more** button in the Quick Info dialog to learn more about a given symbol:
-    :::image type="complex" source="media/github-copilot-quick-info" alt-text="A screenshot of the Quick Info window.":::
+    :::image type="complex" source="media/github-copilot-quick-info.png" alt-text="A screenshot of the Quick Info window.":::
       The Quick Info window is shown above a function. The Tell me more link is highlighted.
     :::image-end:::
     - GitHub Copilot can generate naming suggestions for your identifiers (variables, methods, or classes) based on how your identifier is being used and the style of your code.

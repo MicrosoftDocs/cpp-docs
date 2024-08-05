@@ -1,7 +1,7 @@
 ---
 title: "Equality operators: == and !="
 description: "The C++ standard language equal-to and not-equal-to operator syntax and use."
-ms.date: 07/26/2024
+ms.date: 8/2/2024
 f1_keywords: ["!=", "==", "not_eq_cpp"]
 helpviewer_keywords: ["!= operator", "equality operator", "not equal to comparison operator", "equality operator [C++], syntax", "== operator", "not_eq operator", "equal to operator"]
 ---
@@ -14,43 +14,61 @@ helpviewer_keywords: ["!= operator", "equality operator", "not equal to comparis
 
 ## Remarks
 
-The binary equality operators compare their operands for strict equality or inequality.
+The binary equality operators compare their operands for strict equality or inequality. If you are looking for information about overloading these operators instead, see [Operator overloading](../cpp/overloading.md).
 
-The equality operators, equal to (**`==`**) and not equal to (**`!=`**), have lower precedence than the relational operators, but they behave similarly. The result type for these operators is **`bool`**.
-
-The equal-to operator (**`==`**) returns **`true`** if both operands have the same value; otherwise, it returns **`false`**. The not-equal-to operator (**`!=`**) returns **`true`** if the operands don't have the same value; otherwise, it returns **`false`**.
+The equal-to operator (**`==`**) returns **`true`** if both operands have the same value; otherwise **`false`**.\
+The not-equal-to operator (**`!=`**) returns **`true`** if the operands don't have the same value; otherwise **`false`**.\
+The alternative spelling `not_eq` returns **`true`** if the operands don't have the same value; otherwise **`false`**.
 
 ## Operator keyword for !=
 
 C++:
-- **`not_eq`** is an alternative spelling for **`!=`**. The [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to enable the alternative spelling.
-- The alternative spelling is treated as a keyword.
+- **`not_eq`** is an alternative spelling for **`!=`**. The [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to use the alternative spelling.
 - There's no alternative spelling for **`==`**.
-- Use of `<iso646.h>` or `<ciso646>` is deprecated.
+- Including `<iso646.h>` or `<ciso646>` to use the keyword is deprecated. Use the alternative spelling directly as it is now treated as a keyword.
 
 C:
-- The alternative spelling is provided as a macro in the `<iso646.h>` header.
-- The laternative spelling isn't treated as a keyword.
+- **`not_eq`** is an alternative spelling for **`!=`**. It is provided as a macro in `<iso646.h>`, which you must `#include`.
+- The alternative spelling isn't treated as a keyword.
+- There's no alternative spelling for **`==`**.
 
 ## Example
 
 ```cpp
-// expre_Equality_Operators.cpp
-// compile with: /EHsc
 #include <iostream>
 
-using namespace std;
-
-int main() {
-   cout  << boolalpha
-         << "The true expression 3 != 2 yields: "
-         << (3 != 2) << endl
-         << "The false expression 20 == 10 yields: "
-         << (20 == 10) << endl;
+int main()
+{
+    int x = 1, y = 1, z = 2;
+    
+    if (x == y)
+    {
+        std::cout << "Equal\n";
+    }
+    
+    if (x != z)
+    {
+        std::cout << "Not equal\n";
+    }
+    
+    if (x not_eq z) // demonstrates the alternative spelling
+    {
+        std::cout << "Not equal\n";
+    }
 }
 ```
 
-Equality operators can compare pointers to members of the same type. In such a comparison, pointer-to-member conversions are performed. Pointers to members can also be compared to a constant expression that evaluates to 0.
+```output
+Equal
+Not equal
+Not equal
+```
+
+Equality operators can compare pointers to members of the same type. The pointers are equal if they point to the same member or if they are both **`nullptr`**. Otherwise, they are not equal.  For examle
+
+```cpp
+
+```
 
 ## See also
 
