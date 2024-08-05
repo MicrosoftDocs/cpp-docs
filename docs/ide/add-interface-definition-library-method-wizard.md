@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Use a Microsoft Visual Studio wizard to add a method to an interface definition language (IDL) interface in your project"
 title: "Add an IDL method"
+description: "Learn more about: Use a Microsoft Visual Studio wizard to add a method to an interface definition language (IDL) interface in your project"
 ms.date: "04/13/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL method wizard [C++]", "IDL methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL method wizard"]
@@ -20,7 +20,7 @@ This wizard differs from the [**Add method**](adding-a-method-visual-cpp.md) wiz
 
 1. On the **View** menu, select **Class View**.
 
-1. In the **Class View** pane, expand the project node to display the IDL interface (`.idl`file) to which you want to add the method.
+1. In the **Class View** pane, expand the project node to display the IDL interface (`.idl` file) to which you want to add the method.
 
 1. Right-click the name of the interface.
 
