@@ -51,7 +51,11 @@ int main()
         std::cout << "Not equal\n";
     }
     
-    if (x not_eq z) // demonstrates the alternative spelling
+    // The alternative spelling is available in C++ and C
+    // This example is for C++, so no header file is needed to use the alternative spelling
+    // When compiling for C, #include <iso646.h> to use the alternative spelling because
+    // C doesn't treat it as a keyword like C++ does.
+    if (x not_eq z)
     {
         std::cout << "Not equal\n";
     }
