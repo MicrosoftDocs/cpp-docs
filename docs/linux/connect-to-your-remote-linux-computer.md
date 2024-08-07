@@ -247,7 +247,7 @@ sudo apt install g++ gdb make ninja-build rsync zip
 
 ### Fix WSL `localhost` connection problems
 
-When connecting to Windows Subsystem for Linux (WSL) on `localhost`, you may run into a conflict with the Windows `ssh` client on port 22. In WSL, change the port that `ssh`expects requests from to 23 in `/etc/ssh/sshd_config`:
+When connecting to Windows Subsystem for Linux (WSL) on `localhost`, you may run into a conflict with the Windows `ssh` client on port 22. In WSL, change the port that `ssh` expects requests from to 23 in `/etc/ssh/sshd_config`:
 
 ```bash
 Port 23
