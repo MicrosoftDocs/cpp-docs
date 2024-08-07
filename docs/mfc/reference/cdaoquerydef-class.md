@@ -4,11 +4,13 @@ title: "CDaoQueryDef Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDaoQueryDef", "AFXDAO/CDaoQueryDef", "AFXDAO/CDaoQueryDef::CDaoQueryDef", "AFXDAO/CDaoQueryDef::Append", "AFXDAO/CDaoQueryDef::CanUpdate", "AFXDAO/CDaoQueryDef::Close", "AFXDAO/CDaoQueryDef::Create", "AFXDAO/CDaoQueryDef::Execute", "AFXDAO/CDaoQueryDef::GetConnect", "AFXDAO/CDaoQueryDef::GetDateCreated", "AFXDAO/CDaoQueryDef::GetDateLastUpdated", "AFXDAO/CDaoQueryDef::GetFieldCount", "AFXDAO/CDaoQueryDef::GetFieldInfo", "AFXDAO/CDaoQueryDef::GetName", "AFXDAO/CDaoQueryDef::GetODBCTimeout", "AFXDAO/CDaoQueryDef::GetParameterCount", "AFXDAO/CDaoQueryDef::GetParameterInfo", "AFXDAO/CDaoQueryDef::GetParamValue", "AFXDAO/CDaoQueryDef::GetRecordsAffected", "AFXDAO/CDaoQueryDef::GetReturnsRecords", "AFXDAO/CDaoQueryDef::GetSQL", "AFXDAO/CDaoQueryDef::GetType", "AFXDAO/CDaoQueryDef::IsOpen", "AFXDAO/CDaoQueryDef::Open", "AFXDAO/CDaoQueryDef::SetConnect", "AFXDAO/CDaoQueryDef::SetName", "AFXDAO/CDaoQueryDef::SetODBCTimeout", "AFXDAO/CDaoQueryDef::SetParamValue", "AFXDAO/CDaoQueryDef::SetReturnsRecords", "AFXDAO/CDaoQueryDef::SetSQL", "AFXDAO/CDaoQueryDef::m_pDAOQueryDef", "AFXDAO/CDaoQueryDef::m_pDatabase"]
 helpviewer_keywords: ["CDaoQueryDef [MFC], CDaoQueryDef", "CDaoQueryDef [MFC], Append", "CDaoQueryDef [MFC], CanUpdate", "CDaoQueryDef [MFC], Close", "CDaoQueryDef [MFC], Create", "CDaoQueryDef [MFC], Execute", "CDaoQueryDef [MFC], GetConnect", "CDaoQueryDef [MFC], GetDateCreated", "CDaoQueryDef [MFC], GetDateLastUpdated", "CDaoQueryDef [MFC], GetFieldCount", "CDaoQueryDef [MFC], GetFieldInfo", "CDaoQueryDef [MFC], GetName", "CDaoQueryDef [MFC], GetODBCTimeout", "CDaoQueryDef [MFC], GetParameterCount", "CDaoQueryDef [MFC], GetParameterInfo", "CDaoQueryDef [MFC], GetParamValue", "CDaoQueryDef [MFC], GetRecordsAffected", "CDaoQueryDef [MFC], GetReturnsRecords", "CDaoQueryDef [MFC], GetSQL", "CDaoQueryDef [MFC], GetType", "CDaoQueryDef [MFC], IsOpen", "CDaoQueryDef [MFC], Open", "CDaoQueryDef [MFC], SetConnect", "CDaoQueryDef [MFC], SetName", "CDaoQueryDef [MFC], SetODBCTimeout", "CDaoQueryDef [MFC], SetParamValue", "CDaoQueryDef [MFC], SetReturnsRecords", "CDaoQueryDef [MFC], SetSQL", "CDaoQueryDef [MFC], m_pDAOQueryDef", "CDaoQueryDef [MFC], m_pDatabase"]
-ms.assetid: 9676a4a3-c712-44d4-8c5d-d1cc78288d3a
 ---
 # CDaoQueryDef Class
 
 Represents a query definition, or "querydef," usually one saved in a database.
+
+> [!NOTE]
+> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -122,7 +124,7 @@ For related information, see the topics "QueryDef Object", "QueryDefs Collection
 
 ## Requirements
 
-**Header:** afxdao.h
+**Header:** `afxdao.h`
 
 ## <a name="append"></a> CDaoQueryDef::Append
 

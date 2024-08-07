@@ -4,11 +4,13 @@ title: "CDaoTableDefInfo Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CDaoTableDefInfo"]
 helpviewer_keywords: ["CDaoTableDefInfo structure [MFC]", "DAO (Data Access Objects), TableDefs collection"]
-ms.assetid: c01ccebb-5615-434e-883c-4f60eac943dd
 ---
 # CDaoTableDefInfo Structure
 
 The `CDaoTableDefInfo` structure contains information about a tabledef object defined for data access objects (DAO).
+
+> [!NOTE]
+> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -82,7 +84,7 @@ The date and time settings are derived from the computer on which the base table
 
 ## Requirements
 
-**Header:** afxdao.h
+**Header:** `afxdao.h`
 
 ## See also
 

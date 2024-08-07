@@ -4,11 +4,13 @@ title: "CDaoQueryDefInfo Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CDaoQueryDefInfo"]
 helpviewer_keywords: ["DAO (Data Access Objects), QueryDefs collection", "CDaoQueryDefInfo structure [MFC]"]
-ms.assetid: e20837dc-e78d-4171-a195-1b4075fb5d2a
 ---
 # CDaoQueryDefInfo Structure
 
 The `CDaoQueryDefInfo` structure contains information about a querydef object defined for data access objects (DAO).
+
+> [!NOTE]
+> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -95,7 +97,7 @@ The date and time settings are derived from the computer on which the querydef w
 
 ## Requirements
 
-**Header:** afxdao.h
+**Header:** `afxdao.h`
 
 ## See also
 
