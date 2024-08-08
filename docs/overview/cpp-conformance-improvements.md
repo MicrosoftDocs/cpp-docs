@@ -21,10 +21,10 @@ Visual Studio 2022 version 17.11 has the following conformance improvements, bug
 
 For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.11](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1711).
 
-### Printing blank lines with `println`
+### Print blank lines with `println`
 
 Per [P3142R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3142r0.pdf), it is now easy to generate a blank line with `println`. This feature is available when compiling with `/std:c++latest`.
-Before this change, you wrote: `println("");`. Now you simply write: `println();`.
+Before this change, you wrote: `println("");` Now you simply write: `println();`.
 - `println();` is equivalent to `println(stdout);`
 - `println(FILE* stream);` is equivalent to `println(stream, "\n");`
 
