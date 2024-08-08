@@ -23,19 +23,14 @@ For an in-depth summary of changes made to the Standard Template Library, includ
 
 ### Printing blank lines with `println`
 
-Per [P3142R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3142r0.pdf) it is now easy to generate a blank line with `println`. This feature is available when compiling with `/std:c++latest`.
+Per [P3142R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3142r0.pdf), it is now easy to generate a blank line with `println`. This feature is available when compiling with `/std:c++latest`.
 Before this change, to generate a blank line, you wrote: `println("");`. Now you simply write: `println();`.
-
-The following are the same:
-
-```cpp
-void println(); is equivalent to println(stdout);
-void println(FILE* stream); is equivalent to println(stream, "\n");
-```
+- `println();` is equivalent to `println(stdout);`
+- `println(FILE* stream);` is equivalent to `println(stream, "\n");`
 
 ### Implemented `range_formatter`
 
-Per [P2286R8](https://wg21.link/P2286R8), `range_formatter` is now implemented. This feature is available when compiling with `/std:c++23`.
+Per [P2286R8](https://wg21.link/P2286R8), `range_formatter` is now implemented. This feature is available when compiling with `/std:c++latest`.
 
 ## <a name="improvements_1710"></a> Conformance improvements in Visual Studio 2022 version 17.10
 
