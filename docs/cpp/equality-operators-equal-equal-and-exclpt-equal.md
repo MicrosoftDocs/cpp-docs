@@ -1,9 +1,10 @@
 ---
 title: "Equality operators: == and !="
 description: "The C++ standard language equal-to and not-equal-to operator syntax and use."
-ms.date: 07/26/2024
+ms.date: 07/23/2020
 f1_keywords: ["!=", "==", "not_eq_cpp"]
 helpviewer_keywords: ["!= operator", "equality operator", "not equal to comparison operator", "equality operator [C++], syntax", "== operator", "not_eq operator", "equal to operator"]
+ms.assetid: ba4e9659-2392-4fb4-be5a-910a2a6df45a
 ---
 # Equality operators: `==` and `!=`
 
@@ -22,15 +23,7 @@ The equal-to operator (**`==`**) returns **`true`** if both operands have the sa
 
 ## Operator keyword for !=
 
-C++:
-- **`not_eq`** is an alternative spelling for **`!=`**. The [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to enable the alternative spelling.
-- The alternative spelling is treated as a keyword.
-- There's no alternative spelling for **`==`**.
-- Use of `<iso646.h>` or `<ciso646>` is deprecated.
-
-C:
-- The alternative spelling is provided as a macro in the `<iso646.h>` header.
-- The laternative spelling isn't treated as a keyword.
+C++ specifies **`not_eq`** as an alternative spelling for **`!=`**. (There's no alternative spelling for **`==`**.) In C, the alternative spelling is provided as a macro in the \<iso646.h> header. In C++, the alternative spelling is a keyword; use of \<iso646.h> or the C++ equivalent \<ciso646> is deprecated. In Microsoft C++, the [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to enable the alternative spelling.
 
 ## Example
 
