@@ -42,11 +42,11 @@ A partial list of new features:
 
 - Copilot
     - When you hover over symbols in the code editor, click the Copilot **Tell me more** button in the Quick Info dialog to learn more about a given symbol:
-    :::image type="complex" source="media/github-copilot-quick-info.png" alt-text="A screenshot of the Quick Info window.":::
+    :::image type="complex" source="./media/github-copilot-quick-info.png" alt-text="A screenshot of the Quick Info window.":::
       The Quick Info window is shown above a function. The Tell me more link is highlighted.
     :::image-end:::
     - GitHub Copilot can generate naming suggestions for your identifiers (variables, methods, or classes) based on how your identifier is being used and the style of your code.
-      :::image type="complex" source="media/copilot-rename.png" alt-text="A screenshot of the GitHub Copilot Rename dialog":::
+      :::image type="complex" source="./media/copilot-rename.png" alt-text="A screenshot of the GitHub Copilot Rename dialog":::
       The Rename dialog has a New name field with a dropdown list that shows these choices: text_color,font_color, display_color, console_color, and menu_text_color.
       :::image-end:::
     You need an active [GitHub Copilot subscription](https://visualstudio.microsoft.com/github-copilot/). Right-click the variable you wish to rename, and choose **Rename** (`Ctrl+R`, `Ctrl+R`). Select the GitHub Copilot sparkle icon to generate naming suggestions.
