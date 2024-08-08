@@ -4,7 +4,6 @@ description: "The Microsoft C++ compiler /analyze option syntax and usage."
 ms.date: 02/17/2022
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnablePREfast", "/analyze", "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions", "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins", "VC.Project.VCCLCompilerTool.DisableAnalyzeExternal", "VC.Project.VCCLCompilerTool.AnalyzeExternalRuleset"]
 helpviewer_keywords: ["/analyze compiler option [C++]", "-analyze compiler option [C++]", "analyze compiler option [C++]"]
-ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
 ---
 # `/analyze` (Code analysis)
 
@@ -135,7 +134,7 @@ Then, use compiler option `/analyze:plugin EspXEngine.dll` to use the EspXEngine
 
 #### External file analysis options
 
-Starting in Visual Studio 2019 version 16.10, you can specify different analysis rules and behavior for external headers. Use the **`/external:I`**, **`/external:env`**, or **`/external:anglebrackets`** options to specify directories as "external" directories. Any files that are included by using `#include`from an external directory or its subdirectories are considered as external headers. For more information, see [`/external` (External headers diagnostics)](external-external-headers-diagnostics.md).
+Starting in Visual Studio 2019 version 16.10, you can specify different analysis rules and behavior for external headers. Use the **`/external:I`**, **`/external:env`**, or **`/external:anglebrackets`** options to specify directories as "external" directories. Any files that are included by using `#include` from an external directory or its subdirectories are considered as external headers. For more information, see [`/external` (External headers diagnostics)](external-external-headers-diagnostics.md).
 
 Code analysis provides these options to control analysis of external files:
 

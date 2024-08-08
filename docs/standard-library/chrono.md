@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: <chrono>"
 title: "<chrono>"
+description: "Learn more about: <chrono>"
 ms.date: 05/31/2022
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ---
@@ -170,7 +170,7 @@ For more information about ratio types that are used in the following typedefs, 
 | `tai_seconds` | A synonym for `tai_time<seconds>`. A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md). |
 | `tai_time` | A synonym for `time_point<tai_clock, Duration>`. You provide the `Duration`, for example, `tai_time<seconds> tt;`. Represents a `time_point` for a [`tai_clock`](tai-clock-class.md). |
 | `utc_seconds` | A synonym for `utc_time<seconds>;` |
-| `utc_time` | A synonym for `time_point<utc_clock, Duration>`. You provide the `Duration`, for example, `utc_time<seconds> ut;`. Represents a `time_point`for a [`utc_clock`](utc-clock-class.md). |
+| `utc_time` | A synonym for `time_point<utc_clock, Duration>`. You provide the `Duration`, for example, `utc_time<seconds> ut;`. Represents a `time_point` for a [`utc_clock`](utc-clock-class.md). |
 
 ## Type traits
 

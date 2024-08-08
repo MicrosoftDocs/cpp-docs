@@ -354,7 +354,7 @@ Historical test cases, also known as regression test cases, prevent old issues f
 
 **Key qualities, and relation to other sections**
 
-Since they test for bug regressions, these tests should be quick and easy to run, so they can run alongside the [Code Based Test Cases] and contribute to the overall code coverage of the product. Along with this, using real examples from customers to inspire new test cases is a great way to improve coverage and quality of tests.
+Since they test for bug regressions, these tests should be quick and easy to run, so they can run alongside the [Code Based Test Cases](#27-code-based-test-cases) and contribute to the overall code coverage of the product. Along with this, using real examples from customers to inspire new test cases is a great way to improve coverage and quality of tests.
 
 **Visual Studio**
 

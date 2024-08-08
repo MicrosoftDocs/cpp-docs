@@ -402,7 +402,7 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 - [P1679R3](https://wg21.link/P1679R3) `contains()` For `basic_string` and `basic_string_view`
 - [P1682R3](https://wg21.link/P1682R3) `to_underlying()` for enumerations
 - [P2162R2](https://wg21.link/P2162R2) Allow inheriting from `std::variant`
-- [P2166R1](https://wg21.link/P2166R1) Prohibit constructing`basic_string` and `basic_string_view` from `nullptr`. This change is a source-breaking change. Code that previously had undefined behavior at runtime is now rejected with compiler errors.
+- [P2166R1](https://wg21.link/P2166R1) Prohibit constructing `basic_string` and `basic_string_view` from `nullptr`. This change is a source-breaking change. Code that previously had undefined behavior at runtime is now rejected with compiler errors.
 - [P2186R2](https://wg21.link/P2186R2) Removed garbage collection support. This change removes `declare_reachable`, `undeclare_reachable`, `declare_no_pointers`, `undeclare_no_pointers`, `get_pointer_safety`. Previously, these functions had no effect.
 
 **Highlighted performance improvements**
