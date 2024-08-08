@@ -31,7 +31,7 @@ A partial list of new features:
 
 - Standard Library Enhancements:
     - Formatted output implementation now includes `std::range_formatter` and formatters for `std::pair` and `std::tuple`.
-    - Added support for `std::println()` with no arguments, which prints a blank line as proposed in [P3142R0](https://wg21.link/P3142R0).
+    - Added support for `std::println()` with no arguments. This prints a blank line as proposed in [P3142R0](https://wg21.link/P3142R0).
     - Improved vectorization for several algorithms including `replace_copy()`, `replace_copy_if()`, `ranges::replace_copy`, `ranges::replace_copy_if`, `find_first_of()` and `ranges::find_first_of`, for 8-bit and 16-bit elements, `mismatch()`, `ranges::mismatch`, `count()` `ranges::count`, `find()`, `ranges::find`, `ranges::find_last`, and `ranges::iota`.
 
 - Game development in C++
@@ -57,17 +57,17 @@ A partial list of new features:
     You need an active [GitHub Copilot subscription](https://visualstudio.microsoft.com/github-copilot/). Right-click the variable you wish to rename, and choose **Rename** (`Ctrl+R`, `Ctrl+R`). Select the GitHub Copilot sparkle icon to generate naming suggestions.
 
 - Debugging
-    - Conditional breakpoints in C++ are significantly faster. 
-
-Beginning with version 17.11, our initial assessment finds that execution time is almost four times as fast, reducing execution time from 80 seconds to 21 seconds over 80,000 iterations. 
+    - Conditional breakpoints in C++ are significantly faster.
 
 - Diagnostics improvements
-    - Improved diagnostics when calling `std::get<T>` on a `std::tuple` that has multiple instances of `T` in its template arguments.
-        - MSVC used to report: `error C2338: static_assert failed: 'duplicate type T in get<T>(tuple)'`.
-        - Now it reports: `error C2338: static_assert failed: 'get<T>(tuple<Types...>&) requires T to occur exactly once in Types.(N4971 [tuple.elemm]/5)'`
-    - Improved diagnostics when `std::ranges::to` is unable to construct the requested result.
-        - MSVC used to report: `error C2338: static_assert failed: 'the program is ill-formed per N4950 [range.utility.conv.to]/2.3'`
-        - Now it reports: `error C2338: static_assert failed: 'ranges::to requires the result to be constructible from the source range, either by using a suitable constructor, or by inserting each element of the range into the default-constructed object. (N4981 [range.utility.conv.to]/2.1.5)'`
+    - Improved diagnostics when calling `std::get<T>` on a `std::tuple` that has multiple instances of `T` in its template arguments. MSVC used to report:
+            `error C2338: static_assert failed: 'duplicate type T in get<T>(tuple)'`.
+        - Now it reports:
+            `error C2338: static_assert failed: 'get<T>(tuple<Types...>&) requires T to occur exactly once in Types.(N4971 [tuple.elemm]/5)'`
+    - Improved diagnostics when `std::ranges::to` is unable to construct the requested result. MSVC used to report:
+             `error C2338: static_assert failed: 'the program is ill-formed per N4950 [range.utility.conv.to]/2.3'`
+        - Now it reports:
+             `error C2338: static_assert failed: 'ranges::to requires the result to be constructible from the source range, either by using a suitable constructor, or by inserting each element of the range into the default-constructed object. (N4981 [range.utility.conv.to]/2.1.5)'`
 
 ## What's new for C++ in Visual Studio version 17.10
 
