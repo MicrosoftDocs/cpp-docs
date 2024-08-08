@@ -60,13 +60,11 @@ A partial list of new features:
     - Conditional breakpoints in C++ are significantly faster.
 
 - Diagnostics improvements
-    - Improved diagnostics when calling `std::get<T>` on a `std::tuple` that has multiple instances of `T` in its template arguments.\
-      MSVC used to report:\
+    - Improved diagnostics when calling `std::get<T>` on a `std::tuple` that has multiple instances of `T` in its template arguments. MSVC used to report:\
           `error C2338: static_assert failed: 'duplicate type T in get<T>(tuple)'`.\
       Now it reports:\
           `error C2338: static_assert failed: 'get<T>(tuple<Types...>&) requires T to occur exactly once in Types.(N4971 [tuple.elemm]/5)'`\
-    - Improved diagnostics when `std::ranges::to` is unable to construct the requested result.\
-      MSVC used to report:\
+    - Improved diagnostics when `std::ranges::to` is unable to construct the requested result. MSVC used to report:\
           `error C2338: static_assert failed: 'the program is ill-formed per N4950 [range.utility.conv.to]/2.3'`\
       Now it reports:\
              `error C2338: static_assert failed: 'ranges::to requires the result to be constructible from the source range, either by using a suitable constructor, or by inserting each element of the range into the default-constructed object. (N4981 [range.utility.conv.to]/2.1.5)'`
