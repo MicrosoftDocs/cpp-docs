@@ -39,7 +39,7 @@ A partial list of new features:
     - The new Unreal Engine toolbar provides quick access to Unreal Engine related actions from within Visual Studio. The toolbar is available when you have an Unreal Engine project loaded in Visual Studio. The toolbar allows you to quickly attach to Unreal Engine processes, rescan the Blueprints cache, quickly access the Unreal Engine Log, and provides quick access to the Unreal Engine Configuration Page for Visual Studio. For more information, see [Unreal Engine Toolbar](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#unreal-engine-toolbar).
     - You can now filter trace results by project. Also, results in each row now show the relative path and file name instead of the full path. Results grouping in the **Included Files** view is also improved:
     :::image type="complex" source="./media/include-diagnostics-improved.png" alt-text="A screenshot of the improved Included Files diagnostics results.":::
-      The Included Files view has a new column for the project. The Project column is selected and projects such as (Select All), CompilerIdC, OpenAL, common, and so on are selected. The included files are listed by relative path and file name and grouped together.
+      The Included Files view has a new column for the project. The Project column is selected and projects such as (Select All), CompilerIdC, OpenAL, common, and so on, are selected. The included files are listed by relative path and file name and grouped together.
     :::image-end:::
 
 - CMake debugging
@@ -50,9 +50,9 @@ A partial list of new features:
     :::image type="complex" source="./media/github-copilot-quick-info.png" alt-text="A screenshot of the Quick Info window.":::
       The Quick Info window is shown above a function. The Tell me more link is highlighted.
     :::image-end:::
-    - GitHub Copilot can generate naming suggestions for your identifiers (variables, methods, or classes) based on how your identifier is being used and the style of your code.
+    - GitHub Copilot can generate naming suggestions for your identifiers (variables, methods, or classes) based on how your identifier is used and the style of your code.
       :::image type="complex" source="./media/copilot-rename.png" alt-text="A screenshot of the GitHub Copilot Rename dialog":::
-      The Rename dialog has a New name field with a dropdown list that shows these choices: text_color,font_color, display_color, console_color, and menu_text_color.
+      The Rename dialog has a New name field with a dropdown list that shows these choices: text_color, font_color, display_color, console_color, and menu_text_color.
       :::image-end:::
     You need an active [GitHub Copilot subscription](https://visualstudio.microsoft.com/github-copilot/). Right-click the variable you wish to rename, and choose **Rename** (`Ctrl+R`, `Ctrl+R`). Select the GitHub Copilot sparkle icon to generate naming suggestions.
 
@@ -77,7 +77,7 @@ A partial list of new features:
 
 | For more information about | See |
 |---|---|
-| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.10](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-10/) |
+| What's new for C++ developers | [What's new for C++ Developers in Visual Studio 2022 17.10](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-10/) |
 | Standard Library (STL) merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
 | New features in the Visual Studio 17.10 IDE |[Visual Studio 2022 version 17.10 Release Notes](/visualstudio/releases/2022/release-notes) |
 | C++ language conformance improvements in Visual Studio 2022 17.10 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.10](cpp-conformance-improvements.md#improvements_1710) |
@@ -85,7 +85,7 @@ A partial list of new features:
 A partial list of new features:
 
 - **MSVC Toolset Update**: The MSVC toolset version is updated from 19.39 to 19.40. This may affect projects that have version assumptions. For more information about some ways in which this will affect projects that assume that MSVC versions are all 19.3X for Visual Studio 2022 releases, see [MSVC Toolset Minor Version Number 14.40 in VS 2022 v17.10](https://devblogs.microsoft.com/cppblog/msvc-toolset-minor-version-number-14-40-in-vs-2022-v17-10/).
-- **Standard Library Enhancements**: The standard library added support for [P2510R3 Formatting Pointers](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf) which brings the set of format specifiers for pointers when using `std::format` more in line with those that already exist for integers. Improved the vectorized implementations of `std::min_element`, `std::ranges::min`, and friends.
+- **Standard Library Enhancements**: The standard library added support for [P2510R3 Formatting Pointers](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf), which brings the set of format specifiers for pointers when using `std::format` more in line with those that already exist for integers. Improved the vectorized implementations of `std::min_element`, `std::ranges::min`, and friends.
 - **Build Insights**: Now provides template instantiation information. See [Templates View for Build Insights in Visual Studio](https://devblogs.microsoft.com/cppblog/templates-view-for-build-insights-in-visual-studio-2/) or the [Pure Virtual C++ - Templates view for Build Insights in Visual Studio](https://youtu.be/68pOEQ5YA5s) recording.
 - **Unreal Engine Plugin**: There's a new opt-in feature for the Unreal Engine Plugin to run in the background, reducing startup costs. This is an opt-in feature that is activated via **Tools** > **Options** > **Unreal Engine**.
 - **New features for Linux**: See [New Linux Development Features in Visual Studio](https://youtu.be/jZTMRvm8AwY).
@@ -93,13 +93,13 @@ A partial list of new features:
 - **Connection Manager UX**: The user experience provides a more seamless experience when connecting to remote systems. For more information, see [Usability Improvements in the Visual Studio Connection Manager](https://devblogs.microsoft.com/cppblog/usability-improvements-in-the-visual-studio-connection-manager/).
 - **Pull request comments**: You can now view GitHub and Azure DevOps comments directly in your working file. Enable the feature flag, **Pull Request Comments** in **Options** > **Environment** > **Preview Features** and checkout the pull request branch to get started.
 - **AI-Generated Content**: GitHub Copilot can now draft pull request descriptions. Requires an active GitHub Copilot subscription. Try it out by clicking the **Add AI Generated Pull Request Description** sparkle pen icon within the **Create a Pull Request** window.
-- **Image Preview**: Hover over an image path to see a preview with size details. The size is capped to 500px wide and high.
+- **Image Preview**: Hover over an image path to see a preview with size details. The size is capped to 500 px wide and high.
   :::image type="complex" source="media/hover-preview.png" alt-text="Screenshot of hover preview.":::
-  The mouse is hovering over the line std::filesystem::path vs_logo_path = "../images/vs_logo.png". Underneath appears a preview of the Visual Studio logo and the information that it is 251 x 500 pixels and 13.65 KB in size.
+  The mouse is hovering over the line std::filesystem::path vs_logo_path = "../images/vs_logo.png". Underneath appears a preview of the Visual Studio logo and the information that it's 251 x 500 pixels and 13.65 KB in size.
   :::image-end:::
 - **Breakpoint/Tracepoint Creation**: You can now create conditional breakpoints or tracepoints directly from expressions in the source code from the right-click menu. This works on property or field names and values from autos, locals, watch windows, or DataTips.
 - **Attach to Process Dialog**: The functionality provided by the Attach to Process dialog is more user-friendly. You can now easily switch between tree and list views, organize processes better with collapsible sections, and select code types with a simplified combobox. Also, the "Select/Track Window" feature is now easier to use, allowing two-way tracking: selecting a process highlights its window, and clicking on a window selects its process.
-- **GitHub Copilot Integration**: We have unified the GitHub Copilot and Copilot Chat extensions and now ship them directly in Visual Studio. To install it, install the **GitHub Copilot** component in the **Visual Studio Installer**:
+- **GitHub Copilot Integration**: GitHub Copilot and Copilot Chat extensions are now unified and now ship directly in Visual Studio. To install it, install the **GitHub Copilot** component in the **Visual Studio Installer**:
     :::image type="complex" source="media/github-copilot-install-option.png" alt-text="Screenshot of the Visual Studio Installer GitHub Copilot installation option." lightbox="media/github-copilot-install-option-expanded.png":::
     The Visual Studio installer is open to the Workloads tab. In the installation details pane, GitHub Copilot is shown as selected.
     :::image-end:::
@@ -114,7 +114,7 @@ A partial list of new features:
 
 | For more information about | See |
 |---|---|
-| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.9](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-9/) |
+| What's new for C++ developers | [What's new for C++ Developers in Visual Studio 2022 17.9](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-9/) |
 | Standard Library (STL) merged C++23 features, performance improvements, enhanced behavior, LWG issue resolutions, and fixed bugs | [STL Changelog 17.9](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-179) |
 | New features in the Visual Studio 17.9 IDE |[Visual Studio 2022 version 17.9 Release Notes](/visualstudio/releases/2022/release-notes-v17.9) |
 | C++ language conformance improvements in Visual Studio 2022 17.9 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_179) |
@@ -124,7 +124,7 @@ A partial list of new features:
 
 - `#include` diagnostics, which provides a detailed analysis of your `#include` directives. Activate this feature by right-clicking an `#include` and choosing **#include directives** > **Turn #include directive diagnostics on**. Above each `#include` is the number of times your code references that `#include` file. Click the **reference** link to navigate to where your code uses something from that header file. To view the build time of your `#include` directives, run Build Insights by navigating to **Build** > **Run Build Insights on Solution** > **Build**.
     :::image type="complex" source="media/include-diagnostics.png" alt-text="Screenshot of #include diagnostics.":::
-    Above the # include is a **reference** link and a number of the references to this # include file (in this case 1). The build time is also listed (in this case less than 1/2 a second).
+    Above the # include is a **reference** link and many of the references to this # include file (in this case 1). The build time is also listed (in this case less than 1/2 a second).
     :::image-end:::
 - Memory layout visualization, which shows how memory is arranged for your classes, structs, and unions. Hover over a type and choose the **Memory Layout** link in the **Quick Info** to open a dedicated window displaying the memory layout of the selected type. Hovering over individual data types within this window provides detailed information about their size and offset within the type.
     :::image type="complex" source="media/memory-layout-window.png" alt-text="Screenshot of the memory layout window":::
@@ -147,7 +147,7 @@ A partial list of new features:
 
 | For more information about | See |
 |---|---|
-| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-8/) |
+| What's new for C++ developers | [What's new for C++ Developers in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-8/) |
 | Standard Library (STL) merged C++26, C++23 features, C++20 extensions, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178) |
 | New features in the Visual Studio 17.8 IDE |[Visual Studio 2022 version 17.8 Release Notes](/visualstudio/releases/2022/release-notes-v17.8) |
 | C++ language conformance improvements in Visual Studio 2022 17.8 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_178) |
@@ -172,7 +172,7 @@ A partial list of new features:
 
 | For more information about | See |
 |---|---|
-| What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2022 17.7](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-7/) |
+| What's new for C++ developers | [What’s new for C++ Developers in Visual Studio 2022 17.7](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-7/) |
 | New C++ features specific to game development | [Unleashing the Power of Visual Studio 2022 for C++ Game Development](https://devblogs.microsoft.com/visualstudio/unleashing-the-power-of-visual-studio-2022-for-c-game-development/) |
 | Standard Library (STL) merged C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.7](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-177) |
 | New features in the Visual Studio 17.7 IDE |[Visual Studio 2022 version 17.7 Release Notes](/visualstudio/releases/2022/release-notes-v17.7) |
@@ -468,7 +468,7 @@ Release notes for older C++ versions are also available:
 
 - For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-cpp-2019.md).
 - For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](what-s-new-for-cpp-2017.md).
-- For information on what's new in earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+- For information on what's new in earlier versions, see [Visual C++ What's new 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ## Known issues
 

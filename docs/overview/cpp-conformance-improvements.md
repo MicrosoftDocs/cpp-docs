@@ -23,8 +23,8 @@ For an in-depth summary of changes made to the Standard Template Library, includ
 
 ### Print blank lines with `println`
 
-Per [P3142R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3142r0.pdf), it is now easy to generate a blank line with `println`. This feature is available when compiling with `/std:c++latest`.
-Before this change, you wrote: `println("");` Now you simply write: `println();`.
+Per [P3142R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3142r0.pdf), it's now easy to generate a blank line with `println`. This feature is available when compiling with `/std:c++latest`.
+Before this change, you wrote: `println("");` Now you write: `println();`.
 - `println();` is equivalent to `println(stdout);`
 - `println(FILE* stream);` is equivalent to `println(stream, "\n");`
 
