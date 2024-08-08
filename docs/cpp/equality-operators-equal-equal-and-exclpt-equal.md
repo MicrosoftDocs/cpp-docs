@@ -20,10 +20,10 @@ The equal-to operator (**`==`**) returns **`true`** if both operands have the sa
 The not-equal-to operator (**`!=`**) returns **`true`** if the operands don't have the same value; otherwise **`false`**.\
 The alternative spelling `not_eq` returns **`true`** if the operands don't have the same value; otherwise **`false`**.
 
-## Operator keyword for !=
+## `not_eq` keyword for `!=`
 
 C++:
-- **`not_eq`** is an alternative spelling for **`!=`**. The [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to use the alternative spelling.
+- **`not_eq`** can be used as alternative to **`!=`**. The [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to use the alternative spelling.
 - There's no alternative spelling for **`==`**.
 - Including `<iso646.h>` or `<ciso646>` to use the keyword is deprecated. Use the alternative spelling directly as it is now treated as a keyword.
 
@@ -76,6 +76,7 @@ Equality operators can compare pointers to members of the same type. The pointer
 
 ## See also
 
+[not_eq](/cpp/c-runtime-library/reference/not-eq)\
 [Expressions with binary operators](../cpp/expressions-with-binary-operators.md)\
 [C++ built-in operators, precedence; and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [C relational and equality operators](../c-language/c-relational-and-equality-operators.md)
