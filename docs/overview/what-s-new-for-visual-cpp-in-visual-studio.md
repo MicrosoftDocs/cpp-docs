@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 8/2/2024
+ms.date: 08/08/2024
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 ms.custom: intro-whats-new
@@ -36,6 +36,10 @@ A partial list of new features:
 - Game development in C++
     - Unreal Engine: You can now add common Unreal Engine class templates, modules, and plugins from within Visual Studio. For more information, see [Add Unreal Engine classes, modules, and plugins in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-add-class-module-plugin).
     - The new Unreal Engine toolbar provides quick access to Unreal Engine related actions from within Visual Studio. The toolbar is available when you have an Unreal Engine project loaded in Visual Studio. The toolbar allows you to quickly attach to Unreal Engine processes, rescan the Blueprints cache, quickly access the Unreal Engine Log, and provides quick access to the Unreal Engine Configuration Page for Visual Studio. For more information, see [Unreal Engine Toolbar](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#unreal-engine-toolbar).
+    - You can now filter trace results by project. Results in each row now show the relative path and file name instead of the full path. Results grouping in the Included Files view is also improved:
+    :::image type="complex" source="./media/include-diagnostics-improved" alt-text="A screenshot of the improved Included Files diagnostics results.":::
+      The Included Files view has a new column for the project. The Project column is selected and projects such as (Select All), CompilerIdC, OpenAL, common, and so on are selected. The included files are listed by relative path and file name and grouped together.
+    :::image-end:::
 
 - CMake debugging
     - You can now debug your CMake scripts and `CMakeLists.txt` files in the Visual Studio debugger for CMake projects that target Linux via Windows Subsystem for Linux (WSL) or SSH. To start a CMake debugging session in Visual Studio, set a breakpoint in your `CMakeLists.txt` file and then navigate to **Project** > **Configure Cache with CMake Debugging**.
@@ -50,6 +54,15 @@ A partial list of new features:
       The Rename dialog has a New name field with a dropdown list that shows these choices: text_color,font_color, display_color, console_color, and menu_text_color.
       :::image-end:::
     You need an active [GitHub Copilot subscription](https://visualstudio.microsoft.com/github-copilot/). Right-click the variable you wish to rename, and choose **Rename** (`Ctrl+R`, `Ctrl+R`). Select the GitHub Copilot sparkle icon to generate naming suggestions.
+
+- Debugging
+    - Conditional breakpoints in C++ are significantly faster. 
+
+Beginning with version 17.11, our initial assessment finds that execution time is almost four times as fast, reducing execution time from 80 seconds to 21 seconds over 80,000 iterations. 
+
+- Diagnostics improvements
+    - Improved diagnostics when calling `std::get<T>` on a `std::tuple` that has multiple instances of `T` in its template arguments. MSVC used to report: `error C2338: static_assert failed: 'duplicate type T in get<T>(tuple)'`. Now it reports: `error C2338: static_assert failed: 'get<T>(tuple<Types...>&) requires T to occur exactly once in Types.(N4971 [tuple.elemm]/5)'`
+    - Improved diagnostics when `std::ranges::to` is unable to construct the requested result. MSVC used to report: `error C2338: static_assert failed: 'the program is ill-formed per N4950 [range.utility.conv.to]/2.3'`  Now it reports more details: `error C2338: static_assert failed: 'ranges::to requires the result to be constructible from the source range, either by using a suitable constructor, or by inserting each element of the range into the default-constructed object. (N4981 [range.utility.conv.to]/2.1.5)'`
 
 ## What's new for C++ in Visual Studio version 17.10
 

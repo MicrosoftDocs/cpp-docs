@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 8/2/2024
+ms.date: 08/08/2024
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -20,6 +20,18 @@ For changes in older versions, see [Visual C++ What's New 2003 through 2015](../
 Visual Studio 2022 version 17.11 has the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.11](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1711).
+
+### Printing blank lines with `println`
+
+Per [P3142R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3142r0.pdf) it is now easy to generate a blank line with `println`. This feature is available when compiling with `/std:c++latest`.
+Before this change, to generate a blank line, you wrote: `println("");`. Now you simply write: `println();`.
+
+The following are the same:
+
+```cpp
+void println(); is equivalent to println(stdout);
+void println(FILE* stream); is equivalent to println(stream, "\n");
+```
 
 ### Implemented `range_formatter`
 
