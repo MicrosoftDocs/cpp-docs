@@ -21,7 +21,7 @@ An alternative spelling for the **`!=`** operator.
 ## Remarks
 
 C++:
-- **`not_eq`** can be used as alternative to **`!=`**. The [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required.
+- **`not_eq`** can be used as alternative to **`!=`**. The [`/permissive-`](../../build/reference/permissive-standards-conformance.md) or [`/Za`](../../build/reference/za-ze-disable-language-extensions.md) compiler option is required.
 - Including `<iso646.h>` or `<ciso646>` is deprecated. You can use the alternative spelling without including any header files.
 - There's no alternative spelling for **`==`**.
 
