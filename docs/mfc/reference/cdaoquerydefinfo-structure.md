@@ -10,7 +10,7 @@ helpviewer_keywords: ["DAO (Data Access Objects), QueryDefs collection", "CDaoQu
 The `CDaoQueryDefInfo` structure contains information about a querydef object defined for data access objects (DAO).
 
 > [!NOTE]
-> Data Access Object (DAO) is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
+> Data Access Object (DAO) is supported through Office 2013. DAO 3.6 is the final version, and is obsolete.
 
 ## Syntax
 

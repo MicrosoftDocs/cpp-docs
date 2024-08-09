@@ -15,7 +15,7 @@ helpviewer_keywords: ["!= operator", "equality operator", "not equal to operator
 ## Remarks
 
 The equal-to operator (**`==`**) returns **`true`** if both operands have the same value; otherwise **`false`**.\
-The not-equal-to operator (**`!=`**) returns **`true`** if the operands don't have the same value; otherwise **`false`**.\
+The not-equal-to operator (**`!=`**) returns **`true`** if the operands don't have the same value; otherwise **`false`**.
 
 In C and C++, **`not_eq`** can be used as alternative to **`!=`**. For more information, see [`not-eq`](../c-runtime-library/reference/not-eq.md).
 

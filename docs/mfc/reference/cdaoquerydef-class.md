@@ -10,7 +10,7 @@ helpviewer_keywords: ["CDaoQueryDef [MFC], CDaoQueryDef", "CDaoQueryDef [MFC], A
 Represents a query definition, or "querydef," usually one saved in a database.
 
 > [!NOTE]
-> Data Access Object (DAO) is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
+> Data Access Object (DAO) is supported through Office 2013. DAO 3.6 is the final version, and is obsolete.
 
 ## Syntax
 

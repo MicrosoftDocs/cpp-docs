@@ -10,7 +10,7 @@ helpviewer_keywords: ["CDaoDatabase [MFC], CDaoDatabase", "CDaoDatabase [MFC], C
 Represents a connection to an Access database using Data Access Objects (DAO).
 
 > [!NOTE]
-> Data Access Object (DAO) is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
+> Data Access Object (DAO) is supported through Office 2013. DAO 3.6 is the final version, and is obsolete.
 
 ## Syntax
 
