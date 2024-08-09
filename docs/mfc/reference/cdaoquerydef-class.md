@@ -41,7 +41,7 @@ class CDaoQueryDef : public CObject
 |[CDaoQueryDef::GetFieldCount](#getfieldcount)|Returns the number of fields defined by the querydef.|
 |[CDaoQueryDef::GetFieldInfo](#getfieldinfo)|Returns information about a specified field defined in the query.|
 |[CDaoQueryDef::GetName](#getname)|Returns the name of the querydef.|
-|[CDaoQueryDef::GetODBCTimeout](#getodbctimeout)|Returns the timeout value used by ODBC (for an ODBC query) when the querydef is executed. This determines how long to allow for the query's action to complete.|
+|[CDaoQueryDef::GetODBCTimeout](#getodbctimeout)|Returns the timeout value used by ODBC (for an ODBC query) when the querydef is executed which determines how long to allow for the query's action to complete.|
 |[CDaoQueryDef::GetParameterCount](#getparametercount)|Returns the number of parameters defined for the query.|
 |[CDaoQueryDef::GetParameterInfo](#getparameterinfo)|Returns information about a specified parameter to the query.|
 |[CDaoQueryDef::GetParamValue](#getparamvalue)|Returns the value of a specified parameter to the query.|
@@ -70,7 +70,7 @@ class CDaoQueryDef : public CObject
 A querydef is a data access object that contains the SQL statement that describes a query, and its properties, such as "Date Created" and "ODBC Timeout." You can also create temporary querydef objects without saving them, but it's convenient—and much more efficient—to save commonly reused queries in a database. A [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object maintains a collection, called the QueryDefs collection, that contains its saved querydefs.
 
 > [!NOTE]
-> The DAO database classes are distinct from the MFC database classes based on Open Database Connectivity (ODBC). All DAO database class names have the "CDao" prefix. You can still access ODBC data sources with the DAO classes. In general, the MFC classes based on DAO are more capable than the MFC classes based on ODBC; the DAO-based classes can access data, including through ODBC drivers, via their own database engine. The DAO-based classes also support Data Definition Language (DDL) operations, such as adding tables via the classes, without having to call DAO directly.
+> The DAO database classes are distinct from the Microsoft Foundation Class (MFC) database classes based on Open Database Connectivity (ODBC). All DAO database class names have the "CDao" prefix. You can still access ODBC data sources with the DAO classes. In general, the MFC classes based on DAO are more capable than the MFC classes based on ODBC; the DAO-based classes can access data, including through ODBC drivers, via their own database engine. The DAO-based classes also support Data Definition Language (DDL) operations, such as adding tables via the classes, without having to call DAO directly.
 
 ## Usage
 
@@ -99,11 +99,11 @@ You can use a querydef object for any of the following purposes:
 
 - To call the object's `Execute` member function to directly execute an action query or a SQL pass-through query
 
-You can use a querydef object for any type of query, including select, action, crosstab, delete, update, append, make-table, data definition, SQL pass-through, union, and bulk queries. The content of the SQL statement that you supply determines the query's type. For information about query types, see the `Execute` and [`GetType`](#gettype) member functions. Recordsets are commonly used for row-returning queries, usually those using the **SELECT ... FROM** keywords. `Execute` is most commonly used for bulk operations. For more information, see [`Execute`](#execute) and [`CDaoRecordset`](../../mfc/reference/cdaorecordset-class.md).
+You can use a querydef object for any type of query, including select, action, crosstab, delete, update, append, make-table, data definition, SQL pass-through, union, and bulk queries. The content of the SQL statement that you supply determines the query's type. For information about query types, see the `Execute` and [`GetType`](#gettype) member functions. Recordsets are commonly used for row-returning queries, usually queries using the **SELECT ... FROM** keywords. `Execute` is most commonly used for bulk operations. For more information, see [`Execute`](#execute) and [`CDaoRecordset`](../../mfc/reference/cdaorecordset-class.md).
 
 ## Querydefs and Recordsets
 
-To use a querydef object to create a `CDaoRecordset` object, you typically create or open a querydef as described above. Then construct a recordset object, passing a pointer to your querydef object when you call [`CDaoRecordset::Open`](../../mfc/reference/cdaorecordset-class.md#open). The querydef you pass must be in an open state. For more information, see class [`CDaoRecordset`](../../mfc/reference/cdaorecordset-class.md).
+To use a querydef object to create a `CDaoRecordset` object, you typically create or open a querydef as described previously. Then construct a recordset object, passing a pointer to your querydef object when you call [`CDaoRecordset::Open`](../../mfc/reference/cdaorecordset-class.md#open). The querydef you pass must be in an open state. For more information, see class [`CDaoRecordset`](../../mfc/reference/cdaorecordset-class.md).
 
 You can't use a querydef to create a recordset (the most common use for a querydef) unless it's in an open state. Put the querydef into an open state by calling either `Open` or `Create`.
 
@@ -150,7 +150,7 @@ BOOL CanUpdate();
 
 ### Return Value
 
-Nonzero if you're permitted to modify the querydef; otherwise 0.
+Nonzero if you can modify the querydef; otherwise 0.
 
 ### Remarks
 
@@ -160,7 +160,7 @@ You can modify the querydef if:
 
 - You have update permissions for the database.
 
-   This depends on whether you've implemented security features. MFC doesn't provide support for security; you must implement it yourself by calling DAO directly or by using Microsoft Access. See the topic "Permissions Property" in DAO Help.
+   This depends on whether you implemented security features. MFC doesn't provide support for security; you must implement it yourself by calling DAO directly or by using Microsoft Access. See the topic "Permissions Property" in DAO Help.
 
 ## <a name="cdaoquerydef"></a> CDaoQueryDef::CDaoQueryDef
 
@@ -501,7 +501,7 @@ For related information, see the topic "PARAMETERS Declaration (SQL)" in DAO Hel
 
 ## <a name="getrecordsaffected"></a> CDaoQueryDef::GetRecordsAffected
 
-Call this member function to determine how many records were affected by the last call of [Execute](#execute).
+Call this member function to determine how many records are affected by the last call of [Execute](#execute).
 
 ```
 long GetRecordsAffected();
@@ -732,7 +732,7 @@ The ordinal position of the parameter in the querydef's Parameters collection. Y
 
 ### Remarks
 
-The parameter must already have been established as part of the querydef's SQL string. You can access the parameter either by name or by its ordinal position in the collection.
+The parameter must already be established as part of the querydef's SQL string. You can access the parameter either by name or by its ordinal position in the collection.
 
 Specify the value to set as a `COleVariant` object. For information about setting the desired value and type in your `COleVariant` object, see class [COleVariant](../../mfc/reference/colevariant-class.md).
 
