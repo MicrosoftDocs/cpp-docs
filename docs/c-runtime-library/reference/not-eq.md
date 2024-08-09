@@ -57,8 +57,3 @@ Not equal
 ## Requirements
 
 **Header:** `<iso646.h>` is necessary if you are compiling for C.
-
-## See also
-
-[`and_eq`](/cpp/c-runtime-library/reference/and-eq?.md)\
-[`or_eq`](/cpp/c-runtime-library/reference/or-eq?.md)\
