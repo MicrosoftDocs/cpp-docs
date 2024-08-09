@@ -14,8 +14,6 @@ helpviewer_keywords: ["!= operator", "equality operator", "not equal to operator
 
 ## Remarks
 
-The equality operators compare their operands for strict equality or inequality. If you are looking for information about overloading these operators, see [Operator overloading](../cpp/overloading.md).
-
 The equal-to operator (**`==`**) returns **`true`** if both operands have the same value; otherwise **`false`**.\
 The not-equal-to operator (**`!=`**) returns **`true`** if the operands don't have the same value; otherwise **`false`**.\
 
@@ -50,6 +48,7 @@ Not equal
 ## See also
 
 [`not-eq`](../c-runtime-library/reference/not-eq.md)\
+[Operator overloading](../cpp/operator-overloading.md)\
 [Expressions with binary operators](../cpp/expressions-with-binary-operators.md)\
 [C++ built-in operators, precedence; and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [C relational and equality operators](../c-language/c-relational-and-equality-operators.md)
