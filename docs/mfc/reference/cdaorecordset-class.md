@@ -10,7 +10,7 @@ helpviewer_keywords: ["CDaoRecordset [MFC], CDaoRecordset", "CDaoRecordset [MFC]
 Represents a set of records selected from a data source.
 
 > [!NOTE]
-> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
+> Data Access Object (DAO) is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 
 ## Syntax

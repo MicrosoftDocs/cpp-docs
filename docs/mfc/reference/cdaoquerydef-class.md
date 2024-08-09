@@ -10,7 +10,7 @@ helpviewer_keywords: ["CDaoQueryDef [MFC], CDaoQueryDef", "CDaoQueryDef [MFC], A
 Represents a query definition, or "querydef," usually one saved in a database.
 
 > [!NOTE]
-> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
+> Data Access Object (DAO) is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -105,7 +105,7 @@ You can use a querydef object for any type of query, including select, action, c
 
 To use a querydef object to create a `CDaoRecordset` object, you typically create or open a querydef as described above. Then construct a recordset object, passing a pointer to your querydef object when you call [`CDaoRecordset::Open`](../../mfc/reference/cdaorecordset-class.md#open). The querydef you pass must be in an open state. For more information, see class [`CDaoRecordset`](../../mfc/reference/cdaorecordset-class.md).
 
-You cannot use a querydef to create a recordset (the most common use for a querydef) unless it's in an open state. Put the querydef into an open state by calling either `Open` or `Create`.
+You can't use a querydef to create a recordset (the most common use for a querydef) unless it's in an open state. Put the querydef into an open state by calling either `Open` or `Create`.
 
 ## External Databases
 
@@ -150,7 +150,7 @@ BOOL CanUpdate();
 
 ### Return Value
 
-Nonzero if you are permitted to modify the querydef; otherwise 0.
+Nonzero if you're permitted to modify the querydef; otherwise 0.
 
 ### Remarks
 
@@ -223,7 +223,7 @@ The SQL string that defines the query. If you accept the default value of NULL, 
 
 If you pass a name in *lpszName*, you can then call [Append](#append) to save the querydef in the database's QueryDefs collection. Otherwise, the object is a temporary querydef and isn't saved. In either case, the querydef is in an open state, and you can either use it to create a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object or call the querydef's [Execute](#execute) member function.
 
-If you don't supply a SQL statement in *lpszSQL*, you cannot run the query with `Execute` but you can use it to create a recordset. In that case, MFC uses the recordset's default SQL statement.
+If you don't supply a SQL statement in *lpszSQL*, you can't run the query with `Execute` but you can use it to create a recordset. In that case, MFC uses the recordset's default SQL statement.
 
 ## <a name="execute"></a> CDaoQueryDef::Execute
 
@@ -248,7 +248,7 @@ An integer that determines the characteristics of the query. For related informa
 
 - `dbFailOnError` Default value. Roll back updates if an error occurs and report the error to the user.
 
-- `dbSeeChanges` Generate a run-time error if another user is changing data you are editing.
+- `dbSeeChanges` Generate a run-time error if another user is changing data you're editing.
 
 > [!NOTE]
 > For an explanation of the terms "inconsistent" and "consistent," see the topic "Execute Method" in DAO Help.
@@ -430,7 +430,7 @@ The number of parameters defined in the query.
 
 ### Remarks
 
-`GetParameterCount` is useful for looping through all parameters in the querydef. For that purpose, use `GetParameterCount` in conjunction with [GetParameterInfo](#getparameterinfo).
+`GetParameterCount` is useful for looping through all parameters in the querydef. For that purpose, use `GetParameterCount` with [`GetParameterInfo`](#getparameterinfo).
 
 For related information, see the topics "Parameter Object", "Parameters Collection", and "PARAMETERS Declaration (SQL)" in DAO Help.
 
@@ -468,7 +468,7 @@ A string containing the name of the desired parameter, for lookup by name. You c
 
 ### Remarks
 
-For a description of the information returned in *`paraminfo`*, see the [`CDaoParameterInfo`](../../mfc/reference/cdaoparameterinfo-structure.md) structure. This structure has members that correspond to the descriptive information under *dwInfoOptions* above.
+For a description of the information returned in *`paraminfo`*, see the [`CDaoParameterInfo`](../../mfc/reference/cdaoparameterinfo-structure.md) structure. This structure has members that correspond to the descriptive information under *`dwInfoOptions`* above.
 
 For related information, see the topic "PARAMETERS Declaration (SQL)" in DAO Help.
 
@@ -549,7 +549,7 @@ The SQL statement that defines the query on which the querydef is based.
 
 ### Remarks
 
-You'll then probably parse the string for keywords, table names, and so on.
+You can parse the string for keywords, table names, and so on.
 
 For related information, see the topics "SQL Property", "Comparison of Microsoft Jet Database Engine SQL and ANSI SQL", and "Querying a Database with SQL in Code" in DAO Help.
 
@@ -610,7 +610,7 @@ Nonzero if the `CDaoQueryDef` object is currently open; otherwise 0.
 
 ### Remarks
 
-A querydef must be in an open state before you use it to call [Execute](#execute) or to create a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object. To put a querydef into an open state call either [Create](#create) (for a new querydef) or [Open](#open) (for an existing querydef).
+A querydef must be in an open state before you use it to call [`Execute`](#execute) or to create a [`CDaoRecordset`](../../mfc/reference/cdaorecordset-class.md) object. To put a querydef into an open state, call either [`Create`](#create) (for a new querydef) or [`Open`](#open) (for an existing querydef).
 
 ## <a name="m_pdatabase"></a> CDaoQueryDef::m_pDatabase
 
@@ -626,7 +626,7 @@ Contains a pointer to the OLE interface for the underlying DAO querydef object.
 
 ### Remarks
 
-This pointer is provided for completeness and consistency with the other classes. However, because MFC rather fully encapsulates DAO querydefs, you are unlikely to need it. If you do use it, do so cautiously. In particular, don't change the value of the pointer unless you know what you're doing.
+This pointer is provided for completeness and consistency with the other classes. However, because MFC rather fully encapsulates DAO querydefs, you're unlikely to need it. If you do use it, do so cautiously. In particular, don't change the value of the pointer unless you know what you're doing.
 
 ## <a name="open"></a> CDaoQueryDef::Open
 
@@ -701,7 +701,7 @@ The number of seconds before a query times out.
 
 ### Remarks
 
-This member function lets you override the default number of seconds before subsequent operations on the connected data source "time out." An operation might time out due to network access problems, excessive query processing time, and so on. Call `SetODBCTimeout` prior to executing a query with this querydef if you want to change the query timeout value. (As ODBC reuses connections, the timeout value is the same for all clients on the same connection.)
+This member function lets you override the default number of seconds before subsequent operations on the connected data source "time out." An operation might time out due to network access problems, excessive query processing time, and so on. Call `SetODBCTimeout` before executing a query with this querydef if you want to change the query timeout value. (As ODBC reuses connections, the timeout value is the same for all clients on the same connection.)
 
 The default value for query timeouts is 60 seconds.
 
@@ -772,9 +772,9 @@ A typical use of `SetSQL` is setting up a querydef object for use in a SQL pass-
 
 ## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
+[`CObject` Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)<br/>
-[CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)<br/>
-[CDaoTableDef Class](../../mfc/reference/cdaotabledef-class.md)<br/>
-[CDaoException Class](../../mfc/reference/cdaoexception-class.md)
+[`CDaoRecordset` Class](../../mfc/reference/cdaorecordset-class.md)<br/>
+[`CDaoDatabase` Class](../../mfc/reference/cdaodatabase-class.md)<br/>
+[`CDaoTableDef` Class](../../mfc/reference/cdaotabledef-class.md)<br/>
+[`CDaoException` Class](../../mfc/reference/cdaoexception-class.md)

@@ -10,7 +10,7 @@ helpviewer_keywords: ["DAO (Data Access Objects), QueryDefs collection", "CDaoQu
 The `CDaoQueryDefInfo` structure contains information about a querydef object defined for data access objects (DAO).
 
 > [!NOTE]
-> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
+> Data Access Object (DAO) is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ struct CDaoQueryDefInfo
 Uniquely names the querydef object. For more information, see the topic "Name Property" in DAO Help. Call [CDaoQueryDef::GetName](../../mfc/reference/cdaoquerydef-class.md#getname) to retrieve this property directly.
 
 *m_nType*<br/>
-A value that indicates the operational type of a querydef object. The value can be one of the following:
+A value that indicates the operational type of a querydef object. The value can be one of:
 
 - `dbQSelect` Select: the query selects records.
 
@@ -87,9 +87,9 @@ The number of seconds the Microsoft Jet database engine waits before a timeout e
 
 ## Remarks
 
-The querydef is an object of class [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). The references to Primary, Secondary, and All above indicate how the information is returned by the [GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) member function in class `CDaoDatabase`.
+The querydef is an object of class [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). The references to Primary, Secondary, and All indicate how the information is returned by the [GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) member function in class `CDaoDatabase`.
 
-Information retrieved by the [CDaoDatabase::GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) member function is stored in a `CDaoQueryDefInfo` structure. Call `GetQueryDefInfo` for the database object in whose QueryDefs collection the querydef object is stored. `CDaoQueryDefInfo` also defines a `Dump` member function in debug builds. You can use `Dump` to dump the contents of a `CDaoQueryDefInfo` object. Class `CDaoDatabase` also supplies member functions for directly accessing all of the properties returned in a `CDaoQueryDefInfo` object, so you'll probably seldom need to call `GetQueryDefInfo`.
+Information retrieved by the [CDaoDatabase::GetQueryDefInfo](../../mfc/reference/cdaodatabase-class.md#getquerydefinfo) member function is stored in a `CDaoQueryDefInfo` structure. Call `GetQueryDefInfo` for the database object in whose QueryDefs collection the querydef object is stored. `CDaoQueryDefInfo` also defines a `Dump` member function in debug builds. You can use `Dump` to dump the contents of a `CDaoQueryDefInfo` object. Class `CDaoDatabase` also supplies member functions for directly accessing all of the properties returned in a `CDaoQueryDefInfo` object, so you'll seldom call `GetQueryDefInfo`.
 
 When you append a new field or parameter object to the Fields or Parameters collection of a querydef object, an exception is thrown if the underlying database doesn't support the data type specified for the new object.
 
