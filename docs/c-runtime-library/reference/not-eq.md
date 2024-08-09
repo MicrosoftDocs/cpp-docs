@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: not_eq"
 title: "not_eq"
-ms.date: "8/7/2024"
+ms.date: 08/09/2024
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
@@ -21,13 +21,12 @@ An alternative spelling for the **`!=`** operator.
 ## Remarks
 
 C++:
-- **`not_eq`** can be used as alternative to **`!=`**. The [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required to use the alternative spelling.
+- **`not_eq`** can be used as alternative to **`!=`**. The [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is required.
+- Including `<iso646.h>` or `<ciso646>` is deprecated. You can use the alternative spelling without including any header files.
 - There's no alternative spelling for **`==`**.
-- Including `<iso646.h>` or `<ciso646>` is deprecated. Use the alternative spelling directly.
 
 C:
 - **`not_eq`** is an alternative spelling for **`!=`**. It is provided as a macro in `<iso646.h>`, which you must `#include`.
-- The alternative spelling isn't treated as a keyword.
 - There's no alternative spelling for **`==`**.
 
 ## Example
@@ -41,9 +40,9 @@ int main( )
 {
    int x = 1, y = 2;
     
-    // The alternative spelling is available in C++ and C
-    // This example is for C++, so no header file is needed to use the alternative spelling
-    // When compiling for C, #include <iso646.h> to use the alternative spelling
+    // not_eq is available in C++ and C
+    // This example is for C++, so no header file is needed to use not_eq
+    // When compiling for C, #include <iso646.h> to use not_eq
     if (x not_eq y)
     {
         std::cout << "Not equal\n";
@@ -57,9 +56,9 @@ Not equal
 
 ## Requirements
 
-**Header:** `<iso646.h>` is only necessary if you are compiling for C. In C++ the alternative spelling is recognized automatically.
+**Header:** `<iso646.h>` is necessary if you are compiling for C.
 
 ## See also
 
-[and_eq](/cpp/c-runtime-library/reference/and-eq?.md)\
-[or_eq](/cpp/c-runtime-library/reference/or-eq?.md)\
+[`and_eq`](/cpp/c-runtime-library/reference/and-eq?.md)\
+[`or_eq`](/cpp/c-runtime-library/reference/or-eq?.md)\
