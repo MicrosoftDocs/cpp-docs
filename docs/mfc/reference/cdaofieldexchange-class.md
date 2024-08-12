@@ -4,13 +4,13 @@ title: "CDaoFieldExchange Class"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoFieldExchange", "AFXDAO/CDaoFieldExchange", "AFXDAO/CDaoFieldExchange::IsValidOperation", "AFXDAO/CDaoFieldExchange::SetFieldType", "AFXDAO/CDaoFieldExchange::m_nOperation", "AFXDAO/CDaoFieldExchange::m_prs"]
 helpviewer_keywords: ["CDaoFieldExchange [MFC], IsValidOperation", "CDaoFieldExchange [MFC], SetFieldType", "CDaoFieldExchange [MFC], m_nOperation", "CDaoFieldExchange [MFC], m_prs"]
-ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
 ---
 # CDaoFieldExchange Class
 
 Supports the DAO record field exchange (DFX) routines used by the DAO database classes.
 
-DAO is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
+> [!NOTE]
+> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -60,7 +60,7 @@ The [IsValidOperation](#isvalidoperation) member function is provided for writin
 
 ## Requirements
 
-**Header:** afxdao.h
+**Header:** `afxdao.h`
 
 ## <a name="isvalidoperation"></a> CDaoFieldExchange::IsValidOperation
 
@@ -89,7 +89,7 @@ Identifies the operation to be performed on the [CDaoRecordset](../../mfc/refere
 The `CDaoFieldExchange` object supplies the context for a number of different DFX operations on the recordset.
 
 > [!NOTE]
-> The PSEUDONULL value described under the MarkForAddNew and SetFieldNull operations below is a value used to mark fields Null. The DAO record field exchange mechanism (DFX) uses this value to determine which fields have been explicitly marked Null. PSEUDONULL is not required for [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) and [COleCurrency](../../mfc/reference/colecurrency-class.md) fields.
+> The `PSEUDONULL` value described under the `MarkForAddNew` and `SetFieldNull` operations below is a value used to mark fields Null. The DAO record field exchange mechanism (DFX) uses this value to determine which fields have been explicitly marked Null. `PSEUDONULL` is not required for [`COleDateTime`](../../atl-mfc-shared/reference/coledatetime-class.md) and [`COleCurrency`](../../mfc/reference/colecurrency-class.md) fields.
 
 Possible values of `m_nOperation` are:
 

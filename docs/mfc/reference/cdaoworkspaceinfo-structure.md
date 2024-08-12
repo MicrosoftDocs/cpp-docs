@@ -4,11 +4,13 @@ title: "CDaoWorkspaceInfo Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CDaoWorkspaceInfo"]
 helpviewer_keywords: ["CDaoWorkspaceInfo structure [MFC]", "DAO (Data Access Objects), Workspaces collection"]
-ms.assetid: a1f4b25e-f9c6-4196-b075-d1df99c54124
 ---
 # CDaoWorkspaceInfo Structure
 
 The `CDaoWorkspaceInfo` structure contains information about a workspace defined for data access objects (DAO) database access.
+
+> [!NOTE]
+> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -40,7 +42,7 @@ Information retrieved by the [CDaoWorkspace::GetWorkspaceInfo](../../mfc/referen
 
 ## Requirements
 
-**Header:** afxdao.h
+**Header:** `afxdao.h`
 
 ## See also
 

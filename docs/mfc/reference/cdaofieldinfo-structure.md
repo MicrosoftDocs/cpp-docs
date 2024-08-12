@@ -4,13 +4,13 @@ title: "CDaoFieldInfo Structure"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoFieldInfo"]
 helpviewer_keywords: ["DAO (Data Access Objects), Fields collection", "CDaoFieldInfo structure [MFC]"]
-ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
 ---
 # CDaoFieldInfo Structure
 
 The `CDaoFieldInfo` structure contains information about a field object defined for data access objects (DAO).
 
-DAO is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
+> [!NOTE]
+> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -146,7 +146,7 @@ Information retrieved by the `GetFieldInfo` member function (of the class that c
 
 ## Requirements
 
-**Header:** afxdao.h
+**Header:** `afxdao.h`
 
 ## See also
 

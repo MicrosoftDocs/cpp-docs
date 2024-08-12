@@ -4,11 +4,13 @@ title: "CDaoRelationInfo Structure"
 ms.date: "06/25/2018"
 f1_keywords: ["CDaoRelationInfo"]
 helpviewer_keywords: ["DAO (Data Access Objects), Relations collection", "CDaoRelationInfo structure [MFC]"]
-ms.assetid: 92dda090-fe72-4090-84ec-429498a48aad
 ---
 # CDaoRelationInfo Structure
 
-The `CDaoRelationInfo` structure contains information about a relation defined between fields of two tables in a [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object.
+The `CDaoRelationInfo` structure contains information about a relation defined between fields of two tables in a [`CDaoDatabase`](../../mfc/reference/cdaodatabase-class.md) object.
+
+> [!NOTE]
+> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -71,7 +73,7 @@ Information retrieved by the [CDaoDatabase::GetRelationInfo](../../mfc/reference
 
 ## Requirements
 
-**Header:** afxdao.h
+**Header:** `afxdao.h`
 
 ## See also
 
