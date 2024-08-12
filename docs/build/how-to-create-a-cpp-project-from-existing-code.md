@@ -18,8 +18,8 @@ The following instructions assume that Visual Studio is running and is past the 
 1. On the **File** menu, select **New** > **Project From Existing Code**.
 1. The **Create New Project from Existing Code Files** wizard opens. Choose what type of project to create from the dropdown: **Visual C++**, **Visual Basic**, or **C#**. Then choose **Next** to continue.
 
-    :::image type="complex" source="./media/create-from-existing-code-wizard.png" alt-text="Create New Project from Existing Code dialog.":::
-    The project type dropdown shows the optoins Visual C++ (which is selected), Visual Basic, and C#.
+    :::image type="complex" source="./media/create-from-existing-code-wizard.png" alt-text="Screenshot showing the Create New Project from Existing Code dialog.":::
+    The project type dropdown shows the options Visual C++ (which is selected), Visual Basic, and C#.
     :::image-end:::
 1. Specify your project location, the directory for your source files, and the kinds of files the wizard imports into the new project. Choose **Next** to continue.
 
