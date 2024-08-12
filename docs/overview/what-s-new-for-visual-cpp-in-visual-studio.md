@@ -22,7 +22,6 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 
 | For more information about | See |
 |---|---|
-| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.11](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-11/) |
 | Standard Library (STL) merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.11](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1711) |
 | New features in the Visual Studio 17.11 IDE |[Visual Studio 2022 version 17.11 Release Notes](/visualstudio/releases/2022/release-notes) |
 | C++ language conformance improvements in Visual Studio 2022 17.11 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.11](cpp-conformance-improvements.md#improvements_1711) |

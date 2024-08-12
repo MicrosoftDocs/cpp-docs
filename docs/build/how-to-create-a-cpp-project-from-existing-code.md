@@ -13,13 +13,14 @@ Porting existing code files into a C++ project enables the use of native MSBuild
 
 ### To create a C++ project from existing code
 
-The following instruction assume that you have loaded Visual Studio and are past the start page. If you are at the Visual Studio start page, choose **Continue without code** to open the IDE.
+The following instructions assume that you have loaded Visual Studio and are past the start page. If you are at the Visual Studio start page, choose **Continue without code** to open the IDE.
 
 1. On the **File** menu, select **New** > **Project From Existing Code**.
-1. The **Create New Project from Existing Code Files** wizard opens. Choose what type of project to create from the dropdown: Visual C++, Visual Basic, or C#. Choose **Next** to continue.
+1. The **Create New Project from Existing Code Files** wizard opens. Choose what type of project to create from the dropdown: **Visual C++**, **Visual Basic**, or **C#**. Then choose **Next** to continue.
 
-    ![Create New Project from Existing Code dialog, showing the Start page.](media/start.png) 
-
+    ::image type="complex" source="./media/create-from-existing-code-wizard.png" alt-text="Create New Project from Existing Code dialog.":::
+    The project type dropdown shows the optoins Visual C++ (which is selected), Visual Basic, and C#.
+    :::image-end:::
 1. Specify your project location, the directory for your source files, and the kinds of files the wizard imports into the new project. Choose **Next** to continue.
 
     | Setting | Description |
@@ -62,7 +63,8 @@ The following instruction assume that you have loaded Visual Studio and are past
     > [!NOTE]
     > The **Build**, **Rebuild**, **Clean** command line, and **Output (for debugging)** settings are only enabled if the **Use external build system** option is selected on the **Specify Project Settings** page.
 
-1. Specify the Release configuration settings to use, these settings are the same as the Debug configuration settings. Choose **Finish** to generate the new project.
+1. Specify the Release configuration settings to use, these settings are the same as the Debug configuration settings.
+1. Choose **Finish** to generate the new project.
 
     > [!NOTE]
     > Here you can check **Same as Debug configuration** to specify that the wizard will generate Release configuration project settings identical to Debug configuration project settings. This option is checked by default. All other options on this page are inactive unless you uncheck this box.
