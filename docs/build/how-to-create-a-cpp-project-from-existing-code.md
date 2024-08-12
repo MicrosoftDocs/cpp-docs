@@ -1,10 +1,9 @@
 ---
 description: "Learn more about: How to: Create a C++ Project from Existing Code"
 title: "How to: Create a C++ Project from Existing Code"
-ms.date: "05/06/2019"
+ms.date: 08/12/2024
 helpviewer_keywords: ["C++, creating projects from existing code", "Create New Project From Existing Code Files Wizard, project settings"]
 f1_keywords: ["vc.appwiz.importwiz.location", "vc.appwiz.importwiz.appsettings", "vc.appwiz.importwiz.debugsettings", "vc.appwiz.importwiz.releasesettings"]
-ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
 ---
 # How to: Create a C++ Project from Existing Code
 
@@ -14,7 +13,12 @@ Porting existing code files into a C++ project enables the use of native MSBuild
 
 ### To create a C++ project from existing code
 
+The following instruction assume that you have loaded Visual Studio and are past the start page. If you are at the Visual Studio start page, choose **Continue without code** to open the IDE.
+
 1. On the **File** menu, select **New** > **Project From Existing Code**.
+1. The **Create New Project from Existing Code Files** wizard opens. Choose what type of project to create from the dropdown: Visual C++, Visual Basic, or C#. Choose **Next** to continue.
+
+    ![Create New Project from Existing Code dialog, showing the Start page.](media/start.png) 
 
 1. Specify your project location, the directory for your source files, and the kinds of files the wizard imports into the new project. Choose **Next** to continue.
 
