@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 06/06/2024
+ms.date: 08/08/2024
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -14,6 +14,23 @@ This document lists the changes in Visual Studio 2022.
 For changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).\
 For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).\
 For changes in older versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+
+## <a name="improvements_1711"></a> Conformance improvements in Visual Studio 2022 version 17.11
+
+Visual Studio 2022 version 17.11 has the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.11](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1711).
+
+### Print blank lines with `println`
+
+Per [P3142R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3142r0.pdf), it's now easy to generate a blank line with `println`. This feature is available when compiling with `/std:c++latest`.
+Before this change, you wrote: `println("");` Now you write: `println();`.
+- `println();` is equivalent to `println(stdout);`
+- `println(FILE* stream);` is equivalent to `println(stream, "\n");`
+
+### Implemented `range_formatter`
+
+Per [P2286R8](https://wg21.link/P2286R8), `range_formatter` is now implemented. This feature is available when compiling with `/std:c++latest`.
 
 ## <a name="improvements_1710"></a> Conformance improvements in Visual Studio 2022 version 17.10
 
