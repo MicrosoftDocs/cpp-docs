@@ -14,10 +14,11 @@ Enable one or more Arm A-Profile architecture features for an ARM64 extension as
 ## Arguments
 To enable one or more features the targeted ARM64 extension supports, specify one or more of the following feature arguments:
 
-| Feature argument | Feature identifier | Optional from | Enabled by default | Description |
-|--|--|--|--|--|
-|**`lse`**   | `FEAT_LSE` | Armv8.0  | Armv8.1 | Large System Extensions. |
-|**`rcpc`**  | `FEAT_LRCPC` | Armv8.2 | Armv8.3 | Load-Acquire RCpc instructions. |
+| Feature argument | Feature identifier | Optional from | Enabled by default | Description | Supported in version
+|--|--|--|--|--|--|
+|**`lse`**   | `FEAT_LSE` | Armv8.0  | Armv8.1 | Large System Extensions. | Visual Studio 2022 17.10
+|**`rcpc`**  | `FEAT_LRCPC` | Armv8.2 | Armv8.3 | Load-Acquire RCpc instructions. | Visual Studio 2022 17.10
+|**`rcpc2`**  | `FEAT_LRCPC2` | Armv8.2 | Armv8.4 | Load-Acquire RCpc instructions v2. | Visual Studio 2022 17.11
 
 ## Remarks
 
