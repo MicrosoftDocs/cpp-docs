@@ -9,7 +9,7 @@ helpviewer_keywords: ["ConnectionManager program"]
 
 ::: moniker range="<=msvc-150"
 
-ConnectionManager.exe is available in Visual Studio 2019 version 16.5 and later.
+`ConnectionManager.exe` is available in Visual Studio 2019 version 16.5 and later.
 
 ::: moniker-end
 
@@ -17,9 +17,9 @@ ConnectionManager.exe is available in Visual Studio 2019 version 16.5 and later.
 
 ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, use it to set up Visual Studio for continuous integration. You can use it in a Developer Command Prompt window. For more information about the Developer Command Prompt, see [Use the Microsoft C++ toolset from the command line](../build/building-on-the-command-line.md).
 
-ConnectionManager.exe is available in Visual Studio 2019 version 16.5 and later. It's part of the **Linux development with C++** workload in the Visual Studio Installer. It's also installed automatically when you choose the **Connection Manager** component in the installer. It's installed in *%VCIDEInstallDir%\\Linux\\bin\\ConnectionManagerExe\\ConnectionManager.exe*.
+`ConnectionManager.exe` is available in Visual Studio 2019 version 16.5 and later. It's part of the **Linux development with C++** workload in the Visual Studio Installer. It's also installed automatically when you choose the **Connection Manager** component in the installer. It's installed in `%VCIDEInstallDir%\Linux\bin\ConnectionManagerExe\ConnectionManager.exe`.
 
-The functionality of ConnectionManager.exe is also available in Visual Studio. To manage remote development connections in the IDE, on the menu bar, choose **Tools** > **Options** to open the Options dialog. In the Options dialog, select **Cross Platform** > **Connection Manager**.
+The functionality of `ConnectionManager.exe` is also available in Visual Studio. To manage remote development connections in the IDE, on the menu bar, choose **Tools** > **Options** to open the Options dialog. In the Options dialog, select **Cross Platform** > **Connection Manager**.
 
 ## Syntax
 
@@ -30,6 +30,8 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 - **`add`** *user\@host* \[**`--port`** *port*] \[**`--password`** *password*] \[**`--privatekey`** *privatekey_file*]
 
   Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You'll be prompted to enter a password.) Use both **-`-password`** and **`--privatekey`** to specify a password for a private key.
+
+  Username/password is an insecure pattern. Consider using a private key to authenticate which is generally more secure. Versions of Visual Studio before 17.10 support EC, RSA, and DSA keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported. To create a key pair compatible with the connection manager use the command `ssh-keygen -m pem -t ecdsa -f <key-name>`. If you use `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key will not be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`.
 
 - **`clean`**
 
@@ -57,7 +59,7 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 - **`remove-all`**
 
   Removes all stored connections.
-    
+
 - **`update`** \[*default* \| *all* \| *connection_id* \| *user\@host* \[**`--port`** *port*]] \[**`--previous`**] [**`--fingerprint`**]
 
   Added in Visual Studio 16.10. Updates the host key fingerprint of the specified connection(s).
