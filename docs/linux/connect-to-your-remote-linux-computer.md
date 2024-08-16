@@ -88,7 +88,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
    You can't click the **Connect** button until all the required fields are completed and the port is set to an integer between 1 and 65535.
 
-   You can use either a password or a key file and passphrase for authentication. Key files are more secure. If you already have a key pair, it's possible to reuse it.
+   You can use either a password or a key file and passphrase for authentication. Key files are more secure than username/password. If you already have a key pair, it's possible to reuse it.
 
    Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported. To create a key pair compatible with the connection manager use the command:
    `ssh-keygen -m pem -t ecdsa -f <key-name>`
