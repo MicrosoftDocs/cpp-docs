@@ -31,7 +31,11 @@ The functionality of `ConnectionManager.exe` is also available in Visual Studio.
 
   Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You are prompted to enter a password.) Use both **-`-password`** and **`--privatekey`** to specify a password for a private key.
 
-  Username/password is an insecure pattern. Consider using a private key to authenticate which is generally more secure. Versions of Visual Studio before 17.10 support EC, RSA, and DSA keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported. To create a key pair compatible with the connection manager use the command `ssh-keygen -m pem -t ecdsa -f <key-name>`. If you use `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key won't be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`.
+  Username/password is an insecure pattern. Consider using a private key to authenticate, which is generally more secure.
+
+  Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported.
+
+  To create a key pair compatible with the connection manager, use the command `ssh-keygen -m pem -t ecdsa -f <key-name>`. If you use `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key won't be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`.
 
 - **`clean`**
 
