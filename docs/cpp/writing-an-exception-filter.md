@@ -28,7 +28,7 @@ int main() {
 void HandleOverflow() {
     // Gracefully recover
 }
-int Eval_Exception ( int n_except ) {
+int Eval_Exception(int n_except) {
     if (
         n_except != STATUS_INTEGER_OVERFLOW &&
         n_except != STATUS_FLOAT_OVERFLOW
