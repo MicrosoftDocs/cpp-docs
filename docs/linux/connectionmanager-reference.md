@@ -31,7 +31,7 @@ The functionality of `ConnectionManager.exe` is also available in Visual Studio.
 
   Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You are prompted to enter a password.) Use both **-`-password`** and **`--privatekey`** to specify a password for a private key.
 
-  You can use use username/password to authenticate, but you can also use a private key which is generally more secure. Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported.
+  You can use either a password or a key file and passphrase for authentication. Key files are more secure. If you already have a key pair, it's possible to reuse it. Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported.
 
   To create a key pair compatible with the connection manager, use the command `ssh-keygen -m pem -t ecdsa -f <key-name>`. If you use `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key won't be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`.
 
@@ -139,7 +139,7 @@ ConnectionManager.exe remove 1975957870
 | `port` | The port used for the connection.<br/>Change the port for the specified connection: `ConnectionManager.exe modify -21212121 --property port=22`|
 | `shell` | The preferred shell to use on the remote system. Supported shells are `sh, csh, bash, tcsh, ksh, zsh, dash`<br/>To set the preferred shell to be zsh for the remote machine on the specified connection: `ConnectionManager.exe modify -21212121 --property shell=zsh`<br/>If the shell found on the Linux system isn't supported, then **`sh`** is used for all commands. |
 | `systemID` | The remote system type, such as `"OSX"`, `"Ubuntu"`. |
-| `timeout` | The connection timeout in milliseconds. Change the timeout for the specified connection with: `ConnectionManager.exe modify -21212121 --property timeout=100`
+| `timeout` | The connection timeout in milliseconds. Change the timeout for the specified connection with: `ConnectionManager.exe modify -21212121 --property timeout=100` |
 | `username` | The name of the user logged into the remote computer.<br/>To add a connection for a user named `"user"` on localhost: `ConnectionManager.exe add user@127.0.0.1`|
 
 ## See also
