@@ -29,9 +29,9 @@ The functionality of `ConnectionManager.exe` is also available in Visual Studio.
 
 - **`add`** *user\@host* \[**`--port`** *port*] \[**`--password`** *password*] \[**`--privatekey`** *privatekey_file*]
 
-  Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You are prompted to enter a password.) Use both **-`-password`** and **`--privatekey`** to specify a passphrase for a private key file.
+  Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You are prompted to enter a password.)
 
-  You can use either a password or a key file and passphrase for authentication. Key files are more secure than username/password. If you already have a key pair, it's possible to reuse it.
+  You can use either a password or a key file and passphrase for authentication. Key files are more secure than username/password. If you already have a key pair, it's possible to reuse it. Use both **-`-password`** and **`--privatekey`** to specify a passphrase for a private key file.
 
   Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported.
 
