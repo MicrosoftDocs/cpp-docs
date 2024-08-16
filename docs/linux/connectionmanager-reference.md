@@ -52,7 +52,7 @@ The functionality of `ConnectionManager.exe` is also available in Visual Studio.
   Defines or modifies a property on a connection.\
   If *value* is empty, then the property *key* is deleted.\
   If authentication fails, no changes will be made.\
-  If no connection is specified (what is meant by *default*), the user's default remote connection is used.
+  If no connection is specified, the user's default remote connection is used.
 
 - **`remove`** \[*connection_id* \| *user\@host* \[**`--port`** *port*]]
 
