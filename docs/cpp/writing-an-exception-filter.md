@@ -16,25 +16,29 @@ For example, the following code uses a function call in the *filter* expression:
 ```cpp
 // exceptions_Writing_an_Exception_Filter.cpp
 #include <windows.h>
+int Eval_Exception(int);
 int main() {
-   int Eval_Exception( int );
-
-   __try {}
-
-   __except ( Eval_Exception( GetExceptionCode( ))) {
-      ;
-   }
-
+    __try {
+        ;
+    }
+    __except (Eval_Exception(GetExceptionCode())) {
+        ;
+    }
 }
-void ResetVars( int ) {}
-int Eval_Exception ( int n_except ) {
-   if ( n_except != STATUS_INTEGER_OVERFLOW &&
-      n_except != STATUS_FLOAT_OVERFLOW )   // Pass on most exceptions
-   return EXCEPTION_CONTINUE_SEARCH;
-
-   // Execute some code to clean up problem
-   ResetVars( 0 );   // initializes data to 0
-   return EXCEPTION_CONTINUE_EXECUTION;
+void HandleOverflow() {
+    // Gracefully recover
+}
+int Eval_Exception(int n_except) {
+    if (
+        n_except != STATUS_INTEGER_OVERFLOW &&
+        n_except != STATUS_FLOAT_OVERFLOW
+    ) {
+        // Pass on most exceptions
+        return EXCEPTION_CONTINUE_SEARCH;
+    }
+    // Execute some code to clean up problem
+    HandleOverflow();
+    return EXCEPTION_CONTINUE_EXECUTION;
 }
 ```
 
@@ -42,7 +46,7 @@ It's a good idea to use a function call in the *filter* expression whenever *fil
 
 Note the use of [`GetExceptionCode`](/windows/win32/Debug/getexceptioncode) to determine the exception. This function must be called inside the filter expression of the **`__except`** statement. `Eval_Exception` can't call `GetExceptionCode`, but it must have the exception code passed to it.
 
-This handler passes control to another handler unless the exception is an integer or floating-point overflow. If it is, the handler calls a function (`ResetVars` is only an example, not an API function) to reset some global variables. The **`__except`** statement block, which in this example is empty, can never be executed because `Eval_Exception` never returns `EXCEPTION_EXECUTE_HANDLER` (1).
+This handler passes control to another handler unless the exception is an integer or floating-point overflow. If it is, the handler calls a function (`HandleOverflow` is only an example, not an API function) to appropriately try to recover from the exception. The **`__except`** statement block, which in this example is empty, can never be executed because `Eval_Exception` never returns `EXCEPTION_EXECUTE_HANDLER` (1).
 
 Using a function call is a good general-purpose technique for dealing with complex filter expressions. Two other C language features that are useful are:
 
@@ -53,13 +57,13 @@ Using a function call is a good general-purpose technique for dealing with compl
 The conditional operator is frequently useful here. It can be used to check for a specific return code and then return one of two different values. For example, the filter in the following code recognizes the exception only if the exception is `STATUS_INTEGER_OVERFLOW`:
 
 ```cpp
-__except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ? 1 : 0 ) {
+__except (GetExceptionCode() == STATUS_INTEGER_OVERFLOW ? 1 : 0)
 ```
 
 The purpose of the conditional operator in this case is mainly to provide clarity, because the following code produces the same results:
 
 ```cpp
-__except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ) {
+__except (GetExceptionCode() == STATUS_INTEGER_OVERFLOW)
 ```
 
 The conditional operator is more useful in situations where you might want the filter to evaluate to -1, `EXCEPTION_CONTINUE_EXECUTION`.
@@ -67,7 +71,7 @@ The conditional operator is more useful in situations where you might want the f
 The comma operator lets you execute multiple expressions in sequence. It then returns the value of the last expression. For example, the following code stores the exception code in a variable and then tests it:
 
 ```cpp
-__except( nCode = GetExceptionCode(), nCode == STATUS_INTEGER_OVERFLOW )
+__except (nCode = GetExceptionCode(), nCode == STATUS_INTEGER_OVERFLOW)
 ```
 
 ## See also
