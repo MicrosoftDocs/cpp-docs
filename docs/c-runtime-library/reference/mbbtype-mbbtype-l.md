@@ -50,9 +50,9 @@ The locale to use.
 |---|---|---|---|
 | Any value except 1 | Valid single byte or lead byte | `_MBC_SINGLE` (0) | Single byte (0x20 - 0x7E, 0xA1 - 0xDF) |
 | Any value except 1 | Valid single byte or lead byte | `_MBC_LEAD` (1) | Lead byte of multibyte character (0x81 - 0x9F, 0xE0 - 0xFC) |
-| Any value except 1 | Valid single-byte or lead byte | `_MBC_ILLEGAL`<br /><br /> (-1) | Invalid character (any value except 0x20 - 0x7E, 0xA1 - 0xDF, 0x81 - 0x9F, 0xE0 - 0xFC |
+| Any value except 1 | Valid single-byte or lead byte | `_MBC_ILLEGAL` (-1) | Invalid character: not single or lead (0x00 - 0x1F, 0x7F, 0x80, 0xA0, 0xFD, 0xFE, 0xFF) |
 | 1 | Valid trail byte | `_MBC_TRAIL` (2) | Trailing byte of multibyte character (0x40 - 0x7E, 0x80 - 0xFC) |
-| 1 | Valid trail byte | `_MBC_ILLEGAL`<br /><br /> (-1) | Invalid character (any value except 0x20 - 0x7E, 0xA1 - 0xDF, 0x81 - 0x9F, 0xE0 - 0xFC |
+| 1 | Valid trail byte | `_MBC_ILLEGAL` (-1) | Invalid character: not trailing (0x00 - 0x3F, 0x7F, 0xFD, 0xFE, 0xFF) |
 
 ## Remarks
 
