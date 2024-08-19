@@ -85,14 +85,14 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    | **Password** | Password for the entered user name |
    | **Private key file** | Private key file created for ssh connection |
    | **Passphrase** | Passphrase used with private key selected above |
-   
-   You can't click the **Connect** button until all the required fields are completed and the port is set to an integer between 1 and 65535.
-   
-   You can use either a password or a key file and passphrase for authentication. For many development scenarios, password authentication is sufficient, but key files are more secure. If you already have a key pair, it's possible to reuse it.
 
-   Versions of Visual Studio before 17.10 support EC, RSA, and DSA keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported. To create a key pair compatible with the connection manager use the command:
+   You can't click the **Connect** button until all the required fields are completed and the port is set to an integer between 1 and 65535.
+
+   You can use either a password or a key file and passphrase for authentication. Key files are more secure than username/password. If you already have a key pair, it's possible to reuse it.
+
+   Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, RSA and DSA keys are no longer supported in VS 17.10 and later. Only EC keys are currently supported. To create a key pair compatible with the connection manager use the command:
    `ssh-keygen -m pem -t ecdsa -f <key-name>`
-   
+
    > [!NOTE]
    > If using `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key will not be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`.
 
