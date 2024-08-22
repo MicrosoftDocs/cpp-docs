@@ -635,6 +635,8 @@ items:
     href: ../code-quality/c26831.md
   - name: " Warning C26838"
     href: c26838.md
+  - name: Warning C26839
+    href: c26839.md
   - name: Warning C26832
     href: ../code-quality/c26832.md
   - name: Warning C26833
