@@ -63,7 +63,7 @@ Depending on the MSVC compiler version or update level, C++17, C++20, or propose
 
 In versions of Visual Studio 2019 before version 16.11, **`/std:c++latest`** is required to enable all the compiler and standard library features of C++20.
 
-Since Visual Studio 2019 version 16.11, the **`/std:c++latest`** option has enabled the standard conformance mode provided by [**`/permissive-`**](./permissive-standards-conformance.md) unless explicitly overriden with **`/permissive`**.
+Since Visual Studio 2019 version 16.8, the **`/std:c++latest`** option has enabled the standard conformance mode provided by [**`/permissive-`**](./permissive-standards-conformance.md) unless explicitly overriden with **`/permissive`**.
 
 For a list of supported language and library features, see [What's New for C++ in Visual Studio](../../overview/what-s-new-for-visual-cpp-in-visual-studio.md).
 
