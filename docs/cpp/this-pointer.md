@@ -147,7 +147,7 @@ The **`this`** pointer can't be reassigned. The **`const`** or **`volatile`** qu
 | `void Func() volatile` | `volatile myClass *` |
 | `void Func() const volatile` | `const volatile myClass *` |
 
-The following table explains more about `const` and `volatile``.
+The following table explains more about `const` and `volatile`.
 
 ### Semantics of `this` modifiers
 
