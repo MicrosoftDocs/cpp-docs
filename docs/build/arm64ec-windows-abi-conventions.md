@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Overview of ARM64EC ABI conventions"
 title: "Overview of ARM64EC ABI conventions"
+description: "Learn more about: Overview of ARM64EC ABI conventions"
 ms.date: "06/03/2022"
 ---
 # Overview of ARM64EC ABI conventions
@@ -73,7 +73,7 @@ Special helper routines like `__chkstk_arm64ec` use custom calling conventions a
 
 <sup>2</sup> The ARM64EC carry flag `C` is the inverse of the x64 carry flag `CF` for subtraction operations. There's no special handling, because the flag is volatile and is therefore trashed when transitioning between (ARM64EC and x64) functions.
 
-## <a name="register-mapping-for-vector-registers"/> Register mapping for vector registers
+## <a name="register-mapping-for-vector-registers"></a> Register mapping for vector registers
 
 | ARM64EC register | x64 register | ARM64EC calling convention | ARM64 calling convention | x64 calling convention |
 |--|--|--|--|--|
