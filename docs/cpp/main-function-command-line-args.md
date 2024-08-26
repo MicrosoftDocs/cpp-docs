@@ -169,7 +169,7 @@ Command-line arguments are handled by an internal routine in the runtime startup
 
 For more information on runtime startup linker options, see [Link options](../c-runtime-library/link-options.md).
 
-## <a name="customize"/> Customize C++ command-line processing
+## <a name="customize"></a> Customize C++ command-line processing
 
 If your program doesn't take command-line arguments, you can suppress the command-line processing routine to save a small amount of space. To suppress its use, include the *`noarg.obj`* file (for both `main` and `wmain`) in your **`/link`** compiler options or your **`LINK`** command line.
 
