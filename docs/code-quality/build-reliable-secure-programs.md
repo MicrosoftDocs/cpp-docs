@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Building reliable and secure C++ programs by applying NISTIR 8397 guidelines."
 title: Build reliable and secure C++ programs
+description: "Learn more about: Building reliable and secure C++ programs by applying NISTIR 8397 guidelines."
 ms.date: 09/28/2023
 ms.topic: "conceptual"
 ---
@@ -281,7 +281,7 @@ Compiler settings should opt into sensitive information discovery prevention. In
 
 At the software level, confidential data might be transmitted to attackers if unexpectedly leaked. Failure to zero-initialize buffers and other buffer misuse might leak private confidential data to attackers that call trusted API. This class of problem best handled by enabling extra static analysis and using secure resource containers as described previously.
 
-- [`/Qspectre` - Mitigate speculative execution side-channel attacks](https://aka.ms/SpectreMitigations) - Inserts barrier instructions that help prevent the disclosure of sensitive data produced by speculative execution. These mitigations should be enabled for code that stores sensitive data in memory and operates across a trust boundary. Microsoft always recommends measuring performance impact against appropriate benchmarks when enabling Spectre-mitigations due to the possibility of introducing runtime checks in performance-critical blocks or loops. These code paths can disable mitigations via the [`spectre(nomitigation)`](../cpp/spectre.md) `declspec` modifier. Projects that enable `/Qspectre`` should also link to libraries that are also compiled with these mitigations, including the Microsoft runtime libraries.
+- [`/Qspectre` - Mitigate speculative execution side-channel attacks](https://aka.ms/SpectreMitigations) - Inserts barrier instructions that help prevent the disclosure of sensitive data produced by speculative execution. These mitigations should be enabled for code that stores sensitive data in memory and operates across a trust boundary. Microsoft always recommends measuring performance impact against appropriate benchmarks when enabling Spectre-mitigations due to the possibility of introducing runtime checks in performance-critical blocks or loops. These code paths can disable mitigations via the [`spectre(nomitigation)`](../cpp/spectre.md) `declspec` modifier. Projects that enable `/Qspectre` should also link to libraries that are also compiled with these mitigations, including the Microsoft runtime libraries.
 
 ## 2.6 Black box test cases
 

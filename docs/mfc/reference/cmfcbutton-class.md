@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMFCButton Class"
 title: "CMFCButton Class"
+description: "Learn more about: CMFCButton Class"
 ms.date: "08/28/2018"
 f1_keywords: ["CMFCButton", "AFXBUTTON/CMFCButton", "AFXBUTTON/CMFCButton::CleanUp", "AFXBUTTON/CMFCButton::EnableFullTextTooltip", "AFXBUTTON/CMFCButton::EnableMenuFont", "AFXBUTTON/CMFCButton::EnableWindowsTheming", "AFXBUTTON/CMFCButton::GetToolTipCtrl", "AFXBUTTON/CMFCButton::IsAutoCheck", "AFXBUTTON/CMFCButton::IsAutorepeatCommandMode", "AFXBUTTON/CMFCButton::IsCheckBox", "AFXBUTTON/CMFCButton::IsChecked", "AFXBUTTON/CMFCButton::IsHighlighted", "AFXBUTTON/CMFCButton::IsPressed", "AFXBUTTON/CMFCButton::IsPushed", "AFXBUTTON/CMFCButton::IsRadioButton", "AFXBUTTON/CMFCButton::IsWindowsThemingEnabled", "AFXBUTTON/CMFCButton::SetAutorepeatMode", "AFXBUTTON/CMFCButton::SetCheckedImage", "AFXBUTTON/CMFCButton::SetFaceColor", "AFXBUTTON/CMFCButton::SetImage", "AFXBUTTON/CMFCButton::SetMouseCursor", "AFXBUTTON/CMFCButton::SetMouseCursorHand", "AFXBUTTON/CMFCButton::SetStdImage", "AFXBUTTON/CMFCButton::SetTextColor", "AFXBUTTON/CMFCButton::SetTextHotColor", "AFXBUTTON/CMFCButton::SetTooltip", "AFXBUTTON/CMFCButton::SizeToContent", "AFXBUTTON/CMFCButton::OnDraw", "AFXBUTTON/CMFCButton::OnDrawBorder", "AFXBUTTON/CMFCButton::OnDrawFocusRect", "AFXBUTTON/CMFCButton::OnDrawText", "AFXBUTTON/CMFCButton::OnFillBackground", "AFXBUTTON/CMFCButton::SelectFont", "AFXBUTTON/CMFCButton::m_bDrawFocus", "AFXBUTTON/CMFCButton::m_bHighlightChecked", "AFXBUTTON/CMFCButton::m_bRightImage", "AFXBUTTON/CMFCButton::m_bTransparent", "AFXBUTTON/CMFCButton::m_nAlignStyle", "AFXBUTTON/CMFCButton::m_nFlatStyle"]
 helpviewer_keywords: ["CMFCButton [MFC], CleanUp", "CMFCButton [MFC], EnableFullTextTooltip", "CMFCButton [MFC], EnableMenuFont", "CMFCButton [MFC], EnableWindowsTheming", "CMFCButton [MFC], GetToolTipCtrl", "CMFCButton [MFC], IsAutoCheck", "CMFCButton [MFC], IsAutorepeatCommandMode", "CMFCButton [MFC], IsCheckBox", "CMFCButton [MFC], IsChecked", "CMFCButton [MFC], IsHighlighted", "CMFCButton [MFC], IsPressed", "CMFCButton [MFC], IsPushed", "CMFCButton [MFC], IsRadioButton", "CMFCButton [MFC], IsWindowsThemingEnabled", "CMFCButton [MFC], SetAutorepeatMode", "CMFCButton [MFC], SetCheckedImage", "CMFCButton [MFC], SetFaceColor", "CMFCButton [MFC], SetImage", "CMFCButton [MFC], SetMouseCursor", "CMFCButton [MFC], SetMouseCursorHand", "CMFCButton [MFC], SetStdImage", "CMFCButton [MFC], SetTextColor", "CMFCButton [MFC], SetTextHotColor", "CMFCButton [MFC], SetTooltip", "CMFCButton [MFC], SizeToContent", "CMFCButton [MFC], OnDraw", "CMFCButton [MFC], OnDrawBorder", "CMFCButton [MFC], OnDrawFocusRect", "CMFCButton [MFC], OnDrawText", "CMFCButton [MFC], OnFillBackground", "CMFCButton [MFC], SelectFont", "CMFCButton [MFC], m_bDrawFocus", "CMFCButton [MFC], m_bHighlightChecked", "CMFCButton [MFC], m_bRightImage", "CMFCButton [MFC], m_bTransparent", "CMFCButton [MFC], m_nAlignStyle", "CMFCButton [MFC], m_nFlatStyle"]
-ms.assetid: 4b32f57c-7a53-4734-afb9-d47e3359f62e
 ---
 # `CMFCButton` Class
 
@@ -328,7 +327,7 @@ static BOOL IsWindowsThemingEnabled();
 
 `TRUE` if the style of the button border corresponds to the current Windows theme; otherwise, `FALSE`.
 
-## <a name="m_bDontUseWinXPTheme"/> `CMFCButton::m_bDontUseWinXPTheme`
+## <a name="m_bDontUseWinXPTheme"></a> `CMFCButton::m_bDontUseWinXPTheme`
 
 Specifies whether to use Windows XP themes when drawing the button.
 
@@ -919,8 +918,8 @@ By default, this method calculates a new size that includes a horizontal margin 
 
 ## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[`CMFCLinkCtrl` Class](../../mfc/reference/cmfclinkctrl-class.md)<br/>
-[`CMFCColorButton` Class](../../mfc/reference/cmfccolorbutton-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
+[Classes](../../mfc/reference/mfc-classes.md)\
+[`CMFCLinkCtrl` Class](../../mfc/reference/cmfclinkctrl-class.md)\
+[`CMFCColorButton` Class](../../mfc/reference/cmfccolorbutton-class.md)\
 [`CMFCMenuButton` Class](../../mfc/reference/cmfcmenubutton-class.md)
