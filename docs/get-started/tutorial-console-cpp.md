@@ -360,7 +360,7 @@ Let's handle division by zero more gracefully so that it's easier for the user t
             cin >> x >> oper >> y;
             if (oper == '/' && y == 0)
             {
-                cout << "Attempted to divide by zero!" << endl;
+                cout << "Math error: Attempted to divide by zero!" << endl;
                 continue;
             }
             else
