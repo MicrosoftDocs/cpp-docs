@@ -152,7 +152,7 @@ endif()
 Visual Studio allows you to debug a process running on a remote Linux system or WSL and debug it with the GDB debugger. To get started, select **Debug** > **Attach to Process...**, set the **Connection type** to **SSH**, and select your **Connection target** from the list of connections in the Connection Manager. Select a process from the list of available processes and press **Attach**. GDB must be installed on your Linux machine. For more information on SSH connections, see the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md)
 
 :::image type="complex" source="media/attach-to-process.png" alt-text="Screenshot of the Attach to Process menu in Visual Studio.":::
-The following options are available on the dialog: Connection type (set to SSH), the connection target (something like demo@ an ip number), and a list of available processes you can attach to."
+The following options are available on the dialog: Connection type (set to SSH), the connection target (set to demo@ 172. 20. 60. 6), and a list of available processes you can attach to."
 :::image-end:::
 
 ## <a name="cmake-partial-activation"></a> CMake partial activation
