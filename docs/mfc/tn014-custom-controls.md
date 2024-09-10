@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: TN014: Custom Controls"
 title: "TN014: Custom Controls"
+description: "Learn more about: TN014: Custom Controls"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.controls"]
 helpviewer_keywords: ["TN014", "custom controls [MFC]"]
-ms.assetid: 1917a498-f643-457c-b570-9a0af7dbf7bb
 ---
 # TN014: Custom Controls
 
@@ -118,7 +117,7 @@ There are three common ways these are related:
 
 - `CWnd` is attached to an existing `HWND` and you can modify the behavior in a derived class. This is called dynamic subclassing because we are changing the behavior, and therefore the class, of a Windows object at run time.
 
-You can achieve dynamic subclassing by using the methods [CWnd::SubclassWindow](../mfc/reference/cwnd-class.md#subclasswindow) and[CWnd::SubclassDlgItem](../mfc/reference/cwnd-class.md#subclassdlgitem).
+You can achieve dynamic subclassing by using the methods [CWnd::SubclassWindow](../mfc/reference/cwnd-class.md#subclasswindow) and [CWnd::SubclassDlgItem](../mfc/reference/cwnd-class.md#subclassdlgitem).
 
 Both routines attach a `CWnd` object to an existing `HWND`. `SubclassWindow` takes the `HWND` directly. `SubclassDlgItem` is a helper function that takes a control ID and the parent window. `SubclassDlgItem` is designed for attaching C++ objects to dialog controls created from a dialog template.
 
@@ -126,5 +125,5 @@ See the [CTRLTEST](../overview/visual-cpp-samples.md) example for several exampl
 
 ## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
+[Technical Notes by Number](../mfc/technical-notes-by-number.md)\
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
