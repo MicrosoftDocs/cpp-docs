@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Collections (C++/CX)"
 title: "Collections (C++/CX)"
+description: "Learn more about: Collections (C++/CX)"
 ms.date: "11/19/2018"
-ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
 ---
 # Collections (C++/CX)
 
@@ -16,7 +15,7 @@ The Windows Runtime defines the interfaces for collections and related types, an
 
 - The [Platform::Collections::Map class](../cppcx/platform-collections-map-class.md) resembles the [std::map class](../standard-library/map-class.md).
 
-- [Platform::Collections::VectorView class](../cppcx/platform-collections-vectorview-class.md) and[Platform::Collections::MapView class](../cppcx/platform-collections-mapview-class.md) are read-only versions of `Vector` and `Map`.
+- [Platform::Collections::VectorView class](../cppcx/platform-collections-vectorview-class.md) and [Platform::Collections::MapView class](../cppcx/platform-collections-mapview-class.md) are read-only versions of `Vector` and `Map`.
 
 - Iterators are defined in the [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md). These iterators satisfy the requirements for STL iterators and enable the use of [std::find](../standard-library/algorithm-functions.md#find),  [std::count_if](../standard-library/algorithm-functions.md#count_if), and other STL algorithms on any [Windows::Foundation::Collections](/uwp/api/windows.foundation.collections) interface type or [Platform::Collections](../cppcx/platform-collections-namespace.md) concrete type. For example, this means that you can iterate a collection in a Windows Runtime component that's created in C# and apply an STL algorithm to it.
 
@@ -140,6 +139,6 @@ The [Windows::Foundation::Collections::VectorChangedEventHandler](/uwp/api/windo
 
 ## See also
 
-[Type System](../cppcx/type-system-c-cx.md)<br/>
-[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[Type System](../cppcx/type-system-c-cx.md)\
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)\
 [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: MFC ActiveX Controls: Using Fonts"
 title: "MFC ActiveX Controls: Using Fonts"
+description: "Learn more about: MFC ActiveX Controls: Using Fonts"
 ms.date: "11/19/2018"
 f1_keywords: ["OnFontChanged", "HeadingFont", "InternalFont"]
 helpviewer_keywords: ["notifications [MFC], MFC ActiveX controls fonts", "OnDraw method, MFC ActiveX controls", "InternalFont method [MFC]", "SetFont method [MFC]", "OnFontChanged method [MFC]", "IPropertyNotifySink class [MFC]", "MFC ActiveX controls [MFC], fonts", "Stock Font property [MFC]", "HeadingFont property [MFC]", "GetFont method [MFC]", "SelectStockFont method [MFC]", "fonts [MFC], ActiveX controls"]
-ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
 ---
 # MFC ActiveX Controls: Using Fonts
 
@@ -112,7 +111,7 @@ To implement a custom Font property, you use the Add Property Wizard to add the 
 
 1. Click **Finish**.
 
-The Add Property Wizard creates the code to add the `HeadingFont` custom property to the `CSampleCtrl` class and the SAMPLE.IDL file. Because `HeadingFont` is a Get/Set property type, the Add Property Wizard modifies the `CSampleCtrl` class's dispatch map to include a DISP_PROPERTY_EX_ID[DISP_PROPERTY_EX](reference/dispatch-maps.md#disp_property_ex) macro entry:
+The Add Property Wizard creates the code to add the `HeadingFont` custom property to the `CSampleCtrl` class and the SAMPLE.IDL file. Because `HeadingFont` is a Get/Set property type, the Add Property Wizard modifies the `CSampleCtrl` class's dispatch map to include a DISP_PROPERTY_EX_ID [DISP_PROPERTY_EX](reference/dispatch-maps.md#disp_property_ex) macro entry:
 
 [!code-cpp[NVC_MFC_AxFont#5](codesnippet/cpp/mfc-activex-controls-using-fonts_5.cpp)]
 
@@ -215,6 +214,6 @@ After these changes have been made to your project, rebuild the project and use 
 
 ## See also
 
-[MFC ActiveX Controls](mfc-activex-controls.md)<br/>
-[MFC ActiveX Controls: Using Pictures in an ActiveX Control](mfc-activex-controls-using-pictures-in-an-activex-control.md)<br/>
+[MFC ActiveX Controls](mfc-activex-controls.md)\
+[MFC ActiveX Controls: Using Pictures in an ActiveX Control](mfc-activex-controls-using-pictures-in-an-activex-control.md)\
 [MFC ActiveX Controls: Using Stock Property Pages](mfc-activex-controls-using-stock-property-pages.md)
