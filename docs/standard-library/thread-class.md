@@ -107,7 +107,7 @@ An estimate of the number of hardware thread contexts. If the value can't be com
 
 Prior to Windows 11 and Windows Server 2022, on systems with more than 64 logical processors this number is capped by the number of logical processors in a single group. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
 
-Starting with Windows 11 and Windows Server 2022, applications are no longer constrained by default to a single processor group. Instead, processes and their threads have processor affinities that by default span all processors in the system, across multiple groups on machines with more than 64 processors. So the number of threads concurrently executing on hardware is not limited to 64, but is instead limited by the number of logical processors in the system.
+Starting with Windows 11 and Windows Server 2022, applications are no longer constrained by default to a single processor group. Instead, processes and their threads have processor affinities that by default span all processors in the system, across multiple groups on machines with more than 64 processors. The number of threads concurrently executing on hardware isn't limited to 64, but is instead limited by the number of logical processors in the system.
 
 ## <a name="id_class"></a> `id` class
 
