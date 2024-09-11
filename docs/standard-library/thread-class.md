@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: thread Class"
 title: "thread Class"
-ms.date: 06/20/2022
+ms.date: 09/11/2024
 f1_keywords: ["thread/std::thread", "thread/std::thread::id Class", "thread/std::thread::thread", "thread/std::thread::detach", "thread/std::thread::get_id", "thread/std::thread::hardware_concurrency", "thread/std::thread::join", "thread/std::thread::joinable", "thread/std::thread::native_handle", "thread/std::thread::swap"]
 helpviewer_keywords: ["std::thread [C++]", "std::thread [C++], thread", "std::thread [C++], detach", "std::thread [C++], get_id", "std::thread [C++], hardware_concurrency", "std::thread [C++], join", "std::thread [C++], joinable", "std::thread [C++], native_handle", "std::thread [C++], swap"]
 ms.custom: devdivchpfy22
@@ -101,11 +101,13 @@ static unsigned int hardware_concurrency() noexcept;
 
 An estimate of the number of hardware thread contexts. If the value can't be computed or isn't well defined, this method returns 0.
 
-### Microsoft Specific
+**Microsoft specific**
 
-`hardware_concurrency` is currently defined to return the number of logical processors, which corresponds to the number of hardware threads that can execute simultaneously. It takes into account the number of physical processors, the number of cores in each physical processor, and simultaneous multithreading on each single core.
- 
-However, on systems with more than 64 logical processors this number is capped by the number of logical processors in a single group; see [Processor Groups](/windows/win32/procthread/processor-groups).
+`hardware_concurrency` returns the number of logical processors, which corresponds to the number of hardware threads that can execute simultaneously. It takes into account the number of physical processors, the number of cores in each physical processor, and simultaneous multithreading on each single core.
+
+Prior to Windows 11 and Windows Server 2022, on systems with more than 64 logical processors this number is capped by the number of logical processors in a single group. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
+
+Starting with Windows 11 and Windows Server 2022, applications are no longer constrained by default to a single processor group. Instead, processes and their threads have processor affinities that by default span all processors in the system, across multiple groups on machines with more than 64 processors. So the number of threads concurrently executing on hardware is not limited to 64, but is instead limited by the number of logical processors in the system.
 
 ## <a name="id_class"></a> `id` class
 

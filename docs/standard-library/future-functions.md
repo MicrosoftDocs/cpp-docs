@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <future> functions"
 title: "<future> functions"
-ms.date: "08/17/2021"
+ms.date: 09/11/2024
 f1_keywords: ["future/std::async", "future/std::future_category", "future/std::make_error_code", "future/std::make_error_condition", "future/std::swap"]
 helpviewer_keywords: ["std::async [C++]", "std::future_category [C++]", "std::make_error_code [C++]", "std::make_error_condition [C++]", "std::swap [C++]"]
 ---
@@ -59,9 +59,14 @@ In all cases, the associated asynchronous state of the `future` object isn't set
 
 The pseudo-function `INVOKE` is defined in [`<functional>`](../standard-library/functional.md).
 
-### Microsoft Specific
+**Microsoft specific**
 
-When the passed function is executed asynchronously, it's executed on Windows Thread Pool; see [Thread Pools](/windows/win32/procthread/thread-pools). The number of concurrent threads is limited to the thread pool default (currently 500). The number of threads concurrently executing on hardware is currently limited by the number of logical processor in the process's processor group, so it's effectively limited to 64; see [Processor Groups](/windows/win32/procthread/processor-groups).
+When the passed function is executed asynchronously, it's executed on Windows Thread Pool; see [Thread Pools](/windows/win32/procthread/thread-pools). The number of concurrent threads is limited to the thread pool default (currently 500).
+
+Prior to Windows 11 and Windows Server 2022, on systems with more than 64 logical processors, this number is capped by the number of logical processors in a single group. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
+The number of threads concurrently executing on hardware is limited by the number of logical processor in the process's processor group, so it's effectively limited to 64.
+
+Starting with Windows 11 and Windows Server 2022, applications are no longer constrained by default to a single processor group. Instead, processes and their threads have processor affinities that by default span all processors in the system, across multiple groups on machines with more than 64 processors. So the number of threads concurrently executing on hardware is not limited to 64, but is instead limited by the number of logical processors in the system.
 
 ## <a name="future_category"></a> `future_category`
 
