@@ -60,11 +60,11 @@ Classes that simplify the writing of programs that use data parallelism or task 
 [OpenMP](../parallel/openmp/openmp-in-visual-cpp.md)\
 Reference for the Microsoft implementation of the OpenMP API.
 
-[SafeInt library](../safeint/safeint-library.md)\
-A portable library that can be used with MSVC, GCC, or Clang to help prevent integer overflows.
-
 [Proxy library](https://github.com/microsoft/proxy)\
 A header-only C++20 library for using polymorphism in C++ without inheritance. For API reference information, see [Proxy 3 Specifications](https://microsoft.github.io/proxy/docs/specifications.html)
+
+[SafeInt library](../safeint/safeint-library.md)\
+A portable library that can be used with MSVC, GCC, or Clang to help prevent integer overflows.
 
 [Data Access Libraries](../data/data-access-in-cpp.md)
 Libraries to support data access using ATL or MFC, and legacy services such as OLE DB and ODBC.
