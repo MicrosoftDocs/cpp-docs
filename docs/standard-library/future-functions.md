@@ -61,7 +61,7 @@ The pseudo-function `INVOKE` is defined in [`<functional>`](../standard-library/
 
 **Microsoft specific**
 
-When the passed function is executed asynchronously, it's executes on the Windows Thread Pool. For more information, see [Thread Pools](/windows/win32/procthread/thread-pools). The number of concurrent threads is limited to the thread pool default, which is 500 threads.
+When the passed function is executed asynchronously, it executes on the Windows Thread Pool. For more information, see [Thread Pools](/windows/win32/procthread/thread-pools). The number of concurrent threads is limited to the thread pool default, which is 500 threads.
 
 Before Windows 11 and Windows Server 2022, applications were limited by default to a single processor group which has 64 logical processors. This limited the number of concurrently executing threads to 64. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
 
