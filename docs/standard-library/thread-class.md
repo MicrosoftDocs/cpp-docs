@@ -85,7 +85,7 @@ Returns a unique identifier for the associated thread.
 id get_id() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 An [`id`](#id_class) object that uniquely identifies the associated thread, or `id()` if no thread is associated with the object.
 
@@ -97,7 +97,7 @@ Static method that returns an estimate of the number of hardware thread contexts
 static unsigned int hardware_concurrency() noexcept;
 ```
 
-### Return Value
+### Return value
 
 An estimate of the number of hardware thread contexts. If the value can't be computed or isn't well defined, this method returns 0.
 
@@ -107,7 +107,7 @@ An estimate of the number of hardware thread contexts. If the value can't be com
 
 Before Windows 11 and Windows Server 2022, applications were limited by default to a single processor group, having at most 64 logical processors. This limited the number of concurrently executing threads to 64. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
 
-Starting with Windows 11 and Windows Server 2022, processes and their threads have processor affinities that span all processors in the system by default, and across multiple groups on machines with more than 64 processors. The limit on the number of concurrent threads is now the total number of logical processors in the system.
+Starting with Windows 11 and Windows Server 2022, processes and their threads have processor affinities that by default span all processors in the system by default and across multiple groups on machines with more than 64 processors. The limit on the number of concurrent threads is now the total number of logical processors in the system.
 
 ## <a name="id_class"></a> `id` class
 
@@ -145,7 +145,7 @@ Specifies whether the associated thread is joinable.
 bool joinable() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 **`true`** if the associated thread is joinable; otherwise, **`false`**.
 
@@ -161,7 +161,7 @@ Returns the implementation-specific type that represents the thread handle. The 
 native_handle_type native_handle();
 ```
 
-### Return Value
+### Return value
 
 `native_handle_type` is defined as a Win32 `HANDLE` cast as `void *`.
 
@@ -178,7 +178,7 @@ thread& operator=(thread&& Other) noexcept;
 *`Other`*\
 A `thread` object.
 
-### Return Value
+### Return value
 
 `*this`
 
