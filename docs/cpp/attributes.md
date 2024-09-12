@@ -159,7 +159,7 @@ void f() {
 
 ### `[[msvc::noinline]]`
 
-When placed before a function declaration, the Microsoft-specific attribute `[[msvc::noinline]]` has the same meaning as `declspec(noinline)`.
+When placed before a function declaration, the Microsoft-specific attribute `[[msvc::noinline]]` has the same meaning as `__declspec(noinline)`.
 
 ### `[[msvc::noinline_calls]]`
 
