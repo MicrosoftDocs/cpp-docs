@@ -50,7 +50,7 @@ The options listed in the following table:
 | **`/I`** *`pathname`* | Sets path for include file. A maximum of 10 **`/I`** options is allowed. |
 | **`/nologo`** | Suppresses messages for successful assembly. |
 | **`/omf`** | Generates object module file format (OMF) type of object module. **`/omf`** implies **`/c`**. ML.exe doesn't support linking OMF objects.<br /> Not available in ml64.exe. |
-| **`/quiet`** | Suppresses 'Assembling' message. Available from Visual Studio 17.6. |
+| **`/quiet`** | Suppresses 'Assembling' message. Available in Visual Studio 17.6 and later. |
 | **`/Sa`** | Turns on listing of all available information. |
 | **`/safeseh`** | Marks the object file: either it contains no exception handlers, or it contains exception handlers that are all declared with [`.SAFESEH`](dot-safeseh.md).<br /> Not available in ml64.exe. |
 | **`/Sf`** | Adds the first-pass listing to the listing file. |
