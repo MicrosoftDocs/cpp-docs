@@ -27,19 +27,19 @@ namespace std::execution {
 |Name|Description|
 |-|-|
 |[`is_execution_policy` Struct](is-execution-policy-struct.md)|Detects execution policies to exclude certain function signatures from otherwise ambiguous overload resolution participation.|
-|[`parallel_policy` Class](parallel-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Indicates that a parallel algorithm's execution may be parallelized.|
-|[`parallel_unsequenced_policy` Class](parallel-unsequenced-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Indicates that a parallel algorithm's execution may be parallelized and vectorized.|
-|[`sequenced_policy` Class](sequenced-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Specifies that a parallel algorithm's execution may not be parallelized.|
+|[`parallel_policy` class](parallel-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Indicates that a parallel algorithm's execution may be parallelized.|
+|[`parallel_unsequenced_policy` class](parallel-unsequenced-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Indicates that a parallel algorithm's execution may be parallelized and vectorized.|
+|[`sequenced_policy` class](sequenced-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Specifies that a parallel algorithm's execution may not be parallelized.|
 
 ### Microsoft specific
 
 Parallel algorithms execute on an unspecified number of threads and divides the work into an unspecified number of data partioning 'chunks'. The number of threads is managed by the Windows thread pool. The implementation tries to make use of number of logical processors, which corresponds to the number of hardware threads that can execute simultaneously.
 
-Specifying `parallel_policy` or `parallel_unsequenced_policy` causes various standard library algorithms to run in parallel using the Windows Thread Pool. For more information, see [Thread Pools](/windows/win32/procthread/thread-pools). The number of concurrent threads, and thus the number of chunks for data partitioning, is limited to the thread pool default (currently 500).
+Specifying `parallel_policy` or `parallel_unsequenced_policy` causes standard library algorithms to run in parallel using the Windows Thread Pool. For more information, see [Thread Pools](/windows/win32/procthread/thread-pools). The number of concurrent threads, and thus the number of chunks for data partitioning, is limited to the thread pool default (currently 500).
 
-Prior to Windows 11 and Windows Server 2022, on systems with more than 64 logical processors, the number of threads, and thus data partitioning chunks, is capped by the number of logical processors in a single group. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups). The number of threads, and thus the number of data partitioning chunks, that can concurrently execute on hardware is limited by the number of logical processors in the current process's processor group. That limit is 64.
+Before Windows 11 and Windows Server 2022, applications were limited by default to a single processor group which has 64 logical processors. This limited the number of concurrently executing threads to 64. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
 
-Starting with Windows 11 and Windows Server 2022, applications are no longer constrained by default to a single processor group. Instead, processes and their threads have processor affinities that by default span all processors in the system, across multiple groups on machines with more than 64 processors. The number of threads concurrently executing on hardware, and thus the number of data partitioning chunks, is not limited to 64 but is instead limited by the number of logical processors in the system.
+Starting with Windows 11 and Windows Server 2022, processes and their threads have processor affinities that by default span all processors in the system, and across multiple groups on machines with more than 64 processors. The limit on the number of concurrent threads is now the total number of logical processors in the system.
 
 ## Requirements
 

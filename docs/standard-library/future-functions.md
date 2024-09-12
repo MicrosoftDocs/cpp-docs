@@ -63,10 +63,9 @@ The pseudo-function `INVOKE` is defined in [`<functional>`](../standard-library/
 
 When the passed function is executed asynchronously, it's executed on Windows Thread Pool; see [Thread Pools](/windows/win32/procthread/thread-pools). The number of concurrent threads is limited to the thread pool default (currently 500).
 
-Prior to Windows 11 and Windows Server 2022, on systems with more than 64 logical processors, this number is capped by the number of logical processors in a single group. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
-The number of threads concurrently executing on hardware is limited by the number of logical processor in the process's processor group, so it's effectively limited to 64.
+Before Windows 11 and Windows Server 2022, applications were limited by default to a single processor group which has 64 logical processors. This limited the number of concurrently executing threads to 64. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
 
-Starting with Windows 11 and Windows Server 2022, applications are no longer constrained by default to a single processor group. Instead, processes and their threads have processor affinities that by default span all processors in the system, across multiple groups on machines with more than 64 processors. So the number of threads concurrently executing on hardware is not limited to 64, but is instead limited by the number of logical processors in the system.
+Starting with Windows 11 and Windows Server 2022, processes and their threads have processor affinities that by default span all processors in the system, and across multiple groups on machines with more than 64 processors. The limit on the number of concurrent threads is now the total number of logical processors in the system.
 
 ## <a name="future_category"></a> `future_category`
 

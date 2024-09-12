@@ -105,9 +105,9 @@ An estimate of the number of hardware thread contexts. If the value can't be com
 
 `hardware_concurrency` returns the number of logical processors, which corresponds to the number of hardware threads that can execute simultaneously. It takes into account the number of physical processors, the number of cores in each physical processor, and simultaneous multithreading on each single core.
 
-Prior to Windows 11 and Windows Server 2022, on systems with more than 64 logical processors this number is capped by the number of logical processors in a single group. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
+Before Windows 11 and Windows Server 2022, applications were limited by default to a single processor group which has 64 logical processors. This limited the number of concurrently executing threads to 64. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
 
-Starting with Windows 11 and Windows Server 2022, applications are no longer constrained by default to a single processor group. Instead, processes and their threads have processor affinities that by default span all processors in the system, across multiple groups on machines with more than 64 processors. The number of threads concurrently executing on hardware isn't limited to 64, but is instead limited by the number of logical processors in the system.
+Starting with Windows 11 and Windows Server 2022, processes and their threads have processor affinities that by default span all processors in the system, and across multiple groups on machines with more than 64 processors. The limit on the number of concurrent threads is now the total number of logical processors in the system.
 
 ## <a name="id_class"></a> `id` class
 
