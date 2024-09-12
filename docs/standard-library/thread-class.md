@@ -73,9 +73,9 @@ void detach();
 
 After a call to `detach`, subsequent calls to [`get_id`](#get_id) return [`id`](#id_class).
 
-If the thread that's associated with the calling object isn't joinable, the function throws a [`system_error`](../standard-library/system-error-class.md) that has an error code of `invalid_argument`.
+If the thread associated with the calling object isn't joinable, the function throws a [`system_error`](../standard-library/system-error-class.md) that has an error code of `invalid_argument`.
 
-If the thread that's associated with the calling object is invalid, the function throws a `system_error` that has an error code of `no_such_process`.
+If the thread associated with the calling object is invalid, the function throws a `system_error` that has an error code of `no_such_process`.
 
 ## <a name="get_id"></a> `get_id`
 
@@ -127,7 +127,7 @@ All default-constructed `thread::id` objects compare equal.
 
 ## <a name="join"></a> `join`
 
-Blocks until the thread of execution that's associated with the calling object completes.
+Blocks until the thread of execution associated with the calling object completes.
 
 ```cpp
 void join();
@@ -163,7 +163,7 @@ native_handle_type native_handle();
 
 ### Return Value
 
-`native_handle_type` is defined as a Win32 `HANDLE` that's cast as `void *`.
+`native_handle_type` is defined as a Win32 `HANDLE` cast as `void *`.
 
 ## <a name="op_eq"></a> `thread::operator=`
 
@@ -216,7 +216,7 @@ thread(thread&& Other) noexcept;
 ### Parameters
 
 *`F`*\
-An application-defined function to be executed by the thread.
+An application-defined function to execute on the thread.
 
 *`A`*\
 A list of arguments to be passed to *`F`*.
@@ -226,9 +226,9 @@ An existing `thread` object.
 
 ### Remarks
 
-The first constructor constructs an object that's not associated with a thread of execution. The value that's returned by a call to `get_id` for the constructed object is `thread::id()`.
+The first constructor constructs an object that's not associated with a thread of execution. The value returned by `get_id` for the constructed object is `thread::id()`.
 
-The second constructor constructs an object that's associated with a new thread of execution and executes the pseudo-function `INVOKE` that's defined in [`<functional>`](../standard-library/functional.md). If not enough resources are available to start a new thread, the function throws a [`system_error`](../standard-library/system-error-class.md) object that has an error code of `resource_unavailable_try_again`. If the call to *`F`* terminates with an uncaught exception, [`terminate`](../standard-library/exception-functions.md#terminate) is called.
+The second constructor constructs an object that's associated with a new thread of execution. It executes the pseudo-function `INVOKE` defined in [`<functional>`](../standard-library/functional.md). If not enough resources are available to start a new thread, the function throws a [`system_error`](../standard-library/system-error-class.md) object that has an error code of `resource_unavailable_try_again`. If the call to *`F`* terminates with an uncaught exception, [`terminate`](../standard-library/exception-functions.md#terminate) is called.
 
 The third constructor constructs an object that's associated with the thread that's associated with `Other`. `Other` is then set to a default-constructed state.
 
