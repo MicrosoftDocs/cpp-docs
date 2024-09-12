@@ -33,7 +33,7 @@ namespace std::execution {
 
 ### Microsoft specific
 
-Parallel algorithms execute on an unspecified number of threads and divide the work into an unspecified number of data partitioning "chunks". The Windows thread pool manages the number of threads. The implementation tries to make use of a number of logical processors, which corresponds to the number of hardware threads that can execute simultaneously.
+Parallel algorithms execute on an unspecified number of threads and divide the work into an unspecified number of data partitioning "chunks." The Windows thread pool manages the number of threads. The implementation tries to make use of the available logical processors, which corresponds to the number of hardware threads that can execute simultaneously.
 
 Specifying `parallel_policy` or `parallel_unsequenced_policy` causes standard library algorithms to run in parallel using the Windows Thread Pool. For more information, see [Thread Pools](/windows/win32/procthread/thread-pools). The number of concurrent threads, and thus the number of "chunks" for data partitioning, is limited to the thread pool default (currently 500).
 
