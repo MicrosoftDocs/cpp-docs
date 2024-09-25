@@ -9,7 +9,7 @@ Specifies the architecture for code generation on x86. For more information on *
 
 ## Syntax
 
-> **`/arch:`**\[**`IA32`**|**`SSE`**|**`SSE2`**|**`AVX`**|**`AVX2`**|**`AVX512`**]
+> **`/arch:`**\[**`IA32`**|**`SSE`**|**`SSE2`**|**`AVX`**|**`AVX2`**|**`AVX512`**|**`AVX10.1`**]
 
 ## Arguments
 
@@ -31,6 +31,9 @@ Enables the use of Intel Advanced Vector Extensions 2 instructions.
 **`/arch:AVX512`**\
 Enables the use of Intel Advanced Vector Extensions 512 instructions.
 
+**`/arch:AVX10.x`**\
+Enables the use of Intel Advanced Vector Extensions 10 version x instructions. Valid values of x are 1.
+
 ## Remarks
 
 The **`/arch`** option enables or disables the use of certain instruction set extensions, particularly for vector calculation, available in processors from Intel and AMD. In general, more recently introduced processors may support extensions beyond the ones supported by older processors. You should consult the documentation for a particular processor or test for instruction set extension support using [`__cpuid`](../../intrinsics/cpuid-cpuidex.md) before executing code using an instruction set extension.
@@ -50,6 +53,8 @@ The **`/arch`** options refer to instruction set extensions with the following c
 - **`AVX2`** extends most integer operations to 256-bit vectors, and enables use of Fused Multiply-Add (FMA) instructions.
 
 - **`AVX512`** introduced another instruction encoding form that allows 512-bit vectors, plus certain other optional features. Instructions for other operations were also added.
+
+- **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256-bit and can be changed to 512-bit using the [`/vlen`](vlen.md) flag
 
 The optimizer chooses when and how to use vector instructions depending on which **`/arch`** is specified. Scalar floating-point computations are performed with SSE or AVX instructions when available. Some calling conventions specify passing floating-point arguments on the x87 stack, and as a result, your code may use a mixture of both x87 and SSE/AVX instructions for floating-point computations. Integer vector instructions can also be used for some 64-bit integer operations when available.
 
@@ -81,9 +86,9 @@ int convert_double_to_int(double x) {
 }
 ```
 
-The `_M_IX86_FP`, `__AVX__`, `__AVX2__`, `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__` and `__AVX512VL__` macros indicate which, if any, **`/arch`** compiler option was used. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md). The **`/arch:AVX2`** option and `__AVX2__` macro were introduced in Visual Studio 2013 Update 2, version 12.0.34567.1. Limited support for **`/arch:AVX512`** was added in Visual Studio 2017, and expanded in Visual Studio 2019.
+The `_M_IX86_FP`, `__AVX__`, `__AVX2__`, `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__`, `__AVX512VL__` and `__AVX10_VER__` macros indicate which, if any, **`/arch`** compiler option was used. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md). The **`/arch:AVX2`** option and `__AVX2__` macro were introduced in Visual Studio 2013 Update 2, version 12.0.34567.1. Limited support for **`/arch:AVX512`** was added in Visual Studio 2017, and expanded in Visual Studio 2019. Support for **`/arch:AVX10.1`** was added in Visual Studio 2022.
 
-### To set this compiler option for AVX, AVX2, AVX512, IA32, SSE, or SSE2 in Visual Studio
+### To set this compiler option for AVX, AVX2, AVX512, AVX10.1, IA32, SSE, or SSE2 in Visual Studio
 
 1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 

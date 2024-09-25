@@ -190,6 +190,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/V`](v-version-number.md) | Deprecated. Sets the version string. |
 | [`/validate-charset`](validate-charset-validate-for-compatible-characters.md) | Validate UTF-8 files for only compatible characters. |
 | [`/vd{0|1|2}`](vd-disable-construction-displacements.md) | Suppresses or enables hidden `vtordisp` class members. |
+| [`/vlen`](vlen.md) | Specifies vector length. |
 | [`/vmb`](vmb-vmg-representation-method.md) | Uses best base for pointers to members. |
 | [`/vmg`](vmb-vmg-representation-method.md) | Uses full generality for pointers to members. |
 | [`/vmm`](vmm-vms-vmv-general-purpose-representation.md) | Declares multiple inheritance. |
