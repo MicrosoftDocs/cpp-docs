@@ -6,11 +6,12 @@ ms.assetid: ecda22bf-5bed-43f4-99fb-88aedd83d9d8
 ---
 # `/vlen`
 
-Specifies the vector length for automatic code generation on x86 and x64. For more information on **`/arch`** for x86 and x64, see [`/arch` (x86)](arch-x86.md).
+Specifies the vector length for automatic code generation on x86 and x64. For more information on **`/arch`** for x86 and x64, see [`/arch` (x86)](arch-x86.md) and [`/arch` (x64)](arch-x64.md) .
 
 ## Syntax
 
 > **`/vlen=`**\[**`256`**|**`512`**]
+
 > **`/vlen`**
 
 ## Arguments
