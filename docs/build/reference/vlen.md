@@ -34,7 +34,7 @@ If a specific **`/vlen`** value is not specified, the default vector length will
 
 When the specified **`/vlen`** value is incompatible with specified **`/arch`** flag, a warning is generated and default vector length for the **`/arch`** setting is used. For example:
 
-- **`/arch:AVX2 /vlen=512`** generates a warning beacuse AVX512 doesn't support 512 bit vectors. Vector length os 256 bits is used in this case.
+- **`/arch:AVX2 /vlen=512`** generates a warning beacuse AVX2 doesn't support 512 bit vectors. Vector length os 256 bits is used in this case.
 
 ### To set the `/vlen=256` or `/vlen=512` compiler option in Visual Studio
 
