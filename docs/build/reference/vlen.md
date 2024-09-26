@@ -2,11 +2,11 @@
 description: "Learn more about: /vlen"
 title: "/vlen"
 ms.date: 09/24/2024
-ms.assetid: ecda22bf-5bed-43f4-99fb-88aedd83d9d8
+f1_keywords: ["/vlen", "-vlen"]
 ---
 # `/vlen`
 
-Specifies the vector length for automatic code generation on x86 and x64. For more information on **`/arch`** for x86 and x64, see [`/arch` (x86)](arch-x86.md) and [`/arch` (x64)](arch-x64.md) .
+Specifies the vector length for code generation on x86 and x64. For more information on **`/arch`** for x86 and x64, see [`/arch` (x86)](arch-x86.md) and [`/arch` (x64)](arch-x64.md).
 
 ## Syntax
 
@@ -17,17 +17,24 @@ Specifies the vector length for automatic code generation on x86 and x64. For mo
 ## Arguments
 
 **`/vlen=256`**\
-Specifies the vector length of 256-bit for automatic code generation.
+Specify a vector length of 256-bits for auto-vectorization and other optimizations.
 
 **`/vlen=512`**\
-Specifies the vector length of 512-bit for automatic code generation.
+Specify a vector length of 512-bits for auto-vectorization and other optimizations.
 
 **`/vlen`**\
-Specifies the default vector length for the selected **`/arch`** setting.
+Specify the default vector length for the selected **`/arch`** setting.
 
 ## Remarks
 
-The **`/vlen`** flag provides the capability to change the default vector length specified by **`/arch`** flags. Since the valid values of **`/vlen`** are only 256 and 512, this can change the default vector length for **`/arch:AVX512`** and **`/arch:AVX10.x`** flags. A compiler warning is generated if an **`/arch`** flag does not support the vector length specified by the **`/vlen`** flag.
+If a specific **`/vlen`** value is not specified, the default vector length will depend on the /arch flag setting. The **`/vlen`** flag can override the default vector length specified by **`/arch:AVX512`** or **`/arch:AVX10.x`** flag. For example:
+
+- **`/arch:AVX512 /vlen=256`** will override the default vector length of 512 bits specified by **`/arch:AVX512`** to be 256 bits.
+- **`/arch:AVX10.1 /vlen=512`** will override the default vector length of 256 bits specified by **`/arch:AVX10.1`** to be 512 bits.
+
+When the specified **`/vlen`** value is incompatible with specified **`/arch`** flag, a warning is generated and default vector length for the **`/arch`** setting is used. For example:
+
+- **`/arch:AVX2 /vlen=512`** generates a warning beacuse AVX512 doesn't support 512 bit vectors. Vector length os 256 bits is used in this case.
 
 ### To set the `/vlen=256` or `/vlen=512` compiler option in Visual Studio
 
