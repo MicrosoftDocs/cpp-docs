@@ -17,22 +17,22 @@ Specifies the architecture for code generation on x86. For more information on *
 Specifies no enhanced instructions and also specifies x87 for floating-point calculations.
 
 **`/arch:SSE`**\
-Enables the use of SSE instructions.
+Enables SSE instructions.
 
 **`/arch:SSE2`**\
-Enables the use of SSE2 instructions. This option is the default instruction set on x86 platforms if no **`/arch`** option is specified.
+Enables SSE2 instructions. This option is the default instruction set on x86 platforms if no **`/arch`** option is specified.
 
 **`/arch:AVX`**\
-Enables the use of Intel Advanced Vector Extensions instructions.
+Enables Intel Advanced Vector Extensions instructions.
 
 **`/arch:AVX2`**\
-Enables the use of Intel Advanced Vector Extensions 2 instructions.
+Enables Intel Advanced Vector Extensions 2 instructions.
 
 **`/arch:AVX512`**\
-Enables the use of Intel Advanced Vector Extensions 512 instructions.
+Enables Intel Advanced Vector Extensions 512 instructions.
 
 **`/arch:AVX10.x`**\
-Enables the use of Intel Advanced Vector Extensions 10 version x instructions. Valid values of x are 1.
+Enables Intel Advanced Vector Extensions 10 version x instructions. Valid values of x are 1.
 
 ## Remarks
 
@@ -52,11 +52,11 @@ The **`/arch`** options refer to instruction set extensions with the following c
 
 - **`AVX2`** extends most integer operations to 256-bit vectors, and enables use of Fused Multiply-Add (FMA) instructions.
 
-- **`AVX512`** introduced another instruction encoding form that allows 512-bit vectors, plus certain other optional features. Instructions for other operations were also added.
+- **`AVX512`** introduced another instruction encoding form that allows 512-bit vectors, plus certain other optional features. Instructions for other operations were also added. The default vector length for **`AVX512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag.
 
-- **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256-bits and can be changed to 512-bits using the [`/vlen`](vlen.md) flag
+- **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256 bits and can be changed to 512 bits using the [`/vlen`](vlen.md) flag.
 
-The optimizer chooses when and how to use vector instructions depending on which **`/arch`** is specified. Scalar floating-point computations are performed with SSE or AVX instructions when available. Some calling conventions specify passing floating-point arguments on the x87 stack, and as a result, your code may use a mixture of both x87 and SSE/AVX instructions for floating-point computations. Integer vector instructions can also be used for some 64-bit integer operations when available.
+The optimizer chooses when and how to use vector instructions depending on which **`/arch`** is specified. Scalar floating-point computations are usually performed with SSE or AVX instructions when available. Some calling conventions specify passing floating-point arguments on the x87 stack, and as a result, your code may use a mixture of both x87 and SSE/AVX instructions for floating-point computations. Integer vector instructions can also be used for some 64-bit integer operations when available.
 
 In addition to the vector and floating-point scalar instructions, each **`/arch`** option may also enable the use of other non-vector instructions that are associated with that option. An example is the CMOVcc instruction family that first appeared on the Intel Pentium Pro processors. Because SSE instructions were introduced with the subsequent Intel Pentium III processor, CMOVcc instructions may be generated except when **`/arch:IA32`** is specified.
 

@@ -15,22 +15,22 @@ Specifies the architecture for code generation on x64. For more information on *
 ## Arguments
 
 **`/arch:SSE2`**\
-Enables the use of SSE2 instructions. This option is the default instruction set on x64 platforms if no **`/arch`** option is specified.
+Enables SSE2 instructions. This option is the default instruction set on x64 platforms if no **`/arch`** option is specified.
 
 **`/arch:SSE4.2`**\
-Enables the use of SSE4.2 instructions.
+Enables SSE4.2 instructions.
 
 **`/arch:AVX`**\
-Enables the use of Intel Advanced Vector Extensions instructions.
+Enables Intel Advanced Vector Extensions instructions.
 
 **`/arch:AVX2`**\
-Enables the use of Intel Advanced Vector Extensions 2 instructions.
+Enables Intel Advanced Vector Extensions 2 instructions.
 
 **`/arch:AVX512`**\
-Enables the use of Intel Advanced Vector Extensions 512 instructions.
+Enables Intel Advanced Vector Extensions 512 instructions.
 
 **`/arch:AVX10.x`**\
-Enables the use of Intel Advanced Vector Extensions 10 version x instructions. Valid values of x are 1.
+Enables Intel Advanced Vector Extensions 10 version x instructions. Valid values of x are 1.
 
 ## Remarks
 
@@ -48,9 +48,9 @@ The processor extensions have the following characteristics:
 
 - **`AVX2`** extends most integer operations to 256-bit vectors and enables use of Fused Multiply-Add (FMA) instructions.
 
-- **`AVX-512`** introduced another instruction encoding form that allows 512-bit vectors, plus certain other optional features. Instructions for other operations were also added.
+- **`AVX-512`** introduced another instruction encoding form that allows 512-bit vectors, plus certain other optional features. Instructions for other operations were also added. The default vector length for **`AVX-512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag
 
-- **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256-bits and can be changed to 512-bits using the [`/vlen`](vlen.md) flag
+- **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256 bits and can be changed to 512 bits using the [`/vlen`](vlen.md) flag
 
 Each **`/arch`** option may also enable the use of other non-vector instructions that are associated with that option. An example is the use of certain BMI instructions when **`/arch:AVX2`** is specified.
 
