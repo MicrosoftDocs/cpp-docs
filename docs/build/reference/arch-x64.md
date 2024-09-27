@@ -42,13 +42,13 @@ The processor extensions have the following characteristics:
 
 - The default mode uses SSE2 instructions for scalar floating-point and vector calculations. These instructions allow calculation with 128-bit vectors of single-precision, double-precision and 1, 2, 4 or 8-byte integer values, as well as single-precision and double-precision scalar floating-point values.
 
-- **`SSE4.2`** uses the full set of SSE instructions for floating-point scalar, vector and integer vector calculations.
+- **`SSE4.2`** uses the full set of SSE instructions for floating-point scalar, vector, and integer vector calculations.
 
 - **`AVX`** introduced an alternative instruction encoding for vector and floating-point scalar instructions. It allows vectors of either 128 bits or 256 bits, and zero-extends all vector results to the full vector size. (For legacy compatibility, SSE-style vector instructions preserve all bits beyond bit 127.) Most floating-point operations are extended to 256 bits.
 
 - **`AVX2`** extends most integer operations to 256-bit vectors and enables use of Fused Multiply-Add (FMA) instructions.
 
-- **`AVX-512`** introduced another instruction encoding form that allows 512-bit vectors, masking, embedded rounding/broadcast and new instructions. The default vector length for **`AVX-512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag
+- **`AVX-512`** introduced another instruction encoding form that allows 512-bit vectors, masking, embedded rounding/broadcast, and new instructions. The default vector length for **`AVX-512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag
 
 - **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256 bits and can be changed to 512 bits using the [`/vlen`](vlen.md) flag
 

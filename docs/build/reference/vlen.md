@@ -17,24 +17,24 @@ Specifies the vector length for code generation on x86 and x64. For more informa
 ## Arguments
 
 **`/vlen=256`**\
-Specify a vector length of 256-bits for auto-vectorization and other optimizations.
+Specify a vector length of 256 bits for auto-vectorization and other optimizations.
 
 **`/vlen=512`**\
-Specify a vector length of 512-bits for auto-vectorization and other optimizations.
+Specify a vector length of 512 bits for auto-vectorization and other optimizations.
 
 **`/vlen`**\
 Specify the default vector length for the selected **`/arch`** setting.
 
 ## Remarks
 
-If a specific **`/vlen`** value is not specified, the default vector length depends on the /arch flag setting. The **`/vlen`** flag can override the default vector length specified by **`/arch:AVX512`** or **`/arch:AVX10.x`** flag. For example:
+If a specific **`/vlen`** value isn't specified, the default vector length depends on the /arch flag setting. The **`/vlen`** flag can override the default vector length specified by **`/arch:AVX512`** or **`/arch:AVX10.x`** flag. For example:
 
 - **`/arch:AVX512 /vlen=256`** overrides the default vector length of 512 bits specified by **`/arch:AVX512`** to be 256 bits.
 - **`/arch:AVX10.1 /vlen=512`** overrides the default vector length of 256 bits specified by **`/arch:AVX10.1`** to be 512 bits.
 
 When the specified **`/vlen`** value is incompatible with specified **`/arch`** flag, a warning is generated and default vector length for the **`/arch`** setting is used. For example:
 
-- **`/arch:AVX2 /vlen=512`** generates a warning beacuse AVX2 doesn't support 512 bit vectors. Vector length of 256 bits is used in this case.
+- **`/arch:AVX2 /vlen=512`** generates a warning because AVX2 doesn't support 512 bit vectors. Vector length of 256 bits is used in this case.
 
 ### To set the `/vlen=256` or `/vlen=512` compiler option in Visual Studio
 
