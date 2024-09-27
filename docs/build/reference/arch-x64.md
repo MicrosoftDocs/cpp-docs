@@ -15,7 +15,7 @@ Specifies the architecture for code generation on x64. For more information on *
 ## Arguments
 
 **`/arch:SSE2`**\
-Enables SSE2 instructions. This option is the default instruction set on x64 platforms if no **`/arch`** option is specified.
+Enables SSE2 instructions. The default instruction set is SSE2 if no **`/arch`** option is specified.
 
 **`/arch:SSE4.2`**\
 Enables SSE4.2 instructions.
@@ -29,8 +29,8 @@ Enables Intel Advanced Vector Extensions 2 instructions.
 **`/arch:AVX512`**\
 Enables Intel Advanced Vector Extensions 512 instructions.
 
-**`/arch:AVX10.x`**\
-Enables Intel Advanced Vector Extensions 10 version x instructions. Valid values of x are 1.
+**`/arch:AVX10.1`**\
+Enables Intel Advanced Vector Extensions 10 version 1 instructions.
 
 ## Remarks
 
@@ -42,22 +42,22 @@ The processor extensions have the following characteristics:
 
 - The default mode uses SSE2 instructions for scalar floating-point and vector calculations. These instructions allow calculation with 128-bit vectors of single-precision, double-precision and 1, 2, 4 or 8-byte integer values, as well as single-precision and double-precision scalar floating-point values.
 
-- **`SSE4.2`** uses the full set of SSE instructions for floating-point scalar and vector calculations as well as integer vector calculations.
+- **`SSE4.2`** uses the full set of SSE instructions for floating-point scalar, vector and integer vector calculations.
 
 - **`AVX`** introduced an alternative instruction encoding for vector and floating-point scalar instructions. It allows vectors of either 128 bits or 256 bits, and zero-extends all vector results to the full vector size. (For legacy compatibility, SSE-style vector instructions preserve all bits beyond bit 127.) Most floating-point operations are extended to 256 bits.
 
 - **`AVX2`** extends most integer operations to 256-bit vectors and enables use of Fused Multiply-Add (FMA) instructions.
 
-- **`AVX-512`** introduced another instruction encoding form that allows 512-bit vectors, plus certain other optional features. Instructions for other operations were also added. The default vector length for **`AVX-512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag
+- **`AVX-512`** introduced another instruction encoding form that allows 512-bit vectors, masking, embedded rounding/broadcast and new instructions. The default vector length for **`AVX-512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag
 
 - **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256 bits and can be changed to 512 bits using the [`/vlen`](vlen.md) flag
 
 Each **`/arch`** option may also enable the use of other non-vector instructions that are associated with that option. An example is the use of certain BMI instructions when **`/arch:AVX2`** is specified.
 
-The `__AVX__` preprocessor symbol is defined when the **`/arch:AVX`**, **`/arch:AVX2`**, **`/arch:AVX512`** or  **`/arch:AVX10.x`** compiler option is specified.
-The `__AVX2__` preprocessor symbol is defined when the **`/arch:AVX2`**, **`/arch:AVX512`** or **`/arch:AVX10.x`** compiler option is specified.
-The `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__` and `__AVX512VL__` preprocessor symbols are defined when the **`/arch:AVX512`** or **`/arch:AVX10.x`** compiler option is specified.
-The `__AVX10_VER__` preprocessor symbol is defined when the **`/arch:AVX10.x`** compiler option is specified. It indicates the AVX10 version the compiler is targeting. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md).
+The `__AVX__` preprocessor symbol is defined when the **`/arch:AVX`**, **`/arch:AVX2`**, **`/arch:AVX512`** or  **`/arch:AVX10.1`** compiler option is specified.
+The `__AVX2__` preprocessor symbol is defined when the **`/arch:AVX2`**, **`/arch:AVX512`** or **`/arch:AVX10.1`** compiler option is specified.
+The `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__` and `__AVX512VL__` preprocessor symbols are defined when the **`/arch:AVX512`** or **`/arch:AVX10.1`** compiler option is specified.
+The `__AVX10_VER__` preprocessor symbol is defined when the **`/arch:AVX10.1`** compiler option is specified. It indicates the AVX10 version the compiler is targeting. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md).
 The **`/arch:AVX2`** option was introduced in Visual Studio 2013 Update 2, version 12.0.34567.1.
 Limited support for **`/arch:AVX512`** was added in Visual Studio 2017, and expanded in Visual Studio 2019.
 Support for **`/arch:AVX10.1`** was added in Visual Studio 2022.
@@ -68,7 +68,7 @@ Support for **`/arch:AVX10.1`** was added in Visual Studio 2022.
 
 1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
-1. In the **Enable Enhanced Instruction Set** drop-down box, choose **Advanced Vector Extensions (/arch:AVX)**, **Advanced Vector Extensions 2 (/arch:AVX2)**, **Advanced Vector Extensions 512 (/arch:AVX512)** or **Advanced Vector Extensions 10.1 (/arch:AVX10.1)**.
+1. Modify the **Enable Enhanced Instruction Set** property.
 
 ### To set this compiler option programmatically
 

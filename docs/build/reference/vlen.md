@@ -6,7 +6,7 @@ f1_keywords: ["/vlen", "-vlen"]
 ---
 # `/vlen`
 
-Specifies the vector length for code generation on x86 and x64. For more information on **`/arch`** for x86 and x64, see [`/arch` (x86)](arch-x86.md) and [`/arch` (x64)](arch-x64.md).
+Specifies the vector length for code generation on x86 and x64. For more information about **`/arch`** for x86 and x64, see [`/arch` (x86)](arch-x86.md) and [`/arch` (x64)](arch-x64.md).
 
 ## Syntax
 

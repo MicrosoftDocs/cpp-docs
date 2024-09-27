@@ -20,7 +20,7 @@ Specifies no enhanced instructions and also specifies x87 for floating-point cal
 Enables SSE instructions.
 
 **`/arch:SSE2`**\
-Enables SSE2 instructions. This option is the default instruction set on x86 platforms if no **`/arch`** option is specified.
+Enables SSE2 instructions. The default instruction set is SSE2 if no **`/arch`** option is specified.
 
 **`/arch:AVX`**\
 Enables Intel Advanced Vector Extensions instructions.
@@ -31,8 +31,8 @@ Enables Intel Advanced Vector Extensions 2 instructions.
 **`/arch:AVX512`**\
 Enables Intel Advanced Vector Extensions 512 instructions.
 
-**`/arch:AVX10.x`**\
-Enables Intel Advanced Vector Extensions 10 version x instructions. Valid values of x are 1.
+**`/arch:AVX10.1`**\
+Enables Intel Advanced Vector Extensions 10 version 1 instructions.
 
 ## Remarks
 
@@ -52,7 +52,7 @@ The **`/arch`** options refer to instruction set extensions with the following c
 
 - **`AVX2`** extends most integer operations to 256-bit vectors, and enables use of Fused Multiply-Add (FMA) instructions.
 
-- **`AVX512`** introduced another instruction encoding form that allows 512-bit vectors, plus certain other optional features. Instructions for other operations were also added. The default vector length for **`AVX512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag.
+- **`AVX512`** introduced another instruction encoding form that allows 512-bit vectors, masking, embedded rounding/broadcast and new instructions. The default vector length for **`AVX512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag.
 
 - **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256 bits and can be changed to 512 bits using the [`/vlen`](vlen.md) flag.
 
