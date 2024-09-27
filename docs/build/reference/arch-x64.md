@@ -15,10 +15,10 @@ Specifies the architecture for code generation on x64. For more information on *
 ## Arguments
 
 **`/arch:SSE2`**\
-Enables SSE2 instructions. The default instruction set is SSE2 if no **`/arch`** option is specified.
+Enables Intel Streaming SIMD Extensions 2 instructions. The default instruction set is SSE2 if no **`/arch`** option is specified.
 
 **`/arch:SSE4.2`**\
-Enables SSE4.2 instructions.
+Enables Intel Streaming SIMD Extensions 4.2 instructions.
 
 **`/arch:AVX`**\
 Enables Intel Advanced Vector Extensions instructions.

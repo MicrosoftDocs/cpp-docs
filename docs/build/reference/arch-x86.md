@@ -17,10 +17,10 @@ Specifies the architecture for code generation on x86. For more information on *
 Specifies no enhanced instructions and also specifies x87 for floating-point calculations.
 
 **`/arch:SSE`**\
-Enables SSE instructions.
+Enables Intel Streaming SIMD Extensions instructions.
 
 **`/arch:SSE2`**\
-Enables SSE2 instructions. The default instruction set is SSE2 if no **`/arch`** option is specified.
+Enables Intel Streaming SIMD Extensions 2 instructions. The default instruction set is SSE2 if no **`/arch`** option is specified.
 
 **`/arch:AVX`**\
 Enables Intel Advanced Vector Extensions instructions.
