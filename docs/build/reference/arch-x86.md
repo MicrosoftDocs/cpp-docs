@@ -86,7 +86,7 @@ int convert_double_to_int(double x) {
 }
 ```
 
-The `_M_IX86_FP`, `__AVX__`, `__AVX2__`, `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__`, `__AVX512VL__` and `__AVX10_VER__` macros indicate which, if any, **`/arch`** compiler option was used. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md). The **`/arch:AVX2`** option and `__AVX2__` macro were introduced in Visual Studio 2013 Update 2, version 12.0.34567.1. Limited support for **`/arch:AVX512`** was added in Visual Studio 2017, and expanded in Visual Studio 2019. Support for **`/arch:AVX10.1`** was added in Visual Studio 2022.
+The `_M_IX86_FP`, `__AVX__`, `__AVX2__`, `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__`, `__AVX512VL__`, and `__AVX10_VER__` macros indicate which, if any, **`/arch`** compiler option was used. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md). The **`/arch:AVX2`** option, and `__AVX2__` macro were introduced in Visual Studio 2013 Update 2, version 12.0.34567.1. Limited support for **`/arch:AVX512`** was added in Visual Studio 2017, and expanded in Visual Studio 2019. Support for **`/arch:AVX10.1`** was added in Visual Studio 2022.
 
 ### To set the `/arch` compiler option in Visual Studio
 

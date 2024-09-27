@@ -54,9 +54,9 @@ The processor extensions have the following characteristics:
 
 Each **`/arch`** option may also enable the use of other non-vector instructions that are associated with that option. An example is the use of certain BMI instructions when **`/arch:AVX2`** is specified.
 
-The `__AVX__` preprocessor symbol is defined when the **`/arch:AVX`**, **`/arch:AVX2`**, **`/arch:AVX512`** or  **`/arch:AVX10.1`** compiler option is specified.
-The `__AVX2__` preprocessor symbol is defined when the **`/arch:AVX2`**, **`/arch:AVX512`** or **`/arch:AVX10.1`** compiler option is specified.
-The `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__` and `__AVX512VL__` preprocessor symbols are defined when the **`/arch:AVX512`** or **`/arch:AVX10.1`** compiler option is specified.
+The `__AVX__` preprocessor symbol is defined when the **`/arch:AVX`**, **`/arch:AVX2`**, **`/arch:AVX512`**, or  **`/arch:AVX10.1`** compiler option is specified.
+The `__AVX2__` preprocessor symbol is defined when the **`/arch:AVX2`**, **`/arch:AVX512`**, or **`/arch:AVX10.1`** compiler option is specified.
+The `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__`, and `__AVX512VL__` preprocessor symbols are defined when the **`/arch:AVX512`**, or **`/arch:AVX10.1`** compiler option is specified.
 The `__AVX10_VER__` preprocessor symbol is defined when the **`/arch:AVX10.1`** compiler option is specified. It indicates the AVX10 version the compiler is targeting. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md).
 The **`/arch:AVX2`** option was introduced in Visual Studio 2013 Update 2, version 12.0.34567.1.
 Limited support for **`/arch:AVX512`** was added in Visual Studio 2017, and expanded in Visual Studio 2019.
