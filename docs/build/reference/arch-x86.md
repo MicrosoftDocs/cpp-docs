@@ -17,22 +17,22 @@ Specifies the architecture for code generation on x86. For more information on *
 Specifies no enhanced instructions and also specifies x87 for floating-point calculations.
 
 **`/arch:SSE`**\
-Enables Intel Streaming SIMD Extensions instructions.
+Enables Intel Streaming SIMD Extensions.
 
 **`/arch:SSE2`**\
-Enables Intel Streaming SIMD Extensions 2 instructions. The default instruction set is SSE2 if no **`/arch`** option is specified.
+Enables Intel Streaming SIMD Extensions 2. The default instruction set is SSE2 if no **`/arch`** option is specified.
 
 **`/arch:AVX`**\
-Enables Intel Advanced Vector Extensions instructions.
+Enables Intel Advanced Vector Extensions.
 
 **`/arch:AVX2`**\
-Enables Intel Advanced Vector Extensions 2 instructions.
+Enables Intel Advanced Vector Extensions 2.
 
 **`/arch:AVX512`**\
-Enables Intel Advanced Vector Extensions 512 instructions.
+Enables Intel Advanced Vector Extensions 512.
 
 **`/arch:AVX10.1`**\
-Enables Intel Advanced Vector Extensions 10 version 1 instructions.
+Enables Intel Advanced Vector Extensions 10 version 1.
 
 ## Remarks
 
@@ -74,7 +74,7 @@ r = t + d;     // This should produce the same overall result
                // whether x87 stack is used or SSE/SSE2 is used.
 ```
 
-**`/arch`** and [`/QIfist`](qifist-suppress-ftol.md) can't be used on the same compiland. The **`/QIfist`** option changes the rounding behavior of floating-point to integer conversion. The default behavior is to truncate (round toward zero), whereas the **`/QIfist`** option specifies use of the floating-point environment rounding mode. Because the option changes the behavior of all floating-point to integer conversions, **`/QIfist`** is deprecated. When compiling for SSE or AVX, you can round a floating-point value to an integer using the floating-point environment rounding mode by using an intrinsic function sequence:
+**`/arch`** and [`/QIfist`](qifist-suppress-ftol.md) can't be used on the same compileand. The **`/QIfist`** option changes the rounding behavior of floating-point to integer conversion. The default behavior is to truncate (round toward zero), whereas the **`/QIfist`** option specifies use of the [floating-point environment](fp-specify-floating-point-behavior.md) rounding mode. Because the option changes the behavior of all floating-point to integer conversions, **`/QIfist`** is deprecated. When compiling for SSE or AVX, you can round a floating-point value to an integer using the floating-point environment rounding mode by using an intrinsic function sequence:
 
 ```cpp
 int convert_float_to_int(float x) {

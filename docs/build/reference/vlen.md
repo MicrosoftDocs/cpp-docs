@@ -27,7 +27,7 @@ Specify the default vector length for the selected **`/arch`** setting.
 
 ## Remarks
 
-If a specific **`/vlen`** value isn't specified, the default vector length depends on the /arch flag setting. The **`/vlen`** flag can override the default vector length specified by **`/arch:AVX512`** or **`/arch:AVX10.x`** flag. For example:
+If a specific **`/vlen`** value isn't specified, the default vector length depends on the /arch flag setting. The **`/vlen`** flag can override the default vector length specified by **`/arch:AVX512`** or **`/arch:AVX10.1`** flag. For example:
 
 - **`/arch:AVX512 /vlen=256`** overrides the default vector length of 512 bits specified by **`/arch:AVX512`** to be 256 bits.
 - **`/arch:AVX10.1 /vlen=512`** overrides the default vector length of 256 bits specified by **`/arch:AVX10.1`** to be 512 bits.
