@@ -74,7 +74,7 @@ r = t + d;     // This should produce the same overall result
                // whether x87 stack is used or SSE/SSE2 is used.
 ```
 
-**`/arch`** and [`/QIfist`](qifist-suppress-ftol.md) can't be used on the same compileand. The **`/QIfist`** option changes the rounding behavior of floating-point to integer conversion. The default behavior is to truncate (round toward zero), whereas the **`/QIfist`** option specifies use of the [floating-point environment](fp-specify-floating-point-behavior.md) rounding mode. Because the option changes the behavior of all floating-point to integer conversions, **`/QIfist`** is deprecated. When compiling for SSE or AVX, you can round a floating-point value to an integer using the floating-point environment rounding mode by using an intrinsic function sequence:
+**`/arch`** and [`/QIfist`](qifist-suppress-ftol.md) can't be used together. The **`/QIfist`** option changes the rounding behavior of floating-point to integer conversion. The default behavior is to truncate (round toward zero), whereas the **`/QIfist`** option specifies use of the [floating-point environment](fp-specify-floating-point-behavior.md) rounding mode. Because the option changes the behavior of all floating-point to integer conversions, **`/QIfist`** is deprecated. When compiling for SSE or AVX, you can round a floating-point value to an integer using the floating-point environment rounding mode by using an intrinsic function sequence:
 
 ```cpp
 int convert_float_to_int(float x) {

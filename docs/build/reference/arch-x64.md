@@ -48,9 +48,9 @@ The processor extensions have the following characteristics:
 
 - **`AVX2`** extends most integer operations to 256-bit vectors and enables use of Fused Multiply-Add (FMA) instructions.
 
-- **`AVX-512`** introduced another instruction encoding form that allows 512-bit vectors, masking, embedded rounding/broadcast, and new instructions. The default vector length for **`AVX-512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag
+- **`AVX-512`** introduced another instruction encoding form that allows 512-bit vectors, masking, embedded rounding/broadcast, and new instructions. The default vector length for **`AVX-512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag.
 
-- **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256 bits and can be changed to 512 bits using the [`/vlen`](vlen.md) flag
+- **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256 bits and can be changed to 512 bits using the [`/vlen`](vlen.md) flag.
 
 Each **`/arch`** option may also enable the use of other non-vector instructions that are associated with that option. An example is the use of certain BMI instructions when **`/arch:AVX2`** is specified.
 

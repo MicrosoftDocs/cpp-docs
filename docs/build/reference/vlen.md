@@ -3,6 +3,7 @@ description: "Learn more about: /vlen"
 title: "/vlen"
 ms.date: 09/24/2024
 f1_keywords: ["/vlen", "-vlen"]
+helpviewer_keywords: [helpviewer_keywords: ["specify vector length", "-vlen compiler option [C++]", "vlen compiler option [C++]", "/vlen compiler option [C++]"]]
 ---
 # `/vlen`
 
@@ -34,7 +35,7 @@ If a specific **`/vlen`** value isn't specified, the default vector length depen
 
 When the specified **`/vlen`** value is incompatible with specified **`/arch`** flag, a warning is generated and default vector length for the **`/arch`** setting is used. For example:
 
-- **`/arch:AVX2 /vlen=512`** generates a warning because AVX2 doesn't support 512 bit vectors. Vector length of 256 bits is used in this case.
+- **`/arch:AVX2 /vlen=512`** generates a warning because AVX2 doesn't support 512-bit vectors. Vector length of 256 bits is used in this case.
 
 ### To set the `/vlen=256` or `/vlen=512` compiler option in Visual Studio
 
