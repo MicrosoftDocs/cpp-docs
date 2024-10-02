@@ -41,9 +41,9 @@ When the specified **`/vlen`** value is incompatible with specified **`/arch`** 
 
 1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. In the **Vector Length** drop-down box, choose **256** or **512**.
+1. In the **Additional options** box, add *`/vlen=256`* or *`/vlen=512`*. Choose **OK** to save your changes.
 
 ## See also
 
