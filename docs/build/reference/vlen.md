@@ -3,7 +3,7 @@ description: "Learn more about: /vlen"
 title: "/vlen"
 ms.date: 09/24/2024
 f1_keywords: ["/vlen", "-vlen"]
-helpviewer_keywords: [helpviewer_keywords: ["specify vector length", "-vlen compiler option [C++]", "vlen compiler option [C++]", "/vlen compiler option [C++]"]]
+helpviewer_keywords: ["specify vector length", "-vlen compiler option [C++]", "vlen compiler option [C++]", "/vlen compiler option [C++]"]
 ---
 # `/vlen`
 
