@@ -287,13 +287,13 @@ Since the user is free to type anything into the console window, let's make sure
 
 1. Right-click the red dot that represents the breakpoint, and select **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Select the **Close** button to save the breakpoint condition.
 
-   :::image type="complex" source="./media/calc-vs2022-set-breakpoint.png" alt-text="Screenshot of a set breakpoint":::
+   :::image type="complex" source="./media/calc-vs2022-conditional-breakpoint.png" alt-text="Screenshot of a set breakpoint":::
    The breakpoint is on the line: result = c dot Calculate ( x, oper, y). 'Conditions...' The Condition option is checked. The Conditions dropdown is set to "Conditional Expression". The condition dropdown is set to "Is true". The condition is set to y == 0 && oper == '/'.
    :::image-end:::
 
    Now, execution pauses at the breakpoint when the app tries to divide by 0.
 
-1. To debug the program, press **F5**, or select the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can put any number of spaces between the operator and numbers: `cin` is smart enough to parse the input appropriately.
+1. To debug the program, press **F5**, or select the **Local Windows Debugger** debugger toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can put any number of spaces between the operator and numbers: `cin` is smart enough to parse the input appropriately.
 
    :::image type="content" source="./media/calc-vs2022-debug-breakpoint.png" alt-text="Screenshot of Visual Studio editor. Program execution halted at the conditional breakpoint on the line: result = c.Calculate(x, oper, y);.":::
 
