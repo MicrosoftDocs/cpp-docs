@@ -325,7 +325,7 @@ You can also hover over variables in the code to see their current values at the
 
    The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right.
 
-   :::image type="complex" source="./media/calc-vs2022-debug-inf.png" alt-text="Screenshot of debugging the calculator".:::
+   :::image type="complex" source="./media/calc-vs2022-debug-inf.png" alt-text="Screenshot of debugging the calculator.":::
    The current statement in the debugger is cout << "Result is: " << result << endl; In the autos window, result is inf.
    :::image-end:::
 
@@ -720,7 +720,7 @@ You can also hover over variables in the code itself to see their current values
 
    The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right.
 
-   :::image type="complex" source="./media/calc-vs2017-debug-inf.png" alt-text="Screenshot of debugging the calculator".:::
+   :::image type="complex" source="./media/calc-vs2017-debug-inf.png" alt-text="Screenshot of debugging the calculator.":::
    The current statement in the debugger is cout << "Result is: " << result << endl; In the autos window, result is inf.
    :::image-end:::
 
