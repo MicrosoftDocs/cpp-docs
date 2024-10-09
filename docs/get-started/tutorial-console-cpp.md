@@ -10,7 +10,7 @@ ms.devlang: "cpp"
 
 ::: moniker range=">=msvc-160"
 
-The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. You'll start with that in this article, and then we move on to something more challenging: a calculator app.
+The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. You start with that in this article, and then move on to something more challenging: a calculator app.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 1. In the **Create a new project** dialog, set the language dropdown to **C++**,  set the platform dropdown to **Windows**, select **Console App** from the list of project types, then select **Next**.
 
    :::image type="complex" source="./media/calc-vs2022-choose-console-app.png" alt-text="Screenshot of the Visual Studio Create a new project dialog.":::
-   The language dropdown is set to C++, the platform dropdown is set to Windows, and project types like Empty Project, Console App, CMake Project, Windows Desktop Wizard, and so on appear in the list of project types."
+   The language dropdown is set to C++, the platform dropdown is set to Windows, and project types like Empty Project, Console App, CMake Project, Windows Desktop Wizard, and so on, appear in the list of project types."
    :::image-end:::
 
    > [!Important]
@@ -75,7 +75,7 @@ The template for a new Windows console application creates a simple C++ "Hello W
 
 1. To run the code, on the menu bar, select **Debug** > **Start without debugging** (Ctrl+F5).
 
-   :::image type="content" source="./media/calc-vs2019-hello-world-console.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the output of the application: Hello World!.":::
+   :::image type="content" source="./media/calc-vs2019-hello-world-console.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the output of the application: Hello World!":::
 
    A console window opens and your app runs within it.
 
@@ -128,7 +128,7 @@ Now let's modify the code in this template to be a calculator app.
    > - The `endl` keyword is like the Enter key; it ends the line and moves the cursor to the next line. It's a better practice to put a `\n` inside the string (contained by `""`) to do the same thing because `endl` always flushes the buffer which can hurt the performance of the program. But since this is a very small app, `endl` is used instead.
    > - All C++ statements must end with semicolons and all C++ applications must contain a `main()` function. This function is what the program runs at the start. All code must be accessible from `main()` in order to be used.
 
-1. To save the file, press **Ctrl+S**, or select the the floppy disk icon in the toolbar under the menu bar.
+1. To save the file, press **Ctrl+S**, or select the floppy disk icon in the toolbar under the menu bar.
 
 1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and select **Start Without Debugging**. You should see a console window appear that displays the text specified in the code.
 
@@ -173,7 +173,7 @@ A class is like a blueprint for an object that does something. In this case, we 
    > - C++ code is organized into *header* (`.h`) files and *source* (`.cpp`) files. Some other file extensions are supported by various compilers, but these are the main ones to know about. Functions and variables are normally *declared*, that is, given a name and a type, in header files, and *implemented*, or given a definition, in source files. To access code defined in another file, you can use `#include "filename.h"`, where `filename.h` is the name of the file that declares the variables or functions you want to use.
    > - It's good practice to organize your code into different files based on what it does, so it's easy to find the code you need later. In our case, we define the `Calculator` class separately from the file containing the `main()` function, but we plan to reference the `Calculator` class in `main()`.
 
-1. A green squiggle appears under `Calculate` because although the `Calculate` function is *declared*, it isn't *defined*. Hover over `Calculate`, click the down arrow on the screwdriver, and select **Create definition of 'Calculate' in `Calculator.cpp`**.
+1. A green squiggle appears under `Calculate` because although the `Calculate` function is *declared*, it isn't *defined*. Hover over `Calculate`, click the down arrow on the screwdriver icon, and select **Create definition of 'Calculate' in `Calculator.cpp`**.
 
    :::image type="content" source="./media/calc-vs2019-create-definition.png" alt-text="Screenshot of a screwdriver dropdown in the Visual Studio editor window. The option 'Create definition of Calculate in Calculator.cpp' is highlighted.":::
 
@@ -305,7 +305,7 @@ When you debug your code, you may notice that some new windows appear. These win
    The value of oper is 47 '/', result is 5, x is 10, and y is 0.
    :::image-end:::
 
-To see all of the variables from that function, switch to the **Locals** window. You can modify the values of these variables while debugging to see what effect they would have on the program. In this case, we leave them alone. Open the **Locals** window by selecting **Locals** at the bottom of the **Autos** window, or by selecting from the main menu **Debug** > **Windows** > **Locals**.
+To see all of the variables from that function, switch to the **Locals** window. Because this is a small function, the Autos and Locals window show the same variables. But you can modify the values of these variables in the Locals window while debugging to see what effect they would have on the program. In this case, we leave them alone. Open the **Locals** window by selecting **Locals** at the bottom of the **Autos** window, or by selecting from the main menu **Debug** > **Windows** > **Locals**.
 
    :::image type="complex" source="./media/calc-vs2019-debug-locals.png" alt-text="Screenshot of the Locals window in Visual Studio, displaying the current values of local variables while debugging.":::
    The value of oper is 47 '/', result is 0, x is 10, and y is 0.
@@ -326,7 +326,7 @@ You can also hover over variables in the code to see their current values at the
    The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right. Let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
    :::image type="complex" source="./media/calc-vs2019-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
-   The app outputs: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. THe user entered 10/0. The app output: Result is: inf
+   The app outputs: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. The user entered 10/0. The app output: Result is: inf
    :::image-end:::
 
    This result is because division by zero is undefined, so the program doesn't have a numerical answer for the requested operation.
@@ -464,7 +464,7 @@ The template for a new windows console application creates a simple C++ "Hello W
 
 1. To run the code, on the menu bar, select **Debug**, **Start without debugging** (Ctrl+F5).
 
-   :::image type="content" source="./media/calculator-hello-world-console.png" alt-text="Screenshot of the Visual Studio Debug Console showing the output: Hello World!.":::
+   :::image type="content" source="./media/calculator-hello-world-console.png" alt-text="Screenshot of the Visual Studio Debug Console showing the output: Hello World!":::
 
    A console window opens and your app runs within it.
 
@@ -516,7 +516,7 @@ Now let's turn the code in this template to be a calculator app.
    > - The `endl` keyword is like the Enter key; it ends the line and moves the cursor to the next line. It's a better practice to put a `\n` inside the string (contained by `""`) to do the same thing because `endl` always flushes the buffer and can hurt the performance of the program. But since this is a very small app, `endl` is used instead.
    > - All C++ statements must end with semicolons and all C++ applications must contain a `main()` function. This function is what the program runs at the start. All code must be accessible from `main()` in order to be used.
 
-1. To save the file, press **Ctrl+S**, or select the the floppy disk icon in the toolbar under the menu bar.
+1. To save the file, press **Ctrl+S**, or select the floppy disk icon in the toolbar under the menu bar.
 
 1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and select **Start Without Debugging**. If you get a pop-up that says **This project is out of date**, you may select **Do not show this dialog again**, and then select **Yes** to build your application. You should see a console window appear that looks like this:
 
@@ -565,7 +565,7 @@ A class is like a blueprint for an object that does something. In this case, we 
    > - C++ code is organized into *header* (`.h`) files and *source* (`.cpp`) files. Some other file extensions are supported by various compilers, but these are the main ones to know about. Functions and variables are normally *declared*, that is, given a name and a type, in header files, and *implemented*, or given a definition, in source files. To access code defined in another file, you can use `#include "filename.h"`, where `filename.h` is the name of the file that declares the variables or functions you want to use.
    > - It's good practice to organize your code into different files based on what it does, so it's easy to find the code you need later. In our case, we define the `Calculator` class separately from the file containing the `main()` function, but we plan to reference the `Calculator` class in `main()`.
 
-1. A green squiggle appears under `Calculate` because although the `Calculate` function is *declared*, it isn't *defined*. Hover over `Calculate`, click the down arrow on the lightbulb, and select **Create definition of 'Calculate' in `Calculator.cpp`**. A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
+1. A green squiggle appears under `Calculate` because although the `Calculate` function is *declared*, it isn't *defined*. Hover over `Calculate`, click the down arrow on the light bulb, and select **Create definition of 'Calculate' in `Calculator.cpp`**. A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
 
    :::image type="content" source="./media/calculator-create-definition.gif" alt-text="Video showing using the light bulb dropdown to select Create definition of Calculate in Calculator.cpp.":::
 
@@ -692,7 +692,7 @@ When you debug your code, you may notice that some new windows appear. These win
    The value of oper is 47 '/', result is 5, x is 10, and y is 0.
    :::image-end:::
 
-To see all of the variables from that function, switch to the **Locals** window. You can modify the values of these variables while debugging, to see what effect they would have on the program. In this case, we leave them alone. Open the **Locals** window by selecting **Locals** at the bottom of the **Autos** window, or by selecting from the main menu **Debug** > **Windows** > **Locals**.
+To see all of the variables from that function, switch to the **Locals** window. Because this is a small function, the Autos and Locals window show the same variables. But you can modify the values of these variables while debugging, to see what effect they would have on the program. In this case, we leave them alone. Open the **Locals** window by selecting **Locals** at the bottom of the **Autos** window, or by selecting from the main menu **Debug** > **Windows** > **Locals**.
 
    :::image type="complex" source="./media/calculator-locals.png" alt-text="Screenshot of the Locals window in Visual Studio, displaying the current values of local variables while debugging.":::
    The value of oper is 47 '/', result is 0, x is 10, and y is 0.
@@ -717,7 +717,7 @@ You can also hover over variables in the code itself to see their current values
    The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right. Let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
    :::image type="complex" source="./media/calculator-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
-   The app outputs: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. THe user entered 10/0. The app output: Result is: inf
+   The app outputs: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. The user entered 10/0. The app output: Result is: inf
    :::image-end:::
 
    This result is because division by zero is undefined, so the program doesn't have a numerical answer for the requested operation.
