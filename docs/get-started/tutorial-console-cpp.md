@@ -684,7 +684,7 @@ Since the user is free to type anything into the console window, let's make sure
    The breakpoint is on the line: result = c dot Calculate ( x, oper, y). 'Conditions...' The Condition option is checked. The Conditions dropdown is set to "Conditional Expression". The condition dropdown is set to "Is true". The condition is set to y == 0 && oper == '/'.
     :::image-end:::
 
-   Now we pause execution at the breakpoint specifically if a division by 0 is attempted.
+   Execution will pause at the breakpoint if a division by 0 is attempted.
 
 1. To debug the program, press **F5**, or select the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers; `cin` is smart enough to parse the input appropriately.
 
