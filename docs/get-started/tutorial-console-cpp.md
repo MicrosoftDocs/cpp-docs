@@ -281,14 +281,13 @@ Since the user is free to type anything into the console window, let's make sure
 
 1. In `CalcuatorTutorial.cpp`, set a breakpoint on the line: `result = c.Calculate(x, oper, y);`. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window so that a red dot appears.
 
-   :::image type="content" source="./media/calc-vs2019-set-breakpoint.png" alt-text="Screenshot of the Visual Studio editor. A red dot representing a breakpoint appears on the line: result = c.Calculate(x, oper, y).":::
+   :::image type="content" source="./media/calc-vs2022-set-breakpoint.png" alt-text="Screenshot of the Visual Studio editor. A red dot representing a breakpoint appears on the line: result = c.Calculate(x, oper, y).":::
 
    Now when we debug the program, execution pauses at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time we call `Calculate()`, let's make the breakpoint conditional.
 
 1. Right-click the red dot that represents the breakpoint, and select **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Select the **Close** button to save the breakpoint condition.
 
-   :::image type="complex" source="./media/calc-vs2022-conditional-breakpoint.png" alt-text="Screenshot of Visual Studio displaying the Breakpoint Settings pop-up."
-   The condition for the breakpoint is: y==0 && oper == '/' Is true.
+   :::image type="complex" source="./media/The breakpoint is on the line: result = c dot Calculate ( x, oper, y). 'Conditions...' The Condition option is checked. The Conditions dropdown is set to "Conditional Expression". The condition dropdown is set to "Is true". The condition is set to y == 0 && oper == '/'.
    :::image-end:::
 
    Now, execution will pause at the breakpoint when the app tries to divide by 0.
@@ -325,7 +324,7 @@ You can also hover over variables in the code to see their current values at the
 
    The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right. Let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
-   :::image type="complex" source="./media/calc-vs2019-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
+   :::image type="complex" source="./media/calc-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
    The app outputs: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. The user entered 10/0. The app output: Result is: inf
    :::image-end:::
 
@@ -378,7 +377,7 @@ Let's handle division by zero more gracefully so that it's easier for the user t
 
 1. Press **F5** once. Program execution continues until it has to pause to ask for user input. Enter `10 / 0` again. Now, a more helpful message is printed. The user is asked for more input, and the program continues executing normally.
 
-   :::image type="complex" source="./media/calc-vs2019-final-verification.png" alt-text="Screenshot of a console window showing the final output after implementing changes to handle division by zero.":::
+   :::image type="complex" source="./media/calc-final-verification.png" alt-text="Screenshot of a console window showing the final output after implementing changes to handle division by zero.":::
     The console window displays two lines: 10 / 0 Result is: inf, followed by, 10 / 0 Math error: Attempted to divide by zero.
     :::image-end:::
 
@@ -520,8 +519,8 @@ Now let's turn the code in this template to be a calculator app.
 
 1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and select **Start Without Debugging**. If you get a pop-up that says **This project is out of date**, you may select **Do not show this dialog again**, and then select **Yes** to build your application. You should see a console window appear that looks like this:
 
-   :::image type="complex" source="./media/calculator-first-launch.gif" alt-text="Video showing the process of running the calculator app in the IDE.":::
-   First a dialog box appears that asks whether to build because the project is out of date. The checkbox for 'Do not show this dialog again' is selected. 'Yes' is selected to build the project, the calculator project builds, and then launches in a Windows console window.
+   :::image type="complex" source="./media/calculator-first-launch.png" alt-text="Screenshot of the calculator app running in a console window.":::
+   The console app shows the output which is: Calculator Console Application. Please enter the operaton to perform. Format: a+b | a-b | a*b | a/b.  The process exited with code 0 and there is a message that to automatically close the console when debugging stops, enable Tools > Options > Debugging > Automatically close the console when debugging stops. Lastly, there is a message to press any key to close this window.
    :::image-end:::
 
 1. Close the console window when you're done.
@@ -534,7 +533,7 @@ A class is like a blueprint for an object that does something. In this case, we 
 
 1. Go to the **Project** menu and select **Add Class**. In the **Class Name** edit box, enter *Calculator*. Select **OK**.
 
-   :::image type="content" source="./media/calculator-create-class.gif" alt-text="Video showing the user opening the Add Class dialog box, typing 'Calculator' in the Class Name field, and clicking OK.":::
+   :::image type="content" source="./media/calc-vs2017-create-calculator-class.png" alt-text="Video showing the user opening the Add Class dialog box, typing 'Calculator' in the Class Name field, and clicking OK.":::
 
    A class is like a blueprint for an object that does something. In this case, we define a calculator and how it should work.
 
@@ -567,7 +566,7 @@ A class is like a blueprint for an object that does something. In this case, we 
 
 1. A green squiggle appears under `Calculate` because although the `Calculate` function is *declared*, it isn't *defined*. Hover over `Calculate`, click the down arrow on the light bulb, and select **Create definition of 'Calculate' in `Calculator.cpp`**. A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *`Calculator.cpp`*.
 
-   :::image type="content" source="./media/calculator-create-definition.gif" alt-text="Video showing using the light bulb dropdown to select Create definition of Calculate in Calculator.cpp.":::
+   :::image type="content" source="./media/calc-vs2017-create-definition.png" alt-text="Video showing using the light bulb dropdown to select Create definition of Calculate in Calculator.cpp.":::
 
    Currently, it just returns 0.0. Let's change that. Press **Esc** to close the pop-up and choose **Yes** to save the changes.
 
@@ -666,21 +665,21 @@ Since the user is free to type anything into the console window, let's make sure
 
 1. In `CalcuatorTutorial.cpp`, set a breakpoint on the `result = c.Calculate(x, oper, y);` line. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window so that a red dot appears.
 
-   :::image type="content" source="./media/calculator-set-breakpoint.gif" alt-text="Video showing the user setting a breakpoint on line 25: result = c.Calculate(x, oper, y);.":::
+   :::image type="content" source="./media/calc-vs2017-set-breakpoint.png" alt-text="Screenshot of the the user setting a breakpoint on line 23: result = c.Calculate(x, oper, y);.":::
 
-   Now when we debug the program, it always pauses execution at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time, let's make the breakpoint conditional.
+   Now when you debug the program, it always pauses execution at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time, let's make the breakpoint conditional.
 
 1. Right-click the red dot that represents the breakpoint, and select **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Select the **Close** button when you're done to save the breakpoint condition.
 
-   :::image type="complex" source="./media/calculator-conditional-breakpoint.gif" alt-text="Video demonstrating the process of setting a conditional breakpoint.":::
-    The breakpoint is on the line: result = c dot Calculate ( x, oper, y). 'Conditions...' is selected in the breakpoint dropdown, which opens the breakpoint settings window. The Condition option is checked, underneath which the dropdowns are set as: 'Conditional Expression' and 'Is true'. The user enters y == 0 && oper == '/' into the condition textbox and then selects close to set the conditional breakpoint.
+   :::image type="complex" source="./media/calc-vs2017-conditional-breakpoint.png" alt-text="Screenshot showing the conditional breakpoint window.":::
+   The breakpoint is on the line: result = c dot Calculate ( x, oper, y). 'Conditions...' The Condition option is checked. The Conditions dropdown is set to "Conditional Expression". The condition dropdown is set to "Is true". The condition is set to y == 0 && oper == '/'.
     :::image-end:::
 
    Now we pause execution at the breakpoint specifically if a division by 0 is attempted.
 
 1. To debug the program, press **F5**, or select the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers; `cin` is smart enough to parse the input appropriately.
 
-   :::image type="complex" source="./media/calculator-debug-conditional.gif" alt-text="Video showing the program execution paused at the conditional breakpoint.":::
+   :::image type="complex" source="./media/calc-vs2017-debug-breakpoint.png" alt-text="Video showing the program execution paused at the conditional breakpoint.":::
    The user enters 5 - 0. The app outputs: Result is 5. The user then enters 10/0 and because the condition for the conditional breakpoint is met, execution stops on the line: result = c.Calculate(x, oper, y);
    :::image-end:::
 
@@ -700,7 +699,7 @@ To see all of the variables from that function, switch to the **Locals** window.
 
 You can also hover over variables in the code itself to see their current values where the execution is currently paused. Make sure the editor window is in focus by clicking on it first.
 
-   :::image type="content" source="./media/calculator-hover-tooltip.gif" alt-text="Video demonstrating a tooltip that appears while hovering over the variable y. It displays y's current value, which is 0.":::
+   :::image type="content" source="./media/calc-vs2017-hover-tooltip.png" alt-text="Video demonstrating a tooltip that appears while hovering over the variable y. It displays y's current value, which is 0.":::
 
 ### Continue debugging
 
@@ -710,13 +709,9 @@ You can also hover over variables in the code itself to see their current values
 
 1. Continue using **F10** to **Step Over** each line until you get back to the `main()` function in the other file, and stop on the `cout` line.
 
-   :::image type="complex" source="./media/calculator-undefined-zero.gif" alt-text="Video showing stepping over each line of code in the Calculate function.":::
-   Each line of code in the Calculate function is stepped over until control returns to the main function. The user then hovers over the variable named result to see its value, which is: inf."
-   :::image-end:::
-
    The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right. Let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
-   :::image type="complex" source="./media/calculator-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
+   :::image type="complex" source="./media/calc-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
    The app outputs: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. The user entered 10/0. The app output: Result is: inf
    :::image-end:::
 
@@ -769,7 +764,7 @@ Let's handle division by zero more gracefully so that it's easier for the user t
 
 1. Press **F5** once. Program execution continues until it has to pause to ask for user input. Enter `10 / 0` again. Now, a more helpful message is printed. The user is asked for more input, and the program continues executing normally.
 
-   :::image type="content" source="./media/calculator-final-verification.gif" alt-text="Video of the Debug Console showing the final result after code changes. 10 / 0 is entered and the program displays 'Division by 0 exception'.":::
+   :::image type="content" source="./media/calc-final-verification.png" alt-text="Video of the Debug Console showing the final result after code changes. 10 / 0 is entered and the program displays 'Division by 0 exception'.":::
 
    > [!Note]
    > When you edit code while in debugging mode, there is a risk of code becoming stale. This happens when the debugger is still running your old code, and has not yet updated it with your changes. The debugger pops up a dialog to inform you when this happens. Sometimes, you may need to press **F5** to refresh the code being executed. In particular, if you make a change inside a function while the point of execution is inside that function, step out of the function, then back into it again to get the updated code. If that doesn't work for some reason and you see an error message, you can stop debugging by clicking on the red square in the toolbar under the menus at the top of the IDE, then start debugging again by entering **F5** or by choosing the green "play" arrow beside the stop button on the toolbar.
