@@ -674,7 +674,7 @@ Since the user is free to type anything into the console window, let's make sure
 
 1. In `CalcuatorTutorial.cpp`, set a breakpoint on the `result = c.Calculate(x, oper, y);` line. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window so that a red dot appears.
 
-   :::image type="content" source="./media/calc-vs2017-set-breakpoint.png" alt-text="Screenshot of the the user setting a breakpoint on line 23: result = c.Calculate(x, oper, y);.":::
+   :::image type="content" source="./media/calc-vs2017-set-breakpoint.png" alt-text="Screenshot of the user setting a breakpoint on line 23: result = c.Calculate(x, oper, y);.":::
 
    Now when you debug the program, it always pauses execution at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time, let's make the breakpoint conditional.
 
