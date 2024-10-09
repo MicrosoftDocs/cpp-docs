@@ -175,7 +175,7 @@ A class is like a blueprint for an object that does something. In this case, we 
 
 1. A green squiggle appears under `Calculate` because although the `Calculate` function is *declared*, it isn't *defined*. Hover over `Calculate`, click the down arrow on the screwdriver icon, and select **Create definition of 'Calculate' in `Calculator.cpp`**.
 
-   :::image type="content" source="./media/calc-vs2019-create-definition.png" alt-text="Screenshot of a screwdriver dropdown in the Visual Studio editor window. The option 'Create definition of Calculate in Calculator.cpp' is highlighted.":::
+   :::image type="content" source="./media/calc-vs2022-create-definition.png" alt-text="Screenshot of a screwdriver dropdown in the Visual Studio editor window. The option 'Create definition of Calculate in Calculator.cpp' is highlighted.":::
 
    This code is added to *`Calculator.cpp`*:
 
@@ -213,7 +213,7 @@ A class is like a blueprint for an object that does something. In this case, we 
    > - The **`double`** keyword denotes a type of number that supports decimals. This type of number is called a floating-point number, and `double` means a floating point number that has extra precision. This way, the calculator can handle both decimal math and integer math. The `Calculate` function is required to always return a double-precision floating point number due to the **`double`** at the start of the code (this denotes the function's return type), which is why we return 0.0 in the default case.
    > - The `.h` file declares the function *prototype*, which tells the compiler upfront what parameters it requires, and what return type to expect from it. The `.cpp` file has all the implementation details of the function.
 
-If you build and run the code again at this point, it will immediately exit after asking which operation to perform. So, modify the `main` function to do multiple calculations.
+If you build and run the code again at this point, it immediately exits after asking which operation to perform. So, modify the `main` function to do multiple calculations.
 
 ### Call the `Calculator` class member functions
 
@@ -287,10 +287,11 @@ Since the user is free to type anything into the console window, let's make sure
 
 1. Right-click the red dot that represents the breakpoint, and select **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Select the **Close** button to save the breakpoint condition.
 
-   :::image type="complex" source="./media/The breakpoint is on the line: result = c dot Calculate ( x, oper, y). 'Conditions...' The Condition option is checked. The Conditions dropdown is set to "Conditional Expression". The condition dropdown is set to "Is true". The condition is set to y == 0 && oper == '/'.
+   :::image type="complex" source="./media/calc-vs2022-set-breakpoint.png" alt-text="Screenshot of a set breakpoint":::
+   The breakpoint is on the line: result = c dot Calculate ( x, oper, y). 'Conditions...' The Condition option is checked. The Conditions dropdown is set to "Conditional Expression". The condition dropdown is set to "Is true". The condition is set to y == 0 && oper == '/'.
    :::image-end:::
 
-   Now, execution will pause at the breakpoint when the app tries to divide by 0.
+   Now, execution pauses at the breakpoint when the app tries to divide by 0.
 
 1. To debug the program, press **F5**, or select the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can put any number of spaces between the operator and numbers: `cin` is smart enough to parse the input appropriately.
 
@@ -382,7 +383,7 @@ Let's handle division by zero more gracefully so that it's easier for the user t
     :::image-end:::
 
    > [!Note]
-   > When you edit code while in debugging mode, there is a risk of code becoming stale. This happens when the debugger is still running your old code, and has not yet updated it with your changes. The debugger displays a dialog to inform you when this happens. Sometimes, you may need to press **F5** to refresh the code being executed. In particular, if you make a change inside a function while the point of execution is inside that function, you need to step out of the function, then back into it again to get the updated code. If that doesn't work and you see an error message, you can stop debugging by clicking on the red square in the toolbar under the menus at the top of the IDE, then start debugging again by entering **F5** or by choosing the green "play" arrow beside the stop button on the toolbar.
+   > When you edit code while in debugging mode, there's a risk of code becoming stale. This happens when the debugger is still running your old code, and has not yet updated it with your changes. The debugger displays a dialog to inform you when this happens. Sometimes, you may need to press **F5** to refresh the code being executed. In particular, if you make a change inside a function while the point of execution is inside that function, you need to step out of the function, then back into it again to get the updated code. If that doesn't work and you see an error message, you can stop debugging by clicking on the red square in the toolbar under the menus at the top of the IDE, then start debugging again by entering **F5** or by choosing the green "play" arrow beside the stop button on the toolbar.
    >
    > Another reason edit and continue may fail is if you see a message that says "The Require source files to exactly match the original version setting under Debug->Options->General needs to be enabled..." To fix this, from the main menu select **Tools** > **Options** > **Debugging** > **General** and ensure that **Require source files to exactly match the original version** is checked.
 
@@ -520,7 +521,7 @@ Now let's turn the code in this template to be a calculator app.
 1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and select **Start Without Debugging**. If you get a pop-up that says **This project is out of date**, you may select **Do not show this dialog again**, and then select **Yes** to build your application. You should see a console window appear that looks like this:
 
    :::image type="complex" source="./media/calculator-first-launch.png" alt-text="Screenshot of the calculator app running in a console window.":::
-   The console app shows the output which is: Calculator Console Application. Please enter the operaton to perform. Format: a+b | a-b | a*b | a/b.  The process exited with code 0 and there is a message that to automatically close the console when debugging stops, enable Tools > Options > Debugging > Automatically close the console when debugging stops. Lastly, there is a message to press any key to close this window.
+   The console app shows the output which is: Calculator Console Application. Please enter the operation to perform. Format: a+b | a-b | a*b | a/b.  The process exited with code 0 and there's a message that to automatically close the console when debugging stops, enable Tools > Options > Debugging > Automatically close the console when debugging stops. Lastly, there's a message to press any key to close this window.
    :::image-end:::
 
 1. Close the console window when you're done.
@@ -600,7 +601,7 @@ A class is like a blueprint for an object that does something. In this case, we 
    > - The **`double`** keyword denotes a type of number that supports decimals. This type of number is called a floating-point number, and `double` means a floating point number that has extra precision. This way, the calculator can handle both decimal math and integer math. The `Calculate` function is required to always return a double-precision floating point number due to the **`double`** at the start of the code (this denotes the function's return type), which is why we return 0.0 in the default case.
    > - The `.h` file declares the function *prototype*, which tells the compiler upfront what parameters it requires, and what return type to expect from it. The `.cpp` file has all the implementation details of the function.
 
-If you build and run the code again at this point, it will still exit after asking which operation to perform. Next, modify the `main` function to do some calculations.
+If you build and run the code again at this point, it still exits after asking which operation to perform. Next, modify the `main` function to do some calculations.
 
 ### Call the Calculator class member functions
 
@@ -767,7 +768,7 @@ Let's handle division by zero more gracefully so that it's easier for the user t
    :::image type="content" source="./media/calc-final-verification.png" alt-text="Video of the Debug Console showing the final result after code changes. 10 / 0 is entered and the program displays 'Division by 0 exception'.":::
 
    > [!Note]
-   > When you edit code while in debugging mode, there is a risk of code becoming stale. This happens when the debugger is still running your old code, and has not yet updated it with your changes. The debugger pops up a dialog to inform you when this happens. Sometimes, you may need to press **F5** to refresh the code being executed. In particular, if you make a change inside a function while the point of execution is inside that function, step out of the function, then back into it again to get the updated code. If that doesn't work for some reason and you see an error message, you can stop debugging by clicking on the red square in the toolbar under the menus at the top of the IDE, then start debugging again by entering **F5** or by choosing the green "play" arrow beside the stop button on the toolbar.
+   > When you edit code while in debugging mode, there's a risk of code becoming stale. This happens when the debugger is still running your old code, and has not yet updated it with your changes. The debugger pops up a dialog to inform you when this happens. Sometimes, you may need to press **F5** to refresh the code being executed. In particular, if you make a change inside a function while the point of execution is inside that function, step out of the function, then back into it again to get the updated code. If that doesn't work for some reason and you see an error message, you can stop debugging by clicking on the red square in the toolbar under the menus at the top of the IDE, then start debugging again by entering **F5** or by choosing the green "play" arrow beside the stop button on the toolbar.
    >
    > Another reason edit and continue may fail is that you need to go to the main menu and select **Tools** > **Options** > **Debugging** > **General** and ensure that **Require source files to exactly match the original version** is checked.
 
