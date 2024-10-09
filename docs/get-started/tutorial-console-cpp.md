@@ -130,7 +130,7 @@ Now let's modify the code in this template to be a calculator app.
 
 1. To save the file, press **Ctrl+S**, or select the floppy disk icon in the toolbar under the menu bar.
 
-1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and select **Start Without Debugging**. You should see a console window appear that displays the text specified in the code.
+1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and select **Start Without Debugging**. You should see a console window appear that looks like this.
 
 1. Close the console window when you're done.
 
@@ -323,7 +323,13 @@ You can also hover over variables in the code to see their current values at the
 
 1. Continue using **F10** to **Step Over** each line until you get back to the `main()` function in the other file, and stop on the `cout` line.
 
-   The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right. Let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
+   The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right.
+
+   :::image type="complex" source="./media/calc-vs2022-debug-inf.png" alt-text="Screenshot of debugging the calculator".:::
+   The current statement in the debugger is cout << "Result is: " << result << endl; In the autos window, result is inf.
+   :::image-end:::
+
+   Let's fix it. The `cout` line outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
    :::image type="complex" source="./media/calc-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
    The app outputs: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. The user entered 10/0. The app output: Result is: inf
@@ -534,7 +540,9 @@ A class is like a blueprint for an object that does something. In this case, we 
 
 1. Go to the **Project** menu and select **Add Class**. In the **Class Name** edit box, enter *Calculator*. Select **OK**.
 
-   :::image type="content" source="./media/calc-vs2017-create-calculator-class.png" alt-text="Video showing the user opening the Add Class dialog box, typing 'Calculator' in the Class Name field, and clicking OK.":::
+   :::image type="complex" source="./media/calc-vs2017-create-calculator-class.png" alt-text="Screenshot of the Visual Studio Add Class dialog box.":::
+   The class name field contains the text calculator. The .h file field contains Calculator.h. The .cpp file field contains Calculator.cpp. The base class field is empty. The options for inline, and Managed are unchecked.
+   :::image-end:::
 
    A class is like a blueprint for an object that does something. In this case, we define a calculator and how it should work.
 
@@ -710,7 +718,13 @@ You can also hover over variables in the code itself to see their current values
 
 1. Continue using **F10** to **Step Over** each line until you get back to the `main()` function in the other file, and stop on the `cout` line.
 
-   The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right. Let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
+   The program is doing what's expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. Its value is `inf`, which doesn't look right.
+
+   :::image type="complex" source="./media/calc-vs2017-debug-inf.png" alt-text="Screenshot of debugging the calculator".:::
+   The current statement in the debugger is cout << "Result is: " << result << endl; In the autos window, result is inf.
+   :::image-end:::
+
+   Let's fix it. The `cout` line outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
    :::image type="complex" source="./media/calc-divide-by-zero-fail.png" alt-text="Screenshot of the Visual Studio Debug Console displaying the result of a division by zero operation.":::
    The app outputs: Please enter the operation to perform. Format: a+b | a-b | a*b | a/b. The user entered 5-0. The app output: Result is: 5. The user entered 10/0. The app output: Result is: inf
