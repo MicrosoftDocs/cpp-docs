@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Overview of Generics in C++/CLI"
 title: "Overview of Generics in C++/CLI"
+description: "Learn more about: Overview of Generics in C++/CLI"
 ms.date: "10/12/2018"
 ms.topic: "reference"
 helpviewer_keywords: ["generics [C++], about generics", "default initializers [C++]", "type parameters [C++]", "constructed types", "type arguments [C++]", "constructed types, open [C++]", "open constructed types [C++]", "constructed types, closed [C++]"]
-ms.assetid: 21f10637-0fce-4916-b925-6c86a126d3aa
 ---
 # Overview of Generics in C++/CLI
 
@@ -38,7 +37,7 @@ The *type argument* is the actual type used in place of the type parameter when 
 
 ### Constructed Type
 
-A type constructed from a generic type is referred to as a *constructed type*. A type not fully specified, such as `List<T>` is an *open constructed type*; a type fully specified, such as `List<double>,` is a *closed constructed type* or *specialized type*. Open constructed types may be used in the definition of other generic types or methods and may not be fully specified until the enclosing generic is itself specified. For example, the following is a use of an open constructed type as a base class for a generic:
+A type constructed from a generic type is referred to as a *constructed type*. A type not fully specified, such as `List<T>` is an *open constructed type*; a type fully specified, such as `List<double>`, is a *closed constructed type* or *specialized type*. Open constructed types may be used in the definition of other generic types or methods and may not be fully specified until the enclosing generic is itself specified. For example, the following is a use of an open constructed type as a base class for a generic:
 
 ```cpp
 // generics_overview.cpp
