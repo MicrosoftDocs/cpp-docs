@@ -92,6 +92,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/RTCc`](rtc-run-time-error-checks.md) | Convert to smaller type checks at run-time. |
 | [`/RTCs`](rtc-run-time-error-checks.md) | Enable stack frame runtime checks. |
 | [`/RTCu`](rtc-run-time-error-checks.md) | Enables uninitialized local usage checks. |
+| [`/vlen`](vlen.md) | Specifies vector length. |
 | [`/volatile:iso`](volatile-volatile-keyword-interpretation.md) | Acquire/release semantics not guaranteed on volatile accesses. |
 | [`/volatile:ms`](volatile-volatile-keyword-interpretation.md) | Acquire/release semantics guaranteed on volatile accesses. |
 

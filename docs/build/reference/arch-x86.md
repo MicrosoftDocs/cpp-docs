@@ -9,7 +9,7 @@ Specifies the architecture for code generation on x86. For more information on *
 
 ## Syntax
 
-> **`/arch:`**\[**`IA32`**|**`SSE`**|**`SSE2`**|**`AVX`**|**`AVX2`**|**`AVX512`**]
+> **`/arch:`**\[**`IA32`**|**`SSE`**|**`SSE2`**|**`AVX`**|**`AVX2`**|**`AVX512`**|**`AVX10.1`**]
 
 ## Arguments
 
@@ -17,19 +17,22 @@ Specifies the architecture for code generation on x86. For more information on *
 Specifies no enhanced instructions and also specifies x87 for floating-point calculations.
 
 **`/arch:SSE`**\
-Enables the use of SSE instructions.
+Enables Intel Streaming SIMD Extensions.
 
 **`/arch:SSE2`**\
-Enables the use of SSE2 instructions. This option is the default instruction set on x86 platforms if no **`/arch`** option is specified.
+Enables Intel Streaming SIMD Extensions 2. The default instruction set is SSE2 if no **`/arch`** option is specified.
 
 **`/arch:AVX`**\
-Enables the use of Intel Advanced Vector Extensions instructions.
+Enables Intel Advanced Vector Extensions.
 
 **`/arch:AVX2`**\
-Enables the use of Intel Advanced Vector Extensions 2 instructions.
+Enables Intel Advanced Vector Extensions 2.
 
 **`/arch:AVX512`**\
-Enables the use of Intel Advanced Vector Extensions 512 instructions.
+Enables Intel Advanced Vector Extensions 512.
+
+**`/arch:AVX10.1`**\
+Enables Intel Advanced Vector Extensions 10 version 1.
 
 ## Remarks
 
@@ -49,9 +52,11 @@ The **`/arch`** options refer to instruction set extensions with the following c
 
 - **`AVX2`** extends most integer operations to 256-bit vectors, and enables use of Fused Multiply-Add (FMA) instructions.
 
-- **`AVX512`** introduced another instruction encoding form that allows 512-bit vectors, plus certain other optional features. Instructions for other operations were also added.
+- **`AVX512`** introduced another instruction encoding form that allows 512-bit vectors, masking, embedded rounding/broadcast, and new instructions. The default vector length for **`AVX512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag.
 
-The optimizer chooses when and how to use vector instructions depending on which **`/arch`** is specified. Scalar floating-point computations are performed with SSE or AVX instructions when available. Some calling conventions specify passing floating-point arguments on the x87 stack, and as a result, your code may use a mixture of both x87 and SSE/AVX instructions for floating-point computations. Integer vector instructions can also be used for some 64-bit integer operations when available.
+- **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256 bits and can be changed to 512 bits using the [`/vlen`](vlen.md) flag.
+
+The optimizer chooses when and how to use vector instructions depending on which **`/arch`** is specified. Scalar floating-point computations are usually performed with SSE or AVX instructions when available. Some calling conventions specify passing floating-point arguments on the x87 stack, and as a result, your code may use a mixture of both x87 and SSE/AVX instructions for floating-point computations. Integer vector instructions can also be used for some 64-bit integer operations when available.
 
 In addition to the vector and floating-point scalar instructions, each **`/arch`** option may also enable the use of other non-vector instructions that are associated with that option. An example is the CMOVcc instruction family that first appeared on the Intel Pentium Pro processors. Because SSE instructions were introduced with the subsequent Intel Pentium III processor, CMOVcc instructions may be generated except when **`/arch:IA32`** is specified.
 
@@ -69,7 +74,7 @@ r = t + d;     // This should produce the same overall result
                // whether x87 stack is used or SSE/SSE2 is used.
 ```
 
-**`/arch`** and [`/QIfist`](qifist-suppress-ftol.md) can't be used on the same compiland. The **`/QIfist`** option changes the rounding behavior of floating-point to integer conversion. The default behavior is to truncate (round toward zero), whereas the **`/QIfist`** option specifies use of the floating-point environment rounding mode. Because the option changes the behavior of all floating-point to integer conversions, **`/QIfist`** has been deprecated. When compiling for SSE or AVX, you can round a floating-point value to an integer using the floating-point environment rounding mode by using an intrinsic function sequence:
+**`/arch`** and [`/QIfist`](qifist-suppress-ftol.md) can't be used together. The **`/QIfist`** option changes the rounding behavior of floating-point to integer conversion. The default behavior is to truncate (round toward zero), whereas the **`/QIfist`** option specifies use of the [floating-point environment](fp-specify-floating-point-behavior.md) rounding mode. Because the option changes the behavior of all floating-point to integer conversions, **`/QIfist`** is deprecated. When compiling for SSE or AVX, you can round a floating-point value to an integer using the floating-point environment rounding mode by using an intrinsic function sequence:
 
 ```cpp
 int convert_float_to_int(float x) {
@@ -81,9 +86,9 @@ int convert_double_to_int(double x) {
 }
 ```
 
-The `_M_IX86_FP`, `__AVX__`, `__AVX2__`, `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__` and `__AVX512VL__` macros indicate which, if any, **`/arch`** compiler option was used. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md). The **`/arch:AVX2`** option and `__AVX2__` macro were introduced in Visual Studio 2013 Update 2, version 12.0.34567.1. Limited support for **`/arch:AVX512`** was added in Visual Studio 2017, and expanded in Visual Studio 2019.
+The `_M_IX86_FP`, `__AVX__`, `__AVX2__`, `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__`, `__AVX512VL__`, and `__AVX10_VER__` macros indicate which, if any, **`/arch`** compiler option was used. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md). The **`/arch:AVX2`** option, and `__AVX2__` macro were introduced in Visual Studio 2013 Update 2, version 12.0.34567.1. Limited support for **`/arch:AVX512`** was added in Visual Studio 2017, and expanded in Visual Studio 2019. Support for **`/arch:AVX10.1`** was added in Visual Studio 2022.
 
-### To set this compiler option for AVX, AVX2, AVX512, IA32, SSE, or SSE2 in Visual Studio
+### To set the `/arch` compiler option in Visual Studio
 
 1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
