@@ -740,6 +740,8 @@ items:
                   href: ../build/reference/validate-charset-validate-for-compatible-characters.md
                 - name: /vd (Disable construction displacements)
                   href: ../build/reference/vd-disable-construction-displacements.md
+                - name: /vlen (Specify vector length)
+                  href: ../build/reference/vlen.md
                 - name: /vmb, /vmg (Representation method)
                   href: ../build/reference/vmb-vmg-representation-method.md
                 - name: /vmm, /vms, /vmv (General purpose representation)
