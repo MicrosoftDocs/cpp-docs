@@ -69,19 +69,21 @@ MSVC supports other predefined macros:
 
 - `__ATOM__` Defined as 1 when the [`/favor:ATOM`](../build/reference/favor-optimize-for-architecture-specifics.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX__` Defined as 1 when the [`/arch:AVX`](../build/reference/arch-x86.md), [`/arch:AVX2`](../build/reference/arch-x86.md), or [`/arch:AVX512`](../build/reference/arch-x86.md) compiler options are set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX__` Defined as 1 when the [`/arch:AVX`](../build/reference/arch-x86.md), [`/arch:AVX2`](../build/reference/arch-x86.md), [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler options are set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX2__` Defined as 1 when the [`/arch:AVX2`](../build/reference/arch-x86.md) or [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX2__` Defined as 1 when the [`/arch:AVX2`](../build/reference/arch-x86.md), [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512BW__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512BW__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512CD__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512CD__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512DQ__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512DQ__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512F__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512F__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512VL__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512VL__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+
+- `__AVX10_VER__` Defined as an integer that represents version of AVX10 when the [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
 - `_CHAR_UNSIGNED` Defined as 1 if the default **`char`** type is unsigned. This value is defined when the [**`/J`** (Default char type is unsigned)](../build/reference/j-default-char-type-is-unsigned.md) compiler option is set. Otherwise, undefined.
 
@@ -235,7 +237,7 @@ MSVC supports other predefined macros:
 
   - 1 if the `/arch:SSE` compiler option was set.
 
-  - 2 if the `/arch:SSE2`, `/arch:AVX`, `/arch:AVX2`, or `/arch:AVX512` compiler option was set. This value is the default if an `/arch` compiler option wasn't specified. When `/arch:AVX` is specified, the macro `__AVX__` is also defined. When `/arch:AVX2` is specified, both `__AVX__` and `__AVX2__` are also defined. When `/arch:AVX512` is specified, `__AVX__`, `__AVX2__`, `__AVX512BW__`, `__AVX512CD__`, `__AVX512DQ__`, `__AVX512F__`, and `__AVX512VL__` are also defined.
+  - 2 if the `/arch:SSE2`, `/arch:AVX`, `/arch:AVX2`, `/arch:AVX512` or `/arch:AVX10.1` compiler option was set. This value is the default if an `/arch` compiler option wasn't specified. When `/arch:AVX` is specified, the macro `__AVX__` is also defined. When `/arch:AVX2` is specified, both `__AVX__` and `__AVX2__` are also defined. When `/arch:AVX512` is specified, `__AVX__`, `__AVX2__`, `__AVX512BW__`, `__AVX512CD__`, `__AVX512DQ__`, `__AVX512F__`, and `__AVX512VL__` are also defined. When `/arch:AVX10.1` is specified, `__AVX__`, `__AVX2__`, `__AVX512BW__`, `__AVX512CD__`, `__AVX512DQ__`, `__AVX512F__`, `__AVX512VL__` and `__AVX10_VER__` are also defined.
 
   - For more information, see [**`/arch`** (x86)](../build/reference/arch-x86.md).
 
