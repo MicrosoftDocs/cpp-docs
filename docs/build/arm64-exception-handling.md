@@ -393,7 +393,7 @@ Step 6: Allocate remaining stack, including local area, `<x29,lr>` pair, and out
 | 6d | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` <= 4080 | 1 | `sub sp,sp,#locsz` | `alloc_s`/`alloc_m` |
 | 6e | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` > 4080 | 2 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)` | `alloc_m`<br/>`alloc_s`/`alloc_m` |
 
-\* If **CR** == 01 and **RegI** is an odd number, Step 2 and the last `save_rep` in step 1 are merged into one `save_regp`.
+\* If **CR** == 01 and **RegI** is an odd number, step 3 and the last `save_reg` in step 2 are merged into one `save_regp`.
 
 \*\* If **RegI** == **CR** == 0, and **RegF** != 0, the first `stp` for the floating-point does the predecrement.
 
