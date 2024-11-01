@@ -2,7 +2,8 @@
 description: "Learn more about: /arch (x64)"
 title: "/arch (x64)"
 ms.date: 06/30/2022
-ms.assetid: ecda22bf-5bed-43f4-99fb-88aedd83d9d8
+f1_keywords: ["/arch:SSE2", "/arch:SSE4.2", "/arch:AVX", "/arch:AVX2", "/arch:AVX512", "/arch:AVX10.1"]
+helpviewer_keywords: ["/arch:SSE2 compiler option [C++]", "/arch:SSE4.2 compiler option [C++]", "/arch:AVX compiler option [C++]", "/arch:AVX2 compiler option [C++]", "/arch:AVX512 compiler option [C++]", "/arch:AVX10.1 compiler option [C++]"]
 ---
 # `/arch` (x64)
 

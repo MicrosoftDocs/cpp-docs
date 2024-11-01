@@ -2,6 +2,8 @@
 description: "Learn more about: /arch (x86)"
 title: "/arch (x86)"
 ms.date: 06/30/2022
+f1_keywords: ["/arch:IA32", "/arch:SSE", "/arch:SSE2", "/arch:AVX", "/arch:AVX2", "/arch:AVX512", "/arch:AVX10.1"]
+helpviewer_keywords: ["/arch:IA32 compiler option [C++]", "/arch:SSE compiler option [C++]", "/arch:SSE2 compiler option [C++]", "/arch:AVX compiler option [C++]", "/arch:AVX2 compiler option [C++]", "/arch:AVX512 compiler option [C++]", "/arch:AVX10.1 compiler option [C++]"]
 ---
 # `/arch` (x86)
 
