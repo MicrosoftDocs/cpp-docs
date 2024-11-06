@@ -38,7 +38,7 @@ Enables Intel Advanced Vector Extensions 10 version 1.
 
 ## Remarks
 
-The **`/arch`** option enables or disables the use of certain instruction set extensions, particularly for vector calculation, available in processors from Intel and AMD. In general, more recently introduced processors may support extensions beyond the ones supported by older processors. You should consult the documentation for a particular processor or test for instruction set extension support using [`__cpuid`](../../intrinsics/cpuid-cpuidex.md) before executing code using an instruction set extension.
+The **`/arch`** option enables or disables the use of certain instruction set extensions, particularly for vector calculation, available in processors from Intel and AMD. In general, more recently introduced processors may support extensions beyond the ones supported by older processors. You should consult the documentation for a particular processor or test for instruction set extension support using [`__cpuid`](../../intrinsics/cpuid-cpuidex.md) before executing code using an instruction set extension. You can also use the [`__check_isa_support`](../../intrinsics/check-isa-arch-support.md) intrinsic to check for more frequenctly used CPU features.
 
 **`/arch`** only affects code generation for native functions. When you use [`/clr`](clr-common-language-runtime-compilation.md) to compile, **`/arch`** has no effect on code generation for managed functions.
 

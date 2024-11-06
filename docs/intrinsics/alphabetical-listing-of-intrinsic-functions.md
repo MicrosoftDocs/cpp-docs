@@ -29,6 +29,8 @@ The following sections describe the Microsoft-specific intrinsic functions avail
 
 [`_bittestandset`, `_bittestandset64`](../intrinsics/bittestandset-bittestandset64.md)
 
+[`__check_isa_support`, `__check_arch_support`](../intrinsics/check-isa-arch-support.md)
+
 [`__cpuid`, `__cpuidex`](../intrinsics/cpuid-cpuidex.md)
 
 [`_cvt_ftoi_fast`, `_cvt_ftoll_fast`, `_cvt_ftoui_fast`, `_cvt_ftoull_fast`, `_cvt_dtoi_fast`, `_cvt_dtoll_fast`, `_cvt_dtoui_fast`, `_cvt_dtoull_fast`](../intrinsics/fast-conversion-functions.md)

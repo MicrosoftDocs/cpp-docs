@@ -39,6 +39,8 @@ items:
           href: ../intrinsics/bittestandreset-bittestandreset64.md
         - name: _bittestandset, _bittestandset64
           href: ../intrinsics/bittestandset-bittestandset64.md
+        - name: __check_isa_support, __check_arch_support
+          href: ../intrinsics/check-isa-arch-support.md          
         - name: __cpuid, __cpuidex
           href: ../intrinsics/cpuid-cpuidex.md
         - name: __debugbreak
