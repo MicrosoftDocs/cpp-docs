@@ -10,7 +10,7 @@ ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
 
 **Microsoft Specific**
 
-Detects if the specified ISA feature and AVX10 version is supported by either the processor at run time or the arch flag (see [`/arch` (x86)](..\build\reference\arch-x86.md), [`/arch` (x64)](..\build\reference\arch-x64.md)) at compile time.
+Detects if either the processor at run time or the arch flag (see [`/arch` (x86)](..\build\reference\arch-x86.md), [`/arch` (x64)](..\build\reference\arch-x64.md)) at compile time  supports the specified ISA feature and AVX10 version.
 
 ## Syntax
 
@@ -44,7 +44,7 @@ bool __check_arch_support(
 [in] ISA feature to be checked.
 
 *avx10_version*\
-[in] AVX10 version to be checked. Should be 0 if AVX10 version check is not required.
+[in] AVX10 version to be checked. Should be 0 if AVX10 version check isn't required.
 
 ## Return value
 
@@ -64,27 +64,28 @@ bool __check_arch_support(
 
 The `__check_isa_support` intrinsic provides a faster alternative to [`__cpuid`](cpuid-cpuidex.md) intrinsic to dynamically check for most frequently used CPU features. The `__check_arch_support` intrinsic provides an alternative to [`predefined macros`](..\preprocessor\predefined-macros.md) for compile time code selection based on ISA extensions.
 
-The feature values that can be used in these intrisics are in the table below. These are defined in isa_availability.h
+The following feature values can be used in these intrinsics. These values are defined in isa_availability.h.
 
 |Feature Value Name|Description|
 |---------------|------------------|
-|`__IA_SUPPORT_VECTOR128`|Vector instructions with lengths up to 128 bits. This is enabled for SSE2 or later extensions|
-|`__IA_SUPPORT_VECTOR256`|Vector instructions with lengths up to 256 bits. This is enabled for AVX2 or later extensions|
-|`__IA_SUPPORT_VECTOR512`|Vector instructions with lengths up to 512 bits. This is enabled for AVX-512 or later extensions|
-|`__IA_SUPPORT_AVX10`|AVX10 support. This is enabled for AVX10.1 or later extensions|
+|`__IA_SUPPORT_VECTOR128`|Vector instructions with lengths up to 128 bits. This feature is enabled for SSE2 or later extensions|
+|`__IA_SUPPORT_VECTOR256`|Vector instructions with lengths up to 256 bits. This feature is enabled for AVX2 or later extensions|
+|`__IA_SUPPORT_VECTOR512`|Vector instructions with lengths up to 512 bits. This feature is enabled for AVX-512 or later extensions|
+|`__IA_SUPPORT_AVX10`|AVX10 support. This feature is enabled for AVX10.1 or later extensions|
 |`__IA_SUPPORT_SSE42`|SSE4.2 support|
-|`__IA_SUPPORT_SV128X`|AVX-512 instructions for scalar of 128-bits. Can be used to signal that certain useful AVX-512 instruction like conversions can be used in scalar code|
+|`__IA_SUPPORT_SV128X`|AVX-512 instructions for scalar of 128 bits. Can be used to signal that certain useful AVX-512 instruction like conversions can be used in scalar code|
 |`__IA_SUPPORT_AVX10_2`|AVX10.2 support|
 |`__IA_SUPPORT_APX`|APX support|
 |`__IA_SUPPORT_FP16`|Half-precision floating-point instruction support|
 
 Multiple feature values can be combined together using the OR(|) operator.
 
-The `__check_arch_support` intrinsic can always be evaluated at compile time, so using it in optimized code adds no additional instructions to execute.
+The `__check_arch_support` intrinsic can always be evaluated at compile time, so using it in optimized code adds no extra instructions to execute.
+Support for these intrinsics was added in Visual Studio 2022.
 
 ## Example
 
-This example uses 256-bit AVX-512 instructions to vectorize conversion of double-precision values in input to 64-bit signed integer values in output. The tail loop for converting any source values not handled by the vector code is also used in case the vector code cannot be executed. Note that the compile-time support is checked before runtime support so that a runtime check can be avoided if possible.
+This example uses 256-bit AVX-512 instructions to vectorize conversion of double-precision values in input to 64-bit signed integer values in output. The tail loop for converting any source values not handled by the vector code is also used in case the vector code can't be executed. The compile-time support is checked before runtime support so that a runtime check can be avoided if possible.
 
 ```cpp
 // Compile this test with: /EHsc /O2
