@@ -1,16 +1,15 @@
 ---
 description: "Learn more about: __check_isa_support, __check_arch_support"
 title: "__check_isa_support, __check_arch_support"
-ms.date: "09/02/2019"
+ms.date: "11/07/2024"
 f1_keywords: ["__check_isa_support", "__check_arch_support"]
 helpviewer_keywords: ["__check_isa_support intrinsic", "__check_arch_support intrinsic"]
-ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
 ---
 # __check_isa_support, __check_arch_support
 
 **Microsoft Specific**
 
-Detects if either the processor at run time or the arch flag (see [`/arch` (x86)](..\build\reference\arch-x86.md), [`/arch` (x64)](..\build\reference\arch-x64.md)) at compile time  supports the specified ISA feature and AVX10 version.
+Detects if either the processor at run time or the arch flag (see [`/arch` (x86)](..\build\reference\arch-x86.md), [`/arch` (x64)](..\build\reference\arch-x64.md)) at compile time supports the specified ISA feature and AVX10 version.
 
 ## Syntax
 
@@ -26,7 +25,7 @@ _Bool __check_arch_support(
 );
 ```
 
-```C++
+```cpp
 bool __check_isa_support(
    unsigned feature,
    unsigned avx10_version
@@ -58,7 +57,7 @@ bool __check_arch_support(
 |`__check_isa_support`|x86, x64|
 |`__check_arch_support`|x86, x64|
 
-**Header file** \<immintrin.h>
+**Header file** `<immintrin.h>`
 
 ## Remarks
 
@@ -78,14 +77,14 @@ The following feature values can be used in these intrinsics. These values are d
 |`__IA_SUPPORT_APX`|APX support|
 |`__IA_SUPPORT_FP16`|Half-precision floating-point instruction support|
 
-Multiple feature values can be combined together using the OR(|) operator.
+Multiple feature values can be combined using the OR(|) operator.
 
 The `__check_arch_support` intrinsic can always be evaluated at compile time, so using it in optimized code adds no extra instructions to execute.
-Support for these intrinsics was added in Visual Studio 2022.
+Support for these intrinsics was added in Visual Studio 2022 version 17.10.
 
 ## Example
 
-This example uses 256-bit AVX-512 instructions to vectorize conversion of double-precision values in input to 64-bit signed integer values in output. The tail loop for converting any source values not handled by the vector code is also used in case the vector code can't be executed. The compile-time support is checked before runtime support so that a runtime check can be avoided if possible.
+This example uses 256-bit AVX-512 instructions to vectorize conversion of double-precision values to 64-bit signed integer values. The tail loop for converting any source values not handled by the vector code is also used in case the vector code can't be executed. The compile-time support is checked before runtime support so that a runtime check can be avoided if possible.
 
 ```cpp
 // Compile this test with: /EHsc /O2
