@@ -47,8 +47,8 @@ bool __check_arch_support(
 
 ## Return value
 
-`__check_isa_support` returns `true` if the `feature` and `avx10_version` are supported on the processor at run time, `false` otherwise.
-`__check_arch_support` returns `true` if the `feature` and `avx10_version` are supported by the `/arch` flag passed in at compile time, `false` otherwise.
+`__check_isa_support` returns `true` if the processor supports `feature` and `avx10_version` at run time, `false` otherwise.
+`__check_arch_support` returns `true` if the `/arch` flag supports `feature` and `avx10_version` at compile time, `false` otherwise.
 
 ## Requirements
 
