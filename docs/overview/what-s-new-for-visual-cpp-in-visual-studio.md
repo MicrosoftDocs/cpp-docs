@@ -27,45 +27,45 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 | New features in the Visual Studio 17.12 IDE |[Visual Studio 2022 version 17.12 Release Notes](/visualstudio/releases/2022/release-notes) |
 | C++ language conformance improvements in Visual Studio 2022 17.12 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.12](cpp-conformance-improvements.md#improvements_1712) |
 
-A partial list of new features:
+A quick highlight of some of the new features:
 
-- Standard Library Enhancements:
-    - C++23 Formatting ranges ([P2286R8](https://wg21.link/P2286R8)) implementation is now complete with the finishing of formatters for the container adaptors `stack`, `queue`, and `priority_queue`
-    - Multidimensional subscript operators, which also supports `<mdspan>`. For example: `print("m[{}, {}]: '{}'; ", i, j, m[i, j])`.
-- Game development in C++
-    - For Unreal Engine projects, you can now set the command line arguments to pass to your application directly from the toolbar. For more information, see [Set command line arguments for Unreal Engine projects](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#set-command-line-arguments).
-    :::image type="content" source="./media/command-line-argument-dropdown.png" alt-text="A screenshot of the command-line argument dropdown. It contains one command line argument: -graphicsadaptor=0.":::
-    - Work directly with Unreal Engine projects in Visual Studio. For more information, see [Work with Unreal Engine projects in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart).
-- Build Insights
-    - You can run Build Insights on selected projects. To do this, select some files in the **Solution Explorer**, right-click, and choose **Run Build Insights on Selected Files**.
-    :::image type="content" source="./media/build-insights-run-on-selected-files.png" alt-text="A screenshot of files in the Solution Explorer. The context menu is open and the option to Run Build Insights on Selected Files is highlighted.":::
-    - You can filter Build Insights results by project. To do this, click the filter button on the filter column header and select the projects you want to filter by.
-    :::image type="content" source="./media/build-insights-filter-by-project.png" alt-text="A screenshot of the Build Insights window with the Included Files tab open. The filter button has been selected and a list of projects appears. Checkboxes next to Two projects are checked.":::
-    - You can see a short description on how each tab of Build Insights can be used, along with a link to the documentation for a detailed explanation.
-    :::image type="content" source="./media/build-insights-view-explanations.png" alt-text="A screenshot of the Build Insights window with the view explanations button (a question mark in a circle) highlighted.":::
-- Copilot
-    - You can click **Ask Copilot** next to the value of a variable to get AI-driven insights into what led to your current program state. For example, the following program has an off-by-one error in its loop condition, resulting in undefined behavior:
-    :::image type="complex" source="./media/copilot-smart-variable-inspection.png" alt-text="A screenshot of the Autos window. The variable named it is <NULL>. The Ask Copilot icon next to it is highlighted.":::
-    The code that caused this problem is: for (auto it = h.animals_.begin(); it <= h.animals_.end(); it++).
-    :::image-end:::
-    If you click Ask Copilot, it tells you what's wrong:
-    :::image type="complex" source="./media/copilot-smart-variable-explanation.png" alt-text="A screenshot of a GitHub Copilot window.":::
-    By way of context, this error is inside a function defined as int calculate_number_of_cats(const house& h). The GitHub Copilot message says: "The value of the expression it is <NULL>, which means that the iterator is not pointing to any valid element in the vector animals_. In the context of your program, it is supposed to iterate over the animals_ vector in the house object to count the number of cat objects. Why it is <null>  Based on the locals and acall stack context: the house object h has an empty animals_ vector (size=0). The loop condition it <= h.animals_.end() is incorrect. It should be it != h.animals_.end()."
-    :::image-end:::
-    - You can click **Ask Copilot** on errors in the Visual Studio **Error List** to get help on the error and a suggested fix. For example:
-    :::image type="complex" source="./media/copilot-fix-my-code.png" alt-text="A screenshot of the Error List window.":::
-    The Ask Copilot icon is highlighted next to an error that unique_ptr is attempting to reference a deleted function.
-    :::image-end:::
-    If you click Ask Copilot, it tells you what went wrong:
-    :::image type="complex" source="./media/copilot-fix-my-code-suggestion.png" alt-text="A screenshot of the GitHub Copilot explanation for the error.":::
-    The Copilot message says: "The error occurs because the range-based for loop was attempting to copy std::unique_ptr objects, which is not allowed since std::unique_ptr cannot be copied. To fix this, I changed the loop to use a reference to avoid copying the std::unique_ptr objects. This way, the loop iterates over references to the std::unique_ptr objects, which is allowed."
-    :::image-end:::
-- Debugging
-    - The debugger now displays return values inline, making it easier to see the return value of functions that have complex return statements.
-    :::image type="content" source="../media/debugger-inline-return-values.png" alt-text="A screenshot of a tooltip showing the value 8.25. It is the result of the expression following the return statement that was just stepped over."::: 
-    - For errors in the Visual Studio Error List, you can click Ask Copilot for an explanation and a fix to get suggestions on how to rectify your errors. For example, if we try to fix the code from the previous section by introducing a range based for loop, we might get the following error: 
-    - New debug visualizers, including for `mutex`, `recursive_mutex`, and `move_iterator`.
-    - Improved performance for `popcount()` on ARM64, improved vectorized implementations for the `minmax_element()` and `minmax()` algorithm families, and optimized the `search()` and `find_end()` algorithms.
+- **Standard Library Enhancements**
+  - C++23 Formatting ranges ([P2286R8](https://wg21.link/P2286R8)) implementation is now complete with the finishing of formatters for the container adaptors `stack`, `queue`, and `priority_queue`
+  - Multidimensional subscript operators, which also supports `<mdspan>`. For example: `print("m[{}, {}]: '{}'; ", i, j, m[i, j])`.
+- **Game development in C++**
+  - Directly open Unreal Engine projects in Visual Studio--without having to generate a Visual Studio solution file. For more information, see [Work with Unreal Engine projects in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart).
+  - You can specify the command line arguments to pass when debugging directly from the toolbar. For more information, see [Set command line arguments for Unreal Engine projects](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#set-command-line-arguments).
+  :::image type="content" source="./media/command-line-argument-dropdown.png" alt-text="A screenshot of the command-line argument dropdown. It contains one command line argument: -graphicsadaptor=0.":::
+- **Build Insights**
+  - You can run Build Insights on selected projects. To do this, select the files you want in the **Solution Explorer**, right-click and choose **Run Build Insights on Selected Files**:
+  :::image type="content" source="./media/build-insights-run-on-selected-files.png" alt-text="A screenshot of files in the Solution Explorer. The context menu is open and the option to Run Build Insights on Selected Files is highlighted.":::
+  - You can filter Build Insights results by project. To do this, click the filter button on the filter column header and select the projects you want to filter by:
+  :::image type="content" source="./media/build-insights-filter-by-project.png" alt-text="A screenshot of the Build Insights window with the Included Files tab open. The filter button has been selected and a list of projects appears. Checkboxes next to Two projects are checked.":::
+  - You can see a short description for each tab of the Build Insights window, along with a link to the documentation for a detailed explanation:
+  :::image type="content" source="./media/build-insights-view-explanations.png" alt-text="A screenshot of the Build Insights window with the view explanations button (a question mark in a circle) highlighted.":::
+- **GitHub Copilot**
+  - You can click **Ask Copilot** next to the value of a variable to get AI-driven insights into what led to your current program state. For example, the following program has an off-by-one error in its loop condition, resulting in undefined behavior:
+  :::image type="complex" source="./media/copilot-smart-variable-inspection.png" alt-text="A screenshot of the Autos window. The variable named it is NULL. The Ask Copilot icon next to it is highlighted.":::
+  The code that caused this problem is: for (auto it = h.animals_.begin(); it <= h.animals_.end(); it++).
+  :::image-end:::
+  If you click Ask Copilot, it tells you what's wrong:
+  :::image type="complex" source="./media/copilot-smart-variable-explanation.png" alt-text="A screenshot of a GitHub Copilot window.":::
+  By way of context, this error is inside a function defined as int calculate_number_of_cats(const house& h). The GitHub Copilot message says: "The value of the expression it is NULL, which means that the iterator is not pointing to any valid element in the vector animals_. In the context of your program, it is supposed to iterate over the animals_ vector in the house object to count the number of cat objects. Why it is null. Based on the locals and acall stack context: the house object h has an empty animals_ vector (size=0). The loop condition it <= h.animals_.end() is incorrect. It should be it != h.animals_.end()."
+  :::image-end:::
+  - You can click **Ask Copilot** on errors in the Visual Studio **Error List** to get help on the error and a suggested fix. For example:
+  :::image type="complex" source="./media/copilot-fix-my-code.png" alt-text="A screenshot of the Error List window.":::
+  The Ask Copilot icon is highlighted next to an error that unique_ptr is attempting to reference a deleted function.
+  :::image-end:::
+  If you click Ask Copilot, it tells you what went wrong:
+  :::image type="complex" source="./media/copilot-fix-my-code-suggestion.png" alt-text="A screenshot of the GitHub Copilot explanation for the error.":::
+  The Copilot message says: "The error occurs because the range-based for loop was attempting to copy std::unique_ptr objects, which is not allowed since std::unique_ptr cannot be copied. To fix this, I changed the loop to use a reference to avoid copying the std::unique_ptr objects. This way, the loop iterates over references to the std::unique_ptr objects, which is allowed."
+  :::image-end:::
+- **Debugging**
+  - The debugger now displays return values inline, making it easier to see the return value of functions that have complex return statements.
+  :::image type="content" source="./media/debugger-inline-return-values.png" alt-text="A screenshot of a tooltip showing the value 8.25. It is the result of the expression following the return statement that was just stepped over.":::
+  - For errors in the Visual Studio Error List, you can click Ask Copilot for an explanation and a fix to get suggestions on how to rectify your errors. For example, if we try to fix the code from the previous section by introducing a range based for loop, we might get the following error: 
+  - New debug visualizers, including for `mutex`, `recursive_mutex`, and `move_iterator`.
+  - Improved performance for `popcount()` on ARM64, improved vectorized implementations for the `minmax_element()` and `minmax()` algorithm families, and optimized the `search()` and `find_end()` algorithms.
 
 ## What's new for C++ in Visual Studio version 17.11
 
@@ -80,12 +80,12 @@ A partial list of new features:
 
 A partial list of new features:
 
-- Standard Library Enhancements:
+- **Standard Library Enhancements**
     - The formatted output implementation now includes `std::range_formatter` and formatters for `std::pair` and `std::tuple`.
     - Added support for `std::println()` with no arguments. This prints a blank line as proposed in [P3142R0](https://wg21.link/P3142R0).
     - Improved vectorization for several algorithms including `replace_copy()`, `replace_copy_if()`, `ranges::replace_copy`, `ranges::replace_copy_if`, `find_first_of()` and `ranges::find_first_of`, for 8-bit and 16-bit elements, `mismatch()`, `ranges::mismatch`, `count()` `ranges::count`, `find()`, `ranges::find`, `ranges::find_last`, and `ranges::iota`.
 
-- Game development in C++
+- **Game development in C++**
     - You can now add common Unreal Engine class templates, modules, and plugins from within Visual Studio. For more information, see [Add Unreal Engine classes, modules, and plugins in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-add-class-module-plugin).
     - The new Unreal Engine toolbar provides quick access to Unreal Engine related actions from within Visual Studio. The toolbar allows you to quickly attach to Unreal Engine processes, rescan the Blueprints cache, quickly access the Unreal Engine Log, and provides quick access to the Unreal Engine Configuration Page for Visual Studio. For more information, see [Unreal Engine Toolbar](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#unreal-engine-toolbar).
     - You can now filter trace results by project. Also, results in each row show the relative path and file name instead of the full path. Results grouping in the **Included Files** view is also improved:
@@ -94,7 +94,7 @@ A partial list of new features:
     :::image-end:::
 - CMake debugging
     - You can now debug your CMake scripts and `CMakeLists.txt` files in the Visual Studio debugger for CMake projects that target Linux via Windows Subsystem for Linux (WSL) or SSH. To start a CMake debugging session in Visual Studio, set a breakpoint in your `CMakeLists.txt` file and then navigate to **Project** > **Configure Cache with CMake Debugging**.
-- Copilot
+- **GitHub Copilot**
     - When you hover over symbols in the code editor, click the Copilot **Tell me more** button in the Quick Info dialog to learn more about a given symbol:
     :::image type="complex" source="./media/github-copilot-quick-info.png" alt-text="A screenshot of the Quick Info window.":::
     The Quick Info window is shown above a function. The Tell me more link is highlighted.
@@ -105,10 +105,10 @@ A partial list of new features:
       :::image-end:::
     You need an active [GitHub Copilot subscription](https://visualstudio.microsoft.com/github-copilot/). Right-click the variable you wish to rename, and choose **Rename** (`Ctrl+R`, `Ctrl+R`). Select the GitHub Copilot sparkle icon to generate naming suggestions.
 
-- Debugging
+- **Debugging**
     - Conditional breakpoints in C++ are significantly faster.
 
-- Diagnostics improvements
+- **Diagnostics improvements**
     - Improved diagnostics when calling `std::get<T>` on a `std::tuple` that has multiple instances of `T` in its template arguments. MSVC used to report:\
           `error C2338: static_assert failed: 'duplicate type T in get<T>(tuple)'`.\
       Now it reports:\
