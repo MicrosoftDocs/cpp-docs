@@ -9,7 +9,8 @@ helpviewer_keywords: ["__check_isa_support intrinsic", "__check_arch_support int
 
 **Microsoft Specific**
 
-Detects if either the processor at run time or the arch flag (see [`/arch` (x86)](..\build\reference\arch-x86.md), [`/arch` (x64)](..\build\reference\arch-x64.md)) at compile time supports the specified ISA feature and AVX10 version.
+`__check_isa_support` - detects if the processor supports the specified ISA feature and AVX10 version at run time.
+`__check_arch_support` - detects if the arch flag (see [`/arch` (x86)](..\build\reference\arch-x86.md), [`/arch` (x64)](..\build\reference\arch-x64.md)) supports the specified ISA feature and AVX10 version at compile time.
 
 ## Syntax
 
@@ -40,10 +41,10 @@ bool __check_arch_support(
 ### Parameters
 
 *feature*\
-[in] ISA feature to be checked.
+[in] ISA feature to check.
 
 *avx10_version*\
-[in] AVX10 version to be checked. Should be 0 if AVX10 version check isn't required.
+[in] AVX10 version to check. 0 if AVX10 version check isn't required.
 
 ## Return value
 
@@ -61,7 +62,7 @@ bool __check_arch_support(
 
 ## Remarks
 
-The `__check_isa_support` intrinsic provides a faster alternative to [`__cpuid`](cpuid-cpuidex.md) intrinsic to dynamically check for most frequently used CPU features. The `__check_arch_support` intrinsic provides an alternative to [`predefined macros`](..\preprocessor\predefined-macros.md) for compile time code selection based on ISA extensions.
+The `__check_isa_support` intrinsic provides a faster alternative to the [`__cpuid`](cpuid-cpuidex.md) intrinsic to dynamically check for most frequently used CPU features. The `__check_arch_support` intrinsic provides an alternative to the [`predefined macros`](..\preprocessor\predefined-macros.md) for compile time code selection based on ISA extensions.
 
 The following feature values can be used in these intrinsics. These values are defined in `isa_availability.h`.
 
