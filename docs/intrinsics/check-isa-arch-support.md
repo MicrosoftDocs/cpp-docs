@@ -63,7 +63,7 @@ bool __check_arch_support(
 
 The `__check_isa_support` intrinsic provides a faster alternative to [`__cpuid`](cpuid-cpuidex.md) intrinsic to dynamically check for most frequently used CPU features. The `__check_arch_support` intrinsic provides an alternative to [`predefined macros`](..\preprocessor\predefined-macros.md) for compile time code selection based on ISA extensions.
 
-The following feature values can be used in these intrinsics. These values are defined in isa_availability.h.
+The following feature values can be used in these intrinsics. These values are defined in `isa_availability.h`.
 
 |Feature Value Name|Description|
 |---------------|------------------|
