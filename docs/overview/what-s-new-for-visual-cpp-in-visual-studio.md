@@ -33,15 +33,15 @@ A quick highlight of some of the new features:
   - C++23 Formatting ranges ([P2286R8](https://wg21.link/P2286R8)) implementation complete. Added formatters for the container adaptors `stack`, `queue`, and `priority_queue`.
   - Added multidimensional subscript operators, which also support `<mdspan>`. For example: `print("m[{}, {}]: '{}'; ", i, j, m[i, j])`.
 - **Game development in C++**
-  - Directly open Unreal Engine projects in Visual Studio without having to generate a Visual Studio solution file to wrap the Unreal Engine project. For more information, see [Work with Unreal Engine projects in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart).
+  - Directly open Unreal Engine projects in Visual Studio without having to generate a Visual Studio solution file wrapping the Unreal Engine project. For more information, see [Work with Unreal Engine projects in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart).
   - You can specify the command line arguments to pass when debugging directly from the toolbar. For more information, see [Set command line arguments for Unreal Engine projects](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#set-command-line-arguments).
   :::image type="content" source="./media/command-line-argument-dropdown.png" alt-text="A screenshot of the command-line argument dropdown. It contains one command line argument: -graphicsadaptor=0.":::
 - **Build Insights**
   - You can run Build Insights on selected files. Select the files you want in the **Solution Explorer**, right-click, and choose **Run Build Insights on Selected Files**:
   :::image type="content" source="./media/build-insights-run-on-selected-files.png" alt-text="A screenshot of files in the Solution Explorer. The context menu is open and the option to Run Build Insights on Selected Files is highlighted.":::
   - You can filter Build Insights results by project. Click the filter button on the filter column header and select the projects you want to see results for:
-  :::image type="content" source="./media/build-insights-filter-by-project.png" alt-text="A screenshot of the Build Insights window with the Included Files tab open. The filter button has been selected and a list of projects appears. Checkboxes next to Two projects are checked.":::
-  - You can see a short description for the tabs in the Build Insights window, along with a link to the documentation for a detailed explanation, by clicking the question mark icon in the Build Insights window:
+  :::image type="content" source="./media/build-insights-filter-by-project.png" alt-text="A screenshot of the Build Insights window with the Included Files tab open. The filter button was selected and a list of projects appears. Checkboxes next to Two projects are checked.":::
+  - Clicking the question mark icon in the Build Insights window to see a short description for the tabs in the Build Insights window, and a link to the documentation for a detailed explanation:
   :::image type="content" source="./media/build-insights-view-explanations.png" alt-text="A screenshot of the Build Insights window with the view explanations button (a question mark in a circle) highlighted.":::
 - **GitHub Copilot**
   - You can click **Ask Copilot** next to the value of a variable to get AI-driven insights into what led to its current state. For example, the following program has an off-by-one error in its loop condition:
@@ -104,7 +104,7 @@ A partial list of new features:
     You need an active [GitHub Copilot subscription](https://visualstudio.microsoft.com/github-copilot/). Right-click the variable you wish to rename, and choose **Rename** (`Ctrl+R`, `Ctrl+R`). Select the GitHub Copilot sparkle icon to generate naming suggestions.
 
 - **Debugging**
-    - Conditional breakpoints in C++ are much faster.
+    - Conditional breakpoints in C++ are faster.
 
 - **Diagnostics improvements**
     - Improved diagnostics when calling `std::get<T>` on a `std::tuple` that has multiple instances of `T` in its template arguments. MSVC used to report:\
