@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 11/6/2024
+ms.date: 11/12/2024
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 ms.custom: intro-whats-new
@@ -30,40 +30,40 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 A quick highlight of some of the new features:
 
 - **Standard Library Enhancements**
-  - C++23 Formatting ranges ([P2286R8](https://wg21.link/P2286R8)) implementation complete with the addition of formatters for the container adaptors `stack`, `queue`, and `priority_queue`.
+  - C++23 Formatting ranges ([P2286R8](https://wg21.link/P2286R8)) implementation complete. Added formatters for the container adaptors `stack`, `queue`, and `priority_queue`.
   - Added multidimensional subscript operators, which also support `<mdspan>`. For example: `print("m[{}, {}]: '{}'; ", i, j, m[i, j])`.
 - **Game development in C++**
-  - Directly open Unreal Engine projects in Visual Studio without having to generate a Visual Studio solution file. For more information, see [Work with Unreal Engine projects in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart).
-  - You can specify the command line arguments to pass when debugging, directly from the toolbar. For more information, see [Set command line arguments for Unreal Engine projects](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#set-command-line-arguments).
+  - Directly open Unreal Engine projects in Visual Studio without having to generate a Visual Studio solution file to wrap the Unreal Engine project. For more information, see [Work with Unreal Engine projects in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart).
+  - You can specify the command line arguments to pass when debugging directly from the toolbar. For more information, see [Set command line arguments for Unreal Engine projects](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#set-command-line-arguments).
   :::image type="content" source="./media/command-line-argument-dropdown.png" alt-text="A screenshot of the command-line argument dropdown. It contains one command line argument: -graphicsadaptor=0.":::
 - **Build Insights**
-  - You can run Build Insights on selected projects. Select the files you want in the **Solution Explorer**, right-click, and choose **Run Build Insights on Selected Files**:
+  - You can run Build Insights on selected files. Select the files you want in the **Solution Explorer**, right-click, and choose **Run Build Insights on Selected Files**:
   :::image type="content" source="./media/build-insights-run-on-selected-files.png" alt-text="A screenshot of files in the Solution Explorer. The context menu is open and the option to Run Build Insights on Selected Files is highlighted.":::
-  - You can filter Build Insights results by project. Click the filter button on the filter column header and select the projects you want to filter by:
+  - You can filter Build Insights results by project. Click the filter button on the filter column header and select the projects you want to see results for:
   :::image type="content" source="./media/build-insights-filter-by-project.png" alt-text="A screenshot of the Build Insights window with the Included Files tab open. The filter button has been selected and a list of projects appears. Checkboxes next to Two projects are checked.":::
-  - You can see a short description for the tabs in the Build Insights window, along with a link to the documentation for a detailed explanation:
+  - You can see a short description for the tabs in the Build Insights window, along with a link to the documentation for a detailed explanation, by clicking the question mark icon in the Build Insights window:
   :::image type="content" source="./media/build-insights-view-explanations.png" alt-text="A screenshot of the Build Insights window with the view explanations button (a question mark in a circle) highlighted.":::
 - **GitHub Copilot**
-  - You can click **Ask Copilot** next to the value of a variable to get AI-driven insights into what led to your current program state. For example, the following program has an off-by-one error in its loop condition, resulting in undefined behavior:
+  - You can click **Ask Copilot** next to the value of a variable to get AI-driven insights into what led to its current state. For example, the following program has an off-by-one error in its loop condition:
   :::image type="complex" source="./media/copilot-smart-variable-inspection.png" alt-text="A screenshot of the Autos window. The variable named it is NULL. The Ask Copilot icon next to it is highlighted.":::
   The code that caused this problem is: for (auto it = h.animals_.begin(); it <= h.animals_.end(); it++).
   :::image-end:::
-  If you click Ask Copilot, it tells you what's wrong:
+  If you click Ask Copilot icon for the `it` variable, it will tell you why it is `<NULL>`:
   :::image type="complex" source="./media/copilot-smart-variable-explanation.png" alt-text="A screenshot of a GitHub Copilot window.":::
-  By way of context, this error is inside a function defined as int calculate_number_of_cats(const house& h). The GitHub Copilot message says: "The value of the expression it is NULL, which means that the iterator is not pointing to any valid element in the vector animals_. In the context of your program, it is supposed to iterate over the animals_ vector in the house object to count the number of cat objects. Why it is null. Based on the locals and call stack context: the house object h has an empty animals_ vector (size=0). The loop condition it <= h.animals_.end() is incorrect. It should be it != h.animals_.end()."
+  This error is inside a function defined as int calculate_number_of_cats(const house& h). The GitHub Copilot message says: "The value of the expression it is NULL, which means that the iterator is not pointing to any valid element in the vector animals_. In the context of your program, it is supposed to iterate over the animals_ vector in the house object to count the number of cat objects. Why it is null. Based on the locals and call stack context: the house object h has an empty animals_ vector (size=0). The loop condition it <= h.animals_.end() is incorrect. It should be it != h.animals_.end()."
   :::image-end:::
-  - You can click **Ask Copilot** on errors in the Visual Studio **Error List** to get help on the error and a suggested fix. For example:
+  - You can click **Ask Copilot** about errors in the Visual Studio **Error List** to get help on the error and a suggested fix. For example:
   :::image type="complex" source="./media/copilot-fix-my-code.png" alt-text="A screenshot of the Error List window.":::
   The Ask Copilot icon is highlighted next to an error that unique_ptr is attempting to reference a deleted function.
   :::image-end:::
-  If you click Ask Copilot, it tells you what went wrong:
+  If you click Ask Copilot, it tells you about the error:
   :::image type="complex" source="./media/copilot-fix-my-code-suggestion.png" alt-text="A screenshot of the GitHub Copilot explanation for the error.":::
   The Copilot message says: "The error occurs because the range-based for loop was attempting to copy std::unique_ptr objects, which is not allowed since std::unique_ptr cannot be copied. To fix this, I changed the loop to use a reference to avoid copying the std::unique_ptr objects. This way, the loop iterates over references to the std::unique_ptr objects, which is allowed."
   :::image-end:::
 - **Debugging**
-  - The debugger now displays return values inline, making it easier to see the return value of functions that have complex return statements.
-  :::image type="content" source="./media/debugger-inline-return-values.png" alt-text="A screenshot of a tooltip showing the value 8.25. It is the result of the expression following the return statement that was  stepped over.":::
   - New debug visualizers for `mutex`, `recursive_mutex`, and `move_iterator`.
+  - The debugger now displays return values inline:
+  :::image type="content" source="./media/debugger-inline-return-values.png" alt-text="A screenshot of a tooltip showing the value 8.25. It is the result of the expression following the return statement that was  stepped over.":::
 
 ## What's new for C++ in Visual Studio version 17.11
 
@@ -420,7 +420,7 @@ A partial list of new features in 17.1:
 | For more information about | See |
 |---|---|
 | New features in the Visual Studio 17.0 IDE | [Visual Studio 2022 version 17.0 Release Notes](/visualstudio/releases/2022/release-notes-v17.0) |
-| Standard Library (STL) merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.0](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
+| Standard Library (STL) merged C++23 and C++26 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.0](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
 | C++ language conformance improvements in Visual Studio 2022 17.0 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.10](cpp-conformance-improvements.md#improvements_170) |
 
 An overview of some of the new features in Visual Studio 2022 version 17.0:

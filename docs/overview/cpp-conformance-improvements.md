@@ -1,13 +1,13 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 11/08/2024
+ms.date: 11/12/2024
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022
 
-Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use the **In this article** links at the top of the article.
+Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use the **In this article** links at the top of this article.
 
 This document lists the changes in Visual Studio 2022.
 
@@ -21,7 +21,7 @@ For changes in earlier versions of Visual Studio:
 
 ## <a name="improvements_1712"></a> Conformance improvements in Visual Studio 2022 version 17.12
 
-Visual Studio 2022 version 17.12 has the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+Visual Studio 2022 version 17.12 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.12](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1712).
 
@@ -29,13 +29,13 @@ For an in-depth summary of changes made to the Standard Template Library, includ
 
 This is a source/binary breaking change.
 
-The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising, or lead to compiler errors, in some scenarios. Implicit conversion functions are discouraged by the C++ Core Guidelines (C.164), and `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
+The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. Implicit conversion functions are discouraged by the [C++ Core Guidelines (C.164)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conversion), and `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
 
 To help address this, the conversion to `bool` is now explicit. The conversion to `Interface*` is unchanged.
 
-A macro is provided to opt-out of this new behavior and restore the previous implicit conversion if necessary. Compile with `/D_COM_DISABLE_EXPLICIT_OPERATOR_BOOL` to opt-out of this change. We recommend that the code be modified to not rely on the implicit conversion instead.
+A macro is provided to opt-out of this new behavior and restore the previous implicit conversion. Compile with `/D_COM_DISABLE_EXPLICIT_OPERATOR_BOOL` to opt-out of this change. We recommend that the code be modified to not rely on the implicit conversion.
 
-**Example**
+For example:
 
 ```cpp
 #include <comip.h>
@@ -55,15 +55,17 @@ int main()
 }
 ```
 
-### Constant expressions are no longer always noexcept in permissive mode
+### Constant expressions are no longer always `noexcept` in permissive mode
 
 This is a source/binary breaking change.
 
-The short-lived resolution to core issue 1351 specified that a constant expression is always `noexcept`, even if it involves a function call to a function declared with a potentially-throwing exception specification. This wording was removed in C++17, although the Microsoft Visual C++ compiler still supported it in `/permissive` mode in all C++ language versions.
+A constant expression was always `noexcept`, even if it involved a function call to a function declared with a potentially-throwing exception specification. This wording was removed in C++17, although the Microsoft Visual C++ compiler still supported it in `/permissive` mode in all C++ language versions.
 
-The `/permissive` mode behavior is removed. Constant expressions are no longer given special implicit behavior. The `noexcept` specifier on `constexpr` functions is now respected in all modes. This change is required for correct implementation of later core issue resolutions that rely on the standard `noexcept` behavior.
+This `/permissive` mode behavior is removed. Constant expressions are no longer given special implicit behavior.
 
-**Example**
+The `noexcept` specifier on `constexpr` functions is now respected in all modes. This change is required for correct implementation of later core issue resolutions that rely on the standard `noexcept` behavior.
+
+For example:
 
 ```cpp
 constexpr int f(bool b) noexcept(false)
@@ -88,7 +90,7 @@ void g(bool b)
 
 ## <a name="improvements_1711"></a> Conformance improvements in Visual Studio 2022 version 17.11
 
-Visual Studio 2022 version 17.11 has the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+Visual Studio 2022 version 17.11 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.11](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1711).
 
@@ -105,7 +107,7 @@ Per [P2286R8](https://wg21.link/P2286R8), `range_formatter` is now implemented. 
 
 ## <a name="improvements_1710"></a> Conformance improvements in Visual Studio 2022 version 17.10
 
-Visual Studio 2022 version 17.10 has the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+Visual Studio 2022 version 17.10 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
 
