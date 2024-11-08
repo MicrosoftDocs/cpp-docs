@@ -31,13 +31,13 @@ A quick highlight of some of the new features:
 
 - **Standard Library Enhancements**
   - C++23 Formatting ranges ([P2286R8](https://wg21.link/P2286R8)) implementation is now complete with the finishing of formatters for the container adaptors `stack`, `queue`, and `priority_queue`
-  - Multidimensional subscript operators, which also supports `<mdspan>`. For example: `print("m[{}, {}]: '{}'; ", i, j, m[i, j])`.
+  - Multidimensional subscript operators, which also support `<mdspan>`. For example: `print("m[{}, {}]: '{}'; ", i, j, m[i, j])`.
 - **Game development in C++**
   - Directly open Unreal Engine projects in Visual Studio--without having to generate a Visual Studio solution file. For more information, see [Work with Unreal Engine projects in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart).
   - You can specify the command line arguments to pass when debugging directly from the toolbar. For more information, see [Set command line arguments for Unreal Engine projects](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#set-command-line-arguments).
   :::image type="content" source="./media/command-line-argument-dropdown.png" alt-text="A screenshot of the command-line argument dropdown. It contains one command line argument: -graphicsadaptor=0.":::
 - **Build Insights**
-  - You can run Build Insights on selected projects. To do this, select the files you want in the **Solution Explorer**, right-click and choose **Run Build Insights on Selected Files**:
+  - You can run Build Insights on selected projects. To do this, select the files you want in the **Solution Explorer**, right-click, and choose **Run Build Insights on Selected Files**:
   :::image type="content" source="./media/build-insights-run-on-selected-files.png" alt-text="A screenshot of files in the Solution Explorer. The context menu is open and the option to Run Build Insights on Selected Files is highlighted.":::
   - You can filter Build Insights results by project. To do this, click the filter button on the filter column header and select the projects you want to filter by:
   :::image type="content" source="./media/build-insights-filter-by-project.png" alt-text="A screenshot of the Build Insights window with the Included Files tab open. The filter button has been selected and a list of projects appears. Checkboxes next to Two projects are checked.":::
@@ -50,7 +50,7 @@ A quick highlight of some of the new features:
   :::image-end:::
   If you click Ask Copilot, it tells you what's wrong:
   :::image type="complex" source="./media/copilot-smart-variable-explanation.png" alt-text="A screenshot of a GitHub Copilot window.":::
-  By way of context, this error is inside a function defined as int calculate_number_of_cats(const house& h). The GitHub Copilot message says: "The value of the expression it is NULL, which means that the iterator is not pointing to any valid element in the vector animals_. In the context of your program, it is supposed to iterate over the animals_ vector in the house object to count the number of cat objects. Why it is null. Based on the locals and acall stack context: the house object h has an empty animals_ vector (size=0). The loop condition it <= h.animals_.end() is incorrect. It should be it != h.animals_.end()."
+  By way of context, this error is inside a function defined as int calculate_number_of_cats(const house& h). The GitHub Copilot message says: "The value of the expression it is NULL, which means that the iterator is not pointing to any valid element in the vector animals_. In the context of your program, it is supposed to iterate over the animals_ vector in the house object to count the number of cat objects. Why it is null. Based on the locals and call stack context: the house object h has an empty animals_ vector (size=0). The loop condition it <= h.animals_.end() is incorrect. It should be it != h.animals_.end()."
   :::image-end:::
   - You can click **Ask Copilot** on errors in the Visual Studio **Error List** to get help on the error and a suggested fix. For example:
   :::image type="complex" source="./media/copilot-fix-my-code.png" alt-text="A screenshot of the Error List window.":::
@@ -62,7 +62,7 @@ A quick highlight of some of the new features:
   :::image-end:::
 - **Debugging**
   - The debugger now displays return values inline, making it easier to see the return value of functions that have complex return statements.
-  :::image type="content" source="./media/debugger-inline-return-values.png" alt-text="A screenshot of a tooltip showing the value 8.25. It is the result of the expression following the return statement that was just stepped over.":::
+  :::image type="content" source="./media/debugger-inline-return-values.png" alt-text="A screenshot of a tooltip showing the value 8.25. It is the result of the expression following the return statement that was  stepped over.":::
   - For errors in the Visual Studio Error List, you can click Ask Copilot for an explanation and a fix to get suggestions on how to rectify your errors. For example, if we try to fix the code from the previous section by introducing a range based for loop, we might get the following error: 
   - New debug visualizers, including for `mutex`, `recursive_mutex`, and `move_iterator`.
   - Improved performance for `popcount()` on ARM64, improved vectorized implementations for the `minmax_element()` and `minmax()` algorithm families, and optimized the `search()` and `find_end()` algorithms.
@@ -106,7 +106,7 @@ A partial list of new features:
     You need an active [GitHub Copilot subscription](https://visualstudio.microsoft.com/github-copilot/). Right-click the variable you wish to rename, and choose **Rename** (`Ctrl+R`, `Ctrl+R`). Select the GitHub Copilot sparkle icon to generate naming suggestions.
 
 - **Debugging**
-    - Conditional breakpoints in C++ are significantly faster.
+    - Conditional breakpoints in C++ are much faster.
 
 - **Diagnostics improvements**
     - Improved diagnostics when calling `std::get<T>` on a `std::tuple` that has multiple instances of `T` in its template arguments. MSVC used to report:\
@@ -131,7 +131,7 @@ A partial list of new features:
 
 A partial list of new features:
 
-- **MSVC Toolset Update**: The MSVC toolset version is updated from 19.39 to 19.40. This may affect projects that have version assumptions. For more information about some ways in which this will affect projects that assume that MSVC versions are all 19.3X for Visual Studio 2022 releases, see [MSVC Toolset Minor Version Number 14.40 in VS 2022 v17.10](https://devblogs.microsoft.com/cppblog/msvc-toolset-minor-version-number-14-40-in-vs-2022-v17-10/).
+- **MSVC Toolset Update**: The MSVC toolset version is updated from 19.39 to 19.40. This may affect projects that have version assumptions. For more information about some ways in which this affects projects that assume that MSVC versions are all 19.3X for Visual Studio 2022 releases, see [MSVC Toolset Minor Version Number 14.40 in VS 2022 v17.10](https://devblogs.microsoft.com/cppblog/msvc-toolset-minor-version-number-14-40-in-vs-2022-v17-10/).
 - **Standard Library Enhancements**: The standard library added support for [P2510R3 Formatting Pointers](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf), which brings the set of format specifiers for pointers when using `std::format` more in line with those that already exist for integers. Improved the vectorized implementations of `std::min_element`, `std::ranges::min`, and friends.
 - **Build Insights**: Now provides template instantiation information. See [Templates View for Build Insights in Visual Studio](https://devblogs.microsoft.com/cppblog/templates-view-for-build-insights-in-visual-studio-2/) or the [Pure Virtual C++ - Templates view for Build Insights in Visual Studio](https://youtu.be/68pOEQ5YA5s) recording.
 - **Unreal Engine Plugin**: There's a new opt-in feature for the Unreal Engine Plugin to run in the background, reducing startup costs. This is an opt-in feature that is activated via **Tools** > **Options** > **Unreal Engine**.
