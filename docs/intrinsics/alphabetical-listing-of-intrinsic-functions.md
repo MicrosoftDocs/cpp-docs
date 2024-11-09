@@ -7,7 +7,7 @@ ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
 ---
 # Alphabetical listing of intrinsic functions
 
-The following sections describe the Microsoft-specific intrinsic functions available on some or all architectures. Other supported intrinsics are documented by processor manufacturers, either in the header files or on their websites. For more information, and links to manufacturer documentation, see these articles: [ARM intrinsics](../intrinsics/arm-intrinsics.md), [ARM64 intrinsics](../intrinsics/arm64-intrinsics.md), [x86 intrinsics](../intrinsics/x86-intrinsics-list.md), and [x64 intrinsics](../intrinsics/x64-amd64-intrinsics-list.md). C Runtime Library (CRT) functions implemented as intrinsics aren't documented here. CRT intrinsic functions are documented in the [C Runtime Library Reference](../c-runtime-library/c-run-time-library-reference.md).
+The following sections describe the Microsoft-specific intrinsic functions available on some or all architectures. Processor manufacturers document other supported intrinsics, either in the header files or on their websites. For more information, and links to manufacturer documentation, see these articles: [ARM intrinsics](../intrinsics/arm-intrinsics.md), [ARM64 intrinsics](../intrinsics/arm64-intrinsics.md), [x86 intrinsics](../intrinsics/x86-intrinsics-list.md), and [x64 intrinsics](../intrinsics/x64-amd64-intrinsics-list.md). C Runtime Library (CRT) functions implemented as intrinsics aren't documented here. CRT intrinsic functions are documented in the [C Runtime Library Reference](../c-runtime-library/c-run-time-library-reference.md).
 
 [`__addfsbyte`, `__addfsword`, `__addfsdword`](../intrinsics/addfsbyte-addfsword-addfsdword.md)
 
@@ -28,6 +28,8 @@ The following sections describe the Microsoft-specific intrinsic functions avail
 [`_bittestandreset`, `_bittestandreset64`](../intrinsics/bittestandreset-bittestandreset64.md)
 
 [`_bittestandset`, `_bittestandset64`](../intrinsics/bittestandset-bittestandset64.md)
+
+[`__check_isa_support`, `__check_arch_support`](../intrinsics/check-isa-arch-support.md)
 
 [`__cpuid`, `__cpuidex`](../intrinsics/cpuid-cpuidex.md)
 
