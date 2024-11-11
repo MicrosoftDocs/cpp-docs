@@ -61,6 +61,8 @@ The following table lists the intrinsics available on x86 processors. The Techno
 | [`_castf64_u64`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_castf64_u64) |  | immintrin.h | `unsigned __int64 _castf64_u64 (double);` |
 | [`_castu32_f32`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_castu32_f32) |  | immintrin.h | `float _castu32_f32 (unsigned __int32);` |
 | [`_castu64_f64`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_castu64_f64) |  | immintrin.h | `double _castu64_f64 (unsigned __int64 a);` |
+| [`__check_isa_support`](check-isa-arch-support.md) |  | immintrin.h | `bool __check_isa_support(unsigned int, unsigned int);` |
+| [`__check_arch_support`](check-isa-arch-support.md) |  | immintrin.h | `bool __check_arch_support(unsigned int, unsigned int);` |
 | `_clac` | SMAP | intrin.h | `void _clac(void);` |
 | [`__cpuid`](cpuid-cpuidex.md) |  | intrin.h | `void __cpuid(int *, int);` |
 | [`__cpuidex`](cpuid-cpuidex.md) |  | intrin.h | `void __cpuidex(int *, int, int);` |
