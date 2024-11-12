@@ -1,10 +1,10 @@
 ---
-title: "Tutorial: Troubleshoot header file impact on build time"
+title: "Troubleshoot header file impact on build time"
 description: "Tutorial on how to use Build Insights Includes Files and Includes Tree views to troubleshoot the impact of #include files on build time."
 ms.date: 5/30/2024
 helpviewer_keywords: ["C++ Build Insights", "header file build time", "included files view", "include tree view", "#include analysis", "build time analysis"]
 ---
-# Tutorial: Troubleshoot header file impact on build time
+# Troubleshoot header file impact on build time
 
 Use Build Insights **Included Files** and **Include Tree** views to troubleshoot the impact of `#include` files on C and C++ build times.
 
@@ -44,7 +44,7 @@ Before gathering Build Insights data, set the build options for the type of buil
 
 ## Run Build Insights
 
-On a project of your choosing, and using the **Debug** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
+On a project of your choosing, and using the **Debug** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on \<project name\>** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
 
 :::image type="content" source="./media/build-insights-rebuild-project.png" alt-text="Screenshot of the main menu with Run Build Insights on Selection > Rebuild selected.":::
 
@@ -180,8 +180,9 @@ Or, you can right-click a file in the **Include Tree** view to jump to it in the
 
 ## See also
 
+[Build Insights tips and tricks](build-insights-tips.md)\
 [Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md)\
 [Build Insights in Visual Studio video - Pure Virtual C++ 2023](/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
 [Faster C++ builds, simplified: a new metric for time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time)\
-[Tutorial: Troubleshoot function inlining on build time](build-insights-function-view.md)\
-[Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)
+[Troubleshoot function inlining on build time](build-insights-function-view.md)\
+[vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)

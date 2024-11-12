@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 08/12/2024
+ms.date: 11/12/2024
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 ms.custom: intro-whats-new
@@ -16,6 +16,55 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 - For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md).
 - For information about version build dates, see [Visual Studio 2022 Release History](/visualstudio/releases/2022/release-history).
 
+## What's new for C++ in Visual Studio version 17.12
+
+*Released November 2024*
+
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.12](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-12/) |
+| Standard Library (STL) merged C++26 and C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.12](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1712) |
+| New features in the Visual Studio 17.12 IDE |[Visual Studio 2022 version 17.12 Release Notes](/visualstudio/releases/2022/release-notes) |
+| C++ language conformance improvements in Visual Studio 2022 17.12 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.12](cpp-conformance-improvements.md#improvements_1712) |
+
+A quick highlight of some of the new features:
+
+- **Standard Library Enhancements**
+  - C++23 Formatting ranges ([P2286R8](https://wg21.link/P2286R8)) implementation complete. Added formatters for the container adaptors `stack`, `queue`, and `priority_queue`.
+  - Added multidimensional subscript operators, which also support `<mdspan>`. For example: `print("m[{}, {}]: '{}'; ", i, j, m[i, j])`.
+- **Game development in C++**
+  - Directly open Unreal Engine projects in Visual Studio without having to generate a Visual Studio solution file wrapping the Unreal Engine project. For more information, see [Work with Unreal Engine projects in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart).
+  - You can specify the command line arguments to pass when debugging directly from the toolbar. For more information, see [Set command line arguments for Unreal Engine projects](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#set-command-line-arguments).
+  :::image type="content" source="./media/command-line-argument-dropdown.png" alt-text="A screenshot of the command-line argument dropdown. It contains one command line argument: -graphicsadaptor=0.":::
+- **Build Insights**
+  - You can run Build Insights on selected files. Select the files you want in the **Solution Explorer**, right-click, and choose **Run Build Insights on Selected Files**:
+  :::image type="content" source="./media/build-insights-run-on-selected-files.png" alt-text="A screenshot of files in the Solution Explorer. The context menu is open and the option to Run Build Insights on Selected Files is highlighted.":::
+  - You can filter Build Insights results by project. Click the filter button on the filter column header and select the projects you want to see results for:
+  :::image type="content" source="./media/build-insights-filter-by-project.png" alt-text="A screenshot of the Build Insights window with the Included Files tab open. The filter button was selected and a list of projects appears. Checkboxes next to Two projects are checked.":::
+  - Clicking the question mark icon in the Build Insights window to see a short description for the tabs in the Build Insights window, and a link to the documentation for a detailed explanation:
+  :::image type="content" source="./media/build-insights-view-explanations.png" alt-text="A screenshot of the Build Insights window with the view explanations button (a question mark in a circle) highlighted.":::
+- **GitHub Copilot**
+  - You can click **Ask Copilot** next to the value of a variable to get AI-driven insights into what led to its current state. For example, the following program has an off-by-one error in its loop condition:
+  :::image type="complex" source="./media/copilot-smart-variable-inspection.png" alt-text="A screenshot of the Autos window. The variable named it is NULL. The Ask Copilot icon next to it is highlighted.":::
+  The code that caused this problem is: for (auto it = h.animals_.begin(); it <= h.animals_.end(); it++).
+  :::image-end:::
+  If you click Ask Copilot icon for the `it` variable, it will tell you why it is `<NULL>`:
+  :::image type="complex" source="./media/copilot-smart-variable-explanation.png" alt-text="A screenshot of a GitHub Copilot window.":::
+  This error is inside a function defined as int calculate_number_of_cats(const house& h). The GitHub Copilot message says: "The value of the expression it is NULL, which means that the iterator is not pointing to any valid element in the vector animals_. In the context of your program, it is supposed to iterate over the animals_ vector in the house object to count the number of cat objects. Why it is null. Based on the locals and call stack context: the house object h has an empty animals_ vector (size=0). The loop condition it <= h.animals_.end() is incorrect. It should be it != h.animals_.end()."
+  :::image-end:::
+  - You can click **Ask Copilot** about errors in the Visual Studio **Error List** to get help on the error and a suggested fix. For example:
+  :::image type="complex" source="./media/copilot-fix-my-code.png" alt-text="A screenshot of the Error List window.":::
+  The Ask Copilot icon is highlighted next to an error that unique_ptr is attempting to reference a deleted function.
+  :::image-end:::
+  If you click Ask Copilot, it tells you about the error:
+  :::image type="complex" source="./media/copilot-fix-my-code-suggestion.png" alt-text="A screenshot of the GitHub Copilot explanation for the error.":::
+  The Copilot message says: "The error occurs because the range-based for loop was attempting to copy std::unique_ptr objects, which is not allowed since std::unique_ptr cannot be copied. To fix this, I changed the loop to use a reference to avoid copying the std::unique_ptr objects. This way, the loop iterates over references to the std::unique_ptr objects, which is allowed."
+  :::image-end:::
+- **Debugging**
+  - New debug visualizers for `mutex`, `recursive_mutex`, and `move_iterator`.
+  - The debugger now displays return values inline:
+  :::image type="content" source="./media/debugger-inline-return-values.png" alt-text="A screenshot of a tooltip showing the value 8.25. It is the result of the expression following the return statement that was  stepped over.":::
+
 ## What's new for C++ in Visual Studio version 17.11
 
 *Released August 2024*
@@ -29,26 +78,24 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 
 A partial list of new features:
 
-- Standard Library Enhancements:
+- **Standard Library Enhancements**
     - The formatted output implementation now includes `std::range_formatter` and formatters for `std::pair` and `std::tuple`.
     - Added support for `std::println()` with no arguments. This prints a blank line as proposed in [P3142R0](https://wg21.link/P3142R0).
     - Improved vectorization for several algorithms including `replace_copy()`, `replace_copy_if()`, `ranges::replace_copy`, `ranges::replace_copy_if`, `find_first_of()` and `ranges::find_first_of`, for 8-bit and 16-bit elements, `mismatch()`, `ranges::mismatch`, `count()` `ranges::count`, `find()`, `ranges::find`, `ranges::find_last`, and `ranges::iota`.
 
-- Game development in C++
+- **Game development in C++**
     - You can now add common Unreal Engine class templates, modules, and plugins from within Visual Studio. For more information, see [Add Unreal Engine classes, modules, and plugins in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-add-class-module-plugin).
     - The new Unreal Engine toolbar provides quick access to Unreal Engine related actions from within Visual Studio. The toolbar allows you to quickly attach to Unreal Engine processes, rescan the Blueprints cache, quickly access the Unreal Engine Log, and provides quick access to the Unreal Engine Configuration Page for Visual Studio. For more information, see [Unreal Engine Toolbar](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-quickstart#unreal-engine-toolbar).
     - You can now filter trace results by project. Also, results in each row show the relative path and file name instead of the full path. Results grouping in the **Included Files** view is also improved:
     :::image type="complex" source="./media/include-diagnostics-improved.png" alt-text="A screenshot of the improved Included Files diagnostics results.":::
-      The Included Files view has a new column for the project. The Project column is selected and projects such as (Select All), CompilerIdC, OpenAL, common, and so on, are selected. The included files are listed by relative path and file name and grouped together.
+    The Included Files view has a new column for the project. The Project column is selected and projects such as (Select All), CompilerIdC, OpenAL, common, and so on, are selected. The included files are listed by relative path and file name and grouped together.
     :::image-end:::
-
 - CMake debugging
     - You can now debug your CMake scripts and `CMakeLists.txt` files in the Visual Studio debugger for CMake projects that target Linux via Windows Subsystem for Linux (WSL) or SSH. To start a CMake debugging session in Visual Studio, set a breakpoint in your `CMakeLists.txt` file and then navigate to **Project** > **Configure Cache with CMake Debugging**.
-
-- Copilot
+- **GitHub Copilot**
     - When you hover over symbols in the code editor, click the Copilot **Tell me more** button in the Quick Info dialog to learn more about a given symbol:
     :::image type="complex" source="./media/github-copilot-quick-info.png" alt-text="A screenshot of the Quick Info window.":::
-      The Quick Info window is shown above a function. The Tell me more link is highlighted.
+    The Quick Info window is shown above a function. The Tell me more link is highlighted.
     :::image-end:::
     - GitHub Copilot can generate naming suggestions for your identifiers (variables, methods, or classes) based on how your identifier is used and the style of your code.
       :::image type="complex" source="./media/copilot-rename.png" alt-text="A screenshot of the GitHub Copilot Rename dialog.":::
@@ -56,10 +103,10 @@ A partial list of new features:
       :::image-end:::
     You need an active [GitHub Copilot subscription](https://visualstudio.microsoft.com/github-copilot/). Right-click the variable you wish to rename, and choose **Rename** (`Ctrl+R`, `Ctrl+R`). Select the GitHub Copilot sparkle icon to generate naming suggestions.
 
-- Debugging
-    - Conditional breakpoints in C++ are significantly faster.
+- **Debugging**
+    - Conditional breakpoints in C++ are faster.
 
-- Diagnostics improvements
+- **Diagnostics improvements**
     - Improved diagnostics when calling `std::get<T>` on a `std::tuple` that has multiple instances of `T` in its template arguments. MSVC used to report:\
           `error C2338: static_assert failed: 'duplicate type T in get<T>(tuple)'`.\
       Now it reports:\
@@ -82,7 +129,7 @@ A partial list of new features:
 
 A partial list of new features:
 
-- **MSVC Toolset Update**: The MSVC toolset version is updated from 19.39 to 19.40. This may affect projects that have version assumptions. For more information about some ways in which this will affect projects that assume that MSVC versions are all 19.3X for Visual Studio 2022 releases, see [MSVC Toolset Minor Version Number 14.40 in VS 2022 v17.10](https://devblogs.microsoft.com/cppblog/msvc-toolset-minor-version-number-14-40-in-vs-2022-v17-10/).
+- **MSVC Toolset Update**: The MSVC toolset version is updated from 19.39 to 19.40. This may affect projects that have version assumptions. For more information about some ways in which this affects projects that assume that MSVC versions are all 19.3X for Visual Studio 2022 releases, see [MSVC Toolset Minor Version Number 14.40 in VS 2022 v17.10](https://devblogs.microsoft.com/cppblog/msvc-toolset-minor-version-number-14-40-in-vs-2022-v17-10/).
 - **Standard Library Enhancements**: The standard library added support for [P2510R3 Formatting Pointers](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf), which brings the set of format specifiers for pointers when using `std::format` more in line with those that already exist for integers. Improved the vectorized implementations of `std::min_element`, `std::ranges::min`, and friends.
 - **Build Insights**: Now provides template instantiation information. See [Templates View for Build Insights in Visual Studio](https://devblogs.microsoft.com/cppblog/templates-view-for-build-insights-in-visual-studio-2/) or the [Pure Virtual C++ - Templates view for Build Insights in Visual Studio](https://youtu.be/68pOEQ5YA5s) recording.
 - **Unreal Engine Plugin**: There's a new opt-in feature for the Unreal Engine Plugin to run in the background, reducing startup costs. This is an opt-in feature that is activated via **Tools** > **Options** > **Unreal Engine**.
@@ -373,7 +420,7 @@ A partial list of new features in 17.1:
 | For more information about | See |
 |---|---|
 | New features in the Visual Studio 17.0 IDE | [Visual Studio 2022 version 17.0 Release Notes](/visualstudio/releases/2022/release-notes-v17.0) |
-| Standard Library (STL) merged C++26 and C++23 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.0](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
+| Standard Library (STL) merged C++23 and C++26 features, C++20 defect reports, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.0](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710) |
 | C++ language conformance improvements in Visual Studio 2022 17.0 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.10](cpp-conformance-improvements.md#improvements_170) |
 
 An overview of some of the new features in Visual Studio 2022 version 17.0:
