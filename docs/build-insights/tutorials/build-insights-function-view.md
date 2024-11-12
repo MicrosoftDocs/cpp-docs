@@ -1,10 +1,10 @@
 ---
-title: "Tutorial: Troubleshoot function inlining on build time"
-description: "Tutorial on how to use Build Insights function view to troubleshoot the impact of function inlining on build time in your C++ projects."
+title: "Troubleshoot function inlining on build time"
+description: "Tutorial for how to use Build Insights function view to troubleshoot the impact of function inlining on build time in your C++ projects."
 ms.date: 5/30/2024
 helpviewer_keywords: ["C++ Build Insights", "inline function analysis", "build time analysis", "__forceinline analysis", "inlines analysis"]
 ---
-# Tutorial: Troubleshoot function inlining on build time
+# Troubleshoot function inlining on build time
 
 Use Build Insights **Functions** view to troubleshoot the impact of function inlining on build time in your C++ projects.
 
@@ -141,6 +141,7 @@ Double-click, right-click, or press **Enter** while on a file in the **Functions
 
 ## See also
 
+[Build Insights tips and tricks](build-insights-tips.md)\
 [Inline functions (C++)](../../cpp/inline-functions-cpp.md)\
 [Faster C++ builds, simplified: a new metric for time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time)\
 [Build Insights in Visual Studio video - Pure Virtual C++ 2023](/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
