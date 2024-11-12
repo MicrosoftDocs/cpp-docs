@@ -1,23 +1,96 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 08/08/2024
+ms.date: 11/12/2024
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022
 
-Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use the **In this article** links.
+Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use the **In this article** links at the top of this article.
 
 This document lists the changes in Visual Studio 2022.
 
-For changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).\
-For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).\
-For changes in older versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+For changes in earlier versions of Visual Studio:
+
+| Version  | Conformance improvements link |
+|---|---|
+| 2019 | [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md) |
+| 2017 | [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) |
+| 2003-2015 | [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md) |
+
+## <a name="improvements_1712"></a> Conformance improvements in Visual Studio 2022 version 17.12
+
+Visual Studio 2022 version 17.12 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.12](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1712).
+
+### `_com_ptr_t::operator bool()` is now explicit
+
+This is a source/binary breaking change.
+
+The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. Implicit conversion functions are discouraged by the [C++ Core Guidelines (C.164)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conversion), and `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
+
+To help address this, the conversion to `bool` is now explicit. The conversion to `Interface*` is unchanged.
+
+A macro is provided to opt-out of this new behavior and restore the previous implicit conversion. Compile with `/D_COM_DISABLE_EXPLICIT_OPERATOR_BOOL` to opt-out of this change. We recommend that you modify the code to not rely on implicit conversions.
+
+For example:
+
+```cpp
+#include <comip.h>
+
+template<class Iface>
+using _com_ptr = _com_ptr_t<_com_IIID<Iface, &__uuidof(Iface)>>;
+
+int main()
+{
+   _com_ptr<IUnknown> unk;
+   if (unk) // Still valid
+   { 
+      // ...
+   }
+   bool b = unk; // Still valid.
+   int v = unk; // Previously permitted, now emits C2240: cannot convert from '_com_ptr_t<_com_IIID<IUnknown,& _GUID_00000000_0000_0000_c000_000000000046>>' to 'int'
+}
+```
+
+### Constant expressions are no longer always `noexcept` in permissive mode
+
+This is a source/binary breaking change.
+
+A constant expression was always `noexcept`, even if it involved a function call to a function declared with a potentially throwing exception specification. This wording was removed in C++17, although the Microsoft Visual C++ compiler still supported it in `/permissive` mode in all C++ language versions.
+
+This `/permissive` mode behavior is removed. Constant expressions are no longer given special implicit behavior.
+
+The `noexcept` specifier on `constexpr` functions is now respected in all modes. This change is required for correct implementation of later core issue resolutions that rely on the standard `noexcept` behavior.
+
+For example:
+
+```cpp
+constexpr int f(bool b) noexcept(false)
+{ 
+    if (b)
+    {
+        throw 1;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+void g(bool b)
+{
+   noexcept(f(b)); // false. No change to behavior
+   noexcept(f(true)); // false. No change to behavior
+   noexcept(f(false)); // false. Was true in /permissive mode only in previous versions.
+}
+```
 
 ## <a name="improvements_1711"></a> Conformance improvements in Visual Studio 2022 version 17.11
 
-Visual Studio 2022 version 17.11 has the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+Visual Studio 2022 version 17.11 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.11](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1711).
 
@@ -34,7 +107,7 @@ Per [P2286R8](https://wg21.link/P2286R8), `range_formatter` is now implemented. 
 
 ## <a name="improvements_1710"></a> Conformance improvements in Visual Studio 2022 version 17.10
 
-Visual Studio 2022 version 17.10 has the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+Visual Studio 2022 version 17.10 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
 
@@ -560,7 +633,7 @@ bidi.cpp(8): warning C5255: unterminated bidirectional character encountered: 'U
 
 ### `from_chars()` `float` tiebreaker
 
-Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even", and "even" happened to be "down", but the implementation incorrectly rounded "up" (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
+Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even," and "even" happened to be "down," but the implementation incorrectly rounded "up" (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
 
 This change affects runtime behavior in the specified range of cases:
 
