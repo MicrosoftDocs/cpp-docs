@@ -79,7 +79,7 @@ int main()
     std::optional<MyStruct> opt(std::in_place, 42);
 
     // Construct a MyStruct object inside an any object
-    std::any a(std::in_place_type<MyStruct>, MyStruct(314));
+    std::any a(std::in_place_type<MyStruct>, 314);
     
     // Construct a MyStruct object inside a vector at index 0
     std::variant<MyStruct> v(std::in_place_index<0>, MyStruct(271));
