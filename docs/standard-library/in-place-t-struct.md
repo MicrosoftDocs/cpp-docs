@@ -76,7 +76,7 @@ struct MyStruct
 int main()
 {
     // Construct a MyStruct directly inside opt
-    std::optional<MyStruct> opt(std::in_place, MyStruct(42));
+    std::optional<MyStruct> opt(std::in_place, 42);
 
     // Construct a MyStruct object inside an any object
     std::any a(std::in_place_type<MyStruct>, MyStruct(314));
