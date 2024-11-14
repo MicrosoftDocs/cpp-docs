@@ -103,6 +103,6 @@ int main()
 
 **Header:** `<utility>`
 
-**Namespace:** `<utility>`
+**Namespace:** `std`
 
 **Compiler Option:** [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.
