@@ -51,7 +51,7 @@ The type of object to create.
 
 ## Remarks
 
-- `in_place_t` indicates in-place construction of an object. Use this to create objects in place inside a `std::optional` or `std::variant`.
+- `in_place_t` indicates in-place construction of an object. Use this to create objects in place inside a `std::optional`.
 - `in_place_type_t` indicates in-place construction of an object of a specific type. This is useful with `std::any` because `std::any` can hold any kind of type, so we need to specify the type it will hold.
 - `in_place_index_t` indicates in-place construction of an object at a specific index. Use this with `std::variant` to specify the index where the object is created.
 
