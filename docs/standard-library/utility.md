@@ -20,7 +20,7 @@ Defines C++ Standard Library types, functions, and operators that help to constr
 Pairs are widely used in the C++ Standard Library. They are required both as the arguments and return values for various functions and as element types for associative containers like [`map` class](../standard-library/map-class.md) and [`multimap` class](../standard-library/multimap-class.md).
 
 > [!NOTE]
-> The `<utility>` header uses the statement `#include <initializer_list>`. It also refers to `class tuple` as defined in `<tuple>`.
+> The `<utility>` header includes `<initializer_list>`. It also refers to `class tuple` as defined in `<tuple>`.
 
 ## Members
 
