@@ -123,7 +123,7 @@ If *rhs* contains a value, direct initializes the contained value as if using `s
 
 ## <a name="optional-destructor"></a> ~optional destructor
 
-Destroys any nontrivially destructible contained value, if one is present, by invoking its destructor.
+Destroys the contained value, if one is present.
 
 ```cpp
 ~optional();

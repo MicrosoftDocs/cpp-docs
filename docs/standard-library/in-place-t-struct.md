@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 Introduced in C++17.
 
-The `in_place_t`, `in_place_type_t`, and `in_place_index_t` types are used in some constructors to indicate how to create the object in place. This helps avoid temporary copy or move operations.
+The `in_place_t`, `in_place_type_t`, and `in_place_index_t` types are used to select the overloaded constructor that creates the object in place in the desired way. For the types that use these tag types, it can help avoid temporary copy or move operations.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ struct in_place_type_t
 };
 
 template <class T>
-inline constexpr in_place_type_t<T> in_place_type{};
+constexpr in_place_type_t<T> in_place_type{};
 
 template <size_t I>
 struct in_place_index_t
@@ -38,7 +38,7 @@ struct in_place_index_t
 };
 
 template <size_t I>
-inline constexpr in_place_index_t<I> in_place_index{};
+constexpr in_place_index_t<I> in_place_index{};
 ```
 
 ## Parameters
@@ -51,11 +51,11 @@ The type of object to create.
 
 ## Remarks
 
-- `in_place_t` indicates in-place construction of an object. Use this to create objects in place inside a `std::optional` or `std::variant`.
-- `in_place_type_t` indicates in-place construction of an object of a specific type. This is useful with `std::any` because `std::any` can hold any kind of type, so we need to specify the type it will hold.
-- `in_place_index_t` indicates in-place construction of an object at a specific index. Use this with `std::variant` to specify the index where the object is created.
+- `in_place_t` indicates in-place construction of an object. Use to create objects in place inside a `std::optional` or `std::variant`.
+- `in_place_type_t` indicates in-place construction of an object of a specific type. It's useful with `std::any` because `std::any` can hold any kind of type, so we need to specify the type it holds.
+- `in_place_index_t` indicates in-place construction of an object at a specific index. Use with `std::variant` to specify the index where the object is created.
 
-The following are some types that use these structs in their constructors: `expected` class, [`optional` class](optional-class.md), [`single_view` class](single-view-class.md), [`any` class](any-class.md) or [`variant` class](variant-class.md).
+The following class types use these structs in their constructors: `expected`, [`optional`](optional-class.md), [`single_view`](single-view-class.md), [`any`](any-class.md) or [`variant`](variant-class.md).
 
 ## Example
 
