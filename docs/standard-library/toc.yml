@@ -1447,6 +1447,8 @@ items:
           href: utility-operators.md
         - name: identity struct
           href: identity-structure.md
+        - name: in_plact_t in_place_type_t, in_place_index_t struct
+          href: in-place-t-struct.md
         - name: pair struct
           href: pair-structure.md
     - name: <valarray>
