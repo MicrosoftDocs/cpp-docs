@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: in_place_t, in_place_type_t, in_place_index_t"
 title: "in_place_t, in_place_type_t, in_place_index_t"
-ms.date: 11/13/2024
+ms.date: 11/14/2024
 f1_keywords: ["utility/utility<in_place_t>", "utility/std::in_place_t", "utility/utility<in_place_type_t>", "utility/std::in_place_type_t", "utility<in_place_index_t>", "utility/std::in_place_index_t"]
 helpviewer_keywords: ["utility<in_place_t> struct", "utility<in_place_type_t> struct", "utility::in_place_type_t struct", "utility<in_place_index_t> struct", "utility::in_place_index_t struct"]
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 Introduced in C++17.
 
-The `in_place_t`, `in_place_type_t`, and `in_place_index_t` types are used to select the overloaded constructor that creates the object in place in the desired way. For the types that use these tag types, it can help avoid temporary copy or move operations.
+The `in_place_t`, `in_place_type_t`, and `in_place_index_t` tag types are used to select the overloaded constructor that creates the object in place in the desired way. For the types that use these tag types, they can also help avoid temporary copy or move operations.
 
 ## Syntax
 
@@ -51,7 +51,7 @@ The type of object to create.
 
 ## Remarks
 
-- `in_place_t` indicates in-place construction of an object. Use to create objects in place inside a `std::optional` or `std::variant`.
+- `in_place_t` indicates in-place construction of an object. Used to create objects in place inside a `std::optional`.
 - `in_place_type_t` indicates in-place construction of an object of a specific type. It's useful with `std::any` because `std::any` can hold any kind of type, so we need to specify the type it holds.
 - `in_place_index_t` indicates in-place construction of an object at a specific index. Use with `std::variant` to specify the index where the object is created.
 
@@ -76,13 +76,13 @@ struct MyStruct
 int main()
 {
     // Construct a MyStruct directly inside opt
-    std::optional<MyStruct> opt(std::in_place, MyStruct(42));
+    std::optional<MyStruct> opt(std::in_place, 42);
 
     // Construct a MyStruct object inside an any object
-    std::any a(std::in_place_type<MyStruct>, MyStruct(314));
+    std::any a(std::in_place_type<MyStruct>, 314);
     
     // Construct a MyStruct object inside a vector at index 0
-    std::variant<MyStruct> v(std::in_place_index<0>, MyStruct(271));
+    std::variant<MyStruct, int> v(std::in_place_index<0>, 271);
 
     if (opt)
     {
@@ -99,10 +99,11 @@ int main()
 ```output
 42, 314, 271
 ```
+
 ## Requirements
 
 **Header:** `<utility>`
 
-**Namespace:** `<utility>`
+**Namespace:** `std`
 
 **Compiler Option:** [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.
