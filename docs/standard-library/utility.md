@@ -17,7 +17,7 @@ Defines C++ Standard Library types, functions, and operators that help to constr
 
 ## Remarks
 
-Pairs are widely used in the C++ Standard Library. They are required both as the arguments and return values for various functions and as element types for containers such as [`map` class](../standard-library/map-class.md) and [`multimap` class](../standard-library/multimap-class.md). The `<utility>` header is automatically included by `<map>` to assist in managing their key/value pair type elements.
+Pairs are widely used in the C++ Standard Library. They are required both as the arguments and return values for various functions and as element types for associative containers like [`map` class](../standard-library/map-class.md) and [`multimap` class](../standard-library/multimap-class.md).
 
 > [!NOTE]
 > The `<utility>` header uses the statement `#include <initializer_list>`. It also refers to `class tuple` as defined in `<tuple>`.
