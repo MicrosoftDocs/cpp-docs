@@ -4,7 +4,6 @@ title: "in_place_t, in_place_type_t, in_place_index_t"
 ms.date: 11/14/2024
 f1_keywords: ["utility/utility<in_place_t>", "utility/std::in_place_t", "utility/utility<in_place_type_t>", "utility/std::in_place_type_t", "utility<in_place_index_t>", "utility/std::in_place_index_t"]
 helpviewer_keywords: ["utility<in_place_t> struct", "utility<in_place_type_t> struct", "utility::in_place_type_t struct", "utility<in_place_index_t> struct", "utility::in_place_index_t struct"]
-ai-usage: ai-assisted
 ---
 # `in_place_t`, `in_place_type_t`, `in_place_index_t` struct
 
@@ -69,20 +68,20 @@ The following class types use these structs in their constructors: `expected`, [
 
 struct MyStruct
 {
-    int value;
-    MyStruct(int v) : value(v) {}
+    double value;
+    MyStruct(double v0, double v1) : value(v0 + v1) {}
 };
 
 int main()
 {
     // Construct a MyStruct directly inside opt
-    std::optional<MyStruct> opt(std::in_place, 42);
+    std::optional<MyStruct> opt(std::in_place, 29.0, 13.0);
 
     // Construct a MyStruct object inside an any object
-    std::any a(std::in_place_type<MyStruct>, 314);
-    
+    std::any a(std::in_place_type<MyStruct>, 3.0, 0.14);
+
     // Construct a MyStruct object inside a vector at index 0
-    std::variant<MyStruct, int> v(std::in_place_index<0>, 271);
+    std::variant<MyStruct, int> v(std::in_place_index<0>, 2.0, 0.718);
 
     if (opt)
     {
@@ -97,7 +96,7 @@ int main()
 ```
 
 ```output
-42, 314, 271
+42, 3.14, 2.718
 ```
 
 ## Requirements
