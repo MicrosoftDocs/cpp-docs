@@ -133,4 +133,4 @@ enum { yes, no } response;
 
 ## See also
 
-[Enumerations(c++)](../cpp/enumerations-cpp.md)
+[Enumerations(C++)](../cpp/enumerations-cpp.md)
