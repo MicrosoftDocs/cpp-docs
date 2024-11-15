@@ -69,7 +69,7 @@ The following class types use these structs in their constructors: `expected`, [
 struct MyStruct
 {
     double value;
-    MyStruct(double v0, double v1) : value(v0 + v1) {}
+    MyStruct(double v0, double v1 = 0) : value(v0 + v1) {}
 };
 
 int main()
@@ -78,10 +78,10 @@ int main()
     std::optional<MyStruct> opt(std::in_place, 29.0, 13.0);
 
     // Construct a MyStruct object inside an any object
-    std::any a(std::in_place_type<MyStruct>, 3.0, 0.14);
+    std::any a(std::in_place_type<MyStruct>, 3.14);
 
     // Construct a MyStruct object inside a vector at index 0
-    std::variant<MyStruct, int> v(std::in_place_index<0>, 2.0, 0.718);
+    std::variant<MyStruct, int> v(std::in_place_index<0>, 2.718);
 
     if (opt)
     {
