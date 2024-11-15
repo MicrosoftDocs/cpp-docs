@@ -19,11 +19,13 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 ::: moniker range=">=msvc-160"
 
-1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **Create a new Project** dialog. Select the **Console App** template that has **C++**, **Windows**, and **Console** tags, and then choose **Next**. The **Desktop development with C++** workload must be installed for this template to show up. See [Install C++ support in Visual Studio](vscpp-step-0-installation.md) if you haven't already installed it.
+1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **Create a new Project** dialog. Select the **Console App** template that has **C++**, **Windows**, and **Console** tags, and then choose **Next**.
 
     :::image type="complex" source="media/vs2019-choose-console-app.png" alt-text="Screenshot of the create a new project dialog.":::
     The create a new project dialog with the Console App template selected. That template says: Run code in a windows terminal. Prints hello world by default. Has the tags c++, Windows, and Console.
     :::image-end:::
+
+    The **Desktop development with C++** workload must be installed for the C++ Console App template to show up. See [Install C++ support in Visual Studio](vscpp-step-0-installation.md) if you haven't already installed it.
 
 1. In the **Configure your new project** dialog, enter *HelloWorld* in the **Project name** edit box. Choose **Create** to create the project.
 
