@@ -22,7 +22,7 @@ Indicates whether a multithreaded module is a DLL and specifies retail or debug 
 
 |Option|Description|
 |------------|-----------------|
-|**/MD**|Causes the application to use the multithread-specific and DLL-specific version of the run-time library. Defines `_MT` and `_DLL` and causes the compiler to place the library name MSVCRT.lib into the .obj file.<br /><br /> Applications compiled with this option are statically linked to MSVCRT.lib. This library provides a layer of code that enables the linker to resolve external references. The actual working code is contained in MSVCR*versionnumber*.DLL, which must be available at run time to applications linked with MSVCRT.lib.|
+|**/MD**|Causes the application to use the multithread-specific and DLL-specific version of the run-time library. Defines `_MT` and `_DLL` and causes the compiler to place the library name MSVCRT.lib into the .obj file.|
 |**/MDd**|Defines `_DEBUG`, `_MT`, and `_DLL` and causes the application to use the debug multithread-specific and DLL-specific version of the run-time library. It also causes the compiler to place the library name MSVCRTD.lib into the .obj file.|
 |**/MT**|Causes the application to use the multithread, static version of the run-time library. Defines `_MT` and causes the compiler to place the library name LIBCMT.lib into the .obj file so that the linker will use LIBCMT.lib to resolve external symbols.|
 |**/MTd**|Defines `_DEBUG` and `_MT`. This option also causes the compiler to place the library name LIBCMTD.lib into the .obj file so that the linker will use LIBCMTD.lib to resolve external symbols.|
