@@ -17,7 +17,7 @@ The following table describes input to the CL command.
 
 |Entry|Meaning|
 |-----------|-------------|
-|*option*|One or more [CL options](compiler-options.md). Note that all options apply to all specified source files. Options are specified by either a forward slash (/) or a dash (-). If an option takes an argument, the option's description documents whether a space is allowed between the option and the arguments. Option names (except for the /HELP option) are case sensitive. For more information, see [Order of CL Options](order-of-cl-options.md).|
+|*option*|One or more [CL options](compiler-options.md). Note that all options apply to all specified source files. Options are specified by either a forward slash (/) or a dash (-). If an option takes an argument, by default there can be no space between the option and argument.  Some options can have a space allowed after the option, the option's description will state when this is the case. Option names (except for the /HELP option) are case sensitive. For more information, see [Order of CL Options](order-of-cl-options.md).|
 |`file`|The name of one or more source files, .obj files, or libraries. CL compiles source files and passes the names of the .obj files and libraries to the linker. For more information, see [CL Filename Syntax](cl-filename-syntax.md).|
 |*lib*|One or more library names. CL passes these names to the linker.|
 |*command-file*|A file that contains multiple options and filenames. For more information, see [CL Command Files](cl-command-files.md).|
