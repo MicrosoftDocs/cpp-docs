@@ -87,7 +87,7 @@ int main( )
 }
 ```
 
-The `width` member function is declared in `<iostream>`. If you use `setw` or any other manipulator with arguments, you must include `<iomanip>`. In the output, strings print in a field of width 6 and integers in a field of width 10:
+The `width` member function is declared in `<iostream>`. If you use `setw` or any other manipulator with arguments, you must include `<iomanip>`. In the output, strings print in a field of width 7 and integers in a field of width 10:
 
 ```Output
    Zoot      1.23
