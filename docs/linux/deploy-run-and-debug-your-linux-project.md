@@ -34,17 +34,17 @@ There are several ways to interact with and debug your Linux project.
 
    ![Screenshot of the Visual Studio Linux Console App Property Pages dialog box with Configuration Properties > Debugging selected and Debugging Mode highlighted with G D B selected and highlighted from the dropdown list.](media/vs2019-debugger-settings.png)
    
-      ::: moniker-end
+         ::: moniker-end
 
-      ::: moniker range="msvc-150"
+         ::: moniker range="msvc-150"
 
-      GDB is used to debug applications running on Linux. GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
+         GDB is used to debug applications running on Linux. GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
 
    ![Screenshot of the Visual Studio 2017 Linux Console App Property Pages dialog box with Configuration Properties > Debugging selected and Debugging Mode highlighted with G D B selected and highlighted from the dropdown list.](media/vs2017-debugger-settings.png)
    
-      ::: moniker-end
+         ::: moniker-end
 
-   - In **gdbserver** mode, GDB is run locally, which connects to gdbserver on the remote system. To use this, you must provide a local Windows path to GDB under **Debugger Path** in **Visual Studio 2022 version 17.6** and later, or under **GDB Path** in **Visual Studio 2019 version 16.11** and earlier. Look [here](https://https://learn.microsoft.com/en-us/cpp/build/configure-cmake-debugging-sessions?toc=%2Fcpp%2Flinux%2Ftoc.json&bc=%2Fcpp%2F_breadcrumb%2Ftoc.json&view=msvc-170#additional-options-allowed-with-the-gdbserver-configuration-167-or-later) to see where to provide the path to GDB for CMake projects.
+   - In **gdbserver** mode, GDB is run locally, which connects to gdbserver on the remote system. To use this, you must provide a local Windows path to GDB under **Debugger Path** in **Visual Studio 2022 version 17.6** and later, or under **GDB Path** in **Visual Studio 2019 version 16.11** and earlier. Look [here](https://learn.microsoft.com/en-us/cpp/build/configure-cmake-debugging-sessions?toc=%2Fcpp%2Flinux%2Ftoc.json&bc=%2Fcpp%2F_breadcrumb%2Ftoc.json&view=msvc-170#additional-options-allowed-with-the-gdbserver-configuration-167-or-later) to see where to provide the path to GDB for CMake projects.
       
    - In **gdb** mode, the Visual Studio debugger drives GDB on the remote system. This is a better option if the local version of GDB isn't compatible with the version installed on the target computer. This is the only mode that the Linux Console window supports.
 
@@ -57,7 +57,7 @@ There are several ways to interact with and debug your Linux project.
 
    ![Screenshot showing a Remote target IP address.](media/remote_target.png)
    
-      If you haven't connected to the remote target yet, you'll see an instruction to use [Linux Connection Manager](connect-to-your-remote-linux-computer.md) to connect to the remote target.
+         If you haven't connected to the remote target yet, you'll see an instruction to use [Linux Connection Manager](connect-to-your-remote-linux-computer.md) to connect to the remote target.
 
    ![Screenshot showing the Remote Architecture, which is x64.](media/architecture.png)
    
@@ -73,13 +73,13 @@ There are several ways to interact with and debug your Linux project.
 
    ![Screenshot showing the app has hit a breakpoint.](media/hit_breakpoint.png)
    
-      Now, you can interact with the application in its current state, view variables, and step through code by pressing command keys such as **F10** or **F11**.
+         Now, you can interact with the application in its current state, view variables, and step through code by pressing command keys such as **F10** or **F11**.
 
 1. If you want to use the Linux Console to interact with your app, select **Debug > Linux Console**.
 
    ![Screenshot showing the Linux Console menu item.](media/consolemenu.png)
    
-      This console will display any console output from the target computer and take input and send it to the target computer.
+         This console will display any console output from the target computer and take input and send it to the target computer.
 
    ![Screenshot showing the Linux Console window.](media/consolewindow.png)
    
