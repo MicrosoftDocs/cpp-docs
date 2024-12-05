@@ -33,22 +33,22 @@ There are several ways to interact with and debug your Linux project.
    GDB is used to debug applications running on Linux. When debugging on a remote system (not WSL) GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
 
    ![Screenshot of the Visual Studio Linux Console App Property Pages dialog box with Configuration Properties > Debugging selected and Debugging Mode highlighted with G D B selected and highlighted from the dropdown list.](media/vs2019-debugger-settings.png)
-   
-         ::: moniker-end
 
-         ::: moniker range="msvc-150"
+   ::: moniker-end
 
-         GDB is used to debug applications running on Linux. GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
+   ::: moniker range="msvc-150"
+
+   GDB is used to debug applications running on Linux. GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
 
    ![Screenshot of the Visual Studio 2017 Linux Console App Property Pages dialog box with Configuration Properties > Debugging selected and Debugging Mode highlighted with G D B selected and highlighted from the dropdown list.](media/vs2017-debugger-settings.png)
-   
-         ::: moniker-end
 
-   - In **gdbserver** mode, GDB is run locally, which connects to gdbserver on the remote system. To use this, you must provide a local Windows path to GDB under **Debugger Path** in **Visual Studio 2022 version 17.6** and later, or under **GDB Path** in **Visual Studio 2019 version 16.11** and earlier. Look [here](https://learn.microsoft.com/en-us/cpp/build/configure-cmake-debugging-sessions?toc=%2Fcpp%2Flinux%2Ftoc.json&bc=%2Fcpp%2F_breadcrumb%2Ftoc.json&view=msvc-170#additional-options-allowed-with-the-gdbserver-configuration-167-or-later) to see where to provide the path to GDB for CMake projects.
-      
+   ::: moniker-end
+
+   - In **gdbserver** mode, GDB is run locally, which connects to gdbserver on the remote system. To use this, you must provide a local Windows path to GDB under **Debugger Path** in **Visual Studio 2022 version 17.6** and later, or under **GDB Path** in **Visual Studio 2019 version 16.11** and earlier. For more information about where to provide the path to GDB for CMake projects, see [Additional options allowed with the gdbserver configuration (16.7 or later)](https://learn.microsoft.com/en-us/cpp/build/configure-cmake-debugging-sessions?toc=%2Fcpp%2Flinux%2Ftoc.json&bc=%2Fcpp%2F_breadcrumb%2Ftoc.json&view=msvc-170#additional-options-allowed-with-the-gdbserver-configuration-167-or-later).
+
    - In **gdb** mode, the Visual Studio debugger drives GDB on the remote system. This is a better option if the local version of GDB isn't compatible with the version installed on the target computer. This is the only mode that the Linux Console window supports.
 
-      > [!NOTE]
+   > [!NOTE]
    > If you are unable to hit breakpoints in gdbserver debugging mode, try gdb mode. gdb must first be [installed](download-install-and-setup-the-linux-development-workload.md) on the remote target.
 
 1. Select the remote target using the standard **Debug** toolbar in Visual Studio.
@@ -56,11 +56,11 @@ There are several ways to interact with and debug your Linux project.
    When the remote target is available, you'll see it listed by either name or IP address.
 
    ![Screenshot showing a Remote target IP address.](media/remote_target.png)
-   
-         If you haven't connected to the remote target yet, you'll see an instruction to use [Linux Connection Manager](connect-to-your-remote-linux-computer.md) to connect to the remote target.
+
+   If you haven't connected to the remote target yet, you'll see an instruction to use [Linux Connection Manager](connect-to-your-remote-linux-computer.md) to connect to the remote target.
 
    ![Screenshot showing the Remote Architecture, which is x64.](media/architecture.png)
-   
+
 1. Set a breakpoint by clicking in the left gutter of some code that you know will execute.
 
    A red dot appears on the line of code where you set the breakpoint.
@@ -72,24 +72,24 @@ There are several ways to interact with and debug your Linux project.
    If there are no errors, the app will start and the debugger will pause at the breakpoint.
 
    ![Screenshot showing the app has hit a breakpoint.](media/hit_breakpoint.png)
-   
-         Now, you can interact with the application in its current state, view variables, and step through code by pressing command keys such as **F10** or **F11**.
+
+   Now, you can interact with the application in its current state, view variables, and step through code by pressing command keys such as **F10** or **F11**.
 
 1. If you want to use the Linux Console to interact with your app, select **Debug > Linux Console**.
 
    ![Screenshot showing the Linux Console menu item.](media/consolemenu.png)
-   
-         This console will display any console output from the target computer and take input and send it to the target computer.
+
+   This console will display any console output from the target computer and take input and send it to the target computer.
 
    ![Screenshot showing the Linux Console window.](media/consolewindow.png)
-   
+
 ## Configure other debugging options (MSBuild projects)
 
 - Command-line arguments can be passed to the executable using the **Program Arguments** item in the project's **Debugging** property page.
 - You can export the `DISPLAY` environment variable by using the **Pre-Launch Command** in the project's **Debugging** property pages. For example: `export DISPLAY=:0.0`
 
    ![Screenshot showing the Program Arguments property in the Property Pages dialog.](media/settings_programarguments.png)
-  
+
 - Specific debugger options can be passed to GDB using the **Additional Debugger Commands** entry.  For example, you might want to ignore SIGILL (illegal instruction) signals.  You could use the **handle** command to achieve this by adding the following to the **Additional Debugger Commands** entry as shown above:
 
    `handle SIGILL nostop noprint`
