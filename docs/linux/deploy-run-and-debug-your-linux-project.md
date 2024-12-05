@@ -53,11 +53,11 @@ There are several ways to interact with and debug your Linux project.
 
 1. Select the remote target using the standard **Debug** toolbar in Visual Studio.
 
-   When the remote target is available, you'll see it listed by either name or IP address.
+   When the remote target is available, you see it listed by name or IP address.
 
    ![Screenshot showing a Remote target IP address.](media/remote_target.png)
    
-      If you haven't connected to the remote target yet, you'll see an instruction to use [Linux Connection Manager](connect-to-your-remote-linux-computer.md) to connect to the remote target.
+      If you haven't connected to the remote target yet, you see instructions to use [Linux Connection Manager](connect-to-your-remote-linux-computer.md) to connect to the remote target.
 
    ![Screenshot showing the Remote Architecture, which is x64.](media/architecture.png)
    
@@ -67,9 +67,9 @@ There are several ways to interact with and debug your Linux project.
 
 1. Press **F5** (or **Debug > Start Debugging**) to start debugging.
 
-   When you start debugging, the application is compiled on the remote target before it starts. Any compilation errors will appear in the **Error List** window.
+   When you start debugging, the application is compiled on the remote target before it starts. Any compilation errors appear in the **Error List** window.
 
-   If there are no errors, the app will start and the debugger will pause at the breakpoint.
+   If there are no errors, the app starts and the debugger pauses at the breakpoint.
 
    ![Screenshot showing the app has hit a breakpoint.](media/hit_breakpoint.png)
    
@@ -79,7 +79,7 @@ There are several ways to interact with and debug your Linux project.
 
    ![Screenshot showing the Linux Console menu item.](media/consolemenu.png)
    
-      This console will display any console output from the target computer and take input and send it to the target computer.
+      This console displays console output from the target computer and takes input and sends it to the target computer.
 
    ![Screenshot showing the Linux Console window.](media/consolewindow.png)
    
@@ -90,7 +90,7 @@ There are several ways to interact with and debug your Linux project.
 
    ![Screenshot showing the Program Arguments property in the Property Pages dialog.](media/settings_programarguments.png)
   
-- Specific debugger options can be passed to GDB using the **Additional Debugger Commands** entry.  For example, you might want to ignore SIGILL (illegal instruction) signals.  You could use the **handle** command to achieve this by adding the following to the **Additional Debugger Commands** entry as shown above:
+- Specific debugger options can be passed to GDB using the **Additional Debugger Commands** entry. For example, you might want to ignore SIGILL (illegal instruction) signals. You could use the **handle** command to achieve this by adding the following to the **Additional Debugger Commands** entry as shown above:
 
    `handle SIGILL nostop noprint`
 
@@ -98,7 +98,7 @@ There are several ways to interact with and debug your Linux project.
 
 ## Debug with Attach to Process
 
-The [Debugging](prop-pages/debugging-linux.md) property page for Visual Studio projects, and the **Launch.vs.json** settings for CMake projects, have settings that enable you to attach to a running process. If you require more control beyond what is provided in those settings, you can place a file named `Microsoft.MIEngine.Options.xml` in the root of your solution or workspace. Here is a simple example:
+The [Debugging](prop-pages/debugging-linux.md) property page for Visual Studio projects, and the **Launch.vs.json** settings for CMake projects, have settings that enable you to attach to a running process. If you require more control beyond what is provided in those settings, you can place a file named `Microsoft.MIEngine.Options.xml` in the root of your solution or workspace. Here's a simple example:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -129,7 +129,7 @@ By default, the remote debug machine is the same as the remote build machine (**
 
 The drop-down menu for **Remote Debug Machine** is populated with all established remote connections. To add a new remote connection, navigate to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or search for "Connection Manager" in **Quick Launch**. You can also specify a new remote deploy directory in the project's Property Pages (**Configuration Properties** > **General** > **Remote Deploy Directory**).
 
-By default, only the files necessary for the process to debug will be deployed to the remote debug machine. You can use **Solution Explorer** to configure which source files will be deployed to the remote debug machine. When you click on a source file, you'll see a preview of its File Properties directly below the Solution Explorer.
+By default, only the files necessary for the process to debug are deployed to the remote debug machine. You can use **Solution Explorer** to configure which source files are deployed to the remote debug machine. When you click on a source file, you see a preview of its File Properties directly below the Solution Explorer.
 
 ![Screenshot showing the properties of the file main.cpp with the property content = False highlighted.](media/linux-deployable-content.png)
 
@@ -156,11 +156,11 @@ In some cases, you may require more control over your project's deployment. For 
 
 ### CMake projects
 
-For CMake projects that target a remote Linux machine, you can specify a new remote debug machine in launch.vs.json. By default, the value of "remoteMachineName" is synchronized with the "remoteMachineName" property in CMakeSettings.json, which corresponds to your remote build machine. These properties no longer need to match, and the value of "remoteMachineName" in launch.vs.json will dictate which remote machine is used for deploy and debug.
+For CMake projects that target a remote Linux machine, you can specify a new remote debug machine in launch.vs.json. By default, the value of "remoteMachineName" is synchronized with the "remoteMachineName" property in CMakeSettings.json, which corresponds to your remote build machine. These properties no longer need to match, and the value of "remoteMachineName" in launch.vs.json dictate which remote machine is used for deploy and debug.
 
 ![The CMake remote debug machine specified in the launch_schema.json file. The remote Machine Name is ${debugInfo . remoteMachineName}](media/cmake-remote-debug-machine.png)
 
-IntelliSense will suggest all a list of all established remote connections. You can add a new remote connection by navigating to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or searching for "Connection Manager" in **Quick Launch**.
+IntelliSense suggests a list of all established remote connections. You can add a new remote connection by navigating to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or searching for "Connection Manager" in **Quick Launch**.
 
 If you want complete control over your deployment, you can append the following code block(s) to the launch.vs.json file. Remember to replace the placeholder values with real values:
 
