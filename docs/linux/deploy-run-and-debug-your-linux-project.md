@@ -1,7 +1,7 @@
 ---
 title: "Deploy, run, and debug your Linux MSBuild C++ project in Visual Studio"
 description: "Describes how to compile, execute, and debug code on the remote target from inside a MSBuild-based Linux C++ project in Visual Studio."
-ms.date: "08/08/2020"
+ms.date: 12/5/2024
 ms.custom: intro-deployment
 ---
 # Deploy, run, and debug your Linux MSBuild project
