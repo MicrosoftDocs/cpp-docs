@@ -1,12 +1,11 @@
 ---
 description: "Learn more about: Processor manufacturer programming manuals"
 title: "Processor manufacturer programming manuals"
-ms.date: "05/28/2020"
-ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
+ms.date: "12/6/2024"
 ---
 # Processor manufacturer programming manuals
 
-This article provides links to websites that may contain programming info about processors that aren't made, sold, or supported by Microsoft. Microsoft doesn't control the websites or their content.
+This article provides links to websites that may contain programming info about processors that Microsoft doesn't make, sell, or support. Microsoft doesn't control the websites or their content.
 
 ## Processor manufacturer websites
 
