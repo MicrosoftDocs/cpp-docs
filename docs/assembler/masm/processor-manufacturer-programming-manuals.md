@@ -10,13 +10,11 @@ This article provides links to websites that may contain programming info about 
 
 ## Processor manufacturer websites
 
-- [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
+- [AMD Documentation Hub](https://www.amd.com/en/search/documentation/hub.html)
 
 - [ARM Architecture Reference Manual](https://developer.arm.com/documentation/ddi0487/latest/)
 
-- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/articles/intel-sdm)
-
-- [Introduction to Intel Advanced Vector Extensions](https://software.intel.com/articles/introduction-to-intel-advanced-vector-extensions)
+- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)
 
 ## Remarks
 
