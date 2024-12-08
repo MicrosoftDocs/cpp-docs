@@ -16,11 +16,11 @@ Specifies a Source Link configuration file to include in the PDB file generated 
 ## Arguments
 
 *filename*<br/>
-Specifies a JSON-formatted configuration file that contains a simple mapping of local file paths to URLs for source files to display in the debugger. For more information on the format of this file, see [Source Link JSON Schema](https://github.com/dotnet/designs/blob/master/accepted/2020/diagnostics/source-link.md#source-link-json-schema).
+Specifies a JSON-formatted configuration file that contains a simple mapping of local file paths to URLs for source files to display in the debugger. For more information on the format of this file, see [Source Link JSON Schema](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/source-link.md#source-link-json-schema).
 
 ## Remarks
 
-Source Link is a language- and source-control agnostic system for providing source debugging for binaries. Source Link is supported for native C++ binaries starting in Visual Studio 2017 version 15.8. For an overview of Source Link, see [Source Link](https://github.com/dotnet/designs/blob/master/accepted/2020/diagnostics/source-link.md). For information on how to use Source Link in your projects, and how to generate the SourceLink file as part of your project, see [Using Source Link](https://github.com/dotnet/sourcelink#using-source-link-in-c-projects).
+Source Link is a language- and source-control agnostic system for providing source debugging for binaries. Source Link is supported for native C++ binaries starting in Visual Studio 2017 version 15.8. For an overview of Source Link, see [Source Link](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/source-link.md). For information on how to use Source Link in your projects, and how to generate the SourceLink file as part of your project, see [Using Source Link](https://github.com/dotnet/sourcelink#using-source-link-in-c-projects).
 
 ### To set the /SOURCELINK linker option in Visual Studio
 
@@ -36,5 +36,5 @@ Source Link is a language- and source-control agnostic system for providing sour
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
+[MSVC linker reference](linking.md)\
 [MSVC Linker Options](linker-options.md)
