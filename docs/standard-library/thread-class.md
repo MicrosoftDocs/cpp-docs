@@ -228,7 +228,7 @@ An existing `thread` object.
 
 The first constructor constructs an object that's not associated with a thread of execution. The value returned by `get_id` for the constructed object is `thread::id()`.
 
-The second constructor constructs an object that's associated with a new thread of execution. It executes the pseudo-function `INVOKE` defined in [`<functional>`](../standard-library/functional.md). If not enough resources are available to start a new thread, the function throws a [`system_error`](../standard-library/system-error-class.md) object that has an error code of `resource_unavailable_try_again`. If the call to *`F`* terminates with an uncaught exception, [`terminate`](../standard-library/exception-functions.md#terminate) is called.
+The second constructor constructs an object that's associated with a new thread of execution. It executes the pseudo-function `INVOKE` defined in [`<functional>`](../standard-library/functional.md). If not enough resources are available to start a new thread, the function throws a [`system_error`](../standard-library/system-error-class.md) object that has an error code of `resource_unavailable_try_again`. If the call to *`F`* terminates with an uncaught exception, [`terminate`](../standard-library/exception-functions.md#terminate) is called. The call to *`F`* must not cause the thread to exit prematurely, such as by calling `ExitThread` or `_endthreadex`.
 
 The third constructor constructs an object that's associated with the thread that's associated with `Other`. `Other` is then set to a default-constructed state.
 
