@@ -3,6 +3,6 @@
    // or an apostrophe(').
    // typedef CStringT<TCHAR, StrTraitATL<TCHAR, ChTraitsCRT<TCHAR>>> CAtlString;
 
-   CAtlString src(_T("World Cup '98"));
+   CAtlString src(_T("abcdef"));
 
    _tprintf_s(_T("%s"),src.SpanExcluding(_T(";,.-'")));
