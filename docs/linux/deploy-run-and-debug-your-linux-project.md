@@ -110,7 +110,7 @@ ExePath="C:\temp\ConsoleApplication17\ConsoleApplication17\bin\x64\Debug\Console
 </SupplementalLaunchOptions>
 ```
 
-The **AttachOptionsForConnection** has most of the attributes you might need. The example above shows how to specify a location to search for more `.so` libraries. The child element **ServerOptions** enables attaching to the remote process with gdbserver instead. To do that, you need to specify a local gdb client (the one shipped in Visual Studio 2017 is shown above) and a local copy of the binary with symbols. The **SetupCommands** element enables you to pass commands directly to gdb. You can find all the options available in the [LaunchOptions.xsd schema](https://github.com/Microsoft/MIEngine/blob/master/src/MICore/LaunchOptions.xsd) on GitHub.
+The **AttachOptionsForConnection** has most of the attributes you might need. The example above shows how to specify a location to search for more `.so` libraries. The child element **ServerOptions** enables attaching to the remote process with gdbserver instead. To do that, you need to specify a local gdb client (the one shipped in Visual Studio 2017 is shown above) and a local copy of the binary with symbols. The **SetupCommands** element enables you to pass commands directly to gdb. You can find all the options available in the [LaunchOptions.xsd schema](https://github.com/Microsoft/MIEngine/blob/main/src/MICore/LaunchOptions.xsd) on GitHub.
 
 ::: moniker range=">=msvc-160"
 
