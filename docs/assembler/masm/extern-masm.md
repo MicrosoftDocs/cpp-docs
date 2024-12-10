@@ -19,6 +19,8 @@ The *language-type* argument is valid in 32-bit MASM only.
 
 The *type* can be [ABS](operator-abs.md), which imports *name* as a constant. Same as [EXTRN](extrn.md).
 
+The *type* can also be PROC, in which case *name* is treated as an external procedure.
+
 ## See also
 
 [Directives Reference](directives-reference.md)\
