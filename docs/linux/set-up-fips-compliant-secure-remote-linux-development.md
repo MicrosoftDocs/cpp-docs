@@ -48,7 +48,7 @@ The examples in this article use Ubuntu 18.04 LTS with OpenSSH server version 7.
    ```
 
    > [!NOTE]
-   > `ssh-rsa`, `rsa-sha2-*`, `ecdsa-sha2-*` are the only FIPS compliant host key algorithms VS supports. For more information about what algorithms Visual Studio supports, see [Supported SSH Algorithms](./connect-to-your-remote-linux-computer.md#supported-ssh-algorithms).
+   > `ssh-rsa`, `rsa-sha2-*`, and `ecdsa-sha2-*` are the only FIPS compliant host key algorithms VS supports. For more information about the algorithms Visual Studio supports, see [Supported SSH Algorithms](./connect-to-your-remote-linux-computer.md#supported-ssh-algorithms).
 
    You're not limited to these options. You can configure `ssh` to use other ciphers, host key algorithms, and so on. Some other relevant security options you may want to consider are `PermitRootLogin`, `PasswordAuthentication`, and `PermitEmptyPasswords`. For more information, see the `man` page for `sshd_config` or the article [SSH Server Configuration](https://www.ssh.com/ssh/sshd_config).
 
