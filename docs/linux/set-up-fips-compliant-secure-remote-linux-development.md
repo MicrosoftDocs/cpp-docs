@@ -48,7 +48,7 @@ The examples in this article use Ubuntu 18.04 LTS with OpenSSH server version 7.
    ```
 
    > [!NOTE]
-   > `ssh-rsa`, `rsa-sha2-*`, and `ecdsa-sha2-*` are the only FIPS compliant host key algorithms VS supports. For more information about the algorithms Visual Studio supports, see [Supported SSH Algorithms](./connect-to-your-remote-linux-computer.md#supported-ssh-algorithms).
+   > `ssh-rsa`, `rsa-sha2-*`, and `ecdsa-sha2-*` are the only FIPS compliant host key algorithms VS supports. For more information about the algorithms Visual Studio supports, see [Supported SSH Algorithms](connect-to-your-remote-linux-computer.md#supported-ssh-algorithms).
 
    You're not limited to these options. You can configure `ssh` to use other ciphers, host key algorithms, and so on. Some other relevant security options you may want to consider are `PermitRootLogin`, `PasswordAuthentication`, and `PermitEmptyPasswords`. For more information, see the `man` page for `sshd_config` or the article [SSH Server Configuration](https://www.ssh.com/ssh/sshd_config).
 
@@ -101,7 +101,7 @@ You've successfully set up `ssh`, created and deployed encryption keys, and test
 
    ![Screenshot showing the options pane in the Connection Manager dialog. Cross Platform > C plus plus > Connection Manager is highlighted.](media/settings_connectionmanager.png)
    
-      The **Connect to Remote System** window is displayed.
+         The **Connect to Remote System** window is displayed.
 
    ![Screenshot showing the Connect to Remote System window, which has text boxes for the host name, port, user name, auth type, and password.](media/connect.png)
    
@@ -126,7 +126,7 @@ You've successfully set up `ssh`, created and deployed encryption keys, and test
 
    ![Screenshot of the Connect to Remote System window which has host name and port text boxes outlined in red to indicate they need to be changed.](media/settings_connectionmanagererror.png)
    
-      For more information on troubleshooting your connection, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
+         For more information on troubleshooting your connection, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 
 ## Command-line utility for the Connection Manager  
 
