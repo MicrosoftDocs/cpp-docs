@@ -20,7 +20,7 @@ It's a good practice to create a checked build of your C or C++ app with ASAN tu
 
 When your app finishes, you get a summary of the memory issues. With COE, you can compile and deploy an existing application into limited production to find memory safety issues. You can run the checked build for days to fully exercise the code, although the app will run slower due to the ASAN instrumentation.
 
-You can use this feature to create a new shipping gate. If all your existing tests pass, but COE reports a memory safety error or a leak, don’t ship the new code or integrate it into a parent branch.
+You can use this feature to create a new shipping gate. If all your existing tests pass, but COE reports a memory safety error or a leak, don't ship the new code or integrate it into a parent branch.
 
 Don't deploy a build with COE enabled into production! COE is intended to be used in testing and development environments only. You shouldn't use an ASAN enabled build in production because of the performance impact of the instrumentation added to detect memory errors, the risk of exposing the internal implementation if errors are reported, and to avoid increasing the surface area of possible security exploits by shipping the library functions that ASAN substitutes for memory allocation, freeing, and so on.
 
