@@ -2,7 +2,7 @@
 title: Find memory leaks with the CRT library
 description: Learn how the C/C++ debugger and C Run-time Library (CRT) can help find memory leaks. The techniques include memory-leak reports and comparing memory snapshots.
 ms.date: 02/03/2023
-helpviewer_keywords: 
+helpviewer_keywords:
   - breakpoints, on memory allocation
   - _CrtMemState
   - _CrtMemCheckpoint
@@ -165,7 +165,7 @@ struct Pod {
     int x;
 };
 
-void main() {
+int main() {
     Pod* pPod = DBG_NEW Pod;
     pPod = DBG_NEW Pod; // Oops, leaked the original pPod!
     delete pPod;
