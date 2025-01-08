@@ -1,7 +1,7 @@
 ---
 title: "Build Insights tips and tricks"
 description: "Learn time-saving tips for using Build Insights."
-ms.date: 11/11/2024
+ms.date: 1/8/2025
 author: tylermsft
 ms.author: twhitney
 ms.topic: article
@@ -33,11 +33,11 @@ To try it, click the filter button on the filter column header and select the pr
   The filter button is selected and a list of projects appears. Checkboxes next to two projects are checked.":::
   :::image-end:::
 
-You can also use file wildcards to filter results. The search is case-insensitive:
+You can also use file wildcards to filter results. The search is case-insensitive and you should use forward slashes (`/`) as path separators:
 
   :::image type="content" source="./media/build-insights-glob-filter.png" alt-text="A screenshot of the build insights filter dialog. There's a files to include text box and a files to exclude text box.":::
 
-This allows you to exclude files from a specific folder or only include files from a specific folder. For example, if your source is located at `C:\src\`, you could include files only from the renderer directory and its subdirectories by putting `C:/src/dev/renderer/**` into the **files to include** text box.
+This allows you to exclude files from a specific folder or only include files from a specific folder. For example, if your source is located at `C:\src\`, you could include files only from the renderer directory and its subdirectories by putting `C:/src/dev/renderer/**` into the **files to include** text box. Use forward slashes (`/`) as path separators.
 
 Here are some other examples:
 
