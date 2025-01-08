@@ -30,7 +30,7 @@ If you have a large solution with many projects, you can filter the Build Insigh
 To try it, click the filter button on the filter column header and select the projects you want to see results for:
 
   :::image type="complex" source="./media/build-insights-filter-by-project.png" alt-text="A screenshot of the Build Insights window with the Included Files tab open.":::
-  The filter button is selected and a list of projects appears. Checkboxes next to two projects are checked.":::
+  The filter button is selected and a list of projects appears. Checkboxes next to two projects are checked.
   :::image-end:::
 
 You can also use file wildcards to filter results. The search is case-insensitive and you should use forward slashes (`/`) as path separators:
@@ -55,10 +55,10 @@ This feature requires Visual Studio 2022 17.12 or later.
 
 Now you can designate a folder to automatically save Build Insight reports to so you can easily access them.
 
-To set the designated folder, go to **Tools** > **Options** > **C++ Build Insights** > **Trace Collection**. Set a path in the **Store Build Insights reports in this directory** field:
+To set the designated folder, go to **Tools** > **Options** > **C++ Build Insights** > **Trace Collection**. Set a path in **Store Build Insights reports in this directory**:
 
   :::image type="complex" source="./media/build-insights-reports-directory.png" alt-text="A screenshot of the options window.":::
-  tools > Options. Build Insights > Trace Collection is selected in the left pane. Collection Settings appears on the right. The Store Build Insights reports in this directory checkbox is selected, and the text box contains the path c:\users\contoso\workspace as an example.":::
+  Tools > Options. Build Insights > Trace Collection is selected in the left pane. Collection Settings appears on the right. The Store Build Insights reports in this directory checkbox is selected, and the text box contains the path c:\users\contoso\workspace as an example."
   :::image-end:::
 
 Reports are automatically saved to this folder when you run Build Insights. If a path isn't set, the `TEMP` folder is used.
