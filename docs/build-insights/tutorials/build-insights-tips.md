@@ -1,7 +1,7 @@
 ---
 title: "Build Insights tips and tricks"
 description: "Learn time-saving tips for using Build Insights."
-ms.date: 11/11/2024
+ms.date: 1/8/2025
 author: tylermsft
 ms.author: twhitney
 ms.topic: article
@@ -30,14 +30,14 @@ If you have a large solution with many projects, you can filter the Build Insigh
 To try it, click the filter button on the filter column header and select the projects you want to see results for:
 
   :::image type="complex" source="./media/build-insights-filter-by-project.png" alt-text="A screenshot of the Build Insights window with the Included Files tab open.":::
-  The filter button is selected and a list of projects appears. Checkboxes next to two projects are checked.":::
+  The filter button is selected and a list of projects appears. Checkboxes next to two projects are checked.
   :::image-end:::
 
-You can also use file wildcards to filter results. The search is case-insensitive:
+You can also use file wildcards to filter results. The search is case-insensitive and you should use forward slashes (`/`) as path separators:
 
   :::image type="content" source="./media/build-insights-glob-filter.png" alt-text="A screenshot of the build insights filter dialog. There's a files to include text box and a files to exclude text box.":::
 
-This allows you to exclude files from a specific folder or only include files from a specific folder. For example, if your source is located at `C:\src\`, you could include files only from the renderer directory and its subdirectories by putting `C:/src/dev/renderer/**` into the **files to include** text box.
+This allows you to exclude files from a specific folder or only include files from a specific folder. For example, if your source is located at `C:\src\`, you could include files only from the renderer directory and its subdirectories by putting `C:/src/dev/renderer/**` into the **files to include** text box. Use forward slashes (`/`) as path separators.
 
 Here are some other examples:
 
@@ -55,10 +55,10 @@ This feature requires Visual Studio 2022 17.12 or later.
 
 Now you can designate a folder to automatically save Build Insight reports to so you can easily access them.
 
-To set the designated folder, go to **Tools** > **Options** > **C++ Build Insights** > **Trace Collection**. Set a path in the **Store Build Insights reports in this directory** field:
+To set the designated folder, go to **Tools** > **Options** > **C++ Build Insights** > **Trace Collection**. Set a path in **Store Build Insights reports in this directory**:
 
   :::image type="complex" source="./media/build-insights-reports-directory.png" alt-text="A screenshot of the options window.":::
-  tools > Options. Build Insights > Trace Collection is selected in the left pane. Collection Settings appears on the right. The Store Build Insights reports in this directory checkbox is selected, and the text box contains the path c:\users\contoso\workspace as an example.":::
+  Tools > Options. Build Insights > Trace Collection is selected in the left pane. Collection Settings appears on the right. The Store Build Insights reports in this directory checkbox is selected, and the text box contains the path c:\users\contoso\workspace as an example."
   :::image-end:::
 
 Reports are automatically saved to this folder when you run Build Insights. If a path isn't set, the `TEMP` folder is used.
