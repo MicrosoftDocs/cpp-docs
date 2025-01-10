@@ -7,7 +7,7 @@ ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
 ---
 # Link options
 
-The CRT lib directory includes several small object files that enable specific CRT features without any code change. These object files are called "link options" since you only have to add them to the linker command line to use them.
+The CRT lib directory includes several small object files that enable specific CRT features without any code change. These object files are called "link options" since you only have to add them to the linker command line to use them. To do this from Visual Studio, right click on your project, go to Properties, and then add the name of the link option under Linker > Input > Additional Dependencies.
 
 CLR pure mode versions of these objects are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017. Use the regular versions for native and /clr code.
 
