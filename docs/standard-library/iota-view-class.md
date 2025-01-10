@@ -67,7 +67,7 @@ This view is typically used to iterate over a series of values. For example:
 ```cpp
 for (int i : iota_view{1, 10}) // iterate over a view of the integers 1 through 9
 {
-    std::cout << i << ’ ’; // 1 2 3 4 5 6 7 8 9
+    std::cout << i << ' '; // 1 2 3 4 5 6 7 8 9
 }
 ```
 
