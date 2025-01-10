@@ -196,7 +196,7 @@ Create the example:
     
     char buffer[10] = {0,1,2,3,4,5,6,7,8,9}; 
     
-    void main()
+    int main()
     {   
         char* inverted_buf= func(buffer, 10); 
     }
@@ -317,7 +317,7 @@ int foo_redundant(unsigned long arg_var)
     return ret;
 }
 
-void main()
+int main()
 {
     int cnt = 0;
 
