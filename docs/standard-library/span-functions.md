@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: <span> functions"
 title: "<span> functions"
+description: "Learn more about: <span> functions"
 ms.date: "05/28/2020"
 f1_keywords: ["span/std::span::as_bytes", "span/std::as_writable_bytes"]
 helpviewer_keywords: ["std::span [C++], as_writable_bytes", "std::as_bytes [C++]"]
@@ -47,7 +47,7 @@ A `span<const byte, S>` to the first item stored in the span where `S` is `{rein
 
 using namespace std;
 
-void main()
+int main()
 {
     int a[] = { 0,1,2 };
     span <int> mySpan(a);
@@ -87,7 +87,7 @@ A `span<byte, S>` to the first item stored in the span where `S` is `{reinterpre
 
 using namespace std;
 
-void main()
+int main()
 {
     int a[] = { 0,1,2 };
     span <int> mySpan(a);
