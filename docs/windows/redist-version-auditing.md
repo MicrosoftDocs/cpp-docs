@@ -11,7 +11,7 @@ author: MahmoudGSaleh
 ms.author: msaleh
 ---
 
-# How To Audit Visual C++ Runtime Version Usage Within Your Organization
+# How to audit Visual C++ Runtime version usage within your organization
 
 The Microsoft Visual C++ Redistributable and the Visual C++ Studio Runtime (collectively, "VC Runtime") is a critical component to thousands of applications. Across your enterprise network, machines may still be running applications that install and use an out-of-support version of the VC Runtime. NTFS File Auditing can be used to identify such usage as a step towards helping you replace these applications with ones that take a dependency on a supported version of the VC Runtime. This guide will walk you through setting up NTFS File Auditing, provide troubleshooting tips, and highlight the benefits of regular audits.
 
@@ -191,7 +191,7 @@ ProcessName : C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
 ResourceAttributes : S:AI
 ```
 
-### Next Steps After Auditing VC Runtime Usage
+### Next steps after auditing VC Runtime usage
 
 After you have determined which processes are using the VC Runtime files or installing the VC Redistributable, uninstall those applications or upgrade them to newer versions that do not depend on unsupported VC Runtimes.
 
