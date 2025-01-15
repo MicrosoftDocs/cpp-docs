@@ -9,7 +9,7 @@ helpviewer_keywords: ["__declspec keyword [C++], hybrid_patchable", "hybrid_patc
 
 **Microsoft Specific**
 
-Use `__declspec(hybrid_patchable)` to mark a function as a hybrid patchable function. This attribute is used to generate a fast-forward sequence of instructions that are executed before the function is called.
+Use `__declspec(hybrid_patchable)` to mark a function as a hybrid patchable function. This attribute generates a fast-forward sequence of instructions that are executed before the function is called.
 
 ## Syntax
 
@@ -17,7 +17,7 @@ Use `__declspec(hybrid_patchable)` to mark a function as a hybrid patchable func
 
 ## Remarks
 
-This is an ARM64EC-only feature.
+`__declspec(hybrid_patchable)` is an ARM64EC-only feature.
 
 **Example:**
 
