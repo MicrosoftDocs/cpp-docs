@@ -9,7 +9,7 @@ helpviewer_keywords: ["__declspec keyword [C++], hybrid_patchable", "hybrid_patc
 
 **Microsoft Specific**
 
-Use **`__declspec(hybrid_patchable)`** extended attribute which can be used in the declaration of functions.
+Use `__declspec(hybrid_patchable)` to mark a function as a hybrid patchable function. This attribute is used to generate a fast-forward sequence of instructions that are executed before the function is called.
 
 ## Syntax
 
@@ -17,14 +17,13 @@ Use **`__declspec(hybrid_patchable)`** extended attribute which can be used in t
 
 ## Remarks
 
-We recommend that all new code use the [`noexcept`](noexcept-cpp.md) operator rather than `__declspec(nothrow)`.
+This is an ARM64EC-only feature.
 
-This attribute tells the compiler that the declared function and the functions it calls never throw an exception. However, it does not enforce the directive. In other words, it never causes [`std::terminate`](../standard-library/exception-functions.md#terminate) to be invoked, unlike **`noexcept`**, or in **`std:c++17`** mode (Visual Studio 2017 version 15.5 and later), `throw()`.
-
-With the synchronous exception handling model, now the default, the compiler can eliminate the mechanics of tracking the lifetime of certain unwindable objects in such a function, and significantly reduce the code size. Given the following preprocessor directive, the three function declarations below are equivalent in **`/std:c++14`** mode:
+**Example:**
 
 ```cpp
-__declspec(hybrid_patchable) int Example() {
+__declspec(hybrid_patchable) int Example()
+{
     return 1;
 }
 ```
@@ -42,15 +41,9 @@ EXP+#Example:
   00000001400CE00F: CC                 int         3 
 ```
 
-
-In **`/std:c++17`** mode, `throw()` is not equivalent to the others that use `__declspec(nothrow)` because it causes `std::terminate` to be invoked if an exception is thrown from the function.
-
-The `void __stdcall f3() throw();` declaration uses the syntax defined by the C++ standard. In C++17 the `throw()` keyword was deprecated.
-
 **END Microsoft Specific**
 
 ## See also
 
 [`__declspec`](../cpp/declspec.md)\
-[`noexcept`](noexcept-cpp.md)\
-[Keywords](../cpp/keywords-cpp.md)
+[Fast-Forward sequences](/windows/arm/arm64ec-abi)
