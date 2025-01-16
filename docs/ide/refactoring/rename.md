@@ -2,6 +2,7 @@
 description: "Learn more about: Rename"
 title: "Rename"
 ms.date: "09/19/2022"
+f1_keywords: ["vc.pkg.refactoring.renamedlg"]
 ---
 # Rename
 
