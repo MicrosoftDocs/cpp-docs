@@ -9,7 +9,7 @@ helpviewer_keywords: ["__declspec keyword [C++], hybrid_patchable", "hybrid_patc
 
 **Microsoft Specific**
 
-Use `__declspec(hybrid_patchable)` to mark a function as a hybrid patchable function. This attribute generates a fast-forward sequence of instructions that are executed before the function is called.
+Use `__declspec(hybrid_patchable)` to mark a function as a hybrid patchable function. This attribute generates a fast-forward sequence. Fast-forward sequences are small x64 functions which contain no real logic, and tail-call the real Arm64EC function. Because fast-forward sequences are primarily used for hooking, if they are unaltered, execution is transferred directly to the Arm64EC function.
 
 ## Syntax
 
@@ -46,4 +46,4 @@ EXP+#Example:
 ## See also
 
 [`__declspec`](../cpp/declspec.md)\
-[Fast-Forward sequences](/windows/arm/arm64ec-abi)
+[Fast-Forward sequences](/windows/arm/arm64ec-abi#fast-forward-sequences)
