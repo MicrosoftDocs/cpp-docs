@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: `__declspec`"
 title: "__declspec"
-ms.date: 03/01/2022
+ms.date: 1/14/2025
 f1_keywords: ["__declspec_cpp", "__declspec", "_declspec"]
 helpviewer_keywords: ["__declspec keyword [C++]"]
 ---
@@ -9,7 +9,7 @@ helpviewer_keywords: ["__declspec keyword [C++]"]
 
 **Microsoft Specific**
 
-The extended attribute syntax for specifying storage-class information uses the **`__declspec`** keyword, which specifies that an instance of a given type is to be stored with a Microsoft-specific storage-class attribute listed below. Examples of other storage-class modifiers include the **`static`** and **`extern`** keywords. However, these keywords are part of the ANSI specification of the C and C++ languages, and as such aren't covered by extended attribute syntax. The extended attribute syntax simplifies and standardizes Microsoft-specific extensions to the C and C++ languages.
+The extended attribute syntax for specifying storage-class information uses the `__declspec` keyword, which specifies that an instance of a given type is to be stored with a Microsoft-specific storage-class attribute listed below. Examples of other storage-class modifiers include the `static` and `extern` keywords. However, these keywords are part of the ANSI specification of the C and C++ languages, and as such aren't covered by extended attribute syntax. The extended attribute syntax simplifies and standardizes Microsoft-specific extensions to the C and C++ languages.
 
 ## Grammar
 
@@ -30,6 +30,7 @@ The extended attribute syntax for specifying storage-class information uses the 
 &emsp;**`dllimport`**\
 &emsp;**`dllexport`**\
 &emsp;**`empty_bases`**\
+&emsp;**`hybrid_patchable`**\
 &emsp;**`jitintrinsic`**\
 &emsp;**`naked`**\
 &emsp;**`noalias`**\
