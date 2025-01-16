@@ -16,7 +16,7 @@ The **`/Zc:static_assert`** compiler option tells the compiler to evaluate `stat
 
 ## Remarks
 
-Starting with Visual Studio 17.10, `/Zc:static_assert` and `/Zc:static_assert-` have no effect. Both options are ignored to avoid breaking builds that use them. `static_assert` is now always evaluated when parsing class or function templates.
+Starting with Visual Studio 17.10, `/Zc:static_assert` and `/Zc:static_assert-` have no effect. Both options are ignored to avoid breaking builds that use them. `static_assert` is now never evaluated when parsing class or function templates.
 
 The **`/Zc:static_assert`** compiler option tells the compiler to evaluate a `static_assert` in the body of a function template or in the body of a class template member function when first parsed, if the test expression isn't dependent. If the non-dependent test expression isn't `false`, the compiler emits an error immediately. When the test expression is dependent, the `static_assert` isn't evaluated until the template is instantiated.
 
