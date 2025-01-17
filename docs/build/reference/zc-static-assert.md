@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /Zc:static_assert (Strict static_assert handling)"
 title: "/Zc:static_assert (Strict static_assert handling)"
-ms.date: 12/15/2021
+ms.date: 1/15/2025
 f1_keywords: ["/Zc:static_assert"]
 helpviewer_keywords: ["/Zc:static_assert compiler option (C++)"]
 ---
@@ -16,7 +16,9 @@ The **`/Zc:static_assert`** compiler option tells the compiler to evaluate `stat
 
 ## Remarks
 
-The **`/Zc:static_assert`** compiler option tells the compiler to evaluate a `static_assert` in the body of a function template or in the body of a class template member function when first parsed, if the test expression isn't dependent. If the non-dependent test expression isn't `false`, the compiler emits an error immediately. When the test expression is dependent, the `static_assert` isn't evaluated until the template is instantiated.
+Starting with Visual Studio 17.10, `/Zc:static_assert` and `/Zc:static_assert-` have no effect. Both options are ignored to avoid breaking builds that use them. `static_assert` is now never evaluated when parsing class or function templates.
+
+The **`/Zc:static_assert`** compiler option tells the compiler to evaluate a `static_assert` in the body of a function template or in the body of a class template member function when first parsed, if the test expression isn't dependent. If the non-dependent test expression is `false`, the compiler emits an error immediately. When the test expression is dependent, the `static_assert` isn't evaluated until the template is instantiated.
 
 The **`/Zc:static_assert`** option is available starting in Visual Studio 2022 version 17.1. In earlier versions of Visual Studio, or if **`/Zc:static_assert-`** is specified, Visual Studio doesn't do dependent analysis if the `static_assert` is within the body of a function template or within the body of a member function of a class template. Instead, it only evaluates the `static_assert` when a template is instantiated.
 
