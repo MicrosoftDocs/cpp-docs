@@ -13,7 +13,7 @@ ms.author: msaleh
 
 # How to audit Visual C++ Runtime version usage
 
-The Microsoft Visual C++ Redistributable and the Visual Studio C++ Runtime (collectively, "VC Runtime") are critical components of many applications. Across your network, machines may still be running applications that install and use an out-of-support version of the VC Runtime. You can use NTFS File Auditing to identify such usage as a step towards helping you replace these applications with ones that take a dependency on a supported version of the VC Runtime. This guide walks you through setting up NTFS File Auditing, provided troubleshooting tips, and highlights the benefits of regular audits.
+The Microsoft Visual C++ Redistributable and the Visual Studio C++ Runtime (collectively, "VC Runtime") are critical components of many applications. Across your network, machines may still be running applications that install and use an out-of-support version of the VC Runtime. You can use NTFS file auditing to identify such usage as a step towards replacing those applications with ones that use a supported version of the VC Runtime. This guide walks you through setting up NTFS file auditing, provides troubleshooting tips, and highlights the benefits of regular audits.
 
 For more information about the versions of VC Runtime that are no longer supported, see [Microsoft Visual C++ Redistributable latest supported downloads](/cpp/windows/latest-supported-vc-redist).
 
@@ -21,27 +21,27 @@ For more information about the versions of VC Runtime that are no longer support
 
 You can use NTFS file auditing to determine which applications are calling the unsupported versions of the VC Runtime.
 
-This guide provides the steps to manually enable NTFS file auditing and review audit events. Because there are several files that can be used by an application, this guide also shows how to use PowerShell's [`Get-Acl`](/powershell/module/microsoft.powershell.security/get-acl) and [`Set-Acl`](/powershell/module/microsoft.powershell.security/set-acl) cmdlets to update auditing permissions. For more information about how to configure audit policies for a file, see [Apply a basic audit policy on a file or folder.](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder)
+This guide provides the steps to manually enable NTFS file auditing and review audit events. Because there are several files that can be used by an application, this guide also shows how to use PowerShell's [`Get-Acl`](/powershell/module/microsoft.powershell.security/get-acl) and [`Set-Acl`](/powershell/module/microsoft.powershell.security/set-acl) cmdlets to update auditing permissions. For more information about how to configure audit policies for a file, see [Apply a basic audit policy on a file or folder](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder).
 
 ### Manually enable object access auditing on the system
 
 Object access must be enabled before you enable file level auditing:
 
-1. Open Group Policy by pressing Windows + R to open the **Run** dialog, then type `gpedit.msc`, and press Enter.
+1. Open the Local Group Policy Editor by pressing Windows + R to open the **Run** dialog, then type `gpedit.msc`, and press Enter.
 1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Advanced Audit Policy Configuration** > **System Audit Policies** > **Object Access**.
 1. Double-click **Audit File System**. In the **Audit File System Properties** dialog, select **Configure the following audit events** > **Success** > **OK**.
 1. Close the Group Policy Editor.
 
 Alternatively, you may use `auditpol.exe` to enable object access:
 
-1. List the current settings with `AuditPol.exe /get /category:"Object Access"`.
-1. Enable access with `AuditPol.exe /set /category:"Object Access" /subcategory:"File System" /success:enable`.
+1. List the current settings from the command line with `AuditPol.exe /get /category:"Object Access"`.
+1. Enable object access with `AuditPol.exe /set /category:"Object Access" /subcategory:"File System" /success:enable`.
 
 ### Manually enable auditing on a file
 
 To monitor which process accesses a VC Runtime file, enable auditing on the file:
 
-1. Right-click on the file that you want to audit, select **Properties**, and then select the **Security** tab. For more information about finding installed VC Runtime files, see [VC Runtime installed locations](#vcruntime_install_location).
+1. Right-click the file that you want to audit, select **Properties**, and then select the **Security** tab. For more information about finding installed VC Runtime files, see [VC Runtime installed locations](#vcruntime_install_location).
 1. Select **Advanced**.
 1. In the **Advanced Security Settings** dialog box, select the **Auditing** tab and then select **Continue**.
 1. To add a new auditing rule, select **Add**. In the **Auditing Entry** dialog, select a principal, then type the name of the user or group you want to add such as **(Everyone)**, and then select **OK**.
@@ -50,7 +50,7 @@ To monitor which process accesses a VC Runtime file, enable auditing on the file
 1. There should now be a new row in the **Auditing** entries matching what you have selected. Select **OK**.
 1. In the **Properties** Dialog, select **OK**.
 
-The audit rule is now enabled.
+The audit rule is now enabled for the file.
 
 ### Manually review audit logs
 
@@ -58,7 +58,7 @@ NTFS file auditing generates ["Event 4663: An attempt was made to access an obje
 
 1. Open the Event Viewer by pressing `Windows` + `R` to open the **Run** dialog. Then type `eventvwr.msc`, and press Enter.
 1. Navigate to the **Security** logs in the Event Viewer by expanding **Windows Logs** > **Security**. The results pane lists security events.
-1. Filter and Analyze the logs by choosing **Filter Current Log...** in the **Actions** pane. Narrow down the events to **Event ID 4663 (Audit Success for the File System Category)** by entering **4663 into the Includes/Excludes Event IDs** text box.
+1. Find the audit events by choosing **Filter Current Log...** in the **Actions** pane. Narrow down the events to **Event ID 4663 (Audit Success for the File System Category)** by entering **4663 into the Includes/Excludes Event IDs** text box.
 
 For an example of a File Access Auditing Event 4663, see ["4663(S): An attempt was made to access an object."](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663)
 
@@ -125,9 +125,7 @@ ForEach-Object {
 
 ### PowerShell: View file audit events
 
-PowerShell provides `Get-WinEvent` to obtain event records for various event logs.
-
-The following PowerShell code lists all of the Auditing Event 4663 records over the past 24 hours:
+PowerShell provides `Get-WinEvent` to obtain event records for various event logs as shown in the following PowerShell code which lists all of the Auditing Event 4663 records over the past 24 hours:
 
 ```powershell
 function Get-AuditEntries {
@@ -156,8 +154,6 @@ function Get-AuditEntries {
 Get-AuditEntries -oldestTime (Get-Date).AddHours(-24)
 ```
 
-Example output from the previous code:
-
 ```output
 TimeCreated : 11/20/2024 5:00:11 AM
 Accesses : Execute/Traverse
@@ -178,7 +174,7 @@ ResourceAttributes : S:AI
 
 ### Next steps after auditing VC Runtime usage
 
-After you have determined which processes are using the VC Runtime files or which applications have installed the VC Redistributable, uninstall those applications or upgrade them to newer versions that don't depend on unsupported VC Runtimes.
+After you have determined which processes are using the VC Runtime files, or which applications have installed the VC Redistributable, uninstall those applications or upgrade them to newer versions that don't depend on unsupported VC Runtimes.
 
 Some Microsoft applications require legacy versions of the VC Runtime. For details, see [Visual C++ Redistributable and runtime libraries FAQ | Microsoft Learn](/lifecycle/faq/visual-c-faq).
 
@@ -198,6 +194,6 @@ The following is where each version of the VC Runtime is installed.
 
 ## See also
 
-[Redistributing Visual C++ Files](redistributing-visual-cpp-files.md)<br/>
-[The latest supported Visual C++ downloads](latest-supported-vc-redist.md)<br/>
+[Redistributing Visual C++ Files](redistributing-visual-cpp-files.md)\
+[The latest supported Visual C++ downloads](latest-supported-vc-redist.md)\
 [Lifecycle FAQ - Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)
