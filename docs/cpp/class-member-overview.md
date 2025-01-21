@@ -17,7 +17,7 @@ The full list of member categories is as follows:
 
 - [Overview of member functions](overview-of-member-functions.md).
 
-- [Mutable](static-members-cpp.md) and [static](static-members-cpp.md) data members, including built-in types and other user defined types.
+- [Mutable](mutable-data-members-cpp.md) and [static](static-members-cpp.md) data members, including built-in types and other user defined types.
 
 - Operators
 
