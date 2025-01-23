@@ -28,7 +28,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1) C4410](compiler-warning-level-1-c4410.md)|illegal size for operand|
 |[Compiler warning (level 1) C4411](compiler-warning-level-1-c4411.md)|'*identifier*': symbol resolves to displacement register|
 |[Compiler warning (level 2, off) C4412](compiler-warning-level-2-c4412.md)|'*function*': function signature contains type '*type*'; C++ objects are unsafe to pass between pure code and mixed or native.|
-|Compiler warning (no longer emitted) C4413|'`classname::member`': reference member is initialized to a temporary that does not persist after the constructor exits|
+|Compiler warning (no longer emitted) C4413|'`classname::member`': reference member is initialized to a temporary that doesn't persist after the constructor exits|
 |[Compiler warning (level 3) C4414](compiler-warning-level-3-c4414.md)|'*function*': short jump to function converted to near|
 |Compiler warning (level 1) C4415|duplicate `__declspec(code_seg(`'*name*'`))`|
 |Compiler warning (level 1) C4416|`__declspec(code_seg(...))` contains empty string: ignored|
