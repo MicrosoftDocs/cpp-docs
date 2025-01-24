@@ -15,8 +15,8 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |Warning|Message|
 |-------------|-------------|
 |[Compiler warning (level 4, no longer emitted) C4001](compiler-warning-level-4-c4001.md)|nonstandard extension 'single line comment' was used|
-|[Compiler warning (level 1, Error) C4002](compiler-warning-level-1-c4002.md)|too many arguments for function-like macro invocation '*identifier*'|
-|[Compiler warning (level 1, Error) C4003](compiler-warning-level-1-c4003.md)|not enough arguments for function-like macro invocation '*identifier*'|
+|[Compiler warning (level 1, error) C4002](compiler-warning-level-1-c4002.md)|too many arguments for function-like macro invocation '*identifier*'|
+|[Compiler warning (level 1, error) C4003](compiler-warning-level-1-c4003.md)|not enough arguments for function-like macro invocation '*identifier*'|
 |[Compiler warning (level 1) C4005](compiler-warning-level-1-c4005.md)|'*identifier*': macro redefinition|
 |[Compiler warning (level 1) C4006](compiler-warning-level-1-c4006.md)|`#undef` expected an identifier|
 |[Compiler warning (level 3) C4007](compiler-warning-level-2-c4007.md)|'*function*': must be '*attribute*'|
@@ -27,10 +27,10 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 3) C4018](compiler-warning-level-3-c4018.md)|'*expression*': signed/unsigned mismatch|
 |[Compiler warning (level 4) C4019](compiler-warning-level-4-c4019.md)|empty statement at global scope|
 |[Compiler warning (level 1) C4020](compiler-warning-level-1-c4020.md)|'function': too many actual parameters|
-|[Compiler warning (level 1) C4022](compiler-warning-level-1-c4022.md)|'*function*': pointer mismatch for actual parameter '*parameter_number*'|
-|Compiler warning (level 1) C4023|'*function*': based pointer passed to unprototyped function: parameter '*parameter_number*'|
-|[Compiler warning (level 1) C4024](compiler-warning-level-1-c4024.md)|'*function*': different types for formal and actual parameter '*parameter_number*'|
-|[Compiler warning (level 1) C4025](compiler-warning-level-1-c4025.md)|'*function*': based pointer passed to function with variable arguments: parameter '*parameter_number*'|
+|[Compiler warning (level 1) C4022](compiler-warning-level-1-c4022.md)|'*function*': pointer mismatch for actual parameter *parameter_number*|
+|Compiler warning (level 1) C4023|'*function*': based pointer passed to unprototyped function: parameter *parameter_number*|
+|[Compiler warning (level 1) C4024](compiler-warning-level-1-c4024.md)|'*function*': different types for formal and actual parameter *parameter_number*|
+|[Compiler warning (level 1) C4025](compiler-warning-level-1-c4025.md)|'*function*': based pointer passed to function with variable arguments: parameter *parameter_number*|
 |[Compiler warning (level 1) C4026](compiler-warning-level-1-c4026.md)|function declared with formal parameter list|
 |[Compiler warning (level 1) C4027](compiler-warning-level-1-c4027.md)|function declared without formal parameter list|
 |[Compiler warning (level 1) C4028](compiler-warning-level-1-c4028.md)|formal parameter *parameter_number* different from declaration|
@@ -68,7 +68,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 3) C4073](compiler-warning-level-3-c4073.md)|initializers put in library initialization area|
 |[Compiler warning (level 1) C4074](compiler-warning-level-1-c4074.md)|initializers put in compiler reserved initialization area|
 |[Compiler warning (level 1) C4075](compiler-warning-level-1-c4075.md)|initializers put in unrecognized initialization area|
-|[Compiler warning (level 1) C4076](compiler-warning-level-1-c4076.md)|'*type_modifier*': can't be used with type '*typename*'|
+|[Compiler warning (level 1) C4076](compiler-warning-level-1-c4076.md)|'*type_modifier*': cannot be used with type '*typename*'|
 |[Compiler warning (level 1) C4077](compiler-warning-level-1-c4077.md)|unknown check_stack option|
 |[Compiler warning (level 1) C4079](compiler-warning-level-1-c4079.md)|unexpected token '*token*'|
 |[Compiler warning (level 1) C4080](compiler-warning-level-1-c4080.md)|expected identifier for segment name; found '*symbol*'|
@@ -77,8 +77,8 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1) C4085](compiler-warning-level-1-c4085.md)|expected pragma parameter to be '`on`' or '`off`'|
 |[Compiler warning (level 1) C4086](compiler-warning-level-1-c4086.md)|expected pragma parameter to be '1', '2', '4', '8', or '16'|
 |[Compiler warning (level 1) C4087](compiler-warning-level-1-c4087.md)|'function': declared with '`void`' parameter list|
-|[Compiler warning (level 1) C4088](compiler-warning-level-1-c4088.md)|'*function*': pointer mismatch in actual parameter '*parameter_number*', formal parameter '*parameter_number*'|
-|[Compiler warning (level 1) C4089](compiler-warning-level-1-c4089.md)|'*function*': different types in actual parameter '*parameter_number*', formal parameter '*parameter_number*'|
+|[Compiler warning (level 1) C4088](compiler-warning-level-1-c4088.md)|'*function*': pointer mismatch in actual parameter *parameter_number*, formal parameter *parameter_number*|
+|[Compiler warning (level 1) C4089](compiler-warning-level-1-c4089.md)|'*function*': different types in actual parameter *parameter_number*, formal parameter *parameter_number*|
 |[Compiler warning (level 1) C4090](compiler-warning-level-1-c4090.md)|'*operation*': different '*modifier*' qualifiers|
 |[Compiler warning (level 1 and level 2) C4091](compiler-warning-level-1-c4091.md)|'*keyword*': ignored on left of '*type*' when no variable is declared|
 |[Compiler warning (level 4) C4092](compiler-warning-level-4-c4092.md)|sizeof returns 'unsigned long'|
@@ -92,7 +92,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 3) C4102](compiler-warning-level-3-c4102.md)|'*label*': unreferenced label|
 |[Compiler warning (level 1) C4103](compiler-warning-level-1-c4103.md)|alignment changed after including header, may be due to missing `#pragma pack(pop)`|
 |[Compiler warning (level 1) C4109](compiler-warning-level-1-c4109.md)|unexpected identifier '*identifier*'|
-|[Compiler warning (level 1 and level 4) C4112](compiler-warning-levels-1-and-4-c4112.md)|`#line` requires an integer between 1 and '*line_count*'|
+|[Compiler warning (level 1 and level 4) C4112](compiler-warning-levels-1-and-4-c4112.md)|`#line` requires an integer between 1 and *line_count*|
 |[Compiler warning (level 1) C4113](compiler-warning-level-1-c4113.md)|'*identifier1*' differs in parameter lists from '*identifier2*'|
 |[Compiler warning (level 1) C4114](compiler-warning-level-1-c4114.md)|same type qualifier used more than once|
 |[Compiler warning (level 1 and level 4) C4115](compiler-warning-levels-1-and-4-c4115.md)|'*type*': named type definition in parentheses|
@@ -113,7 +113,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1 and level 3) C4133](compiler-warning-level-3-c4133.md)|'*expression*': incompatible types - from '*type1*' to '*type2*'|
 |Compiler warning C4137|'function': no return value from floating-point function|
 |[Compiler warning (level 1) C4138](compiler-warning-level-1-c4138.md)|'`*/`' found outside of comment|
-|[Compiler warning (level 1, Error) C4141](compiler-warning-level-1-c4141.md)|'*modifier*': used more than once|
+|[Compiler warning (level 1, error) C4141](compiler-warning-level-1-c4141.md)|'*modifier*': used more than once|
 |[Compiler warning (level 1) C4142](compiler-warning-level-1-c4142.md)|'*identifier*': benign redefinition of type|
 |[Compiler warning (level 1) C4143](compiler-warning-level-1-c4143.md)|`pragma` 'same_seg' not supported; use `__based` allocation|
 |[Compiler warning (level 1) C4144](compiler-warning-level-1-c4144.md)|'*expression*': relational expression as switch expression|
@@ -126,10 +126,10 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1) C4155](compiler-warning-level-1-c4155.md)|deletion of an array expression without using the array form of 'delete'|
 |[Compiler warning (level 2) C4156](compiler-warning-level-2-c4156.md)|deletion of an array expression without using the array form of 'delete'; array form substituted|
 |[Compiler warning (level 1) C4157](compiler-warning-level-1-c4157.md)|pragma was ignored by C compiler|
-|[Compiler warning (level 1) C4158](compiler-warning-level-1-c4158.md)|assuming `#pragma pointers_to_members(full_generality, `'*inheritance_type*'`)`|
-|[Compiler warning (level 3) C4159](compiler-warning-level-3-c4159.md)|`#pragma `'*pragma*'`(pop,...)`: has popped previously pushed identifier '*identifier*'|
-|[Compiler warning (level 1) C4160](compiler-warning-level-1-c4160.md)|`#pragma `'*pragma*'`(pop,...)`: did not find previously pushed identifier '*identifier*'|
-|[Compiler warning (level 3) C4161](compiler-warning-level-3-c4161.md)|`#pragma `'*pragma*'`(pop...)`: more pops than pushes|
+|[Compiler warning (level 1) C4158](compiler-warning-level-1-c4158.md)|assuming `#pragma pointers_to_members(full_generality, `*inheritance_type*`)`|
+|[Compiler warning (level 3) C4159](compiler-warning-level-3-c4159.md)|`#pragma `*pragma*`(pop,...)`: has popped previously pushed identifier '*identifier*'|
+|[Compiler warning (level 1) C4160](compiler-warning-level-1-c4160.md)|`#pragma `*pragma*`(pop,...)`: did not find previously pushed identifier '*identifier*'|
+|[Compiler warning (level 3) C4161](compiler-warning-level-3-c4161.md)|`#pragma `*pragma*`(pop...)`: more pops than pushes|
 |[Compiler warning (level 1) C4162](compiler-warning-level-1-c4162.md)|'*identifier*': no function with C linkage found|
 |[Compiler warning (level 1) C4163](compiler-warning-level-1-c4163.md)|'*identifier*': not available as an intrinsic function|
 |[Compiler warning (level 1) C4164](compiler-warning-level-1-c4164.md)|'*function*': intrinsic function not declared|
@@ -148,8 +148,8 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |Compiler warning C4181|qualifier applied to reference type; ignored|
 |[Compiler warning (level 1) C4182](compiler-warning-level-1-c4182.md)|`#include` nesting level is *nest_count* deep; possible infinite recursion|
 |[Compiler warning (level 1) C4183](compiler-warning-level-1-c4183.md)|'*identifier*': missing return type; assumed to be a member function returning '`int`'|
-|[Compiler warning (level 1) C4185](compiler-warning-level-1-c4185.md)|ignoring unknown `#import` attribute '*attribute*'|
-|[Compiler warning (level 1) C4186](compiler-warning-level-1-c4186.md)|`#`*import* attribute '*attribute*' requires '*argument_count*' arguments; ignored|
+|[Compiler warning (level 1) C4185](compiler-warning-level-1-c4185.md)|ignoring unknown `#`*import* attribute '*attribute*'|
+|[Compiler warning (level 1) C4186](compiler-warning-level-1-c4186.md)|`#`*import* attribute '*attribute*' requires *argument_count* arguments; ignored|
 |[Compiler warning (level 1) C4187](compiler-warning-level-1-c4187.md)|`#import` attributes '*attribute1*' and '*attribute2*' are incompatible; both ignored|
 |Compiler warning (level 1) C4188|constant expression is not integral|
 |[Compiler warning (level 3 and level 4) C4189](compiler-warning-level-4-c4189.md)|'*identifier*': local variable is initialized but not referenced|
