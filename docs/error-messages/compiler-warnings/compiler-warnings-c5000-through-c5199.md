@@ -23,39 +23,39 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 | Compiler warning (level 1 and level 4, off) C5027 | '*type*': move assignment operator was implicitly defined as deleted |
 | Compiler warning (level 1) C5028 | '*name*': Alignment specified in prior declaration (*number*) not specified in definition |
 | Compiler warning (level 4, off) C5029 | nonstandard extension used: alignment attributes in C++ apply to variables, data members and tag types only |
-| Compiler warning (level 3) C5030 | attribute '*attribute-name*' is not recognized |
+| Compiler warning (level 3) C5030 | attribute `[[`*attribute_name*`]]` is not recognized |
 | Compiler warning (level 4, off) C5031 | `#pragma warning(pop)`: likely mismatch, popping warning state pushed in different file |
 | Compiler warning (level 4, off) C5032 | detected `#pragma warning(push)` with no corresponding `#pragma warning(pop)` |
 | [Compiler warning (level 1) C5033](c5033.md) | '*storage-class*' is no longer a supported storage class |
-| Compiler warning (level 5, off) C5034 | use of intrinsic '*intrinsic*' causes function *function-name* to be compiled as guest code |
-| Compiler warning (level 5, off) C5035 | use of feature '*feature*' causes function *function-name* to be compiled as guest code |
-| Compiler warning (level 1) C5036 | varargs function pointer conversion when compiling with `/hybrid:x86arm64` '*type1*' to '*type2*' |
-| [Compiler warning (error) C5037](c5037.md) | '*member-function*': an out-of-line definition of a member of a class template cannot have default arguments |
-| [Compiler warning (level 4, off) C5038](c5038.md) | data member '*member1*' will be initialized after data member '*member2*' |
-| Compiler warning (level 4, off) C5039 | '*function*': pointer or reference to potentially throwing function passed to `extern C` function under `-EHc`. Undefined behavior may occur if this function throws an exception. |
+| Compiler warning (level 4, off) C5034 | use of intrinsic '*intrinsic*' causes function *function-name* to be compiled as guest code |
+| Compiler warning (level 4, off) C5035 | use of feature '*feature*' causes function *function-name* to be compiled as guest code |
+| Compiler warning (level 1) C5036 | `varargs` function pointer conversion when compiling with /hybrid:x86arm64 from type '*type1*' to type '*type2*' |
+| [Compiler warning (level 3, error) C5037](c5037.md) | '*member-function*': an out-of-line definition of a member of a class template cannot have default arguments |
+| [Compiler warning (level 4, off) C5038](c5038.md) | *data member* '*member1*' will be initialized after *data member* '*member2*' |
+| Compiler warning (level 4, off) C5039 | '*function*': pointer or reference to potentially throwing function passed to '`extern "C"`' function under `-EHc`. Undefined behavior may occur if this function throws an exception. |
 | Compiler warning (level 3) C5040 | dynamic exception specifications are valid only in C++14 and earlier; treating as noexcept(false) |
-| Compiler warning (level 1, off) C5041 | '*definition*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17 |
-| Compiler warning (level 3, off) C5042 | '*declaration*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier |
+| Compiler warning (level 4, off) C5041 | '*definition*': out-of-line definition for `constexpr` static data member is not needed and is deprecated in C++17 |
+| Compiler warning (level 3, off) C5042 | '*declaration*': function declarations at block scope cannot be specified '`inline`' in standard C++; remove '`inline`' specifier |
 | Compiler warning (level 2) C5043 | '*specification*': exception specification does not match previous declaration |
 | Compiler warning (level 4) C5044 | An argument to command-line option *option-name* points to a path '*path-name*' that does not exist |
-| [Compiler warning (level 4) C5045](c5045.md) | Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified |
+| [Compiler warning (level 4) C5045](c5045.md) | Compiler will insert Spectre mitigation for memory load if `/Qspectre` switch specified |
 | [Compiler warning (level 2) C5046](c5046.md) | '*function*': Symbol involving type with internal linkage not defined |
-| Compiler warning (level 1) C5047 | use of nonstandard `__if_exists` with modules is not supported |
+| Compiler warning (level 1, error) C5047 | use of nonstandard '*keyword*' with modules is not supported |
 | Compiler warning (level 1) C5048 | Use of macro '*macroname*' may result in non-deterministic output |
 | Compiler warning (level 1) C5049 | '*string*': Embedding a full path may result in machine-dependent output |
 | [Compiler warning (level 1) C5050](c5050.md) | Possible incompatible environment while importing module '*module_name*': *issue* |
-| Compiler warning (level 1) C5051 | attribute 'attribute-name' requires at least 'standard-level'; ignored |
-| Compiler warning (level 3, off) C5052 | Keyword 'keyword-name' was introduced in C++\<version> and requires use of the 'option-name' command-line option |
+| Compiler warning (level 1) C5051 | attribute `[[`*attribute-name*`]]` requires at least '*standard_version*'; ignored |
+| Compiler warning (level 3, off) C5052 | Keyword '*keyword-name*' was introduced in `C++`*version* and requires use of the '*switch*' command-line option |
 | Compiler warning (level 1) C5053 | support for '`explicit(<expr>)`' in C++17 and earlier is a vendor extension |
-| [Compiler warning (level 4) C5054](c5054.md) | operator 'operator-name': deprecated between enumerations of different types |
-| [Compiler warning (level 1) C5055](c5055.md) | operator 'operator-name': deprecated between enumerations and floating-point types |
-| [Compiler warning (level 1) C5056](c5056.md) | operator 'operator-name': deprecated for array types |
-| Compiler warning (level 1) C5057 | header unit reference to 'name' already exists.  Ignoring header unit 'header-name' |
-| Compiler warning (level 1) C5058 | file system error: cannot find header file 'file-name' for header unit 'unit-name' |
+| [Compiler warning (level 4) C5054](c5054.md) | operator '*operator-name*': deprecated between enumerations of different types |
+| [Compiler warning (level 1) C5055](c5055.md) | operator '*operator-name*': deprecated between enumerations and floating-point types |
+| [Compiler warning (level 1) C5056](c5056.md) | operator '*operator-name*': deprecated for array types |
+| Compiler warning (level 1) C5057 | header unit reference to '*name*' already exists.  Ignoring header unit '*header-name*' |
+| Compiler warning (level 1) C5058 | file system error: cannot find header file '*file-name*' for header unit '*unit-name*' |
 | Compiler warning C5059 | runtime checks and address sanitizer is not currently supported - disabling runtime checks |
 | Compiler warning (level 4) C5060 | `/Qpar` and address sanitizer not currently supported - disabling auto-parallelization |
 | Compiler warning (level 4) C5061 | the use of a comma operator as a subscript expression has been deprecated |
-| Compiler warning (level 4) C5062 | enum direct list initialization between 'type-1' and 'type-2' is no longer supported |
+| Compiler warning (level 4) C5062 | `enum` direct list initialization between '*type-1*' and '*type-2*' is no longer supported |
 | Compiler warning (level 1) C5063 | '`std::is_constant_evaluated`' always evaluates to true in manifestly constant-evaluated expressions |
 | [Compiler warning (level 1) C5072](compiler-warning-c5072.md) | ASAN enabled without debug information emission. Enable debug info for better ASAN error reporting |
 | Compiler warning (level 1) C5081 | Secure hotpatch is not supported with `/GENPROFILE`, `/FASTGENPROFILE` or `/LTCG:PGI`, disabling secure hotpatch. |
