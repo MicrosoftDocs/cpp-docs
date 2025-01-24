@@ -86,12 +86,8 @@ items:
 - name: Compiler fatal errors
   expanded: false
   items: 
-    - name: Compiler fatal errors C999 through C1999
+    - name: Compiler fatal errors C1001 through C1999
       href: compiler-errors-1/compiler-fatal-errors-c999-through-c1999.md
-    - name: Fatal error C999
-      href: compiler-errors-1/fatal-error-c999.md
-    - name: Fatal error C1000, C1999
-      href: compiler-errors-1/fatal-error-c1000-c1999.md
     - name: Fatal error C1001
       href: compiler-errors-1/fatal-error-c1001.md
     - name: Fatal error C1002
@@ -4331,8 +4327,6 @@ items:
           href: compiler-warnings/compiler-warning-level-3-c4996.md
         - name: Compiler warning (level 1) C4997
           href: compiler-warnings/compiler-warning-level-1-c4997.md
-        - name: Compiler warning (level 1) C4999
-          href: compiler-warnings/compiler-warning-level-1-c4999.md
     - name: Compiler warnings C5000 through C5199
       expanded: false
       items: 
