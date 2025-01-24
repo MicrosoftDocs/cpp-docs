@@ -86,7 +86,7 @@ items:
 - name: Compiler fatal errors
   expanded: false
   items: 
-    - name: Compiler fatal errors C1001 through C1999
+    - name: Compiler fatal errors C1001 through C1907
       href: compiler-errors-1/compiler-fatal-errors-c999-through-c1999.md
     - name: Fatal error C1001
       href: compiler-errors-1/fatal-error-c1001.md
