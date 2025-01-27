@@ -1,32 +1,28 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4437"
-title: "Compiler Warning (level 4) C4437"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1 and level 4, off) C4437"
+title: "Compiler warning (level 1 and level 4, off) C4437"
+ms.date: "1/22/2025"
 f1_keywords: ["C4437"]
 helpviewer_keywords: ["C4437"]
-ms.assetid: dc07e350-20eb-474c-a7ad-f841ae7ec339
 ---
-# Compiler Warning (level 4) C4437
+# Compiler warning (level 1 and level 4, off) C4437
 
-dynamic_cast from virtual base 'class1' to 'class2' could fail in some contexts        Compile with /vd2 or define 'class2' with #pragma vtordisp(2) in effect
+> `dynamic_cast` from virtual base '*base_class*' to '*derived_class*' could fail in some contexts
 
-This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-The compiler has encountered a **`dynamic_cast`** operation with the following characteristics.
+A `dynamic_cast` operation is used when:
 
 - The cast is from a base class pointer to a derived class pointer.
-
 - The derived class virtually inherits the base class.
+- The derived class doesn't have a `vtordisp` field for the virtual base.
+- The cast is found in a constructor or destructor of the derived class, or a class that inherits from the derived class. Otherwise, compiler warning [C4436](compiler-warning-level-1-c4436.md) is emitted issued of C4435.
 
-- The derived class does not have a `vtordisp` field for the virtual base.
-
-- The cast is not found in a constructor or destructor of the derived class, or some class which further inherits from the derived class (otherwise, compiler warning C4436 will be issued).
-
-The warning indicates that the **`dynamic_cast`** might not perform correctly if it is operating on a partially-constructed object.  This situation occurs when the enclosing function is called from a constructor or destructor of a class that inherits the derived class that is named in the warning.  If the derived class that is named in the warning is never further derived, or the enclosing function is not called during object construction or destruction, the warning can be ignored.
+This warning indicates that the `dynamic_cast` might not perform correctly when applied to a partially constructed object. This situation occurs when the enclosing function is called from a constructor or destructor of a class that inherits from *derived_class*. You can ignore the error if *derived_class* is never further derived, or the enclosing function isn't called during object construction or destruction.
 
 ## Example
 
-The following sample generates C4437 and demonstrates the code generation issue that arises from the missing `vtordisp` field.
+The following sample generates C4437 and demonstrates the code generation issue that arises from the missing `vtordisp` field:
 
 ```cpp
 // C4437.cpp
@@ -76,6 +72,6 @@ int main()
 
 ## See also
 
-[dynamic_cast Operator](../../cpp/dynamic-cast-operator.md)<br/>
-[vtordisp](../../preprocessor/vtordisp.md)<br/>
-[Compiler Warning (level 1) C4436](../../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)
+[`dynamic_cast` Operator](../../cpp/dynamic-cast-operator.md)\
+[`vtordisp`](../../preprocessor/vtordisp.md)\
+[Compiler Warning (level 1) C4436](compiler-warning-level-1-c4436.md)
