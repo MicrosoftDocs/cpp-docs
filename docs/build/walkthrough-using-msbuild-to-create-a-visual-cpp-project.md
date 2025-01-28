@@ -113,12 +113,12 @@ An MSBuild project file is an XML file that contains a project root element (`<P
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
     ```
 
-1. Add a property group element (`<PropertyGroup>`) that specifies two project properties, `<ConfigurationType>` and `<PlatformToolset>`. (Use `v140` as the `<PlatformToolset>` value if you're using Visual Studio 2015, `v141` if you're using Visual Studio 2017, or `v142` if you're using Visual Studio 2019.)
+1. Add a property group element (`<PropertyGroup>`) that specifies two project properties, `<ConfigurationType>` and `<PlatformToolset>`. (Use `v140` as the `<PlatformToolset>` value if you're using Visual Studio 2015, `v141` if you're using Visual Studio 2017, `v142` if you're using Visual Studio 2019 or `v143` if you're using Visual Studio 2022.)
 
     ```xml
     <PropertyGroup>
       <ConfigurationType>Application</ConfigurationType>
-      <PlatformToolset>v142</PlatformToolset>
+      <PlatformToolset>v143</PlatformToolset>
     </PropertyGroup>
     ```
 
