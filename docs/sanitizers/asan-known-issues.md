@@ -24,6 +24,7 @@ These options and functionality are incompatible with [`/fsanitize=address`](../
 - [Universal Windows Platform](../cppcx/universal-windows-apps-cpp.md) (UWP) applications are unsupported.
 - [Special case list](https://clang.llvm.org/docs/SanitizerSpecialCaseList.html) files are unsupported.
 - [MFC](../mfc/mfc-concepts.md) using the optional [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md) runtime option is unsupported.
+- [_CrtDumpMemoryLeaks](../c-runtime-library/reference/crtdumpmemoryleaks.md) is unsupported, and should be disabled.
 
 ## Standard library support
 
