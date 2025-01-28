@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: hash_map Class"
 title: "hash_map Class"
+description: "Learn more about: hash_map Class"
 ms.date: "11/04/2016"
 f1_keywords: ["hash_map/stdext::hash_map", "hash_map/stdext::hash_map::allocator_type", "hash_map/stdext::hash_map::const_iterator", "hash_map/stdext::hash_map::const_pointer", "hash_map/stdext::hash_map::const_reference", "hash_map/stdext::hash_map::const_reverse_iterator", "hash_map/stdext::hash_map::difference_type", "hash_map/stdext::hash_map::iterator", "hash_map/stdext::hash_map::key_compare", "hash_map/stdext::hash_map::key_type", "hash_map/stdext::hash_map::mapped_type", "hash_map/stdext::hash_map::pointer", "hash_map/stdext::hash_map::reference", "hash_map/stdext::hash_map::reverse_iterator", "hash_map/stdext::hash_map::size_type", "hash_map/stdext::hash_map::value_type", "hash_map/stdext::hash_map::at", "hash_map/stdext::hash_map::begin", "hash_map/stdext::hash_map::cbegin", "hash_map/stdext::hash_map::cend", "hash_map/stdext::hash_map::clear", "hash_map/stdext::hash_map::count", "hash_map/stdext::hash_map::crbegin", "hash_map/stdext::hash_map::crend", "hash_map/stdext::hash_map::emplace", "hash_map/stdext::hash_map::emplace_hint", "hash_map/stdext::hash_map::empty", "hash_map/stdext::hash_map::end", "hash_map/stdext::hash_map::equal_range", "hash_map/stdext::hash_map::erase", "hash_map/stdext::hash_map::find", "hash_map/stdext::hash_map::get_allocator", "hash_map/stdext::hash_map::insert", "hash_map/stdext::hash_map::key_comp", "hash_map/stdext::hash_map::lower_bound", "hash_map/stdext::hash_map::max_size", "hash_map/stdext::hash_map::rbegin", "hash_map/stdext::hash_map::rend", "hash_map/stdext::hash_map::size", "hash_map/stdext::hash_map::swap", "hash_map/stdext::hash_map::upper_bound", "hash_map/stdext::hash_map::value_comp"]
 helpviewer_keywords: ["stdext::hash_map", "stdext::hash_map::allocator_type", "stdext::hash_map::const_iterator", "stdext::hash_map::const_pointer", "stdext::hash_map::const_reference", "stdext::hash_map::const_reverse_iterator", "stdext::hash_map::difference_type", "stdext::hash_map::iterator", "stdext::hash_map::key_compare", "stdext::hash_map::key_type", "stdext::hash_map::mapped_type", "stdext::hash_map::pointer", "stdext::hash_map::reference", "stdext::hash_map::reverse_iterator", "stdext::hash_map::size_type", "stdext::hash_map::value_type", "stdext::hash_map::at", "stdext::hash_map::begin", "stdext::hash_map::cbegin", "stdext::hash_map::cend", "stdext::hash_map::clear", "stdext::hash_map::count", "stdext::hash_map::crbegin", "stdext::hash_map::crend", "stdext::hash_map::emplace", "stdext::hash_map::emplace_hint", "stdext::hash_map::empty", "stdext::hash_map::end", "stdext::hash_map::equal_range", "stdext::hash_map::erase", "stdext::hash_map::find", "stdext::hash_map::get_allocator", "stdext::hash_map::insert", "stdext::hash_map::key_comp", "stdext::hash_map::lower_bound", "stdext::hash_map::max_size", "stdext::hash_map::rbegin", "stdext::hash_map::rend", "stdext::hash_map::size", "stdext::hash_map::swap", "stdext::hash_map::upper_bound", "stdext::hash_map::value_comp"]
@@ -817,8 +817,8 @@ The [`hash_map::value_type`](#value_type) of an element is a pair, so that the v
 ```cpp
 // hash_map_emplace.cpp
 // compile with: /EHsc
-#include<hash_map>
-#include<iostream>
+#include <hash_map>
+#include <iostream>
 #include <string>
 
 int main()
@@ -878,8 +878,8 @@ Insertion can occur in amortized constant time, instead of logarithmic time, if 
 ```cpp
 // hash_map_emplace_hint.cpp
 // compile with: /EHsc
-#include<hash_map>
-#include<iostream>
+#include <hash_map>
+#include <iostream>
 #include <string>
 
 int main()
@@ -1545,8 +1545,8 @@ The third member function inserts the sequence of element values into a `hash_ma
 ```cpp
 // hash_map_insert.cpp
 // compile with: /EHsc
-#include<hash_map>
-#include<iostream>
+#include <hash_map>
+#include <iostream>
 #include <string>
 
 int main()
