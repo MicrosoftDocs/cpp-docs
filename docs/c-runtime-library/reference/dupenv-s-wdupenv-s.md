@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _dupenv_s, _wdupenv_s"
 title: "_dupenv_s, _wdupenv_s"
+description: "Learn more about: _dupenv_s, _wdupenv_s"
 ms.date: "4/2/2020"
 api_name: ["_dupenv_s", "_wdupenv_s", "_o__dupenv_s", "_o__wdupenv_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tdupenv_s", "_dupenv_s", "wdupenv_s", "dupenv_s", "_tdupenv_s", "_wdupenv_s"]
 helpviewer_keywords: ["_dupenv_s function", "_tdupenv_s function", "_wdupenv_s function", "environment variables", "wdupenv_s function", "dupenv_s function", "tdupenv_s function"]
-ms.assetid: b729ecc2-a31d-4ccf-92a7-5accedb8f8c8
 ---
 # `_dupenv_s`, `_wdupenv_s`
 
@@ -89,7 +88,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_dupenv_s.c
-#include  <stdlib.h>
+#include <stdlib.h>
 
 int main( void )
 {
