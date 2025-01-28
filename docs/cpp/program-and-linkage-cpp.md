@@ -11,7 +11,7 @@ In a C++ program, a *symbol*, for example a variable or function name, can be de
 The following example shows some declarations:
 
 ```cpp
-int i;
+extern int i;
 int f(int x);
 class C;
 ```
