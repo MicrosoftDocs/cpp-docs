@@ -2,7 +2,7 @@
 title: "/std (Specify Language Standard Version)"
 description: "The MSVC compiler option /std specifies the C or C++ language standard supported by the compiler."
 ms.date: 1/29/2025
-f1_keywords: ["/std", "-std", "/std:c++14", "/std:c++17", "/std:c++20", "/std:c++23preview", "/std:c11", "/std:c17", "/std:clatest", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
+f1_keywords: ["/std", "-std", "/std:c++14", "/std:c++17", "/std:c++20", "/std:c++23preview", "/std:c++latest", "/std:c11", "/std:c17", "/std:clatest", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 ---
 # `/std` (Specify Language Standard Version)
 
@@ -32,7 +32,7 @@ The **`/std`** option in effect during a C++ compilation can be detected by use 
 > [!IMPORTANT]
 > Because some existing code depends on the value of the macro `__cplusplus` being `199711L`, the MSVC compiler doesn't change the value of this macro unless you explicitly opt in by setting [`/Zc:__cplusplus`](zc-cplusplus.md). Specify `/Zc:__cplusplus` and the **`/std`** option to set `__cplusplus` to the appropriate value.
 
-### **`/std:c++14`**
+### `/std:c++14`
 
 Enables C++14 standard-specific features implemented by the MSVC compiler. This option is the default for code compiled as C++. It's available starting in Visual Studio 2015 Update 3.
 
@@ -46,19 +46,19 @@ The following features remain enabled when the **`/std:c++14`** option is specif
 - [Attributes for namespaces and enumerators](https://wg21.link/n4266)
 - [u8 character literals](https://wg21.link/n4267)
 
-### **`/std:c++17`**
+### `/std:c++17`
 
 Enables C++17 standard-specific features and behavior. It enables the full set of C++17 features implemented by the MSVC compiler. This option disables compiler and standard library support for features that are new or changed after C++17. It specifically disables post-C++17 changes in the C++ Standard and versions of the Working Draft. It doesn't disable retroactive defect updates of the C++ Standard. This option is available starting in Visual Studio 2017 version 15.3.
 
 Depending on the MSVC compiler version or update level, C++17 features may not be fully implemented or fully conforming when you specify the **`/std:c++17`** option. For an overview of C++ language conformance in Visual C++ by release version, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
 
-### **`/std:c++20`**
+### `/std:c++20`
 
 - Enables C++20 standard-specific features and behavior. Available starting in Visual Studio 2019 version 16.11, it enables the full set of C++20 features implemented by the MSVC compiler. Note that Visual Studio 2022 version 17.0 does not support `std::format`, the C++20 `<chrono>` formatting extensions, and the range factories and range adaptors from `<ranges>` under **`/std:c++20`** due to late-breaking changes in those features immediately after publication of the Standard.
 - Enables the standard conformance mode provided by [**`/permissive-`**](./permissive-standards-conformance.md) unless explicitly overriden with **`/permissive`**.
 - Disables compiler and standard library support for features that are new or changed after C++20. It specifically disables post-C++20 changes in the C++ Standard and versions of the Working Draft. It doesn't disable retroactive defect updates of the C++ Standard.
 
-### **`/std:c++23preview`**
+### `/std:c++23preview`
 
 - Enables preview C++23 standard-specific features and behavior. Available starting in Visual Studio 2022 version 17.13. Preview features may change and may not be ABI compatible across releases.
 - This switch will eventually be removed when the `/std:c++23` switch is implemented.
@@ -89,11 +89,11 @@ The **`/std:c++latest`** option doesn't enable features guarded by the **`/exper
 
 You can invoke the Microsoft C compiler by using the [`/TC` or `/Tc`](tc-tp-tc-tp-specify-source-file-type.md) compiler option. It's used by default for code that has a *`.c`* file extension, unless overridden by a **`/TP`** or **`/Tp`** option. The default C compiler (that is, the compiler when **`/std:c11`** or **`/std:c17`** isn't specified) implements ANSI C89, but includes several Microsoft extensions, some of which are part of ISO C99. Some Microsoft extensions to C89 can be disabled by using the [`/Za`](za-ze-disable-language-extensions.md) compiler option, but others remain in effect. It isn't possible to specify strict C89 conformance. The compiler doesn't implement several required features of C99, so it isn't possible to specify C99 conformance, either.
 
-### **`/std:c11`**
+### `/std:c11`
 
 - Enables ISO C11 conformance. It's available starting in Visual Studio 2019 version 16.8.
 
-### **`/std:c17`**
+### `/std:c17`
 
 Enables ISO C17 conformance. It's available starting in Visual Studio 2019 version 16.8.
 
@@ -125,7 +125,7 @@ The compiler doesn't support most optional features of ISO C11. Several of these
 
 - Variable length array (VLA) support isn't planned. VLAs provide attack vectors comparable to [`gets`](../../c-runtime-library/gets-getws.md), which is deprecated and planned for removal.
 
-### **`/std:clatest`**
+### `/std:clatest`
 
 The **`/std:clatest`** option behaves like the `/std:c++latest` switch for the C++ compiler. The switch enables all currently implemented compiler and standard library features proposed for the next draft C standard, as well as some in-progress and experimental features.
 
