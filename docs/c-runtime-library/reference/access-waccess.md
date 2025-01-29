@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _access, _waccess"
 title: "_access, _waccess"
+description: "Learn more about: _access, _waccess"
 ms.date: "4/2/2020"
 api_name: ["_access", "_waccess", "t_access", "_o__access", "_o__waccess"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
@@ -90,9 +90,9 @@ The following example uses **`_access`** to check the file named *`crt_ACCESS.C`
 // This example uses _access to check the file named
 // crt_ACCESS.C to see if it exists and if writing is allowed.
 
-#include  <io.h>
-#include  <stdio.h>
-#include  <stdlib.h>
+#include <io.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main( void )
 {
