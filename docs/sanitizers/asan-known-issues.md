@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer known issues"
 description: "Technical description of the AddressSanitizer for Microsoft C/C++ known issues."
-ms.date: 12/1/2023
+ms.date: 1/28/2025
 helpviewer_keywords: ["AddressSanitizer known issues"]
 ---
 
@@ -24,7 +24,7 @@ These options and functionality are incompatible with [`/fsanitize=address`](../
 - [Universal Windows Platform](../cppcx/universal-windows-apps-cpp.md) (UWP) applications are unsupported.
 - [Special case list](https://clang.llvm.org/docs/SanitizerSpecialCaseList.html) files are unsupported.
 - [MFC](../mfc/mfc-concepts.md) using the optional [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md) runtime option is unsupported.
-- [_CrtDumpMemoryLeaks](../c-runtime-library/reference/crtdumpmemoryleaks.md) is unsupported, and should be disabled.
+- [`_CrtDumpMemoryLeaks`](../c-runtime-library/reference/crtdumpmemoryleaks.md) is unsupported, and should be disabled.
 
 ## Standard library support
 
