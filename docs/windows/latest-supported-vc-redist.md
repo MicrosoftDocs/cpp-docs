@@ -115,7 +115,13 @@ Download Redistributable files for other languages and architectures from:
 
 - Redistributable files for X86, X64, and IA64 architectures are available from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update](https://www.microsoft.com/download/details.aspx?id=26347).
 
-## Release notes
+## See Also
+
+- [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
+- [How to audit Visual C++ Runtime version usage](../windows/redist-version-auditing)
+- [Lifecycle FAQ - Visual C++ Redistributable and runtime libraries](../lifecycle/faq/visual-c-faq)
+
+**Release notes**
 
 - [Visual Studio 2022 release notes](/visualstudio/releases/2022/release-notes)
 - [What's new for C++ in Visual Studio](../overview//what-s-new-for-visual-cpp-in-visual-studio.md)
@@ -125,7 +131,7 @@ Download Redistributable files for other languages and architectures from:
 - [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg)
 - [Microsoft Visual C++ compiler versioning](../overview/compiler-versions.md)
 
-## C++ conformance notes
+**C++ conformance notes**
 
 - [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)
 - [C++ conformance improvements in Visual Studio 2019](../overview/cpp-conformance-improvements-2019.md)
