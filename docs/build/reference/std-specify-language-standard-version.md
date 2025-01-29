@@ -62,9 +62,9 @@ Enables the standard conformance mode provided by [**`/permissive-`**](./permiss
 
 Enables preview C++23 standard-specific features and behavior. Available starting in Visual Studio 2022 version 17.13. Preview features may change and may not be ABI compatible across releases.
 
-This switch will be removed when the `/std:c++23` switch is implemented--at which point all of the C++23 features will be implemented and ABI stable.
+This switch will be removed when the `/std:c++23` switch is implemented--at which point C++23 features will be fully implemented and ABI stable. If in project properties **C/C++** > **Language** you specify **Preview - ISO C++ 23 Standard (/std:c++preview)**, it will automatically change to mean `/std:c++23` once the new switch is implemented.
 
-This switch differs from `/std:c++latest` in that it only enables features that are part of the C++23 standard. It does not enable experimental or in-progress features.
+This switch differs from `/std:c++latest` in that it only enables features that are part of the C++23 standard. It doesn't enable experimental or in-progress features.
 
 ### `/std:c++latest`
 
