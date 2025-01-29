@@ -72,7 +72,7 @@ This switch differs from `/std:c++latest` in the following ways:
 
 Enables all currently implemented compiler and standard library features proposed for the next ISO C++ working draft, as well as some in-progress and experimental features. This option is available starting in Visual Studio 2015 Update 3.
 
-Depending on the MSVC compiler version or update level, C++17, C++20, C++23, or proposed C++26 features may not be fully implemented or fully conforming when you specify the **`/std:c++latest`** option. We recommend you use the latest version of Visual Studio for maximum standards conformance. For an overview of C++ language and library conformance in Visual C++ by release version, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
+Depending on the MSVC compiler version or update level, features from published C++ standards or proposed features in the current C++ working draft, may not be fully implemented or fully conforming when you specify the **`/std:c++latest`** option. We recommend you use the latest version of Visual Studio for maximum standards conformance. For an overview of C++ language and library conformance in Visual C++ by release version, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
 
 In versions of Visual Studio 2019 before version 16.11, **`/std:c++latest`** is required to enable all the compiler and standard library features of C++20.
 
