@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _dupenv_s_dbg, _wdupenv_s_dbg"
 title: "_dupenv_s_dbg, _wdupenv_s_dbg"
+description: "Learn more about: _dupenv_s_dbg, _wdupenv_s_dbg"
 ms.date: "11/04/2016"
 api_name: ["_dupenv_s_dbg", "_wdupenv_s_dbg"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tdupenv_s_dbg", "_dupenv_s_dbg", "_wdupenv_s_dbg"]
 helpviewer_keywords: ["_tdupenv_s_dbg function", "dupenv_s_dbg function", "_wdupenv_s_dbg function", "environment variables", "tdupenv_s_dbg function", "wdupenv_s_dbg function", "_dupenv_s_dbg function"]
-ms.assetid: e3d81148-e24e-46d0-a21d-fd87b5e6256c
 ---
 # `_dupenv_s_dbg`, `_wdupenv_s_dbg`
 
@@ -88,7 +87,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_dupenv_s_dbg.c
-#include  <stdlib.h>
+#include <stdlib.h>
 #include <crtdbg.h>
 
 int main( void )
