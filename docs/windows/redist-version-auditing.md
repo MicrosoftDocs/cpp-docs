@@ -193,3 +193,4 @@ Here is where each version of the VC Runtime is installed:
 [Redistributing Visual C++ Files](redistributing-visual-cpp-files.md)\
 [The latest supported Visual C++ downloads](latest-supported-vc-redist.md)\
 [Lifecycle FAQ - Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)
+[C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
