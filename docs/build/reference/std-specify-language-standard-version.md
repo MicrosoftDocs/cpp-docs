@@ -127,7 +127,7 @@ The compiler doesn't support most optional features of ISO C11. Several of these
 
 ### `/std:clatest`
 
-The **`/std:clatest`** option behaves like the `/std:c++latest` switch for the C++ compiler. The switch enables all currently implemented compiler and standard library features proposed for the next draft C standard, as well as some in-progress and experimental features.
+The **`/std:clatest`** option behaves like the `/std:c++latest` switch for the C++ compiler. The switch enables all currently implemented compiler and standard library features proposed in the next draft C standard, as well as some in-progress and experimental features.
 
 For more information, see the C Standard library features section of [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
 
