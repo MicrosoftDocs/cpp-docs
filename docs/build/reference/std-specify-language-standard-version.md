@@ -27,7 +27,7 @@ The Microsoft C++ compiler in Visual Studio 2017 and later versions doesn't supp
 
 ## C++ standards support
 
-The **`/std`** option in effect during a C++ compilation can be detected by use of the [`_MSVC_LANG`](../../preprocessor/predefined-macros.md) preprocessor macro. For more information, see [Preprocessor Macros](../../preprocessor/predefined-macros.md).
+Detect whether the **`/std`** option is in effect during a C++ compilation with the [`_MSVC_LANG`](../../preprocessor/predefined-macros.md) preprocessor macro. For more information, see [Preprocessor Macros](../../preprocessor/predefined-macros.md).
 
 > [!IMPORTANT]
 > Because some existing code depends on the value of the macro `__cplusplus` being `199711L`, the MSVC compiler doesn't change the value of this macro unless you explicitly opt in by setting [`/Zc:__cplusplus`](zc-cplusplus.md). Specify `/Zc:__cplusplus` and the **`/std`** option to set `__cplusplus` to the appropriate value.
@@ -38,7 +38,7 @@ Enables C++14 standard-specific features implemented by the MSVC compiler. This 
 
 This option disables compiler and standard library support for features that are changed or new in more recent versions of the language standard. However, it doesn't disable some C++17 features already implemented in previous releases of the MSVC compiler. For more information, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md). The tables indicate which C++17 features are enabled when you specify **`/std:c++14`**.
 
-The following features remain enabled when the **`/std:c++14`** option is specified to avoid breaking changes for users who have already taken dependencies on the features available in or before Visual Studio 2015 Update 2:
+The following features remain enabled when the **`/std:c++14`** option is specified to avoid breaking changes for users who took dependencies on features available in or before Visual Studio 2015 Update 2:
 
 - [Rules for `auto` with braced-init-lists](https://wg21.link/n3922)
 - [`typename` in template template-parameters](https://wg21.link/n4051)
@@ -54,19 +54,19 @@ Depending on the MSVC compiler version or update level, C++17 features may not b
 
 ### `/std:c++20`
 
-- Enables C++20 standard-specific features and behavior. Available starting in Visual Studio 2019 version 16.11, it enables the full set of C++20 features implemented by the MSVC compiler. Note that Visual Studio 2022 version 17.0 does not support `std::format`, the C++20 `<chrono>` formatting extensions, and the range factories and range adaptors from `<ranges>` under **`/std:c++20`** due to late-breaking changes in those features immediately after publication of the Standard.
-- Enables the standard conformance mode provided by [**`/permissive-`**](./permissive-standards-conformance.md) unless explicitly overriden with **`/permissive`**.
-- Disables compiler and standard library support for features that are new or changed after C++20. It specifically disables post-C++20 changes in the C++ Standard and versions of the Working Draft. It doesn't disable retroactive defect updates of the C++ Standard.
+Enables C++20 standard-specific features and behavior. Available starting in Visual Studio 2019 version 16.11, it enables the full set of C++20 features implemented by the MSVC compiler. Visual Studio 2022 version 17.0 doesn't support `std::format`, the C++20 `<chrono>` formatting extensions, and the range factories and range adaptors from `<ranges>` under **`/std:c++20`** due to late-breaking changes in those features immediately after publication of the Standard.
+
+Enables the standard conformance mode provided by [**`/permissive-`**](./permissive-standards-conformance.md) unless explicitly overridden with **`/permissive`**.
+
+Disables compiler and standard library support for features that are new or changed after C++20. It specifically disables post-C++20 changes in the C++ Standard and versions of the Working Draft. It doesn't disable retroactive defect updates of the C++ Standard.
 
 ### `/std:c++23preview`
 
-- Enables preview C++23 standard-specific features and behavior. Available starting in Visual Studio 2022 version 17.13. Preview features may change and may not be ABI compatible across releases.
-- This switch will eventually be removed when the `/std:c++23` switch is implemented.
+Enables preview C++23 standard-specific features and behavior. Available starting in Visual Studio 2022 version 17.13. Preview features may change and may not be ABI compatible across releases.
 
-This switch differs from `/std:c++latest` in the following ways:
-- Only features in the published [N4950 ISO C++23 final working draft](https://wg21.link/n4950) are enabled. No features in the latest [N5001 working draft (tenatively named C++26)](https://wg21.link/n5001) are enabled.
-- This switch will be removed in a release following the completion of the C++23 features.
-- ??? Note that Visual Studio 2022 version 17.0 does not support the C++23 `<chrono>` formatting extensions under **`/std:c++23preview`** due to late-breaking changes in those features immediately after publication of the Standard.
+This switch will be removed when the `/std:c++23` switch is implemented--at which point all of the C++23 features will be implemented and ABI stable.
+
+This switch differs from `/std:c++latest` in that it only enables features that are part of the C++23 standard. It does not enable experimental or in-progress features.
 
 ### `/std:c++latest`
 
@@ -76,14 +76,14 @@ Depending on the MSVC compiler version or update level, C++17, C++20, C++23, or 
 
 In versions of Visual Studio 2019 before version 16.11, **`/std:c++latest`** is required to enable all the compiler and standard library features of C++20.
 
-Since Visual Studio 2019 version 16.8, the **`/std:c++latest`** option has enabled the standard conformance mode provided by [**`/permissive-`**](./permissive-standards-conformance.md) unless explicitly overriden with **`/permissive`**.
+Since Visual Studio 2019 version 16.8, the **`/std:c++latest`** option has enabled the standard conformance mode provided by [**`/permissive-`**](./permissive-standards-conformance.md) unless explicitly overridden with **`/permissive`**.
 
 For a list of supported language and library features, see [What's New for C++ in Visual Studio](../../overview/what-s-new-for-visual-cpp-in-visual-studio.md).
 
 The **`/std:c++latest`** option doesn't enable features guarded by the **`/experimental`** switch, but may be required to enable them.
 
 > [!NOTE]
-> The compiler and library features enabled by **`/std:c++latest`** may appear in a future C++ standard. Features that have not been approved are subject to breaking changes or removal without notice and are provided on an as-is basis.
+> The compiler and library features enabled by **`/std:c++latest`** may appear in a future C++ standard. Features that haven't been approved are subject to breaking changes or removal without notice and are provided on an as-is basis.
 
 ## C standards support
 
@@ -91,7 +91,7 @@ You can invoke the Microsoft C compiler by using the [`/TC` or `/Tc`](tc-tp-tc-t
 
 ### `/std:c11`
 
-- Enables ISO C11 conformance. It's available starting in Visual Studio 2019 version 16.8.
+Enables ISO C11 conformance. It's available starting in Visual Studio 2019 version 16.8.
 
 ### `/std:c17`
 
