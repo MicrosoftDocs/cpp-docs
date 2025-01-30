@@ -118,8 +118,8 @@ Download Redistributable files for other languages and architectures from:
 ## See Also
 
 - [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
-- [How to audit Visual C++ Runtime version usage](../windows/redist-version-auditing)
-- [Lifecycle FAQ - Visual C++ Redistributable and runtime libraries](../lifecycle/faq/visual-c-faq)
+- [How to audit Visual C++ Runtime version usage](redist-version-auditing)
+- [Lifecycle FAQ - Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)
 
 **Release notes**
 
