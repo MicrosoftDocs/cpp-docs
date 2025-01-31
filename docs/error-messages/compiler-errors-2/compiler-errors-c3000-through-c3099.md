@@ -2,9 +2,8 @@
 description: "Learn more about: Compiler errors C3000 Through C3099"
 title: "Compiler errors C3000 Through C3099"
 ms.date: 06/01/2022
-f1_keywords: ["C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
-helpviewer_keywords: ["C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
-ms.assetid: 01b7b9cb-b351-4b5a-8cb0-1fcddb08d2ab
+f1_keywords: ["C3000", "C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
+helpviewer_keywords: ["C3000", "C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
 ---
 # Compiler errors C3000 Through C3099
 

@@ -3,8 +3,7 @@ description: "Learn more about: Compiler errors C2100 through C2199"
 title: "Compiler errors C2100 through C2199"
 ms.date: "04/21/2019"
 f1_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2136", "C2176", "C2187", "C2189"]
-helpviewer_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2131", "C2136", "C2176", "C2187", "C2189"]
-ms.assetid: 1ccab076-0954-4386-b959-d3112a6793ae
+helpviewer_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2136", "C2176", "C2187", "C2189"]
 ---
 # Compiler errors C2100 through C2199
 
