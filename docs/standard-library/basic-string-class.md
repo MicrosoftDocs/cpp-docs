@@ -2964,7 +2964,8 @@ iterator insert(
 
 iterator insert(
     iterator iter,
-    value_type char_value)l
+    value_type char_value);
+
 template <class InputIterator>
 void insert(
     iterator iter,
