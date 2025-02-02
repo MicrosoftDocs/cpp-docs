@@ -475,7 +475,7 @@ void max_load_factor(float _Newmax);
 
 ### Return Value
 
-The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid..
+The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid.
 
 ## <a name="max_size"></a> max_size
 

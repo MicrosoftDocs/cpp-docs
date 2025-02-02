@@ -103,7 +103,7 @@ A modifiable, associative collection. Map elements are key-value pairs. Looking 
 A read-only version of a `Map`.
 
 [Platform::Collections::Vector class](../cppcx/platform-collections-vector-class.md)<br/>
-A modifiable sequence collection. `Vector<T>` supports constant-time random access and amortized-constant-time [Append](../cppcx/platform-collections-vector-class.md#append) operations..
+A modifiable sequence collection. `Vector<T>` supports constant-time random access and amortized-constant-time [Append](../cppcx/platform-collections-vector-class.md#append) operations.
 
 [Platform::Collections::VectorView class](../cppcx/platform-collections-vectorview-class.md)<br/>
 A read-only version of a `Vector`.

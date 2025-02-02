@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: COleStreamFile Class"
 title: "COleStreamFile Class"
+description: "Learn more about: COleStreamFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleStreamFile", "AFXOLE/COleStreamFile", "AFXOLE/COleStreamFile::COleStreamFile", "AFXOLE/COleStreamFile::Attach", "AFXOLE/COleStreamFile::CreateMemoryStream", "AFXOLE/COleStreamFile::CreateStream", "AFXOLE/COleStreamFile::Detach", "AFXOLE/COleStreamFile::GetStream", "AFXOLE/COleStreamFile::OpenStream"]
 helpviewer_keywords: ["COleStreamFile [MFC], COleStreamFile", "COleStreamFile [MFC], Attach", "COleStreamFile [MFC], CreateMemoryStream", "COleStreamFile [MFC], CreateStream", "COleStreamFile [MFC], Detach", "COleStreamFile [MFC], GetStream", "COleStreamFile [MFC], OpenStream"]
-ms.assetid: e4f93698-e17c-4a18-a7c0-4b4df8eb4d93
 ---
 # COleStreamFile Class
 
@@ -41,7 +40,7 @@ An `IStorage` object must exist before the stream can be opened or created unles
 
 `COleStreamFile` objects are manipulated exactly like [CFile](../../mfc/reference/cfile-class.md) objects.
 
-For more information about manipulating streams and storages, see the article [Containers: Compound Files](../../mfc/containers-compound-files.md)..
+For more information about manipulating streams and storages, see the article [Containers: Compound Files](../../mfc/containers-compound-files.md).
 
 For more information, see [IStream](/windows/win32/api/objidl/nn-objidl-istream) and [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) in the Windows SDK.
 
@@ -222,5 +221,5 @@ For more information, see [IStorage::OpenStream](/windows/win32/api/objidl/nf-ob
 
 ## See also
 
-[CFile Class](../../mfc/reference/cfile-class.md)<br/>
+[CFile Class](../../mfc/reference/cfile-class.md)\
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
