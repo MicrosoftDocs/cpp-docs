@@ -2960,9 +2960,6 @@ basic_string<CharType, Traits, Allocator>& insert(
     value_type char_value);
 
 iterator insert(
-    iterator iter);
-
-iterator insert(
     iterator iter,
     value_type char_value);
 
