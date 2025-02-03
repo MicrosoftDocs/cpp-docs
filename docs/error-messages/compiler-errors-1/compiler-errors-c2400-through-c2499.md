@@ -4,7 +4,6 @@ title: "Compiler errors C2400 Through C2499"
 ms.date: "04/21/2019"
 f1_keywords: ["C2416", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
 helpviewer_keywords: ["C2416", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
-ms.assetid: f1f05572-af0b-497b-bde4-4c81ec01af3b
 ---
 # Compiler errors C2400 Through C2499
 

@@ -4844,7 +4844,7 @@ items:
 - name: Math errors
   expanded: false
   items: 
-    - name: Math errors (Mxxxx)
+    - name: Math errors (M6101 through M6205)
       href: tool-errors/math-errors-m6101-through-m6205.md
     - name: Math error M6101
       href: tool-errors/math-error-m6101.md

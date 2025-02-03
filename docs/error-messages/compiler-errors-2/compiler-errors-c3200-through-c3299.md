@@ -4,7 +4,6 @@ title: "Compiler errors C3200 Through C3299"
 ms.date: 06/01/2022
 f1_keywords: ["C3220", "C3221", "C3245", "C3249", "C3250", "C3256", "C3257", "C3258", "C3259", "C3260", "C3261", "C3263", "C3267", "C3281", "C3294"]
 helpviewer_keywords: ["C3220", "C3221", "C3245", "C3249", "C3250", "C3256", "C3257", "C3258", "C3259", "C3260", "C3261", "C3263", "C3267", "C3281", "C3294"]
-ms.assetid: 6b3104f6-63bc-4823-b6f3-b8a16be4b87f
 ---
 # Compiler errors C3200 Through C3299
 
