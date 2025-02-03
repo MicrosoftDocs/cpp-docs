@@ -25,8 +25,8 @@ If you don't give an argument for the **`check_stack`** pragma, stack checking r
 
 | Syntax | Compiled with<br /><br /> `/Gs` option? | Action |
 |--|--|--|
-| `#pragma check_stack( )` or<br /><br /> `#pragma check_stack` | Yes | Turns off stack checking for functions that follow |
-| `#pragma check_stack( )` or<br /><br /> `#pragma check_stack` | No | Turns on stack checking for functions that follow |
+| `#pragma check_stack( )` or<br /><br /> `#pragma check_stack` | Yes | Turns on stack checking for functions that follow |
+| `#pragma check_stack( )` or<br /><br /> `#pragma check_stack` | No | Turns off stack checking for functions that follow |
 | `#pragma check_stack(on)`<br /><br /> or `#pragma check_stack +` | Yes or No | Turns on stack checking for functions that follow |
 | `#pragma check_stack(off)`<br /><br /> or `#pragma check_stack -` | Yes or No | Turns off stack checking for functions that follow |
 
