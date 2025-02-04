@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Value classes and structs (C++/CX)"
 title: "Value classes and structs (C++/CX)"
+description: "Learn more about: Value classes and structs (C++/CX)"
 ms.date: "12/30/2016"
 helpviewer_keywords: ["value struct", "value class"]
-ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
 ---
 # Value classes and structs (C++/CX)
 
@@ -48,7 +47,7 @@ A value struct or value class can contain as fields only fundamental numeric typ
 
 A value class or value struct that contains a `Platform::String^` or `IBox<T>^` type as a member is not `memcpy`-able.
 
-Because all members of a **`value class`** or **`value struct`** are public and are emitted into metadata, standard C++ types are not allowed as members. This is different from ref classes, which may contain **`private`** or **`internal`** standard C++ types..
+Because all members of a **`value class`** or **`value struct`** are public and are emitted into metadata, standard C++ types are not allowed as members. This is different from ref classes, which may contain **`private`** or **`internal`** standard C++ types.
 
 The following code fragment declares the `Coordinates` and `City` types as value structs. Notice that one of the `City` data members is a `GeoCoordinates` type. A **`value struct`** can contain other value structs as members.
 
@@ -140,7 +139,7 @@ public:
 
 ## See also
 
-[Type System (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
-[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)<br/>
+[Type System (C++/CX)](../cppcx/type-system-c-cx.md)\
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)\
+[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)\
 [Ref classes and structs (C++/CX)](../cppcx/ref-classes-and-structs-c-cx.md)

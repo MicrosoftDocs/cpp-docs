@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: concurrency namespace functions"
 title: "concurrency namespace functions"
+description: "Learn more about: concurrency namespace functions"
 ms.date: "11/04/2016"
 f1_keywords: ["concrt/concurrency::Alloc", "concrt/concurrency::DisableTracing", "concrt/concurrency::EnableTracing", "concrtrm/concurrency::GetExecutionContextId", "concrtrm/concurrency::GetOSVersion", "concrtrm/concurrency::GetProcessorNodeCount", "concrtrm/concurrency::GetSchedulerId", "agents/concurrency::asend", "ppltasks/concurrency::cancel_current_task", "ppltasks/concurrency::create_async", "ppltasks/concurrency::create_task", "concurrent_vector/concurrency::internal_assign_iterators", "ppl/concurrency::interruption_point", "agents/concurrency::make_choice", "agents/concurrency::make_greedy_join", "ppl/concurrency::make_task", "ppl/concurrency::parallel_buffered_sort", "ppl/concurrency::parallel_for_each", "ppl/concurrency::parallel_invoke", "ppl/concurrency::parallel_reduce", "ppl/concurrency::parallel_sort", "agents/concurrency::receive", "ppl/concurrency::run_with_cancellation_token", "pplconcrt/concurrency::set_ambient_scheduler", "concrt/concurrency::set_task_execution_resources", "ppltasks/concurrency::task_from_exception", "ppltasks/concurrency::task_from_result", "concrt/concurrency::wait", "ppltasks/concurrency::when_all", "ppltasks/concurrency::when_any"]
-ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
 ---
 # concurrency namespace functions
 
@@ -175,7 +174,7 @@ The lambda may take either zero, one or two arguments. The valid arguments are `
 
 If the body of the lambda or function object returns a result (and not a task\<TResult>), the lamdba will be executed asynchronously within the process MTA in the context of a task the Runtime implicitly creates for it. The `IAsyncInfo::Cancel` method will cause cancellation of the implicit task.
 
-If the body of the lambda returns a task, the lamba executes inline, and by declaring the lambda to take an argument of type `cancellation_token` you can trigger cancellation of any tasks you create within the lambda by passing that token in when you create them. You may also use the `register_callback` method on the token to cause the Runtime to invoke a callback when you call `IAsyncInfo::Cancel` on the async operation or action produced..
+If the body of the lambda returns a task, the lamba executes inline, and by declaring the lambda to take an argument of type `cancellation_token` you can trigger cancellation of any tasks you create within the lambda by passing that token in when you create them. You may also use the `register_callback` method on the token to cause the Runtime to invoke a callback when you call `IAsyncInfo::Cancel` on the async operation or action produced.
 
 This function is only available to Windows Runtime apps.
 
