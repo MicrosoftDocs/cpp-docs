@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: concurrent_unordered_multimap Class"
 title: "concurrent_unordered_multimap Class"
+description: "Learn more about: concurrent_unordered_multimap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::hash_function", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::insert", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::key_eq", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::swap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::unsafe_erase"]
 helpviewer_keywords: ["concurrent_unordered_multimap class"]
-ms.assetid: 4dada5d7-15df-4382-b9c9-348e75b2f3c1
 ---
 # concurrent_unordered_multimap Class
 
@@ -449,7 +448,7 @@ void max_load_factor(float _Newmax);
 
 ### Return Value
 
-The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid..
+The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid.
 
 ## <a name="max_size"></a> max_size
 
@@ -708,5 +707,5 @@ The maximum number of buckets in this container.
 
 ## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
+[concurrency Namespace](concurrency-namespace.md)\
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)

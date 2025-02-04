@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: COleServerDoc Class"
 title: "COleServerDoc Class"
+description: "Learn more about: COleServerDoc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleServerDoc", "AFXOLE/COleServerDoc", "AFXOLE/COleServerDoc::COleServerDoc", "AFXOLE/COleServerDoc::ActivateDocObject", "AFXOLE/COleServerDoc::ActivateInPlace", "AFXOLE/COleServerDoc::DeactivateAndUndo", "AFXOLE/COleServerDoc::DiscardUndoState", "AFXOLE/COleServerDoc::GetClientSite", "AFXOLE/COleServerDoc::GetEmbeddedItem", "AFXOLE/COleServerDoc::GetItemClipRect", "AFXOLE/COleServerDoc::GetItemPosition", "AFXOLE/COleServerDoc::GetZoomFactor", "AFXOLE/COleServerDoc::IsDocObject", "AFXOLE/COleServerDoc::IsEmbedded", "AFXOLE/COleServerDoc::IsInPlaceActive", "AFXOLE/COleServerDoc::NotifyChanged", "AFXOLE/COleServerDoc::NotifyClosed", "AFXOLE/COleServerDoc::NotifyRename", "AFXOLE/COleServerDoc::NotifySaved", "AFXOLE/COleServerDoc::OnDeactivate", "AFXOLE/COleServerDoc::OnDeactivateUI", "AFXOLE/COleServerDoc::OnDocWindowActivate", "AFXOLE/COleServerDoc::OnResizeBorder", "AFXOLE/COleServerDoc::OnShowControlBars", "AFXOLE/COleServerDoc::OnUpdateDocument", "AFXOLE/COleServerDoc::RequestPositionChange", "AFXOLE/COleServerDoc::SaveEmbedding", "AFXOLE/COleServerDoc::ScrollContainerBy", "AFXOLE/COleServerDoc::UpdateAllItems", "AFXOLE/COleServerDoc::CreateInPlaceFrame", "AFXOLE/COleServerDoc::DestroyInPlaceFrame", "AFXOLE/COleServerDoc::GetDocObjectServer", "AFXOLE/COleServerDoc::OnClose", "AFXOLE/COleServerDoc::OnExecOleCmd", "AFXOLE/COleServerDoc::OnFrameWindowActivate", "AFXOLE/COleServerDoc::OnGetEmbeddedItem", "AFXOLE/COleServerDoc::OnReactivateAndUndo", "AFXOLE/COleServerDoc::OnSetHostNames", "AFXOLE/COleServerDoc::OnSetItemRects", "AFXOLE/COleServerDoc::OnShowDocument"]
 helpviewer_keywords: ["COleServerDoc [MFC], COleServerDoc", "COleServerDoc [MFC], ActivateDocObject", "COleServerDoc [MFC], ActivateInPlace", "COleServerDoc [MFC], DeactivateAndUndo", "COleServerDoc [MFC], DiscardUndoState", "COleServerDoc [MFC], GetClientSite", "COleServerDoc [MFC], GetEmbeddedItem", "COleServerDoc [MFC], GetItemClipRect", "COleServerDoc [MFC], GetItemPosition", "COleServerDoc [MFC], GetZoomFactor", "COleServerDoc [MFC], IsDocObject", "COleServerDoc [MFC], IsEmbedded", "COleServerDoc [MFC], IsInPlaceActive", "COleServerDoc [MFC], NotifyChanged", "COleServerDoc [MFC], NotifyClosed", "COleServerDoc [MFC], NotifyRename", "COleServerDoc [MFC], NotifySaved", "COleServerDoc [MFC], OnDeactivate", "COleServerDoc [MFC], OnDeactivateUI", "COleServerDoc [MFC], OnDocWindowActivate", "COleServerDoc [MFC], OnResizeBorder", "COleServerDoc [MFC], OnShowControlBars", "COleServerDoc [MFC], OnUpdateDocument", "COleServerDoc [MFC], RequestPositionChange", "COleServerDoc [MFC], SaveEmbedding", "COleServerDoc [MFC], ScrollContainerBy", "COleServerDoc [MFC], UpdateAllItems", "COleServerDoc [MFC], CreateInPlaceFrame", "COleServerDoc [MFC], DestroyInPlaceFrame", "COleServerDoc [MFC], GetDocObjectServer", "COleServerDoc [MFC], OnClose", "COleServerDoc [MFC], OnExecOleCmd", "COleServerDoc [MFC], OnFrameWindowActivate", "COleServerDoc [MFC], OnGetEmbeddedItem", "COleServerDoc [MFC], OnReactivateAndUndo", "COleServerDoc [MFC], OnSetHostNames", "COleServerDoc [MFC], OnSetItemRects", "COleServerDoc [MFC], OnShowDocument"]
-ms.assetid: a9cdd96a-e0ac-43bb-9203-2c29237e965c
 ---
 # COleServerDoc Class
 
@@ -477,7 +476,7 @@ This function restores the container application's user interface to its origina
 
 The undo state information should be unconditionally released at this point.
 
-For more information, see the article [Activation](../../mfc/activation-cpp.md)..
+For more information, see the article [Activation](../../mfc/activation-cpp.md).
 
 ## <a name="ondeactivateui"></a> COleServerDoc::OnDeactivateUI
 
@@ -515,7 +514,7 @@ Specifies whether the document window is to be activated or deactivated.
 
 The default implementation removes or adds the frame-level user interface elements as appropriate. Override this function if you want to perform additional actions when the document containing your item is activated or deactivated.
 
-For more information, see the article [Activation](../../mfc/activation-cpp.md)..
+For more information, see the article [Activation](../../mfc/activation-cpp.md).
 
 ## <a name="onexecolecmd"></a> COleServerDoc::OnExecOleCmd
 
@@ -599,7 +598,7 @@ Specifies whether the frame window is to be activated or deactivated.
 
 The default implementation cancels any help modes the frame window might be in. Override this function if you want to perform special processing when the frame window is activated or deactivated.
 
-For more information, see the article [Activation](../../mfc/activation-cpp.md)..
+For more information, see the article [Activation](../../mfc/activation-cpp.md).
 
 ## <a name="ongetembeddeditem"></a> COleServerDoc::OnGetEmbeddedItem
 
@@ -860,9 +859,9 @@ This function calls the `OnUpdate` member function for each of the document's it
 
 ## See also
 
-[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
-[COleLinkingDoc Class](../../mfc/reference/colelinkingdoc-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleDocument Class](../../mfc/reference/coledocument-class.md)<br/>
-[COleLinkingDoc Class](../../mfc/reference/colelinkingdoc-class.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)\
+[COleLinkingDoc Class](../../mfc/reference/colelinkingdoc-class.md)\
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
+[COleDocument Class](../../mfc/reference/coledocument-class.md)\
+[COleLinkingDoc Class](../../mfc/reference/colelinkingdoc-class.md)\
 [COleTemplateServer Class](../../mfc/reference/coletemplateserver-class.md)

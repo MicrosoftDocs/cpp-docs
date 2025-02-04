@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMFCRibbonFontComboBox Class"
 title: "CMFCRibbonFontComboBox Class"
+description: "Learn more about: CMFCRibbonFontComboBox Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::BuildFonts", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetCharSet", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontDesc", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontType", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont"]
 helpviewer_keywords: ["CMFCRibbonFontComboBox [MFC], CMFCRibbonFontComboBox", "CMFCRibbonFontComboBox [MFC], BuildFonts", "CMFCRibbonFontComboBox [MFC], GetCharSet", "CMFCRibbonFontComboBox [MFC], GetFontDesc", "CMFCRibbonFontComboBox [MFC], GetFontType", "CMFCRibbonFontComboBox [MFC], GetPitchAndFamily", "CMFCRibbonFontComboBox [MFC], RebuildFonts", "CMFCRibbonFontComboBox [MFC], SetFont"]
-ms.assetid: 33b4db50-df4f-45fa-8f05-2e6e73c31435
 ---
 # CMFCRibbonFontComboBox Class
 
@@ -110,7 +109,7 @@ CMFCRibbonFontComboBox(
 [in] Specifies which font types to display in the combo box. Valid options are DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE, or any bitwise combination thereof.
 
 *nCharSet*<br/>
-[in] Filters the fonts in the combo box to those that belong to the specified character set..
+[in] Filters the fonts in the combo box to those that belong to the specified character set.
 
 *nPitchAndFamily*<br/>
 [in] Specifies the pitch and the family of the fonts that are displayed in the combo box.
@@ -224,6 +223,6 @@ Pitch and the family (see LOGFONT in the Windows SDK documentation).
 
 ## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
+[Classes](../../mfc/reference/mfc-classes.md)\
 [CMFCRibbonComboBox Class](../../mfc/reference/cmfcribboncombobox-class.md)
