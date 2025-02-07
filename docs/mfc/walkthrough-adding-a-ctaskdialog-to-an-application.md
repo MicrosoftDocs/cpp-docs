@@ -11,7 +11,7 @@ This walkthrough introduces the [`CTaskDialog` class](../mfc/reference/ctaskdial
 The `CTaskDialog` is a task dialog box that replaces the Windows message box in Windows Vista or later. The `CTaskDialog` improves on the original message box and adds functionality. The Windows message box is still supported in Visual Studio.
 
 > [!NOTE]
-> Versions of Windows earlier than Windows Vista do not support the `CTaskDialog`. You must program an alternative dialog box option if you want to show a message to a user who runs your application on an earlier version of Windows. You can use the static method [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) to determine at run time whether a user's computer can display a `CTaskDialog`. In addition, the `CTaskDialog` is only available when your application is built with the Unicode library.
+> Versions of Windows earlier than Windows Vista don't support the `CTaskDialog`. You must program an alternative dialog box option if you want to show a message to a user who runs your application on an earlier version of Windows. You can use the static method [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) to determine at run time whether a user's computer can display a `CTaskDialog`. In addition, the `CTaskDialog` is only available when your application is built with the Unicode library.
 
 The `CTaskDialog` supports several optional elements to gather and display information. For example, a `CTaskDialog` can display command links, customized buttons, customized icons, and a footer. The `CTaskDialog` also has several methods that enable you to query the state of the task dialog box to determine what optional elements the user selected.
 
@@ -26,7 +26,7 @@ You need the following components to complete this walkthrough:
 
 The following demonstrates the most basic use of the `CTaskDialog`, which is to replace the Windows message box. This example also changes the icon associated with the task dialog box. Changing the icon makes the `CTaskDialog` appear similar to the Windows message box.
 
-1. Use the **MFC Application Wizard** to create an MFC application with all the default settings. See [Walkthrough: Using the New MFC Shell Controls](walkthrough-using-the-new-mfc-shell-controls.md) for instructions on how to open the wizard for your version of Visual Studio.
+1. Use the **MFC Application Wizard** to create a Microsoft Foundation Classes (MFC) application with all the default settings. See [Walkthrough: Using the New MFC Shell Controls](walkthrough-using-the-new-mfc-shell-controls.md) for instructions on how to open the wizard for your version of Visual Studio.
 1. Call it *MyProject*.
 1. Use the **Solution Explorer** to open `MyProject.cpp`.
 1. Add `#include "afxtaskdialog.h"` after the list of includes.
@@ -59,10 +59,10 @@ The following shows you how to add functionality to the `CTaskDialog` that you c
 
 1. Navigate to the **Resource View** via **View** > **Other Windows** > **Resource View**.
 1. Expand the **Resource View** to the **String Table** folder. Expand it and double-click **String Table**.
-1. Scroll to the bottom of the string table and add a new entry. Change the ID to `TEMP_LINE1`. Set the caption to **Command Line 1**.
-1. Add another new entry. Change the ID to `TEMP_LINE2`. Set the caption to **Command Line 2**.
+1. Scroll to the bottom of the string table and add a new entry. Change the ID to `TEMP_LINE1`. Set the caption to `Command Line 1`.
+1. Add another new entry. Change the ID to `TEMP_LINE2`. Set the caption to `Command Line 2`.
 1. Navigate back to `MyProject.cpp`.
-1. In the `CMyProjectApp::InitInstance()` function, after `CString emptyString;`, add the following code:
+1. In the `CMyProjectApp::InitInstance()` function, after `CString emptyString;` add the following code:
 
     ```cpp
     CString expandedLabel("Hide extra information");
