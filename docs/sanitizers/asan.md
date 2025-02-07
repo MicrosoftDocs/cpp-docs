@@ -87,7 +87,7 @@ This article covers the information you require to enable the three workflows li
 Use the **`/fsanitize=address`** compiler option in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts) to enable compiling for the AddressSanitizer runtime. The **`/fsanitize=address`** option is compatible with existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, and `/O2 /GL`). The option works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). It works whether you create an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In the following example, `cl /fsanitize=address /Zi` is passed on the command line.
 
 > [!NOTE]
-Profile-guided optimization (PGO) is not supported alongside the AddressSanitizer as the AddressSanitizer should not be used in production. 
+> AddressSanitizer doesn't support Profile-guided optimization (PGO). AddressSanitizer shouldn't be used in production.
 
 The AddressSanitizer libraries (.lib files) are linked for you automatically. For more information, see [AddressSanitizer language, build, and debugging reference](asan-building.md).
 
