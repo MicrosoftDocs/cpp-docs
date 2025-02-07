@@ -685,7 +685,7 @@ virtual HRESULT OnHelp();
 
 ### Return Value
 
-The default implementation returns S_OK.
+The default implementation returns S_FALSE.
 
 ### Remarks
 
