@@ -12,7 +12,7 @@ Instructs the compiler to turn off stack probes if **`off`** (or **`-`**) is spe
 
 ## Syntax
 
-> **`#pragma check_stack(`** [{ **`on`** | **`off`** }] **`)`**\
+> **`#pragma check_stack(`** { **`on`** | **`off`** } **`)`**\
 > **`#pragma check_stack`** { **`+`** | **`-`** }
 
 ## Remarks
@@ -23,9 +23,11 @@ This pragma takes effect at the first function defined after the pragma is seen.
 
 `#pragma check_stack(off)` / `#pragma Check_stack-` is ignored if the size of the function locals is larger than 4096 or the value specified by `/Gs`.
 
-The default behavior on is to insert stack probes at the beginning of each function if the size of the locals exceeds 4096 (or the value specified by `/Gs`) to ensure that the stack is large enough to accommodate the function's requirements.
+The default behavior of the compiler is to insert stack probes at the beginning of each function if the size of the locals exceeds 4096 or the value specified by `/Gs`.
 
 Use [/Gs (Control stack checking calls)](../build/reference/gs-control-stack-checking-calls.md) to change the threshold of the locals that trigger stack probes. Use with caution.
+
+Using `#pragma check_stack()` without arguments is deprecated.
 
 ## See also
 
