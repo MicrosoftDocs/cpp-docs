@@ -19,7 +19,7 @@ Instructs the compiler to turn off stack probes if **`off`** (or **`-`**) is spe
 
 This pragma only applies to 32-bit platforms (x86, ARM32). It has no effect on 64-bit platforms.
 
-This pragma takes effect at the first function defined after the pragma is seen. Stack probes are neither a part of macros nor of functions that are generated inline.
+This pragma takes effect at the first function defined after the pragma is seen. Stack probes are not inserted for macros or functions that are generated inline.
 
 `#pragma check_stack(off)` / `#pragma Check_stack-` is ignored if the size of the function locals is larger than 4096 or the value specified by `/Gs`.
 
