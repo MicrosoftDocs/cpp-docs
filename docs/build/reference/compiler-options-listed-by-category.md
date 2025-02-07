@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options Listed by Category"
 description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
-ms.date: 11/13/2023
+ms.date: 2/5/2025
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed by category
@@ -12,6 +12,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 | Option | Purpose |
 |--|--|
+| [`/dynamicdeopt`](dynamic-deopt.md) | Enable C++ Dynamic Debugging. Debug optimized code using dynamic deoptimization. |
 | [`/favor:<blend|AMD64|INTEL64|ATOM>`](favor-optimize-for-architecture-specifics.md) | Produces code that is optimized for a specified architecture, or for a range of architectures. |
 | [`/O1`](o1-o2-minimize-size-maximize-speed.md) | Creates small code. |
 | [`/O2`](o1-o2-minimize-size-maximize-speed.md) | Creates fast code. |
