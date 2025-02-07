@@ -1,7 +1,7 @@
 ---
 description: "Learn more about the check_stack pragma directive in Microsoft C/C++"
 title: "check_stack pragma"
-ms.date: 01/22/2021
+ms.date: 2/7/2025
 f1_keywords: ["vc-pragma.check_stack", "check_stack_CPP"]
 helpviewer_keywords: ["check_stack pragma", "pragma, check_stack"]
 no-loc: ["pragma"]
