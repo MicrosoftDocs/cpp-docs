@@ -33,7 +33,7 @@ A quick highlight of some of the new features:
 - **C++ language enhancements**
 
   - Try out C++23 preview features by setting the C++ Language Standard to `/std:c++23preview`. This setting enables the latest C++23 features and bug fixes. For more information, see [/std (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md#stdc23preview).
-  - Support for C++23’s `size_t` literal suffix which helps avoid truncations or signed comparison mismatches--especially when writing loops. For example:
+  - Support for C++23’s `size_t` literal suffix, which helps avoid truncations or signed comparison mismatches--especially when writing loops. For example:
     ```cpp
     // Infinite loop if v.size > max unsigned int 
     for (auto i = 0u; i < v.size(); ++i)
