@@ -33,7 +33,7 @@ A quick highlight of some of the new features:
 - **C++ language enhancements**
 
   - Try out C++23 preview features by setting the C++ Language Standard to `/std:c++23preview`. This setting enables the latest C++23 features and bug fixes. For more information, see [/std (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md#stdc23preview).
-  - Support add for C++23’s `size_t` literal suffix which helps avoid truncations or signed comparison mismatches--especially when writing loops. For example:
+  - Support for C++23’s `size_t` literal suffix, which helps avoid truncations or signed comparison mismatches--especially when writing loops. For example:
     ```cpp
     // Infinite loop if v.size > max unsigned int 
     for (auto i = 0u; i < v.size(); ++i)
@@ -111,6 +111,8 @@ A quick highlight of some of the new features:
     :::image type="complex" source="./media/vs2022-copilot-edit-session-example.png" alt-text="A screenshot of the GitHub Copilot Chat window displaying the files it edited.":::
     GitHub Copilot is displaying a summary of the changes it made, such as 1. Create a new subclass range_breakpoint in include/libsdb/breakpoint.hpp" and 2. Implement the range_breakpoint class in src/breakpoint.cpp. An option to accept the changes is displayed.
     :::image-end:::
+
+    For more information, see [Iterate across multiple files more efficiently with GitHub Copilot Edits](https://devblogs.microsoft.com/visualstudio/iterate-across-multiple-files-more-efficiently-with-github-copilot-edits-preview/).
 
 - **CMake**
   - Now supports CMake Presets v9. New macro expansions in a preset's include field. For more information, see [Macro expansion](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#macro-expansion) in the official CMake documentation.
