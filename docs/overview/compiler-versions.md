@@ -52,7 +52,7 @@ The macros reflect these values like this:
 
 ### Service releases starting with Visual Studio 2017
 
-Servicing releases can be distinguished by `_MSC_FULL_VER`. The build field (the BBBBB in the MMNNBBBBB version number) typically increases by 1.
+Servicing releases are distinguished by `_MSC_FULL_VER`. The build field (the BBBBB in the MMNNBBBBB version number) typically increases by 1.
 
 For example, two cases where `_MSC_FULL_VER` is useful is to distinguish Visual Studio 2019 16.8 from 16.9, and Visual Studio 2019 16.10 from 16.11. That's because those versions share the same major and minor versions, and so have the same value for `_MSC_VER`.
 
@@ -71,7 +71,7 @@ R - revision version
 
 **[`_MSC_VER`](../preprocessor/predefined-macros.md)** distinguishes between major and minor releases. It has the form: MMNN.
 
-**[`_MSC_FULL_VER`](../preprocessor/predefined-macros.md)** represents the major, minor, and build version of the compiler. It has the form: MMNNBBBBB. Use it to distinguish between different versions of the compiler, including servicing releases. See [Service releases starting with Visual Studio 2017](#service-releases-starting-with-visual-studio-2017) for more information about Visual Studio 2019 16.8, 16.9, 16.10 and 16.11.
+**[`_MSC_FULL_VER`](../preprocessor/predefined-macros.md)** represents the major, minor, and build version of the compiler. It has the form: MMNNBBBBB. Use it to distinguish between different versions of the compiler, including servicing releases. For more information about Visual Studio 2019 16.8, 16.9, 16.10 and 16.11, see [Service releases starting with Visual Studio 2017](#service-releases-starting-with-visual-studio-2017).
 
 **[`_MSC_BUILD`](../preprocessor/predefined-macros.md)** represents the build version of the compiler. It has the form: R. Use it to distinguish between servicing releases.
 
