@@ -112,6 +112,8 @@ A quick highlight of some of the new features:
     GitHub Copilot is displaying a summary of the changes it made, such as 1. Create a new subclass range_breakpoint in include/libsdb/breakpoint.hpp" and 2. Implement the range_breakpoint class in src/breakpoint.cpp. An option to accept the changes is displayed.
     :::image-end:::
 
+    For more information, see [Iterate across multiple files more efficiently with GitHub Copilot Edits](https://devblogs.microsoft.com/visualstudio/iterate-across-multiple-files-more-efficiently-with-github-copilot-edits-preview/).
+
 - **CMake**
   - Now supports CMake Presets v9. New macro expansions in a preset's include field. For more information, see [Macro expansion](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#macro-expansion) in the official CMake documentation.
 
