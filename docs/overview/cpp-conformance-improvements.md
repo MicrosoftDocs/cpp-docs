@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 11/12/2024
+ms.date: 2/11/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -18,6 +18,50 @@ For changes in earlier versions of Visual Studio:
 | 2019 | [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md) |
 | 2017 | [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) |
 | 2003-2015 | [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md) |
+
+## <a name="improvements_1713"></a> Conformance improvements in Visual Studio 2022 version 17.13
+
+Visual Studio 2022 version 17.13 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.13](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1713).
+
+### Argument-dependent lookup (ADL) change
+
+Language constructs such as range-for and structured bindings have special argument-dependent lookup rules for certain identifiers such as `begin`, `end`, or `get`. Previously, this lookup included candidates from the `std` namespace, even when namespace `std` is not part of the ordinary set of associated namespaces for argument-dependent lookup.
+
+Programs that introduced declarations to `std` for these constructs no longer compile. Instead, the declarations should be in a normal associated namespace for the types involved (possibly including the global namespace).
+
+```cpp
+template <typename T>
+struct Foo {};
+
+namespace std
+{
+    // To correct the program, move these declarations from std to the global namespace
+    template <typename T>
+    T* begin(Foo<T>& f);
+    template <typename T>
+    T* end(Foo<T>& f);
+}
+
+void f(Foo<int> foo)
+{
+   for (auto x : foo) // Previously compiled. Now emits error C3312: no callable 'begin' function found for type 'Foo<int>'
+   {
+      ...
+   }
+}
+```
+
+### Can't modify implementation-reserved macros
+
+Previously, the compiler permitted changing or undefining certain implementation-provided macros such as `_MSC_EXTENSIONS`. Altering the definition of certain macros can result in undefined behavior.
+
+Attempting to alter or undefine certain reserved macro names now results in the level-1 warning `C5308`. In `/permissive-` mode, this warning is treated as an error.
+
+```cpp
+#undef _MSC_EXTENSIONS // Warning C5308: Modifying reserved macro name `_MSC_EXTENSIONS` may cause undefined behavior
+```
 
 ## <a name="improvements_1712"></a> Conformance improvements in Visual Studio 2022 version 17.12
 
