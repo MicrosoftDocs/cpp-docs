@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 11/12/2024
+ms.date: 2/10/2025
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 ms.custom: intro-whats-new
@@ -12,9 +12,108 @@ ai-usage: ai-assisted
 
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
 
-- For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022?view=vs-2022&preserve-view=true).
+- For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022).
 - For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md).
 - For information about version build dates, see [Visual Studio 2022 Release History](/visualstudio/releases/2022/release-history).
+
+## What's new for C++ in Visual Studio version 17.13
+
+*Released February 2025*
+
+| For more information about | See |
+|---|---|
+| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.13](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-13/) |
+| Standard Library (STL) merged C++26 and C++23 features, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.13](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1713) |
+| New features in the IDE |[Visual Studio 2022 version 17.13 Release Notes](/visualstudio/releases/2022/release-notes) |
+| C++ language updates  | [MSVC Compiler updates in Visual Studio 2022 17.13](https://devblogs.microsoft.com/cppblog/msvc-compiler-language-updates-in-visual-studio-2022-version-17-13/) |
+| C++ language conformance improvements | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.13](cpp-conformance-improvements.md#improvements_1713) |
+
+A quick highlight of some of the new features:
+
+- **C++ language enhancements**
+
+  - Try out C++23 preview features by setting the C++ Language Standard to `/std:c++23preview`. This setting enables the latest C++23 features and bug fixes. For more information, see [/std (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md#stdc23preview).
+  - Support add for C++23’s `size_t` literal suffix which helps avoid truncations or signed comparison mismatches--especially when writing loops. For example:
+    ```cpp
+    // Infinite loop if v.size > max unsigned int 
+    for (auto i = 0u; i < v.size(); ++i)
+    { 
+      ...
+    } 
+    
+    // Fixed because of uz literal 
+    for (auto i = 0uz; i < v.size(); ++i)
+    { 
+      ...
+    } 
+    ```
+
+  - Support for vector lengths for code generation on x86 and x64. For more information, see [/vlen](../build/reference/vlen.md).
+  - Support for Intel Advanced Vector Extensions 10 version 1. For more information about `/arch:AVX10.1`, see [/arch (x64)](../build/reference/arch-x64.md).
+
+- **Standard Library enhancements**
+
+  - Standard library support for couroutines. In this example from [P2502R2](https://wg21.link/p2502r2), the `fib` function is a coroutine. When the `co_yield` statement is executed, `fib` is suspended and the value is returned to the caller. You can resume the `fib` coroutine later to produce more values without requiring any manual state handling:
+
+    ```cpp
+    std::generator<int> fib()
+    { 
+      auto a = 0, b = 1; 
+   
+      while (true)
+      { 
+          co_yield std::exchange(a, std::exchange(b, a + b)); 
+      }
+    } 
+      
+    int answer_to_the_universe()
+    { 
+      auto rng = fib() | std::views::drop(6) | std::views::take(3); 
+      return std::ranges::fold_left(std::move(range), 0, std::plus{}); 
+    } 
+    ```
+
+ - Moved `system_clock`, `high_resolution_clock`, and `chrono_literals` from a commonly included internal header to `<chrono>`. If you see compiler errors that types like `system_clock` or user-defined literals like `1729ms` aren't recognized, include `<chrono>`.
+  - Improved the vectorized implementations of `bitset` constructors from strings, `basic_string::find_last_of()`, `remove()`, `ranges::remove`, and the `minmax_element()` and `minmax()` algorithm families.
+  - Added vectorized implementations of:
+    - `find_end()` and `ranges::find_end` for 1-byte and 2-byte elements.
+    - `basic_string::find()` and `basic_string::rfind()` for a substring.
+    - `basic_string::rfind()` for a single character.
+  - Merged C++23 Defect Reports:
+    - [P3107R5](https://wg21.link/P3107R5) Permit an efficient implementation of `<print>`.
+    - [P3235R3](https://wg21.link/P3235R3) `std::print` More types faster with less memory.
+
+- **GitHub Copilot**
+
+  - GitHub Copilot Free is now available. Get 2,000 code completions and 50 chat requests per month at no cost.
+  - GitHub Copilot code completions provide autocomplete suggestions inline as you code. To enhance the experience of C++ developers, GitHub Copilot includes other relevant files as context. This reduces hallucinations while offering more relevant and accurate suggestions.
+  - You can now request a code review from GitHub Copilot from the Git Changes window:
+    :::image type="complex" source="./media/vs2022-copilot-git-changes-review.png" alt-text="A screenshot of the Git Changes window with the GitHub Copilot Review button highlighted.":::
+    The Git Changes window is open with the GitHub Copilot Review button highlighted.
+    :::image-end:::
+
+    GitHub Copilot looks for potential issues and creates comments for them:
+
+    :::image type="complex" source="./media/vs2022-copilot-comment-example.png" alt-text="A screenshot of the GitHub Copilot explaining an issue.":::
+    GitHub Copilot found an issue with the line if ( is_enabled_) new_site.disable(). It says it may be a mistake and should likely be if ( is_enabled_) new_site.enable() because the intention seem to be enabling the new site if the breakpoint is enabled.
+    :::image-end:::
+
+    To use this feature, ensure you have the following turned on:
+      - **Tools**>**Options**> **Preview Features** > **Pull Request Comments**
+      - **Tools** >**Options** > **GitHub** > **Copilot** > **Source Control Integration** > **Enable Git preview features**.
+
+  - GitHub Copilot Edits is a new feature that can make changes across multiple files in your project. To start a new Edits session, click **Create new edit session** at the top of the GitHub Copilot Chat window:
+
+    :::image type="content" source="./media/vs2022-copilot-edit-session.png" alt-text="A screenshot of the GitHub Copilot Chat window. The Create new edit session button is highlighted.":::
+
+    Describe the changes you want to make and Copilot will suggest the relevant edits. You can preview the edits one-by-one and accept the ones you want or make corrections:
+
+    :::image type="complex" source="./media/vs2022-copilot-edit-session-example.png" alt-text="A screenshot of the GitHub Copilot Chat window displaying the files it edited.":::
+    GitHub Copilot is displaying a summary of the changes it made, such as 1. Create a new subclass range_breakpoint in include/libsdb/breakpoint.hpp" and 2. Implement the range_breakpoint class in src/breakpoint.cpp. An option to accept the changes is displayed.
+    :::image-end:::
+
+- **CMake**
+  - Now supports CMake Presets v9. New macro expansions in a preset's include field. For more information, see [Macro expansion](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#macro-expansion) in the official CMake documentation.
 
 ## What's new for C++ in Visual Studio version 17.12
 
@@ -48,7 +147,7 @@ A quick highlight of some of the new features:
   :::image type="complex" source="./media/copilot-smart-variable-inspection.png" alt-text="A screenshot of the Autos window. The variable named it is NULL. The Ask Copilot icon next to it is highlighted.":::
   The code that caused this problem is: for (auto it = h.animals_.begin(); it <= h.animals_.end(); it++).
   :::image-end:::
-  If you click Ask Copilot icon for the `it` variable, it will tell you why it is `<NULL>`:
+  If you click Ask Copilot icon for the `it` variable, it tells you why it is `<NULL>`:
   :::image type="complex" source="./media/copilot-smart-variable-explanation.png" alt-text="A screenshot of a GitHub Copilot window.":::
   This error is inside a function defined as int calculate_number_of_cats(const house& h). The GitHub Copilot message says: "The value of the expression it is NULL, which means that the iterator is not pointing to any valid element in the vector animals_. In the context of your program, it is supposed to iterate over the animals_ vector in the house object to count the number of cat objects. Why it is null. Based on the locals and call stack context: the house object h has an empty animals_ vector (size=0). The loop condition it <= h.animals_.end() is incorrect. It should be it != h.animals_.end()."
   :::image-end:::
@@ -90,7 +189,7 @@ A partial list of new features:
     :::image type="complex" source="./media/include-diagnostics-improved.png" alt-text="A screenshot of the improved Included Files diagnostics results.":::
     The Included Files view has a new column for the project. The Project column is selected and projects such as (Select All), CompilerIdC, OpenAL, common, and so on, are selected. The included files are listed by relative path and file name and grouped together.
     :::image-end:::
-- CMake debugging
+- **CMake debugging**
     - You can now debug your CMake scripts and `CMakeLists.txt` files in the Visual Studio debugger for CMake projects that target Linux via Windows Subsystem for Linux (WSL) or SSH. To start a CMake debugging session in Visual Studio, set a breakpoint in your `CMakeLists.txt` file and then navigate to **Project** > **Configure Cache with CMake Debugging**.
 - **GitHub Copilot**
     - When you hover over symbols in the code editor, click the Copilot **Tell me more** button in the Quick Info dialog to learn more about a given symbol:
