@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: raw_storage_iterator Class"
 title: "raw_storage_iterator Class"
+description: "Learn more about: raw_storage_iterator Class"
 ms.date: 06/17/2022
 f1_keywords: ["memory/std::raw_storage_iterator", "memory/std::raw_storage_iterator::element_type", "memory/std::raw_storage_iterator::iter_type"]
 helpviewer_keywords: ["std::raw_storage_iterator [C++]", "std::raw_storage_iterator [C++], element_type", "std::raw_storage_iterator [C++], iter_type"]
-ms.assetid: 6f033f15-f48e-452a-a326-647ea2cf346f
 ms.custom: devdivchpfy22
 ---
 # raw_storage_iterator Class
@@ -264,7 +263,7 @@ int main( void )
       *it = 2 * i;
    };
 
-   for ( int i = 0; i < 5; i++ ) cout << "array " << i << " = " << pInt[i] << endl;;
+   for ( int i = 0; i < 5; i++ ) cout << "array " << i << " = " << pInt[i] << endl;
 
    delete[] pInt;
 }
@@ -335,7 +334,7 @@ int main( void )
 
    std::copy( l.begin( ), l.end( ), pInt );  // C4996
    for (unsigned int i = 0; i < l.size( ); i++)
-      cout << "array " << i << " = " << pInt[i].x << endl;;
+      cout << "array " << i << " = " << pInt[i].x << endl;
 
    memset (pInt, 0, sizeof(Int)*l.size( ));
    // hack: make sure bIsConstructed is false
