@@ -4201,7 +4201,7 @@ Specifies a new size for a string, appending or erasing elements as required.
 
 ```cpp
 void resize(
-    size_type count,);
+    size_type count);
 
 void resize(
     size_type count,

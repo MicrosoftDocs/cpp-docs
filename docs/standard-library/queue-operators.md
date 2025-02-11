@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <queue> operators"
 title: "<queue> operators"
+description: "Learn more about: <queue> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["queue/std::operator!=", "queue/std::operator>", "queue/std::operator>=", "queue/std::operator<", "queue/std::operator<=", "queue/std::operator=="]
-ms.assetid: 7c435b48-175c-45b0-88eb-24561044019c
 helpviewer_keywords: ["std::operator!= (queue)", "std::operator> (queue)", "std::operator>= (queue)", "std::operator< (queue)", "std::operator<= (queue)", "std::operator== (queue)"]
 ---
 # `<queue>` operators
@@ -13,7 +12,7 @@ helpviewer_keywords: ["std::operator!= (queue)", "std::operator> (queue)", "std:
 Tests if the queue object on the left side of the operator is not equal to the queue object on the right side.
 
 ```cpp
-bool operator!=(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+bool operator!=(const queue <Type, Container>& left, const queue <Type, Container>& right);
 ```
 
 ### Parameters
@@ -80,7 +79,7 @@ The queues q1 and q3 are equal.
 Tests if the queue object on the left side of the operator is less than the queue object on the right side.
 
 ```cpp
-bool operator<(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+bool operator<(const queue <Type, Container>& left, const queue <Type, Container>& right);
 ```
 
 ### Parameters
@@ -143,7 +142,7 @@ The queue q1 is not less than the queue q3.
 Tests if the queue object on the left side of the operator is less than or equal to the queue object on the right side.
 
 ```cpp
-bool operator<=(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+bool operator<=(const queue <Type, Container>& left, const queue <Type, Container>& right);
 ```
 
 ### Parameters
@@ -208,7 +207,7 @@ The queue q1 is less than or equal to the queue q3.
 Tests if the queue object on the left side of the operator is equal to queue object on the right side.
 
 ```cpp
-bool operator==(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+bool operator==(const queue <Type, Container>& left, const queue <Type, Container>& right);
 ```
 
 ### Parameters
@@ -274,7 +273,7 @@ The queues q1 and q3 are equal.
 Tests if the queue object on the left side of the operator is greater than the queue object on the right side.
 
 ```cpp
-bool operator>(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+bool operator>(const queue <Type, Container>& left, const queue <Type, Container>& right);
 ```
 
 ### Parameters
@@ -340,7 +339,7 @@ The queue q1 is greater than the queue q3.
 Tests if the queue object on the left side of the operator is greater than or equal to the queue object on the right side.
 
 ```cpp
-bool operator>=(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+bool operator>=(const queue <Type, Container>& left, const queue <Type, Container>& right);
 ```
 
 ### Parameters
