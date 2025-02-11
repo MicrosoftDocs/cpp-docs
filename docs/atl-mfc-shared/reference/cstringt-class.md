@@ -998,11 +998,11 @@ Concatenates two strings or a character and a string.
 ```cpp
 friend CStringT operator+(const CStringT& str1, const CStringT& str2);
 friend CStringT operator+(const CStringT& str1, PCXSTR psz2);
-friend CStringT operator+(PCXSTR psz1, const CStringT& str2,);
-friend CStringT operator+(char ch1, const CStringT& str2,);
+friend CStringT operator+(PCXSTR psz1, const CStringT& str2);
+friend CStringT operator+(char ch1, const CStringT& str2);
 friend CStringT operator+(const CStringT& str1, char ch2);
 friend CStringT operator+(const CStringT& str1, wchar_t ch2);
-friend CStringT operator+(wchar_t ch1, const CStringT& str2,);
+friend CStringT operator+(wchar_t ch1, const CStringT& str2);
 ```
 
 ### Parameters
@@ -1102,8 +1102,8 @@ friend bool operator==(const CStringT& str1, PCXSTR psz2) throw();
 friend bool operator==(const CStringT& str1, PCYSTR psz2) throw();
 friend bool operator==(const CStringT& str1, XCHAR ch2) throw();
 friend bool operator==(PCXSTR psz1, const CStringT& str2) throw();
-friend bool operator==(PCYSTR psz1, const CStringT& str2,) throw();
-friend bool operator==(XCHAR ch1, const CStringT& str2,) throw();
+friend bool operator==(PCYSTR psz1, const CStringT& str2) throw();
+friend bool operator==(XCHAR ch1, const CStringT& str2) throw();
 ```
 
 ### Parameters
@@ -1144,8 +1144,8 @@ friend bool operator!=(const CStringT& str1, PCXSTR psz2) throw();
 friend bool operator!=(const CStringT& str1, PCYSTR psz2) throw();
 friend bool operator!=(const CStringT& str1, XCHAR ch2) throw();
 friend bool operator!=(PCXSTR psz1, const CStringT& str2) throw();
-friend bool operator!=(PCYSTR psz1, const CStringT& str2,) throw();
-friend bool operator!=(XCHAR ch1, const CStringT& str2,) throw();
+friend bool operator!=(PCYSTR psz1, const CStringT& str2) throw();
+friend bool operator!=(XCHAR ch1, const CStringT& str2) throw();
 ```
 
 ### Parameters

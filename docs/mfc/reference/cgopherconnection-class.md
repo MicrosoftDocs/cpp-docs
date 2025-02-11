@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CGopherConnection Class"
 title: "CGopherConnection Class"
+description: "Learn more about: CGopherConnection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CGopherConnection", "AFXINET/CGopherConnection", "AFXINET/CGopherConnection::CGopherConnection", "AFXINET/CGopherConnection::CreateLocator", "AFXINET/CGopherConnection::GetAttribute", "AFXINET/CGopherConnection::OpenFile"]
 helpviewer_keywords: ["CGopherConnection [MFC], CGopherConnection", "CGopherConnection [MFC], CreateLocator", "CGopherConnection [MFC], GetAttribute", "CGopherConnection [MFC], OpenFile"]
-ms.assetid: b5b96aea-ac99-430e-bd84-d1372b43f78f
 ---
 # CGopherConnection Class
 
@@ -167,8 +166,9 @@ Call this member function to retrieve specific attribute information about an it
 
 ```
 BOOL GetAttribute(
-    CGopherLocator& refLocator    CString strRequestedAttributes,
-    CString& strResult,);
+    CGopherLocator& refLocator,
+    CString strRequestedAttributes,
+    CString& strResult);
 ```
 
 ### Parameters
@@ -222,11 +222,11 @@ Override the *dwContext* default to set the context identifier to a value of you
 
 ## See also
 
-[CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CFtpConnection Class](../../mfc/reference/cftpconnection-class.md)<br/>
-[CHttpConnection Class](../../mfc/reference/chttpconnection-class.md)<br/>
-[CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)<br/>
-[CGopherLocator Class](../../mfc/reference/cgopherlocator-class.md)<br/>
-[CGopherFile Class](../../mfc/reference/cgopherfile-class.md)<br/>
+[CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)\
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
+[CFtpConnection Class](../../mfc/reference/cftpconnection-class.md)\
+[CHttpConnection Class](../../mfc/reference/chttpconnection-class.md)\
+[CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)\
+[CGopherLocator Class](../../mfc/reference/cgopherlocator-class.md)\
+[CGopherFile Class](../../mfc/reference/cgopherfile-class.md)\
 [CInternetSession Class](../../mfc/reference/cinternetsession-class.md)
