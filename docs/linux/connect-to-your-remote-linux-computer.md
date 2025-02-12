@@ -76,15 +76,15 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    
 1. Enter the following information:
 
-| Entry | Description |
-|--|--|
-| **Host Name** | Name or IP address of your target device |
-| **Port** | Port that the SSH service is running on, typically 22 |
-| **User name** | User to authenticate as |
-| **Authentication type** | Password and Private Key are both supported |
-| **Password** | Password for the entered user name |
-| **Private key file** | Private key file created for ssh connection |
-| **Passphrase** | Passphrase used with private key selected above |
+   | Entry | Description |
+   |--|--|
+   | **Host Name** | Name or IP address of your target device |
+   | **Port** | Port that the SSH service is running on, typically 22 |
+   | **User name** | User to authenticate as |
+   | **Authentication type** | Password and Private Key are both supported |
+   | **Password** | Password for the entered user name |
+   | **Private key file** | Private key file created for ssh connection |
+   | **Passphrase** | Passphrase used with private key selected above |
 
    You can't click the **Connect** button until all the required fields are completed and the port is set to an integer between 1 and 65535.
 
@@ -94,7 +94,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    
       `ssh-keygen -m pem -t ecdsa -f <key-name>`
 
-      > [!NOTE]
+   > [!NOTE]
    > If using `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key will not be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`.
 
 1. Choose the **Connect** button to attempt a connection to the remote computer.
