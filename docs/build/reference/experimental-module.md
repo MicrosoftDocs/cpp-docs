@@ -7,7 +7,7 @@ helpviewer_keywords: ["module", "/experimental:module", "Enable module support"]
 ---
 # `/experimental:module` (Enable experimental module support)
 
-Enables experimental compiler support for C++ Standard modules. This option is obsolete for C++20 standard modules in Visual Studio 2019 version 16.11 and later. This switch is only used (along with [`/std:c++latest`](std-specify-language-standard-version.md)) if you are still using the older experimental Standard library modules. We recommend that you use the new Standard Library modules provided by Microsoft without using this switch.
+Enables compiler support for an experimental form of C++ Standard modules. This option is obsolete in Visual Studio 2019 version 16.11 and later.
 
 ## Syntax
 
@@ -15,15 +15,16 @@ Enables experimental compiler support for C++ Standard modules. This option is o
 
 ## Remarks
 
-Although you can use this switch to use the older experimental named modules listed below, we recommend that you use the the new, standardized, way of consuming the C++ Standard Library as modules described in [Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md).
+Although you can use this switch to use the older experimental named modules, we recommend that you use the the new, standardized, way of consuming the C++ Standard Library as modules described in [Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md).
 
-Before you can use the experimental modules, ensure that **C++ Modules for v143 build tools (x64/x86 - experimental)** in selected the VS Installer. It's available in the **Individual components** tab of the installer. Search for **experimental** to see the option. For more information, see [Install C++ support in Visual Studio](../install/install-visual-cpp.md).
+This compiler switch is available starting in Visual Studio 2015 Update 1. Ensure that **C++ Modules for v143 build tools (x64/x86 - experimental)** in selected the VS Installer. It's available in the **Individual components** tab of the installer. Search for **experimental** to see the option. For more information, see [Install C++ support in Visual Studio](../install/install-visual-cpp.md).
 
-In versions of Visual Studio before Visual Studio 2019 version 16.11, you can enable experimental modules support using the **`/experimental:module`** compiler option along with the [`/std:c++latest`](std-specify-language-standard-version.md) option. In Visual Studio 2019 version 16.11, module support is enabled automatically by either **`/std:c++20`** or **`/std:c++latest`**. Use **`/experimental:module-`** to disable experimental module support.
-
-This compiler switch is available starting in Visual Studio 2015 Update 1. Modules support is feature complete in Visual Studio 2019 version 16.10.
-
-For more information about how to use and create modules, see [Overview of modules in C++](../../cpp/modules-cpp.md).
+| Version  | Status |
+|---|---|
+| Visual Studio 2015 Update 1  | `/experimental:module` is available. |
+| Visual Studio 2019 version 16.10 | C++20 modules support is feature complete. |
+| Visual Studio 2019 16.11 and earlier | Enable experimental modules support using **`/experimental:module`** along with [`/std:c++latest`](std-specify-language-standard-version.md). |
+| Visual Studio 2019 version 16.11 and later | Modules support is enabled automatically with **`/std:c++20`** or later, or **`/std:c++latest`**. Use **`/experimental:module-`** to disable experimental module support. |
 
 The experimental library consists of the following named modules:
 
@@ -48,6 +49,8 @@ To consume the experimental Microsoft Standard Library modules, compile your pro
 1. Set the **Configuration** drop-down to **All Configurations**.
 1. Select the **Configuration Properties** > **C/C++** > **Language** property page.
 1. Modify the **Enable C++ Modules (experimental)** property, and then choose **OK**.
+
+For more information about how to use and create modules, see [Overview of modules in C++](../../cpp/modules-cpp.md).
 
 ## See also
 

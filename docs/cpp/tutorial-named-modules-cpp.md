@@ -9,7 +9,7 @@ description: Named modules in C++20 provide a modern alternative to header files
 ---
 # Named modules tutorial (C++)
 
-This tutorial is about creating C++20 modules. Modules replace header files. You'll learn how modules are an improvement on header files.
+This tutorial is about creating C++20 modules. Modules are a significant improvement on header files.
 
 In this tutorial, learn how to:
 
@@ -22,13 +22,11 @@ In this tutorial, learn how to:
 
 This tutorial requires Visual Studio 2022 17.1.0 or later.
 
-You might get IntelliSense errors while working on the code example in this tutorial. Work on the IntelliSense engine is catching up with the compiler. IntelliSense errors can be ignored and won't prevent the code example from building. To track progress on the IntelliSense work, see this [issue](https://developercommunity.visualstudio.com/t/When-importing-a-C20-module-or-header-/1550846).
-
 ## What are C++ modules
 
-Header files are how declarations and definitions are shared between source files in C++. Header files are fragile and difficult to compose. They may compile differently depending on the order you include them in, or on the macros that are or aren't defined. They can slow compilation time because they're reprocessed for each source file that includes them.
+Header files are how declarations and definitions are shared between source files in C++. Header files are fragile and difficult to compose. They may compile differently depending on the order you include them in or on the macros that are or aren't defined. They can slow compilation time because they're reprocessed for each source file that includes them.
 
-C++20 introduces a modern approach to componentizing C++ programs: *modules*.
+C++20 introduces *modules* as a modern approach to componentizing C++ programs.
 
 Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules don't leak macro definitions or private implementation details.
 
