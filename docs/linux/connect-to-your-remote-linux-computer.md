@@ -76,24 +76,25 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    
 1. Enter the following information:
 
-   | Entry | Description |
-   |--|--|
-   | **Host Name** | Name or IP address of your target device |
-   | **Port** | Port that the SSH service is running on, typically 22 |
-   | **User name** | User to authenticate as |
-   | **Authentication type** | Password and Private Key are both supported |
-   | **Password** | Password for the entered user name |
-   | **Private key file** | Private key file created for ssh connection |
-   | **Passphrase** | Passphrase used with private key selected above |
+| Entry | Description |
+|--|--|
+| **Host Name** | Name or IP address of your target device |
+| **Port** | Port that the SSH service is running on, typically 22 |
+| **User name** | User to authenticate as |
+| **Authentication type** | Password and Private Key are both supported |
+| **Password** | Password for the entered user name |
+| **Private key file** | Private key file created for ssh connection |
+| **Passphrase** | Passphrase used with private key selected above |
 
    You can't click the **Connect** button until all the required fields are completed and the port is set to an integer between 1 and 65535.
 
    You can use either a password or a key file and passphrase for authentication. Key files are more secure than username/password. If you already have a key pair, it's possible to reuse it.
 
-   Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, DSA keys are no longer supported in VS 17.10 and later. RSA keys were also not supported in VS 17.10 and VS 17.11 but are supported again in VS 17.12 and later. To create a key pair compatible with the connection manager you can use the command:
-   `ssh-keygen -m pem -t ecdsa -f <key-name>`
+   Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, DSA keys are no longer supported in VS 17.10 and later. RSA keys were also not supported in VS 17.10 and VS 17.11 but some are supported again in VS 17.12 and later. To create a key pair compatible with the connection manager you can use the command:
+   
+      `ssh-keygen -m pem -t ecdsa -f <key-name>`
 
-   > [!NOTE]
+      > [!NOTE]
    > If using `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key will not be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`.
 
 1. Choose the **Connect** button to attempt a connection to the remote computer.
@@ -131,7 +132,7 @@ Starting in Visual Studio version 16.9, support for older, insecure SSH algorith
 | Encryption | `aes128-cbc`</br>`aes128-ctr`</br>`aes192-cbc`</br>`aes192-ctr`</br>`aes256-cbc`</br>`aes256-ctr` |
 | HMAC | `hmac-sha2-256`</br>`hmac-sha2-512` |
 | Key exchange | `diffie-hellman-group14-sha256`</br>`diffie-hellman-group16-sha512`</br>`diffie-hellman-group-exchange-sha256`</br>`ecdh-sha2-nistp256`</br>`ecdh-sha2-nistp384`</br>`ecdh-sha2-nistp521` |
-| Host key | `ecdsa-sha2-nistp256`</br>`ecdsa-sha2-nistp384`</br>`ecdsa-sha2-nistp521`</br>`rsa-sha2-512`</br>`rsa-sha2-256`</br>`ssh-rsa` |
+| Host key | `ecdsa-sha2-nistp256`</br>`ecdsa-sha2-nistp384`</br>`ecdsa-sha2-nistp521`</br>`rsa-sha2-512`</br>`rsa-sha2-256` |
 
 ### Configure the SSH server
 
