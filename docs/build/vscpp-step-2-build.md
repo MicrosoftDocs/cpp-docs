@@ -88,7 +88,7 @@ If red squiggles appear under anything in the source code editor, the build may 
 
 ::: moniker range="<msvc-170"
 
-If the path shown in File Explorer ends in `\HelloWorld\HelloWorld`, you opened the HelloWorld *project* instead of the HelloWorld *solution*. You won't see your app in th `Debug` folder. Navigate up a level in File Explorer to get to the solution folder, the first *HelloWorld* in the path. This folder also contains a `Debug` folder, where your app is.
+If the path shown in File Explorer ends in `\HelloWorld\HelloWorld`, you opened the HelloWorld *project* instead of the HelloWorld *solution*. You won't see your app in the `Debug` folder. Navigate up a level in File Explorer to get to the solution folder, the first *HelloWorld* in the path. This folder also contains a `Debug` folder, where your app is.
 
 You can also navigate to the solution `Debug` folder at the command line to run your app. Your app won't run from other directories without specifying the path to the app. However, you can copy your app to another directory and run it from there. It's also possible to copy it to a directory specified by your `PATH` environment variable, then run it from anywhere.
 

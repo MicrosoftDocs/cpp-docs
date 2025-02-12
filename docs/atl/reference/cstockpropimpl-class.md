@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CStockPropImpl Class"
 title: "CStockPropImpl Class"
+description: "Learn more about: CStockPropImpl Class"
 ms.date: "05/06/2019"
 f1_keywords: ["CStockPropImpl", "ATLCTL/ATL::CStockPropImpl", "ATLCTL/ATL::get_Appearance", "ATLCTL/ATL::get_AutoSize", "ATLCTL/ATL::get_BackColor", "ATLCTL/ATL::get_BackStyle", "ATLCTL/ATL::get_BorderColor", "ATLCTL/ATL::get_BorderStyle", "ATLCTL/ATL::get_BorderVisible", "ATLCTL/ATL::get_BorderWidth", "ATLCTL/ATL::get_Caption", "ATLCTL/ATL::get_DrawMode", "ATLCTL/ATL::get_DrawStyle", "ATLCTL/ATL::get_DrawWidth", "ATLCTL/ATL::get_Enabled", "ATLCTL/ATL::get_FillColor", "ATLCTL/ATL::get_FillStyle", "ATLCTL/ATL::get_Font", "ATLCTL/ATL::get_ForeColor", "ATLCTL/ATL::get_HWND", "ATLCTL/ATL::get_MouseIcon", "ATLCTL/ATL::get_MousePointer", "ATLCTL/ATL::get_Picture", "ATLCTL/ATL::get_ReadyState", "ATLCTL/ATL::get_TabStop", "ATLCTL/ATL::get_Text", "ATLCTL/ATL::getvalid", "ATLCTL/ATL::get_Window", "ATLCTL/ATL::put_Appearance", "ATLCTL/ATL::put_AutoSize", "ATLCTL/ATL::put_BackColor", "ATLCTL/ATL::put_BackStyle", "ATLCTL/ATL::put_BorderColor", "ATLCTL/ATL::put_BorderStyle", "ATLCTL/ATL::put_BorderVisible", "ATLCTL/ATL::put_BorderWidth", "ATLCTL/ATL::put_Caption", "ATLCTL/ATL::put_DrawMode", "ATLCTL/ATL::put_DrawStyle", "ATLCTL/ATL::put_DrawWidth", "ATLCTL/ATL::put_Enabled", "ATLCTL/ATL::put_FillColor", "ATLCTL/ATL::put_FillStyle", "ATLCTL/ATL::put_Font", "ATLCTL/ATL::put_ForeColor", "ATLCTL/ATL::put_HWND", "ATLCTL/ATL::put_MouseIcon", "ATLCTL/ATL::put_MousePointer", "ATLCTL/ATL::put_Picture", "ATLCTL/ATL::put_ReadyState", "ATLCTL/ATL::put_TabStop", "ATLCTL/ATL::put_Text", "ATLCTL/ATL::putvalid", "ATLCTL/ATL::put_Window", "ATLCTL/ATL::putref_Font", "ATLCTL/ATL::putref_MouseIcon", "ATLCTL/ATL::putref_Picture"]
 helpviewer_keywords: ["CStockPropImpl class", "controls [ATL], stock properties", "stock properties, ATL controls"]
-ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
 ---
 # CStockPropImpl Class
 
@@ -607,7 +606,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 Call this method to set the value of flag that indicates if the control cannot be any other size.
 
 ```
-HRESULT STDMETHODCALLTYPE put_AutoSize(VARIANT_BOOL bAutoSize,);
+HRESULT STDMETHODCALLTYPE put_AutoSize(VARIANT_BOOL bAutoSize);
 ```
 
 ### Parameters
@@ -1100,5 +1099,5 @@ The same as [CStockPropImpl::put_Picture](#put_picture), but with a reference co
 
 ## See also
 
-[Class Overview](../../atl/atl-class-overview.md)<br/>
+[Class Overview](../../atl/atl-class-overview.md)\
 [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)
