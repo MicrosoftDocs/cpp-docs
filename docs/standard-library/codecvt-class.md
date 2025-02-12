@@ -4,7 +4,6 @@ description: "describes the Microsoft C runtime `codecvt` class API"
 ms.date: "11/09/2020"
 f1_keywords: ["xlocale/std::codecvt", "xlocale/std::codecvt::extern_type", "xlocale/std::codecvt::intern_type", "xlocale/std::codecvt::state_type", "xlocale/std::codecvt::always_noconv", "xlocale/std::codecvt::do_always_noconv", "xlocale/std::codecvt::do_encoding", "xlocale/std::codecvt::do_in", "xlocale/std::codecvt::do_length", "xlocale/std::codecvt::do_max_length", "xlocale/std::codecvt::do_out", "xlocale/std::codecvt::do_unshift", "xlocale/std::codecvt::encoding", "xlocale/std::codecvt::in", "xlocale/std::codecvt::length", "xlocale/std::codecvt::max_length", "xlocale/std::codecvt::out", "xlocale/std::codecvt::unshift"]
 helpviewer_keywords: ["std::codecvt [C++]", "std::codecvt [C++], extern_type", "std::codecvt [C++], intern_type", "std::codecvt [C++], state_type", "std::codecvt [C++], always_noconv", "std::codecvt [C++], do_always_noconv", "std::codecvt [C++], do_encoding", "std::codecvt [C++], do_in", "std::codecvt [C++], do_length", "std::codecvt [C++], do_max_length", "std::codecvt [C++], do_out", "std::codecvt [C++], do_unshift", "std::codecvt [C++], encoding", "std::codecvt [C++], in", "std::codecvt [C++], length", "std::codecvt [C++], max_length", "std::codecvt [C++], out", "std::codecvt [C++], unshift"]
-ms.assetid: 37d3efa1-2b7f-42b6-b04f-7a972c8c2c86
 ---
 # `codecvt` Class
 
@@ -228,7 +227,7 @@ virtual result do_in(
     const Byte*& next1,
     CharType* first2,
     CharType* last2,
-    CharType*& next2,) const;
+    CharType*& next2) const;
 ```
 
 ### Parameters
@@ -517,7 +516,7 @@ result in(
     const Byte*& next1,
     CharType* first2,
     CharType* last2,
-    CharType*& next2,) const;
+    CharType*& next2) const;
 ```
 
 ### Parameters
