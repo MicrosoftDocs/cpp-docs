@@ -1,6 +1,6 @@
 ---
 title: "Named modules tutorial in C++"
-ms.date: 08/08/2022
+ms.date: 02/12/2025
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -237,7 +237,7 @@ int main()
 }
 ```
 
-The statement `import BasicPlane.Figures;` makes all the exported functions and types from the `BasicPlane.Figures` module visible to this file. It can come before or after any `#include` directives.
+The statement `import BasicPlane.Figures;` makes all the exported functions and types from the `BasicPlane.Figures` module visible to this file. It should come after any `#include` directives.
 
 The app then uses the types and functions from the module to output the area and width of the defined rectangle:
 
@@ -265,7 +265,7 @@ module; // optional. Defines the beginning of the global module fragment
 
 // #include directives go here but only apply to this file and
 // aren't shared with other module implementation files.
-// Macro definitions aren't visible outside this file, or to importers.
+// Macro definitions aren't visible outside this file or to importers.
 // import statements aren't allowed here. They go in the module preamble, below.
 
 export module [module-name]; // Required. Marks the beginning of the module preamble
@@ -305,7 +305,8 @@ Module implementation units are useful for breaking up a large module into small
 Module implementation unit files have a *`.cpp`* extension. The basic outline of a module implementation unit file is:
 
 ```cpp
-// optional #include or import statements. These only apply to this file
+// optional #include statements. These only apply to this file
+// optional import statements. These only apply to this file
 // imports in the associated module's interface are automatically available to this file
 
 module [module-name]; // required. Identifies which named module this implementation unit belongs to
