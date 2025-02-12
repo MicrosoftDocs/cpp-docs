@@ -90,7 +90,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
 
    You can use either a password or a key file and passphrase for authentication. Key files are more secure than username/password. If you already have a key pair, it's possible to reuse it.
 
-   Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, DSA keys are no longer supported in VS 17.10 and later. RSA keys were also not supported in VS 17.10 and VS 17.11 but are supported again in VS 17.12 and later. To create a key pair compatible with the connection manager you can use the command:
+   Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, DSA keys are no longer supported in VS 17.10 and later. RSA keys were also not supported in VS 17.10 and VS 17.11 but some types are supported again in VS 17.12 and later. To create a key pair compatible with the connection manager you can use the command:
    `ssh-keygen -m pem -t ecdsa -f <key-name>`
 
    > [!NOTE]
@@ -131,7 +131,7 @@ Starting in Visual Studio version 16.9, support for older, insecure SSH algorith
 | Encryption | `aes128-cbc`</br>`aes128-ctr`</br>`aes192-cbc`</br>`aes192-ctr`</br>`aes256-cbc`</br>`aes256-ctr` |
 | HMAC | `hmac-sha2-256`</br>`hmac-sha2-512` |
 | Key exchange | `diffie-hellman-group14-sha256`</br>`diffie-hellman-group16-sha512`</br>`diffie-hellman-group-exchange-sha256`</br>`ecdh-sha2-nistp256`</br>`ecdh-sha2-nistp384`</br>`ecdh-sha2-nistp521` |
-| Host key | `ecdsa-sha2-nistp256`</br>`ecdsa-sha2-nistp384`</br>`ecdsa-sha2-nistp521`</br>`rsa-sha2-512`</br>`rsa-sha2-256`</br>`ssh-rsa` |
+| Host key | `ecdsa-sha2-nistp256`</br>`ecdsa-sha2-nistp384`</br>`ecdsa-sha2-nistp521`</br>`rsa-sha2-512`</br>`rsa-sha2-256` |
 
 ### Configure the SSH server
 

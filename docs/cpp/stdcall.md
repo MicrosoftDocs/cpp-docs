@@ -13,6 +13,8 @@ The **`__stdcall`** calling convention is used to call Win32 API functions. The 
 ## Syntax
 
 > *return-type* **`__stdcall`** *function-name*[**`(`** *argument-list* **`)`**]
+>
+> **`auto`** **`__stdcall`** *function-name*[**`(`** *argument-list* **`)`**] [ **`->`** *return-type* ]
 
 ## Remarks
 
