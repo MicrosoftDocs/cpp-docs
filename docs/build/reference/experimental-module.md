@@ -5,9 +5,9 @@ ms.date: 01/27/2022
 f1_keywords: ["module", "/experimental:module"]
 helpviewer_keywords: ["module", "/experimental:module", "Enable module support"]
 ---
-# `/experimental:module` (Enable module support)
+# `/experimental:module` (Enable experimental module support)
 
-Enables experimental compiler support for C++ Standard modules. This option is obsolete for C++20 standard modules in Visual Studio version 16.11 and later. It's still required (along with [`/std:c++latest`](std-specify-language-standard-version.md)) for the experimental Standard library modules.
+Enables experimental compiler support for C++ Standard modules. This option is obsolete for C++20 standard modules in Visual Studio version 16.11 and later. This switch is only used (along with [`/std:c++latest`](std-specify-language-standard-version.md)) if you are still using the older experimental Standard library modules. We recommend that you use the new Standard Library modules provided by Microsoft without using this switch.
 
 ## Syntax
 
@@ -15,20 +15,34 @@ Enables experimental compiler support for C++ Standard modules. This option is o
 
 ## Remarks
 
-In versions of Visual Studio before Visual Studio 2019 version 16.11, you can enable experimental modules support by use of the **`/experimental:module`** compiler option along with the [`/std:c++latest`](std-specify-language-standard-version.md) option. In Visual Studio 2019 version 16.11, module support is enabled automatically by either **`/std:c++20`** or **`/std:c++latest`**. Use **`/experimental:module-`** to disable module support explicitly.
+In versions of Visual Studio before Visual Studio 2019 version 16.11, you can enable experimental modules support using the **`/experimental:module`** compiler option along with the [`/std:c++latest`](std-specify-language-standard-version.md) option. In Visual Studio 2019 version 16.11, module support is enabled automatically by either **`/std:c++20`** or **`/std:c++latest`**. Use **`/experimental:module-`** to disable experimental module support.
 
-This option is available starting in Visual Studio 2015 Update 1. As of Visual Studio 2019 version 16.2, C++20 Standard modules aren't fully implemented in the Microsoft C++ compiler. Modules support is feature complete in Visual Studio 2019 version 16.10. You can use the modules feature import the Standard Library modules provided by Microsoft. A module and the code that consumes it must be compiled with the same compiler options.
+This compiler switch is available starting in Visual Studio 2015 Update 1. Modules support is feature complete in Visual Studio 2019 version 16.10. You can use the modules feature import the Standard Library modules provided by Microsoft. The new, standardized, way of consuming the C++ Standard Library as modules is described in [Import the C++ standard library using modules](tutorial-import-stl-named-module.md).
 
-For more information on modules and how to use and create them, see [Overview of modules in C++](../../cpp/modules-cpp.md).
+For more information about how to use and create modules, see [Overview of modules in C++](../../cpp/modules-cpp.md).
+
+The experimental library consists of the following named modules:
+
+- `std.regex` provides the content of header `<regex>`
+- `std.filesystem` provides the content of header `<filesystem>`
+- `std.memory` provides the content of header `<memory>`
+- `std.threading` provides the contents of headers `<atomic>`, `<condition_variable>`, `<future>`, `<mutex>`, `<shared_mutex>`, and `<thread>`
+- `std.core` provides everything else in the C++ Standard Library
+
+To consume these modules, add an import declaration to the top of the source code file. For example:
+
+```cpp
+import std.core;
+import std.regex;
+```
+
+To consume the experimental Microsoft Standard Library modules, compile your program with the [`/EHsc`](../build/reference/eh-exception-handling-model.md) and [`/MD`](../build/reference/md-mt-ld-use-run-time-library.md) options.
 
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
 1. Set the **Configuration** drop-down to **All Configurations**.
-
 1. Select the **Configuration Properties** > **C/C++** > **Language** property page.
-
 1. Modify the **Enable C++ Modules (experimental)** property, and then choose **OK**.
 
 ## See also

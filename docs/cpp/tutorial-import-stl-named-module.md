@@ -24,7 +24,7 @@ This tutorial requires Visual Studio 2022 17.5 or later.
 
 ## Introduction to standard library modules
 
-Header files suffer from semantics that can change depending on macro definitions, the order in which you include them, and they slow compilation. Modules solve these problems.
+Header file semantics can change depending on macro definitions, the order in which you include them, and they slow compilation. Modules solve these problems.
 
 It's now possible to import the standard library as a module instead of as a tangle of header files. This is much faster and more robust than including header files or header units or precompiled headers (PCH).
 
@@ -44,8 +44,6 @@ Header files are how declarations and definitions have been shared between sourc
 C++20 introduces a modern alternative called *modules*. In C++23, we were able to capitalize on module support to introduce named modules to represent the standard library.
 
 Like header files, modules allow you to share declarations and definitions across source files. But unlike header files, modules aren't fragile and are easier to compose because their semantics don't change due to macro definitions or the order in which you import them. The compiler can process modules much faster than it can process `#include` files, and uses less memory at compile time as well. Named modules don't expose macro definitions or private implementation details.
-
-For in depth information about modules, see [Overview of modules in C++](modules-cpp.md) That article also discusses consuming the C++ standard library as modules, but uses an older and experimental way of doing it.
 
 This article demonstrates the new and best way to consume the standard library. For more information about alternative ways to consume the standard library, see [Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md).
 

@@ -1,13 +1,13 @@
 ---
 title: "module, import, export"
-ms.date: 02/14/2022
+ms.date: 02/11/2025
 f1_keywords: ["module_cpp", "import_cpp", "export_cpp"]
 helpviewer_keywords: ["modules [C++]", "modules [C++], import", "modules [C++], export"]
 description: Use import and export declarations to access and to publish types and functions defined in the specified module.
 ---
 # `module`, `import`, `export`
 
-The **`module`**, **`import`**, and **`export`** declarations are available in C++20 and require the [`/experimental:module`](../build/reference/experimental-module.md) compiler switch along with [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later (such as **`/std:c++latest`**). For more information, see [Overview of modules in C++](modules-cpp.md).
+The **`module`**, **`import`**, and **`export`** declarations are available in C++20 and require the compiler switch [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later (such as **`/std:c++latest`**). For more information, see [Overview of modules in C++](modules-cpp.md).
 
 ## `module`
 
