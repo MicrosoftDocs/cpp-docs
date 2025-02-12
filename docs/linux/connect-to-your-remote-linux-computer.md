@@ -91,7 +91,7 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    You can use either a password or a key file and passphrase for authentication. Key files are more secure than username/password. If you already have a key pair, it's possible to reuse it.
 
    Versions of Visual Studio before 17.10 support Elliptic Curve (EC), Rivert-Shamir-Adleman (RSA), and Digital signature algorithm (DSA) keys for remote connections. Because of security concerns, DSA keys are no longer supported in VS 17.10 and later. RSA keys were also not supported in VS 17.10 and VS 17.11 but some types are supported again in VS 17.12 and later. To create a key pair compatible with the connection manager you can use the command:
-      `ssh-keygen -m pem -t ecdsa -f <key-name>`
+   `ssh-keygen -m pem -t ecdsa -f <key-name>`
 
    > [!NOTE]
    > If using `ssh-keygen` to create the private key, you must specify the switch `-m pem`, or the key will not be accepted by Visual Studio. If your private key begins with `-----BEGIN OPENSSH PRIVATE KEY-----`, you must convert it with `ssh-keygen -p -f <FILE> -m pem`.
