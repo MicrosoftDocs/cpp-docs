@@ -1,7 +1,7 @@
 ---
 description: "Learn more about Microsoft Visual C++ compiler versioning."
 title: "Microsoft Visual C++ compiler versioning (Visual C++)"
-ms.date: 02/11/2025
+ms.date: 02/12/2025
 ms.service: "visual-cpp"
 ms.subservice: "tools"
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
@@ -123,7 +123,7 @@ The following table lists the Visual C++ compiler `_MSC_VER` for each Visual Stu
 | Visual Studio 2022 version 17.11 | 1941 |
 | Visual Studio 2022 version 17.12 | 1942 |
 | Visual Studio 2022 version 17.13 | 1943 |
-| Visual Studio 2022 version 17.14 (Preview) | 1944 |
+| Visual Studio 2022 version 17.14 | 1944 |
 
 <sup>a</sup> Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and so have the same value for `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.9 is 192829910.
 
