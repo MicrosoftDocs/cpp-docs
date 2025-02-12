@@ -48,7 +48,7 @@ Your code can consume modules in the same project, or any referenced projects, a
 
 ## Create the project
 
-As we build a simple project, we'll look at various aspects of modules. The project will implement an API using a module instead of a header file.
+As we build a simple project, we look at various aspects of modules. The project implements an API using a module instead of a header file.
 
 In Visual Studio 2022 or later, choose **Create a new project** and then the **Console App** (for C++) project type. If this project type isn't available, you may not have selected the **Desktop development with C++** workload when you installed Visual Studio. You can use the Visual Studio Installer to add the C++ workload.
 
@@ -60,7 +60,7 @@ Because modules are a C++20 feature, use the [`/std:c++20` or `/std:c++latest`](
 
 ## Create the primary module interface unit
 
-A module consists of one or more files. One of these files must be what is called the *primary module interface unit*. It defines what the module exports; that is, what importers of the module will see. There can only be one primary module interface unit per module.
+A module consists of one or more files. One of these files must be what is called the *primary module interface unit*. It defines what the module exports; that is, what importers of the module see. There can only be one primary module interface unit per module.
 
 To add a primary module interface unit, in **Solution Explorer**, right-click **Source Files** then select **Add** > **Module**.
 
@@ -86,13 +86,13 @@ Replace the contents of *`BasicPlane.Figures.ixx`* file with:
 export module BasicPlane.Figures; // the export module keywords mark this file as a primary module interface unit
 ```
 
-This line identifies this file as the primary module interface and gives the module a name: `BasicPlane.Figures`. The period in the module name has no special meaning to the compiler. A period can be used to convey how your module is organized. If you have multiple module files that work together, you can use periods to indicate a separation of concerns. In this tutorial, we'll use periods to indicate different functional areas of the API.
+This line identifies this file as the primary module interface and gives the module a name: `BasicPlane.Figures`. The period in the module name has no special meaning to the compiler. A period can be used to convey how your module is organized. If you have multiple module files that work together, you can use periods to indicate a separation of concerns. In this tutorial, periods indicate different functional areas of the API.
 
 This name is also where the "named" in "named module" comes from. The files that are part of this module use this name to identify themselves as part of the named module. A named module is the collection of module units with the same module name.
 
 We should talk about the API we'll implement for a moment before going further. It impacts the choices we make next. The API represents different shapes. We're only going to provide a couple shapes in this example: `Point` and `Rectangle`. `Point` is meant to be used as part of more complex shapes such as `Rectangle`.
 
-To illustrate some features of modules, we'll factor this API into pieces. One piece will be the `Point` API. The other part will be `Rectangle`. Imagine that this API will grow into something more complex. The division is useful for separating concerns or easing code maintenance.
+To illustrate some features of modules, we factor this API into pieces. One piece is the `Point` API. The other part is `Rectangle`. Imagine that this API will grow into something more complex. The division is useful for separating concerns or easing code maintenance.
 
 So far, we've created the primary module interface that will expose this API. Let's now build the `Point` API. We want it to be part of this module. For reasons of logical organization, and potential build efficiency, we want to make the code for this part of the API a *module partition* file.
 
@@ -106,7 +106,7 @@ When you import a partition into the primary module, all its declarations become
 
 To create a module partition file, in the **Solution Explorer** right-click **Source Files**, then select **Add** > **Module**. Name the file *`BasicPlane.Figures-Point.ixx`* and choose **Add**.
 
-Because it's a module partition file, we've added a hyphen and the name of the partition to the module name. This convention aids the compiler in the command-line case because the compiler uses name lookup rules based on the module name to find the compiled *`.ifc`* file for the partition. This way you don't have to provide explicit `/reference` command-line arguments to find the partitions that belong to the module. It's also helpful for organizing the files that belong to a module by name because you can easily see which files belong to which modules.
+Because it's a module partition file, we add a hyphen and the name of the partition to the module name. This convention aids the compiler in the command-line case because the compiler uses name lookup rules based on the module name to find the compiled *`.ifc`* file for the partition. This way you don't have to provide explicit `/reference` command-line arguments to find the partitions that belong to the module. It's also helpful for organizing the files that belong to a module by name because you can easily see which files belong to which modules.
 
 Replace the contents of *`BasicPlane.Figures-Point.ixx`* with:
 
@@ -127,7 +127,7 @@ In this file, the `export` keyword makes `struct Point` visible to consumers.
 
 ### `Rectangle` module partition example
 
-The next partition we'll define is `Rectangle`. Create another module file using the same steps as before: In **Solution Explorer**, right-click on **Source Files**, then select **Add** > **Module**. Name the file *`BasicPlane.Figures-Rectangle.ixx`* and select **Add**.
+The next partition we define is `Rectangle`. Create another module file using the same steps as before: In **Solution Explorer**, right-click on **Source Files**, then select **Add** > **Module**. Name the file *`BasicPlane.Figures-Rectangle.ixx`* and select **Add**.
 
 Replace the contents of *`BasicPlane.Figures-Rectangle.ixx`* with:
 
@@ -154,13 +154,13 @@ Next, `import :Point;` shows how to import a module partition. The `import` stat
 
 Next, the code exports the definition of `struct Rectangle` and declarations for some functions that return various properties of the rectangle. The `export` keyword indicates whether to make what it precedes visible to consumers of the module. It's used to make the functions `area`, `height`, and `width` visible outside of the module.
 
-All definitions and declarations in a module partition are visible to the importing module unit whether they have the `export` keyword or not. The `export` keyword governs whether the definition, declaration, or typedef will be visible outside of the module when you export the partition in the primary module interface.
+All definitions and declarations in a module partition are visible to the importing module unit whether they have the `export` keyword or not. The `export` keyword governs whether the definition, declaration, or typedef is visible outside of the module when you export the partition in the primary module interface.
 
 Names are made visible to consumers of a module in several ways:
 
 - Put the keyword `export` in front of each type, function, and so on, that you want to export.
 - If you put `export` in front of a namespace, for example `export namespace N { ... }`, everything defined within the braces is exported. But if elsewhere in the module you define `namespace N { struct S {...};}`, then `struct S` isn't available to consumers of the module. It's not available because that namespace declaration isn't prefaced by `export`, even though there's another namespace with the same name that is.
-- If a type, function, and so on, shouldn't be exported, omit the `export` keyword. It will be visible to other files that are part of the module, but not to importers of the module.
+- If a type, function, and so on, shouldn't be exported, omit the `export` keyword. It is visible to other files that are part of the module, but not to importers of the module.
 - Use `module :private;` to mark the beginning of the private module partition. The private module partition is a section of the module where declarations are only visible to that file. They aren't visible to files that import this module or to other files that are part of this module. Think of it as a section that is static local to the file. This section is visible only within the file.
 - To make an imported module or module partition visible, use `export import`. An example is shown in the next section.
 
@@ -177,11 +177,11 @@ export import :Point; // bring in the Point partition, and export it to consumer
 export import :Rectangle; // bring in the Rectangle partition, and export it to consumers of this module
 ```
 
-The two lines that begin with `export import` are new here. When combined like this, these two keywords instruct the compiler to import the specified module and make it visible to consumers of this module. In this case, the colon (`:`) in the module name indicates that we are importing a module partition.
+The two lines that begin with `export import` are new here. When combined like this, these two keywords instruct the compiler to import the specified module and make it visible to consumers of this module. In this case, the colon (`:`) in the module name indicates that we're importing a module partition.
 
 The imported names don't include the full module name. For example, the `:Point` partition was declared as `export module BasicPlane.Figures:Point`. Yet here we're importing `:Point`. Because we're in the primary module interface file for the module `BasicPlane.Figures`, the module name is implied, and only the partition name is specified.
 
-So far, we've defined the primary module interface, which exposes the API surface we want to make available. But we've only declared, not defined, `area()`, `height()`, or `width()`. We'll do that next by creating a module implementation file.
+So far, we've defined the primary module interface, which exposes the API surface we want to make available. But we've only declared, not defined, `area()`, `height()`, or `width()`. We do that next by creating a module implementation file.
 
 ## Create a module unit implementation file
 
@@ -217,7 +217,7 @@ Anything you declare within an implementation unit is only visible to the module
 
 ## Import the module
 
-Now we'll make use of the module we've defined. Open the *`ModulesTutorial.cpp`* file. It was created automatically as part of the project. It currently contains the function `main()`. Replace its contents with:
+Now we make use of the module we've defined. Open the *`ModulesTutorial.cpp`* file. It was created automatically as part of the project. It currently contains the function `main()`. Replace its contents with:
 
 ```cpp
 #include <iostream>
@@ -250,7 +250,7 @@ Let's now look in more detail at the various module files.
 
 ### Primary module interface
 
-A module consists of one or more files. One of them defines the interface that importers will see. This file contains the *Primary module interface*. There can only be one primary module interface per module. As pointed out earlier, the exported module interface unit doesn't specify a module partition.
+A module consists of one or more files. One of them defines the interface that importers see. This file contains the *Primary module interface*. There can only be one primary module interface per module. As pointed out earlier, the exported module interface unit doesn't specify a module partition.
 
 It has an *`.ixx`* extension by default. However, you can treat a source file with any extension as a module interface file. To do so, set the **Compile As** property in the **Advanced** tab for the source file's properties page to **Compile As Module (/interface)**:
 
@@ -357,7 +357,7 @@ A module and the code that imports it must be compiled with the same compiler op
 - The name of the file that contains the module primary interface is generally the name of the module. For example, given the module name `BasicPlane.Figures`, the name of the file containing the primary interface would be named *`BasicPlane.Figures.ixx`*.
 - The name of a module partition file is generally `<primary-module-name>-<module-partition-name>` where the name of the module is followed by a hyphen ('-') and then the name of the partition. For example, *`BasicPlane.Figures-Rectangle.ixx`*
 
-If you're building from the command line and you use this naming convention for module partitions, then you won't have to explicitly add `/reference` for each module partition file. The compiler will look for them automatically based on the name of the module. The name of the compiled partition file (ending with an *`.ifc`* extension) is generated from the module name. Consider the module name `BasicPlane.Figures:Rectangle`: the compiler will anticipate that the corresponding compiled partition file for `Rectangle` is named `BasicPlane.Figures-Rectangle.ifc`. The compiler uses this naming scheme to make it easier to use module partitions by automatically finding the interface unit files for partitions.
+If you're building from the command line and you use this naming convention for module partitions, then you won't have to explicitly add `/reference` for each module partition file. The compiler looks for them automatically based on the name of the module. The name of the compiled partition file (ending with an *`.ifc`* extension) is generated from the module name. Consider the module name `BasicPlane.Figures:Rectangle`: the compiler anticipates that the corresponding compiled partition file for `Rectangle` is named `BasicPlane.Figures-Rectangle.ifc`. The compiler uses this naming scheme to make it easier to use module partitions by automatically finding the interface unit files for partitions.
 
 You can name them using your own convention. But then you'll need to specify corresponding [`/reference`](../build/reference/module-reference.md) arguments to the command-line compiler.
 
@@ -371,7 +371,7 @@ Module partitions make it easier to logically factor a large module. They can be
 
 ## Summary
 
-In this tutorial, you've been introduced to the basics of C++20 modules. You've created a primary module interface, defined a module partition, and built a module implementation file.
+In this tutorial, you were introduced to the basics of C++20 modules. You've created a primary module interface, defined a module partition, and built a module implementation file.
 
 ## See also
 

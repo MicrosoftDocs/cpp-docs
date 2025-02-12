@@ -19,7 +19,7 @@ module ModuleA;
 
 ## `export`
 
-Use an **`export module`** declaration for the module's primary interface file, which should have an extension *`.ixx`* by default. If you want to use a different extension, you'll need to use the [/interface](../build/reference/interface.md) switch to compile it as a module interface.
+Use an **`export module`** declaration for the module's primary interface file, which should have an extension *`.ixx`* by default. If you want to use a different extension, use the [/interface](../build/reference/interface.md) switch to compile it as a module interface.
 
 ```cpp
 export module ModuleA;

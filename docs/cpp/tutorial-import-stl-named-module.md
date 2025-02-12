@@ -39,7 +39,7 @@ Because named modules don't expose macros, macros like `assert`, `errno`, `offse
 
 ## About C++ modules
 
-Header files are how declarations and definitions have been shared between source files in C++. Prior to standard library modules, you'd include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are defined. They also slow compilation because they're reprocessed by every source file that includes them.
+Header files are how declarations and definitions have been shared between source files in C++. Before standard library modules, you'd include the part of the standard library you needed with a directive like `#include <vector>`. Header files are fragile and difficult to compose because their semantics may change depending on the order you include them, or whether certain macros are defined. They also slow compilation because they're reprocessed by every source file that includes them.
 
 C++20 introduces a modern alternative called *modules*. In C++23, we were able to capitalize on module support to introduce named modules to represent the standard library.
 
@@ -55,7 +55,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
 ### Example: How to build and import `std`
 
-1. Open a x86 Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 version 17.5 or above. You'll get errors if you use the wrong version of the prompt. The examples used in this tutorial are for the CMD shell.
+1. Open a x86 Native Tools Command Prompt for VS: from the Windows **Start** menu, type *x86 native* and the prompt should appear in the list of apps. Ensure that the prompt is for Visual Studio 2022 version 17.5 or above. You get errors if you use the wrong version of the prompt. The examples used in this tutorial are for the CMD shell.
 1. Create a directory, such as `%USERPROFILE%\source\repos\STLModules`, and make it the current directory. If you choose a directory that you don't have write access to, you'll get errors during compilation.
 1. Compile the `std` named module with the following command:
 

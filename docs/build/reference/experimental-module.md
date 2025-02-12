@@ -17,7 +17,7 @@ Enables compiler support for an experimental form of C++ Standard modules. This 
 
 Although you can use this switch to use the older experimental named modules, we recommend that you use the the new, standardized, way of consuming the C++ Standard Library as modules described in [Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md).
 
-This compiler switch is available starting in Visual Studio 2015 Update 1. Ensure that **C++ Modules for v143 build tools (x64/x86 - experimental)** in selected the VS Installer. It's available in the **Individual components** tab of the installer. Search for **experimental** to see the option. For more information, see [Install C++ support in Visual Studio](../install/install-visual-cpp.md).
+This compiler switch is available starting in Visual Studio 2015 Update 1. Ensure that **C++ Modules for v143 build tools (x64/x86 - experimental)** in selected the VS Installer. It's available in the **Individual components** tab of the installer. Search for **experimental** to see the option. For more information, see [Install C and C++ support in Visual Studio](../vscpp-step-0-installation.md).
 
 | Version  | Status |
 |---|---|
