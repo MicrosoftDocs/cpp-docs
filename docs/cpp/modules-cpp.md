@@ -20,7 +20,7 @@ Starting with Visual Studio 2022 version 17.5, importing the Standard Library as
 
 A single-partition module is a module that consists of a single source file. The module interface and implementation are in the same file.
 
-The following single-partition module example shows a simple module definition in a source file called *`Example.ixx`*. The *`.ixx`* extension is required for module interface files in Visual Studio. In this example, the interface file contains both the function definition and the declaration. You can also place the definitions in one or more separate module implementation files, as shown in a later example, but this is an example of a single-partition module.
+The following single-partition module example shows a simple module definition in a source file called *`Example.ixx`*. The *`.ixx`* extension is the default extension for module interface files in Visual Studio. If you want to use a different extension, use the [/interface](../build/reference/interface.md) switch to compile it as a module interface. In this example, the interface file contains both the function definition and the declaration. You can also place the definitions in one or more separate module implementation files, as shown in a later example, but this is an example of a single-partition module.
 
 The `export module Example;` statement indicates that this file is the primary interface for a module called `Example`. The **`export`** modifier before `int f()` indicates that this function is visible when another program or module imports `Example`:
 
