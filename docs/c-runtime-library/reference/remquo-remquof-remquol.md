@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["remquof", "remquol", "remquo"]
 helpviewer_keywords: ["remquol function", "remquof function", "remquo function"]
-ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
 ---
 # `remquo`, `remquof`, `remquol`
 
@@ -43,7 +42,7 @@ A pointer to an integer to store a value that has the sign and approximate magni
 
 ## Remarks
 
-The **`remquo`** function calculates the floating-point remainder `f` of *`x`* / *`y`* such that *`x`* = `n` \* *`y`* + `f`*, where `n` is an integer, `f` has the same sign as *`x`*, and the absolute value of `f` is less than the absolute value of *`y`*.
+The **`remquo`** function calculates the floating-point remainder `f` of *`x`* / *`y`* such that *`x`* = `n` \* *`y`* + *`f`*, where `n` is an integer, `f` has the same sign as *`x`*, and the absolute value of `f` is less than the absolute value of *`y`*.
 
 C++ allows overloading, so you can call overloads of **`remquo`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **`remquo`** always takes two **`double`** arguments and returns a **`double`**.
 
