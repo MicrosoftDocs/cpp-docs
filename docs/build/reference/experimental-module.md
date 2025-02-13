@@ -7,7 +7,7 @@ helpviewer_keywords: ["module", "/experimental:module", "Enable module support"]
 ---
 # `/experimental:module` (Enable experimental module support)
 
-Enables compiler support for an experimental form of C++ Standard modules. This option is obsolete in Visual Studio 2019 version 16.11 and later.
+Enables compiler support for Microsoft's experimental form of C++ Standard modules. This option is obsolete in Visual Studio 2019 version 16.11 and later.
 
 ## Syntax
 
@@ -15,13 +15,13 @@ Enables compiler support for an experimental form of C++ Standard modules. This 
 
 ## Remarks
 
-Although you can use this switch to use the older experimental named modules, we recommend that you use the the new, standardized, way of consuming the C++ Standard Library as modules described in [Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md).
+ This switch was for the time before the new, standardized, way of consuming the C++ Standard Library as modules described in [Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md) was available. Although you can use this switch to use the older experimental named modules, we recommend that you use the new, standardized, way of consuming the C++ Standard Library as modules described in [Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md).
 
-This compiler switch is available starting in Visual Studio 2015 Update 1. Ensure that **C++ Modules for v143 build tools (x64/x86 - experimental)** in selected the VS Installer. It's available in the **Individual components** tab of the installer. Search for **experimental** to see the option. For more information, see [Install C and C++ support in Visual Studio](../vscpp-step-0-installation.md).
+This compiler became available starting in Visual Studio 2015 Update 1. Ensure that **C++ Modules for v143 build tools (x64/x86 - experimental)** in selected the VS Installer. It's available in the **Individual components** tab of the installer. Search for **experimental** to see the option. For more information, see [Install C and C++ support in Visual Studio](../vscpp-step-0-installation.md).
 
 | Version  | Status |
 |---|---|
-| Visual Studio 2015 Update 1  | `/experimental:module` is available. |
+| Visual Studio 2015 Update 1  | `/experimental:module` introduced. |
 | Visual Studio 2019 version 16.10 | C++20 modules support is feature complete. |
 | Visual Studio 2019 16.11 and earlier | Enable experimental modules support using **`/experimental:module`** along with [`/std:c++latest`](std-specify-language-standard-version.md). |
 | Visual Studio 2019 version 16.11 and later | Modules support is enabled automatically with **`/std:c++20`** or later, or **`/std:c++latest`**. Use **`/experimental:module-`** to disable experimental module support. |
