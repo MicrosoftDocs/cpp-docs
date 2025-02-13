@@ -764,7 +764,7 @@ Specifies the bounding rectangle (in logical units). You can pass either a `LPRE
 *`ptStart`*\
 Specifies the x- and y-coordinates of the point that defines the chord's starting point (in logical units). This point doesn't have to lie exactly on the chord. You can pass either a `POINT` structure or a `CPoint` object for this parameter.
 
-*`ptEnd*`\
+*`ptEnd`*\
 Specifies the x- and y-coordinates of the point that defines the chord's ending point (in logical units). This point doesn't have to lie exactly on the chord. You can pass either a [`POINT`](/windows/win32/api/windef/ns-windef-point) structure or a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object for this parameter.
 
 ### Return Value
@@ -3145,7 +3145,7 @@ The device context must contain a closed path. The points of the path are return
 
 ## <a name="getpixel"></a> `CDC::GetPixel`
 
-Retrieves the RGB color value of the pixel at the point specified by *`x`* and *`y*`.
+Retrieves the RGB color value of the pixel at the point specified by *`x`* and *`y`*.
 
 ```
 COLORREF GetPixel(
