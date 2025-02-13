@@ -1,6 +1,6 @@
 ---
 title: "module, import, export"
-ms.date: 02/12/2025
+ms.date: 02/13/2025
 f1_keywords: ["module_cpp", "import_cpp", "export_cpp"]
 helpviewer_keywords: ["modules [C++]", "modules [C++], import", "modules [C++], export"]
 description: Use import and export declarations to access and to publish types and functions defined in the specified module.
@@ -19,7 +19,7 @@ module ModuleA;
 
 ## `export`
 
-Use an **`export module`** declaration for the module's primary interface file, which should have an extension *`.ixx`* by default. If you want to use a different extension, use the [/interface](../build/reference/interface.md) switch to compile it as a module interface.
+Use an **`export module`** declaration for the module's primary interface file, which has an extension *`.ixx`* by default. If you want to use a different extension, use the [/interface](../build/reference/interface.md) switch to compile it as a module interface.
 
 ```cpp
 export module ModuleA;

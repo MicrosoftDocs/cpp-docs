@@ -1,6 +1,6 @@
 ---
 title: "Named modules tutorial in C++"
-ms.date: 02/12/2025
+ms.date: 02/13/2025
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
@@ -24,7 +24,7 @@ This tutorial requires Visual Studio 2022 17.1.0 or later.
 
 ## What are C++ modules
 
-Header files are how declarations and definitions are shared between source files in C++. Header files are fragile and difficult to compose. They may compile differently depending on the order you include them in or on the macros that are or aren't defined. They can slow compilation time because they're reprocessed for each source file that includes them.
+Header files are how declarations and definitions are shared between source files in C++. Header files are fragile and may compile differently depending on the order you include them in or on the macros that are or aren't defined. They can slow compilation time because they're reprocessed for each source file that includes them.
 
 C++20 introduces *modules* as a modern approach to componentizing C++ programs.
 
@@ -48,7 +48,7 @@ Your code can consume modules in the same project, or any referenced projects, a
 
 ## Create the project
 
-As we build a simple project, we look at various aspects of modules. The project implements an API using a module instead of a header file.
+The following project implements an API using a module instead of a header file.
 
 In Visual Studio 2022 or later, choose **Create a new project** and then the **Console App** (for C++) project type. If this project type isn't available, you may not have selected the **Desktop development with C++** workload when you installed Visual Studio. You can use the Visual Studio Installer to add the C++ workload.
 
@@ -92,11 +92,11 @@ This name is also where the "named" in "named module" comes from. The files that
 
 We should talk about the API we'll implement for a moment before going further. It impacts the choices we make next. The API represents different shapes. We're only going to provide a couple shapes in this example: `Point` and `Rectangle`. `Point` is meant to be used as part of more complex shapes such as `Rectangle`.
 
-To illustrate some features of modules, we factor this API into pieces. One piece is the `Point` API. The other part is `Rectangle`. Imagine that this API will grow into something more complex. The division is useful for separating concerns or easing code maintenance.
+To illustrate some features of modules, we factor this API into parts. One part is the `Point` API. The other part is `Rectangle`. Imagine that this API could grow into something more complex. The division is useful for separating concerns or easing code maintenance.
 
 So far, we've created the primary module interface that will expose this API. Let's now build the `Point` API. We want it to be part of this module. For reasons of logical organization, and potential build efficiency, we want to make the code for this part of the API a *module partition* file.
 
-Module partitions are useful for dividing the module implementation into manageable pieces. A module partition file is a piece, or component, of a module. What makes it unique is that it can be treated as an individual piece of the module--but only within the module. Module partitions can't be consumed outside of a module.
+Module partitions are useful for dividing the module implementation into manageable parts. A module partition file is part of a module. What makes it unique is that it can be treated as an individual parts of the module--but only within the module. Module partitions can't be consumed outside of a module.
 
 When you import a partition into the primary module, all its declarations become visible to the primary module regardless of whether they're exported. Partitions can be imported into any partition interface, primary module interface, or module unit that belongs to the named module.
 
@@ -160,7 +160,7 @@ Names are made visible to consumers of a module in several ways:
 
 - Put the keyword `export` in front of each type, function, and so on, that you want to export.
 - If you put `export` in front of a namespace, for example `export namespace N { ... }`, everything defined within the braces is exported. But if elsewhere in the module you define `namespace N { struct S {...};}`, then `struct S` isn't available to consumers of the module. It's not available because that namespace declaration isn't prefaced by `export`, even though there's another namespace with the same name that is.
-- If a type, function, and so on, shouldn't be exported, omit the `export` keyword. It is visible to other files that are part of the module, but not to importers of the module.
+- If a type, function, and so on, shouldn't be exported, omit the `export` keyword. It's visible to other files that are part of the module, but not to importers of the module.
 - Use `module :private;` to mark the beginning of the private module partition. The private module partition is a section of the module where declarations are only visible to that file. They aren't visible to files that import this module or to other files that are part of this module. Think of it as a section that is static local to the file. This section is visible only within the file.
 - To make an imported module or module partition visible, use `export import`. An example is shown in the next section.
 
@@ -235,7 +235,7 @@ int main()
 }
 ```
 
-The statement `import BasicPlane.Figures;` makes all the exported functions and types from the `BasicPlane.Figures` module visible to this file. It should come after any `#include` directives.
+The statement `import BasicPlane.Figures;` makes all the exported functions and types from the `BasicPlane.Figures` module visible to this file. It comes after any `#include` directives.
 
 The app then uses the types and functions from the module to output the area and width of the defined rectangle:
 
@@ -298,7 +298,7 @@ For a more in-depth look at module syntax, see [Modules](modules-cpp.md).
 
 Module implementation units belong to a named module. The named module they belong to is indicated by the `module [module-name]` statement in the file. Module implementation units provide implementation details that, for code hygiene or other reasons, you don't want to put in the primary module interface or in a module partition file.
 
-Module implementation units are useful for breaking up a large module into smaller pieces, which can result in faster build times. This technique is covered briefly in the [Best practices](#module-best-practices) section.
+Module implementation units are useful for breaking up a large module into smaller parts, which can result in faster build times. This technique is covered briefly in the [Best practices](#module-best-practices) section.
 
 Module implementation unit files have a *`.cpp`* extension. The basic outline of a module implementation unit file is:
 
@@ -314,7 +314,7 @@ module [module-name]; // required. Identifies which named module this implementa
 
 ### Module partition files
 
-Module partitions provide a way to componentize a module into different pieces, or *partitions*. Module partitions are meant to be imported only in files that are part of the named module. They can't be imported outside of the named module.
+Module partitions provide a way to componentize a module into different parts, or *partitions*. Module partitions are meant to be imported only in files that are part of the named module. They can't be imported outside of the named module.
 
 A partition has an interface file, and zero or more implementation files. A module partition shares ownership of all the declarations in the entire module.
 
@@ -357,7 +357,7 @@ A module and the code that imports it must be compiled with the same compiler op
 - The name of the file that contains the module primary interface is generally the name of the module. For example, given the module name `BasicPlane.Figures`, the name of the file containing the primary interface would be named *`BasicPlane.Figures.ixx`*.
 - The name of a module partition file is generally `<primary-module-name>-<module-partition-name>` where the name of the module is followed by a hyphen ('-') and then the name of the partition. For example, *`BasicPlane.Figures-Rectangle.ixx`*
 
-If you're building from the command line and you use this naming convention for module partitions, then you won't have to explicitly add `/reference` for each module partition file. The compiler looks for them automatically based on the name of the module. The name of the compiled partition file (ending with an *`.ifc`* extension) is generated from the module name. Consider the module name `BasicPlane.Figures:Rectangle`: the compiler anticipates that the corresponding compiled partition file for `Rectangle` is named `BasicPlane.Figures-Rectangle.ifc`. The compiler uses this naming scheme to make it easier to use module partitions by automatically finding the interface unit files for partitions.
+If you're building from the command line and you use this naming convention for module partitions, then you won't have to explicitly add `/reference` for each module partition file. The compiler looks for them automatically based on the name of the module. The name of the compiled partition file is generated from the module name and ends in *`.ifc`*. Consider the module name `BasicPlane.Figures:Rectangle`: the compiler anticipates that the corresponding compiled partition file for `Rectangle` is named `BasicPlane.Figures-Rectangle.ifc`. The compiler uses this naming scheme to make it easier to use module partitions by automatically finding the interface unit files for partitions.
 
 You can name them using your own convention. But then you'll need to specify corresponding [`/reference`](../build/reference/module-reference.md) arguments to the command-line compiler.
 
@@ -371,7 +371,7 @@ Module partitions make it easier to logically factor a large module. They can be
 
 ## Summary
 
-In this tutorial, you were introduced to the basics of C++20 modules. You've created a primary module interface, defined a module partition, and built a module implementation file.
+In this tutorial, you were introduced to the basics of C++20 modules by creating a primary module interface, defined a module partition, and built a module implementation file.
 
 ## See also
 
