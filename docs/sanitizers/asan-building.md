@@ -7,7 +7,7 @@ helpviewer_keywords: ["ASan reference", "AddressSanitizer reference", "Address S
 ---
 # AddressSanitizer language, build, and debugging reference
 
-The sections in this article describe the AddressSanitizer language specification, compiler options, and linker options. They also describe the options that control Visual Studio debugger integration specific to the AddressSanitizer.
+This article describe the AddressSanitizer language specification, compiler options, linker options, and the options that control Visual Studio debugger integration specific to the AddressSanitizer.
 
 For more information on the AddressSanitizer runtime, see the [runtime reference](./asan-runtime.md). It includes information on intercepted functions and how to hook custom allocators. For more information on saving crash dumps from AddressSanitizer failures, see the [crash dump reference](./asan-offline-crash-dumps.md).
 
@@ -108,11 +108,13 @@ Stack frames are allocated in the heap and remain after functions return. The ru
 
 ### ASan intrinsic compatibility library
 
-When building with ASan, the compiler replaces intrinsic functions (like, `memset`) with function calls provided by the ASan runtime library (like, `__asan_memset`) that will complete the same operation while also providing the memory safety checks characteristic of ASan. For user-mode ASan, the compiler and runtime are updated in lock-step as both are provided by Visual Studio. [Kernel-mode ASan (KASan)](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/kasan) is part of the Windows OS, so will update on a different cadence than the compiler. To avoid any issues with new compilers using new intrinsics that the installed version of KASan does not support, there is a compatibility library (`asan_compat.lib`) that can be linked to in order to avoid link-time issues. When using `asan_compat.lib`, the program will behave as though the unsupported ASan intrinsics are not in use. Linking with a newer runtime library that supports the new ASan intrinsics will supercede the versions provided by `asan_compat.lib`. This decision is made at link time, so it is imperative to link with the KASan library provided by the Windows SDK that matches the OS version you are targeting.
+When building with ASan, the compiler replaces intrinsic functions (like `memset`) with function calls provided by the ASan runtime library (like `__asan_memset`) that complete the same operation but also provide memory safety checks. For user-mode ASan, the compiler and runtime are updated together because Visual Studio provides both. [Kernel-mode ASan (KASan)](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/kasan) is part of the Windows OS, so it updates on a different cadence than the compiler. To avoid issues with a new compiler using new intrinsics that the installed version of KASan doesn't support, link the compatibility library (`asan_compat.lib`) to avoid link-time issues. When using `asan_compat.lib`, the program will behave as though the unsupported ASan intrinsics aren't used. Linking with a newer runtime library that supports the new ASan intrinsics supercedes the versions provided by `asan_compat.lib`. This decision is made at link time, so it is imperative to link with the KASan library provided by the Windows SDK that matches the OS version you are targeting.
 
-To include this compatibility library as a default library, use the **`/fsanitize-address-asan-compat-lib`** compiler option. This option is automatically enabled when using **`/fsanitize=kernel-address`**. To opt-out of this compatibility library, use the **`/fno-sanitize-address-asan-compat-lib`** compiler option. These options are supported in Visual Studio 2022 17.14 Preview 2 and later.
+The following options are supported in Visual Studio 2022 17.14 Preview 2 and later:
+- To include this compatibility library as a default library, use the **`/fsanitize-address-asan-compat-lib`** compiler option. This option is automatically enabled when using **`/fsanitize=kernel-address`**.\
+- To opt-out of this compatibility library, use the **`/fno-sanitize-address-asan-compat-lib`** compiler option.
 
-While this option can be used to link a newer compiler with an older user-mode ASan runtime, this configuration is not currently supported.
+Using **`/fsanitize-address-asan-compat-lib`** to link a newer compiler with an older user-mode ASan runtime isn't currently supported.
 
 ## <a name="linker"></a> Linker
 
