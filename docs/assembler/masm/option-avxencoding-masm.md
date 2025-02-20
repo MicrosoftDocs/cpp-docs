@@ -1,9 +1,9 @@
 ---
 title: "OPTION AVXENCODING"
+description: Describes how to select the preferred encoding of AVX instructions when more than one possibility will work
 ms.date: "10/06/2020"
 f1_keywords: ["avxencoding"]
 helpviewer_keywords: ["OPTION AVXENCODING directive"]
-description: Describes how to select the preferred encoding of AVX instructions when more than one possibility will work
 ---
 # OPTION AVXENCODING
 
@@ -47,7 +47,7 @@ The **`OPTION AVXENCODING`** directive is available in Visual Studio 2019 versio
 
 ### Example
 
-This example uses `VPDPBUSD` and `VPMADDWD` instructions to illustrate how the **`AVXENCODING`** option works. `VPDPBUSD` was first defined to be encoded only with `EVEX`, and was later extended with a VEX-encoded form for platforms without AVX-512 support, while `VPMADDWD` was AVX and extended to AVX-512. The listing output from assembling the example shows how changing the **`AVXENCODING`** mode affects the object code generated for each instruction. The prefix for each instruction ends at the '/".
+This example uses `VPDPBUSD` and `VPMADDWD` instructions to illustrate how the **`AVXENCODING`** option works. `VPDPBUSD` was first defined to be encoded only with `EVEX`, and was later extended with a VEX-encoded form for platforms without AVX-512 support, while `VPMADDWD` was AVX and extended to AVX-512. The listing output from assembling the example shows how changing the **`AVXENCODING`** mode affects the object code generated for each instruction. The prefix for each instruction ends at the "/".
 
 ```asm
  00000000  62 F2 6D 08/ 50        vpdpbusd xmm1, xmm2, xmm3
