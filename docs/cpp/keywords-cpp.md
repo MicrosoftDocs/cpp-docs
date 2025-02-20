@@ -4,7 +4,6 @@ description: "Lists the C++ standard language keywords, Microsoft-specific keywo
 ms.custom: "index-page"
 ms.date: 07/25/2020
 helpviewer_keywords: ["keywords [C++]"]
-ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
 ---
 # Keywords (C++)
 
@@ -79,7 +78,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
         [`private`](private-cpp.md)\
         [`protected`](protected-cpp.md)\
         [`public`](public-cpp.md)\
-        [`register`](storage-classes-cpp.md#register)
+        [`register`](storage-classes-cpp.md#register)\
         [`reinterpret_cast`](reinterpret-cast-operator.md)\
         **`requires`** <sup>c</sup>\
         [`return`](return-statement-cpp.md)\
@@ -287,5 +286,5 @@ These identifiers are extended attributes for the **`__declspec`** modifier. The
 
 ## See also
 
-[Lexical conventions](lexical-conventions.md)<br/>
+[Lexical conventions](lexical-conventions.md)\
 [C++ built-in operators, precedence, and associativity](cpp-built-in-operators-precedence-and-associativity.md)

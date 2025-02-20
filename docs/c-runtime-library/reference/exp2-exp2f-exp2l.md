@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["exp2", "math/exp2", "exp2f", "math/exp2f", "exp2l", "math/exp2l"]
 helpviewer_keywords: ["exp2 function", "exp2f function", "exp2l function"]
-ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
 ---
 # `exp2`, `exp2f`, `exp2l`
 
@@ -79,5 +78,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[`exp`, `expf`, `expl`](exp-expf.md)
+[`exp`, `expf`, `expl`](exp-expf.md)\
 [`log2`, `log2f`, `log2l`](log2-log2f-log2l.md)

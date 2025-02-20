@@ -50,10 +50,10 @@ Along with the inherited members from its [Activity](activity.md) base class, th
 
 ### Functions
 
-[ToolPath](#tool-path)
-[ToolVersion](#tool-version)
-[ToolVersionString](#tool-version-string)
-[Type](#type)
+[ToolPath](#tool-path)\
+[ToolVersion](#tool-version)\
+[ToolVersionString](#tool-version-string)\
+[Type](#type)\
 [WorkingDirectory](#working-directory)
 
 ## <a name="invocation"></a> Invocation
