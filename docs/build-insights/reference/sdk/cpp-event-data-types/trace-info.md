@@ -47,10 +47,10 @@ If you don't want to convert ticks yourself, the `TraceInfo` class provides a me
 
 ### Functions
 
-[Duration](#duration)
-[LogicalProcessorCount](#logical-processor-count)
-[StartTimestamp](#start-timestamp)
-[StopTimestamp](#stop-timestamp)
+[Duration](#duration)\
+[LogicalProcessorCount](#logical-processor-count)\
+[StartTimestamp](#start-timestamp)\
+[StopTimestamp](#stop-timestamp)\
 [TickFrequency](#tick-frequency)
 
 ## <a name="duration"></a> Duration

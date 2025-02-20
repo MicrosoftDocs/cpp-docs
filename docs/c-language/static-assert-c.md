@@ -78,5 +78,5 @@ Windows SDK 10.0.20348.0 (version 2104) or later. For more information on instal
 ## See also
 
 [`_STATIC_ASSERT` Macro](../c-runtime-library/reference/static-assert-macro.md)\
-[`assert` macro and `_assert` and `_wassert` functions](../c-runtime-library/reference/assert-macro-assert-wassert.md)
+[`assert` macro and `_assert` and `_wassert` functions](../c-runtime-library/reference/assert-macro-assert-wassert.md)\
 [`/std` (Specify language standard version)](../build/reference/std-specify-language-standard-version.md)
