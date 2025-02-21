@@ -42,6 +42,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1025](fatal-error-c1025-c1115.md) | too many nested lambdas |
 | [Fatal error C1026](fatal-error-c1026.md) | parser stack overflow, program too complex |
 | Fatal error C1027 | **(Obsolete)** Inconsistent values for /Ym between creation and use of precompiled header |
+| Fatal error C1028 | missing IFC for analysis.  Please rebuild *module* '*ifc filename*' with `/analyze`. |
 | Fatal error C1030 | WMMX types not allowed in the function signature by the calling convention |
 | Fatal error C1032 | `__eabi` requires VFP code generation (`/QRfpe-`) |
 | [Fatal error C1033](fatal-error-c1033.md) | cannot open program database '*file*' |
@@ -101,6 +102,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1092](fatal-error-c1092.md) | Edit and Continue does not support changes to data types; build required |
 | [Fatal error C1093](fatal-error-c1093.md) | API call '*function*' failed '*HRESULT*': '*description*' |
 | [Fatal error C1094](fatal-error-c1094.md) | '`-Zm`*number*': command line option is inconsistent with value used to build precompiled header ('`-Zm`*number*') |
+| Fatal error C1095 | Failed to locate a free memory range. Use `/Yb` to specify a base address. |
 | [Fatal error C1098](fatal-error-c1098.md) | Version mismatch with Edit and Continue engine |
 | [Fatal error C1099](fatal-error-c1099.md) | Edit and Continue engine terminating compile |
 | [Fatal error C1100](fatal-error-c1100.md) | unable to initialize OLE: *error* |
