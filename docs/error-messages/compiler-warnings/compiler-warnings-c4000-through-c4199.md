@@ -88,7 +88,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1) C4097](compiler-warning-level-1-c4097.md)|expected pragma parameter to be '`restore`' or '`off`'|
 |[Compiler warning (level 1) C4098](compiler-warning-level-1-c4098.md)|'*function*': '`void`' function returning a value|
 |[Compiler warning (level 2) C4099](compiler-warning-level-2-c4099.md)|'*identifier*': type name first seen using '*object_type1*' now seen using '*object_type2*'|
-|[Compiler warning (level 4) C4100](compiler-warning-level-4-c4100.md)|'*identifier*': unreferenced formal parameter|
+|[Compiler warning (level 4) C4100](compiler-warning-level-4-c4100.md)|'*identifier*': unreferenced parameter|
 |[Compiler warning (level 3 and level 4) C4101](compiler-warning-level-3-c4101.md)|'*identifier*': unreferenced local variable|
 |[Compiler warning (level 3) C4102](compiler-warning-level-3-c4102.md)|'*label*': unreferenced label|
 |[Compiler warning (level 1) C4103](compiler-warning-level-1-c4103.md)|alignment changed after including header, may be due to missing `#pragma pack(pop)`|
@@ -154,7 +154,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1) C4187](compiler-warning-level-1-c4187.md)|`#import` attributes '*attribute1*' and '*attribute2*' are incompatible; both ignored|
 |Compiler warning (level 1) C4188|constant expression is not integral|
 |[Compiler warning (level 3 and level 4) C4189](compiler-warning-level-4-c4189.md)|'*identifier*': local variable is initialized but not referenced|
-|[Compiler warning (level 1) C4190](compiler-warning-level-1-c4190.md)|'*identifier1*' has C-linkage specified, but returns UDT '*identifier2*' which is incompatible with C|
+|[Compiler warning (level 1) C4190](compiler-warning-level-1-c4190.md)|'*identifier1*' has C-linkage specified, but returns '*identifier2*' which is incompatible with C|
 |[Compiler warning (level 3, off) C4191](compiler-warning-level-3-c4191.md)|'*operation*': unsafe conversion from '*type_of_expression*' to '*type_required*'<br/>Making a function call using the resulting pointer may cause your program to fail|
 |[Compiler warning (level 3) C4192](compiler-warning-level-3-c4192.md)|automatically excluding '*identifier*' while importing type library '*library*'|
 |Compiler warning (level 3) C4193|`#pragma warning(pop)`: no matching '`#pragma warning(push)`'|
