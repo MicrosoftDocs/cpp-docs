@@ -1,7 +1,7 @@
 ---
 title: "MSVC Linker options"
 description: "A list of the options supported by the Microsoft LINK linker."
-ms.date: 06/10/2024
+ms.date: 02/18/2025
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ---
@@ -9,14 +9,14 @@ helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries
 
 LINK.exe links Common Object File Format (COFF) object files and libraries to create an executable (EXE) file or a dynamic-link library (DLL).
 
-The following table lists options for LINK.exe. For more information about LINK, see:
+The following table lists options for `LINK.exe`. For more information about LINK, see:
 
 - [Compiler-controlled LINK options](compiler-controlled-link-options.md)
 - [LINK input files](link-input-files.md)
 - [LINK output](link-output.md)
 - [Reserved words](reserved-words.md)
 
-On the command line, linker options aren't case-sensitive; for example, `/base` and `/BASE` mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
+Linker options aren't case-sensitive; for example, `/base` and `/BASE` mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
 
 You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to specify some linker options.
 
@@ -42,6 +42,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/CLRTHREADATTRIBUTE`](clrthreadattribute-set-clr-thread-attribute.md) | Specifies the threading attribute to apply to the entry point of your CLR program. |
 | [`/CLRUNMANAGEDCODECHECK`](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md) | Specifies whether the linker applies the `SuppressUnmanagedCodeSecurity` attribute to linker-generated P/Invoke stubs that call from managed code into native DLLs. |
 | [`/DEBUG`](debug-generate-debug-info.md) | Creates debugging information. |
+| [`/DEBUGDEOPT`](debugdeopt-dynamic-debugging.md) | Enable C++ Dynamic Debugging to debug optimized code as if it were deoptimized. |
 | [`/DEBUGTYPE`](debugtype-debug-info-options.md) | Specifies which data to include in debugging information. |
 | [`/DEF`](def-specify-module-definition-file.md) | Passes a module-definition (.def) file to the linker. |
 | [`/DEFAULTLIB`](defaultlib-specify-default-library.md) | Searches the specified library when external references are resolved. |
