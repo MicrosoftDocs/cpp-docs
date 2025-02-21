@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler fatal errors C1001 through C1907"
 title: "Compiler fatal errors C1001 through C1907"
+description: "Learn more about: Compiler fatal errors C1001 through C1907"
 ms.date: 01/24/2025
 f1_keywords: ["C1006", "C1024", "C1027", "C1030", "C1032", "C1034", "C1036", "C1039", "C1040", "C1041", "C1042", "C1043", "C1044", "C1048", "C1056", "C1058", "C1059", "C1063", "C1069", "C1101", "C1102", "C1105", "C1110", "C1111", "C1112", "C1114", "C1118", "C1119", "C1127", "C1193", "C1194", "C1195", "C1198", "C1199", "C1203", "C1204", "C1212", "C1213", "C1214", "C1300", "C1301", "C1302", "C1303", "C1304", "C1306", "C1354", "C1355", "C1356", "C1357", "C1358", "C1384", "C1385", "C1451", "C1505", "C1507", "C1511", "C1604", "C1605", "C1859", "C1901", "C1906", "C1907"]
 helpviewer_keywords: ["C1006", "C1024", "C1027", "C1030", "C1032", "C1034", "C1036", "C1039", "C1040", "C1041", "C1042", "C1043", "C1044", "C1048", "C1056", "C1058", "C1059", "C1063", "C1069", "C1101", "C1102", "C1105", "C1110", "C1111", "C1112", "C1114", "C1118", "C1119", "C1127", "C1193", "C1194", "C1195", "C1198", "C1199", "C1203", "C1204", "C1212", "C1213", "C1214", "C1300", "C1301", "C1302", "C1303", "C1304", "C1306", "C1354", "C1355", "C1356", "C1357", "C1358", "C1384", "C1385", "C1451", "C1505", "C1507", "C1511", "C1604", "C1605", "C1859", "C1901", "C1906", "C1907"]
@@ -26,7 +26,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1009](fatal-error-c1009.md) | compiler limit: macros nested too deeply |
 | [Fatal error C1010](fatal-error-c1010.md) | unexpected end of file while looking for precompiled header. Did you forget to add '`#include <`*file*`>`' to your source? |
 | [Fatal error C1011](fatal-error-c1011.md) | cannot locate standard module interface. Did you install the library part of the C++ modules feature in VS setup? |
-| [Fatal error C1012](fatal-error-c1012.md) | unmatched parenthesis: missing '*character* |
+| [Fatal error C1012](fatal-error-c1012.md) | unmatched parenthesis: missing '*character*' |
 | [Fatal error C1013](fatal-error-c1013.md) | compiler limit: too many open parentheses |
 | [Fatal error C1014](fatal-error-c1014.md) | too many include files: depth = *number* |
 | [Fatal error C1015](fatal-error-c1015.md) | header-names '*header-name*' and '*header-name*' identify the same header and cannot be used as both `/headerUnit:quoted` and `/headerUnit:angle` arguments; please provide this header-name only once |

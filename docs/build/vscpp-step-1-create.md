@@ -81,7 +81,7 @@ Visual Studio now knows to build your project to run in a console window. Next, 
 
    ![View of the process to add a source file for HelloWorld.cpp.](media/vscpp-add-new-item.gif "Add a source file for HelloWorld.cpp")
 
-Visual studio creates a new, empty source code file and opens it in an editor window, ready to enter your source code.
+Visual Studio creates a new, empty source code file and opens it in an editor window, ready to enter your source code.
 
 [I ran into a problem.](#add-a-source-code-file-issues)
 
