@@ -111,6 +111,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1103](fatal-error-c1103.md) | fatal error importing progid: '*message*' |
 | [Fatal error C1104](fatal-error-c1104.md) | fatal error importing libid: '*message*' |
 | Fatal error C1105 | *message*: *HRESULT error* |
+| Fatal error C1106 | compiler limit: only *number* function parameters are allowed |
 | [Fatal error C1107](fatal-error-c1107.md) | could not find assembly '*assembly*': please specify the assembly search path using `/AI` or by setting the `LIBPATH` environment variable |
 | [Fatal error C1108](fatal-error-c1108.md) | unable to find DLL: '*file*' |
 | [Fatal error C1109](fatal-error-c1109.md) | unable to find '*symbol*' in DLL '*file*' |
@@ -154,6 +155,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Fatal error C1212 | Input file was modified by another process while building: '*filename*' |
 | Fatal error C1213 | Header units are unsupported without `/Zc:preprocessor` |
 | Fatal error C1214 | Modules conflict with non-standard behavior requested via '*option*' |
+| Fatal error C1215 | Cannot open file '*filename*' corresponding to warning set '`-W`*warning set*' |
 | Fatal error C1300 | error accessing program database *file* (*message*) |
 | Fatal error C1301 | error accessing program database *file*, invalid format, please delete and rebuild |
 | Fatal error C1302 | no profile data for module '*module*' in profile database '*file*' |
