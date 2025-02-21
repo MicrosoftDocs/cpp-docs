@@ -15,7 +15,7 @@ The articles in this section of the documentation explain a subset of the error 
 
 |Error|Message|
 |-----------|-------------|
-|[Compiler error C2100](compiler-error-c2100.md)|illegal indirection|
+|[Compiler error C2100](compiler-error-c2100.md)|you cannot dereference an operand of type '*type*'|
 |[Compiler error C2101](compiler-error-c2101.md)|'&' on constant|
 |[Compiler error C2102](compiler-error-c2102.md)|'&' requires l-value|
 |[Compiler error C2103](compiler-error-c2103.md)|'&' on register variable|
@@ -31,11 +31,11 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2113](compiler-error-c2113.md)|'-': pointer can only be subtracted from another pointer|
 |[Compiler error C2114](compiler-error-c2114.md)|'*operator*': pointer on left; needs integral value on right|
 |[Compiler error C2115](compiler-error-c2115.md)|'*operator*': incompatible types|
-|[Compiler error C2116](compiler-error-c2116.md)|function parameter lists differed|
+|[Compiler error C2116](compiler-error-c2116.md)|'*name*': function parameter lists do not match between declarations|
 |[Compiler error C2117](compiler-error-c2117.md)|'*identifier*': array bounds overflow|
 |[Compiler error C2118](compiler-error-c2118.md)|negative subscript|
 |Compiler error C2119|'*identifier*': the type for '*type*' cannot be deduced from an empty initializer|
-|[Compiler error C2120](compiler-error-c2120.md)|'void' illegal with all types|
+|[Compiler error C2120](compiler-error-c2120.md)|'`void`' cannot be combined with any other type specifier|
 |[Compiler error C2121](compiler-error-c2121.md)|'#': invalid character: possibly the result of a macro expansion|
 |[Compiler error C2122](compiler-error-c2122.md)|'*identifier*': prototype parameter in name list illegal|
 |Compiler error C2123|'*identifier*': alias templates cannot be explicitly or partially specialized|
@@ -50,7 +50,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2132](compiler-error-c2132.md)|syntax error: unexpected identifier|
 |[Compiler error C2133](compiler-error-c2133.md)|'*identifier*': unknown size|
 |[Compiler error C2134](compiler-error-c2134.md)|'*function*': call does not result in a constant expression|
-|[Compiler error C2135](compiler-error-c2135.md)|'*operator*': illegal bit field operation|
+|[Compiler error C2135](compiler-error-c2135.md)|'*identifier*': you cannot apply '*operator*' to a bit-field|
 |Compiler error C2136|authoring API contract not allowed|
 |[Compiler error C2137](compiler-error-c2137.md)|empty character constant|
 |[Compiler error C2138](compiler-error-c2138.md)|illegal to define an enumeration without any members|
@@ -86,7 +86,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2168](compiler-error-c2168.md)|'*function*': too few actual parameters for intrinsic function|
 |[Compiler error C2169](compiler-error-c2169.md)|'*function*': intrinsic function, cannot be defined|
 |[Compiler error C2170](compiler-error-c2170.md)|'*identifier*': not declared as a function, cannot be intrinsic|
-|[Compiler error C2171](compiler-error-c2171.md)|'*operator*': illegal on operands of type '*type*'|
+|[Compiler error C2171](compiler-error-c2171.md)|operator '*operator*' cannot be applied to an operand of type '*type*'|
 |[Compiler error C2172](compiler-error-c2172.md)|'*function*': actual parameter is not a pointer: parameter *number*|
 |[Compiler error C2173](compiler-error-c2173.md)|'*function*': actual parameter is not a pointer: parameter *number*, parameter list *number*|
 |[Compiler error C2174](compiler-error-c2174.md)|'*function*': actual parameter has type 'void': parameter *number*, parameter list *number*|
