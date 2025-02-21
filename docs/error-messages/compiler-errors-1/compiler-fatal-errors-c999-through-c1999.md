@@ -26,7 +26,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1009](fatal-error-c1009.md) | compiler limit: macros nested too deeply |
 | [Fatal error C1010](fatal-error-c1010.md) | unexpected end of file while looking for precompiled header. Did you forget to add '`#include <`*file*`>`' to your source? |
 | [Fatal error C1011](fatal-error-c1011.md) | cannot locate standard module interface. Did you install the library part of the C++ modules feature in VS setup? |
-| [Fatal error C1012](fatal-error-c1012.md) | unmatched parenthesis: missing '*character*" |
+| [Fatal error C1012](fatal-error-c1012.md) | unmatched parenthesis: missing '*character* |
 | [Fatal error C1013](fatal-error-c1013.md) | compiler limit: too many open parentheses |
 | [Fatal error C1014](fatal-error-c1014.md) | too many include files: depth = *number* |
 | [Fatal error C1015](fatal-error-c1015.md) | header-names '*header-name*' and '*header-name*' identify the same header and cannot be used as both `/headerUnit:quoted` and `/headerUnit:angle` arguments; please provide this header-name only once |
@@ -117,7 +117,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1109](fatal-error-c1109.md) | unable to find '*symbol*' in DLL '*file*' |
 | Fatal error C1110 | too many nested template/generic definitions |
 | Fatal error C1111 | too many template/generic parameters |
-| Fatal error C1112 | compiler limit: '*number*' too many macro arguments, only *number* allowed |
+| Fatal error C1112 | compiler limit: '*number*' too many macro arguments, only '*number*' allowed |
 | [Fatal error C1113](fatal-error-c1113.md) | `#using` failed on '*file*' |
 | Fatal error C1114 | '*file*': WinRT does not support `#using` of a managed assembly |
 | [Fatal error C1115](fatal-error-c1025-c1115.md) | too many nested lambdas |
@@ -131,7 +131,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Fatal error C1127 | *Operation* requires *option* |
 | [Fatal error C1128](fatal-error-c1128.md) | number of sections exceeded object file format limit: compile with `/bigobj` |
 | [Fatal error C1189](fatal-error-c1189.md) | `#error`: *message* |
-| [Fatal error C1190](fatal-error-c1190.md) | managed targeted code requires a '`/clr`' option |
+| [Fatal error C1190](fatal-error-c1190.md) | `System::Object` not found, missing `/clr` option or missing import of standard assemblies? |
 | [Fatal error C1191](fatal-error-c1191.md) | '*file*' can only be imported at global scope |
 | [Fatal error C1192](fatal-error-c1192.md) | `#using` failed on '*file*' |
 | Fatal error C1193 | an error expected in *file*(*line*) not reached |
