@@ -64,7 +64,7 @@ After the installer is installed, you can use it to customize your installation 
 
 1. Find the workload you want in the **Installing Visual Studio** screen.
 
-   :::image type="content" source="../get-started/media/vs2022-installer-workloads.png" alt-text="Visual studio installer with the Desktop development with C++ workload selected." lightbox="../get-started/media/vs2022-installer-workloads.png":::
+   :::image type="content" source="../get-started/media/vs2022-installer-workloads.png" alt-text="Visual Studio installer with the Desktop development with C++ workload selected." lightbox="../get-started/media/vs2022-installer-workloads.png":::
 
    For core C and C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
 
@@ -261,11 +261,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
    The first time you run Visual Studio, you're asked to sign in with a Microsoft Account. If you don't have one, you can create one for free. You must also choose a theme. Don't worry, you can change it later if you want to.
 
-   It might take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
-
-   ![Visual Studio sign in dialog.](media/vscpp-quickstart-first-run.gif "Visual Studio 2017 sign in")
-
-   Visual Studio starts faster when you run it again.
+   It might take Visual Studio several minutes to get ready for use the first time you run it.
 
 1. When Visual Studio opens, check to see if the flag icon in the title bar is highlighted:
 

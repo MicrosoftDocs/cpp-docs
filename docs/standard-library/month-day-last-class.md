@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: month_day_last Class"
 title: "month_day_last class"
+description: "Learn more about: month_day_last Class"
 ms.date: "06/28/2021"
 f1_keywords: ["chrono/std::chrono::month_day_last", "chrono/std::chrono::month_day_last::month", "chrono/std::chrono::month_day_last::ok"]
 helpviewer_keywords: ["std::chrono [C++], month_day_last"]
@@ -111,5 +111,5 @@ constexpr bool ok() const noexcept;
 [`month_day_last` class](month-day-last-class.md)\
 [`month_weekday` class](month-weekday-class.md)\
 [`month_weekday_last` class](month-weekday-last-class.md)\
-[`operator/`](chrono-operators.md#op_/)
+[`operator/`](chrono-operators.md#op_/)\
 [Header Files Reference](cpp-standard-library-header-files.md)
