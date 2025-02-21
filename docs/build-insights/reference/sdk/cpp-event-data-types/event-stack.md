@@ -37,8 +37,8 @@ public:
 
 ### Functions
 
-[Back](#back)
-[operator[]](#subscript-operator)
+[Back](#back)\
+[operator[]](#subscript-operator)\
 [Size](#size)
 
 ## <a name="back"></a> Back

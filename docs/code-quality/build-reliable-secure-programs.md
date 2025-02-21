@@ -182,7 +182,7 @@ Remove the now-invalidated secrets from your source code, and replace them with 
 
 **Azure DevOps (AzDO)**
 
-AzDO users can scan their code through GitHub Advanced Security for Azure DevOps (GHAzDO). GHAzDO also allows users to prevent secret exposures by enabling Push Protection on their repositories, catching potential exposures before they're ever leaked. For more information on how to detect hardcoded secrets in code in Azure DevOps, see *Secret Scanning for Github Advanced Security for Azure DevOps* in each of the following links:
+AzDO users can scan their code through GitHub Advanced Security for Azure DevOps (GHAzDO). GHAzDO also allows users to prevent secret exposures by enabling Push Protection on their repositories, catching potential exposures before they're ever leaked. For more information on how to detect hardcoded secrets in code in Azure DevOps, see *Secret Scanning for GitHub Advanced Security for Azure DevOps* in each of the following links:
 
 - [GitHub advanced security for Azure DevOps](https://azure.microsoft.com/products/devops/github-advanced-security)
 - [Secret Scanning for GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-secret-scanning)

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: const and volatile pointers"
 title: "const and volatile pointers"
+description: "Learn more about: const and volatile pointers"
 ms.date: "11/19/2019"
 helpviewer_keywords: ["volatile keyword [C++], and pointers", "pointers, and const", "pointers, and volatile", "const keyword [C++], volatile pointers"]
-ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
 ---
 # const and volatile pointers
 
@@ -117,5 +116,5 @@ int main() {
 
 ## See also
 
-[Pointers](pointers-cpp.md)
+[Pointers](pointers-cpp.md)\
 [Raw pointers](raw-pointers.md)
