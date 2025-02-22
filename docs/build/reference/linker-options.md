@@ -1,7 +1,7 @@
 ---
 title: "MSVC Linker options"
 description: "A list of the options supported by the Microsoft LINK linker."
-ms.date: 02/18/2025
+ms.date: 3/11/2025
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ---
@@ -42,7 +42,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/CLRTHREADATTRIBUTE`](clrthreadattribute-set-clr-thread-attribute.md) | Specifies the threading attribute to apply to the entry point of your CLR program. |
 | [`/CLRUNMANAGEDCODECHECK`](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md) | Specifies whether the linker applies the `SuppressUnmanagedCodeSecurity` attribute to linker-generated P/Invoke stubs that call from managed code into native DLLs. |
 | [`/DEBUG`](debug-generate-debug-info.md) | Creates debugging information. |
-| [`/DEBUGDEOPT`](debugdeopt-dynamic-debugging.md) | Enable C++ Dynamic Debugging to debug optimized code as if it were deoptimized. |
+| [`/DYNAMICDEOPT`](dyanmic-deopt-linkder.md) | Enable C++ Dynamic Debugging to debug optimized code as if it were deoptimized. |
 | [`/DEBUGTYPE`](debugtype-debug-info-options.md) | Specifies which data to include in debugging information. |
 | [`/DEF`](def-specify-module-definition-file.md) | Passes a module-definition (.def) file to the linker. |
 | [`/DEFAULTLIB`](defaultlib-specify-default-library.md) | Searches the specified library when external references are resolved. |

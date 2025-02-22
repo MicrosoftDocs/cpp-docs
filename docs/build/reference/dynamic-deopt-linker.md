@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: /DEBUGDEOPT (Support C++ Dynamic Debugging)"
-title: "| [`/DEBUGDEOPT`](debugdeopt-dynamic-debugging.md) | Creates debugging information for retail builds to support C++ Dynamic Debugging. |"
-ms.date: 2/20/2025
-f1_keywords: ["VC.Project.VCLinkerTool.GenerateDebugDeoptInformation", "/debugdeopt"]
-helpviewer_keywords: ["DEBUGDEOPT linker option", "/DEBUGDEOPT linker option", "-DEBUGDEOPT linker option", "c++ dynanmic debugging", "generate dynamic debug info linker option"]
+title: "/DEBUGDEOPT (Support C++ Dynamic Debugging)"
+ms.date: 3/11/2025
+f1_keywords: ["VC.Project.VCLinkerTool.GenerateDynamicDeoptInformation", "/dynamicdeopt"]
+helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option", "-DYNAMICDEOPT linker option", "c++ dynanmic debugging"]
 ---
 # | `/DEBUGDEOPT` (Support C++ Dynamic Debugging)
 
-The **`/DEBUGDEOPT`** linker options enables C++ Dynamic Debugging which allows you to debug optimized code as if it were deoptimized. This option is only available in Visual Studio 2022 Version 17.14 Preview 2 and later.
+The **`/DEBUGDEOPT`** linker option enables C++ Dynamic Debugging which allows you to debug optimized code as if it were deoptimized. This option is only available in Visual Studio 2022 Version 17.14 Preview 2 and later, and only for x64 code.
 
 ## Syntax
 
