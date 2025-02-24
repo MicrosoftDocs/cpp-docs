@@ -65,7 +65,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 | [Compiler warning (level 1, off) C5248](c5248.md) | section '*section-name*' is reserved for C++ dynamic initialization. Variables manually put into the section may be optimized out and their order relative to compiler generated dynamic initializers is unspecified |
 | Compiler warning (level 1, off) C5249 | '*bitfield*' of type '*enumeration_name*' has named enumerators with values that cannot be represented in the given bit field width of '*bitfield_width*'. |
 | Compiler warning (level 3, off) C5250 | '*function_name*': intrinsic function not declared |
-| Compiler warning (level 4, off) C5251 | *segment-name* changed after including header |
+| Compiler warning (level 4, off) C5251 | the value of `#pragma` *pragma name* changed after `#include`; `#pragma `*pragma name*`(pop)` missing in this header? |
 | Compiler warning (level 4) C5252 | Multiple different types resulted in the same XFG type-hash *hash-value*; the PDB will only record information for one of them |
 | Compiler warning (level 4) C5253 | a non-local lambda cannot have a capture default |
 | Compiler warning (level 4, off) C5254 | language feature 'terse static assert' requires compiler flag '*/std:c++17*' |
@@ -90,12 +90,28 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 | Compiler warning (level 1) C5273 | behavior change: `_Alignas` on anonymous type no longer ignored (promoted members will align) |
 | Compiler warning (level 1) C5274 | behavior change: `_Alignas` no longer applies to the type '*type*' (only applies to declared data objects) |
 | Compiler warning (error) C5275 | assembly '*name*' being imported under '*/clr*' does not contain the required fundamental types |
+| Compiler warning (level 1) C5276 | `/experimental:ifcDebugRecords` currently requires `/Z7` to be enabled.  Please recompile with `/Z7` enabled.|
+| Compiler warning (level 1) C5277 | type trait optimization for '*class name*' is disabled |
+| Compiler warning (level 1) C5278 | adding a specialization for '*type*' has undefined behavior |
+| Compiler warning (level 1) C5279 | a lambda declarator without a parameter list requires at least '*language version*' |
+| Compiler warning (level 1) C5280 | a static operator '*operator name*' requires at least '*language version*'|
+| Compiler warning (level 1) C5281 | a static lambda requires at least '*language version*' |
+| Compiler warning (level 1) C5282 | '`if consteval`' requires at least '*language version*' |
+| Compiler warning (level 1) C5283 | an attribute in this position requires at least '*language version*' |
+| Compiler warning (level 4) C5284 | conversion from value '*value*' of type '*type 1*' to '*type 2*' requires a narrowing conversion |
+| Compiler warning (level 1) C5285 | cannot declare a specialization for '*template name*': *template argument* |
+| Compiler warning (level 1) C5286 | implicit conversion from `enum` type '*type 1*' to `enum` type '*type 2*'; use an explicit cast to silence this warning |
+| Compiler warning (level 1) C5287 | operands are different `enum` types '*type 1*' and '*type 2*'; use an explicit cast to silence this warning |
 | Compiler warning (error) C5300 | '`#pragma omp atomic` *clause*': expression mismatch for lvalue being updated |
 | [Compiler warning (level 1) C5301](c5301-c5302.md) | '`#pragma omp for`': '*loop-index*' increases while loop condition uses '*comparison*'; non-terminating loop? |
 | [Compiler warning (level 1) C5302](c5301-c5302.md) | '`#pragma omp for`': '*loop-index*' decreases while loop condition uses '*comparison*'; non-terminating loop? |
 | Compiler warning (level 1) C5303 | function marked with `[[msvc::intrinsic]]` did not result in a no-op cast |
 | Compiler warning (level 1) C5304 | a declaration designated by the using-declaration '*name1*' exported from this module has internal linkage and using such a name outside the module is ill-formed; consider declaring '*name2*' '`inline`' to use it outside of this module |
 | Compiler warning (level 1) C5305 | '*name*': an explicit instantiation declaration that follows an explicit instantiation definition is ignored |
+| Compiler warning (level 1) C5306 | parameter array behavior change: overload '*identifier 1*' resolved to '*identifier 2*'; previously, it would have resolved to '*identifier 3*'. Use `/clr:ECMAParamArray` to revert to old behavior |
+| Compiler warning (level 3) C5307 | '*function*': argument (*argument number*) converted from '*type 1*' to '*type 2*'. Missing '`L`' encoding-prefix for character literal? |
+| Compiler warning (level 1, error) C5308 | Modifying reserved macro name '*macro name*' may cause undefined behavior |
+| Compiler warning (level 1, error) C5309 | literal suffix '*name*' requires at least '*language version*'|
 
 ## See also
 

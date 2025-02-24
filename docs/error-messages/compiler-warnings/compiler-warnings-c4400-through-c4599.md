@@ -77,6 +77,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 4) C4463](compiler-warning-level-4-c4463.md)|overflow; assigning *value* to bit-field that can only hold values from *min_value* to *max_value*|
 |[Compiler warning (level 4, off) C4464](compiler-warning-level-4-c4464.md)|relative include path contains '`..`'|
 |Compiler warning C4466|Could not perform coroutine heap elision|
+|Compiler warning (level 1) C4465|'*identifier*': use of dependent template requires `::template`|
 |Compiler warning (level 1) C4467|Usage of ATL attributes is deprecated|
 |Compiler warning (level 1) C4468|The `[[fallthrough]]` attribute must be followed by a `case` label or a `default` label|
 |[Compiler warning (level 1) C4470](compiler-warning-level-1-c4470.md)|floating-point control pragmas ignored under `/clr`|
@@ -156,7 +157,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1) C4556](compiler-warning-level-1-c4556.md)|value of intrinsic immediate argument '*value*' is out of range '*lower_bound* - *upper_bound*'|
 |[Compiler warning (level 3, off) C4557](compiler-warning-level-3-c4557.md)|'`__assume`' contains effect '*effect*'|
 |[Compiler warning (level 1) C4558](compiler-warning-level-1-c4558.md)|value of operand '*value*' is out of range '*lower_bound* - *upper_bound*'|
-|[Compiler warning (level 4) C4559](compiler-warning-level-4-c4559.md)|''*function*': redefinition; the function gains `__declspec(`*modifier*`)`|
+|[Compiler warning (level 4) C4559](compiler-warning-level-4-c4559.md)|'*function*': redefinition; the function gains `__declspec(`*modifier*`)`|
 |[Compiler warning (level 1) C4561](compiler-warning-level-1-c4561.md)|'`__fastcall`' incompatible with the '`/clr`' option: converting to '`__stdcall`'|
 |Compiler warning (level 4) C4562|fully prototyped functions are required with the '`/clr`' option: converting '`()`' to '`(void)`'|
 |[Compiler warning (level 4) C4564](compiler-warning-level-4-c4564.md)|method '*method*' of *class* '*classname*' defines unsupported default parameter '*parameter*'|

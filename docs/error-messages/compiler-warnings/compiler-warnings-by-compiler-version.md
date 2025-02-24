@@ -53,6 +53,9 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2022 version 17.8 | 19.38 |
 | Visual Studio 2022 version 17.9 | 19.39 |
 | Visual Studio 2022 version 17.10 | 19.40 |
+| Visual Studio 2022 version 17.11 | 19.41 |
+| Visual Studio 2022 version 17.12 | 19.42 |
+| Visual Studio 2022 version 17.13 | 19.43 |
 
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
@@ -60,6 +63,32 @@ You can specify only the major number, the major and minor numbers, or the major
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
 ::: moniker range=">= msvc-170"
+
+## Warnings introduced in Visual Studio 2022 version 17.13 (compiler version 19.43)
+
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.43`**.
+
+| Warning | Message |
+|--|--|
+|C5277| type trait optimization for '*class name*' is disabled
+|C5308| Modifying reserved macro name '*macro name*' may cause undefined behavior
+|C5309| literal suffix '*name*' requires at least '*language version*'
+
+## Warnings introduced in Visual Studio 2022 version 17.12 (compiler version 19.42)
+
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.42`**.
+
+| Warning | Message |
+|--|--|
+|C5086| Arch setting *arch* and vector length *number* are not allowed. Using the default vector length - *number*.
+|C5276| `/experimental:ifcDebugRecords` currently requires `/Z7` to be enabled.  Please recompile with `/Z7` enabled.
+|C5306| parameter array behavior change: overload '*identifier 1*' resolved to '*identifier 2*'; previously, it would have resolved to '*identifier 3*'. Use `/clr:ECMAParamArray` to revert to old behavior
+|C5307| '*function*': argument (*argument number*) converted from '*type 1*' to '*type 2*'. Missing '`L`' encoding-prefix for character literal?
+
+
+## Warnings introduced in Visual Studio 2022 version 17.11 (compiler version 19.41)
+
+There were no new warnings introduced in 17.11
 
 ## Warnings introduced in Visual Studio 2022 version 17.10 (compiler version 19.40)
 
