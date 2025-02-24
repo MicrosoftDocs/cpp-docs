@@ -42,7 +42,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7524 | 'inline' specifier cannot appear on a block-scope declaration or non-static data member |
 | Compiler error C7525 | inline variables require at least '%1$M' |
 | Compiler error C7526 | '%$I': inline variable is undefined |
-| Compiler error C7527 | '%$I': template parameter name cannot be redeclared |
+| Compiler error C7527 | '*identifier*': a template parameter name cannot be reused within its scope |
 | Compiler error C7528 | '%1$S': A default constructor or its exception specification cannot be used within a data member initializer of the same class |
 | Compiler error C7529 | multiple using-declarators require at least '%1$M' |
 | Compiler error C7530 | applying a pack-expansion to a using-declaration requires at least '%1$M' |
@@ -58,7 +58,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7540 | '%1$I': member cannot have the same name as the enclosing class |
 | Compiler error C7541 | '%1$I': C++17 inline static data members are not compatible with managed types |
 | Compiler error C7542 | '%1$S': expected a type |
-| Compiler error C7543 | likelihood attributes can only be applied to statements and labels |
+| Compiler error C7543 | attribute `[[`*attribute*`]]` can only be applied to statements and labels |
 | Compiler error C7544 | standard attributes '%1$s' and '%2$s' are mutually exclusive |
 | Compiler error C7545 | attribute '%sno_unique_address' can only be applied to a non-static data member that is not a bitfield |
 | Compiler error C7546 | binary operator '<=>': unsupported operand types '%$T' and '%$T' |
@@ -113,6 +113,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7595 | '%1$S': call to immediate function is not a constant expression |
 | Compiler error C7596 | '%1$S': cannot take address of immediate function outside of an immediate invocation |
 | Compiler error C7597 | '%1$D': 'consteval': overriding function must match overridden function |
+| Compiler error C7598 | the constraint expression cannot use the concept name '*identifier*'|
 | Compiler error C7599 | '%1$S': a trailing requires clause is only allowed on a templated function |
 | Compiler error C7600 | '%1$S': the concept designated by a type constraint shall be a type concept |
 | Compiler error C7601 | the associated constraints are not satisfied |
@@ -123,7 +124,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7606 | '%1$S': concept cannot be explicitly instantiated, explicitly specialized or partially specialized |
 | Compiler error C7607 | atomic constraint should be a constant expression of type 'bool', not '%1$T' |
 | Compiler error C7608 | atomic constraint should be a constant expression |
-| Compiler error C7609 | '%1$S': type constraint expects a concept name |
+| Compiler error C7609 | '*identifier*': expected a concept name for type constraint |
 | Compiler error C7610 | operator '%$L': not allowed between enumeration types and floating-point types |
 | Compiler error C7611 | operator '%$L': not allowed for array types |
 | Compiler error C7612 | could not find header unit for '%s' |
@@ -163,8 +164,8 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7646 | destroying operator delete functions cannot be array delete operators 'operator delete[]' |
 | Compiler error C7647 | destroying operator delete functions must be usual deallocation functions |
 | Compiler error C7648 | a conversion function cannot have a trailing return type |
-| Compiler error C7649 | attribute 'xfg::rename' may only be applied to structs, classes and virtual methods |
-| Compiler error C7650 | attribute 'xfg::rename' must be passed a string argument |
+| Compiler error C7649 | attribute '`[[xfg::rename]]`' may only be applied to structs, classes and virtual methods |
+| Compiler error C7650 | attribute '`[[xfg::rename]]`' must be passed a string argument |
 | Compiler error C7651 | %1$I cannot be used with /await. Use '%2$M' or later for standard coroutine support |
 | Compiler error C7652 | if a member function has a trailing requires clause then another member function with the same signature, ignoring any trailing requires clause, cannot be virtual |
 | Compiler error C7653 | '%1$S': failed to select a destructor for the class |
@@ -173,12 +174,12 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7656 | private module fragment cannot be redeclared |
 | Compiler error C7657 | private module fragment cannot be declared before a module declaration |
 | Compiler error C7658 | '%1$S': the initializer must be the address of a variable |
-| Compiler error C7659 | attribute 'xfg::rename' may not be applied to nested class hierarchies |
+| Compiler error C7659 | attribute '`[[xfg::rename]]`' may not be applied to nested class hierarchies |
 | Compiler error C7660 | '%s': requires '%s' command line option(s) |
 | Compiler error C7661 | header-name '%s' has an ambiguous resolution to header '%s' |
 | Compiler error C7662 | '%$S': a coroutine cannot be constexpr or consteval |
 | [Compiler error C7688](compiler-error-c7688.md) | '`#pragma omp atomic`': expected an expression of scalar type |
-| Compiler error C7686 | TOML parse error |
+| Compiler error C7686 | attribute `[[msvc::constexpr]]` cannot be applied to a '`constexpr`' or '`consteval`' function |
 | Compiler error C7700 | type '%$T' in _Generic association compatible with previous association type '%$T' |
 | Compiler error C7701 | default _Generic association previously specified |
 | Compiler error C7702 | no compatible type for '%$T' in _Generic association list |
