@@ -93,7 +93,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2275](compiler-error-c2275.md)|'*type*': expected an expression instead of a type|
 |[Compiler error C2276](compiler-error-c2276.md)|'*operator*': illegal operation on bound member function expression|
 |[Compiler error C2277](compiler-error-c2277.md)|'*function*': cannot take address of this member function|
-|Compiler error C2278|'*token*': unexpected token. Format is '*__has_cpp_attribute*`( identifier )`'|
+|Compiler error C2278|'*token*': unexpected token. Format is '`__has_cpp_attribute( identifier )`'|
 |[Compiler error C2279](compiler-error-c2279.md)|exception specification cannot appear in a typedef declaration|
 |[Compiler error C2280](compiler-error-c2280.md)|'*class*::*function*': attempting to reference a deleted function|
 |Compiler error C2281|'*class*::*function*': a function can only be deleted on the first declaration|
