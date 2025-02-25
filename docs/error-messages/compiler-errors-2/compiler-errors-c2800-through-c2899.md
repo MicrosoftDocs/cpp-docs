@@ -107,7 +107,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C2889 | '*class*': a managed/WinRT class type cannot be a virtual base class |
 | [Compiler error C2890](compiler-error-c2890.md) | '*class*': a ref class can only have one non-interface base class |
 | [Compiler error C2891](compiler-error-c2891.md) | '*parameter*': cannot take the address of a template parameter |
-| [Compiler error C2892](compiler-error-c2892.md) | local class shall not have member templates |
+| [Compiler error C2892](compiler-error-c2892.md) | a template cannot be a member of a local class |
 | [Compiler error C2893](compiler-error-c2893.md) | Failed to specialize function template '*template*' |
 | [Compiler error C2894](compiler-error-c2894.md) | templates cannot be declared to have 'C' linkage |
 | Compiler error C2895 | '*declaration*': cannot explicitly instantiate a function template that has been declared with dllimport |
