@@ -205,11 +205,10 @@ GitHub provides known patterns of secrets for partners and users that can be con
 
 **Additional resources**
 
-- [Credential Scanning | Microsoft Code With Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/credential_scanning/).
-- [detect-secrets: Credential scanning tool | GitHub](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets/) - an aptly named module for detecting secrets within a code base.
-- [Running detect-secrets in Azure Pipelines](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets-ado/).
+- [Credential Scanning | Microsoft Code With Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/secrets-management/credential_scanning/).
+- [detect-secrets: Credential scanning tool | GitHub](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/secrets-management/recipes/detect-secrets-ado/) - an aptly named module for detecting secrets within a code base.
 - [Git-secrets | GitHub awslabs](https://github.com/awslabs/git-secrets) - prevents you from committing passwords and other sensitive information to a git repository.
-- [Secrets Management | Microsoft Code with Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/continuous-delivery/secrets-management/) - provides general guidelines on how secrets should be managed.
+- [Secrets Management | Microsoft Code with Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/secrets-management/) - provides general guidelines on how secrets should be managed.
 
 ## 2.5 Run with language- and OS-provided checks and protection
 

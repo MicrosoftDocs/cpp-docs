@@ -14,7 +14,7 @@ helpviewer_keywords: ["aborting programs", "_set_abort_behavior function", "set_
 Specifies the action to be taken when a program is abnormally terminated.
 
 > [!NOTE]
-> Do not use the [`abort`](abort.md) function to shut down a Microsoft Store app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/legal/windows/agreements/store-policies). For more information, see [UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
+> Do not use the [`abort`](abort.md) function to shut down a Microsoft Store app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/windows/apps/publish/store-policies). For more information, see [UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
 
 ## Syntax
 
