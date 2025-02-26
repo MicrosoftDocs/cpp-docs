@@ -54,7 +54,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C3336 | This operation must be performed at class scope |
 | Compiler error C3337 | '*identifier*': defaultvtable must be an event source for a coclass '*class*' |
 | Compiler error C3338 | '*identifier*': There can be at most one default interface that is also an event source for a coclass '*class*' |
-| Compiler error C3339 | template parameter requires either 'class' or 'typename' after the parameter list |
+| Compiler error C3339 | template template parameter requires either '`class`' or '`typename`' after the parameter list |
 | [Compiler error C3340](compiler-error-c3340.md) | '*identifier*': interface cannot be both 'restricted' and 'default' in coclass '*class*' |
 | Compiler error C3341 | '*interface*': a defaultvtable interface must be either 'dual' or 'custom' |
 | [Compiler error C3342](compiler-error-c3342.md) | '*identifier*': ambiguous attribute |
