@@ -8,7 +8,7 @@ helpviewer_keywords: ["debugging [C++], release builds", "release builds, debugg
 
 This article explains which compiler and linker switches to set to enable you to debug a release build of an application.
 
-A much better experience is available starting in Visual Studio 2022 version 17.14 that allows you to debug optimized code as if it were compiled unoptimized, while retaining the speed of optimized code. For more information, see [C++ Dynamic Debugging](/visualstudio/debugger/dynamic-deopt.md).
+A better experience is available starting in Visual Studio 2022 version 17.14 that allows you to debug optimized code as if it were compiled unoptimized, while retaining the speed of optimized code. For more information, see [C++ Dynamic Debugging](/visualstudio/debugger/dynamic-deopt.md).
 
 ## To debug a release build
 

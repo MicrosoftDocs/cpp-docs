@@ -1,23 +1,21 @@
 ---
-description: "Learn more about: /DEBUGDEOPT (Support C++ Dynamic Debugging)"
-title: "/DEBUGDEOPT (Support C++ Dynamic Debugging)"
+description: "Learn more about: /DYNAMICDEOPT (Support C++ Dynamic Debugging)"
+title: "/DYNAMICDEOPT (Support C++ Dynamic Debugging)"
 ms.date: 3/11/2025
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateDynamicDeoptInformation", "/dynamicdeopt"]
-helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option", "-DYNAMICDEOPT linker option", "c++ dynanmic debugging"]
+helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option", "-DYNAMICDEOPT linker option", "c++ dynamic debugging"]
 ---
-# | `/DEBUGDEOPT` (Support C++ Dynamic Debugging)
+# | `/DYNAMICDEOPT` (Support C++ Dynamic Debugging)
 
-The **`/DEBUGDEOPT`** linker option enables C++ Dynamic Debugging which allows you to debug optimized code as if it were deoptimized. This option is only available in Visual Studio 2022 Version 17.14 Preview 2 and later, and only for x64 code.
+The **`/DYNAMICDEOPT`** linker option enables [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md), which allows you to debug optimized code as if it were compiled deoptimized.
 
 ## Syntax
 
-> **`/DEBUGDEOPT`**
+> **`/DYNAMICDEOPT`**
 
 ## Remarks
 
-This flag is only available for x64 builds.
-
-The **`/DEBUGDEOPT`** option creates puts the debugging information from linked object and library files into a program database (PDB) file. It updates the PDB during subsequent builds of the program.
+This flag, available starting with Visual Studio 2022 Version 17.14 Preview 2, applies only to x64 projects.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -32,5 +30,6 @@ The **`/DEBUGDEOPT`** option creates puts the debugging information from linked 
 
 ## See also
 
+[C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md)\
 [MSVC linker reference](linking.md)\
 [MSVC linker options](linker-options.md)
