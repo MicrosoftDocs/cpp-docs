@@ -33,7 +33,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C2515|'*identifier*': 'vtguard' can only be applied to class declarations or definitions|
 |[Compiler error C2516](compiler-error-C2516.md)|'*class*': is not a legal base class|
 |[Compiler error C2517](compiler-error-C2517.md)|'*identifier*': right of '::' is undefined|
-|[Compiler error C2518](compiler-error-C2518.md)|keyword '*keyword*' illegal in base class list; ignored|
+|[Compiler error C2518](compiler-error-C2518.md)|keyword '*keyword*' is invalid in a base class list; expected a `class` name|
 |Compiler error C2519|'*identifier*': WinRT attributes may only contain public fields|
 |Compiler error C2520|'*class*': no non-explicit constructor available for implicit conversion|
 |[Compiler error C2521](compiler-error-C2521.md)|a destructor/finalizer does not take any arguments|
@@ -63,12 +63,13 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2545](compiler-error-C2545.md)|'*operator*': unable to find overloaded operator|
 |Compiler error C2546|'*identifier*': when a type is defined in both a PIA and a no-PIA the PIA must be referenced first|
 |Compiler error C2547|'*identifier*': All parameters of a published method must be explicitly named on the declaration|
-|[Compiler error C2548](compiler-error-C2548.md)|'*function*': missing default parameter for parameter *parameter*|
+|[Compiler error C2548](compiler-error-C2548.md)|'*function*': missing default argument for parameter *parameter*|
 |[Compiler error C2549](compiler-error-C2549.md)|user-defined conversion cannot specify a return type|
 |[Compiler error C2550](compiler-error-C2550.md)|'*identifier*': constructor initializer lists are only allowed on constructor definitions|
 |[Compiler error C2551](compiler-error-C2551.md)|'void *' type needs explicit cast|
 |[Compiler error C2552](compiler-error-C2552.md)|'*identifier*': non-aggregates cannot be initialized with an initializer list|
 |[Compiler error C2553](compiler-error-C2553.md)|'*type* *derived_class*::*function*': overriding virtual function return type differs from '*type* *base_class*::*function*'|
+|Compiler error C2554|'*variable*': 'constinit' only allowed on a variable declaration with static or thread storage duration|
 |[Compiler error C2555](compiler-error-C2555.md)|'*derived_class*::*function*': overriding virtual function return type differs and is not covariant from '*base_class*::*function*'|
 |[Compiler error C2556](compiler-error-C2556.md)|'*type1* *class*::*function*': overloaded function differs only by return type from '*type2* *class*::*function*'|
 |[Compiler error C2557](compiler-error-C2557.md)|'*identifier*': private and protected members cannot be initialized without a constructor|

@@ -98,10 +98,10 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C2980 | C++ exception handling is not supported with /kernel |
 | Compiler error C2981 | the dynamic form of '*keyword*' is not supported with /kernel |
 | Compiler error C2982 | '*declaration*': different __declspec(code_seg(...)) used: was '*identifier1*' now '*identifier2*' |
-| Compiler error C2983 | '*declaration*': all declarations must have an identical __declspec(code_seg(...)) |
+| Compiler error C2983 | '*name*': a definition must have the same `__declspec(code_seg(...))` as the prior declaration |
 | Compiler error C2984 | Obsolete. |
 | Compiler error C2985 | '*argument*': the argument to __declspec(code_seg(...)) must be a text section |
-| Compiler error C2986 | '*identifier*': __declspec(code_seg(...)) can only be applied to a class or a function |
+| Compiler error C2986 | '`__declspec(code_seg(...))`' can only be applied to a class or a function |
 | Compiler error C2987 | a declaration cannot have both __declspec(code_seg('*identifier*')) and __declspec(code_seg('*value*')) |
 | [Compiler error C2988](compiler-error-c2988.md) | unrecognizable template declaration/definition |
 | [Compiler error C2989](compiler-error-c2989.md) | '*class*': class template/generic has already been declared as a non-class template/generic |

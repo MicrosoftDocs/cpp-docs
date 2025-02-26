@@ -81,7 +81,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C3163](compiler-error-c3163.md) | '*class*': attributes inconsistent with previous declaration |
 | Compiler error C3164 | Obsolete. |
 | Compiler error C3165 | '*value*': cannot convert to an integral or floating point value |
-| [Compiler error C3166](compiler-error-c3166.md) | Obsolete. '*type*': a data member of a managed/WinRT class cannot have type '*pointer_type* to interior *managed_pointer_type*' |
+| [Compiler error C3166](compiler-error-c3166.md) | '*type*': a data member of a managed/WinRT class cannot have type '*pointer_type* to interior *managed_pointer_type*' |
 | [Compiler error C3167](compiler-error-c3167.md) | Unable to initialize .NET Framework: make sure it is installed |
 | [Compiler error C3168](compiler-error-c3168.md) | '*type*': illegal underlying type for enum |
 | Compiler error C3169 | '*type*': cannot deduce type for 'auto' from '*type*' |

@@ -42,7 +42,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7524 | 'inline' specifier cannot appear on a block-scope declaration or non-static data member |
 | Compiler error C7525 | inline variables require at least '%1$M' |
 | Compiler error C7526 | '%$I': inline variable is undefined |
-| Compiler error C7527 | '%$I': template parameter name cannot be redeclared |
+| Compiler error C7527 | '*identifier*': a template parameter name cannot be reused within its scope |
 | Compiler error C7528 | '%1$S': A default constructor or its exception specification cannot be used within a data member initializer of the same class |
 | Compiler error C7529 | multiple using-declarators require at least '%1$M' |
 | Compiler error C7530 | applying a pack-expansion to a using-declaration requires at least '%1$M' |
@@ -58,7 +58,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7540 | '%1$I': member cannot have the same name as the enclosing class |
 | Compiler error C7541 | '%1$I': C++17 inline static data members are not compatible with managed types |
 | Compiler error C7542 | '%1$S': expected a type |
-| Compiler error C7543 | likelihood attributes can only be applied to statements and labels |
+| Compiler error C7543 | attribute `[[`*attribute*`]]` can only be applied to statements and labels |
 | Compiler error C7544 | standard attributes '%1$s' and '%2$s' are mutually exclusive |
 | Compiler error C7545 | attribute '%sno_unique_address' can only be applied to a non-static data member that is not a bitfield |
 | Compiler error C7546 | binary operator '<=>': unsupported operand types '%$T' and '%$T' |
@@ -113,6 +113,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7595 | '%1$S': call to immediate function is not a constant expression |
 | Compiler error C7596 | '%1$S': cannot take address of immediate function outside of an immediate invocation |
 | Compiler error C7597 | '%1$D': 'consteval': overriding function must match overridden function |
+| Compiler error C7598 | the constraint expression cannot use the concept name '*identifier*'|
 | Compiler error C7599 | '%1$S': a trailing requires clause is only allowed on a templated function |
 | Compiler error C7600 | '%1$S': the concept designated by a type constraint shall be a type concept |
 | Compiler error C7601 | the associated constraints are not satisfied |
@@ -123,7 +124,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7606 | '%1$S': concept cannot be explicitly instantiated, explicitly specialized or partially specialized |
 | Compiler error C7607 | atomic constraint should be a constant expression of type 'bool', not '%1$T' |
 | Compiler error C7608 | atomic constraint should be a constant expression |
-| Compiler error C7609 | '%1$S': type constraint expects a concept name |
+| Compiler error C7609 | '*identifier*': expected a concept name for type constraint |
 | Compiler error C7610 | operator '%$L': not allowed between enumeration types and floating-point types |
 | Compiler error C7611 | operator '%$L': not allowed for array types |
 | Compiler error C7612 | could not find header unit for '%s' |
@@ -163,8 +164,8 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7646 | destroying operator delete functions cannot be array delete operators 'operator delete[]' |
 | Compiler error C7647 | destroying operator delete functions must be usual deallocation functions |
 | Compiler error C7648 | a conversion function cannot have a trailing return type |
-| Compiler error C7649 | attribute 'xfg::rename' may only be applied to structs, classes and virtual methods |
-| Compiler error C7650 | attribute 'xfg::rename' must be passed a string argument |
+| Compiler error C7649 | attribute '`[[xfg::rename]]`' may only be applied to structs, classes and virtual methods |
+| Compiler error C7650 | attribute '`[[xfg::rename]]`' must be passed a string argument |
 | Compiler error C7651 | %1$I cannot be used with /await. Use '%2$M' or later for standard coroutine support |
 | Compiler error C7652 | if a member function has a trailing requires clause then another member function with the same signature, ignoring any trailing requires clause, cannot be virtual |
 | Compiler error C7653 | '%1$S': failed to select a destructor for the class |
@@ -173,17 +174,79 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7656 | private module fragment cannot be redeclared |
 | Compiler error C7657 | private module fragment cannot be declared before a module declaration |
 | Compiler error C7658 | '%1$S': the initializer must be the address of a variable |
-| Compiler error C7659 | attribute 'xfg::rename' may not be applied to nested class hierarchies |
+| Compiler error C7659 | attribute '`[[xfg::rename]]`' may not be applied to nested class hierarchies |
 | Compiler error C7660 | '%s': requires '%s' command line option(s) |
 | Compiler error C7661 | header-name '%s' has an ambiguous resolution to header '%s' |
 | Compiler error C7662 | '%$S': a coroutine cannot be constexpr or consteval |
+| Compiler error C7665 | '*operator*': you cannot assign to '`this`' as it is not an lvalue |
+| Compiler error C7666 | you cannot apply '*operator*' to '`this`' as it is not an lvalue |
+| Compiler error C7667 | no global `operator delete` function found |
+| Compiler error C7668 | a function with an explicit object parameter must be a member function |
+| Compiler error C7669 | a function with an explicit object parameter cannot be declared '`static`' |
+| Compiler error C7670 | only the first parameter may be an explicit object parameter |
+| Compiler error C7671 | a member function with an explicit object parameter may only have one such parameter |
+| Compiler error C7672 | a member function with an explicit object parameter may not have trailing implicit object parameter specifiers |
+| Compiler error C7673 | explicit object member functions requires at least '*C++ language version*' |
+| Compiler error C7674 | member function '*function 1*' with explicit object parameter of type '*type 1*' cannot overload member function '*function 2*' with implicit object parameter of type '*type 2*' |
+| Compiler error C7675 | cannot overload static member function with member function declaring the same non-object parameter types |
+| Compiler error C7676 | member functions with an explicit object parameter cannot be defaulted |
+| Compiler error C7677 | constructors cannot contain an explicit object parameter |
+| Compiler error C7678 | member functions with an explicit object parameter cannot be virtual |
+| Compiler error C7679 | an explicit object parameter cannot be a parameter pack |
+| Compiler error C7680 | only function parameters may be explicit object parameters |
+| Compiler error C7682 | '*declaration*': a non-defining declaration of an enumeration with a fixed underlying type is only permitted as a standalone declaration |
+| Compiler error C7683 | you cannot create a reference to '`void`' |
+| Compiler error C7684 | module name '*name*' has an ambiguous resolution to IFC |
+| Compiler error C7685 | there is no type named '*identifier*' in '*type*' |
+| Compiler error C7686 | attribute `[[msvc::constexpr]]` cannot be applied to a '`constexpr`' or '`consteval`' function |
+| Compiler error C7687 | attribute `[[`*attribute*`]]` may only be applied to statements and functions |
 | [Compiler error C7688](compiler-error-c7688.md) | '`#pragma omp atomic`': expected an expression of scalar type |
-| Compiler error C7686 | TOML parse error |
+| Compiler error C7689 | attribute `[[msvc::intrinsic]]` cannot be applied to explicit specializations |
+| Compiler error C7690 | attribute `[[msvc::intrinsic]]` cannot be applied to a recursive function |
+| Compiler error C7691 | '`__super`' is not supported as '`/allowSuper-`' was specified |
+| Compiler error C7692 | '*name*': rewritten candidate function was excluded from overload resolution because a corresponding `operator!=` declared in the same scope |
+| Compiler error C7693 | constraints are not supported for managed types and constructs |
+| Compiler error C7694 | managed type '*type*' used in a constraint definition or evaluation or in an entity that uses constraints |
+| Compiler error C7695 | coroutine promise type '*type*' cannot be abstract |
+| Compiler error C7696 | TOML parse error: *error name*; see '*TOML filename*' |
+| Compiler error C7697 | '*header unit*' is not a recognized header-name lookup |
+| Compiler error C7698 | '`__declspec(`*name*`(...))`' requires a single string argument |
+| Compiler error C7699 | file mapping must be unique.  Both '*name 1*' and '*name 2*' map to '*filename*' |
 | Compiler error C7700 | type '%$T' in _Generic association compatible with previous association type '%$T' |
 | Compiler error C7701 | default _Generic association previously specified |
 | Compiler error C7702 | no compatible type for '%$T' in _Generic association list |
 | Compiler error C7703 | inline nested namespaces requires at least '%1$M' |
 | Compiler error C7704 | '_Alignas' specifier can be used on variables and structure fields only |
+| Compiler error C7705 | '`_Atomic`' type '*typename*' cannot be an array or function |
+| Compiler error C7706 | '`_Atomic`' type '*typename*' cannot be atomic or CVR qualified |
+| Compiler error C7707 | call to '*function*': argument type '*type*' must be a pointer to an atomic type |
+| Compiler error C7708 | '*variable*': '`thread_local`' is only valid on variables at file or block scope |
+| Compiler error C7709 | '*variable*': '`thread_local`' variables at block scope must be marked `static` |
+| Compiler error C7710 | '*variable*': bit-fields cannot be atomic |
+| Compiler error C7711 | '`_Atomic`' cannot be applied to incomplete type '*type*' |
+| Compiler error C7712 | address argument to atomic operation must be a pointer to an atomic integer, '*type*' is not valid |
+| Compiler error C7713 | a statement-expression may only appear inside a function body |
+| Compiler error C7714 | the syntax for a 'statement-expression' is '`__extension__ ({ S1; ... ; Sn; })`' |
+| Compiler error C7720 | bound for nested loop to be collapsed does not conform to the OpenMP specification |
+| Compiler error C7730 | '`#`*directive*' directive requires '*language version*' or later |
+| Compiler error C7731 | '*name*' is not allowed on a constructor declaration |
+| Compiler error C7732 | expected an expression before '`]`' |
+| Compiler error C7733 | the built-in subscript operator expects a single expression |
+| Compiler error C7734 | '`size_t`' literal is out of range of possible '`size_t`' values |
+| Compiler error C7735 | a lambda cannot be both '`static`' and '`mutable`' |
+| Compiler error C7736 | a static lambda must have an empty capture-clause |
+| Compiler error C7737 | a lambda with an explicit object parameter shall be neither '`mutable`' nor '`static`' |
+| Compiler error C7738 | '`if consteval`' requires a compound statement |
+| Compiler error C7739 | cannot jump from this `goto` statement to its label |
+| Compiler error C7740 | cannot jump to case label |
+| Compiler error C7741 | ABI inconsistency: '*function*' was originally assumed to use '`C`' return semantics but now it requires '`C++`' return semantics |
+| Compiler error C7800 | duplicate explicit instantiation definition of '*name*' |
+| Compiler error C7801 | '*function*': if one declaration of '*identifier*' has the '`[[msvc::disptach]]`' attribute then all functions must have the attribute |
+| Compiler error C7802 | '*identifier*': a capability must resolve to an enumerator |
+| Compiler error C7803 | '*identifier*': a capability must be associated with a non-overloaded, non-virtual function |
+| Compiler error C7804 | '*identifier*': cannot find a matching default dispatch function |
+| Compiler error C7806 | support for the '`msvc::dispatch`' attribute requires '`/experimental:loadTimeSelection`' |
+| Compiler error C7807 | expecting a narrow string literal |
 
 ## See also
 
