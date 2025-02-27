@@ -491,7 +491,7 @@ A partial list of new features in 17.2:
   - When you select the start and end values for the stack pointer in the RTOS tool window, it opens in the memory window.
   - Added thread awareness for device targets to the call stack window.
   - Users can now select a pin icon next to peripherals, registers, or fields to pin them the top of the Peripheral View.
-- Added implementations of the remaining C++20 defect reports (also known as *backports*). All C++20 features are now available under the **`/std:c++20`** option. For more information about the implemented backports, see the [MSVC's STL Completes `/std:c++20`](https://devblogs.microsoft.com/cppblog/msvcs-stl-completes-stdc20/) blog post.
+- Added implementations of the remaining C++20 defect reports (also known as *backports*). All C++20 features are now available under the **`/std:c++20`** option. For more information about the implemented backports, see the [C++20 Defect Reports project](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-172) in the Microsoft/STL GitHub repository and the [MSVC's STL Completes `/std:c++20`](https://devblogs.microsoft.com/cppblog/msvcs-stl-completes-stdc20/) blog post.
 - We added various C++23 Library features, available under the **`/std:c++latest`** option. For more information about the new features, see the [STL Repo changelog](https://github.com/microsoft/STL/wiki/Changelog).
 - Improved performance of the initial C++ indexing by up to 20%, depending on the depth of the include graph.
 
