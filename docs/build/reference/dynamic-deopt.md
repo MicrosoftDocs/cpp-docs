@@ -19,7 +19,7 @@ Enable [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md) 
 *`suffix`*\
 Specify the file extension for the deoptimized output.
 
-With no options and given `test.cpp` as input, your output includes `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and ``test.alt.pdb`. This switch allows you to change the suffix of the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the linker. You typically won't use this switch unless you need to avoid filename collisions with other files that you have.
+With no options and given `test.cpp` as input, your output includes `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and ``test.alt.pdb`. This switch allows you to change the suffix of the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the linker. You typically don't use this switch unless you need to avoid filename collisions with other files that you have.
 
 ## Remarks
 
@@ -29,7 +29,7 @@ Compiling with `/dynamicdeopt` generates other binaries that are used for debugg
 
 `/dynamicdeopt` requires:
 
-`/DEBUG` or `/DEBUG:FULL`. If you don't specify `/DEBUG`, or `/DEBUG:FASTLINK` the linker will give a fatal error.
+`/DEBUG` or `/DEBUG:FULL`. If you don't specify `/DEBUG`, or `/DEBUG:FASTLINK` the linker gives a fatal error.
 If you specify `/INCREMENTAL`, the compiler generates a warning and automatically turns off `/INCREMENTAL`.
 If you specify `/OPT:ICF`, the compiler generates a warning that the debug experience isn't as good. This is because ICF can cause functions to be removed from the alt file, which means you can't step into them.
 
