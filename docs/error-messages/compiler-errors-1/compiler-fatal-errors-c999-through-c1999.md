@@ -42,6 +42,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1025](fatal-error-c1025-c1115.md) | too many nested lambdas |
 | [Fatal error C1026](fatal-error-c1026.md) | parser stack overflow, program too complex |
 | Fatal error C1027 | **(Obsolete)** Inconsistent values for /Ym between creation and use of precompiled header |
+| Fatal error C1028 | missing IFC for analysis.  Please rebuild *module* '*ifc filename*' with `/analyze`. |
 | Fatal error C1030 | WMMX types not allowed in the function signature by the calling convention |
 | Fatal error C1032 | `__eabi` requires VFP code generation (`/QRfpe-`) |
 | [Fatal error C1033](fatal-error-c1033.md) | cannot open program database '*file*' |
@@ -101,6 +102,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1092](fatal-error-c1092.md) | Edit and Continue does not support changes to data types; build required |
 | [Fatal error C1093](fatal-error-c1093.md) | API call '*function*' failed '*HRESULT*': '*description*' |
 | [Fatal error C1094](fatal-error-c1094.md) | '`-Zm`*number*': command line option is inconsistent with value used to build precompiled header ('`-Zm`*number*') |
+| Fatal error C1095 | Failed to locate a free memory range. Use `/Yb` to specify a base address. |
 | [Fatal error C1098](fatal-error-c1098.md) | Version mismatch with Edit and Continue engine |
 | [Fatal error C1099](fatal-error-c1099.md) | Edit and Continue engine terminating compile |
 | [Fatal error C1100](fatal-error-c1100.md) | unable to initialize OLE: *error* |
@@ -109,12 +111,13 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1103](fatal-error-c1103.md) | fatal error importing progid: '*message*' |
 | [Fatal error C1104](fatal-error-c1104.md) | fatal error importing libid: '*message*' |
 | Fatal error C1105 | *message*: *HRESULT error* |
+| Fatal error C1106 | compiler limit: only *number* function parameters are allowed |
 | [Fatal error C1107](fatal-error-c1107.md) | could not find assembly '*assembly*': please specify the assembly search path using `/AI` or by setting the `LIBPATH` environment variable |
 | [Fatal error C1108](fatal-error-c1108.md) | unable to find DLL: '*file*' |
 | [Fatal error C1109](fatal-error-c1109.md) | unable to find '*symbol*' in DLL '*file*' |
 | Fatal error C1110 | too many nested template/generic definitions |
 | Fatal error C1111 | too many template/generic parameters |
-| Fatal error C1112 | compiler limit: '*number*' too many macro arguments, only *number* allowed |
+| Fatal error C1112 | compiler limit: '*number*' too many macro arguments, only '*number*' allowed |
 | [Fatal error C1113](fatal-error-c1113.md) | `#using` failed on '*file*' |
 | Fatal error C1114 | '*file*': WinRT does not support `#using` of a managed assembly |
 | [Fatal error C1115](fatal-error-c1025-c1115.md) | too many nested lambdas |
@@ -128,7 +131,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Fatal error C1127 | *Operation* requires *option* |
 | [Fatal error C1128](fatal-error-c1128.md) | number of sections exceeded object file format limit: compile with `/bigobj` |
 | [Fatal error C1189](fatal-error-c1189.md) | `#error`: *message* |
-| [Fatal error C1190](fatal-error-c1190.md) | managed targeted code requires a '`/clr`' option |
+| [Fatal error C1190](fatal-error-c1190.md) | `System::Object` not found, missing `/clr` option or missing import of standard assemblies? |
 | [Fatal error C1191](fatal-error-c1191.md) | '*file*' can only be imported at global scope |
 | [Fatal error C1192](fatal-error-c1192.md) | `#using` failed on '*file*' |
 | Fatal error C1193 | an error expected in *file*(*line*) not reached |
@@ -152,6 +155,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Fatal error C1212 | Input file was modified by another process while building: '*filename*' |
 | Fatal error C1213 | Header units are unsupported without `/Zc:preprocessor` |
 | Fatal error C1214 | Modules conflict with non-standard behavior requested via '*option*' |
+| Fatal error C1215 | Cannot open file '*filename*' corresponding to warning set '`-W`*warning set*' |
 | Fatal error C1300 | error accessing program database *file* (*message*) |
 | Fatal error C1301 | error accessing program database *file*, invalid format, please delete and rebuild |
 | Fatal error C1302 | no profile data for module '*module*' in profile database '*file*' |
