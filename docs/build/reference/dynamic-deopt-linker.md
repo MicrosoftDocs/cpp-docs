@@ -7,7 +7,7 @@ helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option
 ---
 # | `/DYNAMICDEOPT` (Support C++ Dynamic Debugging)
 
-The **`/DYNAMICDEOPT`** linker option enables [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md), which allows you to debug optimized code as if it were compiled deoptimized.
+The **`/DYNAMICDEOPT`** linker option enables [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md), which allows you to debug optimized code as if it had been compiled deoptimized.
 
 ## Syntax
 

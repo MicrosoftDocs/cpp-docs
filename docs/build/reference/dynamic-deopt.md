@@ -7,7 +7,7 @@ helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-dynam
 ---
 # `/dynamicdeopt` (Enable C++ Dynamic Debugging)
 
-Enable [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md) so you can debug optimized code as if it were compiled deoptimized.
+Enable [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md) so you can debug optimized code as if it had been compiled deoptimized.
 
 ## Syntax
 

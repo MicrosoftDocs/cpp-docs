@@ -42,7 +42,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/CLRTHREADATTRIBUTE`](clrthreadattribute-set-clr-thread-attribute.md) | Specifies the threading attribute to apply to the entry point of your CLR program. |
 | [`/CLRUNMANAGEDCODECHECK`](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md) | Specifies whether the linker applies the `SuppressUnmanagedCodeSecurity` attribute to linker-generated P/Invoke stubs that call from managed code into native DLLs. |
 | [`/DEBUG`](debug-generate-debug-info.md) | Creates debugging information. |
-| [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) | Enable [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md) so you can debug optimized code as if it were copmiled deoptimized. |
+| [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) | Enable [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md) to debug optimized code as if it had been compiled deoptimized. |
 | [`/DEBUGTYPE`](debugtype-debug-info-options.md) | Specifies which data to include in debugging information. |
 | [`/DEF`](def-specify-module-definition-file.md) | Passes a module-definition (.def) file to the linker. |
 | [`/DEFAULTLIB`](defaultlib-specify-default-library.md) | Searches the specified library when external references are resolved. |

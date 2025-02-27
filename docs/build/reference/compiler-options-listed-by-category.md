@@ -12,7 +12,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 | Option | Purpose |
 |--|--|
-| [`/dynamicdeopt`](dynamic-deopt.md) | Enable C++ Dynamic Debugging to debug optimized code as if it were deoptimized. |
+| [`/dynamicdeopt`](dynamic-deopt.md) | Enable [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md) to debug optimized code as if it had been compiled deoptimized. |
 | [`/favor:<blend|AMD64|INTEL64|ATOM>`](favor-optimize-for-architecture-specifics.md) | Produces code that is optimized for a specified architecture, or for a range of architectures. |
 | [`/O1`](o1-o2-minimize-size-maximize-speed.md) | Creates small code. |
 | [`/O2`](o1-o2-minimize-size-maximize-speed.md) | Creates fast code. |
