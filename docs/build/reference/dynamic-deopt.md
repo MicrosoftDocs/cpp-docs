@@ -19,13 +19,13 @@ Enable [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md) 
 *`suffix`*\
 Specify the file extension for the deoptimized output.
 
-With no options and given `test.cpp` as input, your output will include `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and ``test.alt.pdb`. This switch allows you to change the suffix of the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the linker. You typically won't use this switch unless you need to avoid filename collisions with other files that you have.
+With no options and given `test.cpp` as input, your output includes `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and ``test.alt.pdb`. This switch allows you to change the suffix of the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the linker. You typically won't use this switch unless you need to avoid filename collisions with other files that you have.
 
 ## Remarks
 
 This flag, available starting with Visual Studio 2022 Version 17.14 Preview 2, applies only to x64 projects.
 
-Compiling with `/dynamicdeopt` generates additional binaries that are used for debugging. When you debug an optimized file and debug into an optimized function, the debugger steps into the alternate binary instead. This allows you to debug as if you are debugging unoptimized code while still getting the performance advantages of optimized code.
+Compiling with `/dynamicdeopt` generates other binaries that are used for debugging. When you debug an optimized file and debug into an optimized function, the debugger steps into the alternate binary instead. This allows you to debug as if you're debugging unoptimized code while still getting the performance advantages of optimized code.
 
 `/dynamicdeopt` requires:
 
@@ -53,7 +53,7 @@ All of the CLR flags
 ```
 
 Turn `/GL `off via Project properties C/C++ > Optimization > Whole Program Optimization. Set it to **No**.
-TUrn `/OPT:ICF` off in Project properties Linker > Optimization > Enable COMDAT Folding. Set it to **No**.
+Turn `/OPT:ICF` off in Project properties Linker > Optimization > Enable COMDAT Folding. Set it to **No**.
 
 ### To set this compiler option programmatically
 

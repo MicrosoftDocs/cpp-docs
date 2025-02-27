@@ -84,7 +84,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/fsanitize`](fsanitize.md) | Enables compilation of sanitizer instrumentation such as AddressSanitizer. |
 | [`/fsanitize-coverage`](fsanitize-coverage.md) | Enables compilation of code coverage instrumentation for libraries such as LibFuzzer. |
 | `/Ft<dir>` | Location of the header files generated for `#import`. |
-| [`/FU<file>`](fu-name-forced-hash-using-file.md) | Forces the use of a file name, as if it had been passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
+| [`/FU<file>`](fu-name-forced-hash-using-file.md) | Forces the use of a file name, as if it were passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
 | [`/Fx`](fx-merge-injected-code.md) | Merges injected code with the source file. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Optimizes for Windows applications. |
 | [`/Gd`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__cdecl`** calling convention. (x86 only) |
