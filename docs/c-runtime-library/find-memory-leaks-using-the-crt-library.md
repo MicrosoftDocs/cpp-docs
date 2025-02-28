@@ -216,7 +216,7 @@ You can use the allocation number to set a breakpoint on the memory allocation.
 
 After you set a breakpoint on a memory-allocation number, continue to debug. Make sure to run under the same conditions, so the memory-allocation number doesn't change. When your program breaks at the specified memory allocation, use the **Call Stack** window and other debugger windows to determine the conditions under which the memory was allocated. Then, you can continue execution to observe what happens to the object and determine why it isn't correctly deallocated.
 
-Setting a data breakpoint on the object might also be helpful. For more information, see [Using breakpoints](/visualstudio/debugger/using-breakpoints.md).
+Setting a data breakpoint on the object might also be helpful. For more information, see [Using breakpoints](/visualstudio/debugger/using-breakpoints).
 
 You can also set memory-allocation breakpoints in code. You can set:
 
@@ -281,5 +281,5 @@ One technique for finding memory leaks begins by placing `_CrtMemCheckpoint` cal
 ## See also
 
 - [CRT debug heap details](./crt-debug-heap-details.md)
-- [Debugger security](/visualstudio/debugger/debugger-security.md)
-- [Debugging native code](/visualstudio/debugger/debugging-native-code.md)
+- [Debugger security](/visualstudio/debugger/debugger-security)
+- [Debugging native code](/visualstudio/debugger/debugging-native-code)

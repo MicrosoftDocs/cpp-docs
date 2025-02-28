@@ -14,7 +14,7 @@ helpviewer_keywords: ["signal function"]
 Sets interrupt signal handling.
 
 > [!IMPORTANT]
-> Do not use this method to shut down a Microsoft Store app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/legal/windows/agreements/store-policies). For more information, see [UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
+> Do not use this method to shut down a Microsoft Store app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/windows/apps/publish/store-policies). For more information, see [UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
 
 ## Syntax
 
