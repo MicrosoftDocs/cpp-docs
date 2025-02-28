@@ -42,7 +42,6 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/CLRTHREADATTRIBUTE`](clrthreadattribute-set-clr-thread-attribute.md) | Specifies the threading attribute to apply to the entry point of your CLR program. |
 | [`/CLRUNMANAGEDCODECHECK`](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md) | Specifies whether the linker applies the `SuppressUnmanagedCodeSecurity` attribute to linker-generated P/Invoke stubs that call from managed code into native DLLs. |
 | [`/DEBUG`](debug-generate-debug-info.md) | Creates debugging information. |
-| [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) | Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) and step in anywhere with on-demand function deoptimization. |
 | [`/DEBUGTYPE`](debugtype-debug-info-options.md) | Specifies which data to include in debugging information. |
 | [`/DEF`](def-specify-module-definition-file.md) | Passes a module-definition (.def) file to the linker. |
 | [`/DEFAULTLIB`](defaultlib-specify-default-library.md) | Searches the specified library when external references are resolved. |
@@ -53,6 +52,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/DLL`](dll-build-a-dll.md) | Builds a DLL. |
 | [`/DRIVER`](driver-windows-nt-kernel-mode-driver.md) | Creates a kernel mode driver. |
 | [`/DYNAMICBASE`](dynamicbase-use-address-space-layout-randomization.md) | Specifies whether to generate an executable image that's rebased at load time by using the address space layout randomization (ASLR) feature. |
+| [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) | Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) and step in anywhere with on-demand function deoptimization. |
 | [`/ENTRY`](entry-entry-point-symbol.md) | Sets the starting address. |
 | [`/ERRORREPORT`](errorreport-report-internal-linker-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 | [`/EXPORT`](export-exports-a-function.md) | Exports a function. |
