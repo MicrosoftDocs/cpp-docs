@@ -7,7 +7,7 @@ helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-dynam
 ---
 # `/dynamicdeopt` (Enable C++ Dynamic Debugging (Preview))
 
-Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging.md) so you can debug optimized code as if it had been compiled deoptimized and step in anywhere with on-demand function deoptimization.
+Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) so you can debug optimized code as if it had been compiled deoptimized and step in anywhere with on-demand function deoptimization.
 
 ## Syntax
 
@@ -66,6 +66,6 @@ Turn `/OPT:ICF` off in Project properties Linker > Optimization > Enable COMDAT 
 
 ## See also
 
-[C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging.md)\
+[C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging)\
 [MSVC Compiler Options](compiler-options.md)\
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

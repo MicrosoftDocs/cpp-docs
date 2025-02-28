@@ -7,7 +7,7 @@ helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option
 ---
 # | `/DYNAMICDEOPT` (Support C++ Dynamic Debugging (Preview))
 
-The **`/DYNAMICDEOPT`** linker option, when used with the compiler switch [`/dynamicdeopt`](dynamic-deopt.md), enables [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging.md), which allows you to debug optimized code as if it had been compiled deoptimized and step in anywhere with on-demand function deoptimization.
+The **`/DYNAMICDEOPT`** linker option, when used with the compiler switch [`/dynamicdeopt`](dynamic-deopt.md), enables [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging), which allows you to debug optimized code as if it had been compiled deoptimized and step in anywhere with on-demand function deoptimization.
 
 ## Syntax
 
@@ -41,6 +41,6 @@ This preview flag, available starting with Visual Studio 2022 Version 17.14 Prev
 ## See also
 
 [`/dynamicdeopt` (Enable C++ Dynamic Debugging (Preview))](dynamic-deopt.md)\
-[C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging.md)\
+[C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging)\
 [MSVC linker reference](linking.md)\
 [MSVC linker options](linker-options.md)
