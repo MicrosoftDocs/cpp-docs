@@ -37,7 +37,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/constexpr:depth<N>`](constexpr-control-constexpr-evaluation.md) | Recursion depth limit for `constexpr` evaluation (default: 512). |
 | [`/constexpr:steps<N>`](constexpr-control-constexpr-evaluation.md) | Terminate `constexpr` evaluation after N steps (default: 100000) |
 | [`/D<name>{=|#}<text>`](d-preprocessor-definitions.md) | Defines constants and macros. |
-| [`/dynamicdeopt`](dynamic-deopt.md) | Enable [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging.md) to debug optimized code as if it had been compiled deoptimized. |
+| [`/dynamicdeopt` (Preview)](dynamic-deopt.md) | Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging.md) and step in anywhere with on-demand function deoptimization. |
 | [`/diagnostics`](diagnostics-compiler-diagnostic-options.md) | Diagnostics format: prints column information. |
 | [`/diagnostics:caret[-]`](diagnostics-compiler-diagnostic-options.md) | Diagnostics format: prints column and the indicated line of source. |
 | [`/diagnostics:classic`](diagnostics-compiler-diagnostic-options.md) | Use legacy diagnostics format. |
