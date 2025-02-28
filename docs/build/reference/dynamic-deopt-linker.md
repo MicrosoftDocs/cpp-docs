@@ -1,12 +1,14 @@
 ---
 description: "Learn more about: /DYNAMICDEOPT (Support C++ Dynamic Debugging)"
-title: "/DYNAMICDEOPT (Support C++ Dynamic Debugging (Preview))"
+title: "/DYNAMICDEOPT (Support C++ Dynamic Debugging) (Preview)"
 ms.date: 3/11/2025
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateDynamicDeoptInformation", "/dynamicdeopt"]
 helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option", "-DYNAMICDEOPT linker option", "c++ dynamic debugging"]
-prerelease: true
 ---
-# | `/DYNAMICDEOPT` (Support C++ Dynamic Debugging (Preview))
+# | `/DYNAMICDEOPT` (Support C++ Dynamic Debugging) (Preview)
+> [!IMPORTANT]
+> The `/DYNAMICDEOPT` linker switch is currently in PREVIEW.
+> This information relates to a prerelease feature that might be substantially modified before release. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 The **`/DYNAMICDEOPT`** linker option, when used with the compiler switch [`/dynamicdeopt`](dynamic-deopt.md), enables [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging), which allows you to debug optimized code as if it had been compiled deoptimized and step in anywhere with on-demand function deoptimization.
 

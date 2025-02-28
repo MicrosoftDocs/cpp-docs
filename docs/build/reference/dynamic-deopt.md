@@ -4,9 +4,11 @@ description: "Use the Microsoft C++ compiler option /dynamicdeopt to use C++ Dyn
 ms.date: 3/11/2025
 f1_keywords: ["/dynamicdeopt", "VC.Project.VCNMakeTool.CompileAsManaged", "VC.Project.VCCLCompilerTool.CompileAsManaged"]
 helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-dynamicdeopt compiler option [C++]", "dynamicdeopt compiler option [C++]", "/clr compiler option [C++]", "Managed Extensions for C++, compiling", "common language runtime, /clr compiler option"]
-prerelease: true
 ---
-# `/dynamicdeopt` (Enable C++ Dynamic Debugging (Preview))
+# `/dynamicdeopt` (Enable C++ Dynamic Debugging) (Preview)
+> [!IMPORTANT]
+> The `/dynamicdeopt` compiler switch is currently in PREVIEW.
+> This information relates to a prerelease feature that might be substantially modified before release. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) so you can debug optimized code as if it had been compiled deoptimized and step in anywhere with on-demand function deoptimization.
 
