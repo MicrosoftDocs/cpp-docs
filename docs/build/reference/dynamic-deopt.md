@@ -23,11 +23,11 @@ Specify the file extension for the deoptimized output.
 With no options and given `test.cpp` as input, your output includes `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and ``test.alt.pdb`. This switch allows you to change the suffix of the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the linker using [`/dynamicdeopt:suffix` (Preview)](dynamic-deopt-linker.md). You typically don't use this switch unless you need to avoid filename collisions with other files that you have.
 
 *`sync`*\
-Builds the deoptimized output after building the optimized output instead of in parallel. By default, the compiler spawns a parallel instance of the linker to link the unoptimized binary. This switch makes the second link run serially after the first one. This switch is provided in case this better suits your build environment.
+Builds the deoptimized output after building the optimized output instead of in parallel. By default, the compiler spawns a parallel instance of the code generator. This switch makes the them run serially, instead. This switch is provided in case this better suits your build environment.
 
 ## Remarks
 
-This preview flag, available starting with Visual Studio 2022 Version 17.14 Preview 2, applies only to x64 projects.
+This preview flag, available starting with Visual Studio 2022 Version 17.14 Preview 2, applies only to x64 projects and must be used with the corresponding linker flag, [`/DYNAMICDEOPT`](dynamic-deopt-linker.md).
 
 Compiling with `/dynamicdeopt` generates other binaries that are used for debugging. When you debug an optimized file and debug into an optimized function, the debugger steps into the alternate binary instead. This allows you to debug as if you're debugging unoptimized code while still getting the performance advantages of optimized code. 
 
@@ -56,6 +56,7 @@ fsanitize=kernel-address
 All of the CLR flags
 ```
 
+JTW - when I get a build with the property pages, push them to that section that sets the global property that does all of this for you and remove the next two lines. Possibly mention that it turns these things off for you.
 Turn `/GL `off via Project properties C/C++ > Optimization > Whole Program Optimization. Set it to **No**.
 Turn `/OPT:ICF` off in Project properties Linker > Optimization > Enable COMDAT Folding. Set it to **No**.
 

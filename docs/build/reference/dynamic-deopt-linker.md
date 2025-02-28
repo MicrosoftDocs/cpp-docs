@@ -7,12 +7,12 @@ helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option
 ---
 # | `/DYNAMICDEOPT` (Support C++ Dynamic Debugging (Preview))
 
-The **`/DYNAMICDEOPT`** linker option enables [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging.md), which allows you to debug optimized code as if it had been compiled deoptimized and step in anywhere with on-demand function deoptimization.
+The **`/DYNAMICDEOPT`** linker option, when used with the compiler switch [`/dynamicdeopt`](dynamic-deopt.md), enables [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging.md), which allows you to debug optimized code as if it had been compiled deoptimized and step in anywhere with on-demand function deoptimization.
 
 ## Syntax
 
 > **`/DYNAMICDEOPT`**
-> **`/DYNAMICDEOPT:SUFFIX <suffix>`**
+> **`/DYNAMICDEOPT:SUFFIX=<suffix>`**
 > **`/DYNAMICDEOPT:SYNC`**
 
 ## Arguments
@@ -20,7 +20,7 @@ The **`/DYNAMICDEOPT`** linker option enables [C++ Dynamic Debugging (Preview)](
 *`suffix`*\
 Specify the file extension for the deoptimized output.
 
-With no options and given `test.cpp` as input, the compiler output includes `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and ``test.alt.pdb`. This switch allows you to recognize a different suffix for the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the compiler using [`/dynamicdeopt:suffix` (Preview)](dynamic-deopt.md). You typically don't use this switch unless you need to avoid filename collisions with other files that you have.
+With no options and given `test.cpp` as input, the compiler output includes `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and ``test.alt.pdb`. This switch allows you to change the suffix for the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the compiler using [`/dynamicdeopt:suffix` (Preview)](dynamic-deopt.md). You typically don't use this switch unless you need to avoid filename collisions with other files that you have.
 
 *`SYNC`*\
 Builds the deoptimized output after building the optimized output instead of in parallel. By default, the compiler spawns a parallel linker to link the unoptimized binary. This switch makes the second link run serially after the first one. This switch is provided in case this better suits your build environment.
