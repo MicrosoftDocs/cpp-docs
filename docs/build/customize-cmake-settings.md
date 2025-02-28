@@ -72,7 +72,7 @@ For configurations such as Linux that use remote builds, the following settings 
 
 ### `rsync` command arguments
 
-Extra command-line options passed to [`rsync`](https://download.samba.org/pub/rsync/rsync.html), a fast, versatile file-copying tool.
+Extra command-line options passed to [`rsync`](https://download.samba.org/pub/rsync/), a fast, versatile file-copying tool.
 
 ## CMake variables and cache
 

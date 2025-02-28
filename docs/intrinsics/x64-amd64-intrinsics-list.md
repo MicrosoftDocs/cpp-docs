@@ -13,7 +13,7 @@ For information about individual intrinsics, see these resources, as appropriate
 
 - The header file. Many intrinsics are documented in comments in the header file.
 
-- [Intel Intrinsics Guide](https://software.intel.com/sites/landingpage/IntrinsicsGuide). Use the search box to find specific intrinsics.
+- [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html). Use the search box to find specific intrinsics.
 
 - [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/articles/intel-sdm)
 
