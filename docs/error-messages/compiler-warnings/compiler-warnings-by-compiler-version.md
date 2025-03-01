@@ -12,51 +12,50 @@ These versions of the compiler introduced new warnings:
 
 | Product | Compiler version number |
 |--|--|
-| Visual Studio 2002 | 13.00.9466 |
-| Visual Studio 2003 | 13.10.3077 |
-| Visual Studio 2005 | 14.00.50727.762 |
-| Visual Studio 2008 | 15.00.21022.08 |
-| Visual Studio 2010 | 16.00.40219.01 |
-| Visual Studio 2012 | 17.00.51106.1 |
-| Visual Studio 2013 | 18.00.21005.1 |
-| Visual Studio 2015 RTM | 19.00.23026.0 |
-| Visual Studio 2015 Update 1 | 19.00.23506.0 |
-| Visual Studio 2015 Update 2 | 19.00.23918.0 |
-| Visual Studio 2015 Update 3 | 19.00.24215.1 |
-| Visual Studio 2017 RTM | 19.10.25017.0 |
-| Visual Studio 2017 version 15.3 | 19.11.25506.0 |
-| Visual Studio 2017 version 15.5 | 19.12.25830.0 |
-| Visual Studio 2017 version 15.6 | 19.13.26128.0 |
-| Visual Studio 2017 version 15.7 | 19.14.26428.0 |
-| Visual Studio 2017 version 15.8 | 19.15.26726.0 |
-| Visual Studio 2017 version 15.9 | 19.16.26926.0 |
-| Visual Studio 2019 RTM | 19.20.27004.0 |
-| Visual Studio 2019 version 16.1 | 19.21.27702.0 |
-| Visual Studio 2019 version 16.2 | 19.22.27905.0 |
-| Visual Studio 2019 version 16.3 | 19.23.28105.0 |
-| Visual Studio 2019 version 16.4 | 19.24.28314.0 |
-| Visual Studio 2019 version 16.5 | 19.25.28610.0 |
-| Visual Studio 2019 version 16.6 | 19.26.28805.0 |
-| Visual Studio 2019 version 16.7 | 19.27.29112.0 |
-| Visual Studio 2019 version 16.8 | 19.28.29333.0 |
-| Visual Studio 2019 version 16.9 | 19.28.29700.0 |
-| Visual Studio 2019 version 16.10 | 19.29.30000.0 |
-| Visual Studio 2019 version 16.11 | 19.29.30100.0 |
-| Visual Studio 2022 version 17.0 RTW | 19.30 |
-| Visual Studio 2022 version 17.1 | 19.31 |
-| Visual Studio 2022 version 17.2 | 19.32 |
-| Visual Studio 2022 version 17.3 | 19.33 |
-| Visual Studio 2022 version 17.4 | 19.34 |
-| Visual Studio 2022 version 17.5 | 19.35 |
-| Visual Studio 2022 version 17.6 | 19.36 |
-| Visual Studio 2022 version 17.7 | 19.37 |
-| Visual Studio 2022 version 17.8 | 19.38 |
-| Visual Studio 2022 version 17.9 | 19.39 |
-| Visual Studio 2022 version 17.10 | 19.40 |
-| Visual Studio 2022 version 17.11 | 19.41 |
-| Visual Studio 2022 version 17.12 | 19.42 |
 | Visual Studio 2022 version 17.13 | 19.43 |
-
+| Visual Studio 2022 version 17.12 | 19.42 |
+| Visual Studio 2022 version 17.11 | 19.41 |
+| Visual Studio 2022 version 17.10 | 19.40 |
+| Visual Studio 2022 version 17.9 | 19.39 |
+| Visual Studio 2022 version 17.8 | 19.38 |
+| Visual Studio 2022 version 17.7 | 19.37 |
+| Visual Studio 2022 version 17.6 | 19.36 |
+| Visual Studio 2022 version 17.5 | 19.35 |
+| Visual Studio 2022 version 17.4 | 19.34 |
+| Visual Studio 2022 version 17.3 | 19.33 |
+| Visual Studio 2022 version 17.2 | 19.32 |
+| Visual Studio 2022 version 17.1 | 19.31 |
+| Visual Studio 2022 version 17.0 RTW | 19.30 |
+| Visual Studio 2019 version 16.11 | 19.29.30100.0 |
+| Visual Studio 2019 version 16.10 | 19.29.30000.0 |
+| Visual Studio 2019 version 16.9 | 19.28.29700.0 |
+| Visual Studio 2019 version 16.8 | 19.28.29333.0 |
+| Visual Studio 2019 version 16.7 | 19.27.29112.0 |
+| Visual Studio 2019 version 16.6 | 19.26.28805.0 |
+| Visual Studio 2019 version 16.5 | 19.25.28610.0 |
+| Visual Studio 2019 version 16.4 | 19.24.28314.0 |
+| Visual Studio 2019 version 16.3 | 19.23.28105.0 |
+| Visual Studio 2019 version 16.2 | 19.22.27905.0 |
+| Visual Studio 2019 version 16.1 | 19.21.27702.0 |
+| Visual Studio 2019 RTM | 19.20.27004.0 |
+| Visual Studio 2017 version 15.9 | 19.16.26926.0 |
+| Visual Studio 2017 version 15.8 | 19.15.26726.0 |
+| Visual Studio 2017 version 15.7 | 19.14.26428.0 |
+| Visual Studio 2017 version 15.6 | 19.13.26128.0 |
+| Visual Studio 2017 version 15.5 | 19.12.25830.0 |
+| Visual Studio 2017 version 15.3 | 19.11.25506.0 |
+| Visual Studio 2017 RTM | 19.10.25017.0 |
+| Visual Studio 2015 Update 3 | 19.00.24215.1 |
+| Visual Studio 2015 Update 2 | 19.00.23918.0 |
+| Visual Studio 2015 Update 1 | 19.00.23506.0 |
+| Visual Studio 2015 RTM | 19.00.23026.0 |
+| Visual Studio 2013 | 18.00.21005.1 |
+| Visual Studio 2012 | 17.00.51106.1 |
+| Visual Studio 2010 | 16.00.40219.01 |
+| Visual Studio 2008 | 15.00.21022.08 |
+| Visual Studio 2005 | 14.00.50727.762 |
+| Visual Studio 2003 | 13.10.3077 |
+| Visual Studio 2002 | 13.00.9466 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
