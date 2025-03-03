@@ -66,7 +66,7 @@ The following sections list the warnings introduced by each version of Visual C+
 
 ## Warnings introduced in Visual Studio 2022 version 17.13 (compiler version 19.43)
 
-These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.43`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.42`**.
 
 | Warning | Message |
 |--|--|
@@ -76,7 +76,7 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 
 ## Warnings introduced in Visual Studio 2022 version 17.12 (compiler version 19.42)
 
-These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.42`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.41`**.
 
 | Warning | Message |
 |--|--|
@@ -92,7 +92,7 @@ There were no new warnings introduced in 17.11
 
 ## Warnings introduced in Visual Studio 2022 version 17.10 (compiler version 19.40)
 
-These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.40`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.39`**.
 
 | Warning | Message |
 |--|--|
@@ -107,7 +107,7 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 
 ## Warnings introduced in Visual Studio 2022 version 17.9 (compiler version 19.39)
 
-These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.39`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.38`**.
 
 | Warning | Message |
 |--|--|
@@ -116,7 +116,7 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 
 ## Warnings introduced in Visual Studio 2022 version 17.8 (compiler version 19.38)
 
-These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.38`**.
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.37`**.
 
 | Warning | Message |
 |--|--|
