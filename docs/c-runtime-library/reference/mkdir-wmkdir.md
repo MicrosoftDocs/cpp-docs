@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _mkdir, _wmkdir"
 title: "_mkdir, _wmkdir"
+description: "Learn more about: _mkdir, _wmkdir"
 ms.date: "4/2/2020"
 api_name: ["_wmkdir", "_mkdir", "_o__mkdir", "_o__wmkdir"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mkdir", "tmkdir", "_tmkdir", "wmkdir", "_wmkdir"]
 helpviewer_keywords: ["_wmkdir function", "folders [C++], creating", "wmkdir function", "directories [C++], creating", "mkdir function", "tmkdir function", "_mkdir function", "_tmkdir function"]
-ms.assetid: 7f22d01d-63a5-4712-a6e7-d34878b2d840
 ---
 # `_mkdir`, `_wmkdir`
 
@@ -17,7 +16,6 @@ Creates a new directory.
 ## Syntax
 
 ```C
-
 int _mkdir(
    const char *dirname
 );
