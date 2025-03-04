@@ -43,7 +43,7 @@ This preview flag, available starting with Visual Studio 2022 Version 17.14 Prev
 
 ## See also
 
-[`/dynamicdeopt` (Enable C++ Dynamic Debugging (Preview))](dynamic-deopt.md)\
+[`/dynamicdeopt` (Enable C++ Dynamic Debugging) (Preview)](dynamic-deopt.md)\
 [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging)\
 [MSVC linker reference](linking.md)\
 [MSVC linker options](linker-options.md)
