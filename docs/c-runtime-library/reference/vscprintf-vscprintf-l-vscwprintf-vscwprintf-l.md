@@ -59,6 +59,9 @@ If *`format`* is a null pointer, the invalid parameter handler is invoked, as de
 
 ## Remarks
 
+Return Value is the size of the formatted data. If the function takes a `char` buffer, the size is in bytes. If the function takes a `wchar_t` buffer, the size specifies the number of 16-bit words.
+Characters refer to `char` characters for functions that take a `char` buffer, and to `wchar_t` characters for functions that take a `wchar_t` buffer.
+
 Each *`argument`* (if any) is converted according to the corresponding format specification in *`format`*. The format consists of ordinary characters and has the same form and function as the *`format`* argument for [`printf`](printf-printf-l-wprintf-wprintf-l.md).
 
 > [!IMPORTANT]
