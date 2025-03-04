@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_rotr64", "rotl64", "_rotl64", "rotr64", "rotr", "_rotr", "_rotl", "rotl"]
 helpviewer_keywords: ["rotl64 function", "_rotl function", "rotr function", "rotr64 function", "_rotr function", "rotl function", "_rotl64 function", "rotating bits", "_rotr64 function", "bits, rotating"]
-ms.assetid: cfce439b-366f-4584-8ab1-d527b13fcfc6
 ---
 # `_rotl`, `_rotl64`, `_rotr`, `_rotr64`
 
@@ -17,7 +16,6 @@ Rotates bits to the left (**`_rotl`**) or right (**`_rotr`**).
 ## Syntax
 
 ```C
-
 unsigned int _rotl(
    unsigned int value,
    int shift
