@@ -1,4 +1,3 @@
-
 //create and initialize the font to be used
 LOGFONT logFont = {0};
 logFont.lfHeight = -12;
