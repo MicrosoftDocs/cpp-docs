@@ -4,7 +4,6 @@ title: "Compiler errors C2700 Through C2799"
 ms.date: "04/21/2019"
 f1_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2759", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
 helpviewer_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2759", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
-ms.assetid: 6ee257bb-94bc-42b9-af2c-3c73926afba4
 ---
 # Compiler errors C2700 Through C2799
 
@@ -49,7 +48,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2730](compiler-error-c2730.md)|'*class*': cannot be a base class of itself|
 |[Compiler error C2731](compiler-error-c2731.md)|'*function*': function cannot be overloaded|
 |[Compiler error C2732](compiler-error-c2732.md)|linkage specification contradicts earlier specification for '*function*'|
-|[Compiler error C2733](compiler-error-c2733.md)|'*function*': second C linkage of overloaded function not allowed|
+|[Compiler error C2733](compiler-error-c2733.md)|'*function*': you cannot overload a function with '`extern "C"`' linkage|
 |[Compiler error C2734](compiler-error-c2734.md)|'*identifier*': 'const' object must be initialized if not 'extern'|
 |[Compiler error C2735](compiler-error-c2735.md)|'*keyword*' keyword is not permitted in formal parameter type specifier|
 |[Compiler error C2736](compiler-error-c2736.md)|'*keyword*' keyword is not permitted in cast|
@@ -81,7 +80,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2762](compiler-error-c2762.md)|'*template*': invalid expression as a template argument for '*parameter*'|
 |Compiler error C2763|'*template*': invalid use of a string literal as a template argument for '*parameter*'|
 |[Compiler error C2764](compiler-error-c2764.md)|'*parameter*': template parameter not used or deducible in partial specialization '*specialization*'|
-|[Compiler error C2765](compiler-error-c2765.md)|'*function*': an explicit specialization of a function template cannot have any default arguments|
+|[Compiler error C2765](compiler-error-c2765.md)|'*function*': an explicit specialization or instantiation of a function template cannot have any default arguments|
 |[Compiler error C2766](compiler-error-c2766.md)|explicit specialization; '*specialization*' has already been defined|
 |[Compiler error C2767](compiler-error-c2767.md)|managed/WinRT array dimension mismatch: expected *number* argument(s) - *number* provided|
 |[Compiler error C2768](compiler-error-c2768.md)|'*function*': illegal use of explicit template arguments|
@@ -113,7 +112,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2794](compiler-error-c2794.md)|'*identifier*': is not a member of any direct or indirect base class of '*class*'|
 |[Compiler error C2795](compiler-error-c2795.md)|'super::*identifier*' is not a member function|
 |Compiler error C2796|'ref new' may only be used to create an instance of a WinRT type|
-|[Compiler error C2797](compiler-error-c2797.md)|(Obsolete) '*identifier*': list initialization inside member initializer list or non-static data member initializer is not implemented|
+|[Compiler error C2797](compiler-error-c2797.md)|'*identifier*': list initialization inside member initializer list or non-static data member initializer is not implemented|
 |[Compiler error C2798](compiler-error-c2798.md)|'super::*identifier*' is ambiguous|
 |Compiler error C2799|'*identifier*': an object of const-qualified class type without a user-provided default constructor must be initialized|
 

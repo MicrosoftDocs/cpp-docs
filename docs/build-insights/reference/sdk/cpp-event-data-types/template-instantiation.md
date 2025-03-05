@@ -48,8 +48,8 @@ Along with the inherited members from its [Activity](activity.md) base class, th
 
 ### Functions
 
-[Kind](#kind)
-[PrimaryTemplateSymbolKey](#primary-template-symbol-key)
+[Kind](#kind)\
+[PrimaryTemplateSymbolKey](#primary-template-symbol-key)\
 [SpecializationSymbolKey](#specialization-symbol-key)
 
 ## <a name="kind"></a> Kind

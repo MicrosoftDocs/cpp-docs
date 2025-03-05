@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Precompiled header files"
 title: "Precompiled Header Files"
+description: "Learn more about: Precompiled header files"
 ms.date: 06/29/2022
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]
 ---
@@ -259,7 +259,7 @@ Source file `ANOTHER.H`:
 //
 #ifndef __ANOTHER_H
 #define __ANOTHER_H
-#include<iostream>
+#include <iostream>
 void savemoretime( void );
 #endif // __ANOTHER_H
 ```
@@ -273,7 +273,7 @@ Source file `STABLE.H`:
 //
 #ifndef __STABLE_H
 #define __STABLE_H
-#include<iostream>
+#include <iostream>
 void savetime( void );
 #endif // __STABLE_H
 ```
@@ -289,7 +289,7 @@ Source file `UNSTABLE.H`:
 //
 #ifndef __UNSTABLE_H
 #define __UNSTABLE_H
-#include<iostream>
+#include <iostream>
 void notstable( void );
 #endif // __UNSTABLE_H
 ```
@@ -301,9 +301,9 @@ Source file `APPLIB.CPP`:
 //              the interface code declared in the header
 //              files STABLE.H, ANOTHER.H, and UNSTABLE.H.
 //
-#include"another.h"
-#include"stable.h"
-#include"unstable.h"
+#include "another.h"
+#include "stable.h"
+#include "unstable.h"
 using namespace std;
 // The following code represents code that is deemed stable and
 // not likely to change. The associated interface code is
@@ -331,9 +331,9 @@ Source file `MYAPP.CPP`:
 //             listed in the BOUNDRY macro. Unstable code must
 //             be included after the precompiled code.
 //
-#include"another.h"
-#include"stable.h"
-#include"unstable.h"
+#include "another.h"
+#include "stable.h"
+#include "unstable.h"
 int main( void )
 {
     savetime();
@@ -346,7 +346,7 @@ int main( void )
 
 [Compare header units, modules, and precompiled headers](compare-inclusion-methods.md)\
 [C/C++ building reference](reference/c-cpp-building-reference.md)\
-[MSVC compiler options](reference/compiler-options.md)
+[MSVC compiler options](reference/compiler-options.md)\
 [Overview of modules in C++](../cpp/modules-cpp.md)\
 [Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md)\
 [Walkthrough: Build and import header units in your Visual C++ projects](walkthrough-header-units.md)\

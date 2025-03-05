@@ -334,7 +334,7 @@ int main()
 
 ## See also
 
-[Smart pointers](smart-pointers-modern-cpp.md)
-[Indirection Operator: *](indirection-operator-star.md)<br/>
-[Address-of Operator: &](address-of-operator-amp.md)</br>
+[Smart pointers](smart-pointers-modern-cpp.md)\
+[Indirection Operator: *](indirection-operator-star.md)\
+[Address-of Operator: &](address-of-operator-amp.md)\
 [Welcome back to C++](welcome-back-to-cpp-modern-cpp.md)

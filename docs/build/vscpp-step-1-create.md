@@ -11,7 +11,7 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Prerequisites
 
-- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
+- The **Desktop development with C++** workload must be installed to make the **Console App (C++)** project type available. If it's not installed, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
 
 ## Create your app project
 
@@ -24,6 +24,8 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
     :::image type="complex" source="media/vs2019-choose-console-app.png" alt-text="Screenshot of the create a new project dialog.":::
     The create a new project dialog with the Console App template selected. That template says: Run code in a windows terminal. Prints hello world by default. Has the tags c++, Windows, and Console.
     :::image-end:::
+
+    The **Desktop development with C++** workload must be installed for the C++ Console App template to show up. See [Install C++ support in Visual Studio](vscpp-step-0-installation.md) if you haven't already installed it.
 
 1. In the **Configure your new project** dialog, enter *HelloWorld* in the **Project name** edit box. Choose **Create** to create the project.
 
@@ -79,7 +81,7 @@ Visual Studio now knows to build your project to run in a console window. Next, 
 
    ![View of the process to add a source file for HelloWorld.cpp.](media/vscpp-add-new-item.gif "Add a source file for HelloWorld.cpp")
 
-Visual studio creates a new, empty source code file and opens it in an editor window, ready to enter your source code.
+Visual Studio creates a new, empty source code file and opens it in an editor window, ready to enter your source code.
 
 [I ran into a problem.](#add-a-source-code-file-issues)
 

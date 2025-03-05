@@ -48,7 +48,7 @@ The examples in this article use Ubuntu 18.04 LTS with OpenSSH server version 7.
    ```
 
    > [!NOTE]
-   > `ssh-rsa` is the only FIPS compliant host key algorithm VS supports. The `aes*-ctr` algorithms are also FIPS compliant, but the implementation in Visual Studio isn't approved. The `ecdh-*` key exchange algorithms are FIPS compliant, but Visual Studio doesn't support them.
+   > `ssh-rsa`, `rsa-sha2-*`, and `ecdsa-sha2-*` are the only FIPS compliant host key algorithms VS supports. For more information about the algorithms Visual Studio supports, see [Supported SSH Algorithms](connect-to-your-remote-linux-computer.md#supported-ssh-algorithms).
 
    You're not limited to these options. You can configure `ssh` to use other ciphers, host key algorithms, and so on. Some other relevant security options you may want to consider are `PermitRootLogin`, `PasswordAuthentication`, and `PermitEmptyPasswords`. For more information, see the `man` page for `sshd_config` or the article [SSH Server Configuration](https://www.ssh.com/ssh/sshd_config).
 
@@ -58,35 +58,35 @@ The examples in this article use Ubuntu 18.04 LTS with OpenSSH server version 7.
    sudo service ssh restart
    ```
 
-Next, you'll create an RSA key pair on your Windows computer. Then you'll copy the public key to the remote Linux system for use by `ssh`.
+Next, you'll create an ECDSA key pair on your Windows computer. Then you'll copy the public key to the remote Linux system for use by ssh.
 
-### To create and use an RSA key file
+### To create and use an ECDSA key file
 
-1. On the Windows machine, generate a public/private RSA key pair by using this command:
+1. On the Windows machine, generate a public/private ECDSA key pair by using this command:
 
    ```cmd
-   ssh-keygen -t rsa -b 4096 -m PEM
+   ssh-keygen -t ecdsa -m PEM
    ```
 
-   The command creates a public key and a private key. By default, the keys are saved to *`%USERPROFILE%\.ssh\id_rsa`* and *`%USERPROFILE%\\.ssh\\id_rsa.pub`*. (In PowerShell, use `$env:USERPROFILE` instead of the cmd macro `%USERPROFILE%`) If you change the key name, use the changed name in the steps that follow. We recommend you use a passphrase for increased security.
+   The command creates a public key and a private key. By default, the keys are saved to %USERPROFILE%\.ssh\id_ecdsa and %USERPROFILE%\.ssh\id_ecdsa.pub. (In PowerShell, use $env:USERPROFILE instead of the cmd macro %USERPROFILE%) Keys generated with RSA are also supported. If you change the key name, use the changed name in the steps that follow. We recommend you use a passphrase for increased security.
 
 1. From Windows, copy the public key to the Linux machine:
 
    ```cmd
-   scp %USERPROFILE%\.ssh\id_rsa.pub user@hostname:
+   scp %USERPROFILE%\.ssh\id_ecdsa.pub user@hostname:
    ```
 
 1. On the Linux system, add the key to the list of authorized keys, and ensure the file has the correct permissions:
 
    ```bash
-   cat ~/id_rsa.pub >> ~/.ssh/authorized_keys
+   cat ~/id_ecdsa.pub >> ~/.ssh/authorized_keys
    chmod 600 ~/.ssh/authorized_keys
    ```
 
 1. Now, you can test to see if the new key works in `ssh`. Use it to sign in from Windows:
 
     ```cmd
-    ssh -i %USERPROFILE%\.ssh\id_rsa user@hostname
+    ssh -i %USERPROFILE%\.ssh\id_ecdsa user@hostname
     ```
 
 You've successfully set up `ssh`, created and deployed encryption keys, and tested your connection. Now you're ready to set up the Visual Studio connection.

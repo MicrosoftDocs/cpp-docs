@@ -4,6 +4,8 @@ items:
   items: 
     - name: Read and understand C++ code
       href: ../ide/read-and-understand-code-cpp.md
+    - name: Visualize macro expansions
+      href: ../ide/visualize-macro-expansion.md
     - name: Edit and refactor C++ code
       href: ../ide/writing-and-refactoring-code-cpp.md
     - name: Navigate C++ code
@@ -14,6 +16,8 @@ items:
       href: ../ide/include-cleanup-config.md
     - name: Include Cleanup messages
       href: ../ide/include-cleanup-messages.md
+    - name: C++ Include Diagnostics
+      href: include-diagnostics.md
     - name: Set your C++ coding preferences
       href: ../ide/how-to-set-preferences.md
     - name: Collaborate using Live Share for C++

@@ -1,20 +1,22 @@
 ---
 description: "Learn more about: _putenv_s, _wputenv_s"
-title: "_putenv_s, _wputenv_s"
+title: "_putenv_s, _wputenv_s, _tputenv_s"
 ms.date: "4/2/2020"
-api_name: ["_wputenv_s", "_putenv_s", "_o__putenv_s", "_o__wputenv_s"]
+api_name: ["_wputenv_s", "_putenv_s", "_tputenv_s", "_o__putenv_s", "_o__wputenv_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["putenv_s", "wputenv_s", "_wputenv_s", "_putenv_s"]
-helpviewer_keywords: ["wputenv_s function", "_putenv_s function", "environment variables, deleting", "putenv_s function", "_wputenv_s function", "environment variables, creating", "environment variables, modifying"]
+f1_keywords: ["putenv_s", "wputenv_s", "_wputenv_s", "_putenv_s", "_tputenv_s"]
+helpviewer_keywords: ["wputenv_s function", "_putenv_s function", "environment variables, deleting", "putenv_s function", "_wputenv_s function", "environment variables, creating", "environment variables, modifying", "_tputenv_s function"]
 ---
-# `_putenv_s`, `_wputenv_s`
+# `_putenv_s`, `_wputenv_s`, `_tputenv_s`
 
 Creates, modifies, or removes environment variables. These functions are versions of [`_putenv`, `_wputenv`](putenv-wputenv.md) that have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+For `_tputenv_s`, see [Generic-text function mappings](#generic-text-function-mappings).
 
 ## Syntax
 
@@ -56,11 +58,13 @@ The **`_putenv_s`** function adds new environment variables or modifies the valu
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
-| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| `_tputenv_s` | **`_putenv_s`** | **`_putenv_s`** | **`_wputenv_s`** |
+| `_tputenv_s` | `_putenv_s` | `_putenv_s` | `_wputenv_s` |
 
 *`varname`* is the name of the environment variable to be added or modified and *`value_string`* is the variable's value. If *`varname`* is already part of the environment, its value is replaced by *`value_string`*; otherwise, the new *`varname`* variable and its *`value_string`* are added to the environment. You can remove a variable from the environment by specifying an empty string (that is, `""`) for *`value_string`*.
 

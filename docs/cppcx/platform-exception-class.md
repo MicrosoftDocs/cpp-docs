@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::Exception Class"
 title: "Platform::Exception Class"
+description: "Learn more about: Platform::Exception Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Exception::Exception", "VCCORLIB/Platform::Exception::CreateException", "VCCORLIB/Platform::Exception::HResult", "VCCORLIB/Platform::Exception::Message"]
 helpviewer_keywords: ["Platform::Exception Class"]
-ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
 ---
 # Platform::Exception Class
 
@@ -31,7 +30,7 @@ The `Exception` class also has the following kinds of members.
 
 ### Methods
 
-The `Exception` class inherits the `Equals()`, `Finalize()`,`GetHashCode()`,`GetType()`,`MemberwiseClose()`, and `ToString()` methods from the [Platform::Object Class](../cppcx/platform-object-class.md). The `Exception` class also has the following method.
+The `Exception` class inherits the `Equals()`, `Finalize()`, `GetHashCode()`, `GetType()`, `MemberwiseClose()`, and `ToString()` methods from the [Platform::Object Class](../cppcx/platform-object-class.md). The `Exception` class also has the following method.
 
 |Member|Description|
 |------------|-----------------|

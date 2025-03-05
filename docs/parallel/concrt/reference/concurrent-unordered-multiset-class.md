@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: concurrent_unordered_multiset Class"
 title: "concurrent_unordered_multiset Class"
+description: "Learn more about: concurrent_unordered_multiset Class"
 ms.date: "11/04/2016"
 f1_keywords: ["concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::hash_function", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::insert", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::key_eq", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::swap", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::unsafe_erase"]
 helpviewer_keywords: ["concurrent_unordered_multiset class"]
-ms.assetid: 219d7d67-1ff0-45f4-9400-e9cc272991a4
 ---
 # concurrent_unordered_multiset Class
 
@@ -437,7 +436,7 @@ void max_load_factor(float _Newmax);
 
 ### Return Value
 
-The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid..
+The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid.
 
 ## <a name="max_size"></a> max_size
 
@@ -694,5 +693,5 @@ The maximum number of buckets in this container.
 
 ## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
+[concurrency Namespace](concurrency-namespace.md)\
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)

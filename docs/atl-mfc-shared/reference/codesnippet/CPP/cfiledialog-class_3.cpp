@@ -1,7 +1,7 @@
 void CMyClass::OnFileOpen()
 {
    // szFilters is a text string that includes two file name filters:
-   // "*.my" for "MyType Files" and "*.*' for "All Files."
+   // "*.my" for "MyType Files" and "*.*" for "All Files."
    TCHAR szFilters[]= _T("MyType Files (*.my)|*.my|All Files (*.*)|*.*||");
 
    // Create an Open dialog; the default file name extension is ".my".

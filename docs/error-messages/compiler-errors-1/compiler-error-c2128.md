@@ -2,9 +2,8 @@
 description: "Learn more about: Compiler Error C2128"
 title: "Compiler Error C2128"
 ms.date: "11/04/2016"
-f1_keywords: ["c2128"]
+f1_keywords: ["C2128"]
 helpviewer_keywords: ["C2128"]
-ms.assetid: 08cbf734-75b3-49f2-9026-9b319947612d
 ---
 # Compiler Error C2128
 

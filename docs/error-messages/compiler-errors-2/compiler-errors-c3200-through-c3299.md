@@ -4,7 +4,6 @@ title: "Compiler errors C3200 Through C3299"
 ms.date: 06/01/2022
 f1_keywords: ["C3220", "C3221", "C3245", "C3249", "C3250", "C3256", "C3257", "C3258", "C3259", "C3260", "C3261", "C3263", "C3267", "C3281", "C3294"]
 helpviewer_keywords: ["C3220", "C3221", "C3245", "C3249", "C3250", "C3256", "C3257", "C3258", "C3259", "C3260", "C3261", "C3263", "C3267", "C3281", "C3294"]
-ms.assetid: 6b3104f6-63bc-4823-b6f3-b8a16be4b87f
 ---
 # Compiler errors C3200 Through C3299
 
@@ -64,7 +63,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C3245 | '*function*': use of a variable template requires template argument list |
 | [Compiler error C3246](compiler-error-c3246.md) | '*class*': cannot inherit from '*base_class*' as it has been declared as '*inheritance*' |
 | [Compiler error C3247](compiler-error-c3247.md) | '*coclass*': a coclass cannot inherit from another coclass '*base_class*' |
-| [Compiler error C3248](compiler-error-c3248.md) | Obsolete. '*function*': function declared as 'sealed' cannot be overridden by '*function*' |
+| [Compiler error C3248](compiler-error-c3248.md) | '*function*': function declared as '`sealed`' cannot be overridden by '*function*' |
 | Compiler error C3249 | illegal statement or sub-expression for '`constexpr`' function (Obsolete in Visual Studio 2022.) |
 | Compiler error C3250 | '*declaration*': declaration is not allowed in '`constexpr`' function body (Obsolete in Visual Studio 2022.) |
 | [Compiler error C3251](compiler-error-c3251.md) | cannot invoke base class method on a value type instance (Obsolete in Visual Studio 2022.) |
@@ -77,7 +76,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C3258 | Obsolete. |
 | Compiler error C3259 | '`constexpr`' functions can only have one `return` statement (Obsolete in Visual Studio 2022.) |
 | Compiler error C3260 | '*token*': skipping unexpected token(s) before lambda body |
-| Compiler error C3261 | a function returning a managed/WinRT array must have array brackets at the end of the declaration: '*identifier*(...) \[]' |
+| Compiler error C3261 | a function returning a managed/WinRT array must have array brackets at the end of the declaration: '*identifier*(...) []' |
 | [Compiler error C3262](compiler-error-c3262.md) | invalid array indexing: *number* dimension(s) specified for *number*-dimensional '*type*' |
 | Compiler error C3263 | Obsolete. |
 | [Compiler error C3264](compiler-error-c3264.md) | '*identifier*': a class-constructor cannot have a return type |
@@ -102,7 +101,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C3283](compiler-error-c3283.md) | '*interface*': an interface cannot have an instance constructor |
 | [Compiler error C3284](compiler-error-c3284.md) | the constraints for generic parameter '*parameter*' of function '*declarator*' must match the constraints for generic parameter '*parameter*' of function '*declarator*' |
 | [Compiler error C3285](compiler-error-c3285.md) | for each statement cannot operate on variables of type '*type*' |
-| [Compiler error C3286](compiler-error-c3286.md) | '*specifier*': an iteration variable cannot have any storage-class specifiers |
+| [Compiler error C3286](compiler-error-c3286.md) | A for-range-declaration cannot have a storage class other than '`constexpr`' |
 | [Compiler error C3287](compiler-error-c3287.md) | the type '*type*' (return type of `GetEnumerator`) must have a suitable public `MoveNext` member function and public `Current` property |
 | [Compiler error C3288](compiler-error-c3288.md) | '*type*': illegal dereference of a handle type |
 | [Compiler error C3289](compiler-error-c3289.md) | '*identifier*': a trivial property cannot be indexed |

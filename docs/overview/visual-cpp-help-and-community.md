@@ -2,7 +2,8 @@
 title: "Microsoft C/C++ help and community"
 description: "This article lists various resources for help and information on Visual Studio and the Microsoft C/C++ compiler and tools."
 ms.date: 03/03/2022
-ms.technology: "cpp-ide"
+ms.service: "visual-cpp"
+ms.subservice: "ide"
 ---
 # Microsoft C/C++ help and community
 

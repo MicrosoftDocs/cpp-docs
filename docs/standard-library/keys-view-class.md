@@ -59,7 +59,7 @@ The following list of member functions refers to the `keys_view` class. Recall t
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 
@@ -118,13 +118,13 @@ int main()
         {"C++11", 2011},
         {"C++14", 2014},
         {"C++17", 2017},
-        {"c++20", 2020}
+        {"C++20", 2020}
     };
 
     // Extract all of the keys from the map
     for (const std::string& standards : std::views::keys(cpp_standards))
     {
-        std::cout << standards << ' '; // C++03 C++11 C++14 C++17 C++98 c++20
+        std::cout << standards << ' '; // C++03 C++11 C++14 C++17 C++98 C++20
     }
     std::cout << '\n';
 

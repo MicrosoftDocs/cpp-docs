@@ -2,7 +2,8 @@
 title: "How to report a problem with the Microsoft C++ toolset"
 description: How to create a good problem report and repro information for the Microsoft C++ toolset.
 ms.date: "09/24/2019"
-ms.technology: "cpp-ide"
+ms.service: "visual-cpp"
+ms.subservice: "ide"
 author: "tylermsft"
 ms.author: "twhitney"
 ---
@@ -12,9 +13,9 @@ If you find problems in the Microsoft C++ compiler (MSVC), the linker, or other 
 
 ## How to report a C++ toolset issue
 
-The best way to let us know about a problem is to send us a report that includes a description of the problem you've discovered. It should have all the details about how you build your program. And it should include a *repro*, a complete test case we can use to reproduce the problem on our own machines. This information lets us quickly verify that the problem exists in our code and isn't local to your environment. It helps us determine whether it affects other versions of the compiler, and to diagnose its cause.
+The best way to let us know about a problem is to send us a report that includes a description of the problem you discovered. It should have all the details about how you build your program. And it should include a *repro*, a complete test case we can use to reproduce the problem on our own machines. This information lets us quickly verify that the problem exists in our code and isn't local to your environment. It helps us determine whether it affects other versions of the compiler, and to diagnose its cause.
 
-In the sections below, you'll read about what makes a good report. We describe how to generate a repro for the kind of issue you've found, and how to send your report to the product team. Your reports are important to us and to other developers like you. Thank you for helping us improve Microsoft C++!
+In the following sections, read about what makes a good report. We describe how to generate a repro for the kind of issue you found, and how to send your report to the product team. Your reports are important to us and to other developers like you. Thank you for helping us improve Microsoft C++!
 
 ## How to prepare your report
 
@@ -65,15 +66,15 @@ Copy and paste the entire output into your report.
 
 ### The command line
 
-We need the exact command line, cl.exe and all of its arguments, used to build your code. That's so we can build it in exactly the same way on our machines. It's important because the problem you've found might only exist when building with a certain argument or combination of arguments.
+We need the exact command line, cl.exe and all of its arguments, used to build your code. That's so we can build it in exactly the same way on our machines. It's important because the problem you found might only exist when building with a certain argument or combination of arguments.
 
 The best place to find this information is in the build log immediately after you experience the problem. It ensures that the command line contains exactly the same arguments that might contribute to the problem.
 
 #### To report the contents of the command line
 
-1. Locate the **CL.command.1.tlog** file and open it. By default, this file is located in your Documents folder in \\Visual Studio *version*\\Projects\\*SolutionName*\\*ProjectName*\\*Configuration*\\*ProjectName*.tlog\\CL.command.1.tlog, or in your User folder under \\Source\\Repos\\*SolutionName*\\*ProjectName*\\*Configuration*\\*ProjectName*.tlog\\CL.command.1.tlog. It may be in a different location if you use another build system, or if you've changed the default location for your project.
+1. Locate the **CL.command.1.tlog** file and open it. By default, this file is located in your Documents folder in \\Visual Studio *version*\\Projects\\*SolutionName*\\*ProjectName*\\*Configuration*\\*ProjectName*.tlog\\CL.command.1.tlog, or in your User folder under \\Source\\Repos\\*SolutionName*\\*ProjectName*\\*Configuration*\\*ProjectName*.tlog\\CL.command.1.tlog. It may be in a different location if you use another build system, or if you changed the default location for your project.
 
-   Inside this file, you'll find the names of your source code files, followed by the command-line arguments used to compile them, each on separate lines.
+   Inside this file, find the names of your source code files, followed by the command-line arguments used to compile them, each on separate lines.
 
 1. Locate the line that contains the name of the source code file where the problem occurs. The line below it contains the corresponding cl.exe command arguments.
 
@@ -81,19 +82,19 @@ Copy and paste the entire command line into your report.
 
 ### A description of the problem
 
-We need a detailed description of the problem you've found. That's so we can verify that we see the same effect on our machines. It's also sometimes useful for us to know what you were trying to accomplish, and what you expected to happen.
+We need a detailed description of the problem you found. That's so we can verify that we see the same effect on our machines. It's also sometimes useful for us to know what you were trying to accomplish, and what you expected to happen.
 
-A good description provides the **exact error messages** given by the toolset, or the exact runtime behavior you see. We need this information to verify that we've properly reproduced the issue. Include **all** of the compiler output, not just the last error message. We need to see everything that led up to the issue you report. If you can duplicate the issue by using the command-line compiler, that compiler output is preferred. The IDE and other build systems may filter the error messages you see, or only capture the first line of an error message.
+A good description provides the **exact error messages** given by the toolset, or the exact runtime behavior you see. We need this information to verify that we properly reproduced the issue. Include **all** of the compiler output, not just the last error message. We need to see everything that led up to the issue you report. If you can duplicate the issue by using the command-line compiler, that compiler output is preferred. The IDE and other build systems may filter the error messages you see, or only capture the first line of an error message.
 
 If the issue is that the compiler accepts invalid code and doesn't generate a diagnostic, include that in your report.
 
-To report a runtime behavior problem, include an **exact copy** of what the program prints, and what you expect to see. Ideally, you'll embed it in the output statement itself, for example, `printf("This should be 5: %d\n", actual_result);`. If your program crashes or hangs, mention that as well.
+To report a runtime behavior problem, include an **exact copy** of what the program prints, and what you expect to see. Ideally, embed it in the output statement itself, for example, `printf("This should be 5: %d\n", actual_result);`. If your program crashes or hangs, mention that as well.
 
-Add any other details that might help us diagnose the problem you found, such as any work-arounds you've discovered. Try not to repeat information found elsewhere in your report.
+Add any other details that might help us diagnose the problem you found, such as any work-arounds you discovered. Try not to repeat information found elsewhere in your report.
 
 ### The repro
 
-A *repro* is a complete, self-contained source code example. It reproducibly demonstrates the problem you've found, hence the name. We need a repro so that we can reproduce the error on our machines. The code should be sufficient by itself to create a basic executable that compiles and runs. Or, that *would* compile and run, if not for the problem you've found. A repro isn't a code snippet. It should have complete functions and classes, and contain all the necessary #include directives, even for the standard headers.
+A *repro* is a complete, self-contained source code example. It reproducibly demonstrates the problem you found, hence the name. We need a repro so that we can reproduce the error on our machines. The code should be sufficient by itself to create a basic executable that compiles and runs. Or, that *would* compile and run, if not for the problem you found. A repro isn't a code snippet. It should have complete functions and classes, and contain all the necessary #include directives, even for the standard headers.
 
 #### What makes a good repro
 
@@ -103,9 +104,9 @@ A good repro is:
 
 - **Self-Contained.** Repros should avoid unnecessary dependencies. If you can reproduce the problem without third-party libraries, then do so. If you can reproduce the problem without any library code besides simple output statements (for example, `puts("this shouldn't compile");`, `std::cout << value;`, and `printf("%d\n", value);`), then do so. It's ideal if the example can be condensed to a single source code file, without reference to any user headers. Reducing the amount of code we have to consider as a possible contributor to the problem is enormously helpful to us.
 
-- **Against the latest compiler version.** Repros should use the most recent update to the latest version of the toolset whenever possible. Or, use the most recent prerelease version of the next update or next major release. Problems you may find in older versions of the toolset have often been fixed in newer versions. Fixes are backported to older versions only in exceptional circumstances.
+- **Against the latest compiler version.** Repros should use the most recent update to the latest version of the toolset whenever possible. Or, use the most recent prerelease version of the next update or next major release. Problems you may find in older versions of the toolset are often fixed in newer versions. Fixes are backported to older versions only in exceptional circumstances.
 
-- **Checked against other compilers** if relevant. Repros that involve portable C++ code should verify behavior against other compilers if possible. The C++ standard ultimately determines program correctness, and no compiler is perfect. However, when Clang and GCC accept your code without a diagnostic, and MSVC doesn't, you've probably found a bug in our compiler. (Other possibilities include differences in Unix and Windows behavior, or different levels of C++ standards implementation, and so on.) When all the compilers reject your code, then it's likely that your code is incorrect. Seeing different error messages may help you diagnose the issue yourself.
+- **Checked against other compilers** if relevant. Repros that involve portable C++ code should verify behavior against other compilers if possible. The C++ standard ultimately determines program correctness, and no compiler is perfect. However, when Clang and GCC accept your code without a diagnostic, and MSVC doesn't, you probably found a bug in our compiler. (Other possibilities include differences in Unix and Windows behavior, or different levels of C++ standards implementation, and so on.) When all the compilers reject your code, then it's likely that your code is incorrect. Seeing different error messages may help you diagnose the issue yourself.
 
    You can find lists of online compilers to test your code against in [Online C++ compilers](https://isocpp.org/blog/2013/01/online-c-compilers) on the ISO C++ website, or this curated [List of Online C++ Compilers](https://arnemertz.github.io/online-compilers/) on GitHub. Some specific examples include [Wandbox](https://wandbox.org/) and [Compiler Explorer](https://godbolt.org/).
 
@@ -168,7 +169,7 @@ If the line that begins with **INTERNAL COMPILER ERROR** mentions link.exe, rath
 
 #### Linker crash
 
-Linker crashes occur during the linking phase, after the compiler has run. Typically, the linker will emit [Linker Tools Error LNK1000](../error-messages/tool-errors/linker-tools-error-lnk1000.md).
+Linker crashes occur during the linking phase, after the compiler has run. Typically, the linker emits [Linker Tools Error LNK1000](../error-messages/tool-errors/linker-tools-error-lnk1000.md).
 
 > [!NOTE]
 > If the output mentions C1001 or involves Link-Time Code Generation, refer to [Backend (code generation) crash](#backend-code-generation-crash) instead.
@@ -213,7 +214,7 @@ If incremental linking is enabled, and the crash occurred only after a successfu
 
 #### Bad code generation
 
-Bad code generation is rare. It occurs when the compiler mistakenly generates incorrect code that causes your application to crash at runtime. Instead, it should generate correct code, or detect a problem at compile time. If you believe the problem you've found results in bad code generation, treat your report the same as a [Backend (code generation) crash](#backend-code-generation-crash).
+Bad code generation is rare. It occurs when the compiler mistakenly generates incorrect code that causes your application to crash at runtime. Instead, it should generate correct code, or detect a problem at compile time. If you believe the problem you found results in bad code generation, treat your report the same as a [Backend (code generation) crash](#backend-code-generation-crash).
 
 For this kind of crash, provide a [Link repro](#link-repros) if you're using the **/GL** command-line argument to cl.exe. Provide a [Preprocessed repro](#preprocessed-repros) if not.
 
@@ -221,11 +222,11 @@ For this kind of crash, provide a [Link repro](#link-repros) if you're using the
 
 To help us track down the source of the problem, a [good repro](#what-makes-a-good-repro) is vital. Before you do any of the steps outlined below for specific kinds of repros, try to condense the code that demonstrates the problem as much as possible. Try to eliminate or minimize dependencies, required headers, and libraries. Limit the compiler options and preprocessor definitions used, if possible.
 
-Below are instructions for generating the various kinds of repros you'll use to report different kinds of problems.
+Below are instructions for generating the various kinds of repros to use to report different kinds of problems.
 
 ### Preprocessed repros
 
-A *Preprocessed repro* is a single source file that demonstrates a problem. It's generated from the output of the C preprocessor. To create one, use the **/P** compiler option on the original repro source file. This option inlines the included headers to remove dependencies on additional source and header files. The option also resolves macros, #ifdef conditionals, and other preprocessor commands that could depend on your local environment.
+A *Preprocessed repro* is a single source file that demonstrates a problem. It's generated from the output of the C preprocessor. To create one, use the **/P** compiler option on the original repro source file. This option inlines the included headers to remove dependencies on other source and header files. The option also resolves macros, #ifdef conditionals, and other preprocessor commands that could depend on your local environment.
 
 > [!NOTE]
 > Preprocessed repros are not as useful for problems that might be the result of bugs in our standard library implementation, because we will often want to substitute our latest, in-progress implementation to see whether we've already fixed the problem. In this case, don't preprocess the repro, and if you can't reduce the problem to a single source file, package your code into a .zip file or similar, or consider using an IDE project repro. For more information, see [Other repros](#other-repros).
@@ -240,9 +241,9 @@ A *Preprocessed repro* is a single source file that demonstrates a problem. It's
 
 1. In the developer command prompt console window, enter the command **cl /P** *arguments* *filename.cpp*. For *arguments*, use the list of arguments you captured above. *filename.cpp* is the name of your repro source file. This command replicates the command line you used for the repro, but stops the compilation after the preprocessor pass. Then it writes the preprocessed source code to *filename.i*.
 
-If you're preprocessing a C++/CX source code file, or you're using the C++ Modules feature, some additional steps are required. For more information, see the sections below.
+If you're preprocessing a C++/CX source code file, or you're using the C++ Modules feature, some more steps are required. For more information, see the sections below.
 
-After you've generated the preprocessed file, it's a good idea to make sure that the problem still repros when you compile the preprocessed file.
+After you generate the preprocessed file, it's a good idea to make sure that the problem still repros when you compile the preprocessed file.
 
 #### To confirm the preprocessed file still repros the error
 
@@ -298,7 +299,7 @@ If you're using the Modules feature of the C++ compiler, there are some differen
 
 1. In the developer command prompt console window, enter the command **cl /P** *arguments* *modulename.ixx*. The *arguments* are the arguments captured above, and *modulename.ixx* is the name of the file that creates the module interface.
 
-After you've generated the preprocessed files, it's a good idea to make sure the problem still repros when you use the preprocessed file.
+After you generate the preprocessed files, it's a good idea to make sure the problem still repros when you use the preprocessed file.
 
 #### To confirm the preprocessed file still repros the error
 
@@ -328,7 +329,7 @@ A *link repro* is the linker-generated contents of a directory, specified either
 
 1. To build the repro project in Visual Studio, in the developer command prompt console window, enter the command **devenv**. It ensures that the value of the **link\_repro** environment variable is visible to Visual Studio. To build the project at the command line, use the command-line arguments captured above to duplicate the repro build.
 
-1. Build your repro project, and confirm that the expected problem has occurred.
+1. Build your repro project, and confirm that the expected problem occurred.
 
 1. Close Visual Studio, if you used it to do the build.
 
@@ -363,22 +364,25 @@ You have a couple of good ways to get your report to us. You can use Visual Stud
 
 ### Use the Report a Problem tool
 
-The **Report a Problem** tool in Visual Studio is a way for Visual Studio users to report problems with just a few clicks. It pops up a simple form to send detailed information about the problem you've found. You can then submit your report without ever leaving the IDE.
+The **Report a Problem** tool in Visual Studio is a way for Visual Studio users to report problems with just a few clicks. It pops up a simple form to send detailed information about the problem you found. You can then submit your report without ever leaving the IDE.
 
 Reporting your problem through the **Report a Problem** tool is easy and convenient from the IDE. You can access it from the title bar by choosing the **Send Feedback** icon next to the **Quick Launch** search box. Or, you can find it on the menu bar in **Help** > **Send Feedback** > **Report a Problem**.
 
-When you choose to report a problem, first search the Developer Community for similar problems. In case your problem has been reported before, upvote the report and add comments with additional specifics. If you don't see a similar problem, choose the **Report new problem** button at the bottom of the Visual Studio Feedback dialog and follow the steps to report your problem.
+When you choose to report a problem, first search the Developer Community for similar problems. In case your problem has been reported before, upvote the report and add comments with more specifics. If you don't see a similar problem, choose the **Report new problem** button at the bottom of the Visual Studio Feedback dialog and follow the steps to report your problem.
 
 ### Use the Visual Studio Developer Community pages
 
 The Visual Studio Developer Community pages are another convenient way to report problems and find solutions for Visual Studio and the C++ compiler, tools, and libraries. There are specific Developer Community pages for [Visual Studio](https://aka.ms/feedback/report?space=8), [Visual Studio for Mac](https://aka.ms/feedback/report?space=41), [.NET](https://aka.ms/feedback/report?space=61), [C++](https://aka.ms/feedback/report?space=62), [Azure DevOps](https://aka.ms/feedback/report?space=21), and [Azure DevOps Server](https://aka.ms/feedback/report?space=22).
 
-Beneath the community tabs, near the top of each page, is a search box. You can use it to find posts that report problems similar to yours. You may find a solution or other useful information related to your problem is already available. If someone has reported the same problem before, then upvote and comment on that report, rather than create a new problem report. To comment, vote, or report a new problem, you may be asked to sign in to your Visual Studio account. The first time you sign in, you'll have to agree to give the Developer Community app access to your profile.
+Beneath the community tabs, near the top of each page, is a search box. You can use it to find posts that report problems similar to yours. You may find a solution or other useful information related to your problem is already available. If someone has reported the same problem before, then upvote and comment on that report, rather than create a new problem report. To comment, vote, or report a new problem, you may be asked to sign in to your Visual Studio account. The first time you sign in, you have to agree to give the Developer Community app access to your profile.
 
-For issues with the C++ compiler, linker, and other tools and libraries, first search the [C++ Developer Community](https://aka.ms/vsfeedback/browsecpp) page. If you search for your problem, and it hasn't been reported before, choose the **Report a problem** button next to the search box. You can include your repro code and command line, screenshots, links to related discussions, and any other information you think is relevant and useful.
+For issues with the C++ compiler, linker, and other tools and libraries, first search the [C++ Developer Community](https://aka.ms/vsfeedback/browsecpp) page. If you search for your problem, and it isn't already reported, choose the **Report a problem** button next to the search box. You can include your repro code and command line, screenshots, links to related discussions, and any other information you think is relevant and useful.
 
 > [!TIP]
-> For other kinds of problems you might find in Visual Studio that are unrelated to the C++ toolset (For example, UI issues, broken IDE functionality, or general crashes), use the **Report a Problem** tool in the IDE. This is the best choice, due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've found. These kinds of errors can also be looked up on the Visual Studio [Developer Community](https://aka.ms/feedback/report?space=8) site. For more information, see [How to report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+> Information in the initial Developer Community report will always be public. If this is a concern, see the next section about [Reports and privacy](#reports-and-privacy).
+
+> [!TIP]
+> For other kinds of problems you might find in Visual Studio that are unrelated to the C++ toolset (For example, UI issues, broken IDE functionality, or general crashes), use the **Report a Problem** tool in the IDE. This is the best choice, due to its screenshot capabilities and its ability to record UI actions that lead to the problem you found. These kinds of errors can also be looked up on the Visual Studio [Developer Community](https://aka.ms/feedback/report?space=8) site. For more information, see [How to report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Reports and privacy
 
@@ -404,6 +408,6 @@ To maintain your privacy and keep your sensitive information out of public view,
 
 ## How to report a C++ documentation issue
 
-We use GitHub issues to track problems reported in our documentation. You can now create GitHub issues directly from a content page, which enables you interact in a much richer way with writers and product teams. If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know. Scroll to the bottom of the page and select **Sign in to give documentation feedback**. You'll need to create a GitHub account if you don't have one already. When you have a GitHub account, you can see all of our documentation issues and their status. You also get notifications when changes are made for the issue you reported. For more information, see our [Feedback System blog entry](/teamblog/a-new-feedback-system-is-coming-to-docs).
+We use GitHub issues to track problems reported in our documentation. You can now create GitHub issues directly from a content page, which enables you interact in a richer way with writers and product teams. If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know. Scroll to the bottom of the page and select **Sign in to give documentation feedback**. You need to create a GitHub account if you don't have one already. When you have a GitHub account, you can see all of our documentation issues and their status. You also get notifications when changes are made for the issue you reported. For more information, see our [Feedback System blog entry](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-You create a documentation issue on GitHub when you use the documentation feedback button. The issue is automatically filled in with some information about the page you created the issue on. That's how we know where the problem is located, so don't edit this information. Just append the details about what's wrong, and if you like, a suggested fix. [Our C++ docs are open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to submit a fix yourself, you can. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) on GitHub.
+You create a documentation issue on GitHub when you use the documentation feedback button. The issue is automatically filled in with some information about the page you created the issue on. That's how we know where the problem is located, so don't edit this information. Just append the details about what's wrong, and if you like, a suggested fix. [Our C++ docs are open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to submit a fix yourself, you can. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/main/CONTRIBUTING.md) on GitHub.

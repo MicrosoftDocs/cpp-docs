@@ -2,7 +2,7 @@ items:
 - name: Microsoft C/C++ in Visual Studio
   expanded: false
   items: 
-    - name: C++ in Visual Studio
+    - name: C and C++ in Visual Studio
       href: ../overview/visual-cpp-in-visual-studio.md
     - name: Overview of C++ development in Visual Studio
       href: ../overview/overview-of-cpp-development.md
@@ -24,6 +24,8 @@ items:
       href: ../overview/visual-cpp-language-conformance.md
     - name: Supported target platforms
       href: ../overview/supported-platforms-visual-cpp.md
+    - name: Microsoft C++ compiler versions
+      href: compiler-versions.md
     - name: C++ Tools and Features in Visual Studio Editions
       href: ../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md
     - name: Install C11 and C17 support in Visual Studio

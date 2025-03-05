@@ -74,7 +74,7 @@ This configuration inherits the environment variables of the Visual Studio [x64 
 
 ## Default configuration for MinGW-w64
 
-If you add the MinGW-W64 configuration, the JSON looks this this:
+If you add the MinGW-W64 configuration, the JSON looks this:
 
 ```json
 {

@@ -18,7 +18,7 @@ A command preceded by a semicolon (**`;`**) can appear on a dependency line or i
 project.obj : project.c project.h ; cl /c project.c
 ```
 
-## <a name="command-modifiers"> Command modifiers
+## <a name="command-modifiers"></a> Command modifiers
 
 You can specify one or more command modifiers preceding a command, optionally separated by spaces or tabs. As with commands, modifiers must be indented.
 
@@ -28,7 +28,7 @@ You can specify one or more command modifiers preceding a command, optionally se
 | **`-`**\[*number*] *command* | Turns off error checking for *command*. By default, NMAKE halts when a command returns a nonzero exit code. If *-number* is used, NMAKE stops if the exit code exceeds *number*. Spaces or tabs can't appear between the dash and *number.* At least one space or tab must appear between *number* and *command*. Use **`/I`** to turn off error checking for the entire makefile; use **`.IGNORE`** to turn off error checking for part of the makefile. |
 | **`!`** *command* | Executes *command* for each dependent file if *command* uses **`$**`** (all dependent files in the dependency) or **`$?`** (all dependent files in the dependency with a later timestamp than the target). |
 
-## <a name="filename-parts-syntax"> Filename-parts syntax
+## <a name="filename-parts-syntax"></a> Filename-parts syntax
 
 Filename-parts syntax in commands represents components of the first dependent filename (which may be an implied dependent). Filename components are the file's drive, path, base name, and extension as specified, not as it exists on disk. Use **`%s`** to represent the complete filename. Use **`%|`**\[*parts*]**`F`** (a vertical bar character follows the percent symbol) to represent parts of the filename, where *parts* can be zero or more of the following letters, in any order.
 

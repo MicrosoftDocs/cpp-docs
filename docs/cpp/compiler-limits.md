@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: Compiler Limits"
 title: "Compiler Limits"
+description: "Learn more about: Compiler Limits"
 ms.date: "06/05/2023"
 helpviewer_keywords: ["cl.exe compiler, limits for language constructs"]
 ---
 # Compiler Limits
 
-The C++ standard recommends limits for various language constructs. The following is a list of cases where the Microsoft C++ compiler does not implement the recommended limits. The first number is the limit that is established in the ISO C++ 11 standard (INCITS/ISO/IEC 14882-2011[2012], Annex B) and the second number is the limit implemented by the Microsoft C++ compiler:
+The C++ standard recommends limits for various language constructs. The following is a list of cases where the Microsoft C++ compiler does not implement the recommended limits. The first number is the limit that is established in the ISO C++11 standard (INCITS/ISO/IEC 14882-2011[2012], Annex B) and the second number is the limit implemented by the Microsoft C++ compiler:
 
 - Nesting levels of compound statements, iteration control structures, and selection control structures - C++ standard: 256, Microsoft C++ compiler: depends on the combination of statements that are nested, but generally between 100 and 110.
 
@@ -22,7 +22,7 @@ The C++ standard recommends limits for various language constructs. The followin
 
 - Scope qualifications of one identifier - C++ standard: 256, Microsoft C++ compiler: 127.
 
-- Nested **`extern`** specifications - C++ standard: 1024, Microsoft C++ compiler: 9 (not counting the implicit **`extern`** specification in global scope, or 10, if you count the implicit **`extern`** specification in global scope..
+- Nested **`extern`** specifications - C++ standard: 1024, Microsoft C++ compiler: 9 (not counting the implicit **`extern`** specification in global scope, or 10, if you count the implicit **`extern`** specification in global scope.
 
 - Template arguments in a template declaration - C++ standard: 1024, Microsoft C++ compiler: 2046.
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: type_index Class"
 title: "type_index Class"
+description: "Learn more about: type_index Class"
 ms.date: 06/20/2022
 f1_keywords: ["typeindex/std::type_index"]
 helpviewer_keywords: ["type_index class"]
-ms.assetid: db366119-74cb-43e8-aacf-9679e561fa2f
 ms.custom: devdivchpfy22
 ---
 
@@ -29,7 +28,7 @@ The constructor initializes `ptr` to `&tinfo`.
 
 `name` returns `ptr->name()`.
 
-`hash_code` returns `ptr->hash_code().`
+`hash_code` returns `ptr->hash_code()`.
 
 `operator==` returns `*ptr == right.ptr`.
 
@@ -37,7 +36,7 @@ The constructor initializes `ptr` to `&tinfo`.
 
 `operator<` returns `*ptr->before(*right.ptr)`.
 
-`operator<=` returns `!(right < *this).`
+`operator<=` returns `!(right < *this)`.
 
 `operator>` returns `right < *this`.
 

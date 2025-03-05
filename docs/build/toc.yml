@@ -560,6 +560,8 @@ items:
                   href: ../build/reference/favor-optimize-for-architecture-specifics.md
                 - name: /FC (Full path of source code file in diagnostics)
                   href: ../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md
+                - name: /feature (Enable architecture features)
+                  href: ../build/reference/feature-arm64.md
                 - name: /fp (Specify floating-point behavior)
                   href: ../build/reference/fp-specify-floating-point-behavior.md
                 - name: /fpcvt (Floating-point to unsigned integer conversion behavior)
@@ -626,7 +628,7 @@ items:
                   href: ../build/reference/ifc-map.md
                 - name: /interface (Treat input file as a module interface unit)
                   href: ../build/reference/interface.md
-                - name: /internalPartition (Treat the input file as an internal partition unit.)
+                - name: /internalPartition (Treat the input file as an internal partition unit)
                   href: ../build/reference/internal-partition.md
                 - name: /J (Default char type is unsigned)
                   href: ../build/reference/j-default-char-type-is-unsigned.md
@@ -738,12 +740,16 @@ items:
                   href: ../build/reference/validate-charset-validate-for-compatible-characters.md
                 - name: /vd (Disable construction displacements)
                   href: ../build/reference/vd-disable-construction-displacements.md
+                - name: /vlen (Specify vector length)
+                  href: ../build/reference/vlen.md
                 - name: /vmb, /vmg (Representation method)
                   href: ../build/reference/vmb-vmg-representation-method.md
                 - name: /vmm, /vms, /vmv (General purpose representation)
                   href: ../build/reference/vmm-vms-vmv-general-purpose-representation.md
                 - name: /volatile (volatile keyword interpretation)
                   href: ../build/reference/volatile-volatile-keyword-interpretation.md
+                - name: /volatileMetadata
+                  href: ../build/reference/volatile.md
                 - name: /w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning level)
                   href: ../build/reference/compiler-option-warning-level.md
                 - name: /WL (Enable one-line diagnostics)
@@ -923,6 +929,8 @@ items:
               href: ../build/reference/allowisolation-manifest-lookup.md
             - name: /APPCONTAINER (UWP/Microsoft Store app)
               href: ../build/reference/appcontainer-windows-store-app.md
+            - name: /ARM64XFUNCTIONPADMINX64 (Minimum x64 function padding)
+              href: ../build/reference/arm64-function-pad-min-x64.md
             - name: /ASSEMBLYDEBUG (Add DebuggableAttribute)
               href: ../build/reference/assemblydebug-add-debuggableattribute.md
             - name: /ASSEMBLYLINKRESOURCE (Link to .NET Framework resource)
@@ -1019,6 +1027,8 @@ items:
               href: ../build/reference/libpath-additional-libpath.md
             - name: /LINKREPRO (Link repro directory name)
               href: ../build/reference/linkrepro.md
+            - name: /LINKREPROFULLPATHRSP (Generate file containing absolute paths of linked files)
+              href: ../build/reference/link-repro-full-path-rsp.md
             - name: /LINKREPROTARGET (Link repro file name)
               href: ../build/reference/linkreprotarget.md
             - name: /LTCG (Link-time code generation)
@@ -1053,6 +1063,8 @@ items:
               href: ../build/reference/nodefaultlib-ignore-libraries.md
             - name: /NOENTRY (No entry point)
               href: ../build/reference/noentry-no-entry-point.md
+            - name: /NOFUNCTIONPADSECTION (Disable function padding)
+              href: ../build/reference/no-function-pad-section.md
             - name: /NOLOGO (Suppress startup banner) (Linker)
               href: ../build/reference/nologo-suppress-startup-banner-linker.md
             - name: /NXCOMPAT (Compatible with Data Execution Prevention)

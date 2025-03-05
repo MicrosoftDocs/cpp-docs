@@ -15,7 +15,7 @@ Describes an input iterator object. It extracts objects of class `Type` from an 
 ## Syntax
 
 ```cpp
-template <class Type, class CharType = char, class Traits = char_traits<CharType>, class Distance = ptrdiff_t,>
+template <class Type, class CharType = char, class Traits = char_traits<CharType>, class Distance = ptrdiff_t>
 class istream_iterator
 : public iterator<
     input_iterator_tag, Type, Distance,

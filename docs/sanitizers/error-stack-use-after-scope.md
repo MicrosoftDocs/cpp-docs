@@ -80,7 +80,7 @@ devenv /debugexe example2.exe
 struct IntHolder {
     explicit IntHolder(int* val = 0) : val_(val) { }
     ~IntHolder() {
-        printf("Value: %d\n", *val_);  // Bom!
+        printf("Value: %d\n", *val_);  // Boom!
     }
     void set(int* val) { val_ = val; }
     int* get() { return val_; }
@@ -138,7 +138,7 @@ void temp_from_conversion() {
     a.print();
 }
 
-void main() {
+int main() {
     explicit_temp();
     temp_from_conversion(); 
 }
@@ -147,9 +147,11 @@ void main() {
 To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
-cl example4.cpp /EHsc /fsanitize=address /Zi
+cl example4.cpp /EHsc /fsanitize=address /Zi /Od
 devenv /debugexe example4.exe
 ```
+
+ASAN is a form of dynamic analysis, which means it can only detect bad code that is actually executed. An optimizer may propagate the value of `v` in these cases instead of reading from the address stored in `p`. As a result, this example requires the `/Od` flag.
 
 ### Resulting error - temporaries
 

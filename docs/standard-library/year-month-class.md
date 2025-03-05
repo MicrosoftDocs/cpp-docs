@@ -68,7 +68,7 @@ The [`month`](month-class.md) value.
 1\) The default constructor doesn't initialize the `year` or `month` value.\
 2\) Construct a `year_month` with the specified values.
 
-For information about C++ 20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month`
 

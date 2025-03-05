@@ -1,17 +1,19 @@
 ---
-description: "Learn more about: _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l"
+description: "Learn more about: _fprintf_p, _fprintf_p_l, _ftprintf_p, _ftprintf_p_l, _fwprintf_p, _fwprintf_p_l"
 title: "_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l"
 ms.date: "3/9/2021"
 api_name: ["_fwprintf_p", "_fprintf_p_l", "_fwprintf_p_l", "_fprintf_p"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_fprintf_p", "_ftprintf_p", "fwprintf_p", "_fwprintf_p", "fprintf_p", "ftprintf_p"]
-helpviewer_keywords: ["fprintf_p_l function", "fprintf_p function", "_fprintf_p_l function", "_fprintf_p function", "_ftprintf_p_l function", "streams, printing formatted data to", "_fwprintf_p function", "fwprintf_p function", "_ftprintf_p function", "_fwprintf_p_l function", "ftprintf_p function", "printing [C++], formatted data to streams", "ftprintf_p_l function", "fwprintf_p_l function"]
+f1_keywords: ["_fprintf_p", "_ftprintf_p", "_ftprintf_p_l", "fwprintf_p", "_fwprintf_p", "fprintf_p", "ftprintf_p", "_fwprintf_p_l"]
+helpviewer_keywords: ["fprintf_p_l function", "fprintf_p function", "_fprintf_p_l function", "_fprintf_p function", "_ftprintf_p function", "_ftprintf_p_l function", "streams, printing formatted data to", "_fwprintf_p function", "fwprintf_p function", "_fwprintf_p_l function", "ftprintf_p function", "printing [C++], formatted data to streams", "ftprintf_p_l function", "fwprintf_p_l function"]
 ---
-# `_fprintf_p`, `_fprintf_p_l`, `_fwprintf_p`, `_fwprintf_p_l`
+# `_fprintf_p`, `_fprintf_p_l`, `_ftprintf_p`, `_ftprintf_p_l`, `_fwprintf_p`, `_fwprintf_p_l`
 
 Prints formatted data to a stream.
+
+For `_ftprintf_p` and `_ftprintf_p_l`, see [Generic-text function mappings](#generic-text-function-mappings).
 
 ## Syntax
 
@@ -73,12 +75,14 @@ The versions of these functions with the `_l` suffix are identical except that t
 
 Like the non-secure versions (see [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), these functions validate their parameters and invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md), if either *`stream`* or *`format`* is a null pointer or if there are any unknown or badly formed formatting specifiers. If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
-| Tchar.h routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| `_ftprintf_p` | **`_fprintf_p`** | **`_fprintf_p`** | **`_fwprintf_p`** |
-| `_ftprintf_p_l` | **`_fprintf_p_l`** | **`_fprintf_p_l`** | **`_fwprintf_p_l`** |
+| `_ftprintf_p` | `_fprintf_p` | `_fprintf_p` | `_fwprintf_p` |
+| `_ftprintf_p_l` | `_fprintf_p_l` | `_fprintf_p_l` | `_fwprintf_p_l` |
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 
@@ -86,8 +90,8 @@ For more information, see [Format specification syntax](../format-specification-
 
 | Function | Required header |
 |---|---|
-| **`_fprintf_p`**, **`_fprintf_p_l`** | \<stdio.h> |
-| **`_fwprintf_p`**, **`_fwprintf_p_l`** | \<stdio.h> or \<wchar.h> |
+| `_fprintf_p`, `_fprintf_p_l` | `<stdio.h>` |
+| `_fwprintf_p`, `_fwprintf_p_l` | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

@@ -75,7 +75,7 @@ All features should work by default.
 ### Zephyr
 
 - All thread information is only available if `CONFIG_DEBUG_THREAD_INFO` is enabled.
-- Thread stack usage is only availabe if `CONFIG_INIT_STACKS` and `CONFIG_THREAD_STACK_INFO` are enabled.
+- Thread stack usage is only available if `CONFIG_INIT_STACKS` and `CONFIG_THREAD_STACK_INFO` are enabled.
 - For all object types other than threads, information is only available if `CONFIG_TRACING` and `CONFIG_TRACING_OBJECT_TRACKING` are enabled.
 - The maximum usage of a memory slab is only available if `CONFIG_MEM_SLAB_TRACE_MAX_UTILIZATION` is enabled.
 - The list of threads waiting on an object is only available if `CONFIG_WAITQ_SCALABLE` is disabled.

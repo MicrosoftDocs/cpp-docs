@@ -1,7 +1,7 @@
 ---
 title: "C++ binary compatibility 2015-2022"
 description: "Describes how binary compatibility works between compiled C++ files in Visual Studio 2015, 2017, 2019, and 2022. One Microsoft Visual C++ Redistributable package works for all three versions."
-ms.date: 10/22/2021
+ms.date: 03/07/2024
 helpviewer_keywords: ["binary compatibility, Visual C++"]
 ---
 # C++ binary compatibility between Visual Studio versions
@@ -14,10 +14,11 @@ We've changed this behavior in Visual Studio 2015 and later versions. The runtim
 
 There are three important restrictions on binary compatibility between the v140, v141, v142, and v143 toolsets and minor numbered version updates:
 
-- You can mix binaries built by different versions of the v140, v141, v142, and v143 toolsets. However, you must link by using a toolset at least as recent as the most recent binary in your app. Here's an example: you can link an app compiled using any 2017 toolset (v141, versions 15.0 through 15.9) to a static library compiled using, say, Visual Studio 2019 version 16.2 (v142). You just have to link them by using a version 16.2 or later toolset. You can link a version 16.2 library to a version 16.4 app as long as you use a 16.4 or later toolset.
-
+- Binaries created with different versions of the v140, v141, v142, and v143 toolsets can be combined. The key rule is that the linker should only work with inputs built by a toolset that is the same version (or earlier) as itself. This applies to apps, import libraries, static libraries, and other files as described in [LINK input files](../build/reference/link-input-files.md). In some cases, an import library for an [implicitly linked](../build/linking-an-executable-to-a-dll.md#implicit-linking) DLL built by a later version of the toolset can be linked using an earlier version of the toolset--especially if the import library strictly uses `extern "C"` for the imports/exports. Here are some examples of what this all means:
+    - An app compiled with a 2017 toolset (v141, versions 15.0 to 15.9) can be linked to a static library compiled with Visual Studio 2022 version 17.8 (v143), but the linking must be done using a version 17.8 or later toolset.
+    - Apps and libraries built using VS 2015, 2017, 2019, or 2022 can be linked together, but the linking must be done using a version of the toolset that is as recent as, or more recent than, the most recent toolset used to build any of the binaries you pass to the linker. For example, given three binaries built with toolsets from VS 2015 version 14.3, VS 2017 version 15.9, and VS 2019 version 16.11, you can link them using any toolset version that is 16.11 or later.
+    - If a DLL is built with a newer toolset, the import library can sometimes be used with older toolsets if all of the exports follow the C language calling convention (`extern "C"`). However, the only officially supported case is consuming a newer windows SDK with an older toolset.
 - The Redistributable your app uses has a similar binary-compatibility restriction. When you mix binaries built by different supported versions of the toolset, the Redistributable version must be at least as new as the latest toolset used by any app component.
-
 - Static libraries or object files compiled using the [`/GL` (Whole program optimization)](../build/reference/gl-whole-program-optimization.md) compiler switch or linked using [`/LTCG` (Link-time code generation)](../build/reference/ltcg-link-time-code-generation.md) *aren't* binary-compatible across versions, including minor version updates. All object files and libraries compiled using **`/GL`** and **`/LTCG`** must use exactly the same toolset for the compile and the final link. For example, code built by using **`/GL`** in the Visual Studio 2019 version 16.7 toolset can't be linked to code built by using **`/GL`** in the Visual Studio 2019 version 16.8 toolset. The compiler emits [Fatal error C1047](../error-messages/compiler-errors-1/fatal-error-c1047.md).
 
 ## Upgrade the Microsoft Visual C++ Redistributable from Visual Studio 2015 and later
@@ -38,4 +39,6 @@ This error is by design. We recommend you keep the newest version installed. Mak
 ## See also
 
 [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)\
-[The latest supported Visual C++ Redistributable downloads](../windows/latest-supported-vc-redist.md)
+[The latest supported Visual C++ Redistributable downloads](../windows/latest-supported-vc-redist.md)\
+[How to audit Visual C++ Runtime version usage](../windows/redist-version-auditing.md)\
+[Lifecycle FAQ - Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)

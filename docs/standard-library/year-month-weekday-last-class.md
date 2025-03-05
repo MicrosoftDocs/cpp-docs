@@ -14,7 +14,7 @@ A specific year, month, and last weekday of the month.
 ## Syntax
 
 ```cpp
-class year_month_weekday_last; // C++ 20
+class year_month_weekday_last; // C++20
 ```
 
 ## Remarks
@@ -74,7 +74,7 @@ The [`weekday_last`](weekdaylast-class.md) value.
 *`y`*\
 The [`year`](year-class.md) value.
 
-For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_weekday_last`
 

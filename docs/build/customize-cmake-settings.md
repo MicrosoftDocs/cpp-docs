@@ -44,7 +44,7 @@ Corresponds to the **inheritedEnvironments** setting. Defines the compiler envir
 
 ### CMake toolchain file
 
-Path to the [CMake toolchain file](https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html). This path is passed to CMake as "-DCMAKE_TOOLCHAIN_FILE = \<filepath>". Toolchain files specify locations of compilers and toolchain utilities, and other target platform and compiler-related information. By default, Visual Studio uses the [vcpkg toolchain file](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md#cmake) if this setting is unspecified.
+Path to the [CMake toolchain file](https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html). This path is passed to CMake as `"-DCMAKE_TOOLCHAIN_FILE = <filepath>`. Toolchain files specify locations of compilers and toolchain utilities, and other target platform and compiler-related information. By default, Visual Studio uses the [vcpkg toolchain file](https://github.com/microsoft/vcpkg-docs/blob/main/vcpkg/examples/installing-and-using-packages.md#cmake) if this setting is unspecified.  
 
 ### Build root
 
@@ -72,7 +72,7 @@ For configurations such as Linux that use remote builds, the following settings 
 
 ### `rsync` command arguments
 
-Extra command-line options passed to [`rsync`](https://download.samba.org/pub/rsync/rsync.html), a fast, versatile file-copying tool.
+Extra command-line options passed to [`rsync`](https://download.samba.org/pub/rsync/), a fast, versatile file-copying tool.
 
 ## CMake variables and cache
 

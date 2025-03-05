@@ -573,7 +573,7 @@ Create a view that contains the elements of a range that match the specified con
 
 ```cpp
 1) template<ranges::viewable_range R, class P>
-    requires requires {filter_view(forward<R>(rg), forward<P>(predicate));}
+    requires {filter_view(forward<R>(rg), forward<P>(predicate));}
 constexpr ranges::view auto filter(R&& rg, P&& predicate);
 
 2) template<class P>
@@ -783,7 +783,7 @@ A [`join_view`](join-view-class.md) that contains the elements of all the ranges
 int main()
 {
     // a range of two ranges
-    std::vector<std::string> rangeOfRanges[2]{{"C++", "20", "contains:"}, {"ranges", "modules", "concepts & more."}};
+    std::vector<std::string> rangeOfRanges[2]{{"C++20", "contains:"}, {"ranges", "modules", "concepts & more."}};
 
     for (const auto& elem : std::views::join(rangeOfRanges))
     {
@@ -793,7 +793,7 @@ int main()
 ```
 
 ```output
-C++ 20 contains: ranges modules concepts & more.
+C++20 contains: ranges modules concepts & more.
 ```
 
 ### Remarks

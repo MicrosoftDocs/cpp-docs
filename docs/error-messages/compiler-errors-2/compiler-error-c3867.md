@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3867"
 title: "Compiler Error C3867"
+description: "Learn more about: Compiler Error C3867"
 ms.date: "11/04/2016"
 f1_keywords: ["C3867"]
 helpviewer_keywords: ["C3867"]
-ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
 ---
 # Compiler Error C3867
 
@@ -42,7 +41,7 @@ The following sample generates C3867 and shows how to fix it.
 
 ```cpp
 // C3867_2.cpp
-#include<stdio.h>
+#include <stdio.h>
 
 struct S {
    char *func() {

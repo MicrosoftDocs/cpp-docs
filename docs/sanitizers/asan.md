@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer"
 description: "Top-level description of the AddressSanitizer feature for Microsoft C/C++."
-ms.date: 06/13/2023
+ms.date: 09/06/2024
 f1_keywords: ["AddressSanitizer"]
 helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compiling for AddressSanitizer"]
 ---
@@ -77,14 +77,17 @@ Microsoft recommends you use AddressSanitizer in these three standard workflows:
   - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
   - Local Machine
 
-This article covers the information you require to enable the three workflows listed previously. The information is specific to the **platform-dependent** Windows 10 implementation of AddressSanitizer. This documentation supplements the excellent documentation from [Google, Apple, and GCC](#external-docs) already published.
+This article covers the information you require to enable the three workflows listed previously. The information is specific to the **platform-dependent** Windows 10 (and later) implementation of AddressSanitizer. This documentation supplements the excellent documentation from [Google, Apple, and GCC](#external-docs) already published.
 
 > [!NOTE]
-> Current support is limited to x86 and x64 on Windows 10. [Send us feedback](https://aka.ms/vsfeedback/browsecpp) on what you'd like to see in future releases. Your feedback helps us prioritize other sanitizers for the future, such as **`/fsanitize=thread`**, **`/fsanitize=leak`**, **`/fsanitize=memory`**, **`/fsanitize=undefined`**, or **`/fsanitize=hwaddress`**. You can [report bugs here](https://aka.ms/feedback/report?space=62) if you run into issues.
+> Support is limited to x86 and x64 on Windows 10 and later. [Send us feedback](https://aka.ms/vsfeedback/browsecpp) on what you'd like to see in future releases. Your feedback helps us prioritize other sanitizers for the future, such as **`/fsanitize=thread`**, **`/fsanitize=leak`**, **`/fsanitize=memory`**, **`/fsanitize=undefined`**, or **`/fsanitize=hwaddress`**. You can [report bugs here](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## <a name="command-prompt"></a> Use AddressSanitizer from a developer command prompt
 
-Use the **`/fsanitize=address`** compiler option in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts) to enable compiling for the AddressSanitizer runtime. The **`/fsanitize=address`** option is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL`, and `PGO`). The option works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). It works whether you create an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In the following example, `cl /fsanitize=address /Zi` is passed on the command line.
+Use the **`/fsanitize=address`** compiler option in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts) to enable compiling for the AddressSanitizer runtime. The **`/fsanitize=address`** option is compatible with existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, and `/O2 /GL`). The option works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). It works whether you create an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In the following example, `cl /fsanitize=address /Zi` is passed on the command line.
+
+> [!NOTE]
+> AddressSanitizer doesn't support Profile-guided optimization (PGO). AddressSanitizer shouldn't be used in production.
 
 The AddressSanitizer libraries (.lib files) are linked for you automatically. For more information, see [AddressSanitizer language, build, and debugging reference](asan-building.md).
 
@@ -286,7 +289,7 @@ Extensive documentation already exists for these language and platform-dependent
 - [Apple](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
 - [GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
 
-This seminal paper on the [AddressSanitizer](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) describes the implementation.
+This seminal paper on the [AddressSanitizer (external)](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) describes the implementation.
 
 ## See also
 

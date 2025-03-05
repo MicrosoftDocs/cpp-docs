@@ -2,9 +2,8 @@
 description: "Learn more about: Compiler Warning (level 3) C4534"
 title: "Compiler Warning (level 3) C4534"
 ms.date: "11/04/2016"
-f1_keywords: ["c4534"]
+f1_keywords: ["C4534"]
 helpviewer_keywords: ["C4534"]
-ms.assetid: ec2adf3b-d7a1-4005-bb0c-5d219df78dc8
 ---
 # Compiler Warning (level 3) C4534
 

@@ -118,7 +118,7 @@ Like AArch32, the AArch64 specification provides three system-controlled "thread
 
 ## Floating-point exceptions
 
-Support for IEEE floating-point exceptions is optional on AArch64 systems. For processor variants that do have hardware floating-point exceptions, the Windows kernel silently catches the exceptions and implicitly disables them in the FPCR register. This trap ensures normalized behavior across processor variants. Otherwise, code developed on a platform without exception support may find itself taking unexpected exceptions when running on a platform with support.
+Support for IEEE floating-point exceptions on AArch64 systems is optional. This can be verified by writing a value that enables exceptions to the `FPCR` register and then reading it back. The bits corresponding to supported exceptions will remain set, while the bits corresponding to unsupported exceptions will be reset by the CPU.
 
 ## Parameter passing
 

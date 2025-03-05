@@ -1,17 +1,19 @@
 ---
-description: "Learn more about: fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l"
-title: "fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l"
+description: "Learn more about: fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l, _ftprintf_s, _ftprintf_s_l"
+title: "fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l, _ftprintf_s, _ftprintf_s_l"
 ms.date: "3/9/2021"
-api_name: ["_fprintf_s_l", "fwprintf_s", "fprintf_s", "_fwprintf_s_l"]
+api_name: ["_fprintf_s_l", "fwprintf_s", "fprintf_s", "_fwprintf_s_l", "_ftprintf_s", "_ftprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_ftprintf_s", "fprintf_s", "fwprintf_s"]
-helpviewer_keywords: ["ftprintf_s_l function", "ftprintf_s function", "_fprintf_s_l function", "_ftprintf_s function", "_ftprintf_s_l function", "fwprintf_s_l function", "fwprintf_s function", "fprintf_s_l function", "fprintf_s function", "_fwprintf_s_l function", "print formatted data to streams"]
+f1_keywords: ["_ftprintf_s", "_ftprintf_s_l", "fprintf_s", "fwprintf_s", "_fwprintf_s_l", "_ftprintf", "_ftprintf_l"]
+helpviewer_keywords: ["ftprintf_s_l function", "ftprintf_s function", "_ftprintf_l function", "_fprintf_s_l function", "_ftprintf_s function", "_ftprintf_s_l function", "fwprintf_s_l function", "fwprintf_s function", "fprintf_s_l function", "fprintf_s function", "_fwprintf_s_l function", "_fwprintf_s_l function", "print formatted data to streams"]
 ---
-# `fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`
+# `fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`, `_ftprintf`, `_ftprintf_l`, `_ftprintf_s`, `_ftprintf_s_l`
 
 Print formatted data to a stream. These functions are versions of [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
+
+For `_ftprintf_s` and `_ftprintf_s_l`, see [Generic-text function mappings](#generic-text-function-mappings).
 
 ## Syntax
 
@@ -69,17 +71,18 @@ The versions of these functions with the **`_l`** suffix are identical except th
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string.
 >
->
 > Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
 
 Like the non-secure versions (see [`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), these functions validate their parameters and invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md), if either *`stream`* or *`format`* is a `NULL` pointer. The format string itself is also validated. If there are any unknown or badly formed formatting specifiers, these functions generate the invalid parameter exception. In all cases, If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`. For more information about return codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
-| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| **`_ftprintf_s`** | **`fprintf_s`** | **`fprintf_s`** | **`fwprintf_s`** |
-| **`_ftprintf_s_l`** | **`_fprintf_s_l`** | **`_fprintf_s_l`** | **`_fwprintf_s_l`** |
+| `_ftprintf_s` | `fprintf_s` | `fprintf_s` | `fwprintf_s` |
+| `_ftprintf_s_l` | `_fprintf_s_l` | `_fprintf_s_l` | `_fwprintf_s_l` |
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 

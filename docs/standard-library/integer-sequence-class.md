@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: integer_sequence Class"
 title: "integer_sequence Class"
+description: "Learn more about: integer_sequence Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::index_sequence", "type_traits/std::make_index_sequence", "type_traits/std::integer_sequence", "type_traits/std::make_integer_sequence", "type_traits/std::index_sequence_for"]
 helpviewer_keywords: ["std::index_sequence", "std::make_index_sequence", "std::integer_sequence", "std::make_integer_sequence", "std::index_sequence_for"]
-ms.assetid: 2cfdddee-819d-478e-bb78-c8a9c2696803
 ---
 # integer_sequence Class
 
@@ -40,7 +39,7 @@ A parameter pack that is passed directly to a function can be unpacked without a
 
 The following example is based on the original proposal [N3658](https://wg21.link/n3658). It shows how to use an `integer_sequence` to create a `std::tuple` from a `std::array<T,N>`, and how to use an `integer_sequence` to get at the tuple members.
 
-In the `a2t` function, an `index_sequence` is an alias of `integer_sequence` based on the `size_t` integral type. `make_index_sequence` is an alias that at compile time creates a zero-based `index_sequence` with the same number of elements as the array that is passed in by the caller. `a2t` passes the `index_sequence` by value to `a2t_` , where the expression `a[I]...` unpacks `I`, and then the elements are being fed to `make_tuple` which consumes them as individual arguments. For example, if the sequence contains three elements, then `make_tuple` is called as make_tuple(a[0], a[1], a[2]). The array elements themselves can of course be any type.
+In the `a2t` function, an `index_sequence` is an alias of `integer_sequence` based on the `size_t` integral type. `make_index_sequence` is an alias that at compile time creates a zero-based `index_sequence` with the same number of elements as the array that is passed in by the caller. `a2t` passes the `index_sequence` by value to `a2t_`, where the expression `a[I]...` unpacks `I`, and then the elements are being fed to `make_tuple` which consumes them as individual arguments. For example, if the sequence contains three elements, then `make_tuple` is called as make_tuple(a[0], a[1], a[2]). The array elements themselves can of course be any type.
 
 The apply function accepts a [std::tuple](../standard-library/tuple-class.md), and produces an `integer_sequence` by using the `tuple_size` helper class. Note that [std::decay_t](../standard-library/decay-class.md) is necessary because [tuple_size](../standard-library/tuple-size-class-tuple.md) does not work with reference types. The `apply_` function unpacks the tuple members and forwards them as separate arguments to a function call. In this example the function is a simple lambda expression that prints out the values.
 
@@ -106,7 +105,7 @@ To make an `index_sequence` for a parameter pack, use `index_sequence_for`\<T...
 
 Header: \<type_traits\>
 
-Namepace: std
+Namespace: `std`
 
 ## See also
 

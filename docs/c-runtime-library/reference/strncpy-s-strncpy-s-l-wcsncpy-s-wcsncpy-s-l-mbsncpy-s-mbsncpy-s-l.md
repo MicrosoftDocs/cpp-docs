@@ -1,21 +1,22 @@
 ---
 description: "Learn more about: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l"
-title: "strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l"
+title: "strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l, _tcsncpy_s, _tcsncpy_s_l, _tcsnccpy_s, _tcsnccpy_s_l"
 ms.date: "4/2/2020"
-api_name: ["_mbsncpy_s_l", "wcsncpy_s", "_strncpy_s_l", "strncpy_s", "_mbsncpy_s", "_wcsncpy_s_l", "_o__mbsncpy_s", "_o__mbsncpy_s_l", "_o_strncpy_s", "_o_wcsncpy_s"]
+api_name: ["_mbsncpy_s_l", "wcsncpy_s", "_strncpy_s_l", "strncpy_s", "_mbsncpy_s", "_wcsncpy_s_l", "_o__mbsncpy_s", "_o__mbsncpy_s_l", "_o_strncpy_s", "_o_wcsncpy_s", "_tcsnccpy_s", "_tcsnccpy_s_l", "_tcsncpy_s", "_tcsncpy_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_tcsncpy_s", "_wcsncpy_s_l", "strncpy_s", "_strncpy_s_l", "wcsncpy_s", "_tcsncpy_s_l"]
-helpviewer_keywords: ["_wcsncpy_s_l function", "_mbsnbcpy_s function", "_tcsncpy_s_l function", "mbsncpy_s function", "strncpy_s_l function", "_strncpy_s_l function", "strncpy_s function", "mbsncpy_s_l function", "wcsncpy_s function", "copying strings", "strings [C++], copying", "_mbsnbcpy_s_l function", "_tcsncpy_s function", "wcsncpy_s_l function"]
-ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
+f1_keywords: ["_tcsncpy_s", "_wcsncpy_s_l", "strncpy_s", "_strncpy_s_l", "wcsncpy_s", "_tcsncpy_s_l", "_tcsnccpy_s", "_tcsnccpy_s_l"]
+helpviewer_keywords: ["_wcsncpy_s_l function", "_mbsnbcpy_s function", "_tcsncpy_s_l function", "mbsncpy_s function", "strncpy_s_l function", "_strncpy_s_l function", "strncpy_s function", "mbsncpy_s_l function", "wcsncpy_s function", "_tcsnccpy_s function", "copying strings", "strings [C++], copying", "_mbsnbcpy_s_l function", "_tcsncpy_s function", "wcsncpy_s_l function", "_tcsnccpy_s_l function"]
 ---
-# `strncpy_s`, `_strncpy_s_l`, `wcsncpy_s`, `_wcsncpy_s_l`, `_mbsncpy_s`, `_mbsncpy_s_l`
+# `strncpy_s`, `_strncpy_s_l`, `wcsncpy_s`, `_wcsncpy_s_l`, `_mbsncpy_s`, `_mbsncpy_s_l`, `_tcsncpy_s`, `_tcsncpy_s_l`, `_tcsnccpy_s`, `_tcsnccpy_s_l`
 
 Copies characters of one string to another.  These versions of [`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > **`_mbsncpy_s`** and **`_mbsncpy_s_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+For `_tcsnccpy_s`, `_tcsnccpy_s_l`, `_tcsnccpy_s`, and `_tcsnccpy_s_l` see [Generic-text function mappings](#generic-text-function-mappings).
 
 ## Syntax
 
@@ -168,12 +169,16 @@ The debug library versions of these functions first fill the buffer with 0xFE. T
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
-| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_tcsncpy_s` | **`strncpy_s`** | **`_mbsnbcpy_s`** | **`wcsncpy_s`** |
 | `_tcsncpy_s_l` | **`_strncpy_s_l`** | **`_mbsnbcpy_s_l`** | **`_wcsncpy_s_l`** |
+| `_tcsnccpy_s` | **`strncpy_s`** | **`_mbsncpy_s`** | **`_wcsncpy_s`** |
+| `_tcsnccpy_s_l` | **`_strncpy_s_l`** | **`_mbsncpy_s_l`** | **`_wcsncpy_s_l`** |
 
 > [!NOTE]
 > **`_strncpy_s_l`**, **`_wcsncpy_s_l`** and **`_mbsncpy_s_l`** have no locale dependence. They're provided just for `_tcsncpy_s_l` and aren't intended to be called directly.

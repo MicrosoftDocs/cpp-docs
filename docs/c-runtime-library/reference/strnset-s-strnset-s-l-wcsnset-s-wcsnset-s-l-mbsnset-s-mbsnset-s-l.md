@@ -1,21 +1,22 @@
 ---
 description: "Learn more about: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l"
-title: "_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l"
+title: "_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l, _tcsnset_s, _tcsncset_s, _tcsncset_s_l"
 ms.date: "4/2/2020"
-api_name: ["_mbsnset_s_l", "_strnset_s", "_mbsnset_s", "_strnset_s_l", "_wcsnset_s_l", "_wcsnset_s", "_o__mbsnset_s", "_o__mbsnset_s_l", "_o__strnset_s", "_o__wcsnset_s"]
+api_name: ["_mbsnset_s_l", "_strnset_s", "_mbsnset_s", "_strnset_s_l", "_wcsnset_s_l", "_wcsnset_s", "_o__mbsnset_s", "_o__mbsnset_s_l", "_o__strnset_s", "_o__wcsnset_s", "_tcsncset_s", "_tcsncset_s_l", "_tcsnset_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["_mbsnset_s_l", "wcsnset_s", "_tcsnset_s_l", "_wcsnset_s", "_mbsnset_s", "_wcsnset_s_l", "_strnset_s_l", "strnset_s_l", "_tcsnset_s", "_strnset_s", "strnset_s", "mbsnset_s_l", "mbsnset_s", "wcsnset_s_l"]
-helpviewer_keywords: ["tcsnset_s function", "mbsnset_s_l function", "initializing characters", "wcsnset_s function", "mbsnset_s function", "_tcsnset_s_l function", "_strnset_s_l function", "_mbsnset_s function", "strnset_s_l function", "_tcsnset_s function", "_strnset_s function", "tcsnset_s_l function", "_mbsnset_s_l function", "strnset_s function", "_wcsnset_s function"]
-ms.assetid: 9cf1b321-b5cb-4469-b285-4c07cfbd8813
+f1_keywords: ["_mbsnset_s_l", "wcsnset_s", "_tcsnset_s", "_tcsnset_s_l", "_wcsnset_s", "_mbsnset_s", "_wcsnset_s_l", "_strnset_s_l", "strnset_s_l", "_strnset_s", "strnset_s", "mbsnset_s_l", "mbsnset_s", "wcsnset_s_l", "_tcsncset_s", "_tcsncset_s_l"]
+helpviewer_keywords: ["tcsnset_s function", "mbsnset_s_l function", "initializing characters", "wcsnset_s function", "mbsnset_s function", "_tcsnset_s function", "_tcsnset_s_l function", "_strnset_s_l function", "_mbsnset_s function", "strnset_s_l function", "_strnset_s function", "tcsnset_s_l function", "_mbsnset_s_l function", "strnset_s function", "_wcsnset_s function", "_tcsncset_s function", "_tcsncset_s_l function"]
 ---
-# `_strnset_s`, `_strnset_s_l`, `_wcsnset_s`, `_wcsnset_s_l`, `_mbsnset_s`, `_mbsnset_s_l`
+# `_strnset_s`, `_strnset_s_l`, `_wcsnset_s`, `_wcsnset_s_l`, `_mbsnset_s`, `_mbsnset_s_l`, `_tcsnset_s`, `_tcsncset_s`, `_tcsncset_s_l`
 
 Initializes characters of a string to a given character. These versions of [`_strnset`, `_strnset_l`, `_wcsnset`, `_wcsnset_l`, `_mbsnset`, `_mbsnset_l`](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) have security enhancements, as described in [Security features in the CRT](../security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 > **`_mbsnset_s`** and **`_mbsnset_s_l`** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+For `_tcsnset_s`, `_tcsnset_s_l`, `_tcsncset_s`, and `_tcsncset_s_l` see [Generic-text function mappings](#generic-text-function-mappings).
 
 ## Syntax
 
@@ -92,26 +93,30 @@ These functions set, at most, the first *`count`* characters of *`str`* to *`c`*
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale. For more information, see [`setlocale`](setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../locale.md).
 
-The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with `0xFE`. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
-| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| `_tcsnset_s` | **`_strnset_s`** | **`_mbsnbset_s`** | **`_wcsnset_s`** |
-| `_tcsnset_s_l` | **`_strnset_s_l`** | **`_mbsnbset_s_l`** | **`_wcsnset_s_l`** |
+| `_tcsnset_s` | `_strnset_s` | `_mbsnbset_s` | `_wcsnset_s` |
+| `_tcsnset_s_l` | `_strnset_s_l` | `_mbsnbset_s_l` | `_wcsnset_s_l` |
+| `_tcsncset_s` | `_strnset_s` | `_mbsnset_s` | `_wcsnset_s` |
+| `_tcsncset_s_l` | `_strnset_s_l` | `_mbsnset_s_l` | `_wcsnset_s_l` |
 
 ## Requirements
 
 | Routine | Required header |
 |---|---|
-| **`_strnset_s`** | \<string.h> |
-| **`_strnset_s_l`** | \<tchar.h> |
-| **`_wcsnset_s`** | \<string.h> or \<wchar.h> |
-| **`_wcsnset_s_l`** | \<tchar.h> |
-| **`_mbsnset_s`**, **`_mbsnset_s_l`** | \<mbstring.h> |
+| **`_strnset_s`** | `<string.h>` |
+| **`_strnset_s_l`** | `<tchar.h>` |
+| **`_wcsnset_s`** | `<string.h>` or `<wchar.h>` |
+| **`_wcsnset_s_l`** | `<tchar.h>` |
+| **`_mbsnset_s`**, **`_mbsnset_s_l`** | `<mbstring.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

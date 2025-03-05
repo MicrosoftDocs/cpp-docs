@@ -15,9 +15,11 @@ The Microsoft C++ compiler (MSVC) makes the following intrinsics available on th
 
 The NEON vector instruction set extensions for ARM64 provide Single Instruction Multiple Data (SIMD) capabilities. They resemble the ones in the MMX and SSE vector instruction sets that are common to x86 and x64 architecture processors.
 
-NEON intrinsics are supported, as provided in the header file *arm64_neon.h*. The MSVC support for NEON intrinsics resembles that of the ARM64 compiler, which is documented in the [ARM NEON Intrinsic Reference](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics) on the ARM Infocenter website.
+NEON intrinsics are supported, as provided in the header file `arm64_neon.h`. The MSVC support for NEON intrinsics resembles that of the ARM64 compiler, which is documented in the [ARM NEON Intrinsic Reference](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics) on the ARM Infocenter website.
 
 ## <a name="A"></a> ARM64-specific intrinsics listing
+
+ARM64-specific intrinsics are supported, as provided in the header file `intrin.h`.
 
 |Function Name|Instruction|Function Prototype|
 |-------------------|-----------------|------------------------|
@@ -131,6 +133,8 @@ NEON intrinsics are supported, as provided in the header file *arm64_neon.h*. Th
 |_CountLeadingSigns64||unsigned int _CountLeadingSigns64(\__int64)|
 |_CountLeadingZeros||unsigned int _CountLeadingZeros(unsigned long)|
 |_CountLeadingZeros64||unsigned int _CountLeadingZeros64(unsigned \__int64)|
+|_CountTrailingZeros||unsigned int _CountTrailingZeros(unsigned long)|
+|_CountTrailingZeros64||unsigned int _CountTrailingZeros64(unsigned __int64)|
 |_CountOneBits||unsigned int _CountOneBits(unsigned long)|
 |_CountOneBits64||unsigned int _CountOneBits64(unsigned \__int64)|
 |_ReadStatusReg|MRS|\__int64 _ReadStatusReg(int)|

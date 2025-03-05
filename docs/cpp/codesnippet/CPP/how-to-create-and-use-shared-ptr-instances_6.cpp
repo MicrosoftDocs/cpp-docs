@@ -1,4 +1,3 @@
-
     // Initialize two separate raw pointers.
     // Note that they contain the same values.
     auto song1 = new Song(L"Village People", L"YMCA");

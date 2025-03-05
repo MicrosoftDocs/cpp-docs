@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMouseManager Class"
 title: "CMouseManager Class"
+description: "Learn more about: CMouseManager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMouseManager", "AFXMOUSEMANAGER/CMouseManager", "AFXMOUSEMANAGER/CMouseManager::AddView", "AFXMOUSEMANAGER/CMouseManager::GetViewDblClickCommand", "AFXMOUSEMANAGER/CMouseManager::GetViewIconId", "AFXMOUSEMANAGER/CMouseManager::GetViewIdByName", "AFXMOUSEMANAGER/CMouseManager::GetViewNames", "AFXMOUSEMANAGER/CMouseManager::LoadState", "AFXMOUSEMANAGER/CMouseManager::SaveState", "AFXMOUSEMANAGER/CMouseManager::SetCommandForDblClk"]
 helpviewer_keywords: ["CMouseManager [MFC], AddView", "CMouseManager [MFC], GetViewDblClickCommand", "CMouseManager [MFC], GetViewIconId", "CMouseManager [MFC], GetViewIdByName", "CMouseManager [MFC], GetViewNames", "CMouseManager [MFC], LoadState", "CMouseManager [MFC], SaveState", "CMouseManager [MFC], SetCommandForDblClk"]
-ms.assetid: a4d05017-4e44-4a40-8b57-4ece0de20481
 ---
 # CMouseManager Class
 
@@ -33,7 +32,7 @@ class CMouseManager : public CObject
 
 ## Remarks
 
-The `CMouseManager` class maintains a collection of `CView` objects. Each view is identified by a name and by an ID. These views are shown in the **Customization** dialog box. The user can change the command that is associated with any view through the **Customization** dialog box. The associated command is executed when the user double-clicks in that view. To support this from a coding perspective, you must process the WM_LBUTTONDBLCLK message and call the [CWinAppEx::OnViewDoubleClick](../../mfc/reference/cwinappex-class.md#onviewdoubleclick) function in the code for that `CView` object..
+The `CMouseManager` class maintains a collection of `CView` objects. Each view is identified by a name and by an ID. These views are shown in the **Customization** dialog box. The user can change the command that is associated with any view through the **Customization** dialog box. The associated command is executed when the user double-clicks in that view. To support this from a coding perspective, you must process the WM_LBUTTONDBLCLK message and call the [CWinAppEx::OnViewDoubleClick](../../mfc/reference/cwinappex-class.md#onviewdoubleclick) function in the code for that `CView` object.
 
 You should not create a `CMouseManager` object manually. It will be created by the framework of your application. It will also be destroyed automatically when the user exits the application. To get a pointer to the mouse manager for your application, call [CWinAppEx::GetMouseManager](../../mfc/reference/cwinappex-class.md#getmousemanager).
 
@@ -246,7 +245,7 @@ If *uiCmd* is set to 0, the specified view is no longer associated with a comman
 
 ## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
+[Classes](../../mfc/reference/mfc-classes.md)\
+[CWinAppEx Class](../../mfc/reference/cwinappex-class.md)\
 [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md)

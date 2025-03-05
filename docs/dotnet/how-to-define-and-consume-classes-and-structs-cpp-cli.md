@@ -3,7 +3,6 @@ title: "How to: Define and consume classes and structs (C++/CLI)"
 description: "How to create and use user-defined class and struct types in C++/CLI code."
 ms.date: 09/25/2020
 helpviewer_keywords: ["structs [C++]", "classes [C++], instantiating"]
-ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
 ---
 # How to: Define and consume classes and structs (C++/CLI)
 
@@ -636,7 +635,7 @@ The following sample demonstrates when a copy constructor isn't generated.
 
 ```cpp
 // compile with: /clr
-#include<stdio.h>
+#include <stdio.h>
 
 struct S {
    int i;

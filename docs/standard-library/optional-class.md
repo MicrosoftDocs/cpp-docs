@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: optional Class"
 title: "optional Class"
-ms.date: "11/04/2016"
+ms.date: 11/14/2024
 f1_keywords: ["optional/std::optional", "optional/std::optional::has_value", "optional/std::optional::reset", "optional/std::optional::value", "optional/std::optional::value_or"]
 helpviewer_keywords: ["optional/std::optional", "optional/std::optional::has_value", "optional/std::optional::reset", "optional/std::optional::value", "optional/std::optional::value_or"]
 ---
@@ -11,7 +11,7 @@ The class template `optional<T>` describes an object that may or may not contain
 
 When an instance of `optional<T>` contains a value, the contained value is allocated within the storage of the `optional` object, in a region suitably aligned for type `T`. When an `optional<T>` is converted to **`bool`**, the result is **`true`** if the object contains a value; otherwise, it's **`false`**.
 
-The contained object type `T` must not be [in_place_t](in-place-t-struct.md) or [nullopt_t](nullopt-t-structure.md). `T` must be *destructible*, that is, its destructor must reclaim all owned resources, and may throw no exceptions.
+The contained object type `T` must not be [`in_place_t`](in-place-t-struct.md) or [`nullopt_t`](nullopt-t-structure.md). `T` must be *destructible*, that is, its destructor must reclaim all owned resources, and may throw no exceptions.
 
 The `optional` class is new in C++17.
 
@@ -123,7 +123,7 @@ If *rhs* contains a value, direct initializes the contained value as if using `s
 
 ## <a name="optional-destructor"></a> ~optional destructor
 
-Destroys any non-trivially destructible contained value, if one is present, by invoking its destructor.
+Destroys the contained value, if one is present.
 
 ```cpp
 ~optional();

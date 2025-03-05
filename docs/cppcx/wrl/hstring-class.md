@@ -42,7 +42,7 @@ Name                                     | Description
 [HString::GetRawBuffer](#getrawbuffer)   | Retrieves a pointer to the underlying string data.
 [HString::IsValid](#isvalid)             | Indicates whether the current `HString` object is valid.
 [HString::MakeReference](#makereference) | Creates an `HStringReference` object from a specified string parameter.
-[HString::Release](#release)             | Deletes the underlying string value and intializes the current `HString` object to an empty value.
+[HString::Release](#release)             | Deletes the underlying string value and initializes the current `HString` object to an empty value.
 [HString::Set](#set)                     | Sets the value of the current `HString` object to the specified wide-character string or `HString` parameter.
 
 ### Public Operators

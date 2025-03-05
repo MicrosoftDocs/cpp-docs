@@ -2,9 +2,8 @@
 description: "Learn more about: Compiler errors C2300 Through C2399"
 title: "Compiler errors C2300 Through C2399"
 ms.date: "04/21/2019"
-f1_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2323", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
-helpviewer_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2323", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
-ms.assetid: 07ca45b5-b2f0-4049-837b-40a7a3caed88
+f1_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
+helpviewer_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
 ---
 # Compiler errors C2300 Through C2399
 
@@ -39,7 +38,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2320](compiler-error-c2320.md)|expected ':' to follow access specifier '*specifier*'|
 |Compiler error C2321|'*identifier*' is a keyword, and cannot be used in this context|
 |[Compiler error C2322](compiler-error-c2322.md)|'*identifier*': address of dllimport '*identifier*' is not static|
-|Compiler error C2323|'*identifier*': non-member operator new or delete functions may not be declared static or in a namespace other than the global namespace|
+|[Compiler error C2323](compiler-error-c2323.md)|'*identifier*': non-member operator new or delete functions may not be declared static or in a namespace other than the global namespace|
 |[Compiler error C2324](compiler-error-c2324.md)|'*identifier*': unexpected to the right of '::~'|
 |[Compiler error C2325](compiler-error-c2325.md)|'*type1*': unexpected type to the right of '->~': expected '*type2*'|
 |[Compiler error C2326](compiler-error-c2326.md)|'*declarator*': function cannot access '*identifier*'|
@@ -54,7 +53,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C2335|'*identifier*': a type cannot be introduced in a function parameter list|
 |Compiler error C2336|'*type*': illegal type|
 |[Compiler error C2337](compiler-error-c2337.md)|'*attribute*': attribute not found|
-|[Compiler error C2338](compiler-error-c2338.md)|*(error message from external provider)*|
+|[Compiler error C2338](compiler-error-c2338.md)|static_assert failed: '*(error message from external provider)*'|
 |Compiler error C2339|'*identifier*': illegal type in embedded-IDL|
 |Compiler error C2340|'*identifier*': 'static' can only be used within a class definition|
 |[Compiler error C2341](compiler-error-c2341.md)|'*section*': segment must be defined using #pragma data_seg, code_seg or section prior to use|
@@ -68,7 +67,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2349](compiler-error-c2349.md)|'*function*' cannot be compiled as managed: '*explanation*'; use #pragma unmanaged|
 |[Compiler error C2350](compiler-error-c2350.md)|'*identifier*' is not a static member|
 |[Compiler error C2351](compiler-error-c2351.md)|obsolete C++ constructor initialization syntax|
-|[Compiler error C2352](compiler-error-c2352.md)|'*identifier*': illegal call of non-static member function|
+|[Compiler error C2352](compiler-error-c2352.md)|'*identifier*': a call of a non-static member function requires an object|
 |[Compiler error C2353](compiler-error-c2353.md)|exception specification is not allowed|
 |Compiler error C2354|Obsolete.|
 |[Compiler error C2355](compiler-error-c2355.md)|'this': can only be referenced inside non-static member functions or non-static data member initializers|
@@ -97,7 +96,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2378](compiler-error-c2378.md)|'*identifier*': redefinition; symbol cannot be overloaded with a typedef|
 |[Compiler error C2379](compiler-error-c2379.md)|formal parameter *number* has different type when promoted|
 |[Compiler error C2380](compiler-error-c2380.md)|type(s) preceding '*identifier*' (constructor with return type, or illegal redefinition of current class-name?)|
-|[Compiler error C2381](compiler-error-c2381.md)|'*identifier*': redefinition; '__declspec(noreturn)' or '[[noreturn]]' differs|
+|[Compiler error C2381](compiler-error-c2381.md)|'*identifier*': redefinition; '`noreturn`' differs|
 |[Compiler error C2382](compiler-error-c2382.md)|'*identifier*': redefinition; different exception specifications|
 |[Compiler error C2383](compiler-error-c2383.md)|'*identifier*': default-arguments are not allowed on this symbol|
 |[Compiler error C2384](compiler-error-c2384.md)|'*member*': cannot apply thread_local or __declspec(thread) to a member of a managed/WinRT class|
@@ -120,4 +119,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2001 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

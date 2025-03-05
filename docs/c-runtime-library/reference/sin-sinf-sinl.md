@@ -96,4 +96,4 @@ cos( 1.570796 ) = 0.000000
 [`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
 [`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
 [`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)\
-[`_CIsin`](../cisin.md)\
+[`_CIsin`](../cisin.md)

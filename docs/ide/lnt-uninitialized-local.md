@@ -25,7 +25,7 @@ void example() {
   std::string s;  // OK: The type is default initialized.
 
   int j;     // OK: The local is immediately assigned after declaration.
-  j = 0;     // This is allowed as as a slight relaxation of the C++ Core Guideline.
+  j = 0;     // This is allowed as a slight relaxation of the C++ Core Guideline.
 }
 ```
 

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: EXTERN"
+description: "Learn more about the MASM directive: EXTERN"
 title: "EXTERN (MASM)"
-ms.date: "12/06/2019"
+ms.date: 1/10/2025
 helpviewer_keywords: ["EXTERN directive"]
-ms.assetid: 667d703d-3aaf-4139-a586-29bc5dab1aff
 ---
 # EXTERN
 
@@ -17,7 +16,9 @@ Defines one or more external variables, labels, or symbols called *name* whose t
 
 The *language-type* argument is valid in 32-bit MASM only.
 
-The *type* can be [ABS](operator-abs.md), which imports *name* as a constant. Same as [EXTRN](extrn.md).
+The *type* can be [`ABS`](operator-abs.md), which imports *name* as a constant. Same as [`EXTRN`](extrn.md).
+
+The *type* can also be [`PROC`](proc.md), in which case *name* is treated as an external procedure.
 
 ## See also
 

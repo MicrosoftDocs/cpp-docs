@@ -39,7 +39,7 @@ The year is unspecified.\
 
 ## Requirements
 
-**Header:** `<chrono>` Since C++ 20
+**Header:** `<chrono>` Since C++20
 
 **Namespace:** `std::chrono`
 
@@ -63,7 +63,7 @@ The` weekday_last` value for the created `month_weekday_last` class.
 
 ## Remarks: Constructor
 
-For information about C++ 20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `month_weekday_last`
 

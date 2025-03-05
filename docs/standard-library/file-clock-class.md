@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: file_clock class"
 title: "file_clock class"
-ms.date: 08/19/2021
+ms.date: 3/8/2024
 f1_keywords: ["chrono/std::chrono::file_clock", "chrono/std::chrono::file_clock::now", "chrono/std::chrono::file_clock::to_utc", "chrono/std::chrono::file_clock::from_utc", "chrono/std::chrono::file_clock::is_steady Constant"]
 ---
 
@@ -12,7 +12,7 @@ This clock can represent the range and resolution of file time values used in th
 ## Syntax
 
 ```cpp
-using file_clock = std::filesystem::_File_time_clock. // C++20
+using file_clock = std::filesystem::_File_time_clock; // C++20
 ```
 
 ## Remarks

@@ -169,5 +169,5 @@ If the hook handles the message in question completely, so that no further repor
 
 ## See also
 
-- [Debugging Native Code](/visualstudio/debugger/debugging-native-code.md)
-- [Debugger Security](/visualstudio/debugger/debugger-security.md)
+- [Debugging Native Code](/visualstudio/debugger/debugging-native-code)
+- [Debugger Security](/visualstudio/debugger/debugger-security)

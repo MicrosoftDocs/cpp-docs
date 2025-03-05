@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _ungetc_nolock, _ungetwc_nolock"
 title: "_ungetc_nolock, _ungetwc_nolock"
+description: "Learn more about: _ungetc_nolock, _ungetwc_nolock"
 ms.date: "4/2/2020"
 api_name: ["_ungetwc_nolock", "_ungetc_nolock", "_o__ungetc_nolock", "_o__ungetwc_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -8,11 +8,10 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["STDIO/_ungetc_nolock", "CORECRT_WSTDIO/_ungetwc_nolock", "TCHAR/_ungettc_nolock", "_ungetc_nolock", "_ungetwc_nolock", "_ungettc_nolock"]
 helpviewer_keywords: ["_ungettc_nolock function", "_ungetwc_nolock function", "characters, pushing back onto stream", "_ungetc_nolock function", "ungetwc_nolock function", "ungettc_nolock function", "ungetc_nolock function"]
-ms.assetid: aa02d5c2-1be1-46d2-a8c4-b61269e9d465
 ---
 # `_ungetc_nolock`, `_ungetwc_nolock`
 
-Pushes a character back onto the stream.
+Pushes a character back onto the stream without locking.
 
 ## Syntax
 

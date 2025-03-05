@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l"
 title: "strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l"
+description: "Learn more about: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l"
 ms.date: "1/20/2021"
 api_name: ["strncat", "_strncat_l", "_mbsncat", "_mbsncat_l", "wcsncat", "wcsncat_l", "_o__mbsncat", "_o__mbsncat_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
@@ -184,4 +184,4 @@ You can see that `BadAppend` caused a buffer overrun.
 [`_strset`, `_strset_l`, `_wcsset`, `_wcsset_l`, `_mbsset`, `_mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
 [`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)\
 [Locale](../locale.md)\
-[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)\
+[Interpretation of multibyte-character sequences](../interpretation-of-multibyte-character-sequences.md)

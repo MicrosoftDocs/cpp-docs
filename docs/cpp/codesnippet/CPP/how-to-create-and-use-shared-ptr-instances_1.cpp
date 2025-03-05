@@ -1,4 +1,3 @@
-
     // Use make_shared function when possible.
     auto sp1 = make_shared<Song>(L"The Beatles", L"Im Happy Just to Dance With You");
 

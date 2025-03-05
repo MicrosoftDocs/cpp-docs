@@ -1,7 +1,7 @@
 ---
 title: "MSVC Linker options"
 description: "A list of the options supported by the Microsoft LINK linker."
-ms.date: 08/25/2023
+ms.date: 06/10/2024
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ---
@@ -29,6 +29,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/ALLOWBIND`](allowbind-prevent-dll-binding.md) | Specifies that a DLL can't be bound. |
 | [`/ALLOWISOLATION`](allowisolation-manifest-lookup.md) | Specifies behavior for manifest lookup. |
 | [`/APPCONTAINER`](appcontainer-windows-store-app.md) | Specifies whether the app must run within an appcontainer process environment. |
+| [`/ARM64XFUNCTIONPADMINX64`](arm64-function-pad-min-x64.md) | Specifies the minimum number of bytes of padding between x64 functions in ARM64X images.<sup>17.8</sup> |
 | [`/ASSEMBLYDEBUG`](assemblydebug-add-debuggableattribute.md) | Adds the <xref:System.Diagnostics.DebuggableAttribute> to a managed image. |
 | [`/ASSEMBLYLINKRESOURCE`](assemblylinkresource-link-to-dotnet-framework-resource.md) | Creates a link to a managed resource. |
 | [`/ASSEMBLYMODULE`](assemblymodule-add-a-msil-module-to-the-assembly.md) | Specifies that a Microsoft intermediate language (MSIL) module should be imported into the assembly. |
@@ -77,6 +78,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/LARGEADDRESSAWARE`](largeaddressaware-handle-large-addresses.md) | Tells the compiler that the application supports addresses larger than 2 gigabytes |
 | [`/LIBPATH`](libpath-additional-libpath.md) | Specifies a path to search before the environmental library path. |
 | [`/LINKREPRO`](linkrepro.md) | Specifies a path to generate link repro artifacts in. |
+| [`/LINKREPROFULLPATHRSP`](link-repro-full-path-rsp.md) | Generates a response file containing the absolute paths to all the files that the linker took as input. |
 | [`/LINKREPROTARGET`](linkreprotarget.md) | Generates a link repro only when producing the specified target.<sup>16.1</sup> |
 | [`/LTCG`](ltcg-link-time-code-generation.md) | Specifies link-time code generation. |
 | [`/MACHINE`](machine-specify-target-platform.md) | Specifies the target platform. |
@@ -93,6 +95,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/NOASSEMBLY`](noassembly-create-a-msil-module.md) | Suppresses the creation of a .NET Framework assembly. |
 | [`/NODEFAULTLIB`](nodefaultlib-ignore-libraries.md) | Ignores all (or the specified) default libraries when external references are resolved. |
 | [`/NOENTRY`](noentry-no-entry-point.md) | Creates a resource-only DLL. |
+| [`/NOFUNCTIONPADSECTION`](no-function-pad-section.md) | Disables function padding for functions in the specified section.<sup>17.8</sup> |
 | [`/NOLOGO`](nologo-suppress-startup-banner-linker.md) | Suppresses the startup banner. |
 | [`/NXCOMPAT`](nxcompat-compatible-with-data-execution-prevention.md) | Marks an executable as verified to be compatible with the Windows Data Execution Prevention feature. |
 | [`/OPT`](opt-optimizations.md) | Controls LINK optimizations. |
@@ -127,7 +130,8 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/WINMDDELAYSIGN`](winmddelaysign-partially-sign-a-winmd.md) | Partially signs a Windows Runtime Metadata (*`.winmd`*) file by placing the public key in the winmd file. |
 | [`/WX`](wx-treat-linker-warnings-as-errors.md) | Treats linker warnings as errors. |
 
-<sup>16.1</sup> This option is available starting in Visual Studio 2019 version 16.1.
+<sup>16.1</sup> This option is available starting in Visual Studio 2019 version 16.1.\
+<sup>17.8</sup> This option is available starting in Visual Studio 2022 version 17.8.
 
 ## See also
 

@@ -1,10 +1,9 @@
 ---
 description: "Learn more about: Compiler errors C3300 Through C3399"
-title: "Compiler errors C3300 Through C3399"
+title: "Compiler errors C3300 through C3399"
 ms.date: 06/01/2022
 f1_keywords: ["C3300", "C3301", "C3302", "C3304", "C3305", "C3306", "C3307", "C3308", "C3310", "C3311", "C3312", "C3313", "C3314", "C3315", "C3316", "C3317", "C3318", "C3319", "C3321", "C3323", "C3324", "C3325", "C3326", "C3327", "C3328", "C3329", "C3330", "C3331", "C3332", "C3335", "C3336", "C3337", "C3338", "C3339", "C3341", "C3343", "C3344", "C3346", "C3348", "C3349", "C3355", "C3357", "C3359", "C3361", "C3362", "C3376", "C3377", "C3378"]
 helpviewer_keywords: ["C3300", "C3301", "C3302", "C3304", "C3305", "C3306", "C3307", "C3308", "C3310", "C3311", "C3312", "C3313", "C3314", "C3315", "C3316", "C3317", "C3318", "C3319", "C3321", "C3323", "C3324", "C3325", "C3326", "C3327", "C3328", "C3329", "C3330", "C3331", "C3332", "C3335", "C3336", "C3337", "C3338", "C3339", "C3341", "C3343", "C3344", "C3346", "C3348", "C3349", "C3355", "C3357", "C3359", "C3361", "C3362", "C3376", "C3377", "C3378"]
-ms.assetid: 190b7d29-ffe6-4261-921d-140da1935d00
 ---
 # Compiler errors C3300 Through C3399
 
@@ -17,24 +16,24 @@ The articles in this section of the documentation explain a subset of the error 
 | Error | Message |
 |--|--|
 | Compiler error C3300 | '*symbol*': improper format for IDL '*value*' |
-| Compiler error C3301 | '*coclass*': coclass cannot be a '*symbol*' interface |
+| Compiler error C3301 | '*coclass*': `coclass` cannot be a '*symbol*' interface |
 | Compiler error C3302 | '*identifier*': identifier has more than *number* characters |
 | [Compiler error C3303](compiler-error-c3303.md) | '*attribute*': attribute can only be used on '*type*' |
 | Compiler error C3304 | Obsolete. |
 | Compiler error C3305 | Obsolete. |
 | Compiler error C3306 | '*template*': unnamed class template/generic is not allowed |
 | Compiler error C3307 | '*module*': unable to create IDL module |
-| Compiler error C3308 | ' *function*': direct call through imported class is not supported |
+| Compiler error C3308 | '*function*': direct call through imported class is not supported |
 | [Compiler error C3309](compiler-error-c3309.md) | '*macro*/*keyword*': module name cannot be a macro or a keyword |
 | Compiler error C3310 | '*identifier*': module name conflict |
 | Compiler error C3311 | module attribute must be defined at global scope |
 | Compiler error C3312 | no callable '*identifier*' function found for type '*type*' |
 | Compiler error C3313 | '*identifier*': variable cannot have the type '*type*' |
 | Compiler error C3314 | '*symbol*': not a supported IDL module type |
-| Compiler error C3315 | ' *function*': must be a member function |
+| Compiler error C3315 | '*function*': must be a member function |
 | Compiler error C3316 | '*type*': an array of unknown size cannot be used in a range-based for statement |
 | Compiler error C3317 | '*identifier*': an overload function cannot be used as the expression in a range-based for statement |
-| Compiler error C3318 | '*type*': an array cannot have an element type that contains 'auto' |
+| Compiler error C3318<sup>1</sup> | '*type*': an array cannot have an element type that contains '`auto`'|
 | Compiler error C3319 | Obsolete. |
 | [Compiler error C3320](compiler-error-c3320.md) | '*type*': type cannot have the same name as the module 'name' property |
 | Compiler error C3321 | an initializer list is unexpected in this context |
@@ -55,7 +54,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C3336 | This operation must be performed at class scope |
 | Compiler error C3337 | '*identifier*': defaultvtable must be an event source for a coclass '*class*' |
 | Compiler error C3338 | '*identifier*': There can be at most one default interface that is also an event source for a coclass '*class*' |
-| Compiler error C3339 | template template parameter requires either 'class' or 'typename' after the parameter list |
+| Compiler error C3339 | template template parameter requires either '`class`' or '`typename`' after the parameter list |
 | [Compiler error C3340](compiler-error-c3340.md) | '*identifier*': interface cannot be both 'restricted' and 'default' in coclass '*class*' |
 | Compiler error C3341 | '*interface*': a defaultvtable interface must be either 'dual' or 'custom' |
 | [Compiler error C3342](compiler-error-c3342.md) | '*identifier*': ambiguous attribute |
@@ -66,8 +65,8 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C3347](compiler-error-c3347.md) | '*argument*': required argument is not specified in attribute *attribute-name* |
 | Compiler error C3348 | exported templates are not part of the current C++ standards |
 | Compiler error C3349 | '*class*::*member*': multicast attribute has already been implemented by provider *provider-name* |
-| [Compiler error C3350](compiler-error-c3350.md) | ' *function*': a delegate constructor expects *number* argument(s) |
-| [Compiler error C3351](compiler-error-c3351.md) | ' *function*': if you pass a NULL object instance to a delegate constructor you must also pass the address of a static member function |
+| [Compiler error C3350](compiler-error-c3350.md) | '*function*': a delegate constructor expects *number* argument(s) |
+| [Compiler error C3351](compiler-error-c3351.md) | '*function*': if you pass a NULL object instance to a delegate constructor you must also pass the address of a static member function |
 | [Compiler error C3352](compiler-error-c3352.md) | '*function*': the specified function does not match the delegate type '*type*' |
 | [Compiler error C3353](compiler-error-c3353.md) | '*identifier*': a delegate can only be created from a global function or a member function of a managed/WinRT type |
 | [Compiler error C3354](compiler-error-c3354.md) | '*identifier*': the function used to create a delegate cannot have return type '*type*' |
@@ -116,6 +115,8 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C3397](compiler-error-c3397.md) | Aggregate initialization is not allowed in default arguments |
 | [Compiler error C3398](compiler-error-c3398.md) | '*operator*': cannot convert from '*type*' to '*type*'. Source expression must be a function symbol |
 | [Compiler error C3399](compiler-error-c3399.md) | '*type*': cannot provide arguments when creating an instance of a generic parameter |
+
+1-No longer emitted in Visual Studio 2022 version 17.11
 
 ## See also
 

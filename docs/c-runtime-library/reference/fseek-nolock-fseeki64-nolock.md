@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _fseek_nolock, _fseeki64_nolock"
 title: "_fseek_nolock, _fseeki64_nolock"
+description: "Learn more about: _fseek_nolock, _fseeki64_nolock"
 ms.date: "4/2/2020"
 api_name: ["_fseek_nolock", "_fseeki64_nolock", "_o__fseek_nolock", "_o__fseeki64_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -8,11 +8,10 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_fseek_nolock", "_fseeki64_nolock", "fseek_nolock", "fseeki64_nolock"]
 helpviewer_keywords: ["_fseek_nolock function", "fseeki64_nolock function", "file pointers [C++], moving", "fseek_nolock function", "_fseeki64_nolock function", "seek file pointers"]
-ms.assetid: 2dd4022e-b715-462b-b935-837561605a02
 ---
 # `_fseek_nolock`, `_fseeki64_nolock`
 
-Moves the file pointer to a specified location.
+Moves the file pointer to a specified location without locking.
 
 ## Syntax
 

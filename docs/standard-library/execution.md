@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <execution>"
 title: "<execution>"
-ms.date: "08/17/2021"
+ms.date: 09/11/2024
 f1_keywords: ["<execution>", "execution/std::execution", "std::execution"]
 helpviewer_keywords: ["execution header"]
 ---
@@ -22,24 +22,30 @@ namespace std::execution {
 }
 ```
 
-### Classes and Structs
+### Classes and structs
 
 |Name|Description|
 |-|-|
 |[`is_execution_policy` Struct](is-execution-policy-struct.md)|Detects execution policies to exclude certain function signatures from otherwise ambiguous overload resolution participation.|
-|[`parallel_policy` Class](parallel-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Indicates that a parallel algorithm's execution may be parallelized.|
-|[`parallel_unsequenced_policy` Class](parallel-unsequenced-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Indicates that a parallel algorithm's execution may be parallelized and vectorized.|
-|[`sequenced_policy` Class](sequenced-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Specifies that a parallel algorithm's execution may not be parallelized.|
+|[`parallel_policy` class](parallel-policy-class.md)|Used to disambiguate parallel algorithm overloading. Indicates that a parallel algorithm's execution may be parallelized.|
+|[`parallel_unsequenced_policy` class](parallel-unsequenced-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Indicates that a parallel algorithm's execution may be parallelized and vectorized.|
+|[`sequenced_policy` class](sequenced-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading. Specifies that a parallel algorithm's execution may not be parallelized.|
 
-### Microsoft Specific
- 
-When `parallel_policy` or `parallel_unsequenced_policy` cause the algorithm to be parallelized, the parallel execution uses Windows Thread Pool; see [Thread Pools](/windows/win32/procthread/thread-pools). The number of concurrent threads is limited to the thread pool default (currently 500). The number of threads concurrently executing on hardware is currently limited by the number of logical processors in the current process's processor group, so it is effectively limited to 64; see [Processor Groups](/windows/win32/procthread/processor-groups). The maximum number of chunks for data partitioning is also currently based on the number of logical processors in the current process's processor group.
+### Microsoft specific
+
+Parallel algorithms execute on an unspecified number of threads and divide the work into an unspecified number of data partitioning "chunks." The Windows thread pool manages the number of threads. The implementation tries to make use of the available logical processors, which corresponds to the number of hardware threads that can execute simultaneously.
+
+Specifying `parallel_policy` or `parallel_unsequenced_policy` causes standard library algorithms to run in parallel using the Windows Thread Pool. The number of concurrent threads, and thus the number of "chunks" for data partitioning, is limited to 500 threads because that's the default number of thread pool threads. For more information, see [Thread Pools](/windows/win32/procthread/thread-pools).
+
+Before Windows 11 and Windows Server 2022, applications were limited by default to a single processor group having at most 64 logical processors. This limited the number of concurrently executing threads to 64. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
+
+Starting with Windows 11 and Windows Server 2022, processes and their threads have processor affinities that by default span all processors in the system and across multiple groups on machines with more than 64 processors. The limit on the number of concurrent threads is now the total number of logical processors in the system.
 
 ## Requirements
 
-**Header:** \<execution>
+**Header:** `<execution>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 

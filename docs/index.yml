@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 title: Microsoft C++, C, and Assembler documentation
 summary: Learn how to use C++, C, and assembly language to develop applications, services, and tools for your platforms and devices.
-# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows
 brand: visual-studio
 metadata:
   title: Microsoft C/C++ Documentation
   description: Learn how to use C++ to develop applications, services, and tools for your platforms and devices.
-  ms.prod: visual-cpp
+  ms.service: visual-cpp
   ms.topic: hub-page
   author: tylermsft
   ms.author: twhitney
@@ -164,7 +164,7 @@ additionalContent:
             - text: Universal Windows Platform development
               url: cppcx/universal-windows-apps-cpp.md
             - text: Windows Desktop development
-              url: ./windows/desktop-applications-visual-cpp.md
+              url: windows/overview-of-windows-programming-in-cpp.md
             - text: Linux development
               url: linux/index.yml
             - text: Embedded development

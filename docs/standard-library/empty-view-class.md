@@ -64,7 +64,7 @@ Another use for `empty_view` is splitting a [`split_view`](split-view-class.md) 
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 

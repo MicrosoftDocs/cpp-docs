@@ -164,7 +164,7 @@ setting shared_flag to false
 Error! Token must not be a keyword
 ```
 
-## <a name="if_constexpr"> if constexpr statements
+## <a name="if_constexpr"></a> if constexpr statements
 
 Starting in C++17, you can use an **`if constexpr`** statement in function templates to make compile-time branching decisions without having to resort to multiple function overloads. **Microsoft-specific**: This form is available starting in Visual Studio 2017 version 15.3, and requires at least the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option.
 

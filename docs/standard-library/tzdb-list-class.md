@@ -13,7 +13,7 @@ A list of time zone databases.
 ## Syntax
 
 ```cpp
-class tzdb_list; // C++ 20
+class tzdb_list; // C++20
 ```
 
 ## Remarks

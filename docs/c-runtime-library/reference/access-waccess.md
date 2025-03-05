@@ -1,18 +1,19 @@
 ---
-description: "Learn more about: _access, _waccess"
 title: "_access, _waccess"
+description: "Learn more about: _access, _waccess"
 ms.date: "4/2/2020"
-api_name: ["_access", "_waccess", "_o__access", "_o__waccess"]
+api_name: ["_access", "_waccess", "t_access", "_o__access", "_o__waccess"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_waccess", "_access", "taccess", "waccess", "_taccess"]
 helpviewer_keywords: ["access function", "_taccess function", "waccess function", "_access function", "_waccess function", "taccess function"]
-ms.assetid: ba34f745-85c3-49e5-a7d4-3590bd249dd3
 ---
-# `_access`, `_waccess`
+# `_access`, `_waccess`, `t_access`
 
 Determines if a file is read-only or not. More secure versions are available; see [`_access_s`, `_waccess_s`](access-s-waccess-s.md).
+
+For `_taccess`, see [Generic-text function mappings](#generic-text-function-mappings).
 
 ## Syntax
 
@@ -66,7 +67,7 @@ This function validates its parameters. If *`path`* is `NULL` or *`mode`* doesn'
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
 | `Tchar.h` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
@@ -89,9 +90,9 @@ The following example uses **`_access`** to check the file named *`crt_ACCESS.C`
 // This example uses _access to check the file named
 // crt_ACCESS.C to see if it exists and if writing is allowed.
 
-#include  <io.h>
-#include  <stdio.h>
-#include  <stdlib.h>
+#include <io.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main( void )
 {

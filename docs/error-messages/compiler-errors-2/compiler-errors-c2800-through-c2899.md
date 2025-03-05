@@ -4,7 +4,6 @@ title: "Compiler errors C2800 Through C2899"
 ms.date: 06/01/2022
 f1_keywords: ["C2816", "C2820", "C2822", "C2826", "C2832", "C2836", "C2837", "C2840", "C2841", "C2848", "C2851", "C2852", "C2853", "C2866", "C2880", "C2887", "C2889", "C2895", "C2899"]
 helpviewer_keywords: ["C2816", "C2820", "C2822", "C2826", "C2832", "C2836", "C2837", "C2840", "C2841", "C2848", "C2851", "C2852", "C2853", "C2866", "C2880", "C2887", "C2889", "C2895", "C2899"]
-ms.assetid: e5de1e92-746a-4315-a331-c5d9efb76dbb
 ---
 # Compiler errors C2800 Through C2899
 
@@ -76,7 +75,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C2857](compiler-error-c2857.md) | '#include' statement specified with the /Yc*filename* command-line option was not found in the source file |
 | [Compiler error C2858](compiler-error-c2858.md) | command-line option '/Yc (/Fd*filename*)' inconsistent with precompiled header, which used '/Fd*filename*' (Obsolete in Visual Studio 2022.) |
 | [Compiler error C2859](compiler-error-c2859.md) | *filename* is not the *filetype* file that was used when this precompiled header was created, recreate the precompiled header. |
-| [Compiler error C2860](compiler-error-c2860.md) | 'void' cannot be an argument type, except for '(void)' |
+| [Compiler error C2860](compiler-error-c2860.md) | 'void' cannot be used as a function parameter except for '(void)' |
 | [Compiler error C2861](compiler-error-c2861.md) | '*declaration*': an interface member function cannot be defined |
 | [Compiler error C2862](compiler-error-c2862.md) | '*interface*': an interface can only have public members |
 | [Compiler error C2863](compiler-error-c2863.md) | '*interface*': an interface cannot have friends |
@@ -108,7 +107,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C2889 | '*class*': a managed/WinRT class type cannot be a virtual base class |
 | [Compiler error C2890](compiler-error-c2890.md) | '*class*': a ref class can only have one non-interface base class |
 | [Compiler error C2891](compiler-error-c2891.md) | '*parameter*': cannot take the address of a template parameter |
-| [Compiler error C2892](compiler-error-c2892.md) | local class shall not have member templates |
+| [Compiler error C2892](compiler-error-c2892.md) | a template cannot be a member of a local class |
 | [Compiler error C2893](compiler-error-c2893.md) | Failed to specialize function template '*template*' |
 | [Compiler error C2894](compiler-error-c2894.md) | templates cannot be declared to have 'C' linkage |
 | Compiler error C2895 | '*declaration*': cannot explicitly instantiate a function template that has been declared with dllimport |

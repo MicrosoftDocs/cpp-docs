@@ -34,7 +34,7 @@ Note that the question mark preceded by a backslash (**\\?**) specifies a litera
 
 **Microsoft Specific**
 
-If a backslash precedes a character that does not appear in the table, the compiler handles the undefined character as the character itself. For example, `\c` is treated as an `c`.
+If a backslash precedes a character that does not appear in the table, the compiler handles the undefined character as the character itself. For example, `\c` is treated as a `c`.
 
 **END Microsoft Specific**
 
