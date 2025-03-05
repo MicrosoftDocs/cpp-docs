@@ -14,7 +14,6 @@ These versions of the compiler introduced new warnings:
 |--|--|
 | Visual Studio 2022 version 17.13 | 19.43 |
 | Visual Studio 2022 version 17.12 | 19.42 |
-| Visual Studio 2022 version 17.11 | 19.41 |
 | Visual Studio 2022 version 17.10 | 19.40 |
 | Visual Studio 2022 version 17.9 | 19.39 |
 | Visual Studio 2022 version 17.8 | 19.38 |
@@ -83,11 +82,6 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 |C5276| `/experimental:ifcDebugRecords` currently requires `/Z7` to be enabled.  Please recompile with `/Z7` enabled.
 |C5306| parameter array behavior change: overload '*identifier 1*' resolved to '*identifier 2*'; previously, it would have resolved to '*identifier 3*'. Use `/clr:ECMAParamArray` to revert to old behavior
 |C5307| '*function*': argument (*argument number*) converted from '*type 1*' to '*type 2*'. Missing '`L`' encoding-prefix for character literal?
-
-
-## Warnings introduced in Visual Studio 2022 version 17.11 (compiler version 19.41)
-
-There were no new warnings introduced in 17.11
 
 ## Warnings introduced in Visual Studio 2022 version 17.10 (compiler version 19.40)
 
