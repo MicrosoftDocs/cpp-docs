@@ -1,15 +1,14 @@
 ---
-description: "Learn more about: Platform::Guid value class"
 title: "Platform::Guid value class"
+description: "Learn more about: Platform::Guid value class"
 ms.date: "01/15/2019"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Guid"]
 helpviewer_keywords: ["Platform::Guid Struct"]
-ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
 ---
 # Platform::Guid value class
 
-Represents a [GUID](/windows/win32/api/guiddef/ns-guiddef-guid type in the Windows Runtime type system.
+Represents a [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) type in the Windows Runtime type system.
 
 ## Syntax
 

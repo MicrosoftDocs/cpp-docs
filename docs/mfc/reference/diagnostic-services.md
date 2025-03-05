@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Diagnostic Services"
 title: "Diagnostic Services"
+description: "Learn more about: Diagnostic Services"
 ms.date: 06/29/2022
 helpviewer_keywords: ["diagnosi [MFC]s, diagnostic services", "diagnostic macros [MFC], list of general MFC", "services [MFC], diagnostic", "MFC, diagnostic services", "general diagnostic functions and variables [MFC]", "diagnostics [MFC], diagnostic functions and variables", "diagnostics [MFC], list of general MFC", "diagnosis [MFC], diagnostic functions and variables", "diagnosis [MFC], list of general MFC", "general diagnostic macros in MFC", "diagnostic macros [MFC]", "diagnostic services [MFC]", "object diagnostic functions in MFC", "diagnostics [MFC], diagnostic services", "diagnostic functions and variables [MFC]"]
-ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
 ---
 # Diagnostic Services
 
@@ -178,7 +177,7 @@ Using the `ASSERT_KINDOF` macro is exactly the same as coding:
 
 [!code-cpp[NVC_MFCDocView#195](../../mfc/codesnippet/cpp/diagnostic-services_4.cpp)]
 
-This function works only for classes declared with the [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic or [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro.
+This function works only for classes declared with the [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic) or [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro.
 
 > [!NOTE]
 > This function is available only in the Debug version of MFC.

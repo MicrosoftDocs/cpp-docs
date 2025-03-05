@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CComMultiThreadModel Class"
 title: "CComMultiThreadModel Class"
+description: "Learn more about: CComMultiThreadModel Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComMultiThreadModel", "ATLBASE/ATL::CComMultiThreadModel", "ATLBASE/ATL::CComMultiThreadModel::AutoCriticalSection", "ATLBASE/ATL::CComMultiThreadModel::CriticalSection", "ATLBASE/ATL::CComMultiThreadModel::ThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModel::Decrement", "ATLBASE/ATL::CComMultiThreadModel::Increment"]
 helpviewer_keywords: ["ATL, multithreading", "CComMultiThreadModel class", "threading [ATL]"]
-ms.assetid: db8f1662-2f7a-44b3-b341-ffbfb6e422a3
 ---
 # CComMultiThreadModel Class
 
@@ -35,7 +34,7 @@ class CComMultiThreadModel
 
 ## Remarks
 
-Typically, you use `CComMultiThreadModel` through one of two **`typedef`** names, either [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel. The class referenced by each **`typedef`** depends on the threading model used, as shown in the following table:
+Typically, you use `CComMultiThreadModel` through one of two **`typedef`** names, either [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel). The class referenced by each **`typedef`** depends on the threading model used, as shown in the following table:
 
 |typedef|Single threading|Apartment threading|Free threading|
 |-------------|----------------------|-------------------------|--------------------|
