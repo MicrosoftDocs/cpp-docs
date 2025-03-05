@@ -26,7 +26,7 @@ int main()
 }
 ```
 
-Suppress the warning with `((expression))`. For example:
+Suppress the warning with `((`*expression*`))`. For example:
 
 ```cpp
 // compile with: /W4
