@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Diagnostic Services"
 title: "Diagnostic Services"
+description: "Learn more about: Diagnostic Services"
 ms.date: 06/29/2022
 helpviewer_keywords: ["diagnosi [MFC]s, diagnostic services", "diagnostic macros [MFC], list of general MFC", "services [MFC], diagnostic", "MFC, diagnostic services", "general diagnostic functions and variables [MFC]", "diagnostics [MFC], diagnostic functions and variables", "diagnostics [MFC], list of general MFC", "diagnosis [MFC], diagnostic functions and variables", "diagnosis [MFC], list of general MFC", "general diagnostic macros in MFC", "diagnostic macros [MFC]", "diagnostic services [MFC]", "object diagnostic functions in MFC", "diagnostics [MFC], diagnostic services", "diagnostic functions and variables [MFC]"]
-ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
 ---
 # Diagnostic Services
 
@@ -77,7 +76,7 @@ Suppresses compiler warnings for the use of deprecated MFC functions.
 
 ### Syntax
 
-```
+```cpp
 _AFX_SECURE_NO_WARNINGS
 ```
 
@@ -105,7 +104,7 @@ Call this function to cause a break (at the location of the call to `AfxDebugBre
 ### Syntax
 
 ```cpp
-void AfxDebugBreak( );
+void AfxDebugBreak();
 ```
 
 ### Remarks
@@ -120,13 +119,13 @@ void AfxDebugBreak( );
 
 Evaluates its argument.
 
-```
+```cpp
 ASSERT(booleanExpression)
 ```
 
 ### Parameters
 
-*booleanExpression*<br/>
+*booleanExpression*\
 Specifies an expression (including pointer values) that evaluates to nonzero or 0.
 
 ### Remarks
@@ -156,16 +155,16 @@ In the Release version of MFC, ASSERT does not evaluate the expression and thus 
 
 This macro asserts that the object pointed to is an object of the specified class, or is an object of a class derived from the specified class.
 
-```
+```cpp
 ASSERT_KINDOF(classname, pobject)
 ```
 
 ### Parameters
 
-*classname*<br/>
+*classname*\
 The name of a `CObject`-derived class.
 
-*pobject*<br/>
+*pobject*\
 A pointer to a class object.
 
 ### Remarks
@@ -178,7 +177,7 @@ Using the `ASSERT_KINDOF` macro is exactly the same as coding:
 
 [!code-cpp[NVC_MFCDocView#195](../../mfc/codesnippet/cpp/diagnostic-services_4.cpp)]
 
-This function works only for classes declared with the [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic or [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro.
+This function works only for classes declared with the [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic) or [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro.
 
 > [!NOTE]
 > This function is available only in the Debug version of MFC.
@@ -191,13 +190,13 @@ This function works only for classes declared with the [DECLARE_DYNAMIC](run-tim
 
 Use to test your assumptions about the validity of an object's internal state.
 
-```
+```cpp
 ASSERT_VALID(pObject)
 ```
 
 ### Parameters
 
-*pObject*<br/>
+*pObject*\
 Specifies an object of a class derived from `CObject` that has an overriding version of the `AssertValid` member function.
 
 ### Remarks
@@ -223,8 +222,8 @@ For more information and examples, see [Debugging MFC Applications](/visualstudi
 
 Assists in finding memory leaks.
 
-```
-#define  new DEBUG_NEW
+```cpp
+#define new DEBUG_NEW
 ```
 
 ### Remarks
@@ -250,7 +249,7 @@ Once you insert this directive, the preprocessor will insert DEBUG_NEW wherever 
 
 In debug mode (when the **_DEBUG** symbol is defined), DEBUG_ONLY evaluates its argument.
 
-```
+```cpp
 DEBUG_ONLY(expression)
 ```
 
@@ -274,14 +273,14 @@ Use to validate data correctness.
 
 ### Syntax
 
-```
-ENSURE(  booleanExpression )
-ENSURE_VALID( booleanExpression  )
+```cpp
+ENSURE(booleanExpression)
+ENSURE_VALID(booleanExpression)
 ```
 
 ### Parameters
 
-*booleanExpression*<br/>
+*booleanExpression*\
 Specifies a boolean expression to be tested.
 
 ### Remarks
@@ -306,7 +305,7 @@ Expands to the name of the file that is being compiled.
 
 ### Syntax
 
-```
+```cpp
 THIS_FILE
 ```
 
@@ -334,9 +333,9 @@ static char THIS_FILE[] = __FILE__;
 
 Sends the specified string to the debugger of the current application.
 
-```
+```cpp
 TRACE(exp)
-TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)
+TRACE(DWORD category, UINT level, LPCSTR lpszFormat, ...)
 ```
 
 ### Remarks
@@ -355,13 +354,13 @@ For more information, see [Debugging MFC Applications](/visualstudio/debugger/mf
 
 In the Debug version of MFC, evaluates its argument.
 
-```
+```cpp
 VERIFY(booleanExpression)
 ```
 
 ### Parameters
 
-*booleanExpression*<br/>
+*booleanExpression*\
 Specifies an expression (including pointer values) that evaluates to nonzero or 0.
 
 ### Remarks
@@ -388,8 +387,8 @@ In the Release version of MFC, VERIFY evaluates the expression but does not prin
 
 Provides basic object-dumping capability in your application.
 
-```
-CDumpContext  afxDump;
+```cpp
+CDumpContext afxDump;
 ```
 
 ### Remarks
@@ -420,7 +419,7 @@ void AfxDump(const CObject* pOb);
 
 ### Parameters
 
-*pOb*<br/>
+*pOb*\
 A pointer to an object of a class derived from `CObject`.
 
 ### Remarks
@@ -437,8 +436,8 @@ Your program code should not call `AfxDump`, but should instead call the `Dump` 
 
 This variable is accessible from a debugger or your program and allows you to tune allocation diagnostics.
 
-```
-int  afxMemDF;
+```cpp
+int afxMemDF;
 ```
 
 ### Remarks
@@ -490,8 +489,8 @@ This function can be used to check the return values of calls to OLE functions i
 
 This function validates the free memory pool and prints error messages as required.
 
-```
-BOOL  AfxCheckMemory();
+```cpp
+BOOL AfxCheckMemory();
 ```
 
 ### Return Value
@@ -533,7 +532,7 @@ void AfxDump(const CObject* pOb);
 
 ### Parameters
 
-*pOb*<br/>
+*pOb*\
 A pointer to an object of a class derived from `CObject`.
 
 ### Remarks
@@ -556,7 +555,7 @@ void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
 
 ### Parameters
 
-*dwTarget*<br/>
+*dwTarget*\
 Indicates the target of the dump output. Possible values, which can be combined using the bitwise-OR (**`|`**) operator, are as follows:
 
 - AFX_STACK_DUMP_TARGET_TRACE Sends output by means of the [TRACE](#trace) macro. The TRACE macro generates output in debug builds only; it generates no output in release builds. Also, TRACE can be redirected to other targets besides the debugger.
@@ -626,13 +625,13 @@ To use this function successfully:
 
 Enables and disables the memory leak dump in the AFX_DEBUG_STATE destructor.
 
-```
+```cpp
 BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
 ```
 
 ### Parameters
 
-*bDump*<br/>
+*bDump*\
 [in] TRUE indicates the memory leak dump is enabled; FALSE indicates the memory leak dump is disabled.
 
 ### Return Value
@@ -656,13 +655,13 @@ If your application loads another library before the MFC library, some memory al
 
 Diagnostic memory tracking is normally enabled in the Debug version of MFC.
 
-```
+```cpp
 BOOL AfxEnableMemoryTracking(BOOL bTrack);
 ```
 
 ### Parameters
 
-*bTrack*<br/>
+*bTrack*\
 Setting this value to TRUE turns on memory tracking; FALSE turns it off.
 
 ### Return Value
@@ -690,7 +689,7 @@ For more information on `AfxEnableMemoryTracking`, see [Debugging MFC Applicatio
 
 Tests a memory address to make sure it represents a currently active memory block that was allocated by the diagnostic version of **`new`**.
 
-```
+```cpp
 BOOL AfxIsMemoryBlock(
     const void* p,
     UINT nBytes,
@@ -699,13 +698,13 @@ BOOL AfxIsMemoryBlock(
 
 ### Parameters
 
-*p*<br/>
+*p*\
 Points to the block of memory to be tested.
 
-*nBytes*<br/>
+*nBytes*\
 Contains the length of the memory block in bytes.
 
-*plRequestNumber*<br/>
+*plRequestNumber*\
 Points to a **`long`** integer that will be filled in with the memory block's allocation sequence number, or zero if it does not represent a currently active memory block.
 
 ### Return Value
@@ -728,7 +727,7 @@ It also checks the specified size against the original allocated size. If the fu
 
 Tests any memory address to ensure that it is contained entirely within the program's memory space.
 
-```
+```cpp
 BOOL AfxIsValidAddress(
     const void* lp,
     UINT nBytes,
@@ -737,13 +736,13 @@ BOOL AfxIsValidAddress(
 
 ### Parameters
 
-*lp*<br/>
+*lp*\
 Points to the memory address to be tested.
 
-*nBytes*<br/>
+*nBytes*\
 Contains the number of bytes of memory to be tested.
 
-*bReadWrite*<br/>
+*bReadWrite*\
 Specifies whether the memory is both for reading and writing (TRUE) or just reading (FALSE).
 
 ### Return Value
@@ -768,18 +767,18 @@ The address is not restricted to blocks allocated by **`new`**.
 
 Use this function to determine whether a pointer to a string is valid.
 
-```
-BOOL  AfxIsValidString(
+```cpp
+BOOL AfxIsValidString(
     LPCSTR lpsz,
     int nLength = -1);
 ```
 
 ### Parameters
 
-*lpsz*<br/>
+*lpsz*\
 The pointer to test.
 
-*nLength*<br/>
+*nLength*\
 Specifies the length of the string to be tested, in bytes. A value of -1 indicates that the string will be null-terminated.
 
 ### Return Value
@@ -800,13 +799,13 @@ In non-debug builds, nonzero if *lpsz* is not NULL; otherwise 0.
 
 Sets a hook that enables calling of the specified function before each memory block is allocated.
 
-```
+```cpp
 AFX_ALLOC_HOOK AfxSetAllocHook(AFX_ALLOC_HOOK pfnAllocHook);
 ```
 
 ### Parameters
 
-*pfnAllocHook*<br/>
+*pfnAllocHook*\
 Specifies the name of the function to call. See the Remarks for the prototype of an allocation function.
 
 ### Return Value
@@ -819,13 +818,13 @@ The Microsoft Foundation Class Library debug-memory allocator can call a user-de
 
 **BOOL AFXAPI AllocHook( size_t** `nSize`**, BOOL** `bObject`**, LONG** `lRequestNumber` **);**
 
-*nSize*<br/>
+*nSize*\
 The size of the proposed memory allocation.
 
-*bObject*<br/>
+*bObject*\
 TRUE if the allocation is for a `CObject`-derived object; otherwise FALSE.
 
-*lRequestNumber*<br/>
+*lRequestNumber*\
 The memory allocation's sequence number.
 
 Note that the AFXAPI calling convention implies that the callee must remove the parameters from the stack.
@@ -847,10 +846,10 @@ AFXAPI AfxDoForAllClasses(
 
 ### Parameters
 
-*pfn*<br/>
+*pfn*\
 Points to an iteration function to be called for each class. The function arguments are a pointer to a `CRuntimeClass` object and a void pointer to extra data that the caller supplies to the function.
 
-*pContext*<br/>
+*pContext*\
 Points to optional data that the caller can supply to the iteration function. This pointer can be NULL.
 
 ### Remarks
@@ -882,10 +881,10 @@ void AfxDoForAllObjects(
 
 ### Parameters
 
-*pfn*<br/>
+*pfn*\
 Points to an iteration function to execute for each object. The function arguments are a pointer to a `CObject` and a void pointer to extra data that the caller supplies to the function.
 
-*pContext*<br/>
+*pContext*\
 Points to optional data that the caller can supply to the iteration function. This pointer can be NULL.
 
 ### Remarks
@@ -903,5 +902,5 @@ Stack, global, or embedded objects are not enumerated. The pointer passed to `Af
 
 ## See also
 
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
+[Macros and Globals](mfc-macros-and-globals.md)\
 [CObject::Dump](cobject-class.md#dump)
