@@ -47,10 +47,10 @@ invalid_scheduler_policy_value() throw();
 
 ### Parameters
 
-*_Message*<br/>
+*_Message*\
 A descriptive message of the error.
 
 ## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
+[concurrency Namespace](concurrency-namespace.md)\
 [SchedulerPolicy Class](schedulerpolicy-class.md)

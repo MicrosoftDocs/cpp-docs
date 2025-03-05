@@ -85,5 +85,5 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 
 ## See also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)<br/>
+[Concepts](../atl/active-template-library-atl-concepts.md)\
 [ATL COM desktop components](../atl/atl-com-desktop-components.md)
