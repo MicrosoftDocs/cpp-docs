@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler Warning (level 4) C4706"
 title: "Compiler Warning (level 4) C4706"
-ms.date: "3/4/2025"
+ms.date: "3/5/2025"
 f1_keywords: ["C4706"]
 helpviewer_keywords: ["C4706"]
 ---
@@ -20,7 +20,20 @@ The following sample generates C4706:
 int main()
 {
    int a = 0, b = 0;
-   if ( a  = b ) // C4706
+   if (a = b) // C4706
+   {
+   }
+}
+```
+
+Suppress the warning with `((expression))`. For example:
+
+```cpp
+// compile with: /W4
+int main()
+{
+   int a = 0, b = 0;
+   if ((a = b)) // No warning
    {
    }
 }
@@ -33,7 +46,7 @@ If your intention is to test a relation, not to make an assignment, use the `==`
 int main()
 {
    int a = 0, b = 0;
-   if ( a == b )
+   if (a == b)
    {
    }
 }
@@ -46,7 +59,7 @@ If you intend to make your test value the result of an assignment, test to ensur
 int main()
 {
    int a = 0, b = 0;
-   if (( a = b ) != 0 )
+   if ((a = b) != 0)
    {
    }
 }
