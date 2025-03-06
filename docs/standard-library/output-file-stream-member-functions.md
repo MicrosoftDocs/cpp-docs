@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Output File Stream Member Functions"
 title: "Output File Stream Member Functions"
+description: "Learn more about: Output File Stream Member Functions"
 ms.date: "08/25/2021"
 helpviewer_keywords: ["output streams [C++], member functions"]
 ---
@@ -102,7 +102,7 @@ Use these member functions to test for errors while writing to a stream:
 |[`good`](basic-ios-class.md#good)|Returns **`true`** if there's no error condition (unrecoverable or otherwise) and the end-of-file flag isn't set.|
 |[`eof`](basic-ios-class.md#eof)|Returns **`true`** on the end-of-file condition.|
 |[`clear`](basic-ios-class.md#clear)|Sets the internal error state. If called with the default arguments, it clears all error bits.|
-|[`rdstate`](basic-ios-class.md#rdstate|Returns the current error state.|
+|[`rdstate`](basic-ios-class.md#rdstate)|Returns the current error state.|
 
 The **`!`** operator is overloaded to perform the same function as the `fail` function. Thus the expression:
 
