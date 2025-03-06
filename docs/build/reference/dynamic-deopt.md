@@ -23,7 +23,7 @@ Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debu
 *`suffix`*\
 Specify the file extension for the deoptimized output.
 
-With no options and given `test.cpp` as input, your output includes `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and ``test.alt.pdb`. This switch allows you to change the suffix of the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the linker using [`/dynamicdeopt:suffix` (Preview)](dynamic-deopt-linker.md). You typically don't use this switch unless you need to avoid filename collisions with other files that you have.
+With no options and given `test.cpp` as input, your output includes `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and `test.alt.pdb`. This switch allows you to change the suffix of the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the linker using [`/dynamicdeopt:suffix` (Preview)](dynamic-deopt-linker.md). You typically don't use this switch unless you need to avoid filename collisions with other files that you have.
 
 *`sync`*\
 Builds the deoptimized output after building the optimized output instead of in parallel. By default, the compiler spawns a parallel instance of the code generator. This switch makes the them run serially, instead. This switch is provided in case this better suits your build environment.
