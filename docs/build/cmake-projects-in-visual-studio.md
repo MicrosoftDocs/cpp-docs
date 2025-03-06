@@ -88,7 +88,7 @@ By default, most configuration messages are suppressed unless there's an error. 
 
 You can also disable all CMake cache notifications (gold bars) by deselecting **Show CMake cache notification**.
 
-### Customize Targets View Source Groups
+### Customize Targets View source groups
 
 By default, the CMake Targets View ignores the following source groups: "Source Files", "Header Files", "Resources", "Object Files". This is because they are included by default in most CMake projects and it would unnecessarily increase the number of clicks required to navigate the Targets View. 
 
