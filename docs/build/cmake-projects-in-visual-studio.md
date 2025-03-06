@@ -90,7 +90,7 @@ You can also disable all CMake cache notifications (gold bars) by deselecting **
 
 ### Customize Targets View Source Groups
 
-By default, the CMake Targets View ignores the following source groups: **Source Files**, **Header Files**, **Resources**, **Object Files**. This is because they are included by default in most CMake projects and it would unnecessarily increase the number of clicks required to navigate the Targets View. 
+By default, the CMake Targets View ignores the following source groups: "Source Files", "Header Files", "Resources", "Object Files". This is because they are included by default in most CMake projects and it would unnecessarily increase the number of clicks required to navigate the Targets View. 
 
 However, you can enable the use of these source groups by enabling **Tools** > **Options** > **CMake** > **Enable the use of ignored source groups in CMake Targets View**.
 
