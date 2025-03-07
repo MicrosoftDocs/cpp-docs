@@ -99,7 +99,7 @@ int main( void )
     else
         printf( "Problem allocating memory\n" );
 
-    / _free_dbg must be called to free CLIENT type blocks
+    // _free_dbg must be called to free CLIENT type blocks
     free( bufferN );
     _free_dbg( bufferC, _CLIENT_BLOCK );
 }
