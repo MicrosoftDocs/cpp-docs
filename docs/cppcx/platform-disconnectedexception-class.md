@@ -1,20 +1,19 @@
 ---
-description: "Learn more about: Platform::DisconnectedException Class"
 title: "Platform::DisconnectedException Class"
+description: "Learn more about: Platform::DisconnectedException Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::DisconnectedException", "VCCORLIB/Platform::DisconnectedException::DisconnectedException"]
 helpviewer_keywords: ["Platform::DisconnectedException"]
-ms.assetid: c25e0d64-5bff-4c21-88e5-c4ec2776fa7f
 ---
 # Platform::DisconnectedException Class
 
-Thrown when a COM proxy object attempts to reference a COM server that no longer exists
+Thrown when a COM proxy object attempts to reference a COM server that no longer exists.
 
 ## Syntax
 
-```
-public ref class DisconnectedException : COMException,    IException,    IPrintable,    IEquatable
+```cpp
+public ref class DisconnectedException : COMException, IException, IPrintable, IEquatable
 ```
 
 ### Remarks
