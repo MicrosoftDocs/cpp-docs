@@ -720,7 +720,7 @@ None of the constructors perform any interim reallocations.
 ### Example
 
 ```cpp
-/ compile with: /EHsc
+// compile with: /EHsc
 #include <deque>
 #include <iostream>
 #include <forward_list>
