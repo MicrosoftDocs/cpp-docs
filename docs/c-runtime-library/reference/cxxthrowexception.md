@@ -18,7 +18,7 @@ Builds the exception record and calls the runtime environment to start processin
 
 ```C
 extern "C" void __stdcall _CxxThrowException(
-   void* pExceptionObject
+   void* pExceptionObject,
    _ThrowInfo* pThrowInfo
 );
 ```

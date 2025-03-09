@@ -121,12 +121,12 @@ Creates an [accelerator_view](accelerator-view-class.md) object from a pointer t
 
 ```cpp
 accelerator_view create_accelerator_view(
-    IUnknown * _D3D_device
+    IUnknown * _D3D_device,
     queuing_mode _Qmode = queuing_mode_automatic);
 
 accelerator_view create_accelerator_view(
     accelerator& _Accelerator,
-    bool _Disable_timeout
+    bool _Disable_timeout,
     queuing_mode _Qmode = queuing_mode_automatic);
 ```
 

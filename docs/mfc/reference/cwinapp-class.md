@@ -1535,7 +1535,7 @@ The framework calls this method to open the named [CDocument](../../mfc/referenc
 
 ```
 virtual CDocument* OpenDocumentFile(
-    LPCTSTR lpszFileName
+    LPCTSTR lpszFileName,
     BOOL bAddToMRU = TRUE);
 ```
 

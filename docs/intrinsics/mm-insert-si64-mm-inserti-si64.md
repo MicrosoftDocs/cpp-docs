@@ -21,7 +21,7 @@ __m128i _mm_insert_si64(
 );
 __m128i _mm_inserti_si64(
    __m128i Source1,
-   __m128i Source2
+   __m128i Source2,
    int Length,
    int Index
 );

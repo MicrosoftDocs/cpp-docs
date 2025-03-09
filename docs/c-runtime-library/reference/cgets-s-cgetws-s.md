@@ -26,7 +26,7 @@ errno_t _cgets_s(
    size_t *pSizeRead
 );
 errno_t _cgetws_s(
-   wchar_t *buffer
+   wchar_t *buffer,
    size_t numberOfElements,
    size_t *pSizeRead
 );

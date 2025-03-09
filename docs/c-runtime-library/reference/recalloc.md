@@ -18,7 +18,7 @@ A combination of `realloc` and `calloc`. Reallocates an array in memory and init
 
 ```C
 void *_recalloc(
-   void *memblock
+   void *memblock,
    size_t num,
    size_t size
 );
