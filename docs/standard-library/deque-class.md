@@ -11,9 +11,9 @@ Arranges elements of a given type in a linear arrangement and, like a vector, en
 
 ## Syntax
 
-```unstlib
-template <class Type, class Allocator =allocator<Type>>
-class deque
+```cpp
+template <class Type, class Allocator = allocator<Type>>
+class deque;
 ```
 
 ### Parameters
@@ -720,7 +720,7 @@ None of the constructors perform any interim reallocations.
 ### Example
 
 ```cpp
-/ compile with: /EHsc
+// compile with: /EHsc
 #include <deque>
 #include <iostream>
 #include <forward_list>
@@ -1634,7 +1634,7 @@ int main( )
 
 Provides a pointer to an element in a [`deque`](../standard-library/deque-class.md).
 
-```unstlib
+```cpp
 typedef typename Allocator::pointer pointer;
 ```
 

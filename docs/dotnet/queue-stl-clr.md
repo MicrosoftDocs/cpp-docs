@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: queue (STL/CLR)"
 title: "queue (STL/CLR)"
+description: "Learn more about: queue (STL/CLR)"
 ms.date: "4/20/2023"
 ms.topic: "reference"
 f1_keywords: ["cliext::queue", "cliext::queue::assign", "cliext::queue::back", "cliext::queue::back_item", "cliext::queue::const_reference", "cliext::queue::container_type", "cliext::queue::difference_type", "cliext::queue::empty", "cliext::queue::front", "cliext::queue::front_item", "cliext::queue::generic_container", "cliext::queue::generic_value", "cliext::queue::get_container", "cliext::queue::operator=", "cliext::queue::pop", "cliext::queue::push", "cliext::queue::queue", "cliext::queue::reference", "cliext::queue::size", "cliext::queue::size_type", "cliext::queue::to_array", "cliext::queue::value_type"]
@@ -1417,7 +1417,7 @@ int main()
     c2.push(L'b');
     c2.push(L'd');
 
-/    / display contents "a b d"
+    // display contents "a b d"
     for each (wchar_t elem in c2.get_container())
         System::Console::Write("{0} ", elem);
     System::Console::WriteLine();

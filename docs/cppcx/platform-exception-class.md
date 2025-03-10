@@ -13,7 +13,7 @@ Represents errors that occur during application execution. Custom exception clas
 ## Syntax
 
 ```cpp
-public ref class Exception : Object,    IException,    IPrintable,    IEquatable
+public ref class Exception : Object, IException, IPrintable, IEquatable
 ```
 
 ### Members
@@ -68,10 +68,10 @@ Exception^ CreateException(int32 hr, Platform::String^ message);
 
 ### Parameters
 
-*hr*<br/>
+*hr*\
 An HRESULT value that you typically get from a call to a COM method. If the value is 0, which is equal to S_OK, this method throws [Platform::InvalidArgumentException](../cppcx/platform-invalidargumentexception-class.md) because COM methods that succeed should not throw exceptions.
 
-*message*<br/>
+*message*\
 A string that describes the error.
 
 ### Return Value
@@ -97,10 +97,10 @@ Exception(int32 hresult, ::Platform::String^ message);
 
 ### Parameters
 
-*hresult*<br/>
+*hresult*\
 The error HRESULT that is represented by the exception.
 
-*message*<br/>
+*message*\
 A user-specified message, such as prescriptive text, that is associated with the exception. In general you should prefer the second overload in order to provide a descriptive message that is as specific as possible about how and why the error has occurred.
 
 ## <a name="hresult"></a> Exception::HResult Property
@@ -129,7 +129,8 @@ Message that describes the error.
 ### Syntax
 
 ```cpp
-public:property String^ Message;
+public:
+    property String^ Message;
 ```
 
 ### Property Value

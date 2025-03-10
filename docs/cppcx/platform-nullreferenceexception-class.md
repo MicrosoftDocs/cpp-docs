@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::NullReferenceException Class"
 title: "Platform::NullReferenceException Class"
+description: "Learn more about: Platform::NullReferenceException Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::NullReferenceException", "VCCORLIB/Platform::NullReferenceException::NullReferenceException"]
 helpviewer_keywords: ["Platform::NullReferenceException"]
-ms.assetid: be202577-d898-4716-83cd-e3556fe8a241
 ---
 # Platform::NullReferenceException Class
 
@@ -14,7 +13,7 @@ Thrown when there is an attempt to dereference a null object reference.
 ## Syntax
 
 ```cpp
-public ref class NullReferenceException : COMException,    IException,    IPrintable,    IEquatable
+public ref class NullReferenceException : COMException, IException, IPrintable, IEquatable
 ```
 
 ### Remarks
