@@ -28,7 +28,7 @@ inline RESULT_CODE StopTracingSession(
     TRACING_SESSION_STATISTICS* statistics);
 
 inline RESULT_CODE StopTracingSession(
-    const wchar_t*              sessionName
+    const wchar_t*              sessionName,
     const wchar_t*              outputLogFile,
     TRACING_SESSION_STATISTICS* statistics);
 ```
