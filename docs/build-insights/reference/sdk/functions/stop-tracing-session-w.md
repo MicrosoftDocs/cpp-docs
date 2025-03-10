@@ -13,7 +13,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and later. To s
 ::: moniker-end
 ::: moniker range=">=msvc-150"
 
-The `StopTracingSessionW` function stops an ongoing tracing session and produces a raw trace file. Raw trace files can be passed to the [Analyze](analyze.md), [AnalzeA](analyze-a.md), and [AnalyzeW](analyze-w.md) functions to start an analysis session. Raw trace files can also be passed to the [Relog](relog.md), [RelogA](relog-a.md), and [RelogW](relog-w.md) functions to start relogging session. Executables calling `StopTracingSessionW` must have administrator privileges.
+The `StopTracingSessionW` function stops an ongoing tracing session and produces a raw trace file. Raw trace files can be passed to the [Analyze](analyze.md), [AnalyzeA](analyze-a.md), and [AnalyzeW](analyze-w.md) functions to start an analysis session. Raw trace files can also be passed to the [Relog](relog.md), [RelogA](relog-a.md), and [RelogW](relog-w.md) functions to start relogging session. Executables calling `StopTracingSessionW` must have administrator privileges.
 
 ## Syntax
 
