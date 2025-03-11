@@ -10,7 +10,7 @@ helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-dynam
 > The `/dynamicdeopt` compiler switch is currently in PREVIEW.
 > This information relates to a prerelease feature that might be substantially modified before release. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) so you can debug optimized code as if it had been compiled deoptimized and step in anywhere with on-demand function deoptimization.
+Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) so you can debug optimized code as if it were compiled deoptimized and step in anywhere with on-demand function deoptimization.
 
 ## Syntax
 
@@ -59,9 +59,7 @@ fsanitize=kernel-address
 All of the CLR flags
 ```
 
-JTW - when I get a build with the property pages, push them to that section that sets the global property that does all of this for you and remove the next two lines. Possibly mention that it turns these things off for you.
-Turn `/GL `off via Project properties C/C++ > Optimization > Whole Program Optimization. Set it to **No**.
-Turn `/OPT:ICF` off in Project properties Linker > Optimization > Enable COMDAT Folding. Set it to **No**.
+You can set this switch inside Visual Studio. For more information, see [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging#build-system-integration). There are advantages to setting the switch in Visual Studio because MSBUILD automatically suppresses some of the incompatible switches such as `/GL` and `/OPT:ICF`. It also sets the corresponding linker option (`/DYNAMICDEOPT`). You can also set the switch in the command line.
 
 ### To set this compiler option programmatically
 
