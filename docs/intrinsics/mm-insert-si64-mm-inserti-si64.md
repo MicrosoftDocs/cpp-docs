@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: _mm_insert_si64, _mm_inserti_si64"
 title: "_mm_insert_si64, _mm_inserti_si64"
+description: "Learn more about: _mm_insert_si64, _mm_inserti_si64"
 ms.date: "09/02/2019"
 f1_keywords: ["_mm_inserti_si64", "_mm_insert_si64"]
 helpviewer_keywords: ["insertq instruction", "_mm_insert_si64 intrinsic", "_mm_inserti_si64 intrinsic"]
-ms.assetid: 897a4b36-8b08-4b00-a18f-7850f5732d7d
 ---
 # _mm_insert_si64, _mm_inserti_si64
 
@@ -21,7 +20,7 @@ __m128i _mm_insert_si64(
 );
 __m128i _mm_inserti_si64(
    __m128i Source1,
-   __m128i Source2
+   __m128i Source2,
    int Length,
    int Index
 );

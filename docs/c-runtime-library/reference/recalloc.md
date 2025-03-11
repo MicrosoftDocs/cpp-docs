@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _recalloc"
 title: "_recalloc"
+description: "Learn more about: _recalloc"
 ms.date: "4/2/2020"
 api_name: ["_recalloc", "_o__recalloc"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_recalloc", "recalloc"]
 helpviewer_keywords: ["_recalloc function", "recalloc function"]
-ms.assetid: 1db8305a-3f03-418c-8844-bf9149f63046
 ---
 # `_recalloc`
 
@@ -18,7 +17,7 @@ A combination of `realloc` and `calloc`. Reallocates an array in memory and init
 
 ```C
 void *_recalloc(
-   void *memblock
+   void *memblock,
    size_t num,
    size_t size
 );
