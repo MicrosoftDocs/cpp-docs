@@ -12,8 +12,9 @@ helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option
 
 The **`/DYNAMICDEOPT`** linker option, when used with the compiler switch [`/dynamicdeopt`](dynamic-deopt.md), enables [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging), which allows you to debug optimized code as if it had been compiled deoptimized and step in anywhere with on-demand function deoptimization.
 
-|:---:|:---:|:---:|
-| test: `x||y` | test: `x||y` | test: `x||y` |
+|   |   |
+|---|---|
+| test: `x||y` | test: `x||y`  |
 
 
 ## Syntax
