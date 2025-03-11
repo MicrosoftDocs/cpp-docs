@@ -13,7 +13,7 @@ Enables selective modification of the behavior of compiler warning messages.
 ## Syntax
 
 > **`#pragma warning(`**\
-> &emsp;*`warning-specifier`* **`:`** *`warning-number-list`*\
+> &emsp;*`warning-specifier`* **`:`** *`warning-number-list`* [ **`,`** **`justification`** **`:`** *`string-literal`*]\
 > &emsp;[**`;`** *`warning-specifier`* **`:`** *`warning-number-list`* ... ] **`)`**\
 > **`#pragma warning( push`** [ **`,`** *n* ] **`)`**\
 > **`#pragma warning( pop )`**
@@ -26,16 +26,25 @@ The following warning-specifier parameters are available.
 |--|--|
 | `1`, `2`, `3`, `4` | Apply the given level to the specified warnings. Also turns on a specified warning that is off by default. |
 | `default` | Reset warning behavior to its default value. Also turns on a specified warning that is off by default. The warning will be generated at its default, documented, level.<br /><br /> For more information, see [Compiler warnings that are off by default](../preprocessor/compiler-warnings-that-are-off-by-default.md). |
-| `disable` | Don't issue the specified warning messages. |
+| `disable` | Don't issue the specified warning messages. The optional **`justification`** property is allowed. |
 | `error` | Report the specified warnings as errors. |
 | `once` | Display the specified message(s) only one time. |
-| `suppress` | Pushes the current state of the pragma on the stack, disables the specified warning for the next line, and then pops the warning stack so that the pragma state is reset. |
+| `suppress` | Pushes the current state of the pragma on the stack, disables the specified warning for the next line, and then pops the warning stack so that the pragma state is reset. The optional **`justification`** property is allowed. |
 
 The following code statement illustrates that a *`warning-number-list`* parameter can contain multiple warning numbers, and that multiple *`warning-specifier`* parameters can be specified in the same pragma directive.
 
 ```cpp
 #pragma warning( disable : 4507 34; once : 4385; error : 164 )
 ```
+
+However, when the **`justification`** field is present, only one warning number can be specified. The following code statement illustrates the use of the **`justification`** field.
+
+```cpp
+#pragma warning( disable : 4507, justification : "This warning is disabled" )
+```
+
+The **`justification`** fields allows you to explain why a warning is being disable or
+suppressed. The **`justification`** field is only supported for the **`disable`** and **`suppress`** *`warning-specifier`*. This value will appear in the SARIF output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal.
 
 This directive is functionally equivalent to the following code:
 
