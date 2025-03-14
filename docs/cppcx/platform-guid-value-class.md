@@ -1,15 +1,14 @@
 ---
-description: "Learn more about: Platform::Guid value class"
 title: "Platform::Guid value class"
+description: "Learn more about: Platform::Guid value class"
 ms.date: "01/15/2019"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Guid"]
 helpviewer_keywords: ["Platform::Guid Struct"]
-ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
 ---
 # Platform::Guid value class
 
-Represents a [GUID](/windows/win32/api/guiddef/ns-guiddef-guid type in the Windows Runtime type system.
+Represents a [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) type in the Windows Runtime type system.
 
 ## Syntax
 
@@ -74,43 +73,43 @@ Guid(
 
 ### Parameters
 
-*a*<br/>
+*a*\
 The first 4 bytes of the `GUID`.
 
-*b*<br/>
+*b*\
 The next 2 bytes of the `GUID`.
 
-*c*<br/>
+*c*\
 The next 2 bytes of the `GUID`.
 
-*d*<br/>
+*d*\
 The next byte of the `GUID`.
 
-*e*<br/>
+*e*\
 The next byte of the `GUID`.
 
-*f*<br/>
+*f*\
 The next byte of the `GUID`.
 
-*g*<br/>
+*g*\
 The next byte of the `GUID`.
 
-*h*<br/>
+*h*\
 The next byte of the `GUID`.
 
-*i*<br/>
+*i*\
 The next byte of the `GUID`.
 
-*j*<br/>
+*j*\
 The next byte of the `GUID`.
 
-*k*<br/>
+*k*\
 The next byte of the `GUID`.
 
-*m*<br/>
+*m*\
 A `GUID` in the form a [GUID structure](/windows/win32/api/guiddef/ns-guiddef-guid).
 
-*n*<br/>
+*n*\
 The remaining 8 bytes of the `GUID`.
 
 ## <a name="operator-equality"></a> Guid::operator== Operator
@@ -125,10 +124,10 @@ static bool Platform::Guid::operator==(Platform::Guid guid1, Platform::Guid guid
 
 ### Parameters
 
-*guid1*<br/>
+*guid1*\
 The first `Platform::Guid` to compare.
 
-*guid2*<br/>
+*guid2*\
 The second `Platform::Guid` to compare.
 
 ### Return Value
@@ -152,10 +151,10 @@ static bool Platform::Guid::operator!=(Platform::Guid guid1, Platform::Guid guid
 
 ### Parameters
 
-*guid1*<br/>
+*guid1*\
 The first `Platform::Guid` to compare.
 
-*guid2*<br/>
+*guid2*\
 The second `Platform::Guid` to compare.
 
 ### Return Value
@@ -174,10 +173,10 @@ static bool Platform::Guid::operator<(Platform::Guid guid1, Platform::Guid guid2
 
 ### Parameters
 
-*guid1*<br/>
+*guid1*\
 The first `Platform::Guid` to compare.
 
-*guid2*<br/>
+*guid2*\
 The second `Platform::Guid` to compare.
 
 ### Return Value

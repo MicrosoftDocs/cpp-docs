@@ -135,7 +135,6 @@ The **Content** property specifies whether the file will be deployed to the remo
 In some cases, you may require more control over your project's deployment. For example, some files that you want to deploy might be outside of your solution or you want to customize your remote deploy directory per file or directory. In these cases, append the following code block(s) to your .vcxproj file and replace "example.cpp" with the actual file names:
 
 ```xml
-
 <ItemGroup>
    <RemoteDeploy Include="__example.cpp">
 <!-- This is the source Linux machine, can be empty if DeploymentType is LocalRemote -->

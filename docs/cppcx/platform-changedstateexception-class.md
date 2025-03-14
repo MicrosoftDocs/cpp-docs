@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::ChangedStateException Class"
 title: "Platform::ChangedStateException Class"
+description: "Learn more about: Platform::ChangedStateException Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::ChangedStateException", "VCCORLIB/Platform::ChangedStateException::ChangedStateException"]
 helpviewer_keywords: ["Platform::ChangedStateException"]
-ms.assetid: f894beac-9e80-4fac-ac25-89f1dbc0a6a4
 ---
 # Platform::ChangedStateException Class
 
@@ -14,7 +13,7 @@ Thrown when the internal state of an object has changed, thereby invalidating th
 ## Syntax
 
 ```cpp
-public ref class ChangedStateException : COMException,    IException,    IPrintable,    IEquatable
+public ref class ChangedStateException : COMException, IException, IPrintable, IEquatable
 ```
 
 ### Remarks
