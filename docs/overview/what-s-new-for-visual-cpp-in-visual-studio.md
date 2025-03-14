@@ -560,7 +560,7 @@ Select Standard Library (STL) improvements are highlighted here. For a comprehen
 - Added debugging visualizers to improve how the following types are displayed: `source_location`, `bind_front()`, `u8string` (and its iterators), `default_sentinel_t`, `unreachable_sentinel_t`, `ranges::empty_view`, `ranges::single_view`, `ranges::iota_view` (and its iterator/sentinel), `ranges::ref_view`, `thread`, `thread::id`, `jthread`, and `filesystem::path`
 - Added `[[nodiscard]]` to the `stoi()` family of functions in `<string>` and to various functions in `<locale>` such as the `collate` member functions, `has_facet()`, and the `isalnum()` and `tolower()` families.
 - [P0980R1](https://wg21.link/P0980R1) Made `std::string` `constexpr` in VS 2019 16.10. Now supported for Clang.
-- [P1004R2](https://wg21.link/P1004R2) Made `std::vector` `constexpr`in VS 2019 16.10. Now supported for Clang.
+- [P1004R2](https://wg21.link/P1004R2) Made `std::vector` `constexpr` in VS 2019 16.10. Now supported for Clang.
 
 **Highlighted C++23 features**
 
