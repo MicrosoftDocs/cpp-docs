@@ -1,7 +1,7 @@
 ---
 title: "MSVC Linker options"
 description: "A list of the options supported by the Microsoft LINK linker."
-ms.date: 3/11/2025
+ms.date: 03/14/2025
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ---

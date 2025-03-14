@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /DYNAMICDEOPT (Support C++ Dynamic Debugging)"
 title: "/DYNAMICDEOPT (Support C++ Dynamic Debugging) (Preview)"
-ms.date: 3/11/2025
+ms.date: 03/14/2025
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateDynamicDeoptInformation", "/dynamicdeopt"]
 helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option", "-DYNAMICDEOPT linker option", "c++ dynamic debugging"]
 ---

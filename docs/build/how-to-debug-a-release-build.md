@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: How to: Debug a Release Build"
 title: "How to: Debug a Release Build"
-ms.date: 2/27/2025
+ms.date: 03/14/2025
 helpviewer_keywords: ["debugging [C++], release builds", "release builds, debugging"]
 ---
 # How to: Debug a Release Build
