@@ -30,8 +30,7 @@ The managed type to be embedded.
 |Name|Description|
 |---------|-----------|
 |[auto_gcroot::auto_gcroot](#auto-gcroot)|The `auto_gcroot` constructor.|
-|[auto_gcroot::~auto_gcroot](#tilde-auto-gcroot)|The `auto_gcroot` destructor.
-|
+|[auto_gcroot::~auto_gcroot](#tilde-auto-gcroot)|The `auto_gcroot` destructor.|
 
 ### Public methods
 
