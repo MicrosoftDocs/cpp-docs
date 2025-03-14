@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /DYNAMICDEOPT (Support C++ Dynamic Debugging)"
 title: "/DYNAMICDEOPT (Support C++ Dynamic Debugging) (Preview)"
+description: "Learn more about: /DYNAMICDEOPT (Support C++ Dynamic Debugging)."
 ms.date: 03/14/2025
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateDynamicDeoptInformation", "/dynamicdeopt"]
 helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option", "-DYNAMICDEOPT linker option", "c++ dynamic debugging"]
@@ -32,14 +32,14 @@ Builds the deoptimized output after building the optimized output instead of in 
 
 This preview flag, available starting with Visual Studio 2022 Version 17.14 Preview 2, applies only to x64 projects.
 
-### To set this linker option in the Visual Studio development environment
+### Set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 1. Select the **Linker** > **Debugging** property page.
 
-### To set this linker option programmatically
+### Set this linker option programmatically
 
-1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateDebugInformation%2A>.
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateDebugInformation%2A>.
 
 ## See also
 
