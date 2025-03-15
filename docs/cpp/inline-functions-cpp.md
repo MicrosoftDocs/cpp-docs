@@ -7,7 +7,7 @@ helpviewer_keywords: ["inline functions [C++], class members"]
 ---
 # Inline functions (C++)
 
-The **`inline`** keyword suggests that the compiler substitute the code within the function definition in place of each call to that function.
+The **`inline`** keyword suggests that the compiler substitute the code with the function definition in place of each call to that function.
 
 In theory, using inline functions can make your program faster because they eliminate the overhead associated with function calls. Calling a function requires pushing the return address on the stack, pushing arguments onto the stack, jumping to the function body, and then executing a return instruction when the function finishes. This process is eliminated by inlining the function. The compiler also has different opportunities to optimize functions expanded inline versus those that aren't. A tradeoff of inline functions is that the overall size of your program can increase.
 
