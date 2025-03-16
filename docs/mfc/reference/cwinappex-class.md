@@ -970,7 +970,7 @@ virtual BOOL OnWorkspaceIdle(CWnd*);
 
 ### Parameters
 
-[in] *`CWnd*`*\
+[in] *`CWnd*`*
 
 ### Return Value
 

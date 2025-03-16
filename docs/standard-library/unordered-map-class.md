@@ -2781,4 +2781,4 @@ int main()
 ## See also
 
 [`<unordered_map>`](../standard-library/unordered-map.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -127,4 +127,4 @@ Log base 2 of 65536.000000 is 16.000000
 [`_matherr`](matherr.md) \
 [`pow`, `powf`, `powl`](pow-powf-powl.md) \
 [`_CIlog`](../cilog.md) \
-[`_CIlog10`](../cilog10.md)\
+[`_CIlog10`](../cilog10.md)

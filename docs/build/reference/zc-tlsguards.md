@@ -29,4 +29,4 @@ The **`/Zc:tlsGuards`** option is new in Visual Studio 2019 version 16.5. This o
 
 ## See also
 
-[`/Zc` (Conformance)](zc-conformance.md)\
+[`/Zc` (Conformance)](zc-conformance.md)

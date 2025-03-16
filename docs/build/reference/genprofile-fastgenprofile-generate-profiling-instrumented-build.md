@@ -12,7 +12,7 @@ Specifies generation of a *`.pgd`* file by the linker to support profile-guided 
 ## Syntax
 
 > **`/GENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]\
-> **`/FASTGENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]\
+> **`/FASTGENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]
 
 > *`profile-argument`*\
 > &emsp;{ **`COUNTER32`** &vert; **`COUNTER64`** }\

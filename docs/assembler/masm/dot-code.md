@@ -16,7 +16,7 @@ When using 32-bit MASM, this should be used along with [.MODEL](dot-model.md).
 
 > **.CODE** ⟦*name*⟧\
 > ⟦ *segmentItem* ⟧...\
-> ⟦ *codesegmentnameId* **ENDS**;;⟧\
+> ⟦ *codesegmentnameId* **ENDS**;;⟧
 
 ### Parameters
 

@@ -131,4 +131,4 @@ For an example of using **`strrchr`**, see [`strchr`](strchr-wcschr-mbschr-mbsch
 [`strcspn`, `wcscspn`, `_mbscspn`, `_mbscspn_l`](strcspn-wcscspn-mbscspn-mbscspn-l.md)\
 [`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
 [`strpbrk`, `wcspbrk`, `_mbspbrk`, `_mbspbrk_l`](strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)\
-[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)\
+[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)

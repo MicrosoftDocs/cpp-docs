@@ -1169,7 +1169,7 @@ virtual void OnKillSelection(CMFCPropertyGridProperty*);
 
 ### Parameters
 
-[in] *`CMFCPropertyGridProperty*`*\
+[in] *`CMFCPropertyGridProperty*`*
 
 ### Remarks
 
@@ -1183,7 +1183,7 @@ virtual void OnPosSizeChanged(CRect);
 
 ### Parameters
 
-[in] *`CRect`*\
+[in] *`CRect`*
 
 ### Remarks
 
@@ -1264,7 +1264,7 @@ virtual void OnSetSelection CMFCPropertyGridProperty*);
 
 ### Parameters
 
-[in] *`CMFCPropertyGridProperty*`*\
+[in] *`CMFCPropertyGridProperty*`*
 
 ### Remarks
 

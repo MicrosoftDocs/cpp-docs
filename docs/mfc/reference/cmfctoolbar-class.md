@@ -2303,7 +2303,7 @@ virtual BOOL LoadBitmapEx(
 ### Parameters
 
 [in] *`params`*\
-[in] *`bLocked`*\
+[in] *`bLocked`*
 
 ### Return Value
 
@@ -2317,7 +2317,7 @@ static BOOL __stdcall LoadLargeIconsState(LPCTSTR lpszProfileName = NULL);
 
 ### Parameters
 
-[in] *`lpszProfileName`*\
+[in] *`lpszProfileName`*
 
 ### Return Value
 
@@ -2577,7 +2577,7 @@ virtual BOOL OnSetAccData(long lVal);
 
 ### Parameters
 
-[in] *`lVal`*\
+[in] *`lVal`*
 
 ### Return Value
 
@@ -2837,7 +2837,7 @@ static BOOL __stdcall SaveParameters(LPCTSTR lpszProfileName = NULL);
 
 ### Parameters
 
-[in] *`lpszProfileName`*\
+[in] *`lpszProfileName`*
 
 ### Return Value
 
@@ -3099,7 +3099,7 @@ static void __stdcall SetHelpMode(BOOL bOn = TRUE);
 
 ### Parameters
 
-[in] *`bOn`*\
+[in] *`bOn`*
 
 ### Remarks
 
@@ -3111,7 +3111,7 @@ BOOL SetHot(CMFCToolBarButton* pMenuButton);
 
 ### Parameters
 
-[in] *`pMenuButton`*\
+[in] *`pMenuButton`*
 
 ### Return Value
 
@@ -3161,7 +3161,7 @@ void SetIgnoreSetText(BOOL bValue);
 
 ### Parameters
 
-[in] *`bValue`*\
+[in] *`bValue`*
 
 ### Remarks
 
@@ -3222,7 +3222,7 @@ void SetMaskMode(BOOL bMasked);
 
 ### Parameters
 
-[in] *`bMasked`*\
+[in] *`bMasked`*
 
 ### Remarks
 
@@ -3295,7 +3295,7 @@ void SetOrigButtons(const CObList& lstOrigButtons);
 
 ### Parameters
 
-[in] *`lstOrigButtons`*\
+[in] *`lstOrigButtons`*
 
 ### Remarks
 
