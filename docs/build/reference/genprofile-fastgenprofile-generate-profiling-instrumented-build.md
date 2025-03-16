@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
 title: "/GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
+description: "Learn more about: /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
 ms.date: 04/14/2021
 f1_keywords: ["GENPROFILE", "FASTGENPROFILE", "/GENPROFILE", "/FASTGENPROFILE"]
 helpviewer_keywords: ["GENPROFILE", "FASTGENPROFILE"]

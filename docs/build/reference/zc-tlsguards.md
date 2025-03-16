@@ -1,6 +1,6 @@
 ---
-description: "Learn more about the /Zc:tlsGuards (Check TLS initialization) compiler option."
 title: "/Zc:tlsGuards (Check TLS initialization)"
+description: "Learn more about the /Zc:tlsGuards (Check TLS initialization) compiler option."
 ms.date: 11/08/2022
 f1_keywords: ["/Zc:tlsGuards"]
 helpviewer_keywords: ["-Zc:tlsGuards compiler option (C++)", "/Zc:tlsGuards compiler option (C++)"]

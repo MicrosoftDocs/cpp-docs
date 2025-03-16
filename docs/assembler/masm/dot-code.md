@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: .CODE"
 title: ".CODE"
+description: "Learn more about: .CODE"
 ms.date: "12/17/2019"
 f1_keywords: [".CODE"]
 helpviewer_keywords: [".CODE directive"]
-ms.assetid: 2b8c882c-c0d2-4fa3-8335-e6b12717a4f4
 ---
 # .CODE
 
