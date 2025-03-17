@@ -1,7 +1,7 @@
 ---
 title: "<system_error> operators"
 description: "Learn more about: <system_error> operators"
-ms.date: "11/04/2016"
+ms.date: "3/17/2025"
 f1_keywords: ["system_error/std::operator!=", "system_error/std::operator=="]
 ---
 # `<system_error>` operators
@@ -23,11 +23,11 @@ bool operator==(const error_condition& left,
 
 ### Parameters
 
-*left*\
-The object to be tested for equality.
+*`left`*\
+The object to test for equality.
 
-*right*\
-The object to be tested for equality.
+*`right`*\
+The object to test for equality.
 
 ### Return Value
 
@@ -50,15 +50,15 @@ bool operator!=(const error_condition& left, const error_condition& right);
 
 ### Parameters
 
-*left*\
-The object to be tested for inequality.
+*`left`*\
+The object to test for inequality.
 
-*right*\
-The object to be tested for inequality.
+*`right`*\
+The object to test for inequality.
 
 ### Return Value
 
-**`true`** if the object passed in *left* is not equal to the object passed in *right*; otherwise **`false`**.
+**`true`** if the object passed in *left* is not equal to the object passed in *`right`*; otherwise **`false`**.
 
 ### Remarks
 
@@ -94,15 +94,15 @@ inline bool operator<(
 
 ### Parameters
 
-*left*\
-The object to be compared.
+*`left`*\
+The object to compare.
 
-*right*\
-The object to be compared.
+*`right`*\
+The object to compare.
 
 ### Return Value
 
-**`true`** if the object passed in *left* is less than the object passed in *right*; Otherwise, **`false`**.
+**`true`** if the object passed in *`left`* is less than the object passed in *`right`*; Otherwise, **`false`**.
 
 ### Remarks
 
@@ -119,11 +119,11 @@ basic_ostream<charT, traits>& operator<<(basic_ostream<charT, traits>& os, const
 
 ### Parameters
 
-*os*\
+*`os`*\
 The target output stream.
 
-*ec*\
-The `error_code` object to be output.
+*`ec`*\
+The `error_code` object to output.
 
 ### Return Value
 
