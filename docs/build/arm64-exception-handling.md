@@ -299,6 +299,7 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 | `save_fregp_x` | 1101101x'xxzzzzzz: save pair `d(8+#X)` at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
 | `save_freg` | 1101110x'xxzzzzzz: save reg `d(8+#X)` at `[sp+#Z*8]`, offset \<= 504 |
 | `save_freg_x` | 11011110'xxxzzzzz: save reg `d(8+#X)` at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -256 |
+| `alloc_z` | 11011111'zzzzzzzz: allocate stack with size `z * SVE-VL` |
 | `alloc_l` | 11100000'xxxxxxxx'xxxxxxxx'xxxxxxxx: allocate large stack with size \< 256M (2^24 * 16) |
 | `set_fp` | 11100001: set up `x29` with `mov x29,sp` |
 | `add_fp` | 11100010'xxxxxxxx: set up `x29` with `add x29,sp,#x*8` |
@@ -306,6 +307,11 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 | `end` | 11100100: end of unwind code. Implies `ret` in epilog. |
 | `end_c` | 11100101: end of unwind code in current chained scope. |
 | `save_next` | 11100110: save next non-volatile Int or FP register pair. |
+| `save_any_xreg` | 11100111'0pxrrrrr'00oooooo: `p` = 0/1 => single/pair, `x` = 0/1 => positive / negative pre-indexed, offset = `o` * 16 for x=1 or p=1 / else offset * 8 |
+| `save_any_dreg` | 11100111'0pxrrrrr'01oooooo: `p` = 0/1 => single/pair, `x` = 0/1 => positive / negative pre-indexed, offset = `o` * 16 for x=1 or p=1 / else offset * 8 |
+| `save_any_qreg` | 11100111'0pxrrrrr'10oooooo: `p` = 0/1 => single/pair, `x` = 0/1 => positive / negative pre-indexed, offset = `o` * 16 |
+| `save_zreg` | 11100111'0oo0rrrr'11oooooo
+| `save_preg` | 11100111'0oo1rrrr'11oooooo
 |  | 11100111: reserved |
 |  | 11101xxx: reserved for custom stack cases below only generated for asm routines |
 |  | 11101000: Custom stack for `MSFT_OP_TRAP_FRAME` |
