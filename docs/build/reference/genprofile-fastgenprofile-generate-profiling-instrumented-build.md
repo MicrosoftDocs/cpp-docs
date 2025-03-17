@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
 title: "/GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
+description: "Learn more about: /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
 ms.date: 04/14/2021
 f1_keywords: ["GENPROFILE", "FASTGENPROFILE", "/GENPROFILE", "/FASTGENPROFILE"]
 helpviewer_keywords: ["GENPROFILE", "FASTGENPROFILE"]
@@ -12,7 +12,7 @@ Specifies generation of a *`.pgd`* file by the linker to support profile-guided 
 ## Syntax
 
 > **`/GENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]\
-> **`/FASTGENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]\
+> **`/FASTGENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]
 
 > *`profile-argument`*\
 > &emsp;{ **`COUNTER32`** &vert; **`COUNTER64`** }\
