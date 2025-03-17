@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: _bstr_t::Assign"
 title: "_bstr_t::Assign"
+description: "Learn more about: _bstr_t::Assign"
 ms.date: 02/02/2021
 f1_keywords: ["_bstr_t::Assign"]
 helpviewer_keywords: ["Assign method [C++]"]
 ---
-# _`bstr_t::Assign`
+# `_bstr_t::Assign`
 
 **Microsoft Specific**
 
