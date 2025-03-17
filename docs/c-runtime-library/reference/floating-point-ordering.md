@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered"
 title: "isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered"
+description: "Learn more about: isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered"
 ms.date: "01/31/2019"
 f1_keywords: ["isgreater", "math/isgreater", "isgreaterequal", "math/isgreaterequal", "isless", "math/isless", "islessequal", "math/islessequal", "islessgreater", "math/islessgreater", "isunordered", "math/isunordered"]
 helpviewer_keywords: ["isgreater function", "isgreaterequal function", "isless function", "islessequal function", "islessgreater function", "isunordered function"]
@@ -43,7 +43,7 @@ int isunordered(
 ); /* C-only macro */
 ```
 
-```C++
+```cpp
 template <class FloatingType1, class FloatingType2>
 inline bool isgreater(
    FloatingType1 x,

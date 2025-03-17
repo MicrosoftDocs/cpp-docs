@@ -525,7 +525,7 @@ bool b = S{} != S{};
 
 The compiler accepts this code, which means that the compiler is more strict with code such as:
 
-```c++
+```cpp
 struct S
 {
   operator bool() const;
