@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler errors C2600 Through C2699"
 title: "Compiler errors C2600 Through C2699"
+description: "Learn more about: Compiler errors C2600 Through C2699"
 ms.date: "04/21/2019"
 f1_keywords: ["C2604", "C2606", "C2607", "C2608", "C2609", "C2610", "C2615", "C2618", "C2620", "C2621", "C2622", "C2623", "C2625", "C2629", "C2631", "C2639", "C2641", "C2642", "C2643", "C2644", "C2684", "C2685", "C2686", "C2697"]
 helpviewer_keywords: ["C2604", "C2606", "C2607", "C2608", "C2609", "C2610", "C2615", "C2618", "C2620", "C2621", "C2622", "C2623", "C2625", "C2629", "C2631", "C2639", "C2641", "C2642", "C2643", "C2644", "C2684", "C2685", "C2686", "C2697"]
@@ -55,7 +55,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2637](compiler-error-c2637.md)|'*identifier*': cannot modify pointers to data members|
 |[Compiler error C2638](compiler-error-c2638.md)|'*identifier*': __based modifier illegal on pointer to member|
 |Compiler error C2639|trailing return type '*type*' of deduction guide should be a specialization of '*class template*'|
-|[Compiler error C2640](compiler-error-c2640.md)|'*identifier*': __based modifier illegal on reference|
+|[Compiler error C2640](compiler-error-c2640.md)|'abstract declarator': __based modifier illegal on reference|
 |Compiler error C2641|cannot deduce template arguments for '*template name*'|
 |Compiler error C2642|two deduction guide declarations for the same class template cannot have equivalent parameter list and template head|
 |Compiler error C2643|deduction guide should be declared in the same scope as the corresponding class template '*template name*'|
