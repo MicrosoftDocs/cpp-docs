@@ -306,10 +306,10 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 | `nop` | 11100011: no unwind operation is required. |
 | `end` | 11100100: end of unwind code. Implies `ret` in epilog. |
 | `end_c` | 11100101: end of unwind code in current chained scope. |
-| `save_next` | 11100110: save next non-volatile Int or FP register pair. |
-| `save_any_xreg` | 11100111'0pxrrrrr'00oooooo: save register(s)<ul><li>`p`: 0/1 => single `X(#r)` vs pair `X(#r)` + `X(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16, if x=1 or p=1, else `o` * 8</li></ul><br> |
-| `save_any_dreg` | 11100111'0pxrrrrr'01oooooo: save register(s)<ul><li>`p`: 0/1 => single `D(#r)` vs pair `D(#r)` + `D(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16, if x=1 or p=1, else `o` * 8</li></ul><br> |
-| `save_any_qreg` | 11100111'0pxrrrrr'10oooooo: save register(s)<ul><li>`p`: 0/1 => single `Q(#r)` vs pair `Q(#r)` + `Q(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16</li></ul><br> |
+| `save_next` | 11100110: save next register pair. |
+| `save_any_xreg` | 11100111'0pxrrrrr'00oooooo: save register(s)<ul><li>`p`: 0/1 => single `X(#r)` vs pair `X(#r)` + `X(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16, if x=1 or p=1, else `o` * 8</li></ul>(Windows >= 11 required) |
+| `save_any_dreg` | 11100111'0pxrrrrr'01oooooo: save register(s)<ul><li>`p`: 0/1 => single `D(#r)` vs pair `D(#r)` + `D(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16, if x=1 or p=1, else `o` * 8</li></ul>(Windows >= 11 required) |
+| `save_any_qreg` | 11100111'0pxrrrrr'10oooooo: save register(s)<ul><li>`p`: 0/1 => single `Q(#r)` vs pair `Q(#r)` + `Q(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16</li></ul>(Windows >= 11 required) |
 | `save_zreg` | 11100111'0oo0rrrr'11oooooo: save reg `Z(#r+8)` at `[sp + #o * VL]`, (`Z8` through `Z23`)
 | `save_preg` | 11100111'0oo1rrrr'11oooooo: save reg `P(#r+8)` at `[sp + #o * VL]`, (`P4` through `P15`; `r` values `[0, 3]` are reserved)
 |  | 11100111'1yyyyyyy': reserved |
@@ -336,7 +336,7 @@ In instructions with large values covering multiple bytes, the most significant 
 
 Post-indexed offset addressing isn't allowed in a prolog. All offset ranges (#Z) match the encoding of `stp`/`str` addressing except `save_r19r20_x`, in which 248 is sufficient for all save areas (10 Int registers + 8 FP registers + 8 input registers).
 
-`save_next` must follow a save for Int or FP volatile register pair: `save_regp`, `save_regp_x`, `save_fregp`, `save_fregp_x`, `save_r19r20_x`, or another `save_next`. It saves the next register pair at the next 16-byte slot in "growing up" order. A `save_next` refers to the first FP register pair when it follows the `save-next` that denotes the last Int register pair.
+`save_next` must follow a save for a register pair: `save_regp`, `save_regp_x`, `save_fregp`, `save_fregp_x`, `save_r19r20_x`, or another `save_next`. It can also be used in conjunction with `save_any_xreg`, `save_any_dreg` or `save_any_qreg` but only when `p = 1`. It saves the next register pair in numerically increasing order to the next stack space. `save_next` must not be used beyond the last register of the same kind.
 
 Since the sizes of regular return and jump instructions are the same, there's no need for a separated `end` unwind code in tail-call scenarios.
 
