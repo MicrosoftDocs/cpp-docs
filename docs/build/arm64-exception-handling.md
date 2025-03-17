@@ -307,12 +307,12 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 | `end` | 11100100: end of unwind code. Implies `ret` in epilog. |
 | `end_c` | 11100101: end of unwind code in current chained scope. |
 | `save_next` | 11100110: save next non-volatile Int or FP register pair. |
-| `save_any_xreg` | 11100111'0pxrrrrr'00oooooo: `p` = 0/1 => single/pair, `x` = 0/1 => positive / negative pre-indexed, offset = `o` * 16 for x=1 or p=1 / else offset * 8 |
-| `save_any_dreg` | 11100111'0pxrrrrr'01oooooo: `p` = 0/1 => single/pair, `x` = 0/1 => positive / negative pre-indexed, offset = `o` * 16 for x=1 or p=1 / else offset * 8 |
-| `save_any_qreg` | 11100111'0pxrrrrr'10oooooo: `p` = 0/1 => single/pair, `x` = 0/1 => positive / negative pre-indexed, offset = `o` * 16 |
-| `save_zreg` | 11100111'0oo0rrrr'11oooooo
-| `save_preg` | 11100111'0oo1rrrr'11oooooo
-|  | 11100111: reserved |
+| `save_any_xreg` | 11100111'0pxrrrrr'00oooooo: save register(s)<ul><li>`p`: 0/1 => single `X(#r)` vs pair `X(#r)` + `X(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16, if x=1 or p=1, else `o` * 8</li></ul><br> |
+| `save_any_dreg` | 11100111'0pxrrrrr'01oooooo: save register(s)<ul><li>`p`: 0/1 => single `D(#r)` vs pair `D(#r)` + `D(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16, if x=1 or p=1, else `o` * 8</li></ul><br> |
+| `save_any_qreg` | 11100111'0pxrrrrr'10oooooo: save register(s)<ul><li>`p`: 0/1 => single `Q(#r)` vs pair `Q(#r)` + `Q(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16</li></ul><br> |
+| `save_zreg` | 11100111'0oo0rrrr'11oooooo: save reg `Z(#r+8)` at `[sp + #o * VL]`, (`Z8` through `Z23`)
+| `save_preg` | 11100111'0oo1rrrr'11oooooo: save reg `P(#r+8)` at `[sp + #o * VL]`, (`P4` through `P15`; `r` values `[0, 3]` are reserved)
+|  | 11100111'1yyyyyyy': reserved |
 |  | 11101xxx: reserved for custom stack cases below only generated for asm routines |
 |  | 11101000: Custom stack for `MSFT_OP_TRAP_FRAME` |
 |  | 11101001: Custom stack for `MSFT_OP_MACHINE_FRAME` |
