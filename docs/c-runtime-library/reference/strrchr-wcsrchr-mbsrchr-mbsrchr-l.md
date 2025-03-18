@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: strrchr, wcsrchr, _mbsrchr, _mbsrchr_l"
 title: "strrchr, wcsrchr, _mbsrchr, _mbsrchr_l"
+description: "Learn more about: strrchr, wcsrchr, _mbsrchr, _mbsrchr_l"
 ms.date: "4/2/2020"
 api_name: ["strrchr", "wcsrchr", "_mbsrchr", "_mbsrchr_l", "_o__mbsrchr", "_o__mbsrchr_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe"]
@@ -131,4 +131,4 @@ For an example of using **`strrchr`**, see [`strchr`](strchr-wcschr-mbschr-mbsch
 [`strcspn`, `wcscspn`, `_mbscspn`, `_mbscspn_l`](strcspn-wcscspn-mbscspn-mbscspn-l.md)\
 [`_strnicmp`, `_wcsnicmp`, `_mbsnicmp`, `_strnicmp_l`, `_wcsnicmp_l`, `_mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
 [`strpbrk`, `wcspbrk`, `_mbspbrk`, `_mbspbrk_l`](strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)\
-[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)\
+[`strspn`, `wcsspn`, `_mbsspn`, `_mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)

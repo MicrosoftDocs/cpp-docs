@@ -4,7 +4,6 @@ description: "Describes the extraction operators for the _com_ptr_t class."
 ms.date: 07/07/2020
 f1_keywords: ["_com_ptr_t::operatorInterface&", "_com_ptr_t::operatorbool", "_com_ptr_t::operator->", "_com_ptr_t::operator*"]
 helpviewer_keywords: ["operator Interface& [C++]", "* operator [C++], with specific objects", "operator& [C++]", "operator* [C++]", "-> operator [C++], with specific objects", "& operator [C++], with specific objects", "operator Interface* [C++]", "operator * [C++]", "operator->", "operator bool", "extractors, _com_ptr_t class", "extractors [C++]"]
-ms.assetid: 194b9e0e-123c-49ff-a187-0a7fcd68145a
 ---
 # `_com_ptr_t` Extractors
 
@@ -14,7 +13,7 @@ Extract the encapsulated COM interface pointer.
 
 ## Syntax
 
-```c++
+```cpp
 operator Interface*( ) const throw( );
 operator Interface&( ) const;
 Interface& operator*( ) const;

@@ -1201,7 +1201,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### Parameters
 
-[in] *`pWndOldParent`*\
+[in] *`pWndOldParent`*
 
 ### Remarks
 
