@@ -1,14 +1,14 @@
 ---
-title: "Create a traditional Windows Desktop application (C++)"
-description: "Learn how to create a minimal, traditional Windows Desktop application using Visual Studio, C++, and the Win32 API."
+title: "Create a traditional Windows desktop application (C++)"
+description: "Learn how to create a minimal, traditional Windows desktop application using Visual Studio, C++, and the Win32 API."
 ms.custom: "get-started-article"
 ms.topic: tutorial
 ms.date: 03/17/2025
 helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop applications [C++]", "Windows API [C++]"]
 ---
-# Walkthrough: Create a traditional Windows Desktop application (C++)
+# Walkthrough: Create a traditional Windows desktop application (C++)
 
-This walkthrough shows how to create a traditional Windows desktop application in Visual Studio. The application you create uses the Windows API to display *Hello, Windows desktop!* in a window. You can use the code that you develop in this walkthrough as a pattern to create Windows desktop applications.
+This walkthrough explains how to create a traditional Windows desktop application in Visual Studio. The application you create uses the Windows API to display *Hello, Windows desktop!* in a window. You can use the code that you develop in this walkthrough as a pattern to create Windows desktop applications.
 
 The Windows API (also known as the Win32 API, Windows Desktop API, and Windows Classic API) is a C-language-based framework for creating Windows applications. It has been used to create Windows applications for decades. More advanced and easier-to-program frameworks have been built on top of the Windows API, for example, the MFC, ATL, and .NET frameworks. Even the most modern Windows Runtime code for UWP and Store apps written in C++/WinRT uses the Windows API underneath. For more information about the Windows API, see [Windows API Index](/windows/win32/apiindex/windows-api-list).
 
