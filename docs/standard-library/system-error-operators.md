@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: <system_error> operators"
 title: "<system_error> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <system_error> operators"
+ms.date: "3/17/2025"
 f1_keywords: ["system_error/std::operator!=", "system_error/std::operator=="]
-ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
 ---
 # `<system_error>` operators
 
-## <a name="op_eq_eq"></a> operator==
+## <a name="op_eq_eq"></a> `operator==`
 
 Tests if the object on the left side of the operator is equal to the object on the right side.
 
@@ -24,11 +23,11 @@ bool operator==(const error_condition& left,
 
 ### Parameters
 
-*left*\
-The object to be tested for equality.
+*`left`*\
+The object to test for equality.
 
-*right*\
-The object to be tested for equality.
+*`right`*\
+The object to test for equality.
 
 ### Return Value
 
@@ -38,7 +37,7 @@ The object to be tested for equality.
 
 This function returns `left.category() == right.category() && left.value() == right.value()`.
 
-## <a name="op_neq"></a> operator!=
+## <a name="op_neq"></a> `operator!=`
 
 Tests if the object on the left side of the operator is not equal to the object on the right side.
 
@@ -51,15 +50,15 @@ bool operator!=(const error_condition& left, const error_condition& right);
 
 ### Parameters
 
-*left*\
-The object to be tested for inequality.
+*`left`*\
+The object to test for inequality.
 
-*right*\
-The object to be tested for inequality.
+*`right`*\
+The object to test for inequality.
 
 ### Return Value
 
-**`true`** if the object passed in *left* is not equal to the object passed in *right*; otherwise **`false`**.
+**`true`** if the object passed in *left* is not equal to the object passed in *`right`*; otherwise **`false`**.
 
 ### Remarks
 
@@ -95,15 +94,15 @@ inline bool operator<(
 
 ### Parameters
 
-*left*\
-The object to be compared.
+*`left`*\
+The object to compare.
 
-*right*\
-The object to be compared.
+*`right`*\
+The object to compare.
 
 ### Return Value
 
-**`true`** if the object passed in *left* is less than the object passed in *right*; Otherwise, **`false`**.
+**`true`** if the object passed in *`left`* is less than the object passed in *`right`*; Otherwise, **`false`**.
 
 ### Remarks
 
@@ -111,7 +110,42 @@ This function tests the error order.
 
 ## <a name="op_ostream"></a> `operator<<`
 
+Inserts an [`error_code`](error-code-class.md) object into the output stream.
+
 ```cpp
 template <class charT, class traits>
-    basic_ostream<charT, traits>& operator<<(basic_ostream<charT, traits>& os, const error_code& ec);
+basic_ostream<charT, traits>& operator<<(basic_ostream<charT, traits>& os, const error_code& ec);
+```
+
+### Parameters
+
+*`os`*\
+The target output stream.
+
+*`ec`*\
+The `error_code` object to output.
+
+### Return Value
+
+A reference to the modified output stream.
+
+### Remarks
+
+This operator does the equivalent of `os << ec.category().name() << ':' << ec.value()`.
+
+### Example
+
+```cpp
+#include <iostream>
+#include <system_error>
+
+int main()
+{
+    std::error_code ec(1234, std::generic_category());
+    std::cout << ec;
+}
+```
+
+```Output
+generic:1234
 ```
