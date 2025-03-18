@@ -59,9 +59,11 @@ fsanitize=kernel-address
 All of the CLR flags
 ```
 
-You can set this switch inside Visual Studio. For more information, see [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging#build-system-integration). There are advantages to setting the switch in Visual Studio because MSBUILD automatically suppresses some of the incompatible switches such as `/GL` and `/OPT:ICF`. It also sets the corresponding linker option (`/DYNAMICDEOPT`). You can also set the switch in the command line.
+### Set this linker option in the Visual Studio development environment
 
-### To set this compiler option programmatically
+You can set this switch inside Visual Studio. For more information, see [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging#build-system-integration). There are advantages to setting the switch in Visual Studio because MSBuild automatically suppresses some of the incompatible switches such as `/GL` and `/OPT:ICF`. It also sets the corresponding linker option (`/DYNAMICDEOPT`). You can also set the switch in the command line.
+
+### Set this compiler option programmatically
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileAsManaged>.
 
