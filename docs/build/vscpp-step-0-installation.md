@@ -1,12 +1,12 @@
 ---
-title: Install Visual Studio with C and C++ support
+title: Install C and C++ support in Visual Studio
 description: "Learn how to install Visual Studio with support for Microsoft C and C++ and related workloads."
 ms.custom: vs-acquisition, intro-installation
-ms.date: 03/14/2025
+ms.date: 03/18/2025
 ms.topic: tutorial
 ms.devlang: "cpp"
 ---
-# Install Visual Studio with C and C++ support
+# Install C and C++ support in Visual Studio
 
 If you haven't installed Visual Studio and the Microsoft C and C++ tools yet, here's how to get started.
 
@@ -19,7 +19,7 @@ Welcome to Visual Studio 2022! In this version, it's easy to choose and install 
 > [!NOTE]
 > This article applies to installation of Visual Studio on Windows. [Visual Studio Code](https://code.visualstudio.com) is a lightweight, cross-platform development environment that runs on Windows, Mac, and Linux systems. The Microsoft [C/C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension supports IntelliSense, debugging, code formatting, autocompletion. Visual Studio for Mac doesn't support Microsoft C++, but does support .NET languages and cross-platform development. For installation instructions, see [Install Visual Studio for Mac](/visualstudio/mac/installation/).
 
-To learn about what else is new in this version, see the Visual Studio [release notes](/visualstudio/releases/2022/release-notes/).
+To learn what else is new in this version, see the Visual Studio [release notes](/visualstudio/releases/2022/release-notes/).
 
 Ready to install? Use the following step-by-step guide.
 
@@ -119,7 +119,7 @@ Welcome to Visual Studio 2019! In this version, it's easy to choose and install 
 > [!NOTE]
 > This article applies to installation of Visual Studio on Windows. [Visual Studio Code](https://code.visualstudio.com) is a lightweight, cross-platform development environment that runs on Windows, Mac, and Linux systems. The Microsoft [C/C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension supports IntelliSense, debugging, code formatting, autocompletion. Visual Studio for Mac doesn't support Microsoft C++, but does support .NET languages and cross-platform development. For installation instructions, see [Install Visual Studio for Mac](/visualstudio/mac/installation/).
 
-To learn about what else is new in this version, see the Visual Studio [release notes](/visualstudio/releases/2019/release-notes/).
+To learn what else is new in this version, see the Visual Studio [release notes](/visualstudio/releases/2019/release-notes/).
 
 Ready to install? Use the following step-by-step guide.
 
