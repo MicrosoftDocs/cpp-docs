@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler errors C2200 through C2299"
 title: "Compiler errors C2200 through C2299"
+description: "Learn more about: Compiler errors C2200 through C2299"
 ms.date: "04/21/2019"
 f1_keywords: ["C2202", "C2209", "C2210", "C2211", "C2214", "C2215", "C2221", "C2225", "C2230", "C2235", "C2237", "C2239", "C2240", "C2257", "C2260", "C2263", "C2265", "C2269", "C2278", "C2281", "C2282", "C2284", "C2288", "C2291", "C2294"]
 helpviewer_keywords: ["C2202", "C2209", "C2210", "C2211", "C2214", "C2215", "C2221", "C2225", "C2230", "C2235", "C2237", "C2239", "C2240", "C2257", "C2260", "C2263", "C2265", "C2269", "C2278", "C2281", "C2282", "C2284", "C2288", "C2291", "C2294"]
@@ -98,7 +98,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2280](compiler-error-c2280.md)|'*class*::*function*': attempting to reference a deleted function|
 |Compiler error C2281|'*class*::*function*': a function can only be deleted on the first declaration|
 |Compiler error C2282|'*function1*' cannot override '*function2*'|
-|[Compiler error C2283](compiler-error-c2283.md)|'*identifer*': pure specifier or abstract override specifier not allowed on unnamed class/struct|
+|[Compiler error C2283](compiler-error-c2283.md)|'*identifier*': pure specifier or abstract override specifier not allowed on unnamed struct|
 |Compiler error C2284|'*function*': illegal argument to intrinsic function, parameter *number*|
 |[Compiler error C2285](compiler-error-c2285.md)|pointers to members representation has already been determined - pragma ignored|
 |[Compiler error C2286](compiler-error-c2286.md)|pointers to members of '*identifier*' representation is already set to *inheritance* - declaration ignored|
