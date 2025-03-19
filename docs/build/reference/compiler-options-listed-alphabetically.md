@@ -1,7 +1,7 @@
 ---
 title: "Compiler options listed alphabetically"
 description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
-ms.date: 11/13/2023
+ms.date: 2/5/2025
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
@@ -37,6 +37,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/constexpr:depth<N>`](constexpr-control-constexpr-evaluation.md) | Recursion depth limit for `constexpr` evaluation (default: 512). |
 | [`/constexpr:steps<N>`](constexpr-control-constexpr-evaluation.md) | Terminate `constexpr` evaluation after N steps (default: 100000) |
 | [`/D<name>{=|#}<text>`](d-preprocessor-definitions.md) | Defines constants and macros. |
+| [`/dynamicdeopt`](dynamic-deopt.md) | Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) and step in anywhere with on-demand function deoptimization. |
 | [`/diagnostics`](diagnostics-compiler-diagnostic-options.md) | Diagnostics format: prints column information. |
 | [`/diagnostics:caret[-]`](diagnostics-compiler-diagnostic-options.md) | Diagnostics format: prints column and the indicated line of source. |
 | [`/diagnostics:classic`](diagnostics-compiler-diagnostic-options.md) | Use legacy diagnostics format. |
@@ -83,7 +84,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/fsanitize`](fsanitize.md) | Enables compilation of sanitizer instrumentation such as AddressSanitizer. |
 | [`/fsanitize-coverage`](fsanitize-coverage.md) | Enables compilation of code coverage instrumentation for libraries such as LibFuzzer. |
 | `/Ft<dir>` | Location of the header files generated for `#import`. |
-| [`/FU<file>`](fu-name-forced-hash-using-file.md) | Forces the use of a file name, as if it had been passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
+| [`/FU<file>`](fu-name-forced-hash-using-file.md) | Forces the use of a file name, as if it were passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
 | [`/Fx`](fx-merge-injected-code.md) | Merges injected code with the source file. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Optimizes for Windows applications. |
 | [`/Gd`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__cdecl`** calling convention. (x86 only) |
