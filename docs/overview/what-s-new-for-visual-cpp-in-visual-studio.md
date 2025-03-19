@@ -261,7 +261,7 @@ A partial list of new features:
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [What's new for C++ Developers in Visual Studio 2022 17.9](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-9/) |
-| Standard Library (STL) merged C++23 features, performance improvements, enhanced behavior, LWG issue resolutions, and fixed bugs | [STL Changelog 17.9](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-179) |
+| Standard Library (STL) merged C++23 features, performance improvements, enhanced behavior, LWG issue resolutions, and fixed bugs | [STL Changelog 17.9](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-179) |
 | New features in the Visual Studio 17.9 IDE |[Visual Studio 2022 version 17.9 Release Notes](/visualstudio/releases/2022/release-notes-v17.9) |
 | C++ language conformance improvements in Visual Studio 2022 17.9 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_179) |
 | Summary of C++ backend updates | [MSVC Backend updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/) |
@@ -294,7 +294,7 @@ A partial list of new features:
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [What's new for C++ Developers in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2022-17-8/) |
-| Standard Library (STL) merged C++26, C++23 features, C++20 extensions, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178) |
+| Standard Library (STL) merged C++26, C++23 features, C++20 extensions, LWG issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.8](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-178) |
 | New features in the Visual Studio 17.8 IDE |[Visual Studio 2022 version 17.8 Release Notes](/visualstudio/releases/2022/release-notes-v17.8) |
 | C++ language conformance improvements in Visual Studio 2022 17.8 | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022](cpp-conformance-improvements.md#improvements_178) |
 | An overview of C++ improvements in Visual Studio, VS Code, and vcpkg during 2023 | [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg) |
@@ -554,7 +554,7 @@ In Visual Studio 2022, when you start your app in the debugger, you can use the 
 
 ### Standard Library improvements
 
-Select Standard Library (STL) improvements are highlighted here. For a comprehensive list of new functionality, changes, bug fixes, and performance improvements, see the STL team's [Changelog](https://github.com/microsoft/STL/wiki/Changelog#vs-2022).
+Select Standard Library (STL) improvements are highlighted here. For a comprehensive list of new functionality, changes, bug fixes, and performance improvements, see the STL team's [Changelog](https://github.com/microsoft/STL/wiki/Changelog).
 
 - Added debugging visualizers to improve how the following types are displayed: `source_location`, `bind_front()`, `u8string` (and its iterators), `default_sentinel_t`, `unreachable_sentinel_t`, `ranges::empty_view`, `ranges::single_view`, `ranges::iota_view` (and its iterator/sentinel), `ranges::ref_view`, `thread`, `thread::id`, `jthread`, and `filesystem::path`
 - Added `[[nodiscard]]` to the `stoi()` family of functions in `<string>` and to various functions in `<locale>` such as the `collate` member functions, `has_facet()`, and the `isalnum()` and `tolower()` families.

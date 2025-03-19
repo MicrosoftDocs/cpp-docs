@@ -300,7 +300,7 @@ To fix this warning, either use an equality operator, `value == 9`, if this is w
 
 Visual Studio 2022 version 17.9 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
-For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.9](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-179).
+For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.9](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-179).
 
 ### Application of `_Alignas` on a structured type in C
 
@@ -389,7 +389,7 @@ The C compiler used to accept the `/FU` option, even though it hasn't support ma
 
 The C++23 named modules `std` and `std.compat` are now available when compiling with `/std:c++20`.
 
-For a broader summary of changes made to the C++ Standard Library, see [STL Changelog VS 2022 17.8](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-178).
+For a broader summary of changes made to the C++ Standard Library, see [STL Changelog VS 2022 17.8](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-178).
 
 ## <a name="improvements_177"></a> Conformance improvements in Visual Studio 2022 version 17.7
 
@@ -405,7 +405,7 @@ The `<print>` library is now supported. See [P2093R14 Formatted output](https://
 
 Implemented `views::cartesian_product`.
 
-For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.7](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-177).
+For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.7](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-177).
 
 ### `using` conformance
 
