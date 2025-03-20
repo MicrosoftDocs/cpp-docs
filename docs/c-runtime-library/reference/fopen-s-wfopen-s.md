@@ -153,6 +153,7 @@ Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](f
 | **`t`** | `_O_TEXT` (translated) |
 | **`c`** | None |
 | **`n`** | None |
+| **`N`** | `_O_NOINHERIT` |
 | **`D`** | `_O_TEMPORARY` |
 | **`R`** | `_O_RANDOM` |
 | **`S`** | `_O_SEQUENTIAL` |
