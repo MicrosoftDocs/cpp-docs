@@ -134,7 +134,7 @@ Right now, this DLL doesn't do very much. Next, you'll create a header file to d
 
 1. To create a header file for your functions, on the menu bar, choose **Project** > **Add New Item**.
 
-1. In the **Add New Item** dialog box, in the left pane, select **Visual C++**. In the center pane, select **Header File (.h)**. Specify *MathLibrary.h* as the name for the header file.
+1. In the **Add New Item** dialog box, in the left pane, select **Visual C++**. In the center pane, select **Header File (.h)**. Specify *`MathLibrary.h`* as the name for the header file.
 
    :::image type="content" source="media/mathlibrary-add-new-item-header-file.png" alt-text="Screenshot of the Add New Item dialog with the C plus plus Header File template selected, and MathLibrary.h entered in the Name textbox.":::
 
@@ -191,11 +191,11 @@ When the `MATHLIBRARY_EXPORTS` macro is defined, the `MATHLIBRARY_API` macro set
 
 ::: moniker range=">=msvc-160"
 
-1. In **Solution Explorer**, right-click on the **Source Files** node and choose **Add** > **New Item**. Create a new .cpp file called *MathLibrary.cpp*, in the same way that you added a new header file in the previous step.
+1. In **Solution Explorer**, right-click on the **Source Files** node and choose **Add** > **New Item**. Create a new *`.cpp`* file called *`MathLibrary.cpp`*, in the same way that you added a new header file in the previous step.
 
 1. In the editor window, select the **MathLibrary.cpp** tab if it's already open. If not, in **Solution Explorer**, double-click **MathLibrary.cpp** in the **Source Files** folder of the **MathLibrary** project to open it.
 
-1. In the editor, replace the contents of the *MathLibrary.cpp* file with the following code:
+1. In the editor, replace the contents of the *`MathLibrary.cpp`* file with the following code:
 
    ```cpp
    // MathLibrary.cpp : Defines the exported functions for the DLL.
@@ -262,7 +262,7 @@ When the `MATHLIBRARY_EXPORTS` macro is defined, the `MATHLIBRARY_API` macro set
 
 1. In the editor window, select the tab for **MathLibrary.cpp** if it's already open. If not, in **Solution Explorer**, double-click **MathLibrary.cpp** in the **Source Files** folder of the **MathLibrary** project to open it.
 
-1. In the editor, replace the contents of the *MathLibrary.cpp* file with the following code:
+1. In the editor, replace the contents of the *`MathLibrary.cpp`* file with the following code:
 
    ```cpp
    // MathLibrary.cpp : Defines the exported functions for the DLL.
@@ -398,7 +398,7 @@ To avoid out-of-sync code, we recommend you set the include path in your client 
 
 1. Choose the **Create** button to create the client project.
 
-A minimal console application project is created for you. The name for the main source file is the same as the project name that you entered earlier. In this example, it's named *MathClient.cpp*. You can build it, but it doesn't use your DLL yet.
+A minimal console application project is created for you. The name for the main source file is the same as the project name that you entered earlier. In this example, it's named *`MathClient.cpp`*. You can build it, but it doesn't use your DLL yet.
 
 ::: moniker-end
 
@@ -414,7 +414,7 @@ A minimal console application project is created for you. The name for the main 
 
 1. Choose **OK** to create the client app project.
 
-A minimal console application project is created for you. The name for the main source file is the same as the project name that you entered earlier. In this example, it's named *MathClient.cpp*. You can build it, but it doesn't use your DLL yet.
+A minimal console application project is created for you. The name for the main source file is the same as the project name that you entered earlier. In this example, it's named *`MathClient.cpp`*. You can build it, but it doesn't use your DLL yet.
 
 ::: moniker-end
 
@@ -434,11 +434,11 @@ A minimal console application project is created for you. The name for the main 
 
 1. Choose the **Finish** button to create the project.
 
-When the wizard finishes, a minimal console application project is created for you. The name for the main source file is the same as the project name that you entered earlier. In this example, it's named *MathClient.cpp*. You can build it, but it doesn't use your DLL yet.
+When the wizard finishes, a minimal console application project is created for you. The name for the main source file is the same as the project name that you entered earlier. In this example, it's named *`MathClient.cpp`*. You can build it, but it doesn't use your DLL yet.
 
 ::: moniker-end
 
-Next, to call the MathLibrary functions in your source code, your project must include the *MathLibrary.h* file. You could copy this header file into your client app project, then add it to the project as an existing item. This method can be a good choice for third-party libraries. However, if you're working on the code for your DLL and your client at the same time, the header files could get out of sync. To avoid this issue, set the **Additional Include Directories** path in your project to include the path to the original header.
+Next, to call the MathLibrary functions in your source code, your project must include the *`MathLibrary.h`* file. You could copy this header file into your client app project, then add it to the project as an existing item. This method can be a good choice for third-party libraries. However, if you're working on the code for your DLL and your client at the same time, the header files could get out of sync. To avoid this issue, set the **Additional Include Directories** path in your project to include the path to the original header.
 
 ### To add the DLL header to your include path
 
@@ -454,7 +454,7 @@ Next, to call the MathLibrary functions in your source code, your project must i
 
 1. Double-click in the top pane of the **Additional Include Directories** dialog box to enable an edit control. Or, choose the folder icon to create a new entry.
 
-1. In the edit control, specify the path to the location of the *MathLibrary.h* header file. You can choose the ellipsis (**...**) control to browse to the correct folder.
+1. In the edit control, specify the path to the location of the *`MathLibrary.h`* header file. You can choose the ellipsis (**...**) control to browse to the correct folder.
 
    You can also enter a relative path from your client source files to the folder that contains the DLL header files. If you followed the directions to put your client project in a separate solution from the DLL, the relative path should look like this:
 
@@ -470,7 +470,7 @@ Next, to call the MathLibrary functions in your source code, your project must i
 
 1. After you've entered the path to the header file in the **Additional Include Directories** dialog box, choose the **OK** button. In the **Property Pages** dialog box, choose the **OK** button to save your changes.
 
-You can now include the *MathLibrary.h* file and use the functions it declares in your client application. Replace the contents of *MathClient.cpp* by using this code:
+You can now include the *`MathLibrary.h`* file and use the functions it declares in your client application. Replace the contents of *`MathClient.cpp`* by using this code:
 
 ```cpp
 // MathClient.cpp : Client app for MathLibrary DLL.
@@ -494,9 +494,9 @@ int main()
 }
 ```
 
-This code can be compiled, but not linked. If you build the client app now, the error list shows several LNK2019 errors. That's because your project is missing some information: You haven't specified that your project has a dependency on the *MathLibrary.lib* library yet. And, you haven't told the linker how to find the *MathLibrary.lib* file.
+This code can be compiled, but not linked. If you build the client app now, the error list shows several LNK2019 errors. That's because your project is missing some information: You haven't specified that your project has a dependency on the *`MathLibrary.lib`* library yet. And, you haven't told the linker how to find the *`MathLibrary.lib`* file.
 
-To fix this issue, you could copy the library file directly into your client app project. The linker would find and use it automatically. However, if both the library and the client app are under development, that might lead to changes in one copy that aren't shown in the other. To avoid this issue, you can set the **Additional Dependencies** property to tell the build system that your project depends on *MathLibrary.lib*. And, you can set an **Additional Library Directories** path in your project to include the path to the original library when you link.
+To fix this issue, you could copy the library file directly into your client app project. The linker would find and use it automatically. However, if both the library and the client app are under development, that might lead to changes in one copy that aren't shown in the other. To avoid this issue, you can set the **Additional Dependencies** property to tell the build system that your project depends on *`MathLibrary.lib`*. And, you can set an **Additional Library Directories** path in your project to include the path to the original library when you link.
 
 ### To add the DLL import library to your project
 
@@ -508,7 +508,7 @@ To fix this issue, you could copy the library file directly into your client app
 
    :::image type="content" source="media/mathclient-additional-dependencies-property.png" alt-text="Screenshot of the Property Pages dialog box under Input that shows the Edit command in the Additional Dependencies property dropdown.":::
 
-1. In the **Additional Dependencies** dialog, add *MathLibrary.lib* to the list in the top edit control.
+1. In the **Additional Dependencies** dialog, add *`MathLibrary.lib`* to the list in the top edit control.
 
    :::image type="content" source="media/mathclient-additional-dependencies.png" alt-text="Screenshot of the Additional Dependencies dialog box showing the MathLibrary.lib file.":::
 
@@ -518,7 +518,7 @@ To fix this issue, you could copy the library file directly into your client app
 
    :::image type="content" source="media/mathclient-additional-library-directories-property.png" alt-text="Screenshot of the Property Pages dialog box under General that shows the Edit command in the Additional Library Directories property dropdown.":::
 
-1. Double-click in the top pane of the **Additional Library Directories** dialog box to enable an edit control. In the edit control, specify the path to the location of the *MathLibrary.lib* file. By default, it's in a folder called *Debug* directly under the DLL solution folder. If you create a release build, the file is placed in a folder called *Release*. You can use the `$(IntDir)` macro so that the linker can find your DLL, no matter which kind of build you create. If you followed the directions to put your client project in a separate solution from the DLL project, the relative path should look like this:
+1. Double-click in the top pane of the **Additional Library Directories** dialog box to enable an edit control. In the edit control, specify the path to the location of the *`MathLibrary.lib`* file. By default, it's in a folder called *Debug* directly under the DLL solution folder. If you create a release build, the file is placed in a folder called *Release*. You can use the `$(IntDir)` macro so that the linker can find your DLL, no matter which kind of build you create. If you followed the directions to put your client project in a separate solution from the DLL project, the relative path should look like this:
 
    `..\..\MathLibrary\$(IntDir)`
 

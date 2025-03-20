@@ -179,7 +179,7 @@ Certain library functions and POSIX function names are deprecated by MSVC. The f
 
 ## Related content
 
-- [Walkthrough: Create a Standard C++ Program](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)\
-- [C Language Reference](../c-language/c-language-reference.md)\
-- [C/C++ projects and build systems](projects-and-build-systems-cpp.md)\
+- [Walkthrough: Create a Standard C++ Program](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)
+- [C Language Reference](../c-language/c-language-reference.md)
+- [C/C++ projects and build systems](projects-and-build-systems-cpp.md)
 - [Compatibility](../c-runtime-library/compatibility.md)

@@ -53,7 +53,7 @@ To see the steps for your preferred version of Visual Studio, use the **Version*
     The animation shows right-clicking on the project name in Solution Explorer, choosing Add in the menu that appears, and then choosing New Item.
     :::image-end:::
 
-1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
+1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *`HelloWindowsDesktop.cpp`*. Choose **Add**.
 
    :::image type="content" source="../build/media/desktop-app-add-cpp-file-153.png" alt-text="Screenshot of the Add New Item dialog box in Visual Studio 2019. The C plus plus File (.cpp) option is selected. The name field is set to Hello Windows Desktop.cpp.":::
 
@@ -81,7 +81,7 @@ Your project is now created and your source file is opened in the editor.
    The animation shows right-clicking on the project name in Solution Explorer, choosing Add in the menu that appeared, and then choosing New Item.
    :::image-end:::
  
-1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
+1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *`HelloWindowsDesktop.cpp`*. Choose **Add**.
 
    :::image type="content" source="../build/media/desktop-app-add-cpp-file-153.png" alt-text="Screenshot of the Add New Item dialog box in Visual Studio 2017. Visual C plus plus is selected on the left and the C plus plus File option is highlighted.":::
 
@@ -113,7 +113,7 @@ Your project is now created and your source file is opened in the editor.
     The animation shows right-clicking on the project name in Solution Explorer, choosing Add in the menu that appears, and then choosing New Item.
     :::image-end:::
 
-1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
+1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *`HelloWindowsDesktop.cpp`*. Choose **Add**.
 
    :::image type="content" source="../build/media/desktop-app-add-cpp-file-150.png" alt-text="Screenshot of the Add New Item dialog box in Visual Studio 2015 with Visual C plus plus selected and the C plus plus File option highlighted.":::
 
@@ -435,7 +435,7 @@ As promised, the complete code for the working application follows.
 
 ### To build this example
 
-1. Delete all the code in *HelloWindowsDesktop.cpp* in the editor. Copy this example code and paste it into *HelloWindowsDesktop.cpp*:
+1. Delete all the code in *`HelloWindowsDesktop.cpp`* in the editor. Copy this example code and paste it into *`HelloWindowsDesktop.cpp`*:
 
    ```cpp
    // HelloWindowsDesktop.cpp
