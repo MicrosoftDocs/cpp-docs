@@ -293,7 +293,7 @@ When you choose **File > Open > Folder** to open a folder containing a *`CMakeLi
 
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
-You can open folders containing any number of CMake projects. Visual Studio detects and configures all the *root* *`CMakeLists.txt`* files in your workspace. CMake operations (configure, build, debug), C++ IntelliSense, and browsing are available to all CMake projects in your workspace.
+You can open folders containing any number of CMake projects. Visual Studio detects and configures all the top-level *`CMakeLists.txt`* files in your workspace. CMake operations (configure, build, debug), C++ IntelliSense, and browsing are available to all CMake projects in your workspace.
 
 :::image type="complex" source="media/cmake-multiple-roots.png" alt-text="Screenshot of the Visual Studio Solution Explorer.":::
 The files and folders of a C Make project are visible. There's a tests subdirectory, CMakeLists.txt, and hello.cpp. There's a hello-cmake-vcpkg folder that contains CMakeLists.txt, CMakeSettings.json, and hello.cpp.
@@ -336,7 +336,7 @@ Not everything in the cache is imported. Properties such as the generator and th
 
 To build a CMake project, you have these choices:
 
-1. In the General toolbar, find the **Configurations** dropdown. It's probably showing *Linux-Debug* or *x64-Debug* by default. Select the preferred configuration and press **F5**, or choose the **Run** (green triangle) button on the toolbar. The project automatically builds first, just like a Visual Studio solution.
+1. In the General toolbar, find the **Configurations** dropdown. It's probably showing **Linux-Debug** or **x64-Debug** by default. Select the preferred configuration and press **F5**, or choose the **Run** (green triangle) button on the toolbar. The project automatically builds first, just like a Visual Studio solution.
 
 1. Right-click on *`CMakeLists.txt`* in **Solution Explorer** and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target.
 
