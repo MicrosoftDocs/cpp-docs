@@ -41,8 +41,11 @@ For questions about running previous versions of Visual Studio side by side with
 
 Select the following button to go to the Visual Studio download page, and download the Visual Studio bootstrapper file. Select the edition of Visual Studio that you want and choose the **Free trial** or **Free download** button.
 
- > [!div class="button"]
- > [Download Visual Studio](https://visualstudio.microsoft.com/downloads/)
+> [!div class="button"]
+> [Download Visual Studio](https://visualstudio.microsoft.com/downloads/)
+
+>[!TIP]
+> The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install Visual Studio 2022 Professional or Visual Studio 2022 Enterprise.
 
 ### Step 3 - Install the Visual Studio Installer
 
