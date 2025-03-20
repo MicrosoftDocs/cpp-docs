@@ -146,6 +146,7 @@ Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdo
 | **`x`** | `_O_EXCL` |
 | **`c`** | None |
 | **`n`** | None |
+| **`N`** | `_O_NOINHERIT` |
 | **`S`** | `_O_SEQUENTIAL` |
 | **`R`** | `_O_RANDOM` |
 | **`T`** | `_O_SHORTLIVED` |

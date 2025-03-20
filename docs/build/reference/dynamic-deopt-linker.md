@@ -5,7 +5,8 @@ ms.date: 03/14/2025
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateDynamicDeoptInformation", "/dynamicdeopt"]
 helpviewer_keywords: ["DYNAMICDEOPT linker option", "/DYNAMICDEOPT linker option", "-DYNAMICDEOPT linker option", "c++ dynamic debugging"]
 ---
-# | `/DYNAMICDEOPT` (Support C++ Dynamic Debugging) (Preview)
+# `/DYNAMICDEOPT` (Support C++ Dynamic Debugging) (Preview)
+
 > [!IMPORTANT]
 > The `/DYNAMICDEOPT` linker switch is currently in PREVIEW.
 > This information relates to a prerelease feature that might be substantially modified before release. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
@@ -14,8 +15,8 @@ The **`/DYNAMICDEOPT`** linker option, when used with the compiler switch [`/dyn
 
 ## Syntax
 
-> **`/DYNAMICDEOPT`**
-> **`/DYNAMICDEOPT:SUFFIX=<suffix>`**
+> **`/DYNAMICDEOPT`**\
+> **`/DYNAMICDEOPT:SUFFIX=<suffix>`**\
 > **`/DYNAMICDEOPT:SYNC`**
 
 ## Arguments
