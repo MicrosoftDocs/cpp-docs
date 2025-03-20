@@ -1,9 +1,9 @@
 ---
 title: "/dynamicdeopt (Enable C++ Dynamic Debugging (Preview))"
 description: "Enable the Microsoft C++ compiler option /dynamicdeopt to use C++ Dynamic Debugging."
-ms.date: 03/14/2025
-f1_keywords: ["/dynamicdeopt", "VC.Project.VCNMakeTool.CompileAsManaged", "VC.Project.VCCLCompilerTool.CompileAsManaged"]
-helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-dynamicdeopt compiler option [C++]", "dynamicdeopt compiler option [C++]", "/clr compiler option [C++]", "Managed Extensions for C++, compiling", "common language runtime, /clr compiler option"]
+ms.date: 03/20/2025
+f1_keywords: ["/dynamicdeopt"]
+helpviewer_keywords: ["-dynamicdeopt compiler option [C++]", "dynamicdeopt compiler option [C++]"]
 ---
 # `/dynamicdeopt` (Enable C++ Dynamic Debugging) (Preview)
 
