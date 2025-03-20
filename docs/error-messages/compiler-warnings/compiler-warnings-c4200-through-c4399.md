@@ -55,7 +55,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 2 and level 3 and level 4) C4244](compiler-warning-levels-3-and-4-c4244.md)|'*conversion_type*': conversion from '*type1*' to '*type2*', possible loss of data|
 |[Compiler warning (level 4) C4245](compiler-warning-level-4-c4245.md)|'*conversion_type*': conversion from '*type1*' to '*type2*', signed/unsigned mismatch|
 |[Compiler warning (level 2) C4250](compiler-warning-level-2-c4250.md)|'*classname*': inherits '*base_classname*::*member*' via dominance|
-|[Compiler warning (level 2) C4251](compiler-warning-level-1-c4251.md)|'*object_type1*': '*identifier1*' needs to have dll-interface to be used by clients of '*identfier2*'|
+|[Compiler warning (level 2) C4251](compiler-warning-level-1-c4251.md)|'*type*': '*type1*' needs to have dll-interface to be used by clients of '*type2*'|
 |[Compiler warning (level 4, off) C4254](compiler-warning-level-4-c4254.md)|'*operator*': conversion from '*type1*':'*field_bits*' to '*type2*':'*field_bits*', possible loss of data|
 |[Compiler warning (level 4, off) C4255](compiler-warning-level-4-c4255.md)|'*function*': no function prototype given: converting '()' to '(void)'|
 |[Compiler warning (level 4) C4256](compiler-warning-level-4-c4256.md)|'*function*': constructor for class with virtual bases has '`...`'; calls may not be compatible with older versions of Visual C++|
