@@ -19,7 +19,7 @@ To run apps that use Visual C++ runtime libraries, the target machine must have 
 
 - A second computer that doesn't have the Visual C++ libraries
 
-### Create an application and a setup file
+## Create an application and a setup file
 
 1. If you need a sample application to deploy, you can create and build an MFC application by following the steps in [Walkthrough: Deploying a Visual C++ application by using a setup project](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md). This walkthrough assumes your app is named `MyMFCApp` like the sample, but you can change the name to match your app.
 
@@ -39,7 +39,7 @@ To run apps that use Visual C++ runtime libraries, the target machine must have 
 
     You can apply command-line options to the Redistributable executable in your batch file. For more information, see [Command-line options for the Redistributable packages](./redistributing-visual-cpp-files.md#command-line-options-for-the-redistributable-packages).
 
-### Create a self-extracting setup file
+## Create a self-extracting setup file
 
 1. Open a command prompt or open the **Run** window from the Start menu, then enter `iexpress.exe`.
 
@@ -77,7 +77,7 @@ To run apps that use Visual C++ runtime libraries, the target machine must have 
 
 1. On the **Create package** page, choose **Next**. Choose **Finish**.
 
-### Test the self-extracting setup file on the other computer
+## Test the self-extracting setup file on the other computer
 
 1. On the other computer that doesn't have the Visual C++ libraries, download a copy of the setup file. Then, run the setup and follow the steps that it provides. Depending on the options selected, installation might require you to accept a User Account Control elevation request, or to run the installer by using the **Run as administrator** command.
 
