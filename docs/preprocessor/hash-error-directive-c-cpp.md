@@ -26,4 +26,5 @@ The error message that this directive emits includes the *token-string* paramete
 
 ## See also
 
-[Preprocessor directives](../preprocessor/preprocessor-directives.md)
+[Preprocessor directives](../preprocessor/preprocessor-directives.md)\
+[#warning directive](../preprocessor/hash-warning-directive-c-cpp.md)
