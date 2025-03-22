@@ -41,7 +41,7 @@ To build the project, Visual Studio copies the source code to your remote Linux 
 
 ::: moniker range=">=msvc-150"
 
-## Set up the SSH server on the remote Linux system
+## Set up the SSH server on the remote machine
 
 If `ssh` isn't already set up and running on your Linux system, follow these steps to install it. The examples in this article use Ubuntu 18.04 LTS with OpenSSH server version 7.6. However, the instructions should be the same for any distro using a moderately recent version of OpenSSH.
 
@@ -58,9 +58,9 @@ If `ssh` isn't already set up and running on your Linux system, follow these ste
    sudo systemctl enable ssh
    ```
 
-## Set up the remote connection from your local machine
+## Set up the remote connection
 
-1. In Visual Studio on your Windows system, choose **Tools > Options** on the menu bar to open the **Options** dialog. Then select **Cross Platform > Connection Manager** to open the Connection Manager dialog.
+1. In Visual Studio on your local Windows system, choose **Tools > Options** on the menu bar to open the **Options** dialog. Then select **Cross Platform > Connection Manager** to open the Connection Manager dialog.
 
    If you haven't set up a connection in Visual Studio before, when you build your project for the first time, Visual Studio opens the Connection Manager dialog for you.
 
@@ -191,7 +191,7 @@ For example: `KexAlgorithms ecdh-sha2-nistp256,ecdh-sha2-nistp384`
 Add: `HostKeyAlgorithms <algorithms to enable>`  
 For example: `HostKeyAlgorithms ecdsa-sha2-nistp256,ecdsa-sha2-nistp384`
 
-## Logging for remote connections
+## Set up logging for remote connections
 
 You can enable logging to help troubleshoot connection problems. On the menu bar, select **Tools > Options**. In the **Options** dialog, select **Cross Platform > Logging**:
 
@@ -211,7 +211,7 @@ You can configure the output to go to a file or to the **Cross Platform Logging*
 
 ::: moniker range=">=msvc-150"
 
-## TCP Port Forwarding
+## TCP port forwarding
 
 The `rsync` command is used by both MSBuild-based Linux projects and CMake projects to [copy headers from your remote system to Windows for use by IntelliSense](configure-a-linux-project.md#remote_intellisense). When you can't enable TCP port forwarding, disable the automatic download of remote headers. To disable it, use **Tools > Options > Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. If the remote system doesn't have TCP port forwarding enabled, this error appears when the download of remote headers for IntelliSense begins:
 

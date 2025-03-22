@@ -190,9 +190,9 @@ The hot spot of a cursor is the point to which Windows refers in tracking the cu
 
    The **Hotspot** property in the **Properties** window displays the new coordinates.
 
-### To create and save a bitmap as a .gif or .jpeg
+### To create and save a bitmap as GIF or JPEG
 
-When you create a bitmap, the image is created in bitmap format (*`.bmp`*). You can, however, save the image as a GIF or JPEG or in other graphic formats.
+When you create a bitmap, the image is created in bitmap format (*`.bmp`*). You can, however, save the image as a *`.gif`* or *`.jpeg`* or in other graphic formats.
 
 > [!NOTE]
 > This process doesn't apply to icons and cursors.
