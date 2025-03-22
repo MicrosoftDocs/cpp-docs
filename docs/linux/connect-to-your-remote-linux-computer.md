@@ -191,7 +191,7 @@ For example: `KexAlgorithms ecdh-sha2-nistp256,ecdh-sha2-nistp384`
 Add: `HostKeyAlgorithms <algorithms to enable>`  
 For example: `HostKeyAlgorithms ecdsa-sha2-nistp256,ecdsa-sha2-nistp384`
 
-## Set up logging for remote connections
+## Logging for remote connections
 
 You can enable logging to help troubleshoot connection problems. On the menu bar, select **Tools > Options**. In the **Options** dialog, select **Cross Platform > Logging**:
 
