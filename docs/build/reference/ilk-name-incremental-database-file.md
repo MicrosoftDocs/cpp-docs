@@ -16,7 +16,7 @@ The **`/ILK`** linker option tells the linker where to put the *`.ilk`* database
 ### Arguments
 
 *`pathname`*\
-The destination directory and filename for the generated *`.ilk`* file. If the **`/ILK`** option isn't specified when **`/INCREMENTAL`** is used, the filename is created by appending *`.ilk`* to the target base filename.
+The destination directory and filename for the generated *`.ilk`* file. If the **`/ILK`** option isn't specified when **`/INCREMENTAL`** is used, the filename is created by appending *`.ilk`* to the target base filename. The *`pathname`* must not exceed `MAX_PATH` (260) characters.
 
 ## Remarks
 

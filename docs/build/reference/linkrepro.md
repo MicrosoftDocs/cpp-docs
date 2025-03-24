@@ -1,7 +1,7 @@
 ---
 title: "/LINKREPRO (Link repro directory name)"
 description: Linker or library tool option to set the directory for a link repro.
-ms.date: "09/24/2019"
+ms.date: 03/24/2025
 f1_keywords: ["/LINKREPRO"]
 helpviewer_keywords: ["LINKREPRO linker option", "/LINKREPRO linker option", "-LINKREPRO linker option", "linker repro reporting"]
 ---
@@ -16,7 +16,7 @@ Tells the linker or library tool to generate a link repro in a specified directo
 ### Arguments
 
 **/LINKREPRO:**_directory-name_\
-The user-specified directory to store the link repro in. Directory names that include spaces must be enclosed in double quotes.
+The user-specified directory to store the link repro in. Directory names that include spaces must be enclosed in double quotes. The *`_directory-name_`* must not exceed `MAX_PATH` (260) characters.
 
 ## Remarks
 

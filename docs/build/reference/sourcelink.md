@@ -15,8 +15,8 @@ Specifies a Source Link configuration file to include in the PDB file generated 
 
 ## Arguments
 
-*filename*<br/>
-Specifies a JSON-formatted configuration file that contains a simple mapping of local file paths to URLs for source files to display in the debugger. For more information on the format of this file, see [Source Link JSON Schema](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/source-link.md#source-link-json-schema).
+*`filename`*\
+Specifies a JSON-formatted configuration file that contains a simple mapping of local file paths to URLs for source files to display in the debugger. The *`filename`* must not exceed `MAX_PATH` (260) characters. For more information on the format of this file, see [Source Link JSON Schema](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/source-link.md#source-link-json-schema).
 
 ## Remarks
 

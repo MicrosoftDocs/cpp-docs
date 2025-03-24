@@ -3,7 +3,6 @@ description: "Learn more about: /MANIFESTINPUT (Specify Manifest Input)"
 title: "/MANIFESTINPUT (Specify Manifest Input)"
 ms.date: 09/09/2022
 f1_keywords: ["VC.Project.VCLinkerTool.ManifestInput"]
-ms.assetid: a0b0c21e-1f9b-4d8c-bb3f-178f57fa7f1b
 ---
 # /MANIFESTINPUT (Specify Manifest Input)
 
@@ -16,7 +15,7 @@ Specifies a manifest input file to include in the manifest that's embedded in th
 ### Parameters
 
 *`filename`*\
-The manifest file to include in the embedded manifest.
+The manifest file to include in the embedded manifest. Must not exceed `MAX_PATH` (260) characters.
 
 ## Remarks
 
@@ -26,5 +25,5 @@ This option can't be set directly in Visual Studio. Instead, use the **Additiona
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
+[MSVC linker reference](linking.md)\
 [MSVC Linker Options](linker-options.md)
