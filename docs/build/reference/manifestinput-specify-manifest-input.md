@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /MANIFESTINPUT (Specify Manifest Input)"
 title: "/MANIFESTINPUT (Specify Manifest Input)"
-ms.date: 09/09/2022
+ms.date: 03/24/2025
 f1_keywords: ["VC.Project.VCLinkerTool.ManifestInput"]
 ---
 # /MANIFESTINPUT (Specify Manifest Input)

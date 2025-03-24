@@ -1,7 +1,7 @@
 ---
 title: "/SOURCELINK (Include Sourcelink file in PDB)"
 description: "Reference guide to the /SOURCELINK linker option in Microsoft C++."
-ms.date: "03/31/2020"
+ms.date: 03/24/2025
 f1_keywords: ["/sourcelink"]
 helpviewer_keywords: ["/SOURCELINK linker option", "/SOURCELINK"]
 ---

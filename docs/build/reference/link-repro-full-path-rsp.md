@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /LINKREPROFULLPATHRSP (Generate file containing absolute paths of linked files)"
 title: "/LINKREPROFULLPATHRSP (Generate file containing absolute paths of linked files)"
-ms.date: 06/10/2024
+ms.date: 03/24/2025
 f1_keywords: ["VC.Project.VCLinkerTool.LinkReproFullPathRSP", "/LINKREPROFULLPATHRSP"]
 helpviewer_keywords: ["/LINKREPROFULLPATHRSP linker option", "-LINKREPROFULLPATHRSP linker option", "LINKREPROFULLPATHRSP linker option"]
 ---

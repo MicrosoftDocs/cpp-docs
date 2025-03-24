@@ -1,7 +1,7 @@
 ---
 title: "/ILK (Name incremental database file)"
 description: "The MSVC linker option /ILK specifies the incremental link database file pathname."
-ms.date: 09/07/2022
+ms.date: 03/24/2025
 f1_keywords: ["VC.Project.VCLinkerTool.IncrementalLinkDatabaseFile", "/ilk", "ilk"]
 helpviewer_keywords: ["Name incremental database file in C++ linker", "/ILK linker option", "-ILK linker option", "ILK linker option"]
 ---
