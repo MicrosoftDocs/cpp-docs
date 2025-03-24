@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /WHOLEARCHIVE (Include All Library Object Files)"
 title: "/WHOLEARCHIVE (Include All Library Object Files)"
-ms.date: "02/12/2020"
+ms.date: 03/24/2025
 ---
 # /WHOLEARCHIVE (Include All Library Object Files)
 

@@ -1,10 +1,9 @@
 ---
 description: "Learn more about: /ASSEMBLYLINKRESOURCE (Link to .NET Framework resource)"
 title: "/ASSEMBLYLINKRESOURCE (Link to .NET Framework resource)"
-ms.date: 05/11/2022
+ms.date: 03/24/2025
 f1_keywords: ["/ASSEMBLYLINKRESOURCE", "VC.Project.VCLinkerTool.AssemblyLinkResource"]
 helpviewer_keywords: ["-ASSEMBLYLINKRESOURCE linker option", "ASSEMBLYLINKRESOURCE linker option", "/ASSEMBLYLINKRESOURCE linker option"]
-ms.assetid: 8b6ad184-1b33-47a4-8513-4803cf915b64
 ---
 # `/ASSEMBLYLINKRESOURCE` (Link to .NET Framework resource)
 
@@ -17,7 +16,7 @@ Create a link to a .NET Framework resource in the output file.
 ## Arguments
 
 *`filename`*
-The .NET Framework resource file to link from the assembly.
+The .NET Framework resource file to link from the assembly. Must not exceed `MAX_PATH` (260) characters.
 
 ## Remarks
 
@@ -34,17 +33,11 @@ If *`filename`* is a .NET Framework resource file that's created, for example, b
 Other linker options that affect assembly generation are:
 
 - [`/ASSEMBLYDEBUG`](assemblydebug-add-debuggableattribute.md)
-
 - [`/ASSEMBLYMODULE`](assemblymodule-add-a-msil-module-to-the-assembly.md)
-
 - [`/ASSEMBLYRESOURCE`](assemblyresource-embed-a-managed-resource.md)
-
 - [`/DELAYSIGN`](delaysign-partially-sign-an-assembly.md)
-
 - [`/KEYCONTAINER`](keycontainer-specify-a-key-container-to-sign-an-assembly.md)
-
 - [`/KEYFILE`](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)
-
 - [`/NOASSEMBLY`](noassembly-create-a-msil-module.md)
 
 ### To set this linker option in the Visual Studio development environment

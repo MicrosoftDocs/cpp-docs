@@ -4,7 +4,6 @@ title: "/DEF (Specify module-definition file)"
 ms.date: 09/09/2022
 f1_keywords: ["VC.Project.VCLinkerTool.ModuleDefinitionFile", "/def"]
 helpviewer_keywords: ["module definition files, specifying", "DEF linker option", "-DEF linker option", "module definition files", "/DEF linker option"]
-ms.assetid: 6497fa68-65f0-48ca-8f66-b87166fc631a
 ---
 # `/DEF` (Specify module-definition file)
 
@@ -17,7 +16,7 @@ Specifies a module-definition file to the linker.
 ## Arguments
 
 *`filename`*\
-The name of a module-definition file (*`.def`*) to be passed to the linker.
+The name of a module-definition file (*`.def`*) to be passed to the linker. Must not exceed `MAX_PATH` (260) characters.
 
 ## Remarks
 
