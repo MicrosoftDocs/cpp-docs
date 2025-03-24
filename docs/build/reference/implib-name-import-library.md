@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["/implib", "VC.Project.VCLinkerTool.ImportLIbrary"]
 helpviewer_keywords: ["IMPLIB linker option", "/IMPLIB linker option", "-IMPLIB linker option", "import libraries, overriding default name"]
 ---
-# `/IMPLIB`/ (Name Import Library)
+# `/IMPLIB` (Name Import Library)
 
 > /IMPLIB:*filename*
 
@@ -22,7 +22,7 @@ The `/IMPLIB` option overrides the default name for the import library that LINK
 - [EXPORTS](exports.md) statement in a .def file
 - An [/EXPORT](export-exports-a-function.md) specification in a LINK command
 
-LINK ignores `/IMPLIB`/ when an import library is not being created. If no exports are specified, LINK does not create an import library. If an export file is used in the build, LINK assumes that an import library already exists and does not create one. For information on import libraries and export files, see [LIB Reference](lib-reference.md).
+LINK ignores `/IMPLIB` when an import library is not being created. If no exports are specified, LINK does not create an import library. If an export file is used in the build, LINK assumes that an import library already exists and does not create one. For information on import libraries and export files, see [LIB Reference](lib-reference.md).
 
 ### To set this linker option in the Visual Studio development environment
 

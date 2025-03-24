@@ -17,7 +17,9 @@ This flag was introduced in Visual Studio 2022 version 17.11.
 
 ## Remarks
 
-The *`filename`* argument specifies the name of the response file to create. The linker will write the fully qualified paths of all input files to this file. The file will be created in the current working directory unless a full path is specified. The *`filename`* must not exceed `MAX_PATH` (260) characters.
+The *`filename`* argument specifies the name of the response file to create. Must not exceed `MAX_PATH` (260) characters.
+
+Rather than generate a full link repro like `/LINKREPRO`, which copies all the files to a directory and creates a response file with relative paths to that directory, this option writes the names of the files used during linking to the specified file.
 
 For example, given:
 - a directory `c:\temp\test` that contains the files `test.cpp`, `f1.cpp`, `f2.cpp`
