@@ -7,21 +7,21 @@ helpviewer_keywords: ["MIDL, output file names", ".idl files, path", "MIDL", "/I
 ---
 # /IDLOUT (Name MIDL Output Files)
 
-```cmd
-/IDLOUT:[path\]filename
-```
+## Syntax
 
-## Parameters
+> /IDLOUT:[path\]filename
+
+## Argument
 
 *`path`*\
-An absolute or relative path specification. By specifying a path, you affect only the location of an .idl file; all other files are placed in the project directory.
+An absolute or relative path specification. By specifying a path, you affect only the location of an `.idl` file; all other files are placed in the project directory.
 
 *`filename`*\
-Specifies the name of the .idl file created by the MIDL compiler. No file extension is assumed; specify *filename*.idl if you want an .idl extension. The path plus filename must not exceed `MAX_PATH` (260) characters.
+Specifies the name of the `.idl` file created by the MIDL compiler. No file extension is assumed; specify *`filename.idl` if you want an `.idl` extension. The path plus filename must not exceed `MAX_PATH` (260) characters.
 
 ## Remarks
 
-The `/IDLOUT` option specifies the name and extension of the .idl file.
+The `/IDLOUT` option specifies the name and extension of the `.idl `file.
 
 The MIDL compiler is called by the MSVC linker when linking projects that have the [`module`](../../windows/attributes/module-cpp.md) attribute.
 
@@ -39,9 +39,7 @@ If you specify neither `/IDLOUT` nor `/TLBOUT`, the linker will create vc70.tlb,
 ### To set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
 1. Select the **Configuration Properties** > **Linker** > **Embedded IDL** property page.
-
 1. Modify the **Merge IDL Base File Name** property.
 
 ### To set this linker option programmatically

@@ -7,9 +7,7 @@ helpviewer_keywords: ["output files, name linker option", "-OUT linker option", 
 ---
 # /OUT (Output File Name)
 
-```cmd
-/OUT:filename
-```
+> /OUT:filename
 
 ## Arguments
 

@@ -7,7 +7,7 @@ helpviewer_keywords: ["/KEYFILE linker option", "-KEYFILE linker option", "KEYFI
 ---
 # /KEYFILE (Specify Key or Key Pair to Sign an Assembly)
 
-```cmd
+```
 /KEYFILE:filename
 ```
 

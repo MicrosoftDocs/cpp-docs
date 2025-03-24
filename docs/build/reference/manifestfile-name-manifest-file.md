@@ -7,9 +7,14 @@ helpviewer_keywords: ["MANIFESTFILE linker option", "-MANIFESTFILE linker option
 ---
 # /MANIFESTFILE (Name Manifest File)
 
-```cmd
-/MANIFESTFILE:filename
-```
+## Syntax
+
+> /MANIFESTFILE:filename
+
+## Argument
+
+`filename`\
+The name of the manifest file.
 
 ## Remarks
 

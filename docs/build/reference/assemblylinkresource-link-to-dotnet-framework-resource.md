@@ -13,9 +13,9 @@ Create a link to a .NET Framework resource in the output file.
 
 > **`/ASSEMBLYLINKRESOURCE:`*`filename`***
 
-## Arguments
+## Argument
 
-*`filename`*
+*`filename`*\
 The .NET Framework resource file to link from the assembly. Must not exceed `MAX_PATH` (260) characters.
 
 ## Remarks

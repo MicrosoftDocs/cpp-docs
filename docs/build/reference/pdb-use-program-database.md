@@ -7,9 +7,11 @@ helpviewer_keywords: ["-PDB linker option", "/PDB linker option", "PDB linker op
 ---
 # /PDB (Use Program Database)
 
-```cmd
-/PDB:filename
-```
+Specify the name of the program database (PDB) file that the linker creates.
+
+## Syntax
+
+> /PDB:filename
 
 ## Arguments
 
@@ -29,9 +31,7 @@ For more information, see [.pdb Files as Linker Input](dot-pdb-files-as-linker-i
 ### To set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
 1. Select the **Configuration Properties** > **Linker** > **Debug** property page.
-
 1. Modify the **Generate Program Database File** property.
 
 ### To set this linker option programmatically

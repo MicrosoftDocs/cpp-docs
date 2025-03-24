@@ -7,11 +7,11 @@ helpviewer_keywords: ["mapfiles, creating linker", "generate mapfile linker opti
 ---
 # /MAP (Generate Mapfile)
 
-```cmd 
-/MAP[:filename]
-```
+## Syntax
 
-## Arguments
+> /MAP[:filename]
+
+## Argument
 
 *`filename`*\
 A user-specified name for the mapfile. It replaces the default name. Must not exceed `MAX_PATH` (260) characters.

@@ -20,7 +20,7 @@ Specifies the name of the `.pgd` file that is used to hold information about the
 
 ## Remarks
 
-When using the deprecated [`/LTCG:PGINSTRUMENT`](ltcg-link-time-code-generation.md) option, use **`/PGD`** to specify a nondefault name or location for the .pgd file. If you do not specify **`/PGD`**, the `.pgd` file base name is the same as the output file (`.exe` or `.dll`) base name and is created in the same directory from which the link was invoked.
+When using the deprecated [`/LTCG:PGINSTRUMENT`](ltcg-link-time-code-generation.md) option, use **`/PGD`** to specify a nondefault name or location for the `.pgd` file. If you don't specify **`/PGD`**, the `.pgd` file base name is the same as the output file (`.exe` or `.dll`) base name and is created in the same directory from which the link was invoked.
 
 When using the deprecated **`/LTCG:PGOPTIMIZE`** option, use the **`/PGD`** option to specify the name of the `.pgd` file to use to create the optimized image. The *`filename`* argument should match the *`filename`* specified to **`/LTCG:PGINSTRUMENT`**.
 
