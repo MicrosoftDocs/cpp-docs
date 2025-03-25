@@ -20,7 +20,7 @@ class wbuffer_convert
 ### Parameters
 
 *`Codecvt`*\
-The [`locale`](../standard-library/locale-class.md) facet that represents the conversion object.
+The [`locale`](locale-class.md) facet that represents the conversion object.
 
 *`Elem`*\
 The wide-character element type.
