@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Windows Sockets: Using Class CAsyncSocket"
 title: "Windows Sockets: Using Class CAsyncSocket"
+description: "Learn more about: Windows Sockets: Using Class CAsyncSocket"
 ms.date: "6/8/2021"
 helpviewer_keywords: ["CAsyncSocket class [MFC], programming model", "Windows Sockets [MFC], asynchronous", "sockets [MFC], converting between Unicode and MBCS strings", "SOCKET handle", "sockets [MFC], asynchronous operation", "Windows Sockets [MFC], converting Unicode and MBCS strings"]
 ---

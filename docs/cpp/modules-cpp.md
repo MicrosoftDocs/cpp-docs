@@ -1,8 +1,8 @@
 ---
 title: "Overview of modules in C++"
+description: Modules in C++20 provide a modern alternative to header files.
 ms.date: 02/11/2025
 helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
-description: Modules in C++20 provide a modern alternative to header files.
 ---
 # Overview of modules in C++
 

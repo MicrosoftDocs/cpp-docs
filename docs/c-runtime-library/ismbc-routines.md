@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: _ismbc Routines"
 title: "_ismbc Routines"
+description: "Learn more about: _ismbc Routines"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ismbc routines", "_ismbc routines"]
-ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
 ---
 # `_ismbc` routines
 

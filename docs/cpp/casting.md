@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Casting in C++"
 title: "Casting"
+description: "Learn more about: Casting in C++"
 ms.date: 6/11/2024
 helpviewer_keywords: ["casting [C++]", "coercion [C++]", "virtual functions [C++], in derived classes [C++]", "static cast operator", "dynamic cast operator", "polymorphic classes [C++]", "classes [C++], polymorphism"]
 ai-usage: ai-assisted
