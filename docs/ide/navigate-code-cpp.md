@@ -124,6 +124,6 @@ You can navigate to the definition of a type in a file, or to type members, by u
 
 ## See also
 
-- [Read and understand C++ code](read-and-understand-code-cpp.md)\
-- [Edit and refactor C++ code](read-and-understand-code-cpp.md)\
+- [Read and understand C++ code](read-and-understand-code-cpp.md)
+- [Edit and refactor C++ code](read-and-understand-code-cpp.md)
 - [Collaborate with Live Share for C++](live-share-cpp.md)

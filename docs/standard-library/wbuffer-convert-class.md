@@ -36,5 +36,5 @@ Conversion between a sequence of `Elem` values and multibyte sequences is perfor
 
 An object of this class template stores:
 
-- A pointer to its underlying byte stream buffer.\
+- A pointer to its underlying byte stream buffer.
 - A pointer to an allocated conversion facet object, which is freed when the `wbuffer_convert` is destroyed.

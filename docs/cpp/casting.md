@@ -72,7 +72,7 @@ int main() {
 
 This section covers the following topics:
 
-- [Casting operators](../cpp/casting-operators.md)\
+- [Casting operators](../cpp/casting-operators.md)
 - [Run-time type information](../cpp/run-time-type-information.md)
 
 ## See also

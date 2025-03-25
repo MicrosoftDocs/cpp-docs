@@ -89,8 +89,8 @@ Despite these issues, class `CAsyncSocket` may be the right choice for you if yo
 
 For more information, see:
 
-- [Windows Sockets: Background](../mfc/windows-sockets-background.md)\
-- [Windows Sockets: Stream Sockets](../mfc/windows-sockets-stream-sockets.md)\
+- [Windows Sockets: Background](../mfc/windows-sockets-background.md)
+- [Windows Sockets: Stream Sockets](../mfc/windows-sockets-stream-sockets.md)
 - [Windows Sockets: Datagram Sockets](../mfc/windows-sockets-datagram-sockets.md)
 
 ## See also
