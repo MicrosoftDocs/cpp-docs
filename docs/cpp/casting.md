@@ -9,12 +9,12 @@ ai-usage: ai-assisted
 
 In C++, if a class is derived from a base class containing one or more virtual functions, a pointer to that base class type can be used to call virtual functions in the derived class object. A class containing virtual functions is sometimes called a "polymorphic class."
 
-![Diagram of a class hierarchy where C derives from B, which derives from A.](media/vc38zz1.gif "Class hierarchy")<br/>
+![Diagram of a class hierarchy where C derives from B, which derives from A.](media/vc38zz1.gif "Class hierarchy")\
 Class hierarchy
 
 An object of type `C` can be visualized as follows:
 
-![Diagram of Class C with subobjects B and A.](media/vc38zz2.gif "Class C with subobjects B and A") <br/>
+![Diagram of Class C with subobjects B and A.](media/vc38zz2.gif "Class C with subobjects B and A")\
 Class C with subobjects B and A
 
 Given an instance of class `C`, there's a `B` subobject and an `A` subobject. The instance of `C`, including the `A` and `B` subobjects, is the "complete object."
