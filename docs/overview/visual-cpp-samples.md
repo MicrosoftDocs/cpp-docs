@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio C++ samples"
-description: "Learn about the samples available in the archived Visual Studio C++ samples repository on GitHub."
-ms.date: 03/24/2025
+description: "Learn About the Samples Available in the Archived Visual Studio C++ Samples Repository on GitHub."
+ms.date: 03/25/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---

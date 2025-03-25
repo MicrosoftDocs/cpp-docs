@@ -1,6 +1,6 @@
 ---
 description: "Create and configure Visual Studio C++ projects"
-title: "Learn how to create a Visual Studio C++ project, and then add code and build your project."
+title: "Learn How to Create a Visual Studio C++ Project, and then add Code and Build your Project."
 ms.date: 03/24/2025
 ms.topic: concept-article
 helpviewer_keywords: ["Visual Studio C++ projects, creating", "projects [C++], creating", "Visual Studio C++ projects"]
@@ -29,7 +29,7 @@ For cross-platform projects, or projects that use open-source libraries, we reco
 
 ::: moniker-end
 
-::: moniker range<="msvc-150"
+::: moniker range"<=msvc-150"
 
 1. Create a C++ project by choosing **File** > **New** > **Project**.
 
