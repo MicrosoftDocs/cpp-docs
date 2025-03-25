@@ -29,7 +29,7 @@ For cross-platform projects, or projects that use open-source libraries, we reco
 
 ::: moniker-end
 
-::: moniker range"<=msvc-150"
+::: moniker range="msvc-150"
 
 1. Create a C++ project by choosing **File** > **New** > **Project**.
 
