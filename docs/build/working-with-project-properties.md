@@ -1,6 +1,6 @@
 ---
 title: "Set C++ compiler and build properties in Visual Studio"
-description: "Use the Visual Studio IDE to change C++ compiler and linker options and other build settings."
+description: "Use the Visual Studio IDE to Change C++ Compiler and Linker Options and Other Build Settings."
 ms.date: 03/19/2025
 ms.topic: concept-article
 helpviewer_keywords: ["project properties [C++], modifying", "properties [C++]", "Visual C++ projects, properties", "projects [C++], properties"]
@@ -108,14 +108,11 @@ When you add an include directory to a project, it's important not to override a
 
 The **All Options** property page (under the **Configuration Properties** > **C/C++** node in the **Property Pages** dialog box) provides a quick way to browse and search the properties that are available in the current context. It has a special search box and a simple syntax to help you filter results:
 
-No prefix:\
-Search in property names only (case-insensitive substring).
+- No prefix: Search in property names only (case-insensitive substring).
 
-'`/`' or '`-`':\
-Search only in compiler switches (case-insensitive prefix).
+- '`/`' or '`-`': Search only in compiler switches (case-insensitive prefix).
 
-`v`:\
-Search only in values (case-insensitive substring).
+- `v`: Search only in values (case-insensitive substring).
 
 ## Set environment variables for a build
 
