@@ -1,6 +1,6 @@
 ---
 title: "Create and use your own dynamic-link library (C++)"
-description: "Learn how to use C++ to create a Windows dynamic-link library (DLL) in Visual Studio."
+description: "Learn How to Use C++ to Create a Windows Dynamic-Link Library (DLL) in Visual Studio."
 ms.topic: tutorial
 ms.date: 03/17/2025
 helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]

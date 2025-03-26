@@ -1,6 +1,6 @@
 ---
 title: "Compile a C program on the command line"
-description: "Learn how to create a basic, C program by using a text editor, and then compile it by using the command line."
+description: "Learn How to Create a Basic, C Program by Using a Text Editor, and Then Compile it by Using the Command Line."
 ms.custom: tutorial
 ms.date: 03/17/2025
 helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]
