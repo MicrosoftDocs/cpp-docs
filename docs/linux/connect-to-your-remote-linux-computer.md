@@ -1,6 +1,6 @@
 ---
 title: "Connect to a target Linux system by using Visual Studio"
-description: "Learn how to connect to a remote Linux machine or Windows Subsystem for Linux from inside a Visual Studio C++ project."
+description: "Learn How to Connect to a Remote Linux Machine or Windows Subsystem for Linux From Inside a Visual Studio C++ Project."
 ms.topic: tutorial
 ms.date: 03/21/2025
 ---
@@ -205,7 +205,7 @@ You can configure the output to go to a file or to the **Cross Platform Logging*
 
 ## Command-line utility for the Connection Manager  
 
-**Visual Studio 2019 version 16.5 or later**: *`ConnectionManager.exe`* is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, you can use it to set up Visual Studio for continuous integration. For examples and a complete reference to the ConnectionManager command, see [ConnectionManager reference](connectionmanager-reference.md).  
+**Visual Studio 2019 version 16.5 or later**: *`ConnectionManager.exe`* is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, you can use it to set up Visual Studio for continuous integration. For examples and a complete reference to the `ConnectionManager` command, see [ConnectionManager reference](connectionmanager-reference.md).  
 
 ::: moniker-end
 
