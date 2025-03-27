@@ -1,6 +1,6 @@
 ---
-title: "x64 calling convention"
-description: "Learn About the Default x64 Calling Convention that One Function Uses to Make Calls into Another Function."
+title: "x64 Calling Convention"
+description: "Learn about the default x64 calling convention that one function uses to make calls into another function."
 ms.date: 03/19/2025
 ms.topic: concept-article
 ---

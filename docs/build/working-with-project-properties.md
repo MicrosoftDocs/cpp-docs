@@ -1,6 +1,6 @@
 ---
-title: "Set C++ compiler and build properties in Visual Studio"
-description: "Use the Visual Studio IDE to Change C++ Compiler and Linker Options and Other Build Settings."
+title: "Set C++ Compiler and Build Properties in Visual Studio"
+description: "Use the Visual Studio IDE to change C++ compiler and linker options and other build settings."
 ms.date: 03/19/2025
 ms.topic: concept-article
 helpviewer_keywords: ["project properties [C++], modifying", "properties [C++]", "Visual C++ projects, properties", "projects [C++], properties"]
@@ -13,15 +13,13 @@ You can view and modify these properties by using *property pages*. To access th
 
 ## Default properties
 
-When you create a project, the system assigns values for various properties. The defaults vary somewhat depending on the kind of project and what options you choose in the app wizard. For example, an active template library (ATL) project has properties related to Microsoft Interface Definition Language (MIDL) files, but these properties are absent in a basic console application. The default properties are shown in the General pane in the **Property Pages** window:
+When you create a project, the system assigns values for various properties. The defaults vary somewhat depending on the kind of project and what options you choose in the app wizard. For example, an Active Template Library (ATL) project has properties related to Microsoft Interface Definition Language (MIDL) files, but these properties are absent in a basic console application. The default properties are shown in the Advanced pane in the **Property Pages** window:
 
-:::image type="complex" source="media/visual-c---project-defaults.png" alt-text="Screenshot of the Visual Studio project properties dialog.":::
-The General page is open. The Project Defaults section is highlighted, which includes Configuration Type set to Application (.exe), use of MFC set to Use standard Windows libraries, Character set is Unicode, Common Language Runtime Support is set to No Common Language Runtime Support, Whole Program optimization is set to No Whole Program Optimization, and Windows Store APP support is set to No.
-:::image-end:::
+:::image type="content" source="media/visual-c---project-defaults.png" alt-text="Screenshot of the Visual Studio project properties dialog box with the Advanced pane selected." lightbox="media/visual-c---project-defaults.png":::
 
 ## Apply properties to build configurations and target platforms
 
-Some properties, such as the application name, apply to all build variations and target platforms, whether it's a debug or release build. But most properties are configuration-dependent. To generate the correct code, the compiler has to know both the specific platform the program runs on and which specific compiler options to use. So when you set a property, it's important to pay attention to which configuration and platform the new value should apply to. Should it apply only to Debug Win32 builds, or should it also apply to Debug Arm64 and Debug x64? For example, the **Optimization** property, by default, is set to **Maximize Speed (/O2)** in a Release configuration, but is disabled in the Debug configuration.
+Some properties, such as the application name, apply to all build variations and target platforms, whether it's a debug or release build. But most properties are configuration-dependent. To generate the correct code, the compiler has to know both the specific platform the program runs on and which specific compiler options to use. So when you set a property, it's important to pay attention to which configuration and platform the new value should apply to. Should it apply only to Debug Win32 builds, or should it also apply to Debug ARM64 and Debug x64? For example, the **Optimization** property, by default, is set to **Maximize Speed (/O2)** in a Release configuration, but is disabled in the Debug configuration.
 
 You can always see and change the configuration and platform a property value should apply to. The following illustration shows the property pages with the configuration and platform information controls at the top. When the **Optimization** property is set here, it only applies to Debug Win32 builds, the currently active configuration, as shown by the red arrows.
 
@@ -35,7 +33,7 @@ The following illustration shows the same project property page, but the configu
 
 ## Target platforms
 
-*Target platform* refers to the kind of device and operating system that the executable runs on. You can build a project for more than one platform. The available target platforms for C++ projects depend on the kind of project. They include but aren't limited to Win32, x64, ARM, Arm64, Android, and iOS. The **x86** target platform that you might see in **Configuration Manager** is identical to **Win32** in native C++ projects. Win32 means 32-bit Windows and **x64** means 64-bit Windows. For more information about these two platforms, see [Running 32-bit applications](/windows/win32/WinProg64/running-32-bit-applications).
+*Target platform* refers to the kind of device and operating system that the executable runs on. You can build a project for more than one platform. The available target platforms for C++ projects depend on the kind of project. They include but aren't limited to Win32, x64, ARM, ARM64, Android, and iOS. The **x86** target platform that you might see in **Configuration Manager** is identical to **Win32** in native C++ projects. Win32 means 32-bit Windows and **x64** means 64-bit Windows. For more information about these two platforms, see [Running 32-bit applications](/windows/win32/WinProg64/running-32-bit-applications).
 
 The **Any CPU** target platform value that you might see in **Configuration Manager** has no effect on native C++ projects. It's only relevant for C++/CLI and other .NET project types. For more information, see [`/CLRIMAGETYPE` (Specify Type of CLR Image)](reference/clrimagetype-specify-type-of-clr-image.md).
 
@@ -126,6 +124,12 @@ In the right pane, modify the **Environment** or **Merge Environment** project s
 
 ## Related content
 
+**Articles in this section**
 - [Share or reuse Visual Studio project settings](create-reusable-property-configurations.md)
 - [Property inheritance in Visual Studio projects](project-property-inheritance.md)
 - [Modify C++ project properties and targets without changing the project file](modify-project-properties-without-changing-project-file.md)
+
+**Reference articles**
+- [Visual Studio projects - C++](creating-and-managing-visual-cpp-projects.md)
+- [`.vcxproj` and `.props` file structure](reference/vcxproj-file-structure.md)
+- [Property Page XML rule files](reference/property-page-xml-files.md)
