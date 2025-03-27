@@ -1,6 +1,6 @@
 ---
-title: "Visual Studio C++ samples"
-description: "Learn About the Samples Available in the Archived Visual Studio C++ Samples Repository on GitHub."
+title: "Visual Studio C++ Samples"
+description: "Learn about the samples available in the archived Visual Studio C++ samples repository on GitHub."
 ms.date: 03/25/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"

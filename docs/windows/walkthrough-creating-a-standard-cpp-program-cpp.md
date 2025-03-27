@@ -1,6 +1,6 @@
 ---
-description: "Create a standard C++ program"
-title: "Learn How to Use Visual Studio to Create a Standard C++ Project, and Then Compile and Run the Program."
+title: "Create a Standard C++ Program"
+description: "Learn how to use Visual Studio to create a standard C++ project, and then compile and run the program."
 ms.custom: "get-started-article"
 ms.date: 03/25/2025
 ms.topic: get-started
