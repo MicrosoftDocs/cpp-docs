@@ -105,7 +105,6 @@ Previous versions of Visual Studio included C++ sample code. The sample code was
 |--|--|
 | [BirthdayPicker](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/Language/Windows%20Forms) | Shows how the .NET Framework resource mechanism can be used in C++ applications. It also demonstrates some common Window Forms components. |
 | [Calculator](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/Language/Windows%20Forms) | Implements a simple pocket calculator using C++ and the .NET Framework Windows Forms classes. |
-| Scribble (using MFC) | An MFC implementation of the Scribble sample, updated and extended to include new .NET functionality. |
 | [Scribble (Windows Forms)](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/Language/General) | A Windows Forms implementation of the Scribble sample, updated and extended to include new .NET functionality. |
 | [STLCLR](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/CLR/stlclr/StlClr%20Sample) | Demonstrates some of the capabilities available when using the STL/CLR Library. |
 
