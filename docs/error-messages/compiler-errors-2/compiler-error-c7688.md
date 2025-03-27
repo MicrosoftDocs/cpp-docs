@@ -13,7 +13,7 @@ helpviewer_keywords: ["C7688"]
 
 OpenMP restricts expressions in `#pragma omp atomic` constructs to scalar type.
 
-Compiler error C7688 is new in Visual Studio 2022 version 17.4. In previous compiler versions, the compiler would emit error [C3048](./compiler-error-c3048.md).
+Compiler error C7688 is new in Visual Studio 2022 version 17.4. In previous compiler versions, the compiler would emit error [C3048](compiler-error-c3048.md).
 
 ## Example
 
