@@ -674,7 +674,7 @@ In ISO 8601, weeks begin with Monday. The first week of the year must include Ja
 | `utc_time` | Z, z, c, x, X, D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p |
 | [`weekday`](weekday-class.md) | a, A, u, w |
 | [`weekday_indexed`](weekdayindexed-class.md) | a, A, u, w |
-| [`weekday_last`]() | a, A, u, w |
+| [`weekday_last`](weekdaylast-class.md) | a, A, u, w |
 | [`year`](year-class.md) | Y, y, C |
 | `year_month` | Y, y, B, g, G, h, C, b, m |
 | `year_month_day` | D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w |
