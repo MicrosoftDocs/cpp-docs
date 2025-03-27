@@ -1,8 +1,8 @@
 ---
 title: "Overview of modules in C++"
+description: Modules in C++20 provide a modern alternative to header files.
 ms.date: 02/11/2025
 helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
-description: Modules in C++20 provide a modern alternative to header files.
 ---
 # Overview of modules in C++
 
@@ -115,7 +115,7 @@ A module partition is similar to a module, except:
 - It shares ownership of all declarations in the entire module.
 - All names exported by partition interface files are imported and exported by the primary interface file.
 - A partition's name must begin with the module name followed by a colon (`:`).
-- Declarations in any of the partitions are visible within the entire module.\
+- Declarations in any of the partitions are visible within the entire module.
 - No special precautions are needed to avoid one-definition-rule (ODR) errors. You can declare a name (function, class, and so on) in one partition and define it in another. 
 
 A partition implementation file begins like this, and is an internal partition from a C++ standards perspective:
