@@ -1,6 +1,6 @@
 ---
-description: "Create an icon or other image"
-title: "Learn How to Create a New Image, Bitmap, Icon, Cursor, or Toolbar, and Then Use the Image Editor to Customize its Appearance."
+description: "Create an Icon or Other Image"
+title: "Learn how to create a new image, bitmap, icon, cursor, or toolbar, and then use the Image Editor to customize its appearance."
 ms.date: 03/21/2025
 ms.topic: how-to
 helpviewer_keywords: ["bitmaps [C++]", "images [C++], creating", "resources [C++], creating images", "bitmaps [C++], creating", "graphics [C++], creating", "Image editor [C++], creating images", "cursors [C++], creating", "image resources [C++], display devices", "icons [C++], creating", "cursors [C++], types", "icons [C++]", "Image editor [C++], icons and cursors", "cursors [C++]", "display devices [C++], creating icons for", "cursors [C++], hot spots", "icons [C++], types", "icons [C++], creating", "display devices [C++], creating image", "images [C++], creating for display devices", "icons [C++], inserting", "New <Device> Image Type dialog box [C++]", "Custom Image dialog box [C++]", "Open <Device> Image dialog box [C++]", "New Device Image command", "display devices [C++], adding images", "cursors [C++], adding", "icons, adding", "display devices [C++], copying images", "cursors [C++], copying", "icons, copying", "cursors [C++], deleting", "display devices [C++], deleting device image", "icons, erasing", "icons, deleting", "cursors [C++], undoing changes", "icons, undoing changes", "cursors [C++], screen regions", "inverse colors [C++], device images", "transparent regions, device images", "transparency, device images", "Image editor [C++], device images", "inverse regions, device images", "cursors [C++], transparent regions", "screen colors", "regions, transparent", "icons [C++], transparent regions", "display devices [C++], transparent and screen regions", "transparent regions in devices", "regions, inverse", "colors [C++], Image editor", "device projects [C++], transparent images", "icons [C++], screen regions", "256-color palette", "cursors [C++], color", "colors [C++], icons", "colors [C++], cursors", "icons, color", "colors [C++], icons and cursors", "color palettes, 256-color", "palettes, 256-color", "cursors [C++], hot spots", "hot spots", ".gif files [C++], saving bitmaps as", "jpg files [C++], saving bitmaps as", "jpeg files [C++], saving bitmaps as", ".jpg files [C++], saving bitmaps as", "Image editor [C++], converting image formats", "gif files [C++], saving bitmaps as", "bitmaps [C++], converting formats", ".jpeg files [C++], saving bitmaps as", "graphics [C++], converting formats", "images [C++], converting formats", "images [C++], stand-alone editing", "Image editor [C++], converting image formats", "graphics [C++], converting formats", "images [C++], converting formats"]
@@ -10,7 +10,7 @@ ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
 
 You can create a new image, bitmap, icon, cursor, or toolbar, and then use the **Image Editor** to customize its appearance. You can also create a new bitmap patterned after a [resource template](./how-to-create-a-resource-script-file.md).
 
-## Image resources for display devices
+## Icons and cursors: image resources for display devices
 
 Icons and cursors are graphical resources that can contain multiple images in different sizes and color schemes for different types of display devices. A cursor also has a hot spot, which is the location that Windows uses to track its position. Both icons and cursors are created and edited using the **Image Editor**, as are bitmaps and other images.
 
@@ -18,7 +18,7 @@ When you create a new icon or cursor, the **Image Editor** first creates an imag
 
 By default, the **Image Editor** supports the creation of new images for the devices shown in the following table. You can create images for other devices by typing width, height, and color-count parameters into the **Custom Image** dialog box.
 
-|Color count|Width (pixels)|Height (pixels)|
+|Color|Width (pixels)|Height (pixels)|
 |-----|--------------|---------------|
 |Monochrome|16|16|
 |Monochrome|32|32|
@@ -80,7 +80,7 @@ The **Target Image Type** property lists the available image types where you sel
 :::row-end:::
 
 > [!NOTE]
-> Any existing images are not displayed in this list.
+> Existing images are not displayed in this list.
 
 The **Custom** property opens the **Custom Image** dialog box in which you can create a new image with a custom size and number of colors.
 
@@ -246,7 +246,7 @@ You can open GIF or JPEG images in the **Image Editor** and save them as bitmaps
 
    The resource is added to your project in **Solution Explorer** and the resource opens in the [Image Editor](../windows/image-editor-for-icons.md). You can now use all the tools available in the **Image Editor** to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](/dotnet/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms).
 
-## Related content
+## See also
 
 - [Image Editor for Icons](../windows/image-editor-for-icons.md)
 - [How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)

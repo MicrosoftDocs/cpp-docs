@@ -1,6 +1,6 @@
 ---
-title: "Connect to a target Linux system by using Visual Studio"
-description: "Learn How to Connect to a Remote Linux Machine or Windows Subsystem for Linux From Inside a Visual Studio C++ Project."
+title: "Connect to a Target Linux System by Using Visual Studio"
+description: "Learn how to connect to a remote Linux machine or Windows Subsystem for Linux from inside a Visual Studio C++ project."
 ms.topic: tutorial
 ms.date: 03/21/2025
 ---
@@ -143,7 +143,7 @@ The Open SSH configuration file (*`sshd_config`*) doesn't configure which algori
 
 The default SSH server on most modern Linux distributions should work with Visual Studio. However, you might be running an older SSH server that's configured to use older, insecure algorithms. The following example explains how to update to more secure versions.
 
-In this example, the SSH server uses the insecure `hmac-sha1` algorithm, which Visual Studio 16.9 doesn't support. If the SSH server uses OpenSSH, you can edit the command `/etc/ssh/sshd_config` to enable more secure algorithms. For other SSH servers, refer to the server's documentation for how to configure them.
+In this example, the SSH server uses the insecure `hmac-sha1` algorithm, which Visual Studio 16.9 doesn't support. If the SSH server uses OpenSSH, you can edit the `/etc/ssh/sshd_config` file to enable more secure algorithms. For other SSH servers, refer to the server's documentation for how to configure them.
 
 First, verify that the set of algorithms your server is using includes algorithms supported by Visual Studio. Run the following command on the remote machine to list the algorithms supported by the server:
 
@@ -272,7 +272,7 @@ To configure an MSBuild project for WSL, see [Configure a Linux project](configu
 
 ::: moniker-end
 
-## Related content
+## See also
 
 - [Configure a Linux MSBuild C++ project in Visual Studio](configure-a-linux-project.md)
 - [Create a CMake Linux project in Visual Studio](cmake-linux-project.md)

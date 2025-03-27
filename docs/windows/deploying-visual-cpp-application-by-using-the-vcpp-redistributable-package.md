@@ -1,6 +1,6 @@
 ---
-description: "Deploy a Visual C++ app by using the Redistributable"
-title: "Learn How to Deploy a Visual C++ Application by Using the Visual C++ Redistributable Package."
+description: "Deploy a Visual C++ App by Using the Redistributable"
+title: "Learn how to deploy a Visual C++ application by using the Visual C++ Redistributable package."
 ms.date: 03/20/2025
 ms.topic: tutorial
 helpviewer_keywords: ["walkthrough, deploying a Visual C++ application by using the redistributable package"]
@@ -88,6 +88,6 @@ To run apps that use Visual C++ runtime libraries, the target machine must have 
    > [!IMPORTANT]
    > To determine which version of the runtime is installed, the installer checks the registry key `\HKLM\SOFTWARE\Microsoft\VisualStudio\<version>\VC\Runtimes\<platform>\Version`. (The `<version>` value used for Visual Studio 2015, 2017, 2019, and 2022 is 14.0.) If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
 
-## Related content
+## See also
 
 - [Deployment examples](deployment-examples.md)
