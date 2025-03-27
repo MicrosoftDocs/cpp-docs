@@ -1,6 +1,6 @@
 ---
-title: "Compile a C program on the command line"
-description: "Learn How to Create a Basic, C Program by Using a Text Editor, and Then Compile it by Using the Command Line."
+title: "Compile a C Program on the Command Line"
+description: "Learn how to create a Hello World C program by using a text editor, and then compile it by using the command line."
 ms.custom: tutorial
 ms.date: 03/17/2025
 helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]
@@ -14,7 +14,7 @@ This guide explains how to create a basic *Hello, World*-style C program by usin
 
 ## Prerequisites
 
-- Either **Visual Studio** or the **build tools for Visual Studio**, and the optional **Desktop development with C++** workload
+- Either **Visual Studio** or the **build tools for Visual Studio**, and the **Desktop development with C++** workload
   - Visual Studio is a powerful integrated development environment that supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. For information on these features and how to download and install Visual Studio, including the free Visual Studio Community edition, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
   - The build tools for Visual Studio install only the command-line toolset, the compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line toolset, download build tools for Visual Studio from the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) page and run the installer. In the Visual Studio installer, select the **Desktop development with C++** workload (in older versions of Visual Studio, select the **C++ build tools** workload), and choose **Install**.
 
@@ -141,7 +141,7 @@ If you can't find the developer command prompt shortcut, or if you get an error 
    >
    > If you get a different compiler or linker error or warning, review your source code to correct any errors, then save it and run the compiler again. For information about specific errors, use the search box at the top of this page to look for the error number.
 
-1. To run your program, enter *hello* at the command prompt.
+1. To run your program, enter `hello` at the command prompt.
 
    The program displays this text and then exits:
 

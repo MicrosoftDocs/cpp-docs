@@ -1,6 +1,6 @@
 ---
-title: "Create a traditional Windows desktop application (C++)"
-description: "Learn How to Create a Minimal, Traditional Windows Desktop Application using Visual Studio, C++, and the Win32 API."
+title: "Create a Traditional Windows Desktop Application (C++)"
+description: "Learn how to create a minimal, traditional Windows desktop application using Visual Studio, C++, and the Win32 API."
 ms.custom: "get-started-article"
 ms.topic: tutorial
 ms.date: 03/17/2025
@@ -103,7 +103,7 @@ Your project is now created and your source file is opened in the editor.
 
 1. On the **Overview** page of the **Win32 Application Wizard**, choose **Next**.
 
-   :::image type="content" source="../build/media/desktop-app-win32-wizard-overview-150.png" alt-text="Screenshot of the dialog box in Visual Studio 2015 that shows Win32 Application Wizard Overview page.":::
+   :::image type="content" source="../build/media/desktop-app-win32-wizard-overview-150.png" alt-text="Screenshot of the dialog box in Visual Studio 2015 that shows the Win32 Application Wizard Overview page.":::
 
 1. On the **Application Settings** page, under **Application type**, select **Windows application**. Under **Additional options**, uncheck **Precompiled header**, then select **Empty project**. Choose **Finish** to create the project.
 
@@ -592,7 +592,7 @@ As promised, the complete code for the working application follows.
     The animation shows clicking the save all button, then choosing Build > Build Solution from the main menu.
     :::image-end:::
 
-1. To run the application, press **F5**. A window with the text *Hello, Windows desktop!* should appear.
+1. To run the application, press **F5**. A window with the text `Hello, Windows desktop!` should appear.
 
     :::image type="content" source="../build/media/desktop-app-project-run-157.png" alt-text="Screenshot of a window with the title Windows Desktop Guided Tour Application. The contents of the window are Hello, Windows desktop!.":::
 

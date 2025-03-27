@@ -1,6 +1,6 @@
 ---
-title: "Create and use your own dynamic-link library (C++)"
-description: "Learn How to Use C++ to Create a Windows Dynamic-Link Library (DLL) in Visual Studio."
+title: "Create and Use Your Own Dynamic-Link Library (C++)"
+description: "Learn how to use C++ to create a Windows dynamic-link library (DLL) in Visual Studio."
 ms.topic: tutorial
 ms.date: 03/17/2025
 helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]
@@ -11,7 +11,7 @@ This step-by-step walkthrough explains how to use the Visual Studio IDE to creat
 
 In this walkthrough, you create a DLL that implements some math functions. Then you create a console app that uses the functions from the DLL. You also get an introduction to some of the programming techniques and conventions used in Windows DLLs.
 
-This guide covers the following steps:
+This walkthrough covers the following steps:
 
 - Create a DLL project in Visual Studio.
 - Add exported functions and variables to the DLL.
