@@ -212,6 +212,6 @@ When you include `setjmpex.h` or `setjmp.h`, all calls to [`setjmp`](../c-runtim
 
 A call to `setjmp` preserves the current stack pointer, nonvolatile registers, and MXCSR registers. Calls to `longjmp` return to the most recent `setjmp` call site and resets the stack pointer, nonvolatile registers, and MXCSR registers, back to the state as preserved by the most recent `setjmp` call.
 
-## Related content
+## See also
 
 - [Overview of x64 ABI conventions](../build/x64-software-conventions.md)

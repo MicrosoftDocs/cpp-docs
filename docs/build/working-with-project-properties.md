@@ -122,14 +122,14 @@ In the left pane of the project's **Property Pages** dialog box, expand **Config
 
 In the right pane, modify the **Environment** or **Merge Environment** project settings and then choose the **OK** button.
 
-## Related content
+## Articles in this section
 
-**Articles in this section**
 - [Share or reuse Visual Studio project settings](create-reusable-property-configurations.md)
 - [Property inheritance in Visual Studio projects](project-property-inheritance.md)
 - [Modify C++ project properties and targets without changing the project file](modify-project-properties-without-changing-project-file.md)
 
-**Reference articles**
+## See also
+
 - [Visual Studio projects - C++](creating-and-managing-visual-cpp-projects.md)
 - [`.vcxproj` and `.props` file structure](reference/vcxproj-file-structure.md)
 - [Property Page XML rule files](reference/property-page-xml-files.md)
