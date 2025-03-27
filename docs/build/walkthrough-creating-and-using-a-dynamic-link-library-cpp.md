@@ -60,7 +60,7 @@ For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studi
 
 ## Create the DLL project
 
-In the following steps, you create a project for your DLL, add code, and build it. To begin, start the Visual Studio IDE, and sign in if you need to. The instructions vary slightly depending on which version of Visual Studio you're using. To see the steps for your preferred version of Visual Studio, use the **Version** selector located at the top of the table of contents on this page.
+In the following set of tasks, you create a project for your DLL, add code, and build it. To begin, start the Visual Studio IDE, and sign in if you need to. The instructions vary slightly depending on which version of Visual Studio you're using. To see the steps for your preferred version of Visual Studio, use the **Version** selector located at the top of the table of contents on this page.
 
 ::: moniker range=">=msvc-160"
 
@@ -193,7 +193,7 @@ When the `MATHLIBRARY_EXPORTS` macro is defined, the `MATHLIBRARY_API` macro set
 
 1. In **Solution Explorer**, right-click on the **Source Files** node and choose **Add** > **New Item**. Create a new *`.cpp`* file called *`MathLibrary.cpp`*, in the same way that you added a new header file in the previous step.
 
-1. In the editor window, select the **MathLibrary.cpp** tab if it's already open. If not, in **Solution Explorer**, double-click **MathLibrary.cpp** in the **Source Files** folder of the **MathLibrary** project to open it.
+1. In the editor window, select the *`MathLibrary.cpp`* tab if it's already open. If not, in **Solution Explorer**, double-click *`MathLibrary.cpp`* in the **Source Files** folder of the **MathLibrary** project to open it.
 
 1. In the editor, replace the contents of the *`MathLibrary.cpp`* file with the following code:
 
@@ -325,7 +325,7 @@ When the `MATHLIBRARY_EXPORTS` macro is defined, the `MATHLIBRARY_API` macro set
 
 ::: moniker-end
 
-To verify that everything works so far, compile the DLL. To compile, choose **Build** > **Build Solution** on the menu bar. The DLL and related compiler output are placed in a folder called *Debug* directly below the solution folder. If you create a Release build, the output is placed in a folder called *Release*. The output should look something like this:
+To verify that everything works so far, compile the DLL. To compile, choose **Build** > **Build Solution** on the menu bar. The DLL and related compiler output are placed in a folder called `Debug` directly below the solution folder. If you create a Release build, the output is placed in a folder called `Release`. The output should look something like this:
 
 ::: moniker range=">=msvc-160"
 
