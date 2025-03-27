@@ -1,6 +1,6 @@
 ---
 title: "Compile a C Program on the Command Line"
-description: "Learn how to create a Hello World C program by using a text editor, and then compile it by using the command line."
+description: "Learn how to create a Hello World C program by using a text editor, and then compile it by using the command line compiler."
 ms.custom: tutorial
 ms.date: 03/17/2025
 helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]
@@ -177,7 +177,7 @@ By default, MSVC is compatible with the ANSI C89 and ISO C99 standards, but not 
 
 Certain library functions and POSIX function names are deprecated by MSVC. The functions are supported, but the preferred names have changed. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md) and [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
 
-## Related content
+## See also
 
 - [Walkthrough: Create a Standard C++ Program](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)
 - [C Language Reference](../c-language/c-language-reference.md)

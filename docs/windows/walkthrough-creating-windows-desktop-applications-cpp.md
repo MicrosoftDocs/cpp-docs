@@ -598,6 +598,6 @@ As promised, the complete code for the working application follows.
 
 Congratulations! You've built a traditional Windows desktop application.
 
-## Related content
+## See also
 
 - [Windows C++ desktop application types](overview-of-windows-programming-in-cpp.md)
