@@ -1,9 +1,10 @@
 ---
 description: "Learn more about: /MIDL (Specify MIDL Command Line Options)"
 title: "/MIDL (Specify MIDL Command Line Options)"
-ms.date: 03/24/2025
+ms.date: "09/05/2018"
 f1_keywords: ["/midl", "VC.Project.VCLinkerTool.MidlCommandFile"]
 helpviewer_keywords: ["-MIDL linker option", "MIDL", "/MIDL linker option", "MIDL linker option", "MIDL, command line options"]
+ms.assetid: 22dc259e-b34c-4ed3-a380-4beb734482c1
 ---
 # /MIDL (Specify MIDL Command Line Options)
 
@@ -15,8 +16,8 @@ Specifies a response file for MIDL command line options
 
 ## Arguments
 
-*`file`*\
-The name of the file that contains [MIDL command line options](/windows/win32/Midl/general-midl-command-line-syntax). Must not exceed `MAX_PATH` (260) characters.
+*file*<br/>
+The name of the file that contains [MIDL command line options](/windows/win32/Midl/general-midl-command-line-syntax).
 
 ## Remarks
 
@@ -38,9 +39,9 @@ The file should contain one MIDL command-line option per line.
 
 ## See also
 
-[MSVC linker reference](linking.md)\
-[MSVC Linker Options](linker-options.md)\
-[/IDLOUT (Name MIDL Output Files)](idlout-name-midl-output-files.md)\
-[/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)\
-[/TLBOUT (Name .TLB File)](tlbout-name-dot-tlb-file.md)\
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
+[/IDLOUT (Name MIDL Output Files)](idlout-name-midl-output-files.md)<br/>
+[/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/TLBOUT (Name .TLB File)](tlbout-name-dot-tlb-file.md)<br/>
 [Building an Attributed Program](../../windows/attributes/cpp-attributes-com-net.md)

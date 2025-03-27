@@ -14,7 +14,7 @@ helpviewer_keywords: ["/KEYFILE linker option", "-KEYFILE linker option", "KEYFI
 ## Arguments
 
 *`filename`*\
-File that contains the key. Place the string in double quotation marks (" ") if it contains a space. Must not exceed `MAX_PATH` (260) characters.
+File that contains the key. Place the string in double quotation marks (" ") if it contains a space.
 
 ## Remarks
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /LIBPATH (Additional Libpath)"
 title: "/LIBPATH (Additional Libpath)"
-ms.date: 03/24/2025
+ms.date: 03/27/2025
 f1_keywords: ["/libpath", "VC.Project.VCLinkerTool.AdditionalLibraryDirectories"]
 helpviewer_keywords: ["LIBPATH linker option", "/LIBPATH linker option", "Additional Libpath linker option", "environment library path override", "-LIBPATH linker option", "library path linker option"]
 ---
@@ -14,7 +14,7 @@ helpviewer_keywords: ["LIBPATH linker option", "/LIBPATH linker option", "Additi
 ## Argument
 
 *`dir`*\
-Specifies a path that the linker searches before it searches the path specified in the `LIB` environment option. Must not exceed `MAX_PATH` (260) characters.
+Specifies a path that the linker searches before it searches the path specified in the `LIB` environment option. When expanded, the fully-qualified directory must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

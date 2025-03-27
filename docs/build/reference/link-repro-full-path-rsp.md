@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /LINKREPROFULLPATHRSP (Generate file containing absolute paths of linked files)"
 title: "/LINKREPROFULLPATHRSP (Generate file containing absolute paths of linked files)"
-ms.date: 03/24/2025
+ms.date: 03/27/2025
 f1_keywords: ["VC.Project.VCLinkerTool.LinkReproFullPathRSP", "/LINKREPROFULLPATHRSP"]
 helpviewer_keywords: ["/LINKREPROFULLPATHRSP linker option", "-LINKREPROFULLPATHRSP linker option", "LINKREPROFULLPATHRSP linker option"]
 ---
@@ -18,7 +18,7 @@ This flag was introduced in Visual Studio 2022 version 17.11.
 ## Argument
 
 *`filename`*\
-Specifies the name of the response file to create. Must not exceed `MAX_PATH` (260) characters.
+Specifies the name of the response file to create. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

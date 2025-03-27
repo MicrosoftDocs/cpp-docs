@@ -16,7 +16,7 @@ Provide an alternate location for the Program Database (`.pdb`) file in a compil
 ## Arguments
 
 *`pdb_file_name`*\
-The path and file name for the `.pdb` file. The *`pdb_file_name`* must not exceed `MAX_PATH` (260) characters.
+The path and filename for the `.pdb` file. The path may exceed `MAX_PATH` (260 characters). The filename (not including the path) must not exceed `MAX_PATH`.
 
 ## Remarks
 

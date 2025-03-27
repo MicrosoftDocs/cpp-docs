@@ -1,26 +1,22 @@
 ---
 description: "Learn more about: /MANIFESTFILE (Name Manifest File)"
 title: "/MANIFESTFILE (Name Manifest File)"
-ms.date: 03/24/2025
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.ManifestFile"]
 helpviewer_keywords: ["MANIFESTFILE linker option", "-MANIFESTFILE linker option", "/MANIFESTFILE linker option"]
+ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d
 ---
 # /MANIFESTFILE (Name Manifest File)
 
-## Syntax
-
-> /MANIFESTFILE:filename
-
-## Argument
-
-`filename`\
-The name of the manifest file.
+```
+/MANIFESTFILE:filename
+```
 
 ## Remarks
 
-Specify `/MANIFESTFILE` to change the default name of the manifest file. The default name of the manifest file is `filename` with `.manifest` appended. The resulting manifest file name must not exceed `MAX_PATH` (260) characters.
+/MANIFESTFILE lets you change the default name of the manifest file.  The default name of the manifest file is the file name with .manifest appended.
 
-`/MANIFESTFILE` has no effect if you do not also link with [`/MANIFEST`](manifest-create-side-by-side-assembly-manifest.md).
+/MANIFESTFILE will have no effect if you do not also link with [/MANIFEST](manifest-create-side-by-side-assembly-manifest.md).
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -36,5 +32,5 @@ Specify `/MANIFESTFILE` to change the default name of the manifest file. The def
 
 ## See also
 
-[MSVC linker reference](linking.md)\
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

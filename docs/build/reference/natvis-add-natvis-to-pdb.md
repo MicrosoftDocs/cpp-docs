@@ -1,9 +1,10 @@
 ---
 description: "Learn more about: /NATVIS (Add Natvis to PDB)"
 title: "/NATVIS (Add Natvis to PDB)"
-ms.date: 03/24/2025
+ms.date: 09/08/2022
 f1_keywords: ["/natvis", "natvis"]
 helpviewer_keywords: ["NATVIS linker option", "/NATVIS linker option", "-NATVIS linker option", "Add Natvis file to PDB"]
+ms.assetid: 8747fc0c-701a-4796-bb4d-818ab4465cca
 ---
 # `/NATVIS` (Add Natvis to PDB)
 
@@ -16,7 +17,7 @@ Specifies a debugger visualization file (a Natvis file) to embed in the PDB file
 ## Parameters
 
 *`filename`*\
-The pathname for a Natvis file to add to the PDB file. It embeds the debugger visualizations in the Natvis file into the PDB. The *`filename`* must not exceed `MAX_PATH` (260) characters.
+The pathname for a Natvis file to add to the PDB file. It embeds the debugger visualizations in the Natvis file into the PDB.
 
 ## Remarks
 

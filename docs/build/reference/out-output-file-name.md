@@ -12,7 +12,7 @@ helpviewer_keywords: ["output files, name linker option", "-OUT linker option", 
 ## Arguments
 
 *`filename`*\
-A user-specified name for the output file. It replaces the default name. When combined with the extension, must not exceed `MAX_PATH` (260) characters.
+A user-specified name for the output file. It replaces the default name. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

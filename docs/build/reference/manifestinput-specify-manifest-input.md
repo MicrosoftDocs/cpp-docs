@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /MANIFESTINPUT (Specify Manifest Input)"
 title: "/MANIFESTINPUT (Specify Manifest Input)"
-ms.date: 03/24/2025
+ms.date: 03/27/2025
 f1_keywords: ["VC.Project.VCLinkerTool.ManifestInput"]
 ---
 # /MANIFESTINPUT (Specify Manifest Input)
@@ -15,7 +15,7 @@ Specifies a manifest input file to include in the manifest that's embedded in th
 ### Parameters
 
 *`filename`*\
-The manifest file to include in the embedded manifest. Must not exceed `MAX_PATH` (260) characters.
+The manifest file to include in the embedded manifest. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

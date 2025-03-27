@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /WHOLEARCHIVE (Include All Library Object Files)"
 title: "/WHOLEARCHIVE (Include All Library Object Files)"
-ms.date: 03/24/2025
+ms.date: 03/27/2025
 ---
 # /WHOLEARCHIVE (Include All Library Object Files)
 
@@ -15,7 +15,7 @@ Force the linker to include all object files in the static library in the linked
 ### Arguments
 
 *`library`*\
-An optional pathname to a static library. The linker includes every object file from this library. The pathname must not exceed `MAX_PATH` (260) characters.
+An optional pathname to a static library. The linker includes every object file from this library. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 
@@ -28,9 +28,7 @@ The `/WHOLEARCHIVE` option was introduced in Visual Studio 2015 Update 2.
 ### To set this linker option in Visual Studio
 
 1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
-
 1. Add the *`/WHOLEARCHIVE`* option to the **Additional Options** text box.
 
 ## See also

@@ -1,9 +1,10 @@
 ---
 description: "Learn more about: /ASSEMBLYMODULE (Add an MSIL module to the assembly)"
 title: "/ASSEMBLYMODULE (Add an MSIL module to the assembly)"
-ms.date: 03/24/2025
+ms.date: 05/11/2022
 f1_keywords: ["/assemblymodule", "VC.Project.VCLinkerTool.AddModuleNamesToAssembly"]
 helpviewer_keywords: ["ASSEMBLYMODULE linker option", "assemblies [C++], adding modules to", "assemblies [C++]", "/ASSEMBLYMODULE linker option", "-ASSEMBLYMODULE linker option"]
+ms.assetid: 67357da8-e4b6-49fd-932c-329a5777f143
 ---
 # `/ASSEMBLYMODULE` (Add an MSIL module to the assembly)
 
@@ -14,7 +15,7 @@ helpviewer_keywords: ["ASSEMBLYMODULE linker option", "assemblies [C++], adding 
 ### Arguments
 
 *`filename`*\
-The module you want to include in this assembly. Must not exceed `MAX_PATH` (260) characters.
+The module you want to include in this assembly.
 
 ## Remarks
 
@@ -33,11 +34,17 @@ For example, consider the following scenario:
 Other linker options that affect assembly generation are:
 
 - [`/ASSEMBLYDEBUG`](assemblydebug-add-debuggableattribute.md)
+
 - [`/ASSEMBLYLINKRESOURCE`](assemblylinkresource-link-to-dotnet-framework-resource.md)
+
 - [`/ASSEMBLYRESOURCE`](assemblyresource-embed-a-managed-resource.md)
+
 - [`/DELAYSIGN`](delaysign-partially-sign-an-assembly.md)
+
 - [`/NOASSEMBLY`](noassembly-create-a-msil-module.md)
+
 - [`/KEYFILE`](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)
+
 - [`/KEYCONTAINER`](keycontainer-specify-a-key-container-to-sign-an-assembly.md)
 
 The MSVC linker accepts *`.netmodule`* files as input and the output file produced by the linker will be an assembly or *`.netmodule`* file with no run-time dependence on any of the *`.netmodule`* files that were input to the linker. For more information, see [`.netmodule` files as linker input](netmodule-files-as-linker-input.md).
@@ -45,7 +52,9 @@ The MSVC linker accepts *`.netmodule`* files as input and the output file produc
 ### To set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+
 1. Select the **Configuration Properties** > **Linker** > **Input** property page.
+
 1. Modify the **Add Module to Assembly** property.
 
 ### To set this linker option programmatically
