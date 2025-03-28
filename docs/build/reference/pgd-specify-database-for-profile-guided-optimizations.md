@@ -1,14 +1,13 @@
 ---
 description: "Learn more about: /PGD (Specify Database for Profile-Guided Optimizations)"
 title: "/PGD (Specify Database for Profile-Guided Optimizations)"
-ms.date: "03/14/2018"
+ms.date: 03/24/2025
 f1_keywords: ["VC.Project.VCLinkerTool.ProfileGuidedDatabase"]
 helpviewer_keywords: ["-PGD linker option", "/PGD linker option"]
-ms.assetid: 9f312498-493b-461f-886f-92652257e443
 ---
 # /PGD (Specify Database for Profile-Guided Optimizations)
 
-**The /PGD option is deprecated.** Starting in Visual Studio 2015, prefer the [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) linker options instead. This option is used to specify the name of the .pgd file used by the profile-guided optimization process.
+**The /PGD option is deprecated.** Starting in Visual Studio 2015, prefer the [`/GENPROFILE`or `/FASTGENPROFILE`](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) linker options instead. This option is used to specify the name of the .pgd file used by the profile-guided optimization process.
 
 ## Syntax
 
@@ -16,14 +15,14 @@ ms.assetid: 9f312498-493b-461f-886f-92652257e443
 
 ## Argument
 
-*filename*<br/>
-Specifies the name of the .pgd file that is used to hold information about the running program.
+`filename`\
+Specifies the name of the `.pgd` file that is used to hold information about the running program. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 
-When using the deprecated [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) option, use **/PGD** to specify a nondefault name or location for the .pgd file. If you do not specify **/PGD**, the .pgd file base name is the same as the output file (.exe or .dll) base name and is created in the same directory from which the link was invoked.
+When using the deprecated [`/LTCG:PGINSTRUMENT`](ltcg-link-time-code-generation.md) option, use **`/PGD`** to specify a nondefault name or location for the `.pgd` file. If you don't specify **`/PGD`**, the `.pgd` file base name is the same as the output file (`.exe` or `.dll`) base name and is created in the same directory from which the link was invoked.
 
-When using the deprecated **/LTCG:PGOPTIMIZE** option, use the **/PGD** option to specify the name of the .pgd file to use to create the optimized image. The *filename* argument should match the *filename* specified to **/LTCG:PGINSTRUMENT**.
+When using the deprecated **`/LTCG:PGOPTIMIZE`** option, use the **`/PGD`** option to specify the name of the `.pgd` file to use to create the optimized image. The *`filename`* argument should match the *`filename`* specified to **`/LTCG:PGINSTRUMENT`**.
 
 For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md).
 
@@ -41,5 +40,5 @@ For more information, see [Profile-Guided Optimizations](../profile-guided-optim
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
-[MSVC Linker Options](linker-options.md)<br/>
+[MSVC linker reference](linking.md)\
+[MSVC Linker Options](linker-options.md)
