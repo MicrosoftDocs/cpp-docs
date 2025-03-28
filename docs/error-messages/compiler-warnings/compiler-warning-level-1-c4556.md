@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4556"
 title: "Compiler Warning (level 1) C4556"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 1) C4556"
+ms.date: "03/28/2025"
 f1_keywords: ["C4556"]
 helpviewer_keywords: ["C4556"]
-ms.assetid: e4c0e296-b747-4db1-9608-30b8b74feac2
 ---
 # Compiler Warning (level 1) C4556
 
-> value of intrinsic immediate argument '*value*' is out of range '*lowerbound* - *upperbound*'
+> value of intrinsic immediate argument '*value*' is out of range '*lower_bound* - *upper_bound*'
 
 ## Remarks
 
@@ -16,21 +15,18 @@ An intrinsic matches a hardware instruction. The hardware instruction has a fixe
 
 ## Example
 
-The following sample generates C4556:
+The following example generates C4556:
 
 ```cpp
 // C4556.cpp
 // compile with: /W1
-// processor: x86 IPF
+// processor: x86
 #include <xmmintrin.h>
-
-void test()
-{
-   __m64 m;
-   _m_pextrw(m, 5);   // C4556
-}
 
 int main()
 {
+    __m64 m = _mm_setzero_si64();
+    _m_pextrw(m, 5);   // C4556
+    _mm_empty();
 }
 ```
