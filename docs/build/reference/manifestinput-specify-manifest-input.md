@@ -10,11 +10,11 @@ Specifies a manifest input file to include in the manifest that's embedded in th
 
 ## Syntax
 
-> **/MANIFESTINPUT:*filename*
+> `/MANIFESTINPUT:`*filename*
 
 ### Parameters
 
-*`filename`*\
+*filename*\
 The manifest file to include in the embedded manifest. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
