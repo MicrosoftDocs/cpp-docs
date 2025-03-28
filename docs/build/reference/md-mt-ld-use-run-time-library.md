@@ -1,6 +1,6 @@
 ---
+title: "/MD, /MT, /LD (Use runtime library)"
 description: "Learn more about: /MD, /MT, /LD (Use runtime library)"
-title: "/MD, -MT, -LD (Use runtime library)"
 ms.date: "01/13/2025"
 f1_keywords: ["/ld", "/mt", "VC.Project.VCCLWCECompilerTool.RuntimeLibrary", "VC.Project.VCCLCompilerTool.RuntimeLibrary", "/md", "/ml"]
 helpviewer_keywords: ["/MT compiler option [C++]", "-MD compiler option [C++]", "threading [C++], multithread compiler option", "MSVCRTD.lib", "MSVCRT.lib", "LIBCMT.lib", "MD compiler option [C++]", "/MD compiler option [C++]", "MT compiler option [C++]", "LD compiler option [C++]", "MDd compiler option [C++]", "-MDd compiler option [C++]", "LIBCD.lib", "-MTd compiler option [C++]", "MTd compiler option [C++]", "/MTd compiler option [C++]", "-LD compiler option [C++]", "/MDd compiler option [C++]", "multithread compiler option", "_STATIC_CPPLIB symbol", "LIBC.lib", "/LD compiler option [C++]", "DLLs [C++], compiler options", "LIBCMTD.lib", "-MT compiler option [C++]"]

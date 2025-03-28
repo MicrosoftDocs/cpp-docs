@@ -1,36 +1,37 @@
 ---
-title: "Walkthrough: Create a traditional Windows Desktop application (C++)"
-description: "How to create a minimal, traditional Windows Desktop application using Visual Studio, C++, and the Win32 API"
+title: "Create a Traditional Windows Desktop Application (C++)"
+description: "Learn how to create a minimal, traditional Windows desktop application using Visual Studio, C++, and the Win32 API."
 ms.custom: "get-started-article"
-ms.date: 10/10/2023
+ms.topic: tutorial
+ms.date: 03/17/2025
 helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop applications [C++]", "Windows API [C++]"]
 ---
-# Walkthrough: Create a traditional Windows Desktop application (C++)
+# Walkthrough: Create a traditional Windows desktop application (C++)
 
-This walkthrough shows how to create a traditional Windows desktop application in Visual Studio. The application you create uses the Windows API to display "Hello, Windows desktop!" in a window. You can use the code that you develop in this walkthrough as a pattern to create Windows desktop applications.
+This walkthrough explains how to create a traditional Windows desktop application in Visual Studio. The application you create uses the Windows API to display *Hello, Windows desktop!* in a window. You can use the code that you develop in this walkthrough as a pattern to create Windows desktop applications.
 
-The Windows API (also known as the Win32 API, Windows Desktop API, and Windows Classic API) is a C-language-based framework for creating Windows applications. It has been used to create Windows applications for decades. More advanced and easier-to-program frameworks have been built on top of the Windows API. For example, MFC, ATL, the .NET frameworks. Even the most modern Windows Runtime code for UWP and Store apps written in C++/WinRT uses the Windows API underneath. For more information about the Windows API, see [Windows API Index](/windows/win32/apiindex/windows-api-list).
+The Windows API (also known as the Win32 API, Windows Desktop API, and Windows Classic API) is a C-language-based framework for creating Windows applications. It has been used to create Windows applications for decades. More advanced and easier-to-program frameworks have been built on top of the Windows API, for example, the MFC, ATL, and .NET frameworks. Even the most modern Windows Runtime code for UWP and Store apps written in C++/WinRT uses the Windows API underneath. For more information about the Windows API, see [Windows API Index](/windows/win32/apiindex/windows-api-list).
 
 > [!IMPORTANT]
-> The [Build the code](#build-the-code) section at the end of this document shows the complete code. This walkthrough covers the various pieces of code that go into a Windows app, but you won't code as you go because some details are omitted in the code snippets to focus on the most important parts. You can copy the complete code and paste it into your project at the end.
+> The [Build the code](#build-the-code) section at the end of this article shows the complete code. This walkthrough covers the various pieces of code that go into a Windows app, but some details are omitted in the code snippets to focus on the most important parts. You can copy the complete code and paste it into your project at the end.
 
 ## Prerequisites
 
-- A computer that runs Microsoft Windows 7 or later versions. We recommend Windows 11 or later for the best development experience.
+- Microsoft Windows 7 or later versions. We recommend Windows 11 or later for the best development experience.
 
-- A copy of Visual Studio. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
+- Visual Studio. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
 
-   ![Screenshot of the Desktop development with C++ workload in the Visual Studio Installer which says: build classic Windows-based apps using the power of the Visual C++ toolset](../build/media/desktop-development-with-cpp.png)
+   :::image type="content" source="../build/media/desktop-development-with-cpp.png" alt-text="Screenshot of the Desktop development with C plus plus workload in the Visual Studio Installer.":::
 
-- A basic understanding of using the Visual Studio IDE. If you've used Windows desktop apps before, you can probably keep up. For an introduction, see [Visual Studio IDE feature tour](/visualstudio/ide/visual-studio-ide).
+- A basic understanding of how to use the Visual Studio IDE. If you've used Windows desktop apps before, you can probably keep up. For an introduction, see [Visual Studio IDE feature tour](/visualstudio/ide/visual-studio-ide).
 
-- An understanding of enough of the fundamentals of the C++ language to follow along. Don't worry, we don't do anything too complicated.
+- Some familiarity with the C++ language. Don't worry, we don't do anything too complicated.
 
 ## Create a Windows desktop project
 
-Follow these steps to create your first Windows desktop project. Per the note at the beginning of this walkthrough, the completed code is available in the [Build the code](#build-the-code) section at the end of the walkthrough. Go ahead and follow the steps to create the project, but hold off pasting the following sections of code until the end, when the complete application code is presented. Some details are omitted in the code snippets to focus on the most important parts. You can copy the complete code and paste it into your project at the end.
+Follow these steps to create your first Windows desktop project. As noted at the beginning of this article, the completed code is available in the [Build the code](#build-the-code) section at the end of the walkthrough. Go ahead and follow the steps to create the project, but hold off pasting the following sections of code until the end, when the complete application code is presented. Some details are omitted in the code snippets to focus on the most important parts. You can copy the complete code and paste it into your project at the end.
 
-To simplify the explanation. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's located at the top of the table of contents on this page.
+To see the steps for your preferred version of Visual Studio, use the **Version** selector located at the top of the table of contents on this page.
 
 ::: moniker range=">=msvc-160"
 
@@ -48,13 +49,13 @@ To simplify the explanation. To see the documentation for your preferred version
 
 1. In **Solution Explorer**, right-click the **DesktopApp** project, choose **Add**, and then choose **New Item**.
 
-    :::image type="complex" source="../build/media/desktop-app-project-add-new-item-153.gif" alt-text="An animation showing adding a new item to DesktopApp Project in Visual Studio 2019.":::
+    :::image type="complex" source="../build/media/desktop-app-project-add-new-item-153.gif" alt-text="Animation showing adding a new item to DesktopApp Project in Visual Studio 2019.":::
     The animation shows right-clicking on the project name in Solution Explorer, choosing Add in the menu that appears, and then choosing New Item.
     :::image-end:::
-    
-1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
 
-   ![Screenshot of the Add New Item dialog box in Visual Studio 2019. The C plus plus File (.cpp) option is selected. The name field is set to Hello Windows Desktop.cpp.](../build/media/desktop-app-add-cpp-file-153.png)
+1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *`HelloWindowsDesktop.cpp`*. Choose **Add**.
+
+   :::image type="content" source="../build/media/desktop-app-add-cpp-file-153.png" alt-text="Screenshot of the Add New Item dialog box in Visual Studio 2019. The C plus plus File (.cpp) option is selected. The name field is set to Hello Windows Desktop.cpp.":::
 
 Your project is now created and your source file is opened in the editor.
 
@@ -70,7 +71,7 @@ Your project is now created and your source file is opened in the editor.
 
    In the **Name** box, type a name for the project, for example, *DesktopApp*. Choose **OK**.
 
-   ![Screenshot of the New Project dialog box in Visual Studio 2017. The item Windows Desktop Wizard is selected. The name textbox says DesktopApp.](../build/media/desktop-app-new-project-name-153.png "Name the DesktopApp project")
+   :::image type="content" source="../build/media/desktop-app-new-project-name-153.png" alt-text="Screenshot of the New Project dialog box in Visual Studio 2017. The item Windows Desktop Wizard is selected. The name textbox says DesktopApp.":::
 
 1. In the **Windows Desktop Project** dialog, under **Application type**, select **Windows application (.exe)**. Under **Additional options**, select **Empty project**. Make sure **Precompiled Header** isn't selected. Choose **OK** to create the project.
 
@@ -80,9 +81,9 @@ Your project is now created and your source file is opened in the editor.
    The animation shows right-clicking on the project name in Solution Explorer, choosing Add in the menu that appeared, and then choosing New Item.
    :::image-end:::
  
-1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
+1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *`HelloWindowsDesktop.cpp`*. Choose **Add**.
 
-   ![Screenshot of the Add New Item dialog box in Visual Studio 2017. Installed > Visual C plus plus is selected on the left and the C plus plus File option is highlighted.](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
+   :::image type="content" source="../build/media/desktop-app-add-cpp-file-153.png" alt-text="Screenshot of the Add New Item dialog box in Visual Studio 2017. Visual C plus plus is selected on the left and the C plus plus File option is highlighted.":::
 
 Your project is now created and your source file is opened in the editor.
 
@@ -98,23 +99,23 @@ Your project is now created and your source file is opened in the editor.
 
    In the **Name** box, type a name for the project, for example, *DesktopApp*. Choose **OK**.
 
-   ![Screenshot of the New Project dialog box in Visual Studio 2015 with Installed > Templates > Visual C plus plus > Win32 selected, the Win32 Project option highlighted, and DesktopApp typed in the Name text box.](../build/media/desktop-app-new-project-name-150.png "Name the DesktopApp project")
+   :::image type="content" source="../build/media/desktop-app-new-project-name-150.png" alt-text="Screenshot of the New Project dialog box in Visual Studio 2015 with the Win32 Project option highlighted, and DesktopApp typed in the Name text box.":::
 
 1. On the **Overview** page of the **Win32 Application Wizard**, choose **Next**.
 
-   ![Create DesktopApp in Win32 Application Wizard Overview page.](../build/media/desktop-app-win32-wizard-overview-150.png "Create DesktopApp in Win32 Application Wizard Overview")
+   :::image type="content" source="../build/media/desktop-app-win32-wizard-overview-150.png" alt-text="Screenshot of the dialog box in Visual Studio 2015 that shows the Win32 Application Wizard Overview page.":::
 
 1. On the **Application Settings** page, under **Application type**, select **Windows application**. Under **Additional options**, uncheck **Precompiled header**, then select **Empty project**. Choose **Finish** to create the project.
 
 1. In **Solution Explorer**, right-click the DesktopApp project, choose **Add**, and then choose **New Item**.
 
-    :::image type="complex" source="../build/media/desktop-app-project-add-new-item-150.gif" alt-text="An animation showing adding a new item to DesktopApp Project in Visual Studio 2015.":::
+    :::image type="complex" source="../build/media/desktop-app-project-add-new-item-150.gif" alt-text="Animation showing adding a new item to DesktopApp Project in Visual Studio 2015.":::
     The animation shows right-clicking on the project name in Solution Explorer, choosing Add in the menu that appears, and then choosing New Item.
     :::image-end:::
 
-1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
+1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *`HelloWindowsDesktop.cpp`*. Choose **Add**.
 
-   ![Screenshot of the Add New Item dialog box in Visual Studio 2015 with Installed > Visual C plus plus selected and the C plus plus File option highlighted.](../build/media/desktop-app-add-cpp-file-150.png "Add .cpp file to DesktopApp Project")
+   :::image type="content" source="../build/media/desktop-app-add-cpp-file-150.png" alt-text="Screenshot of the Add New Item dialog box in Visual Studio 2015 with Visual C plus plus selected and the C plus plus File option highlighted.":::
 
 Your project is now created and your source file is opened in the editor.
 
@@ -142,7 +143,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
    > [!NOTE]
    > What are all those extra words, such as `WINAPI`, or `CALLBACK`, or `HINSTANCE`, or `_In_`? The traditional Windows API uses typedefs and preprocessor macros extensively to abstract away some of the details of types and platform-specific code, such as calling conventions, **`__declspec`** declarations, and compiler pragmas. In Visual Studio, you can use the IntelliSense [Quick Info](/visualstudio/ide/using-intellisense#quick-info) feature to see what these typedefs and macros define. Hover your mouse over the word of interest, or select it and press **Ctrl**+**K**, **Ctrl**+**I** for a small pop-up window that contains the definition. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense). Parameters and return types often use *SAL Annotations* to help you catch programming errors. For more information, see [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md).
 
-1. Windows desktop programs require `<windows.h>`. You'll also frequently see `#include <tchar.h>`. That's to make it easier to write an app that can work with either **`char`** or **`wchar_t`**. The way it works is that you instead use the `TCHAR` macro in your code, which resolves ultimately to **`wchar_t`** if the `UNICODE` symbol is defined in your project, otherwise it resolves to **`char`**.  If you always build with UNICODE enabled, you don't need `TCHAR` and can just use **`wchar_t`** directly. For more information, see [Using generic-text mappings](../c-runtime-library/using-generic-text-mappings.md). The following code shows theses two `#include` statements at the top of the file.
+1. Windows desktop programs require `<windows.h>`. You also frequently see `#include <tchar.h>`. That's to make it easier to write an app that can work with either **`char`** or **`wchar_t`**. The way it works is that you instead use the `TCHAR` macro in your code, which resolves ultimately to **`wchar_t`** if the `UNICODE` symbol is defined in your project, otherwise it resolves to **`char`**. If you always build with UNICODE enabled, you don't need `TCHAR` and can just use **`wchar_t`** directly. For more information, see [Using generic-text mappings](../c-runtime-library/using-generic-text-mappings.md). The following code shows theses two `#include` statements at the top of the file.
 
    ```cpp
    #include <windows.h>
@@ -166,7 +167,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
 
 ### Add functionality to the `WinMain` function
 
-1. In the `WinMain` function, you need to capture some basic information about your main window. You do that by filling out a structure of type [`WNDCLASSEX`](/windows/win32/api/winuser/ns-winuser-wndclassexw). The structure contains information about the window such as the application icon, the background color of the window, the name to display in the title bar, among other things. Importantly, it contains a function pointer to your window procedure that handles the messages that Windows sends to your app. The following example shows a typical `WNDCLASSEX` structure:
+1. In the `WinMain` function, you need to capture some basic information about your main window. You do that by filling out a structure of type [`WNDCLASSEX`](/windows/win32/api/winuser/ns-winuser-wndclassexw). The structure contains information about the window, such as the application icon, the background color of the window, the name to display in the title bar, among other things. Importantly, it contains a function pointer to your window procedure that handles the messages that Windows sends to your app. The following example shows a typical `WNDCLASSEX` structure:
 
    ```cpp
    WNDCLASSEX wcex;
@@ -185,9 +186,9 @@ Next, learn how to create the code for a Windows desktop application in Visual S
    wcex.hIconSm        = LoadIcon(wcex.hInstance, IDI_APPLICATION);
    ```
 
-   For information about the fields of the structure above, see [`WNDCLASSEX`](/windows/win32/api/winuser/ns-winuser-wndclassexw).
+   For information about the fields of this structure, see [`WNDCLASSEX`](/windows/win32/api/winuser/ns-winuser-wndclassexw).
 
-1. Once you have the `WNDCLASSEX` structure filled out, you register it with Windows so that it knows about your window and how to send messages to it. Use the [`RegisterClassEx`](/windows/win32/api/winuser/nf-winuser-registerclassexw) function and pass the window class structure as an argument. The `_T` macro is used because we use the `TCHAR` type per the discussion about Unicode above. The following code shows how to register the window class.
+1. Once you have the `WNDCLASSEX` structure filled out, you register it with Windows so that it knows about your window and how to send messages to it. Use the [`RegisterClassEx`](/windows/win32/api/winuser/nf-winuser-registerclassexw) function and pass the window class structure as an argument. The `_T` macro is used because we use the `TCHAR` type per the preceding discussion about Unicode. The following code shows how to register the window class.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -201,7 +202,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
    }
    ```
 
-1. Next you create a window using the [`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw) function.
+1. Create a window using the [`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw) function.
 
    ```cpp
    static TCHAR szWindowClass[] = _T("DesktopApp");
@@ -434,7 +435,7 @@ As promised, the complete code for the working application follows.
 
 ### To build this example
 
-1. Delete all the code in *HelloWindowsDesktop.cpp* in the editor. Copy this example code and paste it into *HelloWindowsDesktop.cpp*:
+1. Delete all the code in *`HelloWindowsDesktop.cpp`* in the editor. Copy this example code and paste it into *`HelloWindowsDesktop.cpp`*:
 
    ```cpp
    // HelloWindowsDesktop.cpp
@@ -591,12 +592,12 @@ As promised, the complete code for the working application follows.
     The animation shows clicking the save all button, then choosing Build > Build Solution from the main menu.
     :::image-end:::
 
-1. To run the application, press **F5**. A window with the text "Hello, Windows desktop!" should appear.
+1. To run the application, press **F5**. A window with the text `Hello, Windows desktop!` should appear.
 
-   ![Screenshot of the running project. It shows a window with the title Windows Desktop Guided Tour Application. The contents of the window are Hello, Windows desktop!.](../build/media/desktop-app-project-run-157.PNG "Run the DesktopApp Project")
+    :::image type="content" source="../build/media/desktop-app-project-run-157.png" alt-text="Screenshot of a window with the title Windows Desktop Guided Tour Application. The contents of the window are Hello, Windows desktop!.":::
 
 Congratulations! You've built a traditional Windows desktop application.
 
 ## See also
 
-[Windows C++ desktop application types](overview-of-windows-programming-in-cpp.md)
+- [Windows C++ desktop application types](overview-of-windows-programming-in-cpp.md)
