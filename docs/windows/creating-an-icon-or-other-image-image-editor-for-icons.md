@@ -51,31 +51,31 @@ The **Target Image Type** property lists the available image types where you sel
 
 :::row:::
    :::column span="":::
-      16 x 16, 1 bit\
-      16 x 16, 24 bit\
-      16 x 16, 4 bit\
-      128 x 128, 1 bit\
-      128 x 128, 24 bit\
-      128 x 128, 4 bit\
-      128 x 128, 8 bit
+      16 x 16, 1 bit (monochrome)\
+      16 x 16, 24 bit (16 million colors)\
+      16 x 16, 4 bit (16 colors)\
+      128 x 128, 1 bit (monochrome)\
+      128 x 128, 24 bit (16 million colors)\
+      128 x 128, 4 bit (16 colors)\
+      128 x 128, 8 bit (256 colors)
    :::column-end:::
    :::column span="":::
-      256 x 256, 1 bit\
-      256 x 256, 24 bit\
-      256 x 256, 4 bit\
-      256 x 256, 8 bit\
-      32 x 32, 1 bit\
-      32 x 32, 24 bit\
-      32 x 32, 4 bit
+      256 x 256, 1 bit (monochrome)\
+      256 x 256, 24 bit (16 million colors)\
+      256 x 256, 4 bit (16 colors)\
+      256 x 256, 8 bit (256 colors)\
+      32 x 32, 1 bit (monochrome)\
+      32 x 32, 24 bit (16 million colors)\
+      32 x 32, 4 bit (16 colors)
    :::column-end:::
    :::column span="":::
-      48 x 48, 1 bit\
-      48 x 48, 24 bit\
-      48 x 48, 4 bit\
-      64 x 64, 1 bit\
-      64 x 64, 24 bit\
-      64 x 64, 4 bit\
-      64 x 64, 8 bit
+      48 x 48, 1 bit (monochrome)\
+      48 x 48, 24 bit (16 million colors)\
+      48 x 48, 4 bit (16 colors)\
+      64 x 64, 1 bit (monochrome)\
+      64 x 64, 24 bit (16 million colors)\
+      64 x 64, 4 bit (16 colors)\
+      64 x 64, 8 bit (256 colors)
    :::column-end:::
 :::row-end:::
 
@@ -90,7 +90,7 @@ The **Custom Image** dialog box allows you to create a new image with a custom s
 |---|---|
 |**Width**|Provides a space for you to enter the width of the custom image in pixels (1 - 512, limit of 2048)|
 |**Height**|Provides a space for you to enter the height for the custom image in pixels (1 - 512, limit of 2048)|
-|**Colors**|Provides a space for you to choose the number of bits for the custom image: 1, 4, 8, 24|
+|**Colors**|Provides a space for you to choose the number of bits for color for the custom image: 1, 4, 8, 24|
 
 Use the **Open \<Device> Image** dialog box to open device images in C++ projects. It lists existing device images in the current resource (images that are part of the current resource). The following property included is:
 
@@ -102,7 +102,7 @@ Use the **Open \<Device> Image** dialog box to open device images in C++ project
 
 1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *`.rc`* file, then choose **Add Resource**. If you already have an existing image resource in your *`.rc`* file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
 
-1. In the [Add Resource dialog box](./how-to-create-a-resource-script-file.md), select **Icon** or **Cursor** and choose **New**. For icons, this action creates an icon resource with a 32 × 32, 16-color icon. For cursors, a 32 × 32, monochrome (two-color) image is created.
+1. In the [Add Resource dialog box](./how-to-create-a-resource-script-file.md), select **Icon** or **Cursor** and choose **New**. For icons, this action creates an icon resource with a 32 × 32, 16-color icon. For cursors, a 32 × 32, monochrome image is created.
 
    If a plus sign (**+**) appears next to the image resource type in the **Insert Resource** dialog box, it means that toolbar templates are available. Select the plus sign to expand the list of templates, select a template, and choose **New**.
 
