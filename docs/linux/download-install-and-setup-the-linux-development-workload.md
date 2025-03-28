@@ -1,14 +1,15 @@
 ---
-title: "Install the C++ Linux workload in Visual Studio"
-description: "How to download, install, and set up the Linux workload for C++ in Visual Studio."
-ms.date: "05/03/2020"
+title: "Install the C++ Linux Workload in Visual Studio"
+description: "Learn how to download, install, and set up the Linux workload for C++ in Visual Studio."
+ms.date: 03/25/2025
+ms.topic: how-to
 ms.custom: intro-installation
 ---
 # Download, install, and set up the Linux workload
 
 ::: moniker range="msvc-140"
 
-Linux projects are supported in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
+Linux projects are supported in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector for this article to Visual Studio 2017, Visual Studio 2019, or Visual Studio 2022. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
@@ -18,7 +19,7 @@ You can use the Visual Studio IDE on Windows to create, edit, and debug C++ proj
 
 You can work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio. For example, you can edit, build, and debug your code on Windows using Visual Studio. Then, quickly retarget the project for Linux to build and debug in a Linux environment. Linux header files are automatically copied to your local machine. Visual Studio uses them to provide full IntelliSense support (Statement Completion, Go to Definition, and so on).
 
-For any of these scenarios, the **Linux development with C++** workload is required.
+For any of these scenarios, the **Linux and embedded development with C++** workload is required.
 
 ::: moniker-end
 
@@ -26,25 +27,25 @@ For any of these scenarios, the **Linux development with C++** workload is requi
 
 ## Visual Studio setup
 
-1. Type "Visual Studio Installer" in the Windows search box:
+1. Open the Visual Studio Installer from your Start menu. If you can't find it, type *Visual Studio Installer* in the Windows search box and look for the installer under the **Apps** results.
 
-   ![Screenshot of the Windows search box which contains the text: visual studio installer.](media/visual-studio-installer-search.png)
+    :::image type="content" source="media/visual-studio-installer-search.png" alt-text="Screenshot of the Windows search box that contains the text visual studio installer.":::
 
-1. Look for the installer under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux development with C++** workload.
+1. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux and embedded development with C++** workload.
 
-   :::image type="complex" source="./media/linuxworkload.png" alt-text="Screenshot highlighting the Visual C++ for Linux Development workload item in Visual Studio Installer.":::
-   The Linux Development workload is selected. The Installation details pane is highlighted, which lists what's included in the workload. Which includes: Visual Studio C++ core features, Windows Universal C runtime, Visual C++ for Linux development. An optional component is also selected: Visual C++ tools for CMake and Linux.
+   :::image type="complex" source="./media/linux-workload.png" alt-text="Screenshot highlighting the Visual C++ for Linux and embedded development workload item in Visual Studio Installer.":::
+   The Linux and embedded development workload is selected. The Installation details pane is highlighted, which lists what's included in the workload. Which includes: Visual Studio C++ core features, Windows Universal C runtime, Visual C++ for Linux development. An optional component is also selected: Visual C++ tools for CMake and Linux.
    :::image-end:::
 
-1. If you're targeting IoT or embedded platforms, go to the **Installation details** pane on the right. Under **Linux development with C++**, expand **Optional Components**, and choose the components you need. CMake support for Linux is selected by default.
+1. If you're targeting IoT or embedded platforms, go to the **Installation details** pane on the right. Under **Linux and embedded development with C++**, expand **Optional Components**, and choose the components you need. CMake support for Linux is selected by default.
 
 1. Click **Modify** to continue with the installation.
 
 ## Options for creating a Linux environment
 
-If you don't already have a Linux machine, you can create a Linux Virtual Machine on Azure. For more information, see [Quickstart: Create a Linux virtual machine in the Azure portal](/azure/virtual-machines/linux/quick-create-portal).
+If you don't already have a Linux machine, you can create a Linux virtual machine on Azure. For more information, see [Quickstart: Create a Linux virtual machine in the Azure portal](/azure/virtual-machines/linux/quick-create-portal).
 
-On Windows 10 and later, you can install and target your favorite Linux distro on the Windows Subsystem for Linux (WSL). For more information, see [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10). If you're unable to access the Windows Store, you can [manually download the WSL distro packages](/windows/wsl/install-manual). WSL is a convenient console environment, but it's not recommended for graphical applications.
+On Windows 10 and later, you can install and target your favorite Linux distro on the Windows Subsystem for Linux (WSL). For more information, see [How to install Linux on Windows with WSL](/windows/wsl/install). If you're unable to access the Windows Store, you can [manually download the WSL distro packages](/windows/wsl/install-manual). WSL is a convenient console environment, but it's not recommended for graphical applications.
 
 ::: moniker-end
 
@@ -103,7 +104,7 @@ The target Linux system must have **openssh-server**, **g++**, **gdb**, and **ma
 
    You might be prompted for your root password to run the `sudo` command. If so, enter it and continue. Once complete, the required services and tools are installed.
 
-1. Ensure the ssh service is running on your Linux computer by running:
+1. Ensure the ssh service is running on your Linux computer:
 
    ```bash
    sudo service ssh start
@@ -141,7 +142,7 @@ The target machine running Fedora uses the **dnf** package installer. To downloa
 
    You might be prompted for your root password to run the sudo command. If so, enter it and continue. Once complete, the required services and tools are installed.
 
-1. Ensure the ssh service is running on your Linux computer by running:
+1. Ensure the ssh service is running on your Linux computer:
 
    ```bash
    sudo systemctl start sshd
@@ -149,11 +150,9 @@ The target machine running Fedora uses the **dnf** package installer. To downloa
 
    This command starts the service and runs it in the background, ready to accept connections.
 
-## Next Steps
+## Related content
 
-You're now ready to create or open a Linux project and configure it to run on the target system. For more information, see:
-
-- [Create a new Linux MSBuild C++ project](create-a-new-linux-project.md)
-- [Configure a Linux CMake project](cmake-linux-project.md)
+- [Create a Linux MSBuild C++ project in Visual Studio](create-a-new-linux-project.md)
+- [Create a CMake Linux project in Visual Studio](cmake-linux-project.md)
 
 ::: moniker-end
