@@ -15,7 +15,7 @@ Specifies the filename for the Windows Runtime Metadata (`.winmd`) output file t
 ## Argument
 
 *`filename`*\
-The filename for `.winmd` output file. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
+The filename for `.winmd` output file. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

@@ -16,7 +16,7 @@ Tells the linker or library tool to generate a link repro in a specified directo
 ### Arguments
 
 **_directory-name_**\
-The user-specified directory to store the link repro in. Directory names that include spaces must be enclosed in double quotes. When expanded, the fully-qualified link repro filename must not exceed `MAX_PATH` (260 characters).
+The user-specified directory to store the link repro in. Directory names that include spaces must be enclosed in double quotes. When expanded, the fully qualified link repro filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

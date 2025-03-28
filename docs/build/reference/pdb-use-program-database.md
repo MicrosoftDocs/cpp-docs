@@ -16,7 +16,7 @@ Specify the name of the program database (PDB) file that the linker creates.
 ## Arguments
 
 *`filename`*\
-A user-specified name for the program database (PDB) that the linker creates. It replaces the default name. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
+A user-specified name for the program database (PDB) that the linker creates. It replaces the default name. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

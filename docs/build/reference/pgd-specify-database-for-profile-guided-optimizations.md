@@ -16,7 +16,7 @@ helpviewer_keywords: ["-PGD linker option", "/PGD linker option"]
 ## Argument
 
 `filename`\
-Specifies the name of the `.pgd` file that is used to hold information about the running program. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
+Specifies the name of the `.pgd` file that is used to hold information about the running program. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

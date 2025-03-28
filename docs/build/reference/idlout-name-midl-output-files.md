@@ -17,7 +17,7 @@ helpviewer_keywords: ["MIDL, output file names", ".idl files, path", "MIDL", "/I
 An absolute or relative path specification. By specifying a path, you affect only the location of an `.idl` file; all other files are placed in the project directory.
 
 *`filename`*\
-Specifies the name of the `.idl` file created by the MIDL compiler. No file extension is assumed; specify *`filename.idl` if you want an `.idl` extension. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
+Specifies the name of the `.idl` file created by the MIDL compiler. No file extension is assumed; specify *`filename.idl` if you want an `.idl` extension. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

@@ -16,7 +16,7 @@ Specifies a module-definition file to the linker.
 ## Arguments
 
 *`filename`*\
-The name of a module-definition file (*`.def`*) to be passed to the linker. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
+The name of a module-definition file (*`.def`*) to be passed to the linker. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

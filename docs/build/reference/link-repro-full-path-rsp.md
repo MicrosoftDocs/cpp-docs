@@ -18,7 +18,7 @@ This flag was introduced in Visual Studio 2022 version 17.11.
 ## Argument
 
 *`filename`*\
-Specifies the name of the response file to create. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
+Specifies the name of the response file to create. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

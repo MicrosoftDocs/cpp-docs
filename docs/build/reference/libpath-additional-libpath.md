@@ -14,7 +14,7 @@ helpviewer_keywords: ["LIBPATH linker option", "/LIBPATH linker option", "Additi
 ## Argument
 
 *`dir`*\
-Specifies a path that the linker searches before it searches the path specified in the `LIB` environment option. When expanded, the fully-qualified directory must not exceed `MAX_PATH` (260 characters).
+Specifies a path that the linker searches before it searches the path specified in the `LIB` environment option. When expanded, the fully qualified directory must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

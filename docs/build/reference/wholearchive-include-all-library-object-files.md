@@ -15,7 +15,7 @@ Force the linker to include all object files in the static library in the linked
 ### Arguments
 
 *`library`*\
-An optional pathname to a static library. The linker includes every object file from this library. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
+An optional pathname to a static library. The linker includes every object file from this library. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

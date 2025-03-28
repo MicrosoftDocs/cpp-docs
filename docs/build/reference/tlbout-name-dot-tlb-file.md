@@ -17,7 +17,7 @@ helpviewer_keywords: ["tlb files, renaming", "TLBOUT linker option", "/TLBOUT li
 An absolute or relative path specification for where the .tlb file should be created.
 
 *`filename`*
-Specifies the name of the .tlb file created by the MIDL compiler. No file extension is assumed; specify *filename*.tlb if you want a .tlb extension. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
+Specifies the name of the .tlb file created by the MIDL compiler. No file extension is assumed; specify *filename*.tlb if you want a .tlb extension. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

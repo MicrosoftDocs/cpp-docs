@@ -14,7 +14,7 @@ helpviewer_keywords: ["IMPLIB linker option", "/IMPLIB linker option", "-IMPLIB 
 ## Argument
 
 *`filename`*\
-A user-specified name for the import library. It replaces the default name. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
+A user-specified name for the import library. It replaces the default name. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

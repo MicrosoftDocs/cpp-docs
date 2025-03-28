@@ -18,7 +18,7 @@ This linker option together with [`/LTCG` (Link-time code generation](ltcg-link-
 This optional argument specifies that aggressive speed optimizations should be used during optimized code generation.
 
 **`PGD`**=*filename*\
-Specifies a base filename for the `.pgd` file. By default, the linker uses the base executable filename with a `.pgd` extension. When expanded, the fully-qualified filename must not exceed `MAX_PATH` (260 characters).
+Specifies a base filename for the `.pgd` file. By default, the linker uses the base executable filename with a `.pgd` extension. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 
