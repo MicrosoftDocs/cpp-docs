@@ -117,7 +117,7 @@ _declspec(align(2)) struct {
 }
 ```
 
-:::image type="content" source="../build/media/vcamd_conv_ex_1_block.png" alt-text="Diagram showing the structure layout for example 1. The diagram shows 2 bytes of memory. Member a, a short, occupies bytes 0 through 1.":::image-end:::
+:::image type="content" source="../build/media/vcamd_conv_ex_1_block.png" alt-text="Diagram showing the structure layout for example 1. The diagram shows 2 bytes of memory. Member a, a short, occupies bytes 0 through 1.":::
 
 #### Example 2
 
@@ -218,7 +218,7 @@ On function exit and on function entry to C Runtime Library calls and Windows sy
 
 ## Stack usage
 
-For details on stack allocation, alignment, function types and stack frames on x64, see [x64 stack usage](stack-usage.md).
+For details on stack allocation, alignment, function types, and stack frames on x64, see [x64 stack usage](stack-usage.md).
 
 ## Prolog and epilog
 
