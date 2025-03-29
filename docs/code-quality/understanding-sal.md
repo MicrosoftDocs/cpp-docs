@@ -94,9 +94,9 @@ These annotations help identify possible uninitialized values and invalid null p
 
 This section shows code examples for the basic SAL annotations.
 
-### Using the Visual Studio Code Analysis Tool to Find Defects
+### Using the Visual Studio code analysis tool to find defects
 
-In the examples, the Visual Studio Code Analysis tool is used together with SAL annotations to find code defects. Here's how to do that.
+In the examples, the Visual Studio code analysis tool is used together with SAL annotations to find code defects. Here's how to do that.
 
 #### To use Visual Studio code analysis tools and SAL
 
@@ -145,7 +145,7 @@ void BadInCaller()
 }
 ```
 
-If you use Visual Studio Code Analysis on this example, it validates that the callers pass a non-Null pointer to an initialized buffer for `pInt`. In this case, `pInt` pointer cannot be NULL.
+If you use Visual Studio code analysis on this example, it validates that the callers pass a non-Null pointer to an initialized buffer for `pInt`. In this case, `pInt` pointer cannot be NULL.
 
 ### Example: The \_In\_opt\_ Annotation
 
@@ -172,7 +172,7 @@ void InOptCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that the function checks for NULL before it accesses the buffer.
+Visual Studio code analysis validates that the function checks for NULL before it accesses the buffer.
 
 ### Example: The \_Out\_ Annotation
 
@@ -198,7 +198,7 @@ void OutCaller()
 }
 ```
 
-Visual Studio Code Analysis Tool validates that the caller passes a non-NULL pointer to a buffer for `pInt` and that the buffer is initialized by the function before it returns.
+Visual Studio code analysis validates that the caller passes a non-NULL pointer to a buffer for `pInt` and that the buffer is initialized by the function before it returns.
 
 ### Example: The \_Out\_opt\_ Annotation
 
@@ -225,7 +225,7 @@ void OutOptCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that this function checks for NULL before `pInt` is dereferenced, and if `pInt` is not NULL, that the buffer is initialized by the function before it returns.
+Visual Studio code analysis validates that this function checks for NULL before `pInt` is dereferenced, and if `pInt` is not NULL, that the buffer is initialized by the function before it returns.
 
 ### Example: The \_Inout\_ Annotation
 
@@ -256,7 +256,7 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that callers pass a non-NULL pointer to an initialized buffer for `pInt`, and that, before return, `pInt` is still non-NULL and the buffer is initialized.
+Visual Studio code analysis validates that callers pass a non-NULL pointer to an initialized buffer for `pInt`, and that, before return, `pInt` is still non-NULL and the buffer is initialized.
 
 ### Example: The \_Inout\_opt\_ Annotation
 
@@ -285,7 +285,7 @@ void InOutOptCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that this function checks for NULL before it accesses the buffer, and if `pInt` is not NULL, that the buffer is initialized by the function before it returns.
+Visual Studio code analysis validates that this function checks for NULL before it accesses the buffer, and if `pInt` is not NULL, that the buffer is initialized by the function before it returns.
 
 ### Example: The \_Outptr\_ Annotation
 
@@ -315,7 +315,7 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that the caller passes a non-NULL pointer for `*pInt`, and that the buffer is initialized by the function before it returns.
+Visual Studio code analysis validates that the caller passes a non-NULL pointer for `*pInt`, and that the buffer is initialized by the function before it returns.
 
 ### Example: The \_Outptr\_opt\_ Annotation
 
@@ -347,7 +347,7 @@ void OutPtrOptCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that this function checks for NULL before `*pInt` is dereferenced, and that the buffer is initialized by the function before it returns.
+Visual Studio code analysis validates that this function checks for NULL before `*pInt` is dereferenced, and that the buffer is initialized by the function before it returns.
 
 ### Example: The \_Success\_ Annotation in Combination with \_Out\_
 
@@ -366,7 +366,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 }
 ```
 
-The `_Out_` annotation causes Visual Studio Code Analysis to validate that the caller passes a non-NULL pointer to a buffer for `pInt`, and that the buffer is initialized by the function before it returns.
+The `_Out_` annotation causes Visual Studio code analysis to validate that the caller passes a non-NULL pointer to a buffer for `pInt`, and that the buffer is initialized by the function before it returns.
 
 ## SAL Best Practice
 

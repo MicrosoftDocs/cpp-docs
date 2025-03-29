@@ -100,7 +100,7 @@ The Error List window lists the code analysis warnings found. The results are di
 
 For detailed information about the warning, including possible solutions to the issue, choose the warning ID in the Code column to display its corresponding online help article.
 
-Double-click a warning to move the cursor to the line of code that caused the warning in the Visual Studio code editor. Or, press Enter on the selected warning.
+Double-click a warning to move the cursor to the line of code that caused the warning in the code editor. Or, press Enter on the selected warning.
 
 After you understand the problem, you can resolve it in your code. Then, rerun code analysis to make sure that the warning no longer appears in the Error List.
 
