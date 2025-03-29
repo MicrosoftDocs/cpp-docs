@@ -317,7 +317,7 @@ Because of the way the code analysis rules get loaded within Visual Studio 2015,
 
 1. In the **NuGet Package Manager** window, search for Microsoft.CppCoreCheck.
 
-    ![Nuget Package Manager window showing the CppCoreCheck package.](../code-quality/media/cppcorecheck_nuget_window.png)
+    ![Nuget Package Manager window showing the CppCoreCheck package.](media/cppcorecheck_nuget_window.png)
 
 1. Select the Microsoft.CppCoreCheck package and then choose the **Install** button to add the rules to your project.
 

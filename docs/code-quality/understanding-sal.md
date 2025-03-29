@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Understanding SAL"
 title: Understanding SAL
+description: "Learn more about: Understanding SAL"
 ms.date: 11/04/2016
 ms.topic: "conceptual"
-ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 ---
 # Understanding SAL
 
@@ -384,7 +383,7 @@ Here are some guidelines:
 
 - Annotate value-range annotations so that Code Analysis can ensure buffer and pointer safety.
 
-- Annotate locking rules and locking side effects. For more information, see [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md).
+- Annotate locking rules and locking side effects. For more information, see [Annotating Locking Behavior](annotating-locking-behavior.md).
 
 - Annotate driver properties and other domain-specific properties.
 
@@ -392,10 +391,10 @@ Or you can annotate all parameters to make your intent clear throughout and to m
 
 ## See also
 
-- [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
-- [Annotating Function Parameters and Return Values](../code-quality/annotating-function-parameters-and-return-values.md)
-- [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)
-- [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)
-- [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md)
-- [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)
-- [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)
+- [Using SAL Annotations to Reduce C/C++ Code Defects](using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Annotating Function Parameters and Return Values](annotating-function-parameters-and-return-values.md)
+- [Annotating Function Behavior](annotating-function-behavior.md)
+- [Annotating Structs and Classes](annotating-structs-and-classes.md)
+- [Annotating Locking Behavior](annotating-locking-behavior.md)
+- [Specifying When and Where an Annotation Applies](specifying-when-and-where-an-annotation-applies.md)
+- [Best Practices and Examples](best-practices-and-examples-sal.md)
