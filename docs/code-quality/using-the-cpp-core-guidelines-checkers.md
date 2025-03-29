@@ -317,11 +317,11 @@ Because of the way the code analysis rules get loaded within Visual Studio 2015,
 
 1. In the **NuGet Package Manager** window, search for Microsoft.CppCoreCheck.
 
-    ![Nuget Package Manager window showing the CppCoreCheck package.](../code-quality/media/cppcorecheck_nuget_window.png)
+    ![Nuget Package Manager window showing the CppCoreCheck package.](media/cppcorecheck_nuget_window.png)
 
 1. Select the Microsoft.CppCoreCheck package and then choose the **Install** button to add the rules to your project.
 
-   The NuGet package adds an MSBuild *`.targets`* file to your project that is invoked when you enable code analysis on your project. The *`.targets`* file adds the C++ Core Check rules as another extension to the Visual Studio Code analysis tool. When the package is installed, you can use the Property Pages dialog to enable or disable the released and experimental rules.
+   The NuGet package adds an MSBuild *`.targets`* file to your project that is invoked when you enable code analysis on your project. The *`.targets`* file adds the C++ Core Check rules as another extension to the Visual Studio code analysis tool. When the package is installed, you can use the Property Pages dialog to enable or disable the released and experimental rules.
 
 ::: moniker-end
 
