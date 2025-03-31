@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler errors C2100 through C2199"
 title: "Compiler errors C2100 through C2199"
+description: "Learn more about: Compiler errors C2100 through C2199"
 ms.date: "04/21/2019"
 f1_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2136", "C2176", "C2187", "C2189"]
 helpviewer_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2136", "C2176", "C2187", "C2189"]
@@ -118,5 +118,5 @@ The articles in this section of the documentation explain a subset of the error 
 
 ## See also
 
-[C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2001 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[C/C++ Compiler and build tools errors and warnings](c-cpp-build-errors.md)\
+[Compiler errors C2001 - C3999, C7000 - C7999](compiler-errors-c2000-c3999.md)
