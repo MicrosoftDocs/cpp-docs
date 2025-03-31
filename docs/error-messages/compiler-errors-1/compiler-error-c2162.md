@@ -20,7 +20,4 @@ The following example generates C2162:
 // compile with: /c
 #define make_string1(s) #    // C2162
 #define make_string2(s) #s   // OK
-
-#define make_char1(c) #@    // C2162
-#define make_char2(c) #@c   // OK
 ```
