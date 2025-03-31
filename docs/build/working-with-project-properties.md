@@ -15,7 +15,7 @@ You can view and modify these properties by using *property pages*. To access th
 
 When you create a project, the system assigns values for various properties. The defaults vary somewhat depending on the kind of project and what options you choose in the app wizard. For example, an Active Template Library (ATL) project has properties related to Microsoft Interface Definition Language (MIDL) files, but these properties are absent in a basic console application. The default properties are shown in the Advanced pane in the **Property Pages** window:
 
-:::image type="content" source="media/visual-c---project-defaults.png" alt-text="Screenshot of the Visual Studio project properties dialog box with the Advanced pane selected." lightbox="media/visual-c---project-defaults.png":::
+:::image type="content" source="media/visual-c---project-defaults.png" alt-text="Screenshot of the Visual Studio project properties dialog box with the Advanced pane selected. Properties such as Use of MFC, Character Set, and so on are highlighted." lightbox="media/visual-c---project-defaults.png":::
 
 ## Apply properties to build configurations and target platforms
 
