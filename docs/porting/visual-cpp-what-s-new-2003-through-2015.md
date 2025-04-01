@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Visual C++ What's New 2003 through 2015"
 title: "Visual C++ What's New 2003 through 2015"
+description: "Learn more about: Visual C++ What's New 2003 through 2015"
 ms.date: "07/02/2019"
-ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
 ---
 # Visual C++ What's New 2003 through 2015
 
@@ -2206,7 +2205,7 @@ The compiler has breaking changes in this release.
 - In each function topic, a section on .NET Framework equivalents has been added.
 - Several string functions now have the option of truncating strings rather than failing when output buffers are too small; see **_TRUNCATE**.
 - `_set_se_translator` now requires the use of the `/EHa` compiler option.
-- `fpos_t` is now **`__int64`** under `/Za` (for C code) and when __STDC__ is set manually (for C++ code). It used to be a **`struct`**.
+- `fpos_t` is now **`__int64`** under `/Za` (for C code) and when `__STDC__` is set manually (for C++ code). It used to be a **`struct`**.
 - _CRT_DISABLE_PERFCRIT_LOCKS can improve the I/O performance of single-threaded programs.
 - POSIX names have been deprecated in favor of ISO C++ conformant names (for example, use `_getch` rather than `getch`).
 - New link options .obj files are available for pure mode
