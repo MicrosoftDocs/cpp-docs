@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Understanding SAL"
 title: Understanding SAL
+description: "Learn more about: Understanding SAL"
 ms.date: 11/04/2016
 ms.topic: "conceptual"
-ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 ---
 # Understanding SAL
 
@@ -94,9 +93,9 @@ These annotations help identify possible uninitialized values and invalid null p
 
 This section shows code examples for the basic SAL annotations.
 
-### Using the Visual Studio Code Analysis Tool to Find Defects
+### Using the Visual Studio code analysis tool to find defects
 
-In the examples, the Visual Studio Code Analysis tool is used together with SAL annotations to find code defects. Here's how to do that.
+In the examples, the Visual Studio code analysis tool is used together with SAL annotations to find code defects. Here's how to do that.
 
 #### To use Visual Studio code analysis tools and SAL
 
@@ -145,7 +144,7 @@ void BadInCaller()
 }
 ```
 
-If you use Visual Studio Code Analysis on this example, it validates that the callers pass a non-Null pointer to an initialized buffer for `pInt`. In this case, `pInt` pointer cannot be NULL.
+If you use Visual Studio code analysis on this example, it validates that the callers pass a non-Null pointer to an initialized buffer for `pInt`. In this case, `pInt` pointer cannot be NULL.
 
 ### Example: The \_In\_opt\_ Annotation
 
@@ -172,7 +171,7 @@ void InOptCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that the function checks for NULL before it accesses the buffer.
+Visual Studio code analysis validates that the function checks for NULL before it accesses the buffer.
 
 ### Example: The \_Out\_ Annotation
 
@@ -198,7 +197,7 @@ void OutCaller()
 }
 ```
 
-Visual Studio Code Analysis Tool validates that the caller passes a non-NULL pointer to a buffer for `pInt` and that the buffer is initialized by the function before it returns.
+Visual Studio code analysis validates that the caller passes a non-NULL pointer to a buffer for `pInt` and that the buffer is initialized by the function before it returns.
 
 ### Example: The \_Out\_opt\_ Annotation
 
@@ -225,7 +224,7 @@ void OutOptCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that this function checks for NULL before `pInt` is dereferenced, and if `pInt` is not NULL, that the buffer is initialized by the function before it returns.
+Visual Studio code analysis validates that this function checks for NULL before `pInt` is dereferenced, and if `pInt` is not NULL, that the buffer is initialized by the function before it returns.
 
 ### Example: The \_Inout\_ Annotation
 
@@ -256,7 +255,7 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that callers pass a non-NULL pointer to an initialized buffer for `pInt`, and that, before return, `pInt` is still non-NULL and the buffer is initialized.
+Visual Studio code analysis validates that callers pass a non-NULL pointer to an initialized buffer for `pInt`, and that, before return, `pInt` is still non-NULL and the buffer is initialized.
 
 ### Example: The \_Inout\_opt\_ Annotation
 
@@ -285,7 +284,7 @@ void InOutOptCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that this function checks for NULL before it accesses the buffer, and if `pInt` is not NULL, that the buffer is initialized by the function before it returns.
+Visual Studio code analysis validates that this function checks for NULL before it accesses the buffer, and if `pInt` is not NULL, that the buffer is initialized by the function before it returns.
 
 ### Example: The \_Outptr\_ Annotation
 
@@ -315,7 +314,7 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that the caller passes a non-NULL pointer for `*pInt`, and that the buffer is initialized by the function before it returns.
+Visual Studio code analysis validates that the caller passes a non-NULL pointer for `*pInt`, and that the buffer is initialized by the function before it returns.
 
 ### Example: The \_Outptr\_opt\_ Annotation
 
@@ -347,7 +346,7 @@ void OutPtrOptCaller()
 }
 ```
 
-Visual Studio Code Analysis validates that this function checks for NULL before `*pInt` is dereferenced, and that the buffer is initialized by the function before it returns.
+Visual Studio code analysis validates that this function checks for NULL before `*pInt` is dereferenced, and that the buffer is initialized by the function before it returns.
 
 ### Example: The \_Success\_ Annotation in Combination with \_Out\_
 
@@ -366,7 +365,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 }
 ```
 
-The `_Out_` annotation causes Visual Studio Code Analysis to validate that the caller passes a non-NULL pointer to a buffer for `pInt`, and that the buffer is initialized by the function before it returns.
+The `_Out_` annotation causes Visual Studio code analysis to validate that the caller passes a non-NULL pointer to a buffer for `pInt`, and that the buffer is initialized by the function before it returns.
 
 ## SAL Best Practice
 
@@ -384,7 +383,7 @@ Here are some guidelines:
 
 - Annotate value-range annotations so that Code Analysis can ensure buffer and pointer safety.
 
-- Annotate locking rules and locking side effects. For more information, see [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md).
+- Annotate locking rules and locking side effects. For more information, see [Annotating Locking Behavior](annotating-locking-behavior.md).
 
 - Annotate driver properties and other domain-specific properties.
 
@@ -392,10 +391,10 @@ Or you can annotate all parameters to make your intent clear throughout and to m
 
 ## See also
 
-- [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
-- [Annotating Function Parameters and Return Values](../code-quality/annotating-function-parameters-and-return-values.md)
-- [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)
-- [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)
-- [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md)
-- [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)
-- [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)
+- [Using SAL Annotations to Reduce C/C++ Code Defects](using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Annotating Function Parameters and Return Values](annotating-function-parameters-and-return-values.md)
+- [Annotating Function Behavior](annotating-function-behavior.md)
+- [Annotating Structs and Classes](annotating-structs-and-classes.md)
+- [Annotating Locking Behavior](annotating-locking-behavior.md)
+- [Specifying When and Where an Annotation Applies](specifying-when-and-where-an-annotation-applies.md)
+- [Best Practices and Examples](best-practices-and-examples-sal.md)

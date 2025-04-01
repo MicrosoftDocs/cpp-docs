@@ -1,5 +1,5 @@
 items: 
-- name: Embedded development with Visual Studio and Visual Studio code
+- name: Embedded development with Visual Studio and Visual Studio Code
   href: ./index.yml
 - name: Download and install the Embedded Tools
   href: download-and-install-the-embedded-tooling.md
