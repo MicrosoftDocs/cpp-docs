@@ -33,6 +33,9 @@ Builds the deoptimized output after building the optimized output instead of in 
 
 This preview flag, available starting with Visual Studio 2022 Version 17.14 Preview 2, applies only to x64 projects.
 
+IncrediBuild 10.24 supports C++ Dynamic Debugging builds.\
+FastBuild v1.15 supports C++ Dynamic Debugging builds.
+
 ### Set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
