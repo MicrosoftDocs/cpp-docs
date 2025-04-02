@@ -1,7 +1,7 @@
 ---
 title: "/dynamicdeopt (Enable C++ Dynamic Debugging (Preview))"
 description: "Enable the Microsoft C++ compiler option /dynamicdeopt to use C++ Dynamic Debugging."
-ms.date: 03/20/2025
+ms.date: 04/01/2025
 f1_keywords: ["/dynamicdeopt"]
 helpviewer_keywords: ["-dynamicdeopt compiler option [C++]", "dynamicdeopt compiler option [C++]"]
 ---
@@ -40,6 +40,9 @@ Compiling with `/dynamicdeopt` generates other binaries that are used for debugg
 `/DEBUG` or `/DEBUG:FULL`. If you don't specify `/DEBUG`, or if you specify `/DEBUG:FASTLINK`, the linker gives a fatal error.
 If you specify `/INCREMENTAL`, the compiler generates a warning and automatically turns off `/INCREMENTAL`.
 If you specify `/OPT:ICF`, the compiler generates a warning that the debug experience isn't as good. This is because ICF can cause functions to be removed from the alt file, which means you can't step into them.
+
+IncrediBuild 10.24 supports C++ Dynamic Debugging builds.\
+FastBuild v1.15 supports C++ Dynamic Debugging builds.
 
 `/dynamicdeopt` is incompatible with edit-and-continue and the following compiler switches:
 
