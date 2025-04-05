@@ -83,10 +83,10 @@ An MSBuild project file is an XML file that contains a project root element (`<P
 
 ### To create the MSBuild project file
 
-1. Use a text editor to create a project file that is named *`myproject.vcxproj`*, and then add the root `<Project>` element shown here. (Use `ToolsVersion="14.0"` if you're using Visual Studio 2015, `ToolsVersion="15.0"` if you're using Visual Studio 2017, or `ToolsVersion="16.0"` if you're using Visual Studio 2019.)
+1. Use a text editor to create a project file that is named *`myproject.vcxproj`*, and then add the root `<Project>` element shown here. (Use `ToolsVersion="14.0"` if you're using Visual Studio 2015, `ToolsVersion="15.0"` if you're using Visual Studio 2017, `ToolsVersion="16.0"` if you're using Visual Studio 2019, or `ToolsVersion="17.0"` if you're using Visual Studio 2022.)
 
     ```xml
-    <Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     </Project>
     ```
 
@@ -155,10 +155,10 @@ An MSBuild project file is an XML file that contains a project root element (`<P
 
 ### Complete Project File
 
-This code shows the complete project file that you created in the previous procedure. (Use `ToolsVersion="15.0"` for Visual Studio 2017, or `ToolsVersion="14.0"` for Visual Studio 2015.)
+This code shows the complete project file that you created in the previous procedure. (Use `ToolsVersion=16.0 for Visual Studio 2019, ToolsVersion="15.0"` for Visual Studio 2017, or `ToolsVersion="14.0"` for Visual Studio 2015.)
 
 ```xml
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
