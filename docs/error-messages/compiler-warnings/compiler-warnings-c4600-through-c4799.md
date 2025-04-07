@@ -170,7 +170,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1 and level 3) C4793](compiler-warning-level-1-and-3-c4793.md)|'*function*': function compiled as native:<br> *reason*|
 |[Compiler warning (level 1) C4794](compiler-warning-level-1-c4794.md)|segment of thread local storage variable '%s' changed from '%s' to '%s'|
 |Compiler warning C4798|native code generated for p-code function 'name' with exception handler or unwind semantics|
-|[Compiler warning (level 1) C4799](compiler-warning-level-1-c4799.md)|function 'function' has no `EMMS` instruction|
+|[Compiler warning (level 1) C4799](compiler-warning-level-1-c4799.md)|function '*function*' has no EMMS instruction|
 
 ## See also
 

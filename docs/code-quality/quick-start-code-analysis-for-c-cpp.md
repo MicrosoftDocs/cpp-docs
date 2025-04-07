@@ -19,7 +19,7 @@ You can improve the quality of your application by running code analysis regular
 
 1. To run code analysis every time the project is built using the selected configuration, select the **Enable Code Analysis on Build** check box. You can also run code analysis manually by opening the **Analyze** menu and then choosing **Run Code Analysis on** *ProjectName* or **Run Code Analysis on File**.
 
-1. Choose the [rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md) that you want to use or create a [custom rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md#to-create-a-rule-set-in-a-text-editor). If using LLVM/clang-cl, see [Using Clang-Tidy in Visual Studio](../code-quality/clang-tidy.md) to configure Clang-Tidy analysis options.
+1. Choose the [rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md) that you want to use or create a [custom rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md#to-create-a-rule-set-in-a-text-editor). If using LLVM/clang-cl, see [Using Clang-Tidy in Visual Studio](clang-tidy.md) to configure Clang-Tidy analysis options.
 
 ### Standard C/C++ rule sets
 
@@ -100,7 +100,7 @@ The Error List window lists the code analysis warnings found. The results are di
 
 For detailed information about the warning, including possible solutions to the issue, choose the warning ID in the Code column to display its corresponding online help article.
 
-Double-click a warning to move the cursor to the line of code that caused the warning in the Visual Studio code editor. Or, press Enter on the selected warning.
+Double-click a warning to move the cursor to the line of code that caused the warning in the code editor. Or, press Enter on the selected warning.
 
 After you understand the problem, you can resolve it in your code. Then, rerun code analysis to make sure that the warning no longer appears in the Error List.
 
@@ -128,4 +128,4 @@ You can search long lists of warning messages and you can filter warnings in mul
 
 ## See also
 
-- [Code analysis for C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)
+- [Code analysis for C/C++](code-analysis-for-c-cpp-overview.md)

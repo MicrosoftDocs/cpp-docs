@@ -140,7 +140,7 @@ This table lists compiler options that might trigger an inconsistency warning wh
 
 | Option | Name | Rule |
 |--|--|--|
-| **`/D `**| Define constants and macros | Must be the same between the compilation that created the precompiled header and the current compilation. The state of defined constants isn't checked. However, unpredictable results can occur if your files depend on the values of the changed constants. |
+| **`/D`**| Define constants and macros | Must be the same between the compilation that created the precompiled header and the current compilation. The state of defined constants isn't checked. However, unpredictable results can occur if your files depend on the values of the changed constants. |
 | **`/E`** or **`/EP`** | Copy preprocessor output to standard output | Precompiled headers don't work with the **`/E`** or **`/EP`** option. |
 | **`/Fr`** or **`/FR`** | Generate Microsoft Source Browser information | For the **`/Fr`** and **`/FR`** options to be valid with the **`/Yu`** option, they must also have been in effect when the precompiled header was created. Subsequent compilations that use the precompiled header also generate Source Browser information. Browser information is placed in a single *`.sbr`* file and is referenced by other files in the same manner as CodeView information. You can't override the placement of Source Browser information. |
 | **`/GA`**, **`/GD`**, **`/GE`**, **`/Gw`**, or **`/GW`** | Windows protocol options | Must be the same between the compilation that created the precompiled header and the current compilation. The compiler emits a warning if these options differ. |
@@ -161,7 +161,6 @@ The code base of a software project is often contained in multiple C or C++ sour
 
 The figure uses three diagrammatic devices to show the flow of the build process. Named rectangles represent each file or macro; the three macros represent one or more files. Shaded areas represent each compile or link action. Arrows show which files and macros are combined during the compilation or linking process.
 
-![ The diagram is described in the text following the diagram.]()\
 Structure of a makefile that uses a precompiled header file:
 
 :::image type="complex" source="media/vc30ow1.gif" alt-text="Diagram showing example inputs and outputs of a makefile that uses a precompiled header file.":::

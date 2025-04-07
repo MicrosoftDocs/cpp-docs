@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: Compiler Error C3883"
 title: "Compiler Error C3883"
+description: "Learn more about: Compiler Error C3883"
 ms.date: "11/04/2016"
 f1_keywords: ["C3883"]
 helpviewer_keywords: ["C3883"]
-ms.assetid: cdd1c1f4-f268-4469-9c62-d52303114b0c
 ---
 # Compiler Error C3883
 
-'var' : an initonly static data member must be initialized
+> '*member*': an initonly static data member must be initialized
 
 A variable marked with [initonly](../../dotnet/initonly-cpp-cli.md) was not initialized correctly.
 

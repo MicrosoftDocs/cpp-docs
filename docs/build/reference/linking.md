@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Linking"
 title: "MSVC linker reference"
-ms.date: "12/10/2018"
+ms.date: 03/27/2025
 ---
 # Linking
 
@@ -38,6 +38,9 @@ On the command line, an option consists of an option specifier, either a dash (`
 
 To pass a file to the linker, specify the filename on the command line after the `link.exe` command. You can specify an absolute or relative path with the filename, and you can use wildcards in the filename. If you omit the dot (`.`) and filename extension, the linker assumes an extension of `.obj` to find the file. The linker doesn't use filename extensions or the lack of them to make assumptions about the contents of files. It determines the type of file by examining it, and processes it accordingly.
 
+> [!NOTE]
+> Various linker flags take a filename. Whether you specify a relative path or an absolute path, if the fully-qualified filename exceeds `MAX_PATH` (260 characters), the linker may fail--particularly while searching for libraries. If you encounter this problem, try using a shorter path.
+
 The linker returns zero for success (no errors). Otherwise, it returns the error number that stopped the link. For example, if the linker generates `LNK1104`, the linker returns 1104. Accordingly, the lowest error number returned on an error by the linker is 1000. A return value of 128 represents a configuration problem with either the operating system or a .config file; the loader didn't load either `link.exe` or `c2.dll`.
 
 ## Linker command files
@@ -46,7 +49,7 @@ You can pass command-line arguments to `link.exe` in the form of a command file.
 
 > `link @commandfile`
 
-The *`commandfile`* is the name of a text file. No space or tab is allowed between the at sign (**\@**) and the filename. There's no default extension; you must specify the full filename, including any extension. Wildcards can't be used. You can specify an absolute or relative path with the filename. The linker doesn't use an environment variable to search for the file.
+The *`commandfile`* is the name of a text file. No space or tab is allowed between the at sign (**\@**) and the filename. There's no default extension; you must specify the full filename, including any extension. Wildcards can't be used. You can specify an absolute or relative path with the filename. Must not exceed `MAX_PATH` (260 characters). The linker doesn't use an environment variable to search for the file.
 
 In the command file, arguments are separated by spaces or tabs (as on the command line) and by newline characters.
 

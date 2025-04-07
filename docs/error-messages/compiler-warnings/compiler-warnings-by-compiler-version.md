@@ -953,7 +953,7 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 | [C4792](compiler-warning-level-3-c4792.md) | `function 'function' declared using sysimport and referenced from native code; import library required to link` |
 | [C4794](compiler-warning-level-1-c4794.md) | `segment of thread local storage variable 'name' changed from 'segment' to 'segment'` |
 | C4798 | `native code generated for p-code function 'name' with exception handler or unwind semantics` |
-| [C4799](compiler-warning-level-1-c4799.md) | `function 'name' has no EMMS instruction` |
+| [C4799](compiler-warning-level-1-c4799.md) | `function 'function' has no EMMS instruction` |
 | [C4803](compiler-warning-level-1-c4803.md) | `'declaration': the raise method has a different storage class from that of the event, 'declaration'` |
 | [C4810](compiler-warning-level-1-c4810.md) | `value of pragma pack(show) == number` |
 | [C4811](compiler-warning-level-1-c4811.md) | `value of pragma conform(forScope, show) == value` |
