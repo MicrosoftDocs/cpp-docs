@@ -21,6 +21,7 @@ Windows also uses these terms:
 - **ARM** – refers to the 32-bit ARM architecture (AArch32), sometimes referred to as WoA (Windows on ARM).
 - **ARM32** – same as **ARM**; used in this document for clarity.
 - **ARM64** – refers to the 64-bit ARM architecture (AArch64). There's no such thing as WoA64.
+- **ARM64EC** - code built as ARM64EC is interoperable with x64 code running under emulation in the same process. The Arm64EC code in the process runs with native performance, while any x64 code runs using emulation.
 
 Finally, when referring to data types, the following definitions from ARM are referenced:
 
@@ -30,7 +31,7 @@ Finally, when referring to data types, the following definitions from ARM are re
 
 ## Base requirements
 
-The ARM64 version of Windows presupposes that it's running on an ARMv8 or later architecture always. Both floating-point and NEON support are presumed to be present in hardware.
+The ARM64 version of Windows always presupposes that it's running on an ARMv8 or later architecture. Both floating-point and NEON support are presumed to be present in hardware.
 
 The ARMv8 specification describes new optional crypto and CRC helper opcodes for both AArch32 and AArch64. Support for them is currently optional, but recommended. To take advantage of these opcodes, apps should first make runtime checks for their existence.
 
@@ -122,7 +123,9 @@ You can determine if an ARM CPU supports exceptions by writing a value that enab
 
 For ARM CPUs that support IEEE floating-point exceptions, the behavior on Windows is as follows:
 
-- **Windows ARM64 ABI**: For processor variants that support hardware floating-point exceptions, Windows delivers them.
+- **Arm32**: Windows doesn't support floating-point exceptions.
+- **ARM64**: For processor variants that support hardware floating-point exceptions, Windows delivers them.
+- **Arm64EC**: For processor variants that support hardware floating-point exceptions, Windows catches these exceptions and disables them in the FPCR register. This ensures consistent behavior across different processor variants.
 
 - The [`_set_controlfp`](/cpp/c-runtime-library/reference/controlfp-s) function on ARM platforms correctly changes the FPCR register when unmasking floating-point exceptions. However, instead of raising an unmasked exception, Windows resets the FPCR register to its defaults every time an FP exception is about to be raised.
 
