@@ -119,7 +119,7 @@ Like AArch32, the AArch64 specification provides three system-controlled "thread
 
 ## Floating-point exceptions
 
-You can determine if an ARM CPU supports exceptions by writing a value that enables exceptions to the FPCR register and then reading it back. If the CPU supports floating-point exceptions, the bits corresponding to the supported exceptions remain set, while the bits corresponding to unsupported exceptions are reset by the CPU.
+To determine if an ARM CPU supports exceptions, write a value that enables exceptions to the FPCR register and then read it back. If the CPU supports floating-point exceptions, the bits corresponding to supported exceptions remain set, while the CPU resets the bits for unsupported exceptions.
 
 On ARM64, Windows delivers exceptions for processors that support hardware floating-point exceptions.
 
@@ -153,7 +153,7 @@ For each argument in the list, the first matching rule from the following list i
 
 ### Stage C – Assignment of arguments to registers and stack
 
-For each argument in the list, the following rules are applied in turn until the argument has been allocated. When an argument is assigned to a register, any unused bits in the register have unspecified value. If an argument is assigned to a stack slot, any unused padding bytes have unspecified value.
+For each argument in the list, the following rules are applied in turn until the argument is allocated. When an argument is assigned to a register, any unused bits in the register have unspecified value. If an argument is assigned to a stack slot, any unused padding bytes have unspecified value.
 
 1. If the argument is a Half-, Single-, Double- or Quad-precision Floating-point or Short Vector Type, and the NSRN is less than 8, then the argument is allocated to the least significant bits of register v\[NSRN]. The NSRN is incremented by one. The argument has now been allocated.
 
@@ -230,7 +230,7 @@ All other types use this convention:
 
 Following the ABI put forth by ARM, the stack must always remain 16-byte aligned. AArch64 contains a hardware feature that generates stack alignment faults whenever the SP isn't 16-byte aligned and an SP-relative load or store is done. Windows always runs with this feature enabled.
 
-Functions that allocate 4k or more worth of stack must ensure that each page prior to the final page is touched in order. This action ensures no code can "leap over" the guard pages that Windows uses to expand the stack. Typically the touching is done by the `__chkstk` helper, which has a custom calling convention that passes the total stack allocation divided by 16 in x15.
+Functions that allocate 4k or more worth of stack must ensure that each page before the final page is touched in order. This action ensures no code can "leap over" the guard pages that Windows uses to expand the stack. Typically the touching is done by the `__chkstk` helper, which has a custom calling convention that passes the total stack allocation divided by 16 in x15.
 
 ## Red zone
 

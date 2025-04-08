@@ -77,7 +77,7 @@ _controlfp_s(&current_word, _DN_FLUSH, _MCW_DN);
 
 This function is ignored when you use [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile because the common language runtime (CLR) only supports the default floating-point precision.
 
-On x64, only the SSE2 control word that's stored in the MXCSR register is affected. Changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion and the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md).
+On x64, only the SSE2 control word stored in the MXCSR register is affected. Changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion and the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md).
 
 On x86, **`_controlfp_s`** affects the control words for both the x87 and the SSE2, if present. It's possible for the two control words to be inconsistent with each other (because of a previous call to [`__control87_2`](control87-controlfp-control87-2.md), for example); if there's an inconsistency between the two control words, **`_controlfp_s`** sets the `EM_AMBIGUOUS` flag in *`currentControl`*. It's a warning that the returned control word might not represent the state of both floating-point control words accurately.
 
