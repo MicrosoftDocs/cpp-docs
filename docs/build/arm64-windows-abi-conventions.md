@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Overview of ARM64 ABI conventions"
 title: "Overview of ARM64 ABI conventions"
-ms.date: 03/25/2025
+ms.date: 04/08/2025
 ---
 # Overview of ARM64 ABI conventions
 
@@ -19,9 +19,9 @@ With the introduction of 64-bit support, ARM defined several terms:
 Windows also uses these terms:
 
 - **ARM** – refers to the 32-bit ARM architecture (AArch32), sometimes referred to as WoA (Windows on ARM).
-- **ARM32** – same as **ARM**; used in this document for clarity.
+- **ARM32** – same as **ARM**. Used in this document for clarity.
 - **ARM64** – refers to the 64-bit ARM architecture (AArch64). There's no such thing as WoA64.
-- **ARM64EC** - code built as ARM64EC is interoperable with x64 code running under emulation in the same process. The Arm64EC code in the process runs with native performance, while any x64 code runs using emulation.
+- **ARM64EC** - code built as ARM64EC can interoperate with x64 code running under emulation in the same process. The Arm64EC code in the process runs with native performance, while the x64 code runs using emulation.
 
 Finally, when referring to data types, the following definitions from ARM are referenced:
 
@@ -121,7 +121,7 @@ Like AArch32, the AArch64 specification provides three system-controlled "thread
 
 You can determine if an ARM CPU supports exceptions by writing a value that enables exceptions to the FPCR register and then reading it back. If the CPU supports floating-point exceptions, the bits corresponding to the supported exceptions remain set, while the bits corresponding to unsupported exceptions are reset by the CPU.
 
-On ARM64, Windows delivers exceptions for those processors that support hardware floating-point exceptions.
+On ARM64, Windows delivers exceptions for processors that support hardware floating-point exceptions.
 
 - The [`_set_controlfp`](/cpp/c-runtime-library/reference/controlfp-s) function on ARM platforms correctly changes the FPCR register when unmasking floating-point exceptions. However, instead of raising an unmasked exception, Windows resets the FPCR register to its defaults every time an FP exception is about to be raised.
 
