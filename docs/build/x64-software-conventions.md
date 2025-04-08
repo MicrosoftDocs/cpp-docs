@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: x64 ABI conventions"
 title: "x64 ABI conventions"
-ms.date: 04/07/2025
+ms.date: 03/28/2025
 helpviewer_keywords: ["x64 coding conventions", "x64 abi", "Visual C++, x64 calling conventions"]
 ---
 # Overview of x64 ABI conventions

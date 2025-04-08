@@ -92,6 +92,12 @@ Special helper routines like `__chkstk_arm64ec` use custom calling conventions a
 
 ARM64EC follows the same struct packing rules used for x64 to ensure interoperability between ARM64EC code and x64 code. For more information and examples of x64 struct packing, see [Overview of x64 ABI conventions](x64-software-conventions.md).
 
+## Floating-point exceptions
+
+You can determine if an ARM CPU supports exceptions by writing a value that enables exceptions to the FPCR register and then reading it back. If the CPU supports floating-point exceptions, the bits corresponding to the supported exceptions remain set, while the bits corresponding to unsupported exceptions are reset by the CPU.
+
+For ARM64EC, Windows catches processor floating-point exceptions and disables them in the FPCR register. This ensures consistent behavior across different processor variants.
+
 ## Emulation helper ABI routines
 
 ARM64EC code and [thunks](#thunks) use emulation helper routines to transition between x64 and ARM64EC functions.

@@ -121,11 +121,7 @@ Like AArch32, the AArch64 specification provides three system-controlled "thread
 
 You can determine if an ARM CPU supports exceptions by writing a value that enables exceptions to the FPCR register and then reading it back. If the CPU supports floating-point exceptions, the bits corresponding to the supported exceptions remain set, while the bits corresponding to unsupported exceptions are reset by the CPU.
 
-For ARM CPUs that support IEEE floating-point exceptions, the behavior on Windows is as follows:
-
-- **ARM32**: Windows doesn't support floating-point exceptions.
-- **ARM64**: For processor variants that support hardware floating-point exceptions, Windows delivers them.
-- **ARM64EC**: For processor variants that support hardware floating-point exceptions, Windows catches these exceptions and disables them in the FPCR register. This ensures consistent behavior across different processor variants.
+On ARM64, Windows delivers exceptions for those processors that support hardware floating-point exceptions.
 
 - The [`_set_controlfp`](/cpp/c-runtime-library/reference/controlfp-s) function on ARM platforms correctly changes the FPCR register when unmasking floating-point exceptions. However, instead of raising an unmasked exception, Windows resets the FPCR register to its defaults every time an FP exception is about to be raised.
 
