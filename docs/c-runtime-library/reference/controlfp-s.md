@@ -89,7 +89,8 @@ By default, this function's global state is scoped to the application. To change
 
 - Changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 - On ARM32 (discontinued), Windows doesn't support FP exceptions.
-- On ARM64, unmasking the whole `_MCW_EM` or any bits from it (`_EM_INEXACT`, `_EM_UNDERFLOW`, `_EM_OVERFLOW`, `_EM_ZERODIVIDE`, and `_EM_INVALID`) correctly change the FPCR register. Floating point exceptions raised by standard math functions, like Invalid operation from std::acos, are exempt from this behavior and can be ignored or raised properly depending on the FPCR register. For more information, see [Overview of ARM32 ABI Conventions](../../build/overview-of-arm-abi-conventions.md#floating-point-exceptions).
+- On ARM64, unmasking the whole `_MCW_EM` or any bits from it (`_EM_INEXACT`, `_EM_UNDERFLOW`, `_EM_OVERFLOW`, `_EM_ZERODIVIDE`, and `_EM_INVALID`) correctly change the FPCR register. Floating point exceptions raised by standard math functions, like Invalid operation from `std::acos`, are exempt from this behavior and can be ignored or raised properly depending on the FPCR register. For more information, see [Overview of ARM32 ABI Conventions](../../build/overview-of-arm-abi-conventions.md#floating-point-exceptions).
+- On ARM64EC, Windows catches processor floating-point exceptions and disables them in the FPCR register. This ensures consistent behavior across different processor variants.
 
 ### Mask constants and values
 

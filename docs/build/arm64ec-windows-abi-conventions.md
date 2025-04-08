@@ -96,7 +96,7 @@ ARM64EC follows the same struct packing rules used for x64 to ensure interoperab
 
 You can determine if an ARM CPU supports exceptions by writing a value that enables exceptions to the FPCR register and then reading it back. If the CPU supports floating-point exceptions, the bits corresponding to the supported exceptions remain set, while the bits corresponding to unsupported exceptions are reset by the CPU.
 
-For ARM64EC, Windows catches processor floating-point exceptions and disables them in the FPCR register. This ensures consistent behavior across different processor variants.
+On ARM64EC, Windows catches processor floating-point exceptions and disables them in the FPCR register. This ensures consistent behavior across different processor variants.
 
 ## Emulation helper ABI routines
 
