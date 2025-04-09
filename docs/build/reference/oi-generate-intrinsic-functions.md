@@ -4,7 +4,6 @@ title: "/Oi (Generate Intrinsic Functions)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableIntrinsicFunctions", "/oi", "VC.Project.VCCLWCECompilerTool.EnableIntrinsicFunctions"]
 helpviewer_keywords: ["Oi compiler option [C++]", "intrinsic functions, generate", "/Oi compiler option [C++]", "-Oi compiler option [C++]", "generate intrinsic functions compiler option [C++]"]
-ms.assetid: fa4a3bf6-0ed8-481b-91c0-add7636132b4
 ---
 # /Oi (Generate Intrinsic Functions)
 
@@ -18,11 +17,12 @@ Replaces some function calls with intrinsic or otherwise special forms of the fu
 
 ## Remarks
 
-Programs that use intrinsic functions are faster because they do not have the overhead of function calls, but may be larger because of the additional code created.
+Programs that use intrinsic functions are faster because they do not have the overhead of function calls but may be larger because of the additional code created.
 
 See [intrinsic](../../preprocessor/intrinsic.md) for more information on which functions have intrinsic forms.
 
-**/Oi** is only a request to the compiler to replace some function calls with intrinsics; the compiler may call the function (and not replace the function call with an intrinsic) if it will result in better performance.
+**/Oi** is only a request to the compiler to replace some function calls with intrinsics. The compiler may call the function (and not replace the function call with an intrinsic) if it will result in better performance.\
+**/Oi-** turns off this behavior, which may be useful if `/Oi` has been specified elsewhere and you want to override it.
 
 **x86 Specific**
 
@@ -37,9 +37,7 @@ You also use [intrinsic](../../preprocessor/intrinsic.md) to create intrinsic fu
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
 1. Select the **Configuration Properties** > **C/C++** > **Optimization** property page.
-
 1. Modify the **Enable Intrinsic Functions** property.
 
 ### To set this compiler option programmatically
@@ -48,7 +46,7 @@ You also use [intrinsic](../../preprocessor/intrinsic.md) to create intrinsic fu
 
 ## See also
 
-[/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
-[MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[/O Options (Optimize Code)](o-options-optimize-code.md)\
+[MSVC Compiler Options](compiler-options.md)\
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)\
 [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)
