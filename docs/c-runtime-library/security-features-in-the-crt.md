@@ -53,7 +53,7 @@ Some of the security features include:
 
   You must pass the buffer size to any secure function that writes to a buffer. The secure versions validate that the buffer is large enough before writing to it. The validation helps avoid dangerous buffer overrun errors that could allow malicious code to execute. These functions usually return an `errno` error code and invoke the invalid parameter handler if the size of the buffer is too small. Functions that read from input buffers, such as `gets`, have secure versions that require you to specify a maximum size.
 
-  The debug versions of *some* security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This fill character helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use **`_CrtSetDebugFillThreshold`** to disable buffer-filling for buffers larger than the *`newThreshold`* threshold. A *`newThreshold`* value of 0 disables it for all buffers.  See [`_CrtSetDebugFillThreshold`](./reference/crtsetdebugfillthreshold.md) for more information and a list of functions that have this behavior.
+  The debug versions of *some* security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This fill character helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use **`_CrtSetDebugFillThreshold`** to disable buffer-filling. See [`_CrtSetDebugFillThreshold`](./reference/crtsetdebugfillthreshold.md) for more information, and a list of functions that have this behavior.
 
 - **Null termination**
 
