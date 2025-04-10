@@ -127,7 +127,7 @@ For the following table:
 | `buffer == NULL` and `sizeOfBuffer == 0` and `count == 0` | No data is written. | 0 | N/A | No |
 | `buffer == NULL` and either `sizeOfBuffer != 0` or `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value.| -1 | `EINVAL` (22) | Yes |
 | `buffer != NULL` and `sizeOfBuffer == 0` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
-| `buffer != NULL` and `sizeOfBuffer != 0` and `count == 0` | No data is written. | -1 | N/A | No |
+| `buffer != NULL` and `sizeOfBuffer != 0` and `count == 0` | The buffer is NULL terminated. In DEBUG builds, the remaining `sizeOfBuffer` bytes are filled with 'xFE' as described in [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).  | -1 | N/A | No |
 | `count == 0`| Doesn't write any data and returns the number of characters that would have been written, not including the terminating `NULL`. | The number of characters that would have been written not including the terminating `NULL`. | N/A | No |
 | `count < 0` | Unsafe: the value is treated as unsigned, likely creating a large value that results in overwriting the memory that follows the buffer. | The number of characters written, not including the terminating `NULL`. | N/A | No |
 | `count < sizeOfBuffer` and `len <= count`  | All of the data is written and a terminating `NULL` is appended. | The number of characters written. | N/A | No |
