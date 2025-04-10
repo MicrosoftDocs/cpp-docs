@@ -105,11 +105,13 @@ See [Behavior summary](#behavior-summary) for details.
 
 ## Remarks
 
-**`vsnprintf_s`** is identical to **`_vsnprintf_s`** and is included for conformance to the ANSI standard. **`_vnsprintf`** is retained for backward compatibility.
-
 Each of these functions takes a pointer to an argument list, then formats and writes up to *`count`* characters of the given data to the memory pointed to by *`buffer`* and appends a terminating null.
 
+In debug builds, the remaining `sizeOfBuffer` bytes following the terminating NULL are filled with 'xFE' as described in [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
+
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+
+**`vsnprintf_s`** is identical to **`_vsnprintf_s`** and is included for conformance to the ANSI standard. **`_vnsprintf`** is retained for backward compatibility.
 
 ### Behavior summary
 
@@ -127,7 +129,7 @@ For the following table:
 | `buffer == NULL` and `sizeOfBuffer == 0` and `count == 0` | No data is written. | 0 | N/A | No |
 | `buffer == NULL` and either `sizeOfBuffer != 0` or `count != 0` | If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value.| -1 | `EINVAL` (22) | Yes |
 | `buffer != NULL` and `sizeOfBuffer == 0` | No data is written. If execution continues after invalid parameter handler executes, sets `errno` and returns a negative value. | -1 | `EINVAL` (22) | Yes |
-| `buffer != NULL` and `sizeOfBuffer != 0` and `count == 0` | The buffer is NULL terminated. In DEBUG builds, the remaining `sizeOfBuffer` bytes are filled with 'xFE' as described in [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).  | -1 | N/A | No |
+| `buffer != NULL` and `sizeOfBuffer != 0` and `count == 0` | The buffer is NULL terminated. | -1 | N/A | No |
 | `count == 0`| Doesn't write any data and returns the number of characters that would have been written, not including the terminating `NULL`. | The number of characters that would have been written not including the terminating `NULL`. | N/A | No |
 | `count < 0` | Unsafe: the value is treated as unsigned, likely creating a large value that results in overwriting the memory that follows the buffer. | The number of characters written, not including the terminating `NULL`. | N/A | No |
 | `count < sizeOfBuffer` and `len <= count`  | All of the data is written and a terminating `NULL` is appended. | The number of characters written. | N/A | No |
