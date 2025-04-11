@@ -66,9 +66,9 @@ The locale to use.
 
 ## Return value
 
-**`_vsprintf_p`** and **`_vswprintf_p`** return the number of characters written, not including the terminating null character, or a negative value if an output error occurs.
-If the *`buffer`* is a `NULL` pointer and *`sizeInBytes`* or *`count`* are zero, functions return the number of characters that would have been written not including the terminating NULL. 
-If the *`buffer`* is valid and *`sizeInBytes`* or *`count`* are zero, functions return -1.
+**`_vsprintf_p`** and **`_vswprintf_p`** return the number of characters written, not including the terminating `NULL` character, or a negative value if an output error occurs.
+If the *`buffer`* is a `NULL` pointer and *`sizeInBytes`* or *`count`* are zero, functions return the number of characters that would have been written not including the terminating `NULL`. 
+If the *`buffer`* is valid and *`sizeInBytes`* or *`count`* are zero, returns -1.
 
 ## Remarks
 
