@@ -97,7 +97,7 @@ The locale to use.
 
 If *`buffer`* is a `NULL` pointer and *`count`* is zero, **`vswprintf`** and **`_vswprintf_l`** return the number of characters that would have been written not including the terminating NULL.
 
-If *`buffer`* is valid and *`count`* is zero, **`vswprintf`** and **`_vswprintf_l`** return -1.
+If *`buffer`* is valid and *`count`* is zero, **`vswprintf`** and **`_vswprintf_l`** return -1. The contents of *`buffer`* are unchanged.
 
 For information on these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
