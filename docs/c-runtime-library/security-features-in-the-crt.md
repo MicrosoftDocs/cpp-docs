@@ -5,7 +5,6 @@ ms.date: "09/29/2020"
 ms.topic: "conceptual"
 f1_keywords: ["_CRT_SECURE_NO_DEPRECATE", "_CRT_NONSTDC_NO_DEPRECATE", "_CRT_NONSTDC_NO_WARNINGS", "_CRT_SECURE_NO_WARNINGS"]
 helpviewer_keywords: ["security deprecation warnings [C++]", "CRT_NONSTDC_NO_DEPRECATE", "buffers [C++], buffer overruns", "deprecation warnings (security-related), disabling", "_CRT_NONSTDC_NO_WARNINGS", "security [CRT]", "_CRT_SECURE_NO_WARNINGS", "_CRT_NONSTDC_NO_DEPRECATE", "_CRT_SECURE_NO_DEPRECATE", "security-enhanced CRT", "CRT_SECURE_NO_WARNINGS", "CRT_SECURE_NO_DEPRECATE", "deprecation warnings (security-related)", "buffer overruns", "CRT_NONSTDC_NO_WARNINGS", "CRT, security enhancements", "parameters [C++], validation"]
-ms.assetid: d9568b08-9514-49cd-b3dc-2454ded195a3
 ---
 # Security Features in the CRT
 
@@ -19,7 +18,7 @@ For example, the `strcpy` function can't tell if the string it copies is too lar
 
 ## Eliminating deprecation warnings
 
-There are several ways to eliminate deprecation warnings for the older, less secure functions. The simplest is simply to define `_CRT_SECURE_NO_WARNINGS` or use the [`warning`](../preprocessor/warning.md) pragma. Either will disable deprecation warnings, but the security issues that caused the warnings still exist. It's better to leave deprecation warnings enabled and take advantage of the new CRT security features.
+There are several ways to eliminate deprecation warnings for the older, less secure functions. The simplest is simply to define `_CRT_SECURE_NO_WARNINGS` or use the [`warning`](../preprocessor/warning.md) pragma. Either disables deprecation warnings, but the security issues that caused the warnings still exist. It's better to leave deprecation warnings enabled and take advantage of the new CRT security features.
 
 In C++, the easiest way to eliminate the deprecation warnings is to use [Secure template overloads](./secure-template-overloads.md). The overloads eliminate deprecation warnings in many cases. They replace calls to deprecated functions with calls to secure versions of the functions. For example, consider this deprecated call to `strcpy`:
 
@@ -54,13 +53,15 @@ Some of the security features include:
 
   You must pass the buffer size to any secure function that writes to a buffer. The secure versions validate that the buffer is large enough before writing to it. The validation helps avoid dangerous buffer overrun errors that could allow malicious code to execute. These functions usually return an `errno` error code and invoke the invalid parameter handler if the size of the buffer is too small. Functions that read from input buffers, such as `gets`, have secure versions that require you to specify a maximum size.
 
+  The debug versions of *some* security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This fill character helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use **`_CrtSetDebugFillThreshold`** to disable buffer-filling. For more information, and a list of functions that have this behavior, see [`_CrtSetDebugFillThreshold`](./reference/crtsetdebugfillthreshold.md).
+
 - **Null termination**
 
-  Some functions that left potentially non-terminated strings have secure versions, which ensure that strings are properly null-terminated.
+  Some functions that left potentially nonterminated strings have secure versions, which ensure that strings are properly null-terminated.
 
 - **Enhanced error reporting**
 
-  The secure functions return error codes with more error information than was available with the pre-existing functions. The secure functions and many of the pre-existing functions now set `errno` and often return an `errno` code type as well, to provide better error reporting.
+  The secure functions return error codes with more error information than was available with the preexisting functions. The secure functions and many of the preexisting functions now set `errno` and often return an `errno` code type as well, to provide better error reporting.
 
 - **Filesystem security**
 
