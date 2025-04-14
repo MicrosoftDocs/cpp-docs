@@ -43,7 +43,7 @@ For a complete list of Microsoft-specific predefined macros, see [Predefined mac
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-1. Select the **Configuration Properties** > **C/C++** > **Preprocessor"** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Preprocessor** property page.
 1. Modify the **Undefine Preprocessor Definitions** or **Undefine All Preprocessor Definitions** properties.
 
 ### To set this compiler option programmatically

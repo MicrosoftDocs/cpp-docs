@@ -11,19 +11,19 @@ Use the **`/constexpr`** compiler options to control parameters for **`constexpr
 
 ## Syntax
 
-> **/constexpr:depth**<em>N</em>\
-> **/constexpr:backtrace**<em>N</em>\
-> **/constexpr:steps**<em>N</em>
+> `/constexpr:depth`<em>N</em>\
+> `/constexpr:backtrace`<em>N</em>\
+> `/constexpr:steps`<em>N</em>
 
 ## Arguments
 
-**`depth`**<em>N</em>
+**`depth`**<em>N</em>\
 Limit the depth of recursive **`constexpr`** function invocation to *N* levels. The default is 512.
 
-**`backtrace`**<em>N</em>
+**`backtrace`**<em>N</em>\
 Show up to *N* **`constexpr`** evaluations in diagnostics. The default is 10.
 
-**`steps`**<em>N</em>
+**`steps`**<em>N</em>\
 Terminate **`constexpr`** evaluation after *N* steps. The default is 100,000. A step refers to an individual computation taken towards evaluating the constant expression. Increasing the maximum number of steps might cause compilation to take longer in cases where compilation would otherwise fail.
 
 ## Remarks
