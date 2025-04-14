@@ -562,6 +562,9 @@ items:
                   href: ../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md
                 - name: /feature (Enable architecture features)
                   href: ../build/reference/feature-arm64.md
+                - name: /forceInterlockedFunctions (Generate and link with out-of-line atomic
+                    functions)
+                  href: ./reference/force-interlocked-functions.md
                 - name: /fp (Specify floating-point behavior)
                   href: ../build/reference/fp-specify-floating-point-behavior.md
                 - name: /fpcvt (Floating-point to unsigned integer conversion behavior)

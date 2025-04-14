@@ -44,6 +44,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/EHr`](eh-exception-handling-model.md) | Always generate `noexcept` runtime termination checks. |
 | [`/EHs`](eh-exception-handling-model.md) | Enable C++ exception handling (no SEH exceptions). |
 | [`/feature`](feature-arm64.md) | Enable architecture features.<sup>17.10</sup> |
+| [`/forceInterlockedFunctions`](force-interlocked-functions.md) | Dynamically selects between Armv8.0 load, store exclusive instructions or Armv8.1 LSE atomic instructions based on target CPU.<sup>17.14</sup> |
 | [`/fp:contract`](fp-specify-floating-point-behavior.md) | Consider floating-point contractions when generating code. |
 | [`/fp:except[-]`](fp-specify-floating-point-behavior.md) | Consider floating-point exceptions when generating code. |
 | [`/fp:fast`](fp-specify-floating-point-behavior.md) | "fast" floating-point model; results are less predictable. |
@@ -329,6 +330,7 @@ Experimental options may only be supported by certain versions of the compiler. 
 | [`/Zg`](zg-generate-function-prototypes.md) | Removed in Visual Studio 2015. Generates function prototypes. |
 
 <sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.
+<sup>17.14</sup> This option is available starting in Visual Studio 2022 version 17.14.
 
 ## See also
 

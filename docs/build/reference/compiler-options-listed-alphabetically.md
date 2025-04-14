@@ -67,6 +67,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Fd`](fd-program-database-file-name.md) | Renames program database file. |
 | [`/Fe`](fe-name-exe-file.md) | Renames the executable file. |
 | [`/feature`](feature-arm64.md) | Enable architecture features.<sup>17.10</sup> |
+| [`/forceInterlockedFunctions`](force-interlocked-functions.md) | Dynamically selects between Armv8.0 load, store exclusive instructions or Armv8.1 LSE atomic instructions based on target CPU.<sup>17.14</sup> |
 | [`/FI<file>`](fi-name-forced-include-file.md) | Preprocesses the specified include file. |
 | [`/Fi`](fi-preprocess-output-file-name.md) | Specifies the preprocessed output file name. |
 | [`/Fm`](fm-name-mapfile.md) | Creates a mapfile. |
@@ -261,6 +262,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/ZW`](zw-windows-runtime-compilation.md) | Produces an output file to run on the Windows Runtime. |
 
 <sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.
+<sup>17.14</sup> This option is available starting in Visual Studio 2022 version 17.14.
 
 ## See also
 
