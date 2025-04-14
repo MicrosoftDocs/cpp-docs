@@ -1,12 +1,11 @@
 ---
 title: "/U, /u (Undefine symbols)"
 description: "Use the Microsoft C/C++ compiler /U and /u options to undefine preprocessor symbols."
-ms.date: 09/03/2020
+ms.date: 04/14/2025
 f1_keywords: ["VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions", "VC.Project.VCCLWCECompilerTool.UndefinePreprocessorDefinitions", "VC.Project.VCCLCompilerTool.UndefineAllPreprocessorDefinitions", "/u", "VC.Project.VCCLWCECompilerTool.UndefineAllPreprocessorDefinitions"]
 helpviewer_keywords: ["-U compiler option [C++]", "Undefine Symbols compiler option", "/U compiler option [C++]", "U compiler option [C++]"]
-ms.assetid: 7bc0474f-6d1f-419b-807d-0d8816763b2a
 ---
-# /U, /u (Undefine symbols)
+# `/U`, `/u` (Undefine symbols)
 
 The **`/U`** compiler option undefines the specified preprocessor symbol. The **`/u`** compiler option undefines the Microsoft-specific symbols that the compiler defines.
 
@@ -17,7 +16,7 @@ The **`/U`** compiler option undefines the specified preprocessor symbol. The **
 
 ## Arguments
 
-*symbol*<br/>
+*`symbol`*\
 The preprocessor symbol to undefine.
 
 ## Remarks
@@ -44,9 +43,7 @@ For a complete list of Microsoft-specific predefined macros, see [Predefined mac
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
-1. Select the **Configuration Properties** > **C/C++** > **Advanced** property page.
-
+1. Select the **Configuration Properties** > **C/C++** > **Preprocessor** property page.
 1. Modify the **Undefine Preprocessor Definitions** or **Undefine All Preprocessor Definitions** properties.
 
 ### To set this compiler option programmatically
@@ -55,9 +52,9 @@ For a complete list of Microsoft-specific predefined macros, see [Predefined mac
 
 ## See also
 
-[MSVC compiler options](compiler-options.md)<br/>
-[MSVC compiler command-line syntax](compiler-command-line-syntax.md)<br/>
-[**`/J`** (Default char type is unsigned)](j-default-char-type-is-unsigned.md)<br/>
-[**`/GR`** (Enable run-time type information)](gr-enable-run-time-type-information.md)<br/>
-[**`/EH`** (Exception handling model)](eh-exception-handling-model.md)<br/>
+[MSVC compiler options](compiler-options.md)\
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)\
+[**`/J`** (Default char type is unsigned)](j-default-char-type-is-unsigned.md)\
+[**`/GR`** (Enable run-time type information)](gr-enable-run-time-type-information.md)\
+[**`/EH`** (Exception handling model)](eh-exception-handling-model.md)\
 [**`/MD`**, **`/MT`**, **`/LD`** (Use run-time library)](md-mt-ld-use-run-time-library.md)
