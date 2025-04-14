@@ -95,6 +95,10 @@ The locale to use.
 
 **`vsprintf`** and **`vswprintf`** return the number of characters written, not including the terminating `NULL` character, or a negative value if an output error occurs. If *`buffer`* or *`format`* is a `NULL` pointer, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
+If *`buffer`* is a `NULL` pointer and *`count`* is zero, **`vswprintf`** and **`_vswprintf_l`** return the number of characters that would have been written not including the terminating NULL.
+
+If *`buffer`* is valid and *`count`* is zero, **`vswprintf`** and **`_vswprintf_l`** return -1. The contents of *`buffer`* are unchanged.
+
 For information on these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
