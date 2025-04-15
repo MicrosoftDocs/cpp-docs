@@ -18,7 +18,7 @@ The RTOS Object View allows users to view various components of an RTOS while de
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-![RTOS View in VSCode](media/rtos-threads-vscode.png)
+![RTOS View in VS Code](media/rtos-threads-vscode.png)
 
 ---
 
