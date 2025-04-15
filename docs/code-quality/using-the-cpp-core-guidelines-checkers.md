@@ -74,7 +74,7 @@ int main()
     int arr[10];           // warning C26494
     int* p = arr;          // warning C26485
 
-    [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1
+    [[gsl::suppress("bounds.1", justification : "This attribute suppresses Bounds rules #1")]]
     {
         int* q = p + 1;    // warning C26481 (suppressed)
         p = q++;           // warning C26481 (suppressed)
@@ -104,7 +104,7 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-The C++ Core Guidelines are there to help you write better and safer code. However, you might find an instance where a rule or a profile shouldn't be applied. It's easy to suppress it directly in the code. You can use the `[[gsl::suppress]]` attribute to keep C++ Core Check from detecting and reporting any violation of a rule in the following code block. You can mark individual statements to suppress specific rules. You can even suppress the entire bounds profile by writing `[[gsl::suppress(bounds)]]` without including a specific rule number.
+The C++ Core Guidelines are there to help you write better and safer code. However, you might find an instance where a rule or a profile shouldn't be applied. It's easy to suppress it directly in the code. You can use the `[[gsl::suppress]]` attribute to keep C++ Core Check from detecting and reporting any violation of a rule in the following code block. You can mark individual statements to suppress specific rules. You can even suppress the entire bounds profile by writing `[[gsl::suppress("bounds")]]` without including a specific rule number.
 
 ## Supported rule sets
 
@@ -197,10 +197,10 @@ The Microsoft C++ compiler has limited support for the `[[gsl::suppress]]` attri
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
-[[gsl::suppress(r.11)]] new int;
+[[gsl::suppress("r.11")]] new int;
 
 // Suppress all warnings from the 'r' rule group (resource management) in block.
-[[gsl::suppress(r)]]
+[[gsl::suppress("r")]]
 {
     new int;
 }
@@ -209,7 +209,7 @@ The Microsoft C++ compiler has limited support for the `[[gsl::suppress]]` attri
 // For declarations, you might need to use the surrounding block.
 // Macros are not expanded inside of attributes.
 // Use plain numbers instead of macros from the warnings.h.
-[[gsl::suppress(26400)]]
+[[gsl::suppress("26400")]]
 {
     int *p = new int;
 }
