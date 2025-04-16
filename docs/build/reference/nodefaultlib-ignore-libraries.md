@@ -7,7 +7,7 @@ helpviewer_keywords: ["default libraries, removing", "-NODEFAULTLIB linker optio
 ---
 # `/NODEFAULTLIB` (Ignore Libraries)
 
-Unless an optional library name is provided, the `/NODEFAULTLIB` linker option removes all libraries not explicitly specified to the linker. This includes `#pragma`, cl command line switches, libs referenced in other libs, and so on.
+Unless an optional library name is provided, the `/NODEFAULTLIB` linker option removes all libraries not explicitly specified on the linker command-line. This also includes `#pragma`, `cl.exe` command-line switches, libs referenced by other libs, and so on.
 
 ## Syntax
 
