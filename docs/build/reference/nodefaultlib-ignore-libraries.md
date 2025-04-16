@@ -1,14 +1,13 @@
 ---
 description: "Learn more about: /NODEFAULTLIB (Ignore libraries)"
 title: "/NODEFAULTLIB (Ignore libraries)"
-ms.date: 09/09/2022
+ms.date: 04/16/2025
 f1_keywords: ["VC.Project.VCLinkerTool.IgnoreAllDefaultLibraries", "VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames", "VC.Project.VCLinkerTool.OVERWRITEAllDefaultLibraries", "VC.Project.VCLinkerTool.OVERWRITEDefaultLibraryNames", "/nodefaultlib"]
 helpviewer_keywords: ["default libraries, removing", "-NODEFAULTLIB linker option", "libraries, ignore", "NODEFAULTLIB linker option", "/NODEFAULTLIB linker option", "ignore libraries linker option"]
-ms.assetid: 7270b673-6711-468e-97a7-c2925ac2be6e
 ---
 # `/NODEFAULTLIB` (Ignore Libraries)
 
-The **`/NODEFAULTLIB`** linker option tells the linker to remove one or more default libraries from the list of libraries it searches when it resolves external references.
+Unless an optional library name is provided, the `/NODEFAULTLIB` linker option removes all libraries not explicitly specified to the linker. This includes `#pragma`, cl command line switches, libs referenced in other libs, and so on.
 
 ## Syntax
 
@@ -34,11 +33,8 @@ If you use **`/NODEFAULTLIB`** to build your program without the C run-time libr
 ### To set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
-
 1. Select the **Configuration Properties** > **Linker** > **Input** property page.
-
 1. Modify the **Ignore All Default Libraries** property. Or, specify a semicolon-separated list of the libraries you want to ignore in the **Ignore Specific Default Libraries** property. The **Linker** > **Command Line** property page shows the effect of the changes you make to these properties.
-
 1. Choose **OK** or **Apply** to save your changes.
 
 ### To set this linker option programmatically
