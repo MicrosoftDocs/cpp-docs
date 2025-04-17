@@ -15,9 +15,9 @@ Enables compiler support for Microsoft's experimental form of C++ Standard modul
 
 ## Remarks
 
- This switch was for the time before the new, standardized, way of consuming the C++ Standard Library as modules described in [Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md) was available. Although you can use this switch to use the older experimental named modules, we recommend that you use the new, standardized, way of consuming the C++ Standard Library as modules described in [Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md).
+ This switch applies to the time before the new, standardized, way of consuming the C++ Standard Library as modules was available. Although you can use this switch to use the older experimental named modules, we recommend that you use the new, standardized, way of consuming the C++ Standard Library as modules described in [Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md).
 
-This compiler became available starting in Visual Studio 2015 Update 1. Ensure that **C++ Modules for v143 build tools (x64/x86 - experimental)** in selected the VS Installer. It's available in the **Individual components** tab of the installer. Search for **experimental** to see the option. For more information, see [Install C and C++ support in Visual Studio](../vscpp-step-0-installation.md).
+This compiler switch is available starting in Visual Studio 2015 Update 1. In the VS Installer under the **Individual components** tab, ensure that **C++ Modules for v143 build tools (x64/x86 - experimental)** in selected. You can use the search box with **experimental** to find it. For more information, see [Install C and C++ support in Visual Studio](../vscpp-step-0-installation.md).
 
 | Version  | Status |
 |---|---|
@@ -54,6 +54,7 @@ For more information about how to use and create modules, see [Overview of modul
 
 ## See also
 
+[Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md)\
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
 [`/exportHeader` (Create header units)](module-exportheader.md)\
 [`/reference` (Use named module IFC)](module-reference.md)\

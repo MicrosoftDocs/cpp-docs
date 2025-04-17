@@ -59,10 +59,8 @@ Given the following sample code:
 #include <vector>
 
 import m;
-import std.core;
-
+import std;
 import <utility>;
-
 import "t.h";
 
 int main() {}
@@ -78,15 +76,16 @@ produces a JSON file *`output.json`* similar to:
 {
    "Version":"1.1",
    "Data":{
-      "Source":"C:\\a\\b\\main.cpp",
+      "Source":"C:\\test\\main.cpp",
       "ProvidedModule":"",
       "ImportedModules":[
          "m",
-         "std.core"
+         "std"
       ],
       "ImportedHeaderUnits":[
          "C:\\...\\utility",
-         "C:\\a\\b\\t.h"
+         "C:\\...\\vector",
+         "C:\\test\\t.h"
       ]
    }
 }

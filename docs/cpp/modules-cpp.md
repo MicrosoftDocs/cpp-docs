@@ -1,7 +1,7 @@
 ---
 title: "Overview of modules in C++"
 description: Modules in C++20 provide a modern alternative to header files.
-ms.date: 02/11/2025
+ms.date: 04/17/2025
 helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
 ---
 # Overview of modules in C++
@@ -48,8 +48,8 @@ The file *`MyProgram.cpp`* uses **`import`** to access the name exported by `Exa
 
 ```cpp
 // MyProgram.cpp
+import std;
 import Example;
-import std.core;
 
 using namespace std;
 
@@ -156,7 +156,7 @@ You can include header files in a module source file by putting an `#include` di
 #include "customlib.h"
 #include "anotherlib.h"
 
-import std.core;
+import std;
 import MyModuleB;
 
 //... rest of file
@@ -166,7 +166,7 @@ You can use a traditional header file to control which modules are imported:
 
 ```cpp
 // MyProgram.h
-import std.core;
+import std;
 #ifdef DEBUG_LOGGING
 import std.filesystem;
 #endif
@@ -183,6 +183,7 @@ import "myheader.h";
 
 ## See also
 
+[Tutorial: Import the C++ standard library using modules from the command line](tutorial-import-stl-named-module)\
 [`module`, `import`, `export`](import-export-module.md)\
 [Named modules tutorial](tutorial-named-modules-cpp.md)\
 [Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md)
