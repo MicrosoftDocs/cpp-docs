@@ -23,7 +23,7 @@ Visual Studio also supports multitargeting for C++ projects. You can use the lat
 
 ## Target framework (C++/CLI project only)
 
-When you change the target Framework, also change the platform toolset to a version that supports that Framework. For example, to target the .NET Framework 4.5, you must use a compatible platform toolset. These toolsets include Visual Studio 2015 (v140), Visual Studio 2013 (v120), or Visual Studio 2012 (v110). You can use the [Windows 7.1 SDK](https://www.microsoft.com/download/details.aspx?id=8279) to target .NET Framework 2.0, 3.0, 3.5, and 4.
+When you change the target Framework, also change the platform toolset to a version that supports that Framework. For example, to target the .NET Framework 4.5, you must use a compatible platform toolset. These toolsets include Visual Studio 2015 (v140), Visual Studio 2013 (v120), or Visual Studio 2012 (v110). You can use the [Windows 7.1 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=8442) to target .NET Framework 2.0, 3.0, 3.5, and 4.
 
 You can extend the target platform further by creating a custom platform toolset. For more information, see [C++ Native Multi-Targeting](https://devblogs.microsoft.com/cppblog/c-native-multi-targeting/) on the Visual C++ blog.
 
