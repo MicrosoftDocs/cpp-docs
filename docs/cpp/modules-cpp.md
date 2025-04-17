@@ -183,8 +183,7 @@ import "myheader.h";
 
 ## See also
 
-[Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md)\
-[Tutorial: Import the C++ standard library using modules from the command line](tutorial-import-stl-named-module)\
+[Import the C++ standard library using modules](tutorial-import-stl-named-module.md)\
 [`module`, `import`, `export`](import-export-module.md)\
 [Named modules tutorial](tutorial-named-modules-cpp.md)\
 [Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md)
