@@ -59,10 +59,8 @@ Given the following sample code:
 #include <vector>
 
 import m;
-import std.core;
-
+import std;
 import <utility>;
-
 import "t.h";
 
 int main() {}
@@ -78,15 +76,16 @@ produces a JSON file *`output.json`* similar to:
 {
    "Version":"1.1",
    "Data":{
-      "Source":"C:\\a\\b\\main.cpp",
+      "Source":"C:\\test\\main.cpp",
       "ProvidedModule":"",
       "ImportedModules":[
          "m",
-         "std.core"
+         "std"
       ],
       "ImportedHeaderUnits":[
          "C:\\...\\utility",
-         "C:\\a\\b\\t.h"
+         "C:\\...\\vector",
+         "C:\\test\\t.h"
       ]
    }
 }
@@ -104,6 +103,7 @@ You normally shouldn't set this option yourself in the Visual Studio development
 
 ## See also
 
+[Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md)\
 [`/translateInclude`](translateinclude.md)\
 [C++ header-units.json reference](header-unit-json-reference.md)\
 [MSVC compiler options](compiler-options.md)\
