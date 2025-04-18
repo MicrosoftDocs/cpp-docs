@@ -166,9 +166,10 @@ You can use a traditional header file to control which modules are imported:
 
 ```cpp
 // MyProgram.h
+#ifdef C_RUNTIME_GLOBALS
+import std.compat;
+#else
 import std;
-#ifdef DEBUG_LOGGING
-import std.filesystem;
 #endif
 ```
 
