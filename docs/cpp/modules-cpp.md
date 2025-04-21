@@ -106,7 +106,7 @@ The **`export`** keyword is only used in interface files. An implementation file
 
 The rules for namespaces in modules are the same as any other code. If a declaration within a namespace is exported, the enclosing namespace (excluding members that aren't explicitly exported in that namespace) is also implicitly exported. If a namespace is explicitly exported, all declarations within that namespace definition are exported.
 
-When the compiler does argument-dependent lookup for overload resolutions in the importing translation unit, it considers functions declared in the same translation unit (including module interfaces) as where the type of the function's arguments are defined.
+When the compiler does argument-dependent lookup for overload resolution in the importing translation unit, it considers functions declared in the same translation unit (including module interfaces) as where the type of the function's arguments is defined.
 
 ### Module partitions
 
