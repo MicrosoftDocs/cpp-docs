@@ -60,10 +60,8 @@ Consider the following sample code:
 #include <vector>
 
 import other.module;
-import std.core;
-
+import std;
 import "t.h";
-
 import <iostream>;
 
 int main() {}
@@ -83,14 +81,14 @@ The compiler produces a JSON file, *`output.json`*, with content similar to:
         {
             "primary-output": "app.obj",
             "outputs": [
-                "C:\\Users\\username\\source\\repos\\app\\app"
+                "output.json"
             ],
             "requires": [
                 {
                     "logical-name": "other.module"
                 },
                 {
-                    "logical-name": "std.core"
+                    "logical-name": "std"
                 },
                 {
                     "logical-name": "t.h",
@@ -134,6 +132,7 @@ To report module and header unit dependencies, you must also set the **Configura
 
 ## See also
 
+[Import the C++ standard library using modules](../../cpp/tutorial-import-stl-named-module.md)\
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)\
 [`/sourceDependencies:directives`](sourcedependencies-directives.md)\
