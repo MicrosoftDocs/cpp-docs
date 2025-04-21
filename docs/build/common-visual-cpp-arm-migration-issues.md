@@ -3,7 +3,7 @@ description: "Learn more about: Common Visual C++ ARM Migration Issues"
 title: "Common Visual C++ ARM Migration Issues"
 ms.date: "05/06/2019"
 ---
-# Common Visual C++ ARM Migration Issues
+# Common Visual C++ ARM migration issues
 
 This document describes some of the common issues that you might encounter when you migrate code from x86 or x64 architectures to the ARM architecture. It also describes how to avoid these issues, and how to use the compiler to help identify them.
 
@@ -43,7 +43,7 @@ These platforms also differ in how they handle conversion of NaN (Not-a-Number) 
 
 Floating-point conversion can only be relied on if you know that the value is within the range of the integer type that it's being converted to.
 
-### Shift operator (\<\< >>) behavior
+### Shift operator (`<<` `>>`) behavior
 
 On the ARM architecture, a value can be shifted left or right up to 255 bits before the pattern begins to repeat. On x86 and x64 architectures, the pattern is repeated at every multiple of 32 unless the source of the pattern is a 64-bit variable; in that case, the pattern repeats at every multiple of 64 on x64, and every multiple of 256 on x86, where a software implementation is employed. For example, for a 32-bit variable that has a value of 1 shifted left by 32 positions, on ARM the result is 0, on x86 the result is 1, and on x64 the result is also 1. However, if the source of the value is a 64-bit variable, then the result on all three platforms is 4294967296, and the value doesn't "wrap around" until it's shifted 64 positions on x64, or 256 positions on ARM and x86.
 
@@ -87,7 +87,7 @@ Handle::acquire(operator->(memory_handle), operator*(p));
 
 And if there's a dependency between `operator->(memory_handle)` and `operator*(p)`, the code might rely on a specific evaluation order, even though the original code looks like there is no possible dependency.
 
-### volatile keyword default behavior
+### `volatile` keyword default behavior
 
 The MSVC compiler supports two different interpretations of the **`volatile`** storage qualifier that you can specify by using compiler switches. The [/volatile:ms](reference/volatile-volatile-keyword-interpretation.md) switch selects the Microsoft extended volatile semantics that guarantee strong ordering, as has been the traditional case for x86 and x64 because of the strong memory model on those architectures. The [/volatile:iso](reference/volatile-volatile-keyword-interpretation.md) switch selects the strict C++ standard volatile semantics that don't guarantee strong ordering.
 
