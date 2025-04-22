@@ -160,7 +160,7 @@ There are two ways to use multiple accelerators in your app:
 
 - You can pass `accelerator_view` objects to the calls to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) method.
 
-- You can construct an **array** object using a specific `accelerator_view` object. The C+AMP runtime will pick up the `accelerator_view` object from the captured **array** object in the lambda expression.
+- You can construct an **array** object using a specific `accelerator_view` object. The C++ AMP runtime will pick up the `accelerator_view` object from the captured **array** object in the lambda expression.
 
 ## Special Accelerators
 
