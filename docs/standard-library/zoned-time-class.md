@@ -2,7 +2,7 @@
 description: "Learn more about: zoned_time class"
 title: "zoned_time class"
 ms.date: 05/31/2022
-f1_keywords: ["chrono/std::chrono::zoned_time::get_info", "chrono/std::chrono::zoned_time::get_local_time", "chrono/std::chrono::zoned_time::get_sys_time", "chrono/std::chrono::zoned_time::get_time_zone","chrono/std::chrono::zoned_time:operator=", "chrono/std::chrono::zoned_time:operator local_time", "chrono/std::chrono::zoned_time:operator sys_time"]
+f1_keywords: ["chrono/std::chrono::zoned_time::get_info", "chrono/std::chrono::zoned_time::get_local_time", "chrono/std::chrono::zoned_time::get_sys_time", "chrono/std::chrono::zoned_time::get_time_zone","chrono/std::chrono::zoned_time::operator=", "chrono/std::chrono::zoned_time::operator local_time", "chrono/std::chrono::zoned_time::operator sys_time"]
 helpviewer_keywords: ["std::chrono [C++], zoned_time class", "std::chrono::zoned_time::get_info function", "std::chrono::zoned_time::get_local_time function", "std::chrono::zoned_time::get_sys_time function", "std::chrono::zoned_time::get_time_zone function"]
 dev_langs: ["C++"]
 ---

@@ -2,7 +2,7 @@
 description: "Learn more about: steady_clock struct"
 title: "steady_clock struct"
 ms.date: 04/14/2022
-f1_keywords: ["chrono/std::chrono::steady_clock", "chrono/std::chrono::steady_clock::now", "chrono/std::chrono::steady_clock:is_steady"]
+f1_keywords: ["chrono/std::chrono::steady_clock", "chrono/std::chrono::steady_clock::now", "chrono/std::chrono::steady_clock::is_steady"]
 helpviewer_keywords: ["std::chrono [C++], steady_clock"]
 dev_langs: ["C++"]
 ---

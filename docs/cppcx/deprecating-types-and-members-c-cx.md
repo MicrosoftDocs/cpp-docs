@@ -13,7 +13,7 @@ C++/CX supports deprecation of Windows Runtime types and members for producers a
 
 ## Example
 
-The following example shows how to deprecate your own public APIs—for example, in a Windows Runtime component. The second parameter, of type [`Windows:Foundation::Metadata::DeprecationType`](/uwp/api/windows.foundation.metadata.deprecationtype) specifies whether the API is being deprecated or removed. Currently only the `DeprecationType::Deprecated` value is supported. The third parameter in the attribute specifies the [`Windows::Foundation::Metadata::Platform`](/uwp/api/windows.foundation.metadata.platformattribute) to which the attribute applies.
+The following example shows how to deprecate your own public APIs—for example, in a Windows Runtime component. The second parameter, of type [`Windows::Foundation::Metadata::DeprecationType`](/uwp/api/windows.foundation.metadata.deprecationtype) specifies whether the API is being deprecated or removed. Currently only the `DeprecationType::Deprecated` value is supported. The third parameter in the attribute specifies the [`Windows::Foundation::Metadata::Platform`](/uwp/api/windows.foundation.metadata.platformattribute) to which the attribute applies.
 
 ```cpp
 namespace wfm = Windows::Foundation::Metadata;

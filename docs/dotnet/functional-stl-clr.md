@@ -499,7 +499,7 @@ public:
     typedef Fun stored_function_type;
     typedef typename Fun::first_argument_type first_argument_type;
     typedef typename Fun::second_argument_type second_argument_type;
-    typedef typename Fun:result_type result_type;
+    typedef typename Fun::result_type result_type;
     typedef Microsoft::VisualC::StlClr::UnaryDelegate<
         second_argument_type, result_type>
         delegate_type;
@@ -604,7 +604,7 @@ public:
     typedef Fun stored_function_type;
     typedef typename Fun::first_argument_type first_argument_type;
     typedef typename Fun::second_argument_type second_argument_type;
-    typedef typename Fun:result_type result_type;
+    typedef typename Fun::result_type result_type;
     typedef Microsoft::VisualC::StlClr::UnaryDelegate<
         first_argument_type, result_type>
         delegate_type;

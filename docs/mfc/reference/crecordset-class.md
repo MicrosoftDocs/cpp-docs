@@ -728,7 +728,7 @@ The number of records in the recordset; 0 if the recordset contains no records; 
 ### Remarks
 
 > [!CAUTION]
-> The record count is maintained as a "high water mark," the highest-numbered record yet seen as the user moves through the records. The total number of records is only known after the user has moved beyond the last record. For performance reasons, the count isn't updated when you call `MoveLast`. To count the records yourself, call `MoveNext` repeatedly until `IsEOF` returns nonzero. Adding a record via `CRecordset:AddNew` and `Update` increases the count; deleting a record via `CRecordset::Delete` decreases the count.
+> The record count is maintained as a "high water mark," the highest-numbered record yet seen as the user moves through the records. The total number of records is only known after the user has moved beyond the last record. For performance reasons, the count isn't updated when you call `MoveLast`. To count the records yourself, call `MoveNext` repeatedly until `IsEOF` returns nonzero. Adding a record via `CRecordset::AddNew` and `Update` increases the count; deleting a record via `CRecordset::Delete` decreases the count.
 
 ## <a name="getrowsetsize"></a> `CRecordset::GetRowsetSize`
 

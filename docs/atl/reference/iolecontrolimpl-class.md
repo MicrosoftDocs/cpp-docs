@@ -76,7 +76,7 @@ HRESULT GetControlInfo(LPCONTROLINFO pCI);
 
 ### Remarks
 
-See [IOleControl:GetControlInfo](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo) in the Windows SDK.
+See [IOleControl::GetControlInfo](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo) in the Windows SDK.
 
 ### Return Value
 

@@ -36,14 +36,14 @@ An accessor class. The default is `CAccessorBase`.
 |[Close](#close)|Releases rows and the current `IRowset` interface.|
 |[Compare](#compare)|Compares two bookmarks using [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85)).|
 |[CRowset](#crowset)|Creates a new `CRowset` object and (optionally) associates it with an `IRowset` interface supplied as a parameter.|
-|[Delete](#delete)|Deletes rows from the rowset using [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)).|
+|[Delete](#delete)|Deletes rows from the rowset using [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)).|
 |[FindNextRow](#findnextrow)|Finds the next matching row after the specified bookmark.|
 |[GetApproximatePosition](#getapproximateposition)|Returns the approximate position of a row corresponding to a bookmark.|
 |[GetData](#getdata)|Retrieves data from the rowset's copy of the row.|
 |[GetDataHere](#getdatahere)|Retrieves data from the specified buffer.|
 |[GetOriginalData](#getoriginaldata)|Retrieves the data most recently fetched from or transmitted to the data source, ignoring pending changes.|
 |[GetRowStatus](#getrowstatus)|Returns the status of all rows.|
-|[Insert](#insert)|Creates and inserts a new row using [IRowsetChange:InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)).|
+|[Insert](#insert)|Creates and inserts a new row using [IRowsetChange::InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)).|
 |[IsSameRow](#issamerow)|Compares the specified row with the current row.|
 |[MoveFirst](#movefirst)|Repositions the next-fetch location to the initial position.|
 |[MoveLast](#movelast)|Moves to the last record.|
@@ -52,7 +52,7 @@ An accessor class. The default is `CAccessorBase`.
 |[MoveToBookmark](#movetobookmark)|Fetches the row marked by a bookmark or the row at a specified offset from that bookmark.|
 |[MoveToRatio](#movetoratio)|Fetches rows starting from a fractional position in the rowset.|
 |[ReleaseRows](#releaserows)|Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) to release the current row handle.|
-|[SetData](#setdata)|Sets data values in one or more columns of a row using [IRowsetChange:SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)).|
+|[SetData](#setdata)|Sets data values in one or more columns of a row using [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)).|
 |[Undo](#undo)|Undoes any changes made to a row since the last fetch or [Update](#update).|
 |[Update](#update)|Transmits any pending changes made to the current row since the last fetch or update.|
 |[UpdateAll](#updateall)|Transmits any pending changes made to all rows since the last fetch or update.|

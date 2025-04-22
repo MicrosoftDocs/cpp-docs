@@ -43,7 +43,7 @@ In C++, you have several options for connecting to the web and the cloud.
 
 - [Windows::Web::Http::HttpClient](/uwp/api/windows.web.http.httpclient)
 
-  A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more. For apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web:HttpClient` class.
+  A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more. For apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web::Http::HttpClient` class.
 
 - [IXMLHTTPRequest2 interface](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2)
 

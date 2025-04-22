@@ -105,7 +105,7 @@ The C-style cast operator is identical to the call operator () and is therefore 
     int i = d;  // warning C4244 possible loss of data
     int j = static_cast<int>(d);       // No warning.
     string s = static_cast<string>(d); // Error C2440:cannot convert from
-                                       // double to std:string
+                                       // double to std::string
 
     // No error but not necessarily safe.
     Base* b = new Base();

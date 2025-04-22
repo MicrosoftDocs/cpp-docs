@@ -137,7 +137,7 @@ This example uses a conversion count macro to define a buffer large enough to co
 int main()
 {
     wchar_t buffer[_MAX_U64TOSTR_BASE2_COUNT];
-    std:wcout << _ui64tow(0xFFFFFFFFFFFFFFFFull, buffer, 2) << std::endl;
+    std::wcout << _ui64tow(0xFFFFFFFFFFFFFFFFull, buffer, 2) << std::endl;
 }
 ```
 

@@ -129,7 +129,7 @@ The functions all possibly copy the file at *from* to *to* under control of *`op
 
 If `exists(to) && !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options::update_existing))`, then report as an error that the file already exists.
 
-Otherwise, if `!exists(to) || opts & copy_options::overwrite_existing || opts & copy_options::update_existing&& last_write_time(to) < last_write_time(from) || !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options:update_existing))`, then attempt to copy the contents and attributes of the file *from* to the file *to*. Report as an error if the copy attempt fails.
+Otherwise, if `!exists(to) || opts & copy_options::overwrite_existing || opts & copy_options::update_existing&& last_write_time(to) < last_write_time(from) || !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options::update_existing))`, then attempt to copy the contents and attributes of the file *from* to the file *to*. Report as an error if the copy attempt fails.
 
 The functions return **`true`** if the copy is attempted and succeeds, otherwise **`false`**.
 

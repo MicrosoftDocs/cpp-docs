@@ -38,44 +38,44 @@ By using self-draw controls you can build reusable control classes that use owne
 - For self-draw buttons:
 
     ```cpp
-    CButton:DrawItem(LPDRAWITEMSTRUCT);
+    CButton::DrawItem(LPDRAWITEMSTRUCT);
     // insert code to draw this button
     ```
 
 - For self-draw menus:
 
     ```cpp
-    CMenu:MeasureItem(LPMEASUREITEMSTRUCT);
+    CMenu::MeasureItem(LPMEASUREITEMSTRUCT);
     // insert code to measure the size of an item in this menu
-    CMenu:DrawItem(LPDRAWITEMSTRUCT);
+    CMenu::DrawItem(LPDRAWITEMSTRUCT);
     // insert code to draw an item in this menu
     ```
 
 - For self-draw list boxes:
 
     ```cpp
-    CListBox:MeasureItem(LPMEASUREITEMSTRUCT);
+    CListBox::MeasureItem(LPMEASUREITEMSTRUCT);
     // insert code to measure the size of an item in this list box
-    CListBox:DrawItem(LPDRAWITEMSTRUCT);
+    CListBox::DrawItem(LPDRAWITEMSTRUCT);
     // insert code to draw an item in this list box
 
-    CListBox:CompareItem(LPCOMPAREITEMSTRUCT);
+    CListBox::CompareItem(LPCOMPAREITEMSTRUCT);
     // insert code to compare two items in this list box if LBS_SORT
-    CListBox:DeleteItem(LPDELETEITEMSTRUCT);
+    CListBox::DeleteItem(LPDELETEITEMSTRUCT);
     // insert code to delete an item from this list box
     ```
 
 - For self-draw combo boxes:
 
     ```cpp
-    CComboBox:MeasureItem(LPMEASUREITEMSTRUCT);
+    CComboBox::MeasureItem(LPMEASUREITEMSTRUCT);
     // insert code to measure the size of an item in this combo box
-    CComboBox:DrawItem(LPDRAWITEMSTRUCT);
+    CComboBox::DrawItem(LPDRAWITEMSTRUCT);
     // insert code to draw an item in this combo box
 
-    CComboBox:CompareItem(LPCOMPAREITEMSTRUCT);
+    CComboBox::CompareItem(LPCOMPAREITEMSTRUCT);
     // insert code to compare two items in this combo box if CBS_SORT
-    CComboBox:DeleteItem(LPDELETEITEMSTRUCT);
+    CComboBox::DeleteItem(LPDELETEITEMSTRUCT);
     // insert code to delete an item from this combo box
     ```
 

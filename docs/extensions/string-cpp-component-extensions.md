@@ -104,7 +104,7 @@ int main() {
    if (a != b)
       Console::WriteLine("a and b are not equal");
 
-   // System:String^ and tracking reference
+   // System::String^ and tracking reference
    String^% rstr1 = a;
    Console::WriteLine(rstr1);
 
