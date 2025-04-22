@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: IPersistStorageImpl Class"
 title: "IPersistStorageImpl Class"
+description: "Learn more about: IPersistStorageImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPersistStorageImpl", "ATLCOM/ATL::IPersistStorageImpl", "ATLCOM/ATL::IPersistStorageImpl::GetClassID", "ATLCOM/ATL::IPersistStorageImpl::HandsOffStorage", "ATLCOM/ATL::IPersistStorageImpl::InitNew", "ATLCOM/ATL::IPersistStorageImpl::IsDirty", "ATLCOM/ATL::IPersistStorageImpl::Load", "ATLCOM/ATL::IPersistStorageImpl::Save", "ATLCOM/ATL::IPersistStorageImpl::SaveCompleted"]
 helpviewer_keywords: ["storage, ATL", "IPersistStorageImpl class"]
-ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
 ---
 # IPersistStorageImpl Class
 
@@ -22,7 +21,7 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 
 #### Parameters
 
-*T*<br/>
+*T*\
 Your class, derived from `IPersistStorageImpl`.
 
 ## Members
@@ -97,7 +96,7 @@ STDMETHOD(InitNew)(IStorage*);
 
 The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) interface.
 
-See [IPersistStorage:InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) in the Windows SDK.
+See [IPersistStorage::InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) in the Windows SDK.
 
 ## <a name="isdirty"></a> IPersistStorageImpl::IsDirty
 
@@ -111,7 +110,7 @@ STDMETHOD(IsDirty)(void);
 
 The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) interface.
 
-See [IPersistStorage:IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty) in the Windows SDK.
+See [IPersistStorage::IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty) in the Windows SDK.
 
 ## <a name="load"></a> IPersistStorageImpl::Load
 
@@ -125,7 +124,7 @@ STDMETHOD(Load)(IStorage* pStorage);
 
 The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) interface. `Load` uses a stream named "Contents" to retrieve the object's data. The [Save](#save) method originally creates this stream.
 
-See [IPersistStorage:Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) in the Windows SDK.
+See [IPersistStorage::Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) in the Windows SDK.
 
 ## <a name="save"></a> IPersistStorageImpl::Save
 
@@ -139,7 +138,7 @@ STDMETHOD(Save)(IStorage* pStorage, BOOL fSameAsLoad);
 
 The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) interface. When `Save` is first called, it creates a stream named "Contents" on the specified storage. This stream is then used in later calls to `Save` and in calls to [Load](#load).
 
-See [IPersistStorage:Save](/windows/win32/api/objidl/nf-objidl-ipersiststorage-save) in the Windows SDK.
+See [IPersistStorage::Save](/windows/win32/api/objidl/nf-objidl-ipersiststorage-save) in the Windows SDK.
 
 ## <a name="savecompleted"></a> IPersistStorageImpl::SaveCompleted
 
@@ -155,11 +154,11 @@ Returns S_OK.
 
 ### Remarks
 
-See [IPersistStorage:SaveCompleted](/windows/win32/api/objidl/nf-objidl-ipersiststorage-savecompleted) in the Windows SDK.
+See [IPersistStorage::SaveCompleted](/windows/win32/api/objidl/nf-objidl-ipersiststorage-savecompleted) in the Windows SDK.
 
 ## See also
 
-[Storages and Streams](/windows/win32/Stg/storages-and-streams)<br/>
-[IPersistStreamInitImpl Class](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>
-[IPersistPropertyBagImpl Class](../../atl/reference/ipersistpropertybagimpl-class.md)<br/>
+[Storages and Streams](/windows/win32/Stg/storages-and-streams)\
+[IPersistStreamInitImpl Class](../../atl/reference/ipersiststreaminitimpl-class.md)\
+[IPersistPropertyBagImpl Class](../../atl/reference/ipersistpropertybagimpl-class.md)\
 [Class Overview](../../atl/atl-class-overview.md)

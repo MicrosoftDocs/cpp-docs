@@ -1249,7 +1249,7 @@ void f() {
 
 Previously, thread-local variables in DLLs weren't correctly initialized. Other than on the thread that loaded the DLL, they weren't initialized before first use on threads that existed before the DLL was loaded. This defect has now been corrected. Thread-local variables in such a DLL get initialized immediately before their first use on such threads.
 
-This new behavior of testing for initialization on uses of thread-local variables may be disabled by using the **`/Zc:tlsGuards-`** compiler option. Or, by adding the `[[msvc:no_tls_guard]]` attribute to particular thread local variables.
+This new behavior of testing for initialization on uses of thread-local variables may be disabled by using the **`/Zc:tlsGuards-`** compiler option. Or, by adding the `[[msvc::no_tls_guard]]` attribute to particular thread local variables.
 
 ### Better diagnosis of call to deleted functions
 
