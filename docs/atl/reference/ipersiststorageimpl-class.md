@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: IPersistStorageImpl Class"
 title: "IPersistStorageImpl Class"
+description: "Learn more about: IPersistStorageImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPersistStorageImpl", "ATLCOM/ATL::IPersistStorageImpl", "ATLCOM/ATL::IPersistStorageImpl::GetClassID", "ATLCOM/ATL::IPersistStorageImpl::HandsOffStorage", "ATLCOM/ATL::IPersistStorageImpl::InitNew", "ATLCOM/ATL::IPersistStorageImpl::IsDirty", "ATLCOM/ATL::IPersistStorageImpl::Load", "ATLCOM/ATL::IPersistStorageImpl::Save", "ATLCOM/ATL::IPersistStorageImpl::SaveCompleted"]
 helpviewer_keywords: ["storage, ATL", "IPersistStorageImpl class"]
-ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
 ---
 # IPersistStorageImpl Class
 

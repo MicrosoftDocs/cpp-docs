@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Type conversions and type safety"
 title: "Type conversions and type safety"
+description: "Learn more about: Type conversions and type safety"
 ms.date: "11/19/2019"
 ms.topic: "conceptual"
-ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
 ---
 # Type conversions and type safety
 

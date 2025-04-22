@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: #import directive (C++)"
 title: "#import directive (C++)"
+description: "Learn more about: #import directive (C++)"
 ms.date: "08/29/2019"
 f1_keywords: ["#import"]
 helpviewer_keywords: [".tlh files", "#import directive", "import directive (#import)", "tlh files", "tlbid switch", "preprocessor, directives", "COM, type library header file"]
-ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
 ---
 # #import directive (C++)
 

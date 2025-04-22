@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: String  (C++/CLI and C++/CX)"
 title: "String  (C++/CLI and C++/CX)"
+description: "Learn more about: String  (C++/CLI and C++/CX)"
 ms.date: "10/08/2018"
 ms.topic: "reference"
 helpviewer_keywords: ["string support with /clr", "/clr compiler option [C++], string support"]
-ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
 ---
 # String  (C++/CLI and C++/CX)
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about the ranges view classes, which allow you to inexpensively transform ranges."
 title: "View classes"
+description: "Learn more about the ranges view classes, which allow you to inexpensively transform ranges."
 ms.date: 12/20/2022
 f1_keywords: ["RANGES/std::ranges::views", "RANGES/std::views"]
 helpviewer_keywords: ["RANGES/VIEWS/std", "VIEWS/std"]

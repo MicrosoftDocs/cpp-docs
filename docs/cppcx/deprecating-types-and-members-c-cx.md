@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Deprecating types and members (C++/CX)"
 title: "Deprecating types and members (C++/CX)"
+description: "Learn more about: Deprecating types and members (C++/CX)"
 ms.date: 01/07/2022
 no-loc: [ "class", "delegate", "enum", "field", "interface", "method", "property", "struct" ]
 ---
