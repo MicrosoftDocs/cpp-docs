@@ -172,7 +172,7 @@ The C-style cast operator is identical to the call operator () and is therefore 
 
 ## See also
 
-[C++ type system](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
+[C++ type system](../cpp/cpp-type-system-modern-cpp.md)\
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)\
+[C++ Language Reference](../cpp/cpp-language-reference.md)\
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

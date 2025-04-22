@@ -253,6 +253,6 @@ System.String
 
 ## See also
 
-[Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)<br/>
-[String and Character Literals](../cpp/string-and-character-literals-cpp.md)<br/>
+[Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)\
+[String and Character Literals](../cpp/string-and-character-literals-cpp.md)\
 [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)

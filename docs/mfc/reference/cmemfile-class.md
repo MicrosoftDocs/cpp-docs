@@ -85,7 +85,7 @@ virtual BYTE* Alloc(SIZE_T nBytes);
 
 ### Parameters
 
-*nBytes*<br/>
+*nBytes*\
 Number of bytes of memory to be allocated.
 
 ### Return Value
@@ -111,13 +111,13 @@ void Attach(
 
 ### Parameters
 
-*lpBuffer*<br/>
+*lpBuffer*\
 Pointer to the buffer to be attached to `CMemFile`.
 
-*nBufferSize*<br/>
+*nBufferSize*\
 An integer that specifies the size of the buffer in bytes.
 
-*nGrowBytes*<br/>
+*nGrowBytes*\
 The memory allocation increment in bytes.
 
 ### Remarks
@@ -145,13 +145,13 @@ CMemFile(
 
 ### Parameters
 
-*nGrowBytes*<br/>
+*nGrowBytes*\
 The memory allocation increment in bytes.
 
-*lpBuffer*
+*lpBuffer*\
 Pointer to a buffer that receives information of the size *nBufferSize*.
 
-*nBufferSize*<br/>
+*nBufferSize*\
 An integer that specifies the size of the file buffer, in bytes.
 
 ### Remarks
@@ -190,7 +190,7 @@ virtual void Free(BYTE* lpMem);
 
 ### Parameters
 
-*lpMem*<br/>
+*lpMem*\
 Pointer to the memory to be deallocated.
 
 ### Remarks
@@ -212,16 +212,16 @@ virtual UINT GetBufferPtr(
 
 ### Parameters
 
-*nCommand*<br/>
+*nCommand*\
 The [bufferCommand](buffercommand-enumeration.md) to carry out (`bufferCheck`, `bufferCommit`, `bufferRead`, or `bufferWrite` ).
 
-*nCount*<br/>
+*nCount*\
 Depending on *nCommand*, the number of bytes in the buffer to read, write, or commit. When reading from the buffer, specify -1 to return a buffer from the current position to the end of the file.
 
-*ppBufStart*<br/>
+*ppBufStart*\
 [out] The start of the buffer. Must be `NULL` when *nCommand* is `bufferCommit`.
 
-*ppBufMax*<br/>
+*ppBufMax*\
 [out] The end of the buffer. Must be `NULL` when nCommand is `bufferCommit`.
 
 ### Return Value
@@ -251,7 +251,7 @@ virtual void GrowFile(SIZE_T dwNewLen);
 
 ### Parameters
 
-*dwNewLen*<br/>
+*dwNewLen*\
 New size of the memory file.
 
 ### Remarks
@@ -271,13 +271,13 @@ virtual BYTE* Memcpy(
 
 ### Parameters
 
-*lpMemTarget*<br/>
+*lpMemTarget*\
 Pointer to the memory block into which the source memory will be copied.
 
-*lpMemSource*<br/>
+*lpMemSource*\
 Pointer to the source memory block.
 
-*nBytes*<br/>
+*nBytes*\
 Number of bytes to be copied.
 
 ### Return Value
@@ -300,10 +300,10 @@ virtual BYTE* Realloc(
 
 ### Parameters
 
-*lpMem*<br/>
+*lpMem*\
 A pointer to the memory block to be reallocated.
 
-*nBytes*<br/>
+*nBytes*\
 New size for the memory block.
 
 ### Return Value
@@ -316,5 +316,5 @@ Override this function to implement custom memory reallocation. If you override 
 
 ## See also
 
-[CFile Class](../../mfc/reference/cfile-class.md)<br/>
+[CFile Class](../../mfc/reference/cfile-class.md)\
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

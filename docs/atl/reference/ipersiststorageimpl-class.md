@@ -21,7 +21,7 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 
 #### Parameters
 
-*T*<br/>
+*T*\
 Your class, derived from `IPersistStorageImpl`.
 
 ## Members
@@ -158,7 +158,7 @@ See [IPersistStorage::SaveCompleted](/windows/win32/api/objidl/nf-objidl-ipersis
 
 ## See also
 
-[Storages and Streams](/windows/win32/Stg/storages-and-streams)<br/>
-[IPersistStreamInitImpl Class](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>
-[IPersistPropertyBagImpl Class](../../atl/reference/ipersistpropertybagimpl-class.md)<br/>
+[Storages and Streams](/windows/win32/Stg/storages-and-streams)\
+[IPersistStreamInitImpl Class](../../atl/reference/ipersiststreaminitimpl-class.md)\
+[IPersistPropertyBagImpl Class](../../atl/reference/ipersistpropertybagimpl-class.md)\
 [Class Overview](../../atl/atl-class-overview.md)

@@ -18,7 +18,7 @@ class CRowset
 
 ### Parameters
 
-*TAccessor*<br/>
+*TAccessor*\
 An accessor class. The default is `CAccessorBase`.
 
 ## Requirements
@@ -108,13 +108,13 @@ HRESULT Compare(const CBookmarkBase& bookmark1,
 
 #### Parameters
 
-*Bookmark1*<br/>
+*Bookmark1*\
 [in] The first bookmark to compare.
 
-*Bookmark2*<br/>
+*Bookmark2*\
 [in] The second bookmark to compare.
 
-*pComparison*<br/>
+*pComparison*\
 [out] A pointer to the result of the comparison.
 
 ### Return Value
@@ -141,7 +141,7 @@ CRowset(IRowset* pRowset);
 
 #### Parameters
 
-*pRowset*<br/>
+*pRowset*\
 [in] A pointer to an `IRowset` interface to be associated with this class.
 
 ## <a name="delete"></a> CRowset::Delete
@@ -177,28 +177,28 @@ HRESULT FindNextRow(DBCOMPAREOP op,
 
 #### Parameters
 
-*op*<br/>
+*op*\
 [in] The operation to use in comparing row values. For values, see [IRowsetFind::FindNextRow](/previous-versions/windows/desktop/ms723091(v=vs.85)).
 
-*pData*<br/>
+*pData*\
 [in] A pointer to the value to be matched.
 
-*wType*<br/>
+*wType*\
 [in] Indicates the data type of the value part of the buffer. For information about type indicators, see [Data Types](/previous-versions/windows/desktop/ms723969(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
-*nLength*<br/>
+*nLength*\
 [in] The length, in bytes, of the consumer data structure allocated for the data value. For details, see the description of `cbMaxLen` in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845(v=vs.85)) in the *OLE DB Programmer's Reference.*
 
-*bPrecision*<br/>
+*bPrecision*\
 [in] The maximum precision used when getting data. Used only if *wType* is DBTYPE_NUMERIC. For more information, see [Conversions involving DBTYPE_NUMERIC or DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-*bScale*<br/>
+*bScale*\
 [in] The scale used when getting data. Used only if *wType* is DBTYPE_NUMERIC or DBTYPE_DECIMAL. For more information, see [Conversions involving DBTYPE_NUMERIC or DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-*bSkipCurrent*<br/>
+*bSkipCurrent*\
 [in] The number of rows from the bookmark at which to start a search.
 
-*pBookmark*<br/>
+*pBookmark*\
 [in] The bookmark for position at which to start a search.
 
 ### Return Value
@@ -225,13 +225,13 @@ HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark,
 
 #### Parameters
 
-*pBookmark*<br/>
+*pBookmark*\
 [in] A pointer to a bookmark that identifies the row whose position is to be found. NULL if only the row count is required.
 
-*pPosition*<br/>
+*pPosition*\
 [out] A pointer to the location where `GetApproximatePosition` returns the position of the row. NULL if the position is not required.
 
-*pcRows*<br/>
+*pcRows*\
 [out] A pointer to the location where `GetApproximatePosition` returns the total number of rows. NULL if the row count is not required.
 
 ### Return Value
@@ -258,7 +258,7 @@ HRESULT GetData(int nAccessor) throw();
 
 #### Parameters
 
-*nAccessor*<br/>
+*nAccessor*\
 [in] The (zero-offset) index number of the accessor to use for accessing the data.
 
 ### Return Value
@@ -282,10 +282,10 @@ HRESULT GetDataHere(int nAccessor,
 
 #### Parameters
 
-*nAccessor*<br/>
+*nAccessor*\
 [in] The index number of the accessor to use for accessing the data.
 
-*pBuffer*<br/>
+*pBuffer*\
 [out] A buffer into which to place the data for the current record.
 
 ### Return Value
@@ -328,7 +328,7 @@ HRESULT GetRowStatus(DBPENDINGSTATUS* pStatus) const throw();
 
 #### Parameters
 
-*pStatus*<br/>
+*pStatus*\
 [out] A pointer to a location where `GetRowStatus` returns the status value. See DBPENDINGSTATUS in the OLE DB Programmer's Reference.
 
 ### Return Value
@@ -352,10 +352,10 @@ HRESULT Insert(int nAccessor = 0,
 
 #### Parameters
 
-*nAccessor*<br/>
+*nAccessor*\
 [in] The number of the accessor to use for inserting the data.
 
-*bGetHRow*<br/>
+*bGetHRow*\
 [in] Indicates whether the handle for the inserted row is retrieved.
 
 ### Return Value
@@ -388,7 +388,7 @@ HRESULT IsSameRow(HROW hRow) const throw();
 
 #### Parameters
 
-*hRow*<br/>
+*hRow*\
 [in] A handle to the row to compare to the current row.
 
 ### Return Value
@@ -448,10 +448,10 @@ HRESULT MoveNext(LONG lSkip,
 
 #### Parameters
 
-*lSkip*<br/>
+*lSkip*\
 [in] The number of rows to skip before fetching.
 
-*bForward*<br/>
+*bForward*\
 [in] Pass **`true`** to move forward to the next record, **`false`** to move backward.
 
 ### Return Value
@@ -501,10 +501,10 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 #### Parameters
 
-*bookmark*<br/>
+*bookmark*\
 [in] A bookmark marking the location from which you want to fetch data.
 
-*lSkip*<br/>
+*lSkip*\
 [in] The number count of rows from the bookmark to the target row. If *lSkip* is zero, the first row fetched is the bookmarked row. If *lSkip* is 1, the first row fetched is the row after the bookmarked row. If *lSkip* is -1, the first row fetched is the row before the bookmarked row.
 
 ### Return Value
@@ -530,13 +530,13 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
 
 #### Parameters
 
-*nNumerator*<br/>
+*nNumerator*\
 [in] The numerator used to determine the fractional positional from which to fetch data.
 
-*nDenominator*<br/>
+*nDenominator*\
 [in] The denominator used to determine the fractional positional from which to fetch data.
 
-*bForward*<br/>
+*bForward*\
 [in] Indicates whether to move forward or backward. The default is forward.
 
 ### Return Value
@@ -581,7 +581,7 @@ HRESULT SetData(int nAccessor) const throw();
 
 #### Parameters
 
-*nAccessor*<br/>
+*nAccessor*\
 [in] The number of the accessor to use for accessing the data.
 
 ### Return Value
@@ -610,13 +610,13 @@ HRESULT Undo(DBCOUNTITEM* pcRows = NULL,
 
 #### Parameters
 
-*pcRows*<br/>
+*pcRows*\
 [out] A pointer to the location where `Undo` returns the number of rows it attempted to undo if required.
 
-*phRow*<br/>
+*phRow*\
 [out] A pointer to the location where `Undo` returns an array of handles to all rows it attempted to undo if required.
 
-*pStatus*<br/>
+*pStatus*\
 [out] A pointer to the location where `Undo` returns the row status value. No status is returned if *pStatus* is null.
 
 ### Return Value
@@ -641,13 +641,13 @@ HRESULT Update(DBCOUNTITEM* pcRows = NULL,
 
 #### Parameters
 
-*pcRows*<br/>
+*pcRows*\
 [out] A pointer to the location where `Update` returns the number of rows it attempted to update, if required.
 
-*phRow*<br/>
+*phRow*\
 [out] A pointer to the location where `Update` returns the handle of the row it attempted to update. No handle is returned if *phRow* is null.
 
-*pStatus*<br/>
+*pStatus*\
 [out] A pointer to the location where `Update` returns the row status value. No status is returned if *pStatus* is null.
 
 ### Return Value
@@ -674,13 +674,13 @@ HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,
 
 #### Parameters
 
-*pcRows*<br/>
+*pcRows*\
 [out] A pointer to the location where `UpdateAll` returns the number of rows it attempted to update, if required.
 
-*pphRow*<br/>
+*pphRow*\
 [out] A pointer to memory in which `UpdateAll` returns the handle of the row it attempted to update. No handle is returned if *pphRow* is null.
 
-*ppStatus*<br/>
+*ppStatus*\
 [out] A pointer to the location where `Update` returns the row status value. No status is returned if *ppStatus* is null.
 
 ### Remarks
@@ -697,8 +697,8 @@ A standard HRESULT.
 
 ## See also
 
-[DBViewer Sample](../../overview/visual-cpp-samples.md)<br/>
-[MultiRead Sample](../../overview/visual-cpp-samples.md)<br/>
-[MultiRead Attributes Sample](../../overview/visual-cpp-samples.md)<br/>
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[DBViewer Sample](../../overview/visual-cpp-samples.md)\
+[MultiRead Sample](../../overview/visual-cpp-samples.md)\
+[MultiRead Attributes Sample](../../overview/visual-cpp-samples.md)\
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)\
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
