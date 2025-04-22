@@ -9,7 +9,7 @@ helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/source
 ---
 # `/sourceDependencies:directives` (List module and header unit dependencies)
 
-This command-line option scans source files and their `#include` statements to generate a JSON file that lists module export and imports. This information can be used by a build system to determine the build order of modules and header units.
+This command-line option scans source files and their `#include` statements to generate a JSON file that lists module export and imports. A build system can use this information to determine the build order of modules and header units.
 
 This option differs from [`/sourceDependencies`](sourcedependencies.md) in the following ways:
 
@@ -99,7 +99,7 @@ No *`.ifc`* files are listed in the output because they weren't built. Unlike `/
 
 ## To set this compiler option in Visual Studio
 
-You normally shouldn't set this option yourself in the Visual Studio development environment. It's set by the build system.
+You normally shouldn't set this option yourself in the Visual Studio development environment. The build system sets it.
 
 ## See also
 

@@ -40,7 +40,7 @@ namespace ModuleA_NS
 }
 ```
 
-Non-exported names aren't visible to code that imports the module:
+Nonexported names aren't visible to code that imports the module:
 
 ```cpp
 import ModuleA;
