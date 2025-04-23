@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: IOleControlImpl Class"
 title: "IOleControlImpl Class"
+description: "Learn more about: IOleControlImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IOleControlImpl", "ATLCTL/ATL::IOleControlImpl", "ATLCTL/ATL::IOleControlImpl::FreezeEvents", "ATLCTL/ATL::IOleControlImpl::GetControlInfo", "ATLCTL/ATL::IOleControlImpl::OnAmbientPropertyChange", "ATLCTL/ATL::IOleControlImpl::OnMnemonic"]
 helpviewer_keywords: ["IOleControlImpl class"]
-ms.assetid: 5a4255ad-ede4-49ca-ba9a-07c2e919fa85
 ---
 # IOleControlImpl Class
 
@@ -22,7 +21,7 @@ class IOleControlImpl
 
 #### Parameters
 
-*T*<br/>
+*T*\
 Your class, derived from `IOleControlImpl`.
 
 ## Members
@@ -76,7 +75,7 @@ HRESULT GetControlInfo(LPCONTROLINFO pCI);
 
 ### Remarks
 
-See [IOleControl:GetControlInfo](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo) in the Windows SDK.
+See [IOleControl::GetControlInfo](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo) in the Windows SDK.
 
 ### Return Value
 
@@ -116,6 +115,6 @@ See [IOleControl::OnMnemonic](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-onmn
 
 ## See also
 
-[IOleObjectImpl Class](../../atl/reference/ioleobjectimpl-class.md)<br/>
-[ActiveX Controls Interfaces](/windows/win32/com/activex-controls-interfaces)<br/>
+[IOleObjectImpl Class](../../atl/reference/ioleobjectimpl-class.md)\
+[ActiveX Controls Interfaces](/windows/win32/com/activex-controls-interfaces)\
 [Class Overview](../../atl/atl-class-overview.md)

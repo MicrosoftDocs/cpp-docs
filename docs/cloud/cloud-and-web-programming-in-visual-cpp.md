@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Cloud and Web Programming in Visual C++"
 title: "Cloud and Web Programming in Visual C++"
+description: "Learn more about: Cloud and Web Programming in Visual C++"
 ms.date: "05/14/2019"
-ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
 ms.topic: "overview"
 ms.custom: intro-overview
 ---
@@ -43,7 +42,7 @@ In C++, you have several options for connecting to the web and the cloud.
 
 - [Windows::Web::Http::HttpClient](/uwp/api/windows.web.http.httpclient)
 
-  A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more. For apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web:HttpClient` class.
+  A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more. For apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web::Http::HttpClient` class.
 
 - [IXMLHTTPRequest2 interface](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2)
 
@@ -55,6 +54,6 @@ In C++, you have several options for connecting to the web and the cloud.
 
 ## See also
 
-[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md) <br/>
-[Microsoft Azure C and C++ Developer Center](https://azure.microsoft.com/develop/cpp/) <br/>
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)\
+[Microsoft Azure C and C++ Developer Center](https://azure.microsoft.com/develop/cpp/)\
 [Networks and web services (UWP)](/windows/uwp/networking/)
