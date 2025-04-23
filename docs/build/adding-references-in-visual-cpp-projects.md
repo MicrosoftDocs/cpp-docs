@@ -21,13 +21,13 @@ To consume a library that you have downloaded by using the **vcpkg** package man
 
 If your static library project gets built in the same solution:
 
-1. #include the header file(s) for the static library using quotation marks. In a typical solution, the path starts with `../<library project name>`. IntelliSense will help you find it.
+1. `#include` the header file(s) for the static library using quotation marks. In a typical solution, the path starts with `../<library project name>`. IntelliSense will help you find it.
 2. Add a reference to the static library project. Right-click on **References** under the application project node in **Solution Explorer** and choose **Add Reference**.
 
 If the static library isn't part of the solution:
 
 1. Right-click on the application project node in **Solution Explorer** and then choose **Properties**.
-2. In the **VC++ Directories** property page, add the path to the directory that contains the LIB file to **Library Paths**. Then, add the path to the library header file(s) to **Include Directories**.  
+2. In the **VC++ Directories** property page, add the path to the directory that contains the LIB file to **Library Directories**. Then, add the path to the library header file(s) to **Include Directories**.  
 3. In the **Linker > Input** property page, add the name of the LIB file to **Additional Dependencies**.
 
 ## Dynamic link libraries
@@ -161,5 +161,5 @@ The following properties exist on COM and .NET assembly references, and aren't m
 
 ## See also
 
-[C++ project property page reference](reference/property-pages-visual-cpp.md)<br>
+[C++ project property page reference](reference/property-pages-visual-cpp.md)\
 [Set C++ compiler and build properties in Visual Studio](working-with-project-properties.md)
