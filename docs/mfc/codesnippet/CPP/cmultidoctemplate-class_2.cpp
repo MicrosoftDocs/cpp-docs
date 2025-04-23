@@ -23,7 +23,7 @@ return FALSE;
 // After the following call, MFC is aware of the doc
 // template and will free it when the application is
 // shut down. The doc templates known to MFC will
-// automatically be used when CWinApp:OnFileOpen()
+// automatically be used when CWinApp::OnFileOpen()
 // or CWinApp::OnFileNew() are called.
 
 AddDocTemplate(pDocTemplate);
