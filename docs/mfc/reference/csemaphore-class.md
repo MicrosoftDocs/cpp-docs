@@ -4,15 +4,14 @@ title: "CSemaphore Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSemaphore", "AFXMT/CSemaphore", "AFXMT/CSemaphore::CSemaphore"]
 helpviewer_keywords: ["CSemaphore [MFC], CSemaphore"]
-ms.assetid: 385fc7e4-8f86-4be2-85e1-d23b38c12f7f
 ---
 # CSemaphore Class
 
-An object of class `CSemaphore` represents a "semaphore" — a synchronization object that allows a limited number of threads in one or more processes to access a Maintains a count of the number of threads currently accessing a specified resource.
+An object of class `CSemaphore` represents a "semaphore". A semaphore is a synchronization object that controls access to shared resources and prevents race conditions.
 
 ## Syntax
 
-```
+```cpp
 class CSemaphore : public CSyncObject
 ```
 
@@ -22,7 +21,7 @@ class CSemaphore : public CSyncObject
 
 |Name|Description|
 |----------|-----------------|
-|[CSemaphore::CSemaphore](#csemaphore)|Constructs a `CSemaphore` object.|
+|[`CSemaphore::CSemaphore`](#csemaphore)|Constructs a `CSemaphore` object.|
 
 ## Remarks
 
@@ -54,7 +53,7 @@ For more information on how to use `CSemaphore` objects, see the article [Multit
 
 Constructs a named or unnamed `CSemaphore` object.
 
-```
+```cpp
 CSemaphore(
     LONG lInitialCount = 1,
     LONG lMaxCount = 1,
