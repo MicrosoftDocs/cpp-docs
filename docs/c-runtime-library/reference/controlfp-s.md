@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: _controlfp_s"
 title: "_controlfp_s"
-ms.date: "4/2/2020"
+ms.date: 03/27/2025
 api_name: ["_controlfp_s", "_o__controlfp_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -75,15 +75,22 @@ _controlfp_s(&current_word, _DN_FLUSH, _MCW_DN);
 // and x64 processors with SSE2 support. Ignored on other x86 platforms.
 ```
 
-On ARM platforms, the **`_controlfp_s`** function applies to the FPSCR register. On x64 architectures, only the SSE2 control word that's stored in the MXCSR register is affected. On Intel (x86) platforms, **`_controlfp_s`** affects the control words for both the x87 and the SSE2, if present. It's possible for the two control words to be inconsistent with each other (because of a previous call to [`__control87_2`](control87-controlfp-control87-2.md), for example); if there's an inconsistency between the two control words, **`_controlfp_s`** sets the `EM_AMBIGUOUS` flag in *`currentControl`*. It's a warning that the returned control word might not represent the state of both floating-point control words accurately.
+This function is ignored when you use [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile because the common language runtime (CLR) only supports the default floating-point precision.
 
-On the ARM and x64 architectures, changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
+On x64, only the SSE2 control word stored in the MXCSR register is affected. Changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion and the invalid parameter handler is invoked as described in [Parameter validation](../parameter-validation.md).
+
+On x86, **`_controlfp_s`** affects the control words for both the x87 and the SSE2, if present. It's possible for the two control words to be inconsistent with each other (because of a previous call to [`__control87_2`](control87-controlfp-control87-2.md), for example); if there's an inconsistency between the two control words, **`_controlfp_s`** sets the `EM_AMBIGUOUS` flag in *`currentControl`*. It's a warning that the returned control word might not represent the state of both floating-point control words accurately.
 
 If the mask isn't set correctly, this function generates an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, this function returns `EINVAL` and sets `errno` to `EINVAL`.
 
-This function is ignored when you use [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile because the common language runtime (CLR) only supports the default floating-point precision.
-
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+### Arm platforms
+
+- Changing the infinity mode or the floating-point precision isn't supported. If the precision control mask is used on the x64 platform, the function raises an assertion and the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
+- On ARM32 (discontinued), Windows doesn't support FP exceptions.
+- On ARM64, unmasking the whole `_MCW_EM` or any bits from it (`_EM_INEXACT`, `_EM_UNDERFLOW`, `_EM_OVERFLOW`, `_EM_ZERODIVIDE`, and `_EM_INVALID`) correctly change the FPCR register. Floating point exceptions raised by standard math functions, like Invalid operation from `std::acos`, are exempt from this behavior and can be ignored or raised properly depending on the FPCR register. For more information, see [Overview of ARM32 ABI Conventions](../../build/overview-of-arm-abi-conventions.md#floating-point-exceptions).
+- On ARM64EC, Windows catches processor floating-point exceptions and disables them in the FPCR register. This ensures consistent behavior across different processor variants.
 
 ### Mask constants and values
 
