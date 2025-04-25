@@ -21,7 +21,7 @@ To build and test the iOS app, you'll need a Mac computer. Set it up according t
 
 ## Create a new OpenGLES Application project
 
-In this tutorial, you first create a new OpenGL ES Application project. and then build and run the default app in an Android emulator. Next you build the app for iOS and run the app on an iOS device.
+In this tutorial, you first create a new OpenGL ES Application project and then build and run it in an Android emulator. Next you build the app for iOS and run the app on an iOS device.
 
 ::: moniker range="msvc-150"
 
@@ -53,7 +53,7 @@ In this tutorial, you first create a new OpenGL ES Application project. and then
 
 ::: moniker-end
 
-The new OpenGL ES Application solution includes three library projects and two application projects. The Libraries folder includes a shared code project. And, two platform-specific projects that reference the shared code:
+The new OpenGL ES Application solution includes three library projects and two application projects. The Libraries folder includes a shared code project, and two platform-specific projects that reference the shared code:
 
 - `MyOpenGLESApp.Android.NativeActivity` contains the references and glue code that implements your app as a Native Activity on Android. The entry points from the glue code are implemented in *main.cpp*, which includes the common shared code in `MyOpenGLESApp.Shared`. Precompiled headers are in *pch.h*. This Native Activity app project is compiled into a shared library (*.so*) file, which is picked up by the `MyOpenGLESApp.Android.Packaging` project.
 
