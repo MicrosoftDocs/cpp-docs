@@ -1,15 +1,15 @@
 ---
 description: "Learn more about: Overview of ARM64 ABI conventions"
 title: "Overview of ARM64 ABI conventions"
-ms.date: "03/27/2019"
+ms.date: 04/08/2025
 ---
 # Overview of ARM64 ABI conventions
 
-The basic application binary interface (ABI) for Windows when compiled and run on ARM processors in 64-bit mode (ARMv8 or later architectures), for the most part, follows ARM's standard AArch64 EABI. This article highlights some of the key assumptions and changes from what is documented in the EABI. For information about the 32-bit ABI, see [Overview of ARM ABI conventions](overview-of-arm-abi-conventions.md). For more information about the standard ARM EABI, see [Application Binary Interface (ABI) for the ARM Architecture](https://github.com/ARM-software/abi-aa) (external link).
+The basic application binary interface (ABI) for Windows when compiled and run on ARM processors in 64-bit mode (ARMv8 or later architectures), usually follows ARM's standard AArch64 EABI. This article highlights some of the key assumptions and changes from what is documented in the EABI. For information about the 32-bit ABI, see [Overview of ARM ABI conventions](overview-of-arm-abi-conventions.md). For more information about the standard ARM EABI, see [Application Binary Interface (ABI) for the ARM Architecture](https://github.com/ARM-software/abi-aa) (external link).
 
 ## Definitions
 
-With the introduction of 64-bit support, ARM has defined several terms:
+With the introduction of 64-bit support, ARM defined several terms:
 
 - **AArch32** – the legacy 32-bit instruction set architecture (ISA) defined by ARM, including Thumb mode execution.
 - **AArch64** – the new 64-bit instruction set architecture (ISA) defined by ARM.
@@ -19,8 +19,9 @@ With the introduction of 64-bit support, ARM has defined several terms:
 Windows also uses these terms:
 
 - **ARM** – refers to the 32-bit ARM architecture (AArch32), sometimes referred to as WoA (Windows on ARM).
-- **ARM32** – same as ARM, above; used in this document for clarity.
+- **ARM32** – same as **ARM**. Used in this document for clarity.
 - **ARM64** – refers to the 64-bit ARM architecture (AArch64). There's no such thing as WoA64.
+- **ARM64EC** - code built as ARM64EC can interoperate with x64 code running under emulation in the same process. The Arm64EC code in the process runs with native performance, while the x64 code runs using emulation.
 
 Finally, when referring to data types, the following definitions from ARM are referenced:
 
@@ -30,7 +31,7 @@ Finally, when referring to data types, the following definitions from ARM are re
 
 ## Base requirements
 
-The ARM64 version of Windows presupposes that it's running on an ARMv8 or later architecture at all times. Both floating-point and NEON support are presumed to be present in hardware.
+The ARM64 version of Windows always presupposes that it's running on an ARMv8 or later architecture. Both floating-point and NEON support are presumed to be present in hardware.
 
 The ARMv8 specification describes new optional crypto and CRC helper opcodes for both AArch32 and AArch64. Support for them is currently optional, but recommended. To take advantage of these opcodes, apps should first make runtime checks for their existence.
 
@@ -74,7 +75,7 @@ The AArch64 architecture supports 32 integer registers:
 | x18 | N/A | Reserved platform register: in kernel mode, points to KPCR for the current processor; In user mode, points to TEB |
 | x19-x28 | Non-volatile | Scratch registers |
 | x29/fp | Non-volatile | Frame pointer |
-| x30/lr | Both | Link Register: Callee function must preserve it for its own return, but caller's value will be lost. |
+| x30/lr | Both | Link Register: Callee function must preserve it for its own return, but caller's value is lost. |
 
 Each register may be accessed as a full 64-bit value (via x0-x30) or as a 32-bit value (via w0-w30). 32-bit operations zero-extend their results up to 64 bits.
 
@@ -86,7 +87,7 @@ The frame pointer (x29) is required for compatibility with fast stack walking us
 
 ## Floating-point/SIMD registers
 
-The AArch64 architecture also supports 32 floating-point/SIMD registers, summarized below:
+The AArch64 architecture also supports these 32 floating-point/SIMD registers:
 
 | Register | Volatility | Role |
 | - | - | - |
@@ -118,7 +119,11 @@ Like AArch32, the AArch64 specification provides three system-controlled "thread
 
 ## Floating-point exceptions
 
-Support for IEEE floating-point exceptions on AArch64 systems is optional. This can be verified by writing a value that enables exceptions to the `FPCR` register and then reading it back. The bits corresponding to supported exceptions will remain set, while the bits corresponding to unsupported exceptions will be reset by the CPU.
+To determine if an ARM CPU supports exceptions, write a value that enables exceptions to the FPCR register and then read it back. If the CPU supports floating-point exceptions, the bits corresponding to supported exceptions remain set, while the CPU resets the bits for unsupported exceptions.
+
+On ARM64, Windows delivers exceptions for processors that support hardware floating-point exceptions.
+
+The [`_set_controlfp`](/cpp/c-runtime-library/reference/controlfp-s) function on ARM platforms correctly changes the FPCR register when unmasking floating-point exceptions. However, instead of raising an unmasked exception, Windows resets the FPCR register to its defaults every time an FP exception is about to be raised.
 
 ## Parameter passing
 
@@ -148,7 +153,7 @@ For each argument in the list, the first matching rule from the following list i
 
 ### Stage C – Assignment of arguments to registers and stack
 
-For each argument in the list, the following rules are applied in turn until the argument has been allocated. When an argument is assigned to a register, any unused bits in the register have unspecified value. If an argument is assigned to a stack slot, any unused padding bytes have unspecified value.
+For each argument in the list, the following rules are applied in turn until the argument is allocated. When an argument is assigned to a register, any unused bits in the register have unspecified value. If an argument is assigned to a stack slot, any unused padding bytes have unspecified value.
 
 1. If the argument is a Half-, Single-, Double- or Quad-precision Floating-point or Short Vector Type, and the NSRN is less than 8, then the argument is allocated to the least significant bits of register v\[NSRN]. The NSRN is incremented by one. The argument has now been allocated.
 
@@ -158,7 +163,7 @@ For each argument in the list, the following rules are applied in turn until the
 
 1. If the argument is an HFA, an HVA, a Quad-precision Floating-point or Short Vector Type, then the NSAA is rounded up to the larger of 8 or the Natural Alignment of the argument's type.
 
-1. If the argument is a Half- or Single-precision Floating Point type, then the size of the argument is set to 8 bytes. The effect is as if the argument had been copied to the least significant bits of a 64-bit register, and the remaining bits filled with unspecified values.
+1. If the argument is a Half- or Single-precision Floating Point type, then the size of the argument is set to 8 bytes. The effect is as if the argument were copied to the least significant bits of a 64-bit register, and the remaining bits filled with unspecified values.
 
 1. If the argument is an HFA, an HVA, a Half-, Single-, Double-, or Quad-precision Floating-point or Short Vector Type, then the argument is copied to memory at the adjusted NSAA. The NSAA is incremented by the size of the argument. The argument has now been allocated.
 
@@ -199,7 +204,7 @@ Floating-point values are returned in s0, d0, or v0, as appropriate.
 A type is considered to be an HFA or HVA if all of the following hold:
 
 - It's non-empty,
-- It doesn't have any non-trivial default or copy constructors, destructors, or assignment operators,
+- It doesn't have any nontrivial default or copy constructors, destructors, or assignment operators,
 - All of its members have the same HFA or HVA type, or are float, double, or neon types that match the other members' HFA or HVA types.
 
 HVA values with four or fewer elements are returned in s0-s3, d0-d3, or v0-v3, as appropriate.
@@ -210,12 +215,12 @@ Types returned by value are handled differently depending on whether they have c
 - they have a trivial copy-assignment operator, and
 - they have a trivial destructor,
 
-and are returned by non-member functions or static member functions, use the following return style:
+and are returned by nonmember functions or static member functions, use the following return style:
 
 - Types that are HFAs with four or fewer elements are returned in s0-s3, d0-d3, or v0-v3, as appropriate.
 - Types less than or equal to 8 bytes are returned in x0.
 - Types less than or equal to 16 bytes are returned in x0 and x1, with x0 containing the lower-order 8 bytes.
-- For other aggregate types, the caller shall reserve a block of memory of sufficient size and alignment to hold the result. The address of the memory block shall be passed as an additional argument to the function in x8. The callee may modify the result memory block at any point during the execution of the subroutine. The callee isn't required to preserve the value stored in x8.
+- For other aggregate types, the caller shall reserve a block of memory of sufficient size and alignment to hold the result. The address of the memory block shall be passed as another argument to the function in x8. The callee may modify the result memory block at any point during the execution of the subroutine. The callee isn't required to preserve the value stored in x8.
 
 All other types use this convention:
 
@@ -223,9 +228,9 @@ All other types use this convention:
 
 ## Stack
 
-Following the ABI put forth by ARM, the stack must remain 16-byte aligned at all times. AArch64 contains a hardware feature that generates stack alignment faults whenever the SP isn't 16-byte aligned and an SP-relative load or store is done. Windows runs with this feature enabled at all times.
+Following the ABI put forth by ARM, the stack must always remain 16-byte aligned. AArch64 contains a hardware feature that generates stack alignment faults whenever the SP isn't 16-byte aligned and an SP-relative load or store is done. Windows always runs with this feature enabled.
 
-Functions that allocate 4k or more worth of stack must ensure that each page prior to the final page is touched in order. This action ensures no code can "leap over" the guard pages that Windows uses to expand the stack. Typically the touching is done by the `__chkstk` helper, which has a custom calling convention that passes the total stack allocation divided by 16 in x15.
+Functions that allocate 4k or more worth of stack must ensure that each page before the final page is touched in order. This action ensures no code can "leap over" the guard pages that Windows uses to expand the stack. Typically the touching is done by the `__chkstk` helper, which has a custom calling convention that passes the total stack allocation divided by 16 in x15.
 
 ## Red zone
 
@@ -241,7 +246,7 @@ Code within Windows is compiled with frame pointers enabled ([/Oy-](reference/oy
 
 ## Exception unwinding
 
-Unwinding during exception handling is assisted through the use of unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable. They describe the operation of the prologue and epilogue in an abstract manner, such that the effects of a function's prologue can be undone in preparation for backing up to the caller's stack frame. For more information on the unwind codes, see [ARM64 exception handling](arm64-exception-handling.md).
+Unwinding during exception handling is assisted by using unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable. They describe the operation of the prologue and epilogue in an abstract manner, such that the effects of a function's prologue can be undone in preparation for backing up to the caller's stack frame. For more information on the unwind codes, see [ARM64 exception handling](arm64-exception-handling.md).
 
 The ARM EABI also specifies an exception unwinding model that uses unwind codes. However, the specification as presented is insufficient for unwinding in Windows, which must handle cases where the PC is in the middle of a function prologue or epilogue.
 
@@ -251,7 +256,7 @@ Code that is dynamically generated should be described with dynamic function tab
 
 All ARMv8 CPUs are required to support a cycle counter register, a 64-bit register that Windows configures to be readable at any exception level, including user mode. It can be accessed via the special PMCCNTR_EL0 register, using the MSR opcode in assembly code, or the `_ReadStatusReg` intrinsic in C/C++ code.
 
-The cycle counter here is a true cycle counter, not a wall clock. The counting frequency will vary with the processor frequency. If you feel you must know the frequency of the cycle counter, you shouldn't be using the cycle counter. Instead, you want to measure wall clock time, for which you should use `QueryPerformanceCounter`.
+The cycle counter here is a true cycle counter, not a wall clock. The counting frequency varies with the processor frequency. If you feel you must know the frequency of the cycle counter, you shouldn't be using the cycle counter. Instead, you want to measure wall clock time, for which you should use `QueryPerformanceCounter`.
 
 ## See also
 
