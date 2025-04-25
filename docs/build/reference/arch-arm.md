@@ -5,7 +5,7 @@ ms.date: 07/01/2022
 ---
 # `/arch` (ARM)
 
-Specifies the architecture for code generation on ARM. For more information on **`/arch`** for other target architectures, see [`/arch` (ARM64)](arch-arm64.md), [`/arch` (x64)](arch-x64.md), and [`/arch` (x86)](arch-x86.md)
+Specifies the architecture for code generation on ARM. These switches apply to the ARM version of the compiler. For more information on **`/arch`** for other target architectures, see [`/arch` (ARM64)](arch-arm64.md), [`/arch` (x64)](arch-x64.md), and [`/arch` (x86)](arch-x86.md)
 
 ## Syntax
 
