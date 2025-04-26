@@ -620,7 +620,7 @@ Draws the drag rectangle that appears when the user drags a pane in the standard
 A toolbar that appears when the user presses and holds a top-level toolbar button.
 
 [`CMFCDropDownToolbarButton` Class](cmfcdropdowntoolbarbutton-class.md)\
-A type of toolbar button that behaves like a regular button when it is clicked. However, it opens a drop-down toolbar ([`CMFCDropDownToolBar` Class](cmfcdropdowntoolbar-class.md) if the user presses and holds the toolbar button down.
+A type of toolbar button that behaves like a regular button when it is clicked. However, it opens a drop-down toolbar ([`CMFCDropDownToolBar` Class](cmfcdropdowntoolbar-class.md)) if the user presses and holds the toolbar button down.
 
 [`CMFCDynamicLayout` Class](cmfcdynamiclayout-class.md)\
 Specifies how controls in a window are moved and resized as the user resizes the window.
