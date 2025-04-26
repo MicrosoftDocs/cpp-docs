@@ -5,7 +5,7 @@ ms.date: 05/24/2024
 ---
 # `/arch` (ARM64)
 
-Specifies the Arm A-Profile architecture extension for code generation on ARM64. These switches apply to the ARM64 version of the compiler. For more information about **`/arch`** for other target architectures, see [`/arch` (x86)](arch-x86.md), [`/arch` (x64)](arch-x64.md), and [`/arch` (ARM)](arch-arm.md).
+Specifies the Arm A-Profile architecture extension for code generation on ARM64. These switches apply to the ARM64 targeting version of the compiler. For more information about **`/arch`** for other target architectures, see [`/arch` (x86)](arch-x86.md), [`/arch` (x64)](arch-x64.md), and [`/arch` (ARM)](arch-arm.md).
 
 ## Syntax
 

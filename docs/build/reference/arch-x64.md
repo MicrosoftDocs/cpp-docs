@@ -7,7 +7,7 @@ helpviewer_keywords: ["/arch:SSE2 compiler option [C++]", "/arch:SSE4.2 compiler
 ---
 # `/arch` (x64)
 
-Specifies the architecture for code generation on x64. These switches apply to the x64 version of the compiler. For more information on **`/arch`** for other target architectures, see [`/arch` (x86)](arch-x86.md), [`/arch` (ARM64)](arch-arm64.md), and [`/arch` (ARM)](arch-arm.md).
+Specifies the architecture for code generation on x64. These switches apply to the x64 targeting version of the compiler. For more information on **`/arch`** for other target architectures, see [`/arch` (x86)](arch-x86.md), [`/arch` (ARM64)](arch-arm64.md), and [`/arch` (ARM)](arch-arm.md).
 
 ## Syntax
 
