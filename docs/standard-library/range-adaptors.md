@@ -913,7 +913,7 @@ A [`lazy_split_view`](lazy-split-view-class.md) that contains one or more subran
 
 The delimiter isn't part of the result. For example, if you split the range `1,2,3` on the value `2`, you get two subranges: `1` and `3`.
 
-A related adaptor is [`split`](#split). The primary differences between [`split_view](split-view-class.md) and `lazy_split_view` are:
+A related adaptor is [`split`](#split). The primary differences between [`split_view`](split-view-class.md) and `lazy_split_view` are:
 
 | View | Can split a `const` range | Range iterator |
 |--|--|--|

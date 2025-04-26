@@ -3472,7 +3472,7 @@ This method generates an assertion failure in Debug builds if the specified `CMF
 
 The OutlookDemo, ToolTipDemo, and VisualStudioDemo samples use this method to set the global collection of user-defined images. They load the file that is named UserImages.bmp, which is located in the working directory of the application.
 
-Call the [`CMFCToolBar::GetUserImages](#getuserimages) method to retrieve the collection of user-defined images in the application.
+Call the [`CMFCToolBar::GetUserImages`](#getuserimages) method to retrieve the collection of user-defined images in the application.
 
 ## <a name="stretchpane"></a> `CMFCToolBar::StretchPane`
 
