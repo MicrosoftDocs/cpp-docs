@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: MFC` Classes"
-title: "MFC` Classes"
-ms.date: "11/04/2016"
+title: "MFC Classes"
+description: "Learn more about: MFC Classes"
+ms.date: 11/04/2016
 helpviewer_keywords: ["MFC, classes", "classes [MFC], MFC"]
-ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
 ---
 # MFC Classes
 
