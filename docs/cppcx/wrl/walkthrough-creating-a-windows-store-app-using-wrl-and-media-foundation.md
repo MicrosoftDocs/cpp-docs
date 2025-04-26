@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Creating a UWP app using WRL and Media Foundation"
 title: "Walkthrough: Creating a UWP app using WRL and Media Foundation"
+description: "Learn more about: Creating a UWP app using WRL and Media Foundation"
 ms.date: 04/15/2021
 ms.topic: "reference"
 ---
