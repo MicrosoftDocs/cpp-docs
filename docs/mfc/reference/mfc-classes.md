@@ -787,7 +787,7 @@ Implements a status bar similar to the `CStatusBar` class. However, the `CMFCSta
 [`CMFCTabCtrl` Class](cmfctabctrl-class.md)\
 Provides functionality for a tab control. The tab control displays a dockable window with flat or three-dimensional tabs at its top or bottom. The tabs can display text and an image and can change color when active.
 
-[`CMFCTabToolTipInfo Structure](cmfctabtooltipinfo-structure.md)\
+[`CMFCTabToolTipInfo` Structure](cmfctabtooltipinfo-structure.md)\
 Provides information about the MDI tab that the user is hovering over.
 
 [`CMFCTasksPane` Class](cmfctaskspane-class.md)\
