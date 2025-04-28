@@ -1,7 +1,7 @@
 ---
 title: Build reliable and secure C++ programs
 description: "Learn more about: Building reliable and secure C++ programs by applying NISTIR 8397 guidelines."
-ms.date: 09/28/2023
+ms.date: 04/25/2025
 ms.topic: "conceptual"
 ---
 
@@ -395,7 +395,7 @@ When using both sanitizers such as [Address Sanitizer (ASan)](../sanitizers/asan
 
 **Azure and GitHub CI/CD**
 
-Modify your build(s) to support continuous creation of executables that use LibFuzzer or AFL++. You can add extra computing resources required for fuzzing at services like  OSS-Fuzz or OneFuzz.
+Modify your build(s) to support continuous creation of executables that use LibFuzzer or AFL++. You can add extra computing resources required for fuzzing at services like  OSS-Fuzz.
 
 ## 2.10 Web Application Scanning
 
