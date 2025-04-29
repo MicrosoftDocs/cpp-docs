@@ -5,7 +5,7 @@ ms.date: 07/02/2021
 f1_keywords: ["VC.Project.VCCLCompilerTool.SpectreMitigation"]
 helpviewer_keywords: ["/Qspectre"]
 ---
-# /Qspectre
+# `/Qspectre`
 
 Specifies compiler generation of instructions to mitigate certain Spectre variant 1 security vulnerabilities.
 

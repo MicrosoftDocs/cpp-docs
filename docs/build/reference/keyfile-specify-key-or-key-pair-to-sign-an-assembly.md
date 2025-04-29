@@ -5,7 +5,7 @@ ms.date: 03/24/2025
 f1_keywords: ["/keyfile", "VC.Project.VCLinkerTool.KeyFile"]
 helpviewer_keywords: ["/KEYFILE linker option", "-KEYFILE linker option", "KEYFILE linker option"]
 ---
-# /KEYFILE (Specify Key or Key Pair to Sign an Assembly)
+# `/KEYFILE` (Specify Key or Key Pair to Sign an Assembly)
 
 ```
 /KEYFILE:filename
