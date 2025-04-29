@@ -20,7 +20,7 @@ File that contains the key. Place the string in double quotation marks (" ") if 
 
 The linker inserts the public key into the assembly manifest and then signs the final assembly with the private key. To generate a key file, type [`sn -k`](/dotnet/framework/tools/sn-exe-strong-name-tool) *filename* at the command line. A signed assembly is said to have a strong name.
 
-If you compile with [`/LN`](ln-create-msil-module.md), the name of the key file is held in the module and incorporated into the assembly that is created when you compile an assembly that includes an explicit reference to the module, via [`#using`](../../preprocessor/hash-using-directive-cpp.md), or when linking with `[/ASSEMBLYMODULE`](assemblymodule-add-a-msil-module-to-the-assembly.md).
+If you compile with [`/LN`](ln-create-msil-module.md), the name of the key file is held in the module and incorporated into the assembly that is created when you compile an assembly that includes an explicit reference to the module, via [`#using`](../../preprocessor/hash-using-directive-cpp.md), or when linking with [`/ASSEMBLYMODULE`](assemblymodule-add-a-msil-module-to-the-assembly.md).
 
 You can also pass your encryption information to the linker with [`/KEYCONTAINER`](keycontainer-specify-a-key-container-to-sign-an-assembly.md). Use [`/DELAYSIGN`](delaysign-partially-sign-an-assembly.md) if you want a partially signed assembly. For more information on signing an assembly, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md) and [Creating and Using Strong-Named Assemblies](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
