@@ -15,15 +15,8 @@ The `concurrent_unordered_multiset` class is an concurrency-safe container that 
 template <typename K,
     typename _Hasher = std::hash<K>,
     typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<K>
->,
-    typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<K>> class concurrent_unordered_multiset : public details::_Concurrent_hash<details::_Concurrent_unordered_set_traits<K,
-    details::_Hash_compare<K,
-_Hasher,
-    key_equality>,
-_Allocator_type,
-    true>>;
+    typename _Allocator_type = std::allocator<K>>
+class concurrent_unordered_multiset : public details::_Concurrent_hash<details::_Concurrent_unordered_set_traits<K, details::_Hash_compare<K, _Hasher, key_equality>, _Allocator_type, true>>;
 ```
 
 ### Parameters

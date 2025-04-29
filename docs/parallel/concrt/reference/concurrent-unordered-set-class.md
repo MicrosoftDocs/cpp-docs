@@ -15,15 +15,8 @@ The `concurrent_unordered_set` class is an concurrency-safe container that contr
 template <typename K,
     typename _Hasher = std::hash<K>,
     typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<K>
->,
-    typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<K>> class concurrent_unordered_set : public details::_Concurrent_hash<details::_Concurrent_unordered_set_traits<K,
-    details::_Hash_compare<K,
-_Hasher,
-    key_equality>,
-_Allocator_type,
-    false>>;
+    typename _Allocator_type = std::allocator<K>>
+class concurrent_unordered_set : public details::_Concurrent_hash<details::_Concurrent_unordered_set_traits<K, details::_Hash_compare<K, _Hasher, key_equality>, _Allocator_type, false>>;
 ```
 
 ### Parameters

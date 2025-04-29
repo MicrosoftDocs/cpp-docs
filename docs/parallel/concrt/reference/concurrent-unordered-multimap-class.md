@@ -16,18 +16,8 @@ template <typename K,
     typename _Element_type,
     typename _Hasher = std::hash<K>,
     typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<std::pair<const K,
-    _Element_type>>
->,
-typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<std::pair<const K,
-    _Element_type>>> class concurrent_unordered_multimap : public details::_Concurrent_hash<details::_Concurrent_unordered_map_traits<K,
-    _Element_type,
-details::_Hash_compare<K,
-    _Hasher,
-key_equality>,
-    _Allocator_type,
-true>>;
+    typename _Allocator_type = std::allocator<std::pair<const K, _Element_type>>>
+class concurrent_unordered_multimap : public details::_Concurrent_hash<details::_Concurrent_unordered_map_traits<K, _Element_type, details::_Hash_compare<K, _Hasher, key_equality>, _Allocator_type, true>>;
 ```
 
 ### Parameters
