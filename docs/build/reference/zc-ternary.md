@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: `/Zc:ternary` (Enforce conditional operator rules)"
 title: "/Zc:ternary (Enforce conditional operator rules)"
-ms.date: "09/12/2019"
+description: "Learn more about: `/Zc:ternary` (Enforce conditional operator rules)"
+ms.date: 09/12/2019
 f1_keywords: ["/Zc:ternary"]
 helpviewer_keywords: ["/Zc:ternary", "Zc:ternary", "-Zc:ternary"]
 ---
