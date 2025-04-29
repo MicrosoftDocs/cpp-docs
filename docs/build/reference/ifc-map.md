@@ -41,7 +41,7 @@ name = "N"
 ifc = "C:\\modules\\N.ifc"
 ```
 
-This IFC reference map file maps the named modules `'M'` and `'N'` to their respective IFC files. The equivalent [`/reference'](module-reference.md) is:
+This IFC reference map file maps the named modules `'M'` and `'N'` to their respective IFC files. The equivalent [`/reference`](module-reference.md) is:
 
 ```cmd
 /reference M=C:\modules\M.ifc /reference N=C:\modules\N.ifc

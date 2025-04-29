@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Creating a UWP app using WRL and Media Foundation"
 title: "Walkthrough: Creating a UWP app using WRL and Media Foundation"
+description: "Learn more about: Creating a UWP app using WRL and Media Foundation"
 ms.date: 04/15/2021
 ms.topic: "reference"
 ---
@@ -37,7 +37,7 @@ You can usually use C++/CX to create Windows Runtime components. However, someti
 
 - The `namespace` and `runtimeclass` attributes, and the `NTDDI_WIN8` [version](/windows/win32/Midl/version) attribute value are important parts of the MIDL definition for a Media Foundation component that uses WRL.
 
-- [`Microsoft::WRL::RuntimeClass`](runtimeclass-class.md) is the base class for the custom Media Foundation component. The [`Microsoft::WRL::RuntimeClassType::WinRtClassicComMix]`(runtimeclasstype-enumeration.md) enum value, which is provided as a template argument, marks the class for use both as a Windows Runtime class and as a classic COM runtime class.
+- [`Microsoft::WRL::RuntimeClass`](runtimeclass-class.md) is the base class for the custom Media Foundation component. The [`Microsoft::WRL::RuntimeClassType::WinRtClassicComMix`](runtimeclasstype-enumeration.md) enum value, which is provided as a template argument, marks the class for use both as a Windows Runtime class and as a classic COM runtime class.
 
 - The [`InspectableClass`](inspectableclass-macro.md) macro implements basic COM functionality such as reference counting and the `QueryInterface` method, and sets the runtime class name and trust level.
 
