@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Understanding manifest generation for C/C++ programs"
 title: "Understanding manifest generation for C/C++ programs"
+description: "Learn more about: Understanding manifest generation for C/C++ programs"
 ms.date: 06/10/2022
 helpviewer_keywords: ["manifests [C++]"]
-ms.assetid: a1f24221-5b09-4824-be48-92eae5644b53
 ---
 # Understanding manifest generation for C/C++ programs
 

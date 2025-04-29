@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /PDB (Use Program Database)"
 title: "/PDB (Use Program Database)"
+description: "Learn more about: /PDB (Use Program Database)"
 ms.date: 03/24/2025
 f1_keywords: ["/pdb", "VC.Project.VCLinkerTool.ProgramDatabaseFile"]
 helpviewer_keywords: ["-PDB linker option", "/PDB linker option", "PDB linker option", "PDB files, creating", ".pdb files, creating"]
