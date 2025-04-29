@@ -23,7 +23,7 @@ The **`/Zc:ternary`** option is off by default in Visual Studio 2017. Use **`/Zc
 
 ### Examples
 
-This sample shows how a class that provides both non-explicit initialization from a type, and conversion to a type, can lead to ambiguous conversions. This code is accepted by the compiler by default, but rejected when **/`Zc:ternary`** or **`/permissive-`** is specified.
+This sample shows how a class that provides both non-explicit initialization from a type, and conversion to a type, can lead to ambiguous conversions. This code is accepted by the compiler by default, but rejected when **`/Zc:ternary`** or **`/permissive-`** is specified.
 
 ```cpp
 // zcternary1.cpp

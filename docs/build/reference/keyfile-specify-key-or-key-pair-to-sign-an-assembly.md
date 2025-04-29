@@ -30,7 +30,7 @@ A key file might contain only the public key.
 
 Other linker options that affect assembly generation are:
 
-- [/`ASSEMBLYDEBUG`](assemblydebug-add-debuggableattribute.md)
+- [`/ASSEMBLYDEBUG`](assemblydebug-add-debuggableattribute.md)
 - [`/ASSEMBLYLINKRESOURCE`](assemblylinkresource-link-to-dotnet-framework-resource.md)
 - [`/ASSEMBLYMODULE`](assemblymodule-add-a-msil-module-to-the-assembly.md)
 - [`/ASSEMBLYRESOURCE`](assemblyresource-embed-a-managed-resource.md)
