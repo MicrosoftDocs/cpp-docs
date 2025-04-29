@@ -21,7 +21,7 @@ Specifies the name of the `.idl` file created by the MIDL compiler. No file exte
 
 ## Remarks
 
-The `/IDLOUT` option specifies the name and extension of the `.idl `file.
+The `/IDLOUT` option specifies the name and extension of the `.idl` file.
 
 The MIDL compiler is called by the MSVC linker when linking projects that have the [`module`](../../windows/attributes/module-cpp.md) attribute.
 

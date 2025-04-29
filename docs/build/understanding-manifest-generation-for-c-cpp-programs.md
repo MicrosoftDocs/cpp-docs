@@ -181,7 +181,7 @@ clean :
 #^^^^^^^^^^^^^^^^^^^^^^^^^ Change #4. (Add full path if necessary.)
 ```
 
-The makefiles now include two files that do the real work,*` makefile.inc`* and *`makefile.target.inc`*.
+The makefiles now include two files that do the real work, *`makefile.inc`* and *`makefile.target.inc`*.
 
 Create *`makefile.inc`* and copy the following content into it:
 

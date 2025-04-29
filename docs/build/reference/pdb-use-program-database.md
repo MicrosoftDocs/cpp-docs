@@ -22,7 +22,7 @@ A user-specified name for the program database (PDB) that the linker creates. It
 
 By default, when [`/DEBUG`](debug-generate-debug-info.md) is specified, the linker creates a program database (PDB) which holds debugging information. The default file name for the PDB has the base name of the program and the extension .pdb.
 
-Use `/PDB:`*`filename`* to specify the name of the PDB file. If `/DEBUG `is not specified, the `/PDB` option is ignored.
+Use `/PDB:`*`filename`* to specify the name of the PDB file. If `/DEBUG` is not specified, the `/PDB` option is ignored.
 
 A PDB file can be up to 2GB in size.
 
