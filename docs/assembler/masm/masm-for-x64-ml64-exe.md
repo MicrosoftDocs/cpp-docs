@@ -3,11 +3,10 @@ description: "Learn more about: Microsoft Macro Assembler (MASM) for x64 (ml64.e
 title: "MASM for x64 (ml64.exe)"
 ms.date: 09/21/2021
 helpviewer_keywords: ["ml64", "ml64.exe", "masm for x64"]
-ms.assetid: 89059103-f372-4968-80ea-0c7f90bb9c91
 ---
 # MASM for x64 (ml64.exe)
 
-Visual Studio includes both 32-bit and 64-bit hosted versions of MASM (the Microsoft Macro Assembler) to target x64 code. Named ml64.exe, it's the assembler that accepts x64 assembler language. The MASM command-line tools are installed when you choose a C++ workload during Visual Studio installation. The MASM tools aren't available as a separate download. For instructions on how to download and install a copy of Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). If you only want the command-line tools, not the full IDE, download the [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022).
+Visual Studio includes both 32-bit and 64-bit hosted versions of MASM (the Microsoft Macro Assembler) to target x64 code. Named ml64.exe, it's the assembler that accepts x64 assembly language. The MASM command-line tools are installed when you choose a C++ workload during Visual Studio installation. The MASM tools aren't available as a separate download. For instructions on how to download and install a copy of Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). If you only want the command-line tools, not the full IDE, download the [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022).
 
 To use ml64.exe on the command line, start a developer command prompt for x64 targets. A developer command prompt sets the required path and other environment variables. For information on how to start a developer command prompt, see [Build C/C++ code on the command line](../../build/building-on-the-command-line.md).
 
