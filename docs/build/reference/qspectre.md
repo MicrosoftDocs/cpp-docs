@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: /Qspectre"
 title: "/Qspectre"
+description: "Learn more about: /Qspectre"
 ms.date: 07/02/2021
 f1_keywords: ["VC.Project.VCCLCompilerTool.SpectreMitigation"]
 helpviewer_keywords: ["/Qspectre"]
 ---
-# /Qspectre
+# `/Qspectre`
 
 Specifies compiler generation of instructions to mitigate certain Spectre variant 1 security vulnerabilities.
 
@@ -38,7 +38,7 @@ If your code operates on data that crosses a trust boundary, then we recommend y
 
 The **`/Qspectre`** option is available starting in Visual Studio 2017 version 15.5.5, and in all updates to Microsoft C/C++ compilers (MSVC) made on or after January 23, 2018. Use the Visual Studio Installer to update the compiler, and to install the Spectre-mitigated libraries as individual components. The **`/Qspectre`** option is also available in Visual Studio 2015 Update 3 through a patch. For more information, see [KB 4338871](https://support.microsoft.com/help/4338871).
 
-All versions of Visual Studio 2017 version 15.5, and all Previews of Visual Studio 2017 version 15.6. include an undocumented option, **/`d2guardspecload`**. It's equivalent to the initial behavior of **`/Qspectre`**. You can use **`/d2guardspecload`** to apply the same mitigations to your code in these versions of the compiler. We recommend you update your build to use **`/Qspectre`** in compilers that support the option. The **`/Qspectre`** option may also support new mitigations in later versions of the compiler.
+All versions of Visual Studio 2017 version 15.5, and all Previews of Visual Studio 2017 version 15.6. include an undocumented option, **`/d2guardspecload`**. It's equivalent to the initial behavior of **`/Qspectre`**. You can use **`/d2guardspecload`** to apply the same mitigations to your code in these versions of the compiler. We recommend you update your build to use **`/Qspectre`** in compilers that support the option. The **`/Qspectre`** option may also support new mitigations in later versions of the compiler.
 
 ### Effect
 

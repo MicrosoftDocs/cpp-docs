@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /IDLOUT (Name MIDL Output Files)"
 title: "/IDLOUT (Name MIDL Output Files)"
+description: "Learn more about: /IDLOUT (Name MIDL Output Files)"
 ms.date: 03/27/2025
 f1_keywords: ["/idlout", "VC.Project.VCLinkerTool.MergedIDLBaseFileName"]
 helpviewer_keywords: ["MIDL, output file names", ".idl files, path", "MIDL", "/IDLOUT linker option", "IDL files, path", "-IDLOUT linker option", "IDLOUT linker option"]
@@ -21,7 +21,7 @@ Specifies the name of the `.idl` file created by the MIDL compiler. No file exte
 
 ## Remarks
 
-The `/IDLOUT` option specifies the name and extension of the `.idl `file.
+The `/IDLOUT` option specifies the name and extension of the `.idl` file.
 
 The MIDL compiler is called by the MSVC linker when linking projects that have the [`module`](../../windows/attributes/module-cpp.md) attribute.
 

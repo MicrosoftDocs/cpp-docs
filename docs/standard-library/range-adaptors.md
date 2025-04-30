@@ -1389,7 +1389,7 @@ int main()
 Create a [`values_view`](values-view-class.md) that consists of the second index into each tuple-like value in a collection. This is useful for making a view of the values in an associative container. For example, given a range of `std::tuple<string, int>` values, create a view that consists of all the `int` elements from each tuple.
 
 ```cpp
-template <range::viewable_range R>
+template <ranges::viewable_range R>
 constexpr ranges::view auto values(R&& rg);
 ```
 

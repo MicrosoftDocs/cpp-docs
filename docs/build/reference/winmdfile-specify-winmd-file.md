@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /WINMDFILE (Specify winmd File)"
 title: "/WINMDFILE (Specify winmd File)"
+description: "Learn more about: /WINMDFILE (Specify winmd File)"
 ms.date: 03/27/2025
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateWindowsMetadataFile"]
 ---
@@ -31,6 +31,6 @@ Use the value that is specified in `filename` to override the default `.winmd` f
 
 ## See also
 
-[`/WINMD `(Generate Windows Metadata)](winmd-generate-windows-metadata.md)\
+[`/WINMD` (Generate Windows Metadata)](winmd-generate-windows-metadata.md)\
 [MSVC linker reference](linking.md)\
 [MSVC Linker Options](linker-options.md)
