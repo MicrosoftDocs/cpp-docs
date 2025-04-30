@@ -101,7 +101,7 @@ The `time_point` to convert.
 
 1-3\) Identity conversions. No conversion. Returns `t` without any changes.\
 4\) Returns `utc_clock::to_sys(t)`.\
-5\) Returns` utc_clock::from_sys(t)`.
+5\) Returns `utc_clock::from_sys(t)`.
 
 ### Deduction guides
 
