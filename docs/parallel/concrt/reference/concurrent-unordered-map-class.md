@@ -1,7 +1,7 @@
 ---
 title: "concurrent_unordered_map Class"
 description: "Learn more about: concurrent_unordered_map Class"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::at", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::hash_function", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::insert", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::key_eq", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::swap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::unsafe_erase"]
 helpviewer_keywords: ["concurrent_unordered_map class"]
 ---
@@ -16,18 +16,8 @@ template <typename K,
     typename _Element_type,
     typename _Hasher = std::hash<K>,
     typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<std::pair<const K,
-    _Element_type>>
->,
-typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<std::pair<const K,
-    _Element_type>>> class concurrent_unordered_map : public details::_Concurrent_hash<details::_Concurrent_unordered_map_traits<K,
-    _Element_type,
-details::_Hash_compare<K,
-    _Hasher,
-key_equality>,
-    _Allocator_type,
-false>>;
+    typename _Allocator_type = std::allocator<std::pair<const K, _Element_type>>>
+class concurrent_unordered_map : public details::_Concurrent_hash<details::_Concurrent_unordered_map_traits<K, _Element_type, details::_Hash_compare<K, _Hasher, key_equality>, _Allocator_type, false>>;
 ```
 
 ### Parameters

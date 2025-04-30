@@ -1,7 +1,7 @@
 ---
 title: "concurrent_unordered_set Class"
 description: "Learn more about: concurrent_unordered_set Class"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::hash_function", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::insert", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::key_eq", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::swap", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::unsafe_erase"]
 helpviewer_keywords: ["concurrent_unordered_set class"]
 ---
@@ -15,15 +15,8 @@ The `concurrent_unordered_set` class is an concurrency-safe container that contr
 template <typename K,
     typename _Hasher = std::hash<K>,
     typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<K>
->,
-    typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<K>> class concurrent_unordered_set : public details::_Concurrent_hash<details::_Concurrent_unordered_set_traits<K,
-    details::_Hash_compare<K,
-_Hasher,
-    key_equality>,
-_Allocator_type,
-    false>>;
+    typename _Allocator_type = std::allocator<K>>
+class concurrent_unordered_set : public details::_Concurrent_hash<details::_Concurrent_unordered_set_traits<K, details::_Hash_compare<K, _Hasher, key_equality>, _Allocator_type, false>>;
 ```
 
 ### Parameters
