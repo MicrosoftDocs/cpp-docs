@@ -22,9 +22,9 @@ Declaration of a function that takes a variable number of arguments requires at 
 
 When arguments of type **`char`** are passed as variable arguments, they are converted to type **`int`**. Similarly, when arguments of type **`float`** are passed as variable arguments, they are converted to type **`double`**. Arguments of other types are subject to the usual integral and floating-point promotions. See [Standard Conversions](standard-conversions.md) for more information.
 
-Functions that require variable lists are declared by using the ellipsis (...) in the argument list. Use the types and macros that are described in the \<stdarg.h> include file to access arguments that are passed by a variable list. For more information about these macros, see [va_arg, va_copy, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). in the documentation for the C Run-Time Library.
+Functions that require variable lists are declared by using the ellipsis (...) in the argument list. Use the types and macros that are described in the `<stdarg.h>` include file to access arguments that are passed by a variable list. For more information about these macros, see [va_arg, va_copy, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). in the documentation for the C Run-Time Library.
 
-The following example shows how the macros work together with the type (declared in \<stdarg.h>):
+The following example shows how the macros work together with the type (declared in `<stdarg.h>`):
 
 ```cpp
 // variable_argument_lists.cpp
