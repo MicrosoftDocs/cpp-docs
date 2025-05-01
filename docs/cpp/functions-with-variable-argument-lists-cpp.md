@@ -1,17 +1,16 @@
 ---
 description: "Learn more about: Functions with Variable Argument Lists  (C++)"
 title: "Functions with Variable Argument Lists  (C++)"
-ms.date: "11/04/2016"
+ms.date: 05/01/2025
 helpviewer_keywords: ["arguments [C++], variable number of", "variable argument lists", "declarators, functions", "argument lists [C++], variable number of", "declaring functions [C++], variables", "function calls, variable number of arguments"]
-ms.assetid: 27c2f83a-21dd-44c6-913c-2834cb944703
 ---
 # Functions with Variable Argument Lists  (C++)
 
-Function declarations in which the last member of  is the ellipsis (...) can take a variable number of arguments. In these cases, C++ provides type checking only for the explicitly declared arguments. You can use variable argument lists when you need to make a function so general that even the number and types of arguments can vary. The  family of functions is an example of functions that use variable argument lists.`printf`*argument-declaration-list*
+Function declarations in which the last member of  is the ellipsis (...) can take a variable number of arguments. In these cases, C++ provides type checking only for the explicitly declared arguments. You can use variable argument lists when you need to make a function so general that even the number and types of arguments can vary. The `printf` family of functions is an example of functions that use variable argument lists.
 
 ## Functions with variable arguments
 
-To access arguments after those declared, use the macros contained in the standard include file \<stdarg.h> as described below.
+To access arguments after those declared, use the macros contained in the standard include file `<stdarg.h>` as described below.
 
 **Microsoft Specific**
 
@@ -104,9 +103,6 @@ void ShowVar( char *szTypes, ... ) {
 The previous example illustrates these important concepts:
 
 1. You must establish a list marker as a variable of type `va_list` before any variable arguments are accessed. In the previous example, the marker is called `vl`.
-
 1. The individual arguments are accessed by using the `va_arg` macro. You must tell the `va_arg` macro the type of argument to retrieve so that it can transfer the correct number of bytes from the stack. If you specify an incorrect type of a size different from that supplied by the calling program to `va_arg`, the results are unpredictable.
-
 1. You should explicitly cast the result obtained by using the `va_arg` macro to the type that you want.
-
-You must call the  macro to terminate variable-argument processing.`va_end`
+1. You must call the `va_end` macro to terminate variable-argument processing.
