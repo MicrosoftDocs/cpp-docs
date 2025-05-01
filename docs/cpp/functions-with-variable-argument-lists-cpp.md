@@ -97,6 +97,7 @@ void ShowVar( char *szTypes, ... ) {
    }
    va_end( vl );
 }
+```
 
 ```Output
 32.400002
