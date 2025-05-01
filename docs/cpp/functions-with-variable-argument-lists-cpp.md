@@ -14,13 +14,13 @@ To access arguments after those declared, use the macros contained in the standa
 
 **Microsoft Specific**
 
-Microsoft C++ allows the ellipsis to be specified as an argument if the ellipsis is the last argument and a comma comes before the ellipsis. Therefore, the declaration `int Func( int i, ... );` is legal, but `int Func( int i ... );` is not.
+Microsoft C++ allows the ellipsis to be specified as an argument if the ellipsis is the last argument and a comma comes before the ellipsis. Therefore, the declaration `int Func( int i, ... );` is legal, but `int Func( int i ... );` isn't.
 
 **END Microsoft Specific**
 
-Declaration of a function that takes a variable number of arguments requires at least one placeholder argument, even if it is not used. If this placeholder argument is not supplied, there is no way to access the remaining arguments.
+Declaration of a function that takes a variable number of arguments requires at least one placeholder argument, even if it isn't used. If this placeholder argument isn't supplied, there's no way to access the remaining arguments.
 
-When arguments of type **`char`** are passed as variable arguments, they are converted to type **`int`**. Similarly, when arguments of type **`float`** are passed as variable arguments, they are converted to type **`double`**. Arguments of other types are subject to the usual integral and floating-point promotions. For more information, see [Standard Conversions](standard-conversions.md).
+When arguments of type **`char`** are passed as variable arguments, they're converted to type **`int`**. Similarly, when arguments of type **`float`** are passed as variable arguments, they're converted to type **`double`**. Arguments of other types are subject to the usual integral and floating-point promotions. For more information, see [Standard Conversions](standard-conversions.md).
 
 Functions that require variable lists are declared by using the ellipsis (...) in the argument list. Use the types and macros that are described in the `<stdarg.h>` include file to access arguments that are passed by a variable list. For more information about these macros, see [va_arg, va_copy, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md).
 
