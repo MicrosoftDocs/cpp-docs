@@ -98,7 +98,7 @@ void ShowVar( char *szTypes, ... ) {
    va_end( vl );
 }
 
-```output
+```Output
 32.400002
 a
 Test string
