@@ -172,7 +172,7 @@ additionalContent:
             - text: Mobile development
               url: cross-platform/index.yml
             - text: Game development
-              url: /windows/uwp/gaming/e2e/
+              url: /visualstudio/gamedev/
         # Card
         - title: Features
           links:

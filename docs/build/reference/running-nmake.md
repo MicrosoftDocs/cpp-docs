@@ -12,6 +12,8 @@ helpviewer_keywords: ["targets, building", "response files, NMAKE", "targets", "
 
 ## Remarks
 
+NMAKE must run in a Developer Command Prompt window. A Developer Command Prompt window has the environment variables set for the tools, libraries, and include file paths required to build at the command line. For details on how to open a Developer Command Prompt window, see [Use the MSVC toolset from the command line](../building-on-the-command-line.md).
+
 NMAKE builds only specified *targets* or, when none is specified, the first target in the makefile. The first makefile target can be a [pseudotarget](description-blocks.md#pseudotargets) that builds other targets. NMAKE uses makefiles specified with **`/F`**, or if **`/F`** isn't specified, the Makefile file in the current directory. If no makefile is specified, it uses inference rules to build command-line *targets*.
 
 The *command-file* text file (or response file) contains command-line input. Other input can precede or follow \@*command-file*. A path is permitted. In *command-file*, line breaks are treated as spaces. Enclose macro definitions in quotation marks if they contain spaces.
