@@ -1,7 +1,7 @@
 ---
 title: "warning pragma"
 description: "Learn more about the warning pragma in Microsoft C/C++"
-ms.date: 01/22/2021
+ms.date: 4/30/2025
 f1_keywords: ["warning_CPP", "vc-pragma.warning"]
 helpviewer_keywords: ["pragma, warning", "push pragma warning", "pop warning pragma", "warning pragma"]
 no-loc: ["pragma"]
@@ -24,7 +24,7 @@ The following warning-specifier parameters are available.
 
 | warning-specifier | Meaning |
 |--|--|
-| `1`, `2`, `3`, `4` | Apply the given level to the specified warnings. Also turns on a specified warning that is off by default. |
+| `1`, `2`, `3`, `4` | Apply the given level to the specified warnings. For example: `#pragma warning (3 : 5033)` turns off warning 5033 (normally a level 1 warning) unless the warning level is set to `/w3` or higher. Also can be used to turn on a specified warning that is off by default. |
 | `default` | Reset warning behavior to its default value. Also turns on a specified warning that is off by default. The warning will be generated at its default, documented, level.<br /><br /> For more information, see [Compiler warnings that are off by default](../preprocessor/compiler-warnings-that-are-off-by-default.md). |
 | `disable` | Don't issue the specified warning messages. The optional **`justification`** property is allowed. |
 | `error` | Report the specified warnings as errors. |
@@ -34,7 +34,7 @@ The following warning-specifier parameters are available.
 The following code statement illustrates that a *`warning-number-list`* parameter can contain multiple warning numbers, and that multiple *`warning-specifier`* parameters can be specified in the same pragma directive.
 
 ```cpp
-#pragma warning( disable : 4507 34; once : 4385; error : 164 )
+#pragma warning( disable : 4507 4034; once : 4385; error : 164 )
 ```
 
 However, when the **`justification`** field is present, only one warning number can be specified. The following code statement illustrates the use of the **`justification`** field.
@@ -50,13 +50,13 @@ This directive is functionally equivalent to the following code:
 
 ```cpp
 // Disable warning messages 4507 and 4034.
-#pragma warning( disable : 4507 34 )
+#pragma warning(disable : 4507 4034)
 
 // Issue warning C4385 only once.
-#pragma warning( once : 4385 )
+#pragma warning(once : 4385)
 
 // Report warning C4164 as an error.
-#pragma warning( error : 164 )
+#pragma warning(error : 164)
 ```
 
 The compiler adds 4000 to any warning number that is between 0 and 999.
@@ -67,15 +67,17 @@ Warning numbers in the range 4700-4999 are associated with code generation. For 
 // pragma_warning.cpp
 // compile with: /W1
 #pragma warning(disable:4700)
-void Test() {
+void Test()
+{
    int x;
-   int y = x;   // no C4700 here
-   #pragma warning(default:4700)   // C4700 enabled after Test ends
+   int y = x; // no C4700 here
+   #pragma warning(default:4700)   // C4700 enabled after compiling Test()
 }
 
-int main() {
+int main()
+{
    int x;
-   int y = x;   // C4700
+   int y = x; // C4700
 }
 ```
 
