@@ -1,10 +1,14 @@
 ---
 title: ".NET programming with C++/CLI"
 description: "Learn how to use C++/CLI to create .NET apps and components in Visual Studio."
-ms.date: 10/28/2021
+ms.date: 05/02/2025
 helpviewer_keywords: ["programming [C++], .NET programming", ".NET Framework [C++]", ".NET applications [C++]", "Visual C++, .NET programming"]
 ---
 # .NET programming with C++/CLI
+
+C++/CLI supplanted Managed C++. C++/CLI is a language specification created by Microsoft that extends C++ to support .NET. It's only supported on Windows. It's not for writing [WinUI](/windows/apps/winui) or Universal Windows Platform [UWP](/windows/uwp/get-started/universal-application-platform-guide) Windows Runtime (WinRT) apps. It's for writing .NET applications and components that run on .NET. C++/CLI is a bridge between native C++ code and managed code. It allows you to use existing C++ libraries in .NET applications and to write new .NET applications in C++.
+
+Microsoft provides C++/WinRT for writing WinUI and WinRT apps. It's an entirely standard modern C++17 language projection for Windows Runtime (WinRT) APIs. For more information about using C++ with the Windows Runtime (WinRT), see [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/).
 
 ::: moniker range="msvc-140"
 
@@ -41,40 +45,23 @@ C++/CLI itself isn't installed by default when you install a Visual Studio C++ w
 
 ## In this section
 
-[C++/CLI tasks](../dotnet/cpp-cli-tasks.md)
-
-[Native and .NET interoperability](../dotnet/native-and-dotnet-interoperability.md)
-
-[Pure and verifiable code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)
-
-[Regular expressions (C++/CLI)](../dotnet/regular-expressions-cpp-cli.md)
-
-[File handling and I/O (C++/CLI)](../dotnet/file-handling-and-i-o-cpp-cli.md)
-
-[Graphics operations (C++/CLI)](../dotnet/graphics-operations-cpp-cli.md)
-
-[Windows operations (C++/CLI)](../dotnet/windows-operations-cpp-cli.md)
-
-[Data access using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md)
-
-[Interoperability with other .NET languages (C++/CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)
-
-[Serialization (C++/CLI)](../dotnet/serialization-cpp-cli.md)
-
-[Managed types (C++/CLI)](../dotnet/managed-types-cpp-cli.md)
-
-[Reflection (C++/CLI)](../dotnet/reflection-cpp-cli.md)
-
-[Strong Name assemblies (assembly signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)
-
-[Debug class (C++/CLI)](../dotnet/debug-class-cpp-cli.md)
-
-[STL/CLR library reference](../dotnet/stl-clr-library-reference.md)
-
-[C++ support library](../dotnet/cpp-support-library.md)
-
-[Exceptions in C++/CLI](../dotnet/exceptions-in-cpp-cli.md)
-
+[C++/CLI tasks](../dotnet/cpp-cli-tasks.md)\
+[Native and .NET interoperability](../dotnet/native-and-dotnet-interoperability.md)\
+[Pure and verifiable code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)\
+[Regular expressions (C++/CLI)](../dotnet/regular-expressions-cpp-cli.md)\
+[File handling and I/O (C++/CLI)](../dotnet/file-handling-and-i-o-cpp-cli.md)\
+[Graphics operations (C++/CLI)](../dotnet/graphics-operations-cpp-cli.md)\
+[Windows operations (C++/CLI)](../dotnet/windows-operations-cpp-cli.md)\
+[Data access using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md)\
+[Interoperability with other .NET languages (C++/CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)\
+[Serialization (C++/CLI)](../dotnet/serialization-cpp-cli.md)\
+[Managed types (C++/CLI)](../dotnet/managed-types-cpp-cli.md)\
+[Reflection (C++/CLI)](../dotnet/reflection-cpp-cli.md)\
+[Strong Name assemblies (assembly signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)\
+[Debug class (C++/CLI)](../dotnet/debug-class-cpp-cli.md)\
+[STL/CLR library reference](../dotnet/stl-clr-library-reference.md)\
+[C++ support library](../dotnet/cpp-support-library.md)\
+[Exceptions in C++/CLI](../dotnet/exceptions-in-cpp-cli.md)\
 [Boxing (C++/CLI)](../dotnet/boxing-cpp-cli.md)
 
 ## See also
