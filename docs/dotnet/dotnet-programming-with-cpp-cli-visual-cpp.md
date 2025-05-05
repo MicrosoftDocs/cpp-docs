@@ -6,7 +6,7 @@ helpviewer_keywords: ["programming [C++], .NET programming", ".NET Framework [C+
 ---
 # .NET programming with C++/CLI
 
-C++/CLI supplanted Managed C++. It is a language specification created by Microsoft that extends C++ to support the .NET framework. It's only supported on Windows. It's not for writing [WinUI](/windows/apps/winui) or Universal Windows Platform [UWP](/windows/uwp/get-started/universal-application-platform-guide) Windows Runtime (WinRT) apps. It's for writing .NET applications and components that run on the .NET framework. C++/CLI is a bridge between native C++ code and managed code. It allows you to use existing C++ libraries in .NET applications and to write new .NET applications in C++.
+C++/CLI supplanted Managed C++. It is a language specification created by Microsoft that extends C++ to support .NET. It's only supported on Windows. It's not for writing [WinUI](/windows/apps/winui) or Universal Windows Platform [UWP](/windows/uwp/get-started/universal-application-platform-guide) Windows Runtime (WinRT) apps. It's for writing .NET applications and components that run on .NET. C++/CLI is a bridge between native C++ code and managed code. It allows you to use existing C++ libraries in .NET applications and to write new .NET applications in C++.
 
 For writing WinUI and WinRT apps, Microsoft has released C++/WinRT: an entirely standard modern C++17 language projection for Windows Runtime (WinRT) APIs. For more information about using C++ with the Windows Runtime (WinRT), see [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/).
 
