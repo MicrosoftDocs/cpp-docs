@@ -22,11 +22,11 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 
 | For more information about | See |
 |---|---|
-| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.13](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-13/) |
-| Standard Library (STL) merged C++26 and C++23 features, Language Working Group (LWG) issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.13](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1713) |
-| New features in the IDE |[Visual Studio 2022 version 17.13 Release Notes](/visualstudio/releases/2022/release-notes) |
-| C++ language updates  | [MSVC compiler updates in Visual Studio 2022 17.13](https://devblogs.microsoft.com/cppblog/msvc-compiler-updates-in-visual-studio-2022-version-17-13/) |
-| C++ language conformance improvements | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.13](cpp-conformance-improvements.md#improvements_1713) |
+| What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.14](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-14/) |
+| Standard Library (STL) merged C++26 and C++23 features, Language Working Group (LWG) issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.14](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1714) |
+| New features in the IDE |[Visual Studio 2022 version 17.14 Release Notes](/visualstudio/releases/2022/release-notes) |
+| C++ language updates  | [C++ Language Updates in MSVC in Visual Studio 2022 17.14](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-in-visual-studio-2022-17-14/) |
+| C++ language conformance improvements | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.14](cpp-conformance-improvements.md#improvements_1714) |
 
 A quick highlight of some of the new features:
 
