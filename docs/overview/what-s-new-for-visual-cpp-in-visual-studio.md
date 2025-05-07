@@ -33,16 +33,16 @@ A quick highlight of some of the new features:
 - C++ Dynamic Debugging allows you to debug optimized code without impacting performance. For more information, see [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging).
 - Automatically generate documentation comments with GitHub Copilot. For more information, see [Introducing automatic documentation comment generation in Visual Studio](https://devblogs.microsoft.com/visualstudio/introducing-automatic-documentation-comment-generation-in-visual-studio/).
 - Unreal Engine Integration:
-    - Blueprints support in the Visual Studio C++ debugger.
+    - Blueprints are supported in the Visual Studio C++ debugger.
     - Commands for building files, modules, and plugins are available natively in Visual Studio.
 - New compiler flag [/forceInterlockedFunctions](../build/reference/force-interlocked-functions.md) to dynamically select between Armv8.0 load, store exclusive instructions or Armv8.1 Large System Extension (LSE) atomic instructions based on CPU capability at runtime.
-- Use the Model Picker in Visual Studio to select your AI model for GitHub Copilot. Some models such as GPT-4o, Claude Sonnet 3.5, and Gemini 2.0 Flash are best for high performance. Others, such as Claude Sonnet 3.7 Thinking, o1, and o3-mini are optimized for reasoning and planning. For more information, see [Changing the AI model for Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat). This picture shows the Model Picker which is available at the bottom of the GitHub Copilot chat window:
+- Use the Model Picker in Visual Studio to select your AI model for GitHub Copilot. For more information, see [Changing the AI model for Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat). This screenshot shows the Model Picker at the bottom of the GitHub Copilot chat window:
     :::image type="complex" source="./media/model-picker.png" alt-text="A screenshot of the GitHub Copilot chat window with the Model Picker dropdown highlighted.":::
     The dropdown for the Model Picker is open. The options include: GPT-4o, o3-mini, Claude 3.7 Sonnet Thinking, and others.
     :::image-end:::
-- Guidelines Support Library (GSL) 4.2.0 is available. This release includes performance improvements for `gsl::span`, new features, and better alignment with C++ standards. For more information, see [Announcing Guidelines Support Library v4.2.0](https://devblogs.microsoft.com/cppblog/announcing-guidelines-support-library-v4-2-0/).
+- Guidelines Support Library (GSL) 4.2.0: This release includes performance improvements for `gsl::span`, new features, and better alignment with C++ standards. For more information, see [Announcing Guidelines Support Library v4.2.0](https://devblogs.microsoft.com/cppblog/announcing-guidelines-support-library-v4-2-0/).
 - Implemented C++23 features:
-    - [`static operator()]`(https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1169r4.html)
+    - [`static operator()`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1169r4.html)
     - [`static operator[]`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2589r1.pdf)
     - [`if consteval`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p1938r3.html)
     - [`static constexpr` variables in `constexpr` functions](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2647r1.html)
@@ -66,12 +66,12 @@ A quick highlight of some of the new features:
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.13](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-13/) |
-| Standard Library (STL) merged C++26 and C++23 features, Language Working Group (LWG) issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.13](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1713) |
+| Standard Library (STL) C++26 and C++23 features, Language Working Group (LWG) issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.13](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1713) |
 | New features in the IDE |[Visual Studio 2022 version 17.13 Release Notes](/visualstudio/releases/2022/release-notes) |
 | C++ language updates  | [MSVC compiler updates in Visual Studio 2022 17.13](https://devblogs.microsoft.com/cppblog/msvc-compiler-updates-in-visual-studio-2022-version-17-13/) |
 | C++ language conformance improvements | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.13](cpp-conformance-improvements.md#improvements_1713) |
 
-A quick highlight of some of the new features:
+A quick highlight of some new features:
 
 - **C++ language enhancements**
 

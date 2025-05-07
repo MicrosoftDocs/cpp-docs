@@ -33,11 +33,11 @@ Visual Studio 2022 version 17.14 includes the following conformance improvements
 
 ### Behavior changes
 
-- [LWG-4014](https://cplusplus.github.io/LWG/issue4014) and [LWG-3809](https://cplusplus.github.io/LWG/issue3809) changes the behavior of some existing `std::subtract_with_carry_engine` pseudo-random number generator with regard to seeding. Previously, if the engine was seeded with values from a `linear_congruential_engine<T, 40014u, 0u, 2147483563u>` object, narrowing resulted when `T` was less than 32 bits. New Behavior: The seed sequence uses `linear_congruential_engine<uint_least32_t, 40014u, 0u, 2147483563u>` with the seed value reduced modulo `2147483563u` so that it isn't narrowed if `T` is less than 32 bits.
+- [LWG-4014](https://cplusplus.github.io/LWG/issue4014) and [LWG-3809](https://cplusplus.github.io/LWG/issue3809) affects the seeding behavior `std::subtract_with_carry_engine`. Previously, when the engine was seeded with values from a `linear_congruential_engine<T, 40014u, 0u, 2147483563u>` object, narrowing resulted when `T` was less than 32 bits. Now the seed sequence uses `linear_congruential_engine<uint_least32_t, 40014u, 0u, 2147483563u>` with the seed value reduced modulo `2147483563u` so that it isn't narrowed if `T` is less than 32 bits.
 
 ### Bug fixes
 
-- Fixed compiler errors when using `<format>` in a CUDA project.
+- Fixed errant compiler errors when using `<format>` in a CUDA project.
 - Fixed a compiler issue where the address of a local variable could "leak" during `constexpr` evaluation. For example:
 
     ```cpp
@@ -73,7 +73,7 @@ Visual Studio 2022 version 17.14 includes the following conformance improvements
     };
     ```
 
-- Referencing binding to volatile-qualified types fixed when referring to a base/derived class. For example:
+- Referencing binding to volatile-qualified types fixed when referring to a base or derived class. For example:
 
     ```cpp
     struct A {};
@@ -84,7 +84,7 @@ Visual Studio 2022 version 17.14 includes the following conformance improvements
     
     f(B{}); // Previously called 2. This is ill-formed under /permissive- or /Zc:referenceBinding. Chooses 1 if relaxed reference binding rules are enabled.
     ```
-    
+
 For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.14](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1714).
 
 ## <a name="improvements_1713"></a> Conformance improvements in Visual Studio 2022 version 17.13
