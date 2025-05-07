@@ -31,16 +31,6 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 A quick highlight of some of the new features:
 
 - C++ Dynamic Debugging allows you to debug optimized code without impacting performance. For more information, see [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging).
-- Automatically generate documentation comments with GitHub Copilot. For more information, see [Introducing automatic documentation comment generation in Visual Studio](https://devblogs.microsoft.com/visualstudio/introducing-automatic-documentation-comment-generation-in-visual-studio/).
-- Unreal Engine Integration:
-    - Blueprints are supported in the Visual Studio C++ debugger.
-    - Commands for building files, modules, and plugins are available natively in Visual Studio.
-- New compiler flag [/forceInterlockedFunctions](../build/reference/force-interlocked-functions.md) to dynamically select between Armv8.0 load, store exclusive instructions or Armv8.1 Large System Extension (LSE) atomic instructions based on CPU capability at runtime.
-- Use the Model Picker in Visual Studio to select your AI model for GitHub Copilot. For more information, see [Changing the AI model for Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat). This screenshot shows the Model Picker at the bottom of the GitHub Copilot chat window:
-    :::image type="complex" source="./media/model-picker.png" alt-text="A screenshot of the GitHub Copilot chat window with the Model Picker dropdown highlighted.":::
-    The dropdown for the Model Picker is open. The options include: GPT-4o, o3-mini, Claude 3.7 Sonnet Thinking, and others.
-    :::image-end:::
-- Guidelines Support Library (GSL) 4.2.0: This release includes performance improvements for `gsl::span`, new features, and better alignment with C++ standards. For more information, see [Announcing Guidelines Support Library v4.2.0](https://devblogs.microsoft.com/cppblog/announcing-guidelines-support-library-v4-2-0/).
 - Implemented C++23 features:
     - [`static operator()`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1169r4.html)
     - [`static operator[]`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2589r1.pdf)
@@ -48,6 +38,15 @@ A quick highlight of some of the new features:
     - [`static constexpr` variables in `constexpr` functions](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2647r1.html)
     - [Attributes on lambda expressions](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2173r1.pdf)
     - [Remove unnecessary () from lambdas](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p1102r2.html)
+- Automatically generate documentation comments with GitHub Copilot. For more information, see [Introducing automatic documentation comment generation in Visual Studio](https://devblogs.microsoft.com/visualstudio/introducing-automatic-documentation-comment-generation-in-visual-studio/).
+- Use the Model Picker in Visual Studio to select your AI model for GitHub Copilot. For more information, see [Changing the AI model for Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat). This screenshot shows the Model Picker at the bottom of the GitHub Copilot chat window:
+    :::image type="complex" source="./media/model-picker.png" alt-text="A screenshot of the GitHub Copilot chat window with the Model Picker dropdown highlighted.":::
+    The dropdown for the Model Picker is open. The options include: GPT-4o, o3-mini, Claude 3.7 Sonnet Thinking, and others.
+    :::image-end:::
+- Unreal Engine integration improvements:
+    - Blueprints are supported in the Visual Studio C++ debugger.
+    - Commands for building files, modules, and plugins are available natively in Visual Studio.
+- New compiler flag [/forceInterlockedFunctions](../build/reference/force-interlocked-functions.md) to dynamically select between Armv8.0 load, store exclusive instructions or Armv8.1 Large System Extension (LSE) atomic instructions based on CPU capability at runtime.
 - Added support for IntelliSense-based completions and quick info for CMake modules in Visual Studio. Now, you can view all available CMake modules and learn more, directly from the Visual Studio editor.
     When you hover over a referenced CMake module, IntelliSense can provide more information on the selected module:
     :::image type="complex" source="./media/cmake-module-intellisense.png" alt-text="A screenshot of intellisense explaining C Make Print Helpers.":::
@@ -58,6 +57,7 @@ A quick highlight of some of the new features:
     :::image type="complex" source="./media/cmake-intellisense.png" alt-text="A screenshot of intellisense for a include statement":::
     The screenshot is of an edit in the C Make Lists .txt file. The cursor is on include ( C Make. The Intellisense dropdown contains entries for C Make Add Fortran Subdirectory, C Make Dependent Option, and more.
     :::image-end:::
+- Guidelines Support Library (GSL) 4.2.0: This release includes performance improvements for `gsl::span`, new features, and better alignment with C++ standards. For more information, see [Announcing Guidelines Support Library v4.2.0](https://devblogs.microsoft.com/cppblog/announcing-guidelines-support-library-v4-2-0/).
 
 ## What's new for C++ in Visual Studio version 17.13
 
