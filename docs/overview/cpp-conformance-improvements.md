@@ -55,11 +55,11 @@ Visual Studio 2022 version 17.14 includes the following conformance improvements
 
     ```cpp
     #include <initializer_list>
-
+    
     void test()
     {
-        constexpr std::initializer_list<int> xs { 1, 2, 3 };        // Previously accepted, now an error
-
+        constexpr std::initializer_list<int> xs { 1, 2, 3 };        // Previously accepted, now an error
+    
         static constexpr std::initializer_list<int> ys { 1, 2, 3 }; // Correct usage - note use of static
     }
     ```
