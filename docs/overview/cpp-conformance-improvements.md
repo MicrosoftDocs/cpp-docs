@@ -34,7 +34,7 @@ Visual Studio 2022 version 17.14 includes the following conformance improvements
 
 ### Behavior changes
 
-- [LWG-4014](https://cplusplus.github.io/LWG/issue4014) and [LWG-3809](https://cplusplus.github.io/LWG/issue3809) changes the behavior of some existing `std::subtract_with_carry_engine` pseudo-random number generator with regards to seeding. Previously, if the engine was seeded with values from a `linear_congruential_engine<T, 40014u, 0u, 2147483563u>` object, narrowing resulted when `T` was less than 32 bits. New Behavior: The seed sequence uses `linear_congruential_engine<uint_least32_t, 40014u, 0u, 2147483563u>` with the seed value reduced modulo `2147483563u` so that it isn't narrowed if `T` is less than 32 bits.
+- [LWG-4014](https://cplusplus.github.io/LWG/issue4014) and [LWG-3809](https://cplusplus.github.io/LWG/issue3809) changes the behavior of some existing `std::subtract_with_carry_engine` pseudo-random number generator with regard to seeding. Previously, if the engine was seeded with values from a `linear_congruential_engine<T, 40014u, 0u, 2147483563u>` object, narrowing resulted when `T` was less than 32 bits. New Behavior: The seed sequence uses `linear_congruential_engine<uint_least32_t, 40014u, 0u, 2147483563u>` with the seed value reduced modulo `2147483563u` so that it isn't narrowed if `T` is less than 32 bits.
 
 ### Bug fixes
 
@@ -97,7 +97,7 @@ For an in-depth summary of changes made to the Standard Template Library, includ
 
 ### Argument-dependent lookup (ADL)
 
-Language constructs such as range-for and structured bindings have special argument-dependent lookup rules for certain identifiers such as `begin`, `end`, or `get`. Previously, this lookup included candidates from the `std` namespace, even when namespace `std` is not part of the ordinary set of associated namespaces for argument-dependent lookup.
+Language constructs such as range-for and structured bindings have special argument-dependent lookup rules for certain identifiers such as `begin`, `end`, or `get`. Previously, this lookup included candidates from the `std` namespace, even when namespace `std` isn't part of the ordinary set of associated namespaces for argument-dependent lookup.
 
 Programs that introduced declarations to `std` for these constructs no longer compile. Instead, the declarations should be in a normal associated namespace for the types involved (possibly including the global namespace).
 
@@ -143,9 +143,9 @@ For an in-depth summary of changes made to the Standard Template Library, includ
 
 This is a source/binary breaking change.
 
-The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. Implicit conversion functions are discouraged by the [C++ Core Guidelines (C.164)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conversion), and `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
+The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. The [C++ Core Guidelines (C.164)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conversion) discourages implicit conversion functions. And `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
 
-To help address this, the conversion to `bool` is now explicit. The conversion to `Interface*` is unchanged.
+To address this, the conversion to `bool` is now explicit. The conversion to `Interface*` is unchanged.
 
 A macro is provided to opt-out of this new behavior and restore the previous implicit conversion. Compile with `/D_COM_DISABLE_EXPLICIT_OPERATOR_BOOL` to opt-out of this change. We recommend that you modify the code to not rely on implicit conversions.
 
