@@ -35,7 +35,6 @@ A quick highlight of some of the new features:
 - Unreal Engine Integration:
     - Blueprints support in the Visual Studio C++ debugger.
     - Commands for building files, modules, and plugins are available natively in Visual Studio.
-- Incremental linking is faster in some cases.
 - New compiler flag [/forceInterlockedFunctions](../build/reference/force-interlocked-functions.md) to dynamically select between Armv8.0 load, store exclusive instructions or Armv8.1 Large System Extension (LSE) atomic instructions based on CPU capability at runtime.
 - Use the Model Picker in Visual Studio to select your AI model for GitHub Copilot. Some models such as GPT-4o, Claude Sonnet 3.5, and Gemini 2.0 Flash are best for high performance. Others, such as Claude Sonnet 3.7 Thinking, o1, and o3-mini are optimized for reasoning and planning. For more information, see [Changing the AI model for Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat). This picture shows the Model Picker which is available at the bottom of the GitHub Copilot chat window:
     :::image type="complex" source="./media/model-picker.png" alt-text="A screenshot of the GitHub Copilot chat window with the Model Picker dropdown highlighted.":::
@@ -43,9 +42,9 @@ A quick highlight of some of the new features:
     :::image-end:::
 - Guidelines Support Library (GSL) 4.2.0 is available. This release includes performance improvements for `gsl::span`, new features, and better alignment with C++ standards. For more information, see [Announcing Guidelines Support Library v4.2.0](https://devblogs.microsoft.com/cppblog/announcing-guidelines-support-library-v4-2-0/).
 - Implemented C++23 features:
-    - [static operator()](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1169r4.html)
-    - [static operator\[\]()](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2589r1.pdf)
-    - [`if consteval`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p1938r3.html
+    - [`static operator()]`(https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1169r4.html)
+    - [`static operator[]`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2589r1.pdf)
+    - [`if consteval`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p1938r3.html)
     - [`static constexpr` variables in `constexpr` functions](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2647r1.html)
     - [Attributes on lambda expressions](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2173r1.pdf)
     - [Remove unnecessary () from lambdas](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p1102r2.html)

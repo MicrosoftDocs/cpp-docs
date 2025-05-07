@@ -25,8 +25,7 @@ Visual Studio 2022 version 17.14 includes the following conformance improvements
 
 ### Conformance improvements
 
-
-- Standard library hardening ([P3471R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3471r4.html)) allows turning some instances of undefined behavior in the standard library into a contract violation. Off by default. Define `_MSVC_STL_HARDENING=1` project-wide to enable.
+- Standard library hardening ([P3471R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3471r4.html)) turns some instances of undefined behavior in the standard library into a contract violation. Off by default. Define `_MSVC_STL_HARDENING=1` project-wide to enable.
 
 ### Enhanced behavior
 
@@ -76,18 +75,17 @@ Visual Studio 2022 version 17.14 includes the following conformance improvements
 
 - Referencing binding to volatile-qualified types fixed when referring to a base/derived class. For example:
 
-```cpp
-struct A {};
-struct B : public A {};
-
-void f(A&);                 // 1
-void f(const volatile A&);  // 2
-
-f(B{}); // Previously called 2. This is ill-formed under /permissive- or /Zc:referenceBinding. Chooses 1 if relaxed reference binding rules are enabled.
-```
-
+    ```cpp
+    struct A {};
+    struct B : public A {};
+    
+    void f(A&);                 // 1
+    void f(const volatile A&);  // 2
+    
+    f(B{}); // Previously called 2. This is ill-formed under /permissive- or /Zc:referenceBinding. Chooses 1 if relaxed reference binding rules are enabled.
+    ```
+    
 For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.14](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1714).
-
 
 ## <a name="improvements_1713"></a> Conformance improvements in Visual Studio 2022 version 17.13
 
@@ -143,7 +141,7 @@ For an in-depth summary of changes made to the Standard Template Library, includ
 
 This is a source/binary breaking change.
 
-The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. The [C++ Core Guidelines (C.164)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conversion) discourages implicit conversion functions. And `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
+The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. The [C++ Core Guidelines (C.164)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conversion) discourage implicit conversion functions. And `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
 
 To address this, the conversion to `bool` is now explicit. The conversion to `Interface*` is unchanged.
 
