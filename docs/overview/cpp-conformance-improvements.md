@@ -25,15 +25,11 @@ Visual Studio 2022 version 17.14 includes the following conformance improvements
 
 ### Conformance improvements
 
-- Standard library hardening ([P3471R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3471r4.html)) turns some instances of undefined behavior in the standard library into a contract violation. Off by default. Define `_MSVC_STL_HARDENING=1` project-wide to enable.
+- Standard library hardening ([P3471R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3471r4.html)) turns some instances of undefined behavior in the standard library into a call to [__fastfail](../intrinsics/fastfail.md). Off by default. Define `_MSVC_STL_HARDENING=1` project-wide to enable.
 
 ### Enhanced behavior
 
 - Implemented "destructor tombstones" to mitigate use-after-free mistakes. Off by default. Define `_MSVC_STL_DESTRUCTOR_TOMBSTONES=1` project-wide to enable.
-
-### Behavior changes
-
-- [LWG-4014](https://cplusplus.github.io/LWG/issue4014) and [LWG-3809](https://cplusplus.github.io/LWG/issue3809) affects the seeding behavior for `std::subtract_with_carry_engine`. Previously, when the engine was seeded with values from a `linear_congruential_engine<T, 40014u, 0u, 2147483563u>` object, narrowing resulted when `T` was less than 32 bits. Now the seed sequence uses `linear_congruential_engine<uint_least32_t, 40014u, 0u, 2147483563u>` with the seed value reduced modulo `2147483563u` so that it isn't narrowed if `T` is less than 32 bits.
 
 ### Bug fixes
 
@@ -73,7 +69,7 @@ Visual Studio 2022 version 17.14 includes the following conformance improvements
     };
     ```
 
-- Referencing binding to volatile-qualified types fixed when referring to a base or derived class. For example:
+- Reference binding to volatile-qualified types fixed when referring to a base or derived class. For example:
 
     ```cpp
     struct A {};
