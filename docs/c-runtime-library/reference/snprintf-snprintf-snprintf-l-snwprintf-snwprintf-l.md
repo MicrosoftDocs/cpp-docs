@@ -120,7 +120,7 @@ See [Behavior summary](#behavior-summary) for details.
 
 ## Remarks
 
-Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** behavior is now C99 standard conformant. The difference is that if you run out of buffer, `snprintf` null-terminates the end of the buffer and returns the number of characters that would have been required whereas `_snprintf` doesn't null-terminate the buffer and returns -1. Also, `snprintf()` includes one more character in the output because it doesn't null-terminate the buffer.
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** behavior is now C99 standard conformant. The difference is that if you run out of buffer, `snprintf` null-terminates the end of the buffer and returns the number of characters that would have been required whereas `_snprintf` doesn't null-terminate the buffer and returns -1. Also, `_snprintf()` includes one more character in the output because it doesn't null-terminate the buffer.
 
 - **`snprintf`** and the **`_snprintf`** family of functions format and store *`count`* or fewer characters in *`buffer`*.
 - **`snprintf`** always stores a terminating `NULL` character, truncating the output if necessary.
