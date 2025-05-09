@@ -13759,6 +13759,11 @@
       "source_path": "docs/c-runtime-library/operator-new-crt.md",
       "redirect_url": "docs/c-runtime-library/new-operator-crt",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/overview/whats-new-cpp-docs.md",
+      "redirect_url": "../../cpp/overview/what-s-new-for-visual-cpp-in-visual-studio",
+      "redirect_document_id": false
     }
   ]
 }
