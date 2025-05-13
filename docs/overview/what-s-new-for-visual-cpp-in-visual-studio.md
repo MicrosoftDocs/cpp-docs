@@ -50,7 +50,7 @@ A quick highlight of some of the new features:
     :::image-end:::
 
     When you start typing a CMake module in your `CMakeLists.txt` or other CMake script files, IntelliSense provides a list of available modules to choose from:
-    :::image type="complex" source="./media/cmake-intellisense.png" alt-text="A screenshot of intellisense for a include statement":::
+    :::image type="complex" source="./media/cmake-intellisense.png" alt-text="A screenshot of intellisense for a include statement.":::
     The screenshot is of an edit in the C Make Lists .txt file. The cursor is on include ( C Make. The Intellisense dropdown contains entries for C Make Add Fortran Subdirectory, C Make Dependent Option, and more.
     :::image-end:::
 - Guidelines Support Library (GSL) 4.2.0: This release includes performance improvements for `gsl::span`, new features, and better alignment with C++ standards. For more information, see [Announcing Guidelines Support Library v4.2.0](https://devblogs.microsoft.com/cppblog/announcing-guidelines-support-library-v4-2-0/).
