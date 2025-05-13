@@ -13,7 +13,6 @@ ai-usage: ai-assisted
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
 
 - For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022).
-- For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](./whats-new-cpp-docs.md).
 - For information about version build dates, see [Visual Studio 2022 Release History](/visualstudio/releases/2022/release-history).
 
 ## What's new for C++ in Visual Studio version 17.14
@@ -31,13 +30,10 @@ Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler a
 A quick highlight of some of the new features:
 
 - C++ Dynamic Debugging allows you to debug optimized code without impacting performance. For more information, see [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging).
-- Implemented C++23 features:
-    - [`static operator()`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1169r4.html)
-    - [`static operator[]`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2589r1.pdf)
-    - [`if consteval`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p1938r3.html)
-    - [`static constexpr` variables in `constexpr` functions](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2647r1.html)
-    - [Attributes on lambda expressions](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2173r1.pdf)
-    - [Remove unnecessary () from lambdas](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p1102r2.html)
+- Implemented C++23 features (requires `/std:c++latest` or `/std:c++23preview`):
+  - [`static operator()`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1169r4.html)
+  - [`static operator[]`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2589r1.pdf)
+  - [`if consteval`](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p1938r3.html). Allows you to run different code depending on whether the statement is executed at compile time or run time.
 - Automatically generate documentation comments with GitHub Copilot. For more information, see [Introducing automatic documentation comment generation in Visual Studio](https://devblogs.microsoft.com/visualstudio/introducing-automatic-documentation-comment-generation-in-visual-studio/).
 - Use the Model Picker in Visual Studio to select your AI model for GitHub Copilot. For more information, see [Changing the AI model for Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat). This screenshot shows the Model Picker at the bottom of the GitHub Copilot chat window:
     :::image type="complex" source="./media/model-picker.png" alt-text="A screenshot of the GitHub Copilot chat window with the Model Picker dropdown highlighted.":::
