@@ -40,16 +40,15 @@ A quick highlight of some of the new features:
     The dropdown for the Model Picker is open. The options include: GPT-4o, o3-mini, Claude 3.7 Sonnet Thinking, and others.
     :::image-end:::
 - Unreal Engine integration improvements:
-    - The Visual Studio C++ debugger now supports blueprints.
+    - The Visual Studio C++ debugger now supports Unreal Engine Blueprints.
     - Commands for building files, modules, and plugins are available natively in Visual Studio.
-- New compiler flag [/forceInterlockedFunctions](../build/reference/force-interlocked-functions.md) to dynamically select between Armv8.0 load, store exclusive instructions or Armv8.1 Large System Extension (LSE) atomic instructions based on CPU capability at runtime.
-- Added support for IntelliSense-based completions and quick info for CMake modules in Visual Studio. Now, you can view all available CMake modules and learn more, directly from the Visual Studio editor.
-    When you hover over a referenced CMake module, IntelliSense can provide more information on the selected module:
+- New compiler flag [/forceInterlockedFunctions](../build/reference/force-interlocked-functions.md) dynamically selects between Armv8.0 load, store exclusive instructions or Armv8.1 Large System Extension (LSE) atomic instructions based on CPU capability at runtime.
+- Added support for IntelliSense-based completions and quick info for CMake modules in Visual Studio. You can view all available CMake modules and when you hover over a referenced CMake module, IntelliSense provides more info about the selected module:
     :::image type="complex" source="./media/cmake-module-intellisense.png" alt-text="A screenshot of intellisense explaining C Make Print Helpers.":::
     The screenshot is of an edit in the C Make Lists .txt file. The cursor is on include ( CMakePrintHelpers ). Intellisense says: Convenience functions for printing properties and variables, useful for debugging.
     :::image-end:::
 
-    When you start typing a CMake module in your `CMakeLists.txt` or other CMake script files, IntelliSense provides a list of available modules to choose from:
+    When you start typing a CMake module name in your `CMakeLists.txt` or other CMake script files, IntelliSense provides a list of available modules to choose from:
     :::image type="complex" source="./media/cmake-intellisense.png" alt-text="A screenshot of intellisense for a include statement.":::
     The screenshot is of an edit in the C Make Lists .txt file. The cursor is on include ( C Make. The Intellisense dropdown contains entries for C Make Add Fortran Subdirectory, C Make Dependent Option, and more.
     :::image-end:::
