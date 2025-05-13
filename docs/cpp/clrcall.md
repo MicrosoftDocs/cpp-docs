@@ -38,7 +38,7 @@ int __clrcall Func1() {
 }
 
 // Func1 hasn't been used at this point (code has not been generated),
-// so runtime returns the adddress of a stub to the function
+// so runtime returns the address of a stub to the function
 int (__clrcall *pf)() = &Func1;
 
 // code calls the function, code generated at difference address
