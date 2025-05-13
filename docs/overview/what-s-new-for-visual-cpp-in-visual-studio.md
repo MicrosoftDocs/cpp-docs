@@ -40,13 +40,13 @@ A quick highlight of some of the new features:
     The dropdown for the Model Picker is open. The options include: GPT-4o, o3-mini, Claude 3.7 Sonnet Thinking, and others.
     :::image-end:::
 - Unreal Engine integration improvements:
-    - Blueprints are supported in the Visual Studio C++ debugger.
+    - The Visual Studio C++ debugger now supports blueprints.
     - Commands for building files, modules, and plugins are available natively in Visual Studio.
 - New compiler flag [/forceInterlockedFunctions](../build/reference/force-interlocked-functions.md) to dynamically select between Armv8.0 load, store exclusive instructions or Armv8.1 Large System Extension (LSE) atomic instructions based on CPU capability at runtime.
 - Added support for IntelliSense-based completions and quick info for CMake modules in Visual Studio. Now, you can view all available CMake modules and learn more, directly from the Visual Studio editor.
     When you hover over a referenced CMake module, IntelliSense can provide more information on the selected module:
     :::image type="complex" source="./media/cmake-module-intellisense.png" alt-text="A screenshot of intellisense explaining C Make Print Helpers.":::
-    The screenshot is of an edit in the C Make Lists .txt file. The cursor is on include ( CMakePrintHelpers ). Intellisense says: Convenience functions for printing properties and variables, useful e.g. for debugging.
+    The screenshot is of an edit in the C Make Lists .txt file. The cursor is on include ( CMakePrintHelpers ). Intellisense says: Convenience functions for printing properties and variables, useful for debugging.
     :::image-end:::
 
     When you start typing a CMake module in your `CMakeLists.txt` or other CMake script files, IntelliSense provides a list of available modules to choose from:
@@ -125,7 +125,7 @@ A quick highlight of some new features:
 - **GitHub Copilot**
 
   - GitHub Copilot Free is now available. Get 2,000 code completions and 50 chat requests per month at no cost.
-  - GitHub Copilot code completions provide autocomplete suggestions inline as you code. To enhance the experience of C++ developers, GitHub Copilot includes other relevant files as context. This reduces hallucinations while offering more relevant and accurate suggestions.
+  - GitHub Copilot code completions provide autocomplete suggestions inline as you code. To enhance the experience of C++ developers, GitHub Copilot includes other relevant files as context. This reduces errors while offering more relevant and accurate suggestions.
   - You can now request a code review from GitHub Copilot from the Git Changes window:
     :::image type="complex" source="./media/vs2022-copilot-git-changes-review.png" alt-text="A screenshot of the Git Changes window with the GitHub Copilot Review button highlighted.":::
     The Git Changes window is open with the GitHub Copilot Review button highlighted.
