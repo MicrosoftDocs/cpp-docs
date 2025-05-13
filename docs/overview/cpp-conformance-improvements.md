@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 2/11/2025
+ms.date: 05/13/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -19,15 +19,79 @@ For changes in earlier versions of Visual Studio:
 | 2017 | [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) |
 | 2003-2015 | [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md) |
 
+## <a name="improvements_1714"></a> Conformance improvements in Visual Studio 2022 version 17.14
+
+Visual Studio 2022 version 17.14 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+### Conformance improvements
+
+- Standard library hardening ([P3471R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3471r4.html)) turns some instances of undefined behavior in the standard library into a call to [__fastfail](../intrinsics/fastfail.md). Off by default. Define `_MSVC_STL_HARDENING=1` project-wide to enable.
+
+### Enhanced behavior
+
+- Implemented "destructor tombstones" to mitigate use-after-free mistakes. Off by default. Define `_MSVC_STL_DESTRUCTOR_TOMBSTONES=1` project-wide to enable.
+
+### Bug fixes
+
+- Fixed errant compiler errors when using `<format>` in a CUDA project.
+- Fixed a compiler issue where the address of a local variable could "leak" during `constexpr` evaluation. For example:
+
+    ```cpp
+    const unsigned & func() 
+    {
+      const int x = 0;
+      constexpr const unsigned & r1 = x; // Previously accepted, now an error
+      return r1;
+    }
+    
+    auto r = func();  // Previously, the local address leaked
+    ```
+
+    **Example #2**
+
+    ```cpp
+    #include <initializer_list>
+    
+    void test()
+    {
+        constexpr std::initializer_list<int> xs { 1, 2, 3 };        // Previously accepted, now an error
+    
+        static constexpr std::initializer_list<int> ys { 1, 2, 3 }; // Correct usage - note use of static
+    }
+    ```
+
+- Code compiled with `/permissive-` no longer accepts a combination of `friend` and `static` on a declaration. The fix is usually to remove `static` from the declaration. For example:
+
+    ```cpp
+    struct S
+    {
+        friend static void f(); // Previously accepted, now emits error C2440: 'static' cannot be used with 'friend'
+    };
+    ```
+
+- Reference binding to volatile-qualified types fixed when referring to a base or derived class. For example:
+
+    ```cpp
+    struct A {};
+    struct B : public A {};
+    
+    void f(A&);                 // 1
+    void f(const volatile A&);  // 2
+    
+    f(B{}); // Previously called 2. This is ill-formed under /permissive- or /Zc:referenceBinding. Chooses 1 if relaxed reference binding rules are enabled.
+    ```
+
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.14](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1714).
+
 ## <a name="improvements_1713"></a> Conformance improvements in Visual Studio 2022 version 17.13
 
 Visual Studio 2022 version 17.13 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
 
 For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.13](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1713).
 
-### Argument-dependent lookup (ADL) change
+### Argument-dependent lookup (ADL)
 
-Language constructs such as range-for and structured bindings have special argument-dependent lookup rules for certain identifiers such as `begin`, `end`, or `get`. Previously, this lookup included candidates from the `std` namespace, even when namespace `std` is not part of the ordinary set of associated namespaces for argument-dependent lookup.
+Language constructs such as range-for and structured bindings have special argument-dependent lookup rules for certain identifiers such as `begin`, `end`, or `get`. Previously, this lookup included candidates from the `std` namespace, even when namespace `std` isn't part of the ordinary set of associated namespaces for argument-dependent lookup.
 
 Programs that introduced declarations to `std` for these constructs no longer compile. Instead, the declarations should be in a normal associated namespace for the types involved (possibly including the global namespace).
 
@@ -73,9 +137,9 @@ For an in-depth summary of changes made to the Standard Template Library, includ
 
 This is a source/binary breaking change.
 
-The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. Implicit conversion functions are discouraged by the [C++ Core Guidelines (C.164)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conversion), and `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
+The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. The [C++ Core Guidelines (C.164)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conversion) discourage implicit conversion functions. And `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
 
-To help address this, the conversion to `bool` is now explicit. The conversion to `Interface*` is unchanged.
+To address this, the conversion to `bool` is now explicit. The conversion to `Interface*` is unchanged.
 
 A macro is provided to opt-out of this new behavior and restore the previous implicit conversion. Compile with `/D_COM_DISABLE_EXPLICIT_OPERATOR_BOOL` to opt-out of this change. We recommend that you modify the code to not rely on implicit conversions.
 
