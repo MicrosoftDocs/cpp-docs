@@ -41,7 +41,7 @@ landingContent:
             url: ./asan-runtime.md
           - text: AddressSanitizer error examples
             url: ./asan-error-examples.md
-          - text: AddressSanitizer known issues
+          - text: AddressSanitizer known issues and limitations
             url: ./asan-known-issues.md
 
   # Card
