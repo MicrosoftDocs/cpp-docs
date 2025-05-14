@@ -5,7 +5,7 @@ ms.date: 3/5/2025
 helpviewer_keywords: ["AddressSanitizer known issues"]
 ---
 
-# AddressSanitizer known issues
+# AddressSanitizer known issues and limitations
 
 > [!NOTE]
 > Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you'd like to see in future releases, and [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
@@ -77,6 +77,10 @@ The *`clang_rt.asan*.dll`* runtime files are installed next to the compilers in 
 The Property Manager window in the Visual Studio IDE allows you to add custom *`.props`* files to your projects. Even though the **Enable Address Sanitizer** property (`<EnableASAN>`) is shown, the build doesn't honor it. That's because the custom *`.props`* files get included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
 
 As a workaround, you can create a *`Directory.Build.props`* file in the root of your project to define the `<EnableASAN>` property. For more information, see [Customize C++ builds](/visualstudio/msbuild/customize-your-build#customize-c-builds).
+
+## Thread Local Variables
+
+Thread local variables (global variables declared with `__declspec(thread)` or `thread_local`) are not protected by the address sanitzer runtime. This limitation is not specific to Windows or MSVC, but a general limitation on the current underlying implementation of the address sanitizer.
 
 ## See also
 
