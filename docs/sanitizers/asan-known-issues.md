@@ -80,7 +80,7 @@ As a workaround, you can create a *`Directory.Build.props`* file in the root of 
 
 ## Thread Local Variables
 
-Thread local variables (global variables declared with `__declspec(thread)` or `thread_local`) are not protected by the address sanitzer runtime. This limitation is not specific to Windows or MSVC, but a general limitation on the current underlying implementation of the address sanitizer.
+Thread local variables (global variables declared with `__declspec(thread)` or `thread_local`) are not protected by the address sanitizer runtime. This limitation is not specific to Windows or MSVC, but a general limitation of the current underlying implementation of the address sanitizer.
 
 ## See also
 
