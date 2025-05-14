@@ -66,7 +66,7 @@ Support is focused on Windows 10. MSVC AddressSanitizer was tested on 10.0.14393
 
 ## Memory usage
 
-The AddressSanitizer runtime doesn't release memory back to the OS during execution. From the OS's point of view, it may look like there's a memory leak. This is intentional so that the memory isn't all allocate up front.
+The AddressSanitizer runtime doesn't release memory back to the OS during execution. From the OS's point of view, it may look like there's a memory leak. This is intentional so that the memory isn't all allocated up front.
 
 ## AddressSanitizer runtime DLL locations
 
