@@ -1,7 +1,7 @@
 ---
-title: "AddressSanitizer known issues"
+title: "AddressSanitizer known issues and limitations"
 description: "Technical description of the AddressSanitizer for Microsoft C/C++ known issues."
-ms.date: 3/5/2025
+ms.date: 5/14/2025
 helpviewer_keywords: ["AddressSanitizer known issues"]
 ---
 
