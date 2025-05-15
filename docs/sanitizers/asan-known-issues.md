@@ -1,11 +1,11 @@
 ---
-title: "AddressSanitizer known issues"
+title: "AddressSanitizer known issues and limitations"
 description: "Technical description of the AddressSanitizer for Microsoft C/C++ known issues."
-ms.date: 3/5/2025
+ms.date: 5/14/2025
 helpviewer_keywords: ["AddressSanitizer known issues"]
 ---
 
-# AddressSanitizer known issues
+# AddressSanitizer known issues and limitations
 
 > [!NOTE]
 > Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you'd like to see in future releases, and [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
@@ -56,27 +56,31 @@ int main() {
 
 ## Overriding operator new and delete
 
-AddressSanitizer (ASAN) has a custom version of `operator new` and `operator delete` that it uses to find more allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Running the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) ensures that ASAN's `new`/`delete` override has low precedence, so that the linker chooses any `operator new` or `operator delete` overrides in other libraries over ASAN's custom versions. When this happens, ASAN may not be able to catch some errors that rely on its custom `operator new` and `operator delete`.
+AddressSanitizer (ASAN) uses a custom version of `operator new` and `operator delete` to find allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Running the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) ensures that ASAN's `new`/`delete` override has low precedence, so that the linker chooses any `operator new` or `operator delete` overrides in other libraries over ASAN's custom versions. When this happens, ASAN may not be able to catch some errors that rely on its custom `operator new` and `operator delete`.
 
-[MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete` and so might miss errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md).
+[MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete` and might miss errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md).
 
 ## Windows versions
 
-As there are dependencies with specific Windows versions, support is focused on Windows 10. MSVC AddressSanitizer was tested on 10.0.14393 (RS1), and 10.0.21323 (prerelease insider build). [Report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
+Support is focused on Windows 10. MSVC AddressSanitizer was tested on 10.0.14393 (RS1), and 10.0.21323 (prerelease insider build). [Report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Memory usage
 
-The AddressSanitizer runtime doesn't release memory back to the OS during execution. From the OS's point of view, it may look like there's a memory leak. This design decision is intentional, so as not to allocate all the required memory up front.
+The AddressSanitizer runtime doesn't release memory back to the OS during execution. From the OS's point of view, it may look like there's a memory leak. This is intentional so that the memory isn't all allocated up front.
 
 ## AddressSanitizer runtime DLL locations
 
-The *`clang_rt.asan*.dll`* runtime files are installed next to the compilers in *`%VSINSTALLDIR%\VC\Tools\MSVC\<version>\bin\<host-arch>\<target-arch>\`*. These locations are on the path in debugging sessions, and in Visual Studio developer command prompts. These files are never placed in *`C:\Windows\System32`* or *`C:\Windows\SysWOW64`*.
+The *`clang_rt.asan*.dll`* runtime files are installed next to the compilers in *`%VSINSTALLDIR%\VC\Tools\MSVC\<version>\bin\<host-arch>\<target-arch>\`*. These locations are on the path in debugging sessions and in Visual Studio developer command prompts. These files are never placed in *`C:\Windows\System32`* or *`C:\Windows\SysWOW64`*.
 
 ## Custom property sheet support
 
-The Property Manager window in the Visual Studio IDE allows you to add custom *`.props`* files to your projects. Even though the **Enable Address Sanitizer** property (`<EnableASAN>`) is shown, the build doesn't honor it. That's because the custom *`.props`* files get included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
+The Visual Studio Property Manager window allows you to add custom *`.props`* files to your projects. Even though the **Enable Address Sanitizer** property (`<EnableASAN>`) is shown, the build doesn't honor it. That's because the custom *`.props`* files are included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
 
-As a workaround, you can create a *`Directory.Build.props`* file in the root of your project to define the `<EnableASAN>` property. For more information, see [Customize C++ builds](/visualstudio/msbuild/customize-your-build#customize-c-builds).
+As a workaround, create a *`Directory.Build.props`* file in the root of your project to define the `<EnableASAN>` property. For more information, see [Customize C++ builds](/visualstudio/msbuild/customize-your-build#customize-c-builds).
+
+## Thread local variables
+
+Thread local variables (global variables declared with `__declspec(thread)` or `thread_local`) aren't protected by AddressSanitizer. This limitation isn't specific to Windows or Microsoft Visual C++, but is a general limitation.
 
 ## See also
 
