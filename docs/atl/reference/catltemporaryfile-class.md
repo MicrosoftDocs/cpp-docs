@@ -357,7 +357,7 @@ Returns the LPCTSTR pointing to the file name.
 
 ### Remarks
 
-The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](/windows/win32/api/fileapi/nf-fileapi-gettempfilenamew)Windows SDK function. The file extension will always be "TFR" for the temporary file.
+The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](/windows/win32/api/fileapi/nf-fileapi-gettempfilenamew) Windows SDK function. The file extension will always be "TFR" for the temporary file.
 
 ## <a name="unlockrange"></a> CAtlTemporaryFile::UnlockRange
 

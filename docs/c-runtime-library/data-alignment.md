@@ -14,7 +14,7 @@ The following C run-time functions support data alignment.
 
 | Routine | Use |
 |---|---|
-| [`_aligned_free`](./reference/aligned-free.md) | Frees a block of memory that was allocated with [`_aligned_malloc`](./reference/aligned-malloc.md)or [`_aligned_offset_malloc`](./reference/aligned-offset-malloc.md). |
+| [`_aligned_free`](./reference/aligned-free.md) | Frees a block of memory that was allocated with [`_aligned_malloc`](./reference/aligned-malloc.md) or [`_aligned_offset_malloc`](./reference/aligned-offset-malloc.md). |
 | [`_aligned_free_dbg`](./reference/aligned-free-dbg.md) | Frees a block of memory that was allocated with [`_aligned_malloc`](./reference/aligned-malloc.md) or [`_aligned_offset_malloc`](./reference/aligned-offset-malloc.md) (debug only). |
 | [`_aligned_malloc`](./reference/aligned-malloc.md) | Allocates memory on a specified alignment boundary. |
 | [`_aligned_malloc_dbg`](./reference/aligned-malloc-dbg.md) | Allocates memory on a specified alignment boundary with extra space for a debugging header and overwrite buffers (debug version only). |

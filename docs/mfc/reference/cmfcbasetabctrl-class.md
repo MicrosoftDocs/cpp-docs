@@ -1756,7 +1756,7 @@ virtual void SetActiveTabColor(COLORREF clr);
 
 ### Remarks
 
-The framework obtains the default background color for active tabs from the [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor)method.
+The framework obtains the default background color for active tabs from the [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor) method.
 
 ## <a name="setactivetabtextcolor"></a> CMFCBaseTabCtrl::SetActiveTabTextColor
 

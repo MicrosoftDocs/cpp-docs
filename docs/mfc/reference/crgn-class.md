@@ -37,7 +37,7 @@ class CRgn : public CGdiObject
 |[CRgn::CreatePolygonRgn](#createpolygonrgn)|Initializes a `CRgn` object with a polygonal region. The system closes the polygon automatically, if necessary, by drawing a line from the last vertex to the first.|
 |[CRgn::CreatePolyPolygonRgn](#createpolypolygonrgn)|Initializes a `CRgn` object with a region consisting of a series of closed polygons. The polygons may be disjoint, or they may overlap.|
 |[CRgn::CreateRectRgn](#createrectrgn)|Initializes a `CRgn` object with a rectangular region.|
-|[CRgn::CreateRectRgnIndirect](#createrectrgnindirect)|Initializes a `CRgn` object with a rectangular region defined by a [RECT](/windows/win32/api/windef/ns-windef-rect)tructure.|
+|[CRgn::CreateRectRgnIndirect](#createrectrgnindirect)|Initializes a `CRgn` object with a rectangular region defined by a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.|
 |[CRgn::CreateRoundRectRgn](#createroundrectrgn)|Initializes a `CRgn` object with a rectangular region with rounded corners.|
 |[CRgn::EqualRgn](#equalrgn)|Checks two `CRgn` objects to determine whether they are equivalent.|
 |[CRgn::FromHandle](#fromhandle)|Returns a pointer to a `CRgn` object when given a handle to a Windows region.|
@@ -250,7 +250,7 @@ BOOL CreateFromData(
 ### Parameters
 
 *lpXForm*<br/>
-Points to an [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform)ata structure that defines the transformation to be performed on the region. If this pointer is NULL, the identity transformation is used.
+Points to an [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) data structure that defines the transformation to be performed on the region. If this pointer is NULL, the identity transformation is used.
 
 *nCount*<br/>
 Specifies the number of bytes pointed to by *pRgnData*.

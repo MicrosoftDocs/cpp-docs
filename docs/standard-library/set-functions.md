@@ -63,4 +63,4 @@ in the algorithm class works by assignment and is a slow operation. The speciali
 
 ### Example
 
-See the code example for the member class [multiset::swap](../standard-library/multiset-class.md#swap)for an example of the use of the template version of `swap`.
+See the code example for the member class [multiset::swap](../standard-library/multiset-class.md#swap) for an example of the use of the template version of `swap`.

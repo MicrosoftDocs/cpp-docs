@@ -337,7 +337,7 @@ void GetBandMargins(PMARGINS pMargins);
 ### Parameters
 
 *pMargins*<br/>
-A pointer to a [MARGINS](/windows/win32/api/uxtheme/ns-uxtheme-margins)structure that will receive the information.
+A pointer to a [MARGINS](/windows/win32/api/uxtheme/ns-uxtheme-margins) structure that will receive the information.
 
 ### Remarks
 

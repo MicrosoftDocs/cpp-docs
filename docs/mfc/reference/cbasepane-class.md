@@ -80,7 +80,7 @@ class CBasePane : public CWnd
 |[CBasePane::GetMFCStyle](#getmfcstyle)|Returns the pane styles specific to MFC.|
 |[CBasePane::GetPaneIcon](#getpaneicon)|Returns a handle to the pane icon.|
 |`CBasePane::GetPaneRect`|Used internally.|
-|[CBasePane::GetPaneRow](#getpanerow)|Returns a pointer to the [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)object where the pane is docked.|
+|[CBasePane::GetPaneRow](#getpanerow)|Returns a pointer to the [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md) object where the pane is docked.|
 |[CBasePane::GetPaneStyle](#getpanestyle)|Returns the pane style.|
 |[CBasePane::GetParentDockSite](#getparentdocksite)|Returns a pointer to the parent dock site.|
 |[CBasePane::GetParentMiniFrame](#getparentminiframe)|Returns a pointer to the parent mini-frame window.|
@@ -892,7 +892,7 @@ By setting *m_dockMode* or overriding `GetDockingMode` you can control the docki
 
 ## <a name="getdocksiteframewnd"></a> CBasePane::GetDockSiteFrameWnd
 
-Returns a pointer to the [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)object where the pane is docked.
+Returns a pointer to the [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md) object where the pane is docked.
 
 ```
 virtual CWnd* GetDockSiteFrameWnd() const;
@@ -967,7 +967,7 @@ The default implementation calls [CWnd::GetIcon](../../mfc/reference/cwnd-class.
 
 ## <a name="getpanerow"></a> CBasePane::GetPaneRow
 
-Returns a pointer to the [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)object where the pane is docked.
+Returns a pointer to the [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md) object where the pane is docked.
 
 ```
 CDockingPanesRow* GetPaneRow();

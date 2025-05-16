@@ -8,7 +8,7 @@ ms.assetid: ebff1560-a1eb-4854-af00-95d4a192bd55
 ---
 # COleIPFrameWndEx Class
 
-The `COleIPFrameWndEx` class implements an OLE container that supports MFC. You must derive the in-place frame window class for your application from the `COleIPFrameWndEx` class, instead of deriving it from the [COleIPFrameWnd](../../mfc/reference/coleipframewnd-class.md)class.
+The `COleIPFrameWndEx` class implements an OLE container that supports MFC. You must derive the in-place frame window class for your application from the `COleIPFrameWndEx` class, instead of deriving it from the [COleIPFrameWnd](../../mfc/reference/coleipframewnd-class.md) class.
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
 ## Syntax
@@ -50,8 +50,8 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 |[COleIPFrameWndEx::OnClosePopupMenu](#onclosepopupmenu)|Called by the framework when an active pop-up menu processes a WM_DESTROY message.|
 |[COleIPFrameWndEx::OnCmdMsg](#oncmdmsg)|(Overrides `CFrameWnd::OnCmdMsg`.)|
 |[COleIPFrameWndEx::OnDrawMenuImage](#ondrawmenuimage)|Called by the framework when the image associated with a menu item is drawn.|
-|[COleIPFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)object processes a WM_PAINT message.|
-|[COleIPFrameWndEx::OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes WM_NCHITTEST message.|
+|[COleIPFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) object processes a WM_PAINT message.|
+|[COleIPFrameWndEx::OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) object processes WM_NCHITTEST message.|
 |[COleIPFrameWndEx::OnMoveMiniFrame](#onmoveminiframe)||
 |[COleIPFrameWndEx::OnSetPreviewMode](#onsetpreviewmode)|Call this member function to set the application's main frame window into and out of print-preview mode. (Overrides [CFrameWnd::OnSetPreviewMode](../../mfc/reference/cframewnd-class.md#onsetpreviewmode).)|
 |[COleIPFrameWndEx::OnShowCustomizePane](#onshowcustomizepane)||
@@ -571,7 +571,7 @@ Override this method if you want to customize image drawing for the menu items t
 
 ## <a name="ondrawmenulogo"></a> COleIPFrameWndEx::OnDrawMenuLogo
 
-Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)object processes a WM_PAINT message.
+Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) object processes a WM_PAINT message.
 
 ```
 virtual void OnDrawMenuLogo(
@@ -597,7 +597,7 @@ Override this method to display a logo on the pop-up menu associated with the me
 
 ## <a name="onmenubuttontoolhittest"></a> COleIPFrameWndEx::OnMenuButtonToolHitTest
 
-Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a WM_NCHITTEST message.
+Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) object processes a WM_NCHITTEST message.
 
 ```
 virtual BOOL OnMenuButtonToolHitTest(

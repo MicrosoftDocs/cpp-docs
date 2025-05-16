@@ -1265,7 +1265,7 @@ Override this method in a derived visual manager to customize the appearance of 
 
 ## <a name="ondrawribbonprogressbar"></a> CMFCVisualManagerOffice2003::OnDrawRibbonProgressBar
 
-The framework calls this method when it draws a [CMFCRibbonProgressBar Class](../../mfc/reference/cmfcribbonprogressbar-class.md)object.
+The framework calls this method when it draws a [CMFCRibbonProgressBar Class](../../mfc/reference/cmfcribbonprogressbar-class.md) object.
 
 ```
 virtual void OnDrawRibbonProgressBar(

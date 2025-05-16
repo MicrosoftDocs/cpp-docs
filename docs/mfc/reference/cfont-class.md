@@ -102,7 +102,7 @@ BOOL CreateFont(
 ### Parameters
 
 *`nHeight`*<br/>
-Specifies the desired height (in logical units) of the font. See the `lfHeight` member of the [`LOGFONT`](/windows/win32/api/wingdi/ns-wingdi-logfontw)structure in the Windows SDK for a description. The absolute value of *`nHeight`* must not exceed 16,384 device units after it is converted. For all height comparisons, the font mapper looks for the largest font that does not exceed the requested size or the smallest font if all the fonts exceed the requested size.
+Specifies the desired height (in logical units) of the font. See the `lfHeight` member of the [`LOGFONT`](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure in the Windows SDK for a description. The absolute value of *`nHeight`* must not exceed 16,384 device units after it is converted. For all height comparisons, the font mapper looks for the largest font that does not exceed the requested size or the smallest font if all the fonts exceed the requested size.
 
 *`nWidth`*<br/>
 Specifies the average width (in logical units) of characters in the font. If *`nWidth`* is 0, the aspect ratio of the device will be matched against the digitization aspect ratio of the available fonts to find the closest match, which is determined by the absolute value of the difference.
@@ -173,7 +173,7 @@ When you finish with the `CFont` object created by the `CreateFont` function, us
 
 ## <a name="createfontindirect"></a> `CFont::CreateFontIndirect`
 
-Initializes a `CFont` object with the characteristics given in a [`LOGFONT`](/windows/win32/api/wingdi/ns-wingdi-logfontw)structure.
+Initializes a `CFont` object with the characteristics given in a [`LOGFONT`](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure.
 
 ```
 BOOL CreateFontIndirect(const LOGFONT* lpLogFont);

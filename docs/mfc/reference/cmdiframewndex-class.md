@@ -72,9 +72,9 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[`CMDIFrameWndEx::OnClosePopupMenu`](#onclosepopupmenu)|Called by the framework when an active pop-up menu processes a `WM_DESTROY` message.|
 |[`CMDIFrameWndEx::OnCmdMsg`](#oncmdmsg)|Called by the framework to route and dispatch command messages and to update command user-interface objects.|
 |[`CMDIFrameWndEx::OnDrawMenuImage`](#ondrawmenuimage)|Called by the framework when the image associated with a menu item is drawn.|
-|[`CMDIFrameWndEx::OnDrawMenuLogo`](#ondrawmenulogo)|Called by the framework when a [`CMFCPopupMenu`](../../mfc/reference/cmfcpopupmenu-class.md)processes a `WM_PAINT` message.|
+|[`CMDIFrameWndEx::OnDrawMenuLogo`](#ondrawmenulogo)|Called by the framework when a [`CMFCPopupMenu`](../../mfc/reference/cmfcpopupmenu-class.md) processes a `WM_PAINT` message.|
 |[`CMDIFrameWndEx::OnEraseMDIClientBackground`](#onerasemdiclientbackground)|Called by the framework when the MDI frame window processes a `WM_ERASEBKGND` message.|
-|[`CMDIFrameWndEx::OnMenuButtonToolHitTest`](#onmenubuttontoolhittest)|Called by the framework when a [`CMFCToolBarButton`](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a `WM_NCHITTEST` message.|
+|[`CMDIFrameWndEx::OnMenuButtonToolHitTest`](#onmenubuttontoolhittest)|Called by the framework when a [`CMFCToolBarButton`](../../mfc/reference/cmfctoolbarbutton-class.md) object processes a `WM_NCHITTEST` message.|
 |[`CMDIFrameWndEx::OnMoveMiniFrame`](#onmoveminiframe)|Called by the framework to move a mini-frame window.|
 |[`CMDIFrameWndEx::OnSetPreviewMode`](#onsetpreviewmode)|Sets the application's main frame window print-preview mode. (Overrides [`CFrameWnd::OnSetPreviewMode`](../../mfc/reference/cframewnd-class.md#onsetpreviewmode).)|
 |[`CMDIFrameWndEx::OnShowCustomizePane`](#onshowcustomizepane)|Called by the framework when a Quick Customize pane is activated.|
@@ -1282,7 +1282,7 @@ Override this method  if you want to customize image rendering for the menu item
 
 ## <a name="ondrawmenulogo"></a> `CMDIFrameWndEx::OnDrawMenuLogo`
 
-Called by the framework when a [`CMFCPopupMenu`](../../mfc/reference/cmfcpopupmenu-class.md)processes a `WM_PAINT` message.
+Called by the framework when a [`CMFCPopupMenu`](../../mfc/reference/cmfcpopupmenu-class.md) processes a `WM_PAINT` message.
 
 ```cpp
 virtual void OnDrawMenuLogo(
@@ -1313,7 +1313,7 @@ Override this member function if you want to process the `WM_ERASEBKGND` message
 
 ## <a name="onmenubuttontoolhittest"></a> `CMDIFrameWndEx::OnMenuButtonToolHitTest`
 
-Called by the framework when a [`CMFCToolBarButton`](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a `WM_NCHITTEST` message.
+Called by the framework when a [`CMFCToolBarButton`](../../mfc/reference/cmfctoolbarbutton-class.md) object processes a `WM_NCHITTEST` message.
 
 ```cpp
 virtual BOOL OnMenuButtonToolHitTest(

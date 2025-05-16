@@ -646,7 +646,7 @@ DWORD m_dwMiscStatus;
 
 ### Remarks
 
-For more information, see [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc)in the Windows SDK.
+For more information, see [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc) in the Windows SDK.
 
 ## <a name="m_dwpropnotifysink"></a> COleControlSite::m_dwPropNotifySink
 

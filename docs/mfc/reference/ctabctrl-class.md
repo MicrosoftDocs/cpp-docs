@@ -366,7 +366,7 @@ Index into the tab control's image list, or -1 if there is no image for the tab.
 
 - `lParam`
 
-   Application-defined data associated with the tab. If there are more than 4 bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [`TCITEMHEADER`](/windows/win32/api/commctrl/ns-commctrl-tcitemheaderw)structure. The `TCITEMHEADER` structure is identical to the `TCITEM` structure, but without the `lParam` member. The difference between the size of your structure and the size of the `TCITEMHEADER` structure should equal the number of extra bytes per tab.
+   Application-defined data associated with the tab. If there are more than 4 bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [`TCITEMHEADER`](/windows/win32/api/commctrl/ns-commctrl-tcitemheaderw) structure. The `TCITEMHEADER` structure is identical to the `TCITEM` structure, but without the `lParam` member. The difference between the size of your structure and the size of the `TCITEMHEADER` structure should equal the number of extra bytes per tab.
 
 ### Example
 

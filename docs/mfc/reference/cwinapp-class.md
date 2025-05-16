@@ -1620,7 +1620,7 @@ virtual BOOL ProcessMessageFilter(
 Specifies a hook code. This member function uses the code to determine how to process *lpMsg.*
 
 *lpMsg*<br/>
-A pointer to a Windows [MSG](/windows/win32/api/winuser/ns-winuser-msg)tructure.
+A pointer to a Windows [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure.
 
 ### Return Value
 
@@ -1691,7 +1691,7 @@ virtual LRESULT ProcessWndProcException(
 A pointer to an uncaught exception.
 
 *pMsg*<br/>
-A [MSG](/windows/win32/api/winuser/ns-winuser-msg)tructure that contains information about the windows message that caused the framework to throw an exception.
+A [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure that contains information about the windows message that caused the framework to throw an exception.
 
 ### Return Value
 
@@ -1935,7 +1935,7 @@ void SelectPrinter(
 ### Parameters
 
 *hDevNames*<br/>
-A handle to a [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames)tructure that identifies the driver, device, and output port names of a specific printer.
+A handle to a [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames) structure that identifies the driver, device, and output port names of a specific printer.
 
 *hDevMode*<br/>
 A handle to a [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) structure that specifies information about the device initialization and environment of a printer.
