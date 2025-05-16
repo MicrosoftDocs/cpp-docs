@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Data Alignment"
 title: "Data Alignment"
-ms.date: "11/04/2016"
+description: "Learn more about: Data Alignment"
+ms.date: 11/04/2016
 f1_keywords: ["data.alignment"]
 helpviewer_keywords: ["data alignment [C++]"]
-ms.assetid: 35ac3d2d-a4b3-421b-954f-b7372b1f18e1
 ---
 # Data alignment
 

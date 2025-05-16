@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CFont Class"
 title: "CFont Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CFont Class"
+ms.date: 11/04/2016
 f1_keywords: ["CFont", "AFXWIN/CFont", "AFXWIN/CFont::CFont", "AFXWIN/CFont::CreateFont", "AFXWIN/CFont::CreateFontIndirect", "AFXWIN/CFont::CreatePointFont", "AFXWIN/CFont::CreatePointFontIndirect", "AFXWIN/CFont::FromHandle", "AFXWIN/CFont::GetLogFont"]
 helpviewer_keywords: ["CFont [MFC], CFont", "CFont [MFC], CreateFont", "CFont [MFC], CreateFontIndirect", "CFont [MFC], CreatePointFont", "CFont [MFC], CreatePointFontIndirect", "CFont [MFC], FromHandle", "CFont [MFC], GetLogFont"]
-ms.assetid: 3fad6bfe-d6ce-4ab9-967a-5ce0aa102800
 ---
 # `CFont` Class
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2978"
 title: "Compiler Error C2978"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2978"
+ms.date: 11/04/2016
 f1_keywords: ["C2978"]
 helpviewer_keywords: ["C2978"]
-ms.assetid: 5e7bee82-e266-4ccd-ad2e-ee89606ec5bf
 ---
 # Compiler Error C2978
 

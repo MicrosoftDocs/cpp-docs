@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CWindowDC Class"
 title: "CWindowDC Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CWindowDC Class"
+ms.date: 11/04/2016
 f1_keywords: ["CWindowDC", "AFXWIN/CWindowDC", "AFXWIN/CWindowDC::CWindowDC", "AFXWIN/CWindowDC::m_hWnd"]
 helpviewer_keywords: ["CWindowDC [MFC], CWindowDC", "CWindowDC [MFC], m_hWnd"]
-ms.assetid: 876a3641-4cde-471c-b0d1-fe58b32af79c
 ---
 # CWindowDC Class
 
