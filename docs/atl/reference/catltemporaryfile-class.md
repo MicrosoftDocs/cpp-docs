@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CAtlTemporaryFile Class"
 title: "CAtlTemporaryFile Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CAtlTemporaryFile Class"
+ms.date: 11/04/2016
 f1_keywords: ["CAtlTemporaryFile", "ATLFILE/ATL::CAtlTemporaryFile", "ATLFILE/ATL::CAtlTemporaryFile::CAtlTemporaryFile", "ATLFILE/ATL::CAtlTemporaryFile::Close", "ATLFILE/ATL::CAtlTemporaryFile::Create", "ATLFILE/ATL::CAtlTemporaryFile::Flush", "ATLFILE/ATL::CAtlTemporaryFile::GetPosition", "ATLFILE/ATL::CAtlTemporaryFile::GetSize", "ATLFILE/ATL::CAtlTemporaryFile::HandsOff", "ATLFILE/ATL::CAtlTemporaryFile::HandsOn", "ATLFILE/ATL::CAtlTemporaryFile::LockRange", "ATLFILE/ATL::CAtlTemporaryFile::Read", "ATLFILE/ATL::CAtlTemporaryFile::Seek", "ATLFILE/ATL::CAtlTemporaryFile::SetSize", "ATLFILE/ATL::CAtlTemporaryFile::TempFileName", "ATLFILE/ATL::CAtlTemporaryFile::UnlockRange", "ATLFILE/ATL::CAtlTemporaryFile::Write"]
 helpviewer_keywords: ["CAtlTemporaryFile class"]
-ms.assetid: 05f0f2a5-94f6-4594-8dae-b114292ff5f9
 ---
 # CAtlTemporaryFile Class
 
@@ -357,7 +356,7 @@ Returns the LPCTSTR pointing to the file name.
 
 ### Remarks
 
-The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](/windows/win32/api/fileapi/nf-fileapi-gettempfilenamew)Windows SDK function. The file extension will always be "TFR" for the temporary file.
+The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](/windows/win32/api/fileapi/nf-fileapi-gettempfilenamew) Windows SDK function. The file extension will always be "TFR" for the temporary file.
 
 ## <a name="unlockrange"></a> CAtlTemporaryFile::UnlockRange
 
