@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Clang/LLVM support in Visual Studio projects"
 title: "Clang/LLVM support in Visual Studio projects"
+description: "Learn more about: Clang/LLVM support in Visual Studio projects"
 ms.date: 03/13/2024
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
