@@ -116,5 +116,7 @@ After you have set up a Clang configuration, right-click again on the project no
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features.  
 
 :::image type="complex" source="media/clang-debug-msbuild.png" alt-text="Screenshot of Visual Studio debugging a sample app":::
-The portion of the app that is visible creates a string vector and adds some strings to it. Execution has stopped on a breakpoint for the code: v.push_back("Clang/LLVM");."
+The portion of the app that is visible creates a string vector and adds some strings to it. Execution has stopped on a breakpoint for the code: v.push_back("Clang/LLVM");.
+:::image-end:::
+
 ::: moniker-end
