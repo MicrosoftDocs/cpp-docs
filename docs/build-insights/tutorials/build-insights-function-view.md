@@ -63,7 +63,7 @@ When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the 
 In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to generate the code for each function. If the amount of code generated for a function is negligible, it won't appear in the list to avoid degrading build event collection performance.
 
 :::image type="complex" source="./media/functions-view-before-fix.png" alt-text="Screenshot of the Build Insights Functions view file.":::
-In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
+In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.
 :::image-end:::
 
 The **Time [sec, %]** column shows how long it took to compile each function in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). This metric distributes the wall clock time among functions based on their use of parallel compiler threads. For example, if two different threads are compiling two different functions simultaneously within a one-second period, each function's WCTR is recorded as 0.5 seconds. This reflects each function's proportional share of the total compilation time, taking into account the resources each consumed during parallel execution. Thus, WCTR provides a better measure of the impact each function has on the overall build time in environments where multiple compilation activities occur simultaneously.
@@ -112,7 +112,7 @@ We rerun Build Insights from the main menu by choosing **Build** > **Run Build I
 The build time goes from 25.181 seconds to 13.376 seconds and the `performPhysicsCalculations` function doesn't show up anymore in the **Functions** view because it doesn't contribute enough to the build time to be counted.
 
 :::image type="complex" source="./media/functions-view-after-fix.png" alt-text="Screenshot of the 2D vector header file.":::
-In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.:::
+In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.
 :::image-end:::
 
 The Diagnostics Session time is the overall time it took do the build plus any overhead for gathering the Build Insights data.
