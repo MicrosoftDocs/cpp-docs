@@ -433,7 +433,8 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 3. In the **Name** textbox at the bottom, name the new project *CalculatorTutorial*, then select **OK**.
 
    :::image type="complex" source="./media/calc-vs2017-new-project-dialog.png" alt-text="Screenshot of the New Project dialog.":::
-   On the left, Other Languages > Visual C++ is selected. In the center, the Console App project type is selected. The Name text box contains CalculatorTutorial.":::
+   On the left, Other Languages > Visual C++ is selected. In the center, the Console App project type is selected. The Name text box contains CalculatorTutorial.
+   :::image-end:::
 
    An empty C++ Windows console application 'Hello World' app is created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
 

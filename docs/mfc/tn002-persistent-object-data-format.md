@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: TN002: Persistent Object Data Format"
 title: "TN002: Persistent Object Data Format"
-ms.date: "11/04/2016"
+description: "Learn more about: TN002: Persistent Object Data Format"
+ms.date: 11/04/2016
 helpviewer_keywords: ["VERSIONABLE_SCHEMA macro [MFC]", "persistent object data", "CArchive class [MFC], support for persistent data", "persistent C++ objects [MFC]", "TN002"]
-ms.assetid: 553fe01d-c587-4c8d-a181-3244a15c2be9
 ---
 # TN002: Persistent Object Data Format
 
@@ -56,7 +55,7 @@ If the object has not been saved before, there are two possibilities to consider
 
 The descriptor for this class is then inserted into the archive using the `CRuntimeClass::Store` method. `CRuntimeClass::Store` inserts the schema number of the class (see below) and the ASCII text name of the class. Note that the use of the ASCII text name does not guarantee uniqueness of the archive across applications. Therefore, you should tag your data files to prevent corruption. Following the insertion of the class information, the archive puts the object into the *m_pStoreMap* and then calls the `Serialize` method to insert class-specific data. Placing the object into the *m_pStoreMap* before calling `Serialize` prevents multiple copies of the object from being saved to the store.
 
-When returning to the initial caller (usually the root of the network of objects), you must call [CArchive::Close](../mfc/reference/carchive-class.md#close). If you plan to perform other [CFile](../mfc/reference/cfile-class.md)operations, you must call the `CArchive` method [Flush](../mfc/reference/carchive-class.md#flush) to prevent corruption of the archive.
+When returning to the initial caller (usually the root of the network of objects), you must call [CArchive::Close](../mfc/reference/carchive-class.md#close). If you plan to perform other [CFile](../mfc/reference/cfile-class.md) operations, you must call the `CArchive` method [Flush](../mfc/reference/carchive-class.md#flush) to prevent corruption of the archive.
 
 > [!NOTE]
 > This implementation imposes a hard limit of 0x3FFFFFFE indices per archive context. This number represents the maximum number of unique objects and classes that can be saved in a single archive, but a single disk file can have an unlimited number of archive contexts.

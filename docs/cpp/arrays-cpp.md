@@ -161,10 +161,9 @@ int i2[5][7];
 
 It specifies an array of type **`int`**, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:
 
-:::image type="content" source="../cpp/media/vc38rc1.gif" alt-text="Conceptual layout of a multidimensional array.":::
-
+:::image type="complex" source="../cpp/media/vc38rc1.gif" alt-text="Conceptual layout of a multidimensional array.":::
 The image is a grid 7 cells wide and 5 cells high. Each cell contains the index of the cell. The first cell index is labeled 0,0. The next cell in that row is 0,1 and so on to the last cell in that row which is 0,6. The next row starts with the index 1,0. The cell after that has an index of 1,1. The last cell in that row is 1,6. This pattern repeats until the last row, which starts with the index 4,0. The last cell in the last row has an index of 4,6.
-:::image-end
+:::image-end:::
 
 You can declare multidimensioned arrays that have an initializer list (as described in [Initializers](../cpp/initializers.md)). In these declarations, the constant expression that specifies the bounds for the first dimension can be omitted. For example:
 
