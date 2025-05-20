@@ -260,7 +260,7 @@ Specifies a pointer to a buffer that contains a null-terminated string.
 
 ### Remarks
 
-The terminating null character ( `\0`) is not written to the file. This method writes newline characters in *`lpsz`* to the file as a carriage return-line feed pair.
+The terminating null character (`\0`) is not written to the file. This method writes newline characters in *`lpsz`* to the file as a carriage return-line feed pair.
 
 If you want to write data that is not null-terminated to a file, use `CStdioFile::Write` or [`CFile::Write`](../../mfc/reference/cfile-class.md#write).
 

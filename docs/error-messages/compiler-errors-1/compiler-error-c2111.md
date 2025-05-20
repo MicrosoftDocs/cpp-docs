@@ -10,7 +10,7 @@ ms.assetid: 38fd42ec-1480-4a44-aaca-ae4593ed5f50
 
 '+' : pointer addition requires integral operand
 
-An attempt was made to add a nonintegral value to a pointer using the plus ( `+` ) operator.
+An attempt was made to add a nonintegral value to a pointer using the plus (`+`) operator.
 
 The following sample generates C2111:
 

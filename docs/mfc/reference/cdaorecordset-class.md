@@ -1623,7 +1623,7 @@ You can move forward or backward. `Move( 1 )` is equivalent to `MoveNext`, and `
 > Calling any of the `Move` functions throws an exception if the recordset has no records. In general, call both `IsBOF` and `IsEOF` before a Move operation to determine whether the recordset has any records. After you call `Open` or `Requery`, call either `IsBOF` or `IsEOF`.
 
 > [!NOTE]
-> If you have scrolled past the beginning or end of the recordset ( `IsBOF` or `IsEOF` returns nonzero), a call to `Move` throws a `CDaoException`.
+> If you have scrolled past the beginning or end of the recordset (`IsBOF` or `IsEOF` returns nonzero), a call to `Move` throws a `CDaoException`.
 
 > [!NOTE]
 > If you call any of the `Move` functions while the current record is being updated or added, the updates are lost without warning.

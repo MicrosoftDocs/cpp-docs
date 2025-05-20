@@ -420,7 +420,7 @@ If there is no active MDI child or the application is a single document interfac
 
 ## <a name="getactiveview"></a> `CFrameWnd::GetActiveView`
 
-Call this member function to obtain a pointer to the active view (if any) attached to a frame window ( `CFrameWnd`).
+Call this member function to obtain a pointer to the active view (if any) attached to a frame window (`CFrameWnd`).
 
 ```
 CView* GetActiveView() const;
@@ -432,7 +432,7 @@ A pointer to the current [`CView`](../../mfc/reference/cview-class.md). If there
 
 ### Remarks
 
-This function returns `NULL` when called for an MDI main frame window ( `CMDIFrameWnd`). In an MDI application, the MDI main frame window does not have a view associated with it. Instead, each individual child window ( `CMDIChildWnd`) has one or more associated views. The active view in an MDI application can be obtained by first finding the active MDI child window and then finding the active view for that child window. The active MDI child window can be found by calling the function `MDIGetActive` or `GetActiveFrame` as demonstrated in the following:
+This function returns `NULL` when called for an MDI main frame window (`CMDIFrameWnd`). In an MDI application, the MDI main frame window does not have a view associated with it. Instead, each individual child window (`CMDIChildWnd`) has one or more associated views. The active view in an MDI application can be obtained by first finding the active MDI child window and then finding the active view for that child window. The active MDI child window can be found by calling the function `MDIGetActive` or `GetActiveFrame` as demonstrated in the following:
 
 [!code-cpp[NVC_MFCWindowing#2](../../mfc/reference/codesnippet/cpp/cframewnd-class_2.cpp)]
 

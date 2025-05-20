@@ -10,7 +10,7 @@ ms.assetid: 1034589e-bc3e-41a6-831f-2a1a4b8a2500
 
 'operator': cannot dereference a 'type1' on a 'type2'
 
-The left operand of a pointer-to-member operator ( `->*` or `.*` ) cannot be implicitly converted to a type related to the right operator.
+The left operand of a pointer-to-member operator (`->*` or `.*`) cannot be implicitly converted to a type related to the right operator.
 
 The following sample generates C2647:
 

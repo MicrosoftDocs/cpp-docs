@@ -350,7 +350,7 @@ The original value of the 3rd element still stored in a bool: false
 
 ## <a name="swap"></a> `vector<bool>::swap`
 
-Static member function that exchanges two elements of Boolean vectors ( `vector<bool>`) by using the proxy class [`vector<bool>::reference`](#reference_class).
+Static member function that exchanges two elements of Boolean vectors (`vector<bool>`) by using the proxy class [`vector<bool>::reference`](#reference_class).
 
 ```cpp
 static void swap(

@@ -41,7 +41,7 @@ Full path.
 Drive letter, followed by a colon (**:**). You can pass `NULL` for this parameter if you don't need the drive letter.
 
 *`dir`*\
-Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. Pass `NULL` for this parameter if you don't need the directory path.
+Directory path, including trailing slash. Forward slashes (`/`), backslashes (`\`), or both may be used. Pass `NULL` for this parameter if you don't need the directory path.
 
 *`fname`*\
 Base filename (no extension). Pass `NULL` for this parameter if you don't need the filename.

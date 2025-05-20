@@ -20,7 +20,7 @@ class CTypedPtrList : public BASE_CLASS
 #### Parameters
 
 *BASE_CLASS*<br/>
-Base class of the typed pointer list class; must be a pointer list class ( `CObList` or `CPtrList`).
+Base class of the typed pointer list class; must be a pointer list class (`CObList` or `CPtrList`).
 
 *TYPE*<br/>
 Type of the elements stored in the base-class list.

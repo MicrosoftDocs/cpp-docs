@@ -214,7 +214,7 @@ It returns a copy of *_Dfault* on failure. Otherwise, it returns a copy of the s
 
 ### Remarks
 
-The member function returns [do_get](#do_get)( `_Catval`, `_Set`, `_Message`, `_Dfault`).
+The member function returns [do_get](#do_get)(`_Catval`, `_Set`, `_Message`, `_Dfault`).
 
 ## <a name="messages"></a> messages::messages
 
@@ -249,7 +249,7 @@ The possible values for the *_Refs* parameter and their significance are:
 
 No direct examples are possible, because the destructor is protected.
 
-The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).
+The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
 ## <a name="open"></a> messages::open
 
@@ -275,7 +275,7 @@ It returns a value that compares less than zero on failure. Otherwise, the retur
 
 ### Remarks
 
-The member function returns [do_open](#do_open)( `_Catname`, `_Loc`).
+The member function returns [do_open](#do_open)(`_Catname`, `_Loc`).
 
 ## <a name="string_type"></a> messages::string_type
 

@@ -178,7 +178,7 @@ A pointer to the memory block that contains the contents of the memory file.
 
 ### Remarks
 
-Calling this function also closes the `CMemFile`. You can reattach the memory block to `CMemFile` by calling [Attach](#attach). If you want to reattach the file and use the data in it, you should call [CFile::GetLength](../../mfc/reference/cfile-class.md#getlength) to get the length of the file before calling `Detach`. If you attach a memory block to `CMemFile` so that you can use its data ( `nGrowBytes` == 0), then you can't grow the memory file.
+Calling this function also closes the `CMemFile`. You can reattach the memory block to `CMemFile` by calling [Attach](#attach). If you want to reattach the file and use the data in it, you should call [CFile::GetLength](../../mfc/reference/cfile-class.md#getlength) to get the length of the file before calling `Detach`. If you attach a memory block to `CMemFile` so that you can use its data (`nGrowBytes` == 0), then you can't grow the memory file.
 
 ## <a name="free"></a> CMemFile::Free
 
@@ -213,7 +213,7 @@ virtual UINT GetBufferPtr(
 ### Parameters
 
 *nCommand*\
-The [bufferCommand](buffercommand-enumeration.md) to carry out (`bufferCheck`, `bufferCommit`, `bufferRead`, or `bufferWrite` ).
+The [bufferCommand](buffercommand-enumeration.md) to carry out (`bufferCheck`, `bufferCommit`, `bufferRead`, or `bufferWrite`).
 
 *nCount*\
 Depending on *nCommand*, the number of bytes in the buffer to read, write, or commit. When reading from the buffer, specify -1 to return a buffer from the current position to the end of the file.

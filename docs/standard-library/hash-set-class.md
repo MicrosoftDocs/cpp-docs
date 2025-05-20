@@ -939,7 +939,7 @@ The argument key to be compared with the sort key of an element from the hash_se
 
 A pair of iterators where the first is the [lower_bound](../standard-library/set-class.md#lower_bound) of the key and the second is the [upper_bound](../standard-library/set-class.md#upper_bound) of the key.
 
-To access the first iterator of a pair pr returned by the member function, use `pr`. **first**, and to dereference the lower bound iterator, use \*( `pr`. **first**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **second**, and to dereference the upper bound iterator, use \*( `pr`. **second**).
+To access the first iterator of a pair pr returned by the member function, use `pr`. **first**, and to dereference the lower bound iterator, use \*(`pr`. **first**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **second**, and to dereference the upper bound iterator, use \*(`pr`. **second**).
 
 ### Remarks
 
@@ -1355,7 +1355,7 @@ All constructors initialize their hash_sets.
 
 All constructors store a function object of type `Traits` that is used to establish an order among the keys of the `hash_set` and that can later be returned by calling [hash_set::key_comp](#key_comp). For more information on `Traits` see the [hash_set Class](../standard-library/hash-set-class.md) topic.
 
-The first constructor creates an empty initial `hash_set` The second specifies the type of comparison function ( `Comp`) to be used in establishing the order of the elements, and the third explicitly specifies the allocator type ( `Al`) to be used. The key word **`explicit`** suppresses certain kinds of automatic type conversion.
+The first constructor creates an empty initial `hash_set` The second specifies the type of comparison function (`Comp`) to be used in establishing the order of the elements, and the third explicitly specifies the allocator type (`Al`) to be used. The key word **`explicit`** suppresses certain kinds of automatic type conversion.
 
 The fourth and fifth constructors specify a copy of the `hash_set` `Right`.
 

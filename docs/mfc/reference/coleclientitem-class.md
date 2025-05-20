@@ -1434,7 +1434,7 @@ Override this function to apply special rules to the resize/move operation. If t
 
 ## <a name="ondeactivate"></a> COleClientItem::OnDeactivate
 
-Called by the framework when the OLE item transitions from the in-place active state ( `activeState`) to the loaded state, meaning that it is deactivated after an in-place activation.
+Called by the framework when the OLE item transitions from the in-place active state (`activeState`) to the loaded state, meaning that it is deactivated after an in-place activation.
 
 ```
 virtual void OnDeactivate();

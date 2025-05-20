@@ -287,7 +287,7 @@ DWORD GetDefID() const;
 
 ### Return Value
 
-A 32-bit value ( `DWORD`). If the default pushbutton has an ID value, the high-order word contains DC_HASDEFID and the low-order word contains the ID value. If the default pushbutton does not have an ID value, the return value is 0.
+A 32-bit value (`DWORD`). If the default pushbutton has an ID value, the high-order word contains DC_HASDEFID and the low-order word contains the ID value. If the default pushbutton does not have an ID value, the return value is 0.
 
 ### Remarks
 

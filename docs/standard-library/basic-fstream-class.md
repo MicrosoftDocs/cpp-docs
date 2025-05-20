@@ -204,7 +204,7 @@ The default file opening protection, equivalent to the *shflag* parameter in [_f
 
 ### Remarks
 
-The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode`). If that function returns a null pointer, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)( `failbit`).
+The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode`). If that function returns a null pointer, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`).
 
 ### Example
 

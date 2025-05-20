@@ -83,7 +83,7 @@ CCommandLineInfo();
 
 ### Remarks
 
-The default is to show the splash screen ( `m_bShowSplash=TRUE`) and to execute the **New** command on the **File** menu ( `m_nShellCommand`**`=NewFile`**).
+The default is to show the splash screen (`m_bShowSplash=TRUE`) and to execute the **New** command on the **File** menu (`m_nShellCommand`**`=NewFile`**).
 
 The application framework calls [`ParseParam`](#parseparam) to fill data members of this object.
 

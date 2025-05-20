@@ -318,9 +318,9 @@ The second and third constructors specify a copy of the concurrent vector `_Vect
 
 The fourth constructor specifies a move of the concurrent vector `_Vector`.
 
-The fifth constructor specifies a repetition of a specified number ( `_N`) of elements of the default value for class `T`.
+The fifth constructor specifies a repetition of a specified number (`_N`) of elements of the default value for class `T`.
 
-The sixth constructor specifies a repetition of ( `_N`) elements of value `_Item`.
+The sixth constructor specifies a repetition of (`_N`) elements of value `_Item`.
 
 The last constructor specifies values supplied by the iterator range [ `_Begin`, `_End`).
 

@@ -94,7 +94,7 @@ Both constructors initialize the base class by calling [ostream](../standard-lib
 
 - If `_Mode` & **ios_base::app**== 0, then `ptr` must designate the first element of an array of `count` elements, and the constructor calls `strstreambuf`(`ptr`, `count`, `ptr`).
 
-- Otherwise, `ptr` must designate the first element of an array of count elements that contains a C string whose first element is designated by `ptr`, and the constructor calls `strstreambuf`(`ptr`, `count`, `ptr` + `strlen`( `ptr`) ).
+- Otherwise, `ptr` must designate the first element of an array of count elements that contains a C string whose first element is designated by `ptr`, and the constructor calls `strstreambuf`(`ptr`, `count`, `ptr` + `strlen`(`ptr`)).
 
 ## <a name="pcount"></a> ostrstream::pcount
 

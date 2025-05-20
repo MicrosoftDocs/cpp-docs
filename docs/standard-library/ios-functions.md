@@ -29,7 +29,7 @@ A reference to the object from which *str* is derived.
 
 By default, variables of type **`bool`** are displayed as 1 or 0.
 
-`boolalpha` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)( `ios_base::boolalpha`), and then returns *str*.
+`boolalpha` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)(`ios_base::boolalpha`), and then returns *str*.
 
 [noboolalpha](../standard-library/ios-functions.md#noboolalpha) reverses the effect of `boolalpha`.
 
@@ -81,7 +81,7 @@ A reference to the object from which *str* is derived.
 
 By default, integer variables are displayed in base 10.
 
-`dec` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)( `ios_base::dec`, `ios_base::basefield`), and then returns *str*.
+`dec` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)(`ios_base::dec`, `ios_base::basefield`), and then returns *str*.
 
 ### Example
 
@@ -151,7 +151,7 @@ A reference to the object from which *str* is derived.
 
 `fixed` is the default display notation for floating-point numbers. [scientific](../standard-library/ios-functions.md#scientific) causes floating-point numbers to be displayed using scientific notation.
 
-The manipulator effectively calls *str*.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::fixed`, `ios_base::floatfield` ), and then returns *str*.
+The manipulator effectively calls *str*.[setf](../standard-library/ios-base-class.md#setf)(`ios_base::fixed`, `ios_base::floatfield`), and then returns *str*.
 
 ### Example
 
@@ -199,7 +199,7 @@ A reference to the object from which *str* is derived.
 
 By default, integer variables are displayed in base 10 notation. [dec](../standard-library/ios-functions.md#dec) and [oct](../standard-library/ios-functions.md#oct) also change the way integer variables appear.
 
-The manipulator effectively calls `str`**.**[setf](../standard-library/ios-base-class.md#setf)( `ios_base::hex`, `ios_base::basefield`), and then returns *str*.
+The manipulator effectively calls `str`**.**[setf](../standard-library/ios-base-class.md#setf)(`ios_base::hex`, `ios_base::basefield`), and then returns *str*.
 
 ### Example
 

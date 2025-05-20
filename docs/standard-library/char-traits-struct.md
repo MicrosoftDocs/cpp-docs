@@ -1010,11 +1010,11 @@ A value of *_Ch* that cannot be represented as such yields an unspecified result
 
 The conversion operations [to_int_type](#to_int_type) and `to_char_type` are inverse to each other, so that:
 
-`to_int_type` ( `to_char_type` ( *x* ) ) == *x*
+`to_int_type`(`to_char_type`(*x*)) == *x*
 
 for any `int_type` *x* and
 
-`to_char_type` ( `to_int_type` ( *x* ) ) == *x*
+`to_char_type`(`to_int_type`(*x*)) == *x*
 
 for any `char_type` *x*.
 
@@ -1114,11 +1114,11 @@ The `int_type` character corresponding to the `char_type` character.
 
 The conversion operations `to_int_type` and [to_char_type](#to_char_type) are inverse to each other, so that:
 
-`to_int_type` ( `to_char_type` ( *x* ) ) == *x*
+`to_int_type`(`to_char_type`(*x*)) == *x*
 
 for any `int_type` *x*, and
 
-`to_char_type` ( `to_int_type` ( *x* ) ) == *x*
+`to_char_type`(`to_int_type`(*x*)) == *x*
 
 for any `char_type` *x*.
 

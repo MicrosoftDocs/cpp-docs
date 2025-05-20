@@ -10,7 +10,7 @@ ms.assetid: 9ed5ea11-9d55-4ddf-8b1a-162c74f3c390
 
 illegal indirection
 
-Indirection operator ( `*` ) is applied to a nonpointer value.
+Indirection operator (`*`) is applied to a nonpointer value.
 
 The following sample generates C2100:
 

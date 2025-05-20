@@ -277,7 +277,7 @@ The name of the file.
 
 For example, when you call `GetFileName` to generate a message to the user about the file `c:\windows\write\myfile.wri`, the filename, `myfile.wri`, is returned.
 
-To return the entire path of the file, including the name, call [GetFilePath](#getfilepath). To return the title of the file ( `myfile`), call [GetFileTitle](#getfiletitle).
+To return the entire path of the file, including the name, call [GetFilePath](#getfilepath). To return the title of the file (`myfile`), call [GetFileTitle](#getfiletitle).
 
 ### Example
 

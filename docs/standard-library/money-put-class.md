@@ -189,7 +189,7 @@ The possible values for the *_Refs* parameter and their significance are:
 
 No direct examples are possible, because the destructor is protected.
 
-The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).
+The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
 ## <a name="put"></a> money_put::put
 
@@ -234,7 +234,7 @@ An output iterator the addresses the position one beyond the last element produc
 
 ### Remarks
 
-Both member functions return [do_put](#do_put)( `next`, `_Intl`, `_Iosbase`, `_Fill`, `val`).
+Both member functions return [do_put](#do_put)(`next`, `_Intl`, `_Iosbase`, `_Fill`, `val`).
 
 ### Example
 

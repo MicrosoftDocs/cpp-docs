@@ -299,7 +299,7 @@ HRESULT GetTypeInfoOfGuid(
 ### Parameters
 
 *`lcid`*\
-A locale identifier ( `LCID`).
+A locale identifier (`LCID`).
 
 *`guid`*\
 The [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) of the type description.

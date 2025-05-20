@@ -74,7 +74,7 @@ You must create a [`CFile`](../../mfc/reference/cfile-class.md) object before yo
 
 When you construct a `CArchive` object, you attach it to an object of class `CFile` (or a derived class) that represents an open file. You also specify whether the archive will be used for loading or storing. A `CArchive` object can process not only primitive types but also objects of [`CObject`](../../mfc/reference/cobject-class.md)-derived classes designed for serialization. A serializable class usually has a `Serialize` member function, and it usually uses the [`DECLARE_SERIAL`](../../mfc/reference/run-time-object-model-services.md#declare_serial) and [`IMPLEMENT_SERIAL`](../../mfc/reference/run-time-object-model-services.md#implement_serial) macros, as described under class `CObject`.
 
-The overloaded extraction ( `>>`) and insertion ( `<<`) operators are convenient archive programming interfaces that support both primitive types and `CObject`-derived classes.
+The overloaded extraction (`>>`) and insertion (`<<`) operators are convenient archive programming interfaces that support both primitive types and `CObject`-derived classes.
 
 `CArchive` also supports programming with the MFC Windows Sockets classes [`CSocket`](../../mfc/reference/csocket-class.md) and [`CSocketFile`](../../mfc/reference/csocketfile-class.md). The [`IsBufferEmpty`](#isbufferempty) member function supports that usage.
 
@@ -570,7 +570,7 @@ A [`CObject`](../../mfc/reference/cobject-class.md) pointer that must be safely 
 
 ### Remarks
 
-This function is normally called by the `CArchive` extraction ( `>>`) operator overloaded for a [`CObject`](../../mfc/reference/cobject-class.md) pointer. `ReadObject`, in turn, calls the `Serialize` function of the archived class.
+This function is normally called by the `CArchive` extraction (`>>`) operator overloaded for a [`CObject`](../../mfc/reference/cobject-class.md) pointer. `ReadObject`, in turn, calls the `Serialize` function of the archived class.
 
 If you supply a nonzero *`pClass`* parameter, which is obtained by the [`RUNTIME_CLASS`](../../mfc/reference/run-time-object-model-services.md#runtime_class) macro, then the function verifies the run-time class of the archived object. This assumes you have used the `IMPLEMENT_SERIAL` macro in the implementation of the class.
 
@@ -781,7 +781,7 @@ A constant pointer to the object being stored.
 
 ### Remarks
 
-This function is normally called by the `CArchive` insertion ( `<<`) operator overloaded for `CObject`. `WriteObject`, in turn, calls the `Serialize` function of the archived class.
+This function is normally called by the `CArchive` insertion (`<<`) operator overloaded for `CObject`. `WriteObject`, in turn, calls the `Serialize` function of the archived class.
 
 You must use the `IMPLEMENT_SERIAL` macro to enable archiving. `WriteObject` writes the ASCII class name to the archive. This class name is validated later during the load process. A special encoding scheme prevents unnecessary duplication of the class name for multiple objects of the class. This scheme also prevents redundant storage of objects that are targets of more than one pointer.
 

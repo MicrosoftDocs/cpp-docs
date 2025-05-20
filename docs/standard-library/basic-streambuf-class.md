@@ -550,7 +550,7 @@ The size of the buffer.
 
 ### Return Value
 
-Returns [setbuf](#setbuf)( `_Buffer`, `count`).
+Returns [setbuf](#setbuf)(`_Buffer`, `count`).
 
 ## <a name="pubsync"></a> basic_streambuf::pubsync
 
@@ -750,7 +750,7 @@ The current element.
 
 ### Remarks
 
-If a read position is available, the member function returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `*`[gptr](#gptr)). Otherwise, it returns [underflow](#underflow).
+If a read position is available, the member function returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)(`*`[gptr](#gptr)). Otherwise, it returns [underflow](#underflow).
 
 ### Example
 
@@ -798,7 +798,7 @@ The number of elements read. For more information, see [streamsize](../standard-
 
 ### Remarks
 
-The member function returns [xsgetn](#xsgetn)( `ptr`, `count`).
+The member function returns [xsgetn](#xsgetn)(`ptr`, `count`).
 
 ### Example
 
@@ -898,7 +898,7 @@ Returns the character or failure.
 
 ### Remarks
 
-If a putback position is available and *_Ch* compares equal to the character stored in that position, the member function decrements the next pointer for the input buffer and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Otherwise, it returns [pbackfail](#pbackfail)( `_Ch`).
+If a putback position is available and *_Ch* compares equal to the character stored in that position, the member function decrements the next pointer for the input buffer and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)(`_Ch`). Otherwise, it returns [pbackfail](#pbackfail)(`_Ch`).
 
 ### Example
 
@@ -946,7 +946,7 @@ Returns the character, if successful.
 
 ### Remarks
 
-If a `write position` is available, the member function stores *_Ch* in the write position, increments the next pointer for the output buffer, and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Otherwise, it returns [overflow](#overflow)( `_Ch`).
+If a `write position` is available, the member function stores *_Ch* in the write position, increments the next pointer for the output buffer, and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)(`_Ch`). Otherwise, it returns [overflow](#overflow)(`_Ch`).
 
 ### Example
 
@@ -992,7 +992,7 @@ The number of characters inserted into the stream.
 
 ### Remarks
 
-The member function returns [xsputn](#xsputn)( `ptr`, `count`). For more information, see the Remarks section of this member for more information.
+The member function returns [xsputn](#xsputn)(`ptr`, `count`). For more information, see the Remarks section of this member for more information.
 
 ### Example
 
@@ -1061,7 +1061,7 @@ Returns either the character or failure.
 
 ### Remarks
 
-If a putback position is available, the member function decrements the next pointer for the input buffer and returns `traits_type::`[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `*`[gptr](#gptr)). However, it isn't always possible to determine the last character read so that it can be captured in the state of the current buffer. If this is true, then the function returns [pbackfail](#pbackfail). To avoid this situation, keep track of the character to put back and call `sputbackc(ch)`, which won't fail provided you don't call it at the beginning of the stream and you don't try to put back more than one character.
+If a putback position is available, the member function decrements the next pointer for the input buffer and returns `traits_type::`[to_int_type](../standard-library/char-traits-struct.md#to_int_type)(`*`[gptr](#gptr)). However, it isn't always possible to determine the last character read so that it can be captured in the state of the current buffer. If this is true, then the function returns [pbackfail](#pbackfail). To avoid this situation, keep track of the character to put back and call `sputbackc(ch)`, which won't fail provided you don't call it at the beginning of the stream and you don't try to put back more than one character.
 
 ### Example
 

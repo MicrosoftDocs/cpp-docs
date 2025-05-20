@@ -359,7 +359,7 @@ Nonzero if successful; otherwise 0.
 
 ## <a name="deletetempmap"></a> `CImageList::DeleteTempMap`
 
-Called automatically by the `CWinApp` idle-time handler, `DeleteTempMap` deletes any temporary `CImageList` objects created by [FromHandle](#fromhandle), but does not destroy any handles ( `hImageList`) temporarily associated with the `ImageList` objects.
+Called automatically by the `CWinApp` idle-time handler, `DeleteTempMap` deletes any temporary `CImageList` objects created by [FromHandle](#fromhandle), but does not destroy any handles (`hImageList`) temporarily associated with the `ImageList` objects.
 
 ```
 static void PASCAL DeleteTempMap();

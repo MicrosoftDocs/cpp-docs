@@ -38,7 +38,7 @@ If *`size`* is greater than `_ALLOCA_S_THRESHOLD`, then **`_malloca`** attempts 
 
 There are restrictions to explicitly calling **`_malloca`** in an exception handler (EH). EH routines that run on x86-class processors operate in their own memory frame: They perform their tasks in memory space that isn't based on the current location of the stack pointer of the enclosing function. The most common implementations include Windows NT structured exception handling (SEH) and C++ catch clause expressions. Therefore, explicitly calling **`_malloca`** in any of the following scenarios results in program failure during the return to the calling EH routine:
 
-- Windows SEH exception filter expression: **`__except`** (`_malloca ()` )
+- Windows SEH exception filter expression: **`__except`** (`_malloca ()`)
 
 - Windows SEH final exception handler: **`__finally`** {`_malloca ()` }
 

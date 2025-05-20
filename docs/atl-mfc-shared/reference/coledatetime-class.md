@@ -211,7 +211,7 @@ Following is a brief description of each constructor:
 
 - `COleDateTime(` `dateSrc` **)** Constructs a `COleDateTime` object from an existing `COleDateTime` object.
 
-- `COleDateTime(` *varSrc* **)** Constructs a `COleDateTime` object. Attempts to convert a `VARIANT` structure or [COleVariant](../../mfc/reference/colevariant-class.md) object to a date/time ( `VT_DATE`) value. If this conversion is successful, the converted value is copied into the new `COleDateTime` object. If it is not, the value of the `COleDateTime` object is set to 0 (midnight, 30 December 1899) and its status to invalid.
+- `COleDateTime(` *varSrc* **)** Constructs a `COleDateTime` object. Attempts to convert a `VARIANT` structure or [COleVariant](../../mfc/reference/colevariant-class.md) object to a date/time (`VT_DATE`) value. If this conversion is successful, the converted value is copied into the new `COleDateTime` object. If it is not, the value of the `COleDateTime` object is set to 0 (midnight, 30 December 1899) and its status to invalid.
 
 - `COleDateTime(` `dtSrc` **)** Constructs a `COleDateTime` object from a `DATE` value.
 
@@ -263,7 +263,7 @@ Indicates one of the following locale flags:
 Indicates locale ID to use for the conversion. For more information about language identifiers, see [Language Identifiers](/windows/win32/Intl/language-identifiers).
 
 *lpszFormat*<br/>
-A formatting string similar to the `printf` formatting string. Each formatting code, preceded by a percent ( `%`) sign, is replaced by the corresponding `COleDateTime` component. Other characters in the formatting string are copied unchanged to the returned string. For more information, see the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md). The value and meaning of the formatting codes for `Format` are:
+A formatting string similar to the `printf` formatting string. Each formatting code, preceded by a percent (`%`) sign, is replaced by the corresponding `COleDateTime` component. Other characters in the formatting string are copied unchanged to the returned string. For more information, see the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md). The value and meaning of the formatting codes for `Format` are:
 
 - `%H` Hours in the current day
 

@@ -384,7 +384,7 @@ An output iterator the addresses the position one beyond the last element produc
 
 ### Remarks
 
-All member functions return [do_put](#do_put)( `next`, `_Iosbase`, `_Fill`, `val`).
+All member functions return [do_put](#do_put)(`next`, `_Iosbase`, `_Fill`, `val`).
 
 ### Example
 

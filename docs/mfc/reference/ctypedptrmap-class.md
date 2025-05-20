@@ -20,7 +20,7 @@ class CTypedPtrMap : public BASE_CLASS
 #### Parameters
 
 *BASE_CLASS*<br/>
-Base class of the typed pointer map class; must be a pointer map class ( `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, or `CMapStringToPtr`).
+Base class of the typed pointer map class; must be a pointer map class (`CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, or `CMapStringToPtr`).
 
 *KEY*<br/>
 Class of the object used as the key to the map.

@@ -164,7 +164,7 @@ Returns an object of class [basic_string](../standard-library/basic-string-class
 
 ### Remarks
 
-The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**( `_Newstr`).
+The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**(`_Newstr`).
 
 ### Example
 

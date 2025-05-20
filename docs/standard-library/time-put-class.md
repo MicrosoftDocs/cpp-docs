@@ -176,7 +176,7 @@ An iterator to the first position after the last element inserted.
 
 ### Remarks
 
-The first member function returns [do_put](#do_put)(`next`, `_Iosbase`, `_Fill`, `_Pt`, `_Fmt`, `_Mod`). The second member function copies to \* `next` ++ any element in the interval [ `first`, `last`) other than a percent (%). For a percent followed by a character *C* in the interval [ `first`, `last`), the function instead evaluates `next` = `do_put`( `next`, `_Iosbase`, `_Fill`, `_Pt`, *C*, 0) and skips past *C*. If, however, *C* is a qualifier character from the set EOQ#, followed by a character `C2` in the interval [ `first`, `last`), the function instead evaluates `next` = `do_put`( `next`, `_Iosbase`, `_Fill`, `_Pt`, `C2`, *C*) and skips past `C2`.
+The first member function returns [do_put](#do_put)(`next`, `_Iosbase`, `_Fill`, `_Pt`, `_Fmt`, `_Mod`). The second member function copies to \* `next` ++ any element in the interval [ `first`, `last`) other than a percent (%). For a percent followed by a character *C* in the interval [ `first`, `last`), the function instead evaluates `next` = `do_put`(`next`, `_Iosbase`, `_Fill`, `_Pt`, *C*, 0) and skips past *C*. If, however, *C* is a qualifier character from the set EOQ#, followed by a character `C2` in the interval [ `first`, `last`), the function instead evaluates `next` = `do_put`(`next`, `_Iosbase`, `_Fill`, `_Pt`, `C2`, *C*) and skips past `C2`.
 
 ### Example
 

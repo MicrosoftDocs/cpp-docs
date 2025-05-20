@@ -15,7 +15,7 @@ C macros offer a convenient way to insert assembly code into your source code, b
 
 - Put the **`__asm`** keyword in front of each assembly instruction.
 
-- Use old-style C comments ( `/* comment */`) instead of assembly-style comments ( `; comment`) or single-line C comments ( `// comment`).
+- Use old-style C comments (`/* comment */`) instead of assembly-style comments (`; comment`) or single-line C comments (`// comment`).
 
 To illustrate, the following example defines a simple macro:
 
@@ -39,7 +39,7 @@ The third and fourth **`__asm`** keywords are needed as statement separators. Th
 
 The braces are essential as well. If you omit them, the compiler can be confused by C or C++ statements on the same line to the right of the macro invocation. Without the closing brace, the compiler cannot tell where assembly code stops, and it sees C or C++ statements after the **`__asm`** block as assembly instructions.
 
-Assembly-style comments that start with a semicolon (**;**) continue to the end of the line. This causes problems in macros because the compiler ignores everything after the comment, all the way to the end of the logical line. The same is true of single-line C or C++ comments ( `// comment`). To prevent errors, use old-style C comments ( `/* comment */`) in **`__asm`** blocks defined as macros.
+Assembly-style comments that start with a semicolon (**;**) continue to the end of the line. This causes problems in macros because the compiler ignores everything after the comment, all the way to the end of the logical line. The same is true of single-line C or C++ comments (`// comment`). To prevent errors, use old-style C comments (`/* comment */`) in **`__asm`** blocks defined as macros.
 
 An **`__asm`** block written as a C macro can take arguments. Unlike an ordinary C macro, however, an **`__asm`** macro cannot return a value. So you cannot use such macros in C or C++ expressions.
 

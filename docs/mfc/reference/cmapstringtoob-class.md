@@ -399,7 +399,7 @@ Nonzero if the element was found; otherwise 0.
 
 ### Remarks
 
-`Lookup` uses a hashing algorithm to quickly find the map element with a key that matches exactly ( `CString` value).
+`Lookup` uses a hashing algorithm to quickly find the map element with a key that matches exactly (`CString` value).
 
 The following table shows other member functions that are similar to `CMapStringToOb::LookUp`.
 

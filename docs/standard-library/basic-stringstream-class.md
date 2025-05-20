@@ -87,7 +87,7 @@ An object of type `basic_string`.
 
 ### Remarks
 
-The first constructor initializes the base class by calling [basic_iostream](../standard-library/basic-iostream-class.md)( **sb**), where `sb` is the stored object of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>. It also initializes `sb` by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>( `_Mode`).
+The first constructor initializes the base class by calling [basic_iostream](../standard-library/basic-iostream-class.md)( **sb**), where `sb` is the stored object of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>. It also initializes `sb` by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>(`_Mode`).
 
 The second constructor initializes the base class by calling basic_iostream( **sb**). It also initializes `sb` by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>(_ *Str*, `_Mode`).
 
@@ -129,7 +129,7 @@ Returns an object of class [basic_string](../standard-library/basic-string-class
 
 ### Remarks
 
-The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**( `_Newstr`).
+The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**(`_Newstr`).
 
 ### Example
 

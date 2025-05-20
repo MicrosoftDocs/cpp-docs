@@ -117,7 +117,7 @@ The possible values for the *_Refs* parameter and their significance are:
 
 No direct examples are possible, because the destructor is protected.
 
-The constructor initializes its `locale::facet` base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).
+The constructor initializes its `locale::facet` base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
 ## <a name="do_is"></a> ctype::do_is
 
@@ -206,7 +206,7 @@ The second protected member function returns a pointer to the destination range 
 
 ### Remarks
 
-The second protected member template function stores in `dest`[ `I`] the value `do_narrow`( `first` [ `I`], `default`), for `I` in the interval [0, `last` - `first`).
+The second protected member template function stores in `dest`[ `I`] the value `do_narrow`(`first` [ `I`], `default`), for `I` in the interval [0, `last` - `first`).
 
 ### Example
 
@@ -240,7 +240,7 @@ A pointer to the first character in a range that does match a specified mask. If
 
 ### Remarks
 
-The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, \* `ptr`) is true.
+The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)(`maskVal`, \* `ptr`) is true.
 
 ### Example
 
@@ -274,7 +274,7 @@ A pointer to the first character in a range that doesn't match a specified mask.
 
 ### Remarks
 
-The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, \* `ptr`) is false.
+The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)(`maskVal`, \* `ptr`) is false.
 
 ### Example
 
@@ -309,7 +309,7 @@ The first protected member function returns the lowercase form of the parameter 
 
 ### Remarks
 
-The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` - `first`), with `do_tolower`( `first` [ `I`]).
+The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` - `first`), with `do_tolower`(`first` [ `I`]).
 
 ### Example
 
@@ -344,7 +344,7 @@ The first protected member function returns the uppercase form of the parameter 
 
 ### Remarks
 
-The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` - `first`), with `do_toupper`( `first` [ `I`]).
+The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` - `first`), with `do_toupper`(`first` [ `I`]).
 
 ### Example
 
@@ -385,7 +385,7 @@ The second protected member function returns a pointer to the destination range 
 
 ### Remarks
 
-The second protected member template function stores in `dest`[ `I`] the value `do_widen`( `first`[ `I`]), for `I` in the interval [0, `last` - `first`).
+The second protected member template function stores in `dest`[ `I`] the value `do_widen`(`first`[ `I`]), for `I` in the interval [0, `last` - `first`).
 
 ### Example
 
@@ -733,7 +733,7 @@ The second member function returns *last*.
 
 ### Remarks
 
-The first member function returns [do_toupper](#do_toupper)(`ch`). The second member function returns [do_toupper](#do_toupper)( `first`, `last`).
+The first member function returns [do_toupper](#do_toupper)(`ch`). The second member function returns [do_toupper](#do_toupper)(`first`, `last`).
 
 ### Example
 

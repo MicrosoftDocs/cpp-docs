@@ -69,7 +69,7 @@ Perform the following steps to incorporate an edit browse control in your applic
 
 1. Embed either the `CMFCEditBrowseCtrl` object or the derived edit browse control object into the parent window object.
 
-1. If you use the **Class Wizard** to create a dialog box, add an edit control ( `CEdit`) to the dialog box form. Also, add a variable to access the control in your header file. In your header file, change the type of the variable from `CEdit` to `CMFCEditBrowseCtrl`. The edit browse control will be created automatically. If you do not use the **Class Wizard**, add a `CMFCEditBrowseCtrl` variable to your header file and then call its `Create` method.
+1. If you use the **Class Wizard** to create a dialog box, add an edit control (`CEdit`) to the dialog box form. Also, add a variable to access the control in your header file. In your header file, change the type of the variable from `CEdit` to `CMFCEditBrowseCtrl`. The edit browse control will be created automatically. If you do not use the **Class Wizard**, add a `CMFCEditBrowseCtrl` variable to your header file and then call its `Create` method.
 
 1. If you add an edit browse control to a dialog box, use the **ClassWizard** tool to set up data exchange.
 

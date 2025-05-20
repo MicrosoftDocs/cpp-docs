@@ -8,7 +8,7 @@ ms.assetid: ec8143f8-5755-4e7b-8025-507fb6bf6911
 ---
 # logical_or Struct
 
-A predefined function object that performs the logical disjunction operation ( `operator||`) on its arguments.
+A predefined function object that performs the logical disjunction operation (`operator||`) on its arguments.
 
 ## Syntax
 

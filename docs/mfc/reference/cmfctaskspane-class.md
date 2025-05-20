@@ -1461,7 +1461,7 @@ void SetGroupCaptionHeight(int n = -1);
 
 Call this method to customize the margins of the task pane elements.
 
-If *n* is -1, the framework determines the margin value by using the visual manager ( `CMFCVisualManager::GetTasksPaneGroupCaptionHeight`). The default caption height is 25 pixels.
+If *n* is -1, the framework determines the margin value by using the visual manager (`CMFCVisualManager::GetTasksPaneGroupCaptionHeight`). The default caption height is 25 pixels.
 
 ## <a name="setgroupcaptionhorzoffset"></a> CMFCTasksPane::SetGroupCaptionHorzOffset
 

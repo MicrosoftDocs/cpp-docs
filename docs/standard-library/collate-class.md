@@ -142,7 +142,7 @@ The member function returns:
 
 The first sequence compares less if it has the smaller element in the earliest unequal pair in the sequences, or, if no unequal pairs exist, but the first sequence is shorter.
 
-The member function returns [do_compare](#do_compare)( `first1`, `last1`, `first2`, `last2`).
+The member function returns [do_compare](#do_compare)(`first1`, `last1`, `first2`, `last2`).
 
 ### Example
 
@@ -290,7 +290,7 @@ A hash value of type **`long`** for the sequence.
 
 ### Remarks
 
-The member function returns [do_hash](#do_hash)( `first`, `last`).
+The member function returns [do_hash](#do_hash)(`first`, `last`).
 
 A hash value can be useful, for example, in distributing sequences pseudo-randomly across an array of lists.
 

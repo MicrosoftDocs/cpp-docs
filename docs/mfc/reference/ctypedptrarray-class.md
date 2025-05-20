@@ -20,7 +20,7 @@ class CTypedPtrArray : public BASE_CLASS
 #### Parameters
 
 *BASE_CLASS*<br/>
-Base class of the typed pointer array class; must be an array class ( `CObArray` or `CPtrArray`).
+Base class of the typed pointer array class; must be an array class (`CObArray` or `CPtrArray`).
 
 *TYPE*<br/>
 Type of the elements stored in the base-class array.

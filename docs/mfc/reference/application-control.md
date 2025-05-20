@@ -258,7 +258,7 @@ Nonzero if the server class is successfully registered; otherwise 0.
 
 Most applications can use `COleTemplateServer::Register` to register the application's document types. If your application's system-registry format does not fit the typical pattern, you can use `AfxOleRegisterServerClass` for more control.
 
-The registry consists of a set of keys and values. The *rglpszRegister* and *rglpszOverwrite* arguments are arrays of pointers to strings, each consisting of a key and a value separated by a **NULL** character ( `'\0'`). Each of these strings can have replaceable parameters whose places are marked by the character sequences *%1* through *%5*.
+The registry consists of a set of keys and values. The *rglpszRegister* and *rglpszOverwrite* arguments are arrays of pointers to strings, each consisting of a key and a value separated by a **NULL** character (`'\0'`). Each of these strings can have replaceable parameters whose places are marked by the character sequences *%1* through *%5*.
 
 The symbols are filled in as follows:
 

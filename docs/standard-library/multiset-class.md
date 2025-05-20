@@ -836,7 +836,7 @@ The argument key to be compared with the sort key of an element from the `multis
 
 A pair of iterators such that the first is the [`lower_bound`](#lower_bound) of the key and the second is the [`upper_bound`](#upper_bound) of the key.
 
-To access the first iterator of a pair `pr` returned by the member function, use `pr`. **`first`**, and to dereference the lower bound iterator, use \*( `pr`. **`first`**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **`second`**, and to dereference the upper bound iterator, use \*( `pr`. **`second`**).
+To access the first iterator of a pair `pr` returned by the member function, use `pr`. **`first`**, and to dereference the lower bound iterator, use \*(`pr`. **`first`**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **`second`**, and to dereference the upper bound iterator, use \*(`pr`. **`second`**).
 
 ### Example
 
@@ -953,7 +953,7 @@ The key value to be matched by the sort key of an element from the `multiset` be
 
 ### Return Value
 
-An iterator that refers to the location of an element with a specified key, or the location succeeding the last element in the `multiset` ( `multiset::end()`) if no match is found for the key.
+An iterator that refers to the location of an element with a specified key, or the location succeeding the last element in the `multiset`(`multiset::end()`) if no match is found for the key.
 
 ### Remarks
 

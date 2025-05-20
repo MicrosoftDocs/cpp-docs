@@ -32,7 +32,7 @@ protected:
 
 ## Remarks
 
-Its behavior is determined by the [named](../standard-library/locale-class.md#name) locale `_Locname`. The constructor initializes its base object with [numpunct](../standard-library/numpunct-class.md#numpunct)\<CharType>( `_Refs`).
+Its behavior is determined by the [named](../standard-library/locale-class.md#name) locale `_Locname`. The constructor initializes its base object with [numpunct](../standard-library/numpunct-class.md#numpunct)\<CharType>(`_Refs`).
 
 ## Requirements
 

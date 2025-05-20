@@ -131,7 +131,7 @@ A `CSize` object containing the intermediate size of the check box.
 
 ### Remarks
 
-If not overridden, calculates the intermediate size as the default check box size ( `AFX_CHECK_BOX_DEFAULT_SIZE`) plus the text size, plus margins.
+If not overridden, calculates the intermediate size as the default check box size (`AFX_CHECK_BOX_DEFAULT_SIZE`) plus the text size, plus margins.
 
 ## <a name="getregularsize"></a> CMFCRibbonCheckBox::GetRegularSize
 
