@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ change history 2003 - 2015"
 description: "Find all the breaking changes in Microsoft C/C++ from Visual Studio 2003 through Visual Studio 2015 here."
-ms.date: "5/25/2023"
+ms.date: 5/25/2023
 helpviewer_keywords: ["breaking changes [C++]"]
 ---
 # Microsoft C/C++ change history 2003 - 2015
