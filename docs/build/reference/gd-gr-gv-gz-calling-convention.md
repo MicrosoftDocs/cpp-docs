@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /Gd, /Gr, /Gv, /Gz (Calling Convention)"
 title: "/Gd, /Gr, /Gv, /Gz (Calling Convention)"
-ms.date: "09/05/2018"
+description: "Learn more about: /Gd, /Gr, /Gv, /Gz (Calling Convention)"
+ms.date: 09/05/2018
 f1_keywords: ["/Gr", "/Gv", "/Gd", "VC.Project.VCCLCompilerTool.CallingConvention"]
 helpviewer_keywords: ["-Gd compiler option [C++]", "-Gv compiler option [C++]", "/Gv compiler option [C++]", "-Gr compiler option [C++]", "Gd compiler option [C++]", "Gr compiler option [C++]", "/Gz compiler option [C++]", "-Gz compiler option [C++]", "/Gd compiler option [C++]", "Gz compiler option [C++]", "Gv compiler option [C++]", "/Gr compiler option [C++]"]
-ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
 ---
 # /Gd, /Gr, /Gv, /Gz (Calling Convention)
 

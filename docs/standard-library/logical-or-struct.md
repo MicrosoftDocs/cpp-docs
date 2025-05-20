@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: logical_or Struct"
 title: "logical_or Struct"
-ms.date: "11/04/2016"
+description: "Learn more about: logical_or Struct"
+ms.date: 11/04/2016
 f1_keywords: ["functional/std::logical_or"]
 helpviewer_keywords: ["logical_or class", "logical_or struct"]
-ms.assetid: ec8143f8-5755-4e7b-8025-507fb6bf6911
 ---
 # logical_or Struct
 

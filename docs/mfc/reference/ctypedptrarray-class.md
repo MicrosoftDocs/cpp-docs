@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CTypedPtrArray Class"
 title: "CTypedPtrArray Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CTypedPtrArray Class"
+ms.date: 11/04/2016
 f1_keywords: ["CTypedPtrArray", "AFXTEMPL/CTypedPtrArray", "AFXTEMPL/CTypedPtrArray::Add", "AFXTEMPL/CTypedPtrArray::Append", "AFXTEMPL/CTypedPtrArray::Copy", "AFXTEMPL/CTypedPtrArray::ElementAt", "AFXTEMPL/CTypedPtrArray::GetAt", "AFXTEMPL/CTypedPtrArray::InsertAt", "AFXTEMPL/CTypedPtrArray::SetAt", "AFXTEMPL/CTypedPtrArray::SetAtGrow"]
 helpviewer_keywords: ["CTypedPtrArray [MFC], Add", "CTypedPtrArray [MFC], Append", "CTypedPtrArray [MFC], Copy", "CTypedPtrArray [MFC], ElementAt", "CTypedPtrArray [MFC], GetAt", "CTypedPtrArray [MFC], InsertAt", "CTypedPtrArray [MFC], SetAt", "CTypedPtrArray [MFC], SetAtGrow"]
-ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
 ---
 # CTypedPtrArray Class
 

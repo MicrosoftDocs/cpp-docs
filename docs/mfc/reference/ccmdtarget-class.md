@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: CCmdTarget Class"
 title: "CCmdTarget Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CCmdTarget Class"
+ms.date: 11/04/2016
 f1_keywords: ["CCmdTarget", "AFXWIN/CCmdTarget", "AFXWIN/CCmdTarget::CCmdTarget", "AFXWIN/CCmdTarget::BeginWaitCursor", "AFXWIN/CCmdTarget::DoOleVerb", "AFXWIN/CCmdTarget::EnableAutomation", "AFXWIN/CCmdTarget::EnableConnections", "AFXWIN/CCmdTarget::EnableTypeLib", "AFXWIN/CCmdTarget::EndWaitCursor", "AFXWIN/CCmdTarget::EnumOleVerbs", "AFXWIN/CCmdTarget::FromIDispatch", "AFXWIN/CCmdTarget::GetDispatchIID", "AFXWIN/CCmdTarget::GetIDispatch", "AFXWIN/CCmdTarget::GetTypeInfoCount", "AFXWIN/CCmdTarget::GetTypeInfoOfGuid", "AFXWIN/CCmdTarget::GetTypeLib", "AFXWIN/CCmdTarget::GetTypeLibCache", "AFXWIN/CCmdTarget::IsInvokeAllowed", "AFXWIN/CCmdTarget::IsResultExpected", "AFXWIN/CCmdTarget::OnCmdMsg", "AFXWIN/CCmdTarget::OnFinalRelease", "AFXWIN/CCmdTarget::RestoreWaitCursor"]
 helpviewer_keywords: ["CCmdTarget [MFC], CCmdTarget", "CCmdTarget [MFC], BeginWaitCursor", "CCmdTarget [MFC], DoOleVerb", "CCmdTarget [MFC], EnableAutomation", "CCmdTarget [MFC], EnableConnections", "CCmdTarget [MFC], EnableTypeLib", "CCmdTarget [MFC], EndWaitCursor", "CCmdTarget [MFC], EnumOleVerbs", "CCmdTarget [MFC], FromIDispatch", "CCmdTarget [MFC], GetDispatchIID", "CCmdTarget [MFC], GetIDispatch", "CCmdTarget [MFC], GetTypeInfoCount", "CCmdTarget [MFC], GetTypeInfoOfGuid", "CCmdTarget [MFC], GetTypeLib", "CCmdTarget [MFC], GetTypeLibCache", "CCmdTarget [MFC], IsInvokeAllowed", "CCmdTarget [MFC], IsResultExpected", "CCmdTarget [MFC], OnCmdMsg", "CCmdTarget [MFC], OnFinalRelease", "CCmdTarget [MFC], RestoreWaitCursor"]
 ---

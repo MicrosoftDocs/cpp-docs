@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <string> operators"
 title: "<string> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <string> operators"
+ms.date: 11/04/2016
 f1_keywords: ["string/std::operator!=", "string/std::operator>", "string/std::operator>>", "string/std::operator>=", "string/std::operator<", "string/std::operator<<", "string/std::operator<=", "string/std::operator+", "string/std::operator=="]
-ms.assetid: 33ce8f05-06c7-45d3-a0cb-bcd27cf93910
 helpviewer_keywords: ["std::operator!= (string)", "std::operator> (string)", "std::operator>> (string)", "std::operator>= (string)", "std::operator< (string)", "std::operator<< (string)", "std::operator<= (string), std::operator== (string)"]
 ---
 # `<string>` operators

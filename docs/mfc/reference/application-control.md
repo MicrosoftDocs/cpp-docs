@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Application Control"
 title: "Application Control"
-ms.date: "11/04/2016"
+description: "Learn more about: Application Control"
+ms.date: 11/04/2016
 helpviewer_keywords: ["application control [MFC]"]
-ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
 ---
 # Application Control
 

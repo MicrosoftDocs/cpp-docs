@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: moneypunct_byname Class"
 title: "moneypunct_byname Class"
-ms.date: "11/04/2016"
+description: "Learn more about: moneypunct_byname Class"
+ms.date: 11/04/2016
 f1_keywords: ["xlocmon/std::moneypunct_byname"]
 helpviewer_keywords: ["moneypunct_byname class"]
-ms.assetid: e8a544d2-6aee-420d-b513-deb385c9b416
 ---
 # moneypunct_byname Class
 

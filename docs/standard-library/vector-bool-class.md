@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: vector<bool> Class"
 title: "vector<bool> Class"
-ms.date: "11/04/2016"
+description: "Learn more about: vector<bool> Class"
+ms.date: 11/04/2016
 f1_keywords: ["vector<bool>", "vector/std::vector::flip"]
 helpviewer_keywords: ["std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], pointer", "std::vector [C++], flip", "std::vector [C++], swap"]
 ---

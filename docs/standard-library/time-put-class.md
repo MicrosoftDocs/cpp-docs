@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: time_put Class"
 title: "time_put Class"
-ms.date: "11/04/2016"
+description: "Learn more about: time_put Class"
+ms.date: 11/04/2016
 f1_keywords: ["xloctime/std::time_put", "locale/std::time_put::char_type", "locale/std::time_put::iter_type", "locale/std::time_put::do_put", "locale/std::time_put::put"]
 helpviewer_keywords: ["std::time_put [C++]", "std::time_put [C++], char_type", "std::time_put [C++], iter_type", "std::time_put [C++], do_put", "std::time_put [C++], put"]
-ms.assetid: df79493e-3331-48d2-97c3-ac3a745f0791
 ---
 # time_put Class
 

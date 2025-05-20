@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: collate_byname Class"
 title: "collate_byname Class"
-ms.date: "11/04/2016"
+description: "Learn more about: collate_byname Class"
+ms.date: 11/04/2016
 f1_keywords: ["locale/std::collate_byname"]
 helpviewer_keywords: ["collate_byname class"]
-ms.assetid: 3dc380df-867c-4763-b60e-ba62a8e63ca7
 ---
 # collate_byname Class
 

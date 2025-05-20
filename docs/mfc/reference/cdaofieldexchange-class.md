@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: CDaoFieldExchange Class"
 title: "CDaoFieldExchange Class"
-ms.date: "09/17/2019"
+description: "Learn more about: CDaoFieldExchange Class"
+ms.date: 09/17/2019
 f1_keywords: ["CDaoFieldExchange", "AFXDAO/CDaoFieldExchange", "AFXDAO/CDaoFieldExchange::IsValidOperation", "AFXDAO/CDaoFieldExchange::SetFieldType", "AFXDAO/CDaoFieldExchange::m_nOperation", "AFXDAO/CDaoFieldExchange::m_prs"]
 helpviewer_keywords: ["CDaoFieldExchange [MFC], IsValidOperation", "CDaoFieldExchange [MFC], SetFieldType", "CDaoFieldExchange [MFC], m_nOperation", "CDaoFieldExchange [MFC], m_prs"]
 ---

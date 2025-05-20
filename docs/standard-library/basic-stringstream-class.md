@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: basic_stringstream Class"
 title: "basic_stringstream Class"
+description: "Learn more about: basic_stringstream Class"
 ms.date: 06/10/2022
 f1_keywords: ["sstream/std::basic_stringstream", "sstream/std::basic_stringstream::allocator_type", "sstream/std::basic_stringstream::rdbuf", "sstream/std::basic_stringstream::str"]
 helpviewer_keywords: ["std::basic_stringstream [C++]", "std::basic_stringstream [C++], allocator_type", "std::basic_stringstream [C++], rdbuf", "std::basic_stringstream [C++], str"]
-ms.assetid: 49629814-ca37-45c5-931b-4ff894e6ebd2
 ms.custom: devdivchpfy22
 ---
 

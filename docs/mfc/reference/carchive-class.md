@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: CArchive Class"
 title: "CArchive Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CArchive Class"
+ms.date: 11/04/2016
 f1_keywords: ["CArchive", "AFX/CArchive", "AFX/CArchive::CArchive", "AFX/CArchive::Abort", "AFX/CArchive::Close", "AFX/CArchive::Flush", "AFX/CArchive::GetFile", "AFX/CArchive::GetObjectSchema", "AFX/CArchive::IsBufferEmpty", "AFX/CArchive::IsLoading", "AFX/CArchive::IsStoring", "AFX/CArchive::MapObject", "AFX/CArchive::Read", "AFX/CArchive::ReadClass", "AFX/CArchive::ReadObject", "AFX/CArchive::ReadString", "AFX/CArchive::SerializeClass", "AFX/CArchive::SetLoadParams", "AFX/CArchive::SetObjectSchema", "AFX/CArchive::SetStoreParams", "AFX/CArchive::Write", "AFX/CArchive::WriteClass", "AFX/CArchive::WriteObject", "AFX/CArchive::WriteString", "AFX/CArchive::m_pDocument"]
 helpviewer_keywords: ["CArchive [MFC], CArchive", "CArchive [MFC], Abort", "CArchive [MFC], Close", "CArchive [MFC], Flush", "CArchive [MFC], GetFile", "CArchive [MFC], GetObjectSchema", "CArchive [MFC], IsBufferEmpty", "CArchive [MFC], IsLoading", "CArchive [MFC], IsStoring", "CArchive [MFC], MapObject", "CArchive [MFC], Read", "CArchive [MFC], ReadClass", "CArchive [MFC], ReadObject", "CArchive [MFC], ReadString", "CArchive [MFC], SerializeClass", "CArchive [MFC], SetLoadParams", "CArchive [MFC], SetObjectSchema", "CArchive [MFC], SetStoreParams", "CArchive [MFC], Write", "CArchive [MFC], WriteClass", "CArchive [MFC], WriteObject", "CArchive [MFC], WriteString", "CArchive [MFC], m_pDocument"]
 ---

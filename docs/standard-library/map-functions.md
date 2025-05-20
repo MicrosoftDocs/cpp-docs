@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <map> functions"
 title: "<map> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <map> functions"
+ms.date: 11/04/2016
 f1_keywords: ["map/std::swap (map)", "map/std::swap (multimap)"]
-ms.assetid: 7cb3d1a5-7add-4726-a73f-61927eafd466
 ---
 # `<map>` functions
 

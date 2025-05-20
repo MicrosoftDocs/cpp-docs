@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: messages Class"
 title: "messages Class"
-ms.date: "11/04/2016"
+description: "Learn more about: messages Class"
+ms.date: 11/04/2016
 f1_keywords: ["xlocmes/std::messages", "xlocmes/std::messages::char_type", "xlocmes/std::messages::string_type", "xlocmes/std::messages::close", "xlocmes/std::messages::do_close", "xlocmes/std::messages::do_get", "xlocmes/std::messages::do_open", "xlocmes/std::messages::get", "xlocmes/std::messages::open"]
 helpviewer_keywords: ["std::messages [C++]", "std::messages [C++], char_type", "std::messages [C++], string_type", "std::messages [C++], close", "std::messages [C++], do_close", "std::messages [C++], do_get", "std::messages [C++], do_open", "std::messages [C++], get", "std::messages [C++], open"]
-ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83
 ---
 # messages Class
 

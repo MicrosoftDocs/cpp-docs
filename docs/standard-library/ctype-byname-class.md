@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: ctype_byname Class"
 title: "ctype_byname Class"
-ms.date: "11/04/2016"
+description: "Learn more about: ctype_byname Class"
+ms.date: 11/04/2016
 f1_keywords: ["xlocale/std::ctype_byname"]
 helpviewer_keywords: ["ctype_byname class"]
-ms.assetid: a5cec021-a1f8-425f-8757-08e6f064b604
 ---
 # ctype_byname Class
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMFCEditBrowseCtrl Class"
 title: "CMFCEditBrowseCtrl Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CMFCEditBrowseCtrl Class"
+ms.date: 11/04/2016
 f1_keywords: ["CMFCEditBrowseCtrl", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFileBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFolderBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::GetMode", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnAfterUpdate", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnBrowse", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnChangeLayout", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnDrawBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnIllegalFileName", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::SetBrowseButtonImage"]
 helpviewer_keywords: ["CMFCEditBrowseCtrl [MFC], EnableBrowseButton", "CMFCEditBrowseCtrl [MFC], EnableFileBrowseButton", "CMFCEditBrowseCtrl [MFC], EnableFolderBrowseButton", "CMFCEditBrowseCtrl [MFC], GetMode", "CMFCEditBrowseCtrl [MFC], OnAfterUpdate", "CMFCEditBrowseCtrl [MFC], OnBrowse", "CMFCEditBrowseCtrl [MFC], OnChangeLayout", "CMFCEditBrowseCtrl [MFC], OnDrawBrowseButton", "CMFCEditBrowseCtrl [MFC], OnIllegalFileName", "CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage"]
-ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
 ---
 # CMFCEditBrowseCtrl Class
 

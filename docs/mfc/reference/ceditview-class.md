@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CEditView Class"
 title: "CEditView Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CEditView Class"
+ms.date: 11/04/2016
 f1_keywords: ["CEditView", "AFXEXT/CEditView", "AFXEXT/CEditView::CEditView", "AFXEXT/CEditView::FindText", "AFXEXT/CEditView::GetBufferLength", "AFXEXT/CEditView::GetEditCtrl", "AFXEXT/CEditView::GetPrinterFont", "AFXEXT/CEditView::GetSelectedText", "AFXEXT/CEditView::LockBuffer", "AFXEXT/CEditView::PrintInsideRect", "AFXEXT/CEditView::SerializeRaw", "AFXEXT/CEditView::SetPrinterFont", "AFXEXT/CEditView::SetTabStops", "AFXEXT/CEditView::UnlockBuffer", "AFXEXT/CEditView::OnFindNext", "AFXEXT/CEditView::OnReplaceAll", "AFXEXT/CEditView::OnReplaceSel", "AFXEXT/CEditView::OnTextNotFound", "AFXEXT/CEditView::dwStyleDefault"]
 helpviewer_keywords: ["CEditView [MFC], CEditView", "CEditView [MFC], FindText", "CEditView [MFC], GetBufferLength", "CEditView [MFC], GetEditCtrl", "CEditView [MFC], GetPrinterFont", "CEditView [MFC], GetSelectedText", "CEditView [MFC], LockBuffer", "CEditView [MFC], PrintInsideRect", "CEditView [MFC], SerializeRaw", "CEditView [MFC], SetPrinterFont", "CEditView [MFC], SetTabStops", "CEditView [MFC], UnlockBuffer", "CEditView [MFC], OnFindNext", "CEditView [MFC], OnReplaceAll", "CEditView [MFC], OnReplaceSel", "CEditView [MFC], OnTextNotFound", "CEditView [MFC], dwStyleDefault"]
-ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
 ---
 # CEditView Class
 

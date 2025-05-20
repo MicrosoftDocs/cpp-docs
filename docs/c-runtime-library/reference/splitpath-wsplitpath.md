@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _splitpath, _wsplitpath"
 title: "_splitpath, _wsplitpath"
+description: "Learn more about: _splitpath, _wsplitpath"
 ms.date: 11/30/2023
 api_name: ["_wsplitpath", "_splitpath", "_o__splitpath", "_o__wsplitpath"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: time_get_byname Class"
 title: "time_get_byname Class"
-ms.date: "11/04/2016"
+description: "Learn more about: time_get_byname Class"
+ms.date: 11/04/2016
 f1_keywords: ["xloctime/std::time_get_byname"]
 helpviewer_keywords: ["time_get_byname class"]
-ms.assetid: 6e54153e-da40-4bb9-a942-1a6ce57b30c9
 ---
 # time_get_byname Class
 

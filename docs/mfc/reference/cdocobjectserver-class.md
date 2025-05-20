@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CDocObjectServer Class"
 title: "CDocObjectServer Class"
-ms.date: "09/12/2018"
+description: "Learn more about: CDocObjectServer Class"
+ms.date: 09/12/2018
 f1_keywords: ["CDocObjectServer", "AFXDOCOB/CDocObjectServer", "AFXDOCOB/CDocObjectServer::CDocObjectServer", "AFXDOCOB/CDocObjectServer::ActivateDocObject", "AFXDOCOB/CDocObjectServer::OnActivateView", "AFXDOCOB/CDocObjectServer::OnApplyViewState", "AFXDOCOB/CDocObjectServer::OnSaveViewState"]
 helpviewer_keywords: ["CDocObjectServer [MFC], CDocObjectServer", "CDocObjectServer [MFC], ActivateDocObject", "CDocObjectServer [MFC], OnActivateView", "CDocObjectServer [MFC], OnApplyViewState", "CDocObjectServer [MFC], OnSaveViewState"]
-ms.assetid: 18cd0dff-0616-4472-b8d9-66c081bc383a
 ---
 # CDocObjectServer Class
 

@@ -1,7 +1,7 @@
 ---
 title: "ctype Class"
 description: "Learn more about: ctype Class"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["xlocale/std::ctype", "xlocale/std::ctype::char_type", "xlocale/std::ctype::do_is", "xlocale/std::ctype::do_narrow", "xlocale/std::ctype::do_scan_is", "xlocale/std::ctype::do_scan_not", "xlocale/std::ctype::do_tolower", "xlocale/std::ctype::do_toupper", "xlocale/std::ctype::do_widen", "xlocale/std::ctype::is", "xlocale/std::ctype::narrow", "xlocale/std::ctype::scan_is", "xlocale/std::ctype::scan_not", "xlocale/std::ctype::tolower", "xlocale/std::ctype::toupper", "xlocale/std::ctype::widen"]
 helpviewer_keywords: ["std::ctype [C++]", "std::ctype [C++], char_type", "std::ctype [C++], do_is", "std::ctype [C++], do_narrow", "std::ctype [C++], do_scan_is", "std::ctype [C++], do_scan_not", "std::ctype [C++], do_tolower", "std::ctype [C++], do_toupper", "std::ctype [C++], do_widen", "std::ctype [C++], is", "std::ctype [C++], narrow", "std::ctype [C++], scan_is", "std::ctype [C++], scan_not", "std::ctype [C++], tolower", "std::ctype [C++], toupper", "std::ctype [C++], widen"]
 ---

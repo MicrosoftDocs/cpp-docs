@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: ostrstream Class"
 title: "ostrstream Class"
-ms.date: "11/04/2016"
+description: "Learn more about: ostrstream Class"
+ms.date: 11/04/2016
 f1_keywords: ["strstream/std::ostrstream::freeze", "strstream/std::ostrstream::pcount", "strstream/std::ostrstream::rdbuf", "strstream/std::ostrstream::str"]
 helpviewer_keywords: ["std::ostrstream [C++], freeze", "std::ostrstream [C++], pcount", "std::ostrstream [C++], rdbuf", "std::ostrstream [C++], str"]
-ms.assetid: e2e34679-b266-4728-a8e1-8eda5d400e46
 ---
 # ostrstream Class
 
