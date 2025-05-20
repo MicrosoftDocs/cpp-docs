@@ -136,7 +136,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1, off, no longer emitted) C4350](compiler-warning-level-1-c4350.md)|behavior change: '*member1*' called instead of '*member2*'|
 |Compiler warning (level 1) C4352|'*identifier*': intrinsic function already defined|
 |[Compiler warning (level 1) C4353](compiler-warning-level-1-c4353.md)|nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead|
-|[Compiler warning (level 1 and level 4, off) C4355](compiler-warning-c4355.md)Compiler warning (level 1 and level 4) C4355|'this': used in base member initializer list|
+|[Compiler warning (level 1 and level 4, off) C4355](compiler-warning-c4355.md)|'this': used in base member initializer list|
 |[Compiler warning (level 2) C4356](compiler-warning-level-2-c4356.md)|'*member*': static data member cannot be initialized via derived class|
 |[Compiler warning (level 3) C4357](compiler-warning-level-3-c4357.md)|param array argument found in formal argument list for delegate '*delegate*' ignored when generating '*function*'|
 |[Compiler warning (level 1) C4358](compiler-warning-level-1-c4358.md)|'*operator*': return type of combined delegates is not 'void'; returned value is undefined|
