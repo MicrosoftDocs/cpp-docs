@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: ctype_byname Class"
 title: "ctype_byname Class"
-ms.date: "11/04/2016"
+description: "Learn more about: ctype_byname Class"
+ms.date: 11/04/2016
 f1_keywords: ["xlocale/std::ctype_byname"]
 helpviewer_keywords: ["ctype_byname class"]
-ms.assetid: a5cec021-a1f8-425f-8757-08e6f064b604
 ---
 # ctype_byname Class
 
@@ -33,7 +32,7 @@ protected:
 
 ## Remarks
 
-Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [ctype](../standard-library/ctype-class.md)\<CharType>( `_Refs`) or the equivalent for base class `ctype<char>`.
+Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [ctype](../standard-library/ctype-class.md)\<CharType>(`_Refs`) or the equivalent for base class `ctype<char>`.
 
 ## Requirements
 

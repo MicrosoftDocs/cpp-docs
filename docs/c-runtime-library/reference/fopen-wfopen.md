@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: fopen, _wfopen"
 title: "fopen, _wfopen"
+description: "Learn more about: fopen, _wfopen"
 ms.date: 04/27/2023
 api_name: ["_wfopen", "fopen", "_o__wfopen", "_o_fopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -136,7 +136,7 @@ Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdo
 | Characters in *`mode`* string | Equivalent *`oflag`* value for `_open`/`_sopen` |
 |--|--|
 | **`a`** | `_O_WRONLY | _O_APPEND` (usually `_O_WRONLY | _O_CREAT | _O_APPEND`) |
-| **`a+`** | `_O_RDWR | _O_APPEND` (usually `_O_RDWR | _O_APPEND | _O_CREAT` ) |
+| **`a+`** | `_O_RDWR | _O_APPEND` (usually `_O_RDWR | _O_APPEND | _O_CREAT`) |
 | **`r`** | `_O_RDONLY` |
 | **`r+`** | `_O_RDWR` |
 | **`w`** | `_O_WRONLY` (usually `_O_WRONLY | _O_CREAT | _O_TRUNC`) |

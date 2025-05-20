@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: CDaoFieldExchange Class"
 title: "CDaoFieldExchange Class"
-ms.date: "09/17/2019"
+description: "Learn more about: CDaoFieldExchange Class"
+ms.date: 09/17/2019
 f1_keywords: ["CDaoFieldExchange", "AFXDAO/CDaoFieldExchange", "AFXDAO/CDaoFieldExchange::IsValidOperation", "AFXDAO/CDaoFieldExchange::SetFieldType", "AFXDAO/CDaoFieldExchange::m_nOperation", "AFXDAO/CDaoFieldExchange::m_prs"]
 helpviewer_keywords: ["CDaoFieldExchange [MFC], IsValidOperation", "CDaoFieldExchange [MFC], SetFieldType", "CDaoFieldExchange [MFC], m_nOperation", "CDaoFieldExchange [MFC], m_prs"]
 ---
@@ -44,7 +44,7 @@ Use this class if you are writing data exchange routines for custom data types; 
 > The DAO database classes are distinct from the MFC database classes based on Open Database Connectivity (ODBC). All DAO database class names have the "CDao" prefix. You can still access ODBC data sources with the DAO classes. In general, the MFC classes based on DAO are more capable than the MFC classes based on ODBC. The DAO-based classes can access data, including through ODBC drivers, via their own database engine. They also support Data Definition Language (DDL) operations, such as adding tables via the classes instead of having to call DAO yourself.
 
 > [!NOTE]
-> DAO record field exchange (DFX) is very similar to record field exchange (RFX) in the ODBC-based MFC database classes ( `CDatabase`, `CRecordset`). If you understand RFX, you will find it easy to use DFX.
+> DAO record field exchange (DFX) is very similar to record field exchange (RFX) in the ODBC-based MFC database classes (`CDatabase`, `CRecordset`). If you understand RFX, you will find it easy to use DFX.
 
 A `CDaoFieldExchange` object provides the context information needed for DAO record field exchange to take place. `CDaoFieldExchange` objects support a number of operations, including binding parameters and field data members and setting various flags on the fields of the current record. DFX operations are performed on recordset-class data members of types defined by the **`enum`** **FieldType** in `CDaoFieldExchange`. Possible **FieldType** values are:
 

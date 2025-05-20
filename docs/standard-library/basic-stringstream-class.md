@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: basic_stringstream Class"
 title: "basic_stringstream Class"
+description: "Learn more about: basic_stringstream Class"
 ms.date: 06/10/2022
 f1_keywords: ["sstream/std::basic_stringstream", "sstream/std::basic_stringstream::allocator_type", "sstream/std::basic_stringstream::rdbuf", "sstream/std::basic_stringstream::str"]
 helpviewer_keywords: ["std::basic_stringstream [C++]", "std::basic_stringstream [C++], allocator_type", "std::basic_stringstream [C++], rdbuf", "std::basic_stringstream [C++], str"]
-ms.assetid: 49629814-ca37-45c5-931b-4ff894e6ebd2
 ms.custom: devdivchpfy22
 ---
 
@@ -87,7 +86,7 @@ An object of type `basic_string`.
 
 ### Remarks
 
-The first constructor initializes the base class by calling [basic_iostream](../standard-library/basic-iostream-class.md)( **sb**), where `sb` is the stored object of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>. It also initializes `sb` by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>( `_Mode`).
+The first constructor initializes the base class by calling [basic_iostream](../standard-library/basic-iostream-class.md)( **sb**), where `sb` is the stored object of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>. It also initializes `sb` by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>(`_Mode`).
 
 The second constructor initializes the base class by calling basic_iostream( **sb**). It also initializes `sb` by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>(_ *Str*, `_Mode`).
 
@@ -129,7 +128,7 @@ Returns an object of class [basic_string](../standard-library/basic-string-class
 
 ### Remarks
 
-The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**( `_Newstr`).
+The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**(`_Newstr`).
 
 ### Example
 

@@ -486,11 +486,11 @@ A handle for a **`CStringT`** object.
 
 Because the constructors copy the input data into new allocated storage, memory exceptions may result. Some of these constructors act as conversion functions. This allows you to substitute, for example, an **`LPTSTR`** where a **`CStringT`** object is expected.
 
-- **`CStringT`**( `LPCSTR` `lpsz` ): Constructs a Unicode **`CStringT`** from an ANSI string. You can also use this constructor to load a string resource as shown in the example below.
+- **`CStringT`**(`LPCSTR` `lpsz`): Constructs a Unicode **`CStringT`** from an ANSI string. You can also use this constructor to load a string resource as shown in the example below.
 
-- `CStringT(` `LPCWSTR` `lpsz` ): Constructs a **`CStringT`** from a Unicode string.
+- **`CStringT`**(`LPCWSTR` `lpsz`): Constructs a **`CStringT`** from a Unicode string.
 
-- **`CStringT`**( `const unsigned char*` `psz` ): Allows you to construct a **`CStringT`** from a pointer to **`unsigned char`**.
+- **`CStringT`**(`const unsigned char*` `psz`): Allows you to construct a **`CStringT`** from a pointer to **`unsigned char`**.
 
 > [!NOTE]
 > Define the `_CSTRING_DISABLE_NARROW_WIDE_CONVERSION` macro to turn off implicit string conversion between ANSI and Unicode strings. The macro excludes from compilation constructors that support conversion.

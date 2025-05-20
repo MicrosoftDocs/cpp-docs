@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CFrameWnd Class"
 title: "CFrameWnd Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CFrameWnd Class"
+ms.date: 11/04/2016
 f1_keywords: ["CFrameWnd", "AFXWIN/CFrameWnd", "AFXWIN/CFrameWnd::CFrameWnd", "AFXWIN/CFrameWnd::ActivateFrame", "AFXWIN/CFrameWnd::BeginModalState", "AFXWIN/CFrameWnd::Create", "AFXWIN/CFrameWnd::CreateView", "AFXWIN/CFrameWnd::DockControlBar", "AFXWIN/CFrameWnd::EnableDocking", "AFXWIN/CFrameWnd::EndModalState", "AFXWIN/CFrameWnd::FloatControlBar", "AFXWIN/CFrameWnd::GetActiveDocument", "AFXWIN/CFrameWnd::GetActiveFrame", "AFXWIN/CFrameWnd::GetActiveView", "AFXWIN/CFrameWnd::GetControlBar", "AFXWIN/CFrameWnd::GetDockState", "AFXWIN/CFrameWnd::GetMenuBarState", "AFXWIN/CFrameWnd::GetMenuBarVisibility", "AFXWIN/CFrameWnd::GetMessageBar", "AFXWIN/CFrameWnd::GetMessageString", "AFXWIN/CFrameWnd::GetTitle", "AFXWIN/CFrameWnd::InitialUpdateFrame", "AFXWIN/CFrameWnd::InModalState", "AFXWIN/CFrameWnd::IsTracking", "AFXWIN/CFrameWnd::LoadAccelTable", "AFXWIN/CFrameWnd::LoadBarState", "AFXWIN/CFrameWnd::LoadFrame", "AFXWIN/CFrameWnd::NegotiateBorderSpace", "AFXWIN/CFrameWnd::OnBarCheck", "AFXWIN/CFrameWnd::OnContextHelp", "AFXWIN/CFrameWnd::OnSetPreviewMode", "AFXWIN/CFrameWnd::OnUpdateControlBarMenu", "AFXWIN/CFrameWnd::RecalcLayout", "AFXWIN/CFrameWnd::SaveBarState", "AFXWIN/CFrameWnd::SetActivePreviewView", "AFXWIN/CFrameWnd::SetActiveView", "AFXWIN/CFrameWnd::SetDockState", "AFXWIN/CFrameWnd::SetMenuBarState", "AFXWIN/CFrameWnd::SetMenuBarVisibility", "AFXWIN/CFrameWnd::SetMessageText", "AFXWIN/CFrameWnd::SetProgressBarPosition", "AFXWIN/CFrameWnd::SetProgressBarRange", "AFXWIN/CFrameWnd::SetProgressBarState", "AFXWIN/CFrameWnd::SetTaskbarOverlayIcon", "AFXWIN/CFrameWnd::SetTitle", "AFXWIN/CFrameWnd::ShowControlBar", "AFXWIN/CFrameWnd::ShowOwnedWindows", "AFXWIN/CFrameWnd::OnCreateClient", "AFXWIN/CFrameWnd::OnHideMenuBar", "AFXWIN/CFrameWnd::OnShowMenuBar", "AFXWIN/CFrameWnd::m_bAutoMenuEnable", "AFXWIN/CFrameWnd::rectDefault"]
 helpviewer_keywords: ["CFrameWnd [MFC], CFrameWnd", "CFrameWnd [MFC], ActivateFrame", "CFrameWnd [MFC], BeginModalState", "CFrameWnd [MFC], Create", "CFrameWnd [MFC], CreateView", "CFrameWnd [MFC], DockControlBar", "CFrameWnd [MFC], EnableDocking", "CFrameWnd [MFC], EndModalState", "CFrameWnd [MFC], FloatControlBar", "CFrameWnd [MFC], GetActiveDocument", "CFrameWnd [MFC], GetActiveFrame", "CFrameWnd [MFC], GetActiveView", "CFrameWnd [MFC], GetControlBar", "CFrameWnd [MFC], GetDockState", "CFrameWnd [MFC], GetMenuBarState", "CFrameWnd [MFC], GetMenuBarVisibility", "CFrameWnd [MFC], GetMessageBar", "CFrameWnd [MFC], GetMessageString", "CFrameWnd [MFC], GetTitle", "CFrameWnd [MFC], InitialUpdateFrame", "CFrameWnd [MFC], InModalState", "CFrameWnd [MFC], IsTracking", "CFrameWnd [MFC], LoadAccelTable", "CFrameWnd [MFC], LoadBarState", "CFrameWnd [MFC], LoadFrame", "CFrameWnd [MFC], NegotiateBorderSpace", "CFrameWnd [MFC], OnBarCheck", "CFrameWnd [MFC], OnContextHelp", "CFrameWnd [MFC], OnSetPreviewMode", "CFrameWnd [MFC], OnUpdateControlBarMenu", "CFrameWnd [MFC], RecalcLayout", "CFrameWnd [MFC], SaveBarState", "CFrameWnd [MFC], SetActivePreviewView", "CFrameWnd [MFC], SetActiveView", "CFrameWnd [MFC], SetDockState", "CFrameWnd [MFC], SetMenuBarState", "CFrameWnd [MFC], SetMenuBarVisibility", "CFrameWnd [MFC], SetMessageText", "CFrameWnd [MFC], SetProgressBarPosition", "CFrameWnd [MFC], SetProgressBarRange", "CFrameWnd [MFC], SetProgressBarState", "CFrameWnd [MFC], SetTaskbarOverlayIcon", "CFrameWnd [MFC], SetTitle", "CFrameWnd [MFC], ShowControlBar", "CFrameWnd [MFC], ShowOwnedWindows", "CFrameWnd [MFC], OnCreateClient", "CFrameWnd [MFC], OnHideMenuBar", "CFrameWnd [MFC], OnShowMenuBar", "CFrameWnd [MFC], m_bAutoMenuEnable", "CFrameWnd [MFC], rectDefault"]
-ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
 ---
 # `CFrameWnd` Class
 
@@ -420,7 +419,7 @@ If there is no active MDI child or the application is a single document interfac
 
 ## <a name="getactiveview"></a> `CFrameWnd::GetActiveView`
 
-Call this member function to obtain a pointer to the active view (if any) attached to a frame window ( `CFrameWnd`).
+Call this member function to obtain a pointer to the active view (if any) attached to a frame window (`CFrameWnd`).
 
 ```
 CView* GetActiveView() const;
@@ -432,7 +431,7 @@ A pointer to the current [`CView`](../../mfc/reference/cview-class.md). If there
 
 ### Remarks
 
-This function returns `NULL` when called for an MDI main frame window ( `CMDIFrameWnd`). In an MDI application, the MDI main frame window does not have a view associated with it. Instead, each individual child window ( `CMDIChildWnd`) has one or more associated views. The active view in an MDI application can be obtained by first finding the active MDI child window and then finding the active view for that child window. The active MDI child window can be found by calling the function `MDIGetActive` or `GetActiveFrame` as demonstrated in the following:
+This function returns `NULL` when called for an MDI main frame window (`CMDIFrameWnd`). In an MDI application, the MDI main frame window does not have a view associated with it. Instead, each individual child window (`CMDIChildWnd`) has one or more associated views. The active view in an MDI application can be obtained by first finding the active MDI child window and then finding the active view for that child window. The active MDI child window can be found by calling the function `MDIGetActive` or `GetActiveFrame` as demonstrated in the following:
 
 [!code-cpp[NVC_MFCWindowing#2](../../mfc/reference/codesnippet/cpp/cframewnd-class_2.cpp)]
 

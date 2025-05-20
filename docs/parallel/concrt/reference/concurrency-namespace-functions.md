@@ -1,7 +1,7 @@
 ---
 title: "concurrency namespace functions"
 description: "Learn more about: concurrency namespace functions"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["concrt/concurrency::Alloc", "concrt/concurrency::DisableTracing", "concrt/concurrency::EnableTracing", "concrtrm/concurrency::GetExecutionContextId", "concrtrm/concurrency::GetOSVersion", "concrtrm/concurrency::GetProcessorNodeCount", "concrtrm/concurrency::GetSchedulerId", "agents/concurrency::asend", "ppltasks/concurrency::cancel_current_task", "ppltasks/concurrency::create_async", "ppltasks/concurrency::create_task", "concurrent_vector/concurrency::internal_assign_iterators", "ppl/concurrency::interruption_point", "agents/concurrency::make_choice", "agents/concurrency::make_greedy_join", "ppl/concurrency::make_task", "ppl/concurrency::parallel_buffered_sort", "ppl/concurrency::parallel_for_each", "ppl/concurrency::parallel_invoke", "ppl/concurrency::parallel_reduce", "ppl/concurrency::parallel_sort", "agents/concurrency::receive", "ppl/concurrency::run_with_cancellation_token", "pplconcrt/concurrency::set_ambient_scheduler", "concrt/concurrency::set_task_execution_resources", "ppltasks/concurrency::task_from_exception", "ppltasks/concurrency::task_from_result", "concrt/concurrency::wait", "ppltasks/concurrency::when_all", "ppltasks/concurrency::when_any"]
 ---
 # concurrency namespace functions
@@ -1531,7 +1531,7 @@ The concurrent vector providing the elements to be swapped, or the vector whose 
 
 ### Remarks
 
-The template function is an algorithm specialized on the container class `concurrent_vector` to execute the member function `_A`. [concurrent_vector::swap](concurrent-vector-class.md#swap)( `_B`). These are instances of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, `template <class T> void swap(T&, T&)`, in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.
+The template function is an algorithm specialized on the container class `concurrent_vector` to execute the member function `_A`. [concurrent_vector::swap](concurrent-vector-class.md#swap)(`_B`). These are instances of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, `template <class T> void swap(T&, T&)`, in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.
 
 This method is not concurrency-safe. You must ensure that no other threads are performing operations on either of the concurrent vectors when you call this method.
 

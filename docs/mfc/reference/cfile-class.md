@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CFile Class"
 title: "CFile Class"
-ms.date: "06/12/2018"
+description: "Learn more about: CFile Class"
+ms.date: 06/12/2018
 f1_keywords: ["CFile", "AFX/CFile", "AFX/CFile::CFile", "AFX/CFile::Abort", "AFX/CFile::Close", "AFX/CFile::Duplicate", "AFX/CFile::Flush", "AFX/CFile::GetFileName", "AFX/CFile::GetFilePath", "AFX/CFile::GetFileTitle", "AFX/CFile::GetLength", "AFX/CFile::GetPosition", "AFX/CFile::GetStatus", "AFX/CFile::LockRange", "AFX/CFile::Open", "AFX/CFile::Read", "AFX/CFile::Remove", "AFX/CFile::Rename", "AFX/CFile::Seek", "AFX/CFile::SeekToBegin", "AFX/CFile::SeekToEnd", "AFX/CFile::SetFilePath", "AFX/CFile::SetLength", "AFX/CFile::SetStatus", "AFX/CFile::UnlockRange", "AFX/CFile::Write", "AFX/CFile::hFileNull", "AFX/CFile::m_hFile", "AFX/CFile::m_pTM"]
 helpviewer_keywords: ["CFile [MFC], CFile", "CFile [MFC], Abort", "CFile [MFC], Close", "CFile [MFC], Duplicate", "CFile [MFC], Flush", "CFile [MFC], GetFileName", "CFile [MFC], GetFilePath", "CFile [MFC], GetFileTitle", "CFile [MFC], GetLength", "CFile [MFC], GetPosition", "CFile [MFC], GetStatus", "CFile [MFC], LockRange", "CFile [MFC], Open", "CFile [MFC], Read", "CFile [MFC], Remove", "CFile [MFC], Rename", "CFile [MFC], Seek", "CFile [MFC], SeekToBegin", "CFile [MFC], SeekToEnd", "CFile [MFC], SetFilePath", "CFile [MFC], SetLength", "CFile [MFC], SetStatus", "CFile [MFC], UnlockRange", "CFile [MFC], Write", "CFile [MFC], hFileNull", "CFile [MFC], m_hFile", "CFile [MFC], m_pTM"]
-ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
 ---
 # CFile Class
 
@@ -277,7 +276,7 @@ The name of the file.
 
 For example, when you call `GetFileName` to generate a message to the user about the file `c:\windows\write\myfile.wri`, the filename, `myfile.wri`, is returned.
 
-To return the entire path of the file, including the name, call [GetFilePath](#getfilepath). To return the title of the file ( `myfile`), call [GetFileTitle](#getfiletitle).
+To return the entire path of the file, including the name, call [GetFilePath](#getfilepath). To return the title of the file (`myfile`), call [GetFileTitle](#getfiletitle).
 
 ### Example
 
