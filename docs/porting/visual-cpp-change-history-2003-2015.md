@@ -3365,7 +3365,7 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 - The syntax for SAL Annotations has changed. For more information, see [SAL Annotations](../c-runtime-library/sal-annotations.md).
 
-- The IEEE filter now supports the SSE 4.1 instruction set. For more information, see [_fpieee_flt](../c-runtime-library/reference/fpieee-flt.md)_fpieee_flt.
+- The IEEE filter now supports the SSE 4.1 instruction set. For more information, see [`_fpieee_flt`](../c-runtime-library/reference/fpieee-flt.md).
 
 - The C Run-Time Libraries that ship with Visual Studio are no longer dependent on the system DLL msvcrt.dll.
 
