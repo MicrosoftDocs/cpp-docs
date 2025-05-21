@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <forward_list> operators"
 title: "<forward_list> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <forward_list> operators"
+ms.date: 11/04/2016
 f1_keywords: ["forward_list/std::operator!=", "forward_list/std::operator==", "forward_list/std::operator>", "forward_list/std::operator>=;", "forward_list/std::operator<", "forward_list/std::operator<="]
-ms.assetid: 57492e09-3836-4dbc-9ae5-78ecf506c190
 helpviewer_keywords: ["std::operator!= (forward_list)", "std::operator== (forward_list)", "std::operator> (forward_list)", "std::operator>=; (forward_list)", "std::operator< (forward_list)", "std::operator<= (forward_list)"]
 ---
 # `<forward_list>` operators
