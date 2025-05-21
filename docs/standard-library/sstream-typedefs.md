@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: <sstream> typedefs"
 title: "<sstream> typedefs"
-ms.date: "11/04/2016"
+description: "Learn more about: <sstream> typedefs"
+ms.date: 11/04/2016
 f1_keywords: ["iosfwd/std::istringstream", "iosfwd/std::ostringstream", "iosfwd/std::stringbuf", "iosfwd/std::stringstream", "iosfwd/std::wistringstream", "iosfwd/std::wostringstream", "iosfwd/std::wstringbuf", "iosfwd/std::wstringstream"]
 ---
 # `<sstream>` typedefs

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Concurrency::graphics namespace functions"
 title: "Concurrency::graphics namespace functions"
-ms.date: "11/04/2016"
+description: "Learn more about: Concurrency::graphics namespace functions"
+ms.date: 11/04/2016
 f1_keywords: ["amp_graphics/Concurrency::fast_math::copy_async", "amp_graphics/Concurrency::fast_math::copy"]
-ms.assetid: ace01cd5-29d3-4356-930e-c81a61c5f934
 ---
 # Concurrency::graphics namespace functions
 

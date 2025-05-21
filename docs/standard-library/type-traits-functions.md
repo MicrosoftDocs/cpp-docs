@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: <type_traits> functions"
 title: "<type_traits> functions"
-ms.date: "11/04/2016"
-ms.assetid: dce4492f-f3e4-4d5e-bdb4-5875321254ec
+description: "Learn more about: <type_traits> functions"
+ms.date: 11/04/2016
 helpviewer_keywords: ["std::is_assignable", "std::is_copy_assignable", "std::is_copy_constructible", "std::is_default_constructible", "std::is_move_assignable", "std::is_move_constructible", "std::is_nothrow_move_assignable", "std::is_trivially_copy_assignable", "std::is_trivially_move_assignable", "std::is_trivially_move_constructible"]
 ---
 # `<type_traits>` functions

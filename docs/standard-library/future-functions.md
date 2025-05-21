@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: <future> functions"
 title: "<future> functions"
+description: "Learn more about: <future> functions"
 ms.date: 09/11/2024
 f1_keywords: ["future/std::async", "future/std::future_category", "future/std::make_error_code", "future/std::make_error_condition", "future/std::swap"]
 helpviewer_keywords: ["std::async [C++]", "std::future_category [C++]", "std::make_error_code [C++]", "std::make_error_condition [C++]", "std::swap [C++]"]

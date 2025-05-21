@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <unordered_map> operators"
 title: "<unordered_map> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <unordered_map> operators"
+ms.date: 11/04/2016
 f1_keywords: ["unordered_map/std::operator!=", "unordered_map/std::operator=="]
-ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
 ---
 # `<unordered_map>` operators
 

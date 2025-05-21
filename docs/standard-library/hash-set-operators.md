@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <hash_set> operators"
 title: "<hash_set> operators"
-ms.date: "03/27/2019"
+description: "Learn more about: <hash_set> operators"
+ms.date: 03/27/2019
 f1_keywords: ["hash_set/std::operator!=", "hash_set/std::operator=="]
-ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
 ---
 # `<hash_set>` operators
 

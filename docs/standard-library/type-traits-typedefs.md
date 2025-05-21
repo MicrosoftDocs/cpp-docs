@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <type_traits> typedefs"
 title: "<type_traits> typedefs"
-ms.date: "11/04/2016"
+description: "Learn more about: <type_traits> typedefs"
+ms.date: 11/04/2016
 f1_keywords: ["type_traits/std::false_type", "xtr1common/std::false_type", "type_traits/std::true_type", "xtr1common/std::true_type"]
-ms.assetid: 8ac040ca-ed2d-4570-adc9-cb5626530053
 ---
 # `<type_traits>` typedefs
 

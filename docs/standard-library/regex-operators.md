@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <regex> operators"
 title: "<regex> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <regex> operators"
+ms.date: 11/04/2016
 f1_keywords: ["regex/std::operator!=", "regex/std::operator>", "regex/std::operator>=", "regex/std::operator<", "regex/std::operator<=", "regex/std::operator==", "regex/std::operator<<"]
-ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
 ---
 # `<regex>` operators
 
