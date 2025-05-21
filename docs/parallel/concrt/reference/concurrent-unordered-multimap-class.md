@@ -392,7 +392,7 @@ An iterator pointing to the insertion location.
 
 The first member function inserts the element `value` in the controlled sequence, then returns the iterator that designates the inserted element.
 
-The second member function returns insert( `value`), using `_Where` as a starting place within the controlled sequence to search for the insertion point.
+The second member function returns insert(`value`), using `_Where` as a starting place within the controlled sequence to search for the insertion point.
 
 The third member function inserts the sequence of element values from the range [ `first`, `last`).
 

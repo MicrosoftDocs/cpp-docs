@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: money_put Class"
 title: "money_put Class"
-ms.date: "11/01/2018"
+description: "Learn more about: money_put Class"
+ms.date: 11/01/2018
 f1_keywords: ["xlocmon/std::money_put", "xlocmon/std::money_put::char_type", "xlocmon/std::money_put::iter_type", "xlocmon/std::money_put::string_type", "xlocmon/std::money_put::do_put", "xlocmon/std::money_put::put"]
 helpviewer_keywords: ["std::money_put [C++]", "std::money_put [C++], char_type", "std::money_put [C++], iter_type", "std::money_put [C++], string_type", "std::money_put [C++], do_put", "std::money_put [C++], put"]
-ms.assetid: f439fd56-c9b1-414c-95e1-66c918c6eee6
 ---
 # money_put Class
 
@@ -189,7 +188,7 @@ The possible values for the *_Refs* parameter and their significance are:
 
 No direct examples are possible, because the destructor is protected.
 
-The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).
+The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
 ## <a name="put"></a> money_put::put
 
@@ -234,7 +233,7 @@ An output iterator the addresses the position one beyond the last element produc
 
 ### Remarks
 
-Both member functions return [do_put](#do_put)( `next`, `_Intl`, `_Iosbase`, `_Fill`, `val`).
+Both member functions return [do_put](#do_put)(`next`, `_Intl`, `_Iosbase`, `_Fill`, `val`).
 
 ### Example
 

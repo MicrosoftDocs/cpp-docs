@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: strstream Class"
 title: "strstream Class"
-ms.date: "11/04/2016"
+description: "Learn more about: strstream Class"
+ms.date: 11/04/2016
 f1_keywords: ["strstream/std::strstream::freeze", "strstream/std::strstream::pcount", "strstream/std::strstream::rdbuf", "strstream/std::strstream::str"]
 helpviewer_keywords: ["std::strstream [C++], freeze", "std::strstream [C++], pcount", "std::strstream [C++], rdbuf", "std::strstream [C++], str"]
-ms.assetid: 63f3be31-9e36-42b1-9715-a474a5997e2a
 ---
 # strstream Class
 
@@ -152,9 +151,9 @@ The buffer.
 
 Both constructors initialize the base class by calling [streambuf](../standard-library/streambuf-typedefs.md#streambuf)( **sb**), where `sb` is the stored object of class [strstreambuf](../standard-library/strstreambuf-class.md). The first constructor also initializes `sb` by calling [strstreambuf](../standard-library/strstreambuf-class.md#strstreambuf). The second constructor initializes the base class one of two ways:
 
-- If `_Mode` & **ios_base::app**== 0, then *ptr* must designate the first element of an array of `count` elements, and the constructor calls `strstreambuf`( `ptr`, `count`, `ptr`).
+- If `_Mode` & **ios_base::app**== 0, then *ptr* must designate the first element of an array of `count` elements, and the constructor calls `strstreambuf`(`ptr`, `count`, `ptr`).
 
-- Otherwise, *ptr* must designate the first element of an array of count elements that contains a C string whose first element is designated by *ptr*, and the constructor calls `strstreambuf`( `ptr`, `count`, `ptr` + `strlen`( `ptr`) ).
+- Otherwise, *ptr* must designate the first element of an array of count elements that contains a C string whose first element is designated by *ptr*, and the constructor calls `strstreambuf`(`ptr`, `count`, `ptr` + `strlen`(`ptr`)).
 
 ## See also
 

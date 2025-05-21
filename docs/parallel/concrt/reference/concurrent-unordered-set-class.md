@@ -385,7 +385,7 @@ A pair that contains an iterator and a boolean value. See the Remarks section fo
 
 The first member function determines whether an element X exists in the sequence whose key has equivalent ordering to that of `value`. If not, it creates such an element X and initializes it with `value`. The function then determines the iterator `where` that designates X. If an insertion occurred, the function returns `std::pair(where, true)`. Otherwise, it returns `std::pair(where, false)`.
 
-The second member function returns insert( `value`), using `_Where` as a starting place within the controlled sequence to search for the insertion point.
+The second member function returns insert(`value`), using `_Where` as a starting place within the controlled sequence to search for the insertion point.
 
 The third member function inserts the sequence of element values from the range [ `first`, `last`).
 

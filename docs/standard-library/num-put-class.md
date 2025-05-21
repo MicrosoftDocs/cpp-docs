@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: num_put Class"
 title: "num_put Class"
-ms.date: "11/04/2016"
+description: "Learn more about: num_put Class"
+ms.date: 11/04/2016
 f1_keywords: ["xlocnum/std::num_put", "locale/std::num_put::char_type", "locale/std::num_put::iter_type", "locale/std::num_put::do_put", "locale/std::num_put::put"]
 helpviewer_keywords: ["std::num_put [C++]", "std::num_put [C++], char_type", "std::num_put [C++], iter_type", "std::num_put [C++], do_put", "std::num_put [C++], put"]
-ms.assetid: 36c5bffc-8283-4201-8ed4-78c4d81f8a17
 ---
 # num_put Class
 
@@ -384,7 +383,7 @@ An output iterator the addresses the position one beyond the last element produc
 
 ### Remarks
 
-All member functions return [do_put](#do_put)( `next`, `_Iosbase`, `_Fill`, `val`).
+All member functions return [do_put](#do_put)(`next`, `_Iosbase`, `_Fill`, `val`).
 
 ### Example
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: ostrstream Class"
 title: "ostrstream Class"
-ms.date: "11/04/2016"
+description: "Learn more about: ostrstream Class"
+ms.date: 11/04/2016
 f1_keywords: ["strstream/std::ostrstream::freeze", "strstream/std::ostrstream::pcount", "strstream/std::ostrstream::rdbuf", "strstream/std::ostrstream::str"]
 helpviewer_keywords: ["std::ostrstream [C++], freeze", "std::ostrstream [C++], pcount", "std::ostrstream [C++], rdbuf", "std::ostrstream [C++], str"]
-ms.assetid: e2e34679-b266-4728-a8e1-8eda5d400e46
 ---
 # ostrstream Class
 
@@ -94,7 +93,7 @@ Both constructors initialize the base class by calling [ostream](../standard-lib
 
 - If `_Mode` & **ios_base::app**== 0, then `ptr` must designate the first element of an array of `count` elements, and the constructor calls `strstreambuf`(`ptr`, `count`, `ptr`).
 
-- Otherwise, `ptr` must designate the first element of an array of count elements that contains a C string whose first element is designated by `ptr`, and the constructor calls `strstreambuf`(`ptr`, `count`, `ptr` + `strlen`( `ptr`) ).
+- Otherwise, `ptr` must designate the first element of an array of count elements that contains a C string whose first element is designated by `ptr`, and the constructor calls `strstreambuf`(`ptr`, `count`, `ptr` + `strlen`(`ptr`)).
 
 ## <a name="pcount"></a> ostrstream::pcount
 

@@ -1,7 +1,7 @@
 ---
 title: "ctype Class"
 description: "Learn more about: ctype Class"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["xlocale/std::ctype", "xlocale/std::ctype::char_type", "xlocale/std::ctype::do_is", "xlocale/std::ctype::do_narrow", "xlocale/std::ctype::do_scan_is", "xlocale/std::ctype::do_scan_not", "xlocale/std::ctype::do_tolower", "xlocale/std::ctype::do_toupper", "xlocale/std::ctype::do_widen", "xlocale/std::ctype::is", "xlocale/std::ctype::narrow", "xlocale/std::ctype::scan_is", "xlocale/std::ctype::scan_not", "xlocale/std::ctype::tolower", "xlocale/std::ctype::toupper", "xlocale/std::ctype::widen"]
 helpviewer_keywords: ["std::ctype [C++]", "std::ctype [C++], char_type", "std::ctype [C++], do_is", "std::ctype [C++], do_narrow", "std::ctype [C++], do_scan_is", "std::ctype [C++], do_scan_not", "std::ctype [C++], do_tolower", "std::ctype [C++], do_toupper", "std::ctype [C++], do_widen", "std::ctype [C++], is", "std::ctype [C++], narrow", "std::ctype [C++], scan_is", "std::ctype [C++], scan_not", "std::ctype [C++], tolower", "std::ctype [C++], toupper", "std::ctype [C++], widen"]
 ---
@@ -117,7 +117,7 @@ The possible values for the *_Refs* parameter and their significance are:
 
 No direct examples are possible, because the destructor is protected.
 
-The constructor initializes its `locale::facet` base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).
+The constructor initializes its `locale::facet` base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
 ## <a name="do_is"></a> ctype::do_is
 
@@ -206,7 +206,7 @@ The second protected member function returns a pointer to the destination range 
 
 ### Remarks
 
-The second protected member template function stores in `dest`[ `I`] the value `do_narrow`( `first` [ `I`], `default`), for `I` in the interval [0, `last` - `first`).
+The second protected member template function stores in `dest`[ `I`] the value `do_narrow`(`first` [ `I`], `default`), for `I` in the interval [0, `last` - `first`).
 
 ### Example
 
@@ -240,7 +240,7 @@ A pointer to the first character in a range that does match a specified mask. If
 
 ### Remarks
 
-The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, \* `ptr`) is true.
+The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)(`maskVal`, \* `ptr`) is true.
 
 ### Example
 
@@ -274,7 +274,7 @@ A pointer to the first character in a range that doesn't match a specified mask.
 
 ### Remarks
 
-The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)( `maskVal`, \* `ptr`) is false.
+The protected member function returns the smallest pointer `ptr` in the range [ `first`, `last`) for which [do_is](#do_is)(`maskVal`, \* `ptr`) is false.
 
 ### Example
 
@@ -309,7 +309,7 @@ The first protected member function returns the lowercase form of the parameter 
 
 ### Remarks
 
-The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` - `first`), with `do_tolower`( `first` [ `I`]).
+The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` - `first`), with `do_tolower`(`first` [ `I`]).
 
 ### Example
 
@@ -344,7 +344,7 @@ The first protected member function returns the uppercase form of the parameter 
 
 ### Remarks
 
-The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` - `first`), with `do_toupper`( `first` [ `I`]).
+The second protected member template function replaces each element `first` [ `I`], for `I` in the interval [0, `last` - `first`), with `do_toupper`(`first` [ `I`]).
 
 ### Example
 
@@ -385,7 +385,7 @@ The second protected member function returns a pointer to the destination range 
 
 ### Remarks
 
-The second protected member template function stores in `dest`[ `I`] the value `do_widen`( `first`[ `I`]), for `I` in the interval [0, `last` - `first`).
+The second protected member template function stores in `dest`[ `I`] the value `do_widen`(`first`[ `I`]), for `I` in the interval [0, `last` - `first`).
 
 ### Example
 
@@ -733,7 +733,7 @@ The second member function returns *last*.
 
 ### Remarks
 
-The first member function returns [do_toupper](#do_toupper)(`ch`). The second member function returns [do_toupper](#do_toupper)( `first`, `last`).
+The first member function returns [do_toupper](#do_toupper)(`ch`). The second member function returns [do_toupper](#do_toupper)(`first`, `last`).
 
 ### Example
 

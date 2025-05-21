@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CFindReplaceDialog Class"
 title: "CFindReplaceDialog Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CFindReplaceDialog Class"
+ms.date: 11/04/2016
 f1_keywords: ["CFindReplaceDialog", "AFXDLGS/CFindReplaceDialog", "AFXDLGS/CFindReplaceDialog::CFindReplaceDialog", "AFXDLGS/CFindReplaceDialog::Create", "AFXDLGS/CFindReplaceDialog::FindNext", "AFXDLGS/CFindReplaceDialog::GetFindString", "AFXDLGS/CFindReplaceDialog::GetNotifier", "AFXDLGS/CFindReplaceDialog::GetReplaceString", "AFXDLGS/CFindReplaceDialog::IsTerminating", "AFXDLGS/CFindReplaceDialog::MatchCase", "AFXDLGS/CFindReplaceDialog::MatchWholeWord", "AFXDLGS/CFindReplaceDialog::ReplaceAll", "AFXDLGS/CFindReplaceDialog::ReplaceCurrent", "AFXDLGS/CFindReplaceDialog::SearchDown", "AFXDLGS/CFindReplaceDialog::m_fr"]
 helpviewer_keywords: ["CFindReplaceDialog [MFC], CFindReplaceDialog", "CFindReplaceDialog [MFC], Create", "CFindReplaceDialog [MFC], FindNext", "CFindReplaceDialog [MFC], GetFindString", "CFindReplaceDialog [MFC], GetNotifier", "CFindReplaceDialog [MFC], GetReplaceString", "CFindReplaceDialog [MFC], IsTerminating", "CFindReplaceDialog [MFC], MatchCase", "CFindReplaceDialog [MFC], MatchWholeWord", "CFindReplaceDialog [MFC], ReplaceAll", "CFindReplaceDialog [MFC], ReplaceCurrent", "CFindReplaceDialog [MFC], SearchDown", "CFindReplaceDialog [MFC], m_fr"]
-ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
 ---
 # CFindReplaceDialog Class
 
@@ -142,7 +141,7 @@ Nonzero if the dialog box object was successfully created; otherwise 0.
 
 ### Remarks
 
-In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](/windows/win32/api/winuser/nf-winuser-registerwindowmessagew) function whose return value is a message number unique to the application's instance. Your frame window should have a message map entry that declares the callback function ( `OnFindReplace` in the example that follows) that handles this registered message. The following code fragment is an example of how to do this for a frame window class named `CMyRichEditView`:
+In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](/windows/win32/api/winuser/nf-winuser-registerwindowmessagew) function whose return value is a message number unique to the application's instance. Your frame window should have a message map entry that declares the callback function (`OnFindReplace` in the example that follows) that handles this registered message. The following code fragment is an example of how to do this for a frame window class named `CMyRichEditView`:
 
 [!code-cpp[NVC_MFCDocView#171](../../mfc/codesnippet/cpp/cfindreplacedialog-class_2.h)]
 &nbsp;
