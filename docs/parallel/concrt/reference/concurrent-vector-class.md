@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: concurrent_vector Class"
 title: "concurrent_vector Class"
-ms.date: "11/04/2016"
+description: "Learn more about: concurrent_vector Class"
+ms.date: 11/04/2016
 f1_keywords: ["concurrent_vector", "CONCURRENT_VECTOR/concurrency::concurrent_vector", "CONCURRENT_VECTOR/concurrency::concurrent_vector::concurrent_vector", "CONCURRENT_VECTOR/concurrency::concurrent_vector::assign", "CONCURRENT_VECTOR/concurrency::concurrent_vector::at", "CONCURRENT_VECTOR/concurrency::concurrent_vector::back", "CONCURRENT_VECTOR/concurrency::concurrent_vector::begin", "CONCURRENT_VECTOR/concurrency::concurrent_vector::capacity", "CONCURRENT_VECTOR/concurrency::concurrent_vector::cbegin", "CONCURRENT_VECTOR/concurrency::concurrent_vector::cend", "CONCURRENT_VECTOR/concurrency::concurrent_vector::clear", "CONCURRENT_VECTOR/concurrency::concurrent_vector::crbegin", "CONCURRENT_VECTOR/concurrency::concurrent_vector::crend", "CONCURRENT_VECTOR/concurrency::concurrent_vector::empty", "CONCURRENT_VECTOR/concurrency::concurrent_vector::end", "CONCURRENT_VECTOR/concurrency::concurrent_vector::front", "CONCURRENT_VECTOR/concurrency::concurrent_vector::get_allocator", "CONCURRENT_VECTOR/concurrency::concurrent_vector::grow_by", "CONCURRENT_VECTOR/concurrency::concurrent_vector::grow_to_at_least", "CONCURRENT_VECTOR/concurrency::concurrent_vector::max_size", "CONCURRENT_VECTOR/concurrency::concurrent_vector::push_back", "CONCURRENT_VECTOR/concurrency::concurrent_vector::rbegin", "CONCURRENT_VECTOR/concurrency::concurrent_vector::rend", "CONCURRENT_VECTOR/concurrency::concurrent_vector::reserve", "CONCURRENT_VECTOR/concurrency::concurrent_vector::resize", "CONCURRENT_VECTOR/concurrency::concurrent_vector::shrink_to_fit", "CONCURRENT_VECTOR/concurrency::concurrent_vector::size", "CONCURRENT_VECTOR/concurrency::concurrent_vector::swap"]
 helpviewer_keywords: ["concurrent_vector class"]
-ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
 ---
 # concurrent_vector Class
 
@@ -318,9 +317,9 @@ The second and third constructors specify a copy of the concurrent vector `_Vect
 
 The fourth constructor specifies a move of the concurrent vector `_Vector`.
 
-The fifth constructor specifies a repetition of a specified number ( `_N`) of elements of the default value for class `T`.
+The fifth constructor specifies a repetition of a specified number (`_N`) of elements of the default value for class `T`.
 
-The sixth constructor specifies a repetition of ( `_N`) elements of value `_Item`.
+The sixth constructor specifies a repetition of (`_N`) elements of value `_Item`.
 
 The last constructor specifies values supplied by the iterator range [ `_Begin`, `_End`).
 

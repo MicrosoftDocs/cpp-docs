@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: vector<bool> Class"
 title: "vector<bool> Class"
-ms.date: "11/04/2016"
+description: "Learn more about: vector<bool> Class"
+ms.date: 11/04/2016
 f1_keywords: ["vector<bool>", "vector/std::vector::flip"]
 helpviewer_keywords: ["std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], pointer", "std::vector [C++], flip", "std::vector [C++], swap"]
 ---
@@ -350,7 +350,7 @@ The original value of the 3rd element still stored in a bool: false
 
 ## <a name="swap"></a> `vector<bool>::swap`
 
-Static member function that exchanges two elements of Boolean vectors ( `vector<bool>`) by using the proxy class [`vector<bool>::reference`](#reference_class).
+Static member function that exchanges two elements of Boolean vectors (`vector<bool>`) by using the proxy class [`vector<bool>::reference`](#reference_class).
 
 ```cpp
 static void swap(

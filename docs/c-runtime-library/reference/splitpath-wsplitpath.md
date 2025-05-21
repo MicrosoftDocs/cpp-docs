@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _splitpath, _wsplitpath"
 title: "_splitpath, _wsplitpath"
+description: "Learn more about: _splitpath, _wsplitpath"
 ms.date: 11/30/2023
 api_name: ["_wsplitpath", "_splitpath", "_o__splitpath", "_o__wsplitpath"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
@@ -41,7 +41,7 @@ Full path.
 Drive letter, followed by a colon (**:**). You can pass `NULL` for this parameter if you don't need the drive letter.
 
 *`dir`*\
-Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. Pass `NULL` for this parameter if you don't need the directory path.
+Directory path, including trailing slash. Forward slashes (`/`), backslashes (`\`), or both may be used. Pass `NULL` for this parameter if you don't need the directory path.
 
 *`fname`*\
 Base filename (no extension). Pass `NULL` for this parameter if you don't need the filename.
