@@ -60,9 +60,6 @@ AddressSanitizer (ASAN) uses a custom version of `operator new` and `operator de
 
 [MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete` and might miss errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md).
 
-## Windows versions
-
-Support is focused on Windows 10. MSVC AddressSanitizer was tested on 10.0.14393 (RS1), and 10.0.21323 (prerelease insider build). [Report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Memory usage
 
@@ -81,6 +78,14 @@ As a workaround, create a *`Directory.Build.props`* file in the root of your pro
 ## Thread local variables
 
 Thread local variables (global variables declared with `__declspec(thread)` or `thread_local`) aren't protected by AddressSanitizer. This limitation isn't specific to Windows or Microsoft Visual C++, but is a general limitation.
+
+## Loading and unloading DLLs
+
+If the entire process is not compiled with `/fsanitize=address`, there may be limitations in ASan's ability to diagnose memory safety errors. The most common example is when a DLL is compiled with ASan and loaded into a process that **was not** compiled with ASan. In this case, ASan will attempt to categorize allocations that took place prior to ASan initialization. If those allocations are transformed in any way (reallocated, moved, etc.), ASan will then attempt to own and monitor the lifetime and memory loads/stores.
+
+In the event that all DLLs compiled with ASan leave the process before the end of its execution (like in the event of test drivers such as [TAEF](https://learn.microsoft.com/en-us/windows-hardware/drivers/taef/)), there may dangling references to intercepted functions (`memcmp`, `memcpy`, `memmove`, etc.), and may result in crashes. This is a current limitation with these configurations and unloading DLLs. 
+
+Please [report any bugs](https://aka.ms/feedback/report?space=62) if you experience them.
 
 ## See also
 
