@@ -7,9 +7,6 @@ ms.assetid: 0301ea0d-4ded-4841-83dd-4253b55b3188
 ---
 # `<istream>` functions
 
-[swap](#istream_swap)\
-[ws](#ws)
-
 ## <a name="istream_swap"></a> swap
 
 Exchanges the elements of two stream objects.

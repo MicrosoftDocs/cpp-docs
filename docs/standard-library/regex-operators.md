@@ -7,14 +7,6 @@ ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
 ---
 # `<regex>` operators
 
-[operator!=](#op_neq)\
-[`operator>`](#op_gt)\
-[`operator>=`](#op_gt_eq)\
-[`operator<`](#op_lt)\
-[`operator<<`](#op_lt_lt)\
-[`operator<=`](#op_lt_eq)\
-[operator==](#op_eq_eq)
-
 ## <a name="op_neq"></a> operator!=
 
 Not equal comparison for various objects.

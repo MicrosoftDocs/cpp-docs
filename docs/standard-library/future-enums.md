@@ -7,10 +7,6 @@ ms.assetid: 8c675645-db47-4cab-bc0e-7b87f8a302df
 ---
 # `<future>` enums
 
-[future_errc](#future_errc)\
-[future_status](#future_status)\
-[launch](#launch)
-
 ## <a name="future_errc"></a> future_errc Enumeration
 
 Supplies symbolic names for all of the errors that are reported by the [future_error](../standard-library/future-error-class.md) class.

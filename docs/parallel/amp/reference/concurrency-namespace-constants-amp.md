@@ -7,9 +7,6 @@ ms.assetid: 13a8e8cd-2eec-4e60-a91d-5d271072747b
 ---
 # Concurrency namespace constants (AMP)
 
-[HLSL_MAX_NUM_BUFFERS](#hlsl_max_num_buffers)\
-[MODULENAME_MAX_LENGTH](#modulename_max_length)
-
 ## <a name="hlsl_max_num_buffers"></a> HLSL_MAX_NUM_BUFFERS Constant
 
 The maximum number of buffers allowed by DirectX.

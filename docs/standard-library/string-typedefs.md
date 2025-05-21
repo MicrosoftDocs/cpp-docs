@@ -7,11 +7,6 @@ ms.assetid: fdca01e9-f2f1-4b59-abda-0093d760b3cc
 ---
 # `<string>` typedefs
 
-[`string`](#string)\
-[`u16string`](#u16string)\
-[`u32string`](#u32string)\
-[`wstring`](#wstring)
-
 ## <a name="string"></a> `string`
 
 A type that describes a specialization of the class template [`basic_string`](../standard-library/basic-string-class.md) with elements of type **`char`**.

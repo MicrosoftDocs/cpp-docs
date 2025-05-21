@@ -7,18 +7,6 @@ helpviewer_keywords: ["std::get_money [C++]", "std::get_time [C++]", "std::put_m
 ---
 # `<iomanip>` functions
 
-[`get_money`](#iomanip_get_money)\
-[`get_time`](#iomanip_get_time)\
-[`put_money`](#iomanip_put_money)\
-[`put_time`](#iomanip_put_time)\
-[`quoted`](#quoted)\
-[`resetiosflags`](#resetiosflags)\
-[`setbase`](#setbase)\
-[`setfill`](#setfill)\
-[`setiosflags`](#setiosflags)\
-[`setprecision`](#setprecision)\
-[`setw`](#setw)
-
 ## <a name="iomanip_get_money"></a> `get_money`
 
 Extracts a monetary value from a stream using the specified format, and returns the value in a parameter.

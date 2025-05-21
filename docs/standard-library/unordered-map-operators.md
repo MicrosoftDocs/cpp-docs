@@ -7,11 +7,6 @@ ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
 ---
 # `<unordered_map>` operators
 
-[unordered_map::operator!=](#op_neq)\
-[unordered_map::operator==](#op_eq_eq)\
-[unordered_multimap::operator!=](#op_neq_multimap)\
-[unordered_multimap::operator==](#op_eq_eq_multimap)
-
 ## <a name="op_neq"></a> operator!=
 
 Tests whether the [unordered_map](../standard-library/unordered-map-class.md) object on the left side of the operator is not equal to the unordered_map object on the right side.

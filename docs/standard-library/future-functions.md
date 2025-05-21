@@ -7,12 +7,6 @@ helpviewer_keywords: ["std::async [C++]", "std::future_category [C++]", "std::ma
 ---
 # `<future>` functions
 
-[`async`](#async)\
-[`future_category`](#future_category)\
-[`make_error_code`](#make_error_code)\
-[`make_error_condition`](#make_error_condition)\
-[`swap`](#swap)|
-
 ## <a name="async"></a> `async`
 
 Represents an *asynchronous provider*.

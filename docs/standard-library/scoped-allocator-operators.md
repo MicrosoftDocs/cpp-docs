@@ -7,9 +7,6 @@ ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
 ---
 # `<scoped_allocator>` operators
 
-[operator!=](#op_neq)\
-[operator==](#op_eq_eq)
-
 ## <a name="op_neq"></a> operator!=
 
 Tests two `scoped_allocator_adaptor` objects for inequality.

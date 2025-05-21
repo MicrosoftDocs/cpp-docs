@@ -6,9 +6,6 @@ ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
 ---
 # C. OpenMP C and C++ grammar
 
-[C.1 Notation](#c1-notation)<br/>
-[C.2 Rules](#c2-rules)
-
 ## C.1 Notation
 
 The grammar rules consist of the name for a non-terminal, followed by a colon, followed by replacement alternatives on separate lines.

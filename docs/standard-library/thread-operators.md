@@ -8,14 +8,6 @@ helpviewer_keywords: ["std::operator!= (thread)", "std::operator> (thread)", "st
 ---
 # `<thread>` operators
 
-[operator!=](#op_neq)\
-[`operator>`](#op_gt)\
-[`operator>=`](#op_gt_eq)\
-[`operator<`](#op_lt)\
-[`operator<<`](#op_lt_lt)\
-[`operator<=`](#op_lt_eq)\
-[operator==](#op_eq_eq)
-
 ## <a name="op_gt_eq"></a> `operator>=`
 
 Determines whether one `thread::id` object is greater than or equal to another.

@@ -7,9 +7,6 @@ ms.assetid: 2ec4dc52-a01f-4654-bd65-dd5288777c48
 ---
 # `<ostream>` typedefs
 
-[ostream](#ostream)\
-[wostream](#wostream)
-
 ## <a name="ostream"></a> ostream
 
 Creates a type from basic_ostream that is specialized on **`char`** and `char_traits` specialized on **`char`**.
