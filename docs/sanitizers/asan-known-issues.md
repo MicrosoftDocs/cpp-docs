@@ -81,9 +81,9 @@ Thread local variables (global variables declared with `__declspec(thread)` or `
 
 ## Loading and unloading DLLs
 
-If all of the code in a process isn't compiled with `/fsanitize=address`, ASan may not be able to diagnose all memory safety errors. The most common example is when a DLL is compiled with ASan but is loaded into a process that contains code that wasn't compiled with ASan. In this case, ASan attempts to categorize allocations that took place prior to ASan initialization. But if those allocations are reallocated, moved, and so on, ASan tries to own and monitor the lifetime of memory loads and stores.
+If all of the code in a process isn't compiled with `/fsanitize=address`, ASan may not be able to diagnose all memory safety errors. The most common example is when a DLL is compiled with ASan but is loaded into a process that contains code that wasn't compiled with ASan. In this case, ASan attempts to categorize allocations that took place prior to ASan initialization. Once those allocations are reallocated, ASan tries to own and monitor the lifetime of the memory.
 
-If all of the DLLs that were compiled with ASan are unloaded from the process before the process ends (as is the case with test drivers such as [TAEF](/windows-hardware/drivers/taef/))), there may be crashes due to dangling references to intercepted functions such as `memcmp`, `memcpy`, `memmove`, and so on.
+If all of the DLLs that were compiled with ASan are unloaded from the process before the process ends, there may be crashes due to dangling references to intercepted functions such as `memcmp`, `memcpy`, `memmove`, and so on. For the best results, compile all modules under test with `/fsanitize=address`, or do not unload modules compiled with ASan after they enter the process.
 
 Please report any bugs to our [Developer Community](https://aka.ms/feedback/report?space=62).
 
