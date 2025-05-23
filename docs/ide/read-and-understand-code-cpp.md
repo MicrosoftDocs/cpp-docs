@@ -1,7 +1,7 @@
 ---
 title: "Read and understand C++ code in Visual Studio"
 description: "Use the C++ code editor in Visual Studio to format, and understand your code."
-ms.date: "05/28/2019"
+ms.date: 05/28/2019
 ---
 # Read and understand C++ code in Visual Studio
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: istream_iterator Class"
 title: "istream_iterator Class"
+description: "Learn more about: istream_iterator Class"
 ms.date: 06/15/2022
 f1_keywords: ["iterator/std::istream_iterator", "iterator/std::istream_iterator::char_type", "iterator/std::istream_iterator::istream_type", "iterator/std::istream_iterator::traits_type"]
 helpviewer_keywords: ["std::istream_iterator [C++]", "std::istream_iterator [C++], char_type", "std::istream_iterator [C++], istream_type", "std::istream_iterator [C++], traits_type"]
-ms.assetid: fb52a8cd-7f71-48d1-b73e-4b064e2a8d16
 ms.custom: devdivchpfy22
 ---
 
