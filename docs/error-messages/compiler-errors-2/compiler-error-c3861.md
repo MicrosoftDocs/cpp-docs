@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3861"
 title: "Compiler Error C3861"
+description: "Learn more about: Compiler Error C3861"
 ms.date: 06/29/2022
 f1_keywords: ["C3861"]
 helpviewer_keywords: ["C3861"]
-ms.assetid: 0a1eee30-b3db-41b1-b1e5-35949c3924d7
 ---
 # Compiler Error C3861
 
