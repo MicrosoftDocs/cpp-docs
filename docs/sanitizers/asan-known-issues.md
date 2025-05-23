@@ -28,7 +28,7 @@ The following options and functionality are incompatible with [`/fsanitize=addre
 
 The MSVC standard library (STL) makes partial use of the AddressSanitizer and provides other code safety checks. For more information, see [container-overflow error](./error-container-overflow.md).
 
-When annotations are disabled, or in versions of the Standard Library that don't support them, AddressSanitizer exceptions raised in STL code still identify real bugs. However, they are more precise if annoations are enabled and you use a version of the Standard Library that supports them.
+When annotations are disabled, or in versions of the Standard Library that don't support them, AddressSanitizer exceptions raised in STL code still identify real bugs. However, they are more precise if annotations are enabled and you use a version of the Standard Library that supports them.
 
 This example demonstrates the lack of precision and the benefits of enabling annotations:
 
@@ -79,7 +79,7 @@ As a workaround, create a *`Directory.Build.props`* file in the root of your pro
 
 Thread local variables (global variables declared with `__declspec(thread)` or `thread_local`) aren't protected by AddressSanitizer. This limitation isn't specific to Windows or Microsoft Visual C++, but is a general limitation.
 
-## Loading and unloading DLLs
+## Issues with partially sanitized executables
 
 If all of the code in a process isn't compiled with `/fsanitize=address`, ASan may not be able to diagnose all memory safety errors. The most common example is when a DLL is compiled with ASan but is loaded into a process that contains code that wasn't compiled with ASan. In this case, ASan attempts to categorize allocations that took place prior to ASan initialization. Once those allocations are reallocated, ASan tries to own and monitor the lifetime of the memory.
 
