@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Styles Used by MFC"
 title: "Styles Used by MFC"
-ms.date: "06/20/2018"
+description: "Learn more about: Styles Used by MFC"
+ms.date: 06/20/2018
 helpviewer_keywords: ["button objects (CButton), button styles", "button styles [MFC]", "buttons, MFC toolbars", "combo boxes [MFC], styles", "edit styles [MFC]", "extended window styles [MFC]", "frame windows [MFC], styles", "list boxes [MFC], styles", "message-box styles [MFC]", "scroll bars [MFC], styles", "scroll-bar styles [MFC]", "static styles [MFC]", "styles [MFC], button objects", "styles [MFC], MFC", "styles [MFC], windows", "styles [MFC]", "window styles, in MFC", "window styles [MFC]", "BS_3STATE constant [MFC]", "BS_AUTO3STATE constant [MFC]", "BS_AUTOCHECKBOX constant [MFC]", "BS_AUTORADIOBUTTON constant [MFC]", "BS_BITMAP constant [MFC]", "BS_BOTTOM constant [MFC]", "BS_CENTER constant [MFC]", "BS_CHECKBOX constant [MFC]", "BS_DEFPUSHBUTTON constant [MFC]", "BS_FLAT constant [MFC]", "BS_GROUPBOX constant [MFC]", "BS_ICON constant [MFC]", "BS_LEFT constant [MFC]", "BS_LEFTTEXT constant [MFC]", "BS_MULTILINE constant [MFC]", "BS_NOTIFY constant [MFC]", "BS_OWNERDRAW constant [MFC]", "BS_PUSHBUTTON constant [MFC]", "BS_PUSHLIKE constant [MFC]", "BS_RADIOBUTTON constant [MFC]", "BS_RIGHT constant [MFC]", "BS_RIGHTBUTTON constant [MFC]", "BS_TEXT constant [MFC]", "BS_TOP constant [MFC]", "BS_USERBUTTON constant [MFC]", "BS_VCENTER constant [MFC]", "CBS_AUTOHSCROLL constant [MFC]", "CBS_DISABLENOSCROLL constant [MFC]", "CBS_DROPDOWN constant [MFC]", "CBS_DROPDOWNLIST constant [MFC]", "CBS_HASSTRINGS constant [MFC]", "CBS_LOWERCASE constant [MFC]", "CBS_NOINTEGRALHEIGHT constant [MFC]", "CBS_OEMCONVERT constant [MFC]", "CBS_OWNERDRAWFIXED constant [MFC]", "CBS_OWNERDRAWVARIABLE constant [MFC]", "CBS_SIMPLE constant [MFC]", "CBS_SORT constant [MFC]", "CBS_UPPERCASE constant [MFC]", "ES_AUTOHSCROLL constant [MFC]", "ES_AUTOVSCROLL constant [MFC]", "ES_CENTER constant [MFC]", "ES_LEFT constant [MFC]", "ES_LOWERCASE constant [MFC]", "ES_MULTILINE constant [MFC]", "ES_NOHIDESEL constant [MFC]", "ES_NUMBER constant [MFC]", "ES_OEMCONVERT constant [MFC]", "ES_PASSWORD constant [MFC]", "ES_READONLY constant [MFC]", "ES_RIGHT constant [MFC]", "ES_UPPERCASE constant [MFC]", "ES_WANTRETURN constant [MFC]", "FWS_ADDTOTITLE constant [MFC]", "FWS_PREFIXTITLE constant [MFC]", "FWS_SNAPTOBARS constant [MFC]", "LBS_DISABLENOSCROLL constant [MFC]", "LBS_EXTENDEDSEL constant [MFC]", "LBS_HASSTRINGS constant [MFC]", "LBS_MULTICOLUMN constant [MFC]", "LBS_MULTIPLESEL constant [MFC]", "LBS_NODATA constant [MFC]", "LBS_NOINTEGRALHEIGHT constant [MFC]", "LBS_NOREDRAW constant [MFC]", "LBS_NOSEL constant [MFC]", "LBS_NOTIFY constant [MFC]", "LBS_OWNERDRAWFIXED constant [MFC]", "LBS_OWNERDRAWVARIABLE constant [MFC]", "LBS_SORT constant [MFC]", "LBS_STANDARD constant [MFC]", "LBS_USETABSTOPS constant [MFC]", "LBS_WANTKEYBOARDINPUT constant [MFC]", "MB_ABORTRETRYOVERWRITE constant [MFC]", "MB_APPLMODAL constant [MFC]", "MB_DEFBUTTON1 constant [MFC]", "MB_DEFBUTTON2 constant [MFC]", "MB_DEFBUTTON3 constant [MFC]", "MB_ICONEXCLAMATION constant [MFC]", "MB_ICONINFORMATION constant [MFC]", "MB_ICONQUESTION constant [MFC]", "MB_ICONSTOP constant [MFC]", "MB_OK constant [MFC]", "MB_OKCANCEL constant [MFC]", "MB_RETRYCANCEL constant [MFC]", "MB_SYSTEMMODAL constant [MFC]", "MB_TASKMODAL constant [MFC]", "MB_YESNO constant [MFC]", "MB_YESNOCANCEL constant [MFC]", "SBS_BOTTOMALIGN constant [MFC]", "SBS_HORZ constant [MFC]", "SBS_LEFTALIGN constant [MFC]", "SBS_RIGHTALIGN constant [MFC]", "SBS_SIZEBOX constant [MFC]", "SBS_SIZEBOXBOTTOMRIGHTALIGN constant [MFC]", "SBS_SIZEBOXTOPLEFTALIGN constant [MFC]", "SBS_TOPALIGN constant [MFC]", "SBS_VERT constant [MFC]", "SS_BITMAP constant [MFC]", "SS_BLACKFRAME constant [MFC]", "SS_BLACKRECT constant [MFC]", "SS_CENTER constant [MFC]", "SS_CENTERIMAGE constant [MFC]", "SS_ENDELLIPSIS constant [MFC]", "SS_ENHMETAFILE constant [MFC]", "SS_ETCHEDFRAME constant [MFC]", "SS_ETCHEDHORZ constant [MFC]", "SS_ETCHEDVERT constant [MFC]", "SS_GRAYFRAME constant [MFC]", "SS_GRAYRECT constant [MFC]", "SS_ICON constant [MFC]", "SS_LEFT constant [MFC]", "SS_LEFTNOWORDWRAP constant [MFC]", "SS_NOPREFIX constant [MFC]", "SS_NOTIFY constant [MFC]", "SS_OWNERDRAW constant [MFC]", "SS_PATHELLIPSIS constant [MFC]", "SS_REALSIZEIMAGE constant [MFC]", "SS_RIGHT constant [MFC]", "SS_RIGHTJUST constant [MFC]", "SS_SIMPLE constant [MFC]", "SS_SUNKEN constant [MFC]", "SS_USERITEM constant [MFC]", "SS_WHITEFRAME constant [MFC]", "SS_WHITERECT constant [MFC]", "SS_WORDELLIPSIS constant [MFC]", "WS_BORDER constant [MFC]", "WS_CAPTION constant [MFC]", "WS_CHILD constant [MFC]", "WS_CHILDWINDOW constant [MFC]", "WS_CLIPCHILDREN constant [MFC]", "WS_CLIPSIBLINGS constant [MFC]", "WS_DISABLED constant [MFC]", "WS_DLGFRAME constant [MFC]", "WS_GROUP constant [MFC]", "WS_HSCROLL constant [MFC]", "WS_ICONIC constant [MFC]", "WS_MAXIMIZE constant [MFC]", "WS_MAXIMIZEBOX constant [MFC]", "WS_MINIMIZE constant [MFC]", "WS_MINIMIZEBOX constant [MFC]", "WS_OVERLAPPED constant [MFC]", "WS_OVERLAPPEDWINDOW constant [MFC]", "WS_POPUP constant [MFC]", "WS_POPUPWINDOW constant [MFC]", "WS_SIZEBOX constant [MFC]", "WS_SYSMENU constant [MFC]", "WS_TABSTOP constant [MFC]", "WS_THICKFRAME constant [MFC]", "WS_TILED constant [MFC]", "WS_TILEDWINDOW constant [MFC]", "WS_VISIBLE constant [MFC]", "WS_VSCROLL constant [MFC]", "WS_EX_ACCEPTFILES constant [MFC]", "WS_EX_APPWINDOW constant [MFC]", "WS_EX_CLIENTEDGE constant [MFC]", "WS_EX_CONTEXTHELP constant [MFC]", "WS_EX_CONTROLPARENT constant [MFC]", "WS_EX_DLGMODALFRAME constant [MFC]", "WS_EX_LEFT constant [MFC]", "WS_EX_LEFTSCROLLBAR constant [MFC]", "WS_EX_LTRREADING constant [MFC]", "WS_EX_MDICHILD constant [MFC]", "WS_EX_NOPARENTNOTIFY constant [MFC]", "WS_EX_OVERLAPPEDWINDOW constant [MFC]", "WS_EX_PALETTEWINDOW constant [MFC]", "WS_EX_RIGHT constant [MFC]", "WS_EX_RIGHTSCROLLBAR constant [MFC]", "WS_EX_RTLREADING constant [MFC]", "WS_EX_STATICEDGE constant [MFC]", "WS_EX_TOOLWINDOW constant [MFC]", "WS_EX_TOPMOST constant [MFC]", "WS_EX_TRANSPARENT constant [MFC]", "WS_EX_WINDOWEDGE constant [MFC]"]
-ms.assetid: d3b9af37-31b5-4c97-a8ad-189fd724b04c
 ---
 # Styles Used by MFC
 
@@ -11,7 +10,7 @@ Use the following style flags to specify window or control appearance and behavi
 
 ## <a name="button-styles"></a> Button styles
 
-Button styles apply to [`CButton Class`](../../mfc/reference/cbutton-class.md) objects, such as radio buttons, check boxes and pushbuttons. Specify a combination of styles in the *`dwStyle`* parameter of [`CButton::Create`](../../mfc/reference/cbutton-class.md#create). For more information on button styles in Windows, see [Button Styles (Windows)](/windows/win32/Controls/button-styles).
+Button styles apply to [`CButton Class`](cbutton-class.md) objects, such as radio buttons, check boxes and pushbuttons. Specify a combination of styles in the *`dwStyle`* parameter of [`CButton::Create`](cbutton-class.md#create). For more information on button styles in Windows, see [Button Styles (Windows)](/windows/win32/Controls/button-styles).
 
 ### Button types
 
@@ -24,8 +23,8 @@ The following table lists button types. You can optionally choose one of the fol
 |`BS_AUTOCHECKBOX`|Creates a check box button with two states: `BST_CHECKED` and `BST_UNCHECKED`. Clicking on the button sends a `BN_CLICKED` notification to the owner window and changes the state of the button. By default, associated text is displayed to the right of the check box. To display text to the left of the check box, use the `BS_LEFTTEXT` or `BS_RIGHTBUTTON` style.|
 |`BS_AUTORADIOBUTTON`|Creates a radio button with two states: `BST_CHECKED` and `BST_UNCHECKED`. Radio buttons are usually used in groups, with each group having a maximum of one checked option at a time. Clicking on the button sends a `BN_CLICKED` notification to the owner window, sets the state of the clicked radio button to `BST_CHECKED`, and sets the states of all other radio buttons in the button group to `BST_UNCHECKED`. By default, associated text is displayed to the right of the radio button. To display text to the left of the radio button, use the `BS_LEFTTEXT` or `BS_RIGHTBUTTON` style.|
 |`BS_CHECKBOX`|Creates a check box button with two states: `BST_CHECKED` and `BST_UNCHECKED`. Clicking on the button sends a `BN_CLICKED` notification to the owner window but does not change the state of the button. By default, associated text is displayed to the right of the check box. To display text to the left of the check box, use the `BS_LEFTTEXT` or `BS_RIGHTBUTTON` style.|
-|`BS_COMMANDLINK`|Creates a command link button. A command link button is a command button specific to Windows Vista that displays a green arrow to the left of the main text and a note below the main text. You can set the note text using [`CButton::SetNote`](../../mfc/reference/cbutton-class.md#setnote).|
-|`BS_DEFCOMMANDLINK`|Creates a command link button. A command link button is a command button specific to Windows Vista that displays a green arrow to the left of the main text and a note below the main text. You can set the note text using [`CButton::SetNote`](../../mfc/reference/cbutton-class.md#setnote). If the button is in a dialog box, pressing the ENTER key sends a `BN_CLICKED` notification to the dialog box even when the button does not have the input focus.|
+|`BS_COMMANDLINK`|Creates a command link button. A command link button is a command button specific to Windows Vista that displays a green arrow to the left of the main text and a note below the main text. You can set the note text using [`CButton::SetNote`](cbutton-class.md#setnote).|
+|`BS_DEFCOMMANDLINK`|Creates a command link button. A command link button is a command button specific to Windows Vista that displays a green arrow to the left of the main text and a note below the main text. You can set the note text using [`CButton::SetNote`](cbutton-class.md#setnote). If the button is in a dialog box, pressing the ENTER key sends a `BN_CLICKED` notification to the dialog box even when the button does not have the input focus.|
 |`BS_DEFPUSHBUTTON`|Creates a command button that has a heavy black border. If the button is in a dialog box, pressing the ENTER key sends a `BN_CLICKED` notification to the dialog box even when the button does not have the input focus.|
 |`BS_DEFSPLITBUTTON`|Creates a split button. A split button is a command button specific to Windows Vista that contains a button adjacent to a drop-down arrow. When you click the button, the default command is executed. When you click the drop-down arrow, a menu of additional commands appears. If the split button is in a dialog box, pressing the ENTER key sends a `BN_CLICKED` notification to the dialog box even when the button does not have the input focus|
 |`BS_GROUPBOX`|Creates a rectangle in which other buttons can be grouped. Text associated with this style is displayed in the rectangle's upper-left corner.|
@@ -100,7 +99,7 @@ The following combo-box styles are available in MFC. For more information about 
 
 ## <a name="edit-styles"></a> Edit styles
 
-Edit styles apply to [`CEdit` Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CEdit::Create`](../../mfc/reference/cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles).
+Edit styles apply to [`CEdit` Class](cedit-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CEdit::Create`](cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -121,17 +120,17 @@ Edit styles apply to [`CEdit` Class](../../mfc/reference/cedit-class.md) objects
 
 ## <a name="frame-window-styles-mfc"></a> Frame-window styles
 
-Frame-window styles apply to [`CFrameWnd` Class](../../mfc/reference/cframewnd-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CFrameWnd::Create`](../../mfc/reference/cframewnd-class.md#create).
+Frame-window styles apply to [`CFrameWnd` Class](cframewnd-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CFrameWnd::Create`](cframewnd-class.md#create).
 
 |Style|Description|
 |-----------|-----------------|
 |`FWS_ADDTOTITLE`|Specifies information to append to the end of a frame window title. For example, "Microsoft Draw - Drawing in Document1". You can specify the strings displayed in the Document Template Strings tab in the Application Wizard. If you need to turn this option off, override the `CWnd::PreCreateWindow` member function.|
 |`FWS_PREFIXTITLE`|Shows the document name before the application name in a frame window title. For example, "Document - WordPad". You can specify the strings displayed in the Document Template Strings tab in the Application Wizard. If you need to turn this option off, override the `CWnd::PreCreateWindow` member function.|
-|FWS_SNAPTOBARS|Controls sizing of the frame window that encloses a control bar when it is in a floating window rather than docked to a frame window. This style sizes the window to fit the control bar.|
+|`FWS_SNAPTOBARS`|Controls sizing of the frame window that encloses a control bar when it is in a floating window rather than docked to a frame window. This style sizes the window to fit the control bar.|
 
 ## <a name="list-box-styles"></a> List-box styles
 
-List-box styles apply to [`CListBox` Class](../../mfc/reference/clistbox-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CListBox::Create`](../../mfc/reference/clistbox-class.md#create). For more information about list box styles in Windows, see [List Box Styles (Windows)](/windows/win32/Controls/list-box-styles).
+List-box styles apply to [`CListBox` Class](clistbox-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CListBox::Create`](clistbox-class.md#create). For more information about list box styles in Windows, see [List Box Styles (Windows)](/windows/win32/Controls/list-box-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -154,7 +153,7 @@ List-box styles apply to [`CListBox` Class](../../mfc/reference/clistbox-class.m
 
 ## <a name="message-box-styles"></a> Message-box styles
 
-Message-box styles apply to [`AfxMessageBox`](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the *`nType`* parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [`MessageBox` Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox).
+Message-box styles apply to [`AfxMessageBox`](cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the *`nType`* parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [`MessageBox` Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox).
 
 The following message-box styles are available.
 
@@ -196,7 +195,7 @@ The following message-box styles are available.
 
 ## <a name="scroll-bar-styles"></a> Scroll-bar styles
 
-Scroll-bar styles apply to [`CScrollBar` Class](../../mfc/reference/cscrollbar-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CScrollBar::Create`](../../mfc/reference/cscrollbar-class.md#create). For more information about scroll bar control styles in Windows, see [Scroll Bar Control Styles (Windows)](/windows/win32/Controls/scroll-bar-control-styles).
+Scroll-bar styles apply to [`CScrollBar` Class](cscrollbar-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CScrollBar::Create`](cscrollbar-class.md#create). For more information about scroll bar control styles in Windows, see [Scroll Bar Control Styles (Windows)](/windows/win32/Controls/scroll-bar-control-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -213,7 +212,7 @@ Scroll-bar styles apply to [`CScrollBar` Class](../../mfc/reference/cscrollbar-c
 
 ## <a name="static-styles"></a> Static styles
 
-Static styles apply to [`CStatic` Class](../../mfc/reference/cstatic-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CStatic::Create`](../../mfc/reference/cstatic-class.md#create). For more information about static control styles in Windows, see [Static Control Styles (Windows)](/windows/win32/Controls/static-control-styles).
+Static styles apply to [`CStatic` Class](cstatic-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CStatic::Create`](cstatic-class.md#create). For more information about static control styles in Windows, see [Static Control Styles (Windows)](/windows/win32/Controls/static-control-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -247,7 +246,7 @@ Static styles apply to [`CStatic` Class](../../mfc/reference/cstatic-class.md) o
 
 ## <a name="window-styles"></a> Window styles
 
-Window styles apply to [`CWnd` Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [`CWnd::Create`](../../mfc/reference/cwnd-class.md#create) or [`CWnd::CreateEx`](../../mfc/reference/cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](/windows/win32/winmsg/window-styles).
+Window styles apply to [`CWnd` Class](cwnd-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [`CWnd::Create`](cwnd-class.md#create) or [`CWnd::CreateEx`](cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](/windows/win32/winmsg/window-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -281,7 +280,7 @@ Window styles apply to [`CWnd` Class](../../mfc/reference/cwnd-class.md) objects
 
 ## <a name="extended-window-styles"></a> Extended window styles
 
-Extended window styles apply to [`CWnd` Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *`dwExStyle`* parameter of [`CWnd::CreateEx`](../../mfc/reference/cwnd-class.md#createex). For more information about extended window styles in Windows, see [Extended Window Styles (Windows)](/windows/win32/winmsg/extended-window-styles).
+Extended window styles apply to [`CWnd` Class](cwnd-class.md) objects. Specify a combination of styles in the *`dwExStyle`* parameter of [`CWnd::CreateEx`](cwnd-class.md#createex). For more information about extended window styles in Windows, see [Extended Window Styles (Windows)](/windows/win32/winmsg/extended-window-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -310,21 +309,21 @@ Extended window styles apply to [`CWnd` Class](../../mfc/reference/cwnd-class.md
 
 ## See also
 
-[MFC Class Overview](../../mfc/class-library-overview.md)<br/>
-[`CWnd::Create`](../../mfc/reference/cwnd-class.md#create)<br/>
-[`CWnd::CreateEx`](../../mfc/reference/cwnd-class.md#createex)<br/>
-[`CEdit::Create`](../../mfc/reference/cedit-class.md#create)<br/>
-[`CScrollBar::Create`](../../mfc/reference/cscrollbar-class.md#create)<br/>
-[`CStatic::Create`](../../mfc/reference/cstatic-class.md#create)<br/>
-[`AfxMessageBox`](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
-[`CreateWindow`](/windows/win32/api/winuser/nf-winuser-createwindoww)<br/>
-[`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw)<br/>
-[Button Styles (Windows)](/windows/win32/Controls/button-styles)<br/>
-[Combo Box Styles (Windows)](/windows/win32/Controls/combo-box-styles)<br/>
-[Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles)<br/>
-[List Box Styles (Windows)](/windows/win32/Controls/list-box-styles)<br/>
-[`MessageBox` Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox)<br/>
-[Scroll Bar Control Styles (Windows)](/windows/win32/Controls/scroll-bar-control-styles)<br/>
-[Static Control Styles (Windows)](/windows/win32/Controls/static-control-styles)<br/>
-[Window Styles (Windows)](/windows/win32/winmsg/window-styles)<br/>
+[MFC Class Overview](../class-library-overview.md)\
+[`CWnd::Create`](cwnd-class.md#create)\
+[`CWnd::CreateEx`](cwnd-class.md#createex)\
+[`CEdit::Create`](cedit-class.md#create)\
+[`CScrollBar::Create`](cscrollbar-class.md#create)\
+[`CStatic::Create`](cstatic-class.md#create)\
+[`AfxMessageBox`](cstring-formatting-and-message-box-display.md#afxmessagebox)\
+[`CreateWindow`](/windows/win32/api/winuser/nf-winuser-createwindoww)\
+[`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw)\
+[Button Styles (Windows)](/windows/win32/Controls/button-styles)\
+[Combo Box Styles (Windows)](/windows/win32/Controls/combo-box-styles)\
+[Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles)\
+[List Box Styles (Windows)](/windows/win32/Controls/list-box-styles)\
+[`MessageBox` Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox)\
+[Scroll Bar Control Styles (Windows)](/windows/win32/Controls/scroll-bar-control-styles)\
+[Static Control Styles (Windows)](/windows/win32/Controls/static-control-styles)\
+[Window Styles (Windows)](/windows/win32/winmsg/window-styles)\
 [Extended Window Styles (Windows)](/windows/win32/winmsg/extended-window-styles)

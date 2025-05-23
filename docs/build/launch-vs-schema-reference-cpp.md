@@ -55,7 +55,7 @@ To create the file, right-click on an executable file in **Solution Explorer** a
 | `debugServerArgs` | string | Optional debug server args. Defaults to null. |
 | `filterStderr` | boolean | Search stderr stream for server-started pattern and log stderr to debug output. Defaults to **`false`**. |
 | `coreDumpPath` | string | Optional full path to a core dump file for the specified program. Defaults to null. |
-| externalConsole | boolean | If true, a console is launched for the debuggee. If **`false`**, no console is launched. The default for this setting is **`false`**. This option is ignored in some cases for technical reasons. |
+| `externalConsole` | boolean | If true, a console is launched for the debuggee. If **`false`**, no console is launched. The default for this setting is **`false`**. This option is ignored in some cases for technical reasons. |
 | `pipeTransport` | string | When present, this value tells the debugger to connect to a remote computer using another executable as a pipe that will relay standard input/output between Visual Studio and the MI-enabled debugger (such as gdb). Allowed values: one or more [Pipe Transport Options](#pipe_transport_options). |
 
 ## debugInfo macros
