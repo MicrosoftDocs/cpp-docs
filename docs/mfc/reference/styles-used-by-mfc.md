@@ -309,21 +309,21 @@ Extended window styles apply to [`CWnd` Class](cwnd-class.md) objects. Specify a
 
 ## See also
 
-[MFC Class Overview](../class-library-overview.md)<br/>
-[`CWnd::Create`](cwnd-class.md#create)<br/>
-[`CWnd::CreateEx`](cwnd-class.md#createex)<br/>
-[`CEdit::Create`](cedit-class.md#create)<br/>
-[`CScrollBar::Create`](cscrollbar-class.md#create)<br/>
-[`CStatic::Create`](cstatic-class.md#create)<br/>
-[`AfxMessageBox`](cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
-[`CreateWindow`](/windows/win32/api/winuser/nf-winuser-createwindoww)<br/>
-[`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw)<br/>
-[Button Styles (Windows)](/windows/win32/Controls/button-styles)<br/>
-[Combo Box Styles (Windows)](/windows/win32/Controls/combo-box-styles)<br/>
-[Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles)<br/>
-[List Box Styles (Windows)](/windows/win32/Controls/list-box-styles)<br/>
-[`MessageBox` Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox)<br/>
-[Scroll Bar Control Styles (Windows)](/windows/win32/Controls/scroll-bar-control-styles)<br/>
-[Static Control Styles (Windows)](/windows/win32/Controls/static-control-styles)<br/>
-[Window Styles (Windows)](/windows/win32/winmsg/window-styles)<br/>
+[MFC Class Overview](../class-library-overview.md)\
+[`CWnd::Create`](cwnd-class.md#create)\
+[`CWnd::CreateEx`](cwnd-class.md#createex)\
+[`CEdit::Create`](cedit-class.md#create)\
+[`CScrollBar::Create`](cscrollbar-class.md#create)\
+[`CStatic::Create`](cstatic-class.md#create)\
+[`AfxMessageBox`](cstring-formatting-and-message-box-display.md#afxmessagebox)\
+[`CreateWindow`](/windows/win32/api/winuser/nf-winuser-createwindoww)\
+[`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw)\
+[Button Styles (Windows)](/windows/win32/Controls/button-styles)\
+[Combo Box Styles (Windows)](/windows/win32/Controls/combo-box-styles)\
+[Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles)\
+[List Box Styles (Windows)](/windows/win32/Controls/list-box-styles)\
+[`MessageBox` Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox)\
+[Scroll Bar Control Styles (Windows)](/windows/win32/Controls/scroll-bar-control-styles)\
+[Static Control Styles (Windows)](/windows/win32/Controls/static-control-styles)\
+[Window Styles (Windows)](/windows/win32/winmsg/window-styles)\
 [Extended Window Styles (Windows)](/windows/win32/winmsg/extended-window-styles)
