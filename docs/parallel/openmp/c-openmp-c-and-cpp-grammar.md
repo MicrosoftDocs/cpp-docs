@@ -1,13 +1,9 @@
 ---
-description: "Learn more about: C. OpenMP C and C++ grammar"
 title: "C. OpenMP C and C++ grammar"
-ms.date: "01/16/2019"
-ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
+description: "Learn more about: C. OpenMP C and C++ grammar"
+ms.date: 01/16/2019
 ---
 # C. OpenMP C and C++ grammar
-
-[C.1 Notation](#c1-notation)<br/>
-[C.2 Rules](#c2-rules)
 
 ## C.1 Notation
 

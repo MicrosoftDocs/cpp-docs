@@ -1,14 +1,10 @@
 ---
-description: "Learn more about: <ostream> typedefs"
 title: "<ostream> typedefs"
-ms.date: "11/04/2016"
+description: "Learn more about: <ostream> typedefs"
+ms.date: 11/04/2016
 f1_keywords: ["iosfwd/std::ostream", "iosfwd/std::wostream"]
-ms.assetid: 2ec4dc52-a01f-4654-bd65-dd5288777c48
 ---
 # `<ostream>` typedefs
-
-[ostream](#ostream)\
-[wostream](#wostream)
 
 ## <a name="ostream"></a> ostream
 

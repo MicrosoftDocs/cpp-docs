@@ -1,13 +1,10 @@
 ---
-description: "Learn more about: <sstream> functions"
 title: "<sstream> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <sstream> functions"
+ms.date: 11/04/2016
 f1_keywords: ["sstream/std::swap"]
-ms.assetid: bc9607e8-7c6b-44ef-949b-19e917b450ad
 ---
 # `<sstream>` functions
-
-[swap](#sstream_swap)
 
 ## <a name="sstream_swap"></a> swap
 

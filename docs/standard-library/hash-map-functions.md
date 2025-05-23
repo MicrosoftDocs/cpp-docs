@@ -1,14 +1,10 @@
 ---
-description: "Learn more about: <hash_map> functions"
 title: "<hash_map> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <hash_map> functions"
+ms.date: 11/04/2016
 f1_keywords: ["hash_map/std::swap", "hash_map/std::swap (hash_map)"]
-ms.assetid: 28748cd0-71f7-41b9-b068-579183645fba
 ---
 # `<hash_map>` functions
-
-[swap](#swap)\
-[swap (hash_map)](#swap_hash_map)
 
 ## <a name="swap_hash_map"></a> swap (hash_map)
 

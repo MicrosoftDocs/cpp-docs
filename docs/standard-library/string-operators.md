@@ -7,16 +7,6 @@ helpviewer_keywords: ["std::operator!= (string)", "std::operator> (string)", "st
 ---
 # `<string>` operators
 
-[operator!=](#op_neq)\
-[`operator>`](#op_gt)\
-[`operator>>`](#op_gt_gt)\
-[`operator>=`](#op_gt_eq)\
-[`operator<`](#op_lt)\
-[`operator<<`](#op_lt_lt)\
-[`operator<=`](#op_lt_eq)\
-[operator+](#op_add)\
-[operator==](#op_eq_eq)
-
 ## <a name="op_add"></a> operator+
 
 Concatenates two string objects.
