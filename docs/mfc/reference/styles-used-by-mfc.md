@@ -127,7 +127,7 @@ Frame-window styles apply to [`CFrameWnd` Class](../../mfc/reference/cframewnd-c
 |-----------|-----------------|
 |`FWS_ADDTOTITLE`|Specifies information to append to the end of a frame window title. For example, "Microsoft Draw - Drawing in Document1". You can specify the strings displayed in the Document Template Strings tab in the Application Wizard. If you need to turn this option off, override the `CWnd::PreCreateWindow` member function.|
 |`FWS_PREFIXTITLE`|Shows the document name before the application name in a frame window title. For example, "Document - WordPad". You can specify the strings displayed in the Document Template Strings tab in the Application Wizard. If you need to turn this option off, override the `CWnd::PreCreateWindow` member function.|
-|FWS_SNAPTOBARS|Controls sizing of the frame window that encloses a control bar when it is in a floating window rather than docked to a frame window. This style sizes the window to fit the control bar.|
+|`FWS_SNAPTOBARS`|Controls sizing of the frame window that encloses a control bar when it is in a floating window rather than docked to a frame window. This style sizes the window to fit the control bar.|
 
 ## <a name="list-box-styles"></a> List-box styles
 
