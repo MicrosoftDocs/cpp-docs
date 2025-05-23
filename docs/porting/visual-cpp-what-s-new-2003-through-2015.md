@@ -233,7 +233,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Adjacent string literals**
 
-   Similarly to the previous, due to related changes in string parsing, adjacent string literals (either wide or narrow character string literals) without any whitespace were interpreted as a single concatenated string in previous releases of Visaul C++. In Visual Studio 2015, you must now add whitespace between the two strings. For example, the following code must be changed:
+   Similarly to the previous, due to related changes in string parsing, adjacent string literals (either wide or narrow character string literals) without any whitespace were interpreted as a single concatenated string in previous releases of Visual C++. In Visual Studio 2015, you must now add whitespace between the two strings. For example, the following code must be changed:
 
    ```cpp
     char * str = "abc""def";

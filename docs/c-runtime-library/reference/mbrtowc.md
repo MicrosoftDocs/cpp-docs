@@ -100,7 +100,7 @@ int Sample(char* szIn, wchar_t* wcOut, int nMax)
     szLocal = setlocale(LC_ALL, "French_Canada.1252");
     if (!szLocal)
     {
-        printf("The fuction setlocale(LC_ALL, \"French_Canada.1252\") failed!\n");
+        printf("The function setlocale(LC_ALL, \"French_Canada.1252\") failed!\n");
         return 1;
     }
 
@@ -110,7 +110,7 @@ int Sample(char* szIn, wchar_t* wcOut, int nMax)
     // from a previous call to setlocale.
     if (_setmbcp(_MB_CP_SBCS) == -1)
     {
-        printf("The fuction _setmbcp(_MB_CP_SBCS) failed!");
+        printf("The function _setmbcp(_MB_CP_SBCS) failed!");
         return 1;
     }
 

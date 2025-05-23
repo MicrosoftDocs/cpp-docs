@@ -7,7 +7,7 @@ api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvc
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["atanhl", "atanhf", "atanh"]
-helpviewer_keywords: ["atanhf function", "atanhl function", "atanh funciton"]
+helpviewer_keywords: ["atanhf function", "atanhl function", "atanh function"]
 ms.assetid: 83a43b5b-2580-4461-854f-dc84236d9f32
 ---
 # `atanh`, `atanhf`, `atanhl`

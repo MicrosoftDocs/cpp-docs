@@ -160,7 +160,7 @@ int main( )
    istream_iterator<int> intvecRead ( cin );
 
    // Default constructor will test equal to end of stream
-   // for delimiting source range of vecor
+   // for delimiting source range of vector
    copy ( intvecRead , istream_iterator<int>( ) , vec.begin ( ) );
    cin.clear ( );
 

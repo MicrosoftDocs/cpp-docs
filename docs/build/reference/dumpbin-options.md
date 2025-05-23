@@ -49,7 +49,7 @@ DUMPBIN has the following options:
 
 - [/PDBPATH\[:VERBOSE\]](pdbpath.md)
 
-- [/RANGEE:vaMin\[,vaMax\]](range.md)
+- [/RANGE:vaMin\[,vaMax\]](range.md)
 
 - [/RAWDATA\[:{NONE\|1\|2\|4\|8}\[,#\]\]](rawdata.md)
 

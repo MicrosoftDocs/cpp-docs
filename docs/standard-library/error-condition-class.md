@@ -160,7 +160,7 @@ bool operator==(const error_condition& right) const;
 #### Parameters
 
 *right*\
-The ojbect to be tested for equality.
+The object to be tested for equality.
 
 #### Return Value
 

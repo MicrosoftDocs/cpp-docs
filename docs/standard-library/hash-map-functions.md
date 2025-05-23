@@ -19,7 +19,7 @@ Exchanges the elements of two hash_maps.
 
 ```cpp
 void swap(
-    hash_map <Key, Type, Traits, Alloctor>& left,
+    hash_map <Key, Type, Traits, Allocator>& left,
     hash_map <Key, Type, Traits, Allocator>& right);
 ```
 
@@ -44,7 +44,7 @@ Exchanges the elements of two hash_multimaps.
 
 ```cpp
 void swap(
-    hash_multimap <Key, Type, Traits, Alloctor>& left,
+    hash_multimap <Key, Type, Traits, Allocator>& left,
     hash_multimap <Key, Type, Traits, Allocator>& right);
 ```
 

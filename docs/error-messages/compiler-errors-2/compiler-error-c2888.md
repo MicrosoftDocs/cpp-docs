@@ -23,7 +23,7 @@ namespace M {
       void f2();
    }
 
-   void N::f1() {}   // OK: namspace M encloses N
+   void N::f1() {}   // OK: namespace M encloses N
 }
 
 namespace O {

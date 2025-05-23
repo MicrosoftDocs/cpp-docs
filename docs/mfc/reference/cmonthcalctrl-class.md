@@ -320,7 +320,7 @@ A pointer to a [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemti
 
 ### Return Value
 
-Nonzero if successful; otherwize 0.
+Nonzero if successful; otherwise 0.
 
 ### Remarks
 

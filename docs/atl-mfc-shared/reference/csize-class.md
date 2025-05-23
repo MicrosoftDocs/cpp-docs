@@ -101,7 +101,7 @@ BOOL operator==(SIZE size) const throw();
 
 ### Remarks
 
-Returns nonzero if the sizes are equal, otherwize 0.
+Returns nonzero if the sizes are equal, otherwise 0.
 
 ### Example
 

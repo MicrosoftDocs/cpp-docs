@@ -115,7 +115,7 @@ BOOL IsAdded() const;
 
 ### Return Value
 
-TRUE if a keyframe is added to a storyboard; otehrwise FALSE.
+TRUE if a keyframe is added to a storyboard; otherwise FALSE.
 
 ### Remarks
 
