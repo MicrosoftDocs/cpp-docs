@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Generic Interfaces (C++/CLI)"
 title: "Generic Interfaces (C++/CLI)"
-ms.date: "10/12/2018"
+description: "Learn more about: Generic Interfaces (C++/CLI)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 helpviewer_keywords: ["generic interfaces", "interfaces, generic [C++]"]
-ms.assetid: f3da788a-ba83-4db7-9dcf-9b95a8fb9d1a
 ---
 # Generic Interfaces (C++/CLI)
 
