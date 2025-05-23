@@ -10,7 +10,7 @@ Use the following style flags to specify window or control appearance and behavi
 
 ## <a name="button-styles"></a> Button styles
 
-Button styles apply to [`CButton Class`](../../mfc/reference/cbutton-class.md) objects, such as radio buttons, check boxes and pushbuttons. Specify a combination of styles in the *`dwStyle`* parameter of [`CButton::Create`](../../mfc/reference/cbutton-class.md#create). For more information on button styles in Windows, see [Button Styles (Windows)](/windows/win32/Controls/button-styles).
+Button styles apply to [`CButton Class`](cbutton-class.md) objects, such as radio buttons, check boxes and pushbuttons. Specify a combination of styles in the *`dwStyle`* parameter of [`CButton::Create`](cbutton-class.md#create). For more information on button styles in Windows, see [Button Styles (Windows)](/windows/win32/Controls/button-styles).
 
 ### Button types
 
@@ -23,8 +23,8 @@ The following table lists button types. You can optionally choose one of the fol
 |`BS_AUTOCHECKBOX`|Creates a check box button with two states: `BST_CHECKED` and `BST_UNCHECKED`. Clicking on the button sends a `BN_CLICKED` notification to the owner window and changes the state of the button. By default, associated text is displayed to the right of the check box. To display text to the left of the check box, use the `BS_LEFTTEXT` or `BS_RIGHTBUTTON` style.|
 |`BS_AUTORADIOBUTTON`|Creates a radio button with two states: `BST_CHECKED` and `BST_UNCHECKED`. Radio buttons are usually used in groups, with each group having a maximum of one checked option at a time. Clicking on the button sends a `BN_CLICKED` notification to the owner window, sets the state of the clicked radio button to `BST_CHECKED`, and sets the states of all other radio buttons in the button group to `BST_UNCHECKED`. By default, associated text is displayed to the right of the radio button. To display text to the left of the radio button, use the `BS_LEFTTEXT` or `BS_RIGHTBUTTON` style.|
 |`BS_CHECKBOX`|Creates a check box button with two states: `BST_CHECKED` and `BST_UNCHECKED`. Clicking on the button sends a `BN_CLICKED` notification to the owner window but does not change the state of the button. By default, associated text is displayed to the right of the check box. To display text to the left of the check box, use the `BS_LEFTTEXT` or `BS_RIGHTBUTTON` style.|
-|`BS_COMMANDLINK`|Creates a command link button. A command link button is a command button specific to Windows Vista that displays a green arrow to the left of the main text and a note below the main text. You can set the note text using [`CButton::SetNote`](../../mfc/reference/cbutton-class.md#setnote).|
-|`BS_DEFCOMMANDLINK`|Creates a command link button. A command link button is a command button specific to Windows Vista that displays a green arrow to the left of the main text and a note below the main text. You can set the note text using [`CButton::SetNote`](../../mfc/reference/cbutton-class.md#setnote). If the button is in a dialog box, pressing the ENTER key sends a `BN_CLICKED` notification to the dialog box even when the button does not have the input focus.|
+|`BS_COMMANDLINK`|Creates a command link button. A command link button is a command button specific to Windows Vista that displays a green arrow to the left of the main text and a note below the main text. You can set the note text using [`CButton::SetNote`](cbutton-class.md#setnote).|
+|`BS_DEFCOMMANDLINK`|Creates a command link button. A command link button is a command button specific to Windows Vista that displays a green arrow to the left of the main text and a note below the main text. You can set the note text using [`CButton::SetNote`](cbutton-class.md#setnote). If the button is in a dialog box, pressing the ENTER key sends a `BN_CLICKED` notification to the dialog box even when the button does not have the input focus.|
 |`BS_DEFPUSHBUTTON`|Creates a command button that has a heavy black border. If the button is in a dialog box, pressing the ENTER key sends a `BN_CLICKED` notification to the dialog box even when the button does not have the input focus.|
 |`BS_DEFSPLITBUTTON`|Creates a split button. A split button is a command button specific to Windows Vista that contains a button adjacent to a drop-down arrow. When you click the button, the default command is executed. When you click the drop-down arrow, a menu of additional commands appears. If the split button is in a dialog box, pressing the ENTER key sends a `BN_CLICKED` notification to the dialog box even when the button does not have the input focus|
 |`BS_GROUPBOX`|Creates a rectangle in which other buttons can be grouped. Text associated with this style is displayed in the rectangle's upper-left corner.|
@@ -99,7 +99,7 @@ The following combo-box styles are available in MFC. For more information about 
 
 ## <a name="edit-styles"></a> Edit styles
 
-Edit styles apply to [`CEdit` Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CEdit::Create`](../../mfc/reference/cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles).
+Edit styles apply to [`CEdit` Class](cedit-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CEdit::Create`](cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -120,7 +120,7 @@ Edit styles apply to [`CEdit` Class](../../mfc/reference/cedit-class.md) objects
 
 ## <a name="frame-window-styles-mfc"></a> Frame-window styles
 
-Frame-window styles apply to [`CFrameWnd` Class](../../mfc/reference/cframewnd-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CFrameWnd::Create`](../../mfc/reference/cframewnd-class.md#create).
+Frame-window styles apply to [`CFrameWnd` Class](cframewnd-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CFrameWnd::Create`](cframewnd-class.md#create).
 
 |Style|Description|
 |-----------|-----------------|
@@ -130,7 +130,7 @@ Frame-window styles apply to [`CFrameWnd` Class](../../mfc/reference/cframewnd-c
 
 ## <a name="list-box-styles"></a> List-box styles
 
-List-box styles apply to [`CListBox` Class](../../mfc/reference/clistbox-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CListBox::Create`](../../mfc/reference/clistbox-class.md#create). For more information about list box styles in Windows, see [List Box Styles (Windows)](/windows/win32/Controls/list-box-styles).
+List-box styles apply to [`CListBox` Class](clistbox-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CListBox::Create`](clistbox-class.md#create). For more information about list box styles in Windows, see [List Box Styles (Windows)](/windows/win32/Controls/list-box-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -153,7 +153,7 @@ List-box styles apply to [`CListBox` Class](../../mfc/reference/clistbox-class.m
 
 ## <a name="message-box-styles"></a> Message-box styles
 
-Message-box styles apply to [`AfxMessageBox`](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the *`nType`* parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [`MessageBox` Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox).
+Message-box styles apply to [`AfxMessageBox`](cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the *`nType`* parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [`MessageBox` Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox).
 
 The following message-box styles are available.
 
@@ -195,7 +195,7 @@ The following message-box styles are available.
 
 ## <a name="scroll-bar-styles"></a> Scroll-bar styles
 
-Scroll-bar styles apply to [`CScrollBar` Class](../../mfc/reference/cscrollbar-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CScrollBar::Create`](../../mfc/reference/cscrollbar-class.md#create). For more information about scroll bar control styles in Windows, see [Scroll Bar Control Styles (Windows)](/windows/win32/Controls/scroll-bar-control-styles).
+Scroll-bar styles apply to [`CScrollBar` Class](cscrollbar-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CScrollBar::Create`](cscrollbar-class.md#create). For more information about scroll bar control styles in Windows, see [Scroll Bar Control Styles (Windows)](/windows/win32/Controls/scroll-bar-control-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -212,7 +212,7 @@ Scroll-bar styles apply to [`CScrollBar` Class](../../mfc/reference/cscrollbar-c
 
 ## <a name="static-styles"></a> Static styles
 
-Static styles apply to [`CStatic` Class](../../mfc/reference/cstatic-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CStatic::Create`](../../mfc/reference/cstatic-class.md#create). For more information about static control styles in Windows, see [Static Control Styles (Windows)](/windows/win32/Controls/static-control-styles).
+Static styles apply to [`CStatic` Class](cstatic-class.md) objects. Specify a combination of styles in the *`dwStyle`* parameter of [`CStatic::Create`](cstatic-class.md#create). For more information about static control styles in Windows, see [Static Control Styles (Windows)](/windows/win32/Controls/static-control-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -246,7 +246,7 @@ Static styles apply to [`CStatic` Class](../../mfc/reference/cstatic-class.md) o
 
 ## <a name="window-styles"></a> Window styles
 
-Window styles apply to [`CWnd` Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [`CWnd::Create`](../../mfc/reference/cwnd-class.md#create) or [`CWnd::CreateEx`](../../mfc/reference/cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](/windows/win32/winmsg/window-styles).
+Window styles apply to [`CWnd` Class](cwnd-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [`CWnd::Create`](cwnd-class.md#create) or [`CWnd::CreateEx`](cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](/windows/win32/winmsg/window-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -280,7 +280,7 @@ Window styles apply to [`CWnd` Class](../../mfc/reference/cwnd-class.md) objects
 
 ## <a name="extended-window-styles"></a> Extended window styles
 
-Extended window styles apply to [`CWnd` Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *`dwExStyle`* parameter of [`CWnd::CreateEx`](../../mfc/reference/cwnd-class.md#createex). For more information about extended window styles in Windows, see [Extended Window Styles (Windows)](/windows/win32/winmsg/extended-window-styles).
+Extended window styles apply to [`CWnd` Class](cwnd-class.md) objects. Specify a combination of styles in the *`dwExStyle`* parameter of [`CWnd::CreateEx`](cwnd-class.md#createex). For more information about extended window styles in Windows, see [Extended Window Styles (Windows)](/windows/win32/winmsg/extended-window-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -309,13 +309,13 @@ Extended window styles apply to [`CWnd` Class](../../mfc/reference/cwnd-class.md
 
 ## See also
 
-[MFC Class Overview](../../mfc/class-library-overview.md)<br/>
-[`CWnd::Create`](../../mfc/reference/cwnd-class.md#create)<br/>
-[`CWnd::CreateEx`](../../mfc/reference/cwnd-class.md#createex)<br/>
-[`CEdit::Create`](../../mfc/reference/cedit-class.md#create)<br/>
-[`CScrollBar::Create`](../../mfc/reference/cscrollbar-class.md#create)<br/>
-[`CStatic::Create`](../../mfc/reference/cstatic-class.md#create)<br/>
-[`AfxMessageBox`](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
+[MFC Class Overview](../class-library-overview.md)<br/>
+[`CWnd::Create`](cwnd-class.md#create)<br/>
+[`CWnd::CreateEx`](cwnd-class.md#createex)<br/>
+[`CEdit::Create`](cedit-class.md#create)<br/>
+[`CScrollBar::Create`](cscrollbar-class.md#create)<br/>
+[`CStatic::Create`](cstatic-class.md#create)<br/>
+[`AfxMessageBox`](cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
 [`CreateWindow`](/windows/win32/api/winuser/nf-winuser-createwindoww)<br/>
 [`CreateWindowEx`](/windows/win32/api/winuser/nf-winuser-createwindowexw)<br/>
 [Button Styles (Windows)](/windows/win32/Controls/button-styles)<br/>
