@@ -98,7 +98,7 @@ int main() {
 
 ### ADL and friend functions
 
-The following sample generates C3767 because the compiler can't use argument dependent lookup for `FriendFunc`:
+The following sample generates C3861 because the compiler can't use argument dependent lookup for `FriendFunc`:
 
 ```cpp
 namespace N {
