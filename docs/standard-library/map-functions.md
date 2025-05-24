@@ -13,8 +13,8 @@ Exchanges the elements of two maps.
 ```cpp
 template <class key, class T, class _Pr, class _Alloc>
 void swap(
-    map<Key, Traits, Compare, Alloctor>& left,
-    map<Key, Traits, Compare, Alloctor>& right);
+    map<Key, Traits, Compare, Allocator>& left,
+    map<Key, Traits, Compare, Allocator>& right);
 ```
 
 ### Parameters
@@ -40,8 +40,8 @@ Exchanges the elements of two multimaps.
 ```cpp
 template <class key, class T, class _Pr, class _Alloc>
 void swap(
-    multimap<Key, Traits, Compare, Alloctor>& left,
-    multimap<Key, Traits, Compare, Alloctor>& right);
+    multimap<Key, Traits, Compare, Allocator>& left,
+    multimap<Key, Traits, Compare, Allocator>& right);
 ```
 
 ### Parameters
