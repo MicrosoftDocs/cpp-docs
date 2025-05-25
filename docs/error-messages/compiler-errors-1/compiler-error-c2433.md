@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2433"
 title: "Compiler Error C2433"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2433"
+ms.date: 05/25/2025
 f1_keywords: ["C2433"]
 helpviewer_keywords: ["C2433"]
-ms.assetid: 7079fedd-6059-4125-82ef-ebe275f1f9d1
 ---
 # Compiler Error C2433
 
