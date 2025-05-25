@@ -1,11 +1,10 @@
 ---
-description: "Learn about type conversion errors that cause Compiler Error C2440."
 title: "Compiler Error C2440"
+description: "Learn about type conversion errors that cause Compiler Error C2440."
 ms.date: 08/27/2021
 f1_keywords: ["C2440"]
 helpviewer_keywords: ["C2440"]
 no-loc: ["struct", "const"]
-ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
 ---
 # Compiler Error C2440
 
