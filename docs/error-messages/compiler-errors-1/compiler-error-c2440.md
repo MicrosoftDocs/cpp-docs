@@ -12,7 +12,7 @@ ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
 > '*initializing*' : cannot convert from '*type1*' to '*type2*'\
 > '*conversion*' : cannot convert from '*type1*' to '*type2*'
 
-The compiler can't implicitly convert from `*type1*` to `*type2*`, or can't use the specified cast or conversion operator.
+The compiler can't implicitly convert from *`type1`* to *`type2`*, or can't use the specified cast or conversion operator.
 
 ## Remarks
 
