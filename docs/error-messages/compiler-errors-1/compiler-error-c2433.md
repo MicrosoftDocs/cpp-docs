@@ -14,13 +14,12 @@ The **`friend`**, **`virtual`**, and **`inline`** modifiers cannot be used for d
 
 ## Example
 
-The following sample generates C2433.
+The following example generates C2433:
 
 ```cpp
 // C2433.cpp
-class C{};
-
-int main() {
-   inline C c;   // C2433
+int main()
+{
+    virtual int i;   // C2433
 }
 ```
