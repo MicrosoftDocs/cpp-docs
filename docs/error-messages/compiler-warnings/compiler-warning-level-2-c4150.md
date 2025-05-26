@@ -75,7 +75,6 @@ void NoDestruct( IncClass* pIncClass )
 {
    delete pIncClass;
 }
-
 ```
 
 ## See also
