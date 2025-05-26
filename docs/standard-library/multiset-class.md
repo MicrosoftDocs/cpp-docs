@@ -1294,7 +1294,7 @@ The stored object defines the member function:
 
 which returns true if *x* strictly precedes *y* in the sort order.
 
-Both [`key_compare`](#key_compare) and [`value_compare`](#value_compare) are synonyms for the template parameter ``Compare``. Both types are provided for the classes set and multiset, where they're identical, for compatibility with the classes map and multimap, where they're distinct.
+Both [`key_compare`](#key_compare) and [`value_compare`](#value_compare) are synonyms for the template parameter `Compare`. Both types are provided for the classes set and multiset, where they're identical, for compatibility with the classes map and multimap, where they're distinct.
 
 ### Example
 
@@ -1381,7 +1381,7 @@ For more information on `Key`, see the Remarks section of the [`multiset` Class]
 
 ### Example
 
-See the example for [`value_type`](#value_type) for an example of how to declare and use ``key_type``.
+See the example for [`value_type`](#value_type) for an example of how to declare and use `key_type`.
 
 ## <a name="lower_bound"></a> `multiset::lower_bound`
 
