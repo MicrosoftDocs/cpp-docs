@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer known issues and limitations"
 description: "Technical description of the AddressSanitizer for Microsoft C/C++ known issues."
-ms.date: 5/14/2025
+ms.date: 5/21/2025
 helpviewer_keywords: ["AddressSanitizer known issues"]
 ---
 
@@ -12,7 +12,7 @@ helpviewer_keywords: ["AddressSanitizer known issues"]
 
 ## <a name="incompatible-options"></a> Incompatible options and functionality
 
-These options and functionality are incompatible with [`/fsanitize=address`](../build/reference/fsanitize.md) and should be disabled or avoided.
+The following options and functionality are incompatible with [`/fsanitize=address`](../build/reference/fsanitize.md) and should be disabled or avoided.
 
 - The [`/RTC`](../build/reference/rtc-run-time-error-checks.md) options are incompatible with AddressSanitizer and should be disabled.
 - [Incremental linking](../build/reference/incremental-link-incrementally.md) is unsupported, and should be disabled.
@@ -26,9 +26,9 @@ These options and functionality are incompatible with [`/fsanitize=address`](../
 
 ## Standard library support
 
-The MSVC standard library (STL) is partially enlightened to understand the AddressSanitizer and provide other checks. For more information, see [container-overflow error](./error-container-overflow.md).
+The MSVC standard library (STL) makes partial use of the AddressSanitizer and provides other code safety checks. For more information, see [container-overflow error](./error-container-overflow.md).
 
-When annotations are disabled or in versions without support, AddressSanitizer exceptions raised in STL code do still identify true bugs. However, they aren't as precise as they could be.
+When annotations are disabled, or in versions of the Standard Library that don't support them, AddressSanitizer exceptions raised in STL code still identify real bugs. However, they are more precise if annotations are enabled and you use a version of the Standard Library that supports them.
 
 This example demonstrates the lack of precision and the benefits of enabling annotations:
 
@@ -60,9 +60,6 @@ AddressSanitizer (ASAN) uses a custom version of `operator new` and `operator de
 
 [MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete` and might miss errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md).
 
-## Windows versions
-
-Support is focused on Windows 10. MSVC AddressSanitizer was tested on 10.0.14393 (RS1), and 10.0.21323 (prerelease insider build). [Report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Memory usage
 
@@ -82,12 +79,20 @@ As a workaround, create a *`Directory.Build.props`* file in the root of your pro
 
 Thread local variables (global variables declared with `__declspec(thread)` or `thread_local`) aren't protected by AddressSanitizer. This limitation isn't specific to Windows or Microsoft Visual C++, but is a general limitation.
 
+## Issues with partially sanitized executables
+
+If all of the code in a process isn't compiled with `/fsanitize=address`, ASan may not be able to diagnose all memory safety errors. The most common example is when a DLL is compiled with ASan but is loaded into a process that contains code that wasn't compiled with ASan. In this case, ASan attempts to categorize allocations that took place prior to ASan initialization. Once those allocations are reallocated, ASan tries to own and monitor the lifetime of the memory.
+
+If all of the DLLs that were compiled with ASan are unloaded from the process before the process ends, there may be crashes due to dangling references to intercepted functions such as `memcmp`, `memcpy`, `memmove`, and so on. For the best results, compile all modules under test with `/fsanitize=address`, or do not unload modules compiled with ASan after they enter the process.
+
+Please report any bugs to our [Developer Community](https://aka.ms/feedback/report?space=62).
+
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)
