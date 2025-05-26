@@ -1,8 +1,7 @@
 ---
 title: "CRT functions not supported in Universal Windows Platform apps"
 description: "Reference guide to CRT functions not supported in Universal Windows Platform apps."
-ms.date: "04/16/2020"
-ms.assetid: cbfc957d-6c60-48f4-97e3-1ed8526743b4
+ms.date: 04/16/2020
 ---
 # CRT functions not supported in Universal Windows Platform apps
 

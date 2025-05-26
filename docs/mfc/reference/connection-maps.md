@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Connection Maps"
 title: "Connection Maps"
-ms.date: "8/1/2023"
+description: "Learn more about: Connection Maps"
+ms.date: 8/1/2023
 helpviewer_keywords: ["connection maps"]
 ---
 
