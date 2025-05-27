@@ -14,30 +14,30 @@ Generates a Bernoulli distribution.
 
 ```cpp
 class bernoulli_distribution
-   {
+{
 public:
-   // types
-   typedef bool result_type;
-   struct param_type;
+    // types
+    typedef bool result_type;
+    struct param_type;
 
-   // constructors and reset functions
-   explicit bernoulli_distribution(double p = 0.5);
-   explicit bernoulli_distribution(const param_type& parm);
-   void reset();
+    // constructors and reset functions
+    explicit bernoulli_distribution(double p = 0.5);
+    explicit bernoulli_distribution(const param_type& parm);
+    void reset();
 
-   // generating functions
-   template <class URNG>
-   result_type operator()(URNG& gen);
-   template <class URNG>
-   result_type operator()(URNG& gen, const param_type& parm);
+    // generating functions
+    template <class URNG>
+    result_type operator()(URNG& gen);
+    template <class URNG>
+    result_type operator()(URNG& gen, const param_type& parm);
 
-   // property functions
-   double p() const;
-   param_type param() const;
-   void param(const param_type& parm);
-   result_type min() const;
-   result_type max() const;
-   };
+    // property functions
+    double p() const;
+    param_type param() const;
+    void param(const param_type& parm);
+    result_type min() const;
+    result_type max() const;
+};
 ```
 
 ### Parameters
