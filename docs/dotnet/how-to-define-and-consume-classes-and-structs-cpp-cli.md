@@ -466,7 +466,7 @@ in static constructor
 
 ## <a name="BKMK_Semantics_of_the_this_pointer"></a> Semantics of the `this` pointer
 
-When you're using C++\CLI to define types, the **`this`** pointer in a reference type is of type *handle*. The **`this`** pointer in a value type is of type *interior pointer*.
+When you're using C++/CLI to define types, the **`this`** pointer in a reference type is of type *handle*. The **`this`** pointer in a value type is of type *interior pointer*.
 
 These different semantics of the **`this`** pointer can cause unexpected behavior when a default indexer is called. The next example shows the correct way to access a default indexer in both a ref type and a value type.
 
