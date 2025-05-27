@@ -15,7 +15,7 @@ The MSVC compiler can be made to output diagnostics as [SARIF](https://sarifweb.
 There are two ways to make the MSVC compiler produce SARIF diagnostics:
 
 - Pass the `/experimental:log` switch on the command line. See the [documentation for `/experimental:log`](experimental-log.md) for details.
-- Launch `cl.exe` programatically and set the `SARIF_OUTPUT_PIPE` environment variable to retrieve SARIF blocks through a pipe.
+- Launch `cl.exe` programmatically and set the `SARIF_OUTPUT_PIPE` environment variable to retrieve SARIF blocks through a pipe.
 
 ## Retrieving SARIF through a pipe
 
