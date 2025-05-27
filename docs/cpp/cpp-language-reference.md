@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C++ Language Reference"
 title: "C++ Language Reference"
+description: "Learn more about: C++ Language Reference"
 ms.custom: "index-page"
-ms.date: "12/10/2019"
+ms.date: 12/10/2019
 helpviewer_keywords: ["C++, language reference"]
-ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
 ---
 # C++ Language Reference
 
@@ -15,7 +14,6 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
 See the following tables to quickly find a keyword or operator:
 
 - [C++ Keywords](keywords-cpp.md)
-
 - [C++ Operators](cpp-built-in-operators-precedence-and-associativity.md)
 
 ## In This Section
