@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CEditView Class"
 title: "CEditView Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CEditView Class"
+ms.date: 11/04/2016
 f1_keywords: ["CEditView", "AFXEXT/CEditView", "AFXEXT/CEditView::CEditView", "AFXEXT/CEditView::FindText", "AFXEXT/CEditView::GetBufferLength", "AFXEXT/CEditView::GetEditCtrl", "AFXEXT/CEditView::GetPrinterFont", "AFXEXT/CEditView::GetSelectedText", "AFXEXT/CEditView::LockBuffer", "AFXEXT/CEditView::PrintInsideRect", "AFXEXT/CEditView::SerializeRaw", "AFXEXT/CEditView::SetPrinterFont", "AFXEXT/CEditView::SetTabStops", "AFXEXT/CEditView::UnlockBuffer", "AFXEXT/CEditView::OnFindNext", "AFXEXT/CEditView::OnReplaceAll", "AFXEXT/CEditView::OnReplaceSel", "AFXEXT/CEditView::OnTextNotFound", "AFXEXT/CEditView::dwStyleDefault"]
 helpviewer_keywords: ["CEditView [MFC], CEditView", "CEditView [MFC], FindText", "CEditView [MFC], GetBufferLength", "CEditView [MFC], GetEditCtrl", "CEditView [MFC], GetPrinterFont", "CEditView [MFC], GetSelectedText", "CEditView [MFC], LockBuffer", "CEditView [MFC], PrintInsideRect", "CEditView [MFC], SerializeRaw", "CEditView [MFC], SetPrinterFont", "CEditView [MFC], SetTabStops", "CEditView [MFC], UnlockBuffer", "CEditView [MFC], OnFindNext", "CEditView [MFC], OnReplaceAll", "CEditView [MFC], OnReplaceSel", "CEditView [MFC], OnTextNotFound", "CEditView [MFC], dwStyleDefault"]
-ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
 ---
 # CEditView Class
 
@@ -427,7 +426,7 @@ Width of each tab stop, in dialog units.
 
 ### Remarks
 
-Only a single tab-stop width is supported. ( `CEdit` objects support multiple tab widths.) Widths are in dialog units, which equal one-fourth of the average character width (based on uppercase and lowercase alphabetic characters only) of the font used at the time of printing or displaying. You should not use `CEdit::SetTabStops` because `CEditView` must cache the tab-stop value.
+Only a single tab-stop width is supported. (`CEdit` objects support multiple tab widths.) Widths are in dialog units, which equal one-fourth of the average character width (based on uppercase and lowercase alphabetic characters only) of the font used at the time of printing or displaying. You should not use `CEdit::SetTabStops` because `CEditView` must cache the tab-stop value.
 
 This function modifies only the tabs of the object for which it is called. To change the tab stops for each `CEditView` object in your application, call each object's `SetTabStops` function.
 

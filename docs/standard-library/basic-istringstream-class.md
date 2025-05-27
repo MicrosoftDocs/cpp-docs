@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: basic_istringstream Class"
 title: "basic_istringstream Class"
+description: "Learn more about: basic_istringstream Class"
 ms.date: 06/10/2022
 f1_keywords: ["sstream/std::basic_istringstream", "sstream/std::basic_istringstream::allocator_type", "sstream/std::basic_istringstream::rdbuf", "sstream/std::basic_istringstream::str", "sstream/std::basic_istringstream::swap"]
 helpviewer_keywords: ["std::basic_istringstream [C++]", "std::basic_istringstream [C++], allocator_type", "std::basic_istringstream [C++], rdbuf", "std::basic_istringstream [C++], str", "std::basic_istringstream [C++], swap"]
-ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915
 ms.custom: devdivchpfy22
 ---
 
@@ -164,7 +163,7 @@ Returns an object of class [basic_string](../standard-library/basic-string-class
 
 ### Remarks
 
-The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**( `_Newstr`).
+The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**(`_Newstr`).
 
 ### Example
 

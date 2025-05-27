@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <ios> functions"
 title: "<ios> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <ios> functions"
+ms.date: 11/04/2016
 f1_keywords: ["xiosbase/std::defaultfloat", "xiosbase/std::boolalpha", "xiosbase/std::dec", "ios/std::fixed", "ios/std::hex", "ios/std::internal", "ios/std::left", "ios/std::noboolalpha", "ios/std::noshowbase", "ios/std::noshowpoint", "ios/std::noshowpos", "ios/std::noskipws", "ios/std::nounitbuf", "ios/std::nouppercase", "ios/std::oct", "ios/std::right", "ios/std::scientific", "ios/std::showbase", "ios/std::showpoint", "ios/std::showpos", "ios/std::skipws", "ios/std::unitbuf", "ios/std::uppercase"]
-ms.assetid: 1382d53f-e531-4b41-adf6-6a1543512e51
 helpviewer_keywords: ["std::defaultfloat [C++]", "std::boolalpha [C++]", "std::dec [C++]", "std::fixed [C++]", "std::hex [C++]", "std::hexfloat [C++]", "std::io_errc [C++]", "std::internal [C++]", "std::iostream_category [C++]", "std::is_error_code_enum [C++]", "std::left [C++]", "std::make_error_code [C++]", "std::make_error_condition [C++]", "std::noboolalpha [C++]", "std::noshowbase [C++]", "std::noshowpoint [C++]", "std::noshowpos [C++]", "std::noskipws [C++]", "std::nounitbuf [C++]", "std::nouppercase [C++]", "std::oct [C++]", "std::right [C++]", "std::scientific [C++]", "std::showbase [C++]", "std::showpoint [C++]", "std::showpos [C++]", "std::skipws [C++]", "std::unitbuf [C++]", "std::uppercase [C++]"]
 ---
 # `<ios>` functions
@@ -29,7 +28,7 @@ A reference to the object from which *str* is derived.
 
 By default, variables of type **`bool`** are displayed as 1 or 0.
 
-`boolalpha` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)( `ios_base::boolalpha`), and then returns *str*.
+`boolalpha` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)(`ios_base::boolalpha`), and then returns *str*.
 
 [noboolalpha](../standard-library/ios-functions.md#noboolalpha) reverses the effect of `boolalpha`.
 
@@ -81,7 +80,7 @@ A reference to the object from which *str* is derived.
 
 By default, integer variables are displayed in base 10.
 
-`dec` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)( `ios_base::dec`, `ios_base::basefield`), and then returns *str*.
+`dec` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)(`ios_base::dec`, `ios_base::basefield`), and then returns *str*.
 
 ### Example
 
@@ -151,7 +150,7 @@ A reference to the object from which *str* is derived.
 
 `fixed` is the default display notation for floating-point numbers. [scientific](../standard-library/ios-functions.md#scientific) causes floating-point numbers to be displayed using scientific notation.
 
-The manipulator effectively calls *str*.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::fixed`, `ios_base::floatfield` ), and then returns *str*.
+The manipulator effectively calls *str*.[setf](../standard-library/ios-base-class.md#setf)(`ios_base::fixed`, `ios_base::floatfield`), and then returns *str*.
 
 ### Example
 
@@ -199,7 +198,7 @@ A reference to the object from which *str* is derived.
 
 By default, integer variables are displayed in base 10 notation. [dec](../standard-library/ios-functions.md#dec) and [oct](../standard-library/ios-functions.md#oct) also change the way integer variables appear.
 
-The manipulator effectively calls `str`**.**[setf](../standard-library/ios-base-class.md#setf)( `ios_base::hex`, `ios_base::basefield`), and then returns *str*.
+The manipulator effectively calls `str`**.**[setf](../standard-library/ios-base-class.md#setf)(`ios_base::hex`, `ios_base::basefield`), and then returns *str*.
 
 ### Example
 

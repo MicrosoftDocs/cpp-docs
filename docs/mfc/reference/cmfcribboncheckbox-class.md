@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMFCRibbonCheckBox Class"
 title: "CMFCRibbonCheckBox Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CMFCRibbonCheckBox Class"
+ms.date: 11/04/2016
 f1_keywords: ["CMFCRibbonCheckBox", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::CMFCRibbonCheckBox", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetCompactSize", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetIntermediateSize", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetRegularSize", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::IsDrawTooltipImage", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDraw", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawMenuImage", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawOnList", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::SetACCData"]
 helpviewer_keywords: ["CMFCRibbonCheckBox [MFC], CMFCRibbonCheckBox", "CMFCRibbonCheckBox [MFC], GetCompactSize", "CMFCRibbonCheckBox [MFC], GetIntermediateSize", "CMFCRibbonCheckBox [MFC], GetRegularSize", "CMFCRibbonCheckBox [MFC], IsDrawTooltipImage", "CMFCRibbonCheckBox [MFC], OnDraw", "CMFCRibbonCheckBox [MFC], OnDrawMenuImage", "CMFCRibbonCheckBox [MFC], OnDrawOnList", "CMFCRibbonCheckBox [MFC], SetACCData"]
-ms.assetid: 3a6c3891-c8d1-4af0-b954-7b9ab048782a
 ---
 # CMFCRibbonCheckBox Class
 
@@ -131,7 +130,7 @@ A `CSize` object containing the intermediate size of the check box.
 
 ### Remarks
 
-If not overridden, calculates the intermediate size as the default check box size ( `AFX_CHECK_BOX_DEFAULT_SIZE`) plus the text size, plus margins.
+If not overridden, calculates the intermediate size as the default check box size (`AFX_CHECK_BOX_DEFAULT_SIZE`) plus the text size, plus margins.
 
 ## <a name="getregularsize"></a> CMFCRibbonCheckBox::GetRegularSize
 

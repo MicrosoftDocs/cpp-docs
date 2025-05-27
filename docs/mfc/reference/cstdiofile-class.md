@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CStdioFile Class"
 title: "CStdioFile Class"
-ms.date: "08/29/2019"
+description: "Learn more about: CStdioFile Class"
+ms.date: 08/29/2019
 f1_keywords: ["CStdioFile", "AFX/CStdioFile", "AFX/CStdioFile::CStdioFile", "AFX/CStdioFile::Open", "AFX/CStdioFile::ReadString", "AFX/CStdioFile::Seek", "AFX/CStdioFile::WriteString", "AFX/CStdioFile::m_pStream"]
 helpviewer_keywords: ["CStdioFile [MFC], CStdioFile", "CStdioFile [MFC], Open", "CStdioFile [MFC], ReadString", "CStdioFile [MFC], Seek", "CStdioFile [MFC], WriteString", "CStdioFile [MFC], m_pStream"]
-ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
 ---
 # `CStdioFile` Class
 
@@ -260,7 +259,7 @@ Specifies a pointer to a buffer that contains a null-terminated string.
 
 ### Remarks
 
-The terminating null character ( `\0`) is not written to the file. This method writes newline characters in *`lpsz`* to the file as a carriage return-line feed pair.
+The terminating null character (`\0`) is not written to the file. This method writes newline characters in *`lpsz`* to the file as a carriage return-line feed pair.
 
 If you want to write data that is not null-terminated to a file, use `CStdioFile::Write` or [`CFile::Write`](../../mfc/reference/cfile-class.md#write).
 

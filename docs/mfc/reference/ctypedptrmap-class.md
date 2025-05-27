@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CTypedPtrMap Class"
 title: "CTypedPtrMap Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CTypedPtrMap Class"
+ms.date: 11/04/2016
 f1_keywords: ["CTypedPtrMap", "AFXTEMPL/CTypedPtrMap", "AFXTEMPL/CTypedPtrMap::GetNextAssoc", "AFXTEMPL/CTypedPtrMap::Lookup", "AFXTEMPL/CTypedPtrMap::RemoveKey", "AFXTEMPL/CTypedPtrMap::SetAt"]
 helpviewer_keywords: ["CTypedPtrMap [MFC], GetNextAssoc", "CTypedPtrMap [MFC], Lookup", "CTypedPtrMap [MFC], RemoveKey", "CTypedPtrMap [MFC], SetAt"]
-ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
 ---
 # CTypedPtrMap Class
 
@@ -20,7 +19,7 @@ class CTypedPtrMap : public BASE_CLASS
 #### Parameters
 
 *BASE_CLASS*<br/>
-Base class of the typed pointer map class; must be a pointer map class ( `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, or `CMapStringToPtr`).
+Base class of the typed pointer map class; must be a pointer map class (`CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, or `CMapStringToPtr`).
 
 *KEY*<br/>
 Class of the object used as the key to the map.

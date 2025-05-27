@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: collate Class"
 title: "collate Class"
-ms.date: "11/04/2016"
+description: "Learn more about: collate Class"
+ms.date: 11/04/2016
 f1_keywords: ["locale/std::collate", "locale/std::collate::char_type", "locale/std::collate::string_type", "locale/std::collate::compare", "locale/std::collate::do_compare", "locale/std::collate::do_hash", "locale/std::collate::do_transform", "locale/std::collate::hash", "locale/std::collate::transform"]
 helpviewer_keywords: ["std::collate [C++]", "std::collate [C++], char_type", "std::collate [C++], string_type", "std::collate [C++], compare", "std::collate [C++], do_compare", "std::collate [C++], do_hash", "std::collate [C++], do_transform", "std::collate [C++], hash", "std::collate [C++], transform"]
-ms.assetid: 92168798-9628-4a2e-be6e-fa62dcd4d6a6
 ---
 # collate Class
 
@@ -142,7 +141,7 @@ The member function returns:
 
 The first sequence compares less if it has the smaller element in the earliest unequal pair in the sequences, or, if no unequal pairs exist, but the first sequence is shorter.
 
-The member function returns [do_compare](#do_compare)( `first1`, `last1`, `first2`, `last2`).
+The member function returns [do_compare](#do_compare)(`first1`, `last1`, `first2`, `last2`).
 
 ### Example
 
@@ -290,7 +289,7 @@ A hash value of type **`long`** for the sequence.
 
 ### Remarks
 
-The member function returns [do_hash](#do_hash)( `first`, `last`).
+The member function returns [do_hash](#do_hash)(`first`, `last`).
 
 A hash value can be useful, for example, in distributing sequences pseudo-randomly across an array of lists.
 

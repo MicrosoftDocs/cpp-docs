@@ -33,6 +33,7 @@ Unlike older versions of Visual Studio, which have infrequent redist updates, th
 
 The latest version is `14.44.35112.0`
 
+
 Use the following links to download this version for each supported architecture:
 
 | Architecture | Link | Notes |

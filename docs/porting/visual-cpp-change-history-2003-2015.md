@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ change history 2003 - 2015"
 description: "Find all the breaking changes in Microsoft C/C++ from Visual Studio 2003 through Visual Studio 2015 here."
-ms.date: "5/25/2023"
+ms.date: 5/25/2023
 helpviewer_keywords: ["breaking changes [C++]"]
 ---
 # Microsoft C/C++ change history 2003 - 2015
@@ -3365,7 +3365,7 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 - The syntax for SAL Annotations has changed. For more information, see [SAL Annotations](../c-runtime-library/sal-annotations.md).
 
-- The IEEE filter now supports the SSE 4.1 instruction set. For more information, see [_fpieee_flt](../c-runtime-library/reference/fpieee-flt.md)_fpieee_flt.
+- The IEEE filter now supports the SSE 4.1 instruction set. For more information, see [`_fpieee_flt`](../c-runtime-library/reference/fpieee-flt.md).
 
 - The C Run-Time Libraries that ship with Visual Studio are no longer dependent on the system DLL msvcrt.dll.
 
