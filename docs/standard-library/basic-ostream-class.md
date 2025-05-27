@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: basic_ostream Class"
 title: "basic_ostream Class"
-ms.date: "03/27/2019"
+description: "Learn more about: basic_ostream Class"
+ms.date: 03/27/2019
 f1_keywords: ["ostream/std::basic_ostream", "ostream/std::basic_ostream::flush", "ostream/std::basic_ostream::put", "ostream/std::basic_ostream::seekp", "ostream/std::basic_ostream::sentry", "ostream/std::basic_ostream::swap", "ostream/std::basic_ostream::tellp", "ostream/std::basic_ostream::write"]
 helpviewer_keywords: ["std::basic_ostream [C++]", "std::basic_ostream [C++], flush", "std::basic_ostream [C++], put", "std::basic_ostream [C++], seekp", "std::basic_ostream [C++], sentry", "std::basic_ostream [C++], swap", "std::basic_ostream [C++], tellp", "std::basic_ostream [C++], write"]
-ms.assetid: 5baadc65-b662-4fab-8c9f-94457c58cda1
 ---
 # basic_ostream Class
 
