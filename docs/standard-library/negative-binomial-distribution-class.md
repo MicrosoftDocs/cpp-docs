@@ -225,15 +225,16 @@ The second constructor constructs an object whose stored parameters are initiali
 Stores the parameters of the distribution.
 
 ```cpp
-struct param_type {
-   typedef negative_binomial_distribution`<`result_type> distribution_type;
-   param_type(result_type k = 1, double p = 0.5);
-   result_type k() const;
-   double p() const;
+struct param_type
+{
+    typedef negative_binomial_distribution<result_type> distribution_type;
+    param_type(result_type k = 1, double p = 0.5);
+    result_type k() const;
+    double p() const;
 
-   bool operator==(const param_type& right) const;
-   bool operator!=(const param_type& right) const;
-   };
+    bool operator==(const param_type& right) const;
+    bool operator!=(const param_type& right) const;
+};
 ```
 
 ### Parameters
