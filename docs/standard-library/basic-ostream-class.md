@@ -449,12 +449,14 @@ int main()
 
 The nested class describes an object whose declaration structures the formatted output functions and the unformatted output functions.
 
+```cpp
 class sentry {
    public:
    explicit sentry(basic_ostream\<Elem, Tr>& _Ostr);
    operator bool() const;
    ~sentry();
    };
+```
 
 ### Remarks
 
