@@ -16,9 +16,9 @@ The maximum number of buffers allowed by DirectX.
 static const UINT HLSL_MAX_NUM_BUFFERS = 64 + 128;
 ```
 
-## <a name="modulename_max_length"></a> MODULENAME_MAX_LENGTH Constant
+## <a name="modulename_max_length"></a> `MODULENAME_MAX_LENGTH` constant
 
-Stores the maximum length of the module name. This value must be the same on the compiler and runtime.
+Stores the maximum length of the module name. This value must be the same at compile time and runtime.
 
 ```cpp
 static const UINT MODULENAME_MAX_LENGTH = 1024;
