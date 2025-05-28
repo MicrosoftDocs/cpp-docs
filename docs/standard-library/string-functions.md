@@ -7,6 +7,8 @@ helpviewer_keywords: ["std::getline [C++]", "std::stod [C++]", "std::stof [C++]"
 ---
 # `<string>` functions
 
+The `<string>` header provides the following functions:
+
 ## <a name="getline"></a> `getline`
 
 Extract strings from the input stream line-by-line.
