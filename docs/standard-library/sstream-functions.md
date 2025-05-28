@@ -6,6 +6,8 @@ f1_keywords: ["sstream/std::swap"]
 ---
 # `<sstream>` functions
 
+The `<sstream>` header provides the following functions:
+
 ## <a name="sstream_swap"></a> swap
 
 Exchanges the values between two `sstream` objects.
