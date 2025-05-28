@@ -4,9 +4,9 @@ description: "Learn more about: Concurrency namespace enums (AMP)"
 ms.date: 11/04/2016
 f1_keywords: ["amp/Concurrency::access_type", "amp/Concurrency::queuing_mode"]
 ---
-# Concurrency namespace enums (AMP)
+# `Concurrency` namespace enums (AMP)
 
-The following enumerations are available in the Concurrency namespace:
+The following enumerations are available in the `Concurrency` namespace:
 
 ## <a name="access_type"></a> `access_type` enumeration
 
@@ -24,7 +24,7 @@ enum access_type;
 |`access_type_read_write`|Shared. The allocation is accessible on the accelerator and is writable on the CPU.|
 |`access_type_write`|Shared. The allocation is accessible on the accelerator and is both readable and writable on the CPU.|
 
-## <a name="queuing_mode"></a> queuing_mode Enumeration
+## <a name="queuing_mode"></a> `queuing_mode` enumeration
 
 Specifies the queuing modes that are supported on the accelerator.
 
