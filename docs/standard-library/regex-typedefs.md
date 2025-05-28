@@ -6,6 +6,8 @@ f1_keywords: ["regex/std::cmatch", "regex/std::cregex_iterator", "regex/std::cre
 ---
 # `<regex>` typedefs
 
+The `<regex>` header provides the following typedefs:
+
 ## <a name="cmatch"></a> cmatch Typedef
 
 Type definition for char match_results.
