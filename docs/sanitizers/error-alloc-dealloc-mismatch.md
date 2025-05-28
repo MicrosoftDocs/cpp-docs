@@ -1,7 +1,7 @@
 ---
 title: "Error: alloc-dealloc-mismatch"
-description: "Source examples and live debug screenshots for alloc-dealloc-mismatch errors."
-ms.date: 03/02/2021
+description: "Learn about the alloc-dealloc-mismatch Address Sanitizer error."
+ms.date: 05/28/2025
 f1_keywords: ["alloc-dealloc-mismatch"]
 helpviewer_keywords: ["alloc-dealloc-mismatch error", "AddressSanitizer error alloc-dealloc-mismatch"]
 ---
@@ -9,12 +9,16 @@ helpviewer_keywords: ["alloc-dealloc-mismatch error", "AddressSanitizer error al
 
 > Address Sanitizer Error: Mismatch between allocation and deallocation APIs
 
-The `alloc`/`dealloc` mismatch functionality in AddressSanitizer is off by default for Windows. To enable it, run `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running the program. This environment variable is checked at runtime to report errors on `malloc`/`free`, `new`/`delete`, and `new[]`/`delete[]`.
+Enables runtime detection of mismatched memory operations that may lead to undefined behavior, such as:
+•	`malloc` paired with `delete` (use `free` to release memory allocated with `malloc`)
+•	`new` paired with `free` (use `delete` to release memory allocated with `new`)
+•	`new` paired with `delete[]`, (use `delete[]` only when releasing an array allocated with `new` ) and so on.
+
+The `alloc`/`dealloc` mismatch functionality in AddressSanitizer is off by default for Windows. To enable it, run `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running the program.
 
 ## Example
 
 ```cpp
-// example1.cpp
 // alloc-dealloc-mismatch error
 #include <stdio.h>
 #include <stdlib.h>
@@ -40,7 +44,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To try this example, run the following commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
