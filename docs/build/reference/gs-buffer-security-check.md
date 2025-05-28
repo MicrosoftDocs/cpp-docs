@@ -28,11 +28,8 @@ On functions that the compiler recognizes as subject to buffer overrun problems,
 A buffer overrun security check is performed on a *GS buffer*. A GS buffer can be one of these:
 
 - An array that is larger than 4 bytes, has more than two elements, and has an element type that is not a pointer type.
-
 - A data structure whose size is more than 8 bytes and contains no pointers.
-
 - A buffer allocated by using the [`_alloca`](../../c-runtime-library/reference/alloca.md) function.
-
 - Any class or structure that contains a GS buffer.
 
 For example, the following statements declare GS buffers.
@@ -63,9 +60,7 @@ The **/GS** compiler option requires that the security cookie be initialized bef
 The **/GS** compiler option protects the following items:
 
 - The return address of a function call.
-
 - The address of an exception handler for a function.
-
 - Vulnerable function parameters.
 
 On all platforms, **/GS** attempts to detect buffer overruns into the return address. Buffer overruns are more easily exploited on platforms such as x86 and x64, which use calling conventions that store the return address of a function call on the stack.
@@ -79,15 +74,10 @@ A vulnerable parameter is allocated before the cookie and local variables. A buf
 The compiler does not make copies of vulnerable parameters in the following situations:
 
 - Functions that do not contain a GS buffer.
-
 - Optimizations ([`/O` options](o-options-optimize-code.md)) are not enabled.
-
 - Functions that have a variable argument list (...).
-
 - Functions that are marked with [naked](../../cpp/naked-cpp.md).
-
 - Functions that contain inline assembly code in the first statement.
-
 - A parameter is used only in ways that are less likely to be exploitable in the event of a buffer overrun.
 
 ## What Is Not Protected
@@ -99,9 +89,7 @@ Even if you use **/GS**, always try to write secure code that has no buffer over
 ### To set this compiler option in Visual Studio
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
 1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
-
 1. Modify the **Buffer Security Check** property.
 
 ### To set this compiler option programmatically
