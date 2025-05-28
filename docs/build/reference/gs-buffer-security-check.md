@@ -32,7 +32,7 @@ A buffer overrun security check is performed on a *GS buffer*. A GS buffer can b
 
 - A data structure whose size is more than 8 bytes and contains no pointers.
 
-- A buffer allocated by using the [_alloca](../../c-runtime-library/reference/alloca.md) function.
+- A buffer allocated by using the [`_alloca`](../../c-runtime-library/reference/alloca.md) function.
 
 - Any class or structure that contains a GS buffer.
 
@@ -57,7 +57,7 @@ struct { int a; int b; };
 
 ## Initialize the Security Cookie
 
-The **/GS** compiler option requires that the security cookie be initialized before any function that uses the cookie is run. The security cookie must be initialized immediately on entry to an EXE or DLL. This is done automatically if you use the default VCRuntime entry points: mainCRTStartup, wmainCRTStartup, WinMainCRTStartup, wWinMainCRTStartup, or _DllMainCRTStartup. If you use an alternate entry point, you must manually initialize the security cookie by calling [__security_init_cookie](../../c-runtime-library/reference/security-init-cookie.md).
+The **/GS** compiler option requires that the security cookie be initialized before any function that uses the cookie is run. The security cookie must be initialized immediately on entry to an EXE or DLL. This is done automatically if you use the default VCRuntime entry points: `mainCRTStartup`, `wmainCRTStartup`, `WinMainCRTStartup`, `wWinMainCRTStartup`, or `_DllMainCRTStartup`. If you use an alternate entry point, you must manually initialize the security cookie by calling [`__security_init_cookie`](../../c-runtime-library/reference/security-init-cookie.md).
 
 ## What Is Protected
 
@@ -81,7 +81,7 @@ The compiler does not make copies of vulnerable parameters in the following situ
 
 - Functions that do not contain a GS buffer.
 
-- Optimizations ([/O options](o-options-optimize-code.md)) are not enabled.
+- Optimizations ([`/O` options](o-options-optimize-code.md)) are not enabled.
 
 - Functions that have a variable argument list (...).
 
