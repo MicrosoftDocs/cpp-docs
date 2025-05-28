@@ -6,6 +6,8 @@ f1_keywords: ["type_traits/std::false_type", "xtr1common/std::false_type", "type
 ---
 # `<type_traits>` typedefs
 
+The `<type_traits>` header provides the following typedefs:
+
 ## <a name="false_type"></a> false_type Typedef
 
 Holds integral constant with false value.
