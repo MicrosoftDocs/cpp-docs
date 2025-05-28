@@ -6,6 +6,8 @@ helpviewer_keywords: ["std::is_assignable", "std::is_copy_assignable", "std::is_
 ---
 # `<type_traits>` functions
 
+The `<type_traits>` header provides the following functions:
+
 ## <a name="is_assignable"></a> is_assignable
 
 Tests whether a value of *From* type can be assigned to a *To* type.
