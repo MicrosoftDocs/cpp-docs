@@ -6,6 +6,8 @@ f1_keywords: ["hash_map/std::operator!=", "hash_map/std::operator=="]
 ---
 # `<hash_map>` operators
 
+The `<hash_map>` header provides the following operators:
+
 ## <a name="op_neq"></a> operator!=
 
 > [!NOTE]
