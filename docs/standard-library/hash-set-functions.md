@@ -6,6 +6,8 @@ f1_keywords: ["hash_set/std::swap", "hash_set/std::swap (hash_multiset)"]
 ---
 # `<hash_set>` functions
 
+The `<hash_set>` header provides the following functions:
+
 ## <a name="swap"></a> swap
 
 > [!NOTE]
