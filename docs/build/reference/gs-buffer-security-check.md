@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /GS (Buffer Security Check)"
 title: "/GS (Buffer Security Check)"
-ms.date: "11/04/2016"
+description: "Learn more about: /GS (Buffer Security Check)"
+ms.date: 11/04/2016
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.BufferSecurityCheck", "VC.Project.VCCLCompilerTool.BufferSecurityCheck"]
 helpviewer_keywords: ["buffers [C++], buffer overruns", "buffer overruns, compiler /GS switch", "GS compiler option [C++]", "/GS compiler option [C++]", "security check compiler option [C++]", "-GS compiler option [C++]", "buffers [C++], avoiding overruns"]
-ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
 ---
 # /GS (Buffer Security Check)
 
