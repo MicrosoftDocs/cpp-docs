@@ -6,6 +6,8 @@ f1_keywords: ["iosfwd/std::streambuf", "iosfwd/std::wstreambuf"]
 ---
 # `<streambuf>` typedefs
 
+The `<streambuf>` header provides the following typedefs:
+
 ## <a name="streambuf"></a> streambuf
 
 A specialization of `basic_streambuf` that uses **`char`** as the template parameters.
