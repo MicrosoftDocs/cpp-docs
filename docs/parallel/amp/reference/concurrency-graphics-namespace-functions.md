@@ -6,6 +6,8 @@ f1_keywords: ["amp_graphics/Concurrency::fast_math::copy_async", "amp_graphics/C
 ---
 # Concurrency::graphics namespace functions
 
+Learn more about the functions in the `Concurrency::graphics` namespace.
+
 ## <a name="copy"></a> copy Function (Concurrency::graphics Namespace)
 
 Copies a source texture into a destination buffer, or copies a source buffer into a destination buffer. The general form of this function is `copy(src, dest)`.
