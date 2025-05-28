@@ -6,6 +6,8 @@ f1_keywords: ["regex/std::operator!=", "regex/std::operator>", "regex/std::opera
 ---
 # `<regex>` operators
 
+The `<regex>` header provides the following operators:
+
 ## <a name="op_neq"></a> operator!=
 
 Not equal comparison for various objects.
