@@ -19,32 +19,31 @@ The `alloc`/`dealloc` mismatch functionality in AddressSanitizer is off by defau
 ## Example
 
 ```cpp
-// alloc-dealloc-mismatch error
+// Demonstrate alloc-dealloc-mismatch error
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char* argv[]) {
-
+int main(int argc, char* argv[])
+{
     if (argc != 2) return -1;
 
-    switch (atoi(argv[1])) {
-
-    case 1:
-        delete[](new int[10]);
-        break;
-    case 2:
-        delete (new int[10]);      // Boom!
-        break;
-    default:
-        printf("arguments: 1: no error 2: runtime error\n");
-        return -1;
+    switch (atoi(argv[1]))
+    {
+        case 1:
+            delete[](new int[10]);
+            break;
+        case 2:
+            delete (new int[10]);      // Boom!
+            break;
+        default:
+            printf("arguments: 1: no error 2: runtime error\n");
+            return -1;
     }
-
     return 0;
 }
 ```
 
-To try this example, run the following commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+Run the following commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts) to run the example:
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
@@ -52,7 +51,7 @@ set ASAN_OPTIONS=alloc_dealloc_mismatch=1
 devenv /debugexe example1.exe 2
 ```
 
-### Resulting error
+### Output
 
 :::image type="content" source="media/alloc-dealloc-mismatch-example-1.png" alt-text="Screenshot of debugger displaying alloc-dealloc-mismatch error in example 1.":::
 
