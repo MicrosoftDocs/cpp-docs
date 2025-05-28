@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Connection Maps"
 title: "Connection Maps"
-ms.date: "8/1/2023"
+description: "Learn more about: Connection Maps"
+ms.date: 8/1/2023
 helpviewer_keywords: ["connection maps"]
 ---
 
@@ -261,7 +261,7 @@ For in-process connections, `TRUE` indicates that creating the connection should
 **Warning**: In general, it can't be predicted which connections are in-process and which connections are out-of-process, so it is recommended to always set this parameter to `TRUE`.
 
 *`dwCookie`*\
-The connection identifier returned by ``AfxConnectionAdvise``.
+The connection identifier returned by `AfxConnectionAdvise`.
 
 ### Return value
 

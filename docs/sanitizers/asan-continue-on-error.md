@@ -146,7 +146,7 @@ This sorting prioritizes memory safety issues that may be the most concerning. F
 
 File: D:\a\_work\1\s\src\vctools\asan\llvm\compiler-rt\lib\asan\asan_malloc_win_thunk.cpp Unique call stacks: 1
 File: C:\Users\xxx\Desktop\COE\doublefree.cpp Unique call stacks: 1
-``````
+```
 
 Finally, the report contains a summary of where the memory errors occurred:
 
