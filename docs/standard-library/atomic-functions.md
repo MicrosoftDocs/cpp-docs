@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::atomic_compare_exchange_strong [C++]", "std::atomic_
 ---
 # `<atomic>` functions
 
-The following functions are available in `<atomic>`:
+The `<atomic>` header provides the following functions:
 
 ## <a name="atomic_compare_exchange_strong"></a> `atomic_compare_exchange_strong`
 
