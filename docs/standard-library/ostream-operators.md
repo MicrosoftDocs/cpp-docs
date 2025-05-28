@@ -6,6 +6,8 @@ f1_keywords: ["ostream/std::operator<<"]
 ---
 # `<ostream>` operators
 
+The `<ostream>` header provides the following operators:
+
 ## <a name="op_lt_lt"></a> `operator<<`
 
 Writes various types to the stream.
