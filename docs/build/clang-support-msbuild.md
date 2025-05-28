@@ -57,7 +57,7 @@ To configure a Visual Studio project to use Clang, right-click on the project no
 The project properties page is open to the Configuration Properties > General page. The Platform Toolset dropdown is selected, on which LLVM (clang-cl) is selected.
 :::image-end:::
 
-If you're using the Clang tools that are bundled with Visual Studio, no extra steps are required. For Windows projects, Visual Studio by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode. It links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in `*%VCINSTALLDIR%\Tools\Llvm\bin\*` and `*%VCINSTALLDIR%\Tools\Llvm\x64\bin\*`.
+If you're using the Clang tools that are bundled with Visual Studio, no extra steps are required. For Windows projects, Visual Studio by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode. It links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in *`%VCINSTALLDIR%\Tools\Llvm\bin\`* and *`%VCINSTALLDIR%\Tools\Llvm\x64\bin\`*.
 
 If you're using a custom Clang installation, you can change the value of the `LLVMInstallDir` property. For more information, see [Set a custom LLVM location](#custom_llvm_location).
 

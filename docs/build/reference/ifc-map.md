@@ -17,7 +17,7 @@ This switch tells the compiler where to find the IFC reference map file, which m
 
 ## Remarks
 
-The `*filename*` argument specifies the IFC reference map file. It can be relative to the compiler's working directory, or an absolute path.
+The *`filename`* argument specifies the IFC reference map file. It can be relative to the compiler's working directory, or an absolute path.
 
 You can provide multiple `/ifcMap` arguments to the compiler.
 
