@@ -6,6 +6,8 @@ f1_keywords: ["iosfwd/std::istringstream", "iosfwd/std::ostringstream", "iosfwd/
 ---
 # `<sstream>` typedefs
 
+`<sstream>` header provides the following typedefs:
+
 ## <a name="istringstream"></a> `istringstream`
 
 Creates a type `basic_istringstream` specialized on a **`char`** template parameter.
