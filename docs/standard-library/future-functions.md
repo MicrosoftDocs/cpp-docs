@@ -7,6 +7,8 @@ helpviewer_keywords: ["std::async [C++]", "std::future_category [C++]", "std::ma
 ---
 # `<future>` functions
 
+The `<future>` header provides the following functions:
+
 ## <a name="async"></a> `async`
 
 Represents an *asynchronous provider*.
