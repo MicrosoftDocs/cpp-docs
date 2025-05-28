@@ -6,6 +6,8 @@ f1_keywords: ["istream/std::swap", "istream/std::ws"]
 ---
 # `<istream>` functions
 
+The `<istream>` header provides the following functions:
+
 ## <a name="istream_swap"></a> swap
 
 Exchanges the elements of two stream objects.
