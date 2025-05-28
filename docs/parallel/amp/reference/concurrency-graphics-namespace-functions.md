@@ -6,7 +6,7 @@ f1_keywords: ["amp_graphics/Concurrency::fast_math::copy_async", "amp_graphics/C
 ---
 # Concurrency::graphics namespace functions
 
-Learn more about the functions in the `Concurrency::graphics` namespace.
+The following functions are available in the `Concurrency::graphics` namespace:
 
 ## <a name="copy"></a> copy Function (Concurrency::graphics Namespace)
 
