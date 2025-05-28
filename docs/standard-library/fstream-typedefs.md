@@ -6,6 +6,8 @@ f1_keywords: ["fstream/std::filebuf", "fstream/std::fstream", "fstream/std::ifst
 ---
 # `<fstream>` typedefs
 
+The following typedefs are defined in the `<fstream>` header file:
+
 ## <a name="filebuf"></a> `filebuf`
 
 A type `basic_filebuf` specialized on **`char`** template parameters.
