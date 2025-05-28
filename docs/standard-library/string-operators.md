@@ -7,6 +7,8 @@ helpviewer_keywords: ["std::operator!= (string)", "std::operator> (string)", "st
 ---
 # `<string>` operators
 
+The `<string>` header provides the following operators:
+
 ## <a name="op_add"></a> operator+
 
 Concatenates two string objects.
