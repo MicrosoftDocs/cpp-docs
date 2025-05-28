@@ -6,6 +6,8 @@ f1_keywords: ["xstring/std::string_view", "xstring/std::u16string_view", "xstrin
 ---
 # `<string_view>` typedefs
 
+The `<string_view>` header provides the following typedefs:
+
 ## <a name="string_view"></a> string_view
 
 A type that describes a specialization of the class template [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type **`char`**.
