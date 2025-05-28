@@ -31,7 +31,7 @@ Unlike older versions of Visual Studio, which have infrequent redist updates, th
 
 ## Latest Microsoft Visual C++ Redistributable Version
 
-The latest version is `14.44.35112.1`
+The latest version is `v14.44.35208.0`
 
 Use the following links to download this version for each supported architecture:
 
