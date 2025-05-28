@@ -6,6 +6,8 @@ f1_keywords: ["string/std::string", "string/std::u16string", "string/std::u32str
 ---
 # `<string>` typedefs
 
+The `<string>` header provides the following typedefs:
+
 ## <a name="string"></a> `string`
 
 A type that describes a specialization of the class template [`basic_string`](../standard-library/basic-string-class.md) with elements of type **`char`**.
