@@ -6,7 +6,9 @@ f1_keywords: ["amp/Concurrency::HLSL_MAX_NUM_BUFFERS", "amp/Concurrency::MODULEN
 ---
 # Concurrency namespace constants (AMP)
 
-## <a name="hlsl_max_num_buffers"></a> HLSL_MAX_NUM_BUFFERS Constant
+The following constants are defined in the `Concurrency` namespace (AMP):
+
+## <a name="hlsl_max_num_buffers"></a> `HLSL_MAX_NUM_BUFFERS` Constant
 
 The maximum number of buffers allowed by DirectX.
 
