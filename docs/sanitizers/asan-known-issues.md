@@ -85,8 +85,6 @@ If all of the code in a process isn't compiled with `/fsanitize=address`, ASan m
 
 If all of the DLLs that were compiled with ASan are unloaded from the process before the process ends, there may be crashes due to dangling references to intercepted functions such as `memcmp`, `memcpy`, `memmove`, and so on. For the best results, compile all modules under test with `/fsanitize=address`, or do not unload modules compiled with ASan after they enter the process.
 
-Please report any bugs to our [Developer Community](https://aka.ms/feedback/report?space=62).
-
 ## See also
 
 [AddressSanitizer overview](asan.md)\
