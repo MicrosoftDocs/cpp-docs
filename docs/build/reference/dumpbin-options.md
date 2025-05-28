@@ -1,9 +1,8 @@
 ---
 title: "DUMPBIN options"
 description: "Reference guide to the Microsoft DUMPBIN utility command-line options."
-ms.date: "02/09/2020"
+ms.date: 02/09/2020
 helpviewer_keywords: ["DUMPBIN program, options"]
-ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
 ---
 # DUMPBIN options
 
@@ -49,7 +48,7 @@ DUMPBIN has the following options:
 
 - [/PDBPATH\[:VERBOSE\]](pdbpath.md)
 
-- [/RANGEE:vaMin\[,vaMax\]](range.md)
+- [/RANGE:vaMin\[,vaMax\]](range.md)
 
 - [/RAWDATA\[:{NONE\|1\|2\|4\|8}\[,#\]\]](rawdata.md)
 
