@@ -182,8 +182,8 @@ Follow these steps to create a project that includes two STL libraries: `<iostre
 1. Replace the contents of the source file as follows:
 
     ```cpp
-    #include <iostream>;
-    #include <vector>;
+    #include <iostream>
+    #include <vector>
     
     int main()
     {

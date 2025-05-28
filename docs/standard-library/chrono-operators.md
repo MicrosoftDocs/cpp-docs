@@ -668,7 +668,7 @@ The right object to compare.
 1\) Returns **`true`** if the number of ticks for the type common to *`Left`* and *`Right`* are equal. Otherwise, returns **`false`**.\
 2\) Returns **`true`** if *`Left`* and *`Right`* represent the same point in time. Otherwise, returns **`false`**.\
 3-17\) Returns **`true`** if *`Left`* and *`Right`* have the same value. Otherwise, returns **`false`**.\
-18\) Returns **`true`** if `Left.name() == Right.name()`. Otherwise, returns `*false*`.\
+18\) Returns **`true`** if `Left.name() == Right.name()`. Otherwise, returns **`false`**.\
 19\) Returns **`true`** if `Left.get_time_zone() == _Right.get_time_zone() && Left.get_sys_time() == Right.get_sys_time();`
 
 ## <a name="op_gt"></a> `operator>`
