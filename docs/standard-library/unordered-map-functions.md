@@ -7,6 +7,8 @@ helpviewer_keywords: ["std::swap (unordered_map/multimap)"]
 ---
 # `<unordered_map>` functions
 
+The `<unordered_map>` header provides the following functions:
+
 ## <a name="swap"></a> swap (unordered_map)
 
 Swaps the contents of two containers.
