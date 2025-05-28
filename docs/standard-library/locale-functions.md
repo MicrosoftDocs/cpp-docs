@@ -7,6 +7,8 @@ helpviewer_keywords: ["std::has_facet [C++]", "std::isalnum [C++]", "std::isalph
 ---
 # `<locale>` functions
 
+The `<locale>` header provides the following functions:
+
 ## <a name="has_facet"></a> has_facet
 
 Tests if a particular facet is stored in a specified locale.
