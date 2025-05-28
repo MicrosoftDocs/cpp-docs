@@ -6,9 +6,9 @@ f1_keywords: ["amp/Concurrency::access_type", "amp/Concurrency::queuing_mode"]
 ---
 # Concurrency namespace enums (AMP)
 
-## <a name="access_type"></a> access_type Enumeration
+The following enumerations are available in the Concurrency namespace:
 
-Enumeration type used to denote the various types of access to data.
+## <a name="access_type"></a> `access_type` enumeration
 
 ```cpp
 enum access_type;
