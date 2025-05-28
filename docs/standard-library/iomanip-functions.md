@@ -7,6 +7,8 @@ helpviewer_keywords: ["std::get_money [C++]", "std::get_time [C++]", "std::put_m
 ---
 # `<iomanip>` functions
 
+The `<iomanip>` header provides the following functions:
+
 ## <a name="iomanip_get_money"></a> `get_money`
 
 Extracts a monetary value from a stream using the specified format, and returns the value in a parameter.
