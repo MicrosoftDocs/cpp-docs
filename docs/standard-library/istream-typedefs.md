@@ -6,6 +6,8 @@ f1_keywords: ["istream/std::iostream", "istream/std::istream", "istream/std::wio
 ---
 # `<istream>` typedefs
 
+The `<istream>` header provides the following typedefs:
+
 ## <a name="iostream"></a> iostream
 
 A type `basic_iostream` specialized on **`char`**.
