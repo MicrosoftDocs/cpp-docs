@@ -6,6 +6,8 @@ f1_keywords: ["unordered_map/std::operator!=", "unordered_map/std::operator=="]
 ---
 # `<unordered_map>` operators
 
+The `<unordered_map>` header provides the following operators:
+
 ## <a name="op_neq"></a> operator!=
 
 Tests whether the [unordered_map](../standard-library/unordered-map-class.md) object on the left side of the operator is not equal to the unordered_map object on the right side.
