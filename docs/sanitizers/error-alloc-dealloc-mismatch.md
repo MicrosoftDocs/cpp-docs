@@ -11,7 +11,7 @@ helpviewer_keywords: ["alloc-dealloc-mismatch error", "AddressSanitizer error al
 
 Enables runtime detection of mismatched memory operations that may lead to undefined behavior, such as:
 - `malloc` must be paired with `free`, not `delete`.
-- `new` must paired with `delete`, not `free`
+- `new` must be paired with `delete`, not `free`.
 - `new[]` must be paired with `delete[]`, not `delete`.
 
 The `alloc`/`dealloc` mismatch functionality in AddressSanitizer is off by default for Windows. To enable it, run `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running the program.
