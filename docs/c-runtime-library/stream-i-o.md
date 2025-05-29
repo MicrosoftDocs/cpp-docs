@@ -44,14 +44,14 @@ These functions process data in different sizes and formats, from single charact
 | [`_getmaxstdio`](./reference/getmaxstdio.md) | Returns the number of simultaneously open files permitted at the stream I/O level. |
 | [`gets_s`, `_getws_s`](./reference/gets-s-getws-s.md) | Read line from **`stdin`** |
 | [`_getw`](./reference/getw.md) | Read binary **`int`** from stream |
-| [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](./reference/printf-printf-l-wprintf-wprintf-l.md),[`printf_s`, `_printf_s_l`, `wprintf_s`, `_wprintf_s_l`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) | Write formatted data to **`stdout`** |
+| [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](./reference/printf-printf-l-wprintf-wprintf-l.md), [`printf_s`, `_printf_s_l`, `wprintf_s`, `_wprintf_s_l`](./reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) | Write formatted data to **`stdout`** |
 | [`putc`, `putwc`](./reference/putc-putwc.md) | Write character to a stream (macro versions of **`fputc`** and **`fputwc`**) |
 | [`putchar`, `putwchar`](./reference/putc-putwc.md) | Write character to **`stdout`** (macro versions of **`fputchar`** and **`fputwchar`**) |
 | [`puts`, `_putws`](./reference/puts-putws.md) | Write line to stream |
 | [`_putw`](./reference/putw.md) | Write binary **`int`** to stream |
 | [`rewind`](./reference/rewind.md) | Move file position to beginning of stream |
 | [`_rmtmp`](./reference/rmtmp.md) | Remove temporary files created by **`tmpfile`** |
-| [`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](./reference/scanf-scanf-l-wscanf-wscanf-l.md),[`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](./reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) | Read formatted data from **`stdin`** |
+| [`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](./reference/scanf-scanf-l-wscanf-wscanf-l.md), [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](./reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) | Read formatted data from **`stdin`** |
 | [`setbuf`](./reference/setbuf.md) | Control stream buffering |
 | [`_setmaxstdio`](./reference/setmaxstdio.md) | Set a maximum for the number of simultaneously open files at the stream I/O level. |
 | [`setvbuf`](./reference/setvbuf.md) | Control stream buffering and buffer size |

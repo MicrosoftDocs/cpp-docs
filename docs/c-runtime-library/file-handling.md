@@ -18,7 +18,7 @@ These routines operate on files designated by a file descriptor.
 
 | Routine | Use |
 |---|---|
-| [`_chsize`](./reference/chsize.md),[`_chsize_s`](./reference/chsize-s.md) | Change file size |
+| [`_chsize`](./reference/chsize.md), [`_chsize_s`](./reference/chsize-s.md) | Change file size |
 | [`_filelength`, `_filelengthi64`](./reference/filelength-filelengthi64.md) | Get file length |
 | [`_fstat`, `_fstat32`, `_fstat64`, `_fstati64`, `_fstat32i64`, `_fstat64i32`](./reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md) | Get file-status information on descriptor |
 | [`_get_osfhandle`](./reference/get-osfhandle.md) | Return operating-system file handle associated with existing C run-time file descriptor |

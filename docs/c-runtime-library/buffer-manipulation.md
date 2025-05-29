@@ -18,7 +18,7 @@ Use these routines to work with areas of memory on a byte-by-byte basis.
 | [`memcmp`, `wmemcmp`](./reference/memcmp-wmemcmp.md) | Compare specified number of characters from two buffers |
 | [`memcpy`, `wmemcpy`](./reference/memcpy-wmemcpy.md), [`memcpy_s`, `wmemcpy_s`](./reference/memcpy-s-wmemcpy-s.md) | Copy specified number of characters from one buffer to another |
 | [`_memicmp`, `_memicmp_l`](./reference/memicmp-memicmp-l.md) | Compare specified number of characters from two buffers without regard to case |
-| [`memmove`, `wmemmove`](./reference/memmove-wmemmove.md),[`memmove_s`, `wmemmove_s`](./reference/memmove-s-wmemmove-s.md) | Copy specified number of characters from one buffer to another |
+| [`memmove`, `wmemmove`](./reference/memmove-wmemmove.md), [`memmove_s`, `wmemmove_s`](./reference/memmove-s-wmemmove-s.md) | Copy specified number of characters from one buffer to another |
 | [`memset`, `wmemset`](./reference/memset-wmemset.md) | Use given character to initialize specified number of bytes in the buffer |
 | [`_swab`](./reference/swab.md) | Swap bytes of data and store them at specified location |
 
