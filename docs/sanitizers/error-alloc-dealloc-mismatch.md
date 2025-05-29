@@ -14,7 +14,7 @@ Enables runtime detection of mismatched memory operations that may lead to undef
 - `new` must be paired with `delete`, not `free` or `delete[]`.
 - `new[]` must be paired with `delete[]`, not `delete` or `free`.
 
-The `alloc`/`dealloc` mismatch functionality in AddressSanitizer is off by default for Windows. To enable it, run `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running the program.
+In Windows, `alloc-dealloc-mismatch` error detection is off by default. To enable it, set the environment variable `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running your program.
 
 ## Example
 
