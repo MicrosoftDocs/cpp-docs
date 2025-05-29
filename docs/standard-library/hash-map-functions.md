@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <hash_map> functions"
 title: "<hash_map> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <hash_map> functions"
+ms.date: 11/04/2016
 f1_keywords: ["hash_map/std::swap", "hash_map/std::swap (hash_map)"]
-ms.assetid: 28748cd0-71f7-41b9-b068-579183645fba
 ---
 # `<hash_map>` functions
 
@@ -19,7 +18,7 @@ Exchanges the elements of two hash_maps.
 
 ```cpp
 void swap(
-    hash_map <Key, Type, Traits, Alloctor>& left,
+    hash_map <Key, Type, Traits, Allocator>& left,
     hash_map <Key, Type, Traits, Allocator>& right);
 ```
 
@@ -44,7 +43,7 @@ Exchanges the elements of two hash_multimaps.
 
 ```cpp
 void swap(
-    hash_multimap <Key, Type, Traits, Alloctor>& left,
+    hash_multimap <Key, Type, Traits, Allocator>& left,
     hash_multimap <Key, Type, Traits, Allocator>& right);
 ```
 

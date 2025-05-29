@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3861"
 title: "Compiler Error C3861"
+description: "Learn more about: Compiler Error C3861"
 ms.date: 06/29/2022
 f1_keywords: ["C3861"]
 helpviewer_keywords: ["C3861"]
-ms.assetid: 0a1eee30-b3db-41b1-b1e5-35949c3924d7
 ---
 # Compiler Error C3861
 
@@ -98,7 +97,7 @@ int main() {
 
 ### ADL and friend functions
 
-The following sample generates C3767 because the compiler can't use argument dependent lookup for `FriendFunc`:
+The following sample generates C3861 because the compiler can't use argument dependent lookup for `FriendFunc`:
 
 ```cpp
 namespace N {

@@ -284,7 +284,7 @@ int main( )
    cout << "The appended string str1d is: "
         << str1d << "." << endl;
    str1d += str3d;
-   cout << "The doubly appended strig str1 is: "
+   cout << "The doubly appended string str1 is: "
         << str1d << "." << endl << endl;
 
    // The fifth member function
@@ -318,7 +318,7 @@ The appended string str1 is: Hello World.
 
 The  string str2d is: Wide
 The appended string str1d is: Hello Wide .
-The doubly appended strig str1 is: Hello Wide World .
+The doubly appended string str1 is: Hello Wide World .
 
 The string str1 appended with exclamations is: Hello !!!!
 
@@ -3350,7 +3350,7 @@ int main( )
    cout << "The appended string str1d is: "
         << str1d << "." << endl;
    str1d += str3d;
-   cout << "The doubly appended strig str1 is: "
+   cout << "The doubly appended string str1 is: "
         << str1d << "." << endl << endl;
 }
 ```
@@ -3364,7 +3364,7 @@ Appending the C-string cstr1b to string str1 gives: Hello Out There.
 
 The string str2d is: Wide
 The appended string str1d is: Hello Wide .
-The doubly appended strig str1 is: Hello Wide World.
+The doubly appended string str1 is: Hello Wide World.
 ```
 
 ## <a name="op_eq"></a> `basic_string::operator=`
