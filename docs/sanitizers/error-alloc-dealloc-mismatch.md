@@ -19,6 +19,7 @@ The `alloc`/`dealloc` mismatch functionality in AddressSanitizer is off by defau
 ## Example
 
 ```cpp
+// example1.cpp
 // Demonstrate alloc-dealloc-mismatch error
 #include <stdio.h>
 #include <stdlib.h>
@@ -43,7 +44,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-Run the following commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts) to run the example:
+In a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts), run the following commands to see an exampe of `alloc_dealloc_mismatch`:
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
@@ -53,7 +54,7 @@ devenv /debugexe example1.exe 2
 
 ### Output
 
-:::image type="content" source="media/alloc-dealloc-mismatch-example-1.png" alt-text="Screenshot of debugger displaying alloc-dealloc-mismatch error in example 1.":::
+:::image type="content" source="media/alloc-dealloc-mismatch-example-1.png" alt-text="Screenshot of debugger displaying alloc-dealloc-mismatch error in example 1." lightbox="media/media/alloc-dealloc-mismatch-example-1.png":::
 
 ## See also
 
