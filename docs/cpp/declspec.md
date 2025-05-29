@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: `__declspec`"
 title: "__declspec"
+description: "Learn more about: `__declspec`"
 ms.date: 1/14/2025
 f1_keywords: ["__declspec_cpp", "__declspec", "_declspec"]
 helpviewer_keywords: ["__declspec keyword [C++]"]

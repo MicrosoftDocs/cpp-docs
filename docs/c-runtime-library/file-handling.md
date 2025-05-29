@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: File Handling"
 title: "File Handling"
-ms.date: "11/04/2016"
+description: "Learn more about: File Handling"
+ms.date: 11/04/2016
 f1_keywords: ["c.files"]
 helpviewer_keywords: ["files [C++], handling", "files [C++], opening", "files [C++], manipulating"]
-ms.assetid: 48119e2e-e94f-4602-b08b-b72440f731d8
 ---
 # File handling
 

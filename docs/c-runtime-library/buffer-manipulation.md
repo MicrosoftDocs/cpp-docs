@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Buffer manipulation"
 title: "Buffer manipulation"
-ms.date: "04/04/2018"
+description: "Learn more about: Buffer manipulation"
+ms.date: 04/04/2018
 helpviewer_keywords: ["buffers, manipulation routines", "buffers"]
-ms.assetid: 164f4860-ce66-412c-8291-396fbd70f03e
 ---
 # Buffer manipulation
 
