@@ -1,26 +1,12 @@
 ---
-description: "Learn more about: <type_traits> functions"
 title: "<type_traits> functions"
-ms.date: "11/04/2016"
-ms.assetid: dce4492f-f3e4-4d5e-bdb4-5875321254ec
+description: "Learn more about: <type_traits> functions"
+ms.date: 11/04/2016
 helpviewer_keywords: ["std::is_assignable", "std::is_copy_assignable", "std::is_copy_constructible", "std::is_default_constructible", "std::is_move_assignable", "std::is_move_constructible", "std::is_nothrow_move_assignable", "std::is_trivially_copy_assignable", "std::is_trivially_move_assignable", "std::is_trivially_move_constructible"]
 ---
 # `<type_traits>` functions
 
-[is_assignable](#is_assignable)\
-[is_copy_assignable](#is_copy_assignable)\
-[is_copy_constructible](#is_copy_constructible)\
-[is_default_constructible](#is_default_constructible)\
-[is_move_assignable](#is_move_assignable)\
-[is_move_constructible](#is_move_constructible)\
-[is_nothrow_move_assignable](#is_nothrow_move_assignable)\
-[is_nothrow_swappable](#is_nothrow_swappable)\
-[is_nothrow_swappable_with](#is_nothrow_swappable_with)\
-[is_swappable](#is_swappable)\
-[is_swappable_with](#is_swappable_with)\
-[is_trivially_copy_assignable](#is_trivially_copy_assignable)\
-[is_trivially_move_assignable](#is_trivially_move_assignable)\
-[is_trivially_move_constructible](#is_trivially_move_constructible)
+The `<type_traits>` header provides the following functions:
 
 ## <a name="is_assignable"></a> is_assignable
 

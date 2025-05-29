@@ -1,20 +1,13 @@
 ---
-description: "Learn more about: <thread> operators"
 title: "<thread> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <thread> operators"
+ms.date: 11/04/2016
 f1_keywords: ["thread/std::operator!=", "thread/std::operator>", "thread/std::operator>=", "thread/std::operator<", "thread/std::operator<<", "thread/std::operator<=", "thread/std::operator=="]
-ms.assetid: e6bb6c0f-64f9-4cb2-9ff2-05b88a6ba7ac
 helpviewer_keywords: ["std::operator!= (thread)", "std::operator> (thread)", "std::operator>= (thread)", "std::operator< (thread)", "std::operator<< (thread)", "std::operator<= (thread)", "std::operator== (thread)"]
 ---
 # `<thread>` operators
 
-[operator!=](#op_neq)\
-[`operator>`](#op_gt)\
-[`operator>=`](#op_gt_eq)\
-[`operator<`](#op_lt)\
-[`operator<<`](#op_lt_lt)\
-[`operator<=`](#op_lt_eq)\
-[operator==](#op_eq_eq)
+The `<thread>` header provides the following operators:
 
 ## <a name="op_gt_eq"></a> `operator>=`
 

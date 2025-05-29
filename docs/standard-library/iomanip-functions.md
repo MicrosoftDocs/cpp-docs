@@ -1,23 +1,13 @@
 ---
-description: "Learn more about: <iomanip> functions"
 title: "<iomanip> functions"
+description: "Learn more about: <iomanip> functions"
 ms.date: 11/19/2021
 f1_keywords: ["iomanip/std::get_money", "iomanip/std::get_time", "iomanip/std::put_money", "iomanip/std::put_time", "iomanip/std::quoted", "iomanip/std::resetiosflags", "iomanip/std::setbase", "iomanip/std::setfill", "iomanip/std::setiosflags", "iomanip/std::setprecision", "iomanip/std::setw"]
 helpviewer_keywords: ["std::get_money [C++]", "std::get_time [C++]", "std::put_money [C++]", "std::put_time [C++]", "std::quoted [C++]", "std::resetiosflags [C++]", "std::setbase [C++]", "std::setfill [C++]", "std::setiosflags [C++]", "std::setprecision [C++]", "std::setw [C++]"]
 ---
 # `<iomanip>` functions
 
-[`get_money`](#iomanip_get_money)\
-[`get_time`](#iomanip_get_time)\
-[`put_money`](#iomanip_put_money)\
-[`put_time`](#iomanip_put_time)\
-[`quoted`](#quoted)\
-[`resetiosflags`](#resetiosflags)\
-[`setbase`](#setbase)\
-[`setfill`](#setfill)\
-[`setiosflags`](#setiosflags)\
-[`setprecision`](#setprecision)\
-[`setw`](#setw)
+The `<iomanip>` header provides the following functions:
 
 ## <a name="iomanip_get_money"></a> `get_money`
 
