@@ -54,7 +54,7 @@ devenv /debugexe example1.exe 2
 
 ### Output
 
-:::image type="content" source="media/alloc-dealloc-mismatch-example-1.png" alt-text="Screenshot of debugger displaying alloc-dealloc-mismatch error in example 1." lightbox="media/media/alloc-dealloc-mismatch-example-1.png":::
+:::image type="content" source="media/alloc-dealloc-mismatch-example-1.png" alt-text="Screenshot of debugger displaying alloc-dealloc-mismatch error in example 1." lightbox="media/alloc-dealloc-mismatch-example-1.png":::
 
 ## See also
 
