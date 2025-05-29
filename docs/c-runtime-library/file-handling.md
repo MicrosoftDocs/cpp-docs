@@ -70,9 +70,7 @@ These routines provide a way to change the representation of the file between a 
 The following Win32 functions also open files and pipes:
 
 - [`CreateFile`](/windows/win32/api/fileapi/nf-fileapi-createfilew)
-
 - [`CreatePipe`](/windows/win32/api/namedpipeapi/nf-namedpipeapi-createpipe)
-
 - [`CreateNamedPipe`](/windows/win32/api/winbase/nf-winbase-createnamedpipea)
 
 ## See also

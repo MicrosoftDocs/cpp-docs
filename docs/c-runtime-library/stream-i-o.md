@@ -76,7 +76,6 @@ Files opened using the stream routines are buffered by default. The **`stdout`**
 There are two ways to commit buffer contents to disk:
 
 - Link with the file COMMODE.OBJ to set a global commit flag. The default setting of the global flag is **`n`**, for "no-commit."
-
 - Set the mode flag to **`c`** with **`fopen`** or **`_fdopen`**.
 
 Any file specifically opened with either the **`c`** or the **`n`** flag behaves according to the flag, regardless of the state of the global commit/no-commit flag.
