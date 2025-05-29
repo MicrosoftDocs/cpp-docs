@@ -6,7 +6,7 @@ f1_keywords: ["iosfwd/std::istringstream", "iosfwd/std::ostringstream", "iosfwd/
 ---
 # `<sstream>` typedefs
 
-`<sstream>` header provides the following typedefs:
+The `<sstream>` header provides the following typedefs:
 
 ## <a name="istringstream"></a> `istringstream`
 
