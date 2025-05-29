@@ -1,7 +1,7 @@
 ---
 title: "Latest supported Visual C++ Redistributable downloads"
 description: "This article lists the download links for the latest versions of Visual C++ Redistributable packages."
-ms.date: 1/15/2025
+ms.date: 5/28/2025
 helpviewer_keywords:
   [
     "redist",
@@ -29,9 +29,9 @@ This table lists the latest supported English (en-US) Microsoft Visual C++ Redis
 
 Unlike older versions of Visual Studio, which have infrequent redist updates, the version number isn't listed in the following table for Visual Studio 2015-2022 because the redist is updated frequently. To find the version number of the latest redist, download the redist you're interested in using one of the following links. Then, look at its properties using Windows File Explorer. In the **Details** pane, the **File version** contains the version of the redist.
 
-## Latest Microsoft Visual C++ Redistributable Version
+## Latest Microsoft Visual C++ Redistributable version
 
-The latest version is `14.44.35112.1`
+The latest version is `v14.44.35208.0`
 
 Use the following links to download this version for each supported architecture:
 
