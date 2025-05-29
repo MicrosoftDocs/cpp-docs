@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: mbrtowc"
 title: "mbrtowc"
-ms.date: "4/2/2020"
+description: "Learn more about: mbrtowc"
+ms.date: 4/2/2020
 api_name: ["mbrtowc", "_o_mbrtowc"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbrtowc"]
 helpviewer_keywords: ["mbrtowc function"]
-ms.assetid: a1e87fcc-6de0-4ca1-bf26-508d28490286
 ---
 # `mbrtowc`
 
@@ -100,7 +99,7 @@ int Sample(char* szIn, wchar_t* wcOut, int nMax)
     szLocal = setlocale(LC_ALL, "French_Canada.1252");
     if (!szLocal)
     {
-        printf("The fuction setlocale(LC_ALL, \"French_Canada.1252\") failed!\n");
+        printf("The function setlocale(LC_ALL, \"French_Canada.1252\") failed!\n");
         return 1;
     }
 
@@ -110,7 +109,7 @@ int Sample(char* szIn, wchar_t* wcOut, int nMax)
     // from a previous call to setlocale.
     if (_setmbcp(_MB_CP_SBCS) == -1)
     {
-        printf("The fuction _setmbcp(_MB_CP_SBCS) failed!");
+        printf("The function _setmbcp(_MB_CP_SBCS) failed!");
         return 1;
     }
 

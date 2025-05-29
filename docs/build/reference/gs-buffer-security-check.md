@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /GS (Buffer Security Check)"
 title: "/GS (Buffer Security Check)"
-ms.date: "11/04/2016"
+description: "Learn more about: /GS (Buffer Security Check)"
+ms.date: 11/04/2016
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.BufferSecurityCheck", "VC.Project.VCCLCompilerTool.BufferSecurityCheck"]
 helpviewer_keywords: ["buffers [C++], buffer overruns", "buffer overruns, compiler /GS switch", "GS compiler option [C++]", "/GS compiler option [C++]", "security check compiler option [C++]", "-GS compiler option [C++]", "buffers [C++], avoiding overruns"]
-ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
 ---
 # /GS (Buffer Security Check)
 
@@ -29,11 +28,8 @@ On functions that the compiler recognizes as subject to buffer overrun problems,
 A buffer overrun security check is performed on a *GS buffer*. A GS buffer can be one of these:
 
 - An array that is larger than 4 bytes, has more than two elements, and has an element type that is not a pointer type.
-
 - A data structure whose size is more than 8 bytes and contains no pointers.
-
-- A buffer allocated by using the [_alloca](../../c-runtime-library/reference/alloca.md) function.
-
+- A buffer allocated by using the [`_alloca`](../../c-runtime-library/reference/alloca.md) function.
 - Any class or structure that contains a GS buffer.
 
 For example, the following statements declare GS buffers.
@@ -57,16 +53,14 @@ struct { int a; int b; };
 
 ## Initialize the Security Cookie
 
-The **/GS** compiler option requires that the security cookie be initialized before any function that uses the cookie is run. The security cookie must be initialized immediately on entry to an EXE or DLL. This is done automatically if you use the default VCRuntime entry points: mainCRTStartup, wmainCRTStartup, WinMainCRTStartup, wWinMainCRTStartup, or _DllMainCRTStartup. If you use an alternate entry point, you must manually initialize the security cookie by calling [__security_init_cookie](../../c-runtime-library/reference/security-init-cookie.md).
+The **/GS** compiler option requires that the security cookie be initialized before any function that uses the cookie is run. The security cookie must be initialized immediately on entry to an EXE or DLL. This is done automatically if you use the default VCRuntime entry points: `mainCRTStartup`, `wmainCRTStartup`, `WinMainCRTStartup`, `wWinMainCRTStartup`, or `_DllMainCRTStartup`. If you use an alternate entry point, you must manually initialize the security cookie by calling [`__security_init_cookie`](../../c-runtime-library/reference/security-init-cookie.md).
 
 ## What Is Protected
 
 The **/GS** compiler option protects the following items:
 
 - The return address of a function call.
-
 - The address of an exception handler for a function.
-
 - Vulnerable function parameters.
 
 On all platforms, **/GS** attempts to detect buffer overruns into the return address. Buffer overruns are more easily exploited on platforms such as x86 and x64, which use calling conventions that store the return address of a function call on the stack.
@@ -80,15 +74,10 @@ A vulnerable parameter is allocated before the cookie and local variables. A buf
 The compiler does not make copies of vulnerable parameters in the following situations:
 
 - Functions that do not contain a GS buffer.
-
-- Optimizations ([/O options](o-options-optimize-code.md)) are not enabled.
-
+- Optimizations ([`/O` options](o-options-optimize-code.md)) are not enabled.
 - Functions that have a variable argument list (...).
-
 - Functions that are marked with [naked](../../cpp/naked-cpp.md).
-
 - Functions that contain inline assembly code in the first statement.
-
 - A parameter is used only in ways that are less likely to be exploitable in the event of a buffer overrun.
 
 ## What Is Not Protected
@@ -100,9 +89,7 @@ Even if you use **/GS**, always try to write secure code that has no buffer over
 ### To set this compiler option in Visual Studio
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
 1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
-
 1. Modify the **Buffer Security Check** property.
 
 ### To set this compiler option programmatically
@@ -138,5 +125,5 @@ int main() {
 
 ## See also
 
-[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)\
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

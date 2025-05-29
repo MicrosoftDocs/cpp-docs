@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CSize Class"
 title: "CSize Class"
-ms.date: "10/18/2018"
+description: "Learn more about: CSize Class"
+ms.date: 10/18/2018
 f1_keywords: ["CSize", "ATLTYPES/ATL::CSize", "ATLTYPES/ATL::CSize::CSize"]
 helpviewer_keywords: ["SIZE", "dimensions, MFC", "dimensions", "CSize class"]
-ms.assetid: fb2cf85a-0bc1-46f8-892b-309c108b52ae
 ---
 # CSize Class
 
@@ -101,7 +100,7 @@ BOOL operator==(SIZE size) const throw();
 
 ### Remarks
 
-Returns nonzero if the sizes are equal, otherwize 0.
+Returns nonzero if the sizes are equal, otherwise 0.
 
 ### Example
 

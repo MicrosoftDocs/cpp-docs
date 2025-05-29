@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: bernoulli_distribution Class"
 title: "bernoulli_distribution Class"
-ms.date: "11/04/2016"
+description: "Learn more about: bernoulli_distribution Class"
+ms.date: 11/04/2016
 f1_keywords: ["random/std::bernoulli_distribution", "random/std::bernoulli_distribution::reset", "random/std::bernoulli_distribution::p", "random/std::bernoulli_distribution::param", "random/std::bernoulli_distribution::min", "random/std::bernoulli_distribution::max", "random/std::bernoulli_distribution::operator()", "random/std::bernoulli_distribution::param_type", "random/std::bernoulli_distribution::param_type::p", "random/std::bernoulli_distribution::param_type::operator==", "random/std::bernoulli_distribution::param_type::operator!="]
 helpviewer_keywords: ["std::bernoulli_distribution [C++]", "std::bernoulli_distribution [C++], reset", "std::bernoulli_distribution [C++], p", "std::bernoulli_distribution [C++], param", "std::bernoulli_distribution [C++], min", "std::bernoulli_distribution [C++], max", "std::bernoulli_distribution [C++], param_type", "std::bernoulli_distribution [C++], param_type"]
-ms.assetid: 586bcde1-95ca-411a-bf17-4aaf19482f34
 ---
 # bernoulli_distribution Class
 
@@ -14,30 +13,30 @@ Generates a Bernoulli distribution.
 
 ```cpp
 class bernoulli_distribution
-   {
+{
 public:
-   // types
-   typedef bool result_type;
-   struct param_type;
+    // types
+    typedef bool result_type;
+    struct param_type;
 
-   // constructors and reset functions
-   explicit bernoulli_distribution(double p = 0.5);
-   explicit bernoulli_distribution(const param_type& parm);
-   void reset();
+    // constructors and reset functions
+    explicit bernoulli_distribution(double p = 0.5);
+    explicit bernoulli_distribution(const param_type& parm);
+    void reset();
 
-   // generating functions
-   template <class URNG>
-   result_type operator()(URNG& gen);
-   template <class URNG>
-   result_type operator()(URNG& gen, const param_type& parm);
+    // generating functions
+    template <class URNG>
+    result_type operator()(URNG& gen);
+    template <class URNG>
+    result_type operator()(URNG& gen, const param_type& parm);
 
-   // property functions
-   double p() const;
-   param_type param() const;
-   void param(const param_type& parm);
-   result_type min() const;
-   result_type max() const;
-   };
+    // property functions
+    double p() const;
+    param_type param() const;
+    void param(const param_type& parm);
+    result_type min() const;
+    result_type max() const;
+};
 ```
 
 ### Parameters
@@ -161,6 +160,7 @@ The second constructor constructs an object whose stored parameters are initiali
 
 Contains the parameters of the distribution.
 
+```cpp
 struct param_type {
    typedef bernoulli_distribution distribution_type;
    param_type(double p = 0.5);
@@ -169,6 +169,7 @@ struct param_type {
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
    };
+```
 
 ### Parameters
 
