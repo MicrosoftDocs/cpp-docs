@@ -1,3 +1,7 @@
+---
+ms.date: 02/28/2025
+ms.topic: include
+---
 > [!IMPORTANT]
 > The Visual Studio compilers and build tools can report many kinds of errors and warnings. After an error or warning is found, the build tools may make assumptions about code intent and attempt to continue, so that more issues can be reported at the same time. If the tools make the wrong assumption, later errors or warnings may not apply to your project. When you correct issues in your project, always start with the first error or warning that's reported, and rebuild often. One fix may resolve multiple subsequent errors.
 
