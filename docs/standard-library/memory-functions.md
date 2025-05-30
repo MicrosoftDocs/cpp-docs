@@ -768,6 +768,7 @@ struct owner_less<shared_ptr<T>>
 
 template <class T>
 struct owner_less<weak_ptr<T>>
+{
     bool operator()(
         const weak_ptr<T>& left,
         const weak_ptr<T>& right) const noexcept;
