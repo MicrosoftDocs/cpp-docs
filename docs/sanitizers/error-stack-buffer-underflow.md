@@ -1,6 +1,6 @@
 ---
 title: "Error: stack-buffer-underflow"
-description: "Source examples and live debug screenshots for Stack buffer underflow errors."
+description: "Learn about the stack-buffer-underflow Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["stack-buffer-underflow"]
 helpviewer_keywords: ["stack-buffer-underflow error", "AddressSanitizer error stack-buffer-underflow"]

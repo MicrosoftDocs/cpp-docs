@@ -1,6 +1,6 @@
 ---
 title: "Error: heap-use-after-free"
-description: "Source examples and live debug screenshots for heap use after free errors."
+description: "Learn about the heap-use-after-free Address Sanitizer error."
 ms.date: 04/06/2023
 f1_keywords: ["heap-use-after-free"]
 helpviewer_keywords: ["heap-use-after-free error", "AddressSanitizer error heap-use-after-free"]
