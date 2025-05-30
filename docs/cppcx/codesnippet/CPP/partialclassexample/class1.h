@@ -21,7 +21,7 @@ namespace PartialClassExample
 
     /*
     // This is commented out because it causes 
-    // a compile error in Delcaration #6 due to mc already being defined.
+    // a compile error in Declaration #6 due to mc already being defined.
     // the error is understood. The example is most effective showing
     // the various declaration rules all in one example like this.
     //<snippet03>

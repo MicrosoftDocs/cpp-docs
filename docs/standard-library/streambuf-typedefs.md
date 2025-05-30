@@ -1,14 +1,12 @@
 ---
-description: "Learn more about: <streambuf> typedefs"
 title: "<streambuf> typedefs"
-ms.date: "11/04/2016"
+description: "Learn more about: <streambuf> typedefs"
+ms.date: 11/04/2016
 f1_keywords: ["iosfwd/std::streambuf", "iosfwd/std::wstreambuf"]
-ms.assetid: 2678e18f-f0f0-4995-bc53-f1bc7dfc4ec6
 ---
 # `<streambuf>` typedefs
 
-[streambuf](#streambuf)\
-[wstreambuf](#wstreambuf)
+The `<streambuf>` header provides the following typedefs:
 
 ## <a name="streambuf"></a> streambuf
 

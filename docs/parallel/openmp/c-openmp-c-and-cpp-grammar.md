@@ -1,15 +1,13 @@
 ---
-description: "Learn more about: C. OpenMP C and C++ grammar"
 title: "C. OpenMP C and C++ grammar"
-ms.date: "01/16/2019"
-ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
+description: "Learn more about: C. OpenMP C and C++ grammar"
+ms.date: 01/16/2019
 ---
 # C. OpenMP C and C++ grammar
 
-[C.1 Notation](#c1-notation)<br/>
-[C.2 Rules](#c2-rules)
+Learn about the grammar rules and syntax extensions in C and C++ for OpenMP, a parallel programming framework.
 
-## C.1 Notation
+## C.1 notation
 
 The grammar rules consist of the name for a non-terminal, followed by a colon, followed by replacement alternatives on separate lines.
 
@@ -22,7 +20,7 @@ The syntactic expression *term*<sub>optseq</sub> is equivalent to *term-seq*<sub
 &emsp;*term-seq* *term*\
 &emsp;*term-seq*   `,` *term*
 
-## C.2 Rules
+## C.2 rules
 
 The notation is described in section 6.1 of the C standard. This grammar appendix shows the extensions to the base language grammar for the OpenMP C and C++ directives.
 

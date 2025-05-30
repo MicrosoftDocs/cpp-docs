@@ -1,16 +1,12 @@
 ---
-description: "Learn more about: <istream> typedefs"
 title: "<istream> typedefs"
-ms.date: "11/04/2016"
+description: "Learn more about: <istream> typedefs"
+ms.date: 11/04/2016
 f1_keywords: ["istream/std::iostream", "istream/std::istream", "istream/std::wiostream", "istream/std::wistream"]
-ms.assetid: 55bc1f84-53a7-46ca-a36f-ac6ef75d0374
 ---
 # `<istream>` typedefs
 
-[iostream](#iostream)\
-[istream](#istream)\
-[wiostream](#wiostream)\
-[wistream](#wistream)
+The `<istream>` header provides the following typedefs:
 
 ## <a name="iostream"></a> iostream
 
