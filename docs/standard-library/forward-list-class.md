@@ -350,7 +350,7 @@ The element added to the beginning of the forward list.
 
 ### Remarks
 
-This member function inserts an element with the constructor arguments `_ val` at the end of the controlled sequence.
+This member function inserts an element with the constructor arguments `val` at the beginning of the controlled sequence.
 
 If an exception is thrown, the container is left unaltered and the exception is rethrown.
 
