@@ -1,25 +1,13 @@
 ---
-description: "Learn more about: <string> functions"
 title: "<string> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <string> functions"
+ms.date: 11/04/2016
 f1_keywords: ["string/std::getline", "string/std::stod", "string/std::stof", "string/std::stoi", "string/std::stol", "string/std::stold", "string/std::stoll", "string/std::stoul", "string/std::stoull", "string/std::swap", "string/std::to_string", "string/std::to_wstring"]
-ms.assetid: 1a4ffd11-dce5-4cc6-a043-b95de034c7c4
 helpviewer_keywords: ["std::getline [C++]", "std::stod [C++]", "std::stof [C++]", "std::stoi [C++]", "std::stol [C++]", "std::stold [C++]", "std::stoll [C++]", "std::stoul [C++]", "std::stoull [C++]", "std::swap [C++]", "std::to_string [C++]", "std::to_wstring [C++]"]
 ---
 # `<string>` functions
 
-[`getline`](#getline)\
-[`stod`](#stod)\
-[`stof`](#stof)\
-[`stoi`](#stoi)\
-[`stol`](#stol)\
-[`stold`](#stold)\
-[`stoll`](#stoll)\
-[`stoul`](#stoul)\
-[`stoull`](#stoull)\
-[`swap`](#swap)\
-[`to_string`](#to_string)\
-[`to_wstring`](#to_wstring)
+The `<string>` header provides the following functions:
 
 ## <a name="getline"></a> `getline`
 

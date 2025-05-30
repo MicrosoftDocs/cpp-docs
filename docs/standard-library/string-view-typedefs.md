@@ -1,15 +1,12 @@
 ---
-description: "Learn more about: <string_view> typedefs"
 title: "<string_view> typedefs"
-ms.date: "04/19/2019"
+description: "Learn more about: <string_view> typedefs"
+ms.date: 04/19/2019
 f1_keywords: ["xstring/std::string_view", "xstring/std::u16string_view", "xstring/std::u32string_view", "xstring/std::wstring_view"]
 ---
 # `<string_view>` typedefs
 
-[string_view](#string_view)\
-[u16string_view](#u16string_view)\
-[u32string_view](#u32string_view)\
-[wstring_view](#wstring_view)
+The `<string_view>` header provides the following typedefs:
 
 ## <a name="string_view"></a> string_view
 

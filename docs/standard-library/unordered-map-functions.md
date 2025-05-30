@@ -1,14 +1,13 @@
 ---
 title: "<unordered_map> functions"
 description: "Learn more about: <unordered_map> functions"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["unordered_map/std::swap", "unordered_map/std::swap (unordered_map)", "unordered_map/std::swap (unordered_multimap)"]
 helpviewer_keywords: ["std::swap (unordered_map/multimap)"]
 ---
 # `<unordered_map>` functions
 
-[swap (unordered_map)](#swap)\
-[swap (unordered_multimap)](#swap_function_multimap)
+The `<unordered_map>` header provides the following functions:
 
 ## <a name="swap"></a> swap (unordered_map)
 

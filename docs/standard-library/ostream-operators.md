@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: <ostream> operators"
 title: "<ostream> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <ostream> operators"
+ms.date: 11/04/2016
 f1_keywords: ["ostream/std::operator<<"]
-ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
 ---
 # `<ostream>` operators
 
-[`operator<<`](#op_lt_lt)
+The `<ostream>` header provides the following operators:
 
 ## <a name="op_lt_lt"></a> `operator<<`
 

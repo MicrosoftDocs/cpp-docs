@@ -1,30 +1,12 @@
 ---
-description: "Learn more about: <regex> typedefs"
 title: "<regex> typedefs"
-ms.date: "11/04/2016"
+description: "Learn more about: <regex> typedefs"
+ms.date: 11/04/2016
 f1_keywords: ["regex/std::cmatch", "regex/std::cregex_iterator", "regex/std::cregex_token_iterator", "regex/std::csub_match", "regex/std::regex", "regex/std::smatch", "regex/std::sregex_iterator", "regex/std::sregex_token_iterator", "regex/std::ssub_match", "regex/std::wcmatch", "regex/std::wcregex_iterator", "regex/std::wcregex_token_iterator", "regex/std::wcsub_match", "regex/std::wregex", "regex/std::wsmatch", "regex/std::wsregex_iterator", "regex/std::wsregex_token_iterator", "regex/std::wssub_match"]
-ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
 ---
 # `<regex>` typedefs
 
-[cmatch](#cmatch)\
-[cregex_iterator](#cregex_iterator)\
-[cregex_token_iterator](#cregex_token_iterator)\
-[csub_match](#csub_match)\
-[regex](#regex)\
-[smatch](#smatch)\
-[sregex_iterator](#sregex_iterator)\
-[sregex_token_iterator](#sregex_token_iterator)\
-[ssub_match](#ssub_match)\
-[wcmatch](#wcmatch)\
-[wcregex_iterator](#wcregex_iterator)\
-[wcregex_token_iterator](#wcregex_token_iterator)\
-[wcsub_match](#wcsub_match)\
-[wregex](#wregex)\
-[wsmatch](#wsmatch)\
-[wsregex_iterator](#wsregex_iterator)\
-[wsregex_token_iterator](#wsregex_token_iterator)\
-[wssub_match](#wssub_match)
+The `<regex>` header provides the following typedefs:
 
 ## <a name="cmatch"></a> cmatch Typedef
 
