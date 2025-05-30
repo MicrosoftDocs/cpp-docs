@@ -31,7 +31,7 @@ Visual C++ might generate this warning for a code path that never executes. You 
 ```cpp
 #pragma warning( push )
 #pragma warning( disable : 4789 )
-// unused code that generates compiler warning C4789`
+// unused code that generates compiler warning C4789
 #pragma warning( pop )
 ```
 
