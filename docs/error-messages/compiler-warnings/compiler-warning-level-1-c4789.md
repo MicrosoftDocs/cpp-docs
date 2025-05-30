@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (Level 1) C4789"
 title: "Compiler Warning (Level 1) C4789"
+description: "Learn more about: Compiler Warning (Level 1) C4789"
 ms.date: 08/30/2022
 f1_keywords: ["C4789"]
 helpviewer_keywords: ["C4789"]
-ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
 ---
 # Compiler Warning (Level 1) C4789
 
