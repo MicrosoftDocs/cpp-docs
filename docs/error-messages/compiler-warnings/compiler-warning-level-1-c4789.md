@@ -19,9 +19,7 @@ ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
 The warning occurs if the copy uses the intrinsic form of one of these CRT functions:
 
 - [`strcpy`](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)
-
 - [`memset`](../../c-runtime-library/reference/memset-wmemset.md)
-
 - [`memcpy`](../../c-runtime-library/reference/memcpy-wmemcpy.md), [`wmemcpy`](../../c-runtime-library/reference/memcpy-wmemcpy.md)
 
 The warning also appears when you cast a parameter to a larger data type, and then make a copy assignment from an lvalue reference.
@@ -41,7 +39,7 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Examples
 
-The following sample generates C4789.
+The following sample generates C4789:
 
 ```cpp
 // C4789.cpp
@@ -63,7 +61,7 @@ int main()
 }
 ```
 
-The following sample also generates C4789.
+The following sample also generates C4789:
 
 ```cpp
 // C4789b.cpp
