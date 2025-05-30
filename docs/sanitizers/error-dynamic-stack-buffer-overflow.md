@@ -1,6 +1,6 @@
 ---
 title: "Error: dynamic-stack-buffer-overflow"
-description: "Source examples and live debug screenshots for alloca errors."
+description: "Learn about the dynamic-stack-buffer-overflow Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["dynamic-stack-buffer-overflow"]
 helpviewer_keywords: ["dynamic-stack-buffer-overflow error", "AddressSanitizer error dynamic-stack-buffer-overflow"]

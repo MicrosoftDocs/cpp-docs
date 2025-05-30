@@ -1,6 +1,6 @@
 ---
 title: "Error: memcpy-param-overlap"
-description: "Source examples and live debug screenshots for memcpy parameter overlap errors."
+description: "Learn about the memcpy-param-overlap Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["memcpy-param-overlap"]
 helpviewer_keywords: ["memcpy-param-overlap error", "AddressSanitizer error memcpy-param-overlap"]

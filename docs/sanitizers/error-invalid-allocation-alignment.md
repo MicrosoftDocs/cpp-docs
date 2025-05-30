@@ -1,6 +1,6 @@
 ---
 title: "Error: invalid-allocation-alignment"
-description: "Source examples and live debug screenshots for invalid _aligned_malloc errors."
+description: "Learn about the invalid-allocation-alignment Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["invalid-allocation-alignment"]
 helpviewer_keywords: ["invalid-allocation-alignment error", "AddressSanitizer error invalid-allocation-alignment"]

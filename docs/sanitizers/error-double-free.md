@@ -1,6 +1,6 @@
 ---
 title: "Error: double-free"
-description: "Source examples and live debug screenshots for double free errors."
+description: "Learn about the double-free Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["double-free"]
 helpviewer_keywords: ["double-free error", "AddressSanitizer error double-free"]
