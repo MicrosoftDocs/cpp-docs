@@ -8,6 +8,8 @@ helpviewer_keywords: ["std::addressof [C++]", "std::align [C++]", "std::allocate
 ---
 # `<memory>` functions
 
+The `<memory>` header provides the following functions:
+
 ## <a name="addressof"></a> `addressof`
 
 Gets the true address of an object.
