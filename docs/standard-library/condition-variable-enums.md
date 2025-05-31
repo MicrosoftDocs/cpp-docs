@@ -6,6 +6,8 @@ f1_keywords: ["condition_variable/std::cv_status"]
 ---
 # `<condition_variable>` enums
 
+The `<condition_variable>` header provides the following enums:
+
 ## <a name="cv_status"></a> cv_status
 
 Supplies symbolic names for the return values of the methods of class template [condition_variable](../standard-library/condition-variable-class.md).
