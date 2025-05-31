@@ -797,6 +797,8 @@ items:
           href: recursive-mutex-class.md
         - name: recursive_timed_mutex class
           href: recursive-timed-mutex-class.md
+        - name: scoped_lock class
+          href: scoped-lock-class.md
         - name: timed_mutex class
           href: timed-mutex-class.md
         - name: try_to_lock_t struct
