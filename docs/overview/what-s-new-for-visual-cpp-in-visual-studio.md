@@ -220,7 +220,7 @@ A partial list of new features:
 - **Standard Library Enhancements**
     - The formatted output implementation now includes `std::range_formatter` and formatters for `std::pair` and `std::tuple`.
     - Added support for `std::println()` with no arguments. This prints a blank line as proposed in [P3142R0](https://wg21.link/P3142R0).
-    - Improved vectorization for several algorithms including `replace_copy()`, `replace_copy_if()`, `ranges::replace_copy`, `ranges::replace_copy_if`, `find_first_of()` and `ranges::find_first_of`, for 8-bit and 16-bit elements, `mismatch()`, `ranges::mismatch`, `count()` `ranges::count`, `find()`, `ranges::find`, `ranges::find_last`, and `ranges::iota`.
+    - Improved vectorization for several algorithms including `replace_copy()`, `replace_copy_if()`, `ranges::replace_copy`, `ranges::replace_copy_if`, `find_first_of()` and `ranges::find_first_of`, for 8-bit and 16-bit elements, `mismatch()`, `ranges::mismatch`, `count()`, `ranges::count`, `find()`, `ranges::find`, `ranges::find_last`, and `ranges::iota`.
 
 - **Game development in C++**
     - You can now add common Unreal Engine class templates, modules, and plugins from within Visual Studio. For more information, see [Add Unreal Engine classes, modules, and plugins in Visual Studio](/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-add-class-module-plugin).

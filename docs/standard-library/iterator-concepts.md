@@ -70,7 +70,7 @@ In the following table, "Example types" refers to collections/iterators that sat
 | [`forward_iterator`](#forward_iterator)<sup>C++20</sup> | Specifies an iterator that can read (and possibly write) multiple times. | Forward | Read/write | yes | `vector`, `list` |
 | [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write both forwards and backwards. | Forward or backward | Read/write | yes | `list`, `set`, `multiset`, `map`, and `multimap`. |
 | [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write by index. | Forward or backward | Read/write | yes | `vector`, `array`, `deque` |
-| [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory, are the same size, and can be accessed using pointer arithmetic. | Forward or backward | Read/write | yes | `array`, `vector` `string`.|
+| [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory, are the same size, and can be accessed using pointer arithmetic. | Forward or backward | Read/write | yes | `array`, `vector`, `string`.|
 
 Other iterator concepts include:
 
