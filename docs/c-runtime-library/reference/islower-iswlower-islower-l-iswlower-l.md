@@ -54,7 +54,7 @@ The behavior of **`islower`** and **`_islower_l`** is undefined if *`c`* isn't E
 | TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_istlower` | **`islower`** | [`_ismbclower`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md) | **`iswlower`** |
-| **`_istlower_l`** | `_islower _l` | [`_ismbclower_l`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md) | **`_liswlower_l`** |
+| **`_istlower_l`** | `_islower_l` | [`_ismbclower_l`](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md) | **`_liswlower_l`** |
 
 ## Remarks
 
