@@ -63,10 +63,10 @@ By default, this function's global state is scoped to the application. To change
 
 | Routine | Required header |
 |---|---|
-| **`islower`** | \<ctype.h> |
-| **`iswlower`** | \<ctype.h> or \<wchar.h> |
-| **`_islower_l`** | \<ctype.h> |
-| **`_swlower_l`** | \<ctype.h> or \<wchar.h> |
+| **`islower`** | `<ctype.h>` |
+| **`iswlower`** | `<ctype.h>` or `<wchar.h>` |
+| **`_islower_l`** | `<ctype.h>` |
+| **`_swlower_l`** | `<ctype.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

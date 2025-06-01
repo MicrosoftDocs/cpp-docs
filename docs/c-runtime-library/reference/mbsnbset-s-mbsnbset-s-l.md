@@ -95,8 +95,8 @@ By default, this function's global state is scoped to the application. To change
 
 | Routine | Required header |
 |---|---|
-| **`_mbsnbset_s`** | \<mbstring.h> |
-| **`_mbsnbset_s_l`** | \<mbstring.h> |
+| **`_mbsnbset_s`** | `<mbstring.h>` |
+| **`_mbsnbset_s_l`** | `<mbstring.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
