@@ -1,6 +1,6 @@
 ---
 title: "Error: calloc-overflow"
-description: "Source examples and live debug screenshots for calloc overflow errors."
+description: "Learn about the calloc-overflow Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["calloc-overflow"]
 helpviewer_keywords: ["calloc-overflow error", "AddressSanitizer error calloc-overflow"]

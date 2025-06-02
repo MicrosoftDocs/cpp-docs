@@ -137,7 +137,7 @@ For an in-depth summary of changes made to the Standard Template Library, includ
 
 This is a source/binary breaking change.
 
-The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. The [C++ Core Guidelines (C.164)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conversion) discourage implicit conversion functions. And `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
+The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. [C.164: Avoid implicit conversion operators](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c164-avoid-implicit-conversion-operators) in the C++ Core Guidelines discourage implicit conversion functions. And `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
 
 To address this, the conversion to `bool` is now explicit. The conversion to `Interface*` is unchanged.
 

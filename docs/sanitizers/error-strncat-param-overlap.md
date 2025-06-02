@@ -1,6 +1,6 @@
 ---
 title: "Error: strncat-param-overlap"
-description: "Source examples and live debug screenshots for strcat parameter overlap errors."
+description: "Learn about the strncat-param-overlap Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["strncat-param-overlap"]
 helpviewer_keywords: ["strncat-param-overlap error", "AddressSanitizer error strcat-param-overlap"]

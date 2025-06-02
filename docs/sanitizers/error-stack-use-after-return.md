@@ -1,6 +1,6 @@
 ---
 title: "Error: stack-use-after-return"
-description: "Source examples and live debug screenshots for Stack Use After Return errors."
+description: "Learn about the stack-use-after-return Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["stack-use-after-return"]
 helpviewer_keywords: ["stack-use-after-return error", "AddressSanitizer error stack-use-after-return"]
