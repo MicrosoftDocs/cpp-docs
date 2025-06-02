@@ -14,10 +14,12 @@ The `<limits>` header provides the following enums:
 The enumeration describes the various methods that an implementation can choose for representing a denormalized floating-point value — one too small to represent as a normalized value:
 
 ```cpp
-enum float_denorm_style {
+enum float_denorm_style
+{
     denorm_indeterminate = -1,
     denorm_absent = 0,
-    denorm_present = 1    };
+    denorm_present = 1
+};
 ```
 
 ### Return Value
@@ -39,12 +41,14 @@ See [`numeric_limits::has_denorm`](../standard-library/numeric-limits-class.md#h
 The enumeration describes the various methods that an implementation can choose for rounding a floating-point value to an integer value.
 
 ```cpp
-enum float_round_style {
+enum float_round_style
+{
     round_indeterminate = -1,
     round_toward_zero = 0,
     round_to_nearest = 1,
     round_toward_infinity = 2,
-    round_toward_neg_infinity = 3    };
+    round_toward_neg_infinity = 3
+};
 ```
 
 ### Return Value
