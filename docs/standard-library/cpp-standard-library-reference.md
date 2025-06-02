@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: C++ Standard Library Reference (STL)"
 title: "C++ Standard Library Reference"
-ms.date: "3/5/2021"
+description: "Learn more about: C++ Standard Library Reference (STL)"
+ms.date: 3/5/2021
 helpviewer_keywords: ["C++ Standard Library, reference", "C++ Standard Library", "template libraries", "libraries, Standard C++", "Microsoft standard template library, reference", "Microsoft STL, reference"]
 ---
 
