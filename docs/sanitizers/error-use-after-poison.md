@@ -1,6 +1,6 @@
 ---
 title: "Error: use-after-poison"
-description: "Source examples and live debug screenshots for use after poison errors."
+description: "Learn about the use-after-poison Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["use-after-poison"]
 helpviewer_keywords: ["use-after-poison error", "AddressSanitizer error use-after-poison"]

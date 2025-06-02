@@ -8,7 +8,7 @@ monikerRange: ">=msvc-170"
 ---
 # `lnt-make-member-function-const`
 
-When a member function doesn't modify the object's state, annotate it with the `const` keyword. This guidance comes from the [C++ Core Guideline Con.2](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con2-by-default-make-member-functions-const).
+When a member function doesn't modify the object's state, annotate it with the `const` keyword. This guidance comes from [Con.2: By default, make member functions `const`](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con2-by-default-make-member-functions-const) in the C++ Core Guidelines.
 
 ## Example
 

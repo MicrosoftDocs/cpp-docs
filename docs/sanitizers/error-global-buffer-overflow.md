@@ -1,6 +1,6 @@
 ---
 title: "Error: global-buffer-overflow"
-description: "Source examples and live debug screenshots for global variable overflow errors."
+description: "Learn about the global-buffer-overflow Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["global-buffer-overflow"]
 helpviewer_keywords: ["global-buffer-overflow error", "AddressSanitizer error global-buffer-overflow"]
