@@ -34,7 +34,7 @@ The enumeration returns:
 
 ### Example
 
-See [`numeric_limits::has_denorm`](../standard-library/numeric-limits-class.md#has_denorm) for an example in which the values of this enumeration may be accessed.
+See [`numeric_limits::has_denorm`](numeric-limits-class.md#has_denorm) for an example in which the values of this enumeration may be accessed.
 
 ## <a name="float_round_style"></a> `float_round_style`
 
@@ -67,4 +67,4 @@ The enumeration returns:
 
 ### Example
 
-See [`numeric_limits::round_style`](../standard-library/numeric-limits-class.md#round_style) for an example in which the values of this enumeration may be accessed.
+See [`numeric_limits::round_style`](numeric-limits-class.md#round_style) for an example in which the values of this enumeration may be accessed.
