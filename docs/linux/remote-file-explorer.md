@@ -2,7 +2,7 @@
 title: "Remote file explorer"
 description: "Learn how to use Remote File Explorer to view, upload, and download files on a remote machine form within Visual Studio."
 ms.topic: how-to
-ms.date: 05/21/2025
+ms.date: 06/02/2025
 ---
 # Remote File Explorer
 
@@ -98,6 +98,12 @@ The highlighted buttons are, from left to right:
 - **Rename Item**: Rename a file or folder on the remote machine.
 - **Delete Item**: Delete a file or folder on the remote machine.
 - **Search**: Search for files or folders on the remote machine.
+
+## Remote File Explorer settings
+
+To change the settings for the **Remote File Explorer**, select the **Settings** button on the toolbar. The **Remote File Explorer Settings** dialog opens with the following option:
+
+- **Enable Dynamic File Icons for Extension-less Files**: Shows icons based on file type by checking the mime-type. Useful for Linux files without extensions so that a correct file icon is shown instead of a generic document icon. May impact performance.
 
 ## See also
 
