@@ -7,6 +7,8 @@ ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
 ---
 # `<limits>` enums
 
+The `<limits>` header provides the following enums:
+
 ## <a name="float_denorm_style"></a> `float_denorm_style`
 
 The enumeration describes the various methods that an implementation can choose for representing a denormalized floating-point value — one too small to represent as a normalized value:
