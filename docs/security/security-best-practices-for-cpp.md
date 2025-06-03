@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Security Best Practices for C++"
 title: "Security Best Practices for C++"
-ms.date: "05/08/2018"
+description: "Learn more about: Security Best Practices for C++"
+ms.date: 05/08/2018
 f1_keywords: ["securitybestpracticesVC"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices"]
-ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
 ---
 # Security Best Practices for C++
 

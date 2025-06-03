@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: MSBuild reference for C++ projects"
 title: "MSBuild reference for C++ projects in Visual Studio"
-ms.date: "12/08/2018"
+description: "Learn more about: MSBuild reference for C++ projects"
+ms.date: 12/08/2018
 helpviewer_keywords: ["MSBuild reference [C++]"]
 ---
 # MSBuild reference for C++ projects

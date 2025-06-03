@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: C/C++ language and standard libraries reference"
 title: "C/C++ language and standard libraries reference"
+description: "Learn more about: C/C++ language and standard libraries reference"
 ms.date: 09/11/2024
 ms.topic: "overview"
 ms.custom: intro-overview
