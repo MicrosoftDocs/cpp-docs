@@ -16,7 +16,7 @@ You'll also find documentation for the C runtime library, the C++ standard libra
 [C language](../c-language/c-language-reference.md)\
 Reference content for the Microsoft implementation of the C language.
 
-[C++ language](../cpp/cpp-language-reference.md)\
+[C++ language](cpp-language-reference.md)\
 Reference content for the Microsoft implementation of the C++ language.
 
 [C/C++ preprocessor](../preprocessor/c-cpp-preprocessor-reference.md)\
