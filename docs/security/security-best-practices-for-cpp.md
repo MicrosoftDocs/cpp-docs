@@ -23,7 +23,7 @@ Instructs the compiler to insert overrun detection code into functions that are 
 [`/SAFESEH` (Image has Safe Exception Handlers)](../build/reference/safeseh-image-has-safe-exception-handlers.md)<br/>
 Instructs the linker to include in the output image a table that contains the address of each exception handler. At run time, the operating system uses this table to make sure that only legitimate exception handlers are executed. This helps prevent the execution of exception handlers that are introduced by a malicious attack at run time. By default, this option is off.
 
-[`/NXCOMPAT`](../build/reference/nxcompat.md), [`/NXCOMPAT` (Compatible with Data Execution Prevention)](../build/reference/nxcompat-compatible-with-data-execution-prevention.md)
+[`/NXCOMPAT`](../build/reference/nxcompat.md), [`/NXCOMPAT` (Compatible with Data Execution Prevention)](../build/reference/nxcompat-compatible-with-data-execution-prevention.md)\
 These compiler and linker options enable Data Execution Prevention (DEP) compatibility. DEP guards the CPU against the execution of non-code pages.
 
 [`/analyze` (Code Analysis)](../build/reference/analyze-code-analysis.md)<br/>
