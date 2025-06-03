@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Property Pages"
 title: "Linker Property Pages"
+description: "Learn more about: Linker Property Pages"
 ms.date: 09/07/2022
 ms.topic: "article"
 f1_keywords: ["VC.Project.VCLinkerTool.IgnoreImportLibrary", "VC.Project.VCLinkerTool.RegisterOutput", "VC.Project.VCLinkerTool.PerUserRedirection", "VC.Project.VCLinkerTool.LinkLibraryDependencies", "VC.Project.VCLinkerTool.UseLibraryDependencyInputs"]
-ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
 ---
 # Linker Property Pages
 
