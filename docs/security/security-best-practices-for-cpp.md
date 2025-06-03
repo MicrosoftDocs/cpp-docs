@@ -86,5 +86,5 @@ For information about how to indentify and mitigate against speculative executio
 ## See also
 
 <xref:System.Security>\
-[Security](/dotnet/standard/security/index)\
+[Security in .NET](/dotnet/standard/security/index)\
 [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md)
