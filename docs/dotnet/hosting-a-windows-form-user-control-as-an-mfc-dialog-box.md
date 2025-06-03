@@ -126,5 +126,5 @@ The process that `CWinFormsDialog` uses to host the user control is the similar 
 
 ## See also
 
-<xref:System.Windows.Forms.UserControl?displayProperty=fullName>
+<xref:System.Windows.Forms.UserControl?displayProperty=fullName>\
 [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)
