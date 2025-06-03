@@ -9,7 +9,7 @@ ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
 
 MFC provides the template class [`CWinFormsDialog`](../mfc/reference/cwinformsdialog-class.md) so that you can host a Windows Forms user control (<xref:System.Windows.Forms.UserControl>) in a modal or modeless MFC dialog box. `CWinFormsDialog` is derived from the MFC class [`CDialog`](../mfc/reference/cdialog-class.md), so the dialog box can be launched as modal or modeless.
 
-The process that `CWinFormsDialog` uses to host the user control is the similar to that described in [Hosting a Windows Form User Control in an MFC Dialog Box](hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md). However, `CWinFormsDialog` manages the initialization and hosting of the user control so that it does not have to be programmed manually.
+The process that `CWinFormsDialog` uses to host the user control is similar to that described in [Hosting a Windows Form User Control in an MFC Dialog Box](hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md). However, `CWinFormsDialog` manages the initialization and hosting of the user control so that it does not have to be programmed manually.
 
 ### To create the MFC host application
 
@@ -17,7 +17,7 @@ The process that `CWinFormsDialog` uses to host the user control is the similar 
 
    On the **File** menu, select **New**, and then click **Project**. In the **Visual C++** folder, select **MFC Application**.
 
-   In the **Name** box, enter `MFC03` and change the Solution setting to **Add to Solution**.Click **OK**.
+   In the **Name** box, enter `MFC03` and change the Solution setting to **Add to Solution**. Click **OK**.
 
    In the **MFC Application Wizard**, accept all the defaults, and then click **Finish**. This creates an MFC application with a Multiple Document Interface.
 
@@ -105,7 +105,7 @@ The process that `CWinFormsDialog` uses to host the user control is the similar 
     CString m_sEditBoxOnWinForm;
     ```
 
-1. In the definition of `DoDataExchange` in `CHostForWinForm.cpp`, add the following three lines to the end of the function:
+1. In the definition of `DoDataExchange` in `CHostForWinForm.cpp`, add the following four lines to the end of the function:
 
     ```cpp
     if (pDX->m_bSaveAndValidate)
