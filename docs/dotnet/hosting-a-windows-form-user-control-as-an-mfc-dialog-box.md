@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Hosting a Windows Form User Control as an MFC Dialog Box"
 title: "Hosting a Windows Form User Control as an MFC Dialog Box"
-ms.date: "11/04/2016"
+description: "Learn more about: Hosting a Windows Form User Control as an MFC Dialog Box"
+ms.date: 11/04/2016
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "Windows Forms [C++], hosting as MFC Dialog", "hosting Windows Forms control [C++]"]
-ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
 ---
 # Hosting a Windows Form User Control as an MFC Dialog Box
 
