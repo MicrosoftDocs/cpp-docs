@@ -12,25 +12,25 @@ If for some reason you wish to use MSBuild directly from the command line, see [
 
 ## In this section
 
-[MSBuild internals for C++ projects](msbuild-visual-cpp-overview.md)<br/>
+[MSBuild internals for C++ projects](msbuild-visual-cpp-overview.md)\
 Information about how properties and targets are stored and consumed.
 
-[Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md)<br/>
+[Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md)\
 Describes macros (compile-time constants) that can be used to define properties such as paths and product versions.
 
-[File types created for C++ projects](file-types-created-for-visual-cpp-projects.md)<br/>
+[File types created for C++ projects](file-types-created-for-visual-cpp-projects.md)\
 Describes the various kinds of files that Visual Studio creates for different project types.
 
-[Visual Studio C++ project templates](visual-cpp-project-types.md)<br>
+[Visual Studio C++ project templates](visual-cpp-project-types.md)\
 Describes the MSBuild-based project types that are available for C++.
 
-[C++ new item templates](using-visual-cpp-add-new-item-templates.md)<br>
+[C++ new item templates](using-visual-cpp-add-new-item-templates.md)\
 Describes source files and other items you can add to a Visual Studio project.
 
 [Precompiled header files](../creating-precompiled-header-files.md)\
 How to use precompiled header files and how to create your own custom precompiled code to speed up build times.
 
-[Visual Studio project property reference](property-pages-visual-cpp.md)<br/>
+[Visual Studio project property reference](property-pages-visual-cpp.md)\
 Reference documentation for project properties that are set in the Visual Studio IDE.
 
 ## See also

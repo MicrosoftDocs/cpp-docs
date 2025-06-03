@@ -14,22 +14,22 @@ This article contains information about security tools and practices. Using them
 
 These security features are built into the Microsoft C++ compiler and linker:
 
-[`/guard` (Enable Control Flow Guard)](../build/reference/guard-enable-control-flow-guard.md)<br/>
+[`/guard` (Enable Control Flow Guard)](../build/reference/guard-enable-control-flow-guard.md)\
 Causes the compiler to analyze control flow for indirect call targets at compile time, and then to insert code to verify the targets at runtime.
 
-[`/GS` (Buffer Security Check)](../build/reference/gs-buffer-security-check.md)<br/>
+[`/GS` (Buffer Security Check)](../build/reference/gs-buffer-security-check.md)\
 Instructs the compiler to insert overrun detection code into functions that are at risk of being exploited. When an overrun is detected, execution is stopped. By default, this option is on.
 
-[`/SAFESEH` (Image has Safe Exception Handlers)](../build/reference/safeseh-image-has-safe-exception-handlers.md)<br/>
+[`/SAFESEH` (Image has Safe Exception Handlers)](../build/reference/safeseh-image-has-safe-exception-handlers.md)\
 Instructs the linker to include in the output image a table that contains the address of each exception handler. At run time, the operating system uses this table to make sure that only legitimate exception handlers are executed. This helps prevent the execution of exception handlers that are introduced by a malicious attack at run time. By default, this option is off.
 
 [`/NXCOMPAT`](../build/reference/nxcompat.md), [`/NXCOMPAT` (Compatible with Data Execution Prevention)](../build/reference/nxcompat-compatible-with-data-execution-prevention.md)\
 These compiler and linker options enable Data Execution Prevention (DEP) compatibility. DEP guards the CPU against the execution of non-code pages.
 
-[`/analyze` (Code Analysis)](../build/reference/analyze-code-analysis.md)<br/>
+[`/analyze` (Code Analysis)](../build/reference/analyze-code-analysis.md)\
 This compiler option activates code analysis that reports potential security issues such as buffer overrun, un-initialized memory, null pointer dereferencing, and memory leaks. By default, this option is off. For more information, see [Code Analysis for C/C++ Overview](../code-quality/code-analysis-for-c-cpp-overview.md).
 
-[`/DYNAMICBASE` (Use address space layout randomization)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)<br/>
+[`/DYNAMICBASE` (Use address space layout randomization)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)\
 This linker option enables the building of an executable image that can be loaded at different locations in memory at the beginning of execution. This option also makes the stack location in memory much less predictable.
 
 ## Security-Enhanced CRT
@@ -86,6 +86,6 @@ For information about how to indentify and mitigate against speculative executio
 
 ## See also
 
-<xref:System.Security> <br/>
-[Security](/dotnet/standard/security/index)<br/>
+<xref:System.Security>\
+[Security](/dotnet/standard/security/index)\
 [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md)
