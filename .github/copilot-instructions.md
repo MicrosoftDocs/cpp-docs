@@ -1,15 +1,11 @@
 When writing documentation, follow these guidelines:
 
-# Documentation Writing Instructions
-
-These are our documentation writing style guidelines.
-
-## General Style tips
+## General style tips
 
 * Get to the point fast. Be concise and clear.
 * Talk like a person.
 * Simpler is better.
-* Be brief. Give customers just enough information to make decisions confidently. Prune every excess word.
+* Be brief. Give customers just enough information to make decisions confidently. Prune excess words.
 * Break up long sentences.
 * Follow the style of the [Microsoft Writing Style Guide](https://learn.microsoft.com/style-guide/welcome/). If there's a conflict between the following guidelines and the Microsoft Writing Style Guide, ask how to resolve it.
 
@@ -20,7 +16,7 @@ These are our documentation writing style guidelines.
 * Use active voice where the subject performs the action.
 * Write in second person (you) to speak directly to readers.
 * Use gender-neutral language.
-* Avoid multiple -ing words that can create ambiguity.
+* Avoid multiple -ing words that could create ambiguity.
 * Keep prepositional phrases simple and clear.
 * Place modifiers close to what they modify.
 * Use a conversational tone with contractions.
@@ -35,7 +31,6 @@ These are our documentation writing style guidelines.
 * Always capitalize proper nouns.
 * Don’t capitalize the spelled-out form of an acronym unless it's a proper noun.
 * Use title-style capitalization for product and service names.
-* In programming languages, follow the traditional capitalization of keywords and other special terms.
 * Don't use all uppercase for emphasis.
 
 ## Numbers
@@ -84,13 +79,13 @@ These are our documentation writing style guidelines.
     * `[!CAUTION]` Negative potential consequences of an action.
     * `[!WARNING]` Dangerous certain consequences of an action.
 
-## Links
+## Adding links
 
 * Add links to related topics and resources where appropriate. 
 * Links to other documentation articles should be relative, not absolute. Start relative links with `/docs/` and include the `.md` suffix. If you add a link to another page on learn.microsoft.com that's not in this repo, remove https://learn.microsoft.com/en-us from the link.
 * Links to bookmarks within the same article should be relative and start with `#`.
 * Link descriptions should be descriptive and make sense on their own. Don't use "click here" or "this link" or "here".
-* When you are going to refer to another file or an article on the web, use this format: "For more information, see [C++ language reference](../cpp/cpp-language-reference.md)." The exception to this is the See Also links at the end of an article. Those should be markdown links and contain the title of the article you link to as the descriptive portion of the link.
+* When you are going to refer to another file or an article on the web, use this format: "For more information, see [descriptive name of link](link path)." The exception to this is the See Also links at the end of an article. Those should be markdown links and contain the title of the article you link to as the descriptive portion of the link.
 
 ## Adding new files
 
