@@ -10,9 +10,13 @@ ms.assetid: 88275582-5f37-45d7-807d-05f06ba00965
 
 > '*function*': local function definitions are illegal
 
+## Remarks
+
 Code tries to define a function within a function.
 
 Or, there may be an extra brace in your source code before the location of the C2601 error.
+
+## Examples
 
 The following sample generates C2601:
 
