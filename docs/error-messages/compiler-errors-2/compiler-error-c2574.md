@@ -8,7 +8,7 @@ ms.assetid: 3e1c5c18-ee8b-4dbb-bfc0-d3b8991af71b
 ---
 # Compiler Error C2574
 
-'destructor' : cannot be declared static
+> '*function*': cannot be declared static
 
 Neither destructors nor constructors can be declared **`static`**.
 

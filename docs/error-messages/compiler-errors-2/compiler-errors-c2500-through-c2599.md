@@ -89,7 +89,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2571](compiler-error-C2571.md)|'*identifier*': virtual function cannot be in union '*union*'|
 |[Compiler error C2572](compiler-error-C2572.md)|'*function*': redefinition of default argument: parameter *number*|
 |[Compiler error C2573](compiler-error-C2573.md)|'*class*': cannot delete pointers to objects of this type; the class has no non-placement overload for 'operator delete'. Use ::delete, or add 'operator delete(void*)' to the class|
-|[Compiler error C2574](compiler-error-C2574.md)|'*destructor*': cannot be declared static|
+|[Compiler error C2574](compiler-error-C2574.md)|'*function*': cannot be declared static|
 |[Compiler error C2575](compiler-error-C2575.md)|'*identifier*': only member functions and bases can be virtual|
 |Compiler error C2576|'*identifier*': cannot introduce a new virtual method as 'public'. Consider making the method non-virtual, or change the accessibility to 'internal' or 'protected private'|
 |[Compiler error C2577](compiler-error-C2577.md)|'*identifier*': a destructor/finalizer cannot have a return type|
