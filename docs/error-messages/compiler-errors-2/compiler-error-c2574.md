@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2574"
 title: "Compiler Error C2574"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2574"
+ms.date: 06/04/2025
 f1_keywords: ["C2574"]
 helpviewer_keywords: ["C2574"]
-ms.assetid: 3e1c5c18-ee8b-4dbb-bfc0-d3b8991af71b
 ---
 # Compiler Error C2574
 
