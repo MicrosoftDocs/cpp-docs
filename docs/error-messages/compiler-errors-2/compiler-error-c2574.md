@@ -10,7 +10,11 @@ ms.assetid: 3e1c5c18-ee8b-4dbb-bfc0-d3b8991af71b
 
 > '*function*': cannot be declared static
 
+## Remarks
+
 Neither destructors nor constructors can be declared **`static`**.
+
+## Example
 
 The following sample generates C2574:
 
