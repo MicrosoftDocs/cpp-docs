@@ -17,7 +17,7 @@ Or, there may be an extra/missing brace before the location of the C2601 error.
 
 ## Examples
 
-## Define function within a function
+### Define function within a function
 
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md) may be used to emulate the behavior of local functions:
 
@@ -37,7 +37,7 @@ int main()
 }
 ```
 
-## Missing closing brace
+### Missing closing brace
 
 If a preceding function is missing a closing brace, the subsequent function is taken to be a local function:
 
