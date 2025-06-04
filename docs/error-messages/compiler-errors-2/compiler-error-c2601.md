@@ -8,7 +8,7 @@ ms.assetid: 88275582-5f37-45d7-807d-05f06ba00965
 ---
 # Compiler Error C2601
 
-'function' : local function definitions are illegal
+> '*function*': local function definitions are illegal
 
 Code tries to define a function within a function.
 
