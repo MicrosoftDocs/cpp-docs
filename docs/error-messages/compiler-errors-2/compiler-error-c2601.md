@@ -14,7 +14,7 @@ ms.assetid: 88275582-5f37-45d7-807d-05f06ba00965
 
 Code tries to define a function within a function.
 
-Or, there may be an extra brace in your source code before the location of the C2601 error.
+Or, there may be an extra/missing brace before the location of the C2601 error.
 
 ## Examples
 
