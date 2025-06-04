@@ -16,14 +16,16 @@ Neither destructors nor constructors can be declared **`static`**.
 
 ## Example
 
-The following sample generates C2574:
+The following example generates C2574:
 
 ```cpp
 // C2574.cpp
 // compile with: /c
-class A {
-   virtual static ~A();   // C2574
-   //  try the following line instead
-   // virtual ~A();
+struct S
+{
+    static S() {}   // C2574
+
+    // Try the following line instead:
+    // S() {}
 };
 ```
