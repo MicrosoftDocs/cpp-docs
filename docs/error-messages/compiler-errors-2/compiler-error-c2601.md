@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2601"
 title: "Compiler Error C2601"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2601"
+ms.date: 06/04/2025
 f1_keywords: ["C2601"]
 helpviewer_keywords: ["C2601"]
-ms.assetid: 88275582-5f37-45d7-807d-05f06ba00965
 ---
 # Compiler Error C2601
 
