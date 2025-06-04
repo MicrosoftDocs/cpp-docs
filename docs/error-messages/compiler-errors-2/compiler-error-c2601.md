@@ -37,3 +37,16 @@ int main()
     int two = increment(1);
 }
 ```
+
+## Missing closing brace
+
+If a preceding function is missing a closing brace, the subsequent function is taken to be a local function:
+
+```cpp
+// C2601b.cpp
+void func()
+{
+// missing '}' brace here
+
+int main() {}   // C2601
+```
