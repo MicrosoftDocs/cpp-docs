@@ -139,6 +139,7 @@
         "cross-platform/**.md": "tools",
         "data/**.md": "data-access",
         "dotnet/**.md": "cli-lang",
+        "embedded/**.md": "tools"
         "error-messages/**.md": "errors-warnings",
         "extensions/**.md": "cli-lang",
         "get-started/**.md": "cpp-lang",
