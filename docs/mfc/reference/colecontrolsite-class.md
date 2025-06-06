@@ -721,7 +721,7 @@ LPOLEOBJECT m_pObject;
 
 ## <a name="m_pwindowlessobject"></a> COleControlSite::m_pWindowlessObject
 
-Contains the `IOleInPlaceObjectWindowless`[IOleInPlaceObjectWindowless](/windows/win32/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) interface of the control.
+Contains the [`IOleInPlaceObjectWindowless`](/windows/win32/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) interface of the control.
 
 ```
 IOleInPlaceObjectWindowless* m_pWindowlessObject;
