@@ -12,7 +12,7 @@ ms.assetid: b1c952dc-872c-47e4-9fc8-4dd72bcee6f9
 
 ## Remarks
 
-A constructor or destructor can't be declared **`const`** or **`volatile`**.
+A [constructor](../../cpp/constructors-cpp.md) or [destructor](../../cpp/destructors-cpp.md) can't be declared **`const`** or **`volatile`**.
 
 ## Example
 
