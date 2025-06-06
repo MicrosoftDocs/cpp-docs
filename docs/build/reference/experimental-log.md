@@ -12,7 +12,7 @@ Output [SARIF](https://sarifweb.azurewebsites.net/) diagnostics to the specified
 ## Syntax
 
 > **`/experimental:log`** *filename*
-> **`/experimental:log`** *directoryname`\`*
+> **`/experimental:log`** *directoryname\\
 
 ## Arguments
 
@@ -22,7 +22,7 @@ The output file for SARIF diagnostics. The compiler automatically adds the `.sar
 
 *directoryname`\`*
 
-The output directory for SARIF diagnostics (for example, `/experimental:log sarif_output\`). Remember to add the trailing backslash (`\`) to indicate it's a directory. Each source file name forms the base name for each SARIF file saved in the directory. The compiler automatically adds the `.sarif` extension to each file name. The space between `/experimental:log` and *directoryname`\`* is optional. Use double quotes around paths containing spaces. Both relative and absolute paths are supported.
+The output directory for SARIF diagnostics (for example, `/experimental:log sarif_output\`). Remember to add the trailing backslash (`\`) to indicate it's a directory. Each source file name forms the base name for each SARIF file saved in the directory. The compiler automatically adds the `.sarif` extension to each file name. The space between `/experimental:log` and *directoryname\\* is optional. Use double quotes around paths containing spaces. Both relative and absolute paths are supported.
 
 ## Remarks
 
