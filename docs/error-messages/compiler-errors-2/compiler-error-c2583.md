@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2583"
 title: "Compiler Error C2583"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2583"
+ms.date: 06/06/2025
 f1_keywords: ["C2583"]
 helpviewer_keywords: ["C2583"]
-ms.assetid: b1c952dc-872c-47e4-9fc8-4dd72bcee6f9
 ---
 # Compiler Error C2583
 
