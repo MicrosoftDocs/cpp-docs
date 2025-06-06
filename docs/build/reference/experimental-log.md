@@ -11,7 +11,7 @@ Output [SARIF](https://sarifweb.azurewebsites.net/) diagnostics to the specified
 
 ## Syntax
 
-> **`/experimental:log`** *filename*
+> **`/experimental:log`** *filename*\
 > **`/experimental:log`** *directoryname\\
 
 ## Arguments
