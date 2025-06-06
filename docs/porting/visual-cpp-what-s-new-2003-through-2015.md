@@ -226,7 +226,6 @@ Although these differences can affect your source code or other build artifacts,
    ```cpp
     error C3688: invalid literal suffix '_x'; literal operator or literal operator template 'operator ""_x' not found
     note: Did you forget a space between the string literal and the prefix of the following string literal?
-
    ```
 
    To fix this problem, add a space between the string literal and the macro.

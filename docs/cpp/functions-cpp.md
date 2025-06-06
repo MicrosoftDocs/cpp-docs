@@ -77,7 +77,6 @@ Optional parts of a function declaration are:
     ```cpp
     //Declare printf with C linkage.
     extern "C" int printf( const char *fmt, ... );
-
     ```
 
    For more information, see [Translation units and linkage](../cpp/program-and-linkage-cpp.md).
