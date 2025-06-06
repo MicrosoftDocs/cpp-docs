@@ -8,7 +8,7 @@ ms.assetid: b1c952dc-872c-47e4-9fc8-4dd72bcee6f9
 ---
 # Compiler Error C2583
 
-'identifier' : 'const/volatile' 'this' pointer is illegal for constructors/destructors
+> '*identifier*': '*const/volatile*' 'this' pointer is illegal for constructors/destructors
 
 A constructor or destructor is declared **`const`** or **`volatile`**. This is not allowed.
 
