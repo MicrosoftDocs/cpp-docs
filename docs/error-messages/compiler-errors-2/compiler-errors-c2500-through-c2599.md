@@ -98,7 +98,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C2580|'*identifier*': multiple versions of a defaulted special member functions are not allowed|
 |[Compiler error C2581](compiler-error-C2581.md)|'*type*': static 'operator =' function is illegal|
 |[Compiler error C2582](compiler-error-C2582.md)|'operator *operator*' function is unavailable in '*type*'|
-|[Compiler error C2583](compiler-error-C2583.md)|'*identifier*': 'const/volatile' 'this' pointer is illegal for constructors/destructors|
+|[Compiler error C2583](compiler-error-C2583.md)|'*identifier*': '*const/volatile*' 'this' pointer is illegal for constructors/destructors|
 |[Compiler error C2584](compiler-error-C2584.md)|'*class*': direct base '*base_class2*' is inaccessible; already a base of '*base_class1*'|
 |[Compiler error C2585](compiler-error-C2585.md)|explicit conversion to '*type*' is ambiguous|
 |[Compiler error C2586](compiler-error-C2586.md)|incorrect user-defined conversion syntax: illegal indirections|
