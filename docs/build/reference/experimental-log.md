@@ -39,12 +39,6 @@ Diagnostics are also output as text to the console as usual.
 
 ## Examples
 
-The following command produces SARIF information for the compilation of `main.cpp` and saves it in the file `main.sarif`:
-
-```cmd
-cl /experimental:log main.cpp
-```
-
 The following command produces SARIF information for the compilation of `main.cpp` and saves it in the file `mySarifInfo.sarif`:
 
 ```cmd
