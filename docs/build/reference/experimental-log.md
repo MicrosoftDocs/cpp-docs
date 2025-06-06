@@ -1,13 +1,13 @@
 ---
 title: "/experimental:log (Structured SARIF diagnostics)"
-description: "Use the /experimental:log compiler option to output experimental structured SARIF output for diagnostics."
-ms.date: 10/26/2023
+description: "The /experimental:log compiler option outputs experimental structured SARIF output for diagnostics."
+ms.date: 06/05/2025
 f1_keywords: ["/experimental:log"]
 helpviewer_keywords: ["/experimental:log", "SARIF", "structured diagnostics"]
 ---
 # `/experimental:log` (Structured SARIF diagnostics)
 
-Output [SARIF](https://sarifweb.azurewebsites.net/) diagnostics to the specified file. For more information, see [Structured SARIF Diagnostics](sarif-output.md).
+Output [SARIF](https://sarifweb.azurewebsites.net/) diagnostics to the specified file or directory. For more information, see [Structured SARIF Diagnostics](sarif-output.md).
 
 ## Syntax
 
@@ -22,7 +22,7 @@ The output file for SARIF diagnostics. The compiler automatically adds the `.sar
 
 *directoryname\*
 
-The output directory for SARIF diagnostics (for example, `/experimental:log sarif_output\`). Remember to add the trailing backslash (`\`)to indicate that this is a directory. Each source file name forms the base name for each SARIF file saved in the directory. The compiler automatically adds the `.sarif` extension to each file name. The space between `/experimental:log` and *directoryname* is optional. Use double quotes around paths containing spaces. Both relative and absolute paths are supported.
+The output directory for SARIF diagnostics (for example, `/experimental:log sarif_output\`). Remember to add the trailing backslash (`\`) to indicate it's a directory. Each source file name forms the base name for each SARIF file saved in the directory. The compiler automatically adds the `.sarif` extension to each file name. The space between `/experimental:log` and *directoryname* is optional. Use double quotes around paths containing spaces. Both relative and absolute paths are supported.
 
 ## Remarks
 
