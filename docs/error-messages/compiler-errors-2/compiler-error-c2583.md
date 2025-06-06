@@ -16,17 +16,16 @@ A [constructor](../../cpp/constructors-cpp.md) or [destructor](../../cpp/destruc
 
 ## Example
 
-The following sample generates C2583:
+The following example generates C2583:
 
 ```cpp
 // C2583.cpp
 // compile with: /c
-class A {
-public:
-   int i;
-   A() const;   // C2583
+struct S
+{
+    S() const {}   // C2583
 
-   // try the following line instead
-   // A();
+    // Try the following line instead:
+    // S() {}
 };
 ```
