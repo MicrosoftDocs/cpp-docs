@@ -1650,10 +1650,10 @@ Although these differences can affect your source code or other build artifacts,
 
     //b.cpp
     // compile with cl.exe /nologo /LD /EHsc /Osx b.cpp
-    #pragma comment(lib, "A")
+    #pragma comment(lib, "A")
     class __declspec(dllimport) A
     {
-    public: A();
+    public: A();
             A(const A&);
             virtual ~A();
     private:
@@ -1667,7 +1667,7 @@ Although these differences can affect your source code or other build artifacts,
 
     //c.cpp
     #pragma comment(lib, "A")
-    #pragma comment(lib, "B")
+    #pragma comment(lib, "B")
     class __declspec(dllimport) A
     {
     public:
