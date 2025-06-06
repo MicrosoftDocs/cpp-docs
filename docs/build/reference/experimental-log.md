@@ -18,9 +18,11 @@ Output [SARIF](https://sarifweb.azurewebsites.net/) diagnostics to the specified
 
 *filename*
 
-Specifies the output path for SARIF diagnostics. The compiler automatically adds the `.sarif` extension to *filename*. The space between `/experimental:log` and *filename* is optional. Use double quotes around paths containing spaces. Both relative and absolute paths are supported.
+The output file for SARIF diagnostics. The compiler automatically adds the `.sarif` extension to *filename*. The space between `/experimental:log` and *filename* is optional. Use double quotes around paths containing spaces. Both relative and absolute paths are supported.
 
-Specify a directory name (for example, `/experimental:log sarif_output\`) to output SARIF files for each source file to that directory, using the source file name as the base name for each SARIF file.
+*directoryname\*
+
+The output directory for SARIF diagnostics (for example, `/experimental:log sarif_output\`). Each source file name forms the base name for each SARIF file saved in the directory. The compiler automatically adds the `.sarif` extension to each file name. The space between `/experimental:log` and *directoryname* is optional. Use double quotes around paths containing spaces. Both relative and absolute paths are supported.
 
 ## Remarks
 
