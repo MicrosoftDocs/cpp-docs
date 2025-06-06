@@ -69,7 +69,7 @@ int main() {
    G ^ const h_G2 = gcnew G;   // interior pointers to this object cannot be dereferenced and changed
    h_G2->msg = "test";
    interior_ptr<String^ const> int_ptr_G2 = &(h_G->msg);
-};
+}
 ```
 
 ## See also

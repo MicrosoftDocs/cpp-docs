@@ -25,5 +25,5 @@ int main() {
    Base ^pb = pd;
    const type_info & t1 = typeid(pb);   // C3185
    System::Type ^ MyType = Base::typeid;   // OK
-};
+}
 ```

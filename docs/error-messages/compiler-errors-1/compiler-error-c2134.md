@@ -18,7 +18,7 @@ The following sample generates C2134:
 // compile with: /c
 int A() {
     return 42;
-};
+}
 
 constexpr int B() {
     return A();  // Error C2134: 'A': call does not result in a constant expression.
@@ -31,7 +31,7 @@ Possible resolution:
 // C2134b.cpp
 constexpr int A() {  // add constexpr to A, since it meets the requirements of constexpr.
     return 42;
-};
+}
 
 constexpr int B() {
     return A();  // No error

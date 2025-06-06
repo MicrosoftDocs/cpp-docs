@@ -46,5 +46,5 @@ int main() {
 
    fnptr1 fp3 = (fnptr1) &f2;   // C4191
    fnptr2 fp4 = (fnptr2) &f1;   // C4191
-};
+}
 ```

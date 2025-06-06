@@ -107,7 +107,7 @@ int main( )
    npunct.decimal_point( ) << endl;
    cout << loc.name( ) << " thousands separator "
    << npunct.thousands_sep( ) << endl;
-};
+}
 ```
 
 ```Output
@@ -378,7 +378,7 @@ int main( )
    npunct.decimal_point( ) << endl;
    cout << loc.name( ) << " thousands separator "
    << npunct.thousands_sep( ) << endl;
-};
+}
 ```
 
 ```Output

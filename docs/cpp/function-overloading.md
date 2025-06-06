@@ -307,7 +307,7 @@ public:
 
 void Print( int i )
 {
-};
+}
 
 UDC udc;
 

@@ -113,7 +113,7 @@ public:
       cout << "Constructing " << i << endl;
       x = i;
       bIsConstructed = true;
-   };
+   }
 
    Int &operator=(int i)
    {
@@ -122,7 +122,7 @@ public:
       cout << "Copying " << i << endl;
       x = i;
       return *this;
-   };
+   }
 
    int x;
 
@@ -189,14 +189,14 @@ public:
       cout << "Constructing " << i << endl;
       x = i;
       bIsConstructed = true;
-   };
+   }
    Int &operator=( int i )
    {
       if ( !bIsConstructed )
          cout << "Not constructed.\n";
       cout << "Copying " << i << endl; x = i;
       return *this;
-   };
+   }
    int x;
 private:
    bool bIsConstructed;
@@ -309,13 +309,13 @@ public:
       cout << "Constructing " << i << endl;
       x = i;
       bIsConstructed = true;
-   };
+   }
    Int &operator=( int i )
    {
       if (!bIsConstructed)
          cout << "Error! I'm not constructed!\n";
       cout << "Copying " << i << endl;  x = i; return *this;
-   };
+   }
    int x;
    bool bIsConstructed;
 };

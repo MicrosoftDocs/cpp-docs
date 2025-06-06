@@ -20,7 +20,7 @@ With Microsoft extensions (/Ze), **`static`** functions can be declared inside a
 void func1()
 {
    static int func2();  // C4205
-};
+}
 
 int main()
 {

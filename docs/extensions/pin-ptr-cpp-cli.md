@@ -164,7 +164,7 @@ int main() {
 
    k = l;   // ok
    Console::WriteLine(*k);
-};
+}
 ```
 
 ```Output

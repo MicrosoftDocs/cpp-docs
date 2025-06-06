@@ -47,16 +47,16 @@ The following sample generates LNK2020.
 
 template <typename T>
 ref struct Base {
-   virtual void f1() {};
+   virtual void f1() {}
 };
 
 template <typename T>
 ref struct Base2 {
-   virtual void f1() {};
+   virtual void f1() {}
 };
 
 int main() {
    Base<int>^ p;   // LNK2020
    Base2<int>^ p2 = gcnew Base2<int>();   // OK
-};
+}
 ```

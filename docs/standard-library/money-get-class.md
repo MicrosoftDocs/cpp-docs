@@ -241,7 +241,7 @@ int main( )
    else
       cout << "money_get(" << psz2.str( ) << ", intl = 0) = "
            << fVal/100.0 << endl;
-};
+}
 ```
 
 ## <a name="iter_type"></a> money_get::iter_type

@@ -210,11 +210,11 @@ The following sample shows that the compiler distinguishes between native string
 using namespace System;
 int func() {
    throw "simple string";   // const char *
-};
+}
 
 int func2() {
    throw "string" + "string";   // returns System::String
-};
+}
 
 template<typename T>
 void func3(T t) {

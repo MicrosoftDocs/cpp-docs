@@ -22,7 +22,7 @@ template<typename T>
 void f(T* pT) {
    &pT->T::~T;   // C3672
    pT->T::~T();   // OK
-};
+}
 
 int main() {
    int i;

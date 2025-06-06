@@ -26,7 +26,7 @@ template <class T1, class T2>
 void f(T1, T2)
 {
    cout << "void f(T1, T2)" << endl;
-};
+}
 
 int main()
 {
@@ -58,7 +58,7 @@ template <class T1, class T2>
 void f(T1, T2)
 {
    cout << "void f(T1, T2)" << endl;
-};
+}
 
 int main()
 {

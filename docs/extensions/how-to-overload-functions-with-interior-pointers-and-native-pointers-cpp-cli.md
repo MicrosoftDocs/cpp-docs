@@ -49,7 +49,7 @@ int main() {
    G ^pG = gcnew G;   // common language runtime heap
    f( &pS->i );
    f( &pG->i );
-};
+}
 ```
 
 ```Output

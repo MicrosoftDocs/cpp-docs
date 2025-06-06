@@ -21,7 +21,7 @@ The following sample generates C4243:
 struct B {
    int f() {
       return 0;
-   };
+   }
 };
 
 struct D : private B {};

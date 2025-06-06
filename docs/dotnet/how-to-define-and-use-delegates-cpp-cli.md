@@ -442,7 +442,7 @@ int main() {
    Del^ d = gcnew Del(r1, &R::f);
    d += gcnew Del(&R::f);
    d(r2);
-};
+}
 ```
 
 **Output**

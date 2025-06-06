@@ -24,7 +24,7 @@ public:
 
 void g() {
    const X x1;   // C4269
-};
+}
 ```
 
 Since this instance of the class is generated on the stack, the initial value of `m_data` can be anything. Also, since it is a **`const`** instance, the value of `m_data` can never be changed.

@@ -22,12 +22,12 @@ public:
 
    A() {
       v_char = 'A';
-   };
+   }
    operator char(char a) {   // C2835
    // try the following line instead
    // operator char() {
       return v_char + 1;
-   };
+   }
 };
 
 int main() {

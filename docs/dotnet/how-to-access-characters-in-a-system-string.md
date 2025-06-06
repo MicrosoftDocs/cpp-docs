@@ -53,7 +53,7 @@ size_t getlen(System::String ^ s) {
    // make sure it doesn't move during the unmanaged call
    pin_ptr<const wchar_t> pinchars = PtrToStringChars(s);
    return wcsnlen(pinchars, maxsize);
-};
+}
 
 int main() {
    System::Console::WriteLine(getlen("testing"));

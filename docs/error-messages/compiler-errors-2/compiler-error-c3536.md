@@ -31,7 +31,7 @@ int main()
    auto* d = &d;   //C3536
    auto& e = e;    //C3536
    return 0;
-};
+}
 ```
 
 ## See also

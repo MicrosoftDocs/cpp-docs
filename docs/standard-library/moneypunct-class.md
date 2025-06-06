@@ -119,7 +119,7 @@ int main( )
 
    const moneypunct < char, false> &mpunct2 = use_facet < moneypunct < char, false> >(loc);
    cout << loc.name( ) << " domestic currency symbol "<<  mpunct2.curr_symbol( ) << endl;
-};
+}
 ```
 
 ## <a name="decimal_point"></a> moneypunct::decimal_point
@@ -593,7 +593,7 @@ int main( )
       use_facet <moneypunct <char, false> >(loc2);
    cout << loc2.name( ) << " domestic negative sign: "
         << mpunct4.negative_sign( ) << endl;
-};
+}
 ```
 
 ```Output
@@ -703,7 +703,7 @@ int main( )
       use_facet <moneypunct <char, false> >(loc2);
    cout << loc2.name( ) << " domestic positive sign:"
         << mpunct4.positive_sign( ) << endl;
-};
+}
 ```
 
 ```Output

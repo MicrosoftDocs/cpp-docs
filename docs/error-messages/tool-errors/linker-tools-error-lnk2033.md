@@ -32,5 +32,5 @@ ref class B {};
 int main() {
    A ^ aa = nullptr;
    B ^ bb = nullptr;   // OK
-};
+}
 ```
