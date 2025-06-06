@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: C/C++ language and standard libraries reference"
 title: "C/C++ language and standard libraries reference"
+description: "Learn more about: C/C++ language and standard libraries reference"
 ms.date: 09/11/2024
 ms.topic: "overview"
 ms.custom: intro-overview
@@ -16,7 +16,7 @@ You'll also find documentation for the C runtime library, the C++ standard libra
 [C language](../c-language/c-language-reference.md)\
 Reference content for the Microsoft implementation of the C language.
 
-[C++ language](../cpp/cpp-language-reference.md)\
+[C++ language](cpp-language-reference.md)\
 Reference content for the Microsoft implementation of the C++ language.
 
 [C/C++ preprocessor](../preprocessor/c-cpp-preprocessor-reference.md)\
@@ -66,7 +66,7 @@ A header-only C++20 library for using polymorphism in C++ without inheritance. F
 [SafeInt library](../safeint/safeint-library.md)\
 A portable library that can be used with MSVC, GCC, or Clang to help prevent integer overflows.
 
-[Data Access Libraries](../data/data-access-in-cpp.md)
+[Data Access Libraries](../data/data-access-in-cpp.md)\
 Libraries to support data access using ATL or MFC, and legacy services such as OLE DB and ODBC.
 
 ## Related articles
