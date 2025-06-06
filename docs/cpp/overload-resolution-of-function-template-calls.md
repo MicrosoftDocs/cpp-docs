@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Overload resolution of function template calls"
 title: "Overload resolution of function template calls"
+description: "Learn more about: Overload resolution of function template calls"
 ms.date: 09/27/2022
 helpviewer_keywords: ["function templates overload resolution"]
-ms.assetid: a2918748-2cbb-4fc6-a176-e256f120bee4
 ---
 # Overload resolution of function template calls
 

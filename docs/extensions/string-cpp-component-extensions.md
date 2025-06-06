@@ -1,7 +1,7 @@
 ---
 title: "String  (C++/CLI and C++/CX)"
 description: "Learn more about: String  (C++/CLI and C++/CX)"
-ms.date: "10/08/2018"
+ms.date: 10/08/2018
 ms.topic: "reference"
 helpviewer_keywords: ["string support with /clr", "/clr compiler option [C++], string support"]
 ---

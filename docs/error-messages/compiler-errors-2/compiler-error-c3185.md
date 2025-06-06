@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3185"
 title: "Compiler Error C3185"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3185"
+ms.date: 11/04/2016
 f1_keywords: ["C3185"]
 helpviewer_keywords: ["C3185"]
-ms.assetid: 5bf96279-043c-4981-9d02-b4550071b192
 ---
 # Compiler Error C3185
 

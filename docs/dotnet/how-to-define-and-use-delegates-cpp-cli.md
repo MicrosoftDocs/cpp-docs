@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: How to: Define and Use Delegates (C++/CLI)"
 title: "How to: Define and Use Delegates (C++/CLI)"
-ms.date: "11/04/2016"
+description: "Learn more about: How to: Define and Use Delegates (C++/CLI)"
+ms.date: 11/04/2016
 helpviewer_keywords: ["delegates"]
-ms.assetid: 1cdf3420-89c1-47c0-b796-aa984020e0f8
 ---
 # How to: Define and Use Delegates (C++/CLI)
 

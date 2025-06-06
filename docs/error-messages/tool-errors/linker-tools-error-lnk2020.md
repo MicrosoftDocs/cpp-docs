@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2020"
 title: "Linker Tools Error LNK2020"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2020"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2020"]
 helpviewer_keywords: ["LNK2020"]
-ms.assetid: 4dd017d0-5e83-471b-ac8a-538ac1ed6870
 ---
 # Linker Tools Error LNK2020
 

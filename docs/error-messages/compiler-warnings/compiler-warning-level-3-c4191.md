@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 3, off) C4191"
 title: "Compiler Warning (level 3, off) C4191"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3, off) C4191"
+ms.date: 11/04/2016
 f1_keywords: ["C4191"]
 helpviewer_keywords: ["C4191"]
 ---
