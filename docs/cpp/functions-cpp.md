@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Functions (C++)"
 title: "Functions (C++)"
-ms.date: "11/19/2018"
+description: "Learn more about: Functions (C++)"
+ms.date: 11/19/2018
 helpviewer_keywords: ["defaults, arguments", "function definitions", "function definitions, about function definitions", "default arguments", "declarators, functions"]
 ---
 # Functions (C++)
@@ -77,7 +77,6 @@ Optional parts of a function declaration are:
     ```cpp
     //Declare printf with C linkage.
     extern "C" int printf( const char *fmt, ... );
-
     ```
 
    For more information, see [Translation units and linkage](../cpp/program-and-linkage-cpp.md).
