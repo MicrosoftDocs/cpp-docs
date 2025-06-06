@@ -37,18 +37,24 @@ Diagnostics are also output as text to the console as usual.
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 1. Modify the **Additional Options** property, and then choose **OK**.
 
-## Example
+## Examples
 
 The following command produces SARIF information for the compilation of `main.cpp` and saves it in the file `main.sarif`:
 
 ```cmd
-CL /experimental:log main.cpp
+cl /experimental:log main.cpp
+```
+
+The following command produces SARIF information for the compilation of `main.cpp` and saves it in the file `mySarifInfo.sarif`:
+
+```cmd
+cl /experimental:log mySarifInfo main.cpp
 ```
 
 The following command produces SARIF information for the entire compilation and saves it in the `sarif_output` directory in the files `main.sarif` and `other.sarif`:
 
 ```cmd
-CL /experimental:log sarif_output\ main.cpp other.cpp
+cl /experimental:log sarif_output\ main.cpp other.cpp
 ```
 
 ## See also
