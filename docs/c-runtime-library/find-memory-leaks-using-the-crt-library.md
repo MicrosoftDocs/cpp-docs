@@ -241,7 +241,7 @@ _CrtMemCheckpoint( &s1 );
 
 The `_CrtMemCheckpoint` function fills in the structure with a snapshot of the current memory state.
 
-To output the contents of a `_CrtMemState` structure, pass the structure to the `_ CrtMemDumpStatistics` function:
+To output the contents of a `_CrtMemState` structure, pass the structure to the `_CrtMemDumpStatistics` function:
 
 ```cpp
 _CrtMemDumpStatistics( &s1 );

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler errors C2500 Through C2599"
 title: "Compiler errors C2500 Through C2599"
-ms.date: "04/21/2019"
+description: "Learn more about: Compiler errors C2500 Through C2599"
+ms.date: 04/21/2019
 f1_keywords: ["C2501", "C2508", "C2515", "C2519", "C2520", "C2522", "C2525", "C2527", "C2536", "C2538", "C2539", "C2546", "C2547", "C2559", "C2560", "C2564", "C2565", "C2576", "C2578", "C2580", "C2590", "C2591", "C2595", "C2596"]
 helpviewer_keywords: ["C2501", "C2508", "C2515", "C2519", "C2520", "C2522", "C2525", "C2527", "C2536", "C2538", "C2539", "C2546", "C2547", "C2559", "C2560", "C2564", "C2565", "C2576", "C2578", "C2580", "C2590", "C2591", "C2595", "C2596"]
 ---
@@ -89,7 +89,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2571](compiler-error-C2571.md)|'*identifier*': virtual function cannot be in union '*union*'|
 |[Compiler error C2572](compiler-error-C2572.md)|'*function*': redefinition of default argument: parameter *number*|
 |[Compiler error C2573](compiler-error-C2573.md)|'*class*': cannot delete pointers to objects of this type; the class has no non-placement overload for 'operator delete'. Use ::delete, or add 'operator delete(void*)' to the class|
-|[Compiler error C2574](compiler-error-C2574.md)|'*destructor*': cannot be declared static|
+|[Compiler error C2574](compiler-error-C2574.md)|'*function*': cannot be declared static|
 |[Compiler error C2575](compiler-error-C2575.md)|'*identifier*': only member functions and bases can be virtual|
 |Compiler error C2576|'*identifier*': cannot introduce a new virtual method as 'public'. Consider making the method non-virtual, or change the accessibility to 'internal' or 'protected private'|
 |[Compiler error C2577](compiler-error-C2577.md)|'*identifier*': a destructor/finalizer cannot have a return type|
