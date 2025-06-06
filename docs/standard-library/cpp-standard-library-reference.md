@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: C++ Standard Library Reference (STL)"
 title: "C++ Standard Library Reference"
-ms.date: "3/5/2021"
+description: "Learn more about: C++ Standard Library Reference (STL)"
+ms.date: 3/5/2021
 helpviewer_keywords: ["C++ Standard Library, reference", "C++ Standard Library", "template libraries", "libraries, Standard C++", "Microsoft standard template library, reference", "Microsoft STL, reference"]
 ---
 
@@ -18,11 +18,11 @@ From a historical perspective, "STL" originally referred to the Standard Templat
 
 ## In this section
 
-[C++ Standard Library overview](../standard-library/cpp-standard-library-overview.md)
+[C++ Standard Library overview](cpp-standard-library-overview.md)\
 Provides an overview of the Microsoft implementation of the C++ Standard Library.
 
-[`iostream` programming](../standard-library/iostream-programming.md)
+[`iostream` programming](iostream-programming.md)\
 Provides an overview of `iostream` programming.
 
-[Header files reference](../standard-library/cpp-standard-library-header-files.md)
+[Header files reference](cpp-standard-library-header-files.md)\
 Provides links to reference topics about the C++ Standard Library header files, with code examples.
