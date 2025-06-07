@@ -1,7 +1,7 @@
 ---
 title: "String  (C++/CLI and C++/CX)"
 description: "Learn more about: String  (C++/CLI and C++/CX)"
-ms.date: "10/08/2018"
+ms.date: 10/08/2018
 ms.topic: "reference"
 helpviewer_keywords: ["string support with /clr", "/clr compiler option [C++], string support"]
 ---
@@ -210,11 +210,11 @@ The following sample shows that the compiler distinguishes between native string
 using namespace System;
 int func() {
    throw "simple string";   // const char *
-};
+}
 
 int func2() {
    throw "string" + "string";   // returns System::String
-};
+}
 
 template<typename T>
 void func3(T t) {

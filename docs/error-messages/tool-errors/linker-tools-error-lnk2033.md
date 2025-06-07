@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2033"
 title: "Linker Tools Error LNK2033"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2033"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2033"]
 helpviewer_keywords: ["LNK2033"]
-ms.assetid: d61db467-9328-4788-bf54-e2a20537f13f
 ---
 # Linker Tools Error LNK2033
 
@@ -32,5 +31,5 @@ ref class B {};
 int main() {
    A ^ aa = nullptr;
    B ^ bb = nullptr;   // OK
-};
+}
 ```

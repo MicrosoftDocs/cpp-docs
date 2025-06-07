@@ -1,8 +1,8 @@
 ---
 title: "How to: Access Characters in a System::String"
 description: "Learn more about: How to: Access Characters in a System::String"
+ms.date: 11/04/2016
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
 helpviewer_keywords: ["characters [C++], accessing in System::String", "examples [C++], strings", "strings [C++], accessing characters"]
 ---
 # How to: Access Characters in a System::String
@@ -53,7 +53,7 @@ size_t getlen(System::String ^ s) {
    // make sure it doesn't move during the unmanaged call
    pin_ptr<const wchar_t> pinchars = PtrToStringChars(s);
    return wcsnlen(pinchars, maxsize);
-};
+}
 
 int main() {
    System::Console::WriteLine(getlen("testing"));

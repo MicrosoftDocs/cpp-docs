@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: auto_ptr Class"
 title: "auto_ptr Class"
+description: "Learn more about: auto_ptr Class"
 ms.date: 11/1/2023
 f1_keywords: ["memory/std::auto_ptr", "memory/std::auto_ptr::element_type", "memory/std::auto_ptr::get", "memory/std::auto_ptr::release", "memory/std::auto_ptr::reset"]
 helpviewer_keywords: ["std::auto_ptr [C++]", "std::auto_ptr [C++], element_type", "std::auto_ptr [C++], get", "std::auto_ptr [C++], release", "std::auto_ptr [C++], reset"]
@@ -134,17 +134,17 @@ public:
       cout << "Constructing " << ( void* )this  << endl;
       x = i;
       bIsConstructed = true;
-   };
+   }
    ~Int( )
    {
       cout << "Destructing " << ( void* )this << endl;
       bIsConstructed = false;
-   };
+   }
    Int &operator++( )
    {
       x++;
       return *this;
-   };
+   }
    int x;
 private:
    bool bIsConstructed;
@@ -211,11 +211,11 @@ public:
    {
       x = i;
       cout << "Constructing " << ( void* )this  << " Value: " << x << endl;
-   };
+   }
    ~Int( )
    {
       cout << "Destructing " << ( void* )this << " Value: " << x << endl;
-   };
+   }
 
    int x;
 
@@ -377,7 +377,7 @@ public:
     int m_i;
 };
 void f(auto_ptr<C> arg) {
-};
+}
 int main()
 {
     const auto_ptr<C> ciap(new C(1));
@@ -433,10 +433,10 @@ public:
     {
         x = i;
         cout << "Constructing " << (void*)this << " Value: " << x << endl;
-    };
+    }
     ~Int() {
         cout << "Destructing " << (void*)this << " Value: " << x << endl;
-    };
+    }
 
     int x;
 
@@ -493,11 +493,11 @@ public:
     {
         x = i;
         cout << "Constructing " << (void*)this << " Value: " << x << endl;
-    };
+    }
     ~Int()
     {
         cout << "Destructing " << (void*)this << " Value: " << x << endl;
-    };
+    }
 
     int x;
 };

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4243"
 title: "Compiler Warning (level 3) C4243"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4243"
+ms.date: 11/04/2016
 f1_keywords: ["C4243"]
 helpviewer_keywords: ["C4243"]
-ms.assetid: ca72f9ad-ce0b-43a9-a68c-106e1f8b90ef
 ---
 # Compiler Warning (level 3) C4243
 
@@ -21,7 +20,7 @@ The following sample generates C4243:
 struct B {
    int f() {
       return 0;
-   };
+   }
 };
 
 struct D : private B {};

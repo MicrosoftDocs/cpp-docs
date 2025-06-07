@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: numpunct Class"
 title: "numpunct Class"
-ms.date: "11/04/2016"
+description: "Learn more about: numpunct Class"
+ms.date: 11/04/2016
 f1_keywords: ["xlocnum/std::numpunct", "xlocnum/std::numpunct::char_type", "xlocnum/std::numpunct::string_type", "xlocnum/std::numpunct::decimal_point", "xlocnum/std::numpunct::do_decimal_point", "xlocnum/std::numpunct::do_falsename", "xlocnum/std::numpunct::do_grouping", "xlocnum/std::numpunct::do_thousands_sep", "xlocnum/std::numpunct::do_truename", "xlocnum/std::numpunct::falsename", "xlocnum/std::numpunct::grouping", "xlocnum/std::numpunct::thousands_sep", "xlocnum/std::numpunct::truename"]
 helpviewer_keywords: ["std::numpunct [C++]", "std::numpunct [C++], char_type", "std::numpunct [C++], string_type", "std::numpunct [C++], decimal_point", "std::numpunct [C++], do_decimal_point", "std::numpunct [C++], do_falsename", "std::numpunct [C++], do_grouping", "std::numpunct [C++], do_thousands_sep", "std::numpunct [C++], do_truename", "std::numpunct [C++], falsename", "std::numpunct [C++], grouping", "std::numpunct [C++], thousands_sep", "std::numpunct [C++], truename"]
-ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596
 ---
 # numpunct Class
 
@@ -107,7 +106,7 @@ int main( )
    npunct.decimal_point( ) << endl;
    cout << loc.name( ) << " thousands separator "
    << npunct.thousands_sep( ) << endl;
-};
+}
 ```
 
 ```Output
@@ -378,7 +377,7 @@ int main( )
    npunct.decimal_point( ) << endl;
    cout << loc.name( ) << " thousands separator "
    << npunct.thousands_sep( ) << endl;
-};
+}
 ```
 
 ```Output

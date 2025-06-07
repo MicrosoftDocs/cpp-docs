@@ -1934,14 +1934,14 @@ C++20 doesn't support coroutines with a return type that includes a placeholder 
 auto my_generator() {
     ...
     co_yield next;
-};
+}
 
 // /std:c++latest
 #include <experimental/generator>
 std::experimental::generator<int> my_generator() {
     ...
     co_yield next;
-};
+}
 ```
 
 #### Return type of `return_value`

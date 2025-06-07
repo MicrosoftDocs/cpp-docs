@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 3, off) C4191"
 title: "Compiler Warning (level 3, off) C4191"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3, off) C4191"
+ms.date: 11/04/2016
 f1_keywords: ["C4191"]
 helpviewer_keywords: ["C4191"]
 ---
@@ -46,5 +46,5 @@ int main() {
 
    fnptr1 fp3 = (fnptr1) &f2;   // C4191
    fnptr2 fp4 = (fnptr2) &f1;   // C4191
-};
+}
 ```

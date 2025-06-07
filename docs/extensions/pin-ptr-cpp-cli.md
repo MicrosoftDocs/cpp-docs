@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: pin_ptr (C++/CLI)"
 title: "pin_ptr (C++/CLI)"
-ms.date: "10/12/2018"
+description: "Learn more about: pin_ptr (C++/CLI)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 f1_keywords: ["pin_ptr_cpp", "stdcli::language::pin_ptr", "pin_ptr"]
 helpviewer_keywords: ["pinning pointers", "pin_ptr keyword [C++]"]
-ms.assetid: 6c2e6c73-4ec2-4dce-8e1f-ccf3a9f9d0aa
 ---
 # pin_ptr (C++/CLI)
 
@@ -164,7 +163,7 @@ int main() {
 
    k = l;   // ok
    Console::WriteLine(*k);
-};
+}
 ```
 
 ```Output
