@@ -32,7 +32,7 @@ The element data type to be stored in the `map`.
 *`Traits`*\
 The type that provides a function object that can compare two element values as sort keys to determine their relative order in the `map`. This argument is optional and the binary predicate `less<Key>` is the default value.
 
-In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
+In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
 
 *`Allocator`*\
 The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair<const Key, Type> >`.
@@ -64,7 +64,7 @@ The map orders the elements it controls by calling a stored function object of t
 > [!NOTE]
 > The comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate f(x,y) is a function object that has two argument objects x and y, and a return value of **`true`** or **`false`**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive, and if equivalence is transitive, where two objects x and  y are defined to be equivalent when both f(x,y) and f(y,x) are **`false`**. If the stronger condition of equality between keys replaces that of equivalence, the ordering becomes total (in the sense that all the elements are ordered with regard to one other), and the keys matched will be indiscernible from one other.
 >
-> In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
+> In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
 
 ## Members
 
@@ -552,7 +552,7 @@ The element's key value to look for.
 
 `contains()` is new in C++20. To use it, specify the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
-`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](./stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
 
 ### Example
 
