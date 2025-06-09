@@ -19,7 +19,7 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
 
 - [Converting CString objects](#_core_converting_cstring_objects)
 
-`Class CString` is based on class template [CStringT](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a **`typedef`** of `CStringT`. More exactly, `CString` is a **`typedef`** of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`.
+`Class CString` is based on class template [`CStringT`](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a **`typedef`** of `CStringT`. More exactly, `CString` is a **`typedef`** of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`.
 
 `CString`, `CStringA`, and `CStringW` are defined in atlstr.h. `CStringT` is defined in cstringt.h.
 

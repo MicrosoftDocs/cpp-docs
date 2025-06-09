@@ -89,7 +89,7 @@ The string that is the concatenation of the input strings.
 
 ### Remarks
 
-The functions each overload `operator+` to concatenate two objects of class template [basic_string](../standard-library/basic-string-class.md). All effectively return `basic_string< CharType, Traits, Allocator>(Left).append(right)`. For more information, see [append](../standard-library/basic-string-class.md#append).
+The functions each overload `operator+` to concatenate two objects of class template [`basic_string`](../standard-library/basic-string-class.md). All effectively return `basic_string< CharType, Traits, Allocator>(Left).append(right)`. For more information, see [append](../standard-library/basic-string-class.md#append).
 
 ### Example
 
