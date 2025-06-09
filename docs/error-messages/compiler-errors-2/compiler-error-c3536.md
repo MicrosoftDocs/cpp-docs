@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3536"
 title: "Compiler Error C3536"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3536"
+ms.date: 11/04/2016
 f1_keywords: ["C3536"]
 helpviewer_keywords: ["C3536"]
-ms.assetid: 8d866075-866b-49eb-9979-ee27b308f7e3
 ---
 # Compiler Error C3536
 
@@ -31,7 +30,7 @@ int main()
    auto* d = &d;   //C3536
    auto& e = e;    //C3536
    return 0;
-};
+}
 ```
 
 ## See also
