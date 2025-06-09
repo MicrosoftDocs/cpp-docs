@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: How to: Overload Functions with Interior Pointers and Native Pointers (C++/CLI)"
 title: "How to: Overload Functions with Interior Pointers and Native Pointers (C++/CLI)"
-ms.date: "10/12/2018"
+description: "Learn more about: How to: Overload Functions with Interior Pointers and Native Pointers (C++/CLI)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 helpviewer_keywords: ["Functions with interior and native pointers, overloading"]
-ms.assetid: d70df625-4aad-457c-84f5-70a0a290cc1f
 ---
 # How to: Overload Functions with Interior Pointers and Native Pointers (C++/CLI)
 
@@ -49,7 +48,7 @@ int main() {
    G ^pG = gcnew G;   // common language runtime heap
    f( &pS->i );
    f( &pG->i );
-};
+}
 ```
 
 ```Output

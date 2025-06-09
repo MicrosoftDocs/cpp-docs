@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2020"
 title: "Linker Tools Error LNK2020"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2020"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2020"]
 helpviewer_keywords: ["LNK2020"]
-ms.assetid: 4dd017d0-5e83-471b-ac8a-538ac1ed6870
 ---
 # Linker Tools Error LNK2020
 
@@ -47,16 +46,16 @@ The following sample generates LNK2020.
 
 template <typename T>
 ref struct Base {
-   virtual void f1() {};
+   virtual void f1() {}
 };
 
 template <typename T>
 ref struct Base2 {
-   virtual void f1() {};
+   virtual void f1() {}
 };
 
 int main() {
    Base<int>^ p;   // LNK2020
    Base2<int>^ p2 = gcnew Base2<int>();   // OK
-};
+}
 ```
