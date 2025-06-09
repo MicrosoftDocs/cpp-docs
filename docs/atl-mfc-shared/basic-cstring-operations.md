@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Basic CString Operations"
 title: "Basic CString Operations"
-ms.date: "11/04/2016"
+description: "Learn more about: Basic CString Operations"
+ms.date: 11/04/2016
 helpviewer_keywords: ["CString objects, basic operations", "string literals, CString operations", "literal strings, CString operations", "CString objects", "string comparison, CString operations", "characters, accessing in CStrings"]
-ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
 ---
 # Basic CString Operations
 

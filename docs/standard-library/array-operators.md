@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <array> operators"
 title: "<array> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <array> operators"
+ms.date: 11/04/2016
 f1_keywords: ["array/std::array::operator!=", "array/std::array::operator<", "array/std::array::operator<=", "array/std::array::operator>", "array/std::array::operator>=", "array/std::array::operator=="]
-ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
 ---
 # `<array>` operators
 

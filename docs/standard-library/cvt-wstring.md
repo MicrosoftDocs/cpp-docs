@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: <cvt/wstring>"
 title: "<cvt/wstring>"
-ms.date: "11/04/2016"
+description: "Learn more about: <cvt/wstring>"
+ms.date: 11/04/2016
 f1_keywords: ["stdext.cvt.<cvt/wstring>", "<cvt/wstring>", "stdext::cvt::<cvt/wstring>"]
 helpviewer_keywords: ["cvt/wstring header"]
-ms.assetid: d78b04bb-9ac0-4adb-8ffe-3aefb9b14c2d
 ---
 # `<cvt/wstring>`
 

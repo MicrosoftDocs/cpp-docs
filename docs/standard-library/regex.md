@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: <regex>"
 title: "<regex>"
-ms.date: "11/04/2016"
+description: "Learn more about: <regex>"
+ms.date: 11/04/2016
 f1_keywords: ["<regex>"]
 helpviewer_keywords: ["regex header"]
 ---
