@@ -116,7 +116,7 @@ Right container to compare.
 
 ### Remarks
 
-The template function overloads `operator<` to compare two objects of class template [array Class](../standard-library/array-class-stl.md). The function returns `lexicographical_compare(left.begin(), left.end(), right.begin())`.
+The template function overloads `operator<` to compare two objects of class template [array](../standard-library/array-class-stl.md). The function returns `lexicographical_compare(left.begin(), left.end(), right.begin())`.
 
 ### Example
 
@@ -262,7 +262,7 @@ Right container to compare.
 
 ### Remarks
 
-The template function overloads `operator==` to compare two objects of class template [array Class](../standard-library/array-class-stl.md). The function returns `equal(left.begin(), left.end(), right.begin())`.
+The template function overloads `operator==` to compare two objects of class template [array](../standard-library/array-class-stl.md). The function returns `equal(left.begin(), left.end(), right.begin())`.
 
 ### Example
 

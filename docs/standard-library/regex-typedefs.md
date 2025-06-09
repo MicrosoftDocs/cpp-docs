@@ -18,7 +18,7 @@ typedef match_results<const char*> cmatch;
 
 ### Remarks
 
-The type describes a specialization of class template [match_results Class](../standard-library/match-results-class.md) for iterators of type `const char*`.
+The type describes a specialization of class template [match_results](../standard-library/match-results-class.md) for iterators of type `const char*`.
 
 ## <a name="cregex_iterator"></a> cregex_iterator Typedef
 
@@ -30,7 +30,7 @@ typedef regex_iterator<const char*> cregex_iterator;
 
 ### Remarks
 
-The type describes a specialization of class template [regex_iterator Class](../standard-library/regex-iterator-class.md) for iterators of type `const char*`.
+The type describes a specialization of class template [regex_iterator](../standard-library/regex-iterator-class.md) for iterators of type `const char*`.
 
 ## <a name="cregex_token_iterator"></a> cregex_token_iterator Typedef
 
@@ -42,7 +42,7 @@ typedef regex_token_iterator<const char*> cregex_token_iterator;
 
 ### Remarks
 
-The type describes a specialization of class template [regex_token_iterator Class](../standard-library/regex-token-iterator-class.md) for iterators of type `const char*`.
+The type describes a specialization of class template [regex_token_iterator](../standard-library/regex-token-iterator-class.md) for iterators of type `const char*`.
 
 ## <a name="csub_match"></a> csub_match Typedef
 
@@ -54,7 +54,7 @@ typedef sub_match<const char*> csub_match;
 
 ### Remarks
 
-The type describes a specialization of class template [sub_match Class](../standard-library/sub-match-class.md) for iterators of type `const char*`.
+The type describes a specialization of class template [sub_match](../standard-library/sub-match-class.md) for iterators of type `const char*`.
 
 ## <a name="regex"></a> regex Typedef
 
@@ -66,7 +66,7 @@ typedef basic_regex<char> regex;
 
 ### Remarks
 
-The type describes a specialization of class template [basic_regex Class](../standard-library/basic-regex-class.md) for elements of type **`char`**.
+The type describes a specialization of class template [basic_regex](../standard-library/basic-regex-class.md) for elements of type **`char`**.
 
 > [!NOTE]
 > High-bit characters will have unpredictable results with `regex`. Values outside the range of 0 to 127 may result in undefined behavior.
@@ -81,7 +81,7 @@ typedef match_results<string::const_iterator> smatch;
 
 ### Remarks
 
-The type describes a specialization of class template [match_results Class](../standard-library/match-results-class.md) for iterators of type `string::const_iterator`.
+The type describes a specialization of class template [match_results](../standard-library/match-results-class.md) for iterators of type `string::const_iterator`.
 
 ## <a name="sregex_iterator"></a> sregex_iterator Typedef
 
@@ -93,7 +93,7 @@ typedef regex_iterator<string::const_iterator> sregex_iterator;
 
 ### Remarks
 
-The type describes a specialization of class template [regex_iterator Class](../standard-library/regex-iterator-class.md) for iterators of type `string::const_iterator`.
+The type describes a specialization of class template [regex_iterator](../standard-library/regex-iterator-class.md) for iterators of type `string::const_iterator`.
 
 ## <a name="sregex_token_iterator"></a> sregex_token_iterator Typedef
 
@@ -105,7 +105,7 @@ typedef regex_token_iterator<string::const_iterator> sregex_token_iterator;
 
 ### Remarks
 
-The type describes a specialization of class template [regex_token_iterator Class](../standard-library/regex-token-iterator-class.md) for iterators of type `string::const_iterator`.
+The type describes a specialization of class template [regex_token_iterator](../standard-library/regex-token-iterator-class.md) for iterators of type `string::const_iterator`.
 
 ## <a name="ssub_match"></a> ssub_match Typedef
 
@@ -117,7 +117,7 @@ typedef sub_match<string::const_iterator> ssub_match;
 
 ### Remarks
 
-The type describes a specialization of class template [sub_match Class](../standard-library/sub-match-class.md) for iterators of type `string::const_iterator`.
+The type describes a specialization of class template [sub_match](../standard-library/sub-match-class.md) for iterators of type `string::const_iterator`.
 
 ## <a name="wcmatch"></a> wcmatch Typedef
 
@@ -129,7 +129,7 @@ typedef match_results<const wchar_t *> wcmatch;
 
 ### Remarks
 
-The type describes a specialization of class template [match_results Class](../standard-library/match-results-class.md) for iterators of type `const wchar_t*`.
+The type describes a specialization of class template [match_results](../standard-library/match-results-class.md) for iterators of type `const wchar_t*`.
 
 ## <a name="wcregex_iterator"></a> wcregex_iterator Typedef
 
@@ -141,7 +141,7 @@ typedef regex_iterator<const wchar_t*> wcregex_iterator;
 
 ### Remarks
 
-The type describes a specialization of class template [regex_iterator Class](../standard-library/regex-iterator-class.md) for iterators of type `const wchar_t*`.
+The type describes a specialization of class template [regex_iterator](../standard-library/regex-iterator-class.md) for iterators of type `const wchar_t*`.
 
 ## <a name="wcregex_token_iterator"></a> wcregex_token_iterator Typedef
 
@@ -153,7 +153,7 @@ typedef regex_token_iterator<const wchar_t*> wcregex_token_iterator;
 
 ### Remarks
 
-The type describes a specialization of class template [regex_token_iterator Class](../standard-library/regex-token-iterator-class.md) for iterators of type `const wchar_t*`.
+The type describes a specialization of class template [regex_token_iterator](../standard-library/regex-token-iterator-class.md) for iterators of type `const wchar_t*`.
 
 ## <a name="wcsub_match"></a> wcsub_match Typedef
 
@@ -165,7 +165,7 @@ typedef sub_match<const wchar_t*> wcsub_match;
 
 ### Remarks
 
-The type describes a specialization of class template [sub_match Class](../standard-library/sub-match-class.md) for iterators of type `const wchar_t*`.
+The type describes a specialization of class template [sub_match](../standard-library/sub-match-class.md) for iterators of type `const wchar_t*`.
 
 ## <a name="wregex"></a> wregex Typedef
 
@@ -177,7 +177,7 @@ typedef basic_regex<wchar_t> wregex;
 
 ### Remarks
 
-The type describes a specialization of class template [basic_regex Class](../standard-library/basic-regex-class.md) for elements of type **`wchar_t`**.
+The type describes a specialization of class template [basic_regex](../standard-library/basic-regex-class.md) for elements of type **`wchar_t`**.
 
 ## <a name="wsmatch"></a> wsmatch Typedef
 
@@ -189,7 +189,7 @@ typedef match_results<wstring::const_iterator> wsmatch;
 
 ### Remarks
 
-The type describes a specialization of class template [match_results Class](../standard-library/match-results-class.md) for iterators of type `wstring::const_iterator`.
+The type describes a specialization of class template [match_results](../standard-library/match-results-class.md) for iterators of type `wstring::const_iterator`.
 
 ## <a name="wsregex_iterator"></a> wsregex_iterator Typedef
 
@@ -201,7 +201,7 @@ typedef regex_iterator<wstring::const_iterator> wsregex_iterator;
 
 ### Remarks
 
-The type describes a specialization of class template [regex_iterator Class](../standard-library/regex-iterator-class.md) for iterators of type `wstring::const_iterator`.
+The type describes a specialization of class template [regex_iterator](../standard-library/regex-iterator-class.md) for iterators of type `wstring::const_iterator`.
 
 ## <a name="wsregex_token_iterator"></a> wsregex_token_iterator Typedef
 
@@ -213,7 +213,7 @@ typedef regex_token_iterator<wstring::const_iterator> wsregex_token_iterator;
 
 ### Remarks
 
-The type describes a specialization of class template [regex_token_iterator Class](../standard-library/regex-token-iterator-class.md) for iterators of type `wstring::const_iterator`.
+The type describes a specialization of class template [regex_token_iterator](../standard-library/regex-token-iterator-class.md) for iterators of type `wstring::const_iterator`.
 
 ## <a name="wssub_match"></a> wssub_match Typedef
 
@@ -225,7 +225,7 @@ typedef sub_match<wstring::const_iterator> wssub_match;
 
 ### Remarks
 
-The type describes a specialization of class template [sub_match Class](../standard-library/sub-match-class.md) for iterators of type `wstring::const_iterator`.
+The type describes a specialization of class template [sub_match](../standard-library/sub-match-class.md) for iterators of type `wstring::const_iterator`.
 
 ## See also
 
