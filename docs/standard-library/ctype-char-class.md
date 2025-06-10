@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: ctype<char> Class"
 title: "ctype<char> Class"
-ms.date: "11/04/2016"
+description: "Learn more about: ctype<char> Class"
+ms.date: 11/04/2016
 f1_keywords: ["ctype<char>", "locale/std::ctype<char>"]
 helpviewer_keywords: ["ctype<char> class"]
-ms.assetid: ee30acb4-a743-405e-b3d4-13602092da84
 ---
 # `ctype<char>` Class
 

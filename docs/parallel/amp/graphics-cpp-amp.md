@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Graphics (C++ AMP)"
 title: "Graphics (C++ AMP)"
-ms.date: "11/04/2016"
+description: "Learn more about: Graphics (C++ AMP)"
+ms.date: 11/04/2016
 ---
 # Graphics (C++ AMP)
 
