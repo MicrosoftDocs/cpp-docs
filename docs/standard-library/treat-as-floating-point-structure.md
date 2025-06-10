@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: treat_as_floating_point structure"
 title: "treat_as_floating_point Structure"
+description: "Learn more about: treat_as_floating_point structure"
 ms.date: 07/16/2021
 f1_keywords: ["chrono/std::chrono::treat_as_floating_point"]
 helpviewer_keywords: ["std::chrono [C++], treat_as_floating_point"]
