@@ -1526,7 +1526,7 @@ The position just beyond the last element to be copied from a `hash_map`.
 
 The first `insert` member function returns a pair whose `bool` component returns `true` if an insertion was made and `false` if the `hash_map` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
 
-To access the iterator component of a pair `pr` returned by this member function, use `pr.first`, and to dereference it, use `(pr.first)`. To access the **`bool`** component of a pair `pr` returned by this member function, use `pr.second`, and to dereference it, use `\(pr.second)`.
+To access the iterator component of a pair `pr` returned by this member function, use `pr.first`, and to dereference it, use `(pr.first)`. To access the **`bool`** component of a pair `pr` returned by this member function, use `pr.second`, and to dereference it, use `(pr.second)`.
 
 The second `insert` member function, the hint version, returns an iterator that points to the position where the new element was inserted into the `hash_map`.
 

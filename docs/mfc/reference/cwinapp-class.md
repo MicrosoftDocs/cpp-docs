@@ -961,7 +961,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
 ### Parameters
 
 *nIDCursor*<br/>
-An **OCR_** manifest constant identifier that specifies a predefined Windows cursor. You must have `#define OEMRESOURCE` before `#include \<afxwin.h>` to gain access to the **OCR_** constants in WINDOWS.H.
+An **OCR_** manifest constant identifier that specifies a predefined Windows cursor. You must have `#define OEMRESOURCE` before `#include <afxwin.h>` to gain access to the **OCR_** constants in WINDOWS.H.
 
 ### Return Value
 
@@ -988,7 +988,7 @@ HICON LoadOEMIcon(UINT nIDIcon) const;
 ### Parameters
 
 *nIDIcon*<br/>
-An **OIC_** manifest constant identifier that specifies a predefined Windows icon. You must have `#define OEMRESOURCE` before `#include \<afxwin.h>` to access the **OIC_** constants in WINDOWS.H.
+An **OIC_** manifest constant identifier that specifies a predefined Windows icon. You must have `#define OEMRESOURCE` before `#include <afxwin.h>` to access the **OIC_** constants in WINDOWS.H.
 
 ### Return Value
 

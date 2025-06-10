@@ -410,7 +410,7 @@ Type 'abcdef': abcdef
 def
 ```
 
-## <a name="op_gt_gt"></a> `basic\_istream::operator>>`
+## <a name="op_gt_gt"></a> `basic_istream::operator>>`
 
 Calls a function on the input stream or reads formatted data from the input stream.
 
@@ -451,7 +451,7 @@ The stream (`*this`).
 
 ### Remarks
 
-The `<istream>` header also defines several global extraction operators. For more information, see [`operator>> (\<istream>)`](../standard-library/istream-operators.md#op_gt_gt).
+The `<istream>` header also defines several global extraction operators. For more information, see [`operator>> (<istream>)`](../standard-library/istream-operators.md#op_gt_gt).
 
 The first member function ensures that an expression of the form `istr >> ws` calls `ws(istr)`, and then returns `*this`. For more information, see [`ws`](../standard-library/istream-functions.md#ws).
 
