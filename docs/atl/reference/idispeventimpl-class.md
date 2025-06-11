@@ -211,7 +211,7 @@ The constructor. Stores the values of the class template parameters *plibid*, *p
 IDispEventImpl();
 ```
 
-## <a name="tihclass"></a> IDispEventImpl::tihclass
+## <a name="_tihclass"></a> IDispEventImpl::_tihclass
 
 This typedef is an instance of the class template parameter *tihclass*.
 
