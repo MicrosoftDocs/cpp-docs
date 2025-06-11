@@ -329,7 +329,7 @@ Experimental options may only be supported by certain versions of the compiler. 
 | [`/Ze`](za-ze-disable-language-extensions.md) | Deprecated. Enables language extensions. |
 | [`/Zg`](zg-generate-function-prototypes.md) | Removed in Visual Studio 2015. Generates function prototypes. |
 
-<sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.
+<sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.\
 <sup>17.14</sup> This option is available starting in Visual Studio 2022 version 17.14.
 
 ## See also
