@@ -81,7 +81,7 @@ To modify the details of the grammar of regular expressions, write a class that 
 |[`operator==`](../standard-library/regex-operators.md#op_eq_eq)|Comparison of various objects, equal.|
 |[`operator!=`](../standard-library/regex-operators.md#op_neq)|Comparison of various objects, not equal.|
 |[`operator<`](../standard-library/regex-operators.md#op_lt)|Comparison of various objects, less than.|
-|[`operator\<=`](../standard-library/regex-operators.md#op_gt_eq)|Comparison of various objects, less than or equal.|
+|[`operator<=`](../standard-library/regex-operators.md#op_gt_eq)|Comparison of various objects, less than or equal.|
 |[`operator>`](../standard-library/regex-operators.md#op_gt)|Comparison of various objects, greater than.|
 |[`operator>=`](../standard-library/regex-operators.md#op_gt_eq)|Comparison of various objects, greater than or equal.|
 |[`operator<<`](../standard-library/regex-operators.md#op_lt_lt)|Inserts a `sub_match` in a stream.|

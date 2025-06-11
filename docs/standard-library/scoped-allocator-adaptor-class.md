@@ -67,7 +67,7 @@ Three types are defined for the sake of exposition:
 
 |Name|Description|
 |----------|-----------------|
-|[scoped_allocator_adaptor::rebind Struct](#rebind_struct)|Defines the type `Outer::rebind\<Other>::other` as a synonym for `scoped_allocator_adaptor\<Other, Inner...>`.|
+|[scoped_allocator_adaptor::rebind Struct](#rebind_struct)|Defines the type `Outer::rebind<Other>::other` as a synonym for `scoped_allocator_adaptor<Other, Inner...>`.|
 
 ### Methods
 
@@ -277,7 +277,7 @@ A reference to the stored object of type `outer_allocator_type`.
 
 ## <a name="rebind_struct"></a> scoped_allocator_adaptor::rebind Struct
 
-Defines the type `Outer::rebind\<Other>::other` as a synonym for `scoped_allocator_adaptor\<Other, Inner...>`.
+Defines the type `Outer::rebind<Other>::other` as a synonym for `scoped_allocator_adaptor<Other, Inner...>`.
 
 struct rebind{
    typedef Other_traits::rebind\<Other>
