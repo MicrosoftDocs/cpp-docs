@@ -54,7 +54,7 @@ The class used to manage the type information for *T*. The default value is a cl
 
 |Name|Description|
 |----------|-----------------|
-|[IDispEventImpl::_tihclass](../../atl/reference/idispeventimpl-class.md)|The class used to manage the type information. By default, `CComTypeInfoHolder`.|
+|[IDispEventImpl::_tihclass](#_tihclass)|The class used to manage the type information. By default, `CComTypeInfoHolder`.|
 
 ### Public Constructors
 
