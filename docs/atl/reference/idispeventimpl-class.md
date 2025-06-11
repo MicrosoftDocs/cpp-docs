@@ -82,14 +82,14 @@ Add a [`SINK_ENTRY`](composite-control-macros.md#sink_entry) or [`SINK_ENTRY_EX`
 
 You must derive from `IDispEventImpl` (using a unique value for *`nID`*) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventImpl` base classes.
 
-`IDispEventImpl` provides the same functionality as [`IDispEventSimpleImpl`](../../atl/reference/idispeventsimpleimpl-class.md), except it gets type information about the interface from a type library rather than having it supplied as a pointer to an [`_ATL_FUNC_INFO`](../../atl/reference/atl-func-info-structure.md) structure. Use `IDispEventSimpleImpl` when you do not have a type library describing the event interface or want to avoid the overhead associated with using the type library.
+`IDispEventImpl` provides the same functionality as [`IDispEventSimpleImpl`](idispeventsimpleimpl-class.md), except it gets type information about the interface from a type library rather than having it supplied as a pointer to an [`_ATL_FUNC_INFO`](atl-func-info-structure.md) structure. Use `IDispEventSimpleImpl` when you do not have a type library describing the event interface or want to avoid the overhead associated with using the type library.
 
 > [!NOTE]
 > `IDispEventImpl` and `IDispEventSimpleImpl` provide their own implementation of `IUnknown::QueryInterface` enabling each `IDispEventImpl` and `IDispEventSimpleImpl` base class to act as a separate COM identity while still allowing direct access to class members in your main COM object.
 
 CE ATL implementation of ActiveX event sinks only supports return values of type `HRESULT` or `void` from your event handler methods; any other return value is unsupported and its behavior is undefined.
 
-For more information, see [Supporting `IDispEventImpl`](../../atl/supporting-idispeventimpl.md).
+For more information, see [Supporting `IDispEventImpl`](../supporting-idispeventimpl.md).
 
 ## Inheritance Hierarchy
 
@@ -97,7 +97,7 @@ For more information, see [Supporting `IDispEventImpl`](../../atl/supporting-idi
 
 `_IDispEventLocator`
 
-[`IDispEventSimpleImpl`](../../atl/reference/idispeventsimpleimpl-class.md)
+[`IDispEventSimpleImpl`](idispeventsimpleimpl-class.md)
 
 `IDispEventImpl`
 
@@ -223,10 +223,10 @@ By default, the class is `CComTypeInfoHolder`. `CComTypeInfoHolder` manages the 
 
 ## See also
 
-[`_ATL_FUNC_INFO` Structure](../../atl/reference/atl-func-info-structure.md)\
-[`IDispatchImpl` Class](../../atl/reference/idispatchimpl-class.md)\
-[`IDispEventSimpleImpl` Class](../../atl/reference/idispeventsimpleimpl-class.md)\
+[`_ATL_FUNC_INFO` Structure](atl-func-info-structure.md)\
+[`IDispatchImpl` Class](idispatchimpl-class.md)\
+[`IDispEventSimpleImpl` Class](idispeventsimpleimpl-class.md)\
 [`SINK_ENTRY`](composite-control-macros.md#sink_entry)\
 [`SINK_ENTRY_EX`](composite-control-macros.md#sink_entry_ex)\
 [`SINK_ENTRY_INFO`](composite-control-macros.md#sink_entry_info)\
-[Class Overview](../../atl/atl-class-overview.md)
+[Class Overview](../atl-class-overview.md)
