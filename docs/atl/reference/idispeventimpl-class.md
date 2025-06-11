@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: IDispEventImpl Class"
 title: "IDispEventImpl Class"
-ms.date: "11/04/2016"
+description: "Learn more about: IDispEventImpl Class"
+ms.date: 11/04/2016
 f1_keywords: ["IDispEventImpl", "ATLCOM/ATL::IDispEventImpl", "ATLCOM/ATL::IDispEventImpl::IDispEventImpl", "ATLCOM/ATL::IDispEventImpl::GetFuncInfoFromId", "ATLCOM/ATL::IDispEventImpl::GetIDsOfNames", "ATLCOM/ATL::IDispEventImpl::GetTypeInfo", "ATLCOM/ATL::IDispEventImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispEventImpl::GetUserDefinedType"]
 helpviewer_keywords: ["IDispEventImpl class"]
-ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
 ---
 # `IDispEventImpl` Class
 
