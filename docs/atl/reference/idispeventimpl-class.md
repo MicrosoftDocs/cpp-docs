@@ -15,7 +15,7 @@ This class provides implementations of the `IDispatch` methods.
 
 ## Syntax
 
-```
+```cpp
 template <UINT nID, class T,
     const IID* pdiid = &IID_NULL,
     const GUID* plibid = &GUID_NULL,
@@ -109,7 +109,7 @@ For more information, see [Supporting `IDispEventImpl`](../../atl/supporting-idi
 
 Locates the function index for the specified dispatch identifier.
 
-```
+```cpp
 HRESULT GetFuncInfoFromId(
     const IID& iid,
     DISPID dispidMember,
@@ -139,7 +139,7 @@ A standard `HRESULT` value.
 
 Maps a single member and an optional set of argument names to a corresponding set of integer `DISPID`s, which can be used on subsequent calls to [`IDispatch::Invoke`](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke).
 
-```
+```cpp
 STDMETHOD(GetIDsOfNames)(
     REFIID riid,
     LPOLESTR* rgszNames,
@@ -156,7 +156,7 @@ See [`IDispatch::GetIDsOfNames`](/windows/win32/api/oaidl/nf-oaidl-idispatch-get
 
 Retrieves the type information for an object, which can then be used to get the type information for an interface.
 
-```
+```cpp
 STDMETHOD(GetTypeInfo)(
     UINT itinfo,
     LCID lcid,
@@ -167,7 +167,7 @@ STDMETHOD(GetTypeInfo)(
 
 Retrieves the number of type information interfaces that an object provides (either 0 or 1).
 
-```
+```cpp
 STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ```
 
@@ -179,7 +179,7 @@ See [`IDispatch::GetTypeInfoCount`](/windows/win32/api/oaidl/nf-oaidl-idispatch-
 
 Retrieves the basic type of a user-defined type.
 
-```
+```cpp
 VARTYPE GetUserDefinedType(
     ITypeInfo* pTI,
     HREFTYPE hrt);
@@ -205,7 +205,7 @@ See [`ITypeInfo::GetRefTypeInfo`](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-ge
 
 The constructor. Stores the values of the class template parameters *`plibid`*, *`pdiid`*, *`wMajor`*, and *`wMinor`*.
 
-```
+```cpp
 IDispEventImpl();
 ```
 
@@ -213,7 +213,7 @@ IDispEventImpl();
 
 This typedef is an instance of the class template parameter *`tihclass`*.
 
-```
+```cpp
 typedef tihclass _tihclass;
 ```
 
