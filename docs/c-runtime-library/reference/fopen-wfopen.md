@@ -158,7 +158,7 @@ Valid characters for the *`mode`* string that is used in **`fopen`** and **`_fdo
 If you're using **`rb`** mode, you don't have to port your code, and if you expect to read most of a large file or aren't concerned about network performance, you might also consider whether to use memory mapped Win32 files as an option.
 
 Regarding `T` and `D`:
-- `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](https://learn.microsoft.com/archive/blogs/larryosterman/its-only-temporary).
+- `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](/archive/blogs/larryosterman/its-only-temporary).
 - `D` specifies a regular file that is written to disk. The difference is that it's automatically deleted when it's closed.
 You can combine `TD` to get both semantics.
 
