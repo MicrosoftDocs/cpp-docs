@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: regex_traits Class"
 title: "regex_traits Class"
-ms.date: "09/10/2018"
+description: "Learn more about: regex_traits Class"
+ms.date: 09/10/2018
 f1_keywords: ["regex/std::regex_traits", "regex/std::regex_traits::char_type", "regex/std::regex_traits::size_type", "regex/std::regex_traits::string_type", "regex/std::regex_traits::locale_type", "regex/std::regex_traits::char_class_type", "regex/std::regex_traits::length", "regex/std::regex_traits::translate", "regex/std::regex_traits::translate_nocase", "regex/std::regex_traits::transform", "regex/std::regex_traits::transform_primary", "regex/std::regex_traits::lookup_classname", "regex/std::regex_traits::lookup_collatename", "regex/std::regex_traits::isctype", "regex/std::regex_traits::value", "regex/std::regex_traits::imbue", "regex/std::regex_traits::getloc"]
 helpviewer_keywords: ["std::regex_traits [C++]", "std::regex_traits [C++], char_type", "std::regex_traits [C++], size_type", "std::regex_traits [C++], string_type", "std::regex_traits [C++], locale_type", "std::regex_traits [C++], char_class_type", "std::regex_traits [C++], length", "std::regex_traits [C++], translate", "std::regex_traits [C++], translate_nocase", "std::regex_traits [C++], transform", "std::regex_traits [C++], transform_primary", "std::regex_traits [C++], lookup_classname", "std::regex_traits [C++], lookup_collatename", "std::regex_traits [C++], isctype", "std::regex_traits [C++], value", "std::regex_traits [C++], imbue", "std::regex_traits [C++], getloc"]
-ms.assetid: bc5a5eed-32fc-4eb7-913d-71c42e729e81
 ---
 # regex_traits Class
 
@@ -24,7 +23,7 @@ The character element type to describe.
 
 ## Remarks
 
-The class template describes various regular expression traits for type *Elem*. The class template [basic_regex Class](../standard-library/basic-regex-class.md) uses this information to manipulate elements of type *Elem*.
+The class template describes various regular expression traits for type *Elem*. The class template [`basic_regex`](../standard-library/basic-regex-class.md) uses this information to manipulate elements of type *Elem*.
 
 Each `regex_traits` object holds an object of type `regex_traits::locale` which is used by some of its member functions. The default locale is a copy of `regex_traits::locale()`. The member function `imbue` replaces the locale object, and the member function `getloc` returns a copy of the locale object.
 
