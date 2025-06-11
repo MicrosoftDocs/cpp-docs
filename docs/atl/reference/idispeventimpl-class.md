@@ -27,25 +27,25 @@ class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 
 #### Parameters
 
-*`nID`*<br/>
+*`nID`*\
 A unique identifier for the source object. When `IDispEventImpl` is the base class for a composite control, use the resource ID of the desired contained control for this parameter. In other cases, use an arbitrary positive integer.
 
-*`T`*<br/>
+*`T`*\
 The user's class, which is derived from `IDispEventImpl`.
 
-*`pdiid`*<br/>
+*`pdiid`*\
 The pointer to the IID of the event dispinterface implemented by this class. This interface must be defined in the type library denoted by *`plibid`*, *`wMajor`*, and *`wMinor`*.
 
-*`plibid`*<br/>
+*`plibid`*\
 A pointer to the type library that defines the dispatch interface pointed to by *`pdiid`*. If **`&GUID_NULL`**, the type library will be loaded from the object sourcing the events.
 
-*`wMajor`*<br/>
+*`wMajor`*\
 The major version of the type library. The default value is 0.
 
-*`wMinor`*<br/>
+*`wMinor`*\
 The minor version of the type library. The default value is 0.
 
-*`tihclass`*<br/>
+*`tihclass`*\
 The class used to manage the type information for *`T`*. The default value is a class of type `CComTypeInfoHolder`; however, you can override this template parameter by providing a class of a type other than `CComTypeInfoHolder`.
 
 ## Members
@@ -119,16 +119,16 @@ HRESULT GetFuncInfoFromId(
 
 ### Parameters
 
-*`iid`*<br/>
+*`iid`*\
 [in] A reference to the ID of the function.
 
-*`dispidMember`*<br/>
+*`dispidMember`*\
 [in] The dispatch ID of the function.
 
-*`lcid`*<br/>
+*`lcid`*\
 [in] The locale context of the function ID.
 
-*`info`*<br/>
+*`info`*\
 [in] The structure indicating how the function is called.
 
 ### Return Value
@@ -187,10 +187,10 @@ VARTYPE GetUserDefinedType(
 
 ### Parameters
 
-*`pTI`*<br/>
+*`pTI`*\
 [in] A pointer to the [`ITypeInfo`](/windows/win32/api/oaidl/nn-oaidl-itypeinfo) interface containing the user-defined type.
 
-*`hrt`*<br/>
+*`hrt`*\
 [in] A handle to the type description to be retrieved.
 
 ### Return Value
@@ -223,10 +223,10 @@ By default, the class is `CComTypeInfoHolder`. `CComTypeInfoHolder` manages the 
 
 ## See also
 
-[`_ATL_FUNC_INFO` Structure](../../atl/reference/atl-func-info-structure.md)<br/>
-[`IDispatchImpl` Class](../../atl/reference/idispatchimpl-class.md)<br/>
-[`IDispEventSimpleImpl` Class](../../atl/reference/idispeventsimpleimpl-class.md)<br/>
-[`SINK_ENTRY`](composite-control-macros.md#sink_entry)<br/>
-[`SINK_ENTRY_EX`](composite-control-macros.md#sink_entry_ex)<br/>
-[`SINK_ENTRY_INFO`](composite-control-macros.md#sink_entry_info)<br/>
+[`_ATL_FUNC_INFO` Structure](../../atl/reference/atl-func-info-structure.md)\
+[`IDispatchImpl` Class](../../atl/reference/idispatchimpl-class.md)\
+[`IDispEventSimpleImpl` Class](../../atl/reference/idispeventsimpleimpl-class.md)\
+[`SINK_ENTRY`](composite-control-macros.md#sink_entry)\
+[`SINK_ENTRY_EX`](composite-control-macros.md#sink_entry_ex)\
+[`SINK_ENTRY_INFO`](composite-control-macros.md#sink_entry_info)\
 [Class Overview](../../atl/atl-class-overview.md)
