@@ -163,8 +163,6 @@ STDMETHOD(GetTypeInfo)(
     ITypeInfo** pptinfo);
 ```
 
-### Remarks
-
 ## <a name="gettypeinfocount"></a> `IDispEventImpl::GetTypeInfoCount`
 
 Retrieves the number of type information interfaces that an object provides (either 0 or 1).
