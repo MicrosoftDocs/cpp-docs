@@ -261,7 +261,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Zs`](zs-syntax-check-only.md) | Checks syntax only. |
 | [`/ZW`](zw-windows-runtime-compilation.md) | Produces an output file to run on the Windows Runtime. |
 
-<sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.
+<sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.\
 <sup>17.14</sup> This option is available starting in Visual Studio 2022 version 17.14.
 
 ## See also
