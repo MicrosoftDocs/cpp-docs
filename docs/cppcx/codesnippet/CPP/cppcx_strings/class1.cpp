@@ -55,11 +55,11 @@ void Test1()
     if (str1 == str2) { /* ... */ }
     if (str1->Equals(str2)) { /* ... */ }
     if (str1 != str2) { /* ... */ }
-    if (str1 < str2 || str1 > str2) { /* ... */};
+    if (str1 < str2 || str1 > str2) { /* ... */ }
     int result = String::CompareOrdinal(str1, str2);
     
-    if(str1 == nullptr) { /* ...*/};
-    if(str1->IsEmpty()) { /* ...*/};
+    if (str1 == nullptr) { /* ...*/ }
+    if (str1->IsEmpty()) { /* ...*/ }
 
    // Accessing individual characters in a String^
     auto it = str1->Begin();

@@ -88,7 +88,7 @@ function( it i1, it i2 )
       x = *i1;
       cout << x << " ";
       i1++;
-   };
+   }
    cout << endl;
 };
 

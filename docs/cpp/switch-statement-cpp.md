@@ -117,7 +117,7 @@ int main()
         break;
     case status::bad:
         throw BadGadget();
-    };
+    }
 ```
 
 An inner block of a **`switch`** statement can contain definitions with initializers as long as they're *reachable*, that is, not bypassed by all possible execution paths. Names introduced using these declarations have local scope. For example:

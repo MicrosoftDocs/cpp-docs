@@ -115,7 +115,7 @@ int filter(unsigned int code, struct _EXCEPTION_POINTERS *ep)
     {
         puts("didn't catch AV, unexpected.");
         return EXCEPTION_CONTINUE_SEARCH;
-    };
+    }
 }
 
 int main()

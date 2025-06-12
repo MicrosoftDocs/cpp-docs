@@ -23,7 +23,7 @@ int ( *pFunc2) ( int a, int b);
 
 int main()
 {
-   if ( pFunc1 != pFunc2 ) {};  // C4220
+   if ( pFunc1 != pFunc2 ) {}   // C4220
 }
 ```
 

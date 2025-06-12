@@ -25,7 +25,7 @@ void fb( ios_base& os, int l )
    {
       for( int i=0; i < l; i++ )
       (*pos) << ' ';
-   };
+   }
 }
 
 _Smanip<int>

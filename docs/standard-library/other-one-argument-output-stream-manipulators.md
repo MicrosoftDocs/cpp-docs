@@ -51,7 +51,7 @@ void fb( ios_base& os, char * somename )
    {
       for( int i=0; i < l; i++ )
       (*pos) << ' ';
-   };
+   }
 */
 }
 
