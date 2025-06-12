@@ -1,7 +1,7 @@
 ---
 title: "iterator_traits Struct"
 description: "Learn more about: iterator_traits Struct"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["xutility/std::iterator_traits"]
 helpviewer_keywords: ["iterator_traits struct", "iterator_traits class"]
 ---

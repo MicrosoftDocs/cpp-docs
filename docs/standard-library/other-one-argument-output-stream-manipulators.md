@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Other One-Argument Output Stream Manipulators"
 title: "Other One-Argument Output Stream Manipulators"
-ms.date: "11/04/2016"
+description: "Learn more about: Other One-Argument Output Stream Manipulators"
+ms.date: 11/04/2016
 helpviewer_keywords: ["output streams, one-argument manipulators"]
-ms.assetid: e381dee8-6b16-4cef-805a-4a6a1d2b696b
 ---
 # Other One-Argument Output Stream Manipulators
 
