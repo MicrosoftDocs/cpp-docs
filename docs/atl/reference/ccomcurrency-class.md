@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CComCurrency Class"
 title: "CComCurrency Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CComCurrency Class"
+ms.date: 11/04/2016
 f1_keywords: ["CComCurrency", "ATLCUR/ATL::CComCurrency", "ATLCUR/ATL::CComCurrency::CComCurrency", "ATLCUR/ATL::CComCurrency::GetCurrencyPtr", "ATLCUR/ATL::CComCurrency::GetFraction", "ATLCUR/ATL::CComCurrency::GetInteger", "ATLCUR/ATL::CComCurrency::Round", "ATLCUR/ATL::CComCurrency::SetFraction", "ATLCUR/ATL::CComCurrency::SetInteger", "ATLCUR/ATL::CComCurrency::m_currency"]
 helpviewer_keywords: ["CComCurrency class"]
-ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
 ---
 # `CComCurrency` Class
 
@@ -563,7 +562,7 @@ Returns a reference to a `CURRENCY` object.
 Call this method to round the currency to a specified number of decimal places.
 
 ```cpp
-HRESULT Roundint nDecimals);
+HRESULT Round(int nDecimals);
 ```
 
 ### Parameters

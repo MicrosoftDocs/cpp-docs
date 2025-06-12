@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::Collections::Map Class"
 title: "Platform::Collections::Map Class"
-ms.date: "10/01/2019"
+description: "Learn more about: Platform::Collections::Map Class"
+ms.date: 10/01/2019
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform::Collections::Map::Clear", "COLLECTION/Platform::Collections::Map::First", "COLLECTION/Platform::Collections::Map::GetView", "COLLECTION/Platform::Collections::Map::HasKey", "COLLECTION/Platform::Collections::Map::Insert", "COLLECTION/Platform::Collections::Map::Lookup", "COLLECTION/Platform::Collections::Map::Remove", "COLLECTION/Platform::Collections::Map::Size"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
-ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
 ---
 # Platform::Collections::Map Class
 
@@ -206,7 +205,7 @@ Initializes a new instance of the Map class.
 ```cpp
 explicit Map(const C& comp = C());
 explicit Map(const StdMap& m);
-explicit Map(StdMap&& m ;
+explicit Map(StdMap&& m);
 template <typename InIt>
 Map(
    InItfirst,
