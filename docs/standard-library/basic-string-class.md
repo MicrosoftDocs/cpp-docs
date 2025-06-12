@@ -61,7 +61,7 @@ The type that represents the stored allocator object that encapsulates details a
 |[`append`](#append)|Adds characters to the end of a string.|
 |[`assign`](#assign)|Assigns new character values to the contents of a string.|
 |[`at`](#at)|Returns a reference to the element at a specified location in the string.|
-|[`back`](#back)||
+|[`back`](#back)|Returns a reference to the last element in the string.|
 |[`begin`](#begin)|Returns an iterator addressing the first element in the string.|
 |[`c_str`](#c_str)|Converts the contents of a string as a C-style, null-terminated, string.|
 |[`capacity`](#capacity)|Returns the largest number of elements that could be stored in a string without increasing the memory allocation of the string.|

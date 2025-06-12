@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Basic CString Operations"
 title: "Basic CString Operations"
-ms.date: "11/04/2016"
+description: "Learn more about: Basic CString Operations"
+ms.date: 11/04/2016
 helpviewer_keywords: ["CString objects, basic operations", "string literals, CString operations", "literal strings, CString operations", "CString objects", "string comparison, CString operations", "characters, accessing in CStrings"]
-ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
 ---
 # Basic CString Operations
 
@@ -19,7 +18,7 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
 
 - [Converting CString objects](#_core_converting_cstring_objects)
 
-`Class CString` is based on class template [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a **`typedef`** of `CStringT`. More exactly, `CString` is a **`typedef`** of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`.
+`Class CString` is based on class template [`CStringT`](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a **`typedef`** of `CStringT`. More exactly, `CString` is a **`typedef`** of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`.
 
 `CString`, `CStringA`, and `CStringW` are defined in atlstr.h. `CStringT` is defined in cstringt.h.
 

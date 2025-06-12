@@ -716,28 +716,6 @@ CSimpleString s(_T("abc"), pMgr);
 ASSERT(s[1] == _T('b'));
 ```
 
-## <a name="operator_at"></a> `CSimpleStringT::operator []`
-
-Call this function to access a single character of the character array.
-
-### Syntax
-
-```cpp
-XCHAR operator[](int iChar) const;
-```
-
-### Parameters
-
-*`iChar`*<br/>
-Zero-based index of a character in the string.
-
-### Remarks
-
-The overloaded subscript (**`[]`**) operator returns a single character specified by the zero-based index in *`iChar`*. This operator is a convenient substitute for the [`GetAt`](#getat) member function.
-
-> [!NOTE]
-> You can use the subscript (**`[]`**) operator to get the value of a character in a `CSimpleStringT`, but you cannot use it to change the value of a character in a `CSimpleStringT`.
-
 ## <a name="operator_add_eq"></a> `CSimpleStringT::operator +=`
 
 Joins a new string or character to the end of an existing string.
