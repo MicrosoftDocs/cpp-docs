@@ -19,7 +19,7 @@ Returns the block type/subtype associated with a given debug heap block pointer.
 ```C
 int _CrtReportBlockType(
    const void * pBlock
-};
+);
 ```
 
 ### Parameters

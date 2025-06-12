@@ -127,7 +127,7 @@ bool operator==(
 
 template <class Ty1, class Ty2>
 bool operator==(
-    const shared_ptr<Ty1>& left;,
+    const shared_ptr<Ty1>& left,
     const shared_ptr<Ty2>& right);
 ```
 
@@ -330,7 +330,7 @@ Tests for one object being greater than a second object.
 template <class Ty1, class Del1, class Ty2, class Del2>
 bool operator>(
     const unique_ptr<Ty1, Del1>& left,
-    const unique_ptr<Ty2&, Del2gt;& right);
+    const unique_ptr<Ty2, Del2>& right);
 
 template <class Ty1, class Ty2>
 bool operator>(

@@ -265,7 +265,7 @@ This class does not implement lifetime control using reference counting.
 Call this method to set the number of threads in the pool.
 
 ```
-HRESULT STDMETHODCALLTYPE SetSizeint nNumThreads) throw();
+HRESULT STDMETHODCALLTYPE SetSize(int nNumThreads) throw();
 ```
 
 ### Parameters

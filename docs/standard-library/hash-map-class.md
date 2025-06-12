@@ -516,7 +516,7 @@ The data value of the first element in the hash_map is 10.
 A type that provides a bidirectional iterator that can read any **`const`** element in the `hash_map`.
 
 ```cpp
-typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse)iterator const_reverse_iterator;
+typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse_iterator const_reverse_iterator;
 ```
 
 ### Remarks

@@ -396,7 +396,7 @@ Unregisters one or more COM objects, which prevents other applications from conn
 virtual HRESULT UnregisterCOMObject(
    const wchar_t* serverName,
    DWORD* cookies,
-   unsigned int count
+   unsigned int count);
 ```
 
 ### Parameters

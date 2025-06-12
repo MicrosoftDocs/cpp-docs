@@ -206,7 +206,7 @@ Initializes a new instance of the Map class.
 ```cpp
 explicit Map(const C& comp = C());
 explicit Map(const StdMap& m);
-explicit Map(StdMap&& m ;
+explicit Map(StdMap&& m);
 template <typename InIt>
 Map(
    InItfirst,

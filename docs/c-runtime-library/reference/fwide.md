@@ -19,7 +19,7 @@ Unimplemented.
 ```C
 int fwide(
    FILE *stream,
-   int mode;
+   int mode
 );
 ```
 

@@ -132,8 +132,7 @@ double stod(
 
 double stod(
     const wstring& str,
-    size_t* idx = 0
-;
+    size_t* idx = 0);
 ```
 
 ### Parameters

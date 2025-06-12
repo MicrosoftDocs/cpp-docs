@@ -1259,7 +1259,7 @@ This method supports the following variant types: `VT_INT`, `VT_I2`, `VT_I4`, `V
 ## <a name="onsetselection"></a> `CMFCPropertyGridProperty::OnSetSelection`
 
 ```cpp
-virtual void OnSetSelection CMFCPropertyGridProperty*);
+virtual void OnSetSelection(CMFCPropertyGridProperty*);
 ```
 
 ### Parameters

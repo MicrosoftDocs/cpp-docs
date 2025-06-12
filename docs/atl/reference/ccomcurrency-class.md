@@ -563,7 +563,7 @@ Returns a reference to a `CURRENCY` object.
 Call this method to round the currency to a specified number of decimal places.
 
 ```cpp
-HRESULT Roundint nDecimals);
+HRESULT Round(int nDecimals);
 ```
 
 ### Parameters
