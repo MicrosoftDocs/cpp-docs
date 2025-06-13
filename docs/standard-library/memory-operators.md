@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <memory> operators"
 title: "<memory> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <memory> operators"
+ms.date: 11/04/2016
 f1_keywords: ["memory/std::operator!=", "memory/std::operator>", "memory/std::operator>=", "memory/std::operator<", "memory/std::operator<=", "memory/std::operator<<", "memory/std::operator=="]
-ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
 ---
 # `<memory>` operators
 
@@ -127,7 +126,7 @@ bool operator==(
 
 template <class Ty1, class Ty2>
 bool operator==(
-    const shared_ptr<Ty1>& left;,
+    const shared_ptr<Ty1>& left,
     const shared_ptr<Ty2>& right);
 ```
 
@@ -330,7 +329,7 @@ Tests for one object being greater than a second object.
 template <class Ty1, class Del1, class Ty2, class Del2>
 bool operator>(
     const unique_ptr<Ty1, Del1>& left,
-    const unique_ptr<Ty2&, Del2gt;& right);
+    const unique_ptr<Ty2, Del2>& right);
 
 template <class Ty1, class Ty2>
 bool operator>(
