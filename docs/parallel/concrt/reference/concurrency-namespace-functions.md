@@ -174,7 +174,7 @@ The lambda may take either zero, one or two arguments. The valid arguments are `
 
 If the body of the lambda or function object returns a result (and not a task\<TResult>), the lamdba will be executed asynchronously within the process MTA in the context of a task the Runtime implicitly creates for it. The `IAsyncInfo::Cancel` method will cause cancellation of the implicit task.
 
-If the body of the lambda returns a task, the lamba executes inline, and by declaring the lambda to take an argument of type `cancellation_token` you can trigger cancellation of any tasks you create within the lambda by passing that token in when you create them. You may also use the `register_callback` method on the token to cause the Runtime to invoke a callback when you call `IAsyncInfo::Cancel` on the async operation or action produced.
+If the body of the lambda returns a task, the lambda executes inline, and by declaring the lambda to take an argument of type `cancellation_token` you can trigger cancellation of any tasks you create within the lambda by passing that token in when you create them. You may also use the `register_callback` method on the token to cause the Runtime to invoke a callback when you call `IAsyncInfo::Cancel` on the async operation or action produced.
 
 This function is only available to Windows Runtime apps.
 

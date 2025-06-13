@@ -1294,11 +1294,11 @@ hash_multiset(
 
 hash_multiset(
     hash_multiset&& Right
-};
+);
 hash_multiset (initializer_list<Type> IList);
 
 hash_multiset(
-    initializer_list<Tu[e> IList, const Compare& Comp):
+    initializer_list<Type> IList, const Compare& Comp):
 hash_multiset(
     initializer_list<Type> IList, const Compare& Comp, const Allocator& Al);
 
