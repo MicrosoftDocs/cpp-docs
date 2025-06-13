@@ -40,7 +40,7 @@ The rank of the `texture_view`.
 |----------|-----------------|
 |`value_type`|The type of the elements in the texture aggregates.|
 |`coordinates_type`|The type of the coordinate used to specify a texel in the `texture_view`—that is, a `short_vector` that has the same rank as the associated texture that has a value type of **`float`**.|
-|`gather_return_type`|The return type used for gather operations—that is, a rank 4 `short_vector` that holds the four homogenous color components gathered from the four texel values sampled.|
+|`gather_return_type`|The return type used for gather operations—that is, a rank 4 `short_vector` that holds the four homogeneous color components gathered from the four texel values sampled.|
 
 ### Public Constructors
 
