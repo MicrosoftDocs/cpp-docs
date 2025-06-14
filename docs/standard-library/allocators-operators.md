@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <allocators> operators"
 title: "<allocators> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <allocators> operators"
+ms.date: 11/04/2016
 f1_keywords: ["allocators/std::operator!=", "allocators/std::operator=="]
-ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
 ---
 # `<allocators>` operators
 
