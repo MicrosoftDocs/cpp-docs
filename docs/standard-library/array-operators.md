@@ -8,13 +8,6 @@ f1_keywords: ["array/std::array::operator!=", "array/std::array::operator<", "ar
 
 The \<array> header includes these **array** non-member comparison template functions.
 
-[operator!=](#op_neq)\
-[`operator>`](#op_gt)\
-[`operator>=`](#op_gt_eq)\
-[`operator<`](#op_lt)\
-[`operator<=`](#op_lt_eq)\
-[operator==](#op_eq_eq)
-
 ## <a name="op_neq"></a> operator!=
 
 Array comparison, not equal.

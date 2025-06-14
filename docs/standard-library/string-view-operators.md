@@ -9,15 +9,6 @@ helpviewer_keywords: ["std::basic_string_view::operator!=", "std::basic_string_v
 
 Use these operators to compare two `string_view` objects, or a `string_view` and some other string object (for example [`std::string`](basic-string-class.md), or `char*`) for which an implicit conversion is provided.
 
-[`operator!=`](#op_neq)\
-[`operator>`](#op_gt)\
-[`operator>=`](#op_gt_eq)\
-[`operator<`](#op_lt)\
-[`operator<<`](#op_lt_lt)\
-[`operator<=`](#op_lt_eq)\
-[`operator==`](#op_eq_eq)\
-[`operator""sv`](#op_sv)
-
 ## <a name="op_neq"></a> `operator!=`
 
 Tests if the object on the left side of the operator is not equal to the object on the right side.
