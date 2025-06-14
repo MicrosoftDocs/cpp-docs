@@ -26,5 +26,5 @@ void CMyDialog::OnMenuShowAboutDialog()
    default:
       // Do something
       break;
-   };
+   }
 }
