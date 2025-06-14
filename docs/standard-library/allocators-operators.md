@@ -1,18 +1,14 @@
 ---
-description: "Learn more about: <allocators> operators"
 title: "<allocators> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <allocators> operators"
+ms.date: 11/04/2016
 f1_keywords: ["allocators/std::operator!=", "allocators/std::operator=="]
-ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
 ---
 # `<allocators>` operators
 
 These are the global template operator functions defined in `<allocators>`. For class member operator functions, see the class documentation.
 
-[operator!=](#op_neq)\
-[operator==](#op_eq_eq)
-
-## <a name="op_neq"></a> operator!=
+## <a name="op_neq"></a> `operator!=`
 
 Tests for inequality between allocator objects of a specified class.
 
@@ -25,10 +21,10 @@ bool operator!=(
 
 ### Parameters
 
-*left*\
+*`left`*\
 One of the allocator objects to be tested for inequality.
 
-*right*\
+*`right`*\
 One of the allocator objects to be tested for inequality.
 
 ### Return Value
@@ -39,7 +35,7 @@ One of the allocator objects to be tested for inequality.
 
 The template operator returns `!(left == right)`.
 
-## <a name="op_eq_eq"></a> operator==
+## <a name="op_eq_eq"></a> `operator==`
 
 Tests for equality between allocator objects of a specified class.
 
@@ -52,10 +48,10 @@ bool operator==(
 
 ### Parameters
 
-*left*\
+*`left`*\
 One of the allocator objects to be tested for equality.
 
-*right*\
+*`right`*\
 One of the allocator objects to be tested for equality.
 
 ### Return Value
@@ -68,4 +64,4 @@ This template operator returns `left.equals(right)`.
 
 ## See also
 
-[\<allocators>](allocators-header.md)
+[`<allocators>`](allocators-header.md)

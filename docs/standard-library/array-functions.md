@@ -1,19 +1,15 @@
 ---
-description: "Learn more about: <array> functions"
 title: "<array> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <array> functions"
+ms.date: 11/04/2016
 f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap"]
-ms.assetid: e0700a33-a833-4655-8735-16e71175efc8
 helpviewer_keywords: ["std::array [C++], get", "std::get [C++]", "std::swap [C++]"]
 ---
 # `<array>` functions
 
-The \<array> header includes two non-member functions, `get` and `swap`, that operate on **array** objects.
+The `<array>` header includes two non-member functions, `get` and `swap`, that operate on **array** objects.
 
-[get](#get)\
-[swap](#swap)
-
-## <a name="get"></a> get
+## <a name="get"></a> `get`
 
 Returns a reference to the specified element of the array.
 
@@ -30,16 +26,16 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 
 ### Parameters
 
-*Index*\
+*`Index`*\
 The element offset.
 
-*T*\
+*`T`*\
 The type of an element.
 
-*N*\
+*`N`*\
 The number of elements in the array.
 
-*arr*\
+*`arr`*\
 The array to select from.
 
 ### Example
@@ -74,7 +70,7 @@ int main()
 1 3
 ```
 
-## <a name="swap"></a> swap
+## <a name="swap"></a> `swap`
 
 A non-member template specialization of `std::swap` that swaps two **array** objects.
 
@@ -85,16 +81,16 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 
 ### Parameters
 
-*Ty*\
+*`Ty`*\
 The type of an element.
 
-*N*\
+*`N`*\
 The size of the array.
 
-*left*\
+*`left`*\
 The first array to swap.
 
-*right*\
+*`right`*\
 The second array to swap.
 
 ### Remarks
@@ -149,4 +145,4 @@ int main()
 
 ## See also
 
-[\<array>](../standard-library/array.md)
+[`<array>`](../standard-library/array.md)

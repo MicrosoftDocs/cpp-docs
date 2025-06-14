@@ -6,16 +6,9 @@ f1_keywords: ["array/std::array::operator!=", "array/std::array::operator<", "ar
 ---
 # `<array>` operators
 
-The \<array> header includes these **array** non-member comparison template functions.
+The `<array>` header includes these **array** non-member comparison template functions.
 
-[operator!=](#op_neq)\
-[`operator>`](#op_gt)\
-[`operator>=`](#op_gt_eq)\
-[`operator<`](#op_lt)\
-[`operator<=`](#op_lt_eq)\
-[operator==](#op_eq_eq)
-
-## <a name="op_neq"></a> operator!=
+## <a name="op_neq"></a> `operator!=`
 
 Array comparison, not equal.
 
@@ -28,16 +21,16 @@ bool operator!=(
 
 ### Parameters
 
-*Ty*\
+*`Ty`*\
 The type of an element.
 
-*N*\
+*`N`*\
 The size of the array.
 
-*left*\
+*`left`*\
 Left container to compare.
 
-*right*\
+*`right`*\
 Right container to compare.
 
 ### Remarks
@@ -101,16 +94,16 @@ bool operator<(
 
 ### Parameters
 
-*Ty*\
+*`Ty`*\
 The type of an element.
 
-*N*\
+*`N`*\
 The size of the array.
 
-*left*\
+*`left`*\
 Left container to compare.
 
-*right*\
+*`right`*\
 Right container to compare.
 
 ### Remarks
@@ -174,16 +167,16 @@ bool operator<=(
 
 ### Parameters
 
-*Ty*\
+*`Ty`*\
 The type of an element.
 
-*N*\
+*`N`*\
 The size of the array.
 
-*left*\
+*`left`*\
 Left container to compare.
 
-*right*\
+*`right`*\
 Right container to compare.
 
 ### Remarks
@@ -234,7 +227,7 @@ true
 false
 ```
 
-## <a name="op_eq_eq"></a> operator==
+## <a name="op_eq_eq"></a> `operator==`
 
 Array comparison, equal.
 
@@ -247,16 +240,16 @@ bool operator==(
 
 ### Parameters
 
-*Ty*\
+*`Ty`*\
 The type of an element.
 
-*N*\
+*`N`*\
 The size of the array.
 
-*left*\
+*`left`*\
 Left container to compare.
 
-*right*\
+*`right`*\
 Right container to compare.
 
 ### Remarks
@@ -320,16 +313,16 @@ bool operator>(
 
 ### Parameters
 
-*Ty*\
+*`Ty`*\
 The type of an element.
 
-*N*\
+*`N`*\
 The size of the array.
 
-*left*\
+*`left`*\
 Left container to compare.
 
-*right*\
+*`right`*\
 Right container to compare.
 
 ### Remarks
@@ -393,16 +386,16 @@ bool operator>=(
 
 ### Parameters
 
-*Ty*\
+*`Ty`*\
 The type of an element.
 
-*N*\
+*`N`*\
 The size of the array.
 
-*left*\
+*`left`*\
 Left container to compare.
 
-*right*\
+*`right`*\
 Right container to compare.
 
 ### Remarks
@@ -455,4 +448,4 @@ false
 
 ## See also
 
-[\<array>](../standard-library/array.md)
+[`<array>`](../standard-library/array.md)
