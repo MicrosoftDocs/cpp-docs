@@ -32,10 +32,10 @@ bool operator!=(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -71,10 +71,10 @@ bool operator==(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -110,10 +110,10 @@ bool operator<(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -122,7 +122,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Remarks
 
-An implicit conversion must exist from *convertible_string_type* to the string_view on the other side.
+An implicit conversion must exist from *convertible_string_type* to the `string_view` on the other side.
 
 The comparison is based on a pairwise lexicographical comparison of the character sequences. When the first unequal pair of characters is encountered, the result of that comparison is returned. If no unequal characters are found, but one sequence is shorter, the shorter sequence is less than the longer one. In other words, "cat" is less than "cats".
 
@@ -171,10 +171,10 @@ bool operator<=(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -201,7 +201,7 @@ inline basic_ostream<CharType, Traits>& operator<<(
 an output stream being written to.
 
 *`Str`*\
-The string_view to be entered into an output stream.
+The `string_view` to be entered into an output stream.
 
 ### Return Value
 
@@ -234,10 +234,10 @@ bool operator>(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
