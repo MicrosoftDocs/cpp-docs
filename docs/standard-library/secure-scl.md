@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: _SECURE_SCL"
 title: "_SECURE_SCL"
-ms.date: "11/04/2016"
+description: "Learn more about: _SECURE_SCL"
+ms.date: 11/04/2016
 f1_keywords: ["_SECURE_SCL"]
 helpviewer_keywords: ["_SECURE_SCL"]
-ms.assetid: 4ffbc788-cc12-4c6a-8cd7-490081675086
 ---
 # `_SECURE_SCL`
 
