@@ -8,10 +8,10 @@ ms.assetid: 4ffbc788-cc12-4c6a-8cd7-490081675086
 ---
 # `_SECURE_SCL`
 
-Superseded by [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md), this macro defines whether [Checked Iterators](../standard-library/checked-iterators.md) are enabled. By default, checked iterators are enabled in Debug builds, and disabled in Retail builds.
+Superseded by [`_ITERATOR_DEBUG_LEVEL`](iterator-debug-level.md), this macro defines whether [Checked Iterators](checked-iterators.md) are enabled. By default, checked iterators are enabled in Debug builds, and disabled in Retail builds.
 
 > [!IMPORTANT]
-> Direct use of the `_SECURE_SCL` macro is deprecated. Instead, use `_ITERATOR_DEBUG_LEVEL` to control checked iterator settings. For more information, see [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md).
+> Direct use of the `_SECURE_SCL` macro is deprecated. Instead, use `_ITERATOR_DEBUG_LEVEL` to control checked iterator settings. For more information, see [`_ITERATOR_DEBUG_LEVEL`](iterator-debug-level.md).
 
 ## Remarks
 
@@ -27,11 +27,11 @@ To disable checked iterators, set `_ITERATOR_DEBUG_LEVEL` to 0. This is equivale
 #define _ITERATOR_DEBUG_LEVEL 0
 ```
 
-For information on how to disable warnings about checked iterators, see [`_SCL_SECURE_NO_WARNINGS`](../standard-library/scl-secure-no-warnings.md).
+For information on how to disable warnings about checked iterators, see [`_SCL_SECURE_NO_WARNINGS`](scl-secure-no-warnings.md).
 
 ## See also
 
-[`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md)\
-[Checked Iterators](../standard-library/checked-iterators.md)\
-[Debug Iterator Support](../standard-library/debug-iterator-support.md)\
-[Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md)
+[`_ITERATOR_DEBUG_LEVEL`](iterator-debug-level.md)\
+[Checked Iterators](checked-iterators.md)\
+[Debug Iterator Support](debug-iterator-support.md)\
+[Safe Libraries: C++ Standard Library](safe-libraries-cpp-standard-library.md)
