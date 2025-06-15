@@ -25,7 +25,7 @@ In either case, the Implement Connection Point Wizard uses a type library to do 
 
    Use either the uuidgen.exe or guidgen.exe utility to generate a GUID.
 
-2. Add the dispinterface as the `[default,source]` interface in the coclass for the object in the project's .idl file. Again, if you enabled support for connection points when you created the control, the ATL Control Wizard will create the `[default,source`] entry. To manually add this entry, add the line in bold:
+2. Add the dispinterface as the `[default,source]` interface in the coclass for the object in the project's .idl file. Again, if you enabled support for connection points when you created the control, the ATL Control Wizard will create the `[default,source]` entry. To manually add this entry, add the line in bold:
 
    [!code-cpp[NVC_ATL_Windowing#82](../atl/codesnippet/cpp/adding-connection-points-to-an-object_2.idl)]
 
