@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l"
 title: "_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l"
-ms.date: "3/9/2021"
+description: "Learn more about: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l"
+ms.date: 3/9/2021
 api_name: ["_vsprintf_p", "_vswprintf_p", "_vsprintf_p_l", "_vswprintf_p_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]

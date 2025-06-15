@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l"
 title: "_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l"
-ms.date: "3/9/2021"
+description: "Learn more about: _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l"
+ms.date: 3/9/2021
 api_name: ["_cwprintf_s_l", "_cprintf_s_l", "_cprintf_s", "_cwprintf_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: _fprintf_p, _fprintf_p_l, _ftprintf_p, _ftprintf_p_l, _fwprintf_p, _fwprintf_p_l"
 title: "_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l"
-ms.date: "3/9/2021"
+description: "Learn more about: _fprintf_p, _fprintf_p_l, _ftprintf_p, _ftprintf_p_l, _fwprintf_p, _fwprintf_p_l"
+ms.date: 3/9/2021
 api_name: ["_fwprintf_p", "_fprintf_p_l", "_fwprintf_p_l", "_fprintf_p"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l"
 title: "vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l, _vstprintf_s, _vstprintf_s_l"
-ms.date: "3/9/2021"
+description: "Learn more about: vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l"
+ms.date: 3/9/2021
 api_name: ["_vswprintf_s_l", "vsprintf_s", "vswprintf_s", "_vsprintf_s_l", _vstprintf_s, _vstprintf_s_l]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
