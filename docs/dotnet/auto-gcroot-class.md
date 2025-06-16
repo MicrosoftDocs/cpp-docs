@@ -47,8 +47,8 @@ The managed type to be embedded.
 |---------|-----------|
 |[`auto_gcroot::operator->`](#operator-arrow)|The member access operator.|  
 |[auto_gcroot::operator=](#operator-assign)|Assignment operator.|
-|[auto_gcroot::operator&nbsp;auto_gcroot](#operator-auto-gcroot)|Type-cast operator between `auto_gcroot` and compatible types.|
-|[auto_gcroot::operator&nbsp;bool](#operator-bool)|Operator for using `auto_gcroot` in a conditional expression.|  
+|[auto_gcroot::operator auto_gcroot](#operator-auto-gcroot)|Type-cast operator between `auto_gcroot` and compatible types.|
+|[auto_gcroot::operator bool](#operator-bool)|Operator for using `auto_gcroot` in a conditional expression.|  
 |[auto_gcroot::operator!](#operator-logical-not)|Operator for using `auto_gcroot` in a conditional expression.|
 
 ## Requirements

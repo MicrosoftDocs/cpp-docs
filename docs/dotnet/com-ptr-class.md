@@ -173,7 +173,7 @@ int main() {
 |---------|-----------|
 |[`ptr::operator->`](#operator-arrow)|Member access operator, used to call methods on the owned COM object.|
 |[ptr::operator=](#operator-assign)|Attaches a COM object to a `com::ptr`.|
-|[ptr::operator&nbsp;bool](#operator-bool)|Operator for using `com::ptr` in a conditional expression.|
+|[ptr::operator bool](#operator-bool)|Operator for using `com::ptr` in a conditional expression.|
 |[ptr::operator!](#operator-logical-not)|Operator to determine if the owned COM object is invalid.|
 
 ## Requirements

@@ -45,7 +45,7 @@ Internally, the lock class uses <xref:System.Threading.Monitor> to synchronize a
 
 |Name|Description|
 |---------|-----------|
-|[lock::operator&nbsp;bool](#operator-bool)|Operator for using `lock` in a conditional expression.|
+|[lock::operator bool](#operator-bool)|Operator for using `lock` in a conditional expression.|
 |[lock::operator==](#operator-equality)|Equality operator.|
 |[lock::operator!=](#operator-inequality)|Inequality operator.|
 
