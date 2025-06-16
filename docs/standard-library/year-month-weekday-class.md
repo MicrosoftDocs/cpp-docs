@@ -36,7 +36,7 @@ class year_month_weekday; // C++20
 | [`operator local_days`](#local_days) | Get the count of days from the `system_clock` epoch to this `year_month_weekday` as [`local_days`](chrono.md#typedefs). |
 | [`operator sys_days`](#sys_days) | Get the count of days from the `system_clock` epoch to this `year_month_weekday` as [`sys_days`](chrono.md#typedefs). |
 | [`weekday`](#weekday) | Get the weekday. |
-| [`weekday_indexed`](#weekday_indexed) | Get the [`weekday_indexed`] stored in this `year_month_weekday`. |
+| [`weekday_indexed`](#weekday_indexed) | Get the [`weekday_indexed`](weekdayindexed-class.md) stored in this `year_month_weekday`. |
 | [`year`](#year) | Get the year. |
 
 ## Non-members
