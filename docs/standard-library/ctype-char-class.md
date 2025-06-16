@@ -107,7 +107,7 @@ The explicit specialization differs from the class template in several ways:
 
 - The static member object `table_size` specifies the minimum number of elements in a ctype mask table.
 
-- The protected static member function `classic_table`( returns the ctype mask table appropriate to the "C" locale.
+- The protected static member function `classic_table` returns the ctype mask table appropriate to the "C" locale.
 
 - There are no protected virtual member functions [do_is](../standard-library/ctype-class.md#do_is), [do_scan_is](../standard-library/ctype-class.md#do_scan_is), or [do_scan_not](../standard-library/ctype-class.md#do_scan_not). The corresponding public member functions perform the equivalent operations themselves.
 
