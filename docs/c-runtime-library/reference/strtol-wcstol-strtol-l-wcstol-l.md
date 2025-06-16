@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: strtol, wcstol, _strtol_l, _wcstol_l"
 title: "strtol, wcstol, _strtol_l, _wcstol_l"
-ms.date: "4/2/2020"
+description: "Learn more about: strtol, wcstol, _strtol_l, _wcstol_l"
+ms.date: 4/2/2020
 api_name: ["strtol", "wcstol", "_strtol_l", "_wcstol_l", "_o__strtol_l", "_o__wcstol_l", "_o_strtol", "_o_wcstol"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
