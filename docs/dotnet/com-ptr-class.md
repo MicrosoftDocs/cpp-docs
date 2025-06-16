@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: com::ptr Class"
 title: "com::ptr Class"
-ms.date: "01/16/2019"
+description: "Learn more about: com::ptr Class"
+ms.date: 01/16/2019
 ms.topic: "reference"
 f1_keywords: ["msclr::com::ptr::ptr", "msclr::com::ptr::Attach", "msclr::com::ptr::CreateInstance", "msclr::com::ptr::Detach", "msclr::com::ptr::GetInterface", "msclr::com::ptr::QueryInterface", "msclr::com::ptr::Release", "msclr::com::ptr::operator=", "msclr::com::ptr::operator->", "msclr::com::ptr::operator!"]
 helpviewer_keywords: ["msclr::ptr class"]
-ms.assetid: 0144d0e4-919c-45f9-a3f8-fbc9edba32bf
 ---
 # com::ptr Class
 

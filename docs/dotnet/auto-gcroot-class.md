@@ -1,7 +1,7 @@
 ---
 title: "auto_gcroot Class"
 description: "Learn more about: auto_gcroot Class"
-ms.date: "01/16/2019"
+ms.date: 01/16/2019
 ms.topic: "reference"
 f1_keywords: ["msclr::auto_gcroot::auto_gcroot", "msclr::auto_gcroot::attach", "msclr::auto_gcroot::get", "msclr::auto_gcroot::release", "msclr::auto_gcroot::reset", "msclr::auto_gcroot::swap", "msclr::auto_gcroot::operator=", "msclr::auto_gcroot::operator->", "msclr::auto_gcroot::operator!", "msclr::auto_gcroot::operator auto_gcroot"]
 helpviewer_keywords: ["msclr::auto_gcroot"]

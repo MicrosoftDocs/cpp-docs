@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: lock Class"
 title: "lock Class"
-ms.date: "01/16/2019"
+description: "Learn more about: lock Class"
+ms.date: 01/16/2019
 ms.topic: "reference"
 f1_keywords: ["msclr::lock::lock", "msclr::lock::is_locked", "msclr::lock.is_locked", "msclr::lock::acquire", "msclr::lock::try_acquire", "msclr::lock::release", "msclr::lock::operator==", "msclr::lock::operator!="]
 helpviewer_keywords: ["msclr::lock class"]
-ms.assetid: 5123edd9-6aed-497d-9a0b-f4b6d6c0d666
 ---
 # lock Class
 
