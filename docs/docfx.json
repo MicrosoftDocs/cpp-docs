@@ -96,7 +96,6 @@
         ]
       },
       "ms.topic": {
-        "**/how-to*.md": "how-to",
         "assembler/arm/**.md": "reference",
         "assembler/masm/**.md": "reference",
         "attributes/**.md": "reference",
@@ -124,7 +123,8 @@
         "safeint/**.md": "reference",
         "sanitizers/**.md": "reference",
         "standard-library/**.md": "reference",
-        "windows/attributes/**.md": "reference"
+        "windows/attributes/**.md": "reference",
+        "**/how-to*.md": "how-to"
       },
       "ms.subservice": {
         "assembler/**.md": "masm",
