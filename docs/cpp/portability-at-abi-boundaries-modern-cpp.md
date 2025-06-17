@@ -2,7 +2,7 @@
 title: "Portability at ABI boundaries"
 description: "Flatten C++ interfaces to C calling conventions at binary interface boundaries."
 ms.date: "11/19/2019"
-ms.topic: "conceptual"
+ms.topic: "how-to"
 ms.assetid: abbd405e-3038-427c-8c24-e00598f0936a
 ---
 # Portability at ABI boundaries

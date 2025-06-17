@@ -3,7 +3,7 @@ description: "Learn more about: Attributes by Usage"
 title: "Attributes by Usage"
 ms.custom: "index-page"
 ms.date: "10/02/2018"
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 helpviewer_keywords: ["attributes [C++/CLI]"]
 ms.assetid: 8be2de10-b1ff-4ca4-a114-75318408593c
 ---

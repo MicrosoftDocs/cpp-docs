@@ -3,7 +3,6 @@ description: "Learn more about: How to: Create and use CComPtr and CComQIPtr ins
 title: "How to: Create and use CComPtr and CComQIPtr instances"
 ms.custom: "how-to"
 ms.date: "11/19/2019"
-ms.topic: "conceptual"
 ms.assetid: b0356cfb-12cc-4ee8-b988-8311ed1ab5e0
 ---
 # How to: Create and use CComPtr and CComQIPtr instances
