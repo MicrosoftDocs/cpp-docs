@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Walkthrough: Putting Controls On Toolbars"
 title: "Walkthrough: Putting Controls On Toolbars"
-ms.date: "04/25/2019"
+description: "Learn more about: Walkthrough: Putting Controls On Toolbars"
+ms.date: 04/25/2019
 helpviewer_keywords: ["Customize dialog box, adding controls", "toolbars [MFC], adding controls"]
-ms.assetid: 8fc94bdf-0da7-45d9-8bc4-52b7b1edf205
 ---
 # Walkthrough: Putting Controls On Toolbars
 
