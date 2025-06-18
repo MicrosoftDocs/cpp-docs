@@ -2,7 +2,7 @@
 title: Build reliable and secure C++ programs
 description: "Learn more about: Building reliable and secure C++ programs by applying NISTIR 8397 guidelines."
 ms.date: 04/25/2025
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 ---
 
 # Build reliable and secure C++ programs

@@ -2,7 +2,7 @@
 description: "Learn more about: C++ type system"
 title: "C++ type system"
 ms.date: 11/04/2022
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
 ---
 # C++ type system

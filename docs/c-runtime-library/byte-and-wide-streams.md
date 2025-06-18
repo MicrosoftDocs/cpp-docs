@@ -2,7 +2,7 @@
 title: "Byte and Wide Streams"
 description: "An overview of byte streams in the Microsoft C runtime library."
 ms.date: "11/04/2016"
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 helpviewer_keywords: ["byte streams", "wide streams"]
 ---
 # Byte and wide streams

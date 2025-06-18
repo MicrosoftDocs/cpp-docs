@@ -2,7 +2,7 @@
 title: "Compatibility"
 description: "Describes the compatibility of the Microsoft Universal C runtime library (UCRT) with the Standard C library, POSIX, the Safe CRT, and Store apps."
 ms.date: 1/19/2022
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 helpviewer_keywords: ["CRT, compatibility", "compatibility, C runtime libraries", "compatibility"]
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
 ---

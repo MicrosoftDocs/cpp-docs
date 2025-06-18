@@ -2,7 +2,7 @@
 title: "Quickstart: Code analysis for C/C++"
 description: "Run static analysis on C++ code in Visual Studio to detect common coding problems and defects."
 ms.date: 04/08/2020
-ms.topic: "conceptual"
+ms.topic: "quickstart"
 helpviewer_keywords:
   - "C/C++ code analysis"
   - "code analysis, C/C++"

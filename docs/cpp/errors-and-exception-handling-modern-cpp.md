@@ -2,7 +2,7 @@
 title: "Modern C++ best practices for exceptions and error handling"
 description: "How Modern C++ supports exceptional programming styles over error codes."
 ms.date: 03/22/2024
-ms.topic: "conceptual"
+ms.topic: "best-practice"
 ---
 # Modern C++ best practices for exceptions and error handling
 

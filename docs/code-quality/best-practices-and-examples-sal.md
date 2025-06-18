@@ -2,7 +2,7 @@
 description: "Learn more about: Best practices and examples (SAL)"
 title: Best practices and examples (SAL)
 ms.date: 03/30/2023
-ms.topic: "conceptual"
+ms.topic: "best-practice"
 ---
 # Best practices and examples (SAL)
 
