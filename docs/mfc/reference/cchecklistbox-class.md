@@ -44,19 +44,19 @@ A "checklist box" displays a list of items, such as filenames. Each item in the 
 
 `CCheckListBox` is only for owner-drawn controls because the list contains more than text strings. At its simplest, a checklist box contains text strings and check boxes, but you don't need to have text at all. For example, you could have a list of small bitmaps with a check box next to each item.
 
-The basic steps to create your own checklist box are as follows:
+To create your own checklist box:
 
-First, design an ordinary listbox control using the resource editor, since the checklist box is based on it. The listbox must have `Owner Draw` set to `Fixed` and `Has Strings` to `True`, because the checklist box needs to draw the checkboxes.
+1. First, design an ordinary listbox control using the resource editor. The checklist box is based on it. The listbox must have `Owner Draw` set to `Fixed` and `Has Strings` to `True` because the checklist box needs to draw the checkboxes.
+1. Instantiate `CCheckListBox` in your code and call `Create`. If you're using DDX then `DDX_Control` does this for you.
+1. Call `SetCheckStyle` to choose one of the checkbox modes.
 
-Next, instantiate `CCheckListBox` in your code and call `Create`. If you are using DDX then `DDX_Control` will do this for you. Call `SetCheckStyle` to choose one of the checkbox modes.
+At this point checkboxes should appear next to the listbox items. Checkboxes don't respond to mouse clicks unless you use DDX. If you arean't using DDX, subclass the checklist box.
 
-At this point you should have checkboxes show up next to your listbox strings, but unless you are using DDX you'll find the checkboxes don't respond to mouse clicks. To get it fully working without DDX you'll need to subclass the checklist box.
+Some versions of the control show artifacts when the control first appears. One workaround is to call `SetFont(GetFont())` on the checklist box instance after adding your data.
 
-Some versions of the control show artifacts when the control is initially showing. One workaround is to call `SetFont(GetFont())` on the checklist box instance after adding your data.
+To handle Windows notification messages sent by a list box to its parent (usually a class derived from [`CDialog`](../../mfc/reference/cdialog-class.md)), add a message-map entry and message-handler member function to the parent class for each message.
 
-If you want to handle Windows notification messages sent by a list box to its parent (usually a class derived from [`CDialog`](../../mfc/reference/cdialog-class.md)), add a message-map entry and message-handler member function to the parent class for each message.
-
-Each message-map entry takes the following form:
+Each message-map entry has the following form:
 
 **ON\_**_Notification_ **(** _`id`_, _`memberFxn`_ **)**
 
@@ -100,9 +100,9 @@ CCheckListBox();
 
 ### Remarks
 
-You construct a `CCheckListBox` object in two steps. First instantiate `CCheckListBox`, then call `Create`, which initializes the Windows checklist box and attaches it to the `CCheckListBox` object.
+Construct a `CCheckListBox` object in two steps. First, instantiate `CCheckListBox`, then call `Create` to initialize the Windows checklist box and attach it to the `CCheckListBox` object.
 
-The control also needs to be subclassed. When DDX is used to create the control this happens automatically, otherwise `SubclassDlgItem` needs to be called.
+The control also needs to be subclassed. When DDX is used to create the control this happens automatically; otherwise call `SubclassDlgItem`.
 
 ### Example
 
