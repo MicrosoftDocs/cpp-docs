@@ -1883,7 +1883,7 @@ In order for the recordset to reflect the additions and deletions that you or ot
 
 For either a dynaset or a snapshot, call `Requery` when you want to rebuild the recordset using parameter values. Set the new filter or sort by setting [`m_strFilter`](#m_strfilter) and [`m_strSort`](#m_strsort) before calling `Requery`. Set new parameters by assigning new values to parameter data members before calling `Requery`.
 
-If the attempt to rebuild the recordset fails, the recordset is closed. Before you call `Requery`, you can determine whether the recordset can be requeried by calling the [`CanRestart`](#canrestart) member function. `CanRestart` doesn't guarantee that `Requery` will succeed.
+If the attempt to rebuild the recordset fails, the recordset is closed. Before you call `Requery`, you can determine whether the recordset can be required by calling the [`CanRestart`](#canrestart) member function. `CanRestart` doesn't guarantee that `Requery` will succeed.
 
 > [!CAUTION]
 > Call `Requery` only after you have called `Open`.
