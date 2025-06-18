@@ -1,7 +1,7 @@
 ---
 title: "ATL utilities reference"
 description: "Learn more about: ATL utilities reference"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 ---
 # ATL utilities reference
 
