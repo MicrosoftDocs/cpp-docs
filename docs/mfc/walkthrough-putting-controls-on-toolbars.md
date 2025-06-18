@@ -82,7 +82,7 @@ To add the combo box button to the toolbar, follow these steps:
     > [!NOTE]
     > The framework sends this message to the main frame window when a toolbar is initialized during application startup, or when a toolbar is reset during customization. In either case, you must replace the standard toolbar button with the custom **Find** combo box button.
 
-1. In the `AFX_WM_RESETTOOLBAR` handler, examine the toolbar ID, that is, the *WPARAM* of the AFX_WM_RESETTOOLBAR message. If the toolbar ID is equal to that of the toolbar that contains the **Find** combo box button, call [CMFCToolBar::ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton) to replace the **Find** button (that is, the button with the command ID `ID_EDIT_FIND)` with a `CFindComboButton` object.
+1. In the `AFX_WM_RESETTOOLBAR` handler, examine the toolbar ID, that is, the *WPARAM* of the AFX_WM_RESETTOOLBAR message. If the toolbar ID is equal to that of the toolbar that contains the **Find** combo box button, call [CMFCToolBar::ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton) to replace the **Find** button (that is, the button with the command ID `ID_EDIT_FIND`) with a `CFindComboButton` object.
 
     > [!NOTE]
     > You can construct a `CFindComboBox` object on the stack, because `ReplaceButton` copies the button object and maintains the copy.
