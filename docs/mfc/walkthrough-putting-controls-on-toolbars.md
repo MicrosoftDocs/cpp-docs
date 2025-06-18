@@ -49,7 +49,7 @@ First, create the **Find** combo box control:
    1. Add a new string `"Find the text\nFind"` to the string table and assign it an `ID_EDIT_FIND_COMBO` command ID. This ID will be used as the command ID of the **Find** combo box button.
 
         > [!NOTE]
-        > Because `ID_EDIT_FIND` is a standard command that is processed by `CEditView`, you are not required to implement a special handler for this command.  However, you must implement a handler for the new command `ID_EDIT_FIND_COMBO`.
+        > Because `ID_EDIT_FIND` is a standard command that is processed by `CEditView`, you are not required to implement a special handler for this command. However, you must implement a handler for the new command `ID_EDIT_FIND_COMBO`.
 
 1. Create a new class, `CFindComboBox`, derived from [`CComboBox` Class](../mfc/reference/ccombobox-class.md).
 
