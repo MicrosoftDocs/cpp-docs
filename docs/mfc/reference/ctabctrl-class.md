@@ -80,7 +80,7 @@ For more information about `CTabCtrl`, see [Controls](../../mfc/controls-mfc.md)
 
 **Header:** `afxcmn.h`
 
-## <a name="adjustrect"></a>`CTabCtrl::AdjustRect`
+## <a name="adjustrect"></a> `CTabCtrl::AdjustRect`
 
 Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area.
 

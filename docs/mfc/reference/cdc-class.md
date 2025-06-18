@@ -2999,7 +2999,7 @@ The function stores the values in the buffer pointed to by *`lpBuffer`*. This bu
 
 If a character in the consecutive group of characters doesn't exist in a particular font, it will be assigned the width value of the default character.
 
-## <a name="getoutputtabbedtextextent"></a>`CDC::GetOutputTabbedTextExtent`
+## <a name="getoutputtabbedtextextent"></a> `CDC::GetOutputTabbedTextExtent`
 
 Call this member function to compute the width and height of a character string using [`m_hDC`](#m_hdc), the output device context.
 
