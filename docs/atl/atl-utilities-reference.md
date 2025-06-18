@@ -9,7 +9,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 
 ## Classes
 
-| &nbsp; | &nbsp; |
+| Name | Description |
 |--|--|
 | [CPathT class](../atl/reference/cpatht-class.md) | This class represents a path. |
 | [CDebugReportHook class](../atl/reference/cdebugreporthook-class.md) | Use this class to send debug reports to a named pipe. |
@@ -21,7 +21,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 
 ## Typedefs
 
-| &emsp; | &emsp; |
+| Name | Description |
 |--|--|
 | [CPath](../atl/reference/atl-typedefs.md#cpath) | A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CString`. |
 | [CPathA](../atl/reference/atl-typedefs.md#cpatha) | A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CStringA`. |
@@ -30,13 +30,13 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 
 ## Enums
 
-| &emsp; | &emsp; |
+| Name | Description |
 |--|--|
 | [ATL_URL_SCHEME](../atl/reference/atl-url-scheme-enum.md) | The members of this enumeration provide constants for the schemes understood by [CUrl](../atl/reference/curl-class.md). |
 
 ## Functions
 
-| &emsp; | &emsp; |
+| Name | Description |
 |--|--|
 | [AtlCanonicalizeUrl](../atl/reference/atl-http-utility-functions.md#atlcanonicalizeurl) | Call this function to canonicalize a URL, which includes converting unsafe characters and spaces into escape sequences. |
 | [AtlCombineUrl](../atl/reference/atl-http-utility-functions.md#atlcombineurl) | Call this function to combine a base URL and a relative URL into a single, canonical URL. |

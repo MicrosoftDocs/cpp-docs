@@ -11,7 +11,7 @@ The [`<any>`](any.md) header declares several free functions for working with th
 
 ## Functions
 
-| &nbsp; | &nbsp; |
+| Name | Description |
 |--|--|
 | [`any_cast`](#any_cast) | Makes an object into an `any`. |
 | [`make_any`](#make_any) | Takes values and creates an `any` object. |
