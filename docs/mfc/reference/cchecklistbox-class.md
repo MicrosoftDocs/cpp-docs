@@ -140,7 +140,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-You construct a `CCheckListBox` object in two steps. First instantiate `CCheckListBox` and then call `Create`, which initializes the Windows checklist box and attaches it to the `CCheckListBox`. The control also needs to be subclassed. When DDX is used to create the control this happens automatically, otherwise `SubclassDlgItem` needs to be called. See [`CCheckListBox::CCheckListBox`](#cchecklistbox) for a sample.
+You construct a `CCheckListBox` object in two steps. First instantiate `CCheckListBox`, then call `Create`, which initializes the Windows checklist box and attaches it to the `CCheckListBox` object. The control also needs to be subclassed. When DDX is used to create the control this happens automatically, otherwise `SubclassDlgItem` needs to be called. See [`CCheckListBox::CCheckListBox`](#cchecklistbox) for a sample.
 
 When `Create` executes, Windows sends the [`WM_NCCREATE`](../../mfc/reference/cwnd-class.md#onnccreate), [`WM_CREATE`](../../mfc/reference/cwnd-class.md#oncreate), [`WM_NCCALCSIZE`](../../mfc/reference/cwnd-class.md#onnccalcsize), and [`WM_GETMINMAXINFO`](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) messages to the checklist-box control.
 
