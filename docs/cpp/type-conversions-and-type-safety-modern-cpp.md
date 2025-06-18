@@ -2,7 +2,7 @@
 title: "Type conversions and type safety"
 description: "Learn more about: Type conversions and type safety"
 ms.date: "11/19/2019"
-ms.topic: "how-to"
+ms.topic: "concept-article"
 ---
 # Type conversions and type safety
 

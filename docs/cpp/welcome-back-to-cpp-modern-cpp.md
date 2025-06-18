@@ -2,7 +2,7 @@
 title: "Welcome back to C++ - Modern C++"
 description: "Describes the new programming idioms in Modern C++ and their rationale."
 ms.date: 06/02/2022
-ms.topic: "how-to"
+ms.topic: "concept-article"
 ---
 # Welcome back to C++ - Modern C++
 

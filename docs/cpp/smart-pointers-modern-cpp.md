@@ -2,7 +2,7 @@
 description: "Learn more about: Smart pointers (Modern C++)"
 title: "Smart pointers (Modern C++)"
 ms.date: "11/19/2019"
-ms.topic: "how-to"
+ms.topic: "concept-article"
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
 ---
 # Smart pointers (Modern C++)
