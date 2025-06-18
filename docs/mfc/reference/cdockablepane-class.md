@@ -1142,7 +1142,7 @@ If the dockable pane is in autohide mode and `IsHideInAutoHideMode` returns `TRU
 
 If the dockable pane isn't in autohide mode, the visibility state is determined by the [`CBasePane::IsVisible`](../../mfc/reference/cbasepane-class.md#isvisible) method.
 
-## ##  <a name="loadstate"></a> `CDockablePane::LoadState`
+## <a name="loadstate"></a> `CDockablePane::LoadState`
 
 For internal use only. For more detail, see the source code located in the `mfc` folder of your Visual Studio installation. For example, `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\atlmfc\src\mfc`.
 
