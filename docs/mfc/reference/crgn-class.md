@@ -609,17 +609,14 @@ int GetRgnBox(LPRECT lpRect) const;
 *lpRect*<br/>
 Points to a `RECT` structure or `CRect` object to receive the coordinates of the bounding rectangle. The `RECT` structure has the following form:
 
-`typedef struct tagRECT {`
-
-`int left;`
-
-`int top;`
-
-`int right;`
-
-`int bottom;`
-
-`} RECT;`
+```cpp
+typedef struct tagRECT {
+    int left;
+    int top;
+    int right;
+    int bottom;
+} RECT;
+```
 
 ### Return Value
 

@@ -67,13 +67,11 @@ int main()
 }
 ```
 
-**Output:**
-
-`c1 != c2: true`
-
-`c1 != c3: false`
-
-`c2 != c3: true`
+```Output
+c1 != c2: true
+c1 != c3: false
+c2 != c3: true
+```
 
 ## <a name="op_eq_eq"></a> operator==
 
