@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: _SCL_SECURE_NO_WARNINGS"
 title: "_SCL_SECURE_NO_WARNINGS"
-ms.date: "11/04/2016"
+description: "Learn more about: _SCL_SECURE_NO_WARNINGS"
+ms.date: 11/04/2016
 f1_keywords: ["_SCL_SECURE_NO_DEPRECATE", "_SCL_SECURE_NO_WARNINGS"]
 helpviewer_keywords: ["_SCL_SECURE_NO_DEPRECATE", "_SCL_SECURE_NO_WARNINGS"]
-ms.assetid: ef0ddea9-7c62-4b53-8b64-5f4fd369776f
 ---
 # `_SCL_SECURE_NO_WARNINGS`
 
