@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["TBSTYLE_"]
 helpviewer_keywords: ["flat toolbars", "CToolBar class [MFC], styles", "transparent toolbars", "TBSTYLE_ styles [MFC]", "CToolBarCtrl class [MFC], object styles", "toolbar controls [MFC], style"]
 ms.assetid: fd0a73db-7ad1-4fe4-889b-02c3980f49e8
+ms.topic: concept-article
 ---
 # Customizing the Appearance of a Toolbar Control
 

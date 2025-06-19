@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["WndProc"]
 helpviewer_keywords: ["window classes [MFC], registering", "registry [MFC], registering classes", "AfxRegisterWndClass method [MFC]", "MFC, windows", "WinMain method [MFC], and registering window classes", "WndProc method [MFC]", "classes [MFC], registering window classes", "WinMain method [MFC]", "registering window classes [MFC]"]
 ms.assetid: 30994bc4-a362-43da-bcc5-1bf67a3fc929
+ms.topic: concept-article
 ---
 # Registering Window Classes
 

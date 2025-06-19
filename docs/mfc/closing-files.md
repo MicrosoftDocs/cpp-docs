@@ -4,6 +4,7 @@ title: "Closing Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, file operations", "files [MFC], closing"]
 ms.assetid: 8415a3a8-3c75-45b0-ac2a-d5385f49bdb3
+ms.topic: how-to
 ---
 # Closing Files
 

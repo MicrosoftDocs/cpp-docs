@@ -4,6 +4,7 @@ title: "Using CHotKeyCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["keys, hot and CHotKeyCtrl", "CHotKeyCtrl class [MFC], using", "hot key controls"]
 ms.assetid: 9b207117-d848-4224-8888-c3d197bb0c95
+ms.topic: concept-article
 ---
 # Using CHotKeyCtrl
 

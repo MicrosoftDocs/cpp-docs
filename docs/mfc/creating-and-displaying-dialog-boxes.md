@@ -4,6 +4,7 @@ title: "Creating and Displaying Dialog Boxes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["modal dialog boxes [MFC], creating", "opening dialog boxes", "modeless dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating", "MFC dialog boxes [MFC], displaying"]
 ms.assetid: 1c5219ee-8b46-44bc-9708-83705d4f248b
+ms.topic: concept-article
 ---
 # Creating and Displaying Dialog Boxes
 

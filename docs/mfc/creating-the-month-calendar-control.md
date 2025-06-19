@@ -4,6 +4,7 @@ title: "Creating the Month Calendar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], creating", "month calendar controls [MFC], creating", "month calendar controls [MFC]"]
 ms.assetid: 185cc642-85e9-4365-8a4c-d90b75b010f7
+ms.topic: how-to
 ---
 # Creating the Month Calendar Control
 

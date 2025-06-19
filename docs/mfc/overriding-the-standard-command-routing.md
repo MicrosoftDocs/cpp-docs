@@ -4,6 +4,7 @@ title: "Overriding the Standard Command Routing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, command routing", "command routing [MFC], overriding", "command handling [MFC], routing commands", "overriding, standard command routing"]
 ms.assetid: 872b698a-7432-40c4-9008-68721e8effa5
+ms.topic: concept-article
 ---
 # Overriding the Standard Command Routing
 

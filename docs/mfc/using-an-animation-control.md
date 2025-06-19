@@ -4,6 +4,7 @@ title: "Using an Animation Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], animation", "CAnimateCtrl class [MFC], animation controls", "animation controls [MFC]"]
 ms.assetid: a009a464-e12d-4112-bf52-04a09b28dd88
+ms.topic: concept-article
 ---
 # Using an Animation Control
 

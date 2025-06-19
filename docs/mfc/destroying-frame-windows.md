@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["PostNcDestroy"]
 helpviewer_keywords: ["Default method [MFC]", "DestroyWindow method [MFC]", "frame windows [MFC], destroying", "OnNcDestroy method, and frame windows", "document frame windows [MFC], destroying", "destroying frame windows", "MFC, frame windows", "windows [MFC], destroying", "OnClose method [MFC]", "PostNcDestroy method [MFC]"]
 ms.assetid: 5affca77-1999-4507-a2b2-9aa226611b4b
+ms.topic: concept-article
 ---
 # Destroying Frame Windows
 

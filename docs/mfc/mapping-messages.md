@@ -4,6 +4,7 @@ title: "Mapping Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message maps [MFC], about message maps", "mappings [MFC], commands", "commands [MFC], mapping", "command mapping [MFC]", "message handling [MFC], connecting to handler functions", "commands [MFC], connecting to handler functions", "mappings [MFC], messages", "messages [MFC], mapping"]
 ms.assetid: 996f0652-0698-4b8c-b893-cdaa836d9d0f
+ms.topic: concept-article
 ---
 # Mapping Messages
 

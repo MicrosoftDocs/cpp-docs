@@ -4,6 +4,7 @@ title: "Handling Windows Messages in Your Dialog Box"
 ms.date: "09/05/2019"
 helpviewer_keywords: ["MFC dialog boxes [MFC], Windows messages", "Windows messages [MFC], handling", "message handling [MFC], in dialog boxes"]
 ms.assetid: 4af0c9cb-09da-4b15-97df-a1cfb89def79
+ms.topic: concept-article
 ---
 # Handling Windows Messages in Your Dialog Box
 
