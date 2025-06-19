@@ -10,7 +10,7 @@ The `<unordered_set>` header provides the following operators:
 
 ## <a name="op_neq"></a> `operator!=`
 
-Tests whether the [`unordered_set`](../standard-library/unordered-set-class.md) object on the left side of the operator is not equal to the `unordered_set` object on the right side.
+Tests whether the [`unordered_set`](unordered-set-class.md) object on the left side of the operator is not equal to the `unordered_set` object on the right side.
 
 ```cpp
 bool operator!=(const unordered_set <Key, Hash, Pred, Allocator>& left, const unordered_set <Key, Hash, Pred, Allocator>& right);
@@ -76,7 +76,7 @@ c2 != c3: true
 
 ## <a name="op_eq_eq"></a> `operator==`
 
-Tests whether the [`unordered_set`](../standard-library/unordered-set-class.md) object on the left side of the operator is equal to the `unordered_set` object on the right side.
+Tests whether the [`unordered_set`](unordered-set-class.md) object on the left side of the operator is equal to the `unordered_set` object on the right side.
 
 ```cpp
 bool operator==(const unordered_set <Key, Hash, Pred, Allocator>& left, const unordered_set <Key, Hash, Pred, Allocator>& right);
@@ -142,7 +142,7 @@ c2 == c3: false
 
 ## <a name="op_neq_unordered_multiset"></a> `operator!=` (multiset)
 
-Tests whether the [`unordered_multiset`](../standard-library/unordered-multiset-class.md) object on the left side of the operator is not equal to the `unordered_multiset` object on the right side.
+Tests whether the [`unordered_multiset`](unordered-multiset-class.md) object on the left side of the operator is not equal to the `unordered_multiset` object on the right side.
 
 ```cpp
 bool operator!=(const unordered_multiset <Key, Hash, Pred, Allocator>& left, const unordered_multiset <Key, Hash, Pred, Allocator>& right);
@@ -211,7 +211,7 @@ c2 != c3: true
 
 ## <a name="op_eq_eq_unordered_multiset"></a> `operator==` (multiset)
 
-Tests whether the [`unordered_multiset`](../standard-library/unordered-multiset-class.md) object on the left side of the operator is equal to the `unordered_multiset` object on the right side.
+Tests whether the [`unordered_multiset`](unordered-multiset-class.md) object on the left side of the operator is equal to the `unordered_multiset` object on the right side.
 
 ```cpp
 bool operator==(const unordered_multiset <Key, Hash, Pred, Allocator>& left, const unordered_multiset <Key, Hash, Pred, Allocator>& right);
