@@ -2,7 +2,7 @@
 title: Using the C++ Core Guidelines checkers
 description: "How to set up and use the Microsoft C++ Code Analysis rules for C++ Core Guidelines."
 ms.date: 06/21/2023
-ms.topic: "conceptual"
+ms.topic: "how-to"
 dev_langs:
  - CPP
 ---

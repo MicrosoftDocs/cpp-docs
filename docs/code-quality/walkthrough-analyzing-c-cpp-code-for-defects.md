@@ -2,7 +2,7 @@
 title: "Walkthrough: Analyzing C/C++ code for defects"
 description: "Demonstrates how to use code analysis with Microsoft C++ in Visual Studio."
 ms.date: 04/14/2020
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 helpviewer_keywords: ["C/C++, code analysis", "code analysis, walkthroughs", "code, analyzing C/C++", "code analysis tool, walkthroughs"]
 ---
 # Walkthrough: Analyzing C/C++ code for defects

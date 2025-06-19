@@ -2,7 +2,7 @@
 title: "ANSI C Conformance"
 description: "An overview of Microsoft C runtime naming conventions for ANSI C conformance."
 ms.date: "11/04/2016"
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 helpviewer_keywords: ["underscores, leading", "compatibility [C++], ANSI C", "conformance with ANSI C", "conventions [C++], Microsoft extensions", "underscores", "naming conventions [C++], Microsoft library", "ANSI [C++], C standard", "Microsoft extensions naming conventions"]
 ms.assetid: 6be271bf-eecf-491a-a928-0ee2dd60e3b9
 ---
