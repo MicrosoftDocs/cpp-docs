@@ -1,7 +1,7 @@
 ---
 title: "CRT Initialization"
 description: "Describes how the CRT initializes global state in native code."
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 ms.date: 08/02/2021
 helpviewer_keywords: ["CRT initialization [C++]"]
 ---

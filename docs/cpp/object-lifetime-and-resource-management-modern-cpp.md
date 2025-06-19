@@ -2,7 +2,7 @@
 title: "Object lifetime and resource management (RAII)"
 description: "Follow the principle of RAII in modern C++ to avoid resource leaks."
 ms.date: 06/02/2022
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
 ---
 # Object lifetime and resource management (RAII)

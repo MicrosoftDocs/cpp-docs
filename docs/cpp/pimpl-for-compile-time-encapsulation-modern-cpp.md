@@ -2,7 +2,7 @@
 description: "Learn more about: Pimpl For Compile-Time Encapsulation (Modern C++)"
 title: "Pimpl For Compile-Time Encapsulation (Modern C++)"
 ms.date: "11/04/2016"
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 ms.assetid: c3e8a90a-b328-4990-82bb-e1b147f76e07
 ---
 # Pimpl For Compile-Time Encapsulation (Modern C++)

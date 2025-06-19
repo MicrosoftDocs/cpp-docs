@@ -1,7 +1,7 @@
 ---
 title: "SBCS and MBCS Data Types"
 description: "How to represent single and multibyte characters in the Microsoft C runtime."
-ms.topic: "conceptual"
+ms.topic: "how-to"
 ms.date: "04/11/2018"
 f1_keywords: ["_MBCS", "MBCS", "SBCS"]
 helpviewer_keywords: ["SBCS and MBCS data types", "data types [C], MBCS and SBCS"]
