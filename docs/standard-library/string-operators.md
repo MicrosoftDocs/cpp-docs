@@ -1,22 +1,13 @@
 ---
-description: "Learn more about: <string> operators"
 title: "<string> operators"
-ms.date: "11/04/2016"
+description: "Learn more about: <string> operators"
+ms.date: 11/04/2016
 f1_keywords: ["string/std::operator!=", "string/std::operator>", "string/std::operator>>", "string/std::operator>=", "string/std::operator<", "string/std::operator<<", "string/std::operator<=", "string/std::operator+", "string/std::operator=="]
-ms.assetid: 33ce8f05-06c7-45d3-a0cb-bcd27cf93910
 helpviewer_keywords: ["std::operator!= (string)", "std::operator> (string)", "std::operator>> (string)", "std::operator>= (string)", "std::operator< (string)", "std::operator<< (string)", "std::operator<= (string), std::operator== (string)"]
 ---
 # `<string>` operators
 
-[operator!=](#op_neq)\
-[`operator>`](#op_gt)\
-[`operator>>`](#op_gt_gt)\
-[`operator>=`](#op_gt_eq)\
-[`operator<`](#op_lt)\
-[`operator<<`](#op_lt_lt)\
-[`operator<=`](#op_lt_eq)\
-[operator+](#op_add)\
-[operator==](#op_eq_eq)
+The `<string>` header provides the following operators:
 
 ## <a name="op_add"></a> operator+
 
@@ -98,7 +89,7 @@ The string that is the concatenation of the input strings.
 
 ### Remarks
 
-The functions each overload `operator+` to concatenate two objects of class template [basic_string Class](../standard-library/basic-string-class.md). All effectively return `basic_string< CharType, Traits, Allocator>(Left).append(right)`. For more information, see [append](../standard-library/basic-string-class.md#append).
+The functions each overload `operator+` to concatenate two objects of class template [`basic_string`](../standard-library/basic-string-class.md). All effectively return `basic_string< CharType, Traits, Allocator>(Left).append(right)`. For more information, see [append](../standard-library/basic-string-class.md#append).
 
 ### Example
 
@@ -801,7 +792,7 @@ The template function overloads **operator>>** to replace the sequence controlle
 
 After the function extracts `_Istr`. [max_size](../standard-library/basic-string-class.md#max_size) elements.
 
-- After the function extracts an element *ch* for which [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype**\< **CharType**> >( `getloc`). **is**( **ctype**\< **CharType**>:: **space**, *ch*) is true, in which case the character is put back.
+- After the function extracts an element *ch* for which [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype**\< **CharType**> >(`getloc`). **is**( **ctype**\< **CharType**>:: **space**, *ch*) is true, in which case the character is put back.
 
 If the function extracts no elements, it calls [setstate](../standard-library/basic-ios-class.md#setstate)(`ios_base::failbit`). In any case, it calls **istr**. **width**(0) and returns \* **`this`**.
 

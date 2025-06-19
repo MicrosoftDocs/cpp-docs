@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: auto_gcroot Class"
 title: "auto_gcroot Class"
+description: "Learn more about: auto_gcroot Class"
 ms.date: "01/16/2019"
 ms.topic: "reference"
 f1_keywords: ["msclr::auto_gcroot::auto_gcroot", "msclr::auto_gcroot::attach", "msclr::auto_gcroot::get", "msclr::auto_gcroot::release", "msclr::auto_gcroot::reset", "msclr::auto_gcroot::swap", "msclr::auto_gcroot::operator=", "msclr::auto_gcroot::operator->", "msclr::auto_gcroot::operator!", "msclr::auto_gcroot::operator auto_gcroot"]
 helpviewer_keywords: ["msclr::auto_gcroot"]
-ms.assetid: b5790912-265d-463e-a486-47302e91042a
 ---
 # auto_gcroot Class
 
@@ -20,7 +19,7 @@ class auto_gcroot;
 
 ### Parameters
 
-*_element_type*<br/>
+*_element_type*\
 The managed type to be embedded.
 
 ## Members
@@ -30,8 +29,7 @@ The managed type to be embedded.
 |Name|Description|
 |---------|-----------|
 |[auto_gcroot::auto_gcroot](#auto-gcroot)|The `auto_gcroot` constructor.|
-|[auto_gcroot::~auto_gcroot](#tilde-auto-gcroot)|The `auto_gcroot` destructor.
-|
+|[auto_gcroot::~auto_gcroot](#tilde-auto-gcroot)|The `auto_gcroot` destructor.|
 
 ### Public methods
 
@@ -78,10 +76,10 @@ auto_gcroot(
 
 ### Parameters
 
-*_ptr*<br/>
+*_ptr*\
 The object to own.
 
-*_right*<br/>
+*_right*\
 An existing `auto_gcroot`.
 
 ### Remarks
@@ -241,7 +239,7 @@ auto_gcroot<_element_type> & attach(
 
 ### Parameters
 
-*_right*<br/>
+*_right*\
 The object to attach, or an `auto_gcroot` containing the object to attach.
 
 ### Return value
@@ -452,7 +450,7 @@ void reset(
 
 ### Parameters
 
-*_new_ptr*<br/>
+*_new_ptr*\
 (Optional) The new object.
 
 ### Example
@@ -517,7 +515,7 @@ void swap(
 
 ### Parameters
 
-*_right*<br/>
+*_right*\
 The `auto_gcroot` with which to swap objects.
 
 ### Example
@@ -615,7 +613,7 @@ auto_gcroot<_element_type> & operator=(
 
 ### Parameters
 
-*_right*<br/>
+*_right*\
 The object or `auto_gcroot` to be assigned to the current `auto_gcroot`.
 
 ### Return value

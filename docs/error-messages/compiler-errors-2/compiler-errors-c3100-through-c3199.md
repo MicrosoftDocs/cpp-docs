@@ -2,9 +2,8 @@
 description: "Learn more about: Compiler errors C3100 Through C3199"
 title: "Compiler errors C3100 Through C3199"
 ms.date: 06/01/2022
-f1_keywords: ["C3102", "C3105", "C3107", "C3108", "C3109", "C3111", "C3112", "C3119", "C3122", "C3123", "C3124", "C3125", "C3127", "C3128", "C3129", "C3143", "C3144", "C3146", "C3147", "C3148", "C3151", "C3158", "C3164", "C3165", "C3169", "C3177", "C3178", "C3184", "C3188", "C3191", "C3193"]
-helpviewer_keywords: ["C3102", "C3105", "C3107", "C3108", "C3109", "C3111", "C3112", "C3119", "C3122", "C3123", "C3124", "C3125", "C3127", "C3128", "C3129", "C3143", "C3144", "C3146", "C3147", "C3148", "C3151", "C3158", "C3164", "C3165", "C3169", "C3177", "C3178", "C3184", "C3188", "C3191", "C3193"]
-ms.assetid: 7bc40c2f-6a8d-488a-b665-f39375afee77
+f1_keywords: ["C3102", "C3105", "C3107", "C3108", "C3109", "C3111", "C3112", "C3119", "C3122", "C3123", "C3124", "C3125", "C3127", "C3128", "C3129", "C3143", "C3144", "C3146", "C3147", "C3148", "C3151", "C3158", "C3164", "C3165", "C3169", "C3177", "C3178", "C3184", "C3186", "C3188", "C3191", "C3193"]
+helpviewer_keywords: ["C3102", "C3105", "C3107", "C3108", "C3109", "C3111", "C3112", "C3119", "C3122", "C3123", "C3124", "C3125", "C3127", "C3128", "C3129", "C3143", "C3144", "C3146", "C3147", "C3148", "C3151", "C3158", "C3164", "C3165", "C3169", "C3177", "C3178", "C3184", "C3186", "C3188", "C3191", "C3193"]
 ---
 # Compiler errors C3100 Through C3199
 
@@ -82,7 +81,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C3163](compiler-error-c3163.md) | '*class*': attributes inconsistent with previous declaration |
 | Compiler error C3164 | Obsolete. |
 | Compiler error C3165 | '*value*': cannot convert to an integral or floating point value |
-| [Compiler error C3166](compiler-error-c3166.md) | Obsolete. '*type*': a data member of a managed/WinRT class cannot have type '*pointer_type* to interior *managed_pointer_type*' |
+| [Compiler error C3166](compiler-error-c3166.md) | '*type*': a data member of a managed/WinRT class cannot have type '*pointer_type* to interior *managed_pointer_type*' |
 | [Compiler error C3167](compiler-error-c3167.md) | Unable to initialize .NET Framework: make sure it is installed |
 | [Compiler error C3168](compiler-error-c3168.md) | '*type*': illegal underlying type for enum |
 | Compiler error C3169 | '*type*': cannot deduce type for 'auto' from '*type*' |

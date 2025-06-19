@@ -1,7 +1,7 @@
 ---
 title: "Latest supported Visual C++ Redistributable downloads"
 description: "This article lists the download links for the latest versions of Visual C++ Redistributable packages."
-ms.date: 02/26/2024
+ms.date: 5/28/2025
 helpviewer_keywords:
   [
     "redist",
@@ -19,6 +19,8 @@ ms.author: msaleh
 
 The Visual C++ Redistributable installs Microsoft C and C++ (MSVC) runtime libraries. Many applications built using Microsoft C and C++ tools require these libraries. If your app uses those libraries, a Microsoft Visual C++ Redistributable package must be installed on the target system before you install your app. The Redistributable package architecture must match your app's target architecture. The Redistributable version must be at least as recent as the MSVC build toolset used to build your app. We recommend you use the latest Redistributable available for your version of Visual Studio, with some exceptions noted later in this article.
 
+Distribution of the Visual C++ Runtime Redistributable package, merge modules, and individual binaries is limited to licensed Visual Studio users and is subject to such License Terms.
+
 For details on how to install and redistribute Visual Studio components, see [Redistributing Visual C++ Files](redistributing-visual-cpp-files.md).
 
 ## Visual Studio 2015, 2017, 2019, and 2022
@@ -27,8 +29,9 @@ This table lists the latest supported English (en-US) Microsoft Visual C++ Redis
 
 Unlike older versions of Visual Studio, which have infrequent redist updates, the version number isn't listed in the following table for Visual Studio 2015-2022 because the redist is updated frequently. To find the version number of the latest redist, download the redist you're interested in using one of the following links. Then, look at its properties using Windows File Explorer. In the **Details** pane, the **File version** contains the version of the redist.
 
-## Latest Microsoft Visual C++ Redistributable Version
-The latest version is `14.38.33135.0`
+## Latest Microsoft Visual C++ Redistributable version
+
+The latest version is `v14.44.35208.0`
 
 Use the following links to download this version for each supported architecture:
 
@@ -44,7 +47,7 @@ Download other versions, including long term servicing release channel (LTSC) ve
 
 - The Visual C++ Redistributable for Visual Studio 2015-2022 doesn't have separate packages for different languages. It contains EULAs for all supported languages.
 
--  Some of the downloads that are mentioned in this article are currently available on [my.visualstudio.com](https://my.visualstudio.com/). Log in using a Visual Studio Subscription account so that you can access the download links. If you're asked for credentials, use your existing Visual Studio subscription account. Or, create a free account by choosing the **No account? Create one!** link.
+- Some of the downloads that are mentioned in this article are currently available on [my.visualstudio.com](https://my.visualstudio.com/). Log in using a Visual Studio Subscription account so that you can access the download links. If you're asked for credentials, use your existing Visual Studio subscription account. Or, create a free account by choosing the **No account? Create one!** link.
 
 - Visual Studio versions since Visual Studio 2015 share the same Redistributable files. For example, any apps built by the Visual Studio 2015, 2017, 2019, or 2022 toolsets can use the latest Microsoft Visual C++ Redistributable. However, the version of the Microsoft Visual C++ Redistributable installed on the machine must be the same or higher than the version of the Visual C++ toolset used to create your application. For more information about which version of the Redistributable to install, see [Determining which DLLs to redistribute](determining-which-dlls-to-redistribute.md). For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md).
 
@@ -52,9 +55,9 @@ Download other versions, including long term servicing release channel (LTSC) ve
 
 - The Visual C++ Redistributable supports several command-line options. For more information, see [Command-line options for the Redistributable packages](./redistributing-visual-cpp-files.md#command-line-options-for-the-redistributable-packages).
 
-## Visual Studio 2013 (VC++ 12.0)
+## Visual Studio 2013 (VC++ 12.0)  (no longer supported)
 
-These links download the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2013.
+These links download the latest available en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2013.
 You can download other versions and languages from [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from [my.visualstudio.com](https://my.visualstudio.com/).
 
 | Architecture |   Version    |                                                    Link |
@@ -114,7 +117,13 @@ Download Redistributable files for other languages and architectures from:
 
 - Redistributable files for X86, X64, and IA64 architectures are available from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update](https://www.microsoft.com/download/details.aspx?id=26347).
 
-## Release notes
+## See Also
+
+- [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
+- [How to audit Visual C++ Runtime version usage](redist-version-auditing.md)
+- [Lifecycle FAQ - Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)
+
+**Release notes**
 
 - [Visual Studio 2022 release notes](/visualstudio/releases/2022/release-notes)
 - [What's new for C++ in Visual Studio](../overview//what-s-new-for-visual-cpp-in-visual-studio.md)
@@ -124,7 +133,7 @@ Download Redistributable files for other languages and architectures from:
 - [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg)
 - [Microsoft Visual C++ compiler versioning](../overview/compiler-versions.md)
 
-## C++ conformance notes
+**C++ conformance notes**
 
 - [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)
 - [C++ conformance improvements in Visual Studio 2019](../overview/cpp-conformance-improvements-2019.md)

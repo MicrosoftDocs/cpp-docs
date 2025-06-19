@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: reader_writer_lock Class"
 title: "reader_writer_lock Class"
+description: "Learn more about: reader_writer_lock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["reader_writer_lock", "CONCRT/concurrency::reader_writer_lock", "CONCRT/concurrency::reader_writer_lock::scoped_lock", "CONCRT/concurrency::reader_writer_lock::scoped_lock_read", "CONCRT/concurrency::reader_writer_lock::reader_writer_lock", "CONCRT/concurrency::reader_writer_lock::lock", "CONCRT/concurrency::reader_writer_lock::lock_read", "CONCRT/concurrency::reader_writer_lock::try_lock", "CONCRT/concurrency::reader_writer_lock::try_lock_read", "CONCRT/concurrency::reader_writer_lock::unlock"]
 helpviewer_keywords: ["reader_writer_lock class"]
-ms.assetid: 91a59cd2-ca05-4b74-8398-d826d9f86736
 ---
 # reader_writer_lock Class
 
@@ -158,7 +157,7 @@ explicit _CRTIMP scoped_lock_read(reader_writer_lock& _Reader_writer_lock);
 *_Reader_writer_lock*<br/>
 The `reader_writer_lock` object to acquire as a reader.
 
-## <a name="scoped_lock_read_dtor">  reader_writer_lock::scoped_lock_read::~scoped_lock_read Destructor
+## <a name="scoped_lock_read_dtor"></a> reader_writer_lock::scoped_lock_read::~scoped_lock_read Destructor
 
 Destroys a `scoped_lock_read` object and releases the lock supplied in its constructor.
 
@@ -206,5 +205,5 @@ If there are writers waiting on the lock, the release of the lock will always go
 
 ## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
+[concurrency Namespace](concurrency-namespace.md)\
 [critical_section Class](critical-section-class.md)

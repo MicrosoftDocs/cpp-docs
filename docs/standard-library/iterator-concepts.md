@@ -1,6 +1,6 @@
 ---
-description: "Learn more about iterator concepts."
 title: "Iterator concepts"
+description: "Learn more about iterator concepts."
 ms.date: 12/16/2022
 f1_keywords: ["ranges/std::ranges::range", "ranges/std::ranges::bidirectional_iterator", "ranges/std::ranges::borrowed_iterator", "ranges/std::ranges::common_iterator", "ranges/std::ranges::contiguous_iterator", "ranges/std::ranges::forward_iterator", "ranges/std::ranges::input_iterator", "ranges/std::ranges::output_iterator", "ranges/std::ranges::random_access_iterator", "ranges/std::ranges::simple_view", "ranges/std::ranges::sized_iterator", "ranges/std::ranges::view", "ranges/std::ranges::viewable_iterator"]
 helpviewer_keywords: ["std::ranges [C++], ranges::range", "std::ranges [C++], ranges::bidirectional_iterator", "std::ranges [C++], ranges::borrowed_iterator", "std::ranges [C++], ranges::common_iterator", "std::ranges [C++], ranges::contiguous_iterator", "std::ranges [C++], ranges::forward_iterator", "std::ranges [C++], ranges::input_iterator", "std::ranges [C++], ranges::output_iterator", "std::ranges [C++], ranges::random_access_iterator", "std::ranges [C++], ranges::simple_view", "std::ranges [C++], ranges::sized_iterator", "std::ranges [C++], ranges::view", "std::ranges [C++], ranges::viewable_iterator"]
@@ -70,7 +70,7 @@ In the following table, "Example types" refers to collections/iterators that sat
 | [`forward_iterator`](#forward_iterator)<sup>C++20</sup> | Specifies an iterator that can read (and possibly write) multiple times. | Forward | Read/write | yes | `vector`, `list` |
 | [`bidirectional_iterator`](#bidirectional_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write both forwards and backwards. | Forward or backward | Read/write | yes | `list`, `set`, `multiset`, `map`, and `multimap`. |
 | [`random_access_iterator`](#random_access_iterator)<sup>C++20</sup> | Specifies an iterator that you can read and write by index. | Forward or backward | Read/write | yes | `vector`, `array`, `deque` |
-| [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory, are the same size, and can be accessed using pointer arithmetic. | Forward or backward | Read/write | yes | `array`, `vector` `string`.|
+| [`contiguous_iterator`](#contiguous_iterator)<sup>C++20</sup> | Specifies an iterator whose elements are sequential in memory, are the same size, and can be accessed using pointer arithmetic. | Forward or backward | Read/write | yes | `array`, `vector`, `string`.|
 
 Other iterator concepts include:
 

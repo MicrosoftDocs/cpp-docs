@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Overload resolution of function template calls"
 title: "Overload resolution of function template calls"
+description: "Learn more about: Overload resolution of function template calls"
 ms.date: 09/27/2022
 helpviewer_keywords: ["function templates overload resolution"]
-ms.assetid: a2918748-2cbb-4fc6-a176-e256f120bee4
 ---
 # Overload resolution of function template calls
 
@@ -26,7 +25,7 @@ template <class T1, class T2>
 void f(T1, T2)
 {
    cout << "void f(T1, T2)" << endl;
-};
+}
 
 int main()
 {
@@ -58,7 +57,7 @@ template <class T1, class T2>
 void f(T1, T2)
 {
    cout << "void f(T1, T2)" << endl;
-};
+}
 
 int main()
 {

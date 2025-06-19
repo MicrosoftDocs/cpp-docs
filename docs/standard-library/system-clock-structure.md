@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: system_clock Structure"
 title: "system_clock Structure"
+description: "Learn more about: system_clock Structure"
 ms.date: 07/26/2021
 f1_keywords: ["chrono/std::chrono::system_clock", "chrono/std::chrono::system_clock::from_time_t", "chrono/std::chrono::system_clock::now", "chrono/std::chrono::system_clock::to_time_t", "chrono/std::chrono::system_clock::is_steady constant"]
 helpviewer_keywords: ["std::chrono [C++], system_clock"]
@@ -66,7 +66,7 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 **Namespace:** `std::chrono`
 
-## <a name="from_time_t"></a>`from_time_t`
+## <a name="from_time_t"></a> `from_time_t`
 
 Static method that returns a [time_point](../standard-library/time-point-class.md) that most closely approximates the time that is represented by *Tm*.
 
@@ -79,7 +79,7 @@ static time_point from_time_t(time_t Tm) noexcept;
 *`Tm`*\
 A [time_t](../c-runtime-library/standard-types.md) object.
 
-## <a name="is_steady_constant"></a>`is_steady`
+## <a name="is_steady_constant"></a> `is_steady`
 
 A static value that specifies whether the clock type is *steady*. Because the `system_clock` isn't steady, you can't use this clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock may be adjusted during the timing interval.
 

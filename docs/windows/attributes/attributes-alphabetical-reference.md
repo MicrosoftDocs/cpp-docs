@@ -3,7 +3,7 @@ description: "Learn more about: Attributes Alphabetical Reference"
 title: "Attributes Alphabetical Reference"
 ms.custom: "index-page"
 ms.date: "10/02/2018"
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 f1_keywords: ["vc.attributes"]
 helpviewer_keywords: ["attributes [C++/CLI]"]
 ms.assetid: fb2216ef-9fbd-44f4-afed-732aa99450e2

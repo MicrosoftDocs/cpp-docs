@@ -696,6 +696,8 @@ items:
                   href: ../cpp/using-dllimport-and-dllexport-in-cpp-classes.md
             - name: empty_bases
               href: ../cpp/empty-bases.md
+            - name: hybrid_patchable
+              href: ../cpp/hybrid-patchable.md
             - name: jitintrinsic
               href: ../cpp/jitintrinsic.md
             - name: naked

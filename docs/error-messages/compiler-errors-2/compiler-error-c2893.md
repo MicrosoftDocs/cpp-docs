@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2893"
 title: "Compiler Error C2893"
+description: "Learn more about: Compiler Error C2893"
 ms.date: "11/04/2016"
 f1_keywords: ["C2893"]
 helpviewer_keywords: ["C2893"]
-ms.assetid: ec0cbe43-005d-45da-8742-aaeb9b81d28e
 ---
 # Compiler Error C2893
 
@@ -21,7 +20,7 @@ C2893 occurs because `f`'s template parameter `T` is deduced to be `std::map<int
 ```cpp
 // C2893.cpp
 // compile with: /c /EHsc
-#include<map>
+#include <map>
 using namespace std;
 class MyClass {};
 

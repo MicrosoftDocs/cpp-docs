@@ -3,6 +3,7 @@ title: "Microsoft C/C++ compiler (MSVC) warnings C4200 through C4399"
 description: "Table of Microsoft C/C++ compiler (MSVC) warnings C4200 through C4399."
 ms.date: 10/18/2020
 f1_keywords: ["C4203", "C4277", "C4279", "C4298", "C4299", "C4301", "C4303", "C4314", "C4315", "C4317", "C4318", "C4321", "C4322", "C4323", "C4327", "C4328", "C4330", "C4338", "C4352", "C4362", "C4367", "C4370", "C4380", "C4387"]
+helpviewer_keywords: ["C4203", "C4277", "C4279", "C4298", "C4299", "C4301", "C4303", "C4314", "C4315", "C4317", "C4318", "C4321", "C4322", "C4323", "C4327", "C4328", "C4330", "C4338", "C4352", "C4362", "C4367", "C4370", "C4380", "C4387"]
 ---
 # Microsoft C/C++ compiler warnings C4200 through C4399
 
@@ -54,7 +55,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 2 and level 3 and level 4) C4244](compiler-warning-levels-3-and-4-c4244.md)|'*conversion_type*': conversion from '*type1*' to '*type2*', possible loss of data|
 |[Compiler warning (level 4) C4245](compiler-warning-level-4-c4245.md)|'*conversion_type*': conversion from '*type1*' to '*type2*', signed/unsigned mismatch|
 |[Compiler warning (level 2) C4250](compiler-warning-level-2-c4250.md)|'*classname*': inherits '*base_classname*::*member*' via dominance|
-|[Compiler warning (level 2) C4251](compiler-warning-level-1-c4251.md)|'*object_type1*': '*identifier1*' needs to have dll-interface to be used by clients of '*identfier2*'|
+|[Compiler warning (level 2) C4251](compiler-warning-level-1-c4251.md)|'*type*': '*type1*' needs to have dll-interface to be used by clients of '*type2*'|
 |[Compiler warning (level 4, off) C4254](compiler-warning-level-4-c4254.md)|'*operator*': conversion from '*type1*':'*field_bits*' to '*type2*':'*field_bits*', possible loss of data|
 |[Compiler warning (level 4, off) C4255](compiler-warning-level-4-c4255.md)|'*function*': no function prototype given: converting '()' to '(void)'|
 |[Compiler warning (level 4) C4256](compiler-warning-level-4-c4256.md)|'*function*': constructor for class with virtual bases has '`...`'; calls may not be compatible with older versions of Visual C++|
@@ -125,7 +126,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 4) C4336](compiler-warning-level-4-c4336.md)|import cross-referenced type library '*library1*' before importing '*library2*'|
 |[Compiler warning (level 4) C4337](compiler-warning-level-4-c4337.md)|cross-referenced type library '*library1*' in '*library2*' is being automatically imported|
 |Compiler warning (level 4) C4338|#pragma *directive*: standard section '*section*' is used|
-|[Compiler warning (level 4, off) C4339](compiler-warning-level-4-c4339.md)|'*type*': use of undefined type detected in 'WinRT\|CLR' meta-data - use of this type may lead to a runtime exception|
+|[Compiler warning (level 4, off) C4339](compiler-warning-level-4-c4339.md)|'*type*': use of undefined type detected in *WinRT/CLR* meta-data - use of this type may lead to a runtime exception|
 |[Compiler warning (level 1) C4340](compiler-warning-level-1-c4340.md)|'*value*': value wrapped from positive to negative value|
 |[Compiler warning (level 1, off, no longer emitted) C4342](compiler-warning-level-1-c4342.md)|behavior change: '*function*' called, but a member operator was called in previous versions|
 |[Compiler warning (level 4) C4343](compiler-warning-level-4-c4343.md)|`#pragma optimize("g",off)` overrides `/Og` option|
@@ -135,7 +136,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1, off, no longer emitted) C4350](compiler-warning-level-1-c4350.md)|behavior change: '*member1*' called instead of '*member2*'|
 |Compiler warning (level 1) C4352|'*identifier*': intrinsic function already defined|
 |[Compiler warning (level 1) C4353](compiler-warning-level-1-c4353.md)|nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead|
-|[Compiler warning (level 1 and level 4, off) C4355](compiler-warning-c4355.md)Compiler warning (level 1 and level 4) C4355|'this': used in base member initializer list|
+|[Compiler warning (level 1 and level 4, off) C4355](compiler-warning-c4355.md)|'this': used in base member initializer list|
 |[Compiler warning (level 2) C4356](compiler-warning-level-2-c4356.md)|'*member*': static data member cannot be initialized via derived class|
 |[Compiler warning (level 3) C4357](compiler-warning-level-3-c4357.md)|param array argument found in formal argument list for delegate '*delegate*' ignored when generating '*function*'|
 |[Compiler warning (level 1) C4358](compiler-warning-level-1-c4358.md)|'*operator*': return type of combined delegates is not 'void'; returned value is undefined|

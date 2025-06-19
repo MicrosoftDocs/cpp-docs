@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Graphics (C++ AMP)"
 title: "Graphics (C++ AMP)"
-ms.date: "11/04/2016"
+description: "Learn more about: Graphics (C++ AMP)"
+ms.date: 11/04/2016
 ---
 # Graphics (C++ AMP)
 
@@ -139,7 +139,7 @@ There are limits on the size of each dimension of the `texture` object, as shown
 
 ### Reading from Texture Objects
 
-You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#operator_at), [texture::operator() Operator](reference/texture-class.md#operator_call), or [texture::get Method](reference/texture-class.md#get). The two operators return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator\[\]`.
+You can read from a `texture` object by using [texture::operator\[\]](reference/texture-class.md#operator_at), [texture::operator() Operator](reference/texture-class.md#operator_call), or [texture::get Method](reference/texture-class.md#get). The two operators return a value, not a reference. Therefore, you cannot write to a `texture` object by using `texture::operator[]`.
 
 ```cpp
 void readTexture() {

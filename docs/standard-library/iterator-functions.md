@@ -386,7 +386,7 @@ The sentinel follows the last element in a reversed view of the container.
 
 :::image type="content" source="media/crbegin-crend-sentinel.png" alt-text="Picture of a vector containing the elements 10, 20, and 30. There's an imaginary box before the leftmost element (the leftmost element contains the number 10) that represents the sentinel. It's labeled crend(). The first element in the vector contains the number 10, and is labeled 'last element'. The rightmost element in the vector contains 30 and is labeled crbegin().":::
 
-### `crend`example
+### `crend` example
 
 ```cpp
 #include <vector>
@@ -1096,7 +1096,7 @@ A reverse iterator to the sentinel at the end of the container. The sentinel fol
 
 :::image type="content" source="media/rbegin-rend-sentinel.png" alt-text="Picture of a vector containing the elements 10, 20, and 30. There's an imaginary box before the leftmost element (the leftmost element contains the number 10) that represents the sentinel. It's labeled rend(). The first element in the vector contains the number 10, and is labeled 'last element'. The rightmost element in the vector contains 30 and is labeled rbegin().":::
 
-### `rend`example
+### `rend` example
 
 ```cpp
 #include <vector>

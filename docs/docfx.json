@@ -40,9 +40,9 @@
       "breadcrumb_path": "~/_breadcrumb/toc.yml",
       "uhfHeaderId": "MSDocsHeader-CPP",
       "ROBOTS": "INDEX,FOLLOW",
-      "manager": "markl",
+      "manager": "coxford",
       "ms.date": "11/16/2016",
-      "ms.topic": "conceptual",
+      "ms.topic": "article",
       "audience": "developer",
       "ms.service": "visual-cpp",
       "ms.tgt_pltfrm": "Windows",
@@ -50,7 +50,6 @@
         "cplusplus"
       ],
       "dev_langs": [
-        "C++",
         "cpp"
       ],
       "searchScope": [
@@ -103,6 +102,7 @@
         "atl/reference/**.md": "reference",
         "atl-mfc-shared/**.md": "reference",
         "build/reference/**.md": "reference",
+        "build-insights/reference/sdk/c-event-data-types/**.md": "reference",
         "c-language/**.md": "language-reference",
         "c-runtime-library/**.md": "reference",
         "c-runtime-library/reference/**.md": "reference",
@@ -111,6 +111,7 @@
         "cppcx/**.md": "language-reference",
         "data/oledb/**.md": "reference",
         "error-messages/**.md": "error-reference",
+        "ide/refactoring/**.md": "how-to",
         "extensions/**.md": "reference",
         "intrinsics/**.md": "reference",
         "mfc/reference/**.md": "reference",
@@ -122,7 +123,8 @@
         "safeint/**.md": "reference",
         "sanitizers/**.md": "reference",
         "standard-library/**.md": "reference",
-        "windows/attributes/**.md": "reference"
+        "windows/attributes/**.md": "reference",
+        "**/how-to*.md": "how-to"
       },
       "ms.subservice": {
         "assembler/**.md": "masm",
@@ -140,6 +142,7 @@
         "cross-platform/**.md": "tools",
         "data/**.md": "data-access",
         "dotnet/**.md": "cli-lang",
+        "embedded/**.md": "tools",
         "error-messages/**.md": "errors-warnings",
         "extensions/**.md": "cli-lang",
         "get-started/**.md": "cpp-lang",
@@ -167,7 +170,7 @@
         "atl/**.md": "tylermsft",
         "atl-mfc-shared/**.md": "tylermsft",
         "build/**.md": "tylermsft",
-        "build-insights/**.md": "kevcadieux",
+        "build-insights/**.md": "tylermsft",
         "c-language/**.md": "tylermsft",
         "c-runtime-library/**.md": "tylermsft",
         "cloud/**.md": "tylermsft",
@@ -204,7 +207,7 @@
         "atl-mfc-shared/**.md": "twhitney",
         "attributes/**.md": "twhitney",
         "build/**.md": "twhitney",
-        "build-insights/**.md": "kevca",
+        "build-insights/**.md": "twhitney",
         "c-language/**.md": "twhitney",
         "c-runtime-library/**.md": "twhitney",
         "cloud/**.md": "twhitney",

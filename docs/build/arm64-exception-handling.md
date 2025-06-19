@@ -299,14 +299,20 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 | `save_fregp_x` | 1101101x'xxzzzzzz: save pair `d(8+#X)` at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
 | `save_freg` | 1101110x'xxzzzzzz: save reg `d(8+#X)` at `[sp+#Z*8]`, offset \<= 504 |
 | `save_freg_x` | 11011110'xxxzzzzz: save reg `d(8+#X)` at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -256 |
+| `alloc_z` | 11011111'zzzzzzzz: allocate stack with size `z * SVE-VL` |
 | `alloc_l` | 11100000'xxxxxxxx'xxxxxxxx'xxxxxxxx: allocate large stack with size \< 256M (2^24 * 16) |
 | `set_fp` | 11100001: set up `x29` with `mov x29,sp` |
 | `add_fp` | 11100010'xxxxxxxx: set up `x29` with `add x29,sp,#x*8` |
 | `nop` | 11100011: no unwind operation is required. |
 | `end` | 11100100: end of unwind code. Implies `ret` in epilog. |
 | `end_c` | 11100101: end of unwind code in current chained scope. |
-| `save_next` | 11100110: save next non-volatile Int or FP register pair. |
-|  | 11100111: reserved |
+| `save_next` | 11100110: save next register pair. |
+| `save_any_xreg` | 11100111'0pxrrrrr'00oooooo: save register(s)<ul><li>`p`: 0/1 => single `X(#r)` vs pair `X(#r)` + `X(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16, if x=1 or p=1, else `o` * 8</li></ul>(Windows >= 11 required) |
+| `save_any_dreg` | 11100111'0pxrrrrr'01oooooo: save register(s)<ul><li>`p`: 0/1 => single `D(#r)` vs pair `D(#r)` + `D(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16, if x=1 or p=1, else `o` * 8</li></ul>(Windows >= 11 required) |
+| `save_any_qreg` | 11100111'0pxrrrrr'10oooooo: save register(s)<ul><li>`p`: 0/1 => single `Q(#r)` vs pair `Q(#r)` + `Q(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16</li></ul>(Windows >= 11 required) |
+| `save_zreg` | 11100111'0oo0rrrr'11oooooo: save reg `Z(#r+8)` at `[sp + #o * VL]`, (`Z8` through `Z23`)
+| `save_preg` | 11100111'0oo1rrrr'11oooooo: save reg `P(#r)` at `[sp + #o * (VL / 8)]`, (`P4` through `P15`; `r` values `[0, 3]` are reserved)
+|  | 11100111'1yyyyyyy': reserved |
 |  | 11101xxx: reserved for custom stack cases below only generated for asm routines |
 |  | 11101000: Custom stack for `MSFT_OP_TRAP_FRAME` |
 |  | 11101001: Custom stack for `MSFT_OP_MACHINE_FRAME` |
@@ -330,7 +336,7 @@ In instructions with large values covering multiple bytes, the most significant 
 
 Post-indexed offset addressing isn't allowed in a prolog. All offset ranges (#Z) match the encoding of `stp`/`str` addressing except `save_r19r20_x`, in which 248 is sufficient for all save areas (10 Int registers + 8 FP registers + 8 input registers).
 
-`save_next` must follow a save for Int or FP volatile register pair: `save_regp`, `save_regp_x`, `save_fregp`, `save_fregp_x`, `save_r19r20_x`, or another `save_next`. It saves the next register pair at the next 16-byte slot in "growing up" order. A `save_next` refers to the first FP register pair when it follows the `save-next` that denotes the last Int register pair.
+`save_next` must follow a save for a register pair: `save_regp`, `save_regp_x`, `save_fregp`, `save_fregp_x`, `save_r19r20_x`, or another `save_next`. It can also be used in conjunction with `save_any_xreg`, `save_any_dreg` or `save_any_qreg` but only when `p = 1`. It saves the next register pair in numerically increasing order to the next stack space. `save_next` must not be used beyond the last register of the same kind.
 
 Since the sizes of regular return and jump instructions are the same, there's no need for a separated `end` unwind code in tail-call scenarios.
 
@@ -393,7 +399,7 @@ Step 6: Allocate remaining stack, including local area, `<x29,lr>` pair, and out
 | 6d | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` <= 4080 | 1 | `sub sp,sp,#locsz` | `alloc_s`/`alloc_m` |
 | 6e | (**CR** == 00 \|\| **CR** == 01) &&<br/>`#locsz` > 4080 | 2 | `sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)` | `alloc_m`<br/>`alloc_s`/`alloc_m` |
 
-\* If **CR** == 01 and **RegI** is an odd number, Step 2 and the last `save_rep` in step 1 are merged into one `save_regp`.
+\* If **CR** == 01 and **RegI** is an odd number, step 3 and the last `save_reg` in step 2 are merged into one `save_regp`.
 
 \*\* If **RegI** == **CR** == 0, and **RegF** != 0, the first `stp` for the floating-point does the predecrement.
 

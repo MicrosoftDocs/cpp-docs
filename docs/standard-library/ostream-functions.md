@@ -1,21 +1,15 @@
 ---
-description: "Learn more about: <ostream> functions"
 title: "<ostream> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <ostream> functions"
+ms.date: 11/04/2016
 f1_keywords: ["ostream/std::swap", "ostream/std::endl", "ostream/std::ends", "ostream/std::flush"]
-ms.assetid: d6e56cc0-c8df-4dbe-be10-98e14c35ed3a
 helpviewer_keywords: ["std::swap [C++]", "std::endl [C++]", "std::ends [C++]", "std::flush [C++]"]
 ---
 # `<ostream>` functions
 
-These are the global template functions defined in `<ostream>`. For member functions, see the [basic_ostream Class](basic-ostream-class.md) documentation.
+These are the global template functions defined in `<ostream>`. For member functions, see the [`basic_ostream` Class](basic-ostream-class.md) documentation.
 
-[endl](#endl)\
-[ends](#ends)\
-[flush](#flush)\
-[swap](#swap)
-
-## endl
+## `endl`
 
 Terminates a line and flushes the buffer.
 
@@ -27,22 +21,22 @@ basic_ostream<Elem, Tr>& endl(
 
 ### Parameters
 
-*Elem*\
+*`Elem`*\
 The element type.
 
-*Ostr*\
-An object of type **basic_ostream**.
+*`Ostr`*\
+An object of type **`basic_ostream`**.
 
-*Tr*\
+*`Tr`*\
 Character traits.
 
 ### Return Value
 
-An object of type **basic_ostream**.
+An object of type **`basic_ostream`**.
 
 ### Remarks
 
-The manipulator calls *Ostr*.[put](../standard-library/basic-ostream-class.md#put)(*Ostr*.[widen](../standard-library/basic-ios-class.md#widen)('\n')), and then calls *Ostr*.[flush](../standard-library/basic-ostream-class.md#flush). It returns *Ostr*.
+The manipulator calls *`Ostr`*.[`put`](../standard-library/basic-ostream-class.md#put)(*`Ostr`*.[`widen`](../standard-library/basic-ios-class.md#widen)('\n')), and then calls *`Ostr`*.[`flush`](../standard-library/basic-ostream-class.md#flush). It returns *`Ostr`*.
 
 ### Example
 
@@ -62,7 +56,7 @@ int main( )
 testing
 ```
 
-## ends
+## `ends`
 
 Terminates a string.
 
@@ -74,13 +68,13 @@ basic_ostream<Elem, Tr>& ends(
 
 ### Parameters
 
-*Elem*\
+*`Elem`*\
 The element type.
 
-*Ostr*\
+*`Ostr`*\
 An object of type `basic_ostream`.
 
-*Tr*\
+*`Tr`*\
 Character traits.
 
 ### Return Value
@@ -89,7 +83,7 @@ An object of type `basic_ostream`.
 
 ### Remarks
 
-The manipulator calls *Ostr*.[put](../standard-library/basic-ostream-class.md#put)(*Elem*('\0')). It returns *Ostr*.
+The manipulator calls *`Ostr`*.[`put`](../standard-library/basic-ostream-class.md#put)(*`Elem`*('\0')). It returns *`Ostr`*.
 
 ### Example
 
@@ -111,7 +105,7 @@ int main( )
 ab c
 ```
 
-## flush
+## `flush`
 
 Flushes the buffer.
 
@@ -123,13 +117,13 @@ basic_ostream<Elem, Tr>& flush(
 
 ### Parameters
 
-*Elem*\
+*`Elem`*\
 The element type.
 
-*Ostr*\
+*`Ostr`*\
 An object of type `basic_ostream`.
 
-*Tr*\
+*`Tr`*\
 Character traits.
 
 ### Return Value
@@ -138,7 +132,7 @@ An object of type `basic_ostream`.
 
 ### Remarks
 
-The manipulator calls *Ostr*.[flush](../standard-library/basic-ostream-class.md#flush). It returns *Ostr*.
+The manipulator calls *`Ostr`*.[`flush`](../standard-library/basic-ostream-class.md#flush). It returns *`Ostr`*.
 
 ### Example
 
@@ -158,7 +152,7 @@ int main( )
 testing
 ```
 
-## swap
+## `swap`
 
 Exchanges the values of two `basic_ostream` objects.
 
@@ -171,16 +165,16 @@ void swap(
 
 ### Parameters
 
-*Elem*\
+*`Elem`*\
 The element type.
 
-*Tr*\
+*`Tr`*\
 Character traits.
 
-*left*\
+*`left`*\
 An lvalue reference to a `basic_ostream` object.
 
-*right*\
+*`right`*\
 An lvalue reference to a `basic_ostream` object.
 
 ### Remarks
@@ -189,4 +183,4 @@ The template function `swap` executes `left.swap(right)`.
 
 ## See also
 
-[\<ostream>](../standard-library/ostream.md)
+[`<ostream>`](../standard-library/ostream.md)

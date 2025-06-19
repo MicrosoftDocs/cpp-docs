@@ -13,13 +13,13 @@ The C++ Standard Library vector class is a class template for sequence container
 
 ```cpp
 template <class Type, class Allocator = allocator<Type>>
-class vector
+class vector;
 ```
 
 ### Parameters
 
 *`Type`*\
-The element data type to be stored in the vector
+The element data type to be stored in the vector.
 
 *`Allocator`*\
 The type that represents the stored allocator object that encapsulates details about the vector's allocation and deallocation of memory. This argument is optional and the default value is `allocator<Type>`.
@@ -46,7 +46,7 @@ The [`vector<bool>` reference class](../standard-library/vector-bool-class.md#re
 
 |Name|Description|
 |-|-|
-|`[allocator_type]`(#allocator_type)|A type that represents the `allocator` class for the vector object.|
+|[`allocator_type`](#allocator_type)|A type that represents the `allocator` class for the vector object.|
 |[`const_iterator`](#const_iterator)|A type that provides a random-access iterator that can read a **`const`** element in a vector.|
 |[`const_pointer`](#const_pointer)|A type that provides a pointer to a **`const`** element in a vector.|
 |[`const_reference`](#const_reference)|A type that provides a reference to a **`const`** element stored in a vector. It's used for reading and doing **`const`** operations.|
@@ -152,7 +152,7 @@ First, `assign` erases any existing elements in a vector. Then, `assign` either 
 ### Example
 
 ```cpp
-/ vector_assign.cpp
+// vector_assign.cpp
 // compile with: /EHsc
 #include <vector>
 #include <iostream>
@@ -169,31 +169,43 @@ int main()
     v1.push_back(50);
 
     cout << "v1 = ";
-    for (auto& v : v1){
+    for (auto& v : v1)
+    {
         cout << v << " ";
     }
     cout << endl;
 
     v2.assign(v1.begin(), v1.end());
     cout << "v2 = ";
-    for (auto& v : v2){
+    for (auto& v : v2)
+    {
         cout << v << " ";
     }
     cout << endl;
 
     v3.assign(7, 4);
     cout << "v3 = ";
-    for (auto& v : v3){
+    for (auto& v : v3)
+    {
         cout << v << " ";
     }
     cout << endl;
 
     v3.assign({ 5, 6, 7 });
-    for (auto& v : v3){
+    cout << "v3 = ";
+    for (auto& v : v3)
+    {
         cout << v << " ";
     }
     cout << endl;
 }
+```
+
+```Output
+v1 = 10 20 30 40 50
+v2 = 10 20 30 40 50
+v3 = 4 4 4 4 4 4 4
+v3 = 5 6 7
 ```
 
 ## <a name="at"></a> `at`
@@ -227,18 +239,18 @@ If the return value of `at` is assigned to a `const_reference`, the vector objec
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
+    using namespace std;
+    vector<int> v1;
 
-   v1.push_back( 10 );
-   v1.push_back( 20 );
+    v1.push_back(10);
+    v1.push_back(20);
 
-   const int &i = v1.at( 0 );
-   int &j = v1.at( 1 );
-   cout << "The first element is " << i << endl;
-   cout << "The second element is " << j << endl;
+    const int &i = v1.at(0);
+    int &j = v1.at(1);
+    cout << "The first element is " << i << endl;
+    cout << "The second element is " << j << endl;
 }
 ```
 
@@ -275,20 +287,26 @@ When compiled by using [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-de
 #include <vector>
 #include <iostream>
 
-int main() {
-   using namespace std;
-   vector <int> v1;
+int main()
+{
+    using namespace std;
+    vector<int> v1;
 
-   v1.push_back( 10 );
-   v1.push_back( 11 );
+    v1.push_back(10);
+    v1.push_back(11);
 
-   int& i = v1.back( );
-   const int& ii = v1.front( );
+    int& i = v1.back();
+    const int& ii = v1.front();
 
-   cout << "The last integer of v1 is " << i << endl;
-   i--;
-   cout << "The next-to-last integer of v1 is "<< ii << endl;
+    cout << "The last integer of v1 is " << i << endl;
+    i--;
+    cout << "The next-to-last integer of v1 is " << ii << endl;
 }
+```
+
+```Output
+The last integer of v1 is 11
+The next-to-last integer of v1 is 10
 ```
 
 ## <a name="begin"></a> `begin`
@@ -378,18 +396,18 @@ The member function [`resize`](#resize) will be more efficient if sufficient mem
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
+    using namespace std;
+    vector<int> v1;
 
-   v1.push_back( 1 );
-   cout << "The length of storage allocated is "
-        << v1.capacity( ) << "." << endl;
+    v1.push_back(1);
+    cout << "The length of storage allocated is "
+        << v1.capacity() << "." << endl;
 
-   v1.push_back( 2 );
-   cout << "The length of storage allocated is now "
-        << v1.capacity( ) << "." << endl;
+    v1.push_back(2);
+    cout << "The length of storage allocated is now "
+        << v1.capacity() << "." << endl;
 }
 ```
 
@@ -419,8 +437,8 @@ You can use this member function in place of the `begin()` member function to gu
 ```cpp
 auto i1 = Container.begin();
 // i1 is Container<T>::iterator
-auto i2 = Container.cbegin();
 
+auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
@@ -445,8 +463,8 @@ You can use this member function in place of the `end()` member function to guar
 ```cpp
 auto i1 = Container.end();
 // i1 is Container<T>::iterator
-auto i2 = Container.cend();
 
+auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
@@ -468,18 +486,18 @@ void clear();
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
+    using namespace std;
+    vector<int> v1;
 
-   v1.push_back( 10 );
-   v1.push_back( 20 );
-   v1.push_back( 30 );
+    v1.push_back(10);
+    v1.push_back(20);
+    v1.push_back(30);
 
-   cout << "The size of v1 is " << v1.size( ) << endl;
-   v1.clear( );
-   cout << "The size of v1 after clearing is " << v1.size( ) << endl;
+    cout << "The size of v1 is " << v1.size() << endl;
+    v1.clear();
+    cout << "The size of v1 after clearing is " << v1.size() << endl;
 }
 ```
 
@@ -538,22 +556,22 @@ A type `const_reference` can't be used to modify the value of an element.
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
+    using namespace std;
+    vector<int> v1;
 
-   v1.push_back( 10 );
-   v1.push_back( 20 );
+    v1.push_back(10);
+    v1.push_back(20);
 
-   const vector <int> v2 = v1;
-   const int &i = v2.front( );
-   const int &j = v2.back( );
-   cout << "The first element is " << i << endl;
-   cout << "The second element is " << j << endl;
+    const vector<int> v2 = v1;
+    const int& i = v2.front();
+    const int& j = v2.back();
+    cout << "The first element is " << i << endl;
+    cout << "The second element is " << j << endl;
 
-   // The following line would cause an error as v2 is const
-   // v2.push_back( 30 );
+    // The following line would cause an error as v2 is const
+    // v2.push_back(30);
 }
 ```
 
@@ -602,22 +620,22 @@ With the return value of `crbegin`, the `vector` object can't be modified.
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator v1_Iter;
-   vector <int>::const_reverse_iterator v1_rIter;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator v1_Iter;
+    vector<int>::const_reverse_iterator v1_rIter;
 
-   v1.push_back( 1 );
-   v1.push_back( 2 );
+    v1.push_back(1);
+    v1.push_back(2);
 
-   v1_Iter = v1.begin( );
-   cout << "The first element of vector is "
+    v1_Iter = v1.begin();
+    cout << "The first element of vector is "
         << *v1_Iter << "." << endl;
 
-   v1_rIter = v1.crbegin( );
-   cout << "The first element of the reversed vector is "
+    v1_rIter = v1.crbegin();
+    cout << "The first element of the reversed vector is "
         << *v1_rIter << "." << endl;
 }
 ```
@@ -657,17 +675,17 @@ The value returned by `crend` shouldn't be dereferenced. Only use it for compari
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::const_reverse_iterator v1_rIter;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::const_reverse_iterator v1_rIter;
 
-   v1.push_back( 1 );
-   v1.push_back( 2 );
+    v1.push_back(1);
+    v1.push_back(2);
 
-   for ( v1_rIter = v1.rbegin( ) ; v1_rIter != v1.rend( ) ; v1_rIter++ )
-      cout << *v1_rIter << endl;
+    for (v1_rIter = v1.rbegin(); v1_rIter != v1.rend(); v1_rIter++)
+        cout << *v1_rIter << endl;
 }
 ```
 
@@ -755,31 +773,31 @@ An [iterator](#iterator) is more commonly used to access a vector element.
 #include <vector>
 #include <algorithm>
 
-int main( )
+int main()
 {
-   using namespace std;
+    using namespace std;
 
-   vector <int> c1;
-   vector <int>::iterator c1_Iter, c2_Iter;
+    vector<int> c1;
+    vector<int>::iterator c1_Iter, c2_Iter;
 
-   c1.push_back( 30 );
-   c1.push_back( 20 );
-   c1.push_back( 30 );
-   c1.push_back( 10 );
-   c1.push_back( 30 );
-   c1.push_back( 20 );
+    c1.push_back(30);
+    c1.push_back(20);
+    c1.push_back(30);
+    c1.push_back(10);
+    c1.push_back(30);
+    c1.push_back(20);
 
-   c1_Iter = c1.begin( );
-   c2_Iter = c1.end( );
+    c1_Iter = c1.begin();
+    c2_Iter = c1.end();
 
-   vector <int>::difference_type   df_typ1, df_typ2, df_typ3;
+    vector<int>::difference_type df_typ1, df_typ2, df_typ3;
 
-   df_typ1 = count( c1_Iter, c2_Iter, 10 );
-   df_typ2 = count( c1_Iter, c2_Iter, 20 );
-   df_typ3 = count( c1_Iter, c2_Iter, 30 );
-   cout << "The number '10' is in c1 collection " << df_typ1 << " times.\n";
-   cout << "The number '20' is in c1 collection " << df_typ2 << " times.\n";
-   cout << "The number '30' is in c1 collection " << df_typ3 << " times.\n";
+    df_typ1 = count(c1_Iter, c2_Iter, 10);
+    df_typ2 = count(c1_Iter, c2_Iter, 20);
+    df_typ3 = count(c1_Iter, c2_Iter, 30);
+    cout << "The number '10' is in c1 collection " << df_typ1 << " times.\n";
+    cout << "The number '20' is in c1 collection " << df_typ2 << " times.\n";
+    cout << "The number '30' is in c1 collection " << df_typ3 << " times.\n";
 }
 ```
 
@@ -824,32 +842,32 @@ Any insertion operation can be expensive, see [`vector` class](../standard-libra
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter;
 
-   v1.push_back( 10 );
-   v1.push_back( 20 );
-   v1.push_back( 30 );
+    v1.push_back(10);
+    v1.push_back(20);
+    v1.push_back(30);
 
-   cout << "v1 =" ;
-   for ( Iter = v1.begin( ) ; Iter != v1.end( ) ; Iter++ )
-      cout << " " << *Iter;
-   cout << endl;
+    cout << "v1 =";
+    for (Iter = v1.begin(); Iter != v1.end(); Iter++)
+        cout << " " << *Iter;
+    cout << endl;
 
-// initialize a vector of vectors by moving v1
-   vector < vector <int> > vv1;
+    // initialize a vector of vectors by moving v1
+    vector<vector<int>> vv1;
 
-   vv1.emplace( vv1.begin(), move( v1 ) );
-   if ( vv1.size( ) != 0 && vv1[0].size( ) != 0 )
-      {
-      cout << "vv1[0] =";
-      for (Iter = vv1[0].begin( ); Iter != vv1[0].end( ); Iter++ )
-         cout << " " << *Iter;
-      cout << endl;
-      }
+    vv1.emplace(vv1.begin(), move(v1));
+    if (vv1.size() != 0 && vv1[0].size() != 0)
+    {
+        cout << "vv1[0] =";
+        for (Iter = vv1[0].begin(); Iter != vv1[0].end(); Iter++)
+            cout << " " << *Iter;
+        cout << endl;
+    }
 }
 ```
 
@@ -876,15 +894,16 @@ Constructor arguments. The function infers which constructor overload to invoke 
 
 ```cpp
 #include <vector>
+
 struct obj
 {
-   obj(int, double) {}
+    obj(int, double) {}
 };
 
 int main()
 {
-   std::vector<obj> v;
-   v.emplace_back(1, 3.14); // obj in created in place in the vector
+    std::vector<obj> v;
+    v.emplace_back(1, 3.14); // obj in created in place in the vector
 }
 ```
 
@@ -908,17 +927,17 @@ bool empty() const;
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
+    using namespace std;
+    vector<int> v1;
 
-   v1.push_back( 10 );
+    v1.push_back(10);
 
-   if ( v1.empty( ) )
-      cout << "The vector is empty." << endl;
-   else
-      cout << "The vector is not empty." << endl;
+    if (v1.empty())
+        cout << "The vector is empty." << endl;
+    else
+        cout << "The vector is not empty." << endl;
 }
 ```
 
@@ -951,17 +970,18 @@ If the return value of `end` is assigned to a variable of type `const_iterator`,
 // compile with: /EHsc
 #include <vector>
 #include <iostream>
-int main( )
+
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator v1_Iter;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator v1_Iter;
 
-   v1.push_back( 1 );
-   v1.push_back( 2 );
+    v1.push_back(1);
+    v1.push_back(2);
 
-   for ( v1_Iter = v1.begin( ) ; v1_Iter != v1.end( ) ; v1_Iter++ )
-      cout << *v1_Iter << endl;
+    for (v1_Iter = v1.begin(); v1_Iter != v1.end(); v1_Iter++)
+        cout << *v1_Iter << endl;
 }
 ```
 
@@ -1006,34 +1026,34 @@ An iterator that designates the first element remaining beyond any elements remo
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter;
 
-   v1.push_back( 10 );
-   v1.push_back( 20 );
-   v1.push_back( 30 );
-   v1.push_back( 40 );
-   v1.push_back( 50 );
+    v1.push_back(10);
+    v1.push_back(20);
+    v1.push_back(30);
+    v1.push_back(40);
+    v1.push_back(50);
 
-   cout << "v1 =" ;
-   for ( Iter = v1.begin( ) ; Iter != v1.end( ) ; Iter++ )
-      cout << " " << *Iter;
-   cout << endl;
+    cout << "v1 =";
+    for (Iter = v1.begin(); Iter != v1.end(); Iter++)
+        cout << " " << *Iter;
+    cout << endl;
 
-   v1.erase( v1.begin( ) );
-   cout << "v1 =";
-   for ( Iter = v1.begin( ) ; Iter != v1.end( ) ; Iter++ )
-      cout << " " << *Iter;
-   cout << endl;
+    v1.erase(v1.begin());
+    cout << "v1 =";
+    for (Iter = v1.begin(); Iter != v1.end(); Iter++)
+        cout << " " << *Iter;
+    cout << endl;
 
-   v1.erase( v1.begin( ) + 1, v1.begin( ) + 3 );
-   cout << "v1 =";
-   for ( Iter = v1.begin( ) ; Iter != v1.end( ) ; Iter++ )
-      cout << " " << *Iter;
-   cout << endl;
+    v1.erase(v1.begin() + 1, v1.begin() + 3);
+    cout << "v1 =";
+    for (Iter = v1.begin(); Iter != v1.end(); Iter++)
+        cout << " " << *Iter;
+    cout << endl;
 }
 ```
 
@@ -1071,22 +1091,26 @@ When compiled by using [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-de
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
+    using namespace std;
+    vector<int> v1;
 
-   v1.push_back( 10 );
-   v1.push_back( 11 );
+    v1.push_back(10);
+    v1.push_back(11);
 
-   int& i = v1.front( );
-   const int& ii = v1.front( );
+    int& i = v1.front();
 
-   cout << "The first integer of v1 is "<< i << endl;
-   // by incrementing i, we move the front reference to the second element
-   i++;
-   cout << "Now, the first integer of v1 is "<< i << endl;
+    cout << "The first integer of v1 is " << i << endl;
+    // by incrementing i, we move the front reference to the second element
+    i++;
+    cout << "Now, the first integer of v1 is " << i << endl;
 }
+```
+
+```Output
+The first integer of v1 is 10
+Now, the first integer of v1 is 11
 ```
 
 ## <a name="get_allocator"></a> `get_allocator`
@@ -1111,20 +1135,19 @@ Allocators for the vector class specify how the class manages storage. The defau
 // vector_get_allocator.cpp
 // compile with: /EHsc
 #include <vector>
-#include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   // The following lines declare objects that use the default allocator.
-   vector<int> v1;
-   vector<int, allocator<int> > v2 = vector<int, allocator<int> >(allocator<int>( )) ;
+    using namespace std;
+    // The following lines declare objects that use the default allocator.
+    vector<int> v1;
+    vector<int, allocator<int>> v2 = vector<int, allocator<int>>(allocator<int>());
 
-   // v3 will use the same allocator class as v1
-   vector <int> v3( v1.get_allocator( ) );
+    // v3 will use the same allocator class as v1
+    vector<int> v3(v1.get_allocator());
 
-   vector<int>::allocator_type xvec = v3.get_allocator( );
-   // You can now call functions on the allocator class used by vec
+    vector<int>::allocator_type xvec = v3.get_allocator();
+    // You can now call functions on the allocator class used by vec
 }
 ```
 
@@ -1186,51 +1209,51 @@ As a precondition, *`first`* and *`last`* must not be iterators into the vector,
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator Iter;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator Iter;
 
-   v1.push_back( 10 );
-   v1.push_back( 20 );
-   v1.push_back( 30 );
+    v1.push_back(10);
+    v1.push_back(20);
+    v1.push_back(30);
 
-   cout << "v1 =" ;
-   for ( Iter = v1.begin( ) ; Iter != v1.end( ) ; Iter++ )
-      cout << " " << *Iter;
-   cout << endl;
+    cout << "v1 =";
+    for (Iter = v1.begin(); Iter != v1.end(); Iter++)
+        cout << " " << *Iter;
+    cout << endl;
 
-   v1.insert( v1.begin( ) + 1, 40 );
-   cout << "v1 =";
-   for ( Iter = v1.begin( ) ; Iter != v1.end( ) ; Iter++ )
-      cout << " " << *Iter;
-   cout << endl;
-   v1.insert( v1.begin( ) + 2, 4, 50 );
+    v1.insert(v1.begin() + 1, 40);
+    cout << "v1 =";
+    for (Iter = v1.begin(); Iter != v1.end(); Iter++)
+        cout << " " << *Iter;
+    cout << endl;
+    v1.insert(v1.begin() + 2, 4, 50);
 
-   cout << "v1 =";
-   for ( Iter = v1.begin( ) ; Iter != v1.end( ) ; Iter++ )
-      cout << " " << *Iter;
-   cout << endl;
+    cout << "v1 =";
+    for (Iter = v1.begin(); Iter != v1.end(); Iter++)
+        cout << " " << *Iter;
+    cout << endl;
 
-   const auto v2 = v1;
-   v1.insert( v1.begin( )+1, v2.begin( )+2, v2.begin( )+4 );
-   cout << "v1 =";
-   for (Iter = v1.begin( ); Iter != v1.end( ); Iter++ )
-      cout << " " << *Iter;
-   cout << endl;
+    const auto v2 = v1;
+    v1.insert(v1.begin() + 1, v2.begin() + 2, v2.begin() + 4);
+    cout << "v1 =";
+    for (Iter = v1.begin(); Iter != v1.end(); Iter++)
+        cout << " " << *Iter;
+    cout << endl;
 
-// initialize a vector of vectors by moving v1
-   vector < vector <int> > vv1;
+    // initialize a vector of vectors by moving v1
+    vector<vector<int>> vv1;
 
-   vv1.insert( vv1.begin(), move( v1 ) );
-   if ( vv1.size( ) != 0 && vv1[0].size( ) != 0 )
-      {
-      cout << "vv1[0] =";
-      for (Iter = vv1[0].begin( ); Iter != vv1[0].end( ); Iter++ )
-         cout << " " << *Iter;
-      cout << endl;
-      }
+    vv1.insert(vv1.begin(), move(v1));
+    if (vv1.size() != 0 && vv1[0].size() != 0)
+    {
+        cout << "vv1[0] =";
+        for (Iter = vv1[0].begin(); Iter != vv1[0].end(); Iter++)
+            cout << " " << *Iter;
+        cout << endl;
+    }
 }
 ```
 
@@ -1278,15 +1301,19 @@ The maximum possible length of the vector.
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::size_type i;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::size_type i;
 
-   i = v1.max_size( );
-   cout << "The maximum possible length of the vector is " << i << "." << endl;
+    i = v1.max_size();
+    cout << "The maximum possible length of the vector is " << i << "." << endl;
 }
+```
+
+```Output
+The maximum possible length of the vector is 4611686018427387903.
 ```
 
 ## <a name="op_at"></a> `operator[]`
@@ -1322,17 +1349,21 @@ When compiled by using [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-de
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
+    using namespace std;
+    vector<int> v1;
 
-   v1.push_back( 10 );
-   v1.push_back( 20 );
+    v1.push_back(10);
+    v1.push_back(20);
 
-   int& i = v1[1];
-   cout << "The second integer of v1 is " << i << endl;
+    int& i = v1[1];
+    cout << "The second integer of v1 is " << i << endl;
 }
+```
+
+```Output
+The second integer of v1 is 20
 ```
 
 ## <a name="op_eq"></a> `operator=`
@@ -1362,37 +1393,43 @@ After erasing any existing elements in a `vector`, `operator=` either copies or 
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector<int> v1, v2, v3;
-   vector<int>::iterator iter;
+    using namespace std;
+    vector<int> v1, v2, v3;
+    vector<int>::iterator iter;
 
-   v1.push_back(10);
-   v1.push_back(20);
-   v1.push_back(30);
-   v1.push_back(40);
-   v1.push_back(50);
+    v1.push_back(10);
+    v1.push_back(20);
+    v1.push_back(30);
+    v1.push_back(40);
+    v1.push_back(50);
 
-   cout << "v1 = " ;
-   for (iter = v1.begin(); iter != v1.end(); iter++)
-      cout << *iter << " ";
-   cout << endl;
+    cout << "v1 = ";
+    for (iter = v1.begin(); iter != v1.end(); iter++)
+        cout << *iter << " ";
+    cout << endl;
 
-   v2 = v1;
-   cout << "v2 = ";
-   for (iter = v2.begin(); iter != v2.end(); iter++)
-      cout << *iter << " ";
-   cout << endl;
+    v2 = v1;
+    cout << "v2 = ";
+    for (iter = v2.begin(); iter != v2.end(); iter++)
+        cout << *iter << " ";
+    cout << endl;
 
-// move v1 into v2
-   v2.clear();
-   v2 = move(v1);
-   cout << "v2 = ";
-   for (iter = v2.begin(); iter != v2.end(); iter++)
-      cout << *iter << " ";
-   cout << endl;
+    // move v1 into v2
+    v2.clear();
+    v2 = move(v1);
+    cout << "v2 = ";
+    for (iter = v2.begin(); iter != v2.end(); iter++)
+        cout << *iter << " ";
+    cout << endl;
 }
+```
+
+```Output
+v1 = 10 20 30 40 50
+v2 = 10 20 30 40 50
+v2 = 10 20 30 40 50
 ```
 
 ## <a name="pointer"></a> `pointer`
@@ -1415,12 +1452,12 @@ A type **`pointer`** can be used to modify the value of an element.
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
     using namespace std;
     vector<int> v;
-    v.push_back( 11 );
-    v.push_back( 22 );
+    v.push_back(11);
+    v.push_back(22);
 
     vector<int>::pointer ptr = &v[0];
     cout << *ptr << endl;
@@ -1473,14 +1510,19 @@ The value to assign to the element added to the end of the vector.
 
 using namespace std;
 
-template <typename T> void print_elem(const T& t) {
+template <typename T>
+void print_elem(const T& t)
+{
     cout << "(" << t << ") ";
 }
 
-template <typename T> void print_collection(const T& t) {
+template <typename T>
+void print_collection(const T& t)
+{
     cout << "  " << t.size() << " elements: ";
 
-    for (const auto& p : t) {
+    for (const auto& p : t)
+    {
         print_elem(p);
     }
     cout << endl;
@@ -1489,7 +1531,8 @@ template <typename T> void print_collection(const T& t) {
 int main()
 {
     vector<int> v;
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 10; ++i)
+    {
         v.push_back(10 + i);
     }
 
@@ -1497,11 +1540,29 @@ int main()
     print_collection(v);
 
     // pop_back() until it's empty, printing the last element as we go
-    while (v.begin() != v.end()) {
-        cout << "v.back(): "; print_elem(v.back()); cout << endl;
+    while (v.begin() != v.end())
+    {
+        cout << "v.back(): ";
+        print_elem(v.back());
+        cout << endl;
         v.pop_back();
     }
 }
+```
+
+```Output
+vector data:
+  10 elements: (10) (11) (12) (13) (14) (15) (16) (17) (18) (19)
+v.back(): (19)
+v.back(): (18)
+v.back(): (17)
+v.back(): (16)
+v.back(): (15)
+v.back(): (14)
+v.back(): (13)
+v.back(): (12)
+v.back(): (11)
+v.back(): (10)
 ```
 
 ## <a name="rbegin"></a> `rbegin`
@@ -1529,22 +1590,22 @@ If the return value of `rbegin` is assigned to a `const_reverse_iterator`, the v
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::iterator v1_Iter;
-   vector <int>::reverse_iterator v1_rIter;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::iterator v1_Iter;
+    vector<int>::reverse_iterator v1_rIter;
 
-   v1.push_back( 1 );
-   v1.push_back( 2 );
+    v1.push_back(1);
+    v1.push_back(2);
 
-   v1_Iter = v1.begin( );
-   cout << "The first element of vector is "
+    v1_Iter = v1.begin();
+    cout << "The first element of vector is "
         << *v1_Iter << "." << endl;
 
-   v1_rIter = v1.rbegin( );
-   cout << "The first element of the reversed vector is "
+    v1_rIter = v1.rbegin();
+    cout << "The first element of the reversed vector is "
         << *v1_rIter << "." << endl;
 }
 ```
@@ -1597,17 +1658,17 @@ The value returned by `rend` shouldn't be dereferenced. Only use it for comparis
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::reverse_iterator v1_rIter;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::reverse_iterator v1_rIter;
 
-   v1.push_back( 1 );
-   v1.push_back( 2 );
+    v1.push_back(1);
+    v1.push_back(2);
 
-   for ( v1_rIter = v1.rbegin( ) ; v1_rIter != v1.rend( ) ; v1_rIter++ )
-      cout << *v1_rIter << endl;
+    for (v1_rIter = v1.rbegin(); v1_rIter != v1.rend(); v1_rIter++)
+        cout << *v1_rIter << endl;
 }
 ```
 
@@ -1637,18 +1698,17 @@ The minimum length of storage to be allocated for the vector.
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   //vector <int>::iterator Iter;
+    using namespace std;
+    vector<int> v1;
 
-   v1.push_back( 1 );
-   cout << "Current capacity of v1 = "
-      << v1.capacity( ) << endl;
-   v1.reserve( 20 );
-   cout << "Current capacity of v1 = "
-      << v1.capacity( ) << endl;
+    v1.push_back(1);
+    cout << "Current capacity of v1 = "
+        << v1.capacity() << endl;
+    v1.reserve(20);
+    cout << "Current capacity of v1 = "
+        << v1.capacity() << endl;
 }
 ```
 
@@ -1721,16 +1781,20 @@ If the container's size is less than the requested size, *`new_size`*, `resize` 
 
 using namespace std;
 
-template <typename C> void print(const string& s, const C& c) {
+template <typename C>
+void print(const string& s, const C& c)
+{
     cout << s;
 
-    for (const auto& e : c) {
+    for (const auto& e : c)
+    {
         cout << e << " ";
     }
     cout << endl;
 }
 
-void printvstats(const vector<int>& v) {
+void printvstats(const vector<int>& v)
+{
     cout << "   the vector's size is: " << v.size() << endl;
     cout << "   the vector's capacity is: " << v.capacity() << endl;
     cout << "   the vector's maximum size is: " << v.max_size() << endl;
@@ -1742,7 +1806,7 @@ int main()
     vector<int> v;
 
     // Show statistics about vector.
-    cout << endl << "After declaring an empty vector:" << endl;
+    cout << "After declaring an empty vector:" << endl;
     printvstats(v);
     print("   the vector's contents: ", v);
 
@@ -1752,7 +1816,8 @@ int main()
     printvstats(v);
     print("   the vector's contents: ", v);
 
-    for (int i = 1; i < 10; ++i) {
+    for (int i = 1; i < 10; ++i)
+    {
         v.push_back(i);
     }
     cout << endl << "After adding 10 elements:" << endl;
@@ -1784,6 +1849,54 @@ int main()
     cout << endl << "After vector::resize(2000):" << endl;
     printvstats(v);
 }
+```
+
+```Output
+After declaring an empty vector:
+   the vector's size is: 0
+   the vector's capacity is: 0
+   the vector's maximum size is: 4611686018427387903
+   the vector's contents:
+
+After adding an element:
+   the vector's size is: 1
+   the vector's capacity is: 1
+   the vector's maximum size is: 4611686018427387903
+   the vector's contents: -1
+
+After adding 10 elements:
+   the vector's size is: 10
+   the vector's capacity is: 13
+   the vector's maximum size is: 4611686018427387903
+   the vector's contents: -1 1 2 3 4 5 6 7 8 9
+
+After resizing to 6 elements without an initialization value:
+   the vector's size is: 6
+   the vector's capacity is: 13
+   the vector's maximum size is: 4611686018427387903
+   the vector's contents: -1 1 2 3 4 5
+
+After resizing to 9 elements with an initialization value of 999:
+   the vector's size is: 9
+   the vector's capacity is: 13
+   the vector's maximum size is: 4611686018427387903
+   the vector's contents: -1 1 2 3 4 5 999 999 999
+
+After resizing to 12 elements without an initialization value:
+   the vector's size is: 12
+   the vector's capacity is: 13
+   the vector's maximum size is: 4611686018427387903
+   the vector's contents: -1 1 2 3 4 5 999 999 999 0 0 0
+
+After vector::reserve(1000):
+   the vector's size is: 12
+   the vector's capacity is: 1000
+   the vector's maximum size is: 4611686018427387903
+
+After vector::resize(2000):
+   the vector's size is: 2000
+   the vector's capacity is: 2000
+   the vector's maximum size is: 4611686018427387903
 ```
 
 ## <a name="reverse_iterator"></a> `reverse_iterator`
@@ -1818,21 +1931,20 @@ void shrink_to_fit();
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   //vector <int>::iterator Iter;
+    using namespace std;
+    vector<int> v1;
 
-   v1.push_back( 1 );
-   cout << "Current capacity of v1 = "
-      << v1.capacity( ) << endl;
-   v1.reserve( 20 );
-   cout << "Current capacity of v1 = "
-      << v1.capacity( ) << endl;
-   v1.shrink_to_fit();
-   cout << "Current capacity of v1 = "
-      << v1.capacity( ) << endl;
+    v1.push_back(1);
+    cout << "Current capacity of v1 = "
+        << v1.capacity() << endl;
+    v1.reserve(20);
+    cout << "Current capacity of v1 = "
+        << v1.capacity() << endl;
+    v1.shrink_to_fit();
+    cout << "Current capacity of v1 = "
+        << v1.capacity() << endl;
 }
 ```
 
@@ -1862,19 +1974,19 @@ The current length of the vector.
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1;
-   vector <int>::size_type i;
+    using namespace std;
+    vector<int> v1;
+    vector<int>::size_type i;
 
-   v1.push_back( 1 );
-   i = v1.size( );
-   cout << "Vector length is " << i << "." << endl;
+    v1.push_back(1);
+    i = v1.size();
+    cout << "Vector length is " << i << "." << endl;
 
-   v1.push_back( 2 );
-   i = v1.size( );
-   cout << "Vector length is now " << i << "." << endl;
+    v1.push_back(2);
+    i = v1.size();
+    cout << "Vector length is now " << i << "." << endl;
 }
 ```
 
@@ -1924,26 +2036,26 @@ A vector whose elements are to be exchanged with the elements in the vector *`ri
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector <int> v1, v2;
+    using namespace std;
+    vector<int> v1, v2;
 
-   v1.push_back( 1 );
-   v1.push_back( 2 );
-   v1.push_back( 3 );
+    v1.push_back(1);
+    v1.push_back(2);
+    v1.push_back(3);
 
-   v2.push_back( 10 );
-   v2.push_back( 20 );
+    v2.push_back(10);
+    v2.push_back(20);
 
-   cout << "The number of elements in v1 = " << v1.size( ) << endl;
-   cout << "The number of elements in v2 = " << v2.size( ) << endl;
-   cout << endl;
+    cout << "The number of elements in v1 = " << v1.size() << endl;
+    cout << "The number of elements in v2 = " << v2.size() << endl;
+    cout << endl;
 
-   v1.swap( v2 );
+    v1.swap(v2);
 
-   cout << "The number of elements in v1 = " << v1.size( ) << endl;
-   cout << "The number of elements in v2 = " << v2.size( ) << endl;
+    cout << "The number of elements in v1 = " << v1.size() << endl;
+    cout << "The number of elements in v2 = " << v2.size() << endl;
 }
 ```
 
@@ -1975,12 +2087,12 @@ typedef typename Allocator::value_type value_type;
 #include <vector>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   vector<int>::value_type AnInt;
-   AnInt = 44;
-   cout << AnInt << endl;
+    using namespace std;
+    vector<int>::value_type AnInt;
+    AnInt = 44;
+    cout << AnInt << endl;
 }
 ```
 
@@ -2061,82 +2173,92 @@ The ninth and tenth constructors copy the range [`first`, `last`) of a vector.
 int main()
 {
     using namespace std;
-    vector <int>::iterator v1_Iter, v2_Iter, v3_Iter, v4_Iter, v5_Iter, v6_Iter;
+    vector<int>::iterator v1_Iter, v2_Iter, v3_Iter, v4_Iter, v5_Iter, v6_Iter;
 
     // Create an empty vector v0
-    vector <int> v0;
+    vector<int> v0;
 
     // Create a vector v1 with 3 elements of default value 0
-    vector <int> v1(3);
+    vector<int> v1(3);
 
     // Create a vector v2 with 5 elements of value 2
-    vector <int> v2(5, 2);
+    vector<int> v2(5, 2);
 
     // Create a vector v3 with 3 elements of value 1 and with the allocator
     // of vector v2
-    vector <int> v3(3, 1, v2.get_allocator());
+    vector<int> v3(3, 1, v2.get_allocator());
 
     // Create a copy, vector v4, of vector v2
-    vector <int> v4(v2);
+    vector<int> v4(v2);
 
     // Create a new temporary vector for demonstrating copying ranges
-    vector <int> v5(5);
-    for (auto i : v5) {
+    vector<int> v5(5);
+    for (auto i : v5)
+    {
         v5[i] = i;
     }
 
     // Create a vector v6 by copying the range v5[ first,  last)
-    vector <int> v6(v5.begin() + 1, v5.begin() + 3);
+    vector<int> v6(v5.begin() + 1, v5.begin() + 3);
 
     cout << "v1 =";
-    for (auto& v : v1){
+    for (auto& v : v1)
+    {
         cout << " " << v;
     }
     cout << endl;
 
     cout << "v2 =";
-    for (auto& v : v2){
+    for (auto& v : v2)
+    {
         cout << " " << v;
     }
     cout << endl;
 
     cout << "v3 =";
-    for (auto& v : v3){
+    for (auto& v : v3)
+    {
         cout << " " << v;
     }
     cout << endl;
+
     cout << "v4 =";
-    for (auto& v : v4){
+    for (auto& v : v4)
+    {
         cout << " " << v;
     }
     cout << endl;
 
     cout << "v5 =";
-    for (auto& v : v5){
+    for (auto& v : v5)
+    {
         cout << " " << v;
     }
     cout << endl;
 
     cout << "v6 =";
-    for (auto& v : v6){
+    for (auto& v : v6)
+    {
         cout << " " << v;
     }
     cout << endl;
 
     // Move vector v2 to vector v7
-    vector <int> v7(move(v2));
-    vector <int>::iterator v7_Iter;
+    vector<int> v7(move(v2));
+    vector<int>::iterator v7_Iter;
 
     cout << "v7 =";
-    for (auto& v : v7){
+    for (auto& v : v7)
+    {
         cout << " " << v;
     }
     cout << endl;
 
     cout << "v8 =";
     vector<int> v8{ { 1, 2, 3, 4 } };
-    for (auto& v : v8){
-        cout << " " << v ;
+    for (auto& v : v8)
+    {
+        cout << " " << v;
     }
     cout << endl;
 }

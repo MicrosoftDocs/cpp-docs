@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CComCoClass Class"
 title: "CComCoClass Class"
+description: "Learn more about: CComCoClass Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCoClass", "ATLCOM/ATL::CComCoClass", "ATLCOM/ATL::CComCoClass::CreateInstance", "ATLCOM/ATL::CComCoClass::Error", "ATLCOM/ATL::CComCoClass::GetObjectCLSID", "ATLCOM/ATL::CComCoClass::GetObjectDescription"]
 helpviewer_keywords: ["CComCoClass class", "aggregation [C++], aggregation models"]
-ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762
 ---
 # CComCoClass Class
 
@@ -12,29 +11,29 @@ This class provides methods for creating instances of a class, and obtaining its
 
 ## Syntax
 
-```
+```cpp
 template <class T, const CLSID* pclsid = &CLSID_NULL>
 class CComCoClass
 ```
 
 #### Parameters
 
-*T*<br/>
+*T*\
 Your class, derived from `CComCoClass`.
 
-*pclsid*<br/>
+*pclsid*\
 A pointer to the CLSID of the object.
 
 ## Members
 
 ### Public Methods
 
-|Name|Description|
-|----------|-----------------|
-|[CComCoClass::CreateInstance](#createinstance)|(Static) Creates an instance of the class and queries for an interface.|
-|[CComCoClass::Error](#error)|(Static) Returns rich error information to the client.|
-|[CComCoClass::GetObjectCLSID](#getobjectclsid)|(Static) Returns the object's class identifier.|
-|[CComCoClass::GetObjectDescription](#getobjectdescription)|(Static) Override to return the object's description.|
+| Name                                                       | Description                                                             |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [CComCoClass::CreateInstance](#createinstance)             | (Static) Creates an instance of the class and queries for an interface. |
+| [CComCoClass::Error](#error)                               | (Static) Returns rich error information to the client.                  |
+| [CComCoClass::GetObjectCLSID](#getobjectclsid)             | (Static) Returns the object's class identifier.                         |
+| [CComCoClass::GetObjectDescription](#getobjectdescription) | (Static) Override to return the object's description.                   |
 
 ## Remarks
 
@@ -58,23 +57,23 @@ You can override either of these defaults by specifying another macro in your cl
 
 Use these `CreateInstance` functions to create an instance of a COM object and retrieve an interface pointer without using the COM API.
 
-```
-template <class  Q>
-static HRESULT CreateInstance( Q** pp);
+```cpp
+template <class Q>
+static HRESULT CreateInstance(Q** pp);
 
-template <class  Q>
+template <class Q>
 static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
 ```
 
 ### Parameters
 
-*Q*<br/>
+*Q*\
 The COM interface that should be returned via *pp*.
 
-*punkOuter*<br/>
+*punkOuter*\
 [in] The outer unknown or controlling unknown of the aggregate.
 
-*pp*<br/>
+*pp*\
 [out] The address of a pointer variable that receives the requested interface pointer if creation succeeds.
 
 ### Return Value
@@ -101,7 +100,7 @@ In the following example, `CDocument` is a wizard-generated ATL class derived fr
 
 This static function sets up the `IErrorInfo` interface to provide error information to the client.
 
-```
+```cpp
 static HRESULT WINAPI Error(
     LPCOLESTR lpszDesc,
     const IID& iid = GUID_NULL,
@@ -130,7 +129,7 @@ static HRESULT WINAPI Error(
     UINT nID,
     const IID& iid = GUID_NULL,
     HRESULT hRes = 0,
-    HINSTANCE hInst = _AtlBaseModule.GetResourceInstance ());
+    HINSTANCE hInst = _AtlBaseModule.GetResourceInstance());
 
 static HRESULT Error(
     UINT nID,
@@ -143,25 +142,25 @@ static HRESULT Error(
 
 ### Parameters
 
-*lpszDesc*<br/>
+*lpszDesc*\
 [in] The string describing the error. The Unicode version of `Error` specifies that *lpszDesc* is of type LPCOLESTR; the ANSI version specifies a type of LPCSTR.
 
-*iid*<br/>
+*iid*\
 [in] The IID of the interface defining the error or GUID_NULL (the default value) if the error is defined by the operating system.
 
-*hRes*<br/>
+*hRes*\
 [in] The HRESULT you want returned to the caller. The default value is 0. For more details about *hRes*, see Remarks.
 
-*nID*<br/>
+*nID*\
 [in] The resource identifier where the error description string is stored. This value should lie between 0x0200 and 0xFFFF, inclusively. In debug builds, an **ASSERT** will result if *nID* does not index a valid string. In release builds, the error description string will be set to "Unknown Error."
 
-*dwHelpID*<br/>
+*dwHelpID*\
 [in] The help context identifier for the error.
 
-*lpszHelpFile*<br/>
+*lpszHelpFile*\
 [in] The path and name of the help file describing the error.
 
-*hInst*<br/>
+*hInst*\
 [in] The handle to the resource. By default, this parameter is `_AtlModule::GetResourceInstance`, where `_AtlModule` is the global instance of [CAtlModule](../../atl/reference/catlmodule-class.md).
 
 ### Return Value
@@ -178,7 +177,7 @@ If the *hRes* parameter is nonzero, then `Error` returns the value of *hRes*. If
 
 Provides a consistent way of retrieving the object's CLSID.
 
-```
+```cpp
 static const CLSID& WINAPI GetObjectCLSID();
 ```
 
@@ -190,7 +189,7 @@ The object's class identifier.
 
 This static function retrieves the text description for your class object.
 
-```
+```cpp
 static LPCTSTR WINAPI GetObjectDescription();
 ```
 

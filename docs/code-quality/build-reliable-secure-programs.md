@@ -1,8 +1,8 @@
 ---
-description: "Learn more about: Building reliable and secure C++ programs by applying NISTIR 8397 guidelines."
 title: Build reliable and secure C++ programs
-ms.date: 09/28/2023
-ms.topic: "conceptual"
+description: "Learn more about: Building reliable and secure C++ programs by applying NISTIR 8397 guidelines."
+ms.date: 04/25/2025
+ms.topic: "concept-article"
 ---
 
 # Build reliable and secure C++ programs
@@ -182,7 +182,7 @@ Remove the now-invalidated secrets from your source code, and replace them with 
 
 **Azure DevOps (AzDO)**
 
-AzDO users can scan their code through GitHub Advanced Security for Azure DevOps (GHAzDO). GHAzDO also allows users to prevent secret exposures by enabling Push Protection on their repositories, catching potential exposures before they're ever leaked. For more information on how to detect hardcoded secrets in code in Azure DevOps, see *Secret Scanning for Github Advanced Security for Azure DevOps* in each of the following links:
+AzDO users can scan their code through GitHub Advanced Security for Azure DevOps (GHAzDO). GHAzDO also allows users to prevent secret exposures by enabling Push Protection on their repositories, catching potential exposures before they're ever leaked. For more information on how to detect hardcoded secrets in code in Azure DevOps, see *Secret Scanning for GitHub Advanced Security for Azure DevOps* in each of the following links:
 
 - [GitHub advanced security for Azure DevOps](https://azure.microsoft.com/products/devops/github-advanced-security)
 - [Secret Scanning for GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/github-advanced-security-secret-scanning)
@@ -205,11 +205,11 @@ GitHub provides known patterns of secrets for partners and users that can be con
 
 **Additional resources**
 
-- [Credential Scanning | Microsoft Code With Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/credential_scanning/).
-- [detect-secrets: Credential scanning tool | GitHub](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets/) - an aptly named module for detecting secrets within a code base.
-- [Running detect-secrets in Azure Pipelines](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/recipes/detect-secrets-ado/).
+- [Credential Scanning | Microsoft Code With Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/secrets-management/credential_scanning/).
+- [detect-secrets: Credential scanning tool | GitHub](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/secrets-management/recipes/detect-secrets/) - an aptly named module for detecting secrets within a code base.
+- [Running detect-secrets in Azure Pipelines](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/secrets-management/recipes/detect-secrets-ado/).
 - [Git-secrets | GitHub awslabs](https://github.com/awslabs/git-secrets) - prevents you from committing passwords and other sensitive information to a git repository.
-- [Secrets Management | Microsoft Code with Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/continuous-delivery/secrets-management/) - provides general guidelines on how secrets should be managed.
+- [Secrets Management | Microsoft Code with Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/secrets-management/) - provides general guidelines on how secrets should be managed.
 
 ## 2.5 Run with language- and OS-provided checks and protection
 
@@ -281,7 +281,7 @@ Compiler settings should opt into sensitive information discovery prevention. In
 
 At the software level, confidential data might be transmitted to attackers if unexpectedly leaked. Failure to zero-initialize buffers and other buffer misuse might leak private confidential data to attackers that call trusted API. This class of problem best handled by enabling extra static analysis and using secure resource containers as described previously.
 
-- [`/Qspectre` - Mitigate speculative execution side-channel attacks](https://aka.ms/SpectreMitigations) - Inserts barrier instructions that help prevent the disclosure of sensitive data produced by speculative execution. These mitigations should be enabled for code that stores sensitive data in memory and operates across a trust boundary. Microsoft always recommends measuring performance impact against appropriate benchmarks when enabling Spectre-mitigations due to the possibility of introducing runtime checks in performance-critical blocks or loops. These code paths can disable mitigations via the [`spectre(nomitigation)`](../cpp/spectre.md) `declspec` modifier. Projects that enable `/Qspectre`` should also link to libraries that are also compiled with these mitigations, including the Microsoft runtime libraries.
+- [`/Qspectre` - Mitigate speculative execution side-channel attacks](https://aka.ms/SpectreMitigations) - Inserts barrier instructions that help prevent the disclosure of sensitive data produced by speculative execution. These mitigations should be enabled for code that stores sensitive data in memory and operates across a trust boundary. Microsoft always recommends measuring performance impact against appropriate benchmarks when enabling Spectre-mitigations due to the possibility of introducing runtime checks in performance-critical blocks or loops. These code paths can disable mitigations via the [`spectre(nomitigation)`](../cpp/spectre.md) `declspec` modifier. Projects that enable `/Qspectre` should also link to libraries that are also compiled with these mitigations, including the Microsoft runtime libraries.
 
 ## 2.6 Black box test cases
 
@@ -354,7 +354,7 @@ Historical test cases, also known as regression test cases, prevent old issues f
 
 **Key qualities, and relation to other sections**
 
-Since they test for bug regressions, these tests should be quick and easy to run, so they can run alongside the [Code Based Test Cases] and contribute to the overall code coverage of the product. Along with this, using real examples from customers to inspire new test cases is a great way to improve coverage and quality of tests.
+Since they test for bug regressions, these tests should be quick and easy to run, so they can run alongside the [Code Based Test Cases](#27-code-based-test-cases) and contribute to the overall code coverage of the product. Along with this, using real examples from customers to inspire new test cases is a great way to improve coverage and quality of tests.
 
 **Visual Studio**
 
@@ -395,7 +395,7 @@ When using both sanitizers such as [Address Sanitizer (ASan)](../sanitizers/asan
 
 **Azure and GitHub CI/CD**
 
-Modify your build(s) to support continuous creation of executables that use LibFuzzer or AFL++. You can add extra computing resources required for fuzzing at services like  OSS-Fuzz or OneFuzz.
+Modify your build(s) to support continuous creation of executables that use LibFuzzer or AFL++. You can add extra computing resources required for fuzzing at services like  OSS-Fuzz.
 
 ## 2.10 Web Application Scanning
 

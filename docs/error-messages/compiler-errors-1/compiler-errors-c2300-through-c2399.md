@@ -53,7 +53,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C2335|'*identifier*': a type cannot be introduced in a function parameter list|
 |Compiler error C2336|'*type*': illegal type|
 |[Compiler error C2337](compiler-error-c2337.md)|'*attribute*': attribute not found|
-|[Compiler error C2338](compiler-error-c2338.md)|*(error message from external provider)*|
+|[Compiler error C2338](compiler-error-c2338.md)|static_assert failed: '*(error message from external provider)*'|
 |Compiler error C2339|'*identifier*': illegal type in embedded-IDL|
 |Compiler error C2340|'*identifier*': 'static' can only be used within a class definition|
 |[Compiler error C2341](compiler-error-c2341.md)|'*section*': segment must be defined using #pragma data_seg, code_seg or section prior to use|
@@ -67,7 +67,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2349](compiler-error-c2349.md)|'*function*' cannot be compiled as managed: '*explanation*'; use #pragma unmanaged|
 |[Compiler error C2350](compiler-error-c2350.md)|'*identifier*' is not a static member|
 |[Compiler error C2351](compiler-error-c2351.md)|obsolete C++ constructor initialization syntax|
-|[Compiler error C2352](compiler-error-c2352.md)|'*identifier*': illegal call of non-static member function|
+|[Compiler error C2352](compiler-error-c2352.md)|'*identifier*': a call of a non-static member function requires an object|
 |[Compiler error C2353](compiler-error-c2353.md)|exception specification is not allowed|
 |Compiler error C2354|Obsolete.|
 |[Compiler error C2355](compiler-error-c2355.md)|'this': can only be referenced inside non-static member functions or non-static data member initializers|
@@ -96,7 +96,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2378](compiler-error-c2378.md)|'*identifier*': redefinition; symbol cannot be overloaded with a typedef|
 |[Compiler error C2379](compiler-error-c2379.md)|formal parameter *number* has different type when promoted|
 |[Compiler error C2380](compiler-error-c2380.md)|type(s) preceding '*identifier*' (constructor with return type, or illegal redefinition of current class-name?)|
-|[Compiler error C2381](compiler-error-c2381.md)|'*identifier*': redefinition; '__declspec(noreturn)' or '[[noreturn]]' differs|
+|[Compiler error C2381](compiler-error-c2381.md)|'*identifier*': redefinition; '`noreturn`' differs|
 |[Compiler error C2382](compiler-error-c2382.md)|'*identifier*': redefinition; different exception specifications|
 |[Compiler error C2383](compiler-error-c2383.md)|'*identifier*': default-arguments are not allowed on this symbol|
 |[Compiler error C2384](compiler-error-c2384.md)|'*member*': cannot apply thread_local or __declspec(thread) to a member of a managed/WinRT class|
@@ -119,4 +119,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2001 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

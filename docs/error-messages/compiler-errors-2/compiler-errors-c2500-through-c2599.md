@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler errors C2500 Through C2599"
 title: "Compiler errors C2500 Through C2599"
-ms.date: "04/21/2019"
+description: "Learn more about: Compiler errors C2500 Through C2599"
+ms.date: 04/21/2019
 f1_keywords: ["C2501", "C2508", "C2515", "C2519", "C2520", "C2522", "C2525", "C2527", "C2536", "C2538", "C2539", "C2546", "C2547", "C2559", "C2560", "C2564", "C2565", "C2576", "C2578", "C2580", "C2590", "C2591", "C2595", "C2596"]
 helpviewer_keywords: ["C2501", "C2508", "C2515", "C2519", "C2520", "C2522", "C2525", "C2527", "C2536", "C2538", "C2539", "C2546", "C2547", "C2559", "C2560", "C2564", "C2565", "C2576", "C2578", "C2580", "C2590", "C2591", "C2595", "C2596"]
-ms.assetid: a869aaed-e9f6-49e3-b273-00ea7f45bed7
 ---
 # Compiler errors C2500 Through C2599
 
@@ -34,7 +33,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C2515|'*identifier*': 'vtguard' can only be applied to class declarations or definitions|
 |[Compiler error C2516](compiler-error-C2516.md)|'*class*': is not a legal base class|
 |[Compiler error C2517](compiler-error-C2517.md)|'*identifier*': right of '::' is undefined|
-|[Compiler error C2518](compiler-error-C2518.md)|keyword '*keyword*' illegal in base class list; ignored|
+|[Compiler error C2518](compiler-error-C2518.md)|keyword '*keyword*' is invalid in a base class list; expected a `class` name|
 |Compiler error C2519|'*identifier*': WinRT attributes may only contain public fields|
 |Compiler error C2520|'*class*': no non-explicit constructor available for implicit conversion|
 |[Compiler error C2521](compiler-error-C2521.md)|a destructor/finalizer does not take any arguments|
@@ -64,12 +63,13 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2545](compiler-error-C2545.md)|'*operator*': unable to find overloaded operator|
 |Compiler error C2546|'*identifier*': when a type is defined in both a PIA and a no-PIA the PIA must be referenced first|
 |Compiler error C2547|'*identifier*': All parameters of a published method must be explicitly named on the declaration|
-|[Compiler error C2548](compiler-error-C2548.md)|'*function*': missing default parameter for parameter *parameter*|
+|[Compiler error C2548](compiler-error-C2548.md)|'*function*': missing default argument for parameter *parameter*|
 |[Compiler error C2549](compiler-error-C2549.md)|user-defined conversion cannot specify a return type|
 |[Compiler error C2550](compiler-error-C2550.md)|'*identifier*': constructor initializer lists are only allowed on constructor definitions|
 |[Compiler error C2551](compiler-error-C2551.md)|'void *' type needs explicit cast|
 |[Compiler error C2552](compiler-error-C2552.md)|'*identifier*': non-aggregates cannot be initialized with an initializer list|
 |[Compiler error C2553](compiler-error-C2553.md)|'*type* *derived_class*::*function*': overriding virtual function return type differs from '*type* *base_class*::*function*'|
+|Compiler error C2554|'*variable*': 'constinit' only allowed on a variable declaration with static or thread storage duration|
 |[Compiler error C2555](compiler-error-C2555.md)|'*derived_class*::*function*': overriding virtual function return type differs and is not covariant from '*base_class*::*function*'|
 |[Compiler error C2556](compiler-error-C2556.md)|'*type1* *class*::*function*': overloaded function differs only by return type from '*type2* *class*::*function*'|
 |[Compiler error C2557](compiler-error-C2557.md)|'*identifier*': private and protected members cannot be initialized without a constructor|
@@ -89,7 +89,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2571](compiler-error-C2571.md)|'*identifier*': virtual function cannot be in union '*union*'|
 |[Compiler error C2572](compiler-error-C2572.md)|'*function*': redefinition of default argument: parameter *number*|
 |[Compiler error C2573](compiler-error-C2573.md)|'*class*': cannot delete pointers to objects of this type; the class has no non-placement overload for 'operator delete'. Use ::delete, or add 'operator delete(void*)' to the class|
-|[Compiler error C2574](compiler-error-C2574.md)|'*destructor*': cannot be declared static|
+|[Compiler error C2574](compiler-error-C2574.md)|'*function*': cannot be declared static|
 |[Compiler error C2575](compiler-error-C2575.md)|'*identifier*': only member functions and bases can be virtual|
 |Compiler error C2576|'*identifier*': cannot introduce a new virtual method as 'public'. Consider making the method non-virtual, or change the accessibility to 'internal' or 'protected private'|
 |[Compiler error C2577](compiler-error-C2577.md)|'*identifier*': a destructor/finalizer cannot have a return type|
@@ -98,7 +98,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C2580|'*identifier*': multiple versions of a defaulted special member functions are not allowed|
 |[Compiler error C2581](compiler-error-C2581.md)|'*type*': static 'operator =' function is illegal|
 |[Compiler error C2582](compiler-error-C2582.md)|'operator *operator*' function is unavailable in '*type*'|
-|[Compiler error C2583](compiler-error-C2583.md)|'*identifier*': 'const/volatile' 'this' pointer is illegal for constructors/destructors|
+|[Compiler error C2583](compiler-error-C2583.md)|'*identifier*': '*const/volatile*' 'this' pointer is illegal for constructors/destructors|
 |[Compiler error C2584](compiler-error-C2584.md)|'*class*': direct base '*base_class2*' is inaccessible; already a base of '*base_class1*'|
 |[Compiler error C2585](compiler-error-C2585.md)|explicit conversion to '*type*' is ambiguous|
 |[Compiler error C2586](compiler-error-C2586.md)|incorrect user-defined conversion syntax: illegal indirections|

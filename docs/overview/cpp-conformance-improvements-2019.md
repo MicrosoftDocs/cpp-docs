@@ -445,7 +445,7 @@ The unordered container `reserve` function now actually reserves for N elements,
 
 - Added the overloads for container merge and extract member functions that accept rvalue containers. For more information, see [P0083 "Splicing Maps And Sets"](https://wg21.link/p0083r3)
 
-### `std::basic_istream::read` processing of `\r\n`` =>`\n`
+### `std::basic_istream::read` processing of `\r\n` => `\n`
 
 `std::basic_istream::read` was fixed to not write into parts of the supplied buffer temporarily as part of `\r\n` to `\n` processing. This change gives up some of the performance advantage that was gained in Visual Studio 2017 15.8 for reads larger than 4K in size. However, efficiency improvements from avoiding three virtual calls per character are still present.
 
@@ -1249,7 +1249,7 @@ void f() {
 
 Previously, thread-local variables in DLLs weren't correctly initialized. Other than on the thread that loaded the DLL, they weren't initialized before first use on threads that existed before the DLL was loaded. This defect has now been corrected. Thread-local variables in such a DLL get initialized immediately before their first use on such threads.
 
-This new behavior of testing for initialization on uses of thread-local variables may be disabled by using the **`/Zc:tlsGuards-`** compiler option. Or, by adding the `[[msvc:no_tls_guard]]` attribute to particular thread local variables.
+This new behavior of testing for initialization on uses of thread-local variables may be disabled by using the **`/Zc:tlsGuards-`** compiler option. Or, by adding the `[[msvc::no_tls_guard]]` attribute to particular thread local variables.
 
 ### Better diagnosis of call to deleted functions
 
@@ -1934,14 +1934,14 @@ C++20 doesn't support coroutines with a return type that includes a placeholder 
 auto my_generator() {
     ...
     co_yield next;
-};
+}
 
 // /std:c++latest
 #include <experimental/generator>
 std::experimental::generator<int> my_generator() {
     ...
     co_yield next;
-};
+}
 ```
 
 #### Return type of `return_value`

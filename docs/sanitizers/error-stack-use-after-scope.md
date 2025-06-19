@@ -1,6 +1,6 @@
 ---
 title: "Error: stack-use-after-scope"
-description: "Source examples and live debug screenshots for stack use after scope errors."
+description: "Learn about the stack-use-after-scope Address Sanitizer error."
 ms.date: 02/05/2021
 f1_keywords: ["stack-use-after-scope"]
 helpviewer_keywords: ["stack-use-after-scope error", "AddressSanitizer error stack-use-after-scope"]
@@ -80,7 +80,7 @@ devenv /debugexe example2.exe
 struct IntHolder {
     explicit IntHolder(int* val = 0) : val_(val) { }
     ~IntHolder() {
-        printf("Value: %d\n", *val_);  // Bom!
+        printf("Value: %d\n", *val_);  // Boom!
     }
     void set(int* val) { val_ = val; }
     int* get() { return val_; }
@@ -138,7 +138,7 @@ void temp_from_conversion() {
     a.print();
 }
 
-void main() {
+int main() {
     explicit_temp();
     temp_from_conversion(); 
 }

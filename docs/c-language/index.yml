@@ -5,6 +5,7 @@ summary: Learn to use C and the C runtime library.
 metadata:
   title: C docs - get started, tutorials, reference.
   description: C programming reference for users of Microsoft C/C++ and Visual Studio.
+  ms.author: twhitney
   ms.topic: landing-page
   ms.date: 05/28/2020
   ms.custom: intro-landing-hub

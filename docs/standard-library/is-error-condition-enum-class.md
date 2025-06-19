@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: is_error_condition_enum Class"
 title: "is_error_condition_enum Class"
+description: "Learn more about: is_error_condition_enum Class"
 ms.date: "11/04/2016"
 f1_keywords: ["system_error/std::is_error_condition_enum"]
 helpviewer_keywords: ["is_error_condition_enum class"]
-ms.assetid: 752bb87a-c61c-4304-9254-5aaf228b59c0
 ---
 # is_error_condition_enum Class
 
@@ -13,8 +12,8 @@ Represents a type predicate that tests for the [error_condition](../standard-lib
 ## Syntax
 
 ```cpp
-template <_Enum>
-    class is_error_condition_enum;
+template <class _Enum>
+struct is_error_condition_enum;
 ```
 
 ## Remarks

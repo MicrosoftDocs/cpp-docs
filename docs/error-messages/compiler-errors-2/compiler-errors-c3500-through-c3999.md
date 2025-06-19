@@ -1,8 +1,9 @@
 ---
-description: "Learn more about: Compiler errors C3500 through C3999"
 title: "Compiler errors C3500 through C3999"
+description: "Learn more about: Compiler errors C3500 through C3999"
 ms.date: 05/25/2022
-f1_keywords: ["C3502", "C3503", "C3504", "C3511", "C3512", "C3513", "C3514", "C3515", "C3516", "C3517", "C3518", "C3520", "C3521", "C3522", "C3523", "C3524", "C3525", "C3526", "C3527", "C3528", "C3529", "C3534", "C3542", "C3543", "C3544", "C3545", "C3546", "C3547", "C3548", "C3549", "C3557", "C3558", "C3559", "C3560", "C3561", "C3562", "C3563", "C3564", "C3565", "C3566", "C3567", "C3568", "C3569", "C3570", "C3571", "C3572", "C3573", "C3574", "C3575", "C3576", "C3577", "C3578", "C3579", "C3580", "C3581", "C3582", "C3583", "C3584", "C3585", "C3586", "C3587", "C3588", "C3589", "C3590", "C3591", "C3592", "C3593", "C3594", "C3595", "C3596", "C3597", "C3598", "C3599", "C3600", "C3601", "C3602", "C3604", "C3605", "C3606", "C3613", "C3614", "C3616", "C3617", "C3620", "C3621", "C3635", "C3636", "C3639", "C3643", "C3649", "C3658", "C3659", "C3660", "C3663", "C3664", "C3667", "C3674", "C3676", "C3677", "C3678", "C3679", "C3680", "C3681", "C3682", "C3683", "C3684", "C3685", "C3686", "C3687", "C3688", "C3689", "C3690", "C3691", "C3692", "C3693", "C3694", "C3695", "C3696", "C3700", "C3716", "C3720", "C3725", "C3726", "C3729", "C3730", "C3735", "C3742", "C3746", "C3750", "C3751", "C3756", "C3757", "C3758", "C3759", "C3760", "C3770", "C3773", "C3774", "C3775", "C3776", "C3777", "C3778", "C3780", "C3781", "C3782", "C3783", "C3784", "C3785", "C3786", "C3787", "C3788", "C3789", "C3790", "C3791", "C3792", "C3793", "C3794", "C3795", "C3796", "C3801", "C3802", "C3806", "C3810", "C3811", "C3814", "C3819", "C3822", "C3823", "C3826", "C3827", "C3829", "C3837", "C3840", "C3841", "C3843", "C3844", "C3845", "C3847", "C3863", "C3870", "C3871", "C3875", "C3876", "C3877", "C3878", "C3879", "C3881", "C3882", "C3884", "C3885", "C3897", "C3905", "C3906", "C3907", "C3916", "C3921", "C3924", "C3925", "C3926", "C3927", "C3928", "C3930", "C3931", "C3932", "C3933", "C3934", "C3935", "C3936", "C3937", "C3938", "C3939", "C3940", "C3941", "C3945", "C3946", "C3947", "C3948", "C3949", "C3950", "C3951", "C3952", "C3953", "C3954", "C3955", "C3956", "C3957", "C3958", "C3959", "C3960", "C3961", "C3962", "C3963", "C3964", "C3965", "C3966", "C3967", "C3968", "C3969", "C3970", "C3971", "C3972", "C3973", "C3974", "C3975", "C3976", "C3977", "C3978", "C3979", "C3980", "C3981", "C3982", "C3983", "C3984", "C3985", "C3986", "C3987", "C3988", "C3989", "C3990", "C3991", "C3992", "C3993", "C3994", "C3995", "C3996", "C3997", "C3998", "C3999"]
+f1_keywords: ["C3502", "C3503", "C3504", "C3511", "C3512", "C3513", "C3514", "C3515", "C3516", "C3517", "C3518", "C3520", "C3521", "C3522", "C3523", "C3524", "C3525", "C3526", "C3527", "C3528", "C3529", "C3534", "C3542", "C3543", "C3544", "C3545", "C3546", "C3547", "C3548", "C3549", "C3557", "C3558", "C3559", "C3560", "C3561", "C3562", "C3563", "C3564", "C3565", "C3566", "C3567", "C3568", "C3569", "C3570", "C3571", "C3572", "C3573", "C3574", "C3575", "C3576", "C3577", "C3578", "C3579", "C3580", "C3581", "C3582", "C3583", "C3584", "C3585", "C3586", "C3587", "C3588", "C3589", "C3590", "C3591", "C3592", "C3593", "C3594", "C3595", "C3596", "C3597", "C3598", "C3599", "C3600", "C3601", "C3602", "C3604", "C3605", "C3606", "C3613", "C3614", "C3616", "C3617", "C3620", "C3621", "C3629", "C3635", "C3636", "C3639", "C3643", "C3647", "C3649", "C3658", "C3659", "C3660", "C3663", "C3664", "C3667", "C3674", "C3676", "C3677", "C3678", "C3679", "C3680", "C3681", "C3682", "C3683", "C3684", "C3685", "C3686", "C3687", "C3688", "C3689", "C3690", "C3691", "C3692", "C3693", "C3694", "C3695", "C3696", "C3700", "C3716", "C3720", "C3725", "C3726", "C3729", "C3730", "C3735", "C3742", "C3746", "C3750", "C3751", "C3756", "C3757", "C3758", "C3759", "C3760", "C3770", "C3773", "C3774", "C3775", "C3776", "C3777", "C3778", "C3780", "C3781", "C3782", "C3783", "C3784", "C3785", "C3786", "C3787", "C3788", "C3789", "C3790", "C3791", "C3792", "C3793", "C3794", "C3795", "C3796", "C3801", "C3802", "C3806", "C3810", "C3811", "C3814", "C3819", "C3822", "C3823", "C3826", "C3827", "C3829", "C3835", "C3837", "C3840", "C3841", "C3843", "C3844", "C3845", "C3847", "C3863", "C3864", "C3870", "C3871", "C3875", "C3876", "C3877", "C3878", "C3879", "C3881", "C3882", "C3884", "C3885", "C3897", "C3905", "C3906", "C3907", "C3916", "C3921", "C3924", "C3925", "C3926", "C3927", "C3928", "C3930", "C3931", "C3932", "C3933", "C3934", "C3935", "C3936", "C3937", "C3938", "C3939", "C3940", "C3941", "C3945", "C3946", "C3947", "C3948", "C3949", "C3950", "C3951", "C3952", "C3953", "C3954", "C3955", "C3956", "C3957", "C3958", "C3959", "C3960", "C3961", "C3962", "C3963", "C3964", "C3965", "C3966", "C3967", "C3968", "C3969", "C3970", "C3971", "C3972", "C3973", "C3974", "C3975", "C3976", "C3977", "C3978", "C3979", "C3980", "C3981", "C3982", "C3983", "C3984", "C3985", "C3986", "C3987", "C3988", "C3989", "C3990", "C3991", "C3992", "C3993", "C3994", "C3995", "C3996", "C3997", "C3998"]
+helpviewer_keywords: ["C3502", "C3503", "C3504", "C3511", "C3512", "C3513", "C3514", "C3515", "C3516", "C3517", "C3518", "C3520", "C3521", "C3522", "C3523", "C3524", "C3525", "C3526", "C3527", "C3528", "C3529", "C3534", "C3542", "C3543", "C3544", "C3545", "C3546", "C3547", "C3548", "C3549", "C3557", "C3558", "C3559", "C3560", "C3561", "C3562", "C3563", "C3564", "C3565", "C3566", "C3567", "C3568", "C3569", "C3570", "C3571", "C3572", "C3573", "C3574", "C3575", "C3576", "C3577", "C3578", "C3579", "C3580", "C3581", "C3582", "C3583", "C3584", "C3585", "C3586", "C3587", "C3588", "C3589", "C3590", "C3591", "C3592", "C3593", "C3594", "C3595", "C3596", "C3597", "C3598", "C3599", "C3600", "C3601", "C3602", "C3604", "C3605", "C3606", "C3613", "C3614", "C3616", "C3617", "C3620", "C3621", "C3629", "C3635", "C3636", "C3639", "C3643", "C3647", "C3649", "C3658", "C3659", "C3660", "C3663", "C3664", "C3667", "C3674", "C3676", "C3677", "C3678", "C3679", "C3680", "C3681", "C3682", "C3683", "C3684", "C3685", "C3686", "C3687", "C3688", "C3689", "C3690", "C3691", "C3692", "C3693", "C3694", "C3695", "C3696", "C3700", "C3716", "C3720", "C3725", "C3726", "C3729", "C3730", "C3735", "C3742", "C3746", "C3750", "C3751", "C3756", "C3757", "C3758", "C3759", "C3760", "C3770", "C3773", "C3774", "C3775", "C3776", "C3777", "C3778", "C3780", "C3781", "C3782", "C3783", "C3784", "C3785", "C3786", "C3787", "C3788", "C3789", "C3790", "C3791", "C3792", "C3793", "C3794", "C3795", "C3796", "C3801", "C3802", "C3806", "C3810", "C3811", "C3814", "C3819", "C3822", "C3823", "C3826", "C3827", "C3829", "C3835", "C3837", "C3840", "C3841", "C3843", "C3844", "C3845", "C3847", "C3863", "C3864", "C3870", "C3871", "C3875", "C3876", "C3877", "C3878", "C3879", "C3881", "C3882", "C3884", "C3885", "C3897", "C3905", "C3906", "C3907", "C3916", "C3921", "C3924", "C3925", "C3926", "C3927", "C3928", "C3930", "C3931", "C3932", "C3933", "C3934", "C3935", "C3936", "C3937", "C3938", "C3939", "C3940", "C3941", "C3945", "C3946", "C3947", "C3948", "C3949", "C3950", "C3951", "C3952", "C3953", "C3954", "C3955", "C3956", "C3957", "C3958", "C3959", "C3960", "C3961", "C3962", "C3963", "C3964", "C3965", "C3966", "C3967", "C3968", "C3969", "C3970", "C3971", "C3972", "C3973", "C3974", "C3975", "C3976", "C3977", "C3978", "C3979", "C3980", "C3981", "C3982", "C3983", "C3984", "C3985", "C3986", "C3987", "C3988", "C3989", "C3990", "C3991", "C3992", "C3993", "C3994", "C3995", "C3996", "C3997", "C3998"]
 ---
 # Compiler errors C3500 through C3999
 
@@ -104,7 +105,7 @@ The articles in this section explain a subset of the error messages generated by
 |Compiler error C3587|dynamic_cast is unsupported in amp restricted code|
 |Compiler error C3588|casting from '*type1*' to '*type2*' is unsupported in amp restricted code|
 |Compiler error C3589|'*string*': unsupported usage of string literals in amp restricted code|
-|Compiler error C3590|'*token*': by-reference capture or 'this' capture is unsupported if the lambda is amp restricted|
+|Compiler error C3590|capture of '*value*' is unsupported if the lambda is amp restricted|
 |Compiler error C3591|typeid operator is unsupported in amp restricted code|
 |Compiler error C3592|Inline native assembly ('__asm') is unsupported in amp restricted code|
 |Compiler error C3593|'goto' is unsupported in amp restricted code|
@@ -262,7 +263,7 @@ The articles in this section explain a subset of the error messages generated by
 |[Compiler error C3747](compiler-error-c3747.md)|missing default template/generic parameter: parameter *number*|
 |[Compiler error C3748](compiler-error-c3748.md)|'*interface*': unmanaged interfaces may not fire events|
 |[Compiler error C3749](compiler-error-c3749.md)|'*attribute*': a custom attribute may not be used inside a function|
-|Compiler error C3750|'*token*': unexpected token in attribute list|
+|Compiler error C3750|'*token*': unexpected token in attribute specifier|
 |Compiler error C3751|'*identifier*': unexpected identifier in attribute list|
 |[Compiler error C3752](compiler-error-c3752.md)|'*attribute*': cannot classify attribute; '*keyword*' should not be used in this context|
 |[Compiler error C3753](compiler-error-c3753.md)|a generic property is not allowed|
@@ -285,7 +286,7 @@ The articles in this section explain a subset of the error messages generated by
 |Compiler error C3770|'*type*': is not a valid base class|
 |[Compiler error C3771](compiler-error-c3771.md)|'*identifier*': friend declaration cannot be found in the nearest namespace scope|
 |[Compiler error C3772](compiler-error-c3772.md)|'*identifier*': invalid friend template declaration|
-|Compiler error C3773|please use /await compiler switch to enable coroutines|
+|Compiler error C3773|Use of '*feature*' in this context is a non-conforming extension in `C++`*version*|
 |Compiler error C3774|cannot find '*scope*::*identifier*': Please include *header_name* header|
 |Compiler error C3775|return type of '*function*' should not be '*type*'|
 |Compiler error C3776|cannot return an expression of type void in a coroutine with non-void eventual return type|
@@ -296,7 +297,7 @@ The articles in this section explain a subset of the error messages generated by
 |Compiler error C3781|'*keyword*': cannot be a used in a coroutine of type '*type*'. Either *keyword* or *keyword* must be present in associated promise_type|
 |Compiler error C3782|*type*: a coroutine's promise cannot contain both *keyword* and *keyword*|
 |Compiler error C3783|'*identifier*': cannot be a coroutine|
-|Compiler error C3784|*keyword* expression cannot appear in this context|
+|Compiler error C3784|*keyword* cannot appear in this context|
 |Compiler error C3785|the first template argument to 'std::integer_sequence' must be an integer type|
 |Compiler error C3786|the second template argument to 'std::make_integer_sequence' must be an integer constant greater than or equal to zero|
 |Compiler error C3787|cannot deduce the return type of this coroutine|
@@ -341,7 +342,7 @@ The articles in this section explain a subset of the error messages generated by
 |Compiler error C3826|Obsolete.|
 |Compiler error C3827|standard attribute 'deprecated' may have either no arguments or one string literal describing the reason|
 |[Compiler error C3828](compiler-error-c3828.md)|placement arguments cannot be specified for a '*keyword*' expression for type '*type*'|
-|Compiler error C3829|standard attribute 'noreturn' may only be applied to functions|
+|Compiler error C3829|attribute `[[`*attribute name*`]]` may only be applied to a function declaration|
 |[Compiler error C3830](compiler-error-c3830.md)|'*type1*': cannot inherit from '*type2*', value types can only inherit from interface classes|
 |[Compiler error C3831](compiler-error-c3831.md)|'*identifier*': '*type*' cannot have a pinned data member or a member function returning a pinning pointer|
 |[Compiler error C3832](compiler-error-c3832.md)|'*typelib*': type library looks as if it was built for 32-bit pointers; please change the 'ptrsize' qualifier|
@@ -376,7 +377,7 @@ The articles in this section explain a subset of the error messages generated by
 |[Compiler error C3861](compiler-error-c3861.md)|'*identifier*': identifier not found|
 |[Compiler error C3862](compiler-error-c3862.md)|'*function*': cannot compile an unmanaged function with `/clr:pure` or `/clr:safe`|
 |Compiler error C3863|array type '*type*' is not assignable|
-|Compiler error C3864|Obsolete.|
+|Compiler error C3864|'*context*': requires clause is incompatible with the declaration|
 |[Compiler error C3865](compiler-error-c3865.md)|'*keyword*': can only be used on native member functions|
 |[Compiler error C3866](compiler-error-c3866.md)|destructor/finalizer call missing argument list|
 |[Compiler error C3867](compiler-error-c3867.md)|'*function*': non-standard syntax; use '&' to create a pointer to member|
@@ -390,17 +391,18 @@ The articles in this section explain a subset of the error messages generated by
 |Compiler error C3875|call of non-static member function missing argument list|
 | Compiler error C3876 | hexadecimal floating literal requires an exponent |
 | Compiler error C3877 | invalid type argument to the TypeForwardedTo attribute |
-| Compiler error C3878 | syntax error: unexpected token '%1$L' following '%2s' |
+| Compiler error C3878 | syntax error: unexpected token '*name*' following '*context*' |
 |Compiler error C3879|'*member*': cannot be an initonly data member|
 |[Compiler error C3880](compiler-error-c3880.md)|'*member*': cannot be a literal data member|
 |Compiler error C3881|can only inherit constructor from direct base|
 |Compiler error C3882|'*class*': constructor has already been inherited from '*class*'|
-|Compiler error C3883|'*member*': an initonly static data member must be initialized|
+|[Compiler error C3883](compiler-error-c3883.md)|'*member*': an initonly static data member must be initialized|
 |Compiler error C3884|'*type*': An array of unknown size cannot be value-initialized|
 |Compiler error C3885|'*type*': An array of unknown size cannot be initialized with an empty initializer list|
 |[Compiler error C3886](compiler-error-c3886.md)|'*member*': a literal data member must be initialized|
 |[Compiler error C3887](compiler-error-c3887.md)|'*member*': the initializer for a literal data member must be a constant expression|
 |[Compiler error C3888](compiler-error-c3888.md)|'*member*': the const expression associated with this literal data member is not supported by C++/CLI|
+|Compiler error C3889|call to object of class type '*type*': no matching call operator found|
 |[Compiler error C3890](compiler-error-c3890.md)|'*member*': you cannot take the address of a literal data member|
 |[Compiler error C3891](compiler-error-c3891.md)|'*member*': a literal data member cannot be used as a l-value|
 |[Compiler error C3892](compiler-error-c3892.md)|'*variable*': you cannot assign to a variable that is const|
@@ -433,12 +435,14 @@ The articles in this section explain a subset of the error messages generated by
 |[Compiler error C3919](compiler-error-c3919.md)|'*function*': function must have type '*return_type* (*type*)'|
 |[Compiler error C3920](compiler-error-c3920.md)|'*operator*': cannot define a postfix increment/decrement CLR/WinRT operator Calling the postfix CLR/WinRT operator will call the corresponding prefix CLR/WinRT operator (op_Increment/op_Decrement), but with postfix semantics|
 |Compiler error C3921|Obsolete.|
+|Compiler error C3922|'*name*': argument must be a constant expression|
 |[Compiler error C3923](compiler-error-c3923.md)|'*member*': local class, struct or union definitions are not allowed in a member function of a managed/WinRT class|
 |Compiler error C3924|error in argument #*number* of delegate constructor call '*constructor*':|
 |Compiler error C3925|expected a loop (`for`, `while`, or `do`) following '*directive_name*' directive|
 |Compiler error C3926|invalid constant in 'parallel' directive|
 |Compiler error C3927|'->': trailing return type is not allowed after a non-function declarator|
 |Compiler error C3928|'->': trailing return type is not allowed after a parenthesized declarator|
+|Compiler error C3929|'`collapse(`*count*`)`' specified but found only *value* loops following '`#pragma omp for`'|
 |Compiler error C3930|'*function*': no overloaded function has restriction specifiers that are compatible with the ambient context '*context*'|
 |Compiler error C3931|'*type*': cannot call a function that has restriction specifiers that are incompatible with the ambient context|
 |Compiler error C3932|Obsolete.|
@@ -451,6 +455,9 @@ The articles in this section explain a subset of the error messages generated by
 |Compiler error C3939|'*identifier*': pointer to member functions, function pointers, references to functions with 'amp' restriction specifier are not allowed|
 |Compiler error C3940|'*identifier*': identifier not found - possible mismatch between compiler and library versions. Please ensure vccorlib.h/.lib, vccorlib120.dll and c1xx.dll match|
 |Compiler error C3941|'*condition*': requires '/clr' command line option|
+|Compiler error C3942|'`#pragma omp atomic capture`': expression on right of '`=`' must be an lvalue-expression of scalar type|
+|Compiler error C3943|'`#pragma omp atomic`': operator '*operator*' is overloaded; only built-in operators are allowed|
+|Compiler error C3944|'`#pragma omp atomic`': lvalue expression required as left operand of '*operator*'|
 |Compiler error C3945|'*type*': unable to throw or catch a winrt object which doesn't derive from Platform::Exception|
 |Compiler error C3946|'*type*': typeid cannot be applied to this type|
 |Compiler error C3947|'*typeid*': typeid cannot be applied to a pack expansion|
@@ -505,9 +512,8 @@ The articles in this section explain a subset of the error messages generated by
 |Compiler error C3996|Obsolete.|
 | Compiler error C3997 | Warbird: *message* |
 |Compiler error C3998|'c++*version*': unsupported C++ version; defaulting to 'c++*version*'|
-|Compiler error C3999|UNKNOWN ERROR *message* Please choose the Technical Support command on the Visual C++  Help menu, or open the Technical Support help file for more information|
 
 ## See also
 
-[C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
+[C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md)\
 [Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

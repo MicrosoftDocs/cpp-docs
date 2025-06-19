@@ -31,7 +31,7 @@ Connect to Azure SQL Database from C or C++ applications.
 [Azure Storage](/azure/storage/common/storage-introduction) is a cloud storage solution for modern applications that rely on durability, availability, and scalability to meet the needs of their customers. Connect to Azure Storage from C++ by using the Azure Storage Client Library for C++.
 
 [ODBC Driver for SQL Server](/sql/connect/odbc/microsoft-odbc-driver-for-sql-server)<br/>
-The latest ODBC driver provides robust data access to Microsoft SQL Server and Microsoft Azure SQL Database for C/C++ based applications. Provides support for features including always encrypted, Azure Active Directory, and AlwaysOn Availability Groups. Also available for MacOS and Linux.
+The latest ODBC driver provides robust data access to Microsoft SQL Server and Microsoft Azure SQL Database for C/C++ based applications. Provides support for features including always encrypted, Azure Active Directory, and AlwaysOn Availability Groups. Also available for macOS and Linux.
 
 [OLE DB Driver for SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server)<br/>
 The latest OLE DB driver is a stand-alone data access application programming interface (API) that supports Microsoft SQL Server and Microsoft Azure SQL Database.

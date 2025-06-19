@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_msize_dbg", "msize_dbg"]
 helpviewer_keywords: ["memory blocks", "_msize_dbg function", "msize_dbg function"]
-ms.assetid: a333f4b6-f8a2-4e61-bb69-cb34063b8cef
 ---
 # `_msize_dbg`
 
@@ -41,13 +40,13 @@ On successful completion, **`_msize_dbg`** returns the size (in bytes) of the sp
 
 For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md). For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap). For information about the differences between standard heap functions and the debug versions, see [Debug versions of heap allocation functions](../debug-versions-of-heap-allocation-functions.md).
 
-This function validates its parameter. If *`memblock`* is a null pointer, **`_msize_dbg`** invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If the error is handled, the function sets `errno` to `EINVAL` and returns -1.
+This function validates its parameter. If *`memblock`* is a null pointer, **`_msize_dbg`** invokes an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If the error is handled, the function sets `errno` to `EINVAL` and returns -1 (18,446,744,073,709,551,615 unsigned).
 
 ## Requirements
 
 | Routine | Required header |
 |---|---|
-| **`_msize_dbg`** | \<crtdbg.h> |
+| **`_msize_dbg`** | `<crtdbg.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

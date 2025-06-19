@@ -61,7 +61,7 @@ The type that represents the stored allocator object that encapsulates details a
 |[`append`](#append)|Adds characters to the end of a string.|
 |[`assign`](#assign)|Assigns new character values to the contents of a string.|
 |[`at`](#at)|Returns a reference to the element at a specified location in the string.|
-|[`back`](#back)||
+|[`back`](#back)|Returns a reference to the last element in the string.|
 |[`begin`](#begin)|Returns an iterator addressing the first element in the string.|
 |[`c_str`](#c_str)|Converts the contents of a string as a C-style, null-terminated, string.|
 |[`capacity`](#capacity)|Returns the largest number of elements that could be stored in a string without increasing the memory allocation of the string.|
@@ -284,7 +284,7 @@ int main( )
    cout << "The appended string str1d is: "
         << str1d << "." << endl;
    str1d += str3d;
-   cout << "The doubly appended strig str1 is: "
+   cout << "The doubly appended string str1 is: "
         << str1d << "." << endl << endl;
 
    // The fifth member function
@@ -318,7 +318,7 @@ The appended string str1 is: Hello World.
 
 The  string str2d is: Wide
 The appended string str1d is: Hello Wide .
-The doubly appended strig str1 is: Hello Wide World .
+The doubly appended string str1 is: Hello Wide World .
 
 The string str1 appended with exclamations is: Hello !!!!
 
@@ -2960,11 +2960,9 @@ basic_string<CharType, Traits, Allocator>& insert(
     value_type char_value);
 
 iterator insert(
-    iterator iter);
-
-iterator insert(
     iterator iter,
-    value_type char_value)l
+    value_type char_value);
+
 template <class InputIterator>
 void insert(
     iterator iter,
@@ -3352,7 +3350,7 @@ int main( )
    cout << "The appended string str1d is: "
         << str1d << "." << endl;
    str1d += str3d;
-   cout << "The doubly appended strig str1 is: "
+   cout << "The doubly appended string str1 is: "
         << str1d << "." << endl << endl;
 }
 ```
@@ -3366,7 +3364,7 @@ Appending the C-string cstr1b to string str1 gives: Hello Out There.
 
 The string str2d is: Wide
 The appended string str1d is: Hello Wide .
-The doubly appended strig str1 is: Hello Wide World.
+The doubly appended string str1 is: Hello Wide World.
 ```
 
 ## <a name="op_eq"></a> `basic_string::operator=`
@@ -4203,7 +4201,7 @@ Specifies a new size for a string, appending or erasing elements as required.
 
 ```cpp
 void resize(
-    size_type count,);
+    size_type count);
 
 void resize(
     size_type count,

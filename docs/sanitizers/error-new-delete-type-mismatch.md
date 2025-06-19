@@ -1,6 +1,6 @@
 ---
 title: "Error: new-delete-type-mismatch"
-description: "Source examples and live debug screenshots for new delete type mismatch errors."
+description: "Learn about the new-delete-type-mismatch Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["new-delete-type-mismatch"]
 helpviewer_keywords: ["new-delete-type-mismatch error", "AddressSanitizer error new-delete-type-mismatch"]

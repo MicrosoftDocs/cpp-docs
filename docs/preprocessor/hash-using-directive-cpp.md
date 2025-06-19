@@ -84,7 +84,7 @@ public:
 };
 ```
 
-In the following sample, there's the compiler doesn't report an error about referencing *using_assembly_A.dll*, because the program doesn't use any of the types defined in *using_assembly_A.cpp*.
+In the following sample, the compiler doesn't report an error about referencing *using_assembly_A.dll*, because the program doesn't use any of the types defined in *using_assembly_A.cpp*.
 
 ```cpp
 // using_assembly_C.cpp

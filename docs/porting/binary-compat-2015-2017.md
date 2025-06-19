@@ -39,4 +39,6 @@ This error is by design. We recommend you keep the newest version installed. Mak
 ## See also
 
 [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)\
-[The latest supported Visual C++ Redistributable downloads](../windows/latest-supported-vc-redist.md)
+[The latest supported Visual C++ Redistributable downloads](../windows/latest-supported-vc-redist.md)\
+[How to audit Visual C++ Runtime version usage](../windows/redist-version-auditing.md)\
+[Lifecycle FAQ - Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)

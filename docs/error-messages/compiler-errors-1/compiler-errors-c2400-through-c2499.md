@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler errors C2400 Through C2499"
 title: "Compiler errors C2400 Through C2499"
+description: "Learn more about: Compiler errors C2400 Through C2499"
 ms.date: "04/21/2019"
 f1_keywords: ["C2416", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
 helpviewer_keywords: ["C2416", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
-ms.assetid: f1f05572-af0b-497b-bde4-4c81ec01af3b
 ---
 # Compiler errors C2400 Through C2499
 
@@ -51,7 +50,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2432](compiler-error-c2432.md)|illegal reference to 16-bit data in '*context*'|
 |[Compiler error C2433](compiler-error-c2433.md)|'*identifier*': '*modifier*' not permitted on data declarations|
 |[Compiler error C2434](compiler-error-c2434.md)|'*symbol*': a symbol declared with `__declspec(process)` cannot be dynamically initialized in `/clr:pure` mode|
-|[Compiler error C2435](compiler-error-c2435.md)|'var': dynamic initialization requires managed CRT, cannot compile with `/clr:safe`|
+|[Compiler error C2435](compiler-error-c2435.md)|'*var*': dynamic initialization requires managed CRT, cannot compile with `/clr:safe`|
 |[Compiler error C2436](compiler-error-c2436.md)|'*identifier*': member function or nested class in constructor initializer list|
 |[Compiler error C2437](compiler-error-c2437.md)|'*identifier*': has already been initialized|
 |[Compiler error C2438](compiler-error-c2438.md)|'*identifier*': cannot initialize static class data via constructor|
@@ -61,11 +60,12 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C2442|'*identifier*': nested-namespace-definition cannot be inline or have attributes|
 |[Compiler error C2443](compiler-error-c2443.md)|operand size conflict|
 |[Compiler error C2444](compiler-error-c2444.md)|'*identifier*': used ANSI prototype, found 'type', expected '{' or ';'|
+|Compiler error C2445|result type of conditional expression is ambiguous: types '*type 1*' and '*type 2*' can be converted to multiple common types|
 |[Compiler error C2446](compiler-error-c2446.md)|'*operator*': no conversion from '*type_1*' to '*type_2*'|
 |[Compiler error C2447](compiler-error-c2447.md)|'{': missing function header (old-style formal list?)|
 |[Compiler error C2448](compiler-error-c2448.md)|'*identifier*': function-style initializer appears to be a function definition|
 |[Compiler error C2449](compiler-error-c2449.md)|found '{' at file scope (missing function header?)|
-|[Compiler error C2450](compiler-error-c2450.md)|switch expression of type '*type*' is illegal|
+|[Compiler error C2450](compiler-error-c2450.md)|a `switch` expression of type '*type*' is illegal|
 |[Compiler error C2451](compiler-error-c2451.md)|conditional expression of type '*type*' is illegal|
 |[Compiler error C2452](compiler-error-c2452.md)|'*type*': invalid source type for `safe_cast`|
 |Compiler error C2453|'*type*': invalid target type for safe_cast|
@@ -116,4 +116,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2001 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

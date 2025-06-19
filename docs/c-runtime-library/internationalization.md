@@ -2,7 +2,7 @@
 title: "Internationalization"
 ms.date: "09/29/2020"
 description: "A description of Microsoft runtime library support for writing apps for international markets."
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 helpviewer_keywords: ["localization, routines for", "locale-dependent routines", "internationalization routines", "international applications, run-time routines for"]
 ms.assetid: ee536a04-3558-4729-8e10-6dabcde055fd
 ---

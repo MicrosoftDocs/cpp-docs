@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CDialog Class"
 title: "CDialog Class"
-ms.date: "09/07/2019"
+description: "Learn more about: CDialog Class"
+ms.date: 09/07/2019
 f1_keywords: ["CDialog", "AFXWIN/CDialog", "AFXWIN/CDialog::CDialog", "AFXWIN/CDialog::Create", "AFXWIN/CDialog::CreateIndirect", "AFXWIN/CDialog::DoModal", "AFXWIN/CDialog::EndDialog", "AFXWIN/CDialog::GetDefID", "AFXWIN/CDialog::GotoDlgCtrl", "AFXWIN/CDialog::InitModalIndirect", "AFXWIN/CDialog::MapDialogRect", "AFXWIN/CDialog::NextDlgCtrl", "AFXWIN/CDialog::OnInitDialog", "AFXWIN/CDialog::OnSetFont", "AFXWIN/CDialog::PrevDlgCtrl", "AFXWIN/CDialog::SetDefID", "AFXWIN/CDialog::SetHelpID", "AFXWIN/CDialog::OnCancel", "AFXWIN/CDialog::OnOK"]
 helpviewer_keywords: ["CDialog [MFC], CDialog", "CDialog [MFC], Create", "CDialog [MFC], CreateIndirect", "CDialog [MFC], DoModal", "CDialog [MFC], EndDialog", "CDialog [MFC], GetDefID", "CDialog [MFC], GotoDlgCtrl", "CDialog [MFC], InitModalIndirect", "CDialog [MFC], MapDialogRect", "CDialog [MFC], NextDlgCtrl", "CDialog [MFC], OnInitDialog", "CDialog [MFC], OnSetFont", "CDialog [MFC], PrevDlgCtrl", "CDialog [MFC], SetDefID", "CDialog [MFC], SetHelpID", "CDialog [MFC], OnCancel", "CDialog [MFC], OnOK"]
-ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
 ---
 # CDialog Class
 
@@ -287,7 +286,7 @@ DWORD GetDefID() const;
 
 ### Return Value
 
-A 32-bit value ( `DWORD`). If the default pushbutton has an ID value, the high-order word contains DC_HASDEFID and the low-order word contains the ID value. If the default pushbutton does not have an ID value, the return value is 0.
+A 32-bit value (`DWORD`). If the default pushbutton has an ID value, the high-order word contains DC_HASDEFID and the low-order word contains the ID value. If the default pushbutton does not have an ID value, the return value is 0.
 
 ### Remarks
 

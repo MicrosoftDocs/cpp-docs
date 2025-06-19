@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: NMAKE makefile contents and features"
 title: "NMAKE makefile contents and features"
+description: "Learn more about: NMAKE makefile contents and features"
 ms.date: 09/30/2021
 helpviewer_keywords: ["makefiles", "makefiles, contents", "NMAKE program, special characters", "makefiles, special characters", "special characters, in NMAKE macros", "macros, special characters", "NMAKE program, long filenames", "makefiles, comments", "NMAKE program, wildcards", "wildcards, expanding"]
 ---
@@ -24,11 +24,11 @@ For a sample, see [Sample makefile](sample-makefile.md).
 
 NMAKE supports other features, such as wildcards, long filenames, comments, and escapes for special characters.
 
-## <a name="wildcards-and-nmake"> Wildcards and NMAKE
+## <a name="wildcards-and-nmake"></a> Wildcards and NMAKE
 
 NMAKE expands filename wildcards (**`*`** and **`?`**) in dependency lines. A wildcard specified in a command is passed to the command; NMAKE doesn't expand it.
 
-## <a name="long-filenames-in-a-makefile"> Long filenames in a makefile
+## <a name="long-filenames-in-a-makefile"></a> Long filenames in a makefile
 
 Enclose long filenames in double quotation marks, as follows:
 
@@ -36,7 +36,7 @@ Enclose long filenames in double quotation marks, as follows:
 all : "VeryLongFileName.exe"
 ```
 
-## <a name="comments-in-a-makefile"> Comments in a makefile
+## <a name="comments-in-a-makefile"></a> Comments in a makefile
 
 Precede a comment with a number sign (**`#`**). NMAKE ignores text from the number sign to the next newline character.
 
@@ -66,7 +66,7 @@ To specify a literal number sign, precede it with a caret (**`^`**), as follows:
 DEF = ^#define  #Macro for a C preprocessing directive
 ```
 
-## <a name="special-characters-in-a-makefile"> Special characters in a makefile
+## <a name="special-characters-in-a-makefile"></a> Special characters in a makefile
 
 To use an NMAKE special character as a literal character, place a caret (**`^`**) in front of it as an escape. NMAKE ignores carets that precede other characters. The special characters are:
 

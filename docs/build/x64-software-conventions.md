@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: x64 ABI conventions"
 title: "x64 ABI conventions"
-ms.date: 04/21/2022
+ms.date: 03/28/2025
 helpviewer_keywords: ["x64 coding conventions", "x64 abi", "Visual C++, x64 calling conventions"]
 ---
 # Overview of x64 ABI conventions
@@ -11,12 +11,15 @@ This topic describes the basic application binary interface (ABI) for x64, the 6
 ## x64 calling conventions
 
 Two important differences between x86 and x64 are:
+
 - 64-bit addressing capability
 - Sixteen 64-bit registers for general use.
 
-Given the expanded register set, x64 uses the [__fastcall](../cpp/fastcall.md) calling convention and a RISC-based exception-handling model.
+Given the expanded register set, x64 uses the [`__fastcall`](../cpp/fastcall.md) calling convention and a RISC-based exception-handling model.
 
 The **`__fastcall`** convention uses registers for the first four arguments, and the stack frame to pass more arguments. For details on the x64 calling convention, including register usage, stack parameters, return values, and stack unwinding, see [x64 calling convention](x64-calling-convention.md).
+
+For more information on the `__vectorcall` calling convention, see [`__vectorcall`](../cpp/vectorcall.md).
 
 ## Enable x64 compiler optimization
 
@@ -114,7 +117,7 @@ _declspec(align(2)) struct {
 }
 ```
 
-![Diagram showing the example 1 structure layout.](../build/media/vcamd_conv_ex_1_block.png "AMD conversion example 1 structure layout")
+:::image type="content" source="../build/media/vcamd_conv_ex_1_block.png" alt-text="Diagram showing the structure layout for example 1. The diagram shows 2 bytes of memory. Member a, a short, occupies bytes 0 through 1.":::
 
 #### Example 2
 
@@ -128,7 +131,9 @@ _declspec(align(8)) struct {
 }
 ```
 
-![Diagram showing the example 2 structure layout.](../build/media/vcamd_conv_ex_2_block.png "AMD conversion example 2 structure layout")
+:::image type="complex" source="../build/media/vcamd_conv_ex_2_block.png" alt-text="Diagram showing the structure layout for example 2.":::
+The diagram shows 24 bytes of memory. Member a, an int, occupies bytes 0 through 3. The diagram shows padding for bytes 4 through 7. Member b, a double, occupies bytes 8 through 15. Member c, a short, occupies bytes 16 through 17. Bytes 18 through 23 are unused.
+:::image-end:::
 
 #### Example 3
 
@@ -143,7 +148,9 @@ _declspec(align(4)) struct {
 }
 ```
 
-![Diagram showing the example 3 structure layout.](../build/media/vcamd_conv_ex_3_block.png "AMD conversion example 3 structure layout")
+:::image type="complex" source="../build/media/vcamd_conv_ex_3_block.png" alt-text="Diagram showing the structure layout for example 3.":::
+The diagram shows 12 bytes of memory. Member a, a char, occupies byte 0. Byte 1 is padding. Member b, a short, occupies bytes 2 through 4. Member c, a char, occupies byte 4. Bytes 5 through 7 are padding. Member d, an int, occupies bytes 8 through 11.
+:::image-end:::
 
 #### Example 4
 
@@ -157,7 +164,9 @@ _declspec(align(8)) union {
 }
 ```
 
-![Diagram showing the example 4 union layout.](../build/media/vcamd_conv_ex_4_block.png "AMD conversion example 4 union layout")
+:::image type="complex" source="../build/media/vcamd_conv_ex_4_block.png" alt-text="Diagram showing the union layout for example 4.":::
+The diagram shows 8 bytes of memory. Member p, a char, occupies byte 0. Member s, a short, occupies bytes 0 through 1. Member l, a long, occupies bytes 0 through 3. Bytes 4 through 7 are padding.
+:::image-end:::
 
 ### Bitfields
 
@@ -209,7 +218,7 @@ On function exit and on function entry to C Runtime Library calls and Windows sy
 
 ## Stack usage
 
-For details on stack allocation, alignment, function types and stack frames on x64, see [x64 stack usage](stack-usage.md).
+For details on stack allocation, alignment, function types, and stack frames on x64, see [x64 stack usage](stack-usage.md).
 
 ## Prolog and epilog
 

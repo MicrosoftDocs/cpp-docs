@@ -56,7 +56,7 @@ int main()
 
 The issue is that `myProgram.cpp` uses `std::string` and `std::cout`, but doesn't directly include the headers that define them. This code happens to compile because `myHeader.h` includes those headers. This code is brittle because if `myHeader.h` ever stopped including either one, `myProgram.cpp` wouldn't compile anymore.
 
-Per the C++ guidelines, it's better to explicitly include headers for all of your dependencies so that your code isn't subject to brittleness caused by changes to header files. For more information, see [C++ Core Guidelines SF.10](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#sf10-avoid-dependencies-on-implicitly-included-names).
+Per the C++ guidelines, it's better to explicitly include headers for all of your dependencies so that your code isn't subject to brittleness caused by changes to header files. For more information, see [SF.10: Avoid dependencies on implicitly `#include`d names](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#sf10-avoid-dependencies-on-implicitly-included-names) in the C++ Core Guidelines.
 
 Include Cleanup analyzes your code to identify unused and indirectly included headers. It provides feedback based on the settings described in [Config the C++ #include tool in Visual Studio](include-cleanup-config.md). Feedback can be in the form of error list warnings, suggestions, etc. For more details on the feedback provided by Include Cleanup, refer [Include Cleanup messages](include-cleanup-messages.md).
 

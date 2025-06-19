@@ -2,9 +2,8 @@
 description: "Learn more about: Compiler errors C3000 Through C3099"
 title: "Compiler errors C3000 Through C3099"
 ms.date: 06/01/2022
-f1_keywords: ["C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
-helpviewer_keywords: ["C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
-ms.assetid: 01b7b9cb-b351-4b5a-8cb0-1fcddb08d2ab
+f1_keywords: ["C3000", "C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
+helpviewer_keywords: ["C3000", "C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
 ---
 # Compiler errors C3000 Through C3099
 
@@ -64,11 +63,11 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C3045](compiler-error-c3045.md) | Expected a compound statement following OpenMP 'sections' directive. Missing '{' |
 | [Compiler error C3046](compiler-error-c3046.md) | Missing structured block in an OpenMP '#pragma omp sections' region |
 | [Compiler error C3047](compiler-error-c3047.md) | Structured block in an OpenMP 'sections' region must be preceded by '#pragma omp section' (Obsolete in Visual Studio 2022.) |
-| [Compiler error C3048](compiler-error-c3048.md) | Expression following '#pragma omp atomic' has improper form |
+| [Compiler error C3048](compiler-error-c3048.md) | '`#pragma omp atomic`*statement*': expression or block-statement following pragma does not conform to the OpenMP specification |
 | [Compiler error C3049](compiler-error-c3049.md) | '*argument*': invalid argument in OpenMP 'default' clause |
 | [Compiler error C3050](compiler-error-c3050.md) | '*class*': a ref class cannot inherit from '*identifier*' |
 | Compiler error C3051 | Obsolete. |
-| [Compiler error C3052](compiler-error-c3052.md) | '*identifier*': variable doesn't appear in a data-sharing clause under a default(none) clause |
+| [Compiler error C3052](compiler-error-c3052.md) | '*identifier*': variable reference occurs under a `default(none)` clause and must have explicitly specified data sharing attributes |
 | [Compiler error C3053](compiler-error-c3053.md) | '*identifier*': 'threadprivate' is only valid for global or static data items |
 | [Compiler error C3054](compiler-error-c3054.md) | '#pragma omp parallel' is currently not supported in a generic class or function (Obsolete in Visual Studio 2022.) |
 | [Compiler error C3055](compiler-error-c3055.md) | '*identifier*': symbol cannot be referenced before it is used in 'threadprivate' directive |
@@ -81,8 +80,8 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C3062](compiler-error-c3062.md) | '*identifier*': enumerator requires value since the underlying type is '*type*' |
 | [Compiler error C3063](compiler-error-c3063.md) | operator '*operator*': all operands must have the same enumeration type |
 | Compiler error C3064 | '*identifier*': must be a simple type or resolve to one |
-| [Compiler error C3065](compiler-error-c3065.md) | property declaration at non-class scope is not allowed |
-| [Compiler error C3066](compiler-error-c3066.md) | there are multiple ways that an object of this type can be called with these arguments |
+| [Compiler error C3065](compiler-error-c3065.md) | '`__declspec(`*specifier*`)`' at non-class scope is not allowed |
+| [Compiler error C3066](compiler-error-c3066.md) | call to an object of this type is ambiguous |
 | Compiler error C3067 | an initializer list cannot be used with the built-in operator[] |
 | [Compiler error C3068](compiler-error-c3068.md) | '*identifier*': a 'naked' function cannot contain objects that would require unwinding if a C++ exception occurred |
 | [Compiler error C3069](compiler-error-c3069.md) | operator '*operator*': not allowed for enumeration type |
@@ -94,7 +93,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C3075](compiler-error-c3075.md) | '*identifier*': you cannot embed an instance of a reference type, '*type*', in a value-type |
 | [Compiler error C3076](compiler-error-c3076.md) | '*identifier*': you cannot embed an instance of a reference type, '*type*', in a native type |
 | [Compiler error C3077](compiler-error-c3077.md) | '*identifier*': a finalizer can only be a member of a reference type |
-| Compiler error C3078 | array size must be specified in new expressions |
+| Compiler error C3078 | array size must be specified in new expressions without an initializer |
 | Compiler error C3079 | an initializer list cannot be used as the right operand of this assignment operator |
 | [Compiler error C3080](compiler-error-c3080.md) | '*finalizer*': a finalizer cannot have a storage-class-specifier |
 | Compiler error C3081 | Obsolete. |

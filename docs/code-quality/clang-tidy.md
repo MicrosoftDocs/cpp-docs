@@ -2,7 +2,7 @@
 title: Using Clang-Tidy in Visual Studio
 description: "How to use Clang-Tidy in Visual Studio for Microsoft C++ code analysis."
 ms.date: 03/1/2022
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 f1_keywords: ["vs.codeanalysis.clangtidy","vs.codeanalysis.propertypages.ClangTidyToolPath","vs.codeanalysis.propertypages.AdditionalOptions","vs.codeanalysis.propertypages.MaxProcesses"]
 ---
 # Using Clang-Tidy in Visual Studio

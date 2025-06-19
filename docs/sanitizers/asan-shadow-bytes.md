@@ -7,7 +7,7 @@ helpviewer_keywords: ["Shadow bytes", "AddressSanitizer shadow bytes","Address S
 
 # AddressSanitizer shadow bytes
 
-We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of [`/fsanitize=address`](../build/reference/fsanitize.md). For further details, we refer you to the [seminal paper](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) and the [AddressSanitizer algorithm](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm).
+We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of [`/fsanitize=address`](../build/reference/fsanitize.md). For further details, we refer you to the initial research [AddressSanitizer -  Serebryany, et al](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) and the [current AddressSanitizer algorithm documentation](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm).
 
 ## Core concept
 

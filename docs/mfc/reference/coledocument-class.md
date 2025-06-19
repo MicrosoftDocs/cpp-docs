@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: COleDocument Class"
 title: "COleDocument Class"
+description: "Learn more about: COleDocument Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDocument", "AFXOLE/COleDocument", "AFXOLE/COleDocument::COleDocument", "AFXOLE/COleDocument::AddItem", "AFXOLE/COleDocument::ApplyPrintDevice", "AFXOLE/COleDocument::EnableCompoundFile", "AFXOLE/COleDocument::GetInPlaceActiveItem", "AFXOLE/COleDocument::GetNextClientItem", "AFXOLE/COleDocument::GetNextItem", "AFXOLE/COleDocument::GetNextServerItem", "AFXOLE/COleDocument::GetPrimarySelectedItem", "AFXOLE/COleDocument::GetStartPosition", "AFXOLE/COleDocument::HasBlankItems", "AFXOLE/COleDocument::OnShowViews", "AFXOLE/COleDocument::RemoveItem", "AFXOLE/COleDocument::UpdateModifiedFlag", "AFXOLE/COleDocument::OnEditChangeIcon", "AFXOLE/COleDocument::OnEditConvert", "AFXOLE/COleDocument::OnEditLinks", "AFXOLE/COleDocument::OnFileSendMail", "AFXOLE/COleDocument::OnUpdateEditChangeIcon", "AFXOLE/COleDocument::OnUpdateEditLinksMenu", "AFXOLE/COleDocument::OnUpdateObjectVerbMenu", "AFXOLE/COleDocument::OnUpdatePasteLinkMenu", "AFXOLE/COleDocument::OnUpdatePasteMenu"]
 helpviewer_keywords: ["COleDocument [MFC], COleDocument", "COleDocument [MFC], AddItem", "COleDocument [MFC], ApplyPrintDevice", "COleDocument [MFC], EnableCompoundFile", "COleDocument [MFC], GetInPlaceActiveItem", "COleDocument [MFC], GetNextClientItem", "COleDocument [MFC], GetNextItem", "COleDocument [MFC], GetNextServerItem", "COleDocument [MFC], GetPrimarySelectedItem", "COleDocument [MFC], GetStartPosition", "COleDocument [MFC], HasBlankItems", "COleDocument [MFC], OnShowViews", "COleDocument [MFC], RemoveItem", "COleDocument [MFC], UpdateModifiedFlag", "COleDocument [MFC], OnEditChangeIcon", "COleDocument [MFC], OnEditConvert", "COleDocument [MFC], OnEditLinks", "COleDocument [MFC], OnFileSendMail", "COleDocument [MFC], OnUpdateEditChangeIcon", "COleDocument [MFC], OnUpdateEditLinksMenu", "COleDocument [MFC], OnUpdateObjectVerbMenu", "COleDocument [MFC], OnUpdatePasteLinkMenu", "COleDocument [MFC], OnUpdatePasteMenu"]
-ms.assetid: dc2ecb99-03e1-44c7-bb69-48056dd1b672
 ---
 # COleDocument Class
 
@@ -64,9 +63,9 @@ class COleDocument : public CDocument
 
 If you are writing a simple container application, derive your document class from `COleDocument`. If you are writing a container application that supports linking to the embedded items contained by its documents, derive your document class from [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md). If you are writing a server application or combination container/server, derive your document class from [COleServerDoc](../../mfc/reference/coleserverdoc-class.md). `COleLinkingDoc` and `COleServerDoc` are derived from `COleDocument`, so these classes inherit all the services available in `COleDocument` and `CDocument`.
 
-To use `COleDocument`, derive a class from it and add functionality to manage the application's non-OLE data as well as embedded or linked items. If you define `CDocItem`-derived classes to store the application's native data, you can use the default implementation defined by `COleDocument` to store both your OLE and non-OLE data. You can also design your own data structures for storing your non-OLE data separately from the OLE items. For more information, see the article [Containers: Compound Files](../../mfc/containers-compound-files.md)..
+To use `COleDocument`, derive a class from it and add functionality to manage the application's non-OLE data as well as embedded or linked items. If you define `CDocItem`-derived classes to store the application's native data, you can use the default implementation defined by `COleDocument` to store both your OLE and non-OLE data. You can also design your own data structures for storing your non-OLE data separately from the OLE items. For more information, see the article [Containers: Compound Files](../../mfc/containers-compound-files.md).
 
-`CDocument` supports sending your document via mail if mail support (MAPI) is present. `COleDocument` has updated [OnFileSendMail](#onfilesendmail) to handle compound documents correctly. For more information, see the articles [MAPI](../../mfc/mapi.md) and [MAPI Support in MFC](../../mfc/mapi-support-in-mfc.md)..
+`CDocument` supports sending your document via mail if mail support (MAPI) is present. `COleDocument` has updated [OnFileSendMail](#onfilesendmail) to handle compound documents correctly. For more information, see the articles [MAPI](../../mfc/mapi.md) and [MAPI Support in MFC](../../mfc/mapi-support-in-mfc.md).
 
 ## Inheritance Hierarchy
 
@@ -153,7 +152,7 @@ Specifies whether compound file support is enabled or disabled.
 
 ### Remarks
 
-This is also called structured storage. You typically call this function from the constructor of your `COleDocument`-derived class. For more information about compound documents, see the article [Containers: Compound Files](../../mfc/containers-compound-files.md)..
+This is also called structured storage. You typically call this function from the constructor of your `COleDocument`-derived class. For more information about compound documents, see the article [Containers: Compound Files](../../mfc/containers-compound-files.md).
 
 If you do not call this member function, documents will be stored in a nonstructured ("flat") file format.
 
@@ -356,7 +355,7 @@ afx_msg void OnFileSendMail();
 
 Unlike the implementation of `OnFileSendMail` for `CDocument`, this function handles compound files correctly.
 
-For more information, see the [MAPI Topics](../../mfc/mapi.md) and [MAPI Support in MFC](../../mfc/mapi-support-in-mfc.md) articles..
+For more information, see the [MAPI Topics](../../mfc/mapi.md) and [MAPI Support in MFC](../../mfc/mapi-support-in-mfc.md) articles.
 
 ## <a name="onshowviews"></a> COleDocument::OnShowViews
 
@@ -491,7 +490,7 @@ This allows the framework to prompt the user to save the document before closing
 
 ## See also
 
-[MFC Sample CONTAINER](../../overview/visual-cpp-samples.md)<br/>
-[MFC Sample MFCBIND](../../overview/visual-cpp-samples.md)<br/>
-[CDocument Class](../../mfc/reference/cdocument-class.md)<br/>
+[MFC Sample CONTAINER](../../overview/visual-cpp-samples.md)\
+[MFC Sample MFCBIND](../../overview/visual-cpp-samples.md)\
+[CDocument Class](../../mfc/reference/cdocument-class.md)\
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

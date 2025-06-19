@@ -2,7 +2,7 @@
 description: "Learn more about: Intrinsic Functions"
 title: Intrinsic Functions
 ms.date: 11/04/2016
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 f1_keywords:
   - "_String_length_"
   - "_Param_"

@@ -17,7 +17,7 @@ This switch tells the compiler where to find the IFC reference map file, which m
 
 ## Remarks
 
-The `*filename*` argument specifies the IFC reference map file. It can be relative to the compiler's working directory, or an absolute path.
+The *`filename`* argument specifies the IFC reference map file. It can be relative to the compiler's working directory, or an absolute path.
 
 You can provide multiple `/ifcMap` arguments to the compiler.
 
@@ -41,7 +41,7 @@ name = "N"
 ifc = "C:\\modules\\N.ifc"
 ```
 
-This IFC reference map file maps the named modules `'M'` and `'N'` to their respective IFC files. The equivalent [`/reference'](module-reference.md) is:
+This IFC reference map file maps the named modules `'M'` and `'N'` to their respective IFC files. The equivalent [`/reference`](module-reference.md) is:
 
 ```cmd
 /reference M=C:\modules\M.ifc /reference N=C:\modules\N.ifc

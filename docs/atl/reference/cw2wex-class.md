@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CW2WEX Class"
 title: "CW2WEX Class"
+description: "Learn more about: CW2WEX Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CW2WEX", "ATLCONV/ATL::CW2WEX", "ATLCONV/ATL::CW2WEX::CW2WEX", "ATLCONV/ATL::CW2WEX::m_psz", "ATLCONV/ATL::CW2WEX::m_szBuffer"]
 helpviewer_keywords: ["CW2WEX class"]
-ms.assetid: 46262e56-e0d2-41fe-855b-0b67ecc8fcd7
 ---
 # CW2WEX Class
 
@@ -100,7 +99,7 @@ Creates the buffer required for the translation.
 
 ## <a name="dtor"></a> CW2WEX::~CW2WEX
 
-The destructor..
+The destructor.
 
 ```
 ~CW2WEX() throw();
@@ -140,9 +139,9 @@ Returns the text string as type LPWSTR.
 
 ## See also
 
-[CA2AEX Class](../../atl/reference/ca2aex-class.md)<br/>
-[CA2CAEX Class](../../atl/reference/ca2caex-class.md)<br/>
-[CA2WEX Class](../../atl/reference/ca2wex-class.md)<br/>
-[CW2AEX Class](../../atl/reference/cw2aex-class.md)<br/>
-[CW2CWEX Class](../../atl/reference/cw2cwex-class.md)<br/>
+[CA2AEX Class](../../atl/reference/ca2aex-class.md)\
+[CA2CAEX Class](../../atl/reference/ca2caex-class.md)\
+[CA2WEX Class](../../atl/reference/ca2wex-class.md)\
+[CW2AEX Class](../../atl/reference/cw2aex-class.md)\
+[CW2CWEX Class](../../atl/reference/cw2cwex-class.md)\
 [Class Overview](../../atl/atl-class-overview.md)

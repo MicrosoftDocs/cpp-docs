@@ -87,7 +87,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P1825R0 Merged wording for P0527R1 and P1155R3, more implicit moves`](https://wg21.link/p1825r0) | VS 2019 16.4 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0929R2 Checking for abstract class types`](https://wg21.link/P0929R2) | VS 2019 16.5 <sup>[17](#note_17)</sup> |
 | &emsp;[`P0962R1 Relaxing the range-for loop customization point finding rules`](https://wg21.link/p0962r1) | VS 2019 16.5 <sup>[17](#note_17)</sup> |
-| &emsp;[`P0859R0 CWG 1581: When are constexpr member functions defined`](https://wg21.link/p0859r0) | Partial in VS 2019 16.7 <sup>[E](#note_E)</sup> |
+| &emsp;[`P0859R0 CWG 1581: When are constexpr member functions defined`](https://wg21.link/p0859r0) | Partial in VS 2019 16.7 <sup>[E](#note_E)</sup>, Full in VS 2022 17.1 |
 | &emsp;[`P1009R2 Array size deduction in new-expressions`](https://wg21.link/P1009R2) | VS 2019 16.7 <sup>[17](#note_17)</sup> |
 | &emsp;[`P1286R2 Contra CWG DR1778`](https://wg21.link/P1286R2) | VS 2019 16.8 <sup>[17](#note_17)</sup> |
 | **C++20 Core language features** | **Supported** |
@@ -530,8 +530,8 @@ A group of papers listed together indicates a Standard feature along with one or
 | &emsp;Alignment specifiers `<stdalign.h>` | VS 2019 16.8 <sup>[C11](#note_C11), [2104](#note_2104)</sup> |
 | &emsp;`aligned_alloc` | No <sup>[M](#note_M)</sup> |
 | &emsp;No return specifiers `<stdnoreturn.h>` | VS 2019 16.8 <sup>[C11](#note_C11), [2104](#note_2104)</sup> |
-| &emsp;Threading support `<threads.h>` | No |
-| &emsp;Atomic support `<stdatomic.h>` | No |
+| &emsp;Threading support `<threads.h>` | yes |
+| &emsp;Atomic support `<stdatomic.h>` | experimental |
 | &emsp;`char16_t`, `char32_t` `<uchar.h>` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
 | &emsp;`gets()` removed | VS 2019 16.8 <sup>[C11](#note_C11), [N](#note_N)</sup> |
 | &emsp;`gets_s()` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
@@ -541,6 +541,7 @@ A group of papers listed together indicates a Standard feature along with one or
 | &emsp;`quick_exit` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
 | &emsp;`<complex.h>` macros | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
 | &emsp;floating point characteristics `<float.h>` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
+| &emsp;C11 threads `<threads.h>` | VS 2022 17.8 <sup>[C11](#note_C11)</sup> |
 
 ### Supported values
 
@@ -576,7 +577,7 @@ A group of papers listed together indicates a Standard feature along with one or
 
 <a name="note_A"></a> **A** In [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) mode, dynamic exception specifications remain unimplemented, and `throw()` is still treated as a synonym for `__declspec(nothrow)`. In C++17, dynamic exception specifications were mostly removed by P0003R5, except for one vestige: `throw()` is deprecated and required to behave as a synonym for **`noexcept`**. In [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode, MSVC now conforms to the Standard by giving `throw()` the same behavior as **`noexcept`**, that is, enforcement via termination.
 
-The compiler option [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.md) requests the old behavior of `__declspec(nothrow)`. It's likely that `throw()` will be removed in a future version of C++. To help with migrating code in response to these changes in the Standard and the Microsoft implementation, new compiler warnings for exception specification issues have been added under [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and [`/permissive-`](../build/reference/permissive-standards-conformance.md).
+The compiler option [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.md) requests the old behavior of `__declspec(nothrow)`. It's likely that `throw()` will be removed in a future version of C++. To help with migrating code in response to these changes in the Standard and the Microsoft implementation, new compiler warnings for exception specification issues are added under [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and [`/permissive-`](../build/reference/permissive-standards-conformance.md).
 
 <a name="note_B"></a> **B** Supported in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode in Visual Studio 2017 version 15.7. For more information, see [`Two-phase name lookup support comes to MSVC`](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/).
 

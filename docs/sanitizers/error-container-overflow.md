@@ -1,6 +1,6 @@
 ---
 title: "Error: container-overflow"
-description: "Source examples and live debug screenshots for container overflow errors."
+description: "Learn about the container-overflow Address Sanitizer error."
 ms.date: 06/30/2023
 f1_keywords: ["container-overflow", "mismatch detected for 'annotate_vector'", "_DISABLE_VECTOR_ANNOTATION"]
 helpviewer_keywords: ["container-overflow error", "AddressSanitizer error container-overflow", "mismatch detected for 'annotate_vector'", "_DISABLE_VECTOR_ANNOTATION"]

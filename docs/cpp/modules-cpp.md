@@ -1,8 +1,8 @@
 ---
 title: "Overview of modules in C++"
-ms.date: 01/29/2024
-helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
 description: Modules in C++20 provide a modern alternative to header files.
+ms.date: 04/17/2025
+helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
 ---
 # Overview of modules in C++
 
@@ -14,44 +14,15 @@ You can use modules side by side with header files. A C++ source file can `impor
 
 To contrast modules with other ways to import the standard library, see [Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md).
 
-## Enable modules in the Microsoft C++ compiler
+Starting with Visual Studio 2022 version 17.5, importing the Standard Library as a module is both standardized and fully implemented in the Microsoft C++ compiler. To learn how to import the Standard Library using modules, see [Import the C++ standard library using modules](tutorial-import-stl-named-module.md).
 
-As of Visual Studio 2022 version 17.1, C++20 standard modules are fully implemented in the Microsoft C++ compiler.
+## Single-partition modules
 
-Before it was specified by the C++20 standard, Microsoft had experimental support for modules. The compiler also supported importing prebuilt Standard Library modules, described below.
+A single-partition module is a module that consists of a single source file. The module interface and implementation are in the same file.
 
-Starting with Visual Studio 2022 version 17.5, importing the Standard Library as a module is both standardized and fully implemented in the Microsoft C++ compiler. This section describes the older, experimental method, which is still supported. For information about the new standardized way to import the Standard Library using modules, see [Import the C++ standard library using modules](tutorial-import-stl-named-module.md).
+The following single-partition module example shows a simple module definition in a source file called *`Example.ixx`*. The *`.ixx`* extension is the default extension for module interface files in Visual Studio. If you want to use a different extension, use the [/interface](../build/reference/interface.md) switch to compile it as a module interface. In this example, the interface file contains both the function definition and the declaration. You can also place the definitions in one or more separate module implementation files, as shown in a later example, but this is an example of a single-partition module.
 
-You can use the modules feature to create single-partition modules and to import the Standard Library modules provided by Microsoft. To enable support for Standard Library modules, compile with [`/experimental:module`](../build/reference/experimental-module.md) and [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md). In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**.
-
-A module and the code that consumes it must be compiled with the same compiler options.
-
-## Consume C++ Standard Library as modules (experimental)
-
-This section describes the experimental implementation, which is still supported. The new standardized way of consuming the C++ Standard Library as modules is described in [Import the C++ standard library using modules](tutorial-import-stl-named-module.md).
-
-By importing the C++ Standard Library as modules rather than including it through header files, you can potentially speed up compilation times depending on the size of your project. The experimental library is split into the following named modules:
-
-- `std.regex` provides the content of header `<regex>`
-- `std.filesystem` provides the content of header `<filesystem>`
-- `std.memory` provides the content of header `<memory>`
-- `std.threading` provides the contents of headers `<atomic>`, `<condition_variable>`, `<future>`, `<mutex>`, `<shared_mutex>`, and `<thread>`
-- `std.core` provides everything else in the C++ Standard Library
-
-To consume these modules, add an import declaration to the top of the source code file. For example:
-
-```cpp
-import std.core;
-import std.regex;
-```
-
-To consume the Microsoft Standard Library modules, compile your program with the [`/EHsc`](../build/reference/eh-exception-handling-model.md) and [`/MD`](../build/reference/md-mt-ld-use-run-time-library.md) options.
-
-## Example
-
-The following example shows a simple module definition in a source file called *`Example.ixx`*. The *`.ixx`* extension is required for module interface files in Visual Studio. In this example, the interface file contains both the function definition and the declaration. However, you can also place the definitions in one or more separate module implementation files, as shown in a later example.
-
-The `export module Example;` statement indicates that this file is the primary interface for a module called `Example`. The **`export`** modifier on `f()` indicates that this function is visible when another program or module imports `Example`.
+The `export module Example;` statement indicates that this file is the primary interface for a module called `Example`. The **`export`** modifier before `int f()` indicates that this function is visible when another program or module imports `Example`:
 
 ```cpp
 // Example.ixx
@@ -61,12 +32,14 @@ export module Example;
 
 namespace Example_NS
 {
-   int f_internal() {
-        return ANSWER;
-      }
+   int f_internal()
+   {
+     return ANSWER;
+   }
 
-   export int f() {
-      return f_internal();
+   export int f()
+   {
+     return f_internal();
    }
 }
 ```
@@ -75,8 +48,8 @@ The file *`MyProgram.cpp`* uses **`import`** to access the name exported by `Exa
 
 ```cpp
 // MyProgram.cpp
+import std;
 import Example;
-import std.core;
 
 using namespace std;
 
@@ -88,7 +61,7 @@ int main()
 }
 ```
 
-The `import` declaration can appear only at global scope.
+The `import` declaration can appear only at global scope.  A module and the code that consumes it must be compiled with the same compiler options.
 
 ## Module grammar
 
@@ -133,15 +106,16 @@ The **`export`** keyword is only used in interface files. An implementation file
 
 The rules for namespaces in modules are the same as any other code. If a declaration within a namespace is exported, the enclosing namespace (excluding members that aren't explicitly exported in that namespace) is also implicitly exported. If a namespace is explicitly exported, all declarations within that namespace definition are exported.
 
-When the compiler does argument-dependent lookup for overload resolutions in the importing translation unit, it considers functions declared in the same translation unit (including module interfaces) as where the type of the function's arguments are defined.
+When the compiler does argument-dependent lookup for overload resolution in the importing translation unit, it considers functions declared in the same translation unit (including module interfaces) as where the type of the function's arguments is defined.
 
 ### Module partitions
 
 A module partition is similar to a module, except:
+
 - It shares ownership of all declarations in the entire module.
 - All names exported by partition interface files are imported and exported by the primary interface file.
 - A partition's name must begin with the module name followed by a colon (`:`).
-- Declarations in any of the partitions are visible within the entire module.\
+- Declarations in any of the partitions are visible within the entire module.
 - No special precautions are needed to avoid one-definition-rule (ODR) errors. You can declare a name (function, class, and so on) in one partition and define it in another. 
 
 A partition implementation file begins like this, and is an internal partition from a C++ standards perspective:
@@ -182,7 +156,7 @@ You can include header files in a module source file by putting an `#include` di
 #include "customlib.h"
 #include "anotherlib.h"
 
-import std.core;
+import std;
 import MyModuleB;
 
 //... rest of file
@@ -192,9 +166,10 @@ You can use a traditional header file to control which modules are imported:
 
 ```cpp
 // MyProgram.h
-import std.core;
-#ifdef DEBUG_LOGGING
-import std.filesystem;
+#ifdef C_RUNTIME_GLOBALS
+import std.compat;
+#else
+import std;
 #endif
 ```
 
@@ -209,6 +184,7 @@ import "myheader.h";
 
 ## See also
 
+[Import the C++ standard library using modules](tutorial-import-stl-named-module.md)\
 [`module`, `import`, `export`](import-export-module.md)\
 [Named modules tutorial](tutorial-named-modules-cpp.md)\
 [Compare header units, modules, and precompiled headers](../build/compare-inclusion-methods.md)

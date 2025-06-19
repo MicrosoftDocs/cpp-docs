@@ -64,7 +64,7 @@ A pointer to the event handler method to be unhooked from an event. The handler 
 
 - Managed events: *`ReceiverClass`* is the event receiver class and *`HandlerMethod`* is the handler.
 
-*`receiver`*(optional)
+*`receiver`* (optional)
 A pointer to an instance of the event receiver class. If you don't specify a receiver, the default is the receiver class or structure in which **`__unhook`** is called.
 
 ## Usage

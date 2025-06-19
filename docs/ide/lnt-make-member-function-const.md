@@ -8,7 +8,7 @@ monikerRange: ">=msvc-170"
 ---
 # `lnt-make-member-function-const`
 
-When a member function doesn’t modify the object's state, annotate it with the `const` keyword. This guidance comes from the [C++ Core Guideline Con.2](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con2-by-default-make-member-functions-const).
+When a member function doesn't modify the object's state, annotate it with the `const` keyword. This guidance comes from [Con.2: By default, make member functions `const`](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con2-by-default-make-member-functions-const) in the C++ Core Guidelines.
 
 ## Example
 
@@ -19,8 +19,8 @@ class MyClass
 { 
 public: 
 
-  int getValue() { return value; }  // Flagged: ‘getValue’ doesn't modify the object's state. 
-  void setValue(int newValue) { value = newValue; }  // OK: ‘setValue’ modifies the object's state.   
+  int getValue() { return value; }  // Flagged: 'getValue' doesn't modify the object's state. 
+  void setValue(int newValue) { value = newValue; }  // OK: 'setValue' modifies the object's state.   
 
 private: 
 
@@ -28,7 +28,7 @@ private:
 }; 
 
 double getRadius()
-{   // Flagged: ‘getRadius’ doesn't modify the object's state. 
+{   // Flagged: 'getRadius' doesn't modify the object's state. 
     return radius; 
 } 
 ```
@@ -45,7 +45,7 @@ class MyClass
 public: 
 
   int getValue() const { return value; }  // Added const 
-  void setValue(int newValue) { value = newValue; }  // OK: ‘setValue’ modifies the object's state.   
+  void setValue(int newValue) { value = newValue; }  // OK: 'setValue' modifies the object's state.   
 
 private: 
 
@@ -54,7 +54,7 @@ private:
 }; 
 
 double getRadius() const // added const
-{   // ‘getRadius’ doesn't modify the object's state. 
+{   // 'getRadius' doesn't modify the object's state. 
     return radius; 
 }  
 ```

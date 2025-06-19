@@ -1,6 +1,6 @@
 ---
-description: "Learn to use header units to import C++ Standard Template Library (STL) libraries in Visual Studio."
 title: "Walkthrough: Import STL libraries as header units"
+description: "Learn to use header units to import C++ Standard Template Library (STL) libraries in Visual Studio."
 ms.date: 10/15/2022
 ms.custom: "conceptual"
 author: "tylermsft"
@@ -170,7 +170,7 @@ This option is convenient when your project includes many STL header files acros
 
 This approach is less flexible than the static library approach, because it doesn't lend itself towards reusing the built header units in other projects. This approach might not be appropriate for larger projects: It doesn't guarantee an optimal build time, since all of the sources must be scanned for `#include` statements.
 
-Not all header files can be automatically converted to header units. For example, headers that depend on conditional compilation via macros shouldn't be converted to header units. There's an allowlist in the form of a `header-units.json`file for the STL headers that the compiler uses when `/translateInclude` is specified. It determines which STL headers can be compiled into header units. The `header-units.json` file is under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit. Another advantage of the `header-units.json` file is that it prevents symbol duplication in the built header units. That is, if compiling a header unit brings in another library header multiple times, the symbols won't be duplicated.
+Not all header files can be automatically converted to header units. For example, headers that depend on conditional compilation via macros shouldn't be converted to header units. There's an allowlist in the form of a `header-units.json` file for the STL headers that the compiler uses when `/translateInclude` is specified. It determines which STL headers can be compiled into header units. The `header-units.json` file is under the installation directory for Visual Studio. For example, `%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\include\header-units.json`. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit. Another advantage of the `header-units.json` file is that it prevents symbol duplication in the built header units. That is, if compiling a header unit brings in another library header multiple times, the symbols won't be duplicated.
 
 To try out this approach, create a project that includes two STL libraries. Then, change the project's properties so that it imports the libraries as header units instead of including them, as described in the next section.
 
@@ -182,8 +182,8 @@ Follow these steps to create a project that includes two STL libraries: `<iostre
 1. Replace the contents of the source file as follows:
 
     ```cpp
-    #include <iostream>;
-    #include <vector>;
+    #include <iostream>
+    #include <vector>
     
     int main()
     {

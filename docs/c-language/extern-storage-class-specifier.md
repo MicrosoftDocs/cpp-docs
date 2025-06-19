@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: extern Storage-Class Specifier"
 title: "extern Storage-Class Specifier"
+description: "Learn more about: extern Storage-Class Specifier"
 ms.date: "07/10/2018"
 helpviewer_keywords: ["extern keyword [C]", "storage class specifiers, extern", "extern keyword [C], storage class specifier", "external linkage, storage-class specifiers", "external linkage, extern modifier"]
-ms.assetid: 6e16d927-291f-49e4-986c-9d91a482a441
 ---
 # extern Storage-Class Specifier
 
@@ -14,12 +13,11 @@ A variable declared with the **`extern`** storage-class specifier is a reference
 This example illustrates internal- and external-level declarations:
 
 ```c
-
 // Source1.c
 
 int i = 1;
 
-// Source2. c
+// Source2.c
 
 #include <stdio.h>
 

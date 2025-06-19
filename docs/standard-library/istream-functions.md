@@ -1,14 +1,12 @@
 ---
-description: "Learn more about: <istream> functions"
 title: "<istream> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <istream> functions"
+ms.date: 11/04/2016
 f1_keywords: ["istream/std::swap", "istream/std::ws"]
-ms.assetid: 0301ea0d-4ded-4841-83dd-4253b55b3188
 ---
 # `<istream>` functions
 
-[swap](#istream_swap)\
-[ws](#ws)
+The `<istream>` header provides the following functions:
 
 ## <a name="istream_swap"></a> swap
 

@@ -122,9 +122,9 @@ Log base 2 of 65536.000000 is 16.000000
 
 ## See also
 
-[Math and floating-point support](../floating-point-support.md) \
-[`exp`, `expf`, `expl`](exp-expf.md) \
-[`_matherr`](matherr.md) \
-[`pow`, `powf`, `powl`](pow-powf-powl.md) \
-[`_CIlog`](../cilog.md) \
-[`_CIlog10`](../cilog10.md)\
+[Math and floating-point support](../floating-point-support.md)\
+[`exp`, `expf`, `expl`](exp-expf.md)\
+[`_matherr`](matherr.md)\
+[`pow`, `powf`, `powl`](pow-powf-powl.md)\
+[`_CIlog`](../cilog.md)\
+[`_CIlog10`](../cilog10.md)

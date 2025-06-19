@@ -25,7 +25,7 @@ char y = (char)0x1234;
 
 assigns the value 0x34 to `y`.
 
-When **`signed`** variables are converted to **`unsigned`** and vice-versa, the bit patterns remain the same. For example, casting -2 (0xFE) to an **`unsigned`** value yields 254 (also 0xFE).
+When **`signed`** variables are converted to **`unsigned`** and vice-versa, the bit patterns remain the same. For example, casting -2 (0xFFFFFFFE) to an **`unsigned int`** value yields 4294967294 (also 0xFFFFFFFE).
 
 ## See also
 

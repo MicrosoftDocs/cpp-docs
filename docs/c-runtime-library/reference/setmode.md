@@ -41,7 +41,7 @@ For more information about these and other return codes, see [`errno`, `_doserrn
 
 ## Remarks
 
-The **`_setmode`** function sets to *`mode`* the translation mode of the file given by *`fd`*. Passing `_O_TEXT` as *`mode`* sets text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing `_O_BINARY` sets binary (untranslated) mode, in which these translations are suppressed.
+The **`_setmode`** function sets to *`mode`* the translation mode of the file given by *`fd`*. Passing `_O_TEXT` as *`mode`* sets ANSI text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing `_O_BINARY` sets binary (untranslated) mode, in which these translations are suppressed.
 
 You can also pass `_O_U16TEXT`, `_O_U8TEXT`, or `_O_WTEXT` to enable Unicode mode, as demonstrated in the second example later in this document.
 

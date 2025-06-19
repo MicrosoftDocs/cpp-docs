@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: utc_clock class"
 title: "utc_clock class"
+description: "Learn more about: utc_clock class"
 ms.date: 07/27/2021
 f1_keywords: ["chrono/std::chrono::utc_clock", "chrono/std::chrono::utc_clock::now", "chrono/std::chrono::utc_clock::to_sys", "chrono/std::chrono::utc_clock::from_sys", "chrono/std::chrono::utc_clock::is_steady Constant"]
 helpviewer_keywords: ["std::chrono [C++], utc_clock"]
@@ -65,7 +65,7 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seco
 
 |Name|Description|
 |----------|-----------------|
-|[`utc_clock::is_steady constant]`(#is_steady_constant)|Indicates whether the clock type is steady. Its value is `false`.|
+|[`utc_clock::is_steady` constant](#is_steady_constant)|Indicates whether the clock type is steady. Its value is `false`.|
 
 ## Requirements
 

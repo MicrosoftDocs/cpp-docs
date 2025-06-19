@@ -1,7 +1,7 @@
 ---
 title: "MSVC Linker options"
 description: "A list of the options supported by the Microsoft LINK linker."
-ms.date: 01/08/2024
+ms.date: 03/14/2025
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ---
@@ -9,14 +9,14 @@ helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries
 
 LINK.exe links Common Object File Format (COFF) object files and libraries to create an executable (EXE) file or a dynamic-link library (DLL).
 
-The following table lists options for LINK.exe. For more information about LINK, see:
+The following table lists options for `LINK.exe`. For more information about LINK, see:
 
 - [Compiler-controlled LINK options](compiler-controlled-link-options.md)
 - [LINK input files](link-input-files.md)
 - [LINK output](link-output.md)
 - [Reserved words](reserved-words.md)
 
-On the command line, linker options aren't case-sensitive; for example, `/base` and `/BASE` mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
+Linker options aren't case-sensitive; for example, `/base` and `/BASE` mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
 
 You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to specify some linker options.
 
@@ -52,6 +52,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/DLL`](dll-build-a-dll.md) | Builds a DLL. |
 | [`/DRIVER`](driver-windows-nt-kernel-mode-driver.md) | Creates a kernel mode driver. |
 | [`/DYNAMICBASE`](dynamicbase-use-address-space-layout-randomization.md) | Specifies whether to generate an executable image that's rebased at load time by using the address space layout randomization (ASLR) feature. |
+| [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) | Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) and step in anywhere with on-demand function deoptimization. |
 | [`/ENTRY`](entry-entry-point-symbol.md) | Sets the starting address. |
 | [`/ERRORREPORT`](errorreport-report-internal-linker-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 | [`/EXPORT`](export-exports-a-function.md) | Exports a function. |
@@ -78,6 +79,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/LARGEADDRESSAWARE`](largeaddressaware-handle-large-addresses.md) | Tells the compiler that the application supports addresses larger than 2 gigabytes |
 | [`/LIBPATH`](libpath-additional-libpath.md) | Specifies a path to search before the environmental library path. |
 | [`/LINKREPRO`](linkrepro.md) | Specifies a path to generate link repro artifacts in. |
+| [`/LINKREPROFULLPATHRSP`](link-repro-full-path-rsp.md) | Generates a response file containing the absolute paths to all the files that the linker took as input. |
 | [`/LINKREPROTARGET`](linkreprotarget.md) | Generates a link repro only when producing the specified target.<sup>16.1</sup> |
 | [`/LTCG`](ltcg-link-time-code-generation.md) | Specifies link-time code generation. |
 | [`/MACHINE`](machine-specify-target-platform.md) | Specifies the target platform. |

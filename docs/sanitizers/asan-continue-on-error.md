@@ -20,7 +20,7 @@ It's a good practice to create a checked build of your C or C++ app with ASAN tu
 
 When your app finishes, you get a summary of the memory issues. With COE, you can compile and deploy an existing application into limited production to find memory safety issues. You can run the checked build for days to fully exercise the code, although the app will run slower due to the ASAN instrumentation.
 
-You can use this feature to create a new shipping gate. If all your existing tests pass, but COE reports a memory safety error or a leak, don’t ship the new code or integrate it into a parent branch.
+You can use this feature to create a new shipping gate. If all your existing tests pass, but COE reports a memory safety error or a leak, don't ship the new code or integrate it into a parent branch.
 
 Don't deploy a build with COE enabled into production! COE is intended to be used in testing and development environments only. You shouldn't use an ASAN enabled build in production because of the performance impact of the instrumentation added to detect memory errors, the risk of exposing the internal implementation if errors are reported, and to avoid increasing the surface area of possible security exploits by shipping the library functions that ASAN substitutes for memory allocation, freeing, and so on.
 
@@ -146,7 +146,7 @@ This sorting prioritizes memory safety issues that may be the most concerning. F
 
 File: D:\a\_work\1\s\src\vctools\asan\llvm\compiler-rt\lib\asan\asan_malloc_win_thunk.cpp Unique call stacks: 1
 File: C:\Users\xxx\Desktop\COE\doublefree.cpp Unique call stacks: 1
-``````
+```
 
 Finally, the report contains a summary of where the memory errors occurred:
 
@@ -196,7 +196,7 @@ Create the example:
     
     char buffer[10] = {0,1,2,3,4,5,6,7,8,9}; 
     
-    void main()
+    int main()
     {   
         char* inverted_buf= func(buffer, 10); 
     }
@@ -317,7 +317,7 @@ int foo_redundant(unsigned long arg_var)
     return ret;
 }
 
-void main()
+int main()
 {
     int cnt = 0;
 

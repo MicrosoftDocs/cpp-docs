@@ -289,7 +289,7 @@ The sentinel at the end of what `cbegin()` returns. The sentinel follows the las
 
 `ranges::crend()` works on all bidirectional ranges, whereas `std::crend()` may not.
 
-### `crend`example
+### `crend` example
 
 ```cpp
 // requires /std:c++20 or later
@@ -482,7 +482,7 @@ int main()
 }
 ```
 
-## <a name="rend"></a>`rend`
+## <a name="rend"></a> `rend`
 
 Get a reverse iterator to the sentinel at the end of a reversed view of the range.
 A reverse iterator returns the elements of the range in reverse order.
@@ -571,7 +571,7 @@ int main()
 }
 ```
 
-## <a name="ssize"></a>`ssize`
+## <a name="ssize"></a> `ssize`
 
 Get the size of the range as a signed value.
 

@@ -665,7 +665,7 @@ void callback1( ios_base::event e, ios_base& stream, int arg )
     case ios_base::copyfmt_event:
         cout << "an copyfmt event" << endl;
         break;
-    };
+    }
 }
 
 void callback2( ios_base::event e, ios_base& stream, int arg )
@@ -682,7 +682,7 @@ void callback2( ios_base::event e, ios_base& stream, int arg )
     case ios_base::copyfmt_event:
         cout << "an copyfmt event" << endl;
         break;
-    };
+    }
 }
 
 int main( )

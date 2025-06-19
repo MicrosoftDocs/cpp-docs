@@ -2,7 +2,6 @@
 title: "ARM Assembler command-line reference"
 description: "Reference guide to the Microsoft ARM assembler command-line options."
 ms.date: 05/09/2022
-ms.assetid: f7b89478-1ab5-4995-8cde-a805f0462c45
 ---
 # ARM Assembler command-line reference
 
@@ -98,7 +97,7 @@ A combination of zero or more of the following options:
   For more information, see the [ARM Compiler armasm Reference Guide](https://developer.arm.com/documentation/dui0802/latest/).
 
 - **`-sourcelink:`** *sourcelink_filename*\
-  *sourcelink_filename* specifies a JSON-formatted configuration file that contains a simple mapping of local file paths to URLs for source files to display in the debugger. For more information on the format of this file, see [Source Link JSON Schema](https://github.com/dotnet/designs/blob/master/accepted/2020/diagnostics/source-link.md#source-link-json-schema). Source Link is a language- and source-control agnostic system for providing source debugging for binaries. Source Link is supported for native binaries starting in Visual Studio 2017 version 15.8. For an overview of Source Link, see [Source Link](https://github.com/dotnet/designs/blob/master/accepted/2020/diagnostics/source-link.md). For information on how to use Source Link in your projects, and how to generate the SourceLink file as part of your project, see [Using Source Link](https://github.com/dotnet/sourcelink#using-source-link-in-c-projects).
+  *sourcelink_filename* specifies a JSON-formatted configuration file that contains a simple mapping of local file paths to URLs for source files to display in the debugger. For more information on the format of this file, see [Source Link JSON Schema](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/source-link.md#source-link-json-schema). Source Link is a language- and source-control agnostic system for providing source debugging for binaries. Source Link is supported for native binaries starting in Visual Studio 2017 version 15.8. For an overview of Source Link, see [Source Link](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/source-link.md). For information on how to use Source Link in your projects, and how to generate the SourceLink file as part of your project, see [Using Source Link](https://github.com/dotnet/sourcelink#using-source-link-in-c-projects).
 
 - **`-via`** *filename*\
   Read extra command-line arguments from *filename*.

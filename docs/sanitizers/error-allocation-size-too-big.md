@@ -1,6 +1,6 @@
 ---
 title: "Error: allocation-size-too-big"
-description: "Source examples and live debug screenshots for allocation-size-too-big errors."
+description: "Learn about the allocation-size-too-big Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["allocation-size-too-big"]
 helpviewer_keywords: ["allocation-size-too-big error", "AddressSanitizer error allocation-size-too-big"]

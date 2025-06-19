@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: NMAKE inference rules"
 title: "Inference rules"
+description: "Learn more about: NMAKE inference rules"
 ms.date: 09/30/2021
 helpviewer_keywords: ["inference rules in NMAKE", "rules, inference", "NMAKE program, inference rules", "search paths in NMAKE inference rules", "defining inference rules", "batch-mode inference rules in NMAKE", "rules, predefined", "NMAKE program, predefined rules", "predefined rules in NMAKE", "rules, inferred", "inferred dependents in NMAKE", "inferred rules in NMAKE", "dependents, inferred", "precedence, inference rule"]
 ---
@@ -10,7 +10,7 @@ Inference rules in NMAKE supply commands to update targets and to infer dependen
 
 If an out-of-date dependency has no commands, and if [`.SUFFIXES`](dot-directives.md) contains the dependent's extension, NMAKE uses a rule whose extensions match the target and an existing file in the current or specified directory. If more than one rule matches existing files, the **`.SUFFIXES`** list determines which to use; list priority descends from left to right. If a dependent file doesn't exist and isn't listed as a target in another description block, an inference rule can create the missing dependent from another file that has the same base name. If a description block's target has no dependents or commands, an inference rule can update the target. Inference rules can build a command-line target even if no description block exists. NMAKE may invoke a rule for an inferred dependent even if an explicit dependent is specified.
 
-## <a name="defining-a-rule"> Defining a rule
+## <a name="defining-a-rule"></a> Defining a rule
 
 The *from_ext* represents the extension of a dependent file, and *to_ext* represents the extension of a target file.
 
@@ -21,7 +21,7 @@ The *from_ext* represents the extension of a dependent file, and *to_ext* repres
 
 Extensions aren't case-sensitive. Macros can be invoked to represent *from_ext* and *to_ext*; the macros are expanded during preprocessing. The period (**`.`**) that precedes *from_ext* must appear at the beginning of the line. The colon (**`:`**) is preceded by zero or more spaces or tabs. It can be followed only by spaces or tabs, a semicolon (**`;`**) to specify a command, a number sign (**`#`**) to specify a comment, or a newline character. No other spaces are allowed. Commands are specified as in description blocks.
 
-## <a name="search-paths-in-rules"> Search paths in rules
+## <a name="search-paths-in-rules"></a> Search paths in rules
 
 ```makefile
 {from_path}.from_ext{to_path}.to_ext:
@@ -61,7 +61,7 @@ An inference rule applies to a dependency only if paths specified in the depende
         $(CC) $(CFLAGS) $<
 ```
 
-## <a name="batch-mode-rules"> Batch-mode rules
+## <a name="batch-mode-rules"></a> Batch-mode rules
 
 ```makefile
 {from_path}.from_ext{to_path}.to_ext::
@@ -135,7 +135,7 @@ foo4.cpp
 Generating Code...
 ```
 
-## <a name="predefined-rules"> Predefined rules
+## <a name="predefined-rules"></a> Predefined rules
 
 Predefined inference rules use NMAKE-supplied command and options macros.
 
@@ -155,7 +155,7 @@ Predefined inference rules use NMAKE-supplied command and options macros.
 | `.cxx.obj` | `$(CXX) $(CXXFLAGS) /c $<` | `cl /c $<` | yes | all |
 | `.rc.res` | `$(RC) $(RFLAGS) /r $<` | `rc /r $<` | no | all |
 
-## <a name="inferred-dependents-and-rules"> Inferred dependents and rules
+## <a name="inferred-dependents-and-rules"></a> Inferred dependents and rules
 
 NMAKE assumes an inferred dependent for a target if an applicable inference rule exists. A rule applies if:
 
@@ -169,7 +169,7 @@ NMAKE assumes an inferred dependent for a target if an applicable inference rule
 
 Inferred dependents can cause unexpected side effects. If the target's description block contains commands, NMAKE executes those commands instead of the commands in the rule.
 
-## <a name="precedence-in-inference-rules"> Precedence in inference rules
+## <a name="precedence-in-inference-rules"></a> Precedence in inference rules
 
 If an inference rule is defined more than once, NMAKE uses the highest-precedence definition. The following list shows the order of precedence from highest to lowest:
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: invalid_scheduler_policy_value Class"
 title: "invalid_scheduler_policy_value Class"
+description: "Learn more about: invalid_scheduler_policy_value Class"
 ms.date: "11/04/2016"
 f1_keywords: ["concrt/concurrency::invalid_scheduler_policy_value"]
 helpviewer_keywords: ["invalid_scheduler_policy_value class"]
-ms.assetid: 8c533e3f-2774-4192-8616-b2313b859bf7
 ---
 # invalid_scheduler_policy_value Class
 
@@ -22,7 +21,7 @@ class invalid_scheduler_policy_value : public std::exception;
 
 |Name|Description|
 |----------|-----------------|
-|[invalid_scheduler_policy_value](invalid-scheduler-policy-thread-specification-class.md#ctor|Overloaded. Constructs an `invalid_scheduler_policy_value` object.|
+|[invalid_scheduler_policy_value](#ctor)|Overloaded. Constructs an `invalid_scheduler_policy_value` object.|
 
 ## Inheritance Hierarchy
 
@@ -48,10 +47,10 @@ invalid_scheduler_policy_value() throw();
 
 ### Parameters
 
-*_Message*<br/>
+*_Message*\
 A descriptive message of the error.
 
 ## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
+[concurrency Namespace](concurrency-namespace.md)\
 [SchedulerPolicy Class](schedulerpolicy-class.md)

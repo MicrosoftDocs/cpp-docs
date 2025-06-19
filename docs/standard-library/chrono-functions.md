@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: <chrono> functions"
 title: "<chrono> functions"
+description: "Learn more about: <chrono> functions"
 ms.date: 10/15/2021
 f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::chrono::clock_cast", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::abs", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
 helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function",  "std::chrono::clock_cast", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::from_stream function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
@@ -563,7 +563,7 @@ int main()
 
 ### Remarks
 
-**7)** If `%Z` is used and successfully parsed, that value will be assigned to `*abbrev `if `abbrev` is non-null. If `%z` (or a modified variant) is used and successfully parsed, that value will be assigned to `*offset` if `offset` is non-null.
+**7)** If `%Z` is used and successfully parsed, that value will be assigned to `*abbrev` if `abbrev` is non-null. If `%z` (or a modified variant) is used and successfully parsed, that value will be assigned to `*offset` if `offset` is non-null.
 
 **12)** If `%Z` is used and successfully parsed, that value will be assigned to `*abbrev` if `abbrev` is non-null. If `%z` (or a modified variant) is used and successfully parsed, that value will be assigned to `*offset` if `offset` is non-null.
 
@@ -674,7 +674,7 @@ In ISO 8601, weeks begin with Monday. The first week of the year must include Ja
 | `utc_time` | Z, z, c, x, X, D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p |
 | [`weekday`](weekday-class.md) | a, A, u, w |
 | [`weekday_indexed`](weekdayindexed-class.md) | a, A, u, w |
-| [`weekday_last`]() | a, A, u, w |
+| [`weekday_last`](weekdaylast-class.md) | a, A, u, w |
 | [`year`](year-class.md) | Y, y, C |
 | `year_month` | Y, y, B, g, G, h, C, b, m |
 | `year_month_day` | D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w |
@@ -704,7 +704,7 @@ The source `utc_time` to get the `leap_second_info` for.
 
 ### Return value
 
-Returns a `leap_second_info` whose member `is_leap_second` is **`true`** if *`ut`* is during a positive leap second insertion; otherwise, **`false`**. The `elapsed` member holds the sum of leap seconds between the epoch date `1970-01-01`and *`ut`*. If `is_leap_second` is **`true`**, the leap second referred to by *`ut`* is included in the `elapsed` sum.
+Returns a `leap_second_info` whose member `is_leap_second` is **`true`** if *`ut`* is during a positive leap second insertion; otherwise, **`false`**. The `elapsed` member holds the sum of leap seconds between the epoch date `1970-01-01` and *`ut`*. If `is_leap_second` is **`true`**, the leap second referred to by *`ut`* is included in the `elapsed` sum.
 
 ## <a name="std-chrono-get-tzdb"></a> `get_tzdb`
 

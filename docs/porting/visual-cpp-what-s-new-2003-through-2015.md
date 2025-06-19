@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Visual C++ What's New 2003 through 2015"
 title: "Visual C++ What's New 2003 through 2015"
-ms.date: "07/02/2019"
-ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
+description: "Learn more about: Visual C++ What's New 2003 through 2015"
+ms.date: 07/02/2019
 ---
 # Visual C++ What's New 2003 through 2015
 
@@ -227,14 +226,13 @@ Although these differences can affect your source code or other build artifacts,
    ```cpp
     error C3688: invalid literal suffix '_x'; literal operator or literal operator template 'operator ""_x' not found
     note: Did you forget a space between the string literal and the prefix of the following string literal?
-
    ```
 
    To fix this problem, add a space between the string literal and the macro.
 
 - **Adjacent string literals**
 
-   Similarly to the previous, due to related changes in string parsing, adjacent string literals (either wide or narrow character string literals) without any whitespace were interpreted as a single concatenated string in previous releases of Visaul C++. In Visual Studio 2015, you must now add whitespace between the two strings. For example, the following code must be changed:
+   Similarly to the previous, due to related changes in string parsing, adjacent string literals (either wide or narrow character string literals) without any whitespace were interpreted as a single concatenated string in previous releases of Visual C++. In Visual Studio 2015, you must now add whitespace between the two strings. For example, the following code must be changed:
 
    ```cpp
     char * str = "abc""def";
@@ -2206,7 +2204,7 @@ The compiler has breaking changes in this release.
 - In each function topic, a section on .NET Framework equivalents has been added.
 - Several string functions now have the option of truncating strings rather than failing when output buffers are too small; see **_TRUNCATE**.
 - `_set_se_translator` now requires the use of the `/EHa` compiler option.
-- `fpos_t` is now **`__int64`** under `/Za` (for C code) and when __STDC__ is set manually (for C++ code). It used to be a **`struct`**.
+- `fpos_t` is now **`__int64`** under `/Za` (for C code) and when `__STDC__` is set manually (for C++ code). It used to be a **`struct`**.
 - _CRT_DISABLE_PERFCRIT_LOCKS can improve the I/O performance of single-threaded programs.
 - POSIX names have been deprecated in favor of ISO C++ conformant names (for example, use `_getch` rather than `getch`).
 - New link options .obj files are available for pure mode

@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: task Class (Concurrency Runtime)"
 title: "task Class (Concurrency Runtime)"
-ms.date: "07/30/2019"
+description: "Learn more about: task Class (Concurrency Runtime)"
+ms.date: 07/30/2019
 f1_keywords: ["task", "PPLTASKS/concurrency::task", "PPLTASKS/concurrency::task::task", "PPLTASKS/concurrency::task::get", "PPLTASKS/concurrency::task::is_apartment_aware", "PPLTASKS/concurrency::task::is_done", "PPLTASKS/concurrency::task::scheduler", "PPLTASKS/concurrency::task::then", "PPLTASKS/concurrency::task::wait"]
 helpviewer_keywords: ["task class"]
-ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
 ---
 # task Class (Concurrency Runtime)
 
-The Parallel Patterns Library (PPL) `task` class. A `task` object represents work that can be executed asynchronously and concurrently with other tasks and parallel work produced by parallel algorithms in the Concurrency Runtime. It produces a result of type `_ResultType` on successful completion. Tasks of type `task<void>` produce no result. A task can be waited upon and canceled independently of other tasks. It can also be composed with other tasks using continuations( `then`), and join( `when_all`) and choice( `when_any`) patterns. When a task object is assigned to a new variable, the behavior is that of `std::shared_ptr`; in other words, both objects represent the same underlying task.
+The Parallel Patterns Library (PPL) `task` class. A `task` object represents work that can be executed asynchronously and concurrently with other tasks and parallel work produced by parallel algorithms in the Concurrency Runtime. It produces a result of type `_ResultType` on successful completion. Tasks of type `task<void>` produce no result. A task can be waited upon and canceled independently of other tasks. It can also be composed with other tasks using continuations(`then`), and join(`when_all`) and choice(`when_any`) patterns. When a task object is assigned to a new variable, the behavior is that of `std::shared_ptr`; in other words, both objects represent the same underlying task.
 
 ## Syntax
 
@@ -91,7 +90,7 @@ The result of the task.
 If the task is canceled, a call to `get` will throw a [task_canceled](task-canceled-class.md) exception. If the task encountered an different exception or an exception was propagated to it from an antecedent task, a call to `get` will throw that exception.
 
 > [!IMPORTANT]
-> In a Universal Windows Platform (UWP) app, do not call [concurrency::task::wait](#wait) or `get` ( `wait` calls `get`) in code that runs on the user-interface thread. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because these methods block the current thread and can cause the app to become unresponsive. However, you can call the `get` method to receive the result of the antecedent task in a task-based continuation because the result is immediately available.
+> In a Universal Windows Platform (UWP) app, do not call [concurrency::task::wait](#wait) or `get` (`wait` calls `get`) in code that runs on the user-interface thread. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because these methods block the current thread and can cause the app to become unresponsive. However, you can call the `get` method to receive the result of the antecedent task in a task-based continuation because the result is immediately available.
 
 ## <a name="is_apartment_aware"></a> is_apartment_aware
 

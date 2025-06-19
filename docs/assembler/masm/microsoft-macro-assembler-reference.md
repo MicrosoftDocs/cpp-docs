@@ -6,11 +6,11 @@ helpviewer_keywords: ["MASM (Microsoft Macro Assembler), reference", "MASM (Micr
 ---
 # Microsoft Macro Assembler reference
 
-The Microsoft Macro Assembler (MASM) provides several advantages over inline assembly. MASM contains a macro language that has features such as looping, arithmetic, and text string processing. MASM gives you greater control over the hardware. By using MASM, you also can reduce time and memory overhead in your code.
+The Microsoft Macro Assembler (MASM) provides several advantages over inline assembly. MASM contains a macro language that has features such as looping, arithmetic, and string processing. MASM gives you greater control over the hardware. By using MASM, you also can reduce time and memory overhead in your code.
 
 ## In This Section
 
-[ML and ML64 command-line option](ml-and-ml64-command-line-reference.md)\
+[ML and ML64 command-line options](ml-and-ml64-command-line-reference.md)\
 Describes the ML and ML64 command-line options.
 
 [MASM for x64 (ml64.exe)](masm-for-x64-ml64-exe.md)\
@@ -34,8 +34,7 @@ Describes fatal and nonfatal error messages and warnings.
 [Processor Manufacturer Programming Manuals](processor-manufacturer-programming-manuals.md)\
 Provides links to programming information about processors not manufactured, sold, or supported by Microsoft.
 
-[MASM BNF Grammar](masm-bnf-grammar.md)
-
+[MASM BNF Grammar](masm-bnf-grammar.md)\
 Formal BNF description of MASM for x64.
 
 ## Related Sections

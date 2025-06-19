@@ -1,7 +1,7 @@
 ---
 title: "Read and understand C++ code in Visual Studio"
 description: "Use the C++ code editor in Visual Studio to format, and understand your code."
-ms.date: "05/28/2019"
+ms.date: 05/28/2019
 ---
 # Read and understand C++ code in Visual Studio
 
@@ -97,7 +97,7 @@ Place the cursor on or just after any type, keyword or function and press **F1**
 
 Right click on a code file in your project and choose **Generate graph of include files** to see a graph of which files are included by other files.
 
-![Screenshot of a graph of include files. The graph shows that NAMSPACE DLL .CPP includes Namespace DLL .h, which includes V_10 .H, among other files.](../ide/media/vs2015_cpp_include_graph.png)
+![Screenshot of a graph of include files. The graph shows that NAMESPACE DLL .CPP includes Namespace DLL .h, which includes V_10 .H, among other files.](../ide/media/vs2015_cpp_include_graph.png)
 
 ## View Call Hierarchy
 

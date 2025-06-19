@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Makefile Preprocessing"
 title: "Makefile preprocessing"
+description: "Learn more about: Makefile Preprocessing"
 ms.date: 09/30/2021
 f1_keywords: ["!UNDEF", "!INCLUDE", "!IFNDEF", "!MESSAGE"]
 helpviewer_keywords: ["preprocessing makefiles", "makefiles, preprocessing", "!CMDSWITCHES directive", "!ELSE directive", "!ELSEIF directive", "!ELSEIFDEF directive", "!ELSEIFNDEF directive", "!ENDIF directive", "!ERROR directive", "!IF directive", "!IFDEF directive", "!IFNDEF directive", "!INCLUDE directive", "!MESSAGE directive", "!UNDEF directive", "directives, makefile preprocessing", "preprocessing directives, makefiles", "NMAKE program, expressions", "NMAKE program, preprocessor directives", "makefiles, preprocessing directives", "expressions [C++], makefile preprocessing", "operators [C++], makefile preprocessing", "EXIST operator", "preprocessing NMAKE makefile operators", "NMAKE program, operators", "DEFINED operator", "makefiles, preprocessing operators"]
@@ -9,7 +9,7 @@ helpviewer_keywords: ["preprocessing makefiles", "makefiles, preprocessing", "!C
 
 You can control the NMAKE session by using preprocessing directives and expressions. Preprocessing instructions can be placed in the makefile or in *`Tools.ini`*. Using directives, you can conditionally process your makefile, display error messages, include other makefiles, undefine a macro, and turn certain options on or off.
 
-## <a name="makefile-preprocessing-directives"> Makefile Preprocessing Directives
+## <a name="makefile-preprocessing-directives"></a> Makefile Preprocessing Directives
 
 Preprocessing directives aren't case-sensitive. The initial exclamation point (**`!`**) must appear at the beginning of the line. Zero or more spaces or tabs can appear after the exclamation point, for indentation.
 
@@ -67,13 +67,13 @@ Preprocessing directives aren't case-sensitive. The initial exclamation point (*
 
    Undefines *macro_name*.
 
-## <a name="expressions-in-makefile-preprocessing"> Expressions in makefile preprocessing
+## <a name="expressions-in-makefile-preprocessing"></a> Expressions in makefile preprocessing
 
 The **`!IF`** or **`!ELSE IF`** *constant_expression* consists of integer constants (in decimal or C-language notation), string constants, or commands. Use parentheses to group expressions. Expressions use C-style signed long integer arithmetic; numbers are in 32-bit two's-complement form in the range -2147483648 to 2147483647.
 
 Expressions can use operators that act on constant values, exit codes from commands, strings, macros, and file-system paths.
 
-## <a name="makefile-preprocessing-operators"> Makefile preprocessing operators
+## <a name="makefile-preprocessing-operators"></a> Makefile preprocessing operators
 
 Makefile preprocessing expressions can use operators that act on constant values, exit codes from commands, strings, macros, and file-system paths. To evaluate the expression, the preprocessor first expands macros, and then executes commands, and then does the operations. It evaluates operations in order of explicit grouping in parentheses, and then in order of operator precedence. The result is a constant value.
 
@@ -125,7 +125,7 @@ Expressions can use the following operators. The operators of equal precedence a
 > [!NOTE]
 > The bitwise XOR operator (**`^`**) is the same as the escape character, and must be escaped (as **`^^`**) when it's used in an expression.
 
-## <a name="executing-a-program-in-preprocessing"> Executing a program in preprocessing
+## <a name="executing-a-program-in-preprocessing"></a> Executing a program in preprocessing
 
 To use a command's exit code during preprocessing, specify the command, with any arguments, within brackets (**`[ ]`**). Any macros are expanded before the command is executed. NMAKE replaces the command specification with the command's exit code, which can be used in an expression to control preprocessing.
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: is, isw Routines"
 title: "is, isw Routines"
+description: "Learn more about: is, isw Routines"
 ms.date: 01/11/2022
 helpviewer_keywords: ["is routines", "isw routines"]
 ---
@@ -15,7 +15,7 @@ helpviewer_keywords: ["is routines", "isw routines"]
       [`iscntrl`, `iswcntrl`, `_iscntrl_l`, `_iswcntrl_l`](./reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)\
       [`iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_iscsym_l`, `_iswcsym_l`, `_iscsymf_l`, `_iswcsymf_l`](./reference/iscsym-functions.md)\
       [`_isctype`, `iswctype`, `_isctype_l`, `_iswctype_l`](./reference/isctype-iswctype-isctype-l-iswctype-l.md)\
-      [`isdigit`, `iswdigit`, `_isdigit_l`, `_iswdigit_l`](./reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md)
+      [`isdigit`, `iswdigit`, `_isdigit_l`, `_iswdigit_l`](./reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md)\
       [`isgraph`, `iswgraph`, `_isgraph_l`, `_iswgraph_l`](./reference/isgraph-iswgraph-isgraph-l-iswgraph-l.md)\
       [`isleadbyte`, `_isleadbyte_l`](./reference/isleadbyte-isleadbyte-l.md)\
       [`islower`, `iswlower`, `_islower_l`, `_iswlower_l`](./reference/islower-iswlower-islower-l-iswlower-l.md)\

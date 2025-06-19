@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4251"
 title: "Compiler Warning (level 2) C4251"
+description: "Learn more about: Compiler Warning (level 2) C4251"
 ms.date: 12/01/2023
 f1_keywords: ["C4251"]
 helpviewer_keywords: ["C4251"]
 ---
 # Compiler Warning (level 2) C4251
 
-> '*type*' : class '*type1*' needs to have dll-interface to be used by clients of class '*type2*'
+> '*type*': '*type1*' needs to have dll-interface to be used by clients of '*type2*'
 
 ## Remarks
 

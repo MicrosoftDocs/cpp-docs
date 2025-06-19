@@ -29,7 +29,7 @@ Win32 character-mode application. The operating system provides a console for co
 **`EFI_BOOT_SERVICE_DRIVER`**\
 **`EFI_ROM`**\
 **`EFI_RUNTIME_DRIVER`**\
-The Extensible Firmware Interface subsystems. For more information, see the [UEFI specification](https://uefi.org/specifications). For examples, see the Intel [UEFI Driver and Application Tool Resources](https://www.intel.com/content/www/us/en/architecture-and-technology/unified-extensible-firmware-interface/uefi-driver-and-application-tool-resources.html). The minimum version and default version is 1.0.
+The Extensible Firmware Interface subsystems. For more information, see the [UEFI specification](https://uefi.org/specifications). The minimum version and default version is 1.0.
 
 **`NATIVE`**\
 Kernel mode drivers for Windows NT. This option is normally reserved for Windows system components. If [`/DRIVER:WDM`](driver-windows-nt-kernel-mode-driver.md) is specified, `NATIVE` is the default.

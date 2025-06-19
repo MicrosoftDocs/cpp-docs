@@ -1,6 +1,6 @@
 ---
 title: "Error: heap-buffer-overflow"
-description: "Source examples and live debug screenshots for heap variable overflow errors."
+description: "Learn about the heap-buffer-overflow Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["heap-buffer-overflow"]
 helpviewer_keywords: ["heap-buffer-overflow error", "AddressSanitizer error heap-buffer-overflow"]

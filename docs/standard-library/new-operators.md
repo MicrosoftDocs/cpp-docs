@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <new> operators and enums"
 title: "<new> operators and enums"
+description: "Learn more about: <new> operators and enums"
 ms.date: 05/21/2022
 f1_keywords: ["new/std::operator delete", "new/std::operator new"]
-ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 ---
 # `<new>` operators and enums
 
@@ -130,8 +129,8 @@ For information on throwing or non-throwing behavior of `new`, see [The `new` an
 ```cpp
 // new_op_new.cpp
 // compile with: /EHsc
-#include<new>
-#include<iostream>
+#include <new>
+#include <iostream>
 
 using namespace std;
 

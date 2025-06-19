@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CDocObjectServer Class"
 title: "CDocObjectServer Class"
-ms.date: "09/12/2018"
+description: "Learn more about: CDocObjectServer Class"
+ms.date: 09/12/2018
 f1_keywords: ["CDocObjectServer", "AFXDOCOB/CDocObjectServer", "AFXDOCOB/CDocObjectServer::CDocObjectServer", "AFXDOCOB/CDocObjectServer::ActivateDocObject", "AFXDOCOB/CDocObjectServer::OnActivateView", "AFXDOCOB/CDocObjectServer::OnApplyViewState", "AFXDOCOB/CDocObjectServer::OnSaveViewState"]
 helpviewer_keywords: ["CDocObjectServer [MFC], CDocObjectServer", "CDocObjectServer [MFC], ActivateDocObject", "CDocObjectServer [MFC], OnActivateView", "CDocObjectServer [MFC], OnApplyViewState", "CDocObjectServer [MFC], OnSaveViewState"]
-ms.assetid: 18cd0dff-0616-4472-b8d9-66c081bc383a
 ---
 # CDocObjectServer Class
 
@@ -94,7 +93,7 @@ A pointer to the `IOleDocumentSite` interface implemented by the container.
 
 ### Remarks
 
-When a DocObject is active, the client site OLE interface ( `IOleDocumentSite`) is what allows the DocObject server to communicate with its client (the container). When a DocObject server is activated, it first checks that the container implements the `IOleDocumentSite` interface. If so, [COleServerDoc::GetDocObjectServer](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) is called to see if the container supports DocObjects. By default, `GetDocObjectServer` returns NULL. You must override `COleServerDoc::GetDocObjectServer` to construct a new `CDocObjectServer` object or a derived object of your own, with pointers to the `COleServerDoc` container and its `IOleDocumentSite` interface as arguments to the constructor.
+When a DocObject is active, the client site OLE interface (`IOleDocumentSite`) is what allows the DocObject server to communicate with its client (the container). When a DocObject server is activated, it first checks that the container implements the `IOleDocumentSite` interface. If so, [COleServerDoc::GetDocObjectServer](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) is called to see if the container supports DocObjects. By default, `GetDocObjectServer` returns NULL. You must override `COleServerDoc::GetDocObjectServer` to construct a new `CDocObjectServer` object or a derived object of your own, with pointers to the `COleServerDoc` container and its `IOleDocumentSite` interface as arguments to the constructor.
 
 ## <a name="onactivateview"></a> CDocObjectServer::OnActivateView
 

@@ -38,7 +38,7 @@ Along with the inherited members from its [SimpleEvent](simple-event.md) base cl
 
 ### Functions
 
-[Key](#key)
+[Key](#key)\
 [Name](#name)
 
 ## <a name="key"></a> Key

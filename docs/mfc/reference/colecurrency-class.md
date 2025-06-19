@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: COleCurrency Class"
 title: "COleCurrency Class"
-ms.date: "08/29/2019"
+description: "Learn more about: COleCurrency Class"
+ms.date: 08/29/2019
 f1_keywords: ["COleCurrency", "AFXDISP/COleCurrency", "AFXDISP/COleCurrency::COleCurrency", "AFXDISP/COleCurrency::Format", "AFXDISP/COleCurrency::GetStatus", "AFXDISP/COleCurrency::ParseCurrency", "AFXDISP/COleCurrency::SetCurrency", "AFXDISP/COleCurrency::SetStatus", "AFXDISP/COleCurrency::m_cur", "AFXDISP/COleCurrency::m_status"]
 helpviewer_keywords: ["COleCurrency [MFC], COleCurrency", "COleCurrency [MFC], Format", "COleCurrency [MFC], GetStatus", "COleCurrency [MFC], ParseCurrency", "COleCurrency [MFC], SetCurrency", "COleCurrency [MFC], SetStatus", "COleCurrency [MFC], m_cur", "COleCurrency [MFC], m_status"]
-ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
 ---
 # COleCurrency Class
 
@@ -290,7 +289,7 @@ A brief description of each operator follows:
 
 - **operator =(** `curSrc` **)** The value and status of the operand, an existing `COleCurrency` object are copied into this `COleCurrency` object.
 
-- **operator =(** *varSrc* **)** If the conversion of the `VARIANT` value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a currency ( `VT_CY`) is successful, the converted value is copied into this `COleCurrency` object and its status is set to valid. If the conversion is not successful, the value of the `COleCurrency` object is set to 0 and its status to invalid.
+- **operator =(** *varSrc* **)** If the conversion of the `VARIANT` value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a currency (`VT_CY`) is successful, the converted value is copied into this `COleCurrency` object and its status is set to valid. If the conversion is not successful, the value of the `COleCurrency` object is set to 0 and its status to invalid.
 
 For more information, see the [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy-r1) and [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) entries in the Windows SDK.
 
@@ -486,7 +485,7 @@ BOOL operator>=(const COleCurrency& cur) const;
 ### Remarks
 
 > [!NOTE]
-> The return value of the ordering operations ( **<**, **\<=**, **>**, **>=**) is undefined if the status of either operand is null or invalid. The equality operators ( `==`, `!=`) consider the status of the operands.
+> The return value of the ordering operations ( **<**, **\<=**, **>**, **>=**) is undefined if the status of either operand is null or invalid. The equality operators (`==`, `!=`) consider the status of the operands.
 
 ### Example
 

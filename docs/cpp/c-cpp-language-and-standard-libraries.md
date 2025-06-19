@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: C/C++ language and standard libraries reference"
 title: "C/C++ language and standard libraries reference"
-ms.date: "08/13/2019"
-ms.assetid: c26a6682-961a-43ef-ad33-2adc612f69ac
+description: "Learn more about: C/C++ language and standard libraries reference"
+ms.date: 09/11/2024
 ms.topic: "overview"
 ms.custom: intro-overview
 ---
@@ -17,7 +16,7 @@ You'll also find documentation for the C runtime library, the C++ standard libra
 [C language](../c-language/c-language-reference.md)\
 Reference content for the Microsoft implementation of the C language.
 
-[C++ language](../cpp/cpp-language-reference.md)\
+[C++ language](cpp-language-reference.md)\
 Reference content for the Microsoft implementation of the C++ language.
 
 [C/C++ preprocessor](../preprocessor/c-cpp-preprocessor-reference.md)\
@@ -61,10 +60,13 @@ Classes that simplify the writing of programs that use data parallelism or task 
 [OpenMP](../parallel/openmp/openmp-in-visual-cpp.md)\
 Reference for the Microsoft implementation of the OpenMP API.
 
+[Proxy library](https://github.com/microsoft/proxy)\
+A header-only C++20 library for using polymorphism in C++ without inheritance. For API reference information, see [Proxy 3 Specifications](https://microsoft.github.io/proxy/docs/specifications.html)
+
 [SafeInt library](../safeint/safeint-library.md)\
 A portable library that can be used with MSVC, GCC, or Clang to help prevent integer overflows.
 
-[Data Access Libraries](../data/data-access-in-cpp.md)
+[Data Access Libraries](../data/data-access-in-cpp.md)\
 Libraries to support data access using ATL or MFC, and legacy services such as OLE DB and ODBC.
 
 ## Related articles

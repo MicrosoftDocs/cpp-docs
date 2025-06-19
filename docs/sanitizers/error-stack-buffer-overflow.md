@@ -1,6 +1,6 @@
 ---
 title: "Error: stack-buffer-overflow"
-description: "Source examples and live debug screenshots for Stack buffer overflow errors."
+description: "Learn about the stack-buffer-overflow Address Sanitizer error."
 ms.date: 09/29/2021
 f1_keywords: ["stack-buffer-overflow"]
 helpviewer_keywords: ["stack-buffer-overflow error", "AddressSanitizer error stack-buffer-overflow"]

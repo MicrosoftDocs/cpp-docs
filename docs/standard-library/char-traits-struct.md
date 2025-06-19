@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: char_traits Struct"
 title: "char_traits Struct"
-ms.date: "05/07/2019"
+description: "Learn more about: char_traits Struct"
+ms.date: 05/07/2019
 f1_keywords: ["iosfwd/std::char_traits", "iosfwd/std::char_traits::char_type", "iosfwd/std::char_traits::int_type", "iosfwd/std::char_traits::off_type", "iosfwd/std::char_traits::pos_type", "iosfwd/std::char_traits::state_type", "iosfwd/std::char_traits::assign", "iosfwd/std::char_traits::compare", "iosfwd/std::char_traits::copy", "iosfwd/std::char_traits::_Copy_s", "iosfwd/std::char_traits::eof", "iosfwd/std::char_traits::eq", "iosfwd/std::char_traits::eq_int_type", "iosfwd/std::char_traits::find", "iosfwd/std::char_traits::length", "iosfwd/std::char_traits::lt", "iosfwd/std::char_traits::move", "iosfwd/std::char_traits::_Move_s", "iosfwd/std::char_traits::not_eof", "iosfwd/std::char_traits::to_char_type", "iosfwd/std::char_traits::to_int_type"]
 helpviewer_keywords: ["char_traits struct", "char_traits class"]
-ms.assetid: 568e59f0-4521-4207-9223-9dcf6a16d620
 ---
 # char_traits Struct
 
@@ -1010,11 +1009,11 @@ A value of *_Ch* that cannot be represented as such yields an unspecified result
 
 The conversion operations [to_int_type](#to_int_type) and `to_char_type` are inverse to each other, so that:
 
-`to_int_type` ( `to_char_type` ( *x* ) ) == *x*
+`to_int_type`(`to_char_type`(*x*)) == *x*
 
 for any `int_type` *x* and
 
-`to_char_type` ( `to_int_type` ( *x* ) ) == *x*
+`to_char_type`(`to_int_type`(*x*)) == *x*
 
 for any `char_type` *x*.
 
@@ -1114,11 +1113,11 @@ The `int_type` character corresponding to the `char_type` character.
 
 The conversion operations `to_int_type` and [to_char_type](#to_char_type) are inverse to each other, so that:
 
-`to_int_type` ( `to_char_type` ( *x* ) ) == *x*
+`to_int_type`(`to_char_type`(*x*)) == *x*
 
 for any `int_type` *x*, and
 
-`to_char_type` ( `to_int_type` ( *x* ) ) == *x*
+`to_char_type`(`to_int_type`(*x*)) == *x*
 
 for any `char_type` *x*.
 

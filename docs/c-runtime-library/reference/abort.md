@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: abort"
 title: "abort"
+description: "Learn more about: abort"
 ms.date: 07/07/2022
 api_name: ["abort", "_o_abort"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
@@ -14,7 +14,7 @@ helpviewer_keywords: ["aborting current process", "abort function", "processes, 
 Aborts the current process and returns an error code.
 
 > [!NOTE]
-> Do not use this method to shut down a Microsoft Store app or Universal Windows Platform (UWP) app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/legal/windows/agreements/store-policies). For more information, see [UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
+> Do not use this method to shut down a Microsoft Store app or Universal Windows Platform (UWP) app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/windows/apps/publish/store-policies). For more information, see [UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
 
 ## Syntax
 
@@ -71,8 +71,8 @@ The following program tries to open a file and aborts if the attempt fails.
 // the abort function by attempting to open a file
 // and aborts if the attempt fails.
 
-#include  <stdio.h>
-#include  <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main( void )
 {

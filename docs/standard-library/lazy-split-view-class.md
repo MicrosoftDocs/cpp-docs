@@ -236,6 +236,6 @@ The sentinel that follows the last element in the view:
 ## See also
 
 [`<ranges>`](ranges.md)\
-[`lazy_split` range adaptor](range-adaptors.md#lazy_split)
+[`lazy_split` range adaptor](range-adaptors.md#lazy_split)\
 [`split_view` class](split-view-class.md)\
 [view classes](view-classes.md)

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 4, off) C4254"
 title: "Compiler Warning (level 4, off) C4254"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4, off) C4254"
+ms.date: 11/04/2016
 f1_keywords: ["C4254"]
 helpviewer_keywords: ["C4254"]
 ---
@@ -31,5 +31,5 @@ int main() {
    x->a = 4;
    x->a = x->b;    // OK
    x->b = x->a;    // C4254
-};
+}
 ```

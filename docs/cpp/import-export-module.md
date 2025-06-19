@@ -1,13 +1,13 @@
 ---
 title: "module, import, export"
-ms.date: 02/14/2022
+ms.date: 02/13/2025
 f1_keywords: ["module_cpp", "import_cpp", "export_cpp"]
 helpviewer_keywords: ["modules [C++]", "modules [C++], import", "modules [C++], export"]
 description: Use import and export declarations to access and to publish types and functions defined in the specified module.
 ---
 # `module`, `import`, `export`
 
-The **`module`**, **`import`**, and **`export`** declarations are available in C++20 and require the [`/experimental:module`](../build/reference/experimental-module.md) compiler switch along with [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later (such as **`/std:c++latest`**). For more information, see [Overview of modules in C++](modules-cpp.md).
+The **`module`**, **`import`**, and **`export`** declarations are available in C++20 and require the compiler switch [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later. For more information, see [Overview of modules in C++](modules-cpp.md).
 
 ## `module`
 
@@ -19,7 +19,7 @@ module ModuleA;
 
 ## `export`
 
-Use an **`export module`** declaration for the module's primary interface file, which must have extension *`.ixx`*:
+Use an **`export module`** declaration for the module's primary interface file, which has an extension *`.ixx`* by default. If you want to use a different extension, use the [/interface](../build/reference/interface.md) switch to compile it as a module interface.
 
 ```cpp
 export module ModuleA;
@@ -40,11 +40,9 @@ namespace ModuleA_NS
 }
 ```
 
-Non-exported names aren't visible to code that imports the module:
+Nonexported names aren't visible to code that imports the module:
 
 ```cpp
-//MyProgram.cpp
-
 import ModuleA;
 
 int main() {
@@ -64,9 +62,8 @@ Use an **`import`** declaration to make a module's names visible in your program
 module ModuleA;
 
 #include "custom-lib.h"
-import std.core;
-import std.regex;
-import ModuleB;
+import std;
+import myModule;
 
 // begin declarations here:
 template <class T>
@@ -114,4 +111,5 @@ import // Always an identifier, never a keyword
 
 ## See Also
 
-[Overview of modules in C++](modules-cpp.md)
+[Overview of modules in C++](modules-cpp.md)\
+[Import the C++ standard library using modules](tutorial-import-stl-named-module.md)

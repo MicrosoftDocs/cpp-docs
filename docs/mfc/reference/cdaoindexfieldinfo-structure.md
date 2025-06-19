@@ -4,13 +4,13 @@ title: "CDaoIndexFieldInfo Structure"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoIndexFieldInfo"]
 helpviewer_keywords: ["CDaoIndexFieldInfo structure [MFC]", "DAO (Data Access Objects), Index Fields collection"]
-ms.assetid: 097ee8a6-83b1-4db7-8f05-d62a2deefe19
 ---
 # CDaoIndexFieldInfo Structure
 
 The `CDaoIndexFieldInfo` structure contains information about an index field object defined for data access objects (DAO).
 
-DAO is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
+> [!NOTE]
+> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -40,7 +40,7 @@ Call the `GetIndexInfo` member function of the containing tabledef or recordset 
 
 ## Requirements
 
-**Header:** afxdao.h
+**Header:** `afxdao.h`
 
 ## See also
 

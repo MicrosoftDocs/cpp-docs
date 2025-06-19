@@ -420,7 +420,7 @@ The Clang/C2 toolset that ships with Visual Studio 2017 now supports the **`/big
 
 The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) are now distributed with Visual Studio. Enable the checkers in the **Code Analysis Extensions** page in the project's property pages. The extensions are then included when you run code analysis. For more information, see [Using the C++ Core Guidelines checkers](../code-quality/using-the-cpp-core-guidelines-checkers.md).
 
-![Screenshot of the Property Pages dialog box showing Configuration Properties > Code Analysis > General selected and a number of Core Checks listed in teh Run this rule set section.](media/CppCoreCheck.png "CppCoreCheck properties page")
+![Screenshot of the Property Pages dialog box showing Configuration Properties > Code Analysis > General selected and a number of Core Checks listed in the Run this rule set section.](media/CppCoreCheck.png "CppCoreCheck properties page")
 
 ##### Visual Studio 2017 version 15.3
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _CrtDumpMemoryLeaks"
 title: "_CrtDumpMemoryLeaks"
+description: "Learn more about: _CrtDumpMemoryLeaks"
 ms.date: "11/04/2016"
 api_name: ["_CrtDumpMemoryLeaks"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -16,7 +16,6 @@ Dumps all the memory blocks in the debug heap when a memory leak has occurred (d
 ## Syntax
 
 ```C
-
 int _CrtDumpMemoryLeaks( void );
 ```
 

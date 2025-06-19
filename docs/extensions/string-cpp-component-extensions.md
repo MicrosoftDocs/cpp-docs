@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: String  (C++/CLI and C++/CX)"
 title: "String  (C++/CLI and C++/CX)"
-ms.date: "10/08/2018"
+description: "Learn more about: String  (C++/CLI and C++/CX)"
+ms.date: 10/08/2018
 ms.topic: "reference"
 helpviewer_keywords: ["string support with /clr", "/clr compiler option [C++], string support"]
-ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
 ---
 # String  (C++/CLI and C++/CX)
 
@@ -104,7 +103,7 @@ int main() {
    if (a != b)
       Console::WriteLine("a and b are not equal");
 
-   // System:String^ and tracking reference
+   // System::String^ and tracking reference
    String^% rstr1 = a;
    Console::WriteLine(rstr1);
 
@@ -211,11 +210,11 @@ The following sample shows that the compiler distinguishes between native string
 using namespace System;
 int func() {
    throw "simple string";   // const char *
-};
+}
 
 int func2() {
    throw "string" + "string";   // returns System::String
-};
+}
 
 template<typename T>
 void func3(T t) {
@@ -254,6 +253,6 @@ System.String
 
 ## See also
 
-[Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)<br/>
-[String and Character Literals](../cpp/string-and-character-literals-cpp.md)<br/>
+[Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)\
+[String and Character Literals](../cpp/string-and-character-literals-cpp.md)\
 [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)

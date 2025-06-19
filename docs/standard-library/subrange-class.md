@@ -111,7 +111,7 @@ For information about template parameter types, see [Template parameters](#templ
 
 ### Return value
 
-A `subrange`instance.
+A `subrange` instance.
 
 ### Remarks
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CRowset Class"
 title: "CRowset Class"
+description: "Learn more about: CRowset Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.CRowset<TAccessor>", "CRowset", "ATL::CRowset", "ATL::CRowset<TAccessor>", "ATL.CRowset", "CRowset<TAccessor>.AddRefRows", "CRowset.AddRefRows", "ATL.CRowset.AddRefRows", "AddRefRows", "CRowset::AddRefRows", "CRowset<TAccessor>::AddRefRows", "ATL::CRowset::AddRefRows", "ATL.CRowset<TAccessor>.AddRefRows", "ATL::CRowset<TAccessor>::AddRefRows", "CRowset::Close", "ATL.CRowset.Close", "CRowset<TAccessor>::Close", "CRowset<TAccessor>.Close", "ATL.CRowset<TAccessor>.Close", "ATL::CRowset::Close", "ATL::CRowset<TAccessor>::Close", "CRowset.Close", "CRowset<TAccessor>.Compare", "CRowset<TAccessor>::Compare", "ATL.CRowset<TAccessor>.Compare", "ATL::CRowset<TAccessor>::Compare", "CRowset.Compare", "ATL::CRowset::Compare", "ATL.CRowset.Compare", "CRowset::Compare", "CRowset<TAccessor>::CRowset", "CRowset.CRowset", "ATL::CRowset::CRowset", "ATL::CRowset<TAccessor>::CRowset", "ATL.CRowset.CRowset", "CRowset<TAccessor>.CRowset", "CRowset::CRowset", "ATL.CRowset<TAccessor>.CRowset", "ATL::CRowset::Delete", "CRowset.Delete", "CRowset::Delete", "ATL.CRowset.Delete", "ATL::CRowset<TAccessor>::Delete", "CRowset<TAccessor>.Delete", "CRowset<TAccessor>::Delete", "ATL.CRowset<TAccessor>.Delete", "ATL.CRowset.FindNextRow", "CRowset<TAccessor>.FindNextRow", "ATL::CRowset::FindNextRow", "CRowset::FindNextRow", "CRowset<TAccessor>::FindNextRow", "CRowset.FindNextRow", "ATL.CRowset<TAccessor>.FindNextRow", "ATL::CRowset<TAccessor>::FindNextRow", "FindNextRow", "ATL::CRowset::GetApproximatePosition", "ATL::CRowset<TAccessor>::GetApproximatePosition", "CRowset.GetApproximatePosition", "CRowset::GetApproximatePosition", "GetApproximatePosition", "ATL.CRowset.GetApproximatePosition", "CRowset<TAccessor>::GetApproximatePosition", "CRowset<TAccessor>::GetData", "ATL::CRowset<TAccessor>::GetData", "ATL::CRowset::GetData", "ATL.CRowset<TAccessor>.GetData", "CRowset<TAccessor>.GetData", "CRowset::GetData", "CRowset.GetData", "ATL.CRowset.GetData", "CRowset<TAccessor>::GetDataHere", "CRowset<TAccessor>.GetDataHere", "CRowset.GetDataHere", "GetDataHere", "CRowset::GetDataHere", "ATL::CRowset::GetDataHere", "ATL::CRowset<TAccessor>::GetDataHere", "ATL.CRowset<TAccessor>.GetDataHere", "ATL.CRowset.GetDataHere", "ATL.CRowset<TAccessor>.GetOriginalData", "CRowset<TAccessor>::GetOriginalData", "ATL::CRowset<TAccessor>::GetOriginalData", "ATL.CRowset.GetOriginalData", "CRowset::GetOriginalData", "ATL::CRowset::GetOriginalData", "CRowset.GetOriginalData", "CRowset.GetRowStatus", "ATL.CRowset<TAccessor>.GetRowStatus", "ATL::CRowset<TAccessor>::GetRowStatus", "CRowset::GetRowStatus", "ATL::CRowset::GetRowStatus", "CRowset<TAccessor>::GetRowStatus", "ATL.CRowset.GetRowStatus", "CRowset<TAccessor>.GetRowStatus", "ATL.CRowset<TAccessor>.Insert", "CRowset.Insert", "CRowset<TAccessor>.Insert", "CRowset<TAccessor>::Insert", "ATL::CRowset<TAccessor>::Insert", "ATL.CRowset.Insert", "CRowset::Insert", "ATL::CRowset::Insert", "CRowset::IsSameRow", "CRowset.IsSameRow", "ATL::CRowset::IsSameRow", "ATL.CRowset.IsSameRow", "CRowset<TAccessor>::IsSameRow", "ATL.CRowset<TAccessor>.IsSameRow", "CRowset<TAccessor>.IsSameRow", "ATL::CRowset<TAccessor>::IsSameRow", "CRowset<TAccessor>::MoveFirst", "ATL::CRowset::MoveFirst", "CRowset<TAccessor>.MoveFirst", "CRowset::MoveFirst", "CRowset.MoveFirst", "ATL.CRowset.MoveFirst", "ATL.CRowset<TAccessor>.MoveFirst", "ATL::CRowset<TAccessor>::MoveFirst", "ATL::CRowset<TAccessor>::MoveLast", "CRowset<TAccessor>::MoveLast", "ATL.CRowset.MoveLast", "ATL::CRowset::MoveLast", "CRowset<TAccessor>.MoveLast", "CRowset::MoveLast", "ATL.CRowset<TAccessor>.MoveLast", "CRowset.MoveLast", "ATL.CRowset<TAccessor>.MoveNext", "ATL.CRowset.MoveNext", "ATL::CRowset<TAccessor>::MoveNext", "CRowset<TAccessor>.MoveNext", "CRowset.MoveNext", "CRowset<TAccessor>::MoveNext", "CRowset::MoveNext", "ATL::CRowset::MoveNext", "CRowset<TAccessor>.MovePrev", "CRowset.MovePrev", "CRowset::MovePrev", "ATL.CRowset.MovePrev", "ATL::CRowset<TAccessor>::MovePrev", "ATL::CRowset::MovePrev", "ATL.CRowset<TAccessor>.MovePrev", "CRowset<TAccessor>::MovePrev", "ATL::CRowset::MoveToBookmark", "ATL::CRowset<TAccessor>::MoveToBookmark", "ATL.CRowset.MoveToBookmark", "ATL.CRowset<TAccessor>.MoveToBookmark", "CRowset::MoveToBookmark", "CRowset.MoveToBookmark", "CRowset<TAccessor>::MoveToBookmark", "CRowset<TAccessor>::MoveToRatio", "CRowset::MoveToRatio", "CRowset<TAccessor>.MoveToRatio", "ATL.CRowset.MoveToRatio", "ATL::CRowset::MoveToRatio", "CRowset.MoveToRatio", "ATL.CRowset<TAccessor>.MoveToRatio", "ATL::CRowset<TAccessor>::MoveToRatio", "CRowset::ReleaseRows", "ATL::CRowset<TAccessor>::ReleaseRows", "CRowset<TAccessor>.ReleaseRows", "CRowset.ReleaseRows", "ATL.CRowset.ReleaseRows", "ATL.CRowset<TAccessor>.ReleaseRows", "CRowset<TAccessor>::ReleaseRows", "ATL::CRowset::ReleaseRows", "ATL.CRowset<TAccessor>.SetData", "ATL::CRowset::SetData", "CRowset<TAccessor>.SetData", "CRowset::SetData", "ATL.CRowset.SetData", "CRowset.SetData", "CRowset<TAccessor>::SetData", "ATL::CRowset<TAccessor>::SetData", "CRowset.Undo", "ATL::CRowset<TAccessor>::Undo", "CRowset<TAccessor>::Undo", "ATL.CRowset.Undo", "ATL.CRowset<TAccessor>.Undo", "CRowset<TAccessor>.Undo", "ATL::CRowset::Undo", "CRowset::Undo", "Undo", "CRowset.Update", "ATL.CRowset.Update", "ATL.CRowset<TAccessor>.Update", "ATL::CRowset<TAccessor>::Update", "CRowset<TAccessor>::Update", "CRowset::Update", "CRowset<TAccessor>.Update", "ATL::CRowset::Update", "CRowset::UpdateAll", "ATL.CRowset.UpdateAll", "CRowset<TAccessor>.UpdateAll", "ATL.CRowset<TAccessor>.UpdateAll", "UpdateAll", "CRowset.UpdateAl", "ATL::CRowset<TAccessor>::UpdateAll", "CRowset<TAccessor>::UpdateAll", "ATL::CRowset::UpdateAll"]
 helpviewer_keywords: ["CRowset class", "AddRefRows method", "Close method", "Compare method", "CRowset class, constructor", "Delete method", "FindNextRow method", "GetApproximatePosition method", "GetData method [OLE DB]", "GetDataHere method", "GetOriginalData method", "GetRowStatus method", "Insert method", "IsSameRow method", "MoveFirst method", "MoveLast method", "MoveNext method", "MovePrev method", "MoveToBookmark method", "MoveToRatio method", "ReleaseRows method", "SetData method", "Undo method", "Update method", "UpdateAll method"]
-ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
 ---
 # CRowset Class
 
@@ -19,7 +18,7 @@ class CRowset
 
 ### Parameters
 
-*TAccessor*<br/>
+*TAccessor*\
 An accessor class. The default is `CAccessorBase`.
 
 ## Requirements
@@ -36,14 +35,14 @@ An accessor class. The default is `CAccessorBase`.
 |[Close](#close)|Releases rows and the current `IRowset` interface.|
 |[Compare](#compare)|Compares two bookmarks using [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85)).|
 |[CRowset](#crowset)|Creates a new `CRowset` object and (optionally) associates it with an `IRowset` interface supplied as a parameter.|
-|[Delete](#delete)|Deletes rows from the rowset using [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)).|
+|[Delete](#delete)|Deletes rows from the rowset using [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)).|
 |[FindNextRow](#findnextrow)|Finds the next matching row after the specified bookmark.|
 |[GetApproximatePosition](#getapproximateposition)|Returns the approximate position of a row corresponding to a bookmark.|
 |[GetData](#getdata)|Retrieves data from the rowset's copy of the row.|
 |[GetDataHere](#getdatahere)|Retrieves data from the specified buffer.|
 |[GetOriginalData](#getoriginaldata)|Retrieves the data most recently fetched from or transmitted to the data source, ignoring pending changes.|
 |[GetRowStatus](#getrowstatus)|Returns the status of all rows.|
-|[Insert](#insert)|Creates and inserts a new row using [IRowsetChange:InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)).|
+|[Insert](#insert)|Creates and inserts a new row using [IRowsetChange::InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)).|
 |[IsSameRow](#issamerow)|Compares the specified row with the current row.|
 |[MoveFirst](#movefirst)|Repositions the next-fetch location to the initial position.|
 |[MoveLast](#movelast)|Moves to the last record.|
@@ -52,7 +51,7 @@ An accessor class. The default is `CAccessorBase`.
 |[MoveToBookmark](#movetobookmark)|Fetches the row marked by a bookmark or the row at a specified offset from that bookmark.|
 |[MoveToRatio](#movetoratio)|Fetches rows starting from a fractional position in the rowset.|
 |[ReleaseRows](#releaserows)|Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) to release the current row handle.|
-|[SetData](#setdata)|Sets data values in one or more columns of a row using [IRowsetChange:SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)).|
+|[SetData](#setdata)|Sets data values in one or more columns of a row using [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)).|
 |[Undo](#undo)|Undoes any changes made to a row since the last fetch or [Update](#update).|
 |[Update](#update)|Transmits any pending changes made to the current row since the last fetch or update.|
 |[UpdateAll](#updateall)|Transmits any pending changes made to all rows since the last fetch or update.|
@@ -109,13 +108,13 @@ HRESULT Compare(const CBookmarkBase& bookmark1,
 
 #### Parameters
 
-*Bookmark1*<br/>
+*Bookmark1*\
 [in] The first bookmark to compare.
 
-*Bookmark2*<br/>
+*Bookmark2*\
 [in] The second bookmark to compare.
 
-*pComparison*<br/>
+*pComparison*\
 [out] A pointer to the result of the comparison.
 
 ### Return Value
@@ -142,7 +141,7 @@ CRowset(IRowset* pRowset);
 
 #### Parameters
 
-*pRowset*<br/>
+*pRowset*\
 [in] A pointer to an `IRowset` interface to be associated with this class.
 
 ## <a name="delete"></a> CRowset::Delete
@@ -178,28 +177,28 @@ HRESULT FindNextRow(DBCOMPAREOP op,
 
 #### Parameters
 
-*op*<br/>
+*op*\
 [in] The operation to use in comparing row values. For values, see [IRowsetFind::FindNextRow](/previous-versions/windows/desktop/ms723091(v=vs.85)).
 
-*pData*<br/>
+*pData*\
 [in] A pointer to the value to be matched.
 
-*wType*<br/>
+*wType*\
 [in] Indicates the data type of the value part of the buffer. For information about type indicators, see [Data Types](/previous-versions/windows/desktop/ms723969(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
-*nLength*<br/>
+*nLength*\
 [in] The length, in bytes, of the consumer data structure allocated for the data value. For details, see the description of `cbMaxLen` in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845(v=vs.85)) in the *OLE DB Programmer's Reference.*
 
-*bPrecision*<br/>
+*bPrecision*\
 [in] The maximum precision used when getting data. Used only if *wType* is DBTYPE_NUMERIC. For more information, see [Conversions involving DBTYPE_NUMERIC or DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-*bScale*<br/>
+*bScale*\
 [in] The scale used when getting data. Used only if *wType* is DBTYPE_NUMERIC or DBTYPE_DECIMAL. For more information, see [Conversions involving DBTYPE_NUMERIC or DBTYPE_DECIMAL](/previous-versions/windows/desktop/ms719714(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-*bSkipCurrent*<br/>
+*bSkipCurrent*\
 [in] The number of rows from the bookmark at which to start a search.
 
-*pBookmark*<br/>
+*pBookmark*\
 [in] The bookmark for position at which to start a search.
 
 ### Return Value
@@ -226,13 +225,13 @@ HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark,
 
 #### Parameters
 
-*pBookmark*<br/>
+*pBookmark*\
 [in] A pointer to a bookmark that identifies the row whose position is to be found. NULL if only the row count is required.
 
-*pPosition*<br/>
+*pPosition*\
 [out] A pointer to the location where `GetApproximatePosition` returns the position of the row. NULL if the position is not required.
 
-*pcRows*<br/>
+*pcRows*\
 [out] A pointer to the location where `GetApproximatePosition` returns the total number of rows. NULL if the row count is not required.
 
 ### Return Value
@@ -259,7 +258,7 @@ HRESULT GetData(int nAccessor) throw();
 
 #### Parameters
 
-*nAccessor*<br/>
+*nAccessor*\
 [in] The (zero-offset) index number of the accessor to use for accessing the data.
 
 ### Return Value
@@ -283,10 +282,10 @@ HRESULT GetDataHere(int nAccessor,
 
 #### Parameters
 
-*nAccessor*<br/>
+*nAccessor*\
 [in] The index number of the accessor to use for accessing the data.
 
-*pBuffer*<br/>
+*pBuffer*\
 [out] A buffer into which to place the data for the current record.
 
 ### Return Value
@@ -329,7 +328,7 @@ HRESULT GetRowStatus(DBPENDINGSTATUS* pStatus) const throw();
 
 #### Parameters
 
-*pStatus*<br/>
+*pStatus*\
 [out] A pointer to a location where `GetRowStatus` returns the status value. See DBPENDINGSTATUS in the OLE DB Programmer's Reference.
 
 ### Return Value
@@ -353,10 +352,10 @@ HRESULT Insert(int nAccessor = 0,
 
 #### Parameters
 
-*nAccessor*<br/>
+*nAccessor*\
 [in] The number of the accessor to use for inserting the data.
 
-*bGetHRow*<br/>
+*bGetHRow*\
 [in] Indicates whether the handle for the inserted row is retrieved.
 
 ### Return Value
@@ -389,7 +388,7 @@ HRESULT IsSameRow(HROW hRow) const throw();
 
 #### Parameters
 
-*hRow*<br/>
+*hRow*\
 [in] A handle to the row to compare to the current row.
 
 ### Return Value
@@ -449,10 +448,10 @@ HRESULT MoveNext(LONG lSkip,
 
 #### Parameters
 
-*lSkip*<br/>
+*lSkip*\
 [in] The number of rows to skip before fetching.
 
-*bForward*<br/>
+*bForward*\
 [in] Pass **`true`** to move forward to the next record, **`false`** to move backward.
 
 ### Return Value
@@ -502,10 +501,10 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 #### Parameters
 
-*bookmark*<br/>
+*bookmark*\
 [in] A bookmark marking the location from which you want to fetch data.
 
-*lSkip*<br/>
+*lSkip*\
 [in] The number count of rows from the bookmark to the target row. If *lSkip* is zero, the first row fetched is the bookmarked row. If *lSkip* is 1, the first row fetched is the row after the bookmarked row. If *lSkip* is -1, the first row fetched is the row before the bookmarked row.
 
 ### Return Value
@@ -531,13 +530,13 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
 
 #### Parameters
 
-*nNumerator*<br/>
+*nNumerator*\
 [in] The numerator used to determine the fractional positional from which to fetch data.
 
-*nDenominator*<br/>
+*nDenominator*\
 [in] The denominator used to determine the fractional positional from which to fetch data.
 
-*bForward*<br/>
+*bForward*\
 [in] Indicates whether to move forward or backward. The default is forward.
 
 ### Return Value
@@ -582,7 +581,7 @@ HRESULT SetData(int nAccessor) const throw();
 
 #### Parameters
 
-*nAccessor*<br/>
+*nAccessor*\
 [in] The number of the accessor to use for accessing the data.
 
 ### Return Value
@@ -611,13 +610,13 @@ HRESULT Undo(DBCOUNTITEM* pcRows = NULL,
 
 #### Parameters
 
-*pcRows*<br/>
+*pcRows*\
 [out] A pointer to the location where `Undo` returns the number of rows it attempted to undo if required.
 
-*phRow*<br/>
+*phRow*\
 [out] A pointer to the location where `Undo` returns an array of handles to all rows it attempted to undo if required.
 
-*pStatus*<br/>
+*pStatus*\
 [out] A pointer to the location where `Undo` returns the row status value. No status is returned if *pStatus* is null.
 
 ### Return Value
@@ -642,13 +641,13 @@ HRESULT Update(DBCOUNTITEM* pcRows = NULL,
 
 #### Parameters
 
-*pcRows*<br/>
+*pcRows*\
 [out] A pointer to the location where `Update` returns the number of rows it attempted to update, if required.
 
-*phRow*<br/>
+*phRow*\
 [out] A pointer to the location where `Update` returns the handle of the row it attempted to update. No handle is returned if *phRow* is null.
 
-*pStatus*<br/>
+*pStatus*\
 [out] A pointer to the location where `Update` returns the row status value. No status is returned if *pStatus* is null.
 
 ### Return Value
@@ -675,13 +674,13 @@ HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,
 
 #### Parameters
 
-*pcRows*<br/>
+*pcRows*\
 [out] A pointer to the location where `UpdateAll` returns the number of rows it attempted to update, if required.
 
-*pphRow*<br/>
+*pphRow*\
 [out] A pointer to memory in which `UpdateAll` returns the handle of the row it attempted to update. No handle is returned if *pphRow* is null.
 
-*ppStatus*<br/>
+*ppStatus*\
 [out] A pointer to the location where `Update` returns the row status value. No status is returned if *ppStatus* is null.
 
 ### Remarks
@@ -698,8 +697,8 @@ A standard HRESULT.
 
 ## See also
 
-[DBViewer Sample](../../overview/visual-cpp-samples.md)<br/>
-[MultiRead Sample](../../overview/visual-cpp-samples.md)<br/>
-[MultiRead Attributes Sample](../../overview/visual-cpp-samples.md)<br/>
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[DBViewer Sample](../../overview/visual-cpp-samples.md)\
+[MultiRead Sample](../../overview/visual-cpp-samples.md)\
+[MultiRead Attributes Sample](../../overview/visual-cpp-samples.md)\
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)\
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

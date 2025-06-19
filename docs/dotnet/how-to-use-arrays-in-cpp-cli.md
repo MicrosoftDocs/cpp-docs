@@ -221,7 +221,7 @@ public:
 };
 
 int main() {
-   // Aggregate initialize a multidimension managed array.
+   // Aggregate initialize a multidimensional managed array.
    array<String^, 2>^ gc1 = gcnew array<String^, 2>{ {"one", "two"},
        {"three", "four"} };
    array<String^, 2>^ gc2 = { {"one", "two"}, {"three", "four"} };

@@ -2,8 +2,7 @@
 description: "Learn more about: How to: Create and Use shared_ptr instances"
 title: "How to: Create and use shared_ptr instances"
 ms.custom: "how-to"
-ms.date: "05/26/2023"
-ms.topic: "conceptual"
+ms.date: "12/4/2024"
 ---
 # How to: Create and Use shared_ptr instances
 
@@ -68,7 +67,7 @@ int main()
 
 ## Example 1
 
-Whenever possible, use the [make_shared](../standard-library/memory-functions.md#make_shared) function to create a `shared_ptr` when the memory resource is created for the first time. `make_shared` is exception-safe. It uses the same call to allocate the memory for the control block and the resource, which reduces the construction overhead. If you don't use `make_shared`, then you have to use an explicit **`new`** expression to create the object before you pass it to the `shared_ptr` constructor. The following example shows various ways to declare and initialize a `shared_ptr` together with a new object.
+Whenever possible, use the [`make_shared`](../standard-library/memory-functions.md#make_shared) function to create a `shared_ptr` when the memory resource is created for the first time. `make_shared` is exception-safe. It uses the same call to allocate the memory for the control block and the resource, which reduces the construction overhead. If you don't use `make_shared`, then you have to use an explicit **`new`** expression to create the object before you pass it to the `shared_ptr` constructor. The following example shows various ways to declare and initialize a `shared_ptr` together with a new object.
 
 [!code-cpp[stl_smart_pointers#1](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_1.cpp)]
 
@@ -98,7 +97,7 @@ You can pass a `shared_ptr` to another function in the following ways:
 
 - Pass the `shared_ptr` by reference or const reference. In this case, the reference count isn't incremented, and the callee can access the pointer as long as the caller doesn't go out of scope. Or, the callee can decide to create a `shared_ptr` based on the reference, and become a shared owner. Use this option when the caller has no knowledge of the callee, or when you must pass a `shared_ptr` and want to avoid the copy operation for performance reasons.
 
-- Pass the underlying pointer or a reference to the underlying object. This enables the callee to use the object, but doesn't enable it to share ownership or extend the lifetime. If the callee creates a `shared_ptr` from the raw pointer, the new `shared_ptr` is independent from the original, and doesn't control the underlying resource. Use this option when the contract between the caller and callee clearly specifies that the caller retains ownership of the `shared_ptr` lifetime.
+- Pass the underlying pointer or a reference to the underlying object. This enables the callee to use the object, but it doesn't share ownership of the object with the caller's `shared_ptr`. Beware the case of the callee creating a `shared_ptr` from the passed raw pointer because the callee's `shared_ptr` has an independent reference count from the caller's `shared_ptr`. When the `shared_ptr` in the callee goes out of scope, it will delete the object, leaving the pointer in the caller's 'shared_ptr' pointing at released memory. When the caller's `shared_ptr` then goes out of scope, a double-free results. Only use this option when the contract between the caller and callee clearly specifies that the caller retains ownership of the `shared_ptr` lifetime.
 
 - When you're deciding how to pass a `shared_ptr`, determine whether the callee has to share ownership of the underlying resource. An "owner" is an object or function that can keep the underlying resource alive for as long as it needs it. If the caller has to guarantee that the callee can extend the life of the pointer beyond its (the function's) lifetime, use the first option. If you don't care whether the callee extends the lifetime, then pass by reference and let the callee copy it or not.
 

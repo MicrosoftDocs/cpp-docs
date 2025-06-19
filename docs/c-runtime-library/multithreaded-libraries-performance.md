@@ -2,7 +2,7 @@
 title: "Multithreaded Libraries Performance"
 description: "An overview of how to get the most performance from the Microsoft C runtime multithreaded libraries."
 ms.date: "11/04/2016"
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 helpviewer_keywords: ["threading [C++], performance", "libraries, multithreaded", "performance, multithreading", "multithreaded libraries"]
 ms.assetid: faa5d808-087c-463d-8f0d-8c478d137296
 ---

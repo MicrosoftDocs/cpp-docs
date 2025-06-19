@@ -153,6 +153,7 @@ Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](f
 | **`t`** | `_O_TEXT` (translated) |
 | **`c`** | None |
 | **`n`** | None |
+| **`N`** | `_O_NOINHERIT` |
 | **`D`** | `_O_TEMPORARY` |
 | **`R`** | `_O_RANDOM` |
 | **`S`** | `_O_SEQUENTIAL` |
@@ -166,7 +167,7 @@ The **`c`**, **`n`**, **`R`**, **`S`**, **`t`**, **`T`**, and **`D`** *`mode`* o
 If you're using **`rb`** mode, memory mapped Win32 files might also be an option if you don't need to port your code, you expect to read much of the file, or you don't care about network performance.
 
 Regarding `T` and `D`:
-- `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](https://learn.microsoft.com/archive/blogs/larryosterman/its-only-temporary).
+- `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](/archive/blogs/larryosterman/its-only-temporary).
 - `D` specifies a regular file that is written to disk. The difference is that it's automatically deleted when it's closed.
 You can combine `TD` to get both semantics.
 

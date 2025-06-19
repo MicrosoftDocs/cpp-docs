@@ -61,6 +61,8 @@ The following table lists the intrinsics available on x86 processors. The Techno
 | [`_castf64_u64`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_castf64_u64) |  | immintrin.h | `unsigned __int64 _castf64_u64 (double);` |
 | [`_castu32_f32`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_castu32_f32) |  | immintrin.h | `float _castu32_f32 (unsigned __int32);` |
 | [`_castu64_f64`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_castu64_f64) |  | immintrin.h | `double _castu64_f64 (unsigned __int64 a);` |
+| [`__check_isa_support`](check-isa-arch-support.md) |  | immintrin.h | `bool __check_isa_support(unsigned int, unsigned int);` |
+| [`__check_arch_support`](check-isa-arch-support.md) |  | immintrin.h | `bool __check_arch_support(unsigned int, unsigned int);` |
 | `_clac` | SMAP | intrin.h | `void _clac(void);` |
 | [`__cpuid`](cpuid-cpuidex.md) |  | intrin.h | `void __cpuid(int *, int);` |
 | [`__cpuidex`](cpuid-cpuidex.md) |  | intrin.h | `void __cpuidex(int *, int, int);` |
@@ -1137,7 +1139,7 @@ The following table lists the intrinsics available on x86 processors. The Techno
 | [`_mm256_set1_ps`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm256_set1_ps) | AVX | immintrin.h | `__m256 _mm256_set1_ps(float);` |
 | [`_mm256_setr_epi16`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm256_setr_epi16) | AVX | immintrin.h | `(__m256i _mm256_setr_epi16(short, short, short, short, short, short, short, short, short, short, short, short, short, short, short, short);` |
 | [`_mm256_setr_epi32`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm256_setr_epi32) | AVX | immintrin.h | `__m256i _mm256_setr_epi32(int, int, int, int, int, int, int, int);` |
-| [`_mm256_setr_epi8`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm256_setr_epi8) | AVX | immintrin.h | `(__m256i _mm256_setr_epi8(char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char,);` |
+| [`_mm256_setr_epi8`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm256_setr_epi8) | AVX | immintrin.h | `(__m256i _mm256_setr_epi8(char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char);` |
 | [`_mm256_setr_pd`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm256_setr_pd) | AVX | immintrin.h | `__m256d _mm256_setr_pd(double, double, double, double);` |
 | [`_mm256_setr_ps`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm256_setr_ps) | AVX | immintrin.h | `__m256 _mm256_setr_ps(float, float, float, float, float, float, float, float);` |
 | [`_mm256_setzero_pd`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm256_setzero_pd) | AVX | immintrin.h | `__m256d _mm256_setzero_pd(void);` |

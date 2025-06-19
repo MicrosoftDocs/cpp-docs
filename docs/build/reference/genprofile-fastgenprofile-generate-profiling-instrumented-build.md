@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
 title: "/GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
-ms.date: 04/14/2021
+description: "Learn more about: /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
+ms.date: 03/27/2025
 f1_keywords: ["GENPROFILE", "FASTGENPROFILE", "/GENPROFILE", "/FASTGENPROFILE"]
 helpviewer_keywords: ["GENPROFILE", "FASTGENPROFILE"]
 ---
@@ -12,7 +12,7 @@ Specifies generation of a *`.pgd`* file by the linker to support profile-guided 
 ## Syntax
 
 > **`/GENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]\
-> **`/FASTGENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]\
+> **`/FASTGENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]
 
 > *`profile-argument`*\
 > &emsp;{ **`COUNTER32`** &vert; **`COUNTER64`** }\
@@ -43,7 +43,7 @@ Use **`PATH`**  to specify a separate set of PGO counters for each unique path t
 Specifies whether to use extra counters to keep an accurate count when exceptions are thrown during training. Use **`TRACKEH`**  to specify extra counters for an exact count. Use **`NOTRACKEH`**  to specify single counters for code that doesn't use exception handling or that doesn't run into exceptions in your training scenarios.  When you specify **`/GENPROFILE`**, the default is **`TRACKEH`** . When you specify **`/FASTGENPROFILE`**, the default is **`NOTRACKEH`** .
 
 **`PGD`**=*filename*\
-Specifies a base file name for the *`.pgd`* file. By default, the linker uses the base executable image file name with a *`.pgd`* extension.
+Specifies a base filename for the *`.pgd`* file. By default, the linker uses the base executable image filename with a *`.pgd`* extension. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 

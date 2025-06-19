@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: concurrent_unordered_set Class"
 title: "concurrent_unordered_set Class"
-ms.date: "11/04/2016"
+description: "Learn more about: concurrent_unordered_set Class"
+ms.date: 11/04/2016
 f1_keywords: ["concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::hash_function", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::insert", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::key_eq", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::swap", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::unsafe_erase"]
 helpviewer_keywords: ["concurrent_unordered_set class"]
-ms.assetid: c61f9a9a-4fd9-491a-9251-e300737ecf4b
 ---
 # concurrent_unordered_set Class
 
@@ -16,15 +15,8 @@ The `concurrent_unordered_set` class is an concurrency-safe container that contr
 template <typename K,
     typename _Hasher = std::hash<K>,
     typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<K>
->,
-    typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<K>> class concurrent_unordered_set : public details::_Concurrent_hash<details::_Concurrent_unordered_set_traits<K,
-    details::_Hash_compare<K,
-_Hasher,
-    key_equality>,
-_Allocator_type,
-    false>>;
+    typename _Allocator_type = std::allocator<K>>
+class concurrent_unordered_set : public details::_Concurrent_hash<details::_Concurrent_unordered_set_traits<K, details::_Hash_compare<K, _Hasher, key_equality>, _Allocator_type, false>>;
 ```
 
 ### Parameters
@@ -393,7 +385,7 @@ A pair that contains an iterator and a boolean value. See the Remarks section fo
 
 The first member function determines whether an element X exists in the sequence whose key has equivalent ordering to that of `value`. If not, it creates such an element X and initializes it with `value`. The function then determines the iterator `where` that designates X. If an insertion occurred, the function returns `std::pair(where, true)`. Otherwise, it returns `std::pair(where, false)`.
 
-The second member function returns insert( `value`), using `_Where` as a starting place within the controlled sequence to search for the insertion point.
+The second member function returns insert(`value`), using `_Where` as a starting place within the controlled sequence to search for the insertion point.
 
 The third member function inserts the sequence of element values from the range [ `first`, `last`).
 
@@ -439,7 +431,7 @@ void max_load_factor(float _Newmax);
 
 ### Return Value
 
-The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid..
+The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid.
 
 ## <a name="max_size"></a> max_size
 
@@ -698,5 +690,5 @@ The maximum number of buckets in this container.
 
 ## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
+[concurrency Namespace](concurrency-namespace.md)\
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)

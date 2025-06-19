@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: ATL utilities reference"
 title: "ATL utilities reference"
-ms.date: "11/04/2016"
-ms.assetid: dd8a2888-34f4-461e-9bf4-834218f9b95b
+description: "Learn more about: ATL utilities reference"
+ms.date: 11/04/2016
 ---
 # ATL utilities reference
 
@@ -10,7 +9,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 
 ## Classes
 
-| &nbsp; | &nbsp; |
+| Name | Description |
 |--|--|
 | [CPathT class](../atl/reference/cpatht-class.md) | This class represents a path. |
 | [CDebugReportHook class](../atl/reference/cdebugreporthook-class.md) | Use this class to send debug reports to a named pipe. |
@@ -22,7 +21,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 
 ## Typedefs
 
-| &emsp; | &emsp; |
+| Name | Description |
 |--|--|
 | [CPath](../atl/reference/atl-typedefs.md#cpath) | A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CString`. |
 | [CPathA](../atl/reference/atl-typedefs.md#cpatha) | A specialization of [CPathT](../atl/reference/cpatht-class.md) using `CStringA`. |
@@ -31,13 +30,13 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 
 ## Enums
 
-| &emsp; | &emsp; |
+| Name | Description |
 |--|--|
 | [ATL_URL_SCHEME](../atl/reference/atl-url-scheme-enum.md) | The members of this enumeration provide constants for the schemes understood by [CUrl](../atl/reference/curl-class.md). |
 
 ## Functions
 
-| &emsp; | &emsp; |
+| Name | Description |
 |--|--|
 | [AtlCanonicalizeUrl](../atl/reference/atl-http-utility-functions.md#atlcanonicalizeurl) | Call this function to canonicalize a URL, which includes converting unsafe characters and spaces into escape sequences. |
 | [AtlCombineUrl](../atl/reference/atl-http-utility-functions.md#atlcombineurl) | Call this function to combine a base URL and a relative URL into a single, canonical URL. |
@@ -47,8 +46,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 | [AtlIsUnsafeUrlChar](../atl/reference/atl-http-utility-functions.md#atlisunsafeurlchar) | Call this function to find out whether a character is safe for use in a URL. |
 | [AtlUnescapeUrl](../atl/reference/atl-http-utility-functions.md#atlunescapeurl) | Call this function to convert escaped characters back to their original values. |
 | [SystemTimeToHttpDate](../atl/reference/atl-http-utility-functions.md#systemtimetohttpdate) | Call this function to convert a system time to a string in a format suitable for using in HTTP headers. |
-| [ATLPath::AddBackslash](../atl/reference/atl-path-functions.md#addbackslash) | This function is an overloaded wrapper for [PathAddBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddbackslasha |
-| ). |
+| [ATLPath::AddBackslash](../atl/reference/atl-path-functions.md#addbackslash) | This function is an overloaded wrapper for [PathAddBackslash](/windows/win32/api/shlwapi/nf-shlwapi-pathaddbackslasha). |
 | [ATLPath::AddExtension](../atl/reference/atl-path-functions.md#addextension) | This function is an overloaded wrapper for [PathAddExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathaddextensionw). |
 | [ATLPath::Append](../atl/reference/atl-path-functions.md#append) | This function is an overloaded wrapper for [PathAppend](/windows/win32/api/shlwapi/nf-shlwapi-pathappendw). |
 | [ATLPath::BuildRoot](../atl/reference/atl-path-functions.md#buildroot) | This function is an overloaded wrapper for [PathBuildRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathbuildrootw). |
@@ -87,5 +85,5 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 
 ## See also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)<br/>
+[Concepts](../atl/active-template-library-atl-concepts.md)\
 [ATL COM desktop components](../atl/atl-com-desktop-components.md)

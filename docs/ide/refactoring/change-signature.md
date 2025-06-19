@@ -2,6 +2,7 @@
 description: "Learn more about: Change Signature"
 title: "Change Signature"
 ms.date: "09/18/2022"
+f1_keywords: ["vc.pkg.refactoring.changesignaturedlg"]
 ---
 # Change Signature
 

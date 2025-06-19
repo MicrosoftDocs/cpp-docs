@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: How to: Access Characters in a System::String"
 title: "How to: Access Characters in a System::String"
+description: "Learn more about: How to: Access Characters in a System::String"
+ms.date: 11/04/2016
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
 helpviewer_keywords: ["characters [C++], accessing in System::String", "examples [C++], strings", "strings [C++], accessing characters"]
-ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
 ---
 # How to: Access Characters in a System::String
 
@@ -21,7 +20,7 @@ If you pass `ppchar` to a native function, then it must be a pinning pointer; th
 ```cpp
 // PtrToStringChars.cpp
 // compile with: /clr
-#include<vcclr.h>
+#include <vcclr.h>
 using namespace System;
 
 int main() {
@@ -54,7 +53,7 @@ size_t getlen(System::String ^ s) {
    // make sure it doesn't move during the unmanaged call
    pin_ptr<const wchar_t> pinchars = PtrToStringChars(s);
    return wcsnlen(pinchars, maxsize);
-};
+}
 
 int main() {
    System::Console::WriteLine(getlen("testing"));

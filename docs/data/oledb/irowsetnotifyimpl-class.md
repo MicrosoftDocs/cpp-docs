@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: IRowsetNotifyImpl Class"
 title: "IRowsetNotifyImpl Class"
+description: "Learn more about: IRowsetNotifyImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.IRowsetNotifyImpl", "ATL::IRowsetNotifyImpl", "IRowsetNotifyImpl", "IRowsetNotifyImpl.OnFieldChange", "IRowsetNotifyImpl::OnFieldChange", "OnFieldChange", "IRowsetNotifyImpl::OnRowChange", "IRowsetNotifyImpl.OnRowChange", "OnRowChange", "OnRowsetChange", "IRowsetNotifyImpl::OnRowsetChange", "IRowsetNotifyImpl.OnRowsetChange"]
 helpviewer_keywords: ["IRowsetNotifyImpl class", "OnFieldChange method", "OnRowChange method", "OnRowsetChange method"]
-ms.assetid: fbfd0cb2-38ff-4b42-899a-8de902f834b8
 ---
 # IRowsetNotifyImpl Class
 
@@ -121,6 +120,6 @@ This method wraps the [IRowsetNotify::OnRowsetChange](/previous-versions/windows
 
 ## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85))
+[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)\
+[IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85))\
 [IRowsetNotifyCP Class](../../data/oledb/irowsetnotifycp-class.md)

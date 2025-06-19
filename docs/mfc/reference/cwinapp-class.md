@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CWinApp Class"
 title: "CWinApp Class"
-ms.date: "07/15/2019"
+description: "Learn more about: CWinApp Class"
+ms.date: 07/15/2019
 f1_keywords: ["CWinApp", "AFXWIN/CWinApp", "AFXWIN/CWinApp::CWinApp", "AFXWIN/CWinApp::AddDocTemplate", "AFXWIN/CWinApp::AddToRecentFileList", "AFXWIN/CWinApp::ApplicationRecoveryCallback", "AFXWIN/CWinApp::CloseAllDocuments", "AFXWIN/CWinApp::CreatePrinterDC", "AFXWIN/CWinApp::DelRegTree", "AFXWIN/CWinApp::DoMessageBox", "AFXWIN/CWinApp::DoWaitCursor", "AFXWIN/CWinApp::EnableD2DSupport", "AFXWIN/CWinApp::EnableHtmlHelp", "AFXWIN/CWinApp::EnableTaskbarInteraction", "AFXWIN/CWinApp::ExitInstance", "AFXWIN/CWinApp::GetApplicationRecoveryParameter", "AFXWIN/CWinApp::GetApplicationRecoveryPingInterval", "AFXWIN/CWinApp::GetApplicationRestartFlags", "AFXWIN/CWinApp::GetAppRegistryKey", "AFXWIN/CWinApp::GetDataRecoveryHandler", "AFXWIN/CWinApp::GetFirstDocTemplatePosition", "AFXWIN/CWinApp::GetHelpMode", "AFXWIN/CWinApp::GetNextDocTemplate", "AFXWIN/CWinApp::GetPrinterDeviceDefaults", "AFXWIN/CWinApp::GetProfileBinary", "AFXWIN/CWinApp::GetProfileInt", "AFXWIN/CWinApp::GetProfileString", "AFXWIN/CWinApp::GetSectionKey", "AFXWIN/CWinApp::HideApplication", "AFXWIN/CWinApp::HtmlHelp", "AFXWIN/CWinApp::InitInstance", "AFXWIN/CWinApp::IsTaskbarInteractionEnabled", "AFXWIN/CWinApp::LoadCursor", "AFXWIN/CWinApp::LoadIcon", "AFXWIN/CWinApp::LoadOEMCursor", "AFXWIN/CWinApp::LoadOEMIcon", "AFXWIN/CWinApp::LoadStandardCursor", "AFXWIN/CWinApp::LoadStandardIcon", "AFXWIN/CWinApp::OnDDECommand", "AFXWIN/CWinApp::OnIdle", "AFXWIN/CWinApp::OpenDocumentFile", "AFXWIN/CWinApp::ParseCommandLine", "AFXWIN/CWinApp::PreTranslateMessage", "AFXWIN/CWinApp::ProcessMessageFilter", "AFXWIN/CWinApp::ProcessShellCommand", "AFXWIN/CWinApp::ProcessWndProcException", "AFXWIN/CWinApp::Register", "AFXWIN/CWinApp::RegisterWithRestartManager", "AFXWIN/CWinApp::ReopenPreviousFilesAtRestart", "AFXWIN/CWinApp::RestartInstance", "AFXWIN/CWinApp::RestoreAutosavedFilesAtRestart", "AFXWIN/CWinApp::Run", "AFXWIN/CWinApp::RunAutomated", "AFXWIN/CWinApp::RunEmbedded", "AFXWIN/CWinApp::SaveAllModified", "AFXWIN/CWinApp::SelectPrinter", "AFXWIN/CWinApp::SetHelpMode", "AFXWIN/CWinApp::SupportsApplicationRecovery", "AFXWIN/CWinApp::SupportsAutosaveAtInterval", "AFXWIN/CWinApp::SupportsAutosaveAtRestart", "AFXWIN/CWinApp::SupportsRestartManager", "AFXWIN/CWinApp::Unregister", "AFXWIN/CWinApp::WinHelp", "AFXWIN/CWinApp::WriteProfileBinary", "AFXWIN/CWinApp::WriteProfileInt", "AFXWIN/CWinApp::WriteProfileString", "AFXWIN/CWinApp::EnableShellOpen", "AFXWIN/CWinApp::LoadStdProfileSettings", "AFXWIN/CWinApp::OnContextHelp", "AFXWIN/CWinApp::OnFileNew", "AFXWIN/CWinApp::OnFileOpen", "AFXWIN/CWinApp::OnFilePrintSetup", "AFXWIN/CWinApp::OnHelp", "AFXWIN/CWinApp::OnHelpFinder", "AFXWIN/CWinApp::OnHelpIndex", "AFXWIN/CWinApp::OnHelpUsing", "AFXWIN/CWinApp::RegisterShellFileTypes", "AFXWIN/CWinApp::SetAppID", "AFXWIN/CWinApp::SetRegistryKey", "AFXWIN/CWinApp::UnregisterShellFileTypes", "AFXWIN/CWinApp::m_bHelpMode", "AFXWIN/CWinApp::m_eHelpType", "AFXWIN/CWinApp::m_hInstance", "AFXWIN/CWinApp::m_lpCmdLine", "AFXWIN/CWinApp::m_nCmdShow", "AFXWIN/CWinApp::m_pActiveWnd", "AFXWIN/CWinApp::m_pszAppID", "AFXWIN/CWinApp::m_pszAppName", "AFXWIN/CWinApp::m_pszExeName", "AFXWIN/CWinApp::m_pszHelpFilePath", "AFXWIN/CWinApp::m_pszProfileName", "AFXWIN/CWinApp::m_pszRegistryKey", "AFXWIN/CWinApp::m_dwRestartManagerSupportFlags", "AFXWIN/CWinApp::m_nAutosaveInterval", "AFXWIN/CWinApp::m_pDataRecoveryHandler"]
 helpviewer_keywords: ["CWinApp [MFC], CWinApp", "CWinApp [MFC], AddDocTemplate", "CWinApp [MFC], AddToRecentFileList", "CWinApp [MFC], ApplicationRecoveryCallback", "CWinApp [MFC], CloseAllDocuments", "CWinApp [MFC], CreatePrinterDC", "CWinApp [MFC], DelRegTree", "CWinApp [MFC], DoMessageBox", "CWinApp [MFC], DoWaitCursor", "CWinApp [MFC], EnableD2DSupport", "CWinApp [MFC], EnableHtmlHelp", "CWinApp [MFC], EnableTaskbarInteraction", "CWinApp [MFC], ExitInstance", "CWinApp [MFC], GetApplicationRecoveryParameter", "CWinApp [MFC], GetApplicationRecoveryPingInterval", "CWinApp [MFC], GetApplicationRestartFlags", "CWinApp [MFC], GetAppRegistryKey", "CWinApp [MFC], GetDataRecoveryHandler", "CWinApp [MFC], GetFirstDocTemplatePosition", "CWinApp [MFC], GetHelpMode", "CWinApp [MFC], GetNextDocTemplate", "CWinApp [MFC], GetPrinterDeviceDefaults", "CWinApp [MFC], GetProfileBinary", "CWinApp [MFC], GetProfileInt", "CWinApp [MFC], GetProfileString", "CWinApp [MFC], GetSectionKey", "CWinApp [MFC], HideApplication", "CWinApp [MFC], HtmlHelp", "CWinApp [MFC], InitInstance", "CWinApp [MFC], IsTaskbarInteractionEnabled", "CWinApp [MFC], LoadCursor", "CWinApp [MFC], LoadIcon", "CWinApp [MFC], LoadOEMCursor", "CWinApp [MFC], LoadOEMIcon", "CWinApp [MFC], LoadStandardCursor", "CWinApp [MFC], LoadStandardIcon", "CWinApp [MFC], OnDDECommand", "CWinApp [MFC], OnIdle", "CWinApp [MFC], OpenDocumentFile", "CWinApp [MFC], ParseCommandLine", "CWinApp [MFC], PreTranslateMessage", "CWinApp [MFC], ProcessMessageFilter", "CWinApp [MFC], ProcessShellCommand", "CWinApp [MFC], ProcessWndProcException", "CWinApp [MFC], Register", "CWinApp [MFC], RegisterWithRestartManager", "CWinApp [MFC], ReopenPreviousFilesAtRestart", "CWinApp [MFC], RestartInstance", "CWinApp [MFC], RestoreAutosavedFilesAtRestart", "CWinApp [MFC], Run", "CWinApp [MFC], RunAutomated", "CWinApp [MFC], RunEmbedded", "CWinApp [MFC], SaveAllModified", "CWinApp [MFC], SelectPrinter", "CWinApp [MFC], SetHelpMode", "CWinApp [MFC], SupportsApplicationRecovery", "CWinApp [MFC], SupportsAutosaveAtInterval", "CWinApp [MFC], SupportsAutosaveAtRestart", "CWinApp [MFC], SupportsRestartManager", "CWinApp [MFC], Unregister", "CWinApp [MFC], WinHelp", "CWinApp [MFC], WriteProfileBinary", "CWinApp [MFC], WriteProfileInt", "CWinApp [MFC], WriteProfileString", "CWinApp [MFC], EnableShellOpen", "CWinApp [MFC], LoadStdProfileSettings", "CWinApp [MFC], OnContextHelp", "CWinApp [MFC], OnFileNew", "CWinApp [MFC], OnFileOpen", "CWinApp [MFC], OnFilePrintSetup", "CWinApp [MFC], OnHelp", "CWinApp [MFC], OnHelpFinder", "CWinApp [MFC], OnHelpIndex", "CWinApp [MFC], OnHelpUsing", "CWinApp [MFC], RegisterShellFileTypes", "CWinApp [MFC], SetAppID", "CWinApp [MFC], SetRegistryKey", "CWinApp [MFC], UnregisterShellFileTypes", "CWinApp [MFC], m_bHelpMode", "CWinApp [MFC], m_eHelpType", "CWinApp [MFC], m_hInstance", "CWinApp [MFC], m_lpCmdLine", "CWinApp [MFC], m_nCmdShow", "CWinApp [MFC], m_pActiveWnd", "CWinApp [MFC], m_pszAppID", "CWinApp [MFC], m_pszAppName", "CWinApp [MFC], m_pszExeName", "CWinApp [MFC], m_pszHelpFilePath", "CWinApp [MFC], m_pszProfileName", "CWinApp [MFC], m_pszRegistryKey", "CWinApp [MFC], m_dwRestartManagerSupportFlags", "CWinApp [MFC], m_nAutosaveInterval", "CWinApp [MFC], m_pDataRecoveryHandler"]
-ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
 ---
 # CWinApp Class
 
@@ -962,7 +961,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
 ### Parameters
 
 *nIDCursor*<br/>
-An **OCR_** manifest constant identifier that specifies a predefined Windows cursor. You must have `#define OEMRESOURCE` before `#include \<afxwin.h>` to gain access to the **OCR_** constants in WINDOWS.H.
+An **OCR_** manifest constant identifier that specifies a predefined Windows cursor. You must have `#define OEMRESOURCE` before `#include <afxwin.h>` to gain access to the **OCR_** constants in WINDOWS.H.
 
 ### Return Value
 
@@ -989,7 +988,7 @@ HICON LoadOEMIcon(UINT nIDIcon) const;
 ### Parameters
 
 *nIDIcon*<br/>
-An **OIC_** manifest constant identifier that specifies a predefined Windows icon. You must have `#define OEMRESOURCE` before `#include \<afxwin.h>` to access the **OIC_** constants in WINDOWS.H.
+An **OIC_** manifest constant identifier that specifies a predefined Windows icon. You must have `#define OEMRESOURCE` before `#include <afxwin.h>` to access the **OIC_** constants in WINDOWS.H.
 
 ### Return Value
 
@@ -1535,7 +1534,7 @@ The framework calls this method to open the named [CDocument](../../mfc/referenc
 
 ```
 virtual CDocument* OpenDocumentFile(
-    LPCTSTR lpszFileName
+    LPCTSTR lpszFileName,
     BOOL bAddToMRU = TRUE);
 ```
 
@@ -1621,7 +1620,7 @@ virtual BOOL ProcessMessageFilter(
 Specifies a hook code. This member function uses the code to determine how to process *lpMsg.*
 
 *lpMsg*<br/>
-A pointer to a Windows [MSG](/windows/win32/api/winuser/ns-winuser-msg)tructure.
+A pointer to a Windows [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure.
 
 ### Return Value
 
@@ -1692,7 +1691,7 @@ virtual LRESULT ProcessWndProcException(
 A pointer to an uncaught exception.
 
 *pMsg*<br/>
-A [MSG](/windows/win32/api/winuser/ns-winuser-msg)tructure that contains information about the windows message that caused the framework to throw an exception.
+A [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure that contains information about the windows message that caused the framework to throw an exception.
 
 ### Return Value
 
@@ -1936,7 +1935,7 @@ void SelectPrinter(
 ### Parameters
 
 *hDevNames*<br/>
-A handle to a [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames)tructure that identifies the driver, device, and output port names of a specific printer.
+A handle to a [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames) structure that identifies the driver, device, and output port names of a specific printer.
 
 *hDevMode*<br/>
 A handle to a [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) structure that specifies information about the device initialization and environment of a printer.

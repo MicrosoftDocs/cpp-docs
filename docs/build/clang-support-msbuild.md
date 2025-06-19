@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Clang/LLVM support in Visual Studio projects"
 title: "Clang/LLVM support in Visual Studio projects"
+description: "Learn more about: Clang/LLVM support in Visual Studio projects"
 ms.date: 03/13/2024
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
@@ -57,7 +57,7 @@ To configure a Visual Studio project to use Clang, right-click on the project no
 The project properties page is open to the Configuration Properties > General page. The Platform Toolset dropdown is selected, on which LLVM (clang-cl) is selected.
 :::image-end:::
 
-If you're using the Clang tools that are bundled with Visual Studio, no extra steps are required. For Windows projects, Visual Studio by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode. It links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in `*%VCINSTALLDIR%\Tools\Llvm\bin\*` and `*%VCINSTALLDIR%\Tools\Llvm\x64\bin\*`.
+If you're using the Clang tools that are bundled with Visual Studio, no extra steps are required. For Windows projects, Visual Studio by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode. It links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in *`%VCINSTALLDIR%\Tools\Llvm\bin\`* and *`%VCINSTALLDIR%\Tools\Llvm\x64\bin\`*.
 
 If you're using a custom Clang installation, you can change the value of the `LLVMInstallDir` property. For more information, see [Set a custom LLVM location](#custom_llvm_location).
 
@@ -116,5 +116,7 @@ After you have set up a Clang configuration, right-click again on the project no
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features.  
 
 :::image type="complex" source="media/clang-debug-msbuild.png" alt-text="Screenshot of Visual Studio debugging a sample app":::
-The portion of the app that is visible creates a string vector and adds some strings to it. Execution has stopped on a breakpoint for the code: v.push_back("Clang/LLVM");."
+The portion of the app that is visible creates a string vector and adds some strings to it. Execution has stopped on a breakpoint for the code: v.push_back("Clang/LLVM");.
+:::image-end:::
+
 ::: moniker-end

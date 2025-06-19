@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /LARGEADDRESSAWARE (Handle Large Addresses)"
 title: "/LARGEADDRESSAWARE (Handle Large Addresses)"
+description: "Learn more about: /LARGEADDRESSAWARE (Handle Large Addresses)"
 ms.date: "02/12/2024"
 f1_keywords: ["VC.Project.VCLinkerTool.LargeAddressAware", "/largeaddressaware"]
 helpviewer_keywords: ["LARGEADDRESSAWARE linker option", "-LARGEADDRESSAWARE linker option", "/LARGEADDRESSAWARE linker option"]
@@ -17,7 +17,7 @@ The /LARGEADDRESSAWARE option tells the linker that the application can handle a
 
 If an application was linked with `/LARGEADDRESSAWARE`, `DUMPBIN` [/HEADERS](headers.md) will display information to that effect.
 
-Linking 64-bit applications with **`/LARGEADDRESSAWARE:NO`** is not recommended because it restricts the available address space, which can result in runtime failures if the app exhausts memory. It may also prevent x64 apps from running on ARM64 systems because the emulation runtime will try to reserve 4GB of virtual address space. If the app was linked with `/LARGEADRESSAWARE:NO`, the app won't launch because it can't allocate that much address space.
+Linking 64-bit applications with **`/LARGEADDRESSAWARE:NO`** is not recommended because it restricts the available address space, which can result in runtime failures if the app exhausts memory. It may also prevent x64 apps from running on ARM64 systems because the emulation runtime will try to reserve 4GB of virtual address space. If the app was linked with `/LARGEADDRESSAWARE:NO`, the app won't launch because it can't allocate that much address space.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -33,5 +33,5 @@ Linking 64-bit applications with **`/LARGEADDRESSAWARE:NO`** is not recommended 
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
+[MSVC linker reference](linking.md)\
 [MSVC Linker Options](linker-options.md)

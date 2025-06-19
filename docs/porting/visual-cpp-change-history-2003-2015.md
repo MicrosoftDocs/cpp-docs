@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ change history 2003 - 2015"
 description: "Find all the breaking changes in Microsoft C/C++ from Visual Studio 2003 through Visual Studio 2015 here."
-ms.date: "5/25/2023"
+ms.date: 5/25/2023
 helpviewer_keywords: ["breaking changes [C++]"]
 ---
 # Microsoft C/C++ change history 2003 - 2015
@@ -622,7 +622,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Adjacent string literals**
 
-   Similarly to the previous, due to related changes in string parsing, adjacent string literals (either wide or narrow character string literals) without any whitespace were interpreted as a single concatenated string in previous releases of Visaul C++. In Visual Studio 2015, you must now add whitespace between the two strings. For example, the following code must be changed:
+   Similarly to the previous, due to related changes in string parsing, adjacent string literals (either wide or narrow character string literals) without any whitespace were interpreted as a single concatenated string in previous releases of Visual C++. In Visual Studio 2015, you must now add whitespace between the two strings. For example, the following code must be changed:
 
     ```cpp
     char * str = "abc""def";
@@ -1650,10 +1650,10 @@ Although these differences can affect your source code or other build artifacts,
 
     //b.cpp
     // compile with cl.exe /nologo /LD /EHsc /Osx b.cpp
-    #pragma comment(lib, "A")
+    #pragma comment(lib, "A")
     class __declspec(dllimport) A
     {
-    public: A();
+    public: A();
             A(const A&);
             virtual ~A();
     private:
@@ -1667,7 +1667,7 @@ Although these differences can affect your source code or other build artifacts,
 
     //c.cpp
     #pragma comment(lib, "A")
-    #pragma comment(lib, "B")
+    #pragma comment(lib, "B")
     class __declspec(dllimport) A
     {
     public:
@@ -3365,7 +3365,7 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 - The syntax for SAL Annotations has changed. For more information, see [SAL Annotations](../c-runtime-library/sal-annotations.md).
 
-- The IEEE filter now supports the SSE 4.1 instruction set. For more information, see [_fpieee_flt](../c-runtime-library/reference/fpieee-flt.md)_fpieee_flt.
+- The IEEE filter now supports the SSE 4.1 instruction set. For more information, see [`_fpieee_flt`](../c-runtime-library/reference/fpieee-flt.md).
 
 - The C Run-Time Libraries that ship with Visual Studio are no longer dependent on the system DLL msvcrt.dll.
 

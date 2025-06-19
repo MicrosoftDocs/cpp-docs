@@ -591,6 +591,10 @@ items:
     href: ../code-quality/c26117.md
   - name: Warning C26130
     href: ../code-quality/c26130.md
+  - name: Warning C26132
+    href: c26132.md
+  - name: Warning C26133
+    href: c26133.md
   - name: Warning C26135
     href: ../code-quality/c26135.md
   - name: Warning C26138
@@ -633,6 +637,10 @@ items:
     href: ../code-quality/c26830.md
   - name: Warning C26831
     href: ../code-quality/c26831.md
+  - name: Warning C26838
+    href: ../code-quality/c26838.md
+  - name: Warning C26839
+    href: ../code-quality/c26839.md
   - name: Warning C26832
     href: ../code-quality/c26832.md
   - name: Warning C26833

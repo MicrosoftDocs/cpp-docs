@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: <regex>"
 title: "<regex>"
-ms.date: "11/04/2016"
+description: "Learn more about: <regex>"
+ms.date: 11/04/2016
 f1_keywords: ["<regex>"]
 helpviewer_keywords: ["regex header"]
 ---
@@ -17,9 +17,9 @@ Defines a class template to parse [Regular Expressions (C++)](../standard-librar
 
 ## Remarks
 
-To create a regular expression object, use the class template [`basic_regex` Class](../standard-library/basic-regex-class.md) or one of its specializations, [`regex`](../standard-library/regex-typedefs.md#regex) and [`wregex`](../standard-library/regex-typedefs.md#wregex), together with the syntax flags of type [`regex_constants::syntax_option_type`](../standard-library/regex-constants-class.md#syntax_option_type).
+To create a regular expression object, use the class template [`basic_regex`](../standard-library/basic-regex-class.md) or one of its specializations, [`regex`](../standard-library/regex-typedefs.md#regex) and [`wregex`](../standard-library/regex-typedefs.md#wregex), together with the syntax flags of type [`regex_constants::syntax_option_type`](../standard-library/regex-constants-class.md#syntax_option_type).
 
-To search text for matches to a regular expression object, use the template functions [`regex_match`](../standard-library/regex-functions.md#regex_match) and [`regex_search`](../standard-library/regex-functions.md#regex_search), together with the match flags of type [`regex_constants::match_flag_type`](../standard-library/regex-constants-class.md#match_flag_type). These functions return results by using the class template [`match_results` Class](../standard-library/match-results-class.md) and its specializations, [`cmatch`](../standard-library/regex-typedefs.md#cmatch), [`wcmatch`](../standard-library/regex-typedefs.md#wcmatch), [`smatch`](../standard-library/regex-typedefs.md#smatch), and [`wsmatch`](../standard-library/regex-typedefs.md#wsmatch), together with the class template [`sub_match` Class](../standard-library/sub-match-class.md) and its specializations, [`csub_match`](../standard-library/regex-typedefs.md#csub_match), [`wcsub_match`](../standard-library/regex-typedefs.md#wcsub_match), [`ssub_match`](../standard-library/regex-typedefs.md#ssub_match), and [`wssub_match`](../standard-library/regex-typedefs.md#wssub_match).
+To search text for matches to a regular expression object, use the template functions [`regex_match`](../standard-library/regex-functions.md#regex_match) and [`regex_search`](../standard-library/regex-functions.md#regex_search), together with the match flags of type [`regex_constants::match_flag_type`](../standard-library/regex-constants-class.md#match_flag_type). These functions return results by using the class template [`match_results`](../standard-library/match-results-class.md) and its specializations, [`cmatch`](../standard-library/regex-typedefs.md#cmatch), [`wcmatch`](../standard-library/regex-typedefs.md#wcmatch), [`smatch`](../standard-library/regex-typedefs.md#smatch), and [`wsmatch`](../standard-library/regex-typedefs.md#wsmatch), together with the class template [`sub_match`](../standard-library/sub-match-class.md) and its specializations, [`csub_match`](../standard-library/regex-typedefs.md#csub_match), [`wcsub_match`](../standard-library/regex-typedefs.md#wcsub_match), [`ssub_match`](../standard-library/regex-typedefs.md#ssub_match), and [`wssub_match`](../standard-library/regex-typedefs.md#wssub_match).
 
 To replace text that matches a regular expression object, use the template function [`regex_replace`](../standard-library/regex-functions.md#regex_replace), together with the match flags of type [`regex_constants::match_flag_type`](../standard-library/regex-constants-class.md#match_flag_type).
 
@@ -81,7 +81,7 @@ To modify the details of the grammar of regular expressions, write a class that 
 |[`operator==`](../standard-library/regex-operators.md#op_eq_eq)|Comparison of various objects, equal.|
 |[`operator!=`](../standard-library/regex-operators.md#op_neq)|Comparison of various objects, not equal.|
 |[`operator<`](../standard-library/regex-operators.md#op_lt)|Comparison of various objects, less than.|
-|[`operator\<=`](../standard-library/regex-operators.md#op_gt_eq)|Comparison of various objects, less than or equal.|
+|[`operator<=`](../standard-library/regex-operators.md#op_gt_eq)|Comparison of various objects, less than or equal.|
 |[`operator>`](../standard-library/regex-operators.md#op_gt)|Comparison of various objects, greater than.|
 |[`operator>=`](../standard-library/regex-operators.md#op_gt_eq)|Comparison of various objects, greater than or equal.|
 |[`operator<<`](../standard-library/regex-operators.md#op_lt_lt)|Inserts a `sub_match` in a stream.|

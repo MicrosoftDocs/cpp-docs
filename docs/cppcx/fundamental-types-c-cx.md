@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Fundamental types (C++/CX)"
 title: "Fundamental types (C++/CX)"
+description: "Learn more about: Fundamental types (C++/CX)"
 ms.date: "01/22/2017"
-ms.assetid: c9f82907-25f2-440b-91d6-afb8dbd46ea6
 ---
 # Fundamental types (C++/CX)
 
-In addition to the standard C++ built-in types, C++/CX supports the type system that's defined by the Windows Runtime architecture by providing typedefs for the Windows Runtime fundamental types that map to standard C++ types.. C++/CX implements Boolean, character, and numeric fundamental types. These typedefs are defined in the `default` namespace, which never needs to be specified explicitly. In addition, C++/CX provides wrappers and concrete implementations for certain Windows Runtime types and interfaces.
+In addition to the standard C++ built-in types, C++/CX supports the type system that's defined by the Windows Runtime architecture by providing typedefs for the Windows Runtime fundamental types that map to standard C++ types. C++/CX implements Boolean, character, and numeric fundamental types. These typedefs are defined in the `default` namespace, which never needs to be specified explicitly. In addition, C++/CX provides wrappers and concrete implementations for certain Windows Runtime types and interfaces.
 
 ## Boolean and Character Types
 

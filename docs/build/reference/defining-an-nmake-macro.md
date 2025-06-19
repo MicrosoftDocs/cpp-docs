@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Defining an NMAKE Macro"
 title: "Define an NMAKE Macro"
+description: "Learn more about: Defining an NMAKE Macro"
 ms.date: 09/30/2021
 helpviewer_keywords: ["macros, NMAKE", "defining NMAKE macros", "NMAKE macros, defining", "defining macros", "NMAKE program, defining macros", "NMAKE program, undefined macros", "Null macros in NMAKE", "macros, null and undefined", "undefined macros and NMAKE", "NMAKE program, null macros", "special characters, in NMAKE macros"]
 ---
@@ -16,7 +16,7 @@ The *macro_name* is a case-sensitive combination of letters, digits, and undersc
 
 The *string* can be any sequence of zero or more characters. A *null* string contains zero characters or only spaces or tabs. The *string* can contain a macro invocation.
 
-## <a name="special-characters-in-macros"> Special characters in macros
+## <a name="special-characters-in-macros"></a> Special characters in macros
 
 A number sign (**`#`**) after a definition specifies a comment. To specify a literal number sign in a macro, use a caret (**`^`**) to escape it, as in **`^#`**.
 
@@ -31,11 +31,11 @@ CMDS = cls^
 dir
 ```
 
-## <a name="null-and-undefined-macros"> Null and undefined macros
+## <a name="null-and-undefined-macros"></a> Null and undefined macros
 
 Both null and undefined macros expand to null strings, but a macro defined as a null string is considered defined in preprocessing expressions. To define a macro as a null string, specify no characters except spaces or tabs after the equal sign (**`=`**) in a command line or command file, and enclose the null string or definition in double quotation marks (**`" "`**). To undefine a macro, use **`!UNDEF`**. For more information, see [Makefile preprocessing directives](makefile-preprocessing.md#makefile-preprocessing-directives).
 
-## <a name="where-to-define-macros"> Where to define macros
+## <a name="where-to-define-macros"></a> Where to define macros
 
 Define macros in a command line, command file, makefile, or the *`Tools.ini`* file.
 
@@ -43,7 +43,7 @@ In a makefile or the *`Tools.ini`* file, each macro definition must appear on a 
 
 In a command line or command file, spaces and tabs delimit arguments and can't surround the equal sign. If *string* has embedded spaces or tabs, enclose either the string itself or the entire macro in double quotation marks (**`" "`**).
 
-## <a name="precedence-in-macro-definitions"> Precedence in macro definitions
+## <a name="precedence-in-macro-definitions"></a> Precedence in macro definitions
 
 If a macro has multiple definitions, NMAKE uses the highest-precedence definition. The following list shows the order of precedence, from highest to lowest:
 

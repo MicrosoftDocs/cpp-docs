@@ -8,7 +8,9 @@ ms.assetid: 32797935-9c79-46e0-bf6f-07d0c2bf1dc1
 ---
 # .DATA
 
- (32-bit MASM only.) When used with [.MODEL](dot-model.md), starts a near data segment for initialized data (segment name _DATA).
+Indicates the start of a data segment.
+
+When using 32-bit MASM, this starts a near data segment for initialized data (segment name _DATA) and should be used along with [.MODEL](dot-model.md).
 
 ## Syntax
 

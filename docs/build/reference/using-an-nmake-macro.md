@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Using an NMAKE macro"
 title: "Use an NMAKE macro"
+description: "Learn more about: Using an NMAKE macro"
 ms.date: 09/30/2021
 helpviewer_keywords: ["macros, NMAKE", "NMAKE macros, using", "NMAKE program, macro substitution", "substitution macros in NMAKE", "NMAKE functions", "functions, NMAKE"]
 ---
@@ -14,7 +14,7 @@ $(macro_name)
 
 No spaces are allowed. The parentheses are optional if *macro_name* is a single character. The definition string replaces `$(macro_name)`; an undefined macro is replaced by a null string.
 
-## <a name="macro-substitution"> Macro substitution
+## <a name="macro-substitution"></a> Macro substitution
 
 When *macro_name* is invoked, each occurrence of *string1* in its definition string is replaced by *string2*.
 
@@ -28,11 +28,11 @@ No spaces or tabs precede the colon (**`:`**); any spaces or tabs after the colo
 
 ::: moniker range=">=msvc-170"
 
-## <a name="functions"> Macro functions
+## <a name="functions"></a> Macro functions
 
 NMAKE provides a set of functions that can be used to modify strings, lists of items and file paths. These functions are available in NMAKE starting in Visual Studio 2022.
 
-### <a name="functions-syntax"> Function syntax
+### <a name="functions-syntax"></a> Function syntax
 
 Functions use the following syntax:
 
@@ -57,7 +57,7 @@ INPUT=a, b
 $(subst $(COMMA) , and ,$(INPUT)) # Evaluates to "a and b"
 ```
 
-### <a name="function-list-syntax"> List syntax
+### <a name="function-list-syntax"></a> List syntax
 
 Some functions support a whitespace-separated list of items. Extra whitespace is ignored at the beginning of the list, the end of the list, or between each item. Lists produced by a function use a single space between each item as a separator, and don't have leading or trailing whitespace.
 
@@ -67,7 +67,7 @@ For example, the simplest list function is `strip`, which takes a single list ar
 $(strip a   b   c d    ) # Evaluates to "a b c d"
 ```
 
-### <a name="function-pattern-syntax"> Pattern syntax
+### <a name="function-pattern-syntax"></a> Pattern syntax
 
 Some functions support using a *pattern*. A pattern is a string that contains a single wildcard that can match any number of characters. The first `%` in a pattern is the wildcard, and any later `%` characters are treated as literals. A `%` anywhere before the actual wildcard can be escaped by using `\` (that is, `\%` is treated as a literal `%`). Any `\` that would escape the wildcard can be escaped with another `\` (so `\\%` is treated as a literal `\` followed by the wildcard). To be considered a match, all of the input characters must be matched by the pattern; partial matches aren't supported.
 
@@ -86,7 +86,7 @@ $(filter a%c\\%d,abc\\%d) # Evaluates to "abc\\%d" - any `\` after the wildcard 
 $(filter \\a%f,\\abcdef) # Evaluates to "\\abcdef" - any `\\` that isn't directly before the wildcard isn't treated as an escape
 ```
 
-### <a name="functions-by-category"> Functions by category
+### <a name="functions-by-category"></a> Functions by category
 
 | Function | Purpose | Supported |
 |--|--|--|

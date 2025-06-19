@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: `__declspec`"
 title: "__declspec"
-ms.date: 03/01/2022
+description: "Learn more about: `__declspec`"
+ms.date: 1/14/2025
 f1_keywords: ["__declspec_cpp", "__declspec", "_declspec"]
 helpviewer_keywords: ["__declspec keyword [C++]"]
 ---
@@ -9,7 +9,7 @@ helpviewer_keywords: ["__declspec keyword [C++]"]
 
 **Microsoft Specific**
 
-The extended attribute syntax for specifying storage-class information uses the **`__declspec`** keyword, which specifies that an instance of a given type is to be stored with a Microsoft-specific storage-class attribute listed below. Examples of other storage-class modifiers include the **`static`** and **`extern`** keywords. However, these keywords are part of the ANSI specification of the C and C++ languages, and as such aren't covered by extended attribute syntax. The extended attribute syntax simplifies and standardizes Microsoft-specific extensions to the C and C++ languages.
+The extended attribute syntax for specifying storage-class information uses the `__declspec` keyword, which specifies that an instance of a given type is to be stored with a Microsoft-specific storage-class attribute listed below. Examples of other storage-class modifiers include the `static` and `extern` keywords. However, these keywords are part of the ANSI specification of the C and C++ languages, and as such aren't covered by extended attribute syntax. The extended attribute syntax simplifies and standardizes Microsoft-specific extensions to the C and C++ languages.
 
 ## Grammar
 
@@ -30,6 +30,7 @@ The extended attribute syntax for specifying storage-class information uses the 
 &emsp;**`dllimport`**\
 &emsp;**`dllexport`**\
 &emsp;**`empty_bases`**\
+&emsp;**`hybrid_patchable`**\
 &emsp;**`jitintrinsic`**\
 &emsp;**`naked`**\
 &emsp;**`noalias`**\
@@ -49,7 +50,7 @@ The extended attribute syntax for specifying storage-class information uses the 
 
 White space separates the declaration modifier sequence. Examples appear in later sections.
 
-Extended attribute grammar supports these Microsoft-specific storage-class attributes: [`align`](../cpp/align-cpp.md), [`allocate`](../cpp/allocate.md), [`allocator`](../cpp/allocator.md), [`appdomain`](../cpp/appdomain.md), [`code_seg`](../cpp/code-seg-declspec.md), [`deprecated`](../cpp/deprecated-cpp.md), [`dllexport`](../cpp/dllexport-dllimport.md), [`dllimport`](../cpp/dllexport-dllimport.md), [`empty_bases`](../cpp/empty-bases.md), [`jitintrinsic`](../cpp/jitintrinsic.md), [`naked`](../cpp/naked-cpp.md), [`noalias`](../cpp/noalias.md), [`noinline`](../cpp/noinline.md), [`noreturn`](../cpp/noreturn.md), [`nothrow`](../cpp/nothrow-cpp.md), [`novtable`](../cpp/novtable.md), [`no_sanitize_address`](../cpp/no-sanitize-address.md),[`process`](../cpp/process.md), [`restrict`](../cpp/restrict.md), [`safebuffers`](../cpp/safebuffers.md), [`selectany`](../cpp/selectany.md), [`spectre`](../cpp/spectre.md), and [`thread`](../cpp/thread.md). It also supports these COM-object attributes: [`property`](../cpp/property-cpp.md) and [`uuid`](../cpp/uuid-cpp.md).
+Extended attribute grammar supports these Microsoft-specific storage-class attributes: [`align`](align-cpp.md), [`allocate`](allocate.md), [`allocator`](allocator.md), [`appdomain`](appdomain.md), [`code_seg`](code-seg-declspec.md), [`deprecated`](deprecated-cpp.md), [`dllexport`](dllexport-dllimport.md), [`dllimport`](dllexport-dllimport.md), [`empty_bases`](empty-bases.md), [`jitintrinsic`](jitintrinsic.md), [`naked`](naked-cpp.md), [`noalias`](noalias.md), [`noinline`](noinline.md), [`noreturn`](noreturn.md), [`nothrow`](nothrow-cpp.md), [`novtable`](novtable.md), [`no_sanitize_address`](no-sanitize-address.md), [`process`](process.md), [`restrict`](restrict.md), [`safebuffers`](safebuffers.md), [`selectany`](selectany.md), [`spectre`](spectre.md), and [`thread`](thread.md). It also supports these COM-object attributes: [`property`](property-cpp.md) and [`uuid`](uuid-cpp.md).
 
 The **`code_seg`**, **`dllexport`**, **`dllimport`**, **`empty_bases`**, **`naked`**, **`noalias`**, **`nothrow`**, **`no_sanitize_address`**, **`property`**, **`restrict`**, **`selectany`**, **`thread`**, and **`uuid`** storage-class attributes are properties only of the declaration of the object or function to which they're applied. The **`thread`** attribute affects data and objects only. The **`naked`** and **`spectre`** attributes affect functions only. The **`dllimport`** and **`dllexport`** attributes affect functions, data, and objects. The **`property`**, **`selectany`**, and **`uuid`** attributes affect COM objects.
 
@@ -94,5 +95,5 @@ __declspec( thread ) int tls_i = 1;
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)\
+[Keywords](keywords-cpp.md)\
 [C extended storage-class attributes](../c-language/c-extended-storage-class-attributes.md)

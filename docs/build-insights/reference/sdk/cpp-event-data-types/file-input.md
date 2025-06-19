@@ -48,7 +48,7 @@ Along with the inherited members from its [SimpleEvent](simple-event.md) base cl
 
 ### Functions
 
-[Path](#path)
+[Path](#path)\
 [Type](#type)
 
 ## <a name="file-input"></a> FileInput

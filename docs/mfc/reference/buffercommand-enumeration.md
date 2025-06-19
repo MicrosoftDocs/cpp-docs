@@ -11,7 +11,7 @@ Used by [CMemFile::GetBufferPtr](cmemfile-class.md#getbufferptr) to determine wh
 
 ## Syntax
 
-``` cpp
+```cpp
 public enum BufferCommand
 {
    bufferRead,

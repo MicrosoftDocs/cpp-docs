@@ -1,21 +1,26 @@
 ---
 description: "Learn more about: How to: Create a C++ Project from Existing Code"
 title: "How to: Create a C++ Project from Existing Code"
-ms.date: "05/06/2019"
+ms.date: 08/12/2024
 helpviewer_keywords: ["C++, creating projects from existing code", "Create New Project From Existing Code Files Wizard, project settings"]
 f1_keywords: ["vc.appwiz.importwiz.location", "vc.appwiz.importwiz.appsettings", "vc.appwiz.importwiz.debugsettings", "vc.appwiz.importwiz.releasesettings"]
-ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
 ---
 # How to: Create a C++ Project from Existing Code
 
-In Visual Studio, you can port existing code files into a C++ project using the **Create New Project From Existing Code Files** wizard. This wizard creates a project solution that uses the MSBuild system to manage source files and build configuration. It works best with relatively simple projects that do not have complex folder hierarchies. The wizard isn't available in older Express editions of Visual Studio.
+In Visual Studio, you can port existing code files into a C++ project using the **Create New Project From Existing Code Files** wizard. This wizard creates a project solution that uses the MSBuild system to manage source files and build configuration. It works best with relatively simple projects that don't have complex folder hierarchies. The wizard isn't available in older Express editions of Visual Studio.
 
 Porting existing code files into a C++ project enables the use of native MSBuild project management features built into the IDE. If you prefer to use your existing build system, such as nmake makefiles, CMake, or alternatives, you can use the Open Folder or CMake options instead. For more information, see [Open Folder projects for C++](open-folder-projects-cpp.md) or [CMake projects in Visual Studio](cmake-projects-in-visual-studio.md). Both options let you use IDE features such as [IntelliSense](/visualstudio/ide/using-intellisense) and [Project Properties](working-with-project-properties.md).
 
 ### To create a C++ project from existing code
 
-1. On the **File** menu, select **New** > **Project From Existing Code**.
+The following instructions assume that Visual Studio is running and is past the start page. If you are on the Visual Studio start page, choose **Continue without code** to open the IDE.
 
+1. On the **File** menu, select **New** > **Project From Existing Code**.
+1. The **Create New Project from Existing Code Files** wizard opens. Choose what type of project to create from the dropdown: **Visual C++**, **Visual Basic**, or **C#**. Then choose **Next** to continue.
+
+    :::image type="complex" source="./media/create-from-existing-code-wizard.png" alt-text="Screenshot showing the Create New Project from Existing Code dialog.":::
+    The project type dropdown shows the options Visual C++ (which is selected), Visual Basic, and C#.
+    :::image-end:::
 1. Specify your project location, the directory for your source files, and the kinds of files the wizard imports into the new project. Choose **Next** to continue.
 
     | Setting | Description |
@@ -58,7 +63,8 @@ Porting existing code files into a C++ project enables the use of native MSBuild
     > [!NOTE]
     > The **Build**, **Rebuild**, **Clean** command line, and **Output (for debugging)** settings are only enabled if the **Use external build system** option is selected on the **Specify Project Settings** page.
 
-1. Specify the Release configuration settings to use, these settings are the same as the Debug configuration settings. Choose **Finish** to generate the new project.
+1. Specify the Release configuration settings to use, these settings are the same as the Debug configuration settings.
+1. Choose **Finish** to generate the new project.
 
     > [!NOTE]
     > Here you can check **Same as Debug configuration** to specify that the wizard will generate Release configuration project settings identical to Debug configuration project settings. This option is checked by default. All other options on this page are inactive unless you uncheck this box.

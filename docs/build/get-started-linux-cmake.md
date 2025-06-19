@@ -187,7 +187,7 @@ Because it's a desktop application, you need to provide some more configuration 
 
 1. Look at the Call Stack window and view the Calls to `x11OpenGLWindow` since Visual Studio launched the application on Linux.
 
-    :::image type="complex" source="media/cmake-bullet3-linux-console.png" alt-text="The Visual Studio Call Stack window, showing Linux call stack.":::
+    :::image type="complex" source="media/cmake-bullet3-linux-callstack.png" alt-text="The Visual Studio Call Stack window, showing Linux call stack.":::
     The callstack shows the breakpoint on CommonRigidBodyBase::mouseMoveCallback, and the calls that precede it such as OnMouseMove, X11OpenGLWindow::pumpMessage, and so on.
     :::image-end:::
 

@@ -41,7 +41,7 @@ CL /c FIRST.C SECOND.C THIRD.OBJ
 To create an executable file, you must invoke LINK:
 
 ```
-LINK firsti.obj second.obj third.obj /OUT:filename.exe
+LINK first.obj second.obj third.obj /OUT:filename.exe
 ```
 
 ## See also

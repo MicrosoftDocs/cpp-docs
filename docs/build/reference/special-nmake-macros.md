@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Special NMAKE macros"
 title: "Special NMAKE macros"
+description: "Learn more about: Special NMAKE macros"
 ms.date: 09/30/2021
 helpviewer_keywords: ["special NMAKE macros", "macros, NMAKE", "NMAKE macros, special", "NMAKE program, environment variable macros", "environment variables, macros in NMAKE", "macros, environment-variable", "options macros", "command macros in NMAKE", "macros, options macros", "macros, command macros", "NMAKE program, recursion macros", "recursion macros", "macros, recursion", "filename macros in NMAKE", "NMAKE program, filename macros"]
 no-loc: [AS, AFLAGS, CC, CFLAGS, CPP, CPPFLAGS, CXX, CXXFLAGS, RC, RFLAGS, ias, ml, ml64, cl, rc]
@@ -9,7 +9,7 @@ no-loc: [AS, AFLAGS, CC, CFLAGS, CPP, CPPFLAGS, CXX, CXXFLAGS, RC, RFLAGS, ias, 
 
 NMAKE provides several special macros to represent various filenames and commands. One use for some of these macros is in the predefined inference rules. Like all macros, the macros provided by NMAKE are case sensitive.
 
-## <a name="filename-macros"> Filename Macros
+## <a name="filename-macros"></a> Filename Macros
 
 Filename macros are predefined as filenames specified in the dependency (not full filename specifications on disk). These macros don't need to be enclosed in parentheses when invoked; specify only a **`$`** as shown.
 
@@ -31,7 +31,7 @@ To specify part of a predefined filename macro, append a macro modifier and encl
 | **`F`** | Base name plus extension |
 | **`R`** | Drive plus directory plus base name |
 
-## <a name="recursion-macros"> Recursion macros
+## <a name="recursion-macros"></a> Recursion macros
 
 Use recursion macros to call NMAKE recursively. Recursive sessions inherit command-line and environment-variable macros and *`Tools.ini`* information. They don't inherit makefile-defined inference rules or `.SUFFIXES` and `.PRECIOUS` specifications. There are three ways to pass macros to a recursive NMAKE session:
 
@@ -45,7 +45,7 @@ Use recursion macros to call NMAKE recursively. Recursive sessions inherit comma
 | **`MAKEDIR`** | Current directory when NMAKE was invoked. |
 | **`MAKEFLAGS`** | Options currently in effect. Use as `/$(MAKEFLAGS)`. The **`/F`** option isn't included. |
 
-## <a name="command-macros-and-options-macros"> Command macros and options macros
+## <a name="command-macros-and-options-macros"></a> Command macros and options macros
 
 Command macros are predefined for Microsoft products. Options macros represent options to these products and are undefined by default. Both are used in predefined inference rules and can be used in description blocks or user-defined inference rules. Command macros can be redefined to represent part or all of a command line, including options. Options macros generate a null string if left undefined.
 
@@ -57,7 +57,7 @@ Command macros are predefined for Microsoft products. Options macros represent o
 | C++ Compiler | **`CXX`** | `cl` | **`CXXFLAGS`** |
 | Resource Compiler | **`RC`** | `rc` | **`RFLAGS`** |
 
-## <a name="environment-variable-macros"> Environment-variable macros
+## <a name="environment-variable-macros"></a> Environment-variable macros
 
 NMAKE inherits macro definitions for environment variables that exist before the start of the session. If a variable was set in the operating-system environment, it is available as an NMAKE macro. The inherited names are converted to uppercase. Inheritance occurs before preprocessing. Use the /E option to cause macros inherited from environment variables to override any macros with the same name in the makefile.
 

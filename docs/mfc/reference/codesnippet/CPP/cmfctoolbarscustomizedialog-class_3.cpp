@@ -1,5 +1,5 @@
 CMFCToolBarsCustomizeDialog *pDlgCust = new CMFCToolBarsCustomizeDialog(this,
-                                                                        TRUE /* Automatic menus scaning */,
+                                                                        TRUE /* Automatic menus scanning */,
                                                                         AFX_CUSTOMIZE_MENU_SHADOWS | AFX_CUSTOMIZE_TEXT_LABELS |
                                                                             AFX_CUSTOMIZE_MENU_ANIMATIONS);
 

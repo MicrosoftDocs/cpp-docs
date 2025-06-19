@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: month_weekday_last Class"
 title: "month_weekday_last class"
+description: "Learn more about: month_weekday_last Class"
 ms.date: "6/28/2021"
 f1_keywords: ["chrono/std::chrono::month_weekday_last", "chrono/std::chrono::month_weekday_last::ok", "std::chrono::month_weekday_last::month_weekday_last", "chrono/std::chrono::month_weekday_last::ok", "chrono/std::chrono::month_weekday_last::month"]
 helpviewer_keywords: ["std::chrono [C++], month_weekday_last"]
@@ -59,7 +59,7 @@ constexpr month_weekday_last(const month& m, const weekday_last& wdl) noexcept;
 The `month` value for the created `month_weekday_last` class.
 
 *`wdl`*\
-The` weekday_last` value for the created `month_weekday_last` class.
+The `weekday_last` value for the created `month_weekday_last` class.
 
 ## Remarks: Constructor
 

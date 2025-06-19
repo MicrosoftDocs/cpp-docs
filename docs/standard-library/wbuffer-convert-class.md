@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: wbuffer_convert class"
 title: "wbuffer_convert class"
+description: "Learn more about: wbuffer_convert class"
 ms.date: "11/29/2021"
 f1_keywords: ["xlocmon/stdext::cvt::wbuffer_convert"]
 helpviewer_keywords: ["wbuffer_convert class"]
@@ -20,7 +20,7 @@ class wbuffer_convert
 ### Parameters
 
 *`Codecvt`*\
-The [`locale`](../standard-library/locale-class.md) facet that represents the conversion object.
+The [`locale`](locale-class.md) facet that represents the conversion object.
 
 *`Elem`*\
 The wide-character element type.
@@ -36,5 +36,5 @@ Conversion between a sequence of `Elem` values and multibyte sequences is perfor
 
 An object of this class template stores:
 
-- A pointer to its underlying byte stream buffer.\
-- A pointer to an allocated conversion facet object, which is freed when the `wbuffer_convert`is destroyed.
+- A pointer to its underlying byte stream buffer.
+- A pointer to an allocated conversion facet object, which is freed when the `wbuffer_convert` is destroyed.

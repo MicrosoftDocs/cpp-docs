@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _CrtCheckMemory"
 title: "_CrtCheckMemory"
+description: "Learn more about: _CrtCheckMemory"
 ms.date: "11/04/2016"
 api_name: ["_CrtCheckMemory"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CrtCheckMemory", "_CrtCheckMemory"]
 helpviewer_keywords: ["_CrtCheckMemory function", "CrtCheckMemory function"]
-ms.assetid: 457cc72e-60fd-4177-ab5c-6ae26a420765
 ---
 # `_CrtCheckMemory`
 
@@ -17,7 +16,6 @@ Confirms the integrity of the memory blocks allocated in the debug heap (debug v
 ## Syntax
 
 ```C
-
 int _CrtCheckMemory( void );
 ```
 

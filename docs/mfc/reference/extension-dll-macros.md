@@ -79,7 +79,7 @@ For more information on module states and MFC, see [Managing the state data of M
 
 **Header:** \<afxstat_.h>
 
-## <a name="afxoleinitmodule"><a/> `AfxOleInitModule`
+## <a name="afxoleinitmodule"></a> `AfxOleInitModule`
 
 For OLE support from a regular MFC DLL that is dynamically linked to MFC, call this function in your regular MFC DLL's `CWinApp::InitInstance` function to initialize the MFC OLE DLL.
 
@@ -329,6 +329,6 @@ MFC extension DLLs need to call [`AfxInitExtensionModule`](#afxinitextensionmodu
 
 ## See also
 
-[Macros and globals](mfc-macros-and-globals.md)<br/>
-[`AfxMessageBox`](cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
-[Managing the state data of MFC modules](../managing-the-state-data-of-mfc-modules.md)<br/>
+[Macros and globals](mfc-macros-and-globals.md)\
+[`AfxMessageBox`](cstring-formatting-and-message-box-display.md#afxmessagebox)\
+[Managing the state data of MFC modules](../managing-the-state-data-of-mfc-modules.md)
