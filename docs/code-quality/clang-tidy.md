@@ -104,7 +104,7 @@ The **Clang-Tidy Prepend Additional Options** property lets you specify compiler
 
 ## Max Number of Processes
 
-The **Max Number of Processes** property lets you specify how many processes Clang-Tidy can use to run analysis in parallel. By default, Clang-Tidy uses a single processor. Set this property to a specific number to limit the number of parallel processes, or set it to `0` to use all available logical processors on your system. Increasing the number of processes can improve analysis speed on multi-core machines.
+The **Max Number of Processes** property lets you specify how many processes Clang-Tidy can use to run analysis in parallel. By default, Clang-Tidy runs serially. Set this property to enable parallel execution and specify the number of parallel processes. Set it to `0` to use all available logical processors on your system. Increasing the number of processes can improve analysis speed on multi-core machines.
 
 ## See also
 
