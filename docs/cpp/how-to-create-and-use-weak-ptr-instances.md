@@ -3,7 +3,6 @@ description: "Learn more about: How to: Create and use weak_ptr instances"
 title: "How to: Create and use weak_ptr instances"
 ms.custom: "how-to"
 ms.date: "11/19/2019"
-ms.topic: "conceptual"
 ms.assetid: 8dd6909b-b070-4afa-9696-f2fc94579c65
 ---
 # How to: Create and use weak_ptr instances

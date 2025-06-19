@@ -2,7 +2,7 @@
 title: Annotating Structs and Classes
 description: "Learn more about: Annotating Structs and Classes"
 ms.date: 06/28/2019
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 f1_keywords:
   - "_Field_size_bytes_part_"
   - "_Field_size_bytes_full_opt_"

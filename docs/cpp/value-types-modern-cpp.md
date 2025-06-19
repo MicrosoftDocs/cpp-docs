@@ -2,7 +2,7 @@
 description: "Learn more about: C++ classes as value types"
 title: "C++ classes as value types"
 ms.date: 06/09/2022
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 ms.assetid: f63bb62c-60da-40d5-ac14-4366608fe260
 ---
 # C++ classes as value types

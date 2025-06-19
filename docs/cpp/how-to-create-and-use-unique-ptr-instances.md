@@ -3,7 +3,6 @@ description: "Learn more about: How to: Create and use unique_ptr instances"
 title: "How to: Create and use unique_ptr instances"
 ms.custom: "how-to"
 ms.date: "11/19/2018"
-ms.topic: "conceptual"
 ms.assetid: 9a373030-e587-452f-b9a5-c5f9d58b7673
 ---
 # How to: Create and use unique_ptr instances

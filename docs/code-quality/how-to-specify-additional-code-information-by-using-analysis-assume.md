@@ -2,7 +2,6 @@
 description: "Learn more about how to specify additional code information by using _Analysis_assume_."
 title: "Use _Analysis_assume_ for code analysis hints"
 ms.date: 12/16/2020
-ms.topic: "conceptual"
 f1_keywords:
   - "_Analysis_assume_"
 helpviewer_keywords:

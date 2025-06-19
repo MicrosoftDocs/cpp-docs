@@ -42,7 +42,7 @@
       "ROBOTS": "INDEX,FOLLOW",
       "manager": "coxford",
       "ms.date": "11/16/2016",
-      "ms.topic": "conceptual",
+      "ms.topic": "article",
       "audience": "developer",
       "ms.service": "visual-cpp",
       "ms.tgt_pltfrm": "Windows",
@@ -102,6 +102,7 @@
         "atl/reference/**.md": "reference",
         "atl-mfc-shared/**.md": "reference",
         "build/reference/**.md": "reference",
+        "build-insights/reference/sdk/c-event-data-types/**.md": "reference",
         "c-language/**.md": "language-reference",
         "c-runtime-library/**.md": "reference",
         "c-runtime-library/reference/**.md": "reference",
@@ -110,6 +111,7 @@
         "cppcx/**.md": "language-reference",
         "data/oledb/**.md": "reference",
         "error-messages/**.md": "error-reference",
+        "ide/refactoring/**.md": "how-to",
         "extensions/**.md": "reference",
         "intrinsics/**.md": "reference",
         "mfc/reference/**.md": "reference",
@@ -121,7 +123,8 @@
         "safeint/**.md": "reference",
         "sanitizers/**.md": "reference",
         "standard-library/**.md": "reference",
-        "windows/attributes/**.md": "reference"
+        "windows/attributes/**.md": "reference",
+        "**/how-to*.md": "how-to"
       },
       "ms.subservice": {
         "assembler/**.md": "masm",
