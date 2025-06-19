@@ -4,6 +4,7 @@ title: "Running Linux programs on Windows"
 ms.date: "07/31/2019"
 helpviewer_keywords: ["Linux [C++], porting to Win32"]
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
+ms.topic: concept-article
 ---
 # Running Linux programs on Windows
 

@@ -4,6 +4,7 @@ title: "General Best Practices in the Concurrency Runtime"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Concurrency Runtime, general best practices"]
 ms.assetid: ce5c784c-051e-44a6-be84-8b3e1139c18b
+ms.topic: best-practice
 ---
 # General Best Practices in the Concurrency Runtime
 

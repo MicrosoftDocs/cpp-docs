@@ -2,6 +2,7 @@
 title: "Visual C++ What's New 2003 through 2015"
 description: "Learn more about: Visual C++ What's New 2003 through 2015"
 ms.date: 07/02/2019
+ms.topic: whats-new
 ---
 # Visual C++ What's New 2003 through 2015
 

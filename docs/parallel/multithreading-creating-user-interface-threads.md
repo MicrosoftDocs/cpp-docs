@@ -5,6 +5,7 @@ ms.date: "08/27/2018"
 f1_keywords: ["CREATE_SUSPENDED", "SECURITY_ATTRIBUTES"]
 helpviewer_keywords: ["multithreading [C++], user interface threads", "threading [C++], creating threads", "threading [C++], user interface threads", "user interface threads [C++]", "threading [MFC], user interface threads"]
 ms.assetid: 446925c1-db59-46ea-ae5b-d5ae5d5b91d8
+ms.topic: concept-article
 ---
 # Multithreading: Creating MFC User-Interface Threads
 

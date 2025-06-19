@@ -4,6 +4,7 @@ title: "Redistributing the MFC Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, redistributing", "redistributing MFC library"]
 ms.assetid: 72714ce1-385e-4c1c-afa5-96b03e873866
+ms.topic: concept-article
 ---
 # Redistributing the MFC Library
 

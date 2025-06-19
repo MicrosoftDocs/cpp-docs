@@ -2,6 +2,7 @@
 description: "Learn more about: Sample Multithread C Program"
 title: "Sample Multithread C Program"
 ms.date: 04/07/2022
+ms.topic: how-to
 ---
 # Sample Multithread C Program
 

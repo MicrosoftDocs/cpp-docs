@@ -3,6 +3,7 @@ description: "Learn more about: Upgrade your code to the Universal CRT"
 title: "Upgrade your code to the Universal CRT"
 ms.date: 06/28/2022
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
+ms.topic: upgrade-and-migration-article
 ---
 # Upgrade your code to the Universal CRT
 

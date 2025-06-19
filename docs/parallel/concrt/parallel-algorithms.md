@@ -4,6 +4,7 @@ title: "Parallel Algorithms"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["parallel algorithms [Concurrency Runtime]"]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
+ms.topic: how-to
 ---
 # Parallel Algorithms
 

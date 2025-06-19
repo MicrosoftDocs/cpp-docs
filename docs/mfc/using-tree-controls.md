@@ -4,6 +4,7 @@ title: "Using Tree Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTreeCtrl class [MFC], using", "tree controls [MFC], about tree controls"]
 ms.assetid: 4e92941a-e477-4fb1-b1ce-4abeafbef1c1
+ms.topic: concept-article
 ---
 # Using Tree Controls
 

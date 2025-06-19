@@ -4,6 +4,7 @@ title: "Last Character in a String"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["last character in string", "MBCS [C++], last character in string"]
 ms.assetid: 0a180376-4e55-41e8-9c64-539c7b6d8047
+ms.topic: how-to
 ---
 # Last Character in a String
 
