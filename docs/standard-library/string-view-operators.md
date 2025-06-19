@@ -1,22 +1,13 @@
 ---
 title: "<string_view> operators"
 description: "API reference for the `string_view` operators, which are used to compare two `string_view` objects, or a `string_view` and some other string object" 
-ms.date: "01/15/2021"
+ms.date: 01/15/2021
 f1_keywords: ["xstring/basic_string_view::operator!=", "xstring/basic_string_view::operator>", "xstring/basic_string_view::operator>=", "xstring/basic_string_view::operator<", "xstring/basic_string_view::operator<<", "xstring/basic_string_view::operator<=", "xstring/basic_string_view::operator+", "xstring/basic_string_view::operator==", 'xstring/std::literals::string_view_literals::operator "sv', 'std::literals::string_view_literals::operator sv', 'std::literals::string_view_literals', 'string_view_literals']
 helpviewer_keywords: ["std::basic_string_view::operator!=", "std::basic_string_view::operator>", "std::basic_string_view::operator>=", "std::basic_string_view::operator<", "std::basic_string_view::operator<<", "std::basic_string_view::operator<=, std::basic_string_view::operator=="]
 ---
 # `<string_view>` operators
 
 Use these operators to compare two `string_view` objects, or a `string_view` and some other string object (for example [`std::string`](basic-string-class.md), or `char*`) for which an implicit conversion is provided.
-
-[`operator!=`](#op_neq)\
-[`operator>`](#op_gt)\
-[`operator>=`](#op_gt_eq)\
-[`operator<`](#op_lt)\
-[`operator<<`](#op_lt_lt)\
-[`operator<=`](#op_lt_eq)\
-[`operator==`](#op_eq_eq)\
-[`operator""sv`](#op_sv)
 
 ## <a name="op_neq"></a> `operator!=`
 
@@ -41,10 +32,10 @@ bool operator!=(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -80,10 +71,10 @@ bool operator==(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -119,10 +110,10 @@ bool operator<(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -131,7 +122,7 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Remarks
 
-An implicit conversion must exist from *convertible_string_type* to the string_view on the other side.
+An implicit conversion must exist from *convertible_string_type* to the `string_view` on the other side.
 
 The comparison is based on a pairwise lexicographical comparison of the character sequences. When the first unequal pair of characters is encountered, the result of that comparison is returned. If no unequal characters are found, but one sequence is shorter, the shorter sequence is less than the longer one. In other words, "cat" is less than "cats".
 
@@ -180,10 +171,10 @@ bool operator<=(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -210,7 +201,7 @@ inline basic_ostream<CharType, Traits>& operator<<(
 an output stream being written to.
 
 *`Str`*\
-The string_view to be entered into an output stream.
+The `string_view` to be entered into an output stream.
 
 ### Return Value
 
@@ -243,10 +234,10 @@ bool operator>(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value

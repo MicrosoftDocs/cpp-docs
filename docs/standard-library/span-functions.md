@@ -1,7 +1,7 @@
 ---
 title: "<span> functions"
 description: "Learn more about: <span> functions"
-ms.date: "05/28/2020"
+ms.date: 05/28/2020
 f1_keywords: ["span/std::span::as_bytes", "span/std::as_writable_bytes"]
 helpviewer_keywords: ["std::span [C++], as_writable_bytes", "std::as_bytes [C++]"]
 dev_langs: ["C++"]
@@ -15,7 +15,7 @@ The `<span>` header includes the following non-member functions that operate on 
 |[`as_bytes`](#as_bytes) | Get a read-only view of the object representation of the elements in the span. |
 |[`as_writable_bytes`](#as_writable_bytes) | Get a read/write view of the object representation of the elements in the span. |
 
-## <a name="as_bytes"></a>`as_bytes`
+## <a name="as_bytes"></a> `as_bytes`
 
 Get a read-only view of the object representation of the elements in the span.
 
@@ -55,7 +55,7 @@ int main()
 }
 ```
 
-## <a name="as_writable_bytes"></a>`as_writable_bytes`
+## <a name="as_writable_bytes"></a> `as_writable_bytes`
 
 If `T` isn't **`const`**, gets a read/write view of the raw byte representation of the elements in the span.
 

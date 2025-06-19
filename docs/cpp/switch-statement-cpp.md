@@ -1,11 +1,10 @@
 ---
 title: "switch statement (C++)"
 description: "Reference to the Standard C++ switch statement in Microsoft Visual Studio C++."
-ms.date: "04/25/2020"
+ms.date: 04/25/2020
 f1_keywords: ["default_cpp", "switch_cpp", "case_cpp"]
 helpviewer_keywords: ["switch keyword [C++]", "case keyword [C++], in switch statements", "default keyword [C++]"]
 no-loc: [switch, case, default, break, while, opt]
-ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
 ---
 # `switch` statement (C++)
 
@@ -117,7 +116,7 @@ int main()
         break;
     case status::bad:
         throw BadGadget();
-    };
+    }
 ```
 
 An inner block of a **`switch`** statement can contain definitions with initializers as long as they're *reachable*, that is, not bypassed by all possible execution paths. Names introduced using these declarations have local scope. For example:

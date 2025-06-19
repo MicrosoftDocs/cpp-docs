@@ -8,4 +8,4 @@
    {
       _tprintf_s(_T("Resulting token: %s\n"), resToken);
       resToken = str.Tokenize(_T("% #"), curPos);
-   };   
+   }
