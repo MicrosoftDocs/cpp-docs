@@ -48,4 +48,4 @@ For more information, see [`/w`, `/W0`, `/W1`, `/W2`, `/W3`, `/W4`, `/w1`, `/w2`
 
 ## See also
 
-[Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md)
+[Safe Libraries: C++ Standard Library](safe-libraries-cpp-standard-library.md)
