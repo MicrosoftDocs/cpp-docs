@@ -3,6 +3,7 @@ title: "Configure CMake debugging sessions in Visual Studio"
 description: "Describes how to use Visual Studio to configure CMake debugger settings."
 ms.date: 10/26/2023
 helpviewer_keywords: ["CMake debugging"]
+ms.topic: how-to
 ---
 # Configure CMake debugging sessions
 

@@ -3,6 +3,7 @@ title: "TRACING_SESSION_SYSTEM_EVENT_FLAGS constants"
 description: "The C++ Build Insights SDK TRACING_SESSION_SYSTEM_EVENT_FLAGS constants reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "TRACING_SESSION_SYSTEM_EVENT_FLAGS", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
 ---
 # TRACING_SESSION_SYSTEM_EVENT_FLAGS constants
 

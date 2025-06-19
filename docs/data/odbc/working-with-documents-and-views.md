@@ -4,6 +4,7 @@ title: "Working with Documents and Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC [C++], documents", "MFC [C++], views", "views [C++], MFC", "documents [C++], MFC"]
 ms.assetid: 349b142d-1c5a-4b99-9de4-241e41d3d2f1
+ms.topic: concept-article
 ---
 # Working with Documents and Views
 

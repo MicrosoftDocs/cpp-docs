@@ -4,6 +4,7 @@ title: "Export C functions for use in C or C++ language executables"
 ms.date: 05/24/2022
 helpviewer_keywords: ["functions [C], exporting", "functions [C], C or C++ executables and", "__cplusplus macro", "exporting DLLs [C++], C functions in C++ executables", "exporting functions [C++], C functions in C++ executables"]
 ms.assetid: b51d6e5e-37cf-4c1c-b0bf-fcf188c82f00
+ms.topic: how-to
 ---
 # Export C functions for use in C or C++ language executables
 

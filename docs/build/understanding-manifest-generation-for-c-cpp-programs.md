@@ -3,6 +3,7 @@ title: "Understanding manifest generation for C/C++ programs"
 description: "Learn more about: Understanding manifest generation for C/C++ programs"
 ms.date: 06/10/2022
 helpviewer_keywords: ["manifests [C++]"]
+ms.topic: how-to
 ---
 # Understanding manifest generation for C/C++ programs
 

@@ -4,6 +4,7 @@ title: "Inserting a Composite Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["composite controls, inserting with ATL Object Wizard", "composite controls", "ATL Control Wizard"]
 ms.assetid: f10b1927-9fc6-40a7-ac29-efdac70584fe
+ms.topic: concept-article
 ---
 # Inserting a Composite Control
 

@@ -5,6 +5,7 @@ ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.classes.member.variable", "vc.codewiz.variable.overview"]
 helpviewer_keywords: ["member variables, adding", "member variables", "add member variable wizard [C++]", "dialog box controls, member variables", "dialog box controls, variable types", "variables, dialog box control member variables"]
 ms.assetid: 437783bd-8eb4-4508-8b73-7380116e9d71
+ms.topic: how-to
 ---
 # Add a member variable
 

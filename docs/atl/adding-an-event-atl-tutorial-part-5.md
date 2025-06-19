@@ -4,6 +4,7 @@ title: "Adding an Event (ATL Tutorial, Part 5)"
 ms.custom: "get-started-article"
 ms.date: "09/27/2018"
 ms.assetid: 2de12022-3148-4ce3-8606-8a9d4274f0e9
+ms.topic: tutorial
 ---
 # Adding an Event (ATL Tutorial, Part 5)
 

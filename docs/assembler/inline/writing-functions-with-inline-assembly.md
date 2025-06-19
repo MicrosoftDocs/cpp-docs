@@ -4,6 +4,7 @@ title: "Writing functions with inline assembly"
 ms.date: 02/11/2022
 helpviewer_keywords: ["functions [C++], inline assembly", "inline assembly [C++], writing functions", "assembler [C++], writing functions", "__asm keyword [C++], in functions"]
 ms.assetid: b5df8a04-fdc7-4622-8c9e-e4b618927497
+ms.topic: concept-article
 ---
 # Writing functions with inline assembly
 

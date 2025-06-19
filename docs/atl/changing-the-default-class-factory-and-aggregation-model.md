@@ -4,6 +4,7 @@ title: "Changing the Default Class Factory and Aggregation Model"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CComClassFactory class, making the default", "aggregation [C++], using ATL", "aggregation [C++], aggregation models", "defaults [C++], aggregation model in ATL", "default class factory", "class factories, changing default", "CComCoClass class, default class factory and aggregation model", "default class factory, ATL", "defaults [C++], class factory"]
 ms.assetid: 6e040e95-0f38-4839-8a8b-c9800dd47e8c
+ms.topic: concept-article
 ---
 # Changing the Default Class Factory and Aggregation Model
 

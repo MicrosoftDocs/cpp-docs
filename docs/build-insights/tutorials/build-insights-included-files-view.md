@@ -3,6 +3,7 @@ title: "Troubleshoot header file impact on build time"
 description: "Tutorial on how to use Build Insights Includes Files and Includes Tree views to troubleshoot the impact of #include files on build time."
 ms.date: 5/30/2024
 helpviewer_keywords: ["C++ Build Insights", "header file build time", "included files view", "include tree view", "#include analysis", "build time analysis"]
+ms.topic: troubleshooting-general
 ---
 # Troubleshoot header file impact on build time
 

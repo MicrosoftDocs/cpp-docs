@@ -4,6 +4,7 @@ title: "Using Task Manager"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Task Manager", "breakpoints, Task Manager", "debugging [ATL], using Task Manager"]
 ms.assetid: 773fccd5-308d-42c2-a17f-60ae94989062
+ms.topic: concept-article
 ---
 # Using Task Manager
 

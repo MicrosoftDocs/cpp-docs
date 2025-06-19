@@ -4,6 +4,7 @@ title: "ATL Window Traits"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window traits"]
 ms.assetid: c90cf850-9e91-49da-9cf3-ad4efb30347d
+ms.topic: concept-article
 ---
 # Understanding Window Traits
 

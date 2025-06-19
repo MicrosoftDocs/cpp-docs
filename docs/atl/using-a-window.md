@@ -4,6 +4,7 @@ title: "Using a Window (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, windows", "CWindow class, about CWindow class", "windows [C++], ATL"]
 ms.assetid: b3b9cc8e-4287-486b-b080-38852bc2943a
+ms.topic: concept-article
 ---
 # Using a Window
 

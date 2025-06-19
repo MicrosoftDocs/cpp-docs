@@ -4,6 +4,7 @@ title: "Record Field Exchange: How RFX Works"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["record editing [C++], using RFX", "RFX (ODBC) [C++], updating data in recordsets", "scrolling [C++]", "ODBC [C++], RFX", "data binding [C++], DFX", "scrolling [C++], RFX", "RFX (ODBC) [C++], binding fields and parameters"]
 ms.assetid: e647cacd-62b0-4b80-9e20-b392deca5a88
+ms.topic: how-to
 ---
 # Record Field Exchange: How RFX Works
 

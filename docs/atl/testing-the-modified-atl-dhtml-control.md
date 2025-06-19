@@ -4,6 +4,7 @@ title: "Testing the Modified ATL DHTML Control"
 ms.date: "11/06/2018"
 helpviewer_keywords: ["HTML controls, testing", "testing controls", "DHTML controls, testing"]
 ms.assetid: 42316118-9433-410f-9d8a-0efcc1eff824
+ms.topic: how-to
 ---
 # Testing the Modified ATL DHTML Control
 

@@ -3,6 +3,7 @@ title: "RELOG_CALLBACKS structure"
 description: "The C++ Build Insights SDK RELOG_CALLBACKS structure reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "RELOG_CALLBACKS", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
 ---
 # RELOG_CALLBACKS structure
 

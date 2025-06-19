@@ -3,6 +3,7 @@ title: "Configuring Programs for Windows XP"
 description: "How to install and use the C++ Windows XP toolsets in Visual Studio."
 ms.date: 09/17/2021
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
+ms.topic: how-to
 ---
 # Configuring Programs for Windows XP
 

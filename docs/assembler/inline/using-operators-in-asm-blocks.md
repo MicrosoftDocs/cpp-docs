@@ -4,6 +4,7 @@ title: "Using Operators in __asm Blocks"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["brackets [ ]", "brackets [ ], __asm blocks", "__asm keyword [C++], operators", "square brackets [ ], __asm blocks", "operators [C++], using in __asm blocks", "square brackets [ ]"]
 ms.assetid: a26ccfd4-40ae-4a61-952f-c417982aa8dd
+ms.topic: concept-article
 ---
 # Using Operators in __asm Blocks
 
