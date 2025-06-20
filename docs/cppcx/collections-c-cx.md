@@ -17,14 +17,14 @@ The Windows Runtime defines the interfaces for collections and related types, an
 
 - [`Platform::Collections::VectorView` class](../cppcx/platform-collections-vectorview-class.md) and [`Platform::Collections::MapView` class](../cppcx/platform-collections-mapview-class.md) are read-only versions of `Vector` and `Map`.
 
-- Iterators are defined in the [`Platform::Collections` Namespace](../cppcx/platform-collections-namespace.md). These iterators satisfy the requirements for STL iterators and enable the use of [`std::find`](../standard-library/algorithm-functions.md#find),  [`std::count_if`](../standard-library/algorithm-functions.md#count_if), and other STL algorithms on any [`Windows::Foundation::Collections`](/uwp/api/windows.foundation.collections) interface type or [`Platform::Collections`](../cppcx/platform-collections-namespace.md) concrete type. For example, this means that you can iterate a collection in a Windows Runtime component that's created in C# and apply an STL algorithm to it.
+- Iterators are defined in the [`Platform::Collections` Namespace](../cppcx/platform-collections-namespace.md). These iterators satisfy the requirements for STL iterators and enable the use of [`std::find`](../standard-library/algorithm-functions.md#find), [`std::count_if`](../standard-library/algorithm-functions.md#count_if), and other STL algorithms on any [`Windows::Foundation::Collections`](/uwp/api/windows.foundation.collections) interface type or [`Platform::Collections`](../cppcx/platform-collections-namespace.md) concrete type. For example, this means that you can iterate a collection in a Windows Runtime component that's created in C# and apply an STL algorithm to it.
 
    > [!IMPORTANT]
    > Proxy iterators `VectorIterator` and `VectorViewIterator` utilize proxy objects `VectoryProxy<T>` and `ArrowProxy<T>` to enable usage with STL containers. For more information, see "VectorProxy elements" later in this article.
 
 - The C++/CX collection types support the same thread safety guarantees that STL containers support.
 
-- [`Windows::Foundation::Collections::IObservableVector`](/uwp/api/windows.foundation.collections.iobservablevector-1) and [`Windows::Foundation::Collections::IObservableMap`](/uwp/api/windows.foundation.collections.iobservablemap-2) define events that are fired when the collection changes in various ways. By implementing these interfaces,  [`Platform::Collections::Map`](../cppcx/platform-collections-map-class.md) and [`Platform::Collections::Vector`](../cppcx/platform-collections-vector-class.md) support databinding with XAML collections. For example, if you have a `Vector` that is data-bound to a `Grid`, when you add an item to a collection, the change is reflected in the Grid UI.
+- [`Windows::Foundation::Collections::IObservableVector`](/uwp/api/windows.foundation.collections.iobservablevector-1) and [`Windows::Foundation::Collections::IObservableMap`](/uwp/api/windows.foundation.collections.iobservablemap-2) define events that are fired when the collection changes in various ways. By implementing these interfaces, [`Platform::Collections::Map`](../cppcx/platform-collections-map-class.md) and [`Platform::Collections::Vector`](../cppcx/platform-collections-vector-class.md) support databinding with XAML collections. For example, if you have a `Vector` that is data-bound to a `Grid`, when you add an item to a collection, the change is reflected in the Grid UI.
 
 ## Vector usage
 
@@ -97,7 +97,7 @@ Elements of a modifiable collection can be changed, but elements of a read-only 
 [`Platform::Collections::Map` class](../cppcx/platform-collections-map-class.md)\
 A modifiable, associative collection. Map elements are key-value pairs. Looking up a key to retrieve its associated value, and iterating through all key-value pairs, are both supported.
 
-`Map` and `MapView` are templated on `<K, V, C = std::less<K>>`; therefore, you can customize the comparator.  Additionally, `Vector` and `VectorView` are templated on `<T, E = std::equal_to<T>>` so that you can customize the behavior of `IndexOf()`. This is important mostly for `Vector` and `VectorView` of value structs. For example, to create a `Vector<Windows::Foundation::DateTime>`, you must provide a custom comparator because DateTime does not overload the `==` operator.
+`Map` and `MapView` are templated on `<K, V, C = std::less<K>>`; therefore, you can customize the comparator. Additionally, `Vector` and `VectorView` are templated on `<T, E = std::equal_to<T>>` so that you can customize the behavior of `IndexOf()`. This is important mostly for `Vector` and `VectorView` of value structs. For example, to create a `Vector<Windows::Foundation::DateTime>`, you must provide a custom comparator because DateTime does not overload the `==` operator.
 
 [`Platform::Collections::MapView` class](../cppcx/platform-collections-mapview-class.md)\
 A read-only version of a `Map`.
@@ -115,7 +115,7 @@ An STL iterator that satisfies the requirements of an STL input iterator.
 An STL iterator that satisfies the requirements of an STL mutable random-access iterator.
 
 [`Platform::Collections::VectorViewIterator` class](../cppcx/platform-collections-vectorviewiterator-class.md)\
-An STL iterator that satisfies the requirements of an STL  **`const`** random-access iterator.
+An STL iterator that satisfies the requirements of an STL **`const`** random-access iterator.
 
 ### begin() and end() functions
 
