@@ -1,7 +1,7 @@
 ---
 title: "Collections (C++/CX)"
 description: "Learn more about: Collections (C++/CX)"
-ms.date: "11/19/2018"
+ms.date: 11/19/2018
 ---
 # Collections (C++/CX)
 
