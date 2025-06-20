@@ -1,7 +1,7 @@
 ---
 title: "RelogW"
 description: "The C++ Build Insights SDK RelogW function reference."
-ms.date: "02/12/2020"
+ms.date: 02/12/2020
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "RelogW", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
 # `RelogW`
