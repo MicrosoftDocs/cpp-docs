@@ -8,7 +8,7 @@ ms.assetid: a8d2bf65-d8b1-4fe3-8340-a223d7e7fde6
 ---
 # Compiler Warning (level 1) C4172
 
-returning address of local variable or temporary
+> returning address of local variable or temporary
 
 A function returns the address of a local variable or temporary object. Local variables and temporary objects are destroyed when a function returns, so the address returned is not valid.
 
