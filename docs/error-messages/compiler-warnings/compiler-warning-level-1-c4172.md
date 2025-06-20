@@ -10,9 +10,13 @@ ms.assetid: a8d2bf65-d8b1-4fe3-8340-a223d7e7fde6
 
 > returning address of local variable or temporary
 
+## Remarks
+
 A function returns the address of a local variable or temporary object. Local variables and temporary objects are destroyed when a function returns, so the address returned is not valid.
 
 Redesign the function so that it does not return the address of a local object.
+
+## Example
 
 The following sample generates C4172:
 
