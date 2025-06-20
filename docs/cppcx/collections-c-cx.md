@@ -86,7 +86,7 @@ In general, for internal map functionality, prefer the `std::map` type for perfo
 
 ## Value types in Map
 
-Elements in a [Platform::Collections::Map](../cppcx/platform-collections-map-class.md) are ordered. Any element to be stored in a `Map` must support less-than comparison with strict weak ordering, either implicitly or by using a custom [stl::less](../standard-library/less-struct.md) comparator that you provide. Scalar types support the comparison implicitly. For non-scalar value types such as `Windows::Foundation::DateTime`, or for custom comparisons—for example, `objA->UniqueID < objB->UniqueID`—you must provide a custom comparator.
+Elements in a [Platform::Collections::Map](../cppcx/platform-collections-map-class.md) are ordered. Any element to be stored in a `Map` must support less-than comparison with strict weak ordering, either implicitly or by using a custom [std::less](../standard-library/less-struct.md) comparator that you provide. Scalar types support the comparison implicitly. For non-scalar value types such as `Windows::Foundation::DateTime`, or for custom comparisons—for example, `objA->UniqueID < objB->UniqueID`—you must provide a custom comparator.
 
 ## Collection types
 
