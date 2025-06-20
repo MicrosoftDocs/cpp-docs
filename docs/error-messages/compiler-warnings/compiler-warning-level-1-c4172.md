@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4172"
 title: "Compiler Warning (level 1) C4172"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4172"
+ms.date: 06/20/2025
 f1_keywords: ["C4172"]
 helpviewer_keywords: ["C4172"]
-ms.assetid: a8d2bf65-d8b1-4fe3-8340-a223d7e7fde6
 ---
 # Compiler Warning (level 1) C4172
 
