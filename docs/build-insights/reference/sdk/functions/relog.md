@@ -41,13 +41,15 @@ RESULT_CODE Relog(
     StaticReloggerGroup<TReloggerGroupMembers...> reloggerGroup);
 ```
 
-### Parameters
+### Template parameters
 
 *`TAnalyzerGroupMembers`*\
 This parameter is always deduced.
 
 *`TReloggerGroupMembers`*\
 This parameter is always deduced.
+
+### Parameters
 
 *`inputLogFile`*\
 The input ETW trace that you wish to read events from.
