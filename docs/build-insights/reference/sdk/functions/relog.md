@@ -79,6 +79,6 @@ The input trace is passed through the analyzer group *`numberOfAnalysisPasses`* 
 
 The relogging of system events like CPU samples from within a relogger class isn't supported. Use the *`systemEventsRetentionFlags`* parameter to decide which system events to keep in the output trace.
 
-The `relog` function depends on the COM API. You must call `CoInitialize` before you call `relog`. Call `CoUninitialize` once `relog` has finished. If you call `relog` without a call to `CoInitialize` first, you'll get error code 9 (`RESULT_CODE_FAILURE_START_RELOGGER`).
+The `relog` function depends on the COM API. You must call [`CoInitialize`](/windows/win32/api/objbase/nf-objbase-coinitialize) before you call `relog`. Call [`CoUninitialize`](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) once `relog` has finished. If you call `relog` without a call to `CoInitialize` first, you'll get error code 9 (`RESULT_CODE_FAILURE_START_RELOGGER`).
 
 ::: moniker-end
