@@ -20,7 +20,7 @@ The Windows Runtime defines the interfaces for collections and related types, an
 - Iterators are defined in the [`Platform::Collections` Namespace](platform-collections-namespace.md). These iterators satisfy the requirements for STL iterators and enable the use of [`std::find`](../standard-library/algorithm-functions.md#find), [`std::count_if`](../standard-library/algorithm-functions.md#count_if), and other STL algorithms on any [`Windows::Foundation::Collections`](/uwp/api/windows.foundation.collections) interface type or [`Platform::Collections`](platform-collections-namespace.md) concrete type. For example, this means that you can iterate a collection in a Windows Runtime component that's created in C# and apply an STL algorithm to it.
 
    > [!IMPORTANT]
-   > Proxy iterators `VectorIterator` and `VectorViewIterator` utilize proxy objects `VectoryProxy<T>` and `ArrowProxy<T>` to enable usage with STL containers. For more information, see "VectorProxy elements" later in this article.
+   > Proxy iterators `VectorIterator` and `VectorViewIterator` utilize proxy objects `VectoryProxy<T>` and `ArrowProxy<T>` to enable usage with STL containers. For more information, see [VectorProxy elements](#vectorproxy-elements) later in this article.
 
 - The C++/CX collection types support the same thread safety guarantees that STL containers support.
 
