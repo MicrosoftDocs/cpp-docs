@@ -18,16 +18,18 @@ Redesign the function so that it does not return the address of a local object.
 
 ## Example
 
-The following sample generates C4172:
+The following example generates C4172:
 
 ```cpp
 // C4172.cpp
-// compile with: /W1 /LD
-float f = 10;
+// compile with: /c /W1
+float f = 1.f;
 
-const double& bar() {
-// try the following line instead
-// const float& bar() {
-   return f;   // C4172
+const double& func()
+// Try one of the following lines instead:
+// const float& func()
+// const auto& func()
+{
+    return f;   // C4172
 }
 ```
