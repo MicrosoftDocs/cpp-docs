@@ -44,10 +44,10 @@ RESULT_CODE Relog(
 ### Template parameters
 
 *`TAnalyzerGroupMembers`*\
-This parameter is always deduced.
+This template parameter pack is always deduced.
 
 *`TReloggerGroupMembers`*\
-This parameter is always deduced.
+This template parameter pack is always deduced.
 
 ### Parameters
 
