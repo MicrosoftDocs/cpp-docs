@@ -71,7 +71,7 @@ The relogger group that relogs events into the trace file specified in *`outputL
 
 A result code from the [`RESULT_CODE`](../other-types/result-code-enum.md) enum.
 
-### Remark
+### Remarks
 
 The input trace is passed through the analyzer group *`numberOfAnalysisPasses`* times. There's no similar option for relogging passes. The trace is passed trough the relogger group only once, after all analysis passes are complete.
 
