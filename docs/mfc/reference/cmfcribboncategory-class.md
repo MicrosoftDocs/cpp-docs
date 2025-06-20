@@ -99,7 +99,7 @@ The `CMFCRibbonTab` class draws ribbon categories. It is derived from [CMFCRibbo
 This following example demonstrates how to create a ribbon category and add a panel to it.
 
 ```cpp
-// Create a new ribbon category and get a pointer to it`
+// Create a new ribbon category and get a pointer to it
 CMFCRibbonCategory* pCategory = m_wndRibbonBar.AddCategory
     (_T("&Write"),           // Category name
     IDB_WRITE,               // Category small images (16 x 16)

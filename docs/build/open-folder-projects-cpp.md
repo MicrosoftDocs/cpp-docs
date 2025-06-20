@@ -105,7 +105,7 @@ If you add the MinGW-W64 configuration, the JSON looks this:
 }
 ```
 
-Note the `environments` block. It defines properties that behave like environment variables and are available not only in the *CppProperties.json* file, but also in the other configuration files *task.vs.json* and *launch.vs.json*. The `Mingw64` configuration inherits the `mingw_w64` environment, and uses its `INCLUDE` property to specify the value for `includePath`. You can add other paths to this array property as needed.`
+Note the `environments` block. It defines properties that behave like environment variables and are available not only in the *CppProperties.json* file, but also in the other configuration files *task.vs.json* and *launch.vs.json*. The `Mingw64` configuration inherits the `mingw_w64` environment, and uses its `INCLUDE` property to specify the value for `includePath`. You can add other paths to this array property as needed.
 
 The `intelliSenseMode` property is set to a value appropriate for GCC. For more information on all these properties, see [CppProperties schema reference](cppproperties-schema-reference.md).
 

@@ -159,11 +159,11 @@ Retrieves an iterator to the first element in a specified container.
 
 ```cpp
 template <class Container>
-auto begin(Container& cont)  `
+auto begin(Container& cont)
    -> decltype(cont.begin());
 
 template <class Container>
-auto begin(const Container& cont)   `
+auto begin(const Container& cont)
    -> decltype(cont.begin());
 
 template <class Ty, class Size>
