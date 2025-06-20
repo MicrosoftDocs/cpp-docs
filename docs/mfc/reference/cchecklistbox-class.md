@@ -44,11 +44,19 @@ A "checklist box" displays a list of items, such as filenames. Each item in the 
 
 `CCheckListBox` is only for owner-drawn controls because the list contains more than text strings. At its simplest, a checklist box contains text strings and check boxes, but you don't need to have text at all. For example, you could have a list of small bitmaps with a check box next to each item.
 
-To create your own checklist box, you must derive your own class from `CCheckListBox`. To derive your own class, write a constructor for the derived class, then call `Create`.
+To create your own checklist box:
 
-If you want to handle Windows notification messages sent by a list box to its parent (usually a class derived from [`CDialog`](../../mfc/reference/cdialog-class.md)), add a message-map entry and message-handler member function to the parent class for each message.
+1. First, design an ordinary listbox control using the resource editor. The checklist box is based on it. The listbox must have `Owner Draw` set to `Fixed` and `Has Strings` to `True` because the checklist box needs to draw the checkboxes.
+1. Instantiate `CCheckListBox` in your code and call `Create`. If you're using DDX then `DDX_Control` does this for you.
+1. Call `SetCheckStyle` to choose one of the checkbox modes.
 
-Each message-map entry takes the following form:
+At this point checkboxes should appear next to the listbox items. Checkboxes don't respond to mouse clicks unless you use DDX. If you arean't using DDX, subclass the checklist box.
+
+Some versions of the control show artifacts when the control first appears. One workaround is to call `SetFont(GetFont())` on the checklist box instance after adding your data.
+
+To handle Windows notification messages sent by a list box to its parent (usually a class derived from [`CDialog`](../../mfc/reference/cdialog-class.md)), add a message-map entry and message-handler member function to the parent class for each message.
+
+Each message-map entry has the following form:
 
 **ON\_**_Notification_ **(** _`id`_, _`memberFxn`_ **)**
 
@@ -92,7 +100,9 @@ CCheckListBox();
 
 ### Remarks
 
-You construct a `CCheckListBox` object in two steps. First define a class derived from `CCheckListBox`, then call `Create`, which initializes the Windows checklist box and attaches it to the `CCheckListBox` object.
+Construct a `CCheckListBox` object in two steps. First, instantiate `CCheckListBox`, then call `Create` to initialize the Windows checklist box and attach it to the `CCheckListBox` object.
+
+The control also needs to be subclassed. When DDX is used to create the control this happens automatically; otherwise call `SubclassDlgItem`.
 
 ### Example
 
@@ -130,7 +140,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-You construct a `CCheckListBox` object in two steps. First, define a class derived from `CcheckListBox` and then call `Create`, which initializes the Windows checklist box and attaches it to the `CCheckListBox`. See [`CCheckListBox::CCheckListBox`](#cchecklistbox) for a sample.
+You construct a `CCheckListBox` object in two steps. First instantiate `CCheckListBox`, then call `Create`, which initializes the Windows checklist box and attaches it to the `CCheckListBox` object. The control also needs to be subclassed. When DDX is used to create the control this happens automatically, otherwise `SubclassDlgItem` needs to be called. See [`CCheckListBox::CCheckListBox`](#cchecklistbox) for a sample.
 
 When `Create` executes, Windows sends the [`WM_NCCREATE`](../../mfc/reference/cwnd-class.md#onnccreate), [`WM_CREATE`](../../mfc/reference/cwnd-class.md#oncreate), [`WM_NCCALCSIZE`](../../mfc/reference/cwnd-class.md#onnccalcsize), and [`WM_GETMINMAXINFO`](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) messages to the checklist-box control.
 
