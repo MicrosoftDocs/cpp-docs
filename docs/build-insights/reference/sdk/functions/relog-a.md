@@ -4,7 +4,7 @@ description: "The C++ Build Insights SDK RelogA function reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "RelogA", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
-# RelogA
+# `RelogA`
 
 ::: moniker range="<=msvc-140"
 
@@ -26,17 +26,17 @@ enum RESULT_CODE RelogA(
 
 ### Parameters
 
-*inputLogFile*\
+*`inputLogFile`*\
 The input ETW trace that you wish to read events from.
 
-*outputLogFile*\
+*`outputLogFile`*\
 The file in which to write the new events.
 
-*relogDescriptor*\
-Pointer to a [RELOG_DESCRIPTOR](../other-types/relog-descriptor-struct.md) object. Use this object to configure the relogging session.
+*`relogDescriptor`*\
+Pointer to a [`RELOG_DESCRIPTOR`](../other-types/relog-descriptor-struct.md) object. Use this object to configure the relogging session.
 
 ### Return Value
 
-A result code from the [RESULT_CODE](../other-types/result-code-enum.md) enum.
+A result code from the [`RESULT_CODE`](../other-types/result-code-enum.md) enum.
 
 ::: moniker-end
