@@ -194,7 +194,7 @@ int GetSize() const;
 
 The number of elements the array can store. `GetSize() == end() - begin()`.
 
-##  <a name="getunknown"></a> CComDynamicUnkArray::GetUnknown
+## <a name="getunknown"></a> CComDynamicUnkArray::GetUnknown
 
 Call this method to get the `IUnknown` pointer associated with a given cookie.
 
