@@ -8,7 +8,7 @@ ms.assetid: 86b54573-dca0-4446-be1a-e3ac489c073b
 ---
 # Compiler Error C2018
 
-unknown character 'hexnumber'
+> unknown character 'hexnumber'
 
 The source file contains an unexpected ASCII character, which is identified by its hex number. To resolve the error, remove the character.
 
