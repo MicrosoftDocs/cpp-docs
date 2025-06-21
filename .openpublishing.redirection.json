@@ -21,7 +21,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/supported-platforms-visual-cpp.md.md",
+      "source_path": "docs/supported-platforms-visual-cpp.md",
       "redirect_url": "/cpp/overview/supported-platforms-visual-cpp",
       "redirect_document_id": true
     },
@@ -7436,7 +7436,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/dotnet/how-to-enumerate-data-types-in-assemblies-using-reflection-cpp-cli.md.md",
+      "source_path": "docs/dotnet/how-to-enumerate-data-types-in-assemblies-using-reflection-cpp-cli.md",
       "redirect_url": "/cpp/dotnet/reflection-cpp-cli#enumerate",
       "redirect_document_id": false
     },
@@ -13752,12 +13752,12 @@
     },
     {
       "source_path": "docs/c-runtime-library/operator-delete-crt.md",
-      "redirect_url": "docs/c-runtime-library/delete-operator-crt",
+      "redirect_url": "/cpp/c-runtime-library/delete-operator-crt",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/c-runtime-library/operator-new-crt.md",
-      "redirect_url": "docs/c-runtime-library/new-operator-crt",
+      "redirect_url": "/cpp/c-runtime-library/new-operator-crt",
       "redirect_document_id": false
     },
     {
