@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: runtime_exception Class"
 title: "runtime_exception Class"
-ms.date: "03/27/2019"
+description: "Learn more about: runtime_exception Class"
+ms.date: 03/27/2019
 f1_keywords: ["runtime_exception", "AMPRT/runtime_exception", "AMPRT/Concurrency::runtime_exception", "AMPRT/Concurrency::runtime_exception::get_error_code"]
 helpviewer_keywords: ["runtime_exception class"]
-ms.assetid: 8fe3ce2c-3d4c-4b9c-95e8-e592f37adefd
 ---
 # runtime_exception Class
 

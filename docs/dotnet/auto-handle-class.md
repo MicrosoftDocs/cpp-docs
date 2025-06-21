@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: auto_handle Class"
 title: "auto_handle Class"
-ms.date: "01/16/2019"
+description: "Learn more about: auto_handle Class"
+ms.date: 01/16/2019
 ms.topic: "reference"
 f1_keywords: ["msclr::auto_handle::auto_handle", "msclr::auto_handle::get", "msclr::auto_handle::release", "msclr::auto_handle::reset", "msclr::auto_handle::swap", "msclr::auto_handle::operator->", "msclr::auto_handle::operator=", "msclr::auto_handle::operator auto_handle", "msclr::auto_handle::operator!"]
 helpviewer_keywords: ["msclr::auto_handle class"]
-ms.assetid: a65604d1-ecbb-44fd-ae2f-696ddeeed9d6
 ---
 # auto_handle Class
 

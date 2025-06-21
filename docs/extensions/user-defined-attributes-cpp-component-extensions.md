@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: User-Defined Attributes  (C++/CLI and C++/CX)"
-title: "User-Defined Attributes  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "User-Defined Attributes (C++/CLI and C++/CX)"
+description: "Learn more about: User-Defined Attributes (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 helpviewer_keywords: ["metadata, extending", "custom attributes, extending metadata"]
-ms.assetid: 98b29048-a3ea-4698-8441-f149cdaec9fb
 ---
 # User-Defined Attributes (C++/CLI and C++/CX)
 

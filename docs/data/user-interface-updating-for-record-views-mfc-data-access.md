@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: User-Interface Updating for Record Views  (MFC Data Access)"
-title: "User-Interface Updating for Record Views  (MFC Data Access)"
-ms.date: "11/04/2016"
+title: "User-Interface Updating for Record Views (MFC Data Access)"
+description: "Learn more about: User-Interface Updating for Record Views (MFC Data Access)"
+ms.date: 11/04/2016
 helpviewer_keywords: ["user interfaces, updating", "menus, updating as context changes", "record views, user interface"]
-ms.assetid: 2c7914b6-2dc3-40c3-b2f2-8371da2a4063
 ---
 # User-Interface Updating for Record Views (MFC Data Access)
 

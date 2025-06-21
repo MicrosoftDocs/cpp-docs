@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Schema  (MFC Data Access)"
-title: "Schema  (MFC Data Access)"
-ms.date: "11/04/2016"
+title: "Schema (MFC Data Access)"
+description: "Learn more about: Schema (MFC Data Access)"
+ms.date: 11/04/2016
 helpviewer_keywords: ["structures [C++], database", "databases [C++], schema", "database schema [C++], about database schemas", "database schema [C++]", "schemas [C++], database", "structures [C++]"]
-ms.assetid: 7d17e35f-1ccf-4853-b915-5b8c7a45b9ee
 ---
 # Schema (MFC Data Access)
 

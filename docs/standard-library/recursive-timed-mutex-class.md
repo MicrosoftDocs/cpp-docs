@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: recursive_timed_mutex Class"
 title: "recursive_timed_mutex Class"
-ms.date: "11/04/2016"
+description: "Learn more about: recursive_timed_mutex Class"
+ms.date: 11/04/2016
 f1_keywords: ["mutex/std::recursive_timed_mutex", "mutex/std::recursive_timed_mutex::recursive_timed_mutex", "mutex/std::recursive_timed_mutex::lock", "mutex/std::recursive_timed_mutex::try_lock", "mutex/std::recursive_timed_mutex::try_lock_for", "mutex/std::recursive_timed_mutex::try_lock_until", "mutex/std::recursive_timed_mutex::unlock"]
-ms.assetid: 59cc2d5c-ed80-45f3-a0a8-05652a8ead7e
 helpviewer_keywords: ["std::recursive_timed_mutex [C++]", "std::recursive_timed_mutex [C++], recursive_timed_mutex", "std::recursive_timed_mutex [C++], lock", "std::recursive_timed_mutex [C++], try_lock", "std::recursive_timed_mutex [C++], try_lock_for", "std::recursive_timed_mutex [C++], try_lock_until", "std::recursive_timed_mutex [C++], unlock"]
 ---
 # recursive_timed_mutex Class

@@ -1,11 +1,10 @@
 ---
+title: "interface class (C++/CLI and C++/CX)"
 description: "Learn more about: interface class (C++/CLI and C++/CX)"
-title: "interface class  (C++/CLI and C++/CX)"
 ms.date: 04/15/2022
 ms.topic: "reference"
 f1_keywords: ["interface_CPP", "interface class", "interface class_CPP"]
 helpviewer_keywords: ["interface class keyword", "interface struct keyword"]
-ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
 ---
 # `interface class` (C++/CLI and C++/CX)
 

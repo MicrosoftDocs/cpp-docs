@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: year_month class"
 title: "year_month class"
-ms.date: "06/28/2021"
+description: "Learn more about: year_month class"
+ms.date: 06/28/2021
 f1_keywords: ["chrono/std::chrono::year_month", "chrono/std::chrono::year_month::operator+=", "chrono/std::chrono::year_month::operator-=", "chrono/std::chrono::year_month::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month"]
 dev_langs: ["C++"]

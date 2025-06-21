@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform, default, and cli Namespaces  (C++/CLI and C++/CX)"
-title: "Platform, default, and cli Namespaces  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "Platform, default, and cli Namespaces (C++/CLI and C++/CX)"
+description: "Learn more about: Platform, default, and cli Namespaces (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 f1_keywords: ["lang", "cli"]
 helpviewer_keywords: ["lang namespace", "cli namespace"]
-ms.assetid: 9d38bd1e-dc78-47d1-a84b-9b4683e52c9c
 ---
 # Platform, default, and cli Namespaces (C++/CLI and C++/CX)
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Explicit Overrides  (C++/CLI and C++/CX)"
-title: "Explicit Overrides  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "Explicit Overrides (C++/CLI and C++/CX)"
+description: "Learn more about: Explicit Overrides (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 helpviewer_keywords: ["overriding, override [C++]"]
-ms.assetid: 4ec3eaf5-163b-4df8-8f16-7a2ec04c3d0f
 ---
 # Explicit Overrides (C++/CLI and C++/CX)
 

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Supporting Navigation in a Record View  (MFC Data Access)"
-title: "Supporting Navigation in a Record View  (MFC Data Access)"
-ms.date: "11/04/2016"
+title: "Supporting Navigation in a Record View (MFC Data Access)"
+description: "Learn more about: Supporting Navigation in a Record View (MFC Data Access)"
+ms.date: 11/04/2016
 helpviewer_keywords: ["records [C++], navigating", "record views, navigation", "navigation [C++], in record view"]
-ms.assetid: 227f2a6d-87c9-4656-807a-8e246965bcce
 ---
 # Supporting Navigation in a Record View (MFC Data Access)
 

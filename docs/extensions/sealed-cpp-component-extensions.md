@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: sealed  (C++/CLI and C++/CX)"
-title: "sealed  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "sealed (C++/CLI and C++/CX)"
+description: "Learn more about: sealed (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 f1_keywords: ["sealed_cpp", "sealed"]
 helpviewer_keywords: ["sealed keyword [C++]"]
-ms.assetid: 3d0d688a-41aa-45f5-a25a-65c44206521e
 ---
 # sealed (C++/CLI and C++/CX)
 

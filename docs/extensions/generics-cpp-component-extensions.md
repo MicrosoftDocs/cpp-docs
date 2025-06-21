@@ -1,11 +1,10 @@
 ---
-title: "Generics  (C++/CLI and C++/CX)"
+title: "Generics (C++/CLI and C++/CX)"
 description: "Links to content about the C++/CLI and C++/CX generics features, types, and methods."
 ms.date: 09/25/2020
 ms.topic: "reference"
 f1_keywords: ["generic_cpp", "generic"]
 helpviewer_keywords: ["generics [C++]"]
-ms.assetid: c7ccc316-a411-4c00-b2e2-f0c0eadc6cfd
 ---
 # Generics (C++/CLI and C++/CX)
 

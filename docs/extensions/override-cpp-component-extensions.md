@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: override  (C++/CLI and C++/CX)"
-title: "override  (C++/CLI and C++/CX)"
-ms.date: "11/04/2016"
+title: "override (C++/CLI and C++/CX)"
+description: "Learn more about: override (C++/CLI and C++/CX)"
+ms.date: 11/04/2016
 ms.topic: "reference"
 helpviewer_keywords: ["overriding, override keyword [C++]", "override keyword [C++]"]
-ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
 ---
 # override (C++/CLI and C++/CX)
 

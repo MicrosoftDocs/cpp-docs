@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Attribute Parameter Types  (C++/CLI and C++/CX)"
-title: "Attribute Parameter Types  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "Attribute Parameter Types (C++/CLI and C++/CX)"
+description: "Learn more about: Attribute Parameter Types (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 helpviewer_keywords: ["custom attributes, parameter types"]
-ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
 ---
 # Attribute Parameter Types (C++/CLI and C++/CX)
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CAtlTransactionManager Class"
 title: "CAtlTransactionManager Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CAtlTransactionManager Class"
+ms.date: 11/04/2016
 f1_keywords: ["CAtlTransactionManager", "ATLTRANSACTIONMANAGER/ATL::CAtlTransactionManager", "ATLTRANSACTIONMANAGER/ATL::Close", "ATLTRANSACTIONMANAGER/ATL::Commit", "ATLTRANSACTIONMANAGER/ATL::Create", "ATLTRANSACTIONMANAGER/ATL::CreateFile", "ATLTRANSACTIONMANAGER/ATL::DeleteFile", "ATLTRANSACTIONMANAGER/ATL::FindFirstFile", "ATLTRANSACTIONMANAGER/ATL::GetFileAttributes", "ATLTRANSACTIONMANAGER/ATL::GetFileAttributesEx", "ATLTRANSACTIONMANAGER/ATL::GetHandle", "ATLTRANSACTIONMANAGER/ATL::IsFallback", "ATLTRANSACTIONMANAGER/ATL::MoveFile", "ATLTRANSACTIONMANAGER/ATL::RegCreateKeyEx", "ATLTRANSACTIONMANAGER/ATL::RegDeleteKey", "ATLTRANSACTIONMANAGER/ATL::RegOpenKeyEx", "ATLTRANSACTIONMANAGER/ATL::Rollback", "ATLTRANSACTIONMANAGER/ATL::SetFileAttributes", "ATLTRANSACTIONMANAGER/ATL::m_bFallback", "ATLTRANSACTIONMANAGER/ATL::m_hTransaction"]
 helpviewer_keywords: ["CAtlTransactionManager class"]
-ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
 ---
 # CAtlTransactionManager Class
 

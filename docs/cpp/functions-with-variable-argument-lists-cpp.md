@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Functions with Variable Argument Lists  (C++)"
-title: "Functions with Variable Argument Lists  (C++)"
+title: "Functions with Variable Argument Lists (C++)"
+description: "Learn more about: Functions with Variable Argument Lists (C++)"
 ms.date: 05/01/2025
 helpviewer_keywords: ["arguments [C++], variable number of", "variable argument lists", "declarators, functions", "argument lists [C++], variable number of", "declaring functions [C++], variables", "function calls, variable number of arguments"]
 ---

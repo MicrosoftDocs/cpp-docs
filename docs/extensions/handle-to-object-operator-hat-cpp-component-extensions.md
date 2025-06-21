@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Handle to Object Operator (^)  (C++/CLI and C++/CX)"
-title: "Handle to Object Operator (^)  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "Handle to Object Operator (^) (C++/CLI and C++/CX)"
+description: "Learn more about: Handle to Object Operator (^) (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 helpviewer_keywords: ["^ handle to object [C++]"]
-ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
 ---
 # Handle to Object Operator (^) (C++/CLI and C++/CX)
 

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Transactions  (MFC Data Access)"
-title: "Transactions  (MFC Data Access)"
-ms.date: "11/04/2016"
+title: "Transactions (MFC Data Access)"
+description: "Learn more about: Transactions (MFC Data Access)"
+ms.date: 11/04/2016
 helpviewer_keywords: ["transactions [C++], support for", "transactions [C++]", "databases [C++], transactions"]
-ms.assetid: f80afbfe-1517-4fec-8870-9ffc70a58b05
 ---
 # Transactions (MFC Data Access)
 

@@ -1,7 +1,7 @@
 ---
-title: "Changes You Might Make to the Default Code  (MFC Data Access)"
-description: "Learn more about: Changes You Might Make to the Default Code  (MFC Data Access)"
-ms.date: "11/04/2016"
+title: "Changes You Might Make to the Default Code (MFC Data Access)"
+description: "Learn more about: Changes You Might Make to the Default Code (MFC Data Access)"
+ms.date: 11/04/2016
 helpviewer_keywords: ["record views [C++], customizing default code"]
 ---
 # Changes You Might Make to the Default Code (MFC Data Access)

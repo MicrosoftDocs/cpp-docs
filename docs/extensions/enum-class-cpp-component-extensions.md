@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: enum class  (C++/CLI and C++/CX)"
-title: "enum class  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "enum class (C++/CLI and C++/CX)"
+description: "Learn more about: enum class (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
-ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
 ---
 # enum class (C++/CLI and C++/CX)
 

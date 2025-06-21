@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: SQL: Customizing Your Recordset's SQL Statement (ODBC)"
 title: "SQL: Customizing Your Recordset's SQL Statement (ODBC)"
-ms.date: "11/04/2016"
+description: "Learn more about: SQL: Customizing Your Recordset's SQL Statement (ODBC)"
+ms.date: 11/04/2016
 helpviewer_keywords: ["recordsets, SQL statements", "ODBC recordsets, SQL statements", "SQL statements, customizing", "SQL statements, recordset", "customizing SQL statements", "overriding, SQL statements", "SQL, opening recordsets"]
-ms.assetid: 72293a08-cef2-4be2-aa1c-30565fcfbaf9
 ---
 # SQL: Customizing Your Recordset's SQL Statement (ODBC)
 

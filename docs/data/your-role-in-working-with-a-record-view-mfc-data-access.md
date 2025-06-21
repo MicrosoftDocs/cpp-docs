@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Your Role in Working with a Record View  (MFC Data Access)"
-title: "Your Role in Working with a Record View  (MFC Data Access)"
-ms.date: "11/04/2016"
+title: "Your Role in Working with a Record View (MFC Data Access)"
+description: "Learn more about: Your Role in Working with a Record View (MFC Data Access)"
+ms.date: 11/04/2016
 helpviewer_keywords: ["record views, customizing default code", "MFC, record views"]
-ms.assetid: 691e89a5-ff21-4ca3-9278-69d4678288bb
 ---
 # Your Role in Working with a Record View (MFC Data Access)
 

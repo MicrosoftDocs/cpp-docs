@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: ref new, gcnew  (C++/CLI and C++/CX)"
-title: "ref new, gcnew  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "ref new, gcnew (C++/CLI and C++/CX)"
+description: "Learn more about: ref new, gcnew (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 f1_keywords: ["gcnew", "ref new", "gcnew_cpp"]
 helpviewer_keywords: ["ref new keyword (C++)", "gcnew keyword [C++]"]
-ms.assetid: 388a62da-c2df-4a94-a9a2-205b53e577da
 ---
 # ref new, gcnew (C++/CLI and C++/CX)
 

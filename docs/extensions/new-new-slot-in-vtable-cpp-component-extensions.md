@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: new (new slot in vtable)  (C++/CLI and C++/CX)"
-title: "new (new slot in vtable)  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "new (new slot in vtable) (C++/CLI and C++/CX)"
+description: "Learn more about: new (new slot in vtable) (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 helpviewer_keywords: ["new keyword [C++]"]
-ms.assetid: 1a9a5704-f02f-46ae-ad65-f0f2b6dbabc3
 ---
 # new (new slot in vtable) (C++/CLI and C++/CX)
 
