@@ -66,7 +66,7 @@ class CAtlTransactionManager;
 
 **Header:** atltransactionmanager.h
 
-## <a name="dtor"></a>  ~CAtlTransactionManager
+## <a name="dtor"></a> ~CAtlTransactionManager
 
 CAtlTransactionManager destructor.
 

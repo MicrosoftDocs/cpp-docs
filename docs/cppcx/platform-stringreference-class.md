@@ -140,7 +140,7 @@ A reference to an object of type `StringReference`.
 
 Because `StringReference` is a standard C++ class and not a ref class, it does not appear in the **Object Browser**.
 
-## <a name="operator-call"></a> StringReference::operator()  Operator
+## <a name="operator-call"></a> StringReference::operator() Operator
 
 Converts a `StringReference` object to a `Platform::String^` object.
 

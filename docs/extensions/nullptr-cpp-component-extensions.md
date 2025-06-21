@@ -6,7 +6,7 @@ ms.topic: "reference"
 helpviewer_keywords: ["__nullptr keyword (C++)", "nullptr keyword [C++]"]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
 ---
-# nullptr  (C++/CLI and C++/CX)
+# nullptr (C++/CLI and C++/CX)
 
 The **`nullptr`** keyword represents a *null pointer value*. Use a null pointer value to indicate that an object handle, interior pointer, or native pointer type does not point to an object.
 

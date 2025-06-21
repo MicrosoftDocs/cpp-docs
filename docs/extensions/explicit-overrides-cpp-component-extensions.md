@@ -6,7 +6,7 @@ ms.topic: "reference"
 helpviewer_keywords: ["overriding, override [C++]"]
 ms.assetid: 4ec3eaf5-163b-4df8-8f16-7a2ec04c3d0f
 ---
-# Explicit Overrides  (C++/CLI and C++/CX)
+# Explicit Overrides (C++/CLI and C++/CX)
 
 This topic discusses how to explicitly override a member of a base class or interface. A named (explicit) override should only be used to override a method with a derived method that has a different name.
 

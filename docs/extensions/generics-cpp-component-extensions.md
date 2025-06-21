@@ -7,7 +7,7 @@ f1_keywords: ["generic_cpp", "generic"]
 helpviewer_keywords: ["generics [C++]"]
 ms.assetid: c7ccc316-a411-4c00-b2e2-f0c0eadc6cfd
 ---
-# Generics  (C++/CLI and C++/CX)
+# Generics (C++/CLI and C++/CX)
 
 Generics are parameterized types and methods. In this section, find out which generic features both the Windows Runtime and the common language runtime support, and which ones only the common language runtime supports. You'll also find out how to author your own generic methods and types in C++/CLI, and how to use generic types authored in a .NET Framework language in C++/CLI. Finally, this section provides a comparison of generics and C++ templates.
 

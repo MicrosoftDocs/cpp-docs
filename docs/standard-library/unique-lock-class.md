@@ -298,7 +298,7 @@ The remaining constructors store & *Mtx* as the stored `mutex` pointer. Ownershi
 |`Rel_time`|Ownership is determined by calling `try_lock_for(Rel_time)`.|
 |`Abs_time`|Ownership is determined by calling `try_lock_until(Abs_time)`.|
 
-## <a name="dtorunique_lock_destructor"></a>  ~unique_lock Destructor
+## <a name="dtorunique_lock_destructor"></a> ~unique_lock Destructor
 
 Releases any resources that are associated with the `unique_lock` object.
 

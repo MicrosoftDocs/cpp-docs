@@ -7,7 +7,7 @@ f1_keywords: ["lang", "cli"]
 helpviewer_keywords: ["lang namespace", "cli namespace"]
 ms.assetid: 9d38bd1e-dc78-47d1-a84b-9b4683e52c9c
 ---
-# Platform, default, and cli Namespaces  (C++/CLI and C++/CX)
+# Platform, default, and cli Namespaces (C++/CLI and C++/CX)
 
 A namespace qualifies the names of language elements so the names do not conflict with otherwise identical names elsewhere in the source code. For example, a name collision might prevent the compiler from recognizing [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md). Namespaces are used by the compiler but are not preserved in the compiled assembly.
 

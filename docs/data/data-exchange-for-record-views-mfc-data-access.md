@@ -5,7 +5,7 @@ ms.date: "11/19/2018"
 helpviewer_keywords: ["RFX (record field exchange), data exchange mechanism", "RFX (record field exchange), record views", "record views, data exchange", "DDX (dialog data exchange), record views", "RFX (record field exchange)"]
 ms.assetid: abc52ca7-6997-47a7-98f3-f347f52b1f72
 ---
-# Data Exchange for Record Views   (MFC Data Access)
+# Data Exchange for Record Views (MFC Data Access)
 
 When you use [Add Class](../mfc/reference/adding-an-mfc-odbc-consumer.md) to map the controls in a record view's dialog template resource to the fields of a recordset, the framework manages data exchange in both directions — from recordset to controls and from controls to recordset. Using the DDX mechanism means that you do not have to write the code to transfer data back and forth yourself.
 

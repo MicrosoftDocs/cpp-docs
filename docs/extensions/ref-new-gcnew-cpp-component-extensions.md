@@ -7,7 +7,7 @@ f1_keywords: ["gcnew", "ref new", "gcnew_cpp"]
 helpviewer_keywords: ["ref new keyword (C++)", "gcnew keyword [C++]"]
 ms.assetid: 388a62da-c2df-4a94-a9a2-205b53e577da
 ---
-# ref new, gcnew  (C++/CLI and C++/CX)
+# ref new, gcnew (C++/CLI and C++/CX)
 
 The **ref new** aggregate keyword allocates an instance of a type that is garbage collected when the object becomes inaccessible, and that returns a handle ([^](handle-to-object-operator-hat-cpp-component-extensions.md)) to the allocated object.
 

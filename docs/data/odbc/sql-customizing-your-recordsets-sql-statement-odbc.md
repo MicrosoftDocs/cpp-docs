@@ -82,11 +82,11 @@ The following table shows the possibilities for the *lpszSQL* parameter to `Open
 
 \* `m_nFields` must be less than or equal to the number of columns specified in the **SELECT** statement. The data type of each column specified in the **SELECT** statement must be the same as the data type of the corresponding RFX output column.
 
-### Case 1   lpszSQL = NULL
+### Case 1 lpszSQL = NULL
 
 The recordset selection depends on what `GetDefaultSQL` returns when `CRecordset::Open` calls it. Cases 2 through 5 describe the possible strings.
 
-### Case 2   lpszSQL = a Table Name
+### Case 2 lpszSQL = a Table Name
 
 The recordset uses record field exchange (RFX) to build the column list from the column names provided in the RFX function calls in the recordset class's override of `DoFieldExchange`. If you used a wizard to declare your recordset class, this case has the same result as case 1 (provided that you pass the same table name you specified in the wizard). If you do not use a wizard to write your class, case 2 is the simplest way to construct the SQL statement.
 
@@ -120,7 +120,7 @@ SELECT CourseID, InstructorID, RoomNo, Schedule, SectionNo
     FROM SECTION
 ```
 
-### Case 3   lpszSQL = a SELECT/FROM Statement
+### Case 3 lpszSQL = a SELECT/FROM Statement
 
 You specify the column list by hand rather than relying on RFX to construct it automatically. You might want to do this when:
 
@@ -138,11 +138,11 @@ You specify the column list by hand rather than relying on RFX to construct it a
 
    For information and an example, see [Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).
 
-### Case 4   lpszSQL = SELECT/FROM Plus WHERE and/or ORDER BY
+### Case 4 lpszSQL = SELECT/FROM Plus WHERE and/or ORDER BY
 
 You specify everything: the column list (based on the RFX calls in `DoFieldExchange`), the table list, and the contents of a **WHERE** and/or an **ORDER BY** clause. If you specify your **WHERE** and/or **ORDER BY** clauses this way, do not use `m_strFilter` and/or `m_strSort`.
 
-### Case 5   lpszSQL = a Stored Procedure Call
+### Case 5 lpszSQL = a Stored Procedure Call
 
 If you need to call a predefined query (such as a stored procedure in a Microsoft SQL Server database), you must write a **CALL** statement in the string you pass to *lpszSQL*. The wizards do not support declaring a recordset class for calling a predefined query. Not all predefined queries return records.
 

@@ -61,7 +61,7 @@ Constructs a `recursive_timed_mutex` object that is not locked.
 recursive_timed_mutex();
 ```
 
-## <a name="dtorrecursive_timed_mutex_destructor"></a>  ~recursive_timed_mutex Destructor
+## <a name="dtorrecursive_timed_mutex_destructor"></a> ~recursive_timed_mutex Destructor
 
 Releases any resources that are used by the `recursive_timed_mutex` object.
 

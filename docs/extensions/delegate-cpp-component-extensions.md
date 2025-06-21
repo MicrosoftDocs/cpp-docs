@@ -7,7 +7,7 @@ f1_keywords: ["delegate_cpp", "delegate"]
 helpviewer_keywords: ["delegate keyword [C++]"]
 ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
 ---
-# delegate  (C++/CLI and C++/CX)
+# delegate (C++/CLI and C++/CX)
 
 Declares a type that represents a function pointer.
 

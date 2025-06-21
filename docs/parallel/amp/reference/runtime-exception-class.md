@@ -82,7 +82,7 @@ The `runtime_exception` object to copy.
 
 The `runtime_exception` object.
 
-## <a name="dtor"></a>  ~runtime_exception Destructor
+## <a name="dtor"></a> ~runtime_exception Destructor
 
 Destroys the object.
 

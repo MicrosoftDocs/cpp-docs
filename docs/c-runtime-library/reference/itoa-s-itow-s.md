@@ -10,7 +10,7 @@ f1_keywords: ["_itoa_s", "_ltoa_s", "_ultoa_s", "_i64toa_s", "_ui64toa_s", "_ito
 helpviewer_keywords: ["_ui64toa_s function", "_itow_s function", "_i64tow_s function", "_itot_s function", "converting integers", "itow_s function", "i64toa_s function", "_ui64tow_s function", "integers, converting", "_i64tot_s function", "itoa_s function", "_itoa_s function", "ui64toa_s function", "i64tow_s function", "converting numbers, to strings", "_ui64tot_s function", "_i64toa_s function"]
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
 ---
-# `_itoa_s`, `_ltoa_s`, `_ultoa_s`, `_i64toa_s`, `_ui64toa_s`, `_itow_s`,  `_ltow_s`,  `_ultow_s`, `_i64tow_s`, `_ui64tow_s`
+# `_itoa_s`, `_ltoa_s`, `_ultoa_s`, `_i64toa_s`, `_ui64toa_s`, `_itow_s`, `_ltow_s`, `_ultow_s`, `_i64tow_s`, `_ui64tow_s`
 
 Converts an integer to a string. These functions are versions of the [`_itoa`, `_itow` functions](itoa-itow.md) with security enhancements as described in [Security features in the CRT](../security-features-in-the-crt.md).
 

@@ -4,7 +4,7 @@ title: "Functions with Variable Argument Lists  (C++)"
 ms.date: 05/01/2025
 helpviewer_keywords: ["arguments [C++], variable number of", "variable argument lists", "declarators, functions", "argument lists [C++], variable number of", "declaring functions [C++], variables", "function calls, variable number of arguments"]
 ---
-# Functions with Variable Argument Lists  (C++)
+# Functions with Variable Argument Lists (C++)
 
 Function declarations that have ellipsis (...) as the last argument take a variable number of arguments. C++ provides type checking only for the explicitly declared arguments. You can use variable argument lists when the number and types of arguments to the function can vary. The `printf` family of functions is an example of functions that have variable argument lists.
 

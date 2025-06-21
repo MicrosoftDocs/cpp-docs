@@ -23,7 +23,7 @@ The following example shows the `for_all` method. It uses the [concurrency::para
 
 [!code-cpp[concrt-task-tree-search#1](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_2.cpp)]
 
-## Example:  Search the tree for a value
+## Example: Search the tree for a value
 
 The following example shows the `search_for_value` function, which searches for a value in the provided `tree` object. This function passes to the `for_all` method a work function that throws when it finds a tree node that contains the provided value.
 

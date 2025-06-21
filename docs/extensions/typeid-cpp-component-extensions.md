@@ -6,7 +6,7 @@ ms.topic: "reference"
 helpviewer_keywords: ["typeid keyword [C++]"]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
 ---
-# typeid  (C++/CLI and C++/CX)
+# typeid (C++/CLI and C++/CX)
 
 Gets a value that indicates the type of an object.
 

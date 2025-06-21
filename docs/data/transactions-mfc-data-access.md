@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["transactions [C++], support for", "transactions [C++]", "databases [C++], transactions"]
 ms.assetid: f80afbfe-1517-4fec-8870-9ffc70a58b05
 ---
-# Transactions  (MFC Data Access)
+# Transactions (MFC Data Access)
 
 The concept of a transaction was developed to handle cases in which the resulting state of the database depends on the total success of a series of operations. This could come about because successive operations might modify the results of previous operations. In such cases, if any one operation fails, the resulting state could be indeterminate.
 

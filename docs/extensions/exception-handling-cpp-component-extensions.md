@@ -6,7 +6,7 @@ ms.topic: "reference"
 helpviewer_keywords: ["structured exception handling [C++], managed exceptions", "Exception class, managed applications", "exception handling", "C++ exception handling", "exception handling, types of", "System::Exception class in managed applications"]
 ms.assetid: ccb11fe8-6938-41ac-b477-a183e85865b9
 ---
-# Exception Handling  (C++/CLI and C++/CX)
+# Exception Handling (C++/CLI and C++/CX)
 
 Applications compiled with the `/ZW` compiler option or `/clr` compiler option both use *exceptions* to handle unexpected errors during program execution. The following topics discuss exception handling in either C++/CX or C++/CLI applications.
 

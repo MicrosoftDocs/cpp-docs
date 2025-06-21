@@ -59,7 +59,7 @@ Constructs a `recursive_mutex` object that is not locked.
 recursive_mutex();
 ```
 
-## <a name="dtorrecursive_mutex_destructor"></a>  ~recursive_mutex
+## <a name="dtorrecursive_mutex_destructor"></a> ~recursive_mutex
 
 Releases any resources that are used by the object.
 

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["record views, customizing default code"]
 ms.assetid: 91f2828f-0666-4273-ae28-e4703fd98521
 ---
-# Using a Record View  (MFC Data Access)
+# Using a Record View (MFC Data Access)
 
 This topic explains how you might commonly customize the default code for record views that the wizard writes for you. Typically, you want to constrain the record selection with a [filter](../data/odbc/recordset-filtering-records-odbc.md) or [parameters](../data/odbc/recordset-parameterizing-a-recordset-odbc.md), perhaps [sort](../data/odbc/recordset-sorting-records-odbc.md) the records, customize the SQL statement.
 

@@ -7,7 +7,7 @@ f1_keywords: ["interface_CPP", "interface class", "interface class_CPP"]
 helpviewer_keywords: ["interface class keyword", "interface struct keyword"]
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
 ---
-# `interface class`  (C++/CLI and C++/CX)
+# `interface class` (C++/CLI and C++/CX)
 
 Declares an interface.  For information on native interfaces, see [`__interface`](../cpp/interface.md).
 

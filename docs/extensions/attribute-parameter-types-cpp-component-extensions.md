@@ -6,7 +6,7 @@ ms.topic: "reference"
 helpviewer_keywords: ["custom attributes, parameter types"]
 ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
 ---
-# Attribute Parameter Types  (C++/CLI and C++/CX)
+# Attribute Parameter Types (C++/CLI and C++/CX)
 
 Values passed to attributes must be known to the compiler at compile time.  Attribute parameters can be of the following types:
 

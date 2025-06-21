@@ -6,7 +6,7 @@ ms.topic: "reference"
 helpviewer_keywords: ["overriding, override keyword [C++]", "override keyword [C++]"]
 ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
 ---
-# override  (C++/CLI and C++/CX)
+# override (C++/CLI and C++/CX)
 
 The **override** context-sensitive keyword indicates that a member of a type overrides a base class or a base interface member.
 
