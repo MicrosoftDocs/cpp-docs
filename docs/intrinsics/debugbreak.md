@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: __debugbreak"
 title: "__debugbreak"
-ms.date: "09/02/2019"
+description: "Learn more about: __debugbreak"
+ms.date: 09/02/2019
 f1_keywords: ["__debugbreak_cpp", "__debugbreak"]
 helpviewer_keywords: ["breakpoints, __debugbreak intrinsic", "__debugbreak intrinsic"]
-ms.assetid: 1d1e1c0c-891a-4613-ae4b-d790094ba830
 ---
 # __debugbreak
 
@@ -34,7 +33,7 @@ The `__debugbreak` compiler intrinsic, similar to [DebugBreak](/windows/win32/ap
 For example:
 
 ```C
-main() {
+int main() {
    __debugbreak();
 }
 ```
@@ -42,7 +41,7 @@ main() {
 is similar to:
 
 ```C
-main() {
+int main() {
    __asm {
       int 3
    }
