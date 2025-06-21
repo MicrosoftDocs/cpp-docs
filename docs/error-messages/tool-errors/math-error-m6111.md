@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Math Error M6111"
 title: "Math Error M6111"
-ms.date: "11/04/2016"
+description: "Learn more about: Math Error M6111"
+ms.date: 11/04/2016
 f1_keywords: ["M6111"]
 helpviewer_keywords: ["M6111"]
-ms.assetid: c0fc13f8-33c8-4e3f-a440-126cc623441b
 ---
 # Math Error M6111
 
