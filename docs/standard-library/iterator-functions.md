@@ -1,7 +1,7 @@
 ---
 title: "<iterator> functions"
 description: "Learn more about: <iterator> functions"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["xutility/std::advance", "xutility/std::back_inserter", "xutility/std::begin", "xutility/std::cbegin", "xutility/std::cend", "xutility/std::distance", "xutility/std::end", "xutility/std::front_inserter", "xutility/std::inserter", "xutility/std::make_checked_array_iterator", "xutility/std::make_move_iterator", "xutility/std::make_unchecked_array_iterator", "xutility/std::next", "xutility/std::prev"]
 helpviewer_keywords: ["std::advance [C++]", "std::back_inserter [C++]", "std::begin [C++]", "std::cbegin [C++]", "std::cend [C++]", "std::distance [C++]", "std::end [C++]", "std::front_inserter [C++]", "std::inserter [C++]", "std::make_checked_array_iterator [C++]", "std::make_move_iterator [C++]", "std::make_unchecked_array_iterator [C++]", "std::next [C++]", "std::prev [C++]"]
 ---
@@ -159,11 +159,11 @@ Retrieves an iterator to the first element in a specified container.
 
 ```cpp
 template <class Container>
-auto begin(Container& cont)  `
+auto begin(Container& cont)
    -> decltype(cont.begin());
 
 template <class Container>
-auto begin(const Container& cont)   `
+auto begin(const Container& cont)
    -> decltype(cont.begin());
 
 template <class Ty, class Size>
