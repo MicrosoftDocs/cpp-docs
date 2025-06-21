@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: month_day Class"
 title: "month_day class"
-ms.date: "6/28/2021"
+description: "Learn more about: month_day Class"
+ms.date: 6/28/2021
 f1_keywords: ["chrono/std::chrono::month_day", "chrono/std::chrono::month_day::day", "chrono/std::chrono::month_day::month", "chrono/std::chrono::month_day::ok"]
 helpviewer_keywords: ["std::chrono [C++], month_day"]
 dev_langs: ["C++"]
 ---
 
-# `month_day` class  
+# `month_day` class
 
 Represents a specific day of a specific month. The year isn't specified.
 

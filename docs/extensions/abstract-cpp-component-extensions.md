@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: abstract  (C++/CLI and C++/CX)"
-title: "abstract  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "abstract (C++/CLI and C++/CX)"
+description: "Learn more about: abstract (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 f1_keywords: ["abstract", "abstract_cpp"]
 helpviewer_keywords: ["abstract keyword [C++]"]
-ms.assetid: cbae3408-0378-4ac8-b70d-c016b381a6d5
 ---
-# abstract  (C++/CLI and C++/CX)
+# abstract (C++/CLI and C++/CX)
 
 The **abstract** keyword declares either:
 

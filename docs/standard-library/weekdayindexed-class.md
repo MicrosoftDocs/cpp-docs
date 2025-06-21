@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: weekday_indexed Class"
 title: "weekday_indexed class"
-ms.date: "06/25/2021"
+description: "Learn more about: weekday_indexed Class"
+ms.date: 06/25/2021
 f1_keywords: ["chrono/std::chrono::weekday_indexed", "chrono/std::chrono::weekday_indexed::ok", "std::chrono::weekday_indexed::weekday", "std::chrono::weekday_indexed::ok"]
 helpviewer_keywords: ["std::chrono [C++], weekday_indexed"]
 ---
-# `weekday_indexed` class  
+# `weekday_indexed` class
 
 Combines a weekday, representing a day of the week in the Gregorian calendar, with an index in the range [1, 5] that represents the weekday of the month (1st, 2nd, 3rd, and so on).
 

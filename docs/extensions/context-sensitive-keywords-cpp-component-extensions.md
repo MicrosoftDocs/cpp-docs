@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: Context-Sensitive Keywords  (C++/CLI and C++/CX)"
-title: "Context-Sensitive Keywords  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "Context-Sensitive Keywords (C++/CLI and C++/CX)"
+description: "Learn more about: Context-Sensitive Keywords (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 f1_keywords: ["internal_CPP"]
 helpviewer_keywords: ["context-sensitive keywords"]
-ms.assetid: e33da089-f434-44e9-8cce-4668d05a8939
 ---
-# Context-Sensitive Keywords  (C++/CLI and C++/CX)
+# Context-Sensitive Keywords (C++/CLI and C++/CX)
 
 *Context-sensitive keywords* are language elements that are recognized only in specific contexts. Outside the specific context, a context-sensitive keyword can be a user-defined symbol.
 

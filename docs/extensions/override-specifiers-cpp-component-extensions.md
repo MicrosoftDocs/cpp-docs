@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Override Specifiers  (C++/CLI and C++/CX)"
-title: "Override Specifiers  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "Override Specifiers (C++/CLI and C++/CX)"
+description: "Learn more about: Override Specifiers (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 helpviewer_keywords: ["override specifiers, C++", "override specifiers"]
-ms.assetid: 155bbf6f-4722-4654-afb1-9cb52af799fb
 ---
-# Override Specifiers  (C++/CLI and C++/CX)
+# Override Specifiers (C++/CLI and C++/CX)
 
 *Override specifiers* modify how inherited types and members of inherited types behave in derived types.
 

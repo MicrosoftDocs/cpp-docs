@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: ref class and ref struct  (C++/CLI and C++/CX)"
 title: "ref class and ref struct (C++/CLI and C++/CX)"
-ms.date: "05/30/2019"
+description: "Learn more about: ref class and ref struct (C++/CLI and C++/CX)"
+ms.date: 05/30/2019
 ms.topic: "reference"
 f1_keywords: ["ref class", "value class", "ref struct", "value struct",]
 helpviewer_keywords: ["ref class keyword [C++]", "value class keyword [C++]", "value struct keyword [C++]", "ref struct keyword [C++]"]
-ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
 ---
-# ref class and ref struct  (C++/CLI and C++/CX)
+# ref class and ref struct (C++/CLI and C++/CX)
 
 The **ref class** or **ref struct** extensions declare a class or struct whose *object lifetime* is administered automatically. When the object is no longer accessible or goes out of scope, the memory is released.
 

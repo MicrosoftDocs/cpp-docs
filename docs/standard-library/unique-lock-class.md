@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: unique_lock Class"
 title: "unique_lock Class"
+description: "Learn more about: unique_lock Class"
 ms.date: 06/20/2022
 f1_keywords: ["mutex/std::unique_lock"]
-ms.assetid: f4ed8ba9-c8af-446f-8ef0-0b356bad14bd
 ms.custom: devdivchpfy22
 ---
 
@@ -298,7 +297,7 @@ The remaining constructors store & *Mtx* as the stored `mutex` pointer. Ownershi
 |`Rel_time`|Ownership is determined by calling `try_lock_for(Rel_time)`.|
 |`Abs_time`|Ownership is determined by calling `try_lock_until(Abs_time)`.|
 
-## <a name="dtorunique_lock_destructor"></a>  ~unique_lock Destructor
+## <a name="dtorunique_lock_destructor"></a> ~unique_lock Destructor
 
 Releases any resources that are associated with the `unique_lock` object.
 

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: recursive_mutex Class"
 title: "recursive_mutex Class"
-ms.date: "11/04/2016"
+description: "Learn more about: recursive_mutex Class"
+ms.date: 11/04/2016
 f1_keywords: ["mutex/std::recursive_mutex", "mutex/std::recursive_mutex::recursive_mutex", "mutex/std::recursive_mutex::lock", "mutex/std::recursive_mutex::try_lock", "mutex/std::recursive_mutex::unlock"]
-ms.assetid: eb5ffd1b-7e78-4559-8391-bb220ead42fc
 helpviewer_keywords: ["std::recursive_mutex [C++]", "std::recursive_mutex [C++], recursive_mutex", "std::recursive_mutex [C++], lock", "std::recursive_mutex [C++], try_lock", "std::recursive_mutex [C++], unlock"]
 ---
 # recursive_mutex Class
@@ -59,7 +58,7 @@ Constructs a `recursive_mutex` object that is not locked.
 recursive_mutex();
 ```
 
-## <a name="dtorrecursive_mutex_destructor"></a>  ~recursive_mutex
+## <a name="dtorrecursive_mutex_destructor"></a> ~recursive_mutex
 
 Releases any resources that are used by the object.
 

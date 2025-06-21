@@ -85,7 +85,7 @@ If you specify more elements to drop than exist in the underlying range, then an
 
 The best way to create a `drop_view` is by using the [`views::drop`](range-adaptors.md#drop) range adaptor. Range adaptors are the intended way to create view classes. The view types are exposed in case you want to create your own custom view type.
 
-### Example:  `drop_view`
+### Example: `drop_view`
 
 ```cpp
 // requires /std:c++20 or later

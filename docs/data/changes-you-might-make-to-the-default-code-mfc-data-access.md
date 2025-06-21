@@ -1,10 +1,10 @@
 ---
-title: "Changes You Might Make to the Default Code  (MFC Data Access)"
-description: "Learn more about: Changes You Might Make to the Default Code  (MFC Data Access)"
-ms.date: "11/04/2016"
+title: "Changes You Might Make to the Default Code (MFC Data Access)"
+description: "Learn more about: Changes You Might Make to the Default Code (MFC Data Access)"
+ms.date: 11/04/2016
 helpviewer_keywords: ["record views [C++], customizing default code"]
 ---
-# Changes You Might Make to the Default Code  (MFC Data Access)
+# Changes You Might Make to the Default Code (MFC Data Access)
 
 The [MFC Application Wizard](../mfc/reference/database-support-mfc-application-wizard.md) writes a recordset class for you that selects all records in a single table. You will often want to modify that behavior in one or more of the following ways:
 

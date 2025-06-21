@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CComDynamicUnkArray Class"
 title: "CComDynamicUnkArray Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CComDynamicUnkArray Class"
+ms.date: 11/04/2016
 f1_keywords: ["CComDynamicUnkArray", "ATLCOM/ATL::CComDynamicUnkArray", "ATLCOM/ATL::CComDynamicUnkArray::CComDynamicUnkArray", "ATLCOM/ATL::CComDynamicUnkArray::Add", "ATLCOM/ATL::CComDynamicUnkArray::begin", "ATLCOM/ATL::CComDynamicUnkArray::clear", "ATLCOM/ATL::CComDynamicUnkArray::end", "ATLCOM/ATL::CComDynamicUnkArray::GetAt", "ATLCOM/ATL::CComDynamicUnkArray::GetCookie", "ATLCOM/ATL::CComDynamicUnkArray::GetSize", "ATLCOM/ATL::CComDynamicUnkArray::GetUnknown", "ATLCOM/ATL::CComDynamicUnkArray::Remove"]
 helpviewer_keywords: ["connection points [C++], managing", "CComDynamicUnkArray class"]
-ms.assetid: 202470d7-9a1b-498f-b96d-659d681acd65
 ---
 # CComDynamicUnkArray Class
 
@@ -194,7 +193,7 @@ int GetSize() const;
 
 The number of elements the array can store. `GetSize() == end() - begin()`.
 
-##  <a name="getunknown"></a> CComDynamicUnkArray::GetUnknown
+## <a name="getunknown"></a> CComDynamicUnkArray::GetUnknown
 
 Call this method to get the `IUnknown` pointer associated with a given cookie.
 

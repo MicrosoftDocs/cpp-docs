@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: partial  (C++/CLI and C++/CX)"
-title: "partial  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "partial (C++/CLI and C++/CX)"
+description: "Learn more about: partial (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 f1_keywords: ["partial_CPP"]
 helpviewer_keywords: ["partial", "C++/CX, partial"]
-ms.assetid: 43adf1f5-10c5-44aa-a66f-7507e2bdabf8
 ---
-# partial  (C++/CLI and C++/CX)
+# partial (C++/CLI and C++/CX)
 
 The **partial** keyword enables different parts of the same ref class to be authored independently and in different files.
 
