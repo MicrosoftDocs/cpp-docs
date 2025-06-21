@@ -16,20 +16,12 @@ The source file contains an unexpected ASCII character, which is identified by i
 
 ## Example
 
-The following sample generates C2018:
+The following example generates C2018:
 
 ```cpp
 // C2018.cpp
-int main() {
-   @   // C2018
-}
-```
-
-Possible resolution:
-
-```cpp
-// C2018b.cpp
-int main() {
-
+int main()
+{
+    @   // C2018
 }
 ```
