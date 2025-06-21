@@ -5,7 +5,7 @@ ms.date: "6/25/2021"
 f1_keywords: ["chrono/std::chrono::weekday", "chrono/std::chrono::weekday::January", "chrono/std::chrono::weekday::February", "chrono/std::chrono::weekday::March","chrono/std::chrono::weekday::April","chrono/std::chrono::weekday::May","chrono/std::chrono::weekday::June","chrono/std::chrono::weekday::July","chrono/std::chrono::weekday::August","chrono/std::chrono::weekday::September","chrono/std::chrono::weekday::October","chrono/std::chrono::weekday::November","chrono/std::chrono::weekday::December","chrono/std::chrono::weekday::operator++", "chrono/std::chrono::weekday::operator--", "chrono/std::chrono::weekday::operator unsigned", "chrono/std::chrono::weekday::ok", "chrono/std::chrono::weekday::iso_encoding", "chrono/std::chrono::weekday::c_encoding"]
 helpviewer_keywords: ["std::chrono [C++], weekday"]
 ---
-# `weekday` class  
+# `weekday` class
 
 Represents a day of the week in the [Gregorian calendar](https://en.wikipedia.org/wiki/Proleptic_Gregorian_calendar). For example, Tuesday.
 

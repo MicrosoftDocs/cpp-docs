@@ -6,7 +6,7 @@ f1_keywords: ["chrono/std::chrono::month_weekday_last", "chrono/std::chrono::mon
 helpviewer_keywords: ["std::chrono [C++], month_weekday_last"]
 dev_langs: ["C++"]
 ---
-# `month_weekday_last` class  
+# `month_weekday_last` class
 
 Represents the last weekday of a month.
 

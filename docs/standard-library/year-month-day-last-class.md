@@ -6,7 +6,7 @@ f1_keywords: ["chrono/std::chrono::year_month_day_last", "chrono/std::chrono::ye
 helpviewer_keywords: ["std::chrono [C++], year_month_day_last"]
 dev_langs: ["C++"]
 ---
-# `year_month_day_last` class  
+# `year_month_day_last` class
 
  Represents the last day of a specific year and month.
 

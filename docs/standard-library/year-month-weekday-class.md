@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::chrono [C++], year_month_weekday"]
 dev_langs: ["C++"]
 ---
 
-# `year_month_weekday` class  
+# `year_month_weekday` class
 
 Represents a specific year, month, and nth weekday of the month.
 

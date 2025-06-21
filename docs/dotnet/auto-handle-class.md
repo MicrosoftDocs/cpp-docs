@@ -25,14 +25,14 @@ The managed type to be embedded.
 
 ## <a name="members"></a> Members
 
-### Public constructors  
+### Public constructors
 
 |Name|Description|  
 |---------|-----------|  
 |[auto_handle::auto_handle](#auto-handle)|The `auto_handle` constructor.|  
 |[auto_handle::~auto_handle](#tilde-auto-handle)|The `auto_handle` destructor.|  
 
-### Public methods  
+### Public methods
 
 |Name|Description|  
 |---------|-----------|  

@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::chrono [C++], month_day_last"]
 dev_langs: ["C++"]
 ---
 
-# `month_day_last` class  
+# `month_day_last` class
 
  Represents the last day of a month.
 

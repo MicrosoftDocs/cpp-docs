@@ -6,7 +6,7 @@ f1_keywords: ["chrono/std::chrono::year_month_day", "chrono/std::chrono::year::o
 helpviewer_keywords: ["std::chrono [C++], year_month_day"]
 ---
 
-# `year_month_day` class  
+# `year_month_day` class
 
 Represents a month, year, and day.
 

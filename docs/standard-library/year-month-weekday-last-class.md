@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::chrono [C++], year_month_weekday_last"]
 dev_langs: ["C++"]
 ---
 
-# `year_month_weekday_last` class  
+# `year_month_weekday_last` class
 
 A specific year, month, and last weekday of the month.
 

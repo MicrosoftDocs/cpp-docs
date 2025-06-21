@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::chrono [C++], month_day"]
 dev_langs: ["C++"]
 ---
 
-# `month_day` class  
+# `month_day` class
 
 Represents a specific day of a specific month. The year isn't specified.
 
