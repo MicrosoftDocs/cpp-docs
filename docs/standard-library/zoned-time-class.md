@@ -345,7 +345,7 @@ int main()
 
 1\) The default copy assignment operator. Copies (doesn't move) the stored [`time_point`](time-point-class.md) and [time_zone](time-zone-class.md) pointer from the other `zoned_time` into this `zoned_time`.
 2\) Assigns `st` to the [`time_point`](time-point-class.md) in this `zoned_time`.  After the assignment, `*this->get_sys_time() == st;`
-3\) Converts `lt` (a `local_time`) to a `sys_time`. It does this essentially as `timeZone->to_sys(lt)`, and assigns the result to the [`time_point`] in this `zoned_time`. After the assignment, `*this->get_local_time() == lt;`
+3\) Converts `lt` (a `local_time`) to a `sys_time`. It does this essentially as `timeZone->to_sys(lt)`, and assigns the result to the [`time_point`](time-point-class.md) in this `zoned_time`. After the assignment, `*this->get_local_time() == lt;`
 
 ## <a name="op_local_time"></a> `operator local_time`
 
