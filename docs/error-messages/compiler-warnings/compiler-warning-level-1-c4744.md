@@ -37,7 +37,7 @@ The following sample generates C4744.
 
 extern unsigned global;
 
-main()
+int main()
 {
     printf_s("%d\n", global);
 }

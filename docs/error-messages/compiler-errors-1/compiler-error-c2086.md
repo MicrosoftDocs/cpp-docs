@@ -18,7 +18,7 @@ The following sample generates C2086:
 
 ```cpp
 // C2086.cpp
-main() {
+int main() {
   int a;
   int a;   // C2086 not an error in ANSI C
 }

@@ -34,7 +34,7 @@ The `__debugbreak` compiler intrinsic, similar to [DebugBreak](/windows/win32/ap
 For example:
 
 ```C
-main() {
+int main() {
    __debugbreak();
 }
 ```
@@ -42,7 +42,7 @@ main() {
 is similar to:
 
 ```C
-main() {
+int main() {
    __asm {
       int 3
    }

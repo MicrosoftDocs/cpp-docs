@@ -854,7 +854,7 @@ The following example demonstrates the [num_threads](2-directives.md#23-parallel
 
 ```cpp
 #include <omp.h>
-main()
+int main()
 {
     omp_set_dynamic(1);
     ...
