@@ -42,9 +42,9 @@ The C++ Standard Library contains several function objects in the [`<functional>
 
 ```cpp
 template <class Key,
-    class Traits=less<Key>,
-    class Allocator=allocator<Key>>
-class set
+    class Compare = std::less<Key>,
+    class Allocator = std::allocator<Key>>
+class set;
 ```
 
 The second template argument is the function object [`less`](less-struct.md). This function object returns **`true`** if the first parameter is less than the second parameter. Since some containers sort their elements, the container needs a way of comparing two elements. The comparison is done by using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
@@ -54,11 +54,11 @@ The second template argument is the function object [`less`](less-struct.md). Th
 Another use of function objects is in algorithms. For example, the [`remove_if`](algorithm-functions.md#remove_if) algorithm is declared as follows:
 
 ```cpp
-template <class ForwardIterator, class Predicate>
+template <class ForwardIterator, class UnaryPredicate>
 ForwardIterator remove_if(
     ForwardIterator first,
     ForwardIterator last,
-    Predicate pred);
+    UnaryPredicate pred);
 ```
 
 The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is **`true`**, then the element is shifted such that it's beyond the new end returned by `remove_if`. You can use any of the function objects declared in the [`<functional>`](functional.md) header for the argument `pred` or you can create your own.
