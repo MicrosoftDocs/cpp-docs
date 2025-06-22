@@ -16,10 +16,10 @@ Function objects provide two main advantages over a regular function call. The f
 To create a function object, create a type and implement `operator()`, such as:
 
 ```cpp
-class Functor
+class LessThanFunctor
 {
 public:
-    int operator()(int a, int b)
+    bool operator()(int a, int b)
     {
         return a < b;
     }
@@ -27,14 +27,14 @@ public:
 
 int main()
 {
-    Functor f;
+    LessThanFunctor less_than;
     int a = 5;
     int b = 7;
-    int ans = f(a, b);
+    bool ans = less_than(a, b);
 }
 ```
 
-The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it's actually calling `operator()` of the `Functor` type. This similarity between calling a function object and a function is how the term function object came about.
+The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it's actually calling `operator()` of the `LessThanFunctor` type. This similarity between calling a function object and a function is how the term function object came about.
 
 ## Function Objects and Containers
 
