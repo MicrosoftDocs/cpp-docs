@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Function Objects in the C++ Standard Library"
 title: "Function Objects in the C++ Standard Library"
-ms.date: "03/15/2019"
+description: "Learn more about: Function Objects in the C++ Standard Library"
+ms.date: 06/22/2025
 helpviewer_keywords: ["functors", "C++ Standard Library, functors", "C++ Standard Library, function objects", "function objects"]
-ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
 ---
 # Function Objects in the C++ Standard Library
 
