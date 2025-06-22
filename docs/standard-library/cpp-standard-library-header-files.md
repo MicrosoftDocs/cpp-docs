@@ -58,7 +58,7 @@ Header files for the C++ standard library and extensions, by category.
 |Sequence containers|[`<array>`](array.md), [`<deque>`](deque.md), [`<forward_list>`](forward-list.md), [`<list>`](list.md), [`<vector>`](vector.md)|
 |Ordered associative containers| [`<map>`](map.md), [`<set>`](set.md)|
 |Unordered associative containers|[`<unordered_map>`](unordered-map.md), [`<unordered_set>`](unordered-set.md)|
-|Adaptor containers|[`<queue>`](queue.md), [`<stack>`](stack.md)|
+|Container adaptors|[`<queue>`](queue.md), [`<stack>`](stack.md)|
 |[Errors and exception handling](../cpp/errors-and-exception-handling-modern-cpp.md)|[`<exception>`](exception.md), [`<stdexcept>`](stdexcept.md), [`<system_error>`](system-error.md)|
 |[I/O and formatting](../text/string-and-i-o-formatting-modern-cpp.md)|[`<filesystem>`](filesystem.md), [`<fstream>`](fstream.md), [`<iomanip>`](iomanip.md), [`<ios>`](ios.md), [`<iosfwd>`](iosfwd.md), [`<iostream>`](iostream.md), [`<istream>`](istream.md), [`<ostream>`](ostream.md), [`<sstream>`](sstream.md), [`<streambuf>`](streambuf.md), [`<strstream>`](strstream.md)|
 |Iterators|[`<iterator>`](iterator.md)|
