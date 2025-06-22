@@ -17,7 +17,7 @@ Defines facilities for random number generation, allowing creation of uniformly 
 **Namespace:** std
 
 > [!NOTE]
-> The `<random>` library uses the `#include <initializer_list>' statement.
+> The `<random>` library uses the `#include <initializer_list>` statement.
 
 ## Summary
 
