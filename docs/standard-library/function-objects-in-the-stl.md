@@ -7,13 +7,13 @@ ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
 ---
 # Function Objects in the C++ Standard Library
 
-A *function object*, or *functor*, is any type that implements operator(). This operator is referred to as the *call operator* or sometimes the *application operator*. The C++ Standard Library uses function objects primarily as sorting criteria for containers and in algorithms.
+A *function object*, or *functor*, is any type that implements `operator()`. This operator is referred to as the *call operator* or sometimes the *application operator*. The C++ Standard Library uses function objects primarily as sorting criteria for containers and in algorithms.
 
 Function objects provide two main advantages over a straight function call. The first is that a function object can contain state. The second is that a function object is a type and therefore can be used as a template parameter.
 
 ## Creating a Function Object
 
-To create a function object, create a type and implement operator(), such as:
+To create a function object, create a type and implement `operator()`, such as:
 
 ```cpp
 class Functor
@@ -34,7 +34,7 @@ int main()
 }
 ```
 
-The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it's actually calling operator() of the Functor type. This similarity between calling a function object and a function is how the term function object came about.
+The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it's actually calling `operator()` of the `Functor` type. This similarity between calling a function object and a function is how the term function object came about.
 
 ## Function Objects and Containers
 
