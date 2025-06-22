@@ -38,7 +38,7 @@ The last line of the `main` function shows how you call the function object. Thi
 
 ## Function Objects and Containers
 
-The C++ Standard Library contains several function objects in the [`<functional>`](../standard-library/functional.md) header file. One use of these function objects is as a sorting criterion for containers. For example, the `set` container is declared as follows:
+The C++ Standard Library contains several function objects in the [`<functional>`](functional.md) header file. One use of these function objects is as a sorting criterion for containers. For example, the `set` container is declared as follows:
 
 ```cpp
 template <class Key,
@@ -61,8 +61,8 @@ ForwardIterator remove_if(
     Predicate pred);
 ```
 
-The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is **`true`**, then the element is shifted such that it's beyond the new end returned by `remove_if`. You can use any of the function objects declared in the [`<functional>`](../standard-library/functional.md) header for the argument `pred` or you can create your own.
+The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is **`true`**, then the element is shifted such that it's beyond the new end returned by `remove_if`. You can use any of the function objects declared in the [`<functional>`](functional.md) header for the argument `pred` or you can create your own.
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
+[C++ Standard Library Reference](cpp-standard-library-reference.md)
