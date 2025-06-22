@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: <random>"
 title: "<random>"
-ms.date: "08/24/2017"
+description: "Learn more about: <random>"
+ms.date: 08/24/2017
 f1_keywords: ["<random>"]
 helpviewer_keywords: ["random header"]
-ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
 ---
 # `<random>`
 
