@@ -1,7 +1,7 @@
 ---
 title: "C++ standard library header files"
 description: "C++ standard library header files, categorized"
-ms.date: 08/31/2020
+ms.date: 06/22/2025
 helpviewer_keywords: ["header files, C++ Standard Library", "C++ Standard Library, header files"]
 ---
 # C++ standard library header files
