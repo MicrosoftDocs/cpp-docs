@@ -9,7 +9,7 @@ ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
 
 A *function object*, or *functor*, is any type that implements `operator()`. This operator is referred to as the *call operator* or sometimes the *application operator*. The C++ Standard Library uses function objects primarily as sorting criteria for containers and in algorithms.
 
-Function objects provide two main advantages over a straight function call. The first is that a function object can contain state. The second is that a function object is a type and therefore can be used as a template parameter.
+Function objects provide two main advantages over a regular function call. The first is that a function object can contain state. The second is that a function object is a type and therefore can be used as a template parameter.
 
 ## Creating a Function Object
 
@@ -51,7 +51,7 @@ The second template argument is the function object `less`. This function object
 
 ## Function Objects and Algorithms
 
-Another use of functional objects is in algorithms. For example, the `remove_if` algorithm is declared as follows:
+Another use of function objects is in algorithms. For example, the `remove_if` algorithm is declared as follows:
 
 ```cpp
 template <class ForwardIterator, class Predicate>
@@ -61,7 +61,7 @@ ForwardIterator remove_if(
     Predicate pred);
 ```
 
-The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is **`true`**, then the element is removed from the container being accessed by the iterators `first` and `last`. You can use any of the function objects declared in the [`<functional>`](../standard-library/functional.md) header for the argument `pred` or you can create your own.
+The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is **`true`**, then the element is shifted such that it's beyond the new end returned by `remove_if`. You can use any of the function objects declared in the [`<functional>`](../standard-library/functional.md) header for the argument `pred` or you can create your own.
 
 ## See also
 
