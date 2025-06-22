@@ -41,9 +41,11 @@ Header files for the C++ standard library and extensions, by category.
 <sup>11</sup> Added in the C++11 standard.\
 <sup>14</sup> Added in the C++14 standard.\
 <sup>17</sup> Added in the C++17 standard.\
-<sup>20</sup> Added in the draft C++20 standard.\
+<sup>20</sup> Added in the C++20 standard.\
+<sup>23</sup> Added in the C++23 standard.\
+<sup>26</sup> Added in the draft C++26 standard.\
 <sup>a</sup> Deprecated in the C++17 standard.\
-<sup>b</sup> Removed in the draft C++20 standard.\
+<sup>b</sup> Removed in the C++20 standard.\
 <sup>c</sup> Deprecated in the C++98 standard.
 
 ::: moniker-end
