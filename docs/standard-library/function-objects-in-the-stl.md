@@ -38,7 +38,7 @@ The last line of the `main` function shows how you call the function object. Thi
 
 ## Function Objects and Containers
 
-The C++ Standard Library contains several function objects in the [`<functional>`](functional.md) header file. One use of these function objects is as a sorting criterion for containers. For example, the `set` container is declared as follows:
+The C++ Standard Library contains several function objects in the [`<functional>`](functional.md) header file. One use of these function objects is as a sorting criterion for containers. For example, the [`set`](set-class.md) container is declared as follows:
 
 ```cpp
 template <class Key,
@@ -47,11 +47,11 @@ template <class Key,
 class set
 ```
 
-The second template argument is the function object `less`. This function object returns **`true`** if the first parameter is less than the second parameter. Since some containers sort their elements, the container needs a way of comparing two elements. The comparison is done by using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
+The second template argument is the function object [`less`](less-struct.md). This function object returns **`true`** if the first parameter is less than the second parameter. Since some containers sort their elements, the container needs a way of comparing two elements. The comparison is done by using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
 
 ## Function Objects and Algorithms
 
-Another use of function objects is in algorithms. For example, the `remove_if` algorithm is declared as follows:
+Another use of function objects is in algorithms. For example, the [`remove_if`](algorithm-functions.md#remove_if) algorithm is declared as follows:
 
 ```cpp
 template <class ForwardIterator, class Predicate>
