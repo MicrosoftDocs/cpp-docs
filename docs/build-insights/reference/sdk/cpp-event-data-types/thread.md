@@ -3,7 +3,7 @@ title: "Thread class"
 description: "The C++ Build Insights SDK Thread class reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "Thread", "throughput analysis", "build time analysis", "vcperf.exe"]
-ms.topic: how-to
+ms.topic: reference
 ---
 # Thread class
 

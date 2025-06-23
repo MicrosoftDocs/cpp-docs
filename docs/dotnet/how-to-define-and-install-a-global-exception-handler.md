@@ -4,7 +4,7 @@ title: "How to: Define and Install a Global Exception Handler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["handlers, global"]
 ms.assetid: dd88a812-3bc7-4ce8-8283-4b674c246534
-ms.topic: install-set-up-deploy
+ms.topic: how-to
 ---
 # How to: Define and Install a Global Exception Handler
 

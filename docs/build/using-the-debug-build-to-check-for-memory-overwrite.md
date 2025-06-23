@@ -4,7 +4,7 @@ title: "Using the Debug Build to Check for Memory Overwrite"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory, overwrites"]
 ms.assetid: 1345eb4d-24ba-4595-b1cc-2da66986311e
-ms.topic: concept-article
+ms.topic: how-to
 ---
 # Using the Debug Build to Check for Memory Overwrite
 
