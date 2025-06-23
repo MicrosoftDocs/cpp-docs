@@ -93,5 +93,5 @@ Rotating unsigned short 0x12 left by 10 bits gives 0x4800
 
 ## See also
 
-[`_rotr8`, `_rotr16`](../intrinsics/rotr8-rotr16.md)\
-[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)
+[`_rotr8`, `_rotr16`](rotr8-rotr16.md)\
+[Compiler intrinsics](compiler-intrinsics.md)
