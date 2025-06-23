@@ -61,7 +61,7 @@ Unlike a left-shift operation, when executing a left rotation, the high-order bi
 
 int main()
 {
-    unsigned char c = 'A', c1, c2;
+    unsigned char c = 'A';
 
     for (int i = 0; i < 8; i++)
     {

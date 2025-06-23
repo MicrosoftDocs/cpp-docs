@@ -61,7 +61,7 @@ Unlike a right-shift operation, when executing a right rotation, the low-order b
 
 int main()
 {
-    unsigned char c = 'A', c1, c2;
+    unsigned char c = 'A';
 
     for (int i = 0; i < 8; i++)
     {
