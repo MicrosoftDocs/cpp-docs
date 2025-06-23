@@ -6,7 +6,7 @@ f1_keywords: ["_rotr16", "_rotr8"]
 helpviewer_keywords: ["_rotr8 intrinsic", "_rotr16 intrinsic"]
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
 ---
-# _rotr8, _rotr16
+# `_rotr8`, `_rotr16`
 
 **Microsoft Specific**
 
@@ -27,10 +27,10 @@ unsigned short _rotr16(
 
 ### Parameters
 
-*value*\
+*`value`*\
 [in] The value to rotate.
 
-*shift*\
+*`shift`*\
 [in] The number of bits to rotate.
 
 ## Return value
@@ -44,7 +44,7 @@ The rotated value.
 |`_rotr8`|x86, ARM, x64, ARM64|
 |`_rotr16`|x86, ARM, x64, ARM64|
 
-**Header file** \<intrin.h>
+**Header file**: `<intrin.h>`
 
 ## Remarks
 
@@ -94,5 +94,5 @@ Rotating unsigned short 0x12 right by 10 bits gives 0x480
 
 ## See also
 
-[_rotl8, _rotl16](../intrinsics/rotl8-rotl16.md)\
+[`_rotl8`, `_rotl16`](../intrinsics/rotl8-rotl16.md)\
 [Compiler intrinsics](../intrinsics/compiler-intrinsics.md)
