@@ -218,7 +218,7 @@ Previous versions of Visual Studio included C++ sample code. The sample code was
 |--|--|
 | [Button](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Demonstrates use of an in-place active menu, a stock property page, and the About box control option. |
 | [Circ](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Demonstrates ActiveX control basics. These include control painting, stock and custom properties, stock and custom events, use of colors and fonts, the stock font property page, the default property page, and versioning. |
-| [CmnCtrl](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Demonstrates some of the new controls available with MFC on wiprlhext: The command link button (`CButton`), the pager control (`CPagerCtrl`), the split button (`CSplitButton`), and the network address control (`CNetAddressCtrl`). |
+| [CmnCtrl](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Demonstrates some of the new controls available with MFC on Windows Vista: The command link button (`CButton`), the pager control (`CPagerCtrl`), the split button (`CSplitButton`), and the network address control (`CNetAddressCtrl`). |
 | [Contain](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Demonstrates a Visual Editing Container Application. |
 | [Image](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Demonstrates how to use MFC to build an ActiveX control that downloads data asynchronously. |
 | [Licensed](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | A control that enforces use of a design-time and run-time license. |
