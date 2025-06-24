@@ -94,7 +94,7 @@ utc_time<Duration> operator()(const sys_time<Duration>& t) const;
 
 ### Parameters
 
-**`t`**
+*`t`*\
 The `time_point` to convert.
 
 ### Return value
