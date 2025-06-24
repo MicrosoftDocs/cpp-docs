@@ -5583,7 +5583,7 @@ template<class RandomAccessIterator, class Compare>
 void partial_sort(
     RandomAccessIterator first,
     RandomAccessIterator sortEnd,
-    RandomAccessIterator last
+    RandomAccessIterator last,
     Compare pred);
 
 template<class ExecutionPolicy, class RandomAccessIterator>
@@ -7783,7 +7783,7 @@ ForwardIterator1 search(
     ForwardIterator1 first1,
     ForwardIterator1 last1,
     ForwardIterator2 first2,
-    ForwardIterator2 last2
+    ForwardIterator2 last2,
     BinaryPredicate pred);
 
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>

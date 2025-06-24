@@ -24,7 +24,7 @@ errno_t asctime_s(
 );
 errno_t _wasctime_s(
    wchar_t* buffer,
-   size_t numberOfElements
+   size_t numberOfElements,
    const struct tm *tmSource
 );
 template <size_t size>

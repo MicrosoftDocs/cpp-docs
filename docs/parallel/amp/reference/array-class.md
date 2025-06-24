@@ -362,7 +362,7 @@ explicit array(
 
 array(
     const array_view<const value_type, _Rank>& _Src,
-    accelerator_view _Av
+    accelerator_view _Av,
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 array(
