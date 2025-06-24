@@ -4,6 +4,7 @@ title: "Using a Record View  (MFC Data Access)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["record views, customizing default code"]
 ms.assetid: 91f2828f-0666-4273-ae28-e4703fd98521
+ms.topic: concept-article
 ---
 # Using a Record View  (MFC Data Access)
 

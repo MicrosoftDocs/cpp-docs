@@ -5,6 +5,7 @@ ms.custom: "get-started-article"
 ms.date: "09/26/2018"
 helpviewer_keywords: ["_ATL_MIN_CRT macro"]
 ms.assetid: 08ff14e8-aa49-4139-a110-5d071939cf1e
+ms.topic: tutorial
 ---
 # Changing the Drawing Code (ATL Tutorial, Part 4)
 

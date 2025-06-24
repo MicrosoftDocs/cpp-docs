@@ -4,6 +4,7 @@ title: "Importing and Exporting"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["DLLs [C++], importing", "exporting DLLs [C++]", "importing DLLs [C++]", "DLLs [C++], exporting from", "__declspec(dllimport) keyword [C++]"]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
+ms.topic: concept-article
 ---
 # Importing and Exporting
 

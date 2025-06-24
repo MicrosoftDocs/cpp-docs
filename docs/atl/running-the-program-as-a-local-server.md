@@ -4,6 +4,7 @@ title: "Running the Program as a Local Server"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["debugging [ATL], running services as local server", "ATL services, running as local servers"]
 ms.assetid: eb9701e6-e2a8-4666-897f-0c893aec8ac7
+ms.topic: concept-article
 ---
 # Running the Program as a Local Server
 

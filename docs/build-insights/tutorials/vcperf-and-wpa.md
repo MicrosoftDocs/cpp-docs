@@ -3,6 +3,7 @@ title: "Tutorial: vcperf and Windows Performance Analyzer"
 description: "Tutorial on how to use vcperf and WPA for analyzing C++ build traces."
 ms.date: "11/03/2019"
 helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: tutorial
 ---
 # Tutorial: vcperf and Windows Performance Analyzer
 

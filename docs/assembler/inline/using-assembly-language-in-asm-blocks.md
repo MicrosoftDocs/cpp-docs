@@ -4,6 +4,7 @@ title: "Using Assembly Language in __asm Blocks"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["assembly language [C++], features", "assembly language [C++]", "__asm keyword [C++], assembly language in"]
 ms.assetid: ad699356-1d16-4984-871f-c5fd7797c1fb
+ms.topic: concept-article
 ---
 # Using Assembly Language in __asm Blocks
 

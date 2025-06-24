@@ -5,6 +5,7 @@ ms.date: "11/12/2018"
 f1_keywords: ["vc.codewiz.event.overview"]
 helpviewer_keywords: ["ActiveX controls [C++], adding events to", "MFC ActiveX controls [C++], adding events", "events [C++], ActiveX controls", "add event wizard [C++]"]
 ms.assetid: fe34832a-edfc-4f86-aacb-8df77001873d
+ms.topic: how-to
 ---
 # Add an event
 

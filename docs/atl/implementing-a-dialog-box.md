@@ -4,6 +4,7 @@ title: "Implementing a Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CSimpleDialog class, implementing dialog boxes in ATL", "dialog boxes, ATL", "CAxDialogImpl class, implementing dialog boxes in ATL", "ATL, dialog boxes"]
 ms.assetid: 478525f2-aa6a-435a-b162-68fc8aa98a8e
+ms.topic: how-to
 ---
 # Implementing a Dialog Box
 

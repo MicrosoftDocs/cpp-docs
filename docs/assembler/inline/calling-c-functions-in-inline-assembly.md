@@ -4,6 +4,7 @@ title: "Calling C Functions in Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["function calls, C functions", "function calls, in inline assembly", "functions [C], calling in inline assembly", "Visual C, functions", "inline assembly, calling functions", "__asm keyword [C++], calling functions"]
 ms.assetid: f8a8d568-d175-4e23-9b24-36ef60a4cab3
+ms.topic: concept-article
 ---
 # Calling C Functions in Inline Assembly
 

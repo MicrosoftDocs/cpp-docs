@@ -3,6 +3,7 @@ description: "Learn more about: Converting projects from mixed mode to pure inte
 title: "Converting projects from mixed mode to pure intermediate language"
 ms.date: 04/15/2021
 helpviewer_keywords: ["intermediate language, mixed-mode applications", "mixed-mode applications", "mixed-mode applications, intermediate language", "projects [C++], converting to intermediate language"]
+ms.topic: how-to
 ---
 # Converting projects from mixed mode to pure intermediate language
 

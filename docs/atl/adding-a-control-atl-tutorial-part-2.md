@@ -4,6 +4,7 @@ title: "Adding a Control (ATL Tutorial, Part 2)"
 ms.custom: "get-started-article"
 ms.date: "08/19/2019"
 ms.assetid: c9575a75-1064-41f1-9697-7aada560c669
+ms.topic: tutorial
 ---
 # Adding a Control (ATL Tutorial, Part 2)
 

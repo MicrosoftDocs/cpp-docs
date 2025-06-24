@@ -3,6 +3,7 @@ title: "Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs"
 description: "Shows how to use the Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs."
 ms.date: 11/30/2020
 helpviewer_keywords: ["DLLs [C++], initializing", "DLLs [C++], extension", "DLLs [C++], regular"]
+ms.topic: concept-article
 ---
 # Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs
 

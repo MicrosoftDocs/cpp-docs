@@ -4,6 +4,7 @@ title: "Debug Class (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Trace class, Visual C++", ".NET Framework [C++], Debug class", "Debug class"]
 ms.assetid: 076bd528-1b6f-4e8a-a372-eb5849cf969a
+ms.topic: how-to
 ---
 # Debug Class (C++/CLI)
 

@@ -4,6 +4,7 @@ title: "Implementing the Event Handling Interface"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, event handling", "event handling, ATL", "interfaces, event and event sink"]
 ms.assetid: eb2a5b33-88dc-4ce3-bee0-c5c38ea050d7
+ms.topic: concept-article
 ---
 # Implementing the Event Handling Interface
 
