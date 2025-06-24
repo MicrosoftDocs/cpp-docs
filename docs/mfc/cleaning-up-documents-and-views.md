@@ -4,6 +4,7 @@ title: "Cleaning Up Documents and Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["views [MFC], cleaning up", "documents [MFC], cleaning up", "documents [MFC], closing"]
 ms.assetid: 0c454db2-3644-434d-9e53-8108a7aedfe1
+ms.topic: concept-article
 ---
 # Cleaning Up Documents and Views
 

@@ -4,6 +4,7 @@ title: "Opening Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Open member functions [MFC]", "CFile class [MFC], variable", "opening files, in MFC", "Open calls [MFC]", "Open method, CFile class [MFC]", "examples [MFC], opening files", "opening files, handling exceptions", "exception handling [MFC], when opening files", "files [MFC], opening", "file objects [MFC]", "MFC, file operations", "opening files [MFC]", "exception handling [MFC], opening files"]
 ms.assetid: a991b8ec-b04a-4766-b47e-7485b5dd0b01
+ms.topic: how-to
 ---
 # Opening Files
 

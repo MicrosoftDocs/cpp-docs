@@ -4,6 +4,7 @@ title: "Manipulating the Progress Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CProgressCtrl class [MFC], working with", "progress controls [MFC], manipulating", "CProgressCtrl class [MFC], manipulating", "controlling progress controls [MFC]", "CProgressCtrl class [MFC], using"]
 ms.assetid: 9af561d1-980b-4003-a6da-ff79be15bf23
+ms.topic: how-to
 ---
 # Manipulating the Progress Control
 

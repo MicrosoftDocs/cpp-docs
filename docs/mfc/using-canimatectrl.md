@@ -4,6 +4,7 @@ title: "Using CAnimateCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["animation controls [MFC], CAnimateCtrl class", "controls [MFC], animation", "CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]"]
 ms.assetid: 696c0805-bef0-4e2e-a9e7-b37b9215b7f0
+ms.topic: concept-article
 ---
 # Using CAnimateCtrl
 

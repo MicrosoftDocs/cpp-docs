@@ -4,6 +4,7 @@ title: "Allocating GDI Resources"
 ms.date: "06/03/2019"
 helpviewer_keywords: ["resources [MFC], printing", "GDI objects [MFC], allocating during printing", "printing [MFC], allocating GDI resources"]
 ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
+ms.topic: concept-article
 ---
 # Allocating GDI Resources
 

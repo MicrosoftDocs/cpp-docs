@@ -4,6 +4,7 @@ title: "Optimizing Persistence and Initialization"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], optimizing", "performance, ActiveX controls", "optimization, ActiveX controls", "optimizing performance, ActiveX controls"]
 ms.assetid: e821e19e-b9eb-49ab-b719-0743420ba80b
+ms.topic: concept-article
 ---
 # Optimizing Persistence and Initialization
 

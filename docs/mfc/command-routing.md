@@ -4,6 +4,7 @@ title: "Command Routing"
 ms.date: "09/06/2019"
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "handlers [MFC]", "handlers, command [MFC]", "command routing"]
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
+ms.topic: how-to
 ---
 # Command Routing
 

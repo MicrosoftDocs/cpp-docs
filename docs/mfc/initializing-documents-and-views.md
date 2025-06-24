@@ -4,6 +4,7 @@ title: "Initializing Documents and Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["initializing documents [MFC]", "documents [MFC], initializing", "views [MFC], initializing", "initializing objects [MFC], document objects", "initializing views [MFC]"]
 ms.assetid: 33cb8643-8a16-478c-bc26-eccc734e3661
+ms.topic: concept-article
 ---
 # Initializing Documents and Views
 

@@ -4,6 +4,7 @@ title: "Managing the State Data of MFC Modules"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["global state [MFC]", "data management [MFC], MFC modules", "window procedure entry points [MFC]", "exported interfaces and global state [MFC]", "module states [MFC], saving and restoring", "data management [MFC]", "MFC, managing state data", "multiple modules [MFC]", "module state restored [MFC]"]
 ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
+ms.topic: concept-article
 ---
 # Managing the State Data of MFC Modules
 

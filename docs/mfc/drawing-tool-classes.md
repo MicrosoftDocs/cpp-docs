@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.drawing"]
 helpviewer_keywords: ["drawing [MFC], tool classes", "screen output classes [MFC]", "output classes [MFC]"]
 ms.assetid: e907bd89-38b5-47c9-b76a-95e0bf3bb41d
+ms.topic: concept-article
 ---
 # Drawing Tool Classes
 

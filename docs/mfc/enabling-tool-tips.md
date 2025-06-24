@@ -4,6 +4,7 @@ title: "Enabling Tool Tips"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["initializing tool tips [MFC]", "enabling tool tips [MFC]", "tool tips [MFC], initializing", "tool tips [MFC], enabling"]
 ms.assetid: 06b7c889-7722-4ce6-8b88-9efa50fe6369
+ms.topic: how-to
 ---
 # Enabling Tool Tips
 

@@ -4,6 +4,7 @@ title: "MFC ActiveX Controls: Returning Error Codes From a Method"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], error codes", "SetNotSupported method, using", "errors [MFC], ActiveX control error codes", "GetNotSupported method [MFC]", "FireError method [MFC]", "SCODE, MFC ActiveX controls", "ThrowError method [MFC]"]
 ms.assetid: 771fb9c9-2413-4dcc-b386-7bc4c4adeafd
+ms.topic: troubleshooting-error-codes
 ---
 # MFC ActiveX Controls: Returning Error Codes From a Method
 

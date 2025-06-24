@@ -4,6 +4,7 @@ title: "Processing Tab Control Notification Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["notifications [MFC], tab controls", "CTabCtrl class [MFC], processing notifications", "notifications [MFC], processing in CTabCtrl", "processing notifications [MFC]", "tab controls [MFC], processing notifications"]
 ms.assetid: 758ccb7a-9e73-48f8-9073-23f7cb09918c
+ms.topic: concept-article
 ---
 # Processing Tab Control Notification Messages
 

@@ -4,6 +4,7 @@ title: "Creating an Extended Combo Box Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["extended combo boxes", "CComboBoxEx class [MFC], creating extended combo box controls", "extended combo boxes [MFC], creating"]
 ms.assetid: a964267e-97b6-4e77-9f89-55bb5c68913f
+ms.topic: how-to
 ---
 # Creating an Extended Combo Box Control
 

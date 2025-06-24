@@ -4,6 +4,7 @@ title: "Creating Modal Dialog Boxes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["modal dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating", "MFC dialog boxes [MFC], modal"]
 ms.assetid: 26c7a68c-79f6-4862-a5a8-6024984644d2
+ms.topic: concept-article
 ---
 # Creating Modal Dialog Boxes
 

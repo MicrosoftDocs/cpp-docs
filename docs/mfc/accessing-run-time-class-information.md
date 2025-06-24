@@ -4,6 +4,7 @@ title: "Accessing Run-Time Class Information"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CObject class [MFC], and RTTI", "CObject class [MFC], using IsKindOf method [MFC]", "run time [MFC], class information", "RUNTIME_CLASS macro [MFC]", "CObject class [MFC], using RUNTIME_CLASS macro [MFC]", "RTTI compiler option [MFC]", "CObject class [MFC], accessing run-time class information", "run time [MFC]", "IsKindOf method method [MFC]", "run-time class [MFC], accessing information", "classes [MFC], run-time class information", "run-time class [MFC]", "RUNTIME_CLASS macro, using"]
 ms.assetid: 3445a9af-0bd6-4496-95c3-aa59b964570b
+ms.topic: how-to
 ---
 # Accessing Run-Time Class Information
 
