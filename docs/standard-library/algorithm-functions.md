@@ -8,6 +8,8 @@ ms.custom: devdivchpfy22
 ---
 # `<algorithm>` functions
 
+The `<algorithm>` header provides the following functions:
+
 ## <a name="adjacent_find"></a> `adjacent_find`
 
 Searches for two adjacent elements that are either equal or satisfy a specified condition.
