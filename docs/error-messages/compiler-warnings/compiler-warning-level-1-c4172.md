@@ -1,13 +1,13 @@
 ---
 title: "Compiler Warning (level 1) C4172"
 description: "Learn more about: Compiler Warning (level 1) C4172"
-ms.date: 06/20/2025
+ms.date: 06/25/2025
 f1_keywords: ["C4172"]
 helpviewer_keywords: ["C4172"]
 ---
 # Compiler Warning (level 1) C4172
 
-> returning address of local variable or temporary
+> returning address of local variable or temporary : *optional_context*
 
 ## Remarks
 
