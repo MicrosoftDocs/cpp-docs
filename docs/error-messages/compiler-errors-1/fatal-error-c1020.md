@@ -16,7 +16,7 @@ The `#endif` directive has no matching `#if`, `#ifdef`, or `#ifndef` directive. 
 
 This error can occur if you have conditional preprocessor directives before you include a precompiled header file. The compiler ignores everything in the file before the precompiled header, including any `#if`, `#ifdef`, or `#ifndef` directives. For more information, see [`/Yu` (Use precompiled header)](../../build/reference/yu-use-precompiled-header-file.md).
 
-## Examples
+## Example
 
 The following sample generates C1020:
 

@@ -10,9 +10,13 @@ ms.assetid: 5542e604-599d-4e36-8f83-1d454c5753c9
 
 > invalid integer constant expression
 
+## Remarks
+
 The expression in an `#if` directive did not exist or did not evaluate to a constant.
 
 Constants defined using `#define` must have values that evaluate to an integer constant if they are used in an `#if`, `#elif`, or `#else` directive.
+
+## Example
 
 The following sample generates C1017:
 

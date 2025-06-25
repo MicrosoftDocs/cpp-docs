@@ -10,6 +10,8 @@ ms.assetid: bd6d274a-c7b4-43af-8bf2-23c5e442aa22
 
 > compiler is out of heap space in pass 2
 
+## Remarks
+
 The compiler ran out of dynamic memory space during its second pass, probably due to a program with too many symbols or complex expressions.
 
 ### To fix by using the following possible solutions

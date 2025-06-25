@@ -10,6 +10,8 @@ ms.assetid: dbe034b0-6eb0-41b4-a50c-2fccf9e78ad4
 
 > unexpected end of file found
 
+## Remarks
+
 The compiler reached the end of a source file without resolving a construct. The code may be missing one of the following elements:
 
 - A closing brace
@@ -27,6 +29,8 @@ To resolve this error, check for the following:
 - An `#if` directive that evaluates to false lacks a closing `#endif` directive.
 
 - A source file does not end with a carriage return and line feed.
+
+## Example
 
 The following sample generates C1004:
 

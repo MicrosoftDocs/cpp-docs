@@ -10,4 +10,6 @@ ms.assetid: 27d2d009-2e0f-41fb-8bfc-372752fbe920
 
 > error count exceeds number; stopping compilation
 
+## Remarks
+
 Errors in the program are too numerous to allow recovery. The compiler must terminate.

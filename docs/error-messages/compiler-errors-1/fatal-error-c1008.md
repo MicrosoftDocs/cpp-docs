@@ -10,4 +10,6 @@ ms.assetid: 7de729e3-b2ca-4a68-95ab-8a1c920f3f2c
 
 > no input file specified
 
+## Remarks
+
 The compiler was not given a C or C++ source file to compile. Check the **CL** command line and environment variable for filename specifications.

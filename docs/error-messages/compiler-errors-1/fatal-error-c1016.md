@@ -10,7 +10,11 @@ ms.assetid: 33f45c3e-2d8f-43ad-a445-c412d1d54ce1
 
 > #ifdef expected an identifier#ifndef expected an identifier
 
+## Remarks
+
 The conditional compilation directive ([#ifdef](../../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md) or `#ifndef`) has no identifier to evaluate. To resolve the error, specify an identifier.
+
+## Example
 
 The following sample generates C1016:
 

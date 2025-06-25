@@ -9,7 +9,11 @@ helpviewer_keywords: ["C1012"]
 
 > unmatched parenthesis: missing 'character'
 
+## Remarks
+
 The parentheses in a preprocessor directive do not match.
+
+## Example
 
 The following sample generates C1012:
 
