@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Open Folder support for C++ build systems in Visual Studio"
 title: "Open Folder support for C++ build systems in Visual Studio"
-ms.date: "12/02/2019"
+description: "Learn more about: Open Folder support for C++ build systems in Visual Studio"
+ms.date: 12/02/2019
 helpviewer_keywords: ["Open Folder Projects in Visual Studio"]
-ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ms.topic: how-to
 ---
 # Open Folder support for C++ build systems in Visual Studio
@@ -106,7 +105,7 @@ If you add the MinGW-W64 configuration, the JSON looks this:
 }
 ```
 
-Note the `environments` block. It defines properties that behave like environment variables and are available not only in the *CppProperties.json* file, but also in the other configuration files *task.vs.json* and *launch.vs.json*. The `Mingw64` configuration inherits the `mingw_w64` environment, and uses its `INCLUDE` property to specify the value for `includePath`. You can add other paths to this array property as needed.`
+Note the `environments` block. It defines properties that behave like environment variables and are available not only in the *CppProperties.json* file, but also in the other configuration files *task.vs.json* and *launch.vs.json*. The `Mingw64` configuration inherits the `mingw_w64` environment, and uses its `INCLUDE` property to specify the value for `includePath`. You can add other paths to this array property as needed.
 
 The `intelliSenseMode` property is set to a value appropriate for GCC. For more information on all these properties, see [CppProperties schema reference](cppproperties-schema-reference.md).
 

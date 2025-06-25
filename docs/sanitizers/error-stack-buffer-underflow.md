@@ -74,7 +74,7 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
-### Resulting error  - stack underflow on thread
+### Resulting error - stack underflow on thread
 
 :::image type="content" source="media/stack-buffer-underflow-example-2.png" alt-text="Screenshot of debugger displaying stack-buffer-underflow error in example 2.":::
 

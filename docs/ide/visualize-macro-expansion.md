@@ -52,7 +52,7 @@ You can inspect a macro's expanded value, even when several preprocessor steps a
     :::image-end:::
 
 1. Choose **Copy**.
-1. Create a comment following the `POWER` line and choose paste (CTRL+V). The expansion of the macro, as a comment near your macro, looks like: `// (((10.0 * 20.0)* (5.0 * 2.0)) / 2.0).` The keyboard shortcut for this action is CTRL+M, CTRL+C.
+1. Create a comment following the `POWER` line and choose paste (CTRL+V). The expansion of the macro, as a comment near your macro, looks like: `// (((10.0 * 20.0)* (5.0 * 2.0)) / 2.0)`. The keyboard shortcut for this action is CTRL+M, CTRL+C.
 
 ## Expand a macro inline
 

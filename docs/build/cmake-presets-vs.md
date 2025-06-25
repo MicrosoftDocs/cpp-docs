@@ -19,7 +19,7 @@ This article contains information about *`CMakePresets.json`* integration with V
 
 We recommend *`CMakePresets.json`* as an alternative to *`CMakeSettings.json`*. Visual Studio never reads from both *`CMakePresets.json`* and *`CMakeSettings.json`* at the same time. To enable or disable *`CMakePresets.json`* integration in Visual Studio, see [Enable `CMakePresets.json` in Visual Studio 2019](#enable-cmakepresets-json-integration).
 
-## Supported CMake and  *`CMakePresets.json`* versions
+## Supported CMake and *`CMakePresets.json`* versions
 
 The supported *`CMakePresets.json`* and *`CMakeUserPresets.json`* schema versions depend on your version of Visual Studio:
 - Visual Studio 2019 version 16.10 and later support schema versions 2 and 3.
@@ -391,7 +391,7 @@ Instead, set the path to `vcpkg.cmake` by using the `VCPKG_ROOT` environment var
 
 If you're already using a CMake toolchain file and want to enable vcpkg integration, see [Using multiple toolchain files](/vcpkg/users/buildsystems/cmake-integration#using-multiple-toolchain-files). Follow those instructions to use an external toolchain file with a project by using vcpkg.
 
-## Variable substitution in  *`launch.vs.json`* and  *`tasks.vs.json`*
+## Variable substitution in *`launch.vs.json`* and *`tasks.vs.json`*
 
 *`CMakePresets.json`* supports variable substitution in *`launch.vs.json`* and *`tasks.vs.json`*. Here are some considerations:
 
