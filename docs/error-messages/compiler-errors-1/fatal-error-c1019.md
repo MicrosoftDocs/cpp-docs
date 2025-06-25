@@ -16,7 +16,7 @@ The `#else` directive appears outside an `#if`, `#ifdef`, or `#ifndef` construct
 
 ## Example
 
-The following sample generates C1019:
+The following example generates C1019:
 
 ```cpp
 // C1019.cpp

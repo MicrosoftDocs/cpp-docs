@@ -16,7 +16,7 @@ The `#elif` directive appears outside an `#if`, `#ifdef`, or `#ifndef` construct
 
 ## Example
 
-The following sample generates C1018:
+The following example generates C1018:
 
 ```cpp
 // C1018.cpp

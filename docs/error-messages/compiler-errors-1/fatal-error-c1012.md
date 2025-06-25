@@ -15,7 +15,7 @@ The parentheses in a preprocessor directive do not match.
 
 ## Example
 
-The following sample generates C1012:
+The following example generates C1012:
 
 ```cpp
 // C1012.cpp

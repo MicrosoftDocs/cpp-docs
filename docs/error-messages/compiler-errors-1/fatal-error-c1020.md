@@ -18,7 +18,7 @@ This error can occur if you have conditional preprocessor directives before you 
 
 ## Example
 
-The following sample generates C1020:
+The following example generates C1020:
 
 ```cpp
 // C1020.cpp

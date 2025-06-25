@@ -32,7 +32,7 @@ To resolve this error, check for the following:
 
 ## Example
 
-The following sample generates C1004:
+The following example generates C1004:
 
 ```cpp
 // C1004.cpp

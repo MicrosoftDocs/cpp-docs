@@ -16,7 +16,7 @@ The conditional compilation directive ([#ifdef](../../preprocessor/hash-ifdef-an
 
 ## Example
 
-The following sample generates C1016:
+The following example generates C1016:
 
 ```cpp
 // C1016.cpp
