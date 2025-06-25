@@ -72,7 +72,7 @@ Standard framework resources are usually included in an application by using the
 
 The most common case of customizing standard framework resources is adding or removing additional includes for printing, OLE Client, and OLE Server support.
 
-In some rare cases you might want to customize the contents of the standard framework resources for your particular application, not just add and remove the entire file. The followings steps show how you can limit the resources that are included:
+In some rare cases you might want to customize the contents of the standard framework resources for your particular application, not just add and remove the entire file. The following steps show how you can limit the resources that are included:
 
 ##### To customize the contents of a standard resource file
 
