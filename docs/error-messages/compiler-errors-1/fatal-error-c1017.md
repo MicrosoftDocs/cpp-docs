@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1017"
 title: "Fatal Error C1017"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1017"
+ms.date: 11/04/2016
 f1_keywords: ["C1017"]
 helpviewer_keywords: ["C1017"]
-ms.assetid: 5542e604-599d-4e36-8f83-1d454c5753c9
 ---
 # Fatal Error C1017
 

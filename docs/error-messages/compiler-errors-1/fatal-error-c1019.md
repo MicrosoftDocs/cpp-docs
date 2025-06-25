@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1019"
 title: "Fatal Error C1019"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1019"
+ms.date: 11/04/2016
 f1_keywords: ["C1019"]
 helpviewer_keywords: ["C1019"]
-ms.assetid: c4f8968b-bc62-4200-b3ca-69d06c163236
 ---
 # Fatal Error C1019
 

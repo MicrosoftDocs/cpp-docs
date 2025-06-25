@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1020"
 title: "Fatal Error C1020"
+description: "Learn more about: Fatal Error C1020"
 ms.date: 07/11/2022
 f1_keywords: ["C1020"]
 helpviewer_keywords: ["C1020"]
-ms.assetid: 42f429e2-5e3b-4086-a10d-b99e032e51c5
 ---
 # Fatal Error C1020
 

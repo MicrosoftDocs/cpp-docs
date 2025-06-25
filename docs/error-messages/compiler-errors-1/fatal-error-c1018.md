@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1018"
 title: "Fatal Error C1018"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1018"
+ms.date: 11/04/2016
 f1_keywords: ["C1018"]
 helpviewer_keywords: ["C1018"]
-ms.assetid: 2ceb8a99-30b2-4b80-bf42-e9f3305b3c52
 ---
 # Fatal Error C1018
 

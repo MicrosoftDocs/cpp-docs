@@ -1,7 +1,7 @@
 ---
 title: "Fatal Error C1012"
 description: "Learn more about: Fatal Error C1012"
-ms.date: "02/20/2025"
+ms.date: 02/20/2025
 f1_keywords: ["C1012"]
 helpviewer_keywords: ["C1012"]
 ---

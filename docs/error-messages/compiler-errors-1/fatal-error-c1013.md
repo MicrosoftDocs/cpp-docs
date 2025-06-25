@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1013"
 title: "Fatal Error C1013"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1013"
+ms.date: 11/04/2016
 f1_keywords: ["C1013"]
 helpviewer_keywords: ["C1013"]
-ms.assetid: 5514a679-efe7-4055-bdd3-5693ca0c332f
 ---
 # Fatal Error C1013
 

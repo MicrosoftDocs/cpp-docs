@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1010"
 title: "Fatal Error C1010"
-ms.date: "09/03/2019"
+description: "Learn more about: Fatal Error C1010"
+ms.date: 09/03/2019
 f1_keywords: ["C1010"]
 helpviewer_keywords: ["C1010"]
-ms.assetid: dfd035f1-a7a2-40bc-bc92-dc4d7f456767
 ---
 # Fatal Error C1010
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1005"
 title: "Fatal Error C1005"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1005"
+ms.date: 11/04/2016
 f1_keywords: ["C1005"]
 helpviewer_keywords: ["C1005"]
-ms.assetid: 150daf8e-a38a-4669-9c1a-a05b5a1f65ef
 ---
 # Fatal Error C1005
 

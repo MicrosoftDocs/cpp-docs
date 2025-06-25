@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1004"
 title: "Fatal Error C1004"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1004"
+ms.date: 11/04/2016
 f1_keywords: ["C1004"]
 helpviewer_keywords: ["C1004"]
-ms.assetid: dbe034b0-6eb0-41b4-a50c-2fccf9e78ad4
 ---
 # Fatal Error C1004
 
