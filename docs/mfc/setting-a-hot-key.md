@@ -4,6 +4,7 @@ title: "Setting a Hot Key"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["keyboard shortcuts [MFC], hot keys", "access keys [MFC], hot keys", "CHotKeyCtrl class [MFC], setting hot key"]
 ms.assetid: 6f3bc141-e346-4dce-9ca7-3e6b2c453f3f
+ms.topic: concept-article
 ---
 # Setting a Hot Key
 

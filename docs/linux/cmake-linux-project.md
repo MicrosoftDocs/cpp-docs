@@ -3,6 +3,7 @@ title: "Create a CMake Linux project in Visual Studio"
 description: "How to create a Linux CMake project in Visual Studio"
 ms.date: "08/06/2020"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
+ms.topic: how-to
 ---
 # Create a CMake Linux project in Visual Studio
 

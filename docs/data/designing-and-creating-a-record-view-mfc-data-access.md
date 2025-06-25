@@ -3,6 +3,7 @@ title: "Designing and Creating a Record View (MFC Data Access)"
 description: "Learn more about: Designing and Creating a Record View (MFC Data Access)"
 ms.date: 11/04/2016
 helpviewer_keywords: ["designing forms", "record views, creating", "forms [C++], designing", "record views, designing", "application wizards [C++], creating record view classes", "designing record views"]
+ms.topic: how-to
 ---
 # Designing and Creating a Record View (MFC Data Access)
 

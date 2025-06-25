@@ -4,6 +4,7 @@ title: "ATL class overview"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["classes [C++], ATL", "ATL, class reference"]
 ms.assetid: c38ac93d-c3a2-4ce7-8153-f1d34c0f0fa6
+ms.topic: concept-article
 ---
 # ATL class overview
 

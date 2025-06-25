@@ -4,6 +4,7 @@ title: "Manipulating Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["image lists [MFC], manipulating", "lists [MFC], image", "CImageList class [MFC], manipulating"]
 ms.assetid: 043418f8-077e-4dce-b8bb-2b7b0d7b5156
+ms.topic: concept-article
 ---
 # Manipulating Image Lists
 

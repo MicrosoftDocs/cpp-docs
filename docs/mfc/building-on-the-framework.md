@@ -4,6 +4,7 @@ title: "Building on the Framework"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application-specific classes [MFC]", "application framework [MFC], building applications", "applications [MFC]", "MFC, application development"]
 ms.assetid: 883f0f19-866f-4221-8a3d-5607941dc8d0
+ms.topic: concept-article
 ---
 # Building on the Framework
 

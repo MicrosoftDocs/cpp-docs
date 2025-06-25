@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: array Class"
 title: "array Class"
-ms.date: "11/04/2016"
+description: "Learn more about: array Class"
+ms.date: 11/04/2016
 f1_keywords: ["array", "AMP/array", "AMP/Concurrency::array::array", "AMP/Concurrency::array::copy_to", "AMP/Concurrency::array::data", "AMP/Concurrency::array::get_accelerator_view", "AMP/Concurrency::array::get_associated_accelerator_view", "AMP/Concurrency::array::get_cpu_access_type", "AMP/Concurrency::array::get_extent", "AMP/Concurrency::array::reinterpret_as", "AMP/Concurrency::array::section", "AMP/Concurrency::array::view_as", "AMP/Concurrency::array::rank", "AMP/Concurrency::array::accelerator_view", "AMP/Concurrency::array::associated_accelerator_view", "AMP/Concurrency::array::cpu_access_type", "AMP/Concurrency::array::extent"]
 helpviewer_keywords: ["array class"]
-ms.assetid: 0832b6c1-40f0-421d-9104-6b1baa0c63a7
 ---
 # array Class
 
@@ -362,7 +361,7 @@ explicit array(
 
 array(
     const array_view<const value_type, _Rank>& _Src,
-    accelerator_view _Av
+    accelerator_view _Av,
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 array(

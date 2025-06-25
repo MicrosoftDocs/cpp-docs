@@ -2,6 +2,7 @@
 title: "Set up FIPS-compliant secure remote Linux development"
 description: "How to set up a FIPS-compliant cryptographic connection between Visual Studio and a Linux machine for remote development."
 ms.date: 07/06/2022
+ms.topic: how-to
 ---
 # Set up FIPS-compliant secure remote Linux development
 

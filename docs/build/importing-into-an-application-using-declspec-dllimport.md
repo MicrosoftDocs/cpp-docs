@@ -4,6 +4,7 @@ title: "Import into an application using __declspec(dllimport)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["__declspec(dllimport) keyword [C++]", "importing DLLs [C++], __declspec(dllimport)"]
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
+ms.topic: how-to
 ---
 # Import into an application using __declspec(dllimport)
 

@@ -5,6 +5,7 @@ ms.date: "05/06/2019"
 f1_keywords: ["dllexport"]
 helpviewer_keywords: ["__declspec(dllexport) keyword [C++]", "names [C++], DLL exports by", "export directives [C++]", "exporting DLLs [C++], __declspec(dllexport) keyword"]
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
+ms.topic: how-to
 ---
 # Exporting from a DLL Using __declspec(dllexport)
 

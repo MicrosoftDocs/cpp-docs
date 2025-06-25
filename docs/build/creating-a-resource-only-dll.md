@@ -5,6 +5,7 @@ ms.date: "01/27/2020"
 helpviewer_keywords: ["resource-only DLLs [C++], creating", "DLLs [C++], creating"]
 ms.assetid: e6b1d4da-7275-467f-a58c-a0a8a5835199
 no-loc: [noentry]
+ms.topic: how-to
 ---
 # Creating a resource-only DLL
 

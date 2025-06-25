@@ -4,6 +4,7 @@ title: "Drawing in a View"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["drawing [MFC], in views", "views [MFC], printing", "views [MFC], updating", "printing [MFC], views", "views [MFC], rendering", "printing views [MFC]", "paint messages in view class [MFC]", "device contexts, screen drawings"]
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
+ms.topic: how-to
 ---
 # Drawing in a View
 

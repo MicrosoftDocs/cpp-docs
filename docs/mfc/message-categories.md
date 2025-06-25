@@ -4,6 +4,7 @@ title: "Message Categories"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["messages [MFC], categories", "control-notification messages [MFC]", "Windows messages [MFC], categories", "controls [MFC], notifications", "command messages [MFC]", "messages [MFC], Windows", "message handling [MFC], message types"]
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
+ms.topic: how-to
 ---
 # Message Categories
 

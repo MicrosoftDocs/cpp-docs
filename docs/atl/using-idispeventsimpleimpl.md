@@ -4,6 +4,7 @@ title: "Using IDispEventSimpleImpl (ATL)"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["IDispEventSimpleImpl class, using"]
 ms.assetid: 8640ad1a-4bd0-40a5-b5e4-7322685d7aab
+ms.topic: concept-article
 ---
 # Using IDispEventSimpleImpl
 

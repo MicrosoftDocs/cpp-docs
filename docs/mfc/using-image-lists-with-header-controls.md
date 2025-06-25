@@ -4,6 +4,7 @@ title: "Using Image Lists with Header Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], image lists", "CHeaderCtrl class [MFC], image lists", "image lists [MFC], header controls"]
 ms.assetid: d5e9b310-6278-406c-909c-eefa09549a47
+ms.topic: how-to
 ---
 # Using Image Lists with Header Controls
 

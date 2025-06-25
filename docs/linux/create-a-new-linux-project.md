@@ -2,6 +2,7 @@
 title: "Create a Linux MSBuild C++ project in Visual Studio"
 ms.date: "10/15/2020"
 description: "Create a new MSBuild-based Linux project in Visual Studio."
+ms.topic: how-to
 ---
 # Create a Linux MSBuild C++ project in Visual Studio
 

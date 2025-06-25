@@ -4,6 +4,7 @@ title: "Specifying Levels of Functionality"
 ms.date: "11/06/2018"
 helpviewer_keywords: ["CObject class [MFC], adding functionality to derived classes", "runtime [MFC], class information", "serialization [MFC], Cobject", "dynamic creation support", "levels [MFC], functionality in CObject", "run-time class [MFC], information support", "levels [MFC]"]
 ms.assetid: 562669ba-c858-4f66-b5f1-b3beeea4f486
+ms.topic: how-to
 ---
 # Specifying Levels of Functionality
 

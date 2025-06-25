@@ -4,6 +4,7 @@ title: "Detaching a CWnd from Its HWND"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HWND, detaching CWnd from", "removing HWNDs from CWnds", "CWnd objects [MFC], detaching from HWND", "detaching CWnds from HWNDs", "Detach method (CWnd class)"]
 ms.assetid: 6efadf84-0517-4a3f-acfd-216e088f19c6
+ms.topic: concept-article
 ---
 # Detaching a CWnd from Its HWND
 

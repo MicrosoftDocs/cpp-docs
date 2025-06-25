@@ -4,6 +4,7 @@ title: "Specifying Property Pages (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ISpecifyPropertyPages method", "property pages, specifying"]
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
+ms.topic: how-to
 ---
 # Specifying Property Pages
 

@@ -3,6 +3,7 @@ description: "Learn more about: Install cross-platform mobile development with C
 title: "Install cross-platform mobile development with C++"
 ms.date: "10/17/2019"
 ms.custom: intro-installation
+ms.topic: install-set-up-deploy
 ---
 # Install cross-platform mobile development with C++
 

@@ -4,6 +4,7 @@ title: "Hosting a Windows Forms User Control as an MFC View"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "Windows Forms controls [C++], hosting as an MFC view", "hosting Windows Forms control [C++]"]
 ms.assetid: 43c02ab4-1366-434c-a980-0b19326d6ea0
+ms.topic: concept-article
 ---
 # Hosting a Windows Forms User Control as an MFC View
 

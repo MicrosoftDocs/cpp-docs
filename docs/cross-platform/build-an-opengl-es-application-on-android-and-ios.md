@@ -2,6 +2,7 @@
 description: "Learn more about: Build an OpenGL ES application on Android and iOS"
 title: "Build an OpenGL ES application on Android and iOS"
 ms.date: "06/09/2023"
+ms.topic: how-to
 ---
 
 # Build an OpenGL ES application on Android and iOS

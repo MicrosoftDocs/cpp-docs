@@ -4,6 +4,7 @@ title: "Bypassing the Serialization Mechanism"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["archive objects [MFC]", "bypassing serialization", "archives [MFC], serialization", "serialization [MFC], bypassing", "archives [MFC]", "serialization [MFC], role of framework", "serialization [MFC], overriding"]
 ms.assetid: 48d4a279-b51c-4ba5-81cd-ed043312b582
+ms.topic: concept-article
 ---
 # Bypassing the Serialization Mechanism
 

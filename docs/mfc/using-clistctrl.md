@@ -4,6 +4,7 @@ title: "Using CListCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], using"]
 ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
+ms.topic: concept-article
 ---
 # Using CListCtrl
 

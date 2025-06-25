@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (Level 1) C4744"
 title: "Compiler Warning (Level 1) C4744"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (Level 1) C4744"
+ms.date: 11/04/2016
 f1_keywords: ["C4744"]
 helpviewer_keywords: ["C4744"]
-ms.assetid: f2a7d0b5-afd5-4926-abc3-cfbd367e3ff5
 ---
 # Compiler Warning (Level 1) C4744
 
@@ -37,7 +36,7 @@ The following sample generates C4744.
 
 extern unsigned global;
 
-main()
+int main()
 {
     printf_s("%d\n", global);
 }

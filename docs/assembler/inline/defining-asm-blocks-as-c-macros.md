@@ -3,6 +3,7 @@ title: "Defining __asm Blocks as C Macros"
 description: "Learn more about: Defining __asm Blocks as C Macros"
 ms.date: 08/30/2018
 helpviewer_keywords: ["macros, __asm blocks", "Visual C, macros", "__asm keyword [C++], as C macros"]
+ms.topic: concept-article
 ---
 # Defining __asm Blocks as C Macros
 

@@ -4,6 +4,7 @@ title: "Consuming libraries and components in C++ projects"
 ms.date: 12/18/2020
 f1_keywords: ["VC.Project.References"]
 helpviewer_keywords: ["Add References Dialog Box (C++)", ".NET Framework (C++), Add References Dialog Box"]
+ms.topic: how-to
 ---
 # Consuming libraries and components
 

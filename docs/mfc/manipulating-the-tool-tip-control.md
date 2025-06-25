@@ -4,6 +4,7 @@ title: "Manipulating the Tool Tip Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolTipCtrl class [MFC], manipulating tool tip attributes", "tool tips [MFC], attributes"]
 ms.assetid: 3600afe5-712a-4b56-8456-96e85fe879af
+ms.topic: concept-article
 ---
 # Manipulating the Tool Tip Control
 

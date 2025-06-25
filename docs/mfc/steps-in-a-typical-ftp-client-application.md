@@ -4,6 +4,7 @@ title: "Steps in a Typical FTP Client Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet client applications [MFC], FTP table", "FTP (File Transfer Protocol)", "WinInet classes [MFC], FTP", "FTP (File Transfer Protocol) [MFC], client applications", "Internet applications [MFC], FTP client applications"]
 ms.assetid: 70bed7b5-6040-40d1-bc77-702e63a698f2
+ms.topic: how-to
 ---
 # Steps in a Typical FTP Client Application
 

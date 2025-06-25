@@ -4,6 +4,7 @@ title: "Creating a CToolBarCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["toolbar controls [MFC], creating", "CToolBarCtrl class [MFC], creating toolbars"]
 ms.assetid: a4f6bf0c-0195-4dbf-a09e-aee503e19dc3
+ms.topic: how-to
 ---
 # Creating a CToolBarCtrl Object
 

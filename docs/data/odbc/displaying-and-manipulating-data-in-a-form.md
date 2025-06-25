@@ -4,6 +4,7 @@ title: "Displaying and Manipulating Data in a Form"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["forms [C++], displaying data", "displaying data [C++], forms", "ODBC [C++], forms", "record views [C++], displaying data", "data [MFC]", "data [MFC], displaying in a form"]
 ms.assetid: c56185c4-12cb-40b1-b499-02b29ea83e3a
+ms.topic: concept-article
 ---
 # Displaying and Manipulating Data in a Form
 

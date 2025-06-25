@@ -3,6 +3,7 @@ title: "Supporting Navigation in a Record View (MFC Data Access)"
 description: "Learn more about: Supporting Navigation in a Record View (MFC Data Access)"
 ms.date: 11/04/2016
 helpviewer_keywords: ["records [C++], navigating", "record views, navigation", "navigation [C++], in record view"]
+ms.topic: reference
 ---
 # Supporting Navigation in a Record View (MFC Data Access)
 
