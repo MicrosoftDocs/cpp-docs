@@ -26,7 +26,7 @@ The following example generates C4172:
 const int* func1()
 {
     int i = 42;
-	return &i; // C4172
+    return &i;   // C4172
 }
 
 float f = 1.f;
@@ -37,7 +37,7 @@ const double& func2()
 // const auto& func2()
 {
     // The problem is that a temporary is created to convert f to a double.
-    // C4172 in this case refers to returning the address of a temporary
+    // C4172 in this case refers to returning the address of a temporary.
     return f;   // C4172
 }
 ```
