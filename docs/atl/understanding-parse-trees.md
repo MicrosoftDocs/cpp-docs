@@ -3,6 +3,7 @@ description: "Learn more about: Understanding parse trees"
 title: "ATL Registrar and Parse Trees"
 ms.date: 04/15/2021
 helpviewer_keywords: ["parse trees"]
+ms.topic: concept-article
 ---
 # Understanding parse trees
 

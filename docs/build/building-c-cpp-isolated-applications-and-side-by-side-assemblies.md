@@ -4,6 +4,7 @@ title: "Building C/C++ Isolated Applications and Side-by-side Assemblies"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["isolated applications [C++]", "WinSxS [C++]", "native assembly cache [C++]", "builds [C++], isolated applications", "side-by-side applications [C++]", "builds [C++], side-by-side assemblies"]
 ms.assetid: 9465904e-76f7-48bd-bb3f-c55d8f1699b6
+ms.topic: concept-article
 ---
 # Building C/C++ Isolated Applications and Side-by-side Assemblies
 

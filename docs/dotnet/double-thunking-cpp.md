@@ -4,6 +4,7 @@ title: "Double Thunking (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["double thunks", "interop [C++], double thunking", "mixed assemblies [C++], double thunking", "/clr compiler option [C++], double thunking", "interoperability [C++], double thunking"]
 ms.assetid: a85090b2-dc3c-498a-b40c-340db229dd6f
+ms.topic: how-to
 ---
 # Double Thunking (C++)
 

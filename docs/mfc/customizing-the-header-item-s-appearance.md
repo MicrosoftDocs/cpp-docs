@@ -4,6 +4,7 @@ title: "Customizing the Header Item's Appearance"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], customization of items", "CHeaderCtrl class [MFC], customizing the items", "HDS_ styles"]
 ms.assetid: b1e1e326-ec7d-4dbd-a46f-96a3e2055618
+ms.topic: concept-article
 ---
 # Customizing the Header Item's Appearance
 

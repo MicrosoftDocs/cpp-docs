@@ -4,6 +4,7 @@ title: "Using the Classes to Write Applications for Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows applications [MFC], MFC application framework", "MFC, application development", "applications [OLE], MFC application framework", "MFC ActiveX controls [MFC], creating", "OLE applications [MFC], MFC application framework", "database applications [MFC], creating"]
 ms.assetid: 73f63470-857d-43dd-9a54-b38b7be0f1b7
+ms.topic: concept-article
 ---
 # Using the Classes to Write Applications for Windows
 

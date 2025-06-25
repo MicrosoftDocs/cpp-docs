@@ -211,7 +211,7 @@ The hash_multimaps hm1 and hm2 are not equal.
 The hash_multimaps hm1 and hm3 are equal.
 ```
 
-## <a name="op_eq_eq_mm"></a> operator==  (hash_multimap)
+## <a name="op_eq_eq_mm"></a> operator== (hash_multimap)
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multimap Class](unordered-multimap-class.md).

@@ -2,8 +2,8 @@
 title: Using Clang-Tidy in Visual Studio
 description: "How to use Clang-Tidy in Visual Studio for Microsoft C++ code analysis."
 ms.date: 03/1/2022
-ms.topic: "conceptual"
-f1_keywords: ["vs.codeanalysis.clangtidy","vs.codeanalysis.propertypages.ClangTidyToolPath"]
+ms.topic: "concept-article"
+f1_keywords: ["vs.codeanalysis.clangtidy","vs.codeanalysis.propertypages.ClangTidyToolPath","vs.codeanalysis.propertypages.AdditionalOptions","vs.codeanalysis.propertypages.MaxProcesses"]
 ---
 # Using Clang-Tidy in Visual Studio
 
@@ -93,6 +93,18 @@ By default, Clang-Tidy does not set any checks when enabled. To see the list of 
 ## Clang-Tidy Tool Directory
 
 If you'd like to have custom rules built into your clang-tidy executable and run it in Microsoft Visual Studio, you can change the path to the executable that Visual Studio runs. In the project Property Pages dialog, open the **Configuration Properties** > **Code Analysis** > **Clang-Tidy** page. Manually type in the path or **Browse** and select the path under the **Clang-Tidy Tool Directory** property. The new executable is used once the change is saved, and the app is recompiled.
+
+## Clang-Tidy Additional Options
+
+The **Clang-Tidy Additional Options** property lets you specify additional compiler arguments that are passed to Clang-Tidy using the `--extra-args` command-line option. These arguments can be used to control how Clang-Tidy parses your code, such as defining macros, include paths, or language standards. Enter arguments as a semi-colon separated list. For example: `-std=c++20;-DMY_DEFINE=1;-Ipath\to\include`.
+
+## Clang-Tidy Prepend Additional Options
+
+The **Clang-Tidy Prepend Additional Options** property lets you specify compiler arguments that are passed to Clang-Tidy using the `--extra-args-before` command-line option. These arguments are inserted before the default compiler arguments when Clang-Tidy parses your code. Enter arguments as a semi-colon separated list. For example: `-std=c++20;-DMY_DEFINE=1;`.
+
+## Max Number of Processes
+
+The **Max Number of Processes** property lets you specify how many processes Clang-Tidy can use to run analysis in parallel. By default, Clang-Tidy runs serially. Set this property to enable parallel execution and specify the number of parallel processes. Set it to `0` to use all available logical processors on your system. Increasing the number of processes can improve analysis speed on multi-core machines.
 
 ## See also
 

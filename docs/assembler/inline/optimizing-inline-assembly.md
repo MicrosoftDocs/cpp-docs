@@ -4,6 +4,7 @@ title: "Optimizing Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["storage, optimizing in inline assembly", "optimization, inline assembly", "inline assembly, optimizing", "optimizing performance, inline assembly", "__asm keyword [C++], optimizing"]
 ms.assetid: 52a7ec83-9782-4d96-94c1-53bb2ac9e8c8
+ms.topic: concept-article
 ---
 # Optimizing Inline Assembly
 

@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Boxing  (C++/CLI and C++/CX)"
-title: "Boxing  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "Boxing (C++/CLI and C++/CX)"
+description: "Learn more about: Boxing (C++/CLI and C++/CX)"
+ms.date: 10/12/2018
 ms.topic: "reference"
 helpviewer_keywords: ["boxing, C++"]
-ms.assetid: b5fd2c98-c578-4f83-8257-6dd663478665
 ---
-# Boxing  (C++/CLI and C++/CX)
+# Boxing (C++/CLI and C++/CX)
 
 The conversion of value types to objects is called *boxing*, and the conversion of objects to value types is called *unboxing*.
 

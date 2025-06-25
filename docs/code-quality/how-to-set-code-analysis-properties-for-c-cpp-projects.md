@@ -2,7 +2,6 @@
 description: "Learn more about: How to: Set Code Analysis Properties for C/C++ Projects"
 title: "How to: Set Code Analysis Properties for C/C++ Projects"
 ms.date: 11/04/2016
-ms.topic: "conceptual"
 f1_keywords:
   - "vs.codeanalysis.propertypages.native"
   - "VC.Project.VCCLCompilerTool.EnablePrefast"

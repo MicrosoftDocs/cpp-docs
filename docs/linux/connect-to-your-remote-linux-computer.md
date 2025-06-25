@@ -203,7 +203,7 @@ Logs include connections, all commands sent to the remote machine (their text, e
 
 You can configure the output to go to a file or to the **Cross Platform Logging** pane in the Output window. For MSBuild-based Linux projects, MSBuild commands sent to the remote machine aren't routed to the **Output Window** because they're emitted out-of-process. Instead, they're logged to a file, with a prefix of `msbuild_`.
 
-## Command-line utility for the Connection Manager  
+## Command-line utility for the Connection Manager
 
 **Visual Studio 2019 version 16.5 or later**: *`ConnectionManager.exe`* is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, you can use it to set up Visual Studio for continuous integration. For examples and a complete reference to the `ConnectionManager` command, see [ConnectionManager reference](connectionmanager-reference.md).  
 

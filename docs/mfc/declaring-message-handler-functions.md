@@ -4,6 +4,7 @@ title: "Declaring Message Handler Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["declaring functions, message handler functions [MFC]"]
 ms.assetid: f8d3dbc1-4500-4f1e-a18d-7371edf36386
+ms.topic: concept-article
 ---
 # Declaring Message Handler Functions
 

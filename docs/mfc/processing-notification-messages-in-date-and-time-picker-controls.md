@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["DTN_CLOSEUP", "DTN_DATETIMECHANGE", "DTN_DROPDOWN"]
 helpviewer_keywords: ["DTN_DROPDOWN notification [MFC]", "DTN_DATETIMECHANGE notification [MFC]", "DTN_CLOSEUP notification [MFC]", "DateTimePicker control [MFC], handling notifications", "CDateTimeCtrl class [MFC], handling notifications", "DTN_FORMAT notification [MFC]", "DateTimePicker control [MFC]"]
 ms.assetid: ffbe29ab-ff80-4609-89f7-260b404439c4
+ms.topic: concept-article
 ---
 # Processing Notification Messages in Date and Time Picker Controls
 

@@ -5,6 +5,7 @@ ms.date: "11/19/2018"
 f1_keywords: ["MDICLIENT"]
 helpviewer_keywords: ["MDI [MFC], child windows", "child windows [MFC], and MDICLIENT window", "MDICLIENT window [MFC]", "windows [MFC], MDI", "frame windows [MFC], MDI child windows", "child windows [MFC]", "MDI [MFC], frame windows"]
 ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
+ms.topic: concept-article
 ---
 # Managing MDI Child Windows
 

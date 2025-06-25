@@ -2,7 +2,7 @@
 description: "Learn more about: Annotating Locking Behavior"
 title: Annotating Locking Behavior
 ms.date: 08/24/2022
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 f1_keywords:
   - "_Releases_nonreentrant_lock_"
   - "_Lock_kind_mutex_"

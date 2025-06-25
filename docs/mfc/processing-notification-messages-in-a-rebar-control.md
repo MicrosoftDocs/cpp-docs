@@ -4,6 +4,7 @@ title: "Processing Notification Messages in a Rebar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["RBN_ notification messages, description of", "CReBarCtrl class [MFC], notification messages sent by", "RBN_ notification messages [MFC]", "notifications [MFC], CReBarCtrl"]
 ms.assetid: 40f43a60-0c18-4d8d-8fab-213a095624f9
+ms.topic: concept-article
 ---
 # Processing Notification Messages in a Rebar Control
 

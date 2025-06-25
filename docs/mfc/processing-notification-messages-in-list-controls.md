@@ -4,6 +4,7 @@ title: "Processing Notification Messages in List Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["processing notifications [MFC]", "CListCtrl class [MFC], processing notifications"]
 ms.assetid: 1f0e296e-d2a3-48fc-ae38-51d7fb096f51
+ms.topic: concept-article
 ---
 # Processing Notification Messages in List Controls
 

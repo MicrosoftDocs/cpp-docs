@@ -4,6 +4,7 @@ title: "Providing Flicker-Free Activation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], flicker-free", "flicker, MFC ActiveX controls", "activation [MFC], flicker-free"]
 ms.assetid: bcb24b77-31d8-44a0-8c58-2ea6213b4c43
+ms.topic: concept-article
 ---
 # Providing Flicker-Free Activation
 

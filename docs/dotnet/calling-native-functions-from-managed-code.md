@@ -4,6 +4,7 @@ title: "Calling Native Functions from Managed Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["native functions called from managed code [C++]", "managed code [C++], interoperability", "platform invoke [C++], interoperability", "interoperabiliy [C++], calling native functions from managed code", "calling native functions from managed code", "interop [C++], calling native functions from managed code"]
 ms.assetid: 982cef18-20d9-42b4-8242-a77fa65f2e36
+ms.topic: concept-article
 ---
 # Calling Native Functions from Managed Code
 

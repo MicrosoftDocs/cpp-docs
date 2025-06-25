@@ -4,6 +4,7 @@ title: "Putting the Control on a Web Page (ATL Tutorial, Part 7)"
 ms.custom: "get-started-article"
 ms.date: "05/06/2019"
 ms.assetid: 50dc4c95-c95b-4006-b88a-9826f7bdb222
+ms.topic: tutorial
 ---
 # Putting the Control on a Web Page (ATL Tutorial, Part 7)
 

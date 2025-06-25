@@ -2,7 +2,7 @@
 title: "Visual Studio IDE tools for upgrading C++ code"
 description: "The C++ code editor and code analysis tools in Visual Studio help you to modernize your C++ code base."
 ms.date: "11/13/2019"
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 ---
 # Visual Studio IDE tools for upgrading C++ code
 

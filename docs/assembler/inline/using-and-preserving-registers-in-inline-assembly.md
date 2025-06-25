@@ -4,6 +4,7 @@ title: "Using and Preserving Registers in Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["__asm keyword [C++], register values", "inline assembly, registers", "registers, inline assembly", "preserving registers"]
 ms.assetid: dbcd7360-6f3e-4b22-9ee2-9f65ca6f2543
+ms.topic: concept-article
 ---
 # Using and Preserving Registers in Inline Assembly
 

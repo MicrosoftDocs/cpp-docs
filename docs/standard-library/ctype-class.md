@@ -466,7 +466,7 @@ int main() {
            << (maskarray[i] & ctype_base::alpha  "alpha"
                                                 : "not alpha")
            << endl;
-   };
+   }
 }
 ```
 

@@ -4,6 +4,7 @@ title: "Active Template Library (ATL) Concepts"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["ATL, about ATL"]
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
+ms.topic: concept-article
 ---
 # Active Template Library (ATL) Concepts
 

@@ -4,6 +4,7 @@ title: "Calling C++ Code from DHTML"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DHTML, calling C++ code from"]
 ms.assetid: 37329acd-4c22-40ca-a85a-b7480748f75f
+ms.topic: concept-article
 ---
 # Calling C++ Code from DHTML
 

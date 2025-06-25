@@ -3,6 +3,7 @@ title: "Adding Connection Points to an Object"
 description: "Learn more about: Adding Connection Points to an Object"
 ms.date: 11/04/2016
 helpviewer_keywords: ["connection points [C++], adding to ATL objects", "Implement Connection Point ATL wizard"]
+ms.topic: how-to
 ---
 # Adding Connection Points to an Object
 

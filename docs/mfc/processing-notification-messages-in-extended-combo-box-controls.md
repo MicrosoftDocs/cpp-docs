@@ -4,6 +4,7 @@ title: "Processing Notification Messages in Extended Combo Box Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["extended combo boxes [MFC], notifications", "notifications [MFC], extended combo box controls"]
 ms.assetid: 4e442758-d054-4746-bb1a-6ff84accb127
+ms.topic: concept-article
 ---
 # Processing Notification Messages in Extended Combo Box Controls
 
