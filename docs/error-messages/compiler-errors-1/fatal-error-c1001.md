@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Fatal Error C1001"
 title: "Fatal Error C1001"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1001"
+ms.date: 11/04/2016
 f1_keywords: ["C1001"]
 helpviewer_keywords: ["C1001"]
-ms.assetid: 5736cdb3-22c8-4fad-aa85-d5e0d2b232f4
 ---
 # Fatal Error C1001
 
 > INTERNAL COMPILER ERROR(compiler file *file*, line *number*)
+
+## Remarks
 
 The compiler cannot generate correct code for a construct, often due to the combination of a particular expression and an optimization option, or an issue in parsing. If the compiler file listed has a utc or C2 path segment, it is probably an optimization error. If the file has a cxxfe or c1xx path segment, or is msc1.cpp, it is probably a parser error. If the file named is cl.exe, there is no other information available.
 

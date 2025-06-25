@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Fatal Error C1011"
 title: "Fatal Error C1011"
+description: "Learn more about: Fatal Error C1011"
 ms.date: 08/17/2022
 f1_keywords: ["C1011"]
 helpviewer_keywords: ["C1011"]
