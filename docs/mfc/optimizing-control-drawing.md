@@ -4,6 +4,7 @@ title: "Optimizing Control Drawing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], optimizing"]
 ms.assetid: 29ff985d-9bf5-4678-b62d-aad12def75fb
+ms.topic: concept-article
 ---
 # Optimizing Control Drawing
 

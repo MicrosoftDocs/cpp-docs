@@ -3,6 +3,7 @@ description: "Learn more about: How to: Modify C++ project properties and target
 title: "How to: Modify C++ project properties and targets without changing the project file"
 ms.date: "7/28/2023"
 helpviewer_keywords: ["project properties [C++], modifying outside project file"]
+ms.topic: how-to
 ---
 # How to: Modify C++ project properties and targets without changing the project file
 

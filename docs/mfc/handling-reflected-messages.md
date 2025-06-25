@@ -4,6 +4,7 @@ title: "Handling Reflected Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message handling [MFC], reflected messages", "reflected messages, handling"]
 ms.assetid: 147a4e0c-51cc-4447-a8e1-c28b4cece578
+ms.topic: concept-article
 ---
 # Handling Reflected Messages
 

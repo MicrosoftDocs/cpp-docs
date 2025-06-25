@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["MCN_GETDAYSTATE"]
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], setting day state info", "MCN_GETDAYSTATE notification [MFC]", "month calendar controls [MFC], day state info"]
 ms.assetid: 435d1b11-ec0e-4121-9e25-aaa6af812a3c
+ms.topic: how-to
 ---
 # Setting the Day State of a Month Calendar Control
 

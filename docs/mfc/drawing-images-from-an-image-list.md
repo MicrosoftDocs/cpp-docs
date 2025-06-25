@@ -4,6 +4,7 @@ title: "Drawing Images from an Image List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CImageList class [MFC], drawing images from", "drawing [MFC], images from image lists", "image lists [MFC], drawing images from", "images [MFC], drawing"]
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
+ms.topic: concept-article
 ---
 # Drawing Images from an Image List
 

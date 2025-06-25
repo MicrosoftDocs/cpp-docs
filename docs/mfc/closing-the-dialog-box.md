@@ -4,6 +4,7 @@ title: "Closing the Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC dialog boxes [MFC], closing", "dialog boxes [MFC], closing"]
 ms.assetid: 946f5675-c482-46a4-a5dd-34fe138ffae5
+ms.topic: concept-article
 ---
 # Closing the Dialog Box
 

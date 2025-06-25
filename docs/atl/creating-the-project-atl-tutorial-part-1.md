@@ -4,6 +4,7 @@ title: "Creating the Project (ATL Tutorial, Part 1)"
 ms.custom: "get-started-article"
 ms.date: "08/19/2019"
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
+ms.topic: tutorial
 ---
 # Creating the Project (ATL Tutorial, Part 1)
 

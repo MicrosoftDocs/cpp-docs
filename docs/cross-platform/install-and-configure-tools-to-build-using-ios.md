@@ -4,6 +4,7 @@ title: "Install and configure tools to build using iOS"
 ms.date: 12/18/2022
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 ms.custom: intro-installation
+ms.topic: install-set-up-deploy
 ---
 # Install and configure tools to build using iOS
 

@@ -4,6 +4,7 @@ title: "Creating Your Dialog Class"
 ms.date: "09/06/2019"
 helpviewer_keywords: ["dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating", "files [MFC], creating", "dialog classes [MFC], Add Class Wizard", "dialog classes [MFC], creating"]
 ms.assetid: d5321741-da41-47a8-bb1c-6a0e8b28c4c1
+ms.topic: concept-article
 ---
 # Creating Your Dialog Class
 

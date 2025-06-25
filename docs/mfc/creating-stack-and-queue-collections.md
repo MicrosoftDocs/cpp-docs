@@ -4,6 +4,7 @@ title: "Creating Stack and Queue Collections"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC collection classes [MFC], stack collections", "collections, stack", "stack", "collection classes [MFC], creating", "queue collections", "MFC collection classes [MFC], queue collections", "stack collections", "collections, queue"]
 ms.assetid: 3c7bc198-35f0-4fc3-aaed-6005a0f22638
+ms.topic: how-to
 ---
 # Creating Stack and Queue Collections
 

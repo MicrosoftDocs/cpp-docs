@@ -4,6 +4,7 @@ description: "Use Microsoft C++ to create programs and libraries that can connec
 ms.date: 10/28/2021
 helpviewer_keywords: ["command-line applications [C++], managed code", "compiling programs [C++]", "Visual C++, managed code", "managed code [C++]"]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
+ms.topic: how-to
 ---
 # Walkthrough: Compile a C++/CLI program that targets the CLR in Visual Studio
 

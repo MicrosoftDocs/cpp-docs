@@ -4,6 +4,7 @@ title: "Providing Mouse Interaction While Inactive"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], mouse interaction"]
 ms.assetid: b09106bf-44c7-4b9b-a6d9-0d624f16f5b3
+ms.topic: concept-article
 ---
 # Providing Mouse Interaction While Inactive
 

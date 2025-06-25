@@ -4,6 +4,7 @@ title: "Accessing All Members of a Collection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, collections", "enumerations [MFC]", "enumerating collections [MFC]", "collections [MFC], accessing", "collection classes [MFC]", ", ", ", ", ", ", ", ", ", ", ", ", ", "]
 ms.assetid: 7bbae518-062e-4393-81f9-b22abd2e5f59
+ms.topic: how-to
 ---
 # Accessing All Members of a Collection
 

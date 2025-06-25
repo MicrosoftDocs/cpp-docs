@@ -4,6 +4,7 @@ title: "Adding Items to the Header Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], header", "CHeaderCtrl class [MFC], adding items", "header controls [MFC], adding items to"]
 ms.assetid: 2e9a28b1-7302-4a93-8037-c5a4183e589a
+ms.topic: how-to
 ---
 # Adding Items to the Header Control
 

@@ -4,6 +4,7 @@ title: "Handling Tool Tip Notifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TOOLTIPTEXT structure [MFC]", "CToolBarCtrl class [MFC], handling notifications", "notifications [MFC], tool tips", "tool tips [MFC], notifications"]
 ms.assetid: ddb93b5f-2e4f-4537-8053-3453c86e2bbb
+ms.topic: concept-article
 ---
 # Handling Tool Tip Notifications
 

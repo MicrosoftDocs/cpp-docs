@@ -3,6 +3,7 @@ title: "Troubleshoot function inlining on build time"
 description: "Tutorial for how to use Build Insights function view to troubleshoot the impact of function inlining on build time in your C++ projects."
 ms.date: 5/30/2024
 helpviewer_keywords: ["C++ Build Insights", "inline function analysis", "build time analysis", "__forceinline analysis", "inlines analysis"]
+ms.topic: troubleshooting-general
 ---
 # Troubleshoot function inlining on build time
 

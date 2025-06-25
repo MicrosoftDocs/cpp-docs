@@ -4,6 +4,7 @@ title: "Programming with ATL and C Run-Time Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL_MIN_CRT macro", "CRT, using with ATL", "_ATL_MIN_CRT macro", "ATL, C Run-Time library (CRT)"]
 ms.assetid: 20f03b66-1eb7-4add-84a2-6047db0911eb
+ms.topic: concept-article
 ---
 # Programming with ATL and C Run-Time Code
 

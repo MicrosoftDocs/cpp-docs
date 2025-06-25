@@ -4,6 +4,7 @@ title: "Rubber-Banding and Trackers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["trackers [MFC]", "CRectTracker class [MFC], implementing trackers", "OLE objects [MFC], selecting", "rubber banding [MFC]", "WM_LBUTTONDOWN [MFC]"]
 ms.assetid: 0d0fa64c-6418-4baf-ab7f-2d16ca039230
+ms.topic: concept-article
 ---
 # Rubber-Banding and Trackers
 

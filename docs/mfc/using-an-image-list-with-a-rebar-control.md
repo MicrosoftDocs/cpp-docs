@@ -4,6 +4,7 @@ title: "Using an Image List with a Rebar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["image lists [MFC], rebar controls", "rebar controls [MFC], image lists"]
 ms.assetid: 1a5836ac-019a-46aa-8741-b35c3376b839
+ms.topic: how-to
 ---
 # Using an Image List with a Rebar Control
 

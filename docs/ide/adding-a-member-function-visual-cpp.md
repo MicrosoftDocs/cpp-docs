@@ -5,6 +5,7 @@ ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.classes.member.function", "vc.codewiz.function.overview"]
 helpviewer_keywords: ["member functions, adding to classes", "classes [C++], adding members", "add member function wizard [C++]"]
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
+ms.topic: how-to
 ---
 # Add a member function
 

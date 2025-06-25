@@ -2,6 +2,7 @@
 title: "Configure Linux projects to use Address Sanitizer"
 description: "Describes how to configure C++ Linux projects in Visual Studio to use Address Sanitizer."
 ms.date: "10/7/2020"
+ms.topic: how-to
 ---
 # Configure Linux projects to use Address Sanitizer
 
