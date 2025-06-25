@@ -4,6 +4,7 @@ title: "Fixing Release Build Problems"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["release builds, troubleshooting", "debug builds, memory overwrites", "memory, overwrites", "troubleshooting Visual C++, release builds", "troubleshooting release builds"]
 ms.assetid: a0c0818e-4c47-4fe0-a611-50d61a41bd88
+ms.topic: concept-article
 ---
 # Fixing Release Build Problems
 

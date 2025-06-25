@@ -4,6 +4,7 @@ title: "Using a Template Library (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["template libraries"]
 ms.assetid: 5e80ec6e-a61c-41ce-b34b-9a6252c46265
+ms.topic: concept-article
 ---
 # Using a Template Library
 

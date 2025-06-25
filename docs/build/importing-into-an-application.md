@@ -4,6 +4,7 @@ title: "Importing into an Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DLLs [C++], importing", "importing DLLs [C++], applications", "applications [C++], importing into"]
 ms.assetid: 9d646466-e12e-4710-8ad9-c819c0375fcc
+ms.topic: concept-article
 ---
 # Importing into an Application
 

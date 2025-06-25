@@ -3,6 +3,7 @@ title: "RELOG_RETENTION_SYSTEM_EVENT_FLAGS constants"
 description: "The C++ Build Insights SDK RELOG_RETENTION_SYSTEM_EVENT_FLAGS constants reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "RELOG_RETENTION_SYSTEM_EVENT_FLAGS", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
 ---
 # RELOG_RETENTION_SYSTEM_EVENT_FLAGS constants
 

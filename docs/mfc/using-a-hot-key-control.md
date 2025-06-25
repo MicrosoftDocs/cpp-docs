@@ -4,6 +4,7 @@ title: "Using a Hot Key Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CHotKeyCtrl class [MFC], using", "hot key controls"]
 ms.assetid: cdd6524b-cc43-447f-b151-164273559685
+ms.topic: concept-article
 ---
 # Using a Hot Key Control
 

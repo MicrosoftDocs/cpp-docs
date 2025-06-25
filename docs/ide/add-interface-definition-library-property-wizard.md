@@ -5,6 +5,7 @@ ms.date: 04/14/2022
 f1_keywords: ["vc.codewiz.prop.overview", "vc.codewiz.prop.idlattributes"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "IDL attributes", "stock properties, about stock properties", "stock properties"]
 ms.custom: devdivchpfy22
+ms.topic: how-to
 ---
 # Add an IDL property
 

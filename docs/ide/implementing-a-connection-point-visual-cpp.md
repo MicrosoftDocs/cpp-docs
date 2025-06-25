@@ -4,6 +4,7 @@ title: "Implement a connection point"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["connection points [C++], implementing", "implement connection point wizard [C++]"]
 ms.assetid: 5b37e4f9-73c9-4bef-b26d-365bc0662260
+ms.topic: how-to
 ---
 # Implement a connection point
 

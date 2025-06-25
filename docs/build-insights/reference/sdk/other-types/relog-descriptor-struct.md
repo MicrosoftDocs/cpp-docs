@@ -3,6 +3,7 @@ title: "RELOG_DESCRIPTOR structure"
 description: "The C++ Build Insights SDK RELOG_DESCRIPTOR structure reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "RELOG_DESCRIPTOR", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
 ---
 # RELOG_DESCRIPTOR structure
 

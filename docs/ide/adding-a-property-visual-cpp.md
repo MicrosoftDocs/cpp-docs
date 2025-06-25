@@ -5,6 +5,7 @@ ms.date: 04/12/2022
 f1_keywords: ["vc.codewiz.prop.overview"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "add property wizard", "stock properties, about stock properties", "stock properties"]
 ms.custom: devdivchpfy22
+ms.topic: how-to
 ---
 
 # Add a property

@@ -4,6 +4,7 @@ title: "Building C/C++ Isolated Applications"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["isolated applications [C++]"]
 ms.assetid: 8a2fe4fa-0489-433e-bfc6-495844d8d73a
+ms.topic: concept-article
 ---
 # Building C/C++ Isolated Applications
 

@@ -4,6 +4,7 @@ title: "Adding Tabs to a Tab Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tab controls [MFC], adding tabs", "putting tabs on CTabCtrls [MFC]", "CTabCtrl class [MFC], adding tabs", "tabs [MFC], adding to CTabCtrl class [MFC]"]
 ms.assetid: 7f3d9340-e3c7-4c71-9912-be57534ecc78
+ms.topic: how-to
 ---
 # Adding Tabs to a Tab Control
 

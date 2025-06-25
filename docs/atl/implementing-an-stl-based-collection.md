@@ -4,6 +4,7 @@ title: "Implementing a C++ Standard Library-Based Collection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ICollectionOnSTLImpl interface"]
 ms.assetid: 6d49f819-1957-4813-b074-3f12c494d8ca
+ms.topic: how-to
 ---
 # Implementing a C++ Standard Library-Based Collection
 

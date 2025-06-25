@@ -4,6 +4,7 @@ title: "Using Function Name Without () Produces No Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["functions [C++], without parentheses"]
 ms.assetid: edf4a177-a160-44aa-8436-e077b5b27809
+ms.topic: concept-article
 ---
 # Using Function Name Without () Produces No Code
 

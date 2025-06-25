@@ -4,6 +4,7 @@ title: "Creating the Header Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CHeaderCtrl class [MFC], creating", "header controls [MFC], creating"]
 ms.assetid: 7864d9d2-4a2c-4622-b58b-7b110a1e28d2
+ms.topic: how-to
 ---
 # Creating the Header Control
 

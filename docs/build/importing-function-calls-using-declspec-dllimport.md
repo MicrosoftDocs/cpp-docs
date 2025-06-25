@@ -4,6 +4,7 @@ description: "How and why to use __declspec(dllimport) when calling DLL data and
 ms.date: "05/03/2020"
 helpviewer_keywords: ["importing function calls [C++]", "dllimport attribute [C++], function call imports", "__declspec(dllimport) keyword [C++]", "function calls [C++], importing"]
 ms.assetid: 6b53c616-0c6d-419a-8e2a-d2fff20510b3
+ms.topic: concept-article
 ---
 # Importing function calls using `__declspec(dllimport)`
 

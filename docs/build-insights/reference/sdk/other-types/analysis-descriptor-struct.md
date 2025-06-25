@@ -3,6 +3,7 @@ title: "ANALYSIS_DESCRIPTOR structure"
 description: "The C++ Build Insights SDK ANALYSIS_DESCRIPTOR structure reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "ANALYSIS_DESCRIPTOR", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
 ---
 # ANALYSIS_DESCRIPTOR structure
 

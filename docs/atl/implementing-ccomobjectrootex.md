@@ -4,6 +4,7 @@ title: "Implementing CComObjectRootEx"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CComObjectRoot class, implementing", "CComObjectRootEx class"]
 ms.assetid: 79630c44-f2df-4e9e-b730-400a0ebfbd2b
+ms.topic: concept-article
 ---
 # Implementing CComObjectRootEx
 

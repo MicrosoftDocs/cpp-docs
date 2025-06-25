@@ -4,6 +4,7 @@ title: "Using Frame Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["windows [MFC], frame windows", "frame windows [MFC], using", "MFC, frame windows"]
 ms.assetid: 4d773238-11f6-4ccf-8114-57310c5aaa2d
+ms.topic: concept-article
 ---
 # Using Frame Windows
 

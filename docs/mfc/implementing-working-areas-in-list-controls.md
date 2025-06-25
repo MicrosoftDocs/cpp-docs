@@ -4,6 +4,7 @@ title: "Implementing Working Areas in List Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["list controls [MFC], working areas", "working areas in list control [MFC]"]
 ms.assetid: fbbb356b-3359-4348-8603-f1cb114cadde
+ms.topic: concept-article
 ---
 # Implementing Working Areas in List Controls
 

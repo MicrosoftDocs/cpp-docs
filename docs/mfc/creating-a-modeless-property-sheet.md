@@ -4,6 +4,7 @@ title: "Creating a Modeless Property Sheet"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["modeless property sheets", "property sheets, modeless", "Create method [MFC], property sheets"]
 ms.assetid: eafd8a92-cc67-4a69-a5fb-742c920d1ae8
+ms.topic: concept-article
 ---
 # Creating a Modeless Property Sheet
 

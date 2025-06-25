@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["afx_ext_class"]
 helpviewer_keywords: ["AFX_EXT_CLASS macro", "exporting classes [C++]", "importing DLLs [C++]", "extension DLLs [C++], exporting classes", "executable files [C++], importing classes", "exporting DLLs [C++], AFX_EXT_CLASS macro"]
 ms.assetid: 6b72cb2b-e92e-4ecd-bcab-c335e1d1cfde
+ms.topic: concept-article
 ---
 # Exporting and Importing Using AFX_EXT_CLASS
 

@@ -4,6 +4,7 @@ title: "Creating Modeless Dialog Boxes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC dialog boxes [MFC], modeless", "modeless dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating"]
 ms.assetid: 70d78c7f-3d40-477b-9f78-0f33c359f88b
+ms.topic: concept-article
 ---
 # Creating Modeless Dialog Boxes
 

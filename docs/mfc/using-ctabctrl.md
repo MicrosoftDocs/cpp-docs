@@ -4,6 +4,7 @@ title: "Using CTabCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTabCtrl class [MFC], using", "tab controls [MFC], using"]
 ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
+ms.topic: concept-article
 ---
 # Using CTabCtrl
 

@@ -4,6 +4,7 @@ title: "Command Routing Illustration"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "command routing [MFC], OnCmdMsg handler"]
 ms.assetid: 4b7b4741-565f-4878-b076-fd85c670f87f
+ms.topic: how-to
 ---
 # Command Routing Illustration
 

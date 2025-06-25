@@ -3,6 +3,7 @@ title: "CALLBACK_CODE enum"
 description: "The C++ Build Insights SDK CALLBACK_CODE enum reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "CALLBACK_CODE", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
 ---
 # CALLBACK_CODE enum
 
