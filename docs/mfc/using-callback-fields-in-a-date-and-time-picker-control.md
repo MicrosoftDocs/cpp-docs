@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["DTN_FORMATQUERY", "DTN_FORMAT"]
 helpviewer_keywords: ["DateTimePicker control [MFC], callback fields", "callback fields in CDateTimeCtrl class [MFC]", "CDateTimeCtrl class [MFC], callback fields", "CDateTimeCtrl class [MFC], handling DTN_FORMAT and DTN_FORMATQ", "DTN_FORMATQUERY notification [MFC]", "DTN_FORMAT notification [MFC]", "DateTimePicker control [MFC]"]
 ms.assetid: 404f4ba9-cba7-4718-9faa-bc6b274a723f
+ms.topic: concept-article
 ---
 # Using Callback Fields in a Date and Time Picker Control
 

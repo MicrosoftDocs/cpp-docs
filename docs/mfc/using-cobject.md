@@ -4,6 +4,7 @@ title: "Using CObject"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["examples [MFC], CObject", "root base class for MFC", "derived classes [MFC], from CObject", "MFC, base class", "CObject class [MFC]"]
 ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
+ms.topic: concept-article
 ---
 # Using CObject
 

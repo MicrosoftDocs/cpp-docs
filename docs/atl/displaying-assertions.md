@@ -4,6 +4,7 @@ title: "Displaying Assertions"
 ms.date: "05/05/2019"
 helpviewer_keywords: ["debugging [ATL], displaying assertions", "assertions, displaying", "debugging assertions", "assertions, debugging"]
 ms.assetid: fa353fe8-4656-4384-a5d2-8866bc977f06
+ms.topic: concept-article
 ---
 # Displaying Assertions
 

@@ -4,6 +4,7 @@ title: "Adding an ATL Message Handler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message handlers [C++]", "ATL, windows", "message handling [C++], ATL message handler", "windows [C++], ATL", "ATL, message handlers"]
 ms.assetid: cdea38a1-0d9b-4f8d-bbd5-b4f063fb3eeb
+ms.topic: concept-article
 ---
 # Adding an ATL Message Handler
 

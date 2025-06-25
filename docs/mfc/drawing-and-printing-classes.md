@@ -4,6 +4,7 @@ title: "Drawing and Printing Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["output [MFC], graphical classes", "drawing [MFC], classes", "printing classes [MFC]", "graphics [MFC], graphical output classes"]
 ms.assetid: 2781c599-a038-462a-98ca-634b07ee22b0
+ms.topic: concept-article
 ---
 # Drawing and Printing Classes
 

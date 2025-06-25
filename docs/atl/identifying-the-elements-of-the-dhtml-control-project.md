@@ -4,6 +4,7 @@ title: "Identifying the Elements of the DHTML Control Project"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["HTML controls, ATL support", "DHTML controls, ATL support"]
 ms.assetid: b627547a-3768-4346-9900-4b7a21fb8e27
+ms.topic: concept-article
 ---
 # Identifying the Elements of the DHTML Control Project
 

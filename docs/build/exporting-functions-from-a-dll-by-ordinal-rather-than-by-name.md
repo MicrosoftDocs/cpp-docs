@@ -4,6 +4,7 @@ title: "Exporting Functions from a DLL by Ordinal Rather Than by Name"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exporting functions [C++], ordinal values", "ordinal exports [C++]", "exporting DLLs [C++], ordinal values", "NONAME attribute"]
 ms.assetid: 679719fd-d965-4df3-9f7a-7d86ad831702
+ms.topic: concept-article
 ---
 # Exporting Functions from a DLL by Ordinal Rather Than by Name
 

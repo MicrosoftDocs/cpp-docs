@@ -4,6 +4,7 @@ title: "Printing and Print Preview"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["printing [MFC]", "previewing printing", "printing [MFC]", "print preview", "printing [MFC], print preview"]
 ms.assetid: d15059cd-32de-4450-95f7-e73aece238f6
+ms.topic: concept-article
 ---
 # Printing and Print Preview
 

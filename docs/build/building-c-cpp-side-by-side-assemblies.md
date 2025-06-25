@@ -4,6 +4,7 @@ title: "Building C/C++ Side-by-side Assemblies"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["side-by-side applications [C++]"]
 ms.assetid: 7fa20b16-3737-4f76-a0b5-1dacea19a1e8
+ms.topic: concept-article
 ---
 # Building C/C++ Side-by-side Assemblies
 

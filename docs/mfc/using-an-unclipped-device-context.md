@@ -4,6 +4,7 @@ title: "Using an Unclipped Device Context"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], unclipped device context"]
 ms.assetid: 9c020063-73da-4803-bf7b-2e1fd950c9ed
+ms.topic: concept-article
 ---
 # Using an Unclipped Device Context
 

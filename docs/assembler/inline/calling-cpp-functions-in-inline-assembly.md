@@ -4,6 +4,7 @@ title: "Calling C++ Functions in Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["functions [C++], calling in inline assembly", "function calls, C++ functions", "function calls, in inline assembly", "Visual C++, functions", "inline assembly, calling functions", "__asm keyword [C++], calling functions"]
 ms.assetid: 1f0d1eb3-54cf-45d5-838d-958188616b38
+ms.topic: concept-article
 ---
 # Calling C++ Functions in Inline Assembly
 

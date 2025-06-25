@@ -5,6 +5,7 @@ ms.custom: "get-started-article"
 ms.date: "05/03/2019"
 helpviewer_keywords: ["ATL projects, tutorials", "controls [ATL], tutorials", "ATL tutorial", "tutorials [ATL]", "ATL, tutorials"]
 ms.assetid: f921a121-09c8-4812-9317-e15b2f1471fa
+ms.topic: tutorial
 ---
 # Active Template Library (ATL) Tutorial
 

@@ -4,6 +4,7 @@ title: "Manipulating Menus During Program Execution"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["menus [MFC], editing during execution", "menus during execution [MFC], deleting", "CMenu class [MFC], manipulating menus during execution", "menus [MFC], manipulating during execution", "menus during execution"]
 ms.assetid: 722c7c00-4be2-4967-877d-f96aaa604396
+ms.topic: concept-article
 ---
 # Manipulating Menus During Program Execution
 

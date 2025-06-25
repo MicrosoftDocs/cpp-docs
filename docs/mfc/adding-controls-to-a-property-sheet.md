@@ -4,6 +4,7 @@ title: "Adding Controls to a Property Sheet"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], adding to property sheets", "property sheets, adding controls"]
 ms.assetid: 24ad4c0b-c1db-4850-b9f0-34aae8d74571
+ms.topic: concept-article
 ---
 # Adding Controls to a Property Sheet
 

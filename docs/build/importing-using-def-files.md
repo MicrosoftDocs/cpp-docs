@@ -4,6 +4,7 @@ title: "Importing Using DEF Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["importing DLLs [C++], DEF files", "def files [C++], importing with", ".def files [C++], importing with", "dllimport attribute [C++], DEF files", "DLLs [C++], DEF files"]
 ms.assetid: aefdbf50-f603-488a-b0d7-ed737bae311d
+ms.topic: concept-article
 ---
 # Importing Using DEF Files
 

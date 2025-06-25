@@ -5,6 +5,7 @@ ms.custom: tutorial
 ms.date: 03/17/2025
 helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
+ms.topic: how-to
 ---
 # Walkthrough: Compile a C program on the command line
 

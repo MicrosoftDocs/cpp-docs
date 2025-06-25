@@ -5,6 +5,7 @@ ms.custom: "index-page"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["COM objects, creating in ATL", "ATL"]
 ms.assetid: 77f565e8-c4ec-4a80-af4b-7278fcfe5c98
+ms.topic: concept-article
 ---
 # Introduction to ATL
 

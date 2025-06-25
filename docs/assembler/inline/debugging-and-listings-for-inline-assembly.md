@@ -4,6 +4,7 @@ title: "Debugging and Listings for Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["source level debugger", "__asm keyword [C++], debugging", "inline assembly, listings", "bugs, __asm blocks", "debugging [C++], inline assembly code", "inline assembly, debugging"]
 ms.assetid: 69266930-6f9a-433d-b704-f4f44e7b2583
+ms.topic: concept-article
 ---
 # Debugging and Listings for Inline Assembly
 

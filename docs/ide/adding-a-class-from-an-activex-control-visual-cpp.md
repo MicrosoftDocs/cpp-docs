@@ -5,6 +5,7 @@ ms.date: 04/28/2023
 f1_keywords: ["vc.codewiz.class.axcontrol"]
 helpviewer_keywords: ["ActiveX controls [C++], adding classes", "classes [C++], creating", "ActiveX Control Wizard", "add class from ActiveX control wizard [C++]"]
 ms.custom: devdivchpfy22
+ms.topic: how-to
 ---
 # Add a class from an ActiveX control
 

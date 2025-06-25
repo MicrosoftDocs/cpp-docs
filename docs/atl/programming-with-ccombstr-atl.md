@@ -4,6 +4,7 @@ title: "Programming with CComBSTR (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CComBSTR class, programming with", "Unicode, using CComBSTR [ATL]"]
 ms.assetid: d3bd0851-d132-4be9-9c4c-6ccba17acb2b
+ms.topic: concept-article
 ---
 # Programming with CComBSTR (ATL)
 

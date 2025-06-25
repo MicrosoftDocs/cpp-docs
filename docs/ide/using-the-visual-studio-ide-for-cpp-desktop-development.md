@@ -4,6 +4,7 @@ title: "Using the Visual Studio IDE for C++ Desktop Development"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["IDE [C++]", "Visual Studio IDE [C++]"]
 ms.assetid: d985c230-8e81-49d6-92be-2db9cac8d023
+ms.topic: concept-article
 ---
 # Using the Visual Studio IDE for C++ Desktop Development
 

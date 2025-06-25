@@ -4,6 +4,7 @@ title: "Overview of the Rich Edit Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rich edit controls [MFC]"]
 ms.assetid: ad589b9f-a3fd-4820-bf1f-6b1965997e68
+ms.topic: concept-article
 ---
 # Overview of the Rich Edit Control
 

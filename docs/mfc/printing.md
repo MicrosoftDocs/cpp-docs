@@ -4,6 +4,7 @@ title: "Printing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["view classes [MFC], print operations", "documents [MFC], printing", "printing [MFC], from framework", "printing [MFC]"]
 ms.assetid: be465e8d-b0c9-4fc5-9fa8-d10486064f76
+ms.topic: concept-article
 ---
 # Printing
 

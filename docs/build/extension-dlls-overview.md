@@ -4,6 +4,7 @@ title: "Extension DLLs: Overview"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["AFXDLL library", "MFC DLLs [C++], MFC extension DLLs", "DLLs [C++], extension", "shared DLL versions [C++]", "extension DLLs [C++], about MFC extension DLLs"]
 ms.assetid: eb5e10b7-d615-4bc7-908d-e3e99b7b1d5f
+ms.topic: concept-article
 ---
 # MFC extension DLLs: Overview
 

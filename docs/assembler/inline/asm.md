@@ -5,6 +5,7 @@ ms.date: "10/09/2018"
 f1_keywords: ["__asm", "_asm", "__asm_cpp"]
 helpviewer_keywords: ["__asm keyword [C++], vs. asm blocks", "__asm keyword [C++]"]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
+ms.topic: reference
 ---
 # `__asm`
 

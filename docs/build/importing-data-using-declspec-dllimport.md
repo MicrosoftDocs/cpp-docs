@@ -4,6 +4,7 @@ description: "How to use __declspec(dllimport) to import DLL data."
 ms.date: 09/03/2020
 helpviewer_keywords: ["importing data [C++]", "dllimport attribute [C++], data imports", "__declspec(dllimport) keyword [C++]", "importing DLLs [C++], __declspec(dllimport)"]
 ms.assetid: 0ae70b39-87c7-4181-8be9-e786e0db60b0
+ms.topic: concept-article
 ---
 # Importing data using `__declspec(dllimport)`
 

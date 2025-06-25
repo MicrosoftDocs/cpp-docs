@@ -4,6 +4,7 @@ title: "Adding Items to the Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], adding items"]
 ms.assetid: 715994bd-340d-4ad2-9882-411654137830
+ms.topic: concept-article
 ---
 # Adding Items to the Control
 

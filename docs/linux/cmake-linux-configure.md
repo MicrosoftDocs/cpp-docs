@@ -2,6 +2,7 @@
 title: "Configure a Linux CMake project in Visual Studio"
 description: "How to configure Linux CMake settings in Visual Studio"
 ms.date: 01/03/2022
+ms.topic: how-to
 ---
 # Configure a Linux CMake project in Visual Studio
 
