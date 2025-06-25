@@ -29,7 +29,7 @@ In either case, the **Implement Connection Point Wizard** uses a type library to
 
    See the `.idl` file in the [Circ](../overview/visual-cpp-samples.md) ATL sample for an example.
 
-3. Use **Class View** to add methods and properties to the event interface. Right-click the class in **Class View**, point to **Add** on the shortcut menu, and click **Add Connection Point**.
+3. Use **Class View** to add methods and properties to the event interface. Right-click the class in **Class View**, point to **Add** on the shortcut menu, and select **Add Connection Point**.
 
 4. In the **Source Interfaces** list box of the **Implement Connection Point Wizard**, select **Project's interfaces**. If you choose an interface for your control and select **OK**, you:
 
