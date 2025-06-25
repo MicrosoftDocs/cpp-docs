@@ -6,7 +6,7 @@ f1_keywords: ["chrono/std::chrono::day", "chrono/std::chrono::day::ok", "chrono/
 helpviewer_keywords: ["std::chrono [C++], day"]
 dev_langs: ["C++"]
 ---
-# `day` class  
+# `day` class
 
 Represents a day of the month. For example, the 25th day of the month.
 

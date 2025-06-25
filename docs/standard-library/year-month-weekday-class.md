@@ -1,13 +1,13 @@
 ---
 title: "year_month_weekday class"
 description: "Learn more about: year_month_weekday class"
-ms.date: "06/30/2021"
+ms.date: 06/30/2021
 f1_keywords: ["chrono/std::chrono::year_month_weekday", "chrono/std::chrono::year_month_weekday::weekday", "chrono/std::chrono::year_month_weekday::month", "chrono/std::chrono::year_month_weekday::index", "chrono/std::chrono::year_month_weekday::year", "chrono/std::chrono::year_month_weekday::weekday", "chrono/std::chrono::year_month_weekday::weekday_indexed", "chrono/std::chrono::year_month_weekday::sys_days", "chrono/std::chrono::year_month_weekday::local_days", "chrono/std::chrono::year_month_weekday::ok", "chrono/std::chrono::year_month_weekday::operator+=", "chrono/std::chrono::year_month_weekday::operator-=", "chrono/std::chrono::year_month_weekday::operator local_days", "chrono/std::chrono::year_month_weekday::operator sys_days"]
 helpviewer_keywords: ["std::chrono [C++], year_month_weekday"]
 dev_langs: ["C++"]
 ---
 
-# `year_month_weekday` class  
+# `year_month_weekday` class
 
 Represents a specific year, month, and nth weekday of the month.
 
@@ -36,7 +36,7 @@ class year_month_weekday; // C++20
 | [`operator local_days`](#local_days) | Get the count of days from the `system_clock` epoch to this `year_month_weekday` as [`local_days`](chrono.md#typedefs). |
 | [`operator sys_days`](#sys_days) | Get the count of days from the `system_clock` epoch to this `year_month_weekday` as [`sys_days`](chrono.md#typedefs). |
 | [`weekday`](#weekday) | Get the weekday. |
-| [`weekday_indexed`](#weekday_indexed) | Get the [`weekday_indexed`] stored in this `year_month_weekday`. |
+| [`weekday_indexed`](#weekday_indexed) | Get the [`weekday_indexed`](weekdayindexed-class.md) stored in this `year_month_weekday`. |
 | [`year`](#year) | Get the year. |
 
 ## Non-members

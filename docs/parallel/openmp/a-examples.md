@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: A. Examples"
 title: "A. Examples"
-ms.date: "01/18/2019"
-ms.assetid: c0f6192f-a205-449b-b84c-cb30dbcc8b8f
+description: "Learn more about: A. Examples"
+ms.date: 01/18/2019
 ---
 # A. Examples
 
@@ -854,7 +853,7 @@ The following example demonstrates the [num_threads](2-directives.md#23-parallel
 
 ```cpp
 #include <omp.h>
-main()
+int main()
 {
     omp_set_dynamic(1);
     ...
