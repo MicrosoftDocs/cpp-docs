@@ -40,7 +40,7 @@ Other ways to disable warning C4996 include:
 Also, you can manually change the level of warning C4996 with the `/w<l><n>` compiler option. For example, to set warning C4996 to level 4:
 
 ```cmd
-cl /w44996 [other compiler options] myfile.cpp
+cl /w44996 myfile.cpp
 ```
 
 For more information, see [`/w`, `/W0`, `/W1`, `/W2`, `/W3`, `/W4`, `/w1`, `/w2`, `/w3`, `/w4`, `/Wall`, `/wd`, `/we`, `/wo`, `/Wv`, `/WX` (Warning Level)](../build/reference/compiler-option-warning-level.md).
