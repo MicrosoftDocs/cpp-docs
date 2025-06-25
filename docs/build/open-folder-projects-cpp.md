@@ -3,6 +3,7 @@ title: "Open Folder support for C++ build systems in Visual Studio"
 description: "Learn more about: Open Folder support for C++ build systems in Visual Studio"
 ms.date: 12/02/2019
 helpviewer_keywords: ["Open Folder Projects in Visual Studio"]
+ms.topic: how-to
 ---
 # Open Folder support for C++ build systems in Visual Studio
 

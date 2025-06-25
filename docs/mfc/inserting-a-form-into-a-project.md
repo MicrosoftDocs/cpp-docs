@@ -4,6 +4,7 @@ title: "Inserting a Form into a Project"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inserting forms [MFC]", "Insert New dialog box [MFC]", "forms, adding to projects"]
 ms.assetid: f3bd2998-3ce2-496d-ac5c-57ca70eec7cb
+ms.topic: how-to
 ---
 # Inserting a Form into a Project
 

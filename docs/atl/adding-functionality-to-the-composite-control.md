@@ -4,6 +4,7 @@ title: "Adding Functionality to the Composite Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handlers [C++], ActiveX controls", "composite controls, handling events", "ActiveX controls [C++], events"]
 ms.assetid: 98f85681-9564-480d-af38-03f9733fe58b
+ms.topic: concept-article
 ---
 # Adding Functionality to the Composite Control
 

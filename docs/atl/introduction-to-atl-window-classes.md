@@ -4,6 +4,7 @@ title: "Introduction to ATL Window Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window classes"]
 ms.assetid: 503efc2c-a269-495d-97cf-3fb300d52f3d
+ms.topic: concept-article
 ---
 # Introduction to ATL Window Classes
 

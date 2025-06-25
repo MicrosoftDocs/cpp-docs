@@ -3,6 +3,7 @@ title: "TRACING_SESSION_OPTIONS structure"
 description: "Learn about the C++ Build Insights SDK TRACING_SESSION_OPTIONS structure reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "TRACING_SESSION_OPTIONS", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
 ---
 # TRACING_SESSION_OPTIONS structure
 

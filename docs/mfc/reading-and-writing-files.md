@@ -4,6 +4,7 @@ title: "Reading and Writing Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CFile class [MFC], objects", "examples [MFC], reading files", "files [MFC], writing to", "examples [MFC], writing to files", "files [MFC], reading", "MFC, file operations", "CFile class [MFC], reading and writing CFile objects", "reading files", "writing to files [MFC]"]
 ms.assetid: cac0c826-ba56-495f-99b3-ce6336f65763
+ms.topic: how-to
 ---
 # Reading and Writing Files
 

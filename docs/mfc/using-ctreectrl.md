@@ -4,6 +4,7 @@ title: "Using CTreeCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTreeCtrl class [MFC], about CTreeCtrl", "tree controls [MFC], using"]
 ms.assetid: 6a262f2c-3540-43e5-b03f-e4b6f9cb0325
+ms.topic: concept-article
 ---
 # Using CTreeCtrl
 

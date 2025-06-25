@@ -4,6 +4,7 @@ title: "Creating an Aggregated Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["aggregation [C++], creating aggregated objects", "aggregate objects [C++], creating"]
 ms.assetid: fc29d7aa-fd53-4276-9c2f-37379f71b179
+ms.topic: how-to
 ---
 # Creating an Aggregated Object
 

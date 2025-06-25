@@ -4,6 +4,7 @@ title: "Non-MFC DLLs: Overview"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["non-MFC DLLs [C++]", "DLLs [C++], non-MFC"]
 ms.assetid: 1ed5d1ee-e20c-47d7-801d-87ea26a73842
+ms.topic: concept-article
 ---
 # Non-MFC DLLs: Overview
 

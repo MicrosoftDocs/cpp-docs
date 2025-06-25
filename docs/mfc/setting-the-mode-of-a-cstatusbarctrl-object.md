@@ -4,6 +4,7 @@ title: "Setting the Mode of a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["simple mode and status bar controls", "IsSimple method, using", "SetSimple method [MFC]", "status bar controls [MFC], simple and nonsimple modes", "non-simple mode and status bar controls", "CStatusBarCtrl class [MFC], simple and nonsimple modes"]
 ms.assetid: ca6076e5-1501-4e33-8d35-9308941e46c0
+ms.topic: concept-article
 ---
 # Setting the Mode of a CStatusBarCtrl Object
 

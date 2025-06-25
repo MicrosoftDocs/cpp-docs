@@ -4,6 +4,7 @@ title: "Inline Assembler Overview"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["inline assembler", "__asm keyword [C++], invoking inline assembler", "invoking inline assembler", "inline assembly, inline assembler"]
 ms.assetid: d990331a-0e33-4760-8d7a-b720b0288335
+ms.topic: concept-article
 ---
 # Inline Assembler Overview
 

@@ -4,6 +4,7 @@ title: "Specifying the Threading Model for a Project (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_ATL_FREE_THREADED macro", "_ATL_APARTMENT_THREADED macro", "ATL, multithreading", "threading [ATL], models", "_ATL_SINGLE_THREADED macro"]
 ms.assetid: 6b571078-521c-4f3e-9f08-482aa235a822
+ms.topic: concept-article
 ---
 # Specifying the Threading Model for a Project (ATL)
 

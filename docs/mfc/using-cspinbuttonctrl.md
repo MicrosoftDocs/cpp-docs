@@ -4,6 +4,7 @@ title: "Using CSpinButtonCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["up-down controls [MFC], spin button control", "up-down controls", "spin button control", "CSpinButtonCtrl class [MFC], using"]
 ms.assetid: a91db36b-e11e-42ef-8e89-51915cc486d2
+ms.topic: concept-article
 ---
 # Using CSpinButtonCtrl
 

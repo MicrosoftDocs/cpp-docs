@@ -3,6 +3,7 @@ description: "Learn more about: Customize CMake build settings"
 title: "Customize CMake build settings in Visual Studio"
 ms.date: 12/15/2021
 helpviewer_keywords: ["CMake build settings"]
+ms.topic: how-to
 ---
 # Customize CMake build settings
 

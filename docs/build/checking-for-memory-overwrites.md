@@ -4,6 +4,7 @@ title: "Checking for Memory Overwrites"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory, overwrites"]
 ms.assetid: da7c5d77-a267-415f-a8ab-ee5ce5bfc286
+ms.topic: concept-article
 ---
 # Checking for Memory Overwrites
 

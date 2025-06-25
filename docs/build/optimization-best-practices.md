@@ -4,6 +4,7 @@ title: "Optimization best practices"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["C++, optimization", "optimization, best practices"]
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
+ms.topic: best-practice
 ---
 # Optimization best practices
 

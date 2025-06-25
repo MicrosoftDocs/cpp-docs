@@ -2,6 +2,7 @@
 title: "Set up FIPS-compliant secure remote Linux development"
 description: "How to set up a FIPS-compliant cryptographic connection between Visual Studio and a Linux machine for remote development."
 ms.date: 07/06/2022
+ms.topic: how-to
 ---
 # Set up FIPS-compliant secure remote Linux development
 
@@ -128,7 +129,7 @@ You've successfully set up `ssh`, created and deployed encryption keys, and test
 
    For more information on troubleshooting your connection, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 
-## Command-line utility for the Connection Manager  
+## Command-line utility for the Connection Manager
 
 **Visual Studio 2019 version 16.5 or later**: `ConnectionManager.exe` is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, you can use it to set up Visual Studio for continuous integration. For examples and a complete reference to the ConnectionManager command, see [ConnectionManager reference](connectionmanager-reference.md).  
 

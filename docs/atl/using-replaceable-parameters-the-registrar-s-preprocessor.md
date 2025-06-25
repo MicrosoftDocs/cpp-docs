@@ -4,6 +4,7 @@ title: "Using Replaceable Parameters (ATL Registrar)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["%MODULE%"]
 ms.assetid: 0b376994-84a6-4967-8d97-8c01dfc94efe
+ms.topic: concept-article
 ---
 # Using Replaceable Parameters (The Registrar's Preprocessor)
 

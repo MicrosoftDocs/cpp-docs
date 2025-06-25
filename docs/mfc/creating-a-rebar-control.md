@@ -4,6 +4,7 @@ title: "Creating a Rebar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rebar controls [MFC], creating", "CReBarCtrl class [MFC], creating"]
 ms.assetid: 0a012e08-772b-4f6a-af86-7cb651d11d3e
+ms.topic: how-to
 ---
 # Creating a Rebar Control
 

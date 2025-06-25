@@ -4,6 +4,7 @@ title: "Supporting IDispatch and IErrorInfo"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ISupportErrorInfoImpl method", "IErrorInfo class suppor in ATL", "IDispatchImpl class", "IDispatch class support in ATL"]
 ms.assetid: 7db2220f-319d-4ce9-9382-d340019f14f7
+ms.topic: concept-article
 ---
 # Supporting IDispatch and IErrorInfo
 

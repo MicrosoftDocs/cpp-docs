@@ -4,6 +4,7 @@ title: "Dragging Images from an Image List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CImageList class [MFC], dragging images from", "dragging images from image lists [MFC]", "image lists [MFC], dragging images from", "images [MFC], dragging from image lists"]
 ms.assetid: af691db8-e4f0-4046-b7b9-9acc68d3713d
+ms.topic: concept-article
 ---
 # Dragging Images from an Image List
 

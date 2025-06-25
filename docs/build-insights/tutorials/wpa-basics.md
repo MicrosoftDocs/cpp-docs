@@ -3,6 +3,7 @@ title: "Tutorial: Windows Performance Analyzer basics"
 description: "Tutorial on how to complete basic operations in Windows Performance Analyzer."
 ms.date: "11/03/2019"
 helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: tutorial
 ---
 # Tutorial: Windows Performance Analyzer basics
 

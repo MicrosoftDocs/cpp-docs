@@ -4,6 +4,7 @@ title: "Creating the List Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], creating control", "list controls [MFC]"]
 ms.assetid: a4cb1729-31b6-4d2b-a44b-367474848a39
+ms.topic: how-to
 ---
 # Creating the List Control
 

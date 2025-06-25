@@ -4,6 +4,7 @@ title: "Implementing a Window (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, windows", "CWindowImpl class, using", "windows [C++], implementing in ATL"]
 ms.assetid: eb1ce8d6-72f9-4894-aae7-e60a61665628
+ms.topic: concept-article
 ---
 # Implementing a Window
 
