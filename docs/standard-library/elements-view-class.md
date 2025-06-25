@@ -95,7 +95,7 @@ The best way to create an `elements_view` is by using the [`elements`](range-ada
 1\) Create an `elements_view` from the specified view.\
 2\) Default construct an `elements_view`.
 
-### Example:  `elements_view`
+### Example: `elements_view`
 
 ```cpp
 // requires /std:c++20 or later

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: How to: Use Exception Handling to Break from a Parallel Loop"
 title: "How to: Use Exception Handling to Break from a Parallel Loop"
-ms.date: "11/04/2016"
+description: "Learn more about: How to: Use Exception Handling to Break from a Parallel Loop"
+ms.date: 11/04/2016
 helpviewer_keywords: ["search algorithm, writing [Concurrency Runtime]", "writing a search algorithm [Concurrency Runtime]"]
-ms.assetid: 16d7278c-2d10-4014-9f58-f1899e719ff9
 ---
 # How to: Use Exception Handling to Break from a Parallel Loop
 
@@ -23,7 +22,7 @@ The following example shows the `for_all` method. It uses the [concurrency::para
 
 [!code-cpp[concrt-task-tree-search#1](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_2.cpp)]
 
-## Example:  Search the tree for a value
+## Example: Search the tree for a value
 
 The following example shows the `search_for_value` function, which searches for a value in the provided `tree` object. This function passes to the `for_all` method a work function that throws when it finds a tree node that contains the provided value.
 

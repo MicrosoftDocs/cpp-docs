@@ -96,7 +96,7 @@ The best way to create an `keys_view` is by using the [`keys`](range-adaptors.md
 1\) Create a `keys_view` from the specified view.\
 2\) The default constructor creates an empty `keys_view`.
 
-### Example:  `keys_view`
+### Example: `keys_view`
 
 ```cpp
 // requires /std:c++20 or later
