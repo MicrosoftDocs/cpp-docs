@@ -8,7 +8,7 @@ ms.assetid: 2ceb8a99-30b2-4b80-bf42-e9f3305b3c52
 ---
 # Fatal Error C1018
 
-unexpected #elif
+> unexpected #elif
 
 The `#elif` directive appears outside an `#if`, `#ifdef`, or `#ifndef` construct. Use `#elif` only within one of these constructs.
 

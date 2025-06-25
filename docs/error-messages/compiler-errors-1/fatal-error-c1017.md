@@ -8,7 +8,7 @@ ms.assetid: 5542e604-599d-4e36-8f83-1d454c5753c9
 ---
 # Fatal Error C1017
 
-invalid integer constant expression
+> invalid integer constant expression
 
 The expression in an `#if` directive did not exist or did not evaluate to a constant.
 

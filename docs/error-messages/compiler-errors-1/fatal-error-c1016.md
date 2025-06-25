@@ -8,7 +8,7 @@ ms.assetid: 33f45c3e-2d8f-43ad-a445-c412d1d54ce1
 ---
 # Fatal Error C1016
 
-\#ifdef expected an identifier#ifndef expected an identifier
+> #ifdef expected an identifier#ifndef expected an identifier
 
 The conditional compilation directive ([#ifdef](../../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md) or `#ifndef`) has no identifier to evaluate. To resolve the error, specify an identifier.
 

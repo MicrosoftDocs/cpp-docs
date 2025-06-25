@@ -8,7 +8,7 @@ ms.assetid: 150daf8e-a38a-4669-9c1a-a05b5a1f65ef
 ---
 # Fatal Error C1005
 
-string too big for buffer
+> string too big for buffer
 
 A string in a compiler intermediate file overflowed a buffer.
 

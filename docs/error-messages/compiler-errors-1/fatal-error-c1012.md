@@ -7,7 +7,7 @@ helpviewer_keywords: ["C1012"]
 ---
 # Fatal Error C1012
 
-unmatched parenthesis: missing 'character'
+> unmatched parenthesis: missing 'character'
 
 The parentheses in a preprocessor directive do not match.
 

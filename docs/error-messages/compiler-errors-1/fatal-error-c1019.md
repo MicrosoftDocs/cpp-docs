@@ -8,7 +8,7 @@ ms.assetid: c4f8968b-bc62-4200-b3ca-69d06c163236
 ---
 # Fatal Error C1019
 
-unexpected #else
+> unexpected #else
 
 The `#else` directive appears outside an `#if`, `#ifdef`, or `#ifndef` construct. Use `#else` only within one of these constructs.
 
