@@ -312,9 +312,9 @@ MSVC supports other predefined macros:
 
 - `_WCHAR_T_DEFINED` Defined as 1 when the default [`/Zc:wchar_t`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option is set. The `_WCHAR_T_DEFINED` macro is defined but has no value if the **`/Zc:wchar_t-`** compiler option is set, and **`wchar_t`** is defined in a system header file included in your project. Otherwise, undefined.
 
-- `_WIN32` Defined as 1 when the compilation target is 32-bit ARM, 64-bit ARM, x86, or x64. Otherwise, undefined.
+- `_WIN32` Defined as 1 when the compilation target is 32-bit ARM, 64-bit ARM, x86, x64 or ARM64EC. Otherwise, undefined.
 
-- `_WIN64` Defined as 1 when the compilation target is 64-bit ARM or x64. Otherwise, undefined.
+- `_WIN64` Defined as 1 when the compilation target is 64-bit ARM, x64 or ARM64EC. Otherwise, undefined.
 
 - `_WINRT_DLL` Defined as 1 when compiled as C++ and both [**`/ZW`** (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md) and [**`/LD`** or **`/LDd`**](../build/reference/md-mt-ld-use-run-time-library.md) compiler options are set. Otherwise, undefined.
 
