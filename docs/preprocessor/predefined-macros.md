@@ -314,7 +314,7 @@ MSVC supports other predefined macros:
 
 - `_WIN32` Defined as 1 when the compilation target is 32-bit ARM, 64-bit ARM, x86, x64, or ARM64EC. Otherwise, undefined.
 
-- `_WIN64` Defined as 1 when the compilation target is 64-bit ARM, x64 or ARM64EC. Otherwise, undefined.
+- `_WIN64` Defined as 1 when the compilation target is 64-bit ARM, x64, or ARM64EC. Otherwise, undefined.
 
 - `_WINRT_DLL` Defined as 1 when compiled as C++ and both [**`/ZW`** (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md) and [**`/LD`** or **`/LDd`**](../build/reference/md-mt-ld-use-run-time-library.md) compiler options are set. Otherwise, undefined.
 
