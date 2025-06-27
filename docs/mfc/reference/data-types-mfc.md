@@ -14,9 +14,9 @@ For information about the data types used in both the Windows SDK and MFC, see [
 
 Data types unique to the Microsoft Foundation Class Library include the following:
 
-- POSITION A value used to denote the position of an element in a collection; used by MFC collection classes.
+- `POSITION` A value used to denote the position of an element in a collection; used by MFC collection classes.
 
-- LPCRECT A 32-bit pointer to a constant (nonmodifiable) `RECT` structure.
+- `LPCRECT` A 32-bit pointer to a constant (nonmodifiable) `RECT` structure.
 
 ## See also
 
