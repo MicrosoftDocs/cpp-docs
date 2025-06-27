@@ -20,5 +20,5 @@ Data types unique to the Microsoft Foundation Class Library include the followin
 
 ## See also
 
-[Class Overview](../../mfc/class-library-overview.md)<br/>
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+[Class Overview](../class-library-overview.md)\
+[Macros and Globals](mfc-macros-and-globals.md)
