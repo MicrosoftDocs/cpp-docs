@@ -15,7 +15,7 @@ For information about the data types used in both the Windows SDK and MFC, see [
 Data types unique to MFC include the following:
 
 - `POSITION` - A value used to denote the position of an element in a collection; used by MFC collection classes.
-- `LPCRECT` - A 32-bit pointer to a constant (nonmodifiable) `RECT` structure.
+- `LPCRECT` - A 32-bit pointer to a constant (nonmodifiable) [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure.
 
 ## See also
 
