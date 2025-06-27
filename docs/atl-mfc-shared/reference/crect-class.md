@@ -745,7 +745,9 @@ rect.OffsetRect(230, 230);
 ASSERT(rect == CRect(230, 230, 265, 265));
 ```
 
-## <a name="operator_lpcrect"></a> `CRect::operator LPCRECT` Converts a `CRect` to an [`LPCRECT`](../../mfc/reference/data-types-mfc.md).
+## <a name="operator_lpcrect"></a> `CRect::operator LPCRECT`
+
+Converts a `CRect` to an [`LPCRECT`](../../mfc/reference/data-types-mfc.md).
 
 ```cpp
 operator LPCRECT() const throw();
