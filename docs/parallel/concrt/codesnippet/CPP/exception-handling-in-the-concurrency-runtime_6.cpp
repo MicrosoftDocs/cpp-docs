@@ -18,7 +18,7 @@ int wmain()
    {
       parallel_for(-5, 20, [min,max](int i)
       {
-         // Throw an exeception if the input value is less than the 
+         // Throw an exception if the input value is less than the 
          // minimum or greater than the maximum.
 
          // Otherwise, print the value to the console.
