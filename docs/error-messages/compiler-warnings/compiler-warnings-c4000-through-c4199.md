@@ -138,7 +138,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1) C4166](compiler-warning-level-1-c4166.md)|illegal calling convention for constructor/destructor|
 |[Compiler warning (level 1) C4167](compiler-warning-level-1-c4167.md)|'*function*': only available as an intrinsic function|
 |[Compiler warning (level 1) C4168](compiler-warning-level-1-c4168.md)|compiler limit: out of debugger types, delete program database '*database*' and rebuild|
-|[Compiler warning (level 1) C4172](compiler-warning-level-1-c4172.md)|returning address of local variable or temporary *optional_context*|
+|[Compiler warning (level 1) C4172](compiler-warning-level-1-c4172.md)|returning address of local variable or temporary : *optional_context*|
 |[Compiler warning (level 1) C4174](compiler-warning-level-1-c4174.md)|'*name*': not available as a `#pragma component`|
 |[Compiler warning (level 1) C4175](compiler-warning-level-1-c4175.md)|`#pragma component(browser, on)`: browser info must initially be specified on the command line|
 |[Compiler warning (level 1) C4176](compiler-warning-level-1-c4176.md)|'*subcomponent*': unknown subcomponent for `#pragma component` browser|
