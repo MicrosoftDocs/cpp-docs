@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2556"
 title: "Compiler Error C2556"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2556"
+ms.date: 06/29/2025
 f1_keywords: ["C2556"]
 helpviewer_keywords: ["C2556"]
-ms.assetid: fc4399ad-45b3-49fd-be1f-0b13956a595a
 ---
 # Compiler Error C2556
 
