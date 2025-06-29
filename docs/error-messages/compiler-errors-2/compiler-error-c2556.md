@@ -21,9 +21,7 @@ The following example generates C2556:
 ```cpp
 // C2556.cpp
 // compile with: /c
-class C {
-   int func();
-   double func();   // C2556
-   int func(int i);   // ok parameter lists differ
-};
+int func();
+double func();     // C2556
+int func(int i);   // OK parameter lists differ
 ```
