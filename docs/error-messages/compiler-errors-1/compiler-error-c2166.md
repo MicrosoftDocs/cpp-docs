@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2166"
 title: "Compiler Error C2166"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2166"
+ms.date: 06/29/2025
 f1_keywords: ["C2166"]
 helpviewer_keywords: ["C2166"]
-ms.assetid: 12789c3a-cc76-48bb-ae2e-64283e0964ed
 ---
 # Compiler Error C2166
 
