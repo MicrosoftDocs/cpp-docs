@@ -8,7 +8,7 @@ ms.assetid: 12789c3a-cc76-48bb-ae2e-64283e0964ed
 ---
 # Compiler Error C2166
 
-l-value specifies const object
+> l-value specifies const object
 
 Code attempts to modify an item declared **`const`**.
 
