@@ -46,7 +46,7 @@ A complex number of type **`long double`**.
 
 The explicit specialization of the class template `complex` to a complex class of type **`long double`** differs from the class template only in the constructors it defines. The conversion from **`long double`** to **`float`** is allowed to be implicit, but the conversion from **`double`** to **`long double`** is required to be **`explicit`**. The use of **`explicit`** rules out the initiation with type conversion using assignment syntax.
 
-For more information on the class template `complex` and its members, see [complex Class](../standard-library/complex-class.md).
+For more information on the class template `complex` and its members, see [`complex` Class](complex-class.md).
 
 **Microsoft-specific**: The **`long double`** and **`double`** types have the same representation, but are distinct types. For more information, see [Built-in types](../cpp/fundamental-types-cpp.md).
 
