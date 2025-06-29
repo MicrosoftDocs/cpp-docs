@@ -10,9 +10,13 @@ ms.assetid: 12789c3a-cc76-48bb-ae2e-64283e0964ed
 
 > l-value specifies const object
 
+## Remarks
+
 Code attempts to modify an item declared **`const`**.
 
-The following sample generates C2166:
+## Example
+
+The following example generates C2166:
 
 ```cpp
 // C2166.cpp
