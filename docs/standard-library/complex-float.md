@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: complex<float>"
 title: "complex<float>"
-ms.date: "11/04/2016"
+description: "Learn more about: complex<float>"
+ms.date: 11/04/2016
 f1_keywords: ["complex/std::complex<float>"]
 helpviewer_keywords: ["complex<float> function"]
-ms.assetid: 1178eb1e-39bd-4017-89cd-aea95f813939
 ---
 # `complex<float>`
 
@@ -34,13 +33,13 @@ constexpr complex(
 
 ### Parameters
 
-*_RealVal*\
+*`_RealVal`*\
 The value of type **`float`** for the real part of the complex number being constructed.
 
-*_ImagVal*\
+*`_ImagVal`*\
 The value of type **`float`** for the imaginary part of the complex number being constructed.
 
-*complexNum*\
+*`complexNum`*\
 The complex number of type **`double`** or of type **`long double`** whose real and imaginary parts are used to initialize a complex number of type **`float`** being constructed.
 
 ## Return Value
@@ -51,7 +50,7 @@ A complex number of type **`float`**.
 
 The explicit specialization of the class template complex to a complex class of type **`float`** differs from the class template only in the constructors it defines. The conversion from **`float`** to **`double`** is allowed to be implicit, but the less safe conversion from **`float`** to **`long double`** is required to be **`explicit`**. The use of **`explicit`** rules out the initiation with type conversion using assignment syntax.
 
-For more information on the class template `complex`, see [complex Class](../standard-library/complex-class.md). For a list of members of the class template `complex`, see .
+For more information on the class template `complex` and its members, see [`complex` Class](complex-class.md).
 
 ## Example
 
@@ -111,11 +110,11 @@ arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## Requirements
 
-**Header**: \<complex>
+**Header**: `<complex>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[complex Class](../standard-library/complex-class.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`complex` Class](complex-class.md)\
+[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)
