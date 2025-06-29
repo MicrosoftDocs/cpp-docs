@@ -20,8 +20,8 @@ The following example generates C2166:
 
 ```cpp
 // C2166.cpp
-int f();
-int main() {
-   ( (const int&) 1 ) = 5;   // C2166
+int main()
+{
+    ((const int&)1) = 5;   // C2166
 }
 ```
