@@ -29,13 +29,13 @@ complex(
 
 ### Parameters
 
-*_RealVal*\
+*`_RealVal`*\
 The value of type **`long double`** for the real part of the complex number being constructed.
 
-*_ImagVal*\
+*`_ImagVal`*\
 The value of type **`long double`** for the imaginary part of the complex number being constructed.
 
-*complexNum*\
+*`complexNum`*\
 The complex number of type **`double`** or of type **`float`** whose real and imaginary parts are used to initialize a complex number of type **`long double`** being constructed.
 
 ## Return Value
@@ -108,11 +108,11 @@ arg( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## Requirements
 
-**Header**: \<complex>
+**Header**: `<complex>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[complex Class](../standard-library/complex-class.md)\
+[`complex` Class](../standard-library/complex-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

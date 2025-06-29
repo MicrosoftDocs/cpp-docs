@@ -29,13 +29,13 @@ constexpr explicit complex(const complex<long double>& complexNum);
 
 ### Parameters
 
-*RealVal*\
+*`RealVal`*\
 The value of type **`double`** for the real part of the complex number being constructed.
 
-*ImagVal*\
+*`ImagVal`*\
 The value of type **`double`** for the imaginary part of the complex number being constructed.
 
-*complexNum*\
+*`complexNum`*\
 The complex number of type **`float`** or of type **`long double`** whose real and imaginary parts are used to initialize a complex number of type **`double`** being constructed.
 
 ## Return Value
@@ -105,11 +105,11 @@ arg ( c3 ) = 0.896055 radians, which is 51.3402 degrees.
 
 ## Requirements
 
-**Header**: \<complex>
+**Header**: `<complex>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[complex Class](../standard-library/complex-class.md)\
+[`complex` Class](../standard-library/complex-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
