@@ -111,5 +111,5 @@ arg ( c3 ) = 0.896055 radians, which is 51.3402 degrees.
 
 ## See also
 
-[`complex` Class](../standard-library/complex-class.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`complex` Class](complex-class.md)\
+[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)
