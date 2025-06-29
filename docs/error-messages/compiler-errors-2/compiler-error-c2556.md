@@ -10,9 +10,13 @@ ms.assetid: fc4399ad-45b3-49fd-be1f-0b13956a595a
 
 > '*function1*': overloaded function differs only by return type from '*function2*'
 
+## Remarks
+
 The overloaded functions have different return types but the same parameter list. Each overloaded function must have a distinct formal parameter list.
 
-The following sample generates C2556:
+## Example
+
+The following example generates C2556:
 
 ```cpp
 // C2556.cpp
