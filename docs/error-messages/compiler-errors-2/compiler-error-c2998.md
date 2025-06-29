@@ -8,7 +8,7 @@ ms.assetid: 8193d491-b5d9-4477-acb1-cf166889c070
 ---
 # Compiler Error C2998
 
-'identifier' : cannot be a template definition
+> '*identifier*': cannot be a template definition
 
 The compiler could not process the syntax used in the template definition.
 
