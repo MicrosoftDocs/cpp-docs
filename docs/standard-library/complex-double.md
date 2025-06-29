@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: complex<double>"
 title: "complex<double>"
-ms.date: "11/04/2016"
+description: "Learn more about: complex<double>"
+ms.date: 11/04/2016
 f1_keywords: ["complex/std::complex<double>"]
 helpviewer_keywords: ["complex<double> function"]
-ms.assetid: 0d0b9d2a-9b9b-410b-82a0-86b6df127e47
 ---
 # `complex<double>`
 
