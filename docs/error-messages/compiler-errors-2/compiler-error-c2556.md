@@ -8,7 +8,7 @@ ms.assetid: fc4399ad-45b3-49fd-be1f-0b13956a595a
 ---
 # Compiler Error C2556
 
-'identifier' : overloaded functions only differ by return type
+> '*function1*': overloaded function differs only by return type from '*function2*'
 
 The overloaded functions have different return types but the same parameter list. Each overloaded function must have a distinct formal parameter list.
 
