@@ -137,9 +137,6 @@ extern "C" const char* __asan_default_options() {
 // ... your code below, such as your `main` function
 ```
 
-> [!NOTE]
->  The `ASAN_OPTIONS` environment variable is recommended method for selecting runtime options because it makes the configuration available to the process from the beginning, which helps with correctness. Meanwhile, the user function can only be parsed after the ASan runtime has already been initialized, which means it's options are applied retroactively.
-
 ### Unsupported AddressSanitizer options
 
 - detect_container_overflow
