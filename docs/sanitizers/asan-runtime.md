@@ -98,7 +98,47 @@ For an illustration of the alignment requirement and potential issues, see the p
 
 ## Run-time options
 
-Microsoft C/C++ (MSVC) uses a runtime based on the [Clang AddressSanitizer runtime from the llvm-project repository](https://github.com/llvm/llvm-project). Because of this, most runtime options are shared between the two versions. [A complete list of the public Clang runtime options is available here](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags). We document some differences in the sections that follow. If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
+The MSVC AddressSanitizer is based on the [Clang AddressSanitizer runtime from the llvm-project repository](https://github.com/llvm/llvm-project). Because of this, most of clang's ASan runtime options available in MSVC as well. [A complete list of the public Clang runtime options is available here](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags). We document some differences in the sections that follow. If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
+
+### Configuring runtime options
+
+ASan runtime options can be set in one of two ways: through the `ASAN_OPTIONS` environment variable, or the `__asan_default_options` user function. If the environment variable and the user function select conflicting options, the selection in the `ASAN_OPTIONS` environment variable takes precedence.
+
+For example, to select the [`alloc_dealloc_mismatch`](./error-alloc-dealloc-mismatch.md) flag, you may use:
+
+```cmd
+set ASAN_OPTIONS=alloc_dealloc_mismatch=1
+```
+
+or alternatively use the user-function
+
+```C++
+extern "C" const char* __asan_default_options() {
+  return "alloc_dealloc_mismatch=1";
+}
+
+// ... your code below, such as your `main` function
+```
+
+Multiple options can be specified by separating them with a colon (i.e `:`). For example, to additionally set `symbolize=0`, one may use:
+
+
+```cmd
+set ASAN_OPTIONS=alloc_dealloc_mismatch=1:symbolize=0
+```
+
+or alternatively, through the the user-function
+
+```C++
+extern "C" const char* __asan_default_options() {
+  return "alloc_dealloc_mismatch=1:symbolize=0;
+}
+
+// ... your code below, such as your `main` function
+```
+
+> [!NOTE]
+>  The `ASAN_OPTIONS` environment variable is recommended method for selecting runtime options because it makes the configuration available to the process from the beginning, which helps with correctness. Meanwhile, the user function can only be parsed after the ASan runtime has already been initialized, which means it's options are applied retroactively.
 
 ### Unsupported AddressSanitizer options
 
