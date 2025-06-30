@@ -127,7 +127,7 @@ Multiple options can be specified by separating them with a colon (`:`). For exa
 set ASAN_OPTIONS=alloc_dealloc_mismatch=1:symbolize=0
 ```
 
-or alternatively, through `__asan_defalt_options()`:
+Or alternatively, through `__asan_defalt_options()`:
 
 ```C++
 extern "C" const char* __asan_default_options() {
