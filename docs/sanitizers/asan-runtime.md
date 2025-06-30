@@ -96,7 +96,7 @@ Any manual poisoning of shadow bytes must consider the alignment requirements. T
 
 For an illustration of the alignment requirement and potential issues, see the provided [ASan alignment examples](https://github.com/mcgov/asan_alignment_example). One is a small program to show what can go wrong with manual shadow memory poisoning. The second is an example implementation of manual poisoning using the `std::allocator` interface.
 
-## Run-time options
+## Runtime options
 
 The MSVC AddressSanitizer is based on the [Clang AddressSanitizer runtime from the llvm-project repository](https://github.com/llvm/llvm-project). Because of this, most of clang's ASan runtime options available in MSVC as well. [A complete list of the public Clang runtime options is available here](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags). We document some differences in the sections that follow. If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
 
