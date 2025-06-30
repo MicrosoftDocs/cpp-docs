@@ -110,7 +110,7 @@ For example, to select the [`alloc_dealloc_mismatch`](./error-alloc-dealloc-mism
 set ASAN_OPTIONS=alloc_dealloc_mismatch=1
 ```
 
-Or alternatively use the user-function
+Alternatively by implementing `__asan_defalt_options()` in your code:
 
 ```C++
 extern "C" const char* __asan_default_options() {
@@ -127,7 +127,7 @@ Multiple options can be specified by separating them with a colon (`:`). For exa
 set ASAN_OPTIONS=alloc_dealloc_mismatch=1:symbolize=0
 ```
 
-or alternatively, through the the user-function
+or alternatively, through `__asan_defalt_options()`:
 
 ```C++
 extern "C" const char* __asan_default_options() {
