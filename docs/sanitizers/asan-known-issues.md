@@ -23,7 +23,7 @@ The following options and functionality are incompatible with [`/fsanitize=addre
 - [C++ AMP](../parallel/amp/cpp-amp-overview.md) is unsupported, and should be disabled.
 - [Universal Windows Platform](../cppcx/universal-windows-apps-cpp.md) (UWP) applications are unsupported.
 - [Special case list](https://clang.llvm.org/docs/SanitizerSpecialCaseList.html) files are unsupported.
-- [Precompiled headers build without `/fsanitize`address`](../build/creating-precompiled-header-files.md#consistency-rules-for-yc-and-yu) are unsupported.
+- [Precompiled headers built without `/fsanitize`address`](../build/creating-precompiled-header-files.md#consistency-rules-for-yc-and-yu) are unsupported.
 
 ## Standard library support
 
