@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Fix your dependencies on C++ library internals"
 title: "Fix your dependencies on C++ library internals"
-ms.date: "05/24/2017"
+description: "Learn more about: Fix your dependencies on C++ library internals"
+ms.date: 05/24/2017
 helpviewer_keywords: ["library internals in an upgraded Visual Studio C++ project", "_Hash_seq in an upgraded Visual Studio C++ project"]
-ms.assetid: 493e0452-6ecb-4edc-ae20-b6fce2d7d3c5
 ---
 # Fix your dependencies on C++ library internals
 
