@@ -28,7 +28,7 @@ The following options and functionality are incompatible with [`/fsanitize=addre
 
 The MSVC standard library (STL) makes partial use of the AddressSanitizer and provides other code safety checks. For more information, see [container-overflow error](./error-container-overflow.md).
 
-When annotations are disabled, or in versions of the Standard Library that don't support them, AddressSanitizer exceptions raised in STL code still identify real bugs. However, they are more precise if annotations are enabled and you use a version of the Standard Library that supports them.
+When annotations are disabled, or in versions of the Standard Library that don't support them, AddressSanitizer exceptions raised in STL code still identify real bugs. However, they're more precise if annotations are enabled and you use a version of the Standard Library that supports them.
 
 This example demonstrates the lack of precision and the benefits of enabling annotations:
 
@@ -63,7 +63,7 @@ AddressSanitizer (ASAN) uses a custom version of `operator new` and `operator de
 
 ## Memory usage
 
-The AddressSanitizer runtime doesn't release memory back to the OS during execution. From the OS's point of view, it may look like there's a memory leak. This is intentional so that the memory isn't all allocated up front.
+The AddressSanitizer runtime doesn't release memory back to the OS during execution so that the memory isn't all allocated up front. From the OS's point of view, it may look like there's a memory leak.
 
 ## AddressSanitizer runtime DLL locations
 
@@ -71,7 +71,7 @@ The *`clang_rt.asan*.dll`* runtime files are installed next to the compilers in 
 
 ## Custom property sheet support
 
-The Visual Studio Property Manager window allows you to add custom *`.props`* files to your projects. Even though the **Enable Address Sanitizer** property (`<EnableASAN>`) is shown, the build doesn't honor it. That's because the custom *`.props`* files are included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
+The Visual Studio Property Manager window allows you to add custom *`.props`* files to your projects. Even though the **Enable Address Sanitizer** property (`<EnableASAN>`) is shown, the build doesn't honor it. The build doesn't honor it because the custom *`.props`* files are included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
 
 As a workaround, create a *`Directory.Build.props`* file in the root of your project to define the `<EnableASAN>` property. For more information, see [Customize C++ builds](/visualstudio/msbuild/customize-your-build#customize-c-builds).
 
@@ -83,13 +83,13 @@ Thread local variables (global variables declared with `__declspec(thread)` or `
 
 Using custom code or assembly language to leave the current stack frame without honoring the usual return mechanisms isn't supported. For example, leaving the current stack frame via a long jump may generate false positives. 
 
-Instead, before invoking custom long jump-like code, call [`__asan_handle_no_return()`](https://github.com/llvm/llvm-project/blob/ba84d0c8d762f093c6ef6d5ef5a446a42a8548a5/compiler-rt/include/sanitizer/asan_interface.h#L325-L330) . This function clears all of the shadow bytes associated with the current thread's stack. This results in losing some coverage and introduces a risk of false negatives, but your program can then safely unwind the stack without running into false positives due to stale stack shadow bytes.
+Instead, before invoking custom long jump-like code, call [`__asan_handle_no_return()`](https://github.com/llvm/llvm-project/blob/ba84d0c8d762f093c6ef6d5ef5a446a42a8548a5/compiler-rt/include/sanitizer/asan_interface.h#L325-L330) . This function clears all of the shadow bytes associated with the current thread's stack, which results in some lost coverage and introduces the risk of false negatives. But your program can then safely unwind the stack without running into false positives due to stale stack shadow bytes.
 
 ## Issues with partially sanitized executables
 
-If all of the code in a process isn't compiled with `/fsanitize=address`, ASan may not be able to diagnose all memory safety errors. The most common example is when a DLL is compiled with ASan but is loaded into a process that contains code that wasn't compiled with ASan. In this case, ASan attempts to categorize allocations that took place prior to ASan initialization. Once those allocations are reallocated, ASan tries to own and monitor the lifetime of the memory.
+If all of the code in a process isn't compiled with `/fsanitize=address`, ASan may not be able to diagnose all memory safety errors. The most common example is when a DLL compiled with ASan is loaded into a process that contains code not compiled with ASan. In this case, ASan attempts to categorize allocations that took place before ASan initialization. Once those allocations are reallocated, ASan tries to own and monitor the lifetime of the memory.
 
-If all of the DLLs that were compiled with ASan are unloaded from the process before the process ends, there may be crashes due to dangling references to intercepted functions such as `memcmp`, `memcpy`, `memmove`, and so on. For the best results, compile all modules under test with `/fsanitize=address`, or do not unload modules compiled with ASan after they enter the process.
+If all of the DLLs compiled with ASan are unloaded from the process before the process ends, there may be crashes due to dangling references to intercepted functions such as `memcmp`, `memcpy`, `memmove`, and so on. For the best results, compile all modules under test with `/fsanitize=address`, or don't unload modules compiled with ASan after they enter the process.
 
 Please report any bugs to our [Developer Community](https://aka.ms/feedback/report?space=62).
 
