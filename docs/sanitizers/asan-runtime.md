@@ -110,7 +110,7 @@ If the environment variable and the user function specify conflicting options, t
 
 Multiple options are specified by separating them with a colon (`:`). 
 
-The following example sets [`alloc_dealloc_mismatch`](./error-alloc-dealloc-mismatch.md) and `symbolize`:
+The following example sets [`alloc_dealloc_mismatch`](./error-alloc-dealloc-mismatch.md) to one and `symbolize` to zero:
 
 ```cmd
 set ASAN_OPTIONS=alloc_dealloc_mismatch=1:symbolize=0
@@ -121,7 +121,7 @@ Or add the following function to your code:
 ```C++
 extern "C" const char* __asan_default_options()
 {
-  return "alloc_dealloc_mismatch=1:symbolize=0;
+  return "alloc_dealloc_mismatch=1:symbolize=0";
 }
 ```
 
