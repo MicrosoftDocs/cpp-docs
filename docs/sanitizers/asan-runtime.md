@@ -102,7 +102,7 @@ The MSVC AddressSanitizer is based on the [Clang AddressSanitizer runtime from t
 
 ### Configure runtime options
 
-ASan runtime options are set in one of two ways: through the `ASAN_OPTIONS` environment variable, or the `__asan_default_options` user function. If the environment variable and the user function select conflicting options, the selection in the `ASAN_OPTIONS` environment variable takes precedence.
+ASan runtime options are set in one of two ways: through the `ASAN_OPTIONS` environment variable, or the `__asan_default_options` user function. If the environment variable and the user function select conflicting options, the `ASAN_OPTIONS` environment variable takes precedence.
 
 For example, to select the [`alloc_dealloc_mismatch`](./error-alloc-dealloc-mismatch.md) flag, you may use:
 
