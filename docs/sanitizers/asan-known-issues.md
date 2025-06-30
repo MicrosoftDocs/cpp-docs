@@ -79,6 +79,12 @@ As a workaround, create a *`Directory.Build.props`* file in the root of your pro
 
 Thread local variables (global variables declared with `__declspec(thread)` or `thread_local`) aren't protected by AddressSanitizer. This limitation isn't specific to Windows or Microsoft Visual C++, but is a general limitation.
 
+## Custom code skipping normal function return sequences
+
+Using custom code / assembly to leave the current stack frame without the usual return mechanisms, such as a long jump or equivalent, is not supported and risks inducing false positives. 
+
+A mitigation for this is to invoke [`__asan_handle_no_return()`](https://github.com/llvm/llvm-project/blob/ba84d0c8d762f093c6ef6d5ef5a446a42a8548a5/compiler-rt/include/sanitizer/asan_interface.h#L325-L330) prior to invoking your custom long jump-like procedure. This function clears all shadow bytes associated with the current thread's stack, which mrsnd losing some coverage (i.e risk false negatives) but will allow your program to safely unwind the stack without running into false positives from stale stack shadow bytes.
+
 ## Issues with partially sanitized executables
 
 If all of the code in a process isn't compiled with `/fsanitize=address`, ASan may not be able to diagnose all memory safety errors. The most common example is when a DLL is compiled with ASan but is loaded into a process that contains code that wasn't compiled with ASan. In this case, ASan attempts to categorize allocations that took place prior to ASan initialization. Once those allocations are reallocated, ASan tries to own and monitor the lifetime of the memory.
