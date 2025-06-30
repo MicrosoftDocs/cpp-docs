@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: CVTRES errors and warnings (CVTxxxx)"
 title: "CVTRES errors and warnings"
-ms.date: "04/16/2019"
+description: "Learn more about: CVTRES errors and warnings (CVTxxxx)"
+ms.date: 04/16/2019
 f1_keywords: ["CVT1101", "CVT1102", "CVT1104", "CVT1106", "CVT1107", "CVT1108", "CVT1109", "CVT1110"]
-ms.assetid: ac94d0fb-0da3-4327-b3d9-ceaeb3fc2e4d
 ---
 # CVTRES errors and warnings (CVTxxxx)
 
