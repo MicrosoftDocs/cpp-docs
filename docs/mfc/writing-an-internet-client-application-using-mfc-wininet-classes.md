@@ -4,6 +4,7 @@ title: "Writing an Internet Client Application Using MFC WinInet Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet client applications [MFC]", "WinInet classes [MFC], programming", "Internet client applications [MFC], writing", "Internet applications [MFC], WinInet", "Internet applications [MFC], client applications", "MFC, Internet applications"]
 ms.assetid: a2c4a40c-a94e-4b3e-9dbf-f8a8dc8e5428
+ms.topic: concept-article
 ---
 # Writing an Internet Client Application Using MFC WinInet Classes
 

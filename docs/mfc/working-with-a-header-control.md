@@ -4,6 +4,7 @@ title: "Working with a Header Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], working with", "header controls"]
 ms.assetid: af3afb5c-bf97-451b-8fee-3adcb8257210
+ms.topic: concept-article
 ---
 # Working with a Header Control
 

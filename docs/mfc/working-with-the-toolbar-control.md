@@ -4,6 +4,7 @@ title: "Working with the Toolbar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["GetToolBarCtrl method [MFC]", "toolbars [MFC], accessing common control", "CToolBarCtrl class [MFC], accessing toolbar", "toolbar controls [MFC], accessing"]
 ms.assetid: b19409d5-3831-42c7-80ae-195c49dc9085
+ms.topic: how-to
 ---
 # Working with the Toolbar Control
 

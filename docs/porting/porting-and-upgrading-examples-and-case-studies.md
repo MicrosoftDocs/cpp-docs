@@ -3,6 +3,7 @@ description: "Learn more about: Porting and Upgrading: Examples and Case Studies
 title: "Porting and Upgrading: Examples and Case Studies"
 ms.date: "11/04/2016"
 ms.assetid: d48bbff9-1ea7-467f-8c8b-758601f01573
+ms.topic: concept-article
 ---
 # Porting and Upgrading: Examples and Case Studies
 
