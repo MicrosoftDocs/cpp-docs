@@ -120,7 +120,7 @@ extern "C" const char* __asan_default_options() {
 // ... your code below, such as your `main` function
 ```
 
-Multiple options can be specified by separating them with a colon (i.e `:`). For example, to additionally set `symbolize=0`, one may use:
+Multiple options can be specified by separating them with a colon (`:`). For example, to additionally set `symbolize=0`, one may use:
 
 
 ```cmd
