@@ -102,39 +102,27 @@ The MSVC AddressSanitizer is based on the [Clang AddressSanitizer runtime from t
 
 ### Configure runtime options
 
-ASan runtime options are set in one of two ways: through the `ASAN_OPTIONS` environment variable, or the `__asan_default_options` user function. If the environment variable and the user function select conflicting options, the `ASAN_OPTIONS` environment variable takes precedence.
+ASan runtime options are set in one of two ways:
+- The `ASAN_OPTIONS` environment variable
+- The `__asan_default_options` user function
 
-For example, to select the [`alloc_dealloc_mismatch`](./error-alloc-dealloc-mismatch.md) flag, you may use:
+If the environment variable and the user function specify conflicting options, the options in the `ASAN_OPTIONS` environment variable take precedence.
 
-```cmd
-set ASAN_OPTIONS=alloc_dealloc_mismatch=1
-```
+Multiple options are specified by separating them with a colon (`:`). 
 
-Alternatively by implementing `__asan_defalt_options()` in your code:
-
-```C++
-extern "C" const char* __asan_default_options() {
-  return "alloc_dealloc_mismatch=1";
-}
-
-// ... your code below, such as your `main` function
-```
-
-Multiple options can be specified by separating them with a colon (`:`). For example, to additionally set `symbolize=0`:
-
+The following example sets [`alloc_dealloc_mismatch`](./error-alloc-dealloc-mismatch.md) and `symbolize`:
 
 ```cmd
 set ASAN_OPTIONS=alloc_dealloc_mismatch=1:symbolize=0
 ```
 
-Or alternatively, through `__asan_defalt_options()`:
+Or add the following function to your code:
 
 ```C++
-extern "C" const char* __asan_default_options() {
+extern "C" const char* __asan_default_options()
+{
   return "alloc_dealloc_mismatch=1:symbolize=0;
 }
-
-// ... your code below, such as your `main` function
 ```
 
 ### Unsupported AddressSanitizer options
