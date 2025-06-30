@@ -20,7 +20,7 @@ The **`__cdecl`** calling convention
 
 The C decorated name (**`__stdcall`**) is `_MyFunc@20`. The C++ decorated name is implementation-specific.
 
-![Diagram showing the stack and registers for the S T D call and this call calling conventions.](../cpp/media/vc37i02.gif )<br/>
+![Diagram showing the stack and registers for the S T D call and this call calling conventions.](../cpp/media/vc37i02.gif)<br/>
 The __stdcall and thiscall calling conventions
 
 ## `__fastcall`
