@@ -4,6 +4,7 @@ title: "Thread Local Storage (TLS)"
 ms.date: "08/09/2019"
 helpviewer_keywords: ["multithreading [C++], Thread Local Storage", "TLS [C++]", "threading [C++], Thread Local Storage", "storing thread-specific data", "thread attribute", "Thread Local Storage [C++]"]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
+ms.topic: how-to
 ---
 # Thread Local Storage (TLS)
 

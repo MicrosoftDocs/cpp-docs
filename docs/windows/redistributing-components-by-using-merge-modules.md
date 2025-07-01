@@ -4,6 +4,7 @@ title: "Redistributing Components By Using Merge Modules"
 ms.date: 06/08/2022
 helpviewer_keywords: ["merge modules, using", "redistributing applications, using merge modules"]
 ms.assetid: 93b84211-bf9b-4a78-9f22-474ac2ef7840
+ms.topic: concept-article
 ---
 # Redistributing components by using merge modules
 

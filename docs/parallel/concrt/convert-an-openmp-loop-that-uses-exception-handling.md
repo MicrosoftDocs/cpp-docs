@@ -4,6 +4,7 @@ title: "How to: Convert an OpenMP Loop that Uses Exception Handling to Use the C
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exception handling, converting from OpenMP to the Concurrency Runtime", "converting from OpenMP to the Concurrency Runtime, exception handling"]
 ms.assetid: 03c28196-21ba-439e-8641-afab1c283e1a
+ms.topic: how-to
 ---
 # How to: Convert an OpenMP Loop that Uses Exception Handling to Use the Concurrency Runtime
 

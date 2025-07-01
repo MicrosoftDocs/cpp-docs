@@ -4,6 +4,7 @@ title: "Buffer Overflow"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["buffers [C++], character sizes", "buffer overflows [C++]", "MBCS [C++], buffer overflow"]
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
+ms.topic: how-to
 ---
 # Buffer Overflow
 

@@ -4,6 +4,7 @@ title: "Creating Asynchronous Operations in C++ for UWP Apps"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["Windows 8.x apps, creating C++ async operations", "Creating C++ async operations"]
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
+ms.topic: concept-article
 ---
 # Creating Asynchronous Operations in C++ for UWP Apps
 

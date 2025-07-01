@@ -4,6 +4,7 @@ title: "Overview of the Concurrency Runtime"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["Concurrency Runtime, requirements", "Concurrency Runtime, architecture", "Concurrency Runtime, overview", "Concurrency Runtime, lambda expressions"]
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
+ms.topic: concept-article
 ---
 # Overview of the Concurrency Runtime
 

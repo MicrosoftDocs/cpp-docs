@@ -2,6 +2,7 @@
 description: "Learn more about: Using Lambdas, Function Objects, and Restricted Functions"
 title: "Using Lambdas, Function Objects, and Restricted Functions"
 ms.date: "11/04/2016"
+ms.topic: concept-article
 ---
 # Using Lambdas, Function Objects, and Restricted Functions
 

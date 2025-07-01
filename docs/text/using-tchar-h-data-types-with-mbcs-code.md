@@ -4,6 +4,7 @@ title: "Using TCHAR.H Data Types with _MBCS Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["mapping generic-text", "generic-text data types [C++]", "generic-text mappings [C++]", "MBCS [C++], generic-text mappings", "TCHAR.H data types, mapping", "mappings [C++], TCHAR.H"]
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
+ms.topic: concept-article
 ---
 # Using TCHAR.H Data Types with _MBCS Code
 

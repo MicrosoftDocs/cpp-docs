@@ -4,6 +4,7 @@ title: "Multithreading with C and Win32"
 ms.date: "08/09/2019"
 helpviewer_keywords: ["Windows API [C++], multithreading", "multithreading [C++], C and Win32", "Visual C, multithreading", "Win32 applications [C++], multithreading", "threading [C++], C and Win32", "Win32 [C++], multithreading", "threading [C]"]
 ms.assetid: 67cdc99e-1ad9-452b-a042-ed246b70040e
+ms.topic: concept-article
 ---
 # Multithreading with C and Win32
 

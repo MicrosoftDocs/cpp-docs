@@ -4,6 +4,7 @@ title: "Using Tooltips in a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tool tips [MFC], using in status bars", "status bars [MFC], tool tips", "CStatusBarCtrl class [MFC], tool tips"]
 ms.assetid: a77597a7-43ef-4b8f-87bc-a8ea1dc63dc3
+ms.topic: how-to
 ---
 # Using Tooltips in a CStatusBarCtrl Object
 

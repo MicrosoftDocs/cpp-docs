@@ -9,6 +9,7 @@ helpviewer_keywords:
   ]
 author: MahmoudGSaleh
 ms.author: msaleh
+ms.topic: how-to
 ---
 
 # How to audit Visual C++ Runtime version usage

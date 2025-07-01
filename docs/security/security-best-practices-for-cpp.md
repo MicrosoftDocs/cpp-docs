@@ -4,6 +4,7 @@ description: "Learn more about: Security Best Practices for C++"
 ms.date: 05/08/2018
 f1_keywords: ["securitybestpracticesVC"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices"]
+ms.topic: best-practice
 ---
 # Security Best Practices for C++
 

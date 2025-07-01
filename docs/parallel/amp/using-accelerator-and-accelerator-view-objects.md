@@ -2,6 +2,7 @@
 title: "Using accelerator and accelerator_view Objects"
 description: "Learn more about: Using accelerator and accelerator_view Objects"
 ms.date: "11/04/2016"
+ms.topic: how-to
 ---
 # Using accelerator and accelerator_view Objects
 

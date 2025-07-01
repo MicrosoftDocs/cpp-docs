@@ -4,6 +4,7 @@ description: "Learn more about: String Editor (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.string.F1", "vc.editors.string"]
 helpviewer_keywords: ["String editor", "string tables", "string tables [C++], String editor", "string editing", "string editing, string tables", "resource editors [C++], String editor", "strings [C++], editing", "strings [C++], searching", "strings [C++]", "strings [C++], adding to string tables", "string tables [C++], deleting strings", "strings [C++], deleting in string tables", "string tables [C++], adding strings", "strings [C++], moving between files", "resource script files [C++], moving strings", "string editing, moving strings between resources", "String editor [C++], moving strings between files", "resource identifiers, string properties", "string tables [C++], changing strings", "strings [C++], properties", "String editor [C++], changing properties of multiple strings", "string tables [C++], changing caption of multiple strings", "special characters, adding to strings", "ASCII characters, adding to strings", "strings [C++], formatting", "strings [C++], special characters"]
+ms.topic: how-to
 ---
 # String Editor (C++)
 
