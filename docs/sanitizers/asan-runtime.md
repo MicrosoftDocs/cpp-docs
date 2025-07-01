@@ -96,9 +96,34 @@ Any manual poisoning of shadow bytes must consider the alignment requirements. T
 
 For an illustration of the alignment requirement and potential issues, see the provided [ASan alignment examples](https://github.com/mcgov/asan_alignment_example). One is a small program to show what can go wrong with manual shadow memory poisoning. The second is an example implementation of manual poisoning using the `std::allocator` interface.
 
-## Run-time options
+## Runtime options
 
-Microsoft C/C++ (MSVC) uses a runtime based on the [Clang AddressSanitizer runtime from the llvm-project repository](https://github.com/llvm/llvm-project). Because of this, most runtime options are shared between the two versions. [A complete list of the public Clang runtime options is available here](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags). We document some differences in the sections that follow. If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
+The MSVC AddressSanitizer is based on the [Clang AddressSanitizer runtime from the llvm-project repository](https://github.com/llvm/llvm-project). Because of this, most of clang's ASan runtime options available in MSVC as well. [A complete list of the public Clang runtime options is available here](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags). We document some differences in the sections that follow. If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
+
+### Configure runtime options
+
+ASan runtime options are set in one of two ways:
+- The `ASAN_OPTIONS` environment variable
+- The `__asan_default_options` user function
+
+If the environment variable and the user function specify conflicting options, the options in the `ASAN_OPTIONS` environment variable take precedence.
+
+Multiple options are specified by separating them with a colon (`:`). 
+
+The following example sets [`alloc_dealloc_mismatch`](./error-alloc-dealloc-mismatch.md) to one and `symbolize` to zero:
+
+```cmd
+set ASAN_OPTIONS=alloc_dealloc_mismatch=1:symbolize=0
+```
+
+Or add the following function to your code:
+
+```C++
+extern "C" const char* __asan_default_options()
+{
+  return "alloc_dealloc_mismatch=1:symbolize=0";
+}
+```
 
 ### Unsupported AddressSanitizer options
 
