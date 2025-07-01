@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["COldToolBar"]
 helpviewer_keywords: ["toolbars [MFC], backward compatibility", "COldToolBar class [MFC]"]
 ms.assetid: 3543257c-8547-43f0-a66a-ee641dc1cf89
+ms.topic: concept-article
 ---
 # Using Your Old Toolbars
 

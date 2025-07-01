@@ -4,6 +4,7 @@ title: "Understanding the Dependencies of a Visual C++ Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application deployment [C++], dependencies", "Dependency Walker", "dependencies [C++], application deployment and", "deploying applications [C++], dependencies", "DUMPBIN utility", "DLLs [C++], dependencies", "depends.exe", "libraries [C++], application deployment issues"]
 ms.assetid: 62a44c95-c389-4c5f-82fd-07d7ef09dbf9
+ms.topic: concept-article
 ---
 # Understanding the Dependencies of a Visual C++ Application
 

@@ -4,6 +4,7 @@ title: "Character Assignment"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["characters [C++], assignments", "MBCS [C++], character assignments"]
 ms.assetid: dcc329cd-92df-4e20-817d-364be62ff28f
+ms.topic: how-to
 ---
 # Character Assignment
 

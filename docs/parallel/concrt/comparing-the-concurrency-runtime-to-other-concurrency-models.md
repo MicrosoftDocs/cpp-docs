@@ -4,6 +4,7 @@ title: "Comparing the Concurrency Runtime to Other Concurrency Models"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Concurrency Runtime, compared to other models"]
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
+ms.topic: concept-article
 ---
 # Comparing the Concurrency Runtime to Other Concurrency Models
 

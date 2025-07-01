@@ -5,6 +5,7 @@ ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.symbol.creating", "vc.editors.symbol.managing", "vc.editors.resourcesymbols", "vc.editors.symbol.resource"]
 helpviewer_keywords: ["New Symbol dialog box [C++]", "symbols [C++], creating", "resources [C++], viewing", "resource symbols", "symbols [C++], viewing", "New Symbol dialog box [C++]", "Resource Symbols dialog box [C++]", "Change Symbol dialog box [C++]", "resource symbols", "View Use button", "resource editors [C++], resource symbols"]
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
+ms.topic: how-to
 ---
 # How to: Create Symbols (C++)
 

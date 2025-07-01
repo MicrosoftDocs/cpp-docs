@@ -4,6 +4,7 @@ title: "Comparing Synchronization Data Structures to the Windows API"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["synchronization data structures, compared to Windows API", "event class, example"]
 ms.assetid: 8b0b1a3a-ef80-408c-91fa-93e6af920b4e
+ms.topic: concept-article
 ---
 # Comparing Synchronization Data Structures to the Windows API
 
