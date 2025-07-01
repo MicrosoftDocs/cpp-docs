@@ -46,29 +46,24 @@ A "checklist box" displays a list of items, such as filenames. Each item in the 
 
 To create your own checklist box:
 
-1. First, design an ordinary listbox control using the resource editor. The checklist box is based on it. The listbox must have `Owner Draw` set to `Fixed` and `Has Strings` to `True` because the checklist box needs to draw the checkboxes.
-1. Instantiate `CCheckListBox` in your code and call `Create`. If you're using DDX then `DDX_Control` does this for you.
-1. Call `SetCheckStyle` to choose one of the checkbox modes.
+1. In the resource editor, create a listbox control to contain the checkboxes. In the listbox's properties, set **Owner Draw** to **Fixed** and **Has Strings** to **True** so the checklist control can draw the checkboxes.
+1. Instantiate `CCheckListBox` in your code and call `Create`. If you're using [Dialog Data Exchange](../dialog-data-exchange.md) (DDX) then `DDX_Control` does this for you.
+1. Call `SetCheckStyle` to choose a checkbox mode.
 
-At this point checkboxes should appear next to the listbox items. Checkboxes don't respond to mouse clicks unless you use DDX. If you arean't using DDX, subclass the checklist box.
+At this point checkboxes should appear next to the listbox items. Checkboxes don't respond to mouse clicks unless you use DDX. If you aren't using DDX, subclass the checklist box.
 
-Some versions of the control show artifacts when the control first appears. One workaround is to call `SetFont(GetFont())` on the checklist box instance after adding your data.
+If screen artifacts appear in the control, try calling `SetFont(GetFont())` on the checklist box instance after adding your data.
 
-To handle Windows notification messages sent by a list box to its parent (usually a class derived from [`CDialog`](../../mfc/reference/cdialog-class.md)), add a message-map entry and message-handler member function to the parent class for each message.
-
-Each message-map entry has the following form:
+To handle Windows notification messages sent between a list box annd its parent (usually a class derived from [`CDialog`](../../mfc/reference/cdialog-class.md)), add a message-map entry and message-handler member function to the parent class for each message with the following form:
 
 **ON\_**_Notification_ **(** _`id`_, _`memberFxn`_ **)**
 
-where `id` specifies the child window ID of the control sending the notification and `memberFxn` is the name of the parent member function you've written to handle the notification.
+`id` specifies the child window ID of the control sending the notification.\
+`memberFxn` is the name of the parent member function you wrote to handle the notification.
 
-The parent's function prototype is as follows:
+The parent's function prototype is: `afx_msg void memberFxn();`
 
-`afx_msg void memberFxn();`
-
-There's only one message-map entry that pertains specifically to `CCheckListBox` (but see also the message-map entries for [`CListBox`](../../mfc/reference/clistbox-class.md)):
-
-- `ON_CLBN_CHKCHANGE` The user has changed the state of an item's checkbox.
+There's only one message-map entry that pertains specifically to `CCheckListBox`: `ON_CLBN_CHKCHANGE`-The user has changed the state of an item's checkbox. For information about list box message-map entries, see [`CListBox`](../../mfc/reference/clistbox-class.md))
 
 If your checklist box is a default checklist box (a list of strings with the default-sized checkboxes to the left of each), you can use the default [`CCheckListBox::DrawItem`](#drawitem) to draw the checklist box. Otherwise, you must override the [`CListBox::CompareItem`](../../mfc/reference/clistbox-class.md#compareitem) function and the [`CCheckListBox::DrawItem`](#drawitem) and [`CCheckListBox::MeasureItem`](#measureitem) functions.
 
@@ -102,7 +97,7 @@ CCheckListBox();
 
 Construct a `CCheckListBox` object in two steps. First, instantiate `CCheckListBox`, then call `Create` to initialize the Windows checklist box and attach it to the `CCheckListBox` object.
 
-The control also needs to be subclassed. When DDX is used to create the control this happens automatically; otherwise call `SubclassDlgItem`.
+The control also needs to be subclassed. When [Dialog Data Exchange](../dialog-data-exchange.md) (DDX) is used to create the control this happens automatically; otherwise call `SubclassDlgItem`.
 
 ### Example
 
@@ -140,7 +135,9 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-You construct a `CCheckListBox` object in two steps. First instantiate `CCheckListBox`, then call `Create`, which initializes the Windows checklist box and attaches it to the `CCheckListBox` object. The control also needs to be subclassed. When DDX is used to create the control this happens automatically, otherwise `SubclassDlgItem` needs to be called. See [`CCheckListBox::CCheckListBox`](#cchecklistbox) for a sample.
+Construct a `CCheckListBox` object in two steps:
+- Instantiate `CCheckListBox`
+- Call `Create` to initialize the Windows checklist box and attach it to the `CCheckListBox` object. The control also needs to be subclassed. When [Dialog Data Exchange](../dialog-data-exchange.md) (DDX) is used to create the control, this happens automatically. Otherwise, call `SubclassDlgItem`. See [`CCheckListBox::CCheckListBox`](#cchecklistbox) for an example.
 
 When `Create` executes, Windows sends the [`WM_NCCREATE`](../../mfc/reference/cwnd-class.md#onnccreate), [`WM_CREATE`](../../mfc/reference/cwnd-class.md#oncreate), [`WM_NCCALCSIZE`](../../mfc/reference/cwnd-class.md#onnccalcsize), and [`WM_GETMINMAXINFO`](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) messages to the checklist-box control.
 
@@ -149,17 +146,11 @@ These messages are handled by default by the [`OnNcCreate`](../../mfc/reference/
 Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a checklist-box control:
 
 - `WS_CHILD` Always
-
 - `WS_VISIBLE` Usually
-
 - `WS_DISABLED` Rarely
-
 - `WS_VSCROLL` To add a vertical scroll bar
-
 - `WS_HSCROLL` To add a horizontal scroll bar
-
 - `WS_GROUP` To group controls
-
 - `WS_TABSTOP` To allow tabbing to this control
 
 ## <a name="drawitem"></a> `CCheckListBox::DrawItem`
@@ -348,17 +339,13 @@ Determines the style of check boxes in the checklist box.
 Valid styles are:
 
 - `BS_CHECKBOX`
-
 - `BS_AUTOCHECKBOX`
-
 - `BS_AUTO3STATE`
-
 - `BS_3STATE`
 
 For information on these styles, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).
 
 ## See also
 
-[MFC Sample `TSTCON`](../../overview/visual-cpp-samples.md)\
 [`CListBox` Class](../../mfc/reference/clistbox-class.md)\
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
