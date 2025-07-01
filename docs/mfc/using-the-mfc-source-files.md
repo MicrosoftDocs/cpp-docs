@@ -4,6 +4,7 @@ title: "Using the MFC source files"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["public members", "source files", "MFC, source files", "MFC source files", "comments, MFC", "private member access", "protected member access", "source files, MFC"]
 ms.assetid: 3230e8fb-3b69-4ddf-9538-365ac7ea5e72
+ms.topic: concept-article
 ---
 # Using the MFC source files
 

@@ -3,6 +3,7 @@ description: "Learn more about: Porting Guide: Spy++"
 title: "Porting Guide: Spy++"
 ms.date: "10/23/2019"
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
+ms.topic: concept-article
 ---
 # Porting Guide: Spy++
 

@@ -4,6 +4,7 @@ title: "Working with a Tab Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTabCtrl class [MFC], using", "tab controls [MFC], working with", "tab controls [MFC], using"]
 ms.assetid: 819488e3-4944-44b7-9483-195edb8e0aed
+ms.topic: concept-article
 ---
 # Working with a Tab Control
 

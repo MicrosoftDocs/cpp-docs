@@ -4,6 +4,7 @@ title: "Multithreading: Creating Worker Threads in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["multithreading [C++], worker threads", "background tasks [C++]", "threading [C++], worker threads", "worker threads [C++]", "threading [C++], creating threads", "threading [MFC], worker threads", "threading [C++], user input not required"]
 ms.assetid: 670adbfe-041c-4450-a3ed-be14aab15234
+ms.topic: how-to
 ---
 # Multithreading: Creating Worker Threads in MFC
 

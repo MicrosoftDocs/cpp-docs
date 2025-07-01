@@ -4,6 +4,7 @@ title: "How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurr
 ms.date: "11/04/2016"
 helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, cancellation", "cancellation, converting from OpenMP to the Concurrency Runtime"]
 ms.assetid: 4b0b3c33-bfa9-4e96-ae08-aef245a39cbb
+ms.topic: how-to
 ---
 # How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurrency Runtime
 

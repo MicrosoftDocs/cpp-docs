@@ -4,6 +4,7 @@ title: "Porting Third-Party Libraries"
 ms.date: 10/22/2021
 helpviewer_keywords: ["3rd-party libraries", "vspkg"]
 ms.assetid: b055ed20-8a9e-45b2-ac2a-e3d94271c009
+ms.topic: concept-article
 ---
 # Porting third-party libraries
 

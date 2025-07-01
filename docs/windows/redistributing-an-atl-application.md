@@ -4,6 +4,7 @@ title: "Redistributing an ATL application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, redistributing", "redistributing ATL", "redistributing OLE DB templates", "OLE DB templates, redistributing"]
 ms.assetid: 9a696b22-2345-43ec-826b-be7cb8cfd676
+ms.topic: concept-article
 ---
 # Redistributing an ATL application
 
