@@ -29,7 +29,7 @@ The following options and functionality are incompatible with [`/fsanitize=addre
 
 The MSVC standard library (STL) makes partial use of the AddressSanitizer and provides other code safety checks. For more information, see [container-overflow error](./error-container-overflow.md).
 
-When annotations are disabled, or in versions of the Standard Library that don't support them, AddressSanitizer exceptions raised in STL code still identify real bugs. However, they are more precise if annotations are enabled and you use a version of the Standard Library that supports them.
+When annotations are disabled, or in versions of the Standard Library that don't support them, AddressSanitizer exceptions raised in STL code still identify real bugs. However, they're more precise if annotations are enabled and you use a version of the Standard Library that supports them.
 
 This example demonstrates the lack of precision and the benefits of enabling annotations:
 
@@ -57,7 +57,7 @@ int main() {
 
 ## Overriding operator new and delete
 
-AddressSanitizer (ASAN) uses a custom version of `operator new` and `operator delete` to find allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Running the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) ensures that ASAN's `new`/`delete` override has low precedence, so that the linker chooses any `operator new` or `operator delete` overrides in other libraries over ASAN's custom versions. When this happens, ASAN may not be able to catch some errors that rely on its custom `operator new` and `operator delete`.
+AddressSanitizer (ASan) uses a custom version of `operator new` and `operator delete` to find allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Running the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) ensures that ASan's `new`/`delete` override has low precedence, so that the linker chooses any `operator new` or `operator delete` overrides in other libraries over ASan's custom versions. When this happens, ASan may not be able to catch some errors that rely on its custom `operator new` and `operator delete`.
 
 [MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete` and might miss errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md).
 
@@ -82,9 +82,9 @@ Thread local variables (global variables declared with `__declspec(thread)` or `
 
 ## Issues with partially sanitized executables
 
-If all of the code in a process isn't compiled with `/fsanitize=address`, ASan may not be able to diagnose all memory safety errors. The most common example is when a DLL is compiled with ASan but is loaded into a process that contains code that wasn't compiled with ASan. In this case, ASan attempts to categorize allocations that took place prior to ASan initialization. Once those allocations are reallocated, ASan tries to own and monitor the lifetime of the memory.
+If all of the code in a process isn't compiled with `/fsanitize=address`, ASan may not be able to diagnose all memory safety errors. The most common example is when a DLL compiles with ASan but is loaded into a process that contains code that wasn't compiled with ASan. In this case, ASan attempts to categorize allocations that took place before ASan initialization. Once those allocations are reallocated, ASan tries to own and monitor the lifetime of the memory.
 
-If all of the DLLs that were compiled with ASan are unloaded from the process before the process ends, there may be crashes due to dangling references to intercepted functions such as `memcmp`, `memcpy`, `memmove`, and so on. For the best results, compile all modules under test with `/fsanitize=address`, or do not unload modules compiled with ASan after they enter the process.
+If all of the DLLs compiled with ASan are unloaded from the process before the process ends, there may be crashes due to dangling references to intercepted functions such as `memcmp`, `memcpy`, `memmove`, and so on. For the best results, compile all modules under test with `/fsanitize=address`, or don't unload modules compiled with ASan after they enter the process.
 
 Please report any bugs to our [Developer Community](https://aka.ms/feedback/report?space=62).
 
