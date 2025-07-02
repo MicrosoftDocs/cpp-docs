@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: extent Class (C++ AMP)"
 title: "extent Class (C++ AMP)"
-ms.date: "03/27/2019"
+description: "Learn more about: extent Class (C++ AMP)"
+ms.date: 03/27/2019
 f1_keywords: ["extent", "AMP/extent", "AMP/Concurrency::extent::extent", "AMP/Concurrency::extent::contains", "AMP/Concurrency::extent::size", "AMP/Concurrency::extent::tile", "AMP/Concurrency::extent::rank Constant"]
 helpviewer_keywords: ["extent structure"]
-ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
 ---
 # extent Class (C++ AMP)
 
@@ -375,8 +374,10 @@ tiled_extent<_Dim0, _Dim1, _Dim2> tile() const ;
 
 *_Dim0*<br/>
 The most significant component of the tiled extent.
+
 *_Dim1*<br/>
 The next-to-most-significant component of the tiled extent.
+
 *_Dim2*<br/>
 The least significant component of the tiled extent.
 
