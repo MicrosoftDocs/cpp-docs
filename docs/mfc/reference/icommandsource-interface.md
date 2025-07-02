@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: ICommandSource Interface"
 title: "ICommandSource Interface"
-ms.date: "03/27/2019"
+description: "Learn more about: ICommandSource Interface"
+ms.date: 03/27/2019
 f1_keywords: ["ICommandSource", "AFXWINFORMS/ICommandSource", "AFXWINFORMS/ICommandSource::AddCommandHandler", "AFXWINFORMS/ICommandSource::AddCommandRangeHandler", "AFXWINFORMS/ICommandSource::AddCommandRangeUIHandler", "AFXWINFORMS/ICommandSource::AddCommandUIHandler", "AFXWINFORMS/ICommandSource::PostCommand", "AFXWINFORMS/ICommandSource::RemoveCommandHandler", "AFXWINFORMS/ICommandSource::RemoveCommandRangeHandler", "AFXWINFORMS/ICommandSource::RemoveCommandRangeUIHandler", "AFXWINFORMS/ICommandSource::RemoveCommandUIHandler", "AFXWINFORMS/ICommandSource::SendCommand"]
 helpviewer_keywords: ["ICommandSource interface [MFC]"]
-ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
 ---
 # ICommandSource Interface
 
