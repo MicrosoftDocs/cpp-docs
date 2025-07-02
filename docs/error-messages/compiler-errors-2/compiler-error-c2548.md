@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C2548"
 title: "Compiler error C2548"
-ms.date: "03/01/2024"
+description: "Learn more about: Compiler Error C2548"
+ms.date: 03/01/2024
 f1_keywords: ["C2548"]
 helpviewer_keywords: ["C2548"]
 ---

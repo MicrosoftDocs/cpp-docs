@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: ARM Exception Handling"
 title: "ARM Exception Handling"
+description: "Learn more about: ARM Exception Handling"
 ms.date: 12/15/2021
-ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
 ms.topic: concept-article
 ---
 # ARM Exception Handling
