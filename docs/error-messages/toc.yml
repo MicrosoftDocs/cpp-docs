@@ -3169,6 +3169,8 @@ items:
           href: compiler-warnings/c5208.md
         - name: Compiler error C7688
           href: compiler-errors-2/compiler-error-c7688.md
+        - name: Compiler error C7742
+          href: compiler-errors-2/compiler-error-c7742.md
 - name: Compiler warnings C4000 through C5999
   expanded: false
   items: 
