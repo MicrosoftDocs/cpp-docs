@@ -16,7 +16,7 @@ ms.assetid: e23171f4-ca6b-40c0-a913-a2edc6fa3766
 
 ## Example
 
-The following sample generates C1021:
+The following example generates C1021:
 
 ```cpp
 // C1021.cpp
