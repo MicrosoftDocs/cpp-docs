@@ -252,7 +252,7 @@ MFT_GRAYSCALE_SATURATION (type = double)
  
 MFT_GRAYSCALE_CHROMA_ROTATION (type = double)
 
-    Rotates the chroma values of each pixel. The attribue value is the angle of
+    Rotates the chroma values of each pixel. The attribute value is the angle of
     rotation in degrees. The result is a shift in hue.
 
 The effect is implemented by treating the chroma value of each pixel as a vector [u,v],

@@ -780,7 +780,7 @@ CRect GetListRect() const;
 
 ### Return Value
 
-The bounding rectangle of the property grid control. This rectange doesn't include the description area and header.
+The bounding rectangle of the property grid control. This rectangle doesn't include the description area and header.
 
 ### Remarks
 
