@@ -59,6 +59,7 @@ void AddCommandHandler(
 
 *cmdID*<br/>
 The command ID.
+
 *cmdHandler*<br/>
 A handle to the command handler method.
 
@@ -82,8 +83,10 @@ void AddCommandRangeHandler(
 
 *cmdIDMin*<br/>
 The beginning index of the command ID range.
+
 *cmdIDMax*<br/>
 The ending index of the command ID range.
+
 *cmdHandler*<br/>
 A handle to the message handler method to which the commands are mapped.
 
@@ -106,8 +109,10 @@ void AddCommandRangeUIHandler(
 
 *cmdIDMin*<br/>
 The beginning index of the command ID range.
+
 *cmdIDMax*<br/>
 The ending index of the command ID range.
+
 *cmdHandler*<br/>
 A handle to the message handler method to which the commands are mapped.
 
@@ -129,6 +134,7 @@ void AddCommandUIHandler(
 
 *cmdID*<br/>
 The command ID.
+
 *cmdUIHandler*<br/>
 A handle to the user interface command message handler method.
 
@@ -184,6 +190,7 @@ void RemoveCommandRangeUIHandler(
 
 *cmdIDMin*<br/>
 The beginning index of the command ID range.
+
 *cmdIDMax*<br/>
 The ending index of the command ID range.
 
@@ -205,6 +212,7 @@ void RemoveCommandRangeUIHandler(
 
 *cmdIDMin*<br/>
 The beginning index of the command ID range.
+
 *cmdIDMax*<br/>
 The ending index of the command ID range.
 

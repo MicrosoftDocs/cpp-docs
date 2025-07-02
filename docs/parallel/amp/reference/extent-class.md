@@ -375,8 +375,10 @@ tiled_extent<_Dim0, _Dim1, _Dim2> tile() const ;
 
 *_Dim0*<br/>
 The most significant component of the tiled extent.
+
 *_Dim1*<br/>
 The next-to-most-significant component of the tiled extent.
+
 *_Dim2*<br/>
 The least significant component of the tiled extent.
 

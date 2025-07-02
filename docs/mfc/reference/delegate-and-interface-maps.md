@@ -215,8 +215,10 @@ INTERFACE_PART( theClass, iid, localClass)
 
 *theClass*<br/>
 The name of the class that contains the interface map.
+
 *iid*<br/>
 The IID that is to be mapped to the embedded class.
+
 *localClass*<br/>
 The name of the local class.
 

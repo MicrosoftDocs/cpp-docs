@@ -983,6 +983,7 @@ inline double fdim(
 
 *_X*<br/>
 Floating-point value
+
 *_Y*<br/>
 Floating-point value
 
@@ -1005,6 +1006,7 @@ inline float fdimf(
 
 *_X*<br/>
 Floating-point value
+
 *_Y*<br/>
 Floating-point value
 
@@ -1070,8 +1072,10 @@ inline double fma(
 
 *_X*<br/>
 The first floating-point argument.
+
 *_Y*<br/>
 The second floating-point argument.
+
 *_Z*<br/>
 The third floating-point argument.
 
@@ -1095,8 +1099,10 @@ inline float fmaf(
 
 *_X*<br/>
 The first floating-point argument.
+
 *_Y*<br/>
 The second floating-point argument.
+
 *_Z*<br/>
 The third floating-point argument.
 
