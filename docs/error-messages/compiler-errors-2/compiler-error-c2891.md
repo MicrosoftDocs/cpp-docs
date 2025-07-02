@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2891"
 title: "Compiler Error C2891"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2891"
+ms.date: 11/04/2016
 f1_keywords: ["C2891"]
 helpviewer_keywords: ["C2891"]
-ms.assetid: e12cfb2d-df45-4b0d-b155-c51d17e812fa
 ---
 # Compiler Error C2891
 

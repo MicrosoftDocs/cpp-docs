@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2797"
 title: "Compiler Error C2797"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2797"
+ms.date: 11/04/2016
 f1_keywords: ["C2797"]
 helpviewer_keywords: ["C2797"]
-ms.assetid: 9fb26d35-eb5c-46fc-9ff5-756fba5bdaff
 ---
 # Compiler Error C2797
 

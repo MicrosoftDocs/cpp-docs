@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3457"
 title: "Compiler Error C3457"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3457"
+ms.date: 11/04/2016
 f1_keywords: ["C3457"]
 helpviewer_keywords: ["C3457"]
-ms.assetid: 5c1e366a-fa75-4cca-b9a3-86d4ebe4090e
 ---
 # Compiler Error C3457
 

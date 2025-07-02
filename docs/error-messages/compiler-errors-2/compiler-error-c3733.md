@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3733"
 title: "Compiler Error C3733"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3733"
+ms.date: 11/04/2016
 f1_keywords: ["C3733"]
 helpviewer_keywords: ["C3733"]
-ms.assetid: 0cc1a9fe-1400-4be3-b35a-16435cba7a5a
 ---
 # Compiler Error C3733
 
