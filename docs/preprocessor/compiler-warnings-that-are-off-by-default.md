@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler warnings that are off by default"
 title: "Compiler warnings that are off by default"
+description: "Learn more about: Compiler warnings that are off by default"
 ms.date: 01/18/2024
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ---
