@@ -21,8 +21,8 @@ The following sample generates C2548 for:
 The following sample doesn't generate C2548 for:
 
 - `func2` because all the required default arguments are supplied.
--  The second `func4` declaration because the default argument `c` is supplied in the preceding declaration and is in the same scope.
--  The third `func4` declaration because both default arguments `b` and `c` are provided previously.
+- The second `func4` declaration because the default argument `c` is supplied in the preceding declaration and is in the same scope.
+- The third `func4` declaration because both default arguments `b` and `c` are provided previously.
 
 ```cpp
 // C2548.cpp

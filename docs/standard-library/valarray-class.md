@@ -1143,7 +1143,7 @@ int main( )
    for ( i = 0 ; i < 10 ; i += 1 )
       va [ i ] = i;
    for ( i = 0 ; i < 10 ; i+=1 )
-      vaR [ i ] = 10 -  i;
+      vaR [ i ] = 10 - i;
 
    cout << "The operand valarray va is:";
    for ( i = 0 ; i < 10 ; i++ )
@@ -1609,7 +1609,7 @@ int main( )
    for ( i = 0 ; i < 10 ; i += 1 )
       va1 [ i ] =  i;
    for ( i = 0 ; i < 10 ; i += 1 )
-      va2 [ i ] = 10 -  i;
+      va2 [ i ] = 10 - i;
 
    cout << "The operand valarray va1(10) is: ( ";
       for ( i = 0 ; i < 10 ; i++ )
