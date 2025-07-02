@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1026"
 title: "Fatal Error C1026"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1026"
+ms.date: 11/04/2016
 f1_keywords: ["C1026"]
 helpviewer_keywords: ["C1026"]
-ms.assetid: 89bb9d40-673a-44aa-a9f4-b42c07b49d44
 ---
 # Fatal Error C1026
 

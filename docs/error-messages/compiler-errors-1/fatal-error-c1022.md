@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1022"
 title: "Fatal Error C1022"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1022"
+ms.date: 11/04/2016
 f1_keywords: ["C1022"]
 helpviewer_keywords: ["C1022"]
-ms.assetid: edada720-dc73-49bc-bd93-a7945a316312
 ---
 # Fatal Error C1022
 

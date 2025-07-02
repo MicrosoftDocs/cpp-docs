@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1023"
 title: "Fatal Error C1023"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1023"
+ms.date: 11/04/2016
 f1_keywords: ["C1023"]
 helpviewer_keywords: ["C1023"]
-ms.assetid: 727b4070-7474-420b-ab11-6530f96c794f
 ---
 # Fatal Error C1023
 

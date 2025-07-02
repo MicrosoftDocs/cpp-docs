@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Fatal Error C1047"
 title: "Fatal Error C1047"
+description: "Learn more about: Fatal Error C1047"
 ms.date: 10/22/2021
 f1_keywords: ["C1047"]
 helpviewer_keywords: ["C1047"]

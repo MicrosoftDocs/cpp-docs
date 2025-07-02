@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1046"
 title: "Fatal Error C1046"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1046"
+ms.date: 11/04/2016
 f1_keywords: ["C1046"]
 helpviewer_keywords: ["C1046"]
-ms.assetid: 822ec5f5-b0b0-4711-99e1-fc237b619af6
 ---
 # Fatal Error C1046
 

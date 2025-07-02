@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1038"
 title: "Fatal Error C1038"
+description: "Learn more about: Fatal Error C1038"
 ms.date: 08/17/2022
 f1_keywords: ["C1038"]
 helpviewer_keywords: ["C1038"]
-ms.assetid: 560dccb8-5b45-46f0-9412-caa4a6172aef
 ---
 # Fatal Error C1038
 

@@ -1,7 +1,7 @@
 ---
 title: "Fatal Error C1049"
 description: "Describes compiler fatal error C1049, invalid numerical argument, and explains how to resolve it."
-ms.date: "11/04/2019"
+ms.date: 11/04/2019
 f1_keywords: ["C1049"]
 helpviewer_keywords: ["C1049"]
 ---
