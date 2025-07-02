@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C2548"
 title: "Compiler error C2548"
-ms.date: "03/01/2024"
+description: "Learn more about: Compiler Error C2548"
+ms.date: 03/01/2024
 f1_keywords: ["C2548"]
 helpviewer_keywords: ["C2548"]
 ---
@@ -21,8 +21,8 @@ The following sample generates C2548 for:
 The following sample doesn't generate C2548 for:
 
 - `func2` because all the required default arguments are supplied.
--  The second `func4` declaration because the default argument `c` is supplied in the preceding declaration and is in the same scope.
--  The third `func4` declaration because both default arguments `b` and `c` are provided previously.
+- The second `func4` declaration because the default argument `c` is supplied in the preceding declaration and is in the same scope.
+- The third `func4` declaration because both default arguments `b` and `c` are provided previously.
 
 ```cpp
 // C2548.cpp
