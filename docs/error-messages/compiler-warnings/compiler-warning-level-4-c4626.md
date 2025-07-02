@@ -16,7 +16,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4626 and shows how to fix it:
 
-```
+```cpp
 // C4626
 // compile with: /W4
 #pragma warning(default : 4626)

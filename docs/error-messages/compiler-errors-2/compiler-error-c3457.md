@@ -16,7 +16,7 @@ Source annotation attributes, unlike CLR custom attribute or compiler attributes
 
 The following sample generates C3457.
 
-```
+```cpp
 #include "SourceAnnotations.h"
 [vc_attributes::Post( 1 )] int f();   // C3457
 [vc_attributes::Post( Valid=vc_attributes::Yes )] int f2();   // OK

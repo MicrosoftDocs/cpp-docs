@@ -12,7 +12,7 @@ ms.assetid: aede18d5-fefc-4da9-9b69-adfe90bfa742
 
 You cannot qualify the `decltype()` keyword with any type specifier. For example, the following code fragment yields error C3554.
 
-```
+```cpp
 int x;
 unsigned decltype(x); // C3554
 ```

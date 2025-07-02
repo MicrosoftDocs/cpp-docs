@@ -14,7 +14,7 @@ The wrong syntax was used for a COM event. To fix this error, change the event t
 
 The following sample generates C3733:
 
-```
+```cpp
 #define _ATL_ATTRIBUTES 1
 #include "atlbase.h"
 #include "atlcom.h"
