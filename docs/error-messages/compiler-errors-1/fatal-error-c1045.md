@@ -8,6 +8,6 @@ ms.assetid: 766c2f89-4ecd-4281-adaa-14b270cc0829
 ---
 # Fatal Error C1045
 
-compiler limit : linkage specifications nested too deeply
+> compiler limit : linkage specifications nested too deeply
 
 Nested externals exceed the compiler limit. Nested externals are allowed with the external linkage type, such as **`extern`** "C++". Reduce the number of nested externals to resolve the error.

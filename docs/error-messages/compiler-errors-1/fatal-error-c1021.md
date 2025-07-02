@@ -8,7 +8,7 @@ ms.assetid: e23171f4-ca6b-40c0-a913-a2edc6fa3766
 ---
 # Fatal Error C1021
 
-invalid preprocessor command 'string'
+> invalid preprocessor command 'string'
 
 `string` is not a valid [preprocessor directive](../../preprocessor/preprocessor-directives.md). To resolve the error, use a valid preprocessor name for `string`.
 

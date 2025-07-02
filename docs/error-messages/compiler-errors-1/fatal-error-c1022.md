@@ -8,7 +8,7 @@ ms.assetid: edada720-dc73-49bc-bd93-a7945a316312
 ---
 # Fatal Error C1022
 
-expected #endif
+> expected #endif
 
 An `#if`, `#ifdef`, or `#ifndef` directive has no matching `#endif` directive. Be sure each `#if`, `#ifdef`, or `#ifndef` has a matching `#endif`.
 
