@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2797"
 title: "Compiler Error C2797"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2797"
+ms.date: 11/04/2016
 f1_keywords: ["C2797"]
 helpviewer_keywords: ["C2797"]
-ms.assetid: 9fb26d35-eb5c-46fc-9ff5-756fba5bdaff
 ---
 # Compiler Error C2797
 
@@ -14,7 +13,7 @@ This warning is obsolete in Visual Studio 2015. In Visual Studio 2013 and earlie
 
 This example generates C2797:
 
-```
+```cpp
 #include <vector>
 struct S {
     S() : v1{1} {} // C2797, VS2013 RTM incorrectly calls 'vector(size_type)'
@@ -26,7 +25,7 @@ struct S {
 
 This example also generates C2797:
 
-```
+```cpp
 struct S1 {
     int i;
 };
@@ -40,7 +39,7 @@ struct S2 {
 
 To fix this issue, you can use explicit construction of inner lists. For example:
 
-```
+```cpp
 #include <vector>
 typedef std::vector<int> Vector;
 struct S {
@@ -53,7 +52,7 @@ struct S {
 
 If you do not require list initialization:
 
-```
+```cpp
 struct S {
     S() : s1("") {}
 
