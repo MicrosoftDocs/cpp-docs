@@ -71,7 +71,7 @@ Lets you save a complex network of objects in a permanent binary form (usually d
 Represents a serialization exception condition.
 
 [`CArray` Class](carray-class.md)\
-Supports arrays that resemble` C arrays, but can dynamically reduce and grow as necessary.
+Supports arrays that resemble C arrays, but can dynamically reduce and grow as necessary.
 
 [`CAsyncMonikerFile` Class](casyncmonikerfile-class.md)\
 Provides functionality for the use of asynchronous monikers in ActiveX controls (formerly OLE controls).

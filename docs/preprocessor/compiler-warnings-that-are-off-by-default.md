@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler warnings that are off by default"
 title: "Compiler warnings that are off by default"
+description: "Learn more about: Compiler warnings that are off by default"
 ms.date: 01/18/2024
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ---
@@ -158,7 +158,7 @@ The following warnings are turned off by default in Visual Studio 2019 and later
 
 | Warning | Message |
 |--|--|
-| C5052 (level 3) | Keyword '*keyword-name*' was introduced in C++ *version* and requires use of the '*option*' command-line option` <sup>16.1</sup> |
+| C5052 (level 3) | Keyword '*keyword-name*' was introduced in C++ *version* and requires use of the '*option*' command-line option <sup>16.1</sup> |
 | C5204 (level 3) | A class with virtual functions has non-virtual trivial destructor. <sup>16.5</sup> |
 | C5214 (level 4) | applying '*keyword*' to an operand with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
 | C5215 (level 4) | '*function-parameter*' a function parameter with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
