@@ -9,6 +9,8 @@ helpviewer_keywords: ["C1049"]
 
 > invalid numerical argument '*value*'
 
+## Remarks
+
 The CL.EXE command-line parser found *value* where it was expecting a numerical argument.
 
 A C1049 error may occur when the compiler can't find a numerical argument for one of these compiler options:

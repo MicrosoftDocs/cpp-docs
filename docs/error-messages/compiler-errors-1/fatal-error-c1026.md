@@ -10,6 +10,8 @@ ms.assetid: 89bb9d40-673a-44aa-a9f4-b42c07b49d44
 
 > parser stack overflow, program too complex
 
+## Remarks
+
 The space required to parse the program caused a compiler stack overflow.
 
 Decrease the complexity of expressions by:

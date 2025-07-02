@@ -10,6 +10,8 @@ ms.assetid: 79103bca-ccfb-42e7-aef9-9b90c15b162f
 
 > cannot open object file filename
 
+## Remarks
+
 The object file specified by [/Fo](../../build/reference/fo-object-file-name.md) cannot be opened.
 
 ### To fix by checking the following possible causes

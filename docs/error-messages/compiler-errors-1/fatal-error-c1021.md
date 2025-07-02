@@ -10,7 +10,11 @@ ms.assetid: e23171f4-ca6b-40c0-a913-a2edc6fa3766
 
 > invalid preprocessor command 'string'
 
+## Remarks
+
 `string` is not a valid [preprocessor directive](../../preprocessor/preprocessor-directives.md). To resolve the error, use a valid preprocessor name for `string`.
+
+## Example
 
 The following sample generates C1021:
 

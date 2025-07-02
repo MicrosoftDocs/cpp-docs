@@ -10,7 +10,11 @@ ms.assetid: edada720-dc73-49bc-bd93-a7945a316312
 
 > expected #endif
 
+## Remarks
+
 An `#if`, `#ifdef`, or `#ifndef` directive has no matching `#endif` directive. Be sure each `#if`, `#ifdef`, or `#ifndef` has a matching `#endif`.
+
+## Example
 
 The following sample generates C1022:
 
