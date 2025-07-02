@@ -3,6 +3,7 @@ title: "Redistributing Visual C++ Files"
 description: "Visual Studio includes Redistributable libraries and components you can deploy with your app."
 ms.date: 01/15/2025
 helpviewer_keywords: ["application deployment [C++], file redistributing", "redistributing applications [C++]", "deploying applications [C++], file redistributing", "file redistribution [C++]", "redistributing applications [C++], about redistributing applications"]
+ms.topic: concept-article
 ---
 # Redistributing Visual C++ Files
 

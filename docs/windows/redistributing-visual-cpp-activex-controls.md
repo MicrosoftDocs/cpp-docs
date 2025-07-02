@@ -4,6 +4,7 @@ title: "Redistributing Visual C++ ActiveX Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [C++], redistributing", "controls [C++], distributing"]
 ms.assetid: eefbb7e4-d28c-4c35-98bf-d9540cfaae83
+ms.topic: concept-article
 ---
 # Redistributing Visual C++ ActiveX Controls
 

@@ -4,6 +4,7 @@ title: "Task Parallelism (Concurrency Runtime)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["structured task groups [Concurrency Runtime]", "structured tasks [Concurrency Runtime]", "task groups [Concurrency Runtime]", "task parallelism", "tasks [Concurrency Runtime]"]
 ms.assetid: 42f05ac3-2098-494a-ba84-737fcdcad077
+ms.topic: how-to
 ---
 # Task Parallelism (Concurrency Runtime)
 

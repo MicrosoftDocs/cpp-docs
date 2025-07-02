@@ -5,6 +5,7 @@ ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.image.drawing"]
 helpviewer_keywords: ["Image editor [C++], selecting drawing tools", "Image editor [C++], toolbar", "drawing tools", "Image editor [C++], drawing lines", "shapes, drawing", "colors [C++], brush", "brushes, colors", "brushes, creating custom", "images [C++], creating custom brushes", "graphics [C++], custom brushes", "custom brushes"]
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
+ms.topic: how-to
 ---
 # How to: Use a Drawing Tool
 

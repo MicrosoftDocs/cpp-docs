@@ -4,6 +4,7 @@ title: "Introduction to Microsoft C++ for UNIX Users"
 ms.date: 06/22/2021
 helpviewer_keywords: ["UNIX [C++]"]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
+ms.topic: concept-article
 ---
 # Introduction to Microsoft C++ for UNIX Users
 
