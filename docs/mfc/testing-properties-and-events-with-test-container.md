@@ -37,7 +37,7 @@ At this point you can test your control's properties or events.
 
    The property now contains the new value.
 
-#### To test events and specify the destination of event information.
+#### To test events and specify the destination of event information
 
 1. On the **Options** menu, click **Logging**.
 

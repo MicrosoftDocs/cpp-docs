@@ -64,7 +64,7 @@ The following example demonstrates how to set the values of the various member v
 
 **Header:** afxmdiclientareawnd.h
 
-## <a name="m_bactivetabclosebutton_"></a> CMDITabInfo::m_bActiveTabCloseButton;
+## <a name="m_bactivetabclosebutton_"></a> CMDITabInfo::m_bActiveTabCloseButton
 
 Specifies whether a **Close** button is displayed on the label of the active tab.
 

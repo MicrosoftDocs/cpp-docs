@@ -15,7 +15,7 @@ Spy++ is a widely used GUI diagnostic tool for the Windows desktop that provides
 
 We considered this case to be typical for porting Windows desktop applications that use MFC and the Win32 API, especially for old projects that have not been updated with each release of Visual C++ since Visual C++ 6.0.
 
-## <a name="convert_project_file"></a> Step 1. Converting the project file.
+## <a name="convert_project_file"></a> Step 1. Converting the project file
 
 The project file, two old .dsw files from Visual C++ 6.0, converted easily with no issues that require further attention. One project is the Spy++ application. The other is SpyHk, written in C, a supporting DLL. More complex projects might not upgrade as easily, as discussed [here](../porting/visual-cpp-porting-and-upgrading-guide.md).
 

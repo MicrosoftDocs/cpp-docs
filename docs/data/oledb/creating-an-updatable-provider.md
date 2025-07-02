@@ -174,7 +174,7 @@ Making sure that the data store can handle changes.
 
 Handling NULL values.
 
-### Handling default values.
+### Handling default values
 
 To implement your own `FlushData` method, you need to:
 
