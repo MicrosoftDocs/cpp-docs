@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMDITabInfo Class"
 title: "CMDITabInfo Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CMDITabInfo Class"
+ms.date: 11/04/2016
 f1_keywords: ["CMDITabInfo", "AFXMDICLIENTAREAWND/CMDITabInfo", "AFXMDICLIENTAREAWND/CMDITabInfo::Serialize", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bAutoColor", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bDocumentMenu", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bEnableTabSwap", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bFlatFrame", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabCloseButton", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabCustomTooltips", "AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabIcons", "AFXMDICLIENTAREAWND/CMDITabInfo::m_nTabBorderSize", "AFXMDICLIENTAREAWND/CMDITabInfo::m_style", "AFXMDICLIENTAREAWND/CMDITabInfo::m_tabLocation"]
 helpviewer_keywords: ["CMDITabInfo [MFC], Serialize", "CMDITabInfo [MFC], m_bAutoColor", "CMDITabInfo [MFC], m_bDocumentMenu", "CMDITabInfo [MFC], m_bEnableTabSwap", "CMDITabInfo [MFC], m_bFlatFrame", "CMDITabInfo [MFC], m_bTabCloseButton", "CMDITabInfo [MFC], m_bTabCustomTooltips", "CMDITabInfo [MFC], m_bTabIcons", "CMDITabInfo [MFC], m_nTabBorderSize", "CMDITabInfo [MFC], m_style", "CMDITabInfo [MFC], m_tabLocation"]
-ms.assetid: 988ae1b7-4f7f-4239-b88f-7e28b3291c5e
 ---
 # CMDITabInfo Class
 
@@ -64,7 +63,7 @@ The following example demonstrates how to set the values of the various member v
 
 **Header:** afxmdiclientareawnd.h
 
-## <a name="m_bactivetabclosebutton_"></a> CMDITabInfo::m_bActiveTabCloseButton;
+## <a name="m_bactivetabclosebutton_"></a> CMDITabInfo::m_bActiveTabCloseButton
 
 Specifies whether a **Close** button is displayed on the label of the active tab.
 

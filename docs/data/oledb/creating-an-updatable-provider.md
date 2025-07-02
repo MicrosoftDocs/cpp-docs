@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Creating an Updatable Provider"
 title: "Creating an Updatable Provider"
-ms.date: "08/16/2018"
+description: "Learn more about: Creating an Updatable Provider"
+ms.date: 08/16/2018
 helpviewer_keywords: ["OLE DB providers, updatable", "notifications, support in providers", "OLE DB providers, creating"]
-ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
 ---
 # Creating an Updatable Provider
 
@@ -174,7 +173,7 @@ Making sure that the data store can handle changes.
 
 Handling NULL values.
 
-### Handling default values.
+### Handling default values
 
 To implement your own `FlushData` method, you need to:
 
