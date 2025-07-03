@@ -91,7 +91,7 @@ For convenience, the [AddressSanitizer interface header file](https://github.com
 ```
 
 > [!NOTE]
-> Manually poisoned memory must be eventually unpoisoned by the end-user. Otherwise, ASan may report false positives.
+> Manually poisoned memory must be eventually unpoisoned. Otherwise, ASan may report false positives.
 
 ## Alignment requirements for AddressSanitizer poisoning
 
