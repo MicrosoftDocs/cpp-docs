@@ -16,7 +16,7 @@ An `#if`, `#ifdef`, or `#ifndef` directive has no corresponding `#endif`.
 
 ## Example
 
-The following sample generates C1070:
+The following example generates C1070:
 
 ```cpp
 // C1070.cpp

@@ -22,7 +22,7 @@ The compiler reached the end of the file while scanning a comment.
 
 ## Example
 
-The following sample generates C1071:
+The following example generates C1071:
 
 ```cpp
 // C1071.cpp
