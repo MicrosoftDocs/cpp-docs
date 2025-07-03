@@ -10,4 +10,6 @@ ms.assetid: 3b4abd16-4552-4900-84be-54f6ebb6c785
 
 > cannot open file 'file'
 
+## Remarks
+
 Ensure that `file` is not in use by another program.

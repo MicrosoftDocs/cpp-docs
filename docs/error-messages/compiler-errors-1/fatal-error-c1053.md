@@ -10,6 +10,8 @@ ms.assetid: f50c1c6a-d9cc-42fa-984e-4e2e6e9cd1b1
 
 > '<identifier>' : function too large
 
+## Remarks
+
 The function is too large to compile.
 
 ### To fix by using the following possible solutions

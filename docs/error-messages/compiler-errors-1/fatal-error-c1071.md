@@ -10,6 +10,8 @@ ms.assetid: 489f1786-370e-4ecd-af67-538fe6e5bd4e
 
 > unexpected end of file found in comment
 
+## Remarks
+
 The compiler reached the end of the file while scanning a comment.
 
 ### To fix by checking the following possible causes
@@ -17,6 +19,8 @@ The compiler reached the end of the file while scanning a comment.
 1. Missing comment terminator (*/).
 
 1. Missing newline character after a comment on the last line of a source file.
+
+## Example
 
 The following sample generates C1071:
 

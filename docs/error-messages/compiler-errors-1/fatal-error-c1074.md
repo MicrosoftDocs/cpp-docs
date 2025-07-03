@@ -10,4 +10,6 @@ ms.assetid: 979d4ab2-0f1a-472a-85f8-71f48297274f
 
 > 'IDB' is illegal extension for PDB file: filename
 
+## Remarks
+
 The compiler expects program databases to have the .pdb extension.

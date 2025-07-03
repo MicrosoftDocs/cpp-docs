@@ -10,6 +10,8 @@ ms.assetid: 84ac1180-3e8a-48e8-9f77-7f18a778b964
 
 > compiler limit : internal heap limit reached; use /Zm to specify a higher limit
 
+## Remarks
+
 This error can be caused by too many symbols, or too many template instantiations. Starting in Visual Studio 2015, this message may result from Windows virtual memory pressure caused by too many parallel build processes. In this case, the recommendation to use the **/Zm** option should be ignored unless you are using a `#pragma hdrstop` directive.
 
 To resolve this error:

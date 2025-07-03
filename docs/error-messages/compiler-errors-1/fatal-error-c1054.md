@@ -10,6 +10,8 @@ ms.assetid: 9cfb7307-b22a-4418-b7c0-2621b0ab5b1b
 
 > compiler limit : initializers nested too deeply
 
+## Remarks
+
 The code exceeds the nesting limit on initializers (10-15 levels, depending on the combination of types being initialized).
 
 ### To fix by using the following possible solutions

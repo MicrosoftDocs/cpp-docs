@@ -10,6 +10,8 @@ ms.assetid: a9fb9190-d7eb-4d5f-b1a2-a41e584a28c1
 
 > compiler limit : out of keys
 
+## Remarks
+
 The source file contains too many symbols. The compiler ran out of hash keys for the symbol table.
 
 ### To fix by using the following possible solutions

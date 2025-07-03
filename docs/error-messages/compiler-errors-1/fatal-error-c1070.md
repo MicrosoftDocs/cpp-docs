@@ -10,7 +10,11 @@ ms.assetid: 1058269a-5db6-4c23-a97f-b5269eb9188b
 
 > mismatched #if/#endif pair in file 'filename'
 
+## Remarks
+
 An `#if`, `#ifdef`, or `#ifndef` directive has no corresponding `#endif`.
+
+## Example
 
 The following sample generates C1070:
 
