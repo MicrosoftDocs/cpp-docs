@@ -91,7 +91,7 @@ For convenience, the [AddressSanitizer interface header file](https://github.com
 ```
 
 > [!NOTE]
-> Manually poisoned memory must be eventually unpoisoned. Otherwise, ASan may report false positives.
+> If you manually poison memory, you must unpoison it before reuse. This is especially important for stack addresses (e.g. a stack local variable), which are frequently reused during program execution. You risk introducing `use-after-poison` false positives in manually poisoned stack addresses if you fail to unpoison them before their stack frame is removed.
 
 ## Alignment requirements for AddressSanitizer poisoning
 
