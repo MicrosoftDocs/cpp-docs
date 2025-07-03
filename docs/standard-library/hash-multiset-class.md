@@ -308,8 +308,6 @@ Erases all the elements of a hash_multiset.
 void clear();
 ```
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -387,8 +385,6 @@ A type that provides a reference to a **`const`** element stored in a hash_multi
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_reference const_reference;
 ```
-
-### Remarks
 
 ### Example
 
@@ -712,8 +708,6 @@ The value of an element to be inserted into the [hash_multiset](../standard-libr
 
 The `emplace` member function returns an iterator that points to the position where the new element was inserted.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -810,8 +804,6 @@ bool empty() const;
 ### Return Value
 
 **`true`** if the hash_multiset is empty; **`false`** if the hash_multiset is nonempty.
-
-### Remarks
 
 ### Example
 
@@ -1591,8 +1583,6 @@ The argument key to be compared with the sort key of an element from the hash_mu
 
 An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of the first element in a hash_multiset with a key that is equal to or greater than the argument key, or that addresses the location succeeding the last element in the hash_multiset if no match is found for the key.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -1650,8 +1640,6 @@ size_type max_size() const;
 ### Return Value
 
 The maximum possible length of the hash_multiset.
-
-### Remarks
 
 ### Example
 
@@ -1845,8 +1833,6 @@ A type that provides a reference to an element stored in a hash_multiset.
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::reference reference;
 ```
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -2004,8 +1990,6 @@ size_type size() const;
 
 The current length of the hash_multiset.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -2046,8 +2030,6 @@ An unsigned integer type that can represent the number of elements in a hash_mul
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::size_type size_type;
 ```
-
-### Remarks
 
 ### Example
 
@@ -2148,8 +2130,6 @@ The argument key to be compared with the sort key of an element from the hash_mu
 ### Return Value
 
 An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of the first element in a hash_multiset with a key greater than the argument key, or that addresses the location succeeding the last element in the hash_multiset if no match is found for the key.
-
-### Remarks
 
 ### Example
 

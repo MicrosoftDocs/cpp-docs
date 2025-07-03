@@ -371,8 +371,6 @@ Erases all the elements of a `hash_map`.
 void clear();
 ```
 
-### Remarks
-
 ### Example
 
 The following example demonstrates the use of the `hash_map::clear` member function.
@@ -462,8 +460,6 @@ A type that provides a reference to a **`const`** element stored in a `hash_map`
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_reference const_reference;
 ```
-
-### Remarks
 
 ### Example
 
@@ -917,8 +913,6 @@ bool empty() const;
 
 **`true`** if the `hash_map` is empty; **`false`** if the `hash_map` is nonempty.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -1047,8 +1041,6 @@ The argument key value to be compared with the sort key of an element from the `
 A pair of iterators such that the first is the [`lower_bound`](#lower_bound) of the key and the second is the [`upper_bound`](#upper_bound) of the key.
 
 To access the first iterator of a pair `pr` returned by the member function, use `pr.first` and to dereference the lower bound iterator, use `*(pr.first)`. To access the second iterator of a pair `pr` returned by the member function, use `pr.second` and to dereference the upper bound iterator, use `*(pr.second)`.
-
-### Remarks
 
 ### Example
 
@@ -1815,8 +1807,6 @@ An [`iterator`](#iterator) or [`const_iterator`](#const_iterator) that addresses
 
 If the return value of `lower_bound` is assigned to a `const_iterator`, the `hash_map` object can't be modified. If the return value of `lower_bound` is assigned to a `iterator`, the `hash_map` object can be modified.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -1903,8 +1893,6 @@ size_type max_size() const;
 ### Return Value
 
 The maximum possible length of the `hash_map`.
-
-### Remarks
 
 ### Example
 
@@ -2196,8 +2184,6 @@ A type that provides a reference to an element stored in a `hash_map`.
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::reference reference;
 ```
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -2378,8 +2364,6 @@ size_type size() const;
 
 The current length of the `hash_map`.
 
-### Remarks
-
 ### Example
 
 The following example demonstrates the use of the `hash_map::size` member function.
@@ -2423,8 +2407,6 @@ An unsigned integer type that can represent the number of elements in a `hash_ma
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::size_type size_type;
 ```
-
-### Remarks
 
 ### Example
 
@@ -2527,8 +2509,6 @@ The argument key value to be compared with the sort key value of an element from
 An [`iterator`](#iterator) or [`const_iterator`](#const_iterator) that addresses the location of an element in a `hash_map` that with a key that is greater than the argument key, or that addresses the location succeeding the last element in the `hash_map` if no match is found for the key.
 
 If the return value is assigned to a `const_iterator`, the `hash_map` object can't be modified. If the return value is assigned to an `iterator`, the `hash_map` object can be modified.
-
-### Remarks
 
 ### Example
 

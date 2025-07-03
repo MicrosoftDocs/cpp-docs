@@ -36,8 +36,6 @@ The object or function for which to obtain the true address.
 
 The actual address of the object or function referenced by *`value`*, even if an overloaded `operator&()` exists.
 
-### Remarks
-
 ## <a name="align"></a> `align`
 
 Fits storage of the given size, aligned by the given alignment specification, into the first possible address of the given storage.

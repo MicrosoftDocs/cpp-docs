@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: cache_freelist Class"
 title: "cache_freelist Class"
-ms.date: "11/04/2016"
+description: "Learn more about: cache_freelist Class"
+ms.date: 11/04/2016
 f1_keywords: ["allocators/stdext::cache_freelist", "allocators/stdext::cache_freelist::allocate", "allocators/stdext::cache_freelist::deallocate"]
 helpviewer_keywords: ["stdext::cache_freelist", "stdext::cache_freelist [C++], allocate", "stdext::cache_freelist [C++], deallocate"]
-ms.assetid: 840694de-36ba-470f-8dae-2b723d5a8cd9
 ---
 # cache_freelist Class
 
@@ -67,8 +66,6 @@ The number of elements in the array to be allocated.
 
 A pointer to the allocated object.
 
-### Remarks
-
 ## <a name="cache_freelist"></a> cache_freelist::cache_freelist
 
 Constructs an object of type `cache_freelist`.
@@ -76,8 +73,6 @@ Constructs an object of type `cache_freelist`.
 ```cpp
 cache_freelist();
 ```
-
-### Remarks
 
 ## <a name="deallocate"></a> cache_freelist::deallocate
 
@@ -94,8 +89,6 @@ A pointer to the first object to be deallocated from storage.
 
 *count*\
 The number of objects to be deallocated from storage.
-
-### Remarks
 
 ## See also
 

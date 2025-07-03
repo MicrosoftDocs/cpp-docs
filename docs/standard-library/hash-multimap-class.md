@@ -326,8 +326,6 @@ Erases all the elements of a hash_multimap.
 void clear();
 ```
 
-### Remarks
-
 ### Example
 
 The following example demonstrates the use of the hash_multimap::clear member function.
@@ -417,8 +415,6 @@ A type that provides a reference to a **`const`** element stored in a hash_multi
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_reference const_reference;
 ```
-
-### Remarks
 
 ### Example
 
@@ -875,8 +871,6 @@ bool empty() const;
 
 **`true`** if the hash_multimap is empty; **`false`** if the hash_multimap is nonempty.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -1005,8 +999,6 @@ The argument key to be compared with the sort key of an element from the hash_mu
 A pair of iterators such that the first is the [lower_bound](#lower_bound) of the key and the second is the [upper_bound](#upper_bound) of the key.
 
 To access the first iterator of a pair `pr` returned by the member function, use `pr`. **first** and to dereference the lower bound iterator, use \*(`pr`. **first**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **second** and to dereference the upper bound iterator, use \*(`pr`. **second**).
-
-### Remarks
 
 ### Example
 
@@ -1685,8 +1677,6 @@ An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the
 
 If the return value of `lower_bound` is assigned to a `const_iterator`, the hash_multimap object cannot be modified. If the return value of `lower_bound` is assigned to an `iterator`, the hash_multimap object can be modified.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -1791,8 +1781,6 @@ size_type max_size() const;
 ### Return Value
 
 The maximum possible length of the hash_multimap.
-
-### Remarks
 
 ### Example
 
@@ -1988,8 +1976,6 @@ A type that provides a reference to an element stored in a hash_multimap.
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::reference reference;
 ```
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -2164,8 +2150,6 @@ size_type size() const;
 
 The current length of the hash_multimap.
 
-### Remarks
-
 ### Example
 
 The following example demonstrates the use of the hash_multimap::size member function.
@@ -2209,8 +2193,6 @@ An unsigned integer type that counts the number of elements in a hash_multimap.
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::size_type size_type;
 ```
-
-### Remarks
 
 ### Example
 
@@ -2311,8 +2293,6 @@ The argument key to be compared with the sort key of an element from the hash_mu
 An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of an element in a hash_multimap with a key that is greater than the argument key, or that addresses the location succeeding the last element in the hash_multimap if no match is found for the key.
 
 If the return value of `upper_bound` is assigned to a `const_iterator`, the hash_multimap object cannot be modified. If the return value of `upper_bound` is assigned to a `iterator`, the hash_multimap object can be modified.
-
-### Remarks
 
 ### Example
 

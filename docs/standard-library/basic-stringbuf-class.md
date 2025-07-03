@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: basic_stringbuf Class"
 title: "basic_stringbuf Class"
+description: "Learn more about: basic_stringbuf Class"
 ms.date: 06/10/2022
 f1_keywords: ["sstream/std::basic_stringbuf", "sstream/std::basic_stringbuf::allocator_type", "sstream/std::basic_stringbuf::char_type", "sstream/std::basic_stringbuf::int_type", "sstream/std::basic_stringbuf::off_type", "sstream/std::basic_stringbuf::pos_type", "sstream/std::basic_stringbuf::traits_type", "sstream/std::basic_stringbuf::overflow", "sstream/std::basic_stringbuf::pbackfail", "sstream/std::basic_stringbuf::seekoff", "sstream/std::basic_stringbuf::seekpos", "sstream/std::basic_stringbuf::str", "sstream/std::basic_stringbuf::underflow"]
 helpviewer_keywords: ["std::basic_stringbuf [C++]", "std::basic_stringbuf [C++], allocator_type", "std::basic_stringbuf [C++], char_type", "std::basic_stringbuf [C++], int_type", "std::basic_stringbuf [C++], off_type", "std::basic_stringbuf [C++], pos_type", "std::basic_stringbuf [C++], traits_type", "std::basic_stringbuf [C++], overflow", "std::basic_stringbuf [C++], pbackfail", "std::basic_stringbuf [C++], seekoff", "std::basic_stringbuf [C++], seekpos", "std::basic_stringbuf [C++], str", "std::basic_stringbuf [C++], underflow"]
-ms.assetid: 40c85f9e-42a5-4a65-af5c-23c8e3bf8113
 ms.custom: devdivchpfy22
 ---
 
@@ -365,8 +364,6 @@ void basic_stringbuf<T>::swap(basic_stringbuf& other)
 *other*\
 The basic_stringbuf whose contents will be swapped with this basic_stringbuf.
 
-### Remarks
-
 ## <a name="op_eq"></a> basic_stringbuf::operator=
 
 Assigns the contents of the basic_stringbuf on the right side of the operator to the basic_stringbuf on the left side.
@@ -379,8 +376,6 @@ basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)
 
 *other*\
 A basic_stringbuf whose contents, including locale traits, will be assigned to the stringbuf on the left side of the operator.
-
-### Remarks
 
 ## See also
 

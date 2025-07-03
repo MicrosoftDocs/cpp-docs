@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: freelist Class"
 title: "freelist Class"
-ms.date: "11/04/2016"
+description: "Learn more about: freelist Class"
+ms.date: 11/04/2016
 f1_keywords: ["allocators/stdext::freelist", "allocators/stdext::freelist::pop", "allocators/stdext::freelist::push"]
 helpviewer_keywords: ["stdext::freelist", "stdext::freelist [C++], pop", "stdext::freelist [C++], push"]
-ms.assetid: 8ad7e35c-4c80-4479-8ede-1a2497b06d71
 ---
 # freelist Class
 
@@ -55,8 +54,6 @@ Constructs an object of type `freelist`.
 ```cpp
 freelist();
 ```
-
-### Remarks
 
 ## <a name="pop"></a> freelist::pop
 
