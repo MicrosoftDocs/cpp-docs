@@ -23,6 +23,7 @@ The following options and functionality are incompatible with [`/fsanitize=addre
 - [C++ AMP](../parallel/amp/cpp-amp-overview.md) is unsupported, and should be disabled.
 - [Universal Windows Platform](../cppcx/universal-windows-apps-cpp.md) (UWP) applications are unsupported.
 - [Special case list](https://clang.llvm.org/docs/SanitizerSpecialCaseList.html) files are unsupported.
+- [Precompiled headers built without `/fsanitize`address`](../build/creating-precompiled-header-files.md#consistency-rules-for-yc-and-yu) are unsupported.
 
 ## Standard library support
 
@@ -56,7 +57,7 @@ int main() {
 
 ## Overriding operator new and delete
 
-AddressSanitizer (ASAN) uses a custom version of `operator new` and `operator delete` to find allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Running the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) ensures that ASAN's `new`/`delete` override has low precedence, so that the linker chooses any `operator new` or `operator delete` overrides in other libraries over ASAN's custom versions. When this happens, ASAN may not be able to catch some errors that rely on its custom `operator new` and `operator delete`.
+AddressSanitizer (ASan) uses a custom version of `operator new` and `operator delete` to find allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Running the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) ensures that ASan's `new`/`delete` override has low precedence, so that the linker chooses any `operator new` or `operator delete` overrides in other libraries over ASan's custom versions. When this happens, ASan may not be able to catch some errors that rely on its custom `operator new` and `operator delete`.
 
 [MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete` and might miss errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md).
 
