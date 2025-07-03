@@ -7,7 +7,7 @@ helpviewer_keywords: ["C1053"]
 ---
 # Fatal Error C1053
 
-> '<identifier>' : function too large
+> '\<identifier>' : function too large
 
 ## Remarks
 
