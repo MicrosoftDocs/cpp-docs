@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1061"
 title: "Fatal Error C1061"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1061"
+ms.date: 11/04/2016
 f1_keywords: ["C1061"]
 helpviewer_keywords: ["C1061"]
-ms.assetid: 9366c0bc-96e0-4967-aa7d-4ebf098de806
 ---
 # Fatal Error C1061
 

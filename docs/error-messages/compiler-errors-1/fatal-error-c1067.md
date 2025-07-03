@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1067"
 title: "Fatal Error C1067"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1067"
+ms.date: 11/04/2016
 f1_keywords: ["C1067"]
 helpviewer_keywords: ["C1067"]
-ms.assetid: e2c94be6-4573-4571-aac9-73d657fe9f96
 ---
 # Fatal Error C1067
 

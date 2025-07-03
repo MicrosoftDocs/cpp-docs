@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1052"
 title: "Fatal Error C1052"
-ms.date: "05/08/2017"
+description: "Learn more about: Fatal Error C1052"
+ms.date: 05/08/2017
 f1_keywords: ["C1052"]
 helpviewer_keywords: ["C1052"]
-ms.assetid: f2c09a2f-d3c1-4420-9501-ffcb65caf87b
 ---
 # Fatal Error C1052
 

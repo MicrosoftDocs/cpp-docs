@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1055"
 title: "Fatal Error C1055"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1055"
+ms.date: 11/04/2016
 f1_keywords: ["C1055"]
 helpviewer_keywords: ["C1055"]
-ms.assetid: a9fb9190-d7eb-4d5f-b1a2-a41e584a28c1
 ---
 # Fatal Error C1055
 

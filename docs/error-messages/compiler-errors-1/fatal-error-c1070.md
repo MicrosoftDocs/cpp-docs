@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1070"
 title: "Fatal Error C1070"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1070"
+ms.date: 11/04/2016
 f1_keywords: ["C1070"]
 helpviewer_keywords: ["C1070"]
-ms.assetid: 1058269a-5db6-4c23-a97f-b5269eb9188b
 ---
 # Fatal Error C1070
 

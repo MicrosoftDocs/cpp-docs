@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1076"
 title: "Fatal Error C1076"
-ms.date: "03/08/2019"
+description: "Learn more about: Fatal Error C1076"
+ms.date: 03/08/2019
 f1_keywords: ["C1076"]
 helpviewer_keywords: ["C1076"]
-ms.assetid: 84ac1180-3e8a-48e8-9f77-7f18a778b964
 ---
 # Fatal Error C1076
 

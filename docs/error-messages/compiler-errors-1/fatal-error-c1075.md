@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1075"
 title: "Fatal Error C1075"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1075"
+ms.date: 11/04/2016
 f1_keywords: ["C1075"]
 helpviewer_keywords: ["C1075"]
-ms.assetid: 69a74e3d-b53f-4526-a440-2c94e6403355
 ---
 # Fatal Error C1075
 
