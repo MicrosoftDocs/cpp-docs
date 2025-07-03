@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <system_error> enums"
 title: "<system_error> enums"
-ms.date: "11/04/2016"
+description: "Learn more about: <system_error> enums"
+ms.date: 11/04/2016
 f1_keywords: ["system_error/std::errc", "system_error/std::io_errc"]
-ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
 ---
 # `<system_error>` enums
 

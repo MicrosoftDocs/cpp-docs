@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: cache_chunklist Class"
 title: "cache_chunklist Class"
-ms.date: "11/04/2016"
+description: "Learn more about: cache_chunklist Class"
+ms.date: 11/04/2016
 f1_keywords: ["allocators/stdext::cache_chunklist", "allocators/stdext::cache_chunklist::allocate", "allocators/stdext::cache_chunklist::deallocate"]
 helpviewer_keywords: ["stdext::cache_chunklist", "stdext::cache_chunklist [C++], allocate", "stdext::cache_chunklist [C++], deallocate"]
-ms.assetid: af19eccc-4ae7-4a34-bbb2-81e397424cb9
 ---
 # cache_chunklist Class
 

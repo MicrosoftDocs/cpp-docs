@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: cache_suballoc Class"
 title: "cache_suballoc Class"
-ms.date: "11/04/2016"
+description: "Learn more about: cache_suballoc Class"
+ms.date: 11/04/2016
 f1_keywords: ["allocators/stdext::cache_suballoc", "allocators/stdext::cache_suballoc::allocate", "allocators/stdext::cache_suballoc::deallocate"]
 helpviewer_keywords: ["stdext::cache_suballoc", "stdext::cache_suballoc [C++], allocate", "stdext::cache_suballoc [C++], deallocate"]
-ms.assetid: 9ea9c5e9-1dcc-45d0-b3a7-a56a93d88898
 ---
 # cache_suballoc Class
 

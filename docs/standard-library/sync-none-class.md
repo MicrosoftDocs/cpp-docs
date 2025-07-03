@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: sync_none Class"
 title: "sync_none Class"
-ms.date: "11/04/2016"
+description: "Learn more about: sync_none Class"
+ms.date: 11/04/2016
 f1_keywords: ["allocators/stdext::sync_none", "allocators/stdext::sync_none::allocate", "allocators/stdext::sync_none::deallocate", "allocators/stdext::sync_none::equals"]
 helpviewer_keywords: ["stdext::sync_none", "stdext::sync_none [C++], allocate", "stdext::sync_none [C++], deallocate", "stdext::sync_none [C++], equals"]
-ms.assetid: f7473cee-14f3-4fe1-88bc-68cd085e59e1
 ---
 # sync_none Class
 

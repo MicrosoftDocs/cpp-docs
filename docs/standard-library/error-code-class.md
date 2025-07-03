@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: error_code Class"
 title: "error_code Class"
-ms.date: "11/04/2016"
+description: "Learn more about: error_code Class"
+ms.date: 11/04/2016
 f1_keywords: ["system_error/std::error_code", "system_error/std::error_code::value_type", "system_error/std::error_code::assign", "system_error/std::error_code::category", "system_error/std::error_code::clear", "system_error/std::error_code::default_error_condition", "system_error/std::error_code::message", "system_error/std::error_code::operator bool"]
 helpviewer_keywords: ["std::error_code", "std::error_code::value_type", "std::error_code::assign", "std::error_code::category", "std::error_code::clear", "std::error_code::default_error_condition", "std::error_code::message"]
-ms.assetid: c09b4a96-cb14-4281-a319-63543f9b2b4a
 ---
 # error_code Class
 

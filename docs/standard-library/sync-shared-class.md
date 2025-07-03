@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: sync_shared Class"
 title: "sync_shared Class"
-ms.date: "11/04/2016"
+description: "Learn more about: sync_shared Class"
+ms.date: 11/04/2016
 f1_keywords: ["allocators/stdext::sync_shared", "allocators/stdext::sync_shared::allocate", "allocators/stdext::sync_shared::deallocate", "allocators/stdext::sync_shared::equals"]
 helpviewer_keywords: ["stdext::sync_shared", "stdext::sync_shared [C++], allocate", "stdext::sync_shared [C++], deallocate", "stdext::sync_shared [C++], equals"]
-ms.assetid: cab3af9e-3d1a-4f2c-8580-0f89e5687d8e
 ---
 # sync_shared Class
 
