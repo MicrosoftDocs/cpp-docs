@@ -90,6 +90,9 @@ For convenience, the [AddressSanitizer interface header file](https://github.com
 #define ASAN_UNPOISON_MEMORY_REGION(addr, size)
 ```
 
+> [!NOTE]
+> If you manually poison memory, you must unpoison it before reuse. This is especially important for stack addresses (e.g. a stack local variable), which are frequently reused during program execution. You risk introducing `use-after-poison` false positives in manually poisoned stack addresses if you fail to unpoison them before their stack frame is removed.
+
 ## Alignment requirements for AddressSanitizer poisoning
 
 Any manual poisoning of shadow bytes must consider the alignment requirements. The user must add padding if necessary so the shadow bytes end on a byte boundary in the shadow memory. Each bit in the AddressSanitizer shadow memory encodes the state of a single byte in the application's memory. This encoding means the total size of each allocation, including any padding, must align to an 8-byte boundary. If the alignment requirement isn't satisfied, it can lead to incorrect bug reporting. The incorrect reporting could manifest as missing reports (false negatives) or reports on non-errors (false-positives).
