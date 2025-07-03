@@ -455,8 +455,6 @@ The iterator type.
 *`S`*\
 The sentinel type to test.
 
-### Remarks
-
 ### Example: `sized_sentinel_for`
 
 The following example uses the `sized_sentinel_for` concept to verify that the sentinel for a `vector<int>` can be subtracted from the vectors iterator in constant time:

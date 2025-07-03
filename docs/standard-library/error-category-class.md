@@ -71,8 +71,6 @@ The error code value to store in the [error_condition](../standard-library/error
 
 Returns `error_condition(_Errval, *this)`.
 
-### Remarks
-
 ### <a name="equivalent"></a> equivalent
 
 Returns a value that specifies whether error objects are equivalent.
@@ -128,8 +126,6 @@ The error code value to describe.
 #### Return Value
 
 Returns a descriptive name of the error code *val* for the category. If the error code is unrecognized, returns `"unknown error"`.
-
-#### Remarks
 
 ### <a name="name"></a> name
 

@@ -72,8 +72,6 @@ Yields `stdext::allocators::cache_chunklist<sizeof(Type)>`.
 #define CACHE_CHUNKLIST <cache_class>
 ```
 
-### Remarks
-
 ## <a name="cache_freelist"></a> CACHE_FREELIST
 
 Yields `stdext::allocators::cache_freelist<sizeof(Type), max>`.
@@ -82,8 +80,6 @@ Yields `stdext::allocators::cache_freelist<sizeof(Type), max>`.
 #define CACHE_FREELIST(max) <cache_class>
 ```
 
-### Remarks
-
 ## <a name="cache_suballoc"></a> CACHE_SUBALLOC
 
 Yields `stdext::allocators::cache_suballoc<sizeof(Type)>`.
@@ -91,8 +87,6 @@ Yields `stdext::allocators::cache_suballoc<sizeof(Type)>`.
 ```cpp
 #define CACHE_SUBALLOC <cache_class>
 ```
-
-### Remarks
 
 ## <a name="sync_default"></a> SYNC_DEFAULT
 

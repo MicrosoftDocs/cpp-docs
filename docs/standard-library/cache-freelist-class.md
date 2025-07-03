@@ -67,8 +67,6 @@ The number of elements in the array to be allocated.
 
 A pointer to the allocated object.
 
-### Remarks
-
 ## <a name="cache_freelist"></a> cache_freelist::cache_freelist
 
 Constructs an object of type `cache_freelist`.
@@ -76,8 +74,6 @@ Constructs an object of type `cache_freelist`.
 ```cpp
 cache_freelist();
 ```
-
-### Remarks
 
 ## <a name="deallocate"></a> cache_freelist::deallocate
 
@@ -94,8 +90,6 @@ A pointer to the first object to be deallocated from storage.
 
 *count*\
 The number of objects to be deallocated from storage.
-
-### Remarks
 
 ## See also
 

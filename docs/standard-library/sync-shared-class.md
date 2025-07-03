@@ -97,8 +97,6 @@ The cache to compare for equality.
 
 **`true`** if the result of `cache.equals(Other.cache)`, where `cache` represents the cache object, is **`true`**; otherwise, **`false`**.
 
-### Remarks
-
 ## See also
 
 [\<allocators>](../standard-library/allocators-header.md)

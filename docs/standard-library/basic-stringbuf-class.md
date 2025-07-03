@@ -365,8 +365,6 @@ void basic_stringbuf<T>::swap(basic_stringbuf& other)
 *other*\
 The basic_stringbuf whose contents will be swapped with this basic_stringbuf.
 
-### Remarks
-
 ## <a name="op_eq"></a> basic_stringbuf::operator=
 
 Assigns the contents of the basic_stringbuf on the right side of the operator to the basic_stringbuf on the left side.
@@ -379,8 +377,6 @@ basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)
 
 *other*\
 A basic_stringbuf whose contents, including locale traits, will be assigned to the stringbuf on the left side of the operator.
-
-### Remarks
 
 ## See also
 

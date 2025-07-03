@@ -93,8 +93,6 @@ The cache object to compare for equality.
 
 The member function always returns **`true`**.
 
-### Remarks
-
 ## See also
 
 [\<allocators>](../standard-library/allocators-header.md)

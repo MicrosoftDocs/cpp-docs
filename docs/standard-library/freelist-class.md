@@ -56,8 +56,6 @@ Constructs an object of type `freelist`.
 freelist();
 ```
 
-### Remarks
-
 ## <a name="pop"></a> freelist::pop
 
 Removes the first memory block from the free list.

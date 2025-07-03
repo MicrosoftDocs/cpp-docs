@@ -64,8 +64,6 @@ The number of elements in the array to be allocated.
 
 A pointer to the allocated object.
 
-### Remarks
-
 ## <a name="cache_suballoc"></a> cache_suballoc::cache_suballoc
 
 Constructs an object of type `cache_suballoc`.
@@ -73,8 +71,6 @@ Constructs an object of type `cache_suballoc`.
 ```cpp
 cache_suballoc();
 ```
-
-### Remarks
 
 ## <a name="deallocate"></a> cache_suballoc::deallocate
 
@@ -91,8 +87,6 @@ A pointer to the first object to be deallocated from storage.
 
 *count*\
 The number of objects to be deallocated from storage.
-
-### Remarks
 
 ## See also
 

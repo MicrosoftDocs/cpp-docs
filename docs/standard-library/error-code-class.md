@@ -82,8 +82,6 @@ Returns the error category.
 const error_category& category() const;
 ```
 
-#### Remarks
-
 ### <a name="clear"></a> clear
 
 Clears the error code value and category.

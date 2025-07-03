@@ -97,8 +97,6 @@ The cache object to compare for equality.
 
 **`false`** if no cache object has been allocated for this object or for *Other* in the current thread. Otherwise it returns the result of applying `operator==` to the two cache objects.
 
-### Remarks
-
 ## See also
 
 [\<allocators>](../standard-library/allocators-header.md)

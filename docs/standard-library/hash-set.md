@@ -19,8 +19,6 @@ Defines the container class templates hash_set and hash_multiset and their suppo
 #include <hash_set>
 ```
 
-## Remarks
-
 ### Operators
 
 |Hash_set version|Hash_multiset version|Description|

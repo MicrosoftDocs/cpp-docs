@@ -55,8 +55,6 @@ The cache object to compare for equality.
 
 The member function always returns **`false`**.
 
-### Remarks
-
 ## See also
 
 [\<allocators>](../standard-library/allocators-header.md)

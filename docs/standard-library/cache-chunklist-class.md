@@ -64,8 +64,6 @@ The number of elements in the array to be allocated.
 
 A pointer to the allocated object.
 
-### Remarks
-
 ## <a name="cache_chunklist"></a> cache_chunklist::cache_chunklist
 
 Constructs an object of type `cache_chunklist`.
@@ -73,8 +71,6 @@ Constructs an object of type `cache_chunklist`.
 ```cpp
 cache_chunklist();
 ```
-
-### Remarks
 
 ## <a name="deallocate"></a> cache_chunklist::deallocate
 
@@ -91,8 +87,6 @@ A pointer to the first object to be deallocated from storage.
 
 *count*\
 The number of objects to be deallocated from storage.
-
-### Remarks
 
 ## See also
 

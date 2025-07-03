@@ -161,8 +161,6 @@ state_type state() const;
 
 The [conversion state](../standard-library/wstring-convert-class.md) object that represents the state of the conversion.
 
-### Remarks
-
 ## <a name="state_type"></a> wstring_convert::state_type
 
 A type that represents the conversion state.
