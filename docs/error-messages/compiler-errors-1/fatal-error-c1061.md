@@ -8,7 +8,7 @@ ms.assetid: 9366c0bc-96e0-4967-aa7d-4ebf098de806
 ---
 # Fatal Error C1061
 
-compiler limit : blocks nested too deeply
+> compiler limit : blocks nested too deeply
 
 Nesting of code blocks exceeds the limit of 128 nesting levels. This is a hard limit in the compiler for both C and C++, in both the 32-bit and 64-bit tool set. The count of nesting levels can be increased by anything that creates a scope or block. For example, namespaces, using directives, preprocessor expansions, template expansion, exception handling, loop constructs, and else-if clauses can all increase the nesting level seen by the compiler.
 

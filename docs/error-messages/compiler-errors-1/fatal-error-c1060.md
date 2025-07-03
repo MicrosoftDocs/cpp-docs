@@ -8,7 +8,7 @@ ms.assetid: feaf305c-c84c-4160-b974-50e283412849
 ---
 # Fatal Error C1060
 
-compiler is out of heap space
+> compiler is out of heap space
 
 The operating system or run-time library cannot fill a request for memory.
 

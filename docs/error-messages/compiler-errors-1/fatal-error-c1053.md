@@ -8,7 +8,7 @@ ms.assetid: f50c1c6a-d9cc-42fa-984e-4e2e6e9cd1b1
 ---
 # Fatal Error C1053
 
-'\<identifier>' : function too large
+> '<identifier>' : function too large
 
 The function is too large to compile.
 

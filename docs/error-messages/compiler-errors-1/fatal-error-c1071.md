@@ -8,7 +8,7 @@ ms.assetid: 489f1786-370e-4ecd-af67-538fe6e5bd4e
 ---
 # Fatal Error C1071
 
-unexpected end of file found in comment
+> unexpected end of file found in comment
 
 The compiler reached the end of the file while scanning a comment.
 

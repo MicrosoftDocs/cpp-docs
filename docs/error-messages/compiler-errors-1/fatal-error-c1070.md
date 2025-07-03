@@ -8,7 +8,7 @@ ms.assetid: 1058269a-5db6-4c23-a97f-b5269eb9188b
 ---
 # Fatal Error C1070
 
-mismatched #if/#endif pair in file 'filename'
+> mismatched #if/#endif pair in file 'filename'
 
 An `#if`, `#ifdef`, or `#ifndef` directive has no corresponding `#endif`.
 

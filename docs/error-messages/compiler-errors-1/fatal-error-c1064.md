@@ -8,6 +8,6 @@ ms.assetid: d4598a28-b8f6-4e78-a0c6-db324f5bdfc3
 ---
 # Fatal Error C1064
 
-compiler limit : token overflowed internal buffer
+> compiler limit : token overflowed internal buffer
 
 An identifier exceeds the length of the internal buffer used for identifiers. Shorten the name.
