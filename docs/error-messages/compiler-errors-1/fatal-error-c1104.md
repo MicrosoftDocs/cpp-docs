@@ -18,7 +18,7 @@ For more information, see [#import Directive](../../preprocessor/hash-import-dir
 
 ## Example
 
-The following sample will generate C1104:
+The following example will generate C1104:
 
 ```cpp
 // C1104.cpp

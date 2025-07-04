@@ -16,7 +16,7 @@ The value that is passed to [`/Yc`](../../build/reference/yc-create-precompiled-
 
 ## Example
 
-The following sample generates C1094:
+The following example generates C1094:
 
 ```
 // C1094.h

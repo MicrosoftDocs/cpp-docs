@@ -18,7 +18,7 @@ For more information, see [#import Directive](../../preprocessor/hash-import-dir
 
 ## Example
 
-The following sample will generate C1103:
+The following example will generate C1103:
 
 ```cpp
 // C1103.cpp
