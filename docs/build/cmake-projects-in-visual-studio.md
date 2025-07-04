@@ -330,7 +330,7 @@ Not everything in the cache is imported. Properties such as the generator and th
 
    :::image type="content" source="media/cmake-import-wizard.png" alt-text="Screenshot of the Import C Make Project from Cache wizard. The directory path of the C Make project to import goes in the folder textbox.":::
 
-   When the wizard completes, you can see the new *`CMakeCache.txt`* file in **Solution Explorer** next to the root *`CMakeLists.txt*` file in your project.
+   When the wizard completes, you can see the new *`CMakeCache.txt`* file in **Solution Explorer** next to the root *`CMakeLists.txt`* file in your project.
 
 ## Building CMake projects
 
