@@ -10,4 +10,6 @@ ms.assetid: 173179f1-1e14-4a91-9451-122f8a53c0b8
 
 > Cannot close filetype file: 'file': message
 
+## Remarks
+
 If the message says "bad file number", the file may have been closing in the foreground while compiling in the background.

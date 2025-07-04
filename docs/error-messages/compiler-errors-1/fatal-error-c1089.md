@@ -10,4 +10,6 @@ ms.assetid: c4f1e8e5-62c5-464a-9112-99b0790a0fb7
 
 > Cannot truncate filetype file: 'file': message
 
+## Remarks
+
 The compiler cannot shrink a file to zero length.

@@ -10,9 +10,13 @@ ms.assetid: 9d276939-9c47-4235-9d20-76b8434f9731
 
 > fatal error importing progid: 'message'
 
+## Remarks
+
 The compiler detected a problem importing a type library.  For example, you cannot specify a type library with progid and also specify `no_registry`.
 
 For more information, see [#import Directive](../../preprocessor/hash-import-directive-cpp.md).
+
+## Example
 
 The following sample will generate C1103:
 

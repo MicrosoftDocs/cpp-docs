@@ -10,6 +10,8 @@ ms.assetid: bcaa87f0-fbfc-4a33-844b-3b9f5d67f279
 
 > Edit and Continue does not support changes to data types; build required
 
+## Remarks
+
 You changed or added a data type since the last successful build.
 
 - Edit and Continue does not support changes to existing data types, including class, struct, or enum definitions. You must stop debugging and build the application.

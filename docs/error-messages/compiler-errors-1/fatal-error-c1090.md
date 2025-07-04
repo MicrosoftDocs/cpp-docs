@@ -9,6 +9,8 @@ helpviewer_keywords: ["C1090"]
 
 > PDB API call failed, error code '*error-number*': *message*
 
+## Remarks
+
 An error occurred in processing a PDB file.
 
 Error C1090 is a catch-all for uncommon compiler PDB file errors that aren't reported separately. We only have generic advice for resolving this issue:

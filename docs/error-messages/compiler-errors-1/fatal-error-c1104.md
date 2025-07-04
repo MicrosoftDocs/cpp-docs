@@ -10,9 +10,13 @@ ms.assetid: 45bd85c4-77d3-4d3c-b167-49c563aefb4d
 
 > fatal error importing libid: 'message'
 
+## Remarks
+
 The compiler detected a problem importing a type library.  For example, you cannot specify a type library with libid and also specify `no_registry`.
 
 For more information, see [#import Directive](../../preprocessor/hash-import-directive-cpp.md).
+
+## Example
 
 The following sample will generate C1104:
 
