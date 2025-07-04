@@ -8,7 +8,7 @@ ms.assetid: 812d4201-9154-48b0-b9af-5959c082ca33
 ---
 # Fatal Error C1091
 
-compiler limit: string exceeds 'length' bytes in length
+> compiler limit: string exceeds 'length' bytes in length
 
 A string constant exceeded the current limit on the length of strings.
 

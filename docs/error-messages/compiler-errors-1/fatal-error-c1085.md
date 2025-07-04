@@ -8,7 +8,7 @@ ms.assetid: f2766365-d09b-4299-8a98-12e5aca98568
 ---
 # Fatal Error C1085
 
-Cannot write filetype file: 'file': message
+> Cannot write filetype file: 'file': message
 
 ### To fix by checking the following possible causes
 

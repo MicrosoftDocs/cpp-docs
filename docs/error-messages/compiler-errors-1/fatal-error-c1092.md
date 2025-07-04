@@ -8,7 +8,7 @@ ms.assetid: bcaa87f0-fbfc-4a33-844b-3b9f5d67f279
 ---
 # Fatal Error C1092
 
-Edit and Continue does not support changes to data types; build required
+> Edit and Continue does not support changes to data types; build required
 
 You changed or added a data type since the last successful build.
 

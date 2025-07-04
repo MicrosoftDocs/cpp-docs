@@ -8,7 +8,7 @@ ms.assetid: 45bd85c4-77d3-4d3c-b167-49c563aefb4d
 ---
 # Fatal Error C1104
 
-fatal error importing libid: 'message'
+> fatal error importing libid: 'message'
 
 The compiler detected a problem importing a type library.  For example, you cannot specify a type library with libid and also specify `no_registry`.
 

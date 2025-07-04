@@ -8,7 +8,7 @@ ms.assetid: e58adf17-cbe1-4955-a5c7-80622bbba249
 ---
 # Fatal Error C1081
 
-'symbol': file name too long
+> 'symbol': file name too long
 
 The length of a file pathname exceeds `_MAX_PATH` (defined by STDLIB.h as 260 characters). Shorten the name of the file.
 
