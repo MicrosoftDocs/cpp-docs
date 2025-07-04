@@ -31,10 +31,10 @@ When `_ITERATOR_DEBUG_LEVEL` is defined as 1 or 2, these iterator checks are per
 
 :::row:::
    :::column span="":::
-      &emsp;&emsp;[`basic_string::operator[]`](basic-string-class.md#op_at)\
-      &emsp;&emsp;[`bitset::operator[]`](bitset-class.md#op_at)\
-      &emsp;&emsp;[`deque::back`](deque-class.md#back)\
-      &emsp;&emsp;[`deque::front`](deque-class.md#front)
+      [`basic_string::operator[]`](basic-string-class.md#op_at)\
+      [`bitset::operator[]`](bitset-class.md#op_at)\
+      [`deque::back`](deque-class.md#back)\
+      [`deque::front`](deque-class.md#front)
    :::column-end:::
    :::column span="":::
       [`deque::operator[]`](deque-class.md#op_at)\
