@@ -6,7 +6,7 @@ api_name: ["fabsf", "fabs", "fabsl", "_o_fabs", "_o_fabsf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["fabs", "fabsf", "fabsl", "math\fabs", "math\fabsf", "math\fabsl"]
+f1_keywords: ["fabs", "fabsf", "fabsl", "math/fabs", "math/fabsf", "math/fabsl"]
 helpviewer_keywords: ["absolute values", "fabsf function", "calculating absolute values", "fabs function", "fabsl function"]
 ---
 # `fabs`, `fabsf`, `fabsl`
