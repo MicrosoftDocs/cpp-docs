@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Checked Iterators"
 title: "Checked Iterators"
-ms.date: "11/04/2016"
+description: "Learn more about: Checked Iterators"
+ms.date: 11/04/2016
 f1_keywords: ["_SECURE_SCL_THROWS"]
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library", "iterators, checked", "checked iterators"]
-ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
 ---
 # Checked Iterators
 
