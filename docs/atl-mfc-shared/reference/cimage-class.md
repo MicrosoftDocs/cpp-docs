@@ -745,7 +745,7 @@ static HRESULT GetImporterFilterString(
 A reference to a `CSimpleString` object. See **Remarks** for more information.
 
 *`aguidFileTypes`*<br/>
-An array of GUIDs, with each element corresponding to one of the file types in the string. In the example in *`pszAllFilesDescription`* below, *`aguidFileTypes[0]*` is `GUID_NULL` with the remaining array values are the image file formats supported by the current operating system.
+An array of GUIDs, with each element corresponding to one of the file types in the string. In the example in *`pszAllFilesDescription`* below, *`aguidFileTypes[0]`* is `GUID_NULL` with the remaining array values are the image file formats supported by the current operating system.
 
 > [!NOTE]
 > For a complete list of constants, see **Image File Format Constants** in the Windows SDK.

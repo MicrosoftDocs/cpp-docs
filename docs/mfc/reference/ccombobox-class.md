@@ -515,7 +515,7 @@ BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;
 
 ### Parameters
 
-*`pcbi*<br/>
+*`pcbi`*<br/>
 A pointer to the [`COMBOBOXINFO`](/windows/win32/api/winuser/ns-winuser-comboboxinfo) structure.
 
 ### Return Value

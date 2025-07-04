@@ -1245,7 +1245,7 @@ Points to a [`POINT` structure](/windows/win32/api/windef/ns-windef-point) or `C
 *`pSize`*<br/>
 Points to a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or `CSize` object that contains the control's size
 
-*`pParentWnd*`<br/>
+*`pParentWnd`*<br/>
 Specifies the control's parent window. It must not be `NULL`.
 
 *`nID`*<br/>
@@ -2319,7 +2319,7 @@ BOOL FlashWindowEx(
 
 ### Parameters
 
-*`dwFlags*`<br/>
+*`dwFlags`*<br/>
 Specifies the flash status. For a complete list of values, see the [`FLASHWINFO`](/windows/win32/api/winuser/ns-winuser-flashwinfo) structure.
 
 *`uCount`*<br/>
@@ -4107,7 +4107,7 @@ CWnd* GetWindow(UINT nCmd) const;
 
 ### Parameters
 
-*`nCmd*`<br/>
+*`nCmd`*<br/>
 Specifies the relationship between `CWnd` and the returned window. It can take one of the following values:
 
 - `GW_CHILD` Identifies the `CWnd` first child window.
