@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1081"
 title: "Fatal Error C1081"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1081"
+ms.date: 11/04/2016
 f1_keywords: ["C1081"]
 helpviewer_keywords: ["C1081"]
-ms.assetid: e58adf17-cbe1-4955-a5c7-80622bbba249
 ---
 # Fatal Error C1081
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1084"
 title: "Fatal Error C1084"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1084"
+ms.date: 11/04/2016
 f1_keywords: ["C1084"]
 helpviewer_keywords: ["C1084"]
-ms.assetid: b2f273ef-3a14-4d5f-8ce0-7a11a0388fe6
 ---
 # Fatal Error C1084
 

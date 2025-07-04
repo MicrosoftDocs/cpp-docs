@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1099"
 title: "Fatal Error C1099"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1099"
+ms.date: 11/04/2016
 f1_keywords: ["C1099"]
 helpviewer_keywords: ["C1099"]
-ms.assetid: c050b074-a06a-4026-9e10-569029cc0739
 ---
 # Fatal Error C1099
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1092"
 title: "Fatal Error C1092"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1092"
+ms.date: 11/04/2016
 f1_keywords: ["C1092"]
 helpviewer_keywords: ["C1092"]
-ms.assetid: bcaa87f0-fbfc-4a33-844b-3b9f5d67f279
 ---
 # Fatal Error C1092
 

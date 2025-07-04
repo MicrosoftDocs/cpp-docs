@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1094"
 title: "Fatal Error C1094"
+description: "Learn more about: Fatal Error C1094"
 ms.date: 08/17/2022
 f1_keywords: ["C1094"]
 helpviewer_keywords: ["C1094"]
-ms.assetid: 9e1193b2-cb95-44f9-bf6f-019e0d41dd97
 ---
 # Fatal Error C1094
 

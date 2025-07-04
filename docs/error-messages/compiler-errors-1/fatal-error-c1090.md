@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Fatal Error C1090 PDB API call failed"
 title: "Fatal Error C1090"
+description: "Learn more about: Fatal Error C1090 PDB API call failed"
 ms.date: 04/01/2021
 f1_keywords: ["C1090"]
 helpviewer_keywords: ["C1090"]

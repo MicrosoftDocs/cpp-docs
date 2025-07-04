@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1098"
 title: "Fatal Error C1098"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1098"
+ms.date: 11/04/2016
 f1_keywords: ["C1098"]
 helpviewer_keywords: ["C1098"]
-ms.assetid: 09a1a14b-95bd-49db-b644-192efbaf9f45
 ---
 # Fatal Error C1098
 
