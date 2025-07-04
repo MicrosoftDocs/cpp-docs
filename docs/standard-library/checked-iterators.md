@@ -79,13 +79,13 @@ using namespace std;
 
 int main()
 {
-   vector<int> v;
-   v.push_back(67);
+    vector<int> v;
+    v.push_back(67);
 
-   int i = v[0];
-   cout << i << endl;
+    int i = v[0];
+    cout << i << endl;
 
-   i = v[1]; //triggers invalid parameter handler
+    i = v[1]; //triggers invalid parameter handler
 }
 ```
 
@@ -105,9 +105,9 @@ using namespace std;
 
 int main()
 {
-   vector<int> v;
+    vector<int> v;
 
-   int& i = v.front(); // triggers invalid parameter handler
+    int& i = v.front(); // triggers invalid parameter handler
 }
 ```
 
@@ -134,7 +134,8 @@ void print(const string& s, const C& c)
 {
     cout << s;
 
-    for (const auto& e : c) {
+    for (const auto& e : c)
+    {
         cout << e << " ";
     }
 
