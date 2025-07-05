@@ -18,7 +18,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Example
 
-The following sample generates C1190:
+The following example generates C1190:
 
 ```cpp
 // C1190.cpp

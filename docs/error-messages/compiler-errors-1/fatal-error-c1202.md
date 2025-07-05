@@ -16,7 +16,7 @@ A template definition was recursive or exceeded complexity limits.
 
 ## Example
 
-The following sample generates C1202.
+The following example generates C1202.
 
 ```cpp
 // C1202.cpp

@@ -18,7 +18,7 @@ To resolve this error, only reference files from the version of the common langu
 
 ## Example
 
-The following sample generates C1197:
+The following example generates C1197:
 
 ```cpp
 // C1197.cpp

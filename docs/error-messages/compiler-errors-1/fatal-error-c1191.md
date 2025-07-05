@@ -16,7 +16,7 @@ The instruction to import mscorlib.dll into a program that uses /clr programming
 
 ## Example
 
-The following sample generates C1191:
+The following example generates C1191:
 
 ```cpp
 // C1191.cpp
