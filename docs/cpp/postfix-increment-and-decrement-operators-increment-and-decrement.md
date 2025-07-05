@@ -53,9 +53,9 @@ int main() {
 Postincrement and postdecrement operations on enumerated types are not supported:
 
 ```cpp
-enum Compass { North, South, East, West );
+enum Compass { North, South, East, West };
 Compass myCompass;
-for( myCompass = North; myCompass != West; myCompass++ ) // Error
+for( myCompass = North; myCompass != West; myCompass++ ); // Error
 ```
 
 ## See also
