@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Fatal Error C1107"
 title: "Fatal Error C1107"
+description: "Learn more about: Fatal Error C1107"
 ms.date: 11/22/2021
 f1_keywords: ["C1107"]
 helpviewer_keywords: ["C1107"]
-ms.assetid: 541a4d9f-10bc-4dd8-b68e-15e548f3dc0a
 ---
 # Fatal Error C1107
 
 > could not find assembly '*file*': please specify the assembly search path using `/AI` or by setting the `LIBPATH` environment variable
+
+## Remarks
 
 A metadata file was passed to a [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive that the compiler was unable to locate.
 

@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Fatal Error C1091"
 title: "Fatal Error C1091"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1091"
+ms.date: 11/04/2016
 f1_keywords: ["C1091"]
 helpviewer_keywords: ["C1091"]
-ms.assetid: 812d4201-9154-48b0-b9af-5959c082ca33
 ---
 # Fatal Error C1091
 
-compiler limit: string exceeds 'length' bytes in length
+> compiler limit: string exceeds 'length' bytes in length
+
+## Remarks
 
 A string constant exceeded the current limit on the length of strings.
 
