@@ -369,7 +369,7 @@ items:
         - name: Pimpl idiom for compile-time encapsulation
           href: ../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
         - name: Portability at ABI boundaries
-          href: ../cpp/portability-at-abi-boundaries-modern-cpp.md 
+          href: ../cpp/portability-at-abi-boundaries-modern-cpp.md
         - name: Constructors
           items: 
             - name: Constructors
