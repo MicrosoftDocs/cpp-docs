@@ -10,9 +10,13 @@ ms.assetid: dee2266d-6c40-4f6e-91db-f01e65f8d2bc
 
 > managed targeted code requires a '/clr' option
 
+## Remarks
+
 You are using CLR constructs but you did not specify **/clr**.
 
 For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).
+
+## Example
 
 The following sample generates C1190:
 

@@ -10,6 +10,8 @@ ms.assetid: 6f9580fd-ecef-48be-9780-dcf666704279
 
 > number of sections exceeded object file format limit : compile with /bigobj
 
+## Remarks
+
 An .obj file exceeded the number of allowable sections, a COFF object file format limitation.
 
 Reaching this section limitation can be the result of using [/Gy](../../build/reference/gy-enable-function-level-linking.md) and a debug build; **/Gy** causes functions to go into their own COMDAT sections. In a debug build, there is a debug info section for each COMDAT function.

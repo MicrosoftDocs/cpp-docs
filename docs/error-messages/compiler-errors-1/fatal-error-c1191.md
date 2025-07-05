@@ -10,7 +10,11 @@ ms.assetid: 2888c6c4-b4e6-449e-8ee0-7917f31086df
 
 > 'dll' can only be imported at global scope
 
+## Remarks
+
 The instruction to import mscorlib.dll into a program that uses /clr programming cannot appear in a namespace or function, but must appear at global scope.
+
+## Example
 
 The following sample generates C1191:
 

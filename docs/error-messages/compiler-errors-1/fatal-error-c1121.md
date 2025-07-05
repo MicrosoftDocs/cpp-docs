@@ -10,4 +10,6 @@ ms.assetid: d16e51c5-4c50-4303-a028-ca60f7a3273c
 
 > call to CryptoAPI failed
 
+## Remarks
+
 The compiler made a call to the CryptoAPI and the call failed. Reinstall Visual Studio and possibly reinstall the operating system.

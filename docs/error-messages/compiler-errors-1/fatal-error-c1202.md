@@ -10,9 +10,11 @@ ms.assetid: c859adb8-17a7-4fa1-a1f3-5820b7bf3849
 
 > recursive type or function dependency context too complex
 
+## Remarks
+
 A template definition was recursive or exceeded complexity limits.
 
-## Examples
+## Example
 
 The following sample generates C1202.
 
