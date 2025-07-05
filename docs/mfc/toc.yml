@@ -2919,6 +2919,6 @@ items:
     - name: Add a method to an IDL interface in a MFC project
       href: reference/add-idl-mfc-method-wizard.md
     - name: Add a property to an IDL interface in a MFC project
-      href: reference/add-interface-definition-library-mfc-property-wizard.md 
+      href: reference/add-interface-definition-library-mfc-property-wizard.md
     - name: MFC class wizard
-      href: reference/mfc-class-wizard.md    
+      href: reference/mfc-class-wizard.md

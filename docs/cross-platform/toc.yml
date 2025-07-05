@@ -2,7 +2,7 @@ items:
 - name: Cross-platform mobile development with C++
   href: ../cross-platform/index.yml
 - name: Overview
-  href: ../cross-platform/visual-cpp-for-cross-platform-mobile-development.md 
+  href: ../cross-platform/visual-cpp-for-cross-platform-mobile-development.md
 - name: Get Started
   expanded: true
   items:
