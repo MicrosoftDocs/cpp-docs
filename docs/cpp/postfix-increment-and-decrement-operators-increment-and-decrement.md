@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Postfix Increment and Decrement Operators: ++ and --"
 title: "Postfix Increment and Decrement Operators: ++ and --"
-ms.date: "11/04/2016"
+description: "Learn more about: Postfix Increment and Decrement Operators: ++ and --"
+ms.date: 11/04/2016
 f1_keywords: ["--", "++"]
 helpviewer_keywords: ["increment operators [C++], syntax", "member-selection operators [C++]", "-- operator [C++], postfix decrement operators", "postfix operators [C++]", "++ operator [C++], postfix increment operators", "decrement operators [C++], syntax", "operators [C++], postfix", "decrement operators [C++]"]
-ms.assetid: 0204d5c8-51b0-4108-b8a1-074c5754d89c
 ---
 # Postfix Increment and Decrement Operators: `++` and `--`
 
