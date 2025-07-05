@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1209"
 title: "Fatal Error C1209"
+description: "Learn more about: Fatal Error C1209"
 ms.date: 08/17/2022
 f1_keywords: ["C1209"]
 helpviewer_keywords: ["C1209"]
-ms.assetid: aa9ee10f-abe3-4683-9792-adca4cbbabb5
 ---
 # Fatal Error C1209
 

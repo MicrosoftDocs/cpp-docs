@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1205"
 title: "Fatal Error C1205"
+description: "Learn more about: Fatal Error C1205"
 ms.date: 08/17/2022
 f1_keywords: ["C1205"]
 helpviewer_keywords: ["C1205"]
-ms.assetid: f855c145-8cf7-4dd1-bb19-257ee38b8382
 ---
 # Fatal Error C1205
 

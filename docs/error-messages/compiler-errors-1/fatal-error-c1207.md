@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1207"
 title: "Fatal Error C1207"
+description: "Learn more about: Fatal Error C1207"
 ms.date: 08/17/2022
 f1_keywords: ["C1207"]
 helpviewer_keywords: ["C1207"]
-ms.assetid: cd31b410-9523-47db-883c-e69a9351ffa2
 ---
 # Fatal Error C1207
 

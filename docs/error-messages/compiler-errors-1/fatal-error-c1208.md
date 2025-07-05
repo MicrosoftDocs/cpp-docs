@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1208"
 title: "Fatal Error C1208"
+description: "Learn more about: Fatal Error C1208"
 ms.date: 08/17/2022
 f1_keywords: ["C1208"]
 helpviewer_keywords: ["C1208"]
-ms.assetid: 4eefd8f0-5c2e-4a11-9e63-293e1139db65
 ---
 # Fatal Error C1208
 

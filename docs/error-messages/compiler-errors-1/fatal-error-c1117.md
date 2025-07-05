@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Fatal Error C1117"
 title: "Fatal Error C1117"
+description: "Learn more about: Fatal Error C1117"
 ms.date: 08/17/2022
 f1_keywords: ["C1117"]
 helpviewer_keywords: ["C1117"]

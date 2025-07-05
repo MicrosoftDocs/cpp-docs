@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1197"
 title: "Fatal Error C1197"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1197"
+ms.date: 11/04/2016
 f1_keywords: ["C1197"]
 helpviewer_keywords: ["C1197"]
-ms.assetid: 22b801b7-e792-41f6-a461-973c03c69f25
 ---
 # Fatal Error C1197
 

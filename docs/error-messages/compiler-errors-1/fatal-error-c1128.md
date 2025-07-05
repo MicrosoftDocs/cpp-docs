@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1128"
 title: "Fatal Error C1128"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1128"
+ms.date: 11/04/2016
 f1_keywords: ["C1128"]
 helpviewer_keywords: ["C1128"]
-ms.assetid: 6f9580fd-ecef-48be-9780-dcf666704279
 ---
 # Fatal Error C1128
 

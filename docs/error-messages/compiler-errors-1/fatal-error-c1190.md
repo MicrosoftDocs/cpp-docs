@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1190"
 title: "Fatal Error C1190"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1190"
+ms.date: 11/04/2016
 f1_keywords: ["C1190"]
 helpviewer_keywords: ["C1190"]
-ms.assetid: dee2266d-6c40-4f6e-91db-f01e65f8d2bc
 ---
 # Fatal Error C1190
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1201"
 title: "Fatal Error C1201"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1201"
+ms.date: 11/04/2016
 f1_keywords: ["C1201"]
 helpviewer_keywords: ["C1201"]
-ms.assetid: e58b9b9a-2c6f-454d-8719-9773aca765d1
 ---
 # Fatal Error C1201
 

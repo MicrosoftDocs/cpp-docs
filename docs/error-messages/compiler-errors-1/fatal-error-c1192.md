@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Fatal Error C1192"
 title: "Fatal Error C1192"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1192"
+ms.date: 11/04/2016
 f1_keywords: ["C1192"]
 helpviewer_keywords: ["C1192"]
 ---

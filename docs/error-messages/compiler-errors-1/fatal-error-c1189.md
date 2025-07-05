@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1189"
 title: "Fatal Error C1189"
-ms.date: "04/27/2018"
+description: "Learn more about: Fatal Error C1189"
+ms.date: 04/27/2018
 f1_keywords: ["C1189"]
 helpviewer_keywords: ["C1189"]
-ms.assetid: 2e5c8a78-edd4-411c-b619-558a96be148a
 ---
 # Fatal Error C1189
 
