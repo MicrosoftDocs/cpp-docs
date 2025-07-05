@@ -51,6 +51,11 @@ int main()
 }
 ```
 
+```Output
+10
+11
+```
+
 Postincrement and postdecrement operations on enumerated types are not supported:
 
 ```cpp
