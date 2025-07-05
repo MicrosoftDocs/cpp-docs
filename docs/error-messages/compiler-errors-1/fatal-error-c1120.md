@@ -8,6 +8,6 @@ ms.assetid: 34212b64-f4e5-4c55-9acc-6f6b2ab5f1c0
 ---
 # Fatal Error C1120
 
-call to GetProcAddress failed for 'function'
+> call to GetProcAddress failed for 'function'
 
 This error indicates Visual C++ needs to be reinstalled.

@@ -8,7 +8,7 @@ ms.assetid: dee2266d-6c40-4f6e-91db-f01e65f8d2bc
 ---
 # Fatal Error C1190
 
-managed targeted code requires a '/clr' option
+> managed targeted code requires a '/clr' option
 
 You are using CLR constructs but you did not specify **/clr**.
 

@@ -8,7 +8,7 @@ ms.assetid: c859adb8-17a7-4fa1-a1f3-5820b7bf3849
 ---
 # Fatal Error C1202
 
-recursive type or function dependency context too complex
+> recursive type or function dependency context too complex
 
 A template definition was recursive or exceeded complexity limits.
 

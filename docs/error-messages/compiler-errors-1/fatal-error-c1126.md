@@ -8,7 +8,7 @@ ms.assetid: f22b26a6-8ad7-47cf-a237-196c8ea60aca
 ---
 # Fatal Error C1126
 
-'identifier' : automatic allocation exceeds size
+> 'identifier' : automatic allocation exceeds size
 
 Space allocated for local variables of a function (plus a limited amount of space used by the compiler, such as an extra 20 bytes for swappable functions) exceeds the limit.
 

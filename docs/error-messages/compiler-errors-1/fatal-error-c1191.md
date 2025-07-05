@@ -8,7 +8,7 @@ ms.assetid: 2888c6c4-b4e6-449e-8ee0-7917f31086df
 ---
 # Fatal Error C1191
 
-'dll' can only be imported at global scope
+> 'dll' can only be imported at global scope
 
 The instruction to import mscorlib.dll into a program that uses /clr programming cannot appear in a namespace or function, but must appear at global scope.
 

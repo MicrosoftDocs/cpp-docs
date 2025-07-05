@@ -8,7 +8,7 @@ ms.assetid: 6f9580fd-ecef-48be-9780-dcf666704279
 ---
 # Fatal Error C1128
 
-number of sections exceeded object file format limit : compile with /bigobj
+> number of sections exceeded object file format limit : compile with /bigobj
 
 An .obj file exceeded the number of allowable sections, a COFF object file format limitation.
 
