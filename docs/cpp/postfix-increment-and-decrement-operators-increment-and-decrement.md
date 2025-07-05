@@ -43,10 +43,11 @@ The following code illustrates the postfix increment operator:
 #include <iostream>
 using namespace std;
 
-int main() {
-   int i = 10;
-   cout << i++ << endl;
-   cout << i << endl;
+int main()
+{
+    int i = 10;
+    cout << i++ << endl;
+    cout << i << endl;
 }
 ```
 
@@ -55,7 +56,7 @@ Postincrement and postdecrement operations on enumerated types are not supported
 ```cpp
 enum Compass { North, South, East, West };
 Compass myCompass;
-for( myCompass = North; myCompass != West; myCompass++ ); // Error
+for (myCompass = North; myCompass != West; myCompass++); // Error
 ```
 
 ## See also
