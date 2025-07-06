@@ -1,9 +1,8 @@
 ---
 title: "Application Information and Management"
 description: "Reference to the Microsoft Foundation Class library (MFC) application information and management functions."
-ms.date: "01/27/2020"
+ms.date: 01/27/2020
 helpviewer_keywords: ["applications [MFC], managing"]
-ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
 ---
 # Application Information and Management
 
@@ -173,6 +172,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 
 *`lpszName`*\
 A pointer to a string containing the resource ID.
+
 *`lpszType`*\
 A pointer to the type of resource. For a list of resource types, see [`FindResource`](/windows/win32/api/winbase/nf-winbase-findresourcea) in the Windows SDK.
 
