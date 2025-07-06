@@ -8,6 +8,6 @@ ms.assetid: 1112c17d-d60f-470d-b886-fd1a9556c0ea
 ---
 # Fatal Error C1508
 
-compiler limit : 'function' : more than 65535 argument bytes
+> compiler limit : 'function' : more than 65535 argument bytes
 
 The formal parameters to the function exceed the limit of 65535 bytes.

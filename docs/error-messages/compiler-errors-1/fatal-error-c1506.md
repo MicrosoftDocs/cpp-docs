@@ -8,7 +8,7 @@ ms.assetid: c73d5702-c898-4a32-b0fa-a118601a1e14
 ---
 # Fatal Error C1506
 
-unrecoverable block scoping error
+> unrecoverable block scoping error
 
 The block was too large to compile.
 

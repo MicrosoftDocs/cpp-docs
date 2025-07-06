@@ -8,7 +8,7 @@ ms.assetid: 150c827f-9514-41a9-8d7e-82f820749bcb
 ---
 # Fatal Error C1510
 
-Cannot open language resource clui.dll
+> Cannot open language resource clui.dll
 
 The compiler can't load the language resource DLL.
 

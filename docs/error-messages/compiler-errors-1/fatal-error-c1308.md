@@ -8,7 +8,7 @@ ms.assetid: 46177997-069e-433a-8e20-93c846d78ffd
 ---
 # Fatal Error C1308
 
-linking assemblies is not supported
+> linking assemblies is not supported
 
 A .netmodule is allowed as input to the linker, but an assembly is not. This error can be generated when an attempt is made to link an assembly compiled with `/clr:safe`.
 

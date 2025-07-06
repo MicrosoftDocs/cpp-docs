@@ -8,7 +8,7 @@ ms.assetid: ac48aa51-8023-42fe-b844-3f8bf228fbef
 ---
 # Fatal Error C1310
 
-profile guided optimizations are not available with OpenMP
+> profile guided optimizations are not available with OpenMP
 
 You will not be able to link with [/LTCG:PGI](../../build/reference/ltcg-link-time-code-generation.md) any module that was compiled with [/GL](../../build/reference/gl-whole-program-optimization.md).
 

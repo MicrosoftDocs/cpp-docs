@@ -8,7 +8,7 @@ ms.assetid: 8bb47c23-ac9c-4a33-9ede-4d63ed9d4ba8
 ---
 # Fatal Error C1350
 
-error loading dll 'dll': dll not found
+> error loading dll 'dll': dll not found
 
 The DLL that supports the attempted operation was not found.
 

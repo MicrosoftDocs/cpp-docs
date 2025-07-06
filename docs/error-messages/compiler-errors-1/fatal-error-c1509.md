@@ -8,7 +8,7 @@ ms.assetid: 40dd100d-c6ba-451c-bd26-2c99ec1c36d6
 ---
 # Fatal Error C1509
 
-compiler limit : too many exception handler states in function 'function'. simplify function
+> compiler limit : too many exception handler states in function 'function'. simplify function
 
 The code exceeds an internal limit on exception handler states (32,768 states).
 

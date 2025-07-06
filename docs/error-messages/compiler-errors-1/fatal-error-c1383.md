@@ -8,7 +8,7 @@ ms.assetid: ca224d14-d687-4fd6-80c2-8b82f28924ea
 ---
 # Fatal Error C1383
 
-compiler option /GL is incompatible with the installed version of common language runtime
+> compiler option /GL is incompatible with the installed version of common language runtime
 
 C1383 occurs when you are using a previous version of the common language runtime with a newer compiler, and when you compile with **/clr** and **/GL.**
 
