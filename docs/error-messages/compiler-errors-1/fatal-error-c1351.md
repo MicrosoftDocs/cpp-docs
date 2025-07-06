@@ -10,6 +10,8 @@ ms.assetid: 1f8502e4-1049-49c7-bbe3-fa101c79021e
 
 > error loading dll '*dll*': incompatible version
 
+## Remarks
+
 The wrong version of a DLL was found.
 
 This indicates a problem with your installation, and you should reinstall Visual Studio.

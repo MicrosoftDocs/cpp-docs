@@ -10,6 +10,8 @@ ms.assetid: c73d5702-c898-4a32-b0fa-a118601a1e14
 
 > unrecoverable block scoping error
 
+## Remarks
+
 The block was too large to compile.
 
 ### To fix by checking the following possible causes

@@ -10,7 +10,11 @@ ms.assetid: ac48aa51-8023-42fe-b844-3f8bf228fbef
 
 > profile guided optimizations are not available with OpenMP
 
+## Remarks
+
 You will not be able to link with [/LTCG:PGI](../../build/reference/ltcg-link-time-code-generation.md) any module that was compiled with [/GL](../../build/reference/gl-whole-program-optimization.md).
+
+## Example
 
 The following sample generates C1310:
 

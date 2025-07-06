@@ -10,6 +10,8 @@ ms.assetid: df0ca70d-ec6e-4400-926a-b877e2599978
 
 > The TypeForwardedTo Custom Attribute is not supported by the version of the runtime installed
 
+## Remarks
+
 C1211 occurs when you have a compiler for the current release, but a common language runtime from a previous release.
 
 Some functionality of the compiler may not work on a previous version of the run time.

@@ -10,9 +10,13 @@ ms.assetid: 46177997-069e-433a-8e20-93c846d78ffd
 
 > linking assemblies is not supported
 
+## Remarks
+
 A .netmodule is allowed as input to the linker, but an assembly is not. This error can be generated when an attempt is made to link an assembly compiled with `/clr:safe`.
 
 For more information, see [.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md).
+
+## Example
 
 The following sample generates C1308:
 

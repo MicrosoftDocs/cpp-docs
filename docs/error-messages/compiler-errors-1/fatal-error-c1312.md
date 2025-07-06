@@ -10,4 +10,6 @@ ms.assetid: 1aa7cd0e-d45f-4ae7-a85d-015ebb962eaf
 
 > Too many conditional branches in function. Simplify or refactor source code.
 
+## Remarks
+
 The code is too complex for the compiler to process without running out of stack memory.  Simplify your code.

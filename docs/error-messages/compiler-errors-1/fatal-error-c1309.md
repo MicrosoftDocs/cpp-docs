@@ -10,4 +10,6 @@ ms.assetid: a95363d6-a4f3-45fb-9690-aa7e552093b7
 
 > Mismatched versions of C2.DLL and PGODB\<version>.DLL
 
+## Remarks
+
 The toolset you are using to build and use [Profile-Guided Optimizations](../../build/profile-guided-optimizations.md) contains mismatched components.  If you cannot manually resolve this error, reinstall Visual C++.

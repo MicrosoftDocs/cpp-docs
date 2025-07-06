@@ -10,4 +10,6 @@ ms.assetid: 25797c39-f085-4d75-9eab-159ecd36ef49
 
 > unsupported inline assembly opcode
 
+## Remarks
+
 This error indicates a mismatch in your compiler .exe files, which may have occurred because of an incomplete installation. For example, you may have installed a service pack but not the Processor Pack. Install all required products.
