@@ -238,7 +238,7 @@ constexpr weekday& operator+=(const days& d) noexcept;
 
 ### Parameters
 
-`*d*`\
+*`d`*\
 The number of days to add.
 
 ### Return value
@@ -255,7 +255,7 @@ constexpr weekday& operator-=(const days& d) noexcept;
 
 ### Parameters
 
-`*d*`\
+*`d`*\
 The number of days to subtract.
 
 ### Return value
