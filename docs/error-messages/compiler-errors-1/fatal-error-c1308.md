@@ -18,7 +18,7 @@ For more information, see [.netmodule Files as Linker Input](../../build/referen
 
 ## Example
 
-The following sample generates C1308:
+The following example generates C1308:
 
 ```cpp
 // C1308.cpp

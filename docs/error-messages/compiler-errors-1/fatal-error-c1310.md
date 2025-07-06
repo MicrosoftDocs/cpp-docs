@@ -16,7 +16,7 @@ You will not be able to link with [/LTCG:PGI](../../build/reference/ltcg-link-ti
 
 ## Example
 
-The following sample generates C1310:
+The following example generates C1310:
 
 ```cpp
 // C1310.cpp
