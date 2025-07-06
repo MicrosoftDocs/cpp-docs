@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1309"
 title: "Fatal Error C1309"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1309"
+ms.date: 11/04/2016
 f1_keywords: ["C1309"]
 helpviewer_keywords: ["C1309"]
-ms.assetid: a95363d6-a4f3-45fb-9690-aa7e552093b7
 ---
 # Fatal Error C1309
 

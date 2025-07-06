@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1211"
 title: "Fatal Error C1211"
+description: "Learn more about: Fatal Error C1211"
 ms.date: 08/17/2022
 f1_keywords: ["C1211"]
 helpviewer_keywords: ["C1211"]
-ms.assetid: df0ca70d-ec6e-4400-926a-b877e2599978
 ---
 # Fatal Error C1211
 

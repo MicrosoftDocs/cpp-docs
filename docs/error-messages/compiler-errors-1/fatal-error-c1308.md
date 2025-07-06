@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1308"
 title: "Fatal Error C1308"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1308"
+ms.date: 11/04/2016
 f1_keywords: ["C1308"]
 helpviewer_keywords: ["C1308"]
-ms.assetid: 46177997-069e-433a-8e20-93c846d78ffd
 ---
 # Fatal Error C1308
 

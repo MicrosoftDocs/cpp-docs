@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1383"
 title: "Fatal Error C1383"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1383"
+ms.date: 11/04/2016
 f1_keywords: ["C1383"]
 helpviewer_keywords: ["C1383"]
-ms.assetid: ca224d14-d687-4fd6-80c2-8b82f28924ea
 ---
 # Fatal Error C1383
 

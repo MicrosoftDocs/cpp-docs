@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1352"
 title: "Fatal Error C1352"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1352"
+ms.date: 11/04/2016
 f1_keywords: ["C1352"]
 helpviewer_keywords: ["C1352"]
-ms.assetid: d044e8b0-b6ef-4d57-8eb5-6254071be707
 ---
 # Fatal Error C1352
 

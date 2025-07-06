@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1310"
 title: "Fatal Error C1310"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1310"
+ms.date: 11/04/2016
 f1_keywords: ["C1310"]
 helpviewer_keywords: ["C1310"]
-ms.assetid: ac48aa51-8023-42fe-b844-3f8bf228fbef
 ---
 # Fatal Error C1310
 

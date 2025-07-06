@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1350"
 title: "Fatal Error C1350"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1350"
+ms.date: 11/04/2016
 f1_keywords: ["C1350"]
 helpviewer_keywords: ["C1350"]
-ms.assetid: 8bb47c23-ac9c-4a33-9ede-4d63ed9d4ba8
 ---
 # Fatal Error C1350
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1307"
 title: "Fatal Error C1307"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1307"
+ms.date: 11/04/2016
 f1_keywords: ["C1307"]
 helpviewer_keywords: ["C1307"]
-ms.assetid: 6f77d3d4-ba8a-476c-b540-aff19eb4efc4
 ---
 # Fatal Error C1307
 

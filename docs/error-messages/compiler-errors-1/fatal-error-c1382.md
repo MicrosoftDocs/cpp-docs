@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1382"
 title: "Fatal Error C1382"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1382"
+ms.date: 11/04/2016
 f1_keywords: ["C1382"]
 helpviewer_keywords: ["C1382"]
-ms.assetid: 7a100f8c-3179-4927-a2f1-98de4c753850
 ---
 # Fatal Error C1382
 

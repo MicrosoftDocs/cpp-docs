@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1305"
 title: "Fatal Error C1305"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1305"
+ms.date: 11/04/2016
 f1_keywords: ["C1305"]
 helpviewer_keywords: ["C1305"]
-ms.assetid: 1629c850-e2db-4678-83d8-9bfc85323bc5
 ---
 # Fatal Error C1305
 

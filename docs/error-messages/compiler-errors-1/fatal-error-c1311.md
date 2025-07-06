@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1311"
 title: "Fatal Error C1311"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1311"
+ms.date: 11/04/2016
 f1_keywords: ["C1311"]
 helpviewer_keywords: ["C1311"]
-ms.assetid: 6590a06c-ce9d-4f17-8f62-c809343143b8
 ---
 # Fatal Error C1311
 
