@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Hint Files"
 title: "Hint Files"
-ms.date: "02/26/2019"
+description: "Learn more about: Hint Files"
+ms.date: 02/26/2019
 f1_keywords: ["cpp.hint", "vc.hint.file"]
 helpviewer_keywords: ["stop file", "cpp.hint", "hint file", "cpp.stop", "Class View, hint file"]
-ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
 ---
 # Hint Files
 
