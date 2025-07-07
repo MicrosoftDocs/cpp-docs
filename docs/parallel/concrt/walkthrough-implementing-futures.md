@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Walkthrough: Implementing Futures"
 title: "Walkthrough: Implementing Futures"
-ms.date: "04/25/2019"
+description: "Learn more about: Walkthrough: Implementing Futures"
+ms.date: 04/25/2019
 helpviewer_keywords: ["implementing futures [Concurrency Runtime]", "futures, implementing [Concurrency Runtime]"]
-ms.assetid: 82ea75cc-aaec-4452-b10d-8abce0a87e5b
 ---
 # Walkthrough: Implementing Futures
 

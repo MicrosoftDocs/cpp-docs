@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Contexts"
 title: "Contexts"
-ms.date: "11/04/2016"
+description: "Learn more about: Contexts"
+ms.date: 11/04/2016
 helpviewer_keywords: ["contexts [Concurrency Runtime]"]
-ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
 ---
 # Contexts
 

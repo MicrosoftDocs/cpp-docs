@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Schedule Groups"
 title: "Schedule Groups"
-ms.date: "11/04/2016"
+description: "Learn more about: Schedule Groups"
+ms.date: 11/04/2016
 helpviewer_keywords: ["schedule groups"]
-ms.assetid: 03523572-5891-4d17-89ce-fa795605f28b
 ---
 # Schedule Groups
 

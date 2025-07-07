@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Asynchronous Message Blocks"
 title: "Asynchronous Message Blocks"
-ms.date: "11/04/2016"
+description: "Learn more about: Asynchronous Message Blocks"
+ms.date: 11/04/2016
 helpviewer_keywords: ["non-greedy join [Concurrency Runtime]", "asynchronous message blocks", "greedy join [Concurrency Runtime]"]
-ms.assetid: 79c456c0-1692-480c-bb67-98f2434c1252
 ---
 # Asynchronous Message Blocks
 
