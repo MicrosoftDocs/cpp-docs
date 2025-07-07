@@ -7,7 +7,7 @@ ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
 ---
 # Contexts
 
-This document describes the role of contexts in the Concurrency Runtime. A thread that is attached to a scheduler is known as an *execution context*, or just *context*. The [concurrency::wait](reference/concurrency-namespace-functions.md#wait) function and the concurrency::[Context class](../../parallel/concrt/reference/context-class.md) enable you to control the behavior of contexts. Use the `wait` function to suspend the current context for a specified time. Use the `Context` class when you need more control over when contexts block, unblock, and yield, or when you want to oversubscribe the current context.
+This document describes the role of contexts in the Concurrency Runtime. A thread that is attached to a scheduler is known as an *execution context*, or just *context*. The [concurrency::wait](reference/concurrency-namespace-functions.md#wait) function and the [concurrency::Context class](../../parallel/concrt/reference/context-class.md) enable you to control the behavior of contexts. Use the `wait` function to suspend the current context for a specified time. Use the `Context` class when you need more control over when contexts block, unblock, and yield, or when you want to oversubscribe the current context.
 
 > [!TIP]
 > The Concurrency Runtime provides a default scheduler, and therefore you are not required to create one in your application. Because the Task Scheduler helps you fine-tune the performance of your applications, we recommend that you start with the [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) or the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) if you are new to the Concurrency Runtime.
@@ -24,7 +24,7 @@ For an example that uses the `wait` function to yield the current context, and t
 
 ## The Context Class
 
-The concurrency::[Context class](../../parallel/concrt/reference/context-class.md) provides a programming abstraction for an execution context and offers two important features: the ability to cooperatively block, unblock, and yield the current context, and the ability to oversubscribe the current context.
+The [concurrency::Context class](../../parallel/concrt/reference/context-class.md) provides a programming abstraction for an execution context and offers two important features: the ability to cooperatively block, unblock, and yield the current context, and the ability to oversubscribe the current context.
 
 ### Cooperative Blocking
 

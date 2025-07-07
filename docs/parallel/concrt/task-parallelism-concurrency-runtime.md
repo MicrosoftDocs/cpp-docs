@@ -151,7 +151,7 @@ This section describes the [concurrency::when_all](reference/concurrency-namespa
 
 ### <a name="when-all"></a> The when_all Function
 
-The `when_all` function produces a task that completes after a set of tasks complete. This function returns a std::[vector](../../standard-library/vector-class.md) object that contains the result of each task in the set. The following basic example uses `when_all` to create a task that represents the completion of three other tasks.
+The `when_all` function produces a task that completes after a set of tasks complete. This function returns a [std::vector](../../standard-library/vector-class.md) object that contains the result of each task in the set. The following basic example uses `when_all` to create a task that represents the completion of three other tasks.
 
 [!code-cpp[concrt-join-tasks#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_8.cpp)]
 
@@ -270,7 +270,7 @@ Unstructured task groups and structured task groups work with task handles in di
 
 [!code-cpp[concrt-make-task-structure#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_16.cpp)]
 
-To manage task handles for cases where you have a variable number of tasks, use a stack-allocation routine such as [_malloca](../../c-runtime-library/reference/malloca.md) or a container class, such as std::[vector](../../standard-library/vector-class.md).
+To manage task handles for cases where you have a variable number of tasks, use a stack-allocation routine such as [_malloca](../../c-runtime-library/reference/malloca.md) or a container class, such as [std::vector](../../standard-library/vector-class.md).
 
 Both `task_group` and `structured_task_group` support cancellation. For more information about cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).
 

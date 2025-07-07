@@ -257,7 +257,7 @@ The [concurrency::join](../../parallel/concrt/reference/join-class.md) and [conc
 
 Reading from a `join` or `multitype_join` object resembles calling the Windows API function `WaitForMultipleObjects` when it has the `bWaitAll` parameter set to `TRUE`. However, just like a `choice` object, `join` and `multitype_join` objects use an event mechanism that binds data to the event itself instead of to an external synchronization object.
 
-Reading from a `join` object produces a std::[vector](../../standard-library/vector-class.md) object. Reading from a `multitype_join` object produces a std::[tuple](../../standard-library/tuple-class.md) object. Elements appear in these objects in the same order as their corresponding source buffers are linked to the `join` or `multitype_join` object. Because the order in which you link source buffers to a `join` or `multitype_join` object is associated with the order of elements in the resulting `vector` or `tuple` object, we recommend that you do not unlink an existing source buffer from a join. Doing so can result in unspecified behavior.
+Reading from a `join` object produces a [std::vector](../../standard-library/vector-class.md) object. Reading from a `multitype_join` object produces a [std::tuple](../../standard-library/tuple-class.md) object. Elements appear in these objects in the same order as their corresponding source buffers are linked to the `join` or `multitype_join` object. Because the order in which you link source buffers to a `join` or `multitype_join` object is associated with the order of elements in the resulting `vector` or `tuple` object, we recommend that you do not unlink an existing source buffer from a join. Doing so can result in unspecified behavior.
 
 ### Greedy Versus Non-Greedy Joins
 
@@ -285,7 +285,7 @@ For complete examples that show how to use the `join` class, see [How to: Select
 
 ## <a name="timer"></a> timer Class
 
-The concurrency::[timer class](../../parallel/concrt/reference/timer-class.md) acts as a message source. A `timer` object sends a message to a target after a specified period of time has elapsed. The `timer` class is useful when you must delay sending a message or you want to send a message at a regular interval.
+The [concurrency::timer class](../../parallel/concrt/reference/timer-class.md) acts as a message source. A `timer` object sends a message to a target after a specified period of time has elapsed. The `timer` class is useful when you must delay sending a message or you want to send a message at a regular interval.
 
 The `timer` class sends its message to just one target. If you set the `_PTarget` parameter in the constructor to `NULL`, you can later specify the target by calling the [concurrency::ISource::link_target](reference/source-block-class.md#link_target) method.
 
