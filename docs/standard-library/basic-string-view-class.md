@@ -610,7 +610,7 @@ See [`starts_with`](#starts_with) to check if a string view starts with the spec
 ### Example
 
 ```cpp
-// Requires /std:c++20 or /std:c++latest
+// Requires /std:c++20 or later
 #include <string>
 #include <iostream>
 
@@ -1020,7 +1020,7 @@ See [`ends_with`](#ends_with) to see if a string ends with a suffix.
 ### Example
 
 ```cpp
-// Requires /std:c++20 or /std:c++latest
+// Requires /std:c++20 or later
 #include <string>
 #include <iostream>
 
