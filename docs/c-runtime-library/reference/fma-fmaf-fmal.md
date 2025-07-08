@@ -1,14 +1,13 @@
 ---
 title: "fma, fmaf, fmal"
 description: "API reference for fma, fmaf, and fmal; which multiplies two values together, adds a third value, and then rounds the result, while only losing a small amount of precision due to intermediary rounding."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["fma", "fmaf", "fmal", "_o_fma", "_o_fmaf", "_o_fmal"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fma", "fmaf", "fmal", "math/fma", "math/fmaf", "math/fmal"]
 helpviewer_keywords: ["fma function", "fmaf function", "fmal function"]
-ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
 ---
 # `fma`, `fmaf`, `fmal`
 

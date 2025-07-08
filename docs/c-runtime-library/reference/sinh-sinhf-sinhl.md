@@ -1,7 +1,7 @@
 ---
 title: "sinh, sinhf, sinhl"
 description: "API reference for calculating the hyperbolic sine of a floating-point value."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["sinh", "sinhl", "sinhf", "sinhl", "_o_sinh", "_o_sinhf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]

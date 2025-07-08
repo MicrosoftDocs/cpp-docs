@@ -1,6 +1,6 @@
 ---
-description: "Learn more about ranges alias templates."
 title: "<ranges> alias templates"
+description: "Learn more about ranges alias templates."
 ms.date: 01/28/2023
 f1_keywords: ["ranges/std::ranges::borrowed_iterator_t", "ranges/std::ranges::borrowed_subrange_t", "ranges/std::ranges::dangling", "ranges/std::ranges::iterator_t", "ranges/std::ranges::range_difference_t", "ranges/std::ranges::range_reference_t", "ranges/std::ranges::range_rvalue_reference_t", "ranges/std::ranges::range_size_t", "ranges/std::ranges::range_value_t", "ranges/std::ranges::sentinel_t"]
 helpviewer_keywords: ["std::ranges [C++], ranges::borrowed_iterator_t", "std::ranges [C++], ranges::borrowed_subrange_t", "std::ranges [C++], ranges::dangling", "std::ranges [C++], ranges::iterator_t", "std::ranges [C++], ranges::range_difference_t", "std::ranges [C++], ranges::range_reference_t", "std::ranges [C++], ranges::range_rvalue_reference_t", "std::ranges [C++], ranges::range_size_t", "std::ranges [C++], ranges::range_value_t", "std::ranges [C++], ranges::sentinel_t"]

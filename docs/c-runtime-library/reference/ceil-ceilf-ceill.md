@@ -1,14 +1,13 @@
 ---
 title: "ceil, ceilf, ceill"
 description: "API ref for calculating the ceiling of a value with ceil()."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["ceilf", "ceil", "ceill", "_o_ceil", "_o_ceilf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntdll.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ceil", "ceilf", "ceill"]
 helpviewer_keywords: ["calculating value ceilings", "ceill function", "ceil function", "ceilf function"]
-ms.assetid: f4e5acab-5c8f-4b10-9ae2-9561e6453718
 ---
 # `ceil`, `ceilf`, `ceill`
 

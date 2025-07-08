@@ -1,14 +1,13 @@
 ---
 title: "floor, floorf, floorl"
 description: "API reference for floor, floorf, and floorl; which calculates the floor of a value." 
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["floorf", "floorl", "floor", "_o_floor", "_o_floorf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["floor", "floorl", "_floorl", "floorf"]
 helpviewer_keywords: ["floor function", "floorf function", "calculating floors of values", "floorl function"]
-ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
 ---
 # `floor`, `floorf`, `floorl`
 

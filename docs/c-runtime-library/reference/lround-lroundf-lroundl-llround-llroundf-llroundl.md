@@ -1,14 +1,13 @@
 ---
 title: "lround, lroundf, lroundl, llround, llroundf, llroundl"
 description: "API reference for lround, lroundf, lroundl, llround, llroundf, and llroundl; which rounds a floating-point value to the nearest integer."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["llround", "llroundf", "llroundl", "lroundf", "lround", "lroundl", "_o_llround", "_o_llroundf", "_o_llroundl", "_o_lround", "_o_lroundf", "_o_lroundl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["lround", "lroundl", "llroundl", "llround", "lroundf", "llroundf"]
 helpviewer_keywords: ["lround function", "llroundl function", "llround function", "lroundf function", "llroundf function", "lroundl function"]
-ms.assetid: cfb88a35-54c6-469f-85af-f7d695dcfdd8
 ---
 # `lround`, `lroundf`, `lroundl`, `llround`, `llroundf`, `llroundl`
 

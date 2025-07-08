@@ -1,14 +1,13 @@
 ---
 title: "fmin, fminf, fminl"
 description: "API reference for fmin, fminf, and fminl; which determines the smaller of two values."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["fmin", "fminf", "fminl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fmin", "fminf", "fminl", "math/fmin", "math/fminf", "math/fminl"]
 helpviewer_keywords: ["fmin function", "fminf function", "fminl function"]
-ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
 ---
 # `fmin`, `fminf`, `fminl`
 

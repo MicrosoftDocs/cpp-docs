@@ -1,7 +1,7 @@
 ---
 title: "atan, atanf, atanl, atan2, atan2f, atan2l"
 description: "API reference for atan, atanf, atanl, atan2, atan2f, and atan2l; which calculate the arctangent of a floating-point value."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["atan2f", "atan2l", "atan2", "atanf", "atan", "atanl", "_o_atan", "_o_atan2", "_o_atan2f", "_o_atanf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
