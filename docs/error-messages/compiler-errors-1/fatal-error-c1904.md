@@ -8,7 +8,7 @@ ms.assetid: 10f66015-146f-41a7-8011-327b29dedec8
 ---
 # Fatal Error C1904
 
-bad provider interaction: 'file'
+> bad provider interaction: 'file'
 
 This error indicates the failure of an attribute provider.
 

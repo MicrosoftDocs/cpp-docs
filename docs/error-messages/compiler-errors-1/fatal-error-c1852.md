@@ -8,7 +8,7 @@ ms.assetid: fa011004-b8d6-46f1-ba80-4785e4ce137f
 ---
 # Fatal Error C1852
 
-'filename' is not a valid precompiled header file
+> 'filename' is not a valid precompiled header file
 
 The file is not a precompiled header.
 
