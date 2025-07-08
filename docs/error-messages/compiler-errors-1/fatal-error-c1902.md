@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1902"
 title: "Fatal Error C1902"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1902"
+ms.date: 11/04/2016
 f1_keywords: ["C1902"]
 helpviewer_keywords: ["C1902"]
-ms.assetid: 2dc066cc-fcb1-4725-8bcb-9f44dd0905b7
 ---
 # Fatal Error C1902
 

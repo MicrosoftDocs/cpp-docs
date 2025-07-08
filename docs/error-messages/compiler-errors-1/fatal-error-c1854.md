@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1854"
 title: "Fatal Error C1854"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1854"
+ms.date: 11/04/2016
 f1_keywords: ["C1854"]
 helpviewer_keywords: ["C1854"]
-ms.assetid: 8c21a9cc-1737-475c-9e57-8725cd8937c1
 ---
 # Fatal Error C1854
 

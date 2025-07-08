@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1853"
 title: "Fatal Error C1853"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1853"
+ms.date: 11/04/2016
 f1_keywords: ["C1853"]
 helpviewer_keywords: ["C1853"]
-ms.assetid: ceb9b4a5-92bf-4573-8a9f-3109cc7743ce
 ---
 # Fatal Error C1853
 

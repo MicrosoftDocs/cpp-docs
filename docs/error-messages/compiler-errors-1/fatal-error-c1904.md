@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1904"
 title: "Fatal Error C1904"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1904"
+ms.date: 11/04/2016
 f1_keywords: ["C1904"]
 helpviewer_keywords: ["C1904"]
-ms.assetid: 10f66015-146f-41a7-8011-327b29dedec8
 ---
 # Fatal Error C1904
 

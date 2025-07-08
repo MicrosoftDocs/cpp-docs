@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Fatal Error C1900"
 title: "Fatal Error C1900"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1900"
+ms.date: 11/04/2016
 f1_keywords: ["C1900"]
 helpviewer_keywords: ["C1900"]
-ms.assetid: 3aaa583b-4c1a-45de-aa34-527d806f2cb5
 ---
 # Fatal Error C1900
 
