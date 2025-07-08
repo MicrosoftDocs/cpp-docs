@@ -569,8 +569,6 @@ reference back();
 
 A reference to the last element of the string, which must be non-empty.
 
-### Remarks
-
 ## <a name="basic_string"></a> `basic_string::basic_string`
 
 Constructs a string that is empty, initialized by specific characters, or is a copy of all or part of another string object or C style (null-terminated) string.
@@ -1472,8 +1470,6 @@ const_reverse_iterator crend() const;
 ### Return value
 
 A `const` reverse iterator that addresses the location succeeding the last element in a reversed string (the location that had preceded the first element in the unreversed string).
-
-### Remarks
 
 ## <a name="copy_s"></a> `basic_string::_Copy_s`
 
@@ -2884,8 +2880,6 @@ reference front();
 ### Return value
 
 A reference to the first element of the string, which must be non-empty.
-
-### Remarks
 
 ## <a name="get_allocator"></a> `basic_string::get_allocator`
 
