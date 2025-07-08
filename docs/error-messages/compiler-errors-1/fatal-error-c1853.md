@@ -10,6 +10,8 @@ ms.assetid: ceb9b4a5-92bf-4573-8a9f-3109cc7743ce
 
 > '*filename*' precompiled header file is from a previous version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)
 
+## Remarks
+
 Possible causes:
 
 - The precompiled header was compiled with a previous compiler version. Try recompiling the header with the current compiler.
