@@ -45,7 +45,7 @@ long double _copysignl(
    long double x,
    long double y
 );
-#define copysign(X, Y) // Requires C11 or higher
+#define copysign(X, Y) // Requires C11 or later
 ```
 
 ### Parameters

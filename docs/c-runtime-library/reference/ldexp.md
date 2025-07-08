@@ -29,7 +29,7 @@ long double ldexpl(
    long double x,
    int exp
 );
-#define ldexp(X, INT) // Requires C11 or higher
+#define ldexp(X, INT) // Requires C11 or later
 
 float ldexp(
    float x,

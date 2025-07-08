@@ -42,7 +42,7 @@ long double fmaxl(
    long double y
 );
 
-#define fmax(X, Y) // Requires C11 or higher
+#define fmax(X, Y) // Requires C11 or later
 ```
 
 ### Parameters

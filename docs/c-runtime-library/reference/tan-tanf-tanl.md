@@ -20,7 +20,7 @@ Calculates the tangent.
 double tan( double x );
 float tanf( float x );
 long double tanl( long double x );
-#define tan(x) // Requires C11 or higher
+#define tan(x) // Requires C11 or later
 ```
 
 ```cpp

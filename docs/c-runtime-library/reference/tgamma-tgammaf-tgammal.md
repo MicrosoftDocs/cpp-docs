@@ -29,7 +29,7 @@ long double tgammal(
    long double x
 );
 
-#define tgamma(X) // Requires C11 or higher
+#define tgamma(X) // Requires C11 or later
 
 float tgamma(
    float x

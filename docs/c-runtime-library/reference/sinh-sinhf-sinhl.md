@@ -19,7 +19,7 @@ Calculates the hyperbolic sine.
 double sinh(double x);
 float sinhf(float x);
 long double sinhl(long double x);
-#define sinh(x) // Requires C11 or higher
+#define sinh(x) // Requires C11 or later
 
 float sinh(float x);  // C++ only
 long double sinh(long double x);  // C++ only

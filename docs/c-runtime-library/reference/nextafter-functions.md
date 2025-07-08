@@ -23,13 +23,13 @@ long double nextafterl( long double x, long double y );
 double _nextafter( double x, double y );
 float _nextafterf( float x, float y ); /* x64 only */
 
-#define nextafter(X, Y) // Requires C11 or higher
+#define nextafter(X, Y) // Requires C11 or later
 
 double nexttoward( double x, long double y );
 float nexttowardf( float x, long double y );
 long double nexttowardl( long double x, long double y );
 
-#define nexttoward(X, Y) // Requires C11 or higher
+#define nexttoward(X, Y) // Requires C11 or later
 
 float nextafter( float x, float y ); /* C++ only, requires <cmath> */
 long double nextafter( long double x, long double y ); /* C++ only, requires <cmath> */

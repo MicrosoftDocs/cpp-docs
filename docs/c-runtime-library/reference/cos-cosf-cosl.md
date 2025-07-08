@@ -20,7 +20,7 @@ Calculates the cosine.
 double cos( double x );
 float cosf( float x );
 long double cosl( long double x );
-#define cos(X) // Requires C11 or higher
+#define cos(X) // Requires C11 or later
 
 float cos( float x );  // C++ only
 long double cos( long double x );  // C++ only

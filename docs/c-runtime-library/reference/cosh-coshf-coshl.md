@@ -19,7 +19,7 @@ Calculates the hyperbolic cosine.
 double cosh( double x );
 float coshf( float x );
 long double coshl( long double x );
-#define cosh(X) // Requires C11 or higher
+#define cosh(X) // Requires C11 or later
 
 float cosh( float x );  // C++ only
 long double cosh( long double x );  // C++ only

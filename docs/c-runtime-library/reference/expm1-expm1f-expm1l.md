@@ -32,7 +32,7 @@ float expm1f(
 long double expm1l(
    long double x
 );
-#define expm1(X) // Requires C11 or higher
+#define expm1(X) // Requires C11 or later
 ```
 
 ### Parameters

@@ -20,7 +20,7 @@ Computes the remainder of the quotient of two floating-point values, rounded to 
 double remainder( double x, double y );
 float remainderf( float x, float y );
 long double remainderl( long double x, long double y );
-#define remainder(X, Y) // Requires C11 or higher
+#define remainder(X, Y) // Requires C11 or later
 
 float remainder( float x, float y ); /* C++ only */
 long double remainder( long double x, long double y ); /* C++ only */

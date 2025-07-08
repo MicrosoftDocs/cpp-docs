@@ -35,7 +35,7 @@ long double log2l(
    long double x
 );
 
-#define log2(X) // Requires C11 or higher
+#define log2(X) // Requires C11 or later
 ```
 
 ### Parameters

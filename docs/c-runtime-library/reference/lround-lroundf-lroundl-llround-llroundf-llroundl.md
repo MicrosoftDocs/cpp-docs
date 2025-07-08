@@ -47,7 +47,7 @@ long long llroundf(
 long long llroundl(
    long double x
 );
-#define lround(X) // Requires C11 or higher
+#define lround(X) // Requires C11 or later
 ```
 
 ### Parameters

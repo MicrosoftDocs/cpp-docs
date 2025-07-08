@@ -19,7 +19,7 @@ Calculates the arcsine.
 double asin( double x );
 float asinf ( float x );
 long double asinl( long double x );
-#define asin(X) // Requires C11 or higher
+#define asin(X) // Requires C11 or later
 
 float asin( float x );  // C++ only
 long double asin( long double x );  // C++ only

@@ -31,7 +31,7 @@ float expf(
 long double expl(
    long double x
 );
-#define exp(z) // Requires C11 or higher
+#define exp(z) // Requires C11 or later
 ```
 
 ### Parameters

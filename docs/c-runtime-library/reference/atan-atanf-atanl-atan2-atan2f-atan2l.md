@@ -19,7 +19,7 @@ Calculates the arctangent of **`x`** (**`atan`**, **`atanf`**, and **`atanl`**) 
 double atan( double x );
 float atanf( float x );
 long double atanl( long double x );
-#define atan(X) // Requires C11 or higher
+#define atan(X) // Requires C11 or later
 
 float atan( float x );  // C++ only
 long double atan( long double x );  // C++ only
@@ -27,7 +27,7 @@ long double atan( long double x );  // C++ only
 double atan2( double y, double x );
 float atan2f( float y, float x );
 long double atan2l( long double y, long double x );
-#define atan2(Y, X) // Requires C11 or higher
+#define atan2(Y, X) // Requires C11 or later
 
 float atan2( float y, float x );  // C++ only
 long double atan2( long double y, long double x );  // C++ only

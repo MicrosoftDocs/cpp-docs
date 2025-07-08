@@ -37,7 +37,7 @@ long double fmodl(
    long double y
 );
 
-#define fmod(X, Y) // Requires C11 or higher
+#define fmod(X, Y) // Requires C11 or later
 ```
 
 ### Parameters

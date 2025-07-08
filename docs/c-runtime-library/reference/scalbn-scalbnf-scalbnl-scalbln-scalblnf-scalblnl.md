@@ -38,7 +38,7 @@ long double scalbnl(
    int exp
 );
 
-#define scalbn(X, INT) // Requires C11 or higher
+#define scalbn(X, INT) // Requires C11 or later
 
 double scalbln(
    double x,
@@ -54,7 +54,7 @@ long double scalblnl(
    long exp
 );
 
-#define scalbln(X, LONG) // Requires C11 or higher
+#define scalbln(X, LONG) // Requires C11 or later
 
 float scalbln(
    float x,

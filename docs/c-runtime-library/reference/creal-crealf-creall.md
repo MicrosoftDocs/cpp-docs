@@ -20,7 +20,7 @@ Retrieves the real part of a complex number.
 double creal( _Dcomplex z );
 float crealf( _Fcomplex z );
 long double creall( _Lcomplex z );
-#define creal(X) // Requires C11 or higher
+#define creal(X) // Requires C11 or later
 
 float creal( _Fcomplex z );  // C++ only
 long double creal( _Lcomplex z );  // C++ only

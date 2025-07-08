@@ -22,8 +22,8 @@ long double logl(double x);
 double log10(double x);
 float log10f (float x);
 long double log10l(double x);
-#define log(X) // Requires C11 or higher
-#define log10(X) // Requires C11 or higher
+#define log(X) // Requires C11 or later
+#define log10(X) // Requires C11 or later
 
 float log(float x);  // C++ only
 long double log(long double x);  // C++ only

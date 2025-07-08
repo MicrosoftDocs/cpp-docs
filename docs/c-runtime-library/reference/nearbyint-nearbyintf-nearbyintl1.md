@@ -20,7 +20,7 @@ Rounds the specified floating-point value to an integer, and returns that value 
 double nearbyint( double x );
 float nearbyintf( float x );
 long double nearbyintl( long double x );
-#define nearbyint( X ) // Requires C11 or higher
+#define nearbyint( X ) // Requires C11 or later
 
 float nearbyint( float x ); //C++ only
 long double nearbyint( long double x ); //C++ only

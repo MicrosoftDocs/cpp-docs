@@ -32,7 +32,7 @@ _Fcomplex conjf(
 _Lcomplex conjl(
    _Lcomplex z
 );
-#define conj(X) // Requires C11 or higher
+#define conj(X) // Requires C11 or later
 ```
 
 ### Parameters

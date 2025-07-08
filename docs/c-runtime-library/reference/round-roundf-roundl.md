@@ -32,7 +32,7 @@ float roundf(
 long double roundl(
    long double x
 );
-#define round(X) // Requires C11 or higher
+#define round(X) // Requires C11 or later
 ```
 
 ### Parameters

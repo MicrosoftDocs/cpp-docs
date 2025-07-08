@@ -20,7 +20,7 @@ Calculates the inverse hyperbolic sine.
 double asinh( double x );
 float asinhf( float x );
 long double asinhl( long double x );
-#define asinh(X) // Requires C11 or higher
+#define asinh(X) // Requires C11 or later
 
 float asinh( float x );  // C++ only
 long double asinh( long double x );  // C++ only

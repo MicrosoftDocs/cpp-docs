@@ -20,7 +20,7 @@ double log1p(double x);
 float log1pf(float x);
 long double log1pl(long double x);
 
-#define log1p(X) // Requires C11 or higher
+#define log1p(X) // Requires C11 or later
 
 float log1p(float x); //C++ only
 long double log1p(long double x); //C++ only

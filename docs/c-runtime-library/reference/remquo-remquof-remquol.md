@@ -19,7 +19,7 @@ Computes the remainder of two integer values, and stores an integer value with t
 double remquo( double numer, double denom, int* quo );
 float remquof( float numer, float denom, int* quo );
 long double remquol( long double numer, long double denom, int* quo );
-#define remquo(X, Y, INT_PTR) // Requires C11 or higher
+#define remquo(X, Y, INT_PTR) // Requires C11 or later
 
 float remquo( float numer, float denom, int* quo ); /* C++ only */
 long double remquo( long double numer, long double denom, int* quo ); /* C++ only */

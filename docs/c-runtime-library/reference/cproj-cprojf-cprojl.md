@@ -32,7 +32,7 @@ _Fcomplex cprojf(
 _Lcomplex cprojl(
    _Lcomplex z
 );
-#define cproj(X) // Requires C11 or higher
+#define cproj(X) // Requires C11 or later
 ```
 
 ### Parameters

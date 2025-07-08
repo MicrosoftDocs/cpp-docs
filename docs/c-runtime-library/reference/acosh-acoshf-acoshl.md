@@ -20,7 +20,7 @@ Calculates the inverse hyperbolic cosine.
 double acosh( double x );
 float acoshf( float x );
 long double acoshl( long double x );
-#define acosh(X) // Requires C11 or higher
+#define acosh(X) // Requires C11 or later
 
 float acosh( float x );  // C++ only
 long double acosh( long double x );  // C++ only

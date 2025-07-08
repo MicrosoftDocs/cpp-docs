@@ -19,7 +19,7 @@ Calculates the hyperbolic tangent.
 double tanh( double x );
 float tanhf( float x );
 long double tanhl( long double x );
-#define tanh(x) // Requires C11 or higher
+#define tanh(x) // Requires C11 or later
 ```
 
 ```cpp

@@ -41,7 +41,7 @@ long double _hypotl(
    long double x,
    long double y
 );
-#define hypotf(X, Y) // Requires C11 or higher
+#define hypotf(X, Y) // Requires C11 or later
 ```
 
 ### Parameters

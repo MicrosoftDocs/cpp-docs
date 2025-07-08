@@ -19,7 +19,7 @@ Calculates the arccosine.
 double acos( double x );
 float acosf( float x );
 long double acosl( long double x );
-#define acos(X) // Requires C11 or higher
+#define acos(X) // Requires C11 or later
 
 float acos( float x );   // C++ only
 long double acos( long double x );   // C++ only

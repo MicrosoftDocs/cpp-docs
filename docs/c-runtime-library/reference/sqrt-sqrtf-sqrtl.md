@@ -31,7 +31,7 @@ float sqrtf(
 long double sqrtl(
    long double x
 );
-#define sqrt(x) // Requires C11 or higher
+#define sqrt(x) // Requires C11 or later
 ```
 
 ### Parameters

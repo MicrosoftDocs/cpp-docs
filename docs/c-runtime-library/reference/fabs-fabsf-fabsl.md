@@ -32,7 +32,7 @@ long double fabsl(
    long double x
 );
 
-#define fabs(X) // Requires C11 or higher
+#define fabs(X) // Requires C11 or later
 ```
 
 ### Parameters

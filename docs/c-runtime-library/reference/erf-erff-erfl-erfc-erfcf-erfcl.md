@@ -47,8 +47,8 @@ float erfcf(
 long double erfcl(
    long double x
 );
-#define erf(X) // Requires C11 or higher
-#define erfc(X) // Requires C11 or higher
+#define erf(X) // Requires C11 or later
+#define erfc(X) // Requires C11 or later
 ```
 
 ### Parameters

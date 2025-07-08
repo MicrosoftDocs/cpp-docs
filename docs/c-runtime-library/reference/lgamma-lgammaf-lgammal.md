@@ -20,7 +20,7 @@ Determines the natural logarithm of the absolute value of the gamma function of 
 double lgamma( double x );
 float lgammaf( float x );
 long double lgammal( long double x );
-#define lgammal(X) // Requires C11 or higher
+#define lgammal(X) // Requires C11 or later
 
 float lgamma( float x ); //C++ only
 long double lgamma( long double x ); //C++ only

@@ -47,7 +47,7 @@ long double fmal(
    long double z
 );
 
-#define fma(X, Y, Z) // Requires C11 or higher
+#define fma(X, Y, Z) // Requires C11 or later
 ```
 
 ### Parameters

@@ -19,7 +19,7 @@ Determines the nearest integer that is less than or equal to the specified float
 ```C
 double trunc( double x );
 long double truncl( long double x );
-#define trunc(X) // Requires C11 or higher
+#define trunc(X) // Requires C11 or later
 
 long double trunc( long double x ); //C++ only
 float trunc( float x ); //C++ only

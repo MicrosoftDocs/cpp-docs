@@ -29,7 +29,7 @@ long double frexpl(
    long double x,
    int * expptr
 );
-#define frexpl(X, INT_PTR) // Requires C11 or higher
+#define frexpl(X, INT_PTR) // Requires C11 or later
 ```
 
 ```cpp

@@ -32,7 +32,7 @@ float ceilf(
 long double ceill(
    long double x
 );
-#define ceil(X) // Requires C11 or higher
+#define ceil(X) // Requires C11 or later
 ```
 
 ### Parameters

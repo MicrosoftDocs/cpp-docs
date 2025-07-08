@@ -37,7 +37,7 @@ int ilogbl(
    long double x
 );
 
-#define ilogbl(X) // Requires C11 or higher
+#define ilogbl(X) // Requires C11 or later
 ```
 
 ### Parameters

@@ -32,7 +32,7 @@ float cargf(
 long double cargl(
    _Lcomplex z
 );
-#define carg(X) // Requires C11 or higher
+#define carg(X) // Requires C11 or later
 ```
 
 ### Parameters

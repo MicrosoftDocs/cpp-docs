@@ -41,7 +41,7 @@ long double fdiml(
    long double y
 );
 
-#define fdim(X) // Requires C11 or higher
+#define fdim(X) // Requires C11 or later
 ```
 
 ### Parameters

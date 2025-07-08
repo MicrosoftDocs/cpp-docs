@@ -42,7 +42,7 @@ long double fminl(
    long double y
 );
 
-#define fmin(x) // Requires C11 or higher
+#define fmin(x) // Requires C11 or later
 ```
 
 ### Parameters

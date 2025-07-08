@@ -20,7 +20,7 @@ Retrieves the imaginary part of a complex number.
 double cimag( _Dcomplex z );
 float cimagf( _Fcomplex z );
 long double cimagl( _Lcomplex z );
-#define cimag(X) // Requires C11 or higher
+#define cimag(X) // Requires C11 or later
 
 float cimag( _Fcomplex z );  // C++ only
 long double cimag( _Lcomplex z );  // C++ only

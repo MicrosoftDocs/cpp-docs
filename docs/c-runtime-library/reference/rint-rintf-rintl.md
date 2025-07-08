@@ -20,7 +20,7 @@ Rounds a floating-point value to the nearest integer in floating-point format.
 double rint( double x );
 float rintf( float x );
 long double rintl( long double x );
-#define rint(X) // Requires C11 or higher
+#define rint(X) // Requires C11 or later
 
 float rint( float x );  // C++ only
 long double rint( long double x );  // C++ only

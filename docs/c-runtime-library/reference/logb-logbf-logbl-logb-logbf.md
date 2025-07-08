@@ -37,7 +37,7 @@ double _logb(
 float _logbf(
    float x
 );
-#define logb(X) // Requires C11 or higher
+#define logb(X) // Requires C11 or later
 ```
 
 ### Parameters

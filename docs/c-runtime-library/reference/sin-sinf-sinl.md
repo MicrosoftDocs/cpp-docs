@@ -19,7 +19,7 @@ Calculates the sine of a floating-point value.
 double sin(double x);
 float sinf(float x);
 long double sinl(long double x);
-#define sin(x) // Requires C11 or higher
+#define sin(x) // Requires C11 or later
 ```
 
 ```cpp

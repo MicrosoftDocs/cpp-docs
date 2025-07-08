@@ -57,7 +57,7 @@ long long int llrintl(
    long double x
 );
 
-#define lrint(X) // Requires C11 or higher
+#define lrint(X) // Requires C11 or later
 ```
 
 ### Parameters
