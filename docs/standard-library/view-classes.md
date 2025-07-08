@@ -51,7 +51,7 @@ Using a view after the range that it's based on is modified can lead to undefine
 Because views are cheap to create, you should generally re-create a view if you modify the underlying range. The following example demonstrates how to store a view pipeline in a variable so that you can reuse it.
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 #include <iostream>
 #include <ranges>
 #include <vector>

@@ -10,7 +10,7 @@ helpviewer_keywords: ["std::ranges [C++], ranges::borrowed_iterator_t", "std::ra
 An alias template is an alias for another type, which can make code more readable. For example, the following alias, `conditional_t`, is an alias for either `borrowed_range` or `dangling` range, depending on the kind of `range` that's passed in:
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <iostream>
 #include <list>
@@ -94,7 +94,7 @@ If an algorithm function is passed a range whose iterators depend on its lifetim
 The following example shows how `borrowed_iterator_t` detects a dangling iterator. The function `ranges::max_element()` uses this template alias to determine the return type:
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <vector>
 #include <span>
@@ -165,7 +165,7 @@ If an algorithm function is passed a range whose iterators depend on its lifetim
 The following example shows how `borrowed_subrange_t` detects a dangling iterator because `equal_range()` and `max_element` use this template alias to determine the return type:
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <vector>
 #include <iostream>
@@ -228,7 +228,7 @@ A variable number of non-`void` types. They have no effect. The arguments are a 
 The following example shows how `max_element` detects a dangling iterator.
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <vector>
 #include <iostream>
@@ -272,7 +272,7 @@ The range type to get the iterator type for.
 The following example shows how `iterator_t` can be used to declare an iterator for a vector:
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <vector>
 #include <ranges>
@@ -314,7 +314,7 @@ The range whose iterator will provide the difference type.
 The following example shows how `range_difference_t` is used to hold the distance between elements in a range:
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <vector>
 #include <ranges>
@@ -356,7 +356,7 @@ The range for which the reference type of its iterator type is returned.
 The following example shows `range_reference_t` referring to the type of the elements in a range:
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <vector>
 #include <ranges>
@@ -399,7 +399,7 @@ The range to get the rvalue reference type to its iterator type.
 The following example shows `range_rvalue_reference_t` referring to a rvalue type of the elements in a range:
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <vector>
 #include <ranges>
@@ -442,7 +442,7 @@ The range to get the type of its `size` function.
 The following example shows `range_size_t` referring to the number of elements in a range:
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <vector>
 #include <iostream>
@@ -484,7 +484,7 @@ The range to get the value type of its iterator.
 The following example shows how `range_value_t` refers to the type of elements in a range:
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <vector>
 #include <ranges>
@@ -526,7 +526,7 @@ The range to get the sentinel type for.
 The following example shows using `sentinel_t` to determine whether the iterator type and sentinel type are the same:
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 
 #include <iostream>
 #include <list>

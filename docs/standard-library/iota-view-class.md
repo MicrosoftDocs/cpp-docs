@@ -116,7 +116,7 @@ When you use one of the constructors that value-initializes the bound, the bound
 ## `iota_view` constructor example
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 #include <vector>
