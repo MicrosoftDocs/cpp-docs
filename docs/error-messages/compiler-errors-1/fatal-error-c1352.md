@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Fatal Error C1352"
 title: "Fatal Error C1352"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1352"
+ms.date: 11/04/2016
 f1_keywords: ["C1352"]
 helpviewer_keywords: ["C1352"]
-ms.assetid: d044e8b0-b6ef-4d57-8eb5-6254071be707
 ---
 # Fatal Error C1352
 
-Invalid or corrupt MSIL in function 'function' from module 'file'
+> Invalid or corrupt MSIL in function 'function' from module 'file'
+
+## Remarks
 
 A .netmodule was passed to the compiler, but the compiler detected corruption in the file.  Ask the person who produced the .netmodule to investigate.
 

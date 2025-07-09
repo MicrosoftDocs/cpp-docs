@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Fatal Error C1510"
 title: "Fatal Error C1510"
-ms.date: "04/11/2017"
+description: "Learn more about: Fatal Error C1510"
+ms.date: 04/11/2017
 f1_keywords: ["C1510"]
 helpviewer_keywords: ["C1510"]
-ms.assetid: 150c827f-9514-41a9-8d7e-82f820749bcb
 ---
 # Fatal Error C1510
 
-Cannot open language resource clui.dll
+> Cannot open language resource clui.dll
+
+## Remarks
 
 The compiler can't load the language resource DLL.
 
