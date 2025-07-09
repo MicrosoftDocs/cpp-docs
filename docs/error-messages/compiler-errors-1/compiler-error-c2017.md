@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2017"
 title: "Compiler Error C2017"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2017"
+ms.date: 11/04/2016
 f1_keywords: ["C2017"]
 helpviewer_keywords: ["C2017"]
-ms.assetid: 1083eed9-9906-4a97-883c-54e52d7e82cd
 ---
 # Compiler Error C2017
 

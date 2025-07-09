@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2013"
 title: "Compiler Error C2013"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2013"
+ms.date: 11/04/2016
 f1_keywords: ["C2013"]
 helpviewer_keywords: ["C2013"]
-ms.assetid: 6b5c955c-53da-48ee-8533-64ef5b905173
 ---
 # Compiler Error C2013
 

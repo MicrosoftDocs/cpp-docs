@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2004"
 title: "Compiler Error C2004"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2004"
+ms.date: 11/04/2016
 f1_keywords: ["C2004"]
 helpviewer_keywords: ["C2004"]
-ms.assetid: d81526dd-3a00-4593-87b0-d910d3d29bca
 ---
 # Compiler Error C2004
 

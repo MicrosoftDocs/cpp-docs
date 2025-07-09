@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2011"
 title: "Compiler Error C2011"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2011"
+ms.date: 11/04/2016
 f1_keywords: ["C2011"]
 helpviewer_keywords: ["C2011"]
-ms.assetid: 992c9d51-e850-4d53-b86b-02e73b38249c
 ---
 # Compiler Error C2011
 

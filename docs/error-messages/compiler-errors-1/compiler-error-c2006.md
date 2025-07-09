@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2006"
 description: "Learn more about: Compiler Error C2006"
-ms.date: "01/28/2025"
+ms.date: 01/28/2025
 f1_keywords: ["C2006"]
 helpviewer_keywords: ["C2006"]
 ---

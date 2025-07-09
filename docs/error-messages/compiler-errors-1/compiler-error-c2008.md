@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2008"
 title: "Compiler Error C2008"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2008"
+ms.date: 11/04/2016
 f1_keywords: ["C2008"]
 helpviewer_keywords: ["C2008"]
-ms.assetid: e748ccbe-ffd4-4008-aca7-e53c25225209
 ---
 # Compiler Error C2008
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2001"
 title: "Compiler Error C2001"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2001"
+ms.date: 11/04/2016
 f1_keywords: ["C2001"]
 helpviewer_keywords: ["C2001"]
-ms.assetid: 0c3a7821-d8e5-4398-ab5a-4116d46e8dda
 ---
 # Compiler Error C2001
 

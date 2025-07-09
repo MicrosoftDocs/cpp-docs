@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2005"
 title: "Compiler Error C2005"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2005"
+ms.date: 11/04/2016
 f1_keywords: ["C2005"]
 helpviewer_keywords: ["C2005"]
-ms.assetid: 090530ed-e0ec-4358-833a-ca24260e7ffe
 ---
 # Compiler Error C2005
 

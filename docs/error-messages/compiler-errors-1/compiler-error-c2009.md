@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2009"
 title: "Compiler Error C2009"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2009"
+ms.date: 11/04/2016
 f1_keywords: ["C2009"]
 helpviewer_keywords: ["C2009"]
-ms.assetid: fe9d94ed-20a5-4d83-b9c4-60ee69d2f30a
 ---
 # Compiler Error C2009
 

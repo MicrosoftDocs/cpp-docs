@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2007"
 title: "Compiler Error C2007"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2007"
+ms.date: 11/04/2016
 f1_keywords: ["C2007"]
 helpviewer_keywords: ["C2007"]
-ms.assetid: ecd09d99-5036-408b-9e46-bc15488f049e
 ---
 # Compiler Error C2007
 

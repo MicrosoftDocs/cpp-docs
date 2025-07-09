@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2002"
 title: "Compiler Error C2002"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2002"
+ms.date: 11/04/2016
 f1_keywords: ["C2002"]
 helpviewer_keywords: ["C2002"]
-ms.assetid: 91982314-203a-4de1-b884-94e39a623f61
 ---
 # Compiler Error C2002
 
