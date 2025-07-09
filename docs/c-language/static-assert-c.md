@@ -42,7 +42,7 @@ In C, when you don't include `<assert.h>`, the Microsoft compiler treats **`stat
 In the following example, **`static_assert`** and **`_Static_assert`** are used to verify how many elements are in an enum and that integers are 32 bits wide.
 
 ```C
-// requires /std:c11 or higher
+// requires /std:c11 or later
 #include <assert.h>
 
 enum Items

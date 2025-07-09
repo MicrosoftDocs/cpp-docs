@@ -1,14 +1,13 @@
 ---
 title: "tgamma, tgammaf, tgammal"
 description: "API reference for tgamma, tgammaf, and tgammal; which determine the gamma function of the specified value."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["tgamma", "tgammaf", "tgammal", "_o_tgamma", "_o_tgammaf", "_o_tgammal"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CORECRT_MATH/tgamma", "CORECRT_MATH/tgammaf", "CORECRT_MATH/tgammal", "tgamma", "tgammaf", "tgammal"]
 helpviewer_keywords: ["tgamma function", "tgammaf function", "tgammal function"]
-ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd
 ---
 # `tgamma`, `tgammaf`, `tgammal`
 
@@ -29,7 +28,7 @@ long double tgammal(
    long double x
 );
 
-#define tgamma(X) // Requires C11 or higher
+#define tgamma(X) // Requires C11 or later
 
 float tgamma(
    float x

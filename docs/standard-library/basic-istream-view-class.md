@@ -117,7 +117,7 @@ The best way to create a `basic_istream_view` is by using the [`views::istream`]
 ### Example: `basic_istream_view`, `istream_view`, and `wistream_view`
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 #include <sstream>

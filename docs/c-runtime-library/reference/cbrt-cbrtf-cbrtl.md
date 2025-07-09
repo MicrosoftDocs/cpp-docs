@@ -1,14 +1,13 @@
 ---
 title: "cbrt, cbrtf, cbrtl"
 description: "API reference for cbrt, cbrtf, and cbrtl; which calculate a cube root"
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["cbrt", "cbrtf", "cbrtl", "_o_cbrt", "_o_cbrtf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cbrtl", "cbrt", "cbrtf"]
 helpviewer_keywords: ["cbrtl function", "cbrtf function", "cbrt function"]
-ms.assetid: ab51d916-3db2-4beb-b46a-28b4062cd33f
 ---
 # `cbrt`, `cbrtf`, `cbrtl`
 
@@ -32,7 +31,7 @@ float cbrtf(
 long double cbrtl(
    long double x
 );
-#define cbrt(X) // Requires C11 or higher
+#define cbrt(X) // Requires C11 or later
 ```
 
 ### Parameters

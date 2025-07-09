@@ -1,14 +1,13 @@
 ---
 title: "hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl"
 description: "API reference for hypot, hypotf, hypotl, _hypot, _hypotf, and _hypotl; which calculate the hypotenuse."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["_hypotf", "hypot", "hypotf", "_hypot", "_hypotl", "hypotl", "_o__hypot", "_o__hypotf", "_o_hypot"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["hypotf", "hypotl", "_hypotl", "hypot", "_hypot", "_hypotf"]
 helpviewer_keywords: ["hypotenuse calculation", "hypot function", "hypotf function", "triangles, calculating hypotenuse", "hypotl function", "calculating hypotenuses", "_hypot function"]
-ms.assetid: 6a13887f-bd53-43fc-9d77-5b42d6e49925
 ---
 # `hypot`, `hypotf`, `hypotl`, `_hypot`, `_hypotf`, `_hypotl`
 
@@ -41,7 +40,7 @@ long double _hypotl(
    long double x,
    long double y
 );
-#define hypotf(X, Y) // Requires C11 or higher
+#define hypotf(X, Y) // Requires C11 or later
 ```
 
 ### Parameters

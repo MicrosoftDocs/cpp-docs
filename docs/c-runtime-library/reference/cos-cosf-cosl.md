@@ -1,14 +1,13 @@
 ---
 title: "cos, cosf, cosl"
 description: "API reference for cos, cosf, and cosl; which calculate the cosine value of a floating-point number."
-ms.date: "08/31/2020"
+ms.date: 08/31/2020
 api_name: ["cos", "cosf", "cosl", "_o_cos", "_o_cosf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cos", "cosf", "cosl"]
 helpviewer_keywords: ["cosines", "cosl function", "calculating cosine", "cosf function", "cos function", "trigonometric functions", "cosines, calculating"]
-ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
 ---
 # `cos`, `cosf`, `cosl`
 
@@ -20,7 +19,7 @@ Calculates the cosine.
 double cos( double x );
 float cosf( float x );
 long double cosl( long double x );
-#define cos(X) // Requires C11 or higher
+#define cos(X) // Requires C11 or later
 
 float cos( float x );  // C++ only
 long double cos( long double x );  // C++ only

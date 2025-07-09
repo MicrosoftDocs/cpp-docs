@@ -1,7 +1,7 @@
 ---
 title: "tanh, tanhf, tanhl"
 description: "API reference for tanh, tanhf, and tanhl; which calculate the hyperbolic tangent of a floating-point value."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["tanh", "tanhf", "tanhl", "_o_tanh", "_o_tanhf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,7 +19,7 @@ Calculates the hyperbolic tangent.
 double tanh( double x );
 float tanhf( float x );
 long double tanhl( long double x );
-#define tanh(x) // Requires C11 or higher
+#define tanh(x) // Requires C11 or later
 ```
 
 ```cpp

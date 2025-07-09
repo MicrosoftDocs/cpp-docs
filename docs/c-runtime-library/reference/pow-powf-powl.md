@@ -1,14 +1,13 @@
 ---
 title: "pow, powf, powl"
 description: "API reference for pow, powf, and powl; which calculate exponents."
-ms.date: "08/31/2020"
+ms.date: 08/31/2020
 api_name: ["powl", "pow", "powf", "_o_pow", "_o_powf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["powl", "pow", "_powl", "powf"]
 helpviewer_keywords: ["exponential calculations", "powl function", "_powl function", "exponentiation", "powers, calculating", "calculating exponentials", "powf function", "pow function"]
-ms.assetid: e75c33ed-2e59-48b1-be40-81da917324f1
 ---
 # `pow`, `powf`, `powl`
 
@@ -20,7 +19,7 @@ Calculates *`x`* raised to the power of *`y`*.
 double pow( double x, double y );
 float powf( float x, float y );
 long double powl( long double x, long double y );
-define pow(X, Y) // Requires C11 or higher
+define pow(X, Y) // Requires C11 or later
 
 double pow( double x, int y );  // C++ only
 float pow( float x, float y );  // C++ only

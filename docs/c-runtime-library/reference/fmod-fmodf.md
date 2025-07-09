@@ -1,7 +1,7 @@
 ---
 title: "fmod, fmodf, fmodl"
 description: "API reference for fmod, fmodf, and fmodl; which calculates the floating-point remainder."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["fmod", "fmodf", "fmodl", "_o_fmod", "_o_fmodf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -37,7 +37,7 @@ long double fmodl(
    long double y
 );
 
-#define fmod(X, Y) // Requires C11 or higher
+#define fmod(X, Y) // Requires C11 or later
 ```
 
 ### Parameters
