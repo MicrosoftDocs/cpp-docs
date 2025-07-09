@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Walkthrough: Implementing Futures"
 title: "Walkthrough: Implementing Futures"
-ms.date: "04/25/2019"
+description: "Learn more about: Walkthrough: Implementing Futures"
+ms.date: 04/25/2019
 helpviewer_keywords: ["implementing futures [Concurrency Runtime]", "futures, implementing [Concurrency Runtime]"]
-ms.assetid: 82ea75cc-aaec-4452-b10d-8abce0a87e5b
 ---
 # Walkthrough: Implementing Futures
 
@@ -42,7 +41,7 @@ To implement futures, this topic defines the `async_future` class. The `async_fu
 
 ### Description
 
-The following example shows the complete `async_future` class and an example of its usage. The `wmain` function creates a std::[vector](../../standard-library/vector-class.md) object that contains 10,000 random integer values. It then uses `async_future` objects to find the smallest and largest values that are contained in the `vector` object.
+The following example shows the complete `async_future` class and an example of its usage. The `wmain` function creates a [std::vector](../../standard-library/vector-class.md) object that contains 10,000 random integer values. It then uses `async_future` objects to find the smallest and largest values that are contained in the `vector` object.
 
 ### Code
 

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Schedule Groups"
 title: "Schedule Groups"
-ms.date: "11/04/2016"
+description: "Learn more about: Schedule Groups"
+ms.date: 11/04/2016
 helpviewer_keywords: ["schedule groups"]
-ms.assetid: 03523572-5891-4d17-89ce-fa795605f28b
 ---
 # Schedule Groups
 
@@ -18,7 +17,7 @@ The `SchedulingProtocol` scheduler policy influences the order in which the sche
 
 The runtime uses the [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) class to represent schedule groups. To create a `ScheduleGroup` object, call the [concurrency::CurrentScheduler::CreateScheduleGroup](reference/currentscheduler-class.md#createschedulegroup) or [concurrency::Scheduler::CreateScheduleGroup](reference/scheduler-class.md#createschedulegroup) method. The runtime uses a reference-counting mechanism to control the lifetime of `ScheduleGroup` objects, just as it does with `Scheduler` objects. When you create a `ScheduleGroup` object, the runtime sets the reference counter to one. The [concurrency::ScheduleGroup::Reference](reference/schedulegroup-class.md#reference) method increments the reference counter by one. The [concurrency::ScheduleGroup::Release](reference/schedulegroup-class.md#release) method decrements the reference counter by one.
 
-Many types in the Concurrency Runtime let you associate an object together with a schedule group. For example, the [concurrency::agent](../../parallel/concrt/reference/agent-class.md) class and message block classes such as [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md), [concurrency::join](../../parallel/concrt/reference/join-class.md), and concurrency::[timer](reference/timer-class.md), provide overloaded versions of the constructor that take a `ScheduleGroup` object. The runtime uses the `Scheduler` object that is associated with this `ScheduleGroup` object to schedule the task.
+Many types in the Concurrency Runtime let you associate an object together with a schedule group. For example, the [concurrency::agent](../../parallel/concrt/reference/agent-class.md) class and message block classes such as [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md), [concurrency::join](../../parallel/concrt/reference/join-class.md), and [concurrency::timer](reference/timer-class.md), provide overloaded versions of the constructor that take a `ScheduleGroup` object. The runtime uses the `Scheduler` object that is associated with this `ScheduleGroup` object to schedule the task.
 
 You can also use the [concurrency::ScheduleGroup::ScheduleTask](reference/schedulegroup-class.md#scheduletask) method to schedule a lightweight task. For more information about lightweight tasks, see [Lightweight Tasks](../../parallel/concrt/lightweight-tasks.md).
 
