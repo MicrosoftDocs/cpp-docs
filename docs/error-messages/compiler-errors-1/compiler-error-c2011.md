@@ -8,7 +8,7 @@ ms.assetid: 992c9d51-e850-4d53-b86b-02e73b38249c
 ---
 # Compiler Error C2011
 
-'identifier' : 'type' type redefinition
+> 'identifier' : 'type' type redefinition
 
 The identifier was already defined as `type`. Check for redefinitions of the identifier.
 

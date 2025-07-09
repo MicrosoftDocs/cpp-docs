@@ -8,7 +8,7 @@ ms.assetid: d81526dd-3a00-4593-87b0-d910d3d29bca
 ---
 # Compiler Error C2004
 
-expected 'defined(id)'
+> expected 'defined(id)'
 
 An identifier must appear in the parentheses following the preprocessor keyword.
 

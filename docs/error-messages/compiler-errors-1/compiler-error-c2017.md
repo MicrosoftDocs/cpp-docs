@@ -8,7 +8,7 @@ ms.assetid: 1083eed9-9906-4a97-883c-54e52d7e82cd
 ---
 # Compiler Error C2017
 
-illegal escape sequence
+> illegal escape sequence
 
 An escape sequence, such as \t, appears outside of a character or string constant.
 

@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2006"]
 ---
 # Compiler Error C2006
 
-'directive': expected "FILENAME" or \<FILENAME>
+> 'directive': expected "FILENAME" or \<FILENAME>
 
 Directives such as [#include](../../preprocessor/hash-include-directive-c-cpp.md) or [#import](../../preprocessor/hash-import-directive-cpp.md) require a filename. To resolve the error, ensure the filename is valid and enclosed in either double quotes or angle brackets.
 

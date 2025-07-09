@@ -8,7 +8,7 @@ ms.assetid: 6b5c955c-53da-48ee-8533-64ef5b905173
 ---
 # Compiler Error C2013
 
-missing '>'
+> missing '>'
 
 An `#include` directive lacks a closing angle bracket. Add the closing bracket to resolve the error.
 

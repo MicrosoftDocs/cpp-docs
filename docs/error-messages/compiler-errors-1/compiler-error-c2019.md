@@ -8,7 +8,7 @@ ms.assetid: 4f37b1e1-9eca-418f-a4c3-141e8512d7b6
 ---
 # Compiler Error C2019
 
-expected preprocessor directive, found 'character'
+> expected preprocessor directive, found 'character'
 
 The character followed a `#` sign but it is not the first letter of a preprocessor directive.
 

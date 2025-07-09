@@ -8,7 +8,7 @@ ms.assetid: 0c3a7821-d8e5-4398-ab5a-4116d46e8dda
 ---
 # Compiler Error C2001
 
-newline in constant
+> newline in constant
 
 A string constant cannot be continued on a second line unless you do the following:
 

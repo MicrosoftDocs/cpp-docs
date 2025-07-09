@@ -8,7 +8,7 @@ ms.assetid: ecd09d99-5036-408b-9e46-bc15488f049e
 ---
 # Compiler Error C2007
 
-\#define syntax
+> #define syntax
 
 No identifier appears after a `#define`. To resolve the error, use an identifier.
 

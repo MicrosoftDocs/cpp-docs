@@ -8,7 +8,7 @@ ms.assetid: 5795ed1d-e206-410b-b7b4-528d125c67b4
 ---
 # Compiler Error C2010
 
-'character' : unexpected in macro formal parameter list
+> 'character' : unexpected in macro formal parameter list
 
 The character is used incorrectly in the formal parameter list of a macro definition. Remove the character to resolve the error.
 

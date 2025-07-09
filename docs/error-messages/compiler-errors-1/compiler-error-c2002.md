@@ -8,7 +8,7 @@ ms.assetid: 91982314-203a-4de1-b884-94e39a623f61
 ---
 # Compiler Error C2002
 
-invalid wide-character constant
+> invalid wide-character constant
 
 The multibyte-character constant is not valid.
 

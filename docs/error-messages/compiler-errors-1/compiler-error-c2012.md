@@ -8,7 +8,7 @@ ms.assetid: 9f0d8162-c0b3-4234-a41f-836fdb75c84e
 ---
 # Compiler Error C2012
 
-missing name following '<'
+> missing name following '<'
 
 An `#include` directive lacks the required filename.
 

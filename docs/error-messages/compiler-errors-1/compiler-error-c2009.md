@@ -8,7 +8,7 @@ ms.assetid: fe9d94ed-20a5-4d83-b9c4-60ee69d2f30a
 ---
 # Compiler Error C2009
 
-reuse of macro formal 'identifier'
+> reuse of macro formal 'identifier'
 
 The formal parameter list of a macro definition uses the identifier more than once. Identifiers in the macro's parameter list must be unique.
 
