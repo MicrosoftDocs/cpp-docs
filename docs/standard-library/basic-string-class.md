@@ -569,8 +569,6 @@ reference back();
 
 A reference to the last element of the string, which must be non-empty.
 
-### Remarks
-
 ## <a name="basic_string"></a> `basic_string::basic_string`
 
 Constructs a string that is empty, initialized by specific characters, or is a copy of all or part of another string object or C style (null-terminated) string.
@@ -1473,8 +1471,6 @@ const_reverse_iterator crend() const;
 
 A `const` reverse iterator that addresses the location succeeding the last element in a reversed string (the location that had preceded the first element in the unreversed string).
 
-### Remarks
-
 ## <a name="copy_s"></a> `basic_string::_Copy_s`
 
 Copies at most a specified number of characters from an indexed position in a source string to a target character array.
@@ -1830,7 +1826,7 @@ See [`starts_with`](#starts_with) to check if a string starts with the specified
 ### Example
 
 ```cpp
-// Requires /std:c++20 or /std:c++latest
+// Requires /std:c++20 or later
 #include <string>
 #include <iostream>
 
@@ -2884,8 +2880,6 @@ reference front();
 ### Return value
 
 A reference to the first element of the string, which must be non-empty.
-
-### Remarks
 
 ## <a name="get_allocator"></a> `basic_string::get_allocator`
 
@@ -4652,7 +4646,7 @@ See [`ends_with`](#ends_with) to see if a string ends with the specified suffix.
 ### Example
 
 ```cpp
-// Requires /std:c++20 or /std:c++latest
+// Requires /std:c++20 or later
 #include <string>
 #include <iostream>
 

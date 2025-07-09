@@ -1,14 +1,13 @@
 ---
 title: "copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl"
 description: "API ref for returning a value that has the magnitude of one argument and the sign of another using copysign()"
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["copysignf", "copysignl", "_copysignl", "_copysign", "_copysignf", "copysign"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_copysignl", "copysign", "copysignf", "_copysign", "copysignl", "_copysignf"]
 helpviewer_keywords: ["copysignl function", "_copysignl function", "copysign function", "_copysignf function", "_copysign function", "copysignf function"]
-ms.assetid: 009216d6-72a2-402d-aa6c-91d924b2c9e4
 ---
 # `copysign`, `copysignf`, `copysignl`, `_copysign`, `_copysignf`, `_copysignl`
 
@@ -45,7 +44,7 @@ long double _copysignl(
    long double x,
    long double y
 );
-#define copysign(X, Y) // Requires C11 or higher
+#define copysign(X, Y) // Requires C11 or later
 ```
 
 ### Parameters

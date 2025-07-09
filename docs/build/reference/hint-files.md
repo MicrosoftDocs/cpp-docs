@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Hint Files"
 title: "Hint Files"
-ms.date: "02/26/2019"
+description: "Learn more about: Hint Files"
+ms.date: 02/26/2019
 f1_keywords: ["cpp.hint", "vc.hint.file"]
 helpviewer_keywords: ["stop file", "cpp.hint", "hint file", "cpp.stop", "Class View, hint file"]
-ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
 ---
 # Hint Files
 
@@ -133,7 +132,7 @@ For a depiction of how hints are gathered, see the [Example](#example) section.
 
 You create and delete hints by using the same syntax as the preprocessor directives to create and delete macros. In fact, the parsing system uses the C/C++ preprocessor to evaluate the hints. For more information about the preprocessor directives, see [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md) and [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md).
 
-The only unusual syntax elements are the `@<`, `@=`, and `@>` replacement strings. These hint-file specific replacement strings are only used in *map* macros. A map is a set of macros that relate data, functions, or events to other data, functions, or event handlers. For example, `MFC` uses maps to create [message maps](../../mfc/reference/message-maps-mfc.md), and `ATL` uses maps to create [object maps](../../atl/reference/object-map-macros.md). The hint-file specific replacement strings mark the starting, intermediate, and ending elements of a map. Only the name of a map macro is significant. Therefore, each replacement string intentionally hides the implementation of the macro.
+The only unusual syntax elements are the `@<`, `@=`, and `@>` replacement strings. These hint-file specific replacement strings are only used in *map* macros. A map is a set of macros that relate data, functions, or events to other data, functions, or event handlers. For example, MFC uses maps to create [message maps](../../mfc/reference/message-maps-mfc.md), and ATL uses maps to create [object maps](../../atl/reference/object-map-macros.md). The hint-file specific replacement strings mark the starting, intermediate, and ending elements of a map. Only the name of a map macro is significant. Therefore, each replacement string intentionally hides the implementation of the macro.
 
 Hints use this syntax:
 

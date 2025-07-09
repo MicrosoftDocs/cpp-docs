@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: How to: Send a Message at a Regular Interval"
 title: "How to: Send a Message at a Regular Interval"
-ms.date: "11/04/2016"
+description: "Learn more about: How to: Send a Message at a Regular Interval"
+ms.date: 11/04/2016
 helpviewer_keywords: ["timer class, example", "sending messages at regular intervals [Concurrency Runtime]"]
-ms.assetid: 4b60ea6c-97c8-4d69-9f7b-ad79f3548026
 ---
 # How to: Send a Message at a Regular Interval
 
-This example shows how to use the concurrency::[timer class](../../parallel/concrt/reference/timer-class.md) to send a message at a regular interval.
+This example shows how to use the [concurrency::timer class](../../parallel/concrt/reference/timer-class.md) to send a message at a regular interval.
 
 ## Example
 

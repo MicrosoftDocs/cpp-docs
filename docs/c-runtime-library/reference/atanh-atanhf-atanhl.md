@@ -19,7 +19,7 @@ Calculates the inverse hyperbolic tangent.
 double atanh( double x );
 float atanhf( float x );
 long double atanhl( long double x );
-#define atanh(X) // Requires C11 or higher
+#define atanh(X) // Requires C11 or later
 
 float atanh( float x );  // C++ only
 long double atanh( long double x );  // C++ only

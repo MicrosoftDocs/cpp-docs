@@ -51,7 +51,7 @@ The rank of the array.
 
 |Name|Description|
 |----------|-----------------|
-|[`operator std::vector<value_type>`](#operator_vec)|Uses `copy(*this, vector)` to implicitly convert the array to a std::[vector](../../../standard-library/vector-class.md) object.|
+|[`operator std::vector<value_type>`](#operator_vec)|Uses `copy(*this, vector)` to implicitly convert the array to a [std::vector](../../../standard-library/vector-class.md) object.|
 |[operator()](#operator_call)|Returns the element value that is specified by the parameters.|
 |[operator\[\]](#operator_at)|Returns the element that is at the specified index.|
 |[operator=](#operator_eq)|Copies the contents of the specified `array` object into this one.|

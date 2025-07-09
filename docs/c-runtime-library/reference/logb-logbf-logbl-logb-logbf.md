@@ -1,7 +1,7 @@
 ---
 title: "logb, logbf, logbl, _logb, _logbf"
 description: "API reference for logb, logbf, logbl, _logb, and _logbf; which extract the exponent value of a floating-point argument."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["logb", "_logb", "_logbl", "logbf", "_logbf", "logbl", "_o__logb", "_o_logb", "_o_logbf", "_o_logbl", "_o__logbf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -37,7 +37,7 @@ double _logb(
 float _logbf(
    float x
 );
-#define logb(X) // Requires C11 or higher
+#define logb(X) // Requires C11 or later
 ```
 
 ### Parameters

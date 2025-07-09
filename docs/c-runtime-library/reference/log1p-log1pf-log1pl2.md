@@ -1,7 +1,7 @@
 ---
 title: "log1p, log1pf, log1pl2"
 description: "API reference for log1p, log1pf, log1pl2; which compute the natural logarithm of 1 plus the specified value."
-ms.date: "2/1/2023"
+ms.date: 2/1/2023
 api_name: ["log1p", "log1pf", "log1pl", "_o_log1p", "_o_log1pf", "_o_log1pl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -20,7 +20,7 @@ double log1p(double x);
 float log1pf(float x);
 long double log1pl(long double x);
 
-#define log1p(X) // Requires C11 or higher
+#define log1p(X) // Requires C11 or later
 
 float log1p(float x); //C++ only
 long double log1p(long double x); //C++ only

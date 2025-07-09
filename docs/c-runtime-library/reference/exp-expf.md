@@ -1,7 +1,7 @@
 ---
 title: "exp, expf, expl"
 description: "API reference for exp, expf, and expl; which calculate the exponential."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["expf", "expl", "exp", "_o_exp", "_o_expf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -31,7 +31,7 @@ float expf(
 long double expl(
    long double x
 );
-#define exp(z) // Requires C11 or higher
+#define exp(z) // Requires C11 or later
 ```
 
 ### Parameters

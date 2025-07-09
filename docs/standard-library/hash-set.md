@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: <hash_set>"
 title: "<hash_set>"
-ms.date: "11/04/2016"
+description: "Learn more about: <hash_set>"
+ms.date: 11/04/2016
 f1_keywords: ["<hash_set>"]
 helpviewer_keywords: ["hash_set header"]
-ms.assetid: 6b556967-c808-4869-9b4d-f9e030864435
 ---
 # `<hash_set>`
 
@@ -18,8 +17,6 @@ Defines the container class templates hash_set and hash_multiset and their suppo
 ```cpp
 #include <hash_set>
 ```
-
-## Remarks
 
 ### Operators
 

@@ -1,14 +1,13 @@
 ---
 title: "remainder, remainderf, remainderl"
 description: "API reference for remainder, remainderf, and remainderl; which compute the remainder of the quotient of two floating-point values, rounded to the nearest integral value."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["remainderl", "remainder", "remainderf", "_o_remainder", "_o_remainderf", "_o_remainderl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["remainderf", "remainder", "remainderl"]
 helpviewer_keywords: ["remainderf", "remainderl", "remainder"]
-ms.assetid: 5f721fb3-8b78-4597-9bc0-ca9bcd1f1d0e
 ---
 # `remainder`, `remainderf`, `remainderl`
 
@@ -20,7 +19,7 @@ Computes the remainder of the quotient of two floating-point values, rounded to 
 double remainder( double x, double y );
 float remainderf( float x, float y );
 long double remainderl( long double x, long double y );
-#define remainder(X, Y) // Requires C11 or higher
+#define remainder(X, Y) // Requires C11 or later
 
 float remainder( float x, float y ); /* C++ only */
 long double remainder( long double x, long double y ); /* C++ only */

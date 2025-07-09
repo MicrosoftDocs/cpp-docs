@@ -217,7 +217,7 @@ When an API requires the begin iterator and end sentinel to have the same type, 
 ### Example: `common`
 
 ```cpp
-// requires /std:c++20 or higher
+// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 #include <numeric>
@@ -551,7 +551,7 @@ An `empty_view` can be useful when you're calling code that requires a view but 
 ### Example: `empty`
 
 ```cpp
-// requires /std:c++20 or higher
+// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 
@@ -1062,7 +1062,7 @@ This view is useful for test purposes, for calling code that needs to be provide
 ### Example: `single`
 
 ```cpp
-// requires /std:c++20 or higher
+// requires /std:c++20 or later
 #include <ranges>
 #include <string>
 #include <tuple>

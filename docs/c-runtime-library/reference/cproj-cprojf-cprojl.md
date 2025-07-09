@@ -1,14 +1,13 @@
 ---
 title: "cproj, cprojf, cprojl"
 description: "API reference for cproj, cprojf, and cprojl; which retrieve the projection of a complex number on the Reimann sphere."
-ms.date: "9/2/2020"
+ms.date: 9/2/2020
 api_name: ["cproj", "cprojf", "cprojl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cproj", "cprojf", "cprojl", "complex/cproj", "complex/cprojf", "complex/cprojl"]
 helpviewer_keywords: ["cproj function", "cprojf function", "cprojl function"]
-ms.assetid: 32b49623-13bf-4cae-802e-7912d75030fe
 ---
 # `cproj`, `cprojf`, `cprojl`
 
@@ -32,7 +31,7 @@ _Fcomplex cprojf(
 _Lcomplex cprojl(
    _Lcomplex z
 );
-#define cproj(X) // Requires C11 or higher
+#define cproj(X) // Requires C11 or later
 ```
 
 ### Parameters

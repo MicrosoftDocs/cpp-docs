@@ -84,8 +84,6 @@ const error_category& category() const;
 
 A reference to the stored error category
 
-#### Remarks
-
 ### <a name="clear"></a> clear
 
 Clears the error code value and category.
@@ -263,8 +261,6 @@ value_type value() const;
 #### Return Value
 
 The stored error code value of type [value_type](#value_type).
-
-#### Remarks
 
 ### <a name="value_type"></a> value_type
 

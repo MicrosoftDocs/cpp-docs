@@ -316,8 +316,6 @@ Erases all the elements of a hash_set.
 void clear();
 ```
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -395,8 +393,6 @@ A type that provides a reference to a **`const`** element stored in a hash_set f
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reference const_reference;
 ```
-
-### Remarks
 
 ### Example
 
@@ -720,8 +716,6 @@ The value of an element to be inserted into the [hash_set](../standard-library/h
 
 The `emplace` member function returns a pair whose **`bool`** component returns **`true`** if an insertion was make and **`false`** if the `hash_set` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -818,8 +812,6 @@ bool empty() const;
 ### Return Value
 
 **`true`** if the hash_set is empty; **`false`** if the hash_set is nonempty.
-
-### Remarks
 
 ### Example
 
@@ -939,8 +931,6 @@ The argument key to be compared with the sort key of an element from the hash_se
 A pair of iterators where the first is the [lower_bound](../standard-library/set-class.md#lower_bound) of the key and the second is the [upper_bound](../standard-library/set-class.md#upper_bound) of the key.
 
 To access the first iterator of a pair pr returned by the member function, use `pr`. **first**, and to dereference the lower bound iterator, use \*(`pr`. **first**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **second**, and to dereference the upper bound iterator, use \*(`pr`. **second**).
-
-### Remarks
 
 ### Example
 
@@ -1583,8 +1573,6 @@ The argument key to be compared with the sort key of an element from the hash_se
 
 An `iterator` or `const_iterator` that addresses the location of an element in a hash_set that with a key that is equal to or greater than the argument key or that addresses the location succeeding the last element in the hash_set if no match is found for the key.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -1649,8 +1637,6 @@ size_type max_size() const;
 ### Return Value
 
 The maximum possible length of the hash_set.
-
-### Remarks
 
 ### Example
 
@@ -1844,8 +1830,6 @@ A type that provides a reference to an element stored in a hash_set.
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::reference reference;
 ```
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -2003,8 +1987,6 @@ size_type size() const;
 
 The current length of the hash_set.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -2045,8 +2027,6 @@ An unsigned integer type that can represent the number of elements in a hash_set
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::size_type size_type;
 ```
-
-### Remarks
 
 ### Example
 
@@ -2147,8 +2127,6 @@ The argument key to be compared with the sort key of an element from the hash_se
 ### Return Value
 
 An `iterator` or `const_iterator` that addresses the location of an element in a hash_set that with a key that is equal to or greater than the argument key, or that addresses the location succeeding the last element in the hash_set if no match is found for the key.
-
-### Remarks
 
 ### Example
 

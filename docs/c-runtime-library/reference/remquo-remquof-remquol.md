@@ -1,7 +1,7 @@
 ---
 title: "remquo, remquof, remquol"
 description: "API reference for remquo, remquof, and remquol, which compute the remainder of two integer values, and store the sign and approximate magnitude of the quotient."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["remquof", "remquo", "remquol", "_o_remquo", "_o_remquof", "_o_remquol"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,7 +19,7 @@ Computes the remainder of two integer values, and stores an integer value with t
 double remquo( double numer, double denom, int* quo );
 float remquof( float numer, float denom, int* quo );
 long double remquol( long double numer, long double denom, int* quo );
-#define remquo(X, Y, INT_PTR) // Requires C11 or higher
+#define remquo(X, Y, INT_PTR) // Requires C11 or later
 
 float remquo( float numer, float denom, int* quo ); /* C++ only */
 long double remquo( long double numer, long double denom, int* quo ); /* C++ only */
