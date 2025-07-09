@@ -749,7 +749,7 @@ The element's key value to look for.
 ### Example
 
 ```cpp
-// Requires /std:c++20 or /std:c++latest
+// Requires /std:c++20 or later
 #include <unordered_map>
 #include <iostream>
 

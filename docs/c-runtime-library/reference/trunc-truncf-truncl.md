@@ -1,14 +1,13 @@
 ---
 title: "trunc, truncf, truncl"
 description: "API reference for trunc, truncf, truncl; which determine the nearest integer that is less than or equal to the specified floating-point value."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["trunc", "truncf", "truncl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CORECRT_MATH/trunc", "CORECRT_MATH/truncf", "CORECRT_MATH/truncl", "math/trunc", "math/truncf", "math/truncl", "trunc", "truncf", "truncl"]
 helpviewer_keywords: ["trunc function", "truncf function", "truncl function"]
-ms.assetid: de2038ac-ac0b-483e-870c-e8992dcd4fd0
 ---
 # `trunc`, `truncf`, `truncl`
 
@@ -19,7 +18,7 @@ Determines the nearest integer that is less than or equal to the specified float
 ```C
 double trunc( double x );
 long double truncl( long double x );
-#define trunc(X) // Requires C11 or higher
+#define trunc(X) // Requires C11 or later
 
 long double trunc( long double x ); //C++ only
 float trunc( float x ); //C++ only

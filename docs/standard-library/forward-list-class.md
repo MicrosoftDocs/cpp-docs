@@ -168,8 +168,6 @@ iterator before_begin();
 
 A forward iterator that points just before the first element of the sequence (or just before the end of an empty sequence).
 
-### Remarks
-
 ## <a name="begin"></a> `begin`
 
 Returns an iterator addressing the first element in a forward list.
@@ -183,8 +181,6 @@ iterator begin();
 
 A forward iterator that points at the first element of the sequence (or just beyond the end of an empty sequence).
 
-### Remarks
-
 ## <a name="cbefore_begin"></a> `cbefore_begin`
 
 Returns a const iterator addressing the position before the first element in a forward list.
@@ -196,8 +192,6 @@ const_iterator cbefore_begin() const;
 ### Return Value
 
 A forward iterator that points just before the first element of the sequence (or just before the end of an empty sequence).
-
-### Remarks
 
 ## <a name="cbegin"></a> `cbegin`
 
@@ -285,8 +279,6 @@ typedef typename Allocator::const_pointer
     const_pointer;
 ```
 
-### Remarks
-
 ## <a name="const_reference"></a> `const_reference`
 
 A type that provides a constant reference to an element in the forward list.
@@ -294,8 +286,6 @@ A type that provides a constant reference to an element in the forward list.
 ```cpp
 typedef typename Allocator::const_reference const_reference;
 ```
-
-### Remarks
 
 ## <a name="difference_type"></a> `difference_type`
 
@@ -576,8 +566,6 @@ size_type max_size() const;
 ### Return Value
 
 The length of the longest sequence that the object can control.
-
-### Remarks
 
 ## <a name="merge"></a> `merge`
 

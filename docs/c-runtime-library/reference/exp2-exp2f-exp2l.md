@@ -1,7 +1,7 @@
 ---
 title: "exp2, exp2f, exp2l"
 description: "API ref for exp2(), exp2f(), and exp2l() which compute 2 raised to the specified value."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["exp2", "exp2f", "exp2l", "_o_exp2", "_o_exp2f", "_o_exp2l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -35,7 +35,7 @@ float exp2f(
 long double exp2l(
    long double x
 );
-#define exp2(X) // Requires C11 or higher
+#define exp2(X) // Requires C11 or later
 ```
 
 ### Parameters

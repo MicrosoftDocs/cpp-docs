@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4626"
 title: "Compiler Warning (level 4) C4626"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4626"
+ms.date: 11/04/2016
 f1_keywords: ["C4626"]
 helpviewer_keywords: ["C4626"]
-ms.assetid: 7f822ff4-a4a3-4f17-b45b-e8b7b4659a14
 ---
 # Compiler Warning (level 4) C4626
 
@@ -16,7 +15,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4626 and shows how to fix it:
 
-```
+```cpp
 // C4626
 // compile with: /W4
 #pragma warning(default : 4626)

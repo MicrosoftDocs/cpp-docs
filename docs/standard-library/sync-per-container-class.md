@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: sync_per_container Class"
 title: "sync_per_container Class"
-ms.date: "11/04/2016"
+description: "Learn more about: sync_per_container Class"
+ms.date: 11/04/2016
 f1_keywords: ["allocators/stdext::sync_per_container", "allocators/stdext::sync_per_container::equals"]
 helpviewer_keywords: ["sync_per_container class"]
-ms.assetid: 0b4b2904-b668-4d94-a422-d4f919cbffab
 ---
 # sync_per_container Class
 
@@ -54,8 +53,6 @@ The cache object to compare for equality.
 ### Return Value
 
 The member function always returns **`false`**.
-
-### Remarks
 
 ## See also
 

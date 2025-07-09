@@ -1,14 +1,13 @@
 ---
 title: "tan, tanf, tanl"
 description: "API reference for tan, tanf, and tanl; which calculate the tangent of a floating-point value."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["tan", "tanf", "tanl", "_o_tan", "_o_tanf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CORECRT_MATH/tan", "CORECRT_MATH/tanf", "CORECRT_MATH/tanl", "tan", "tanf", "tanl"]
 helpviewer_keywords: ["tanl function", "tan function", "calculating tangents", "tangent", "tanf function", "trigonometric functions"]
-ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
 ---
 # `tan`, `tanf`, `tanl`
 
@@ -20,7 +19,7 @@ Calculates the tangent.
 double tan( double x );
 float tanf( float x );
 long double tanl( long double x );
-#define tan(x) // Requires C11 or higher
+#define tan(x) // Requires C11 or later
 ```
 
 ```cpp

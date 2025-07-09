@@ -1,7 +1,7 @@
 ---
 title: "asin, asinf, asinl"
 description: "API reference for asin, asinf, and asinl; which calculate the arcsine of a floating-point value."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["asinf", "asinl", "asin", "_o_asin", "_o_asinf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,7 +19,7 @@ Calculates the arcsine.
 double asin( double x );
 float asinf ( float x );
 long double asinl( long double x );
-#define asin(X) // Requires C11 or higher
+#define asin(X) // Requires C11 or later
 
 float asin( float x );  // C++ only
 long double asin( long double x );  // C++ only
