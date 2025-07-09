@@ -10,6 +10,8 @@ ms.assetid: 91982314-203a-4de1-b884-94e39a623f61
 
 > invalid wide-character constant
 
+## Remarks
+
 The multibyte-character constant is not valid.
 
 ### To fix by checking the following possible causes

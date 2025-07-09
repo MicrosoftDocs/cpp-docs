@@ -10,9 +10,11 @@ ms.assetid: fe9d94ed-20a5-4d83-b9c4-60ee69d2f30a
 
 > reuse of macro formal 'identifier'
 
+## Remarks
+
 The formal parameter list of a macro definition uses the identifier more than once. Identifiers in the macro's parameter list must be unique.
 
-## Examples
+## Example
 
 The following sample generates C2009:
 

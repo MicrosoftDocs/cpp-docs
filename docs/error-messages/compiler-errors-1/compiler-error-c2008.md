@@ -10,7 +10,11 @@ ms.assetid: e748ccbe-ffd4-4008-aca7-e53c25225209
 
 > 'character' : unexpected in macro definition
 
+## Remarks
+
 The character appears immediately following the macro name. To resolve the error, there must be a space after the macro name.
+
+## Example
 
 The following sample generates C2008:
 

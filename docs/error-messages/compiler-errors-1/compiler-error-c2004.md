@@ -10,11 +10,13 @@ ms.assetid: d81526dd-3a00-4593-87b0-d910d3d29bca
 
 > expected 'defined(id)'
 
+## Remarks
+
 An identifier must appear in the parentheses following the preprocessor keyword.
 
 This error can also be generated as a result of compiler conformance work that was done for Visual Studio .NET 2003: missing parenthesis in preprocessor directive. If the closing parenthesis is missing from a preprocessor directive, the compiler will generate an error.
 
-## Examples
+## Example
 
 The following sample generates C2004:
 

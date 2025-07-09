@@ -10,6 +10,8 @@ ms.assetid: 8f40af0a-3a5a-4d6a-8ed7-125966e6bfed
 
 > too many characters in constant
 
+## Remarks
+
 A character constant contains more than two characters. The limit is one character for standard character constants and two characters for long character constants.
 
 An escape sequence, such as \t, is converted to a single character.

@@ -10,7 +10,11 @@ ms.assetid: 6b5c955c-53da-48ee-8533-64ef5b905173
 
 > missing '>'
 
+## Remarks
+
 An `#include` directive lacks a closing angle bracket. Add the closing bracket to resolve the error.
+
+## Example
 
 The following sample generates C2013:
 

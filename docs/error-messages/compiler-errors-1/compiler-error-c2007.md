@@ -10,7 +10,11 @@ ms.assetid: ecd09d99-5036-408b-9e46-bc15488f049e
 
 > #define syntax
 
+## Remarks
+
 No identifier appears after a `#define`. To resolve the error, use an identifier.
+
+## Example
 
 The following sample generates C2007:
 

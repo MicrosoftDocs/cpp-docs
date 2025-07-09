@@ -10,7 +10,11 @@ ms.assetid: 090530ed-e0ec-4358-833a-ca24260e7ffe
 
 > #line expected a line number, found 'token'
 
+## Remarks
+
 The `#line` directive must be followed by a line number.
+
+## Example
 
 The following sample generates C2005:
 

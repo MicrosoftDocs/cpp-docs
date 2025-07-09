@@ -10,7 +10,11 @@ ms.assetid: 4f37b1e1-9eca-418f-a4c3-141e8512d7b6
 
 > expected preprocessor directive, found 'character'
 
+## Remarks
+
 The character followed a `#` sign but it is not the first letter of a preprocessor directive.
+
+## Example
 
 The following sample generates C2019:
 
