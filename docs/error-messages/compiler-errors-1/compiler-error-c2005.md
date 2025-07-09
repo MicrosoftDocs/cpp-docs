@@ -16,7 +16,7 @@ The `#line` directive must be followed by a line number.
 
 ## Example
 
-The following sample generates C2005:
+The following example generates C2005:
 
 ```cpp
 // C2005.cpp

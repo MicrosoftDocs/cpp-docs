@@ -16,7 +16,7 @@ The `#` sign of a preprocessor directive must be the first character on a line t
 
 ## Example
 
-The following sample generates C2014:
+The following example generates C2014:
 
 ```cpp
 // C2014.cpp

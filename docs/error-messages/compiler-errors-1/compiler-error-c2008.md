@@ -16,7 +16,7 @@ The character appears immediately following the macro name. To resolve the error
 
 ## Example
 
-The following sample generates C2008:
+The following example generates C2008:
 
 ```cpp
 // C2008.cpp

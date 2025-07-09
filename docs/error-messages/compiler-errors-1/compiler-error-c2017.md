@@ -16,7 +16,7 @@ An escape sequence, such as \t, appears outside of a character or string constan
 
 ## Examples
 
-The following sample generates C2017:
+The following example generates C2017:
 
 ```cpp
 // C2017.cpp
@@ -28,7 +28,7 @@ int main() {
 
 C2017 can occur when the stringize operator is used with strings that include escape sequences.
 
-The following sample generates C2017:
+The following example generates C2017:
 
 ```cpp
 // C2017b.cpp

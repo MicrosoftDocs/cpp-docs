@@ -16,7 +16,7 @@ The character followed a `#` sign but it is not the first letter of a preprocess
 
 ## Example
 
-The following sample generates C2019:
+The following example generates C2019:
 
 ```cpp
 // C2019.cpp

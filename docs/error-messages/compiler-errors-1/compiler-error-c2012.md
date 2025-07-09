@@ -16,7 +16,7 @@ An `#include` directive lacks the required filename.
 
 ## Example
 
-The following sample generates C2012:
+The following example generates C2012:
 
 ```cpp
 // C2012.cpp

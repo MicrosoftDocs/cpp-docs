@@ -20,7 +20,7 @@ If you need to find the initial declaration of the redefined type, you can use t
 
 ## Example
 
-The following sample generates C2011 and shows one way to fix it:
+The following example generates C2011 and shows one way to fix it:
 
 ```cpp
 // C2011.cpp

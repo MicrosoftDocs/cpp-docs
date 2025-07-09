@@ -16,7 +16,7 @@ The formal parameter list of a macro definition uses the identifier more than on
 
 ## Example
 
-The following sample generates C2009:
+The following example generates C2009:
 
 ```cpp
 // C2009.cpp

@@ -16,7 +16,7 @@ The character is used incorrectly in the formal parameter list of a macro defini
 
 ## Example
 
-The following sample generates C2010:
+The following example generates C2010:
 
 ```cpp
 // C2010.cpp

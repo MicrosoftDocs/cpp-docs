@@ -22,7 +22,7 @@ Ending the first line with \n is not sufficient.
 
 ## Example
 
-The following sample generates C2001:
+The following example generates C2001:
 
 ```cpp
 // C2001.cpp

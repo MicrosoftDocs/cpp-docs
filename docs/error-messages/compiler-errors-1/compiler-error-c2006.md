@@ -15,7 +15,7 @@ Directives such as [#include](../../preprocessor/hash-include-directive-c-cpp.md
 
 ## Example
 
-The following sample generates C2006:
+The following example generates C2006:
 
 ```cpp
 // C2006.cpp

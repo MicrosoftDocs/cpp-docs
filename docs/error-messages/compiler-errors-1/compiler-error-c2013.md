@@ -16,7 +16,7 @@ An `#include` directive lacks a closing angle bracket. Add the closing bracket t
 
 ## Example
 
-The following sample generates C2013:
+The following example generates C2013:
 
 ```cpp
 // C2013.cpp

@@ -18,7 +18,7 @@ This error can also be generated as a result of compiler conformance work that w
 
 ## Example
 
-The following sample generates C2004:
+The following example generates C2004:
 
 ```cpp
 // C2004.cpp
