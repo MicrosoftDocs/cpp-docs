@@ -507,7 +507,7 @@ Specifies level of browse information in *`.bsc`* file. Sets [`/FR`](fr-fr-creat
 
 Specifies optional name for browser information file. Sets [`/FR`\<name>](fr-fr-create-dot-sbr-file.md).
 
-## External Includes
+## C/C++ External Includes Properties
 
 ### Treat Files Included with Angle Brackets as External
 
