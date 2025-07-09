@@ -6,7 +6,7 @@ helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
 ---
 # Overview of modules in C++
 
-C++20 introduces *modules*. A *module* is a set of source code files that are compiled independently of the source files (or more precisely, the [translation units](https://wikipedia.org/wiki/Translation_unit_(programming)) that import them.
+C++20 introduces *modules*. A *module* is a set of source code files that are compiled independently of the source files (or more precisely, the [translation units](https://wikipedia.org/wiki/Translation_unit_(programming)) that import them).
 
 Modules eliminate or reduce many of the problems associated with the use of header files. They often reduce compilation times, sometimes significantly. Macros, preprocessor directives, and nonexported names declared in a module aren't visible outside the module. They have no effect on the compilation of the translation unit that imports the module. You can import modules in any order without concern for macro redefinitions. Declarations in the importing translation unit don't participate in overload resolution or name lookup in the imported module. After a module is compiled once, the results are stored in a binary file that describes all the exported types, functions, and templates. The compiler can process that file much faster than a header file. And, the compiler can reuse it every place where the module is imported in a project.
 
