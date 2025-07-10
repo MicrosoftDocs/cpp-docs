@@ -1,22 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2004"
 title: "Compiler Error C2004"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2004"
+ms.date: 11/04/2016
 f1_keywords: ["C2004"]
 helpviewer_keywords: ["C2004"]
-ms.assetid: d81526dd-3a00-4593-87b0-d910d3d29bca
 ---
 # Compiler Error C2004
 
-expected 'defined(id)'
+> expected 'defined(id)'
+
+## Remarks
 
 An identifier must appear in the parentheses following the preprocessor keyword.
 
 This error can also be generated as a result of compiler conformance work that was done for Visual Studio .NET 2003: missing parenthesis in preprocessor directive. If the closing parenthesis is missing from a preprocessor directive, the compiler will generate an error.
 
-## Examples
+## Example
 
-The following sample generates C2004:
+The following example generates C2004:
 
 ```cpp
 // C2004.cpp
