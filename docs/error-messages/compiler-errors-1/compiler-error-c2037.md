@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2037"
 title: "Compiler Error C2037"
+description: "Learn more about: Compiler Error C2037"
 ms.date: 08/18/2022
 f1_keywords: ["C2037"]
 helpviewer_keywords: ["C2037"]

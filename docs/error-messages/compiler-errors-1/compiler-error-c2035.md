@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2035"
 title: "Compiler Error C2035"
+description: "Learn more about: Compiler Error C2035"
 ms.date: 08/18/2022
 f1_keywords: ["C2035"]
 helpviewer_keywords: ["C2035"]

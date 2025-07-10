@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2032"
 title: "Compiler Error C2032"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2032"
+ms.date: 11/04/2016
 f1_keywords: ["C2032"]
 helpviewer_keywords: ["C2032"]
-ms.assetid: 625d7c83-70b6-42c2-a558-81fbc0026324
 ---
 # Compiler Error C2032
 

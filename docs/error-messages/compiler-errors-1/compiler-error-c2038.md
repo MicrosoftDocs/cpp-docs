@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2038"
 title: "Compiler Error C2038"
+description: "Learn more about: Compiler Error C2038"
 ms.date: 08/18/2022
 f1_keywords: ["C2038"]
 helpviewer_keywords: ["C2038"]

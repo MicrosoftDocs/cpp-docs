@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2031"
 title: "Compiler Error C2031"
+description: "Learn more about: Compiler Error C2031"
 ms.date: 08/18/2022
 f1_keywords: ["C2031"]
 helpviewer_keywords: ["C2031"]

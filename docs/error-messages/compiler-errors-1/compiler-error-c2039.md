@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C2039"
 title: "Compiler Error C2039"
-ms.date: "8/1/2023"
+description: "Learn more about: Compiler Error C2039"
+ms.date: 8/1/2023
 f1_keywords: ["C2039"]
 helpviewer_keywords: ["C2039"]
 ---

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2027"
 title: "Compiler Error C2027"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2027"
+ms.date: 11/04/2016
 f1_keywords: ["C2027"]
 helpviewer_keywords: ["C2027"]
-ms.assetid: a39150c0-ec04-45ec-934c-a838bfe76627
 ---
 # Compiler Error C2027
 

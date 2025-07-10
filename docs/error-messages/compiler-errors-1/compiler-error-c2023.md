@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2023"
 title: "Compiler Error C2023"
+description: "Learn more about: Compiler Error C2023"
 ms.date: 08/18/2022
 f1_keywords: ["C2023"]
 helpviewer_keywords: ["C2023"]

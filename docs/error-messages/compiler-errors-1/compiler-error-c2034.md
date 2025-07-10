@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2034"
 title: "Compiler Error C2034"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2034"
+ms.date: 11/04/2016
 f1_keywords: ["C2034"]
 helpviewer_keywords: ["C2034"]
-ms.assetid: 953d70fa-bde9-4ce6-a55d-741e7bc63ff4
 ---
 # Compiler Error C2034
 
