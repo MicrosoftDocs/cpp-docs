@@ -1,7 +1,7 @@
 ---
 title: "Platform::Object Class"
 description: "Learn more about: Platform::Object Class"
-ms.date: "12/30/2016"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Object::Object", "VCCORLIB/Platform::Object::Equals", "VCCORLIB/Platform::Object::GetHashCode", "VCCORLIB/Platform::Object::ReferenceEquals", "VCCORLIB/Platform::ToString", "VCCORLIB/Platform::GetType"]
 helpviewer_keywords: ["Object class"]

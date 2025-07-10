@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: `selectany`"
 title: "selectany"
-ms.date: "11/04/2016"
+description: "Learn more about: `selectany`"
+ms.date: 11/04/2016
 f1_keywords: ["selectany_cpp"]
 helpviewer_keywords: ["__declspec keyword [C++], selectany", "selectany __declspec keyword"]
-ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
 ---
 # `selectany`
 

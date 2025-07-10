@@ -1,7 +1,7 @@
 ---
 title: "Initializers"
-ms.date: "07/29/2019"
 description: "How to initialize classes, structs, arrays and fundamental types in C++."
+ms.date: 07/29/2019
 helpviewer_keywords: ["arrays [C++], array-element initializers", "aggregate initializers [C++]"]
 ---
 # Initializers

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3068"
 title: "Compiler Error C3068"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3068"
+ms.date: 11/04/2016
 f1_keywords: ["C3068"]
 helpviewer_keywords: ["C3068"]
-ms.assetid: 613e3447-b4a8-4268-a661-297bed63ccdf
 ---
 # Compiler Error C3068
 

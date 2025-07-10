@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: safebuffers"
 title: "safebuffers"
-ms.date: "11/04/2016"
+description: "Learn more about: safebuffers"
+ms.date: 11/04/2016
 f1_keywords: ["safebuffers_cpp"]
 helpviewer_keywords: ["__declspec keyword (C++), safebuffers", "safebuffers __declspec keyword"]
-ms.assetid: 0b0dce14-4523-44d2-8070-5dd0fdabc618
 ---
 # safebuffers
 

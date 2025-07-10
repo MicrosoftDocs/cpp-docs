@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Class Templates"
 title: "Class Templates"
+description: "Learn more about: Class Templates"
 ms.date: 06/30/2022
 helpviewer_keywords: ["classes [C++], operating on type", "class templates", "templates, class templates"]
-ms.assetid: 633a53c8-24ee-4c23-8c88-e7c3cb0b7ac3
 ---
 # Class Templates
 

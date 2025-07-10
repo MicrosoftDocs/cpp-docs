@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Explicitly Defaulted and Deleted Functions"
 title: "Explicitly Defaulted and Deleted Functions"
-ms.date: "11/04/2016"
+description: "Learn more about: Explicitly Defaulted and Deleted Functions"
+ms.date: 11/04/2016
 ---
 # Explicitly Defaulted and Deleted Functions
 

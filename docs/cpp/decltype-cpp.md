@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: decltype (C++)"
 title: "decltype (C++)"
+description: "Learn more about: decltype (C++)"
 ms.date: 09/14/2023
 f1_keywords: ["decltype_cpp"]
 helpviewer_keywords: ["operators [C++], decltype", "decltype operator", "operators [C++], type of an expression", "operators [C++], deduce expression type"]
