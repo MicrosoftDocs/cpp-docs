@@ -10,9 +10,9 @@ ms.assetid: 8e64b6e1-b967-479b-be97-d12dc4a8e389
 
 > string too big, trailing characters truncated
 
-The string was longer than the limit of 16380 single-byte characters.
-
 ## Remarks
+
+The string was longer than the limit of 16380 single-byte characters.
 
 Before adjacent strings get concatenated, a string can't be longer than 16380 single-byte characters.
 

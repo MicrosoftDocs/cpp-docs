@@ -9,9 +9,13 @@ helpviewer_keywords: ["C2024"]
 
 > 'alignas' attribute applies to variables, data members and tag types only
 
+## Remarks
+
 The compiler found an **`alignas`** specifier applied to a function or other type that can't be aligned.
 
 To resolve this error, remove the **`alignas`** specifier.
+
+## Example
 
 The following sample generates C2024:
 

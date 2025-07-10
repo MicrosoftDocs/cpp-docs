@@ -10,6 +10,8 @@ ms.assetid: 895821a9-65d1-44b5-bde1-dae827f3e486
 
 > 'identifier' : unknown size
 
+## Remarks
+
 An operation on `identifier` requires the size of the data object, which cannot be determined.
 
 ## Examples

@@ -10,6 +10,8 @@ ms.assetid: a39150c0-ec04-45ec-934c-a838bfe76627
 
 > use of undefined type 'type'
 
+## Remarks
+
 A type cannot be used until it is defined. To resolve the error, be sure the type is fully defined before referencing it.
 
 ## Examples

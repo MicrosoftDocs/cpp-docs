@@ -9,9 +9,13 @@ helpviewer_keywords: ["C2023"]
 
 > '*identifier*': Alignment (*value-1*) different from prior declaration (*value-2*)
 
+## Remarks
+
 The compiler found an alignment specifier for a class type that's different from a previous declaration, or an **`enum`** alignment specifier that's different from the natural alignment of the base type.
 
 To resolve this error, make sure all declarations and definitions of the type use the same alignment value.
+
+## Example
 
 The following sample generates C2023:
 

@@ -10,4 +10,6 @@ ms.assetid: 1f5c477a-d909-42d8-8588-811586e8ba1e
 
 > 'number' : too big for character
 
+## Remarks
+
 The octal number following a backslash (\\) in a character or string constant is too big to represent a character.

@@ -10,7 +10,11 @@ ms.assetid: fd5a1637-9db2-4c98-a7cc-b63b39737cd9
 
 > 'identifier' : bit field cannot have indirection
 
+## Remarks
+
 The bit field was declared as a pointer, which is not allowed.
+
+## Example
 
 The following sample generates C2033:
 

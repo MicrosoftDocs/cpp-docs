@@ -10,9 +10,11 @@ ms.assetid: 064f32e2-3794-48d5-9767-991003dcb36a
 
 > expected exponent value, not 'character'
 
+## Remarks
+
 The character used as the exponent of a floating-point constant is not a valid number. Be sure to use an exponent that is in range.
 
-## Examples
+## Example
 
 The following sample generates C2021:
 

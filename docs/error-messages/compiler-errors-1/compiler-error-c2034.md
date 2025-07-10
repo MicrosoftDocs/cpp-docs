@@ -10,7 +10,11 @@ ms.assetid: 953d70fa-bde9-4ce6-a55d-741e7bc63ff4
 
 > 'identifier' : type of bit field too small for number of bits
 
+## Remarks
+
 The number of bits in the bit-field declaration exceeds the size of the base type.
+
+## Example
 
 The following sample generates C2034:
 

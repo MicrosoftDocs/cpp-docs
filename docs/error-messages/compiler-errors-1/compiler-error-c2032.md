@@ -10,7 +10,11 @@ ms.assetid: 625d7c83-70b6-42c2-a558-81fbc0026324
 
 > 'identifier' : function cannot be member of struct/union 'structorunion'
 
+## Remarks
+
 The structure or union has a member function, which is allowed in C++ but not in C. To resolve the error, either compile as a C++ program or remove the member function.
+
+## Example
 
 The following sample generates C2032:
 
