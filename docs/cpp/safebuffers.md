@@ -50,7 +50,7 @@ static int checkBuffers() {
     BUFFER cb;
     // Use the buffer...
     return 0;
-};
+}
 static __declspec(safebuffers)
     int noCheckBuffers() {
     BUFFER ncb;

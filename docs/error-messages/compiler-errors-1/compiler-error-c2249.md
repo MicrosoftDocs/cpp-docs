@@ -20,9 +20,9 @@ The following sample generates C2249.
 // C2249.cpp
 class A {
 private:
-   void privFunc( void ) {};
+   void privFunc( void ) {}
 public:
-   void pubFunc( void ) {};
+   void pubFunc( void ) {}
 };
 
 class B : virtual public A {} b;

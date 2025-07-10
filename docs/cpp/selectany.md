@@ -56,7 +56,7 @@ extern __declspec(selectany) int x5;
 // OK: dynamic initialization of global object
 class X {
 public:
-X(int i){i++;};
+X(int i){i++;}
 int i;
 };
 

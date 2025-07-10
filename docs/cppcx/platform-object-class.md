@@ -166,7 +166,7 @@ public:
     virtual Platform::String^ ToString() override
     {
       return "I'm a Tree";
-    };
+    }
 };
 ```
 

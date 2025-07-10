@@ -20,6 +20,6 @@ The following sample generates C4183:
 #pragma warning(disable : 4430)
 class MyClass1;
 class MyClass2 {
-   MyClass1() {};   // C4183
+   MyClass1() {}   // C4183
 };
 ```

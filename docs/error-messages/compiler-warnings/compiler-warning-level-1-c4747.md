@@ -35,5 +35,5 @@ The following sample generates C4747.
 
 BOOL WINAPI DllMain(HANDLE hInstance, ULONG Command, LPVOID Reserved) {
    return TRUE;
-};
+}
 ```

@@ -20,8 +20,8 @@ The following sample generates C2758:
 struct A {
    const int i;
 
-   A(int n) { };   // C2758
+   A(int n) { }   // C2758
    // try the following line instead
-   // A(int n) : i{n} {};
+   // A(int n) : i{n} {}
 };
 ```

@@ -52,7 +52,7 @@ struct T {
 };
 
 struct S {
-   virtual void /* __clrcall */ f(T t) {};
+   virtual void /* __clrcall */ f(T t) {}
 } s;
 
 int main() {
@@ -101,7 +101,7 @@ struct T {
 };
 
 struct S {
-   virtual void /* __clrcall */ f(T t) {};
+   virtual void /* __clrcall */ f(T t) {}
 } s;
 
 int main() {

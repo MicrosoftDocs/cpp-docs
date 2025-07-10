@@ -21,7 +21,7 @@ This declaration enables you to define a different function for **`double`** var
 // explicit_specialization.cpp
 template<class T> void f(T t)
 {
-};
+}
 
 // Explicit specialization of f with 'char' with the
 // template argument explicitly specified:

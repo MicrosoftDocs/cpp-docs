@@ -44,7 +44,7 @@ These rules can complicate the implementation of what should be straight-forward
 ```cpp
 struct noncopyable
 {
-  noncopyable() {};
+  noncopyable() {}
 
 private:
   noncopyable(const noncopyable&);

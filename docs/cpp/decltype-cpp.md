@@ -60,7 +60,7 @@ In C++11, you can use the **`decltype`** type specifier on a trailing return typ
 
 ```cpp
 template<typename T, typename U>
-UNKNOWN func(T&& t, U&& u){ return t + u; };
+UNKNOWN func(T&& t, U&& u){ return t + u; }
 ```
 
 The introduction of the **`decltype`** type specifier enables a developer to obtain the type of the expression that the function template returns. Use the *alternative function declaration syntax* that is shown later, the **`auto`** keyword, and the **`decltype`** type specifier to declare a *late-specified* return type. The late-specified return type is determined when the declaration is compiled, instead of when it's coded.
@@ -75,12 +75,12 @@ In the following code example, the late-specified return type of the `myFunc` fu
 //C++11
 template<typename T, typename U>
 auto myFunc(T&& t, U&& u) -> decltype (forward<T>(t) + forward<U>(u))
-        { return forward<T>(t) + forward<U>(u); };
+        { return forward<T>(t) + forward<U>(u); }
 
 //C++14
 template<typename T, typename U>
 decltype(auto) myFunc(T&& t, U&& u)
-        { return forward<T>(t) + forward<U>(u); };
+        { return forward<T>(t) + forward<U>(u); }
 ```
 
 ## `decltype` and forwarding functions (C++11)

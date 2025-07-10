@@ -17,7 +17,7 @@ The following sample generates C4353:
 ```cpp
 // C4353.cpp
 // compile with: /W1
-void MyPrintf(void){};
+void MyPrintf(void){}
 #define X 0
 #if X
    #define DBPRINT MyPrint

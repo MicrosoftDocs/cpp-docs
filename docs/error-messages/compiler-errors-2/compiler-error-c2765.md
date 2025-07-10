@@ -16,7 +16,7 @@ The following sample generates C2765:
 
 ```cpp
 // C2765.cpp
-template<class T> void f(T t) {};
+template<class T> void f(T t) {}
 
 template<> void f<char>(char c = 'a') {}   // C2765
 // try the following line instead

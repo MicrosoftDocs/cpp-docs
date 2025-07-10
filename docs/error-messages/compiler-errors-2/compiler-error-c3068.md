@@ -42,5 +42,5 @@ void b(A){}
 
 __declspec(naked) void c() {
    b(A());   // C3068
-};
+}
 ```

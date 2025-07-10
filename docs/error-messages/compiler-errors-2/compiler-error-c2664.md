@@ -34,13 +34,13 @@ The following sample generates C2664 and shows how to fix it.
 // C2664.cpp
 // C2664
 struct A {
-   void f(int i) {};
+   void f(int i) {}
 };
 
 struct B : public A {
    // To fix, uncomment the following line.
    // using A::f;
-   void f(A a) {};
+   void f(A a) {}
 };
 
 int main() {

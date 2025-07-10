@@ -51,8 +51,8 @@ Initializers may take these forms:
     };
     class PointConsumer{
     public:
-        void set_point(Point p){};
-        void set_points(initializer_list<Point> my_list){};
+        void set_point(Point p){}
+        void set_points(initializer_list<Point> my_list){}
     };
     int main() {
         PointConsumer pc{};

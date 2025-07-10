@@ -20,7 +20,7 @@ class C {
    static void func();
 };
 
-static void C::func(){};   // C2724
+static void C::func(){}   // C2724
 // try the following line instead
-// void C::func(){};
+// void C::func(){}
 ```

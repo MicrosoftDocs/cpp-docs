@@ -20,5 +20,5 @@ The following sample generates C2246:
 void func( void ) {
    class A { static int i; };   // C2246  i is local to func
    static int j;   // OK
-};
+}
 ```

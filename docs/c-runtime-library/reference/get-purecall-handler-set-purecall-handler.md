@@ -64,7 +64,7 @@ class CDerived;
 class CBase
 {
 public:
-   CBase(CDerived *derived): m_pDerived(derived) {};
+   CBase(CDerived *derived): m_pDerived(derived) {}
    ~CBase();
    virtual void function(void) = 0;
 
@@ -74,8 +74,8 @@ public:
 class CDerived : public CBase
 {
 public:
-   CDerived() : CBase(this) {};   // C4355
-   virtual void function(void) {};
+   CDerived() : CBase(this) {}   // C4355
+   virtual void function(void) {}
 };
 
 CBase::~CBase()

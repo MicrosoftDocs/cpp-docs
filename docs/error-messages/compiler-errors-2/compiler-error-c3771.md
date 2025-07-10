@@ -26,7 +26,7 @@ The following code example declares a class template and function in namespace `
 
 namespace NA {
 template<class T> class A {
-    void aFunction(T t) {};
+    void aFunction(T t) {}
     };
 }
 // using namespace NA;

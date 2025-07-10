@@ -24,6 +24,6 @@ public:
    friend void func3();   // OK, friend not virtual nor pure
 };
 
-void func1() {};
-void func3() {};
+void func1() {}
+void func3() {}
 ```

@@ -25,7 +25,7 @@ The following sample generates C4722:
 class C {
 public:
    C();
-   ~C() { exit(1); };   // C4722
+   ~C() { exit(1); }   // C4722
 };
 
 extern void func (C*);
