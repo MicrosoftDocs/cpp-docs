@@ -8,7 +8,7 @@ ms.assetid: 953d70fa-bde9-4ce6-a55d-741e7bc63ff4
 ---
 # Compiler Error C2034
 
-'identifier' : type of bit field too small for number of bits
+> 'identifier' : type of bit field too small for number of bits
 
 The number of bits in the bit-field declaration exceeds the size of the base type.
 

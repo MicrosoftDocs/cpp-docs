@@ -8,6 +8,6 @@ ms.assetid: 4e92e944-8fce-4443-9baf-4411ad9bde70
 ---
 # Compiler Error C2028
 
-struct/union member must be inside a struct/union
+> struct/union member must be inside a struct/union
 
 Structure or union members must be declared within the structure or union.

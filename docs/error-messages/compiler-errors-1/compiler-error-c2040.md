@@ -8,7 +8,7 @@ ms.assetid: 74ca3592-1469-4965-ab34-a4815e2fbefe
 ---
 # Compiler Error C2040
 
-'operator' : 'identifier1' differs in levels of indirection from 'identifier2'
+> 'operator' : 'identifier1' differs in levels of indirection from 'identifier2'
 
 An expression involving the specified operands has incompatible operand types or implicitly converted operand types. If both operands are arithmetic, or both are nonarithmetic (such as array or pointer), they are used without change. If one operand is arithmetic and the other is not, the arithmetic operand is converted to the type of the nonarithmetic operand.
 

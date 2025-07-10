@@ -8,7 +8,7 @@ ms.assetid: 064f32e2-3794-48d5-9767-991003dcb36a
 ---
 # Compiler Error C2021
 
-expected exponent value, not 'character'
+> expected exponent value, not 'character'
 
 The character used as the exponent of a floating-point constant is not a valid number. Be sure to use an exponent that is in range.
 

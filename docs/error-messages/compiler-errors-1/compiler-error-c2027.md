@@ -8,7 +8,7 @@ ms.assetid: a39150c0-ec04-45ec-934c-a838bfe76627
 ---
 # Compiler Error C2027
 
-use of undefined type 'type'
+> use of undefined type 'type'
 
 A type cannot be used until it is defined. To resolve the error, be sure the type is fully defined before referencing it.
 

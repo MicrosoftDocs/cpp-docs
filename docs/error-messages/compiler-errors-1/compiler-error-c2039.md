@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2039"]
 ---
 # Compiler Error C2039
 
-`'identifier1' : is not a member of 'identifier2'`
+> 'identifier1' : is not a member of 'identifier2'
 
 The code incorrectly calls or refers to a member of a structure, class, or union.
 

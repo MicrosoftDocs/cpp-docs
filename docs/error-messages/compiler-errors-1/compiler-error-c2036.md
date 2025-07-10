@@ -8,7 +8,7 @@ ms.assetid: 895821a9-65d1-44b5-bde1-dae827f3e486
 ---
 # Compiler Error C2036
 
-'identifier' : unknown size
+> 'identifier' : unknown size
 
 An operation on `identifier` requires the size of the data object, which cannot be determined.
 
