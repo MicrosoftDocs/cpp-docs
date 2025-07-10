@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2249"
 title: "Compiler Error C2249"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2249"
+ms.date: 11/04/2016
 f1_keywords: ["C2249"]
 helpviewer_keywords: ["C2249"]
-ms.assetid: bdd6697c-e04b-49b9-8e40-d9eb6d74f2b6
 ---
 # Compiler Error C2249
 
@@ -20,9 +19,9 @@ The following sample generates C2249.
 // C2249.cpp
 class A {
 private:
-   void privFunc( void ) {};
+   void privFunc( void ) {}
 public:
-   void pubFunc( void ) {};
+   void pubFunc( void ) {}
 };
 
 class B : virtual public A {} b;
