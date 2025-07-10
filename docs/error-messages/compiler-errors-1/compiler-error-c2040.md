@@ -16,7 +16,7 @@ An expression involving the specified operands has incompatible operand types or
 
 ## Example
 
-This sample generates C2040 and shows how to fix it.
+This example generates C2040 and shows how to fix it.
 
 ```cpp
 // C2040.cpp

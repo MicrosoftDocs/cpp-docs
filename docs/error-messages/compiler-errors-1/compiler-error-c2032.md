@@ -16,7 +16,7 @@ The structure or union has a member function, which is allowed in C++ but not in
 
 ## Example
 
-The following sample generates C2032:
+The following example generates C2032:
 
 ```c
 // C2032.c

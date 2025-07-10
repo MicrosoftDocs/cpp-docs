@@ -16,7 +16,7 @@ The bit field was declared as a pointer, which is not allowed.
 
 ## Example
 
-The following sample generates C2033:
+The following example generates C2033:
 
 ```cpp
 // C2033.cpp

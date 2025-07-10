@@ -16,7 +16,7 @@ The character used as the exponent of a floating-point constant is not a valid n
 
 ## Example
 
-The following sample generates C2021:
+The following example generates C2021:
 
 ```cpp
 // C2021.cpp

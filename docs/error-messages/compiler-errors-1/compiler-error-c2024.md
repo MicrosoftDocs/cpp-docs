@@ -17,7 +17,7 @@ To resolve this error, remove the **`alignas`** specifier.
 
 ## Example
 
-The following sample generates C2024:
+The following example generates C2024:
 
 ```cpp
 // C2024.cpp

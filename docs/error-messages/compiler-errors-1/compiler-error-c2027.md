@@ -16,7 +16,7 @@ A type cannot be used until it is defined. To resolve the error, be sure the typ
 
 ## Examples
 
-The following sample generates C2027.
+The following example generates C2027.
 
 ```cpp
 // C2027.cpp
@@ -38,7 +38,7 @@ int main() {
 
 It is possible to declare a pointer to a declared but undefined type. But C++ does not allow a reference to an undefined type.
 
-The following sample generates C2027.
+The following example generates C2027.
 
 ```cpp
 // C2027_b.cpp

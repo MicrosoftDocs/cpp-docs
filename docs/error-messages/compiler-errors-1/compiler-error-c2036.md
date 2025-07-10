@@ -16,7 +16,7 @@ An operation on `identifier` requires the size of the data object, which cannot 
 
 ## Examples
 
-The following sample generates C2036.
+The following example generates C2036.
 
 ```c
 // C2036.c
@@ -31,7 +31,7 @@ int main() {
 }
 ```
 
-The following sample generates C2036.
+The following example generates C2036.
 
 ```cpp
 // C2036_2.cpp

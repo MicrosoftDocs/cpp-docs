@@ -17,7 +17,7 @@ To resolve this error, make sure all declarations and definitions of the type us
 
 ## Example
 
-The following sample generates C2023:
+The following example generates C2023:
 
 ```cpp
 // C2023.cpp

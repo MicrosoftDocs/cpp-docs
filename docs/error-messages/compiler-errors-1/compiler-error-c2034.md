@@ -16,7 +16,7 @@ The number of bits in the bit-field declaration exceeds the size of the base typ
 
 ## Example
 
-The following sample generates C2034:
+The following example generates C2034:
 
 ```cpp
 // C2034.cpp
