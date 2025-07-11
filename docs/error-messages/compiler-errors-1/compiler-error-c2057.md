@@ -8,7 +8,7 @@ ms.assetid: 038a99d6-1f5a-42fa-8449-03b4ff11ee0b
 ---
 # Compiler Error C2057
 
-expected constant expression
+> expected constant expression
 
 The context requires a constant expression, an expression whose value is known at compile time.
 

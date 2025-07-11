@@ -8,7 +8,7 @@ ms.assetid: 2fca668e-9b20-4933-987a-18c0fd0187df
 ---
 # Compiler Error C2045
 
-'identifier' : label redefined
+> 'identifier' : label redefined
 
 The label appears before multiple statements in the same function.
 

@@ -8,7 +8,7 @@ ms.assetid: c9a33bb1-f9cf-47d6-bd21-7d867a8c37d5
 ---
 # Compiler Error C2041
 
-illegal digit 'character' for base 'number'
+> illegal digit 'character' for base 'number'
 
 The specified character is not a valid digit for the base (such as octal or hex).
 

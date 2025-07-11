@@ -8,7 +8,7 @@ ms.assetid: 37f7c612-0d7d-4728-9e67-ac4160555f48
 ---
 # Compiler Error C2054
 
-expected '(' to follow 'identifier'
+> expected '(' to follow 'identifier'
 
 The function identifier is used in a context that requires trailing parentheses.
 

@@ -8,7 +8,7 @@ ms.assetid: 44704726-85fc-42f0-afb9-194df8c4ca7c
 ---
 # Compiler Error C2048
 
-more than one default
+> more than one default
 
 A **`switch`** statement contains multiple **`default`** labels. Delete one of the **`default`** labels to resolve the error.
 

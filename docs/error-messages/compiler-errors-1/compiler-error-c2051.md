@@ -8,7 +8,7 @@ ms.assetid: 81c0469a-78e2-49fa-bd76-97cdb135e3ea
 ---
 # Compiler Error C2051
 
-case expression not constant
+> case expression not constant
 
 Case expressions must be integer constants.
 

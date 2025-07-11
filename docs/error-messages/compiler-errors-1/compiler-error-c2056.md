@@ -8,6 +8,6 @@ ms.assetid: 043a1f72-738a-487f-b7b3-055cc5ca0ae7
 ---
 # Compiler Error C2056
 
-illegal expression
+> illegal expression
 
 An expression was invalid because of a previous error.

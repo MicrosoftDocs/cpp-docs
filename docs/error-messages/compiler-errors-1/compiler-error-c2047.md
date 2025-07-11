@@ -8,7 +8,7 @@ ms.assetid: 686a5a81-3857-4753-84a0-5c2e7149cbee
 ---
 # Compiler Error C2047
 
-illegal default
+> illegal default
 
 The keyword **`default`** can appear only in a **`switch`** statement.
 

@@ -8,7 +8,7 @@ ms.assetid: 81e08e6b-15f7-41b4-980a-53763e19990c
 ---
 # Compiler Error C2058
 
-constant expression is not integral
+> constant expression is not integral
 
 The context requires an integer constant expression.
 

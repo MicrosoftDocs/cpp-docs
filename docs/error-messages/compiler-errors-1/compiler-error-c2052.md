@@ -8,7 +8,7 @@ ms.assetid: 922ca43b-b64b-4ef7-9611-c7313be3fd79
 ---
 # Compiler Error C2052
 
-'type' : illegal type for case expression
+> 'type' : illegal type for case expression
 
 Case expressions must be integer constants.
 

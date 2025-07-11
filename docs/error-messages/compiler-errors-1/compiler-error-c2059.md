@@ -8,7 +8,7 @@ ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
 ---
 # Compiler Error C2059
 
-syntax error : 'token'
+> syntax error : 'token'
 
 The token caused a syntax error.
 

@@ -8,7 +8,7 @@ ms.assetid: e111788f-41ce-405a-9824-a4c1c26059e6
 ---
 # Compiler Error C2042
 
-signed/unsigned keywords mutually exclusive
+> signed/unsigned keywords mutually exclusive
 
 The keywords **`signed`** and **`unsigned`** are used in a single declaration.
 

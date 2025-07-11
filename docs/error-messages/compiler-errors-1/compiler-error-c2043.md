@@ -8,6 +8,6 @@ ms.assetid: 6cc829f3-c6ea-43ae-8a3f-303ecf6c7dc6
 ---
 # Compiler Error C2043
 
-illegal break
+> illegal break
 
 A [break](../../cpp/break-statement-cpp.md) is legal only within a **`do`**, **`for`**, **`while`**, or **`switch`** statement.

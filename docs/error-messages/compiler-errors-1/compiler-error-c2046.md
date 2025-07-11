@@ -8,7 +8,7 @@ ms.assetid: f0c8f9dd-dbd7-4c4a-8838-fde54208ec71
 ---
 # Compiler Error C2046
 
-illegal case
+> illegal case
 
 The keyword `case` can appear only in a **`switch`** statement.
 
