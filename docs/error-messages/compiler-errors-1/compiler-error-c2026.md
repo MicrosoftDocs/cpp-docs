@@ -4,15 +4,14 @@ description: "Describes Microsoft C/C++ compiler error C2026, its causes and how
 ms.date: 09/25/2020
 f1_keywords: ["C2026"]
 helpviewer_keywords: ["C2026"]
-ms.assetid: 8e64b6e1-b967-479b-be97-d12dc4a8e389
 ---
 # Compiler Error C2026
 
 > string too big, trailing characters truncated
 
-The string was longer than the limit of 16380 single-byte characters.
-
 ## Remarks
+
+The string was longer than the limit of 16380 single-byte characters.
 
 Before adjacent strings get concatenated, a string can't be longer than 16380 single-byte characters.
 
