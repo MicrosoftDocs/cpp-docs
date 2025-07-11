@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Math errors (Mxxxx)"
 title: "Learn about math errors M6101 through M6205"
-ms.date: "04/16/2019"
+description: "Learn more about: Math errors (Mxxxx)"
+ms.date: 04/16/2019
 ---
 # Math errors (M6101 through M6205)
 
