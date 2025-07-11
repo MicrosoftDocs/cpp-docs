@@ -1089,7 +1089,7 @@ Key value to search for.
 
 ### Remarks
 
-The member function returns a pair of iterators `X` such that`[X.first, X.second)` delimits just those elements of the controlled sequence that have equivalent ordering with *`keyval`*. If no such elements exist, both iterators are `end()`.
+The member function returns a pair of iterators `X` such that `[X.first, X.second)` delimits just those elements of the controlled sequence that have equivalent ordering with *`keyval`*. If no such elements exist, both iterators are `end()`.
 
 ### Example
 
@@ -2376,7 +2376,7 @@ The `initializer_list` containing the elements to copy.
 
 ### Remarks
 
-The first constructor specifies a copy of the sequence controlled by *`Right`*. The second constructor specifies an empty controlled sequence. The third constructor specifies a copy of the sequence by moving *`Right`* The fourth through eighth constructors use an `initializer_list` to specify the elements to copy. The ninth constructor inserts the sequence of element values`[first, last)`.
+The first constructor specifies a copy of the sequence controlled by *`Right`*. The second constructor specifies an empty controlled sequence. The third constructor specifies a copy of the sequence by moving *`Right`* The fourth through eighth constructors use an `initializer_list` to specify the elements to copy. The ninth constructor inserts the sequence of element values `[first, last)`.
 
 All constructors also initialize several stored values. For the copy constructor, the values are obtained from *`Right`*. Otherwise:
 
