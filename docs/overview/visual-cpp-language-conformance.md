@@ -497,7 +497,7 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P2465R3 Standard Library Modules std And std.compat​`](https://wg21.link/p2465r3) | no |
 | &emsp;[`P2494R2 Relaxing Range Adaptors To Allow Move-Only Types​`](https://wg21.link/p2494r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2499R0 string_view Range Constructor Should Be explicit​`](https://wg21.link/p2499r0) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
-| &emsp;[`P2508R1 basic_format_string, format_string, wformat_string​`](https://wg21.link/p2508r1) | VS 2022 17.5 <sup>[23](#note_23) |
+| &emsp;[`P2508R1 basic_format_string, format_string, wformat_string​`](https://wg21.link/p2508r1) | VS 2022 17.5 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2517R1 Conditional noexcept For apply()​`](https://wg21.link/p2517r1) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2520R0 move_iterator<T*> Should Be A Random-Access Iterator​​`](https://wg21.link/p2520r0) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2549R1 unexpected<E>::error()`](https://wg21.link/p2549r1) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
