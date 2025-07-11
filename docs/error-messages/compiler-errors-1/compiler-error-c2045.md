@@ -16,7 +16,7 @@ The label appears before multiple statements in the same function.
 
 ## Example
 
-The following sample generates C2045:
+The following example generates C2045:
 
 ```cpp
 // C2045.cpp

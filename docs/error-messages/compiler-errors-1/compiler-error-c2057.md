@@ -18,7 +18,7 @@ The compiler must know the size of a type at compile time in order to allocate s
 
 ## Examples
 
-The following sample generates C2057 and shows how to fix it:
+The following example generates C2057 and shows how to fix it:
 
 ```cpp
 // C2057.cpp
@@ -30,7 +30,7 @@ int main() {
 }
 ```
 
-C has more restrictive rules for constant expressions.  The following sample generates C2057 and shows how to fix it:
+C has more restrictive rules for constant expressions.  The following example generates C2057 and shows how to fix it:
 
 ```c
 // C2057b.c

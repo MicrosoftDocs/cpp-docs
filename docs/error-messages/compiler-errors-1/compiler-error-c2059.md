@@ -77,7 +77,7 @@ void func(ag_type arg = ag_type(5, 7.0));   // OK
 
 C2059 can occur for an ill-formed cast.
 
-The following sample generates C2059:
+The following example generates C2059:
 
 ```cpp
 // C2059c.cpp
@@ -95,7 +95,7 @@ int main() {
 
 C2059 can also occur if you attempt to create a namespace name that contains a period.
 
-The following sample generates C2059:
+The following example generates C2059:
 
 ```cpp
 // C2059d.cpp

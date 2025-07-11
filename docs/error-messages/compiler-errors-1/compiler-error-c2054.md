@@ -18,7 +18,7 @@ This error can be caused by omitting an equal sign (=) on a complex initializati
 
 ## Example
 
-The following sample generates C2054:
+The following example generates C2054:
 
 ```c
 // C2054.c

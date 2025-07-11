@@ -16,7 +16,7 @@ Case expressions must be integer constants.
 
 ## Example
 
-The following sample generates C2051:
+The following example generates C2051:
 
 ```cpp
 // C2051.cpp

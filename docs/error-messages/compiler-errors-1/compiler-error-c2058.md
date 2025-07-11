@@ -16,7 +16,7 @@ The context requires an integer constant expression.
 
 ## Example
 
-The following sample generates C2058:
+The following example generates C2058:
 
 ```cpp
 // C2058.cpp

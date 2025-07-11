@@ -16,7 +16,7 @@ The specified character is not a valid digit for the base (such as octal or hex)
 
 ## Example
 
-The following sample generates C2041:
+The following example generates C2041:
 
 ```cpp
 // C2041.cpp

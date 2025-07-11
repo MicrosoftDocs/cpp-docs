@@ -16,7 +16,7 @@ A **`switch`** statement contains multiple **`default`** labels. Delete one of t
 
 ## Example
 
-The following sample generates C2048:
+The following example generates C2048:
 
 ```cpp
 // C2048.cpp

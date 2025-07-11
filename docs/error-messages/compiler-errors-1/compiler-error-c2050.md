@@ -16,7 +16,7 @@ The **`switch`** expression evaluates to a noninteger value. To resolve the erro
 
 ## Example
 
-The following sample generates C2050:
+The following example generates C2050:
 
 ```cpp
 // C2050.cpp

@@ -16,7 +16,7 @@ The keyword **`default`** can appear only in a **`switch`** statement.
 
 ## Example
 
-The following sample generates C2047:
+The following example generates C2047:
 
 ```cpp
 // C2047.cpp

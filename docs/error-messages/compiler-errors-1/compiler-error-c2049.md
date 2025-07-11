@@ -17,7 +17,7 @@ To resolve this issue, make the use of the **`inline`** specifier consistent acr
 
 ## Example
 
-The following sample generates C2049:
+The following example generates C2049:
 
 ```cpp
 // C2049.cpp

@@ -16,7 +16,7 @@ The keywords **`signed`** and **`unsigned`** are used in a single declaration.
 
 ## Example
 
-The following sample generates C2042:
+The following example generates C2042:
 
 ```cpp
 // C2042.cpp

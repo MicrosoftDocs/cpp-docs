@@ -16,7 +16,7 @@ The wide string is assigned to an incompatible type.
 
 ## Example
 
-The following sample generates C2053:
+The following example generates C2053:
 
 ```c
 // C2053.c
