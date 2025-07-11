@@ -8,6 +8,8 @@ items:
   items:
     - name: "Troubleshoot function inlining on build time"
       href: ../build-insights/tutorials/build-insights-function-view.md
+    - name: "Analyze template instantiations to optimize build time"
+      href: ../build-insights/tutorials/build-insights-template-view.md
     - name: "Troubleshoot header file impact on build time"
       href: ../build-insights/tutorials/build-insights-included-files-view.md
     - name: "Build Insights tips and tricks"
