@@ -536,7 +536,7 @@ A group of papers listed together indicates a Standard feature along with one or
 | &emsp;`gets_s()` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
 | &emsp;Bounds-checking interfaces (`*_s` APIs) | Partial in VS 2015 <sup>[C11](#note_C11), [O](#note_O)</sup> |
 | &emsp;`fopen` `"x"` option | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
-| &emsp;Static assertions | VS 2019 16.8  <sup>[C11](#note_C11), [2104](#note_2104)</sup> |
+| &emsp;Static assertions | VS 2019 16.8 <sup>[C11](#note_C11), [2104](#note_2104)</sup> |
 | &emsp;`quick_exit` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
 | &emsp;`<complex.h>` macros | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
 | &emsp;floating point characteristics `<float.h>` | VS 2019 16.8 <sup>[C11](#note_C11)</sup> |
