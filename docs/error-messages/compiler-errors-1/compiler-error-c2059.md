@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2059"
 title: "Compiler Error C2059"
-ms.date: "03/26/2019"
+description: "Learn more about: Compiler Error C2059"
+ms.date: 03/26/2019
 f1_keywords: ["C2059"]
 helpviewer_keywords: ["C2059"]
-ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
 ---
 # Compiler Error C2059
 

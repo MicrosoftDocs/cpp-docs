@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2050"
 title: "Compiler Error C2050"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2050"
+ms.date: 11/04/2016
 f1_keywords: ["C2050"]
 helpviewer_keywords: ["C2050"]
-ms.assetid: 66aaed7d-00db-4ce1-a9d6-4447c1cf07ce
 ---
 # Compiler Error C2050
 

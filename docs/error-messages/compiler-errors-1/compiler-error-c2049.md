@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2049"
 title: "Compiler Error C2049"
+description: "Learn more about: Compiler Error C2049"
 ms.date: 08/18/2022
 f1_keywords: ["C2049"]
 helpviewer_keywords: ["C2049"]

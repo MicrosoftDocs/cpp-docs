@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Microsoft Visual C++ compiler error C2055"
 title: "Compiler error C2055"
+description: "Learn more about: Microsoft Visual C++ compiler error C2055"
 ms.date: 06/10/2024
 f1_keywords: ["C2055"]
 helpviewer_keywords: ["C2055"]

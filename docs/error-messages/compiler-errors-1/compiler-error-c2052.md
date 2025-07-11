@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2052"
 title: "Compiler Error C2052"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2052"
+ms.date: 11/04/2016
 f1_keywords: ["C2052"]
 helpviewer_keywords: ["C2052"]
-ms.assetid: 922ca43b-b64b-4ef7-9611-c7313be3fd79
 ---
 # Compiler Error C2052
 

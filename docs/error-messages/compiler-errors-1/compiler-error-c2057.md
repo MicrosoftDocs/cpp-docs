@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2057"
 title: "Compiler Error C2057"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2057"
+ms.date: 11/04/2016
 f1_keywords: ["C2057"]
 helpviewer_keywords: ["C2057"]
-ms.assetid: 038a99d6-1f5a-42fa-8449-03b4ff11ee0b
 ---
 # Compiler Error C2057
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2051"
 title: "Compiler Error C2051"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2051"
+ms.date: 11/04/2016
 f1_keywords: ["C2051"]
 helpviewer_keywords: ["C2051"]
-ms.assetid: 81c0469a-78e2-49fa-bd76-97cdb135e3ea
 ---
 # Compiler Error C2051
 

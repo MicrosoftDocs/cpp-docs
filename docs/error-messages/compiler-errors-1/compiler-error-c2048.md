@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2048"
 title: "Compiler Error C2048"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2048"
+ms.date: 11/04/2016
 f1_keywords: ["C2048"]
 helpviewer_keywords: ["C2048"]
-ms.assetid: 44704726-85fc-42f0-afb9-194df8c4ca7c
 ---
 # Compiler Error C2048
 
