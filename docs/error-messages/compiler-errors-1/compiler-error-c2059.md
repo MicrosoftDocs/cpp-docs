@@ -10,7 +10,11 @@ ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
 
 > syntax error : 'token'
 
+## Remarks
+
 The token caused a syntax error.
+
+## Examples
 
 The following example generates an error message for the line that declares `j`.
 

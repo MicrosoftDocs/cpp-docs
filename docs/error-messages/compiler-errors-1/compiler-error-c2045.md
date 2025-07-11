@@ -10,7 +10,11 @@ ms.assetid: 2fca668e-9b20-4933-987a-18c0fd0187df
 
 > 'identifier' : label redefined
 
+## Remarks
+
 The label appears before multiple statements in the same function.
+
+## Example
 
 The following sample generates C2045:
 

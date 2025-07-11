@@ -10,6 +10,8 @@ ms.assetid: 038a99d6-1f5a-42fa-8449-03b4ff11ee0b
 
 > expected constant expression
 
+## Remarks
+
 The context requires a constant expression, an expression whose value is known at compile time.
 
 The compiler must know the size of a type at compile time in order to allocate space for an instance of that type.

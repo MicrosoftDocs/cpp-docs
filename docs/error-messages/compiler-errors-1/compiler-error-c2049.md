@@ -9,9 +9,13 @@ helpviewer_keywords: ["C2049"]
 
 > '*namespace-name*': non-inline namespace cannot be reopened as inline
 
+## Remarks
+
 The **`inline`** keyword may be used on a namespace definition extension only if it was also used on the original namespace definition.
 
 To resolve this issue, make the use of the **`inline`** specifier consistent across all parts of the namespace.
+
+## Example
 
 The following sample generates C2049:
 

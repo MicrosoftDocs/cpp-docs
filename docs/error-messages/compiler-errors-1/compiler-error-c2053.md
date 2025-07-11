@@ -10,7 +10,11 @@ ms.assetid: 13324c85-13a8-4996-bd42-a31bfe7ff80f
 
 > 'identifier' : wide string mismatch
 
+## Remarks
+
 The wide string is assigned to an incompatible type.
+
+## Example
 
 The following sample generates C2053:
 

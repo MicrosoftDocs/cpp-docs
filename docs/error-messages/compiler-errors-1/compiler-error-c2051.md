@@ -10,7 +10,11 @@ ms.assetid: 81c0469a-78e2-49fa-bd76-97cdb135e3ea
 
 > case expression not constant
 
+## Remarks
+
 Case expressions must be integer constants.
+
+## Example
 
 The following sample generates C2051:
 

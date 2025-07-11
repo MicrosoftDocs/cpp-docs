@@ -10,7 +10,11 @@ ms.assetid: 81e08e6b-15f7-41b4-980a-53763e19990c
 
 > constant expression is not integral
 
+## Remarks
+
 The context requires an integer constant expression.
+
+## Example
 
 The following sample generates C2058:
 

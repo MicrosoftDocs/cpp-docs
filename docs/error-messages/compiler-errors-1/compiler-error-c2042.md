@@ -10,7 +10,11 @@ ms.assetid: e111788f-41ce-405a-9824-a4c1c26059e6
 
 > signed/unsigned keywords mutually exclusive
 
+## Remarks
+
 The keywords **`signed`** and **`unsigned`** are used in a single declaration.
+
+## Example
 
 The following sample generates C2042:
 

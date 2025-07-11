@@ -10,7 +10,11 @@ ms.assetid: c9a33bb1-f9cf-47d6-bd21-7d867a8c37d5
 
 > illegal digit 'character' for base 'number'
 
+## Remarks
+
 The specified character is not a valid digit for the base (such as octal or hex).
+
+## Example
 
 The following sample generates C2041:
 

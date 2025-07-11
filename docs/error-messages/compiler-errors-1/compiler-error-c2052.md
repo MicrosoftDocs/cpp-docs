@@ -10,7 +10,11 @@ ms.assetid: 922ca43b-b64b-4ef7-9611-c7313be3fd79
 
 > 'type' : illegal type for case expression
 
+## Remarks
+
 Case expressions must be integer constants.
+
+## Example
 
 The following sample generates C2052:
 

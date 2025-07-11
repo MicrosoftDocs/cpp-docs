@@ -10,9 +10,13 @@ ms.assetid: 37f7c612-0d7d-4728-9e67-ac4160555f48
 
 > expected '(' to follow 'identifier'
 
+## Remarks
+
 The function identifier is used in a context that requires trailing parentheses.
 
 This error can be caused by omitting an equal sign (=) on a complex initialization.
+
+## Example
 
 The following sample generates C2054:
 

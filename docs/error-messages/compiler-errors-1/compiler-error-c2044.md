@@ -10,4 +10,6 @@ ms.assetid: adf4bedc-f915-4008-8b48-a06d626d8c38
 
 > illegal continue
 
+## Remarks
+
 A [continue](../../cpp/continue-statement-cpp.md) is legal only within a **`do`**, **`for`**, or **`while`** statement.
