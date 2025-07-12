@@ -10,9 +10,13 @@ ms.assetid: ca58d6d5-eccd-40b7-ba14-c003223c5bc7
 
 > 'identifier' uses undefined class/struct/union 'name'
 
+## Remarks
+
 The specified identifier is an undefined class, structure, or union.
 
 This error can be caused by initializing an anonymous union.
+
+## Examples
 
 The following sample generates C2079:
 

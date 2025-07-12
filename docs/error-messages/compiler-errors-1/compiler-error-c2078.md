@@ -10,9 +10,13 @@ ms.assetid: 9bead850-4123-46cf-a634-5c77ba974b2b
 
 > too many initializers
 
+## Remarks
+
 The number of initializers exceeds the number of objects to be initialized.
 
 The compiler can deduce the correct assignment of initializers to objects and inner objects when inner braces are elided from the initializer list. Complete bracing also eliminates ambiguity and results in correct assignment. Partial bracing can cause C2078 because of ambiguity in the assignment of initializers to objects.
+
+## Example
 
 The following sample generates C2078 and shows how to fix it:
 

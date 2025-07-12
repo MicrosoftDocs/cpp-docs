@@ -10,7 +10,11 @@ ms.assetid: 6cc98353-2ddf-43ab-88a2-9cc91cdd6033
 
 > type 'type' unexpected
 
+## Remarks
+
 The compiler did not expect a type name.
+
+## Example
 
 The following sample generates C2062:
 

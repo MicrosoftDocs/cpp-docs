@@ -10,7 +10,11 @@ ms.assetid: 4c8dea63-1227-4aba-be26-2462537f86fb
 
 > 'type': illegal sizeof operand
 
+## Remarks
+
 The [sizeof](../../cpp/sizeof-operator.md) operator requires an expression or type name.
+
+## Example
 
 The following sample generates C2070:
 

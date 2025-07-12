@@ -10,4 +10,6 @@ ms.assetid: f046f0e3-1987-477a-a0af-fe543a9f5fcb
 
 > non-scalar field initializer 'identifier'
 
+## Remarks
+
 You tried to initialize a bit field with a nonscalar (struct, union, array, or class). Use an integer or floating-point value.

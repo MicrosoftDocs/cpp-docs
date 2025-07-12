@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2068"]
 
 > illegal use of overloaded function. Missing argument list?
 
+## Remarks
+
 The compiler detected the invalid use of an overloaded function with no arguments.
+
+## Example
 
 For example:
 

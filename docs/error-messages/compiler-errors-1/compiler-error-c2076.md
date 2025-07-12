@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2076"]
 
 > a brace-enclosed initializer list cannot be used in a new-expression whose type contains 'auto/decltype(auto)'
 
+## Remarks
+
 If an **`auto`** type-specifier appears in the specifier sequence of a new type-identifier or the type-identifier of a **`new`** expression, the expression must contain an initializer of the form `( assignment-expression )`. The compiler deduces the type-identifier from the `assignment-expression` in the initializer. For example,
 
 ```cpp

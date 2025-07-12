@@ -10,4 +10,6 @@ ms.assetid: 1abe5934-61db-4374-8c48-1fa7281317f4
 
 > 'identifier' : 'class-key' initialization needs curly braces
 
+## Remarks
+
 There were no curly braces around the specified class, structure, or union initializer.

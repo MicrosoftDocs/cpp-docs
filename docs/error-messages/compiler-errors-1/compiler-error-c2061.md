@@ -10,11 +10,15 @@ ms.assetid: b0e61c0c-a205-4820-b9aa-301d6c6fe6eb
 
 > syntax error : identifier 'identifier'
 
+## Remarks
+
 The compiler found an identifier where it wasn't expected. Make sure that `identifier` is declared before you use it.
 
 An initializer may be enclosed by parentheses. To avoid this problem, enclose the declarator in parentheses or make it a **`typedef`**.
 
 This error could also be caused when the compiler detects an expression as a class template argument; use [typename](../../cpp/typename.md) to tell the compiler it is a type, as shown in the following example:
+
+## Examples
 
 The following sample generates C2061:
 

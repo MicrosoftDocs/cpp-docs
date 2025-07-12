@@ -10,7 +10,11 @@ ms.assetid: 0a90c18f-4029-416a-9128-e8713b53e6f1
 
 > 'identifier' : not a function
 
+## Remarks
+
 The identifier is used as a function but not declared as a function.
+
+## Example
 
 The following sample generates C2063:
 

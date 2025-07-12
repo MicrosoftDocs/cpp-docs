@@ -10,4 +10,6 @@ ms.assetid: 0b19a847-61dd-4bc3-b54d-108a637a4424
 
 > 'identifier' : initialization of a function
 
+## Remarks
+
 A function initializer was specified incorrectly.

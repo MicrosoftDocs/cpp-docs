@@ -10,4 +10,6 @@ ms.assetid: 97cab473-a713-489f-8536-ca2cc5792b8c
 
 > cast to array type is illegal
 
+## Remarks
+
 An object was cast to an array type.

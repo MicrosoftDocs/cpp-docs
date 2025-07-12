@@ -10,6 +10,8 @@ ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
 
 > '*identifier*' : undeclared identifier
 
+## Remarks
+
 The compiler can't find the declaration for an identifier. There are many possible causes for this error. The most common causes of C2065 are that the identifier hasn't been declared, the identifier is misspelled, the header where the identifier is declared isn't included in the file, or the identifier is missing a scope qualifier, for example, `cout` instead of `std::cout`. For more information on declarations in C++, see [Declarations and Definitions (C++)](../../cpp/declarations-and-definitions-cpp.md).
 
 Here are some common issues and solutions in greater detail.

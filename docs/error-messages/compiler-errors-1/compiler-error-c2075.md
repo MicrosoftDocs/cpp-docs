@@ -10,7 +10,11 @@ ms.assetid: 8b1865d2-540b-4117-b982-e7a58a0b6cf7
 
 > 'identifier' : array initialization needs curly braces
 
+## Remarks
+
 There were no curly braces around the specified array initializer.
+
+## Example
 
 The following sample generates C2075:
 

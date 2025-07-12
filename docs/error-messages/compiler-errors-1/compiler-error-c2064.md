@@ -10,7 +10,11 @@ ms.assetid: 6cda05da-f437-4f50-9813-ae69538713a3
 
 > term does not evaluate to a function taking N arguments
 
+## Remarks
+
 A call is made to a function through an expression. The expression does not evaluate to a pointer to a function that takes the specified number of arguments.
+
+## Examples
 
 In this example, the code attempts to call non-functions as functions. The following sample generates C2064:
 
