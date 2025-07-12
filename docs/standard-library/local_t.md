@@ -2,7 +2,7 @@
 title: "local_t struct"
 description: "Learn more about: local_t struct"
 ms.date: 09/02/2021
-f1_keywords: ["chrono/std::chrono::local_t", chrono/std::chrono::local_time", "chrono/std::chrono::local_days", "chrono/std::chrono::local_seconds"]
+f1_keywords: ["chrono/std::chrono::local_t", "chrono/std::chrono::local_time", "chrono/std::chrono::local_days", "chrono/std::chrono::local_seconds"]
 helpviewer_keywords: ["std::chrono [C++], local_t"]
 dev_langs: ["C++"]
 ---
