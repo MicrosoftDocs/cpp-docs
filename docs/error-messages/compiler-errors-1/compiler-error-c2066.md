@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2066"
 title: "Compiler Error C2066"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2066"
+ms.date: 11/04/2016
 f1_keywords: ["C2066"]
 helpviewer_keywords: ["C2066"]
-ms.assetid: f1efc63f-948a-410b-bf6e-ba250d52cd38
 ---
 # Compiler Error C2066
 

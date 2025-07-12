@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2075"
 title: "Compiler Error C2075"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2075"
+ms.date: 11/04/2016
 f1_keywords: ["C2075"]
 helpviewer_keywords: ["C2075"]
-ms.assetid: 8b1865d2-540b-4117-b982-e7a58a0b6cf7
 ---
 # Compiler Error C2075
 

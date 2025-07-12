@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2078"
 title: "Compiler Error C2078"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2078"
+ms.date: 11/04/2016
 f1_keywords: ["C2078"]
 helpviewer_keywords: ["C2078"]
-ms.assetid: 9bead850-4123-46cf-a634-5c77ba974b2b
 ---
 # Compiler Error C2078
 

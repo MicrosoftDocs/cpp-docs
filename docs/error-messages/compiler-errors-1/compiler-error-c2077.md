@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2077"
 title: "Compiler Error C2077"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2077"
+ms.date: 11/04/2016
 f1_keywords: ["C2077"]
 helpviewer_keywords: ["C2077"]
-ms.assetid: f046f0e3-1987-477a-a0af-fe543a9f5fcb
 ---
 # Compiler Error C2077
 

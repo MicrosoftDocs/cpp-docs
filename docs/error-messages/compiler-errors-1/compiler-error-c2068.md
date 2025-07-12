@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2068"
 title: "Compiler Error C2068"
+description: "Learn more about: Compiler Error C2068"
 ms.date: 08/18/2022
 f1_keywords: ["C2068"]
 helpviewer_keywords: ["C2068"]

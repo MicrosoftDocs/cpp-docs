@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2073"
 title: "Compiler Error C2073"
+description: "Learn more about: Compiler Error C2073"
 ms.date: 06/29/2022
 f1_keywords: ["C2073"]
 helpviewer_keywords: ["C2073"]
-ms.assetid: 57908234-be7a-4ce9-b0a7-8b1ad621865e
 ---
 # Compiler Error C2073
 

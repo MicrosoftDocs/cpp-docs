@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2065"
 title: "Compiler Error C2065"
+description: "Learn more about: Compiler Error C2065"
 ms.date: 06/29/2022
 f1_keywords: ["C2065"]
 helpviewer_keywords: ["C2065"]
-ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
 ---
 # Compiler Error C2065
 

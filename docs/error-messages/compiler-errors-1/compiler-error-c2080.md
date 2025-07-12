@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2080"
 title: "Compiler Error C2080"
+description: "Learn more about: Compiler Error C2080"
 ms.date: 08/18/2022
 f1_keywords: ["C2080"]
 helpviewer_keywords: ["C2080"]
