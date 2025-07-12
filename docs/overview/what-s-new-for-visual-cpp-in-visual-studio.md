@@ -107,7 +107,7 @@ A quick highlight of some new features:
     int answer_to_the_universe()
     { 
       auto rng = fib() | std::views::drop(6) | std::views::take(3); 
-      return std::ranges::fold_left(std::move(range), 0, std::plus{}); 
+      return std::ranges::fold_left(std::move(rng), 0, std::plus{}); 
     } 
     ```
 
