@@ -91,7 +91,7 @@ A quick highlight of some new features:
 
 - **Standard Library enhancements**
 
-  - Standard library support for couroutines. In this example from [P2502R2](https://wg21.link/p2502r2), the `fib` function is a coroutine. When the `co_yield` statement is executed, `fib` is suspended and the value is returned to the caller. You can resume the `fib` coroutine later to produce more values without requiring any manual state handling:
+  - Standard library support for coroutines. In this example from [P2502R2](https://wg21.link/p2502r2), the `fib` function is a coroutine. When the `co_yield` statement is executed, `fib` is suspended and the value is returned to the caller. You can resume the `fib` coroutine later to produce more values without requiring any manual state handling:
 
     ```cpp
     std::generator<int> fib()
@@ -137,8 +137,8 @@ A quick highlight of some new features:
     :::image-end:::
 
     To use this feature, ensure the following are turned on:
-      - **Tools**>**Options**> **Preview Features** > **Pull Request Comments**
-      - **Tools** >**Options** > **GitHub** > **Copilot** > **Source Control Integration** > **Enable Git preview features**.
+      - **Tools** > **Options** > **Preview Features** > **Pull Request Comments**
+      - **Tools** > **Options** > **GitHub** > **Copilot** > **Source Control Integration** > **Enable Git preview features**.
 
   - GitHub Copilot Edits is a new feature that can make changes across multiple files in your project. To start a new Edits session, click **Create new edit session** at the top of the GitHub Copilot Chat window:
 
@@ -283,7 +283,7 @@ A partial list of new features:
   :::image-end:::
 - **Breakpoint/Tracepoint Creation**: You can now create conditional breakpoints or tracepoints directly from expressions in the source code from the right-click menu. This works on property or field names and values from autos, locals, watch windows, or DataTips.
 - **Attach to Process Dialog**: The functionality provided by the Attach to Process dialog is more user-friendly. You can now easily switch between tree and list views, organize processes better with collapsible sections, and select code types with a simplified combobox. Also, the "Select/Track Window" feature is now easier to use, allowing two-way tracking: selecting a process highlights its window, and clicking on a window selects its process.
-- **GitHub Copilot Integration**: GitHub Copilot and Copilot Chat extensions are now unified and now ship directly in Visual Studio. To install it, install the **GitHub Copilot** component in the **Visual Studio Installer**:
+- **GitHub Copilot Integration**: GitHub Copilot and Copilot Chat extensions are now unified and ship directly in Visual Studio. To install it, install the **GitHub Copilot** component in the **Visual Studio Installer**:
     :::image type="complex" source="media/github-copilot-install-option.png" alt-text="Screenshot of the Visual Studio Installer GitHub Copilot installation option." lightbox="media/github-copilot-install-option-expanded.png":::
     The Visual Studio installer is open to the Workloads tab. In the installation details pane, GitHub Copilot is shown as selected.
     :::image-end:::
@@ -347,7 +347,7 @@ A partial list of new features:
 - More Unreal Engine support:
   - Unreal Engine Test Adapter lets you discover, run, manage, and debug your Unreal Engine tests without leaving the Visual Studio IDE.
   - With Unreal Engine Code Snippets, you can find common Unreal Engine constructs as snippets in your member list.
-  - Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile and the number of ForceInlines, and the impact of header files on build time. For more information, see [Tutorial: Troubleshoot function inlining on build time](../build-insights/tutorials/build-insights-function-view.md) and [Tutorial: Troubleshoot header file impact on build time](../build-insights/tutorials/build-insights-included-files-view.md).
+  - Build Insights is now integrated with Visual Studio 2022 and works with MSBuild and CMake projects using MSVC. You can now see additional information about the compilation of a function such as how long it took to compile, the number of ForceInlines, and the impact of header files on build time. For more information, see [Tutorial: Troubleshoot function inlining on build time](../build-insights/tutorials/build-insights-function-view.md) and [Tutorial: Troubleshoot header file impact on build time](../build-insights/tutorials/build-insights-included-files-view.md).
 - Remote Linux unit test support now lets you run your CTest and GTest tests on your remote Linux machines from Visual Studio's Test Explorer, just like your local tests.
 
 ## What's new for C++ in Visual Studio version 17.7
@@ -402,7 +402,7 @@ A partial list of new features includes:
 
 A partial list of new features includes:
 
-- `std::move`, `std::forward`, `std::move_if_noexcept`, and `std::forward_like` now don't produce function calls in generated code, even in debug mode. This change avoids named casts causing unnecessary overhead in debug builds. `/permissive-` (or an option that implies it, such as `/std:c++20` or `std:c++latest`) is required.
+- `std::move`, `std::forward`, `std::move_if_noexcept`, and `std::forward_like` now don't produce function calls in generated code, even in debug mode. This change avoids named casts causing unnecessary overhead in debug builds. `/permissive-` (or an option that implies it, such as `/std:c++20` or `/std:c++latest`) is required.
 - Added [`[[msvc::intrinsic]]`](../cpp/attributes.md#msvcintrinsic). You can apply this attribute to nonrecursive functions consisting of a single cast, which take only one parameter.
 - Added support for Linux Console in the Integrated Terminal, which allows for terminal I/O.
 - Added initial experimental support for C11 atomic primitives (`<stdatomic.h>`). You can enable this experimental feature with the `/experimental:c11atomics` option in `/std:c11` mode or later.
@@ -468,7 +468,7 @@ A partial list of new features in 17.4:
 
     (The compiler part isn't implemented yet. The library part was implemented in C++20 mode when Ranges support was initially implemented.)
   - [P0881R7](https://wg21.link/p0881r7) `<stacktrace>`
-  - [P2301R1](https://wg21.link/p2301r1) Add A `pmr` Alias For `std::stacktrace`
+  - [P2301R1](https://wg21.link/p2301r1) Add a `pmr` alias for `std::stacktrace`
   - [P1328R1](https://wg21.link/p1328r1) `constexpr type_info::operator==()`
   - [P2440R1](https://wg21.link/p2440r1) `ranges::iota`, `ranges::shift_left`, `ranges::shift_right`
   - [P2441R2](https://wg21.link/p2441r2) `views::join_with`
@@ -527,7 +527,7 @@ A partial list of new features in 17.2:
   - When you double-click an RTOS object in the tool window, it adds a watch for the object.
   - When you select the start and end values for the stack pointer in the RTOS tool window, it opens in the memory window.
   - Added thread awareness for device targets to the call stack window.
-  - Users can now select a pin icon next to peripherals, registers, or fields to pin them the top of the Peripheral View.
+  - Users can now select a pin icon next to peripherals, registers, or fields to pin them to the top of the Peripheral View.
 - Added implementations of the remaining C++20 defect reports (also known as *backports*). All C++20 features are now available under the **`/std:c++20`** option. For more information about the implemented backports, see the [VS 2022 Changelog](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-172) in the Microsoft/STL GitHub repository and the [MSVC's STL Completes `/std:c++20`](https://devblogs.microsoft.com/cppblog/msvcs-stl-completes-stdc20/) blog post.
 - We added various C++23 Library features, available under the **`/std:c++latest`** option. For more information about the new features, see the [STL Repo changelog](https://github.com/microsoft/STL/wiki/Changelog).
 - Improved performance of the initial C++ indexing by up to 20%, depending on the depth of the include graph.
