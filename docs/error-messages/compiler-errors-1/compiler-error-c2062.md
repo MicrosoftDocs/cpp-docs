@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2062"
 title: "Compiler Error C2062"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2062"
+ms.date: 11/04/2016
 f1_keywords: ["C2062"]
 helpviewer_keywords: ["C2062"]
-ms.assetid: 6cc98353-2ddf-43ab-88a2-9cc91cdd6033
 ---
 # Compiler Error C2062
 
-type 'type' unexpected
+> type 'type' unexpected
+
+## Remarks
 
 The compiler did not expect a type name.
 
-The following sample generates C2062:
+## Example
+
+The following example generates C2062:
 
 ```cpp
 // C2062.cpp
