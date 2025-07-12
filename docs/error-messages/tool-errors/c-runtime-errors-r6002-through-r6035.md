@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: C Runtime errors (Rxxxx)"
 title: "C Runtime errors"
-ms.date: "04/16/2019"
+description: "Learn more about: C Runtime errors (Rxxxx)"
+ms.date: 04/16/2019
 f1_keywords: ["c.errors", "R6000", "R6003", "R6010", "R6022", "R6023", "R6034"]
-ms.assetid: 78019050-9a30-4b61-8250-a5702e0e2393
 ---
 # C Runtime errors (Rxxxx)
 
