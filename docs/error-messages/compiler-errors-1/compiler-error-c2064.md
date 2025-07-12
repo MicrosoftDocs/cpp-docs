@@ -16,7 +16,7 @@ A call is made to a function through an expression. The expression does not eval
 
 ## Examples
 
-In this example, the code attempts to call non-functions as functions. The following sample generates C2064:
+In this example, the code attempts to call non-functions as functions. The following example generates C2064:
 
 ```cpp
 // C2064.cpp
@@ -28,7 +28,7 @@ void func() {
 }
 ```
 
-You must call pointers to non-static member functions from the context of an object instance. The following sample generates C2064, and shows how to fix it:
+You must call pointers to non-static member functions from the context of an object instance. The following example generates C2064, and shows how to fix it:
 
 ```cpp
 // C2064b.cpp
@@ -47,7 +47,7 @@ int main() {
 }
 ```
 
-Within a class, member function pointers must also indicate the calling object context. The following sample generates C2064 and shows how to fix it:
+Within a class, member function pointers must also indicate the calling object context. The following example generates C2064 and shows how to fix it:
 
 ```cpp
 // C2064d.cpp

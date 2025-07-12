@@ -16,7 +16,7 @@ The identifier is used as a function but not declared as a function.
 
 ## Example
 
-The following sample generates C2063:
+The following example generates C2063:
 
 ```c
 // C2063.c

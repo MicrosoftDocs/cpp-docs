@@ -20,7 +20,7 @@ This error could also be caused when the compiler detects an expression as a cla
 
 ## Examples
 
-The following sample generates C2061:
+The following example generates C2061:
 
 ```cpp
 // C2061.cpp

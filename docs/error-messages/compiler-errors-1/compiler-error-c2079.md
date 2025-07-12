@@ -18,7 +18,7 @@ This error can be caused by initializing an anonymous union.
 
 ## Examples
 
-The following sample generates C2079:
+The following example generates C2079:
 
 ```cpp
 // C2079.cpp

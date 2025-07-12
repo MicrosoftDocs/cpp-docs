@@ -18,7 +18,7 @@ To fix this issue, understand the intended storage class of the identifier—for
 
 ## Examples
 
-The following sample generates C2071.
+The following example generates C2071.
 
 ```cpp
 // C2071.cpp
@@ -31,7 +31,7 @@ struct D {
 };
 ```
 
-The following sample generates C2071.
+The following example generates C2071.
 
 ```cpp
 // C2071_b.cpp

@@ -18,7 +18,7 @@ The compiler can deduce the correct assignment of initializers to objects and in
 
 ## Example
 
-The following sample generates C2078 and shows how to fix it:
+The following example generates C2078 and shows how to fix it:
 
 ```cpp
 // C2078.cpp

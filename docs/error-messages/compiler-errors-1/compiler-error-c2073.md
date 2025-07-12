@@ -18,7 +18,7 @@ This compiler error is obsolete in Visual Studio 2022.
 
 ## Example
 
-The following sample generates C2073. Source file `C2073.cpp`:
+The following example generates C2073. Source file `C2073.cpp`:
 
 ```cpp
 // C2073.cpp

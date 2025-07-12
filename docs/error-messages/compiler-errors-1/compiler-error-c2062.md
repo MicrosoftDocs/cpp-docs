@@ -16,7 +16,7 @@ The compiler did not expect a type name.
 
 ## Example
 
-The following sample generates C2062:
+The following example generates C2062:
 
 ```cpp
 // C2062.cpp

@@ -16,7 +16,7 @@ There were no curly braces around the specified array initializer.
 
 ## Example
 
-The following sample generates C2075:
+The following example generates C2075:
 
 ```c
 // C2075.c
