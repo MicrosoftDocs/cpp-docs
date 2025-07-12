@@ -8,7 +8,7 @@ ms.assetid: 0a90c18f-4029-416a-9128-e8713b53e6f1
 ---
 # Compiler Error C2063
 
-'identifier' : not a function
+> 'identifier' : not a function
 
 The identifier is used as a function but not declared as a function.
 

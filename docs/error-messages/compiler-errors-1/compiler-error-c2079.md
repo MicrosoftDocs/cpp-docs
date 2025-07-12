@@ -8,7 +8,7 @@ ms.assetid: ca58d6d5-eccd-40b7-ba14-c003223c5bc7
 ---
 # Compiler Error C2079
 
-'identifier' uses undefined class/struct/union 'name'
+> 'identifier' uses undefined class/struct/union 'name'
 
 The specified identifier is an undefined class, structure, or union.
 

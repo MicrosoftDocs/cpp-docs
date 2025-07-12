@@ -8,6 +8,6 @@ ms.assetid: f046f0e3-1987-477a-a0af-fe543a9f5fcb
 ---
 # Compiler Error C2077
 
-non-scalar field initializer 'identifier'
+> non-scalar field initializer 'identifier'
 
 You tried to initialize a bit field with a nonscalar (struct, union, array, or class). Use an integer or floating-point value.

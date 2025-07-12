@@ -8,7 +8,7 @@ ms.assetid: b0e61c0c-a205-4820-b9aa-301d6c6fe6eb
 ---
 # Compiler Error C2061
 
-syntax error : identifier 'identifier'
+> syntax error : identifier 'identifier'
 
 The compiler found an identifier where it wasn't expected. Make sure that `identifier` is declared before you use it.
 

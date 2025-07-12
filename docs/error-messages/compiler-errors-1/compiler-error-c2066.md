@@ -8,6 +8,6 @@ ms.assetid: f1efc63f-948a-410b-bf6e-ba250d52cd38
 ---
 # Compiler Error C2066
 
-cast to function type is illegal
+> cast to function type is illegal
 
 In ANSI C, it is not legal to cast between a function pointer and a data pointer.

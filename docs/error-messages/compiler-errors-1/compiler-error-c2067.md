@@ -8,6 +8,6 @@ ms.assetid: 97cab473-a713-489f-8536-ca2cc5792b8c
 ---
 # Compiler Error C2067
 
-cast to array type is illegal
+> cast to array type is illegal
 
 An object was cast to an array type.

@@ -8,7 +8,7 @@ ms.assetid: 6cc98353-2ddf-43ab-88a2-9cc91cdd6033
 ---
 # Compiler Error C2062
 
-type 'type' unexpected
+> type 'type' unexpected
 
 The compiler did not expect a type name.
 

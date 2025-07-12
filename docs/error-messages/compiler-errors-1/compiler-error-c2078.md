@@ -8,7 +8,7 @@ ms.assetid: 9bead850-4123-46cf-a634-5c77ba974b2b
 ---
 # Compiler Error C2078
 
-too many initializers
+> too many initializers
 
 The number of initializers exceeds the number of objects to be initialized.
 

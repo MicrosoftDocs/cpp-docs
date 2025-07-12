@@ -8,7 +8,7 @@ ms.assetid: 4c8dea63-1227-4aba-be26-2462537f86fb
 ---
 # Compiler Error C2070
 
-'type': illegal sizeof operand
+> 'type': illegal sizeof operand
 
 The [sizeof](../../cpp/sizeof-operator.md) operator requires an expression or type name.
 

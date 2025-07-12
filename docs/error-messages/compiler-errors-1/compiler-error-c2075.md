@@ -8,7 +8,7 @@ ms.assetid: 8b1865d2-540b-4117-b982-e7a58a0b6cf7
 ---
 # Compiler Error C2075
 
-'identifier' : array initialization needs curly braces
+> 'identifier' : array initialization needs curly braces
 
 There were no curly braces around the specified array initializer.
 

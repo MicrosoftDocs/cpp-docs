@@ -8,7 +8,7 @@ ms.assetid: f8c09255-a5c4-47e3-8089-3d875ae43cc5
 ---
 # Compiler Error C2071
 
-'identifier' : illegal storage class
+> 'identifier' : illegal storage class
 
 `identifier` was declared with an invalid [storage class](../../c-language/c-storage-classes.md). This error can be caused when more than one storage class is specified for an identifier, or when the definition is incompatible with the storage class declaration.
 
