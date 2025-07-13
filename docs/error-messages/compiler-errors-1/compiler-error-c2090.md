@@ -16,7 +16,7 @@ A function cannot return an array. Return a pointer to an array instead.
 
 ## Example
 
-The following sample generates C2090:
+The following example generates C2090:
 
 ```cpp
 // C2090.cpp

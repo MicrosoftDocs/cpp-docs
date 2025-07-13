@@ -22,7 +22,7 @@ Before Visual Studio 2002,
 
 ## Example
 
-The following sample generates C2084:
+The following example generates C2084:
 
 ```cpp
 // C2084.cpp

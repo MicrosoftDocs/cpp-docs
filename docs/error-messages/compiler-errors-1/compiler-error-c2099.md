@@ -16,7 +16,7 @@ This error is issued only by the C compiler and occurs only for non-automatic va
 
 ## Examples
 
-The following sample generates C2099.
+The following example generates C2099.
 
 ```c
 // C2099.c
@@ -33,7 +33,7 @@ To resolve this error, compile the module as a .cpp file or simplify the express
 
 For more information, see [/fp (Specify Floating-Point Behavior)](../../build/reference/fp-specify-floating-point-behavior.md).
 
-The following sample generates C2099.
+The following example generates C2099.
 
 ```c
 // C2099_2.c

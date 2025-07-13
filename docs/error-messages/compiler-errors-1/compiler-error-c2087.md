@@ -16,7 +16,7 @@ The definition of an array with multiple subscripts is missing a subscript value
 
 ## Example
 
-The following sample generates C2087:
+The following example generates C2087:
 
 ```cpp
 // C2087.cpp

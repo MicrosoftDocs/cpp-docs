@@ -16,7 +16,7 @@ The operator was not defined for the structure or union. This error is only vali
 
 ## Example
 
-The following sample generates C2088 three times:
+The following example generates C2088 three times:
 
 ```c
 // C2088.c

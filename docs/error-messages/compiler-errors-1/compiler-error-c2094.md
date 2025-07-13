@@ -16,7 +16,7 @@ The label used by a [goto](../../cpp/goto-statement-cpp.md) statement does not e
 
 ## Example
 
-The following sample generates C2094:
+The following example generates C2094:
 
 ```cpp
 // C2094.c

@@ -16,7 +16,7 @@ A formal parameter to a function is redeclared within the function body. To reso
 
 ## Example
 
-The following sample generates C2082:
+The following example generates C2082:
 
 ```cpp
 // C2082.cpp

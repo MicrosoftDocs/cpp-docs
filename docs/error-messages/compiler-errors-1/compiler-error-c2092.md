@@ -16,7 +16,7 @@ Arrays of functions are not allowed. Use an array of pointers to functions.
 
 ## Example
 
-The following sample generates C2092:
+The following example generates C2092:
 
 ```cpp
 // C2092.cpp

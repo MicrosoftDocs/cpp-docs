@@ -16,7 +16,7 @@ The identifier was declared in a function definition but not in the formal param
 
 ## Example
 
-The following sample generates C2085:
+The following example generates C2085:
 
 ```c
 // C2085.c

@@ -16,7 +16,7 @@ When compiling with [/Za](../../build/reference/za-ze-disable-language-extension
 
 ## Example
 
-The following sample generates C2093:
+The following example generates C2093:
 
 ```c
 // C2093.c

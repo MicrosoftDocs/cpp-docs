@@ -15,7 +15,7 @@ Indirection operator (`*`) is applied to a nonpointer value.
 
 ## Example
 
-The following sample generates C2100:
+The following example generates C2100:
 
 ```cpp
 // C2100.cpp

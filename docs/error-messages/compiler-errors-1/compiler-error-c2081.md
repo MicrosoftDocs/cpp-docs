@@ -18,7 +18,7 @@ This error can be caused by using the old style for the formal parameter list. Y
 
 ## Example
 
-The following sample generates C2081:
+The following example generates C2081:
 
 ```c
 // C2081.c
