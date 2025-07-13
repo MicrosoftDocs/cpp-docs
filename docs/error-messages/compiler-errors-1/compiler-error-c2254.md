@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2254"
 title: "Compiler Error C2254"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2254"
+ms.date: 11/04/2016
 f1_keywords: ["C2254"]
 helpviewer_keywords: ["C2254"]
-ms.assetid: 49bb3d7e-3bdf-4af6-937c-fa627be412a9
 ---
 # Compiler Error C2254
 
@@ -24,6 +23,6 @@ public:
    friend void func3();   // OK, friend not virtual nor pure
 };
 
-void func1() {};
-void func3() {};
+void func1() {}
+void func3() {}
 ```

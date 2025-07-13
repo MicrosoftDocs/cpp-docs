@@ -784,7 +784,7 @@ Although these differences can affect your source code or other build artifacts,
         case settings::bit0 | settings::bit1:  // warning C4063
             break;
         }
-    };
+    }
    ```
 
    Example of C4063 (after)

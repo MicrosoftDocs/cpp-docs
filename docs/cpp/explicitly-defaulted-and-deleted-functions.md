@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Explicitly Defaulted and Deleted Functions"
 title: "Explicitly Defaulted and Deleted Functions"
-ms.date: "11/04/2016"
+description: "Learn more about: Explicitly Defaulted and Deleted Functions"
+ms.date: 11/04/2016
 ---
 # Explicitly Defaulted and Deleted Functions
 
@@ -44,7 +44,7 @@ These rules can complicate the implementation of what should be straight-forward
 ```cpp
 struct noncopyable
 {
-  noncopyable() {};
+  noncopyable() {}
 
 private:
   noncopyable(const noncopyable&);
