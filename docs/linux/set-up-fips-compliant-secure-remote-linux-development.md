@@ -160,7 +160,7 @@ Microsoft blog post on [Why We're Not Recommending "FIPS mode" Anymore](https://
 
 [SSH Server Configuration](https://www.ssh.com/ssh/sshd_config)
 
-## See Also
+## See also
 
 [Configure a Linux project](configure-a-linux-project.md)\
 [Configure a Linux CMake project](cmake-linux-project.md)\

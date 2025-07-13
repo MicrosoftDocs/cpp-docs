@@ -1,9 +1,9 @@
 ---
 title: "module, import, export"
+description: Use import and export declarations to access and to publish types and functions defined in the specified module.
 ms.date: 02/13/2025
 f1_keywords: ["module_cpp", "import_cpp", "export_cpp"]
 helpviewer_keywords: ["modules [C++]", "modules [C++], import", "modules [C++], export"]
-description: Use import and export declarations to access and to publish types and functions defined in the specified module.
 ---
 # `module`, `import`, `export`
 
@@ -109,7 +109,7 @@ import // Always an identifier, never a keyword
 
 **End Microsoft Specific**
 
-## See Also
+## See also
 
 [Overview of modules in C++](modules-cpp.md)\
 [Import the C++ standard library using modules](tutorial-import-stl-named-module.md)
