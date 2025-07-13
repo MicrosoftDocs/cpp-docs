@@ -8,7 +8,7 @@ ms.assetid: 0a86785c-8e6f-481b-8c7b-412220c1950d
 ---
 # Compiler Error C2085
 
-'identifier' : not in formal parameter list
+> 'identifier' : not in formal parameter list
 
 The identifier was declared in a function definition but not in the formal parameter list. (ANSI C only)
 

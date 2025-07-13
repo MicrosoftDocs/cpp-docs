@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2086"]
 ---
 # Compiler Error C2086
 
-'identifier' : redefinition
+> 'identifier' : redefinition
 
 The identifier is defined more than once, or a subsequent declaration differs from a previous one.
 

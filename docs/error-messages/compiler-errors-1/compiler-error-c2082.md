@@ -8,7 +8,7 @@ ms.assetid: 87a6d442-157c-46e8-9bff-8388f8338ae0
 ---
 # Compiler Error C2082
 
-redefinition of formal parameter 'identifier'
+> redefinition of formal parameter 'identifier'
 
 A formal parameter to a function is redeclared within the function body. To resolve the error, remove the redefinition.
 

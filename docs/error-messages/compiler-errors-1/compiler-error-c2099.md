@@ -8,7 +8,7 @@ ms.assetid: 30e151ee-d458-4901-b0c0-d45054a913f5
 ---
 # Compiler Error C2099
 
-initializer is not a constant
+> initializer is not a constant
 
 This error is issued only by the C compiler and occurs only for non-automatic variables.  The compiler initializes non-automatic variables at the start of the program and the values they are initialized with must be constant.
 

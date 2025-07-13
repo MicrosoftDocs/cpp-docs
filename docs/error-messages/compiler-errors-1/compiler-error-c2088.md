@@ -8,7 +8,7 @@ ms.assetid: b93f7094-185b-423d-8bb9-507cd757dbf5
 ---
 # Compiler Error C2088
 
-'operator' : illegal for 'class-key'
+> 'operator' : illegal for 'class-key'
 
 The operator was not defined for the structure or union. This error is only valid for C code.
 

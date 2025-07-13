@@ -8,7 +8,7 @@ ms.assetid: 7e5b2fd4-f61c-4b8a-b265-93e987a04bd3
 ---
 # Compiler Error C2097
 
-illegal initialization
+> illegal initialization
 
 ### To fix by checking the following possible causes
 

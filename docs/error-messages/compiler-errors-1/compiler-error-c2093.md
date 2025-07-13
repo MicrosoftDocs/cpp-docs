@@ -8,7 +8,7 @@ ms.assetid: 17529a70-9169-46b5-9fc6-57a5ce224e6a
 ---
 # Compiler Error C2093
 
-'variable1' : cannot be initialized using address of automatic variable 'variable2'
+> 'variable1' : cannot be initialized using address of automatic variable 'variable2'
 
 When compiling with [/Za](../../build/reference/za-ze-disable-language-extensions.md), the program tried to use the address of an automatic variable as an initializer.
 

@@ -8,7 +8,7 @@ ms.assetid: 9e4f8f88-f189-46e7-91c9-481bacc7af87
 ---
 # Compiler Error C2094
 
-label 'identifier' was undefined
+> label 'identifier' was undefined
 
 The label used by a [goto](../../cpp/goto-statement-cpp.md) statement does not exist in the function.
 

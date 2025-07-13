@@ -8,6 +8,6 @@ ms.assetid: 7c777775-5535-4eea-b6a2-340b71af9560
 ---
 # Compiler Error C2089
 
-'identifier' : 'class-key' too large
+> 'identifier' : 'class-key' too large
 
 The specified structure or union exceeds the 4GB limit.

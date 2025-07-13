@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2100"]
 ---
 # Compiler Error C2100
 
-illegal indirection
+> illegal indirection
 
 Indirection operator (`*`) is applied to a nonpointer value.
 

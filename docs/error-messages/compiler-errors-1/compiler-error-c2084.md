@@ -8,7 +8,7 @@ ms.assetid: 990b107f-3721-4851-ae8b-4b69a8c149ed
 ---
 # Compiler Error C2084
 
-function '*function*' already has a body
+> function '*function*' already has a body
 
 The function has already been defined.
 

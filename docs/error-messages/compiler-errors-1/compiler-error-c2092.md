@@ -8,7 +8,7 @@ ms.assetid: 037e44ae-16c8-489a-a512-dcdf7f7795a6
 ---
 # Compiler Error C2092
 
-'array name' array element type cannot be function
+> 'array name' array element type cannot be function
 
 Arrays of functions are not allowed. Use an array of pointers to functions.
 

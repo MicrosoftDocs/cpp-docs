@@ -8,7 +8,7 @@ ms.assetid: 7db9892d-364d-4178-a49d-f8398ece09a0
 ---
 # Compiler Error C2081
 
-'identifier' : name in formal parameter list illegal
+> 'identifier' : name in formal parameter list illegal
 
 The identifier caused a syntax error.
 

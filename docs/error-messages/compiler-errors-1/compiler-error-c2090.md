@@ -8,7 +8,7 @@ ms.assetid: e8176e55-382b-453d-aa27-6597f0274afd
 ---
 # Compiler Error C2090
 
-function returns array
+> function returns array
 
 A function cannot return an array. Return a pointer to an array instead.
 

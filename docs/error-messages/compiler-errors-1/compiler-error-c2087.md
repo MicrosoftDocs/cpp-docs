@@ -8,7 +8,7 @@ ms.assetid: 89761e83-415a-4468-a4c6-b6dedfd1dd6a
 ---
 # Compiler Error C2087
 
-'identifier' : missing subscript
+> 'identifier' : missing subscript
 
 The definition of an array with multiple subscripts is missing a subscript value for a dimension higher than one.
 
