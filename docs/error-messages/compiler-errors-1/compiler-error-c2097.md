@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2097"
 title: "Compiler Error C2097"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2097"
+ms.date: 11/04/2016
 f1_keywords: ["C2097"]
 helpviewer_keywords: ["C2097"]
-ms.assetid: 7e5b2fd4-f61c-4b8a-b265-93e987a04bd3
 ---
 # Compiler Error C2097
 

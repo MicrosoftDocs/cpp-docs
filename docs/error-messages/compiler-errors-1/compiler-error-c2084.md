@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2084"
 title: "Compiler Error C2084"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2084"
+ms.date: 11/04/2016
 f1_keywords: ["C2084"]
 helpviewer_keywords: ["C2084"]
-ms.assetid: 990b107f-3721-4851-ae8b-4b69a8c149ed
 ---
 # Compiler Error C2084
 

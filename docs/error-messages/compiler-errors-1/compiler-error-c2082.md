@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2082"
 title: "Compiler Error C2082"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2082"
+ms.date: 11/04/2016
 f1_keywords: ["C2082"]
 helpviewer_keywords: ["C2082"]
-ms.assetid: 87a6d442-157c-46e8-9bff-8388f8338ae0
 ---
 # Compiler Error C2082
 

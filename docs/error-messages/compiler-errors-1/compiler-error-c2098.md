@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2098"
 title: "Compiler Error C2098"
+description: "Learn more about: Compiler Error C2098"
 ms.date: 08/23/2022
 f1_keywords: ["C2098"]
 helpviewer_keywords: ["C2098"]

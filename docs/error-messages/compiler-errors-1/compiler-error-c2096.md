@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2096"
 title: "Compiler Error C2096"
+description: "Learn more about: Compiler Error C2096"
 ms.date: 08/23/2022
 f1_keywords: ["C2096"]
 helpviewer_keywords: ["C2096"]
