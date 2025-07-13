@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: XMMWORD"
 title: "XMMWORD"
-ms.date: "12/17/2019"
+description: "Learn more about: XMMWORD"
+ms.date: 12/17/2019
 f1_keywords: ["XMMWORD"]
 helpviewer_keywords: ["XMMWORD directive"]
-ms.assetid: 18026d32-5cab-403e-ad7e-382fb41aa9b8
 ---
 # XMMWORD
 

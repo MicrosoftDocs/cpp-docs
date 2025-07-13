@@ -1,7 +1,7 @@
 ---
 title: "Edit and refactor C++ code in Visual Studio"
 description: "Use the C++ code editor in Visual Studio to format, navigate, understand and refactor your code."
-ms.date: "09/20/2022"
+ms.date: 09/20/2022
 ms.topic: "overview"
 ms.custom: intro-overview
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Collaborate with Live Share for C++ in Visual Studio"
 description: "Use Live Share for C++ in Visual Studio to collaborate and share code in real time."
-ms.date: "05/24/2019"
+ms.date: 05/24/2019
 ---
 # Collaborate using Live Share for C++
 

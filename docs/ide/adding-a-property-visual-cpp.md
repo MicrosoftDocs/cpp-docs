@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Add a property to an interface in a Microsoft Visual Studio C++ project"
 title: "Add a property"
+description: "Learn more about: Add a property to an interface in a Microsoft Visual Studio C++ project"
 ms.date: 04/12/2022
 f1_keywords: ["vc.codewiz.prop.overview"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "add property wizard", "stock properties, about stock properties", "stock properties"]
