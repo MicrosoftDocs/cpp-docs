@@ -10,7 +10,11 @@ ms.assetid: 0a86785c-8e6f-481b-8c7b-412220c1950d
 
 > 'identifier' : not in formal parameter list
 
+## Remarks
+
 The identifier was declared in a function definition but not in the formal parameter list. (ANSI C only)
+
+## Example
 
 The following sample generates C2085:
 

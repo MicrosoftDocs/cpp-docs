@@ -9,9 +9,13 @@ helpviewer_keywords: ["C2086"]
 
 > 'identifier' : redefinition
 
+## Remarks
+
 The identifier is defined more than once, or a subsequent declaration differs from a previous one.
 
 C2086 can also be the result of incremental building for a referenced C# assembly. Rebuild the C# assembly to resolve this error.
+
+## Example
 
 The following sample generates C2086:
 

@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2100"]
 
 > illegal indirection
 
+## Remarks
+
 Indirection operator (`*`) is applied to a nonpointer value.
+
+## Example
 
 The following sample generates C2100:
 

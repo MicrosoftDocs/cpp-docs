@@ -10,6 +10,8 @@ ms.assetid: 990b107f-3721-4851-ae8b-4b69a8c149ed
 
 > function '*function*' already has a body
 
+## Remarks
+
 The function has already been defined.
 
 Before Visual Studio 2002,

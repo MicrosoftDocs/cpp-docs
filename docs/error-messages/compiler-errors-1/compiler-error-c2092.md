@@ -10,9 +10,11 @@ ms.assetid: 037e44ae-16c8-489a-a512-dcdf7f7795a6
 
 > 'array name' array element type cannot be function
 
+## Remarks
+
 Arrays of functions are not allowed. Use an array of pointers to functions.
 
-## Examples
+## Example
 
 The following sample generates C2092:
 

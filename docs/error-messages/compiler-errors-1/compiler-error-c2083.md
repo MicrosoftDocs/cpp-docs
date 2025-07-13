@@ -10,4 +10,6 @@ ms.assetid: 5fc4f931-eab6-4d8d-a3ee-3b8e11e64b18
 
 > struct/union comparison illegal
 
+## Remarks
+
 A structure or union is compared directly with another user-defined type. This is not allowed unless a comparison operator has been defined or a conversion to a scalar type exists.

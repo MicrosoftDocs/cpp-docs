@@ -10,7 +10,11 @@ ms.assetid: b93f7094-185b-423d-8bb9-507cd757dbf5
 
 > 'operator' : illegal for 'class-key'
 
+## Remarks
+
 The operator was not defined for the structure or union. This error is only valid for C code.
+
+## Example
 
 The following sample generates C2088 three times:
 

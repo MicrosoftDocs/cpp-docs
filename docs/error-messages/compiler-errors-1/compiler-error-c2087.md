@@ -10,7 +10,11 @@ ms.assetid: 89761e83-415a-4468-a4c6-b6dedfd1dd6a
 
 > 'identifier' : missing subscript
 
+## Remarks
+
 The definition of an array with multiple subscripts is missing a subscript value for a dimension higher than one.
+
+## Example
 
 The following sample generates C2087:
 

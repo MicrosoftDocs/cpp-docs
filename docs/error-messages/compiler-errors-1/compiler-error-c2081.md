@@ -10,9 +10,13 @@ ms.assetid: 7db9892d-364d-4178-a49d-f8398ece09a0
 
 > 'identifier' : name in formal parameter list illegal
 
+## Remarks
+
 The identifier caused a syntax error.
 
 This error can be caused by using the old style for the formal parameter list. You must specify the type of formal parameters in the formal parameter list.
+
+## Example
 
 The following sample generates C2081:
 

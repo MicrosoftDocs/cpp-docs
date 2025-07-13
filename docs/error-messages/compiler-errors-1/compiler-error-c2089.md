@@ -10,4 +10,6 @@ ms.assetid: 7c777775-5535-4eea-b6a2-340b71af9560
 
 > 'identifier' : 'class-key' too large
 
+## Remarks
+
 The specified structure or union exceeds the 4GB limit.

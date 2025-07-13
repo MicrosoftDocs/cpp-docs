@@ -10,7 +10,11 @@ ms.assetid: e8176e55-382b-453d-aa27-6597f0274afd
 
 > function returns array
 
+## Remarks
+
 A function cannot return an array. Return a pointer to an array instead.
+
+## Example
 
 The following sample generates C2090:
 

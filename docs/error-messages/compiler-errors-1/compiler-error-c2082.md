@@ -10,7 +10,11 @@ ms.assetid: 87a6d442-157c-46e8-9bff-8388f8338ae0
 
 > redefinition of formal parameter 'identifier'
 
+## Remarks
+
 A formal parameter to a function is redeclared within the function body. To resolve the error, remove the redefinition.
+
+## Example
 
 The following sample generates C2082:
 
