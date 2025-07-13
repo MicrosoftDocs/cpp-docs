@@ -57,7 +57,7 @@ Because a **CMake** project doesn't have the usual **Property Pages** support, t
 
 1. Rebuild your solution.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)\
 [MSVC linker options](linker-options.md)

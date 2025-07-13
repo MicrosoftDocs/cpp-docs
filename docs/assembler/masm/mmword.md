@@ -32,6 +32,6 @@ While both instructions work on 64-bit operands, **QWORD** is the type for 64-bi
     movq     mm0, mmword ptr [ebx]
 ```
 
-## See Also
+## See also
 
 [MASM BNF Grammar](masm-bnf-grammar.md)

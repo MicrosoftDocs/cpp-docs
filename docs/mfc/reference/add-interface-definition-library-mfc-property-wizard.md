@@ -167,7 +167,7 @@ If you're adding a property to an MFC dispinterface, you can choose one of the f
 |`ReadyState`|Returns or sets the control's `ReadyState` property.<br/>A control can be uninitialized, initialized, loading, interactive, or complete.<br/>For more information, see [READYSTATE](/previous-versions/aa768362\(v=vs.85\)) in the *Internet SDK*.|
 |`Text`|Returns or sets the text contained in a control.<br/>Has no **Member variable** implementation type.|
 
-## See Also
+## See also
 
 [Add Property](../../ide/adding-a-property-visual-cpp.md)
 

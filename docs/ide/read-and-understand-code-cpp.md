@@ -106,7 +106,7 @@ Right click on any function call and view a recursive list of all the functions 
 
 ![Screenshot of the Call Hierarchy window which shows calls to and from Floating_to_wstring(). For example, to_wstring() calls Floating_to_wstring().](../ide/media/vs2015_cpp_call_hierarchy.png)
 
-## See Also
+## See also
 
 [Edit and refactor code (C++)](writing-and-refactoring-code-cpp.md)</br>
 [Navigate your C++ code base in Visual Studio](navigate-code-cpp.md)</br>

@@ -178,7 +178,7 @@ Options for enabling and configuring C++-specific editing features are located u
 
 Experimental features, which may or may not be included in a future version of Visual Studio, are found in the [Text Editor C++ Experimental](/visualstudio/ide/reference/options-text-editor-c-cpp-experimental) dialog. In Visual Studio 2017 and later you can enable **Predictive IntelliSense** in this dialog.
 
-## See Also
+## See also
 
 [Read and understand C++ code](read-and-understand-code-cpp.md)</br>
 [Navigate your C++ code base in Visual Studio](navigate-code-cpp.md)</br>

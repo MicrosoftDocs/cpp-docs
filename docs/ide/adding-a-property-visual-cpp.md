@@ -53,7 +53,7 @@ The following section describes the UI that you'll use to add a property:
 
   For ATL interfaces **Put function** makes the property writable; that is, it creates the `Put` method for setting, or "putting," this property of the object. Select **Get**, **Put**, or both.
 
-## See Also
+## See also
 
 [Add IDL Property](add-interface-definition-library-property-wizard.md)
 

@@ -44,7 +44,7 @@ To end a session, select **End Collaboration Session** from the **Sharing** drop
 For more information about **Live Share** in Visual Studio, see [What is Visual Studio Live Share?](/visualstudio/liveshare/). For more information about Live Share in Visual Studio Code, see [
 Live Share](https://marketplace.visualstudio.com/items?itemName=ms-vsliveshare.vsliveshare).
 
-## See Also
+## See also
 
 [Edit and refactor code (C++)](writing-and-refactoring-code-cpp.md)</br>
 [Navigate your C++ code base in Visual Studio](navigate-code-cpp.md)</br>

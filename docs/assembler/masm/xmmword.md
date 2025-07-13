@@ -24,6 +24,6 @@ Used for 128-bit multimedia operands with MMX and SSE (XMM) instructions.
     movdqa   xmm0, xmmword ptr [ebx]
 ```
 
-## See Also
+## See also
 
 [MASM BNF Grammar](masm-bnf-grammar.md)

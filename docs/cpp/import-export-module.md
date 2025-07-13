@@ -109,7 +109,7 @@ import // Always an identifier, never a keyword
 
 **End Microsoft Specific**
 
-## See Also
+## See also
 
 [Overview of modules in C++](modules-cpp.md)\
 [Import the C++ standard library using modules](tutorial-import-stl-named-module.md)
