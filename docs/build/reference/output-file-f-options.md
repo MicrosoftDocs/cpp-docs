@@ -13,9 +13,13 @@ The output-file options create or rename output files. They affect all C or C++ 
 
 - [Specifying the Pathname](specifying-the-pathname.md)
 
+- [`/FD` (IDE Minimal Rebuild)](fd-ide-minimal-rebuild.md)
+
 - [`/Fd` (Name PDB File)](fd-program-database-file-name.md)
 
 - [`/Fe` (Name EXE File)](fe-name-exe-file.md)
+
+- [`/Fi` (Preprocess output file name)](fi-preprocess-output-file-name.md)
 
 - [`/FI` (Name Forced Include File)](fi-name-forced-include-file.md)
 
