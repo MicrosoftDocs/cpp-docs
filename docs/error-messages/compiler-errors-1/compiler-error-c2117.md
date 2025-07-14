@@ -8,7 +8,7 @@ ms.assetid: b947379d-5861-42fc-ac26-170318579cbd
 ---
 # Compiler Error C2117
 
-'identifier' : array bounds overflow
+> 'identifier' : array bounds overflow
 
 An array has too many initializers:
 

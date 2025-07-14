@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2111"]
 ---
 # Compiler Error C2111
 
-'+' : pointer addition requires integral operand
+> '+' : pointer addition requires integral operand
 
 An attempt was made to add a nonintegral value to a pointer using the plus (`+`) operator.
 

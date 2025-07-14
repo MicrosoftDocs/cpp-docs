@@ -8,7 +8,7 @@ ms.assetid: bf4315d0-f085-4323-b813-96ee61a13bde
 ---
 # Compiler Error C2118
 
-negative subscript
+> negative subscript
 
 The value defining the array size is larger than the maximum array size or smaller than zero.
 

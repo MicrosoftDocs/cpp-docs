@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2103"]
 ---
 # Compiler Error C2103
 
-'&' on register variable
+> '&' on register variable
 
 You cannot take the address of a register.
 

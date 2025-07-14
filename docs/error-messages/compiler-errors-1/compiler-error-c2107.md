@@ -8,7 +8,7 @@ ms.assetid: 2866a121-884e-4bb5-8613-36de5817000e
 ---
 # Compiler Error C2107
 
-illegal index, indirection not allowed
+> illegal index, indirection not allowed
 
 A subscript is applied to an expression that does not evaluate to a pointer.
 

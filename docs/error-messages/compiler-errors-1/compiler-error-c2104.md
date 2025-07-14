@@ -8,7 +8,7 @@ ms.assetid: 2ea78896-72a6-4901-a1fa-f33ea88ad61b
 ---
 # Compiler Error C2104
 
-'&' on bit field ignored
+> '&' on bit field ignored
 
 You cannot take the address of a bit field.
 

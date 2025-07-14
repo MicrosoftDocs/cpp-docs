@@ -8,7 +8,7 @@ ms.assetid: 2d1ac79d-a985-4904-a38b-b270578d664d
 ---
 # Compiler Error C2109
 
-subscript requires array or pointer type
+> subscript requires array or pointer type
 
 The subscript was used on a variable that was not an array.
 

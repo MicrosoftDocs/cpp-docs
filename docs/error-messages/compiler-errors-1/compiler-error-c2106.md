@@ -8,7 +8,7 @@ ms.assetid: d5c91a2e-04e4-4770-8478-788b98c52a53
 ---
 # Compiler Error C2106
 
-'operator' : left operand must be l-value
+> 'operator' : left operand must be l-value
 
 The operator must have an l-value as its left operand.
 

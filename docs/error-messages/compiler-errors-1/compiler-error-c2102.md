@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2102"]
 ---
 # Compiler Error C2102
 
-'&' requires l-value
+> '&' requires l-value
 
 The [address-of operator (**`&`**)](../../cpp/address-of-operator-amp.md) must have an l-value as operand. Address of temporary values cannot be taken.
 

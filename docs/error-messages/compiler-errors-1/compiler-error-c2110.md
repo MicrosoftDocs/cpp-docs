@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2110"]
 ---
 # Compiler Error C2110
 
-'+' : cannot add two pointers
+> '+' : cannot add two pointers
 
 An attempt was made to add two pointer values using the plus (`+`) operator.
 

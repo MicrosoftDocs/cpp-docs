@@ -8,7 +8,7 @@ ms.assetid: 19b7f7bc-a9da-4d23-8193-005b6d09274f
 ---
 # Compiler Error C2105
 
-'operator' needs l-value
+> 'operator' needs l-value
 
 The operator must have an l-value as operand.
 

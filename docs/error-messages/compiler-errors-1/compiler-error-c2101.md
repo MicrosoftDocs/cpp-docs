@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2101"]
 ---
 # Compiler Error C2101
 
-'&' on constant
+> '&' on constant
 
 The [address-of operator (**`&`**)](../../cpp/address-of-operator-amp.md) must have an l-value as operand.
 
