@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2106"
 title: "Compiler Error C2106"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2106"
+ms.date: 11/04/2016
 f1_keywords: ["C2106"]
 helpviewer_keywords: ["C2106"]
-ms.assetid: d5c91a2e-04e4-4770-8478-788b98c52a53
 ---
 # Compiler Error C2106
 

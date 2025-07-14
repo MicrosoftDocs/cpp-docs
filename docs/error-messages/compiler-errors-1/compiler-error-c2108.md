@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2108"
 title: "Compiler Error C2108"
+description: "Learn more about: Compiler Error C2108"
 ms.date: 06/03/2022
 f1_keywords: ["C2108"]
 helpviewer_keywords: ["C2108"]
-ms.assetid: c84f0b47-5e2c-47d2-8edb-427a40e17c36
 ---
 # Compiler Error C2108
 

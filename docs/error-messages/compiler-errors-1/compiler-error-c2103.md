@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C2103"
 title: "Compiler Error C2103"
-ms.date: "03/04/2024"
+description: "Learn more about: Compiler Error C2103"
+ms.date: 03/04/2024
 f1_keywords: ["C2103"]
 helpviewer_keywords: ["C2103"]
 ---

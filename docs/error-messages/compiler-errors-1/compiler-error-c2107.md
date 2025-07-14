@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2107"
 title: "Compiler Error C2107"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2107"
+ms.date: 11/04/2016
 f1_keywords: ["C2107"]
 helpviewer_keywords: ["C2107"]
-ms.assetid: 2866a121-884e-4bb5-8613-36de5817000e
 ---
 # Compiler Error C2107
 

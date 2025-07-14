@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2117"
 title: "Compiler Error C2117"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2117"
+ms.date: 11/04/2016
 f1_keywords: ["C2117"]
 helpviewer_keywords: ["C2117"]
-ms.assetid: b947379d-5861-42fc-ac26-170318579cbd
 ---
 # Compiler Error C2117
 

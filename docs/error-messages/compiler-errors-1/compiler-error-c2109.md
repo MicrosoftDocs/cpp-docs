@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2109"
 title: "Compiler Error C2109"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2109"
+ms.date: 11/04/2016
 f1_keywords: ["C2109"]
 helpviewer_keywords: ["C2109"]
-ms.assetid: 2d1ac79d-a985-4904-a38b-b270578d664d
 ---
 # Compiler Error C2109
 

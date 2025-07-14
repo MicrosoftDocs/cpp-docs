@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2118"
 title: "Compiler Error C2118"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2118"
+ms.date: 11/04/2016
 f1_keywords: ["C2118"]
 helpviewer_keywords: ["C2118"]
-ms.assetid: bf4315d0-f085-4323-b813-96ee61a13bde
 ---
 # Compiler Error C2118
 
