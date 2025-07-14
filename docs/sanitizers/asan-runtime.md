@@ -160,6 +160,8 @@ Boolean (false by default), set to `true` to enable the process to terminate wit
 >[!NOTE]
 >When abort_on_error value is set to true, on Windows the program terminates with an exit(3). In order to not change current behavior we decided to introduce this new option instead. If both abort_on_error and windows_fast_fail_on_error are true, the program will exit with the __fastfail.
 
+- [`continue_on_error`](./asan-continue-on-error) Boolean, set to `false` by default. When set to `true`, it allows the program to continue executing after a memory violation is reported, allowing you to collect multiple error reports.
+
 ## <a name="intercepted_functions"></a> AddressSanitizer list of intercepted functions (Windows)
 
 The AddressSanitizer runtime hotpatches many functions to enable memory safety checks at runtime. Here's a non-exhaustive list of the functions that the AddressSanitizer runtime monitors.
