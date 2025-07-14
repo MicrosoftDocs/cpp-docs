@@ -79,51 +79,51 @@ When the major version changed between Visual Studio 2013 and Visual Studio 2015
 
 An example of a minor change is from Visual Studio 2022 17.1 to Visual Studio 2022 17.2. In that case, `_MSC_VER` changed from 1931 to 1932.
 
-The following table lists the Visual C++ compiler `_MSC_VER` for each Visual Studio release:
+The following table lists the Visual C++ compiler `_MSC_VER` for each corresponding Visual Studio and toolset release:
 
-| Visual Studio version | `_MSC_VER` |
-|--|--|
-| Visual Studio 6.0 | 1200 |
-| Visual Studio .NET 2002 (7.0) | 1300 |
-| Visual Studio .NET 2003 (7.1) | 1310 |
-| Visual Studio 2005 (8.0) | 1400 |
-| Visual Studio 2008 (9.0) | 1500 |
-| Visual Studio 2010 (10.0) | 1600 |
-| Visual Studio 2012 (11.0) | 1700 |
-| Visual Studio 2013 (12.0) | 1800 |
-| Visual Studio 2015 (14.0) | 1900 |
-| Visual Studio 2017 RTW (15.0) | 1910 |
-| Visual Studio 2017 version 15.3 | 1911 |
-| Visual Studio 2017 version 15.5 | 1912 |
-| Visual Studio 2017 version 15.6 | 1913 |
-| Visual Studio 2017 version 15.7 | 1914 |
-| Visual Studio 2017 version 15.8 | 1915 |
-| Visual Studio 2017 version 15.9 | 1916 |
-| Visual Studio 2019 RTW 16.0 | 1920 |
-| Visual Studio 2019 version 16.1 | 1921 |
-| Visual Studio 2019 version 16.2 | 1922 |
-| Visual Studio 2019 version 16.3 | 1923 |
-| Visual Studio 2019 version 16.4 | 1924 |
-| Visual Studio 2019 version 16.5 | 1925 |
-| Visual Studio 2019 version 16.6 | 1926 |
-| Visual Studio 2019 version 16.7 | 1927 |
-| Visual Studio 2019 version 16.8, 16.9 <sup>a</sup> | 1928 |
-| Visual Studio 2019 version 16.10, 16.11 <sup>b</sup> | 1929 |
-| Visual Studio 2022 RTW 17.0 | 1930 |
-| Visual Studio 2022 version 17.1 | 1931 |
-| Visual Studio 2022 version 17.2 | 1932 |
-| Visual Studio 2022 version 17.3 | 1933 |
-| Visual Studio 2022 version 17.4 | 1934 |
-| Visual Studio 2022 version 17.5 | 1935 |
-| Visual Studio 2022 version 17.6 | 1936 |
-| Visual Studio 2022 version 17.7 | 1937 |
-| Visual Studio 2022 version 17.8 | 1938 |
-| Visual Studio 2022 version 17.9 | 1939 |
-| Visual Studio 2022 version 17.10 | 1940 |
-| Visual Studio 2022 version 17.11 | 1941 |
-| Visual Studio 2022 version 17.12 | 1942 |
-| Visual Studio 2022 version 17.13 | 1943 |
-| Visual Studio 2022 version 17.14 | 1944 |
+| Visual Studio version | `_MSC_VER` | toolset version |
+|--|--|--|
+| Visual Studio 6.0 | 1200 | 6.0 |
+| Visual Studio .NET 2002 (7.0) | 1300 | 7.0 |
+| Visual Studio .NET 2003 (7.1) | 1310 | 7.1 |
+| Visual Studio 2005 (8.0) | 1400 | 8.00 |
+| Visual Studio 2008 (9.0) | 1500 | 9.00 |
+| Visual Studio 2010 (10.0) | 1600 | 10.00 |
+| Visual Studio 2012 (11.0) | 1700 | 11.00 |
+| Visual Studio 2013 (12.0) | 1800 | 12.00 |
+| Visual Studio 2015 (14.0) | 1900 | 14.00 |
+| Visual Studio 2017 RTW (15.0) | 1910 | 14.10 |
+| Visual Studio 2017 version 15.3 | 1911 | 14.11 |
+| Visual Studio 2017 version 15.5 | 1912 | 14.12 |
+| Visual Studio 2017 version 15.6 | 1913 | 14.13 |
+| Visual Studio 2017 version 15.7 | 1914 | 14.14 |
+| Visual Studio 2017 version 15.8 | 1915 | 14.15 |
+| Visual Studio 2017 version 15.9 | 1916 | 14. 16|
+| Visual Studio 2019 RTW 16.0 | 1920 | 14.20 |
+| Visual Studio 2019 version 16.1 | 1921 | 14.21 |
+| Visual Studio 2019 version 16.2 | 1922 | 14.22 |
+| Visual Studio 2019 version 16.3 | 1923 | 14.23 |
+| Visual Studio 2019 version 16.4 | 1924 | 14.24 |
+| Visual Studio 2019 version 16.5 | 1925 | 14.25 |
+| Visual Studio 2019 version 16.6 | 1926 | 14.26 |
+| Visual Studio 2019 version 16.7 | 1927 | 14.27 |
+| Visual Studio 2019 version 16.8, 16.9 <sup>a</sup> | 1928 | 14.28 |
+| Visual Studio 2019 version 16.10, 16.11 <sup>b</sup> | 1929 | 14.29 |
+| Visual Studio 2022 RTW 17.0 | 1930 | 14.30 |
+| Visual Studio 2022 version 17.1 | 1931 | 14.31 |
+| Visual Studio 2022 version 17.2 | 1932 | 14.32 |
+| Visual Studio 2022 version 17.3 | 1933 | 14.33 |
+| Visual Studio 2022 version 17.4 | 1934 | 14.34 |
+| Visual Studio 2022 version 17.5 | 1935 | 14.35 |
+| Visual Studio 2022 version 17.6 | 1936 | 14.36 |
+| Visual Studio 2022 version 17.7 | 1937 | 14.37 |
+| Visual Studio 2022 version 17.8 | 1938 | 14.38 |
+| Visual Studio 2022 version 17.9 | 1939 | 14.39 |
+| Visual Studio 2022 version 17.10 | 1940 | 14.40 |
+| Visual Studio 2022 version 17.11 | 1941 | 14.41 |
+| Visual Studio 2022 version 17.12 | 1942 | 14.42 |
+| Visual Studio 2022 version 17.13 | 1943 | 14.43 |
+| Visual Studio 2022 version 17.14 | 1944 | 14.44 |
 
 <sup>a</sup> Visual Studio 2019 16.8 and 16.9 share the same major and minor versions (and so have the same value for `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 16.9 is 192829910.
 
