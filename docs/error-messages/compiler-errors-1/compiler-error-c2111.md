@@ -7,11 +7,15 @@ helpviewer_keywords: ["C2111"]
 ---
 # Compiler Error C2111
 
-'+' : pointer addition requires integral operand
+> '+' : pointer addition requires integral operand
+
+## Remarks
 
 An attempt was made to add a nonintegral value to a pointer using the plus (`+`) operator.
 
-The following sample generates C2111:
+## Example
+
+The following example generates C2111:
 
 ```cpp
 // C2111.cpp

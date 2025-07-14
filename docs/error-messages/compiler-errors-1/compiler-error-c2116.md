@@ -1,18 +1,17 @@
 ---
-description: "Learn more about: Compiler Error C2116"
 title: "Compiler Error C2116"
+description: "Learn more about: Compiler Error C2116"
 ms.date: 12/02/2021
 f1_keywords: ["C2116"]
 helpviewer_keywords: ["C2116"]
-ms.assetid: 0089a23f-e6bd-4956-9b58-3bcca09ab5ad
 ---
 # Compiler Error C2116
 
 > function parameter lists do not match between declarations
 
-The parameter list of a redeclared function doesn't match the parameter list used in an earlier declaration.
-
 ## Remarks
+
+The parameter list of a redeclared function doesn't match the parameter list used in an earlier declaration.
 
 This error can occur if you use different types for the parameters when you redeclare an `extern "C"` function.
 
