@@ -136,7 +136,7 @@ The **Templates** view lists the template instantiations that contributed signif
 - **Instantiation File Path** shows where in your source code the template instantiation happens. This helps you locate the exact line of code responsible for the expensive instantiation.
 
 :::image type="complex" source="./media/templates-view-before-fix.png" alt-text="Screenshot of the Build Insights Templates view showing expensive template instantiations.":::
-The Templates view shows two template instantiations of struct S3 taking most (79.4480%) of the build time. The Translation Unit column shows that both LargeValue.cpp and SmallValue.cpp are affected.
+The Templates view shows two template instantiations of struct S3 taking most (79.448%) of the build time. The Translation Unit column shows that both LargeValue.cpp and SmallValue.cpp are affected. The build time is 4.066 seconds.
 :::image-end:::
 
 - Sort by **Time** to find the templates that take the longest to instantiate.
@@ -145,9 +145,9 @@ The Templates view shows two template instantiations of struct S3 taking most (7
 
 ## Improve build time by optimizing template instantiations
 
-In the example, we can see that two template instantiations of `S3` are taking 83% of the entire build time. The **Translation Unit** column shows that both `SmallValue.cpp` and `LargeValue.cpp` are causing this template instantiation to be included in the build.
+In the example, we can see that two template instantiations of `S3` are taking 79% of the build time. The **Translation Unit** column shows that both `SmallValue.cpp` and `LargeValue.cpp` are causing this template instantiation to be included in the build.
 
-Since the **Instantiation File Path** and the **Specialization Name** are the same for both entries, we can infer that there's one expensive template instantiation affecting both of our source files. This explains why the time of each of the two template instantiations are about equal. By including `Templates.h` in both source files, we are causing one template instantiation to add significant time to our build.
+Since the **Instantiation File Path** and the **Specialization Name** are the same for both entries, we infer that there's one expensive template instantiation affecting both of our source files. This explains why the time of each of the two template instantiations are about equal. By including `Templates.h` in both source files, we are causing one template instantiation to add significant time to the build.
 
 From the **Specialization Name** column, we can see that the expensive instantiation is `S3<std::make_index_sequence<1000>>`, which corresponds to this code in `Templates.h`:
 
@@ -170,15 +170,13 @@ You can also consider removing include directives that bring in unnecessary temp
 
 For our purposes, let's assume that we need the template instantiation as-is. We can rely on the third approach: moving the definition that causes the expensive template instantiation to a source file.
 
-Since `LargeValue.cpp` is the only source file that calls `LargeValue()`, we can move the definition to `LargeValue.cpp`. This prevents the template instantiation from happening in every translation unit that includes `Templates.h`.
-
-To do this, remove the current definition of `LargeValue()` from `Templates.h` and replace it with a declaration:
+Since `LargeValue.cpp` is the only source file that calls `LargeValue()`, we can move the definition to `LargeValue.cpp`. This prevents the template instantiation from happening in every translation unit that includes `Templates.h`. Remove the current definition of `LargeValue()` from `Templates.h` and replace it with a declaration:
 
 ```cpp
 size_t LargeValue();
 ```
 
-Then, inside `LargeValue.cpp` add the definition:
+Inside `LargeValue.cpp` add the definition:
 
 ```cpp
 size_t LargeValue()
@@ -187,15 +185,13 @@ size_t LargeValue()
 }
 ```
 
-Now, when you rebuild the project and run Build Insights again, you should see that the expensive template instantiation is no longer listed in the **Templates** view. The build time should also decrease significantly.
-
-:::image type="complex" source="./media/templates-view-after-fix.png" alt-text="Screenshot of the Build Insights Templates view after optimization showing reduced template instantiation time.":::
-
-The Templates view now shows only one instantiation of S3 instead of two, and the total build time has been significantly reduced.
-
-:::image-end:::
+Rebuild the project and run Build Insights again. From the main menu, select **Build** > **Run Build Insights on Selection** > **Rebuild**.
 
 The build time has significantly decreased. While the template instantiation of `S3` is still contributing to the build time, we've been able to roughly halve the total time by only including necessary template instantiations. You can see the count of `S3` instantiations is now 1 instead of 2.
+
+:::image type="complex" source="./media/templates-view-after-fix.png" alt-text="Screenshot of the Build Insights Templates view after optimization showing reduced template instantiation time.":::
+The Templates view now shows only one instantiation of S3 instead of two, and the total build time is significantly less at 3.152 seconds.
+:::image-end:::
 
 This technique scales well to larger projects. If multiple files included `Templates.h`, each of those files would have added the instantiation time of `LargeValue()` to the total build time. By moving the definition of `LargeValue()` to a dedicated source file, we minimize our build time.
 
@@ -212,12 +208,10 @@ For more advanced template optimization techniques, see [Build Throughput Series
 
 ## Tips
 
-- You can **File** > **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
-- If you inadvertently close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
-- To dig into the Build Insights data with Windows Performance Analyzer (WPA), click the **Open in WPA** button in the bottom right of the ETL window.
-- Drag columns to change the order of the columns. For instance, you may prefer moving the **Time** column to be the first column. You can hide columns by right-clicking on the column header and deselecting the columns you don't want to see.
+- You can use **File** > **Save As** to save the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
+- If you inadvertently close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file either where you specified it should be saved, or in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
+- Drag columns to change the order of the columns. For instance, you may prefer moving the **Wall Time Responsibility** column to be the first column. You can add or hide columns by right-clicking on the column header and selecting or deselecting the columns you don't want to add or hide.
 - The **Templates** view provides a filter box to find a specific template instantiation. It does partial matches on the name you provide.
-- If you forget how to interpret what the **Templates** view is trying to show you, hover over the tab to see a tooltip that describes the view.
 
 ## Troubleshooting
 
