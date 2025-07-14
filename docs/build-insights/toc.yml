@@ -6,7 +6,7 @@ items:
 - name: "Tutorials"
   expanded: true
   items:
-    - name: "Troubleshoot function inlining on build time"
+    - name: "Troubleshoot function inlining impact on build time"
       href: ../build-insights/tutorials/build-insights-function-view.md
     - name: "Troubleshoot template instantiation impact on build time"
       href: ../build-insights/tutorials/build-insights-template-view.md

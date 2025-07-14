@@ -1,11 +1,11 @@
 ---
-title: "Troubleshoot function inlining on build time"
+title: "Troubleshoot function inlining impact on build time"
 description: "Tutorial for how to use Build Insights function view to troubleshoot the impact of function inlining on build time in your C++ projects."
 ms.date: 5/30/2024
 helpviewer_keywords: ["C++ Build Insights", "inline function analysis", "build time analysis", "__forceinline analysis", "inlines analysis"]
 ms.topic: troubleshooting-general
 ---
-# Troubleshoot function inlining on build time
+# Troubleshoot function inlining impact on build time
 
 Use Build Insights **Functions** view to troubleshoot the impact of function inlining on build time in your C++ projects.
 
@@ -128,8 +128,8 @@ Double-click, right-click, or press **Enter** while on a file in the **Functions
 
 ## Tips
 
-- You can **File** > **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
-- If you inadvertently close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
+- Use **File** > **Save As** to save the ETL file to a more permanent location to keep a record of the build time information. You can then compare it to future builds to see how your changes are improving things.
+- If you close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
 - To dig into the Build Insights data with Windows Performance Analyzer (WPA), click the **Open in WPA** button in the bottom right of the ETL window.
 - Drag columns to change the order of the columns. For instance, you may prefer moving the **Time** column to be the first column. You can hide columns by right-clicking on the column header and deselecting the columns you don't want to see.
 - The **Functions** view provides a filter box to find a function that you're interested in. It does partial matches on the name you provide.
