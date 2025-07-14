@@ -81,7 +81,7 @@ An example of a minor change is from Visual Studio 2022 17.1 to Visual Studio 20
 
 The following table lists the Visual C++ compiler `_MSC_VER` for each corresponding Visual Studio and toolset release:
 
-| Visual Studio version | `_MSC_VER` | toolset version |
+| Visual Studio version | `_MSC_VER` | Toolset version |
 |--|--|--|
 | Visual Studio 6.0 | 1200 | 6.0 |
 | Visual Studio .NET 2002 (7.0) | 1300 | 7.0 |
