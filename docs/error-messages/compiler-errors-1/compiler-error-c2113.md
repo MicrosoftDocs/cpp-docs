@@ -10,4 +10,6 @@ ms.assetid: be85cb5e-b0ed-4fc9-b062-032bf7f59a4e
 
 > '-' : pointer can only be subtracted from another pointer
 
+## Remarks
+
 The right operand in a subtraction operation was a pointer, but the left operand was not.

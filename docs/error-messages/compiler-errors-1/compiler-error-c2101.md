@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2101"]
 
 > '&' on constant
 
+## Remarks
+
 The [address-of operator (**`&`**)](../../cpp/address-of-operator-amp.md) must have an l-value as operand.
+
+## Example
 
 The following sample generates C2101:
 

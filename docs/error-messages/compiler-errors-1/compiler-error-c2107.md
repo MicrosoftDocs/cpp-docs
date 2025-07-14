@@ -10,6 +10,8 @@ ms.assetid: 2866a121-884e-4bb5-8613-36de5817000e
 
 > illegal index, indirection not allowed
 
+## Remarks
+
 A subscript is applied to an expression that does not evaluate to a pointer.
 
 ## Example

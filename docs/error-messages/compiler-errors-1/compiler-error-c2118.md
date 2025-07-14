@@ -10,7 +10,11 @@ ms.assetid: bf4315d0-f085-4323-b813-96ee61a13bde
 
 > negative subscript
 
+## Remarks
+
 The value defining the array size is larger than the maximum array size or smaller than zero.
+
+## Example
 
 The following sample generates C2118:
 

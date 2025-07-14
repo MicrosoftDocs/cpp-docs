@@ -10,11 +10,15 @@ ms.assetid: b947379d-5861-42fc-ac26-170318579cbd
 
 > 'identifier' : array bounds overflow
 
+## Remarks
+
 An array has too many initializers:
 
 - Array elements and initializers do not match in size and quantity.
 
 - No space for the null terminator in a string.
+
+## Example
 
 The following sample generates C2117:
 

@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2110"]
 
 > '+' : cannot add two pointers
 
+## Remarks
+
 An attempt was made to add two pointer values using the plus (`+`) operator.
+
+## Example
 
 The following sample generates C2110:
 

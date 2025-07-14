@@ -10,7 +10,11 @@ ms.assetid: 19b7f7bc-a9da-4d23-8193-005b6d09274f
 
 > 'operator' needs l-value
 
+## Remarks
+
 The operator must have an l-value as operand.
+
+## Examples
 
 The following sample generates C2105:
 

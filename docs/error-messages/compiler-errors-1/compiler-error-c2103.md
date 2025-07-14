@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2103"]
 
 > '&' on register variable
 
+## Remarks
+
 You cannot take the address of a register.
+
+## Example
 
 The following sample generates C2103:
 

@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2102"]
 
 > '&' requires l-value
 
+## Remarks
+
 The [address-of operator (**`&`**)](../../cpp/address-of-operator-amp.md) must have an l-value as operand. Address of temporary values cannot be taken.
+
+## Example
 
 The following sample generates C2102:
 

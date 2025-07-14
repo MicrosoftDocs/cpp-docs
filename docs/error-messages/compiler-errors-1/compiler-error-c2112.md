@@ -10,4 +10,6 @@ ms.assetid: 527a2fea-f585-4d00-bbb4-477aee17144b
 
 > '-' : pointer subtraction requires integral or pointer operand
 
+## Remarks
+
 An attempt was made to subtract pointers that point to different types.

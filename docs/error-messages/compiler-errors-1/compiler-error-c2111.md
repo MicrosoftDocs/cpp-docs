@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2111"]
 
 > '+' : pointer addition requires integral operand
 
+## Remarks
+
 An attempt was made to add a nonintegral value to a pointer using the plus (`+`) operator.
+
+## Example
 
 The following sample generates C2111:
 

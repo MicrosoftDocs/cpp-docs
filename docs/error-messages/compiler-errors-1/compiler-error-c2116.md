@@ -10,9 +10,9 @@ ms.assetid: 0089a23f-e6bd-4956-9b58-3bcca09ab5ad
 
 > function parameter lists do not match between declarations
 
-The parameter list of a redeclared function doesn't match the parameter list used in an earlier declaration.
-
 ## Remarks
+
+The parameter list of a redeclared function doesn't match the parameter list used in an earlier declaration.
 
 This error can occur if you use different types for the parameters when you redeclare an `extern "C"` function.
 

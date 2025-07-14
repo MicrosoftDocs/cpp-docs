@@ -10,7 +10,11 @@ ms.assetid: 2d1ac79d-a985-4904-a38b-b270578d664d
 
 > subscript requires array or pointer type
 
+## Remarks
+
 The subscript was used on a variable that was not an array.
+
+## Example
 
 The following sample generates C2109:
 
