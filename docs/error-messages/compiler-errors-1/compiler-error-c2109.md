@@ -16,7 +16,7 @@ The subscript was used on a variable that was not an array.
 
 ## Example
 
-The following sample generates C2109:
+The following example generates C2109:
 
 ```cpp
 // C2109.cpp

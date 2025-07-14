@@ -15,7 +15,7 @@ An attempt was made to add a nonintegral value to a pointer using the plus (`+`)
 
 ## Example
 
-The following sample generates C2111:
+The following example generates C2111:
 
 ```cpp
 // C2111.cpp

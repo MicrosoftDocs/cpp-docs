@@ -20,7 +20,7 @@ An array has too many initializers:
 
 ## Example
 
-The following sample generates C2117:
+The following example generates C2117:
 
 ```cpp
 // C2117.cpp

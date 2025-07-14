@@ -15,7 +15,7 @@ The [address-of operator (**`&`**)](../../cpp/address-of-operator-amp.md) must h
 
 ## Example
 
-The following sample generates C2102:
+The following example generates C2102:
 
 ```cpp
 // C2102.cpp

@@ -16,7 +16,7 @@ The value defining the array size is larger than the maximum array size or small
 
 ## Example
 
-The following sample generates C2118:
+The following example generates C2118:
 
 ```cpp
 // C2118.cpp

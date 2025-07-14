@@ -15,7 +15,7 @@ An attempt was made to add two pointer values using the plus (`+`) operator.
 
 ## Example
 
-The following sample generates C2110:
+The following example generates C2110:
 
 ```cpp
 // C2110.cpp

@@ -18,7 +18,7 @@ The array subscript is a non-integer expression.
 
 C2108 can occur if you incorrectly use the **`this`** pointer of a value type to access the type's default indexer. For more information, see [Semantics of the `this` pointer](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Semantics_of_the_this_pointer).
 
-The following sample generates C2108.
+The following example generates C2108.
 
 ```cpp
 // C2108.cpp

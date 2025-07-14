@@ -16,7 +16,7 @@ You cannot take the address of a bit field.
 
 ## Example
 
-The following sample generates C2104:
+The following example generates C2104:
 
 ```cpp
 // C2104.cpp

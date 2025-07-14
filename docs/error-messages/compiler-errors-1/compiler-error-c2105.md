@@ -16,7 +16,7 @@ The operator must have an l-value as operand.
 
 ## Examples
 
-The following sample generates C2105:
+The following example generates C2105:
 
 ```cpp
 // C2105.cpp
@@ -33,7 +33,7 @@ int main() {
 }
 ```
 
-The following sample generates C2105:
+The following example generates C2105:
 
 ```cpp
 // C2105b.cpp

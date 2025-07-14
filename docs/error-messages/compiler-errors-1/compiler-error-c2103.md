@@ -15,7 +15,7 @@ You cannot take the address of a register.
 
 ## Example
 
-The following sample generates C2103:
+The following example generates C2103:
 
 ```c
 // C2103.c

@@ -16,7 +16,7 @@ The operator must have an l-value as its left operand.
 
 ## Example
 
-The following sample generates C2106:
+The following example generates C2106:
 
 ```cpp
 // C2106.cpp
