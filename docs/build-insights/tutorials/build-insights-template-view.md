@@ -9,7 +9,7 @@ ms.topic: troubleshooting-general
 
 Use Build Insights **Templates** view to analyze the impact of template instantiations on C++ build time. This feature is especially useful for projects that make heavy use of templates, such as those using template metaprogramming or large generic libraries.
 
-Templates view is designed to be familiar to users of the [Functions view](build-insights-function-view.md), with similar UI and workflow.
+Templates view will seem familiar to users of Build Insight's [Functions view](build-insights-function-view.md) due to similar UI and workflow.
 
 ## Prerequisites
 
@@ -23,13 +23,11 @@ Templates view is designed to be familiar to users of the [Functions view](build
 
 ## Overview
 
-Build Insights, integrated into Visual Studio, helps you optimize your build times--especially for large projects like AAA games. Build Insights provides analytics such as **Templates** view, which helps diagnose expensive template instantiations during build time. It displays the time it takes to instantiate each template and shows which template instantiations add the most to your build time.
+Build Insights, integrated into Visual Studio, helps you optimize your build times--especially for large projects like AAA games. Build Insights provides analytics such as **Templates** view, which displays the time it takes to instantiate each template and shows which template instantiations add the most to your build time.
 
-For optimized builds, the time spent on template instantiation contributes significantly to the total build time. In general, C++ template instantiation happens quickly. In exceptional cases, some template instantiations can noticeably slow down your builds.
+In general, C++ template instantiation happens quickly. In exceptional cases, some template instantiations can noticeably slow down your builds.
 
-In this article, learn how to use the Build Insights **Templates** view to find template instantiation bottlenecks in your build.
-
-Follow along to create a project that demonstrates template instantiation, run Build Insights to gather template instantiation times, and analyze the results.
+In this article, follow along to create a project that demonstrates template instantiation impact on build time, run Build Insights to gather template instantiation times, and analyze the results.
 
 ## Create a template test project
 
@@ -109,9 +107,9 @@ Template instantiation time collection is off by default to minimize build overh
 :::image type="content" source="./media/tools-options-build-insights.png" alt-text="Screenshot of the project property pages dialog. The settings are open to Build Insights > Trace Collection. The Collect Template Instantion checkbox is selected.":::
 
 > [!Note] 
-> Collecting template instantiation times may increase build time due to the extra data collected. Only enable it when you want to analyze template instantiation bottlenecks.
+> Collecting template instantiation times increases build time due to the extra data collected. Only enable it when you want to analyze template instantiation bottlenecks.
 
-## Run Build Insights to get template instantiation times
+## Run Build Insights to get template instantiation data
 
 From the main menu, select **Build** > **Run Build Insights on Selection** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project.
 
@@ -119,19 +117,23 @@ From the main menu, select **Build** > **Run Build Insights on Selection** > **R
 
 When the build finishes, an Event Trace Log (ETL) file opens.The generated name is based on the collection time.
 
+## Understanding Templates view results
+
+When interpreting Templates view results, keep these points in mind:
+
+- **Empty view**: If nothing shows up in the Templates view, it means your build time isn't dominated by template instantiations. This is good news because your templates are not a build bottleneck.
+- **Duplicate instantiations**: The same template instantiation appearing multiple times with different translation units indicates that multiple source files are causing the same expensive instantiation. This is often the biggest optimization opportunity.
+- **Threshold filtering**: The view only shows instantiations whose contribution exceeds a certain threshold to avoid noise from trivial instantiations.
+- **Time aggregation**: The time shown represents the total time spent on that specific template instantiation, including any nested instantiations it triggers.
+
 ## Use Templates view to optimize build time
 
 The **Templates** view lists the template instantiations that contributed significantly to build time. Columns provide information about:
 
-The **Time [sec, %]** column shows how long it took to instantiate each template in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). This metric distributes the wall clock time among template instantiations based on their use of parallel compiler threads.
-
-The **Specialization Name** column shows the specific template instantiation, including the template arguments that were used. This helps you identify which template specializations are most expensive.
-
-The **Translation Unit** column shows which source file caused this template instantiation. Multiple files can cause the same template instantiation if they include the same header with the template definition.
-
-The **Instantiation File Path** column shows where in your source code the template instantiation happens. This helps you locate the exact line of code responsible for the expensive instantiation.
-
-The view only shows instantiations whose contribution exceeds a certain threshold. If you don't see anything in the **Templates** view, it means the build time isn't dominated by template instantiations.
+- **Time [sec, %]** shows how long it took to instantiate each template in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). This metric distributes the wall clock time among template instantiations based on their use of parallel compiler threads.
+- **Specialization Name** shows each template instantiation, including the template arguments that were used. This helps you identify which template specializations are most expensive.
+- **Translation Unit** shows which source file each template instantiation happened in. Multiple files can cause the same template instantiation if they include the same header with the template definition.
+- **Instantiation File Path** shows where in your source code the template instantiation happens. This helps you locate the exact line of code responsible for the expensive instantiation.
 
 :::image type="complex" source="./media/templates-view-before-fix.png" alt-text="Screenshot of the Build Insights Templates view showing expensive template instantiations.":::
 The Templates view shows two template instantiations of struct S3 taking most (79.4480%) of the build time. The Translation Unit column shows that both LargeValue.cpp and SmallValue.cpp are affected.
@@ -143,16 +145,15 @@ The Templates view shows two template instantiations of struct S3 taking most (7
 
 ## Improve build time by optimizing template instantiations
 
-In our example, we can see that two template instantiations of `S3` are taking 83% of the entire build time. The **Translation Unit** column shows that both `SmallValue.cpp` and `LargeValue.cpp` are causing this template instantiation to be included in the build.
+In the example, we can see that two template instantiations of `S3` are taking 83% of the entire build time. The **Translation Unit** column shows that both `SmallValue.cpp` and `LargeValue.cpp` are causing this template instantiation to be included in the build.
 
-Since the **Instantiation File Path** and the **Specialization Name** are the same for both entries, we can derive that there's one expensive template instantiation affecting both of our source files. This explains why the time of each of the two template instantiations are about equal. By including `Templates.h` in both source files, we are causing one template instantiation to add significant time to our build.
+Since the **Instantiation File Path** and the **Specialization Name** are the same for both entries, we can infer that there's one expensive template instantiation affecting both of our source files. This explains why the time of each of the two template instantiations are about equal. By including `Templates.h` in both source files, we are causing one template instantiation to add significant time to our build.
 
 From the **Specialization Name** column, we can see that the expensive instantiation is `S3<std::make_index_sequence<1000>>`, which corresponds to this code in `Templates.h`:
 
 ```cpp
 inline size_t LargeValue()
 {
-    
     return sizeof(S3<std::make_index_sequence<1000>>);
 };
 ```
@@ -161,20 +162,9 @@ There are three main ways to decrease the cost of template instantiations:
 
 ### Remove unused templates
 
-Review the template in question and determine if it's being used. If it's not being used, the easiest solution is to remove the function or template. In our example, `LargeValue()` is being used by `LargeValue.cpp`, so we cannot remove it.
+Review the template in question and determine if it's being used. If it's not being used, the easiest solution is to remove the function or template. In the example, `LargeValue()` is being used by `LargeValue.cpp`, so we can't remove it.
 
 You can also consider removing include directives that bring in unnecessary template instantiations. It's easy to forget to remove header files when you're no longer using them, and unused includes can cause significant impact on build time.
-
-### Optimize the template implementation
-
-Look at the template instantiation and determine if there is a way to optimize the code. Some optimization techniques include:
-
-- Reducing the complexity of template metaprogramming
-- Using simpler template patterns
-- Avoiding recursive template instantiation patterns that lead to exponential growth
-- Using `if constexpr` instead of SFINAE where possible
-
-For more advanced template optimization techniques, see [Build Throughput Series: More Efficient Template Metaprogramming](https://devblogs.microsoft.com/cppblog/build-throughput-series-more-efficient-template-metaprogramming/), which provides detailed examples of reducing template instantiation overhead.
 
 ### Move template instantiations to source files
 
@@ -209,37 +199,42 @@ The build time has significantly decreased. While the template instantiation of 
 
 This technique scales well to larger projects. If multiple files included `Templates.h`, each of those files would have added the instantiation time of `LargeValue()` to the total build time. By moving the definition of `LargeValue()` to a dedicated source file, we minimize our build time.
 
-## Understanding Templates view results
+### Optimize the template implementation
 
-When interpreting Templates view results, keep these points in mind:
+Look at the template instantiation and determine if there's a way to optimize the code. Some optimization techniques include:
 
-- **Empty view**: If nothing shows up in the Templates view, it means your build time is not dominated by template instantiations. This is actually good news - your templates are not a build bottleneck.
-- **Duplicate instantiations**: The same template instantiation appearing multiple times with different translation units indicates that multiple source files are causing the same expensive instantiation. This is often the biggest optimization opportunity.
-- **Threshold filtering**: The view only shows instantiations whose contribution exceeds a certain threshold to avoid noise from trivial instantiations.
-- **Time aggregation**: The time shown represents the total time spent on that specific template instantiation, including any nested instantiations it may trigger.
+- Using simpler template patterns
+- Reducing the complexity of template metaprogramming
+- Avoiding recursive template instantiation patterns that lead to exponential growth
+- Use `if constexpr` instead of SFINAE where possible
 
-For more strategies on improving build times in template-heavy code, see:
-- [Templates View for Build Insights in Visual Studio](https://devblogs.microsoft.com/cppblog/templates-view-for-build-insights-in-visual-studio-2/)
-- [Build throughput series: More efficient template metaprogramming](https://devblogs.microsoft.com/cppblog/build-throughput-series-more-efficient-template-metaprogramming/)
+For more advanced template optimization techniques, see [Build Throughput Series: More Efficient Template Metaprogramming](https://devblogs.microsoft.com/cppblog/build-throughput-series-more-efficient-template-metaprogramming/), which provides detailed examples of reducing template instantiation overhead.
 
-The first article provides an overview of the Templates view and how to use it. The second article dives deeper into template metaprogramming techniques that can reduce build time, with practical examples.
+## Tips
+
+- You can **File** > **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
+- If you inadvertently close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
+- To dig into the Build Insights data with Windows Performance Analyzer (WPA), click the **Open in WPA** button in the bottom right of the ETL window.
+- Drag columns to change the order of the columns. For instance, you may prefer moving the **Time** column to be the first column. You can hide columns by right-clicking on the column header and deselecting the columns you don't want to see.
+- The **Templates** view provides a filter box to find a specific template instantiation. It does partial matches on the name you provide.
+- If you forget how to interpret what the **Templates** view is trying to show you, hover over the tab to see a tooltip that describes the view.
 
 ## Troubleshooting
 
-- **Templates view does not appear:** Ensure you are using Visual Studio 2022 17.10 or later and that the C++ Build Insights component is installed. Also, make sure Templates view is enabled in the options.
-- **No templates listed:** Your project may not have template instantiations that take significant build time, or you may need to build in Release mode with optimizations enabled.
-- **Build is much slower with Templates view enabled:** This is expected due to the extra data collection. Disable Templates view when not needed.
+**Templates view is empty**: This could mean:
+
+- Template data collection is not enabled (check your options settings).
+- Your build time is not dominated by template instantiations.
+- Do a rebuild instead of a build. The Build Insights window doesn't appear if nothing builds, which may be the case if no files changed since the last build.
+- Ensure you are using Visual Studio 2022 17.10 or later and that the C++ Build Insights component is installed.
+
+**Build is much slower with Templates view enabled:** This is expected due to the extra data collection. Disable **Templates** view when not needed.
 
 ## See also
 
 - [Build Insights tips and tricks](build-insights-tips.md)
+- [#include cleanup in Visual Studio](https://devblogs.microsoft.com/cppblog/include-cleanup-in-visual-studio/)
+- [Troubleshoot header file impact on build time](build-insights-included-files-view.md)
 - [Troubleshoot function inlining on build time](build-insights-function-view.md)
-- [Build Insights now available in Visual Studio 2022](build-insights-now-available-in-visual-studio-2022.md)
-- [Functions View for Build Insights in Visual Studio 2022 17.8](functions-view-for-build-insights-in-visual-studio-2022-17-8.md)
+- [Build Insights now available in Visual Studio 2022](https://devblogs.microsoft.com/cppblog/build-insights-now-available-in-visual-studio-2022)
 - [Build throughput series: More efficient template metaprogramming](https://devblogs.microsoft.com/cppblog/build-throughput-series-more-efficient-template-metaprogramming/)
-
----
-
-**Summary of additional important points from the blog post:**
-- The blog post provides more advanced examples, such as using SFINAE and type traits, which can be referenced for deeper dives but are not included in this basic walkthrough.
-
