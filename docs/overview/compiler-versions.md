@@ -98,7 +98,7 @@ The following table lists the Visual C++ compiler `_MSC_VER` for each correspond
 | Visual Studio 2017 version 15.6 | 1913 | 14.13 |
 | Visual Studio 2017 version 15.7 | 1914 | 14.14 |
 | Visual Studio 2017 version 15.8 | 1915 | 14.15 |
-| Visual Studio 2017 version 15.9 | 1916 | 14. 16|
+| Visual Studio 2017 version 15.9 | 1916 | 14.16| 
 | Visual Studio 2019 RTW 16.0 | 1920 | 14.20 |
 | Visual Studio 2019 version 16.1 | 1921 | 14.21 |
 | Visual Studio 2019 version 16.2 | 1922 | 14.22 |
