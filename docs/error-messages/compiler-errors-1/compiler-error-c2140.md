@@ -18,7 +18,7 @@ For more information, see [Compiler Support for Type Traits](../../extensions/co
 
 ## Example
 
-The following sample generates C2140.
+The following example generates C2140.
 
 ```cpp
 // C2140.cpp

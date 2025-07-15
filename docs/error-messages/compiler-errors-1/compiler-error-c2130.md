@@ -16,7 +16,7 @@ The optional file name token following [#line](../../preprocessor/hash-line-dire
 
 ## Example
 
-The following sample generates C2130:
+The following example generates C2130:
 
 ```cpp
 // C2130.cpp

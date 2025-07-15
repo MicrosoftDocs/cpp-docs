@@ -15,7 +15,7 @@ A function declared as constexpr can only call other functions declared as const
 
 ## Example
 
-The following sample generates C2134:
+The following example generates C2134:
 
 ```cpp
 // C2134.cpp

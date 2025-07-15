@@ -16,7 +16,7 @@ The empty character constant ( ' ' ) is not permitted.
 
 ## Example
 
-The following sample generates C2137:
+The following example generates C2137:
 
 ```cpp
 // C2137.cpp

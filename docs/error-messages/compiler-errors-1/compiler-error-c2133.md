@@ -16,7 +16,7 @@ An unsized array is declared as a member of a class, structure, union, or enumer
 
 ## Example
 
-The following sample generates C2133:
+The following example generates C2133:
 
 ```cpp
 // C2133.cpp

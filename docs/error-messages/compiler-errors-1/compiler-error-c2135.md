@@ -16,7 +16,7 @@ The address-of operator (`&`) cannot be applied to a bit field.
 
 ## Example
 
-The following sample generates C2135:
+The following example generates C2135:
 
 ```cpp
 // C2135.cpp

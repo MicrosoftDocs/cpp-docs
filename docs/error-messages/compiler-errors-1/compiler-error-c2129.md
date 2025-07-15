@@ -18,7 +18,7 @@ A **`static`** function must be defined within file scope. If the function is de
 
 ## Example
 
-The following sample generates C2129:
+The following example generates C2129:
 
 ```cpp
 // C2129.cpp

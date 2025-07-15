@@ -16,7 +16,7 @@ A constant expression has a zero denominator. To resolve the error, do not divid
 
 ## Example
 
-The following sample generates C2124:
+The following example generates C2124:
 
 ```cpp
 // C2124.cpp

@@ -15,7 +15,7 @@ helpviewer_keywords: ["C2128"]
 
 ## Example
 
-The following sample generates C2128:
+The following example generates C2128:
 
 ```cpp
 // C2128.cpp
