@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2124"
 title: "Compiler Error C2124"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2124"
+ms.date: 11/04/2016
 f1_keywords: ["C2124"]
 helpviewer_keywords: ["C2124"]
-ms.assetid: 93392aaa-5582-4d68-8cc5-bd9c62a0ae7e
 ---
 # Compiler Error C2124
 

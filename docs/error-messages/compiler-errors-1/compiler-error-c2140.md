@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2140"
 title: "Compiler Error C2140"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2140"
+ms.date: 11/04/2016
 f1_keywords: ["C2140"]
 helpviewer_keywords: ["C2140"]
-ms.assetid: d44a0500-002c-4632-9e5e-c71c3a473ec4
 ---
 # Compiler Error C2140
 

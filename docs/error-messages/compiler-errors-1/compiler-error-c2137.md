@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2137"
 title: "Compiler Error C2137"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2137"
+ms.date: 11/04/2016
 f1_keywords: ["C2137"]
 helpviewer_keywords: ["C2137"]
-ms.assetid: 984687ee-7766-4f6b-ae15-0c9a010e2366
 ---
 # Compiler Error C2137
 

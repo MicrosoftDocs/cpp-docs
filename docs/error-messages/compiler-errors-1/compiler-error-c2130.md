@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2130"
 title: "Compiler Error C2130"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2130"
+ms.date: 11/04/2016
 f1_keywords: ["C2130"]
 helpviewer_keywords: ["C2130"]
-ms.assetid: c6fd5a7e-8f28-4f67-99d1-95a13b0dff90
 ---
 # Compiler Error C2130
 

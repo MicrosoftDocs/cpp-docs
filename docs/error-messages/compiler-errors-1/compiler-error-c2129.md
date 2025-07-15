@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2129"
 title: "Compiler Error C2129"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2129"
+ms.date: 11/04/2016
 f1_keywords: ["C2129"]
 helpviewer_keywords: ["C2129"]
-ms.assetid: 21a8223e-1d22-4baa-9ca1-922b7f751dd0
 ---
 # Compiler Error C2129
 

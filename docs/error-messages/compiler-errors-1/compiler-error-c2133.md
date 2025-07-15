@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2133"
 title: "Compiler Error C2133"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2133"
+ms.date: 11/04/2016
 f1_keywords: ["C2133"]
 helpviewer_keywords: ["C2133"]
-ms.assetid: 8942f9e8-9818-468f-97db-09dbd124fcae
 ---
 # Compiler Error C2133
 
