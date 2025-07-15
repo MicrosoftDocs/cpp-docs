@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Command-line errors and warnings"
 title: "Command-line errors and warnings"
-ms.date: "04/17/2019"
-ms.assetid: d02ec7df-26a5-4198-ac92-87b29ec9d5c8
+description: "Learn more about: Command-line errors and warnings"
+ms.date: 04/17/2019
 ---
 # Command-line errors and warnings
 
