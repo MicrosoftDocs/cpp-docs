@@ -10,7 +10,11 @@ ms.assetid: 93392aaa-5582-4d68-8cc5-bd9c62a0ae7e
 
 > divide or mod by zero
 
+## Remarks
+
 A constant expression has a zero denominator. To resolve the error, do not divide by zero.
+
+## Example
 
 The following sample generates C2124:
 

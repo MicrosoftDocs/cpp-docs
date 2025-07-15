@@ -10,7 +10,11 @@ ms.assetid: c6fd5a7e-8f28-4f67-99d1-95a13b0dff90
 
 > #line expected a string containing the filename, found 'token'
 
+## Remarks
+
 The optional file name token following [#line](../../preprocessor/hash-line-directive-c-cpp.md) `linenumber` must be a string.
+
+## Example
 
 The following sample generates C2130:
 

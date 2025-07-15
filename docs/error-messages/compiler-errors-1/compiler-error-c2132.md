@@ -10,4 +10,6 @@ ms.assetid: 32902472-49d1-4513-888f-b52d336839d5
 
 > syntax error : unexpected identifier
 
+## Remarks
+
 An identifier appears in an unsupported context.

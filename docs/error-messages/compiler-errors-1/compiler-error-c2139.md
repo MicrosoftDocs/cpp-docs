@@ -9,9 +9,9 @@ helpviewer_keywords: ["C2139"]
 
 > '*type*' : an undefined class is not allowed as an argument to compiler intrinsic type trait '*trait*'
 
-An invalid argument was passed to a type trait.
-
 ## Remarks
+
+An invalid argument was passed to a type trait.
 
 For more information, see [Compiler Support for Type Traits](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).
 

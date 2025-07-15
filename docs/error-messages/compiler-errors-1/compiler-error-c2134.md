@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2134"]
 
 > 'function' : call does not result in a constant expression
 
+## Remarks
+
 A function declared as constexpr can only call other functions declared as constexpr.
+
+## Example
 
 The following sample generates C2134:
 

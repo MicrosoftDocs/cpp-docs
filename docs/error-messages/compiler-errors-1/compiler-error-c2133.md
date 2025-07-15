@@ -10,7 +10,11 @@ ms.assetid: 8942f9e8-9818-468f-97db-09dbd124fcae
 
 > 'identifier' : unknown size
 
+## Remarks
+
 An unsized array is declared as a member of a class, structure, union, or enumeration. The /Za (ANSI C) option does not allow unsized member arrays.
+
+## Example
 
 The following sample generates C2133:
 

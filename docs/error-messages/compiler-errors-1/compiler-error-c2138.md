@@ -10,4 +10,6 @@ ms.assetid: 59fd1a58-3605-45dd-b9c1-0981e8aab26d
 
 > illegal to define an enumeration without any members
 
+## Remarks
+
 An enumeration must have at least one member when /Za (disable Microsoft extensions) is selected.

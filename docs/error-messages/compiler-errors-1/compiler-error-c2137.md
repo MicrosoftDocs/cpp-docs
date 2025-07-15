@@ -10,7 +10,11 @@ ms.assetid: 984687ee-7766-4f6b-ae15-0c9a010e2366
 
 > empty character constant
 
+## Remarks
+
 The empty character constant ( ' ' ) is not permitted.
+
+## Example
 
 The following sample generates C2137:
 

@@ -10,6 +10,8 @@ ms.assetid: d44a0500-002c-4632-9e5e-c71c3a473ec4
 
 > 'type' : a type that is dependent on a generic type parameter is not allowed as an argument to compiler intrinsic type trait 'trait'
 
+## Remarks
+
 An invalid type specifier was passed to a type trait.
 
 For more information, see [Compiler Support for Type Traits](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).

@@ -10,4 +10,6 @@ ms.assetid: bc060002-cd38-481b-a144-65af035ce851
 
 > 'identifier' : prototype parameter in name list illegal
 
+## Remarks
+
 The parameter is not a legal type. ANSI C does not support user-defined types.
