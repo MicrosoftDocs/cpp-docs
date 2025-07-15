@@ -30,8 +30,8 @@ errno_t _ctime32_s(
 errno_t _ctime64_s(
    char* buffer,
    size_t numberOfElements,
-   const __time64_t *sourceTime )
-;
+   const __time64_t *sourceTime
+);
 errno_t _wctime_s(
    wchar_t* buffer,
    size_t numberOfElements,
