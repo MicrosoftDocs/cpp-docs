@@ -8,7 +8,7 @@ ms.assetid: 93392aaa-5582-4d68-8cc5-bd9c62a0ae7e
 ---
 # Compiler Error C2124
 
-divide or mod by zero
+> divide or mod by zero
 
 A constant expression has a zero denominator. To resolve the error, do not divide by zero.
 

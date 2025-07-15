@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2128"]
 ---
 # Compiler Error C2128
 
-'function' : alloc_text/same_seg applicable only to functions with C linkage
+> 'function' : alloc_text/same_seg applicable only to functions with C linkage
 
 `#pragma alloc_text` can only be used with functions declared to have C linkage.
 

@@ -8,6 +8,6 @@ ms.assetid: 32902472-49d1-4513-888f-b52d336839d5
 ---
 # Compiler Error C2132
 
-syntax error : unexpected identifier
+> syntax error : unexpected identifier
 
 An identifier appears in an unsupported context.

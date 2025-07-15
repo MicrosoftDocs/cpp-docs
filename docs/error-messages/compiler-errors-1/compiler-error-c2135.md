@@ -8,7 +8,7 @@ ms.assetid: aa360d22-4f79-4de1-b384-93cadd10975f
 ---
 # Compiler Error C2135
 
-'bit operator' : illegal bit field operation
+> 'bit operator' : illegal bit field operation
 
 The address-of operator (`&`) cannot be applied to a bit field.
 

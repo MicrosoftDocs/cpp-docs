@@ -8,7 +8,7 @@ ms.assetid: 21a8223e-1d22-4baa-9ca1-922b7f751dd0
 ---
 # Compiler Error C2129
 
-static function 'function' declared but not defined
+> static function 'function' declared but not defined
 
 A forward reference is made to a **`static`** function that is never defined.
 
