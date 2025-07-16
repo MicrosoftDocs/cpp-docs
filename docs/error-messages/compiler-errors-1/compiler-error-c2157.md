@@ -8,7 +8,7 @@ ms.assetid: babbca24-16dc-4b69-be14-a675029249c1
 ---
 # Compiler Error C2157
 
-'function' : must be declared before use in pragma list
+> 'function' : must be declared before use in pragma list
 
 The function name is not declared before being referenced in the list of functions for an [alloc_text](../../preprocessor/alloc-text.md) pragma.
 

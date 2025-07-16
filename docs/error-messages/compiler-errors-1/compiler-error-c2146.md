@@ -8,7 +8,7 @@ ms.assetid: 6bfb7de6-6723-4486-9350-c66ef88d7a64
 ---
 # Compiler Error C2146
 
-syntax error : missing 'token' before identifier 'identifier'
+> syntax error : missing 'token' before identifier 'identifier'
 
 The compiler expected `token` and found `identifier` instead.  Possible causes:
 

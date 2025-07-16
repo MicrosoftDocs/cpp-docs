@@ -8,7 +8,7 @@ ms.assetid: e510c2c9-7b57-4ce8-be03-ba363e2cc5d9
 ---
 # Compiler Error C2148
 
-total size of array must not exceed 0x7fffffff bytes
+> total size of array must not exceed 0x7fffffff bytes
 
 An array exceeds the limit. Reduce the size of the array.
 

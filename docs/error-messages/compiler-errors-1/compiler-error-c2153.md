@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2153"]
 ---
 # Compiler Error C2153
 
-integer literals must have at least one digit
+> integer literals must have at least one digit
 
 Hexadecimal and binary literals must contain at least one digit after the leading sequence (`0x`, `0X`, `0b`, or `0B`), otherwise the trailing character may be incorrectly interpreted as a suffix or literal operator. See [Integer literals](../../cpp/numeric-boolean-and-pointer-literals-cpp.md#integer-literals) for more information.
 

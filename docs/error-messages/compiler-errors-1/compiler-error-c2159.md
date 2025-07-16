@@ -8,7 +8,7 @@ ms.assetid: 925a2cbd-43c9-45ee-a373-84004350b380
 ---
 # Compiler Error C2159
 
-more than one storage class specified
+> more than one storage class specified
 
 A declaration contains more than one storage class.
 

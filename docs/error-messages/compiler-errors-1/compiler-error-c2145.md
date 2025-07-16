@@ -8,7 +8,7 @@ ms.assetid: 158e5809-8adb-4195-8ca5-684501defbc8
 ---
 # Compiler Error C2145
 
-syntax error : missing 'token' before identifier
+> syntax error : missing 'token' before identifier
 
 The compiler expected `token` and found identifier instead.
 

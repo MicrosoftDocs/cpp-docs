@@ -8,7 +8,7 @@ ms.assetid: 1d8d1456-e031-4965-9240-09a6e33ba81c
 ---
 # Compiler Error C2143
 
-syntax error : missing 'token1' before 'token2'
+> syntax error : missing 'token1' before 'token2'
 
 The compiler expected a specific token (that is, a language element other than white space) and found another token instead.
 
