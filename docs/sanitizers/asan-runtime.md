@@ -140,13 +140,9 @@ For more information, see the [Differences with Clang 12.0](asan.md#differences)
 
 ### MSVC-specific AddressSanitizer runtime options
 
-- `windows_hook_legacy_allocators`
-  Boolean, set to `false` to disable interception of [`GlobalAlloc`](/windows/win32/api/winbase/nf-winbase-globalalloc) and [`LocalAlloc`](/windows/win32/api/winbase/nf-winbase-localalloc) allocators.
+- [`continue_on_error`](asan-continue-on-error.md) Boolean, set to `false` by default. When set to `true`, it allows the program to continue executing after a memory violation is reported, allowing you to collect multiple error reports.
 
-  > [!NOTE]
-  > The option `windows_hook_legacy_allocators` wasn't available in the public llvm-project runtime when this article was written. The option may eventually be contributed back to the public project; however, it's dependent on code review and community acceptance.
-  >
-  > The option `windows_hook_rtl_allocators`, previously an opt-in feature while AddressSanitizer was experimental, is now enabled by default. In versions before Visual Studio 2022 version 17.4.6, the default option value is `false`. In Visual Studio 2022 version 17.4.6 and later versions, the option `windows_hook_rtl_allocators` defaults to `true`.
+
 
 - `iat_overwrite`
   String, set to `"error"` by default. Other possible values are `"protect"` and `"ignore"`. Some modules may overwrite the [`import address table`](/windows/win32/debug/pe-format#import-address-table) of other modules to customize implementations of certain functions. For example, drivers commonly provide custom implementations for specific hardware. The `iat_overwrite` option manages the AddressSanitizer runtime's protection against overwrites for specific [`memoryapi.h`](/windows/win32/api/memoryapi/) functions. The runtime currently tracks the [`VirtualAlloc`](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc), [`VirtualProtect`](/windows/win32/api/memoryapi/nf-memoryapi-virtualprotect), and [`VirtualQuery`](/windows/win32/api/memoryapi/nf-memoryapi-virtualquery) functions for protection. This option is available in Visual Studio 2022 version 17.5 Preview 1 and later versions. The following `iat_overwrite` values control how the runtime reacts when protected functions are overwritten:
@@ -159,6 +155,15 @@ For more information, see the [Differences with Clang 12.0](asan.md#differences)
 Boolean (false by default), set to `true` to enable the process to terminate with a __fastfail(71) after printing the error report.
 >[!NOTE]
 >When abort_on_error value is set to true, on Windows the program terminates with an exit(3). In order to not change current behavior we decided to introduce this new option instead. If both abort_on_error and windows_fast_fail_on_error are true, the program will exit with the __fastfail.
+
+- `windows_hook_legacy_allocators`
+  Boolean, set to `false` to disable interception of [`GlobalAlloc`](/windows/win32/api/winbase/nf-winbase-globalalloc) and [`LocalAlloc`](/windows/win32/api/winbase/nf-winbase-localalloc) allocators.
+
+  > [!NOTE]
+  > The option `windows_hook_legacy_allocators` wasn't available in the public llvm-project runtime when this article was written. The option may eventually be contributed back to the public project; however, it's dependent on code review and community acceptance.
+  >
+  > The option `windows_hook_rtl_allocators`, previously an opt-in feature while AddressSanitizer was experimental, is now enabled by default. In versions before Visual Studio 2022 version 17.4.6, the default option value is `false`. In Visual Studio 2022 version 17.4.6 and later versions, the option `windows_hook_rtl_allocators` defaults to `true`.
+
 
 ## <a name="intercepted_functions"></a> AddressSanitizer list of intercepted functions (Windows)
 
