@@ -24,6 +24,7 @@ wchar_t * _wcmdln;
    #define _tcmdln _wcmdln
 #else
    #define _tcmdln _acmdln
+#endif
 ```
 
 ## Remarks
