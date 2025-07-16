@@ -104,10 +104,6 @@ BOOL Unregister();
 
 TRUE if successful; otherwise FALSE.
 
-### Remarks
-
-EnterRemarks
-
 ## <a name="updateregistry"></a> COleTemplateServer::UpdateRegistry
 
 Loads file-type information from the document-template string and places that information in the OLE system registry.
