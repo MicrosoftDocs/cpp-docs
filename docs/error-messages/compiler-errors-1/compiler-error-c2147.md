@@ -10,7 +10,11 @@ ms.assetid: d1adb3bf-7ece-4815-922c-ad7492fb6670
 
 > syntax error : 'identifier' is a new keyword
 
+## Remarks
+
 An identifier was used that is now a reserved keyword in the language.
+
+## Example
 
 The following sample generates C2147:
 

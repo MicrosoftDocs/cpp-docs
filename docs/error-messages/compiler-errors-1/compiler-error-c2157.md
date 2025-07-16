@@ -10,7 +10,11 @@ ms.assetid: babbca24-16dc-4b69-be14-a675029249c1
 
 > 'function' : must be declared before use in pragma list
 
+## Remarks
+
 The function name is not declared before being referenced in the list of functions for an [alloc_text](../../preprocessor/alloc-text.md) pragma.
+
+## Example
 
 The following sample generates C2157:
 

@@ -10,6 +10,8 @@ ms.assetid: 6bfb7de6-6723-4486-9350-c66ef88d7a64
 
 > syntax error : missing 'token' before identifier 'identifier'
 
+## Remarks
+
 The compiler expected `token` and found `identifier` instead.  Possible causes:
 
 1. Spelling or capitalization error.

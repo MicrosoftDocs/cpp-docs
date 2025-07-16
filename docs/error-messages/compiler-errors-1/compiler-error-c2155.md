@@ -10,4 +10,6 @@ ms.assetid: 54d408af-fc48-4121-9011-5e75c7072e01
 
 > '?' : invalid left operand, expected arithmetic or pointer type
 
+## Remarks
+
 An expression on the left hand side of `?` cannot be compared to zero. You must use an arithmetic or pointer expression that can be compared to zero.

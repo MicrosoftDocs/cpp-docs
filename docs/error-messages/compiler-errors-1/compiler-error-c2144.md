@@ -10,6 +10,8 @@ ms.assetid: 49f3959b-324f-4c06-9588-c0ecef5dc5b3
 
 > syntax error : '*type*' should be preceded by '*token*'
 
+## Remarks
+
 The compiler expected *token* and found *type* instead.
 
 This error may be caused by a missing closing brace, right parenthesis, or semicolon.

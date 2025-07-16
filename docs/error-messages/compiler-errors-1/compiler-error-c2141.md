@@ -10,6 +10,8 @@ ms.assetid: 10cf770f-0500-4220-ac90-a863b7ea5fe6
 
 > array size overflow
 
+## Remarks
+
 An array exceeds the 2GB limit. Reduce the size of the array.
 
 ## Example

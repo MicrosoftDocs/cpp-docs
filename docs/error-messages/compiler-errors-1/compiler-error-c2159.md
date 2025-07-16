@@ -10,7 +10,11 @@ ms.assetid: 925a2cbd-43c9-45ee-a373-84004350b380
 
 > more than one storage class specified
 
+## Remarks
+
 A declaration contains more than one storage class.
+
+## Example
 
 The following sample generates C2159:
 

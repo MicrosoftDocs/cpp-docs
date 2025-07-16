@@ -10,7 +10,11 @@ ms.assetid: 136f9c67-2c27-4f61-b7e6-ccd202eca697
 
 > pragma must be outside function
 
+## Remarks
+
 A pragma that must be specified at a global level (outside a function body) is within a function.
+
+## Example
 
 The following sample generates C2156:
 

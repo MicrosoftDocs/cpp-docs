@@ -10,7 +10,11 @@ ms.assetid: a1f694a7-fb16-4437-b7f5-a1af6da94bc5
 
 > '##' cannot occur at the beginning of a macro definition
 
+## Remarks
+
 A macro definition began with a token-pasting operator (##).
+
+## Example
 
 The following sample generates C2160:
 

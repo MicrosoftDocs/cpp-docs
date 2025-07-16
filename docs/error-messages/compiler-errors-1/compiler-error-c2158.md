@@ -10,6 +10,8 @@ ms.assetid: 39028899-e95c-4809-8e65-6111118641ee
 
 > 'type' : #pragma make_public directive is currently supported for native non-template types only
 
+## Remarks
+
 The [make_public](../../preprocessor/make-public.md) pragma can only be applied to a native, non-template type.
 
 ## Example

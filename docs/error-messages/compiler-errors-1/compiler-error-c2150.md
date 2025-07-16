@@ -10,6 +10,8 @@ ms.assetid: 21e82a10-c1d4-4c0d-9dc6-c5d92ea42a31
 
 > '*identifier*' : bit field must have type 'int', 'signed int', or 'unsigned int'
 
+## Remarks
+
 The base type for a bit-field is required to be **`int`**, **`signed int`**, or **`unsigned int`**.
 
 ## Example

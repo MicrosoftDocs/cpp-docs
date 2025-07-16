@@ -10,11 +10,15 @@ ms.assetid: 1d8d1456-e031-4965-9240-09a6e33ba81c
 
 > syntax error : missing 'token1' before 'token2'
 
+## Remarks
+
 The compiler expected a specific token (that is, a language element other than white space) and found another token instead.
 
 Check the [C++ Language Reference](../../cpp/cpp-language-reference.md) to determine where code is syntactically incorrect. Because the compiler may report this error after it encounters the line that causes the problem, check several lines of code that precede the error.
 
 C2143 can occur in different situations.
+
+## Examples
 
 It can occur when an operator that can qualify a name (`::`, `->`, and `.`) must be followed by the keyword **`template`**, as in this example:
 

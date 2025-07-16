@@ -10,7 +10,11 @@ ms.assetid: 7a106dab-d79f-41b9-85be-f36e86e4d2ab
 
 > 'identifier' : named bit field cannot have zero width
 
+## Remarks
+
 Bit fields can have zero width only if unnamed.
+
+## Example
 
 The following sample generates C2149:
 
