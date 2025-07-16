@@ -47,7 +47,6 @@ class CMFCToolBar : public CMFCBaseToolBar
 |[`CMFCToolBar::CanBeClosed`](#canbeclosed)|Specifies whether a user can close the toolbar. (Overrides [`CBasePane::CanBeClosed`](../../mfc/reference/cbasepane-class.md#canbeclosed).)|
 |[`CMFCToolBar::CanBeRestored`](#canberestored)|Determines whether the system can restore a toolbar to its original state after customization.|
 |[`CMFCToolBar::CanFocus`](#canfocus)|Specifies whether the pane can receive focus. (Overrides [`CBasePane::CanFocus`](../../mfc/reference/cbasepane-class.md#canfocus).)|
-|[`CMFCToolBar::CanHandleSiblings`](#canhandlesiblings)|Determines whether the toolbar and its sibling are positioned on the same pane.|
 |[`CMFCToolBar::CommandToIndex`](#commandtoindex)|Returns the index of the button in the toolbar with a specified command ID.|
 |[`CMFCToolBar::Create`](#create)|Creates a `CMFCToolBar` object.|
 |[`CMFCToolBar::CreateEx`](#createex)|Creates a `CMFCToolBar` object that uses additional style options, such as large icons.|

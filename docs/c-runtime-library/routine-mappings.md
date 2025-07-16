@@ -127,7 +127,6 @@ For related information, see [Generic-text mappings in tchar.h](../text/generic-
 | `_tcsnicmp` | `_strnicmp` | `_mbsnbicmp` | `_wcsnicmp` |
 | `_tcsnicoll` | `_strnicoll` | `_mbsnbicoll` | `_wcsnicoll` |
 | `_tcsninc` | `_strninc` | `_mbsninc` | `_wcsninc` |
-| `_tcsnccnt` | `_strncnt` | `_mbsnccnt` | `_wcsncnt` |
 | `_tcsnset` | `_strnset` | `_mbsnbset` | `_wcsnset` |
 | `_tcspbrk` | `strpbrk` | `_mbspbrk` | `wcspbrk` |
 | `_tcsspnp` | `_strspnp` | `_mbsspnp` | `_wcsspnp` |
