@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: NMAKE errors and warnings (Uxxxx)"
 title: "NMAKE errors and warnings"
-ms.date: "04/16/2019"
+description: "Learn more about: NMAKE errors and warnings (Uxxxx)"
+ms.date: 04/16/2019
 f1_keywords: ["nmake"]
-ms.assetid: 9dbe2e12-88ca-4df4-b935-17756112bb79
 ---
 # NMAKE errors and warnings (Uxxxx)
 
