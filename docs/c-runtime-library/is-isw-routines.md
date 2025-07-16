@@ -126,7 +126,6 @@ Character has property specified by the `desc` argument. For each valid value of
 | `_LOWER` | `iswlower(c)` |
 | `_ALPHA | _BLANK | _DIGIT | _PUNCT` | `iswprint(c)` |
 | `_PUNCT` | `iswpunct(c)` |
-| `_BLANK` | `iswblank(c)` |
 | `_SPACE` | `iswspace(c)` |
 | `_UPPER` | `iswupper(c)` |
 | `_HEX` | `iswxdigit(c)` |
