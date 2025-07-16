@@ -16,7 +16,7 @@ The base type for a bit-field is required to be **`int`**, **`signed int`**, or 
 
 ## Example
 
-This sample shows how you might encounter C2150, and how you can fix it:
+This example shows how you might encounter C2150, and how you can fix it:
 
 ```cpp
 // C2150.cpp

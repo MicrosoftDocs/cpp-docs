@@ -16,7 +16,7 @@ The function name is not declared before being referenced in the list of functio
 
 ## Example
 
-The following sample generates C2157:
+The following example generates C2157:
 
 ```cpp
 // C2157.cpp

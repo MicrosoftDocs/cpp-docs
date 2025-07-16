@@ -16,7 +16,7 @@ Bit fields can have zero width only if unnamed.
 
 ## Example
 
-The following sample generates C2149:
+The following example generates C2149:
 
 ```cpp
 // C2149.cpp

@@ -16,7 +16,7 @@ A declaration contains more than one storage class.
 
 ## Example
 
-The following sample generates C2159:
+The following example generates C2159:
 
 ```cpp
 // C2159.cpp

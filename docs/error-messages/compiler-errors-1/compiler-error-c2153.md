@@ -15,7 +15,7 @@ Hexadecimal and binary literals must contain at least one digit after the leadin
 
 ## Example
 
-The following sample generates C2153:
+The following example generates C2153:
 
 ```cpp
 // C2153.cpp

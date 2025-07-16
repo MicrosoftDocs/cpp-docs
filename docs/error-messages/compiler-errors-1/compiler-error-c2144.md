@@ -22,7 +22,7 @@ You may also see C2144 if you are trying to do type forwarding. See [Type Forwar
 
 ## Examples
 
-The following sample generates C2144, and shows a way to fix it:
+The following example generates C2144, and shows a way to fix it:
 
 ```cpp
 // C2144.cpp
@@ -35,7 +35,7 @@ REF struct MyStruct0;   // C2144
 REF1 MyStruct1;
 ```
 
-The following sample generates C2144, and shows a way to fix it:
+The following example generates C2144, and shows a way to fix it:
 
 ```cpp
 // C2144_2.cpp

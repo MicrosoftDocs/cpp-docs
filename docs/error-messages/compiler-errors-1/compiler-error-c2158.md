@@ -16,7 +16,7 @@ The [make_public](../../preprocessor/make-public.md) pragma can only be applied 
 
 ## Example
 
-The following sample generates C2158.
+The following example generates C2158.
 
 ```cpp
 // C2158.cpp

@@ -22,7 +22,7 @@ This error may be caused by a typographical error. Error [C2065](../../error-mes
 
 ## Examples
 
-The following sample generates C2146.
+The following example generates C2146.
 
 ```cpp
 // C2146.cpp
@@ -41,7 +41,7 @@ int main() {
 
 This error can also be generated as a result of compiler conformance work that was done for Visual Studio .NET 2003: missing **`typename`** keyword.
 
-The following sample compiles in Visual Studio .NET 2002 but will fail in Visual Studio .NET 2003:
+The following example compiles in Visual Studio .NET 2002 but will fail in Visual Studio .NET 2003:
 
 ```cpp
 // C2146b.cpp
@@ -66,7 +66,7 @@ You will also see this error as a result of compiler conformance work that was d
 
 The use of `T` from the primary template is not allowed in the explicit specialization. For code to be valid in the Visual Studio .NET 2003 and Visual Studio .NET, replace all instances of the template parameter in the specialization with the explicitly specialized type.
 
-The following sample compiles in Visual Studio .NET but will fail in Visual Studio .NET 2003:
+The following example compiles in Visual Studio .NET but will fail in Visual Studio .NET 2003:
 
 ```cpp
 // C2146_c.cpp

@@ -16,7 +16,7 @@ An identifier was used that is now a reserved keyword in the language.
 
 ## Example
 
-The following sample generates C2147:
+The following example generates C2147:
 
 ```cpp
 // C2147.cpp

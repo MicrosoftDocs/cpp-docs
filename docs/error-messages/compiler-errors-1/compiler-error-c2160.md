@@ -16,7 +16,7 @@ A macro definition began with a token-pasting operator (##).
 
 ## Example
 
-The following sample generates C2160:
+The following example generates C2160:
 
 ```cpp
 // C2160.cpp

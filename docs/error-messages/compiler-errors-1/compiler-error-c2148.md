@@ -16,7 +16,7 @@ An array exceeds the limit. Reduce the size of the array.
 
 ## Example
 
-The following sample generates C2148:
+The following example generates C2148:
 
 ```cpp
 // C2148.cpp

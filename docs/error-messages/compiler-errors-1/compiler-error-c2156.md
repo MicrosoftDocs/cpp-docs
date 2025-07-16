@@ -16,7 +16,7 @@ A pragma that must be specified at a global level (outside a function body) is w
 
 ## Example
 
-The following sample generates C2156:
+The following example generates C2156:
 
 ```cpp
 // C2156.cpp

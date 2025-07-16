@@ -16,7 +16,7 @@ An array exceeds the 2GB limit. Reduce the size of the array.
 
 ## Example
 
-The following sample generates C2141.
+The following example generates C2141.
 
 ```cpp
 // C2141.cpp

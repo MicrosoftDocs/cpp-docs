@@ -16,7 +16,7 @@ One declaration of the function contains a variable parameter list. Another decl
 
 ## Example
 
-The following sample generates C2142:
+The following example generates C2142:
 
 ```c
 // C2142.c
