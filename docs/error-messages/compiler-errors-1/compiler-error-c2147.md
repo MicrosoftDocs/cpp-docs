@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2147"
 title: "Compiler Error C2147"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2147"
+ms.date: 11/04/2016
 f1_keywords: ["C2147"]
 helpviewer_keywords: ["C2147"]
-ms.assetid: d1adb3bf-7ece-4815-922c-ad7492fb6670
 ---
 # Compiler Error C2147
 

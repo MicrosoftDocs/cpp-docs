@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2155"
 title: "Compiler Error C2155"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2155"
+ms.date: 11/04/2016
 f1_keywords: ["C2155"]
 helpviewer_keywords: ["C2155"]
-ms.assetid: 54d408af-fc48-4121-9011-5e75c7072e01
 ---
 # Compiler Error C2155
 

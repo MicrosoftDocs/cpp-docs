@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2153"
 description: "Learn more about: Compiler Error C2153"
-ms.date: "01/31/2025"
+ms.date: 01/31/2025
 f1_keywords: ["C2153"]
 helpviewer_keywords: ["C2153"]
 ---

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2158"
 title: "Compiler Error C2158"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2158"
+ms.date: 11/04/2016
 f1_keywords: ["C2158"]
 helpviewer_keywords: ["C2158"]
-ms.assetid: 39028899-e95c-4809-8e65-6111118641ee
 ---
 # Compiler Error C2158
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2142"
 title: "Compiler Error C2142"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2142"
+ms.date: 11/04/2016
 f1_keywords: ["C2142"]
 helpviewer_keywords: ["C2142"]
-ms.assetid: d0dbe10e-0952-49a4-8b33-e82fb7558b19
 ---
 # Compiler Error C2142
 

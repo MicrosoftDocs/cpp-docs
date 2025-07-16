@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2141"
 title: "Compiler Error C2141"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2141"
+ms.date: 11/04/2016
 f1_keywords: ["C2141"]
 helpviewer_keywords: ["C2141"]
-ms.assetid: 10cf770f-0500-4220-ac90-a863b7ea5fe6
 ---
 # Compiler Error C2141
 

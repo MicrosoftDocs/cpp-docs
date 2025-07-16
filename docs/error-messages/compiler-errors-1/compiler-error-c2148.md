@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2148"
 title: "Compiler Error C2148"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2148"
+ms.date: 11/04/2016
 f1_keywords: ["C2148"]
 helpviewer_keywords: ["C2148"]
-ms.assetid: e510c2c9-7b57-4ce8-be03-ba363e2cc5d9
 ---
 # Compiler Error C2148
 

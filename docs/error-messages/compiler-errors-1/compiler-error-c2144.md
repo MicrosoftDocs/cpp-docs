@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2144"
 title: "Compiler Error C2144"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2144"
+ms.date: 11/04/2016
 f1_keywords: ["C2144"]
 helpviewer_keywords: ["C2144"]
-ms.assetid: 49f3959b-324f-4c06-9588-c0ecef5dc5b3
 ---
 # Compiler Error C2144
 

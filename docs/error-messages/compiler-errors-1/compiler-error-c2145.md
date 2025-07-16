@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2145"
 title: "Compiler Error C2145"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2145"
+ms.date: 11/04/2016
 f1_keywords: ["C2145"]
 helpviewer_keywords: ["C2145"]
-ms.assetid: 158e5809-8adb-4195-8ca5-684501defbc8
 ---
 # Compiler Error C2145
 

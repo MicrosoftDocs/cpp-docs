@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2143"
 title: "Compiler Error C2143"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2143"
+ms.date: 11/04/2016
 f1_keywords: ["C2143"]
 helpviewer_keywords: ["C2143"]
-ms.assetid: 1d8d1456-e031-4965-9240-09a6e33ba81c
 ---
 # Compiler Error C2143
 
