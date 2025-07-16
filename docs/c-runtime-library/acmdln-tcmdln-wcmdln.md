@@ -33,4 +33,4 @@ These CRT internal variables store the complete command line. They're exposed in
 
 ## See also
 
-[Global variables](./global-variables.md)
+[Global variables](global-variables.md)
