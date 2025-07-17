@@ -15,7 +15,7 @@ The **Templates** view works like the Build Insights [Functions view](build-insi
 ## Prerequisites
 
 - Visual Studio 2022 version 17.10 or later.
-- The **C++ Build Insights** component must be installed. It's included in either the Desktop development with C++ workload or the Game development with C++ workload. To check if it's installed, follow these steps:
+- The **C++ Build Insights** component must be installed. Either the Desktop development with C++ workload or the Game development with C++ workload includes it. To check if it's installed, follow these steps:
   1. Open the Visual Studio Installer.
   1. Select **Modify** to change your Visual Studio installation.
   1. On the **Individual components** tab, search for and select **C++ Build Insights**, then select **Close** to finish installing the component.
@@ -136,7 +136,7 @@ The Templates view shows two template instantiations of struct S3 taking most (7
 
 ### Understanding Templates view results
 
-When interpreting Templates view results, keep this in mind:
+When interpreting Templates view results, consider the following:
 
 - **Empty view**: If nothing shows up in the **Templates** view, template instantiations don't dominate your build time. That's good news because your templates aren't a build bottleneck.
 - **Duplicate instantiations**: If the same template instantiation appears multiple times across different translation units, different source files are causing the same expensive instantiation. This is often the biggest optimization opportunity.
