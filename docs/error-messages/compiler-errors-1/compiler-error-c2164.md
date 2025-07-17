@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2164"
 title: "Compiler Error C2164"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2164"
+ms.date: 11/04/2016
 f1_keywords: ["C2164"]
 helpviewer_keywords: ["C2164"]
-ms.assetid: 55df5024-68a8-45a8-ae6c-e6dba35318a2
 ---
 # Compiler Error C2164
 

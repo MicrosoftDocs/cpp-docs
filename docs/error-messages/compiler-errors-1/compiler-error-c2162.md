@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2162"
 description: "Learn more about: Compiler Error C2162"
-ms.date: "03/30/2025"
+ms.date: 03/30/2025
 f1_keywords: ["C2162"]
 helpviewer_keywords: ["C2162"]
 ---

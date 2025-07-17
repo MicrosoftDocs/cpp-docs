@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2180"
 title: "Compiler Error C2180"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2180"
+ms.date: 11/04/2016
 f1_keywords: ["C2180"]
 helpviewer_keywords: ["C2180"]
-ms.assetid: ea71b39e-b977-48a7-b7bd-af68ef5e263b
 ---
 # Compiler Error C2180
 

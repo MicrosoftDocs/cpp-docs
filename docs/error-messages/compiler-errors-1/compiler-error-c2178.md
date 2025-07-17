@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2178"
 title: "Compiler Error C2178"
-ms.date: "05/08/2017"
+description: "Learn more about: Compiler Error C2178"
+ms.date: 05/08/2017
 f1_keywords: ["C2178"]
 helpviewer_keywords: ["C2178"]
-ms.assetid: 79a14158-17f3-4221-bd06-9d675c49cef4
 ---
 # Compiler Error C2178
 
