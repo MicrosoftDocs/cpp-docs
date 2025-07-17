@@ -6,7 +6,7 @@ helpviewer_keywords: ["string_view header"]
 ---
 # `<string_view>`
 
-Defines the class template `basic_string_view` and related types and operators. (Requires compiler option [`std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.)
+Defines the class template `basic_string_view` and related types and operators. (Requires compiler option [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.)
 
 ## Syntax
 
@@ -60,7 +60,7 @@ The `<string_view>` operators can compare `string_view` objects to objects of an
 
 - **Namespace:** `std`
 
-- **Compiler Option:** [`std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.
+- **Compiler Option:** [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.
 
 ## See also
 
