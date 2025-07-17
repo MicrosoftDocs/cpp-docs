@@ -10,4 +10,6 @@ ms.assetid: 625e7dc3-ca74-4980-8268-8d5c0245e376
 
 > 'function' : too few actual parameters for intrinsic function
 
+## Remarks
+
 A reference to an `intrinsic` function has too few parameters.

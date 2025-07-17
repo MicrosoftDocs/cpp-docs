@@ -10,7 +10,11 @@ ms.assetid: b108313b-b8cb-4dce-b2ec-f2b31c9cdc87
 
 > 'keyword' : cannot modify pointers to data
 
+## Remarks
+
 The **`__stdcall`**, **`__cdecl`**, or **`__fastcall`** keyword attempts to modify a pointer to data.
+
+## Example
 
 The following sample generates C2165:
 

@@ -10,7 +10,11 @@ ms.assetid: 2a39a880-cddb-4d3e-a572-645a14c4c478
 
 > constant too big
 
+## Remarks
+
 A constant value is too large for the variable type it is assigned.
+
+## Example
 
 The following sample generates C2177:
 

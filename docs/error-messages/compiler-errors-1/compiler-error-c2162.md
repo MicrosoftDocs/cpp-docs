@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2162"]
 
 > expected macro formal parameter
 
+## Remarks
+
 The token following a [stringizing operator (#)](../../preprocessor/stringizing-operator-hash.md) or a [charizing operator (#@)](../../preprocessor/charizing-operator-hash-at.md) is not a formal parameter.
 
 ## Example

@@ -10,7 +10,11 @@ ms.assetid: d6798821-13bb-4e60-924f-85f7bf955387
 
 > '##' cannot occur at the end of a macro definition
 
+## Remarks
+
 A macro definition ended with a token-pasting operator (##).
+
+## Example
 
 The following sample generates C2161:
 

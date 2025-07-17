@@ -10,7 +10,11 @@ ms.assetid: 55df5024-68a8-45a8-ae6c-e6dba35318a2
 
 > 'function' : intrinsic function not declared
 
+## Remarks
+
 An `intrinsic` pragma uses an undeclared function (only occurs with **/Oi**). Or, one of the compiler intrinsics was used without including its header file.
+
+## Example
 
 The following sample generates C2164:
 

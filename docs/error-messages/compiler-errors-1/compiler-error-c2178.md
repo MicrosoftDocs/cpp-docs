@@ -10,6 +10,8 @@ ms.assetid: 79a14158-17f3-4221-bd06-9d675c49cef4
 
 > '*identifier*' cannot be declared with '*specifier*' specifier
 
+## Remarks
+
 A **`mutable`** specifier was used in a declaration, but the specifier is not allowed in this context.
 
 The **`mutable`** specifier can be applied only to names of class data members, and cannot be applied to names declared **`const`** or **`static`**, and cannot be applied to reference members.

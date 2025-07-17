@@ -10,6 +10,8 @@ ms.assetid: a80343b5-ab3f-4413-b6f1-3ce9d7e519e5
 
 > 'operator' : illegal on operands of type 'type'
 
+## Remarks
+
 A unary operator is used with an invalid operand type.
 
 ## Examples
