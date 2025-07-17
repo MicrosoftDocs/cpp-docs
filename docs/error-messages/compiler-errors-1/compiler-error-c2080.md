@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2080"
 title: "Compiler Error C2080"
+description: "Learn more about: Compiler Error C2080"
 ms.date: 08/18/2022
 f1_keywords: ["C2080"]
 helpviewer_keywords: ["C2080"]
@@ -15,7 +15,7 @@ The compiler can only deduce the type for `auto` or `decltype(auto)` if the decl
 
 ## Example
 
-The following sample shows some declarations that cause C2080:
+The following example shows some declarations that cause C2080:
 
 ```cpp
 auto x1(1, 2);           // C2080

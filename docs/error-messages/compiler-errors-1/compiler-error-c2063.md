@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2063"
 title: "Compiler Error C2063"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2063"
+ms.date: 11/04/2016
 f1_keywords: ["C2063"]
 helpviewer_keywords: ["C2063"]
-ms.assetid: 0a90c18f-4029-416a-9128-e8713b53e6f1
 ---
 # Compiler Error C2063
 
-'identifier' : not a function
+> 'identifier' : not a function
+
+## Remarks
 
 The identifier is used as a function but not declared as a function.
 
-The following sample generates C2063:
+## Example
+
+The following example generates C2063:
 
 ```c
 // C2063.c
