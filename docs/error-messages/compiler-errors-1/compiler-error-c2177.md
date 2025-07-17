@@ -16,7 +16,7 @@ A constant value is too large for the variable type it is assigned.
 
 ## Example
 
-The following sample generates C2177:
+The following example generates C2177:
 
 ```cpp
 // C2177.cpp

@@ -16,7 +16,7 @@ A generic type parameter is resolved at runtime. However, an attribute parameter
 
 ## Example
 
-The following sample generates C2179.
+The following example generates C2179.
 
 ```cpp
 // C2179.cpp

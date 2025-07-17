@@ -16,7 +16,7 @@ The **`__stdcall`**, **`__cdecl`**, or **`__fastcall`** keyword attempts to modi
 
 ## Example
 
-The following sample generates C2165:
+The following example generates C2165:
 
 ```cpp
 // C2165.cpp

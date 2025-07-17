@@ -16,7 +16,7 @@ An `intrinsic` pragma uses an undeclared function (only occurs with **/Oi**). Or
 
 ## Example
 
-The following sample generates C2164:
+The following example generates C2164:
 
 ```c
 // C2164.c

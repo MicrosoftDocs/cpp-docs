@@ -16,7 +16,7 @@ The controlling expression in an **`if`**, **`while`**, **`for`**, or **`do`** s
 
 ## Example
 
-The following sample generates C2180:
+The following example generates C2180:
 
 ```c
 // C2180.c
