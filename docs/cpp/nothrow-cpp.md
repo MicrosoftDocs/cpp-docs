@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: nothrow (C++)"
 title: "nothrow (C++)"
-ms.date: "01/03/2018"
+description: "Learn more about: nothrow (C++)"
+ms.date: 01/03/2018
 f1_keywords: ["nothrow_cpp"]
 helpviewer_keywords: ["__declspec keyword [C++], nothrow", "nothrow __declspec keyword"]
-ms.assetid: 0a475139-459c-4ec6-99e8-7ecd0d7f44a3
 ---
 # `nothrow` (C++)
 
