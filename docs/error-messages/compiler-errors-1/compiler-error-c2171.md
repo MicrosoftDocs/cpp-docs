@@ -8,7 +8,7 @@ ms.assetid: a80343b5-ab3f-4413-b6f1-3ce9d7e519e5
 ---
 # Compiler Error C2171
 
-'operator' : illegal on operands of type 'type'
+> 'operator' : illegal on operands of type 'type'
 
 A unary operator is used with an invalid operand type.
 

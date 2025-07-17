@@ -8,7 +8,7 @@ ms.assetid: 2a39a880-cddb-4d3e-a572-645a14c4c478
 ---
 # Compiler Error C2177
 
-constant too big
+> constant too big
 
 A constant value is too large for the variable type it is assigned.
 

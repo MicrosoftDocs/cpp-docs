@@ -8,6 +8,6 @@ ms.assetid: 97f700bd-1044-46f5-b276-3d7570ee7708
 ---
 # Compiler Error C2169
 
-'function' : intrinsic function, cannot be defined
+> 'function' : intrinsic function, cannot be defined
 
 A function definition appears for a function already declared `intrinsic`.

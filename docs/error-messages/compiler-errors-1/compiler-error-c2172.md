@@ -8,6 +8,6 @@ ms.assetid: 31183ea7-858d-4273-932a-d865af7059b1
 ---
 # Compiler Error C2172
 
-'function' : actual parameter is not a pointer : parameter number
+> 'function' : actual parameter is not a pointer : parameter number
 
 Parameter `number` is not a pointer. The function expects a pointer.

@@ -8,7 +8,7 @@ ms.assetid: f929bfc6-3964-4e54-87d6-7529b9b6c0b9
 ---
 # Compiler Error C2179
 
-'type' : an attribute argument cannot use type parameters
+> 'type' : an attribute argument cannot use type parameters
 
 A generic type parameter is resolved at runtime. However, an attribute parameter must be resolved at compile time. Therefore, you cannot use a generic type parameter as an argument to an attribute.
 

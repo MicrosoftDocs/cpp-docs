@@ -8,7 +8,7 @@ ms.assetid: b108313b-b8cb-4dce-b2ec-f2b31c9cdc87
 ---
 # Compiler Error C2165
 
-'keyword' : cannot modify pointers to data
+> 'keyword' : cannot modify pointers to data
 
 The **`__stdcall`**, **`__cdecl`**, or **`__fastcall`** keyword attempts to modify a pointer to data.
 

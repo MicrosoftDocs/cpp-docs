@@ -8,7 +8,7 @@ ms.assetid: d5c663f0-2459-4e11-a8bf-a52b62f3c71d
 ---
 # Compiler Error C2170
 
-'identifier' : not declared as a function, cannot be intrinsic
+> 'identifier' : not declared as a function, cannot be intrinsic
 
 ### To fix by checking the following possible causes
 

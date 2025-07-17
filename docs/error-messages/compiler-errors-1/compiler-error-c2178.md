@@ -8,7 +8,7 @@ ms.assetid: 79a14158-17f3-4221-bd06-9d675c49cef4
 ---
 # Compiler Error C2178
 
-'*identifier*' cannot be declared with '*specifier*' specifier
+> '*identifier*' cannot be declared with '*specifier*' specifier
 
 A **`mutable`** specifier was used in a declaration, but the specifier is not allowed in this context.
 
