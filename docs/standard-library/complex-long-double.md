@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: complex<long double>"
 title: "complex<long double>"
-ms.date: "11/04/2016"
+description: "Learn more about: complex<long double>"
+ms.date: 11/04/2016
 f1_keywords: ["std::complex<long double>", "complex<long double>", "std.complex<long double>"]
 helpviewer_keywords: ["complex<long double> function"]
-ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
 ---
 # `complex<long double>`
 
@@ -29,13 +28,13 @@ complex(
 
 ### Parameters
 
-*_RealVal*\
+*`_RealVal`*\
 The value of type **`long double`** for the real part of the complex number being constructed.
 
-*_ImagVal*\
+*`_ImagVal`*\
 The value of type **`long double`** for the imaginary part of the complex number being constructed.
 
-*complexNum*\
+*`complexNum`*\
 The complex number of type **`double`** or of type **`float`** whose real and imaginary parts are used to initialize a complex number of type **`long double`** being constructed.
 
 ## Return Value
@@ -46,7 +45,7 @@ A complex number of type **`long double`**.
 
 The explicit specialization of the class template `complex` to a complex class of type **`long double`** differs from the class template only in the constructors it defines. The conversion from **`long double`** to **`float`** is allowed to be implicit, but the conversion from **`double`** to **`long double`** is required to be **`explicit`**. The use of **`explicit`** rules out the initiation with type conversion using assignment syntax.
 
-For more information on the class template `complex` and its members, see [complex Class](../standard-library/complex-class.md).
+For more information on the class template `complex` and its members, see [`complex` Class](complex-class.md).
 
 **Microsoft-specific**: The **`long double`** and **`double`** types have the same representation, but are distinct types. For more information, see [Built-in types](../cpp/fundamental-types-cpp.md).
 
@@ -108,11 +107,11 @@ arg( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## Requirements
 
-**Header**: \<complex>
+**Header**: `<complex>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[complex Class](../standard-library/complex-class.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`complex` Class](complex-class.md)\
+[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)
