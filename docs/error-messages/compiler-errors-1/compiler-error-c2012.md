@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2012"
 title: "Compiler Error C2012"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2012"
+ms.date: 11/04/2016
 f1_keywords: ["C2012"]
 helpviewer_keywords: ["C2012"]
-ms.assetid: 9f0d8162-c0b3-4234-a41f-836fdb75c84e
 ---
 # Compiler Error C2012
 
-missing name following '<'
+> missing name following '<'
+
+## Remarks
 
 An `#include` directive lacks the required filename.
 
-The following sample generates C2012:
+## Example
+
+The following example generates C2012:
 
 ```cpp
 // C2012.cpp
