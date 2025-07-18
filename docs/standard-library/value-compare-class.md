@@ -14,7 +14,7 @@ Provides a function object that can compare the elements of a hash_map by compar
 
 ```cpp
 class value_compare
-    : std::public binary_function<value_type, value_type, bool>
+    : public binary_function<value_type, value_type, bool>
 {
 public:
     bool operator()(
