@@ -21,7 +21,7 @@ The **Templates** view works like the Build Insights [Functions view](build-insi
   1. Select **Modify** to change your Visual Studio installation.
   1. On the **Individual components** tab, search for and select **C++ Build Insights**, then select **Close** to finish installing the component.
   :::image type="content" source="./media/installer-build-insights.png" alt-text="Screenshot of the Visual Studio Installer. The search box contains C++ Build Insights. The item C++ Build Insights is visible and selected.":::
-  
+
 ## Overview
 
 Build Insights, integrated into Visual Studio, helps you optimize your build times--especially for large projects like AAA games. Build Insights provides analytics such as the **Templates** view, which shows the time it takes to instantiate each template and which template instantiations add the most to your build time.
@@ -36,55 +36,55 @@ In this article, you create a project that shows how template instantiation affe
 1. Create a header file named `Templates.h`, then replace its contents with the following code:
 
     ```cpp
-    #pragma once 
-    #include <utility>  
-    #include <vector>  
-    
-    template<size_t> struct S1 {}; 
-    template<int n> using type = std::vector<S1<n>>; 
-    
-    template<size_t...> struct S2 {}; 
-    
-    template<typename> struct S3 {}; 
-    
-    template<size_t... n> 
+    #pragma once
+    #include <utility>
+    #include <vector>
+
+    template<size_t> struct S1 {};
+    template<int n> using type = std::vector<S1<n>>;
+
+    template<size_t...> struct S2 {};
+
+    template<typename> struct S3 {};
+
+    template<size_t... n>
     struct S3<std::index_sequence<n...>>
-    { 
-        using type = S2<sizeof(type<n>)...>; 
-    }; 
-    
+    {
+        using type = S2<sizeof(type<n>)...>;
+    };
+
     inline size_t LargeValue()
-    { 
-        return sizeof(S3<std::make_index_sequence<1000>>); 
-    }; 
-    
+    {
+        return sizeof(S3<std::make_index_sequence<1000>>);
+    };
+
     inline size_t SmallValue()
-    { 
-        return sizeof(S1<5>); 
-    } 
+    {
+        return sizeof(S1<5>);
+    }
     ```
 
 1. Create a source file named `LargeValue.cpp`, then replace its contents with the following code:
 
     ```cpp
-    #include "Templates.h" 
+    #include "Templates.h"
 
     size_t GetLargeValue()
-    { 
-        return LargeValue(); 
-    } 
+    {
+        return LargeValue();
+    }
     ```
 
 1. Replace the contents of the `TemplateAnalysis.cpp` file with the following code:
 
     ```cpp
-    #include "Templates.h" 
+    #include "Templates.h"
 
     extern size_t GetLargeValue();
 
     size_t GetSmallValue()
-    { 
-        return SmallValue(); 
+    {
+        return SmallValue();
     }
 
     int main()
@@ -107,7 +107,7 @@ Template instantiation time collection is off by default to minimize build overh
 
 :::image type="content" source="./media/tools-options-build-insights.png" alt-text="Screenshot of the project property pages dialog. The settings are open to Build Insights > Trace Collection. The Collect Template Instantiation checkbox is selected.":::
 
-> [!Note] 
+> [!Note]
 > Collecting template instantiation times increases build time due to the extra data collected. Only enable it when you want to analyze template instantiation bottlenecks.
 
 ## Run Build Insights to get template instantiation data
