@@ -15,7 +15,7 @@ An [`alloc_text`](../../preprocessor/alloc-text.md) pragma uses a function name 
 
 ## Example
 
-The following sample generates C2200:
+The following example generates C2200:
 
 ```cpp
 // C2200.cpp

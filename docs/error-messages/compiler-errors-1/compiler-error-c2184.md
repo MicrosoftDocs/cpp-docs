@@ -16,7 +16,7 @@ A type was used in an [__except](../../c-language/try-except-statement-c.md) sta
 
 ## Example
 
-The following sample generates C2184:
+The following example generates C2184:
 
 ```cpp
 // C2184.cpp

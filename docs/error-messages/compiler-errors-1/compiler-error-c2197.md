@@ -16,7 +16,7 @@ The compiler detected too many parameters for a call to the function, or an inco
 
 ## Example
 
-The following sample generates C2197:
+The following example generates C2197:
 
 ```c
 // C2197.c

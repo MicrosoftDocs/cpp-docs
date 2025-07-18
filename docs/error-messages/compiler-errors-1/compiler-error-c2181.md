@@ -16,7 +16,7 @@ Each **`else`** must have a matching **`if`**.
 
 ## Example
 
-The following sample generates C2181:
+The following example generates C2181:
 
 ```cpp
 // C2181.cpp

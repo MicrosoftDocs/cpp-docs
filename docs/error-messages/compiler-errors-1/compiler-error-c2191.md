@@ -16,7 +16,7 @@ A C function was declared a second time with a longer parameter list. C does not
 
 ## Example
 
-The following sample generates C2191:
+The following example generates C2191:
 
 ```c
 // C2191.c

@@ -16,7 +16,7 @@ The `data_seg` pragma uses a segment name used with `code_seg`.
 
 ## Example
 
-The following sample generates C2194:
+The following example generates C2194:
 
 ```cpp
 // C2194.cpp

@@ -16,7 +16,7 @@ A variable is declared type **`void`**.
 
 ## Example
 
-The following sample generates C2182:
+The following example generates C2182:
 
 ```cpp
 // C2182.cpp

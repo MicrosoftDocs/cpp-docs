@@ -16,7 +16,7 @@ A switch statement uses the same case value more than once.
 
 ## Example
 
-The following sample generates C2196:
+The following example generates C2196:
 
 ```cpp
 // C2196.cpp

@@ -16,7 +16,7 @@ A C function was declared a second time with a shorter parameter list. C does no
 
 ## Example
 
-The following sample generates C2190:
+The following example generates C2190:
 
 ```c
 // C2190.c

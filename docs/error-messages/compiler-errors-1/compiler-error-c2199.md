@@ -16,7 +16,7 @@ The specified context caused a syntax error. There may be incorrect declaration 
 
 ## Example
 
-The following sample generates C2199:
+The following example generates C2199:
 
 ```cpp
 // C2199.cpp

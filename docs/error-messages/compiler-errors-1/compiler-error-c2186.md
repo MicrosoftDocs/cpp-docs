@@ -16,7 +16,7 @@ The operator has a **`void`** operand.
 
 ## Example
 
-The following sample generates C2186:
+The following example generates C2186:
 
 ```cpp
 // C2186.cpp

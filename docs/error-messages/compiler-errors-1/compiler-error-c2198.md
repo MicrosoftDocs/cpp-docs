@@ -16,7 +16,7 @@ The compiler found too few parameters for a call to the function, or an incorrec
 
 ## Example
 
-The following sample generates C2198:
+The following example generates C2198:
 
 ```c
 // C2198.c
