@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: value_compare Class"
 title: "value_compare Class"
-ms.date: "11/04/2016"
+description: "Learn more about: value_compare Class"
+ms.date: 11/04/2016
 f1_keywords: ["hash_map/std::value_compare"]
 helpviewer_keywords: ["value_compare class"]
-ms.assetid: c306c5b9-3505-4357-aa6b-216451b951ed
 ---
 # `value_compare` Class
 
