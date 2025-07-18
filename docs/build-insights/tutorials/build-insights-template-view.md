@@ -129,7 +129,7 @@ The **Templates** view lists the template instantiations that contributed signif
 - **Instantiation File Name** shows where the template is defined.
 
 :::image type="complex" source="./media/templates-view-before-fix.png" alt-text="Screenshot of the Build Insights Templates view showing expensive template instantiations." lightbox="./media/templates-view-before-fix.png":::
-The Templates view shows two template instantiations of struct S3 taking most (79.448 percent) of the build time. The Translation Unit column shows that both LargeValue.cpp and TemplateAnalysis.cpp are affected. The build time is 4.066 seconds.
+The Templates view shows two template instantiations of struct S3 taking most (79.448 percent) of the build time. The Translation Unit column shows that both LargeValue.cpp and TemplateAnalysis.cpp are affected. The build time is 4.966 seconds.
 :::image-end:::
 
 - Sort by **Time** to find the templates that take the longest to instantiate.
