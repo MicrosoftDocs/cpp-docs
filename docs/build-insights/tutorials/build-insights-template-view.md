@@ -1,9 +1,10 @@
 ---
 title: "Troubleshoot template instantiation impact on build time"
 description: "Tutorial for how to use Build Insights template view to analyze and optimize the impact of template instantiations on build time in your C++ projects."
-ms.date: 07/14/2025
+ms.date: 07/17/2025
 helpviewer_keywords: ["C++ Build Insights", "template instantiation analysis", "build time analysis"]
 ms.topic: troubleshooting-general
+ai-usage: ai-assisted
 ---
 
 # Troubleshoot template instantiation impact on build time
