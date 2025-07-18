@@ -8,7 +8,7 @@ ms.assetid: df6e631c-0062-4844-9088-4cc7a0ff879f
 ---
 # Compiler Error C2194
 
-'identifier' : is a text segment
+> 'identifier' : is a text segment
 
 The `data_seg` pragma uses a segment name used with `code_seg`.
 

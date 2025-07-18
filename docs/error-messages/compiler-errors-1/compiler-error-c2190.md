@@ -8,7 +8,7 @@ ms.assetid: 34e15f85-d979-4948-80fc-46c414508a70
 ---
 # Compiler Error C2190
 
-first parameter list longer than second
+> first parameter list longer than second
 
 A C function was declared a second time with a shorter parameter list. C does not support overloaded functions.
 

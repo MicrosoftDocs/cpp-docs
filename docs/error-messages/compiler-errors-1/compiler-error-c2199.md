@@ -8,7 +8,7 @@ ms.assetid: 6a92a1b7-7906-49e6-a31f-e8bffbc7706a
 ---
 # Compiler Error C2199
 
-syntax error : found 'identifier (' at global scope (was a declaration intended?)
+> syntax error : found 'identifier (' at global scope (was a declaration intended?)
 
 The specified context caused a syntax error. There may be incorrect declaration syntax.
 

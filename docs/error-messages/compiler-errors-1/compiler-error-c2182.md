@@ -8,7 +8,7 @@ ms.assetid: dfd8d47d-9606-496e-bd96-4bf41ba1f857
 ---
 # Compiler Error C2182
 
-'identifier' : illegal use of type 'void'
+> 'identifier' : illegal use of type 'void'
 
 A variable is declared type **`void`**.
 

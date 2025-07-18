@@ -8,7 +8,7 @@ ms.assetid: 284bfb7e-ab85-4fcb-9864-1ddf7f6c94ae
 ---
 # Compiler Error C2186
 
-'operator' : illegal operand of type 'void'
+> 'operator' : illegal operand of type 'void'
 
 The operator has a **`void`** operand.
 

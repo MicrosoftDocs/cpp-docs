@@ -8,6 +8,6 @@ ms.assetid: 74bc9f64-7b4c-4735-ba13-67c43f8c47db
 ---
 # Compiler Error C2185
 
-'identifier' : illegal based allocation
+> 'identifier' : illegal based allocation
 
 A register variable or automatic (local) variable is declared **`__based`**. Only global variables can be declared **`__based`**.

@@ -8,7 +8,7 @@ ms.assetid: 9f9f035c-9c51-4173-a8ea-c6f907fc5c63
 ---
 # Compiler Error C2195
 
-'identifier' : is a data segment
+> 'identifier' : is a data segment
 
 The `code_seg` pragma uses a segment name used with the `data_seg` pragma.
 

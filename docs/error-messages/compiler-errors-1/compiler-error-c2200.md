@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2200"]
 ---
 # Compiler Error C2200
 
-'function': function has already been defined
+> 'function': function has already been defined
 
 An [`alloc_text`](../../preprocessor/alloc-text.md) pragma uses a function name already defined. Ensure the `alloc_text` pragma appears after the function declaration but before its definition.
 

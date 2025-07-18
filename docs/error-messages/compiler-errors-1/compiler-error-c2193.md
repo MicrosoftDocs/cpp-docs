@@ -8,7 +8,7 @@ ms.assetid: 9813e853-d581-4f51-bb75-4e242298a844
 ---
 # Compiler Error C2193
 
-'identifier' : already in a segment
+> 'identifier' : already in a segment
 
 A function was placed in two different segments using `alloc_text` and `code_seg` pragmas.
 

@@ -8,7 +8,7 @@ ms.assetid: 051b8350-e5de-4f51-ab6e-96d32366bcef
 ---
 # Compiler Error C2191
 
-second parameter list longer than first
+> second parameter list longer than first
 
 A C function was declared a second time with a longer parameter list. C does not support overloaded functions.
 

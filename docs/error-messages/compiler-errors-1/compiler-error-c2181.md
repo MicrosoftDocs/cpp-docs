@@ -8,7 +8,7 @@ ms.assetid: d52b2fe4-566a-40a9-b8e2-8dce1f287668
 ---
 # Compiler Error C2181
 
-illegal else without matching if
+> illegal else without matching if
 
 Each **`else`** must have a matching **`if`**.
 
