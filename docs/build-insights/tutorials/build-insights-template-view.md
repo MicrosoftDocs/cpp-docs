@@ -108,7 +108,7 @@ Template instantiation time collection is off by default to minimize build overh
 
 :::image type="content" source="./media/tools-options-build-insights.png" alt-text="Screenshot of the project property pages dialog. The settings are open to Build Insights > Trace Collection. The Collect Template Instantiation checkbox is selected.":::
 
-> [!Note]
+> [!NOTE]
 > Collecting template instantiation times increases build time due to the extra data collected. Only enable it when you want to analyze template instantiation bottlenecks.
 
 ## Run Build Insights to get template instantiation data
