@@ -1,17 +1,21 @@
 ---
 title: "Compiler Error C2153"
 description: "Learn more about: Compiler Error C2153"
-ms.date: "01/31/2025"
+ms.date: 01/31/2025
 f1_keywords: ["C2153"]
 helpviewer_keywords: ["C2153"]
 ---
 # Compiler Error C2153
 
-integer literals must have at least one digit
+> integer literals must have at least one digit
+
+## Remarks
 
 Hexadecimal and binary literals must contain at least one digit after the leading sequence (`0x`, `0X`, `0b`, or `0B`), otherwise the trailing character may be incorrectly interpreted as a suffix or literal operator. See [Integer literals](../../cpp/numeric-boolean-and-pointer-literals-cpp.md#integer-literals) for more information.
 
-The following sample generates C2153:
+## Example
+
+The following example generates C2153:
 
 ```cpp
 // C2153.cpp

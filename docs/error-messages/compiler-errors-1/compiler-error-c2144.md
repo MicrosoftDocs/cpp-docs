@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2144"
 title: "Compiler Error C2144"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2144"
+ms.date: 11/04/2016
 f1_keywords: ["C2144"]
 helpviewer_keywords: ["C2144"]
-ms.assetid: 49f3959b-324f-4c06-9588-c0ecef5dc5b3
 ---
 # Compiler Error C2144
 
 > syntax error : '*type*' should be preceded by '*token*'
+
+## Remarks
 
 The compiler expected *token* and found *type* instead.
 
@@ -20,7 +21,7 @@ You may also see C2144 if you are trying to do type forwarding. See [Type Forwar
 
 ## Examples
 
-The following sample generates C2144, and shows a way to fix it:
+The following example generates C2144, and shows a way to fix it:
 
 ```cpp
 // C2144.cpp
@@ -33,7 +34,7 @@ REF struct MyStruct0;   // C2144
 REF1 MyStruct1;
 ```
 
-The following sample generates C2144, and shows a way to fix it:
+The following example generates C2144, and shows a way to fix it:
 
 ```cpp
 // C2144_2.cpp

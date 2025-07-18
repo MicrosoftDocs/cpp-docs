@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Fatal Error C1308"
 title: "Fatal Error C1308"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1308"
+ms.date: 11/04/2016
 f1_keywords: ["C1308"]
 helpviewer_keywords: ["C1308"]
-ms.assetid: 46177997-069e-433a-8e20-93c846d78ffd
 ---
 # Fatal Error C1308
 
-linking assemblies is not supported
+> linking assemblies is not supported
+
+## Remarks
 
 A .netmodule is allowed as input to the linker, but an assembly is not. This error can be generated when an attempt is made to link an assembly compiled with `/clr:safe`.
 
 For more information, see [.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md).
 
-The following sample generates C1308:
+## Example
+
+The following example generates C1308:
 
 ```cpp
 // C1308.cpp

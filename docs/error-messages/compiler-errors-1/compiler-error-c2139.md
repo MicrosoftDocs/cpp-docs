@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2139"
 title: "Compiler Error C2139"
+description: "Learn more about: Compiler Error C2139"
 ms.date: 05/03/2021
 f1_keywords: ["C2139"]
 helpviewer_keywords: ["C2139"]
@@ -9,15 +9,15 @@ helpviewer_keywords: ["C2139"]
 
 > '*type*' : an undefined class is not allowed as an argument to compiler intrinsic type trait '*trait*'
 
-An invalid argument was passed to a type trait.
-
 ## Remarks
+
+An invalid argument was passed to a type trait.
 
 For more information, see [Compiler Support for Type Traits](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).
 
 ## Example
 
-The following sample generates C2139.
+The following example generates C2139.
 
 ```cpp
 // C2139.cpp

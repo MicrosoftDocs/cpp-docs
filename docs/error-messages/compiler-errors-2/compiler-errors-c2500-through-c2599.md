@@ -71,7 +71,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2553](compiler-error-C2553.md)|'*type* *derived_class*::*function*': overriding virtual function return type differs from '*type* *base_class*::*function*'|
 |Compiler error C2554|'*variable*': 'constinit' only allowed on a variable declaration with static or thread storage duration|
 |[Compiler error C2555](compiler-error-C2555.md)|'*derived_class*::*function*': overriding virtual function return type differs and is not covariant from '*base_class*::*function*'|
-|[Compiler error C2556](compiler-error-C2556.md)|'*type1* *class*::*function*': overloaded function differs only by return type from '*type2* *class*::*function*'|
+|[Compiler error C2556](compiler-error-C2556.md)|'*function1*': overloaded function differs only by return type from '*function2*'|
 |[Compiler error C2557](compiler-error-C2557.md)|'*identifier*': private and protected members cannot be initialized without a constructor|
 |[Compiler error C2558](compiler-error-C2558.md)|class '*class*': no copy constructor available or copy constructor is declared 'explicit'|
 |Compiler error C2559|'*identifier*': cannot overload a member function without ref-qualifier with a member function with ref-qualifier|
