@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2177"
 title: "Compiler Error C2177"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2177"
+ms.date: 11/04/2016
 f1_keywords: ["C2177"]
 helpviewer_keywords: ["C2177"]
-ms.assetid: 2a39a880-cddb-4d3e-a572-645a14c4c478
 ---
 # Compiler Error C2177
 
-constant too big
+> constant too big
+
+## Remarks
 
 A constant value is too large for the variable type it is assigned.
 
-The following sample generates C2177:
+## Example
+
+The following example generates C2177:
 
 ```cpp
 // C2177.cpp
