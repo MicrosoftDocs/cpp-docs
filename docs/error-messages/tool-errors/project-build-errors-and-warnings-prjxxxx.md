@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Project build errors and warnings (PRJxxxx)"
 title: "Project build errors and warnings"
-ms.date: "04/16/2019"
-ms.assetid: 79d223ed-986a-4536-8299-aec8356b449c
+description: "Learn more about: Project build errors and warnings (PRJxxxx)"
+ms.date: 04/16/2019
 ---
 # Project build errors and warnings (PRJxxxx)
 
