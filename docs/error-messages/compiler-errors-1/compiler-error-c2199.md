@@ -10,7 +10,11 @@ ms.assetid: 6a92a1b7-7906-49e6-a31f-e8bffbc7706a
 
 > syntax error : found 'identifier (' at global scope (was a declaration intended?)
 
+## Remarks
+
 The specified context caused a syntax error. There may be incorrect declaration syntax.
+
+## Example
 
 The following sample generates C2199:
 

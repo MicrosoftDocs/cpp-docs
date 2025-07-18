@@ -10,4 +10,6 @@ ms.assetid: 03d2d010-a276-4ac3-820c-159abd8b1222
 
 > syntax error: translation unit is empty
 
+## Remarks
+
 Preprocessing produced an empty source file.

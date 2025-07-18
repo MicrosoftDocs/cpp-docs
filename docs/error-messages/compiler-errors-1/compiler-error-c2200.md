@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2200"]
 
 > 'function': function has already been defined
 
+## Remarks
+
 An [`alloc_text`](../../preprocessor/alloc-text.md) pragma uses a function name already defined. Ensure the `alloc_text` pragma appears after the function declaration but before its definition.
+
+## Example
 
 The following sample generates C2200:
 

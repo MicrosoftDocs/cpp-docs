@@ -10,7 +10,11 @@ ms.assetid: a147197e-e72d-4620-939b-f9e08d7c7c12
 
 > parameter 'number' declaration different
 
+## Remarks
+
 A C function was declared a second time with a different parameter list. C does not support overloaded functions.
+
+## Example
 
 The following sample generates C2192:
 

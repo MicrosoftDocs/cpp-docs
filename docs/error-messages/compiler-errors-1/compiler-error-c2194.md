@@ -10,7 +10,11 @@ ms.assetid: df6e631c-0062-4844-9088-4cc7a0ff879f
 
 > 'identifier' : is a text segment
 
+## Remarks
+
 The `data_seg` pragma uses a segment name used with `code_seg`.
+
+## Example
 
 The following sample generates C2194:
 

@@ -10,7 +10,11 @@ ms.assetid: 80fc8bff-7d76-4bde-94d2-01d84bb6824a
 
 > 'type' : illegal type for __except expression, must be an integral
 
+## Remarks
+
 A type was used in an [__except](../../c-language/try-except-statement-c.md) statement, but the type is not allowed.
+
+## Example
 
 The following sample generates C2184:
 

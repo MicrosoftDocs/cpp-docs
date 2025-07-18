@@ -10,7 +10,11 @@ ms.assetid: 6dd5a6ec-bc80-41b9-a4ac-46f80eaca42d
 
 > 'function' : too many arguments for call
 
+## Remarks
+
 The compiler detected too many parameters for a call to the function, or an incorrect function declaration.
+
+## Example
 
 The following sample generates C2197:
 

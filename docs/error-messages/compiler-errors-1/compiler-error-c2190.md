@@ -10,7 +10,11 @@ ms.assetid: 34e15f85-d979-4948-80fc-46c414508a70
 
 > first parameter list longer than second
 
+## Remarks
+
 A C function was declared a second time with a shorter parameter list. C does not support overloaded functions.
+
+## Example
 
 The following sample generates C2190:
 

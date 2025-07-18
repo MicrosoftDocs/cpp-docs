@@ -10,7 +10,11 @@ ms.assetid: 638a845c-9d7f-4115-a9aa-d72455605668
 
 > 'function' : too few arguments for call
 
+## Remarks
+
 The compiler found too few parameters for a call to the function, or an incorrect function declaration.
+
+## Example
 
 The following sample generates C2198:
 

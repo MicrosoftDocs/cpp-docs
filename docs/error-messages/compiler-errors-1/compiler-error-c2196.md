@@ -10,7 +10,11 @@ ms.assetid: fd2f6a58-48ce-4e58-96f8-e37720feb8e7
 
 > case value 'value' already used.
 
+## Remarks
+
 A switch statement uses the same case value more than once.
+
+## Example
 
 The following sample generates C2196:
 
