@@ -1,18 +1,18 @@
 ---
-title: "Troubleshoot function inlining on build time"
+title: "Troubleshoot function inlining impact on build time"
 description: "Tutorial for how to use Build Insights function view to troubleshoot the impact of function inlining on build time in your C++ projects."
 ms.date: 5/30/2024
 helpviewer_keywords: ["C++ Build Insights", "inline function analysis", "build time analysis", "__forceinline analysis", "inlines analysis"]
 ms.topic: troubleshooting-general
 ---
-# Troubleshoot function inlining on build time
+# Troubleshoot function inlining impact on build time
 
 Use Build Insights **Functions** view to troubleshoot the impact of function inlining on build time in your C++ projects.
 
 ## Prerequisites
 
 - Visual Studio 2022 17.8 or greater.
-- C++ Build insights is enabled by default if you install either the Desktop development with C++ workload or the Game development with C++ workload.
+- C++ Build Insights is enabled by default if you install either the Desktop development with C++ workload or the Game development with C++ workload.
 
 :::image type="complex" source="./media/installer-desktop-cpp-build-insights.png" alt-text="Screenshot of the Visual Studio Installer with the Desktop development with C++ workload selected.":::
 The list of installed components is shown. C++ Build Insights is highlighted and is selected which means it's installed.
@@ -61,7 +61,7 @@ When the build finishes, an Event Trace Log (ETL) file opens. It's saved in the 
 
 ## Function view
 
-In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to generate the code for each function. If the amount of code generated for a function is negligible, it won't appear in the list to avoid degrading build event collection performance.
+In the window for the ETL file, choose the **Functions** tab. It shows the functions that were compiled and the time it took to generate the code for each function. If the amount of code generated for a function is negligible, it doesn't appear in the list to avoid degrading build event collection performance.
 
 :::image type="complex" source="./media/functions-view-before-fix.png" alt-text="Screenshot of the Build Insights Functions view file.":::
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.
@@ -83,7 +83,7 @@ In this example, the `performPhysicsCalculations` function is taking the most ti
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.
 :::image-end:::
 
-Investigating further, by selecting the chevron before that function, and then sorting the **Forceinline Size** column from highest to lowest, we see the biggest contributors to the problem.
+By selecting the chevron before that function, and then sorting the **Forceinline Size** column from highest to lowest, we see the biggest contributors to the problem.
 
 :::image type="complex" source="./media/functions-view-expanded.png" alt-text="Screenshot of the Build Insights Functions view with an expanded function.":::
 performPhysicsCalculations() is expanded and shows a long list of functions that were inlined inside it. There are multiple instances of functions such as complexOperation(), recursiveHelper(), and sin() shown. The Forceinline Size column shows that complexOperation() is the largest inlined function at 315 instructions. recursiveHelper() has 119 instructions. Sin() has 75 instructions, but there are many more instances of it than the other functions.
@@ -106,7 +106,7 @@ static __forceinline T factorial(int n)
 }
 ```
 
-Perhaps the overall cost of calling this function is insignificant compared to the cost of the function itself. Making a function inline is most beneficial when the time it takes to call the function (pushing arguments on the stack, jumping to the function, popping return arguments, and returning from the function) is roughly similar to the time it takes to execute the function, and when the function is called a lot. When that's not the case, there may be diminishing returns on making it inline. We can try removing the `__forceinline` directive from it to see if it helps the build time. The code for `power`, `sin()` and `cos()` is similar in that the code consists of a loop that will execute many times. We can try removing the `__forceinline` directive from those functions as well.
+Perhaps the overall cost of calling this function is insignificant compared to the cost of the function itself. Making a function inline is most beneficial when the time it takes to call the function (pushing arguments on the stack, jumping to the function, popping return arguments, and returning from the function) is roughly similar to the time it takes to execute the function, and when the function is called a lot. When that's not the case, there may be diminishing returns on making it inline. We can try removing the `__forceinline` directive from it to see if it helps the build time. The code for `power`, `sin()`, and `cos()` is similar in that the code consists of a loop that executes many times. We can try removing the `__forceinline` directive from those functions as well.
 
 We rerun Build Insights from the main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project, as before, and not for just the few files may be dirty right now.
 
@@ -128,8 +128,8 @@ Double-click, right-click, or press **Enter** while on a file in the **Functions
 
 ## Tips
 
-- You can **File** > **Save As** the ETL file to a more permanent location to keep a record of the build time. You can then compare it to future builds to see if your changes are improving build time.
-- If you inadvertently close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
+- Use **File** > **Save As** to save the ETL file to a more permanent location to keep a record of the build time information. You can then compare it to future builds to see how your changes are improving things.
+- If you close the Build Insights window, reopen it by finding the `<dateandtime>.etl` file in your temporary folder. The `TEMP` Windows environment variable provides the path of your temporary files folder.
 - To dig into the Build Insights data with Windows Performance Analyzer (WPA), click the **Open in WPA** button in the bottom right of the ETL window.
 - Drag columns to change the order of the columns. For instance, you may prefer moving the **Time** column to be the first column. You can hide columns by right-clicking on the column header and deselecting the columns you don't want to see.
 - The **Functions** view provides a filter box to find a function that you're interested in. It does partial matches on the name you provide.
