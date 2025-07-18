@@ -37,6 +37,7 @@ In this article, you create a project that shows how template instantiation affe
 
     ```cpp
     #pragma once
+
     #include <utility>
     #include <vector>
 
@@ -56,7 +57,7 @@ In this article, you create a project that shows how template instantiation affe
     inline size_t LargeValue()
     {
         return sizeof(S3<std::make_index_sequence<1000>>);
-    };
+    }
 
     inline size_t SmallValue()
     {
@@ -156,7 +157,7 @@ From the **Specialization Name** column, the expensive instantiation is `S3<std:
 inline size_t LargeValue()
 {
     return sizeof(S3<std::make_index_sequence<1000>>);
-};
+}
 ```
 
 There are three main ways to decrease the cost of template instantiations.
