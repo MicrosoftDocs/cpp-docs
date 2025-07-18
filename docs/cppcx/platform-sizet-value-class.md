@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::SizeT value class"
 title: "Platform::SizeT value class"
-ms.date: "12/30/2016"
+description: "Learn more about: Platform::SizeT value class"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/PlatformSizeT::SizeT constructor"]
 helpviewer_keywords: ["Platform::SizeT Struct"]
-ms.assetid: 0803612c-8ba1-430c-9b7b-1bebae88608d
 ---
 # Platform::SizeT value class
 

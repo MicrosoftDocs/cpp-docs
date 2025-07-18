@@ -1,7 +1,7 @@
 ---
 title: "Platform::IntPtr value class"
 description: "Learn more about: Platform::IntPtr value class"
-ms.date: "12/30/2016"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/PlatformIntPtr::IntPtr", "VCCORLIB/PlatformIntPtr::op_explicit Operator", "VCCORLIB/PlatformIntPtr::ToInt32"]
 helpviewer_keywords: ["Platform::IntPtr Struct"]
