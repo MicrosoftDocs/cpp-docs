@@ -129,7 +129,7 @@ The **Templates** view lists the template instantiations that contributed signif
 - **Instantiation File Name** shows where the template is defined.
 
 :::image type="complex" source="./media/templates-view-before-fix.png" alt-text="Screenshot of the Build Insights Templates view showing expensive template instantiations." lightbox="./media/templates-view-before-fix.png":::
-The Templates view shows two template instantiations of struct S3 taking most (79.448 percent) of the build time. The Translation Unit column shows that both LargeValue.cpp and SmallValue.cpp are affected. The build time is 4.066 seconds.
+The Templates view shows two template instantiations of struct S3 taking most (79.448 percent) of the build time. The Translation Unit column shows that both LargeValue.cpp and TemplateAnalysis.cpp are affected. The build time is 4.066 seconds.
 :::image-end:::
 
 - Sort by **Time** to find the templates that take the longest to instantiate.
@@ -147,7 +147,7 @@ To interpret the **Templates** view results:
 
 ## Improve build time by optimizing template instantiations
 
-In the example, two template instantiations of `S3` take 79 percent of the build time. The **Translation Unit** column shows that both `SmallValue.cpp` and `LargeValue.cpp` cause this template instantiation.
+In the example, two template instantiations of `S3` take 79 percent of the build time. The **Translation Unit** column shows that both `LargeValue.cpp` and `TemplateAnalysis.cpp` cause this template instantiation.
 
 The **Instantiation File Name** and the **Specialization Name** are the same for both entries, which means one expensive template instantiation that affects both source files. That's why the time for each of the two template instantiations is roughly equal. Including `Templates.h` in both source files causes one template instantiation to add significant time to the build.
 
