@@ -1,7 +1,7 @@
 ---
 title: "Overview of C++ development in Visual Studio"
 description: "The Visual Studio IDE supports C++ development on Windows, Linux, Android and iOS with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
-ms.date: "12/02/2019"
+ms.date: 12/02/2019
 helpviewer_keywords: ["Visual C++, development tools"]
 author: "tylermsft"
 ms.author: "twhitney"
@@ -44,13 +44,13 @@ Source control enables you to coordinate work among multiple developers, isolate
 
 ::: moniker range=">=msvc-160"
 
-![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png )
+![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png)
 
 ::: moniker-end
 
 ::: moniker range="<=msvc-150"
 
-![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png )
+![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png)
 
 ::: moniker-end
 
