@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CRichEditCtrl Class"
 title: "CRichEditCtrl Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CRichEditCtrl Class"
+ms.date: 11/04/2016
 f1_keywords: ["CRichEditCtrl", "AFXCMN/CRichEditCtrl", "AFXCMN/CRichEditCtrl::CRichEditCtrl", "AFXCMN/CRichEditCtrl::CanPaste", "AFXCMN/CRichEditCtrl::CanRedo", "AFXCMN/CRichEditCtrl::CanUndo", "AFXCMN/CRichEditCtrl::CharFromPos", "AFXCMN/CRichEditCtrl::Clear", "AFXCMN/CRichEditCtrl::Copy", "AFXCMN/CRichEditCtrl::Create", "AFXCMN/CRichEditCtrl::CreateEx", "AFXCMN/CRichEditCtrl::Cut", "AFXCMN/CRichEditCtrl::DisplayBand", "AFXCMN/CRichEditCtrl::EmptyUndoBuffer", "AFXCMN/CRichEditCtrl::FindText", "AFXCMN/CRichEditCtrl::FindWordBreak", "AFXCMN/CRichEditCtrl::FormatRange", "AFXCMN/CRichEditCtrl::GetCharPos", "AFXCMN/CRichEditCtrl::GetDefaultCharFormat", "AFXCMN/CRichEditCtrl::GetEventMask", "AFXCMN/CRichEditCtrl::GetFirstVisibleLine", "AFXCMN/CRichEditCtrl::GetIRichEditOle", "AFXCMN/CRichEditCtrl::GetLimitText", "AFXCMN/CRichEditCtrl::GetLine", "AFXCMN/CRichEditCtrl::GetLineCount", "AFXCMN/CRichEditCtrl::GetModify", "AFXCMN/CRichEditCtrl::GetOptions", "AFXCMN/CRichEditCtrl::GetParaFormat", "AFXCMN/CRichEditCtrl::GetPunctuation", "AFXCMN/CRichEditCtrl::GetRect", "AFXCMN/CRichEditCtrl::GetRedoName", "AFXCMN/CRichEditCtrl::GetSel", "AFXCMN/CRichEditCtrl::GetSelectionCharFormat", "AFXCMN/CRichEditCtrl::GetSelectionType", "AFXCMN/CRichEditCtrl::GetSelText", "AFXCMN/CRichEditCtrl::GetTextLength", "AFXCMN/CRichEditCtrl::GetTextLengthEx", "AFXCMN/CRichEditCtrl::GetTextMode", "AFXCMN/CRichEditCtrl::GetTextRange", "AFXCMN/CRichEditCtrl::GetUndoName", "AFXCMN/CRichEditCtrl::GetWordWrapMode", "AFXCMN/CRichEditCtrl::HideSelection", "AFXCMN/CRichEditCtrl::LimitText", "AFXCMN/CRichEditCtrl::LineFromChar", "AFXCMN/CRichEditCtrl::LineIndex", "AFXCMN/CRichEditCtrl::LineLength", "AFXCMN/CRichEditCtrl::LineScroll", "AFXCMN/CRichEditCtrl::Paste", "AFXCMN/CRichEditCtrl::PasteSpecial", "AFXCMN/CRichEditCtrl::PosFromChar", "AFXCMN/CRichEditCtrl::Redo", "AFXCMN/CRichEditCtrl::ReplaceSel", "AFXCMN/CRichEditCtrl::RequestResize", "AFXCMN/CRichEditCtrl::SetAutoURLDetect", "AFXCMN/CRichEditCtrl::SetBackgroundColor", "AFXCMN/CRichEditCtrl::SetDefaultCharFormat", "AFXCMN/CRichEditCtrl::SetEventMask", "AFXCMN/CRichEditCtrl::SetModify", "AFXCMN/CRichEditCtrl::SetOLECallback", "AFXCMN/CRichEditCtrl::SetOptions", "AFXCMN/CRichEditCtrl::SetParaFormat", "AFXCMN/CRichEditCtrl::SetPunctuation", "AFXCMN/CRichEditCtrl::SetReadOnly", "AFXCMN/CRichEditCtrl::SetRect", "AFXCMN/CRichEditCtrl::SetSel", "AFXCMN/CRichEditCtrl::SetSelectionCharFormat", "AFXCMN/CRichEditCtrl::SetTargetDevice", "AFXCMN/CRichEditCtrl::SetTextMode", "AFXCMN/CRichEditCtrl::SetUndoLimit", "AFXCMN/CRichEditCtrl::SetWordCharFormat", "AFXCMN/CRichEditCtrl::SetWordWrapMode", "AFXCMN/CRichEditCtrl::StopGroupTyping", "AFXCMN/CRichEditCtrl::StreamIn", "AFXCMN/CRichEditCtrl::StreamOut", "AFXCMN/CRichEditCtrl::Undo"]
 helpviewer_keywords: ["CRichEditCtrl [MFC], CRichEditCtrl", "CRichEditCtrl [MFC], CanPaste", "CRichEditCtrl [MFC], CanRedo", "CRichEditCtrl [MFC], CanUndo", "CRichEditCtrl [MFC], CharFromPos", "CRichEditCtrl [MFC], Clear", "CRichEditCtrl [MFC], Copy", "CRichEditCtrl [MFC], Create", "CRichEditCtrl [MFC], CreateEx", "CRichEditCtrl [MFC], Cut", "CRichEditCtrl [MFC], DisplayBand", "CRichEditCtrl [MFC], EmptyUndoBuffer", "CRichEditCtrl [MFC], FindText", "CRichEditCtrl [MFC], FindWordBreak", "CRichEditCtrl [MFC], FormatRange", "CRichEditCtrl [MFC], GetCharPos", "CRichEditCtrl [MFC], GetDefaultCharFormat", "CRichEditCtrl [MFC], GetEventMask", "CRichEditCtrl [MFC], GetFirstVisibleLine", "CRichEditCtrl [MFC], GetIRichEditOle", "CRichEditCtrl [MFC], GetLimitText", "CRichEditCtrl [MFC], GetLine", "CRichEditCtrl [MFC], GetLineCount", "CRichEditCtrl [MFC], GetModify", "CRichEditCtrl [MFC], GetOptions", "CRichEditCtrl [MFC], GetParaFormat", "CRichEditCtrl [MFC], GetPunctuation", "CRichEditCtrl [MFC], GetRect", "CRichEditCtrl [MFC], GetRedoName", "CRichEditCtrl [MFC], GetSel", "CRichEditCtrl [MFC], GetSelectionCharFormat", "CRichEditCtrl [MFC], GetSelectionType", "CRichEditCtrl [MFC], GetSelText", "CRichEditCtrl [MFC], GetTextLength", "CRichEditCtrl [MFC], GetTextLengthEx", "CRichEditCtrl [MFC], GetTextMode", "CRichEditCtrl [MFC], GetTextRange", "CRichEditCtrl [MFC], GetUndoName", "CRichEditCtrl [MFC], GetWordWrapMode", "CRichEditCtrl [MFC], HideSelection", "CRichEditCtrl [MFC], LimitText", "CRichEditCtrl [MFC], LineFromChar", "CRichEditCtrl [MFC], LineIndex", "CRichEditCtrl [MFC], LineLength", "CRichEditCtrl [MFC], LineScroll", "CRichEditCtrl [MFC], Paste", "CRichEditCtrl [MFC], PasteSpecial", "CRichEditCtrl [MFC], PosFromChar", "CRichEditCtrl [MFC], Redo", "CRichEditCtrl [MFC], ReplaceSel", "CRichEditCtrl [MFC], RequestResize", "CRichEditCtrl [MFC], SetAutoURLDetect", "CRichEditCtrl [MFC], SetBackgroundColor", "CRichEditCtrl [MFC], SetDefaultCharFormat", "CRichEditCtrl [MFC], SetEventMask", "CRichEditCtrl [MFC], SetModify", "CRichEditCtrl [MFC], SetOLECallback", "CRichEditCtrl [MFC], SetOptions", "CRichEditCtrl [MFC], SetParaFormat", "CRichEditCtrl [MFC], SetPunctuation", "CRichEditCtrl [MFC], SetReadOnly", "CRichEditCtrl [MFC], SetRect", "CRichEditCtrl [MFC], SetSel", "CRichEditCtrl [MFC], SetSelectionCharFormat", "CRichEditCtrl [MFC], SetTargetDevice", "CRichEditCtrl [MFC], SetTextMode", "CRichEditCtrl [MFC], SetUndoLimit", "CRichEditCtrl [MFC], SetWordCharFormat", "CRichEditCtrl [MFC], SetWordWrapMode", "CRichEditCtrl [MFC], StopGroupTyping", "CRichEditCtrl [MFC], StreamIn", "CRichEditCtrl [MFC], StreamOut", "CRichEditCtrl [MFC], Undo"]
-ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
 ---
 # `CRichEditCtrl` Class
 
@@ -553,7 +552,8 @@ For more information, see [`EM_POSFROMCHAR`](/windows/win32/Controls/em-posfromc
 Gets the default character formatting attributes of this `CRichEditCtrl` object.
 
 ```
-DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;  DWORD GetDefaultCharFormat(CHARFORMAT2& cf) const;
+DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;
+DWORD GetDefaultCharFormat(CHARFORMAT2& cf) const;
 ```
 
 ### Parameters
@@ -759,7 +759,8 @@ A combination of the current option flag values. For a list of these values, see
 Gets the paragraph formatting attributes of the current selection.
 
 ```
-DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf) const;
+DWORD GetParaFormat(PARAFORMAT& pf) const;
+DWORD GetParaFormat(PARAFORMAT2& pf) const;
 ```
 
 ### Parameters
@@ -892,7 +893,8 @@ For more information, see [`EM_EXGETSEL`](/windows/win32/Controls/em-exgetsel) m
 Gets the character formatting attributes of the current selection.
 
 ```
-DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharFormat(CHARFORMAT2& cf) const;
+DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;
+DWORD GetSelectionCharFormat(CHARFORMAT2& cf) const;
 ```
 
 ### Parameters
@@ -951,7 +953,8 @@ For more information, see [`EM_SELECTIONTYPE`](/windows/win32/Controls/em-select
 Retrieves the text from the current selection in this `CRichEditCtrl` object.
 
 ```
-long GetSelText(LPSTR lpBuf) const;  CString GetSelText() const;
+long GetSelText(LPSTR lpBuf) const;
+CString GetSelText() const;
 ```
 
 ### Parameters
