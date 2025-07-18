@@ -38,7 +38,7 @@ For `hash_set`s and `hash_multiset`s, which are simple containers where the key 
 
 ## Example
 
-See the example for [`hash_map::value_comp`](../standard-library/hash-map-class.md#value_comp) for an example of how to declare and use `value_compare`.
+See the example for [`hash_map::value_comp`](hash-map-class.md#value_comp) for an example of how to declare and use `value_compare`.
 
 ## Requirements
 
@@ -48,6 +48,6 @@ See the example for [`hash_map::value_comp`](../standard-library/hash-map-class.
 
 ## See also
 
-[`binary_function` Struct](../standard-library/binary-function-struct.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
+[`binary_function` Struct](binary-function-struct.md)\
+[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](cpp-standard-library-reference.md)
