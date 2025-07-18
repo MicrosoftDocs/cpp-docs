@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Fatal Error C1067"
 title: "Fatal Error C1067"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1067"
+ms.date: 11/04/2016
 f1_keywords: ["C1067"]
 helpviewer_keywords: ["C1067"]
-ms.assetid: e2c94be6-4573-4571-aac9-73d657fe9f96
 ---
 # Fatal Error C1067
 
-compiler limit : 64K limit on size of a type record has been exceeded
+> compiler limit : 64K limit on size of a type record has been exceeded
+
+## Remarks
 
 This error could occur if a symbol has a decorated name exceeding 247 characters.  To resolve, shorten the symbol name.
 
