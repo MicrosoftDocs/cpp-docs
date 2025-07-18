@@ -306,7 +306,8 @@ For a list of styles available for status bars, see [Create](#create).
 Call this member function to retrieve the text that appears in a status-bar pane.
 
 ```
-CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rString) const;
+CString GetPaneText(int nIndex) const;
+void GetPaneText(int nIndex, CString& rString) const;
 ```
 
 ### Parameters

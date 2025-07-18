@@ -553,7 +553,8 @@ For more information, see [`EM_POSFROMCHAR`](/windows/win32/Controls/em-posfromc
 Gets the default character formatting attributes of this `CRichEditCtrl` object.
 
 ```
-DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;  DWORD GetDefaultCharFormat(CHARFORMAT2& cf) const;
+DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;
+DWORD GetDefaultCharFormat(CHARFORMAT2& cf) const;
 ```
 
 ### Parameters
@@ -759,7 +760,8 @@ A combination of the current option flag values. For a list of these values, see
 Gets the paragraph formatting attributes of the current selection.
 
 ```
-DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf) const;
+DWORD GetParaFormat(PARAFORMAT& pf) const;
+DWORD GetParaFormat(PARAFORMAT2& pf) const;
 ```
 
 ### Parameters
@@ -892,7 +894,8 @@ For more information, see [`EM_EXGETSEL`](/windows/win32/Controls/em-exgetsel) m
 Gets the character formatting attributes of the current selection.
 
 ```
-DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharFormat(CHARFORMAT2& cf) const;
+DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;
+DWORD GetSelectionCharFormat(CHARFORMAT2& cf) const;
 ```
 
 ### Parameters
@@ -951,7 +954,8 @@ For more information, see [`EM_SELECTIONTYPE`](/windows/win32/Controls/em-select
 Retrieves the text from the current selection in this `CRichEditCtrl` object.
 
 ```
-long GetSelText(LPSTR lpBuf) const;  CString GetSelText() const;
+long GetSelText(LPSTR lpBuf) const;
+CString GetSelText() const;
 ```
 
 ### Parameters

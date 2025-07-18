@@ -201,7 +201,8 @@ A pointer to the current buddy window.
 Retrieves the current position of a spin button control.
 
 ```
-int GetPos() const;  int GetPos32(LPBOOL lpbError = NULL) const;
+int GetPos() const;
+int GetPos32(LPBOOL lpbError = NULL) const;
 ```
 
 ### Parameters

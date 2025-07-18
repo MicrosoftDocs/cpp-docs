@@ -40,7 +40,8 @@ Initializes a new instance of SizeT with the specified value.
 ### Syntax
 
 ```cpp
-SizeT( uint32 value1 );   SizeT( void* value2 );
+SizeT( uint32 value1 );
+SizeT( void* value2 );
 ```
 
 ### Parameters

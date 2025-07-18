@@ -43,7 +43,9 @@ Initializes a new instance of an IntPtr with the specified value.
 ### Syntax
 
 ```cpp
-IntPtr( __int64 handle-or-pointer );   IntPtr( void* value );   IntPtr( int 32-bit_value );
+IntPtr( __int64 handle-or-pointer );
+IntPtr( void* value );
+IntPtr( int 32-bit_value );
 ```
 
 ### Parameters
@@ -58,7 +60,9 @@ Converts the specified parameter to an IntPtr or a pointer to an IntPtr value.
 ### Syntax
 
 ```cpp
-static IntPtr::operator IntPtr( void* value1);   static IntPtr::operator IntPtr( int value2);   static IntPtr::operator void*( IntPtr value3 );
+static IntPtr::operator IntPtr( void* value1);
+static IntPtr::operator IntPtr( int value2);
+static IntPtr::operator void*( IntPtr value3 );
 ```
 
 ### Parameters

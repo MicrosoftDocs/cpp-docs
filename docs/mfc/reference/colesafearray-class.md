@@ -554,11 +554,14 @@ A brief description of each operator follows:
 This operator compares two arrays (`SAFEARRAY`, `VARIANT`, `COleVariant`, or `COleSafeArray` arrays) and returns nonzero if they are equal; otherwise 0.
 
 ```
-BOOL operator==(const SAFEARRAY& saSrc) const;  BOOL operator==(LPCSAFEARRAY pSrc) const;
+BOOL operator==(const SAFEARRAY& saSrc) const;
+BOOL operator==(LPCSAFEARRAY pSrc) const;
 
-BOOL operator==(const COleSafeArray& saSrc) const;  BOOL operator==(const VARIANT& varSrc) const;
+BOOL operator==(const COleSafeArray& saSrc) const;
+BOOL operator==(const VARIANT& varSrc) const;
 
-BOOL operator==(LPCVARIANT pSrc) const;  BOOL operator==(const COleVariant& varSrc) const;
+BOOL operator==(LPCVARIANT pSrc) const;
+BOOL operator==(const COleVariant& varSrc) const;
 ```
 
 ### Remarks
