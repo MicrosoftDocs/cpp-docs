@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Fatal Error C1206"
 title: "Fatal Error C1206"
+description: "Learn more about: Fatal Error C1206"
 ms.date: 08/17/2022
 f1_keywords: ["C1206"]
 helpviewer_keywords: ["C1206"]
-ms.assetid: 2211428f-ad86-4f7b-82eb-f1ba89b0510e
 ---
 # Fatal Error C1206
 
 > Per-appdomain data is not supported by the version of the runtime installed
+
+## Remarks
 
 Some features, such as per application domain data, are only supported by the common language runtime that supports the feature.
 

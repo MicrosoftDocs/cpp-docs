@@ -7,11 +7,15 @@ helpviewer_keywords: ["C2134"]
 ---
 # Compiler Error C2134
 
-'function' : call does not result in a constant expression
+> 'function' : call does not result in a constant expression
+
+## Remarks
 
 A function declared as constexpr can only call other functions declared as constexpr.
 
-The following sample generates C2134:
+## Example
+
+The following example generates C2134:
 
 ```cpp
 // C2134.cpp

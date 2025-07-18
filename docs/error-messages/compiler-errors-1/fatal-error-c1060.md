@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Fatal Error C1060"
 title: "Fatal Error C1060"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1060"
+ms.date: 11/04/2016
 f1_keywords: ["C1060"]
 helpviewer_keywords: ["C1060"]
-ms.assetid: feaf305c-c84c-4160-b974-50e283412849
 ---
 # Fatal Error C1060
 
-compiler is out of heap space
+> compiler is out of heap space
+
+## Remarks
 
 The operating system or run-time library cannot fill a request for memory.
 

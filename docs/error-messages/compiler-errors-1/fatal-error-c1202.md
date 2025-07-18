@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Fatal Error C1202"
 title: "Fatal Error C1202"
-ms.date: "11/04/2016"
+description: "Learn more about: Fatal Error C1202"
+ms.date: 11/04/2016
 f1_keywords: ["C1202"]
 helpviewer_keywords: ["C1202"]
-ms.assetid: c859adb8-17a7-4fa1-a1f3-5820b7bf3849
 ---
 # Fatal Error C1202
 
-recursive type or function dependency context too complex
+> recursive type or function dependency context too complex
+
+## Remarks
 
 A template definition was recursive or exceeded complexity limits.
 
-## Examples
+## Example
 
-The following sample generates C1202.
+The following example generates C1202.
 
 ```cpp
 // C1202.cpp

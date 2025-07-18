@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2141"
 title: "Compiler Error C2141"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2141"
+ms.date: 11/04/2016
 f1_keywords: ["C2141"]
 helpviewer_keywords: ["C2141"]
-ms.assetid: 10cf770f-0500-4220-ac90-a863b7ea5fe6
 ---
 # Compiler Error C2141
 
-array size overflow
+> array size overflow
+
+## Remarks
 
 An array exceeds the 2GB limit. Reduce the size of the array.
 
 ## Example
 
-The following sample generates C2141.
+The following example generates C2141.
 
 ```cpp
 // C2141.cpp

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2164"
 title: "Compiler Error C2164"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2164"
+ms.date: 11/04/2016
 f1_keywords: ["C2164"]
 helpviewer_keywords: ["C2164"]
-ms.assetid: 55df5024-68a8-45a8-ae6c-e6dba35318a2
 ---
 # Compiler Error C2164
 
-'function' : intrinsic function not declared
+> 'function' : intrinsic function not declared
+
+## Remarks
 
 An `intrinsic` pragma uses an undeclared function (only occurs with **/Oi**). Or, one of the compiler intrinsics was used without including its header file.
 
-The following sample generates C2164:
+## Example
+
+The following example generates C2164:
 
 ```c
 // C2164.c

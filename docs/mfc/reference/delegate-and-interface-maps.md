@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Delegate and interface map macros"
 title: "Delegate and Interface Map Macros (MFC)"
-ms.date: "03/30/2017"
+description: "Learn more about: Delegate and interface map macros"
+ms.date: 03/30/2017
 helpviewer_keywords: ["delegate map macros [MFC]", "event map macros [MFC]", "interface map macros [MFC]"]
-ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
 ---
 # Delegate and interface map macros
 
@@ -215,8 +214,10 @@ INTERFACE_PART( theClass, iid, localClass)
 
 *theClass*<br/>
 The name of the class that contains the interface map.
+
 *iid*<br/>
 The IID that is to be mapped to the embedded class.
+
 *localClass*<br/>
 The name of the local class.
 
