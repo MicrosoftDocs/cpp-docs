@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2200"
 description: "Learn more about: Compiler Error C2200"
-ms.date: "02/15/2025"
+ms.date: 02/15/2025
 f1_keywords: ["C2200"]
 helpviewer_keywords: ["C2200"]
 ---

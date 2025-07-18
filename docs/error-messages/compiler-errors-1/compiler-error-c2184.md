@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2184"
 title: "Compiler Error C2184"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2184"
+ms.date: 11/04/2016
 f1_keywords: ["C2184"]
 helpviewer_keywords: ["C2184"]
-ms.assetid: 80fc8bff-7d76-4bde-94d2-01d84bb6824a
 ---
 # Compiler Error C2184
 

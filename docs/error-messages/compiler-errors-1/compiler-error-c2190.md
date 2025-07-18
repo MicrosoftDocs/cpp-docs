@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2190"
 title: "Compiler Error C2190"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2190"
+ms.date: 11/04/2016
 f1_keywords: ["C2190"]
 helpviewer_keywords: ["C2190"]
-ms.assetid: 34e15f85-d979-4948-80fc-46c414508a70
 ---
 # Compiler Error C2190
 
