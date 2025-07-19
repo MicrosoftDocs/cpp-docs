@@ -10,4 +10,6 @@ ms.assetid: b3aaa2a5-254a-46a9-a508-de2371ecffeb
 
 > syntax error : unexpected type 'type'
 
+## Remarks
+
 A syntax error occurs before or in the type specifier.

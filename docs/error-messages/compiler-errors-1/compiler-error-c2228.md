@@ -10,7 +10,11 @@ ms.assetid: 901cadb1-ce90-4ae0-a360-547a9ba2ca18
 
 > left of '.identifier' must have class/struct/union
 
+## Remarks
+
 The operand to the left of the period (.) is not a class, structure, or union.
+
+## Example
 
 The following sample generates C2228:
 

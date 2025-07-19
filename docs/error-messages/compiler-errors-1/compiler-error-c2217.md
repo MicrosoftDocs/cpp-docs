@@ -10,6 +10,8 @@ ms.assetid: 1ce1e3f5-4171-4376-804d-967f7e612935
 
 > 'attribute1' requires 'attribute2'
 
+## Remarks
+
 The first function attribute requires the second attribute.
 
 ## Example

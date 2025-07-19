@@ -10,7 +10,11 @@ ms.assetid: 9ae704bc-bf70-45f1-8e47-0470f21edd4e
 
 > 'type' : no members defined using this type
 
+## Remarks
+
 An identifier resolving to a type name is in an aggregate declaration, but the compiler cannot declare a member.
+
+## Example
 
 The following sample generates C2208:
 

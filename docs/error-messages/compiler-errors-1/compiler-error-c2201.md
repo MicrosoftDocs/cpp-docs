@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2201"]
 
 > '*identifier*' : must have external linkage in order to be exported/imported
 
+## Remarks
+
 The exported identifier is **`static`**.
 
 ## Example

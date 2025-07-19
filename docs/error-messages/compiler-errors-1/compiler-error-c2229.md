@@ -10,11 +10,15 @@ ms.assetid: 933c7cf2-a463-4e74-b0b4-59dedad987fb
 
 > type 'identifier' has an illegal zero-sized array
 
+## Remarks
+
 A member of a structure or bit field contains a zero-sized array that is not the last member.
 
 Because you can have a zero sized array as the last member of the struct, you must specify its size when you allocate the struct.
 
 If the zero sized array is not the last member of the struct, the compiler can't calculate the offset for the remaining fields.
+
+## Example
 
 The following sample generates C2229:
 
