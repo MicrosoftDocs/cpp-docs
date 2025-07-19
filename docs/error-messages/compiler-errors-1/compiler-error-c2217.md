@@ -16,7 +16,7 @@ The first function attribute requires the second attribute.
 
 ## Example
 
-C2217 can occur if you attempt to bind a delegate to a CLR function that takes a variable number of arguments. If the function also has a param array overload, use that instead. The following sample generates C2217.
+C2217 can occur if you attempt to bind a delegate to a CLR function that takes a variable number of arguments. If the function also has a param array overload, use that instead. The following example generates C2217.
 
 ```cpp
 // C2217.cpp

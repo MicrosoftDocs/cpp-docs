@@ -20,7 +20,7 @@ If the zero sized array is not the last member of the struct, the compiler can't
 
 ## Example
 
-The following sample generates C2229:
+The following example generates C2229:
 
 ```cpp
 // C2229.cpp

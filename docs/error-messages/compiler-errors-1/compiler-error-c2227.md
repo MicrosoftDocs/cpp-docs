@@ -16,7 +16,7 @@ The operand to the left of `->` is not a pointer to a class, structure, or union
 
 ## Example
 
-The following sample generates C2227:
+The following example generates C2227:
 
 ```cpp
 // C2227.cpp

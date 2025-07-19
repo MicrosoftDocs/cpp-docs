@@ -16,7 +16,7 @@ The argument modifying **`__based`** is invalid.
 
 ## Example
 
-The following sample generates C2213:
+The following example generates C2213:
 
 ```cpp
 // C2213.cpp

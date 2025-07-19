@@ -16,7 +16,7 @@ A **`typedef`** is used to define a function type.
 
 ## Example
 
-The following sample generates C2206:
+The following example generates C2206:
 
 ```cpp
 // C2206.cpp

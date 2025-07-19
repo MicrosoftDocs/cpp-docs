@@ -16,7 +16,7 @@ The operand to the left of the period (.) is not a class, structure, or union.
 
 ## Example
 
-The following sample generates C2228:
+The following example generates C2228:
 
 ```cpp
 // C2228.cpp

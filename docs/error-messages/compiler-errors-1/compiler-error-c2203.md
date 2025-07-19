@@ -16,7 +16,7 @@ With the **/Za** (ANSI) option, the **`delete`** operator can delete an entire a
 
 ## Example
 
-The following sample generates C2203:
+The following example generates C2203:
 
 ```cpp
 // C2203.cpp

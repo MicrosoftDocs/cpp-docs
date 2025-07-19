@@ -16,7 +16,7 @@ An identifier resolving to a type name is in an aggregate declaration, but the c
 
 ## Example
 
-The following sample generates C2208:
+The following example generates C2208:
 
 ```cpp
 // C2208.cpp
