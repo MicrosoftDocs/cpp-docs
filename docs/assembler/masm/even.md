@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: EVEN"
 title: "EVEN"
-ms.date: "12/17/2019"
+description: "Learn more about: EVEN"
+ms.date: 12/17/2019
 f1_keywords: ["EVEN"]
 helpviewer_keywords: ["EVEN directive"]
-ms.assetid: 68938ba4-8cb9-44d4-914e-9f9fee6bcbf4
 ---
 # `EVEN`
 
