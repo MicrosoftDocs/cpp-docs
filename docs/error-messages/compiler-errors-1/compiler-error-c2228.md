@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2228"
 title: "Compiler Error C2228"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2228"
+ms.date: 11/04/2016
 f1_keywords: ["C2228"]
 helpviewer_keywords: ["C2228"]
-ms.assetid: 901cadb1-ce90-4ae0-a360-547a9ba2ca18
 ---
 # Compiler Error C2228
 

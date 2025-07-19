@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2203"
 title: "Compiler Error C2203"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2203"
+ms.date: 11/04/2016
 f1_keywords: ["C2203"]
 helpviewer_keywords: ["C2203"]
-ms.assetid: 5497df43-86f6-43d5-b6cb-723c4c589b10
 ---
 # Compiler Error C2203
 

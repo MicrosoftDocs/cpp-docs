@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2206"
 title: "Compiler Error C2206"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2206"
+ms.date: 11/04/2016
 f1_keywords: ["C2206"]
 helpviewer_keywords: ["C2206"]
-ms.assetid: d7fba68b-aa28-4885-a9a0-27107358f066
 ---
 # Compiler Error C2206
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2207"
 title: "Compiler Error C2207"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2207"
+ms.date: 11/04/2016
 f1_keywords: ["C2207"]
 helpviewer_keywords: ["C2207"]
-ms.assetid: d7d7b537-68f1-420a-9835-b5b6f2cb5cfd
 ---
 # Compiler Error C2207
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2220"
 title: "Compiler Error C2220"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2220"
+ms.date: 11/04/2016
 f1_keywords: ["C2220"]
 helpviewer_keywords: ["C2220"]
-ms.assetid: d610802c-64d7-40ad-a2a6-0ed0b6815a6c
 ---
 # Compiler Error C2220
 

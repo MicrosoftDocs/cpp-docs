@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2201"
 title: "Compiler Error C2201"
+description: "Learn more about: Compiler Error C2201"
 ms.date: 05/03/2021
 f1_keywords: ["C2201"]
 helpviewer_keywords: ["C2201"]
