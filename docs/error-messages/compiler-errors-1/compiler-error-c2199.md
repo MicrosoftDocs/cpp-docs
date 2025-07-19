@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2199"
 title: "Compiler Error C2199"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2199"
+ms.date: 11/04/2016
 f1_keywords: ["C2199"]
 helpviewer_keywords: ["C2199"]
-ms.assetid: 6a92a1b7-7906-49e6-a31f-e8bffbc7706a
 ---
 # Compiler Error C2199
 
-syntax error : found 'identifier (' at global scope (was a declaration intended?)
+> syntax error : found 'identifier (' at global scope (was a declaration intended?)
+
+## Remarks
 
 The specified context caused a syntax error. There may be incorrect declaration syntax.
 
-The following sample generates C2199:
+## Example
+
+The following example generates C2199:
 
 ```cpp
 // C2199.cpp
