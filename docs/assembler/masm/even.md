@@ -16,5 +16,6 @@ Aligns the next variable or instruction on an even byte.
 
 ## See also
 
+[`ALIGN`](align-masm.md)\
 [Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)
