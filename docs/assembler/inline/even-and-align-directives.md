@@ -9,10 +9,10 @@ ms.assetid: 7357ab2d-4a5c-43ca-accb-a5f21cdfcde5
 
 **Microsoft Specific**
 
-Although the inline assembler doesn't support most MASM directives, it does support `EVEN` and `ALIGN`. These directives put `NOP` (no operation) instructions in the assembly code as needed to align labels to specific boundaries. This makes instruction-fetch operations more efficient for some processors.
+Although the inline assembler doesn't support most MASM directives, it does support [`EVEN`](../masm/even.md) and [`ALIGN`](../masm/align-masm.md). These directives put `NOP` (no operation) instructions in the assembly code as needed to align labels to specific boundaries. This makes instruction-fetch operations more efficient for some processors.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Using Assembly Language in `__asm` Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>
+[Using Assembly Language in `__asm` Blocks](using-assembly-language-in-asm-blocks.md)<br/>
