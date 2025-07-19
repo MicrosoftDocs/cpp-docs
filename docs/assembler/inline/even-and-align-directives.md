@@ -15,4 +15,4 @@ Although the inline assembler doesn't support most MASM directives, it does supp
 
 ## See also
 
-[Using Assembly Language in `__asm` Blocks](using-assembly-language-in-asm-blocks.md)<br/>
+[Using Assembly Language in `__asm` Blocks](using-assembly-language-in-asm-blocks.md)
