@@ -8,7 +8,7 @@ ms.assetid: 9ae704bc-bf70-45f1-8e47-0470f21edd4e
 ---
 # Compiler Error C2208
 
-'type' : no members defined using this type
+> 'type' : no members defined using this type
 
 An identifier resolving to a type name is in an aggregate declaration, but the compiler cannot declare a member.
 

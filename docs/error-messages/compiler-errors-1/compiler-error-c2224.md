@@ -8,7 +8,7 @@ ms.assetid: 27b93bbf-4ce7-47a3-a9c4-f4fbed689bdf
 ---
 # Compiler Error C2224
 
-left of '.identifier' must have struct/union type
+> left of '.identifier' must have struct/union type
 
 The operand to the left of the period (.) is not a class, structure, or union.
 

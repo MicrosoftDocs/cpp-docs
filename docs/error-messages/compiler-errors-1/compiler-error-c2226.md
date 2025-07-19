@@ -8,6 +8,6 @@ ms.assetid: b3aaa2a5-254a-46a9-a508-de2371ecffeb
 ---
 # Compiler Error C2226
 
-syntax error : unexpected type 'type'
+> syntax error : unexpected type 'type'
 
 A syntax error occurs before or in the type specifier.

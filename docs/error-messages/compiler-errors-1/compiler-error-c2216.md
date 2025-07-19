@@ -8,7 +8,7 @@ ms.assetid: 250f6bdc-a5e1-495f-a1e8-6e8e7021ad9d
 ---
 # Compiler Error C2216
 
-'keyword1' cannot be used with ' keyword2'
+> 'keyword1' cannot be used with ' keyword2'
 
 Two keywords that are mutually exclusive were used together.
 

@@ -8,7 +8,7 @@ ms.assetid: 1ce1e3f5-4171-4376-804d-967f7e612935
 ---
 # Compiler Error C2217
 
-'attribute1' requires 'attribute2'
+> 'attribute1' requires 'attribute2'
 
 The first function attribute requires the second attribute.
 

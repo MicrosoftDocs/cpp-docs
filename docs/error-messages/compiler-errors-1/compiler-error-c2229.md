@@ -8,7 +8,7 @@ ms.assetid: 933c7cf2-a463-4e74-b0b4-59dedad987fb
 ---
 # Compiler Error C2229
 
-type 'identifier' has an illegal zero-sized array
+> type 'identifier' has an illegal zero-sized array
 
 A member of a structure or bit field contains a zero-sized array that is not the last member.
 

@@ -8,7 +8,7 @@ ms.assetid: 901cadb1-ce90-4ae0-a360-547a9ba2ca18
 ---
 # Compiler Error C2228
 
-left of '.identifier' must have class/struct/union
+> left of '.identifier' must have class/struct/union
 
 The operand to the left of the period (.) is not a class, structure, or union.
 

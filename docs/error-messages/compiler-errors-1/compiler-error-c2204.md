@@ -8,6 +8,6 @@ ms.assetid: bbe506d4-7863-44af-8709-161881c4b4ba
 ---
 # Compiler Error C2204
 
-'type' : type definition found within parentheses
+> 'type' : type definition found within parentheses
 
 The type is defined as an operand or in prototype scope.

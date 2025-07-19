@@ -8,7 +8,7 @@ ms.assetid: d7fba68b-aa28-4885-a9a0-27107358f066
 ---
 # Compiler Error C2206
 
-'function' : typedef cannot be used for function definition
+> 'function' : typedef cannot be used for function definition
 
 A **`typedef`** is used to define a function type.
 

@@ -8,7 +8,7 @@ ms.assetid: ff012278-7f3b-4d49-aaed-2349756f6225
 ---
 # Compiler Error C2213
 
-'modifier' : illegal argument to __based
+> 'modifier' : illegal argument to __based
 
 The argument modifying **`__based`** is invalid.
 
