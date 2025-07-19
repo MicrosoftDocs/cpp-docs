@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2220"
 title: "Compiler Error C2220"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2220"
+ms.date: 11/04/2016
 f1_keywords: ["C2220"]
 helpviewer_keywords: ["C2220"]
-ms.assetid: d610802c-64d7-40ad-a2a6-0ed0b6815a6c
 ---
 # Compiler Error C2220
 
-warning treated as error - no object file generated
+> warning treated as error - no object file generated
+
+## Remarks
 
 [/WX](../../build/reference/compiler-option-warning-level.md) tells the compiler to treat all warnings as errors. Because an error occurred, no object or executable file was generated.
 
