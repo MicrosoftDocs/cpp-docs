@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4373"
 title: "Compiler Warning (level 4) C4373"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4373"
+ms.date: 11/04/2016
 f1_keywords: ["C4373"]
 helpviewer_keywords: ["C4373"]
 ---
