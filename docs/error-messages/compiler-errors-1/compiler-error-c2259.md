@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2259"
 title: "Compiler Error C2259"
+description: "Learn more about: Compiler Error C2259"
 ms.date: 07/08/2021
 f1_keywords: ["C2259"]
 helpviewer_keywords: ["C2259"]
-ms.assetid: e458236f-bdea-4786-9aa6-a98d8bffa5f4
 ---
 # Compiler Error C2259
 

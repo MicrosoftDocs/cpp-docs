@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2250"
 title: "Compiler Error C2250"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2250"
+ms.date: 11/04/2016
 f1_keywords: ["C2250"]
 helpviewer_keywords: ["C2250"]
-ms.assetid: f990986f-5c7d-4af4-a25c-b35540f1e217
 ---
 # Compiler Error C2250
 

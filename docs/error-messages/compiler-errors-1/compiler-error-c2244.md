@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2244"
 title: "Compiler Error C2244"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2244"
+ms.date: 11/04/2016
 f1_keywords: ["C2244"]
 helpviewer_keywords: ["C2244"]
-ms.assetid: d9911c12-ceb5-4f93-ac47-b44a485215c2
 ---
 # Compiler Error C2244
 

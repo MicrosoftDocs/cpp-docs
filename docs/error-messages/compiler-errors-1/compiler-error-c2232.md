@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2232"
 title: "Compiler Error C2232"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2232"
+ms.date: 11/04/2016
 f1_keywords: ["C2232"]
 helpviewer_keywords: ["C2232"]
-ms.assetid: 76f302b7-30a7-4a81-9a39-b4edde33b54c
 ---
 # Compiler Error C2232
 

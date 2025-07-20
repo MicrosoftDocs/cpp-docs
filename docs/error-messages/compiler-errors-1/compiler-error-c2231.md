@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2231"
 title: "Compiler Error C2231"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2231"
+ms.date: 11/04/2016
 f1_keywords: ["C2231"]
 helpviewer_keywords: ["C2231"]
-ms.assetid: 677c5c66-d30f-4c3b-bbb9-760858d56477
 ---
 # Compiler Error C2231
 

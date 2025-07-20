@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2233"
 title: "Compiler Error C2233"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2233"
+ms.date: 11/04/2016
 f1_keywords: ["C2233"]
 helpviewer_keywords: ["C2233"]
-ms.assetid: 236bdf0b-9607-4f26-a249-d8def0b1333c
 ---
 # Compiler Error C2233
 
