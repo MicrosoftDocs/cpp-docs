@@ -21,7 +21,7 @@ The following code example generates warning C4373. To resolve this issue, make 
 
 ```cpp
 // c4373.cpp
-// compile with: /c /W3
+// compile with: /c /W4
 #include <stdio.h>
 struct Base
 {
