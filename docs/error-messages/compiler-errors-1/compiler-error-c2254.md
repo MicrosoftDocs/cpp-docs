@@ -16,7 +16,7 @@ A **`friend`** function is specified as pure **`virtual`**.
 
 ## Example
 
-The following sample generates C2254:
+The following example generates C2254:
 
 ```cpp
 // C2254.cpp

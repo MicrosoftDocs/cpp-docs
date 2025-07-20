@@ -16,7 +16,7 @@ A function specified as a friend was not found by the compiler.
 
 ## Example
 
-The following sample generates C2245:
+The following example generates C2245:
 
 ```cpp
 // C2245.cpp

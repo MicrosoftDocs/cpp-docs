@@ -16,7 +16,7 @@ For example, a nonmember function is declared a **`friend`**.
 
 ## Example
 
-The following sample generates C2255:
+The following example generates C2255:
 
 ```cpp
 // C2255.cpp

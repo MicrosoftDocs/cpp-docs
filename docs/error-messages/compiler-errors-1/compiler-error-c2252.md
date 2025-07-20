@@ -16,7 +16,7 @@ The compiler detected a problem with an explicit instantiation of a template.  F
 
 ## Example
 
-The following sample generates C2252:
+The following example generates C2252:
 
 ```cpp
 // C2252.cpp

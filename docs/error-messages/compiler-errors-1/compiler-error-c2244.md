@@ -18,7 +18,7 @@ This error only occurs in C++ projects.
 
 ## Examples
 
-The following sample generates C2244:
+The following example generates C2244:
 
 ```cpp
 // C2244.cpp

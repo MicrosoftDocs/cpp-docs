@@ -16,7 +16,7 @@ The compiler was not able to find an identifier in the specified namespace.
 
 ## Example
 
-The following sample generates C2251:
+The following example generates C2251:
 
 ```cpp
 // C2251.cpp

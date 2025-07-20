@@ -16,7 +16,7 @@ The identifier is already defined as a type and cannot be overridden by a user-d
 
 ## Example
 
-The following sample generates C2236:
+The following example generates C2236:
 
 ```cpp
 // C2236.cpp

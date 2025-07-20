@@ -16,7 +16,7 @@ The `member` is inherited from a nonpublic **`virtual`** base class or structure
 
 ## Examples
 
-The following sample generates C2249.
+The following example generates C2249.
 
 ```cpp
 // C2249.cpp
@@ -35,7 +35,7 @@ int main() {
 }
 ```
 
-C2249 can also occur if you try to assign a stream from the C++ Standard Library to another stream.  The following sample generates C2249.
+C2249 can also occur if you try to assign a stream from the C++ Standard Library to another stream.  The following example generates C2249.
 
 ```cpp
 // C2249_2.cpp

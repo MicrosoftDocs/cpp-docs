@@ -16,7 +16,7 @@ The operand to the left of the `->` operator is not a pointer. Use the period (.
 
 ## Example
 
-The following sample generates C2232:
+The following example generates C2232:
 
 ```c
 // C2232.c

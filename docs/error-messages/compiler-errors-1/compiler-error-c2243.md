@@ -16,7 +16,7 @@ Access protection (**`protected`** or **`private`**) prevented conversion from a
 
 ## Example
 
-The following sample generates C2243:
+The following example generates C2243:
 
 ```cpp
 // C2243.cpp

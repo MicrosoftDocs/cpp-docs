@@ -20,7 +20,7 @@ For more information, see [Implicitly abstract classes](../../dotnet/how-to-defi
 
 ## Examples
 
-The following sample generates C2259:
+The following example generates C2259:
 
 ```cpp
 // C2259.cpp
@@ -45,7 +45,7 @@ To resolve this issue, don't use more restrictive access permissions for the imp
 
 C2259 can also occur because of conformance work that was done in Visual Studio 2005, **`/Zc:wchar_t`** is now on by default. In this situation, C2599 can be resolved either by compiling with **`/Zc:wchar_t-`**, to get the behavior from previous versions, or preferably, by updating your types so they're compatible. For more information, see [`/Zc:wchar_t` (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
-The following sample generates C2259:
+The following example generates C2259:
 
 ```cpp
 // C2259b.cpp
@@ -83,7 +83,7 @@ public:
 MyClass4 y;
 ```
 
-The following sample generates C2259:
+The following example generates C2259:
 
 ```cpp
 // C2259c.cpp

@@ -16,7 +16,7 @@ A member of a class, structure, or union with local scope is declared **`static`
 
 ## Example
 
-The following sample generates C2246:
+The following example generates C2246:
 
 ```cpp
 // C2246.cpp

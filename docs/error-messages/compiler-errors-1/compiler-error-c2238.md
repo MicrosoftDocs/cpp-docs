@@ -16,7 +16,7 @@ An incorrect token was found.
 
 ## Example
 
-The following sample generates C2238:
+The following example generates C2238:
 
 ```cpp
 // C2238.cpp

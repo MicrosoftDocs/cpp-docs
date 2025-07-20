@@ -16,7 +16,7 @@ A pure virtual function is declared with incorrect syntax.
 
 ## Example
 
-The following sample generates C2258:
+The following example generates C2258:
 
 ```cpp
 // C2258.cpp

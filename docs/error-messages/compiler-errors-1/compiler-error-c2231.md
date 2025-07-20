@@ -16,7 +16,7 @@ The operand to the left of the member-selection operation (.) is a pointer inste
 
 ## Example
 
-The following sample generates C2231:
+The following example generates C2231:
 
 ```c
 // C2231.c

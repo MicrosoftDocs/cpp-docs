@@ -16,7 +16,7 @@ The derived class inherits more than one override of a virtual function of a vir
 
 ## Example
 
-The following sample generates C2286:
+The following example generates C2286:
 
 ```cpp
 // C2250.cpp

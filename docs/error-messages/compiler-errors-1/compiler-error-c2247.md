@@ -16,7 +16,7 @@ ms.assetid: 72efa03e-615e-4ef9-aede-0a98654b20fd
 
 ## Examples
 
-The following sample generates C2247:
+The following example generates C2247:
 
 ```cpp
 // C2247.cpp

@@ -16,7 +16,7 @@ Members of a derived class can't access **`private`** members of a base class. Y
 
 ## Examples
 
-The following sample generates C2248 when `private` or `protected` members of a class are accessed from outside the class. To fix this issue, don't access these members directly outside the class. Use `public` member data and member functions to interact with the class.
+The following example generates C2248 when `private` or `protected` members of a class are accessed from outside the class. To fix this issue, don't access these members directly outside the class. Use `public` member data and member functions to interact with the class.
 
 ```cpp
 // C2248_access.cpp

@@ -16,7 +16,7 @@ A nonvirtual function is specified as pure **`virtual`**.
 
 ## Examples
 
-The following sample generates C2253:
+The following example generates C2253:
 
 ```cpp
 // C2253.cpp
@@ -28,7 +28,7 @@ public:
 };
 ```
 
-The following sample generates C2253:
+The following example generates C2253:
 
 ```cpp
 // C2253_2.cpp

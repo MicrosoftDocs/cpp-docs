@@ -16,7 +16,7 @@ A destructor or constructor cannot be specified as a [friend](../../cpp/friend-c
 
 ## Example
 
-The following sample generates C2256:
+The following example generates C2256:
 
 ```cpp
 // C2256.cpp

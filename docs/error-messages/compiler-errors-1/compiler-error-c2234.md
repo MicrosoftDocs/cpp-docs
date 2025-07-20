@@ -16,7 +16,7 @@ Because pointers to references are not allowed, arrays of references are not pos
 
 ## Example
 
-The following sample generates C2234:
+The following example generates C2234:
 
 ```cpp
 // C2234.cpp
