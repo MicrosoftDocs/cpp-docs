@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4335"]
 
 > Mac file format detected: please convert the source file to either DOS or UNIX format
 
+## Remarks
+
 The line termination character of the first line of a source file is the old Macintosh style ('\r') as opposed to UNIX ('\n') or DOS ('\r\n').
 
 This warning is only issued once per translation unit. Therefore, if there are multiple `#include` directives that specify files in Macintosh format, C4335 is emitted once.
