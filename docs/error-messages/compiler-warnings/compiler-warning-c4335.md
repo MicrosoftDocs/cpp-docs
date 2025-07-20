@@ -19,7 +19,7 @@ One way to generate files in Macintosh format is by using the **Advanced Save Op
 
 ## Example
 
-The following sample generates C4335.
+The following example generates C4335:
 
 ```cpp
 // C4335 expected
