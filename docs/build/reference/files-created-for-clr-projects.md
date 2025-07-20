@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Files Created for CLR Projects"
 title: "Files Created for CLR Projects"
-ms.date: "11/04/2016"
+description: "Learn more about: Files Created for CLR Projects"
+ms.date: 11/04/2016
 helpviewer_keywords: ["Visual Studio C++ projects, CLR programming", ".NET applications, C++"]
-ms.assetid: 59ae9020-5f26-4ad0-bbdd-97c2e2023a20
 ---
 # Files Created for CLR Projects
 

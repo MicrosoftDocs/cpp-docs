@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: MFC COM"
 title: "MFC COM"
-ms.date: "09/12/2018"
+description: "Learn more about: MFC COM"
+ms.date: 09/12/2018
 f1_keywords: ["MFC COM (MFC)"]
 helpviewer_keywords: ["MFC, COM support", "MFC ActiveX controls [MFC], COM support in MFC", "MFC COM [MFC]", "ActiveX controls [MFC], COM object model", "Active technology [MFC]", "COM [MFC], MFC support"]
-ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
 ---
 # MFC COM
 
