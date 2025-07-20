@@ -10,6 +10,8 @@ ms.assetid: 2f4e2c2c-b95c-4afe-bbe0-4214cd39d140
 
 > 'identifier' : member access is restricted
 
+## Remarks
+
 Code attempts to access a private or protected member.
 
 ### To fix by using the following possible solutions

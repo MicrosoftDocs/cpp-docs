@@ -10,7 +10,11 @@ ms.assetid: fee74ab9-1997-4615-82fe-e6d1fe3aacd9
 
 > cannot explicitly instantiate template in current scope
 
+## Remarks
+
 The compiler detected a problem with an explicit instantiation of a template.  For example, you cannot explicitly instantiate a template in a function.
+
+## Example
 
 The following sample generates C2252:
 

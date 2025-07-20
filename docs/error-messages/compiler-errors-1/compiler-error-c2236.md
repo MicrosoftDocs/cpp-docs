@@ -10,7 +10,11 @@ ms.assetid: 0b6771a7-a783-4729-9c3d-7a3339c432cc
 
 > unexpected token 'identifier'. Did you forget a ';'?
 
+## Remarks
+
 The identifier is already defined as a type and cannot be overridden by a user-defined type.
+
+## Example
 
 The following sample generates C2236:
 

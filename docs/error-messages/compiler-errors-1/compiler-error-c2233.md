@@ -10,7 +10,11 @@ ms.assetid: 236bdf0b-9607-4f26-a249-d8def0b1333c
 
 > 'identifier' : arrays of objects containing zero-size arrays are illegal
 
+## Remarks
+
 Each object in an array must contain at least one element.
+
+## Example
 
 The following sample generates C2233:
 

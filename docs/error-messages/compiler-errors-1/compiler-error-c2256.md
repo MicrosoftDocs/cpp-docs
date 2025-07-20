@@ -10,7 +10,11 @@ ms.assetid: 171fa2bc-8c72-49cd-afe5-d723b7acd3c5
 
 > illegal use of friend specifier on 'function'
 
+## Remarks
+
 A destructor or constructor cannot be specified as a [friend](../../cpp/friend-cpp.md).
+
+## Example
 
 The following sample generates C2256:
 

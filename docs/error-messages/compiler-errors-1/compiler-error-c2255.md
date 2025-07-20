@@ -10,7 +10,11 @@ ms.assetid: 67dc4cb0-de6b-4405-bd64-d47736367a93
 
 > 'element' : not allowed outside of a class definition
 
+## Remarks
+
 For example, a nonmember function is declared a **`friend`**.
+
+## Example
 
 The following sample generates C2255:
 

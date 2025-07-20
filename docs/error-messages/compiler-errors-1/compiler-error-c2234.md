@@ -10,7 +10,11 @@ ms.assetid: cfa42458-c803-4717-a017-9eca1c0cbfb0
 
 > 'name' : arrays of references are illegal
 
+## Remarks
+
 Because pointers to references are not allowed, arrays of references are not possible.
+
+## Example
 
 The following sample generates C2234:
 

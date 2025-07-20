@@ -10,9 +10,13 @@ ms.assetid: d9911c12-ceb5-4f93-ac47-b44a485215c2
 
 > 'identifier' : unable to match function definition to an existing declaration
 
+## Remarks
+
 An unusual use of the unary + operator was used in front of a function call that did not have parenthesis.
 
 This error only occurs in C++ projects.
+
+## Examples
 
 The following sample generates C2244:
 

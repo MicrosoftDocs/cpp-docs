@@ -10,7 +10,11 @@ ms.assetid: b90065bb-d251-4ba9-8b4c-280ee13fa9c0
 
 > 'conversion type' conversion from 'type1' to 'type2' exists, but is inaccessible
 
+## Remarks
+
 Access protection (**`protected`** or **`private`**) prevented conversion from a pointer to a derived class to a pointer to the base class.
+
+## Example
 
 The following sample generates C2243:
 

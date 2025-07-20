@@ -10,7 +10,11 @@ ms.assetid: 08aaeadf-10ec-485a-b2a6-6e775289082b
 
 > non-existent member function 'function' specified as friend (member function signature does not match any overload)
 
+## Remarks
+
 A function specified as a friend was not found by the compiler.
+
+## Example
 
 The following sample generates C2245:
 

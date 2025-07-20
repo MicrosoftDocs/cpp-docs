@@ -10,7 +10,11 @@ ms.assetid: 72efa03e-615e-4ef9-aede-0a98654b20fd
 
 > 'identifier' not accessible because 'class' uses 'specifier' to inherit from 'class'
 
+## Remarks
+
 `identifier` is inherited from a class declared with private or protected access.
+
+## Examples
 
 The following sample generates C2247:
 

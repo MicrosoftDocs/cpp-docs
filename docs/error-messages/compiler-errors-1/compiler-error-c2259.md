@@ -10,11 +10,15 @@ ms.assetid: e458236f-bdea-4786-9aa6-a98d8bffa5f4
 
 > '*class*' : cannot instantiate abstract class
 
+## Remarks
+
 Code declares an instance of an abstract class or structure.
 
 You can't instantiate a class or structure with one or more pure virtual functions. To instantiate objects of a derived class, the derived class must override each pure virtual function.
 
 For more information, see [Implicitly abstract classes](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Implicitly_abstract_classes).
+
+## Examples
 
 The following sample generates C2259:
 

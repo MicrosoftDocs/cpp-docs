@@ -10,7 +10,11 @@ ms.assetid: f990986f-5c7d-4af4-a25c-b35540f1e217
 
 > 'identifier' : ambiguous inheritance of 'class::member'
 
+## Remarks
+
 The derived class inherits more than one override of a virtual function of a virtual base class. These overrides are ambiguous in the derived class.
+
+## Example
 
 The following sample generates C2286:
 

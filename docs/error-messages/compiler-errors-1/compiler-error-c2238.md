@@ -10,7 +10,11 @@ ms.assetid: 3d53060c-d6b7-4603-b9cf-d7c65eb64cd2
 
 > unexpected token(s) preceding 'token'
 
+## Remarks
+
 An incorrect token was found.
+
+## Example
 
 The following sample generates C2238:
 

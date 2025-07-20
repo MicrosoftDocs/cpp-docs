@@ -10,7 +10,11 @@ ms.assetid: 105eaa87-befb-4ecb-9a3f-e09e14d2f5bf
 
 > illegal pure syntax, must be '= 0'
 
+## Remarks
+
 A pure virtual function is declared with incorrect syntax.
+
+## Example
 
 The following sample generates C2258:
 
