@@ -208,7 +208,7 @@ TRUE if the specified view was made active, FALSE if the view's index is invalid
 
 ### Remarks
 
-For more information see [CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab).
+For more information, see [CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab).
 
 ## See also
 
