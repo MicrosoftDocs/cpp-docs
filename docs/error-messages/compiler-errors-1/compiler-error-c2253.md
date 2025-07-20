@@ -8,7 +8,7 @@ ms.assetid: bd6445ae-b2c1-4669-9657-a8f4acf80b16
 ---
 # Compiler Error C2253
 
-'function' : pure specifier or abstract override specifier only allowed on virtual function
+> 'function' : pure specifier or abstract override specifier only allowed on virtual function
 
 A nonvirtual function is specified as pure **`virtual`**.
 

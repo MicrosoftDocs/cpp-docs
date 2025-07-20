@@ -8,7 +8,7 @@ ms.assetid: 72efa03e-615e-4ef9-aede-0a98654b20fd
 ---
 # Compiler Error C2247
 
-'identifier' not accessible because 'class' uses 'specifier' to inherit from 'class'
+> 'identifier' not accessible because 'class' uses 'specifier' to inherit from 'class'
 
 `identifier` is inherited from a class declared with private or protected access.
 

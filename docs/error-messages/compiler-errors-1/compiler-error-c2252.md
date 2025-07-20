@@ -8,7 +8,7 @@ ms.assetid: fee74ab9-1997-4615-82fe-e6d1fe3aacd9
 ---
 # Compiler Error C2252
 
-cannot explicitly instantiate template in current scope
+> cannot explicitly instantiate template in current scope
 
 The compiler detected a problem with an explicit instantiation of a template.  For example, you cannot explicitly instantiate a template in a function.
 

@@ -8,7 +8,7 @@ ms.assetid: 76f302b7-30a7-4a81-9a39-b4edde33b54c
 ---
 # Compiler Error C2232
 
-'->' : left operand has 'class-key' type, use '.'
+> '->' : left operand has 'class-key' type, use '.'
 
 The operand to the left of the `->` operator is not a pointer. Use the period (.) operator for a class, structure, or union.
 

@@ -8,7 +8,7 @@ ms.assetid: 105eaa87-befb-4ecb-9a3f-e09e14d2f5bf
 ---
 # Compiler Error C2258
 
-illegal pure syntax, must be '= 0'
+> illegal pure syntax, must be '= 0'
 
 A pure virtual function is declared with incorrect syntax.
 

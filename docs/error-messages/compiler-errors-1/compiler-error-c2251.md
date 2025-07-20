@@ -8,7 +8,7 @@ ms.assetid: fefe050c-f8d3-4316-b237-8007dbcdd3bf
 ---
 # Compiler Error C2251
 
-namespace 'namespace' does not have a member 'member' - Did you mean 'member'?
+> namespace 'namespace' does not have a member 'member' - Did you mean 'member'?
 
 The compiler was not able to find an identifier in the specified namespace.
 

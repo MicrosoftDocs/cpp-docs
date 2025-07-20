@@ -8,7 +8,7 @@ ms.assetid: 3d53060c-d6b7-4603-b9cf-d7c65eb64cd2
 ---
 # Compiler Error C2238
 
-unexpected token(s) preceding 'token'
+> unexpected token(s) preceding 'token'
 
 An incorrect token was found.
 

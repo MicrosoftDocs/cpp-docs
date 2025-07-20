@@ -8,7 +8,7 @@ ms.assetid: cfa42458-c803-4717-a017-9eca1c0cbfb0
 ---
 # Compiler Error C2234
 
-'name' : arrays of references are illegal
+> 'name' : arrays of references are illegal
 
 Because pointers to references are not allowed, arrays of references are not possible.
 

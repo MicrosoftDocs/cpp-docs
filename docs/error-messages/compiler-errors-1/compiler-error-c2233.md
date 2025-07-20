@@ -8,7 +8,7 @@ ms.assetid: 236bdf0b-9607-4f26-a249-d8def0b1333c
 ---
 # Compiler Error C2233
 
-'identifier' : arrays of objects containing zero-size arrays are illegal
+> 'identifier' : arrays of objects containing zero-size arrays are illegal
 
 Each object in an array must contain at least one element.
 

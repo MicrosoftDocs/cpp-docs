@@ -8,7 +8,7 @@ ms.assetid: 08aaeadf-10ec-485a-b2a6-6e775289082b
 ---
 # Compiler Error C2245
 
-non-existent member function 'function' specified as friend (member function signature does not match any overload)
+> non-existent member function 'function' specified as friend (member function signature does not match any overload)
 
 A function specified as a friend was not found by the compiler.
 

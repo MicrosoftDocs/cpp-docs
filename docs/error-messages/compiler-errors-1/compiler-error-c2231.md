@@ -8,7 +8,7 @@ ms.assetid: 677c5c66-d30f-4c3b-bbb9-760858d56477
 ---
 # Compiler Error C2231
 
-'.' : left operand points to 'class-key', use '->'
+> '.' : left operand points to 'class-key', use '->'
 
 The operand to the left of the member-selection operation (.) is a pointer instead of a class, structure, or union.
 

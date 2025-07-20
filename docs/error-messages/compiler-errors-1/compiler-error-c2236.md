@@ -8,7 +8,7 @@ ms.assetid: 0b6771a7-a783-4729-9c3d-7a3339c432cc
 ---
 # Compiler Error C2236
 
-unexpected token 'identifier'. Did you forget a ';'?
+> unexpected token 'identifier'. Did you forget a ';'?
 
 The identifier is already defined as a type and cannot be overridden by a user-defined type.
 

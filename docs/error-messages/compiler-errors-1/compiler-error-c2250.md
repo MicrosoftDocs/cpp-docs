@@ -8,7 +8,7 @@ ms.assetid: f990986f-5c7d-4af4-a25c-b35540f1e217
 ---
 # Compiler Error C2250
 
-'identifier' : ambiguous inheritance of 'class::member'
+> 'identifier' : ambiguous inheritance of 'class::member'
 
 The derived class inherits more than one override of a virtual function of a virtual base class. These overrides are ambiguous in the derived class.
 

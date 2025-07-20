@@ -8,7 +8,7 @@ ms.assetid: 2f4e2c2c-b95c-4afe-bbe0-4214cd39d140
 ---
 # Compiler Error C2241
 
-'identifier' : member access is restricted
+> 'identifier' : member access is restricted
 
 Code attempts to access a private or protected member.
 
