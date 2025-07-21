@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: _acmdln, _tcmdln, _wcmdln"
 title: "_acmdln, _tcmdln, _wcmdln"
-ms.date: "11/04/2016"
+description: "Learn more about: _acmdln, _tcmdln, _wcmdln"
+ms.date: 11/04/2016
 api_name: ["_wcmdln", "_acmdln"]
 api_location: ["msvcrt.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_acmdln", "_wcmdln", "_tcmdln"]
 helpviewer_keywords: ["_wcmdln global variable", "wcmdln global variable", "_acmdln global variable", "_tcmdln global variable", "tcmdln global variable", "acmdln global variable"]
-ms.assetid: 4fc0a6a0-3f93-420a-a19f-5276061ba539
 ---
 # `_acmdln`, `_tcmdln`, `_wcmdln`
 
@@ -24,6 +23,7 @@ wchar_t * _wcmdln;
    #define _tcmdln _wcmdln
 #else
    #define _tcmdln _acmdln
+#endif
 ```
 
 ## Remarks
@@ -32,4 +32,4 @@ These CRT internal variables store the complete command line. They're exposed in
 
 ## See also
 
-[Global variables](./global-variables.md)
+[Global variables](global-variables.md)
