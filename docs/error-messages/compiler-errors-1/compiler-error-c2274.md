@@ -18,7 +18,7 @@ This error can be caused by trying to access a user-defined type conversion. Use
 
 ## Example
 
-The following sample generates C2286:
+The following example generates C2286:
 
 ```cpp
 // C2274.cpp

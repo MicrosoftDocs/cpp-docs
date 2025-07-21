@@ -16,7 +16,7 @@ A local function is declared **`static`**. Static functions must have global sco
 
 ## Example
 
-The following sample generates C2267:
+The following example generates C2267:
 
 ```cpp
 // C2267.cpp

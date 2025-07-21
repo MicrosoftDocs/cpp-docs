@@ -16,7 +16,7 @@ You cannot take the address of a member function.
 
 ## Example
 
-The following sample generates C2277:
+The following example generates C2277:
 
 ```cpp
 // C2277.cpp

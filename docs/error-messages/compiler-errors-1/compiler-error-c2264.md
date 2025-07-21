@@ -16,7 +16,7 @@ The function cannot be called due to an incorrect definition or declaration.
 
 ## Example
 
-The following sample generates C2264:
+The following example generates C2264:
 
 ```cpp
 // C2264.cpp

@@ -16,7 +16,7 @@ A function defined in your source code has the same name as an internal compiler
 
 ## Example
 
-The following sample generates C2268:
+The following example generates C2268:
 
 ```c
 // C2268.c

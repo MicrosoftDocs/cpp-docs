@@ -16,7 +16,7 @@ An expression uses the `->` operator with a **`typedef`** identifier.
 
 ## Example
 
-The following sample generates C2275:
+The following example generates C2275:
 
 ```cpp
 // C2275.cpp

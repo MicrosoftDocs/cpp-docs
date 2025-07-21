@@ -16,7 +16,7 @@ A class is declared with a simpler representation than required.
 
 ## Example
 
-The following sample generates C2287:
+The following example generates C2287:
 
 ```cpp
 // C2287.cpp

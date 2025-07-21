@@ -17,7 +17,7 @@ Error `C2276` is often caused when you attempt to create a pointer-to-member by 
 
 ## Example
 
-This sample shows several ways C2276 may occur, and how to fix them:
+This example shows several ways C2276 may occur, and how to fix them:
 
 ```cpp
 // C2276.cpp

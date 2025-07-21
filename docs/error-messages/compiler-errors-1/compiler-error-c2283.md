@@ -15,7 +15,7 @@ A member function of an unnamed class or structure is declared with a pure speci
 
 ## Example
 
-The following sample generates C2283:
+The following example generates C2283:
 
 ```cpp
 // C2283.cpp

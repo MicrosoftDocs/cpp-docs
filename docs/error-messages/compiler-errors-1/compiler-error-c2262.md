@@ -16,7 +16,7 @@ The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute
 
 ## Example
 
-The following sample generates C2262.
+The following example generates C2262.
 
 ```cpp
 // C2262.cpp

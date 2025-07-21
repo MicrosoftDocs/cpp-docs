@@ -18,7 +18,7 @@ For more information, see [Inheritance Keywords](../../cpp/inheritance-keywords.
 
 ## Example
 
-The following sample generates C2286:
+The following example generates C2286:
 
 ```cpp
 // C2286.cpp

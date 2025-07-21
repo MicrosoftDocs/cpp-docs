@@ -16,7 +16,7 @@ A type declaration or definition uses a type qualifier (**`const`**, **`volatile
 
 ## Example
 
-The following sample generates C2286:
+The following example generates C2286:
 
 ```cpp
 // C2289.cpp

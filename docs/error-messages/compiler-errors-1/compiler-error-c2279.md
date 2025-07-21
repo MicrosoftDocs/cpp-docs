@@ -16,7 +16,7 @@ Under **/Za**, [exception specifications](../../cpp/exception-specifications-thr
 
 ## Example
 
-The following sample generates C2279:
+The following example generates C2279:
 
 ```cpp
 // C2279.cpp

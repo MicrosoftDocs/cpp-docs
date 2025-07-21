@@ -16,7 +16,7 @@ A **`static`** member function is declared with a memory-model specifier, such a
 
 ## Example
 
-The following sample generates C2272:
+The following example generates C2272:
 
 ```cpp
 // C2272.cpp

@@ -16,7 +16,7 @@ The operator (**`new`** or **`delete`**) is declared with a memory-model specifi
 
 ## Example
 
-The following sample generates C2271:
+The following example generates C2271:
 
 ```cpp
 // C2271.cpp

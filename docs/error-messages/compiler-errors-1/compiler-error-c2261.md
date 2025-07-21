@@ -20,7 +20,7 @@ For more on the correct syntax when specifying friend assemblies, see [Friend As
 
 ## Example
 
-The following sample generates C2261.
+The following example generates C2261.
 
 ```cpp
 // C2261.cpp
