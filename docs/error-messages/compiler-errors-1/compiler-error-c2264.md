@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2264"
 title: "Compiler Error C2264"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2264"
+ms.date: 11/04/2016
 f1_keywords: ["C2264"]
 helpviewer_keywords: ["C2264"]
-ms.assetid: 158b72cc-cee9-4a08-bd79-b7a5955345a8
 ---
 # Compiler Error C2264
 

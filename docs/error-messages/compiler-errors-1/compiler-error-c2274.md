@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2274"
 title: "Compiler Error C2274"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2274"
+ms.date: 11/04/2016
 f1_keywords: ["C2274"]
 helpviewer_keywords: ["C2274"]
-ms.assetid: 8e874903-f499-45ef-8291-f821eee4cc1c
 ---
 # Compiler Error C2274
 

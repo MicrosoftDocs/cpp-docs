@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2261"
 title: "Compiler Error C2261"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2261"
+ms.date: 11/04/2016
 f1_keywords: ["C2261"]
 helpviewer_keywords: ["C2261"]
-ms.assetid: 60969482-9e83-49b5-9631-a04bc844da12
 ---
 # Compiler Error C2261
 

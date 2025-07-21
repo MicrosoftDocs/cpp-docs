@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2283"
 description: "Learn more about: Compiler Error C2283"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["C2283"]
 helpviewer_keywords: ["C2283"]
 ---

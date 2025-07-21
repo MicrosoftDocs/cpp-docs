@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2273"
 title: "Compiler Error C2273"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2273"
+ms.date: 11/04/2016
 f1_keywords: ["C2273"]
 helpviewer_keywords: ["C2273"]
-ms.assetid: 3c682c66-97bf-4a23-a22c-d9a26a92bf95
 ---
 # Compiler Error C2273
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2279"
 title: "Compiler Error C2279"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2279"
+ms.date: 11/04/2016
 f1_keywords: ["C2279"]
 helpviewer_keywords: ["C2279"]
-ms.assetid: 1b5c88ef-2336-49b8-9ddb-d61f97c73e14
 ---
 # Compiler Error C2279
 

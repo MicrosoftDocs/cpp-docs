@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2271"
 title: "Compiler Error C2271"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2271"
+ms.date: 11/04/2016
 f1_keywords: ["C2271"]
 helpviewer_keywords: ["C2271"]
-ms.assetid: ea47bf57-f55d-4171-8e98-95a71d62820e
 ---
 # Compiler Error C2271
 

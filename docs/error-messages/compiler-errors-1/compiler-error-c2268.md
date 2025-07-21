@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2268"
 title: "Compiler Error C2268"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2268"
+ms.date: 11/04/2016
 f1_keywords: ["C2268"]
 helpviewer_keywords: ["C2268"]
-ms.assetid: 0ed055c9-3c6f-4df2-a5b6-85cf0e01a249
 ---
 # Compiler Error C2268
 

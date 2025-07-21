@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2276"
 title: "Compiler Error C2276"
+description: "Learn more about: Compiler Error C2276"
 ms.date: 03/25/2021
 f1_keywords: ["C2276"]
 helpviewer_keywords: ["C2276"]
