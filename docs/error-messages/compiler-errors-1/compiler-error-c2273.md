@@ -10,9 +10,13 @@ ms.assetid: 3c682c66-97bf-4a23-a22c-d9a26a92bf95
 
 > 'type' : illegal as right side of '->' operator
 
+## Remarks
+
 A type appears as the right operand of a `->` operator.
 
 This error can be caused by trying to access a user-defined type conversion. Use the keyword **`operator`** between -> and `type`.
+
+## Example
 
 The following sample generates C2273:
 

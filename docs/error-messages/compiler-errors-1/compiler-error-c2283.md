@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2283"]
 
 > '*identifier*': pure specifier or abstract override specifier not allowed on unnamed struct
 
+## Remarks
+
 A member function of an unnamed class or structure is declared with a pure specifier, which is not permitted.
+
+## Example
 
 The following sample generates C2283:
 

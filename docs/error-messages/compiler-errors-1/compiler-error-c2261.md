@@ -10,6 +10,8 @@ ms.assetid: 60969482-9e83-49b5-9631-a04bc844da12
 
 > 'string' : assembly reference is invalid and cannot be resolved
 
+## Remarks
+
 A value was not valid.
 
 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> is used to specify a friend assembly. For example, if a.dll wants to specify b.dll as a friend assembly, you would specify (in a.dll): InternalsVisibleTo("b"). The runtime then allows b.dll to access everything in a.dll (except private types).

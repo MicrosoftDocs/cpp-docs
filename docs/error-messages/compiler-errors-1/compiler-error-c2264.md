@@ -10,7 +10,11 @@ ms.assetid: 158b72cc-cee9-4a08-bd79-b7a5955345a8
 
 > 'function' : error in function definition or declaration; function not called
 
+## Remarks
+
 The function cannot be called due to an incorrect definition or declaration.
+
+## Example
 
 The following sample generates C2264:
 

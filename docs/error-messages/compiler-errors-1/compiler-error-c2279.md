@@ -10,7 +10,11 @@ ms.assetid: 1b5c88ef-2336-49b8-9ddb-d61f97c73e14
 
 > exception specification cannot appear in a typedef declaration
 
+## Remarks
+
 Under **/Za**, [exception specifications](../../cpp/exception-specifications-throw-cpp.md) are not allowed in a typedef declaration.
+
+## Example
 
 The following sample generates C2279:
 

@@ -10,6 +10,8 @@ ms.assetid: 078e0201-35cc-42e2-8dbc-6f8cf557b098
 
 > pointers to members of 'identifier' representation is already set to 'inheritance' - declaration ignored
 
+## Remarks
+
 Two different pointer-to-members representations exist for class.
 
 For more information, see [Inheritance Keywords](../../cpp/inheritance-keywords.md).

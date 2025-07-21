@@ -10,7 +10,11 @@ ms.assetid: 64556299-4e1f-4437-88b7-2464fc0b95bb
 
 > 'class': inheritance representation: 'representation1' is less general than the required 'representation2'
 
+## Remarks
+
 A class is declared with a simpler representation than required.
+
+## Example
 
 The following sample generates C2287:
 

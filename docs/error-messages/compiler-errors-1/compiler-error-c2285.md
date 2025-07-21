@@ -10,4 +10,6 @@ ms.assetid: 7b40a1b0-f477-49fa-b762-c3bccd88514e
 
 > pointers to members representation has already been determined - pragma ignored
 
+## Remarks
+
 Two different representations exist for class.
