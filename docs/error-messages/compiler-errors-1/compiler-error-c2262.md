@@ -8,7 +8,7 @@ ms.assetid: 727d1c6e-53e8-40e5-b7b8-6a7ac2011727
 ---
 # Compiler Error C2262
 
-'attribute_specifiers' : InternalsVisibleTo declarations cannot have a version, culture, or processor architecture specified
+> 'attribute_specifiers' : InternalsVisibleTo declarations cannot have a version, culture, or processor architecture specified
 
 The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute was not specified correctly.
 

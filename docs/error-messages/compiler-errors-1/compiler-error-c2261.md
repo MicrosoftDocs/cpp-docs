@@ -8,7 +8,7 @@ ms.assetid: 60969482-9e83-49b5-9631-a04bc844da12
 ---
 # Compiler Error C2261
 
-'string' : assembly reference is invalid and cannot be resolved
+> 'string' : assembly reference is invalid and cannot be resolved
 
 A value was not valid.
 

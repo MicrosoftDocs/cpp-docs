@@ -8,7 +8,7 @@ ms.assetid: 3c682c66-97bf-4a23-a22c-d9a26a92bf95
 ---
 # Compiler Error C2273
 
-'type' : illegal as right side of '->' operator
+> 'type' : illegal as right side of '->' operator
 
 A type appears as the right operand of a `->` operator.
 

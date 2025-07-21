@@ -8,6 +8,6 @@ ms.assetid: 78c0feec-ccde-401b-8335-5b6ea6be8a13
 ---
 # Compiler Error C2290
 
-C++ asm syntax ignored. Use __asm.
+> C++ asm syntax ignored. Use __asm.
 
 The **`asm`** syntax is reserved for future use.

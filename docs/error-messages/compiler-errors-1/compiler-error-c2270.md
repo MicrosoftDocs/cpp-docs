@@ -8,7 +8,7 @@ ms.assetid: b52c068e-0b61-42e7-b775-4d57b3ddcba0
 ---
 # Compiler Error C2270
 
-'function' : modifiers not allowed on nonmember functions
+> 'function' : modifiers not allowed on nonmember functions
 
 A nonmember function is declared with [const](../../cpp/const-cpp.md), [volatile](../../cpp/volatile-cpp.md), or another memory-model modifier.
 

@@ -8,7 +8,7 @@ ms.assetid: 158b72cc-cee9-4a08-bd79-b7a5955345a8
 ---
 # Compiler Error C2264
 
-'function' : error in function definition or declaration; function not called
+> 'function' : error in function definition or declaration; function not called
 
 The function cannot be called due to an incorrect definition or declaration.
 

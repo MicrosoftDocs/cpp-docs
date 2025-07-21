@@ -8,7 +8,7 @@ ms.assetid: 078e0201-35cc-42e2-8dbc-6f8cf557b098
 ---
 # Compiler Error C2286
 
-pointers to members of 'identifier' representation is already set to 'inheritance' - declaration ignored
+> pointers to members of 'identifier' representation is already set to 'inheritance' - declaration ignored
 
 Two different pointer-to-members representations exist for class.
 

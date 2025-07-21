@@ -8,7 +8,7 @@ ms.assetid: ea63bebb-6208-4367-8440-39be07f9c360
 ---
 # Compiler Error C2267
 
-'function' : static functions with block scope are illegal
+> 'function' : static functions with block scope are illegal
 
 A local function is declared **`static`**. Static functions must have global scope.
 

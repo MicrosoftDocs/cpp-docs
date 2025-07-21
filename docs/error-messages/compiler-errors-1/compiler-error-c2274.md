@@ -8,7 +8,7 @@ ms.assetid: 8e874903-f499-45ef-8291-f821eee4cc1c
 ---
 # Compiler Error C2274
 
-'type' : illegal as right side of '.' operator
+> 'type' : illegal as right side of '.' operator
 
 A type appears as the right operand of a member-access (.) operator.
 

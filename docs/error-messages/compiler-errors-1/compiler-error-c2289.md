@@ -8,7 +8,7 @@ ms.assetid: cb41a29e-1b06-47dc-bfce-8d73bd63a0df
 ---
 # Compiler Error C2289
 
-same type qualifier used more than once
+> same type qualifier used more than once
 
 A type declaration or definition uses a type qualifier (**`const`**, **`volatile`**, **`signed`**, or **`unsigned`**) more than once, causing an error under ANSI compatibility (**/Za**).
 

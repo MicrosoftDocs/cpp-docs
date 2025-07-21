@@ -8,7 +8,7 @@ ms.assetid: ea47bf57-f55d-4171-8e98-95a71d62820e
 ---
 # Compiler Error C2271
 
-'operator' : new/delete cannot have formal list modifiers
+> 'operator' : new/delete cannot have formal list modifiers
 
 The operator (**`new`** or **`delete`**) is declared with a memory-model specifier.
 

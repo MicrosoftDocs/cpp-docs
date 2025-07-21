@@ -8,7 +8,7 @@ ms.assetid: 15a83b07-8731-4524-810b-267f65a7844f
 ---
 # Compiler Error C2277
 
-'identifier' : cannot take address of this member function
+> 'identifier' : cannot take address of this member function
 
 You cannot take the address of a member function.
 

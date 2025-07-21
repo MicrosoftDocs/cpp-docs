@@ -8,7 +8,7 @@ ms.assetid: 1b5c88ef-2336-49b8-9ddb-d61f97c73e14
 ---
 # Compiler Error C2279
 
-exception specification cannot appear in a typedef declaration
+> exception specification cannot appear in a typedef declaration
 
 Under **/Za**, [exception specifications](../../cpp/exception-specifications-throw-cpp.md) are not allowed in a typedef declaration.
 

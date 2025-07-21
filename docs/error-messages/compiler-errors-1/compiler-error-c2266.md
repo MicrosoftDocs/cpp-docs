@@ -8,6 +8,6 @@ ms.assetid: 5c267a67-d5a1-4ad7-b6f7-a156510aee35
 ---
 # Compiler Error C2266
 
-'identifier' : reference to a non-constant bounded array is illegal
+> 'identifier' : reference to a non-constant bounded array is illegal
 
 A reference is declared for an array with a nonconstant bound. The array must have constant bounds.
