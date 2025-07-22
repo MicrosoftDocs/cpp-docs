@@ -18,7 +18,7 @@ For example, the compiler may see a declaration where you intended a function ca
 
 ## Example
 
-The following sample generates C2297:
+The following example generates C2297:
 
 ```cpp
 // C2297.cpp

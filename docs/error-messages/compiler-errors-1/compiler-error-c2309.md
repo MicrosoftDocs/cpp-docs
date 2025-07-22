@@ -16,7 +16,7 @@ A catch handler has no parenthesized type.
 
 ## Example
 
-The following sample generates C2309:
+The following example generates C2309:
 
 ```cpp
 // C2309.cpp

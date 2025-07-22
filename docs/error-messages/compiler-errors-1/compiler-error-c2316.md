@@ -18,7 +18,7 @@ Conformance changes in Visual Studio 2015 made this error apply to bad catch sta
 
 ## Example
 
-The following sample generates C2316, and shows a way to fix it:
+The following example generates C2316, and shows a way to fix it:
 
 ```cpp
 // C2316.cpp

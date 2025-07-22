@@ -18,7 +18,7 @@ To resolve C2299, don't make the copy constructor or assignment operator a funct
 
 ## Example
 
-The following sample generates C2299:
+The following example generates C2299:
 
 ```cpp
 // C2299.cpp

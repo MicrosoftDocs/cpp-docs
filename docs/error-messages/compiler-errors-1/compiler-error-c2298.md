@@ -16,7 +16,7 @@ A pointer to member-function expression must call the member function.
 
 ## Examples
 
-The following sample generates C2298.
+The following example generates C2298.
 
 ```cpp
 // C2298.cpp
@@ -50,7 +50,7 @@ int main() {
 }
 ```
 
-The following sample generates C2298.
+The following example generates C2298.
 
 ```cpp
 // C2298_b.cpp

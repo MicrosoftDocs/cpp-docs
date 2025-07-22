@@ -16,7 +16,7 @@ A **`catch`** handler is defined but not preceded by a **`try`** block.
 
 ## Example
 
-The following sample generates C2318:
+The following example generates C2318:
 
 ```cpp
 // C2318.cpp

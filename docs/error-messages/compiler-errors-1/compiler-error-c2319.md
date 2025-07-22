@@ -16,7 +16,7 @@ A **`try`** or **`catch`** block is not found following the **`try`** or **`catc
 
 ## Example
 
-The following sample generates C2319:
+The following example generates C2319:
 
 ```cpp
 // C2319.cpp

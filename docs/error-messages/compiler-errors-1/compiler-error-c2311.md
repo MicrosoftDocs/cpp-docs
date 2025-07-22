@@ -16,7 +16,7 @@ The catch handler for the ellipsis (...) must be the last handler for a throw.
 
 ## Example
 
-The following sample generates C2311:
+The following example generates C2311:
 
 ```cpp
 // C2311.cpp

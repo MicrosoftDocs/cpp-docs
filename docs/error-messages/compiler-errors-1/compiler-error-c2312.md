@@ -16,7 +16,7 @@ Two handlers catch the same exception type.
 
 ## Example
 
-The following sample generates C2312:
+The following example generates C2312:
 
 ```cpp
 // C2312.cpp

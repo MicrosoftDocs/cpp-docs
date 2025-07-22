@@ -16,7 +16,7 @@ Specifiers for **`__based`** modifier must be nonmember pointers.
 
 ## Example
 
-The following sample generates C2293:
+The following example generates C2293:
 
 ```cpp
 // C2293.cpp

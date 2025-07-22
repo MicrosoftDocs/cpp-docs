@@ -16,7 +16,7 @@ A **`try`** block must have at least one catch handler.
 
 ## Example
 
-The following sample generates C2317:
+The following example generates C2317:
 
 ```cpp
 // C2317.cpp

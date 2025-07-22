@@ -16,7 +16,7 @@ A catch handler specified no type or multiple types.
 
 ## Example
 
-The following sample generates C2310:
+The following example generates C2310:
 
 ```cpp
 // C2310.cpp
