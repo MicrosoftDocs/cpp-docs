@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Command-Line Warning D9027"
 title: "Command-Line Warning D9027"
-ms.date: "11/04/2016"
+description: "Learn more about: Command-Line Warning D9027"
+ms.date: 11/04/2016
 f1_keywords: ["D9027"]
 helpviewer_keywords: ["D9027"]
-ms.assetid: 2a29edc5-5649-48f2-9058-2057c747284c
 ---
 # Command-Line Warning D9027
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /Yd (Place Debug Information in Object File)"
 title: "/Yd (Place Debug Information in Object File)"
-ms.date: "11/04/2016"
+description: "Learn more about: /Yd (Place Debug Information in Object File)"
+ms.date: 11/04/2016
 f1_keywords: ["/yd"]
 helpviewer_keywords: ["/Yd compiler option [C++]", "-Yd compiler option [C++]", "debugging [C++], debug information files", "Yd compiler option [C++]"]
-ms.assetid: c5a699fe-65ce-461e-964c-7f5eb2a8320a
 ---
 # /Yd (Place Debug Information in Object File)
 

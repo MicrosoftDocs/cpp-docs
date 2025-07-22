@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Compiler Command-Line Syntax"
 title: "MSVC Compiler Command-Line Syntax"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Command-Line Syntax"
+ms.date: 11/04/2016
 helpviewer_keywords: ["syntax, CL compiler command line", "cl.exe compiler, command-line syntax"]
-ms.assetid: acba2c1c-0803-4a3a-af25-63e849b930a2
 ---
 # Compiler Command-Line Syntax
 
