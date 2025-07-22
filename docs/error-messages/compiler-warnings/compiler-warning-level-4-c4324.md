@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4324"]
 ---
 # Compiler Warning (level 4) C4324
 
-> '*structname*': structure was padded due to alignment specifier
+> '*type*': structure was padded due to alignment specifier
 
 ## Remarks
 
