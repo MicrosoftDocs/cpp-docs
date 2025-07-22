@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4324"
 title: "Compiler Warning (level 4) C4324"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4324"
+ms.date: 07/22/2025
 f1_keywords: ["C4324"]
 helpviewer_keywords: ["C4324"]
 ---
