@@ -11,7 +11,7 @@ helpviewer_keywords: ["C4324"]
 
 ## Remarks
 
-Padding was added at the end of a structure because you specified an alignment specifier, such as [__declspec(align)](../../cpp/align-cpp.md).
+Padding was added at the end of a class/struct/union because you specified an alignment specifier, such as [`alignas`](../../cpp/alignas-specifier.md) or [`__declspec(align)`](../../cpp/align-cpp.md).
 
 ## Example
 
