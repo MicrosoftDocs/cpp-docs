@@ -15,17 +15,21 @@ Padding was added at the end of a class/struct/union because you specified an al
 
 ## Example
 
-For example, the following code generates C4324:
+For example, `S1` and `S2` generates C4324 because padding is added when the specified alignment is greater than the default alignment of `1` and `4` respectively:
 
 ```cpp
 // C4324.cpp
-// compile with: /W4
-struct __declspec(align(32)) A
+// compile with: /W4 /c
+
+struct alignas(4) S1 {};   // C4324
+
+struct alignas(8) S2
 {
-   char a;
+    int i;
 };   // C4324
 
-int main()
+struct alignas(4) S3
 {
-}
+    int i;
+};   // OK
 ```
