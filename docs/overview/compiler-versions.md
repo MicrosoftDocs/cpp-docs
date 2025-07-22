@@ -79,7 +79,7 @@ When the major version changed between Visual Studio 2013 and Visual Studio 2015
 
 An example of a minor change is from Visual Studio 2022 17.1 to Visual Studio 2022 17.2. In that case, `_MSC_VER` changed from 1931 to 1932.
 
-The following table lists the Visual Studio version corresponding to each Visual C++ compiler (`_MSC_VER`), and MSVC toolset release:
+The following table lists the Visual Studio version corresponding to each Visual C++ compiler (`_MSC_VER`) and MSVC toolset release:
 
 | Visual Studio version | `_MSC_VER` | MSVC toolset version |
 |--|--|--|
