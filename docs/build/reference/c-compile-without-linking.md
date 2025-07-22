@@ -34,7 +34,7 @@ Any internal project created in the development environment uses the **/c** opti
 
 The following command line creates the object files FIRST.obj and SECOND.obj. THIRD.obj is ignored.
 
-```
+```cmd
 CL /c FIRST.C SECOND.C THIRD.OBJ
 ```
 

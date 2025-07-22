@@ -44,7 +44,7 @@ m(int)main( )
 
 However, if you compile with:
 
-```
+```cmd
 cl -E test.cpp > test2.cpp
 ```
 
@@ -66,7 +66,7 @@ cl -E test.cpp > test2.cpp
 
 The following command line preprocesses `ADD.C`, preserves comments, adds `#line` directives, and displays the result on the standard output device:
 
-```
+```cmd
 CL /E /C ADD.C
 ```
 

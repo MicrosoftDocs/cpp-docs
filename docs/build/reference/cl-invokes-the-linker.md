@@ -30,7 +30,7 @@ Assume that you are compiling three C source files: MAIN.c, MOD1.c, and MOD2.c. 
 
 To build this program, compile with the following command line:
 
-```
+```cmd
 CL MAIN.c MOD1.C MOD2.C MYGRAPH.lib
 ```
 

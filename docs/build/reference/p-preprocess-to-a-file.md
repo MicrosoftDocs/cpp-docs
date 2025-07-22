@@ -40,7 +40,7 @@ The **/P** option suppresses compilation. It does not produce an .obj file, even
 
 The following command line preprocesses `ADD.C`, preserves comments, adds `#line` directives, and writes the result to a file, `ADD.I`:
 
-```
+```cmd
 CL /P /C ADD.C
 ```
 

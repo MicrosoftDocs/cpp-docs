@@ -46,7 +46,7 @@ You cannot use precompiled headers with the **/EP** option.
 
 The following command line preprocesses file `ADD.C`, preserves comments, and displays the result on the standard output device:
 
-```
+```cmd
 CL /EP /C ADD.C
 ```
 

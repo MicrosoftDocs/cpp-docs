@@ -9,7 +9,7 @@ ms.assetid: acba2c1c-0803-4a3a-af25-63e849b930a2
 
 The CL command line uses the following syntax:
 
-```
+```cmd
 CL [option...] file... [option | file]... [lib...] [@command-file] [/link link-opt...]
 ```
 

@@ -24,7 +24,7 @@ Alternatively, the *pathname* argument can be a device name (AUX, CON, PRN, or N
 
 The following command line sends a mapfile to the printer:
 
-```
+```cmd
 CL /FmPRN HELLO.CPP
 ```
 

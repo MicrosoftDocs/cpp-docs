@@ -42,7 +42,7 @@ This option also names the state (.idb) file used for minimal rebuild and increm
 
 This command line creates a .pdb file named PROG.pdb and an .idb file named PROG.idb:
 
-```
+```cmd
 CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
 ```
 
