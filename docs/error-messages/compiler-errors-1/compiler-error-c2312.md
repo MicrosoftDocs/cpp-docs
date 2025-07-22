@@ -8,7 +8,7 @@ ms.assetid: c8bcfd06-12c1-4323-bb53-ba392d36daa4
 ---
 # Compiler Error C2312
 
-'exception1' : is caught by 'exception2' on line number
+> 'exception1' : is caught by 'exception2' on line number
 
 Two handlers catch the same exception type.
 

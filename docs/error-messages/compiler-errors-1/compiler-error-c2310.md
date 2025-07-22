@@ -8,7 +8,7 @@ ms.assetid: 1969c682-b97e-43fb-b9a9-f783e7ff1710
 ---
 # Compiler Error C2310
 
-catch handlers must specify one type
+> catch handlers must specify one type
 
 A catch handler specified no type or multiple types.
 

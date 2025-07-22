@@ -8,7 +8,7 @@ ms.assetid: 6303d5b5-72cf-42b8-92ce-b1eb48e80d48
 ---
 # Compiler Error C2309
 
-catch handler expected a parenthesized exception declaration
+> catch handler expected a parenthesized exception declaration
 
 A catch handler has no parenthesized type.
 

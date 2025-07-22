@@ -8,7 +8,7 @@ ms.assetid: 25263e6e-f5ba-4d2c-8727-8c2d8ca2e5ce
 ---
 # Compiler Error C2319
 
-'try/catch' must be followed by a compound statement. Missing '{'
+> 'try/catch' must be followed by a compound statement. Missing '{'
 
 A **`try`** or **`catch`** block is not found following the **`try`** or **`catch`** statement. The block must be enclosed in curly braces.
 

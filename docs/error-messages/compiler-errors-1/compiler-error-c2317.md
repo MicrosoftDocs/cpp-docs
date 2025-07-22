@@ -8,7 +8,7 @@ ms.assetid: e44d129b-8d3e-4ce9-9d79-6791ee77f25e
 ---
 # Compiler Error C2317
 
-'try' block starting on line 'number' has no catch handlers
+> 'try' block starting on line 'number' has no catch handlers
 
 A **`try`** block must have at least one catch handler.
 

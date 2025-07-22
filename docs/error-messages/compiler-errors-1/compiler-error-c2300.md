@@ -8,6 +8,6 @@ ms.assetid: bb8fed56-feb0-412b-ae7b-04d48b202b78
 ---
 # Compiler Error C2300
 
-'identifier' : class does not have a destructor called '~identifier'
+> 'identifier' : class does not have a destructor called '~identifier'
 
 The class does not have a destructor with the required name.

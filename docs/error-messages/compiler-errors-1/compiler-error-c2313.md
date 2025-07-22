@@ -8,7 +8,7 @@ ms.assetid: f70eb19b-c0a3-4fb2-ade1-3890a589928d
 ---
 # Compiler Error C2313
 
-'type1' : is caught by reference ('type2') on line number
+> 'type1' : is caught by reference ('type2') on line number
 
 The exception type has two handlers. The type for the second catch is a reference to the type of the first.
 

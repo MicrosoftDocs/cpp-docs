@@ -8,6 +8,6 @@ ms.assetid: ce6c8033-a673-4679-9883-bedec36ae385
 ---
 # Compiler Error C2307
 
-pragma 'pragma' must be outside function if incremental compilation is enabled
+> pragma 'pragma' must be outside function if incremental compilation is enabled
 
 You must place the `data_seg` pragma between functions if you're using incremental compilation.

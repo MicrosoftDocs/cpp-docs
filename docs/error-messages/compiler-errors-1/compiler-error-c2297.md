@@ -8,7 +8,7 @@ ms.assetid: 65849fe5-17e1-4b7e-b50c-f508b05ddaa4
 ---
 # Compiler Error C2297
 
-'operator' : bad right operand
+> 'operator' : bad right operand
 
 The right operand used with `operator` is invalid.
 

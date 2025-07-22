@@ -8,7 +8,7 @@ ms.assetid: 47d270f4-13ce-4c16-81e2-7d67c6c4a540
 ---
 # Compiler Error C2296
 
-'operator' : bad left operand
+> 'operator' : bad left operand
 
 The left operand used with `operator` is invalid.
 
