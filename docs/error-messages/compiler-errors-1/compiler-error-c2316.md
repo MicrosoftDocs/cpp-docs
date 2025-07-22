@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2316"
 title: "Compiler Error C2316"
-ms.date: "07/08/2019"
+description: "Learn more about: Compiler Error C2316"
+ms.date: 07/08/2019
 f1_keywords: ["C2316"]
 helpviewer_keywords: ["C2316"]
-ms.assetid: 9ad08eb5-060b-4eb0-8d66-0dc134f7bf67
 ---
 # Compiler Error C2316
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2293"
 title: "Compiler Error C2293"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2293"
+ms.date: 11/04/2016
 f1_keywords: ["C2293"]
 helpviewer_keywords: ["C2293"]
-ms.assetid: 17e7b4e2-368b-4dd7-a01b-d82be60f8e56
 ---
 # Compiler Error C2293
 

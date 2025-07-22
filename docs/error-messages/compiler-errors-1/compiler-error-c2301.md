@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2301"
 title: "Compiler Error C2301"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2301"
+ms.date: 11/04/2016
 f1_keywords: ["C2301"]
 helpviewer_keywords: ["C2301"]
-ms.assetid: d294a1a2-dc7a-4e18-90b3-747e1a8c51ee
 ---
 # Compiler Error C2301
 

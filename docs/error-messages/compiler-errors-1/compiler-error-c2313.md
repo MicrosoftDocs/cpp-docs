@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2313"
 title: "Compiler Error C2313"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2313"
+ms.date: 11/04/2016
 f1_keywords: ["C2313"]
 helpviewer_keywords: ["C2313"]
-ms.assetid: f70eb19b-c0a3-4fb2-ade1-3890a589928d
 ---
 # Compiler Error C2313
 
