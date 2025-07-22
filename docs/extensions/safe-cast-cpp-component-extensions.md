@@ -102,7 +102,7 @@ An expression that evaluates to a handle to a reference or value type, a value t
 
 The expression `safe_cast<`*type-id*`>(`*expression*`)` converts the operand *expression* to an object of type *type-id*.
 
-The compiler accepts a [`static_cast`](../cpp/static-cast-operator.md) in most places that it accepts a **`safe_cast`**.  However, **`safe_cast`** always produces verifiable MSIL, whereas a **`static_cast`** might produce unverifiable MSIL.  For more information on verifiable code, see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [`Peverify.exe` (PEVerify Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool).
+The compiler accepts a [`static_cast`](../cpp/static-cast-operator.md) in most places that it accepts a **`safe_cast`**. However, **`safe_cast`** always produces verifiable MSIL, whereas a **`static_cast`** might produce unverifiable MSIL. For more information on verifiable code, see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [`Peverify.exe` (PEVerify Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool).
 
 Like **`static_cast`**, **`safe_cast`** invokes user-defined conversions.
 
@@ -110,7 +110,7 @@ For more information about casts, see [Casting Operators](../cpp/casting-operato
 
 **`safe_cast`** doesn't apply a **`const_cast`** (cast away **`const`**).
 
-**`safe_cast`** is in the cli namespace.  For more information, see [Platform, default, and cli Namespaces](platform-default-and-cli-namespaces-cpp-component-extensions.md).
+**`safe_cast`** is in the cli namespace. For more information, see [Platform, default, and cli Namespaces](platform-default-and-cli-namespaces-cpp-component-extensions.md).
 
 For more information on **`safe_cast`**, see:
 
@@ -123,7 +123,7 @@ Compiler option: `/clr`
 
 ### Examples
 
-One example of where the compiler doesn't accept a **`static_cast`** but accepts a **`safe_cast`** is for casts between unrelated interface types.  With **`safe_cast`**, the compiler doesn't issue a conversion error and performs a check at runtime to see if the cast is possible.
+One example of where the compiler doesn't accept a **`static_cast`** but accepts a **`safe_cast`** is for casts between unrelated interface types. With **`safe_cast`**, the compiler doesn't issue a conversion error and performs a check at runtime to see if the cast is possible.
 
 ```cpp
 // safe_cast.cpp
