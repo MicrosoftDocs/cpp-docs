@@ -10,6 +10,8 @@ ms.assetid: eb0120ad-c850-4bdd-911d-0361229cc859
 
 > 'operation' : illegal operation on pointer to member function expression
 
+## Remarks
+
 A pointer to member-function expression must call the member function.
 
 ## Examples

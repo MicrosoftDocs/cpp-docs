@@ -10,4 +10,6 @@ ms.assetid: d294a1a2-dc7a-4e18-90b3-747e1a8c51ee
 
 > left of '->~identifier' must point to class/struct/union
 
+## Remarks
+
 The expression to the left of the `->` operator does not evaluate to a pointer to a class, structure, or union.

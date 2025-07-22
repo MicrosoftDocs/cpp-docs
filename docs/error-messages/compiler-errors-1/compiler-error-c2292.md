@@ -10,6 +10,8 @@ ms.assetid: 256b392f-2b8f-4162-b578-e7633984e162
 
 > 'identifier': best case inheritance representation: 'representation1' declared but 'representation2' required
 
+## Example
+
 Compiling the following code with [/vmb](../../build/reference/vmb-vmg-representation-method.md) ("Best-case always" representation) causes C2292.
 
 ```cpp

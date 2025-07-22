@@ -10,4 +10,6 @@ ms.assetid: d1eaf101-077d-4c43-97ac-410efd5b6fc9
 
 > concatenating mismatched strings
 
+## Remarks
+
 Both wide and non-wide character strings were specified for concatenation. You cannot concatenate a wide character string and non-wide character string.

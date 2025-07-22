@@ -10,7 +10,11 @@ ms.assetid: 1969c682-b97e-43fb-b9a9-f783e7ff1710
 
 > catch handlers must specify one type
 
+## Remarks
+
 A catch handler specified no type or multiple types.
+
+## Example
 
 The following sample generates C2310:
 

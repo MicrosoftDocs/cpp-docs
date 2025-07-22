@@ -10,7 +10,11 @@ ms.assetid: 1aff9bd5-ed0b-4db6-bbc0-01ac89850cf2
 
 > 'exception' : is caught by '...' on line number
 
+## Remarks
+
 The catch handler for the ellipsis (...) must be the last handler for a throw.
+
+## Example
 
 The following sample generates C2311:
 

@@ -10,7 +10,11 @@ ms.assetid: 6303d5b5-72cf-42b8-92ce-b1eb48e80d48
 
 > catch handler expected a parenthesized exception declaration
 
+## Remarks
+
 A catch handler has no parenthesized type.
+
+## Example
 
 The following sample generates C2309:
 

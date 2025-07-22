@@ -10,7 +10,11 @@ ms.assetid: c8bcfd06-12c1-4323-bb53-ba392d36daa4
 
 > 'exception1' : is caught by 'exception2' on line number
 
+## Remarks
+
 Two handlers catch the same exception type.
+
+## Example
 
 The following sample generates C2312:
 

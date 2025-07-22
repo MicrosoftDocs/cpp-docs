@@ -10,7 +10,11 @@ ms.assetid: f70eb19b-c0a3-4fb2-ade1-3890a589928d
 
 > 'type1' : is caught by reference ('type2') on line number
 
+## Remarks
+
 The exception type has two handlers. The type for the second catch is a reference to the type of the first.
+
+## Example
 
 The following sample generates C2313:
 

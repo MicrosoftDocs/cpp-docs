@@ -10,9 +10,13 @@ ms.assetid: 47d270f4-13ce-4c16-81e2-7d67c6c4a540
 
 > 'operator' : bad left operand
 
+## Remarks
+
 The left operand used with `operator` is invalid.
 
 For example, the compiler may see a declaration where you intended a function call.
+
+## Example
 
 The following sample generates C2296:
 

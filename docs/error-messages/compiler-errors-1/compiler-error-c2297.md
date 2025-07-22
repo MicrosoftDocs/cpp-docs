@@ -10,9 +10,13 @@ ms.assetid: 65849fe5-17e1-4b7e-b50c-f508b05ddaa4
 
 > 'operator' : bad right operand
 
+## Remarks
+
 The right operand used with `operator` is invalid.
 
 For example, the compiler may see a declaration where you intended a function call.
+
+## Example
 
 The following sample generates C2297:
 
