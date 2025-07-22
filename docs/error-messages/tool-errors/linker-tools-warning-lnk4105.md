@@ -16,7 +16,7 @@ If you do not need to override the existing environmental library settings, remo
 
 ## Example
 
-```
+```cmd
 link /libpath:c:\filepath\lib bar.obj
 ```
 
