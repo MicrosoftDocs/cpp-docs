@@ -86,12 +86,12 @@ The following table lists the Visual C++ compiler `_MSC_VER` for each correspond
 | Visual Studio 6.0 | 1200 | 6.0 |
 | Visual Studio .NET 2002 (7.0) | 1300 | 7.0 |
 | Visual Studio .NET 2003 (7.1) | 1310 | 7.1 |
-| Visual Studio 2005 (8.0) | 1400 | 8.00 |
-| Visual Studio 2008 (9.0) | 1500 | 9.00 |
-| Visual Studio 2010 (10.0) | 1600 | 10.00 |
-| Visual Studio 2012 (11.0) | 1700 | 11.00 |
-| Visual Studio 2013 (12.0) | 1800 | 12.00 |
-| Visual Studio 2015 (14.0) | 1900 | 14.00 |
+| Visual Studio 2005 (8.0) | 1400 | 8.0 |
+| Visual Studio 2008 (9.0) | 1500 | 9.0 |
+| Visual Studio 2010 (10.0) | 1600 | 10.0 |
+| Visual Studio 2012 (11.0) | 1700 | 11.0 |
+| Visual Studio 2013 (12.0) | 1800 | 12.0 |
+| Visual Studio 2015 (14.0) | 1900 | 14.0 |
 | Visual Studio 2017 RTW (15.0) | 1910 | 14.10 |
 | Visual Studio 2017 version 15.3 | 1911 | 14.11 |
 | Visual Studio 2017 version 15.5 | 1912 | 14.12 |
