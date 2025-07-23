@@ -5,11 +5,10 @@ ms.date: "10/12/2018"
 ms.topic: "reference"
 f1_keywords: ["safe_cast", "safe_cast_cpp", "stdcli::language::safe_cast"]
 helpviewer_keywords: ["safe_cast keyword [C++]"]
-ms.assetid: 4fa688bf-a8ec-49bc-a4c5-f48134efa4f7
 ---
 # safe_cast (C++/CLI and C++/CX)
 
-The **safe_cast** operation returns the specified expression as the specified type, if successful; otherwise, throws `InvalidCastException`.
+The **`safe_cast`** operation returns the specified expression as the specified type. If the operation isn't successful, it throws an `InvalidCastException`.
 
 ## All Runtimes
 
@@ -23,7 +22,7 @@ The **safe_cast** operation returns the specified expression as the specified ty
 
 ## Windows Runtime
 
-**safe_cast** allows you to change the type of a specified expression. In situations where you fully expect a variable or parameter to be convertible to a certain type, you can use **safe_cast** without a **try-catch** block to detect programming errors during development. For more information, see [Casting (C++/CX)](../cppcx/casting-c-cx.md).
+Use **`safe_cast`** to change the type of a specified expression. If you expect a variable or parameter to be convertible to a certain type, use **`safe_cast`** without a **try-catch** block to detect programming errors during development. For more information, see [Casting (C++/CX)](../cppcx/casting-c-cx.md).
 
 ### Syntax
 
@@ -41,7 +40,7 @@ An expression that evaluates to a handle to a reference or value type, a value t
 
 ### Remarks
 
-**safe_cast** throws `InvalidCastException` if it cannot convert *expression* to the type specified by *type-id*. To catch `InvalidCastException`, specify the [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md) compiler option, and use a **try/catch** statement.
+**`safe_cast`** throws `InvalidCastException` if it can't convert *expression* to the type specified by *type-id*. To catch `InvalidCastException`, specify the [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md) compiler option, and use a **try/catch** statement.
 
 ### Requirements
 
@@ -49,7 +48,7 @@ Compiler option: `/ZW`
 
 ### Examples
 
-The following code example demonstrates how to use **safe_cast** with the Windows Runtime.
+The following code example demonstrates how to use **`safe_cast`** with the Windows Runtime.
 
 ```cpp
 // safe_cast_ZW.cpp
@@ -83,7 +82,7 @@ Caught expected exception: InvalidCastException
 
 ## Common Language Runtime
 
-**safe_cast** allows you to change the type of an expression and generate verifiable MSIL code.
+**`safe_cast`** changes the type of an expression and generates verifiable MSIL code.
 
 ### Syntax
 
@@ -93,30 +92,29 @@ Caught expected exception: InvalidCastException
 
 ### Parameters
 
-*type-id*<br/>
+*`type-id`*\
 A handle to a reference or value type, a value type, or a tracking reference to a reference or value type.
 
-*expression*<br/>
+*`expression`*
 An expression that evaluates to a handle to a reference or value type, a value type, or a tracking reference to a reference or value type.
 
 ### Remarks
 
 The expression `safe_cast<`*type-id*`>(`*expression*`)` converts the operand *expression* to an object of type *type-id*.
 
-The compiler will accept a [static_cast](../cpp/static-cast-operator.md) in most places that it will accept a **safe_cast**.  However, **safe_cast** is guaranteed to produce verifiable MSIL, whereas a **`static_cast`** could produce unverifiable MSIL.  See [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [Peverify.exe (PEVerify Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) for more information on verifiable code.
+The compiler accepts a [`static_cast`](../cpp/static-cast-operator.md) in most places that it accepts a **`safe_cast`**. However, **`safe_cast`** always produces verifiable MSIL, whereas a **`static_cast`** might produce unverifiable MSIL. For more information on verifiable code, see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [`Peverify.exe` (PEVerify Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool).
 
-Like **`static_cast`**, **safe_cast** invokes user-defined conversions.
+Like **`static_cast`**, **`safe_cast`** invokes user-defined conversions.
 
 For more information about casts, see [Casting Operators](../cpp/casting-operators.md).
 
-**safe_cast** does not apply a **`const_cast`** (cast away **`const`**).
+**`safe_cast`** doesn't apply a **`const_cast`** (cast away **`const`**).
 
-**safe_cast** is in the cli namespace.  See [Platform, default, and cli Namespaces](platform-default-and-cli-namespaces-cpp-component-extensions.md) for more information.
+**`safe_cast`** is in the cli namespace. For more information, see [Platform, default, and cli Namespaces](platform-default-and-cli-namespaces-cpp-component-extensions.md).
 
-For more information on **safe_cast**, see:
+For more information on **`safe_cast`**, see:
 
 - [C-Style Casts with /clr (C++/CLI)](c-style-casts-with-clr-cpp-cli.md)
-
 - [How to: Use safe_cast in C++/CLI](../dotnet/how-to-use-safe-cast-in-cpp-cli.md)
 
 ### Requirements
@@ -125,7 +123,7 @@ Compiler option: `/clr`
 
 ### Examples
 
-One example of where the compiler will not accept a **`static_cast`** but will accept a **safe_cast** is for casts between unrelated interface types.  With **safe_cast**, the compiler will not issue a conversion error and will perform a check at runtime to see if the cast is possible
+One example of where the compiler doesn't accept a **`static_cast`** but accepts a **`safe_cast`** is for casts between unrelated interface types. With **`safe_cast`**, the compiler doesn't issue a conversion error and performs a check at runtime to see if the cast is possible.
 
 ```cpp
 // safe_cast.cpp
