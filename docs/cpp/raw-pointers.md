@@ -119,8 +119,8 @@ int main()
     func_B(*pmc);
     pmc->print(); // "Erika, 3" (original not modified by function)
 
-    delete(pmc); // don't forget to give memory back to operating system!
-   // delete(pmc2); //crash! memory location was already deleted
+    delete pmc; // don't forget to give memory back to operating system!
+    // delete pmc2; //crash! memory location was already deleted
 }
 ```
 
@@ -268,7 +268,7 @@ int main()
     void* p = static_cast<void*>(mc);
     MyClass* mc2 = static_cast<MyClass*>(p);
     std::cout << mc2->name << std::endl; // "Marian"
-    delete(mc);
+    delete mc;
 
     // use operator new to allocate untyped memory block
     void* pvoid = operator new(1000);
