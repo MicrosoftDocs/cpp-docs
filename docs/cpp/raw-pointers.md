@@ -78,7 +78,7 @@ void func_B(MyClass mc)
     // This statement modifies only the local copy of mc.
     mc.num = 21;
     std::cout << "Local copy of mc:";
-    mc.print(); // "Erika, 21"
+    mc.print(); // "Erika:21"
 }
 
 int main()
@@ -99,25 +99,25 @@ int main()
     MyClass* pcopy = &mc;
 
     // Use the -> operator to access the object's public members
-    pmc->print(); // "Nick, 108"
+    pmc->print(); // "Nick:108"
 
     // Copy the pointer. Now pmc and pmc2 point to same object!
     MyClass* pmc2 = pmc;
 
     // Use copied pointer to modify the original object
     pmc2->name = "Erika";
-    pmc->print(); // "Erika, 108"
-    pmc2->print(); // "Erika, 108"
+    pmc->print(); // "Erika:108"
+    pmc2->print(); // "Erika:108"
 
     // Pass the pointer to a function.
     func_A(pmc);
-    pmc->print(); // "Erika, 3"
-    pmc2->print(); // "Erika, 3"
+    pmc->print(); // "Erika:3"
+    pmc2->print(); // "Erika:3"
 
     // Dereference the pointer and pass a copy
     // of the pointed-to object to a function
     func_B(*pmc);
-    pmc->print(); // "Erika, 3" (original not modified by function)
+    pmc->print(); // "Erika:3" (original not modified by function)
 
     delete pmc; // don't forget to give memory back to operating system!
     // delete pmc2; //crash! memory location was already deleted
