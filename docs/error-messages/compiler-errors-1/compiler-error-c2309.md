@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2309"
 title: "Compiler Error C2309"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2309"
+ms.date: 11/04/2016
 f1_keywords: ["C2309"]
 helpviewer_keywords: ["C2309"]
-ms.assetid: 6303d5b5-72cf-42b8-92ce-b1eb48e80d48
 ---
 # Compiler Error C2309
 
-catch handler expected a parenthesized exception declaration
+> catch handler expected a parenthesized exception declaration
+
+## Remarks
 
 A catch handler has no parenthesized type.
 
-The following sample generates C2309:
+## Example
+
+The following example generates C2309:
 
 ```cpp
 // C2309.cpp

@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2298"
 title: "Compiler Error C2298"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2298"
+ms.date: 11/04/2016
 f1_keywords: ["C2298"]
 helpviewer_keywords: ["C2298"]
-ms.assetid: eb0120ad-c850-4bdd-911d-0361229cc859
 ---
 # Compiler Error C2298
 
-'operation' : illegal operation on pointer to member function expression
+> 'operation' : illegal operation on pointer to member function expression
+
+## Remarks
 
 A pointer to member-function expression must call the member function.
 
 ## Examples
 
-The following sample generates C2298.
+The following example generates C2298.
 
 ```cpp
 // C2298.cpp
@@ -48,7 +49,7 @@ int main() {
 }
 ```
 
-The following sample generates C2298.
+The following example generates C2298.
 
 ```cpp
 // C2298_b.cpp

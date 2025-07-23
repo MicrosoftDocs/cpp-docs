@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2297"
 title: "Compiler Error C2297"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2297"
+ms.date: 11/04/2016
 f1_keywords: ["C2297"]
 helpviewer_keywords: ["C2297"]
-ms.assetid: 65849fe5-17e1-4b7e-b50c-f508b05ddaa4
 ---
 # Compiler Error C2297
 
-'operator' : bad right operand
+> 'operator' : bad right operand
+
+## Remarks
 
 The right operand used with `operator` is invalid.
 
 For example, the compiler may see a declaration where you intended a function call.
 
-The following sample generates C2297:
+## Example
+
+The following example generates C2297:
 
 ```cpp
 // C2297.cpp
