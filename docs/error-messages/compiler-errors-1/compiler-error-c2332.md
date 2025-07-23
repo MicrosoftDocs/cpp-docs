@@ -10,7 +10,11 @@ ms.assetid: fb05cd68-e271-4bea-9fb7-ef4edb0a26ac
 
 > 'typedef' : missing tag name
 
+## Remarks
+
 The compiler found an incomplete type definition.
+
+## Example
 
 The following sample generates C2332:
 

@@ -10,7 +10,11 @@ ms.assetid: 2636fc1e-d3e7-4e68-8628-3c81a99ba813
 
 > 'function' : error in function declaration; skipping function body
 
+## Remarks
+
 This error occurs after another error, for member functions defined inside their class.
+
+## Example
 
 The following sample generates C2333:
 

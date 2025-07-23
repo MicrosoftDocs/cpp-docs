@@ -10,4 +10,6 @@ ms.assetid: 3a50cb94-8ced-4df4-b602-c48916fa957d
 
 > 'identifier' is not a static member
 
+## Remarks
+
 Nonstatic members of a class or structure cannot be defined.

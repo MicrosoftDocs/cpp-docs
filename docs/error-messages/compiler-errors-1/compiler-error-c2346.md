@@ -10,6 +10,8 @@ ms.assetid: 246145be-5645-4cd6-867c-e3bc39e33dca
 
 > 'function' cannot be compiled as native: reason
 
+## Remarks
+
 The compiler was unable to compile a function to MSIL.
 
 For more information, see [managed, unmanaged](../../preprocessor/managed-unmanaged.md) and [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).

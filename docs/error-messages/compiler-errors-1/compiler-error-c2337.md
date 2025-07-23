@@ -10,7 +10,11 @@ ms.assetid: eccc9178-a15e-42cd-bbd0-3cea7cf2d55b
 
 > '*attribute-name*' : attribute not found
 
+## Remarks
+
 Your code uses an attribute that isn't supported in this context. Or, the attribute isn't available in this version of the compiler. To resolve this issue, remove the unsupported attribute.
+
+## Example
 
 The following sample generates C2337:
 

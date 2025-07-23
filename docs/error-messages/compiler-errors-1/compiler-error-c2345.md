@@ -10,7 +10,11 @@ ms.assetid: e1cc88b0-0223-4d07-975b-fa99956a82bd
 
 > align(value) : illegal alignment value
 
+## Remarks
+
 You passed a value to the [align](../../cpp/align-cpp.md) keyword that is outside the allowable range.
+
+## Example
 
 The following sample generates C2345:
 

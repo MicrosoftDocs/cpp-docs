@@ -10,7 +10,11 @@ ms.assetid: 215f0544-85b0-452d-825f-17a388b6a61c
 
 > 'identifier' : unexpected to the right of 'name'
 
+## Remarks
+
 A destructor is called using an incorrect identifier.
+
+## Example
 
 The following sample generates C2324:
 

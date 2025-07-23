@@ -10,7 +10,11 @@ ms.assetid: e6b0a186-3f2a-4adf-beae-fadd75492bf7
 
 > 'type' : unexpected type to the right of 'name'
 
+## Remarks
+
 A call is made to a destructor of incorrect type.
+
+## Example
 
 The following sample generates C2325:
 

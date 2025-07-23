@@ -10,6 +10,8 @@ ms.assetid: 01a5ea40-de83-4e6f-a4e8-469f441258e0
 
 > 'declarator' : function cannot access 'name'
 
+## Remarks
+
 The code tries to modify a member variable, which is not possible.
 
 ## Example
