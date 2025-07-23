@@ -23,7 +23,7 @@ public:
    TCHAR szText[iSize];
    TCHAR szCommand2[iSize];
    TCHAR szText2[iSize];
-  
+
    static ATLCOLUMNINFO* GetColumnInfo(void* pThis, ULONG* pcCols);
    bool operator==(const CCustomWindowsFile& am)
    {
@@ -45,27 +45,27 @@ ATLCOLUMNINFO* CCustomWindowsFile::GetColumnInfo(void* pThis, ULONG* pcCols)
 {
    static ATLCOLUMNINFO _rgColumns[5];
    ULONG ulCols = 0;
-  
+
    // Check the property flag for bookmarks; if it is set, set the zero
    // ordinal entry in the column map with the bookmark information.
    CCustomRowset* pRowset = (CCustomRowset*) pThis;
    CComQIPtr<IRowsetInfo, &IID_IRowsetInfo> spRowsetProps = pRowset;
-  
+
    CDBPropIDSet set(DBPROPSET_ROWSET);
    set.AddPropertyID(DBPROP_BOOKMARKS);
    DBPROPSET* pPropSet = NULL;
    ULONG ulPropSet = 0;
    HRESULT hr;
-  
+
    if (spRowsetProps)
       hr = spRowsetProps->GetProperties(1, &set, &ulPropSet, &pPropSet);
-  
+
    if (pPropSet)
    {
       CComVariant var = pPropSet->rgProperties[0].vValue;
       CoTaskMemFree(pPropSet->rgProperties);
       CoTaskMemFree(pPropSet);
-  
+
       if (SUCCEEDED(hr) && (var.boolVal == VARIANT_TRUE))
       {
          ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),
@@ -74,7 +74,7 @@ ATLCOLUMNINFO* CCustomWindowsFile::GetColumnInfo(void* pThis, ULONG* pcCols)
          ulCols++;
       }
    }
-  
+
    // Next, set the other columns up.
    ADD_COLUMN_ENTRY(ulCols, OLESTR("Command"), 1, 256, DBTYPE_STR, 0xFF, 0xFF,
       GUID_NULL, CCustomWindowsFile, szCommand)
@@ -82,17 +82,17 @@ ATLCOLUMNINFO* CCustomWindowsFile::GetColumnInfo(void* pThis, ULONG* pcCols)
    ADD_COLUMN_ENTRY(ulCols, OLESTR("Text"), 2, 256, DBTYPE_STR, 0xFF, 0xFF,
       GUID_NULL, CCustomWindowsFile, szText)
    ulCols++;
-  
+
    ADD_COLUMN_ENTRY(ulCols, OLESTR("Command2"), 3, 256, DBTYPE_STR, 0xFF, 0xFF,
       GUID_NULL, CCustomWindowsFile, szCommand2)
    ulCols++;
    ADD_COLUMN_ENTRY(ulCols, OLESTR("Text2"), 4, 256, DBTYPE_STR, 0xFF, 0xFF,
       GUID_NULL, CCustomWindowsFile, szText2)
    ulCols++;
-  
+
    if (pcCols != NULL)
       *pcCols = ulCols;
-  
+
    return _rgColumns;
 }
 ```
@@ -100,9 +100,9 @@ ATLCOLUMNINFO* CCustomWindowsFile::GetColumnInfo(void* pThis, ULONG* pcCols)
 This example uses a static array to hold the column information. If the consumer doesn't want the bookmark column, one entry in the array is unused. To handle the information, you create two array macros: `ADD_COLUMN_ENTRY` and `ADD_COLUMN_ENTRY_EX`. `ADD_COLUMN_ENTRY_EX` takes an extra parameter, *`flags`*, that is needed if you designate a bookmark column.
 
 ```cpp
-////////////////////////////////////////////////////////////////////////  
-// CustomRS.h  
-  
+////////////////////////////////////////////////////////////////////////
+// CustomRS.h
+
 #define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member) \
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \
    _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \
@@ -113,7 +113,7 @@ This example uses a static array to hold the column information. If the consumer
    _rgColumns[ulCols].bPrecision = (BYTE)precision; \
    _rgColumns[ulCols].bScale = (BYTE)scale; \
    _rgColumns[ulCols].cbOffset = offsetof(dataClass, member);
-  
+
 #define ADD_COLUMN_ENTRY_EX(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member, flags) \
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \
    _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \
