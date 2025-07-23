@@ -12,7 +12,7 @@ ms.assetid: 3814bdff-581a-4d3e-8b47-8de6887cea69
 
 ## Remarks
 
-An operator was passed an invalid type.
+The [`new` operator](../../cpp/new-operator-cpp.md) was passed an invalid type.
 
 ## Example: Wrong allocation type
 
