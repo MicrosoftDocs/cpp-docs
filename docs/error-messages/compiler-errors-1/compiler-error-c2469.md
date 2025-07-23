@@ -10,6 +10,8 @@ ms.assetid: 3814bdff-581a-4d3e-8b47-8de6887cea69
 
 > '`new`': cannot allocate '`void`' objects
 
+## Remarks
+
 An operator was passed an invalid type.
 
 The following sample generates C2469:
