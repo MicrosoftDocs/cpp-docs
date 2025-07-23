@@ -7,9 +7,9 @@ ms.assetid: 58522b7a-894e-4b7d-a605-f80e900a7f5f
 ---
 # Dynamically Determining Columns Returned to the Consumer
 
-The PROVIDER_COLUMN_ENTRY macros normally handle the `IColumnsInfo::GetColumnsInfo` call. However, because a consumer might choose to use bookmarks, the provider must be able to change the columns returned depending on whether the consumer asks for a bookmark.
+The `PROVIDER_COLUMN_ENTRY` macros normally handle the `IColumnsInfo::GetColumnsInfo` call. However, because a consumer might choose to use bookmarks, the provider must be able to change the columns returned depending on whether the consumer asks for a bookmark.
 
-To handle the `IColumnsInfo::GetColumnsInfo` call, delete the PROVIDER_COLUMN_MAP, which defines a function `GetColumnInfo`, from the `CCustomWindowsFile` user record in *Custom*RS.h and replace it with the definition for your own `GetColumnInfo` function:
+To handle the `IColumnsInfo::GetColumnsInfo` call, delete the `PROVIDER_COLUMN_MAP`, which defines a function `GetColumnInfo`, from the `CCustomWindowsFile` user record in *Custom*RS.h and replace it with the definition for your own `GetColumnInfo` function:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -36,7 +36,7 @@ Next, implement the `GetColumnInfo` function in *Custom*RS.cpp, as shown in the 
 
 `GetColumnInfo` checks first to see if the OLE DB property `DBPROP_BOOKMARKS` is set. To get the property, `GetColumnInfo` uses a pointer (`pRowset`) to the rowset object. The `pThis` pointer represents the class that created the rowset, which is the class where the property map is stored. `GetColumnInfo` typecasts the `pThis` pointer to an `RCustomRowset` pointer.
 
-To check for the `DBPROP_BOOKMARKS` property, `GetColumnInfo` uses the `IRowsetInfo` interface, which you can get by calling `QueryInterface` on the `pRowset` interface. As an alternative, you can use an ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) method instead.
+To check for the `DBPROP_BOOKMARKS` property, `GetColumnInfo` uses the `IRowsetInfo` interface, which you can get by calling `QueryInterface` on the `pRowset` interface. As an alternative, you can use an ATL [`CComQIPtr`](../../atl/reference/ccomqiptr-class.md) method instead.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////
@@ -97,7 +97,7 @@ ATLCOLUMNINFO* CCustomWindowsFile::GetColumnInfo(void* pThis, ULONG* pcCols)
 }
 ```
 
-This example uses a static array to hold the column information. If the consumer doesn't want the bookmark column, one entry in the array is unused. To handle the information, you create two array macros: ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX takes an extra parameter, *flags*, that is needed if you designate a bookmark column.
+This example uses a static array to hold the column information. If the consumer doesn't want the bookmark column, one entry in the array is unused. To handle the information, you create two array macros: `ADD_COLUMN_ENTRY` and `ADD_COLUMN_ENTRY_EX`. `ADD_COLUMN_ENTRY_EX` takes an extra parameter, *`flags`*, that is needed if you designate a bookmark column.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
