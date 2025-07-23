@@ -27,3 +27,17 @@ int main()
     int* ptr2 = new int;    // OK
 }
 ```
+
+## Example: Allocate untyped memory
+
+If you meant to allocate untyped memory, use `::operator new` instead:
+
+```cpp
+// C2469_allocate_untyped_memory.cpp
+
+int main()
+{
+    void* ptr1 = new void;            // C2469
+    void* ptr2 = ::operator new(4);   // OK
+}
+```
