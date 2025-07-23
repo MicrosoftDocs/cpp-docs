@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2327"
 title: "Compiler Error C2327"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2327"
+ms.date: 11/04/2016
 f1_keywords: ["C2327"]
 helpviewer_keywords: ["C2327"]
-ms.assetid: 95278c95-d1f9-4487-ad27-53311f5e8112
 ---
 # Compiler Error C2327
 

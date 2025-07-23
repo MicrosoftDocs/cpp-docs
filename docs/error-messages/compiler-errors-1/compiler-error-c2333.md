@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2333"
 title: "Compiler Error C2333"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2333"
+ms.date: 11/04/2016
 f1_keywords: ["C2333"]
 helpviewer_keywords: ["C2333"]
-ms.assetid: 2636fc1e-d3e7-4e68-8628-3c81a99ba813
 ---
 # Compiler Error C2333
 

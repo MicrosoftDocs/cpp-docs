@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2326"
 title: "Compiler Error C2326"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2326"
+ms.date: 11/04/2016
 f1_keywords: ["C2326"]
 helpviewer_keywords: ["C2326"]
-ms.assetid: 01a5ea40-de83-4e6f-a4e8-469f441258e0
 ---
 # Compiler Error C2326
 

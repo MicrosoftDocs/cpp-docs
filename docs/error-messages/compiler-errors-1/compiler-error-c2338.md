@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2338"
 title: "Compiler Error C2338"
+description: "Learn more about: Compiler Error C2338"
 ms.date: 02/22/2022
 f1_keywords: ["C2338"]
 helpviewer_keywords: ["C2338"]
-ms.assetid: 49bba575-1de4-4963-86c6-ce3226a2ba51
 ---
 # Compiler Error C2338
 

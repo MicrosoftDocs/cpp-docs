@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2345"
 title: "Compiler Error C2345"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2345"
+ms.date: 11/04/2016
 f1_keywords: ["C2345"]
 helpviewer_keywords: ["C2345"]
-ms.assetid: e1cc88b0-0223-4d07-975b-fa99956a82bd
 ---
 # Compiler Error C2345
 

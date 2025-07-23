@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2346"
 title: "Compiler Error C2346"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2346"
+ms.date: 11/04/2016
 f1_keywords: ["C2346"]
 helpviewer_keywords: ["C2346"]
-ms.assetid: 246145be-5645-4cd6-867c-e3bc39e33dca
 ---
 # Compiler Error C2346
 

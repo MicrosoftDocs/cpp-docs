@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2334"
 title: "Compiler Error C2334"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2334"
+ms.date: 11/04/2016
 f1_keywords: ["C2334"]
 helpviewer_keywords: ["C2334"]
-ms.assetid: 36142855-e00b-4bbf-80f5-a301edeff46e
 ---
 # Compiler Error C2334
 

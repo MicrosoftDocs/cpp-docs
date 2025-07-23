@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2323"
 description: "Learn more about: Compiler Error C2323"
-ms.date: "03/20/2024"
+ms.date: 03/20/2024
 f1_keywords: ["C2323"]
 helpviewer_keywords: ["C2323"]
 ---

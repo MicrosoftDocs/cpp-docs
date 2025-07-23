@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2337"
 title: "Compiler Error C2337"
-ms.date: "09/19/2019"
+description: "Learn more about: Compiler Error C2337"
+ms.date: 09/19/2019
 f1_keywords: ["C2337"]
 helpviewer_keywords: ["C2337"]
-ms.assetid: eccc9178-a15e-42cd-bbd0-3cea7cf2d55b
 ---
 # Compiler Error C2337
 
