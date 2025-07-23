@@ -19,7 +19,7 @@ A pointer can also be *dereferenced* to retrieve the value of the object that it
     int j = *p; // dereference p to retrieve the value at its address
 ```
 
-A pointer can point to a typed object or to **`void`**. When a program allocates an object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*. An owning pointer (or a copy of it) must be used to explicitly free the heap-allocated object when it's no longer needed. Failure to free the memory results in a *memory leak*, and renders that memory location unavailable to any other program on the machine. Memory allocated using **`new`** must be freed by using **`delete`** (or **`delete[]`**). For more information, see [`new` and `delete` operators](new-and-delete-operators.md).
+A pointer can point to a typed object or to **`void`**. When a program allocates an object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*. An owning pointer (or a copy of it) must be used to explicitly free the heap-allocated object when it's no longer needed. Failure to free the memory results in a *memory leak*, and renders that memory location unavailable to any other program on the machine. Memory allocated with **`new`** must be freed using **`delete`**, and memory allocated with **`new[]`** must be freed using **`delete[]`**. For more information, see [`new` and `delete` operators](new-and-delete-operators.md).
 
 ```cpp
     MyClass* mc = new MyClass(); // allocate object on the heap
