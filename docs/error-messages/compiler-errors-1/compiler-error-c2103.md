@@ -1,17 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2103"
 title: "Compiler Error C2103"
-ms.date: "03/04/2024"
+description: "Learn more about: Compiler Error C2103"
+ms.date: 03/04/2024
 f1_keywords: ["C2103"]
 helpviewer_keywords: ["C2103"]
 ---
 # Compiler Error C2103
 
-'&' on register variable
+> '&' on register variable
+
+## Remarks
 
 You cannot take the address of a register.
 
-The following sample generates C2103:
+## Example
+
+The following example generates C2103:
 
 ```c
 // C2103.c
