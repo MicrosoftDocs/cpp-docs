@@ -8,7 +8,7 @@ ms.assetid: 3814bdff-581a-4d3e-8b47-8de6887cea69
 ---
 # Compiler Error C2469
 
-'operator': cannot allocate 'type' object
+> '`new`': cannot allocate '`void`' objects
 
 An operator was passed an invalid type.
 
