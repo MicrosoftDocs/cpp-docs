@@ -14,12 +14,16 @@ ms.assetid: 3814bdff-581a-4d3e-8b47-8de6887cea69
 
 An operator was passed an invalid type.
 
-The following sample generates C2469:
+## Example: Wrong allocation type
+
+Check if you meant to allocate `void` or some other type, such as `int`:
 
 ```cpp
-// C2469.cpp
-int main() {
-   int *i = new void;   // C2469
-   int *i = new int;   // OK
+// C2469_wrong_allocation_type.cpp
+
+int main()
+{
+    int* ptr1 = new void;   // C2469
+    int* ptr2 = new int;    // OK
 }
 ```
