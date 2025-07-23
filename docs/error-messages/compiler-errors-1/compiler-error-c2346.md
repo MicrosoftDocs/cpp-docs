@@ -8,7 +8,7 @@ ms.assetid: 246145be-5645-4cd6-867c-e3bc39e33dca
 ---
 # Compiler Error C2346
 
-'function' cannot be compiled as native: reason
+> 'function' cannot be compiled as native: reason
 
 The compiler was unable to compile a function to MSIL.
 

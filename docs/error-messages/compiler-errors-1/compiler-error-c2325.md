@@ -8,7 +8,7 @@ ms.assetid: e6b0a186-3f2a-4adf-beae-fadd75492bf7
 ---
 # Compiler Error C2325
 
-'type' : unexpected type to the right of 'name'
+> 'type' : unexpected type to the right of 'name'
 
 A call is made to a destructor of incorrect type.
 

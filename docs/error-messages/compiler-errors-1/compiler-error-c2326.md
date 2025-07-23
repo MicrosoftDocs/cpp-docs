@@ -8,7 +8,7 @@ ms.assetid: 01a5ea40-de83-4e6f-a4e8-469f441258e0
 ---
 # Compiler Error C2326
 
-'declarator' : function cannot access 'name'
+> 'declarator' : function cannot access 'name'
 
 The code tries to modify a member variable, which is not possible.
 

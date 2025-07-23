@@ -8,7 +8,7 @@ ms.assetid: e1cc88b0-0223-4d07-975b-fa99956a82bd
 ---
 # Compiler Error C2345
 
-align(value) : illegal alignment value
+> align(value) : illegal alignment value
 
 You passed a value to the [align](../../cpp/align-cpp.md) keyword that is outside the allowable range.
 

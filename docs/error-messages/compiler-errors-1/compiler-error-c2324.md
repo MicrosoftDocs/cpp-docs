@@ -8,7 +8,7 @@ ms.assetid: 215f0544-85b0-452d-825f-17a388b6a61c
 ---
 # Compiler Error C2324
 
-'identifier' : unexpected to the right of 'name'
+> 'identifier' : unexpected to the right of 'name'
 
 A destructor is called using an incorrect identifier.
 

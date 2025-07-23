@@ -8,7 +8,7 @@ ms.assetid: aa2a7da5-e1c8-4225-9939-5bdc50158f31
 ---
 # Compiler Error C2341
 
-'section name' : segment must be defined using #pragma data_seg, code_seg or section prior to use
+> 'section name' : segment must be defined using #pragma data_seg, code_seg or section prior to use
 
 An [allocate](../../cpp/allocate.md) statement refers to a segment not yet defined by [code_seg](../../preprocessor/code-seg.md), [data_seg](../../preprocessor/data-seg.md), or [section](../../preprocessor/section.md) pragmas.
 

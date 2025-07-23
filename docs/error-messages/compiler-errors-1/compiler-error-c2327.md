@@ -8,7 +8,7 @@ ms.assetid: 95278c95-d1f9-4487-ad27-53311f5e8112
 ---
 # Compiler Error C2327
 
-'symbol' : is not a type name, static, or enumerator
+> 'symbol' : is not a type name, static, or enumerator
 
 Code within a nested class attempts to access a member of the enclosing class that is not a type name, a static member, or an enumerator.
 

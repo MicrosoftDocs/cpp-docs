@@ -8,7 +8,7 @@ ms.assetid: 36142855-e00b-4bbf-80f5-a301edeff46e
 ---
 # Compiler Error C2334
 
-unexpected token(s) preceding ': or {'; skipping apparent function body
+> unexpected token(s) preceding ': or {'; skipping apparent function body
 
 The following sample generates C2334. This error occurs after error C2059:
 

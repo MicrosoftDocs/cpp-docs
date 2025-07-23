@@ -8,7 +8,7 @@ ms.assetid: a84c7b37-c84e-4345-8691-c23abb2dc193
 ---
 # Compiler Error C2344
 
-align(#) : alignment must be power of two
+> align(#) : alignment must be power of two
 
 When using the [align](../../cpp/align-cpp.md) keyword, the value you pass must be a power of two.
 

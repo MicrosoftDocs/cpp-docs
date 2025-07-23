@@ -8,7 +8,7 @@ ms.assetid: 2636fc1e-d3e7-4e68-8628-3c81a99ba813
 ---
 # Compiler Error C2333
 
-'function' : error in function declaration; skipping function body
+> 'function' : error in function declaration; skipping function body
 
 This error occurs after another error, for member functions defined inside their class.
 

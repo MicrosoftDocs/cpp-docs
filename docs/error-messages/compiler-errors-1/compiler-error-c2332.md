@@ -8,7 +8,7 @@ ms.assetid: fb05cd68-e271-4bea-9fb7-ef4edb0a26ac
 ---
 # Compiler Error C2332
 
-'typedef' : missing tag name
+> 'typedef' : missing tag name
 
 The compiler found an incomplete type definition.
 
