@@ -156,6 +156,10 @@ int main()
 }
 ```
 
+```Output
+1 2 3 4 5 
+```
+
 Certain arithmetic operations can be used on non-`const` pointers to make them point to another memory location. Pointers are incremented and decremented using the **`++`**, **`+=`**, **`-=`** and **`--`** operators. This technique can be used in arrays and is especially useful in buffers of untyped data. A typed pointer gets incremented by size of the type it points to.
 
 The following example demonstrates how pointer arithmetic can be used to access individual pixels in a bitmap on Windows. Note the use of **`new`** and **`delete`**, and the dereference operator.
@@ -330,6 +334,11 @@ int main()
     cout << combine("from MSVC", append) << "\n";
     cout << combine("Good morning and", prepend) << "\n";
 }
+```
+
+```Output
+hello world from MSVC
+Good morning and hello world from MSVC
 ```
 
 ## See also
