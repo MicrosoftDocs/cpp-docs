@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2252"
 title: "Compiler Error C2252"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2252"
+ms.date: 11/04/2016
 f1_keywords: ["C2252"]
 helpviewer_keywords: ["C2252"]
-ms.assetid: fee74ab9-1997-4615-82fe-e6d1fe3aacd9
 ---
 # Compiler Error C2252
 
-cannot explicitly instantiate template in current scope
+> cannot explicitly instantiate template in current scope
+
+## Remarks
 
 The compiler detected a problem with an explicit instantiation of a template.  For example, you cannot explicitly instantiate a template in a function.
 
-The following sample generates C2252:
+## Example
+
+The following example generates C2252:
 
 ```cpp
 // C2252.cpp

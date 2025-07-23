@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2244"
 title: "Compiler Error C2244"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2244"
+ms.date: 11/04/2016
 f1_keywords: ["C2244"]
 helpviewer_keywords: ["C2244"]
-ms.assetid: d9911c12-ceb5-4f93-ac47-b44a485215c2
 ---
 # Compiler Error C2244
 
-'identifier' : unable to match function definition to an existing declaration
+> 'identifier' : unable to match function definition to an existing declaration
+
+## Remarks
 
 An unusual use of the unary + operator was used in front of a function call that did not have parenthesis.
 
 This error only occurs in C++ projects.
 
-The following sample generates C2244:
+## Examples
+
+The following example generates C2244:
 
 ```cpp
 // C2244.cpp

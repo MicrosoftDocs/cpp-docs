@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2245"
 title: "Compiler Error C2245"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2245"
+ms.date: 11/04/2016
 f1_keywords: ["C2245"]
 helpviewer_keywords: ["C2245"]
-ms.assetid: 08aaeadf-10ec-485a-b2a6-6e775289082b
 ---
 # Compiler Error C2245
 
-non-existent member function 'function' specified as friend (member function signature does not match any overload)
+> non-existent member function 'function' specified as friend (member function signature does not match any overload)
+
+## Remarks
 
 A function specified as a friend was not found by the compiler.
 
-The following sample generates C2245:
+## Example
+
+The following example generates C2245:
 
 ```cpp
 // C2245.cpp

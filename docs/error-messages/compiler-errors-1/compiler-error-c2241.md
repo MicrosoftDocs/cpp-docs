@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2241"
 title: "Compiler Error C2241"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2241"
+ms.date: 11/04/2016
 f1_keywords: ["C2241"]
 helpviewer_keywords: ["C2241"]
-ms.assetid: 2f4e2c2c-b95c-4afe-bbe0-4214cd39d140
 ---
 # Compiler Error C2241
 
-'identifier' : member access is restricted
+> 'identifier' : member access is restricted
+
+## Remarks
 
 Code attempts to access a private or protected member.
 

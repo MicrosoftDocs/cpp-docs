@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2259"
 title: "Compiler Error C2259"
+description: "Learn more about: Compiler Error C2259"
 ms.date: 07/08/2021
 f1_keywords: ["C2259"]
 helpviewer_keywords: ["C2259"]
-ms.assetid: e458236f-bdea-4786-9aa6-a98d8bffa5f4
 ---
 # Compiler Error C2259
 
 > '*class*' : cannot instantiate abstract class
+
+## Remarks
 
 Code declares an instance of an abstract class or structure.
 
@@ -16,7 +17,9 @@ You can't instantiate a class or structure with one or more pure virtual functio
 
 For more information, see [Implicitly abstract classes](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Implicitly_abstract_classes).
 
-The following sample generates C2259:
+## Examples
+
+The following example generates C2259:
 
 ```cpp
 // C2259.cpp
@@ -41,7 +44,7 @@ To resolve this issue, don't use more restrictive access permissions for the imp
 
 C2259 can also occur because of conformance work that was done in Visual Studio 2005, **`/Zc:wchar_t`** is now on by default. In this situation, C2599 can be resolved either by compiling with **`/Zc:wchar_t-`**, to get the behavior from previous versions, or preferably, by updating your types so they're compatible. For more information, see [`/Zc:wchar_t` (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
-The following sample generates C2259:
+The following example generates C2259:
 
 ```cpp
 // C2259b.cpp
@@ -79,7 +82,7 @@ public:
 MyClass4 y;
 ```
 
-The following sample generates C2259:
+The following example generates C2259:
 
 ```cpp
 // C2259c.cpp

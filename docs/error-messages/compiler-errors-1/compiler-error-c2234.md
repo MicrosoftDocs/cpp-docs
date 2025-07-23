@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2234"
 title: "Compiler Error C2234"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2234"
+ms.date: 11/04/2016
 f1_keywords: ["C2234"]
 helpviewer_keywords: ["C2234"]
-ms.assetid: cfa42458-c803-4717-a017-9eca1c0cbfb0
 ---
 # Compiler Error C2234
 
-'name' : arrays of references are illegal
+> 'name' : arrays of references are illegal
+
+## Remarks
 
 Because pointers to references are not allowed, arrays of references are not possible.
 
-The following sample generates C2234:
+## Example
+
+The following example generates C2234:
 
 ```cpp
 // C2234.cpp
