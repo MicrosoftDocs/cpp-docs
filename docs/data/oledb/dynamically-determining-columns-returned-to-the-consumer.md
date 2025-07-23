@@ -103,29 +103,29 @@ This example uses a static array to hold the column information. If the consumer
 ////////////////////////////////////////////////////////////////////////  
 // CustomRS.h  
   
-#define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member) \  
-   _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
-   _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \  
-   _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \  
-   _rgColumns[ulCols].dwFlags = 0; \  
-   _rgColumns[ulCols].ulColumnSize = (ULONG)colSize; \  
-   _rgColumns[ulCols].wType = (DBTYPE)type; \  
-   _rgColumns[ulCols].bPrecision = (BYTE)precision; \  
-   _rgColumns[ulCols].bScale = (BYTE)scale; \  
-   _rgColumns[ulCols].cbOffset = offsetof(dataClass, member);  
+#define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member) \
+   _rgColumns[ulCols].pwszName = (LPOLESTR)name; \
+   _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \
+   _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \
+   _rgColumns[ulCols].dwFlags = 0; \
+   _rgColumns[ulCols].ulColumnSize = (ULONG)colSize; \
+   _rgColumns[ulCols].wType = (DBTYPE)type; \
+   _rgColumns[ulCols].bPrecision = (BYTE)precision; \
+   _rgColumns[ulCols].bScale = (BYTE)scale; \
+   _rgColumns[ulCols].cbOffset = offsetof(dataClass, member);
   
-#define ADD_COLUMN_ENTRY_EX(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member, flags) \  
-   _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
-   _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \  
-   _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \  
-   _rgColumns[ulCols].dwFlags = flags; \  
-   _rgColumns[ulCols].ulColumnSize = (ULONG)colSize; \  
-   _rgColumns[ulCols].wType = (DBTYPE)type; \  
-   _rgColumns[ulCols].bPrecision = (BYTE)precision; \  
-   _rgColumns[ulCols].bScale = (BYTE)scale; \  
-   _rgColumns[ulCols].cbOffset = offsetof(dataClass, member); \  
-   memset(&(_rgColumns[ulCols].columnid), 0, sizeof(DBID)); \  
-   _rgColumns[ulCols].columnid.uName.pwszName = (LPOLESTR)name;  
+#define ADD_COLUMN_ENTRY_EX(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member, flags) \
+   _rgColumns[ulCols].pwszName = (LPOLESTR)name; \
+   _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \
+   _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \
+   _rgColumns[ulCols].dwFlags = flags; \
+   _rgColumns[ulCols].ulColumnSize = (ULONG)colSize; \
+   _rgColumns[ulCols].wType = (DBTYPE)type; \
+   _rgColumns[ulCols].bPrecision = (BYTE)precision; \
+   _rgColumns[ulCols].bScale = (BYTE)scale; \
+   _rgColumns[ulCols].cbOffset = offsetof(dataClass, member); \
+   memset(&(_rgColumns[ulCols].columnid), 0, sizeof(DBID)); \
+   _rgColumns[ulCols].columnid.uName.pwszName = (LPOLESTR)name;
 ```
 
 In the `GetColumnInfo` function, the bookmark macro is used like this:
