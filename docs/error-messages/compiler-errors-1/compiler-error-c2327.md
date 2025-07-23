@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2327"
 title: "Compiler Error C2327"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2327"
+ms.date: 11/04/2016
 f1_keywords: ["C2327"]
 helpviewer_keywords: ["C2327"]
-ms.assetid: 95278c95-d1f9-4487-ad27-53311f5e8112
 ---
 # Compiler Error C2327
 
-'symbol' : is not a type name, static, or enumerator
+> 'symbol' : is not a type name, static, or enumerator
+
+## Remarks
 
 Code within a nested class attempts to access a member of the enclosing class that is not a type name, a static member, or an enumerator.
 
 When compiling with **/clr**, a common cause for C2327 is a property with the same name as the property type.
 
-The following sample generates C2327:
+## Examples
+
+The following example generates C2327:
 
 ```cpp
 // C2327.cpp
@@ -62,7 +65,7 @@ struct B {
 };
 ```
 
-The following sample generates C2327:
+The following example generates C2327:
 
 ```cpp
 // C2327d.cpp
@@ -96,7 +99,7 @@ namespace NA {
 }
 ```
 
-The following sample shows C2327 when a property has the same name as the property type:
+The following example shows C2327 when a property has the same name as the property type:
 
 ```cpp
 // C2327f.cpp
