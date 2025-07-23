@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Dynamically Determining Columns Returned to the Consumer"
 title: "Dynamically Determining Columns Returned to the Consumer"
-ms.date: "10/26/2018"
+description: "Learn more about: Dynamically Determining Columns Returned to the Consumer"
+ms.date: 10/26/2018
 helpviewer_keywords: ["bookmarks [C++], dynamically determining columns", "dynamically determining columns [C++]"]
-ms.assetid: 58522b7a-894e-4b7d-a605-f80e900a7f5f
 ---
 # Dynamically Determining Columns Returned to the Consumer
 
