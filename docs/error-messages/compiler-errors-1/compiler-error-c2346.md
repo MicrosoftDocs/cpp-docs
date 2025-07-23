@@ -24,7 +24,7 @@ For more information, see [managed, unmanaged](../../preprocessor/managed-unmana
 
 ## Example
 
-The following sample generates C2346.
+The following example generates C2346.
 
 ```cpp
 // C2346.cpp

@@ -16,7 +16,7 @@ To place a **`struct`** in a .idl file with the [export](../../windows/attribute
 
 ## Example
 
-The following sample generates C2348:
+The following example generates C2348:
 
 ```cpp
 // C2348.cpp

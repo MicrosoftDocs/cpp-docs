@@ -16,7 +16,7 @@ A destructor is called using an incorrect identifier.
 
 ## Example
 
-The following sample generates C2324:
+The following example generates C2324:
 
 ```cpp
 // C2324.cpp

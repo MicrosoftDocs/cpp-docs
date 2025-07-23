@@ -16,7 +16,7 @@ The compiler found an incomplete type definition.
 
 ## Example
 
-The following sample generates C2332:
+The following example generates C2332:
 
 ```cpp
 // C2332.cpp

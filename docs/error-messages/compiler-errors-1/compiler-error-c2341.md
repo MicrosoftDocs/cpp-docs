@@ -16,7 +16,7 @@ An [allocate](../../cpp/allocate.md) statement refers to a segment not yet defin
 
 ## Example
 
-The following sample generates C2341:
+The following example generates C2341:
 
 ```cpp
 // C2341.cpp

@@ -16,7 +16,7 @@ The code tries to modify a member variable, which is not possible.
 
 ## Example
 
-The following sample generates C2326:
+The following example generates C2326:
 
 ```cpp
 // C2326.cpp

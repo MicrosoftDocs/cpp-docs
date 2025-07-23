@@ -16,7 +16,7 @@ A call is made to a destructor of incorrect type.
 
 ## Example
 
-The following sample generates C2325:
+The following example generates C2325:
 
 ```cpp
 // C2325.cpp

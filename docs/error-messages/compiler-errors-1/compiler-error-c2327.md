@@ -18,7 +18,7 @@ When compiling with **/clr**, a common cause for C2327 is a property with the sa
 
 ## Examples
 
-The following sample generates C2327:
+The following example generates C2327:
 
 ```cpp
 // C2327.cpp
@@ -66,7 +66,7 @@ struct B {
 };
 ```
 
-The following sample generates C2327:
+The following example generates C2327:
 
 ```cpp
 // C2327d.cpp
@@ -100,7 +100,7 @@ namespace NA {
 }
 ```
 
-The following sample shows C2327 when a property has the same name as the property type:
+The following example shows C2327 when a property has the same name as the property type:
 
 ```cpp
 // C2327f.cpp

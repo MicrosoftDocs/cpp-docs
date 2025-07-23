@@ -16,7 +16,7 @@ Your code uses an attribute that isn't supported in this context. Or, the attrib
 
 ## Example
 
-The following sample generates C2337:
+The following example generates C2337:
 
 ```cpp
 // C2337.cpp

@@ -16,7 +16,7 @@ This error occurs after another error, for member functions defined inside their
 
 ## Example
 
-The following sample generates C2333:
+The following example generates C2333:
 
 ```cpp
 // C2333.cpp

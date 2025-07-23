@@ -16,7 +16,7 @@ You passed a value to the [align](../../cpp/align-cpp.md) keyword that is outsid
 
 ## Example
 
-The following sample generates C2345:
+The following example generates C2345:
 
 ```cpp
 // C2345.cpp

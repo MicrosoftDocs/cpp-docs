@@ -12,7 +12,7 @@ ms.assetid: 36142855-e00b-4bbf-80f5-a301edeff46e
 
 ## Example
 
-The following sample generates C2334. This error occurs after error C2059:
+The following example generates C2334. This error occurs after error C2059:
 
 ```cpp
 // C2334.cpp
