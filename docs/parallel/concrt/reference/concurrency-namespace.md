@@ -208,7 +208,7 @@ namespace concurrency;
 |[operator<=](concurrency-namespace-operators.md#operator_lt_eq)|Tests if the `concurrent_vector` object on the left side of the operator is less than or equal to the `concurrent_vector` object on the right side.|
 |[operator==](concurrency-namespace-operators.md#operator_eq_eq)|Tests if the `concurrent_vector` object on the left side of the operator is equal to the `concurrent_vector` object on the right side.|
 |[operator>](concurrency-namespace-operators.md#operator_gt)|Tests if the `concurrent_vector` object on the left side of the operator is greater than the `concurrent_vector` object on the right side.|
-|[operator>=](concurrency-namespace-operators.md#operator_lt_eq)|Tests if the `concurrent_vector` object on the left side of the operator is greater than or equal to the `concurrent_vector` object on the right side.|
+|[operator>=](concurrency-namespace-operators.md#operator_gt_eq)|Tests if the `concurrent_vector` object on the left side of the operator is greater than or equal to the `concurrent_vector` object on the right side.|
 
 ### Constants
 

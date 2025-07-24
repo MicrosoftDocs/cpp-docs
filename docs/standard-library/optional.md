@@ -26,7 +26,7 @@ Defines the container class template `optional` and several supporting templates
 |[operator<](../standard-library/optional-operators.md#op_lt)|Tests if the object on the left is less than the object on the right.|
 |[operator<=](../standard-library/optional-operators.md#op_lt_eq)|Tests if the object on the left is less than or equal to the object on the right.|
 |[operator>](../standard-library/optional-operators.md#op_gt)|Tests if the object on the left is greater than the object on the right.|
-|[operator>=](../standard-library/optional-operators.md#op_lt_eq)|Tests if the object on the left is greater than or equal to the object on the right.|
+|[operator>=](../standard-library/optional-operators.md#op_gt_eq)|Tests if the object on the left is greater than or equal to the object on the right.|
 
 > [!NOTE]
 > In addition to relational compares, \<optional> operators also support comparison with **nullopt** and `T`.

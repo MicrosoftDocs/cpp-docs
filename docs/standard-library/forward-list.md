@@ -30,7 +30,7 @@ Defines the container class template forward_list and several supporting templat
 |[operator<](../standard-library/forward-list-operators.md#op_lt)|Tests if the forward list object on the left side of the operator is less than the forward list object on the right side.|
 |[operator<=](../standard-library/forward-list-operators.md#op_lt_eq)|Tests if the forward list object on the left side of the operator is less than or equal to the forward list object on the right side.|
 |[operator>](../standard-library/forward-list-operators.md#op_gt)|Tests if the forward list object on the left side of the operator is greater than the forward list object on the right side.|
-|[operator>=](../standard-library/forward-list-operators.md#op_lt_eq)|Tests if the forward list object on the left side of the operator is greater than or equal to the forward list object on the right side.|
+|[operator>=](../standard-library/forward-list-operators.md#op_gt_eq)|Tests if the forward list object on the left side of the operator is greater than or equal to the forward list object on the right side.|
 
 ### Functions
 

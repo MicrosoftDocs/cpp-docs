@@ -26,7 +26,7 @@ A variant object holds and manages a value. If the variant holds a value, that v
 |[operator<](../standard-library/forward-list-operators.md#op_lt)|Tests if the variant object on the left side of the operator is less than the variant object on the right side.|
 |[operator<=](../standard-library/forward-list-operators.md#op_lt_eq)|Tests if the variant object on the left side of the operator is less than or equal to the variant object on the right side.|
 |[operator>](../standard-library/forward-list-operators.md#op_gt)|Tests if the variant object on the left side of the operator is greater than the variant object on the right side.|
-|[operator>=](../standard-library/forward-list-operators.md#op_lt_eq)|Tests if the variant object on the left side of the operator is greater than or equal to the variant object on the right side.|
+|[operator>=](../standard-library/forward-list-operators.md#op_gt_eq)|Tests if the variant object on the left side of the operator is greater than or equal to the variant object on the right side.|
 
 ### Functions
 

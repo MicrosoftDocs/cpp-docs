@@ -50,6 +50,6 @@ For more information, see Windows Sockets Specification: **htonl**, **htons**, *
 [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
 [CArchive::IsStoring](../mfc/reference/carchive-class.md#isstoring)<br/>
 [CArchive::operator <<](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
-[CArchive::operator >>](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
+[CArchive::operator >>](../mfc/reference/carchive-class.md#operator_gt_gt)<br/>
 [CArchive::Flush](../mfc/reference/carchive-class.md#flush)<br/>
 [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)

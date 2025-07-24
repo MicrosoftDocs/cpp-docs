@@ -27,7 +27,7 @@ Defines the class templates priority_queue and queue and several supporting temp
 |-|-|
 |[operator!=](../standard-library/queue-operators.md#op_neq)|Tests if the queue object on the left side of the operator is not equal to the queue object on the right side.|
 |[operator<](../standard-library/queue-operators.md#op_lt)|Tests if the queue object on the left side of the operator is less than the queue object on the right side.|
-|[operator\<=](../standard-library/queue-operators.md#op_gt_eq)|Tests if the queue object on the left side of the operator is less than or equal to the queue object on the right side.|
+|[operator\<=](../standard-library/queue-operators.md#op_lt_eq)|Tests if the queue object on the left side of the operator is less than or equal to the queue object on the right side.|
 |[operator==](../standard-library/queue-operators.md#op_eq_eq)|Tests if the queue object on the left side of the operator is equal to the queue object on the right side.|
 |[operator>](../standard-library/queue-operators.md#op_gt)|Tests if the queue object on the left side of the operator is greater than the queue object on the right side.|
 |[operator>=](../standard-library/queue-operators.md#op_gt_eq)|Tests if the queue object on the left side of the operator is greater than or equal to the queue object on the right side.|
