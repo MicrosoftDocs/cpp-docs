@@ -214,7 +214,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
    // szTitle: the text that appears in the title bar
    // WS_OVERLAPPEDWINDOW: the type of window to create
    // CW_USEDEFAULT, CW_USEDEFAULT: initial position (x, y)
-   // 500, 100: initial size (width, length)
+   // 500, 100: initial size (width, height)
    // NULL: the parent of this window
    // NULL: this application does not have a menu bar
    // hInstance: the first parameter from WinMain
@@ -314,7 +314,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
       // szTitle: the text that appears in the title bar
       // WS_OVERLAPPEDWINDOW: the type of window to create
       // CW_USEDEFAULT, CW_USEDEFAULT: initial position (x, y)
-      // 500, 100: initial size (width, length)
+      // 500, 100: initial size (width, height)
       // NULL: the parent of this window
       // NULL: this application does not have a menu bar
       // hInstance: the first parameter from WinMain
@@ -501,7 +501,7 @@ As promised, the complete code for the working application follows.
       // szTitle: the text that appears in the title bar
       // WS_OVERLAPPEDWINDOW: the type of window to create
       // CW_USEDEFAULT, CW_USEDEFAULT: initial position (x, y)
-      // 500, 100: initial size (width, length)
+      // 500, 100: initial size (width, height)
       // NULL: the parent of this window
       // NULL: this application does not have a menu bar
       // hInstance: the first parameter from WinMain
