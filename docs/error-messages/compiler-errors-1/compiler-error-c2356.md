@@ -10,6 +10,8 @@ ms.assetid: 84d5a816-9a61-4d45-9978-38e485bbf767
 
 > initialization segment must not change during translation unit
 
+## Remarks
+
 Possible causes:
 
 - `#pragma init_seg` preceded by segment initialization code
@@ -17,6 +19,8 @@ Possible causes:
 - `#pragma init_seg` preceded by another `#pragma init_seg`
 
 To resolve, move the segment initialization code to the beginning of the module. If multiple areas must be initialized, move them to separate modules.
+
+## Example
 
 The following sample generates C2356:
 

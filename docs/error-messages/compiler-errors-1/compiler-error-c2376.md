@@ -10,4 +10,6 @@ ms.assetid: 89423cf7-a24a-4bb3-a2ed-36a1ff8ba458
 
 > 'function' : redefinition; different based allocation
 
+## Remarks
+
 The function is already declared with a different based allocation.

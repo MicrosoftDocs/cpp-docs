@@ -10,6 +10,8 @@ ms.assetid: d1083945-0ea2-4385-9e66-8c665978806c
 
 > 'identifier' : must be a function of type 'type'
 
+## Remarks
+
 Your code declares a version of the `atexit` function that does not match the version declared internally by the compiler. Declare `atexit` as follows:
 
 ```
@@ -17,6 +19,8 @@ int __cdecl atexit(void (__cdecl *)());
 ```
 
 For more information, see [init_seg](../../preprocessor/init-seg.md).
+
+## Example
 
 The following sample generates C2357:
 

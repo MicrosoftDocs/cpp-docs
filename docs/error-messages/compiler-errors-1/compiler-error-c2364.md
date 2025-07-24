@@ -10,6 +10,8 @@ ms.assetid: 4f550571-94b5-42ca-84cb-663fecbead44
 
 > 'type': illegal type for custom attribute
 
+## Remarks
+
 Named arguments for custom attributes are limited to compile time constants. For example, integral types (int, char, etc.), System::Type^, and System::Object^.
 
 ## Example

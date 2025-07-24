@@ -10,7 +10,11 @@ ms.assetid: 717b1e6e-ddfe-4bac-a5f3-7f9a4dcb1572
 
 > type(s) preceding 'identifier' (constructor with return type, or illegal redefinition of current class-name?)
 
+## Remarks
+
 A constructor returns a value or redefines the class name.
+
+## Example
 
 The following sample generates C2326:
 

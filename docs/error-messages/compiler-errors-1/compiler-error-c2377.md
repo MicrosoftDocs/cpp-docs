@@ -10,7 +10,11 @@ ms.assetid: f7660965-bf4c-4cd9-8307-1bd7016678a1
 
 > 'identifier' : redefinition; typedef cannot be overloaded with any other symbol
 
+## Remarks
+
 A **`typedef`** identifier is redefined.
+
+## Example
 
 The following sample generates C2377:
 

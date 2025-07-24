@@ -10,7 +10,11 @@ ms.assetid: 406bea63-c8d3-4231-9d26-c70af6980840
 
 > '*identifier*' : redefinition; different types of indirection
 
+## Remarks
+
 The identifier is already defined with a different derived type.
+
+## Example
 
 The following sample generates C2372:
 

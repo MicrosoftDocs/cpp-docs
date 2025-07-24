@@ -10,7 +10,11 @@ ms.assetid: 5439ccf6-66f6-4859-964c-c73f5eddfc1b
 
 > obsolete C++ constructor initialization syntax
 
+## Remarks
+
 In a new-style initialization list for a constructor, you must explicitly name each direct base class, even if it is the only base class.
+
+## Example
 
 The following sample generates C2351:
 

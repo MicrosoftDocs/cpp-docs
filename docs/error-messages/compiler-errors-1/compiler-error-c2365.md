@@ -10,7 +10,11 @@ ms.assetid: 35839b0b-4055-4b79-8957-b3a0871bdd02
 
 > 'class member' : redefinition; previous definition was 'class member'
 
+## Remarks
+
 You attempted to redefine a class member.
+
+## Example
 
 The following sample generates C2365.
 

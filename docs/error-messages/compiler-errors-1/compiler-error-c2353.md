@@ -10,7 +10,11 @@ ms.assetid: d57f8f77-d9b1-4bba-a940-87ec269ad183
 
 > exception specification is not allowed
 
+## Remarks
+
 Exception specifications are not allowed on member functions of managed classes.
+
+## Example
 
 The following sample generates C2353:
 

@@ -10,7 +10,11 @@ ms.assetid: 37dc3015-a4af-4341-bbf3-da6150df7e51
 
 > formal parameter number has different type when promoted
 
+## Remarks
+
 The type of the specified parameter is not compatible, through default promotions, with the type in a previous declaration. This is an error in ANSI C ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) and a warning with Microsoft extensions (**/Ze**).
+
+## Example
 
 The following sample generates C2379:
 

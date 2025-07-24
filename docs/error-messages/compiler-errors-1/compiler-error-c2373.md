@@ -10,7 +10,11 @@ ms.assetid: 7a08bf0b-852d-48be-ba75-70df9f4b5951
 
 > 'identifier' : redefinition; different type modifiers
 
+## Remarks
+
 The identifier is already defined with a different type modifier.
+
+## Example
 
 The following sample generates C2373:
 

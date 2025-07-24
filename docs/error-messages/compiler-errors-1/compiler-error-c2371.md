@@ -10,7 +10,11 @@ ms.assetid: d383993d-05ef-4e35-8129-3b58a6f7b7b7
 
 > 'identifier' : redefinition; different basic types
 
+## Remarks
+
 The identifier is already declared.
+
+## Example
 
 The following sample generates C2371:
 

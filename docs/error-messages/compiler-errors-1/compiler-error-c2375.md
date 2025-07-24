@@ -10,7 +10,11 @@ ms.assetid: 193c5e8b-1b20-4928-8a02-8c1cddaf2a26
 
 > 'function' : redefinition; different linkage
 
+## Remarks
+
 The function is already declared with a different linkage specifier.
+
+## Example
 
 The following sample generates C2375:
 

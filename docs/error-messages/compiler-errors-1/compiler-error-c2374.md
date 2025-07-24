@@ -10,7 +10,11 @@ ms.assetid: 73b51965-e91c-4e21-9732-f71c1449d22e
 
 > 'identifier' : redefinition; multiple initialization
 
+## Remarks
+
 The identifier is initialized more than once.
+
+## Example
 
 The following sample generates C2374:
 
