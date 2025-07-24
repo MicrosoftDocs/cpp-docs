@@ -316,7 +316,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
       // CW_USEDEFAULT, CW_USEDEFAULT: initial position (x, y)
       // 500, 100: initial size (width, length)
       // NULL: the parent of this window
-      // NULL: this application dows not have a menu bar
+      // NULL: this application does not have a menu bar
       // hInstance: the first parameter from WinMain
       // NULL: not used in this application
       HWND hWnd = CreateWindowEx(
