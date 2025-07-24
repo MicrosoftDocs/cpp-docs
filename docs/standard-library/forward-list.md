@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: <forward_list>"
 title: "<forward_list>"
-ms.date: "11/04/2016"
+description: "Learn more about: <forward_list>"
+ms.date: 11/04/2016
 f1_keywords: ["<forward_list>"]
 helpviewer_keywords: ["<forward_list>"]
-ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
 ---
 # `<forward_list>`
 

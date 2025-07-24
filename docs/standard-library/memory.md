@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: <memory>"
 title: "<memory>"
-ms.date: "08/04/2019"
+description: "Learn more about: <memory>"
+ms.date: 08/04/2019
 f1_keywords: ["<memory>"]
 helpviewer_keywords: ["memory header"]
 ---

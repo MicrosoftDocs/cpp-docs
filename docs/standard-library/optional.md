@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: <optional>"
 title: "<optional>"
-ms.date: "08/06/2019"
+description: "Learn more about: <optional>"
+ms.date: 08/06/2019
 f1_keywords: ["<optional>"]
 helpviewer_keywords: ["<optional>"]
 ---

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Windows Sockets: Example of Sockets Using Archives"
 title: "Windows Sockets: Example of Sockets Using Archives"
-ms.date: "11/04/2016"
+description: "Learn more about: Windows Sockets: Example of Sockets Using Archives"
+ms.date: 11/04/2016
 helpviewer_keywords: ["sockets [MFC], with archives", "examples [MFC], Windows Sockets", "Windows Sockets [MFC], with archives"]
-ms.assetid: 2e3c9bb2-7e7b-4f28-8dc5-6cb7a484edac
 ---
 # Windows Sockets: Example of Sockets Using Archives
 

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: <vector>"
 title: "<vector>"
-ms.date: "11/04/2016"
+description: "Learn more about: <vector>"
+ms.date: 11/04/2016
 f1_keywords: ["<vector>"]
 helpviewer_keywords: ["vector header"]
 ---
