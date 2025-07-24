@@ -16,7 +16,7 @@ The function is already declared with a different linkage specifier.
 
 ## Example
 
-The following sample generates C2375:
+The following example generates C2375:
 
 ```cpp
 // C2375.cpp

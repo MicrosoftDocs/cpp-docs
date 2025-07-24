@@ -16,7 +16,7 @@ The initialization of `identifier` can be skipped in a **`switch`** statement. Y
 
 ## Example
 
-The following sample generates C2360:
+The following example generates C2360:
 
 ```cpp
 // C2360.cpp

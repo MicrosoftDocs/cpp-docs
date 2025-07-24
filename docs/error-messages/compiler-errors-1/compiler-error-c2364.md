@@ -16,7 +16,7 @@ Named arguments for custom attributes are limited to compile time constants. For
 
 ## Example
 
-The following sample generates C2364.
+The following example generates C2364.
 
 ```cpp
 // c2364.cpp

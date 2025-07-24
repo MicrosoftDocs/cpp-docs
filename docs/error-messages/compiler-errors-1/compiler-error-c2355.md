@@ -18,7 +18,7 @@ To fix this issue, make sure the member function definition matches a member fun
 
 ## Example
 
-The following sample generates C2355 and shows how to fix it:
+The following example generates C2355 and shows how to fix it:
 
 ```cpp
 // C2355.cpp

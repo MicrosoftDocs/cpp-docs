@@ -16,7 +16,7 @@ Exception specifications are not allowed on member functions of managed classes.
 
 ## Example
 
-The following sample generates C2353:
+The following example generates C2353:
 
 ```cpp
 // C2353.cpp

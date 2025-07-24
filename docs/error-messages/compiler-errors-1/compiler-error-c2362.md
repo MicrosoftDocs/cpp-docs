@@ -18,7 +18,7 @@ You can only jump past a declaration with an initializer if the declaration is e
 
 ## Example
 
-The following sample generates C2362:
+The following example generates C2362:
 
 ```cpp
 // C2362.cpp

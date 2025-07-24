@@ -16,7 +16,7 @@ The identifier is already defined with a different type modifier.
 
 ## Example
 
-The following sample generates C2373:
+The following example generates C2373:
 
 ```
 // C2373.h

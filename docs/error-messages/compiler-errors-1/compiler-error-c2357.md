@@ -22,7 +22,7 @@ For more information, see [init_seg](../../preprocessor/init-seg.md).
 
 ## Example
 
-The following sample generates C2357:
+The following example generates C2357:
 
 ```cpp
 // C2357.cpp

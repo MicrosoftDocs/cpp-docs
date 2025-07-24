@@ -16,7 +16,7 @@ The identifier is already declared.
 
 ## Example
 
-The following sample generates C2371:
+The following example generates C2371:
 
 ```cpp
 // C2371.cpp

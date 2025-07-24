@@ -16,7 +16,7 @@ The identifier is already declared with a different storage class.
 
 ## Examples
 
-The following sample generates C2370:
+The following example generates C2370:
 
 ```cpp
 // C2370.cpp
@@ -26,7 +26,7 @@ static int i;   // C2370
 int i;   // OK
 ```
 
-The following sample generates C2370:
+The following example generates C2370:
 
 ```cpp
 // C2370b.cpp

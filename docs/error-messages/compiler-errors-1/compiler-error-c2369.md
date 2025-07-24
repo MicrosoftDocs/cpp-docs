@@ -16,7 +16,7 @@ The array is already declared with a different subscript.
 
 ## Example
 
-The following sample generates C2369:
+The following example generates C2369:
 
 ```cpp
 // C2369.cpp

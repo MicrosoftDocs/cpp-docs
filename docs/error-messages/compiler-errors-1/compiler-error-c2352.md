@@ -16,7 +16,7 @@ A **`static`** member function called a nonstatic member function. Or, a nonstat
 
 ## Examples
 
-The following sample generates C2352 and shows how to fix it:
+The following example generates C2352 and shows how to fix it:
 
 ```cpp
 // C2352.cpp
@@ -32,7 +32,7 @@ public:
 };
 ```
 
-The following sample generates C2352 and shows how to fix it:
+The following example generates C2352 and shows how to fix it:
 
 ```cpp
 // C2352b.cpp

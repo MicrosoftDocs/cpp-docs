@@ -16,7 +16,7 @@ You attempted to redefine a class member.
 
 ## Example
 
-The following sample generates C2365.
+The following example generates C2365.
 
 ```cpp
 // C2365.cpp

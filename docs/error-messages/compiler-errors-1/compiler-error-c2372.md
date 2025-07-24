@@ -16,7 +16,7 @@ The identifier is already defined with a different derived type.
 
 ## Example
 
-The following sample generates C2372:
+The following example generates C2372:
 
 ```cpp
 // C2372.cpp

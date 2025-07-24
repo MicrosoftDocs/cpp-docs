@@ -22,7 +22,7 @@ To resolve, move the segment initialization code to the beginning of the module.
 
 ## Example
 
-The following sample generates C2356:
+The following example generates C2356:
 
 ```cpp
 // C2356.cpp

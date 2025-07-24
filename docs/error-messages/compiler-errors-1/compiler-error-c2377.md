@@ -16,7 +16,7 @@ A **`typedef`** identifier is redefined.
 
 ## Example
 
-The following sample generates C2377:
+The following example generates C2377:
 
 ```cpp
 // C2377.cpp

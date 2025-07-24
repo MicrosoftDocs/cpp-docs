@@ -16,7 +16,7 @@ The identifier is initialized more than once.
 
 ## Example
 
-The following sample generates C2374:
+The following example generates C2374:
 
 ```cpp
 // C2374.cpp
