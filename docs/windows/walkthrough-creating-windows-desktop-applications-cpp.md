@@ -248,7 +248,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
 
    ```cpp
    // The parameters to ShowWindow explained:
-   // hWnd: the value returned from CreateWindow
+   // hWnd: the value returned from CreateWindowEx
    // nCmdShow: the fourth parameter from WinMain
    ShowWindow(hWnd,
       nCmdShow);
@@ -335,7 +335,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
       if (!hWnd)
       {
          MessageBox(NULL,
-            _T("Call to CreateWindow failed!"),
+            _T("Call to CreateWindowEx failed!"),
             _T("Windows Desktop Guided Tour"),
             NULL);
 
@@ -343,7 +343,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
       }
 
       // The parameters to ShowWindow explained:
-      // hWnd: the value returned from CreateWindow
+      // hWnd: the value returned from CreateWindowEx
       // nCmdShow: the fourth parameter from WinMain
       ShowWindow(hWnd, nCmdShow);
       UpdateWindow(hWnd);
@@ -522,7 +522,7 @@ As promised, the complete code for the working application follows.
       if (!hWnd)
       {
          MessageBox(NULL,
-            _T("Call to CreateWindow failed!"),
+            _T("Call to CreateWindowEx failed!"),
             _T("Windows Desktop Guided Tour"),
             NULL);
 
@@ -530,7 +530,7 @@ As promised, the complete code for the working application follows.
       }
 
       // The parameters to ShowWindow explained:
-      // hWnd: the value returned from CreateWindow
+      // hWnd: the value returned from CreateWindowEx
       // nCmdShow: the fourth parameter from WinMain
       ShowWindow(hWnd,
          nCmdShow);
