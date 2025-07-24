@@ -8,7 +8,7 @@ ms.assetid: 35839b0b-4055-4b79-8957-b3a0871bdd02
 ---
 # Compiler Error C2365
 
-'class member' : redefinition; previous definition was 'class member'
+> 'class member' : redefinition; previous definition was 'class member'
 
 You attempted to redefine a class member.
 

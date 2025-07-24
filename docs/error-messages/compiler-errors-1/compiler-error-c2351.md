@@ -8,7 +8,7 @@ ms.assetid: 5439ccf6-66f6-4859-964c-c73f5eddfc1b
 ---
 # Compiler Error C2351
 
-obsolete C++ constructor initialization syntax
+> obsolete C++ constructor initialization syntax
 
 In a new-style initialization list for a constructor, you must explicitly name each direct base class, even if it is the only base class.
 

@@ -8,7 +8,7 @@ ms.assetid: d383993d-05ef-4e35-8129-3b58a6f7b7b7
 ---
 # Compiler Error C2371
 
-'identifier' : redefinition; different basic types
+> 'identifier' : redefinition; different basic types
 
 The identifier is already declared.
 

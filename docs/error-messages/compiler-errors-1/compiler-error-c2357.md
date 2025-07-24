@@ -8,7 +8,7 @@ ms.assetid: d1083945-0ea2-4385-9e66-8c665978806c
 ---
 # Compiler Error C2357
 
-'identifier' : must be a function of type 'type'
+> 'identifier' : must be a function of type 'type'
 
 Your code declares a version of the `atexit` function that does not match the version declared internally by the compiler. Declare `atexit` as follows:
 

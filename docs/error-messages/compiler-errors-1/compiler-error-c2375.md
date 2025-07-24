@@ -8,7 +8,7 @@ ms.assetid: 193c5e8b-1b20-4928-8a02-8c1cddaf2a26
 ---
 # Compiler Error C2375
 
-'function' : redefinition; different linkage
+> 'function' : redefinition; different linkage
 
 The function is already declared with a different linkage specifier.
 

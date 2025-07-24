@@ -8,7 +8,7 @@ ms.assetid: 03403e8f-f393-47c4-bd25-5c1c7ea7d5cd
 ---
 # Compiler Error C2370
 
-'identifier' : redefinition; different storage class
+> 'identifier' : redefinition; different storage class
 
 The identifier is already declared with a different storage class.
 

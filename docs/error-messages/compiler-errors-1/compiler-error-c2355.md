@@ -8,7 +8,7 @@ ms.assetid: 0a947881-d61f-4f98-8409-32140f39500b
 ---
 # Compiler Error C2355
 
-'this' : can only be referenced inside non-static member functions or non-static data member initializers
+> 'this' : can only be referenced inside non-static member functions or non-static data member initializers
 
 The **`this`** pointer is valid only within non-static member functions or in non-static data member initializers. This error can result when the class scope of a member function definition outside of the class declaration is not properly qualified. The error can also occur when the **`this`** pointer is used in a function that is not declared in the class.
 

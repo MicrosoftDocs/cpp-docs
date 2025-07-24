@@ -8,6 +8,6 @@ ms.assetid: 89423cf7-a24a-4bb3-a2ed-36a1ff8ba458
 ---
 # Compiler Error C2376
 
-'function' : redefinition; different based allocation
+> 'function' : redefinition; different based allocation
 
 The function is already declared with a different based allocation.

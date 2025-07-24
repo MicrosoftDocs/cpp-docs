@@ -8,7 +8,7 @@ ms.assetid: 84d5a816-9a61-4d45-9978-38e485bbf767
 ---
 # Compiler Error C2356
 
-initialization segment must not change during translation unit
+> initialization segment must not change during translation unit
 
 Possible causes:
 

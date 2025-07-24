@@ -8,7 +8,7 @@ ms.assetid: f7660965-bf4c-4cd9-8307-1bd7016678a1
 ---
 # Compiler Error C2377
 
-'identifier' : redefinition; typedef cannot be overloaded with any other symbol
+> 'identifier' : redefinition; typedef cannot be overloaded with any other symbol
 
 A **`typedef`** identifier is redefined.
 

@@ -8,7 +8,7 @@ ms.assetid: d57f8f77-d9b1-4bba-a940-87ec269ad183
 ---
 # Compiler Error C2353
 
-exception specification is not allowed
+> exception specification is not allowed
 
 Exception specifications are not allowed on member functions of managed classes.
 

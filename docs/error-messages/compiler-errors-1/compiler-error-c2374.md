@@ -8,7 +8,7 @@ ms.assetid: 73b51965-e91c-4e21-9732-f71c1449d22e
 ---
 # Compiler Error C2374
 
-'identifier' : redefinition; multiple initialization
+> 'identifier' : redefinition; multiple initialization
 
 The identifier is initialized more than once.
 

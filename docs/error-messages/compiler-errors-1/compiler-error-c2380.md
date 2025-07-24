@@ -8,7 +8,7 @@ ms.assetid: 717b1e6e-ddfe-4bac-a5f3-7f9a4dcb1572
 ---
 # Compiler Error C2380
 
-type(s) preceding 'identifier' (constructor with return type, or illegal redefinition of current class-name?)
+> type(s) preceding 'identifier' (constructor with return type, or illegal redefinition of current class-name?)
 
 A constructor returns a value or redefines the class name.
 

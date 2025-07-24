@@ -8,7 +8,7 @@ ms.assetid: 2a3933f6-2313-40ff-800f-921b296fdbbf
 ---
 # Compiler Error C2369
 
-'array' : redefinition; different subscripts
+> 'array' : redefinition; different subscripts
 
 The array is already declared with a different subscript.
 
