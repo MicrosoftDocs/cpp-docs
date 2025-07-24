@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2362"
 title: "Compiler Error C2362"
-ms.date: "06/03/2019"
+description: "Learn more about: Compiler Error C2362"
+ms.date: 06/03/2019
 f1_keywords: ["C2362"]
 helpviewer_keywords: ["C2362"]
-ms.assetid: 7aafecbc-b3cf-45a6-9ec3-a17e3f222511
 ---
 # Compiler Error C2362
 

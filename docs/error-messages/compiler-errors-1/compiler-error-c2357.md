@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2357"
 title: "Compiler Error C2357"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2357"
+ms.date: 11/04/2016
 f1_keywords: ["C2357"]
 helpviewer_keywords: ["C2357"]
-ms.assetid: d1083945-0ea2-4385-9e66-8c665978806c
 ---
 # Compiler Error C2357
 

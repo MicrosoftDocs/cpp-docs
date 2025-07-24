@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2380"
 title: "Compiler Error C2380"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2380"
+ms.date: 11/04/2016
 f1_keywords: ["C2380"]
 helpviewer_keywords: ["C2380"]
-ms.assetid: 717b1e6e-ddfe-4bac-a5f3-7f9a4dcb1572
 ---
 # Compiler Error C2380
 

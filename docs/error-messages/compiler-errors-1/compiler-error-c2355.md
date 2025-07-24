@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2355"
 title: "Compiler Error C2355"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2355"
+ms.date: 11/04/2016
 f1_keywords: ["C2355"]
 helpviewer_keywords: ["C2355"]
-ms.assetid: 0a947881-d61f-4f98-8409-32140f39500b
 ---
 # Compiler Error C2355
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2351"
 title: "Compiler Error C2351"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2351"
+ms.date: 11/04/2016
 f1_keywords: ["C2351"]
 helpviewer_keywords: ["C2351"]
-ms.assetid: 5439ccf6-66f6-4859-964c-c73f5eddfc1b
 ---
 # Compiler Error C2351
 

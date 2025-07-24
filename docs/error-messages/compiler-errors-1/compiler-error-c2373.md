@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2373"
 title: "Compiler Error C2373"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2373"
+ms.date: 11/04/2016
 f1_keywords: ["C2373"]
 helpviewer_keywords: ["C2373"]
-ms.assetid: 7a08bf0b-852d-48be-ba75-70df9f4b5951
 ---
 # Compiler Error C2373
 

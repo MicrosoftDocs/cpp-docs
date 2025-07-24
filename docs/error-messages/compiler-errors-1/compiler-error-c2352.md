@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2352"
 title: "Compiler Error C2352"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2352"
+ms.date: 11/04/2016
 f1_keywords: ["C2352"]
 helpviewer_keywords: ["C2352"]
-ms.assetid: 0efad8cb-659f-4b3e-8f6f-9f8ec44d345c
 ---
 # Compiler Error C2352
 

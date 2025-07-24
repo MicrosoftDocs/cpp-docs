@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2353"
 title: "Compiler Error C2353"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2353"
+ms.date: 11/04/2016
 f1_keywords: ["C2353"]
 helpviewer_keywords: ["C2353"]
-ms.assetid: d57f8f77-d9b1-4bba-a940-87ec269ad183
 ---
 # Compiler Error C2353
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2356"
 title: "Compiler Error C2356"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2356"
+ms.date: 11/04/2016
 f1_keywords: ["C2356"]
 helpviewer_keywords: ["C2356"]
-ms.assetid: 84d5a816-9a61-4d45-9978-38e485bbf767
 ---
 # Compiler Error C2356
 
