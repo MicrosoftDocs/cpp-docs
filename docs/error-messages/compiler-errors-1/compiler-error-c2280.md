@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2280"
 title: "Compiler Error C2280"
-ms.date: "04/25/2017"
+description: "Learn more about: Compiler Error C2280"
+ms.date: 04/25/2017
 f1_keywords: ["C2280"]
 helpviewer_keywords: ["C2280"]
-ms.assetid: e6c5b1fb-2b9b-4554-8ff9-775eeb37161b
 ---
 # Compiler Error C2280
 
-'*declaration*': attempting to reference a deleted function
+> '*declaration*': attempting to reference a deleted function
+
+## Remarks
 
 The compiler detected an attempt to reference a `deleted` function. This error can be caused by a call to a member function that has been explicitly marked as `= deleted` in the source code. This error can also be caused by a call to an implicit special member function of a struct or class that is automatically declared and marked as `deleted` by the compiler. For more information about when the compiler automatically generates **`default`** or `deleted` special member functions, see [Special member functions](../../cpp/special-member-functions.md).
 

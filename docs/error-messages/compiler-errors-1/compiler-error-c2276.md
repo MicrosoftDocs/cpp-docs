@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2276"
 title: "Compiler Error C2276"
+description: "Learn more about: Compiler Error C2276"
 ms.date: 03/25/2021
 f1_keywords: ["C2276"]
 helpviewer_keywords: ["C2276"]
@@ -9,15 +9,15 @@ helpviewer_keywords: ["C2276"]
 
 > '*operator*' : illegal operation on bound member function expression
 
-The compiler found a problem with the syntax used to create a pointer-to-member.
-
 ## Remarks
+
+The compiler found a problem with the syntax used to create a pointer-to-member.
 
 Error `C2276` is often caused when you attempt to create a pointer-to-member by using an instance variable to qualify the member, instead of a class type. You may also see this error if you're trying to call a member function by using the wrong syntax.
 
 ## Example
 
-This sample shows several ways C2276 may occur, and how to fix them:
+This example shows several ways C2276 may occur, and how to fix them:
 
 ```cpp
 // C2276.cpp

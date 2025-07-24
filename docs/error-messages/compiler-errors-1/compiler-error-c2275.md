@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2275"
 title: "Compiler Error C2275"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2275"
+ms.date: 11/04/2016
 f1_keywords: ["C2275"]
 helpviewer_keywords: ["C2275"]
-ms.assetid: c1eafa71-48de-46e0-82f3-b575538ef205
 ---
 # Compiler Error C2275
 
-'identifier' : illegal use of this type as an expression
+> 'identifier' : illegal use of this type as an expression
+
+## Remarks
 
 An expression uses the `->` operator with a **`typedef`** identifier.
 
-The following sample generates C2275:
+## Example
+
+The following example generates C2275:
 
 ```cpp
 // C2275.cpp
