@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2392"
 title: "Compiler Error C2392"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2392"
+ms.date: 11/04/2016
 f1_keywords: ["C2392"]
 helpviewer_keywords: ["C2392"]
-ms.assetid: 98ced473-6383-46ed-b79c-21857d65dcb2
 ---
 # Compiler Error C2392
 

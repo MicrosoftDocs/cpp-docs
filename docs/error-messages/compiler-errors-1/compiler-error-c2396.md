@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2396"
 title: "Compiler Error C2396"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2396"
+ms.date: 11/04/2016
 f1_keywords: ["C2396"]
 helpviewer_keywords: ["C2396"]
-ms.assetid: 1b515ef6-7af4-400f-b4ed-564313ea15f6
 ---
 # Compiler Error C2396
 

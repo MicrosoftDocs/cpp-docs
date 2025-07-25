@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2395"
 title: "Compiler Error C2395"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2395"
+ms.date: 11/04/2016
 f1_keywords: ["C2395"]
 helpviewer_keywords: ["C2395"]
-ms.assetid: 2d9e3b28-8c2c-4f41-a57f-61ef88fc2af0
 ---
 # Compiler Error C2395
 

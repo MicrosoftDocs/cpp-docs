@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2387"
 title: "Compiler Error C2387"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2387"
+ms.date: 11/04/2016
 f1_keywords: ["C2387"]
 helpviewer_keywords: ["C2387"]
-ms.assetid: 6847b8e1-ffac-458d-ab88-0c92f72f2527
 ---
 # Compiler Error C2387
 

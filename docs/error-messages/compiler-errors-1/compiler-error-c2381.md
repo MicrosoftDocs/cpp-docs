@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2381"
 title: "Compiler Error C2381"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2381"
+ms.date: 11/04/2016
 f1_keywords: ["C2381"]
 helpviewer_keywords: ["C2381"]
-ms.assetid: cc765f67-64ac-406f-93ef-ae7d548d58d7
 ---
 # Compiler Error C2381
 

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C2385"
 title: "Compiler Error C2385"
-ms.date: "1/19/2024"
+description: "Learn more about: Compiler Error C2385"
+ms.date: 1/19/2024
 f1_keywords: ["C2385"]
 helpviewer_keywords: ["C2385"]
 ---

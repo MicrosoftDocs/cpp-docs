@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2382"
 title: "Compiler Error C2382"
+description: "Learn more about: Compiler Error C2382"
 ms.date: 12/10/2021
 f1_keywords: ["C2382"]
 helpviewer_keywords: ["C2382"]
-ms.assetid: 4d4436f9-d0d6-4bd0-b8ec-767b89adfb2f
 ---
 # Compiler Error C2382
 

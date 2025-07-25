@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2394"
 description: "Learn more about: Compiler Error C2394"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["C2394"]
 helpviewer_keywords: ["C2394"]
 ---

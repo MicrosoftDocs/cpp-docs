@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2384"
 title: "Compiler Error C2384"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2384"
+ms.date: 11/04/2016
 f1_keywords: ["C2384"]
 helpviewer_keywords: ["C2384"]
-ms.assetid: 8145f7ad-31b1-406d-ac43-0d557feab635
 ---
 # Compiler Error C2384
 
