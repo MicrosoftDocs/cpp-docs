@@ -4437,7 +4437,7 @@ items:
       href: tool-errors/cvtres-fatal-error-cvt1105.md
     - name: CVTRES warning CVT4001
       href: tool-errors/cvtres-warning-cvt4001.md
-- name: Expression evaluator errors 
+- name: Expression evaluator errors
   expanded: false
   items: 
     - name: Expression evaluator errors (CXXxxxx)
