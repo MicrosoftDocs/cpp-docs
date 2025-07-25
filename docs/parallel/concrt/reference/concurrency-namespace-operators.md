@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: concurrency namespace Operators"
 title: "concurrency namespace Operators"
-ms.date: "11/04/2016"
+description: "Learn more about: concurrency namespace Operators"
+ms.date: 11/04/2016
 f1_keywords: ["concrt/concurrency::operator!=", "concrt/concurrency::operator&&"]
-ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
 ---
 # concurrency namespace Operators
 
