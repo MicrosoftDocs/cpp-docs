@@ -10,9 +10,9 @@ ms.assetid: 4d4436f9-d0d6-4bd0-b8ec-767b89adfb2f
 
 > '*function*' : redefinition; different exception specifications
 
-This error indicates that a function overload was attempted only on the [exception specification](../../cpp/exception-specifications-throw-cpp.md).
-
 ## Remarks
+
+This error indicates that a function overload was attempted only on the [exception specification](../../cpp/exception-specifications-throw-cpp.md).
 
 By default, the compiler considers a `noexcept` specification to be equivalent to a `throw()` or `throw(some_type)` specification. Under [`/Za`](../../build/reference/za-ze-disable-language-extensions.md), this check is more strict.
 

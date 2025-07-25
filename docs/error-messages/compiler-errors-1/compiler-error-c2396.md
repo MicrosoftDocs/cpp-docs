@@ -10,7 +10,11 @@ ms.assetid: 1b515ef6-7af4-400f-b4ed-564313ea15f6
 
 > 'your_type::operator'type'' : CLR or WinRT user-defined conversion functionnot valid. Must either convert from or convert to: 'T^', 'T^%', 'T^&', where T = 'your_type'
 
+## Remarks
+
 A conversion function in a Windows Runtime or managed type did not have at least one parameter whose type is the same as the type containing the conversion function.
+
+## Example
 
 The following sample generates C2396 and shows how to fix it:
 

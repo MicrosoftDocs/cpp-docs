@@ -10,6 +10,8 @@ ms.assetid: 6696221d-879c-477a-a0f3-a6edc15fd3d7
 
 > '*symbol*' : default-arguments are not allowed on this symbol
 
+## Remarks
+
 The C++ compiler does not allow default arguments on pointers to functions.
 
 This code was accepted by the Microsoft C++ compiler in versions before Visual Studio 2005, but now gives an error. For code that works in all versions of Visual C++, do not assign a default value to a pointer-to-function argument.

@@ -10,7 +10,11 @@ ms.assetid: 1ba441ee-73f9-42a5-bfe9-fbeab93808eb
 
 > inline assembler syntax error in 'context'; found 'token'
 
+## Remarks
+
 The token caused a syntax error in the specified context.
+
+## Example
 
 The following sample generates C2400:
 

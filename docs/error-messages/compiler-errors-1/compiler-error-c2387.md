@@ -10,9 +10,13 @@ ms.assetid: 6847b8e1-ffac-458d-ab88-0c92f72f2527
 
 > 'type' : ambiguous base class
 
+## Remarks
+
 The compiler could not unambiguously resolve a function call because the function exists in more than one base class.
 
 To resolve this error, either remove one of the base classes from the inheritance, or explicitly qualify the function call.
+
+## Example
 
 The following sample generates C2387:
 

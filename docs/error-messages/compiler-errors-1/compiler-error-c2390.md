@@ -10,6 +10,8 @@ ms.assetid: 06b749ee-d072-4db1-b229-715f2c0728b5
 
 > 'identifier' : incorrect storage class 'specifier'
 
+## Remarks
+
 The storage class is not valid for the global-scope identifier. The default storage class is used in place of the invalid class.
 
 Possible resolutions:

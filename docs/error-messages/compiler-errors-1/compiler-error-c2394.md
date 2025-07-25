@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2394"]
 
 > '*type*::operator *operator*': CLR/WinRT operator not valid. At least one parameter must be of the following types: 'T^', 'T^%', 'T^&', where T = 'type'
 
+## Remarks
+
 An operator in a Windows Runtime or managed type did not have at least one parameter whose type is the same as the type of the operator return value.
+
+## Example
 
 The following sample generates C2394:
 

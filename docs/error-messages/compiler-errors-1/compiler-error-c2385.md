@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2385"]
 
 > ambiguous access of 'member'
 
+## Remarks
+
 A member is inherited from more than one base type, making unqualified access to that member ambiguous. To resolve this error:
 
 - Explicitly qualify access to the member.

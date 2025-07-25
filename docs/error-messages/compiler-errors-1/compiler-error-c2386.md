@@ -10,7 +10,11 @@ ms.assetid: aaaa1284-34a0-4da2-8547-9fcbb559dae0
 
 > 'symbol' : a symbol with this name already exists in the current scope
 
+## Remarks
+
 You tried to create a namespace alias, but the name you chose already exists.
+
+## Example
 
 The following sample generates C2386:
 
