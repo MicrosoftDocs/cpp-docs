@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Concurrency::graphics::direct3d Namespace"
 title: "Concurrency::graphics::direct3d Namespace"
-ms.date: "11/04/2016"
+description: "Learn more about: Concurrency::graphics::direct3d Namespace"
+ms.date: 11/04/2016
 f1_keywords: ["amp_graphics/Concurrency::graphics::direct3d", "amp_short_vectors/Concurrency::graphics::direct3d"]
-ms.assetid: be283331-07cf-46e4-91a1-e8aa85d4ec8e
 ---
 # Concurrency::graphics::direct3d Namespace
 
