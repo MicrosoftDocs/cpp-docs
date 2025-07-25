@@ -6,6 +6,8 @@ f1_keywords: ["concrt/concurrency::Alloc", "concrt/concurrency::DisableTracing",
 ---
 # concurrency namespace functions
 
+The following functions are available in the `concurrency` namespace:
+
 ## <a name="alloc"></a> Alloc
 
 Allocates a block of memory of the size specified from the Concurrency Runtime Caching Suballocator.

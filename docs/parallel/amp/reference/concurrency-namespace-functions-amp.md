@@ -7,6 +7,8 @@ ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
 ---
 # Concurrency namespace functions (AMP)
 
+The following functions are defined in the `Concurrency` namespace (AMP):
+
 ## <a name="all_memory_fence"></a> all_memory_fence
 
 Blocks execution of all threads in a tile until all memory accesses have been completed. This ensures that all memory accesses are visible to other threads in the thread tile, and are executed in program order.

@@ -7,6 +7,8 @@ ms.assetid: 6f81fc4c-b10c-479e-8717-9c292360d5a0
 ---
 # concurrency namespace constants
 
+The following constants are defined in the `concurrency` namespace:
+
 ## <a name="agenteventguid"></a> AgentEventGuid
 
 A category GUID ({B9B5B78C-0713-4898-A21A-C67949DCED07}) describing ETW events fired by the Agents library in the Concurrency Runtime.

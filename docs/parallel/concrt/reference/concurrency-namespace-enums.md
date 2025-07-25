@@ -7,6 +7,8 @@ ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
 ---
 # concurrency namespace enums
 
+The following enumerations are available in the `concurrency` namespace:
+
 ## <a name="agent_status"></a> agent_status Enumeration
 
 The valid states for an `agent`.

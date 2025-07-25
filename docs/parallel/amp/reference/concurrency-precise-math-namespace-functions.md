@@ -6,6 +6,8 @@ f1_keywords: ["amp_math/Concurrency::precise_math::acos", "amp_math/Concurrency:
 ---
 # Concurrency::precise_math namespace functions
 
+The following functions are available in the `Concurrency::precise_math` namespace:
+
 ## <a name="acos"></a> acos
 
 Calculates the arccosine of the argument

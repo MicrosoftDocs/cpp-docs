@@ -7,6 +7,8 @@ helpviewer_keywords: ["std::ALLOCATOR_DECL [C++]", "std::CACHE_CHUNKLIST [C++]",
 ---
 # `<allocators>` macros
 
+The `<allocators>` header provides the following macros:
+
 ## <a name="allocator_decl"></a> ALLOCATOR_DECL
 
 Yields an allocator class template.

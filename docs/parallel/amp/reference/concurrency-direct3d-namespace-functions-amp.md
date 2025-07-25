@@ -6,6 +6,8 @@ f1_keywords: ["amp/Concurrency::direct3d::abs", "amp/Concurrency::direct3d::coun
 ---
 # Concurrency::direct3d namespace functions (AMP)
 
+The following functions are defined in the `Concurrency::direct3d` namespace (AMP):
+
 ## Requirements
 
 **Header:** amp.h

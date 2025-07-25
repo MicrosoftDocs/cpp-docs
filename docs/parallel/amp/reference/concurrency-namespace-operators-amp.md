@@ -6,6 +6,8 @@ ms.assetid: 77f1ae17-1eb2-480d-8fe5-66d4c24bb91e
 ---
 # Concurrency namespace operators (AMP)
 
+The following operators are defined in the `Concurrency` namespace (AMP):
+
 ## <a name="operator_eq_eq"></a> operator==
 
 Determines whether the specified arguments are equal.

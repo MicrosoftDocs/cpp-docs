@@ -7,6 +7,8 @@ ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
 ---
 # concurrency namespace Operators
 
+The following operators are available in the `concurrency` namespace:
+
 ## <a name="operator_lor"></a> `operator||` Operator
 
 Creates a task that will complete successfully when either of the tasks supplied as arguments completes successfully.

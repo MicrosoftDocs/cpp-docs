@@ -7,6 +7,8 @@ ms.assetid: f5763d62-795b-4de6-a7a5-c7115f158708
 ---
 # Concurrency::fast_math namespace functions
 
+The following functions are available in the `Concurrency::fast_math` namespace:
+
 ## <a name="acos"></a> acos
 
 Calculates the arccosine of the argument

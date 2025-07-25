@@ -7,6 +7,8 @@ ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
 ---
 # Concurrency::graphics::direct3d namespace functions
 
+The following functions are available in the `Concurrency::graphics::direct3d` namespace:
+
 ## <a name="get_sampler"></a> get_sampler
 
 Get the D3D sampler state interface on the given accelerator view that represents the specified sampler object.
