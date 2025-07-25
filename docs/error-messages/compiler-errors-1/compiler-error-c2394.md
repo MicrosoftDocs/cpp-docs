@@ -15,7 +15,7 @@ An operator in a Windows Runtime or managed type did not have at least one param
 
 ## Example
 
-The following sample generates C2394:
+The following example generates C2394:
 
 ```cpp
 // C2394.cpp

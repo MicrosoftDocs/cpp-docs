@@ -16,7 +16,7 @@ The token caused a syntax error in the specified context.
 
 ## Example
 
-The following sample generates C2400:
+The following example generates C2400:
 
 ```cpp
 // C2400.cpp

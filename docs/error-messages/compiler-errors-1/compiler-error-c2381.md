@@ -16,7 +16,7 @@ A function was declared and then defined but the definition used the [noreturn](
 
 ## Example
 
-The following sample generates C2381:
+The following example generates C2381:
 
 ```cpp
 // C2381.cpp

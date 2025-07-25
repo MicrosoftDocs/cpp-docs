@@ -16,7 +16,7 @@ The **`friend`** declaration includes a complete class declaration. A **`friend`
 
 ## Example
 
-The following sample generates C2326:
+The following example generates C2326:
 
 ```cpp
 // C2391.cpp

@@ -18,7 +18,7 @@ To resolve this error, either remove one of the base classes from the inheritanc
 
 ## Example
 
-The following sample generates C2387:
+The following example generates C2387:
 
 ```cpp
 // C2387.cpp

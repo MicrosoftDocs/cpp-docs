@@ -20,7 +20,7 @@ To resolve this issue, change all declarations and definitions of the function (
 
 ## Example
 
-The following sample generates C2382:
+The following example generates C2382:
 
 ```cpp
 // C2382.cpp

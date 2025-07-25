@@ -19,7 +19,7 @@ A narrowing conversion can be okay when you know the possible range of converted
 
 ## Example
 
-The following sample generates C2397:
+The following example generates C2397:
 
 ```cpp
 // C2397.cpp

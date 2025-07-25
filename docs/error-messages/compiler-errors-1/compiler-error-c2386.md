@@ -16,7 +16,7 @@ You tried to create a namespace alias, but the name you chose already exists.
 
 ## Example
 
-The following sample generates C2386:
+The following example generates C2386:
 
 ```cpp
 // C2386.cpp

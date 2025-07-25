@@ -20,7 +20,7 @@ See [/clr (Common Language Runtime Compilation)](../../build/reference/clr-commo
 
 ## Example
 
-The following sample generates C2393. To fix this issue, do not create a data segment.
+The following example generates C2393. To fix this issue, do not create a data segment.
 
 ```cpp
 // C2393.cpp

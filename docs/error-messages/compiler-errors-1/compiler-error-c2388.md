@@ -18,7 +18,7 @@ For more information, see [appdomain](../../cpp/appdomain.md) and [process](../.
 
 ## Example
 
-The following sample generates C2388:
+The following example generates C2388:
 
 ```cpp
 // C2388.cpp

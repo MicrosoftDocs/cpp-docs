@@ -20,7 +20,7 @@ A member is inherited from more than one base type, making unqualified access to
 
 ## Example
 
-The following sample generates C2385:
+The following example generates C2385:
 
 ```cpp
 // C2385.cpp
