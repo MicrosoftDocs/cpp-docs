@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _set_abort_behavior"
 title: "_set_abort_behavior"
+description: "Learn more about: _set_abort_behavior"
 ms.date: 07/07/2022
 api_name: ["_set_abort_behavior", "_o__set_abort_behavior"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
