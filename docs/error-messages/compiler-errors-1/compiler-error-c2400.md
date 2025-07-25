@@ -8,7 +8,7 @@ ms.assetid: 1ba441ee-73f9-42a5-bfe9-fbeab93808eb
 ---
 # Compiler Error C2400
 
-inline assembler syntax error in 'context'; found 'token'
+> inline assembler syntax error in 'context'; found 'token'
 
 The token caused a syntax error in the specified context.
 

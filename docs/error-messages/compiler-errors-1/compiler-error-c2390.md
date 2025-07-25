@@ -8,7 +8,7 @@ ms.assetid: 06b749ee-d072-4db1-b229-715f2c0728b5
 ---
 # Compiler Error C2390
 
-'identifier' : incorrect storage class 'specifier'
+> 'identifier' : incorrect storage class 'specifier'
 
 The storage class is not valid for the global-scope identifier. The default storage class is used in place of the invalid class.
 

@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2397"]
 ---
 # Compiler Error C2397
 
-conversion from 'type_1' to 'type_2' requires a narrowing conversion
+> conversion from 'type_1' to 'type_2' requires a narrowing conversion
 
 An implicit narrowing conversion was found when using uniform initialization.
 

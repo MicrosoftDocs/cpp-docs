@@ -8,7 +8,7 @@ ms.assetid: aaaa1284-34a0-4da2-8547-9fcbb559dae0
 ---
 # Compiler Error C2386
 
-'symbol' : a symbol with this name already exists in the current scope
+> 'symbol' : a symbol with this name already exists in the current scope
 
 You tried to create a namespace alias, but the name you chose already exists.
 

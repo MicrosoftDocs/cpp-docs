@@ -8,7 +8,7 @@ ms.assetid: 6122dc81-4ee3-49a5-a67d-d867808c9bac
 ---
 # Compiler Error C2389
 
-'operator' : illegal operand 'nullptr'
+> 'operator' : illegal operand 'nullptr'
 
 **`nullptr`** cannot be an operand.
 

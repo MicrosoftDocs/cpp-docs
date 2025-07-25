@@ -8,7 +8,7 @@ ms.assetid: 6847b8e1-ffac-458d-ab88-0c92f72f2527
 ---
 # Compiler Error C2387
 
-'type' : ambiguous base class
+> 'type' : ambiguous base class
 
 The compiler could not unambiguously resolve a function call because the function exists in more than one base class.
 

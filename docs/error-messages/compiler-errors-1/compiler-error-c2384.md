@@ -8,7 +8,7 @@ ms.assetid: 8145f7ad-31b1-406d-ac43-0d557feab635
 ---
 # Compiler Error C2384
 
-'member' : cannot apply __declspec(thread) to a member of a managed or WinRT class
+> 'member' : cannot apply __declspec(thread) to a member of a managed or WinRT class
 
 The [thread](../../cpp/thread.md) **`__declspec`** modifier cannot be used on a member of a managed or Windows Runtime class.
 

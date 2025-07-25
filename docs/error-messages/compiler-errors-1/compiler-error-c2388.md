@@ -8,7 +8,7 @@ ms.assetid: 764ad2d7-cb04-425f-ba30-70989488c4a4
 ---
 # Compiler Error C2388
 
-'symbol' : a symbol cannot be declared with both __declspec(appdomain) and \__declspec(process)
+> 'symbol' : a symbol cannot be declared with both __declspec(appdomain) and \__declspec(process)
 
 The `appdomain` and `process` **`__declspec`** modifiers cannot be used on the same symbol. The storage for a variable exists per process or per application domain.
 

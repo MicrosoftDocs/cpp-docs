@@ -8,7 +8,7 @@ ms.assetid: 98ced473-6383-46ed-b79c-21857d65dcb2
 ---
 # Compiler Error C2392
 
-'method1' : covariant returns types are not supported in managed or WinRTtypes, otherwise 'method2' would be overridden
+> 'method1' : covariant returns types are not supported in managed or WinRTtypes, otherwise 'method2' would be overridden
 
 Covariant return types are not allowed for Windows Runtime member functions or when compiling with the [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) option.
 

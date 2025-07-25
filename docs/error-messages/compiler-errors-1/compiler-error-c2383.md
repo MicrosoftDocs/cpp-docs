@@ -8,7 +8,7 @@ ms.assetid: 6696221d-879c-477a-a0f3-a6edc15fd3d7
 ---
 # Compiler Error C2383
 
-'*symbol*' : default-arguments are not allowed on this symbol
+> '*symbol*' : default-arguments are not allowed on this symbol
 
 The C++ compiler does not allow default arguments on pointers to functions.
 
