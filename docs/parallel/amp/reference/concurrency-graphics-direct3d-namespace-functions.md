@@ -7,22 +7,6 @@ ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
 ---
 # Concurrency::graphics::direct3d namespace functions
 
-:::row:::
-   :::column span="":::
-      [`get_sampler`](#get_sampler)\
-      [`get_texture`](#get_texture)
-   :::column-end:::
-   :::column span="":::
-      [`make_sampler`](#make_sampler)
-   :::column-end:::
-   :::column span="":::
-      [`make_texture`](#make_texture)
-   :::column-end:::
-   :::column span="":::
-      [`msad4`](#msad4)
-   :::column-end:::
-:::row-end:::
-
 ## <a name="get_sampler"></a> get_sampler
 
 Get the D3D sampler state interface on the given accelerator view that represents the specified sampler object.

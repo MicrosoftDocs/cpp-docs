@@ -7,33 +7,6 @@ ms.assetid: 6f81fc4c-b10c-479e-8717-9c292360d5a0
 ---
 # concurrency namespace constants
 
-:::row:::
-   :::column span="":::
-      [`AgentEventGuid`](#agenteventguid)\
-      [`CONCRT_RM_VERSION_1`](#concrt_rm_version_1)\
-      [`COOPERATIVE_TIMEOUT_INFINITE`](#cooperative_timeout_infinite)\
-      [`COOPERATIVE_WAIT_TIMEOUT`](#cooperative_wait_timeout)\
-      [`ChoreEventGuid`](#choreeventguid)\
-      [`ConcRTEventGuid`](#concrteventguid)
-   :::column-end:::
-   :::column span="":::
-      [`ConcRT_ProviderGuid`](#concrt_providerguid)\
-      [`ContextEventGuid`](#contexteventguid)\
-      [`INHERIT_THREAD_PRIORITY`](#inherit_thread_priority)\
-      [`LockEventGuid`](#lockeventguid)\
-      [`MaxExecutionResources`](#maxexecutionresources)\
-      [`PPLParallelForEventGuid`](#pplparallelforeventguid)
-   :::column-end:::
-   :::column span="":::
-      [`PPLParallelForeachEventGuid`](#pplparallelforeacheventguid)\
-      [`PPLParallelInvokeEventGuid`](#pplparallelinvokeeventguid)\
-      [`ResourceManagerEventGuid`](#resourcemanagereventguid)\
-      [`ScheduleGroupEventGuid`](#schedulegroupeventguid)\
-      [`SchedulerEventGuid`](#schedulereventguid)\
-      [`VirtualProcessorEventGuid`](#virtualprocessoreventguid)
-   :::column-end:::
-:::row-end:::
-
 ## <a name="agenteventguid"></a> AgentEventGuid
 
 A category GUID ({B9B5B78C-0713-4898-A21A-C67949DCED07}) describing ETW events fired by the Agents library in the Concurrency Runtime.
