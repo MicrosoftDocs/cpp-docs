@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: optimize pragma"
 title: "optimize pragma"
-ms.date: 01/22/2021
+ms.date: 07/25/2025
 f1_keywords: ["vc-pragma.optimize", "optimize_CPP"]
 helpviewer_keywords: ["pragma, optimize", "optimize pragma"]
 no-loc: ["pragma"]
@@ -25,8 +25,8 @@ The *optimization-list* can be zero or more of the parameters shown in the follo
 | Parameter(s) | Type of optimization |
 |--------------------|--------------------------|
 | **`g`** | Enable global optimizations. Deprecated. For more information, see [`/Og` (Global optimizations)](../build/reference/og-global-optimizations.md). |
-| **`s`** or **`t`** | Specify short or fast sequences of machine code. |
-| **`y`** | Generate frame pointers on the program stack. |
+| **`s`** or **`t`** | Favor short or fast sequences of machine code. |
+| **`y`** | Omit frame pointers on the program stack. |
 
 These parameters are the same letters used with the [`/O`](../build/reference/o-options-optimize-code.md) compiler options. For example, the following pragma is equivalent to the **`/Os`** compiler option:
 
