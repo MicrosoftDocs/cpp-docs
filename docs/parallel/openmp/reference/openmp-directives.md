@@ -28,7 +28,7 @@ For main thread and synchronization:
 |[master](#master)|Specifies that only the main thread should execute a section of the program.|
 |[critical](#critical)|Specifies that code is only executed on one thread at a time.|
 |[barrier](#barrier)|Synchronizes all threads in a team; all threads pause at the barrier, until all threads execute the barrier.|
-|[atomic](#atomic)|Specifies that a memory location that will be updated atomically.|
+|[atomic](#atomic)|Specifies that a memory location will be updated atomically.|
 |[flush](#flush-openmp)|Specifies that all threads have the same view of memory for all shared objects.|
 |[ordered](#ordered-openmp-directives)|Specifies that code under a parallelized `for` loop should be executed like a sequential loop.|
 

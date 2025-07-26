@@ -27,7 +27,7 @@ An lvalue has an address that your program can access. Examples of lvalue expres
 
 A prvalue expression has no address that is accessible by your program. Examples of prvalue expressions include literals, function calls that return a nonreference type, and temporary objects that are created during expression evaluation but accessible only by the compiler.
 
-An xvalue expression has an address that no longer accessible by your program but can be used to initialize an rvalue reference, which provides access to the expression. Examples include function calls that return an rvalue reference, and the array subscript, member and pointer to member expressions where the array or object is an rvalue reference.
+An xvalue expression has an address that is no longer accessible by your program but can be used to initialize an rvalue reference, which provides access to the expression. Examples include function calls that return an rvalue reference, and the array subscript, member and pointer to member expressions where the array or object is an rvalue reference.
 
 ## Example
 
