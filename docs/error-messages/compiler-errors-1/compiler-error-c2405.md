@@ -10,4 +10,6 @@ ms.assetid: 14f6726d-e04b-4cce-8a85-4553fc38fcf7
 
 > illegal short forward reference with offset
 
+## Remarks
+
 Short forward references must refer to a label only. An additional offset cannot be used.

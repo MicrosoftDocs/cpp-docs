@@ -10,4 +10,6 @@ ms.assetid: cc11faab-a022-4702-ac8b-9864b916cfa2
 
 > 'identifier' : illegal symbol in context
 
+## Remarks
+
 The identifier is invalid in this context.

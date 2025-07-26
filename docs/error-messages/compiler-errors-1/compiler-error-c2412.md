@@ -10,4 +10,6 @@ ms.assetid: d1842b89-da09-4c35-89a1-84dc844a9f3e
 
 > 'label' : case-insensitive label redefined
 
+## Remarks
+
 The label is defined more than once in the current function. Change the spelling of the label and its references.

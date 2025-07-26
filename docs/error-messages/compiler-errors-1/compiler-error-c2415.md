@@ -10,6 +10,8 @@ ms.assetid: f225c913-2bea-46b1-b096-3d358ac94a15
 
 > improper operand type
 
+## Remarks
+
 The opcode does not use operands of this type.
 
 ### To fix by checking the following possible causes

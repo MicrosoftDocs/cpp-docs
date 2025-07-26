@@ -10,4 +10,6 @@ ms.assetid: add1f0ba-96b6-4df3-b53f-de1433d80c0c
 
 > 'identifier' : register must be base/index in 'context'
 
+## Remarks
+
 The register used in an indirect memory operand must be a base or index register in this context.

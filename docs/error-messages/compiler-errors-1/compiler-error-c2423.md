@@ -10,7 +10,11 @@ ms.assetid: 8797fb8b-b58b-4add-b6e6-2a9a3cd9084d
 
 > 'number' : illegal scale
 
+## Remarks
+
 Inline assembly code uses a number other than 1, 2, 4, or 8 to scale a register.
+
+## Example
 
 The following sample generates C2423:
 

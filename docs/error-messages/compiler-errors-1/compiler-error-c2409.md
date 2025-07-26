@@ -10,4 +10,6 @@ ms.assetid: 5d4aa952-0752-4412-b5c2-050dde0636f4
 
 > illegal type used as operator in 'context'
 
+## Remarks
+
 The type is not legal as an operator in this context.

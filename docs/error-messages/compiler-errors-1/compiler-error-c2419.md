@@ -10,4 +10,6 @@ ms.assetid: 51fe3195-34b6-445e-9f01-1e93e8714295
 
 > mod by zero in 'context'
 
+## Remarks
+
 The parameter to the right of the `MOD` operator is zero in this context.

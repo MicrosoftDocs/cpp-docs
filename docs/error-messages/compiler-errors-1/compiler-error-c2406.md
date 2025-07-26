@@ -10,4 +10,6 @@ ms.assetid: 9d3fbc4c-40bb-42c7-bfd7-7656c40e2065
 
 > 'identifier' : name undefined in 'context'
 
+## Remarks
+
 An undefined identifier is used with the `SIZE`, `LENGTH`, or member-selection (.) operator.

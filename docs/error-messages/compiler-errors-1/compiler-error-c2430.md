@@ -10,6 +10,8 @@ ms.assetid: 07c20f76-63e1-4d22-b2a9-98b0d45c5cac
 
 > more than one index register in 'identifier'
 
+## Remarks
+
 More than one register is scaled. The compiler supports scaled indexing, but you can only scale one register.
 
 ## Example

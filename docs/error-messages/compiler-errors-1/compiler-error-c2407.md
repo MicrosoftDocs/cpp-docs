@@ -10,4 +10,6 @@ ms.assetid: faf38041-cf0f-4624-b6f8-30ce0e1efc1e
 
 > illegal 'float' register in 'context'
 
+## Remarks
+
 An `NDP` register was specified in an invalid context.

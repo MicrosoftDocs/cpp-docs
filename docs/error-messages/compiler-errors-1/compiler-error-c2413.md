@@ -10,4 +10,6 @@ ms.assetid: d0403952-f41e-4b21-840d-ab4e44171838
 
 > 'token' : illegal align size
 
+## Remarks
+
 The size used with the `ALIGN` directive is missing or outside the valid range.

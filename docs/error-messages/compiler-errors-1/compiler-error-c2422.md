@@ -10,6 +10,8 @@ ms.assetid: ef0ec302-4028-4778-b134-0b8cea4bcad9
 
 > illegal segment override in 'operand'
 
+## Remarks
+
 Inline assembly code incorrectly uses a segment override operator (colon) on an operand.  Possible causes include:
 
 - The register preceding the operator is not a segment register.
@@ -19,6 +21,8 @@ Inline assembly code incorrectly uses a segment override operator (colon) on an 
 - The segment override operator appears within an indirection operator (brackets).
 
 - The expression following the segment override operator is not an immediate operand or a memory operand.
+
+## Example
 
 The following sample generates C2422:
 

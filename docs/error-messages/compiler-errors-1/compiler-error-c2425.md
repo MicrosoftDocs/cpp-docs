@@ -10,9 +10,13 @@ ms.assetid: 0ce59404-9aff-4e01-aa8d-27d23e92eb30
 
 > 'token' :non-constant expression in 'context'
 
+## Remarks
+
 The token forms part of a non-constant expression in this context.
 
 To fix this issue, replace the token with a constant literal or with a calculation.
+
+## Example
 
 The following sample generates C2425:
 

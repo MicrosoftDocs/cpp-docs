@@ -10,4 +10,6 @@ ms.assetid: 3dc4881a-3c33-4c4e-b18e-a1f0e21ea931
 
 > illegal type on PTR operator in 'context'
 
+## Remarks
+
 The first parameter of the `PTR` operator is not a legal type specification.
