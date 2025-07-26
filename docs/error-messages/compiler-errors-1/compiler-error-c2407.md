@@ -8,6 +8,6 @@ ms.assetid: faf38041-cf0f-4624-b6f8-30ce0e1efc1e
 ---
 # Compiler Error C2407
 
-illegal 'float' register in 'context'
+> illegal 'float' register in 'context'
 
 An `NDP` register was specified in an invalid context.

@@ -8,7 +8,7 @@ ms.assetid: a7d421af-6180-40b4-b7a6-9f3bc7dfaaf9
 ---
 # Compiler Error C2427
 
-'class' : cannot define class in this scope
+> 'class' : cannot define class in this scope
 
 An attempt was made to define a nested class, but the nested class is a member of a base class, not the most containing class.
 

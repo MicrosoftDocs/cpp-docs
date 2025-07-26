@@ -8,7 +8,7 @@ ms.assetid: ef0ec302-4028-4778-b134-0b8cea4bcad9
 ---
 # Compiler Error C2422
 
-illegal segment override in 'operand'
+> illegal segment override in 'operand'
 
 Inline assembly code incorrectly uses a segment override operator (colon) on an operand.  Possible causes include:
 

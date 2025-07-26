@@ -8,7 +8,7 @@ ms.assetid: b69b2de1-56f3-4ebc-8913-04ac57ffe8a1
 ---
 # Compiler Error C2410
 
-'identifier' : ambiguous member name in 'context'
+> 'identifier' : ambiguous member name in 'context'
 
 The identifier is a member of more than one structure or union in this context.
 

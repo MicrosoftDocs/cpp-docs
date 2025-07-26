@@ -8,7 +8,7 @@ ms.assetid: bbe94e03-862e-4990-b15e-544ae464727d
 ---
 # Compiler Error C2414
 
-illegal number of operands
+> illegal number of operands
 
 ### To fix by checking the following possible causes
 

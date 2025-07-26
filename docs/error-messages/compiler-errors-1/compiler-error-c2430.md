@@ -8,7 +8,7 @@ ms.assetid: 07c20f76-63e1-4d22-b2a9-98b0d45c5cac
 ---
 # Compiler Error C2430
 
-more than one index register in 'identifier'
+> more than one index register in 'identifier'
 
 More than one register is scaled. The compiler supports scaled indexing, but you can only scale one register.
 

@@ -8,6 +8,6 @@ ms.assetid: 51fe3195-34b6-445e-9f01-1e93e8714295
 ---
 # Compiler Error C2419
 
-mod by zero in 'context'
+> mod by zero in 'context'
 
 The parameter to the right of the `MOD` operator is zero in this context.

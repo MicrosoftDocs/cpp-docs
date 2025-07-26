@@ -8,6 +8,6 @@ ms.assetid: 3dc4881a-3c33-4c4e-b18e-a1f0e21ea931
 ---
 # Compiler Error C2408
 
-illegal type on PTR operator in 'context'
+> illegal type on PTR operator in 'context'
 
 The first parameter of the `PTR` operator is not a legal type specification.

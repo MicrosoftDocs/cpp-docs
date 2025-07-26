@@ -8,6 +8,6 @@ ms.assetid: 23fa63e1-ea9e-482f-be2e-a205c548ba69
 ---
 # Compiler Error C2402
 
-'identifier' : register must be index in 'context'
+> 'identifier' : register must be index in 'context'
 
 The register used in an indirect memory operand must be an index register in this context.

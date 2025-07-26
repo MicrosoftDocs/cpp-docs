@@ -8,6 +8,6 @@ ms.assetid: 51794d2f-404b-4d89-b3ea-fc5faa9c197d
 ---
 # Compiler Error C2404
 
-'identifier' : illegal register in 'context'
+> 'identifier' : illegal register in 'context'
 
 This register is invalid in this context.

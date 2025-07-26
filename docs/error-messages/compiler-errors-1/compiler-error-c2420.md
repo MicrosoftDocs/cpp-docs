@@ -8,6 +8,6 @@ ms.assetid: cc11faab-a022-4702-ac8b-9864b916cfa2
 ---
 # Compiler Error C2420
 
-'identifier' : illegal symbol in context
+> 'identifier' : illegal symbol in context
 
 The identifier is invalid in this context.

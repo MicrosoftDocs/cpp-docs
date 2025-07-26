@@ -8,6 +8,6 @@ ms.assetid: d0403952-f41e-4b21-840d-ab4e44171838
 ---
 # Compiler Error C2413
 
-'token' : illegal align size
+> 'token' : illegal align size
 
 The size used with the `ALIGN` directive is missing or outside the valid range.

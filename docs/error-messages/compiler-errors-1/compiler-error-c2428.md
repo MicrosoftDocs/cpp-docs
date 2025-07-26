@@ -8,7 +8,7 @@ ms.assetid: 74aa5714-e930-4f9e-9061-68ccce7f0d38
 ---
 # Compiler Error C2428
 
-'operation' : not allowed on operand of type 'bool'
+> 'operation' : not allowed on operand of type 'bool'
 
 You cannot apply a decrement operator to objects of type **`bool`**.
 
