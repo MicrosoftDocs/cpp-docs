@@ -16,7 +16,7 @@ You cannot apply a decrement operator to objects of type **`bool`**.
 
 ## Example
 
-The following sample generates C2428:
+The following example generates C2428:
 
 ```cpp
 // C2428.cpp

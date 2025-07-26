@@ -16,7 +16,7 @@ Inline assembly code uses a number other than 1, 2, 4, or 8 to scale a register.
 
 ## Example
 
-The following sample generates C2423:
+The following example generates C2423:
 
 ```cpp
 // C2423.cpp

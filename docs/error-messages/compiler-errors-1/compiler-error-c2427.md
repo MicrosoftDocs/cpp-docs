@@ -16,7 +16,7 @@ An attempt was made to define a nested class, but the nested class is a member o
 
 ## Example
 
-The following sample generates C2427:
+The following example generates C2427:
 
 ```cpp
 // C2427.cpp

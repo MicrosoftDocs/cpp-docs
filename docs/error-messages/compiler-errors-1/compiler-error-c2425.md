@@ -18,7 +18,7 @@ To fix this issue, replace the token with a constant literal or with a calculati
 
 ## Example
 
-The following sample generates C2425:
+The following example generates C2425:
 
 ```cpp
 // C2425.cpp
