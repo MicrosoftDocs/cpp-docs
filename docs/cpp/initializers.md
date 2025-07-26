@@ -1,7 +1,7 @@
 ---
 title: "Initializers"
-ms.date: "07/29/2019"
 description: "How to initialize classes, structs, arrays and fundamental types in C++."
+ms.date: 07/29/2019
 helpviewer_keywords: ["arrays [C++], array-element initializers", "aggregate initializers [C++]"]
 ---
 # Initializers
@@ -51,8 +51,8 @@ Initializers may take these forms:
     };
     class PointConsumer{
     public:
-        void set_point(Point p){};
-        void set_points(initializer_list<Point> my_list){};
+        void set_point(Point p){}
+        void set_points(initializer_list<Point> my_list){}
     };
     int main() {
         PointConsumer pc{};

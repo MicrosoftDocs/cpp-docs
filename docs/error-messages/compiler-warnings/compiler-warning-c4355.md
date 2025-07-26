@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1 and level 4, off) C4355"
 title: "Compiler Warning (level 1 and level 4, off) C4355"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1 and level 4, off) C4355"
+ms.date: 11/04/2016
 f1_keywords: ["C4355"]
 helpviewer_keywords: ["C4355"]
 ---
@@ -25,7 +25,7 @@ The following sample generates C4355:
 class CDerived;
 class CBase {
 public:
-   CBase(CDerived *derived): m_pDerived(derived) {};
+   CBase(CDerived *derived): m_pDerived(derived) {}
    ~CBase();
    virtual void function() = 0;
 
@@ -34,8 +34,8 @@ public:
 
 class CDerived : public CBase {
 public:
-   CDerived() : CBase(this) {};   // C4355 "this" used in derived c'tor
-   virtual void function() {};
+   CDerived() : CBase(this) {}   // C4355 "this" used in derived c'tor
+   virtual void function() {}
 };
 
 CBase::~CBase() {
