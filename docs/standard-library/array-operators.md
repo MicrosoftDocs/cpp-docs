@@ -13,7 +13,7 @@ The `<array>` header includes these **array** non-member comparison template fun
 Array comparison, not equal.
 
 ```cpp
-template <Ty, std::size_t N>
+template <class Ty, std::size_t N>
 bool operator!=(
     const array<Ty, N>& left,
     const array<Ty, N>& right);
@@ -86,7 +86,7 @@ true
 Array comparison, less than.
 
 ```cpp
-template <Ty, std::size_t N>
+template <class Ty, std::size_t N>
 bool operator<(
     const array<Ty, N>& left,
     const array<Ty, N>& right);
@@ -159,7 +159,7 @@ true
 Array comparison, less than or equal.
 
 ```cpp
-template <Ty, std::size_t N>
+template <class Ty, std::size_t N>
 bool operator<=(
     const array<Ty, N>& left,
     const array<Ty, N>& right);
@@ -232,7 +232,7 @@ false
 Array comparison, equal.
 
 ```cpp
-template <Ty, std::size_t N>
+template <class Ty, std::size_t N>
 bool operator==(
     const array<Ty, N>& left,
     const array<Ty, N>& right);
@@ -305,7 +305,7 @@ false
 Array comparison, greater than.
 
 ```cpp
-template <Ty, std::size_t N>
+template <class Ty, std::size_t N>
 bool operator>(
     const array<Ty, N>& left,
     const array<Ty, N>& right);
@@ -378,7 +378,7 @@ true
 Array comparison, greater than or equal.
 
 ```cpp
-template <Ty, std::size_t N>
+template <class Ty, std::size_t N>
 bool operator>=(
     const array<Ty, N>& left,
     const array<Ty, N>& right);
