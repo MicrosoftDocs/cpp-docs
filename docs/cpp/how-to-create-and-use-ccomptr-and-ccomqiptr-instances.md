@@ -3,7 +3,6 @@ description: "Learn more about: How to: Create and use CComPtr and CComQIPtr ins
 title: "How to: Create and use CComPtr and CComQIPtr instances"
 ms.custom: "how-to"
 ms.date: "11/19/2019"
-ms.assetid: b0356cfb-12cc-4ee8-b988-8311ed1ab5e0
 ---
 # How to: Create and use CComPtr and CComQIPtr instances
 
@@ -19,7 +18,7 @@ The following example shows how to use `CComPtr` to instantiate a COM object and
 
 `CComPtr` and its relatives are part of the ATL and are defined in \<atlcomcli.h>. `_com_ptr_t` is declared in \<comip.h>. The compiler creates specializations of `_com_ptr_t` when it generates wrapper classes for type libraries.
 
-## Example: CComQIPt
+## Example: CComQIPtr
 
 ATL also provides `CComQIPtr`, which has a simpler syntax for querying a COM object to retrieve an additional interface. However, we recommend `CComPtr` because it does everything that `CComQIPtr` can do and is semantically more consistent with raw COM interface pointers. If you use a `CComPtr` to query for an interface, the new interface pointer is placed in an out parameter. If the call fails, an HRESULT is returned, which is the typical COM pattern. With `CComQIPtr`, the return value is the pointer itself, and if the call fails, the internal HRESULT return value cannot be accessed. The following two lines show how the error handling mechanisms in `CComPtr` and `CComQIPtr` differ.
 
