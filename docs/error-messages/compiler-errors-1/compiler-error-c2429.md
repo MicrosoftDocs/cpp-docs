@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2429"
 title: "Compiler Error C2429"
-ms.date: "11/16/2017"
+description: "Learn more about: Compiler Error C2429"
+ms.date: 11/16/2017
 f1_keywords: ["C2429"]
 helpviewer_keywords: ["C2429"]
-ms.assetid: 57ff6df9-5cf1-49f3-8bd8-4e550dfd65a0
 ---
 # Compiler Error C2429
 

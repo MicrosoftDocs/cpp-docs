@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2410"
 title: "Compiler Error C2410"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2410"
+ms.date: 11/04/2016
 f1_keywords: ["C2410"]
 helpviewer_keywords: ["C2410"]
-ms.assetid: b69b2de1-56f3-4ebc-8913-04ac57ffe8a1
 ---
 # Compiler Error C2410
 

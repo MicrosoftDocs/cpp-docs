@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2414"
 title: "Compiler Error C2414"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2414"
+ms.date: 11/04/2016
 f1_keywords: ["C2414"]
 helpviewer_keywords: ["C2414"]
-ms.assetid: bbe94e03-862e-4990-b15e-544ae464727d
 ---
 # Compiler Error C2414
 

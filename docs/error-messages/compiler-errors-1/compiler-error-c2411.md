@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2411"
 title: "Compiler Error C2411"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2411"
+ms.date: 11/04/2016
 f1_keywords: ["C2411"]
 helpviewer_keywords: ["C2411"]
-ms.assetid: 453317d3-0629-4b42-b8ea-3a0b39698ca5
 ---
 # Compiler Error C2411
 

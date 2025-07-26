@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2430"
 title: "Compiler Error C2430"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2430"
+ms.date: 11/04/2016
 f1_keywords: ["C2430"]
 helpviewer_keywords: ["C2430"]
-ms.assetid: 07c20f76-63e1-4d22-b2a9-98b0d45c5cac
 ---
 # Compiler Error C2430
 

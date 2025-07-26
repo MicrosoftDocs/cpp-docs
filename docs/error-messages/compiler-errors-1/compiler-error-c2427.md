@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2427"
 title: "Compiler Error C2427"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2427"
+ms.date: 11/04/2016
 f1_keywords: ["C2427"]
 helpviewer_keywords: ["C2427"]
-ms.assetid: a7d421af-6180-40b4-b7a6-9f3bc7dfaaf9
 ---
 # Compiler Error C2427
 

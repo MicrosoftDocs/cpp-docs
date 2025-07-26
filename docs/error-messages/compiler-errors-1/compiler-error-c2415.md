@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2415"
 title: "Compiler Error C2415"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2415"
+ms.date: 11/04/2016
 f1_keywords: ["C2415"]
 helpviewer_keywords: ["C2415"]
-ms.assetid: f225c913-2bea-46b1-b096-3d358ac94a15
 ---
 # Compiler Error C2415
 

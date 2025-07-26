@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2418"
 title: "Compiler Error C2418"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2418"
+ms.date: 11/04/2016
 f1_keywords: ["C2418"]
 helpviewer_keywords: ["C2418"]
-ms.assetid: 00e4690f-04a0-4159-b358-b1e0664102c1
 ---
 # Compiler Error C2418
 
