@@ -11,6 +11,6 @@ helpviewer_keywords: ["C4235"]
 
 ## Remarks
 
-The compiler doesn't support the keyword you used on the architecture your build is targeting.
+The compiler doesn't support the keyword you used on the architecture your build is targeting. For example, the [`__asm`](../../assembler/inline/asm.md) keyword is not supported in x64 builds.
 
 This warning is always issued as an error. Use the [warning](../../preprocessor/warning.md) pragma to disable.
