@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Using Insertion Operators and Controlling Format"
 title: "Using Insertion Operators and Controlling Format"
+description: "Learn more about: Using Insertion Operators and Controlling Format"
 ms.date: 10/07/2021
 helpviewer_keywords: ["insertion operators"]
 ---

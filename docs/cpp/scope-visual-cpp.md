@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Scope (C++)"
 title: "Scope (C++)"
-ms.date: "11/19/2018"
+description: "Learn more about: Scope (C++)"
+ms.date: 11/19/2018
 helpviewer_keywords: ["classes [C++], scope", "scope [C++]", "function prototypes [C++], scope", "class scope", "prototype scope", "functions [C++], scope", "scope, C++ names"]
-ms.assetid: 81fecbb0-338b-4325-8332-49f33e716352
 ---
 # Scope (C++)
 

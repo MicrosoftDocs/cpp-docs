@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Rvalue reference declarator: &&"
 title: "Rvalue reference declarator: &&"
+description: "Learn more about: Rvalue reference declarator: &&"
 ms.date: 09/27/2022
 f1_keywords: ["&&"]
 helpviewer_keywords: ["&& rvalue reference declarator"]
-ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
 ---
 # Rvalue reference declarator: `&&`
 
