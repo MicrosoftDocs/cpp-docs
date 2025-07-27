@@ -223,7 +223,7 @@ int main()
 
 This example produces the following output:
 
-```cpp
+```Output
 In g(const MemoryBlock&).
 In g(MemoryBlock&&).
 ```
@@ -266,7 +266,7 @@ int main()
 
 This example produces the following output:
 
-```cpp
+```Output
 In g(const MemoryBlock&).
 In g(MemoryBlock&&).
 ```
@@ -360,7 +360,7 @@ int main()
 
 This example produces the following output:
 
-```cpp
+```Output
 print<T&>: first
 print<const T&>: second
 print<T&&>: third

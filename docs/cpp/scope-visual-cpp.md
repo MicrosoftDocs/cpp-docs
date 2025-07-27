@@ -34,7 +34,7 @@ Block scope and name hiding
 
 The output from the program shown in the figure is:
 
-```cpp
+```Output
 i = 0
 i = 7
 j = 9
