@@ -10,6 +10,8 @@ ms.assetid: 3c5dbe5c-b7d3-4bb0-8619-92f6e280461e
 
 > 'identifier' : member could not be initialized
 
+## Remarks
+
 A class, structure, or union member cannot be initialized.
 
 ### To fix by checking the following possible causes

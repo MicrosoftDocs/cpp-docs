@@ -10,7 +10,11 @@ ms.assetid: d969fca9-3ac5-4e4e-88fc-df05510e2093
 
 > 'identifier1' : uses 'identifier2', which is being defined
 
+## Remarks
+
 A class or structure (`identifier2`) is declared as a member of itself (`identifier1`). Recursive definitions of classes and structures are not allowed.
+
+## Example
 
 The following sample generates C2460:
 

@@ -10,7 +10,11 @@ ms.assetid: 315330d5-24bc-4193-a531-0642095be58f
 
 > operand size conflict
 
+## Remarks
+
 The instruction requires operands to be the same size.
+
+## Example
 
 The following sample generates C2443:
 

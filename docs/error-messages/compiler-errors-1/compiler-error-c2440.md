@@ -11,9 +11,9 @@ no-loc: ["struct", "const"]
 > '*initializing*' : cannot convert from '*type1*' to '*type2*'\
 > '*conversion*' : cannot convert from '*type1*' to '*type2*'
 
-The compiler can't implicitly convert from *`type1`* to *`type2`*, or can't use the specified cast or conversion operator.
-
 ## Remarks
+
+The compiler can't implicitly convert from *`type1`* to *`type2`*, or can't use the specified cast or conversion operator.
 
 The compiler generates C2440 when it can't convert from one type to another, either implicitly or by using the specified cast or conversion operator. There are many ways to generate this error. We've listed some common ones in the Examples section.
 

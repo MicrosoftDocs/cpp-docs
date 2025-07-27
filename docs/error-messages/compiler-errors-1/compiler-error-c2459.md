@@ -10,7 +10,11 @@ ms.assetid: 81e29f4c-5b60-40fb-9557-1cdc630d77e8
 
 > 'identifier' : is being defined; cannot add as an anonymous member
 
+## Remarks
+
 A class, structure, or union is redefined in its own scope by a member of an anonymous union.
+
+## Example
 
 The following sample generates C2459:
 

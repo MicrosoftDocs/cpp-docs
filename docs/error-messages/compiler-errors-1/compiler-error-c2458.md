@@ -10,7 +10,11 @@ ms.assetid: ed21901f-1067-42f5-b275-19b480decf5c
 
 > 'identifier' : redefinition within definition
 
+## Remarks
+
 A class, structure, union, or enumeration is redefined in its own declaration.
+
+## Example
 
 The following sample generates C2458:
 

@@ -10,7 +10,11 @@ ms.assetid: 3a0ab3ba-d0e4-4d8f-971d-e503397cc827
 
 > 'identifier' : cannot initialize static class data via constructor
 
+## Remarks
+
 A constructor is used to initialize a static member of a class. Static members must be initialized in a definition outside the class declaration.
+
+## Example
 
 The following sample generates C2438:
 

@@ -10,7 +10,11 @@ ms.assetid: 0e3326e8-cab1-45a5-b48d-61edd33793e8
 
 > illegal reference to 16-bit data in 'identifier'
 
+## Remarks
+
 A 16-bit register is used as an index or base register. The compiler does not support referencing 16-bit data. 16-bit registers cannot be used as index or base registers when compiling for 32-bit code.
+
+## Example
 
 The following sample generates C2432:
 

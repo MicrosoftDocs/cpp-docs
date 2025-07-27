@@ -10,9 +10,13 @@ ms.assetid: 544bf0b6-daa0-40e8-9f21-8e583d472a2d
 
 > found '{' at file scope (missing function header?)
 
+## Remarks
+
 An open brace occurs at file scope.
 
 This error can be caused by a semicolon between a function header and the opening brace of the function definition.
+
+## Example
 
 The following sample generates C2499:
 

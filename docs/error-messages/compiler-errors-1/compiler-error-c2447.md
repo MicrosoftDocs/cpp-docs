@@ -10,9 +10,13 @@ ms.assetid: d1bd6e9a-ee42-4510-ae5e-6b0378f7b931
 
 > '{' : missing function header (old-style formal list?)
 
+## Remarks
+
 The compiler encountered an unexpected open brace at global scope. In most cases, this is caused by a badly-formed function header, a misplaced declaration, or a stray semi-colon. To resolve this issue, verify that the open brace follows a correctly-formed function header, and is not preceded by a declaration or a stray semi-colon.
 
 This error can also be caused by an old-style C-language formal argument list. To resolve this issue, refactor the argument list to use modern style—that is, enclosed in parentheses.
+
+## Example
 
 The following sample generates C2447:
 

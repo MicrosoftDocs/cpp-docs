@@ -10,7 +10,11 @@ ms.assetid: ca4cc813-bc1d-4c0a-9a2c-3a5fe673d084
 
 > 'identifier' : member function or nested class in constructor initializer list
 
+## Remarks
+
 Member functions or local classes in the constructor initializer list cannot be initialized.
+
+## Example
 
 The following sample generates C2436:
 

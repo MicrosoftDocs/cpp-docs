@@ -10,7 +10,11 @@ ms.assetid: a4ec7642-6660-4c7a-9866-853d1cc67daf
 
 > 'type' : invalid source type for safe_cast
 
+## Remarks
+
 The source type for [safe_cast](../../extensions/safe-cast-cpp-component-extensions.md) was not valid.  For example, all types in a `safe_cast` operation must be CLR types.
+
+## Example
 
 The following sample generates C2452:
 

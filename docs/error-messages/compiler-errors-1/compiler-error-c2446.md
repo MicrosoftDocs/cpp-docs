@@ -10,4 +10,6 @@ ms.assetid: 4f70dd11-6baf-4b92-9a08-f88f65ffa199
 
 > 'operator' : no conversion from 'type1' to 'type2'
 
+## Remarks
+
 The compiler cannot convert `type1` to `type2`. The conversion may not make sense because it violates C/C++ semantics.

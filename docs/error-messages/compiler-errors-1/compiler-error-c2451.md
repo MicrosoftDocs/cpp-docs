@@ -10,7 +10,11 @@ ms.assetid: a64c93a5-ab8d-4d39-ae57-9ee7ef803036
 
 > conditional expression of type 'type' is illegal
 
+## Remarks
+
 The conditional expression evaluates to an integer type.
+
+## Example
 
 The following sample generates C2451:
 

@@ -10,9 +10,13 @@ ms.assetid: e255df3c-f861-4b4d-a193-8768cef061a5
 
 > 'identifier' : function-style initializer appears to be a function definition
 
+## Remarks
+
 The function definition is incorrect.
 
 This error can be caused by an old-style C-language formal list.
+
+## Example
 
 The following sample generates C2448:
 

@@ -10,6 +10,8 @@ ms.assetid: 6339ed82-caad-45d3-a8ff-6c746589fd03
 
 > 'identifier' : used ANSI prototype, found 'type', expected '{' or ';'
 
+## Remarks
+
 The function prototype is followed by a type.
 
 This error can be caused by a missing semicolon or curly brace.
