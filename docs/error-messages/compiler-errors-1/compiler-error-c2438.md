@@ -8,7 +8,7 @@ ms.assetid: 3a0ab3ba-d0e4-4d8f-971d-e503397cc827
 ---
 # Compiler Error C2438
 
-'identifier' : cannot initialize static class data via constructor
+> 'identifier' : cannot initialize static class data via constructor
 
 A constructor is used to initialize a static member of a class. Static members must be initialized in a definition outside the class declaration.
 

@@ -8,7 +8,7 @@ ms.assetid: 6339ed82-caad-45d3-a8ff-6c746589fd03
 ---
 # Compiler Error C2444
 
-'identifier' : used ANSI prototype, found 'type', expected '{' or ';'
+> 'identifier' : used ANSI prototype, found 'type', expected '{' or ';'
 
 The function prototype is followed by a type.
 

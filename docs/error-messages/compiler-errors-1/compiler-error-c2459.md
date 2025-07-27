@@ -8,7 +8,7 @@ ms.assetid: 81e29f4c-5b60-40fb-9557-1cdc630d77e8
 ---
 # Compiler Error C2459
 
-'identifier' : is being defined; cannot add as an anonymous member
+> 'identifier' : is being defined; cannot add as an anonymous member
 
 A class, structure, or union is redefined in its own scope by a member of an anonymous union.
 

@@ -8,7 +8,7 @@ ms.assetid: a4ec7642-6660-4c7a-9866-853d1cc67daf
 ---
 # Compiler Error C2452
 
-'type' : invalid source type for safe_cast
+> 'type' : invalid source type for safe_cast
 
 The source type for [safe_cast](../../extensions/safe-cast-cpp-component-extensions.md) was not valid.  For example, all types in a `safe_cast` operation must be CLR types.
 

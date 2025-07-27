@@ -8,7 +8,7 @@ ms.assetid: e255df3c-f861-4b4d-a193-8768cef061a5
 ---
 # Compiler Error C2448
 
-'identifier' : function-style initializer appears to be a function definition
+> 'identifier' : function-style initializer appears to be a function definition
 
 The function definition is incorrect.
 

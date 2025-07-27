@@ -8,7 +8,7 @@ ms.assetid: ca4cc813-bc1d-4c0a-9a2c-3a5fe673d084
 ---
 # Compiler Error C2436
 
-'identifier' : member function or nested class in constructor initializer list
+> 'identifier' : member function or nested class in constructor initializer list
 
 Member functions or local classes in the constructor initializer list cannot be initialized.
 

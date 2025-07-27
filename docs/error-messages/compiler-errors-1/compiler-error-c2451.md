@@ -8,7 +8,7 @@ ms.assetid: a64c93a5-ab8d-4d39-ae57-9ee7ef803036
 ---
 # Compiler Error C2451
 
-conditional expression of type 'type' is illegal
+> conditional expression of type 'type' is illegal
 
 The conditional expression evaluates to an integer type.
 

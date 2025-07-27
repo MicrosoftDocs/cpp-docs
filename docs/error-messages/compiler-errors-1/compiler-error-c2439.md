@@ -8,7 +8,7 @@ ms.assetid: 3c5dbe5c-b7d3-4bb0-8619-92f6e280461e
 ---
 # Compiler Error C2439
 
-'identifier' : member could not be initialized
+> 'identifier' : member could not be initialized
 
 A class, structure, or union member cannot be initialized.
 

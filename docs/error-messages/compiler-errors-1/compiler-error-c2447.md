@@ -8,7 +8,7 @@ ms.assetid: d1bd6e9a-ee42-4510-ae5e-6b0378f7b931
 ---
 # Compiler Error C2447
 
-'{' : missing function header (old-style formal list?)
+> '{' : missing function header (old-style formal list?)
 
 The compiler encountered an unexpected open brace at global scope. In most cases, this is caused by a badly-formed function header, a misplaced declaration, or a stray semi-colon. To resolve this issue, verify that the open brace follows a correctly-formed function header, and is not preceded by a declaration or a stray semi-colon.
 

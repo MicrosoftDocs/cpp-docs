@@ -8,7 +8,7 @@ ms.assetid: d969fca9-3ac5-4e4e-88fc-df05510e2093
 ---
 # Compiler Error C2460
 
-'identifier1' : uses 'identifier2', which is being defined
+> 'identifier1' : uses 'identifier2', which is being defined
 
 A class or structure (`identifier2`) is declared as a member of itself (`identifier1`). Recursive definitions of classes and structures are not allowed.
 

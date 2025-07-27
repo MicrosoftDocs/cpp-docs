@@ -8,7 +8,7 @@ ms.assetid: ed21901f-1067-42f5-b275-19b480decf5c
 ---
 # Compiler Error C2458
 
-'identifier' : redefinition within definition
+> 'identifier' : redefinition within definition
 
 A class, structure, union, or enumeration is redefined in its own declaration.
 

@@ -8,7 +8,7 @@ ms.assetid: 315330d5-24bc-4193-a531-0642095be58f
 ---
 # Compiler Error C2443
 
-operand size conflict
+> operand size conflict
 
 The instruction requires operands to be the same size.
 

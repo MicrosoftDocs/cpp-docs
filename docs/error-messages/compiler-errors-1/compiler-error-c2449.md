@@ -8,7 +8,7 @@ ms.assetid: 544bf0b6-daa0-40e8-9f21-8e583d472a2d
 ---
 # Compiler Error C2449
 
-found '{' at file scope (missing function header?)
+> found '{' at file scope (missing function header?)
 
 An open brace occurs at file scope.
 
