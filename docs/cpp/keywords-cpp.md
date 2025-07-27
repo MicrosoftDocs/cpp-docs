@@ -166,11 +166,11 @@ The **`__based`** keyword has limited uses for 32-bit and 64-bit target compilat
         [`__m64`](m64.md)\
         [`__multiple_inheritance`](inheritance-keywords.md) <sup>e</sup>\
         [`__ptr32`](ptr32-ptr64.md) <sup>e</sup>\
-        [`__ptr64`](ptr32-ptr64.md)<sup>e</sup>\
+        [`__ptr64`](ptr32-ptr64.md) <sup>e</sup>\
         [`__raise`](raise.md)\
         [`__restrict`](extension-restrict.md) <sup>e</sup>\
-        [`__single_inheritance`](inheritance-keywords.md)<sup>e</sup>\
-        [`__sptr`](sptr-uptr.md)<sup>e</sup>\
+        [`__single_inheritance`](inheritance-keywords.md) <sup>e</sup>\
+        [`__sptr`](sptr-uptr.md) <sup>e</sup>\
         [`__stdcall`](stdcall.md) <sup>e</sup>
     :::column-end:::
     :::column:::
