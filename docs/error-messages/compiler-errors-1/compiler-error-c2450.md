@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C2450"
 title: "Compiler Error C2450"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2450"
+ms.date: 11/04/2016
 f1_keywords: ["C2450"]
 helpviewer_keywords: ["C2450"]
 ---

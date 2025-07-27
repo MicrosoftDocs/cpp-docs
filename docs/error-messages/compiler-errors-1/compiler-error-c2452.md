@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2452"
 title: "Compiler Error C2452"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2452"
+ms.date: 11/04/2016
 f1_keywords: ["C2452"]
 helpviewer_keywords: ["C2452"]
-ms.assetid: a4ec7642-6660-4c7a-9866-853d1cc67daf
 ---
 # Compiler Error C2452
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2460"
 title: "Compiler Error C2460"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2460"
+ms.date: 11/04/2016
 f1_keywords: ["C2460"]
 helpviewer_keywords: ["C2460"]
-ms.assetid: d969fca9-3ac5-4e4e-88fc-df05510e2093
 ---
 # Compiler Error C2460
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2447"
 title: "Compiler Error C2447"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2447"
+ms.date: 11/04/2016
 f1_keywords: ["C2447"]
 helpviewer_keywords: ["C2447"]
-ms.assetid: d1bd6e9a-ee42-4510-ae5e-6b0378f7b931
 ---
 # Compiler Error C2447
 

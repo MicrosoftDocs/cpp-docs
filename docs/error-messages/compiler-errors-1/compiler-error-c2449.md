@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2449"
 title: "Compiler Error C2449"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2449"
+ms.date: 11/04/2016
 f1_keywords: ["C2449"]
 helpviewer_keywords: ["C2449"]
-ms.assetid: 544bf0b6-daa0-40e8-9f21-8e583d472a2d
 ---
 # Compiler Error C2449
 

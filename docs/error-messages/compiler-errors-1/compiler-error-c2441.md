@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2441"
 title: "Compiler Error C2441"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2441"
+ms.date: 11/04/2016
 f1_keywords: ["C2441"]
 helpviewer_keywords: ["C2441"]
-ms.assetid: ffbd6573-777a-48dd-892f-5cf4a758dcab
 ---
 # Compiler Error C2441
 

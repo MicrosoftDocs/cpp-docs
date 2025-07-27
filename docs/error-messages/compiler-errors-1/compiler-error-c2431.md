@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2431"
 title: "Compiler Error C2431"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2431"
+ms.date: 11/04/2016
 f1_keywords: ["C2431"]
 helpviewer_keywords: ["C2431"]
-ms.assetid: 88a5b648-c89f-47d1-a20e-63231ab4f0f7
 ---
 # Compiler Error C2431
 
