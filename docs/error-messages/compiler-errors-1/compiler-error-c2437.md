@@ -16,7 +16,7 @@ An object can be initialized only once.
 
 ## Example
 
-The following sample generates C2437:
+The following example generates C2437:
 
 ```cpp
 // C2437.cpp

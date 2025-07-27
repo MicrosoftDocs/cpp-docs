@@ -16,7 +16,7 @@ The source type for [safe_cast](../../extensions/safe-cast-cpp-component-extensi
 
 ## Example
 
-The following sample generates C2452:
+The following example generates C2452:
 
 ```cpp
 // C2452.cpp

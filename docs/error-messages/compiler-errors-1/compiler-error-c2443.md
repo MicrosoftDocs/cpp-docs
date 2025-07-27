@@ -16,7 +16,7 @@ The instruction requires operands to be the same size.
 
 ## Example
 
-The following sample generates C2443:
+The following example generates C2443:
 
 ```cpp
 // C2443.cpp

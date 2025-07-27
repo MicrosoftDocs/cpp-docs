@@ -16,7 +16,7 @@ The conditional expression evaluates to an integer type.
 
 ## Example
 
-The following sample generates C2451:
+The following example generates C2451:
 
 ```cpp
 // C2451.cpp

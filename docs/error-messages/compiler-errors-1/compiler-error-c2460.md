@@ -16,7 +16,7 @@ A class or structure (`identifier2`) is declared as a member of itself (`identif
 
 ## Example
 
-The following sample generates C2460:
+The following example generates C2460:
 
 ```cpp
 // C2460.cpp

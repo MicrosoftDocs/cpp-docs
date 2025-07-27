@@ -18,7 +18,7 @@ This error can also be caused by an old-style C-language formal argument list. T
 
 ## Example
 
-The following sample generates C2447:
+The following example generates C2447:
 
 ```cpp
 // C2447.cpp

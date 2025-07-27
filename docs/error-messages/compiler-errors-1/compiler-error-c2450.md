@@ -15,7 +15,7 @@ The **`switch`** expression evaluates to an invalid type. It must evaluate to an
 
 ## Example
 
-The following sample generates C2450:
+The following example generates C2450:
 
 ```cpp
 // C2450.cpp

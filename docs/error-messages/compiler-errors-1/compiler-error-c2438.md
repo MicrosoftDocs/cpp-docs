@@ -16,7 +16,7 @@ A constructor is used to initialize a static member of a class. Static members m
 
 ## Example
 
-The following sample generates C2438:
+The following example generates C2438:
 
 ```cpp
 // C2438.cpp

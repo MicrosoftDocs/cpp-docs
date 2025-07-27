@@ -18,7 +18,7 @@ It is not possible to dynamically initialize a per-process variable under **/clr
 
 ## Example
 
-The following sample generates C2434. To fix this issue, use constants to initialize `process` variables.
+The following example generates C2434. To fix this issue, use constants to initialize `process` variables.
 
 ```cpp
 // C2434.cpp

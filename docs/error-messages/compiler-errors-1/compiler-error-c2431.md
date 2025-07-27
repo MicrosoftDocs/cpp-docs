@@ -16,7 +16,7 @@ The ESP register is scaled or used as both index and base register. The SIB enco
 
 ## Example
 
-The following sample generates C2431:
+The following example generates C2431:
 
 ```cpp
 // C2431.cpp

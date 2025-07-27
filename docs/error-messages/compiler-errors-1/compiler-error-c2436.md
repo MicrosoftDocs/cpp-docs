@@ -16,7 +16,7 @@ Member functions or local classes in the constructor initializer list cannot be 
 
 ## Example
 
-The following sample generates C2436:
+The following example generates C2436:
 
 ```cpp
 // C2436.cpp

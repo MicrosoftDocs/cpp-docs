@@ -16,7 +16,7 @@ A 16-bit register is used as an index or base register. The compiler does not su
 
 ## Example
 
-The following sample generates C2432:
+The following example generates C2432:
 
 ```cpp
 // C2432.cpp

@@ -16,7 +16,7 @@ A class, structure, union, or enumeration is redefined in its own declaration.
 
 ## Example
 
-The following sample generates C2458:
+The following example generates C2458:
 
 ```cpp
 // C2458.cpp

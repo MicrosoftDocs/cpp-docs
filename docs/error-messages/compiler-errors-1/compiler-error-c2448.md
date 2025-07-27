@@ -18,7 +18,7 @@ This error can be caused by an old-style C-language formal list.
 
 ## Example
 
-The following sample generates C2448:
+The following example generates C2448:
 
 ```cpp
 // C2448.cpp

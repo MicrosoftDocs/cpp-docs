@@ -16,7 +16,7 @@ You attempted to use a predefined macro, such as [`__FUNCTION__`](../../preproce
 
 ## Example
 
-The following sample generates C2457 and also shows correct usage:
+The following example generates C2457 and also shows correct usage:
 
 ```cpp
 // C2457.cpp

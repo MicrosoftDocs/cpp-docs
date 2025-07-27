@@ -20,7 +20,7 @@ For more information, see [appdomain](../../cpp/appdomain.md) and [process](../.
 
 ## Example
 
-The following sample generates C2435:
+The following example generates C2435:
 
 ```cpp
 // C2435.cpp

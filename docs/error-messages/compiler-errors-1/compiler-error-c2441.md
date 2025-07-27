@@ -22,7 +22,7 @@ For more information, see [process](../../cpp/process.md) and [/clr (Common Lang
 
 ## Example
 
-The following sample generates C2441.
+The following example generates C2441.
 
 ```cpp
 // C2441.cpp
