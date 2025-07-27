@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, Error) C4235"
 title: "Compiler Warning (level 1, Error) C4235"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1, Error) C4235"
+ms.date: 07/27/2025
 f1_keywords: ["C4235"]
 helpviewer_keywords: ["C4235"]
 ---
