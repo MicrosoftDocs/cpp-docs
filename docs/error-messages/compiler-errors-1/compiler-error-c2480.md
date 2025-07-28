@@ -10,9 +10,13 @@ ms.assetid: 1a58d1c2-971b-4084-96fa-f94aa51c02f1
 
 > 'identifier' : 'thread' is only valid for data items of static extent
 
+## Remarks
+
 You cannot use the `thread` attribute with an automatic variable, nonstatic data member, function parameter, or on function declarations or definitions.
 
 Use the `thread` attribute for global variables, static data members, and local static variables only.
+
+## Example
 
 The following sample generates C2480:
 

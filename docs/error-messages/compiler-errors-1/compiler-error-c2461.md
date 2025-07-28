@@ -10,6 +10,8 @@ ms.assetid: e64ba651-f441-4fdb-b5cb-4209bbbe4db4
 
 > '*class*' : constructor syntax missing formal parameters
 
+## Remarks
+
 The constructor for the class does not specify any formal parameters. The declaration of a constructor must specify a formal parameter list. The list can be empty.
 
 To fix this issue, add a pair of parentheses after the declaration of *class*::**class*.

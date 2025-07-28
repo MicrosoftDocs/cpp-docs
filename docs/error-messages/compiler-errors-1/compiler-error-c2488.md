@@ -10,7 +10,11 @@ ms.assetid: cd435909-43e4-43c6-a57c-5d02468ef75f
 
 > 'identifier' : 'naked' can only be applied to non-member function definitions
 
+## Remarks
+
 The [naked](../../cpp/naked-cpp.md) attribute was applied to a function declaration.
+
+## Example
 
 The following sample generates C2488:
 

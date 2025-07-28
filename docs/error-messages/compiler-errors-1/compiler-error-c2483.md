@@ -10,6 +10,8 @@ ms.assetid: 5762b325-914b-442d-a604-e4617ba04038
 
 >'*identifier*' : object with constructor or destructor cannot be declared 'thread'
 
+## Remarks
+
 This error message is obsolete in Visual Studio 2015 and later versions. In previous versions, variables declared with the `thread` attribute cannot be initialized with a constructor or other expression that requires run-time evaluation. A static expression is required to initialize `thread` data.
 
 ## Example

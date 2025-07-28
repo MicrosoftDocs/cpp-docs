@@ -10,4 +10,6 @@ ms.assetid: daae3fc1-76cf-4a6f-b2fa-86873fb0929d
 
 > 'identifier' : unrecognized extended attribute
 
+## Remarks
+
 The declaration attribute is not valid.

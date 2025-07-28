@@ -10,6 +10,8 @@ ms.assetid: 64e6c61e-6e77-480e-bcf0-b30a2fc482ac
 
 > 'keyword' : missing an adjacent semicolon, could be either keyword or identifier.
 
+## Remarks
+
 The compiler expected to find a semicolon, and was unable to determine your intent. Add the semicolon to resolve this error.
 
 ## Example

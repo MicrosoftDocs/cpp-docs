@@ -10,7 +10,11 @@ ms.assetid: c74c7869-e65b-4ca1-b6fa-eb39fed4458a
 
 > 'identifier' : 'allocate( )' is only valid for data items of static extent
 
+## Remarks
+
 The `__declspec( allocate())` syntax can be used for static data only.
+
+## Example
 
 The following sample generates C2479:
 

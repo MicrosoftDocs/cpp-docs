@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2470"]
 
 > '*function*': looks like a function definition, but there is no parameter list; skipping apparent body
 
+## Remarks
+
 A function definition is missing its argument list.
 
 ## Example

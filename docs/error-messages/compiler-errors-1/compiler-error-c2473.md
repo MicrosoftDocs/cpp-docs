@@ -10,6 +10,8 @@ ms.assetid: 6bb7dbf5-b198-490f-860e-fd64d0c2a284
 
 > 'identifier' : looks like a function definition, but there is no parameter list.
 
+## Remarks
+
 The compiler detected what looked like a function, without the parameter list.
 
 ## Example

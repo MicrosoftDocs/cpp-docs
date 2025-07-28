@@ -10,7 +10,11 @@ ms.assetid: 9de6bddd-b2e2-4ce6-b33b-201a8c2c8c54
 
 > 'keyword' not allowed in function with 'naked' attribute
 
+## Remarks
+
 A function defined as [naked](../../cpp/naked-cpp.md) cannot use structured exception handling.
+
+## Example
 
 The following sample generates C2490:
 

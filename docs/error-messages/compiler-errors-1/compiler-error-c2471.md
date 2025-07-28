@@ -10,6 +10,8 @@ ms.assetid: a8928b44-20f6-4cbc-9aa5-7e86052a9c6b
 
 > cannot update program database 'file'
 
+## Remarks
+
 The compiler cannot write to the database file.
 
 ### To fix the problem

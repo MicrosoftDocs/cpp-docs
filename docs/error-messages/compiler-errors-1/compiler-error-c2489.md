@@ -10,7 +10,11 @@ ms.assetid: 67d8cd98-db7e-4f7f-86b4-4af7bc89ec8b
 
 > 'identifier' : initialized auto or register variable not allowed at function scope in 'naked' function
 
+## Remarks
+
 For more information, see [naked](../../cpp/naked-cpp.md).
+
+## Example
 
 The following sample generates C2489:
 
