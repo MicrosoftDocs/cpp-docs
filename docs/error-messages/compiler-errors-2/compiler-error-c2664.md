@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2664"
 title: "Compiler Error C2664"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2664"
+ms.date: 11/04/2016
 f1_keywords: ["C2664"]
 helpviewer_keywords: ["C2664"]
-ms.assetid: 3595d66e-cf87-4fda-a896-c0cd81f95db4
 ---
 # Compiler Error C2664
 
@@ -34,13 +33,13 @@ The following sample generates C2664 and shows how to fix it.
 // C2664.cpp
 // C2664
 struct A {
-   void f(int i) {};
+   void f(int i) {}
 };
 
 struct B : public A {
    // To fix, uncomment the following line.
    // using A::f;
-   void f(A a) {};
+   void f(A a) {}
 };
 
 int main() {
