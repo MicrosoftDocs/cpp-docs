@@ -408,7 +408,7 @@ items:
             - name: Command line property pages
               href: ../build/reference/command-line-property-pages.md
             - name: NMake property page
-              href: ../build/reference/nmake-property-page.md                
+              href: ../build/reference/nmake-property-page.md
             - name: Manifest Tool property pages
               href: ../build/reference/manifest-tool-property-pages.md
             - name: Resources property pages
@@ -1181,7 +1181,7 @@ items:
               href: ../build/reference/nmake-reference.md
             - name: NMAKE projects in Visual Studio
               href: ../build/reference/creating-a-makefile-project.md
-            - name: Running NMAKE 
+            - name: Running NMAKE
               href: ../build/reference/running-nmake.md
             - name: Makefile contents and features
               href: ../build/reference/contents-of-a-makefile.md

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2758"
 title: "Compiler Error C2758"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2758"
+ms.date: 11/04/2016
 f1_keywords: ["C2758"]
 helpviewer_keywords: ["C2758"]
-ms.assetid: 1d273034-194c-4926-9869-142d1b219cbe
 ---
 # Compiler Error C2758
 
@@ -20,8 +19,8 @@ The following sample generates C2758:
 struct A {
    const int i;
 
-   A(int n) { };   // C2758
+   A(int n) { }   // C2758
    // try the following line instead
-   // A(int n) : i{n} {};
+   // A(int n) : i{n} {}
 };
 ```

@@ -35,7 +35,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/clr:safe`](clr-common-language-runtime-compilation.md) | Produce an IL-only verifiable output file. |
 | [`/constexpr:backtrace<N>`](constexpr-control-constexpr-evaluation.md) | Show N `constexpr` evaluations in diagnostics (default: 10). |
 | [`/constexpr:depth<N>`](constexpr-control-constexpr-evaluation.md) | Recursion depth limit for `constexpr` evaluation (default: 512). |
-| [`/constexpr:steps<N>`](constexpr-control-constexpr-evaluation.md) | Terminate `constexpr` evaluation after N steps (default: 100000) |
+| [`/constexpr:steps<N>`](constexpr-control-constexpr-evaluation.md) | Terminate `constexpr` evaluation after N steps (default: 100000). |
 | [`/D<name>{=|#}<text>`](d-preprocessor-definitions.md) | Defines constants and macros. |
 | [`/dynamicdeopt`](dynamic-deopt.md) | Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) and step in anywhere with on-demand function deoptimization. |
 | [`/diagnostics`](diagnostics-compiler-diagnostic-options.md) | Diagnostics format: prints column information. |
@@ -229,7 +229,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables (off by default). |
 | [`/Zc:forScope[-]`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |
 | [`/Zc:gotoScope`](zc-gotoscope.md) | Enforce Standard C++ **`goto`** rules around local variable initialization (implied by **`/permissive-`**). |
-| [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by **`/permissive-`**) |
+| [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by **`/permissive-`**). |
 | [`/Zc:implicitNoexcept[-]`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions (on by default). |
 | [`/Zc:inline[-]`](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced functions or data if they're COMDAT or have internal linkage only (off by default). |
 | [`/Zc:lambda[-]`](zc-lambda.md) | Enable new lambda processor for conformance-mode syntactic checks in generic lambdas. |

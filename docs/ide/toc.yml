@@ -93,7 +93,7 @@ items:
     - name: Add a method
       href: ../ide/adding-a-method-visual-cpp.md
     - name: Add an IDL method
-      href: ../ide/add-interface-definition-library-method-wizard.md 
+      href: ../ide/add-interface-definition-library-method-wizard.md
     - name: Add a property
       href: ../ide/adding-a-property-visual-cpp.md
     - name: Add an IDL property
