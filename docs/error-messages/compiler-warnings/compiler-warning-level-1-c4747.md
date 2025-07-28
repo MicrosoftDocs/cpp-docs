@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4747"
 title: "Compiler Warning (level 1) C4747"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4747"
+ms.date: 11/04/2016
 f1_keywords: ["C4747"]
 helpviewer_keywords: ["C4747"]
-ms.assetid: af37befd-ba1f-4bdc-96e1-a953f7a2ad9c
 ---
 # Compiler Warning (level 1) C4747
 
@@ -35,5 +34,5 @@ The following sample generates C4747.
 
 BOOL WINAPI DllMain(HANDLE hInstance, ULONG Command, LPVOID Reserved) {
    return TRUE;
-};
+}
 ```

@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2009"
 title: "Compiler Error C2009"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2009"
+ms.date: 11/04/2016
 f1_keywords: ["C2009"]
 helpviewer_keywords: ["C2009"]
-ms.assetid: fe9d94ed-20a5-4d83-b9c4-60ee69d2f30a
 ---
 # Compiler Error C2009
 
-reuse of macro formal 'identifier'
+> reuse of macro formal 'identifier'
+
+## Remarks
 
 The formal parameter list of a macro definition uses the identifier more than once. Identifiers in the macro's parameter list must be unique.
 
-## Examples
+## Example
 
-The following sample generates C2009:
+The following example generates C2009:
 
 ```cpp
 // C2009.cpp

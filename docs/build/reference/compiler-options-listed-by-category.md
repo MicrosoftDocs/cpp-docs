@@ -158,7 +158,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/await:strict`](await-enable-coroutine-support.md) | Enable standard C++20 coroutine support with earlier language versions. |
 | [`/constexpr:backtrace<N>`](constexpr-control-constexpr-evaluation.md) | Show N `constexpr` evaluations in diagnostics (default: 10). |
 | [`/constexpr:depth<N>`](constexpr-control-constexpr-evaluation.md) | Recursion depth limit for `constexpr` evaluation (default: 512). |
-| [`/constexpr:steps<N>`](constexpr-control-constexpr-evaluation.md) | Terminate `constexpr` evaluation after N steps (default: 100000) |
+| [`/constexpr:steps<N>`](constexpr-control-constexpr-evaluation.md) | Terminate `constexpr` evaluation after N steps (default: 100000). |
 | [`/openmp`](openmp-enable-openmp-2-0-support.md) | Enables [`#pragma omp`](../../preprocessor/omp.md) in source code. |
 | [`/openmp:experimental`](openmp-enable-openmp-2-0-support.md) | Enable OpenMP 2.0 language extensions plus select OpenMP 3.0+ language extensions. |
 | [`/openmp:llvm`](openmp-enable-openmp-2-0-support.md) | OpenMP language extensions using LLVM runtime. |
@@ -183,12 +183,12 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/Zc:alignedNew[-]`](zc-alignednew.md) | Enable C++17 over-aligned dynamic allocation (on by default in C++17). |
 | [`/Zc:auto[-]`](zc-auto-deduce-variable-type.md) | Enforce the new Standard C++ meaning for **`auto`** (on by default). |
 | [`/Zc:char8_t[-]`](zc-char8-t.md) | Enable or disable C++20 native `u8` literal support as `const char8_t` (off by default, except under **`/std:c++20`**). |
-| [`/Zc:enumTypes[-]`](zc-enumtypes.md) | Enable Standard C++ rules for inferred `enum` base types (Off b y default, not implied by **`/permissive-`**). |
+| [`/Zc:enumTypes[-]`](zc-enumtypes.md) | Enable Standard C++ rules for inferred `enum` base types (Off by default, not implied by **`/permissive-`**). |
 | [`/Zc:externC[-]`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions (implied by **`/permissive-`**). |
 | [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables (off by default). |
 | [`/Zc:forScope[-]`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |
 | [`/Zc:gotoScope`](zc-gotoscope.md) | Enforce Standard C++ **`goto`** rules around local variable initialization (implied by **`/permissive-`**). |
-| [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by **`/permissive-`**) |
+| [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by **`/permissive-`**). |
 | [`/Zc:implicitNoexcept[-]`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions (on by default). |
 | [`/Zc:inline[-]`](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced functions or data if they're COMDAT or have internal linkage only (off by default). |
 | [`/Zc:lambda[-]`](zc-lambda.md) | Enable new lambda processor for conformance-mode syntactic checks in generic lambdas. |
@@ -313,7 +313,7 @@ Experimental options may only be supported by certain versions of the compiler. 
 |--|--|
 | [`/clr:noAssembly`](clr-common-language-runtime-compilation.md) | Deprecated. Use [`/LN` (Create MSIL Module)](ln-create-msil-module.md) instead. |
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
-| [`/experimental:preprocessor`](experimental-preprocessor.md) | Deprecated. Enables experimental conforming preprocessor support. Use [`/Zc:preprocessor`](zc-preprocessor.md) |
+| [`/experimental:preprocessor`](experimental-preprocessor.md) | Deprecated. Enables experimental conforming preprocessor support. Use [`/Zc:preprocessor`](zc-preprocessor.md) instead. |
 | [`/Fr`](fr-fr-create-dot-sbr-file.md) | Deprecated. Creates a browse information file without local variables. |
 | [`/Ge`](ge-enable-stack-probes.md) | Deprecated. Activates stack probes. On by default. |
 | [`/Gm`](gm-enable-minimal-rebuild.md) | Deprecated. Enables minimal rebuild. |

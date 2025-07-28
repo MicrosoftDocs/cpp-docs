@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Single Inheritance"
 title: "Single Inheritance"
-ms.date: "11/19/2018"
+description: "Learn more about: Single Inheritance"
+ms.date: 11/19/2018
 helpviewer_keywords: ["single inheritance", "base classes [C++], indirect", "scope, scope resolution operator", "operators [C++], scope resolution", "scope resolution operator", "derived classes [C++], single base class", "inheritance, single"]
-ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
 ---
 # Single Inheritance
 
@@ -74,7 +73,7 @@ Book::Book( char *name, long pagecount ) {
    Name = new char[ strlen( name ) + 1 ];
    strcpy_s( Name, strlen(Name), name );
    PageCount = pagecount;
-};
+}
 ```
 
 Note that the constructor for `Book`, (`Book::Book`), has access to the data member, `Name`. In a program, an object of type `Book` can be created and used as follows:

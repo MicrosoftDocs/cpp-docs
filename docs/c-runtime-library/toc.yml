@@ -75,7 +75,7 @@ items:
     - name: Global state in the CRT
       href: ../c-runtime-library/global-state.md
     - name: Type-generic math
-      href: ../c-runtime-library/tgmath.md 
+      href: ../c-runtime-library/tgmath.md
     - name: C runtime (CRT) and C++ Standard Library (STL) .lib files
       href: ../c-runtime-library/crt-library-features.md
 - name: Universal C runtime routines by category

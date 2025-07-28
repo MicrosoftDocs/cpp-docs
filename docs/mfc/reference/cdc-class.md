@@ -590,7 +590,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-This function is similar to `CDC::Arc`, except that the current position is updated. The points ( *`x1`*, *`y1`*) and ( *`x2`*, *`y2`*) specify the bounding rectangle. An ellipse formed by the given bounding rectangle defines the curve of the arc. The arc extends counterclockwise (the default arc direction) from the point where it intersects the radial line from the center of the bounding rectangle to ( *`x3*`, *`y3`*). The arc ends where it intersects the radial line from the center of the bounding rectangle to ( *`x4`*, *`y4`*). If the starting point and ending point are the same, a complete ellipse is drawn.
+This function is similar to `CDC::Arc`, except that the current position is updated. The points ( *`x1`*, *`y1`*) and ( *`x2`*, *`y2`*) specify the bounding rectangle. An ellipse formed by the given bounding rectangle defines the curve of the arc. The arc extends counterclockwise (the default arc direction) from the point where it intersects the radial line from the center of the bounding rectangle to ( *`x3`*, *`y3`*). The arc ends where it intersects the radial line from the center of the bounding rectangle to ( *`x4`*, *`y4`*). If the starting point and ending point are the same, a complete ellipse is drawn.
 
 A line is drawn from the current position to the starting point of the arc. If no error occurs, the current position is set to the ending point of the arc. The arc is drawn using the current pen; it isn't filled.
 
