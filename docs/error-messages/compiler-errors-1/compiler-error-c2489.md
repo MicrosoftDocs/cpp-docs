@@ -8,7 +8,7 @@ ms.assetid: 67d8cd98-db7e-4f7f-86b4-4af7bc89ec8b
 ---
 # Compiler Error C2489
 
-'identifier' : initialized auto or register variable not allowed at function scope in 'naked' function
+> 'identifier' : initialized auto or register variable not allowed at function scope in 'naked' function
 
 For more information, see [naked](../../cpp/naked-cpp.md).
 

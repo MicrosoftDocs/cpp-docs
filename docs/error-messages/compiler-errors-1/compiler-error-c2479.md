@@ -8,7 +8,7 @@ ms.assetid: c74c7869-e65b-4ca1-b6fa-eb39fed4458a
 ---
 # Compiler Error C2479
 
-'identifier' : 'allocate( )' is only valid for data items of static extent
+> 'identifier' : 'allocate( )' is only valid for data items of static extent
 
 The `__declspec( allocate())` syntax can be used for static data only.
 

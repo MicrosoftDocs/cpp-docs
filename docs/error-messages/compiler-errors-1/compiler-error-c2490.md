@@ -8,7 +8,7 @@ ms.assetid: 9de6bddd-b2e2-4ce6-b33b-201a8c2c8c54
 ---
 # Compiler Error C2490
 
-'keyword' not allowed in function with 'naked' attribute
+> 'keyword' not allowed in function with 'naked' attribute
 
 A function defined as [naked](../../cpp/naked-cpp.md) cannot use structured exception handling.
 

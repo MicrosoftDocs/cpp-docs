@@ -8,6 +8,6 @@ ms.assetid: daae3fc1-76cf-4a6f-b2fa-86873fb0929d
 ---
 # Compiler Error C2485
 
-'identifier' : unrecognized extended attribute
+> 'identifier' : unrecognized extended attribute
 
 The declaration attribute is not valid.

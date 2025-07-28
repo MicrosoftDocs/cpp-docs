@@ -8,7 +8,7 @@ ms.assetid: 64e6c61e-6e77-480e-bcf0-b30a2fc482ac
 ---
 # Compiler Error C2474
 
-'keyword' : missing an adjacent semicolon, could be either keyword or identifier.
+> 'keyword' : missing an adjacent semicolon, could be either keyword or identifier.
 
 The compiler expected to find a semicolon, and was unable to determine your intent. Add the semicolon to resolve this error.
 

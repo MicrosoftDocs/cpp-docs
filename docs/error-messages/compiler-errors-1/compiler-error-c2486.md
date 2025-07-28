@@ -8,7 +8,7 @@ ms.assetid: 436da349-6461-4e32-bfca-4f3e620108e2
 ---
 # Compiler Error C2486
 
-'__LOCAL_SIZE' only allowed in function with the 'naked' attribute
+> '__LOCAL_SIZE' only allowed in function with the 'naked' attribute
 
 In inline assembly functions, the name `__LOCAL_SIZE` is reserved for functions declared with the [naked](../../cpp/naked-cpp.md) attribute.
 

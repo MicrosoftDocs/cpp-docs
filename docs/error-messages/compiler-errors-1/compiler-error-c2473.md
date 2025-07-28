@@ -8,7 +8,7 @@ ms.assetid: 6bb7dbf5-b198-490f-860e-fd64d0c2a284
 ---
 # Compiler Error C2473
 
-'identifier' : looks like a function definition, but there is no parameter list.
+> 'identifier' : looks like a function definition, but there is no parameter list.
 
 The compiler detected what looked like a function, without the parameter list.
 
