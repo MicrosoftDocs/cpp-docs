@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Scope and Visibility"
 title: "Scope and Visibility"
-ms.date: "11/04/2016"
+description: "Learn more about: Scope and Visibility"
+ms.date: 11/04/2016
 helpviewer_keywords: ["scope, levels", "visibility", "file scope [C++]"]
-ms.assetid: a019eb7c-66ed-46a7-bc9f-89a963930a56
 ---
 # Scope and Visibility
 

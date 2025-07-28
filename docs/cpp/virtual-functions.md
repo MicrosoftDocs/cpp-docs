@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Virtual Functions"
 title: "Virtual Functions"
-ms.date: "09/10/2019"
-helpviewer_keywords: ["functions [C++], virtual functions", "derived classes [C++], virtual functions", "virtual functions"]
-ms.assetid: b3e1ed88-2a90-4af8-960a-16f47deb3452
+description: "Learn more about: Virtual Functions"
+ms.date: 09/10/2019
 adobe-target: true
+helpviewer_keywords: ["functions [C++], virtual functions", "derived classes [C++], virtual functions", "virtual functions"]
 ---
 # Virtual Functions
 

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Typedef Declarations"
 title: "Typedef Declarations"
-ms.date: "11/04/2016"
+description: "Learn more about: Typedef Declarations"
+ms.date: 11/04/2016
 helpviewer_keywords: ["declarations, typedef", "typedef declarations", "types [C], declarations"]
-ms.assetid: e92a3b82-9269-4bc6-834a-6f431ccac83e
 ---
 # Typedef Declarations
 

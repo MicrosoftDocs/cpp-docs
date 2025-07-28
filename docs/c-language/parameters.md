@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Parameters"
 title: "Parameters"
-ms.date: "11/04/2016"
+description: "Learn more about: Parameters"
+ms.date: 11/04/2016
 helpviewer_keywords: ["arguments [C++], function", "function parameters", "parameters [C++]", "function arguments, vs. parameters", "parameters [C++], function", "functions [C], parameters", "function parameters, syntax", "ellipsis (...), parameters", "... ellipsis"]
-ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
 ---
 # Parameters
 

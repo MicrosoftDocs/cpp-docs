@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Prefix Increment and Decrement Operators: ++ and --"
 title: "Prefix Increment and Decrement Operators: ++ and --"
-ms.date: "11/04/2016"
+description: "Learn more about: Prefix Increment and Decrement Operators: ++ and --"
+ms.date: 11/04/2016
 f1_keywords: ["--", "++"]
 helpviewer_keywords: ["increment operators [C++], syntax", "++ operator [C++], prefix increment operators", "operators [C++], decrement", "-- operator [C++], prefix decrement operators [C++]", "operators [C++], increment", "decrement operators [C++], syntax", "decrement operators [C++]"]
-ms.assetid: 45ea7fc7-f279-4be9-a216-1d9a0ef9eb7b
 ---
 # Prefix Increment and Decrement Operators: `++` and `--`
 

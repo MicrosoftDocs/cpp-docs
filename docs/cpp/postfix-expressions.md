@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Postfix Expressions"
 title: "Postfix Expressions"
-ms.date: "11/04/2016"
+description: "Learn more about: Postfix Expressions"
+ms.date: 11/04/2016
 helpviewer_keywords: ["operators [C++], postfix", "postfix expressions", "expressions [C++], postfix"]
-ms.assetid: 7ac62a57-06df-422f-b012-a75b37d7cb9b
 ---
 # Postfix Expressions
 

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Initializing Scalar Types"
 title: "Initializing Scalar Types"
-ms.date: "11/04/2016"
+description: "Learn more about: Initializing Scalar Types"
+ms.date: 11/04/2016
 helpviewer_keywords: ["initializing scalar types", "register variables", "initialization, scalar types", "initializing variables, scalar types", "scalar types", "static variables, initializing", "automatic storage class, initializing scalar types", "automatic storage class", "types [C], initializing"]
-ms.assetid: 73c516f5-c3ad-4d56-ab3b-f2a82b621104
 ---
 # Initializing Scalar Types
 

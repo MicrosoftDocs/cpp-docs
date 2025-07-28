@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: L-Value and R-Value Expressions"
 title: "L-Value and R-Value Expressions"
-ms.date: "11/04/2016"
+description: "Learn more about: L-Value and R-Value Expressions"
+ms.date: 11/04/2016
 helpviewer_keywords: ["L-values", "member-selection expressions", "R-value expressions", "subscript expressions"]
-ms.assetid: b790303e-ec6f-4d0d-bc55-df42da267172
 ---
 # L-Value and R-Value Expressions
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _sopen, _wsopen"
 title: "_sopen, _wsopen"
+description: "Learn more about: _sopen, _wsopen"
 ms.date: 05/18/2022
 api_name: ["_sopen", "_wsopen", "_o__sopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CORECRT_IO/_sopen", "CORECRT_WIO/_wsopen", "TCHAR/_tsopen", "_sopen", "_wsopen", "_tsopen", "sopen", "wsopen"]
 helpviewer_keywords: ["sopen function", "sharing files", "opening files, for sharing", "_sopen function", "wsopen function", "files [C++], opening", "files [C++], sharing", "_wsopen function"]
-ms.assetid: a9d4cccf-06e9-414d-96fa-453fca88cc1f
 ---
 # `_sopen`, `_wsopen`
 

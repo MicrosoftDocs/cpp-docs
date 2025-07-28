@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: C Comments"
 title: "C Comments"
-ms.date: "06/25/2018"
+description: "Learn more about: C Comments"
+ms.date: 06/25/2018
 helpviewer_keywords: ["code comments, C code", "comments, documenting code", "comments, C code", "/* */ comment delimiters", "comments"]
-ms.assetid: 0f5f2825-e673-49e7-8669-94e2f5294989
 ---
 # C Comments
 

@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: How to: Migrate to /clr"
 title: "How to: Migrate to /clr"
+description: "Learn more about: How to: Migrate to /clr"
+ms.date: 09/18/2018
 ms.custom: "get-started-article"
-ms.date: "09/18/2018"
-helpviewer_keywords: ["upgrading Visual C++ applications, /clr compiler option", "compiling native code [C++]", "interoperability [C++], /clr compiler option", "interop [C++], /clr compiler option", "migration [C++], /clr compiler option", "/clr compiler option [C++], porting to"]
-ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
 ms.topic: upgrade-and-migration-article
+helpviewer_keywords: ["upgrading Visual C++ applications, /clr compiler option", "compiling native code [C++]", "interoperability [C++], /clr compiler option", "interop [C++], /clr compiler option", "migration [C++], /clr compiler option", "/clr compiler option [C++], porting to"]
 ---
 # How to: Migrate to `/clr`
 

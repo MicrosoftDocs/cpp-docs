@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Pointers to Members"
 title: "Pointers to Members"
-ms.date: "11/04/2016"
+description: "Learn more about: Pointers to Members"
+ms.date: 11/04/2016
 helpviewer_keywords: ["declarations, pointers", "class members [C++], pointers to", "pointers, to members", "members [C++], pointers to", "pointers, declarations"]
-ms.assetid: f42ddb79-9721-4e39-95b1-c56b55591f68
 ---
 # Pointers to Members
 
