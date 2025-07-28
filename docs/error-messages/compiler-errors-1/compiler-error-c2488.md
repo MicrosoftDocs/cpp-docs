@@ -16,7 +16,7 @@ The [naked](../../cpp/naked-cpp.md) attribute was applied to a function declarat
 
 ## Example
 
-The following sample generates C2488:
+The following example generates C2488:
 
 ```cpp
 // C2488.cpp

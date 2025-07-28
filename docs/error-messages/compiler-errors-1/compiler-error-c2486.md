@@ -16,7 +16,7 @@ In inline assembly functions, the name `__LOCAL_SIZE` is reserved for functions 
 
 ## Example
 
-The following sample generates C2486:
+The following example generates C2486:
 
 ```cpp
 // C2486.cpp

@@ -15,7 +15,7 @@ You can declare a whole class, or certain members of a non-DLL interface class, 
 
 ## Example
 
-The following sample generates C2487:
+The following example generates C2487:
 
 ```cpp
 // C2487.cpp

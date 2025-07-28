@@ -16,7 +16,7 @@ A nested user-defined type was declared. This is an error when compiling C sourc
 
 ## Example
 
-The following sample generates C2467:
+The following example generates C2467:
 
 ```c
 //C2467.c

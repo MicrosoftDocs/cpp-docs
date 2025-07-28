@@ -16,7 +16,7 @@ A static data member of a template class was initialized incorrectly. This is a 
 
 ## Example
 
-The following sample generates C2477:
+The following example generates C2477:
 
 ```cpp
 // C2477.cpp

@@ -15,7 +15,7 @@ You cannot define a type in the operand field of the **`new`** operator. Put the
 
 ## Example
 
-The following sample generates C2462:
+The following example generates C2462:
 
 ```cpp
 // C2462.cpp

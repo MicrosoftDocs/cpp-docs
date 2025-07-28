@@ -18,7 +18,7 @@ Use the `thread` attribute for global variables, static data members, and local 
 
 ## Example
 
-The following sample generates C2480:
+The following example generates C2480:
 
 ```cpp
 // C2480.cpp

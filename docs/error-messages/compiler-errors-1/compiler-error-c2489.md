@@ -16,7 +16,7 @@ For more information, see [naked](../../cpp/naked-cpp.md).
 
 ## Example
 
-The following sample generates C2489:
+The following example generates C2489:
 
 ```cpp
 // C2489.cpp

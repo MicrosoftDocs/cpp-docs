@@ -16,7 +16,7 @@ This error message is obsolete in Visual Studio 2015 and later versions. In prev
 
 ## Example
 
-The following sample generates C2483 in Visual Studio 2013 and earlier versions.
+The following example generates C2483 in Visual Studio 2013 and earlier versions.
 
 ```cpp
 // C2483.cpp

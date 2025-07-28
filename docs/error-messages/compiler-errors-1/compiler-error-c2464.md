@@ -16,7 +16,7 @@ A reference identifier was allocated with the **`new`** operator. References are
 
 ## Example
 
-The following sample generates C2464:
+The following example generates C2464:
 
 ```cpp
 // C2464.cpp

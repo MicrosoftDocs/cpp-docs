@@ -18,7 +18,7 @@ To fix this issue, add a pair of parentheses after the declaration of *class*::*
 
 ## Example
 
-The following sample shows how to fix C2461:
+The following example shows how to fix C2461:
 
 ```cpp
 // C2461.cpp

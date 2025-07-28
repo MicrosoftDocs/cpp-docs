@@ -16,7 +16,7 @@ The `__declspec( allocate())` syntax can be used for static data only.
 
 ## Example
 
-The following sample generates C2479:
+The following example generates C2479:
 
 ```cpp
 // C2479.cpp

@@ -16,7 +16,7 @@ A function defined as [naked](../../cpp/naked-cpp.md) cannot use structured exce
 
 ## Example
 
-The following sample generates C2490:
+The following example generates C2490:
 
 ```cpp
 // C2490.cpp

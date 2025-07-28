@@ -15,7 +15,7 @@ An array is allocated or declared with size zero. The constant expression for th
 
 ## Example
 
-The following sample generates C2466:
+The following example generates C2466:
 
 ```cpp
 // C2466.cpp

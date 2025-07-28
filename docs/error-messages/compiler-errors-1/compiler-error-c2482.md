@@ -16,7 +16,7 @@ In managed or WinRT code, variables declared by using the [__declspec(thread)](.
 
 ## Example
 
-The following sample generates C2482 in managed (**/clr**) and in WinRT (**/ZW**) code:
+The following example generates C2482 in managed (**/clr**) and in WinRT (**/ZW**) code:
 
 ```cpp
 // C2482.cpp

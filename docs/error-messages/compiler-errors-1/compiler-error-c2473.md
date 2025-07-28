@@ -16,7 +16,7 @@ The compiler detected what looked like a function, without the parameter list.
 
 ## Example
 
-The following sample generates C2473.
+The following example generates C2473.
 
 ```cpp
 // C2473.cpp
