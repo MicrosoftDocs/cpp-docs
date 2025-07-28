@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2434"
 title: "Compiler Error C2434"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2434"
+ms.date: 11/04/2016
 f1_keywords: ["C2434"]
 helpviewer_keywords: ["C2434"]
-ms.assetid: 01329e26-7c74-4219-b74f-69e3a40c9738
 ---
 # Compiler Error C2434
 
@@ -18,7 +17,7 @@ It is not possible to dynamically initialize a per-process variable under **/clr
 
 ## Example
 
-The following sample generates C2434. To fix this issue, use constants to initialize `process` variables.
+The following example generates C2434. To fix this issue, use constants to initialize `process` variables.
 
 ```cpp
 // C2434.cpp

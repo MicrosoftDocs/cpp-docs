@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2457"
 title: "Compiler Error C2457"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2457"
+ms.date: 11/04/2016
 f1_keywords: ["C2457"]
 helpviewer_keywords: ["C2457"]
-ms.assetid: 347e169d-23ad-434f-8836-5b09b53980ff
 ---
 # Compiler Error C2457
 
 > '*macro*': predefined macro cannot appear outside of a function body
 
+## Remarks
+
 You attempted to use a predefined macro, such as [`__FUNCTION__`](../../preprocessor/predefined-macros.md), in a global space.
 
 ## Example
 
-The following sample generates C2457 and also shows correct usage:
+The following example generates C2457 and also shows correct usage:
 
 ```cpp
 // C2457.cpp
