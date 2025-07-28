@@ -42,7 +42,7 @@ In the preceding code, `iValue` can be accessed using the object member-selectio
 int i = ptv.iValue;
 ```
 
-Anonymous classes are subject to certain restrictions. (For more information about anonymous unions, see [Unions](../cpp/unions.md).) Anonymous classes:
+Anonymous classes are subject to certain restrictions. For more information about anonymous unions, see [Unions](../cpp/unions.md). Anonymous classes:
 
 - Cannot have a constructor or destructor.
 

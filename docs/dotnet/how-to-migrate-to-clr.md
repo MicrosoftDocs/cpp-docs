@@ -9,7 +9,7 @@ ms.topic: upgrade-and-migration-article
 ---
 # How to: Migrate to `/clr`
 
-This article discusses issues that arise when compiling native code with **`/clr`**. (For more information, see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md).) **`/clr`** allows native C++ code to invoke and be invoked from .NET assemblies in addition to other native C++ code. For more information on the advantages of compiling with **`/clr`**, see [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md) and [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md).
+This article discusses issues that arise when compiling native code with **`/clr`**. For more information, see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md). **`/clr`** allows native C++ code to invoke and be invoked from .NET assemblies in addition to other native C++ code. For more information on the advantages of compiling with **`/clr`**, see [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md) and [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md).
 
 ## Known issues compiling library projects with `/clr`
 
@@ -120,7 +120,7 @@ Native types are **`private`** by default. A **`private`** native type isn't vis
 
 ### Floating point and alignment issues
 
-`__controlfp` isn't supported in the common language runtime. (For more information, see [`_control87`, `_controlfp`, `__control87_2`](../c-runtime-library/reference/control87-controlfp-control87-2.md).) The CLR also doesn't respect [`align`](../cpp/align-cpp.md).
+`__controlfp` isn't supported in the common language runtime. For more information, see [`_control87`, `_controlfp`, `__control87_2`](../c-runtime-library/reference/control87-controlfp-control87-2.md). The CLR also doesn't respect [`align`](../cpp/align-cpp.md).
 
 ### COM initialization
 

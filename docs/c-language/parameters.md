@@ -50,7 +50,7 @@ void new( double x, double y, double z )
 }
 ```
 
-If at least one parameter occurs in the parameter list, the list can end with a comma followed by three periods (**`, ...`**). This construction, called the "ellipsis notation," indicates a variable number of arguments to the function. (For more information, see [Calls with a Variable Number of Arguments](../c-language/calls-with-a-variable-number-of-arguments.md).) However, a call to the function must have at least as many arguments as there are parameters before the last comma.
+If at least one parameter occurs in the parameter list, the list can end with a comma followed by three periods (**`, ...`**). This construction, called the "ellipsis notation," indicates a variable number of arguments to the function. For more information, see [Calls with a Variable Number of Arguments](../c-language/calls-with-a-variable-number-of-arguments.md). However, a call to the function must have at least as many arguments as there are parameters before the last comma.
 
 If no arguments are to be passed to the function, the list of parameters is replaced by the keyword **`void`**. This use of **`void`** is distinct from its use as a type specifier.
 

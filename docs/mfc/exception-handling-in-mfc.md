@@ -40,7 +40,7 @@ Three categories of outcomes can occur when a function is called during program 
 
 - Erroneous execution
 
-   The caller makes some mistake in passing arguments to the function or calls the function in an inappropriate context. This situation causes an error, and it should be detected by an assertion during program development. (For more information on assertions, see [C/C++ Assertions](/visualstudio/debugger/c-cpp-assertions).)
+   The caller makes some mistake in passing arguments to the function or calls the function in an inappropriate context. This situation causes an error, and it should be detected by an assertion during program development. For more information on assertions, see [C/C++ Assertions](/visualstudio/debugger/c-cpp-assertions).
 
 - Abnormal execution
 

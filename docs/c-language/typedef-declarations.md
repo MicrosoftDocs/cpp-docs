@@ -43,7 +43,7 @@ A typedef declaration is interpreted in the same way as a variable or function d
 
 A typedef declaration doesn't create new types. It creates synonyms for existing types, or names for types that could be specified in other ways. When a typedef name is used as a type specifier, it can be combined with certain type specifiers, but not others. Acceptable modifiers include **`const`** and **`volatile`**.
 
-Typedef names share the name space with ordinary identifiers. (For more information, see [Name Spaces](../c-language/name-spaces.md).) Therefore, a program can have a typedef name and a local-scope identifier by the same name. For example:
+Typedef names share the name space with ordinary identifiers. For more information, see [Name Spaces](../c-language/name-spaces.md). Therefore, a program can have a typedef name and a local-scope identifier by the same name. For example:
 
 ```C
 typedef char FlagType;

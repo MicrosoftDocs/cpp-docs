@@ -14,11 +14,11 @@ Built-in types (also called *fundamental types*) are specified by the C++ langua
 
 The [`void`](void-cpp.md) type describes an empty set of values. No variable of type **`void`** can be specified. The **`void`** type is used primarily to declare functions that return no values or to declare generic pointers to untyped or arbitrarily typed data. Any expression can be explicitly converted or cast to type **`void`**. However, such expressions are restricted to the following uses:
 
-- An expression statement. (For more information, see [Expressions](expressions-cpp.md).)
+- An expression statement. For more information, see [Expressions](expressions-cpp.md).
 
-- The left operand of the comma operator. (For more information, see [Comma Operator](comma-operator.md).)
+- The left operand of the comma operator. For more information, see [Comma Operator](comma-operator.md).
 
-- The second or third operand of the conditional operator (`? :`). (For more information, see [Expressions with the Conditional Operator](conditional-operator-q.md).)
+- The second or third operand of the conditional operator (`? :`). For more information, see [Expressions with the Conditional Operator](conditional-operator-q.md).
 
 ## std::nullptr_t
 

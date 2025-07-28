@@ -142,7 +142,7 @@ The compiler detects ambiguities by performing tests in this order:
 
 1. If overloaded functions are unambiguous, they're resolved.
 
-1. If access to the name violates member-access permission, an error message is generated. (For more information, see [Member-Access Control](../cpp/member-access-control-cpp.md).)
+1. If access to the name violates member-access permission, an error message is generated. For more information, see [Member-Access Control](../cpp/member-access-control-cpp.md).
 
 When an expression produces an ambiguity through inheritance, you can manually resolve it by qualifying the name in question with its class name. To make the preceding example compile properly with no ambiguities, use code such as:
 

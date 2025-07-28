@@ -84,7 +84,7 @@ By default, this function's global state is scoped to the application. To change
 |---|---|---|---|
 | **`_tcsftime`** | **`strftime`** | **`strftime`** | **`wcsftime`** |
 
-The *`format`* argument consists of one or more codes; as in **`printf`**, the formatting codes are preceded by a percent sign (**`%`**). Characters that don't begin with **`%`** are copied unchanged to *`strDest`*. The `LC_TIME` category of the current locale affects the output formatting of **`strftime`**. (For more information on `LC_TIME`, see [`setlocale`](setlocale-wsetlocale.md).) The **`strftime`** and **`wcsftime`** functions use the currently set locale. The **`_strftime_l`** and **`_wcsftime_l`** versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
+The *`format`* argument consists of one or more codes; as in **`printf`**, the formatting codes are preceded by a percent sign (**`%`**). Characters that don't begin with **`%`** are copied unchanged to *`strDest`*. The `LC_TIME` category of the current locale affects the output formatting of **`strftime`**. For more information on `LC_TIME`, see [`setlocale`](setlocale-wsetlocale.md). The **`strftime`** and **`wcsftime`** functions use the currently set locale. The **`_strftime_l`** and **`_wcsftime_l`** versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
 
 The **`strftime`** functions support these formatting codes:
 

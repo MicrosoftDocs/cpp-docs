@@ -72,7 +72,7 @@ When a function is called, the following tasks are performed:
     Func( Temp_i );
     ```
 
-   Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. (For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md)).
+   Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md).
 
    Therefore, if the function prototype (declaration) calls for an argument of type **`long`**, and if the calling program supplies an actual argument of type **`int`**, the actual argument is promoted using a standard type conversion to type **`long`** (see [Standard Conversions](../cpp/standard-conversions.md)).
 

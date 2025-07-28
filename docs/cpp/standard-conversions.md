@@ -203,7 +203,7 @@ The second case in which a pointer to a class can be converted to a pointer to a
 
 The result of such a conversion is a pointer to the *subobject*, the portion of the object that is completely described by the base class.
 
-The following code defines two classes, `A` and `B`, where `B` is derived from `A`. (For more information on inheritance, see [Derived Classes](../cpp/inheritance-cpp.md).) It then defines `bObject`, an object of type `B`, and two pointers (`pA` and `pB`) that point to the object.
+The following code defines two classes, `A` and `B`, where `B` is derived from `A`. For more information on inheritance, see [Derived Classes](../cpp/inheritance-cpp.md). It then defines `bObject`, an object of type `B`, and two pointers (`pA` and `pB`) that point to the object.
 
 ```cpp
 // C2039 expected
@@ -278,7 +278,7 @@ A reference to a class can be converted to a reference to a base class in these 
 
 - The specified base class is accessible.
 
-- The conversion is unambiguous. (For more information about ambiguous base-class references, see [Multiple base classes](../cpp/multiple-base-classes.md).)
+- The conversion is unambiguous. For more information about ambiguous base-class references, see [Multiple base classes](../cpp/multiple-base-classes.md).
 
 The result of the conversion is a pointer to the subobject that represents the base class.
 

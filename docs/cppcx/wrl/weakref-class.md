@@ -193,7 +193,7 @@ When this operation completes, an object that represents parameter *`riid`*.
 
 - `S_OK` if this operation succeeds, but the current `WeakRef` object has already been released. Parameter *`ptr`* is set to **`nullptr`**.
 
-- `S_OK` if this operation succeeds, but the current `WeakRef` object isn't derived from parameter *`riid`*. Parameter *`ptr`* is set to **`nullptr`**. (For more information, see Remarks.)
+- `S_OK` if this operation succeeds, but the current `WeakRef` object isn't derived from parameter *`riid`*. Parameter *`ptr`* is set to **`nullptr`**. For more information, see Remarks.
 
 ### Remarks
 

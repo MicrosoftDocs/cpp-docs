@@ -31,7 +31,7 @@ The term "r-value" is sometimes used to describe the value of an expression and 
 
 **Microsoft Specific**
 
-Microsoft C includes an extension to the ANSI C standard that allows casts of l-values to be used as l-values, as long as the size of the object isn't lengthened through the cast. (For more information, see [Type-Cast Conversions](../c-language/type-cast-conversions.md).) The following example illustrates this feature:
+Microsoft C includes an extension to the ANSI C standard that allows casts of l-values to be used as l-values, as long as the size of the object isn't lengthened through the cast. For more information, see [Type-Cast Conversions](../c-language/type-cast-conversions.md). The following example illustrates this feature:
 
 ```
 char *p ;
