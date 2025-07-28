@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CTabView Class"
 title: "CTabView Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CTabView Class"
+ms.date: 11/04/2016
 f1_keywords: ["CTabView", "AFXTABVIEW/CTabView", "AFXTABVIEW/CTabView::AddView", "AFXTABVIEW/CTabView::FindTab", "AFXTABVIEW/CTabView::GetActiveView", "AFXTABVIEW/CTabView::GetTabControl", "AFXTABVIEW/CTabView::RemoveView", "AFXTABVIEW/CTabView::SetActiveView", "AFXTABVIEW/CTabView::IsScrollBar", "AFXTABVIEW/CTabView::OnActivateView"]
 helpviewer_keywords: ["CTabView [MFC], AddView", "CTabView [MFC], FindTab", "CTabView [MFC], GetActiveView", "CTabView [MFC], GetTabControl", "CTabView [MFC], RemoveView", "CTabView [MFC], SetActiveView", "CTabView [MFC], IsScrollBar", "CTabView [MFC], OnActivateView"]
-ms.assetid: 8e6ecd9d-d28d-432b-8ec8-0446f0204d52
 ---
 # CTabView Class
 
@@ -208,7 +207,7 @@ TRUE if the specified view was made active, FALSE if the view's index is invalid
 
 ### Remarks
 
-For more information see [CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab).
+For more information, see [CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab).
 
 ## See also
 

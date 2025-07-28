@@ -49,7 +49,7 @@ When passed a <xref:System.String>, the compiler will box, if necessary, and the
 > [!NOTE]
 > The caret ("^") indicates that the declared variable is a handle to a C++/CLI managed object.
 
-For more information see [String and Character Literals](../cpp/string-and-character-literals-cpp.md).
+For more information, see [String and Character Literals](../cpp/string-and-character-literals-cpp.md).
 
 ### Requirements
 
