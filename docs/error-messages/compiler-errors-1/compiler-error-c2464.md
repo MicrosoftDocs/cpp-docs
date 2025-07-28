@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2464"
 title: "Compiler Error C2464"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2464"
+ms.date: 11/04/2016
 f1_keywords: ["C2464"]
 helpviewer_keywords: ["C2464"]
-ms.assetid: ace953d6-b414-49ee-bfef-90578a8da00c
 ---
 # Compiler Error C2464
 

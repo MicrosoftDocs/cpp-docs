@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2488"
 title: "Compiler Error C2488"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2488"
+ms.date: 11/04/2016
 f1_keywords: ["C2488"]
 helpviewer_keywords: ["C2488"]
-ms.assetid: cd435909-43e4-43c6-a57c-5d02468ef75f
 ---
 # Compiler Error C2488
 

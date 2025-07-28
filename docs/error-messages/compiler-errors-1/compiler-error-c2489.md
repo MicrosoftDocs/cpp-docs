@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2489"
 title: "Compiler Error C2489"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2489"
+ms.date: 11/04/2016
 f1_keywords: ["C2489"]
 helpviewer_keywords: ["C2489"]
-ms.assetid: 67d8cd98-db7e-4f7f-86b4-4af7bc89ec8b
 ---
 # Compiler Error C2489
 

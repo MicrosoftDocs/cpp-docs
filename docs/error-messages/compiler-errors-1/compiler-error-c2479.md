@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2479"
 title: "Compiler Error C2479"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2479"
+ms.date: 11/04/2016
 f1_keywords: ["C2479"]
 helpviewer_keywords: ["C2479"]
-ms.assetid: c74c7869-e65b-4ca1-b6fa-eb39fed4458a
 ---
 # Compiler Error C2479
 

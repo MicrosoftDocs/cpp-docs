@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2466"
 description: "Learn more about: Compiler Error C2466"
-ms.date: "03/19/2025"
+ms.date: 03/19/2025
 f1_keywords: ["C2466"]
 helpviewer_keywords: ["C2466"]
 ---

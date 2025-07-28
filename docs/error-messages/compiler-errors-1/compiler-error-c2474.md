@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2474"
 title: "Compiler Error C2474"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2474"
+ms.date: 11/04/2016
 f1_keywords: ["C2474"]
 helpviewer_keywords: ["C2474"]
-ms.assetid: 64e6c61e-6e77-480e-bcf0-b30a2fc482ac
 ---
 # Compiler Error C2474
 

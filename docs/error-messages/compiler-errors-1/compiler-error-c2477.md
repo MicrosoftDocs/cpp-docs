@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2477"
 title: "Compiler Error C2477"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2477"
+ms.date: 11/04/2016
 f1_keywords: ["C2477"]
 helpviewer_keywords: ["C2477"]
-ms.assetid: 60bc324b-6605-4833-8099-a291efc712e7
 ---
 # Compiler Error C2477
 

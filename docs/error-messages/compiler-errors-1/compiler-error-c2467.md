@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2467"
 title: "Compiler Error C2467"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2467"
+ms.date: 11/04/2016
 f1_keywords: ["C2467"]
 helpviewer_keywords: ["C2467"]
-ms.assetid: f9ead270-5d0b-41cc-bdcd-586a647c67a7
 ---
 # Compiler Error C2467
 
