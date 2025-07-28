@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2472"
 title: "Compiler Error C2472"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2472"
+ms.date: 11/04/2016
 f1_keywords: ["C2472"]
 helpviewer_keywords: ["C2472"]
-ms.assetid: 3b36bcdc-2ba5-4357-ab88-7545ba0551cd
 ---
 # Compiler Error C2472
 
@@ -18,7 +17,7 @@ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual St
 
 ## Example
 
-The following sample generates C2472.
+The following example generates C2472.
 
 ```cpp
 // C2472.cpp
