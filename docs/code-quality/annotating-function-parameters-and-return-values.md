@@ -102,7 +102,7 @@ f1_keywords:
   - "_In_"
   - "_Inout_updates_bytes_"
   - "_In_reads_to_ptr_z_"
-  - "_Ret_writes_bytes_to_maybenull"
+  - "_Ret_writes_bytes_to_maybenull_"
   - "_Outptr_opt_result_nullonfailure_"
   - "_In_reads_to_ptr_"
   - "_Outptr_result_buffer_"
