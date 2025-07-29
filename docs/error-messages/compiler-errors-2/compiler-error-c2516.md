@@ -16,7 +16,7 @@ The class is derived from a type name defined by a **`typedef`** statement.
 
 ## Example
 
-The following sample generates C2516:
+The following example generates C2516:
 
 ```cpp
 // C2516.cpp

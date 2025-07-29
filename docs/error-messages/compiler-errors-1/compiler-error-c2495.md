@@ -16,7 +16,7 @@ The [nothrow](../../cpp/nothrow-cpp.md) extended attribute can be applied to fun
 
 ## Example
 
-The following sample generates C2495:
+The following example generates C2495:
 
 ```cpp
 // C2495.cpp

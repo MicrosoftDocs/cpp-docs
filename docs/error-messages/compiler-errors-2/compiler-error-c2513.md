@@ -16,7 +16,7 @@ The type specifier appears in declaration with no variable identifier.
 
 ## Examples
 
-The following sample generates C2513:
+The following example generates C2513:
 
 ```cpp
 // C2513.cpp

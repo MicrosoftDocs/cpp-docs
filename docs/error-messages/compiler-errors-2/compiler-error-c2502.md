@@ -16,7 +16,7 @@ The base class has more than one access modifier. Only one access modifier (**`p
 
 ## Example
 
-The following sample generates C2502:
+The following example generates C2502:
 
 ```cpp
 // C2502.cpp

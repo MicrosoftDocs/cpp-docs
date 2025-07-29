@@ -18,7 +18,7 @@ For more information, see [appdomain](../../cpp/appdomain.md) and [process](../.
 
 ## Example
 
-The following sample generates C2505:
+The following example generates C2505:
 
 ```cpp
 // C2505.cpp

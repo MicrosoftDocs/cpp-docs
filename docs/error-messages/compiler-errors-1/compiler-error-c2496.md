@@ -16,7 +16,7 @@ The [selectany](../../cpp/selectany.md) attribute can be applied only to externa
 
 ## Example
 
-The following sample generates C2496:
+The following example generates C2496:
 
 ```cpp
 // C2496.cpp

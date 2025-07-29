@@ -18,7 +18,7 @@ See [appdomain](../../cpp/appdomain.md) for more information.
 
 ## Example
 
-The following sample generates C2506.
+The following example generates C2506.
 
 ```cpp
 // C2506.cpp

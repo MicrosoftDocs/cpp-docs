@@ -18,7 +18,7 @@ To fix this issue, remove the `__declspec(dllimport)` specifier from the definit
 
 ## Example
 
-The following sample generates C2491:
+The following example generates C2491:
 
 ```cpp
 // C2491.cpp

@@ -16,7 +16,7 @@ The variable is declared with the [thread](../../cpp/thread.md) attribute and wi
 
 ## Example
 
-The following sample generates C2492:
+The following example generates C2492:
 
 ```cpp
 // C2492.cpp

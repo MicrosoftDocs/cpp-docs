@@ -18,7 +18,7 @@ A class must be fully declared before it can be instantiated.
 
 ## Example
 
-The following sample generates C2514:
+The following example generates C2514:
 
 ```cpp
 // C2514.cpp

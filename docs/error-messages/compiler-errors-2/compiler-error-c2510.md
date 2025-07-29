@@ -16,7 +16,7 @@ A class, structure, or union name must appear on the left side of the scope-reso
 
 ## Example
 
-The following sample generates C2510:
+The following example generates C2510:
 
 ```cpp
 // C2510.cpp

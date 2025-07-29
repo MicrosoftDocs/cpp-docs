@@ -16,7 +16,7 @@ A class or structure is declared as **`virtual`** more than once. Only one **`vi
 
 ## Example
 
-The following sample generates C2507:
+The following example generates C2507:
 
 ```cpp
 // C2507.cpp

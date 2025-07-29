@@ -16,7 +16,7 @@ The function is not declared in the specified class.
 
 ## Example
 
-The following sample generates C2509.
+The following example generates C2509.
 
 ```cpp
 // C2509.cpp

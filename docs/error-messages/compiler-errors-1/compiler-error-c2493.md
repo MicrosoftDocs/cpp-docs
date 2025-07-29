@@ -16,7 +16,7 @@ A **`__based`** expression must be based on a pointer.
 
 ## Example
 
-The following sample generates C2493:
+The following example generates C2493:
 
 ```cpp
 // C2493.cpp

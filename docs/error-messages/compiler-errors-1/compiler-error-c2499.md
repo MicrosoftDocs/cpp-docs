@@ -16,7 +16,7 @@ You attempted to specify the class that you are defining as a base class.
 
 ## Example
 
-The following sample generates C2499:
+The following example generates C2499:
 
 ```cpp
 // C2499.cpp

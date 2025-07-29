@@ -16,7 +16,7 @@ The keywords **`class`** and **`struct`** should not appear in a base class list
 
 ## Example
 
-The following sample generates C2518:
+The following example generates C2518:
 
 ```cpp
 // C2518.cpp

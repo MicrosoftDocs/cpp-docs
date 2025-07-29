@@ -22,7 +22,7 @@ No version of the function is declared with the specified parameters.  Possible 
 
 ## Example
 
-The following sample generates C2511:
+The following example generates C2511:
 
 ```cpp
 // C2511.cpp

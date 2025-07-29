@@ -16,7 +16,7 @@ A base class or structure contains a zero-sized array. An array in a class must 
 
 ## Example
 
-The following sample generates C2503:
+The following example generates C2503:
 
 ```cpp
 // C2503.cpp

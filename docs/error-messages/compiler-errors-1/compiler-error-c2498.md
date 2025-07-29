@@ -16,7 +16,7 @@ This error can be caused by using `__declspec(novtable)` with a function.
 
 ## Example
 
-The following sample generates C2498:
+The following example generates C2498:
 
 ```cpp
 // C2498.cpp

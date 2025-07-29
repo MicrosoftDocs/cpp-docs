@@ -16,7 +16,7 @@ You cannot use *keyword* in a **`__finally`** or **`finally`** block.
 
 ## Examples
 
-The following sample generates C2494:
+The following example generates C2494:
 
 ```cpp
 // C2494.cpp
