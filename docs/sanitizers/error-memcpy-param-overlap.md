@@ -9,6 +9,9 @@ helpviewer_keywords: ["memcpy-param-overlap error", "AddressSanitizer error memc
 
 > Address Sanitizer Error: memcpy-param-overlap
 
+> [!NOTE]
+> The `/Oi` flag is required to detect `memcpy-param-overlap` errors. This flag tells the compiler to treat `memcpy` and `memmove` as intrinsic functions, which is necessary because some versions of the standard library implement `memcpy` and `memmove` as such. Since ASAN is a dynamic analysis tool, it can only detect errors with an observable runtime effect. Please note that when`/O2` is also set, ASan may not be able to reliably detect `memcpy-param-overlap` errors because the intrinsic variant of these functions is not guaranteed to be used. See the [`/Oi` docs](../build/reference/oi-generate-intrinsic-functions.md) for more information.
+
 The CRT function [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md) **doesn't support** overlapping memory. The CRT provides an alternative to `memcpy` that does support overlapping memory: [`memmove`](../c-runtime-library/reference/memmove-wmemmove.md).
 
 A common error is to treat `memmove` as being semantically equivalent to `memcpy`.
@@ -38,8 +41,6 @@ To build and test this example, run these commands in a Visual Studio 2019 versi
 cl example1.cpp /fsanitize=address /Zi /Oi
 devenv /debugexe example1.exe
 ```
-
-The [/Oi flag](../build/reference/oi-generate-intrinsic-functions.md) tells the compiler to treat `memcpy` and `memmove` as intrinsic functions. This is necessary because some versions of the standard library implement `memcpy` and `memmove` in the same way. Because ASAN is a dynamic analysis tool, it only detects errors with an observable runtime effect.
 
 ### Resulting error
 
