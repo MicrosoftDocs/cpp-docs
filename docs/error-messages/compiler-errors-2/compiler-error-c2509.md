@@ -8,7 +8,7 @@ ms.assetid: 339c1fcd-ec4a-456c-9f18-a9b24d9921af
 ---
 # Compiler Error C2509
 
-'identifier' : member function not declared in 'class'
+> 'identifier' : member function not declared in 'class'
 
 The function is not declared in the specified class.
 

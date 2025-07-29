@@ -8,7 +8,7 @@ ms.assetid: 4b7085e5-6714-4261-80b7-bc72e64ab3e8
 ---
 # Compiler Error C2514
 
-'class' : class has no constructors
+> 'class' : class has no constructors
 
 The class, structure, or union has no constructor with a parameter list that matches the parameters being used to instantiate it.
 

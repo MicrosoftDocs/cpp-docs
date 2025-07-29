@@ -8,7 +8,7 @@ ms.assetid: b323ff4d-b3c1-4bfd-b052-ae7292d53222
 ---
 # Compiler Error C2499
 
-'class' : a class cannot be its own base class
+> 'class' : a class cannot be its own base class
 
 You attempted to specify the class that you are defining as a base class.
 

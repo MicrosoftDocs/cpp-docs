@@ -8,7 +8,7 @@ ms.assetid: ab5b21d3-61e2-4df7-8eea-6f14d6ba8620
 ---
 # Compiler Error C2513
 
-'type' : no variable declared before '='
+> 'type' : no variable declared before '='
 
 The type specifier appears in declaration with no variable identifier.
 

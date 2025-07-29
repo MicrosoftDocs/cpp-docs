@@ -8,7 +8,7 @@ ms.assetid: df999efe-fe2b-418b-bb55-4af6a0592631
 ---
 # Compiler Error C2511
 
-'identifier' : overloaded member function not found in 'class'
+> 'identifier' : overloaded member function not found in 'class'
 
 No version of the function is declared with the specified parameters.  Possible causes:
 

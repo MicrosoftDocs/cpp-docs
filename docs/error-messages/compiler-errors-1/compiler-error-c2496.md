@@ -8,7 +8,7 @@ ms.assetid: 9a25237d-5bbb-4112-98f3-29cd99d3f89f
 ---
 # Compiler Error C2496
 
-'identifier' : 'selectany' can only be applied to data items with external linkage
+> 'identifier' : 'selectany' can only be applied to data items with external linkage
 
 The [selectany](../../cpp/selectany.md) attribute can be applied only to externally visible and global data items.
 

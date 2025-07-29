@@ -8,7 +8,7 @@ ms.assetid: bb7066fe-3549-4901-97e4-157f3c04dd57
 ---
 # Compiler Error C2495
 
-'identifier' : 'nothrow' can only be applied to function declarations or definitions
+> 'identifier' : 'nothrow' can only be applied to function declarations or definitions
 
 The [nothrow](../../cpp/nothrow-cpp.md) extended attribute can be applied to function declarations or definitions only.
 

@@ -8,7 +8,7 @@ ms.assetid: cd3accc1-0179-4a13-9587-616908c4ad1d
 ---
 # Compiler Error C2516
 
-'name' : is not a legal base class
+> 'name' : is not a legal base class
 
 The class is derived from a type name defined by a **`typedef`** statement.
 

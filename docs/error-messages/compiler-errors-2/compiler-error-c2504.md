@@ -8,7 +8,7 @@ ms.assetid: c9e002a6-a4ee-4ba7-970e-edf4adb83692
 ---
 # Compiler Error C2504
 
-'class' : base class undefined
+> 'class' : base class undefined
 
 The base class is declared but never defined. Possible causes:
 

@@ -8,7 +8,7 @@ ms.assetid: cfed21cd-2404-46f2-985e-d0c2c3820830
 ---
 # Compiler Error C2506
 
-'member' : '__declspec(modifier)' cannot be applied to this symbol
+> 'member' : '__declspec(modifier)' cannot be applied to this symbol
 
 You cannot declare per-process or per-appdomain for static members of a managed class.
 

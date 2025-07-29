@@ -8,7 +8,7 @@ ms.assetid: da86cc89-fd04-400b-aa8d-a5ffaf7e3918
 ---
 # Compiler Error C2503
 
-'class' : base classes cannot contain zero-sized arrays
+> 'class' : base classes cannot contain zero-sized arrays
 
 A base class or structure contains a zero-sized array. An array in a class must have at least one element.
 

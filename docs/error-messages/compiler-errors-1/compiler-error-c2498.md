@@ -8,7 +8,7 @@ ms.assetid: 0839f12c-aaa4-4a02-bb33-7f072715dd14
 ---
 # Compiler Error C2498
 
-'function' : 'novtable' can only be applied to class declarations or definitions
+> 'function' : 'novtable' can only be applied to class declarations or definitions
 
 This error can be caused by using `__declspec(novtable)` with a function.
 

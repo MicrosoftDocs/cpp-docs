@@ -8,7 +8,7 @@ ms.assetid: 4e5a8f81-124e-402c-a5ec-d35a89b5469e
 ---
 # Compiler Error C2491
 
-'identifier' : definition of dllimport function not allowed
+> 'identifier' : definition of dllimport function not allowed
 
 Data, static data members, and functions can be declared as `dllimport`s but not defined as `dllimport`s.
 

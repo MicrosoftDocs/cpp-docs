@@ -8,7 +8,7 @@ ms.assetid: a7895b47-da90-4851-ac97-18e81479595a
 ---
 # Compiler Error C2518
 
-keyword 'keyword' illegal in base class list; ignored
+> keyword 'keyword' illegal in base class list; ignored
 
 The keywords **`class`** and **`struct`** should not appear in a base class list.
 

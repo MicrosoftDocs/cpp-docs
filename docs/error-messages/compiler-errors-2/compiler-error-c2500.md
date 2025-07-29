@@ -8,7 +8,7 @@ ms.assetid: 6bff8161-dc9a-48ca-91f1-fd2eefdbbc93
 ---
 # Compiler Error C2500
 
-'identifier1' : 'identifier2' is already a direct base class
+> 'identifier1' : 'identifier2' is already a direct base class
 
 A class or structure appears more than once in a list of base classes.
 
