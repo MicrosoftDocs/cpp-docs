@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2513"
 title: "Compiler Error C2513"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2513"
+ms.date: 11/04/2016
 f1_keywords: ["C2513"]
 helpviewer_keywords: ["C2513"]
-ms.assetid: ab5b21d3-61e2-4df7-8eea-6f14d6ba8620
 ---
 # Compiler Error C2513
 

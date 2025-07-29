@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2505"
 title: "Compiler Error C2505"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2505"
+ms.date: 11/04/2016
 f1_keywords: ["C2505"]
 helpviewer_keywords: ["C2505"]
-ms.assetid: b19f5c53-399d-425e-90db-fe3ca9b40858
 ---
 # Compiler Error C2505
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2509"
 title: "Compiler Error C2509"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2509"
+ms.date: 11/04/2016
 f1_keywords: ["C2509"]
 helpviewer_keywords: ["C2509"]
-ms.assetid: 339c1fcd-ec4a-456c-9f18-a9b24d9921af
 ---
 # Compiler Error C2509
 

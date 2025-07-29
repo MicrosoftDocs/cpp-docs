@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2514"
 title: "Compiler Error C2514"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2514"
+ms.date: 11/04/2016
 f1_keywords: ["C2514"]
 helpviewer_keywords: ["C2514"]
-ms.assetid: 4b7085e5-6714-4261-80b7-bc72e64ab3e8
 ---
 # Compiler Error C2514
 

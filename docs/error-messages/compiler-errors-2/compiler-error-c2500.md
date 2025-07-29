@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2500"
 title: "Compiler Error C2500"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2500"
+ms.date: 11/04/2016
 f1_keywords: ["C2500"]
 helpviewer_keywords: ["C2500"]
-ms.assetid: 6bff8161-dc9a-48ca-91f1-fd2eefdbbc93
 ---
 # Compiler Error C2500
 

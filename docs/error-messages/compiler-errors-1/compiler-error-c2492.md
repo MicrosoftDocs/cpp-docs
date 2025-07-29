@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2492"
 title: "Compiler Error C2492"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2492"
+ms.date: 11/04/2016
 f1_keywords: ["C2492"]
 helpviewer_keywords: ["C2492"]
-ms.assetid: 8c44c9bb-c366-4fe5-a0ab-882e38608aaa
 ---
 # Compiler Error C2492
 
