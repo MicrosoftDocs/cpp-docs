@@ -15,8 +15,9 @@ This class provides methods for implementing a snap-in property page object.
 
 ## Syntax
 
-```
-CSnapInPropertyPageImpl : public CDialogImplBase
+```cpp
+template <class T, bool bAutoDelete = true>
+class ATL_NO_VTABLE CSnapInPropertyPageImpl : public CDialogImplBase
 ```
 
 ## Members
