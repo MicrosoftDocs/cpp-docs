@@ -478,7 +478,7 @@ cmake --build --preset <buildPreset-name>
 
 ## Example *`CMakePresets.json`* file
 
-The *`CMakePresets.json`* file in [box2d-lite](https://github.com/esweet431/box2d-lite/blob/vs-launch/CMakePresets.json) contains examples of Configure Presets, Build Presets, and Test Presets. For more information about this example, see the presentation [An Introduction to CMakePresets.json](/events/cpp-pure-virtual-cpp-2021/an-introduction-to-cmakepresetsjson). You can see another example in the [DirectXTK](https://github.com/microsoft/DirectXTK/blob/main/CMakePresets.json) project, which shows many build targets in its `configurePresets` section.
+The *`CMakePresets.json`* file in [box2d-lite](https://github.com/esweet431/box2d-lite/blob/vs-launch/CMakePresets.json) contains examples of Configure Presets, Build Presets, and Test Presets. For more information about this example, see the presentation [An Introduction to CMakePresets.json](/shows/cpp-pure-virtual-cpp-2021/an-introduction-to-cmakepresetsjson). You can see another example in the [DirectXTK](https://github.com/microsoft/DirectXTK/blob/main/CMakePresets.json) project, which shows many build targets in its `configurePresets` section.
 
 ## Next steps
 
