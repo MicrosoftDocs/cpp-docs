@@ -10,7 +10,11 @@ ms.assetid: 68316cd5-682b-49c3-b6ea-23c4e5d296cf
 
 > illegal form of __based
 
+## Remarks
+
 A **`__based`** expression must be based on a pointer.
+
+## Example
 
 The following sample generates C2493:
 

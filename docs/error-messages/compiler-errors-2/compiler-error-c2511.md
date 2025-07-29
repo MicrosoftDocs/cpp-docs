@@ -10,6 +10,8 @@ ms.assetid: df999efe-fe2b-418b-bb55-4af6a0592631
 
 > 'identifier' : overloaded member function not found in 'class'
 
+## Remarks
+
 No version of the function is declared with the specified parameters.  Possible causes:
 
 1. Wrong parameters passed to function.
@@ -17,6 +19,8 @@ No version of the function is declared with the specified parameters.  Possible 
 1. Parameters passed in wrong order.
 
 1. Incorrect spelling of parameter names.
+
+## Example
 
 The following sample generates C2511:
 

@@ -10,6 +10,8 @@ ms.assetid: 339c1fcd-ec4a-456c-9f18-a9b24d9921af
 
 > 'identifier' : member function not declared in 'class'
 
+## Remarks
+
 The function is not declared in the specified class.
 
 ## Example

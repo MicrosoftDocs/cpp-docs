@@ -10,11 +10,15 @@ ms.assetid: 6bff8161-dc9a-48ca-91f1-fd2eefdbbc93
 
 > 'identifier1' : 'identifier2' is already a direct base class
 
+## Remarks
+
 A class or structure appears more than once in a list of base classes.
 
 A direct base is one mentioned in the base list. An indirect base is a base class of one of the classes in the base list.
 
 A class cannot be specified as a direct base class more than once. A class can be used as an indirect base class more than once.
+
+## Example
 
 The following sample generates C2500:
 

@@ -10,6 +10,8 @@ ms.assetid: 0839f12c-aaa4-4a02-bb33-7f072715dd14
 
 > 'function' : 'novtable' can only be applied to class declarations or definitions
 
+## Remarks
+
 This error can be caused by using `__declspec(novtable)` with a function.
 
 ## Example

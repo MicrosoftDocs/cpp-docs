@@ -10,7 +10,11 @@ ms.assetid: bb7066fe-3549-4901-97e4-157f3c04dd57
 
 > 'identifier' : 'nothrow' can only be applied to function declarations or definitions
 
+## Remarks
+
 The [nothrow](../../cpp/nothrow-cpp.md) extended attribute can be applied to function declarations or definitions only.
+
+## Example
 
 The following sample generates C2495:
 

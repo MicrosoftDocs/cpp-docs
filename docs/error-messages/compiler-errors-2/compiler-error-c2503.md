@@ -10,7 +10,11 @@ ms.assetid: da86cc89-fd04-400b-aa8d-a5ffaf7e3918
 
 > 'class' : base classes cannot contain zero-sized arrays
 
+## Remarks
+
 A base class or structure contains a zero-sized array. An array in a class must have at least one element.
+
+## Example
 
 The following sample generates C2503:
 

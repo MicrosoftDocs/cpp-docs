@@ -10,7 +10,11 @@ ms.assetid: b323ff4d-b3c1-4bfd-b052-ae7292d53222
 
 > 'class' : a class cannot be its own base class
 
+## Remarks
+
 You attempted to specify the class that you are defining as a base class.
+
+## Example
 
 The following sample generates C2499:
 

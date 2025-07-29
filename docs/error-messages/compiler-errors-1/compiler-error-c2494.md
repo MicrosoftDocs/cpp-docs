@@ -10,7 +10,11 @@ ms.assetid: 5dfd07ab-351d-49c9-b54e-f0a104776ab8
 
 > '*keyword*' cannot be called from within a filter expression or __finally/finally block
 
+## Remarks
+
 You cannot use *keyword* in a **`__finally`** or **`finally`** block.
+
+## Examples
 
 The following sample generates C2494:
 

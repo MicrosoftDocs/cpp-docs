@@ -10,6 +10,8 @@ ms.assetid: 15206da9-1164-451a-b869-280e00711aad
 
 > '*identifier*' : no appropriate default constructor available
 
+## Remarks
+
 A *default constructor*, a constructor that requires no arguments, is not available for the specified class, structure, or union. The compiler supplies a default constructor only if no user-defined constructors are provided.
 
 If you provide a constructor that takes a non-void parameter, and you want to allow your class to be created with no parameters (for example, as the elements of an array), you must also provide a default constructor. The default constructor can be a constructor with default values for all parameters.

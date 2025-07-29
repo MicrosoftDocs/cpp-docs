@@ -10,9 +10,13 @@ ms.assetid: 4b7085e5-6714-4261-80b7-bc72e64ab3e8
 
 > 'class' : class has no constructors
 
+## Remarks
+
 The class, structure, or union has no constructor with a parameter list that matches the parameters being used to instantiate it.
 
 A class must be fully declared before it can be instantiated.
+
+## Example
 
 The following sample generates C2514:
 

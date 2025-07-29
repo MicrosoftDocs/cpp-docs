@@ -10,11 +10,15 @@ ms.assetid: c9e002a6-a4ee-4ba7-970e-edf4adb83692
 
 > 'class' : base class undefined
 
+## Remarks
+
 The base class is declared but never defined. Possible causes:
 
 1. Missing include file.
 
 1. External base class not declared with [extern](../../cpp/extern-cpp.md).
+
+## Example
 
 The following sample generates C2504:
 

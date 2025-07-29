@@ -10,7 +10,11 @@ ms.assetid: 8c44c9bb-c366-4fe5-a0ab-882e38608aaa
 
 > '*variable*': data with thread storage duration may not have dll interface
 
+## Remarks
+
 The variable is declared with the [thread](../../cpp/thread.md) attribute and with the DLL interface. The address of the `thread` variable is not known until run time, so it cannot be linked to a DLL import or export.
+
+## Example
 
 The following sample generates C2492:
 

@@ -10,7 +10,11 @@ ms.assetid: cd3accc1-0179-4a13-9587-616908c4ad1d
 
 > 'name' : is not a legal base class
 
+## Remarks
+
 The class is derived from a type name defined by a **`typedef`** statement.
+
+## Example
 
 The following sample generates C2516:
 
