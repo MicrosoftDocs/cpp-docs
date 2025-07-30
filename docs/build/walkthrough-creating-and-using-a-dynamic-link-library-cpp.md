@@ -4,6 +4,7 @@ description: "Learn how to use C++ to create a Windows dynamic-link library (DLL
 ms.topic: tutorial
 ms.date: 03/17/2025
 helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]
+ms.custom: sfi-image-nochange
 ---
 # Walkthrough: Create and use your own dynamic-link library (C++)
 

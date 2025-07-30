@@ -1,10 +1,12 @@
 ---
 title: "Create a Traditional Windows Desktop Application (C++)"
 description: "Learn how to create a minimal, traditional Windows desktop application using Visual Studio, C++, and the Win32 API."
-ms.custom: "get-started-article"
 ms.topic: tutorial
 ms.date: 03/17/2025
 helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop applications [C++]", "Windows API [C++]"]
+ms.custom:
+  - "get-started-article"
+  - sfi-image-nochange
 ---
 # Walkthrough: Create a traditional Windows desktop application (C++)
 

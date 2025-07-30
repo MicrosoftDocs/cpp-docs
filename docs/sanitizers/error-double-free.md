@@ -4,6 +4,7 @@ description: "Learn about the double-free Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["double-free"]
 helpviewer_keywords: ["double-free error", "AddressSanitizer error double-free"]
+ms.custom: sfi-image-nochange
 ---
 
 # Error: `double-free`

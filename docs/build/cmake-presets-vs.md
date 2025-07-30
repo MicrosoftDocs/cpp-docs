@@ -3,6 +3,7 @@ title: Configure and build with CMake Presets
 description: "Reference for using CMake Presets to configure and build CMake projects."
 ms.date: 06/09/2023
 ms.topic: reference
+ms.custom: sfi-image-nochange
 ---
 
 # Configure and build with CMake Presets in Visual Studio
