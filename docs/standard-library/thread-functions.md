@@ -8,6 +8,8 @@ helpviewer_keywords: ["std::get_id [C++]", "std::sleep_for [C++]", "std::sleep_u
 ---
 # `<thread>` functions
 
+The `<thread>` header provides the following functions:
+
 ## <a name="get_id"></a> get_id
 
 Uniquely identifies the current thread of execution.
