@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C2537"
 title: "Compiler Error C2537"
-ms.date: "03/08/2024"
+description: "Learn more about: Compiler Error C2537"
+ms.date: 03/08/2024
 f1_keywords: ["C2537"]
 helpviewer_keywords: ["C2537"]
 ---

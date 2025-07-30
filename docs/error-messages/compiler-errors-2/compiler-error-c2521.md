@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2521"
 title: "Compiler Error C2521"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2521"
+ms.date: 11/04/2016
 f1_keywords: ["C2521"]
 helpviewer_keywords: ["C2521"]
-ms.assetid: 6042821b-e345-4a54-a7e9-a2c9019ea016
 ---
 # Compiler Error C2521
 

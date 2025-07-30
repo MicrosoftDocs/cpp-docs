@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2550"
 title: "Compiler Error C2550"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2550"
+ms.date: 11/04/2016
 f1_keywords: ["C2550"]
 helpviewer_keywords: ["C2550"]
-ms.assetid: 3293f53e-ee66-4035-920d-34e115c3a24c
 ---
 # Compiler Error C2550
 

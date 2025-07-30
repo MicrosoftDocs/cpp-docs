@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2523"
 title: "Compiler Error C2523"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2523"
+ms.date: 11/04/2016
 f1_keywords: ["C2523"]
 helpviewer_keywords: ["C2523"]
-ms.assetid: 7951b700-8f37-45a0-beb4-a79ae0ced72e
 ---
 # Compiler Error C2523
 

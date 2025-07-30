@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2545"
 title: "Compiler Error C2545"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2545"
+ms.date: 11/04/2016
 f1_keywords: ["C2545"]
 helpviewer_keywords: ["C2545"]
-ms.assetid: 51598eb9-0c57-4306-a0cd-3862980f3672
 ---
 # Compiler Error C2545
 

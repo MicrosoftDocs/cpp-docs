@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2540"
 title: "Compiler Error C2540"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2540"
+ms.date: 11/04/2016
 f1_keywords: ["C2540"]
 helpviewer_keywords: ["C2540"]
-ms.assetid: 92c805a3-2dd9-46ca-a63d-3845c18ecc95
 ---
 # Compiler Error C2540
 

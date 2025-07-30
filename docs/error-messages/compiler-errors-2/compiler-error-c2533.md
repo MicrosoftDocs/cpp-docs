@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2533"
 title: "Compiler Error C2533"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2533"
+ms.date: 11/04/2016
 f1_keywords: ["C2533"]
 helpviewer_keywords: ["C2533"]
-ms.assetid: 5b335652-076c-4824-87c8-a741f64a3ce0
 ---
 # Compiler Error C2533
 

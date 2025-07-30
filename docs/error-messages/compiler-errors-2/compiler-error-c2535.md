@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2535"
 title: "Compiler Error C2535"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2535"
+ms.date: 11/04/2016
 f1_keywords: ["C2535"]
 helpviewer_keywords: ["C2535"]
-ms.assetid: a958f83e-e2bf-4a59-b44b-d406ec325d7e
 ---
 # Compiler Error C2535
 
