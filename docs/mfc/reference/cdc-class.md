@@ -4588,7 +4588,7 @@ BOOL Polyline(
 *`lpPoints`*\
 Points to an array of `POINT` structures or `CPoint` objects to be connected.
 
-*`nCount`*`\
+*`nCount`*\
 Specifies the number of points in the array. This value must be at least 2.
 
 ### Return Value
