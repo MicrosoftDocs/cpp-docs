@@ -7,7 +7,7 @@ ms.assetid: a9901568-4846-4731-a404-399d947e2e7a
 ---
 # `_DEBUG`
 
-The compiler defines `_DEBUG` when you specify the /MTd or /MDd option. These options specify debug versions of the C run-time library.
+The compiler defines `_DEBUG` when you specify the /MTd, /MDd, or /LDd option. These options specify debug versions of the C run-time library.
 
 For more information, see [CRT debugging techniques](./crt-debugging-techniques.md).
 
