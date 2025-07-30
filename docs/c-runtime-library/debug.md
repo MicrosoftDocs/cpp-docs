@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: _DEBUG"
 title: "_DEBUG"
-ms.date: "11/04/2016"
+description: "Learn more about: _DEBUG"
+ms.date: 11/04/2016
 helpviewer_keywords: ["DEBUG macro", "_DEBUG macro"]
-ms.assetid: a9901568-4846-4731-a404-399d947e2e7a
 ---
 # `_DEBUG`
 
