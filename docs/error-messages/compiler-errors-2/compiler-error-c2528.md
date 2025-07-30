@@ -16,7 +16,7 @@ You cannot declare a pointer to a reference. Dereference the variable before dec
 
 ## Example
 
-The following sample generates C2528:
+The following example generates C2528:
 
 ```cpp
 // C2528.cpp

@@ -18,7 +18,7 @@ A common source of this error is a missing semicolon between the end of a class 
 
 ## Example
 
-The following sample generates C2533, and shows how to fix it:
+The following example generates C2533, and shows how to fix it:
 
 ```cpp
 // C2533.cpp

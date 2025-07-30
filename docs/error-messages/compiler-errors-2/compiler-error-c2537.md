@@ -15,7 +15,7 @@ The linkage specifier is not supported. Only the "C" and "C++" linkage specifier
 
 ## Example
 
-The following sample generates C2537:
+The following example generates C2537:
 
 ```cpp
 // C2537.cpp

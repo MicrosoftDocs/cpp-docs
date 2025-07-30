@@ -16,7 +16,7 @@ The name of the destructor must be the class name preceded by a tilde (`~`). The
 
 ## Example
 
-The following sample generates C2523:
+The following example generates C2523:
 
 ```cpp
 // C2523.cpp

@@ -16,7 +16,7 @@ A base class initializer list is used on the definition of a function that is no
 
 ## Example
 
-The following sample generates C2550:
+The following example generates C2550:
 
 ```cpp
 // C2550.cpp

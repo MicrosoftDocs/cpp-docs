@@ -16,7 +16,7 @@ A constructor cannot contain a **`return`** statement with an expression (even i
 
 ## Example
 
-The following sample generates C2534:
+The following example generates C2534:
 
 ```cpp
 // C2534.cpp

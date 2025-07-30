@@ -16,7 +16,7 @@ An array must have a constant bound.
 
 ## Example
 
-The following sample generates C2540:
+The following example generates C2540:
 
 ```cpp
 // C2540.cpp

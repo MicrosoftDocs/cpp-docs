@@ -12,7 +12,7 @@ ms.assetid: 29310094-54a3-4605-bc6d-a312a68daf5d
 
 ## Example
 
-The following sample generates C2549:
+The following example generates C2549:
 
 ```cpp
 // C2549.cpp

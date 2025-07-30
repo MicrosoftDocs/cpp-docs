@@ -16,7 +16,7 @@ The [delete](../../cpp/delete-operator-cpp.md) operator was used on an object th
 
 ## Example
 
-The following sample generates C2541:
+The following example generates C2541:
 
 ```cpp
 // C2541.cpp

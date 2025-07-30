@@ -18,7 +18,7 @@ If you get C2535 because of the Dispose function, see [Destructors and finalizer
 
 ## Example
 
-The following sample generates C2535:
+The following example generates C2535:
 
 ```cpp
 // C2535.cpp

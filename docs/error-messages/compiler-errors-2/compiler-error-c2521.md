@@ -18,7 +18,7 @@ For more information, see [Destructors and finalizers](../../dotnet/how-to-defin
 
 ## Example
 
-The following sample generates C2521.
+The following example generates C2521.
 
 ```cpp
 // C2521.cpp

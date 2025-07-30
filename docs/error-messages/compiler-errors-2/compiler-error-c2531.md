@@ -16,7 +16,7 @@ References to bit fields are not allowed.
 
 ## Example
 
-The following sample generates C2531:
+The following example generates C2531:
 
 ```cpp
 // C2531.cpp

@@ -15,7 +15,7 @@ A function defined with C linkage cannot return a user-defined type.
 
 ## Example
 
-The following sample generates C2526:
+The following example generates C2526:
 
 ```cpp
 // C2526.cpp

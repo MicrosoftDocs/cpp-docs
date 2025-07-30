@@ -16,7 +16,7 @@ This error may be fixed by using pointer syntax and declaring a reference to a p
 
 ## Example
 
-The following sample generates C2529:
+The following example generates C2529:
 
 ```cpp
 // C2529.cpp
