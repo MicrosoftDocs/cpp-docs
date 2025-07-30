@@ -10,7 +10,7 @@ helpviewer_keywords: ["std::get_id [C++]", "std::sleep_for [C++]", "std::sleep_u
 
 The `<thread>` header provides the following functions:
 
-## <a name="get_id"></a> get_id
+## <a name="get_id"></a> `get_id`
 
 Uniquely identifies the current thread of execution.
 
@@ -20,9 +20,9 @@ thread::id this_thread::get_id() noexcept;
 
 ### Return Value
 
-An object of type [thread::id](../standard-library/thread-class.md) that uniquely identifies the current thread of execution.
+An object of type [`thread::id`](../standard-library/thread-class.md) that uniquely identifies the current thread of execution.
 
-## <a name="sleep_for"></a> sleep_for
+## <a name="sleep_for"></a> `sleep_for`
 
 Blocks the calling thread.
 
@@ -34,14 +34,14 @@ inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### Parameters
 
-*Rel_time*\
-A [duration](../standard-library/duration-class.md) object that specifies a time interval.
+*`Rel_time`*\
+A [`duration`](../standard-library/duration-class.md) object that specifies a time interval.
 
 ### Remarks
 
-The function blocks the calling thread for at least the time that's specified by *Rel_time*. This function does not throw any exceptions.
+The function blocks the calling thread for at least the time that's specified by *`Rel_time`*. This function does not throw any exceptions.
 
-## <a name="sleep_until"></a> sleep_until
+## <a name="sleep_until"></a> `sleep_until`
 
 Blocks the calling thread at least until the specified time.
 
@@ -54,14 +54,14 @@ void sleep_until(const xtime *Abs_time);
 
 ### Parameters
 
-*Abs_time*\
+*`Abs_time`*\
 Represents a point in time.
 
 ### Remarks
 
 This function does not throw any exceptions.
 
-## <a name="swap"></a> swap
+## <a name="swap"></a> `swap`
 
 Swaps the states of two `thread` objects.
 
@@ -71,17 +71,17 @@ void swap(thread& Left, thread& Right) noexcept;
 
 ### Parameters
 
-*Left*\
+*`Left`*\
 The left `thread` object.
 
-*Right*\
+*`Right`*\
 The right `thread` object.
 
 ### Remarks
 
 The function calls `Left.swap(Right)`.
 
-## <a name="yield"></a> yield
+## <a name="yield"></a> `yield`
 
 Signals the operating system to run other threads, even if the current thread would ordinarily continue to run.
 
@@ -91,4 +91,4 @@ inline void yield() noexcept;
 
 ## See also
 
-[\<thread>](../standard-library/thread.md)
+[`<thread>`](../standard-library/thread.md)
