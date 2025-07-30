@@ -44,9 +44,8 @@ Current thread id: 16196
 Blocks the calling thread.
 
 ```cpp
-template <class Rep,
-class Period>
-inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
+template <class Rep, class Period>
+void this_thread::sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 ```
 
 ### Parameters
@@ -64,9 +63,7 @@ Blocks the calling thread at least until the specified time.
 
 ```cpp
 template <class Clock, class Duration>
-void sleep_until(const chrono::time_point<Clock, Duration>& Abs_time);
-
-void sleep_until(const xtime *Abs_time);
+void this_thread::sleep_until(const chrono::time_point<Clock, Duration>& Abs_time);
 ```
 
 ### Parameters
@@ -103,7 +100,7 @@ The function calls `Left.swap(Right)`.
 Signals the operating system to run other threads, even if the current thread would ordinarily continue to run.
 
 ```cpp
-inline void yield() noexcept;
+inline void this_thread::yield() noexcept;
 ```
 
 ## See also
