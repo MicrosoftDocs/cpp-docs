@@ -20,7 +20,7 @@ thread::id this_thread::get_id() noexcept;
 
 ### Return Value
 
-An object of type [`thread::id`](../standard-library/thread-class.md) that uniquely identifies the current thread of execution.
+An object of type [`thread::id`](thread-class.md#id_class) that uniquely identifies the current thread of execution.
 
 ## <a name="sleep_for"></a> `sleep_for`
 
@@ -35,7 +35,7 @@ inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 ### Parameters
 
 *`Rel_time`*\
-A [`duration`](../standard-library/duration-class.md) object that specifies a time interval.
+A [`duration`](duration-class.md) object that specifies a time interval.
 
 ### Remarks
 
@@ -91,4 +91,4 @@ inline void yield() noexcept;
 
 ## See also
 
-[`<thread>`](../standard-library/thread.md)
+[`<thread>`](thread.md)
