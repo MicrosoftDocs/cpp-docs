@@ -22,6 +22,23 @@ thread::id this_thread::get_id() noexcept;
 
 An object of type [`thread::id`](thread-class.md#id_class) that uniquely identifies the current thread of execution.
 
+### Example
+
+```cpp
+#include <iostream>
+#include <thread>
+
+int main()
+{
+    std::thread::id current_thread_id = std::this_thread::get_id();
+    std::cout << "Current thread id: " << current_thread_id;
+}
+```
+
+```Output
+Current thread id: 16196
+```
+
 ## <a name="sleep_for"></a> `sleep_for`
 
 Blocks the calling thread.
