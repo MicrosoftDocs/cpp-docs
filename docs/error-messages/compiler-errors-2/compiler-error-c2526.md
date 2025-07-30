@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2526"]
 
 > 'identifier1' : C linkage function cannot return C++ class 'identifier2'
 
+## Remarks
+
 A function defined with C linkage cannot return a user-defined type.
+
+## Example
 
 The following sample generates C2526:
 

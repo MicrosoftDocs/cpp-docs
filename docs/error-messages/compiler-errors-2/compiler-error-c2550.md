@@ -10,7 +10,11 @@ ms.assetid: 3293f53e-ee66-4035-920d-34e115c3a24c
 
 > 'identifier' : constructor initializer lists are only allowed on constructor definitions
 
+## Remarks
+
 A base class initializer list is used on the definition of a function that is not a constructor.
+
+## Example
 
 The following sample generates C2550:
 

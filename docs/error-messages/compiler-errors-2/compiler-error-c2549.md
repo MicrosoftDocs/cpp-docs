@@ -10,6 +10,8 @@ ms.assetid: 29310094-54a3-4605-bc6d-a312a68daf5d
 
 > user-defined conversion cannot specify a return type
 
+## Example
+
 The following sample generates C2549:
 
 ```cpp

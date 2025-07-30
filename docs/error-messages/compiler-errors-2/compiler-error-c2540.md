@@ -10,7 +10,11 @@ ms.assetid: 92c805a3-2dd9-46ca-a63d-3845c18ecc95
 
 > non-constant expression as array bound
 
+## Remarks
+
 An array must have a constant bound.
+
+## Example
 
 The following sample generates C2540:
 

@@ -10,6 +10,8 @@ ms.assetid: b790a312-48df-4a6a-9e27-be2c5f32f16c
 
 > 'identifier' : references must be initialized
 
+## Remarks
+
 You must initialize a reference when it was declared, unless it is declared already:
 
 - With the keyword [extern](../../cpp/extern-cpp.md).
@@ -19,6 +21,8 @@ You must initialize a reference when it was declared, unless it is declared alre
 - As a parameter in a function declaration or definition.
 
 - As the return type of a function.
+
+## Example
 
 The following sample generates C2530:
 

@@ -10,6 +10,8 @@ ms.assetid: e71d17f5-2fc2-416b-8dbd-e9bed85eb33a
 
 > 'destructor' : a destructor/finalizer must have a 'void' parameter list
 
+## Remarks
+
 The destructor or finalizer had a parameter list that is not [void](../../cpp/void-cpp.md). Other parameter types are not allowed.
 
 ## Examples

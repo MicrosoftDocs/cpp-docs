@@ -10,6 +10,8 @@ ms.assetid: 51598eb9-0c57-4306-a0cd-3862980f3672
 
 > 'operator' : unable to find overloaded operator
 
+## Remarks
+
 The operator cannot be used with the operands provided. You must supply an overloaded operator with the required operands.
 
 This error can be caused if operands have incorrect type.

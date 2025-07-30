@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2548"]
 
 > 'class::member' : missing default parameter for parameter parameter
 
+## Remarks
+
 The default parameter list is missing a parameter. If you supply a default parameter anywhere in a parameter list, you must define default parameters for all subsequent parameters in the current declaration or any previous declarations within the same scope.
 
 ## Example

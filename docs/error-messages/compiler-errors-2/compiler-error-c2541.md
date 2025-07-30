@@ -10,7 +10,11 @@ ms.assetid: ed95180f-00df-4e62-a8e9-1b6dab8281bf
 
 > 'delete' : delete : cannot delete objects that are not pointers
 
+## Remarks
+
 The [delete](../../cpp/delete-operator-cpp.md) operator was used on an object that is not a pointer.
+
+## Example
 
 The following sample generates C2541:
 

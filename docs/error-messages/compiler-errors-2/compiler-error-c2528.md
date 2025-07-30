@@ -10,7 +10,11 @@ ms.assetid: 2ea9d583-67a8-4b16-b35f-a50eeffc03c4
 
 > 'name' : pointer to reference is illegal
 
+## Remarks
+
 You cannot declare a pointer to a reference. Dereference the variable before declaring a pointer to it.
+
+## Example
 
 The following sample generates C2528:
 

@@ -10,9 +10,13 @@ ms.assetid: a958f83e-e2bf-4a59-b44b-d406ec325d7e
 
 > 'identifier' : member function already defined or declared
 
+## Remarks
+
 This error could be caused by using the same formal parameter list in more than one definition or declaration of an overloaded function.
 
 If you get C2535 because of the Dispose function, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.
+
+## Example
 
 The following sample generates C2535:
 

@@ -10,4 +10,6 @@ ms.assetid: a94fdf13-5063-4206-b5a5-374930287bee
 
 > 'identifier' : illegal modifier for reference
 
+## Remarks
+
 The reference was changed. References cannot be modified to refer to another object. Use a pointer instead.

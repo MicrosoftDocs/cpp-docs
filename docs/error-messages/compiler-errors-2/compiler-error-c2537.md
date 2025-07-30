@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2537"]
 
 > 'specifier' : illegal linkage specification
 
+## Remarks
+
 The linkage specifier is not supported. Only the "C" and "C++" linkage specifiers are supported.
+
+## Example
 
 The following sample generates C2537:
 

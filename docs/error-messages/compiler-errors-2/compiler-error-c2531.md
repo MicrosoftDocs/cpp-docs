@@ -10,7 +10,11 @@ ms.assetid: c49afe15-55f8-4dc8-ac01-bf653622a7db
 
 > 'identifier' : reference to a bit field illegal
 
+## Remarks
+
 References to bit fields are not allowed.
+
+## Example
 
 The following sample generates C2531:
 

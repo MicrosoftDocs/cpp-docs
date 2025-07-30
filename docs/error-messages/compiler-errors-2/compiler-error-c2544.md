@@ -10,6 +10,8 @@ ms.assetid: 8e79b74a-4e92-4752-a5fe-c3143dfc5524
 
 > expected ')' for operator '()'
 
+## Remarks
+
 The function call operator is missing a left parenthesis.
 
 This error can be caused by macro expansion.

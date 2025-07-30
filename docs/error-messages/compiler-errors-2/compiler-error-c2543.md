@@ -10,6 +10,8 @@ ms.assetid: 6e4d2d03-ef34-4514-92fe-763543a71fa8
 
 > expected ']' for operator '[]'
 
+## Remarks
+
 The subscripting operator is missing a left bracket.
 
 This error can be caused by macro expansion.
