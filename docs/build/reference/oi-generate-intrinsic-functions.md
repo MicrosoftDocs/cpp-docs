@@ -24,7 +24,7 @@ For more information about which functions have intrinsic forms, see [intrinsic]
 **/Oi** is only a request to the compiler to replace some function calls with intrinsics. The compiler may call the function (and not replace the function call with an intrinsic) if it results in better performance.\
 **/Oi-** turns off this behavior, which may be useful if `/Oi` has been specified elsewhere and you want to override it.
 
-You also use [intrinsic](../../preprocessor/intrinsic.md) to create intrinsic functions, or [function (C/C++)](../../preprocessor/function-c-cpp.md) to explicitly force a function call.
+You can use [intrinsic](../../preprocessor/intrinsic.md) to create intrinsic functions, or [function (C/C++)](../../preprocessor/function-c-cpp.md) to explicitly force a function call.
 
 ### x86-specific remarks
 
