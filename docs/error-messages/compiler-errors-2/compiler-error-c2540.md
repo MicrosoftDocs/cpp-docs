@@ -8,7 +8,7 @@ ms.assetid: 92c805a3-2dd9-46ca-a63d-3845c18ecc95
 ---
 # Compiler Error C2540
 
-non-constant expression as array bound
+> non-constant expression as array bound
 
 An array must have a constant bound.
 

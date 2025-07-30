@@ -8,7 +8,7 @@ ms.assetid: 6042821b-e345-4a54-a7e9-a2c9019ea016
 ---
 # Compiler Error C2521
 
-function does not take any arguments
+> function does not take any arguments
 
 You attempted to use arguments with a destructor or finalizer.
 

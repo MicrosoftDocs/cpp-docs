@@ -8,7 +8,7 @@ ms.assetid: ed95180f-00df-4e62-a8e9-1b6dab8281bf
 ---
 # Compiler Error C2541
 
-'delete' : delete : cannot delete objects that are not pointers
+> 'delete' : delete : cannot delete objects that are not pointers
 
 The [delete](../../cpp/delete-operator-cpp.md) operator was used on an object that is not a pointer.
 

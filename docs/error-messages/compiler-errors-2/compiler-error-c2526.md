@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2526"]
 ---
 # Compiler Error C2526
 
-'identifier1' : C linkage function cannot return C++ class 'identifier2'
+> 'identifier1' : C linkage function cannot return C++ class 'identifier2'
 
 A function defined with C linkage cannot return a user-defined type.
 

@@ -8,7 +8,7 @@ ms.assetid: 5b335652-076c-4824-87c8-a741f64a3ce0
 ---
 # Compiler Error C2533
 
-'identifier' : constructors not allowed a return type
+> 'identifier' : constructors not allowed a return type
 
 A constructor cannot have a return type (not even a **`void`** return type).
 

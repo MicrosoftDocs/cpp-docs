@@ -8,7 +8,7 @@ ms.assetid: 73a99e55-b91e-488d-9b72-cc80faaeb436
 ---
 # Compiler Error C2529
 
-'name' : reference to reference is illegal
+> 'name' : reference to reference is illegal
 
 This error may be fixed by using pointer syntax and declaring a reference to a pointer.
 

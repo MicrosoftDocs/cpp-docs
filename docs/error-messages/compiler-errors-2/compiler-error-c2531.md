@@ -8,7 +8,7 @@ ms.assetid: c49afe15-55f8-4dc8-ac01-bf653622a7db
 ---
 # Compiler Error C2531
 
-'identifier' : reference to a bit field illegal
+> 'identifier' : reference to a bit field illegal
 
 References to bit fields are not allowed.
 

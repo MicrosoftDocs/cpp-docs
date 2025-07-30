@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2537"]
 ---
 # Compiler Error C2537
 
-'specifier' : illegal linkage specification
+> 'specifier' : illegal linkage specification
 
 The linkage specifier is not supported. Only the "C" and "C++" linkage specifiers are supported.
 

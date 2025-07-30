@@ -8,7 +8,7 @@ ms.assetid: 2ea9d583-67a8-4b16-b35f-a50eeffc03c4
 ---
 # Compiler Error C2528
 
-'name' : pointer to reference is illegal
+> 'name' : pointer to reference is illegal
 
 You cannot declare a pointer to a reference. Dereference the variable before declaring a pointer to it.
 

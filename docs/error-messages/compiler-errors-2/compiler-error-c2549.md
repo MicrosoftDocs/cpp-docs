@@ -8,7 +8,7 @@ ms.assetid: 29310094-54a3-4605-bc6d-a312a68daf5d
 ---
 # Compiler Error C2549
 
-user-defined conversion cannot specify a return type
+> user-defined conversion cannot specify a return type
 
 The following sample generates C2549:
 

@@ -8,7 +8,7 @@ ms.assetid: 6e4d2d03-ef34-4514-92fe-763543a71fa8
 ---
 # Compiler Error C2543
 
-expected ']' for operator '[]'
+> expected ']' for operator '[]'
 
 The subscripting operator is missing a left bracket.
 

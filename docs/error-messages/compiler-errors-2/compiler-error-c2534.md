@@ -8,7 +8,7 @@ ms.assetid: 481f9f54-5b51-4aa0-8eea-218f10807705
 ---
 # Compiler Error C2534
 
-'identifier' : constructor cannot return a value
+> 'identifier' : constructor cannot return a value
 
 A constructor cannot contain a **`return`** statement with an expression (even if the expression has type **`void`**). This differs from regular void-returning function where a return expression of type **`void`** is allowed. However, using the **`return`** statement without an expression is allowed for early returns in the constructor.
 

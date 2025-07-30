@@ -8,7 +8,7 @@ ms.assetid: b790a312-48df-4a6a-9e27-be2c5f32f16c
 ---
 # Compiler Error C2530
 
-'identifier' : references must be initialized
+> 'identifier' : references must be initialized
 
 You must initialize a reference when it was declared, unless it is declared already:
 

@@ -8,7 +8,7 @@ ms.assetid: 3293f53e-ee66-4035-920d-34e115c3a24c
 ---
 # Compiler Error C2550
 
-'identifier' : constructor initializer lists are only allowed on constructor definitions
+> 'identifier' : constructor initializer lists are only allowed on constructor definitions
 
 A base class initializer list is used on the definition of a function that is not a constructor.
 

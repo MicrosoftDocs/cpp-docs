@@ -8,7 +8,7 @@ ms.assetid: 8e79b74a-4e92-4752-a5fe-c3143dfc5524
 ---
 # Compiler Error C2544
 
-expected ')' for operator '()'
+> expected ')' for operator '()'
 
 The function call operator is missing a left parenthesis.
 

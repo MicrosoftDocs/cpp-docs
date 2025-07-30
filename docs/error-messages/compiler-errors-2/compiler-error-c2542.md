@@ -8,7 +8,7 @@ ms.assetid: a984520d-f835-4cac-ac0e-7f1d5f5c6278
 ---
 # Compiler Error C2542
 
-'identifier' : class object has no constructor for initialization
+> 'identifier' : class object has no constructor for initialization
 
 There is no constructor with a parameter list that matches the initialization.
 

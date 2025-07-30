@@ -8,7 +8,7 @@ ms.assetid: a958f83e-e2bf-4a59-b44b-d406ec325d7e
 ---
 # Compiler Error C2535
 
-'identifier' : member function already defined or declared
+> 'identifier' : member function already defined or declared
 
 This error could be caused by using the same formal parameter list in more than one definition or declaration of an overloaded function.
 
