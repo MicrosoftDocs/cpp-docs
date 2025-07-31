@@ -8,7 +8,7 @@ ms.assetid: d65d0b32-2fac-464a-bcdf-0ebcedf3bf32
 ---
 # Compiler Error C2570
 
-'identifier' : union cannot have base classes
+> 'identifier' : union cannot have base classes
 
 A union derives from a class, structure, or union. This is not allowed. Declare the derived type as a class or structure instead.
 

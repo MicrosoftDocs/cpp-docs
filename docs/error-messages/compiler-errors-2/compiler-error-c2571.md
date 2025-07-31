@@ -8,7 +8,7 @@ ms.assetid: c6522616-dee9-4d7d-9bf8-30a7e1deaadf
 ---
 # Compiler Error C2571
 
-'function' : virtual function cannot be in union 'union'
+> 'function' : virtual function cannot be in union 'union'
 
 A union is declared with a virtual function. You can declare a virtual function only in a class or structure.  Possible resolutions:
 

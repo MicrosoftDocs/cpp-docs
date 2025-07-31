@@ -8,7 +8,7 @@ ms.assetid: 64bc1e9a-627f-4ce9-b7bc-dc911bdb9180
 ---
 # Compiler Error C2553
 
-'base_function': overriding virtual function return type differs from 'override_function'
+> 'base_function': overriding virtual function return type differs from 'override_function'
 
 A function in a derived class attempted to override a virtual function in a base class, but the derived class function did not have the same return type as the base class function.  An override function signature must match the signature of the function being overridden.
 

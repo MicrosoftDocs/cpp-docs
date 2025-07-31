@@ -8,7 +8,7 @@ ms.assetid: 2c41e511-9952-4b98-9976-6b1523613e1b
 ---
 # Compiler Error C2562
 
-'identifier' : 'void' function returning a value
+> 'identifier' : 'void' function returning a value
 
 The function is declared as **`void`** but returns a value.
 

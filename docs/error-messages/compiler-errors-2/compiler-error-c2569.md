@@ -8,7 +8,7 @@ ms.assetid: 092bed1e-f631-436c-9586-7750629f6fac
 ---
 # Compiler Error C2569
 
-'EnumOrUnion' : enum/union cannot be used as a base class
+> 'EnumOrUnion' : enum/union cannot be used as a base class
 
 If you must derive a type from the specified union or enumeration, change the union or enumeration to a class or structure.
 

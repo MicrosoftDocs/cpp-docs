@@ -8,7 +8,7 @@ ms.assetid: fc79ef83-8362-40a2-9257-8037c3195ce4
 ---
 # Compiler Error C2577
 
-'member' : destructor/finalizer cannot have a return type
+> 'member' : destructor/finalizer cannot have a return type
 
 A destructor or finalizer cannot return a value of **`void`** or any other type. Remove the **`return`** statement from the destructor definition.
 

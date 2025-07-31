@@ -8,7 +8,7 @@ ms.assetid: f1a42d69-727d-4ce5-88c8-d5f55dea66ac
 ---
 # Compiler Error C2572
 
-'class::member' : redefinition of default parameter : parameter param
+> 'class::member' : redefinition of default parameter : parameter param
 
 Default parameters cannot be redefined. If you require another value for the parameter, the default parameter should be left undefined.
 

@@ -8,7 +8,7 @@ ms.assetid: 0e0ab759-788a-4faf-9337-80d4b9e2e8c9
 ---
 # Compiler Error C2552
 
-'identifier' : non-aggregates cannot be initialized with initializer list
+> 'identifier' : non-aggregates cannot be initialized with initializer list
 
 The aggregate identifier was incorrectly initialized.
 
