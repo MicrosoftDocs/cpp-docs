@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["ISessionPropertiesImpl", "ISessionPropertiesImpl::GetProperties", "ISessionPropertiesImpl.GetProperties", "ISessionPropertiesImpl.SetProperties", "ISessionPropertiesImpl::SetProperties"]
 helpviewer_keywords: ["ISessionPropertiesImpl class", "GetProperties method", "SetProperties method"]
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
+ms.custom: sfi-ropc-nochange
 ---
 # ISessionPropertiesImpl Class
 

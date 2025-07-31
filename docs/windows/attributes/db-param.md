@@ -5,6 +5,7 @@ ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.db_param"]
 helpviewer_keywords: ["db_param attribute"]
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
+ms.custom: sfi-ropc-nochange
 ---
 # db_param
 

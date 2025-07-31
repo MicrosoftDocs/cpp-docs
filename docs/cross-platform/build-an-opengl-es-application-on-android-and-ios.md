@@ -3,6 +3,7 @@ description: "Learn more about: Build an OpenGL ES application on Android and iO
 title: "Build an OpenGL ES application on Android and iOS"
 ms.date: "06/09/2023"
 ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Build an OpenGL ES application on Android and iOS

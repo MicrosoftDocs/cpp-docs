@@ -4,6 +4,7 @@ title: "MFC Predefined Symbols"
 ms.date: "02/14/2019"
 helpviewer_keywords: ["MFC symbols", "symbols [C++], MFC", "MFC database programming symbols", "symbols [C++], MFC", "databases [C++], MFC programming model", "Windows programming MFC symbols [C++]"]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
+ms.custom: sfi-ropc-nochange
 ---
 # MFC Predefined Symbols
 
