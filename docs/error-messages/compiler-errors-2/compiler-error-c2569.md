@@ -10,7 +10,11 @@ ms.assetid: 092bed1e-f631-436c-9586-7750629f6fac
 
 > 'EnumOrUnion' : enum/union cannot be used as a base class
 
+## Remarks
+
 If you must derive a type from the specified union or enumeration, change the union or enumeration to a class or structure.
+
+## Example
 
 The following sample generates C2569:
 

@@ -10,6 +10,8 @@ ms.assetid: fc79ef83-8362-40a2-9257-8037c3195ce4
 
 > 'member' : destructor/finalizer cannot have a return type
 
+## Remarks
+
 A destructor or finalizer cannot return a value of **`void`** or any other type. Remove the **`return`** statement from the destructor definition.
 
 ## Example

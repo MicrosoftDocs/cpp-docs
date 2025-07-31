@@ -10,6 +10,8 @@ ms.assetid: 822b701e-dcae-423a-b21f-47f36aff9c90
 
 > 'identifier' : no copy constructor available or copy constructor is declared 'explicit'
 
+## Remarks
+
 A copy constructor initializes an object from another object of the same type. (It makes a copy of the object.) The compiler generates a default copy constructor if you do not define any constructors.
 
 ### To fix this error

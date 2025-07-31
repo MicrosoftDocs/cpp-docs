@@ -10,4 +10,6 @@ ms.assetid: 8fe10fb2-d974-432a-a56b-3a61b9a8dfc2
 
 > overloaded function in conditional expression
 
+## Remarks
+
 An overloaded function in a conditional expression cannot be evaluated.

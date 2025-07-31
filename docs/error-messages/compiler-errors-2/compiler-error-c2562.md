@@ -10,11 +10,15 @@ ms.assetid: 2c41e511-9952-4b98-9976-6b1523613e1b
 
 > 'identifier' : 'void' function returning a value
 
+## Remarks
+
 The function is declared as **`void`** but returns a value.
 
 This error can be caused by an incorrect function prototype.
 
 This error may be fixed if you specify the return type in the function declaration.
+
+## Example
 
 The following sample generates C2562:
 

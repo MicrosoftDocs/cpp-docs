@@ -10,6 +10,8 @@ ms.assetid: 9c140ac9-7059-47e6-9ba1-e7939c8c0dc3
 
 > unable to open metadata in 'file', file may have been deleted or moved
 
+## Remarks
+
 A metadata file that was referenced in source (with `#using`) was not found in the same directory by the compiler back end process as it was by the compiler front end process. See [#using Directive](../../preprocessor/hash-using-directive-cpp.md) for more information.
 
 C2567 could be caused if you compile with **/c** on one machine and then attempt a link-time code generation on another machine. For more information, see [/LTCG (Link-time Code Generation)](../../build/reference/ltcg-link-time-code-generation.md)).

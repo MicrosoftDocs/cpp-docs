@@ -10,7 +10,11 @@ ms.assetid: d65d0b32-2fac-464a-bcdf-0ebcedf3bf32
 
 > 'identifier' : union cannot have base classes
 
+## Remarks
+
 A union derives from a class, structure, or union. This is not allowed. Declare the derived type as a class or structure instead.
+
+## Example
 
 The following sample generates C2570:
 

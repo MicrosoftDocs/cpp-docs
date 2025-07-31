@@ -10,4 +10,6 @@ ms.assetid: 2ce523da-da3c-4fb4-bad2-fbde663dbfbf
 
 > 'class' : cannot delete pointers to objects of this type; the class has no non-placement overload for 'operator delete'.
 
+## Remarks
+
 The class is missing a non-placement delete operator.

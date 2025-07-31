@@ -10,7 +10,11 @@ ms.assetid: f1a42d69-727d-4ce5-88c8-d5f55dea66ac
 
 > 'class::member' : redefinition of default parameter : parameter param
 
+## Remarks
+
 Default parameters cannot be redefined. If you require another value for the parameter, the default parameter should be left undefined.
+
+## Example
 
 The following sample generates C2572:
 

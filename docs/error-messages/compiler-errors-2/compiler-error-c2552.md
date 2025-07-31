@@ -10,6 +10,8 @@ ms.assetid: 0e0ab759-788a-4faf-9337-80d4b9e2e8c9
 
 > 'identifier' : non-aggregates cannot be initialized with initializer list
 
+## Remarks
+
 The aggregate identifier was incorrectly initialized.
 
 [Aggregates](../../c-language/initializing-aggregate-types.md) are defined as:
@@ -41,6 +43,8 @@ The following represent the reasons C2552 may fire when an aggregate initializat
 - The type is a ref class or CLR interface.
 
 - The type has a non-fixed dimension array (zero-array) whose elements have destructors.
+
+## Example
 
 The following sample generates C2552:
 

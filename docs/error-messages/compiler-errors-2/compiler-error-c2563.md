@@ -10,7 +10,11 @@ ms.assetid: 54abba68-6458-4ca5-894d-3babdb7b3552
 
 > mismatch in formal parameter list
 
+## Remarks
+
 The formal parameter list of a function (or a pointer to a function) does not match those of another function (or pointer to a member function). As a result, the assignment of functions or pointers cannot be made.
+
+## Example
 
 The following sample generates C2563:
 

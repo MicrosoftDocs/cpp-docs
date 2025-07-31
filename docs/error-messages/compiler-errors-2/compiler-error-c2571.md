@@ -10,11 +10,15 @@ ms.assetid: c6522616-dee9-4d7d-9bf8-30a7e1deaadf
 
 > 'function' : virtual function cannot be in union 'union'
 
+## Remarks
+
 A union is declared with a virtual function. You can declare a virtual function only in a class or structure.  Possible resolutions:
 
 1. Change the union to a class or structure.
 
 1. Make the function nonvirtual.
+
+## Example
 
 The following sample generates C2571:
 

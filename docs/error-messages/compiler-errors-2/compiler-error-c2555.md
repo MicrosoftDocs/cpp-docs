@@ -10,9 +10,9 @@ ms.assetid: 5e49ebb8-7c90-457a-aa12-7ca7ab6574b2
 
 > '*class1*::*function1*': overriding virtual function return type differs and is not covariant from '*class2*::*function2*'
 
-A virtual function and a derived overriding function have identical parameter lists but different return types.
-
 ## Remarks
+
+A virtual function and a derived overriding function have identical parameter lists but different return types.
 
 In C++, an overriding function in a derived class can't differ only by return type from a virtual function in a base class.
 

@@ -10,6 +10,8 @@ ms.assetid: 0abe955b-53a6-4a3c-8362-b1a8eb40e8d1
 
 > 'identifier' : function must return a value
 
+## Remarks
+
 The function was declared as returning a value, but the function definition does not contain a **`return`** statement.
 
 This error can be caused by an incorrect function prototype:
@@ -19,6 +21,8 @@ This error can be caused by an incorrect function prototype:
 1. Check that all possible branches of the function return a value of the type declared in the prototype.
 
 1. C++ functions containing inline assembly routines that store the return value in the `AX` register may need a return statement. Copy the value in `AX` to a temporary variable and return that variable from the function.
+
+## Example
 
 The following sample generates C2561:
 
