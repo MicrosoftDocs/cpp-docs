@@ -20,7 +20,7 @@ This error may be fixed if you specify the return type in the function declarati
 
 ## Example
 
-The following sample generates C2562:
+The following example generates C2562:
 
 ```cpp
 // C2562.cpp

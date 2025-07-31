@@ -16,7 +16,7 @@ The formal parameter list of a function (or a pointer to a function) does not ma
 
 ## Example
 
-The following sample generates C2563:
+The following example generates C2563:
 
 ```cpp
 // C2563.cpp

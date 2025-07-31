@@ -16,7 +16,7 @@ A union derives from a class, structure, or union. This is not allowed. Declare 
 
 ## Example
 
-The following sample generates C2570:
+The following example generates C2570:
 
 ```cpp
 // C2570.cpp

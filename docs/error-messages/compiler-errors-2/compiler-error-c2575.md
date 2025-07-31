@@ -16,7 +16,7 @@ A global function or class is declared **`virtual`**. This is not allowed.
 
 ## Example
 
-The following sample generates C2575:
+The following example generates C2575:
 
 ```cpp
 // C2575.cpp

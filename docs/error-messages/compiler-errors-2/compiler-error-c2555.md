@@ -34,7 +34,7 @@ is
 Guid CheckSources(Guid sourceID, Guid carouselIDs[]) [];
 ```
 
-The following sample generates C2555:
+The following example generates C2555:
 
 ```cpp
 // C2555.cpp

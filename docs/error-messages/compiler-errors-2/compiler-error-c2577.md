@@ -16,7 +16,7 @@ A destructor or finalizer cannot return a value of **`void`** or any other type.
 
 ## Example
 
-The following sample generates C2577.
+The following example generates C2577.
 
 ```cpp
 // C2577.cpp

@@ -16,7 +16,7 @@ A function in a derived class attempted to override a virtual function in a base
 
 ## Example
 
-The following sample generates C2553:
+The following example generates C2553:
 
 ```cpp
 // C2553.cpp

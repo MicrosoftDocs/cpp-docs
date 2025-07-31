@@ -24,7 +24,7 @@ This error can be caused by an incorrect function prototype:
 
 ## Example
 
-The following sample generates C2561:
+The following example generates C2561:
 
 ```cpp
 // C2561.cpp

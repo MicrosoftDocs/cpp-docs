@@ -16,7 +16,7 @@ If you must derive a type from the specified union or enumeration, change the un
 
 ## Example
 
-The following sample generates C2569:
+The following example generates C2569:
 
 ```cpp
 // C2569.cpp

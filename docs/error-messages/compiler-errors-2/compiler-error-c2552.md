@@ -46,7 +46,7 @@ The following represent the reasons C2552 may fire when an aggregate initializat
 
 ## Example
 
-The following sample generates C2552:
+The following example generates C2552:
 
 ```cpp
 // C2552.cpp

@@ -16,7 +16,7 @@ Default parameters cannot be redefined. If you require another value for the par
 
 ## Example
 
-The following sample generates C2572:
+The following example generates C2572:
 
 ```cpp
 // C2572.cpp
