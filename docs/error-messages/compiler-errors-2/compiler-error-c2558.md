@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2558"
 title: "Compiler Error C2558"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2558"
+ms.date: 11/04/2016
 f1_keywords: ["C2558"]
 helpviewer_keywords: ["C2558"]
-ms.assetid: 822b701e-dcae-423a-b21f-47f36aff9c90
 ---
 # Compiler Error C2558
 

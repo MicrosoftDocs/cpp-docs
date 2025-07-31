@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2553"
 title: "Compiler Error C2553"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2553"
+ms.date: 11/04/2016
 f1_keywords: ["C2553"]
 helpviewer_keywords: ["C2553"]
-ms.assetid: 64bc1e9a-627f-4ce9-b7bc-dc911bdb9180
 ---
 # Compiler Error C2553
 

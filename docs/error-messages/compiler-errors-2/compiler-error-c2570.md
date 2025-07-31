@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2570"
 title: "Compiler Error C2570"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2570"
+ms.date: 11/04/2016
 f1_keywords: ["C2570"]
 helpviewer_keywords: ["C2570"]
-ms.assetid: d65d0b32-2fac-464a-bcdf-0ebcedf3bf32
 ---
 # Compiler Error C2570
 

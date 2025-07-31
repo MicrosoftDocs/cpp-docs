@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2577"
 title: "Compiler Error C2577"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2577"
+ms.date: 11/04/2016
 f1_keywords: ["C2577"]
 helpviewer_keywords: ["C2577"]
-ms.assetid: fc79ef83-8362-40a2-9257-8037c3195ce4
 ---
 # Compiler Error C2577
 

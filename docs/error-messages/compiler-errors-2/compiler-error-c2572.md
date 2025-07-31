@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2572"
 title: "Compiler Error C2572"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2572"
+ms.date: 11/04/2016
 f1_keywords: ["C2572"]
 helpviewer_keywords: ["C2572"]
-ms.assetid: f1a42d69-727d-4ce5-88c8-d5f55dea66ac
 ---
 # Compiler Error C2572
 

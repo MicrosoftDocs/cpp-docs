@@ -1,10 +1,9 @@
 ---
 title: "Compiler Error C2555"
 description: "Reference for Visual Studio C++ compiler error C2555."
-ms.date: "03/30/2020"
+ms.date: 03/30/2020
 f1_keywords: ["C2555"]
 helpviewer_keywords: ["C2555"]
-ms.assetid: 5e49ebb8-7c90-457a-aa12-7ca7ab6574b2
 ---
 # Compiler Error C2555
 
