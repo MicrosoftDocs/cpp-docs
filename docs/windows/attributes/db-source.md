@@ -5,6 +5,7 @@ ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.db_source"]
 helpviewer_keywords: ["db_source attribute"]
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
+ms.custom: sfi-ropc-nochange
 ---
 # db_source
 

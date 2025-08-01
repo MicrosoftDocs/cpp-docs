@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["ICommandPropertiesImpl", "ATL.ICommandPropertiesImpl", "ATL::ICommandPropertiesImpl", "ICommandPropertiesImpl::GetProperties", "ICommandPropertiesImpl.GetProperties", "ICommandPropertiesImpl.SetProperties", "ICommandPropertiesImpl::SetProperties"]
 helpviewer_keywords: ["ICommandPropertiesImpl class", "GetProperties method", "SetProperties method"]
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
+ms.custom: sfi-ropc-nochange
 ---
 # ICommandPropertiesImpl Class
 

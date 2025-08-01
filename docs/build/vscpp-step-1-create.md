@@ -1,9 +1,11 @@
 ---
 title: Create a C++ console app project
 description: "Create a Hello World console app using Microsoft C++ in Visual Studio."
-ms.custom: "mvc"
 ms.date: 07/05/2023
 ms.topic: "tutorial"
+ms.custom:
+  - "mvc"
+  - sfi-image-nochange
 ---
 # Create a C++ console app project
 
