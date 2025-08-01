@@ -10,6 +10,8 @@ ms.assetid: 836e2c0a-86c0-4742-b432-beb0191ad20e
 
 > 'Class' : direct base 'Base2' is inaccessible; already a base of 'Base1'
 
+## Remarks
+
 `Class` already derives directly from `Base1`. `Base2` also derives from `Base1`. `Class` cannot derive from `Base2` because that would mean inheriting (indirectly) from `Base1` again, which is not legal because `Base1` is already a direct base class.
 
 ## Example

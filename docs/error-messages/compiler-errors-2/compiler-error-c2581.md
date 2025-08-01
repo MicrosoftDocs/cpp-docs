@@ -10,6 +10,8 @@ ms.assetid: 24a4e4c1-24d3-4e42-b760-7dcaf9740b16
 
 > 'type' : static 'operator =' function is illegal
 
+## Remarks
+
 The assignment (`=`) operator is incorrectly declared as **`static`**. Assignment operators cannot be **`static`**. For more information, see [User-Defined Operators (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md).
 
 ## Example

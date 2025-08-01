@@ -10,7 +10,11 @@ ms.assetid: dae703c7-5c38-4db6-8411-4d1b22713eb5
 
 > incorrect user-defined conversion syntax : illegal indirections
 
+## Remarks
+
 Indirection of a conversion operator is not allowed.
+
+## Example
 
 The following sample generates C2586:
 

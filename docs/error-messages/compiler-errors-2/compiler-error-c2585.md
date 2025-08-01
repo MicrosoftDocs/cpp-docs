@@ -10,6 +10,8 @@ ms.assetid: 05bb1a9c-28fb-4a88-a1b5-aea85ebdee1c
 
 > explicit conversion to 'type' is ambiguous
 
+## Remarks
+
 The type conversion can produce more than one result.
 
 ### To fix by checking the following possible causes

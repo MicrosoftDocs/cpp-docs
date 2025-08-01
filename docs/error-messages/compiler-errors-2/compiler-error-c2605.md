@@ -10,6 +10,8 @@ ms.assetid: a0e6f132-5acf-4e19-b277-ddf196d182bf
 
 > 'name' : this method is reserved within a managed or WinRT class
 
+## Remarks
+
 Certain names are reserved by the compiler for internal functions.  For more information, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
 
 ## Example

@@ -10,9 +10,13 @@ ms.assetid: 19a0cabd-ca13-44a5-9be3-ee676abf9bc4
 
 > '::~identifier' : illegal global destructor
 
+## Remarks
+
 The destructor is defined for something other than a class, structure, or union. This is not allowed.
 
 This error can be caused by a missing class, structure, or union name on the left side of the scope resolution (`::`) operator.
+
+## Example
 
 The following sample generates C2588:
 

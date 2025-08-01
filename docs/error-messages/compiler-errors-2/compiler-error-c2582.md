@@ -10,7 +10,11 @@ ms.assetid: ee1b9378-8bcd-4792-b87e-6d7a466d29ed
 
 > 'function' function is unavailable in 'type'
 
+## Remarks
+
 An attempt was made to assign to an object that does not have an assignment operator.
+
+## Example
 
 The following sample generates C2582:
 

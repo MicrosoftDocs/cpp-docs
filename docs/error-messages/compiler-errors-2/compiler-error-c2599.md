@@ -10,9 +10,13 @@ ms.assetid: 88515f36-7589-47e2-862e-0de8b18d6668
 
 > 'enum' : forward declaration of enum type is not allowed
 
+## Remarks
+
 The compiler no longer supports forward declaration of a managed enumeration.
 
 Forward declaration of an enum type is not allowed under [/Za](../../build/reference/za-ze-disable-language-extensions.md).
+
+## Example
 
 The following sample generates C2599:
 

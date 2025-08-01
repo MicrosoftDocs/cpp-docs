@@ -10,7 +10,11 @@ ms.assetid: 6c07a40e-537e-4954-b5c5-1e0e58fe1952
 
 > 'class::Identifier' is not a member of a base class of 'class'
 
+## Remarks
+
 `Identifier` cannot be accessed because it is not a member inherited from any base class.
+
+## Example
 
 The following sample generates C2602:
 

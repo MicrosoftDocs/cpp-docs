@@ -10,7 +10,11 @@ ms.assetid: 7637a2c7-35d4-4b5a-a8f2-515a7bda98fd
 
 > 'identifier' : illegal use of local variable as default parameter
 
+## Remarks
+
 Local variables are not allowed as default parameters.
+
+## Example
 
 The following sample generates C2587:
 

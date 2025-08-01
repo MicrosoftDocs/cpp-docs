@@ -10,9 +10,13 @@ ms.assetid: 4a0fe9bb-2163-447d-91f6-1890ed8250f6
 
 > 'operator identifier' is ambiguous
 
+## Remarks
+
 More than one possible operator is defined for an overloaded operator.
 
 This error may be fixed if you use an explicit cast on one or more actual parameters.
+
+## Examples
 
 The following sample generates C2593:
 

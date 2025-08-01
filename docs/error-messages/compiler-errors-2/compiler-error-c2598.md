@@ -10,7 +10,11 @@ ms.assetid: 40777c62-39ba-441e-b081-f49f94b43547
 
 > linkage specification must be at global scope
 
+## Remarks
+
 The linkage specifier is declared at local scope.
+
+## Example
 
 The following sample generates C2598:
 
