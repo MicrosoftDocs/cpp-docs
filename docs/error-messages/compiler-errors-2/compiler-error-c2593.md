@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2593"
 title: "Compiler Error C2593"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2593"
+ms.date: 11/04/2016
 f1_keywords: ["C2593"]
 helpviewer_keywords: ["C2593"]
-ms.assetid: 4a0fe9bb-2163-447d-91f6-1890ed8250f6
 ---
 # Compiler Error C2593
 
-'operator identifier' is ambiguous
+> 'operator identifier' is ambiguous
+
+## Remarks
 
 More than one possible operator is defined for an overloaded operator.
 
 This error may be fixed if you use an explicit cast on one or more actual parameters.
 
-The following sample generates C2593:
+## Examples
+
+The following example generates C2593:
 
 ```cpp
 // C2593.cpp
