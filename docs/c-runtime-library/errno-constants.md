@@ -34,7 +34,7 @@ The following `errno` values are supported:
 | `EDEADLK` | Resource deadlock would occur. | 36 |
 | `EDEADLOCK` | Same as `EDEADLK` for compatibility with older Microsoft C versions. | 36 |
 | `EDOM` | Math argument. The argument to a math function isn't in the domain of the function. | 33 |
-| `EEXIST` | Files exists. An attempt has been made to create a file that already exists. For example, the `_O_CREAT` and `_O_EXCL` flags are specified in an `_open` call, but the named file already exists. | 17 |
+| `EEXIST` | File exists. An attempt has been made to create a file that already exists. For example, the `_O_CREAT` and `_O_EXCL` flags are specified in an `_open` call, but the named file already exists. | 17 |
 | `EFAULT` | Bad address. | 14 |
 | `EFBIG` | File too large. | 27 |
 | `EILSEQ` | Illegal sequence of bytes (for example, in an `MBCS` string). | 42 |
@@ -50,7 +50,7 @@ The following `errno` values are supported:
 | `ENOENT` | No such file or directory. The specified file or directory doesn't exist or can't be found. This message can occur whenever a specified file doesn't exist or a component of a path doesn't specify an existing directory. | 2 |
 | `ENOEXEC` | Exec format error. An attempt was made to execute a file that isn't executable or that has an invalid executable-file format. | 8 |
 | `ENOLCK` | No locks available. | 39 |
-| `ENOMEM` | Not enough memory is available for the attempted operator. For example, this message can occur when insufficient memory is available to execute a child process, or when the allocation request in a `_getcwd` call can't be satisfied. | 12 |
+| `ENOMEM` | Not enough memory is available for the attempted operation. For example, this message can occur when insufficient memory is available to execute a child process, or when the allocation request in a `_getcwd` call can't be satisfied. | 12 |
 | `ENOSPC` | No space left on device. No more space for writing is available on the device (for example, when the disk is full). | 28 |
 | `ENOSYS` | Function not supported. | 40 |
 | `ENOTDIR` | Not a directory. | 20 |
@@ -60,7 +60,7 @@ The following `errno` values are supported:
 | `EPERM` | Operation not permitted. | 1 |
 | `EPIPE` | Broken pipe. | 32 |
 | `ERANGE` | Result too large. An argument to a math function is too large, resulting in partial or total loss of significance in the result. This error can also occur in other functions when an argument is larger than expected (for example, when the *`buffer`* argument to `_getcwd` is longer than expected). | 34 |
-| `EROFS` | Read only file system. | 30 |
+| `EROFS` | Read-only file system. | 30 |
 | `ESPIPE` | Invalid seek. | 29 |
 | `ESRCH` | No such process. | 3 |
 | `EXDEV` | Cross-device link. An attempt was made to move a file to a different device (using the `rename` function). | 18 |
@@ -84,8 +84,8 @@ The following values are supported for compatibility with POSIX:
 | `EIDRM` | Identifier removed. | 111 |
 | `EINPROGRESS` | Operation in progress. | 112 |
 | `EISCONN` | Already connected. | 113 |
-| `ELOOP` | Too many symbolic link levels. | 114 |
-| `EMSGSIZE` | Message size. | 115 |
+| `ELOOP` | Too many levels of symbolic links. | 114 |
+| `EMSGSIZE` | Message too long. | 115 |
 | `ENETDOWN` | Network down. | 116 |
 | `ENETRESET` | Network reset. | 117 |
 | `ENETUNREACH` | Network unreachable. | 118 |
