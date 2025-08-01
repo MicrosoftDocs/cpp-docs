@@ -16,7 +16,7 @@ No conversion from *type1* to *type2* was more direct than any other. We suggest
 
 ## Example
 
-The following sample generates C2594. The suggested resolution to the error is a sequence of conversions:
+The following example generates C2594. The suggested resolution to the error is a sequence of conversions:
 
 ```cpp
 // C2594.cpp

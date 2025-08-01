@@ -22,7 +22,7 @@ Possible causes:
 
 ## Example
 
-1. The following sample generates C2597 and shows how to fix it:
+1. The following example generates C2597 and shows how to fix it:
 
 ```cpp
 // C2597.cpp

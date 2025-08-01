@@ -18,7 +18,7 @@ To fix this error, in the class declaration, declare each member function that y
 
 ## Example
 
-The following sample generates C2600:
+The following example generates C2600:
 
 ```cpp
 // C2600.cpp

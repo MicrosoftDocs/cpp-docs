@@ -16,7 +16,7 @@ Certain names are reserved by the compiler for internal functions.  For more inf
 
 ## Example
 
-The following sample generates C2605.
+The following example generates C2605.
 
 ```cpp
 // C2605.cpp

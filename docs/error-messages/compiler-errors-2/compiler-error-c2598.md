@@ -16,7 +16,7 @@ The linkage specifier is declared at local scope.
 
 ## Example
 
-The following sample generates C2598:
+The following example generates C2598:
 
 ```cpp
 // C2598.cpp

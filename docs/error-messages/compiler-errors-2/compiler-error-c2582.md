@@ -16,7 +16,7 @@ An attempt was made to assign to an object that does not have an assignment oper
 
 ## Example
 
-The following sample generates C2582:
+The following example generates C2582:
 
 ```cpp
 // C2582.cpp

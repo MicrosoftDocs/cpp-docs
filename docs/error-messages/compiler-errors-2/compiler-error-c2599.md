@@ -18,7 +18,7 @@ Forward declaration of an enum type is not allowed under [/Za](../../build/refer
 
 ## Example
 
-The following sample generates C2599:
+The following example generates C2599:
 
 ```cpp
 // C2599.cpp

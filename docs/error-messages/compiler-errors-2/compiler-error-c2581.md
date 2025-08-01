@@ -16,7 +16,7 @@ The assignment (`=`) operator is incorrectly declared as **`static`**. Assignmen
 
 ## Example
 
-The following sample generates C2581.
+The following example generates C2581.
 
 ```cpp
 // C2581.cpp

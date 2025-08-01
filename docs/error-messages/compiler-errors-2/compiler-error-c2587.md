@@ -16,7 +16,7 @@ Local variables are not allowed as default parameters.
 
 ## Example
 
-The following sample generates C2587:
+The following example generates C2587:
 
 ```cpp
 // C2587.cpp

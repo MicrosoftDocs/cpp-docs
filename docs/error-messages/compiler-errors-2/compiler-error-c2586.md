@@ -16,7 +16,7 @@ Indirection of a conversion operator is not allowed.
 
 ## Example
 
-The following sample generates C2586:
+The following example generates C2586:
 
 ```cpp
 // c2586.cpp

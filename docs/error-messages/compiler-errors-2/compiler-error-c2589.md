@@ -18,7 +18,7 @@ The scope-resolution operator cannot be overloaded.
 
 ## Example
 
-The following sample generates C2589:
+The following example generates C2589:
 
 ```cpp
 // C2589.cpp

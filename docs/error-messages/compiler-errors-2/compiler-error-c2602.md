@@ -16,7 +16,7 @@ ms.assetid: 6c07a40e-537e-4954-b5c5-1e0e58fe1952
 
 ## Example
 
-The following sample generates C2602:
+The following example generates C2602:
 
 ```cpp
 // C2602.cpp
