@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Expression evaluator errors (CXXxxxx)"
 title: "Expression evaluator errors"
-ms.date: "04/16/2019"
-ms.assetid: a47a9866-7fb2-4b21-978c-2b77402c7105
+description: "Learn more about: Expression evaluator errors (CXXxxxx)"
+ms.date: 04/16/2019
 ---
 # Expression evaluator errors (CXXxxxx)
 
