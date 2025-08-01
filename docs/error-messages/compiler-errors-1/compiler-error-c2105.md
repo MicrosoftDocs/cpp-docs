@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2105"
 title: "Compiler Error C2105"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2105"
+ms.date: 11/04/2016
 f1_keywords: ["C2105"]
 helpviewer_keywords: ["C2105"]
-ms.assetid: 19b7f7bc-a9da-4d23-8193-005b6d09274f
 ---
 # Compiler Error C2105
 
-'operator' needs l-value
+> 'operator' needs l-value
+
+## Remarks
 
 The operator must have an l-value as operand.
 
-The following sample generates C2105:
+## Examples
+
+The following example generates C2105:
 
 ```cpp
 // C2105.cpp
@@ -29,7 +32,7 @@ int main() {
 }
 ```
 
-The following sample generates C2105:
+The following example generates C2105:
 
 ```cpp
 // C2105b.cpp
