@@ -3,6 +3,7 @@ title: "Connect to a Target Linux System by Using Visual Studio"
 description: "Learn how to connect to a remote Linux machine or Windows Subsystem for Linux from inside a Visual Studio C++ project."
 ms.topic: tutorial
 ms.date: 03/21/2025
+ms.custom: sfi-image-nochange
 ---
 # Connect to your remote Linux system by using Visual Studio
 
