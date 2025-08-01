@@ -115,7 +115,7 @@ Global initializer calls a non-constexpr function '*symbol*'. See [C++ Core Guid
 Global initializer accesses extern object '*symbol*'. See [C++ Core Guidelines I.22](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#i22-avoid-complex-initialization-of-global-objects).
 
 [C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md)\
-Avoid unnamed objects with custom construction and destruction. See [ES.84: Don't (try to) declare a local variable with no name](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
+Avoid unnamed objects with custom construction and destruction. See [ES.84: Don't (try to) declare a local variable with no name](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-noname).
 
 ## CLASS Group
 
@@ -129,13 +129,13 @@ Function '*symbol*' should be marked with 'override'. See [C.128: Virtual functi
 Function '*symbol_1*' hides a non-virtual function '*symbol_2*'. See [C++ Core Guidelines C.128](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md)\
-Function '*symbol*' should specify exactly one of 'virtual', 'override', or 'final'. See [C.128: Virtual functions should specify exactly one of virtual, override, or final](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
+Function '*symbol*' should specify exactly one of 'virtual', 'override', or 'final'. See [C.128: Virtual functions should specify exactly one of virtual, override, or final](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rh-override).
 
 [C26436 NEED_VIRTUAL_DTOR](C26436.md)\
 The type '*symbol*' with a virtual function needs either public virtual or protected non-virtual destructor. See [C++ Core Guidelines C.35](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md)\
-Overriding destructor should not use explicit 'override' or 'virtual' specifiers. See [C.128: Virtual functions should specify exactly one of virtual, override, or final](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
+Overriding destructor should not use explicit 'override' or 'virtual' specifiers. See [C.128: Virtual functions should specify exactly one of virtual, override, or final](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rh-override).
 
 ## STYLE Group
 
