@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2079"
 title: "Compiler Error C2079"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2079"
+ms.date: 11/04/2016
 f1_keywords: ["C2079"]
 helpviewer_keywords: ["C2079"]
-ms.assetid: ca58d6d5-eccd-40b7-ba14-c003223c5bc7
 ---
 # Compiler Error C2079
 
-'identifier' uses undefined class/struct/union 'name'
+> 'identifier' uses undefined class/struct/union 'name'
+
+## Remarks
 
 The specified identifier is an undefined class, structure, or union.
 
 This error can be caused by initializing an anonymous union.
 
-The following sample generates C2079:
+## Examples
+
+The following example generates C2079:
 
 ```cpp
 // C2079.cpp
