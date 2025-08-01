@@ -7,7 +7,9 @@ helpviewer_keywords: ["C2397"]
 ---
 # Compiler Error C2397
 
-conversion from 'type_1' to 'type_2' requires a narrowing conversion
+> conversion from 'type_1' to 'type_2' requires a narrowing conversion
+
+## Remarks
 
 An implicit narrowing conversion was found when using uniform initialization.
 
@@ -15,7 +17,9 @@ The C language allows implicit narrowing conversions in assignments and initiali
 
 A narrowing conversion can be okay when you know the possible range of converted values can fit in the target. In this case, you know more than the compiler does. If you make a narrowing conversion intentionally, make your intentions explicit by using a static cast. Otherwise, this error message almost always indicates you have a bug in your code. You can fix it by making sure the objects you initialize have types that are large enough to handle the inputs.
 
-The following sample generates C2397:
+## Example
+
+The following example generates C2397:
 
 ```cpp
 // C2397.cpp
