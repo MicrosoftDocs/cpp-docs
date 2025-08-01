@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2586"
 title: "Compiler Error C2586"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2586"
+ms.date: 11/04/2016
 f1_keywords: ["C2586"]
 helpviewer_keywords: ["C2586"]
-ms.assetid: dae703c7-5c38-4db6-8411-4d1b22713eb5
 ---
 # Compiler Error C2586
 

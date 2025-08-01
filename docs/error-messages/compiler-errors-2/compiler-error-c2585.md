@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2585"
 title: "Compiler Error C2585"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2585"
+ms.date: 11/04/2016
 f1_keywords: ["C2585"]
 helpviewer_keywords: ["C2585"]
-ms.assetid: 05bb1a9c-28fb-4a88-a1b5-aea85ebdee1c
 ---
 # Compiler Error C2585
 

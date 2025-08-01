@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2600"
 title: "Compiler Error C2600"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2600"
+ms.date: 11/04/2016
 f1_keywords: ["C2600"]
 helpviewer_keywords: ["C2600"]
-ms.assetid: cce11943-ea01-4bee-a7b0-b67d24ec6493
 ---
 # Compiler Error C2600
 

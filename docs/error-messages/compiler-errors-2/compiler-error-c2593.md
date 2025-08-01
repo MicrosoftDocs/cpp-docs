@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2593"
 title: "Compiler Error C2593"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2593"
+ms.date: 11/04/2016
 f1_keywords: ["C2593"]
 helpviewer_keywords: ["C2593"]
-ms.assetid: 4a0fe9bb-2163-447d-91f6-1890ed8250f6
 ---
 # Compiler Error C2593
 

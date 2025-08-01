@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2584"
 title: "Compiler Error C2584"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2584"
+ms.date: 11/04/2016
 f1_keywords: ["C2584"]
 helpviewer_keywords: ["C2584"]
-ms.assetid: 836e2c0a-86c0-4742-b432-beb0191ad20e
 ---
 # Compiler Error C2584
 

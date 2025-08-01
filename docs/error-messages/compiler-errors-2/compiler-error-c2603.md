@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2603"
 title: "Compiler Error C2603"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2603"
+ms.date: 11/04/2016
 f1_keywords: ["C2603"]
 helpviewer_keywords: ["C2603"]
-ms.assetid: 9ca520d0-f082-4b65-933d-17c3bcf8b02c
 ---
 # Compiler Error C2603
 

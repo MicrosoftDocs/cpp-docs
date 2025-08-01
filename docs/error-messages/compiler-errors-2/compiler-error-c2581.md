@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2581"
 title: "Compiler Error C2581"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2581"
+ms.date: 11/04/2016
 f1_keywords: ["C2581"]
 helpviewer_keywords: ["C2581"]
-ms.assetid: 24a4e4c1-24d3-4e42-b760-7dcaf9740b16
 ---
 # Compiler Error C2581
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2605"
 title: "Compiler Error C2605"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2605"
+ms.date: 11/04/2016
 f1_keywords: ["C2605"]
 helpviewer_keywords: ["C2605"]
-ms.assetid: a0e6f132-5acf-4e19-b277-ddf196d182bf
 ---
 # Compiler Error C2605
 

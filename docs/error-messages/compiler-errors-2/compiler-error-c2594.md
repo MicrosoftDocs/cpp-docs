@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2594"
 title: "Compiler Error C2594"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2594"
+ms.date: 11/04/2016
 f1_keywords: ["C2594"]
 helpviewer_keywords: ["C2594"]
-ms.assetid: 68cd708f-266e-44b0-a211-3e3ab63b11bf
 ---
 # Compiler Error C2594
 

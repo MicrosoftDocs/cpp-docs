@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2587"
 title: "Compiler Error C2587"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2587"
+ms.date: 11/04/2016
 f1_keywords: ["C2587"]
 helpviewer_keywords: ["C2587"]
-ms.assetid: 7637a2c7-35d4-4b5a-a8f2-515a7bda98fd
 ---
 # Compiler Error C2587
 

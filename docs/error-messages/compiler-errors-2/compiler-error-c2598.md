@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2598"
 title: "Compiler Error C2598"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2598"
+ms.date: 11/04/2016
 f1_keywords: ["C2598"]
 helpviewer_keywords: ["C2598"]
-ms.assetid: 40777c62-39ba-441e-b081-f49f94b43547
 ---
 # Compiler Error C2598
 

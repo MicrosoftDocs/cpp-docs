@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2599"
 title: "Compiler Error C2599"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2599"
+ms.date: 11/04/2016
 f1_keywords: ["C2599"]
 helpviewer_keywords: ["C2599"]
-ms.assetid: 88515f36-7589-47e2-862e-0de8b18d6668
 ---
 # Compiler Error C2599
 
