@@ -15,11 +15,11 @@ helpviewer_keywords: ["E2BIG constant", "EACCES constant", "EAGAIN constant", "E
 
 ## Remarks
 
-The `errno` constants are values assigned to [`errno`](./errno-doserrno-sys-errlist-and-sys-nerr.md) for various error conditions.
+The `errno` constants are values assigned to [`errno`](errno-doserrno-sys-errlist-and-sys-nerr.md) for various error conditions.
 
 `ERRNO.H` contains the definitions of the `errno` values. However, not all the definitions given in `ERRNO.H` are used in 32-bit Windows operating systems. Some of the values in `ERRNO.H` are present to maintain compatibility with the UNIX family of operating systems. The `errno` values in a 32-bit Windows operating system are a subset of the values for `errno` in UNIX systems.
 
-The `errno` value isn't necessarily the same as the actual error code returned by a system call from the Windows operating system. To access the actual operating system error code, use the [`_doserrno`](./errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.
+The `errno` value isn't necessarily the same as the actual error code returned by a system call from the Windows operating system. To access the actual operating system error code, use the [`_doserrno`](errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.
 
 The following `errno` values are supported:
 
@@ -64,7 +64,7 @@ The following `errno` values are supported:
 | `ESPIPE` | Invalid seek. | 29 |
 | `ESRCH` | No such process. | 3 |
 | `EXDEV` | Cross-device link. An attempt was made to move a file to a different device (using the `rename` function). | 18 |
-| `STRUNCATE` | A string copy or concatenation resulted in a truncated string. See [`_TRUNCATE`](./truncate.md). | 80 |
+| `STRUNCATE` | A string copy or concatenation resulted in a truncated string. See [`_TRUNCATE`](truncate.md). | 80 |
 
 The following values are supported for compatibility with POSIX:
 
@@ -114,4 +114,4 @@ The following values are supported for compatibility with POSIX:
 
 ## See also
 
-[Global constants](./global-constants.md)
+[Global constants](global-constants.md)
