@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2052"
 title: "Compiler Error C2052"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2052"
+ms.date: 11/04/2016
 f1_keywords: ["C2052"]
 helpviewer_keywords: ["C2052"]
-ms.assetid: 922ca43b-b64b-4ef7-9611-c7313be3fd79
 ---
 # Compiler Error C2052
 
-'type' : illegal type for case expression
+> 'type' : illegal type for case expression
+
+## Remarks
 
 Case expressions must be integer constants.
 
-The following sample generates C2052:
+## Example
+
+The following example generates C2052:
 
 ```cpp
 // C2052.cpp
