@@ -8,7 +8,7 @@ ms.assetid: 1d7942c7-8a81-4bb4-b272-76a0019e8513
 ---
 # Compiler Error C2589
 
-'identifier' : illegal token on right side of '::'
+> 'identifier' : illegal token on right side of '::'
 
 If a class, structure, or union name appears to the left of the scope-resolution operator (double colons), the token on the right must be a class, structure, or union member. Otherwise, any global identifier can appear on the right.
 

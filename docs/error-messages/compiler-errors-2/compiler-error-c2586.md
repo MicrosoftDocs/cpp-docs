@@ -8,7 +8,7 @@ ms.assetid: dae703c7-5c38-4db6-8411-4d1b22713eb5
 ---
 # Compiler Error C2586
 
-incorrect user-defined conversion syntax : illegal indirections
+> incorrect user-defined conversion syntax : illegal indirections
 
 Indirection of a conversion operator is not allowed.
 

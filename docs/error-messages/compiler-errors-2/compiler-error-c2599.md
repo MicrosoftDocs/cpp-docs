@@ -8,7 +8,7 @@ ms.assetid: 88515f36-7589-47e2-862e-0de8b18d6668
 ---
 # Compiler Error C2599
 
-'enum' : forward declaration of enum type is not allowed
+> 'enum' : forward declaration of enum type is not allowed
 
 The compiler no longer supports forward declaration of a managed enumeration.
 

@@ -8,7 +8,7 @@ ms.assetid: 68cd708f-266e-44b0-a211-3e3ab63b11bf
 ---
 # Compiler Error C2594
 
-'operator' : ambiguous conversions from 'type1' to 'type2'
+> 'operator' : ambiguous conversions from 'type1' to 'type2'
 
 No conversion from *type1* to *type2* was more direct than any other. We suggest two possible solutions to converting from *type1* to *type2*. The first option is to define a direct conversion from *type1* to *type2*, and the second option is to specify a sequence of conversions from *type1* to *type2*.
 

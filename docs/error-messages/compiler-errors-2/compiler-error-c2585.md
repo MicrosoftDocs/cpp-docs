@@ -8,7 +8,7 @@ ms.assetid: 05bb1a9c-28fb-4a88-a1b5-aea85ebdee1c
 ---
 # Compiler Error C2585
 
-explicit conversion to 'type' is ambiguous
+> explicit conversion to 'type' is ambiguous
 
 The type conversion can produce more than one result.
 

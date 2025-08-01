@@ -8,7 +8,7 @@ ms.assetid: 40777c62-39ba-441e-b081-f49f94b43547
 ---
 # Compiler Error C2598
 
-linkage specification must be at global scope
+> linkage specification must be at global scope
 
 The linkage specifier is declared at local scope.
 

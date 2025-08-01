@@ -8,7 +8,7 @@ ms.assetid: 4a0fe9bb-2163-447d-91f6-1890ed8250f6
 ---
 # Compiler Error C2593
 
-'operator identifier' is ambiguous
+> 'operator identifier' is ambiguous
 
 More than one possible operator is defined for an overloaded operator.
 

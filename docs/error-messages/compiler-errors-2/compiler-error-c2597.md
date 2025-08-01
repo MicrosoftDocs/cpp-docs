@@ -8,7 +8,7 @@ ms.assetid: 2e48127d-e3ff-4a40-8156-2863e45b1a38
 ---
 # Compiler Error C2597
 
-illegal reference to non-static member 'identifier'
+> illegal reference to non-static member 'identifier'
 
 Possible causes:
 
