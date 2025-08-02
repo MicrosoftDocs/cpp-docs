@@ -70,6 +70,7 @@ These warnings, and all warnings in later versions, are suppressed by using the 
 
 | Warning | Message |
 |--|--|
+| C4862 | justification property is not allowed with more than one warning number |
 
 ## Warnings introduced in Visual Studio 2022 version 17.13 (compiler version 19.43)
 
