@@ -15,7 +15,7 @@ The [**`__based`**](../../cpp/based-pointers-cpp.md) modifier can be used on poi
 
 ## Example
 
-The following sample generates C2640:
+The following example generates C2640:
 
 ```cpp
 // C2640.cpp

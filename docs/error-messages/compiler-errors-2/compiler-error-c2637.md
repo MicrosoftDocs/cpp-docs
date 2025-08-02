@@ -16,7 +16,7 @@ A pointer to a data member cannot have a calling convention. To resolve, either 
 
 ## Example
 
-The following sample generates C2637:
+The following example generates C2637:
 
 ```cpp
 // C2637.cpp

@@ -15,7 +15,7 @@ The left operand of a pointer-to-member operator (`->*` or `.*`) cannot be impli
 
 ## Example
 
-The following sample generates C2647:
+The following example generates C2647:
 
 ```cpp
 // C2647.cpp

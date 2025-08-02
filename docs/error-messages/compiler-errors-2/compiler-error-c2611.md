@@ -16,7 +16,7 @@ The token is not an identifier.
 
 ## Example
 
-The following sample generates C2611:
+The following example generates C2611:
 
 ```cpp
 // C2611.cpp

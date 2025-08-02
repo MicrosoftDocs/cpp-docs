@@ -16,7 +16,7 @@ A **`new`** or **`delete`** operator is declared **`virtual`**. These operators 
 
 ## Example
 
-The following sample generates C2650:
+The following example generates C2650:
 
 ```cpp
 // C2650.cpp

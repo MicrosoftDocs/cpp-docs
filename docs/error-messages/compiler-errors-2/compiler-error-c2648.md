@@ -16,7 +16,7 @@ A non-static member is used as a default parameter.
 
 ## Example
 
-The following sample generates C2648:
+The following example generates C2648:
 
 ```cpp
 // C2648.cpp

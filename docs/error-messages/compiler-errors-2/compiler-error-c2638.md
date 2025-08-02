@@ -16,7 +16,7 @@ The **`__based`** modifier cannot be used for pointers to members.
 
 ## Example
 
-The following sample generates C2638:
+The following example generates C2638:
 
 ```cpp
 // C2638.cpp

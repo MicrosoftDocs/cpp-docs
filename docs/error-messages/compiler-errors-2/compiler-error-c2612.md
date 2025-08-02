@@ -16,7 +16,7 @@ A character appears after the last base or member in an initializer list.
 
 ## Example
 
-The following sample generates C2612:
+The following example generates C2612:
 
 ```cpp
 // C2612.cpp

@@ -16,7 +16,7 @@ The declaration of a pointer to a member does not specify a class.
 
 ## Example
 
-The following sample generates C2645:
+The following example generates C2645:
 
 ```cpp
 // C2645.cpp

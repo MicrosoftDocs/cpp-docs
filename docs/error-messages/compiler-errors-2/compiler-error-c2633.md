@@ -16,7 +16,7 @@ A constructor is declared as a storage class other than inline.
 
 ## Example
 
-The following sample generates C2633:
+The following example generates C2633:
 
 ```cpp
 // C2633.cpp

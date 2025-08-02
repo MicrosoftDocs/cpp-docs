@@ -16,7 +16,7 @@ A semicolon may be missing.
 
 ## Example
 
-The following sample generates C2628:
+The following example generates C2628:
 
 ```cpp
 // C2628.cpp

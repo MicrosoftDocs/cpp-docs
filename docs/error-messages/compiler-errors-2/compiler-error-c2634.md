@@ -16,7 +16,7 @@ A pointer to a reference member is declared.
 
 ## Example
 
-The following sample generates C2634:
+The following example generates C2634:
 
 ```cpp
 // C2634.cpp

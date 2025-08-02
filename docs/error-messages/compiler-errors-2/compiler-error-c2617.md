@@ -16,7 +16,7 @@ The specified function does not have a declared return type, and a previous retu
 
 ## Example
 
-The following sample generates C2617:
+The following example generates C2617:
 
 ```cpp
 // C2617.cpp

@@ -16,7 +16,7 @@ The symbol appears in a context that requires a comma.
 
 ## Example
 
-The following sample generates C2630:
+The following example generates C2630:
 
 ```cpp
 // C2630.cpp

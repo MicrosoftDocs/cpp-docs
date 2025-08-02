@@ -16,7 +16,7 @@ A local class or structure cannot be used to declare **`extern`** variables.
 
 ## Example
 
-The following sample generates C2624:
+The following example generates C2624:
 
 ```cpp
 // C2624.cpp

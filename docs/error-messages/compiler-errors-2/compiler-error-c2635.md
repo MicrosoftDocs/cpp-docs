@@ -16,7 +16,7 @@ The conversion requires a cast from a **`virtual`** base class to a derived clas
 
 ## Example
 
-The following sample generates C2635:
+The following example generates C2635:
 
 ```cpp
 // C2635.cpp

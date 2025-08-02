@@ -16,7 +16,7 @@ A member of an anonymous struct or union must have public access.
 
 ## Example
 
-The following sample generates C2626:
+The following example generates C2626:
 
 ```cpp
 // C2626.cpp

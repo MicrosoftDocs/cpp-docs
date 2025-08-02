@@ -16,7 +16,7 @@ An [anonymous union](../../cpp/unions.md#anonymous_unions) cannot have member fu
 
 ## Example
 
-The following sample generates C2627:
+The following example generates C2627:
 
 ```cpp
 // C2627.cpp

@@ -16,7 +16,7 @@ An anonymous struct or union has global or namespace scope but is not declared *
 
 ## Example
 
-The following sample generates C2646 and shows how to fix it:
+The following example generates C2646 and shows how to fix it:
 
 ```cpp
 // C2646.cpp
