@@ -49,4 +49,4 @@ The C++/CX define certain types in these namespaces as part of the projection of
 
 ## See also
 
-[Type System (C++/CX)](../cppcx/type-system-c-cx.md)
+[Type System (C++/CX)](type-system-c-cx.md)
