@@ -52,7 +52,7 @@ By default, this function's global state is scoped to the application. To change
 
 | Routine | Required header |
 |---|---|
-| **`modf`**, **`modff`**, **`modfl`** | C: `<math.h>`<br /><br /> C++: , `<cmath>` or `<math.h>` |
+| **`modf`**, **`modff`**, **`modfl`** | C: `<math.h>`<br /><br /> C++: `<cmath>` or `<math.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
