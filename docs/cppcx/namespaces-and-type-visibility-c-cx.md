@@ -8,7 +8,7 @@ ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
 
 A namespace is a standard C++ construct for grouping types that have related functionality and for preventing name collisions in libraries. The Windows Runtime type system requires that all public Windows Runtime types, including those in your own code, must be declared in a namespace at namespace scope. Public types that are declared at global scope or nested inside another class will cause a compile-time error.
 
-A .winmd file must have the same name that the root namespace has. For example, a class that's named A.B.C.MyClass can be instantiated only if it's defined in a metadata file that's named A.winmd or A.B.winmd or A.B.C.winmd. The name of the executable is not required to match the .winmd file name.
+A `.winmd` file must have the same name that the root namespace has. For example, a class that's named `A.B.C.MyClass` can be instantiated only if it's defined in a metadata file that's named `A.winmd` or `A.B.winmd` or `A.B.C.winmd`. The name of the executable is not required to match the `.winmd` file name.
 
 ## Type visibility
 
@@ -34,7 +34,7 @@ Use the following access modifiers to control both metadata visibility and sourc
 
 ## Windows Runtime namespaces
 
-The Windows API consists of types that are declared in the Windows::\* namespaces. These namespaces are reserved for Windows, and types cannot be added to them. In the **Object Browser**, you can view these namespaces in the windows.winmd file. For documentation about these namespaces, see [Windows API](/uwp/api/).
+The Windows API consists of types that are declared in the `Windows::*` namespaces. These namespaces are reserved for Windows, and types cannot be added to them. In the **Object Browser**, you can view these namespaces in the `windows.winmd` file. For documentation about these namespaces, see [Windows API](/uwp/api/).
 
 ## C++/CX namespaces
 
@@ -44,7 +44,7 @@ The C++/CX define certain types in these namespaces as part of the projection of
 |--|--|
 | default | Contains the built-in numeric and char16 types. These types are in scope in every namespace and a **`using`** statement is never required. |
 | `Platform` | Contains primarily public types that correspond to Windows Runtime types such as `Array<T>`, `String`, `Guid`, and `Boolean`. Also includes specialized helper types such as `Platform::Agile<T>` and `Platform::Box<T>`. |
-| `Platform::Collections` | Contains the concrete collection classes that implement the Windows Runtime collection interfaces `IVector`, `IMap`, and so on. These types are defined in a header file, collection.h, not in platform.winmd. |
+| `Platform::Collections` | Contains the concrete collection classes that implement the Windows Runtime collection interfaces `IVector`, `IMap`, and so on. These types are defined in a header file, `collection.h`, not in `platform.winmd`. |
 | `Platform::Details` | Contains types that are used by the compiler and are not meant for public consumption. |
 
 ## See also
