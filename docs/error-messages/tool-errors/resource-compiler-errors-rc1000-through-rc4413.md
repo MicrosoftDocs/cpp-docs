@@ -1,7 +1,7 @@
 ---
 title: "Resource compiler errors and warnings"
 description: "Learn more about: Resource compiler errors and warnings (RCxxxx, RWxxxx)"
-ms.date: "04/17/2019"
+ms.date: 04/17/2019
 ---
 # Resource compiler errors and warnings (RCxxxx, RWxxxx)
 
