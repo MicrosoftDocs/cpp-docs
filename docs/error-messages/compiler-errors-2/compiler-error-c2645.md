@@ -10,7 +10,11 @@ ms.assetid: 6609c2fa-c3b2-4a6b-8e8d-58fb52f67175
 
 > no qualified name for pointer to member (found ':: *')
 
+## Remarks
+
 The declaration of a pointer to a member does not specify a class.
+
+## Example
 
 The following sample generates C2645:
 

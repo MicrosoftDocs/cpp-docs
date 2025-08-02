@@ -10,7 +10,11 @@ ms.assetid: ce338337-9154-4f85-bb61-b05fdbfad75d
 
 > 'identifier' : use of member as default parameter requires static member
 
+## Remarks
+
 A non-static member is used as a default parameter.
+
+## Example
 
 The following sample generates C2648:
 

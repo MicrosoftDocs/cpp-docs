@@ -10,7 +10,11 @@ ms.assetid: 379873ec-8d05-49f8-adf1-b067bc07bdb8
 
 > 'identifier' : pointer to reference member is illegal
 
+## Remarks
+
 A pointer to a reference member was declared.
+
+## Example
 
 The following sample generates C2636:
 

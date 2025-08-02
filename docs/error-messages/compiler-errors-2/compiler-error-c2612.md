@@ -10,7 +10,11 @@ ms.assetid: 6faacfd6-4455-41a2-808e-0f6799f84d6d
 
 > trailing 'char' illegal in base/member initializer list
 
+## Remarks
+
 A character appears after the last base or member in an initializer list.
+
+## Example
 
 The following sample generates C2612:
 

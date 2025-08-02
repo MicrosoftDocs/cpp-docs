@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2647"]
 
 > 'operator': cannot dereference a 'type1' on a 'type2'
 
+## Remarks
+
 The left operand of a pointer-to-member operator (`->*` or `.*`) cannot be implicitly converted to a type related to the right operator.
+
+## Example
 
 The following sample generates C2647:
 

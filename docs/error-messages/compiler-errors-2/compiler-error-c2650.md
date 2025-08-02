@@ -10,6 +10,8 @@ ms.assetid: 49a8ac6e-aa6d-4616-917c-a3cfcdbad5a4
 
 > 'operator' : cannot be a virtual function
 
+## Remarks
+
 A **`new`** or **`delete`** operator is declared **`virtual`**. These operators are **`static`** member functions and cannot be **`virtual`**.
 
 ## Example

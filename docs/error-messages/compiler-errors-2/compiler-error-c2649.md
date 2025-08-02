@@ -10,4 +10,6 @@ ms.assetid: 09e78f08-9b74-41e7-a76f-66bc190ba0d2
 
 > 'identifier' : is not a 'class-key'
 
+## Remarks
+
 A class, structure, or union declaration uses an incorrect tag.

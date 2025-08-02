@@ -10,7 +10,11 @@ ms.assetid: 7a655a9c-bab4-495b-97a3-a3f34cf5369a
 
 > 'symbol' found in what should be a comma-separated list
 
+## Remarks
+
 The symbol appears in a context that requires a comma.
+
+## Example
 
 The following sample generates C2630:
 

@@ -10,7 +10,11 @@ ms.assetid: d6a435d2-7d95-4dbf-ad4a-abe4744f63e8
 
 > 'function' : inconsistent return statement
 
+## Remarks
+
 The specified function does not have a declared return type, and a previous return statement did not supply a value.
+
+## Example
 
 The following sample generates C2617:
 

@@ -10,4 +10,6 @@ ms.assetid: d8fa7b32-08cb-4bb4-96e7-c04dded0e917
 
 > trailing ',' illegal in base class list
 
+## Remarks
+
 A comma appears after the last base in a base class list.

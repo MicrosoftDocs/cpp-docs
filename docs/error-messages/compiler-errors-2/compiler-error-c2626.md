@@ -10,7 +10,11 @@ ms.assetid: 4c283ad0-251b-4571-bc18-468b9836746f
 
 > 'identifier': a private or protected data member is not allowed in an anonymous struct or union
 
+## Remarks
+
 A member of an anonymous struct or union must have public access.
+
+## Example
 
 The following sample generates C2626:
 

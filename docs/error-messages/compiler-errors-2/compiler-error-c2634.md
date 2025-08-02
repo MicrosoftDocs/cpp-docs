@@ -10,7 +10,11 @@ ms.assetid: 58c8f2db-ac95-4a81-9355-ef3cfb0ba7b3
 
 > '&class::member' : pointer to reference member is illegal
 
+## Remarks
+
 A pointer to a reference member is declared.
+
+## Example
 
 The following sample generates C2634:
 

@@ -10,7 +10,11 @@ ms.assetid: 19a25e77-d5be-4107-88d5-0745b6281f98
 
 > 'type1' followed by 'type2' is illegal (did you forget a ';'?)
 
+## Remarks
+
 A semicolon may be missing.
+
+## Example
 
 The following sample generates C2628:
 

@@ -10,7 +10,11 @@ ms.assetid: 3f2d5253-f24f-4724-83d0-6b2aa6a4e551
 
 > 'token' : illegal following '~' (expected identifier)
 
+## Remarks
+
 The token is not an identifier.
+
+## Example
 
 The following sample generates C2611:
 

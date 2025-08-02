@@ -10,7 +10,11 @@ ms.assetid: a7aceb65-4255-42d6-a8fb-e3cb6c4d2270
 
 > 'identifier' : 'inline' is the only legal storage class for constructors
 
+## Remarks
+
 A constructor is declared as a storage class other than inline.
+
+## Example
 
 The following sample generates C2633:
 

@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2640"]
 
 > 'abstract declarator': __based modifier illegal on reference
 
+## Remarks
+
 The [**`__based`**](../../cpp/based-pointers-cpp.md) modifier can be used on pointers only.
+
+## Example
 
 The following sample generates C2640:
 

@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2614"]
 
 > 'class1' : illegal member initialization: 'class2' is not a base or member
 
+## Remarks
+
 Only member or base classes can appear in the initialization list for a class or structure.
 
 ## Example

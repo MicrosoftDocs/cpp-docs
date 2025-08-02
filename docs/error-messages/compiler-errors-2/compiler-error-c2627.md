@@ -10,7 +10,11 @@ ms.assetid: 7fc6c5ac-c7c9-4f0b-ad52-f52252526458
 
 > 'function' : member function not allowed in anonymous union
 
+## Remarks
+
 An [anonymous union](../../cpp/unions.md#anonymous_unions) cannot have member functions.
+
+## Example
 
 The following sample generates C2627:
 
