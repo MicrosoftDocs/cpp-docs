@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: Namespaces and Type Visibility (C++/CX )"
-title: "Namespaces and Type Visibility (C++/CX )"
+description: "Learn more about: Namespaces and Type Visibility (C++/CX)"
+title: "Namespaces and Type Visibility (C++/CX)"
 ms.date: "12/30/2016"
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
 ---
-# Namespaces and Type Visibility (C++/CX )
+# Namespaces and Type Visibility (C++/CX)
 
 A namespace is a standard C++ construct for grouping types that have related functionality and for preventing name collisions in libraries. The Windows Runtime type system requires that all public Windows Runtime types, including those in your own code, must be declared in a namespace at namespace scope. Public types that are declared at global scope or nested inside another class will cause a compile-time error.
 

@@ -13,7 +13,7 @@ items:
       items: 
         - name: Type system overview
           href: ../cppcx/type-system-c-cx.md
-        - name: Namespaces and type visibility (C++/CX )
+        - name: Namespaces and type visibility (C++/CX)
           href: ../cppcx/namespaces-and-type-visibility-c-cx.md
         - name: Fundamental types
           href: ../cppcx/fundamental-types-c-cx.md
