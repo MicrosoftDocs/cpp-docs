@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2630"
 title: "Compiler Error C2630"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2630"
+ms.date: 11/04/2016
 f1_keywords: ["C2630"]
 helpviewer_keywords: ["C2630"]
-ms.assetid: 7a655a9c-bab4-495b-97a3-a3f34cf5369a
 ---
 # Compiler Error C2630
 

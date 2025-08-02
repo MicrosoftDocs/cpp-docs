@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2645"
 title: "Compiler Error C2645"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2645"
+ms.date: 11/04/2016
 f1_keywords: ["C2645"]
 helpviewer_keywords: ["C2645"]
-ms.assetid: 6609c2fa-c3b2-4a6b-8e8d-58fb52f67175
 ---
 # Compiler Error C2645
 

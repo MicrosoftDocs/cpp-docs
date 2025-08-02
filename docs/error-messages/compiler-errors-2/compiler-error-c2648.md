@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2648"
 title: "Compiler Error C2648"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2648"
+ms.date: 11/04/2016
 f1_keywords: ["C2648"]
 helpviewer_keywords: ["C2648"]
-ms.assetid: ce338337-9154-4f85-bb61-b05fdbfad75d
 ---
 # Compiler Error C2648
 

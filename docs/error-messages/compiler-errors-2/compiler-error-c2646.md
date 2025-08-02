@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2646"
 title: "Compiler Error C2646"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2646"
+ms.date: 11/04/2016
 f1_keywords: ["C2646"]
 helpviewer_keywords: ["C2646"]
-ms.assetid: 92ff1f02-5eaf-40a5-8b7a-a682f149e967
 ---
 # Compiler Error C2646
 

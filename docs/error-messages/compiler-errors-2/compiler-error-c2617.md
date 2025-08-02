@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2617"
 title: "Compiler Error C2617"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2617"
+ms.date: 11/04/2016
 f1_keywords: ["C2617"]
 helpviewer_keywords: ["C2617"]
-ms.assetid: d6a435d2-7d95-4dbf-ad4a-abe4744f63e8
 ---
 # Compiler Error C2617
 

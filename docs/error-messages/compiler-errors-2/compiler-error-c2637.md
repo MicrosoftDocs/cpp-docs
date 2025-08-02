@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2637"
 title: "Compiler Error C2637"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2637"
+ms.date: 11/04/2016
 f1_keywords: ["C2637"]
 helpviewer_keywords: ["C2637"]
-ms.assetid: 58d94447-eb96-4d8f-a690-dd78d322462e
 ---
 # Compiler Error C2637
 

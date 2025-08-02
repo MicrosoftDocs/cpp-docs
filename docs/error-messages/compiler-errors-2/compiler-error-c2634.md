@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2634"
 title: "Compiler Error C2634"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2634"
+ms.date: 11/04/2016
 f1_keywords: ["C2634"]
 helpviewer_keywords: ["C2634"]
-ms.assetid: 58c8f2db-ac95-4a81-9355-ef3cfb0ba7b3
 ---
 # Compiler Error C2634
 

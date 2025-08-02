@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2636"
 title: "Compiler Error C2636"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2636"
+ms.date: 11/04/2016
 f1_keywords: ["C2636"]
 helpviewer_keywords: ["C2636"]
-ms.assetid: 379873ec-8d05-49f8-adf1-b067bc07bdb8
 ---
 # Compiler Error C2636
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2626"
 title: "Compiler Error C2626"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2626"
+ms.date: 11/04/2016
 f1_keywords: ["C2626"]
 helpviewer_keywords: ["C2626"]
-ms.assetid: 4c283ad0-251b-4571-bc18-468b9836746f
 ---
 # Compiler Error C2626
 

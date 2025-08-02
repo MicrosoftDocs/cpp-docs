@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2632"
 title: "Compiler Error C2632"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2632"
+ms.date: 11/04/2016
 f1_keywords: ["C2632"]
 helpviewer_keywords: ["C2632"]
-ms.assetid: b15a6b1b-42d2-4e1b-8660-e6bfde61052d
 ---
 # Compiler Error C2632
 

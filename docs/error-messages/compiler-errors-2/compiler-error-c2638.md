@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2638"
 title: "Compiler Error C2638"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2638"
+ms.date: 11/04/2016
 f1_keywords: ["C2638"]
 helpviewer_keywords: ["C2638"]
-ms.assetid: 9d4275e8-406d-455e-afee-3a37799230e0
 ---
 # Compiler Error C2638
 

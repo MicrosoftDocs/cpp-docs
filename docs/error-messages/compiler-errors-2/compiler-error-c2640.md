@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2640"
 description: "Learn more about: Compiler Error C2640"
-ms.date: "03/17/2025"
+ms.date: 03/17/2025
 f1_keywords: ["C2640"]
 helpviewer_keywords: ["C2640"]
 ---
