@@ -8,7 +8,7 @@ ms.assetid: 58d94447-eb96-4d8f-a690-dd78d322462e
 ---
 # Compiler Error C2637
 
-'identifier' : cannot modify pointers to data members
+> 'identifier' : cannot modify pointers to data members
 
 A pointer to a data member cannot have a calling convention. To resolve, either remove the calling convention or declare a pointer to member function.
 

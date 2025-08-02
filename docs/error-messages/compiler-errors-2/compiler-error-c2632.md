@@ -8,7 +8,7 @@ ms.assetid: b15a6b1b-42d2-4e1b-8660-e6bfde61052d
 ---
 # Compiler Error C2632
 
-'type1' followed by 'type2' is illegal
+> 'type1' followed by 'type2' is illegal
 
 This error can be caused if there is missing code between two type specifiers.
 

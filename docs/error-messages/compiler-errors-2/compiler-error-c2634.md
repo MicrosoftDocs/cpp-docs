@@ -8,7 +8,7 @@ ms.assetid: 58c8f2db-ac95-4a81-9355-ef3cfb0ba7b3
 ---
 # Compiler Error C2634
 
-'&class::member' : pointer to reference member is illegal
+> '&class::member' : pointer to reference member is illegal
 
 A pointer to a reference member is declared.
 

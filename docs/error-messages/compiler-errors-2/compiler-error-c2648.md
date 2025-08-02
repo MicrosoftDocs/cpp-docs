@@ -8,7 +8,7 @@ ms.assetid: ce338337-9154-4f85-bb61-b05fdbfad75d
 ---
 # Compiler Error C2648
 
-'identifier' : use of member as default parameter requires static member
+> 'identifier' : use of member as default parameter requires static member
 
 A non-static member is used as a default parameter.
 

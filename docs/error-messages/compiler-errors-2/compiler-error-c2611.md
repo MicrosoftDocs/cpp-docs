@@ -8,7 +8,7 @@ ms.assetid: 3f2d5253-f24f-4724-83d0-6b2aa6a4e551
 ---
 # Compiler Error C2611
 
-'token' : illegal following '~' (expected identifier)
+> 'token' : illegal following '~' (expected identifier)
 
 The token is not an identifier.
 

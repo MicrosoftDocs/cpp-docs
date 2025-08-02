@@ -8,7 +8,7 @@ ms.assetid: 8d0c02d6-a0b0-4135-b10f-438d67da68c6
 ---
 # Compiler Error C2616
 
-'conversion' : cannot implicitly convert a non-lvalue 'type1' to a 'type2' that is not const
+> 'conversion' : cannot implicitly convert a non-lvalue 'type1' to a 'type2' that is not const
 
 A reference cannot be initialized from a non-lvalue.
 

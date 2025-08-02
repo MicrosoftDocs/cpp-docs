@@ -8,7 +8,7 @@ ms.assetid: 32f2ec15-a7cd-4049-a64b-131746d3152b
 ---
 # Compiler Error C2624
 
-local classes cannot be used to declare 'extern' variables
+> local classes cannot be used to declare 'extern' variables
 
 A local class or structure cannot be used to declare **`extern`** variables.
 

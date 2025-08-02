@@ -8,7 +8,7 @@ ms.assetid: 7fc6c5ac-c7c9-4f0b-ad52-f52252526458
 ---
 # Compiler Error C2627
 
-'function' : member function not allowed in anonymous union
+> 'function' : member function not allowed in anonymous union
 
 An [anonymous union](../../cpp/unions.md#anonymous_unions) cannot have member functions.
 

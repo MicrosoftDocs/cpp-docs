@@ -8,7 +8,7 @@ ms.assetid: 4c283ad0-251b-4571-bc18-468b9836746f
 ---
 # Compiler Error C2626
 
-'identifier': a private or protected data member is not allowed in an anonymous struct or union
+> 'identifier': a private or protected data member is not allowed in an anonymous struct or union
 
 A member of an anonymous struct or union must have public access.
 

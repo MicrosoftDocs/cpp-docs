@@ -8,7 +8,7 @@ ms.assetid: 379873ec-8d05-49f8-adf1-b067bc07bdb8
 ---
 # Compiler Error C2636
 
-'identifier' : pointer to reference member is illegal
+> 'identifier' : pointer to reference member is illegal
 
 A pointer to a reference member was declared.
 

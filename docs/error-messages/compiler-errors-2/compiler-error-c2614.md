@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2614"]
 ---
 # Compiler Error C2614
 
-'class1' : illegal member initialization: 'class2' is not a base or member
+> 'class1' : illegal member initialization: 'class2' is not a base or member
 
 Only member or base classes can appear in the initialization list for a class or structure.
 

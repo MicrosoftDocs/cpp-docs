@@ -8,7 +8,7 @@ ms.assetid: 7a655a9c-bab4-495b-97a3-a3f34cf5369a
 ---
 # Compiler Error C2630
 
-'symbol' found in what should be a comma-separated list
+> 'symbol' found in what should be a comma-separated list
 
 The symbol appears in a context that requires a comma.
 

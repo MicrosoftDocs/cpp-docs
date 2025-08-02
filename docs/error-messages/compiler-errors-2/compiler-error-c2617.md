@@ -8,7 +8,7 @@ ms.assetid: d6a435d2-7d95-4dbf-ad4a-abe4744f63e8
 ---
 # Compiler Error C2617
 
-'function' : inconsistent return statement
+> 'function' : inconsistent return statement
 
 The specified function does not have a declared return type, and a previous return statement did not supply a value.
 
