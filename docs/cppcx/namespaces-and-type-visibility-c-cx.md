@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Namespaces and Type Visibility (C++/CX)"
 title: "Namespaces and Type Visibility (C++/CX)"
-ms.date: "12/30/2016"
-ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
+description: "Learn more about: Namespaces and Type Visibility (C++/CX)"
+ms.date: 12/30/2016
 ---
 # Namespaces and Type Visibility (C++/CX)
 
