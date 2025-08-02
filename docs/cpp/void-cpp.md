@@ -16,7 +16,7 @@ In C++, a **`void`** pointer can point to a free function (a function that's not
 
 You can't declare a variable of type **`void`**.
 
-As a matter of style, the C++ Core Guidelines recommend you don't use **`void`** to specify an empty formal parameter list. For more information, see [C++ Core Guidelines NL.25: Don't use `void` as an argument type](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#nl25-dont-use-void-as-an-argument-type).
+As a matter of style, the C++ Core Guidelines recommend you don't use **`void`** to specify an empty formal parameter list. For more information, see [C++ Core Guidelines NL.25: Don't use `void` as an argument type](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#nl25-dont-use-void-as-an-argument-type).
 
 ## Example
 
