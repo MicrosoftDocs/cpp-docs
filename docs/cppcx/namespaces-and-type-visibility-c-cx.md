@@ -15,7 +15,7 @@ A `.winmd` file must have the same name that the root namespace has. For example
 In a namespace, Windows Runtime types—unlike standard C++ types—have either private or public accessibility. By default, the accessibility is private. Only a public type is visible to metadata and is therefore consumable from apps and components that might be written in languages other than C++. In general, the rules for visible types are more restrictive than the rules for non-visible types because visible types cannot expose C++-specific concepts that are not supported in .NET languages or JavaScript.
 
 > [!NOTE]
-> Metadata is only consumed at run time by .NET languages and JavaScript. When a C++ app or component is talking to another C++ app or component—this includes Windows components ,which are all written in C++—then no run-time consumption of metadata is required.
+> Metadata is only consumed at run time by .NET languages and JavaScript. When a C++ app or component is talking to another C++ app or component—this includes Windows components, which are all written in C++—then no run-time consumption of metadata is required.
 
 ## Member accessibility and visibility
 
