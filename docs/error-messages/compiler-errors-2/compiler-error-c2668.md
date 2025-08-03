@@ -18,7 +18,7 @@ You can also get this error through template use. If, in the same class, you hav
 
 ## Examples
 
-The following sample generates C2668:
+The following example generates C2668:
 
 ```cpp
 // C2668.cpp

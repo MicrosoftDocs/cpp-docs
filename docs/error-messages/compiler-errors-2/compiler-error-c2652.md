@@ -16,7 +16,7 @@ The first parameter in the copy constructor has the same type as the class, stru
 
 ## Example
 
-The following sample generates C2651:
+The following example generates C2651:
 
 ```cpp
 // C2652.cpp

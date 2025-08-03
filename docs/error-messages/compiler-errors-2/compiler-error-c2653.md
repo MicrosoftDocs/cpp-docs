@@ -19,7 +19,7 @@ C2653 is also possible if you try to define a *compound namespace*, a namespace 
 
 ## Examples
 
-This sample generates C2653 because a scope name is used but not declared. The compiler expects a class, structure, union, or namespace name before a scope operator (::).
+This example generates C2653 because a scope name is used but not declared. The compiler expects a class, structure, union, or namespace name before a scope operator (::).
 
 ```cpp
 // C2653.cpp

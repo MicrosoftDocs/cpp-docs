@@ -18,7 +18,7 @@ This error can be caused by a missing type specifier in the declaration of a poi
 
 ## Example
 
-The following sample generates C2657:
+The following example generates C2657:
 
 ```cpp
 // C2657.cpp

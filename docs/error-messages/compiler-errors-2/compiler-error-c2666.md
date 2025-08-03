@@ -16,7 +16,7 @@ An overloaded function or operator is ambiguous.   Formal parameter lists may be
 
 ## Examples
 
-The following sample generates C2666:
+The following example generates C2666:
 
 ```cpp
 // C2666.cpp
@@ -143,7 +143,7 @@ int main()
 }
 ```
 
-The following sample generates C2666
+The following example generates C2666
 
 ```cpp
 // C2666c.cpp

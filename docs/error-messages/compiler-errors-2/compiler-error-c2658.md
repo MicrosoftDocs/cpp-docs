@@ -16,7 +16,7 @@ Two anonymous structures or unions contained member declarations with the same i
 
 ## Example
 
-The following sample generates C2658:
+The following example generates C2658:
 
 ```cpp
 // C2658.cpp

@@ -16,7 +16,7 @@ ms.assetid: f9cb8111-bcdc-484b-a863-2c42e15a0496
 
 ## Example
 
-The following sample generates C2669:
+The following example generates C2669:
 
 ```cpp
 // C2669.cpp

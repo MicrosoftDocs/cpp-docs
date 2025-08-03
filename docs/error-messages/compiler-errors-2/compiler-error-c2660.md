@@ -22,7 +22,7 @@ C2660 can occur if you accidentally call a Windows API function rather than an M
 
 ## Examples
 
-The following sample generates C2660.
+The following example generates C2660.
 
 ```cpp
 // C2660.cpp
@@ -34,7 +34,7 @@ int main() {
 }
 ```
 
-C2660 can also occur if you attempt to directly call the Dispose method of a managed type. For more information, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). The following sample generates C2660.
+C2660 can also occur if you attempt to directly call the Dispose method of a managed type. For more information, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). The following example generates C2660.
 
 ```cpp
 // C2660_a.cpp

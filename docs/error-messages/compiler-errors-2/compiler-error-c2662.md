@@ -22,7 +22,7 @@ This error can be caused by invoking a non-**`const`** member function on a **`c
 
 ## Examples
 
-The following sample generates C2662:
+The following example generates C2662:
 
 ```cpp
 // C2662.cpp
@@ -64,7 +64,7 @@ ref struct N {
 };
 ```
 
-The following sample generates C2662:
+The following example generates C2662:
 
 ```cpp
 // C2662_c.cpp

@@ -22,7 +22,7 @@ This error can be caused by invoking a non-**`const`** member function on a **`c
 
 ## Example
 
-The following sample generates C2663:
+The following example generates C2663:
 
 ```cpp
 // C2663.cpp

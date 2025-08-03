@@ -20,7 +20,7 @@ Possible causes:
 
 ## Example
 
-The following sample generates C2661:
+The following example generates C2661:
 
 ```cpp
 // C2661.cpp

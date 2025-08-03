@@ -20,7 +20,7 @@ A parameter of the overloaded function cannot be converted to the required type.
 
 ## Example
 
-The following sample generates C2665.
+The following example generates C2665.
 
 ```cpp
 // C2665.cpp

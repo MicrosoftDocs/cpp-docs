@@ -16,7 +16,7 @@ An identifier can be redeclared only at global scope.
 
 ## Example
 
-The following sample generates C2655:
+The following example generates C2655:
 
 ```cpp
 // C2655.cpp
