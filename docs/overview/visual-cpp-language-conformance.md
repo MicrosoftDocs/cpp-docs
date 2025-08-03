@@ -570,7 +570,11 @@ A group of papers listed together indicates a Standard feature along with one or
 **VS 2022 17.2** Supported in Visual Studio 2022 version 17.2.\
 **VS 2022 17.3** Supported in Visual Studio 2022 version 17.3.\
 **VS 2022 17.4** Supported in Visual Studio 2022 version 17.4.\
-**VS 2022 17.5** Supported in Visual Studio 2022 version 17.5.
+**VS 2022 17.5** Supported in Visual Studio 2022 version 17.5.\
+**VS 2022 17.10** Supported in Visual Studio 2022 version 17.10.\
+**VS 2022 17.12** Supported in Visual Studio 2022 version 17.12.\
+**VS 2022 17.13** Supported in Visual Studio 2022 version 17.13.\
+**VS 2022 17.14** Supported in Visual Studio 2022 version 17.14.
 
 ### Notes
 
