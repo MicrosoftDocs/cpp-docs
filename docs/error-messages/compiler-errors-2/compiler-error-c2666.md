@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2666"
 title: "Compiler Error C2666"
+description: "Learn more about: Compiler Error C2666"
 ms.date: 10/18/2021
 f1_keywords: ["C2666"]
 helpviewer_keywords: ["C2666"]
-ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
 ---
 # Compiler Error C2666
 

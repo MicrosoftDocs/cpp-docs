@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2659"
 title: "Compiler Error C2659"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2659"
+ms.date: 11/04/2016
 f1_keywords: ["C2659"]
 helpviewer_keywords: ["C2659"]
-ms.assetid: b0883600-4d27-4ca7-a931-8ca6bd48654d
 ---
 # Compiler Error C2659
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2668"
 title: "Compiler Error C2668"
+description: "Learn more about: Compiler Error C2668"
 ms.date: 05/03/2021
 f1_keywords: ["C2668"]
 helpviewer_keywords: ["C2668"]
-ms.assetid: 041e9627-1c76-420e-a653-cfc83f933bd3
 ---
 # Compiler Error C2668
 

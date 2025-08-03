@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2652"
 title: "Compiler Error C2652"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2652"
+ms.date: 11/04/2016
 f1_keywords: ["C2652"]
 helpviewer_keywords: ["C2652"]
-ms.assetid: 6e3d1a90-a989-4088-8afd-dc82f6a2d66f
 ---
 # Compiler Error C2652
 

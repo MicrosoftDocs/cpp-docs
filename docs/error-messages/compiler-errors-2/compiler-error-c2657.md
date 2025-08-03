@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2657"
 title: "Compiler Error C2657"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2657"
+ms.date: 11/04/2016
 f1_keywords: ["C2657"]
 helpviewer_keywords: ["C2657"]
-ms.assetid: f7cf29a9-684a-4605-9469-ecfee9ba4b03
 ---
 # Compiler Error C2657
 

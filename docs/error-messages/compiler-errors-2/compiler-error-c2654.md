@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2654"
 title: "Compiler Error C2654"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2654"
+ms.date: 11/04/2016
 f1_keywords: ["C2654"]
 helpviewer_keywords: ["C2654"]
-ms.assetid: ca7de1bd-576b-40bf-96fc-a91984827d20
 ---
 # Compiler Error C2654
 

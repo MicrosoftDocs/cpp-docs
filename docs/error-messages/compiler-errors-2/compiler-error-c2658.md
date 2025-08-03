@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2658"
 title: "Compiler Error C2658"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2658"
+ms.date: 11/04/2016
 f1_keywords: ["C2658"]
 helpviewer_keywords: ["C2658"]
-ms.assetid: 638368e8-7893-4a14-abec-13c768a9543a
 ---
 # Compiler Error C2658
 

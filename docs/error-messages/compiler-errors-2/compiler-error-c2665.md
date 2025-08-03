@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2665"
 title: "Compiler Error C2665"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2665"
+ms.date: 11/04/2016
 f1_keywords: ["C2665"]
 helpviewer_keywords: ["C2665"]
-ms.assetid: a7f99b61-2eae-4f2b-ba75-ea68fd1e8312
 ---
 # Compiler Error C2665
 

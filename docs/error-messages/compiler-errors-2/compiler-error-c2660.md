@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2660"
 title: "Compiler Error C2660"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2660"
+ms.date: 11/04/2016
 f1_keywords: ["C2660"]
 helpviewer_keywords: ["C2660"]
-ms.assetid: 2e01a1db-4f00-4df6-a04d-cb6f70a6922b
 ---
 # Compiler Error C2660
 

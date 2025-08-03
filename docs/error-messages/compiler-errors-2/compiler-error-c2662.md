@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2662"
 title: "Compiler Error C2662"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2662"
+ms.date: 11/04/2016
 f1_keywords: ["C2662"]
 helpviewer_keywords: ["C2662"]
-ms.assetid: e172c2a4-f29e-4034-8232-e7dc6f83689f
 ---
 # Compiler Error C2662
 
