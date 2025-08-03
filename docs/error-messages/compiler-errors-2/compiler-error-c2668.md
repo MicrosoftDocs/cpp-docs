@@ -10,6 +10,8 @@ ms.assetid: 041e9627-1c76-420e-a653-cfc83f933bd3
 
 > 'function' : ambiguous call to overloaded function
 
+## Remarks
+
 The specified overloaded function call couldn't be resolved. You may want to explicitly cast one or more of the actual parameters.
 
 You can also get this error through template use. If, in the same class, you have a regular member function and a templated member function with the same signature, the templated one must come first. This limitation remains in the current implementation of Visual C++.

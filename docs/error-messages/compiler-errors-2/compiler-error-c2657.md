@@ -10,9 +10,13 @@ ms.assetid: f7cf29a9-684a-4605-9469-ecfee9ba4b03
 
 > 'class::*' found at the start of a statement (did you forget to specify a type?)
 
+## Remarks
+
 The line began with a pointer-to-member identifier.
 
 This error can be caused by a missing type specifier in the declaration of a pointer to a member.
+
+## Example
 
 The following sample generates C2657:
 

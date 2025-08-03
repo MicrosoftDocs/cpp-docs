@@ -10,7 +10,11 @@ ms.assetid: beaefa6e-51b3-4df9-9150-960f3fbf40e0
 
 > 'identifier' : definition or redeclaration illegal in current scope
 
+## Remarks
+
 An identifier can be redeclared only at global scope.
+
+## Example
 
 The following sample generates C2655:
 

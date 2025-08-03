@@ -10,6 +10,8 @@ ms.assetid: f9cb8111-bcdc-484b-a863-2c42e15a0496
 
 > member function not allowed in anonymous union
 
+## Remarks
+
 [Anonymous unions](../../cpp/unions.md#anonymous_unions) cannot have member functions.
 
 ## Example

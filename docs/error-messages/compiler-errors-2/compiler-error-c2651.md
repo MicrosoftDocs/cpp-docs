@@ -10,4 +10,6 @@ ms.assetid: c3524a89-47d1-43f6-9e20-2cda15f9ae8a
 
 > 'data type' : left of 'operator' must be a class, struct or union
 
+## Remarks
+
 To use a template parameter as if it is a class, specialize the class template with a class instead of an integral type.

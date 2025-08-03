@@ -10,11 +10,15 @@ ms.assetid: 60021467-71cd-451b-9877-23840c69309f
 
 > 'function' : no overloaded function takes number parameters
 
+## Remarks
+
 Possible causes:
 
 1. Incorrect actual parameters in function call.
 
 1. Missing function declaration.
+
+## Example
 
 The following sample generates C2661:
 

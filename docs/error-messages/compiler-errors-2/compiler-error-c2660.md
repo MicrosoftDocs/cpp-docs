@@ -10,6 +10,8 @@ ms.assetid: 2e01a1db-4f00-4df6-a04d-cb6f70a6922b
 
 > 'function' : function does not take number parameters
 
+## Remarks
+
 The function is called with an incorrect number of parameters.
 
 C2660 can occur if you accidentally call a Windows API function rather than an MFC member function of the same name. To solve this problem:

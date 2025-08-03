@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2664"]
 
 > 'function' : cannot convert argument n from 'type1' to 'type2'
 
+## Remarks
+
 This parameter conversion problem might happen if an instance of a class is created and an implicit conversion is attempted on a constructor marked with the **`explicit`** keyword. For more information about explicit conversions, see [User-Defined Type Conversions](../../cpp/user-defined-type-conversions-cpp.md).
 
 If a temporary object is passed to a function that takes a reference to an object as a parameter, that reference must be a **`const`** reference.

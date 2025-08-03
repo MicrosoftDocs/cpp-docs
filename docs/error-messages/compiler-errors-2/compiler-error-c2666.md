@@ -10,6 +10,8 @@ ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
 
 > 'identifier' : number overloads have similar conversions
 
+## Remarks
+
 An overloaded function or operator is ambiguous.   Formal parameter lists may be too similar for the compiler to resolve the ambiguity.  To resolve this error, explicitly cast one or more of the actual parameters.
 
 ## Examples

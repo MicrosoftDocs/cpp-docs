@@ -10,6 +10,8 @@ ms.assetid: a7f99b61-2eae-4f2b-ba75-ea68fd1e8312
 
 > 'function' : none of the number1 overloads can convert parameter number2 from type 'type'
 
+## Remarks
+
 A parameter of the overloaded function cannot be converted to the required type.  Possible resolutions:
 
 - Supply a conversion operator.

@@ -10,6 +10,8 @@ ms.assetid: e172c2a4-f29e-4034-8232-e7dc6f83689f
 
 > 'function' : cannot convert 'this' pointer from 'type1' to 'type2'
 
+## Remarks
+
 The compiler could not convert the **`this`** pointer from `type1` to `type2`.
 
 This error can be caused by invoking a non-**`const`** member function on a **`const`** object.  Possible resolutions:
@@ -17,6 +19,8 @@ This error can be caused by invoking a non-**`const`** member function on a **`c
 - Remove the **`const`** from the object declaration.
 
 - Add **`const`** to the member function.
+
+## Examples
 
 The following sample generates C2662:
 
