@@ -8,7 +8,7 @@ ms.assetid: 1ec91186-0735-4904-859b-59da9af2d426
 ---
 # Compiler Error C2656
 
-'function' : function not allowed as a bit field
+> 'function' : function not allowed as a bit field
 
 A function is declared as a member of a bit field.
 

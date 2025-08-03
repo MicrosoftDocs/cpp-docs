@@ -8,7 +8,7 @@ ms.assetid: 3c91d9d1-18fa-4e0d-a9ba-984d38980ca3
 ---
 # Compiler Error C2667
 
-'function' : none of number overloads have a best conversion
+> 'function' : none of number overloads have a best conversion
 
 An overloaded function call is ambiguous and cannot be resolved.
 

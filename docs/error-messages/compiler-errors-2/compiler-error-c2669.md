@@ -8,7 +8,7 @@ ms.assetid: f9cb8111-bcdc-484b-a863-2c42e15a0496
 ---
 # Compiler Error C2669
 
-member function not allowed in anonymous union
+> member function not allowed in anonymous union
 
 [Anonymous unions](../../cpp/unions.md#anonymous_unions) cannot have member functions.
 

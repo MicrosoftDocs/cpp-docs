@@ -8,7 +8,7 @@ ms.assetid: 60021467-71cd-451b-9877-23840c69309f
 ---
 # Compiler Error C2661
 
-'function' : no overloaded function takes number parameters
+> 'function' : no overloaded function takes number parameters
 
 Possible causes:
 

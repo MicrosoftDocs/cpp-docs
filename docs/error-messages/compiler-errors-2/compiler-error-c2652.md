@@ -8,7 +8,7 @@ ms.assetid: 6e3d1a90-a989-4088-8afd-dc82f6a2d66f
 ---
 # Compiler Error C2652
 
-'identifier' : illegal copy constructor: first parameter must not be an 'identifier'
+> 'identifier' : illegal copy constructor: first parameter must not be an 'identifier'
 
 The first parameter in the copy constructor has the same type as the class, structure, or union for which it is defined. The first parameter can be a reference to the type but not the type itself.
 

@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2664"]
 ---
 # Compiler Error C2664
 
-'function' : cannot convert argument n from 'type1' to 'type2'
+> 'function' : cannot convert argument n from 'type1' to 'type2'
 
 This parameter conversion problem might happen if an instance of a class is created and an implicit conversion is attempted on a constructor marked with the **`explicit`** keyword. For more information about explicit conversions, see [User-Defined Type Conversions](../../cpp/user-defined-type-conversions-cpp.md).
 

@@ -8,7 +8,7 @@ ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
 ---
 # Compiler Error C2666
 
-'identifier' : number overloads have similar conversions
+> 'identifier' : number overloads have similar conversions
 
 An overloaded function or operator is ambiguous.   Formal parameter lists may be too similar for the compiler to resolve the ambiguity.  To resolve this error, explicitly cast one or more of the actual parameters.
 

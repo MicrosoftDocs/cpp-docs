@@ -8,7 +8,7 @@ ms.assetid: f7cf29a9-684a-4605-9469-ecfee9ba4b03
 ---
 # Compiler Error C2657
 
-'class::*' found at the start of a statement (did you forget to specify a type?)
+> 'class::*' found at the start of a statement (did you forget to specify a type?)
 
 The line began with a pointer-to-member identifier.
 

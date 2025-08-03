@@ -8,7 +8,7 @@ ms.assetid: 1e93e368-fd52-42bf-9908-9b6df467c8c9
 ---
 # Compiler Error C2663
 
-'function' : number overloads have no legal conversions for 'this' pointer
+> 'function' : number overloads have no legal conversions for 'this' pointer
 
 The compiler could not convert **`this`** to any of the overloaded versions of the member function.
 

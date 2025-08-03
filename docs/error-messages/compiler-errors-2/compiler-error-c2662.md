@@ -8,7 +8,7 @@ ms.assetid: e172c2a4-f29e-4034-8232-e7dc6f83689f
 ---
 # Compiler Error C2662
 
-'function' : cannot convert 'this' pointer from 'type1' to 'type2'
+> 'function' : cannot convert 'this' pointer from 'type1' to 'type2'
 
 The compiler could not convert the **`this`** pointer from `type1` to `type2`.
 

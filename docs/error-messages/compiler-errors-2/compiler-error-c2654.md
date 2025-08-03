@@ -8,7 +8,7 @@ ms.assetid: ca7de1bd-576b-40bf-96fc-a91984827d20
 ---
 # Compiler Error C2654
 
-'identifier' : attempt to access member outside a member function
+> 'identifier' : attempt to access member outside a member function
 
 A member is accessed in a declaration. Member data can be accessed only in member functions.
 

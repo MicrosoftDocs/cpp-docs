@@ -8,7 +8,7 @@ ms.assetid: 2e01a1db-4f00-4df6-a04d-cb6f70a6922b
 ---
 # Compiler Error C2660
 
-'function' : function does not take number parameters
+> 'function' : function does not take number parameters
 
 The function is called with an incorrect number of parameters.
 

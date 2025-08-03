@@ -8,7 +8,7 @@ ms.assetid: 4b3b74c7-a750-4b0d-abd3-216d1234461f
 ---
 # Compiler Error C2670
 
-'identifier' : the function template cannot convert parameter number from type 'type'
+> 'identifier' : the function template cannot convert parameter number from type 'type'
 
 A parameter could not be converted to the required type.
 
