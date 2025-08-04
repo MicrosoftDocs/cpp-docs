@@ -117,7 +117,7 @@ Download Redistributable files for other languages and architectures from:
 
 - Redistributable files for X86, X64, and IA64 architectures are available from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update](https://www.microsoft.com/download/details.aspx?id=26347).
 
-## See Also
+## See also
 
 - [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
 - [How to audit Visual C++ Runtime version usage](redist-version-auditing.md)

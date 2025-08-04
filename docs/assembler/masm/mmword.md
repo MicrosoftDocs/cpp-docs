@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: MMWORD"
 title: "MMWORD"
-ms.date: "12/17/2019"
+description: "Learn more about: MMWORD"
+ms.date: 12/17/2019
 f1_keywords: ["MMWORD"]
 helpviewer_keywords: ["MMWORD directive"]
-ms.assetid: b4c5a104-9078-4fb4-afc3-d1e63abe562a
 ---
 # MMWORD
 
@@ -32,6 +31,6 @@ While both instructions work on 64-bit operands, **QWORD** is the type for 64-bi
     movq     mm0, mmword ptr [ebx]
 ```
 
-## See Also
+## See also
 
 [MASM BNF Grammar](masm-bnf-grammar.md)

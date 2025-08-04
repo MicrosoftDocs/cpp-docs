@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /PROFILE (Performance Tools Profiler)"
 title: "/PROFILE (Performance Tools Profiler)"
+description: "Learn more about: /PROFILE (Performance Tools Profiler)"
 ms.date: 10/13/2021
 f1_keywords: ["VC.Project.VCLinkerTool.Profile"]
 helpviewer_keywords: ["-PROFILE linker option", "/PROFILE linker option"]
@@ -57,7 +57,7 @@ Because a **CMake** project doesn't have the usual **Property Pages** support, t
 
 1. Rebuild your solution.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)\
 [MSVC linker options](linker-options.md)
