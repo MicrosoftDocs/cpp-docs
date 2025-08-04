@@ -16,7 +16,7 @@ To use the operator, you must overload it for the specified type or define a con
 
 ## Example
 
-The following sample generates C2679:
+The following example generates C2679:
 
 ```cpp
 // C2679.cpp

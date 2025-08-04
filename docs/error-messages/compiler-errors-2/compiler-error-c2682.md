@@ -18,7 +18,7 @@ You can use the **`const_cast`** operator to remove attributes such as **`const`
 
 ## Examples
 
-The following sample generates C2682:
+The following example generates C2682:
 
 ```cpp
 // C2682.cpp
@@ -30,7 +30,7 @@ void g(A* pa) {
 }
 ```
 
-The following sample generates C2682:
+The following example generates C2682:
 
 ```cpp
 // C2682b.cpp

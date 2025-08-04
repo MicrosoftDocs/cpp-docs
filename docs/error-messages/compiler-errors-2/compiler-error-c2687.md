@@ -16,7 +16,7 @@ For a type to be part of an exception declaration, it must be defined and not vo
 
 ## Example
 
-The following sample generates C2687:
+The following example generates C2687:
 
 ```cpp
 // C2687.cpp

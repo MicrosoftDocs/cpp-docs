@@ -16,7 +16,7 @@ A global function tried to access **`this`**.
 
 ## Example
 
-The following sample generates C2673:
+The following example generates C2673:
 
 ```cpp
 // C2673.cpp

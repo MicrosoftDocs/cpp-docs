@@ -18,7 +18,7 @@ To resolve this error, either define your functions so that they do not use vari
 
 ## Example
 
-The following sample generates C2688:
+The following example generates C2688:
 
 ```cpp
 // C2688.cpp

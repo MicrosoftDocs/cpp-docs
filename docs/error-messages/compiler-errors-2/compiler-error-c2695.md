@@ -16,7 +16,7 @@ The signature of a function in a derived class cannot override a function in a b
 
 ## Example
 
-The following sample generates C2695:
+The following example generates C2695:
 
 ```cpp
 // C2695.cpp

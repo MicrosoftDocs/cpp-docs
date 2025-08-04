@@ -16,7 +16,7 @@ C2675 can also occur when using a unary operator, and the type does not define t
 
 ## Example
 
-The following sample generates C2675.
+The following example generates C2675.
 
 ```cpp
 // C2675.cpp

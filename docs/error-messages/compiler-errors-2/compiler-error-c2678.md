@@ -18,7 +18,7 @@ C2678 can occur when the left-hand operand is const-qualified but the operator i
 
 ## Examples
 
-The following sample generates C2678 and shows how to fix it:
+The following example generates C2678 and shows how to fix it:
 
 ```cpp
 // C2678a.cpp
@@ -44,7 +44,7 @@ int main() {
 
 C2678 can also occur if you do not pin a native member before calling a member function on it.
 
-The following sample generates C2678 and shows how to fix it.
+The following example generates C2678 and shows how to fix it.
 
 ```cpp
 // C2678.cpp

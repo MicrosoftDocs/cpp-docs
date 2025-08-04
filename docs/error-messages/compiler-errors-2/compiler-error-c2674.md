@@ -16,7 +16,7 @@ A generic was declared incorrectly. For more information, see [Generics](../../e
 
 ## Example
 
-The following sample generates C2674.
+The following example generates C2674.
 
 ```cpp
 // C2674.cpp

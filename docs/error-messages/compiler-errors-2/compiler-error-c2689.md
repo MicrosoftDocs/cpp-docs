@@ -16,7 +16,7 @@ You can declare but not define a friend function in a local class.
 
 ## Example
 
-The following sample generates C2689:
+The following example generates C2689:
 
 ```cpp
 // C2689.cpp

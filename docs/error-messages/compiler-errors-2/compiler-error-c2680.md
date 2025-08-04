@@ -16,7 +16,7 @@ A casting operator tried to convert to a type that is not a pointer or reference
 
 ## Examples
 
-The following sample generates C2680:
+The following example generates C2680:
 
 ```cpp
 // C2680.cpp

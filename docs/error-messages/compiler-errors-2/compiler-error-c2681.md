@@ -16,7 +16,7 @@ A casting operator tried to convert from an invalid type. For example, if you us
 
 ## Example
 
-The following sample generates C2681:
+The following example generates C2681:
 
 ```cpp
 // C2681.cpp

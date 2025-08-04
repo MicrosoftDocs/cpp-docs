@@ -16,7 +16,7 @@ A virtual function was overridden, but under [/Za](../../build/reference/za-ze-d
 
 ## Example
 
-The following sample generates C2694:
+The following example generates C2694:
 
 ```cpp
 // C2694.cpp

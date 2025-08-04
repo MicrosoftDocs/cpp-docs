@@ -16,7 +16,7 @@ The type of a managed or WinRT array element can be a value type or a reference 
 
 ## Example
 
-The following sample generates C2691:
+The following example generates C2691:
 
 ```cpp
 // C2691a.cpp

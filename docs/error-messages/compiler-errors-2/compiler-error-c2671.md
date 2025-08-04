@@ -16,7 +16,7 @@ A **`static`** member function tried to access **`this`**.
 
 ## Example
 
-The following sample generates C2671:
+The following example generates C2671:
 
 ```cpp
 // C2671.cpp
