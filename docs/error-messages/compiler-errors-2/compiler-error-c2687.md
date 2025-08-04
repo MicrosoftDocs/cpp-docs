@@ -8,7 +8,7 @@ ms.assetid: 1d24b24a-cd0f-41cc-975c-b08dcfb7f402
 ---
 # Compiler Error C2687
 
-'type' : exception-declaration cannot be 'void' or denote an incomplete type or pointer or reference to an incomplete type
+> 'type' : exception-declaration cannot be 'void' or denote an incomplete type or pointer or reference to an incomplete type
 
 For a type to be part of an exception declaration, it must be defined and not void.
 

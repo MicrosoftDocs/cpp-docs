@@ -8,6 +8,6 @@ ms.assetid: a231eb86-bdae-4b37-a606-06854f47929f
 ---
 # Compiler Error C2700
 
-'identifier' : cannot be thrown (use /W4 for more info)
+> 'identifier' : cannot be thrown (use /W4 for more info)
 
 The object cannot be thrown. Compile with [/W4](../../build/reference/compiler-option-warning-level.md) for more diagnostic information.

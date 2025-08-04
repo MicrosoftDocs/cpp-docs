@@ -8,7 +8,7 @@ ms.assetid: db605e4f-601b-4d05-92a1-c43ca24de08d
 ---
 # Compiler Error C2683
 
-'cast' : 'type' is not a polymorphic type
+> 'cast' : 'type' is not a polymorphic type
 
 You cannot use [dynamic_cast](../../cpp/dynamic-cast-operator.md) to convert from a non-polymorphic class (a class with no virtual functions).
 

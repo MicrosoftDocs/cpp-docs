@@ -8,7 +8,7 @@ ms.assetid: 6c6eb7df-1230-4346-9a73-abf14c20785d
 ---
 # Compiler Error C2696
 
-Cannot create a temporary object of a managed type 'type'
+> Cannot create a temporary object of a managed type 'type'
 
 References to **`const`** in an unmanaged program cause the compiler to call the constructor and create a temporary object on the stack. However, a managed class can never be created on the stack.
 

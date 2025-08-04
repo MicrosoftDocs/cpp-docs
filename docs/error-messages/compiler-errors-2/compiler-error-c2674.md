@@ -8,7 +8,7 @@ ms.assetid: 7cbd70d8-d992-44d7-a5cb-dd8cf9c759d2
 ---
 # Compiler Error C2674
 
-a generic declaration is not allowed in this context
+> a generic declaration is not allowed in this context
 
 A generic was declared incorrectly. For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 

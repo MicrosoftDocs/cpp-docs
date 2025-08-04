@@ -8,7 +8,7 @@ ms.assetid: 8dc2cec2-67ae-4e16-8c0c-374425aca8bc
 ---
 # Compiler Error C2694
 
-'override': overriding virtual function has less restrictive exception specification than base class virtual member function 'base'
+> 'override': overriding virtual function has less restrictive exception specification than base class virtual member function 'base'
 
 A virtual function was overridden, but under [/Za](../../build/reference/za-ze-disable-language-extensions.md), the overriding function had a less restrictive [exception specification](../../cpp/exception-specifications-throw-cpp.md).
 

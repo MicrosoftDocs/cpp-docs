@@ -8,7 +8,7 @@ ms.assetid: 1f0a4e26-b429-44f5-9f94-cb66441220c8
 ---
 # Compiler Error C2678
 
-binary 'operator' : no operator defined which takes a left-hand operand of type 'type' (or there is no acceptable conversion)
+> binary 'operator' : no operator defined which takes a left-hand operand of type 'type' (or there is no acceptable conversion)
 
 To use the operator, you must overload it for the specified type or define a conversion to a type for which the operator is defined.
 

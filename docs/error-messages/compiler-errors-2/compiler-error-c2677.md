@@ -8,7 +8,7 @@ ms.assetid: 76bc0b65-f52a-45a6-b6d6-0555f89da9a8
 ---
 # Compiler Error C2677
 
-binary 'operator' : no global operator found which takes type 'type' (or there is no acceptable conversion)
+> binary 'operator' : no global operator found which takes type 'type' (or there is no acceptable conversion)
 
 To use the operator, you must overload it for the specified type or define a conversion to a type for which the operator is defined.
 

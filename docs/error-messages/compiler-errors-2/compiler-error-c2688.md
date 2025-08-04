@@ -8,7 +8,7 @@ ms.assetid: 168c9e9d-8f65-4664-af86-db71d3e6ee46
 ---
 # Compiler Error C2688
 
-'C2::fgrv' : covariant returns with multiple or virtual inheritance not supported for varargs functions
+> 'C2::fgrv' : covariant returns with multiple or virtual inheritance not supported for varargs functions
 
 Covariant return types are not supported in Visual C++ when a function contains variable arguments.
 

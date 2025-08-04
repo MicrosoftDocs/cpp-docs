@@ -8,7 +8,7 @@ ms.assetid: b5216fba-524d-4194-9168-26e9dc5210ce
 ---
 # Compiler Error C2689
 
-'function' : a friend function cannot be defined within a local class
+> 'function' : a friend function cannot be defined within a local class
 
 You can declare but not define a friend function in a local class.
 

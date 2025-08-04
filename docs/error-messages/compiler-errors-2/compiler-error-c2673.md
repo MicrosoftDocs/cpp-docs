@@ -8,7 +8,7 @@ ms.assetid: 780230c0-619b-4a78-b01d-ff5886306741
 ---
 # Compiler Error C2673
 
-'function' : global functions do not have 'this' pointers
+> 'function' : global functions do not have 'this' pointers
 
 A global function tried to access **`this`**.
 

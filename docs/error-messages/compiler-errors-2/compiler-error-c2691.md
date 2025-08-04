@@ -8,7 +8,7 @@ ms.assetid: 6925f8f3-ea60-4909-91e6-b781492c645d
 ---
 # Compiler Error C2691
 
-'data type' : a managed or WinRTarray cannot have this element type
+> 'data type' : a managed or WinRTarray cannot have this element type
 
 The type of a managed or WinRT array element can be a value type or a reference type.
 
