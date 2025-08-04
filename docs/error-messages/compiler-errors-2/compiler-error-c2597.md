@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2597"
 title: "Compiler Error C2597"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2597"
+ms.date: 11/04/2016
 f1_keywords: ["C2597"]
 helpviewer_keywords: ["C2597"]
-ms.assetid: 2e48127d-e3ff-4a40-8156-2863e45b1a38
 ---
 # Compiler Error C2597
 
-illegal reference to non-static member 'identifier'
+> illegal reference to non-static member 'identifier'
+
+## Remarks
 
 Possible causes:
 
@@ -18,7 +19,9 @@ Possible causes:
 
 1. A member access operator refers to a nonmember function.
 
-1. The following sample generates C2597 and shows how to fix it:
+## Example
+
+1. The following example generates C2597 and shows how to fix it:
 
 ```cpp
 // C2597.cpp
