@@ -150,7 +150,7 @@ When used with no arguments, *`vcvarsall.bat`* configures the environment variab
 
 > **`vcvarsall.bat`** [*`architecture`*] [*`platform_type`*] [*`winsdk_version`*] [**`-vcvars_ver=`***`vcversion`*] [*`spectre_mode`*]
 
-*`architecture`*<br/>
+*`architecture`*\
 This optional argument specifies the host and target architecture to use. If *architecture* isn't specified, the default build environment is used. These arguments are supported:
 
 | *`architecture`* | Compiler | Host computer architecture | Build output (target) architecture |
@@ -164,13 +164,13 @@ This optional argument specifies the host and target architecture to use. If *ar
 | `amd64_arm` or `x64_arm` | ARM on x64 cross | x64 | ARM |
 | `amd64_arm64` or `x64_arm64` | ARM64 on x64 cross | x64 | ARM64 |
 
-*`platform_type`*<br/>
+*`platform_type`*\
 This optional argument allows you to specify **`store`** or **`uwp`** as the platform type. By default, the environment is set to build desktop or console apps.
 
-*`winsdk_version`*<br/>
+*`winsdk_version`*\
 Optionally specifies the version of the Windows SDK to use. By default, the latest installed Windows SDK is used. To specify the Windows SDK version, you can use a full Windows SDK number such as **`10.0.10240.0`**, or specify **`8.1`** to use the Windows 8.1 SDK.
 
-*`vcversion`*<br/>
+*`vcversion`*\
 Optionally specifies the Visual Studio compiler toolset to use. By default, the environment is set to use the current Visual Studio compiler toolset.
 
 ::: moniker range=">= msvc-160"
@@ -249,10 +249,10 @@ Adjust the path to reflect your Visual Studio installation directory. The vcvars
 
 To build a C/C++ project at a command prompt, Visual Studio provides these command-line tools:
 
-[`CL`](reference/compiling-a-c-cpp-program.md)<br/>
+[`CL`](reference/compiling-a-c-cpp-program.md)\
 Use the compiler (cl.exe) to compile and link source code files into apps, libraries, and DLLs.
 
-[`Link`](reference/linking.md)<br/>
+[`Link`](reference/linking.md)\
 Use the linker (link.exe) to link compiled object files and libraries into apps and DLLs.
 
 When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages. You can also download and use the offline help files. To use the search in Microsoft Learn, enter your query in the search box at the top of any article.
@@ -280,36 +280,36 @@ Use NMAKE (nmake.exe) to build C++ projects by using a traditional makefile.
 
 These articles show how to build apps on the command line, and describe how to customize the command-line build environment. Some show how to use 64-bit toolsets, and target x86, x64, ARM, and ARM64 platforms. They also describe use of the command-line build tools MSBuild and NMAKE.
 
-[Walkthrough: Compiling a native C++ program on the command line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
+[Walkthrough: Compiling a native C++ program on the command line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)\
 Gives an example that shows how to create and compile a C++ program on the command line.
 
-[Walkthrough: Compile a C program on the command line](walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
+[Walkthrough: Compile a C program on the command line](walkthrough-compile-a-c-program-on-the-command-line.md)\
 Describes how to compile a program written in the C programming language.
 
-[Walkthrough: Compiling a C++/CLI program on the command line](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)<br/>
+[Walkthrough: Compiling a C++/CLI program on the command line](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)\
 Describes how to create and compile a C++/CLI program that uses the .NET Framework.
 
-[Walkthrough: Compiling a C++/CX program on the command line](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
+[Walkthrough: Compiling a C++/CX program on the command line](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)\
 Describes how to create and compile a C++/CX program that uses the Windows Runtime.
 
-[NMAKE reference](reference/nmake-reference.md)<br/>
+[NMAKE reference](reference/nmake-reference.md)\
 Provides links to articles that describe the Microsoft Program Maintenance Utility (NMAKE.EXE).
 
-[MSBuild on the command line - C++](msbuild-visual-cpp.md)<br/>
+[MSBuild on the command line - C++](msbuild-visual-cpp.md)\
 Provides links to articles that discuss how to use msbuild.exe from the command line.
 
 ## Related sections
 
-[/MD, /MT, /LD (Use run-time library)](reference/md-mt-ld-use-run-time-library.md)<br/>
+[/MD, /MT, /LD (Use run-time library)](reference/md-mt-ld-use-run-time-library.md)\
 Describes how to use these compiler options to use a Debug or Release run-time library.
 
-[C/C++ compiler options](reference/compiler-options.md)<br/>
+[C/C++ compiler options](reference/compiler-options.md)\
 Provides links to articles that discuss the C and C++ compiler options and CL.exe.
 
-[MSVC linker options](reference/linker-options.md)<br/>
+[MSVC linker options](reference/linker-options.md)\
 Provides links to articles that discuss the linker options and LINK.exe.
 
-[Additional MSVC build tools](reference/c-cpp-build-tools.md)<br/>
+[Additional MSVC build tools](reference/c-cpp-build-tools.md)\
 Provides links to the C/C++ build tools that are included in Visual Studio.
 
 ## See also
