@@ -10,7 +10,11 @@ ms.assetid: d6f7129e-dd17-4661-b680-18d6b925b1cc
 
 > 'type' : invalid target type for name
 
+## Remarks
+
 A casting operator tried to convert to a type that is not a pointer or reference. The [dynamic_cast](../../cpp/dynamic-cast-operator.md) operator can be used only for pointers or references.
+
+## Examples
 
 The following sample generates C2680:
 

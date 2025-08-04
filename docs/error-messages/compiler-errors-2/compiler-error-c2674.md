@@ -10,6 +10,8 @@ ms.assetid: 7cbd70d8-d992-44d7-a5cb-dd8cf9c759d2
 
 > a generic declaration is not allowed in this context
 
+## Remarks
+
 A generic was declared incorrectly. For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example

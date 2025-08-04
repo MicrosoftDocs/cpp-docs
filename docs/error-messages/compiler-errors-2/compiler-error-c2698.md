@@ -10,7 +10,11 @@ ms.assetid: 3ebfe395-c20b-4c56-9980-ca9ed8653382
 
 > the using-declaration for 'declaration 1' cannot co-exist with the existing using-declaration for 'declaration 2'
 
+## Remarks
+
 Once you have a [using declaration](../../cpp/using-declaration.md) for a data member, any using declaration in the same scope that uses the same name is not permitted, as only functions can be overloaded.
+
+## Example
 
 The following sample generates C2698:
 

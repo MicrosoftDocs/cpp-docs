@@ -10,7 +10,11 @@ ms.assetid: 780230c0-619b-4a78-b01d-ff5886306741
 
 > 'function' : global functions do not have 'this' pointers
 
+## Remarks
+
 A global function tried to access **`this`**.
+
+## Example
 
 The following sample generates C2673:
 

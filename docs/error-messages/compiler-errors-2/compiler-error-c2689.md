@@ -10,7 +10,11 @@ ms.assetid: b5216fba-524d-4194-9168-26e9dc5210ce
 
 > 'function' : a friend function cannot be defined within a local class
 
+## Remarks
+
 You can declare but not define a friend function in a local class.
+
+## Example
 
 The following sample generates C2689:
 

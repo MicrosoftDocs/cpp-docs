@@ -10,7 +10,11 @@ ms.assetid: 76bc0b65-f52a-45a6-b6d6-0555f89da9a8
 
 > binary 'operator' : no global operator found which takes type 'type' (or there is no acceptable conversion)
 
+## Remarks
+
 To use the operator, you must overload it for the specified type or define a conversion to a type for which the operator is defined.
+
+## Example
 
 The following sample generates C2677:
 

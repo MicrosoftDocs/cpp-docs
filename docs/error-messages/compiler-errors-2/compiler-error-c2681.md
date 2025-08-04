@@ -10,7 +10,11 @@ ms.assetid: eb42da6d-8d2c-43fd-986b-e73e2b004885
 
 > 'type' : invalid expression type for name
 
+## Remarks
+
 A casting operator tried to convert from an invalid type. For example, if you use the [dynamic_cast](../../cpp/dynamic-cast-operator.md) operator to convert an expression to a pointer type, the source expression must be a pointer.
+
+## Example
 
 The following sample generates C2681:
 

@@ -10,7 +10,11 @@ ms.assetid: 6925f8f3-ea60-4909-91e6-b781492c645d
 
 > 'data type' : a managed or WinRTarray cannot have this element type
 
+## Remarks
+
 The type of a managed or WinRT array element can be a value type or a reference type.
+
+## Example
 
 The following sample generates C2691:
 

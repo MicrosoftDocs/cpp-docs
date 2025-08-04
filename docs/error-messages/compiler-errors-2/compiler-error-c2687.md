@@ -10,7 +10,11 @@ ms.assetid: 1d24b24a-cd0f-41cc-975c-b08dcfb7f402
 
 > 'type' : exception-declaration cannot be 'void' or denote an incomplete type or pointer or reference to an incomplete type
 
+## Remarks
+
 For a type to be part of an exception declaration, it must be defined and not void.
+
+## Example
 
 The following sample generates C2687:
 

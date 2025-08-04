@@ -10,9 +10,13 @@ ms.assetid: 168c9e9d-8f65-4664-af86-db71d3e6ee46
 
 > 'C2::fgrv' : covariant returns with multiple or virtual inheritance not supported for varargs functions
 
+## Remarks
+
 Covariant return types are not supported in Visual C++ when a function contains variable arguments.
 
 To resolve this error, either define your functions so that they do not use variable arguments or make the return values the same for all virtual functions.
+
+## Example
 
 The following sample generates C2688:
 

@@ -10,6 +10,8 @@ ms.assetid: 1f0a4e26-b429-44f5-9f94-cb66441220c8
 
 > binary 'operator' : no operator defined which takes a left-hand operand of type 'type' (or there is no acceptable conversion)
 
+## Remarks
+
 To use the operator, you must overload it for the specified type or define a conversion to a type for which the operator is defined.
 
 C2678 can occur when the left-hand operand is const-qualified but the operator is defined to take a non-const argument.

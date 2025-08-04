@@ -10,6 +10,8 @@ ms.assetid: 7e86338a-2d4b-40fe-9dd2-ac6886f3f31a
 
 > '*function*': no matching overloaded function found
 
+## Remarks
+
 The compiler could not find an overloaded function that matches the specified function. No function was found that takes matching parameters, or no matching function has the required accessibility in context.
 
 When used by certain standard library containers or algorithms, your types must provide accessible members or friend functions that satisfy the requirements of the container or algorithm. For example, your iterator types should derive from `std::iterator<>`. Comparison operations or use of other operators on container element types may require the type be considered as both a left-hand and a right-hand operand. Use of the type as a right-hand operand can require implementation of the operator as a non-member function of the type.
