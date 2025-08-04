@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2078"
 title: "Compiler Error C2078"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2078"
+ms.date: 11/04/2016
 f1_keywords: ["C2078"]
 helpviewer_keywords: ["C2078"]
-ms.assetid: 9bead850-4123-46cf-a634-5c77ba974b2b
 ---
 # Compiler Error C2078
 
-too many initializers
+> too many initializers
+
+## Remarks
 
 The number of initializers exceeds the number of objects to be initialized.
 
 The compiler can deduce the correct assignment of initializers to objects and inner objects when inner braces are elided from the initializer list. Complete bracing also eliminates ambiguity and results in correct assignment. Partial bracing can cause C2078 because of ambiguity in the assignment of initializers to objects.
 
-The following sample generates C2078 and shows how to fix it:
+## Example
+
+The following example generates C2078 and shows how to fix it:
 
 ```cpp
 // C2078.cpp

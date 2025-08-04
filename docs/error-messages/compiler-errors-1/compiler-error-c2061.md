@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2061"
 title: "Compiler Error C2061"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2061"
+ms.date: 11/04/2016
 f1_keywords: ["C2061"]
 helpviewer_keywords: ["C2061"]
-ms.assetid: b0e61c0c-a205-4820-b9aa-301d6c6fe6eb
 ---
 # Compiler Error C2061
 
-syntax error : identifier 'identifier'
+> syntax error : identifier 'identifier'
+
+## Remarks
 
 The compiler found an identifier where it wasn't expected. Make sure that `identifier` is declared before you use it.
 
@@ -16,7 +17,9 @@ An initializer may be enclosed by parentheses. To avoid this problem, enclose th
 
 This error could also be caused when the compiler detects an expression as a class template argument; use [typename](../../cpp/typename.md) to tell the compiler it is a type, as shown in the following example:
 
-The following sample generates C2061:
+## Examples
+
+The following example generates C2061:
 
 ```cpp
 // C2061.cpp
