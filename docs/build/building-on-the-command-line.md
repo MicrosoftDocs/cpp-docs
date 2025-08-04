@@ -89,7 +89,7 @@ If you prefer to set the build environment in an existing command prompt window,
 
 ::: moniker range=">= msvc-170"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit system is in *`\Program Files\Microsoft Visual Studio\2022\<edition>`*. The *`<edition>`* may be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2022, the typical installation location on a 64-bit system is in *`\Program Files\Microsoft Visual Studio\2022\<edition>`*. The *`<edition>`* may be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
 
 ::: moniker-end
 ::: moniker range="= msvc-160"
