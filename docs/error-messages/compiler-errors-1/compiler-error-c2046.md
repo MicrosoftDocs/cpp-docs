@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2046"
 title: "Compiler Error C2046"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2046"
+ms.date: 11/04/2016
 f1_keywords: ["C2046"]
 helpviewer_keywords: ["C2046"]
-ms.assetid: f0c8f9dd-dbd7-4c4a-8838-fde54208ec71
 ---
 # Compiler Error C2046
 
-illegal case
+> illegal case
+
+## Remarks
 
 The keyword `case` can appear only in a **`switch`** statement.
 
-The following sample generates C2046:
+## Example
+
+The following example generates C2046:
 
 ```cpp
 // C2046.cpp
