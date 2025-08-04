@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2679"
 title: "Compiler Error C2679"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2679"
+ms.date: 11/04/2016
 f1_keywords: ["C2679"]
 helpviewer_keywords: ["C2679"]
-ms.assetid: 1a5f9d00-9190-4aa6-bc72-949f68ec136f
 ---
 # Compiler Error C2679
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2674"
 title: "Compiler Error C2674"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2674"
+ms.date: 11/04/2016
 f1_keywords: ["C2674"]
 helpviewer_keywords: ["C2674"]
-ms.assetid: 7cbd70d8-d992-44d7-a5cb-dd8cf9c759d2
 ---
 # Compiler Error C2674
 

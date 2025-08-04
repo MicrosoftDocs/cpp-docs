@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2688"
 title: "Compiler Error C2688"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2688"
+ms.date: 11/04/2016
 f1_keywords: ["C2688"]
 helpviewer_keywords: ["C2688"]
-ms.assetid: 168c9e9d-8f65-4664-af86-db71d3e6ee46
 ---
 # Compiler Error C2688
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2680"
 title: "Compiler Error C2680"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2680"
+ms.date: 11/04/2016
 f1_keywords: ["C2680"]
 helpviewer_keywords: ["C2680"]
-ms.assetid: d6f7129e-dd17-4661-b680-18d6b925b1cc
 ---
 # Compiler Error C2680
 

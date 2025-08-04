@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2677"
 title: "Compiler Error C2677"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2677"
+ms.date: 11/04/2016
 f1_keywords: ["C2677"]
 helpviewer_keywords: ["C2677"]
-ms.assetid: 76bc0b65-f52a-45a6-b6d6-0555f89da9a8
 ---
 # Compiler Error C2677
 

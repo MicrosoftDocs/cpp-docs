@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2698"
 title: "Compiler Error C2698"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2698"
+ms.date: 11/04/2016
 f1_keywords: ["C2698"]
 helpviewer_keywords: ["C2698"]
-ms.assetid: 3ebfe395-c20b-4c56-9980-ca9ed8653382
 ---
 # Compiler Error C2698
 

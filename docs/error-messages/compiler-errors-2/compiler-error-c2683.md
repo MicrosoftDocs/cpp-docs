@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2683"
 title: "Compiler Error C2683"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2683"
+ms.date: 11/04/2016
 f1_keywords: ["C2683"]
 helpviewer_keywords: ["C2683"]
-ms.assetid: db605e4f-601b-4d05-92a1-c43ca24de08d
 ---
 # Compiler Error C2683
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2687"
 title: "Compiler Error C2687"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2687"
+ms.date: 11/04/2016
 f1_keywords: ["C2687"]
 helpviewer_keywords: ["C2687"]
-ms.assetid: 1d24b24a-cd0f-41cc-975c-b08dcfb7f402
 ---
 # Compiler Error C2687
 

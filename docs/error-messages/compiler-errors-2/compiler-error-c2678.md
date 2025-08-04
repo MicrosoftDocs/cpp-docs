@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2678"
 title: "Compiler Error C2678"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2678"
+ms.date: 11/04/2016
 f1_keywords: ["C2678"]
 helpviewer_keywords: ["C2678"]
-ms.assetid: 1f0a4e26-b429-44f5-9f94-cb66441220c8
 ---
 # Compiler Error C2678
 
