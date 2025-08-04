@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2668"
 title: "Compiler Error C2668"
+description: "Learn more about: Compiler Error C2668"
 ms.date: 05/03/2021
 f1_keywords: ["C2668"]
 helpviewer_keywords: ["C2668"]
-ms.assetid: 041e9627-1c76-420e-a653-cfc83f933bd3
 ---
 # Compiler Error C2668
 
 > 'function' : ambiguous call to overloaded function
+
+## Remarks
 
 The specified overloaded function call couldn't be resolved. You may want to explicitly cast one or more of the actual parameters.
 
@@ -16,7 +17,7 @@ You can also get this error through template use. If, in the same class, you hav
 
 ## Examples
 
-The following sample generates C2668:
+The following example generates C2668:
 
 ```cpp
 // C2668.cpp
