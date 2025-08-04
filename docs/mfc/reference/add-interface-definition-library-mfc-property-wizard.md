@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Use the Microsoft Visual Studio Add IDL MFC property wizard to add a property to an IDL interface in your MFC or ATL project"
 title: "Add an IDL MFC property"
-ms.date: "04/14/2022"
+description: "Learn more about: Use the Microsoft Visual Studio Add IDL MFC property wizard to add a property to an IDL interface in your MFC or ATL project"
+ms.date: 04/14/2022
 f1_keywords: ["vc.codewiz.prop.overview"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "add property wizard", "stock properties, about stock properties", "stock properties"]
 ms.custom: devdivchpfy22
@@ -167,7 +167,7 @@ If you're adding a property to an MFC dispinterface, you can choose one of the f
 |`ReadyState`|Returns or sets the control's `ReadyState` property.<br/>A control can be uninitialized, initialized, loading, interactive, or complete.<br/>For more information, see [READYSTATE](/previous-versions/aa768362\(v=vs.85\)) in the *Internet SDK*.|
 |`Text`|Returns or sets the text contained in a control.<br/>Has no **Member variable** implementation type.|
 
-## See Also
+## See also
 
 [Add Property](../../ide/adding-a-property-visual-cpp.md)
 

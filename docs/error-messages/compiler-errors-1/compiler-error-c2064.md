@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2064"
 title: "Compiler Error C2064"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2064"
+ms.date: 11/04/2016
 f1_keywords: ["C2064"]
 helpviewer_keywords: ["C2064"]
-ms.assetid: 6cda05da-f437-4f50-9813-ae69538713a3
 ---
 # Compiler Error C2064
 
-term does not evaluate to a function taking N arguments
+> term does not evaluate to a function taking N arguments
+
+## Remarks
 
 A call is made to a function through an expression. The expression does not evaluate to a pointer to a function that takes the specified number of arguments.
 
-In this example, the code attempts to call non-functions as functions. The following sample generates C2064:
+## Examples
+
+In this example, the code attempts to call non-functions as functions. The following example generates C2064:
 
 ```cpp
 // C2064.cpp
@@ -24,7 +27,7 @@ void func() {
 }
 ```
 
-You must call pointers to non-static member functions from the context of an object instance. The following sample generates C2064, and shows how to fix it:
+You must call pointers to non-static member functions from the context of an object instance. The following example generates C2064, and shows how to fix it:
 
 ```cpp
 // C2064b.cpp
@@ -43,7 +46,7 @@ int main() {
 }
 ```
 
-Within a class, member function pointers must also indicate the calling object context. The following sample generates C2064 and shows how to fix it:
+Within a class, member function pointers must also indicate the calling object context. The following example generates C2064 and shows how to fix it:
 
 ```cpp
 // C2064d.cpp

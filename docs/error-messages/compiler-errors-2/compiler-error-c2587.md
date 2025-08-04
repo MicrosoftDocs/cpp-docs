@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2587"
 title: "Compiler Error C2587"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2587"
+ms.date: 11/04/2016
 f1_keywords: ["C2587"]
 helpviewer_keywords: ["C2587"]
-ms.assetid: 7637a2c7-35d4-4b5a-a8f2-515a7bda98fd
 ---
 # Compiler Error C2587
 
-'identifier' : illegal use of local variable as default parameter
+> 'identifier' : illegal use of local variable as default parameter
+
+## Remarks
 
 Local variables are not allowed as default parameters.
 
-The following sample generates C2587:
+## Example
+
+The following example generates C2587:
 
 ```cpp
 // C2587.cpp
