@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2057"
 title: "Compiler Error C2057"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2057"
+ms.date: 11/04/2016
 f1_keywords: ["C2057"]
 helpviewer_keywords: ["C2057"]
-ms.assetid: 038a99d6-1f5a-42fa-8449-03b4ff11ee0b
 ---
 # Compiler Error C2057
 
-expected constant expression
+> expected constant expression
+
+## Remarks
 
 The context requires a constant expression, an expression whose value is known at compile time.
 
@@ -16,7 +17,7 @@ The compiler must know the size of a type at compile time in order to allocate s
 
 ## Examples
 
-The following sample generates C2057 and shows how to fix it:
+The following example generates C2057 and shows how to fix it:
 
 ```cpp
 // C2057.cpp
@@ -28,7 +29,7 @@ int main() {
 }
 ```
 
-C has more restrictive rules for constant expressions.  The following sample generates C2057 and shows how to fix it:
+C has more restrictive rules for constant expressions.  The following example generates C2057 and shows how to fix it:
 
 ```c
 // C2057b.c

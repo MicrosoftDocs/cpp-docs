@@ -7,11 +7,15 @@ helpviewer_keywords: ["C2110"]
 ---
 # Compiler Error C2110
 
-'+' : cannot add two pointers
+> '+' : cannot add two pointers
+
+## Remarks
 
 An attempt was made to add two pointer values using the plus (`+`) operator.
 
-The following sample generates C2110:
+## Example
+
+The following example generates C2110:
 
 ```cpp
 // C2110.cpp
