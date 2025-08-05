@@ -4,7 +4,6 @@ description: "Describes Microsoft C/C++ compiler error C2712."
 ms.date: 08/25/2020
 f1_keywords: ["C2712"]
 helpviewer_keywords: ["C2712"]
-ms.assetid: f7d4ffcc-7ed2-459b-8067-a728ce647071
 ---
 # Compiler Error C2712
 

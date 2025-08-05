@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2728"
 title: "Compiler Error C2728"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2728"
+ms.date: 11/04/2016
 f1_keywords: ["C2728"]
 helpviewer_keywords: ["C2728"]
-ms.assetid: 65635f91-1cd1-46e4-9ad7-14726d0546af
 ---
 # Compiler Error C2728
 

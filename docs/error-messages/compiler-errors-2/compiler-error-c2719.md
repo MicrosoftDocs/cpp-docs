@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2719"
 title: "Compiler Error C2719"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2719"
+ms.date: 11/04/2016
 f1_keywords: ["C2719"]
 helpviewer_keywords: ["C2719"]
-ms.assetid: ea6236d3-8286-45cc-9478-c84ad3dd3c8e
 ---
 # Compiler Error C2719
 

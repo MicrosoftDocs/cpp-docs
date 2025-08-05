@@ -4,7 +4,6 @@ description: "Describes Microsoft C/C++ compiler error C2705."
 ms.date: 08/25/2020
 f1_keywords: ["C2705"]
 helpviewer_keywords: ["C2705"]
-ms.assetid: 29249ea3-4ea7-4105-944b-bdb83e8d6852
 ---
 # Compiler Error C2705
 

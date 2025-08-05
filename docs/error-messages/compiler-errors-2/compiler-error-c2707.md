@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2707"
 title: "Compiler Error C2707"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2707"
+ms.date: 11/04/2016
 f1_keywords: ["C2707"]
 helpviewer_keywords: ["C2707"]
-ms.assetid: 3deaf45c-74da-4c9d-acc6-b82412720b74
 ---
 # Compiler Error C2707
 

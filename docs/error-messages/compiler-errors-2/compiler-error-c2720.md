@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2720"
 title: "Compiler Error C2720"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2720"
+ms.date: 11/04/2016
 f1_keywords: ["C2720"]
 helpviewer_keywords: ["C2720"]
-ms.assetid: 9ee3aab7-711b-4f5a-b2f1-cb62b130f1ce
 ---
 # Compiler Error C2720
 

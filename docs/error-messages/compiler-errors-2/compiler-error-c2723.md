@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2723"
 title: "Compiler Error C2723"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2723"
+ms.date: 11/04/2016
 f1_keywords: ["C2723"]
 helpviewer_keywords: ["C2723"]
-ms.assetid: 86925601-2297-4cfd-94e2-2caf27c474c4
 ---
 # Compiler Error C2723
 

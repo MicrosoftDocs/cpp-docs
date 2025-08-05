@@ -4,7 +4,6 @@ description: "Describes Microsoft C/C++ compiler error C2706."
 ms.date: 08/25/2020
 f1_keywords: ["C2706"]
 helpviewer_keywords: ["C2706"]
-ms.assetid: e18da924-c42d-4b09-8e29-f4e0382d7dc6
 ---
 # Compiler Error C2706
 
