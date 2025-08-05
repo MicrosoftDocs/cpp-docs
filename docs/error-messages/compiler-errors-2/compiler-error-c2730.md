@@ -10,4 +10,6 @@ ms.assetid: 07f0b17a-bc8e-4d79-af5a-07a07af3687b
 
 > 'class' : cannot be a base class of itself
 
+## Remarks
+
 Recursive base classes are invalid. Specify another class as the base class.

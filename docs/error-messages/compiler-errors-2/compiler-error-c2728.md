@@ -10,9 +10,13 @@ ms.assetid: 65635f91-1cd1-46e4-9ad7-14726d0546af
 
 > 'type' : a native array cannot contain this type
 
+## Remarks
+
 Array creation syntax was used to create an array of managed or WinRT objects. You cannot create an array of managed or WinRT objects using native array syntax.
 
 For more information, see [array](../../extensions/arrays-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C2728 and shows how to fix it:
 

@@ -10,4 +10,6 @@ ms.assetid: e66fc7e6-0e91-4b99-a6e0-fdb069b09fbc
 
 > 'identifier' : formal parameter's length in bytes differs from previous declaration
 
+## Remarks
+
 The signature in a call to the specified function differs from the prototype.

@@ -10,7 +10,11 @@ ms.assetid: 9df9f808-7419-4e63-abdd-e6538ff0871f
 
 > 'function' : this function cannot be compiled as managed, consider using #pragma unmanaged
 
+## Remarks
+
 Some instructions will prevent the compiler from generating MSIL for the enclosing function.
+
+## Example
 
 The following sample generates C2711:
 

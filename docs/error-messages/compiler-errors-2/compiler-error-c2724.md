@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2724"]
 
 > 'identifier' : 'static' should not be used on member functions defined at file scope
 
+## Remarks
+
 Static member functions should be declared with external linkage.
+
+## Example
 
 The following sample generates C2724:
 

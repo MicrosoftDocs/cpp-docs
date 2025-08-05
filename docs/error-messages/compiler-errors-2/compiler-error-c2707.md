@@ -10,6 +10,8 @@ ms.assetid: 3deaf45c-74da-4c9d-acc6-b82412720b74
 
 > 'identifier' : bad context for intrinsic function
 
+## Remarks
+
 Structured exception-handling intrinsics are invalid in certain contexts:
 
 - `_exception_code()` outside an exception filter or **`__except`** block

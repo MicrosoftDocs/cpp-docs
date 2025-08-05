@@ -10,6 +10,8 @@ ms.assetid: 9ee3aab7-711b-4f5a-b2f1-cb62b130f1ce
 
 > '*identifier*' : '*specifier*' storage-class specifier illegal on members
 
+## Remarks
+
 The storage class cannot be used on class members outside the declaration. To fix this error, remove the unneeded [storage class](../../cpp/storage-classes-cpp.md) specifier from the definition of the member outside the class declaration.
 
 ## Example

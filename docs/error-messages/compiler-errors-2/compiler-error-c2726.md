@@ -10,7 +10,11 @@ ms.assetid: f0191bb7-c175-450b-bf09-a3213db96d09
 
 > 'gcnew' may only be used to create an object with managed or WinRT type
 
+## Remarks
+
 You cannot create an instance of a native type on the garbage-collected heap.
+
+## Example
 
 The following sample generates C2726 and shows how to fix it:
 

@@ -10,7 +10,11 @@ ms.assetid: 31cf2ab7-ced9-4f75-aa51-e169e20407fb
 
 > 'function': a function template cannot be a `friend` of a local class
 
+## Remarks
+
 A local class can't have a function template as a `friend` function.
+
+## Example
 
 The following sample generates C2701:
 

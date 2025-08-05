@@ -10,9 +10,9 @@ ms.assetid: 401a5a42-660c-4bad-9d63-1a2d092bc489
 
 > `alignof(void)` is not allowed
 
-An invalid value was passed to an operator.
-
 ## Remarks
+
+An invalid value was passed to an operator.
 
 See [`alignof` operator](../../cpp/alignof-operator.md) for more information.
 

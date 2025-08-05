@@ -10,7 +10,11 @@ ms.assetid: a2a6bb5b-86ad-4a6c-acd0-e2bef8464e0e
 
 > 'construct' : '__declspec(modifier)' can only be applied to a function returning a pointer
 
+## Remarks
+
 A function whose return value is a pointer is the only construct to which `modifier` can be applied.
+
+## Example
 
 The following sample generates C2710:
 

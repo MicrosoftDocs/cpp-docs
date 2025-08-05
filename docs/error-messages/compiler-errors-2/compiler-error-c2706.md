@@ -10,7 +10,11 @@ ms.assetid: e18da924-c42d-4b09-8e29-f4e0382d7dc6
 
 > illegal `__except` without matching `__try` (missing '}' in `__try` block?)
 
+## Remarks
+
 The compiler did not find a closing brace for a **`__try`** block.
+
+## Example
 
 The following sample generates C2706:
 
