@@ -16,7 +16,7 @@ The type of a managed or WinRT exception was not correct.
 
 ## Examples
 
-The following sample generates C2725 and shows how to fix it.
+The following example generates C2725 and shows how to fix it.
 
 ```cpp
 // C2725.cpp
@@ -35,7 +35,7 @@ int main() {
 }
 ```
 
-The following sample generates C2725 and shows how to fix it.
+The following example generates C2725 and shows how to fix it.
 
 ```cpp
 // C2725b.cpp

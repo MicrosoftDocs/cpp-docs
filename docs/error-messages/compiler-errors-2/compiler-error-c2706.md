@@ -16,7 +16,7 @@ The compiler did not find a closing brace for a **`__try`** block.
 
 ## Example
 
-The following sample generates C2706:
+The following example generates C2706:
 
 ```cpp
 // C2706.cpp

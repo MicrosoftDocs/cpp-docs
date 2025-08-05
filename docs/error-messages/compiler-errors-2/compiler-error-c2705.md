@@ -16,7 +16,7 @@ Execution jumps to a label within a **`try`**/**`catch`**, **`__try`**/**`__exce
 
 ## Example
 
-The following sample generates C2705:
+The following example generates C2705:
 
 ```cpp
 // C2705.cpp

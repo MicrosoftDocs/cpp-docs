@@ -16,7 +16,7 @@ Some instructions will prevent the compiler from generating MSIL for the enclosi
 
 ## Example
 
-The following sample generates C2711:
+The following example generates C2711:
 
 ```cpp
 // C2711.cpp

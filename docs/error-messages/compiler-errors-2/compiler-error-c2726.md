@@ -16,7 +16,7 @@ You cannot create an instance of a native type on the garbage-collected heap.
 
 ## Example
 
-The following sample generates C2726 and shows how to fix it:
+The following example generates C2726 and shows how to fix it:
 
 ```cpp
 // C2726.cpp

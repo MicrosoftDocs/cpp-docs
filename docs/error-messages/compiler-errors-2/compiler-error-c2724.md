@@ -15,7 +15,7 @@ Static member functions should be declared with external linkage.
 
 ## Example
 
-The following sample generates C2724:
+The following example generates C2724:
 
 ```cpp
 // C2724.cpp

@@ -16,7 +16,7 @@ An exception handler (**`__try`**/**`__except`**) cannot be nested inside a **`_
 
 ## Example
 
-The following sample generates C2702:
+The following example generates C2702:
 
 ```cpp
 // C2702.cpp

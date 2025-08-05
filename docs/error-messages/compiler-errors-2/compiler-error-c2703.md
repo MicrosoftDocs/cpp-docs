@@ -16,7 +16,7 @@ A **`__leave`** statement must be inside a **`__try`** block.
 
 ## Example
 
-The following sample generates C2703:
+The following example generates C2703:
 
 ```cpp
 // C2703.cpp

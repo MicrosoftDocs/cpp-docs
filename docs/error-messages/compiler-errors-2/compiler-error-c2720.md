@@ -16,7 +16,7 @@ The storage class cannot be used on class members outside the declaration. To fi
 
 ## Example
 
-The following sample generates C2720 and shows how to fix it:
+The following example generates C2720 and shows how to fix it:
 
 ```cpp
 // C2720.cpp

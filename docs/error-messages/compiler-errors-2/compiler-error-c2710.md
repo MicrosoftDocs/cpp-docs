@@ -16,7 +16,7 @@ A function whose return value is a pointer is the only construct to which `modif
 
 ## Example
 
-The following sample generates C2710:
+The following example generates C2710:
 
 ```cpp
 // C2710.cpp

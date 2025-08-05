@@ -16,7 +16,7 @@ The [align](../../cpp/align-cpp.md) **`__declspec`** modifier is not permitted o
 
 ## Example
 
-The following sample generates C2718:
+The following example generates C2718:
 
 ```cpp
 // C2718.cpp

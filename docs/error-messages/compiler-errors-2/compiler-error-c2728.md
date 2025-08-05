@@ -18,7 +18,7 @@ For more information, see [array](../../extensions/arrays-cpp-component-extensio
 
 ## Example
 
-The following sample generates C2728 and shows how to fix it:
+The following example generates C2728 and shows how to fix it:
 
 ```cpp
 // C2728.cpp

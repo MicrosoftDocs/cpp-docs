@@ -30,7 +30,7 @@ The **`/clr:pure`** and **`/clr:safe`** compiler options are deprecated in Visua
 
 ## Example
 
-The following sample generates C2712 and shows how to fix it.
+The following example generates C2712 and shows how to fix it.
 
 ```cpp
 // C2712.cpp

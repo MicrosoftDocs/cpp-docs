@@ -16,7 +16,7 @@ The specifier cannot appear with a function definition outside of a class declar
 
 ## Example
 
-The following sample generates C2723 and shows how to fix it:
+The following example generates C2723 and shows how to fix it:
 
 ```cpp
 // C2723.cpp

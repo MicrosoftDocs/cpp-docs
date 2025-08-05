@@ -18,7 +18,7 @@ See [`alignof` operator](../../cpp/alignof-operator.md) for more information.
 
 ## Example
 
-The following sample generates C2714.
+The following example generates C2714.
 
 ```cpp
 // C2714.cpp

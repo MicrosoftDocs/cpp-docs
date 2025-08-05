@@ -16,7 +16,7 @@ A local class can't have a function template as a `friend` function.
 
 ## Example
 
-The following sample generates C2701:
+The following example generates C2701:
 
 ```cpp
 // C2701.cpp
