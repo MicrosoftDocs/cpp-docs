@@ -8,7 +8,7 @@ ms.assetid: 86925601-2297-4cfd-94e2-2caf27c474c4
 ---
 # Compiler Error C2723
 
-'function' : 'specifier' specifier illegal on function definition
+> 'function' : 'specifier' specifier illegal on function definition
 
 The specifier cannot appear with a function definition outside of a class declaration. The **`virtual`** specifier can be specified only on a member function declaration within a class declaration.
 

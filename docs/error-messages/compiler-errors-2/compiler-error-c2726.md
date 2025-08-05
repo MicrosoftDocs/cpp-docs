@@ -8,7 +8,7 @@ ms.assetid: f0191bb7-c175-450b-bf09-a3213db96d09
 ---
 # Compiler Error C2726
 
-'gcnew' may only be used to create an object with managed or WinRT type
+> 'gcnew' may only be used to create an object with managed or WinRT type
 
 You cannot create an instance of a native type on the garbage-collected heap.
 

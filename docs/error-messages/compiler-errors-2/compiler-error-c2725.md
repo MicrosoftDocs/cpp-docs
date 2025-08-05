@@ -8,7 +8,7 @@ ms.assetid: 13cd5b1b-e906-4cd8-9b2b-510d587c665a
 ---
 # Compiler Error C2725
 
-'exception' : unable to throw or catch a managed or WinRT object by value or reference
+> 'exception' : unable to throw or catch a managed or WinRT object by value or reference
 
 The type of a managed or WinRT exception was not correct.
 

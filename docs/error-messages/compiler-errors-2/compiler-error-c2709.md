@@ -8,6 +8,6 @@ ms.assetid: e66fc7e6-0e91-4b99-a6e0-fdb069b09fbc
 ---
 # Compiler Error C2709
 
-'identifier' : formal parameter's length in bytes differs from previous declaration
+> 'identifier' : formal parameter's length in bytes differs from previous declaration
 
 The signature in a call to the specified function differs from the prototype.

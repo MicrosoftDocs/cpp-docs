@@ -8,7 +8,7 @@ ms.assetid: 78cc71f8-c142-46fc-9aed-970635d74f0c
 ---
 # Compiler Error C2718
 
-'parameter': actual parameter with __declspec(align('#')) won't be aligned
+> 'parameter': actual parameter with __declspec(align('#')) won't be aligned
 
 The [align](../../cpp/align-cpp.md) **`__declspec`** modifier is not permitted on function parameters.
 

@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2724"]
 ---
 # Compiler Error C2724
 
-'identifier' : 'static' should not be used on member functions defined at file scope
+> 'identifier' : 'static' should not be used on member functions defined at file scope
 
 Static member functions should be declared with external linkage.
 

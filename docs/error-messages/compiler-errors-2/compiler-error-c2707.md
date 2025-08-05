@@ -8,7 +8,7 @@ ms.assetid: 3deaf45c-74da-4c9d-acc6-b82412720b74
 ---
 # Compiler Error C2707
 
-'identifier' : bad context for intrinsic function
+> 'identifier' : bad context for intrinsic function
 
 Structured exception-handling intrinsics are invalid in certain contexts:
 
