@@ -102,9 +102,9 @@ public:
 CMFCRibbonComboBox(
     UINT nID,
     BOOL bHasEditBox=TRUE,
-    Int nWidth=-1,
+    int nWidth=-1,
     LPCTSTR lpszLabel=NULL,
-    Int nImage=-1);
+    int nImage=-1);
 
 protected:
 CMFCRibbonComboBox();
