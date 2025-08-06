@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /ZW (Windows Runtime Compilation)"
 title: "/ZW (Windows Runtime Compilation)"
+description: "Learn more about: /ZW (Windows Runtime Compilation)"
 ms.date: 06/22/2023
 f1_keywords: ["VC.Project.VCCLCompilerTool.CompileAsWinRT", "/zw"]
 helpviewer_keywords: ["/ZW", "-ZW compiler option", "/ZW compiler option", "-ZW", "Windows Runtime compiler option"]
