@@ -18,7 +18,7 @@ This error may occur after an upgrade because of conformance changes in Visual S
 
 ## Example
 
-The following sample generates C2733:
+The following example generates C2733:
 
 ```cpp
 // C2733.cpp

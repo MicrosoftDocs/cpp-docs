@@ -16,7 +16,7 @@ The keyword is invalid in this context.
 
 ## Example
 
-The following sample generates C2735:
+The following example generates C2735:
 
 ```cpp
 // C2735.cpp

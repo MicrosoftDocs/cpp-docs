@@ -16,7 +16,7 @@ The identifier is declared **`const`** but not initialized or **`extern`**.
 
 ## Example
 
-The following sample generates C2734:
+The following example generates C2734:
 
 ```cpp
 // C2734.cpp

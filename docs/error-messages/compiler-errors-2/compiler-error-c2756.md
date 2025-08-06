@@ -16,7 +16,7 @@ The template for a partial specialization may not contain a default argument.
 
 ## Example
 
-The following sample generates C2756 and shows how to fix it:
+The following example generates C2756 and shows how to fix it:
 
 ```cpp
 // C2756.cpp

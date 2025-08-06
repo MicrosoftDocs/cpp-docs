@@ -16,7 +16,7 @@ The keyword is invalid in a cast.
 
 ## Example
 
-The following sample generates C2736:
+The following example generates C2736:
 
 ```cpp
 // C2736.cpp

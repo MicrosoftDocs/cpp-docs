@@ -18,7 +18,7 @@ There are several ways to cause this error. Usually, it's caused by a token sequ
 
 ## Examples
 
-In this sample, a casting operator is used with an invalid operator.
+In this example, a casting operator is used with an invalid operator.
 
 ```cpp
 // C2760.cpp

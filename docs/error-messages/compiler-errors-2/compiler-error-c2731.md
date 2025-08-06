@@ -16,7 +16,7 @@ The functions `main`, `WinMain`, `DllMain`, and `LibMain` cannot be overloaded.
 
 ## Example
 
-The following sample generates C2731:
+The following example generates C2731:
 
 ```cpp
 // C2731.cpp

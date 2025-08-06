@@ -15,7 +15,7 @@ Compiler error C2758 is caused when the constructor does not initialize a member
 
 ## Example
 
-The following sample generates C2758:
+The following example generates C2758:
 
 ```cpp
 // C2758.cpp

@@ -20,7 +20,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Example
 
-The following sample generates C2743.
+The following example generates C2743.
 
 ```cpp
 // C2743.cpp

@@ -16,7 +16,7 @@ An instantiation was ambiguous.
 
 ## Example
 
-The following sample generates C2752:
+The following example generates C2752:
 
 ```cpp
 // C2752.cpp

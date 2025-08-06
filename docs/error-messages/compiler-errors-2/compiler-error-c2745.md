@@ -16,7 +16,7 @@ Identifiers must be comprised of legal characters.
 
 ## Example
 
-The following sample generates C2745:
+The following example generates C2745:
 
 ```cpp
 // C2745.cpp

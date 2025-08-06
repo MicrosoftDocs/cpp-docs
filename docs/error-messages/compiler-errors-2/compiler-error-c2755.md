@@ -16,7 +16,7 @@ The non-type parameter needs to be a simple identifier, something the compiler c
 
 ## Example
 
-The following sample generates C2755:
+The following example generates C2755:
 
 ```cpp
 // C2755.cpp

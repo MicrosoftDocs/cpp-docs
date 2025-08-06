@@ -16,7 +16,7 @@ If the template argument list matches the parameter list, the compiler treats it
 
 ## Example
 
-The following sample generates C2753 and shows a way to fix it:
+The following example generates C2753 and shows a way to fix it:
 
 ```cpp
 // C2753.cpp

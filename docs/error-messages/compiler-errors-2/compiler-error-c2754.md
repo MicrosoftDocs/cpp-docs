@@ -16,7 +16,7 @@ An attempt was made to partially specialize a template class that has a dependen
 
 ## Example
 
-The following sample generates C2754:
+The following example generates C2754:
 
 ```cpp
 // C2754.cpp

@@ -18,7 +18,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Example
 
-The following sample generates C2749:
+The following example generates C2749:
 
 ```cpp
 // C2749.cpp

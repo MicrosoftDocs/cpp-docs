@@ -16,7 +16,7 @@ A function was declared incorrectly.
 
 ## Example
 
-The following sample generates C2738:
+The following example generates C2738:
 
 ```cpp
 // C2738.cpp

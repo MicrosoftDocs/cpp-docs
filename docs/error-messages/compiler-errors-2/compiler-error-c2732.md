@@ -20,7 +20,7 @@ To fix this error, change the **`extern`** statements so that the linkages agree
 
 ## Example
 
-The following sample generates C2732:
+The following example generates C2732:
 
 ```cpp
 // C2732.cpp

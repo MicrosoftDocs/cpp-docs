@@ -16,7 +16,7 @@ A symbol used in the current compilation as a namespace identifier is already be
 
 ## Example
 
-The following sample generates C2757:
+The following example generates C2757:
 
 ```cpp
 // C2757a.cpp
