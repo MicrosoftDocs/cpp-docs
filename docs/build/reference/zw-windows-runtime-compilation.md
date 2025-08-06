@@ -32,7 +32,7 @@ When you specify the **`/ZW`** option, the compiler supports these features:
 
 - Automatic reference-counting of Windows Runtime objects, and automatic discarding of an object when its reference count goes to zero.
 
-Because the incremental linker doesn't support the Windows metadata included in .obj files by using the **`/ZW`** option, the deprecated [/Gm (Enable Minimal Rebuild)](gm-enable-minimal-rebuild.md) option is incompatible with **`/ZW`**.
+Because the incremental linker doesn't support the Windows metadata included in `.obj` files by using the **`/ZW`** option, the deprecated [`/Gm` (Enable Minimal Rebuild)](gm-enable-minimal-rebuild.md) option is incompatible with **`/ZW`**.
 
 For more information, see [Visual C++ Language Reference](../../cppcx/visual-c-language-reference-c-cx.md).
 
