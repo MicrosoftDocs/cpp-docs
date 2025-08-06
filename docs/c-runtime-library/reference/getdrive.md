@@ -43,7 +43,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_getdrive.c
-// compile with: /c
 // Illustrates drive functions including:
 //    _getdrive       _chdrive        _getdcwd
 //

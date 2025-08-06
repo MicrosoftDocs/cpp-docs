@@ -92,7 +92,6 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 
 ```C
 // crt_cscanf_s.c
-// compile with: /c
 /* This program prompts for a string
 * and uses _cscanf_s to read in the response.
 * Then _cscanf_s returns the number of items

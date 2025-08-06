@@ -94,7 +94,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_vcprintf_p.c
-// compile with: /c
+
 #include <conio.h>
 #include <stdarg.h>
 

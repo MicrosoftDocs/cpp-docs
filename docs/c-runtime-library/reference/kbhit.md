@@ -48,7 +48,6 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 
 ```C
 // crt_kbhit.c
-// compile with: /c
 /* This program loops until the user
 * presses a key. If _kbhit returns nonzero, a
 * keystroke is waiting in the buffer. The program

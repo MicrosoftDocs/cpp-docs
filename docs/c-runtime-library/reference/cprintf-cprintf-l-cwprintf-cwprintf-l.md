@@ -85,7 +85,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_cprintf.c
-// compile with: /c
 // This program displays some variables to the console.
 
 #include <conio.h>

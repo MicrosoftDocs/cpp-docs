@@ -73,7 +73,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_cwait.c
-// compile with: /c
 // This program launches several processes and waits
 // for a specified process to finish.
 

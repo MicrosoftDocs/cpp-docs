@@ -52,7 +52,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_getch_nolock.c
-// compile with: /c
 // This program reads characters from
 // the keyboard until it receives a 'Y' or 'y'.
 

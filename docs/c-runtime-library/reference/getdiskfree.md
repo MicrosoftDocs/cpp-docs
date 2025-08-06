@@ -66,7 +66,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_getdiskfree.c
-// compile with: /c
+
 #include <windows.h>
 #include <direct.h>
 #include <stdio.h>

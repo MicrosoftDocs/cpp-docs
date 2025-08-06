@@ -70,7 +70,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_ungetch.c
-// compile with: /c
 // In this program, a white-space delimited
 // token is read from the keyboard. When the program
 // encounters a delimiter, it uses _ungetch to replace

@@ -61,7 +61,7 @@ When it's used with an [`assert`](assert-macro-assert-wassert.md), **`_set_error
 
 ```C
 // crt_set_error_mode.c
-// compile with: /c
+
 #include <stdlib.h>
 #include <assert.h>
 

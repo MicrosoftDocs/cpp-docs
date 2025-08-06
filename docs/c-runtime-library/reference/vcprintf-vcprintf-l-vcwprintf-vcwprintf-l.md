@@ -89,7 +89,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```cpp
 // crt_vcprintf.cpp
-// compile with: /c
+
 #include <conio.h>
 #include <stdarg.h>
 
