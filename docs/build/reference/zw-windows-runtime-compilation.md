@@ -14,7 +14,7 @@ When you use **`/ZW`** to compile, always specify [`/EHsc`](eh-exception-handlin
 
 ## Syntax
 
-```cpp
+```
 /ZW /EHsc
 /ZW:nostdlib /EHsc
 ```
