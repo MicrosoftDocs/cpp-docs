@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C2751"
 title: "Compiler Error C2751"
-ms.date: "03/11/2024"
+description: "Learn more about: Compiler Error C2751"
+ms.date: 03/11/2024
 f1_keywords: ["C2751"]
 helpviewer_keywords: ["C2751"]
 ---

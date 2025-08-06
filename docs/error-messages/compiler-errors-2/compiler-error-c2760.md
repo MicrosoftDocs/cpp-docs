@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2760"
 title: "Compiler Error C2760"
+description: "Learn more about: Compiler Error C2760"
 ms.date: 08/12/2021
 f1_keywords: ["C2760"]
 helpviewer_keywords: ["C2760"]
-ms.assetid: 585757fd-d519-43f3-94e5-50316ac8b90b
 ---
 # Compiler Error C2760
 

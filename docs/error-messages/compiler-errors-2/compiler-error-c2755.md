@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2755"
 title: "Compiler Error C2755"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2755"
+ms.date: 11/04/2016
 f1_keywords: ["C2755"]
 helpviewer_keywords: ["C2755"]
-ms.assetid: 8ee4eeb6-4757-4efe-9100-38ff4a96f1de
 ---
 # Compiler Error C2755
 

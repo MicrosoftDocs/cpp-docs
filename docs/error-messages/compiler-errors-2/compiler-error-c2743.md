@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2743"
 title: "Compiler Error C2743"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2743"
+ms.date: 11/04/2016
 f1_keywords: ["C2743"]
 helpviewer_keywords: ["C2743"]
-ms.assetid: 644cd444-21d2-471d-a176-f5f52c5a0b73
 ---
 # Compiler Error C2743
 

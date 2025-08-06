@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2732"
 title: "Compiler Error C2732"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2732"
+ms.date: 11/04/2016
 f1_keywords: ["C2732"]
 helpviewer_keywords: ["C2732"]
-ms.assetid: 01b7ad2c-93cf-456f-a4c0-c5f2fdc7c07c
 ---
 # Compiler Error C2732
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2733"
 title: "Compiler Error C2733"
+description: "Learn more about: Compiler Error C2733"
 ms.date: 12/02/2021
 f1_keywords: ["C2733"]
 helpviewer_keywords: ["C2733"]
-ms.assetid: 67f83561-c633-407c-a2ee-f9fd16e165bf
 ---
 # Compiler Error C2733
 

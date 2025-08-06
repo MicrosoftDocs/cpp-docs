@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2749"
 title: "Compiler Error C2749"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2749"
+ms.date: 11/04/2016
 f1_keywords: ["C2749"]
 helpviewer_keywords: ["C2749"]
-ms.assetid: a81aef36-cdca-4d78-89d5-b72eff2500b2
 ---
 # Compiler Error C2749
 

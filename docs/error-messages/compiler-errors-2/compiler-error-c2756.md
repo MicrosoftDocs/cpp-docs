@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2756"
 title: "Compiler Error C2756"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2756"
+ms.date: 11/04/2016
 f1_keywords: ["C2756"]
 helpviewer_keywords: ["C2756"]
-ms.assetid: 42eb988d-4043-4dee-8fd4-596949f69a55
 ---
 # Compiler Error C2756
 

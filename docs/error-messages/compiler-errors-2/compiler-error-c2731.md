@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2731"
 title: "Compiler Error C2731"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2731"
+ms.date: 11/04/2016
 f1_keywords: ["C2731"]
 helpviewer_keywords: ["C2731"]
-ms.assetid: 9b563999-febd-4582-9147-f355083c091e
 ---
 # Compiler Error C2731
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2748"
 title: "Compiler Error C2748"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2748"
+ms.date: 11/04/2016
 f1_keywords: ["C2748"]
 helpviewer_keywords: ["C2748"]
-ms.assetid: b63ac78b-a200-499c-afea-15af1a1e819e
 ---
 # Compiler Error C2748
 
