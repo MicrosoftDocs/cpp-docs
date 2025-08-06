@@ -42,8 +42,6 @@ Type^ tx2 = (Type^)(tn);
 
 .NET Framework programs project `TypeName` as <xref:System.Type>
 
-### Requirements
-
 ## See also
 
 [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)<br/>

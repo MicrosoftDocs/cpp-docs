@@ -43,8 +43,6 @@ Always returns 0.
 
 Don't use this function in a C++ program. It's an intrinsic function that doesn't support C++. For more information about how to use `setjmp`, see [Using setjmp/longjmp](../cpp/using-setjmp-longjmp.md).
 
-## Requirements
-
 ## See also
 
 [Alphabetical function reference](./reference/crt-alphabetical-function-reference.md)\
