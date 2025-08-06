@@ -10,7 +10,7 @@ helpviewer_keywords: ["/ZW", "-ZW compiler option", "/ZW compiler option", "-ZW"
 Compiles source code to support Microsoft C++ component extensions C++/CX for the creation of Universal Windows Platform (UWP) apps.
 
 When you use **`/ZW`** to compile, always specify [`/EHsc`](eh-exception-handling-model.md) as well.\
-**`/ZW`** isn't compatible with [`/std:c++20`](std-specify-language-standard-version.md).
+**`/ZW`** isn't compatible with [`/std:c++20`](std-specify-language-standard-version.md) or later.
 
 ## Syntax
 
