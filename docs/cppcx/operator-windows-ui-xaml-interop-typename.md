@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: operator Windows::UI::Xaml::Interop::TypeName"
 title: "operator Windows::UI::Xaml::Interop::TypeName"
-ms.date: "12/30/2016"
-ms.assetid: a65a105e-7e3a-452f-932f-2cdaf00fbba5
+description: "Learn more about: operator Windows::UI::Xaml::Interop::TypeName"
+ms.date: 12/30/2016
 ---
 # operator Windows::UI::Xaml::Interop::TypeName
 

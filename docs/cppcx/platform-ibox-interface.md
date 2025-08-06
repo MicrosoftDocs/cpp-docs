@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Platform::IBox Interface"
 title: "Platform::IBox Interface"
-ms.date: "12/30/2016"
+description: "Learn more about: Platform::IBox Interface"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Value"]
-ms.assetid: 774df45d-f8a7-45a3-ae24-eecc3c681040
 ---
 # Platform::IBox Interface
 

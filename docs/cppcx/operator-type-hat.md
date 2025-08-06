@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: operator Type^"
 title: "operator Type^"
-ms.date: "12/30/2016"
-ms.assetid: b24ffc83-0780-4f9a-8ee0-f5725db339d1
+description: "Learn more about: operator Type^"
+ms.date: 12/30/2016
 ---
 # operator Type^
 
