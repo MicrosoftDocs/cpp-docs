@@ -1,11 +1,10 @@
 ---
+title: "C++ Core Guidelines checker reference"
 description: "Learn more about: C++ Core Guidelines checker reference"
-title: C++ Core Guidelines checker reference
 ms.date: 03/22/2018
 ms.topic: reference
 helpviewer_keywords:
   - "code analysis, C++ core check"
-ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 ---
 # C++ Core Guidelines checker reference
 
