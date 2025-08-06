@@ -10,6 +10,8 @@ ms.assetid: a81aef36-cdca-4d78-89d5-b72eff2500b2
 
 > 'type' : can only throw or catch handle to a managed class with /clr:safe
 
+## Remarks
+
 When using **/clr:safe**, you can only throw or catch a reference type.
 
 For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).

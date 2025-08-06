@@ -10,7 +10,11 @@ ms.assetid: 896b4640-1ee0-4cd8-9910-de3efa30006a
 
 > 'declaration' : is ambiguous or is not a member of 'type'
 
+## Remarks
+
 A function was declared incorrectly.
+
+## Example
 
 The following sample generates C2738:
 

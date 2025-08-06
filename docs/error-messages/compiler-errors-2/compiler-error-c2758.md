@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2758"]
 
 > 'member': a member of reference type must be initialized
 
+## Remarks
+
 Compiler error C2758 is caused when the constructor does not initialize a member of reference type in an initializer list. The compiler leaves the member undefined. Reference member variables must initialized when declared or be given a value in the initialization list of the constructor.
+
+## Example
 
 The following sample generates C2758:
 

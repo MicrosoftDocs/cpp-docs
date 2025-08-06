@@ -10,7 +10,11 @@ ms.assetid: 95a6bc28-c0cb-49dc-87e6-e993dbbba881
 
 > 'keyword' keyword is not permitted in cast
 
+## Remarks
+
 The keyword is invalid in a cast.
+
+## Example
 
 The following sample generates C2736:
 

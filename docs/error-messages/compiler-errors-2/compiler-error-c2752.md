@@ -10,7 +10,11 @@ ms.assetid: ae42b3ec-84a9-4e9d-8d59-3d208132d0b2
 
 > 'template' : more than one partial specialization matches the template argument list
 
+## Remarks
+
 An instantiation was ambiguous.
+
+## Example
 
 The following sample generates C2752:
 

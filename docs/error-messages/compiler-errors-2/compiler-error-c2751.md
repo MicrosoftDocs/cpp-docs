@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2751"]
 
 > 'parameter' : the name of a function parameter cannot be qualified
 
+## Remarks
+
 You cannot use a qualified name as a function parameter.
+
+## Example
 
 The following sample generates C2751:
 

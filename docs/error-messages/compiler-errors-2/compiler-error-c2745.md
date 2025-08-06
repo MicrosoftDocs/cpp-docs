@@ -10,7 +10,11 @@ ms.assetid: a1c45f13-7667-4678-aa16-265304a449a1
 
 > 'token' : this token cannot be converted to an identifier
 
+## Remarks
+
 Identifiers must be comprised of legal characters.
+
+## Example
 
 The following sample generates C2745:
 

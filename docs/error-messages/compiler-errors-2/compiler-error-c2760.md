@@ -16,7 +16,7 @@ ms.assetid: 585757fd-d519-43f3-94e5-50316ac8b90b
 
 There are several ways to cause this error. Usually, it's caused by a token sequence that the compiler can't make sense of.
 
-## Example
+## Examples
 
 In this sample, a casting operator is used with an invalid operator.
 

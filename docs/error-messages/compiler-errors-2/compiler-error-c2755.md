@@ -10,7 +10,11 @@ ms.assetid: 8ee4eeb6-4757-4efe-9100-38ff4a96f1de
 
 > 'param' : non-type parameter of a partial specialization must be a simple identifier
 
+## Remarks
+
 The non-type parameter needs to be a simple identifier, something the compiler can resolve at compile time to a single identifier or a constant value.
+
+## Example
 
 The following sample generates C2755:
 

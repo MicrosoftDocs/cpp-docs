@@ -10,7 +10,11 @@ ms.assetid: 6ce45600-7148-4bc0-8699-af0ef137571e
 
 > 'keyword' keyword is not permitted in formal parameter type specifier
 
+## Remarks
+
 The keyword is invalid in this context.
+
+## Example
 
 The following sample generates C2735:
 

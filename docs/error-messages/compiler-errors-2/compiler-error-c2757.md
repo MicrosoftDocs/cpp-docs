@@ -10,7 +10,11 @@ ms.assetid: 421f102f-8a32-4d47-a109-811ddf2c909d
 
 > 'symbol' : a symbol with this name already exists and therefore this name cannot be used as a namespace name
 
+## Remarks
+
 A symbol used in the current compilation as a namespace identifier is already being used in a referenced assembly.
+
+## Example
 
 The following sample generates C2757:
 

@@ -10,7 +10,11 @@ ms.assetid: 42eb988d-4043-4dee-8fd4-596949f69a55
 
 > 'template type' : default template arguments not allowed on a partial specialization
 
+## Remarks
+
 The template for a partial specialization may not contain a default argument.
+
+## Example
 
 The following sample generates C2756 and shows how to fix it:
 

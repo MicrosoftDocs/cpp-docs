@@ -10,7 +10,11 @@ ms.assetid: 5b63e435-7631-43d7-805e-f2adefb7e517
 
 > 'number' : explicit managed or WinRT array dimensions must be between 1 and 32
 
+## Remarks
+
 An array dimension was not between 1 and 32.
+
+## Example
 
 The following sample generates C2739 and shows how to fix it:
 

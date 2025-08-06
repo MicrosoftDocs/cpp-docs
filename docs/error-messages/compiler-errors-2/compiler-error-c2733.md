@@ -10,6 +10,8 @@ ms.assetid: 67f83561-c633-407c-a2ee-f9fd16e165bf
 
 > you cannot overload a function with 'C' linkage
 
+## Remarks
+
 More than one overloaded function is declared with `extern "C"` linkage. When using `"C"` linkage, only one form of a specified function can be external. Since overloaded functions have the same undecorated name, they can't be used with C programs.
 
 This error may occur after an upgrade because of conformance changes in Visual Studio 2019. Starting in Visual Studio 2019 version 16.3, the [`/Zc:externC-`](../../build/reference/zc-externc.md) compiler option relaxes this check. The option must come after any [`/permissive-`](../../build/reference/permissive-standards-conformance.md) option on the command line.

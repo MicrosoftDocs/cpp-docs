@@ -10,7 +10,11 @@ ms.assetid: 9b563999-febd-4582-9147-f355083c091e
 
 > 'identifier' : function cannot be overloaded
 
+## Remarks
+
 The functions `main`, `WinMain`, `DllMain`, and `LibMain` cannot be overloaded.
+
+## Example
 
 The following sample generates C2731:
 

@@ -10,6 +10,8 @@ ms.assetid: 01b7ad2c-93cf-456f-a4c0-c5f2fdc7c07c
 
 > linkage specification contradicts earlier specification for 'function'
 
+## Remarks
+
 The function is already declared with a different linkage specifier.
 
 This error can be caused by include files with different linkage specifiers.
