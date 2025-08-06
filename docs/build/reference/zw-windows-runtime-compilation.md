@@ -21,7 +21,7 @@ When you use **`/ZW`** to compile, always specify [`/EHsc`](eh-exception-handlin
 
 ## Arguments
 
-**`nostdlib`**\
+*`nostdlib`*\
 Indicates that `Platform.winmd`, `Windows.Foundation.winmd`, and other default Windows metadata (`.winmd`) files aren't automatically included in the compilation. Instead, you must use the [`/FU` (Name Forced #using File)](fu-name-forced-hash-using-file.md) compiler option to explicitly specify Windows metadata files.
 
 ## Remarks
@@ -35,8 +35,6 @@ When you specify the **`/ZW`** option, the compiler supports these features:
 Because the incremental linker doesn't support the Windows metadata included in `.obj` files by using the **`/ZW`** option, the deprecated [`/Gm` (Enable Minimal Rebuild)](gm-enable-minimal-rebuild.md) option is incompatible with **`/ZW`**.
 
 For more information, see [C++/CX Language Reference](../../cppcx/visual-c-language-reference-c-cx.md).
-
-## Requirements
 
 ## See also
 
