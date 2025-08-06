@@ -9,8 +9,8 @@ helpviewer_keywords: ["/ZW", "-ZW compiler option", "/ZW compiler option", "-ZW"
 
 Compiles source code to support Microsoft C++ component extensions C++/CX for the creation of Universal Windows Platform (UWP) apps.
 
-When you use **`/ZW`** to compile, always specify **`/EHsc`** as well.\
-**`/ZW`** isn't compatible with **`/std:c++20`**.
+When you use **`/ZW`** to compile, always specify [`/EHsc`](eh-exception-handling-model.md) as well.\
+**`/ZW`** isn't compatible with [`/std:c++20`](std-specify-language-standard-version.md).
 
 ## Syntax
 
@@ -34,7 +34,7 @@ When you specify the **`/ZW`** option, the compiler supports these features:
 
 Because the incremental linker doesn't support the Windows metadata included in `.obj` files by using the **`/ZW`** option, the deprecated [`/Gm` (Enable Minimal Rebuild)](gm-enable-minimal-rebuild.md) option is incompatible with **`/ZW`**.
 
-For more information, see [Visual C++ Language Reference](../../cppcx/visual-c-language-reference-c-cx.md).
+For more information, see [C++/CX Language Reference](../../cppcx/visual-c-language-reference-c-cx.md).
 
 ## Requirements
 
