@@ -1,7 +1,7 @@
 ---
 title: "_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock"
 description: "Learn more about: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock"
-ms.date: "4/2/2020"
+ms.date: 4/2/2020
 api_name: ["_ungetch_nolock", "_ungetwch_nolock", "_ungetwch", "_ungetch", "_o__ungetch", "_o__ungetch_nolock", "_o__ungetwch", "_o__ungetwch_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 api_type: ["DLLExport"]
