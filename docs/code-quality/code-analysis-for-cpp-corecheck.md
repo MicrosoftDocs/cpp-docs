@@ -214,7 +214,7 @@ Do not use function style C-casts. See [C++ Core Guidelines ES.49](https://isocp
 [C26490 NO_REINTERPRET_CAST](c26490.md)\
 Don't use `reinterpret_cast`. See [C++ Core Guidelines Type.1](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Pro-type-reinterpretcast).
 
-[C26491 NO_STATIC_DOWNCAST](c26490.md)\
+[C26491 NO_STATIC_DOWNCAST](c26491.md)\
 Don't use `static_cast` downcasts. See [C++ Core Guidelines Type.2](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Pro-type-downcast).
 
 [C26492 NO_CONST_CAST](c26492.md)\
