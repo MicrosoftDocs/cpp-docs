@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2751"]
 ---
 # Compiler Error C2751
 
-'parameter' : the name of a function parameter cannot be qualified
+> 'parameter' : the name of a function parameter cannot be qualified
 
 You cannot use a qualified name as a function parameter.
 

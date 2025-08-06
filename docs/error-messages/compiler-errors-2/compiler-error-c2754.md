@@ -8,7 +8,7 @@ ms.assetid: 1cab66c5-da9d-4b81-b7fb-9cdc48ff1ccc
 ---
 # Compiler Error C2754
 
-'specialization' : a partial specialization cannot have a dependent non-type template parameter
+> 'specialization' : a partial specialization cannot have a dependent non-type template parameter
 
 An attempt was made to partially specialize a template class that has a dependent non-type template parameter. This is not allowed.
 

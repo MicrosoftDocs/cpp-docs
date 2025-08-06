@@ -8,7 +8,7 @@ ms.assetid: 01b7ad2c-93cf-456f-a4c0-c5f2fdc7c07c
 ---
 # Compiler Error C2732
 
-linkage specification contradicts earlier specification for 'function'
+> linkage specification contradicts earlier specification for 'function'
 
 The function is already declared with a different linkage specifier.
 

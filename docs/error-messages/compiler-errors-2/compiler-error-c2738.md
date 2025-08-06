@@ -8,7 +8,7 @@ ms.assetid: 896b4640-1ee0-4cd8-9910-de3efa30006a
 ---
 # Compiler Error C2738
 
-'declaration' : is ambiguous or is not a member of 'type'
+> 'declaration' : is ambiguous or is not a member of 'type'
 
 A function was declared incorrectly.
 

@@ -8,7 +8,7 @@ ms.assetid: 30450034-feb5-448c-9655-b8c5f3639695
 ---
 # Compiler Error C2750
 
-'type' : cannot use 'new' on the reference type; use 'gcnew' instead
+> 'type' : cannot use 'new' on the reference type; use 'gcnew' instead
 
 To create an instance of a CLR type, which causes the instance to be placed on the garbage-collected heap, you must use [gcnew](../../extensions/ref-new-gcnew-cpp-component-extensions.md).
 

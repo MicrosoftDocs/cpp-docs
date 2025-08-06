@@ -8,7 +8,7 @@ ms.assetid: 5b63e435-7631-43d7-805e-f2adefb7e517
 ---
 # Compiler Error C2739
 
-'number' : explicit managed or WinRT array dimensions must be between 1 and 32
+> 'number' : explicit managed or WinRT array dimensions must be between 1 and 32
 
 An array dimension was not between 1 and 32.
 

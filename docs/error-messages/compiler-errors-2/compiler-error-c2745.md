@@ -8,7 +8,7 @@ ms.assetid: a1c45f13-7667-4678-aa16-265304a449a1
 ---
 # Compiler Error C2745
 
-'token' : this token cannot be converted to an identifier
+> 'token' : this token cannot be converted to an identifier
 
 Identifiers must be comprised of legal characters.
 

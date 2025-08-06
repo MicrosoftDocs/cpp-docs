@@ -8,7 +8,7 @@ ms.assetid: b63ac78b-a200-499c-afea-15af1a1e819e
 ---
 # Compiler Error C2748
 
-managed or WinRT array creation must have array size or array initializer
+> managed or WinRT array creation must have array size or array initializer
 
 A managed or WinRT array was ill formed. For more information, see [array](../../extensions/arrays-cpp-component-extensions.md).
 

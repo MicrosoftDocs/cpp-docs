@@ -8,7 +8,7 @@ ms.assetid: 42eb988d-4043-4dee-8fd4-596949f69a55
 ---
 # Compiler Error C2756
 
-'template type' : default template arguments not allowed on a partial specialization
+> 'template type' : default template arguments not allowed on a partial specialization
 
 The template for a partial specialization may not contain a default argument.
 

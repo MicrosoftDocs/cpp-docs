@@ -8,7 +8,7 @@ ms.assetid: 9b563999-febd-4582-9147-f355083c091e
 ---
 # Compiler Error C2731
 
-'identifier' : function cannot be overloaded
+> 'identifier' : function cannot be overloaded
 
 The functions `main`, `WinMain`, `DllMain`, and `LibMain` cannot be overloaded.
 
