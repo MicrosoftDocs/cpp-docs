@@ -8,7 +8,7 @@ ms.assetid: 100001b5-80b0-4971-8ff6-9023f443c926
 ---
 # Compiler Error C2770
 
-invalid explicit template_or_generic argument(s) for 'template'
+> invalid explicit template_or_generic argument(s) for 'template'
 
 Function template candidates with explicit template or generic arguments resulted in disallowed function types.
 

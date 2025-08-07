@@ -8,7 +8,7 @@ ms.assetid: b24cb732-2914-42cc-8928-e2d87b393428
 ---
 # Compiler Error C2778
 
-improperly formed GUID in __declspec(uuid())
+> improperly formed GUID in __declspec(uuid())
 
 An incorrect GUID is supplied to the [uuid](../../cpp/uuid-cpp.md) extended attribute.
 

@@ -8,7 +8,7 @@ ms.assetid: f29b9963-f55b-427c-8db6-50f37713df5a
 ---
 # Compiler Error C2781
 
-'declaration' : expects at least value1 argument - value2 provided
+> 'declaration' : expects at least value1 argument - value2 provided
 
 A function template with a variable parameter list has too few arguments.
 

@@ -8,7 +8,7 @@ ms.assetid: 34cb57e6-cafe-4ce7-bcc6-53d194629bd0
 ---
 # Compiler Error C2787
 
-'identifier' : no GUID has been associated with this object
+> 'identifier' : no GUID has been associated with this object
 
 The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type with a GUID attached or an object of such a user-defined type. This error occurs when the argument is a user-defined type with no GUID.
 

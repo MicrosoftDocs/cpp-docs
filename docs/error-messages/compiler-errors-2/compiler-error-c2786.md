@@ -8,7 +8,7 @@ ms.assetid: 6676d8c0-86dd-4a39-bdda-b75a35f4d137
 ---
 # Compiler Error C2786
 
-'type' : invalid operand for __uuidof
+> 'type' : invalid operand for __uuidof
 
 The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type with a GUID attached or an object of such a user-defined type.  Possible causes:
 

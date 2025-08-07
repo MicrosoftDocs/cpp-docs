@@ -8,7 +8,7 @@ ms.assetid: 8032f4ca-6827-4f04-9c61-c44643c85cc4
 ---
 # Compiler Error C2766
 
-explicit specialization; 'specialization' has already been defined
+> explicit specialization; 'specialization' has already been defined
 
 Duplicate explicit specializations are not allowed. For more information, see [Explicit Specialization of Function Templates](../../cpp/explicit-specialization-of-function-templates.md).
 

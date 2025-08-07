@@ -8,7 +8,7 @@ ms.assetid: 3754f5af-e094-4425-be20-d0c9a9b5baec
 ---
 # Compiler Error C2764
 
-'param' : template parameter not used or deducible in partial specialization 'specialization'
+> 'param' : template parameter not used or deducible in partial specialization 'specialization'
 
 A template parameter is not used in a partial specialization. This makes the partial specialization unusable because the template parameter cannot be deduced.
 

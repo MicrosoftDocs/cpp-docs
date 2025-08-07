@@ -8,7 +8,7 @@ ms.assetid: 38c79a05-b56d-485b-820f-95e8c0cb926f
 ---
 # Compiler Error C2761
 
-'function' : member function redeclaration not allowed
+> 'function' : member function redeclaration not allowed
 
 You cannot redeclare a member function. You can define it, but not redeclare it.
 

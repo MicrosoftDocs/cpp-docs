@@ -8,7 +8,7 @@ ms.assetid: 423793d8-a3b2-4f35-85f8-ae1d043e2b69
 ---
 # Compiler Error C2780
 
-'declaration' : expects N arguments - M provided
+> 'declaration' : expects N arguments - M provided
 
 A function template has too few or too many arguments.
 

@@ -8,7 +8,7 @@ ms.assetid: 3d761fe2-881c-48bd-afae-e2e714e20473
 ---
 # Compiler Error C2784
 
-'declaration' : could not deduce template argument for 'type' from 'type'
+> 'declaration' : could not deduce template argument for 'type' from 'type'
 
 The compiler cannot determine a template argument from the supplied function arguments.
 

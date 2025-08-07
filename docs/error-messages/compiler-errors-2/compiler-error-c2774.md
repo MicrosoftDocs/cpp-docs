@@ -8,7 +8,7 @@ ms.assetid: 10f428c6-7f49-489a-92ba-6ef978b7caaf
 ---
 # Compiler Error C2774
 
-'identifier' : no 'put' method is associated with this property
+> 'identifier' : no 'put' method is associated with this property
 
 A data member declared with [property](../../cpp/property-cpp.md) has no `put` function, but an expression tries to set its value.
 

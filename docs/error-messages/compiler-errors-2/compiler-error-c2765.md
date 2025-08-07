@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2765"]
 ---
 # Compiler Error C2765
 
-'function' : an explicit specialization of a function template cannot have any default arguments
+> 'function' : an explicit specialization of a function template cannot have any default arguments
 
 Default arguments are not allowed on an explicit specialization of a function template. For more information, see [Explicit Specialization of Function Templates](../../cpp/explicit-specialization-of-function-templates.md).
 

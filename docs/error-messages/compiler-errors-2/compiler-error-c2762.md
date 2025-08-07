@@ -8,7 +8,7 @@ ms.assetid: 8b81a801-fd48-40a1-8bee-0748795b12e4
 ---
 # Compiler Error C2762
 
-'class' : invalid expression as a template argument for 'argument'
+> 'class' : invalid expression as a template argument for 'argument'
 
 When using [/Za](../../build/reference/za-ze-disable-language-extensions.md), the compiler will not convert an integral to a pointer.
 

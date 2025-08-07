@@ -8,7 +8,7 @@ ms.assetid: 8b685422-294d-4f64-9f3d-c14eaf03a93d
 ---
 # Compiler Error C2782
 
-'declaration' : template parameter 'identifier' is ambiguous
+> 'declaration' : template parameter 'identifier' is ambiguous
 
 The compiler cannot determine the type of a template argument.
 

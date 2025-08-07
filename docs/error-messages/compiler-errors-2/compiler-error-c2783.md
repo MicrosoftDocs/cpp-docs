@@ -8,7 +8,7 @@ ms.assetid: 1ce94a11-bb8b-4be3-a222-f1f105da74b3
 ---
 # Compiler Error C2783
 
-'declaration' : could not deduce template argument for 'identifier'
+> 'declaration' : could not deduce template argument for 'identifier'
 
 The compiler cannot determine a template argument. Default arguments cannot be used to deduce a template argument.
 

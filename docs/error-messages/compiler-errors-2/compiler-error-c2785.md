@@ -8,7 +8,7 @@ ms.assetid: d8d13360-0d00-4815-8475-b49c7f0dc0f3
 ---
 # Compiler Error C2785
 
-'declaration1' and 'declaration2' have different return types
+> 'declaration1' and 'declaration2' have different return types
 
 The return type of function template specialization differs from the return type of the primary function template.
 

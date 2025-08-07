@@ -8,7 +8,7 @@ ms.assetid: 4a00e492-855a-41f3-8a18-5f60ee20c2f2
 ---
 # Compiler Error C2779
 
-'declaration' : property methods can only be associated with non-static data members
+> 'declaration' : property methods can only be associated with non-static data members
 
 The **`property`** extended attribute is incorrectly applied to a static data member.
 

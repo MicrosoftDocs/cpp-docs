@@ -8,7 +8,7 @@ ms.assetid: 5fe158c0-2a65-488a-aca2-61d4a8b32d43
 ---
 # Compiler Error C2777
 
-only one 'put' method can be specified per property
+> only one 'put' method can be specified per property
 
 A [property](../../cpp/property-cpp.md) declspec modifier had more than one `put` property.
 
