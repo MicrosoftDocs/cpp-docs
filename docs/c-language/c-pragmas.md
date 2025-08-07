@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: C Pragmas"
 title: "C Pragmas"
+description: "Learn more about: C Pragmas"
 ms.date: 07/26/2020
 helpviewer_keywords: ["pragmas, C/C++"]
-ms.assetid: 3d6d36b4-d565-4632-a4cd-e39aeaded5ad
 ---
 # C Pragmas
 
