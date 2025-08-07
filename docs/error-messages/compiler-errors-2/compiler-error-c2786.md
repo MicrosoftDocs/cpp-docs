@@ -20,7 +20,7 @@ The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type 
 
 ## Example
 
-The following sample generates C2786:
+The following example generates C2786:
 
 ```cpp
 // C2786.cpp

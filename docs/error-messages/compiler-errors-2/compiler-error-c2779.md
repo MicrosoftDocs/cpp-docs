@@ -16,7 +16,7 @@ The **`property`** extended attribute is incorrectly applied to a static data me
 
 ## Example
 
-The following sample generates C2779:
+The following example generates C2779:
 
 ```cpp
 // C2779.cpp

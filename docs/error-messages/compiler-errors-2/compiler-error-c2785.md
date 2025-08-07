@@ -20,7 +20,7 @@ The return type of function template specialization differs from the return type
 
 ## Example
 
-The following sample generates C2785:
+The following example generates C2785:
 
 ```cpp
 // C2785.cpp

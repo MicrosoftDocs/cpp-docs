@@ -27,7 +27,7 @@ struct __declspec(uuid("{00000000-0000-0000-0000-000000000000}")) B{};
 
 The `uuid` extended attribute accepts strings recognized by [CLSIDFromString](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring), with or without brace delimiters.
 
-The following sample generates C2778:
+The following example generates C2778:
 
 ```cpp
 // C2778b.cpp

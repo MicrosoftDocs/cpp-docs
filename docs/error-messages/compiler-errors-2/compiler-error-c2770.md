@@ -16,7 +16,7 @@ Function template candidates with explicit template or generic arguments resulte
 
 ## Example
 
-The following sample generates C2770:
+The following example generates C2770:
 
 ```cpp
 // C2770.cpp

@@ -16,7 +16,7 @@ This error message appears if the user ever tries to uses the keyword [super](..
 
 ## Example
 
-The following sample generates C2790:
+The following example generates C2790:
 
 ```cpp
 // C2790.cpp

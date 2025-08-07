@@ -16,7 +16,7 @@ The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type 
 
 ## Example
 
-The following sample generates C2788:
+The following example generates C2788:
 
 ```cpp
 // C2788.cpp

@@ -16,7 +16,7 @@ Duplicate explicit specializations are not allowed. For more information, see [E
 
 ## Example
 
-The following sample generates C2766:
+The following example generates C2766:
 
 ```cpp
 // C2766.cpp

@@ -16,7 +16,7 @@ The compiler cannot determine a template argument from the supplied function arg
 
 ## Example
 
-The following sample generates C2784 and shows how to fix it:
+The following example generates C2784 and shows how to fix it:
 
 ```cpp
 // C2784.cpp

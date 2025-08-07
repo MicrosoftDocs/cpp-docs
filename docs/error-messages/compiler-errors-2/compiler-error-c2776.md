@@ -16,7 +16,7 @@ You can only specify one `get` function in the [property](../../cpp/property-cpp
 
 ## Example
 
-The following sample generates C2776:
+The following example generates C2776:
 
 ```cpp
 // C2776.cpp

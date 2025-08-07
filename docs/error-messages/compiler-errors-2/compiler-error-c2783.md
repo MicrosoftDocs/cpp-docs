@@ -16,7 +16,7 @@ The compiler cannot determine a template argument. Default arguments cannot be u
 
 ## Examples
 
-The following sample generates C2783:
+The following example generates C2783:
 
 ```cpp
 // C2783.cpp

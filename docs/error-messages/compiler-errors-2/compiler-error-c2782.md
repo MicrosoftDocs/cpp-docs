@@ -16,7 +16,7 @@ The compiler cannot determine the type of a template argument.
 
 ## Examples
 
-The following sample generates C2782:
+The following example generates C2782:
 
 ```cpp
 // C2782.cpp

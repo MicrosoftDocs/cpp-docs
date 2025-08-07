@@ -16,7 +16,7 @@ A [property](../../cpp/property-cpp.md) declspec modifier had more than one `put
 
 ## Example
 
-The following sample generates C2777:
+The following example generates C2777:
 
 ```cpp
 // C2777.cpp

@@ -16,7 +16,7 @@ A data member declared with the [property](../../cpp/property-cpp.md) extended a
 
 ## Example
 
-The following sample generates C2775:
+The following example generates C2775:
 
 ```cpp
 // C2775.cpp

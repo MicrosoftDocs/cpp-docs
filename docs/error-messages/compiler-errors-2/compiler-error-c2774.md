@@ -16,7 +16,7 @@ A data member declared with [property](../../cpp/property-cpp.md) has no `put` f
 
 ## Example
 
-The following sample generates C2774:
+The following example generates C2774:
 
 ```cpp
 // C2774.cpp

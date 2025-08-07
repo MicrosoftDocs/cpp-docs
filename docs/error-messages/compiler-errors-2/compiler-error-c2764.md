@@ -16,7 +16,7 @@ A template parameter is not used in a partial specialization. This makes the par
 
 ## Example
 
-The following sample generates C2764:
+The following example generates C2764:
 
 ```cpp
 // C2764.cpp

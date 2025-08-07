@@ -16,7 +16,7 @@ A function template with a variable parameter list has too few arguments.
 
 ## Example
 
-The following sample generates C2781:
+The following example generates C2781:
 
 ```cpp
 // C2781.cpp

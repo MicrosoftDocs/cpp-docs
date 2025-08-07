@@ -15,7 +15,7 @@ Default arguments are not allowed on an explicit specialization of a function te
 
 ## Example
 
-The following sample generates C2765:
+The following example generates C2765:
 
 ```cpp
 // C2765.cpp

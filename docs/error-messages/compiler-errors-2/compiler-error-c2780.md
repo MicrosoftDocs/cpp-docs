@@ -16,7 +16,7 @@ A function template has too few or too many arguments.
 
 ## Example
 
-The following sample generates C2780 and shows how to fix it:
+The following example generates C2780 and shows how to fix it:
 
 ```cpp
 // C2780.cpp

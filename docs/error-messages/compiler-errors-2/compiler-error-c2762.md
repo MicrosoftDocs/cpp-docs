@@ -16,7 +16,7 @@ When using [/Za](../../build/reference/za-ze-disable-language-extensions.md), th
 
 ## Example
 
-The following sample generates C2762:
+The following example generates C2762:
 
 ```cpp
 // C2762.cpp
