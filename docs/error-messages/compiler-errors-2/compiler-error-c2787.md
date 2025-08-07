@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2787"
 title: "Compiler Error C2787"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2787"
+ms.date: 11/04/2016
 f1_keywords: ["C2787"]
 helpviewer_keywords: ["C2787"]
-ms.assetid: 34cb57e6-cafe-4ce7-bcc6-53d194629bd0
 ---
 # Compiler Error C2787
 

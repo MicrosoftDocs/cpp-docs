@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2788"
 title: "Compiler Error C2788"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2788"
+ms.date: 11/04/2016
 f1_keywords: ["C2788"]
 helpviewer_keywords: ["C2788"]
-ms.assetid: 8688fc5c-e652-43b4-b407-9c488c76f2db
 ---
 # Compiler Error C2788
 

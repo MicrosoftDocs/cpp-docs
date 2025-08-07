@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2777"
 title: "Compiler Error C2777"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2777"
+ms.date: 11/04/2016
 f1_keywords: ["C2777"]
 helpviewer_keywords: ["C2777"]
-ms.assetid: 5fe158c0-2a65-488a-aca2-61d4a8b32d43
 ---
 # Compiler Error C2777
 

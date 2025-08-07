@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2778"
 title: "Compiler Error C2778"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2778"
+ms.date: 11/04/2016
 f1_keywords: ["C2778"]
 helpviewer_keywords: ["C2778"]
-ms.assetid: b24cb732-2914-42cc-8928-e2d87b393428
 ---
 # Compiler Error C2778
 

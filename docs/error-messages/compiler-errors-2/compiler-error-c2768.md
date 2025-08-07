@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2768"
 title: "Compiler Error C2768"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2768"
+ms.date: 11/04/2016
 f1_keywords: ["C2768"]
 helpviewer_keywords: ["C2768"]
-ms.assetid: a7f6047a-6a80-4737-ad5c-c12868639fb5
 ---
 # Compiler Error C2768
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2779"
 title: "Compiler Error C2779"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2779"
+ms.date: 11/04/2016
 f1_keywords: ["C2779"]
 helpviewer_keywords: ["C2779"]
-ms.assetid: 4a00e492-855a-41f3-8a18-5f60ee20c2f2
 ---
 # Compiler Error C2779
 

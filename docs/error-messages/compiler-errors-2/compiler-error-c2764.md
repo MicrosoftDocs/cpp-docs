@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2764"
 title: "Compiler Error C2764"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2764"
+ms.date: 11/04/2016
 f1_keywords: ["C2764"]
 helpviewer_keywords: ["C2764"]
-ms.assetid: 3754f5af-e094-4425-be20-d0c9a9b5baec
 ---
 # Compiler Error C2764
 

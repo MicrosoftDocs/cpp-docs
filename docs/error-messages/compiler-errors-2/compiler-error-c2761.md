@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2761"
 title: "Compiler Error C2761"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2761"
+ms.date: 11/04/2016
 f1_keywords: ["C2761"]
 helpviewer_keywords: ["C2761"]
-ms.assetid: 38c79a05-b56d-485b-820f-95e8c0cb926f
 ---
 # Compiler Error C2761
 

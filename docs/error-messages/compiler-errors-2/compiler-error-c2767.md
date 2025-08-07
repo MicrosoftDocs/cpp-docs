@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2767"
 title: "Compiler Error C2767"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2767"
+ms.date: 11/04/2016
 f1_keywords: ["C2767"]
 helpviewer_keywords: ["C2767"]
-ms.assetid: e8f84178-a160-4d71-a236-07e4fcc11e96
 ---
 # Compiler Error C2767
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2776"
 title: "Compiler Error C2776"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2776"
+ms.date: 11/04/2016
 f1_keywords: ["C2776"]
 helpviewer_keywords: ["C2776"]
-ms.assetid: 9d80addc-62c7-40fc-a2cc-60303abb87df
 ---
 # Compiler Error C2776
 
