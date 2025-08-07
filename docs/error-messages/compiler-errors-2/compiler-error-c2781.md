@@ -10,7 +10,11 @@ ms.assetid: f29b9963-f55b-427c-8db6-50f37713df5a
 
 > 'declaration' : expects at least value1 argument - value2 provided
 
+## Remarks
+
 A function template with a variable parameter list has too few arguments.
+
+## Example
 
 The following sample generates C2781:
 

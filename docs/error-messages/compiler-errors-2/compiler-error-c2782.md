@@ -10,7 +10,11 @@ ms.assetid: 8b685422-294d-4f64-9f3d-c14eaf03a93d
 
 > 'declaration' : template parameter 'identifier' is ambiguous
 
+## Remarks
+
 The compiler cannot determine the type of a template argument.
+
+## Examples
 
 The following sample generates C2782:
 

@@ -10,7 +10,11 @@ ms.assetid: 5fe158c0-2a65-488a-aca2-61d4a8b32d43
 
 > only one 'put' method can be specified per property
 
+## Remarks
+
 A [property](../../cpp/property-cpp.md) declspec modifier had more than one `put` property.
+
+## Example
 
 The following sample generates C2777:
 

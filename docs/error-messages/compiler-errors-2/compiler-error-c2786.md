@@ -10,11 +10,15 @@ ms.assetid: 6676d8c0-86dd-4a39-bdda-b75a35f4d137
 
 > 'type' : invalid operand for __uuidof
 
+## Remarks
+
 The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type with a GUID attached or an object of such a user-defined type.  Possible causes:
 
 1. The argument is not a user-defined type.
 
 1. **`__uuidof`** cannot extract the GUID from the argument.
+
+## Example
 
 The following sample generates C2786:
 

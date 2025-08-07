@@ -10,7 +10,11 @@ ms.assetid: 423793d8-a3b2-4f35-85f8-ae1d043e2b69
 
 > 'declaration' : expects N arguments - M provided
 
+## Remarks
+
 A function template has too few or too many arguments.
+
+## Example
 
 The following sample generates C2780 and shows how to fix it:
 

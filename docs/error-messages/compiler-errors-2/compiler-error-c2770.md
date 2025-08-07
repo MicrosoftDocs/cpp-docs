@@ -10,7 +10,11 @@ ms.assetid: 100001b5-80b0-4971-8ff6-9023f443c926
 
 > invalid explicit template_or_generic argument(s) for 'template'
 
+## Remarks
+
 Function template candidates with explicit template or generic arguments resulted in disallowed function types.
+
+## Example
 
 The following sample generates C2770:
 

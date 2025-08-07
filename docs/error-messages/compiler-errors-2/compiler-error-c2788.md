@@ -10,7 +10,11 @@ ms.assetid: 8688fc5c-e652-43b4-b407-9c488c76f2db
 
 > 'identifier' : more than one GUID associated with this object
 
+## Remarks
+
 The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type with a GUID attached or an object of such a user-defined type. This error occurs when the argument is an object with multiple GUIDs.
+
+## Example
 
 The following sample generates C2788:
 

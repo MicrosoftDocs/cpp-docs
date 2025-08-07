@@ -10,6 +10,8 @@ ms.assetid: 38c79a05-b56d-485b-820f-95e8c0cb926f
 
 > 'function' : member function redeclaration not allowed
 
+## Remarks
+
 You cannot redeclare a member function. You can define it, but not redeclare it.
 
 ## Examples

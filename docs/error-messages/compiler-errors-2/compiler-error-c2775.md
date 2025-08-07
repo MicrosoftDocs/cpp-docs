@@ -10,7 +10,11 @@ ms.assetid: 9c488508-ade0-48f1-b94f-d538d15f807a
 
 > 'identifier' : no 'get' method is associated with this property
 
+## Remarks
+
 A data member declared with the [property](../../cpp/property-cpp.md) extended attribute does not have a `get` function specified, but an expression tries to retrieve its value.
+
+## Example
 
 The following sample generates C2775:
 

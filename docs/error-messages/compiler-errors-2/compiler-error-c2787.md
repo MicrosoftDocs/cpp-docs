@@ -10,7 +10,11 @@ ms.assetid: 34cb57e6-cafe-4ce7-bcc6-53d194629bd0
 
 > 'identifier' : no GUID has been associated with this object
 
+## Remarks
+
 The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type with a GUID attached or an object of such a user-defined type. This error occurs when the argument is a user-defined type with no GUID.
+
+## Example
 
 The following sample generates C2787:
 

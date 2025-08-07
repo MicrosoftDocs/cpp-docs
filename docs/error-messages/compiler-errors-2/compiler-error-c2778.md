@@ -10,7 +10,11 @@ ms.assetid: b24cb732-2914-42cc-8928-e2d87b393428
 
 > improperly formed GUID in __declspec(uuid())
 
+## Remarks
+
 An incorrect GUID is supplied to the [uuid](../../cpp/uuid-cpp.md) extended attribute.
+
+## Example
 
 The GUID must be a string of hexadecimal numbers with the following format:
 

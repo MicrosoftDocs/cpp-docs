@@ -10,7 +10,11 @@ ms.assetid: 10f428c6-7f49-489a-92ba-6ef978b7caaf
 
 > 'identifier' : no 'put' method is associated with this property
 
+## Remarks
+
 A data member declared with [property](../../cpp/property-cpp.md) has no `put` function, but an expression tries to set its value.
+
+## Example
 
 The following sample generates C2774:
 
