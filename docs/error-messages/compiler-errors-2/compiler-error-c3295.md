@@ -10,7 +10,7 @@ ms.assetid: 83f0aa4d-0e0a-4905-9f66-fcf9991fc07a
 
 '#pragma pragma' can only be used at global or namespace scope
 
-Some pragmas cannot be used in a function.  See [Pragma Directives and the __Pragma Keyword](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) for more information.
+Some pragmas cannot be used in a function.  See [Pragma directives and the `__pragma` and `_Pragma` keywords](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) for more information.
 
 ## Example
 
