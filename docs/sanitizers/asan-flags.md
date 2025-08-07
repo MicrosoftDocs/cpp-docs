@@ -11,7 +11,7 @@ The following is a list of supported runtime options that can be set by the `ASA
 
 This is a living document that may update at any time due to the constant development of AddressSanitizer on the Windows platform. If you discover options that aren't accurately documented, we invite you to [report a bug](https://aka.ms/feedback/report?space=62).
 
-| **Flag** | **Default value** | **Description** |
+| Flag | Default value | Description |
 |:---------|:------------------|:----------------|
 |abort_on_error | false | If true, the tool calls `abort()` instead of `_exit()` after printing the error report.|
 |alloc_dealloc_mismatch | false | Enables runtime detection of mismatched memory operations such as `malloc`/`delete`, `new[]`/`free`, etc.|
@@ -27,7 +27,7 @@ This is a living document that may update at any time due to the constant develo
 |check_printf | true | If true, enables ASan to validate printf family function arguments for memory safety violations.|
 |clear_shadow_mmap_threshold | 64 * 1024 | Large shadow regions are zero-filled using `mmap(NORESERVE)` instead of `memset()`. This is the threshold size in bytes. (Not Implemented - `memset()` is always called on Windows)|
 |color | auto | Colorize reports: (always|never|auto). (Not Implemented on Windows)|
-|continue_on_error|0| Allows an application to continue running while reporting unique memory safety errors. 0 - disabled, 1 - stderr(1), 2 - stderr(2). See [continue_on_error](asan-continue-on-error.md).|
+|continue_on_error | 0 | Allows an application to continue running while reporting unique memory safety errors. 0 - disabled, 1 - stderr(1), 2 - stderr(2). See [continue_on_error](asan-continue-on-error.md).|
 |coverage | false | If true, coverage information will be dumped at program shutdown (if the coverage instrumentation was enabled at compile time).|
 |coverage_bitset | false | If true (and if 'coverage' is set too), the coverage information will also be dumped as a bitset to a separate file.|
 |coverage_counters | false | If true (and if 'coverage' is set too), the bitmap that corresponds to coverage counters will be dumped.|
