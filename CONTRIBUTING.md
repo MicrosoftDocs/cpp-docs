@@ -14,13 +14,13 @@ In this topic, we'll cover:
 
 ## Process for contributing
 
-**Step 1:** The content inside the **docs** folder is organized into sections that are organized by content area (e.g., debugger). Try to determine the correct folder for your new content.
+**Step 1:** The content inside the **docs** folder is organized into sections that are organized by content area (e.g., debugger). Try to determine the correct folder for your changes.
 
 **Step 2:** Fork the `MicrosoftDocs/cpp-docs` repository.
 
-**Step 3:** Create a `branch` for your article.
+**Step 3:** Create a `branch` for your changes.
 
-**Step 4:** Write your article.
+**Step 4:** Make your edits and commit.
 
 If it's a new topic, you can use this [template file](./styleguide/template.md) as your starting point. It contains the writing guidelines and also explains the metadata required for each article, such as author information.
 
