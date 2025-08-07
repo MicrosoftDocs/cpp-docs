@@ -12,7 +12,7 @@ The following is a list of supported runtime options that can be set by the `ASA
 This is a living document that may update at any time due to the constant development of AddressSanitizer on the Windows platform. If you discover options that aren't accurately documented, we invite you to [report a bug](https://aka.ms/feedback/report?space=62).
 
 | Flag | Default value | Description |
-|:---------|:------------------|:----------------|
+|:-----|:--------------|:------------|
 |abort_on_error | false | If true, the tool calls `abort()` instead of `_exit()` after printing the error report.|
 |alloc_dealloc_mismatch | false | Enables runtime detection of mismatched memory operations such as `malloc`/`delete`, `new[]`/`free`, etc.|
 |allocator_frees_and_returns_null_on_realloc_zero | 1 | 1 - realloc(p, 0) is equivalent to free(p). 0 - realloc(p, 0) will return a non-`NULL` value.|
