@@ -14,10 +14,7 @@ In this topic, we'll cover:
 
 ## Process for contributing
 
-**Step 1:** Open an issue describing the article you wish to write and how it relates to existing content.
-The content inside the **docs** folder is organized into sections that are organized by content area (e.g., debugger). Try to determine the correct folder for your new content. Get feedback on your proposal.
-
-You can skip this first step for small changes.
+**Step 1:** The content inside the **docs** folder is organized into sections that are organized by content area (e.g., debugger). Try to determine the correct folder for your new content.
 
 **Step 2:** Fork the `MicrosoftDocs/cpp-docs` repository.
 
@@ -46,8 +43,6 @@ docs
 
 **Step 5:** Submit a Pull Request (PR) from your branch to `MicrosoftDocs/cpp-docs/main`.
 
-If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keyword to the commit message or PR description, so the issue can be automatically closed when the PR is merged. For more information, see [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
-
 The Visual Studio team will review your PR and let you know if the change looks good or if there are any other updates/changes necessary in order to approve it.
 
 **Step 6:** Make any necessary updates to your branch as discussed with the team.
@@ -60,7 +55,7 @@ On a certain cadence, we push all commits from main branch into the live branch 
 
 Below is a short list of guiding rules that you should keep in mind when you are contributing to the .NET documentation.
 
-- **DON'T** surprise us with big pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time.
+- **DON'T** surprise us with big pull requests.
 - **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines.
 - **DO** use the [template](./styleguide/template.md) file as the starting point of your work.
 - **DO** create a separate branch on your fork before working on the articles.
@@ -68,7 +63,7 @@ Below is a short list of guiding rules that you should keep in mind when you are
 - **DO** blog and tweet (or whatever) about your contributions, frequently!
 
 > [!NOTE]
-> You might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/MicrosoftDocs/cpp-docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal.
+> You might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site.
 
 ## Building the documentation
 
