@@ -43,7 +43,7 @@ docs
 
 **Step 5:** Submit a Pull Request (PR) from your branch to `MicrosoftDocs/cpp-docs/main`.
 
-The Visual Studio team will review your PR and let you know if the change looks good or if there are any other updates/changes necessary in order to approve it.
+The Visual C++ team will review your PR and let you know if the change looks good or if there are any other updates/changes necessary in order to approve it.
 
 **Step 6:** Make any necessary updates to your branch as discussed with the team.
 
@@ -53,7 +53,7 @@ On a certain cadence, we push all commits from main branch into the live branch 
 
 ## DOs and DON'Ts
 
-Below is a short list of guiding rules that you should keep in mind when you are contributing to the .NET documentation.
+Below is a short list of guiding rules that you should keep in mind when you are contributing to the Visual C++ documentation.
 
 - **DON'T** surprise us with big pull requests.
 - **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines.
