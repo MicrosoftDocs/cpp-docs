@@ -30,7 +30,7 @@ Possible C2801 causes:
 
 ## Example
 
-- The following sample generates C2801:
+- The following example generates C2801:
 
 ```cpp
 // C2801.cpp

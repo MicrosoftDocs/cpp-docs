@@ -16,7 +16,7 @@ The following operators cannot be overloaded: class member access (`.`), pointer
 
 ## Example
 
-The following sample generates C2800:
+The following example generates C2800:
 
 ```cpp
 // C2800.cpp

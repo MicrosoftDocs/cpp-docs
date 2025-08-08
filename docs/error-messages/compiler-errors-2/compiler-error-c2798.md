@@ -20,7 +20,7 @@ Multiple inherited structures contain the member you referenced with [super](../
 
 ## Example
 
-The following sample generates C2798:
+The following example generates C2798:
 
 ```cpp
 // C2798.cpp

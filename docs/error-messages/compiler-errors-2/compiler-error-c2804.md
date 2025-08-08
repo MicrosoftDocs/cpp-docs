@@ -16,7 +16,7 @@ The overloaded binary operator member function is declared with more than one pa
 
 ## Examples
 
-The following sample generates C2804 and shows how to fix it.
+The following example generates C2804 and shows how to fix it.
 
 ```cpp
 // C2804.cpp
@@ -33,7 +33,7 @@ int main() {
 }
 ```
 
-The following sample generates C2804 and shows how to fix it.
+The following example generates C2804 and shows how to fix it.
 
 ```cpp
 // C2804_2.cpp

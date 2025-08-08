@@ -16,7 +16,7 @@ The binary operator has no parameters.
 
 ## Example
 
-The following sample generates C2805:
+The following example generates C2805:
 
 ```cpp
 // C2805.cpp

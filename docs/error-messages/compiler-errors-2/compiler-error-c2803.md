@@ -20,7 +20,7 @@ If both parameters are pointers it will be a pure comparison of pointer addresse
 
 ## Example
 
-The following sample generates C2803:
+The following example generates C2803:
 
 ```cpp
 // C2803.cpp

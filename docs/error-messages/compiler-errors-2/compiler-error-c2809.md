@@ -16,7 +16,7 @@ The operator lacks required parameters.
 
 ## Example
 
-The following sample generates C2809:
+The following example generates C2809:
 
 ```cpp
 // C2809.cpp

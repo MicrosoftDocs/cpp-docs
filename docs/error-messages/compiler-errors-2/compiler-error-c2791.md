@@ -16,7 +16,7 @@ The keyword [super](../../cpp/super.md) was used within the context of a member 
 
 ## Example
 
-The following sample generates C2791:
+The following example generates C2791:
 
 ```cpp
 // C2791.cpp

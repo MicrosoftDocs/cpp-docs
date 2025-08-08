@@ -16,7 +16,7 @@ A native type cannot be nested in a CLR or WinRT type.
 
 ## Example
 
-The following sample generates C2814 and shows how to fix it.
+The following example generates C2814 and shows how to fix it.
 
 ```cpp
 // C2814.cpp

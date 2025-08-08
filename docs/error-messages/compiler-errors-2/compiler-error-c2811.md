@@ -16,7 +16,7 @@ You attempted to use an unmanaged class as a base class for a managed class.
 
 ## Example
 
-The following sample generates C2811:
+The following example generates C2811:
 
 ```cpp
 // C2811.cpp

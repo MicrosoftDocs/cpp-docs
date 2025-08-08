@@ -16,7 +16,7 @@ The unary operator has a nonvoid parameter list.
 
 ## Example
 
-The following sample generates C2808:
+The following example generates C2808:
 
 ```cpp
 // C2808.cpp

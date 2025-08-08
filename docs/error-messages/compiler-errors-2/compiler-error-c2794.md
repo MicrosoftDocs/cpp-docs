@@ -16,7 +16,7 @@ You tried to use [super](../../cpp/super.md) to call a nonexistent member functi
 
 ## Example
 
-The following sample generates C2794
+The following example generates C2794
 
 ```cpp
 // C2794.cpp

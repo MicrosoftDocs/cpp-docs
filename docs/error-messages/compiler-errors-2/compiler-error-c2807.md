@@ -16,7 +16,7 @@ The second parameter to a postfix operator has the wrong type.
 
 ## Example
 
-The following sample generates C2807:
+The following example generates C2807:
 
 ```cpp
 // C2807.cpp

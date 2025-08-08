@@ -16,7 +16,7 @@ You need to define `operator->()` to use this pointer operation.
 
 ## Examples
 
-The following sample generates C2819:
+The following example generates C2819:
 
 ```cpp
 // C2819.cpp
@@ -46,7 +46,7 @@ void F(D j) {
 }
 ```
 
-C2819 can also occur when using [C++ Stack Semantics for Reference Types](../../dotnet/cpp-stack-semantics-for-reference-types.md). The following sample generates C2819:
+C2819 can also occur when using [C++ Stack Semantics for Reference Types](../../dotnet/cpp-stack-semantics-for-reference-types.md). The following example generates C2819:
 
 ```cpp
 // C2819_b.cpp

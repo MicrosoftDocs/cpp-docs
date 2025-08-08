@@ -16,7 +16,7 @@ An overloaded operator has too many parameters.
 
 ## Example
 
-The following sample generates C2806:
+The following example generates C2806:
 
 ```cpp
 // C2806.cpp

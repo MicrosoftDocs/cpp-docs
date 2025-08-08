@@ -16,7 +16,7 @@ The only tokens that can follow `__super::` are an identifier or the keyword **`
 
 ## Example
 
-The following sample generates C2793
+The following example generates C2793
 
 ```cpp
 // C2793.cpp

@@ -16,7 +16,7 @@ An operator declared by a **`static`** member function must have at least one pa
 
 ## Example
 
-The following sample generates C2802:
+The following example generates C2802:
 
 ```cpp
 // C2802.cpp
