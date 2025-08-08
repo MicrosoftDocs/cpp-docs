@@ -1,14 +1,13 @@
 ---
 title: "_cwait"
 description: "API reference for the Microsoft Visual C runtime `_cwait()` function."
-ms.date: "10/23/2020"
+ms.date: 10/23/2020
 api_name: ["_cwait", "_o__cwait"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_cwait"]
 helpviewer_keywords: ["cwait function", "_cwait function"]
-ms.assetid: d9b596b5-45f4-4e03-9896-3f383cb922b8
 ---
 # `_cwait`
 
@@ -73,7 +72,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_cwait.c
-// compile with: /c
 // This program launches several processes and waits
 // for a specified process to finish.
 

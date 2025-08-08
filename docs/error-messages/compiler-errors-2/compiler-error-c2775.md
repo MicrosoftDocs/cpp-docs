@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2775"
 title: "Compiler Error C2775"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2775"
+ms.date: 11/04/2016
 f1_keywords: ["C2775"]
 helpviewer_keywords: ["C2775"]
-ms.assetid: 9c488508-ade0-48f1-b94f-d538d15f807a
 ---
 # Compiler Error C2775
 
-'identifier' : no 'get' method is associated with this property
+> 'identifier' : no 'get' method is associated with this property
+
+## Remarks
 
 A data member declared with the [property](../../cpp/property-cpp.md) extended attribute does not have a `get` function specified, but an expression tries to retrieve its value.
 
-The following sample generates C2775:
+## Example
+
+The following example generates C2775:
 
 ```cpp
 // C2775.cpp

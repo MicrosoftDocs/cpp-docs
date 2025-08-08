@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2743"
 title: "Compiler Error C2743"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2743"
+ms.date: 11/04/2016
 f1_keywords: ["C2743"]
 helpviewer_keywords: ["C2743"]
-ms.assetid: 644cd444-21d2-471d-a176-f5f52c5a0b73
 ---
 # Compiler Error C2743
 
-'type' : cannot catch a native type with __clrcall destructor or copy constructor
+> 'type' : cannot catch a native type with __clrcall destructor or copy constructor
+
+## Remarks
 
 A module compiled with **/clr** attempted to catch an exception of native type and where the type's destructor or copy constructor uses `__clrcall` calling convention.
 
@@ -18,7 +19,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Example
 
-The following sample generates C2743.
+The following example generates C2743.
 
 ```cpp
 // C2743.cpp

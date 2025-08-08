@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2674"
 title: "Compiler Error C2674"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2674"
+ms.date: 11/04/2016
 f1_keywords: ["C2674"]
 helpviewer_keywords: ["C2674"]
-ms.assetid: 7cbd70d8-d992-44d7-a5cb-dd8cf9c759d2
 ---
 # Compiler Error C2674
 
-a generic declaration is not allowed in this context
+> a generic declaration is not allowed in this context
+
+## Remarks
 
 A generic was declared incorrectly. For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 
-The following sample generates C2674.
+The following example generates C2674.
 
 ```cpp
 // C2674.cpp

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: _com_ptr_t Relational Operators"
 title: "_com_ptr_t Relational Operators"
-ms.date: "11/04/2016"
+description: "Learn more about: _com_ptr_t Relational Operators"
+ms.date: 11/04/2016
 f1_keywords: ["_com_ptr_t::operator>", "_com_ptr_t::operator>=", "_com_ptr_t::operator<=", "_com_ptr_t::operator==", "_com_ptr_t::operator!=", "_com_ptr_t::operator<"]
 helpviewer_keywords: [">= operator [C++], comparing specific objects", "!= operator", "operator > [C++], pointers", "operator>= [C++], pointers", "operator < [C++], pointers", "operator!= [C++], relational operators", "< operator [C++], comparing specific objects", "operator== [C++], pointers", "operator == [C++], pointers", "<= operator [C++], with specific objects", "relational operators [C++], _com_ptr_t class", "operator >= [C++], pointers", "operator != [C++], relational operators", "operator <= [C++], pointers", "> operator [C++], comparing specific objects", "operator<= [C++], pointers", "operator< [C++], pointers", "== operator [C++], with specific Visual C++ objects"]
-ms.assetid: 5ae4028c-33ee-485d-bbda-88d2604d6d4b
 ---
 # _com_ptr_t Relational Operators
 
@@ -33,7 +32,7 @@ bool operator==( const _com_ptr_t& p ) throw();
 template<>
 bool operator==( _com_ptr_t& p ) throw();
 
-bool operator==( Int null );
+bool operator==( int null );
 
 template<typename _OtherIID>
 bool operator!=( const _com_ptr_t<_OtherIID>& p );
@@ -44,7 +43,7 @@ bool operator!=( _com_ptr_t<_OtherIID>& p );
 template<typename _InterfaceType>
 bool operator!=( _InterfaceType* p );
 
-bool operator!=( Int null );
+bool operator!=( int null );
 
 template<typename _OtherIID>
 bool operator<( const _com_ptr_t<_OtherIID>& p );

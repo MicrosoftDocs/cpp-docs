@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMFCRibbonComboBox Class"
 title: "CMFCRibbonComboBox Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CMFCRibbonComboBox Class"
+ms.date: 11/04/2016
 f1_keywords: ["CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::AddItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::DeleteItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::EnableDropDownListResize", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::FindItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetCount", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetCurSel", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetDropDownHeight", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetIntermediateSize", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetItemData", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::HasEditBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::IsResizeDropDownList", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::OnSelectItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::RemoveAllItems", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::SelectItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::SetDropDownHeight"]
 helpviewer_keywords: ["CMFCRibbonComboBox [MFC], CMFCRibbonComboBox", "CMFCRibbonComboBox [MFC], AddItem", "CMFCRibbonComboBox [MFC], DeleteItem", "CMFCRibbonComboBox [MFC], EnableDropDownListResize", "CMFCRibbonComboBox [MFC], FindItem", "CMFCRibbonComboBox [MFC], GetCount", "CMFCRibbonComboBox [MFC], GetCurSel", "CMFCRibbonComboBox [MFC], GetDropDownHeight", "CMFCRibbonComboBox [MFC], GetIntermediateSize", "CMFCRibbonComboBox [MFC], GetItem", "CMFCRibbonComboBox [MFC], GetItemData", "CMFCRibbonComboBox [MFC], HasEditBox", "CMFCRibbonComboBox [MFC], IsResizeDropDownList", "CMFCRibbonComboBox [MFC], OnSelectItem", "CMFCRibbonComboBox [MFC], RemoveAllItems", "CMFCRibbonComboBox [MFC], SelectItem", "CMFCRibbonComboBox [MFC], SetDropDownHeight"]
-ms.assetid: 9b29a6a4-cf17-4152-9b13-0bf90784b30d
 ---
 # CMFCRibbonComboBox Class
 
@@ -102,9 +101,9 @@ public:
 CMFCRibbonComboBox(
     UINT nID,
     BOOL bHasEditBox=TRUE,
-    Int nWidth=-1,
+    int nWidth=-1,
     LPCTSTR lpszLabel=NULL,
-    Int nImage=-1);
+    int nImage=-1);
 
 protected:
 CMFCRibbonComboBox();
