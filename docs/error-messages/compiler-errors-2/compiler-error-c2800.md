@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2800"
 title: "Compiler Error C2800"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2800"
+ms.date: 11/04/2016
 f1_keywords: ["C2800"]
 helpviewer_keywords: ["C2800"]
-ms.assetid: a2f1a590-9fe6-44cb-ad09-b4505ef47c6a
 ---
 # Compiler Error C2800
 

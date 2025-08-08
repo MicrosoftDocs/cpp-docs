@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2791"
 title: "Compiler Error C2791"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2791"
+ms.date: 11/04/2016
 f1_keywords: ["C2791"]
 helpviewer_keywords: ["C2791"]
-ms.assetid: 938ad1fb-75d9-4ce2-ad92-83d6249005b5
 ---
 # Compiler Error C2791
 

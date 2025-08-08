@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2798"
 title: "Compiler Error C2798"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2798"
+ms.date: 11/04/2016
 f1_keywords: ["C2798"]
 helpviewer_keywords: ["C2798"]
-ms.assetid: fb0cd861-b228-4f81-8090-e28344a727e0
 ---
 # Compiler Error C2798
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2806"
 title: "Compiler Error C2806"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2806"
+ms.date: 11/04/2016
 f1_keywords: ["C2806"]
 helpviewer_keywords: ["C2806"]
-ms.assetid: 7c9ff1f4-1590-4c47-991d-b1075a173b48
 ---
 # Compiler Error C2806
 

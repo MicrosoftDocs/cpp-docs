@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2792"
 title: "Compiler Error C2792"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2792"
+ms.date: 11/04/2016
 f1_keywords: ["C2792"]
 helpviewer_keywords: ["C2792"]
-ms.assetid: 392cf748-4f5e-4e62-a364-3118d5658408
 ---
 # Compiler Error C2792
 

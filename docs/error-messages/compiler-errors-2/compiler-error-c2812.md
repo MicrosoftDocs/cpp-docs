@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2812"
 title: "Compiler Error C2812"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2812"
+ms.date: 11/04/2016
 f1_keywords: ["C2812"]
 helpviewer_keywords: ["C2812"]
-ms.assetid: 22aadb8c-7232-489d-a3ad-60662dda30a8
 ---
 # Compiler Error C2812
 

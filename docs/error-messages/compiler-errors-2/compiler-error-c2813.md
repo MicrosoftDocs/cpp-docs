@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2813"
 title: "Compiler Error C2813"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2813"
+ms.date: 11/04/2016
 f1_keywords: ["C2813"]
 helpviewer_keywords: ["C2813"]
-ms.assetid: 6cf2135f-7b82-42d1-909a-5e864308a09c
 ---
 # Compiler Error C2813
 

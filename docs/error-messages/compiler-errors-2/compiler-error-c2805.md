@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2805"
 title: "Compiler Error C2805"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2805"
+ms.date: 11/04/2016
 f1_keywords: ["C2805"]
 helpviewer_keywords: ["C2805"]
-ms.assetid: c997dc56-e199-442f-b94e-ac551ec9b015
 ---
 # Compiler Error C2805
 

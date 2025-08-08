@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2815"
 title: "Compiler Error C2815"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2815"
+ms.date: 11/04/2016
 f1_keywords: ["C2815"]
 helpviewer_keywords: ["C2815"]
-ms.assetid: d0256fd6-0721-4c99-b03c-52d96e77a613
 ---
 # Compiler Error C2815
 

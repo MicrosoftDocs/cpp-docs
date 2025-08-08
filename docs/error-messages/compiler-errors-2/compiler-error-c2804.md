@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2804"
 title: "Compiler Error C2804"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2804"
+ms.date: 11/04/2016
 f1_keywords: ["C2804"]
 helpviewer_keywords: ["C2804"]
-ms.assetid: b066e563-cca4-450c-8ba7-3b0d7a89f3ea
 ---
 # Compiler Error C2804
 
