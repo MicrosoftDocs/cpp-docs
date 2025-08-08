@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Parameters"
 title: "Parameters"
-ms.date: "11/04/2016"
+description: "Learn more about: Parameters"
+ms.date: 11/04/2016
 helpviewer_keywords: ["arguments [C++], function", "function parameters", "parameters [C++]", "function arguments, vs. parameters", "parameters [C++], function", "functions [C], parameters", "function parameters, syntax", "ellipsis (...), parameters", "... ellipsis"]
-ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
 ---
 # Parameters
 
@@ -50,7 +49,7 @@ void new( double x, double y, double z )
 }
 ```
 
-If at least one parameter occurs in the parameter list, the list can end with a comma followed by three periods (**`, ...`**). This construction, called the "ellipsis notation," indicates a variable number of arguments to the function. (For more information, see [Calls with a Variable Number of Arguments](../c-language/calls-with-a-variable-number-of-arguments.md).) However, a call to the function must have at least as many arguments as there are parameters before the last comma.
+If at least one parameter occurs in the parameter list, the list can end with a comma followed by three periods (**`, ...`**). This construction, called the "ellipsis notation," indicates a variable number of arguments to the function. For more information, see [Calls with a Variable Number of Arguments](../c-language/calls-with-a-variable-number-of-arguments.md). However, a call to the function must have at least as many arguments as there are parameters before the last comma.
 
 If no arguments are to be passed to the function, the list of parameters is replaced by the keyword **`void`**. This use of **`void`** is distinct from its use as a type specifier.
 

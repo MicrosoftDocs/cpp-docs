@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Virtual Functions"
 title: "Virtual Functions"
-ms.date: "09/10/2019"
-helpviewer_keywords: ["functions [C++], virtual functions", "derived classes [C++], virtual functions", "virtual functions"]
-ms.assetid: b3e1ed88-2a90-4af8-960a-16f47deb3452
+description: "Learn more about: Virtual Functions"
+ms.date: 09/10/2019
 adobe-target: true
+helpviewer_keywords: ["functions [C++], virtual functions", "derived classes [C++], virtual functions", "virtual functions"]
 ---
 # Virtual Functions
 
@@ -137,7 +136,7 @@ Because virtual functions are called only for objects of class types, you cannot
 
 The **`virtual`** keyword can be used when declaring overriding functions in a derived class, but it is unnecessary; overrides of virtual functions are always virtual.
 
-Virtual functions in a base class must be defined unless they are declared using the *pure-specifier*. (For more information about pure virtual functions, see [Abstract Classes](../cpp/abstract-classes-cpp.md).)
+Virtual functions in a base class must be defined unless they are declared using the *pure-specifier*. For more information about pure virtual functions, see [Abstract Classes](../cpp/abstract-classes-cpp.md).
 
 The virtual function-call mechanism can be suppressed by explicitly qualifying the function name using the scope-resolution operator (`::`). Consider the earlier example involving the `Account` class. To call `PrintBalance` in the base class, use code such as the following:
 
