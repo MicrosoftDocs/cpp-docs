@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: _setjmp3"
 title: "_setjmp3"
-ms.date: "1/14/2021"
+description: "Learn more about: _setjmp3"
+ms.date: 1/14/2021
 api_name: ["_setjmp3"]
 api_location: ["msvcrt.dll", "msvcr90.dll", "msvcr110.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcr120.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["setjmp3", "_setjmp3"]
 helpviewer_keywords: ["_setjmp3 function", "setjmp3 function"]
-ms.assetid: 6129c2f3-8bac-4fdb-a827-44e1eebba500
 ---
 # `_setjmp3`
 
@@ -42,8 +41,6 @@ Always returns 0.
 ## Remarks
 
 Don't use this function in a C++ program. It's an intrinsic function that doesn't support C++. For more information about how to use `setjmp`, see [Using setjmp/longjmp](../cpp/using-setjmp-longjmp.md).
-
-## Requirements
 
 ## See also
 

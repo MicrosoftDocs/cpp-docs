@@ -4,7 +4,6 @@ description: "Describes Microsoft C/C++ compiler error C2703."
 ms.date: 08/24/2020
 f1_keywords: ["C2703"]
 helpviewer_keywords: ["C2703"]
-ms.assetid: 384295c3-643d-47ae-a9a6-865b3036aa84
 ---
 # Compiler Error C2703
 
@@ -16,7 +15,7 @@ A **`__leave`** statement must be inside a **`__try`** block.
 
 ## Example
 
-The following sample generates C2703:
+The following example generates C2703:
 
 ```cpp
 // C2703.cpp

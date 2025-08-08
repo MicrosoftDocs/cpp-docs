@@ -1,7 +1,7 @@
 ---
 title: "_getch, _getwch"
 description: "API reference for _getch and _getwch; which get a character from the console without echo."
-ms.date: "3/8/2023"
+ms.date: 3/8/2023
 api_name: ["_getch", "_getwch", "_o__getch", "_o__getwch"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -54,7 +54,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_getch.c
-// compile with: /c
 // This program reads characters from
 // the keyboard until it receives a 'Y' or 'y'.
 

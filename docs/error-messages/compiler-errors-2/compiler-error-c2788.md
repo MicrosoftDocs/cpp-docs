@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2788"
 title: "Compiler Error C2788"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2788"
+ms.date: 11/04/2016
 f1_keywords: ["C2788"]
 helpviewer_keywords: ["C2788"]
-ms.assetid: 8688fc5c-e652-43b4-b407-9c488c76f2db
 ---
 # Compiler Error C2788
 
-'identifier' : more than one GUID associated with this object
+> 'identifier' : more than one GUID associated with this object
+
+## Remarks
 
 The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type with a GUID attached or an object of such a user-defined type. This error occurs when the argument is an object with multiple GUIDs.
 
-The following sample generates C2788:
+## Example
+
+The following example generates C2788:
 
 ```cpp
 // C2788.cpp
