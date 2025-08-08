@@ -1386,7 +1386,7 @@ done:
 
 // Create a partial media type from our list.
 //
-// dwTypeIndex: Index into the list of peferred media types.
+// dwTypeIndex: Index into the list of preferred media types.
 // ppmt:        Receives a pointer to the media type.
 
 HRESULT CGrayscale::OnGetPartialType(DWORD dwTypeIndex, IMFMediaType **ppmt)
