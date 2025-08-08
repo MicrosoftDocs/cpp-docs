@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2725"
 title: "Compiler Error C2725"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2725"
+ms.date: 11/04/2016
 f1_keywords: ["C2725"]
 helpviewer_keywords: ["C2725"]
-ms.assetid: 13cd5b1b-e906-4cd8-9b2b-510d587c665a
 ---
 # Compiler Error C2725
 
-'exception' : unable to throw or catch a managed or WinRT object by value or reference
+> 'exception' : unable to throw or catch a managed or WinRT object by value or reference
+
+## Remarks
 
 The type of a managed or WinRT exception was not correct.
 
 ## Examples
 
-The following sample generates C2725 and shows how to fix it.
+The following example generates C2725 and shows how to fix it.
 
 ```cpp
 // C2725.cpp
@@ -33,7 +34,7 @@ int main() {
 }
 ```
 
-The following sample generates C2725 and shows how to fix it.
+The following example generates C2725 and shows how to fix it.
 
 ```cpp
 // C2725b.cpp
