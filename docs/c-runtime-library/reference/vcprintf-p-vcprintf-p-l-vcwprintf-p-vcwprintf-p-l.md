@@ -112,7 +112,7 @@ int main()
 {
    int n = eprintf("parameter 2 = %2$d; parameter 1 = %1$s\r\n",
       "one", 222);
-   _cprintf_s("%d characters printed\r\n");
+   _cprintf_s("%d characters printed\r\n", n);
 }
 ```
 
