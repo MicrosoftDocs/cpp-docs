@@ -304,7 +304,8 @@ The next code example reports which view the month calendar control currently di
 Retrieves the system time as indicated by the currently-selected date.
 
 ```
-BOOL GetCurSel(COleDateTime& refDateTime) const;  BOOL GetCurSel(CTime& refDateTime) const;
+BOOL GetCurSel(COleDateTime& refDateTime) const;
+BOOL GetCurSel(CTime& refDateTime) const;
 
 BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
 ```
@@ -595,7 +596,8 @@ In MFC's implementation of `GetSelRange`, you can specify `COleDateTime` usage, 
 Retrieves the date information for the date specified as "today" for a month calendar control.
 
 ```
-BOOL GetToday(COleDateTime& refDateTime) const;  BOOL GetToday(COleDateTime& refDateTime) const;
+BOOL GetToday(COleDateTime& refDateTime) const;
+BOOL GetToday(COleDateTime& refDateTime) const;
 
 BOOL GetToday(LPSYSTEMTIME pDateTime) const;
 ```
