@@ -10,7 +10,11 @@ ms.assetid: 938ad1fb-75d9-4ce2-ad92-83d6249005b5
 
 > illegal use of 'super': 'class' does not have any base classes
 
+## Remarks
+
 The keyword [super](../../cpp/super.md) was used within the context of a member function of a class that does not have any base classes.
+
+## Example
 
 The following sample generates C2791:
 

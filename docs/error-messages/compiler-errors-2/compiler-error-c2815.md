@@ -10,7 +10,11 @@ ms.assetid: d0256fd6-0721-4c99-b03c-52d96e77a613
 
 > 'operator delete' : first formal parameter must be 'void *', but 'param' was used
 
+## Remarks
+
 Any user-defined [operator delete](../../standard-library/new-operators.md#op_delete) function must take a first formal parameter of type `void *`.
+
+## Example
 
 The following sample generates C2815:
 

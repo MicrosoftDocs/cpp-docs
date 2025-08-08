@@ -10,4 +10,6 @@ ms.assetid: 8cd8c7fe-2add-4871-85f7-9a6afe4ac588
 
 > 'super::function' is not a member function
 
+## Remarks
+
 This error message appears whenever you try to use [super](../../cpp/super.md) to access a member other than a member function.

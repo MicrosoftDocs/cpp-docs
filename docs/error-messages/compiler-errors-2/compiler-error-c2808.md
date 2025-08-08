@@ -10,7 +10,11 @@ ms.assetid: 3d745102-d3b3-4735-a7d2-ad42d5bf3cfa
 
 > unary 'operator operator' has too many formal parameters
 
+## Remarks
+
 The unary operator has a nonvoid parameter list.
+
+## Example
 
 The following sample generates C2808:
 

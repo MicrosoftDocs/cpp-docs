@@ -10,7 +10,11 @@ ms.assetid: ce796b8e-1a8c-4074-995d-1ad09afd0e93
 
 > 'operator operator' has no formal parameters
 
+## Remarks
+
 The operator lacks required parameters.
+
+## Example
 
 The following sample generates C2809:
 

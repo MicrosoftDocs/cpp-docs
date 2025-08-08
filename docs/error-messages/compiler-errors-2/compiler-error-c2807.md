@@ -10,7 +10,11 @@ ms.assetid: bd7a207a-f379-4de6-8ee8-c7cab78b3480
 
 > the second formal parameter to postfix 'operator operator' must be 'int'
 
+## Remarks
+
 The second parameter to a postfix operator has the wrong type.
+
+## Example
 
 The following sample generates C2807:
 

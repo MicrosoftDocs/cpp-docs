@@ -10,7 +10,11 @@ ms.assetid: fcc7762d-cb82-4bb1-a715-0d82da832edf
 
 > type 'type' does not have an overloaded member 'operator ->'
 
+## Remarks
+
 You need to define `operator->()` to use this pointer operation.
+
+## Examples
 
 The following sample generates C2819:
 

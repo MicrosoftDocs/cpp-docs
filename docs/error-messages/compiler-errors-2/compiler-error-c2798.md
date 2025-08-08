@@ -10,11 +10,15 @@ ms.assetid: fb0cd861-b228-4f81-8090-e28344a727e0
 
 > 'super::member' is ambiguous
 
+## Remarks
+
 Multiple inherited structures contain the member you referenced with [super](../../cpp/super.md). You could fix the error by either:
 
 - Removing B1 or B2 from the inheritance list of D.
 
 - Changing the name of the data member in B1 or B2.
+
+## Example
 
 The following sample generates C2798:
 

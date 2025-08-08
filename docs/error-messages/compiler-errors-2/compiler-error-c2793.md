@@ -10,7 +10,11 @@ ms.assetid: ce35f4e8-c357-40ca-95c4-15ff001ad69d
 
 > 'token' : unexpected token following '::', identifier or keyword 'operator' expected
 
+## Remarks
+
 The only tokens that can follow `__super::` are an identifier or the keyword **`operator`**.
+
+## Example
 
 The following sample generates C2793
 

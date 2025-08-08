@@ -10,7 +10,11 @@ ms.assetid: d508191c-9044-4c6a-9119-4bca668c0b93
 
 > 'function' : is not a member of any direct or indirect base class of 'class'
 
+## Remarks
+
 You tried to use [super](../../cpp/super.md) to call a nonexistent member function.
+
+## Example
 
 The following sample generates C2794
 

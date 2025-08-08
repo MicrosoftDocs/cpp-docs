@@ -10,6 +10,8 @@ ms.assetid: b066e563-cca4-450c-8ba7-3b0d7a89f3ea
 
 > binary 'operator operator' has too many parameters
 
+## Remarks
+
 The overloaded binary operator member function is declared with more than one parameter. The first operand parameter of a binary operator member function, whose type is the operator's enclosing type, is implied.
 
 ## Examples

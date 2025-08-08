@@ -10,7 +10,11 @@ ms.assetid: 6a44b18e-44c1-49d8-9b99-e0545b9a6e7d
 
 > 'type1' : cannot inherit from 'type2', a ref class can only inherit from a ref class or interface class
 
+## Remarks
+
 You attempted to use an unmanaged class as a base class for a managed class.
+
+## Example
 
 The following sample generates C2811:
 

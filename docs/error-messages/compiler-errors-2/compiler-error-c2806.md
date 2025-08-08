@@ -10,7 +10,11 @@ ms.assetid: 7c9ff1f4-1590-4c47-991d-b1075a173b48
 
 > 'operator operator' has too many formal parameters
 
+## Remarks
+
 An overloaded operator has too many parameters.
+
+## Example
 
 The following sample generates C2806:
 

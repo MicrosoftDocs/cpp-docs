@@ -10,9 +10,13 @@ ms.assetid: 7d165136-a08b-4497-a76d-60a21bb19404
 
 > 'member' : a native type cannot be nested within a managed or WinRT type 'type'
 
+## Remarks
+
+A native type cannot be nested in a CLR or WinRT type.
+
 ## Example
 
-A native type cannot be nested in a CLR or WinRT type. The following sample generates C2814 and shows how to fix it.
+The following sample generates C2814 and shows how to fix it.
 
 ```cpp
 // C2814.cpp

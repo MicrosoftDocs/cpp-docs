@@ -10,7 +10,11 @@ ms.assetid: c997dc56-e199-442f-b94e-ac551ec9b015
 
 > binary 'operator operator' has too few parameters
 
+## Remarks
+
 The binary operator has no parameters.
+
+## Example
 
 The following sample generates C2805:
 

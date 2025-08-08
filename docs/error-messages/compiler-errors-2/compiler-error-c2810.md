@@ -10,7 +10,11 @@ ms.assetid: f63e8f24-d7f6-42ac-904f-72ff49592ba6
 
 > 'interface' : an interface can only inherit from another interface
 
+## Remarks
+
 An [interface](../../cpp/interface.md) may only inherit from another interface and may not inherit from a class or struct.
+
+## Example
 
 The following sample generates C2810:
 

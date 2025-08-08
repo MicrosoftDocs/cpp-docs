@@ -10,11 +10,15 @@ ms.assetid: 2cdbe374-8cc4-4c4e-ba15-062a7479e937
 
 > 'operator operator' must have at least one formal parameter of class type
 
+## Remarks
+
 The overloaded operator lacks a parameter of class type.
 
 You need to pass at least one parameter by reference (not using pointers, but references) or by value to be able to write "a < b" (a and b being of type class A).
 
 If both parameters are pointers it will be a pure comparison of pointer addresses and will not use the user-defined conversion.
+
+## Example
 
 The following sample generates C2803:
 
