@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2676"
 title: "Compiler Error C2676"
+description: "Learn more about: Compiler Error C2676"
 ms.date: 06/03/2022
 f1_keywords: ["C2676"]
 helpviewer_keywords: ["C2676"]
-ms.assetid: 838a5e34-c92f-4f65-a597-e150bf8cf737
 ---
 # Compiler Error C2676
 
@@ -16,7 +15,7 @@ To use the operator, you must overload it for the specified type or define a con
 
 ## Examples
 
-The following sample generates C2676.
+The following example generates C2676.
 
 ```cpp
 // C2676.cpp
@@ -50,7 +49,7 @@ C2676 can also occur if you attempt to do pointer arithmetic on the **`this`** p
 
 The **`this`** pointer is of type handle in a reference type. For more information, see [Semantics of the `this` pointer](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Semantics_of_the_this_pointer).
 
-The following sample generates C2676.
+The following example generates C2676.
 
 ```cpp
 // C2676_a.cpp
