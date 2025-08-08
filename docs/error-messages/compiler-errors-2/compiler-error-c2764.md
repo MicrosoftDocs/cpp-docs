@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2764"
 title: "Compiler Error C2764"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2764"
+ms.date: 11/04/2016
 f1_keywords: ["C2764"]
 helpviewer_keywords: ["C2764"]
-ms.assetid: 3754f5af-e094-4425-be20-d0c9a9b5baec
 ---
 # Compiler Error C2764
 
-'param' : template parameter not used or deducible in partial specialization 'specialization'
+> 'param' : template parameter not used or deducible in partial specialization 'specialization'
+
+## Remarks
 
 A template parameter is not used in a partial specialization. This makes the partial specialization unusable because the template parameter cannot be deduced.
 
 ## Example
 
-The following sample generates C2764:
+The following example generates C2764:
 
 ```cpp
 // C2764.cpp
