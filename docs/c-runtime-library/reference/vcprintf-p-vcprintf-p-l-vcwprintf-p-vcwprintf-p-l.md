@@ -101,18 +101,18 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 // An error formatting function that's used to print to the console.
 int eprintf(const char* format, ...)
 {
-   va_list args;
-   va_start(args, format);
-   int result = _vcprintf_p(format, args);
-   va_end(args);
-   return result;
+    va_list args;
+    va_start(args, format);
+    int result = _vcprintf_p(format, args);
+    va_end(args);
+    return result;
 }
 
 int main()
 {
-   int n = eprintf("parameter 2 = %2$d; parameter 1 = %1$s\r\n",
-      "one", 222);
-   _cprintf_s("%d characters printed\r\n", n);
+    int n = eprintf("parameter 2 = %2$d; parameter 1 = %1$s\r\n",
+        "one", 222);
+    _cprintf_s("%d characters printed\r\n", n);
 }
 ```
 
