@@ -62,7 +62,7 @@ Each of these functions takes a pointer to an argument list, and then uses the `
 
 The versions of these functions that have the `_l` suffix are identical except that they use the locale parameter that's passed in instead of the current locale.
 
-Each *`argument`* (if any) is converted and is output according to the corresponding format specification in *`format`*. The format specification supports positional parameters so that you can specify the order in which the arguments are used in the format string. For more information, see [`printf_p` Positional Parameters](../printf-p-positional-parameters.md).
+Each *`argument`* (if any) is converted and is output according to the corresponding format specification in *`format`*. The format specification supports positional parameters so that you can specify the order in which the arguments are used in the format string. For more information, see [`printf_p` positional parameters](../printf-p-positional-parameters.md).
 
 These functions don't translate line-feed characters on output into carriage return-line feed (CR-LF) combinations.
 
@@ -126,4 +126,4 @@ parameter 2 = 222; parameter 1 = one
 [Console and port I/O](../console-and-port-i-o.md)\
 [`_cprintf`, `_cprintf_l`, `_cwprintf`, `_cwprintf_l`](cprintf-cprintf-l-cwprintf-cwprintf-l.md)\
 [`va_arg`, `va_copy`, `va_end`, `va_start`](va-arg-va-copy-va-end-va-start.md)\
-[`printf_p` Positional Parameters](../printf-p-positional-parameters.md)
+[`printf_p` positional parameters](../printf-p-positional-parameters.md)
