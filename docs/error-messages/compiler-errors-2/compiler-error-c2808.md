@@ -8,7 +8,7 @@ ms.assetid: 3d745102-d3b3-4735-a7d2-ad42d5bf3cfa
 ---
 # Compiler Error C2808
 
-unary 'operator operator' has too many formal parameters
+> unary 'operator operator' has too many formal parameters
 
 The unary operator has a nonvoid parameter list.
 

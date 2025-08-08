@@ -8,7 +8,7 @@ ms.assetid: 7d165136-a08b-4497-a76d-60a21bb19404
 ---
 # Compiler Error C2814
 
-'member' : a native type cannot be nested within a managed or WinRT type 'type'
+> 'member' : a native type cannot be nested within a managed or WinRT type 'type'
 
 ## Example
 

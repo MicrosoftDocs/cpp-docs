@@ -8,7 +8,7 @@ ms.assetid: bd7a207a-f379-4de6-8ee8-c7cab78b3480
 ---
 # Compiler Error C2807
 
-the second formal parameter to postfix 'operator operator' must be 'int'
+> the second formal parameter to postfix 'operator operator' must be 'int'
 
 The second parameter to a postfix operator has the wrong type.
 

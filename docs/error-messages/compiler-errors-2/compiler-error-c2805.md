@@ -8,7 +8,7 @@ ms.assetid: c997dc56-e199-442f-b94e-ac551ec9b015
 ---
 # Compiler Error C2805
 
-binary 'operator operator' has too few parameters
+> binary 'operator operator' has too few parameters
 
 The binary operator has no parameters.
 

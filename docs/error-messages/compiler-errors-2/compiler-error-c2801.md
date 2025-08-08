@@ -8,7 +8,7 @@ ms.assetid: 35dfc7ea-9e37-4e30-baa1-944dc61302f5
 ---
 # Compiler Error C2801
 
-'operator operator' must be a non-static member
+> 'operator operator' must be a non-static member
 
 The following operators can be overloaded only as nonstatic members:
 

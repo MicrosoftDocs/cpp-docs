@@ -8,7 +8,7 @@ ms.assetid: fb0cd861-b228-4f81-8090-e28344a727e0
 ---
 # Compiler Error C2798
 
-'super::member' is ambiguous
+> 'super::member' is ambiguous
 
 Multiple inherited structures contain the member you referenced with [super](../../cpp/super.md). You could fix the error by either:
 

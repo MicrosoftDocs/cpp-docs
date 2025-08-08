@@ -8,7 +8,7 @@ ms.assetid: ce796b8e-1a8c-4074-995d-1ad09afd0e93
 ---
 # Compiler Error C2809
 
-'operator operator' has no formal parameters
+> 'operator operator' has no formal parameters
 
 The operator lacks required parameters.
 

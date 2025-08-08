@@ -8,7 +8,7 @@ ms.assetid: 7c9ff1f4-1590-4c47-991d-b1075a173b48
 ---
 # Compiler Error C2806
 
-'operator operator' has too many formal parameters
+> 'operator operator' has too many formal parameters
 
 An overloaded operator has too many parameters.
 

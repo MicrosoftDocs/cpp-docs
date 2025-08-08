@@ -8,7 +8,7 @@ ms.assetid: f63e8f24-d7f6-42ac-904f-72ff49592ba6
 ---
 # Compiler Error C2810
 
-'interface' : an interface can only inherit from another interface
+> 'interface' : an interface can only inherit from another interface
 
 An [interface](../../cpp/interface.md) may only inherit from another interface and may not inherit from a class or struct.
 

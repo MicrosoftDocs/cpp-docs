@@ -8,7 +8,7 @@ ms.assetid: 2cdbe374-8cc4-4c4e-ba15-062a7479e937
 ---
 # Compiler Error C2803
 
-'operator operator' must have at least one formal parameter of class type
+> 'operator operator' must have at least one formal parameter of class type
 
 The overloaded operator lacks a parameter of class type.
 

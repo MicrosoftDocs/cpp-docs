@@ -8,7 +8,7 @@ ms.assetid: ce35f4e8-c357-40ca-95c4-15ff001ad69d
 ---
 # Compiler Error C2793
 
-'token' : unexpected token following '::', identifier or keyword 'operator' expected
+> 'token' : unexpected token following '::', identifier or keyword 'operator' expected
 
 The only tokens that can follow `__super::` are an identifier or the keyword **`operator`**.
 

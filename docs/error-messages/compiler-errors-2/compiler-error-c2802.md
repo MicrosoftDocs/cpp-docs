@@ -8,7 +8,7 @@ ms.assetid: 08b68c0e-9382-40ac-8949-39a7a2749e05
 ---
 # Compiler Error C2802
 
-static member 'operator operator' has no formal parameters
+> static member 'operator operator' has no formal parameters
 
 An operator declared by a **`static`** member function must have at least one parameter.
 

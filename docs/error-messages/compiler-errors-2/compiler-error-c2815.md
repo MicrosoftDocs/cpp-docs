@@ -8,7 +8,7 @@ ms.assetid: d0256fd6-0721-4c99-b03c-52d96e77a613
 ---
 # Compiler Error C2815
 
-'operator delete' : first formal parameter must be 'void *', but 'param' was used
+> 'operator delete' : first formal parameter must be 'void *', but 'param' was used
 
 Any user-defined [operator delete](../../standard-library/new-operators.md#op_delete) function must take a first formal parameter of type `void *`.
 

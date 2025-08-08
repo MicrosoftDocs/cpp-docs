@@ -8,7 +8,7 @@ ms.assetid: fcc7762d-cb82-4bb1-a715-0d82da832edf
 ---
 # Compiler Error C2819
 
-type 'type' does not have an overloaded member 'operator ->'
+> type 'type' does not have an overloaded member 'operator ->'
 
 You need to define `operator->()` to use this pointer operation.
 

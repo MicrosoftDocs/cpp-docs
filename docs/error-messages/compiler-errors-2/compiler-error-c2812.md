@@ -8,7 +8,7 @@ ms.assetid: 22aadb8c-7232-489d-a3ad-60662dda30a8
 ---
 # Compiler Error C2812
 
-> \#import is not supported with /clr:pure and /clr:safe
+> #import is not supported with /clr:pure and /clr:safe
 
 ## Remarks
 
