@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Specifying the Pathname"
 title: "Specifying the Pathname"
-ms.date: "11/04/2016"
+description: "Learn more about: Specifying the Pathname"
+ms.date: 11/04/2016
 helpviewer_keywords: ["names [C++], compiler output files", "cl.exe compiler, output files", "output files, specifying pathnames"]
-ms.assetid: 7a6595ce-3383-44ae-957a-466bfa29c343
 ---
 # Specifying the Pathname
 
@@ -24,7 +23,7 @@ Alternatively, the *pathname* argument can be a device name (AUX, CON, PRN, or N
 
 The following command line sends a mapfile to the printer:
 
-```
+```cmd
 CL /FmPRN HELLO.CPP
 ```
 
