@@ -15,6 +15,8 @@ Value types are not valid arguments when using exception handling in managed cod
 
 ## Example
 
+The following example generates C2715:
+
 ```cpp
 // C2715a.cpp
 // compile with: /clr
