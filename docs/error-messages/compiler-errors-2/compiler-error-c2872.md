@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2872"
 title: "Compiler Error C2872"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2872"
+ms.date: 11/04/2016
 f1_keywords: ["C2872"]
 helpviewer_keywords: ["C2872"]
-ms.assetid: c619ef97-6e0e-41d7-867c-f8d28a07d553
 ---
 # Compiler Error C2872
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2861"
 title: "Compiler Error C2861"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2861"
+ms.date: 11/04/2016
 f1_keywords: ["C2861"]
 helpviewer_keywords: ["C2861"]
-ms.assetid: 012bb44d-6c9b-4def-b54e-b19f1f8ddd1b
 ---
 # Compiler Error C2861
 

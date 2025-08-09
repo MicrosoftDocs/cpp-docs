@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2868"
 title: "Compiler Error C2868"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2868"
+ms.date: 11/04/2016
 f1_keywords: ["C2868"]
 helpviewer_keywords: ["C2868"]
-ms.assetid: 6ff5837b-e66d-44d1-9d17-80af35e08d08
 ---
 # Compiler Error C2868
 

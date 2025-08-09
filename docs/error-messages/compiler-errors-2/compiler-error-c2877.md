@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2877"
 title: "Compiler Error C2877"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2877"
+ms.date: 11/04/2016
 f1_keywords: ["C2877"]
 helpviewer_keywords: ["C2877"]
-ms.assetid: 0b54837e-fcae-4d90-9658-623250435e24
 ---
 # Compiler Error C2877
 

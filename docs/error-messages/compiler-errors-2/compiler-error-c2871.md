@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2871"
 title: "Compiler Error C2871"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2871"
+ms.date: 11/04/2016
 f1_keywords: ["C2871"]
 helpviewer_keywords: ["C2871"]
-ms.assetid: 44aeb84d-61f0-45e0-8dad-22a3cd46b7f8
 ---
 # Compiler Error C2871
 

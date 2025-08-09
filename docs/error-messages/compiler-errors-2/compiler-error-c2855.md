@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2855"
 title: "Compiler Error C2855"
+description: "Learn more about: Compiler Error C2855"
 ms.date: 02/16/2021
 f1_keywords: ["C2855"]
 helpviewer_keywords: ["C2855"]

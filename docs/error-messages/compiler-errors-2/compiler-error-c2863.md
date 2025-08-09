@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2863"
 title: "Compiler Error C2863"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2863"
+ms.date: 11/04/2016
 f1_keywords: ["C2863"]
 helpviewer_keywords: ["C2863"]
-ms.assetid: 32561d67-a795-486b-b3b6-4b90a1acb176
 ---
 # Compiler Error C2863
 

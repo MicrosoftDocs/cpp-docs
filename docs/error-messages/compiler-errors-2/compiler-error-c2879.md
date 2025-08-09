@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2879"
 title: "Compiler Error C2879"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2879"
+ms.date: 11/04/2016
 f1_keywords: ["C2879"]
 helpviewer_keywords: ["C2879"]
-ms.assetid: ac92b645-2394-49de-8632-43d44e0553ed
 ---
 # Compiler Error C2879
 

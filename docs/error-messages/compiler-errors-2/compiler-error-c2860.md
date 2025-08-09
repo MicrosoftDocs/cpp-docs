@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C2860"
 title: "Compiler Error C2860"
-ms.date: "03/16/2024"
+description: "Learn more about: Compiler Error C2860"
+ms.date: 03/16/2024
 f1_keywords: ["C2860"]
 helpviewer_keywords: ["C2860"]
 ---

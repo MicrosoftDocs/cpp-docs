@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2864"
 title: "Compiler Error C2864"
+description: "Learn more about: Compiler Error C2864"
 ms.date: 10/04/2019
 f1_keywords: ["C2864"]
 helpviewer_keywords: ["C2864"]
-ms.assetid: d0ca2ad9-90a6-4aef-8511-98a3b414c102
 ---
 # Compiler Error C2864
 

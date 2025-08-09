@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2857"
 title: "Compiler Error C2857"
-ms.date: "09/13/2018"
+description: "Learn more about: Compiler Error C2857"
+ms.date: 09/13/2018
 f1_keywords: ["C2857"]
 helpviewer_keywords: ["C2857"]
-ms.assetid: b57302bd-58ec-45ae-992a-1e282d5eeccc
 ---
 # Compiler Error C2857
 

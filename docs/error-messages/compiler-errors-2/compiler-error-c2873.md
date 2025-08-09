@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2873"
 title: "Compiler Error C2873"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2873"
+ms.date: 11/04/2016
 f1_keywords: ["C2873"]
 helpviewer_keywords: ["C2873"]
-ms.assetid: 7a10036b-400e-4364-bd2f-dcd7370c5e28
 ---
 # Compiler Error C2873
 
