@@ -16,7 +16,7 @@ A **`using`** directive is applied to something other than a namespace.
 
 ## Example
 
-The following sample generates C2867:
+The following example generates C2867:
 
 ```cpp
 // C2867.cpp

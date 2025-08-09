@@ -18,7 +18,7 @@ This error is obsolete in Visual Studio 2022 and later versions.
 
 ## Example
 
-The following sample generates C2875:
+The following example generates C2875:
 
 ```cpp
 // C2875.cpp

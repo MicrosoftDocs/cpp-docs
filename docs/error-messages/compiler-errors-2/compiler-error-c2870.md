@@ -16,7 +16,7 @@ You defined namespace `name` incorrectly. Namespaces must be defined at file sco
 
 ## Example
 
-The following sample generates C2870:
+The following example generates C2870:
 
 ```cpp
 // C2870.cpp

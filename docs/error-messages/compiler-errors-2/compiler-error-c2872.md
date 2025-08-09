@@ -24,7 +24,7 @@ C2872 can occur in Visual Studio 2013 due to a conflict between the `Windows::Fo
 
 ## Example
 
-The following sample generates C2872, because an ambiguous reference is made to a variable named `i`; two variables with the same name are in scope:
+The following example generates C2872, because an ambiguous reference is made to a variable named `i`; two variables with the same name are in scope:
 
 ```cpp
 // C2872.cpp

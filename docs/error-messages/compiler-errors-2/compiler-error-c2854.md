@@ -16,7 +16,7 @@ The `#pragma hdrstop` gives an invalid filename. The pragma can be followed by a
 
 ## Example
 
-The following sample generates C2854:
+The following example generates C2854:
 
 ```cpp
 // C2854.cpp

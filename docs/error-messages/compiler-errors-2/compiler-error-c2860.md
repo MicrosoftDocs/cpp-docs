@@ -15,7 +15,7 @@ A function parameter cannot be of type **`void`**.
 
 ## Example
 
-The following sample generates C2860:
+The following example generates C2860:
 
 ```cpp
 // C2860.cpp

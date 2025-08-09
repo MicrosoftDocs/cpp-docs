@@ -16,7 +16,7 @@ This error will occur when you pass an identifier that is not a namespace to a [
 
 ## Example
 
-The following sample generates C2871:
+The following example generates C2871:
 
 ```cpp
 // C2871.cpp

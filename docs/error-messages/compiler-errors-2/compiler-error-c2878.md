@@ -16,7 +16,7 @@ You made reference to a namespace or class that is not defined.
 
 ## Example
 
-The following sample generates C2878:
+The following example generates C2878:
 
 ```cpp
 // C2878.cpp

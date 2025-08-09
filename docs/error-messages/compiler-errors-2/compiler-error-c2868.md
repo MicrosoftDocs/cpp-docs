@@ -16,7 +16,7 @@ A [using declaration](../../cpp/using-declaration.md) requires a *qualified name
 
 ## Example
 
-The following sample generates C2868 and also shows correct usage:
+The following example generates C2868 and also shows correct usage:
 
 ```cpp
 // C2868.cpp

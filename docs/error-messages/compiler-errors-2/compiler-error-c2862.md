@@ -16,7 +16,7 @@ Protected and private members may be accessed only from other member functions. 
 
 ## Example
 
-The following sample will generate C2862:
+The following example will generate C2862:
 
 ```cpp
 // C2862.cpp

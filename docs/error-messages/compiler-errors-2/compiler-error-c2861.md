@@ -16,7 +16,7 @@ The compiler encountered the interface keyword or deduced a struct as an interfa
 
 ## Example
 
-The following sample generates C2861:
+The following example generates C2861:
 
 ```cpp
 // C2861.cpp

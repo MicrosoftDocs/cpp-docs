@@ -16,7 +16,7 @@ Declaring friends on an interface is not allowed.
 
 ## Example
 
-The following sample generates C2863:
+The following example generates C2863:
 
 ```cpp
 // C2863.cpp

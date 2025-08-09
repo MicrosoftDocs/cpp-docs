@@ -16,7 +16,7 @@ You cannot create a [namespace alias](../../cpp/namespaces-cpp.md#namespace_alia
 
 ## Example
 
-The following sample generates C2879:
+The following example generates C2879:
 
 ```cpp
 // C2879.cpp

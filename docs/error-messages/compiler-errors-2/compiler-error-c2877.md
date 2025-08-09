@@ -16,7 +16,7 @@ All members derived from a base class must be accessible in the derived class.
 
 ## Example
 
-The following sample generates C2877:
+The following example generates C2877:
 
 ```cpp
 // C2877.cpp

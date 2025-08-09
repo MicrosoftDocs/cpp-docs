@@ -16,7 +16,7 @@ The declaration causes the same item to be defined twice.
 
 ## Example
 
-The following sample generates C2874:
+The following example generates C2874:
 
 ```cpp
 // C2874.cpp

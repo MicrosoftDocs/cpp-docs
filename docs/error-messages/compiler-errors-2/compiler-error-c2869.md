@@ -16,7 +16,7 @@ You cannot reuse a name already used as a namespace.
 
 ## Example
 
-The following sample generates C2869:
+The following example generates C2869:
 
 ```cpp
 // C2869.cpp

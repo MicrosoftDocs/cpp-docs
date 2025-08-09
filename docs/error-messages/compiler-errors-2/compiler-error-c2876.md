@@ -16,7 +16,7 @@ All overloaded forms of a function in a base class must be accessible to the der
 
 ## Example
 
-The following sample generates C2876:
+The following example generates C2876:
 
 ```cpp
 // C2876.cpp

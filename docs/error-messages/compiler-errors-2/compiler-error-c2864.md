@@ -16,7 +16,7 @@ To initialize a **`static`** data member that's defined as **`volatile`**, non-*
 
 ## Example
 
-This sample generates C2864:
+This example generates C2864:
 
 ```cpp
 // C2864.cpp
@@ -32,7 +32,7 @@ private:
 };
 ```
 
-This sample shows how to fix C2864:
+This example shows how to fix C2864:
 
 ```cpp
 // C2864b.cpp
