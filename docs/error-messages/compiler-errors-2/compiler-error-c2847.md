@@ -8,7 +8,7 @@ ms.assetid: 9ad9a0e0-8b16-49d9-a5be-f8eda2372aa9
 ---
 # Compiler Error C2847
 
-cannot apply sizeof to managed or WinRT type 'class'
+> cannot apply sizeof to managed or WinRT type 'class'
 
 The [sizeof](../../cpp/sizeof-operator.md) operator gets the value of an object at compile time. The size of a managed or WinRT class, interface, or value type is dynamic and so cannot be known at compile time.
 

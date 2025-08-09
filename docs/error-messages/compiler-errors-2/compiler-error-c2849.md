@@ -8,7 +8,7 @@ ms.assetid: e28f6b3e-e0e7-4f92-b006-ebaa81d368e6
 ---
 # Compiler Error C2849
 
-'destructor' : an interface cannot have a destructor
+> 'destructor' : an interface cannot have a destructor
 
 A Visual C++ [interface](../../cpp/interface.md) cannot have a destructor.
 

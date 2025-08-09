@@ -8,7 +8,7 @@ ms.assetid: c8c04288-0889-4265-a077-17f94cbcdcc9
 ---
 # Compiler Error C2831
 
-'operator operator' cannot have default parameters
+> 'operator operator' cannot have default parameters
 
 Only three operators can have default parameters:
 

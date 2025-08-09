@@ -8,7 +8,7 @@ ms.assetid: b3bfecb8-c8c1-45fd-bb85-4b42a6b8ed2b
 ---
 # Compiler Error C2829
 
-'operator operator' cannot have a variable parameter list
+> 'operator operator' cannot have a variable parameter list
 
 Only two operators can take variable parameter lists:
 

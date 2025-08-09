@@ -8,7 +8,7 @@ ms.assetid: e8d71988-a968-4484-94db-e8c3bad74a4a
 ---
 # Compiler Error C2821
 
-first formal parameter to 'operator new' must be 'unsigned int'
+> first formal parameter to 'operator new' must be 'unsigned int'
 
 The first formal parameter of the [operator new](../../standard-library/new-operators.md#op_new) must be an unsigned **`int`**.
 

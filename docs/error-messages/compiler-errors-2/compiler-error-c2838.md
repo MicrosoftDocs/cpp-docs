@@ -8,7 +8,7 @@ ms.assetid: 176b2ad6-7a84-4019-b97e-328866054457
 ---
 # Compiler Error C2838
 
-'member' : illegal qualified name in member declaration
+> 'member' : illegal qualified name in member declaration
 
 A class, structure, or union uses a fully qualified name to redeclare a member of another class, structure, or union.
 

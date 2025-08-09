@@ -8,7 +8,7 @@ ms.assetid: dcaf4cd2-21b0-4280-ae42-0a706c524d83
 ---
 # Compiler Error C2844
 
-'member' : cannot be a member of interface 'interface'
+> 'member' : cannot be a member of interface 'interface'
 
 An [interface class](../../extensions/interface-class-cpp-component-extensions.md) cannot contain a data member unless it is also a property.
 

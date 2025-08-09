@@ -8,7 +8,7 @@ ms.assetid: f3efe86c-4168-4e76-a133-3f8314c69f51
 ---
 # Compiler Error C2850
 
-'construct' : only allowed at file scope; may not be in a nested construct
+> 'construct' : only allowed at file scope; may not be in a nested construct
 
 Constructs, such as some pragmas, can only appear at global scope.
 

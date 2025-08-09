@@ -8,7 +8,7 @@ ms.assetid: 5bd865f7-e0af-404e-80fe-e2b798b44a59
 ---
 # Compiler Error C2824
 
-return type for 'operator new' must be 'void *'
+> return type for 'operator new' must be 'void *'
 
 With non-based pointers, overloads of operator `new` must return `void *`.
 

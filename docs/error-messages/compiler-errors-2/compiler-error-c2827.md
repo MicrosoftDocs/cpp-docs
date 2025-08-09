@@ -8,7 +8,7 @@ ms.assetid: cb3e5814-0c92-40e4-b620-98578ae3003a
 ---
 # Compiler Error C2827
 
-'operator operator' cannot be globally overridden with unary form
+> 'operator operator' cannot be globally overridden with unary form
 
 The operator cannot have a unary form outside of an object.
 

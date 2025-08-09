@@ -8,7 +8,7 @@ ms.assetid: 9d3f2ac4-eea5-4fed-abeb-e752f442bfcc
 ---
 # Compiler Error C2843
 
-'member' : cannot take the address of a non-static data member or method of a managed or WinRT type
+> 'member' : cannot take the address of a non-static data member or method of a managed or WinRT type
 
 An instance is needed to take the address of nonstatic data members of a managed or WinRT class or interface.
 

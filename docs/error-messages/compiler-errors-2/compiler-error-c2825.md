@@ -8,7 +8,7 @@ ms.assetid: c832f1c1-5184-4fc2-9356-12b21daa7af3
 ---
 # Compiler Error C2825
 
-var : must be a class or namespace when followed by '::'
+> var : must be a class or namespace when followed by '::'
 
 An unsuccessful attempt was made to form a qualified name.
 

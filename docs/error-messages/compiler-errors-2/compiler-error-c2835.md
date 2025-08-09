@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2835"]
 ---
 # Compiler Error C2835
 
-user-defined conversion 'type' takes no formal parameters
+> user-defined conversion 'type' takes no formal parameters
 
 User-defined type conversions cannot take formal parameters.
 

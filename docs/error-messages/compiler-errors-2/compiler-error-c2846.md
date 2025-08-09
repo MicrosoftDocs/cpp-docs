@@ -8,7 +8,7 @@ ms.assetid: bc090ec2-5410-4112-9ec6-261325374375
 ---
 # Compiler Error C2846
 
-'constructor' : an interface cannot have a constructor
+> 'constructor' : an interface cannot have a constructor
 
 A Visual C++ [interface](../../cpp/interface.md) cannot have a constructor.
 
