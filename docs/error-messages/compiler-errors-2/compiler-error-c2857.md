@@ -10,9 +10,9 @@ ms.assetid: b57302bd-58ec-45ae-992a-1e282d5eeccc
 
 > '#include' statement specified with the /Yc*filename* command-line option was not found in the source file
 
-The [/Yc](../../build/reference/yc-create-precompiled-header-file.md) option specifies the name of an include file that is not included in the source file being compiled.
-
 ## Remarks
+
+The [/Yc](../../build/reference/yc-create-precompiled-header-file.md) option specifies the name of an include file that is not included in the source file being compiled.
 
 When you use the **/Yc**<em>filename</em> option on a source file to create a precompiled header (PCH) file, that source file must include the *filename* header file. Every file included by the source file, up to and including the specified *filename*, is included in the PCH file. In other source files compiled by using the **/Yu**<em>filename</em> option to use the PCH file, an include of *filename* must be the first non-comment line in the file. The compiler ignores anything in the source file before this include.
 

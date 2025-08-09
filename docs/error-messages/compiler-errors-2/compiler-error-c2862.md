@@ -10,7 +10,11 @@ ms.assetid: c04d8499-b799-48a1-9fb4-7902a0b0ac8e
 
 > 'interface' : an interface can only have public members
 
+## Remarks
+
 Protected and private members may be accessed only from other member functions. Such members are no use in an interface, since it may not provide implementations for any of its members.
+
+## Example
 
 The following sample will generate C2862:
 

@@ -10,9 +10,13 @@ ms.assetid: d589fc0c-08b2-4a79-bc0e-dca5eb80bdd5
 
 > using-declaration causes a multiple declaration of 'class::identifier'
 
+## Remarks
+
 The declaration causes the same item to be defined twice.
 
 This error is obsolete in Visual Studio 2022 and later versions.
+
+## Example
 
 The following sample generates C2875:
 

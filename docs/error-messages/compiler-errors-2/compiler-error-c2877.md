@@ -10,7 +10,11 @@ ms.assetid: 0b54837e-fcae-4d90-9658-623250435e24
 
 > 'symbol' is not accessible from 'class'
 
+## Remarks
+
 All members derived from a base class must be accessible in the derived class.
+
+## Example
 
 The following sample generates C2877:
 

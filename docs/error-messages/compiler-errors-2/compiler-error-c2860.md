@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2860"]
 
 > 'void' cannot be used as a function parameter except for '(void)'
 
+## Remarks
+
 A function parameter cannot be of type **`void`**.
+
+## Example
 
 The following sample generates C2860:
 

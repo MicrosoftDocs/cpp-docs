@@ -10,7 +10,11 @@ ms.assetid: 80523ee9-1fd3-4dc4-8a77-5083deb99066
 
 > 'name' : a namespace definition must appear either at file scope or immediately within another namespace definition
 
+## Remarks
+
 You defined namespace `name` incorrectly. Namespaces must be defined at file scope (outside all blocks and classes) or immediately within another namespace.
+
+## Example
 
 The following sample generates C2870:
 

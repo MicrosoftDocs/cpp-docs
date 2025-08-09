@@ -10,7 +10,11 @@ ms.assetid: b54fa9d8-8df5-40d9-9b3b-aa3e9dd6a3be
 
 > using-declaration causes a multiple declaration of 'symbol'
 
+## Remarks
+
 The declaration causes the same item to be defined twice.
+
+## Example
 
 The following sample generates C2874:
 

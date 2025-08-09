@@ -10,7 +10,11 @@ ms.assetid: 63be26b2-d9ab-4f3d-a8b7-981ce3e4d6b9
 
 > 'identifier' : is not a namespace
 
+## Remarks
+
 A **`using`** directive is applied to something other than a namespace.
+
+## Example
 
 The following sample generates C2867:
 

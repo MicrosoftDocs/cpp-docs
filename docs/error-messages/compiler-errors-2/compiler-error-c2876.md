@@ -10,7 +10,11 @@ ms.assetid: 8b674bf1-f9f4-4a8e-8127-e884c1d1708f
 
 > 'class::symbol' : not all overloads are accessible
 
+## Remarks
+
 All overloaded forms of a function in a base class must be accessible to the derived class.
+
+## Example
 
 The following sample generates C2876:
 

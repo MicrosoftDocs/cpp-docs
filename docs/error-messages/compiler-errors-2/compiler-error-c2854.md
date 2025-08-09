@@ -10,7 +10,11 @@ ms.assetid: 917fec9c-790a-4149-8dfc-00d17a09199c
 
 > syntax error in #pragma hdrstop
 
+## Remarks
+
 The `#pragma hdrstop` gives an invalid filename. The pragma can be followed by an optional filename in parentheses and quotation marks:
+
+## Example
 
 The following sample generates C2854:
 

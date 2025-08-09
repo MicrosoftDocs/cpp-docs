@@ -10,7 +10,11 @@ ms.assetid: 32561d67-a795-486b-b3b6-4b90a1acb176
 
 > 'interface' : an interface cannot have friends
 
+## Remarks
+
 Declaring friends on an interface is not allowed.
+
+## Example
 
 The following sample generates C2863:
 

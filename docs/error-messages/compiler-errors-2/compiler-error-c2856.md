@@ -10,6 +10,8 @@ ms.assetid: fe616c51-124e-49e3-9dd8-883ec1660680
 
 > #pragma hdrstop cannot be inside an #if block
 
+## Remarks
+
 The `hdrstop` pragma cannot be placed inside the body of a conditional compilation block.
 
 Move the `#pragma hdrstop` statement to an area that is not contained in an `#if/#endif` block.

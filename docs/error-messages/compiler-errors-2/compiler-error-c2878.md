@@ -10,7 +10,11 @@ ms.assetid: 83ee3de1-f554-49e8-a840-1f550cee7f69
 
 > 'name' : a namespace or class of this name does not exist
 
+## Remarks
+
 You made reference to a namespace or class that is not defined.
+
+## Example
 
 The following sample generates C2878:
 

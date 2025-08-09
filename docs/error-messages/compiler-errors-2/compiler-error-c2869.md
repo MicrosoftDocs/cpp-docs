@@ -10,7 +10,11 @@ ms.assetid: 6e30c001-47f3-4101-b9f1-cc542c9fffae
 
 > 'name' : has already been defined to be a namespace
 
+## Remarks
+
 You cannot reuse a name already used as a namespace.
+
+## Example
 
 The following sample generates C2869:
 
