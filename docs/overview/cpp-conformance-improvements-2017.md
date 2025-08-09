@@ -7,7 +7,7 @@ ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2017
 
-Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the improvements by major release, then by version. To jump directly to the changes for a specific version, use list below **In this article**.
+Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the improvements by major release, then by version. To jump directly to the changes for a specific version, use the list below **In this article**.
 
 This document lists the changes in Visual Studio 2017. For a guide to the changes in Visual Studio 2022, see [C++ conformance improvements in Visual Studio 2022](cpp-conformance-improvements.md). For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md). For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
@@ -805,7 +805,7 @@ In earlier versions of Visual Studio, the compiler always gave a **`constexpr`**
 
 ### Removing allocator support in `std::function`
 
-[P0302R1](https://wg21.link/p0302r1) Prior to C++17, the class template `std::function` had several constructors that took an allocator argument. However, the use of allocators in this context was problematic, and the semantics were unclear. The problem contructors have been removed.
+[P0302R1](https://wg21.link/p0302r1) Prior to C++17, the class template `std::function` had several constructors that took an allocator argument. However, the use of allocators in this context was problematic, and the semantics were unclear. The problematic constructors have been removed.
 
 ### Fixes for `not_fn()`
 
@@ -1051,7 +1051,7 @@ When the code doesn't need to be backwards compatible, avoid the warning by remo
 
 ### `__declspec` attributes with `extern "C"` linkage
 
-In earlier versions of Visual Studio, the compiler ignored `__declspec(...)` attributes when `__declspec(...)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that user didn't intend, with possible runtime implications. The [C4768](../error-messages/compiler-warnings/c4768.md) warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio 2017 version 15.5, the warning is enabled by default.
+In earlier versions of Visual Studio, the compiler ignored `__declspec(...)` attributes when `__declspec(...)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that the user didn't intend, with possible runtime implications. The [C4768](../error-messages/compiler-warnings/c4768.md) warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio 2017 version 15.5, the warning is enabled by default.
 
 ```cpp
 __declspec(noinline) extern "C" HRESULT __stdcall // C4768
@@ -1632,7 +1632,7 @@ using X = __declspec(deprecated("msg")) T; // C2760: syntax error:
                                            // expected 'type specifier'
 ```
 
-To fix the error, change to code to the following (with the attribute placed before the '=' of the alias definition):
+To fix the error, change the code to the following (with the attribute placed before the '=' of the alias definition):
 
 ```cpp
 template <typename T>
