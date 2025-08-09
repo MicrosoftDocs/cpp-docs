@@ -16,7 +16,7 @@ An instance is needed to take the address of nonstatic data members of a managed
 
 ## Example
 
-The following sample generates C2843 and shows how to fix it:
+The following example generates C2843 and shows how to fix it:
 
 ```cpp
 // C2843_2.cpp

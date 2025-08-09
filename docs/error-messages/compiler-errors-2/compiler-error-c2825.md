@@ -18,7 +18,7 @@ For example, make sure that your code does not contain a function declaration wh
 
 ## Example
 
-The following sample generates C2825:
+The following example generates C2825:
 
 ```cpp
 // C2825.cpp

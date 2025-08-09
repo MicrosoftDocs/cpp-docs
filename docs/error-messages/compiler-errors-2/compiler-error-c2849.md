@@ -16,7 +16,7 @@ A Visual C++ [interface](../../cpp/interface.md) cannot have a destructor.
 
 ## Example
 
-The following sample generates C2849:
+The following example generates C2849:
 
 ```cpp
 // C2849.cpp

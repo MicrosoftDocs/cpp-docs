@@ -18,7 +18,7 @@ For more information, see [User-Defined Operators (C++/CLI)](../../dotnet/user-d
 
 ## Example
 
-The following sample generates C2842.
+The following example generates C2842.
 
 ```cpp
 // C2842.cpp

@@ -16,7 +16,7 @@ Constructs, such as some pragmas, can only appear at global scope.
 
 ## Example
 
-The following sample generates C2850:
+The following example generates C2850:
 
 ```cpp
 // C2850.cpp

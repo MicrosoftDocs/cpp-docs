@@ -18,7 +18,7 @@ For a list of the operators that you can define in a managed type, see [User-def
 
 ## Example
 
-The following sample generates C2833:
+The following example generates C2833:
 
 ```cpp
 // C2833.cpp

@@ -16,7 +16,7 @@ A class, structure, or union uses a fully qualified name to redeclare a member o
 
 ## Example
 
-The following sample generates C2838:
+The following example generates C2838:
 
 ```cpp
 // C2838.cpp

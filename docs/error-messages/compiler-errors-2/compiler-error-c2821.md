@@ -16,7 +16,7 @@ The first formal parameter of the [operator new](../../standard-library/new-oper
 
 ## Example
 
-The following sample generates C2821:
+The following example generates C2821:
 
 ```cpp
 // C2821.cpp

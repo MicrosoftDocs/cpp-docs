@@ -16,7 +16,7 @@ A Visual C++ [interface](../../cpp/interface.md) cannot have a constructor.
 
 ## Example
 
-The following sample generates C2846:
+The following example generates C2846:
 
 ```cpp
 // C2846.cpp

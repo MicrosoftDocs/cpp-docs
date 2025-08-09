@@ -22,7 +22,7 @@ Only three operators can have default parameters:
 
 ## Example
 
-The following sample generates C2831:
+The following example generates C2831:
 
 ```cpp
 // C2831.cpp

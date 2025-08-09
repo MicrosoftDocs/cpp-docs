@@ -16,7 +16,7 @@ The [sizeof](../../cpp/sizeof-operator.md) operator gets the value of an object 
 
 ## Example
 
-For example, the following sample generates C2847:
+For example, the following example generates C2847:
 
 ```cpp
 // C2847.cpp

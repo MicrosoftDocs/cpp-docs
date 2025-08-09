@@ -18,7 +18,7 @@ Anything other than a property or member function is not allowed in an interface
 
 ## Example
 
-The following sample generates C2844:
+The following example generates C2844:
 
 ```cpp
 // C2844a.cpp

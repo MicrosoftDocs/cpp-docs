@@ -15,7 +15,7 @@ User-defined type conversions cannot take formal parameters.
 
 ## Example
 
-The following sample generates C2835:
+The following example generates C2835:
 
 ```cpp
 // C2835.cpp

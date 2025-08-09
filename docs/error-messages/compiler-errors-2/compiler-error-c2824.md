@@ -16,7 +16,7 @@ With non-based pointers, overloads of operator `new` must return `void *`.
 
 ## Example
 
-The following sample generates C2824:
+The following example generates C2824:
 
 ```cpp
 // C2824.cpp

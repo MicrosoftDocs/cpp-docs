@@ -16,7 +16,7 @@ Templates are not allowed in **`typedef`** definitions.
 
 ## Example
 
-The following sample generates C2823, and shows one way to fix it:
+The following example generates C2823, and shows one way to fix it:
 
 ```cpp
 // C2823.cpp
