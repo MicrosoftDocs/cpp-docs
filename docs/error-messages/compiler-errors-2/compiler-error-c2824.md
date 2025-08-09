@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2824"
 title: "Compiler Error C2824"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2824"
+ms.date: 11/04/2016
 f1_keywords: ["C2824"]
 helpviewer_keywords: ["C2824"]
-ms.assetid: 5bd865f7-e0af-404e-80fe-e2b798b44a59
 ---
 # Compiler Error C2824
 

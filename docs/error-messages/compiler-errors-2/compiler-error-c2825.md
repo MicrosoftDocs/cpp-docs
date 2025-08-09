@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2825"
 title: "Compiler Error C2825"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2825"
+ms.date: 11/04/2016
 f1_keywords: ["C2825"]
 helpviewer_keywords: ["C2825"]
-ms.assetid: c832f1c1-5184-4fc2-9356-12b21daa7af3
 ---
 # Compiler Error C2825
 

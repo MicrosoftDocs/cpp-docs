@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2833"
 title: "Compiler Error C2833"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2833"
+ms.date: 11/04/2016
 f1_keywords: ["C2833"]
 helpviewer_keywords: ["C2833"]
-ms.assetid: b9418ce1-e2ee-4599-8959-6fde89c27569
 ---
 # Compiler Error C2833
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2847"
 title: "Compiler Error C2847"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2847"
+ms.date: 11/04/2016
 f1_keywords: ["C2847"]
 helpviewer_keywords: ["C2847"]
-ms.assetid: 9ad9a0e0-8b16-49d9-a5be-f8eda2372aa9
 ---
 # Compiler Error C2847
 

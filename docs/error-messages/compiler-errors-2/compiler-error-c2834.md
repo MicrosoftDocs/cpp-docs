@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2834"
 title: "Compiler Error C2834"
+description: "Learn more about: Compiler Error C2834"
 ms.date: 06/01/2022
 f1_keywords: ["C2834"]
 helpviewer_keywords: ["C2834"]
-ms.assetid: 28f9f6eb-ab2a-4e64-aaaa-9d14f955de41
 ---
 # Compiler Error C2834
 

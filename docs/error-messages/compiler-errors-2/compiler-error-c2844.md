@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2844"
 title: "Compiler Error C2844"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2844"
+ms.date: 11/04/2016
 f1_keywords: ["C2844"]
 helpviewer_keywords: ["C2844"]
-ms.assetid: dcaf4cd2-21b0-4280-ae42-0a706c524d83
 ---
 # Compiler Error C2844
 

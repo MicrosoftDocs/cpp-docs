@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2842"
 title: "Compiler Error C2842"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2842"
+ms.date: 11/04/2016
 f1_keywords: ["C2842"]
 helpviewer_keywords: ["C2842"]
-ms.assetid: 8674f08d-9f50-46ad-9229-abc6b74fa0e5
 ---
 # Compiler Error C2842
 

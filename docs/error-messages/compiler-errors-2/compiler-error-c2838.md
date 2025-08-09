@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2838"
 title: "Compiler Error C2838"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2838"
+ms.date: 11/04/2016
 f1_keywords: ["C2838"]
 helpviewer_keywords: ["C2838"]
-ms.assetid: 176b2ad6-7a84-4019-b97e-328866054457
 ---
 # Compiler Error C2838
 
