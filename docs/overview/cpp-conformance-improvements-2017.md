@@ -611,7 +611,7 @@ To fix the warning, put `extern "C"` first:
 extern "C" __declspec(noinline) HRESULT __stdcall
 ```
 
-This warning is off by default in Visual Studio 2017 version 15.3, and only impacts code compiled with  **`/Wall`** **`/WX`**. Starting in Visual Studio 2017 version 15.5, it's enabled by default as a level 3 warning.
+This warning is off by default in Visual Studio 2017 version 15.3, and only impacts code compiled with **`/Wall`** **`/WX`**. Starting in Visual Studio 2017 version 15.5, it's enabled by default as a level 3 warning.
 
 ### `decltype` and calls to deleted destructors
 
@@ -1022,7 +1022,7 @@ To fix the error, remove the unused variable.
 
 ### Single-line comments
 
-In Visual Studio 2017 version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the **`/Za`** compiler switch.  The warnings are no longer needed because single-line comments have been part of the C standard since C99.
+In Visual Studio 2017 version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the **`/Za`** compiler switch. The warnings are no longer needed because single-line comments have been part of the C standard since C99.
 
 ```cpp
 /* C only */
@@ -1116,7 +1116,7 @@ error C2027: use of undefined type 'S'
 
 ### `std::is_convertible` target type
 
-`std::is_convertible` requires the target type to be a valid return type. In earlier versions of Visual Studio, the compiler incorrectly allowed abstract types, which might lead to incorrect overload resolution and unintended runtime behavior.  The following code now correctly raises C2338:
+`std::is_convertible` requires the target type to be a valid return type. In earlier versions of Visual Studio, the compiler incorrectly allowed abstract types, which might lead to incorrect overload resolution and unintended runtime behavior. The following code now correctly raises C2338:
 
 ```cpp
 #include <type_traits>
@@ -1193,7 +1193,7 @@ The warning was added in Visual Studio 2017 version 15.3, but was off by default
 
 ### Defaulted functions and `__declspec(nothrow)`
 
-The compiler previously allowed defaulted functions to be declared with `__declspec(nothrow)` when the corresponding base/member functions permitted exceptions. This behavior is contrary to the C++ standard and can cause undefined behavior at runtime. The standard requires such functions to be defined as deleted if there's an exception specification mismatch.  Under **`/std:c++17`**, the following code raises C2280:
+The compiler previously allowed defaulted functions to be declared with `__declspec(nothrow)` when the corresponding base/member functions permitted exceptions. This behavior is contrary to the C++ standard and can cause undefined behavior at runtime. The standard requires such functions to be defined as deleted if there's an exception specification mismatch. Under **`/std:c++17`**, the following code raises C2280:
 
 ```cpp
 struct A {
@@ -1441,7 +1441,7 @@ void sample(A<0> *p)
 
 ### C++20: Avoiding unnecessary decay (partial)
 
-[P0777R1](https://wg21.link/p0777r1) Adds differentiation between the concept of "decay" and that of simply removing const or reference qualifiers.  New type trait `remove_reference_t` replaces `decay_t` in some contexts. Support for `remove_cvref_t` is implemented in Visual Studio 2019.
+[P0777R1](https://wg21.link/p0777r1) Adds differentiation between the concept of "decay" and that of simply removing const or reference qualifiers. New type trait `remove_reference_t` replaces `decay_t` in some contexts. Support for `remove_cvref_t` is implemented in Visual Studio 2019.
 
 ### C++17: Parallel algorithms
 
@@ -1613,7 +1613,7 @@ In [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode
 
 ```cpp
 template <typename T>
-using  X = typename T; // C7511: 'T': 'typename' keyword must be 
+using  X = typename T; // C7511: 'T': 'typename' keyword must be
                        // followed by a qualified name
 ```
 
