@@ -694,7 +694,7 @@ std::equal(std::begin(a), std::end(a), std::begin(b), std::end(b));
 
 ### Effect of defining spaceship operator on `==` and `!=`
 
-A definition of the spaceship operator (**`<=>`**) alone will no longer rewrite expressions involving **`==`** or **`!=`** unless the spaceship operator is marked as **`= default`** ([P1185R2](https://wg21.link/p1185r2)). The following example compiles in Visual Studio 2019 RTW and version 16.1, but produces C2678 in Visual Studio 2019 version 16.2:
+A definition of the spaceship operator (**`<=>`**) alone will no longer rewrite expressions involving **`==`** or **`!=`** unless the spaceship operator is marked as **`= default`** ([P1185R2](https://wg21.link/p1185r2)). The following example compiles in Visual Studio 2019 RTW and version 16.1, but produces C2676 in Visual Studio 2019 version 16.2:
 
 ```cpp
 #include <compare>
