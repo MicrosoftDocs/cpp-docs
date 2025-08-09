@@ -1,7 +1,7 @@
 ---
 title: "How to report a problem with the Microsoft C++ toolset"
-description: How to create a good problem report and repro information for the Microsoft C++ toolset.
-ms.date: "09/24/2019"
+description: "How to create a good problem report and repro information for the Microsoft C++ toolset."
+ms.date: 09/24/2019
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 author: "tylermsft"
