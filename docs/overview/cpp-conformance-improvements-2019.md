@@ -67,8 +67,8 @@ To avoid the errors, insert a space in the offending line before the final angle
 
 ### References to types with mismatched cv-qualifiers
 
->[!Note]
-> This change only affects Visual Studio 2019 versions 16.0 through 16.8. It was reverted starting in Visual Studio 2019 version 16.9
+> [!NOTE]
+> This change only affects Visual Studio 2019 versions 16.0 through 16.8. It was reverted starting in Visual Studio 2019 version 16.9.
 
 Previously, MSVC allowed direct binding of a reference from a type with mismatched cv-qualifiers below the top level. This binding could allow modification of supposedly const data referred to by the reference.
 
