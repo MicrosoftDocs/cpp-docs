@@ -1457,7 +1457,7 @@ void sample(A<0> *p)
 
 ### C++17: Mathematical special functions
 
-[P0226R1](https://wg21.link/p0220r1) Adopts previous technical specifications for Mathematical Special Functions into the standard *`<cmath>`* header.
+[P0226R1](https://wg21.link/p0226r1) Adopts previous technical specifications for Mathematical Special Functions into the standard *`<cmath>`* header.
 
 ### C++17: Deduction guides for the standard library
 
