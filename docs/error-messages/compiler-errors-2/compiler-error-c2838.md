@@ -10,7 +10,11 @@ ms.assetid: 176b2ad6-7a84-4019-b97e-328866054457
 
 > 'member' : illegal qualified name in member declaration
 
+## Remarks
+
 A class, structure, or union uses a fully qualified name to redeclare a member of another class, structure, or union.
+
+## Example
 
 The following sample generates C2838:
 

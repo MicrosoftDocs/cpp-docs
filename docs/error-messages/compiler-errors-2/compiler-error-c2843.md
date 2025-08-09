@@ -10,7 +10,11 @@ ms.assetid: 9d3f2ac4-eea5-4fed-abeb-e752f442bfcc
 
 > 'member' : cannot take the address of a non-static data member or method of a managed or WinRT type
 
+## Remarks
+
 An instance is needed to take the address of nonstatic data members of a managed or WinRT class or interface.
+
+## Example
 
 The following sample generates C2843 and shows how to fix it:
 

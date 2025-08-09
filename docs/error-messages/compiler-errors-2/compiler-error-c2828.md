@@ -10,6 +10,8 @@ ms.assetid: d8df6ed4-5954-46c2-b59b-52881d4e923d
 
 > 'operator operator' cannot be globally overridden with binary form
 
+## Remarks
+
 The operator cannot have a binary form outside of an object.
 
 ### To fix by using the following possible solutions

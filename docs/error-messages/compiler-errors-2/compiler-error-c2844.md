@@ -10,9 +10,13 @@ ms.assetid: dcaf4cd2-21b0-4280-ae42-0a706c524d83
 
 > 'member' : cannot be a member of interface 'interface'
 
+## Remarks
+
 An [interface class](../../extensions/interface-class-cpp-component-extensions.md) cannot contain a data member unless it is also a property.
 
 Anything other than a property or member function is not allowed in an interface. Furthermore, constructors, destructors, and operators are not allowed.
+
+## Example
 
 The following sample generates C2844:
 

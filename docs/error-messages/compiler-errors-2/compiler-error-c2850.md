@@ -10,7 +10,11 @@ ms.assetid: f3efe86c-4168-4e76-a133-3f8314c69f51
 
 > 'construct' : only allowed at file scope; may not be in a nested construct
 
+## Remarks
+
 Constructs, such as some pragmas, can only appear at global scope.
+
+## Example
 
 The following sample generates C2850:
 

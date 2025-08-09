@@ -10,7 +10,11 @@ ms.assetid: 5bd865f7-e0af-404e-80fe-e2b798b44a59
 
 > return type for 'operator new' must be 'void *'
 
+## Remarks
+
 With non-based pointers, overloads of operator `new` must return `void *`.
+
+## Example
 
 The following sample generates C2824:
 

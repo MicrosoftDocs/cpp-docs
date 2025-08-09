@@ -10,4 +10,6 @@ ms.assetid: 31b28ee9-978f-403b-94d8-dbaacd24cce0
 
 > 'operator' : pointer arithmetic not allowed on this type
 
+## Remarks
+
 You cannot increment the pointer to a managed class.

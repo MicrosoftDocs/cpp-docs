@@ -10,7 +10,11 @@ ms.assetid: bc090ec2-5410-4112-9ec6-261325374375
 
 > 'constructor' : an interface cannot have a constructor
 
+## Remarks
+
 A Visual C++ [interface](../../cpp/interface.md) cannot have a constructor.
+
+## Example
 
 The following sample generates C2846:
 

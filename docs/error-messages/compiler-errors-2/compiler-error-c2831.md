@@ -10,6 +10,8 @@ ms.assetid: c8c04288-0889-4265-a077-17f94cbcdcc9
 
 > 'operator operator' cannot have default parameters
 
+## Remarks
+
 Only three operators can have default parameters:
 
 - [new](../../cpp/new-operator-cpp.md)
@@ -17,6 +19,8 @@ Only three operators can have default parameters:
 - Assignment =
 
 - Left parenthesis (
+
+## Example
 
 The following sample generates C2831:
 

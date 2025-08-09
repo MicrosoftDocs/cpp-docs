@@ -10,9 +10,13 @@ ms.assetid: b9418ce1-e2ee-4599-8959-6fde89c27569
 
 > 'operator *operator-name*' is not a recognized operator or type
 
+## Remarks
+
 The word **`operator`** must be followed by an *operator-name* that you want to override or a type you want to convert.
 
 For a list of the operators that you can define in a managed type, see [User-defined Operators](../../dotnet/user-defined-operators-cpp-cli.md).
+
+## Example
 
 The following sample generates C2833:
 

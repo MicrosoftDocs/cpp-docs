@@ -10,6 +10,8 @@ ms.assetid: cb3e5814-0c92-40e4-b620-98578ae3003a
 
 > 'operator operator' cannot be globally overridden with unary form
 
+## Remarks
+
 The operator cannot have a unary form outside of an object.
 
 ### To fix by using the following possible solutions

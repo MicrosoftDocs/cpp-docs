@@ -10,6 +10,8 @@ ms.assetid: b3bfecb8-c8c1-45fd-bb85-4b42a6b8ed2b
 
 > 'operator operator' cannot have a variable parameter list
 
+## Remarks
+
 Only two operators can take variable parameter lists:
 
 - Function call `()`

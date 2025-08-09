@@ -10,6 +10,8 @@ ms.assetid: c832f1c1-5184-4fc2-9356-12b21daa7af3
 
 > var : must be a class or namespace when followed by '::'
 
+## Remarks
+
 An unsuccessful attempt was made to form a qualified name.
 
 For example, make sure that your code does not contain a function declaration where the function name begins with ::.

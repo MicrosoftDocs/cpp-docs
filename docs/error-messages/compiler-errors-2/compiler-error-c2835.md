@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2835"]
 
 > user-defined conversion 'type' takes no formal parameters
 
+## Remarks
+
 User-defined type conversions cannot take formal parameters.
+
+## Example
 
 The following sample generates C2835:
 

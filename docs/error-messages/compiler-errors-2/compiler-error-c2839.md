@@ -10,4 +10,6 @@ ms.assetid: e4914def-2ee1-4e2e-8951-d35f9515c2b2
 
 > invalid return type 'type' for overloaded 'operator ->'
 
+## Remarks
+
 The `->` operator must return a class, struct, or union, or a reference to one.
