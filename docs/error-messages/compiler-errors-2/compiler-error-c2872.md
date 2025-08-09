@@ -8,7 +8,7 @@ ms.assetid: c619ef97-6e0e-41d7-867c-f8d28a07d553
 ---
 # Compiler Error C2872
 
-'*symbol*' : ambiguous symbol
+> '*symbol*' : ambiguous symbol
 
 The compiler cannot determine which symbol you are referring to. More than one symbol with the specified name is in scope. See the notes following the error message for the file locations and declarations the compiler found for the ambiguous symbol. To fix this issue, you can fully qualify the ambiguous symbol by using its namespace, for example, `std::byte` or `::byte`. You can also use a [namespace alias](../../cpp/namespaces-cpp.md#namespace_aliases) to give an included namespace a convenient short name for use when disambiguating symbols in your source code.
 

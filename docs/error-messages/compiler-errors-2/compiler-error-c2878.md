@@ -8,7 +8,7 @@ ms.assetid: 83ee3de1-f554-49e8-a840-1f550cee7f69
 ---
 # Compiler Error C2878
 
-'name' : a namespace or class of this name does not exist
+> 'name' : a namespace or class of this name does not exist
 
 You made reference to a namespace or class that is not defined.
 

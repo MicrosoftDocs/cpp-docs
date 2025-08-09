@@ -8,7 +8,7 @@ ms.assetid: 32561d67-a795-486b-b3b6-4b90a1acb176
 ---
 # Compiler Error C2863
 
-'interface' : an interface cannot have friends
+> 'interface' : an interface cannot have friends
 
 Declaring friends on an interface is not allowed.
 

@@ -8,7 +8,7 @@ ms.assetid: 0b54837e-fcae-4d90-9658-623250435e24
 ---
 # Compiler Error C2877
 
-'symbol' is not accessible from 'class'
+> 'symbol' is not accessible from 'class'
 
 All members derived from a base class must be accessible in the derived class.
 

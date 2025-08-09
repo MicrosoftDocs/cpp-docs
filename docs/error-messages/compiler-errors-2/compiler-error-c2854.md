@@ -8,7 +8,7 @@ ms.assetid: 917fec9c-790a-4149-8dfc-00d17a09199c
 ---
 # Compiler Error C2854
 
-syntax error in #pragma hdrstop
+> syntax error in #pragma hdrstop
 
 The `#pragma hdrstop` gives an invalid filename. The pragma can be followed by an optional filename in parentheses and quotation marks:
 

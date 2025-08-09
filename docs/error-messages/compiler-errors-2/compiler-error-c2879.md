@@ -8,7 +8,7 @@ ms.assetid: ac92b645-2394-49de-8632-43d44e0553ed
 ---
 # Compiler Error C2879
 
-'symbol' : only an existing namespace can be given an alternative name by a namespace alias definition
+> 'symbol' : only an existing namespace can be given an alternative name by a namespace alias definition
 
 You cannot create a [namespace alias](../../cpp/namespaces-cpp.md#namespace_aliases) to a symbol other than a namespace.
 

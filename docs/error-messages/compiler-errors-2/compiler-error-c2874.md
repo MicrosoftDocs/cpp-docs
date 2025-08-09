@@ -8,7 +8,7 @@ ms.assetid: b54fa9d8-8df5-40d9-9b3b-aa3e9dd6a3be
 ---
 # Compiler Error C2874
 
-using-declaration causes a multiple declaration of 'symbol'
+> using-declaration causes a multiple declaration of 'symbol'
 
 The declaration causes the same item to be defined twice.
 

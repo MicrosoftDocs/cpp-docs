@@ -8,7 +8,7 @@ ms.assetid: 63be26b2-d9ab-4f3d-a8b7-981ce3e4d6b9
 ---
 # Compiler Error C2867
 
-'identifier' : is not a namespace
+> 'identifier' : is not a namespace
 
 A **`using`** directive is applied to something other than a namespace.
 

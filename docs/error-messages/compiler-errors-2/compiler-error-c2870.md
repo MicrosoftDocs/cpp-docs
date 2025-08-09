@@ -8,7 +8,7 @@ ms.assetid: 80523ee9-1fd3-4dc4-8a77-5083deb99066
 ---
 # Compiler Error C2870
 
-'name' : a namespace definition must appear either at file scope or immediately within another namespace definition
+> 'name' : a namespace definition must appear either at file scope or immediately within another namespace definition
 
 You defined namespace `name` incorrectly. Namespaces must be defined at file scope (outside all blocks and classes) or immediately within another namespace.
 

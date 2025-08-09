@@ -8,7 +8,7 @@ ms.assetid: fcfbc58d-08f6-4752-9688-8aaac517e684
 ---
 # Compiler Error C2859
 
-filename is not the type file that was used when this precompiled header was created, recreate the precompiled header.
+> filename is not the type file that was used when this precompiled header was created, recreate the precompiled header.
 
 The project database and precompiled header files must be created together to ensure consistent information. Rebuild the project to recreate the precompiled header.
 

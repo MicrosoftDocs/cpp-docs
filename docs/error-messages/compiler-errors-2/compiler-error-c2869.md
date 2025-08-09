@@ -8,7 +8,7 @@ ms.assetid: 6e30c001-47f3-4101-b9f1-cc542c9fffae
 ---
 # Compiler Error C2869
 
-'name' : has already been defined to be a namespace
+> 'name' : has already been defined to be a namespace
 
 You cannot reuse a name already used as a namespace.
 

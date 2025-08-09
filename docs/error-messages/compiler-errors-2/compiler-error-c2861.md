@@ -8,7 +8,7 @@ ms.assetid: 012bb44d-6c9b-4def-b54e-b19f1f8ddd1b
 ---
 # Compiler Error C2861
 
-'function name' : an interface member function cannot be defined
+> 'function name' : an interface member function cannot be defined
 
 The compiler encountered the interface keyword or deduced a struct as an interface but then found a member function definition.  An interface cannot contain a definition for a member function.
 

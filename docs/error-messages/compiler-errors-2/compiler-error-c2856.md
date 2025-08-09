@@ -8,7 +8,7 @@ ms.assetid: fe616c51-124e-49e3-9dd8-883ec1660680
 ---
 # Compiler Error C2856
 
-\#pragma hdrstop cannot be inside an #if block
+> #pragma hdrstop cannot be inside an #if block
 
 The `hdrstop` pragma cannot be placed inside the body of a conditional compilation block.
 

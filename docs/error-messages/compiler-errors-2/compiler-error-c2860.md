@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2860"]
 ---
 # Compiler Error C2860
 
-'void' cannot be used as a function parameter except for '(void)'
+> 'void' cannot be used as a function parameter except for '(void)'
 
 A function parameter cannot be of type **`void`**.
 
