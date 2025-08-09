@@ -455,7 +455,7 @@ The `std::bitset` constructor no longer reads the ones and zeroes in reverse ord
 
 ### `std::pair::operator=` regression
 
-We fixed a regression in the `std::pair` assignment operator introduced when implementing [LWG 2729 "Missing SFINAE on `std::pair::operator=`";](https://cplusplus.github.io/LWG/issue2729). It now correctly accepts types convertible to `std::pair` again.
+We fixed a regression in the `std::pair` assignment operator introduced when implementing [LWG 2729 "Missing SFINAE on `std::pair::operator=`"](https://cplusplus.github.io/LWG/issue2729). It now correctly accepts types convertible to `std::pair` again.
 
 ### Non-deduced contexts for `add_const_t`
 
