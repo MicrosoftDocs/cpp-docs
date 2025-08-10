@@ -16,7 +16,7 @@ This error can be caused by a template defined inside an `extern "C"` block.
 
 ## Examples
 
-The following sample generates C2894:
+The following example generates C2894:
 
 ```cpp
 // C2894.cpp
@@ -27,7 +27,7 @@ extern "C" {
 }
 ```
 
-The following sample generates C2894:
+The following example generates C2894:
 
 ```cpp
 // C2894b.cpp

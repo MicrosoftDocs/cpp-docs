@@ -16,7 +16,7 @@ An explicit instantiation of a function template requires explicit specification
 
 ## Example
 
-The following sample generates C2909:
+The following example generates C2909:
 
 ```cpp
 // C2909.cpp

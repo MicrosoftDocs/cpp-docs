@@ -16,7 +16,7 @@ You must use the new syntax for explicit specialization of templates.
 
 ## Example
 
-The following sample generates C2906:
+The following example generates C2906:
 
 ```cpp
 // C2906.cpp

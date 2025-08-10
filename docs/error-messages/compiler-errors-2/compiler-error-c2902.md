@@ -18,7 +18,7 @@ This error is obsolete in Visual Studio 2022 and later versions.
 
 ## Examples
 
-The following sample generates C2902:
+The following example generates C2902:
 
 ```cpp
 // C2902.cpp

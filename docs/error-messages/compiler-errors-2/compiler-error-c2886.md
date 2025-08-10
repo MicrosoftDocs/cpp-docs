@@ -16,7 +16,7 @@ A **`using`** declaration uses a symbol, such as a namespace name. A **`using`**
 
 ## Example
 
-The following sample generates C2886:
+The following example generates C2886:
 
 ```cpp
 // C2886.cpp

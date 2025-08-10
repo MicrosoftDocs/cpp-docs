@@ -12,7 +12,7 @@ ms.assetid: 68466e11-2541-4f6b-b772-13a642f30dfb
 
 ## Example
 
-The following sample generates C2898:
+The following example generates C2898:
 
 ```cpp
 // C2898.cpp

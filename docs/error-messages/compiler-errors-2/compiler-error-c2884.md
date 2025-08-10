@@ -16,7 +16,7 @@ You tried to define a function more than once. The first definition is a local d
 
 ## Example
 
-The following sample generates C2884:
+The following example generates C2884:
 
 ```cpp
 // C2884.cpp

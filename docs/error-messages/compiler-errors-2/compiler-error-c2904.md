@@ -16,7 +16,7 @@ Check the code for duplicate names.
 
 ## Example
 
-The following sample generates C2904:
+The following example generates C2904:
 
 ```cpp
 // C2904.cpp

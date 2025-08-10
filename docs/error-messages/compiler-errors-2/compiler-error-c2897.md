@@ -16,7 +16,7 @@ Destructors or finalizers cannot be overloaded, so declaring a destructor as a t
 
 ## Examples
 
-The following sample generates C2897.
+The following example generates C2897.
 
 ```cpp
 // C2897.cpp
@@ -27,7 +27,7 @@ public:
 };
 ```
 
-The following sample generates C2897.
+The following example generates C2897.
 
 ```cpp
 // C2897_b.cpp

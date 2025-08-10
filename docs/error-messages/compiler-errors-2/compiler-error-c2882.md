@@ -16,7 +16,7 @@ You tried to use the name of a namespace in an expression.
 
 ## Example
 
-The following sample generates C2882:
+The following example generates C2882:
 
 ```cpp
 // C2882.cpp

@@ -16,7 +16,7 @@ A specialization of the primary template occurs before the explicit specializati
 
 ## Example
 
-The following sample generates C2908:
+The following example generates C2908:
 
 ```cpp
 // C2908.cpp

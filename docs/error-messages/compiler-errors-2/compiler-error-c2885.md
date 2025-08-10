@@ -18,7 +18,7 @@ This error can be generated as a result of compiler conformance work that was do
 
 ## Examples
 
-The following sample generates C2885.
+The following example generates C2885.
 
 ```cpp
 // C2885.cpp
@@ -49,7 +49,7 @@ int main () {
 
 If you use the **`using`** keyword with a class member, C++ requires you to define that member inside another class (a derived class).
 
-The following sample generates C2885.
+The following example generates C2885.
 
 ```cpp
 // C2885_b.cpp

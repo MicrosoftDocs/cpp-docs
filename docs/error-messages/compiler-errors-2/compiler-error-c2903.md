@@ -16,7 +16,7 @@ Code attempts explicit instantiation of something that is not a template.
 
 ## Examples
 
-The following sample generates C2903:
+The following example generates C2903:
 
 ```cpp
 // C2903.cpp

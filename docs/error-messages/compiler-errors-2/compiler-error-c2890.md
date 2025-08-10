@@ -16,7 +16,7 @@ A reference class can only have one base class.
 
 ## Example
 
-The following sample generates C2890:
+The following example generates C2890:
 
 ```cpp
 // C2890.cpp

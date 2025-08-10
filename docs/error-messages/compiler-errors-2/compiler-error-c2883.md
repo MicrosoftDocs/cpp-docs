@@ -16,7 +16,7 @@ You tried to define a function more than once. The first definition was made fro
 
 ## Example
 
-The following sample generates C2883:
+The following example generates C2883:
 
 ```cpp
 // C2883.cpp

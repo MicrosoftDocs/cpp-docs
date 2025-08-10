@@ -16,7 +16,7 @@ You cannot use the same name as an alias for two namespaces.
 
 ## Example
 
-The following sample generates C2881:
+The following example generates C2881:
 
 ```cpp
 // C2881.cpp

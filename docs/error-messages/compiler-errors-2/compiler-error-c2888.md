@@ -15,7 +15,7 @@ A symbol belonging to namespace A must be defined in a namespace that encloses A
 
 ## Example
 
-The following sample generates C2888:
+The following example generates C2888:
 
 ```cpp
 // C2888.cpp
