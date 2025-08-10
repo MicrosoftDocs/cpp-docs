@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2936"
 title: "Compiler Error C2936"
+description: "Learn more about: Compiler Error C2936"
 ms.date: 06/01/2022
 f1_keywords: ["C2936"]
 helpviewer_keywords: ["C2936"]
-ms.assetid: 5d1ba0fc-0c78-4a37-a83b-1ef8527763be
 ---
 # Compiler Error C2936
 

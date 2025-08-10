@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2931"
 title: "Compiler Error C2931"
+description: "Learn more about: Compiler Error C2931"
 ms.date: 06/01/2022
 f1_keywords: ["C2931"]
 helpviewer_keywords: ["C2931"]
-ms.assetid: 33430407-b149-4ba3-baf8-b0dae1ea3a5d
 ---
 # Compiler Error C2931
 

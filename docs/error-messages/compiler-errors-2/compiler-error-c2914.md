@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2914"
 title: "Compiler Error C2914"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2914"
+ms.date: 11/04/2016
 f1_keywords: ["C2914"]
 helpviewer_keywords: ["C2914"]
-ms.assetid: fc6a0592-f53e-4f5a-88cb-780bbed4acf2
 ---
 # Compiler Error C2914
 

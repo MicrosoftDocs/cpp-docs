@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2929"
 title: "Compiler Error C2929"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2929"
+ms.date: 11/04/2016
 f1_keywords: ["C2929"]
 helpviewer_keywords: ["C2929"]
-ms.assetid: 11134027-6adc-4733-b6bd-b94486bd1933
 ---
 # Compiler Error C2929
 

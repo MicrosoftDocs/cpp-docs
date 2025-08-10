@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2940"
 title: "Compiler Error C2940"
+description: "Learn more about: Compiler Error C2940"
 ms.date: 06/01/2022
 f1_keywords: ["C2940"]
 helpviewer_keywords: ["C2940"]
-ms.assetid: af6bf2bf-8de6-4cfd-bbf0-4c6b32a30edf
 ---
 # Compiler Error C2940
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2911"
 title: "Compiler Error C2911"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2911"
+ms.date: 11/04/2016
 f1_keywords: ["C2911"]
 helpviewer_keywords: ["C2911"]
-ms.assetid: 83c7c01a-ab6a-4179-9fb0-289a9ec8d44e
 ---
 # Compiler Error C2911
 

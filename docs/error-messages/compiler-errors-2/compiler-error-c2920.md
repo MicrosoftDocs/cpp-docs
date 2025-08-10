@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2920"
 title: "Compiler Error C2920"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2920"
+ms.date: 11/04/2016
 f1_keywords: ["C2920"]
 helpviewer_keywords: ["C2920"]
-ms.assetid: 0a4cb2de-00a0-4209-8160-c7ce6ed7d9ab
 ---
 # Compiler Error C2920
 

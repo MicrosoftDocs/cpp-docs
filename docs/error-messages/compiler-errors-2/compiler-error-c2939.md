@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2939"
 title: "Compiler Error C2939"
+description: "Learn more about: Compiler Error C2939"
 ms.date: 06/01/2022
 f1_keywords: ["C2939"]
 helpviewer_keywords: ["C2939"]
-ms.assetid: 455b050b-f2dc-4b5b-bd6a-e1f81d3d1644
 ---
 # Compiler Error C2939
 

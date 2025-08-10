@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2917"
 title: "Compiler Error C2917"
+description: "Learn more about: Compiler Error C2917"
 ms.date: 06/01/2022
 f1_keywords: ["C2917"]
 helpviewer_keywords: ["C2917"]
-ms.assetid: ec9da9ee-0f37-47b3-87dd-19ef5a14dc4c
 ---
 # Compiler Error C2917
 
