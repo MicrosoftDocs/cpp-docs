@@ -8,7 +8,7 @@ ms.assetid: c6cf6090-02e8-49a5-913f-5bc6f864b769
 ---
 # Compiler Error C2913
 
-explicit specialization; 'declaration' is not a specialization of a class template
+> explicit specialization; 'declaration' is not a specialization of a class template
 
 You cannot specialize a non-template class.
 

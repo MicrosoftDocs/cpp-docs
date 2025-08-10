@@ -8,7 +8,7 @@ ms.assetid: fc6a0592-f53e-4f5a-88cb-780bbed4acf2
 ---
 # Compiler Error C2914
 
-'identifier' : cannot deduce type argument as function argument is ambiguous
+> 'identifier' : cannot deduce type argument as function argument is ambiguous
 
 The compiler cannot determine which overloaded functions to use for a generic or template argument.
 

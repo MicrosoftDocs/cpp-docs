@@ -8,7 +8,7 @@ ms.assetid: 83c7c01a-ab6a-4179-9fb0-289a9ec8d44e
 ---
 # Compiler Error C2911
 
-'member' : cannot be declared or defined in the current scope
+> 'member' : cannot be declared or defined in the current scope
 
 Inside a namespace, class, or function, you can only define a member of the same namespace, class, or function or a member that is enclosed by the same namespace, class, or function.
 

@@ -8,7 +8,7 @@ ms.assetid: bd55cecd-ab1a-4636-ab8a-a00393fe7b3d
 ---
 # Compiler Error C2912
 
-explicit specialization 'declaration' is not a specialization of a function template
+> explicit specialization 'declaration' is not a specialization of a function template
 
 You cannot specialize a non-template function.
 

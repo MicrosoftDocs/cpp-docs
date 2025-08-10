@@ -8,6 +8,6 @@ ms.assetid: 3f75beec-ff5c-44e1-9085-990ecd55198d
 ---
 # Compiler Error C2927
 
-'function' : a function template must be called with at least one argument
+> 'function' : a function template must be called with at least one argument
 
 You cannot call a function template without arguments. The type of the template arguments determines what version of the function to generate.

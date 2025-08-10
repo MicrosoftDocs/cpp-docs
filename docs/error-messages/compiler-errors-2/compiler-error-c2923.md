@@ -8,7 +8,7 @@ ms.assetid: 6b92933b-13ef-4124-99d9-b89f9fdae030
 ---
 # Compiler Error C2923
 
-'type' : 'identifier' is not a valid template type argument for parameter 'param'
+> 'type' : 'identifier' is not a valid template type argument for parameter 'param'
 
 The argument list is missing a type needed to instantiate the template or generic. Check the template or generic declaration.
 

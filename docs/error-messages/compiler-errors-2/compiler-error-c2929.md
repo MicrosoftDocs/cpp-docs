@@ -8,7 +8,7 @@ ms.assetid: 11134027-6adc-4733-b6bd-b94486bd1933
 ---
 # Compiler Error C2929
 
-'identifier' : explicit instantiation; cannot explicitly force and suppress instantiation of template-class member
+> 'identifier' : explicit instantiation; cannot explicitly force and suppress instantiation of template-class member
 
 You cannot explicitly instantiate an identifier while preventing it from being instantiated.
 

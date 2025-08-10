@@ -8,7 +8,7 @@ ms.assetid: 323642a0-bfc4-4942-9f41-c3adf5c54296
 ---
 # Compiler Error C2921
 
-redefinition : 'class' : class template or generic is being redeclared as 'type'
+> redefinition : 'class' : class template or generic is being redeclared as 'type'
 
 A generic or template class has multiple declarations that are not equivalent. To fix this error, use different names for different types, or remove the redefinition of the type name.
 

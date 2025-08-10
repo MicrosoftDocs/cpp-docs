@@ -8,7 +8,7 @@ ms.assetid: 140a6db9-eb48-4c5e-84a7-a09d2653605b
 ---
 # Compiler Error C2919
 
-'type': Operators cannot be used on the published surface of a WinRT type
+> 'type': Operators cannot be used on the published surface of a WinRT type
 
 The Windows Runtime type system does not support operator member functions in the published surface of a type. This is because not all languages can consume operator member functions. You can create private or internal operator member functions that can be called from C++ code in the same class or compilation unit.
 

@@ -8,7 +8,7 @@ ms.assetid: 33430407-b149-4ba3-baf8-b0dae1ea3a5d
 ---
 # Compiler Error C2931
 
-'*class*' : type-class-id redefined as a member function of '*identifier*'
+> '*class*' : type-class-id redefined as a member function of '*identifier*'
 
 You can't use a generic or template class as a member function of another class.
 

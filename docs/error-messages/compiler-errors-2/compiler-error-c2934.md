@@ -8,7 +8,7 @@ ms.assetid: b7f7e7aa-2d4c-4e17-8564-2c005ab81fd5
 ---
 # Compiler Error C2934
 
-'*class*' : type-class-id redefined as a nested 'item' of '*identifier*'
+> '*class*' : type-class-id redefined as a nested 'item' of '*identifier*'
 
 You can't use a generic or template class as a nested item.
 

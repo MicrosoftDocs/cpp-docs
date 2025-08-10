@@ -8,7 +8,7 @@ ms.assetid: f07eecd1-e5d1-4518-bd89-b1fd2a003a17
 ---
 # Compiler Error C2930
 
-'class' : type-class-id redefined as an enumerator of 'enum identifier'
+> 'class' : type-class-id redefined as an enumerator of 'enum identifier'
 
 You cannot use a generic or template class as a member of an enumeration.
 
