@@ -20,7 +20,7 @@ This error can be caused if braces are improperly matched.
 
 ## Examples
 
-The following sample generates C2936:
+The following example generates C2936:
 
 ```cpp
 // C2936.cpp

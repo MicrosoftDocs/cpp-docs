@@ -16,7 +16,7 @@ You cannot specialize a non-template class.
 
 ## Example
 
-The following sample generates C2913:
+The following example generates C2913:
 
 ```cpp
 // C2913.cpp

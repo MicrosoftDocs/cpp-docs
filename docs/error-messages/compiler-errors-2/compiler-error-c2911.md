@@ -16,7 +16,7 @@ Inside a namespace, class, or function, you can only define a member of the same
 
 ## Example
 
-The following sample generates C2911:
+The following example generates C2911:
 
 ```cpp
 // C2911.cpp

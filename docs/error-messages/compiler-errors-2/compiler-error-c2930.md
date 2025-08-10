@@ -18,7 +18,7 @@ This error can be caused if braces are improperly matched.
 
 ## Examples
 
-The following sample generates C2930:
+The following example generates C2930:
 
 ```cpp
 // C2930.cpp

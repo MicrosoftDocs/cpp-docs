@@ -18,7 +18,7 @@ This error is obsolete in Visual Studio 2022 and later versions.
 
 ## Examples
 
-The following sample generates C2940:
+The following example generates C2940:
 
 ```cpp
 // C2940.cpp

@@ -16,7 +16,7 @@ The argument list is missing a type needed to instantiate the template or generi
 
 ## Examples
 
-The following sample generates C2923:
+The following example generates C2923:
 
 ```cpp
 // C2923.cpp

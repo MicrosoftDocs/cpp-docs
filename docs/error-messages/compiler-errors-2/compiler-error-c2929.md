@@ -16,7 +16,7 @@ You cannot explicitly instantiate an identifier while preventing it from being i
 
 ## Example
 
-The following sample generates C2929:
+The following example generates C2929:
 
 ```cpp
 // C2929.cpp

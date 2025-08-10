@@ -16,7 +16,7 @@ You cannot specialize a non-template function.
 
 ## Examples
 
-The following sample generates C2912:
+The following example generates C2912:
 
 ```cpp
 // C2912.cpp

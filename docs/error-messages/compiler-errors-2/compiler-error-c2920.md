@@ -16,7 +16,7 @@ A generic or template class has multiple declarations, which are not equivalent.
 
 ## Examples
 
-The following sample generates C2920 and shows how to fix it:
+The following example generates C2920 and shows how to fix it:
 
 ```cpp
 // C2920.cpp

@@ -16,7 +16,7 @@ The compiler cannot determine which overloaded functions to use for a generic or
 
 ## Examples
 
-The following sample generates C2914:
+The following example generates C2914:
 
 ```cpp
 // C2914.cpp
@@ -29,7 +29,7 @@ void h() { g(f); }   // C2914
 // void h() { g<int>(f); }
 ```
 
-C2914 can also occur when using generics.  The following sample generates C2914:
+C2914 can also occur when using generics.  The following example generates C2914:
 
 ```cpp
 // C2914b.cpp
