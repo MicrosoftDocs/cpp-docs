@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2882"
 title: "Compiler Error C2882"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2882"
+ms.date: 11/04/2016
 f1_keywords: ["C2882"]
 helpviewer_keywords: ["C2882"]
-ms.assetid: 617018ee-5a0d-4b8d-9612-77e8ae52679b
 ---
 # Compiler Error C2882
 

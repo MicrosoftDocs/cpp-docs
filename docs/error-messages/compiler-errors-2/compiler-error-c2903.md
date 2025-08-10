@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2903"
 title: "Compiler Error C2903"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2903"
+ms.date: 11/04/2016
 f1_keywords: ["C2903"]
 helpviewer_keywords: ["C2903"]
-ms.assetid: bf6b223f-4921-48c7-82b9-ff318b42c801
 ---
 # Compiler Error C2903
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2902"
 title: "Compiler Error C2902"
+description: "Learn more about: Compiler Error C2902"
 ms.date: 06/01/2022
 f1_keywords: ["C2902"]
 helpviewer_keywords: ["C2902"]
-ms.assetid: 89d78d0e-78e5-4c2c-a0f9-a60110e9395e
 ---
 # Compiler Error C2902
 

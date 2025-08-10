@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2910"
 title: "Compiler Error C2910"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2910"
+ms.date: 11/04/2016
 f1_keywords: ["C2910"]
 helpviewer_keywords: ["C2910"]
-ms.assetid: 09c50e6a-e099-42f6-8ed6-d80e292a7a36
 ---
 # Compiler Error C2910
 

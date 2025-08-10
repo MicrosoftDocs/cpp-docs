@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2890"
 title: "Compiler Error C2890"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2890"
+ms.date: 11/04/2016
 f1_keywords: ["C2890"]
 helpviewer_keywords: ["C2890"]
-ms.assetid: 49147375-182c-42b1-b170-f475cd436d47
 ---
 # Compiler Error C2890
 
