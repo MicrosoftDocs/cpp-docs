@@ -10,7 +10,11 @@ ms.assetid: bf6b223f-4921-48c7-82b9-ff318b42c801
 
 > 'identifier' : symbol is neither a class template nor a function template
 
+## Remarks
+
 Code attempts explicit instantiation of something that is not a template.
+
+## Examples
 
 The following sample generates C2903:
 

@@ -10,7 +10,11 @@ ms.assetid: 09c50e6a-e099-42f6-8ed6-d80e292a7a36
 
 > 'function' : cannot be explicitly specialized
 
+## Remarks
+
 The compiler detected an attempt to explicitly specialize a function twice.
+
+## Examples
 
 The following sample generates C2910:
 

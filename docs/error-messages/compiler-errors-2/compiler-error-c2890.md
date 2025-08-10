@@ -10,7 +10,11 @@ ms.assetid: 49147375-182c-42b1-b170-f475cd436d47
 
 > 'class' : a ref class can only have one non-interface base class
 
+## Remarks
+
 A reference class can only have one base class.
+
+## Example
 
 The following sample generates C2890:
 

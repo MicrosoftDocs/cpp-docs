@@ -10,7 +10,11 @@ ms.assetid: d5802f2e-d3fc-473d-aa04-36957b4eaca5
 
 > 'identifier' : name already used for a template in the current scope
 
+## Remarks
+
 Check the code for duplicate names.
+
+## Example
 
 The following sample generates C2904:
 

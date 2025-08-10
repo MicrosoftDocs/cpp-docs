@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2893"]
 
 > Failed to specialize function template 'template name'
 
+## Remarks
+
 The compiler failed to specialize a function template. There can be many causes for this error.
 
 In general, the way to resolve a C2893 error is to review the function's signature and make sure you can instantiate every type.

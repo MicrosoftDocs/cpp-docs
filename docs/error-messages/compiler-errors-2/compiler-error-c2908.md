@@ -10,7 +10,11 @@ ms.assetid: 49cd2a21-cad8-4ba0-9a0b-3a0190d9344c
 
 > explicit specialization; 'template' has already been instantiated
 
+## Remarks
+
 A specialization of the primary template occurs before the explicit specialization.
+
+## Example
 
 The following sample generates C2908:
 

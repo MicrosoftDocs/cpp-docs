@@ -10,9 +10,13 @@ ms.assetid: b600407b-cb05-42e3-9069-2aa6960f0eaa
 
 > '*function1*' : cannot use function template '*function2*' as argument
 
+## Remarks
+
 A function template can't be an argument to another function template.
 
 This error is obsolete in Visual Studio 2022 and later versions.
+
+## Examples
 
 The following sample generates C2896:
 

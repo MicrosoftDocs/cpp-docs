@@ -10,7 +10,11 @@ ms.assetid: b49c63c2-b064-4d4b-a75e-ddd2af947522
 
 > 'namespace1' : is already used as an alias for 'namespace2'
 
+## Remarks
+
 You cannot use the same name as an alias for two namespaces.
+
+## Example
 
 The following sample generates C2881:
 

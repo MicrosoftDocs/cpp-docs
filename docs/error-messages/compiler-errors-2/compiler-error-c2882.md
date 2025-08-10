@@ -10,7 +10,11 @@ ms.assetid: 617018ee-5a0d-4b8d-9612-77e8ae52679b
 
 > 'name' : illegal use of namespace identifier in expression
 
+## Remarks
+
 You tried to use the name of a namespace in an expression.
+
+## Example
 
 The following sample generates C2882:
 

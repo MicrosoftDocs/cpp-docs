@@ -10,7 +10,11 @@ ms.assetid: c01588a1-484c-4dc9-a3f1-f900c6e44543
 
 > 'class::identifier' : symbol cannot be used in a member using-declaration
 
+## Remarks
+
 A **`using`** declaration uses a symbol, such as a namespace name. A **`using`** declaration is for declaring base class members.
+
+## Example
 
 The following sample generates C2886:
 

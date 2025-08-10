@@ -9,7 +9,11 @@ helpviewer_keywords: ["C2888"]
 
 > 'identifier' : symbol cannot be defined within namespace 'namespace'
 
+## Remarks
+
 A symbol belonging to namespace A must be defined in a namespace that encloses A.
+
+## Example
 
 The following sample generates C2888:
 
