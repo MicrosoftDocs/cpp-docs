@@ -8,7 +8,7 @@ ms.assetid: 68466e11-2541-4f6b-b772-13a642f30dfb
 ---
 # Compiler Error C2898
 
-'declaration' : member function templates cannot be virtual
+> 'declaration' : member function templates cannot be virtual
 
 The following sample generates C2898:
 

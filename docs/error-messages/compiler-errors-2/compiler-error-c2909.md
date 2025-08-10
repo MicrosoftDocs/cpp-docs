@@ -8,7 +8,7 @@ ms.assetid: 1c9df8ae-925d-4002-a5f8-a71413c45f9e
 ---
 # Compiler Error C2909
 
-'identifier': explicit instantiation of function template requires return type
+> 'identifier': explicit instantiation of function template requires return type
 
 An explicit instantiation of a function template requires explicit specification of its return type. Implicit return type specification does not work.
 

@@ -8,7 +8,7 @@ ms.assetid: d5802f2e-d3fc-473d-aa04-36957b4eaca5
 ---
 # Compiler Error C2904
 
-'identifier' : name already used for a template in the current scope
+> 'identifier' : name already used for a template in the current scope
 
 Check the code for duplicate names.
 

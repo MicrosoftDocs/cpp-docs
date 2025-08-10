@@ -8,7 +8,7 @@ ms.assetid: 49cd2a21-cad8-4ba0-9a0b-3a0190d9344c
 ---
 # Compiler Error C2908
 
-explicit specialization; 'template' has already been instantiated
+> explicit specialization; 'template' has already been instantiated
 
 A specialization of the primary template occurs before the explicit specialization.
 

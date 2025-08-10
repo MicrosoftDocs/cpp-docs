@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2893"]
 ---
 # Compiler Error C2893
 
-Failed to specialize function template 'template name'
+> Failed to specialize function template 'template name'
 
 The compiler failed to specialize a function template. There can be many causes for this error.
 

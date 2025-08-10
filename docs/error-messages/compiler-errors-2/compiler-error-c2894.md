@@ -8,7 +8,7 @@ ms.assetid: 4e250579-2b59-4993-a6f4-49273e7ecf06
 ---
 # Compiler Error C2894
 
-templates cannot be declared to have 'C' linkage
+> templates cannot be declared to have 'C' linkage
 
 This error can be caused by a template defined inside an `extern "C"` block.
 

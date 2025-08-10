@@ -8,7 +8,7 @@ ms.assetid: 09c50e6a-e099-42f6-8ed6-d80e292a7a36
 ---
 # Compiler Error C2910
 
-'function' : cannot be explicitly specialized
+> 'function' : cannot be explicitly specialized
 
 The compiler detected an attempt to explicitly specialize a function twice.
 

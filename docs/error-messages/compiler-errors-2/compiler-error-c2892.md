@@ -8,7 +8,7 @@ ms.assetid: c22a5084-2f50-42c2-a56b-6dfe5442edc9
 ---
 # Compiler Error C2892
 
-local class shall not have member templates
+> local class shall not have member templates
 
 Templated member functions are not valid in a class that is defined in a function.
 

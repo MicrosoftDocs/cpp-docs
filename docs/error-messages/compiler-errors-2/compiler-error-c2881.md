@@ -8,7 +8,7 @@ ms.assetid: b49c63c2-b064-4d4b-a75e-ddd2af947522
 ---
 # Compiler Error C2881
 
-'namespace1' : is already used as an alias for 'namespace2'
+> 'namespace1' : is already used as an alias for 'namespace2'
 
 You cannot use the same name as an alias for two namespaces.
 

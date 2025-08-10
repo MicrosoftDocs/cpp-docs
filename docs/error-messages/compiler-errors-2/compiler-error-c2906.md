@@ -8,7 +8,7 @@ ms.assetid: 30f652f1-6af6-4a2f-a69e-a1a4876cc8c6
 ---
 # Compiler Error C2906
 
-'specialization' : explicit specialization requires 'template <>'
+> 'specialization' : explicit specialization requires 'template <>'
 
 You must use the new syntax for explicit specialization of templates.
 

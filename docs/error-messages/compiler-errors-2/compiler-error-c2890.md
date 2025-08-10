@@ -8,7 +8,7 @@ ms.assetid: 49147375-182c-42b1-b170-f475cd436d47
 ---
 # Compiler Error C2890
 
-'class' : a ref class can only have one non-interface base class
+> 'class' : a ref class can only have one non-interface base class
 
 A reference class can only have one base class.
 

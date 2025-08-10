@@ -8,7 +8,7 @@ ms.assetid: a88349e2-823f-42a0-8660-0653b677afa4
 ---
 # Compiler Error C2897
 
-a destructor/finalizer cannot be a function template
+> a destructor/finalizer cannot be a function template
 
 Destructors or finalizers cannot be overloaded, so declaring a destructor as a template (which would define a set of destructors) is not allowed.
 

@@ -8,7 +8,7 @@ ms.assetid: 617018ee-5a0d-4b8d-9612-77e8ae52679b
 ---
 # Compiler Error C2882
 
-'name' : illegal use of namespace identifier in expression
+> 'name' : illegal use of namespace identifier in expression
 
 You tried to use the name of a namespace in an expression.
 

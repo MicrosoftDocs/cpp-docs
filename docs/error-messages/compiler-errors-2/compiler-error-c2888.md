@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2888"]
 ---
 # Compiler Error C2888
 
-'identifier' : symbol cannot be defined within namespace 'namespace'
+> 'identifier' : symbol cannot be defined within namespace 'namespace'
 
 A symbol belonging to namespace A must be defined in a namespace that encloses A.
 

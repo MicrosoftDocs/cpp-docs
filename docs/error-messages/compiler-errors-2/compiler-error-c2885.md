@@ -8,7 +8,7 @@ ms.assetid: 7743e5f3-a034-44b4-9ee8-5a6254c27f8c
 ---
 # Compiler Error C2885
 
-'class::identifier' : not a valid using-declaration at non-class scope
+> 'class::identifier' : not a valid using-declaration at non-class scope
 
 You used a [using](../../cpp/using-declaration.md) declaration incorrectly.
 
