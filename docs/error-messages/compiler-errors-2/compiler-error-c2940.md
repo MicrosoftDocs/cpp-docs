@@ -10,9 +10,13 @@ ms.assetid: af6bf2bf-8de6-4cfd-bbf0-4c6b32a30edf
 
 > '*class*' : type-class-id redefined as a local typedef
 
+## Remarks
+
 You can't use a generic or template class as a local **`typedef`**.
 
 This error is obsolete in Visual Studio 2022 and later versions.
+
+## Examples
 
 The following sample generates C2940:
 

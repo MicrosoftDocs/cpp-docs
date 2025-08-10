@@ -10,9 +10,13 @@ ms.assetid: 394891e3-6b52-4b61-83d2-a1c5125d9bd5
 
 > '*class*' : type-class-id redefined as a typedef member of '*identifier*'
 
+## Remarks
+
 You can't use a generic or template class as a **`typedef`** member.
 
 This error is obsolete in Visual Studio 2022 and later versions.
+
+## Examples
 
 The following sample generates C2933:
 

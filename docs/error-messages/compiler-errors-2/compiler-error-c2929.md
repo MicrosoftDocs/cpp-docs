@@ -10,7 +10,11 @@ ms.assetid: 11134027-6adc-4733-b6bd-b94486bd1933
 
 > 'identifier' : explicit instantiation; cannot explicitly force and suppress instantiation of template-class member
 
+## Remarks
+
 You cannot explicitly instantiate an identifier while preventing it from being instantiated.
+
+## Example
 
 The following sample generates C2929:
 

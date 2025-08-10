@@ -10,9 +10,13 @@ ms.assetid: c28e88d9-e654-4367-bfb4-13c780bca9bd
 
 > '*class*' : type-class-id redefined as a data member of '*identifier*'
 
+## Remarks
+
 You can't use a generic or template class as a data member.
 
 This error is obsolete in Visual Studio 2022 and later versions.
+
+## Examples
 
 The following sample generates C2932:
 

@@ -10,7 +10,11 @@ ms.assetid: 0a4cb2de-00a0-4209-8160-c7ce6ed7d9ab
 
 > redefinition : 'class' : class template or generic has already been declared as 'type'
 
+## Remarks
+
 A generic or template class has multiple declarations, which are not equivalent. To fix this error, use different names for different types, or remove the redefinition of the type name.
+
+## Examples
 
 The following sample generates C2920 and shows how to fix it:
 

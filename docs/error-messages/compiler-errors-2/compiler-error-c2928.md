@@ -10,4 +10,6 @@ ms.assetid: 869e57f4-7024-4cbe-b47b-6e1e2a6005c5
 
 > explicit instantiation; '*identifier*' is not a function or static data member of template-class '*class-name*'
 
+## Remarks
+
 You cannot explicitly instantiate a member of *class-name* that is not a function or **`static`** variable.

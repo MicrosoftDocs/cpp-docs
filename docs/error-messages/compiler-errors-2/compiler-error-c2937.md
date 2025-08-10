@@ -10,9 +10,13 @@ ms.assetid: 95671ca3-79f7-4b56-a5f2-a92296da1629
 
 > '*class*' : type-class-id redefined as a global typedef
 
+## Remarks
+
 You can't use a generic or template class as a global **`typedef`**.
 
 This error is obsolete in Visual Studio 2022 and later versions.
+
+## Examples
 
 The following sample generates C2937:
 

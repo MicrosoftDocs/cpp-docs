@@ -10,4 +10,6 @@ ms.assetid: e452f7ef-0590-45e6-9c7c-ee75dc014670
 
 > 'name': Indexed properties cannot be used on the published surface of a WinRT type
 
+## Remarks
+
 Indexed properties are not supported on the published surface of a WinRT type.

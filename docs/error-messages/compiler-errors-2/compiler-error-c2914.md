@@ -10,7 +10,11 @@ ms.assetid: fc6a0592-f53e-4f5a-88cb-780bbed4acf2
 
 > 'identifier' : cannot deduce type argument as function argument is ambiguous
 
+## Remarks
+
 The compiler cannot determine which overloaded functions to use for a generic or template argument.
+
+## Examples
 
 The following sample generates C2914:
 

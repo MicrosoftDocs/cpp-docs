@@ -10,11 +10,15 @@ ms.assetid: 455b050b-f2dc-4b5b-bd6a-e1f81d3d1644
 
 > '*class*' : type-class-id redefined as a local data variable
 
+## Remarks
+
 You can't use a generic or template class as a local data variable.
 
 This error is obsolete in Visual Studio 2022 and later versions.
 
 This error can be caused if braces are improperly matched.
+
+## Examples
 
 The following sample generates C2939:
 

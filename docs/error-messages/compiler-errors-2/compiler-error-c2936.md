@@ -10,11 +10,15 @@ ms.assetid: 5d1ba0fc-0c78-4a37-a83b-1ef8527763be
 
 > '*class*' : type-class-id redefined as a global data variable
 
+## Remarks
+
 You can't use a generic or template class as a global data variable.
 
 This error is obsolete in Visual Studio 2022 and later versions.
 
 This error can be caused if braces are improperly matched.
+
+## Examples
 
 The following sample generates C2936:
 

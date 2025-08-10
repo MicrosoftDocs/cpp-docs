@@ -10,7 +10,11 @@ ms.assetid: bd55cecd-ab1a-4636-ab8a-a00393fe7b3d
 
 > explicit specialization 'declaration' is not a specialization of a function template
 
+## Remarks
+
 You cannot specialize a non-template function.
+
+## Examples
 
 The following sample generates C2912:
 

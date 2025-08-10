@@ -10,11 +10,15 @@ ms.assetid: e11ef90d-0756-4e43-8a09-4974c6aa72a3
 
 > '*class*' : type-class-id redefined as a global function
 
+## Remarks
+
 You can't use a generic or template class as a global function.
 
 This error is obsolete in Visual Studio 2022 and later versions.
 
 This error can be caused if braces are improperly matched.
+
+## Examples
 
 The following sample generates C2935:
 

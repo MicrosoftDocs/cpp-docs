@@ -10,7 +10,11 @@ ms.assetid: c6cf6090-02e8-49a5-913f-5bc6f864b769
 
 > explicit specialization; 'declaration' is not a specialization of a class template
 
+## Remarks
+
 You cannot specialize a non-template class.
+
+## Example
 
 The following sample generates C2913:
 

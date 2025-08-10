@@ -10,11 +10,15 @@ ms.assetid: 33430407-b149-4ba3-baf8-b0dae1ea3a5d
 
 > '*class*' : type-class-id redefined as a member function of '*identifier*'
 
+## Remarks
+
 You can't use a generic or template class as a member function of another class.
 
 This error is obsolete in Visual Studio 2022 and later versions.
 
 This error can be caused if braces are improperly matched.
+
+## Examples
 
 The following sample generates C2931:
 

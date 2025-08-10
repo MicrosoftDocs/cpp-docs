@@ -10,9 +10,13 @@ ms.assetid: f07eecd1-e5d1-4518-bd89-b1fd2a003a17
 
 > 'class' : type-class-id redefined as an enumerator of 'enum identifier'
 
+## Remarks
+
 You cannot use a generic or template class as a member of an enumeration.
 
 This error can be caused if braces are improperly matched.
+
+## Examples
 
 The following sample generates C2930:
 
