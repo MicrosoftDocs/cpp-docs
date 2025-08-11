@@ -22,7 +22,7 @@ If you discover options that are inaccurately documented, we invite you to [repo
 |`allow_user_poisoning` | `true` | If `true`, you may manually mark memory regions as poisoned or unpoisoned.|
 |`atexit` | `false` | If `true`, prints ASan exit stats even after program terminates successfully.|
 |`check_initialization_order` | `false` | If `true`, attempts to catch initialization order issues.|
-|`check_malloc_usable_size` | `true` | Allows the users to work around the bug in Nvidia drivers prior to `295.*`.|
+|`check_malloc_usable_size` | `true` | If `true`, reports an error when the pointer does not reference a valid, currently allocated block.|
 |`check_printf` | `true` | If `true`, enables ASan to validate printf family function arguments for memory safety violations.|
 |`continue_on_error` | `0` | Allows an application to continue running while reporting unique memory safety errors. `0` - disabled, `1` - `stderr(1)`, `2` - `stderr(2)`. See [continue_on_error](asan-continue-on-error.md).|
 |`coverage` | `false` | If `true` and the coverage instrumentation was enabled at compile time, coverage information will be dumped at program shutdown.|
