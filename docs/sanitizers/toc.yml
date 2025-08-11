@@ -12,10 +12,8 @@ items:
       href: ../sanitizers/asan-building.md
     - name: "Runtime reference"
       href: ../sanitizers/asan-runtime.md
-      expanded: true
-      items:
-        - name: "AddressSanitizer runtime options"
-          href: ../sanitizers/asan-flags.md
+    - name: "AddressSanitizer runtime options"
+      href: ../sanitizers/asan-flags.md
     - name: "Debugger integration"
       href: ../sanitizers/asan-debugger-integration.md
     - name: "Shadow bytes"
