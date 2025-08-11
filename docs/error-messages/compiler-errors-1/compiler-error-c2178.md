@@ -13,19 +13,18 @@ helpviewer_keywords: ["C2178"]
 
 A **`mutable`** specifier was used in a declaration, but the specifier is not allowed in this context. It can only be applied to non-static, non-const, and non-reference data members. For more information, see [Mutable Data Members](../../cpp/mutable-data-members-cpp.md).
 
-## Example
+## Example: `mutable`
 
-The following example shows how C2178 may occur, and how to fix it.
+The following example shows how C2178 may occur with the **`mutable`** specifier, and how to resolve it:
 
 ```cpp
-// C2178.cpp
-// compile with: cl /c /W4 C2178.cpp
+// C2178_mutable.cpp
+// compile with: /c
 
-class S {
-    mutable const int i; // C2178
-    // To fix, declare either const or mutable, not both.
+struct S
+{
+    mutable const int i;   // C2178, remove mutable or const to resolve
 };
 
-mutable int x = 4; // C2178
-// To fix, remove mutable keyword
+mutable int x = 4;   // C2178, remove mutable to resolve
 ```
