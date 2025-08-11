@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2178"
 description: "Learn more about: Compiler Error C2178"
-ms.date: 05/08/2017
+ms.date: 08/11/2025
 f1_keywords: ["C2178"]
 helpviewer_keywords: ["C2178"]
 ---
