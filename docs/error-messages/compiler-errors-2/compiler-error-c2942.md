@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2942"
 title: "Compiler Error C2942"
+description: "Learn more about: Compiler Error C2942"
 ms.date: 06/01/2022
 f1_keywords: ["C2942"]
 helpviewer_keywords: ["C2942"]
-ms.assetid: 13abf744-8fa1-450d-886d-e5717c04956e
 ---
 # Compiler Error C2942
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2969"
 title: "Compiler Error C2969"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2969"
+ms.date: 11/04/2016
 f1_keywords: ["C2969"]
 helpviewer_keywords: ["C2969"]
-ms.assetid: e4ea3d66-b937-4b2c-b42a-96e03fb11579
 ---
 # Compiler Error C2969
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2943"
 title: "Compiler Error C2943"
+description: "Learn more about: Compiler Error C2943"
 ms.date: 06/01/2022
 f1_keywords: ["C2943"]
 helpviewer_keywords: ["C2943"]
-ms.assetid: ede6565e-d892-44c0-8eee-c69545f3be2e
 ---
 # Compiler Error C2943
 

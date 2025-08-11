@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2953"
 title: "Compiler Error C2953"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2953"
+ms.date: 11/04/2016
 f1_keywords: ["C2953"]
 helpviewer_keywords: ["C2953"]
-ms.assetid: 8dbcfa24-8296-4e40-bdc4-5526c07d8892
 ---
 # Compiler Error C2953
 

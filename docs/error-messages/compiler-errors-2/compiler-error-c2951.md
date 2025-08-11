@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2951"
 title: "Compiler Error C2951"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2951"
+ms.date: 11/04/2016
 f1_keywords: ["C2951"]
 helpviewer_keywords: ["C2951"]
-ms.assetid: c6f95aa2-c894-425b-a51c-d40d70c8daa1
 ---
 # Compiler Error C2951
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2944"
 title: "Compiler Error C2944"
+description: "Learn more about: Compiler Error C2944"
 ms.date: 06/01/2022
 f1_keywords: ["C2944"]
 helpviewer_keywords: ["C2944"]
-ms.assetid: f209e668-e72f-442a-a438-8c4ff43a404a
 ---
 # Compiler Error C2944
 

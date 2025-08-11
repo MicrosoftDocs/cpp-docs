@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2956"
 title: "Compiler Error C2956"
+description: "Learn more about: Compiler Error C2956"
 ms.date: 04/05/2022
 f1_keywords: ["C2956"]
 helpviewer_keywords: ["C2956"]

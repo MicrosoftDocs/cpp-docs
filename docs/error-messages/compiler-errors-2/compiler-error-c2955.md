@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2955"
 title: "Compiler Error C2955"
-ms.date: "03/28/2017"
+description: "Learn more about: Compiler Error C2955"
+ms.date: 03/28/2017
 f1_keywords: ["C2955"]
 helpviewer_keywords: ["C2955"]
-ms.assetid: 77709fb6-d69b-46fd-a62f-e8564563d01b
 ---
 # Compiler Error C2955
 

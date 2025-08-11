@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2974"
 title: "Compiler Error C2974"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2974"
+ms.date: 11/04/2016
 f1_keywords: ["C2974"]
 helpviewer_keywords: ["C2974"]
-ms.assetid: 1b444260-f2bf-48d7-ab1e-35573d8c4a0e
 ---
 # Compiler Error C2974
 
