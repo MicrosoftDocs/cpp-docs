@@ -30,3 +30,22 @@ struct S
 
 mutable int x = 4;   // C2178, remove mutable to resolve
 ```
+
+## Example: `consteval`
+
+The following example shows how C2178 may occur with the **`consteval`** specifier. To resolve this error, remove all **`consteval`** specifiers:
+
+```cpp
+// C2178_consteval.cpp
+// compile with: /c /std:c++20
+
+#include <cstddef>
+
+struct S
+{
+    consteval ~S() {}   // C2178
+
+    consteval static void* operator new(std::size_t size);   // C2178
+    consteval static void operator delete(void* ptr);        // C2178
+};
+```
