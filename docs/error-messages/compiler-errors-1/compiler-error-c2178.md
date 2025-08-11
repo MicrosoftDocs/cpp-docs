@@ -13,6 +13,8 @@ helpviewer_keywords: ["C2178"]
 
 A **`mutable`** specifier was used in a declaration, but the specifier is not allowed in this context. It can only be applied to non-static, non-const, and non-reference data members. For more information, see [Mutable Data Members](../../cpp/mutable-data-members-cpp.md).
 
+A **`consteval`** specifier was used on a [destructor](../../cpp/destructors-cpp.md), allocation function, or deallocation function.
+
 ## Example: `mutable`
 
 The following example shows how C2178 may occur with the **`mutable`** specifier, and how to resolve it:
