@@ -565,8 +565,8 @@ The library adds several new styles for panes. The following table describes the
 |AFX_CBRS_RESIZE|The pane can be resized. **Important:**  This style is not implemented.|
 |AFX_CBRS_CLOSE|The pane can be closed.|
 |AFX_CBRS_AUTO_ROLLUP|The pane can be rolled up when it floats.|
-|AFX_CBRS_REGULAR_TABS|When one pane docks to another pane that has this style, a regular tabbed window is created. (For more information, see [CTabbedPane Class](../../mfc/reference/ctabbedpane-class.md).)|
-|AFX_CBRS_OUTLOOK_TABS|When one pane docks to another pane that has this style, an Outlook-style tabbed window is created. (For more information, see [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md).)|
+|AFX_CBRS_REGULAR_TABS|When one pane docks to another pane that has this style, a regular tabbed window is created. For more information, see [CTabbedPane Class](../../mfc/reference/ctabbedpane-class.md).|
+|AFX_CBRS_OUTLOOK_TABS|When one pane docks to another pane that has this style, an Outlook-style tabbed window is created. For more information, see [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md).|
 
 To use the new styles, specify them in *dwControlBarStyle*.
 

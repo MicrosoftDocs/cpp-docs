@@ -1024,7 +1024,8 @@ The `CWnd`* that is returned may be temporary and shouldn't be stored for later 
 Converts the client coordinates of a given point or rectangle on the display to screen coordinates.
 
 ```cpp
-void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) const;
+void ClientToScreen(LPPOINT lpPoint) const;
+void ClientToScreen(LPRECT lpRect) const;
 ```
 
 ### Parameters
@@ -10174,7 +10175,8 @@ By default, `ContinueModal` returns `FALSE` after `EndModalLoop` is called. Retu
 Converts the screen coordinates of a given point or rectangle on the display to client coordinates.
 
 ```cpp
-void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) const;
+void ScreenToClient(LPPOINT lpPoint) const;
+void ScreenToClient(LPRECT lpRect) const;
 ```
 
 ### Parameters
