@@ -18,7 +18,6 @@ If you discover options that are inaccurately documented, we invite you to [repo
 |`allocator_frees_and_returns_null_on_realloc_zero` | `1` | 1 - realloc(p, 0) is equivalent to free(p). 0 - realloc(p, 0) will return a non-`NULL` value.|
 |`allocator_may_return_null` | `false` | If `true`, the allocator will return `nullptr` and fail when out of memory instead of crashing.|
 |`allocator_release_to_os_interval_ms` | `-1` | Experimental. 64-bit allocator only. Specify minimum time interval in ms between attempts to release memory.|
-|`allow_addr2line` | `false` | If `true`, the tool uses the `addr2line` binary to symbolize stack traces when `llvm-symbolizer` is not available.|
 |`allow_user_poisoning` | `true` | If `true`, you may manually mark memory regions as poisoned or unpoisoned.|
 |`atexit` | `false` | If `true`, prints ASan exit stats even after program terminates successfully.|
 |`check_initialization_order` | `false` | If `true`, attempts to catch initialization order issues.|
