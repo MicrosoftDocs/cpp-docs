@@ -26,13 +26,6 @@ If you discover options that are inaccurately documented, we invite you to [repo
 |`check_printf` | `true` | If `true`, enables ASan to validate printf family function arguments for memory safety violations.|
 |`continue_on_error` | `0` | Allows an application to continue running while reporting unique memory safety errors. `0` - disabled, `1` - output to `stdout`, `2` - output to `stderr`. See [continue_on_error](asan-continue-on-error.md).|
 |`coverage` | `false` | If `true` and the coverage instrumentation was enabled at compile time, coverage information will be dumped at program shutdown.|
-|`coverage_bitset` | `false` | If `true`, the coverage information will also be dumped as a bitset to a separate file.|
-|`coverage_counters` | `false` | If `true`, the bitmap that corresponds to coverage counters will be dumped.|
-|`coverage_dir` | `"."` | Target directory for coverage dumps. Defaults to the current directory.|
-|`coverage_direct` | `false` | If `true`, coverage information will be dumped directly to a memory mapped file. This way data is not lost even if the process is suddenly killed.|
-|`coverage_order_pcs` | `false` | If `true`, the PCs will be dumped in the order they've appeared during the execution.|
-|`coverage_pcs` | `true` | If `true` the coverage information will be dumped as a set of PC offsets for every module.|
-|`debug` | `false` | If `true`, prints some debugging information and does additional checks.|
 |`detect_container_overflow` | `true` | If `true`, honor the container overflow  annotations. See [ContainerOverflow](./error-container-overflow.md).|
 |`detect_invalid_pointer_pairs` | `0` | If >`0`, the tool detects operations like <, <=, >, >=, and - on invalid pointer pairs, such as pointers that belong to different objects. Higher values increase detection effort.|
 |`detect_odr_violation` | `2` | If >=`2`, detect violation of One-Definition-Rule (ODR) violation; If `1`, detect ODR-violation only if the two variables have different sizes.|
@@ -99,7 +92,6 @@ If you discover options that are inaccurately documented, we invite you to [repo
 |`symbolize_vs_style` | `false` | Print file locations in Visual Studio style (e.g:  file(10,42): ...).|
 |`unmap_shadow_on_exit` | `false` | If `true`, explicitly unmaps the shadow memory at exit.|
 |`use_madv_dontdump` | `true` | If `true`, instructs kernel to not store shadow in core file.|
-|`use_odr_indicator` | `false` | If `true`, emit odr violations.|
 |`verbosity` | `0` | Verbosity level: `0` - default, `1` - more, `2+` - even more output.|
 |`windows_fast_fail_on_error`|`false`|If `true`, enable the process to terminate with a `__fastfail(71)` after printing the error report. See [windows_fast_fail_on_error](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
 |`windows_hook_legacy_allocators`|`true`|If `true`, enable hooking of (`Global`/`Local`)(`Alloc`/`Free`/`Size`/`ReAlloc`/`Lock`/`Unlock`) functions.|
