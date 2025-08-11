@@ -24,7 +24,7 @@ If you discover options that are inaccurately documented, we invite you to [repo
 |`check_initialization_order` | `false` | If `true`, attempts to catch initialization order issues.|
 |`check_malloc_usable_size` | `true` | If `true`, reports an error when the pointer does not reference a valid, currently allocated block.|
 |`check_printf` | `true` | If `true`, enables ASan to validate printf family function arguments for memory safety violations.|
-|`continue_on_error` | `0` | Allows an application to continue running while reporting unique memory safety errors. `0` - disabled, `1` - `stderr(1)`, `2` - `stderr(2)`. See [continue_on_error](asan-continue-on-error.md).|
+|`continue_on_error` | `0` | Allows an application to continue running while reporting unique memory safety errors. `0` - disabled, `1` - output to `stdout`, `2` - output to `stderr`. See [continue_on_error](asan-continue-on-error.md).|
 |`coverage` | `false` | If `true` and the coverage instrumentation was enabled at compile time, coverage information will be dumped at program shutdown.|
 |`coverage_bitset` | `false` | If `true`, the coverage information will also be dumped as a bitset to a separate file.|
 |`coverage_counters` | `false` | If `true`, the bitmap that corresponds to coverage counters will be dumped.|
@@ -45,12 +45,13 @@ If you discover options that are inaccurately documented, we invite you to [repo
 |`fast_unwind_on_fatal` | `false` | If available, the tool uses the fast frame-pointer-based unwinder on fatal errors.|
 |`fast_unwind_on_malloc` | `true` | If available, the tool uses the fast frame-pointer-based unwinder on `malloc`/`free`.|
 |`full_address_space` | `false` | Sanitize complete address space; by default kernel area on 32-bit platforms will not be sanitized.|
-|`halt_on_error` | `true` | Exit/abort the program after printing the first error report (May cause undefined behavior).|
+|`halt_on_error` | `true` | Exit/abort the program after printing the first error report (May cause undefined behavior, use `continue_on_error` for full support).|
 |`handle_segv` | `true` | `false` - ASan will not handle `SEGV` errors, `true` - ASan handles `SEGV` errors.|
 |`handle_sigfpe` | `true` | `false` - ASan will not handle `SIGFPE` errors, `true` - ASan will handle `SIGFPE` errors.|
 |`handle_sigill` | `true` | `false` - ASan will not handle `SIGILL` errors, `true` - ASan will handle `SIGILL` errors.|
 |`help` | `false` | If `true`, ASan prints the flag options to console.|
 |`html_cov_report` | `false` | If `true`, ASan generates a coverage report.|
+|`iat_overwrite`|`error`|`error` - report an error whenever an overwrite is detected, `protect` - attempt to avoid using the overwritten definition, `ignore` - never attempt to correct any overwritten functions. See [iat_overwrite](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
 |`include` | `""` | Read more options from the given file.|
 |`include_if_exists` | `""` | Read more options from the given file (if it exists).|
 |`intercept_memcmp` | `true` | If `true`, uses custom wrappers for memcmp function to find more errors.|
@@ -100,6 +101,8 @@ If you discover options that are inaccurately documented, we invite you to [repo
 |`use_madv_dontdump` | `true` | If `true`, instructs kernel to not store shadow in core file.|
 |`use_odr_indicator` | `false` | If `true`, emit odr violations.|
 |`verbosity` | `0` | Verbosity level: `0` - default, `1` - more, `2+` - even more output.|
+|`windows_fast_fail_on_error`|`false`|If `true`, enable the process to terminate with a `__fastfail(71)` after printing the error report. See [windows_fast_fail_on_error](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
+|`windows_hook_legacy_allocators`|`true`|If `true`, enable hooking of (`Global`/`Local`)(`Alloc`/`Free`/`Size`/`ReAlloc`/`Lock`/`Unlock`) functions.|
 
 ## See also
 
