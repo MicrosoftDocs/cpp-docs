@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Prefix Increment and Decrement Operators: ++ and --"
 title: "Prefix Increment and Decrement Operators: ++ and --"
-ms.date: "11/04/2016"
+description: "Learn more about: Prefix Increment and Decrement Operators: ++ and --"
+ms.date: 11/04/2016
 f1_keywords: ["--", "++"]
 helpviewer_keywords: ["increment operators [C++], syntax", "++ operator [C++], prefix increment operators", "operators [C++], decrement", "-- operator [C++], prefix decrement operators [C++]", "operators [C++], increment", "decrement operators [C++], syntax", "decrement operators [C++]"]
-ms.assetid: 45ea7fc7-f279-4be9-a216-1d9a0ef9eb7b
 ---
 # Prefix Increment and Decrement Operators: `++` and `--`
 
@@ -23,7 +22,7 @@ The prefix decrement operator (**`--`**) is analogous to the prefix increment op
 
 **Visual Studio 2017 version 15.3 and later** (available in [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode and later): The operand of an increment or decrement operator may not be of type **`bool`**.
 
-Both the prefix and postfix increment and decrement operators affect their operands. The key difference between them is the order in which the increment or decrement takes place in the evaluation of an expression. (For more information, see [Postfix Increment and Decrement Operators](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md).) In the prefix form, the increment or decrement takes place before the value is used in expression evaluation, so the value of the expression is different from the value of the operand. In the postfix form, the increment or decrement takes place after the value is used in expression evaluation, so the value of the expression is the same as the value of the operand. For example, the following program prints "`++i = 6`":
+Both the prefix and postfix increment and decrement operators affect their operands. The key difference between them is the order in which the increment or decrement takes place in the evaluation of an expression. For more information, see [Postfix Increment and Decrement Operators](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md). In the prefix form, the increment or decrement takes place before the value is used in expression evaluation, so the value of the expression is different from the value of the operand. In the postfix form, the increment or decrement takes place after the value is used in expression evaluation, so the value of the expression is the same as the value of the operand. For example, the following program prints "`++i = 6`":
 
 ```cpp
 // expre_Increment_and_Decrement_Operators.cpp

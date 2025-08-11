@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: strftime, wcsftime, _strftime_l, _wcsftime_l"
 title: "strftime, wcsftime, _strftime_l, _wcsftime_l"
-ms.date: "4/2/2020"
+description: "Learn more about: strftime, wcsftime, _strftime_l, _wcsftime_l"
+ms.date: 4/2/2020
 api_name: ["strftime", "_wcsftime_l", "_strftime_l", "wcsftime", "_o__strftime_l", "_o__wcsftime_l", "_o_strftime", "_o_wcsftime"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcsftime", "strftime", "wcsftime", "_strftime_l", "_wcsftime_l"]
 helpviewer_keywords: ["_strftime_l function", "strftime function", "tcsftime function", "_wcsftime_l function", "wcsftime function", "_tcsftime function", "time strings"]
-ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea
 ---
 # `strftime`, `wcsftime`, `_strftime_l`, `_wcsftime_l`
 
@@ -84,7 +83,7 @@ By default, this function's global state is scoped to the application. To change
 |---|---|---|---|
 | **`_tcsftime`** | **`strftime`** | **`strftime`** | **`wcsftime`** |
 
-The *`format`* argument consists of one or more codes; as in **`printf`**, the formatting codes are preceded by a percent sign (**`%`**). Characters that don't begin with **`%`** are copied unchanged to *`strDest`*. The `LC_TIME` category of the current locale affects the output formatting of **`strftime`**. (For more information on `LC_TIME`, see [`setlocale`](setlocale-wsetlocale.md).) The **`strftime`** and **`wcsftime`** functions use the currently set locale. The **`_strftime_l`** and **`_wcsftime_l`** versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
+The *`format`* argument consists of one or more codes; as in **`printf`**, the formatting codes are preceded by a percent sign (**`%`**). Characters that don't begin with **`%`** are copied unchanged to *`strDest`*. The `LC_TIME` category of the current locale affects the output formatting of **`strftime`**. For more information on `LC_TIME`, see [`setlocale`](setlocale-wsetlocale.md). The **`strftime`** and **`wcsftime`** functions use the currently set locale. The **`_strftime_l`** and **`_wcsftime_l`** versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
 
 The **`strftime`** functions support these formatting codes:
 
