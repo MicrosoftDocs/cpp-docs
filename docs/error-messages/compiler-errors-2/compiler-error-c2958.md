@@ -8,7 +8,7 @@ ms.assetid: 332bf6d3-7cd1-4b1a-8ddb-d4a8cbf01115
 ---
 # Compiler Error C2958
 
-the left delimiter found at 'location' was not matched correctly
+> the left delimiter found at 'location' was not matched correctly
 
 A delimiter is not properly matched.
 

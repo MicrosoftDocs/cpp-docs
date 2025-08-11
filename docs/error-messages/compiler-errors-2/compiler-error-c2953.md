@@ -8,7 +8,7 @@ ms.assetid: 8dbcfa24-8296-4e40-bdc4-5526c07d8892
 ---
 # Compiler Error C2953
 
-'identifier' : class template has already been defined
+> 'identifier' : class template has already been defined
 
 Check the source file and include files for other definitions.
 

@@ -8,7 +8,7 @@ ms.assetid: fdb5467b-9a41-41ef-ac20-2e9428d5a4fc
 ---
 # Compiler Error C2971
 
-'class' : template parameter 'param' : 'arg' : a local variable cannot be used as a non-type argument
+> 'class' : template parameter 'param' : 'arg' : a local variable cannot be used as a non-type argument
 
 You cannot use the name or address of a local variable as a template argument.
 

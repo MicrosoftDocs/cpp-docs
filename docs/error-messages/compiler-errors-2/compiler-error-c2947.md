@@ -8,7 +8,7 @@ ms.assetid: 6c056f62-ec90-4883-8a67-aeeb6ec13546
 ---
 # Compiler Error C2947
 
-expecting '>' to terminate construct, found 'syntax'
+> expecting '>' to terminate construct, found 'syntax'
 
 A generic or template argument list may not have been terminated correctly.
 

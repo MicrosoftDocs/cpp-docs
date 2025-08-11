@@ -8,7 +8,7 @@ ms.assetid: c6f95aa2-c894-425b-a51c-d40d70c8daa1
 ---
 # Compiler Error C2951
 
-type declarations are only permitted at global, namespace, or class scope
+> type declarations are only permitted at global, namespace, or class scope
 
 You cannot declare a generic or template class outside global or namespace scope. If you make your generic or template declarations in an include file, make sure the include file is at global scope.
 

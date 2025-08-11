@@ -8,7 +8,7 @@ ms.assetid: 1b444260-f2bf-48d7-ab1e-35573d8c4a0e
 ---
 # Compiler Error C2974
 
-invalid type argument 'number', type expected
+> invalid type argument 'number', type expected
 
 The generic or template argument does not match the generic or template declaration. A type should appear within the angle brackets. Check the generic or template definition to find the correct types.
 

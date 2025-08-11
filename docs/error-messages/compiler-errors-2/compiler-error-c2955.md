@@ -8,7 +8,7 @@ ms.assetid: 77709fb6-d69b-46fd-a62f-e8564563d01b
 ---
 # Compiler Error C2955
 
-'identifier' : use of class template or alias generic requires template or generic argument list
+> 'identifier' : use of class template or alias generic requires template or generic argument list
 
 You cannot use a class template or class generic as an identifier without a template or generic argument list.
 

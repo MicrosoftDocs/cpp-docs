@@ -8,7 +8,7 @@ ms.assetid: 6f966aec-4eea-4221-8e1b-fe66808c6f5c
 ---
 # Compiler Error C2962
 
-syntax error : 'token' : expected template-class member function definition to end with '}'
+> syntax error : 'token' : expected template-class member function definition to end with '}'
 
 The token caused a syntax error in a template declaration.
 

@@ -8,7 +8,7 @@ ms.assetid: 3c4218e0-5d03-4a2b-b757-c507c35f3542
 ---
 # Compiler Error C2977
 
-'identifier' : too many type arguments
+> 'identifier' : too many type arguments
 
 A generic or template has too many actual arguments. Check the generic or template declaration to find the correct number of parameters.
 

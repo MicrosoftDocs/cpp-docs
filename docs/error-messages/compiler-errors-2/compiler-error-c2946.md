@@ -8,7 +8,7 @@ ms.assetid: c86dfbfc-7702-4f09-8a53-d205710e99c2
 ---
 # Compiler Error C2946
 
-explicit instantiation; 'class' is not a template-class specialization
+> explicit instantiation; 'class' is not a template-class specialization
 
 You cannot explicitly instantiate a nontemplated class.
 

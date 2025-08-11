@@ -8,7 +8,7 @@ ms.assetid: d66bb2a8-70c3-4209-a358-b0c47f111a50
 ---
 # Compiler Error C2959
 
-a generic class or function may not be a member of a template
+> a generic class or function may not be a member of a template
 
 For more information, see [Windows Runtime and Managed Templates](../../extensions/windows-runtime-and-managed-templates-cpp-component-extensions.md) and [Generics](../../extensions/generics-cpp-component-extensions.md).
 
