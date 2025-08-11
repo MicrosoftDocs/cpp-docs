@@ -18,7 +18,7 @@ For more information, see [Class Templates](../../cpp/class-templates.md).
 
 ## Examples
 
-The following sample generates C2955 and shows how to fix it:
+The following example generates C2955 and shows how to fix it:
 
 ```cpp
 // C2955.cpp

@@ -16,7 +16,7 @@ The generic or template argument does not match the generic or template declarat
 
 ## Examples
 
-The following sample generates C2974:
+The following example generates C2974:
 
 ```cpp
 // C2974.cpp

@@ -16,7 +16,7 @@ A template member function definition has an unmatched closing brace.
 
 ## Example
 
-The following sample generates C2969:
+The following example generates C2969:
 
 ```cpp
 // C2969.cpp

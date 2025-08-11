@@ -16,7 +16,7 @@ A generic or template has too many actual arguments. Check the generic or templa
 
 ## Examples
 
-The following sample generates C2977:
+The following example generates C2977:
 
 ```cpp
 // C2977.cpp

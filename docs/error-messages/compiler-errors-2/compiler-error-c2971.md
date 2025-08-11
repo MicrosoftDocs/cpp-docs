@@ -16,7 +16,7 @@ You cannot use the name or address of a local variable as a template argument.
 
 ## Example
 
-The following sample generates C2971:
+The following example generates C2971:
 
 ```cpp
 // C2971.cpp

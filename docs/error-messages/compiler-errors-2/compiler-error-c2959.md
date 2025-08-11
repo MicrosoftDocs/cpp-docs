@@ -16,7 +16,7 @@ For more information, see [Windows Runtime and Managed Templates](../../extensio
 
 ## Example
 
-The following sample generates C2959.
+The following example generates C2959.
 
 ```cpp
 // C2959.cpp

@@ -16,7 +16,7 @@ You cannot declare a generic or template class outside global or namespace scope
 
 ## Examples
 
-The following sample generates C2951:
+The following example generates C2951:
 
 ```cpp
 // C2951.cpp

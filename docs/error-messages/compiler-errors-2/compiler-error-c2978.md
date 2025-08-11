@@ -15,7 +15,7 @@ A generic class was declared incorrectly. See [Generics](../../extensions/generi
 
 ## Example
 
-The following sample generates C2978.
+The following example generates C2978.
 
 ```cpp
 // C2978.cpp

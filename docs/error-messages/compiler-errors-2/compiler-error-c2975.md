@@ -16,7 +16,7 @@ The template argument does not match the template declaration; a constant expres
 
 ## Examples
 
-The following sample generates C2975 and also shows correct usage:
+The following example generates C2975 and also shows correct usage:
 
 ```cpp
 // C2975.cpp

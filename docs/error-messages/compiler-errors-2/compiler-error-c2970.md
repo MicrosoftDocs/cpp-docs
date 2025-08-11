@@ -16,7 +16,7 @@ You cannot use the name or address of a static variable as a template argument. 
 
 ## Example
 
-The following sample generates C2970:
+The following example generates C2970:
 
 ```cpp
 // C2970.cpp

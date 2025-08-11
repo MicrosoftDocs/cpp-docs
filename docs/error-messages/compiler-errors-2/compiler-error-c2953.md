@@ -16,7 +16,7 @@ Check the source file and include files for other definitions.
 
 ## Example
 
-The following sample generates C2953:
+The following example generates C2953:
 
 ```cpp
 // C2953.cpp

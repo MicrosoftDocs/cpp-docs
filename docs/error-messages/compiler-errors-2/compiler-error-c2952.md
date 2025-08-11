@@ -16,7 +16,7 @@ A template declaration was ill formed.
 
 ## Examples
 
-The following sample generates C2952:
+The following example generates C2952:
 
 ```cpp
 // C2952.cpp

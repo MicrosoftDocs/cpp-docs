@@ -18,7 +18,7 @@ This error can be caused by missing template arguments in C++ Standard Library c
 
 ## Examples
 
-The following sample generates C2976:
+The following example generates C2976:
 
 ```cpp
 // C2976.cpp

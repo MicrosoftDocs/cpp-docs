@@ -16,7 +16,7 @@ A generic class was ill formed.
 
 ## Example
 
-The following sample generates C2957:
+The following example generates C2957:
 
 ```cpp
 // C2957.cpp
