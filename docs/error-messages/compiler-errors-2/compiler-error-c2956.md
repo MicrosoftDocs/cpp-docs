@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2956"
 title: "Compiler Error C2956"
+description: "Learn more about: Compiler Error C2956"
 ms.date: 04/05/2022
 f1_keywords: ["C2956"]
 helpviewer_keywords: ["C2956"]
@@ -9,9 +9,9 @@ helpviewer_keywords: ["C2956"]
 
 > usual deallocation function '*function*' would be chosen as placement deallocation function
 
-The deallocation function found for the placement new expression matches one of the usual deallocation functions. Either an implicit compiler-generated deallocation or an explicit `delete` (or `delete[]`) would use the wrong deallocation function.
-
 ## Remarks
+
+The deallocation function found for the placement new expression matches one of the usual deallocation functions. Either an implicit compiler-generated deallocation or an explicit `delete` (or `delete[]`) would use the wrong deallocation function.
 
 Error C2956 indicates you used a *placement new expression* (a `new` expression that takes parameters) in a way that can cause a memory leak or runtime crash. It usually means the resulting value can't be deleted in a typical way. That is, either an explicit `delete` (or `delete[]`) expression in your code, or the implicit deallocation when a constructor throws an exception, could invoke the wrong `operator delete` or supply it with the wrong parameters.
 

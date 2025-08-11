@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2955"
 title: "Compiler Error C2955"
-ms.date: "03/28/2017"
+description: "Learn more about: Compiler Error C2955"
+ms.date: 03/28/2017
 f1_keywords: ["C2955"]
 helpviewer_keywords: ["C2955"]
-ms.assetid: 77709fb6-d69b-46fd-a62f-e8564563d01b
 ---
 # Compiler Error C2955
 
-'identifier' : use of class template or alias generic requires template or generic argument list
+> 'identifier' : use of class template or alias generic requires template or generic argument list
+
+## Remarks
 
 You cannot use a class template or class generic as an identifier without a template or generic argument list.
 
 For more information, see [Class Templates](../../cpp/class-templates.md).
 
-The following sample generates C2955 and shows how to fix it:
+## Examples
+
+The following example generates C2955 and shows how to fix it:
 
 ```cpp
 // C2955.cpp
@@ -60,8 +63,6 @@ int main() {
    GC <int>^ g;
 }
 ```
-
-## Example
 
 **Visual Studio 2017 and later:** The compiler correctly diagnoses missing template argument lists when the template appears in a template parameter list (for example as part of a default template argument or a non-type template parameter). The following code compiles in Visual Studio 2015 but produces an error in Visual Studio 2017.
 
