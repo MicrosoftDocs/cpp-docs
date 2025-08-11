@@ -11,9 +11,7 @@ helpviewer_keywords: ["C2178"]
 
 ## Remarks
 
-A **`mutable`** specifier was used in a declaration, but the specifier is not allowed in this context.
-
-The **`mutable`** specifier can be applied only to names of class data members, and cannot be applied to names declared **`const`** or **`static`**, and cannot be applied to reference members.
+A **`mutable`** specifier was used in a declaration, but the specifier is not allowed in this context. It can only be applied to non-static, non-const, and non-reference data members. For more information, see [Mutable Data Members](../../cpp/mutable-data-members-cpp.md).
 
 ## Example
 
