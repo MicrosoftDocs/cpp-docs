@@ -10,9 +10,13 @@ ms.assetid: 13abf744-8fa1-450d-886d-e5717c04956e
 
 > '*class*' : type-class-id redefined as a formal argument of a function
 
+## Remarks
+
 You can't use a generic or template class as a formal argument. You cannot pass an argument directly to the constructor of a generic or template class.
 
 This error is obsolete in Visual Studio 2022 and later versions.
+
+## Examples
 
 The following sample generates C2942:
 

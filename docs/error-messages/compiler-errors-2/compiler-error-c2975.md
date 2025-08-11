@@ -10,9 +10,11 @@ ms.assetid: 526f6b9d-6c76-4c12-9252-1b1d7c1e06c7
 
 > '*argument*' : invalid template argument for '*type*', expected compile-time constant expression
 
+## Remarks
+
 The template argument does not match the template declaration; a constant expression should appear within the angle brackets. Variables are not allowed as template actual arguments. Check the template definition to find the correct types.
 
-## Example
+## Examples
 
 The following sample generates C2975 and also shows correct usage:
 

@@ -10,7 +10,11 @@ ms.assetid: e4ea3d66-b937-4b2c-b42a-96e03fb11579
 
 > syntax error : 'symbol' : expected member function definition to end with '}'
 
+## Remarks
+
 A template member function definition has an unmatched closing brace.
+
+## Example
 
 The following sample generates C2969:
 

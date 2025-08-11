@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2978"]
 
 > syntax error : expected 'keyword1' or 'keyword2'; found type 'keyword3'; non-type parameters are not supported in generics
 
+## Remarks
+
 A generic class was declared incorrectly. See [Generics](../../extensions/generics-cpp-component-extensions.md) for more information.
 
 ## Example

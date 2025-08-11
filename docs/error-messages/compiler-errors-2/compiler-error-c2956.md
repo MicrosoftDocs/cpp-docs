@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2956"]
 
 > usual deallocation function '*function*' would be chosen as placement deallocation function
 
+## Remarks
+
 The deallocation function found for the placement new expression matches one of the usual deallocation functions. Either an implicit compiler-generated deallocation or an explicit `delete` (or `delete[]`) would use the wrong deallocation function.
 
 ## Remarks

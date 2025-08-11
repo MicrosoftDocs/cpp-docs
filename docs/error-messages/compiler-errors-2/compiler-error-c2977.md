@@ -10,7 +10,11 @@ ms.assetid: 3c4218e0-5d03-4a2b-b757-c507c35f3542
 
 > 'identifier' : too many type arguments
 
+## Remarks
+
 A generic or template has too many actual arguments. Check the generic or template declaration to find the correct number of parameters.
+
+## Examples
 
 The following sample generates C2977:
 

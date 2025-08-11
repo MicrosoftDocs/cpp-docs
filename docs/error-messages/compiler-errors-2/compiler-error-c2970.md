@@ -10,7 +10,11 @@ ms.assetid: 21d90348-20d3-438c-b278-efdbfb93a7d2
 
 > 'class' : template parameter 'param' : 'arg' : an expression involving objects with internal linkage cannot be used as a non-type argument
 
+## Remarks
+
 You cannot use the name or address of a static variable as a template argument. The template class expects a const value that can be evaluated at compile time.
+
+## Example
 
 The following sample generates C2970:
 

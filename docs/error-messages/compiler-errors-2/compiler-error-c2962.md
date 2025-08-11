@@ -10,6 +10,8 @@ ms.assetid: 6f966aec-4eea-4221-8e1b-fe66808c6f5c
 
 > syntax error : 'token' : expected template-class member function definition to end with '}'
 
+## Remarks
+
 The token caused a syntax error in a template declaration.
 
 This error can be caused by mismatched delimiters

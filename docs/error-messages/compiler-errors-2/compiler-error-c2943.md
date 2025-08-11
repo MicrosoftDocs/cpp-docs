@@ -10,9 +10,13 @@ ms.assetid: ede6565e-d892-44c0-8eee-c69545f3be2e
 
 > '*class*' : type-class-id redefined as a type argument of a template
 
+## Remarks
+
 You can't use a generic or template class, instead of a symbol, as a generic or template type argument.
 
 This error is obsolete in Visual Studio 2022 and later versions.
+
+## Example
 
 The following sample generates C2943:
 

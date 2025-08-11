@@ -10,7 +10,11 @@ ms.assetid: a40e18a2-d02c-4511-854f-6c6fd6789a1a
 
 > 'declaration' : type declaration missing template parameter list
 
+## Remarks
+
 A template declaration was ill formed.
+
+## Examples
 
 The following sample generates C2952:
 

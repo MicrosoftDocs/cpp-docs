@@ -10,9 +10,13 @@ ms.assetid: d9bf9836-325e-4f72-a7e3-a67cf19d32e7
 
 > 'identifier' : too few type arguments
 
+## Remarks
+
 A generic or template is missing one or more actual arguments. Check the generic or template declaration to find the correct number of parameters.
 
 This error can be caused by missing template arguments in C++ Standard Library components.
+
+## Examples
 
 The following sample generates C2976:
 

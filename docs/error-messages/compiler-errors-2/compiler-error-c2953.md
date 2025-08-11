@@ -10,7 +10,11 @@ ms.assetid: 8dbcfa24-8296-4e40-bdc4-5526c07d8892
 
 > 'identifier' : class template has already been defined
 
+## Remarks
+
 Check the source file and include files for other definitions.
+
+## Example
 
 The following sample generates C2953:
 

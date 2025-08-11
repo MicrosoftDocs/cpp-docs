@@ -10,4 +10,6 @@ ms.assetid: be640257-7017-45d1-986a-9fe8caab52f3
 
 > explicit instantiation does not refer to a template-class specialization
 
+## Remarks
+
 You cannot explicitly instantiate something that is not templated.

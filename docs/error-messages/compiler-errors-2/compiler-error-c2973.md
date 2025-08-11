@@ -10,4 +10,6 @@ ms.assetid: 18b4a1c1-0ef6-43af-887a-1b5b1ab88d5b
 
 > invalid template argument 'number'
 
+## Remarks
+
 Check the template definition to find the correct types.

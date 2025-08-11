@@ -10,7 +10,11 @@ ms.assetid: 9cb4526f-4af8-47e9-b786-56192627ca72
 
 > 'delim' : invalid left delimiter : expected '<'
 
+## Remarks
+
 A generic class was ill formed.
+
+## Example
 
 The following sample generates C2957:
 
