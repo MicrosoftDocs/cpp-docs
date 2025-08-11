@@ -28,7 +28,7 @@ If you discover options that are inaccurately documented, we invite you to [repo
 |`coverage` | `false` | If `true` and the coverage instrumentation was enabled at compile time, coverage information will be dumped at program shutdown.|
 |`detect_container_overflow` | `true` | If `true`, honor the container overflow  annotations. See [ContainerOverflow](./error-container-overflow.md).|
 |`detect_invalid_pointer_pairs` | `0` | If >`0`, the tool detects operations like <, <=, >, >=, and - on invalid pointer pairs, such as pointers that belong to different objects. Higher values increase detection effort.|
-|`detect_odr_violation` | `2` | If >=`2`, detect violation of One-Definition-Rule (ODR) violation; If `1`, detect ODR-violation only if the two variables have different sizes.|
+|`detect_odr_violation` | `0` | If >=`2`, detect violation of One-Definition-Rule (ODR) violation; If `1`, detect ODR-violation only if the two variables have different sizes.|
 |`detect_stack_use_after_return` | `false` | Enables `stack-use-after-return` checking at runtime. Requires `/fsanitize-address-use-after-return`. See [stack-use-after-return](./error-stack-use-after-return.md).|
 |`disable_coredump` | `true`/`false` (on non-64-bit systems) | Disables core dumping. By default, the tool sets `disable_coredump=1` on 64-bit systems to prevent dumping a 16T+ core file. The tool ignores this flag on operating systems that don't dump core by default and for sanitizers that don't reserve large amounts of virtual memory.|
 |`dump_instruction_bytes` | `false` | If `true`, dump 16 bytes starting at the instruction that caused `SEGV`.|
