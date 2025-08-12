@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3028"
 title: "Compiler Error C3028"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3028"
+ms.date: 11/04/2016
 f1_keywords: ["C3028"]
 helpviewer_keywords: ["C3028"]
-ms.assetid: 175e697f-8e8f-492a-8456-6240ffbbb900
 ---
 # Compiler Error C3028
 

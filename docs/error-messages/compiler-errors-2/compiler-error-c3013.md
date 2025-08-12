@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3013"
 title: "Compiler Error C3013"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3013"
+ms.date: 11/04/2016
 f1_keywords: ["C3013"]
 helpviewer_keywords: ["C3013"]
-ms.assetid: f896777d-27e6-4b6d-baab-1567317f3374
 ---
 # Compiler Error C3013
 

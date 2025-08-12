@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3029"
 title: "Compiler Error C3029"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3029"
+ms.date: 11/04/2016
 f1_keywords: ["C3029"]
 helpviewer_keywords: ["C3029"]
-ms.assetid: 655eb04d-504a-468d-8c0c-bda1e5f297b7
 ---
 # Compiler Error C3029
 

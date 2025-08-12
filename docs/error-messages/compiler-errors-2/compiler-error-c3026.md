@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3026"
 title: "Compiler Error C3026"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3026"
+ms.date: 11/04/2016
 f1_keywords: ["C3026"]
 helpviewer_keywords: ["C3026"]
-ms.assetid: 3297060e-cc5b-4600-a2db-09bfc4ffa21f
 ---
 # Compiler Error C3026
 

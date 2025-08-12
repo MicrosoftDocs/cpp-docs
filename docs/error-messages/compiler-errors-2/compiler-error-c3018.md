@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3018"
 title: "Compiler Error C3018"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3018"
+ms.date: 11/04/2016
 f1_keywords: ["C3018"]
 helpviewer_keywords: ["C3018"]
-ms.assetid: 685be45f-f116-43a8-a88d-05ab6616e2f1
 ---
 # Compiler Error C3018
 

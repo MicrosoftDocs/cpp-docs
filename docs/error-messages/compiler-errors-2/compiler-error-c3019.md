@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3019"
 title: "Compiler Error C3019"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3019"
+ms.date: 11/04/2016
 f1_keywords: ["C3019"]
 helpviewer_keywords: ["C3019"]
-ms.assetid: 31a6d9b6-d29f-4499-9ad8-48dd751e87c7
 ---
 # Compiler Error C3019
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3016"
 title: "Compiler Error C3016"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3016"
+ms.date: 11/04/2016
 f1_keywords: ["C3016"]
 helpviewer_keywords: ["C3016"]
-ms.assetid: 3423467e-e8bb-4f35-b4db-7925cafa74c1
 ---
 # Compiler Error C3016
 

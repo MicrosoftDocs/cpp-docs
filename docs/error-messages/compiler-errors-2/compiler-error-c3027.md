@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3027"
 title: "Compiler Error C3027"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3027"
+ms.date: 11/04/2016
 f1_keywords: ["C3027"]
 helpviewer_keywords: ["C3027"]
-ms.assetid: 6562a5c2-2f28-4b36-91ca-2a64c0f0501a
 ---
 # Compiler Error C3027
 

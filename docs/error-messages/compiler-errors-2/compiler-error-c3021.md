@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3021"
 title: "Compiler Error C3021"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3021"
+ms.date: 11/04/2016
 f1_keywords: ["C3021"]
 helpviewer_keywords: ["C3021"]
-ms.assetid: 0cef6d97-e267-438a-ac8b-0daf5bbbc2cf
 ---
 # Compiler Error C3021
 

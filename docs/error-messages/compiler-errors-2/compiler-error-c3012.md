@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3012"
 title: "Compiler Error C3012"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3012"
+ms.date: 11/04/2016
 f1_keywords: ["C3012"]
 helpviewer_keywords: ["C3012"]
-ms.assetid: cc7040b1-b3fb-4da6-a474-877914d30332
 ---
 # Compiler Error C3012
 

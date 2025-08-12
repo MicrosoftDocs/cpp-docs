@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3011"
 title: "Compiler Error C3011"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3011"
+ms.date: 11/04/2016
 f1_keywords: ["C3011"]
 helpviewer_keywords: ["C3011"]
-ms.assetid: 24c3a917-ebff-4deb-9155-23adf6468531
 ---
 # Compiler Error C3011
 

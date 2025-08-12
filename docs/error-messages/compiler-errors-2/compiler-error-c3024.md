@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3024"
 title: "Compiler Error C3024"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3024"
+ms.date: 11/04/2016
 f1_keywords: ["C3024"]
 helpviewer_keywords: ["C3024"]
-ms.assetid: 1c031c28-ce37-4de3-aead-cfe76b261856
 ---
 # Compiler Error C3024
 

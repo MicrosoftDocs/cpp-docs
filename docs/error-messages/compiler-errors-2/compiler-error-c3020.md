@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3020"
 title: "Compiler Error C3020"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3020"
+ms.date: 11/04/2016
 f1_keywords: ["C3020"]
 helpviewer_keywords: ["C3020"]
-ms.assetid: f625c7a3-afaa-4bd8-9c1b-51891b832f36
 ---
 # Compiler Error C3020
 
