@@ -8,7 +8,7 @@ ms.assetid: e959d038-bba6-432a-9c0a-0470474de7d9
 ---
 # Compiler Error C3010
 
-'label' : jump out of OpenMP structured block not allowed
+> 'label' : jump out of OpenMP structured block not allowed
 
 Code cannot jump into or out of an OpenMP block.
 

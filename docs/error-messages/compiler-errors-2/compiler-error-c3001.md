@@ -8,7 +8,7 @@ ms.assetid: d0e03478-1b44-47e5-8f5b-70415fa1f8bc
 ---
 # Compiler Error C3001
 
-'error_text' : expected an OpenMP directive name
+> 'error_text' : expected an OpenMP directive name
 
 The `omp` pragma must be followed by a directive.
 

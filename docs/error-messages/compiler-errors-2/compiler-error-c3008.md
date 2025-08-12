@@ -8,7 +8,7 @@ ms.assetid: 04d93201-28e5-4be0-945c-aad616376f4b
 ---
 # Compiler Error C3008
 
-'arg' : argument is missing closing ')' on OpenMP 'directive' directive
+> 'arg' : argument is missing closing ')' on OpenMP 'directive' directive
 
 An OpenMP directive that takes an argument did not have a closing parenthesis.
 

@@ -8,6 +8,6 @@ ms.assetid: b03570b5-e5fd-41d8-bdf1-dfadc2b1e116
 ---
 # Compiler Error C2994
 
-unnamed class in template parameter list
+> unnamed class in template parameter list
 
 You cannot use the **`class`** keyword as a template argument without specifying a class name.

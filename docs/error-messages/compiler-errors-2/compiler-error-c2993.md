@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2993"]
 ---
 # Compiler Error C2993
 
-'identifier' : illegal type for non-type template parameter 'parameter'
+> 'identifier' : illegal type for non-type template parameter 'parameter'
 
 - Prior to C++20, you cannot declare a template with a structure, class, or union argument. Pointers can be used in place of these types as template parameters.
 - Since C++20, structure, class, or unions *can* be used as non-type template parameters. A non-type template parameter can't be a rvalue reference type or a parameter pack of rvalue types.

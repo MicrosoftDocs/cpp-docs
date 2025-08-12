@@ -8,7 +8,7 @@ ms.assetid: 30bad565-e79f-4c3f-82cb-a74bd0baab8f
 ---
 # Compiler Error C3005
 
-'error_text' : unexpected token encountered on OpenMP 'directive' directive
+> 'error_text' : unexpected token encountered on OpenMP 'directive' directive
 
 An OpenMP directive was ill formed.
 

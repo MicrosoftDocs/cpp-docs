@@ -8,7 +8,7 @@ ms.assetid: a57cdfe0-b40b-4a67-a95c-1a49ace4842b
 ---
 # Compiler Error C2995
 
-'function' : function template has already been defined
+> 'function' : function template has already been defined
 
 Make sure that there is only one definition for each member function of a templated class.
 

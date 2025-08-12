@@ -8,7 +8,7 @@ ms.assetid: 449082ec-fd45-4c47-8ab3-ba6a719e4dc4
 ---
 # Compiler Error C3006
 
-'clause' : clause on OpenMP 'directive' directive is missing an expected argument
+> 'clause' : clause on OpenMP 'directive' directive is missing an expected argument
 
 An OpenMP directive did not have an expected argument.
 

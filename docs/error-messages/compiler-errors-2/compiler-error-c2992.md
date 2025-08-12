@@ -8,7 +8,7 @@ ms.assetid: 01b16447-43fe-4e91-9a5a-af884a166a31
 ---
 # Compiler Error C2992
 
-'class' : invalid or missing type parameter list
+> 'class' : invalid or missing type parameter list
 
 The class is preceded by a **`template`** or **generic** keyword with missing or invalid parameters.
 

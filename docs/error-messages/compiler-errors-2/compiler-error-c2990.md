@@ -8,7 +8,7 @@ ms.assetid: 674e9f6a-6743-4af0-a7ed-cbe11103a2f8
 ---
 # Compiler Error C2990
 
-'class' : non-class type as already been declared as a class type
+> 'class' : non-class type as already been declared as a class type
 
 The non generic or template class redefines a generic or template class. Check header files for conflicts.
 
