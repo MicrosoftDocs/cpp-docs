@@ -10,6 +10,8 @@ ms.assetid: 0cef6d97-e267-438a-ac8b-0daf5bbbc2cf
 
 > 'arg' : argument is empty on OpenMP directive 'directive'
 
+## Remarks
+
 An argument is required for an OpenMP directive.
 
 ## Example

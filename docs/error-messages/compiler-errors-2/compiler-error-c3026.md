@@ -10,6 +10,8 @@ ms.assetid: 3297060e-cc5b-4600-a2db-09bfc4ffa21f
 
 > 'clause' : constant expression must be positive
 
+## Remarks
+
 A clause was passed an integer value, but the value was not a positive number. The number must be positive.
 
 ## Example

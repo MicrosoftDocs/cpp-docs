@@ -10,7 +10,11 @@ ms.assetid: 9f1d444c-6c6e-48d9-9346-69128390aa33
 
 > 'clause' : invalid schedule kind of 'value' on OpenMP 'directive' directive
 
+## Remarks
+
 An unsupported value was passed to a clause.
+
+## Example
 
 The following sample generates C3022:
 

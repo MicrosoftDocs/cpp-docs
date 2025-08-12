@@ -10,7 +10,11 @@ ms.assetid: 3423467e-e8bb-4f35-b4db-7925cafa74c1
 
 > 'var' : index variable in OpenMP 'for' statement must have signed integral type
 
+## Remarks
+
 The index variable in an OpenMP **`for`** statement must be a signed integral type.
+
+## Example
 
 The following sample generates C3016:
 

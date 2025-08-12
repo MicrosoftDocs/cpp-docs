@@ -10,6 +10,8 @@ ms.assetid: 4442f5a3-d9ea-4873-b1fb-e7e5bd3cbe5e
 
 > 'clause' : integral expression expected
 
+## Remarks
+
 A clause requires an integer expression but was given a noninteger expression.
 
 ## Example

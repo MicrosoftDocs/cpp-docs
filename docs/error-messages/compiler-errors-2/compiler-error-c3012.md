@@ -10,6 +10,8 @@ ms.assetid: cc7040b1-b3fb-4da6-a474-877914d30332
 
 > '*intrinsic*' : intrinsic function not allowed directly within a parallel region
 
+## Remarks
+
 A [compiler intrinsic](../../intrinsics/compiler-intrinsics.md) function is not allowed in an `omp parallel` region. To fix this issue, move intrinsics out of the region, or replace them with non-intrinsic equivalents.
 
 ## Example

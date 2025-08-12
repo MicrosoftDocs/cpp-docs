@@ -10,7 +10,11 @@ ms.assetid: 24c3a917-ebff-4deb-9155-23adf6468531
 
 > inline assembly not allowed directly within a parallel region
 
+## Remarks
+
 An `omp` parallel region cannot contain inline assembly instructions.
+
+## Example
 
 The following sample generates C3011:
 

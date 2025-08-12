@@ -10,6 +10,8 @@ ms.assetid: 6562a5c2-2f28-4b36-91ca-2a64c0f0501a
 
 > 'clause' : arithmetic or pointer expression expected
 
+## Remarks
+
 A clause that requires an arithmetic or pointer expression was passed another kind of expression.
 
 ## Example

@@ -10,7 +10,11 @@ ms.assetid: 89dcce98-3cd7-4931-a50f-87df1d2ebc9b
 
 > 'value' : unexpected token encountered in argument to OpenMP 'clause' clause
 
+## Remarks
+
 The values passed to a clause were not valid.
+
+## Example
 
 The following sample generates C3023:
 
