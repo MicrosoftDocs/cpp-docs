@@ -16,7 +16,7 @@ An OpenMP directive had an argument, but the directive does not take an argument
 
 ## Example
 
-The following sample generates C3007:
+The following example generates C3007:
 
 ```c
 // C3007.c

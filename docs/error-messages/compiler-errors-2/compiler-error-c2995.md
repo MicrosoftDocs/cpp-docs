@@ -16,7 +16,7 @@ Make sure that there is only one definition for each member function of a templa
 
 ## Example
 
-The following sample generates C2995:
+The following example generates C2995:
 
 ```cpp
 // C2995.cpp

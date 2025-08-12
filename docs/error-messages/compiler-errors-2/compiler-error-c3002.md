@@ -16,7 +16,7 @@ Multiple directive names are not allowed.
 
 ## Example
 
-The following sample generates C3002:
+The following example generates C3002:
 
 ```c
 // C3002.c

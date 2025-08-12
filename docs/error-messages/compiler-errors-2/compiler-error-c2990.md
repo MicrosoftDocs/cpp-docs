@@ -16,7 +16,7 @@ The non generic or template class redefines a generic or template class. Check h
 
 ## Examples
 
-The following sample generates C2990:
+The following example generates C2990:
 
 ```cpp
 // C2990.cpp
@@ -39,7 +39,7 @@ ref struct GC {};   // C2990
 
 C2990 can also occur due to a breaking change in the Microsoft C++ compiler for Visual Studio 2005; the compiler now requires that multiple declarations for the same type be identical with respect to template specification.
 
-The following sample generates C2990:
+The following example generates C2990:
 
 ```cpp
 // C2990c.cpp

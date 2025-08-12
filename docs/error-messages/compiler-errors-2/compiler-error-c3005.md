@@ -16,7 +16,7 @@ An OpenMP directive was ill formed.
 
 ## Examples
 
-The following sample generates C3005:
+The following example generates C3005:
 
 ```c
 // C3005.c

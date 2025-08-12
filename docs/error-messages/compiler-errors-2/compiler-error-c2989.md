@@ -16,7 +16,7 @@ The class generic or template redefines a non-template or non-generic class. Che
 
 ## Examples
 
-The following sample generates C2989:
+The following example generates C2989:
 
 ```cpp
 // C2989.cpp

@@ -16,7 +16,7 @@ The `omp` pragma must be followed by a directive.
 
 ## Example
 
-The following sample generates C3001:
+The following example generates C3001:
 
 ```c
 // C3001.c

@@ -16,7 +16,7 @@ helpviewer_keywords: ["C2993"]
 
 ## Examples
 
-The following sample generates C2993:
+The following example generates C2993:
 
 ```cpp
 // compile with: /c and /std:c++17

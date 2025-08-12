@@ -16,7 +16,7 @@ An OpenMP directive that takes an argument did not have a closing parenthesis.
 
 ## Example
 
-The following sample generates C3008:
+The following example generates C3008:
 
 ```c
 // C3008.c

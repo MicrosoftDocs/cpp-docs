@@ -16,7 +16,7 @@ There was a type conflict between two generic or template definitions of `parame
 
 ## Examples
 
-The following sample generates C2991:
+The following example generates C2991:
 
 ```cpp
 // C2991.cpp

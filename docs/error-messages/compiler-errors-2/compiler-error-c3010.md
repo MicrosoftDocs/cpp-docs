@@ -16,7 +16,7 @@ Code cannot jump into or out of an OpenMP block.
 
 ## Example
 
-The following sample generates C3010:
+The following example generates C3010:
 
 ```c
 // C3010.c

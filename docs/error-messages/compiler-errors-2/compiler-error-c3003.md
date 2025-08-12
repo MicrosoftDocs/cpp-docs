@@ -16,7 +16,7 @@ An OpenMP directive name cannot follow an OpenMP directive clause.
 
 ## Example
 
-The following sample generates C3003:
+The following example generates C3003:
 
 ```c
 // C3003.c

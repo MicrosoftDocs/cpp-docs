@@ -16,7 +16,7 @@ An OpenMP directive did not have an expected argument.
 
 ## Example
 
-The following sample generates C3006:
+The following example generates C3006:
 
 ```c
 // C3006.c

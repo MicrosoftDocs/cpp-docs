@@ -16,7 +16,7 @@ The class is preceded by a **`template`** or **generic** keyword with missing or
 
 ## Examples
 
-The following sample generates C2992:
+The following example generates C2992:
 
 ```cpp
 // C2992.cpp
