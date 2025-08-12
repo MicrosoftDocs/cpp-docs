@@ -12,7 +12,8 @@ The following is a list of supported actively supported options for the AddressS
 > [!NOTE]
 > These descriptions may vary from those found in Clang's ASan docs to account for MSVC specific behaviors.
 
-If you discover options that are inaccurately documented, we invite you to [report a bug](https://aka.ms/feedback/report?space=62).
+If you discover documentation errors, report them [here](https://aka.ms/feedback/report?space=62).
+
 
 | Flag | Default value | Description |
 |------|---------------|-------------|
