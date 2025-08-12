@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3004"
 title: "Compiler Error C3004"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3004"
+ms.date: 11/04/2016
 f1_keywords: ["C3004"]
 helpviewer_keywords: ["C3004"]
-ms.assetid: 819c2b57-8366-4ca7-9135-1f0c5e5b6bb6
 ---
 # Compiler Error C3004
 
-'clause' : clause not valid on OpenMP 'directive' directive
+> 'clause' : clause not valid on OpenMP 'directive' directive
+
+## Remarks
 
 An OpenMP clause was used on a directive for which it is not enabled.
 
-The following sample generates C3004:
+## Example
+
+The following example generates C3004:
 
 ```c
 // C3004.c
