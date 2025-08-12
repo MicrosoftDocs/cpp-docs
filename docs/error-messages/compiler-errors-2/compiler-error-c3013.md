@@ -8,7 +8,7 @@ ms.assetid: f896777d-27e6-4b6d-baab-1567317f3374
 ---
 # Compiler Error C3013
 
-'clause' : clause may only appear once on OpenMP 'directive' directive
+> 'clause' : clause may only appear once on OpenMP 'directive' directive
 
 A clause appeared twice on the same directive. Delete one occurrence of the clause.
 

@@ -8,7 +8,7 @@ ms.assetid: 685be45f-f116-43a8-a88d-05ab6616e2f1
 ---
 # Compiler Error C3018
 
-'var1' : OpenMP 'for' test or increment must use index variable 'var2'
+> 'var1' : OpenMP 'for' test or increment must use index variable 'var2'
 
 A **`for`** loop in an OpenMP statement must use the same variable for its test and increment as it uses for its index.
 

@@ -8,7 +8,7 @@ ms.assetid: 655eb04d-504a-468d-8c0c-bda1e5f297b7
 ---
 # Compiler Error C3029
 
-'symbol' : can only appear once in data-sharing clauses in an OpenMP directive
+> 'symbol' : can only appear once in data-sharing clauses in an OpenMP directive
 
 A symbol was used more than once in one or more clauses in a directive. The symbol can only be used once in the directive.
 

@@ -8,7 +8,7 @@ ms.assetid: 175e697f-8e8f-492a-8456-6240ffbbb900
 ---
 # Compiler Error C3028
 
-'member' : only a variable or static data member can be used in a data-sharing clause
+> 'member' : only a variable or static data member can be used in a data-sharing clause
 
 A symbol other than a variable or static data member was passed to the reduction clause.
 

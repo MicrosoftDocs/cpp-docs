@@ -8,7 +8,7 @@ ms.assetid: 0cef6d97-e267-438a-ac8b-0daf5bbbc2cf
 ---
 # Compiler Error C3021
 
-'arg' : argument is empty on OpenMP directive 'directive'
+> 'arg' : argument is empty on OpenMP directive 'directive'
 
 An argument is required for an OpenMP directive.
 

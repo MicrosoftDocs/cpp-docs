@@ -8,7 +8,7 @@ ms.assetid: 4442f5a3-d9ea-4873-b1fb-e7e5bd3cbe5e
 ---
 # Compiler Error C3025
 
-'clause' : integral expression expected
+> 'clause' : integral expression expected
 
 A clause requires an integer expression but was given a noninteger expression.
 

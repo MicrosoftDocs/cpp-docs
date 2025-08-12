@@ -8,7 +8,7 @@ ms.assetid: f625c7a3-afaa-4bd8-9c1b-51891b832f36
 ---
 # Compiler Error C3020
 
-'var' : index variable of OpenMP 'for' loop cannot be modified in loop body
+> 'var' : index variable of OpenMP 'for' loop cannot be modified in loop body
 
 An OpenMP **`for`** loop may not modify the index (loop counter) in the body of the **`for`** loop.
 

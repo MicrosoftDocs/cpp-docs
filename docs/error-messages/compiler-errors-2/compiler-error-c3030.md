@@ -8,7 +8,7 @@ ms.assetid: de92fd7e-29ba-46e8-b43b-f4b985cd74de
 ---
 # Compiler Error C3030
 
-'var' : variable in 'reduction' clause/directive cannot have reference type
+> 'var' : variable in 'reduction' clause/directive cannot have reference type
 
 You can only pass value parameters to certain clauses, such as the reduction clause.
 

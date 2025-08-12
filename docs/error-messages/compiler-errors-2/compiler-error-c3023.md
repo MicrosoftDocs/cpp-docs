@@ -8,7 +8,7 @@ ms.assetid: 89dcce98-3cd7-4931-a50f-87df1d2ebc9b
 ---
 # Compiler Error C3023
 
-'value' : unexpected token encountered in argument to OpenMP 'clause' clause
+> 'value' : unexpected token encountered in argument to OpenMP 'clause' clause
 
 The values passed to a clause were not valid.
 

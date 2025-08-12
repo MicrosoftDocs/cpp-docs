@@ -8,7 +8,7 @@ ms.assetid: d5e8e50b-7542-4b2d-8665-1b22072a5bc6
 ---
 # Compiler Error C3015
 
-initialization in OpenMP 'for' statement has improper form
+> initialization in OpenMP 'for' statement has improper form
 
 A **`for`** loop in an OpenMP statement must be fully and explicitly specified.
 

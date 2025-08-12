@@ -8,7 +8,7 @@ ms.assetid: 12ab2c2a-d0d2-4900-9cbf-39be0af590dd
 ---
 # Compiler Error C3017
 
-termination test in OpenMP 'for' statement has improper form
+> termination test in OpenMP 'for' statement has improper form
 
 A **`for`** loop in an OpenMP statement must be fully and explicitly specified.
 

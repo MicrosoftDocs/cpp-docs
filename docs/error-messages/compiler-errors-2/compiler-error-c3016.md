@@ -8,7 +8,7 @@ ms.assetid: 3423467e-e8bb-4f35-b4db-7925cafa74c1
 ---
 # Compiler Error C3016
 
-'var' : index variable in OpenMP 'for' statement must have signed integral type
+> 'var' : index variable in OpenMP 'for' statement must have signed integral type
 
 The index variable in an OpenMP **`for`** statement must be a signed integral type.
 

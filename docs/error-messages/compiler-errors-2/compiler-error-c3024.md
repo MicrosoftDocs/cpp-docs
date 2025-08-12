@@ -8,7 +8,7 @@ ms.assetid: 1c031c28-ce37-4de3-aead-cfe76b261856
 ---
 # Compiler Error C3024
 
-'schedule(runtime)' : chunk_size expression is not allowed
+> 'schedule(runtime)' : chunk_size expression is not allowed
 
 A value cannot be passed to the run-time parameter of the schedule clause.
 
