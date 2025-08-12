@@ -131,7 +131,7 @@ The **`/fsanitize=address`** compiler option marks objects to specify which Addr
 | `/MT` or `/MTd` | *`clang_rt.asan_dynamic-{arch}.lib`*, *`/wholearchive:clang_rt.asan_static_runtime_thunk-{arch}.lib`* | *`clang_rt.asan_dynamic-{arch}.dll`*
 | `/MD` or `/MDd` | *`clang_rt.asan_dynamic-{arch}.lib`*, *`/wholearchive:clang_rt.asan_dynamic_runtime_thunk-{arch}.lib`* | *`clang_rt.asan_dynamic-{arch}.dll`*
 
-The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error. Note that the runtime thunk lib **must** be linked with `/wholearchive` option applied.
+The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error. Note that the runtime thunk libraries **must** be linked with `/wholearchive` option applied.
 
 **Previous Versions**
 
