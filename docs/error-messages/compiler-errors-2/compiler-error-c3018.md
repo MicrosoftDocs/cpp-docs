@@ -16,7 +16,7 @@ A **`for`** loop in an OpenMP statement must use the same variable for its test 
 
 ## Example
 
-The following sample generates C3018:
+The following example generates C3018:
 
 ```cpp
 // C3018.cpp

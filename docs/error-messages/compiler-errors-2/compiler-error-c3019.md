@@ -16,7 +16,7 @@ The increment part of an OpenMP **`for`** loop must use the index variable both 
 
 ## Example
 
-The following sample generates C3019:
+The following example generates C3019:
 
 ```cpp
 // C3019.cpp

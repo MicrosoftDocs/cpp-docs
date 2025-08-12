@@ -16,7 +16,7 @@ A [compiler intrinsic](../../intrinsics/compiler-intrinsics.md) function is not 
 
 ## Example
 
-The following sample generates C3012, and shows one way to fix it:
+The following example generates C3012, and shows one way to fix it:
 
 ```cpp
 // C3012.cpp

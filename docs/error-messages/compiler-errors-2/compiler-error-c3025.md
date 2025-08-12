@@ -16,7 +16,7 @@ A clause requires an integer expression but was given a noninteger expression.
 
 ## Example
 
-The following sample generates C3025.
+The following example generates C3025.
 
 ```cpp
 // C3025.cpp

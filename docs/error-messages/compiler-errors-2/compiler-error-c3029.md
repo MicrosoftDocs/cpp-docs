@@ -16,7 +16,7 @@ A symbol was used more than once in one or more clauses in a directive. The symb
 
 ## Example
 
-The following sample generates C3029:
+The following example generates C3029:
 
 ```cpp
 // C3029.cpp

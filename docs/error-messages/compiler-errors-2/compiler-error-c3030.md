@@ -16,7 +16,7 @@ You can only pass value parameters to certain clauses, such as the reduction cla
 
 ## Example
 
-The following sample generates C3030:
+The following example generates C3030:
 
 ```cpp
 // C3030.cpp

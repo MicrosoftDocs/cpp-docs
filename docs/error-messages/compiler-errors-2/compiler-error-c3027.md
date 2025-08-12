@@ -16,7 +16,7 @@ A clause that requires an arithmetic or pointer expression was passed another ki
 
 ## Example
 
-The following sample generates C3027:
+The following example generates C3027:
 
 ```cpp
 // C3027.cpp

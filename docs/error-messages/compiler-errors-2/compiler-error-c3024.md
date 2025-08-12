@@ -16,7 +16,7 @@ A value cannot be passed to the run-time parameter of the schedule clause.
 
 ## Example
 
-The following sample generates C3024:
+The following example generates C3024:
 
 ```cpp
 // C3024.cpp

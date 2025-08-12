@@ -16,7 +16,7 @@ An argument is required for an OpenMP directive.
 
 ## Example
 
-The following sample generates C3021:
+The following example generates C3021:
 
 ```cpp
 // C3021.cpp

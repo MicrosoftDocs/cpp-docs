@@ -16,7 +16,7 @@ The index variable in an OpenMP **`for`** statement must be a signed integral ty
 
 ## Example
 
-The following sample generates C3016:
+The following example generates C3016:
 
 ```cpp
 // C3016.cpp

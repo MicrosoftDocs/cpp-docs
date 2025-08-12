@@ -16,7 +16,7 @@ A **`for`** loop in an OpenMP statement must be fully and explicitly specified.
 
 ## Example
 
-The following sample generates C3015:
+The following example generates C3015:
 
 ```cpp
 // C3015.cpp

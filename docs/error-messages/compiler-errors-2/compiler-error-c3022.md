@@ -16,7 +16,7 @@ An unsupported value was passed to a clause.
 
 ## Example
 
-The following sample generates C3022:
+The following example generates C3022:
 
 ```cpp
 // C3022.cpp

@@ -16,7 +16,7 @@ A symbol other than a variable or static data member was passed to the reduction
 
 ## Example
 
-The following sample generates C3028:
+The following example generates C3028:
 
 ```cpp
 // C3028.cpp

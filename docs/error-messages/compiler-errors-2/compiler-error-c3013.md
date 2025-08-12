@@ -16,7 +16,7 @@ A clause appeared twice on the same directive. Delete one occurrence of the clau
 
 ## Example
 
-The following sample generates C3013:
+The following example generates C3013:
 
 ```cpp
 // C3013.cpp
