@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3006"
 title: "Compiler Error C3006"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3006"
+ms.date: 11/04/2016
 f1_keywords: ["C3006"]
 helpviewer_keywords: ["C3006"]
-ms.assetid: 449082ec-fd45-4c47-8ab3-ba6a719e4dc4
 ---
 # Compiler Error C3006
 

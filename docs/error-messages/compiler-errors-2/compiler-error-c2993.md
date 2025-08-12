@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C2993"
 title: "Compiler Error C2993"
-ms.date: "10/03/2023"
+description: "Learn more about: Compiler Error C2993"
+ms.date: 10/03/2023
 f1_keywords: ["C2993"]
 helpviewer_keywords: ["C2993"]
 ---

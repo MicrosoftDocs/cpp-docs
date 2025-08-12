@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3001"
 title: "Compiler Error C3001"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3001"
+ms.date: 11/04/2016
 f1_keywords: ["C3001"]
 helpviewer_keywords: ["C3001"]
-ms.assetid: d0e03478-1b44-47e5-8f5b-70415fa1f8bc
 ---
 # Compiler Error C3001
 

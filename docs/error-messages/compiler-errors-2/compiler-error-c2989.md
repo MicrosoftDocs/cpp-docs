@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2989"
 title: "Compiler Error C2989"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2989"
+ms.date: 11/04/2016
 f1_keywords: ["C2989"]
 helpviewer_keywords: ["C2989"]
-ms.assetid: 936303d8-eb3b-4746-82ec-2f18020a6f64
 ---
 # Compiler Error C2989
 

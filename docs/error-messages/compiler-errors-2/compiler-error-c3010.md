@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3010"
 title: "Compiler Error C3010"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3010"
+ms.date: 11/04/2016
 f1_keywords: ["C3010"]
 helpviewer_keywords: ["C3010"]
-ms.assetid: e959d038-bba6-432a-9c0a-0470474de7d9
 ---
 # Compiler Error C3010
 

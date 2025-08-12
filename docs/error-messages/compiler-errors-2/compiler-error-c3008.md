@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3008"
 title: "Compiler Error C3008"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3008"
+ms.date: 11/04/2016
 f1_keywords: ["C3008"]
 helpviewer_keywords: ["C3008"]
-ms.assetid: 04d93201-28e5-4be0-945c-aad616376f4b
 ---
 # Compiler Error C3008
 
