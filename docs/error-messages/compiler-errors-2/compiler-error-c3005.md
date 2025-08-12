@@ -10,7 +10,11 @@ ms.assetid: 30bad565-e79f-4c3f-82cb-a74bd0baab8f
 
 > 'error_text' : unexpected token encountered on OpenMP 'directive' directive
 
+## Remarks
+
 An OpenMP directive was ill formed.
+
+## Examples
 
 The following sample generates C3005:
 

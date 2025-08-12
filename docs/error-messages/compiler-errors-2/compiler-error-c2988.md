@@ -10,4 +10,6 @@ ms.assetid: c07ada8d-7cdf-4496-8656-cc3851e76b46
 
 > unrecognizable template declaration/definition
 
+## Remarks
+
 The template declaration does not parse correctly. Check delimiters.

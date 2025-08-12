@@ -10,4 +10,6 @@ ms.assetid: f0ca9f8b-1751-4182-adab-1424f0c5e0c0
 
 > 'function' : recursive function template definition
 
+## Remarks
+
 A function definition attempts to instantiate its root templated class. Recursive template instantiations are not allowed.

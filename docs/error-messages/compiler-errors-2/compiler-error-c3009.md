@@ -10,7 +10,11 @@ ms.assetid: aded5985-f5fd-4c3e-a157-16be55ec1313
 
 > 'label' : jump into OpenMP structured block not allowed
 
+## Remarks
+
 Code cannot jump into or out of an OpenMP block.
+
+## Example
 
 The following sample generates C3009:
 

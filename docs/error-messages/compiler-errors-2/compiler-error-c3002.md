@@ -10,7 +10,11 @@ ms.assetid: 2d4241a7-c8eb-4d43-a128-dca255d137bc
 
 > 'name1 name2' : multiple OpenMP directive names
 
+## Remarks
+
 Multiple directive names are not allowed.
+
+## Example
 
 The following sample generates C3002:
 

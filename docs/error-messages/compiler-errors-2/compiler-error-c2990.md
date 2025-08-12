@@ -10,7 +10,11 @@ ms.assetid: 674e9f6a-6743-4af0-a7ed-cbe11103a2f8
 
 > 'class' : non-class type as already been declared as a class type
 
+## Remarks
+
 The non generic or template class redefines a generic or template class. Check header files for conflicts.
+
+## Examples
 
 The following sample generates C2990:
 

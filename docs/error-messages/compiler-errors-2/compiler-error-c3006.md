@@ -10,7 +10,11 @@ ms.assetid: 449082ec-fd45-4c47-8ab3-ba6a719e4dc4
 
 > 'clause' : clause on OpenMP 'directive' directive is missing an expected argument
 
+## Remarks
+
 An OpenMP directive did not have an expected argument.
+
+## Example
 
 The following sample generates C3006:
 

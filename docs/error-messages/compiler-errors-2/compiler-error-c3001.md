@@ -10,7 +10,11 @@ ms.assetid: d0e03478-1b44-47e5-8f5b-70415fa1f8bc
 
 > 'error_text' : expected an OpenMP directive name
 
+## Remarks
+
 The `omp` pragma must be followed by a directive.
+
+## Example
 
 The following sample generates C3001:
 

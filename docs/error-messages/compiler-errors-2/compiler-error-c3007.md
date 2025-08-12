@@ -10,7 +10,11 @@ ms.assetid: e415ef42-bdc9-4f32-8198-5e25b289a089
 
 > 'arg' : clause on OpenMP 'directive' directive does not take an argument
 
+## Remarks
+
 An OpenMP directive had an argument, but the directive does not take an argument.
+
+## Example
 
 The following sample generates C3007:
 

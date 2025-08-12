@@ -10,7 +10,11 @@ ms.assetid: 819c2b57-8366-4ca7-9135-1f0c5e5b6bb6
 
 > 'clause' : clause not valid on OpenMP 'directive' directive
 
+## Remarks
+
 An OpenMP clause was used on a directive for which it is not enabled.
+
+## Example
 
 The following sample generates C3004:
 

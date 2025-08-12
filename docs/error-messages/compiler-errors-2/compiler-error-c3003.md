@@ -10,7 +10,11 @@ ms.assetid: 22e74f99-bb7f-4518-ab0d-934d5d49bcc7
 
 > 'directive' : OpenMP directive name not allowed after directive clauses
 
+## Remarks
+
 An OpenMP directive name cannot follow an OpenMP directive clause.
+
+## Example
 
 The following sample generates C3003:
 

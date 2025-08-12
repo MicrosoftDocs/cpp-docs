@@ -10,7 +10,11 @@ ms.assetid: a87e4404-26e8-4927-b3ee-5d02b3b8bee1
 
 > redefinition of type parameter 'parameter'
 
+## Remarks
+
 There was a type conflict between two generic or template definitions of `parameter`. When defining multiple generic or template parameters, you must use equivalent types.
+
+## Examples
 
 The following sample generates C2991:
 
