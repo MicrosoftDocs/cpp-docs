@@ -44,7 +44,7 @@ Using the time-zone facilities on older versions of Windows results in a runtime
 | [`month` class](month-class.md) | A month of a year. For example, July. |
 | [`month_day` class](month-day-class.md) | A specific day of a specific month. For example, July 30. |
 | [`month_day_last` class](month-day-last-class.md) | The last day of a month. |
-| [`month_weekday` class](month-day-last-class.md) | The nth weekday of a specific month. |
+| [`month_weekday` class](month-weekday-class.md) | The nth weekday of a specific month. |
 | [`month_weekday_last` class](month-weekday-last-class.md) | The nth weekday of a specific month. |
 | [`time_point` class](time-point-class.md) | A point in time. |
 | [`weekday` class](weekday-class.md) | A day of the week. |

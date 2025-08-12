@@ -33,7 +33,7 @@ Some of the functions declared in this header are replaceable. The implementatio
 |Name|Description|
 |-|-|
 |[new_handler](../standard-library/new-typedefs.md#new_handler)|A type that points to a function suitable for use as a new handler.|
-|[hardware_constructive_interference_size](../standard-library/new-typedefs.md#hardware_destructive_interference_size)||
+|[hardware_constructive_interference_size](../standard-library/new-typedefs.md#hardware_constructive_interference_size)||
 |[hardware_destructive_interference_size](../standard-library/new-typedefs.md#hardware_destructive_interference_size)||
 
 ### Functions
