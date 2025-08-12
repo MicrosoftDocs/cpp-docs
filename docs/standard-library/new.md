@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: <new>"
 title: "<new>"
-ms.date: "11/04/2016"
+description: "Learn more about: <new>"
+ms.date: 11/04/2016
 f1_keywords: ["<new>"]
 helpviewer_keywords: ["new header"]
-ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
 ---
 # `<new>`
 

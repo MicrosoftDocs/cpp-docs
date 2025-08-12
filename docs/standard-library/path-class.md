@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: path Class"
 title: "path Class"
+description: "Learn more about: path Class"
 ms.date: 06/17/2022
 f1_keywords: ["filesystem/std::experimental::filesystem::path"]
 ---
