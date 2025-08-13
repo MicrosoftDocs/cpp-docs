@@ -10,9 +10,13 @@ ms.assetid: 78632e6d-255f-42c3-b124-31a9194ff86d
 
 > 'enum': enumerator requires value since the underlying type is 'type'
 
+## Remarks
+
 You can specify an underlying type for an enumeration. However, some types require you to assign values to each enumerator.
 
 For more information on enums, see [enum class](../../extensions/enum-class-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3062:
 

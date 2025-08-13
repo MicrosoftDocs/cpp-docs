@@ -10,7 +10,11 @@ ms.assetid: 87480c42-1ceb-4775-8d20-88c54a7bb6a6
 
 > 'var' : variable doesn't appear in a data-sharing clause under a default(none) clause
 
+## Remarks
+
 If [default(none)](../../parallel/openmp/reference/openmp-clauses.md#default-openmp) is used, any variable used in the structured block must be explicitly specified as either [shared](../../parallel/openmp/reference/openmp-clauses.md#shared-openmp) or [private](../../parallel/openmp/reference/openmp-clauses.md#private-openmp).
+
+## Example
 
 The following sample generates C3052:
 

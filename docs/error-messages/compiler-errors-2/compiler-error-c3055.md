@@ -10,7 +10,11 @@ ms.assetid: 60446ee0-18dd-48fc-9059-f0a14229dce8
 
 > 'symbol' : symbol cannot be referenced before it is used in 'threadprivate' directive
 
+## Remarks
+
 A symbol was referenced and then used in a [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) clause, which is not allowed.
+
+## Example
 
 The following sample generates C3055:
 

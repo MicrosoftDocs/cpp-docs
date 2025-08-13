@@ -10,6 +10,8 @@ ms.assetid: 8a87b3e4-2c17-4b87-9622-ef0962d6a34e
 
 > 'instance' : you cannot embed an instance of a reference type, 'type', in a native type
 
+## Remarks
+
 A native type cannot contain an instance of a CLR type.
 
 For more information, see [C++ Stack Semantics for Reference Types](../../dotnet/cpp-stack-semantics-for-reference-types.md).

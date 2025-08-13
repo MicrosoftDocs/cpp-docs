@@ -10,6 +10,8 @@ ms.assetid: f431daa9-e0fa-48f0-a5c3-f99be96b55e3
 
 > 'instance' : you cannot embed an instance of a reference type, 'type', in a value-type
 
+## Remarks
+
 A value type cannot contain an instance of a reference type.
 
 For more information, see [C++ Stack Semantics for Reference Types](../../dotnet/cpp-stack-semantics-for-reference-types.md).

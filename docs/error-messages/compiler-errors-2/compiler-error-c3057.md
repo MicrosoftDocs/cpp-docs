@@ -10,7 +10,11 @@ ms.assetid: b0b2ba88-9c74-4bec-bf60-8fc72eade34c
 
 > 'symbol' : dynamic initialization of 'threadprivate' symbols is not currently supported
 
+## Remarks
+
 The initialized value of a symbol used in a [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) clause must be known at compile time.
+
+## Examples
 
 The following sample generates C3057:
 

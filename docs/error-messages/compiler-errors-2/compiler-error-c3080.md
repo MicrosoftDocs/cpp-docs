@@ -10,6 +10,8 @@ ms.assetid: ff62a3f7-9b3b-44bd-b8d9-f3a8e5354560
 
 > 'finalizer_function' : a finalizer cannot have a storage-class-specifier
 
+## Remarks
+
 For more information, see [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
 
 ## Example

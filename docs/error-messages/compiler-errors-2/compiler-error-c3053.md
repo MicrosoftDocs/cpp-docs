@@ -10,7 +10,11 @@ ms.assetid: ab9a25f3-e341-4f6e-8e69-069b4a963a64
 
 > 'symbol' : 'threadprivate' is only valid for global or static data items
 
+## Remarks
+
 Symbols passed to [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) must either be global or static.
+
+## Example
 
 The following sample generates C3053:
 

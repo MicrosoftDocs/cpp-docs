@@ -10,7 +10,11 @@ ms.assetid: 6282bb92-0546-4b59-9435-d3840bf93bdb
 
 > 'member' : a friend function may not be defined inside a class using a qualified name (it may only be declared)
 
+## Remarks
+
 A friend function was defined using a qualified name, which is not allowed.
+
+## Example
 
 The following sample generates C3060:
 

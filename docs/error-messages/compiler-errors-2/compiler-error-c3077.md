@@ -10,6 +10,8 @@ ms.assetid: d9f3c619-d1e2-4656-81a5-a35a9586a7d4
 
 > 'finalizer' : a finalizer can only be a member of a reference type
 
+## Remarks
+
 You cannot declare a finalizer in a native or value type.
 
 For more information, see [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).

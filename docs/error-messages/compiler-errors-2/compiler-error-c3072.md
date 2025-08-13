@@ -10,6 +10,8 @@ ms.assetid: cdd5cb6b-c478-4698-adfa-c40188d34a18
 
 > operator '*operator-name*' cannot be applied to an instance of a ref class
 
+## Remarks
+
 use the unary *operator-name* operator to convert an instance of a ref class to a handle type
 
 A CLR type requires CLR operators, not native (or standard) operators.  For more information, see [Tracking Reference Operator](../../extensions/tracking-reference-operator-cpp-component-extensions.md).

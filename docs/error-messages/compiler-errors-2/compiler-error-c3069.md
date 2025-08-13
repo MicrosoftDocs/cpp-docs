@@ -10,6 +10,8 @@ ms.assetid: ca94291b-2bb4-4e3f-9acf-534234b83513
 
 > 'operator': not allowed for enumeration type
 
+## Remarks
+
 An operator is not supported for CLR enumerations.  For more information, see [How to: Define and consume enums in C++/CLI](../../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md).
 
 ## Example

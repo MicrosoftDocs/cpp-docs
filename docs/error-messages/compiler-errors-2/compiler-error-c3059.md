@@ -10,7 +10,11 @@ ms.assetid: 57220324-8286-4cab-a1ab-45385eb1eae0
 
 > 'var' : 'threadprivate' symbol cannot be used in the 'clause' clause
 
+## Remarks
+
 A [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) symbol was used in a clause.
+
+## Example
 
 The following sample generates C3059:
 

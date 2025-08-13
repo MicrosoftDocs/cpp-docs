@@ -10,6 +10,8 @@ ms.assetid: b24b9b8b-f9fb-4c3c-a1a0-97fad2081bfc
 
 > 'type' : ref class does not have a user-defined copy constructor
 
+## Remarks
+
 In a [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) compilation, the compiler will not generate a copy constructor for a reference type. In any **/clr** compilation, you must define your own copy constructor for a reference type if you expect an instance of the type to be copied.
 
 For more information, see [C++ Stack Semantics for Reference Types](../../dotnet/cpp-stack-semantics-for-reference-types.md).

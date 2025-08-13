@@ -10,7 +10,11 @@ ms.assetid: ac88584d-40a6-4176-90f3-2371c3c935f2
 
 > 'property': property does not have a 'set' method
 
+## Remarks
+
 A property's set accessor method was not defined. For more information, see [property](../../extensions/property-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3070:
 
