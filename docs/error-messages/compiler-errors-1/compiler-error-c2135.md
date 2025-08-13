@@ -11,7 +11,7 @@ helpviewer_keywords: ["C2135"]
 
 ## Remarks
 
-The address-of operator (`&`) cannot be applied to a bit field.
+The [address-of operator (`&`)](../../cpp/address-of-operator-amp.md), [unary plus operator (`+`)](../../cpp/unary-plus-and-negation-operators-plus-and.md), [unary negation operator (`-`)](../../cpp/unary-plus-and-negation-operators-plus-and.md), [logical negation operator (`!`)](../../cpp/logical-negation-operator-exclpt.md), [one's complement operator (`~`)](../../cpp/one-s-complement-operator-tilde.md), and [indirection operator (`*`)](../../cpp/indirection-operator-star.md) cannot be applied to a bit-field in this context.
 
 ## Example
 
