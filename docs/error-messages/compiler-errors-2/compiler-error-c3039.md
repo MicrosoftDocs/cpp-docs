@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3039"
 title: "Compiler Error C3039"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3039"
+ms.date: 11/04/2016
 f1_keywords: ["C3039"]
 helpviewer_keywords: ["C3039"]
-ms.assetid: 02776f16-f57a-4ffd-b7f7-9c696b633e08
 ---
 # Compiler Error C3039
 

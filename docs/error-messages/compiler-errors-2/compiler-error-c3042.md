@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3042"
 title: "Compiler Error C3042"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3042"
+ms.date: 11/04/2016
 f1_keywords: ["C3042"]
 helpviewer_keywords: ["C3042"]
-ms.assetid: bf73f61e-5bd2-40a8-9b06-6244e6a15a41
 ---
 # Compiler Error C3042
 

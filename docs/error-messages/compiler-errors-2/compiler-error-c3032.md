@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3032"
 title: "Compiler Error C3032"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3032"
+ms.date: 11/04/2016
 f1_keywords: ["C3032"]
 helpviewer_keywords: ["C3032"]
-ms.assetid: 6a92bd8e-319f-4a99-aef4-a9021f6f9928
 ---
 # Compiler Error C3032
 

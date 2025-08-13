@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3044"
 title: "Compiler Error C3044"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3044"
+ms.date: 11/04/2016
 f1_keywords: ["C3044"]
 helpviewer_keywords: ["C3044"]
-ms.assetid: 9f3e25b2-4676-49ab-97bf-6c88cd0fa377
 ---
 # Compiler Error C3044
 

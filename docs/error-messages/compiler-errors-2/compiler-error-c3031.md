@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3031"
 title: "Compiler Error C3031"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3031"
+ms.date: 11/04/2016
 f1_keywords: ["C3031"]
 helpviewer_keywords: ["C3031"]
-ms.assetid: 7e621e7e-eda7-45b5-8836-29599cd05255
 ---
 # Compiler Error C3031
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3045"
 title: "Compiler Error C3045"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3045"
+ms.date: 11/04/2016
 f1_keywords: ["C3045"]
 helpviewer_keywords: ["C3045"]
-ms.assetid: 9351ba3e-3d3f-455f-ac90-a810fa9fd947
 ---
 # Compiler Error C3045
 

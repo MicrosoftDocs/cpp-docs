@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3037"
 title: "Compiler Error C3037"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3037"
+ms.date: 11/04/2016
 f1_keywords: ["C3037"]
 helpviewer_keywords: ["C3037"]
-ms.assetid: 9ba8a890-d3c7-4cce-93c5-d358e2bfad28
 ---
 # Compiler Error C3037
 

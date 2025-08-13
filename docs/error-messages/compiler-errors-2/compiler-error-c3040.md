@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3040"
 title: "Compiler Error C3040"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3040"
+ms.date: 11/04/2016
 f1_keywords: ["C3040"]
 helpviewer_keywords: ["C3040"]
-ms.assetid: 29e857ac-74f0-4ec6-becf-9026e38c160e
 ---
 # Compiler Error C3040
 

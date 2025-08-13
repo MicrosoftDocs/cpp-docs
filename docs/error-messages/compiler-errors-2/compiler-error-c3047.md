@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3047"
 title: "Compiler Error C3047"
+description: "Learn more about: Compiler Error C3047"
 ms.date: 06/01/2022
 f1_keywords: ["C3047"]
 helpviewer_keywords: ["C3047"]
-ms.assetid: 91c14566-5958-433d-8549-0e8bc3196f76
 ---
 # Compiler Error C3047
 

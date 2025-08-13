@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3041"
 title: "Compiler Error C3041"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3041"
+ms.date: 11/04/2016
 f1_keywords: ["C3041"]
 helpviewer_keywords: ["C3041"]
-ms.assetid: 9df1ae44-3ac7-4c6c-899f-f35ffe7ccf0d
 ---
 # Compiler Error C3041
 
