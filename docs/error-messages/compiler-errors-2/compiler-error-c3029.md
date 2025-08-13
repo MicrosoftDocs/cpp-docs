@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3029"
 title: "Compiler Error C3029"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3029"
+ms.date: 11/04/2016
 f1_keywords: ["C3029"]
 helpviewer_keywords: ["C3029"]
-ms.assetid: 655eb04d-504a-468d-8c0c-bda1e5f297b7
 ---
 # Compiler Error C3029
 
-'symbol' : can only appear once in data-sharing clauses in an OpenMP directive
+> 'symbol' : can only appear once in data-sharing clauses in an OpenMP directive
+
+## Remarks
 
 A symbol was used more than once in one or more clauses in a directive. The symbol can only be used once in the directive.
 
-The following sample generates C3029:
+## Example
+
+The following example generates C3029:
 
 ```cpp
 // C3029.cpp
