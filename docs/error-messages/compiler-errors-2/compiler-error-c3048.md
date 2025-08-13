@@ -10,7 +10,11 @@ ms.assetid: 48e07091-94d9-471d-befe-7e2507631edd
 
 > Expression following '#pragma omp atomic' has improper form
 
+## Remarks
+
 An atomic directive was incorrectly specified.
+
+## Example
 
 The following sample generates C3048:
 

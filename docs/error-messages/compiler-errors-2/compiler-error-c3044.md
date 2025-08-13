@@ -10,7 +10,11 @@ ms.assetid: 9f3e25b2-4676-49ab-97bf-6c88cd0fa377
 
 > 'section' : only allowed directly nested under an OpenMP 'sections' directive
 
+## Remarks
+
 The compiler found a `section` directive was used incorrectly. For more information, see [sections](../../parallel/openmp/reference/openmp-directives.md#sections-openmp).
+
+## Example
 
 The following sample generates C3044:
 

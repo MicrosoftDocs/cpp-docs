@@ -10,7 +10,11 @@ ms.assetid: 9df1ae44-3ac7-4c6c-899f-f35ffe7ccf0d
 
 > 'var' : variable in 'copyprivate' clause must be private in enclosing context
 
+## Remarks
+
 A variable passed to [copyprivate](../../parallel/openmp/reference/openmp-clauses.md#copyprivate) cannot be shared in the enclosing context.
+
+## Example
 
 The following sample generates C3041:
 

@@ -10,7 +10,11 @@ ms.assetid: 7e621e7e-eda7-45b5-8836-29599cd05255
 
 > 'var' : variable in 'reduction' clause must have scalar arithmetic type
 
+## Remarks
+
 A variable of the wrong type was passed to a reduction clause.
+
+## Example
 
 The following sample generates C3031:
 

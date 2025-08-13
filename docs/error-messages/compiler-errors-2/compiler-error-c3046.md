@@ -10,7 +10,11 @@ ms.assetid: 2e53d835-faa1-4ec0-9807-41f3dc552635
 
 > Missing structured block in an OpenMP '#pragma omp sections' region
 
+## Remarks
+
 A [sections](../../parallel/openmp/reference/openmp-directives.md#sections-openmp) directive has an empty code block.
+
+## Example
 
 The following sample generates C3046:
 

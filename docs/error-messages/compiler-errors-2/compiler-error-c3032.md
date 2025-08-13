@@ -10,7 +10,11 @@ ms.assetid: 6a92bd8e-319f-4a99-aef4-a9021f6f9928
 
 > 'var' : variable in 'clause' clause cannot have incomplete type 'type'
 
+## Remarks
+
 Types passed to certain clauses must be fully visible to the compiler.
+
+## Example
 
 The following sample generates C3032:
 

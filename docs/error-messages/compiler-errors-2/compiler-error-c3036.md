@@ -10,7 +10,11 @@ ms.assetid: 10c6993e-bc42-4a07-85c7-cdc34ac30906
 
 > 'operator' : invalid operator token in OpenMP 'reduction' clause
 
+## Remarks
+
 A [reduction](../../parallel/openmp/reference/openmp-clauses.md#reduction) clause was not specified correctly.
+
+## Example
 
 The following sample generates C3036:
 

@@ -10,9 +10,13 @@ ms.assetid: 91c14566-5958-433d-8549-0e8bc3196f76
 
 > Structured block in an OpenMP 'sections' region must be preceded by '#pragma omp section'
 
+## Remarks
+
 Any code in a code block introduced by a [sections](../../parallel/openmp/reference/openmp-directives.md#sections-openmp) directive must be in a code block introduced by a `section` directive.
 
 This error is obsolete in Visual Studio 2022 and later versions.
+
+## Example
 
 The following sample generates C3047:
 

@@ -10,7 +10,11 @@ ms.assetid: af34fad2-2b45-42d0-a9ff-04eab3e91c37
 
 > OpenMP 'ordered' directive must bind directly to a 'for' or 'parallel for' directive with the 'ordered' clause
 
+## Remarks
+
 An ordered clause was ill formed.
+
+## Example
 
 The following sample generates C3035:
 
