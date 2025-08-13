@@ -16,7 +16,7 @@ A symbol must first be declared [threadprivate](../../parallel/openmp/reference/
 
 ## Example
 
-The following sample generates C3058:
+The following example generates C3058:
 
 ```cpp
 // C3058.cpp

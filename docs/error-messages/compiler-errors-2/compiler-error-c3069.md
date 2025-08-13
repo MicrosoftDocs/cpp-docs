@@ -16,7 +16,7 @@ An operator is not supported for CLR enumerations.  For more information, see [H
 
 ## Example
 
-The following sample generates C3069:
+The following example generates C3069:
 
 ```cpp
 // C3069.cpp

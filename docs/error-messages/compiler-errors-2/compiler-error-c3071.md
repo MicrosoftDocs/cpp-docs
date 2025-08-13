@@ -18,7 +18,7 @@ For more information, see [Tracking Reference Operator](../../extensions/trackin
 
 ## Example
 
-The following sample generates C3071.
+The following example generates C3071.
 
 ```cpp
 // C3071.cpp

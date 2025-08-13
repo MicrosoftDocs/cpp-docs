@@ -16,7 +16,7 @@ If [default(none)](../../parallel/openmp/reference/openmp-clauses.md#default-ope
 
 ## Example
 
-The following sample generates C3052:
+The following example generates C3052:
 
 ```cpp
 // C3052.cpp

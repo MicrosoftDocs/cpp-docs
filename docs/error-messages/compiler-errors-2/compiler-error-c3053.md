@@ -16,7 +16,7 @@ Symbols passed to [threadprivate](../../parallel/openmp/reference/openmp-directi
 
 ## Example
 
-The following sample generates C3053:
+The following example generates C3053:
 
 ```cpp
 // C3053.cpp

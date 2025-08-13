@@ -16,7 +16,7 @@ The [property](../../cpp/property-cpp.md) __declspec modifier was used outside a
 
 ## Example
 
-The following sample generates C3065:
+The following example generates C3065:
 
 ```cpp
 // C3065.cpp

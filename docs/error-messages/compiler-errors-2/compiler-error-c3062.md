@@ -18,7 +18,7 @@ For more information on enums, see [enum class](../../extensions/enum-class-cpp-
 
 ## Example
 
-The following sample generates C3062:
+The following example generates C3062:
 
 ```cpp
 // C3062.cpp

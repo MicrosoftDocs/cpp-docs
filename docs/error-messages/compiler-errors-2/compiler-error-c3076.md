@@ -18,7 +18,7 @@ For more information, see [C++ Stack Semantics for Reference Types](../../dotnet
 
 ## Example
 
-The following sample generates C3076.
+The following example generates C3076.
 
 ```cpp
 // C3076.cpp

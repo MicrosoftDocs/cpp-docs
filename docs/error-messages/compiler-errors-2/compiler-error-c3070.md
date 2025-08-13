@@ -16,7 +16,7 @@ A property's set accessor method was not defined. For more information, see [pro
 
 ## Example
 
-The following sample generates C3070:
+The following example generates C3070:
 
 ```cpp
 // C3070.cpp

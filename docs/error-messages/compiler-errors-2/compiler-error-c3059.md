@@ -16,7 +16,7 @@ A [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadpri
 
 ## Example
 
-The following sample generates C3059:
+The following example generates C3059:
 
 ```cpp
 // C3059.cpp

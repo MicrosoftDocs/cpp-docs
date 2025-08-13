@@ -16,7 +16,7 @@ A symbol was referenced and then used in a [threadprivate](../../parallel/openmp
 
 ## Example
 
-The following sample generates C3055:
+The following example generates C3055:
 
 ```cpp
 // C3055.cpp

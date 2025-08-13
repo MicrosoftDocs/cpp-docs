@@ -27,7 +27,7 @@ When an exception is thrown, compiler generated code, called the prolog and epil
 
 ## Example
 
-The following sample generates C3068:
+The following example generates C3068:
 
 ```cpp
 // C3068.cpp

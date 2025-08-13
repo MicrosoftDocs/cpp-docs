@@ -16,7 +16,7 @@ The initialized value of a symbol used in a [threadprivate](../../parallel/openm
 
 ## Examples
 
-The following sample generates C3057:
+The following example generates C3057:
 
 ```cpp
 // C3057.cpp
@@ -42,7 +42,7 @@ int main() {
 }
 ```
 
-The following sample generates C3057:
+The following example generates C3057:
 
 ```cpp
 // C3057b.cpp

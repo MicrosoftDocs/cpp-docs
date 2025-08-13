@@ -16,7 +16,7 @@ When using operators on enumerators, both operands must be of the enumeration ty
 
 ## Example
 
-The following sample generates C3063 and shows how to fix it:
+The following example generates C3063 and shows how to fix it:
 
 ```cpp
 // C3063.cpp

@@ -18,7 +18,7 @@ For more information, see [C++ Stack Semantics for Reference Types](../../dotnet
 
 ## Example
 
-The following sample generates C3075.
+The following example generates C3075.
 
 ```cpp
 // C3075.cpp

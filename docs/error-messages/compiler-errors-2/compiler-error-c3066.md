@@ -16,7 +16,7 @@ The compiler detected an ambiguous function call involving surrogates.
 
 ## Examples
 
-The following sample generates C3066:
+The following example generates C3066:
 
 ```cpp
 // C3066.cpp

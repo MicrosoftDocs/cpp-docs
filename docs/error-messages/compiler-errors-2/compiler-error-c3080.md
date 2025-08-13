@@ -16,7 +16,7 @@ For more information, see [Destructors and finalizers in How to: Define and cons
 
 ## Example
 
-The following sample generates C3080.
+The following example generates C3080.
 
 ```cpp
 // C3080.cpp

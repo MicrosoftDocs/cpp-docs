@@ -16,7 +16,7 @@ A symbol used in a [threadprivate](../../parallel/openmp/reference/openmp-direct
 
 ## Example
 
-The following sample generates C3056:
+The following example generates C3056:
 
 ```cpp
 // C3056.cpp

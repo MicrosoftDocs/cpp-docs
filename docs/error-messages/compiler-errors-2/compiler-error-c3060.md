@@ -16,7 +16,7 @@ A friend function was defined using a qualified name, which is not allowed.
 
 ## Example
 
-The following sample generates C3060:
+The following example generates C3060:
 
 ```cpp
 // C3060.cpp
