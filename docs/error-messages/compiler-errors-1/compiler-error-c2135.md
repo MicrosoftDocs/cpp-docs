@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2135"]
 ---
 # Compiler Error C2135
 
-> 'bit operator' : illegal bit field operation
+> '*identifier*': you cannot apply '*operator*' to a bit-field
 
 ## Remarks
 
