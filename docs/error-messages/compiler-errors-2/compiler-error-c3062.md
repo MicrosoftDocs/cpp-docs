@@ -8,7 +8,7 @@ ms.assetid: 78632e6d-255f-42c3-b124-31a9194ff86d
 ---
 # Compiler Error C3062
 
-'enum': enumerator requires value since the underlying type is 'type'
+> 'enum': enumerator requires value since the underlying type is 'type'
 
 You can specify an underlying type for an enumeration. However, some types require you to assign values to each enumerator.
 

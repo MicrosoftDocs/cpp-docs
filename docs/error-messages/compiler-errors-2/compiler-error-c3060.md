@@ -8,7 +8,7 @@ ms.assetid: 6282bb92-0546-4b59-9435-d3840bf93bdb
 ---
 # Compiler Error C3060
 
-'member' : a friend function may not be defined inside a class using a qualified name (it may only be declared)
+> 'member' : a friend function may not be defined inside a class using a qualified name (it may only be declared)
 
 A friend function was defined using a qualified name, which is not allowed.
 

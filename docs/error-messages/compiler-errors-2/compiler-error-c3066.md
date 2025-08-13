@@ -8,7 +8,7 @@ ms.assetid: 226f6de5-c4c5-41e2-b31a-2e30a37fbbeb
 ---
 # Compiler Error C3066
 
-there are multiple ways that an object of this type can be called with these arguments
+> there are multiple ways that an object of this type can be called with these arguments
 
 The compiler detected an ambiguous function call involving surrogates.
 

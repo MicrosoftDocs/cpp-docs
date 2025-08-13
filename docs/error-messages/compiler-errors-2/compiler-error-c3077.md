@@ -8,7 +8,7 @@ ms.assetid: d9f3c619-d1e2-4656-81a5-a35a9586a7d4
 ---
 # Compiler Error C3077
 
-'finalizer' : a finalizer can only be a member of a reference type
+> 'finalizer' : a finalizer can only be a member of a reference type
 
 You cannot declare a finalizer in a native or value type.
 

@@ -8,7 +8,7 @@ ms.assetid: ca94291b-2bb4-4e3f-9acf-534234b83513
 ---
 # Compiler Error C3069
 
-'operator': not allowed for enumeration type
+> 'operator': not allowed for enumeration type
 
 An operator is not supported for CLR enumerations.  For more information, see [How to: Define and consume enums in C++/CLI](../../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md).
 

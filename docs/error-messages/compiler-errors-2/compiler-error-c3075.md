@@ -8,7 +8,7 @@ ms.assetid: f431daa9-e0fa-48f0-a5c3-f99be96b55e3
 ---
 # Compiler Error C3075
 
-'instance' : you cannot embed an instance of a reference type, 'type', in a value-type
+> 'instance' : you cannot embed an instance of a reference type, 'type', in a value-type
 
 A value type cannot contain an instance of a reference type.
 

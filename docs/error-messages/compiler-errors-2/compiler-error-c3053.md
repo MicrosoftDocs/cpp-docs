@@ -8,7 +8,7 @@ ms.assetid: ab9a25f3-e341-4f6e-8e69-069b4a963a64
 ---
 # Compiler Error C3053
 
-'symbol' : 'threadprivate' is only valid for global or static data items
+> 'symbol' : 'threadprivate' is only valid for global or static data items
 
 Symbols passed to [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) must either be global or static.
 

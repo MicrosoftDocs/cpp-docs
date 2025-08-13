@@ -8,7 +8,7 @@ ms.assetid: 669d08c8-0b58-4351-88aa-c6e6e1af481c
 ---
 # Compiler Error C3058
 
-'symbol' : symbol not declared as 'threadprivate' before it is used in the 'copyin' clause
+> 'symbol' : symbol not declared as 'threadprivate' before it is used in the 'copyin' clause
 
 A symbol must first be declared [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) before it can be used in a [copyin](../../parallel/openmp/reference/openmp-clauses.md#copyin) clause.
 

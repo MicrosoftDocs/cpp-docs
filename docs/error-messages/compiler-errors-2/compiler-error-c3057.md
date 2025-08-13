@@ -8,7 +8,7 @@ ms.assetid: b0b2ba88-9c74-4bec-bf60-8fc72eade34c
 ---
 # Compiler Error C3057
 
-'symbol' : dynamic initialization of 'threadprivate' symbols is not currently supported
+> 'symbol' : dynamic initialization of 'threadprivate' symbols is not currently supported
 
 The initialized value of a symbol used in a [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) clause must be known at compile time.
 

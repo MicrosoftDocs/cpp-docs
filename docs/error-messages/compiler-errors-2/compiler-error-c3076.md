@@ -8,7 +8,7 @@ ms.assetid: 8a87b3e4-2c17-4b87-9622-ef0962d6a34e
 ---
 # Compiler Error C3076
 
-'instance' : you cannot embed an instance of a reference type, 'type', in a native type
+> 'instance' : you cannot embed an instance of a reference type, 'type', in a native type
 
 A native type cannot contain an instance of a CLR type.
 

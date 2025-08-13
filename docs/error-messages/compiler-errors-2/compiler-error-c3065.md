@@ -8,7 +8,7 @@ ms.assetid: e7a0bc69-1c68-459e-a7c4-93c65609ff7c
 ---
 # Compiler Error C3065
 
-property declaration at non-class scope is not allowed
+> property declaration at non-class scope is not allowed
 
 The [property](../../cpp/property-cpp.md) __declspec modifier was used outside a class.  A property can only be declared inside a class.
 
