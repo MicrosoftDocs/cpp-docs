@@ -19,15 +19,16 @@ The following example generates C2135:
 
 ```cpp
 // C2135.cpp
-struct S {
-   int i : 1;
+
+struct S
+{
+    int bit_field : 1;
+    int integer;
 };
 
-struct T {
-   int j;
-};
-int main() {
-   &S::i;   // C2135 address of a bit field
-   &T::j;   // OK
+int main()
+{
+    &S::bit_field;   // C2135
+    &S::integer;     // OK
 }
 ```
