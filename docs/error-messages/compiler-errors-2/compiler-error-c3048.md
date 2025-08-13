@@ -8,7 +8,7 @@ ms.assetid: 48e07091-94d9-471d-befe-7e2507631edd
 ---
 # Compiler Error C3048
 
-Expression following '#pragma omp atomic' has improper form
+> Expression following '#pragma omp atomic' has improper form
 
 An atomic directive was incorrectly specified.
 

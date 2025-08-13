@@ -8,7 +8,7 @@ ms.assetid: 6a92bd8e-319f-4a99-aef4-a9021f6f9928
 ---
 # Compiler Error C3032
 
-'var' : variable in 'clause' clause cannot have incomplete type 'type'
+> 'var' : variable in 'clause' clause cannot have incomplete type 'type'
 
 Types passed to certain clauses must be fully visible to the compiler.
 

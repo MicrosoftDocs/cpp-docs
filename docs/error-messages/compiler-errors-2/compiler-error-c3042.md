@@ -8,7 +8,7 @@ ms.assetid: bf73f61e-5bd2-40a8-9b06-6244e6a15a41
 ---
 # Compiler Error C3042
 
-'copyprivate' and 'nowait' clauses cannot appear together on OpenMP 'directive' directive
+> 'copyprivate' and 'nowait' clauses cannot appear together on OpenMP 'directive' directive
 
 The [copyprivate](../../parallel/openmp/reference/openmp-clauses.md#copyprivate) and [nowait](../../parallel/openmp/reference/openmp-clauses.md#nowait) clauses are mutually exclusive on the specified directive. To fix this error, remove one or both of the `copyprivate` or `nowait` clauses.
 

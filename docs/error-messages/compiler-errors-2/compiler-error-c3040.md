@@ -8,7 +8,7 @@ ms.assetid: 29e857ac-74f0-4ec6-becf-9026e38c160e
 ---
 # Compiler Error C3040
 
-'var' : type of variable in 'reduction' clause is incompatible with reduction operator 'operator'
+> 'var' : type of variable in 'reduction' clause is incompatible with reduction operator 'operator'
 
 A variable in a [reduction](../../parallel/openmp/reference/openmp-clauses.md#reduction) clause cannot be used with the reduction operator.
 

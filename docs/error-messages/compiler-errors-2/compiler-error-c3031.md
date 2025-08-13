@@ -8,7 +8,7 @@ ms.assetid: 7e621e7e-eda7-45b5-8836-29599cd05255
 ---
 # Compiler Error C3031
 
-'var' : variable in 'reduction' clause must have scalar arithmetic type
+> 'var' : variable in 'reduction' clause must have scalar arithmetic type
 
 A variable of the wrong type was passed to a reduction clause.
 

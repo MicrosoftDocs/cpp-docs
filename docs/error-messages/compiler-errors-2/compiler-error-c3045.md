@@ -8,7 +8,7 @@ ms.assetid: 9351ba3e-3d3f-455f-ac90-a810fa9fd947
 ---
 # Compiler Error C3045
 
-Expected a compound statement following OpenMP 'sections' directive. Missing '{'
+> Expected a compound statement following OpenMP 'sections' directive. Missing '{'
 
 A code block delimited by braces must follow a [sections](../../parallel/openmp/reference/openmp-directives.md#sections-openmp) directive.
 

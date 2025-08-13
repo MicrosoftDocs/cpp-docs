@@ -8,7 +8,7 @@ ms.assetid: 49db8bac-2720-4622-94e3-7988f1603fa3
 ---
 # Compiler Error C3034
 
-OpenMP 'directive1' directive cannot be directly nested within 'directive2' directive
+> OpenMP 'directive1' directive cannot be directly nested within 'directive2' directive
 
 Some directives cannot be nested. To fix this error, you can merge the statements of both directives into the block of one directive, or you can construct consecutive directives.
 

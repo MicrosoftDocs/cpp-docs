@@ -8,7 +8,7 @@ ms.assetid: ee090a0b-29cc-4215-a2f9-d82af79b8e82
 ---
 # Compiler Error C3050
 
-'type1' : a ref class cannot inherit from 'type1'
+> 'type1' : a ref class cannot inherit from 'type1'
 
 `System::ValueType` cannot be a base class for a reference type.
 

@@ -8,7 +8,7 @@ ms.assetid: 10c6993e-bc42-4a07-85c7-cdc34ac30906
 ---
 # Compiler Error C3036
 
-'operator' : invalid operator token in OpenMP 'reduction' clause
+> 'operator' : invalid operator token in OpenMP 'reduction' clause
 
 A [reduction](../../parallel/openmp/reference/openmp-clauses.md#reduction) clause was not specified correctly.
 

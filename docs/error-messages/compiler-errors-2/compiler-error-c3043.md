@@ -8,7 +8,7 @@ ms.assetid: 0ef55e63-e82b-48eb-9d44-690950ac34c6
 ---
 # Compiler Error C3043
 
-OpenMP 'critical' directive cannot be nested in 'critical' directive with same name
+> OpenMP 'critical' directive cannot be nested in 'critical' directive with same name
 
 A [critical](../../parallel/openmp/reference/openmp-directives.md#critical) directive cannot be nested in a `critical` directive that uses the same name.
 
