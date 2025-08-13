@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3052"
 title: "Compiler Error C3052"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3052"
+ms.date: 11/04/2016
 f1_keywords: ["C3052"]
 helpviewer_keywords: ["C3052"]
-ms.assetid: 87480c42-1ceb-4775-8d20-88c54a7bb6a6
 ---
 # Compiler Error C3052
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3057"
 title: "Compiler Error C3057"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3057"
+ms.date: 11/04/2016
 f1_keywords: ["C3057"]
 helpviewer_keywords: ["C3057"]
-ms.assetid: b0b2ba88-9c74-4bec-bf60-8fc72eade34c
 ---
 # Compiler Error C3057
 

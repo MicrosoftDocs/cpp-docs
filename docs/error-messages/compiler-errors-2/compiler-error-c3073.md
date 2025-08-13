@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3073"
 title: "Compiler Error C3073"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3073"
+ms.date: 11/04/2016
 f1_keywords: ["C3073"]
 helpviewer_keywords: ["C3073"]
-ms.assetid: b24b9b8b-f9fb-4c3c-a1a0-97fad2081bfc
 ---
 # Compiler Error C3073
 

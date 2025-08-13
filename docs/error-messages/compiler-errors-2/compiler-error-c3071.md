@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3071"
 title: "Compiler Error C3071"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3071"
+ms.date: 11/04/2016
 f1_keywords: ["C3071"]
 helpviewer_keywords: ["C3071"]
-ms.assetid: 69879e66-a60e-4058-9bbd-d5c5e2d8ee37
 ---
 # Compiler Error C3071
 

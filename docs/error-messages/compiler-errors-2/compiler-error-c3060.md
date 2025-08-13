@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3060"
 title: "Compiler Error C3060"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3060"
+ms.date: 11/04/2016
 f1_keywords: ["C3060"]
 helpviewer_keywords: ["C3060"]
-ms.assetid: 6282bb92-0546-4b59-9435-d3840bf93bdb
 ---
 # Compiler Error C3060
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3070"
 title: "Compiler Error C3070"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3070"
+ms.date: 11/04/2016
 f1_keywords: ["C3070"]
 helpviewer_keywords: ["C3070"]
-ms.assetid: ac88584d-40a6-4176-90f3-2371c3c935f2
 ---
 # Compiler Error C3070
 

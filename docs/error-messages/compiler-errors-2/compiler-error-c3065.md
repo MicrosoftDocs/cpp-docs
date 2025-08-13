@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3065"
 title: "Compiler Error C3065"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3065"
+ms.date: 11/04/2016
 f1_keywords: ["C3065"]
 helpviewer_keywords: ["C3065"]
-ms.assetid: e7a0bc69-1c68-459e-a7c4-93c65609ff7c
 ---
 # Compiler Error C3065
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3080"
 title: "Compiler Error C3080"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3080"
+ms.date: 11/04/2016
 f1_keywords: ["C3080"]
 helpviewer_keywords: ["C3080"]
-ms.assetid: ff62a3f7-9b3b-44bd-b8d9-f3a8e5354560
 ---
 # Compiler Error C3080
 

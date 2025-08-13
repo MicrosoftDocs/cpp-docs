@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3077"
 title: "Compiler Error C3077"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3077"
+ms.date: 11/04/2016
 f1_keywords: ["C3077"]
 helpviewer_keywords: ["C3077"]
-ms.assetid: d9f3c619-d1e2-4656-81a5-a35a9586a7d4
 ---
 # Compiler Error C3077
 
