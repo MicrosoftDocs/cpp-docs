@@ -43,7 +43,7 @@ A variant object holds and manages a value. If the variant holds a value, that v
 |Name|Description|
 |-|-|
 |[`bad_variant_access`](bad-variant-access-class.md)|Objects thrown to report invalid accesses to the value of a variant object.|
-|[`variant`](variant.md)|An object to either hold a value of one of its alternative types, or no value.|
+|[`variant`](variant-class.md)|An object to either hold a value of one of its alternative types, or no value.|
 
 ### Structs
 
