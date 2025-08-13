@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2135"
 description: "Learn more about: Compiler Error C2135"
-ms.date: 11/04/2016
+ms.date: 08/13/2025
 f1_keywords: ["C2135"]
 helpviewer_keywords: ["C2135"]
 ---
