@@ -32,3 +32,7 @@ int main()
     &S::integer;     // OK
 }
 ```
+
+## See also
+
+[C2104](compiler-error-c2104.md)
