@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3026"
 title: "Compiler Error C3026"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3026"
+ms.date: 11/04/2016
 f1_keywords: ["C3026"]
 helpviewer_keywords: ["C3026"]
-ms.assetid: 3297060e-cc5b-4600-a2db-09bfc4ffa21f
 ---
 # Compiler Error C3026
 
-'clause' : constant expression must be positive
+> 'clause' : constant expression must be positive
+
+## Remarks
 
 A clause was passed an integer value, but the value was not a positive number. The number must be positive.
 
 ## Example
 
-The following sample generates C3026:
+The following example generates C3026:
 
 ```cpp
 // C3026.cpp
