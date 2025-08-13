@@ -16,7 +16,7 @@ An atomic directive was incorrectly specified.
 
 ## Example
 
-The following sample generates C3048:
+The following example generates C3048:
 
 ```cpp
 // C3048.cpp

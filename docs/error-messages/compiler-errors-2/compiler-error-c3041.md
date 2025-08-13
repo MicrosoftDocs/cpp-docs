@@ -16,7 +16,7 @@ A variable passed to [copyprivate](../../parallel/openmp/reference/openmp-clause
 
 ## Example
 
-The following sample generates C3041:
+The following example generates C3041:
 
 ```cpp
 // C3041.cpp

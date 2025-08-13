@@ -16,7 +16,7 @@ A variable specified in a [reduction](../../parallel/openmp/reference/openmp-cla
 
 ## Example
 
-The following sample generates C3037:
+The following example generates C3037:
 
 ```cpp
 // C3037.cpp

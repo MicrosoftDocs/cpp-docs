@@ -16,7 +16,7 @@ A variable in a [reduction](../../parallel/openmp/reference/openmp-clauses.md#re
 
 ## Example
 
-The following sample generates C3040:
+The following example generates C3040:
 
 ```cpp
 // C3040.cpp

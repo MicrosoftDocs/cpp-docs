@@ -18,7 +18,7 @@ This error is obsolete in Visual Studio 2022 and later versions.
 
 ## Example
 
-The following sample generates C3047:
+The following example generates C3047:
 
 ```cpp
 // C3047.cpp

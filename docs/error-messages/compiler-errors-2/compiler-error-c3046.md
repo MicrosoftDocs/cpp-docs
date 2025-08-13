@@ -16,7 +16,7 @@ A [sections](../../parallel/openmp/reference/openmp-directives.md#sections-openm
 
 ## Example
 
-The following sample generates C3046:
+The following example generates C3046:
 
 ```cpp
 // C3046.cpp

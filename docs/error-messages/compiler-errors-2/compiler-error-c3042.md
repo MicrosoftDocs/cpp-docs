@@ -16,7 +16,7 @@ The [copyprivate](../../parallel/openmp/reference/openmp-clauses.md#copyprivate)
 
 ## Example
 
-The following sample generates C3042:
+The following example generates C3042:
 
 ```cpp
 // C3042.cpp

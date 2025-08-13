@@ -16,7 +16,7 @@ Values passed to certain clauses cannot be **`const`** variables.
 
 ## Example
 
-The following sample generates C3033:
+The following example generates C3033:
 
 ```cpp
 // C3033.cpp

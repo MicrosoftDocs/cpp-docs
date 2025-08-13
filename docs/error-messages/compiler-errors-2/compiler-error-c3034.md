@@ -16,7 +16,7 @@ Some directives cannot be nested. To fix this error, you can merge the statement
 
 ## Example
 
-The following sample generates C3034:
+The following example generates C3034:
 
 ```cpp
 // C3034.cpp

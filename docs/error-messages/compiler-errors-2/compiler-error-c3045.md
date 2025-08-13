@@ -16,7 +16,7 @@ A code block delimited by braces must follow a [sections](../../parallel/openmp/
 
 ## Example
 
-The following sample generates C3045:
+The following example generates C3045:
 
 ```cpp
 // C3045.cpp

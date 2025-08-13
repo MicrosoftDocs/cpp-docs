@@ -16,7 +16,7 @@ Types passed to certain clauses must be fully visible to the compiler.
 
 ## Example
 
-The following sample generates C3032:
+The following example generates C3032:
 
 ```cpp
 // C3032.cpp

@@ -16,7 +16,7 @@ ms.assetid: ee090a0b-29cc-4215-a2f9-d82af79b8e82
 
 ## Example
 
-The following sample generates C3050:
+The following example generates C3050:
 
 ```cpp
 // C3050.cpp

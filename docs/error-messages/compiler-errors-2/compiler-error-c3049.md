@@ -16,7 +16,7 @@ An incorrect value was passed to a [default](../../parallel/openmp/reference/ope
 
 ## Example
 
-The following sample generates C3049:
+The following example generates C3049:
 
 ```cpp
 // C3049.cpp

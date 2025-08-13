@@ -16,7 +16,7 @@ A [reduction](../../parallel/openmp/reference/openmp-clauses.md#reduction) claus
 
 ## Example
 
-The following sample generates C3036:
+The following example generates C3036:
 
 ```cpp
 // C3036.cpp

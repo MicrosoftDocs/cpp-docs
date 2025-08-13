@@ -16,7 +16,7 @@ A variable of the wrong type was passed to a reduction clause.
 
 ## Example
 
-The following sample generates C3031:
+The following example generates C3031:
 
 ```cpp
 // C3031.cpp

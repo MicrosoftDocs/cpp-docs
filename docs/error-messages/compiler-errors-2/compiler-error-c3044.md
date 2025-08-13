@@ -16,7 +16,7 @@ The compiler found a `section` directive was used incorrectly. For more informat
 
 ## Example
 
-The following sample generates C3044:
+The following example generates C3044:
 
 ```cpp
 // C3044.cpp

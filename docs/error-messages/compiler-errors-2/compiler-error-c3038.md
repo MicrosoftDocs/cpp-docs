@@ -16,7 +16,7 @@ Variables that appear in the [reduction](../../parallel/openmp/reference/openmp-
 
 ## Example
 
-The following sample generates C3038:
+The following example generates C3038:
 
 ```cpp
 // C3038.cpp

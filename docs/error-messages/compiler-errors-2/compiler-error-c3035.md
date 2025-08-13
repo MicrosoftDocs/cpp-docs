@@ -16,7 +16,7 @@ An ordered clause was ill formed.
 
 ## Example
 
-The following sample generates C3035:
+The following example generates C3035:
 
 ```cpp
 // C3035.cpp

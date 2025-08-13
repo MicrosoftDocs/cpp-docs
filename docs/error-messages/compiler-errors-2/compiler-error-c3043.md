@@ -16,7 +16,7 @@ A [critical](../../parallel/openmp/reference/openmp-directives.md#critical) dire
 
 ## Example
 
-The following sample generates C3043:
+The following example generates C3043:
 
 ```cpp
 // C3043.cpp
