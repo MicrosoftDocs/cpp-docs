@@ -12,7 +12,7 @@ ms.assetid: 05ff791d-52bb-41eb-9511-3ef89d7f4710
 
 ## Remarks
 
-A function was called incorrectly.
+The qualification used is invalid. Ensure that no extra symbols were used in the qualification and that you included all required headers.
 
 ## Example
 
