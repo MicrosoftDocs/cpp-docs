@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3104"
 title: "Compiler Error C3104"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3104"
+ms.date: 11/04/2016
 f1_keywords: ["C3104"]
 helpviewer_keywords: ["C3104"]
-ms.assetid: b5648d47-e5d3-4b45-a3c0-f46e04eae731
 ---
 # Compiler Error C3104
 
-illegal attribute argument
+> illegal attribute argument
+
+## Remarks
 
 You specified an invalid argument to an attribute.
 
@@ -18,7 +19,7 @@ This error can be generated as a result of compiler conformance work that was do
 
 ## Examples
 
-The following sample generates C3104.
+The following example generates C3104.
 
 ```cpp
 // C3104a.cpp
@@ -37,7 +38,7 @@ public ref struct ABC : public Attribute {
 ref struct AStruct{};
 ```
 
-The following sample generates C3104.
+The following example generates C3104.
 
 ```cpp
 // C3104b.cpp

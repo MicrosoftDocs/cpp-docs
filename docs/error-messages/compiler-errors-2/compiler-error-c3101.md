@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3101"
 title: "Compiler Error C3101"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3101"
+ms.date: 11/04/2016
 f1_keywords: ["C3101"]
 helpviewer_keywords: ["C3101"]
-ms.assetid: 4f673766-d4f7-4632-94a5-d36a83f7f4b5
 ---
 # Compiler Error C3101
 
-illegal expression for named attribute argument 'field'
+> illegal expression for named attribute argument 'field'
+
+## Remarks
 
 When initializing a named attribute argument, the value must be a compile time constant.
 
@@ -16,7 +17,7 @@ For more information on attributes, see [User-Defined Attributes](../../extensio
 
 ## Example
 
-The following sample generates C3101.
+The following example generates C3101.
 
 ```cpp
 // C3101.cpp

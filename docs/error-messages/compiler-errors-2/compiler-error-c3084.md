@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3084"
 title: "Compiler Error C3084"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3084"
+ms.date: 11/04/2016
 f1_keywords: ["C3084"]
 helpviewer_keywords: ["C3084"]
-ms.assetid: 0362cb70-e24e-476f-a24d-8f5bb97c3afd
 ---
 # Compiler Error C3084
 
-'function': a finalizer/destructor cannot be 'keyword'
+> 'function': a finalizer/destructor cannot be 'keyword'
+
+## Remarks
 
 A finalizer or destructor was declared incorrectly.
 
@@ -16,7 +17,7 @@ For example, a destructor should not be marked as sealed.  The destructor will b
 
 ## Example
 
-The following sample generates C3084.
+The following example generates C3084.
 
 ```cpp
 // C3084.cpp
