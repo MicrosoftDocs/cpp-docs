@@ -16,19 +16,17 @@ The qualification used is invalid. Ensure that no extra symbols were used in the
 
 ## Example
 
-The following sample generates C3083.
+The following example generates C3083:
 
 ```cpp
 // C3083.cpp
 // compile with: /c
-struct N {
-   ~N();
+
+struct S
+{
+    S();
 };
 
-struct N1 {
-   ~N1();
-};
-
-N::N::~N() {}   // C3083
-N1::~N1() {}   // OK
+S::Extra::S() {}   // C3083
+S::S() {}          // OK
 ```
