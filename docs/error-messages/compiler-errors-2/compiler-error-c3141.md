@@ -16,7 +16,7 @@ Interfaces defined with the [interface (or __interface)](../../cpp/interface.md)
 
 ## Example
 
-The following sample generates C3141:
+The following example generates C3141:
 
 ```cpp
 // C3141.cpp

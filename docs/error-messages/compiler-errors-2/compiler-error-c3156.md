@@ -16,7 +16,7 @@ A function cannot contain the definition, or declaration, of a managed or WinRT 
 
 ## Example
 
-The following sample generates C3156.
+The following example generates C3156.
 
 ```cpp
 // C3156.cpp

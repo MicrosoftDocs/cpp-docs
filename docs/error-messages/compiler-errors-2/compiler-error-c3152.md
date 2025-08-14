@@ -16,7 +16,7 @@ Certain keywords can only be applied to a C++ class.
 
 ## Example
 
-The following sample generates C3152 and shows how to fix it:
+The following example generates C3152 and shows how to fix it:
 
 ```cpp
 // C3152.cpp

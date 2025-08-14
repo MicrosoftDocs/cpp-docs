@@ -18,7 +18,7 @@ For more information, see [User-Defined Attributes](../../extensions/user-define
 
 ## Example
 
-The following sample generates C3133.
+The following example generates C3133.
 
 ```cpp
 // C3133.cpp

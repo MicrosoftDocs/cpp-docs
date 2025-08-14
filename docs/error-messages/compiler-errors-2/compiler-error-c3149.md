@@ -20,7 +20,7 @@ To resolve this error, declare variables of CLR types inside a function or type 
 
 ## Examples
 
-The following sample generates C3149:
+The following example generates C3149:
 
 ```cpp
 // C3149.cpp
@@ -33,7 +33,7 @@ int main() {
 }
 ```
 
-The following sample generates C3149:
+The following example generates C3149:
 
 ```cpp
 // C3149b.cpp

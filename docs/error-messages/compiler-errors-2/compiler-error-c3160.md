@@ -16,7 +16,7 @@ Interior garbage collection pointers may point to the interior of a managed or W
 
 ## Example
 
-The following sample generates C3160:
+The following example generates C3160:
 
 ```cpp
 // C3160.cpp

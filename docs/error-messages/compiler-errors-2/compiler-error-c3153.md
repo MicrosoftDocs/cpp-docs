@@ -16,7 +16,7 @@ An interface cannot be instantiated. To use the members of an interface, derive 
 
 ## Example
 
-The following sample generates C3153:
+The following example generates C3153:
 
 ```cpp
 // C3153.cpp

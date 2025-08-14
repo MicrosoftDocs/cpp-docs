@@ -16,7 +16,7 @@ The [module](../../windows/attributes/module-cpp.md) attribute can only be defin
 
 ## Example
 
-The following sample generates C3140:
+The following example generates C3140:
 
 ```cpp
 // C3140.cpp

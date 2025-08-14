@@ -16,7 +16,7 @@ The <xref:System.ParamArrayAttribute> attribute was applied to a parameter that 
 
 ## Example
 
-The following sample generates C3132:
+The following example generates C3132:
 
 ```cpp
 // C3132.cpp

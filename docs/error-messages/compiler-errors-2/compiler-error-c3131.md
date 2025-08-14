@@ -16,7 +16,7 @@ The [module](../../windows/attributes/module-cpp.md) attribute must have a name 
 
 ## Example
 
-The following sample generates C3131:
+The following example generates C3131:
 
 ```cpp
 // C3131.cpp

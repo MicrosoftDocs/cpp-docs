@@ -16,7 +16,7 @@ An indexed property was declared incorrectly. For more information, see [How to:
 
 ## Example
 
-The following sample generates C3155.
+The following example generates C3155.
 
 ```cpp
 // C3155.cpp

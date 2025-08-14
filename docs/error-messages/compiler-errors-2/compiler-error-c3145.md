@@ -16,7 +16,7 @@ You can only define CLR or WinRT objects within function scope.
 
 ## Examples
 
-The following sample generates C3145 and shows how to fix it:
+The following example generates C3145 and shows how to fix it:
 
 ```cpp
 // C3145.cpp
@@ -39,7 +39,7 @@ int main() {
 }
 ```
 
-The following sample generates C3145:
+The following example generates C3145:
 
 ```cpp
 // C3145b.cpp

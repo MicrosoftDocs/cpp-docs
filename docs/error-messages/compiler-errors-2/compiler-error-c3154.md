@@ -18,7 +18,7 @@ For more information, see [Variable Argument Lists (...) (C++/CLI)](../../extens
 
 ## Example
 
-The following sample generates C3154.
+The following example generates C3154.
 
 ```cpp
 // C3154.cpp
