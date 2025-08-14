@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3101"
 title: "Compiler Error C3101"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3101"
+ms.date: 11/04/2016
 f1_keywords: ["C3101"]
 helpviewer_keywords: ["C3101"]
-ms.assetid: 4f673766-d4f7-4632-94a5-d36a83f7f4b5
 ---
 # Compiler Error C3101
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3113"
 title: "Compiler Error C3113"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3113"
+ms.date: 11/04/2016
 f1_keywords: ["C3113"]
 helpviewer_keywords: ["C3113"]
-ms.assetid: 3afdc668-b29e-474e-9ea3-aa027d42db7c
 ---
 # Compiler Error C3113
 

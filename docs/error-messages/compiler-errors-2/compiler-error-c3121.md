@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3121"
 title: "Compiler Error C3121"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3121"
+ms.date: 11/04/2016
 f1_keywords: ["C3121"]
 helpviewer_keywords: ["C3121"]
-ms.assetid: 1d3c7be4-d42d-4def-8d53-182c0c5cc237
 ---
 # Compiler Error C3121
 

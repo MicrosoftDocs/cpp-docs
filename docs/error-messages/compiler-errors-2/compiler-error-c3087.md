@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3087"
 title: "Compiler Error C3087"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3087"
+ms.date: 11/04/2016
 f1_keywords: ["C3087"]
 helpviewer_keywords: ["C3087"]
-ms.assetid: 4f5bdd52-a853-4f02-b160-6868e9190b9d
 ---
 # Compiler Error C3087
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3126"
 title: "Compiler Error C3126"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3126"
+ms.date: 11/04/2016
 f1_keywords: ["C3126"]
 helpviewer_keywords: ["C3126"]
-ms.assetid: e72658a3-5d85-4a31-89a4-dbc3d475973d
 ---
 # Compiler Error C3126
 

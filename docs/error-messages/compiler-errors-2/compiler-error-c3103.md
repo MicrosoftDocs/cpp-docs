@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3103"
 title: "Compiler Error C3103"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3103"
+ms.date: 11/04/2016
 f1_keywords: ["C3103"]
 helpviewer_keywords: ["C3103"]
-ms.assetid: 7984bd3e-d51d-43e4-b6f4-08c1e9fb9704
 ---
 # Compiler Error C3103
 

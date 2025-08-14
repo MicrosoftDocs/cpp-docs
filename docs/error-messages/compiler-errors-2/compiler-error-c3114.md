@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3114"
 title: "Compiler Error C3114"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3114"
+ms.date: 11/04/2016
 f1_keywords: ["C3114"]
 helpviewer_keywords: ["C3114"]
-ms.assetid: b5d2df4f-87d0-4292-9981-25c6a6013c05
 ---
 # Compiler Error C3114
 

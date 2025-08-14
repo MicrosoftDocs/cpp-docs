@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3116"
 title: "Compiler Error C3116"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3116"
+ms.date: 11/04/2016
 f1_keywords: ["C3116"]
 helpviewer_keywords: ["C3116"]
-ms.assetid: 597463e1-a5cc-4ed3-a917-eae9a61d3312
 ---
 # Compiler Error C3116
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3117"
 title: "Compiler Error C3117"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3117"
+ms.date: 11/04/2016
 f1_keywords: ["C3117"]
 helpviewer_keywords: ["C3117"]
-ms.assetid: dceee392-d4c7-4599-b75e-7aaac7c36fdd
 ---
 # Compiler Error C3117
 

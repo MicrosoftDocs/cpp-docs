@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3099"
 title: "Compiler Error C3099"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3099"
+ms.date: 11/04/2016
 f1_keywords: ["C3099"]
 helpviewer_keywords: ["C3099"]
-ms.assetid: b3dded0f-76c9-42c1-991b-532eb8619661
 ---
 # Compiler Error C3099
 
