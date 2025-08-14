@@ -8,7 +8,7 @@ ms.assetid: b4fd65c3-50cc-46cd-8de0-6a6d24cb9cda
 ---
 # Compiler Error C3141
 
-'interface_name' : interfaces only support public inheritance
+> 'interface_name' : interfaces only support public inheritance
 
 Interfaces defined with the [interface (or __interface)](../../cpp/interface.md) keyword only support public inheritance.
 

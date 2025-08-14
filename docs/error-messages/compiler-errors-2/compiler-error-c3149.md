@@ -8,7 +8,7 @@ ms.assetid: cf6e2616-2f06-46da-8a8a-d449cb481c51
 ---
 # Compiler Error C3149
 
-'type' : cannot use this type here without a top-level 'char'
+> 'type' : cannot use this type here without a top-level 'char'
 
 A declaration was not specified correctly.
 

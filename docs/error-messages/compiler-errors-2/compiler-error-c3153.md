@@ -8,7 +8,7 @@ ms.assetid: d775d97e-2480-484f-81f1-88406b10f947
 ---
 # Compiler Error C3153
 
-'interface' : you cannot create an instance of an interface
+> 'interface' : you cannot create an instance of an interface
 
 An interface cannot be instantiated. To use the members of an interface, derive a class from the interface, implement the interface members, and then use the members.
 

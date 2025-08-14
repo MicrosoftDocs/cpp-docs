@@ -8,7 +8,7 @@ ms.assetid: b04a42e1-64e7-40f8-81fe-c7945348b2cf
 ---
 # Compiler Error C3155
 
-attributes are not allowed in a property indexer
+> attributes are not allowed in a property indexer
 
 An indexed property was declared incorrectly. For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md).
 

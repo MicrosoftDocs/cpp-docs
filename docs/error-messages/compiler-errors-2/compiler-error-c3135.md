@@ -8,6 +8,6 @@ ms.assetid: e92ee007-5a26-47f4-8ef4-339f2d9528d1
 ---
 # Compiler Error C3135
 
-'property' : a property cannot have a 'const' or 'volatile' type
+> 'property' : a property cannot have a 'const' or 'volatile' type
 
 The [const](../../cpp/const-cpp.md) and [volatile](../../cpp/volatile-cpp.md) keywords are not permitted on properties.

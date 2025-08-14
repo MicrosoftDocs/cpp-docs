@@ -8,7 +8,7 @@ ms.assetid: 1876da78-b94e-4af7-9795-28f72b209b3e
 ---
 # Compiler Error C3156
 
-'class' : you cannot have a local definition of a managed or WinRT type
+> 'class' : you cannot have a local definition of a managed or WinRT type
 
 A function cannot contain the definition, or declaration, of a managed or WinRT class, struct, or interface.
 

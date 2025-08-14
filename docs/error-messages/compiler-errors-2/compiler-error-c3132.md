@@ -8,7 +8,7 @@ ms.assetid: d54a3d12-336a-4ed0-ad4e-43cddac33b5e
 ---
 # Compiler Error C3132
 
-'function-parameter' : parameter arrays can only be applied to a formal argument of type 'single-dimensional managed array'
+> 'function-parameter' : parameter arrays can only be applied to a formal argument of type 'single-dimensional managed array'
 
 The <xref:System.ParamArrayAttribute> attribute was applied to a parameter that was not a single-dimension array.
 

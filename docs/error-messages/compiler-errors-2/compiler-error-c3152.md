@@ -8,7 +8,7 @@ ms.assetid: 4ee6e2cd-5d19-4b73-833d-765c35797e4b
 ---
 # Compiler Error C3152
 
-'construct' : 'keyword' can only be applied to a class, struct, or virtual member function
+> 'construct' : 'keyword' can only be applied to a class, struct, or virtual member function
 
 Certain keywords can only be applied to a C++ class.
 

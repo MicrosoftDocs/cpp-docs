@@ -8,7 +8,7 @@ ms.assetid: 78005c74-eaaf-4ac2-88ae-6c25d01a302a
 ---
 # Compiler Error C3154
 
-Expected ',' before ellipsis. Non-comma separated ellipsis not supported on parameter array functions.
+> Expected ',' before ellipsis. Non-comma separated ellipsis not supported on parameter array functions.
 
 A variable argument function was not declared correctly.
 

@@ -8,7 +8,7 @@ ms.assetid: f887e4d2-7740-49e4-9972-7edceb8fa77b
 ---
 # Compiler Error C3134
 
-'value' : value of attribute argument 'attribute' does not have valid type 'type'
+> 'value' : value of attribute argument 'attribute' does not have valid type 'type'
 
 A syntax error was detected when a value was assigned to an attribute.
 

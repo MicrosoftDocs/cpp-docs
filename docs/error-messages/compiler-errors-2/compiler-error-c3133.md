@@ -8,7 +8,7 @@ ms.assetid: 4a709405-b67b-4061-8a2a-19fa5fb34a2a
 ---
 # Compiler Error C3133
 
-Attributes cannot be applied to C++ varargs
+> Attributes cannot be applied to C++ varargs
 
 An attribute was applied incorrectly. Attributes can not be applied to an ellipsis representing variable arguments.
 

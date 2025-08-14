@@ -8,7 +8,7 @@ ms.assetid: 795137ad-d00a-4a9c-9665-0cd8bfb5da8b
 ---
 # Compiler Error C3142
 
-'property_name' : you cannot take the address of a property
+> 'property_name' : you cannot take the address of a property
 
 The address of a property is not available to the developer.
 

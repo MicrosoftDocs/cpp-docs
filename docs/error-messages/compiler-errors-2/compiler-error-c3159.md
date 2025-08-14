@@ -8,7 +8,7 @@ ms.assetid: e115cc76-0021-4568-95fd-61a324c41a85
 ---
 # Compiler Error C3159
 
-'pointer' : array of pointers to value type cannot be declared
+> 'pointer' : array of pointers to value type cannot be declared
 
 An array of pointers to a value type cannot be declared.
 

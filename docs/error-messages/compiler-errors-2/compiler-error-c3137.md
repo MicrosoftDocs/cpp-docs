@@ -8,7 +8,7 @@ ms.assetid: 70bb1313-2e87-43ed-a0d8-33fa6ff475e4
 ---
 # Compiler Error C3137
 
-'property' : a property cannot be initialized
+> 'property' : a property cannot be initialized
 
 A property cannot be initialized, for example, in a constructor's initialization list.
 

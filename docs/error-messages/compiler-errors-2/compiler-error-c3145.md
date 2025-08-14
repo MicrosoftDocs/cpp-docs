@@ -8,7 +8,7 @@ ms.assetid: f165c874-0f51-45c7-85e8-ebe321cbc168
 ---
 # Compiler Error C3145
 
-'object' : global or static variable may not have managed or WinRT type 'type'
+> 'object' : global or static variable may not have managed or WinRT type 'type'
 
 You can only define CLR or WinRT objects within function scope.
 
