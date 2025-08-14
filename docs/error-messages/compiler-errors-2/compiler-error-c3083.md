@@ -10,6 +10,8 @@ ms.assetid: 05ff791d-52bb-41eb-9511-3ef89d7f4710
 
 > '*identifier*': the symbol to the left of a '::' must be a type
 
+## Remarks
+
 A function was called incorrectly.
 
 ## Example
