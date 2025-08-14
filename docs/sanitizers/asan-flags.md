@@ -12,8 +12,6 @@ The following is a list of actively supported options for the AddressSanitizer. 
 > [!NOTE]
 > These descriptions may vary from those found in Clang's ASan docs to account for MSVC specific behaviors.
 
-If you discover documentation errors, report them [here](https://aka.ms/feedback/report?space=62).
-
 
 | Flag | Default value | Description |
 |------|---------------|-------------|
