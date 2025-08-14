@@ -8,7 +8,7 @@ ms.assetid: 7984bd3e-d51d-43e4-b6f4-08c1e9fb9704
 ---
 # Compiler Error C3103
 
-'argument': repeated named argument
+> 'argument': repeated named argument
 
 An attribute can not repeat named arguments.
 

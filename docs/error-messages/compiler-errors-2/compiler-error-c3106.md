@@ -8,7 +8,7 @@ ms.assetid: 39d97a32-0905-4702-87d3-7f8ce473fb93
 ---
 # Compiler Error C3106
 
-'attribute': unnamed arguments must precede named arguments
+> 'attribute': unnamed arguments must precede named arguments
 
 Unnamed arguments must be passed to an attribute before named arguments.
 

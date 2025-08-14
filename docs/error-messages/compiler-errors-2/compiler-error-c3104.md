@@ -8,7 +8,7 @@ ms.assetid: b5648d47-e5d3-4b45-a3c0-f46e04eae731
 ---
 # Compiler Error C3104
 
-illegal attribute argument
+> illegal attribute argument
 
 You specified an invalid argument to an attribute.
 

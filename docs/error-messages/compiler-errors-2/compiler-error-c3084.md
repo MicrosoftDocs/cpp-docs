@@ -8,7 +8,7 @@ ms.assetid: 0362cb70-e24e-476f-a24d-8f5bb97c3afd
 ---
 # Compiler Error C3084
 
-'function': a finalizer/destructor cannot be 'keyword'
+> 'function': a finalizer/destructor cannot be 'keyword'
 
 A finalizer or destructor was declared incorrectly.
 

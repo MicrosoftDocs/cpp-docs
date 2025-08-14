@@ -8,7 +8,7 @@ ms.assetid: 7a9c9eaf-08ef-442d-94a0-e457beee8549
 ---
 # Compiler Error C3100
 
-'target' : unknown attribute qualifier
+> 'target' : unknown attribute qualifier
 
 An invalid attribute target was specified.
 

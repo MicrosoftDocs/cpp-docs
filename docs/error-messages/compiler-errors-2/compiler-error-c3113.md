@@ -8,7 +8,7 @@ ms.assetid: 3afdc668-b29e-474e-9ea3-aa027d42db7c
 ---
 # Compiler Error C3113
 
-an 'structure' cannot be a template/generic
+> an 'structure' cannot be a template/generic
 
 You attempted to make a class template or class generic out of an interface or an enum.
 

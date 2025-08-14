@@ -8,7 +8,7 @@ ms.assetid: 597463e1-a5cc-4ed3-a917-eae9a61d3312
 ---
 # Compiler Error C3116
 
-'storage specifier' : invalid storage class for interface method
+> 'storage specifier' : invalid storage class for interface method
 
 You used **`typedef`**, **`register`**, or **`static`** as the storage class for an interface method. These storage classes are not permitted on interface members.
 

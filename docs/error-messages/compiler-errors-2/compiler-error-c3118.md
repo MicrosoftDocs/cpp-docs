@@ -8,7 +8,7 @@ ms.assetid: 40fbe681-8868-4cb2-a2b2-4db4449319a7
 ---
 # Compiler Error C3118
 
-'interface' : interfaces do not support virtual inheritance
+> 'interface' : interfaces do not support virtual inheritance
 
 You tried to virtually inherit from an interface. For example,
 

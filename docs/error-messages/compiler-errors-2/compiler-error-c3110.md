@@ -8,7 +8,7 @@ ms.assetid: 821dc71f-896e-4b2d-af0e-aa9932934b7b
 ---
 # Compiler Error C3110
 
-'function_name' : you cannot overload a COM interface method
+> 'function_name' : you cannot overload a COM interface method
 
 An interface that is prefaced by an interface attribute, such as:
 

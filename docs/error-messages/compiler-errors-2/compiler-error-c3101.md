@@ -8,7 +8,7 @@ ms.assetid: 4f673766-d4f7-4632-94a5-d36a83f7f4b5
 ---
 # Compiler Error C3101
 
-illegal expression for named attribute argument 'field'
+> illegal expression for named attribute argument 'field'
 
 When initializing a named attribute argument, the value must be a compile time constant.
 

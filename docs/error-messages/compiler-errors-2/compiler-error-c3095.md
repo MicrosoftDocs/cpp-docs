@@ -8,7 +8,7 @@ ms.assetid: cde725be-0936-40f6-9e57-e1d7d0710f83
 ---
 # Compiler Error C3095
 
-'attribute': attribute cannot be repeated
+> 'attribute': attribute cannot be repeated
 
 Some attributes are declared such that, multiple occurrences of the attribute cannot be applied to a target.
 

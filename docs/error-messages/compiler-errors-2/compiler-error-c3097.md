@@ -8,7 +8,7 @@ ms.assetid: b24bd8f8-e04f-4fbb-be57-4feb9165572e
 ---
 # Compiler Error C3097
 
-'attribute': attribute must be scoped with 'assembly:' or 'module:'
+> 'attribute': attribute must be scoped with 'assembly:' or 'module:'
 
 A global attribute was used incorrectly.
 

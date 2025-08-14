@@ -8,7 +8,7 @@ ms.assetid: dceee392-d4c7-4599-b75e-7aaac7c36fdd
 ---
 # Compiler Error C3117
 
-'%$S' : an interface can only have one base class
+> '%$S' : an interface can only have one base class
 
 You declared an interface that inherits from multiple base classes.
 

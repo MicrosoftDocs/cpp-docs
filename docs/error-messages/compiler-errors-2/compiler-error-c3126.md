@@ -8,7 +8,7 @@ ms.assetid: e72658a3-5d85-4a31-89a4-dbc3d475973d
 ---
 # Compiler Error C3126
 
-cannot define a union 'union' inside of managed type 'type'
+> cannot define a union 'union' inside of managed type 'type'
 
 A union cannot be defined inside a managed type.
 

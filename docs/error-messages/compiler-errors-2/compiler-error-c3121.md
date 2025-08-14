@@ -8,7 +8,7 @@ ms.assetid: 1d3c7be4-d42d-4def-8d53-182c0c5cc237
 ---
 # Compiler Error C3121
 
-cannot change GUID for class 'class_name'
+> cannot change GUID for class 'class_name'
 
 You attempted to change the class ID with [__declspec(uuid)](../../cpp/uuid-cpp.md).
 
