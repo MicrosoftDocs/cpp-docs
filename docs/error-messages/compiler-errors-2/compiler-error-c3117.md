@@ -10,7 +10,11 @@ ms.assetid: dceee392-d4c7-4599-b75e-7aaac7c36fdd
 
 > '%$S' : an interface can only have one base class
 
+## Remarks
+
 You declared an interface that inherits from multiple base classes.
+
+## Example
 
 The following sample generates C3117:
 

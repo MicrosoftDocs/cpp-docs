@@ -10,6 +10,8 @@ ms.assetid: b5648d47-e5d3-4b45-a3c0-f46e04eae731
 
 > illegal attribute argument
 
+## Remarks
+
 You specified an invalid argument to an attribute.
 
 See [Attribute Parameter Types](../../extensions/attribute-parameter-types-cpp-component-extensions.md) for more information.

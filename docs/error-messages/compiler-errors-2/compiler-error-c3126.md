@@ -10,7 +10,11 @@ ms.assetid: e72658a3-5d85-4a31-89a4-dbc3d475973d
 
 > cannot define a union 'union' inside of managed type 'type'
 
+## Remarks
+
 A union cannot be defined inside a managed type.
+
+## Example
 
 The following sample generates C3126:
 

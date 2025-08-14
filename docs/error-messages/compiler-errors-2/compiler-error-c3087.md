@@ -10,6 +10,8 @@ ms.assetid: 4f5bdd52-a853-4f02-b160-6868e9190b9d
 
 > 'named_argument': call of 'attribute' already initializes this member
 
+## Remarks
+
 A named argument was specified in the same attribute block as an unnamed argument for the same value. Specify only a named or unnamed argument.
 
 ## Example

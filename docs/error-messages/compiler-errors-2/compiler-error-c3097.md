@@ -10,6 +10,8 @@ ms.assetid: b24bd8f8-e04f-4fbb-be57-4feb9165572e
 
 > 'attribute': attribute must be scoped with 'assembly:' or 'module:'
 
+## Remarks
+
 A global attribute was used incorrectly.
 
 For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).

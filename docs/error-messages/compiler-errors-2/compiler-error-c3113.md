@@ -10,7 +10,11 @@ ms.assetid: 3afdc668-b29e-474e-9ea3-aa027d42db7c
 
 > an 'structure' cannot be a template/generic
 
+## Remarks
+
 You attempted to make a class template or class generic out of an interface or an enum.
+
+## Example
 
 The following sample generates C3113:
 

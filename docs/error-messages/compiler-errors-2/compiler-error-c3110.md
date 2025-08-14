@@ -10,6 +10,8 @@ ms.assetid: 821dc71f-896e-4b2d-af0e-aa9932934b7b
 
 > 'function_name' : you cannot overload a COM interface method
 
+## Remarks
+
 An interface that is prefaced by an interface attribute, such as:
 
 - [custom](../../windows/attributes/custom-cpp.md)
@@ -20,7 +22,11 @@ An interface that is prefaced by an interface attribute, such as:
 
 - [object](../../windows/attributes/object-cpp.md)
 
-cannot be overloaded. For example:
+cannot be overloaded.
+
+## Example
+
+For example:
 
 ```cpp
 // C3110.cpp

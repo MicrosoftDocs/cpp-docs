@@ -10,6 +10,8 @@ ms.assetid: 10da9b7c-e72d-4013-9925-c83e1bb142db
 
 > 'attribute': anonymous usage not allowed
 
+## Remarks
+
 An attribute was not scoped correctly.  For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## Example

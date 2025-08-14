@@ -10,6 +10,8 @@ ms.assetid: 1ac40bf2-f63e-439e-8921-47e6dadc8354
 
 > 'constructor': a constructor cannot be 'keyword'
 
+## Remarks
+
 A constructor was declared incorrectly. See [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md) for more information.
 
 ## Example

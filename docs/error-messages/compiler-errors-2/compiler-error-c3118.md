@@ -10,7 +10,13 @@ ms.assetid: 40fbe681-8868-4cb2-a2b2-4db4449319a7
 
 > 'interface' : interfaces do not support virtual inheritance
 
-You tried to virtually inherit from an interface. For example,
+## Remarks
+
+You tried to virtually inherit from an interface.
+
+## Example
+
+For example,
 
 ```cpp
 // C3118.cpp

@@ -10,6 +10,8 @@ ms.assetid: 51726145-9782-4ec9-84b9-286f366d9cbd
 
 > 'attribute': this attribute is not allowed on 'construct'
 
+## Remarks
+
 An attribute was applied to a construct for which it was not intended.  See [Attributes by Usage](../../windows/attributes/attributes-by-usage.md) for more information.
 
 ## Example
