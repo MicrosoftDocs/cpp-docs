@@ -101,7 +101,7 @@ For an illustration of the alignment requirement and potential issues, see the p
 
 ## Runtime options
 
-The MSVC AddressSanitizer is based on the [Clang AddressSanitizer runtime from the llvm-project repository](https://github.com/llvm/llvm-project). Because of this, most of Clang's ASan runtime options available in MSVC as well. [A complete list of runtime options we support is available here](./asan-flags.md). We document some differences in the sections that follow. If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
+The MSVC AddressSanitizer is a regularly synced fork of the [Clang AddressSanitizer runtime](https://github.com/llvm/llvm-project). As a result, MSVC implicitly inherits many Clang's ASan runtime options. A complete list of options that we actively maintain and test can be found [here](./asan-flags.md). If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
 
 ### Configure runtime options
 
