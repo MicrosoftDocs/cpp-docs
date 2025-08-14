@@ -8,7 +8,7 @@ ms.assetid: 05ff791d-52bb-41eb-9511-3ef89d7f4710
 ---
 # Compiler Error C3083
 
-'function': the symbol to the left of a '::' must be a type
+> '*identifier*': the symbol to the left of a '::' must be a type
 
 A function was called incorrectly.
 
