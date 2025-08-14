@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3059"
 title: "Compiler Error C3059"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3059"
+ms.date: 11/04/2016
 f1_keywords: ["C3059"]
 helpviewer_keywords: ["C3059"]
-ms.assetid: 57220324-8286-4cab-a1ab-45385eb1eae0
 ---
 # Compiler Error C3059
 
-'var' : 'threadprivate' symbol cannot be used in the 'clause' clause
+> 'var' : 'threadprivate' symbol cannot be used in the 'clause' clause
+
+## Remarks
 
 A [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) symbol was used in a clause.
 
-The following sample generates C3059:
+## Example
+
+The following example generates C3059:
 
 ```cpp
 // C3059.cpp
