@@ -12,7 +12,7 @@ items:
       href: ../sanitizers/asan-building.md
     - name: "Runtime reference"
       href: ../sanitizers/asan-runtime.md
-    - name: "AddressSanitizer runtime options"
+    - name: "Runtime options"
       href: ../sanitizers/asan-flags.md
     - name: "Debugger integration"
       href: ../sanitizers/asan-debugger-integration.md
