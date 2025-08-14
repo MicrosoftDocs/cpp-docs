@@ -10,7 +10,7 @@ helpviewer_keywords: ["AddressSanitizer options", "AddressSanitizer flags", "Add
 The following is a list of actively supported options for the AddressSanitizer. They can be enabled through the `ASAN_OPTIONS` environment variable or by overriding the `__asan_default_options()` user function, as described [here](/asan-runtime.md#runtime-options). 
 
 > [!NOTE]
-> These descriptions may vary from those found in Clang's ASan docs to account for MSVC specific behaviors.
+> These descriptions may vary from those in Clang's ASan docs to account for MSVC specific behaviors.
 
 
 | Flag | Default value | Description |
