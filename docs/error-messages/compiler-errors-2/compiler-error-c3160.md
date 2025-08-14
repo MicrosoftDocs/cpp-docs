@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3160"
 title: "Compiler Error C3160"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3160"
+ms.date: 11/04/2016
 f1_keywords: ["C3160"]
 helpviewer_keywords: ["C3160"]
-ms.assetid: a250c433-8adf-43b9-8dee-c3794e09b0a5
 ---
 # Compiler Error C3160
 

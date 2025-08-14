@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3138"
 title: "Compiler Error C3138"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3138"
+ms.date: 11/04/2016
 f1_keywords: ["C3138"]
 helpviewer_keywords: ["C3138"]
-ms.assetid: 364ee9e8-9358-410e-bd35-9c4a226a3753
 ---
 # Compiler Error C3138
 

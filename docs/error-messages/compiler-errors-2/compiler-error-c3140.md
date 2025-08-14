@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3140"
 title: "Compiler Error C3140"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3140"
+ms.date: 11/04/2016
 f1_keywords: ["C3140"]
 helpviewer_keywords: ["C3140"]
-ms.assetid: 122f8943-fac3-4db8-a3a8-2c5d19233de6
 ---
 # Compiler Error C3140
 

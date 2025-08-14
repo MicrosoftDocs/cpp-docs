@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3154"
 title: "Compiler Error C3154"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3154"
+ms.date: 11/04/2016
 f1_keywords: ["C3154"]
 helpviewer_keywords: ["C3154"]
-ms.assetid: 78005c74-eaaf-4ac2-88ae-6c25d01a302a
 ---
 # Compiler Error C3154
 

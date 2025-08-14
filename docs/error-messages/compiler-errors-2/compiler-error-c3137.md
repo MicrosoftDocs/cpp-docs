@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3137"
 title: "Compiler Error C3137"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3137"
+ms.date: 11/04/2016
 f1_keywords: ["C3137"]
 helpviewer_keywords: ["C3137"]
-ms.assetid: 70bb1313-2e87-43ed-a0d8-33fa6ff475e4
 ---
 # Compiler Error C3137
 

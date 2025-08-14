@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3133"
 title: "Compiler Error C3133"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3133"
+ms.date: 11/04/2016
 f1_keywords: ["C3133"]
 helpviewer_keywords: ["C3133"]
-ms.assetid: 4a709405-b67b-4061-8a2a-19fa5fb34a2a
 ---
 # Compiler Error C3133
 

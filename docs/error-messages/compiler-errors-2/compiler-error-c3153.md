@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3153"
 title: "Compiler Error C3153"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3153"
+ms.date: 11/04/2016
 f1_keywords: ["C3153"]
 helpviewer_keywords: ["C3153"]
-ms.assetid: d775d97e-2480-484f-81f1-88406b10f947
 ---
 # Compiler Error C3153
 

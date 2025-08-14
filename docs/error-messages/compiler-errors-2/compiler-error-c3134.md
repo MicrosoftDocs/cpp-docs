@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3134"
 title: "Compiler Error C3134"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3134"
+ms.date: 11/04/2016
 f1_keywords: ["C3134"]
 helpviewer_keywords: ["C3134"]
-ms.assetid: f887e4d2-7740-49e4-9972-7edceb8fa77b
 ---
 # Compiler Error C3134
 

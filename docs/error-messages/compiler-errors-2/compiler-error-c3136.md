@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3136"
 title: "Compiler Error C3136"
-ms.date: "10/03/2018"
+description: "Learn more about: Compiler Error C3136"
+ms.date: 10/03/2018
 f1_keywords: ["C3136"]
 helpviewer_keywords: ["C3136"]
-ms.assetid: c77103cd-00f7-408e-b74b-4f8562039d31
 ---
 # Compiler Error C3136
 

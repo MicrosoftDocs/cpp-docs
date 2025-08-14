@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3156"
 title: "Compiler Error C3156"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3156"
+ms.date: 11/04/2016
 f1_keywords: ["C3156"]
 helpviewer_keywords: ["C3156"]
-ms.assetid: 1876da78-b94e-4af7-9795-28f72b209b3e
 ---
 # Compiler Error C3156
 

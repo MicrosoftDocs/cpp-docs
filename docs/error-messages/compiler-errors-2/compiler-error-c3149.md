@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3149"
 title: "Compiler Error C3149"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3149"
+ms.date: 11/04/2016
 f1_keywords: ["C3149"]
 helpviewer_keywords: ["C3149"]
-ms.assetid: cf6e2616-2f06-46da-8a8a-d449cb481c51
 ---
 # Compiler Error C3149
 
