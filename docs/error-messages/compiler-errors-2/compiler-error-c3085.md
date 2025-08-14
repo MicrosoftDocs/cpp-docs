@@ -16,7 +16,7 @@ A constructor was declared incorrectly. See [Override Specifiers](../../extensio
 
 ## Example
 
-The following sample generates C3085.
+The following example generates C3085.
 
 ```cpp
 // C3085.cpp

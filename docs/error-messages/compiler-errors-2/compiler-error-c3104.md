@@ -20,7 +20,7 @@ This error can be generated as a result of compiler conformance work that was do
 
 ## Examples
 
-The following sample generates C3104.
+The following example generates C3104.
 
 ```cpp
 // C3104a.cpp
@@ -39,7 +39,7 @@ public ref struct ABC : public Attribute {
 ref struct AStruct{};
 ```
 
-The following sample generates C3104.
+The following example generates C3104.
 
 ```cpp
 // C3104b.cpp

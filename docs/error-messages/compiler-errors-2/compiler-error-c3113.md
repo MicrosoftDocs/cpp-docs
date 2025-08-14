@@ -16,7 +16,7 @@ You attempted to make a class template or class generic out of an interface or a
 
 ## Example
 
-The following sample generates C3113:
+The following example generates C3113:
 
 ```cpp
 // C3113.cpp

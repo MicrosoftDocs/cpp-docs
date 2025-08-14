@@ -18,7 +18,7 @@ For more information on attributes, see [User-Defined Attributes](../../extensio
 
 ## Example
 
-The following sample generates C3101.
+The following example generates C3101.
 
 ```cpp
 // C3101.cpp

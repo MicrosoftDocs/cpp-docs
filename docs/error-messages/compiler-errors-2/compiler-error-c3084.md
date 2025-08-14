@@ -18,7 +18,7 @@ For example, a destructor should not be marked as sealed.  The destructor will b
 
 ## Example
 
-The following sample generates C3084.
+The following example generates C3084.
 
 ```cpp
 // C3084.cpp

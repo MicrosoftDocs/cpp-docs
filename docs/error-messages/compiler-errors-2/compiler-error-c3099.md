@@ -18,7 +18,7 @@ For more information about /CLR attributes, see [User-Defined Attributes](../../
 
 ## Example
 
-The following sample generates C3099 and shows how to fix it.
+The following example generates C3099 and shows how to fix it.
 
 ```cpp
 // C3099.cpp

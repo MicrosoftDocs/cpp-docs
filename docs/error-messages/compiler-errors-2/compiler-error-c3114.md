@@ -18,7 +18,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 ## Example
 
-The following sample generates C3114.
+The following example generates C3114.
 
 ```cpp
 // C3114.cpp

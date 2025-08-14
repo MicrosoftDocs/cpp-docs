@@ -16,7 +16,7 @@ A union cannot be defined inside a managed type.
 
 ## Example
 
-The following sample generates C3126:
+The following example generates C3126:
 
 ```cpp
 // C3126_2.cpp

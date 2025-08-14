@@ -16,7 +16,7 @@ You used **`typedef`**, **`register`**, or **`static`** as the storage class for
 
 ## Example
 
-The following sample generates C3116:
+The following example generates C3116:
 
 ```cpp
 // C3116.cpp

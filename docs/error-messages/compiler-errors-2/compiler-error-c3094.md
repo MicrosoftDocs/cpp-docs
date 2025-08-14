@@ -16,7 +16,7 @@ An attribute was not scoped correctly.  For more information, see [User-Defined 
 
 ## Example
 
-The following sample generates C3094.
+The following example generates C3094.
 
 ```cpp
 // C3094.cpp

@@ -16,7 +16,7 @@ A named argument was specified in the same attribute block as an unnamed argumen
 
 ## Example
 
-The following sample generates C3087.
+The following example generates C3087.
 
 ```cpp
 // C3087.cpp
