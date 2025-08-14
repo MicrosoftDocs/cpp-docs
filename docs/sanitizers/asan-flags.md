@@ -42,7 +42,6 @@ If you discover options that are inaccurately documented, we invite you to [repo
 |`help` | `false` | If `true`, ASan prints the flag options to console.|
 |`html_cov_report` | `false` | If `true`, ASan generates a coverage report.|
 |`iat_overwrite`|`error`|`error` - report an error whenever an overwrite is detected, `protect` - attempt to avoid using the overwritten definition, `ignore` - never attempt to correct any overwritten functions. See [iat_overwrite](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
-|`include` | `""` | Read more options from the given file.|
 |`include_if_exists` | `""` | Read more options from the given file (if it exists).|
 |`intercept_memcmp` | `true` | If `true`, uses custom wrappers for memcmp function to find more errors.|
 |`intercept_strpbrk` | `true` | If `true`, uses custom wrappers for strpbrk function to find more errors.|
