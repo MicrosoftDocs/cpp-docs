@@ -64,7 +64,6 @@ If you discover options that are inaccurately documented, we invite you to [repo
 |`print_legend` | `true` | Print the legend for the shadow bytes.|
 |`print_stats` | `false` | Print various statistics after printing an error message or if atexit=1.|
 |`print_summary` | `true` | If `false`, disable printing error summaries in addition to error reports.|
-|`print_suppressions` | `true` | Print matched suppressions at exit.|
 |`protect_shadow_gap` | `true` | If `true`, `mprotect` the shadow gap.|
 |`quarantine_size` | `-1` | Deprecated, please use `quarantine_size_mb`.|
 |`quarantine_size_mb` | `-1` | Size (in Mb) of quarantine used to detect `use-after-free` errors. Lower value may increase the chance of false negatives.|
