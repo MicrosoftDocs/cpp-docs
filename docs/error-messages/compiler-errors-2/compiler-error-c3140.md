@@ -10,7 +10,11 @@ ms.assetid: 122f8943-fac3-4db8-a3a8-2c5d19233de6
 
 > cannot have multiple 'module' attributes in the same compilation unit
 
+## Remarks
+
 The [module](../../windows/attributes/module-cpp.md) attribute can only be defined once per project.
+
+## Example
 
 The following sample generates C3140:
 

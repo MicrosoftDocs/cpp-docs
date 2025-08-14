@@ -10,7 +10,11 @@ ms.assetid: 795137ad-d00a-4a9c-9665-0cd8bfb5da8b
 
 > 'property_name' : you cannot take the address of a property
 
+## Remarks
+
 The address of a property is not available to the developer.
+
+## Example
 
 The following sample generates C3142:
 

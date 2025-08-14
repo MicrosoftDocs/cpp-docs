@@ -10,6 +10,8 @@ ms.assetid: 78005c74-eaaf-4ac2-88ae-6c25d01a302a
 
 > Expected ',' before ellipsis. Non-comma separated ellipsis not supported on parameter array functions.
 
+## Remarks
+
 A variable argument function was not declared correctly.
 
 For more information, see [Variable Argument Lists (...) (C++/CLI)](../../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).

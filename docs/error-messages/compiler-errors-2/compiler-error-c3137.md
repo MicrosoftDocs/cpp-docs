@@ -10,7 +10,11 @@ ms.assetid: 70bb1313-2e87-43ed-a0d8-33fa6ff475e4
 
 > 'property' : a property cannot be initialized
 
+## Remarks
+
 A property cannot be initialized, for example, in a constructor's initialization list.
+
+## Example
 
 The following example generates C3137:
 

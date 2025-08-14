@@ -10,7 +10,13 @@ ms.assetid: 95c92263-10ac-4ff3-b385-6312dd92adbc
 
 > 'struct' : cannot export a UDT without members
 
-You attempted to apply the [export](../../windows/attributes/export.md) attribute to an empty UDT (user-defined type). For example:
+## Remarks
+
+You attempted to apply the [export](../../windows/attributes/export.md) attribute to an empty UDT (user-defined type).
+
+## Example
+
+For example:
 
 ```cpp
 // C3139.cpp

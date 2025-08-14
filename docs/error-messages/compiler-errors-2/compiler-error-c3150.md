@@ -10,6 +10,8 @@ ms.assetid: c1ff28f5-52fe-4fd4-81d0-2e0ad8548631
 
 > 'element' : 'attribute' can only be applied to a class, interface, array or pointer
 
+## Remarks
+
 **`__gc`** can only be used on a class, interface, or array.
 
 C3150 is only reachable using the obsolete compiler option **/clr:oldSyntax**.

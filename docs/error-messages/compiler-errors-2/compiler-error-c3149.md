@@ -10,11 +10,15 @@ ms.assetid: cf6e2616-2f06-46da-8a8a-d449cb481c51
 
 > 'type' : cannot use this type here without a top-level 'char'
 
+## Remarks
+
 A declaration was not specified correctly.
 
 For example, you may have defined a CLR type at global scope and tried to create a variable of the type as part of the definition. Because global variables of CLR types are not allowed, the compiler will generate C3149.
 
 To resolve this error, declare variables of CLR types inside a function or type definition.
+
+## Examples
 
 The following sample generates C3149:
 

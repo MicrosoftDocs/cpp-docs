@@ -10,7 +10,11 @@ ms.assetid: 4ee6e2cd-5d19-4b73-833d-765c35797e4b
 
 > 'construct' : 'keyword' can only be applied to a class, struct, or virtual member function
 
+## Remarks
+
 Certain keywords can only be applied to a C++ class.
+
+## Example
 
 The following sample generates C3152 and shows how to fix it:
 

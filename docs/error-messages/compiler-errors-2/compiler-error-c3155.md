@@ -10,6 +10,8 @@ ms.assetid: b04a42e1-64e7-40f8-81fe-c7945348b2cf
 
 > attributes are not allowed in a property indexer
 
+## Remarks
+
 An indexed property was declared incorrectly. For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md).
 
 ## Example

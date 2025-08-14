@@ -10,6 +10,8 @@ ms.assetid: 4a709405-b67b-4061-8a2a-19fa5fb34a2a
 
 > Attributes cannot be applied to C++ varargs
 
+## Remarks
+
 An attribute was applied incorrectly. Attributes can not be applied to an ellipsis representing variable arguments.
 
 For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).

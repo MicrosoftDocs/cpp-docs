@@ -10,4 +10,6 @@ ms.assetid: fe94d97f-612e-4729-8b2b-b057d84822a1
 
 > ParamArray attribute can only be applied to the last parameter
 
+## Remarks
+
 The <xref:System.ParamArrayAttribute> attribute was applied to the wrong parameter.

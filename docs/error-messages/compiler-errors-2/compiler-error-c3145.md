@@ -10,7 +10,11 @@ ms.assetid: f165c874-0f51-45c7-85e8-ebe321cbc168
 
 > 'object' : global or static variable may not have managed or WinRT type 'type'
 
+## Remarks
+
 You can only define CLR or WinRT objects within function scope.
+
+## Examples
 
 The following sample generates C3145 and shows how to fix it:
 
