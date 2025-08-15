@@ -10,7 +10,11 @@ ms.assetid: f3681266-308e-4990-a979-8eef8920e186
 
 > 'class' : a member using-declaration or access declaration is illegal within a managed or WinRTtype
 
+## Remarks
+
 A [using](../../cpp/using-declaration.md) declaration is invalid within all forms of managed classes.
+
+## Example
 
 The following sample generates C3182 and shows how to fix it.
 

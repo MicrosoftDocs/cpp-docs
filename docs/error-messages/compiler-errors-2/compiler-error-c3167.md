@@ -10,4 +10,6 @@ ms.assetid: 58c25fe7-8562-4a18-ad3f-487f081ff173
 
 > Unable to initialize .NET Framework: make sure it is installed
 
+## Remarks
+
 The .NET Framework is not installed on this computer; install the .NET Framework.

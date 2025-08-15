@@ -10,6 +10,8 @@ ms.assetid: 6cc8d602-8e15-47a7-b1b5-e93e5d50e271
 
 > 'type' : cannot declare local value type
 
+## Remarks
+
 A class can only be declared as a value type at global scope.
 
 ## Example

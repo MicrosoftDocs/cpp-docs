@@ -10,6 +10,8 @@ ms.assetid: 17dcafa3-f416-4e04-a232-f9569218ba75
 
 > '*construct*': attributes inconsistent with previous declaration
 
+## Remarks
+
 The attribute(s) that are applied to a definition conflict with the attribute(s) that are applied to a declaration.
 
 One way to resolve C3163 is to eliminate attributes on the forward declaration. Any attributes on a forward declaration should be less than the attributes on the definition or, at most, equal to them.

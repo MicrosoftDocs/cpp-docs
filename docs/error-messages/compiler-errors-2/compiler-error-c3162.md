@@ -10,6 +10,8 @@ ms.assetid: 0d4c4a24-1456-4191-b7d8-c38cb7b17c32
 
 > 'type' : a reference type which has a destructor cannot be used as the type of static data member 'member'
 
+## Remarks
+
 The common language runtime cannot know when to run a user-defined destructor when the class also contains static member function.
 
 A destructor will never be run unless the object is deleted explicitly.

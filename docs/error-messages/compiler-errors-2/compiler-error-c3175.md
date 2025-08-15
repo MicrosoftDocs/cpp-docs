@@ -10,7 +10,11 @@ ms.assetid: 3f19d513-a05a-4b6c-806f-276fe5c36b90
 
 > 'function1' : cannot call a method of a managed type from unmanaged function 'function2'
 
+## Remarks
+
 Unmanaged functions cannot call member functions of managed classes.
+
+## Example
 
 The following sample generates C3175:
 

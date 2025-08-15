@@ -10,6 +10,8 @@ ms.assetid: 1fe2be85-a343-487b-8476-bf9e257eb29d
 
 > 'interface' : nesting class, struct, union or interface in an interface is illegal; nesting interface in a class, struct or union is illegal
 
+## Remarks
+
 An [__interface](../../cpp/interface.md) can only appear at global scope or within a namespace. A class, struct, or union cannot appear in an interface.
 
 ## Example

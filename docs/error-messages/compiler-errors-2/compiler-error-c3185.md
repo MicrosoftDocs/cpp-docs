@@ -9,7 +9,11 @@ helpviewer_keywords: ["C3185"]
 
 > 'typeid' used on managed or WinRT type 'type', use 'operator' instead
 
+## Remarks
+
 You cannot apply the [typeid](../../cpp/typeid-operator.md) operator to a managed or WinRT type; use [typeid](../../extensions/typeid-cpp-component-extensions.md) instead.
+
+## Example
 
 The following sample generates C3185 and shows how to fix it:
 

@@ -10,7 +10,11 @@ ms.assetid: fe6b3b5a-8196-485f-a45f-0b2e51df4086
 
 > module attribute was not specified
 
+## Remarks
+
 A program that uses Visual C++ attributes did not also use the [module](../../windows/attributes/module-cpp.md) attribute, which is required in any program that uses attributes.
+
+## Example
 
 The following sample generates C3174:
 
