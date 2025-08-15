@@ -24,7 +24,7 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`continue_on_error` | `0` | Allows an application to continue running while reporting unique memory safety errors. `0` - disabled, `1` - output to `stdout`, `2` - output to `stderr`. See [continue_on_error](asan-continue-on-error.md).|
 |`detect_container_overflow` | `true` | If `true`, honor the container overflow  annotations. See [ContainerOverflow](./error-container-overflow.md).|
 |`detect_invalid_pointer_pairs` | `0` | If `1`, the tool detects operations like <, <=, >, >=, and - on invalid pointer pairs, such as pointers that belong to different objects.|
-|`detect_stack_use_after_return` | `false` | If `true`, ASan enables `stack-use-after-return` checking at runtime. Requires `/fsanitize-address-use-after-return`. See [stack-use-after-return](./error-stack-use-after-return.md).|
+|`detect_stack_use_after_return` | `false` | Experimental. If `true`, ASan enables `stack-use-after-return` checking at runtime. Requires `/fsanitize-address-use-after-return`. See [stack-use-after-return](./error-stack-use-after-return.md).|
 |`exitcode` | `1` | Override the program exit status with this value if the tool found an error.|
 |`external_symbolizer_path` | `""` | Path to external symbolizer. If empty, the tool will search `$PATH` for the symbolizer.|
 |`fast_unwind_on_malloc` | `true` | If available, ASan uses the fast frame-pointer-based unwinder on `malloc`/`free`.|
