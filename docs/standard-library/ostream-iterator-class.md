@@ -145,10 +145,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
-*intOut = 10;
+   *intOut = 10;
    intOut++;      // No effect on iterator position
-*intOut = 20;
-*intOut = 30;
+   *intOut = 20;
+   *intOut = 30;
 }
 /* Output:
 Elements written to output stream:
@@ -195,10 +195,10 @@ int main( )
    // standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
-*intOut = 10;
+   *intOut = 10;
    intOut++;      // No effect on iterator position
-*intOut = 20;
-*intOut = 30;
+   *intOut = 20;
+   *intOut = 30;
 }
 /* Output:
 Elements written to output stream:
@@ -249,10 +249,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
-*intOut = 10;
+   *intOut = 10;
    intOut++;      // No effect on iterator position
-*intOut = 20;
-*intOut = 30;
+   *intOut = 20;
+   *intOut = 30;
 }
 /* Output:
 Elements written to output stream:
@@ -304,9 +304,9 @@ int main( )
 
    // ostream_iterator for stream cout
    ostream_iterator<int> intOut ( cout , "\n" );
-*intOut = 10;
+   *intOut = 10;
    intOut++;
-*intOut = 20;
+   *intOut = 20;
    intOut++;
 
    int i;

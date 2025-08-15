@@ -303,7 +303,7 @@ int main( )
    c1_Iter = c1.begin( );
    cout << "The first element of c1 is " << *c1_Iter << endl;
 
-*c1_Iter = 20;
+   *c1_Iter = 20;
    c1_Iter = c1.begin( );
    cout << "The first element of c1 is now " << *c1_Iter << endl;
 
@@ -851,7 +851,7 @@ int main( )
    cout << "The last integer of c1 is " << *c1_Iter << endl;
 
    c1_Iter--;
-*c1_Iter = 400;
+   *c1_Iter = 400;
    cout << "The new next-to-last integer of c1 is "
         << *c1_Iter << endl;
 
@@ -1754,7 +1754,7 @@ int main( )
    cout << endl;
 
    c1_rIter = c1.rbegin( );
-*c1_rIter = 40;
+   *c1_rIter = 40;
    cout << "The last element in the list is now " << *c1_rIter << "." << endl;
 }
 ```

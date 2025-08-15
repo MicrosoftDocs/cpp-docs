@@ -354,7 +354,7 @@ int main( )
    c1_Iter = c1.begin( );
    cout << "The first element of c1 is " << *c1_Iter << endl;
 
-*c1_Iter = 20;
+   *c1_Iter = 20;
    c1_Iter = c1.begin( );
    cout << "The first element of c1 is now " << *c1_Iter << endl;
 
@@ -1604,7 +1604,7 @@ template<typename MyDeque> struct S<MyDeque&&> {
     MyDeque::const_iterator iter;
     for (iter = d.cbegin(); iter != d.cend(); iter++)
        cout << *iter << " ";
-cout << " via unnamed rvalue reference " << endl;
+    cout << " via unnamed rvalue reference " << endl;
   }
 };
 

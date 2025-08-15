@@ -254,11 +254,11 @@ int main( )
 
    list<int> L1;
    front_insert_iterator<list<int> > iter ( L1 );
-*iter = 10;
+   *iter = 10;
    iter++;
-*iter = 20;
+   *iter = 20;
    iter++;
-*iter = 30;
+   *iter = 30;
    iter++;
 
    list <int>::iterator vIter;
@@ -316,11 +316,11 @@ int main( )
 
    list<int> L1;
    front_insert_iterator<list<int> > iter ( L1 );
-*iter = 10;
+   *iter = 10;
    iter++;
-*iter = 20;
+   *iter = 20;
    iter++;
-*iter = 30;
+   *iter = 30;
    iter++;
 
    list <int>::iterator vIter;

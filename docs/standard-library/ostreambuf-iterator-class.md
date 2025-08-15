@@ -99,11 +99,11 @@ int main( )
    // elements to the output streambuf:
    cout << "The characters written to the output stream\n"
         << " by charOutBuf are: ";
-*charOutBuf = 'O';
+   *charOutBuf = 'O';
    charOutBuf++;
-*charOutBuf = 'U';
+   *charOutBuf = 'U';
    charOutBuf++;
-*charOutBuf = 'T';
+   *charOutBuf = 'T';
    charOutBuf++;
    cout << "." << endl;
 }
@@ -145,11 +145,11 @@ int main( )
    // ostreambuf_iterator for stream cout
    ostreambuf_iterator<char> charOut ( cout );
 
-*charOut = 'a';
+   *charOut = 'a';
    charOut ++;
-*charOut  = 'b';
+   *charOut  = 'b';
    charOut ++;
-*charOut = 'c';
+   *charOut = 'c';
    cout << " are characters output individually." << endl;
 
    bool b1 = charOut.failed ( );
@@ -200,10 +200,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
-*charOutBuf = 'O';
+   *charOutBuf = 'O';
    charOutBuf++;   // no effect on iterator position
-*charOutBuf = 'U';
-*charOutBuf = 'T';
+   *charOutBuf = 'U';
+   *charOutBuf = 'T';
 }
 /* Output:
 Elements written to output stream:
@@ -248,10 +248,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
-*charOutBuf = 'O';
+   *charOutBuf = 'O';
    charOutBuf++;      // No effect on iterator position
-*charOutBuf = 'U';
-*charOutBuf = 'T';
+   *charOutBuf = 'U';
+   *charOutBuf = 'T';
 }
 /* Output:
 Elements written to output stream:
@@ -300,10 +300,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
-*charOutBuf = 'O';
+   *charOutBuf = 'O';
    charOutBuf++;      // No effect on iterator position
-*charOutBuf = 'U';
-*charOutBuf = 'T';
+   *charOutBuf = 'U';
+   *charOutBuf = 'T';
 }
 /* Output:
 Elements written to output stream:
@@ -350,11 +350,11 @@ int main( )
    // ostreambuf_iterator for stream cout
    ostreambuf_iterator<char> charOut ( cout );
 
-*charOut = 'O';
+   *charOut = 'O';
    charOut ++;
-*charOut  = 'U';
+   *charOut  = 'U';
    charOut ++;
-*charOut = 'T';
+   *charOut = 'T';
    cout << " are characters output individually." << endl;
 
    ostreambuf_iterator<char> strOut ( cout );
@@ -435,11 +435,11 @@ int main( )
    // elements to the output streambuf:
    cout << "The characters written to the output stream\n"
         << " by charOutBuf are: ";
-*charOutBuf = 'O';
+   *charOutBuf = 'O';
    charOutBuf++;
-*charOutBuf = 'U';
+   *charOutBuf = 'U';
    charOutBuf++;
-*charOutBuf = 'T';
+   *charOutBuf = 'T';
    charOutBuf++;
    cout << "." << endl;
 }

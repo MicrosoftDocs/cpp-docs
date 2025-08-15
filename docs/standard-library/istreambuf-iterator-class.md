@@ -341,7 +341,7 @@ int main( )
    ostreambuf_iterator<char> outpos ( cout );
    while ( inpos != endpos )
    {
-*outpos = *inpos;
+      *outpos = *inpos;
       ++inpos;   //Increment istreambuf_iterator
       ++outpos;
    }

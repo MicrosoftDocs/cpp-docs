@@ -80,7 +80,7 @@ int main() {
 
    cout << "Original vector v1 = ( " ;
    for ( Iter1 = v1.begin() ; Iter1 != v1.end() ; Iter1++ )
-cout << Iter1->m_i << " ";
+      cout << Iter1->m_i << " ";
    cout << ")" << endl;
 
    // To sort in ascending order,
@@ -88,7 +88,7 @@ cout << Iter1->m_i << " ";
 
    cout << "Sorted vector v1 = ( " ;
    for ( Iter1 = v1.begin() ; Iter1 != v1.end() ; Iter1++ )
-cout << Iter1->m_i << " ";
+      cout << Iter1->m_i << " ";
    cout << ")" << endl;
 }
 ```

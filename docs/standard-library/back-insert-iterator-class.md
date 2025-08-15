@@ -103,9 +103,9 @@ int main( )
 
    // Alternatively, insertions can be done with template function
    back_insert_iterator<vector<int> > backiter ( vec );
-*backiter = 600;
+   *backiter = 600;
    backiter++;
-*backiter = 700;
+   *backiter = 700;
 
    cout << "After the insertions, the vector vec is: ( ";
    for ( vIter = vec.begin ( ) ; vIter != vec.end ( ); vIter++)
@@ -216,9 +216,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
-*backiter = 10;
+   *backiter = 10;
    backiter++;      // Increment to the next element
-*backiter = 20;
+   *backiter = 20;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
@@ -277,9 +277,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
-*backiter = 30;
+   *backiter = 30;
    backiter++;      // Increment to the next element
-*backiter = 40;
+   *backiter = 40;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
@@ -349,9 +349,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
-*backiter = 10;
+   *backiter = 10;
    backiter++;      // Increment to the next element
-*backiter = 20;
+   *backiter = 20;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
