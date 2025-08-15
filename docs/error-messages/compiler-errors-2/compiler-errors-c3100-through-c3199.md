@@ -102,7 +102,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C3184 | Obsolete. |
 | [Compiler error C3185](compiler-error-c3185.md) | 'typeid': used on managed/WinRT type '*type*', use '*operator*' instead |
 | Compiler error C3186 | Obsolete. |
-| [Compiler error C3187](compiler-error-c3187.md) | '*identifier*': is only available within the body of a function |
+| [Compiler error C3187](compiler-error-c3187.md) | '`__func__`': is only available within the body of a function |
 | Compiler error C3188 | Obsolete. |
 | [Compiler error C3189](compiler-error-c3189.md) | 'typeid<*declarator*>': this syntax is no longer supported, use::typeid instead (Obsolete in Visual Studio 2022.) |
 | [Compiler error C3190](compiler-error-c3190.md) | '*declarator*' with the provided template arguments is not the explicit instantiation of any member function of '*type*' |

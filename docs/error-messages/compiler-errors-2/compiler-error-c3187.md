@@ -8,7 +8,7 @@ ms.assetid: 9d2ebf55-1a6a-4087-bf5b-5274baae6351
 ---
 # Compiler Error C3187
 
-> '`__func__`' : is only available within the body of a function
+> '`__func__`': is only available within the body of a function
 
 ## Remarks
 
