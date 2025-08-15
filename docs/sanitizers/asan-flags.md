@@ -31,7 +31,7 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`disable_coredump` | `true`/`false` (on non-64-bit systems) | Disables core dumping. By default, the tool sets `disable_coredump=1` on 64-bit systems to prevent dumping a 16T+ core file. The tool ignores this flag on operating systems that don't dump core by default and for sanitizers that don't reserve large amounts of virtual memory.|
 |`exitcode` | `1` | Override the program exit status with this value if the tool found an error.|
 |`external_symbolizer_path` | `""` | Path to external symbolizer. If empty, the tool will search `$PATH` for the symbolizer.|
-|`fast_unwind_on_malloc` | `true` | If available, the tool uses the fast frame-pointer-based unwinder on `malloc`/`free`.|
+|`fast_unwind_on_malloc` | `true` | If available, ASan uses the fast frame-pointer-based unwinder on `malloc`/`free`.|
 |`full_address_space` | `false` | Sanitize complete address space; by default kernel area on 32-bit platforms will not be sanitized.|
 |`halt_on_error` | `true` | Exit/abort the program after printing the first error report (May cause undefined behavior, use `continue_on_error` for full support).|
 |`handle_segv` | `true` | `false` - ASan will not handle `SEGV` errors, `true` - ASan handles `SEGV` errors.|
