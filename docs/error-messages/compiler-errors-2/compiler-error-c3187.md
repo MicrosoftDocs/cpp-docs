@@ -27,3 +27,7 @@ auto global = __func__;   // C3187, usage in global scope
 
 void func(const char* f = __func__);   // C3187, usage in parameter list
 ```
+
+## See also
+
+[C2457](../compiler-errors-1/compiler-error-c2457.md)
