@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3168"
 title: "Compiler Error C3168"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3168"
+ms.date: 11/04/2016
 f1_keywords: ["C3168"]
 helpviewer_keywords: ["C3168"]
-ms.assetid: 4c36fcfb-c351-48ff-b4eb-78d2aa1b4d55
 ---
 # Compiler Error C3168
 

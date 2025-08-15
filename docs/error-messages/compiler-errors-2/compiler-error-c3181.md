@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3181"
 title: "Compiler Error C3181"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3181"
+ms.date: 11/04/2016
 f1_keywords: ["C3181"]
 helpviewer_keywords: ["C3181"]
-ms.assetid: 5d450f8b-6cef-4452-a0c4-2076e967451d
 ---
 # Compiler Error C3181
 

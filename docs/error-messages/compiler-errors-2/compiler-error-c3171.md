@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3171"
 title: "Compiler Error C3171"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3171"
+ms.date: 11/04/2016
 f1_keywords: ["C3171"]
 helpviewer_keywords: ["C3171"]
-ms.assetid: 1ce26997-7ef1-4c9f-84da-003ea1a4251e
 ---
 # Compiler Error C3171
 

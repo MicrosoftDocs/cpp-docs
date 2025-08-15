@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3172"
 title: "Compiler Error C3172"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3172"
+ms.date: 11/04/2016
 f1_keywords: ["C3172"]
 helpviewer_keywords: ["C3172"]
-ms.assetid: 1834e2fd-6036-4c33-aff2-b51bc7c99441
 ---
 # Compiler Error C3172
 

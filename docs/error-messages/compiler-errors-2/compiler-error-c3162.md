@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3162"
 title: "Compiler Error C3162"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3162"
+ms.date: 11/04/2016
 f1_keywords: ["C3162"]
 helpviewer_keywords: ["C3162"]
-ms.assetid: 0d4c4a24-1456-4191-b7d8-c38cb7b17c32
 ---
 # Compiler Error C3162
 

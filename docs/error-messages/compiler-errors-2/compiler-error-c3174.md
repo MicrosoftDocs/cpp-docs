@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3174"
 title: "Compiler Error C3174"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3174"
+ms.date: 11/04/2016
 f1_keywords: ["C3174"]
 helpviewer_keywords: ["C3174"]
-ms.assetid: fe6b3b5a-8196-485f-a45f-0b2e51df4086
 ---
 # Compiler Error C3174
 

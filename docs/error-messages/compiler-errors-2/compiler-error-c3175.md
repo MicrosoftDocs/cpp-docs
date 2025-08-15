@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3175"
 title: "Compiler Error C3175"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3175"
+ms.date: 11/04/2016
 f1_keywords: ["C3175"]
 helpviewer_keywords: ["C3175"]
-ms.assetid: 3f19d513-a05a-4b6c-806f-276fe5c36b90
 ---
 # Compiler Error C3175
 

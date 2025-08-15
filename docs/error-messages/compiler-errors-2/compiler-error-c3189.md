@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3189"
 title: "Compiler Error C3189"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3189"
+ms.date: 11/04/2016
 f1_keywords: ["C3189"]
 helpviewer_keywords: ["C3189"]
-ms.assetid: b254de79-931e-4a59-a9f4-1c690d90ca5e
 ---
 # Compiler Error C3189
 

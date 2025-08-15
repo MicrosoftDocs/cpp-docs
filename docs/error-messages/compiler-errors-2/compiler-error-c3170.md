@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3170"
 title: "Compiler Error C3170"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3170"
+ms.date: 11/04/2016
 f1_keywords: ["C3170"]
 helpviewer_keywords: ["C3170"]
-ms.assetid: ca9a59d6-7df3-42f0-b028-c09d0af3ac2a
 ---
 # Compiler Error C3170
 
