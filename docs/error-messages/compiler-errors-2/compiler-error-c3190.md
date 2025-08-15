@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3190"
 title: "Compiler Error C3190"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3190"
+ms.date: 11/04/2016
 f1_keywords: ["C3190"]
 helpviewer_keywords: ["C3190"]
-ms.assetid: 7c701afa-85a7-4f7a-8881-0662436ac244
 ---
 # Compiler Error C3190
 
-'instantiation' with the provided template arguments is not the explicit instantiation of any member function of 'type'
+> 'instantiation' with the provided template arguments is not the explicit instantiation of any member function of 'type'
+
+## Remarks
 
 The compiler detected an attempt to make an explicit function instantiation; however, the provided type arguments do not match any of the possible functions.
 
-The following sample generates C3190:
+## Example
+
+The following example generates C3190:
 
 ```cpp
 // C3190.cpp
