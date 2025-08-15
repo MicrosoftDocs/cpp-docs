@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: ostreambuf_iterator Class"
 title: "ostreambuf_iterator Class"
-ms.date: "11/04/2016"
+description: "Learn more about: ostreambuf_iterator Class"
+ms.date: 11/04/2016
 f1_keywords: ["streambuf/std::ostreambuf_iterator", "iterator/std::ostreambuf_iterator::char_type", "iterator/std::ostreambuf_iterator::ostream_type", "iterator/std::ostreambuf_iterator::streambuf_type", "iterator/std::ostreambuf_iterator::traits_type", "iterator/std::ostreambuf_iterator::failed"]
 helpviewer_keywords: ["std::ostreambuf_iterator [C++]", "std::ostreambuf_iterator [C++], char_type", "std::ostreambuf_iterator [C++], ostream_type", "std::ostreambuf_iterator [C++], streambuf_type", "std::ostreambuf_iterator [C++], traits_type", "std::ostreambuf_iterator [C++], failed"]
-ms.assetid: dad1e624-2f45-4e94-8887-a885e95f9071
 ---
 # ostreambuf_iterator Class
 

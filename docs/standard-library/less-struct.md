@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: less Struct"
 title: "less Struct"
-ms.date: "11/04/2016"
+description: "Learn more about: less Struct"
+ms.date: 11/04/2016
 f1_keywords: ["functional/std::less"]
 helpviewer_keywords: ["less struct", "less function"]
-ms.assetid: 39349da3-11cd-4774-b2cc-b46af5aae5d7
 ---
 # less Struct
 
