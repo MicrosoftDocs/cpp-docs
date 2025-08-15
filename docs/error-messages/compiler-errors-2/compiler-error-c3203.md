@@ -17,6 +17,8 @@ This error can be generated as a result of compiler conformance work that was do
 
 ## Examples
 
+The following example generates C3203:
+
 ```cpp
 // C3203.cpp
 template< typename T >

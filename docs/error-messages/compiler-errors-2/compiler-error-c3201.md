@@ -15,6 +15,8 @@ You passed a class template in the argument to a class template that does not ta
 
 ## Example
 
+The following example generates C3201:
+
 ```cpp
 // C3201.cpp
 template<typename T1, typename T2>
