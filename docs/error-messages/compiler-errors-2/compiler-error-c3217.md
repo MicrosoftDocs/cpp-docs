@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3217"
 title: "Compiler Error C3217"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3217"
+ms.date: 11/04/2016
 f1_keywords: ["C3217"]
 helpviewer_keywords: ["C3217"]
-ms.assetid: 99070417-c23a-4d82-bdd2-04be1a07adea
 ---
 # Compiler Error C3217
 

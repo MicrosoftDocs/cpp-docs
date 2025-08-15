@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3200"
 title: "Compiler Error C3200"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3200"
+ms.date: 11/04/2016
 f1_keywords: ["C3200"]
 helpviewer_keywords: ["C3200"]
-ms.assetid: 44bb5e77-f0ec-421c-a732-b9ee7c0a3529
 ---
 # Compiler Error C3200
 

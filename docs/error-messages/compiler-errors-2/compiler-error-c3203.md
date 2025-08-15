@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3203"
 title: "Compiler Error C3203"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3203"
+ms.date: 11/04/2016
 f1_keywords: ["C3203"]
 helpviewer_keywords: ["C3203"]
-ms.assetid: 6356770e-22c1-434c-91fe-f60b0aa23b91
 ---
 # Compiler Error C3203
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3194"
 title: "Compiler Error C3194"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3194"
+ms.date: 11/04/2016
 f1_keywords: ["C3194"]
 helpviewer_keywords: ["C3194"]
-ms.assetid: 49d3ffc6-eff6-4b46-865b-18811692a8bb
 ---
 # Compiler Error C3194
 

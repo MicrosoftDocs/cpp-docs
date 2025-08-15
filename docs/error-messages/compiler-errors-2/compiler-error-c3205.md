@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3205"
 title: "Compiler Error C3205"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3205"
+ms.date: 11/04/2016
 f1_keywords: ["C3205"]
 helpviewer_keywords: ["C3205"]
-ms.assetid: 802d306e-5ff3-4491-8a22-c5f1c072d005
 ---
 # Compiler Error C3205
 

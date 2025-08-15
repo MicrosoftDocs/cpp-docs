@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3201"
 title: "Compiler Error C3201"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3201"
+ms.date: 11/04/2016
 f1_keywords: ["C3201"]
 helpviewer_keywords: ["C3201"]
-ms.assetid: ec19cd64-1789-40a3-b2db-dff2852b9d98
 ---
 # Compiler Error C3201
 
