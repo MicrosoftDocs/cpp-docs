@@ -17,22 +17,18 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |------|---------------|-------------|
 |`abort_on_error` | `false` | If `true`, ASan calls `abort()` instead of `_exit()` after printing the error report.|
 |`alloc_dealloc_mismatch` | `false` | Enables detection of mismatched memory operations such as `malloc`/`delete`, `new[]`/`free`, etc.|
-
 |`allocator_frees_and_returns_null_on_realloc_zero` | `1` | 1 - realloc(p, 0) is equivalent to free(p). 0 - realloc(p, 0) will return a non-`NULL` value.|
 |`allocator_may_return_null` | `false` | If `true`, the allocator will return `nullptr` and fail when out of memory instead of crashing.|
 |`allocator_release_to_os_interval_ms` | `-1` | Experimental. 64-bit allocator only. Specify minimum time interval in ms between attempts to release memory.|
 |`allow_user_poisoning` | `true` | If `true`, you may manually mark memory regions as poisoned or unpoisoned.|
-|`atexit` | `false` | If `true`, prints ASan exit stats even after program terminates successfully.|
 |`check_initialization_order` | `false` | If `true`, attempts to catch initialization order issues.|
 |`continue_on_error` | `0` | Allows an application to continue running while reporting unique memory safety errors. `0` - disabled, `1` - output to `stdout`, `2` - output to `stderr`. See [continue_on_error](asan-continue-on-error.md).|
 |`detect_container_overflow` | `true` | If `true`, honor the container overflow  annotations. See [ContainerOverflow](./error-container-overflow.md).|
 |`detect_invalid_pointer_pairs` | `0` | If >`0`, the tool detects operations like <, <=, >, >=, and - on invalid pointer pairs, such as pointers that belong to different objects. Higher values increase detection effort.|
 |`detect_stack_use_after_return` | `false` | Enables `stack-use-after-return` checking at runtime. Requires `/fsanitize-address-use-after-return`. See [stack-use-after-return](./error-stack-use-after-return.md).|
-|`disable_coredump` | `true`/`false` (on non-64-bit systems) | Disables core dumping. By default, the tool sets `disable_coredump=1` on 64-bit systems to prevent dumping a 16T+ core file. The tool ignores this flag on operating systems that don't dump core by default and for sanitizers that don't reserve large amounts of virtual memory.|
 |`exitcode` | `1` | Override the program exit status with this value if the tool found an error.|
 |`external_symbolizer_path` | `""` | Path to external symbolizer. If empty, the tool will search `$PATH` for the symbolizer.|
 |`fast_unwind_on_malloc` | `true` | If available, ASan uses the fast frame-pointer-based unwinder on `malloc`/`free`.|
-|`full_address_space` | `false` | Sanitize complete address space; by default kernel area on 32-bit platforms will not be sanitized.|
 |`halt_on_error` | `true` | Exit/abort the program after printing the first error report (May cause undefined behavior, use `continue_on_error` for full support).|
 |`handle_segv` | `true` | `false` - ASan will not handle `SEGV` errors, `true` - ASan handles `SEGV` errors.|
 |`handle_sigfpe` | `true` | `false` - ASan will not handle `SIGFPE` errors, `true` - ASan will handle `SIGFPE` errors.|
@@ -43,9 +39,6 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`intercept_strpbrk` | `true` | If `true`, uses custom wrappers for strpbrk function to find more errors.|
 |`intercept_strspn` | `true` | If `true`, uses custom wrappers for strspn and strcspn function to find more errors.|
 |`intercept_strstr` | `true` | If `true`, uses custom wrappers for strstr and strcasestr functions to find more errors.|
-|`log_exe_name` | `false` | Mention name of executable when reporting error and append executable name to logs (as in `log_path.exe_name.pid`).|
-|`log_path` | `stderr` | Write logs to `log_path.pid`. The special values are `stdout` and `stderr`. The default is `stderr`.|
-|`log_to_syslog` | `false` | Write all sanitizer output to syslog in addition to other means of logging.|
 |`malloc_context_size` | `1` | Max number of stack frames kept for each allocation/deallocation.|
 |`malloc_fill_byte` | `0xbe` | Value used to fill the newly allocated memory.|
 |`max_malloc_fill_size` | `4096` | ASan allocator flag. `max_malloc_fill_size` is the maximal amount of bytes that will be filled with `malloc_fill_byte` on `malloc`.|
