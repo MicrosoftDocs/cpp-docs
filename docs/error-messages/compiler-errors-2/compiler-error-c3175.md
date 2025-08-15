@@ -16,7 +16,7 @@ Unmanaged functions cannot call member functions of managed classes.
 
 ## Example
 
-The following sample generates C3175:
+The following example generates C3175:
 
 ```cpp
 // C3175_2.cpp

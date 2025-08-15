@@ -16,7 +16,7 @@ The compiler detected an attempt to make an explicit function instantiation; how
 
 ## Example
 
-The following sample generates C3190:
+The following example generates C3190:
 
 ```cpp
 // C3190.cpp

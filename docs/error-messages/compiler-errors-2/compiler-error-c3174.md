@@ -16,7 +16,7 @@ A program that uses Visual C++ attributes did not also use the [module](../../wi
 
 ## Example
 
-The following sample generates C3174:
+The following example generates C3174:
 
 ```cpp
 // C3174.cpp

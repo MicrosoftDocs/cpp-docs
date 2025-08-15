@@ -16,7 +16,7 @@ The underlying type you specified for the **`enum`** type was not valid. The und
 
 ## Example
 
-The following sample generates C3168:
+The following example generates C3168:
 
 ```cpp
 // C3168.cpp

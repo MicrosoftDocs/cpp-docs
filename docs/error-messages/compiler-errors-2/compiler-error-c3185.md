@@ -15,7 +15,7 @@ You cannot apply the [typeid](../../cpp/typeid-operator.md) operator to a manage
 
 ## Example
 
-The following sample generates C3185 and shows how to fix it:
+The following example generates C3185 and shows how to fix it:
 
 ```cpp
 // C3185a.cpp

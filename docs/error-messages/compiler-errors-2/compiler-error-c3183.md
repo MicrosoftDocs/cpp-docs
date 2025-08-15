@@ -16,7 +16,7 @@ A type that is embedded in a managed or WinRT type must be named.
 
 ## Example
 
-The following sample generates C3183:
+The following example generates C3183:
 
 ```cpp
 // C3183a.cpp

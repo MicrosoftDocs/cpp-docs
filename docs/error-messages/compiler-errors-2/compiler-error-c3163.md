@@ -20,7 +20,7 @@ A possible cause of the C3163 error involves the Microsoft source code annotatio
 
 ## Example
 
-The following sample generates C3163.
+The following example generates C3163.
 
 ```cpp
 // C3163.cpp

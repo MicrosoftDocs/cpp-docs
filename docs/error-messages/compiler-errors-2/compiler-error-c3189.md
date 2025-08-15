@@ -18,7 +18,7 @@ This error is obsolete in Visual Studio 2022 and later versions.
 
 ## Example
 
-The following sample generates C3189:
+The following example generates C3189:
 
 ```cpp
 // C3189.cpp

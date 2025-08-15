@@ -24,7 +24,7 @@ For more information, see,
 
 ## Example
 
-The following sample generates C3162.
+The following example generates C3162.
 
 ```cpp
 // C3162.cpp

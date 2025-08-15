@@ -16,7 +16,7 @@ A class can only be declared as a value type at global scope.
 
 ## Example
 
-The following sample generates C3176.
+The following example generates C3176.
 
 ```cpp
 // C3176.cpp

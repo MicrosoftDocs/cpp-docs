@@ -18,7 +18,7 @@ Note that the compiler uses aliases for native types that map to types in the co
 
 ## Example
 
-The following sample generates C3181:
+The following example generates C3181:
 
 ```cpp
 // C3181a.cpp
