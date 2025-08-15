@@ -12,6 +12,6 @@ ms.assetid: 9d2ebf55-1a6a-4087-bf5b-5274baae6351
 
 ## Remarks
 
-The predefined macro is not available outside the body of a function.
+The predefined identifier [`__func__`](../../cpp/func.md) is not available outside the body of a function.
 
-To correct this error, move the macro inside the body of a function.
+To correct this error, move the identifier inside the body of a function.
