@@ -8,7 +8,7 @@ ms.assetid: 6356770e-22c1-434c-91fe-f60b0aa23b91
 ---
 # Compiler Error C3203
 
-'type' : unspecialized class template or generic can't be used as a template or generic argument for template or generic parameter 'param', expected a real type
+> 'type' : unspecialized class template or generic can't be used as a template or generic argument for template or generic parameter 'param', expected a real type
 
 You passed an invalid argument to a class template or generic. The class template or generic expects a type as a parameter.
 

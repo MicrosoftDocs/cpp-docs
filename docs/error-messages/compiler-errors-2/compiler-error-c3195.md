@@ -8,7 +8,7 @@ ms.assetid: 97e4f681-812b-49e8-ba57-24b7817e3cd8
 ---
 # Compiler Error C3195
 
-'operator' : is reserved and cannot be used as a member of a ref class or value type. CLR or WinRT operators must be defined using the 'operator' keyword
+> 'operator' : is reserved and cannot be used as a member of a ref class or value type. CLR or WinRT operators must be defined using the 'operator' keyword
 
 The compiler detected an operator definition using the Managed Extensions for C++ syntax. You must use the C++ syntax for operators.
 

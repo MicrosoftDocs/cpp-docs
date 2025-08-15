@@ -8,7 +8,7 @@ ms.assetid: 6d060bfe-52cf-4599-8f70-bdeb5a670df3
 ---
 # Compiler Error C3208
 
-'function' : template parameter list for class template 'class' does not match template parameter list for template template parameter 'parameter'
+> 'function' : template parameter list for class template 'class' does not match template parameter list for template template parameter 'parameter'
 
 A template template parameter does not have the same number of template parameters as the provided class template.
 

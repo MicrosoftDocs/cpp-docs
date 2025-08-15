@@ -8,7 +8,7 @@ ms.assetid: c6e9d309-fabc-4e7d-b526-be20d9fe3f6a
 ---
 # Compiler Error C3210
 
-'type' : access declaration can only be applied to a base class member
+> 'type' : access declaration can only be applied to a base class member
 
 A [using declaration](../../cpp/using-declaration.md) was specified incorrectly.
 

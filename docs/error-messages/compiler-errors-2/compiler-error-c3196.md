@@ -8,7 +8,7 @@ ms.assetid: d9c38a13-191d-472d-aa2b-f61a6459d16c
 ---
 # Compiler Error C3196
 
-'keyword' : used more than once
+> 'keyword' : used more than once
 
 A keyword was used more than once.
 

@@ -8,7 +8,7 @@ ms.assetid: 0eea19e0-503e-4e07-ae8b-2cb2e95922cd
 ---
 # Compiler Error C3218
 
-'type' : type not allowed as a constraint
+> 'type' : type not allowed as a constraint
 
 For a type to be a constraint, it must be either a value type or reference to a managed class or interface.
 

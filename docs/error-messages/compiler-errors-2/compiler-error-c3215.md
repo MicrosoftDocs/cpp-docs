@@ -8,7 +8,7 @@ ms.assetid: d0d16007-8885-42e0-b086-2d3a61f348c5
 ---
 # Compiler Error C3215
 
-'type1' : generic type parameter already constrained by 'type2'
+> 'type1' : generic type parameter already constrained by 'type2'
 
 A constraint was specified more than once.
 

@@ -8,7 +8,7 @@ ms.assetid: 4e385c3b-222e-425c-9612-46e83ed41650
 ---
 # Compiler Error C3197
 
-'keyword' : can only be used in definitions
+> 'keyword' : can only be used in definitions
 
 A keyword was used in a declaration but is only valid in a definition.
 

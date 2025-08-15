@@ -8,7 +8,7 @@ ms.assetid: 9e271bb6-a51f-4b96-b26b-9f4ca28fca0a
 ---
 # Compiler Error C3212
 
-'specialization' : an explicit specialization of a template member must be a member of an explicit specialization
+> 'specialization' : an explicit specialization of a template member must be a member of an explicit specialization
 
 An explicit specialization was ill formed.
 

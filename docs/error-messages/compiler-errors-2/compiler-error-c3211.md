@@ -8,7 +8,7 @@ ms.assetid: 85e33fed-3b59-4315-97e6-20d31c6a985a
 ---
 # Compiler Error C3211
 
-'explicit specialization' : explicit specialization is using partial specialization syntax, use template <> instead
+> 'explicit specialization' : explicit specialization is using partial specialization syntax, use template <> instead
 
 An explicit specialization was ill formed.
 

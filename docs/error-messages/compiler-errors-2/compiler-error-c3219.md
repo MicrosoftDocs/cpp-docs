@@ -8,7 +8,7 @@ ms.assetid: 9c9757b0-1256-4cdf-9d8c-a3a72f300ce5
 ---
 # Compiler Error C3219
 
-'param' : generic parameter cannot be constrained by multiple non-interfaces : 'class'
+> 'param' : generic parameter cannot be constrained by multiple non-interfaces : 'class'
 
 It is not valid to constrain a generic parameter by two or more managed classes.
 

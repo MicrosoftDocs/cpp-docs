@@ -8,7 +8,7 @@ ms.assetid: 4a28b976-142a-4cff-aa2f-480b892c50ca
 ---
 # Compiler Error C3207
 
-'function' : invalid template argument for 'arg', class template expected
+> 'function' : invalid template argument for 'arg', class template expected
 
 A function template is defined as taking a template template argument. However, a template type argument was passed.
 

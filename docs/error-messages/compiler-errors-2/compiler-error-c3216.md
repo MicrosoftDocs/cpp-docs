@@ -8,7 +8,7 @@ ms.assetid: bbab1efe-8779-4489-8bb0-b11e45f5cbe5
 ---
 # Compiler Error C3216
 
-constraint must be a generic parameter, not 'type'
+> constraint must be a generic parameter, not 'type'
 
 A constraint was ill formed.
 

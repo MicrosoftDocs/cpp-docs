@@ -8,7 +8,7 @@ ms.assetid: 1de44e39-69d1-4894-8f89-ff92136e8e5d
 ---
 # Compiler Error C3209
 
-'class' : generic class must be a managed or WinRTclass
+> 'class' : generic class must be a managed or WinRTclass
 
 A generic class must be a managed class or a Windows Runtime class.
 

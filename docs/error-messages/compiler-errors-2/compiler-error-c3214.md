@@ -8,7 +8,7 @@ ms.assetid: 49ee4a9a-2549-4adb-9d3a-38e154303c2e
 ---
 # Compiler Error C3214
 
-'type' : invalid type argument for generic parameter 'param' of generic 'generic_type', does not meet constraint 'constraint'
+> 'type' : invalid type argument for generic parameter 'param' of generic 'generic_type', does not meet constraint 'constraint'
 
 The type was specified for an instantiation of a generic class that does not meet the generic class's constraint.
 
