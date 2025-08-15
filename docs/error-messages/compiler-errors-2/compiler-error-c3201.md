@@ -10,7 +10,11 @@ ms.assetid: ec19cd64-1789-40a3-b2db-dff2852b9d98
 
 > the template parameter list for class template 'template' does not match the template parameter list for template parameter 'template'
 
+## Remarks
+
 You passed a class template in the argument to a class template that does not take a template parameter, or you passed a mismatched number of template arguments for the default template argument.
+
+## Example
 
 ```cpp
 // C3201.cpp

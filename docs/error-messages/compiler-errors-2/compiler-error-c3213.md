@@ -10,7 +10,11 @@ ms.assetid: 1f079e36-b3e9-40f8-8e95-08eeba3adc82
 
 > base class 'base_type' is less accessible than 'derived_type'
 
+## Remarks
+
 A type that will be visible from an assembly must use publicly visible base classes.
+
+## Example
 
 The following sample generates C3213:
 

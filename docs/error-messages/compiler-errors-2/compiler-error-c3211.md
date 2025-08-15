@@ -10,7 +10,11 @@ ms.assetid: 85e33fed-3b59-4315-97e6-20d31c6a985a
 
 > 'explicit specialization' : explicit specialization is using partial specialization syntax, use template <> instead
 
+## Remarks
+
 An explicit specialization was ill formed.
+
+## Example
 
 The following sample generates C3211:
 

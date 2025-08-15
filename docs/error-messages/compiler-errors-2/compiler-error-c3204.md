@@ -10,6 +10,8 @@ ms.assetid: 06e578da-0262-48c8-b2ae-be1cd6d28884
 
 > '_alloca' cannot be called from within a catch block
 
+## Remarks
+
 This error occurs when you use a call to [_alloca](../../c-runtime-library/reference/alloca.md) from within a catch block.
 
 ## Example

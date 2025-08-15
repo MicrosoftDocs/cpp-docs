@@ -10,7 +10,11 @@ ms.assetid: 4e385c3b-222e-425c-9612-46e83ed41650
 
 > 'keyword' : can only be used in definitions
 
+## Remarks
+
 A keyword was used in a declaration but is only valid in a definition.
+
+## Example
 
 The following sample generates C3197:
 

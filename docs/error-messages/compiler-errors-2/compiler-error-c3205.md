@@ -10,6 +10,8 @@ ms.assetid: 802d306e-5ff3-4491-8a22-c5f1c072d005
 
 > argument list for template parameter 'parameter' is missing
 
+## Remarks
+
 A [template](../../cpp/templates-cpp.md) parameter is missing.
 
 ## Example

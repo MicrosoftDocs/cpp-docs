@@ -10,7 +10,11 @@ ms.assetid: 99070417-c23a-4d82-bdd2-04be1a07adea
 
 > 'param' : generic parameter cannot be constrained in this declaration
 
+## Remarks
+
 A constraint was ill formed; the constraint generic parameter must agree with the generic class template parameter.
+
+## Example
 
 The following sample generates C3217:
 

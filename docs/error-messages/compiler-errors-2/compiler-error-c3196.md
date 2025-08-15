@@ -10,7 +10,11 @@ ms.assetid: d9c38a13-191d-472d-aa2b-f61a6459d16c
 
 > 'keyword' : used more than once
 
+## Remarks
+
 A keyword was used more than once.
+
+## Example
 
 The following sample generates C3196:
 

@@ -10,7 +10,11 @@ ms.assetid: 9c9757b0-1256-4cdf-9d8c-a3a72f300ce5
 
 > 'param' : generic parameter cannot be constrained by multiple non-interfaces : 'class'
 
+## Remarks
+
 It is not valid to constrain a generic parameter by two or more managed classes.
+
+## Example
 
 The following sample generates C3219:
 

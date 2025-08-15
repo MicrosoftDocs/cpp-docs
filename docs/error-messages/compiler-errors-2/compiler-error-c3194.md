@@ -10,6 +10,8 @@ ms.assetid: 49d3ffc6-eff6-4b46-865b-18811692a8bb
 
 > 'member' : a value-type cannot have an assignment operator
 
+## Remarks
+
 Special member functions that require automatic invocation by the compiler, such as a copy constructor or copy assignment operator are not supported within a value class.
 
 ## Example

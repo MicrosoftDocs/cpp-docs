@@ -10,6 +10,8 @@ ms.assetid: c6e9d309-fabc-4e7d-b526-be20d9fe3f6a
 
 > 'type' : access declaration can only be applied to a base class member
 
+## Remarks
+
 A [using declaration](../../cpp/using-declaration.md) was specified incorrectly.
 
 ## Example

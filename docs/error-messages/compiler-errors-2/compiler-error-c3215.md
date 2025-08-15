@@ -10,9 +10,13 @@ ms.assetid: d0d16007-8885-42e0-b086-2d3a61f348c5
 
 > 'type1' : generic type parameter already constrained by 'type2'
 
+## Remarks
+
 A constraint was specified more than once.
 
 For more information on generics, see [Generics](../../extensions/generics-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3215:
 

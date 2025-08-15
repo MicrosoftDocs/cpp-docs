@@ -10,7 +10,11 @@ ms.assetid: 23528a0c-5493-4804-9789-cd3c38e49fb9
 
 > 'arg name' : invalid default argument for template parameter 'parameter', expected a class template
 
+## Remarks
+
 You passed an invalid default argument for a template parameter.
+
+## Example
 
 The following sample generates C3202:
 

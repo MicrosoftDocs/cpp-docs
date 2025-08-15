@@ -10,7 +10,11 @@ ms.assetid: 8b0083d4-706f-46f6-858a-e1d9af464cf8
 
 > syntax error : '^' is not a prefix operator (did you mean '*'?)
 
+## Remarks
+
 A handle cannot be used as a dereference operator.
+
+## Example
 
 The following sample generates C3192:
 

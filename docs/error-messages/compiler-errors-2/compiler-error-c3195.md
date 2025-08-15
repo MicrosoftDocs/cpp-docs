@@ -10,7 +10,11 @@ ms.assetid: 97e4f681-812b-49e8-ba57-24b7817e3cd8
 
 > 'operator' : is reserved and cannot be used as a member of a ref class or value type. CLR or WinRT operators must be defined using the 'operator' keyword
 
+## Remarks
+
 The compiler detected an operator definition using the Managed Extensions for C++ syntax. You must use the C++ syntax for operators.
+
+## Example
 
 The following sample generates C3195 and shows how to fix it:
 

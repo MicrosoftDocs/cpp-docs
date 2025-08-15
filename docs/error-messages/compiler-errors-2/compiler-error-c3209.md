@@ -10,7 +10,11 @@ ms.assetid: 1de44e39-69d1-4894-8f89-ff92136e8e5d
 
 > 'class' : generic class must be a managed or WinRTclass
 
+## Remarks
+
 A generic class must be a managed class or a Windows Runtime class.
+
+## Example
 
 The following sample generates C3209 and shows how to fix it:
 
