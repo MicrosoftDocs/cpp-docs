@@ -47,6 +47,7 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`poison_partial` | `true` | If `true`, poison partially addressable 8-byte aligned words. This flag affects heap and global buffers, but not stack buffers.|
 |`print_cmdline` | `false` | Print command line on crash. With `continue_on_error` set >= `1`, print current working directory as `UTF-16` aware.|
 |`print_summary` | `true` | If `false`, disable printing error summaries in addition to error reports.|
+|`quarantine_size` | `-1` | Deprecated, please use `quarantine_size_mb`.|
 |`quarantine_size_mb` | `-1` | Size (in Mb) of quarantine used to detect `use-after-free` errors. Lower value may increase the chance of false negatives.|
 |`redzone` | `16` | Minimal size (in bytes) of redzones around heap objects. Requirement: `redzone` >= 16, is a power of two.|
 |`replace_str` | `true` | If `true`, uses custom wrappers and replacements for libc string functions to find more errors.|
