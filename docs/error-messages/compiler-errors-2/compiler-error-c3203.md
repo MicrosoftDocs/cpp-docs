@@ -37,7 +37,7 @@ int main() {
 }
 ```
 
-The following sample generates C3203 and shows how to fix it:
+The following example generates C3203 and shows how to fix it:
 
 ```cpp
 // C3203_b.cpp

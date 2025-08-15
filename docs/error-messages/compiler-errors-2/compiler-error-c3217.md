@@ -16,7 +16,7 @@ A constraint was ill formed; the constraint generic parameter must agree with th
 
 ## Example
 
-The following sample generates C3217:
+The following example generates C3217:
 
 ```cpp
 // C3217.cpp
@@ -31,7 +31,7 @@ ref class C {
 };
 ```
 
-The following sample demonstrates a possible resolution:
+The following example demonstrates a possible resolution:
 
 ```cpp
 // C3217b.cpp

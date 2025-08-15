@@ -16,7 +16,7 @@ The [float_control](../../preprocessor/float-control.md) pragma was used to spec
 
 ## Example
 
-The following sample generates C3199:
+The following example generates C3199:
 
 ```cpp
 // C3199.cpp

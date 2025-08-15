@@ -16,7 +16,7 @@ A constraint was ill formed.
 
 ## Example
 
-The following sample generates C3216:
+The following example generates C3216:
 
 ```cpp
 // C3216.cpp

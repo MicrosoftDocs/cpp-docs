@@ -16,7 +16,7 @@ A keyword was used in a declaration but is only valid in a definition.
 
 ## Example
 
-The following sample generates C3197:
+The following example generates C3197:
 
 ```cpp
 // C3197.cpp

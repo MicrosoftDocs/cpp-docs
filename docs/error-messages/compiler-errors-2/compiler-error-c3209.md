@@ -16,7 +16,7 @@ A generic class must be a managed class or a Windows Runtime class.
 
 ## Example
 
-The following sample generates C3209 and shows how to fix it:
+The following example generates C3209 and shows how to fix it:
 
 ```cpp
 // C3209.cpp

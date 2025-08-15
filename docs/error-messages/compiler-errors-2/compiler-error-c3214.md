@@ -16,7 +16,7 @@ The type was specified for an instantiation of a generic class that does not mee
 
 ## Example
 
-The following sample generates C3214:
+The following example generates C3214:
 
 ```cpp
 // C3214.cpp

@@ -18,7 +18,7 @@ For more information on generics, see [Generics](../../extensions/generics-cpp-c
 
 ## Example
 
-The following sample generates C3215:
+The following example generates C3215:
 
 ```cpp
 // C3215.cpp

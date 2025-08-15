@@ -16,7 +16,7 @@ A type that will be visible from an assembly must use publicly visible base clas
 
 ## Example
 
-The following sample generates C3213:
+The following example generates C3213:
 
 ```cpp
 // C3213.cpp

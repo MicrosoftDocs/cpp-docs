@@ -16,7 +16,7 @@ A function template is defined as taking a template type argument. However, a te
 
 ## Examples
 
-The following sample generates C3206:
+The following example generates C3206:
 
 ```cpp
 // C3206.cpp
@@ -81,7 +81,7 @@ int main() {
 }
 ```
 
-A class template is not allowed as a template type argument. The following sample raises C3206:
+A class template is not allowed as a template type argument. The following example raises C3206:
 
 ```cpp
 // C3206e.cpp

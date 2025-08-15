@@ -16,7 +16,7 @@ For a type to be a constraint, it must be either a value type or reference to a 
 
 ## Example
 
-The following sample generates C3218.
+The following example generates C3218.
 
 ```cpp
 // C3218.cpp

@@ -16,7 +16,7 @@ A [using declaration](../../cpp/using-declaration.md) was specified incorrectly.
 
 ## Example
 
-The following sample generates C3210.
+The following example generates C3210.
 
 ```cpp
 // C3210.cpp

@@ -16,7 +16,7 @@ A function template is defined as taking a template template argument. However, 
 
 ## Example
 
-The following sample generates C3207:
+The following example generates C3207:
 
 ```cpp
 // C3207.cpp

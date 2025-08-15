@@ -16,7 +16,7 @@ An explicit specialization was ill formed.
 
 ## Example
 
-The following sample generates C3211:
+The following example generates C3211:
 
 ```cpp
 // C3211.cpp

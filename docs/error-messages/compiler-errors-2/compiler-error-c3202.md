@@ -16,7 +16,7 @@ You passed an invalid default argument for a template parameter.
 
 ## Example
 
-The following sample generates C3202:
+The following example generates C3202:
 
 ```cpp
 // C3202.cpp

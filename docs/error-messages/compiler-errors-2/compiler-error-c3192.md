@@ -16,7 +16,7 @@ A handle cannot be used as a dereference operator.
 
 ## Example
 
-The following sample generates C3192:
+The following example generates C3192:
 
 ```cpp
 // C3192.cpp

@@ -16,7 +16,7 @@ A template template parameter does not have the same number of template paramete
 
 ## Example
 
-The following sample generates C3208:
+The following example generates C3208:
 
 ```cpp
 // C3208.cpp

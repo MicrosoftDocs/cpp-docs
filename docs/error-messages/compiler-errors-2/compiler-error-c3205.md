@@ -16,7 +16,7 @@ A [template](../../cpp/templates-cpp.md) parameter is missing.
 
 ## Example
 
-The following sample generates C3205:
+The following example generates C3205:
 
 ```cpp
 // C3205.cpp

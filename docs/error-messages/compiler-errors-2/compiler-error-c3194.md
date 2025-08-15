@@ -16,7 +16,7 @@ Special member functions that require automatic invocation by the compiler, such
 
 ## Example
 
-The following sample generates C3194.
+The following example generates C3194.
 
 ```cpp
 // C3194.cpp

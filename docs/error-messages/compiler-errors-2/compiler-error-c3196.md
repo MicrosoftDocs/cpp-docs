@@ -16,7 +16,7 @@ A keyword was used more than once.
 
 ## Example
 
-The following sample generates C3196:
+The following example generates C3196:
 
 ```cpp
 // C3196.cpp

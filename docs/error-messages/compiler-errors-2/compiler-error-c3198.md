@@ -16,7 +16,7 @@ ms.assetid: ec4ecf61-0067-4aa4-b443-a91013a1e59d
 
 ## Example
 
-The following sample generates C3198:
+The following example generates C3198:
 
 ```cpp
 // C3198.cpp
