@@ -8,7 +8,7 @@ ms.assetid: 5d450f8b-6cef-4452-a0c4-2076e967451d
 ---
 # Compiler Error C3181
 
-'type' : invalid operand for operator
+> 'type' : invalid operand for operator
 
 An invalid parameter was passed to the [typeid](../../extensions/typeid-cpp-component-extensions.md) operator. The parameter must be a managed type.
 

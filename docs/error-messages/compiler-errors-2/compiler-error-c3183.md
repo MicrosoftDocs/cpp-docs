@@ -8,7 +8,7 @@ ms.assetid: dbd0f020-c739-43c9-947e-9ce21537331b
 ---
 # Compiler Error C3183
 
-cannot define unnamed class, struct or union inside of managed or WinRT type 'type'
+> cannot define unnamed class, struct or union inside of managed or WinRT type 'type'
 
 A type that is embedded in a managed or WinRT type must be named.
 

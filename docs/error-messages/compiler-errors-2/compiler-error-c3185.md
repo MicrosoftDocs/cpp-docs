@@ -7,7 +7,7 @@ helpviewer_keywords: ["C3185"]
 ---
 # Compiler Error C3185
 
-'typeid' used on managed or WinRT type 'type', use 'operator' instead
+> 'typeid' used on managed or WinRT type 'type', use 'operator' instead
 
 You cannot apply the [typeid](../../cpp/typeid-operator.md) operator to a managed or WinRT type; use [typeid](../../extensions/typeid-cpp-component-extensions.md) instead.
 

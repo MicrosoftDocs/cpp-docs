@@ -8,7 +8,7 @@ ms.assetid: 3f19d513-a05a-4b6c-806f-276fe5c36b90
 ---
 # Compiler Error C3175
 
-'function1' : cannot call a method of a managed type from unmanaged function 'function2'
+> 'function1' : cannot call a method of a managed type from unmanaged function 'function2'
 
 Unmanaged functions cannot call member functions of managed classes.
 

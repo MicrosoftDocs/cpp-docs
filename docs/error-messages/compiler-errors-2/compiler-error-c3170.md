@@ -8,7 +8,7 @@ ms.assetid: ca9a59d6-7df3-42f0-b028-c09d0af3ac2a
 ---
 # Compiler Error C3170
 
-cannot have different module identifiers in a project
+> cannot have different module identifiers in a project
 
 [module](../../windows/attributes/module-cpp.md) attributes with different names were found in two of the files in a compilation. Only one unique `module` attribute can be specified per compilation.
 

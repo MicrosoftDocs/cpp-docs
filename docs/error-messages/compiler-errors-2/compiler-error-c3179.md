@@ -8,7 +8,7 @@ ms.assetid: 60d7e41b-25fd-48ac-8b79-830c062f4dcd
 ---
 # Compiler Error C3179
 
-an unnamed managed or WinRT type is not allowed
+> an unnamed managed or WinRT type is not allowed
 
 All CLR and WinRT classes and structs must have names.
 
