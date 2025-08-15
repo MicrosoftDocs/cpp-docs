@@ -15,7 +15,7 @@ The following is a list of actively supported options for the AddressSanitizer. 
 
 | Flag | Default value | Description |
 |------|---------------|-------------|
-|`abort_on_error` | `false` | If `true`, the tool calls `abort()` instead of `_exit()` after printing the error report.|
+|`abort_on_error` | `false` | If `true`, ASan calls `abort()` instead of `_exit()` after printing the error report.|
 |`alloc_dealloc_mismatch` | `false` | Enables runtime detection of mismatched memory operations such as `malloc`/`delete`, `new[]`/`free`, etc.|
 |`allocator_frees_and_returns_null_on_realloc_zero` | `1` | 1 - realloc(p, 0) is equivalent to free(p). 0 - realloc(p, 0) will return a non-`NULL` value.|
 |`allocator_may_return_null` | `false` | If `true`, the allocator will return `nullptr` and fail when out of memory instead of crashing.|
