@@ -15,3 +15,16 @@ ms.assetid: 9d2ebf55-1a6a-4087-bf5b-5274baae6351
 The predefined identifier [`__func__`](../../cpp/func.md) is not available outside the body of a function.
 
 To correct this error, move the identifier inside the body of a function.
+
+## Example
+
+The following example generates C3187:
+
+```cpp
+// C3187.cpp
+// compile with: /c
+
+auto global = __func__;   // C3187, usage in global scope
+
+void func(const char* f = __func__);   // C3187, usage in parameter list
+```
