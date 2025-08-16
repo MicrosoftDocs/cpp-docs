@@ -8,7 +8,7 @@ ms.assetid: 35d8ad1a-377d-47df-be9d-c55eea23340f
 ---
 # Compiler Error C3243
 
-none of the overload functions were introduced by 'interface'
+> none of the overload functions were introduced by 'interface'
 
 You tried to [explicitly override](../../cpp/explicit-overrides-cpp.md) a member that does not exist in the specified interface.
 

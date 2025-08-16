@@ -8,7 +8,7 @@ ms.assetid: f2d90923-aa8b-444f-ab10-1f37dbb864e1
 ---
 # Compiler Error C3229
 
-'type' : indirections on a generic type parameter are not allowed
+> 'type' : indirections on a generic type parameter are not allowed
 
 You cannot use generic parameters with `*`, `^`, or `&`.
 

@@ -8,6 +8,6 @@ ms.assetid: c7621ced-d5c7-4595-904b-bd871676784c
 ---
 # Compiler Error C3242
 
-'function' : you can only explicitly override virtual functions
+> 'function' : you can only explicitly override virtual functions
 
 You tried to explicitly override a nonvirtual method.

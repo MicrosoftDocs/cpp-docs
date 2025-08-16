@@ -8,7 +8,7 @@ ms.assetid: 22a518b7-020f-4f3c-9963-a094667fd1ac
 ---
 # Compiler Error C3239
 
-'type' : pointer to interior/pin pointer is disallowed by the common language runtime
+> 'type' : pointer to interior/pin pointer is disallowed by the common language runtime
 
 The compiler encountered an invalid type.
 

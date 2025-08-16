@@ -8,7 +8,7 @@ ms.assetid: f9a2bbb5-3fce-40bf-9fd3-835a5f164dbb
 ---
 # Compiler Error C3247
 
-'class1' : a coclass cannot inherit from another coclass 'class2'
+> 'class1' : a coclass cannot inherit from another coclass 'class2'
 
 A class marked with the [coclass](../../windows/attributes/coclass.md) attribute cannot inherit from another class marked with the `coclass` attribute.
 

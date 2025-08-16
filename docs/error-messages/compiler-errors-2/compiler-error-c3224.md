@@ -8,7 +8,7 @@ ms.assetid: 129be22f-8f3e-4fc6-9ccd-d27d8ef91251
 ---
 # Compiler Error C3224
 
-'type' : no overloaded generic class takes 'number' generic type arguments
+> 'type' : no overloaded generic class takes 'number' generic type arguments
 
 The compiler failed to find an appropriate overload.
 

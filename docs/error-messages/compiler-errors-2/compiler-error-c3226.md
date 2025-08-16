@@ -8,7 +8,7 @@ ms.assetid: 636106ca-6f4e-4303-a6a0-8803221ec67d
 ---
 # Compiler Error C3226
 
-A template declaration is not allowed inside a generic declaration
+> A template declaration is not allowed inside a generic declaration
 
 Use a generic declaration inside a generic class.
 

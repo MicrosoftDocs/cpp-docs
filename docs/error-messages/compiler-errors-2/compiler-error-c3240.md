@@ -8,7 +8,7 @@ ms.assetid: 1a8dc213-b80c-47ae-ada0-e9554b635d1e
 ---
 # Compiler Error C3240
 
-'function' : must be a non-overloaded abstract member function of 'type'
+> 'function' : must be a non-overloaded abstract member function of 'type'
 
 A base type contained a function that was defined. Function must be virtual.
 

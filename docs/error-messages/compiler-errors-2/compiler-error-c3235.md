@@ -8,7 +8,7 @@ ms.assetid: 0554d6c7-e1dc-4c99-8934-cbcf491c8203
 ---
 # Compiler Error C3235
 
-'specialization' : explicit or partial specialization of a generic class is not allowed
+> 'specialization' : explicit or partial specialization of a generic class is not allowed
 
 Generic classes cannot be used for explicit or partial specializations.
 

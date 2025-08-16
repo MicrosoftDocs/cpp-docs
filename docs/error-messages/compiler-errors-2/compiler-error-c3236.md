@@ -8,7 +8,7 @@ ms.assetid: 4ef1871f-a348-44ae-922b-1e2081de20d0
 ---
 # Compiler Error C3236
 
-explicit instantiation of a generic is not allowed
+> explicit instantiation of a generic is not allowed
 
 The compiler does not allow explicit instantiation of generic classes.
 

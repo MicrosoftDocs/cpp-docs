@@ -8,7 +8,7 @@ ms.assetid: 19942497-b3c5-4df0-9144-142ced92468b
 ---
 # Compiler Error C3238
 
-'type' : a type with this name has already been forwarded to assembly 'assembly'
+> 'type' : a type with this name has already been forwarded to assembly 'assembly'
 
 A type was defined in a client application that is also defined, via type forwarding syntax, in a referenced assembly. Both types cannot be defined in the scope of the application.
 

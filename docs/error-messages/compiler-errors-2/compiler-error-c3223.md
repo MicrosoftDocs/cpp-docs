@@ -8,7 +8,7 @@ ms.assetid: 1f4380b4-0413-40db-a868-62f97babaf78
 ---
 # Compiler Error C3223
 
-'property' : you cannot apply 'typeid' to a property
+> 'property' : you cannot apply 'typeid' to a property
 
 You cannot apply [typeid](../../extensions/typeid-cpp-component-extensions.md) to a property.
 

@@ -8,7 +8,7 @@ ms.assetid: f5f66973-256e-4298-ac46-c87819cbde34
 ---
 # Compiler Error C3225
 
-generic type argument for 'arg' cannot be 'type', it must be a value type or handle type
+> generic type argument for 'arg' cannot be 'type', it must be a value type or handle type
 
 The generic type argument was not of the correct type.
 
