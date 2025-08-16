@@ -11,9 +11,9 @@ no-loc: ["struct", "const"]
 > '*initializing*' : cannot convert from '*type1*' to '*type2*'\
 > '*conversion*' : cannot convert from '*type1*' to '*type2*'
 
-The compiler can't implicitly convert from *`type1`* to *`type2`*, or can't use the specified cast or conversion operator.
-
 ## Remarks
+
+The compiler can't implicitly convert from *`type1`* to *`type2`*, or can't use the specified cast or conversion operator.
 
 The compiler generates C2440 when it can't convert from one type to another, either implicitly or by using the specified cast or conversion operator. There are many ways to generate this error. We've listed some common ones in the Examples section.
 
@@ -21,7 +21,7 @@ The compiler generates C2440 when it can't convert from one type to another, eit
 
 ### C++ string literals are `const`
 
-C2440 can be caused if you attempt to initialize a non-const `char*` (or `wchar_t*`) by using a string literal in C++ code, when the compiler conformance option [`/Zc:strictStrings`](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) is set. In C, the type of a string literal is array of **`char`**, but in C++, it's array of `const char`. This sample generates C2440:
+C2440 can be caused if you attempt to initialize a non-const `char*` (or `wchar_t*`) by using a string literal in C++ code, when the compiler conformance option [`/Zc:strictStrings`](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) is set. In C, the type of a string literal is array of **`char`**, but in C++, it's array of `const char`. This example generates C2440:
 
 ```cpp
 // C2440s.cpp
@@ -40,7 +40,7 @@ int main() {
 
 ### C++20 `u8` literals are `const char8_t`
 
-In C++20 or under [`/Zc:char8_t`](../../build/reference/zc-char8-t.md), a UTF-8 literal character or string (such as `u8'a'` or `u8"String"`) is of type `const char8_t` or `const char8_t[N]`, respectively. This sample shows how compiler behavior changes between C++17 and C++20:
+In C++20 or under [`/Zc:char8_t`](../../build/reference/zc-char8-t.md), a UTF-8 literal character or string (such as `u8'a'` or `u8"String"`) is of type `const char8_t` or `const char8_t[N]`, respectively. This example shows how compiler behavior changes between C++17 and C++20:
 
 ```cpp
 // C2440u8.cpp
@@ -60,7 +60,7 @@ int main() {
 
 ### Pointer to member
 
-You may see C2440 if you attempt to convert a pointer to member to `void*`. The next sample generates C2440:
+You may see C2440 if you attempt to convert a pointer to member to `void*`. The next example generates C2440:
 
 ```cpp
 // C2440.cpp
@@ -83,7 +83,7 @@ public:
 
 ### Cast of undefined type
 
-The compiler emits C2440 if you attempt to cast from a type that's only forward declared but not defined. This sample generates C2440:
+The compiler emits C2440 if you attempt to cast from a type that's only forward declared but not defined. This example generates C2440:
 
 ```cpp
 // c2440a.cpp
@@ -98,7 +98,7 @@ Base * func(Derived * d) {
 
 ### Incompatible calling convention
 
-The C2440 errors on lines 15 and 16 of the next sample are qualified with the `Incompatible calling conventions for UDT return value` message. A *UDT* is a user-defined type, such as a class, struct, or union. These kinds of incompatibility errors are caused when the calling convention of a UDT specified in the return type of a forward declaration conflicts with the actual calling convention of the UDT and when a function pointer is involved.
+The C2440 errors on lines 15 and 16 of the next example are qualified with the `Incompatible calling conventions for UDT return value` message. A *UDT* is a user-defined type, such as a class, struct, or union. These kinds of incompatibility errors are caused when the calling convention of a UDT specified in the return type of a forward declaration conflicts with the actual calling convention of the UDT and when a function pointer is involved.
 
 In the example, first there are forward declarations for a struct and for a function that returns the struct. The compiler assumes that the struct uses the C++ calling convention. Next is the struct definition, which uses the C calling convention by default. Because the compiler doesn't know the calling convention of the struct until it finishes reading the entire struct, the calling convention for the struct in the return type of `get_c2` is also assumed to be C++.
 
@@ -163,7 +163,7 @@ int main() {
 
 ### User-defined conversions
 
-C2440 can also occur for an incorrect use of a user-defined conversion. For example, when a conversion operator has been defined as **`explicit`**, the compiler can't use it in an implicit conversion. For more information about user-defined conversions, see [User-Defined Conversions (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). This sample generates C2440:
+C2440 can also occur for an incorrect use of a user-defined conversion. For example, when a conversion operator has been defined as **`explicit`**, the compiler can't use it in an implicit conversion. For more information about user-defined conversions, see [User-Defined Conversions (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). This example generates C2440:
 
 ```cpp
 // C2440d.cpp
@@ -187,7 +187,7 @@ int main() {
 
 ### `System::Array` creation
 
-C2440 can also occur if you try to create an instance of an array in C++/CLI whose type is a <xref:System.Array>.  For more information, see [Arrays](../../extensions/arrays-cpp-component-extensions.md). The next sample generates C2440:
+C2440 can also occur if you try to create an instance of an array in C++/CLI whose type is a <xref:System.Array>.  For more information, see [Arrays](../../extensions/arrays-cpp-component-extensions.md). The next example generates C2440:
 
 ```cpp
 // C2440e.cpp
@@ -202,7 +202,7 @@ int main() {
 
 ### Attributes
 
-C2440 can also occur because of changes in the attributes feature.  The following sample generates C2440.
+C2440 can also occur because of changes in the attributes feature.  The following example generates C2440.
 
 ```cpp
 // c2440f.cpp
@@ -218,7 +218,7 @@ The Microsoft C++ compiler no longer allows the [`const_cast` operator](../../cp
 
 To resolve this C2440, use the correct cast operator. For more information, see [Casting operators](../../cpp/casting-operators.md).
 
-This sample generates C2440:
+This example generates C2440:
 
 ```cpp
 // c2440g.cpp
@@ -237,7 +237,7 @@ int main() {
 
 C2440 can occur because of conformance changes to the compiler in Visual Studio 2015 Update 3. Previously, the compiler incorrectly treated certain distinct expressions as the same type when identifying a template match for a **`static_cast`** operation. Now the compiler distinguishes the types correctly, and code that relied on the previous **`static_cast`** behavior is broken. To fix this issue, change the template argument to match the template parameter type, or use a **`reinterpret_cast`** or C-style cast.
 
-This sample generates C2440:
+This example generates C2440:
 
 ```cpp
 // c2440h.cpp
