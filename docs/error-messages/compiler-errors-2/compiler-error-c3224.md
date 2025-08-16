@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3224"
 title: "Compiler Error C3224"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3224"
+ms.date: 11/04/2016
 f1_keywords: ["C3224"]
 helpviewer_keywords: ["C3224"]
-ms.assetid: 129be22f-8f3e-4fc6-9ccd-d27d8ef91251
 ---
 # Compiler Error C3224
 
-'type' : no overloaded generic class takes 'number' generic type arguments
+> 'type' : no overloaded generic class takes 'number' generic type arguments
+
+## Remarks
 
 The compiler failed to find an appropriate overload.
 
-The following sample generates C3224:
+## Example
+
+The following example generates C3224:
 
 ```
 // C3224.cs
