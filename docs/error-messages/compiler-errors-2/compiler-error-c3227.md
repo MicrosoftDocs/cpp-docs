@@ -10,6 +10,8 @@ ms.assetid: 7939c23a-96c8-43c2-89e9-f217d132d155
 
 > 'parameter' : cannot use 'keyword' to allocate a generic type
 
+## Remarks
+
 In order to instantiate a type, an appropriate constructor is required. However, the compiler is not able to ensure that an appropriate constructor is available.
 
 You can use templates instead of generics to resolve this error, or you can use one of several methods to create an instance of the type.

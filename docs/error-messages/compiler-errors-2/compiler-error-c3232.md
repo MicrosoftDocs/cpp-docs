@@ -10,7 +10,11 @@ ms.assetid: 3119b3a9-0eff-4a3f-b805-e4d160af9e39
 
 > 'param' : a generic type parameter cannot be used in a qualified name
 
+## Remarks
+
 A generic type parameter was used incorrectly.
+
+## Example
 
 The following sample generates C3232:
 

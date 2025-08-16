@@ -10,6 +10,8 @@ ms.assetid: ebefc15a-e40d-424b-a3dd-d7e185d0ed7b
 
 > a generic class may not derive from a generic type parameter
 
+## Remarks
+
 A generic class cannot inherit from a generic type parameter.
 
 ## Example

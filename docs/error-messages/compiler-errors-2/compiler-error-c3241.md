@@ -10,7 +10,11 @@ ms.assetid: 2ca14879-bba0-4a23-b22a-72cfff92d6a4
 
 > 'method' : this method was not introduced by 'interface'
 
+## Remarks
+
 When you explicitly override a function, the function signature must exactly match the declaration for the function that you are overriding.
+
+## Example
 
 The following sample generates C3241:
 

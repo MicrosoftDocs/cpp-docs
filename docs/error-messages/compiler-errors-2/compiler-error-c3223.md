@@ -10,6 +10,8 @@ ms.assetid: 1f4380b4-0413-40db-a868-62f97babaf78
 
 > 'property' : you cannot apply 'typeid' to a property
 
+## Remarks
+
 You cannot apply [typeid](../../extensions/typeid-cpp-component-extensions.md) to a property.
 
 ## Example

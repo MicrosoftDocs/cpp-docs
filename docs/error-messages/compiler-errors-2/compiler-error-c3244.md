@@ -10,7 +10,11 @@ ms.assetid: dae6c49b-5212-4206-8f61-d4010c0b9969
 
 > 'method' : this method was introduced by 'interface' not by 'interface'
 
+## Remarks
+
 You tried to [explicitly override](../../cpp/explicit-overrides-cpp.md) a member that does not exist in the specified interface but does exist in another base class.
+
+## Example
 
 The following sample generates C3244:
 

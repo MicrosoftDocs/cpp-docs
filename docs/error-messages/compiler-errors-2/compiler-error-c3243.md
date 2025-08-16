@@ -10,7 +10,11 @@ ms.assetid: 35d8ad1a-377d-47df-be9d-c55eea23340f
 
 > none of the overload functions were introduced by 'interface'
 
+## Remarks
+
 You tried to [explicitly override](../../cpp/explicit-overrides-cpp.md) a member that does not exist in the specified interface.
+
+## Example
 
 The following sample generates C3243:
 

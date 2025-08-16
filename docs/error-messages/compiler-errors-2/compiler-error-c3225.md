@@ -10,6 +10,8 @@ ms.assetid: f5f66973-256e-4298-ac46-c87819cbde34
 
 > generic type argument for 'arg' cannot be 'type', it must be a value type or handle type
 
+## Remarks
+
 The generic type argument was not of the correct type.
 
 For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).

@@ -10,6 +10,8 @@ ms.assetid: 1a8dc213-b80c-47ae-ada0-e9554b635d1e
 
 > 'function' : must be a non-overloaded abstract member function of 'type'
 
+## Remarks
+
 A base type contained a function that was defined. Function must be virtual.
 
 ## Example

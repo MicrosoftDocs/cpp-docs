@@ -10,7 +10,11 @@ ms.assetid: f9a2bbb5-3fce-40bf-9fd3-835a5f164dbb
 
 > 'class1' : a coclass cannot inherit from another coclass 'class2'
 
+## Remarks
+
 A class marked with the [coclass](../../windows/attributes/coclass.md) attribute cannot inherit from another class marked with the `coclass` attribute.
+
+## Example
 
 The following sample generates C3247:
 

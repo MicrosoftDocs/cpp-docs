@@ -10,4 +10,6 @@ ms.assetid: c7621ced-d5c7-4595-904b-bd871676784c
 
 > 'function' : you can only explicitly override virtual functions
 
+## Remarks
+
 You tried to explicitly override a nonvirtual method.

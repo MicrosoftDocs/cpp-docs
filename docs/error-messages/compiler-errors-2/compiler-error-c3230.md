@@ -10,7 +10,11 @@ ms.assetid: 5ec53f25-59f6-4801-81e7-7b68bf04994d
 
 > 'function' : template type argument for 'template' cannot contain a generic type parameter: 'param'
 
+## Remarks
+
 Templates are instantiated at compile time, but generics are instantiated at run time. Therefore, it is not possible to generate generic code that can call the template because the template cannot be instantiated at run time when the generic type is finally known.
+
+## Example
 
 The following sample generates C3230:
 
