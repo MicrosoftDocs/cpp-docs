@@ -16,7 +16,7 @@ The compiler failed to find an appropriate overload.
 
 ## Example
 
-The following sample generates C3224:
+The following example generates C3224:
 
 ```
 // C3224.cs

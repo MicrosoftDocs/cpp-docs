@@ -16,7 +16,7 @@ Generic classes cannot be used for explicit or partial specializations.
 
 ## Example
 
-The following sample generates C3235.
+The following example generates C3235.
 
 ```cpp
 // C3235.cpp

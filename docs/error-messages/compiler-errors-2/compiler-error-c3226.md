@@ -16,7 +16,7 @@ Use a generic declaration inside a generic class.
 
 ## Example
 
-The following sample generates C3226:
+The following example generates C3226:
 
 ```cpp
 // C3226.cpp
@@ -28,7 +28,7 @@ ref class C {
 };
 ```
 
-The following sample demonstrates a possible resolution:
+The following example demonstrates a possible resolution:
 
 ```cpp
 // C3226b.cpp

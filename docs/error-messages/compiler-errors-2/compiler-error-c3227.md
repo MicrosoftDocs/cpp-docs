@@ -18,7 +18,7 @@ You can use templates instead of generics to resolve this error, or you can use 
 
 ## Example
 
-The following sample generates C3227.
+The following example generates C3227.
 
 ```cpp
 // C3227.cpp

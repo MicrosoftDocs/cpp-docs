@@ -16,7 +16,7 @@ Templates are instantiated at compile time, but generics are instantiated at run
 
 ## Example
 
-The following sample generates C3230:
+The following example generates C3230:
 
 ```cpp
 // C3230.cpp

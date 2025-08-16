@@ -18,7 +18,7 @@ See [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) for
 
 ## Examples
 
-The following sample creates an assembly that contains a type that was forwarded from another assembly.
+The following example creates an assembly that contains a type that was forwarded from another assembly.
 
 ```cpp
 // C3238.cpp
@@ -26,7 +26,7 @@ The following sample creates an assembly that contains a type that was forwarded
 public ref class R {};
 ```
 
-The following sample creates an assembly that used to contain the type definition, but not only contains type forwarding syntax.
+The following example creates an assembly that used to contain the type definition, but not only contains type forwarding syntax.
 
 ```cpp
 // C3238_b.cpp
@@ -35,7 +35,7 @@ The following sample creates an assembly that used to contain the type definitio
 [ assembly:TypeForwardedTo(R::typeid) ];
 ```
 
-The following sample generates C3238.
+The following example generates C3238.
 
 ```cpp
 // C3238_c.cpp

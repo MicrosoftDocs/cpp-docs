@@ -16,7 +16,7 @@ An incorrect type was passed as a generic type argument.
 
 ## Example
 
-The following sample generates C3228:
+The following example generates C3228:
 
 ```cpp
 // C3228.cpp

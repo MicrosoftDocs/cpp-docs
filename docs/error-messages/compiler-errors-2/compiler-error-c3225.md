@@ -18,7 +18,7 @@ For more information, see [Generics](../../extensions/generics-cpp-component-ext
 
 ## Examples
 
-You cannot instantiate a generic type with a native type. The following sample generates C3225.
+You cannot instantiate a generic type with a native type. The following example generates C3225.
 
 ```cpp
 // C3225.cpp
@@ -36,7 +36,7 @@ int main() {
 }
 ```
 
-The following sample creates a component using C#. Notice that the constraint specifies that the generic type can only be instantiated with a value type.
+The following example creates a component using C#. Notice that the constraint specifies that the generic type can only be instantiated with a value type.
 
 ```
 // C3225_b.cs
@@ -45,7 +45,7 @@ The following sample creates a component using C#. Notice that the constraint sp
 public class MyList<T> where T: struct {}
 ```
 
-This sample consumes the C#-authored component, and violates the constraint that MyList can only be instantiated with a value type other than <xref:System.Nullable>. The following sample generates C3225.
+This example consumes the C#-authored component, and violates the constraint that MyList can only be instantiated with a value type other than <xref:System.Nullable>. The following example generates C3225.
 
 ```cpp
 // C3225_c.cpp

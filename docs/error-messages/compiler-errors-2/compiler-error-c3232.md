@@ -16,7 +16,7 @@ A generic type parameter was used incorrectly.
 
 ## Example
 
-The following sample generates C3232:
+The following example generates C3232:
 
 ```cpp
 // C3232.cpp

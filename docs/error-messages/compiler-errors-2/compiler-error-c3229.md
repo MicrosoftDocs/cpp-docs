@@ -16,7 +16,7 @@ You cannot use generic parameters with `*`, `^`, or `&`.
 
 ## Examples
 
-The following sample generates C3229.
+The following example generates C3229.
 
 ```cpp
 // C3229.cpp
@@ -33,7 +33,7 @@ ref class D {
 };
 ```
 
-The following sample generates C3229.
+The following example generates C3229.
 
 ```cpp
 // C3229_b.cpp

@@ -16,7 +16,7 @@ You tried to [explicitly override](../../cpp/explicit-overrides-cpp.md) a member
 
 ## Example
 
-The following sample generates C3244:
+The following example generates C3244:
 
 ```cpp
 // C3244.cpp

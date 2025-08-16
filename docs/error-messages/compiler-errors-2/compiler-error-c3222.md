@@ -16,7 +16,7 @@ It is not permitted to declare a method parameter with a default argument. An ov
 
 ## Example
 
-The following sample generates C3222:
+The following example generates C3222:
 
 ```cpp
 // C3222_2.cpp

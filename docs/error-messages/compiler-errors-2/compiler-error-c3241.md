@@ -16,7 +16,7 @@ When you explicitly override a function, the function signature must exactly mat
 
 ## Example
 
-The following sample generates C3241:
+The following example generates C3241:
 
 ```cpp
 // C3241.cpp

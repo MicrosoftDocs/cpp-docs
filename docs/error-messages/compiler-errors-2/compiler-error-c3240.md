@@ -16,7 +16,7 @@ A base type contained a function that was defined. Function must be virtual.
 
 ## Example
 
-The following sample generates C3240.
+The following example generates C3240.
 
 ```cpp
 // C3240.cpp

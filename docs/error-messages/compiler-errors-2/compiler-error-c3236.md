@@ -16,7 +16,7 @@ The compiler does not allow explicit instantiation of generic classes.
 
 ## Example
 
-The following sample generates C3236:
+The following example generates C3236:
 
 ```cpp
 // C3236.cpp
@@ -27,7 +27,7 @@ public ref class X {};
 generic ref class X<int>;   // C3236
 ```
 
-The following sample demonstrates a possible resolution:
+The following example demonstrates a possible resolution:
 
 ```cpp
 // C3236b.cpp

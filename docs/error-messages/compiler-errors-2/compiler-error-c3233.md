@@ -16,7 +16,7 @@ It is not valid to constrain a generic parameter in more than one `where` clause
 
 ## Example
 
-The following sample generates C3233:
+The following example generates C3233:
 
 ```cpp
 // C3233.cpp

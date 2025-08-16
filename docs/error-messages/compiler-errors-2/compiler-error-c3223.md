@@ -16,7 +16,7 @@ You cannot apply [typeid](../../extensions/typeid-cpp-component-extensions.md) t
 
 ## Example
 
-The following sample generates C3223.
+The following example generates C3223.
 
 ```cpp
 // C3223.cpp

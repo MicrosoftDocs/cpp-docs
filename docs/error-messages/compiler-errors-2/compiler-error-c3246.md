@@ -16,7 +16,7 @@ A class that is marked as [sealed](../../extensions/sealed-cpp-component-extensi
 
 ## Example
 
-The following sample generates C3246:
+The following example generates C3246:
 
 ```cpp
 // C3246_2.cpp
