@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3234"
 title: "Compiler Error C3234"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3234"
+ms.date: 11/04/2016
 f1_keywords: ["C3234"]
 helpviewer_keywords: ["C3234"]
-ms.assetid: ebefc15a-e40d-424b-a3dd-d7e185d0ed7b
 ---
 # Compiler Error C3234
 

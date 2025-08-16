@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3243"
 title: "Compiler Error C3243"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3243"
+ms.date: 11/04/2016
 f1_keywords: ["C3243"]
 helpviewer_keywords: ["C3243"]
-ms.assetid: 35d8ad1a-377d-47df-be9d-c55eea23340f
 ---
 # Compiler Error C3243
 

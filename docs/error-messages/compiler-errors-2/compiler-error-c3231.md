@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3231"
 title: "Compiler Error C3231"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3231"
+ms.date: 11/04/2016
 f1_keywords: ["C3231"]
 helpviewer_keywords: ["C3231"]
-ms.assetid: fe5dc352-e634-45fa-9534-3da176294c98
 ---
 # Compiler Error C3231
 

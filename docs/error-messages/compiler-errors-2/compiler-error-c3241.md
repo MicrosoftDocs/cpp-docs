@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3241"
 title: "Compiler Error C3241"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3241"
+ms.date: 11/04/2016
 f1_keywords: ["C3241"]
 helpviewer_keywords: ["C3241"]
-ms.assetid: 2ca14879-bba0-4a23-b22a-72cfff92d6a4
 ---
 # Compiler Error C3241
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3225"
 title: "Compiler Error C3225"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3225"
+ms.date: 11/04/2016
 f1_keywords: ["C3225"]
 helpviewer_keywords: ["C3225"]
-ms.assetid: f5f66973-256e-4298-ac46-c87819cbde34
 ---
 # Compiler Error C3225
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3238"
 title: "Compiler Error C3238"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3238"
+ms.date: 11/04/2016
 f1_keywords: ["C3238"]
 helpviewer_keywords: ["C3238"]
-ms.assetid: 19942497-b3c5-4df0-9144-142ced92468b
 ---
 # Compiler Error C3238
 

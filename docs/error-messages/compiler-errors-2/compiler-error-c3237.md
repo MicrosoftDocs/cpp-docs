@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3237"
 title: "Compiler Error C3237"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3237"
+ms.date: 11/04/2016
 f1_keywords: ["C3237"]
 helpviewer_keywords: ["C3237"]
-ms.assetid: 690970c8-e13b-4ff3-96e3-5fd93c4d356b
 ---
 # Compiler Error C3237
 

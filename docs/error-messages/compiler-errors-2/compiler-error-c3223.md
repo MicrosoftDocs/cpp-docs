@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3223"
 title: "Compiler Error C3223"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3223"
+ms.date: 11/04/2016
 f1_keywords: ["C3223"]
 helpviewer_keywords: ["C3223"]
-ms.assetid: 1f4380b4-0413-40db-a868-62f97babaf78
 ---
 # Compiler Error C3223
 

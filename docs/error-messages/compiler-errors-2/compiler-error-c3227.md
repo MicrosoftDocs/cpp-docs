@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3227"
 title: "Compiler Error C3227"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3227"
+ms.date: 11/04/2016
 f1_keywords: ["C3227"]
 helpviewer_keywords: ["C3227"]
-ms.assetid: 7939c23a-96c8-43c2-89e9-f217d132d155
 ---
 # Compiler Error C3227
 

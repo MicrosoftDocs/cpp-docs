@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3230"
 title: "Compiler Error C3230"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3230"
+ms.date: 11/04/2016
 f1_keywords: ["C3230"]
 helpviewer_keywords: ["C3230"]
-ms.assetid: 5ec53f25-59f6-4801-81e7-7b68bf04994d
 ---
 # Compiler Error C3230
 

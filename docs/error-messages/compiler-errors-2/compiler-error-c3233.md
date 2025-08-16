@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3233"
 title: "Compiler Error C3233"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3233"
+ms.date: 11/04/2016
 f1_keywords: ["C3233"]
 helpviewer_keywords: ["C3233"]
-ms.assetid: a9210830-1136-4f02-ba41-030c85f93547
 ---
 # Compiler Error C3233
 

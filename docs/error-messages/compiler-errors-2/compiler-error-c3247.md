@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3247"
 title: "Compiler Error C3247"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3247"
+ms.date: 11/04/2016
 f1_keywords: ["C3247"]
 helpviewer_keywords: ["C3247"]
-ms.assetid: f9a2bbb5-3fce-40bf-9fd3-835a5f164dbb
 ---
 # Compiler Error C3247
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3240"
 title: "Compiler Error C3240"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3240"
+ms.date: 11/04/2016
 f1_keywords: ["C3240"]
 helpviewer_keywords: ["C3240"]
-ms.assetid: 1a8dc213-b80c-47ae-ada0-e9554b635d1e
 ---
 # Compiler Error C3240
 
