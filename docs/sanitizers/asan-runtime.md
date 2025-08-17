@@ -31,7 +31,7 @@ The image shows three scenarios for linking the runtime library. The first is /M
 The following diagram shows how the ASan library is linked for various compiler options:
 
 :::image type="complex" source="media/asan-one-dll.png" alt-text="Diagram of how the ASan runtime dll is linked."
-The image shows four scenarios for linking the ASan runtime library. The scenarios are for /MT (statically link the runtime), /MTd (statically link the debug runtime), /MD (dynamically link the redist at runtime), /MDd (dynamically link the debug redist at runtime). In all cases, my_exe.exe links and its associates my_dll.dll link to a single instance of clang-rt.asan-dynamix-x86_64.dll.
+The image shows four scenarios for linking the ASan runtime library. The scenarios are for /MT (statically link the runtime), /MTd (statically link the debug runtime), /MD (dynamically link the redist at runtime), /MDd (dynamically link the debug redist at runtime). In all cases, my_exe.exe links and its associates my_dll.dll link to a single instance of clang_rt.asan_dynamic-x86_64.dll.
 :::image-end:::
 
 Even when statically linking, the ASan runtime DLL must be present at runtime--unlike other C Runtime components.
@@ -101,7 +101,7 @@ For an illustration of the alignment requirement and potential issues, see the p
 
 ## Runtime options
 
-The MSVC AddressSanitizer is based on the [Clang AddressSanitizer runtime from the llvm-project repository](https://github.com/llvm/llvm-project). Because of this, most of clang's ASan runtime options available in MSVC as well. [A complete list of the public Clang runtime options is available here](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags). We document some differences in the sections that follow. If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
+The MSVC AddressSanitizer is based on the [Clang AddressSanitizer runtime from the llvm-project repository](https://github.com/llvm/llvm-project). Because of this, most of clang's ASan runtime options are available in MSVC as well. [A complete list of the public Clang runtime options is available here](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags). We document some differences in the sections that follow. If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
 
 ### Configure runtime options
 
