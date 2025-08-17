@@ -152,9 +152,10 @@ For more information, see the [Differences with Clang 12.0](asan.md#differences)
   - If set to `"ignore"`, the runtime doesn't attempt to correct any overwritten functions and proceeds with execution.
 
 - `windows_fast_fail_on_error`
-Boolean (`false` by default), set to `true` to enable the process to terminate with a `__fastfail(71)` after printing the error report.
->[!NOTE]
->When `abort_on_error` value is set to `true`, on Windows the program terminates with an `exit(3)`. In order to not change current behavior we decided to introduce this new option instead. If both `abort_on_error` and `windows_fast_fail_on_error` are `true`, the program will exit with the `__fastfail`.
+  Boolean (`false` by default), set to `true` to enable the process to terminate with a `__fastfail(71)` after printing the error report.
+
+  > [!NOTE]
+  > When `abort_on_error` value is set to `true`, on Windows the program terminates with an `exit(3)`. In order to not change current behavior we decided to introduce this new option instead. If both `abort_on_error` and `windows_fast_fail_on_error` are `true`, the program will exit with the `__fastfail`.
 
 - `windows_hook_legacy_allocators`
   Boolean, set to `false` to disable interception of [`GlobalAlloc`](/windows/win32/api/winbase/nf-winbase-globalalloc) and [`LocalAlloc`](/windows/win32/api/winbase/nf-winbase-localalloc) allocators.
