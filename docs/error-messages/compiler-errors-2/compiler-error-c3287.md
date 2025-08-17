@@ -4,7 +4,6 @@ description: "Describes Microsoft C++ compiler error C3287."
 ms.date: 09/25/2020
 f1_keywords: ["C3287"]
 helpviewer_keywords: ["C3287"]
-ms.assetid: c1fa73d2-2c82-4136-a7da-0e75e3b420ad
 ---
 # Compiler Error C3287
 

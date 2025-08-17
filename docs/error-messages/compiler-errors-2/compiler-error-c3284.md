@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3284"
 title: "Compiler Error C3284"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3284"
+ms.date: 11/04/2016
 f1_keywords: ["C3284"]
 helpviewer_keywords: ["C3284"]
-ms.assetid: e582f316-e9db-4d27-9c70-fdfa737a9d5f
 ---
 # Compiler Error C3284
 

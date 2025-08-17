@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3292"
 title: "Compiler Error C3292"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3292"
+ms.date: 11/04/2016
 f1_keywords: ["C3292"]
 helpviewer_keywords: ["C3292"]
-ms.assetid: ead485cc-5471-4e10-b361-300589ff5b70
 ---
 # Compiler Error C3292
 

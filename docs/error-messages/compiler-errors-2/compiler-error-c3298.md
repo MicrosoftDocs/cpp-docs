@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3298"
 title: "Compiler Error C3298"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3298"
+ms.date: 11/04/2016
 f1_keywords: ["C3298"]
 helpviewer_keywords: ["C3298"]
-ms.assetid: 458c2680-95bb-4d5e-895f-ce4115844193
 ---
 # Compiler Error C3298
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3296"
 title: "Compiler Error C3296"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3296"
+ms.date: 11/04/2016
 f1_keywords: ["C3296"]
 helpviewer_keywords: ["C3296"]
-ms.assetid: fc4c9dcd-16cf-4eee-a1ac-c43e7c29e443
 ---
 # Compiler Error C3296
 

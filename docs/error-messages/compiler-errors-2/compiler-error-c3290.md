@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3290"
 title: "Compiler Error C3290"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3290"
+ms.date: 11/04/2016
 f1_keywords: ["C3290"]
 helpviewer_keywords: ["C3290"]
-ms.assetid: 0baf684b-1143-4953-ac99-a2fa267d8017
 ---
 # Compiler Error C3290
 

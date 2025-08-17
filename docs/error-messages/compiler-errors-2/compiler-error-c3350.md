@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3350"
 title: "Compiler Error C3350"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3350"
+ms.date: 11/04/2016
 f1_keywords: ["C3350"]
 helpviewer_keywords: ["C3350"]
-ms.assetid: cfbbc338-92b5-4f34-999e-aa2d2376bc70
 ---
 # Compiler Error C3350
 

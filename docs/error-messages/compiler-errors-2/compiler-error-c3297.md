@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3297"
 title: "Compiler Error C3297"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3297"
+ms.date: 11/04/2016
 f1_keywords: ["C3297"]
 helpviewer_keywords: ["C3297"]
-ms.assetid: 2a718b4c-6cdb-4418-92c0-fc3a259431c4
 ---
 # Compiler Error C3297
 

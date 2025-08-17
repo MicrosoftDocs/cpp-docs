@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3282"
 title: "Compiler Error C3282"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3282"
+ms.date: 11/04/2016
 f1_keywords: ["C3282"]
 helpviewer_keywords: ["C3282"]
-ms.assetid: bac2ac89-c360-4c24-bb81-c20c62ece9ba
 ---
 # Compiler Error C3282
 

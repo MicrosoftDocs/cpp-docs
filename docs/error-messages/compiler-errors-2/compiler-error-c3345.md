@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3345"
 title: "Compiler Error C3345"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3345"
+ms.date: 11/04/2016
 f1_keywords: ["C3345"]
 helpviewer_keywords: ["C3345"]
-ms.assetid: 1dda4c79-73bb-441b-b939-746154c3afba
 ---
 # Compiler Error C3345
 

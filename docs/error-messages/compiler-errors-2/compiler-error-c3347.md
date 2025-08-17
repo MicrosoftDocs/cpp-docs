@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3347"
 title: "Compiler Error C3347"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3347"
+ms.date: 11/04/2016
 f1_keywords: ["C3347"]
 helpviewer_keywords: ["C3347"]
-ms.assetid: e939ad29-0b78-4681-9618-9bdae5675cee
 ---
 # Compiler Error C3347
 

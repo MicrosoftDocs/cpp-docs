@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3333"
 title: "Compiler Error C3333"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3333"
+ms.date: 11/04/2016
 f1_keywords: ["C3333"]
 helpviewer_keywords: ["C3333"]
-ms.assetid: 51693978-fba6-435a-a696-74735cc875de
 ---
 # Compiler Error C3333
 

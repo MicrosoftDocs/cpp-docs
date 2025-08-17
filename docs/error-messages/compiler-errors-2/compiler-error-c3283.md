@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3283"
 title: "Compiler Error C3283"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3283"
+ms.date: 11/04/2016
 f1_keywords: ["C3283"]
 helpviewer_keywords: ["C3283"]
-ms.assetid: c51d912c-cde3-4928-904e-26734c8954ce
 ---
 # Compiler Error C3283
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3288"
 title: "Compiler Error C3288"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3288"
+ms.date: 11/04/2016
 f1_keywords: ["C3288"]
 helpviewer_keywords: ["C3288"]
-ms.assetid: ed08a540-9751-46e1-9cbe-c51d6a49ffab
 ---
 # Compiler Error C3288
 

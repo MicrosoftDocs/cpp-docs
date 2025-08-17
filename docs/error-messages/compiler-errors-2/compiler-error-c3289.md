@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3289"
 title: "Compiler Error C3289"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3289"
+ms.date: 11/04/2016
 f1_keywords: ["C3289"]
 helpviewer_keywords: ["C3289"]
-ms.assetid: 3c1c623b-7fcf-43ab-a89a-8722532a8d29
 ---
 # Compiler Error C3289
 

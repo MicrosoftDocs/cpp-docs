@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3285"
 title: "Compiler Error C3285"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3285"
+ms.date: 11/04/2016
 f1_keywords: ["C3285"]
 helpviewer_keywords: ["C3285"]
-ms.assetid: 04e8f210-d67e-4810-b153-e1efe2986c8f
 ---
 # Compiler Error C3285
 

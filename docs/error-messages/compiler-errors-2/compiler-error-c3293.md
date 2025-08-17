@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3293"
 title: "Compiler Error C3293"
-ms.date: "07/21/2017"
+description: "Learn more about: Compiler Error C3293"
+ms.date: 07/21/2017
 f1_keywords: ["C3293"]
 helpviewer_keywords: ["C3293"]
-ms.assetid: b772cf98-52e0-4e24-be23-1f5d87d999ac
 ---
 # Compiler Error C3293
 
