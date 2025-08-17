@@ -8,7 +8,7 @@ ms.assetid: 10ab3e17-4a9f-4120-bab5-21473869b70f
 ---
 # Compiler Error C3265
 
-cannot declare a managed 'managed construct' in an unmanaged 'unmanaged construct'
+> cannot declare a managed 'managed construct' in an unmanaged 'unmanaged construct'
 
 You cannot include a managed object in an unmanaged context.
 

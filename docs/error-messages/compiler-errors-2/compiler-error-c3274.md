@@ -8,7 +8,7 @@ ms.assetid: 1f03f18e-b569-48eb-9249-11c70122a305
 ---
 # Compiler Error C3274
 
-__finally/finally without matching try
+> __finally/finally without matching try
 
 A [__finally](../../cpp/try-finally-statement.md) or [finally](../../dotnet/finally.md) statement was found without a matching **`try`**. To resolve this, either delete the **`__finally`** statement or add a **`try`** statement for the **`__finally`**.
 

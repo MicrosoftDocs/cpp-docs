@@ -8,7 +8,7 @@ ms.assetid: 94ece687-2364-4f7a-8ebb-7afd3ae9d63d
 ---
 # Compiler Error C3264
 
-'class' : a class-constructor cannot have a return type
+> 'class' : a class-constructor cannot have a return type
 
 Class constructors cannot have return types.
 

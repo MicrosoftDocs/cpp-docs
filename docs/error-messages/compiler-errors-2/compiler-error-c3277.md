@@ -8,7 +8,7 @@ ms.assetid: 8ac5f476-e30c-4879-92c6-f03cdbd74045
 ---
 # Compiler Error C3277
 
-cannot define an unmanaged enum 'enum' inside managed 'type'
+> cannot define an unmanaged enum 'enum' inside managed 'type'
 
 An enumeration was defined incorrectly inside a managed type.
 

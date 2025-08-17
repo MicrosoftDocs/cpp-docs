@@ -8,7 +8,7 @@ ms.assetid: 16d8bd1d-2e30-4c6a-a07f-0c4f3342fab5
 ---
 # Compiler Error C3271
 
-'member': invalid value 'value' for the FieldOffset attribute
+> 'member': invalid value 'value' for the FieldOffset attribute
 
 A negative number was passed to the **FieldOffset** attribute.
 

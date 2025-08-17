@@ -8,7 +8,7 @@ ms.assetid: 7375c099-acb7-42f6-898d-57cfefa010b8
 ---
 # Compiler Error C3266
 
-'class' : a class-constructor must have a 'void' parameter list
+> 'class' : a class-constructor must have a 'void' parameter list
 
 Class-constructors in a class using /clr programming cannot take parameters.
 

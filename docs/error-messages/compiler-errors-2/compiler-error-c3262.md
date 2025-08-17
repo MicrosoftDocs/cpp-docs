@@ -8,7 +8,7 @@ ms.assetid: 3e74b9aa-de3c-4492-9331-ee73012b958b
 ---
 # Compiler Error C3262
 
-invalid array indexing: '#' dimension(s) specified for '#'-dimensional 'array type'
+> invalid array indexing: '#' dimension(s) specified for '#'-dimensional 'array type'
 
 An array was improperly subscripted. The number of indices may not match the number of dimensions in the array.
 

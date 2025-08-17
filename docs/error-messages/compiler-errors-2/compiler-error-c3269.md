@@ -8,7 +8,7 @@ ms.assetid: c575f067-244d-4dd5-bf58-9e7630ea58b7
 ---
 # Compiler Error C3269
 
-'function' : a member-function of a managed or WinRTtype cannot be declared with '...'
+> 'function' : a member-function of a managed or WinRTtype cannot be declared with '...'
 
 Managed and WinRT class member functions cannot declare variable-length parameter lists.
 

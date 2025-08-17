@@ -8,7 +8,7 @@ ms.assetid: 70e6e76b-7415-48f5-a61e-2ed50caf08e4
 ---
 # Compiler Error C3270
 
-'field': the FieldOffset attribute can only be used in the context of StructLayout(Explicit), in which case it is required
+> 'field': the FieldOffset attribute can only be used in the context of StructLayout(Explicit), in which case it is required
 
 A field was marked with **FieldOffset**, which is only allowed when **StructLayout(Explicit)** is in effect.
 

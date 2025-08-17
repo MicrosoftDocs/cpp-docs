@@ -8,7 +8,7 @@ ms.assetid: 639afc20-984c-4a95-be35-8bf9409f02d5
 ---
 # Compiler Error C3279
 
-partial and explicit specializations as well as explicit instantiations of class templates declared in the cli namespace are disallowed
+> partial and explicit specializations as well as explicit instantiations of class templates declared in the cli namespace are disallowed
 
 The `cli` namespace is defined by Microsoft and contains pseudo-templates. The Microsoft C++ compiler does not allow user-defined, partial and explicit specializations, and explicit instantiations of class templates in this namespace.
 
