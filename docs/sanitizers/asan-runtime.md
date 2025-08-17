@@ -121,7 +121,7 @@ set ASAN_OPTIONS=alloc_dealloc_mismatch=1:symbolize=0
 
 Or add the following function to your code:
 
-```C++
+```cpp
 extern "C" const char* __asan_default_options()
 {
   return "alloc_dealloc_mismatch=1:symbolize=0";
