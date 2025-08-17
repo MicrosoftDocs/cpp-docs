@@ -16,7 +16,7 @@ A trivial property cannot be named **`default`**. See [property](../../extension
 
 ## Example
 
-The following sample generates C3291.
+The following example generates C3291.
 
 ```cpp
 // C3291.cpp

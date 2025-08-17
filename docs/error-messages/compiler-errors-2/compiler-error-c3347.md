@@ -16,7 +16,7 @@ A required argument was not passed to the [idl_module](../../windows/attributes/
 
 ## Example
 
-The following sample generates C3347:
+The following example generates C3347:
 
 ```cpp
 // C3347.cpp

@@ -16,7 +16,7 @@ A property was declared incorrectly. Accessors must be defined for an indexed pr
 
 ## Example
 
-The following sample generates C3289.
+The following example generates C3289.
 
 ```cpp
 // C3289.cpp

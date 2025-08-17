@@ -16,7 +16,7 @@ An exported user-defined type (UDT), which could be a struct, class, enum, or un
 
 ## Example
 
-The following sample generates C3320:
+The following example generates C3320:
 
 ```cpp
 // C3320.cpp

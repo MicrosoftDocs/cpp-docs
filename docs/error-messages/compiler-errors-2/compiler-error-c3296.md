@@ -18,7 +18,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 ## Example
 
-The following sample generates C3296.
+The following example generates C3296.
 
 ```cpp
 // C3296.cpp

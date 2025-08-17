@@ -18,7 +18,7 @@ See [for each, in](../../dotnet/for-each-in.md) for more information.
 
 ## Example
 
-The following sample generates C3285.
+The following example generates C3285.
 
 ```cpp
 // C3285.cpp

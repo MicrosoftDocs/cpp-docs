@@ -16,7 +16,7 @@ A storage class can't be specified on an iteration variable. For more informatio
 
 ## Example
 
-The following sample generates C3286, and also shows correct usage.
+The following example generates C3286, and also shows correct usage.
 
 ```cpp
 // C3286.cpp

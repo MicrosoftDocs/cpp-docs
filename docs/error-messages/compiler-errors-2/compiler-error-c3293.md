@@ -18,7 +18,7 @@ An indexed property was accessed incorrectly.  See [How to: Use Properties in C+
 
 ## Example
 
-The following sample generates C3293 in Visual Studio 2015 and earlier.
+The following example generates C3293 in Visual Studio 2015 and earlier.
 
 ```cpp
 // C3293.cpp

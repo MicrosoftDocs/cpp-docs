@@ -18,7 +18,7 @@ For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../
 
 ## Example
 
-The following sample generates C3297.
+The following example generates C3297.
 
 ```cpp
 // C3297.cpp

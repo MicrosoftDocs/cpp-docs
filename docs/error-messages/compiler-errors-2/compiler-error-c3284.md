@@ -16,7 +16,7 @@ A virtual generic function must use the same constraints as a virtual function w
 
 ## Example
 
-The following sample generates C3284:
+The following example generates C3284:
 
 ```cpp
 // C3284.cpp

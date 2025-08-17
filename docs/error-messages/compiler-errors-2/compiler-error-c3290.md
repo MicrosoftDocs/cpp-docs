@@ -18,7 +18,7 @@ See [property](../../extensions/property-cpp-component-extensions.md) and [Track
 
 ## Example
 
-The following sample generates C3290.
+The following example generates C3290.
 
 ```cpp
 // C3290.cpp

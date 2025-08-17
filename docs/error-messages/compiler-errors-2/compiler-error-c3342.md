@@ -20,7 +20,7 @@ For more information, see [User-Defined Attributes](../../extensions/user-define
 
 ## Example
 
-The following sample generates C3342.
+The following example generates C3342.
 
 ```cpp
 // C3342.cpp

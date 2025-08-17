@@ -16,7 +16,7 @@ The value that you pass to the name property of the module attribute cannot be a
 
 ## Example
 
-The following sample generates C3309:
+The following example generates C3309:
 
 ```cpp
 // C3309.cpp

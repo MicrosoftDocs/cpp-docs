@@ -20,7 +20,7 @@ For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../
 
 ## Example
 
-The following sample generates C3299.
+The following example generates C3299.
 
 ```cpp
 // C3299.cpp

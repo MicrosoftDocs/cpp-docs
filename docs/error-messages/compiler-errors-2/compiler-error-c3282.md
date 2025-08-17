@@ -16,7 +16,7 @@ A generic parameter list was used incorrectly.  For more information, see [Gener
 
 ## Example
 
-The following sample generates C3282 and shows how to fix it.
+The following example generates C3282 and shows how to fix it.
 
 ```cpp
 // C3282.cpp

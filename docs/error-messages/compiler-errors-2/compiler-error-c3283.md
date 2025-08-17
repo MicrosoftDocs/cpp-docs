@@ -16,7 +16,7 @@ A CLR [interface](../../extensions/interface-class-cpp-component-extensions.md) 
 
 ## Example
 
-The following sample generates C3283:
+The following example generates C3283:
 
 ```cpp
 // C3283.cpp

@@ -16,7 +16,7 @@ The compiler detected an illegal dereference of a handle type. You can dereferen
 
 ## Example
 
-The following sample generates C3288.
+The following example generates C3288.
 
 ```cpp
 // C3288.cpp

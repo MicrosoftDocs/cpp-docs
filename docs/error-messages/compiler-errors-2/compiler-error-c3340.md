@@ -16,7 +16,7 @@ The [restricted](../../windows/attributes/restricted.md) attribute and the [defa
 
 ## Example
 
-The following sample generates C3340:
+The following example generates C3340:
 
 ```cpp
 // C3340.cpp

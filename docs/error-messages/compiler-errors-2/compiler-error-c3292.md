@@ -16,7 +16,7 @@ The cli namespace cannot be declared in your code.  For more information, see [P
 
 ## Example
 
-The following sample generates C3292.
+The following example generates C3292.
 
 ```cpp
 // C3292.cpp
