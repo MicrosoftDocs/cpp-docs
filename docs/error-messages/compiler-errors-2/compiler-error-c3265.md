@@ -10,7 +10,11 @@ ms.assetid: 10ab3e17-4a9f-4120-bab5-21473869b70f
 
 > cannot declare a managed 'managed construct' in an unmanaged 'unmanaged construct'
 
+## Remarks
+
 You cannot include a managed object in an unmanaged context.
+
+## Example
 
 The following sample reproduces C3265:
 

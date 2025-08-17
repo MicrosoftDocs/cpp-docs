@@ -10,7 +10,11 @@ ms.assetid: 16d8bd1d-2e30-4c6a-a07f-0c4f3342fab5
 
 > 'member': invalid value 'value' for the FieldOffset attribute
 
+## Remarks
+
 A negative number was passed to the **FieldOffset** attribute.
+
+## Example
 
 The following sample generates C3271:
 

@@ -10,7 +10,11 @@ ms.assetid: 7375c099-acb7-42f6-898d-57cfefa010b8
 
 > 'class' : a class-constructor must have a 'void' parameter list
 
+## Remarks
+
 Class-constructors in a class using /clr programming cannot take parameters.
+
+## Example
 
 The following sample generates C3266:
 

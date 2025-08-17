@@ -10,7 +10,11 @@ ms.assetid: 8ac5f476-e30c-4879-92c6-f03cdbd74045
 
 > cannot define an unmanaged enum 'enum' inside managed 'type'
 
+## Remarks
+
 An enumeration was defined incorrectly inside a managed type.
+
+## Example
 
 The following sample generates C3277:
 

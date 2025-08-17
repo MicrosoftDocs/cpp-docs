@@ -10,9 +10,13 @@ ms.assetid: aa9ad096-e9ac-41c7-8ad9-b966751c7c75
 
 > 'method' : cannot reduce accessibility of a virtual method in a managed or WinRT type
 
+## Remarks
+
 A class that implements a virtual method from a base class or any method from an interface cannot reduce the access of that method.
 
 Note that all methods in an interface are public.
+
+## Example
 
 The following sample generates C3252 and shows how to fix it:
 

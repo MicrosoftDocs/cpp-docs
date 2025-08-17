@@ -10,7 +10,11 @@ ms.assetid: 7cdf254d-f207-4116-a1bf-7386f3b82a6f
 
 > 'symbol' : symbol requires FieldOffset, as it is a member of type typename defined with StructLayout(LayoutKind::Explicit)
 
+## Remarks
+
 When `StructLayout(LayoutKind::Explicit)` is in effect, fields must be marked with `FieldOffset`.
+
+## Example
 
 The following sample generates C3272:
 

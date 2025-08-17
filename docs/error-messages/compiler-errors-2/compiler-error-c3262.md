@@ -10,7 +10,11 @@ ms.assetid: 3e74b9aa-de3c-4492-9331-ee73012b958b
 
 > invalid array indexing: '#' dimension(s) specified for '#'-dimensional 'array type'
 
+## Remarks
+
 An array was improperly subscripted. The number of indices may not match the number of dimensions in the array.
+
+## Example
 
 The following sample generates C3262:
 

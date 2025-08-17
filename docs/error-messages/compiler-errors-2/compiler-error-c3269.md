@@ -10,7 +10,11 @@ ms.assetid: c575f067-244d-4dd5-bf58-9e7630ea58b7
 
 > 'function' : a member-function of a managed or WinRTtype cannot be declared with '...'
 
+## Remarks
+
 Managed and WinRT class member functions cannot declare variable-length parameter lists.
+
+## Example
 
 The following sample generates C3269 and shows how to fix it:
 

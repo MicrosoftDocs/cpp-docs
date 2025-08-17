@@ -10,6 +10,8 @@ ms.assetid: 541c163e-5ee9-457c-a1e5-da860788b10d
 
 > cannot invoke base class method on a value type instance
 
+## Remarks
+
 The following error occurs because `GetClass` is a member of `Microsoft.Runtime.Object`, not of `Microsoft.Runtime.Integer4`.
 
 This error is obsolete in Visual Studio 2022 and later versions.

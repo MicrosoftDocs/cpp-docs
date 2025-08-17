@@ -10,7 +10,11 @@ ms.assetid: 86dc5bbc-8818-4786-a728-9334268d308b
 
 > 'class' : a member-function of a managed type cannot be compiled as an unmanaged function
 
+## Remarks
+
 Managed class member functions cannot be compiled as unmanaged functions.
+
+## Example
 
 The following sample generates C3280:
 

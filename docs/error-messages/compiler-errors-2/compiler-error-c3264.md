@@ -10,7 +10,11 @@ ms.assetid: 94ece687-2364-4f7a-8ebb-7afd3ae9d63d
 
 > 'class' : a class-constructor cannot have a return type
 
+## Remarks
+
 Class constructors cannot have return types.
+
+## Example
 
 The following sample generates C3264:
 
