@@ -11,13 +11,13 @@ The AddressSanitizer runtime library intercepts common memory allocation functio
 
 When compiling with `cl /fsanitize=address`, the compiler generates instructions to manage and check [shadow bytes](./asan-shadow-bytes.md). Your program uses this instrumentation to check memory accesses on the stack, in the heap, or in the global scope. The compiler also produces metadata describing stack and global variables. This metadata enables the runtime to generate precise error diagnostics: function names, lines, and columns in your source code. Combined, the compiler checks and runtime libraries can precisely diagnose many types of [memory safety bugs](./asan-error-examples.md) if they're encountered at run-time.
 
-The list of runtime libraries for linking to the AddressSanitizer runtime, as of Visual Studio 17.7 Preview 3, follows. For more information about the `/MT` (statically link the runtime) and `/MD` (dynamically link the redist at runtime) options, see [/MD, /MT, /LD (Use Run-Time Library)](../build/reference/md-mt-ld-use-run-time-library.md).
+The list of runtime libraries for linking to the AddressSanitizer runtime, as of Visual Studio 17.7 Preview 3, follows. For more information about the `/MT` (statically link the runtime) and `/MD` (dynamically link the redist at runtime) options, see [`/MD`, `/MT`, `/LD` (Use Run-Time Library)](../build/reference/md-mt-ld-use-run-time-library.md).
 
 > [!NOTE]
 > In the following table, *`{arch}`* is either *`i386`* or *`x86_64`*.
 > These libraries use Clang conventions for architecture names. MSVC conventions are normally `x86` and `x64` rather than `i386` and `x86_64`, but they refer to the same architectures.
 
-| CRT option | AddressSanitizer runtime library (.lib) | Address runtime binary (.dll)
+| CRT option | AddressSanitizer runtime library (`.lib`) | Address runtime binary (`.dll`)
 |--|--|--|
 | `/MT` or `/MTd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_static_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
 | `/MD` or `/MDd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
@@ -130,8 +130,8 @@ extern "C" const char* __asan_default_options()
 
 ### Unsupported AddressSanitizer options
 
-- detect_container_overflow
-- unmap_shadow_on_exit
+- `detect_container_overflow`
+- `unmap_shadow_on_exit`
 
 > [!NOTE]
 > The AddressSanitizer runtime option `halt_on_error` doesn't function the way you might expect. In both the Clang and the MSVC runtime libraries, many error types are considered **non-continuable**, including most memory corruption errors.
@@ -152,9 +152,9 @@ For more information, see the [Differences with Clang 12.0](asan.md#differences)
   - If set to `"ignore"`, the runtime doesn't attempt to correct any overwritten functions and proceeds with execution.
 
 - `windows_fast_fail_on_error`
-Boolean (false by default), set to `true` to enable the process to terminate with a __fastfail(71) after printing the error report.
+Boolean (`false` by default), set to `true` to enable the process to terminate with a `__fastfail(71)` after printing the error report.
 >[!NOTE]
->When abort_on_error value is set to true, on Windows the program terminates with an exit(3). In order to not change current behavior we decided to introduce this new option instead. If both abort_on_error and windows_fast_fail_on_error are true, the program will exit with the __fastfail.
+>When `abort_on_error` value is set to `true`, on Windows the program terminates with an `exit(3)`. In order to not change current behavior we decided to introduce this new option instead. If both `abort_on_error` and `windows_fast_fail_on_error` are `true`, the program will exit with the `__fastfail`.
 
 - `windows_hook_legacy_allocators`
   Boolean, set to `false` to disable interception of [`GlobalAlloc`](/windows/win32/api/winbase/nf-winbase-globalalloc) and [`LocalAlloc`](/windows/win32/api/winbase/nf-winbase-localalloc) allocators.
