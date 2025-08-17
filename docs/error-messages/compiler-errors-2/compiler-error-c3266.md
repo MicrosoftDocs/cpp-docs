@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3266"
 title: "Compiler Error C3266"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3266"
+ms.date: 11/04/2016
 f1_keywords: ["C3266"]
 helpviewer_keywords: ["C3266"]
-ms.assetid: 7375c099-acb7-42f6-898d-57cfefa010b8
 ---
 # Compiler Error C3266
 

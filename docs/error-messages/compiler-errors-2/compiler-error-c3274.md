@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3274"
 title: "Compiler Error C3274"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3274"
+ms.date: 11/04/2016
 f1_keywords: ["C3274"]
 helpviewer_keywords: ["C3274"]
-ms.assetid: 1f03f18e-b569-48eb-9249-11c70122a305
 ---
 # Compiler Error C3274
 

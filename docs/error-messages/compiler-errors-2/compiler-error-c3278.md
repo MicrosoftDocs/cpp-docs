@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3278"
 title: "Compiler Error C3278"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3278"
+ms.date: 11/04/2016
 f1_keywords: ["C3278"]
 helpviewer_keywords: ["C3278"]
-ms.assetid: 56f818f5-85a6-4792-843b-54fe16327658
 ---
 # Compiler Error C3278
 

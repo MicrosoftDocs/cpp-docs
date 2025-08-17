@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3280"
 title: "Compiler Error C3280"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3280"
+ms.date: 11/04/2016
 f1_keywords: ["C3280"]
 helpviewer_keywords: ["C3280"]
-ms.assetid: 86dc5bbc-8818-4786-a728-9334268d308b
 ---
 # Compiler Error C3280
 

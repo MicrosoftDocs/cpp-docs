@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3277"
 title: "Compiler Error C3277"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3277"
+ms.date: 11/04/2016
 f1_keywords: ["C3277"]
 helpviewer_keywords: ["C3277"]
-ms.assetid: 8ac5f476-e30c-4879-92c6-f03cdbd74045
 ---
 # Compiler Error C3277
 

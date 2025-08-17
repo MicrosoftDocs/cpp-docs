@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3270"
 title: "Compiler Error C3270"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3270"
+ms.date: 11/04/2016
 f1_keywords: ["C3270"]
 helpviewer_keywords: ["C3270"]
-ms.assetid: 70e6e76b-7415-48f5-a61e-2ed50caf08e4
 ---
 # Compiler Error C3270
 

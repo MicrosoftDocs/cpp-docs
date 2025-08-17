@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3275"
 title: "Compiler Error C3275"
+description: "Learn more about: Compiler Error C3275"
 ms.date: 06/01/2022
 f1_keywords: ["C3275"]
 helpviewer_keywords: ["C3275"]
-ms.assetid: 5752680f-7d3e-4c42-ba9c-845e09d32e7a
 ---
 # Compiler Error C3275
 
