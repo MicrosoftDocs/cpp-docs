@@ -8,7 +8,7 @@ ms.assetid: 2a718b4c-6cdb-4418-92c0-fc3a259431c4
 ---
 # Compiler Error C3297
 
-'constraint_2' : cannot use 'constraint_1' as a constraint because 'constraint_1' has the value constraint
+> 'constraint_2' : cannot use 'constraint_1' as a constraint because 'constraint_1' has the value constraint
 
 Value classes are sealed. If a constraint is a value class, another constraint can never derive from it.
 

@@ -8,7 +8,7 @@ ms.assetid: 23b12298-b92a-4717-8380-f165c998cb8a
 ---
 # Compiler Error C3340
 
-'interface': interface cannot be both 'restricted' and 'default' in coclass 'class'
+> 'interface': interface cannot be both 'restricted' and 'default' in coclass 'class'
 
 The [restricted](../../windows/attributes/restricted.md) attribute and the [default](../../windows/attributes/default-cpp.md) attribute are mutually exclusive.
 

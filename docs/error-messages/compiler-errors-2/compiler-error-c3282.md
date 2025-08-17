@@ -8,7 +8,7 @@ ms.assetid: bac2ac89-c360-4c24-bb81-c20c62ece9ba
 ---
 # Compiler Error C3282
 
-generic parameter lists can only appear on managed or WinRTclasses, structs, or functions
+> generic parameter lists can only appear on managed or WinRTclasses, structs, or functions
 
 A generic parameter list was used incorrectly.  For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 

@@ -8,7 +8,7 @@ ms.assetid: 75ee16e3-7d4e-4c41-b3cb-64e9849c3aab
 ---
 # Compiler Error C3309
 
-'macro_name': module name cannot be a macro or a keyword
+> 'macro_name': module name cannot be a macro or a keyword
 
 The value that you pass to the name property of the module attribute cannot be a symbol for the preprocessor to expand; it must be a string literal.
 

@@ -8,7 +8,7 @@ ms.assetid: 04e8f210-d67e-4810-b153-e1efe2986c8f
 ---
 # Compiler Error C3285
 
-for each statement cannot operate on variables of type 'type'
+> for each statement cannot operate on variables of type 'type'
 
 The `for each` statement repeats a group of embedded statements for each element in an array or an object collection.
 

@@ -8,7 +8,7 @@ ms.assetid: e582f316-e9db-4d27-9c70-fdfa737a9d5f
 ---
 # Compiler Error C3284
 
-the constraints for generic parameter 'parameter' of function 'function' must match the constraints for generic parameter 'parameter' of function 'function'
+> the constraints for generic parameter 'parameter' of function 'function' must match the constraints for generic parameter 'parameter' of function 'function'
 
 A virtual generic function must use the same constraints as a virtual function with the same name and set of arguments in the base class.
 

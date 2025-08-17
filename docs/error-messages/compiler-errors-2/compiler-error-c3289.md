@@ -8,7 +8,7 @@ ms.assetid: 3c1c623b-7fcf-43ab-a89a-8722532a8d29
 ---
 # Compiler Error C3289
 
-'property' : a trivial property cannot be indexed
+> 'property' : a trivial property cannot be indexed
 
 A property was declared incorrectly. Accessors must be defined for an indexed property. See [property](../../extensions/property-cpp-component-extensions.md) for more information.
 

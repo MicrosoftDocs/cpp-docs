@@ -8,7 +8,7 @@ ms.assetid: 7cabdf01-bceb-404f-9401-cdd9c7fc1641
 ---
 # Compiler Error C3299
 
-'member_function' : cannot specify constraints, they are inherited from the base method
+> 'member_function' : cannot specify constraints, they are inherited from the base method
 
 When overriding a generic member function, you cannot specify constraint clauses (repeating the constraints implies that the constraints are not inherited).
 

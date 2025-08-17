@@ -8,7 +8,7 @@ ms.assetid: e939ad29-0b78-4681-9618-9bdae5675cee
 ---
 # Compiler Error C3347
 
-'arg': required argument is not specified in attribute idl_module
+> 'arg': required argument is not specified in attribute idl_module
 
 A required argument was not passed to the [idl_module](../../windows/attributes/idl-module.md) attribute.
 

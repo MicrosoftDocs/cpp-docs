@@ -8,7 +8,7 @@ ms.assetid: 458c2680-95bb-4d5e-895f-ce4115844193
 ---
 # Compiler Error C3298
 
-'constraint_1' : cannot use 'constraint_2' as a constraint because 'constraint_2' has the ref constraint and 'constraint_1' has the value constraint
+> 'constraint_1' : cannot use 'constraint_2' as a constraint because 'constraint_2' has the ref constraint and 'constraint_1' has the value constraint
 
 You cannot specify mutually exclusive characteristics for a constraint. For example, a generic type parameter cannot be constrained to both a value type and a reference type.
 

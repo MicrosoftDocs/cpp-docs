@@ -8,7 +8,7 @@ ms.assetid: b772cf98-52e0-4e24-be23-1f5d87d999ac
 ---
 # Compiler Error C3293
 
-'accessor': use 'default' to access the default property (indexer) for class 'type'
+> 'accessor': use 'default' to access the default property (indexer) for class 'type'
 
 An indexed property was accessed incorrectly.  See [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md) for more information.
 

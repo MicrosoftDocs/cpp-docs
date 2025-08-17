@@ -8,7 +8,7 @@ ms.assetid: 5c6d784f-bebe-4f7e-8615-44ca6f78bfba
 ---
 # Compiler Error C3342
 
-'attribute': ambiguous attribute
+> 'attribute': ambiguous attribute
 
 The compiler found more than one definition of an attribute.
 
