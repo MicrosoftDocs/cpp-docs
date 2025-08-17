@@ -10,6 +10,8 @@ ms.assetid: 0baf684b-1143-4953-ac99-a2fa267d8017
 
 > 'type' : a trivial property cannot have reference type
 
+## Remarks
+
 A property was declared incorrectly. When you declare a trivial property, the compiler creates a variable that the property will update, and it is not possible to have a tracking reference variable in a class.
 
 See [property](../../extensions/property-cpp-component-extensions.md) and [Tracking Reference Operator](../../extensions/tracking-reference-operator-cpp-component-extensions.md) for more information.

@@ -10,7 +10,11 @@ ms.assetid: e582f316-e9db-4d27-9c70-fdfa737a9d5f
 
 > the constraints for generic parameter 'parameter' of function 'function' must match the constraints for generic parameter 'parameter' of function 'function'
 
+## Remarks
+
 A virtual generic function must use the same constraints as a virtual function with the same name and set of arguments in the base class.
+
+## Example
 
 The following sample generates C3284:
 

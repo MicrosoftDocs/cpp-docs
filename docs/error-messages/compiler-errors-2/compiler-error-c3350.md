@@ -10,7 +10,11 @@ ms.assetid: cfbbc338-92b5-4f34-999e-aa2d2376bc70
 
 > 'delegate' : a delegate constructor expects number argument(s)
 
+## Remarks
+
 When you create an instance of a delegate, you must pass two arguments, an instance of the type containing the delegate function, and the function.
+
+## Example
 
 The following sample generates C3350:
 

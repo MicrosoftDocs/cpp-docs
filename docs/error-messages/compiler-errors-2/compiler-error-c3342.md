@@ -10,6 +10,8 @@ ms.assetid: 5c6d784f-bebe-4f7e-8615-44ca6f78bfba
 
 > 'attribute': ambiguous attribute
 
+## Remarks
+
 The compiler found more than one definition of an attribute.
 
 An attribute was defined more than once.

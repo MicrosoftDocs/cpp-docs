@@ -10,7 +10,11 @@ ms.assetid: c51d912c-cde3-4928-904e-26734c8954ce
 
 > 'type' : an interface cannot have an instance constructor
 
+## Remarks
+
 A CLR [interface](../../extensions/interface-class-cpp-component-extensions.md) cannot have an instance constructor.  A static constructor is allowed.
+
+## Example
 
 The following sample generates C3283:
 

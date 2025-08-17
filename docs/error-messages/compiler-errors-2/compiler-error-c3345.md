@@ -10,6 +10,8 @@ ms.assetid: 1dda4c79-73bb-441b-b939-746154c3afba
 
 > 'identifier': invalid identifier for module name
 
+## Remarks
+
 The *identifier* for a module contains one or more unacceptable characters. An identifier is valid if the first character is an alphabetical, underscore, or high ANSI (0x80-FF) character, and any subsequent character is an alphanumeric, underscore, or high ANSI character.
 
 ### To correct this error

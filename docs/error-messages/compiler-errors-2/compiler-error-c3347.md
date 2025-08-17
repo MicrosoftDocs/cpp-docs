@@ -10,7 +10,11 @@ ms.assetid: e939ad29-0b78-4681-9618-9bdae5675cee
 
 > 'arg': required argument is not specified in attribute idl_module
 
+## Remarks
+
 A required argument was not passed to the [idl_module](../../windows/attributes/idl-module.md) attribute.
+
+## Example
 
 The following sample generates C3347:
 

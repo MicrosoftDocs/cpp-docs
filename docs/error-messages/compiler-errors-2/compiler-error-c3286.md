@@ -10,6 +10,8 @@ ms.assetid: 554328c8-cf44-4f7d-a8d2-def74d28ecdd
 
 > '*specifier*': an iteration variable cannot have any storage-class specifiers
 
+## Remarks
+
 A storage class can't be specified on an iteration variable. For more information, see [Storage classes (C++)](../../cpp/storage-classes-cpp.md) and [for each, in](../../dotnet/for-each-in.md).
 
 ## Example
