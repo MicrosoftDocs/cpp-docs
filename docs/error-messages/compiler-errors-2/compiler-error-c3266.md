@@ -16,7 +16,7 @@ Class-constructors in a class using /clr programming cannot take parameters.
 
 ## Example
 
-The following sample generates C3266:
+The following example generates C3266:
 
 ```cpp
 // C3266.cpp

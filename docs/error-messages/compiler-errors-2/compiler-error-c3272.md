@@ -16,7 +16,7 @@ When `StructLayout(LayoutKind::Explicit)` is in effect, fields must be marked wi
 
 ## Example
 
-The following sample generates C3272:
+The following example generates C3272:
 
 ```cpp
 // C3272_2.cpp

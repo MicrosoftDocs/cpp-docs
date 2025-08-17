@@ -16,7 +16,7 @@ An explicit override was specified incorrectly. For example, you cannot specify 
 
 ## Example
 
-The following sample generates C3253:
+The following example generates C3253:
 
 ```cpp
 // C3253.cpp

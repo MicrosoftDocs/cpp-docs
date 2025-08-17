@@ -16,7 +16,7 @@ A negative number was passed to the **FieldOffset** attribute.
 
 ## Example
 
-The following sample generates C3271:
+The following example generates C3271:
 
 ```cpp
 // C3271.cpp

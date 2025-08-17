@@ -16,7 +16,7 @@ You cannot include a managed object in an unmanaged context.
 
 ## Example
 
-The following sample reproduces C3265:
+The following example reproduces C3265:
 
 ```cpp
 // C3265_2.cpp

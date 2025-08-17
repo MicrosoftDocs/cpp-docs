@@ -16,7 +16,7 @@ A [__finally](../../cpp/try-finally-statement.md) or [finally](../../dotnet/fina
 
 ## Example
 
-The following sample generates C3274:
+The following example generates C3274:
 
 ```cpp
 // C3274.cpp

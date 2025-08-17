@@ -16,7 +16,7 @@ Class constructors cannot have return types.
 
 ## Example
 
-The following sample generates C3264:
+The following example generates C3264:
 
 ```cpp
 // C3264_2.cpp

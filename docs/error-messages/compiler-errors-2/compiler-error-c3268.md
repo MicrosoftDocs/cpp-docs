@@ -18,7 +18,7 @@ See [Generics](../../extensions/generics-cpp-component-extensions.md) for more i
 
 ## Example
 
-The following sample generates C3268.
+The following example generates C3268.
 
 ```cpp
 // C3268.cpp

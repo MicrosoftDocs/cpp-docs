@@ -12,7 +12,7 @@ ms.assetid: 1d2ce9d9-222b-4cab-94e2-d2c1a9f5ebe0
 
 ## Example
 
-The following sample generates C3273:
+The following example generates C3273:
 
 ```cpp
 // C3273.cpp

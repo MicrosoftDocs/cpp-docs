@@ -16,7 +16,7 @@ Instances of a value type (see [Classes and Structs](../../extensions/classes-an
 
 ## Example
 
-The following sample generates C3255:
+The following example generates C3255:
 
 ```cpp
 // C3255.cpp

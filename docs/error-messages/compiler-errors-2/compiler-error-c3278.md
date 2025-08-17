@@ -16,7 +16,7 @@ A call was made to an interface method or a pure method, which is not allowed.
 
 ## Example
 
-The following sample generates C3278:
+The following example generates C3278:
 
 ```cpp
 // C3278_2.cpp

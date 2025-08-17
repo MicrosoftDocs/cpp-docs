@@ -16,7 +16,7 @@ An array was improperly subscripted. The number of indices may not match the num
 
 ## Example
 
-The following sample generates C3262:
+The following example generates C3262:
 
 ```cpp
 // C3262.cpp

@@ -16,7 +16,7 @@ Managed class member functions cannot be compiled as unmanaged functions.
 
 ## Example
 
-The following sample generates C3280:
+The following example generates C3280:
 
 ```cpp
 // C3280_2.cpp

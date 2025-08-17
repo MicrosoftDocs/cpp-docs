@@ -16,7 +16,7 @@ An enumeration was defined incorrectly inside a managed type.
 
 ## Example
 
-The following sample generates C3277:
+The following example generates C3277:
 
 ```cpp
 // C3277a.cpp

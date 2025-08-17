@@ -16,7 +16,7 @@ When you [explicitly override](../../cpp/explicit-overrides-cpp.md) a method, th
 
 ## Example
 
-The following sample generates C3254:
+The following example generates C3254:
 
 ```cpp
 // C3254.cpp
