@@ -16,7 +16,7 @@ Some attributes can be applied to more than one C++ construct, but arguments to 
 
 ## Example
 
-The following sample generates C3373:
+The following example generates C3373:
 
 ```cpp
 // C3373.cpp

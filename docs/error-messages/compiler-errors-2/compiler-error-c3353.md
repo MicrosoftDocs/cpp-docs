@@ -16,7 +16,7 @@ Delegates, declared with the [delegate](../../extensions/delegate-cpp-component-
 
 ## Example
 
-The following sample generates C3353:
+The following example generates C3353:
 
 ```cpp
 // C3353.cpp

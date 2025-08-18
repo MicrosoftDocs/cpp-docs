@@ -16,7 +16,7 @@ An attempt was made to compose delegates with different types.  See [How to: Def
 
 ## Example
 
-The following sample generates C3365:
+The following example generates C3365:
 
 ```cpp
 // C3365.cpp

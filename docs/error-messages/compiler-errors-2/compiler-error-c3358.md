@@ -16,7 +16,7 @@ The required symbol was not found.
 
 ## Example
 
-The following sample generates C3358:
+The following example generates C3358:
 
 ```cpp
 // C3358.cpp

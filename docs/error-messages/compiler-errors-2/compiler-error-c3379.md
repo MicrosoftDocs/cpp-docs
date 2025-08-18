@@ -18,7 +18,7 @@ When used with [/clr](../../build/reference/clr-common-language-runtime-compilat
 
 ## Example
 
-The following sample generates C3379:
+The following example generates C3379:
 
 ```cpp
 // C3379a.cpp

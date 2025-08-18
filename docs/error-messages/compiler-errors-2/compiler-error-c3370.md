@@ -16,7 +16,7 @@ Before you can use [idl_module](../../windows/attributes/idl-module.md) to speci
 
 ## Example
 
-The following sample generates C3370:
+The following example generates C3370:
 
 ```cpp
 // C3370.cpp

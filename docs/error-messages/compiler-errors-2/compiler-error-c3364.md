@@ -16,7 +16,7 @@ The second parameter of the delegate's constructor takes either the address of a
 
 ## Example
 
-The following sample generates C3364:
+The following example generates C3364:
 
 ```cpp
 // C3364_2.cpp

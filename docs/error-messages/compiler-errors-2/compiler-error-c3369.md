@@ -16,7 +16,7 @@ The [idl_module](../../windows/attributes/idl-module.md) usage where you define 
 
 ## Example
 
-The following sample generates C3369:
+The following example generates C3369:
 
 ```cpp
 // C3369.cpp

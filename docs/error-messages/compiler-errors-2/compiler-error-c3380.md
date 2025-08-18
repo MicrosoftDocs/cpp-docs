@@ -18,7 +18,7 @@ The `ref` and `value` keywords, when used with [/clr](../../build/reference/clr-
 
 ## Example
 
-The following sample generates C3380:
+The following example generates C3380:
 
 ```cpp
 // C3380_2.cpp

@@ -16,7 +16,7 @@ The value that was passed to the [uuid](../../windows/attributes/uuid-cpp-attrib
 
 ## Example
 
-The following sample generates C3360:
+The following example generates C3360:
 
 ```cpp
 // C3360.cpp

@@ -16,7 +16,7 @@ ms.assetid: f7ecf1aa-ed0a-4f73-81e5-62cf98f88ea1
 
 ## Example
 
-The following sample generates C3371:
+The following example generates C3371:
 
 ```cpp
 // C3371.cpp

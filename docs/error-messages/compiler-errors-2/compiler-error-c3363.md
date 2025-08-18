@@ -16,7 +16,7 @@ The [typeid](../../extensions/typeid-cpp-component-extensions.md) operator was u
 
 ## Example
 
-The following sample generates C3363.
+The following example generates C3363.
 
 ```cpp
 // C3363.cpp

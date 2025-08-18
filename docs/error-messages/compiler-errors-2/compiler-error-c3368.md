@@ -16,7 +16,7 @@ You can only use the [__stdcall](../../cpp/stdcall.md) or [__cdecl](../../cpp/cd
 
 ## Example
 
-The following sample generates C3368:
+The following example generates C3368:
 
 ```cpp
 // C3368.cpp

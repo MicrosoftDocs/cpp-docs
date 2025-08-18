@@ -16,7 +16,7 @@ For certain attributes, you must pass an interface name as a parameter.
 
 ## Example
 
-The following sample generates C3372:
+The following example generates C3372:
 
 ```cpp
 // C3372.cpp

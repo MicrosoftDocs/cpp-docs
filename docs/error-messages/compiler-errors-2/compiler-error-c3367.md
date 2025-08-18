@@ -18,7 +18,7 @@ For more information about unbound delegates, see [How to: Define and Use Delega
 
 ## Example
 
-The following sample generates C3367.
+The following example generates C3367.
 
 ```cpp
 // C3367.cpp

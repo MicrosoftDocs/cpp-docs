@@ -16,7 +16,7 @@ The compiler expected the address of a function declared **`static`**.
 
 ## Example
 
-The following sample generates C3351:
+The following example generates C3351:
 
 ```cpp
 // C3351a.cpp

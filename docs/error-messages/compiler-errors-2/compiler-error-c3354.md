@@ -26,7 +26,7 @@ The following types are invalid as return types for a **`delegate`**:
 
 ## Example
 
-The following sample generates C3354:
+The following example generates C3354:
 
 ```cpp
 // C3354_2.cpp
