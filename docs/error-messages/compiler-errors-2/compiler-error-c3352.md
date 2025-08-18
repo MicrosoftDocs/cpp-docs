@@ -10,9 +10,13 @@ ms.assetid: f233bed7-474e-425f-aad2-7801578169d4
 
 > 'function' : the specified function does not match the delegate type 'type'
 
+## Remarks
+
 The parameter lists for `function` and the delegate do not match.
 
 For more information, see [delegate  (C++ Component Extensions)](../../extensions/delegate-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3352:
 

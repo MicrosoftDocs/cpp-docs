@@ -10,4 +10,6 @@ ms.assetid: 6c1094f6-ac85-480a-b78b-e92fcf38641a
 
 > 'attribute': cannot call a multicast attribute with a fully qualified name
 
+## Remarks
+
 An attribute that is processed by more than one process, for example, the compiler and ATL provider, was specified incorrectly.

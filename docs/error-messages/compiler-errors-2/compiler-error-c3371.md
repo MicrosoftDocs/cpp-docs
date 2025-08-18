@@ -10,7 +10,11 @@ ms.assetid: f7ecf1aa-ed0a-4f73-81e5-62cf98f88ea1
 
 > 'idl_module': only the 'name' property is allowed here
 
+## Remarks
+
 [idl_module](../../windows/attributes/idl-module.md) usage directly on a function declaration cannot have any parameters other than name.
+
+## Example
 
 The following sample generates C3371:
 

@@ -10,6 +10,8 @@ ms.assetid: 41aa922f-608e-4f7a-ba66-451fc1161935
 
 > 'type' : 'typeid' can only be applied to a type
 
+## Remarks
+
 The [typeid](../../extensions/typeid-cpp-component-extensions.md) operator was used incorrectly.
 
 ## Example

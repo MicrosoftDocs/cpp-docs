@@ -10,7 +10,11 @@ ms.assetid: 98654741-60fe-4472-a6af-e580f8c0a6e1
 
 > 'delegate': delegate constructor: argument must be pointer to member function of managed class or global function
 
+## Remarks
+
 The second parameter of the delegate's constructor takes either the address of a member function or the address of a static member function of any class. Both are treated as simple addresses.
+
+## Example
 
 The following sample generates C3364:
 

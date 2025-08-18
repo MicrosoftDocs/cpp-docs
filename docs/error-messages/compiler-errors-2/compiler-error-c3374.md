@@ -10,7 +10,11 @@ ms.assetid: 41431299-bd20-47d4-a0c8-1334dd79018b
 
 > can't take address of 'function' unless creating delegate instance
 
+## Remarks
+
 The address of a function was taken in a context other than the creation of a delegate instance.
+
+## Example
 
 The following sample generates C3374:
 

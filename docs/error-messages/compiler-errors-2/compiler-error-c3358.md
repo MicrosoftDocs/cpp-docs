@@ -10,7 +10,11 @@ ms.assetid: 180b93df-e78f-441a-91fb-1594c681f7f0
 
 > 'symbol': symbol not found
 
+## Remarks
+
 The required symbol was not found.
+
+## Example
 
 The following sample generates C3358:
 

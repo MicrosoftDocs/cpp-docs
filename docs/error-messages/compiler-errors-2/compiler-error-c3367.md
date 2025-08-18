@@ -10,6 +10,8 @@ ms.assetid: e675d42b-f5b0-4d43-aab1-1f5024233102
 
 > 'static_member_function' : cannot use static function to create an unbound delegate
 
+## Remarks
+
 When you call an unbound delegate, you must pass an instance of an object. Since a static member function is called through the class name, you can only instantiate an unbound delegate with an instance member function.
 
 For more information about unbound delegates, see [How to: Define and Use Delegates (C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md).

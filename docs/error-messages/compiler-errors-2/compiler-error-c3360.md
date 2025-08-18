@@ -10,7 +10,11 @@ ms.assetid: 6acf983a-dbb6-422b-b045-a34bb4ba6761
 
 > 'string': cannot create name
 
+## Remarks
+
 The value that was passed to the [uuid](../../windows/attributes/uuid-cpp-attributes.md) attribute was not valid.
+
+## Example
 
 The following sample generates C3360:
 

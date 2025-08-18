@@ -10,6 +10,8 @@ ms.assetid: 875ec3a4-522c-4e3d-9b67-48808b857f6d
 
 > operator 'operator' : differing operands of type 'type1' and 'type2'
 
+## Remarks
+
 An attempt was made to compose delegates with different types.  See [How to: Define and Use Delegates (C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md) for more information about delegates.
 
 ## Example
