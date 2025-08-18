@@ -8,7 +8,7 @@ ms.assetid: efc55bcf-c16d-43c1-a36f-87a6165fa2a8
 ---
 # Compiler Error C3366
 
-'variable' : static data members of managed or WinRTtypes must be defined within the class definition
+> 'variable' : static data members of managed or WinRTtypes must be defined within the class definition
 
 You attempted to reference a static member of a WinRT or .NET class or interface outside the definition of that class or interface.
 

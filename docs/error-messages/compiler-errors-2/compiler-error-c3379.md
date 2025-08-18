@@ -8,7 +8,7 @@ ms.assetid: a66c2c4e-091c-4426-9cde-7c4cfb2ffce1
 ---
 # Compiler Error C3379
 
-'class' : a nested class cannot have an assembly access specifier as part of its declaration
+> 'class' : a nested class cannot have an assembly access specifier as part of its declaration
 
 When applied to a managed type, such as class or struct, the [public](../../cpp/public-cpp.md) and [private](../../cpp/private-cpp.md) keywords indicate whether the class will be exposed through assembly metadata. `public` or `private` cannot be applied to a nested class, which will inherit the assembly access of the enclosing class.
 

@@ -8,7 +8,7 @@ ms.assetid: 5bfd5be4-dfa9-4b33-9612-010561b40955
 ---
 # Compiler Error C3368
 
-'function declaration' : invalid calling convention for IDL
+> 'function declaration' : invalid calling convention for IDL
 
 You can only use the [__stdcall](../../cpp/stdcall.md) or [__cdecl](../../cpp/cdecl.md) calling conventions in an .idl file.
 

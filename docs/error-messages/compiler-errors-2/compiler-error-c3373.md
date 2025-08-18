@@ -8,7 +8,7 @@ ms.assetid: 6e7586c3-1a15-4773-ad20-f90090a400dc
 ---
 # Compiler Error C3373
 
-attribute 'attribute' takes no arguments except on a coclass
+> attribute 'attribute' takes no arguments except on a coclass
 
 Some attributes can be applied to more than one C++ construct, but arguments to the attribute may only be allowed on some constructs.
 

@@ -8,7 +8,7 @@ ms.assetid: 41aa922f-608e-4f7a-ba66-451fc1161935
 ---
 # Compiler Error C3363
 
-'type' : 'typeid' can only be applied to a type
+> 'type' : 'typeid' can only be applied to a type
 
 The [typeid](../../extensions/typeid-cpp-component-extensions.md) operator was used incorrectly.
 

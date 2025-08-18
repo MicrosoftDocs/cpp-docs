@@ -8,7 +8,7 @@ ms.assetid: 38ee39ed-03ff-4e6d-9104-f1977b96645d
 ---
 # Compiler Error C3372
 
-must specify at least 1 interface for attribute 'source' on a coclass
+> must specify at least 1 interface for attribute 'source' on a coclass
 
 For certain attributes, you must pass an interface name as a parameter.
 

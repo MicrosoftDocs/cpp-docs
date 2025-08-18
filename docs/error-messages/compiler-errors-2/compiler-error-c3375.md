@@ -8,7 +8,7 @@ ms.assetid: f1df78c6-e6ca-48f3-8b29-4e1710002bf3
 ---
 # Compiler Error C3375
 
-'function' : ambiguous delegate function
+> 'function' : ambiguous delegate function
 
 A delegate instantiation could have been to a static member function, or as an unbound delegate to an instance function, so the compiler issued this error.
 

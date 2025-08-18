@@ -8,7 +8,7 @@ ms.assetid: c021bbbe-1067-4f51-af4f-940d2b792eb5
 ---
 # Compiler Error C3351
 
-'object' : delegate constructor: second argument must be address of a static member function or global function
+> 'object' : delegate constructor: second argument must be address of a static member function or global function
 
 The compiler expected the address of a function declared **`static`**.
 

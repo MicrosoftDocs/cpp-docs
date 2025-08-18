@@ -8,7 +8,7 @@ ms.assetid: f233bed7-474e-425f-aad2-7801578169d4
 ---
 # Compiler Error C3352
 
-'function' : the specified function does not match the delegate type 'type'
+> 'function' : the specified function does not match the delegate type 'type'
 
 The parameter lists for `function` and the delegate do not match.
 

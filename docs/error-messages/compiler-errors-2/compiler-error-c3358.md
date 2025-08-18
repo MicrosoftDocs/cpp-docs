@@ -8,7 +8,7 @@ ms.assetid: 180b93df-e78f-441a-91fb-1594c681f7f0
 ---
 # Compiler Error C3358
 
-'symbol': symbol not found
+> 'symbol': symbol not found
 
 The required symbol was not found.
 

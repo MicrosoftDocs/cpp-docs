@@ -8,7 +8,7 @@ ms.assetid: e675d42b-f5b0-4d43-aab1-1f5024233102
 ---
 # Compiler Error C3367
 
-'static_member_function' : cannot use static function to create an unbound delegate
+> 'static_member_function' : cannot use static function to create an unbound delegate
 
 When you call an unbound delegate, you must pass an instance of an object. Since a static member function is called through the class name, you can only instantiate an unbound delegate with an instance member function.
 
