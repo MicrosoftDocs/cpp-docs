@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2196"
 title: "Compiler Error C2196"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2196"
+ms.date: 11/04/2016
 f1_keywords: ["C2196"]
 helpviewer_keywords: ["C2196"]
-ms.assetid: fd2f6a58-48ce-4e58-96f8-e37720feb8e7
 ---
 # Compiler Error C2196
 
-case value 'value' already used.
+> case value 'value' already used.
+
+## Remarks
 
 A switch statement uses the same case value more than once.
 
-The following sample generates C2196:
+## Example
+
+The following example generates C2196:
 
 ```cpp
 // C2196.cpp

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2186"
 title: "Compiler Error C2186"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2186"
+ms.date: 11/04/2016
 f1_keywords: ["C2186"]
 helpviewer_keywords: ["C2186"]
-ms.assetid: 284bfb7e-ab85-4fcb-9864-1ddf7f6c94ae
 ---
 # Compiler Error C2186
 
-'operator' : illegal operand of type 'void'
+> 'operator' : illegal operand of type 'void'
+
+## Remarks
 
 The operator has a **`void`** operand.
 
-The following sample generates C2186:
+## Example
+
+The following example generates C2186:
 
 ```cpp
 // C2186.cpp
