@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3374"
 title: "Compiler Error C3374"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3374"
+ms.date: 11/04/2016
 f1_keywords: ["C3374"]
 helpviewer_keywords: ["C3374"]
-ms.assetid: 41431299-bd20-47d4-a0c8-1334dd79018b
 ---
 # Compiler Error C3374
 

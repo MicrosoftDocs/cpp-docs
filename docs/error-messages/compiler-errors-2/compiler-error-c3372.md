@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3372"
 title: "Compiler Error C3372"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3372"
+ms.date: 11/04/2016
 f1_keywords: ["C3372"]
 helpviewer_keywords: ["C3372"]
-ms.assetid: 38ee39ed-03ff-4e6d-9104-f1977b96645d
 ---
 # Compiler Error C3372
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3369"
 title: "Compiler Error C3369"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3369"
+ms.date: 11/04/2016
 f1_keywords: ["C3369"]
 helpviewer_keywords: ["C3369"]
-ms.assetid: c6ceb9cb-3df9-4334-9a5c-d16db351d476
 ---
 # Compiler Error C3369
 

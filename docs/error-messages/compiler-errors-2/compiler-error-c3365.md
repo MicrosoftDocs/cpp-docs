@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3365"
 title: "Compiler Error C3365"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3365"
+ms.date: 11/04/2016
 f1_keywords: ["C3365"]
 helpviewer_keywords: ["C3365"]
-ms.assetid: 875ec3a4-522c-4e3d-9b67-48808b857f6d
 ---
 # Compiler Error C3365
 

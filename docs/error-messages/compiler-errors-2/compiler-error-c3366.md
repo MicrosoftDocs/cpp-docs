@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3366"
 title: "Compiler Error C3366"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3366"
+ms.date: 11/04/2016
 f1_keywords: ["C3366"]
 helpviewer_keywords: ["C3366"]
-ms.assetid: efc55bcf-c16d-43c1-a36f-87a6165fa2a8
 ---
 # Compiler Error C3366
 

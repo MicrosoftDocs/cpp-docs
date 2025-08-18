@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3360"
 title: "Compiler Error C3360"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3360"
+ms.date: 11/04/2016
 f1_keywords: ["C3360"]
 helpviewer_keywords: ["C3360"]
-ms.assetid: 6acf983a-dbb6-422b-b045-a34bb4ba6761
 ---
 # Compiler Error C3360
 

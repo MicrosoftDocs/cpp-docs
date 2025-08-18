@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3358"
 title: "Compiler Error C3358"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3358"
+ms.date: 11/04/2016
 f1_keywords: ["C3358"]
 helpviewer_keywords: ["C3358"]
-ms.assetid: 180b93df-e78f-441a-91fb-1594c681f7f0
 ---
 # Compiler Error C3358
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3371"
 title: "Compiler Error C3371"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3371"
+ms.date: 11/04/2016
 f1_keywords: ["C3371"]
 helpviewer_keywords: ["C3371"]
-ms.assetid: f7ecf1aa-ed0a-4f73-81e5-62cf98f88ea1
 ---
 # Compiler Error C3371
 

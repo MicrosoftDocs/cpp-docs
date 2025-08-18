@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3370"
 title: "Compiler Error C3370"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3370"
+ms.date: 11/04/2016
 f1_keywords: ["C3370"]
 helpviewer_keywords: ["C3370"]
-ms.assetid: ee6d4c85-78fc-42b2-836e-5cc491a3b2ba
 ---
 # Compiler Error C3370
 

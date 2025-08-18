@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3375"
 title: "Compiler Error C3375"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3375"
+ms.date: 11/04/2016
 f1_keywords: ["C3375"]
 helpviewer_keywords: ["C3375"]
-ms.assetid: f1df78c6-e6ca-48f3-8b29-4e1710002bf3
 ---
 # Compiler Error C3375
 

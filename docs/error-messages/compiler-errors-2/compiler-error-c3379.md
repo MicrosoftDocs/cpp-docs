@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3379"
 title: "Compiler Error C3379"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3379"
+ms.date: 11/04/2016
 f1_keywords: ["C3379"]
 helpviewer_keywords: ["C3379"]
-ms.assetid: a66c2c4e-091c-4426-9cde-7c4cfb2ffce1
 ---
 # Compiler Error C3379
 

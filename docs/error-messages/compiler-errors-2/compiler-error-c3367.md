@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3367"
 title: "Compiler Error C3367"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3367"
+ms.date: 11/04/2016
 f1_keywords: ["C3367"]
 helpviewer_keywords: ["C3367"]
-ms.assetid: e675d42b-f5b0-4d43-aab1-1f5024233102
 ---
 # Compiler Error C3367
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3380"
 title: "Compiler Error C3380"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3380"
+ms.date: 11/04/2016
 f1_keywords: ["C3380"]
 helpviewer_keywords: ["C3380"]
-ms.assetid: 86f1f4ec-4ad8-4a1a-9b6c-2d9b6129df6b
 ---
 # Compiler Error C3380
 

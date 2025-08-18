@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3363"
 title: "Compiler Error C3363"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3363"
+ms.date: 11/04/2016
 f1_keywords: ["C3363"]
 helpviewer_keywords: ["C3363"]
-ms.assetid: 41aa922f-608e-4f7a-ba66-451fc1161935
 ---
 # Compiler Error C3363
 

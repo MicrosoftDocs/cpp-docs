@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3354"
 title: "Compiler Error C3354"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3354"
+ms.date: 11/04/2016
 f1_keywords: ["C3354"]
 helpviewer_keywords: ["C3354"]
-ms.assetid: 185de401-231e-4999-a149-172ee4c69d84
 ---
 # Compiler Error C3354
 

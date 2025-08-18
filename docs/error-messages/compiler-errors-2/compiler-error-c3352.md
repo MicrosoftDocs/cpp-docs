@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3352"
 title: "Compiler Error C3352"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3352"
+ms.date: 11/04/2016
 f1_keywords: ["C3352"]
 helpviewer_keywords: ["C3352"]
-ms.assetid: f233bed7-474e-425f-aad2-7801578169d4
 ---
 # Compiler Error C3352
 
