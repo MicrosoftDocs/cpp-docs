@@ -4949,13 +4949,14 @@ Use the dual-range overloads in C++14 code because the overloads that only take 
 
 ```cpp
 template<class InputIterator1, class InputIterator2>
-pair<InputIterator1, InputIterator2>>
+pair<InputIterator1, InputIterator2>
 mismatch(
     InputIterator1 first1,
     InputIterator1 last1,
     InputIterator2 first2 );
 
-template<class InputIterator1, class InputIterator2, class BinaryPredicate> pair<InputIterator1, InputIterator2>>
+template<class InputIterator1, class InputIterator2, class BinaryPredicate>
+pair<InputIterator1, InputIterator2>
 mismatch(
     InputIterator1 first1,
     InputIterator1 last1,
@@ -4964,14 +4965,15 @@ mismatch(
 
 //C++14
 template<class InputIterator1, class InputIterator2>
-pair<InputIterator1, InputIterator2>>
+pair<InputIterator1, InputIterator2>
 mismatch(
     InputIterator1 first1,
     InputIterator1 last1,
     InputIterator2 first2,
     InputIterator2 last2 );
 
-template<class InputIterator1, class InputIterator2, class BinaryPredicate> pair<InputIterator1, InputIterator2>>
+template<class InputIterator1, class InputIterator2, class BinaryPredicate>
+pair<InputIterator1, InputIterator2>
 mismatch(
     InputIterator1 first1,
     InputIterator1 last1,
