@@ -595,7 +595,7 @@ An output iterator addressing the position that is one past the final element in
 
 The source range must be valid and there must be sufficient space at the destination to hold all the elements being copied.
 
-The `copy_backward` algorithm imposes more stringent requirements than that the `copy` algorithm. Both its input and output iterators must be bidirectional.
+The `copy_backward` algorithm imposes more stringent requirements than the `copy` algorithm. Both its input and output iterators must be bidirectional.
 
 The `copy_backward` and [`move_backward`](algorithm-functions.md#move_backward) algorithms are the only C++ Standard Library algorithms designating the output range with an iterator pointing to the end of the destination range.
 
@@ -908,13 +908,13 @@ int main()
 
     vector<int>::iterator::difference_type result;
     result = count(v1.begin(), v1.end(), 10);
-    cout << "The number of 10s in v2 is: " << result << "." << endl;
+    cout << "The number of 10s in v1 is: " << result << "." << endl;
 }
 ```
 
 ```Output
 v1 = ( 10 20 10 40 10 )
-The number of 10s in v2 is: 3.
+The number of 10s in v1 is: 3.
 ```
 
 ## <a name="count_if"></a> `count_if`
@@ -2149,7 +2149,7 @@ public:
     {
     }
 
-    // The function call to process the next elment
+    // The function call to process the next element
     void operator( ) ( int elem )
     {
         num++;      // Increment the element count
@@ -2686,7 +2686,7 @@ int main()
         cout << *Iter3b << " ";
     cout << ")." << endl;
 
-    // To test for inclusion under an asscending order
+    // To test for inclusion under an ascending order
     // with the default binary predicate less<int>( )
     bool Result1;
     Result1 = includes ( v1a.begin( ), v1a.end( ),
@@ -5933,7 +5933,7 @@ int main()
         cout << *Iter1 << " ";
     cout << ")." << endl;
 
-    // Partition the range with predicate greater10
+    // Partition the range with predicate greater5
     partition ( v1.begin( ), v1.end( ), greater5 );
     cout << "The partitioned set of elements in v1 is: ( " ;
     for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -6694,7 +6694,7 @@ An input iterator addressing the position one past the final element in the rang
 An output iterator addressing the position of the first element in the destination range to which elements are being removed.
 
 *`pred`*\
-The unary predicate that must be satisfied is the value of an element is to be replaced.
+The unary predicate that must be satisfied if the value of an element is to be replaced.
 
 ### Return value
 
@@ -6751,7 +6751,7 @@ int main()
     new_end = remove_copy_if ( v1.begin( ), v1.end( ),
         v2.begin( ), greater6 );
 
-    cout << "After the appliation of remove_copy_if to v1,\n "
+    cout << "After the application of remove_copy_if to v1,\n "
          << "vector v1 is left unchanged as ( " ;
     for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
         cout << *Iter1 << " ";
@@ -6767,7 +6767,7 @@ int main()
 
 ```Output
 The original vector v1 is:      ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
-After the appliation of remove_copy_if to v1,
+After the application of remove_copy_if to v1,
  vector v1 is left unchanged as ( 4 7 7 7 0 5 7 1 6 9 3 7 8 2 ).
 Vector v2 is a copy of v1 with values greater than 6 removed:
  ( 4 0 5 1 6 3 2 ).
@@ -6804,7 +6804,7 @@ A forward iterator pointing to the position of the first element in the range fr
 A forward iterator pointing to the position one past the final element in the range from which elements are being removed.
 
 *`pred`*\
-The unary predicate that must be satisfied is the value of an element is to be replaced.
+The unary predicate that must be satisfied if the value of an element is to be replaced.
 
 ### Return value
 
@@ -7148,7 +7148,7 @@ An input iterator pointing to the position one past the final element in the ran
 An output iterator pointing to the position of the first element in the destination range to which elements are being copied.
 
 *`pred`*\
-The unary predicate that must be satisfied is the value of an element is to be replaced.
+The unary predicate that must be satisfied if the value of an element is to be replaced.
 
 *`value`*\
 The new value being assigned to the elements whose old value satisfies the predicate.
@@ -7277,7 +7277,7 @@ A forward iterator pointing to the position of the first element in the range fr
 An iterator pointing to the position one past the final element in the range from which elements are being replaced.
 
 *`pred`*\
-The unary predicate that must be satisfied is the value of an element is to be replaced.
+The unary predicate that must be satisfied if the value of an element is to be replaced.
 
 *`value`*\
 The new value being assigned to the elements whose old value satisfies the predicate.
@@ -8269,7 +8269,7 @@ int main()
         cout << *Iter3b << " ";
     cout << ")." << endl;
 
-    // To combine into a difference in asscending
+    // To combine into a difference in ascending
     // order with the default binary predicate less<int>( )
     Result1 = set_difference ( v1a.begin( ), v1a.end( ),
         v1b.begin( ), v1b.end( ), v1.begin( ) );
@@ -8488,7 +8488,7 @@ int main()
         cout << *Iter3b << " ";
     cout << ")." << endl;
 
-    // To combine into an intersection in asscending order with the
+    // To combine into an intersection in ascending order with the
     // default binary predicate less<int>( )
     Result1 = set_intersection ( v1a.begin( ), v1a.end( ),
         v1b.begin( ), v1b.end( ), v1.begin( ) );
@@ -9170,7 +9170,7 @@ Heaps have two properties:
 
 - Elements may be added or removed in logarithmic time.
 
-After the application if this algorithm, the range it was applied to is no longer a heap.
+After the application of this algorithm, the range it was applied to is no longer a heap.
 
 `sort_heap` isn't a stable sort because the relative order of equivalent elements isn't necessarily preserved.
 
@@ -9585,7 +9585,7 @@ A forward iterator pointing to one past the final position of the second range w
 
 The ranges referenced must be valid; all pointers must be dereferenceable and within each sequence the last position is reachable from the first by incrementation. The second range has to be as large as the first range.
 
-The complexity is linear with *last1* - *first1* swaps performed. If elements from containers of the same type are being swapped, them the `swap` member function from that container should be used, because the member function typically has constant complexity.
+The complexity is linear with *last1* - *first1* swaps performed. If elements from containers of the same type are being swapped, then the `swap` member function from that container should be used, because the member function typically has constant complexity.
 
 ### Example
 
@@ -9922,7 +9922,7 @@ int main()
         cout << *v1_Iter1 << " ";
     cout << ")." << endl;
 
-    // Remove consecutive duplicates under the binary prediate mod_equals
+    // Remove consecutive duplicates under the binary predicate mod_equals
     v1_NewEnd2 = unique ( v1.begin( ), v1_NewEnd1 , mod_equal );
 
     cout << "Removing adjacent duplicates from vector v1 under the\n "
@@ -10078,7 +10078,7 @@ int main() {
     for ( iv = 0 ; iv <= 7 ; iv++ )
         v1.push_back( 10 );
 
-    // Remove consecutive duplicates under the binary prediate mod_equals
+    // Remove consecutive duplicates under the binary predicate mod_equals
     v1_NewEnd2 = unique_copy ( v1.begin( ), v1.begin( ) + 14,
         v1.begin( ) + 14 , mod_equal );
 
