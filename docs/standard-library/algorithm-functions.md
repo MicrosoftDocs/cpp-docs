@@ -2292,7 +2292,7 @@ public:
     }
 };
 
-// Utility to display the contents of a vector 
+// Utility to display the contents of a vector
 template <class T> void print_vector(const std::vector<T> &vec)
 {
     std::cout << "( ";
@@ -6660,7 +6660,7 @@ Vector v2 is a copy of v1 with the value 7 removed:
 
 ## <a name="remove_copy_if"></a> `remove_copy_if`
 
-Copies elements from a source range to a destination range, except for elements that satisfy a predicate. Elements are  copied without disturbing the order of the remaining elements. Returns the end of a new destination range.
+Copies elements from a source range to a destination range, except for elements that satisfy a predicate. Elements are copied without disturbing the order of the remaining elements. Returns the end of a new destination range.
 
 ```cpp
 template<class InputIterator, class OutputIterator, class UnaryPredicate>
