@@ -2892,7 +2892,7 @@ int main()
     // Applying a user defined (UD) binary predicate mod_lesser
     inplace_merge ( v3.begin( ), break3, v3.end( ), mod_lesser );
     cout << "Merged inplace with binary predicate mod_lesser specified,\n "
-            << "vector v3mod = ( " ; ;
+            << "vector v3mod = ( " ;
     for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
         cout << *Iter3 << " ";
     cout << ")" << endl;
@@ -4424,7 +4424,7 @@ int main() {
     merge ( v3a.begin( ), v3a.end( ), v3b.begin( ), v3b.end( ),
         v3.begin( ), mod_lesser );
     cout << "Merged inplace with binary predicate mod_lesser specified,\n "
-            << "vector v3mod = ( " ; ;
+            << "vector v3mod = ( " ;
     for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
         cout << *Iter3 << " ";
     cout << ")." << endl;
@@ -8294,7 +8294,7 @@ int main()
     Result3 = set_difference ( v3a.begin( ), v3a.end( ),
         v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
     cout << "Set_difference of source ranges with binary "
-         << "predicate mod_lesser specified,\n vector v3mod = ( " ; ;
+         << "predicate mod_lesser specified,\n vector v3mod = ( " ;
     for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
         cout << *Iter3 << " ";
     cout << ")." << endl;
@@ -8513,7 +8513,7 @@ int main()
     Result3 = set_intersection ( v3a.begin( ), v3a.end( ),
         v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
     cout << "Intersection of source ranges with binary predicate "
-            << "mod_lesser specified,\n vector v3mod = ( " ; ;
+            << "mod_lesser specified,\n vector v3mod = ( " ;
     for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; ++Iter3 )
         cout << *Iter3 << " ";
     cout << ")." << endl;
@@ -8736,7 +8736,7 @@ int main()
     Result3 = set_symmetric_difference ( v3a.begin( ), v3a.end( ),
         v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
     cout << "Set_symmetric_difference of source ranges with binary "
-         << "predicate mod_lesser specified,\n vector v3mod = ( " ; ;
+         << "predicate mod_lesser specified,\n vector v3mod = ( " ;
     for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
         cout << *Iter3 << " ";
     cout << ")." << endl;
@@ -8959,7 +8959,7 @@ int main()
     Result3 = set_union ( v3a.begin( ), v3a.end( ),
         v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
     cout << "Union of source ranges with binary predicate "
-         << "mod_lesser specified,\n vector v3mod = ( " ; ;
+         << "mod_lesser specified,\n vector v3mod = ( " ;
     for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
         cout << *Iter3 << " ";
     cout << ")." << endl;
