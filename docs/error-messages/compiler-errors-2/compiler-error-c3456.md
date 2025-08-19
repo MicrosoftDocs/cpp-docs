@@ -10,6 +10,8 @@ ms.assetid: 9f781919-aaf2-4725-94a4-44a0b80cc64a
 
 > [source_annotation_attribute] not allowed on managed or WinRT class declaration
 
+## Remarks
+
 source_annotation_attribute is used to define custom attributes to be used by code analysis.
 
 These custom attributes are only useful if there is a corresponding plugin that understands the attribute.

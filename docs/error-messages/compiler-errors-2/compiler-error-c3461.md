@@ -10,11 +10,13 @@ ms.assetid: bd66833a-545d-445a-bdfe-dee771a450a4
 
 > 'type': only a managed type can be forwarded
 
+## Remarks
+
 Type forwarding can only occur on CLR types.  See [Classes and Structs](../../extensions/classes-and-structs-cpp-component-extensions.md) for more information.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Examples
+## Example
 
 The following sample creates a component.
 

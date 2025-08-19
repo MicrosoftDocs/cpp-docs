@@ -10,6 +10,8 @@ ms.assetid: dc4e6d57-5b4d-4114-8d6f-22f9ae62925b
 
 > [attribute] not allowed on class declaration
 
+## Remarks
+
 A class must be defined for it to be an attribute.
 
 For more information, see [attribute](../../windows/attributes/attribute.md).

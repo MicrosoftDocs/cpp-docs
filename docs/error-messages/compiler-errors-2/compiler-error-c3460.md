@@ -10,9 +10,11 @@ ms.assetid: adbf8775-10ca-4654-acdf-58dd765351cd
 
 > 'type': only a user-defined type can be forwarded
 
+## Remarks
+
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Examples
+## Example
 
 The following sample creates a component.
 

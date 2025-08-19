@@ -10,6 +10,8 @@ ms.assetid: 170c7a9d-214d-41b1-8f15-d4a4fc38aaa5
 
 > 'type' : a class cannot have both an indexer (default indexed property) and an operator[]
 
+## Remarks
+
 A type cannot define both a default indexer and an operator[].
 
 ## Example

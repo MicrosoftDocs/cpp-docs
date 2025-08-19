@@ -10,13 +10,15 @@ ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
 
 > 'var': a lambda capture variable must be from an enclosing function scope
 
+## Remarks
+
 The lambda capture variable is not from an enclosing function scope.
 
 ### To correct this error
 
 - Remove the variable from the capture list of the lambda expression.
 
-## Examples
+## Example
 
 The following example generates C3480 because the variable `global` is not from an enclosing function scope:
 

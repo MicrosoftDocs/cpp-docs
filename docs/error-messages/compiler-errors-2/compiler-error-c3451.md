@@ -10,6 +10,8 @@ ms.assetid: a4897a69-e3e7-40bb-bb1c-598644904012
 
 > 'attribute': cannot apply unmanaged attribute to 'type'
 
+## Remarks
+
 A C++ attribute cannot be applied to a CLR type. See [C++ Attributes Reference](../../windows/attributes/attributes-alphabetical-reference.md) for more information.
 
 For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).

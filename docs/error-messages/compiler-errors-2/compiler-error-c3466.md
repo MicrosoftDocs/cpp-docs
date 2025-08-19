@@ -10,11 +10,13 @@ ms.assetid: 69a877d9-a749-474b-bfc3-8d3fd53ba8fd
 
 > 'type' : a specialization of a generic class cannot be forwarded
 
+## Remarks
+
 You cannot use type forwarding on a specialization of a generic class.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Examples
+## Example
 
 The following sample creates a component.
 

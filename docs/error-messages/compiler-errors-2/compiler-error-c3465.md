@@ -10,11 +10,13 @@ ms.assetid: aeb815e5-b3fc-4525-afe2-d738e9321df1
 
 > to use type 'type' you must reference the assembly 'assembly'
 
+## Remarks
+
 Type forwarding will work for a client application until you recompile the client. When you recompile, you will need a reference for every assembly containing the definition of a type used in your client application.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Examples
+## Example
 
 The following sample builds an assembly that contains the new location of a type.
 

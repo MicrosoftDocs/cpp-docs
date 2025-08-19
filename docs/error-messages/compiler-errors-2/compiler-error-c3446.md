@@ -10,6 +10,8 @@ ms.assetid: 33064548-24e4-46f1-beb1-476e3c3b3fbf
 
 > '*class*': a default member initializer is not allowed for a member of a value class
 
+## Remarks
+
 In Visual Studio 2015 and earlier, the compiler permitted (but ignored) a default member initializer for a member of a value class. Default initialization of a value class always zero-initializes the members; a default constructor is not permitted. In Visual Studio 2017, default member initializers raise a compiler error, as shown in this example:
 
 ## Example

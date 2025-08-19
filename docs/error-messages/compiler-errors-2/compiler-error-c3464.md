@@ -10,11 +10,13 @@ ms.assetid: 0ede05dc-4486-4921-8e8c-78ab5a2e09c5
 
 > 'type' a nested type cannot be forwarded
 
+## Remarks
+
 Type forwarding does not work on nested types.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Examples
+## Example
 
 The following sample creates a component.
 

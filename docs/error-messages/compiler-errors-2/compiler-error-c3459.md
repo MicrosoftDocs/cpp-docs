@@ -10,6 +10,8 @@ ms.assetid: 3d290a20-d313-4c07-9bd8-c5c159cb169f
 
 > 'attribute': attribute allowed only on class indexer (default indexed property)
 
+## Remarks
+
 An attribute that is designed to be applied to a class indexer property was used incorrectly.
 
 For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md).

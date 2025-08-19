@@ -10,6 +10,8 @@ ms.assetid: e5293dcf-cb70-4133-ae2a-0bb496950ba0
 
 > list argument member not constant
 
+## Remarks
+
 An argument was passed to an attribute that expected a constant, a value that can be evaluated at compile time.
 
 ## Example

@@ -10,13 +10,15 @@ ms.assetid: cfd320db-2f6e-4e0d-ba02-e79ece87e1e0
 
 > 'type' : you can only forward a type to an assembly:
 
+## Remarks
+
 '`file`' is not an assembly
 
 Only types in an assembly can be forwarded.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Examples
+## Example
 
 The following sample creates a module.
 
