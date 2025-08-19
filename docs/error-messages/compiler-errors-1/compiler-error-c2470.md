@@ -1,13 +1,15 @@
 ---
 title: "Compiler Error C2470"
 description: "Learn more about: Compiler Error C2470"
-ms.date: "03/29/2025"
+ms.date: 03/29/2025
 f1_keywords: ["C2470"]
 helpviewer_keywords: ["C2470"]
 ---
 # Compiler Error C2470
 
 > '*function*': looks like a function definition, but there is no parameter list; skipping apparent body
+
+## Remarks
 
 A function definition is missing its argument list.
 

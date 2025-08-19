@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2482"
 title: "Compiler Error C2482"
-ms.date: "09/15/2017"
+description: "Learn more about: Compiler Error C2482"
+ms.date: 09/15/2017
 f1_keywords: ["C2482"]
 helpviewer_keywords: ["C2482"]
-ms.assetid: 98c87da2-625c-4cc2-9bf7-78d15921e779
 ---
 # Compiler Error C2482
 
@@ -16,7 +15,7 @@ In managed or WinRT code, variables declared by using the [__declspec(thread)](.
 
 ## Example
 
-The following sample generates C2482 in managed (**/clr**) and in WinRT (**/ZW**) code:
+The following example generates C2482 in managed (**/clr**) and in WinRT (**/ZW**) code:
 
 ```cpp
 // C2482.cpp
