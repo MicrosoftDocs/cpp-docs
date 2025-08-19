@@ -49,7 +49,7 @@ This article demonstrates the new and best way to consume the standard library. 
 
 ## Import the standard library with `std`
 
-The following examples demonstrate how to consume the standard library as a module using the command line compiler. For information about how to do this in the Visual Studio IDE, see [Build ISO C++23 Standard Library Modules](..\build\reference\c-cpp-prop-page.md#build-iso-c23-standard-library-modules).
+The following examples demonstrate how to consume the standard library as a module using the command line compiler. For information about how to do this in the Visual Studio IDE, see [Build ISO C++23 Standard Library Modules](../build/reference/c-cpp-prop-page.md#build-iso-c23-standard-library-modules).
 
 The statement `import std;` or `import std.compat;` imports the standard library into your application. But first, you must compile the standard library named modules into binary form. The following steps demonstrate how.
 
@@ -77,7 +77,7 @@ The statement `import std;` or `import std.compat;` imports the standard library
     |---|---|
     | [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) | Use the latest version of the C++ language standard and library. Although module support is available under `/std:c++20`, you need the latest standard library to get support for standard library named modules. |
     | [`/EHsc`](../build/reference/eh-exception-handling-model.md) | Use C++ exception handling, except for functions marked `extern "C"`. |
-    | [`/W4`](../build/reference//compiler-option-warning-level.md) | Using `/W4` is generally recommended, especially for new projects because it enables all level 1, level 2, level 3, and most level 4 (informational) warnings, which can help you catch potential issues early. It essentially provides lint-like warnings that can help ensure the fewest possible hard-to-find code defects. |
+    | [`/W4`](../build/reference/compiler-option-warning-level.md) | Using `/W4` is generally recommended, especially for new projects because it enables all level 1, level 2, level 3, and most level 4 (informational) warnings, which can help you catch potential issues early. It essentially provides lint-like warnings that can help ensure the fewest possible hard-to-find code defects. |
     | [`/c`](../build/reference/c-compile-without-linking.md) | Compile without linking, because we're just building the binary named module interface at this point. |
 
     You can control the object file name and the named module interface file name with the following switches:
