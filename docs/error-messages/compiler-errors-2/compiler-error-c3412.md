@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3412"
 title: "Compiler Error C3412"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3412"
+ms.date: 11/04/2016
 f1_keywords: ["C3412"]
 helpviewer_keywords: ["C3412"]
-ms.assetid: aa4dd43b-54ce-4cda-85c1-1a77dd6e34fa
 ---
 # Compiler Error C3412
 
-'template' : cannot specialize template in current scope
+> 'template' : cannot specialize template in current scope
+
+## Remarks
 
 A template cannot be specialized at class scope, only in global or namespace scope.
 
-## Examples
+## Example
 
-The following sample generates C3412.
+The following example generates C3412.
 
 ```cpp
 // C3412.cpp
@@ -25,7 +26,7 @@ struct S {
 };
 ```
 
-The following sample shows a possible resolution.
+The following example shows a possible resolution.
 
 ```cpp
 // C3412b.cpp

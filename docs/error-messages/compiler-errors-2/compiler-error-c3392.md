@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3392"
 title: "Compiler Error C3392"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3392"
+ms.date: 11/04/2016
 f1_keywords: ["C3392"]
 helpviewer_keywords: ["C3392"]
-ms.assetid: e4757596-e2aa-4314-b01e-5c4bfd2110e9
 ---
 # Compiler Error C3392
 
-'type_arg' : invalid type argument for generic parameter 'param' of generic 'generic_type', must have a public parameterless constructor
+> 'type_arg' : invalid type argument for generic parameter 'param' of generic 'generic_type', must have a public parameterless constructor
+
+## Remarks
 
 A generic type was instantiated incorrectly. Check the type definition. For more information, see  [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 
-The following sample uses C# to create a component that contains a generic type that has certain constraints that are not supported when authoring generic types in C++/CLI. For more information, see [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).
+The following example uses C# to create a component that contains a generic type that has certain constraints that are not supported when authoring generic types in C++/CLI. For more information, see [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).
 
 ```csharp
 // C3392.cs
@@ -26,7 +27,7 @@ where V : struct
 where N : new() {}
 ```
 
-When the C3392.dll component is available, the following sample generates C3392.
+When the C3392.dll component is available, the following example generates C3392.
 
 ```cpp
 // C3392_b.cpp

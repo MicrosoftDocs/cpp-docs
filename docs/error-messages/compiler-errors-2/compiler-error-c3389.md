@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3389"
 title: "Compiler Error C3389"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3389"
+ms.date: 11/04/2016
 f1_keywords: ["C3389"]
 helpviewer_keywords: ["C3389"]
-ms.assetid: eaaffe17-23f2-413c-b1ad-f7220cfa1334
 ---
 # Compiler Error C3389
 
@@ -18,7 +17,7 @@ A [`__declspec`](../../cpp/declspec.md) modifier used implies a per-process stat
 
 ## Example
 
-The following sample generates C3389:
+The following example generates C3389:
 
 ```cpp
 // C3389.cpp
