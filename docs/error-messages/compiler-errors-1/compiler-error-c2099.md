@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2099"
 title: "Compiler Error C2099"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2099"
+ms.date: 11/04/2016
 f1_keywords: ["C2099"]
 helpviewer_keywords: ["C2099"]
-ms.assetid: 30e151ee-d458-4901-b0c0-d45054a913f5
 ---
 # Compiler Error C2099
 
-initializer is not a constant
+> initializer is not a constant
+
+## Remarks
 
 This error is issued only by the C compiler and occurs only for non-automatic variables.  The compiler initializes non-automatic variables at the start of the program and the values they are initialized with must be constant.
 
 ## Examples
 
-The following sample generates C2099.
+The following example generates C2099.
 
 ```c
 // C2099.c
@@ -31,7 +32,7 @@ To resolve this error, compile the module as a .cpp file or simplify the express
 
 For more information, see [/fp (Specify Floating-Point Behavior)](../../build/reference/fp-specify-floating-point-behavior.md).
 
-The following sample generates C2099.
+The following example generates C2099.
 
 ```c
 // C2099_2.c
