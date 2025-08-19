@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::ArrayReference Class"
 title: "Platform::ArrayReference Class"
-ms.date: "10/16/2019"
+description: "Learn more about: Platform::ArrayReference Class"
+ms.date: 10/16/2019
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::ArrayReference::ArrayReference"]
 helpviewer_keywords: ["Platform::ArrayReference Class"]
-ms.assetid: 9ab3b15e-8a60-4600-8fcb-7d6c86284f4b
 ---
 # Platform::ArrayReference Class
 
