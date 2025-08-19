@@ -32,7 +32,7 @@ Visual C++ might generate this warning for a code path that never executes. You 
 #pragma warning( pop )
 ```
 
-This idiom keeps Visual C++ from generating the warning for that specific block of code. The `#pragma warning(push)` preserves the existing state before `#pragma warning(disable: 4789)` changes it. The `#pragma warning(pop)` restores the pushed state, and removes the effects of the `#pragma warning(disable:4789)`. For more information about the C++ preprocessor directive `#pragma`, see [`warning`](../../preprocessor/warning.md) and [Pragma Directives and the `__Pragma` Keyword](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+This idiom keeps Visual C++ from generating the warning for that specific block of code. The `#pragma warning(push)` preserves the existing state before `#pragma warning(disable: 4789)` changes it. The `#pragma warning(pop)` restores the pushed state, and removes the effects of the `#pragma warning(disable:4789)`. For more information about the C++ preprocessor directive `#pragma`, see [`warning`](../../preprocessor/warning.md) and [Pragma directives and the `__pragma` and `_Pragma` keywords](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 
 The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enable-additional-security-checks.md) compiler option elevates this warning to an error.
 
