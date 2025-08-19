@@ -16,7 +16,7 @@ Assembly or module level attributes can only be specified as stand-alone instruc
 
 ## Example
 
-The following sample generates C3453.
+The following example generates C3453.
 
 ```cpp
 // C3453.cpp

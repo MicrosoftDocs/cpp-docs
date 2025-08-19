@@ -16,7 +16,7 @@ A type cannot define both a default indexer and an operator[].
 
 ## Example
 
-The following sample generates C3470
+The following example generates C3470
 
 ```cpp
 // C3470.cpp

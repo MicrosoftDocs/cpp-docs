@@ -16,7 +16,7 @@ An invalid value was used to declare an attribute.  See [attribute](../../window
 
 ## Example
 
-The following sample generates C3455.
+The following example generates C3455.
 
 ```cpp
 // C3455.cpp

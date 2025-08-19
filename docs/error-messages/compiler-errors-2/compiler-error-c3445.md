@@ -18,7 +18,7 @@ Starting in Visual Studio 2017, the compiler finds errors related to object crea
 
 ## Example
 
-The following sample generates C3445.
+The following example generates C3445.
 
 ```cpp
 // C3445.cpp

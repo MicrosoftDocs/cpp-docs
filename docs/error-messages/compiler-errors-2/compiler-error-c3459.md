@@ -18,7 +18,7 @@ For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-t
 
 ## Example
 
-The following sample generates C3459.
+The following example generates C3459.
 
 ```cpp
 // C3459.cpp

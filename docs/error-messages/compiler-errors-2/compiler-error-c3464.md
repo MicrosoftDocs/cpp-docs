@@ -18,7 +18,7 @@ For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forw
 
 ## Example
 
-The following sample creates a component.
+The following example creates a component.
 
 ```cpp
 // C3464.cpp
@@ -29,7 +29,7 @@ public:
 };
 ```
 
-The following sample generates C3464.
+The following example generates C3464.
 
 ```cpp
 // C3464_b.cpp

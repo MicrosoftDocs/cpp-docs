@@ -16,7 +16,7 @@ Two attributes that are mutually exclusive were specified for the same construct
 
 ## Example
 
-The following sample generates C3458
+The following example generates C3458
 
 ```cpp
 // C3458.cpp

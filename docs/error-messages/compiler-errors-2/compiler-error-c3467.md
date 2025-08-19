@@ -18,7 +18,7 @@ For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forw
 
 ## Example
 
-The following sample creates a component.
+The following example creates a component.
 
 ```cpp
 // C3467.cpp
@@ -26,7 +26,7 @@ The following sample creates a component.
 public ref class R {};
 ```
 
-The following sample generates C3467.
+The following example generates C3467.
 
 ```cpp
 // C3467_b.cpp

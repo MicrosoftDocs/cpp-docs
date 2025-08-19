@@ -16,7 +16,7 @@ An invalid type was passed to the [implements](../../windows/attributes/implemen
 
 ## Example
 
-The following sample generates C3463.
+The following example generates C3463.
 
 ```cpp
 // C3463.cpp

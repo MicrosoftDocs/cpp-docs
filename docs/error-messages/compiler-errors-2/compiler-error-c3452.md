@@ -16,7 +16,7 @@ An argument was passed to an attribute that expected a constant, a value that ca
 
 ## Example
 
-The following sample generates C3452.
+The following example generates C3452.
 
 ```cpp
 // C3452.cpp

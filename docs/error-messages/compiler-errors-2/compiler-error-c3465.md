@@ -18,7 +18,7 @@ For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forw
 
 ## Example
 
-The following sample builds an assembly that contains the new location of a type.
+The following example builds an assembly that contains the new location of a type.
 
 ```cpp
 // C3465.cpp
@@ -29,7 +29,7 @@ public:
 };
 ```
 
-The following sample builds an assembly that used to contain the definition of the type, but now contains forwarding syntax for the type.
+The following example builds an assembly that used to contain the definition of the type, but now contains forwarding syntax for the type.
 
 ```cpp
 // C3465_b.cpp
@@ -38,7 +38,7 @@ The following sample builds an assembly that used to contain the definition of t
 [ assembly:TypeForwardedTo(R::typeid) ];
 ```
 
-The following sample generates C3465.
+The following example generates C3465.
 
 ```cpp
 // C3465_c.cpp

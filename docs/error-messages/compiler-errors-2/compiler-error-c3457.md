@@ -15,7 +15,7 @@ Source annotation attributes, unlike CLR custom attribute or compiler attributes
 
 ## Example
 
-The following sample generates C3457.
+The following example generates C3457.
 
 ```cpp
 #include "SourceAnnotations.h"

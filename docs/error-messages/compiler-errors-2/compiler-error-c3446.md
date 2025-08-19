@@ -16,7 +16,7 @@ In Visual Studio 2015 and earlier, the compiler permitted (but ignored) a defaul
 
 ## Example
 
-The following sample generates C3446 in Visual Studio 2017 and later:
+The following example generates C3446 in Visual Studio 2017 and later:
 
 ```cpp
 // C3446.cpp

@@ -20,7 +20,7 @@ For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forw
 
 ## Example
 
-The following sample creates a module.
+The following example creates a module.
 
 ```cpp
 // C3468.cpp
@@ -28,7 +28,7 @@ The following sample creates a module.
 public ref class R {};
 ```
 
-The following sample generates C3468.
+The following example generates C3468.
 
 ```cpp
 // C3468_b.cpp

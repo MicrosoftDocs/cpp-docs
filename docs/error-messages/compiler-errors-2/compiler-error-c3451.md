@@ -20,7 +20,7 @@ This error can be generated as a result of compiler conformance work that was do
 
 ## Example
 
-The following sample generates C3451.
+The following example generates C3451.
 
 ```cpp
 // C3451.cpp

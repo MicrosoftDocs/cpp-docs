@@ -18,7 +18,7 @@ For more information, see [attribute](../../windows/attributes/attribute.md).
 
 ## Example
 
-The following sample generates C3454.
+The following example generates C3454.
 
 ```cpp
 // C3454.cpp
