@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3351"
 title: "Compiler Error C3351"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3351"
+ms.date: 11/04/2016
 f1_keywords: ["C3351"]
 helpviewer_keywords: ["C3351"]
-ms.assetid: c021bbbe-1067-4f51-af4f-940d2b792eb5
 ---
 # Compiler Error C3351
 
-'object' : delegate constructor: second argument must be address of a static member function or global function
+> 'object' : delegate constructor: second argument must be address of a static member function or global function
+
+## Remarks
 
 The compiler expected the address of a function declared **`static`**.
 
-The following sample generates C3351:
+## Example
+
+The following example generates C3351:
 
 ```cpp
 // C3351a.cpp

@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3352"
 title: "Compiler Error C3352"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3352"
+ms.date: 11/04/2016
 f1_keywords: ["C3352"]
 helpviewer_keywords: ["C3352"]
-ms.assetid: f233bed7-474e-425f-aad2-7801578169d4
 ---
 # Compiler Error C3352
 
-'function' : the specified function does not match the delegate type 'type'
+> 'function' : the specified function does not match the delegate type 'type'
+
+## Remarks
 
 The parameter lists for `function` and the delegate do not match.
 
 For more information, see [delegate  (C++ Component Extensions)](../../extensions/delegate-cpp-component-extensions.md).
 
-The following sample generates C3352:
+## Example
+
+The following example generates C3352:
 
 ```cpp
 // C3352.cpp
