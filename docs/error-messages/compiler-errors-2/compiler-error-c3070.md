@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3070"
 title: "Compiler Error C3070"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3070"
+ms.date: 11/04/2016
 f1_keywords: ["C3070"]
 helpviewer_keywords: ["C3070"]
-ms.assetid: ac88584d-40a6-4176-90f3-2371c3c935f2
 ---
 # Compiler Error C3070
 
-'property': property does not have a 'set' method
+> 'property': property does not have a 'set' method
+
+## Remarks
 
 A property's set accessor method was not defined. For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
-The following sample generates C3070:
+## Example
+
+The following example generates C3070:
 
 ```cpp
 // C3070.cpp

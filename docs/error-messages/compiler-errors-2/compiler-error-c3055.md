@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3055"
 title: "Compiler Error C3055"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3055"
+ms.date: 11/04/2016
 f1_keywords: ["C3055"]
 helpviewer_keywords: ["C3055"]
-ms.assetid: 60446ee0-18dd-48fc-9059-f0a14229dce8
 ---
 # Compiler Error C3055
 
-'symbol' : symbol cannot be referenced before it is used in 'threadprivate' directive
+> 'symbol' : symbol cannot be referenced before it is used in 'threadprivate' directive
+
+## Remarks
 
 A symbol was referenced and then used in a [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) clause, which is not allowed.
 
-The following sample generates C3055:
+## Example
+
+The following example generates C3055:
 
 ```cpp
 // C3055.cpp

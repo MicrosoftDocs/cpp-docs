@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3054"
 title: "Compiler Error C3054"
+description: "Learn more about: Compiler Error C3054"
 ms.date: 06/01/2022
 f1_keywords: ["C3054"]
 helpviewer_keywords: ["C3054"]
-ms.assetid: 6f4b7ac5-0d12-474b-b611-76ff26ee41ac
 ---
 # Compiler Error C3054
 
@@ -18,7 +17,7 @@ This error is obsolete in Visual Studio 2022 and later versions.
 
 ## Example
 
-The following sample generates C3054.
+The following example generates C3054.
 
 ```cpp
 // C3054.cpp
