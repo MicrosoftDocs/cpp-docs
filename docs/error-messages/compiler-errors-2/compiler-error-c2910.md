@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2910"
 title: "Compiler Error C2910"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2910"
+ms.date: 11/04/2016
 f1_keywords: ["C2910"]
 helpviewer_keywords: ["C2910"]
-ms.assetid: 09c50e6a-e099-42f6-8ed6-d80e292a7a36
 ---
 # Compiler Error C2910
 
-'function' : cannot be explicitly specialized
+> 'function' : cannot be explicitly specialized
+
+## Remarks
 
 The compiler detected an attempt to explicitly specialize a function twice.
 
-The following sample generates C2910:
+## Examples
+
+The following example generates C2910:
 
 ```cpp
 // C2910.cpp
@@ -26,7 +29,7 @@ template <> void S<int>::f() {}   // C2910 delete this specialization
 
 C2910 can also be generated if you try to explicitly specialize a non-template member. That is, you can only explicitly specialize a function template.
 
-The following sample generates C2910:
+The following example generates C2910:
 
 ```cpp
 // C2910b.cpp
@@ -51,7 +54,7 @@ This error will also be generated as a result of compiler conformance work that 
 
 For code will be valid in the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++, remove `template <>`.
 
-The following sample generates C2910:
+The following example generates C2910:
 
 ```cpp
 // C2910c.cpp
