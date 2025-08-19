@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2971"
 title: "Compiler Error C2971"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2971"
+ms.date: 11/04/2016
 f1_keywords: ["C2971"]
 helpviewer_keywords: ["C2971"]
-ms.assetid: fdb5467b-9a41-41ef-ac20-2e9428d5a4fc
 ---
 # Compiler Error C2971
 
-'class' : template parameter 'param' : 'arg' : a local variable cannot be used as a non-type argument
+> 'class' : template parameter 'param' : 'arg' : a local variable cannot be used as a non-type argument
+
+## Remarks
 
 You cannot use the name or address of a local variable as a template argument.
 
-The following sample generates C2971:
+## Example
+
+The following example generates C2971:
 
 ```cpp
 // C2971.cpp
