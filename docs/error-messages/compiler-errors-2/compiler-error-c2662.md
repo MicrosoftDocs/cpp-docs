@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2662"
 title: "Compiler Error C2662"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2662"
+ms.date: 11/04/2016
 f1_keywords: ["C2662"]
 helpviewer_keywords: ["C2662"]
-ms.assetid: e172c2a4-f29e-4034-8232-e7dc6f83689f
 ---
 # Compiler Error C2662
 
-'function' : cannot convert 'this' pointer from 'type1' to 'type2'
+> 'function' : cannot convert 'this' pointer from 'type1' to 'type2'
+
+## Remarks
 
 The compiler could not convert the **`this`** pointer from `type1` to `type2`.
 
@@ -18,7 +19,9 @@ This error can be caused by invoking a non-**`const`** member function on a **`c
 
 - Add **`const`** to the member function.
 
-The following sample generates C2662:
+## Examples
+
+The following example generates C2662:
 
 ```cpp
 // C2662.cpp
@@ -60,7 +63,7 @@ ref struct N {
 };
 ```
 
-The following sample generates C2662:
+The following example generates C2662:
 
 ```cpp
 // C2662_c.cpp
