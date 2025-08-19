@@ -10,6 +10,8 @@ ms.assetid: 1f5ea979-fb1e-4214-b310-6fd6ca8249b1
 
 > 'attribute': attribute is not allowed on template definitions
 
+## Remarks
+
 Attributes cannot be applied to template definitions.
 
 ## Example

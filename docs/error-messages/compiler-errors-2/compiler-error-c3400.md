@@ -10,6 +10,8 @@ ms.assetid: d44169a8-73b6-4766-b406-b3a6c93f2a4d
 
 > circular constraint dependency involving 'constraint_1' and 'constraint_2'
 
+## Remarks
+
 The compiler detected circular constraints.
 
 For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).

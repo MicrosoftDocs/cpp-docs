@@ -10,6 +10,8 @@ ms.assetid: ceb7f725-f417-4dc3-8496-0f413bb76687
 
 > 'operator new' is not supported with /clr:safe
 
+## Remarks
+
 The output file of a **/clr:safe** compilation is a file that is verifiably type safe, and pointers are not supported.
 
 For more information, see,

@@ -10,6 +10,8 @@ ms.assetid: a8536e87-79c4-4ed7-bd96-42704d06391f
 
 > Aggregate initialization is not allowed in default arguments
 
+## Remarks
+
 An array was declared incorrectly.  See [Arrays](../../extensions/arrays-cpp-component-extensions.md) for more information.
 
 ## Example

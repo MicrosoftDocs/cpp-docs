@@ -10,6 +10,8 @@ ms.assetid: 4e025d79-27ba-43c8-b0d9-839ecef98126
 
 > syntax error in constraint clause: found 'identifier' expected a type
 
+## Remarks
+
 A constraint was ill formed.  For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
 
 ## Example

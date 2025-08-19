@@ -10,7 +10,11 @@ ms.assetid: 26a9ebc9-ed97-47ce-b436-19aa2bcf6e50
 
 > 'function' : __declspec(dllexport) cannot be applied to a function with the \__clrcall calling convention
 
+## Remarks
+
 `__declspec(dllexport)` and [__clrcall](../../cpp/clrcall.md) are not compatible.  For more information, see [dllexport, dllimport](../../cpp/dllexport-dllimport.md).
+
+## Example
 
 The following sample generates C3395:
 

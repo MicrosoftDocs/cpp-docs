@@ -10,9 +10,11 @@ ms.assetid: aa4dd43b-54ce-4cda-85c1-1a77dd6e34fa
 
 > 'template' : cannot specialize template in current scope
 
+## Remarks
+
 A template cannot be specialized at class scope, only in global or namespace scope.
 
-## Examples
+## Example
 
 The following sample generates C3412.
 

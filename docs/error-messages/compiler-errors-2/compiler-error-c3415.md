@@ -10,6 +10,8 @@ ms.assetid: fa2db8ab-2820-4ec3-a740-fb5e2adcfb29
 
 > multiple 'section_name' sections found with different attributes ('value')
 
+## Remarks
+
 Conflicting values were specified in [section](../../preprocessor/section.md) pragmas.
 
 `value` is the current setting for the section, as specified in ntimage.h. For example:
@@ -32,6 +34,8 @@ Conflicting values were specified in [section](../../preprocessor/section.md) pr
 // Section is writeable.
 #define IMAGE_SCN_MEM_WRITE                  0x80000000
 ```
+
+## Example
 
 The following sample generates C3415:
 

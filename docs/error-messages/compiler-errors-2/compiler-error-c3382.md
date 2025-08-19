@@ -10,6 +10,8 @@ ms.assetid: a7603abd-ac4e-4ae6-a02b-3bdc6d1908a6
 
 > 'sizeof' is not supported with /clr:safe
 
+## Remarks
+
 The output file of a **/clr:safe** compilation is a file that is verifiably type safe, and sizeof is not supported because the return value of the sizeof operator is size_t, whose size varies depending on the operating system.
 
 For more information, see,

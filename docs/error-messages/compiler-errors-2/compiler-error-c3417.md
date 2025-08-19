@@ -10,7 +10,11 @@ ms.assetid: 3e7869ea-8948-42fb-ba30-6ccafe499c35
 
 > 'member' : value types cannot contain user-defined special member functions
 
+## Remarks
+
 Value types cannot contain functions such as a default instance constructor, destructor, or copy constructor.
+
+## Example
 
 The following sample generates C3517:
 

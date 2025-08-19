@@ -10,7 +10,11 @@ ms.assetid: 5f1838c1-986e-47db-8dbc-e06976b83cf3
 
 > 'class::function' : a function that has a DllImport Custom attribute cannot return an instance of a class
 
+## Remarks
+
 A function defined as being in a .dll file specified with the `DllImport` attribute cannot return an instance of a class.
+
+## Example
 
 The following sample generates C3385:
 

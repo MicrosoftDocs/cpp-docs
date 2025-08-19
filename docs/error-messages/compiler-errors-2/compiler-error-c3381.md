@@ -10,9 +10,9 @@ ms.assetid: d276c89f-8377-4cb6-a8d4-7770885f06c4
 
 > '*identifier*' : assembly access specifiers are only available in code compiled with a /clr option
 
-A type was declared or defined by using an access specifier, which is only permitted in code compiled by using **`/clr`**.
-
 ## Remarks
+
+A type was declared or defined by using an access specifier, which is only permitted in code compiled by using **`/clr`**.
 
 This error may result from a misplaced **`public`**, **`protected`**, or **`private`** keyword, or a missing colon (**`:`**) after an access specifier within a **`class`** or **`struct`**.
 
