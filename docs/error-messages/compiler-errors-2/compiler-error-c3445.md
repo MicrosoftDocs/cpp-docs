@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3445"
 title: "Compiler Error C3445"
-ms.date: "04/10/2017"
+description: "Learn more about: Compiler Error C3445"
+ms.date: 04/10/2017
 f1_keywords: ["C3445"]
 helpviewer_keywords: ["C3445"]
-ms.assetid: 0d272bfc-136b-4025-a9ba-5e4eea5f8215
 ---
 # Compiler Error C3445
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3480"
 title: "Compiler Error C3480"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3480"
+ms.date: 11/04/2016
 f1_keywords: ["C3480"]
 helpviewer_keywords: ["C3480"]
-ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
 ---
 # Compiler Error C3480
 

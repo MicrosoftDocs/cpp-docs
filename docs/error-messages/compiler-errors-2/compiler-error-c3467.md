@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3467"
 title: "Compiler Error C3467"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3467"
+ms.date: 11/04/2016
 f1_keywords: ["C3467"]
 helpviewer_keywords: ["C3467"]
-ms.assetid: e2b844d0-4920-412f-99fd-cd8051c4aa41
 ---
 # Compiler Error C3467
 

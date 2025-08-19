@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3450"
 title: "Compiler Error C3450"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3450"
+ms.date: 11/04/2016
 f1_keywords: ["C3450"]
 helpviewer_keywords: ["C3450"]
-ms.assetid: 78892cf7-0b82-4589-90d0-e06666247003
 ---
 # Compiler Error C3450
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3460"
 title: "Compiler Error C3460"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3460"
+ms.date: 11/04/2016
 f1_keywords: ["C3460"]
 helpviewer_keywords: ["C3460"]
-ms.assetid: adbf8775-10ca-4654-acdf-58dd765351cd
 ---
 # Compiler Error C3460
 

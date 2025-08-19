@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3470"
 title: "Compiler Error C3470"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3470"
+ms.date: 11/04/2016
 f1_keywords: ["C3470"]
 helpviewer_keywords: ["C3470"]
-ms.assetid: 170c7a9d-214d-41b1-8f15-d4a4fc38aaa5
 ---
 # Compiler Error C3470
 

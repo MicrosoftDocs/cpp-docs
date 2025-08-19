@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3468"
 title: "Compiler Error C3468"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3468"
+ms.date: 11/04/2016
 f1_keywords: ["C3468"]
 helpviewer_keywords: ["C3468"]
-ms.assetid: cfd320db-2f6e-4e0d-ba02-e79ece87e1e0
 ---
 # Compiler Error C3468
 

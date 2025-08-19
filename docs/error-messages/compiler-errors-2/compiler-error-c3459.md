@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3459"
 title: "Compiler Error C3459"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3459"
+ms.date: 11/04/2016
 f1_keywords: ["C3459"]
 helpviewer_keywords: ["C3459"]
-ms.assetid: 3d290a20-d313-4c07-9bd8-c5c159cb169f
 ---
 # Compiler Error C3459
 

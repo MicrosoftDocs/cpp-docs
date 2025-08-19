@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3463"
 title: "Compiler Error C3463"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3463"
+ms.date: 11/04/2016
 f1_keywords: ["C3463"]
 helpviewer_keywords: ["C3463"]
-ms.assetid: 153efcc0-085c-4615-84ea-d22942618bdf
 ---
 # Compiler Error C3463
 

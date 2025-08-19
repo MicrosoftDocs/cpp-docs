@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3461"
 title: "Compiler Error C3461"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3461"
+ms.date: 11/04/2016
 f1_keywords: ["C3461"]
 helpviewer_keywords: ["C3461"]
-ms.assetid: bd66833a-545d-445a-bdfe-dee771a450a4
 ---
 # Compiler Error C3461
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3464"
 title: "Compiler Error C3464"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3464"
+ms.date: 11/04/2016
 f1_keywords: ["C3464"]
 helpviewer_keywords: ["C3464"]
-ms.assetid: 0ede05dc-4486-4921-8e8c-78ab5a2e09c5
 ---
 # Compiler Error C3464
 

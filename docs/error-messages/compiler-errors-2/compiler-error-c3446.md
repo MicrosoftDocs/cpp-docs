@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3446"
 title: "Compiler Error C3446"
-ms.date: "07/21/2017"
+description: "Learn more about: Compiler Error C3446"
+ms.date: 07/21/2017
 f1_keywords: ["C3446"]
 helpviewer_keywords: ["C3446"]
-ms.assetid: 33064548-24e4-46f1-beb1-476e3c3b3fbf
 ---
 # Compiler Error C3446
 

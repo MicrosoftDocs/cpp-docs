@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3455"
 title: "Compiler Error C3455"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3455"
+ms.date: 11/04/2016
 f1_keywords: ["C3455"]
 helpviewer_keywords: ["C3455"]
-ms.assetid: 218e5cfe-5391-4eeb-81c2-85c47e3a6cd2
 ---
 # Compiler Error C3455
 

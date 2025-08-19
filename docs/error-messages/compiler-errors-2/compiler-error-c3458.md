@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3458"
 title: "Compiler Error C3458"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3458"
+ms.date: 11/04/2016
 f1_keywords: ["C3458"]
 helpviewer_keywords: ["C3458"]
-ms.assetid: 940202fd-8dcc-4042-9c96-3f9e9127d2f1
 ---
 # Compiler Error C3458
 

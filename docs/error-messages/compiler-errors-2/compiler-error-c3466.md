@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3466"
 title: "Compiler Error C3466"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3466"
+ms.date: 11/04/2016
 f1_keywords: ["C3466"]
 helpviewer_keywords: ["C3466"]
-ms.assetid: 69a877d9-a749-474b-bfc3-8d3fd53ba8fd
 ---
 # Compiler Error C3466
 

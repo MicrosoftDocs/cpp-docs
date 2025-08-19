@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3469"
 title: "Compiler Error C3469"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3469"
+ms.date: 11/04/2016
 f1_keywords: ["C3469"]
 helpviewer_keywords: ["C3469"]
-ms.assetid: e23b0e5c-c704-4e67-a868-bf02c2055d85
 ---
 # Compiler Error C3469
 

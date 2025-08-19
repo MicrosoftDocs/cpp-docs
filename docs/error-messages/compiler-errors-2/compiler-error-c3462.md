@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3462"
 title: "Compiler Error C3462"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3462"
+ms.date: 11/04/2016
 f1_keywords: ["C3462"]
 helpviewer_keywords: ["C3462"]
-ms.assetid: 56b75f35-9fad-42d9-a969-eeca5d709bec
 ---
 # Compiler Error C3462
 
