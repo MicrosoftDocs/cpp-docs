@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2521"
 title: "Compiler Error C2521"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2521"
+ms.date: 11/04/2016
 f1_keywords: ["C2521"]
 helpviewer_keywords: ["C2521"]
-ms.assetid: 6042821b-e345-4a54-a7e9-a2c9019ea016
 ---
 # Compiler Error C2521
 
-function does not take any arguments
+> function does not take any arguments
+
+## Remarks
 
 You attempted to use arguments with a destructor or finalizer.
 
@@ -16,7 +17,7 @@ For more information, see [Destructors and finalizers](../../dotnet/how-to-defin
 
 ## Example
 
-The following sample generates C2521.
+The following example generates C2521.
 
 ```cpp
 // C2521.cpp
