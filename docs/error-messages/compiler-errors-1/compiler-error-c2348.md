@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2348"
 title: "Compiler Error C2348"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2348"
+ms.date: 11/04/2016
 f1_keywords: ["C2348"]
 helpviewer_keywords: ["C2348"]
-ms.assetid: 4c4d701f-ccf1-46fe-9ddb-3f341684f269
 ---
 # Compiler Error C2348
 
-'type name' : is not a C-style aggregate, cannot be exported in embedded-IDL
+> 'type name' : is not a C-style aggregate, cannot be exported in embedded-IDL
+
+## Remarks
 
 To place a **`struct`** in a .idl file with the [export](../../windows/attributes/export.md) attribute, the **`struct`** must contain only data.
 
-The following sample generates C2348:
+## Example
+
+The following example generates C2348:
 
 ```cpp
 // C2348.cpp
