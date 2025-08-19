@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2375"
 title: "Compiler Error C2375"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2375"
+ms.date: 11/04/2016
 f1_keywords: ["C2375"]
 helpviewer_keywords: ["C2375"]
-ms.assetid: 193c5e8b-1b20-4928-8a02-8c1cddaf2a26
 ---
 # Compiler Error C2375
 
-'function' : redefinition; different linkage
+> 'function' : redefinition; different linkage
+
+## Remarks
 
 The function is already declared with a different linkage specifier.
 
-The following sample generates C2375:
+## Example
+
+The following example generates C2375:
 
 ```cpp
 // C2375.cpp
