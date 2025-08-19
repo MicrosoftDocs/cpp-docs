@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3394"
 title: "Compiler Error C3394"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3394"
+ms.date: 11/04/2016
 f1_keywords: ["C3394"]
 helpviewer_keywords: ["C3394"]
-ms.assetid: 4e025d79-27ba-43c8-b0d9-839ecef98126
 ---
 # Compiler Error C3394
 

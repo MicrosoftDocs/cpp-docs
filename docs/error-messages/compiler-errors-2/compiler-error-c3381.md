@@ -4,7 +4,6 @@ description: "Microsoft C++ compiler error C3381, its causes and how to resolve 
 ms.date: 09/28/2020
 f1_keywords: ["C3381"]
 helpviewer_keywords: ["C3381"]
-ms.assetid: d276c89f-8377-4cb6-a8d4-7770885f06c4
 ---
 # Compiler Error C3381
 

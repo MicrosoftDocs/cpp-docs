@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3388"
 title: "Compiler Error C3388"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3388"
+ms.date: 11/04/2016
 f1_keywords: ["C3388"]
 helpviewer_keywords: ["C3388"]
-ms.assetid: 34336545-ed13-4d81-ab5f-f869799fe4c2
 ---
 # Compiler Error C3388
 

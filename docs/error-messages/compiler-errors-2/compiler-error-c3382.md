@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3382"
 title: "Compiler Error C3382"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3382"
+ms.date: 11/04/2016
 f1_keywords: ["C3382"]
 helpviewer_keywords: ["C3382"]
-ms.assetid: a7603abd-ac4e-4ae6-a02b-3bdc6d1908a6
 ---
 # Compiler Error C3382
 

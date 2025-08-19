@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3397"
 title: "Compiler Error C3397"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3397"
+ms.date: 11/04/2016
 f1_keywords: ["C3397"]
 helpviewer_keywords: ["C3397"]
-ms.assetid: a8536e87-79c4-4ed7-bd96-42704d06391f
 ---
 # Compiler Error C3397
 

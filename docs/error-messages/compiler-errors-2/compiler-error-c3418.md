@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3418"
 title: "Compiler Error C3418"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3418"
+ms.date: 11/04/2016
 f1_keywords: ["C3418"]
 helpviewer_keywords: ["C3418"]
-ms.assetid: 54042c04-3c45-41c1-bad7-90f9ee05a21b
 ---
 # Compiler Error C3418
 

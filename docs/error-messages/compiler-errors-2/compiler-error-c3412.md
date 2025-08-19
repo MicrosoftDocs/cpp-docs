@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3412"
 title: "Compiler Error C3412"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3412"
+ms.date: 11/04/2016
 f1_keywords: ["C3412"]
 helpviewer_keywords: ["C3412"]
-ms.assetid: aa4dd43b-54ce-4cda-85c1-1a77dd6e34fa
 ---
 # Compiler Error C3412
 

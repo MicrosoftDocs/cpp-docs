@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3400"
 title: "Compiler Error C3400"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3400"
+ms.date: 11/04/2016
 f1_keywords: ["C3400"]
 helpviewer_keywords: ["C3400"]
-ms.assetid: d44169a8-73b6-4766-b406-b3a6c93f2a4d
 ---
 # Compiler Error C3400
 

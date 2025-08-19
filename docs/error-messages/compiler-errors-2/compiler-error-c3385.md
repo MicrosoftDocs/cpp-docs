@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3385"
 title: "Compiler Error C3385"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3385"
+ms.date: 11/04/2016
 f1_keywords: ["C3385"]
 helpviewer_keywords: ["C3385"]
-ms.assetid: 5f1838c1-986e-47db-8dbc-e06976b83cf3
 ---
 # Compiler Error C3385
 

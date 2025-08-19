@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3384"
 title: "Compiler Error C3384"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3384"
+ms.date: 11/04/2016
 f1_keywords: ["C3384"]
 helpviewer_keywords: ["C3384"]
-ms.assetid: c9f92c6a-62a9-4333-b2b1-bc55c7f288b6
 ---
 # Compiler Error C3384
 

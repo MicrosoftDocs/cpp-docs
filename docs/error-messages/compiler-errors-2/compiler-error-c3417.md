@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3417"
 title: "Compiler Error C3417"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3417"
+ms.date: 11/04/2016
 f1_keywords: ["C3417"]
 helpviewer_keywords: ["C3417"]
-ms.assetid: 3e7869ea-8948-42fb-ba30-6ccafe499c35
 ---
 # Compiler Error C3417
 

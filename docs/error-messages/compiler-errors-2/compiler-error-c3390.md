@@ -4,7 +4,6 @@ description: "Microsoft C++ compiler error C3390, its causes and how to resolve 
 ms.date: 09/26/2020
 f1_keywords: ["C3390"]
 helpviewer_keywords: ["C3390"]
-ms.assetid: 84800a87-c8e6-45aa-82ae-02f816dc8d97
 ---
 # Compiler Error C3390
 

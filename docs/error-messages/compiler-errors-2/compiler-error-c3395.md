@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3395"
 title: "Compiler Error C3395"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3395"
+ms.date: 11/04/2016
 f1_keywords: ["C3395"]
 helpviewer_keywords: ["C3395"]
-ms.assetid: 26a9ebc9-ed97-47ce-b436-19aa2bcf6e50
 ---
 # Compiler Error C3395
 

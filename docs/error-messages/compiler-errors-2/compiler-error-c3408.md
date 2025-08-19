@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3408"
 title: "Compiler Error C3408"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3408"
+ms.date: 11/04/2016
 f1_keywords: ["C3408"]
 helpviewer_keywords: ["C3408"]
-ms.assetid: 1f5ea979-fb1e-4214-b310-6fd6ca8249b1
 ---
 # Compiler Error C3408
 

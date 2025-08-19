@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3420"
 title: "Compiler Error C3420"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3420"
+ms.date: 11/04/2016
 f1_keywords: ["C3420"]
 helpviewer_keywords: ["C3420"]
-ms.assetid: 99b53c77-f36b-4574-9199-b53111becccb
 ---
 # Compiler Error C3420
 
