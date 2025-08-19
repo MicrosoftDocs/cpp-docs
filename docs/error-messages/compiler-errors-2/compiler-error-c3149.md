@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3149"
 title: "Compiler Error C3149"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3149"
+ms.date: 11/04/2016
 f1_keywords: ["C3149"]
 helpviewer_keywords: ["C3149"]
-ms.assetid: cf6e2616-2f06-46da-8a8a-d449cb481c51
 ---
 # Compiler Error C3149
 
-'type' : cannot use this type here without a top-level 'char'
+> 'type' : cannot use this type here without a top-level 'char'
+
+## Remarks
 
 A declaration was not specified correctly.
 
@@ -16,7 +17,9 @@ For example, you may have defined a CLR type at global scope and tried to create
 
 To resolve this error, declare variables of CLR types inside a function or type definition.
 
-The following sample generates C3149:
+## Examples
+
+The following example generates C3149:
 
 ```cpp
 // C3149.cpp
@@ -29,7 +32,7 @@ int main() {
 }
 ```
 
-The following sample generates C3149:
+The following example generates C3149:
 
 ```cpp
 // C3149b.cpp

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3145"
 title: "Compiler Error C3145"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3145"
+ms.date: 11/04/2016
 f1_keywords: ["C3145"]
 helpviewer_keywords: ["C3145"]
-ms.assetid: f165c874-0f51-45c7-85e8-ebe321cbc168
 ---
 # Compiler Error C3145
 
-'object' : global or static variable may not have managed or WinRT type 'type'
+> 'object' : global or static variable may not have managed or WinRT type 'type'
+
+## Remarks
 
 You can only define CLR or WinRT objects within function scope.
 
-The following sample generates C3145 and shows how to fix it:
+## Examples
+
+The following example generates C3145 and shows how to fix it:
 
 ```cpp
 // C3145.cpp
@@ -35,7 +38,7 @@ int main() {
 }
 ```
 
-The following sample generates C3145:
+The following example generates C3145:
 
 ```cpp
 // C3145b.cpp
