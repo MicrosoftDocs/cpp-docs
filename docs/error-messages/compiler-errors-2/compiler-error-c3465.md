@@ -8,7 +8,7 @@ ms.assetid: aeb815e5-b3fc-4525-afe2-d738e9321df1
 ---
 # Compiler Error C3465
 
-to use type 'type' you must reference the assembly 'assembly'
+> to use type 'type' you must reference the assembly 'assembly'
 
 Type forwarding will work for a client application until you recompile the client. When you recompile, you will need a reference for every assembly containing the definition of a type used in your client application.
 

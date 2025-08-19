@@ -8,7 +8,7 @@ ms.assetid: dbefdbcf-f697-4239-b7a5-1d99b85e9e7f
 ---
 # Compiler Error C3453
 
-'attribute': attribute not applied because qualifier 'assembly' did not match
+> 'attribute': attribute not applied because qualifier 'assembly' did not match
 
 Assembly or module level attributes can only be specified as stand-alone instructions.
 

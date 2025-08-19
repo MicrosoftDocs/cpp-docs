@@ -8,7 +8,7 @@ ms.assetid: cfd320db-2f6e-4e0d-ba02-e79ece87e1e0
 ---
 # Compiler Error C3468
 
-'type' : you can only forward a type to an assembly:
+> 'type' : you can only forward a type to an assembly:
 
 '`file`' is not an assembly
 

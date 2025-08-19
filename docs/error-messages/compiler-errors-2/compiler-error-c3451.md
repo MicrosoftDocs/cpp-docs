@@ -8,7 +8,7 @@ ms.assetid: a4897a69-e3e7-40bb-bb1c-598644904012
 ---
 # Compiler Error C3451
 
-'attribute': cannot apply unmanaged attribute to 'type'
+> 'attribute': cannot apply unmanaged attribute to 'type'
 
 A C++ attribute cannot be applied to a CLR type. See [C++ Attributes Reference](../../windows/attributes/attributes-alphabetical-reference.md) for more information.
 

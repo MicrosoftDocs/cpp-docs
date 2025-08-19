@@ -8,7 +8,7 @@ ms.assetid: 170c7a9d-214d-41b1-8f15-d4a4fc38aaa5
 ---
 # Compiler Error C3470
 
-'type' : a class cannot have both an indexer (default indexed property) and an operator[]
+> 'type' : a class cannot have both an indexer (default indexed property) and an operator[]
 
 A type cannot define both a default indexer and an operator[].
 

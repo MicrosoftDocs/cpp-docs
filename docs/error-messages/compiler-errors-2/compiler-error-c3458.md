@@ -8,7 +8,7 @@ ms.assetid: 940202fd-8dcc-4042-9c96-3f9e9127d2f1
 ---
 # Compiler Error C3458
 
-'attribute1': attribute 'attribute2' already specified for 'construct'
+> 'attribute1': attribute 'attribute2' already specified for 'construct'
 
 Two attributes that are mutually exclusive were specified for the same construct.
 

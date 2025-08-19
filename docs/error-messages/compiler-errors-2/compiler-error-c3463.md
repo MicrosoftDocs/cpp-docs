@@ -8,7 +8,7 @@ ms.assetid: 153efcc0-085c-4615-84ea-d22942618bdf
 ---
 # Compiler Error C3463
 
-'type': type not allowed in attribute 'implements'
+> 'type': type not allowed in attribute 'implements'
 
 An invalid type was passed to the [implements](../../windows/attributes/implements-cpp.md) attribute. For example, you can pass an interface to `implements`, but you cannot pass a pointer to an interface.
 

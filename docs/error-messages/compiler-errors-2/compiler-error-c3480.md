@@ -8,7 +8,7 @@ ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
 ---
 # Compiler Error C3480
 
-'var': a lambda capture variable must be from an enclosing function scope
+> 'var': a lambda capture variable must be from an enclosing function scope
 
 The lambda capture variable is not from an enclosing function scope.
 

@@ -8,7 +8,7 @@ ms.assetid: b52050c6-17a4-424a-8894-337b0cec7010
 ---
 # Compiler Error C3421
 
-'type' : you cannot call the finalizer for this class as it is either inaccessible or it does not exist
+> 'type' : you cannot call the finalizer for this class as it is either inaccessible or it does not exist
 
 A finalizer is implicitly private, so it cannot be called from outside its enclosing type.
 

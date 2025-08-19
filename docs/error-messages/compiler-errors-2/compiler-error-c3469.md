@@ -8,7 +8,7 @@ ms.assetid: e23b0e5c-c704-4e67-a868-bf02c2055d85
 ---
 # Compiler Error C3469
 
-'type' : a generic class cannot be forwarded
+> 'type' : a generic class cannot be forwarded
 
 You cannot use type forwarding on a generic class.
 

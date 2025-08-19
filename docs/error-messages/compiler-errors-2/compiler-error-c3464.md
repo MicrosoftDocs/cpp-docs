@@ -8,7 +8,7 @@ ms.assetid: 0ede05dc-4486-4921-8e8c-78ab5a2e09c5
 ---
 # Compiler Error C3464
 
-'type' a nested type cannot be forwarded
+> 'type' a nested type cannot be forwarded
 
 Type forwarding does not work on nested types.
 

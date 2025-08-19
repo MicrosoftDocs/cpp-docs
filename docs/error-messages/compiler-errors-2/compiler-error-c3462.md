@@ -8,7 +8,7 @@ ms.assetid: 56b75f35-9fad-42d9-a969-eeca5d709bec
 ---
 # Compiler Error C3462
 
-'type': only an imported type can be forwarded
+> 'type': only an imported type can be forwarded
 
 The TypeForwardedTo attribute must be applied to a type in referenced metadata.
 

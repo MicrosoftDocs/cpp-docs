@@ -8,7 +8,7 @@ ms.assetid: e5293dcf-cb70-4133-ae2a-0bb496950ba0
 ---
 # Compiler Error C3452
 
-list argument member not constant
+> list argument member not constant
 
 An argument was passed to an attribute that expected a constant, a value that can be evaluated at compile time.
 

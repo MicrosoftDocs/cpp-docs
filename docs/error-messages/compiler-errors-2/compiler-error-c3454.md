@@ -8,7 +8,7 @@ ms.assetid: dc4e6d57-5b4d-4114-8d6f-22f9ae62925b
 ---
 # Compiler Error C3454
 
-[attribute] not allowed on class declaration
+> [attribute] not allowed on class declaration
 
 A class must be defined for it to be an attribute.
 

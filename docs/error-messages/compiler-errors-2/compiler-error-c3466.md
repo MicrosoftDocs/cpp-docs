@@ -8,7 +8,7 @@ ms.assetid: 69a877d9-a749-474b-bfc3-8d3fd53ba8fd
 ---
 # Compiler Error C3466
 
-'type' : a specialization of a generic class cannot be forwarded
+> 'type' : a specialization of a generic class cannot be forwarded
 
 You cannot use type forwarding on a specialization of a generic class.
 

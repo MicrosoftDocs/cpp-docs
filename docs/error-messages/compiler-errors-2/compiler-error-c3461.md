@@ -8,7 +8,7 @@ ms.assetid: bd66833a-545d-445a-bdfe-dee771a450a4
 ---
 # Compiler Error C3461
 
-'type': only a managed type can be forwarded
+> 'type': only a managed type can be forwarded
 
 Type forwarding can only occur on CLR types.  See [Classes and Structs](../../extensions/classes-and-structs-cpp-component-extensions.md) for more information.
 
