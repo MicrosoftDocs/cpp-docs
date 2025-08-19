@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2831"
 title: "Compiler Error C2831"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2831"
+ms.date: 11/04/2016
 f1_keywords: ["C2831"]
 helpviewer_keywords: ["C2831"]
-ms.assetid: c8c04288-0889-4265-a077-17f94cbcdcc9
 ---
 # Compiler Error C2831
 
-'operator operator' cannot have default parameters
+> 'operator operator' cannot have default parameters
+
+## Remarks
 
 Only three operators can have default parameters:
 
@@ -18,7 +19,9 @@ Only three operators can have default parameters:
 
 - Left parenthesis (
 
-The following sample generates C2831:
+## Example
+
+The following example generates C2831:
 
 ```cpp
 // C2831.cpp
