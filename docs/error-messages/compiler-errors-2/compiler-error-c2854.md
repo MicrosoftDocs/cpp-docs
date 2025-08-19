@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2854"
 title: "Compiler Error C2854"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2854"
+ms.date: 11/04/2016
 f1_keywords: ["C2854"]
 helpviewer_keywords: ["C2854"]
-ms.assetid: 917fec9c-790a-4149-8dfc-00d17a09199c
 ---
 # Compiler Error C2854
 
-syntax error in #pragma hdrstop
+> syntax error in #pragma hdrstop
+
+## Remarks
 
 The `#pragma hdrstop` gives an invalid filename. The pragma can be followed by an optional filename in parentheses and quotation marks:
 
-The following sample generates C2854:
+## Example
+
+The following example generates C2854:
 
 ```cpp
 // C2854.cpp
