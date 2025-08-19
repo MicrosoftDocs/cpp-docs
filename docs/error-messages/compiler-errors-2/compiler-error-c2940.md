@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2940"
 title: "Compiler Error C2940"
+description: "Learn more about: Compiler Error C2940"
 ms.date: 06/01/2022
 f1_keywords: ["C2940"]
 helpviewer_keywords: ["C2940"]
-ms.assetid: af6bf2bf-8de6-4cfd-bbf0-4c6b32a30edf
 ---
 # Compiler Error C2940
 
 > '*class*' : type-class-id redefined as a local typedef
 
+## Remarks
+
 You can't use a generic or template class as a local **`typedef`**.
 
 This error is obsolete in Visual Studio 2022 and later versions.
 
-The following sample generates C2940:
+## Examples
+
+The following example generates C2940:
 
 ```cpp
 // C2940.cpp

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2921"
 title: "Compiler Error C2921"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2921"
+ms.date: 11/04/2016
 f1_keywords: ["C2921"]
 helpviewer_keywords: ["C2921"]
-ms.assetid: 323642a0-bfc4-4942-9f41-c3adf5c54296
 ---
 # Compiler Error C2921
 
-redefinition : 'class' : class template or generic is being redeclared as 'type'
+> redefinition : 'class' : class template or generic is being redeclared as 'type'
+
+## Remarks
 
 A generic or template class has multiple declarations that are not equivalent. To fix this error, use different names for different types, or remove the redefinition of the type name.
 
-The following sample generates C2921:
+## Examples
+
+The following example generates C2921:
 
 ```cpp
 // C2921.cpp

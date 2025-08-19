@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2933"
 title: "Compiler Error C2933"
+description: "Learn more about: Compiler Error C2933"
 ms.date: 06/01/2022
 f1_keywords: ["C2933"]
 helpviewer_keywords: ["C2933"]
-ms.assetid: 394891e3-6b52-4b61-83d2-a1c5125d9bd5
 ---
 # Compiler Error C2933
 
 > '*class*' : type-class-id redefined as a typedef member of '*identifier*'
 
+## Remarks
+
 You can't use a generic or template class as a **`typedef`** member.
 
 This error is obsolete in Visual Studio 2022 and later versions.
 
-The following sample generates C2933:
+## Examples
+
+The following example generates C2933:
 
 ```cpp
 // C2933.cpp

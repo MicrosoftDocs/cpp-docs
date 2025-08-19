@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2913"
 title: "Compiler Error C2913"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2913"
+ms.date: 11/04/2016
 f1_keywords: ["C2913"]
 helpviewer_keywords: ["C2913"]
-ms.assetid: c6cf6090-02e8-49a5-913f-5bc6f864b769
 ---
 # Compiler Error C2913
 
-explicit specialization; 'declaration' is not a specialization of a class template
+> explicit specialization; 'declaration' is not a specialization of a class template
+
+## Remarks
 
 You cannot specialize a non-template class.
 
-The following sample generates C2913:
+## Example
+
+The following example generates C2913:
 
 ```cpp
 // C2913.cpp

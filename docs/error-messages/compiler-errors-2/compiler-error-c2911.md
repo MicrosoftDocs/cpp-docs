@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2911"
 title: "Compiler Error C2911"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2911"
+ms.date: 11/04/2016
 f1_keywords: ["C2911"]
 helpviewer_keywords: ["C2911"]
-ms.assetid: 83c7c01a-ab6a-4179-9fb0-289a9ec8d44e
 ---
 # Compiler Error C2911
 
-'member' : cannot be declared or defined in the current scope
+> 'member' : cannot be declared or defined in the current scope
+
+## Remarks
 
 Inside a namespace, class, or function, you can only define a member of the same namespace, class, or function or a member that is enclosed by the same namespace, class, or function.
 
-The following sample generates C2911:
+## Example
+
+The following example generates C2911:
 
 ```cpp
 // C2911.cpp

@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2932"
 title: "Compiler Error C2932"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2932"
+ms.date: 11/04/2016
 f1_keywords: ["C2932"]
 helpviewer_keywords: ["C2932"]
-ms.assetid: c28e88d9-e654-4367-bfb4-13c780bca9bd
 ---
 # Compiler Error C2932
 
 > '*class*' : type-class-id redefined as a data member of '*identifier*'
 
+## Remarks
+
 You can't use a generic or template class as a data member.
 
 This error is obsolete in Visual Studio 2022 and later versions.
 
-The following sample generates C2932:
+## Examples
+
+The following example generates C2932:
 
 ```cpp
 // C2932.cpp
