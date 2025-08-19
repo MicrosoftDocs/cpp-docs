@@ -8,7 +8,7 @@ ms.assetid: 715f5432-b509-4f8f-84f5-e1463bac490f
 ---
 # Compiler Error C3414
 
-'member' : imported member function can't be defined
+> 'member' : imported member function can't be defined
 
 A member was defined in code that is also defined in a referenced assembly.
 

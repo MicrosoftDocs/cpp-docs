@@ -8,7 +8,7 @@ ms.assetid: c32532b9-7db4-4ccd-84b9-479e5a1a19d1
 ---
 # Compiler Error C3391
 
-'type_arg' : invalid type argument for generic parameter 'param' of generic 'generic_type', must be a non-nullable value type
+> 'type_arg' : invalid type argument for generic parameter 'param' of generic 'generic_type', must be a non-nullable value type
 
 A generic type was instantiated incorrectly. Check the type definition. For more information, see <xref:System.Nullable> and [Generics](../../extensions/generics-cpp-component-extensions.md).
 

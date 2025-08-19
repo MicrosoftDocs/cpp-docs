@@ -8,7 +8,7 @@ ms.assetid: 54042c04-3c45-41c1-bad7-90f9ee05a21b
 ---
 # Compiler Error C3418
 
-access specifier 'specifier' is not supported
+> access specifier 'specifier' is not supported
 
 A CLR access specifier was specified incorrectly.  For more information, see Type visibility and Member visibility in [How to: Define and Consume Classes and Structs (C++/CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md).
 

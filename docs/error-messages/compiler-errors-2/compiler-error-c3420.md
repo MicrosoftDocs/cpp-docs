@@ -8,7 +8,7 @@ ms.assetid: 99b53c77-f36b-4574-9199-b53111becccb
 ---
 # Compiler Error C3420
 
-'finalizer' : a finalizer cannot be virtual
+> 'finalizer' : a finalizer cannot be virtual
 
 A finalizer can only be called non-virtually from its enclosing type. Therefore, it is an error to declare a virtual finalizer.
 

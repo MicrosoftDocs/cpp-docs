@@ -8,7 +8,7 @@ ms.assetid: 306ad199-d150-4f6c-bcf1-24a7948b93be
 ---
 # Compiler Error C3399
 
-'type' : cannot provide arguments when creating an instance of a generic parameter
+> 'type' : cannot provide arguments when creating an instance of a generic parameter
 
 When you specify the `gcnew()` constraint, you specify that the constraint type will have a parameterless constructor. Therefore, it is an error to attempt to instantiate that type and pass a parameter.
 

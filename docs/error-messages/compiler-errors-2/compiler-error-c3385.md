@@ -8,7 +8,7 @@ ms.assetid: 5f1838c1-986e-47db-8dbc-e06976b83cf3
 ---
 # Compiler Error C3385
 
-'class::function' : a function that has a DllImport Custom attribute cannot return an instance of a class
+> 'class::function' : a function that has a DllImport Custom attribute cannot return an instance of a class
 
 A function defined as being in a .dll file specified with the `DllImport` attribute cannot return an instance of a class.
 

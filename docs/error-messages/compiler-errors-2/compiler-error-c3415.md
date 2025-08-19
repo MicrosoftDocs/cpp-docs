@@ -8,7 +8,7 @@ ms.assetid: fa2db8ab-2820-4ec3-a740-fb5e2adcfb29
 ---
 # Compiler Error C3415
 
-multiple 'section_name' sections found with different attributes ('value')
+> multiple 'section_name' sections found with different attributes ('value')
 
 Conflicting values were specified in [section](../../preprocessor/section.md) pragmas.
 

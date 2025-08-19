@@ -8,7 +8,7 @@ ms.assetid: a8536e87-79c4-4ed7-bd96-42704d06391f
 ---
 # Compiler Error C3397
 
-Aggregate initialization is not allowed in default arguments
+> Aggregate initialization is not allowed in default arguments
 
 An array was declared incorrectly.  See [Arrays](../../extensions/arrays-cpp-component-extensions.md) for more information.
 

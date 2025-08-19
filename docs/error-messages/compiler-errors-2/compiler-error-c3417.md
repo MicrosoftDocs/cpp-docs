@@ -8,7 +8,7 @@ ms.assetid: 3e7869ea-8948-42fb-ba30-6ccafe499c35
 ---
 # Compiler Error C3417
 
-'member' : value types cannot contain user-defined special member functions
+> 'member' : value types cannot contain user-defined special member functions
 
 Value types cannot contain functions such as a default instance constructor, destructor, or copy constructor.
 

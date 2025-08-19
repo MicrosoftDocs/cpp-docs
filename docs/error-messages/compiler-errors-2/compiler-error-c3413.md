@@ -8,7 +8,7 @@ ms.assetid: de6c9b05-c373-4bd8-8cb0-12c2cd2e5674
 ---
 # Compiler Error C3413
 
-'name' : invalid explicit instantiation
+> 'name' : invalid explicit instantiation
 
 The compiler detected an ill-formed explicit instantiation.
 

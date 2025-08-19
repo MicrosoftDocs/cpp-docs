@@ -8,7 +8,7 @@ ms.assetid: d44169a8-73b6-4766-b406-b3a6c93f2a4d
 ---
 # Compiler Error C3400
 
-circular constraint dependency involving 'constraint_1' and 'constraint_2'
+> circular constraint dependency involving 'constraint_1' and 'constraint_2'
 
 The compiler detected circular constraints.
 
