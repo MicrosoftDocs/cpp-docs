@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2383"
 title: "Compiler Error C2383"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2383"
+ms.date: 11/04/2016
 f1_keywords: ["C2383"]
 helpviewer_keywords: ["C2383"]
-ms.assetid: 6696221d-879c-477a-a0f3-a6edc15fd3d7
 ---
 # Compiler Error C2383
 
-'*symbol*' : default-arguments are not allowed on this symbol
+> '*symbol*' : default-arguments are not allowed on this symbol
+
+## Remarks
 
 The C++ compiler does not allow default arguments on pointers to functions.
 
