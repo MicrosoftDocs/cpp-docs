@@ -177,28 +177,28 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P0735R1 Interaction of memory_order_consume with release sequences`](https://wg21.link/P0735R1) | N/A |
 | &emsp;[`P1236R1 Signed integers are two's complement`](https://wg21.link/P1236R1) | N/A |
 | **C++23 Core language features** | **Supported** |
-| &emsp;[`P0330R8 Literal Suffix for (signed) size_t`](https://wg21.link/p0330r8) | no |
-| &emsp;[`P0847R7 Deducing this`](https://wg21.link/p0847r7) | no |
+| &emsp;[`P0330R8 Literal Suffix for (signed) size_t`](https://wg21.link/p0330r8) | VS 2022 17.13 <sup>[23](#note_23)</sup> |
+| &emsp;[`P0847R7 Deducing this`](https://wg21.link/p0847r7) | VS 2022 17.2 <sup>[23](#note_23)</sup> |
 | &emsp;[`P0849R8 auto(x): decay-copy in the language`](https://wg21.link/p0849r8) | no |
-| &emsp;[`P1102R2 Down with ()!`](https://wg21.link/p1102r2) | no |
-| &emsp;[`P1169R4 static operator()`](https://wg21.link/p1169r4) | no |
+| &emsp;[`P1102R2 Down with ()!`](https://wg21.link/p1102r2) | VS 2022 17.14 <sup>[23](#note_23)</sup> |
+| &emsp;[`P1169R4 static operator()`](https://wg21.link/p1169r4) | VS 2022 17.14 <sup>[23](#note_23)</sup> |
 | &emsp;[`P1401R5 Narrowing contextual conversions to bool`](https://wg21.link/p1401r5) | no |
 | &emsp;[`P1467R9 Extended floating-point types and standard names`](https://wg21.link/p1467r9) | no |
 | &emsp;[`P1774R8 Portable assumptions`](https://wg21.link/p1774r8) | no |
 | &emsp;[`P1787R6 Declarations and where to find them`](https://wg21.link/p1787r6) | no |
 | &emsp;[`P1847R4 Make declaration order layout mandated`](https://wg21.link/p1847r4) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
-| &emsp;[`P1938R3 if consteval`](https://wg21.link/p1938r3) | no |
+| &emsp;[`P1938R3 if consteval`](https://wg21.link/p1938r3) | VS 2022 17.14 <sup>[23](#note_23)</sup> |
 | &emsp;[`P1949R7 C++ Identifier Syntax using Unicode Standard Annex 31`](https://wg21.link/p1949r7) | no |
 | &emsp;[`P2029R4 Proposed resolution for core issues 411, 1656, and 2333; numeric and universal character escapes in character and string literals`](https://wg21.link/p2029r4) | no |
 | &emsp;[`P2036R3 Change scope of lambda trailing-return-type`](https://wg21.link/p2036r3) | no |
 | &emsp;[`P2071R2 Named universal character escapes`](https://wg21.link/p2071r2) | no |
-| &emsp;[`P2128R6 Multidimensional subscript operator`](https://wg21.link/p2128r6) | no |
+| &emsp;[`P2128R6 Multidimensional subscript operator`](https://wg21.link/p2128r6) | VS 2022 17.12 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2156R1 Allow Duplicate Attributes`](https://wg21.link/p2156r1) | no |
-| &emsp;[`P2173R1 Attributes on Lambda-Expressions`](https://wg21.link/p2173r1) | no |
+| &emsp;[`P2173R1 Attributes on Lambda-Expressions`](https://wg21.link/p2173r1) | VS 2022 17.14 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2186R2 Remove Garbage Collection Support`](https://wg21.link/p2186r2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2201R1 Mixed string literal concatenation`](https://wg21.link/p2201r1) | no |
 | &emsp;[`P2223R2 Trimming whitespaces before line splicing`](https://wg21.link/p2223r2) | no |
-| &emsp;[`P2242R3 Non-literal variables (and labels and gotos) in constexpr functions`](https://wg21.link/p2242r3) | no |
+| &emsp;[`P2242R3 Non-literal variables (and labels and gotos) in constexpr functions`](https://wg21.link/p2242r3) | VS 2022 17.13 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2246R1 Character encoding of diagnostic text`](https://wg21.link/p2246r1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2266R3 Simpler implicit move`](https://wg21.link/p2266r3) | no |
 | &emsp;[`P2280R4 Using unknown pointers and references in constant expressions`](https://wg21.link/p2280r4) | no |
@@ -208,17 +208,18 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P2316R2 Consistent character literal encoding`](https://wg21.link/p2316r2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2324R2 Labels at the end of compound statements (C compatibility)`](https://wg21.link/p2324r2) | no |
 | &emsp;[`P2327R1 De-deprecating volatile compound operations`](https://wg21.link/p2327r1) | no |
-| &emsp;[`P2334R1 preprocessing directives elifdef and elifndef`](https://wg21.link/p2334r1) | no |
+| &emsp;[`P2334R1 preprocessing directives elifdef and elifndef`](https://wg21.link/p2334r1) | VS 2022 17.10 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2360R0 Extend init-statement to allow alias-declaration`](https://wg21.link/p2360r0) | no |
 | &emsp;[`P2362R3 Remove non-encodable wide character literals and multicharacter wide character literals`](https://wg21.link/p2362r3) | no |
 | &emsp;[`P2437R1 Support for #warning`](https://wg21.link/p2437r1) | no |
 | &emsp;[`P2448R2 Relaxing some constexpr restrictions`](https://wg21.link/p2448r2) | no |
 | &emsp;[`P2460R2 Relax requirements on wchar_t to match existing practices`](https://wg21.link/p2460r2) | no |
 | &emsp;[`P2468R2 The Equality Operator You Are Looking For`](https://wg21.link/p2468r2) | no |
-| &emsp;[`P2493R0 Missing feature test macros for C++20 core papers`](https://wg21.link/p2493r0) | no |
+| &emsp;[`P2493R0 Missing feature test macros for C++20 core papers`](https://wg21.link/p2493r0) | VS 2022 17.2 <sup>[DR](#note_DR)</sup> |
 | &emsp;[`P2513R4 char8_t Compatibility and Portability Fix`](https://wg21.link/p2513r4) | VS 2022 17.4 <sup>[DR](#note_DR)</sup> |
 | &emsp;[`P2579R0 Mitigation strategies for P2036 ”Changing scope for lambda trailing-return-type”`](https://wg21.link/p2579r0) | no |
 | &emsp;[`P2582R1 Wording for class template argument deduction from inherited constructors`](https://wg21.link/p2582r1) | no |
+| &emsp;[`P2589R1 static operator[]`](https://wg21.link/p2589r1) | VS 2022 17.14 <sup>[23](#note_23)</sup> |
 
 ## C++ Standard library features
 
@@ -570,7 +571,11 @@ A group of papers listed together indicates a Standard feature along with one or
 **VS 2022 17.2** Supported in Visual Studio 2022 version 17.2.\
 **VS 2022 17.3** Supported in Visual Studio 2022 version 17.3.\
 **VS 2022 17.4** Supported in Visual Studio 2022 version 17.4.\
-**VS 2022 17.5** Supported in Visual Studio 2022 version 17.5.
+**VS 2022 17.5** Supported in Visual Studio 2022 version 17.5.\
+**VS 2022 17.10** Supported in Visual Studio 2022 version 17.10.\
+**VS 2022 17.12** Supported in Visual Studio 2022 version 17.12.\
+**VS 2022 17.13** Supported in Visual Studio 2022 version 17.13.\
+**VS 2022 17.14** Supported in Visual Studio 2022 version 17.14.
 
 ### Notes
 
