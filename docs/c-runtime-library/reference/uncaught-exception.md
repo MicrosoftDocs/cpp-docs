@@ -24,8 +24,6 @@ bool __uncaught_exception();
 
 **`true`** from the time an exception is thrown in a **`try`** block until the matching **`catch`** block is initialized; otherwise, **`false`**.
 
-## Remarks
-
 ## Requirements
 
 | Routine | Required header |

@@ -61,8 +61,6 @@ Constructs a new event.
 _CRTIMP event();
 ```
 
-### Remarks
-
 ## <a name="dtor"></a> ~event
 
 Destroys an event.

@@ -15,8 +15,6 @@ An optimization type that you can use to pass string data from `Platform::String
 class StringReference
 ```
 
-### Remarks
-
 ### Members
 
 ### Public Constructors
@@ -79,8 +77,6 @@ __abi_HSTRING GetHSTRING() const;
 
 An `__abi_HSTRING` that contains the string data.
 
-### Remarks
-
 ## <a name="getstring"></a> StringReference::GetString Method
 
 Returns the contents of the string as a `Platform::String^`.
@@ -109,8 +105,6 @@ unsigned int Length() const;
 ### Return Value
 
 An unsigned integer that specifies the number of characters in the string.
-
-### Remarks
 
 ## <a name="operator-assign"></a> StringReference::operator= Operator
 

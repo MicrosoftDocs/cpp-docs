@@ -70,8 +70,6 @@ The number of elements in the source array.
 *otherArg*<br/>
 An `ArrayReference` object whose data will be moved to initialize the new instance.
 
-### Remarks
-
 ## <a name="operator-assign"></a> ArrayReference::operator= Operator
 
 Assigns the specified object to the current [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) object by using move semantics.

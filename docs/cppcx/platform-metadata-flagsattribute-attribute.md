@@ -23,8 +23,6 @@ public ref class Flags abstract : Attribute
 
 [Platform::Metadata::Attribute](../cppcx/platform-metadata-attribute-attribute.md)
 
-### Remarks
-
 ### Requirements
 
 **Minimum supported client:** Windows 8

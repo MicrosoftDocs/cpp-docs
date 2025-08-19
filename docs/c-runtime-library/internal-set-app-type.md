@@ -33,8 +33,6 @@ A value that indicates the application type. The possible values are:
 | `_CONSOLE_APP` | Console (command-line) application. |
 | `_GUI_APP` | GUI (Windows) application. |
 
-## Remarks
-
 ## Requirements
 
 | Routine | Required header |

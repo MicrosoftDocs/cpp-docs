@@ -18,8 +18,6 @@ Displays a listing of compiler options to standard output.
 /?
 ```
 
-## Remarks
-
 ### To set this compiler option in the Visual Studio development environment
 
 - This compiler option should only be accessed from the command line.

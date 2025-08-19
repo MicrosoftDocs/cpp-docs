@@ -43,8 +43,6 @@ Additional information about the function entry and stack frame.
 
 One of the *filter expression* values used by the [try-except Statement](../cpp/try-except-statement.md).
 
-## Remarks
-
 ## Requirements
 
 | Routine | Required header |

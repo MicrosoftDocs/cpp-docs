@@ -16,8 +16,6 @@ Suppresses the display of the copyright banner when the compiler starts up and d
 /nologo
 ```
 
-## Remarks
-
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
