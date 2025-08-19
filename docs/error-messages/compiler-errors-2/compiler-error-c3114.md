@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3114"
 title: "Compiler Error C3114"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3114"
+ms.date: 11/04/2016
 f1_keywords: ["C3114"]
 helpviewer_keywords: ["C3114"]
-ms.assetid: b5d2df4f-87d0-4292-9981-25c6a6013c05
 ---
 # Compiler Error C3114
 
-'argument': not a valid named attribute argument
+> 'argument': not a valid named attribute argument
+
+## Remarks
 
 In order for an attribute class data member to be a valid named argument, it must not be marked **`static`**, **`const`**, or **`literal`**. If a property, the property must not be **`static`** and must have get and set accessors.
 
@@ -16,7 +17,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 ## Example
 
-The following sample generates C3114.
+The following example generates C3114.
 
 ```cpp
 // C3114.cpp
