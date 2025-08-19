@@ -4,7 +4,7 @@ ms.date: 01/29/2024
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
-helpviewer_keywords: ["modules [C++]", "modules [C++]", "named modules [C++], import standard library (STL) using named modules"]
+helpviewer_keywords: ["modules [C++]", "named modules [C++], import standard library (STL) using named modules"]
 description: Learn how to import the C++ standard library (STL) using modules from the command line
 ---
 
