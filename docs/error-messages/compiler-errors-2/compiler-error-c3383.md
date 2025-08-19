@@ -22,7 +22,7 @@ For more information, see,
 
 ## Example
 
-The following sample generates C3383.
+The following example generates C3383.
 
 ```cpp
 // C3383.cpp

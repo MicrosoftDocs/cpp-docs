@@ -16,7 +16,7 @@ A CLR access specifier was specified incorrectly.  For more information, see Typ
 
 ## Example
 
-The following sample generates C3418.
+The following example generates C3418.
 
 ```cpp
 // C3418.cpp

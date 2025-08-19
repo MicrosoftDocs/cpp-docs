@@ -18,7 +18,7 @@ For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../
 
 ## Example
 
-The following sample generates C3400.
+The following example generates C3400.
 
 ```cpp
 // C3400.cpp

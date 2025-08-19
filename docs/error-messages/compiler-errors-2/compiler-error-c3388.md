@@ -16,7 +16,7 @@ A constraint was specified on a generic type, but the constraint was not specifi
 
 ## Example
 
-The following sample generates C3388.
+The following example generates C3388.
 
 ```cpp
 // C3388.cpp

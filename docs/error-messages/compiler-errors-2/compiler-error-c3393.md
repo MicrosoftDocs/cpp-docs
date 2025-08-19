@@ -16,7 +16,7 @@ The identifier passed to a constraint, which must be a type, was not a type.  Fo
 
 ## Example
 
-The following sample generates C3393:
+The following example generates C3393:
 
 ```cpp
 // C3393.cpp

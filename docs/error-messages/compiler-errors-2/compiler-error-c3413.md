@@ -16,7 +16,7 @@ The compiler detected an ill-formed explicit instantiation.
 
 ## Example
 
-The following sample generates C3413:
+The following example generates C3413:
 
 ```cpp
 // C3413.cpp

@@ -37,7 +37,7 @@ Conflicting values were specified in [section](../../preprocessor/section.md) pr
 
 ## Example
 
-The following sample generates C3415:
+The following example generates C3415:
 
 ```cpp
 // C3415.cpp

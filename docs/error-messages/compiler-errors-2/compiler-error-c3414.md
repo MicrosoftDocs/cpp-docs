@@ -16,7 +16,7 @@ A member was defined in code that is also defined in a referenced assembly.
 
 ## Example
 
-The following sample generates C3414:
+The following example generates C3414:
 
 ```cpp
 // C3414a2.cpp

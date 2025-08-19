@@ -24,7 +24,7 @@ For more information, see,
 
 ## Example
 
-The following sample generates C3382.
+The following example generates C3382.
 
 ```cpp
 // C3382.cpp

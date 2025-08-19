@@ -16,7 +16,7 @@ The [`dllimport`](../../cpp/dllexport-dllimport.md) and [`dllexport`](../../cpp/
 
 ## Example
 
-The following sample generates C3386 and shows how to fix it:
+The following example generates C3386 and shows how to fix it:
 
 ```cpp
 // C3386.cpp

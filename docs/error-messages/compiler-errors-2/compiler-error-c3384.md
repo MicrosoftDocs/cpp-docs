@@ -18,7 +18,7 @@ See [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constrai
 
 ## Example
 
-The following sample generates C3384.
+The following example generates C3384.
 
 ```cpp
 // C3384.cpp

@@ -16,7 +16,7 @@ A function defined as being in a .dll file specified with the `DllImport` attrib
 
 ## Example
 
-The following sample generates C3385:
+The following example generates C3385:
 
 ```cpp
 // C3385.cpp

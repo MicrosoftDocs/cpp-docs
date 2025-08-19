@@ -16,7 +16,7 @@ A template cannot be specialized at class scope, only in global or namespace sco
 
 ## Example
 
-The following sample generates C3412.
+The following example generates C3412.
 
 ```cpp
 // C3412.cpp
@@ -27,7 +27,7 @@ struct S {
 };
 ```
 
-The following sample shows a possible resolution.
+The following example shows a possible resolution.
 
 ```cpp
 // C3412b.cpp

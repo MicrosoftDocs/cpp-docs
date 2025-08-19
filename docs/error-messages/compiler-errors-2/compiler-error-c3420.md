@@ -18,7 +18,7 @@ For more information, see [Destructors and finalizers in How to: Define and cons
 
 ## Example
 
-The following sample generates C3420.
+The following example generates C3420.
 
 ```cpp
 // C3420.cpp

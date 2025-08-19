@@ -16,7 +16,7 @@ A constraint was ill formed.  For more information, see [Constraints on Generic 
 
 ## Example
 
-The following sample generates C3394:
+The following example generates C3394:
 
 ```cpp
 // C3394.cpp

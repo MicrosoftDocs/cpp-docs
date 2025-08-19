@@ -16,7 +16,7 @@ Attributes cannot be applied to template definitions.
 
 ## Example
 
-The following sample generates C3408.
+The following example generates C3408.
 
 ```cpp
 // C3408.cpp

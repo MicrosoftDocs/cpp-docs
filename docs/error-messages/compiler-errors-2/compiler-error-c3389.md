@@ -18,7 +18,7 @@ A [`__declspec`](../../cpp/declspec.md) modifier used implies a per-process stat
 
 ## Example
 
-The following sample generates C3389:
+The following example generates C3389:
 
 ```cpp
 // C3389.cpp

@@ -16,7 +16,7 @@ A generic type was instantiated incorrectly. Check the type definition. For more
 
 ## Example
 
-The following sample uses C# to create a component that contains a generic type that has certain constraints that are not supported when authoring generic types in C++/CLI. For more information, see [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).
+The following example uses C# to create a component that contains a generic type that has certain constraints that are not supported when authoring generic types in C++/CLI. For more information, see [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).
 
 ```csharp
 // C3391.cs
@@ -26,7 +26,7 @@ public class GR<N>
 where N : struct {}
 ```
 
-When the C3391.dll component is available, the following sample generates C3391.
+When the C3391.dll component is available, the following example generates C3391.
 
 ```cpp
 // C3391_b.cpp

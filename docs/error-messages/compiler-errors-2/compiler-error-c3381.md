@@ -20,7 +20,7 @@ In C++/CLI, native types can be visible outside an assembly, but you can only sp
 
 ## Example
 
-The following sample generates C3381. To fix it, first either remove the **`public`** specifier from the `class A` definition, or compile by using the **`/clr`** option. Next, add a colon after **`private`** to specify access for `class B {} b;`. That's because a nested class can't have an assembly access specifier as part of its declaration.
+The following example generates C3381. To fix it, first either remove the **`public`** specifier from the `class A` definition, or compile by using the **`/clr`** option. Next, add a colon after **`private`** to specify access for `class B {} b;`. That's because a nested class can't have an assembly access specifier as part of its declaration.
 
 ```cpp
 // C3381.cpp
