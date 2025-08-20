@@ -7,11 +7,9 @@ helpviewer_keywords: ["C3468"]
 ---
 # Compiler Error C3468
 
-> 'type' : you can only forward a type to an assembly:
+> '*type*': you can only forward a type to an assembly: '*identifier*' is not an assembly
 
 ## Remarks
-
-'`file`' is not an assembly
 
 Only types in an assembly can be forwarded.
 
