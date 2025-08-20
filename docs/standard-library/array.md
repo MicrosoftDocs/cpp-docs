@@ -45,6 +45,7 @@ Defines the container class template **array** and several supporting templates.
 |-|-|
 |[get](../standard-library/array-functions.md#get)|Get specified array element.|
 |[swap](../standard-library/array-functions.md#swap)|Exchanges the contents of one array with the contents of another array.|
+| [`to_array`](array-functions.md#to_array) | Converts a built-in array to a `std::array` object. |
 
 ## See also
 
