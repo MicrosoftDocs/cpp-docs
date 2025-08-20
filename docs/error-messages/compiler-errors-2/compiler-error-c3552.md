@@ -8,7 +8,7 @@ ms.assetid: 83401524-1bf1-44c0-8aca-a6eb35c4224c
 ---
 # Compiler Error C3552
 
-'typename': a late specified return type cannot contain 'auto'
+> 'typename': a late specified return type cannot contain 'auto'
 
 If you use the **`auto`** keyword as a placeholder for the return type of a function, you must provide a late-specified return type. However, you cannot use another **`auto`** keyword to specify the late-specified return type. For example, the following code fragment yields error C3552.
 

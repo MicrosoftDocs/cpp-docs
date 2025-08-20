@@ -7,7 +7,7 @@ helpviewer_keywords: ["C3554"]
 ---
 # Compiler Error C3554
 
-'decltype' cannot be combined with any other type-specifier
+> 'decltype' cannot be combined with any other type-specifier
 
 You cannot qualify the `decltype()` keyword with any type specifier. For example, the following code fragment yields error C3554.
 

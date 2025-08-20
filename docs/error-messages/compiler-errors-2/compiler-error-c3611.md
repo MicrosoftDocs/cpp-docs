@@ -8,7 +8,7 @@ ms.assetid: 42f3e320-41de-420a-bd05-8924cab765aa
 ---
 # Compiler Error C3611
 
-'function': a sealed function cannot have a pure-specifier
+> 'function': a sealed function cannot have a pure-specifier
 
 A sealed function was declared incorrectly.  For more information, see [sealed](../../extensions/sealed-cpp-component-extensions.md).
 

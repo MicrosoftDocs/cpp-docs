@@ -8,7 +8,7 @@ ms.assetid: 9f2d5ffc-e429-41a1-89e3-7acc4fd47e14
 ---
 # Compiler Error C3550
 
-only plain 'decltype(auto)' is allowed in this context
+> only plain 'decltype(auto)' is allowed in this context
 
 If [`decltype(auto)`](../../cpp/decltype-cpp.md#decltype-and-auto) is used as a placeholder for the return type of a function, it must be used by itself. It cannot be used as part of a pointer declaration (`decltype(auto)*`), a reference declaration (`decltype(auto)&`), or any other such qualification.
 

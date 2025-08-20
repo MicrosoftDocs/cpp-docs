@@ -8,7 +8,7 @@ ms.assetid: 2bdb9fdc-9ddf-403e-8b92-02763d434487
 ---
 # Compiler Error C3531
 
-'symbol': a symbol whose type contains 'auto' must have an initializer
+> 'symbol': a symbol whose type contains 'auto' must have an initializer
 
 The specified variable does not have an initializer expression.
 

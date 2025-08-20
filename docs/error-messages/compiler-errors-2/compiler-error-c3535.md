@@ -8,7 +8,7 @@ ms.assetid: 24449c98-f681-484d-a00b-32533dca3a88
 ---
 # Compiler Error C3535
 
-cannot deduce type for 'type1' from 'type2'
+> cannot deduce type for 'type1' from 'type2'
 
 The type of the variable declared by the **`auto`** keyword cannot be deduced from the type of the initialization expression. For example, this error occurs if the initialization expression evaluates to **`void`**, which is not a type.
 

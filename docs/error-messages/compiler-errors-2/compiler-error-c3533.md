@@ -8,7 +8,7 @@ ms.assetid: a68b1ba5-466e-4190-a1a4-505ccfe548b7
 ---
 # Compiler Error C3533
 
-'type': a parameter cannot have a type that contains 'auto'
+> 'type': a parameter cannot have a type that contains 'auto'
 
 A method or template parameter cannot be declared with the **`auto`** keyword if the default [/Zc:auto](../../build/reference/zc-auto-deduce-variable-type.md) compiler option is in effect.
 

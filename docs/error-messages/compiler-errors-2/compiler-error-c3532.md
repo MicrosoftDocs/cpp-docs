@@ -8,7 +8,7 @@ ms.assetid: 51067853-eda8-4f59-86e8-8924e16d3a95
 ---
 # Compiler Error C3532
 
-'type': incorrect usage of 'auto'
+> 'type': incorrect usage of 'auto'
 
 The indicated type cannot be declared with the **`auto`** keyword. For example, you cannot use the **`auto`** keyword to declare an array or a method return type.
 

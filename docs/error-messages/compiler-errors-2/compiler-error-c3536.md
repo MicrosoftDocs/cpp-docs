@@ -7,7 +7,7 @@ helpviewer_keywords: ["C3536"]
 ---
 # Compiler Error C3536
 
-'symbol': cannot be used before it is initialized
+> 'symbol': cannot be used before it is initialized
 
 The indicated symbol cannot be used before it is initialized. In practice, this means that a variable cannot be used to initialize itself.
 
