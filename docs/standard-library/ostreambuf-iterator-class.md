@@ -13,7 +13,7 @@ The class template ostreambuf_iterator describes an output iterator object that 
 ## Syntax
 
 ```cpp
-template <class CharType = char class Traits = char_traits <CharType>>
+template <class CharType = char, class Traits = char_traits <CharType>>
 ```
 
 ### Parameters
