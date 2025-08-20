@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3262"
 title: "Compiler Error C3262"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3262"
+ms.date: 11/04/2016
 f1_keywords: ["C3262"]
 helpviewer_keywords: ["C3262"]
-ms.assetid: 3e74b9aa-de3c-4492-9331-ee73012b958b
 ---
 # Compiler Error C3262
 
-invalid array indexing: '#' dimension(s) specified for '#'-dimensional 'array type'
+> invalid array indexing: '#' dimension(s) specified for '#'-dimensional 'array type'
+
+## Remarks
 
 An array was improperly subscripted. The number of indices may not match the number of dimensions in the array.
 
-The following sample generates C3262:
+## Example
+
+The following example generates C3262:
 
 ```cpp
 // C3262.cpp

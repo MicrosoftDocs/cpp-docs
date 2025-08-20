@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3274"
 title: "Compiler Error C3274"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3274"
+ms.date: 11/04/2016
 f1_keywords: ["C3274"]
 helpviewer_keywords: ["C3274"]
-ms.assetid: 1f03f18e-b569-48eb-9249-11c70122a305
 ---
 # Compiler Error C3274
 
-__finally/finally without matching try
+> __finally/finally without matching try
+
+## Remarks
 
 A [__finally](../../cpp/try-finally-statement.md) or [finally](../../dotnet/finally.md) statement was found without a matching **`try`**. To resolve this, either delete the **`__finally`** statement or add a **`try`** statement for the **`__finally`**.
 
-The following sample generates C3274:
+## Example
+
+The following example generates C3274:
 
 ```cpp
 // C3274.cpp

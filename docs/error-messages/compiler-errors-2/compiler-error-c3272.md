@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3272"
 title: "Compiler Error C3272"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3272"
+ms.date: 11/04/2016
 f1_keywords: ["C3272"]
 helpviewer_keywords: ["C3272"]
-ms.assetid: 7cdf254d-f207-4116-a1bf-7386f3b82a6f
 ---
 # Compiler Error C3272
 
-'symbol' : symbol requires FieldOffset, as it is a member of type typename defined with StructLayout(LayoutKind::Explicit)
+> 'symbol' : symbol requires FieldOffset, as it is a member of type typename defined with StructLayout(LayoutKind::Explicit)
+
+## Remarks
 
 When `StructLayout(LayoutKind::Explicit)` is in effect, fields must be marked with `FieldOffset`.
 
-The following sample generates C3272:
+## Example
+
+The following example generates C3272:
 
 ```cpp
 // C3272_2.cpp

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3268"
 title: "Compiler Error C3268"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3268"
+ms.date: 11/04/2016
 f1_keywords: ["C3268"]
 helpviewer_keywords: ["C3268"]
-ms.assetid: d74a630c-daea-4e29-9759-83efef7fb184
 ---
 # Compiler Error C3268
 
@@ -18,7 +17,7 @@ See [Generics](../../extensions/generics-cpp-component-extensions.md) for more i
 
 ## Example
 
-The following sample generates C3268.
+The following example generates C3268.
 
 ```cpp
 // C3268.cpp
