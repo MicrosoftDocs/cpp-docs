@@ -1,16 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3201"
 title: "Compiler Error C3201"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3201"
+ms.date: 11/04/2016
 f1_keywords: ["C3201"]
 helpviewer_keywords: ["C3201"]
-ms.assetid: ec19cd64-1789-40a3-b2db-dff2852b9d98
 ---
 # Compiler Error C3201
 
-the template parameter list for class template 'template' does not match the template parameter list for template parameter 'template'
+> the template parameter list for class template 'template' does not match the template parameter list for template parameter 'template'
+
+## Remarks
 
 You passed a class template in the argument to a class template that does not take a template parameter, or you passed a mismatched number of template arguments for the default template argument.
+
+## Example
+
+The following example generates C3201:
 
 ```cpp
 // C3201.cpp
