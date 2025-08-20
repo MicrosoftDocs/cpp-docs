@@ -16,7 +16,7 @@ If [`decltype(auto)`](../../cpp/decltype-cpp.md#decltype-and-auto) is used as a 
 
 ## Example
 
-The following sample generates C3550:
+The following example generates C3550:
 
 ```cpp
 // C3550.cpp

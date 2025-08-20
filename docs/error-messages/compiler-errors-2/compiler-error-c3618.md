@@ -16,7 +16,7 @@ A method marked with <xref:System.Runtime.InteropServices.DllImportAttribute> is
 
 ## Example
 
-The following sample generates C3618.
+The following example generates C3618.
 
 ```cpp
 // C3618.cpp

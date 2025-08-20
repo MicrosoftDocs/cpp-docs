@@ -16,7 +16,7 @@ A sealed function was declared incorrectly.  For more information, see [sealed](
 
 ## Example
 
-The following sample generates C3611.
+The following example generates C3611.
 
 ```cpp
 // C3611.cpp
