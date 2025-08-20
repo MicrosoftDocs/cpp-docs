@@ -27,7 +27,7 @@ template <std::size_t Index, class Type, std::size_t Size>
 constexpr const T&& get(const std::array<Type, Size>&& arr) noexcept;
 ```
 
-### Parameters
+### Template parameters
 
 *`Index`*\
 The element offset.
@@ -37,6 +37,8 @@ The type of an element.
 
 *`Size`*\
 The number of elements in the array.
+
+### Parameters
 
 *`arr`*\
 The array to select from.
@@ -82,13 +84,15 @@ template <class Type, std::size_t Size>
 void swap(std::array<Type, Size>& left, std::array<Type, Size>& right);
 ```
 
-### Parameters
+### Template parameters
 
 *`Type`*\
 The type of an element.
 
 *`Size`*\
 The size of the array.
+
+### Parameters
 
 *`left`*\
 The first array to swap.
