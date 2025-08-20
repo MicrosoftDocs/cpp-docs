@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: <array>"
 title: "<array>"
-ms.date: "11/04/2016"
+description: "Learn more about: <array>"
+ms.date: 11/04/2016
 f1_keywords: ["<array>"]
 helpviewer_keywords: ["array header"]
 ---

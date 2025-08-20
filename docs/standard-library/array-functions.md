@@ -1,7 +1,7 @@
 ---
 title: "<array> functions"
 description: "Learn more about: <array> functions"
-ms.date: 11/04/2016
+ms.date: 08/20/2025
 f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap", "array/std::to_array"]
 helpviewer_keywords: ["std::array [C++], get", "std::get [C++]", "std::swap [C++]", "std::to_array [C++]"]
 ---
