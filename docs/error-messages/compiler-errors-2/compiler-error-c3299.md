@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3299"
 title: "Compiler Error C3299"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3299"
+ms.date: 11/04/2016
 f1_keywords: ["C3299"]
 helpviewer_keywords: ["C3299"]
-ms.assetid: 7cabdf01-bceb-404f-9401-cdd9c7fc1641
 ---
 # Compiler Error C3299
 
-'member_function' : cannot specify constraints, they are inherited from the base method
+> 'member_function' : cannot specify constraints, they are inherited from the base method
+
+## Remarks
 
 When overriding a generic member function, you cannot specify constraint clauses (repeating the constraints implies that the constraints are not inherited).
 
@@ -18,7 +19,7 @@ For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../
 
 ## Example
 
-The following sample generates C3299.
+The following example generates C3299.
 
 ```cpp
 // C3299.cpp
