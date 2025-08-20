@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3493"
 title: "Compiler Error C3493"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3493"
+ms.date: 11/04/2016
 f1_keywords: ["C3493"]
 helpviewer_keywords: ["C3493"]
-ms.assetid: 734b4257-12a3-436f-8488-c8c55ec81634
 ---
 # Compiler Error C3493
 

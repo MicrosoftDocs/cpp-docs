@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3489"
 title: "Compiler Error C3489"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3489"
+ms.date: 11/04/2016
 f1_keywords: ["C3489"]
 helpviewer_keywords: ["C3489"]
-ms.assetid: 47b58d69-459d-4499-abc7-5f0b9303d773
 ---
 # Compiler Error C3489
 

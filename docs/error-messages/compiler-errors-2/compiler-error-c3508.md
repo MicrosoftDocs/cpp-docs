@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3508"
 title: "Compiler Error C3508"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3508"
+ms.date: 11/04/2016
 f1_keywords: ["C3508"]
 helpviewer_keywords: ["C3508"]
-ms.assetid: 16d08f89-2f32-44eb-9421-68acecddf49b
 ---
 # Compiler Error C3508
 

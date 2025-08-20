@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3483"
 title: "Compiler Error C3483"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3483"
+ms.date: 11/04/2016
 f1_keywords: ["C3483"]
 helpviewer_keywords: ["C3483"]
-ms.assetid: 18b3a2c5-dfc9-4661-9653-08a5798474cf
 ---
 # Compiler Error C3483
 

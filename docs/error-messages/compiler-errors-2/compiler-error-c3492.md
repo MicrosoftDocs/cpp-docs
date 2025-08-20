@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3492"
 title: "Compiler Error C3492"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3492"
+ms.date: 11/04/2016
 f1_keywords: ["C3492"]
 helpviewer_keywords: ["C3492"]
-ms.assetid: b1dc6342-9133-4b1f-a9c3-e8c65d20d121
 ---
 # Compiler Error C3492
 

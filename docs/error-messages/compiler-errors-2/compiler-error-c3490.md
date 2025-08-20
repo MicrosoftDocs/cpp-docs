@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3490"
 title: "Compiler Error C3490"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3490"
+ms.date: 11/04/2016
 f1_keywords: ["C3490"]
 helpviewer_keywords: ["C3490"]
-ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
 ---
 # Compiler Error C3490
 

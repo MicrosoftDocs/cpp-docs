@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3505"
 title: "Compiler Error C3505"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3505"
+ms.date: 11/04/2016
 f1_keywords: ["C3505"]
 helpviewer_keywords: ["C3505"]
-ms.assetid: ed73c99e-93a1-4f3a-bac7-ba7ed5d836e4
 ---
 # Compiler Error C3505
 

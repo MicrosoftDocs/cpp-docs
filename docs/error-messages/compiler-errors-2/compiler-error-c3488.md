@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3488"
 title: "Compiler Error C3488"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3488"
+ms.date: 11/04/2016
 f1_keywords: ["C3488"]
 helpviewer_keywords: ["C3488"]
-ms.assetid: 0a6fcd76-dd3b-48d7-abb3-22eccda96034
 ---
 # Compiler Error C3488
 

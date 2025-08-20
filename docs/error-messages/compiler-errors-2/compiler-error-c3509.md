@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3509"
 title: "Compiler Error C3509"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3509"
+ms.date: 11/04/2016
 f1_keywords: ["C3509"]
 helpviewer_keywords: ["C3509"]
-ms.assetid: cc2db39a-2f98-4e40-b803-496e585494e6
 ---
 # Compiler Error C3509
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3510"
 title: "Compiler Error C3510"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3510"
+ms.date: 11/04/2016
 f1_keywords: ["C3510"]
 helpviewer_keywords: ["C3510"]
-ms.assetid: c48387bc-0300-4a4d-97f7-3fb90f82a451
 ---
 # Compiler Error C3510
 

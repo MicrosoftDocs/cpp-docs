@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3481"
 title: "Compiler Error C3481"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3481"
+ms.date: 11/04/2016
 f1_keywords: ["C3481"]
 helpviewer_keywords: ["C3481"]
-ms.assetid: 5d09375a-5ed3-4b61-86ed-45e91fd734c7
 ---
 # Compiler Error C3481
 
