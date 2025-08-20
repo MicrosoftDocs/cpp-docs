@@ -78,16 +78,16 @@ int main()
 A non-member template specialization of `std::swap` that swaps two **array** objects.
 
 ```cpp
-template <class Ty, std::size_t N>
-void swap(array<Ty, N>& left, array<Ty, N>& right);
+template <class Type, std::size_t Size>
+void swap(std::array<Type, Size>& left, std::array<Type, Size>& right);
 ```
 
 ### Parameters
 
-*`Ty`*\
+*`Type`*\
 The type of an element.
 
-*`N`*\
+*`Size`*\
 The size of the array.
 
 *`left`*\
