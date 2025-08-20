@@ -16,7 +16,7 @@ An invalid type was specified.
 
 ## Example
 
-The following sample generates C3508:
+The following example generates C3508:
 
 ```cpp
 // C3508.cpp

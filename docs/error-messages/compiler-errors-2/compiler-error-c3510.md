@@ -18,7 +18,7 @@ To resolve this error, make sure that all type libraries and referenced type lib
 
 ## Example
 
-The following sample generates C3510:
+The following example generates C3510:
 
 Assume that the following two type libraries were built, and that C3510a.tlb was deleted or not on the path.
 

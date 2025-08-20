@@ -16,7 +16,7 @@ A method in a COM interface must return either void or an HRESULT.
 
 ## Example
 
-The following sample generates C3509:
+The following example generates C3509:
 
 ```cpp
 // C3509.cpp

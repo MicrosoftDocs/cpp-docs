@@ -16,7 +16,7 @@ The [progid](../../windows/attributes/progid.md) attribute has restrictions on t
 
 ## Example
 
-The following sample generates C3507:
+The following example generates C3507:
 
 ```cpp
 // C3507.cpp

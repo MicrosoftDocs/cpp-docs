@@ -18,7 +18,7 @@ The only parameters that are allowed for `embedded_idl` are `emitidl` and `no_em
 
 ## Example
 
-The following sample generates C3519:
+The following example generates C3519:
 
 ```cpp
 // C3519.cpp
