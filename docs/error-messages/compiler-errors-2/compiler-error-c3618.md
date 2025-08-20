@@ -10,6 +10,8 @@ ms.assetid: cacc105d-4389-4cb8-ae6c-41a3622e9a86
 
 > 'function': a method marked DllImport cannot be defined
 
+## Remarks
+
 A method marked with <xref:System.Runtime.InteropServices.DllImportAttribute> is defined in the specified.DLL.
 
 ## Example

@@ -10,7 +10,11 @@ ms.assetid: c8ee23da-6568-40db-93a6-3ddb7ac47712
 
 > if a trailing return type is used then the leading return type shall be the single type-specifier 'auto' (not 'type')
 
+## Remarks
+
 The leading return type in [trailing return type](../../cpp/functions-cpp.md#trailing-return-types) syntax must contain only `auto`.
+
+## Example
 
 ```cpp
 // C3551.cpp

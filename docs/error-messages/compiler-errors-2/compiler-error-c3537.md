@@ -10,6 +10,8 @@ ms.assetid: f537ebd1-4fb0-4e09-a453-4f38db2c6881
 
 > 'type': you cannot cast to a type that contains 'auto'
 
+## Remarks
+
 You cannot cast a variable to the indicated type because the type contains the **`auto`** keyword and the default [/Zc:auto](../../build/reference/zc-auto-deduce-variable-type.md) compiler option is in effect.
 
 ## Example

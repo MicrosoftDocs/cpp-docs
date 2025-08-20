@@ -10,6 +10,8 @@ ms.assetid: 2bdb9fdc-9ddf-403e-8b92-02763d434487
 
 > 'symbol': a symbol whose type contains 'auto' must have an initializer
 
+## Remarks
+
 The specified variable does not have an initializer expression.
 
 ### To correct this error

@@ -10,6 +10,8 @@ ms.assetid: 5ce96ba9-3d31-49f3-9aa8-24e5cdf6dcfc
 
 > constexpr function '*function*' cannot result in a constant expression
 
+## Remarks
+
 The function *function* could not be evaluated as **`constexpr`** at compile time. To be **`constexpr`**, a function can only call other **`constexpr`** functions.
 
 ## Example

@@ -10,6 +10,8 @@ ms.assetid: ef3698a5-7356-4c62-b9af-5d3a4baed958
 
 > in a declarator-list 'auto' must always deduce to the same type
 
+## Remarks
+
 All the declared variables in a declaration list do not resolve to the same type.
 
 ### To correct this error

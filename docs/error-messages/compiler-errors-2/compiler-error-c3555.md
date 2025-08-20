@@ -10,6 +10,8 @@ ms.assetid: b4311bd3-851b-479a-9965-d03f39dd8fd4
 
 > incorrect argument to 'decltype'
 
+## Remarks
+
 The argument to the `decltype(`*expression*`)` type specifier is not a valid expression.
 
 > [!NOTE]

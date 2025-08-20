@@ -10,6 +10,8 @@ ms.assetid: 34a33a0f-d1b6-498f-b312-ffad2d4799b3
 
 > 'type': a template-argument cannot be a type that contains 'auto'
 
+## Remarks
+
 The indicated template argument type cannot contain a usage of the **`auto`** keyword.
 
 ### To correct this error

@@ -10,6 +10,8 @@ ms.assetid: 9b002dcc-494e-414f-9587-20c2a0a39333
 
 > '*expression*': incorrect argument to 'decltype'
 
+## Remarks
+
 The compiler cannot deduce the type of the expression that is the argument to the `decltype(`*expression*`)` type specifier.
 
 ## Example

@@ -10,6 +10,8 @@ ms.assetid: 3c0c959c-e3b7-40eb-b922-ccac44bd9d85
 
 > 'type': sizeof cannot be applied to a type that contains 'auto'
 
+## Remarks
+
 The [sizeof](../../cpp/sizeof-operator.md) operator cannot be applied to the indicated type because it contains the **`auto`** specifier.
 
 ## Example
