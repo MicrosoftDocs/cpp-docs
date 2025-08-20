@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3508"
 title: "Compiler Error C3508"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3508"
+ms.date: 11/04/2016
 f1_keywords: ["C3508"]
 helpviewer_keywords: ["C3508"]
-ms.assetid: 16d08f89-2f32-44eb-9421-68acecddf49b
 ---
 # Compiler Error C3508
 
-'type': is not a valid Automation type
+> 'type': is not a valid Automation type
+
+## Remarks
 
 An invalid type was specified.
 
 ## Example
 
-The following sample generates C3508:
+The following example generates C3508:
 
 ```cpp
 // C3508.cpp

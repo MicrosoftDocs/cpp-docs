@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3498"
 title: "Compiler Error C3498"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3498"
+ms.date: 11/04/2016
 f1_keywords: ["C3498"]
 helpviewer_keywords: ["C3498"]
-ms.assetid: 0a5a7817-0872-4119-83bf-980a19113374
 ---
 # Compiler Error C3498
 
-'var': you cannot capture a variable that has a managed or WinRTtype
+> 'var': you cannot capture a variable that has a managed or WinRTtype
+
+## Remarks
 
 You cannot capture a variable that has a managed type or a Windows Runtime type in a lambda.
 
@@ -16,7 +17,7 @@ You cannot capture a variable that has a managed type or a Windows Runtime type 
 
 - Pass the managed or Windows Runtime variable to the parameter list of the lambda expression.
 
-## Examples
+## Example
 
 The following example generates C3498 because a variable that has a managed type appears in the capture list of a lambda expression:
 

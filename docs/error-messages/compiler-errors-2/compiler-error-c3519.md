@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3519"
 title: "Compiler Error C3519"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3519"
+ms.date: 11/04/2016
 f1_keywords: ["C3519"]
 helpviewer_keywords: ["C3519"]
-ms.assetid: ca24b2bc-7e90-4448-ae84-3fedddf9bca7
 ---
 # Compiler Error C3519
 
-'invalid_param' : invalid parameter to embedded_idl attribute
+> 'invalid_param' : invalid parameter to embedded_idl attribute
+
+## Remarks
 
 A parameter was passed to the `embedded_idl` attribute of [#import](../../preprocessor/hash-import-directive-cpp.md), but the compiler did not recognize the parameter.
 
 The only parameters that are allowed for `embedded_idl` are `emitidl` and `no_emitidl`.
 
-The following sample generates C3519:
+## Example
+
+The following example generates C3519:
 
 ```cpp
 // C3519.cpp

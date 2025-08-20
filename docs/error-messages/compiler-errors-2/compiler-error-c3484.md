@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3484"
 title: "Compiler Error C3484"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3484"
+ms.date: 11/04/2016
 f1_keywords: ["C3484"]
 helpviewer_keywords: ["C3484"]
-ms.assetid: 2fe847fa-f6ee-4978-bc1d-b6dc6ae906ac
 ---
 # Compiler Error C3484
 
-expected '->' before the return type
+> expected '->' before the return type
+
+## Remarks
 
 You must provide `->` before the return type of a lambda expression.
 
@@ -16,7 +17,7 @@ You must provide `->` before the return type of a lambda expression.
 
 - Provide `->` before the return type.
 
-## Examples
+## Example
 
 The following example generates C3484:
 
