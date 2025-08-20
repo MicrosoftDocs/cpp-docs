@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3552"
 title: "Compiler Error C3552"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3552"
+ms.date: 11/04/2016
 f1_keywords: ["C3552"]
 helpviewer_keywords: ["C3552"]
-ms.assetid: 83401524-1bf1-44c0-8aca-a6eb35c4224c
 ---
 # Compiler Error C3552
 

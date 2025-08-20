@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3612"
 title: "Compiler Error C3612"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3612"
+ms.date: 11/04/2016
 f1_keywords: ["C3612"]
 helpviewer_keywords: ["C3612"]
-ms.assetid: aa6e3a2b-4afa-481c-98c1-1b6d1f82f869
 ---
 # Compiler Error C3612
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3538"
 title: "Compiler Error C3538"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3538"
+ms.date: 11/04/2016
 f1_keywords: ["C3538"]
 helpviewer_keywords: ["C3538"]
-ms.assetid: ef3698a5-7356-4c62-b9af-5d3a4baed958
 ---
 # Compiler Error C3538
 

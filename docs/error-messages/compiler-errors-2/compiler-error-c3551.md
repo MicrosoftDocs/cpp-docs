@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3551"
 title: "Compiler Error C3551"
-ms.date: "10/07/2023"
+description: "Learn more about: Compiler Error C3551"
+ms.date: 10/07/2023
 f1_keywords: ["C3551"]
 helpviewer_keywords: ["C3551"]
-ms.assetid: c8ee23da-6568-40db-93a6-3ddb7ac47712
 ---
 # Compiler Error C3551
 

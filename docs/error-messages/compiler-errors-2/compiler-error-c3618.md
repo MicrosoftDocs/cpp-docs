@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3618"
 title: "Compiler Error C3618"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3618"
+ms.date: 11/04/2016
 f1_keywords: ["C3618"]
 helpviewer_keywords: ["C3618"]
-ms.assetid: cacc105d-4389-4cb8-ae6c-41a3622e9a86
 ---
 # Compiler Error C3618
 

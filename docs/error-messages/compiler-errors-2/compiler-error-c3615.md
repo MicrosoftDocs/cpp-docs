@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3615"
 title: "Compiler Error C3615"
-ms.date: "10/24/2017"
+description: "Learn more about: Compiler Error C3615"
+ms.date: 10/24/2017
 f1_keywords: ["C3615"]
 helpviewer_keywords: ["C3615"]
-ms.assetid: 5ce96ba9-3d31-49f3-9aa8-24e5cdf6dcfc
 ---
 # Compiler Error C3615
 

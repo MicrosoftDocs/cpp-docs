@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3540"
 title: "Compiler Error C3540"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3540"
+ms.date: 11/04/2016
 f1_keywords: ["C3540"]
 helpviewer_keywords: ["C3540"]
-ms.assetid: 3c0c959c-e3b7-40eb-b922-ccac44bd9d85
 ---
 # Compiler Error C3540
 

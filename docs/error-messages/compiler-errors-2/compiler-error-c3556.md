@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3556"
 title: "Compiler Error C3556"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3556"
+ms.date: 11/04/2016
 f1_keywords: ["C3556"]
 helpviewer_keywords: ["C3556"]
-ms.assetid: 9b002dcc-494e-414f-9587-20c2a0a39333
 ---
 # Compiler Error C3556
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3555"
 title: "Compiler Error C3555"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3555"
+ms.date: 11/04/2016
 f1_keywords: ["C3555"]
 helpviewer_keywords: ["C3555"]
-ms.assetid: b4311bd3-851b-479a-9965-d03f39dd8fd4
 ---
 # Compiler Error C3555
 

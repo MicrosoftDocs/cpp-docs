@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3541"
 title: "Compiler Error C3541"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3541"
+ms.date: 11/04/2016
 f1_keywords: ["C3541"]
 helpviewer_keywords: ["C3541"]
-ms.assetid: 252cfd4c-5fd2-415e-a17d-6b0c254350db
 ---
 # Compiler Error C3541
 
