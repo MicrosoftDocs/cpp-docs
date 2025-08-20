@@ -220,4 +220,4 @@ s t r i n g
 
 ## See also
 
-[`<array>`](../standard-library/array.md)
+[`<array>`](array.md)
