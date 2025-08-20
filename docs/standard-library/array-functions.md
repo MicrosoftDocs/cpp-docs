@@ -14,14 +14,17 @@ The `<array>` header includes two non-member functions, `get` and `swap`, that o
 Returns a reference to the specified element of the array.
 
 ```cpp
-template <int Index, class T, size_t N>
-constexpr T& get(array<T, N>& arr) noexcept;
+template <std::size_t Index, class Type, std::size_t Size>
+constexpr T& get(std::array<Type, Size>& arr) noexcept;
 
-template <int Index, class T, size_t N>
-constexpr const T& get(const array<T, N>& arr) noexcept;
+template <std::size_t Index, class Type, std::size_t Size>
+constexpr const T& get(const std::array<Type, Size>& arr) noexcept;
 
-template <int Index, class T, size_t N>
-constexpr T&& get(array<T, N>&& arr) noexcept;
+template <std::size_t Index, class Type, std::size_t Size>
+constexpr T&& get(std::array<Type, Size>&& arr) noexcept;
+
+template <std::size_t Index, class Type, std::size_t Size>
+constexpr const T&& get(const std::array<Type, Size>&& arr) noexcept;
 ```
 
 ### Parameters
@@ -29,10 +32,10 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 *`Index`*\
 The element offset.
 
-*`T`*\
+*`Type`*\
 The type of an element.
 
-*`N`*\
+*`Size`*\
 The number of elements in the array.
 
 *`arr`*\
