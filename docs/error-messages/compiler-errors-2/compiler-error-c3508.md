@@ -8,7 +8,7 @@ ms.assetid: 16d08f89-2f32-44eb-9421-68acecddf49b
 ---
 # Compiler Error C3508
 
-'type': is not a valid Automation type
+> 'type': is not a valid Automation type
 
 An invalid type was specified.
 

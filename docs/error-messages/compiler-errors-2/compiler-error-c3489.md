@@ -8,7 +8,7 @@ ms.assetid: 47b58d69-459d-4499-abc7-5f0b9303d773
 ---
 # Compiler Error C3489
 
-'var' is required when the default capture mode is by-value
+> 'var' is required when the default capture mode is by-value
 
 When you specify that the default capture mode for a lambda expression is by-value, you cannot pass a variable by value to the capture clause of that expression.
 

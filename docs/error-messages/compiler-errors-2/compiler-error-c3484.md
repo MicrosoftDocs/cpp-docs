@@ -8,7 +8,7 @@ ms.assetid: 2fe847fa-f6ee-4978-bc1d-b6dc6ae906ac
 ---
 # Compiler Error C3484
 
-expected '->' before the return type
+> expected '->' before the return type
 
 You must provide `->` before the return type of a lambda expression.
 

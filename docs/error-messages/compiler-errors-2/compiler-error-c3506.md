@@ -8,6 +8,6 @@ ms.assetid: d382c067-5fad-42ca-acf3-9e6d8cbdb2c5
 ---
 # Compiler Error C3506
 
-there is no typelib registered for LIBID 'id'
+> there is no typelib registered for LIBID 'id'
 
 A typelib was not registered correctly. Use regsvr32.exe to register a type library.

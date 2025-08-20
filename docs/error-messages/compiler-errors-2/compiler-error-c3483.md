@@ -8,7 +8,7 @@ ms.assetid: 18b3a2c5-dfc9-4661-9653-08a5798474cf
 ---
 # Compiler Error C3483
 
-'var' is already part of the lambda capture list
+> 'var' is already part of the lambda capture list
 
 You passed the same variable to the capture list of a lambda expression more than one time.
 

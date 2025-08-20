@@ -8,7 +8,7 @@ ms.assetid: 7f0e71b2-46a0-4d25-bd09-6158a280f509
 ---
 # Compiler Error C3491
 
-'var': a by-value capture cannot be modified in a non-mutable lambda
+> 'var': a by-value capture cannot be modified in a non-mutable lambda
 
 A non-mutable lambda expression cannot modify the value of a variable that is captured by value.
 

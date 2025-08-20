@@ -8,7 +8,7 @@ ms.assetid: 0a6fcd76-dd3b-48d7-abb3-22eccda96034
 ---
 # Compiler Error C3488
 
-'var' is not allowed when the default capture mode is by-reference
+> 'var' is not allowed when the default capture mode is by-reference
 
 When you specify that the default capture mode for a lambda expression is by-reference, you cannot pass a variable by reference to the capture clause of that expression.
 

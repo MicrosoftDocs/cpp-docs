@@ -8,7 +8,7 @@ ms.assetid: 21be81ce-b699-4c74-81bc-80a0c34d2d5a
 ---
 # Compiler Error C3530
 
-'auto' cannot be combined with any other type-specifier
+> 'auto' cannot be combined with any other type-specifier
 
 A type specifier is used with the **`auto`** keyword.
 

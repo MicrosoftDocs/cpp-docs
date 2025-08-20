@@ -8,7 +8,7 @@ ms.assetid: c48387bc-0300-4a4d-97f7-3fb90f82a451
 ---
 # Compiler Error C3510
 
-cannot locate dependent type library 'type_lib'
+> cannot locate dependent type library 'type_lib'
 
 [no_registry](../../preprocessor/no-registry.md) and [auto_search](../../preprocessor/auto-search.md) were passed to `#import` but the compiler was not able to find a referenced type library.
 

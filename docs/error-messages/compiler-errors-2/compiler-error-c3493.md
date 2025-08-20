@@ -8,7 +8,7 @@ ms.assetid: 734b4257-12a3-436f-8488-c8c55ec81634
 ---
 # Compiler Error C3493
 
-'var' cannot be implicitly captured because no default capture mode has been specified
+> 'var' cannot be implicitly captured because no default capture mode has been specified
 
 The empty lambda expression capture, `[]`, specifies that the lambda expression does not explicitly or implicitly capture any variables.
 

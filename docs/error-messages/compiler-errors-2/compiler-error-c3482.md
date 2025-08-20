@@ -8,7 +8,7 @@ ms.assetid: bf99558e-bef4-421c-bb16-dcd9c54c1011
 ---
 # Compiler Error C3482
 
-'this' can only be used as a lambda capture within a non-static member function
+> 'this' can only be used as a lambda capture within a non-static member function
 
 You cannot pass **`this`** to the capture list of a lambda expression that is declared in a static method or a global function.
 

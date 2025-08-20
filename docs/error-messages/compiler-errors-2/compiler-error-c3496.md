@@ -8,7 +8,7 @@ ms.assetid: e19885f2-677f-4c1e-bc69-e35852262dc3
 ---
 # Compiler Error C3496
 
-'this' is always captured by value: '&' ignored
+> 'this' is always captured by value: '&' ignored
 
 You cannot capture the **`this`** pointer by reference.
 

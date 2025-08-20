@@ -8,7 +8,7 @@ ms.assetid: 0a5a7817-0872-4119-83bf-980a19113374
 ---
 # Compiler Error C3498
 
-'var': you cannot capture a variable that has a managed or WinRTtype
+> 'var': you cannot capture a variable that has a managed or WinRTtype
 
 You cannot capture a variable that has a managed type or a Windows Runtime type in a lambda.
 

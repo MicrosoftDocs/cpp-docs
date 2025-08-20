@@ -8,7 +8,7 @@ ms.assetid: 75f89767-f6f9-40f6-9820-81a49e09abdf
 ---
 # Compiler Error C3507
 
-a ProgID can have no more than 39 characters 'id'; nor contain any punctuation apart from '.'; nor start with a digit
+> a ProgID can have no more than 39 characters 'id'; nor contain any punctuation apart from '.'; nor start with a digit
 
 The [progid](../../windows/attributes/progid.md) attribute has restrictions on the values that it can take.
 

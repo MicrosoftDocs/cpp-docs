@@ -8,7 +8,7 @@ ms.assetid: b1dc6342-9133-4b1f-a9c3-e8c65d20d121
 ---
 # Compiler Error C3492
 
-'var': you cannot capture a member of an anonymous union
+> 'var': you cannot capture a member of an anonymous union
 
 You cannot capture a member of an unnamed union.
 

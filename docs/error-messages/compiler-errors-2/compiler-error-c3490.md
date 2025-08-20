@@ -8,7 +8,7 @@ ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
 ---
 # Compiler Error C3490
 
-'var' cannot be modified because it is being accessed through a const object
+> 'var' cannot be modified because it is being accessed through a const object
 
 A lambda expression that is declared in a **`const`** method cannot modify non-mutable member data.
 
