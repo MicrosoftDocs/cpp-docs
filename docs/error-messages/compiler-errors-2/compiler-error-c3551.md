@@ -15,6 +15,8 @@ The leading return type in [trailing return type](../../cpp/functions-cpp.md#tra
 
 ## Example
 
+The following example generates C3551:
+
 ```cpp
 // C3551.cpp
 // compile with: /c
