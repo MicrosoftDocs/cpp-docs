@@ -10,13 +10,15 @@ ms.assetid: 2fe847fa-f6ee-4978-bc1d-b6dc6ae906ac
 
 > expected '->' before the return type
 
+## Remarks
+
 You must provide `->` before the return type of a lambda expression.
 
 ### To correct this error
 
 - Provide `->` before the return type.
 
-## Examples
+## Example
 
 The following example generates C3484:
 

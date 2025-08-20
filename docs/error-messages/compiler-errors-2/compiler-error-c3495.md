@@ -10,6 +10,8 @@ ms.assetid: 1fd40cb8-8373-403d-b8a8-f08424a50807
 
 > 'var': a lambda capture must have automatic storage duration
 
+## Remarks
+
 You cannot capture a variable that does not have automatic storage duration, such as a variable that is marked **`static`** or **`extern`**.
 
 ### To correct this error

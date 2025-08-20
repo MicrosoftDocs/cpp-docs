@@ -10,13 +10,15 @@ ms.assetid: b1dc6342-9133-4b1f-a9c3-e8c65d20d121
 
 > 'var': you cannot capture a member of an anonymous union
 
+## Remarks
+
 You cannot capture a member of an unnamed union.
 
 ### To correct this error
 
 - Give the union a name and pass the complete union structure to the capture list of the lambda expression.
 
-## Examples
+## Example
 
 The following example generates C3492 because it captures a member of an anonymous union:
 

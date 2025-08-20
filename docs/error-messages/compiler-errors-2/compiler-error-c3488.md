@@ -10,6 +10,8 @@ ms.assetid: 0a6fcd76-dd3b-48d7-abb3-22eccda96034
 
 > 'var' is not allowed when the default capture mode is by-reference
 
+## Remarks
+
 When you specify that the default capture mode for a lambda expression is by-reference, you cannot pass a variable by reference to the capture clause of that expression.
 
 ### To correct this error
@@ -22,7 +24,7 @@ When you specify that the default capture mode for a lambda expression is by-ref
 
 - Pass the variable by value to the capture clause. (This might change the behavior of the lambda expression.)
 
-## Examples
+## Example
 
 The following example generates C3488 because a reference to the variable `n` appears in the capture clause of a lambda expression whose default mode is by-reference:
 

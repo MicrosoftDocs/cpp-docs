@@ -10,6 +10,8 @@ ms.assetid: 7f0e71b2-46a0-4d25-bd09-6158a280f509
 
 > 'var': a by-value capture cannot be modified in a non-mutable lambda
 
+## Remarks
+
 A non-mutable lambda expression cannot modify the value of a variable that is captured by value.
 
 ### To correct this error
@@ -18,7 +20,7 @@ A non-mutable lambda expression cannot modify the value of a variable that is ca
 
 - Pass the variable by reference to the capture list of the lambda expression.
 
-## Examples
+## Example
 
 The following example generates C3491 because the body of a non-mutable lambda expression modifies the capture variable `m`:
 

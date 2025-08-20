@@ -10,7 +10,11 @@ ms.assetid: cc2db39a-2f98-4e40-b803-496e585494e6
 
 > 'type': invalid Automation return type; when a parameter is marked 'retval', the return type must be 'void', 'HRESULT' or 'SCODE'
 
+## Remarks
+
 A method in a COM interface must return either void or an HRESULT.
+
+## Example
 
 The following sample generates C3509:
 

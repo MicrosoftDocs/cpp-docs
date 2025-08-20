@@ -10,6 +10,8 @@ ms.assetid: 39bda474-4418-4a79-98bf-2b22fa92eaaa
 
 > 'return type': all return expressions must deduce to the same type: previously it was 'return type'
 
+## Remarks
+
 A lambda must specify its return type unless it contains a single return statement. If a lambda contains multiple return statements, they must all have the same type.
 
 ### To correct this error

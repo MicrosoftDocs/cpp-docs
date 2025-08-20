@@ -10,13 +10,15 @@ ms.assetid: 0a5a7817-0872-4119-83bf-980a19113374
 
 > 'var': you cannot capture a variable that has a managed or WinRTtype
 
+## Remarks
+
 You cannot capture a variable that has a managed type or a Windows Runtime type in a lambda.
 
 ### To correct this error
 
 - Pass the managed or Windows Runtime variable to the parameter list of the lambda expression.
 
-## Examples
+## Example
 
 The following example generates C3498 because a variable that has a managed type appears in the capture list of a lambda expression:
 

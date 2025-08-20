@@ -10,6 +10,8 @@ ms.assetid: e19885f2-677f-4c1e-bc69-e35852262dc3
 
 > 'this' is always captured by value: '&' ignored
 
+## Remarks
+
 You cannot capture the **`this`** pointer by reference.
 
 ### To correct this error

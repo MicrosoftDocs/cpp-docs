@@ -10,9 +10,13 @@ ms.assetid: ca24b2bc-7e90-4448-ae84-3fedddf9bca7
 
 > 'invalid_param' : invalid parameter to embedded_idl attribute
 
+## Remarks
+
 A parameter was passed to the `embedded_idl` attribute of [#import](../../preprocessor/hash-import-directive-cpp.md), but the compiler did not recognize the parameter.
 
 The only parameters that are allowed for `embedded_idl` are `emitidl` and `no_emitidl`.
+
+## Example
 
 The following sample generates C3519:
 

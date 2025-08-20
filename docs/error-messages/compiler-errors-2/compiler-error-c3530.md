@@ -10,6 +10,8 @@ ms.assetid: 21be81ce-b699-4c74-81bc-80a0c34d2d5a
 
 > 'auto' cannot be combined with any other type-specifier
 
+## Remarks
+
 A type specifier is used with the **`auto`** keyword.
 
 ### To correct this error

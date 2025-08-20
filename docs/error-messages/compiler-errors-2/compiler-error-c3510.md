@@ -10,9 +10,13 @@ ms.assetid: c48387bc-0300-4a4d-97f7-3fb90f82a451
 
 > cannot locate dependent type library 'type_lib'
 
+## Remarks
+
 [no_registry](../../preprocessor/no-registry.md) and [auto_search](../../preprocessor/auto-search.md) were passed to `#import` but the compiler was not able to find a referenced type library.
 
 To resolve this error, make sure that all type libraries and referenced type libraries are available to the compiler.
+
+## Example
 
 The following sample generates C3510:
 

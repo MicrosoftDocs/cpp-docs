@@ -10,6 +10,8 @@ ms.assetid: 16d08f89-2f32-44eb-9421-68acecddf49b
 
 > 'type': is not a valid Automation type
 
+## Remarks
+
 An invalid type was specified.
 
 ## Example
