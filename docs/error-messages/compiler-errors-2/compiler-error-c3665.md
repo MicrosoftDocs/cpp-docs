@@ -18,7 +18,7 @@ For example, a new slot cannot be requested on a destructor or finalizer.  For m
 
 ## Example
 
-The following sample generates C3665:
+The following example generates C3665:
 
 ```cpp
 // C3665.cpp

@@ -16,7 +16,7 @@ An override was specified incorrectly. For more information, see [Explicit Overr
 
 ## Example
 
-The following sample generates C3669.
+The following example generates C3669.
 
 ```cpp
 // C3669.cpp

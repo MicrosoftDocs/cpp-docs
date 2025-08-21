@@ -16,7 +16,7 @@ An override can only take place on a function whose access level makes it availa
 
 ## Example
 
-The following sample generates C3670:
+The following example generates C3670:
 
 ```cpp
 // C3670.cpp

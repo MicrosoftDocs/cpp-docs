@@ -18,7 +18,7 @@ For more information, see [Explicit Overrides](../../extensions/explicit-overrid
 
 ## Example
 
-The following sample generates C3662.
+The following example generates C3662.
 
 ```cpp
 // C3662.cpp

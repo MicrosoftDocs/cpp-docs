@@ -15,7 +15,7 @@ A destructor was called incorrectly.  For more information, see [Destructors](..
 
 ## Example
 
-The following sample generates C3672.
+The following example generates C3672.
 
 ```cpp
 // C3672.cpp

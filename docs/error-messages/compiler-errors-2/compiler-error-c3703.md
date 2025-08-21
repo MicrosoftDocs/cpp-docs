@@ -16,7 +16,7 @@ An [event](../../cpp/event-handling.md) has a different storage class than the e
 
 ## Example
 
-The following sample generates C3703:
+The following example generates C3703:
 
 ```cpp
 // C3703.cpp

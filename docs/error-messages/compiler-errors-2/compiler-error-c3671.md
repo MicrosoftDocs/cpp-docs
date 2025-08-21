@@ -16,7 +16,7 @@ When using explicit override syntax, the compiler generates an error if a functi
 
 ## Example
 
-The following sample generates C3671.
+The following example generates C3671.
 
 ```cpp
 // C3671.cpp

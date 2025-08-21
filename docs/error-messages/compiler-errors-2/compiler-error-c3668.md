@@ -18,7 +18,7 @@ For more information, see [Explicit Overrides](../../extensions/explicit-overrid
 
 ## Example
 
-The following sample generates C3668.
+The following example generates C3668.
 
 ```cpp
 // C3668.cpp

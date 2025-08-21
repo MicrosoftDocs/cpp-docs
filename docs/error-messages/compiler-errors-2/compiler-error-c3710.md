@@ -16,7 +16,7 @@ When you specify an event handler with [__hook](../../cpp/hook.md) or [__unhook]
 
 ## Example
 
-The following sample generates C3710
+The following example generates C3710
 
 ```cpp
 // C3710.cpp

@@ -18,7 +18,7 @@ See [property](../../extensions/property-cpp-component-extensions.md) for more i
 
 ## Example
 
-The following sample generates C3675.
+The following example generates C3675.
 
 ```cpp
 // C3675.cpp

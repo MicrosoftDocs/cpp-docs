@@ -16,7 +16,7 @@ A managed object was declared incorrectly.
 
 ## Example
 
-The following sample generates C3698:
+The following example generates C3698:
 
 ```cpp
 // C3698.cpp

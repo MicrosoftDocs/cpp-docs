@@ -16,7 +16,7 @@ A user-defined constructor is needed to copy objects of CLR ref types. For more 
 
 ## Examples
 
-The following sample generates C3673.
+The following example generates C3673.
 
 ```cpp
 // C3673.cpp
@@ -34,7 +34,7 @@ int main() {
 }
 ```
 
-The following sample generates C3673.
+The following example generates C3673.
 
 ```cpp
 // C3673_b.cpp

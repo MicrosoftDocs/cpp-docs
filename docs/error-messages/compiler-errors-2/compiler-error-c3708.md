@@ -16,7 +16,7 @@ To declare an interface as an event, the event declaration must be in an event s
 
 ## Example
 
-The following sample generates C3708:
+The following example generates C3708:
 
 ```cpp
 // C3708.cpp

@@ -16,7 +16,7 @@ The tracking handle (^) was applied to a qualifier for which it was not designed
 
 ## Example
 
-The following sample generates C3697:
+The following example generates C3697:
 
 ```cpp
 // C3697.cpp

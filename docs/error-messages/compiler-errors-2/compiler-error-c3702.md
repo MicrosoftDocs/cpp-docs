@@ -16,7 +16,7 @@ You attempted to use COM events without including the necessary ATL header files
 
 ## Example
 
-The following sample generates C3702:
+The following example generates C3702:
 
 ```cpp
 // C3702.cpp

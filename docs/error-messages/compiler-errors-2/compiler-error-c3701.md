@@ -16,7 +16,7 @@ You attempted to use [event_source](../../windows/attributes/event-source.md) on
 
 ## Example
 
-The following sample generates C3701:
+The following example generates C3701:
 
 ```cpp
 // C3701.cpp

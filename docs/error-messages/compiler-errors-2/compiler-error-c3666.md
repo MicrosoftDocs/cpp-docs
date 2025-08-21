@@ -16,7 +16,7 @@ An override specifier was used on a constructor, and that is not allowed. For mo
 
 ## Example
 
-The following sample generates C3666.
+The following example generates C3666.
 
 ```cpp
 // C3666.cpp
