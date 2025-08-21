@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3662"
 title: "Compiler Error C3662"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3662"
+ms.date: 11/04/2016
 f1_keywords: ["C3662"]
 helpviewer_keywords: ["C3662"]
-ms.assetid: 61bd3e41-a86b-42c0-be89-d992d3906ff1
 ---
 # Compiler Error C3662
 

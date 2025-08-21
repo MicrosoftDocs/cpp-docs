@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3702"
 title: "Compiler Error C3702"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3702"
+ms.date: 11/04/2016
 f1_keywords: ["C3702"]
 helpviewer_keywords: ["C3702"]
-ms.assetid: 14fcc20e-4404-45d7-be54-e4f09332fa5a
 ---
 # Compiler Error C3702
 

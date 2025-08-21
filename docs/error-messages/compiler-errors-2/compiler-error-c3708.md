@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3708"
 title: "Compiler Error C3708"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3708"
+ms.date: 11/04/2016
 f1_keywords: ["C3708"]
 helpviewer_keywords: ["C3708"]
-ms.assetid: 45e71564-9c7f-437f-98d8-a735ce162ed0
 ---
 # Compiler Error C3708
 

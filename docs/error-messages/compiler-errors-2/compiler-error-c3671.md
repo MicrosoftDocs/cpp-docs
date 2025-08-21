@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3671"
 title: "Compiler Error C3671"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3671"
+ms.date: 11/04/2016
 f1_keywords: ["C3671"]
 helpviewer_keywords: ["C3671"]
-ms.assetid: d684e4ae-87e2-4424-80bb-6f346652c831
 ---
 # Compiler Error C3671
 

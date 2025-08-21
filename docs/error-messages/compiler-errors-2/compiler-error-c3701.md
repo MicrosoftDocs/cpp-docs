@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3701"
 title: "Compiler Error C3701"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3701"
+ms.date: 11/04/2016
 f1_keywords: ["C3701"]
 helpviewer_keywords: ["C3701"]
-ms.assetid: a7faaa87-d2f5-4d6a-9a2f-5cab2d24a648
 ---
 # Compiler Error C3701
 

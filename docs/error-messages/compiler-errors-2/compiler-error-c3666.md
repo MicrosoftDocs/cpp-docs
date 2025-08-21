@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3666"
 title: "Compiler Error C3666"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3666"
+ms.date: 11/04/2016
 f1_keywords: ["C3666"]
 helpviewer_keywords: ["C3666"]
-ms.assetid: 459e51dd-cefb-4346-99b3-644f2d8b65b2
 ---
 # Compiler Error C3666
 

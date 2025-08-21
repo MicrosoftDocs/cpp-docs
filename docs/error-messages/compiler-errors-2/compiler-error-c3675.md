@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3675"
 title: "Compiler Error C3675"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3675"
+ms.date: 11/04/2016
 f1_keywords: ["C3675"]
 helpviewer_keywords: ["C3675"]
-ms.assetid: 87461613-6633-430b-b95d-c7cb1bb63776
 ---
 # Compiler Error C3675
 

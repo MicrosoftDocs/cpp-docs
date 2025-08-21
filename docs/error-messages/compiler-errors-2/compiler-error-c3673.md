@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3673"
 title: "Compiler Error C3673"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3673"
+ms.date: 11/04/2016
 f1_keywords: ["C3673"]
 helpviewer_keywords: ["C3673"]
-ms.assetid: bb6d2079-05af-4e2c-be0e-75c892e6c590
 ---
 # Compiler Error C3673
 

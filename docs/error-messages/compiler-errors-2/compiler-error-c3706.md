@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3706"
 title: "Compiler Error C3706"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3706"
+ms.date: 11/04/2016
 f1_keywords: ["C3706"]
 helpviewer_keywords: ["C3706"]
-ms.assetid: d20a33eb-d625-46c5-ac87-32075a590d07
 ---
 # Compiler Error C3706
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3709"
 title: "Compiler Error C3709"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3709"
+ms.date: 11/04/2016
 f1_keywords: ["C3709"]
 helpviewer_keywords: ["C3709"]
-ms.assetid: d5576b04-2f93-420a-8f3e-8b8e987e8dab
 ---
 # Compiler Error C3709
 

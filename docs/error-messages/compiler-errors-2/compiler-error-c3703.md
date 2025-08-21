@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3703"
 title: "Compiler Error C3703"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3703"
+ms.date: 11/04/2016
 f1_keywords: ["C3703"]
 helpviewer_keywords: ["C3703"]
-ms.assetid: 7e3677d9-f2be-4c26-998f-423564e9023c
 ---
 # Compiler Error C3703
 

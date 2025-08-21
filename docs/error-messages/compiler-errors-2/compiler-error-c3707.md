@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3707"
 title: "Compiler Error C3707"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3707"
+ms.date: 11/04/2016
 f1_keywords: ["C3707"]
 helpviewer_keywords: ["C3707"]
-ms.assetid: ac63a5dd-7a4b-48d2-9f2a-be9cb090134c
 ---
 # Compiler Error C3707
 

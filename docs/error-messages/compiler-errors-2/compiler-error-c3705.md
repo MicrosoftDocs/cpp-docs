@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3705"
 title: "Compiler Error C3705"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3705"
+ms.date: 11/04/2016
 f1_keywords: ["C3705"]
 helpviewer_keywords: ["C3705"]
-ms.assetid: 8361017d-5782-4214-a9d7-e9825fd29bc8
 ---
 # Compiler Error C3705
 

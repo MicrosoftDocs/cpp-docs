@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3669"
 title: "Compiler Error C3669"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3669"
+ms.date: 11/04/2016
 f1_keywords: ["C3669"]
 helpviewer_keywords: ["C3669"]
-ms.assetid: be9c7ae4-e96f-47ab-922a-39a3537d5ca6
 ---
 # Compiler Error C3669
 
