@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3650"
 title: "Compiler Error C3650"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3650"
+ms.date: 11/04/2016
 f1_keywords: ["C3650"]
 helpviewer_keywords: ["C3650"]
-ms.assetid: ca4d8de4-b027-4d13-9b9f-03ca62905c33
 ---
 # Compiler Error C3650
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3623"
 title: "Compiler Error C3623"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3623"
+ms.date: 11/04/2016
 f1_keywords: ["C3623"]
 helpviewer_keywords: ["C3623"]
-ms.assetid: a0341b45-062a-4f67-beb9-ba74201ed1ed
 ---
 # Compiler Error C3623
 

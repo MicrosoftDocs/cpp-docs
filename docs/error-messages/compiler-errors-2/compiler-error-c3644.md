@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3644"
 title: "Compiler Error C3644"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3644"
+ms.date: 11/04/2016
 f1_keywords: ["C3644"]
 helpviewer_keywords: ["C3644"]
-ms.assetid: 2e3f6c41-3ec5-4a01-82bc-f11b61ebe68e
 ---
 # Compiler Error C3644
 

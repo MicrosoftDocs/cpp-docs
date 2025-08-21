@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3634"
 title: "Compiler Error C3634"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3634"
+ms.date: 11/04/2016
 f1_keywords: ["C3634"]
 helpviewer_keywords: ["C3634"]
-ms.assetid: fd09f10c-f863-483b-9756-71c16b760b02
 ---
 # Compiler Error C3634
 

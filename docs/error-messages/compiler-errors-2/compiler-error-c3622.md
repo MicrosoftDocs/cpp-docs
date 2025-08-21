@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3622"
 title: "Compiler Error C3622"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3622"
+ms.date: 11/04/2016
 f1_keywords: ["C3622"]
 helpviewer_keywords: ["C3622"]
-ms.assetid: 02836f78-0cf2-4947-b87e-710187d81014
 ---
 # Compiler Error C3622
 

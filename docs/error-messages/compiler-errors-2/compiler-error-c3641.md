@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3641"
 title: "Compiler Error C3641"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3641"
+ms.date: 11/04/2016
 f1_keywords: ["C3641"]
 helpviewer_keywords: ["C3641"]
-ms.assetid: e8d3613e-5e8d-46fe-a516-eb7d1de7cd21
 ---
 # Compiler Error C3641
 

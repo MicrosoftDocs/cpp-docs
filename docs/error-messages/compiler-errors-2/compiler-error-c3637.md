@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3637"
 title: "Compiler Error C3637"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3637"
+ms.date: 11/04/2016
 f1_keywords: ["C3637"]
 helpviewer_keywords: ["C3637"]
-ms.assetid: 72391377-8519-43d9-870a-73a6423deb74
 ---
 # Compiler Error C3637
 

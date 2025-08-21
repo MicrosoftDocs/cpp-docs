@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3638"
 title: "Compiler Error C3638"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3638"
+ms.date: 11/04/2016
 f1_keywords: ["C3638"]
 helpviewer_keywords: ["C3638"]
-ms.assetid: 8d8bc5ca-75aa-480e-b6b6-3178fab51b1d
 ---
 # Compiler Error C3638
 

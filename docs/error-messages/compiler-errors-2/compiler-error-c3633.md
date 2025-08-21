@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3633"
 title: "Compiler Error C3633"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3633"
+ms.date: 11/04/2016
 f1_keywords: ["C3633"]
 helpviewer_keywords: ["C3633"]
-ms.assetid: 7d65babf-2191-4d67-a69f-f5c4c2ddf946
 ---
 # Compiler Error C3633
 

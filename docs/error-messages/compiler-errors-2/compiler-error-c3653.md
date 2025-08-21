@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3653"
 title: "Compiler Error C3653"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3653"
+ms.date: 11/04/2016
 f1_keywords: ["C3653"]
 helpviewer_keywords: ["C3653"]
-ms.assetid: 316549d7-f7ef-4578-a2ba-57adc8aac527
 ---
 # Compiler Error C3653
 

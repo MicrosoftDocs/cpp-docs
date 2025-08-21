@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3625"
 title: "Compiler Error C3625"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3625"
+ms.date: 11/04/2016
 f1_keywords: ["C3625"]
 helpviewer_keywords: ["C3625"]
-ms.assetid: fdf49f21-d6b1-42f4-9eec-23b04ae8b4aa
 ---
 # Compiler Error C3625
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3657"
 title: "Compiler Error C3657"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3657"
+ms.date: 11/04/2016
 f1_keywords: ["C3657"]
 helpviewer_keywords: ["C3657"]
-ms.assetid: 89a28a18-4c17-43a1-bda6-deb52c32d203
 ---
 # Compiler Error C3657
 

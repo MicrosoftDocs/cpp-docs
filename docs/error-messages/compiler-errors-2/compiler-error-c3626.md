@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3626"
 title: "Compiler Error C3626"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3626"
+ms.date: 11/04/2016
 f1_keywords: ["C3626"]
 helpviewer_keywords: ["C3626"]
-ms.assetid: 43926e2b-1ba9-4a43-9343-c58449cbb336
 ---
 # Compiler Error C3626
 

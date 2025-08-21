@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3645"
 title: "Compiler Error C3645"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3645"
+ms.date: 11/04/2016
 f1_keywords: ["C3645"]
 helpviewer_keywords: ["C3645"]
-ms.assetid: 346da528-ae86-4cd0-9654-f41bee26ac0d
 ---
 # Compiler Error C3645
 

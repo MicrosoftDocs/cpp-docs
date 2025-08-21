@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3652"
 title: "Compiler Error C3652"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3652"
+ms.date: 11/04/2016
 f1_keywords: ["C3652"]
 helpviewer_keywords: ["C3652"]
-ms.assetid: 15d68737-177e-41f1-80e0-7c3e2afdf0fc
 ---
 # Compiler Error C3652
 
