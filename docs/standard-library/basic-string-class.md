@@ -117,7 +117,7 @@ The headers that define `basic_string` also define the following [user-defined l
 | Declaration | Description |
 |--|--|
 | `inline string operator"" s(const char* str, size_t len)` | Returns: `string(str, len)` |
-| `inline string operator"" s(const wchar_t* str, size_t len)` | Returns: `wstring(str, len)` |
+| `inline wstring operator"" s(const wchar_t* str, size_t len)` | Returns: `wstring(str, len)` |
 | `inline basic_string<char8_t> operator"" s(const char8_t* str, size_t len)` | Returns: `basic_string<char8_t>(str, len)` |
 | `inline u16string operator"" s(const char16_t* str, size_t len)` | Returns: `u16string(str, len)` |
 | `inline u32string operator"" s(const char32_t* str, size_t len)` | Returns: `u32string(str, len)` |
@@ -1046,7 +1046,7 @@ int compare(
 int compare(
     size_type position_1,
     size_type number_1,
-    const value_type* ptr
+    const value_type* ptr,
     size_type number_2) const;
 ```
 
