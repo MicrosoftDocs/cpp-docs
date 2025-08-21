@@ -1,22 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3466"
 title: "Compiler Error C3466"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3466"
+ms.date: 11/04/2016
 f1_keywords: ["C3466"]
 helpviewer_keywords: ["C3466"]
-ms.assetid: 69a877d9-a749-474b-bfc3-8d3fd53ba8fd
 ---
 # Compiler Error C3466
 
-'type' : a specialization of a generic class cannot be forwarded
+> 'type' : a specialization of a generic class cannot be forwarded
+
+## Remarks
 
 You cannot use type forwarding on a specialization of a generic class.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Examples
+## Example
 
-The following sample creates a component.
+The following example creates a component.
 
 ```cpp
 // C3466.cpp
@@ -27,7 +28,7 @@ public ref class GR {};
 public ref class GR2 {};
 ```
 
-The following sample generates C3466.
+The following example generates C3466.
 
 ```cpp
 // C3466_b.cpp
