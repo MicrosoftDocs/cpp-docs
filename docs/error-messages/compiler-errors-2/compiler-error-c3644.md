@@ -16,7 +16,7 @@ The presence of some keywords in a function will cause the function to be compil
 
 ## Example
 
-The following sample generates C3644:
+The following example generates C3644:
 
 ```cpp
 // C3644.cpp

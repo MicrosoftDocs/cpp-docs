@@ -18,7 +18,7 @@ Only [__clrcall](../../cpp/clrcall.md) calling convention is allowed with [/clr:
 
 ## Example
 
-The following sample generates C3641:
+The following example generates C3641:
 
 ```cpp
 // C3641.cpp

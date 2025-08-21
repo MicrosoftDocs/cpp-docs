@@ -16,7 +16,7 @@ A keyword was used incorrectly.
 
 ## Example
 
-The following sample generates C3626:
+The following example generates C3626:
 
 ```cpp
 // C3626.cpp

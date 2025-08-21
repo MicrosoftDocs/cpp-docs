@@ -16,7 +16,7 @@ An attempt was made to use a managed or WinRT class as a [private](../../cpp/pri
 
 ## Example
 
-The following sample generates C3628 and shows how to fix it:
+The following example generates C3628 and shows how to fix it:
 
 ```cpp
 // C3628a.cpp

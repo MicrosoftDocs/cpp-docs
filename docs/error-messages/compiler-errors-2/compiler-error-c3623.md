@@ -16,7 +16,7 @@ The use of bit fields is not permitted on variables in a managed or WinRT class.
 
 ## Example
 
-The following sample generates C3623:
+The following example generates C3623:
 
 ```cpp
 // C3623.cpp

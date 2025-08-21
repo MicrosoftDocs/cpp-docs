@@ -16,7 +16,7 @@ CLR reference class data members cannot be of a non-POD C++ type.  You can only 
 
 ## Example
 
-The following sample generates C3633.
+The following example generates C3633.
 
 ```cpp
 // C3633.cpp

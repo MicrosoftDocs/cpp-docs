@@ -16,7 +16,7 @@ A function can only be explicitly overridden once. For more information, see [Ex
 
 ## Example
 
-The following sample generates C3655:
+The following example generates C3655:
 
 ```cpp
 // C3655.cpp

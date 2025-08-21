@@ -16,7 +16,7 @@ Destructors or finalizers cannot be explicitly overridden. For more information,
 
 ## Example
 
-The following sample generates C3657.
+The following example generates C3657.
 
 ```cpp
 // C3657.cpp

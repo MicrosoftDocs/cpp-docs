@@ -16,7 +16,7 @@ A native class cannot inherit from a managed or WinRT class. For more informatio
 
 ## Example
 
-The following sample generates C3625:
+The following example generates C3625:
 
 ```cpp
 // C3625.cpp

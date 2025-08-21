@@ -16,7 +16,7 @@ An attempt was made to instantiate a class marked as [abstract](../../extensions
 
 ## Example
 
-The following sample generates C3622.
+The following example generates C3622.
 
 ```cpp
 // C3622.cpp

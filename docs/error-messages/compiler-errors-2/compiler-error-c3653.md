@@ -16,7 +16,7 @@ An explicit override specified a function that was not found in any interface. F
 
 ## Example
 
-The following sample generates C3653:
+The following example generates C3653:
 
 ```cpp
 // C3653.cpp

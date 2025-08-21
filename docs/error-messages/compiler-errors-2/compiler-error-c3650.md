@@ -18,7 +18,7 @@ For more information, see [Explicit Overrides](../../extensions/explicit-overrid
 
 ## Example
 
-The following sample generates C3650:
+The following example generates C3650:
 
 ```cpp
 // C3650.cpp

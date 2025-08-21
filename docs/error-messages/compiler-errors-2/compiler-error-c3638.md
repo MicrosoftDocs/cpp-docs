@@ -18,7 +18,7 @@ For more information, see [Implicit Boxing](../../extensions/boxing-cpp-componen
 
 ## Example
 
-The following sample generates C3638:
+The following example generates C3638:
 
 ```cpp
 // C3638.cpp

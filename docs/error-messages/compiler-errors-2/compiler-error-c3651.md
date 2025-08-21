@@ -18,7 +18,7 @@ For more information, see [Explicit Overrides](../../extensions/explicit-overrid
 
 ## Example
 
-The following sample generates C3651:
+The following example generates C3651:
 
 ```cpp
 // C3651.cpp

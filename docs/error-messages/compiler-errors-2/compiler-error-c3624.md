@@ -16,7 +16,7 @@ An assembly (reference) needed to compile your code was not specified; pass the 
 
 ## Example
 
-The following sample generates C3624:
+The following example generates C3624:
 
 ```cpp
 // C3624.cpp

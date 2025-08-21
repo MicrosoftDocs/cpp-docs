@@ -16,7 +16,7 @@ A function that does an explicit override must be virtual. For more information,
 
 ## Example
 
-The following sample generates C3652:
+The following example generates C3652:
 
 ```cpp
 // C3652.cpp

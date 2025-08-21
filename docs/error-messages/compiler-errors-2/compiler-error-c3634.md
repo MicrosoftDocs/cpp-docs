@@ -16,7 +16,7 @@ An abstract method can be declared in a managed or WinRT class, but it cannot be
 
 ## Example
 
-The following sample generates C3634:
+The following example generates C3634:
 
 ```cpp
 // C3634.cpp

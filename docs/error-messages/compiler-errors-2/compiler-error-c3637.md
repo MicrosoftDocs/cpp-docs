@@ -16,7 +16,7 @@ A friend function was defined incorrectly for a template or generic.
 
 ## Examples
 
-The following sample generates C3637:
+The following example generates C3637:
 
 ```cpp
 // C3637.cpp

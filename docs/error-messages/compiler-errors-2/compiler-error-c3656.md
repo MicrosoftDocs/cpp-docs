@@ -16,7 +16,7 @@ An explicit override keyword can only be specified once. For more information, s
 
 ## Example
 
-The following sample generates C3656:
+The following example generates C3656:
 
 ```cpp
 // C3656.cpp

@@ -20,7 +20,7 @@ For more information, see [Override Specifiers](../../extensions/override-specif
 
 ## Example
 
-The following sample generates C3646 and shows a way to fix it:
+The following example generates C3646 and shows a way to fix it:
 
 ```cpp
 // C3646.cpp

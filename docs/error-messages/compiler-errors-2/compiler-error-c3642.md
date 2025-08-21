@@ -20,7 +20,7 @@ To call a managed function from a native context, you can add a "wrapper" functi
 
 ## Example
 
-The following sample generates C3642:
+The following example generates C3642:
 
 ```cpp
 // C3642.cpp

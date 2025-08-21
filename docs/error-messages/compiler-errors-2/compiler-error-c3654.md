@@ -16,7 +16,7 @@ An unexpected string was in an explicit override. For more information, see [Exp
 
 ## Example
 
-The following sample generates C3654:
+The following example generates C3654:
 
 ```cpp
 // C3654.cpp
