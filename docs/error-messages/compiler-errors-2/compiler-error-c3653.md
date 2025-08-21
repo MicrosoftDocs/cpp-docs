@@ -10,7 +10,11 @@ ms.assetid: 316549d7-f7ef-4578-a2ba-57adc8aac527
 
 > 'function' : cannot be used as a named override: a function being overridden not found; did you forget to name the function explicitly, using a :: operator?
 
+## Remarks
+
 An explicit override specified a function that was not found in any interface. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3653:
 

@@ -10,6 +10,8 @@ ms.assetid: 89a28a18-4c17-43a1-bda6-deb52c32d203
 
 > destructors cannot explicitly override or be explicitly overridden
 
+## Remarks
+
 Destructors or finalizers cannot be explicitly overridden. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 ## Example

@@ -10,7 +10,11 @@ ms.assetid: a0341b45-062a-4f67-beb9-ba74201ed1ed
 
 > 'variable': bit fields are not supported in managed or WinRT types
 
+## Remarks
+
 The use of bit fields is not permitted on variables in a managed or WinRT class.
+
+## Example
 
 The following sample generates C3623:
 

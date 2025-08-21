@@ -10,6 +10,8 @@ ms.assetid: fd09f10c-f863-483b-9756-71c16b760b02
 
 > 'function' : cannot define an abstract method of a managed or WinRTclass
 
+## Remarks
+
 An abstract method can be declared in a managed or WinRT class, but it cannot be defined.
 
 ## Example

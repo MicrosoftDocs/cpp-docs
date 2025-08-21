@@ -10,7 +10,11 @@ ms.assetid: fcc56894-0f98-48af-8561-3bf7c7b2b93f
 
 > 'member' : a referenced or virtual member function of a local class must be defined
 
+## Remarks
+
 The compiler requires certain functions to be defined.
+
+## Example
 
 The following sample generates C3640:
 

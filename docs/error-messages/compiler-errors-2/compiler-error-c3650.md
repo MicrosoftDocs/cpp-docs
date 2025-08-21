@@ -10,9 +10,13 @@ ms.assetid: ca4d8de4-b027-4d13-9b9f-03ca62905c33
 
 > 'interface_method' : cannot be used as an explicit override, must be a virtual member function of a base class
 
+## Remarks
+
 An attempt was made to perform an explicit override on a member that was not virtual.
 
 For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3650:
 

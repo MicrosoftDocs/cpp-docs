@@ -10,4 +10,6 @@ ms.assetid: 905ad0a0-8c49-4187-b66e-b375f5a1fae5
 
 > Only a value type can be boxed
 
+## Remarks
+
 Only value classes can be boxed.

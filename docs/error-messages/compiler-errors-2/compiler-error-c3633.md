@@ -10,6 +10,8 @@ ms.assetid: 7d65babf-2191-4d67-a69f-f5c4c2ddf946
 
 > cannot define 'member' as a member of managed 'type'
 
+## Remarks
+
 CLR reference class data members cannot be of a non-POD C++ type.  You can only instantiate a POD native type in a CLR type.  For example, a POD type cannot contain a copy constructor or an assignment operator.
 
 ## Example

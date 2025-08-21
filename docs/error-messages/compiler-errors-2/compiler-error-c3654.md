@@ -10,7 +10,11 @@ ms.assetid: 57d96e3f-6bbb-4eaa-934b-26c23b4ceb2e
 
 > 'text' : syntax error in explicit override
 
+## Remarks
+
 An unexpected string was in an explicit override. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3654:
 

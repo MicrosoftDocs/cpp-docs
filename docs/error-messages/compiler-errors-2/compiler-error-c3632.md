@@ -10,6 +10,8 @@ ms.assetid: a04e3217-f5a1-4461-a1db-d69fd096d468
 
 > 'event': illegal style of event for construct
 
+## Remarks
+
 [__event](../../cpp/event.md) declarations are not valid in all constructs.
 
 C3632 is only reachable using the obsolete compiler option **/clr:oldSyntax**.

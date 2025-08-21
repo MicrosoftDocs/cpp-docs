@@ -10,6 +10,8 @@ ms.assetid: 5d042989-41cb-4cd0-aa50-976b70146aaf
 
 > this explicit override syntax requires /clr:oldSyntax
 
+## Remarks
+
 When compiling for the latest managed syntax, the compiler found explicit override syntax for previous versions that is no longer supported.
 
 For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).

@@ -10,4 +10,6 @@ ms.assetid: 865626a9-98cc-465d-acde-44d4574c019a
 
 > error when processing the token '*token*'
 
+## Remarks
+
 A token in source code couldn't be processed. This error is obsolete in Visual Studio 2022.

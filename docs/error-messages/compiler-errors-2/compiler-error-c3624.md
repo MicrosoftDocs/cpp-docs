@@ -10,6 +10,8 @@ ms.assetid: eaac6a4f-eb11-4e4d-ab12-124ba995c5cf
 
 > 'type': use of this type requires a reference to assembly 'assembly'
 
+## Remarks
+
 An assembly (reference) needed to compile your code was not specified; pass the assembly to the [#using](../../preprocessor/hash-using-directive-cpp.md) directive.
 
 ## Example

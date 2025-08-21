@@ -10,7 +10,11 @@ ms.assetid: 88965d85-73b0-4b35-8020-0650c9c94cd8
 
 > 'override' : override specifier cannot be repeated
 
+## Remarks
+
 An explicit override keyword can only be specified once. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3656:
 
