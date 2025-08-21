@@ -24,7 +24,7 @@ class basic_string;
 The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [`string`](../standard-library/string-typedefs.md#string) for elements of type `char`, [`wstring`](../standard-library/string-typedefs.md#wstring), for `wchar_t`, [`u16string`](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [`u32string`](../standard-library/string-typedefs.md#u32string) for `char32_t`.
 
 *`Traits`*\
-Various important properties of the `CharType` elements in a basic_string specialization are described by the class `Traits`. The default value is `char_traits`<`CharType`>.
+Various important properties of the `CharType` elements in a `basic_string` specialization are described by the class `Traits`. The default value is `char_traits`<`CharType`>.
 
 *`Allocator`*\
 The type that represents the stored allocator object that encapsulates details about the string's allocation and deallocation of memory. The default value is `allocator<CharType>`.
@@ -130,9 +130,9 @@ References, pointers, and iterators that designate elements of the controlled se
 
 ## Requirements
 
-**Header:** \<string>
+**Header:** `<string>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## <a name="allocator_type"></a> `basic_string::allocator_type`
 
@@ -379,10 +379,10 @@ The source string whose characters are to be assigned to the target string.
 The character value to be assigned.
 
 *`first`*\
-An input iterator, const_pointer, or const_iterator addressing the first character in the range of the source string to be assigned to the target range.
+An input iterator, `const_pointer`, or `const_iterator` addressing the first character in the range of the source string to be assigned to the target range.
 
 *`last`*\
-An input iterator, const_pointer, or const_iterator addressing the one beyond the last character in the range of the source string to be assigned to the target range.
+An input iterator, `const_pointer`, or `const_iterator` addressing the one beyond the last character in the range of the source string to be assigned to the target range.
 
 *`off`*\
 The position at which new characters will start to be assigned.
@@ -662,10 +662,10 @@ The index of a character in a string that is the first to be used to initialize 
 The character value to be copied into the string being constructed.
 
 *`first`*\
-An input iterator, const_pointer, or const_iterator addressing the first element in the source range to be inserted.
+An input iterator, `const_pointer`, or `const_iterator` addressing the first element in the source range to be inserted.
 
 *`last`*\
-An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the source range to be inserted.
+An input iterator, `const_pointer`, or `const_iterator` addressing the position of the one beyond the last element in the source range to be inserted.
 
 ### Return value
 
@@ -3908,10 +3908,10 @@ An iterator addressing the first character to be removed in the operand string.
 An iterator addressing the last character to be removed in the operand string.
 
 *`first`*\
-An iterator, const_pointer, or const_iterator addressing the first character to be copied in the parameter string.
+An iterator, `const_pointer`, or `const_iterator` addressing the first character to be copied in the parameter string.
 
 *`last`*\
-An iterator, const_pointer, or const_iterator addressing the last character to be copied in the parameter string.
+An iterator, `const_pointer`, or `const_iterator` addressing the last character to be copied in the parameter string.
 
 *`count`*\
 The number of times *`char_value`* is copied into the operand string.
