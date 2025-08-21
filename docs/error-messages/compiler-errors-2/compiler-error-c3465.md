@@ -1,22 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3465"
 title: "Compiler Error C3465"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3465"
+ms.date: 11/04/2016
 f1_keywords: ["C3465"]
 helpviewer_keywords: ["C3465"]
-ms.assetid: aeb815e5-b3fc-4525-afe2-d738e9321df1
 ---
 # Compiler Error C3465
 
-to use type 'type' you must reference the assembly 'assembly'
+> to use type 'type' you must reference the assembly 'assembly'
+
+## Remarks
 
 Type forwarding will work for a client application until you recompile the client. When you recompile, you will need a reference for every assembly containing the definition of a type used in your client application.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Examples
+## Example
 
-The following sample builds an assembly that contains the new location of a type.
+The following example builds an assembly that contains the new location of a type.
 
 ```cpp
 // C3465.cpp
@@ -27,7 +28,7 @@ public:
 };
 ```
 
-The following sample builds an assembly that used to contain the definition of the type, but now contains forwarding syntax for the type.
+The following example builds an assembly that used to contain the definition of the type, but now contains forwarding syntax for the type.
 
 ```cpp
 // C3465_b.cpp
@@ -36,7 +37,7 @@ The following sample builds an assembly that used to contain the definition of t
 [ assembly:TypeForwardedTo(R::typeid) ];
 ```
 
-The following sample generates C3465.
+The following example generates C3465.
 
 ```cpp
 // C3465_c.cpp
