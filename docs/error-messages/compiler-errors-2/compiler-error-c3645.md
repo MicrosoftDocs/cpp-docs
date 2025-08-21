@@ -8,7 +8,7 @@ ms.assetid: 346da528-ae86-4cd0-9654-f41bee26ac0d
 ---
 # Compiler Error C3645
 
-'function' : __clrcall cannot be used on functions compiled to native code
+> 'function' : __clrcall cannot be used on functions compiled to native code
 
 The presence of some keywords in a function will cause the function to be compiled to native.
 

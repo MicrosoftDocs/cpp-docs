@@ -8,7 +8,7 @@ ms.assetid: 724919ab-2915-4b61-8794-44648e162d62
 ---
 # Compiler Error C3655
 
-'function' : function already explicitly overridden
+> 'function' : function already explicitly overridden
 
 A function can only be explicitly overridden once. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 

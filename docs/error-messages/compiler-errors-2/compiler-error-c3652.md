@@ -8,7 +8,7 @@ ms.assetid: 15d68737-177e-41f1-80e0-7c3e2afdf0fc
 ---
 # Compiler Error C3652
 
-'override' : a function that explicitly overrides must be virtual
+> 'override' : a function that explicitly overrides must be virtual
 
 A function that does an explicit override must be virtual. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 

@@ -8,7 +8,7 @@ ms.assetid: 88965d85-73b0-4b35-8020-0650c9c94cd8
 ---
 # Compiler Error C3656
 
-'override' : override specifier cannot be repeated
+> 'override' : override specifier cannot be repeated
 
 An explicit override keyword can only be specified once. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 

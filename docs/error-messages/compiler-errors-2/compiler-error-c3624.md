@@ -8,7 +8,7 @@ ms.assetid: eaac6a4f-eb11-4e4d-ab12-124ba995c5cf
 ---
 # Compiler Error C3624
 
-'type': use of this type requires a reference to assembly 'assembly'
+> 'type': use of this type requires a reference to assembly 'assembly'
 
 An assembly (reference) needed to compile your code was not specified; pass the assembly to the [#using](../../preprocessor/hash-using-directive-cpp.md) directive.
 

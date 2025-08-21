@@ -8,7 +8,7 @@ ms.assetid: 43926e2b-1ba9-4a43-9343-c58449cbb336
 ---
 # Compiler Error C3626
 
-'keyword': '__event' keyword can only be used on COM interfaces, member functions and data members that are pointers to delegates
+> 'keyword': '__event' keyword can only be used on COM interfaces, member functions and data members that are pointers to delegates
 
 A keyword was used incorrectly.
 

@@ -8,7 +8,7 @@ ms.assetid: 2e3f6c41-3ec5-4a01-82bc-f11b61ebe68e
 ---
 # Compiler Error C3644
 
-'function' : cannot compile the function to generate managed code
+> 'function' : cannot compile the function to generate managed code
 
 The presence of some keywords in a function will cause the function to be compiled to native.
 

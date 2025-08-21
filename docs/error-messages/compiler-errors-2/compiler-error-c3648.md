@@ -8,7 +8,7 @@ ms.assetid: 5d042989-41cb-4cd0-aa50-976b70146aaf
 ---
 # Compiler Error C3648
 
-this explicit override syntax requires /clr:oldSyntax
+> this explicit override syntax requires /clr:oldSyntax
 
 When compiling for the latest managed syntax, the compiler found explicit override syntax for previous versions that is no longer supported.
 

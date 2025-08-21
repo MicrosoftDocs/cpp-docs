@@ -8,7 +8,7 @@ ms.assetid: a0341b45-062a-4f67-beb9-ba74201ed1ed
 ---
 # Compiler Error C3623
 
-'variable': bit fields are not supported in managed or WinRT types
+> 'variable': bit fields are not supported in managed or WinRT types
 
 The use of bit fields is not permitted on variables in a managed or WinRT class.
 

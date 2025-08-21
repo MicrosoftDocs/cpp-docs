@@ -8,7 +8,7 @@ ms.assetid: 88cbd2d5-6fef-4940-be34-d8cbe816d3da
 ---
 # Compiler Error C3631
 
-'function': cannot overload managed or WinRT events
+> 'function': cannot overload managed or WinRT events
 
 A managed or WinRT event cannot be overloaded.
 

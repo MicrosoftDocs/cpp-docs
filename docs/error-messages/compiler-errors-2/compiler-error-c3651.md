@@ -8,7 +8,7 @@ ms.assetid: a03e692e-c219-4654-9827-8415cfa5a22d
 ---
 # Compiler Error C3651
 
-'member' : cannot be used as an explicit override, must be a member of a base class
+> 'member' : cannot be used as an explicit override, must be a member of a base class
 
 An explicit override was specified, but the function being overridden was in a type that is not a base type.
 

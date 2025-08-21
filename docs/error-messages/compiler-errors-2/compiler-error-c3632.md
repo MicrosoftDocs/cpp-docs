@@ -8,7 +8,7 @@ ms.assetid: a04e3217-f5a1-4461-a1db-d69fd096d468
 ---
 # Compiler Error C3632
 
-'event': illegal style of event for construct
+> 'event': illegal style of event for construct
 
 [__event](../../cpp/event.md) declarations are not valid in all constructs.
 

@@ -8,7 +8,7 @@ ms.assetid: 429790c2-9614-4d85-b31c-687c8d8f83ff
 ---
 # Compiler Error C3642
 
-'return_type/args' : cannot call a function with __clrcall calling convention from native code
+> 'return_type/args' : cannot call a function with __clrcall calling convention from native code
 
 A function that is marked with the [__clrcall](../../cpp/clrcall.md) calling convention cannot be called from native (unmanaged) code.
 
