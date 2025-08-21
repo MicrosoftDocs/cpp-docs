@@ -8,7 +8,7 @@ ms.assetid: 3c02fb08-7ba4-4637-a06f-19926cb2b5f1
 ---
 # Compiler Error C3698
 
-'type' : cannot use this type as argument of 'operator'
+> 'type' : cannot use this type as argument of 'operator'
 
 A managed object was declared incorrectly.
 

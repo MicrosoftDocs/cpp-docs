@@ -8,7 +8,7 @@ ms.assetid: be9c7ae4-e96f-47ab-922a-39a3537d5ca6
 ---
 # Compiler Error C3669
 
-'member' : override specifier 'override' not allowed on static member functions or constructors
+> 'member' : override specifier 'override' not allowed on static member functions or constructors
 
 An override was specified incorrectly. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 

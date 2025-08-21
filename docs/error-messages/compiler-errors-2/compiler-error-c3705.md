@@ -8,7 +8,7 @@ ms.assetid: 8361017d-5782-4214-a9d7-e9825fd29bc8
 ---
 # Compiler Error C3705
 
-'function' : cannot find eventing interface
+> 'function' : cannot find eventing interface
 
 You must define an event interface to use COM events. Note that the `#include` lines of the ATL header files shown in the sample below are required for using COM events. To fix this error, uncomment the definition of the `IEvents` interface in the sample code.
 

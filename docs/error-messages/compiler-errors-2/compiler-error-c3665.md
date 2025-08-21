@@ -8,7 +8,7 @@ ms.assetid: 893bb47e-8de1-43aa-af7d-fa47ad149ee9
 ---
 # Compiler Error C3665
 
-'destructor' : override specifier 'keyword' not allowed on a destructor/finalizer
+> 'destructor' : override specifier 'keyword' not allowed on a destructor/finalizer
 
 A keyword was used that is not allowed on a destructor or finalizer.
 

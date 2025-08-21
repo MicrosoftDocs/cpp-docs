@@ -8,7 +8,7 @@ ms.assetid: 14fcc20e-4404-45d7-be54-e4f09332fa5a
 ---
 # Compiler Error C3702
 
-'function' : ATL is required for COM events
+> 'function' : ATL is required for COM events
 
 You attempted to use COM events without including the necessary ATL header files.
 

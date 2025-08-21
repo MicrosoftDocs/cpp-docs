@@ -7,7 +7,7 @@ helpviewer_keywords: ["C3672"]
 ---
 # Compiler Error C3672
 
-pseudo-destructor expression can only be used as part of a function call
+> pseudo-destructor expression can only be used as part of a function call
 
 A destructor was called incorrectly.  For more information, see [Destructors](../../cpp/destructors-cpp.md).
 

@@ -8,7 +8,7 @@ ms.assetid: 87461613-6633-430b-b95d-c7cb1bb63776
 ---
 # Compiler Error C3675
 
-'function' : is reserved because 'property' is defined
+> 'function' : is reserved because 'property' is defined
 
 When you declare a simple property, the compiler generates the get and set accessor methods, and those names are present in the scope of your program.  The compiler-generated names are formed by prepending get_ and set_ to the property name.  Therefore, you cannot declare functions with the same name as the compiler-generated accessors.
 

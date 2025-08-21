@@ -8,7 +8,7 @@ ms.assetid: d20a33eb-d625-46c5-ac87-32075a590d07
 ---
 # Compiler Error C3706
 
-'function' : must be a COM interface to fire COM events
+> 'function' : must be a COM interface to fire COM events
 
 The event interface that you use to fire COM events must be a COM interface. In this situation, the interface should either be defined using a Visual C++ attribute, or imported using [#import](../../preprocessor/hash-import-directive-cpp.md) from a type library with #import's embedded_idl attribute.
 

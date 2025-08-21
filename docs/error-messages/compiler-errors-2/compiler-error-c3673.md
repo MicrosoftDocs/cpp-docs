@@ -8,7 +8,7 @@ ms.assetid: bb6d2079-05af-4e2c-be0e-75c892e6c590
 ---
 # Compiler Error C3673
 
-'type' : class does not have a copy-constructor
+> 'type' : class does not have a copy-constructor
 
 A user-defined constructor is needed to copy objects of CLR ref types. For more information, see [C++ Stack Semantics for Reference Types](../../dotnet/cpp-stack-semantics-for-reference-types.md).
 

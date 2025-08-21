@@ -8,7 +8,7 @@ ms.assetid: 2d3f63c4-b7f8-421d-a7a5-2bf17fd054f9
 ---
 # Compiler Error C3697
 
-'qualifier' : cannot use this qualifier on '^'
+> 'qualifier' : cannot use this qualifier on '^'
 
 The tracking handle (^) was applied to a qualifier for which it was not designed.
 

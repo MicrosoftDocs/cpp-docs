@@ -8,7 +8,7 @@ ms.assetid: 18bec009-5b6f-464a-a21e-5d58a6936504
 ---
 # Compiler Error C3710
 
-'function': improper syntax for specifying event handler in __hook/\__unhook
+> 'function': improper syntax for specifying event handler in __hook/\__unhook
 
 When you specify an event handler with [__hook](../../cpp/hook.md) or [__unhook](../../cpp/unhook.md), the handler must be a valid method.
 

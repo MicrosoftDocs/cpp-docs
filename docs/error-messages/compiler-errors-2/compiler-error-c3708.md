@@ -8,7 +8,7 @@ ms.assetid: 45e71564-9c7f-437f-98d8-a735ce162ed0
 ---
 # Compiler Error C3708
 
-'interface': improper use of 'keyword'; must be a member of a compatible event source
+> 'interface': improper use of 'keyword'; must be a member of a compatible event source
 
 To declare an interface as an event, the event declaration must be in an event source.
 

@@ -8,7 +8,7 @@ ms.assetid: 459e51dd-cefb-4346-99b3-644f2d8b65b2
 ---
 # Compiler Error C3666
 
-'constructor' : override specifier 'keyword' not allowed on a constructor
+> 'constructor' : override specifier 'keyword' not allowed on a constructor
 
 An override specifier was used on a constructor, and that is not allowed. For more information, see [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md).
 

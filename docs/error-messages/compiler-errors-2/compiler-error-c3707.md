@@ -8,7 +8,7 @@ ms.assetid: ac63a5dd-7a4b-48d2-9f2a-be9cb090134c
 ---
 # Compiler Error C3707
 
-'function' : dispinterface method must have a dispid
+> 'function' : dispinterface method must have a dispid
 
 If you use a `dispinterface` method, you must assign it a `dispid`. To fix this error, assign a `dispid` to the `dispinterface` method, for example, by uncommenting the `id` attribute on the method in the sample below. For more information, see the attributes [dispinterface](../../windows/attributes/dispinterface.md) and [id](../../windows/attributes/id.md).
 

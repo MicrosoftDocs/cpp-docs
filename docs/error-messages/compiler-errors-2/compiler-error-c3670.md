@@ -8,7 +8,7 @@ ms.assetid: d0fa9c6e-8f90-48c7-9066-31b4fa5942eb
 ---
 # Compiler Error C3670
 
-'override' : cannot override inaccessible base class method 'method'
+> 'override' : cannot override inaccessible base class method 'method'
 
 An override can only take place on a function whose access level makes it available in a derived type. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 

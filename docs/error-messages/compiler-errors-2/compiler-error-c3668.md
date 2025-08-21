@@ -8,7 +8,7 @@ ms.assetid: 53a96698-bde4-4447-95b5-b5108291f60c
 ---
 # Compiler Error C3668
 
-'method' : method with override specifier 'override' did not override any base class methods
+> 'method' : method with override specifier 'override' did not override any base class methods
 
 A function attempted to override a non-existent function.
 

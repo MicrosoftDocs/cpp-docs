@@ -8,7 +8,7 @@ ms.assetid: 61bd3e41-a86b-42c0-be89-d992d3906ff1
 ---
 # Compiler Error C3662
 
-'member' : override specifier 'specifier' only allowed on member functions of managed or WinRT classes
+> 'member' : override specifier 'specifier' only allowed on member functions of managed or WinRT classes
 
 An override specifier was used on a member of native type, which is not allowed.
 
