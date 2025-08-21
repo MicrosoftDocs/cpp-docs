@@ -18,7 +18,7 @@ template <class CharType, class Traits = char_traits<CharType>, class Allocator 
 class basic_string;
 ```
 
-### Parameters
+### Template parameters
 
 *`CharType`*\
 The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [`string`](../standard-library/string-typedefs.md#string) for elements of type `char`, [`wstring`](../standard-library/string-typedefs.md#wstring), for `wchar_t`, [`u16string`](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [`u32string`](../standard-library/string-typedefs.md#u32string) for `char32_t`.
