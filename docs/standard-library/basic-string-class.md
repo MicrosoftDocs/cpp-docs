@@ -279,7 +279,7 @@ int main( )
    // appending one string to another in two ways,
    // comparing append and operator [ ]
    string str1d ( "Hello " ), str2d ( "Wide " ), str3d ( "World " );
-   cout << "The  string str2d is: " << str2d << endl;
+   cout << "The string str2d is: " << str2d << endl;
    str1d.append ( str2d );
    cout << "The appended string str1d is: "
         << str1d << "." << endl;
@@ -316,7 +316,7 @@ Appending the 1st part of the C-string cstr1b to string str1 gives: Hello Out.
 The string str2c is: Wide World
 The appended string str1 is: Hello World.
 
-The  string str2d is: Wide
+The string str2d is: Wide
 The appended string str1d is: Hello Wide .
 The doubly appended string str1 is: Hello Wide World .
 
@@ -417,7 +417,7 @@ int main( )
         << str1a << "." << endl << endl;
 
    // The second member function assigning a specific
-   // number of the of characters a C-string to a string
+   // number of the characters of a C-string to a string
    string  str1b;
    const char *cstr1b = "Out There";
    cout << "The C-string cstr1b is: " << cstr1b << endl;
@@ -452,7 +452,7 @@ int main( )
    // number of characters of a certain value to a string
    string str1e ( "Hello " );
    str1e.assign ( 4 , '!' );
-   cout << "The string str1 assigned with eclamations is: "
+   cout << "The string str1 assigned with exclamations is: "
         << str1e << endl << endl;
 
    // The sixth member function assigning the value from
@@ -481,7 +481,7 @@ The string str1 newly assigned with string str2d is: Wide.
 The string str3d is: World.
 The string str1 reassigned with string str3d is: World.
 
-The string str1 assigned with eclamations is: !!!!
+The string str1 assigned with exclamations is: !!!!
 
 The string str2f is: Wide World
 The string str1 assigned a range of string str2f is: World.
@@ -512,7 +512,7 @@ The first element of the string has an index of zero and the following elements 
 
 The member [`operator[]`](#op_at) is faster than the member function `at` for providing read and write access to the elements of a string.
 
-The member `operator[]` doesn't check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less that zero or greater than or equal to the size of the string, passed to the member function `at` throws an [`out_of_range` Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
+The member `operator[]` doesn't check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less than zero or greater than or equal to the size of the string, passed to the member function `at` throws an [`out_of_range` Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
 
 The reference returned may be invalidated by string reallocations or modifications for the non-`const` strings.
 
@@ -1079,7 +1079,7 @@ A negative value if the operand string is less than the parameter string; zero i
 
 ### Remarks
 
-The `compare` member functions compare either all, or part, of the parameter and operand strings depending on which in used.
+The `compare` member functions compare either all, or part, of the parameter and operand strings depending on which is used.
 
 The comparison is case-sensitive.
 
@@ -1778,7 +1778,7 @@ int main( )
    if ( str2.begin( ) == str2.end ( ) )
       cout << "The string str2 is empty." << endl;
    else
-      cout << "The stringstr2  is not empty." << endl;
+      cout << "The string str2 is not empty." << endl;
 }
 ```
 
@@ -2447,7 +2447,7 @@ int main( )
            << "position is: " << indexCh3b << endl << endl;
    else
       cout << "Elements of the substring '5G' were not "
-           << "found in str3\n after the first occurrrence."
+           << "found in str3\n after the first occurrence."
            << endl << endl;
 
    // The fourth member function searches a string
@@ -3479,7 +3479,7 @@ The first element of the string has an index of zero, and the following elements
 
 `operator[]` is faster than the member function [`at`](#at) for providing read and write access to the elements of a string.
 
-`operator[]` doesn't check whether the index passed as a parameter is valid, but the member function `at` does and so should be used in the validity isn't certain. An invalid index (an index less that zero or greater than or equal to the size of the string) passed to the member function `at` throws an [`out_of_range` Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null character when passed this index.
+`operator[]` doesn't check whether the index passed as a parameter is valid, but the member function `at` does and so should be used if the validity isn't certain. An invalid index (an index less than zero or greater than or equal to the size of the string) passed to the member function `at` throws an [`out_of_range` Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null character when passed this index.
 
 The reference returned may be invalidated by string reallocations or modifications for the non-`const` strings.
 
@@ -3690,7 +3690,7 @@ int main( )
    if ( str2.rbegin( ) == str2.rend ( ) )
       cout << "The string str2 is empty." << endl;
    else
-      cout << "The stringstr2  is not empty." << endl;
+      cout << "The string str2 is not empty." << endl;
 }
 ```
 
@@ -3788,7 +3788,7 @@ int main( )
    if ( str2.rbegin( ) == str2.rend ( ) )
       cout << "The string str2 is empty." << endl;
    else
-      cout << "The stringstr2  is not empty." << endl;
+      cout << "The string str2 is not empty." << endl;
 }
 ```
 
@@ -4151,7 +4151,7 @@ int main( )
    sizerStr1 = str1.size ( );
    caprStr1 = str1.capacity ( );
 
-   cout << "The string str1with augmented capacity is: "
+   cout << "The string str1 with augmented capacity is: "
         << str1 << endl;
    cout << "The current size of string str1 is: "
         << sizerStr1 << "." << endl;
@@ -4180,7 +4180,7 @@ The original string str1 is: Hello world
 The current size of original string str1 is: 11.
 The capacity of original string str1 is: 15.
 
-The string str1with augmented capacity is: Hello world
+The string str1 with augmented capacity is: Hello world
 The current size of string str1 is: 11.
 The new capacity of string str1 is: 47.
 
