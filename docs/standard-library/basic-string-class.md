@@ -21,7 +21,7 @@ class basic_string;
 ### Template parameters
 
 *`CharType`*\
-The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [`string`](../standard-library/string-typedefs.md#string) for elements of type `char`, [`wstring`](../standard-library/string-typedefs.md#wstring), for `wchar_t`, [`u16string`](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [`u32string`](../standard-library/string-typedefs.md#u32string) for `char32_t`.
+The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [`string`](string-typedefs.md#string) for elements of type `char`, [`wstring`](string-typedefs.md#wstring), for `wchar_t`, [`u16string`](string-typedefs.md#u16string) for `char16_t`, and [`u32string`](string-typedefs.md#u32string) for `char32_t`.
 
 *`Traits`*\
 Various important properties of the `CharType` elements in a `basic_string` specialization are described by the class `Traits`. The default value is `char_traits`<`CharType`>.
@@ -124,7 +124,7 @@ The headers that define `basic_string` also define the following [user-defined l
 
 ## Remarks
 
-If a function is asked to generate a sequence longer than [`max_size`](#max_size) elements, the function reports a length error by throwing an object of type [`length_error`](../standard-library/length-error-class.md).
+If a function is asked to generate a sequence longer than [`max_size`](#max_size) elements, the function reports a length error by throwing an object of type [`length_error`](length-error-class.md).
 
 References, pointers, and iterators that designate elements of the controlled sequence can become invalid after any call to a function that alters the controlled sequence, or after the first call to a non-`const` member function.
 
@@ -512,7 +512,7 @@ The first element of the string has an index of zero and the following elements 
 
 The member [`operator[]`](#op_at) is faster than the member function `at` for providing read and write access to the elements of a string.
 
-The member `operator[]` doesn't check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less than zero or greater than or equal to the size of the string, passed to the member function `at` throws an [`out_of_range` Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
+The member `operator[]` doesn't check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less than zero or greater than or equal to the size of the string, passed to the member function `at` throws an [`out_of_range` Class](out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
 
 The reference returned may be invalidated by string reallocations or modifications for the non-`const` strings.
 
@@ -3200,7 +3200,7 @@ The maximum number of characters a string could contain.
 
 ### Remarks
 
-An exception of type [`length_error` Class](../standard-library/length-error-class.md) is thrown when an operation produces a string with a length greater than the maximum size.
+An exception of type [`length_error` Class](length-error-class.md) is thrown when an operation produces a string with a length greater than the maximum size.
 
 ### Example
 
@@ -3479,11 +3479,11 @@ The first element of the string has an index of zero, and the following elements
 
 `operator[]` is faster than the member function [`at`](#at) for providing read and write access to the elements of a string.
 
-`operator[]` doesn't check whether the index passed as a parameter is valid, but the member function `at` does and so should be used if the validity isn't certain. An invalid index (an index less than zero or greater than or equal to the size of the string) passed to the member function `at` throws an [`out_of_range` Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null character when passed this index.
+`operator[]` doesn't check whether the index passed as a parameter is valid, but the member function `at` does and so should be used if the validity isn't certain. An invalid index (an index less than zero or greater than or equal to the size of the string) passed to the member function `at` throws an [`out_of_range` Class](out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null character when passed this index.
 
 The reference returned may be invalidated by string reallocations or modifications for the non-`const` strings.
 
-When compiling with [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md) set to 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the string. For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
+When compiling with [`_ITERATOR_DEBUG_LEVEL`](iterator-debug-level.md) set to 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the string. For more information, see [Checked Iterators](checked-iterators.md).
 
 ### Example
 
@@ -4805,7 +4805,7 @@ For type `string`, it's equivalent to `char_traits<char>`.
 
 ### Example
 
-See the example for [`copy`](../standard-library/char-traits-struct.md#copy) for an example of how to declare and use `traits_type`.
+See the example for [`copy`](char-traits-struct.md#copy) for an example of how to declare and use `traits_type`.
 
 ## <a name="value_type"></a> `basic_string::value_type`
 
@@ -4847,5 +4847,5 @@ The character ch2 is: H.
 
 ## See also
 
-[`<string>`](../standard-library/string.md)\
-[Thread safety in the C++ standard library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`<string>`](string.md)\
+[Thread safety in the C++ standard library](thread-safety-in-the-cpp-standard-library.md)
