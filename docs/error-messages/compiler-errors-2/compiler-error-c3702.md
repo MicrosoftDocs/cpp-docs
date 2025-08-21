@@ -10,7 +10,11 @@ ms.assetid: 14fcc20e-4404-45d7-be54-e4f09332fa5a
 
 > 'function' : ATL is required for COM events
 
+## Remarks
+
 You attempted to use COM events without including the necessary ATL header files.
+
+## Example
 
 The following sample generates C3702:
 

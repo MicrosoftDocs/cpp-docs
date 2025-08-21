@@ -10,6 +10,8 @@ ms.assetid: 47c29afc-ab8b-4238-adfe-788dd6e00b3b
 
 > 'operator' : cannot use this indirection on type 'type'
 
+## Remarks
+
 An attempt was made to use indirection that is not allowed on `type`.
 
 ## Examples

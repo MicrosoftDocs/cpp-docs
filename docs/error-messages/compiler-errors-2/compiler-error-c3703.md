@@ -10,7 +10,11 @@ ms.assetid: 7e3677d9-f2be-4c26-998f-423564e9023c
 
 > 'event handler': an event handler method must have the same storage class as the source 'event'
 
+## Remarks
+
 An [event](../../cpp/event-handling.md) has a different storage class than the event handler to which it is hooked. For example, this error occurs if the event handler is a static member function and the event is not static. To fix this error, give the event and the event handler the same storage class.
+
+## Example
 
 The following sample generates C3703:
 

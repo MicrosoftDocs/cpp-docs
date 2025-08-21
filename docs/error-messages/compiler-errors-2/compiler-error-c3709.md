@@ -10,7 +10,11 @@ ms.assetid: d5576b04-2f93-420a-8f3e-8b8e987e8dab
 
 > 'function': improper syntax for specifying event in __hook/\__unhook
 
+## Remarks
+
 When you specify an event source with [__hook](../../cpp/hook.md) or [__unhook](../../cpp/unhook.md), the first parameter must be a valid event method and the second parameter must be a valid event source object (not a method).
+
+## Example
 
 The following sample generates C3709:
 

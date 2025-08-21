@@ -10,6 +10,8 @@ ms.assetid: 18bec009-5b6f-464a-a21e-5d58a6936504
 
 > 'function': improper syntax for specifying event handler in __hook/\__unhook
 
+## Remarks
+
 When you specify an event handler with [__hook](../../cpp/hook.md) or [__unhook](../../cpp/unhook.md), the handler must be a valid method.
 
 ## Example

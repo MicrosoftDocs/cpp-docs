@@ -10,7 +10,11 @@ ms.assetid: d0fa9c6e-8f90-48c7-9066-31b4fa5942eb
 
 > 'override' : cannot override inaccessible base class method 'method'
 
+## Remarks
+
 An override can only take place on a function whose access level makes it available in a derived type. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3670:
 

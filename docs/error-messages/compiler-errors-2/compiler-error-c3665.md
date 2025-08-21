@@ -10,9 +10,13 @@ ms.assetid: 893bb47e-8de1-43aa-af7d-fa47ad149ee9
 
 > 'destructor' : override specifier 'keyword' not allowed on a destructor/finalizer
 
+## Remarks
+
 A keyword was used that is not allowed on a destructor or finalizer.
 
 For example, a new slot cannot be requested on a destructor or finalizer.  For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md) and [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
+
+## Example
 
 The following sample generates C3665:
 

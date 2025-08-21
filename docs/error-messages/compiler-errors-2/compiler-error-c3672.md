@@ -9,6 +9,8 @@ helpviewer_keywords: ["C3672"]
 
 > pseudo-destructor expression can only be used as part of a function call
 
+## Remarks
+
 A destructor was called incorrectly.  For more information, see [Destructors](../../cpp/destructors-cpp.md).
 
 ## Example

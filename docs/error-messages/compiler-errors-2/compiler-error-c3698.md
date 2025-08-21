@@ -10,7 +10,11 @@ ms.assetid: 3c02fb08-7ba4-4637-a06f-19926cb2b5f1
 
 > 'type' : cannot use this type as argument of 'operator'
 
+## Remarks
+
 A managed object was declared incorrectly.
+
+## Example
 
 The following sample generates C3698:
 
