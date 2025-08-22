@@ -10,7 +10,11 @@ ms.assetid: 6fe71a0a-dd93-4ce6-9729-b9616360cf34
 
 > 'interface': managed interfaces may not fire events
 
+## Remarks
+
 The [__event](../../cpp/event.md) keyword cannot appear inside an interface.
+
+## Example
 
 The following sample generates C3748:
 

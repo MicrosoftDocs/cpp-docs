@@ -10,6 +10,8 @@ ms.assetid: c653240a-b6db-4437-8d65-fa58f0e6fcf4
 
 > 'declaration': cannot mix properties and events
 
+## Remarks
+
 You cannot declare a construct to be both a property and an event.
 
 C3800 is only reachable using the obsolete compiler option **/clr:oldSyntax**.

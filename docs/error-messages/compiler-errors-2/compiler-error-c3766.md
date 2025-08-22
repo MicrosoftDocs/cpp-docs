@@ -10,6 +10,8 @@ ms.assetid: b5af2089-2e1e-4e45-a41d-495b6c55656e
 
 > 'type' must provide an implementation for the interface method 'function'
 
+## Remarks
+
 A class that inherits from an interface must implement the interface members.
 
 ## Example

@@ -10,6 +10,8 @@ ms.assetid: 336a2811-9370-4e6e-b03b-325bda470805
 
 > indexed property cannot have an empty parameter list
 
+## Remarks
+
 An indexed property was declared incorrectly. For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md).
 
 ## Example

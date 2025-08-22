@@ -10,6 +10,8 @@ ms.assetid: ab27ff34-8c1d-4297-b004-9e39bd3a4f25
 
 > 'override': event declaration cannot have override specifier (should be placed on event add/remove/raise methods instead)
 
+## Remarks
+
 You cannot override a trivial event (an event without explicitly defined accessor methods) with another trivial event. The overriding event must define its behavior with accessor functions.
 
 For more information, see [event](../../extensions/event-cpp-component-extensions.md).

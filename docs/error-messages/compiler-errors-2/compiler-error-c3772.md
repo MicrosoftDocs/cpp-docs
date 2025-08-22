@@ -10,6 +10,8 @@ ms.assetid: 63e938d4-088d-41cc-a562-5881a05b5710
 
 > "name" : invalid friend template declaration
 
+## Remarks
+
 It is invalid to declare a friend of a class template specialization. You cannot declare an explicit or partial specialization of a class template and in the same statement declare a friend of that specialization. The *name* placeholder identifies the invalid declaration.
 
 ### To correct this error

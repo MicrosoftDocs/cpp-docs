@@ -10,7 +10,11 @@ ms.assetid: ed311315-cc32-49c9-97fa-01b293d81526
 
 > 'class': must be a coclass when the 'layout_dependent' parameter of event_receiver = true
 
+## Remarks
+
 When `layout_dependent=true` for an [event_receiver](../../windows/attributes/event-receiver.md) class, then the class must also have the [coclass](../../windows/attributes/coclass.md) attribute.
+
+## Example
 
 The following sample generates C3741
 

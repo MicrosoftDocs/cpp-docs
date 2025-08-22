@@ -10,7 +10,11 @@ ms.assetid: 1e64aec5-7e53-47e5-bc7d-3905230cfc66
 
 > 'function': only an event can be 'raised'
 
+## Remarks
+
 Only a function defined with the [__event](../../cpp/event.md) keyword can be passed to the [__raise](../../cpp/raise.md) keyword.
+
+## Example
 
 The following sample generates C3745:
 

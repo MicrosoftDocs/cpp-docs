@@ -10,7 +10,11 @@ ms.assetid: a9a4be67-5d9c-4dcc-9ae9-baae46cbecde
 
 > missing default type parameter : parameter param
 
+## Remarks
+
 Generic or template parameters with default values cannot be followed in the parameter list by parameters that do not have default values.
+
+## Example
 
 The following sample generates C3747:
 

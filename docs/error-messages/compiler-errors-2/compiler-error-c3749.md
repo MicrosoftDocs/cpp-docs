@@ -10,6 +10,8 @@ ms.assetid: 3d26b468-4757-41b8-b5a2-78022a5295fb
 
 > 'attribute': a custom attribute may not be used inside a function
 
+## Remarks
+
 A custom attribute cannot be used inside a function. For more information on custom attributes, see the topic [attribute](../../windows/attributes/attribute.md).
 
 ## Example

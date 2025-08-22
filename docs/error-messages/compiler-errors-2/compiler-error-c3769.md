@@ -10,6 +10,8 @@ ms.assetid: 341675e1-7428-4da6-8275-1b2f0a70dacc
 
 > 'type' : a nested class cannot have the same name as the immediately enclosing class
 
+## Remarks
+
 A nested class cannot have the same name as the immediately enclosing class.
 
 ## Example

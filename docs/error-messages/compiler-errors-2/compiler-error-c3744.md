@@ -10,6 +10,8 @@ ms.assetid: a447d050-80d1-406a-9a6e-f15c527d717c
 
 > __unhook must have at least 3 arguments for managed events
 
+## Remarks
+
 The [`__unhook`](../../cpp/unhook.md) function must take three parameters when used in a program that is compiled for Managed Extensions for C++.
 
 **`__hook`** and **`__unhook`** are not compatible with **`/clr`** programming. Use the += and -= operators instead.

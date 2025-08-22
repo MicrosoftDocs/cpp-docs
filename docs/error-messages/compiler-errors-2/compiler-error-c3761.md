@@ -10,7 +10,11 @@ ms.assetid: 0c16f093-7a78-4838-b90b-0c67ef6e9270
 
 > 'function': 'retval' can only appear on the last argument of a function
 
+## Remarks
+
 The [retval](../../windows/attributes/retval.md) attribute was used on a function argument that was not the last argument in the list.
+
+## Example
 
 The following sample generates C3761:
 

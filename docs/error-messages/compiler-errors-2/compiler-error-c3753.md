@@ -10,6 +10,8 @@ ms.assetid: a5b99e28-796c-4107-a673-97c2ae3bb2b9
 
 > a generic property is not allowed
 
+## Remarks
+
 Generic parameter lists can only appear on managed classes, structs, or functions.
 
 For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md) and [property](../../extensions/property-cpp-component-extensions.md).

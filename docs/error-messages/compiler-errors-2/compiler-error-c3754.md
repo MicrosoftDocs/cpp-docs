@@ -10,6 +10,8 @@ ms.assetid: 14b877bc-9277-40ec-af1c-196a58b45f10
 
 > delegate constructor: member function 'function' cannot be called on an instance of type 'type'
 
+## Remarks
+
 A call was made to a function through a pointer to a type that does not contain the function.
 
 ## Example

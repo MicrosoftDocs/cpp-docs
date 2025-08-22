@@ -10,6 +10,8 @@ ms.assetid: b2f8b1d8-8812-49b8-a346-28e48f02ba5c
 
 > 'specifier': property declaration cannot have override specifier (should be placed on property get/set methods instead)
 
+## Remarks
+
 A property was declared incorrectly. For more information, see
 
 - [property](../../extensions/property-cpp-component-extensions.md)
