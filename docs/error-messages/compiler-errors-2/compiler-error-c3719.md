@@ -8,7 +8,7 @@ ms.assetid: d0d59d4e-babb-4480-9ef7-70cf1a28165c
 ---
 # Compiler Error C3719
 
-'interface': an interface based event source can only be used for COM events
+> 'interface': an interface based event source can only be used for COM events
 
 You declared an interface in a non-COM context.
 

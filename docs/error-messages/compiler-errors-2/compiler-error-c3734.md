@@ -8,7 +8,7 @@ ms.assetid: 4e2afdcc-7da9-45a1-9c96-85f25e2986e8
 ---
 # Compiler Error C3734
 
-'class': a managed or WinRT class cannot be a coclass
+> 'class': a managed or WinRT class cannot be a coclass
 
 The [coclass](../../windows/attributes/coclass.md) attribute cannot be used with managed or WinRT classes.
 

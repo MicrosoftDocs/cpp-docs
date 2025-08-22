@@ -8,7 +8,7 @@ ms.assetid: 17718f75-5a37-4e42-912b-487e91008a95
 ---
 # Compiler Error C3714
 
-'method': an event handler method must have the same calling convention as the source 'method'
+> 'method': an event handler method must have the same calling convention as the source 'method'
 
 You defined an event handler method that did not use the same calling convention as the source event method. To fix this error, give the event handler method the same calling conventions as those of the source event method. For example, in the code below, make the calling conventions of `handler1` and `event1` match ([__cdecl](../../cpp/cdecl.md) or [__stdcall](../../cpp/stdcall.md) or others). Removing calling convention keywords from both declarations will also solve the problem, and cause `event1` and `handler1` to default to the [thiscall](../../cpp/thiscall.md) calling convention. See [Calling Conventions](../../cpp/calling-conventions.md) for more information.
 

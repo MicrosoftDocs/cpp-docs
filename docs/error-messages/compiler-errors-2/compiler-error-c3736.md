@@ -8,7 +8,7 @@ ms.assetid: 579b773c-41e7-40ea-8382-2e3ce2667f4c
 ---
 # Compiler Error C3736
 
-'event': must be a method or, in the case of managed events, optionally a data member
+> 'event': must be a method or, in the case of managed events, optionally a data member
 
 Native and COM events must be methods. .NET events can also be data members.
 

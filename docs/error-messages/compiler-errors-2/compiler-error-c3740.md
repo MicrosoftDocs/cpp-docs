@@ -8,7 +8,7 @@ ms.assetid: edb17a90-2307-4df6-943d-580460d26d2b
 ---
 # Compiler Error C3740
 
-templates cannot source or receive events
+> templates cannot source or receive events
 
 A templated class or struct cannot contain [events](../../cpp/event-handling.md).
 

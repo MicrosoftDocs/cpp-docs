@@ -8,7 +8,7 @@ ms.assetid: c696ca38-3e00-4875-abbe-7bce0f46930e
 ---
 # Compiler Error C3721
 
-'signature': incompatible signature for event
+> 'signature': incompatible signature for event
 
 An event was declared incorrectly. For more information, see [__event](../../cpp/event.md).
 

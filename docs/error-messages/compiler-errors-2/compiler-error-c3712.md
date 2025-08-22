@@ -8,7 +8,7 @@ ms.assetid: 65b1fcaf-be89-4c55-9e40-25ec03457253
 ---
 # Compiler Error C3712
 
-'method': an event handler method must return the same type as the source 'method'
+> 'method': an event handler method must return the same type as the source 'method'
 
 You defined an event handler method that did not return the same type as the source event method. To fix this error, give the event handler method the same return type as that of the source event method.
 

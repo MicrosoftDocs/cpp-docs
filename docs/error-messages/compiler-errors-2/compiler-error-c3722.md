@@ -8,7 +8,7 @@ ms.assetid: 3cb28363-5eff-4548-bd0d-d5c615846353
 ---
 # Compiler Error C3722
 
-a generic event is not allowed
+> a generic event is not allowed
 
 The compiler only allows generic classes, structs, and functions.  For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 

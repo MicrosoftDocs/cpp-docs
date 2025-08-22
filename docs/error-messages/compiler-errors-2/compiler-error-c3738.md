@@ -8,7 +8,7 @@ ms.assetid: dd3ee011-e204-4264-bf3a-da32c4ef7038
 ---
 # Compiler Error C3738
 
-'calling_convention': the calling convention of the explicit instantiation must match that of the template being instantiated
+> 'calling_convention': the calling convention of the explicit instantiation must match that of the template being instantiated
 
 It is recommended that you do not specify a calling convention on an explicit instantiation. If you must, though, the calling conventions must match.
 

@@ -8,7 +8,7 @@ ms.assetid: cab8aba7-14fc-406f-8cc6-32744c8f31c1
 ---
 # Compiler Error C3724
 
-must #include \<windows.h> to use multi-threading with events
+> must #include \<windows.h> to use multi-threading with events
 
 The windows.h file is required if you use multi-threading with events. To fix this error, add `#include <windows.h>` to the top of the file in which event sources and event receivers are defined.
 
