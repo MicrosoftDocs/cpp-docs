@@ -11,7 +11,7 @@ helpviewer_keywords: ["C2190"]
 
 ## Remarks
 
-A C function was declared a second time with a shorter parameter list. C does not support overloaded functions.
+A C function was declared a second time with a shorter parameter list. C does not support overloaded functions. Without [`/Za`](../../build/reference/za-ze-disable-language-extensions.md), the compiler emits [Compiler Warning (level 1) C4030](../compiler-warnings/compiler-warning-level-1-c4030.md) instead.
 
 ## Example
 
