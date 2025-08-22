@@ -16,7 +16,7 @@ A nested class cannot have the same name as the immediately enclosing class.
 
 ## Example
 
-The following sample generates C3769.
+The following example generates C3769.
 
 ```cpp
 // C3769.cpp

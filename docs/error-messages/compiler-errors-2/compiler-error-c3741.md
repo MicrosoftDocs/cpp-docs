@@ -16,7 +16,7 @@ When `layout_dependent=true` for an [event_receiver](../../windows/attributes/ev
 
 ## Example
 
-The following sample generates C3741
+The following example generates C3741
 
 ```cpp
 // C3741.cpp

@@ -16,7 +16,7 @@ The [__event](../../cpp/event.md) keyword cannot appear inside an interface.
 
 ## Example
 
-The following sample generates C3748:
+The following example generates C3748:
 
 ```cpp
 // C3748.cpp

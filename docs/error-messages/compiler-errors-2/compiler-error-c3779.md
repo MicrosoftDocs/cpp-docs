@@ -17,7 +17,7 @@ This error can occur when you call a forward-declared member function that has a
 
 ## Example
 
-The following C++/WinRT sample generates C3779:
+The following C++/WinRT example generates C3779:
 
 ```cpp
 // C3779.cpp

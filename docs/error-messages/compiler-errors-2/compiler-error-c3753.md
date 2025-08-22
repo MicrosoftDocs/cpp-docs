@@ -18,7 +18,7 @@ For more information, see [Generics](../../extensions/generics-cpp-component-ext
 
 ## Example
 
-The following sample generates C3753.
+The following example generates C3753.
 
 ```cpp
 // C3753.cpp

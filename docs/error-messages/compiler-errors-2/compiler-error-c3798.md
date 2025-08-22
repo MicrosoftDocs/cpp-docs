@@ -22,7 +22,7 @@ A property was declared incorrectly. For more information, see
 
 ## Example
 
-The following sample generates C3798
+The following example generates C3798
 
 ```cpp
 // C3798.cpp

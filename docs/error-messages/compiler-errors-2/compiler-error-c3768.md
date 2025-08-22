@@ -18,7 +18,7 @@ When compiling with **/clr:pure**, you cannot take the address of a virtual `var
 
 ## Example
 
-The following sample generates C3768:
+The following example generates C3768:
 
 ```cpp
 // C3768.cpp

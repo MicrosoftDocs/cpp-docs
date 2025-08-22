@@ -16,7 +16,7 @@ If a class is marked with the [event_receiver](../../windows/attributes/event-re
 
 ## Example
 
-The following sample generates C3765:
+The following example generates C3765:
 
 ```cpp
 // C3765.cpp

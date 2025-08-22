@@ -18,7 +18,7 @@ For more information, see [event](../../extensions/event-cpp-component-extension
 
 ## Example
 
-The following sample generates C3797.
+The following example generates C3797.
 
 ```cpp
 // C3797.cpp

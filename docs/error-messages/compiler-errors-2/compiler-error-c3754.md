@@ -16,7 +16,7 @@ A call was made to a function through a pointer to a type that does not contain 
 
 ## Example
 
-The following sample generates C3754:
+The following example generates C3754:
 
 ```cpp
 // C3754a.cpp

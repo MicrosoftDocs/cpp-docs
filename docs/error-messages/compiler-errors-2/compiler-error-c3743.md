@@ -16,7 +16,7 @@ The [__unhook](../../cpp/unhook.md) function varies in the number of parameters 
 
 ## Example
 
-The following sample generates C3743:
+The following example generates C3743:
 
 ```cpp
 // C3743.cpp

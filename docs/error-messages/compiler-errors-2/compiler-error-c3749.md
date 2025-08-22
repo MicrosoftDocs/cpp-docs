@@ -16,7 +16,7 @@ A custom attribute cannot be used inside a function. For more information on cus
 
 ## Example
 
-The following sample generates C3749:
+The following example generates C3749:
 
 ```cpp
 // C3749a.cpp

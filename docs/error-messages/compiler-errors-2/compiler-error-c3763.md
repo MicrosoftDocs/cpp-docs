@@ -16,7 +16,7 @@ The [out](../../windows/attributes/out-cpp.md) or [retval](../../windows/attribu
 
 ## Example
 
-The following sample generates C3763:
+The following example generates C3763:
 
 ```cpp
 // C3763.cpp

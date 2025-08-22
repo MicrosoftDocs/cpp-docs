@@ -16,7 +16,7 @@ The [retval](../../windows/attributes/retval.md) attribute was used on a functio
 
 ## Example
 
-The following sample generates C3761:
+The following example generates C3761:
 
 ```cpp
 // C3761.cpp

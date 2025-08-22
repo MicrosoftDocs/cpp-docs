@@ -18,7 +18,7 @@ C3767 may also be caused by a breaking change: native types are now private by d
 
 ## Examples
 
-The following sample generates C3767:
+The following example generates C3767:
 
 ```cpp
 // C3767a.cpp
@@ -49,7 +49,7 @@ int main() {
 };
 ```
 
-The following sample generates C3767:
+The following example generates C3767:
 
 ```cpp
 // C3767c.cpp

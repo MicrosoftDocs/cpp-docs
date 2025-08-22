@@ -16,7 +16,7 @@ A [delegate  (C++ Component Extensions)](../../extensions/delegate-cpp-component
 
 ## Examples
 
-The following sample generates C3755.
+The following example generates C3755.
 
 ```cpp
 // C3755.cpp
@@ -24,7 +24,7 @@ The following sample generates C3755.
 delegate void MyDel() {};   // C3755
 ```
 
-C3755 can also occur if you attempt to create a delegate template. The following sample generates C3755.
+C3755 can also occur if you attempt to create a delegate template. The following example generates C3755.
 
 ```cpp
 // C3755_b.cpp

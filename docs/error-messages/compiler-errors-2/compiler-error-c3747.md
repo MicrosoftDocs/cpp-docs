@@ -16,7 +16,7 @@ Generic or template parameters with default values cannot be followed in the par
 
 ## Example
 
-The following sample generates C3747:
+The following example generates C3747:
 
 ```cpp
 // C3747.cpp
