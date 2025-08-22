@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2243"
 title: "Compiler Error C2243"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2243"
+ms.date: 11/04/2016
 f1_keywords: ["C2243"]
 helpviewer_keywords: ["C2243"]
-ms.assetid: b90065bb-d251-4ba9-8b4c-280ee13fa9c0
 ---
 # Compiler Error C2243
 
-'conversion type' conversion from 'type1' to 'type2' exists, but is inaccessible
+> 'conversion type' conversion from 'type1' to 'type2' exists, but is inaccessible
+
+## Remarks
 
 Access protection (**`protected`** or **`private`**) prevented conversion from a pointer to a derived class to a pointer to the base class.
 
-The following sample generates C2243:
+## Example
+
+The following example generates C2243:
 
 ```cpp
 // C2243.cpp

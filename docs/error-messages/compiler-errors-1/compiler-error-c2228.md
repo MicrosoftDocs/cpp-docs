@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2228"
 title: "Compiler Error C2228"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2228"
+ms.date: 11/04/2016
 f1_keywords: ["C2228"]
 helpviewer_keywords: ["C2228"]
-ms.assetid: 901cadb1-ce90-4ae0-a360-547a9ba2ca18
 ---
 # Compiler Error C2228
 
-left of '.identifier' must have class/struct/union
+> left of '.identifier' must have class/struct/union
+
+## Remarks
 
 The operand to the left of the period (.) is not a class, structure, or union.
 
-The following sample generates C2228:
+## Example
+
+The following example generates C2228:
 
 ```cpp
 // C2228.cpp
