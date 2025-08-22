@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2182"]
 ---
 # Compiler Error C2182
 
-> 'identifier' : illegal use of type 'void'
+> '*identifier*': this use of 'void' is not valid
 
 ## Remarks
 

@@ -97,7 +97,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2179](compiler-error-c2179.md)|'*type*': an attribute argument cannot use type parameters|
 |[Compiler error C2180](compiler-error-c2180.md)|controlling expression has type '*type*'|
 |[Compiler error C2181](compiler-error-c2181.md)|illegal else without matching if|
-|[Compiler error C2182](compiler-error-c2182.md)|'*identifier*': illegal use of type 'void'|
+|[Compiler error C2182](compiler-error-c2182.md)|'*identifier*': this use of 'void' is not valid|
 |[Compiler error C2183](compiler-error-c2183.md)|syntax error: translation unit is empty|
 |[Compiler error C2184](compiler-error-c2184.md)|'*type*': illegal type for __except expression|
 |[Compiler error C2185](compiler-error-c2185.md)|'*identifier*': illegal based allocation|
