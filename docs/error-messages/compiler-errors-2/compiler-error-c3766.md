@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3766"
 title: "Compiler Error C3766"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3766"
+ms.date: 11/04/2016
 f1_keywords: ["C3766"]
 helpviewer_keywords: ["C3766"]
-ms.assetid: b5af2089-2e1e-4e45-a41d-495b6c55656e
 ---
 # Compiler Error C3766
 

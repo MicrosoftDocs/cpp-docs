@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3743"
 title: "Compiler Error C3743"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3743"
+ms.date: 11/04/2016
 f1_keywords: ["C3743"]
 helpviewer_keywords: ["C3743"]
-ms.assetid: 7ca9a76e-7b60-46d1-ab8b-18600cf1a306
 ---
 # Compiler Error C3743
 

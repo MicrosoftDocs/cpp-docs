@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3763"
 title: "Compiler Error C3763"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3763"
+ms.date: 11/04/2016
 f1_keywords: ["C3763"]
 helpviewer_keywords: ["C3763"]
-ms.assetid: 58b1f079-cd1d-46e0-9431-ea18210106b7
 ---
 # Compiler Error C3763
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C3779"
 title: "Compiler Error C3779"
+description: "Learn more about: Compiler Error C3779"
 ms.date: 05/19/2021
 f1_keywords: ["C3779"]
 helpviewer_keywords: ["C3779"]

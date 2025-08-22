@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3745"
 title: "Compiler Error C3745"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3745"
+ms.date: 11/04/2016
 f1_keywords: ["C3745"]
 helpviewer_keywords: ["C3745"]
-ms.assetid: 1e64aec5-7e53-47e5-bc7d-3905230cfc66
 ---
 # Compiler Error C3745
 

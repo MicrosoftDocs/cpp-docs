@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3800"
 title: "Compiler Error C3800"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3800"
+ms.date: 11/04/2016
 f1_keywords: ["C3800"]
 helpviewer_keywords: ["C3800"]
-ms.assetid: c653240a-b6db-4437-8d65-fa58f0e6fcf4
 ---
 # Compiler Error C3800
 

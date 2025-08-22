@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3741"
 title: "Compiler Error C3741"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3741"
+ms.date: 11/04/2016
 f1_keywords: ["C3741"]
 helpviewer_keywords: ["C3741"]
-ms.assetid: ed311315-cc32-49c9-97fa-01b293d81526
 ---
 # Compiler Error C3741
 

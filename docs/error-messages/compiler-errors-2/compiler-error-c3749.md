@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3749"
 title: "Compiler Error C3749"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3749"
+ms.date: 11/04/2016
 f1_keywords: ["C3749"]
 helpviewer_keywords: ["C3749"]
-ms.assetid: 3d26b468-4757-41b8-b5a2-78022a5295fb
 ---
 # Compiler Error C3749
 

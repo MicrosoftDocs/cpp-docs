@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3755"
 title: "Compiler Error C3755"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3755"
+ms.date: 11/04/2016
 f1_keywords: ["C3755"]
 helpviewer_keywords: ["C3755"]
-ms.assetid: 9317b55e-a52e-4b87-b915-5a208d6eda38
 ---
 # Compiler Error C3755
 

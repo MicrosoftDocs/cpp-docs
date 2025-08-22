@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3765"
 title: "Compiler Error C3765"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3765"
+ms.date: 11/04/2016
 f1_keywords: ["C3765"]
 helpviewer_keywords: ["C3765"]
-ms.assetid: feadee7a-fcfb-402c-af2f-0e656f814a13
 ---
 # Compiler Error C3765
 

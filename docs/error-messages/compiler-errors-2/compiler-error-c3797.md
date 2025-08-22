@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3797"
 title: "Compiler Error C3797"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3797"
+ms.date: 11/04/2016
 f1_keywords: ["C3797"]
 helpviewer_keywords: ["C3797"]
-ms.assetid: ab27ff34-8c1d-4297-b004-9e39bd3a4f25
 ---
 # Compiler Error C3797
 
