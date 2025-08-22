@@ -16,7 +16,7 @@ You defined a method in the event source that did not return void or an integral
 
 ## Example
 
-The following sample generates C3711:
+The following example generates C3711:
 
 ```cpp
 // C3711.cpp

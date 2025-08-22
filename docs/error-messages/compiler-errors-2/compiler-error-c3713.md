@@ -16,7 +16,7 @@ You defined an event handler method that did not use the same parameters as the 
 
 ## Example
 
-The following sample generates C3713:
+The following example generates C3713:
 
 ```cpp
 // C3713.cpp

@@ -15,7 +15,7 @@ The wrong syntax was used for a COM event. To fix this error, change the event t
 
 ## Example
 
-The following sample generates C3733:
+The following example generates C3733:
 
 ```cpp
 #define _ATL_ATTRIBUTES 1

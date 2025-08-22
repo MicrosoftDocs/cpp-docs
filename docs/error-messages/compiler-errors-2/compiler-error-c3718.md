@@ -16,7 +16,7 @@ The event can only be called from the receiving class.
 
 ## Example
 
-The following sample generates C3718:
+The following example generates C3718:
 
 ```cpp
 // C3718.cpp

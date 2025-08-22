@@ -16,7 +16,7 @@ The event source and event receiver must have the same type (for example `native
 
 ## Example
 
-The following sample generates C3731:
+The following example generates C3731:
 
 ```cpp
 // C3731.cpp

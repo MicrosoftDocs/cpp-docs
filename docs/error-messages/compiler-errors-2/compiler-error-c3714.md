@@ -16,7 +16,7 @@ You defined an event handler method that did not use the same calling convention
 
 ## Example
 
-The following sample generates C3714:
+The following example generates C3714:
 
 ```cpp
 // C3714.cpp

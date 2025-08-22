@@ -16,7 +16,7 @@ The compiler only allows generic classes, structs, and functions.  For more info
 
 ## Example
 
-The following sample generates C3722:
+The following example generates C3722:
 
 ```cpp
 // C3722.cpp

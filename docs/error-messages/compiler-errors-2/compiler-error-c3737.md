@@ -16,7 +16,7 @@ You cannot specify the [calling convention](../../cpp/calling-conventions.md) fo
 
 ## Example
 
-The following sample generates C3737:
+The following example generates C3737:
 
 ```cpp
 // C3737a.cpp

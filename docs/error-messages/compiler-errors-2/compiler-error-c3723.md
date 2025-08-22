@@ -16,7 +16,7 @@ ms.assetid: ef0fb1ff-3f9a-4093-a6b6-894d1ab0c4b9
 
 ## Examples
 
-The following sample generates C3723:
+The following example generates C3723:
 
 ```cpp
 // C3723.cpp
@@ -41,7 +41,7 @@ int main() {
 
 **`__hook`** and **`__unhook`** are not compatible with **`/clr`** programming.  Use the += and -= operators instead.
 
-The following sample generates C3723:
+The following example generates C3723:
 
 ```cpp
 // C3723b.cpp

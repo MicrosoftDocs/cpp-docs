@@ -16,7 +16,7 @@ You declared an interface in a non-COM context.
 
 ## Example
 
-The following sample generates C3719:
+The following example generates C3719:
 
 ```cpp
 // C3719a.cpp

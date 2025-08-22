@@ -16,7 +16,7 @@ You tried to hook an entire interface of events but `layout_dependent` on [event
 
 ## Example
 
-The following sample generates C3739:
+The following example generates C3739:
 
 ```cpp
 // C3739.cpp

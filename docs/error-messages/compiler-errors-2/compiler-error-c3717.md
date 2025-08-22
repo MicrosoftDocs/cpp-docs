@@ -16,7 +16,7 @@ You declared an event method that includes an implementation. An [__event](../..
 
 ## Example
 
-The following sample generates C3717:
+The following example generates C3717:
 
 ```cpp
 // C3717.cpp

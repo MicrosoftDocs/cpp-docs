@@ -16,7 +16,7 @@ It is recommended that you do not specify a calling convention on an explicit in
 
 ## Example
 
-The following sample generates C3738.
+The following example generates C3738.
 
 ```cpp
 // C3738.cpp

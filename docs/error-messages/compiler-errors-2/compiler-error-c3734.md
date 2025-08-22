@@ -16,7 +16,7 @@ The [coclass](../../windows/attributes/coclass.md) attribute cannot be used with
 
 ## Example
 
-The following sample generates C3734 and shows how to fix it:
+The following example generates C3734 and shows how to fix it:
 
 ```cpp
 // C3734.cpp

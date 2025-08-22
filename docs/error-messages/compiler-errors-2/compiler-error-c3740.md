@@ -16,7 +16,7 @@ A templated class or struct cannot contain [events](../../cpp/event-handling.md)
 
 ## Example
 
-The following sample generates C3740:
+The following example generates C3740:
 
 ```cpp
 // C3740.cpp
