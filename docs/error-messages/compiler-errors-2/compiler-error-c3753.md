@@ -8,7 +8,7 @@ ms.assetid: a5b99e28-796c-4107-a673-97c2ae3bb2b9
 ---
 # Compiler Error C3753
 
-a generic property is not allowed
+> a generic property is not allowed
 
 Generic parameter lists can only appear on managed classes, structs, or functions.
 

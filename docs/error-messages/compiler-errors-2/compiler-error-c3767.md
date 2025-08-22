@@ -8,7 +8,7 @@ ms.assetid: 5247cdcd-639c-4527-bd37-37e74c4e8fab
 ---
 # Compiler Error C3767
 
-'function' candidate function(s) not accessible
+> 'function' candidate function(s) not accessible
 
 A friend function defined in a class is not supposed to be treated as if it were defined and declared in the global namespace scope. It can, however, be found by argument-dependent lookup.
 

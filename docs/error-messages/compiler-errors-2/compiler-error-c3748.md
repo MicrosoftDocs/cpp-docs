@@ -8,7 +8,7 @@ ms.assetid: 6fe71a0a-dd93-4ce6-9729-b9616360cf34
 ---
 # Compiler Error C3748
 
-'interface': managed interfaces may not fire events
+> 'interface': managed interfaces may not fire events
 
 The [__event](../../cpp/event.md) keyword cannot appear inside an interface.
 

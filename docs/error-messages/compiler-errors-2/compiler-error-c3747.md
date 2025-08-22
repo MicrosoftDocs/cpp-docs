@@ -8,7 +8,7 @@ ms.assetid: a9a4be67-5d9c-4dcc-9ae9-baae46cbecde
 ---
 # Compiler Error C3747
 
-missing default type parameter : parameter param
+> missing default type parameter : parameter param
 
 Generic or template parameters with default values cannot be followed in the parameter list by parameters that do not have default values.
 

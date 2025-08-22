@@ -7,7 +7,7 @@ helpviewer_keywords: ["C3771"]
 ---
 # Compiler Error C3771
 
-"identifier" : friend declaration cannot be found in the nearest namespace scope
+> "identifier" : friend declaration cannot be found in the nearest namespace scope
 
 The class template declaration for the specified template *identifier* cannot be found within the current namespace.
 

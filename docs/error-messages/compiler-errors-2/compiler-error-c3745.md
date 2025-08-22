@@ -8,7 +8,7 @@ ms.assetid: 1e64aec5-7e53-47e5-bc7d-3905230cfc66
 ---
 # Compiler Error C3745
 
-'function': only an event can be 'raised'
+> 'function': only an event can be 'raised'
 
 Only a function defined with the [__event](../../cpp/event.md) keyword can be passed to the [__raise](../../cpp/raise.md) keyword.
 

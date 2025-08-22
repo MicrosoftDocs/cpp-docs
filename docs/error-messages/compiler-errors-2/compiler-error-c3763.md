@@ -8,7 +8,7 @@ ms.assetid: 58b1f079-cd1d-46e0-9431-ea18210106b7
 ---
 # Compiler Error C3763
 
-'type': 'retval' and 'out' can only appear on a data-pointer type
+> 'type': 'retval' and 'out' can only appear on a data-pointer type
 
 The [out](../../windows/attributes/out-cpp.md) or [retval](../../windows/attributes/retval.md) attributes can only appear on parameters of type pointer. Either remove the attribute or make the parameter of type pointer.
 

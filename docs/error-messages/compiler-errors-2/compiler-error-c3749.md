@@ -8,7 +8,7 @@ ms.assetid: 3d26b468-4757-41b8-b5a2-78022a5295fb
 ---
 # Compiler Error C3749
 
-'attribute': a custom attribute may not be used inside a function
+> 'attribute': a custom attribute may not be used inside a function
 
 A custom attribute cannot be used inside a function. For more information on custom attributes, see the topic [attribute](../../windows/attributes/attribute.md).
 
