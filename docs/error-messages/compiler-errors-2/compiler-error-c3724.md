@@ -15,6 +15,8 @@ The windows.h file is required if you use multi-threading with events. To fix th
 
 ## Example
 
+The following example generates C3724:
+
 ```cpp
 // C3724.cpp
 // uncomment the following line to resolve
