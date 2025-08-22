@@ -14,22 +14,3 @@ helpviewer_keywords: ["C2274"]
 A type appears as the right operand of a member-access (.) operator.
 
 This error can be caused by trying to access a user-defined type conversion. Use the keyword **`operator`** between the period and `type`.
-
-## Example
-
-The following example generates C2286:
-
-```cpp
-// C2274.cpp
-struct MyClass {
-   operator int() {
-      return 0;
-   }
-};
-
-int main() {
-   MyClass ClassName;
-   int i = ClassName.int();   // C2274
-   int j = ClassName.operator int();   // OK
-}
-```
