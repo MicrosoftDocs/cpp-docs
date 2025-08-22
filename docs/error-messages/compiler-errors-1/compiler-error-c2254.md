@@ -7,11 +7,15 @@ helpviewer_keywords: ["C2254"]
 ---
 # Compiler Error C2254
 
-'function' : pure specifier or abstract override specifier not allowed on friend function
+> 'function' : pure specifier or abstract override specifier not allowed on friend function
+
+## Remarks
 
 A **`friend`** function is specified as pure **`virtual`**.
 
-The following sample generates C2254:
+## Example
+
+The following example generates C2254:
 
 ```cpp
 // C2254.cpp
