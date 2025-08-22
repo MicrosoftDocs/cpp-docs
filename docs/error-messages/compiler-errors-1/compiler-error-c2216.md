@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2216"
 title: "Compiler Error C2216"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2216"
+ms.date: 11/04/2016
 f1_keywords: ["C2216"]
 helpviewer_keywords: ["C2216"]
-ms.assetid: 250f6bdc-a5e1-495f-a1e8-6e8e7021ad9d
 ---
 # Compiler Error C2216
 
-'keyword1' cannot be used with ' keyword2'
+> 'keyword1' cannot be used with ' keyword2'
+
+## Remarks
 
 Two keywords that are mutually exclusive were used together.
 
 ## Examples
 
-The following sample generates C2216.
+The following example generates C2216.
 
 ```cpp
 // C2216.cpp
@@ -25,7 +26,7 @@ ref struct Y1 {
 };
 ```
 
-The following sample generates C2216.
+The following example generates C2216.
 
 ```cpp
 // C2216b.cpp
@@ -36,7 +37,7 @@ public ref class X {
 };
 ```
 
-The following sample generates C2216.
+The following example generates C2216.
 
 ```cpp
 // C2216c.cpp
