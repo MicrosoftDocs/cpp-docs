@@ -20,7 +20,9 @@ The following example generates C2191:
 ```c
 // C2191.c
 // compile with: /Za /c
-void func( int );
-void func( int, float );   // C2191 different parameter list
-void func2( int, float );   // OK
+
+void func1(int);
+void func1(int, float);   // C2191, longer parameter list
+
+void func2(int, float);   // OK
 ```

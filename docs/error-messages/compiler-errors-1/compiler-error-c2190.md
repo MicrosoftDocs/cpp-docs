@@ -20,7 +20,9 @@ The following example generates C2190:
 ```c
 // C2190.c
 // compile with: /Za /c
-void func( int, float );
-void func( int  );   // C2190, different parameter list
-void func2( int  );   // OK
+
+void func1(int, float);
+void func1(int);   // C2190, shorter parameter list
+
+void func2(int);   // OK
 ```
