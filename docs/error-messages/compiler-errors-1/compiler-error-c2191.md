@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2191"
 description: "Learn more about: Compiler Error C2191"
-ms.date: 11/04/2016
+ms.date: 08/22/2025
 f1_keywords: ["C2191"]
 helpviewer_keywords: ["C2191"]
 ---

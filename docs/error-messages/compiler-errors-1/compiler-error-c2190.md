@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2190"
 description: "Learn more about: Compiler Error C2190"
-ms.date: 11/04/2016
+ms.date: 08/22/2025
 f1_keywords: ["C2190"]
 helpviewer_keywords: ["C2190"]
 ---
