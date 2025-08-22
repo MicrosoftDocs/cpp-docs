@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3642"
 title: "Compiler Error C3642"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3642"
+ms.date: 11/04/2016
 f1_keywords: ["C3642"]
 helpviewer_keywords: ["C3642"]
-ms.assetid: 429790c2-9614-4d85-b31c-687c8d8f83ff
 ---
 # Compiler Error C3642
 
-'return_type/args' : cannot call a function with __clrcall calling convention from native code
+> 'return_type/args' : cannot call a function with __clrcall calling convention from native code
+
+## Remarks
 
 A function that is marked with the [__clrcall](../../cpp/clrcall.md) calling convention cannot be called from native (unmanaged) code.
 
@@ -16,7 +17,9 @@ A function that is marked with the [__clrcall](../../cpp/clrcall.md) calling con
 
 To call a managed function from a native context, you can add a "wrapper" function that will call the `__clrcall` function. Or, you can use the CLR marshalling mechanism; see [How to: Marshal Function Pointers Using PInvoke](../../dotnet/how-to-marshal-function-pointers-using-pinvoke.md) for more information.
 
-The following sample generates C3642:
+## Example
+
+The following example generates C3642:
 
 ```cpp
 // C3642.cpp

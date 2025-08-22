@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3654"
 title: "Compiler Error C3654"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3654"
+ms.date: 11/04/2016
 f1_keywords: ["C3654"]
 helpviewer_keywords: ["C3654"]
-ms.assetid: 57d96e3f-6bbb-4eaa-934b-26c23b4ceb2e
 ---
 # Compiler Error C3654
 
-'text' : syntax error in explicit override
+> 'text' : syntax error in explicit override
+
+## Remarks
 
 An unexpected string was in an explicit override. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
-The following sample generates C3654:
+## Example
+
+The following example generates C3654:
 
 ```cpp
 // C3654.cpp

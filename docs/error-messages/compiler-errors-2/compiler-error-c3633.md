@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3633"
 title: "Compiler Error C3633"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3633"
+ms.date: 11/04/2016
 f1_keywords: ["C3633"]
 helpviewer_keywords: ["C3633"]
-ms.assetid: 7d65babf-2191-4d67-a69f-f5c4c2ddf946
 ---
 # Compiler Error C3633
 
-cannot define 'member' as a member of managed 'type'
+> cannot define 'member' as a member of managed 'type'
+
+## Remarks
 
 CLR reference class data members cannot be of a non-POD C++ type.  You can only instantiate a POD native type in a CLR type.  For example, a POD type cannot contain a copy constructor or an assignment operator.
 
 ## Example
 
-The following sample generates C3633.
+The following example generates C3633.
 
 ```cpp
 // C3633.cpp
