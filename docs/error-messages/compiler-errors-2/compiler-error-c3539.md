@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3539"
 title: "Compiler Error C3539"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3539"
+ms.date: 11/04/2016
 f1_keywords: ["C3539"]
 helpviewer_keywords: ["C3539"]
-ms.assetid: 34a33a0f-d1b6-498f-b312-ffad2d4799b3
 ---
 # Compiler Error C3539
 
-'type': a template-argument cannot be a type that contains 'auto'
+> 'type': a template-argument cannot be a type that contains 'auto'
+
+## Remarks
 
 The indicated template argument type cannot contain a usage of the **`auto`** keyword.
 

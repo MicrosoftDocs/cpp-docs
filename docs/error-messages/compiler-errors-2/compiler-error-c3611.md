@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3611"
 title: "Compiler Error C3611"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3611"
+ms.date: 11/04/2016
 f1_keywords: ["C3611"]
 helpviewer_keywords: ["C3611"]
-ms.assetid: 42f3e320-41de-420a-bd05-8924cab765aa
 ---
 # Compiler Error C3611
 
-'function': a sealed function cannot have a pure-specifier
+> 'function': a sealed function cannot have a pure-specifier
+
+## Remarks
 
 A sealed function was declared incorrectly.  For more information, see [sealed](../../extensions/sealed-cpp-component-extensions.md).
 
 ## Example
 
-The following sample generates C3611.
+The following example generates C3611.
 
 ```cpp
 // C3611.cpp
