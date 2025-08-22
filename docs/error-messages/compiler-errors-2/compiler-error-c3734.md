@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3734"
 title: "Compiler Error C3734"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3734"
+ms.date: 11/04/2016
 f1_keywords: ["C3734"]
 helpviewer_keywords: ["C3734"]
-ms.assetid: 4e2afdcc-7da9-45a1-9c96-85f25e2986e8
 ---
 # Compiler Error C3734
 

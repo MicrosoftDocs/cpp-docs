@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3719"
 title: "Compiler Error C3719"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3719"
+ms.date: 11/04/2016
 f1_keywords: ["C3719"]
 helpviewer_keywords: ["C3719"]
-ms.assetid: d0d59d4e-babb-4480-9ef7-70cf1a28165c
 ---
 # Compiler Error C3719
 

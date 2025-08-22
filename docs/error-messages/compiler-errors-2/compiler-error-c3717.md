@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3717"
 title: "Compiler Error C3717"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3717"
+ms.date: 11/04/2016
 f1_keywords: ["C3717"]
 helpviewer_keywords: ["C3717"]
-ms.assetid: ae4fceb1-2583-4577-b2f1-40971a017055
 ---
 # Compiler Error C3717
 

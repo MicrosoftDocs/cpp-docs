@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3731"
 title: "Compiler Error C3731"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3731"
+ms.date: 11/04/2016
 f1_keywords: ["C3731"]
 helpviewer_keywords: ["C3731"]
-ms.assetid: 45f89fcd-464c-4bc8-8a42-edcb5416d26c
 ---
 # Compiler Error C3731
 

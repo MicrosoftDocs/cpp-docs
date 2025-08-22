@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3737"
 title: "Compiler Error C3737"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3737"
+ms.date: 11/04/2016
 f1_keywords: ["C3737"]
 helpviewer_keywords: ["C3737"]
-ms.assetid: ca2aeb23-2491-4ccb-8838-884abf7065c8
 ---
 # Compiler Error C3737
 

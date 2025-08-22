@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3728"
 title: "Compiler Error C3728"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3728"
+ms.date: 11/04/2016
 f1_keywords: ["C3728"]
 helpviewer_keywords: ["C3728"]
-ms.assetid: 6b510cb1-887f-4fcd-9a1f-3bb720417ed1
 ---
 # Compiler Error C3728
 

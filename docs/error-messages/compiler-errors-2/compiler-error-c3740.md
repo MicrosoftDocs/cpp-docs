@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3740"
 title: "Compiler Error C3740"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3740"
+ms.date: 11/04/2016
 f1_keywords: ["C3740"]
 helpviewer_keywords: ["C3740"]
-ms.assetid: edb17a90-2307-4df6-943d-580460d26d2b
 ---
 # Compiler Error C3740
 

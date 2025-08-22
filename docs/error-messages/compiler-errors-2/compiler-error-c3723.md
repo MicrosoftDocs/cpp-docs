@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3723"
 title: "Compiler Error C3723"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3723"
+ms.date: 11/04/2016
 f1_keywords: ["C3723"]
 helpviewer_keywords: ["C3723"]
-ms.assetid: ef0fb1ff-3f9a-4093-a6b6-894d1ab0c4b9
 ---
 # Compiler Error C3723
 

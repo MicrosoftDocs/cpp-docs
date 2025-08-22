@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3712"
 title: "Compiler Error C3712"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3712"
+ms.date: 11/04/2016
 f1_keywords: ["C3712"]
 helpviewer_keywords: ["C3712"]
-ms.assetid: 65b1fcaf-be89-4c55-9e40-25ec03457253
 ---
 # Compiler Error C3712
 

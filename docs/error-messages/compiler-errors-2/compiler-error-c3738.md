@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3738"
 title: "Compiler Error C3738"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3738"
+ms.date: 11/04/2016
 f1_keywords: ["C3738"]
 helpviewer_keywords: ["C3738"]
-ms.assetid: dd3ee011-e204-4264-bf3a-da32c4ef7038
 ---
 # Compiler Error C3738
 

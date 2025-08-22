@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3714"
 title: "Compiler Error C3714"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3714"
+ms.date: 11/04/2016
 f1_keywords: ["C3714"]
 helpviewer_keywords: ["C3714"]
-ms.assetid: 17718f75-5a37-4e42-912b-487e91008a95
 ---
 # Compiler Error C3714
 

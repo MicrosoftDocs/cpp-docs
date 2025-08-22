@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3736"
 title: "Compiler Error C3736"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3736"
+ms.date: 11/04/2016
 f1_keywords: ["C3736"]
 helpviewer_keywords: ["C3736"]
-ms.assetid: 579b773c-41e7-40ea-8382-2e3ce2667f4c
 ---
 # Compiler Error C3736
 

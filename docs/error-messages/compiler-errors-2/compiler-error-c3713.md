@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3713"
 title: "Compiler Error C3713"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3713"
+ms.date: 11/04/2016
 f1_keywords: ["C3713"]
 helpviewer_keywords: ["C3713"]
-ms.assetid: 75c6b9b6-955b-49bd-9bc8-ced88b496a1f
 ---
 # Compiler Error C3713
 

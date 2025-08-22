@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3739"
 title: "Compiler Error C3739"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3739"
+ms.date: 11/04/2016
 f1_keywords: ["C3739"]
 helpviewer_keywords: ["C3739"]
-ms.assetid: acffe894-08b8-4bf2-9249-9501e6e2bad3
 ---
 # Compiler Error C3739
 

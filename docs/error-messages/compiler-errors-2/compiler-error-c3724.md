@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3724"
 title: "Compiler Error C3724"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3724"
+ms.date: 11/04/2016
 f1_keywords: ["C3724"]
 helpviewer_keywords: ["C3724"]
-ms.assetid: cab8aba7-14fc-406f-8cc6-32744c8f31c1
 ---
 # Compiler Error C3724
 
