@@ -11,7 +11,7 @@ helpviewer_keywords: ["C2182"]
 
 ## Remarks
 
-A variable is declared type **`void`**.
+You can't create a variable or array of type **`void`**. Only pointers to **`void`** are allowed.
 
 ## Example
 
