@@ -10,7 +10,11 @@ ms.assetid: 2d55a7e1-9c39-4379-a093-2f7beb27e2ca
 
 > 'interface': a custom interface that fires COM events cannot inherit from IDispatch
 
+## Remarks
+
 An interface that supports COM events cannot inherit from `IDispatch`. For more information, see [Event Handling in COM](../../cpp/event-handling-in-com.md).
+
+## Example
 
 The following error generates C3732:
 

@@ -10,7 +10,11 @@ ms.assetid: d0d59d4e-babb-4480-9ef7-70cf1a28165c
 
 > 'interface': an interface based event source can only be used for COM events
 
+## Remarks
+
 You declared an interface in a non-COM context.
+
+## Example
 
 The following sample generates C3719:
 

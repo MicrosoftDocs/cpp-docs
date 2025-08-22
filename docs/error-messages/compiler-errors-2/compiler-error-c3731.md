@@ -10,7 +10,11 @@ ms.assetid: 45f89fcd-464c-4bc8-8a42-edcb5416d26c
 
 > incompatible event 'function1' and handler 'function2'; event source and event handler must be the same type
 
+## Remarks
+
 The event source and event receiver must have the same type (for example `native` vs. `com` types). To fix this error, make the types of the event source and the event handler match.
+
+## Example
 
 The following sample generates C3731:
 

@@ -10,7 +10,11 @@ ms.assetid: 3cb28363-5eff-4548-bd0d-d5c615846353
 
 > a generic event is not allowed
 
+## Remarks
+
 The compiler only allows generic classes, structs, and functions.  For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3722:
 

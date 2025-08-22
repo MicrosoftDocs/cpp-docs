@@ -10,7 +10,11 @@ ms.assetid: ae4fceb1-2583-4577-b2f1-40971a017055
 
 > 'method': a method that fires events cannot be defined
 
+## Remarks
+
 You declared an event method that includes an implementation. An [__event](../../cpp/event.md) method declaration cannot have a definition. To fix this error, ensure that no event method declarations have definitions. For example, in the code below, remove the function body from the `event1` declaration as indicated by the comments.
+
+## Example
 
 The following sample generates C3717:
 

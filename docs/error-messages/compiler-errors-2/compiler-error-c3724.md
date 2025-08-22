@@ -10,7 +10,11 @@ ms.assetid: cab8aba7-14fc-406f-8cc6-32744c8f31c1
 
 > must #include \<windows.h> to use multi-threading with events
 
+## Remarks
+
 The windows.h file is required if you use multi-threading with events. To fix this error, add `#include <windows.h>` to the top of the file in which event sources and event receivers are defined.
+
+## Example
 
 ```cpp
 // C3724.cpp

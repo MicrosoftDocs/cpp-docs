@@ -10,7 +10,11 @@ ms.assetid: ef0fb1ff-3f9a-4093-a6b6-894d1ab0c4b9
 
 > 'function': could not resolve event
 
+## Remarks
+
 `function` could not resolve which event to call.
+
+## Examples
 
 The following sample generates C3723:
 

@@ -10,6 +10,8 @@ ms.assetid: 346b5205-c44d-49d3-b66a-96417d3d6986
 
 > can only call '*event*' in the context of a member function of the receiving class
 
+## Remarks
+
 The event can only be called from the receiving class.
 
 ## Example

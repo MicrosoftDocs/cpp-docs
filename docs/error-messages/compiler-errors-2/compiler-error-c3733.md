@@ -9,7 +9,11 @@ helpviewer_keywords: ["C3733"]
 
 > 'event': improper syntax for specifying a COM event; did you forget '__interface'?
 
+## Remarks
+
 The wrong syntax was used for a COM event. To fix this error, change the event type or correct the syntax to comply with the COM event rules.
+
+## Example
 
 The following sample generates C3733:
 

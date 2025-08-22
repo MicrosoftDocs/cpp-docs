@@ -10,7 +10,11 @@ ms.assetid: 579b773c-41e7-40ea-8382-2e3ce2667f4c
 
 > 'event': must be a method or, in the case of managed events, optionally a data member
 
+## Remarks
+
 Native and COM events must be methods. .NET events can also be data members.
+
+## Example
 
 The following sample generates C3736:
 

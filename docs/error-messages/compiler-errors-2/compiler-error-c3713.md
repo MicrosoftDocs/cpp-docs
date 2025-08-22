@@ -10,7 +10,11 @@ ms.assetid: 75c6b9b6-955b-49bd-9bc8-ced88b496a1f
 
 > 'method': an event handler method must have the same function parameters as the source 'method'
 
+## Remarks
+
 You defined an event handler method that did not use the same parameters as the source event method. To fix this error, give the event handler method the same parameters as those of the source event method.
+
+## Example
 
 The following sample generates C3713:
 

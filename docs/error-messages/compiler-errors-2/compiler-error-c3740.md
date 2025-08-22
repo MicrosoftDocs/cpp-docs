@@ -10,7 +10,11 @@ ms.assetid: edb17a90-2307-4df6-943d-580460d26d2b
 
 > templates cannot source or receive events
 
+## Remarks
+
 A templated class or struct cannot contain [events](../../cpp/event-handling.md).
+
+## Example
 
 The following sample generates C3740:
 
