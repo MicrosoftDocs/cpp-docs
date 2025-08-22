@@ -26,3 +26,7 @@ void func1(int);   // C2190, shorter parameter list
 
 void func2(int);   // OK
 ```
+
+## See also
+
+[Compiler Error C2191](compiler-error-c2191.md)

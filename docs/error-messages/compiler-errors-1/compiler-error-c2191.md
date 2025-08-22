@@ -26,3 +26,7 @@ void func1(int, float);   // C2191, longer parameter list
 
 void func2(int, float);   // OK
 ```
+
+## See also
+
+[Compiler Error C2190](compiler-error-c2190.md)
