@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /E (Preprocess to stdout)"
 title: "/E (Preprocess to stdout)"
-ms.date: "11/04/2016"
+description: "Learn more about: /E (Preprocess to stdout)"
+ms.date: 11/04/2016
 f1_keywords: ["/e"]
 helpviewer_keywords: ["-E compiler option [C++]", "/E compiler option [C++]", "preprocessor output, copy to stdout", "preprocessor output"]
-ms.assetid: ddbb1725-d950-4978-ab2f-30a5cd7b778c
 ---
 # /E (Preprocess to stdout)
 
@@ -44,7 +43,7 @@ m(int)main( )
 
 However, if you compile with:
 
-```
+```cmd
 cl -E test.cpp > test2.cpp
 ```
 
@@ -66,7 +65,7 @@ cl -E test.cpp > test2.cpp
 
 The following command line preprocesses `ADD.C`, preserves comments, adds `#line` directives, and displays the result on the standard output device:
 
-```
+```cmd
 CL /E /C ADD.C
 ```
 
