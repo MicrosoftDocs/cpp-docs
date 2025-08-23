@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C3859"
 title: "Compiler Error C3859"
+description: "Learn more about: Compiler Error C3859"
 ms.date: 02/22/2022
 f1_keywords: ["C3859"]
 helpviewer_keywords: ["C3859"]
@@ -24,6 +24,8 @@ The message has one of the following notes:
 >PCH: File map already in place\
 >PCH: Unable to get the requested block of memory\
 >Consider using /Fp to allow the compiler to reserve the memory early
+
+## Remarks
 
 There isn't enough virtual memory allocated for your [precompiled header (PCH)](../../build/creating-precompiled-header-files.md). If your precompiled header uses an explicit `#pragma hdrstop` directive, use the **`/Zm`** compiler flag to specify a larger value for the precompiled header file. Otherwise, consider reducing the number of parallel compilation processes in your build. For more information, see [`/Zm` (Specify precompiled header memory allocation limit)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).
 

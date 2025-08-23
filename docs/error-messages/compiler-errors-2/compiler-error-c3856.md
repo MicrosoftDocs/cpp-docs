@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3856"
 title: "Compiler Error C3856"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3856"
+ms.date: 11/04/2016
 f1_keywords: ["C3856"]
 helpviewer_keywords: ["C3856"]
-ms.assetid: 242d9322-c325-4f20-be58-b2be6da56d60
 ---
 # Compiler Error C3856
 
-'type': class is not a class type
+> 'type': class is not a class type
+
+## Remarks
 
 The most common cause for this error is when there are more generic or template parameter lists at the point of definition than there were at the point of declaration.
 
-The following sample generates C3856:
+## Examples
+
+The following example generates C3856:
 
 ```cpp
 // C3856.cpp
