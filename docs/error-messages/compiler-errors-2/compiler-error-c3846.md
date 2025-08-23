@@ -8,7 +8,7 @@ ms.assetid: c470f8a5-106b-4efb-b8dc-e1319e04130f
 ---
 # Compiler Error C3846
 
-'symbol' : cannot import symbol from 'assembly2': as 'symbol' has already been imported from another assembly 'assembly1'
+> 'symbol' : cannot import symbol from 'assembly2': as 'symbol' has already been imported from another assembly 'assembly1'
 
 A symbol could not be imported from a referenced assembly because it was previously imported from a referenced assembly.
 

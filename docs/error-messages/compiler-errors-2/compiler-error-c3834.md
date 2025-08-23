@@ -8,7 +8,7 @@ ms.assetid: 059e0dc4-300b-4e74-b6c2-41a57831fe2a
 ---
 # Compiler Error C3834
 
-illegal explicit cast to a pinning pointer; use a pinned local variable instead
+> illegal explicit cast to a pinning pointer; use a pinned local variable instead
 
 Explicit casts to a pinned pointer are not allowed.
 

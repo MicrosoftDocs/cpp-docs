@@ -8,7 +8,7 @@ ms.assetid: 0957faff-1e9f-439b-876b-85bd8d2c578d
 ---
 # Compiler Error C3839
 
-cannot change alignment in a managed or WinRT type
+> cannot change alignment in a managed or WinRT type
 
 Alignment of variables in managed or Windows Runtime types is controlled by the CLR or Windows Runtime and cannot be modified with [align](../../cpp/align-cpp.md).
 

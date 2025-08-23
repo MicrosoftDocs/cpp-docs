@@ -8,7 +8,7 @@ ms.assetid: 8152be53-e01e-48cd-9eef-9de38723664c
 ---
 # Compiler Error C3833
 
-'type' : invalid target type for pointer_type
+> 'type' : invalid target type for pointer_type
 
 An [interior_ptr](../../extensions/interior-ptr-cpp-cli.md) or [pin_ptr](../../extensions/pin-ptr-cpp-cli.md) was declared incorrectly.
 

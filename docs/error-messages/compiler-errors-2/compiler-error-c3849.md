@@ -8,7 +8,7 @@ ms.assetid: 5347140e-1a81-4841-98c0-b63d98264b64
 ---
 # Compiler Error C3849
 
-function-style call on an expression of type 'type' would lose const and/or volatile qualifiers for all number available operator overloads
+> function-style call on an expression of type 'type' would lose const and/or volatile qualifiers for all number available operator overloads
 
 A variable with a specified const-volatile type can only call member functions defined with same or greater const-volatile qualifications.
 

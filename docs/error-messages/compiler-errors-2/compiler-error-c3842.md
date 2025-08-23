@@ -8,7 +8,7 @@ ms.assetid: 41a1a44a-c618-40a2-8d26-7da27d14095d
 ---
 # Compiler Error C3842
 
-'function': 'const' and 'volatile' qualifiers on member functions of WinRT or managed types are not supported
+> 'function': 'const' and 'volatile' qualifiers on member functions of WinRT or managed types are not supported
 
 [const](../../cpp/const-cpp.md) and [volatile](../../cpp/volatile-cpp.md) are not supported on member functions of Windows Runtime or managed types.
 

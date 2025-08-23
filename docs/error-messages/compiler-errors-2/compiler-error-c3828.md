@@ -8,7 +8,7 @@ ms.assetid: 8d9cee75-9504-4bc8-88b6-2413618a3f45
 ---
 # Compiler Error C3828
 
-'object type': placement arguments not allowed while creating instances of managed or WinRTclasses
+> 'object type': placement arguments not allowed while creating instances of managed or WinRTclasses
 
 When creating an object of a managed type or Windows Runtime type, you cannot use the placement form of operator [ref new, gcnew](../../extensions/ref-new-gcnew-cpp-component-extensions.md) or [new](../../cpp/new-operator-cpp.md).
 

@@ -8,7 +8,7 @@ ms.assetid: c9798f88-5001-4067-9fb1-09957ddc6fa8
 ---
 # Compiler Error C3830
 
-'type1': cannot inherit from 'type2', value types can only inherit from interface classes
+> 'type1': cannot inherit from 'type2', value types can only inherit from interface classes
 
 A value type cannot inherit a base class.  For more information, see [Classes and Structs](../../extensions/classes-and-structs-cpp-component-extensions.md).
 

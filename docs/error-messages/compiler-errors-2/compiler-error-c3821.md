@@ -8,7 +8,7 @@ ms.assetid: 2b327c7a-5faf-443c-ae82-944fae25b4df
 ---
 # Compiler Error C3821
 
-'function': managed type or function cannot be used in an unmanaged function
+> 'function': managed type or function cannot be used in an unmanaged function
 
 Functions with inline assembly or [setjmp](../../c-runtime-library/reference/setjmp.md) cannot contain value types or managed classes. To fix this error, remove the inline assembly and `setjmp` or remove the managed objects.
 

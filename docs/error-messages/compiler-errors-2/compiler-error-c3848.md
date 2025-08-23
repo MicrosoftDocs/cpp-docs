@@ -8,7 +8,7 @@ ms.assetid: 32d3ccef-01ec-4f8b-bbff-fb9b1a76b4c4
 ---
 # Compiler Error C3848
 
-expression having type 'type' would lose some const-volatile qualifiers in order to call 'function'
+> expression having type 'type' would lose some const-volatile qualifiers in order to call 'function'
 
 A variable with a specified const-volatile type can only call member functions defined with same or greater const-volatile qualifications.
 
