@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3761"
 title: "Compiler Error C3761"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3761"
+ms.date: 11/04/2016
 f1_keywords: ["C3761"]
 helpviewer_keywords: ["C3761"]
-ms.assetid: 0c16f093-7a78-4838-b90b-0c67ef6e9270
 ---
 # Compiler Error C3761
 
-'function': 'retval' can only appear on the last argument of a function
+> 'function': 'retval' can only appear on the last argument of a function
+
+## Remarks
 
 The [retval](../../windows/attributes/retval.md) attribute was used on a function argument that was not the last argument in the list.
 
-The following sample generates C3761:
+## Example
+
+The following example generates C3761:
 
 ```cpp
 // C3761.cpp
