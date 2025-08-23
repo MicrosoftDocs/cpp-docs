@@ -10,9 +10,13 @@ ms.assetid: 5347140e-1a81-4841-98c0-b63d98264b64
 
 > function-style call on an expression of type 'type' would lose const and/or volatile qualifiers for all number available operator overloads
 
+## Remarks
+
 A variable with a specified const-volatile type can only call member functions defined with same or greater const-volatile qualifications.
 
 To fix this error, provide an appropriate member function. You cannot execute a conversion on a const or volatile qualified object when the conversion causes loss of qualification. You can gain qualifiers but you cannot lose qualifiers in a conversion.
+
+## Example
 
 The following samples generate C3849:
 

@@ -10,4 +10,6 @@ ms.assetid: 166bbc35-5488-46b4-8e4c-9cd26ee5644e
 
 > 'token' : unexpected token, expected either '}' or an identifier
 
+## Remarks
+
 When defining a property, an invalid token was encountered. Remove the invalid token.

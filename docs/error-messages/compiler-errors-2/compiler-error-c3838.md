@@ -10,6 +10,8 @@ ms.assetid: d6f470c2-131a-4a8c-843a-254acd43da83
 
 > cannot explicitly inherit from 'type'
 
+## Remarks
+
 The specified `type` cannot act as a base class in any class.
 
 ## Example

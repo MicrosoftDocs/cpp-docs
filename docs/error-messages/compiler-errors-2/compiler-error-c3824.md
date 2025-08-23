@@ -10,6 +10,8 @@ ms.assetid: b6c6adf1-0a29-401c-a06e-616fd50d4c37
 
 > 'member': this type cannot appear in this context (function parameter, return type, or a static member)
 
+## Remarks
+
 Pinning pointers cannot be function parameters, return types, or declared **`static`**.
 
 ## Example

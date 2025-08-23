@@ -10,6 +10,8 @@ ms.assetid: 7e2b0aab-8c61-4e71-b9c1-fcaeb6a1b5ea
 
 > 'type' : a class with the ComImport attribute cannot derive from 'type2', only interface implementation is allowed
 
+## Remarks
+
 A type that derived from <xref:System.Runtime.InteropServices.ComImportAttribute> can only implement an interface.
 
 ## Example

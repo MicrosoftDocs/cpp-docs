@@ -10,6 +10,8 @@ ms.assetid: 059e0dc4-300b-4e74-b6c2-41a57831fe2a
 
 > illegal explicit cast to a pinning pointer; use a pinned local variable instead
 
+## Remarks
+
 Explicit casts to a pinned pointer are not allowed.
 
 ## Example

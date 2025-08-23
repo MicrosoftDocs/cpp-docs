@@ -10,6 +10,8 @@ ms.assetid: 254f851b-7b7d-4c34-a740-fcf72f6a636a
 
 > static constructor is not allowed to have a member initializer list
 
+## Remarks
+
 A managed class cannot have a static constructor that also has a member initialization list. Static class constructors are called by the common language runtime to do class initialization, initializing static data members.
 
 ## Example

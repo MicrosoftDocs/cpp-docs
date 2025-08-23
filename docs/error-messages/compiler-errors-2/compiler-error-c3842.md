@@ -10,7 +10,11 @@ ms.assetid: 41a1a44a-c618-40a2-8d26-7da27d14095d
 
 > 'function': 'const' and 'volatile' qualifiers on member functions of WinRT or managed types are not supported
 
+## Remarks
+
 [const](../../cpp/const-cpp.md) and [volatile](../../cpp/volatile-cpp.md) are not supported on member functions of Windows Runtime or managed types.
+
+## Example
 
 The following sample generates C3842:
 

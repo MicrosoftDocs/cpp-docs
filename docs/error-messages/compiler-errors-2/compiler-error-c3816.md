@@ -10,7 +10,11 @@ ms.assetid: 2e52cc7f-e31c-41a3-8d6f-9f5fab3648c0
 
 > 'declaration' was previously declared or defined with a different managed or WinRTmodifier
 
+## Remarks
+
 A forward declaration and an actual declaration require that there be no conflicts or inconsistencies in the declaration of attributes.
+
+## Example
 
 The following sample generates C3816 and shows how to fix it:
 

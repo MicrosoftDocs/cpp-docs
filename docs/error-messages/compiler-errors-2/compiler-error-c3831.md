@@ -10,6 +10,8 @@ ms.assetid: a125d8dc-b75a-4ea0-b6c7-fe7b119dba25
 
 > 'member': 'class' cannot have a pinned data member or a member function returning a pinning pointer
 
+## Remarks
+
 [pin_ptr (C++/CLI)](../../extensions/pin-ptr-cpp-cli.md) was used incorrectly.
 
 ## Example

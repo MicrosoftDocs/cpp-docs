@@ -10,7 +10,11 @@ ms.assetid: bad5fb9a-ed9a-4c15-96e7-cf06e200a50d
 
 > 'property': property has a type that is incompatible with one of its accessors 'accessor'
 
+## Remarks
+
 The type of a property defined with [property](../../cpp/property-cpp.md) does not match the return type for one of its accessor functions.
+
+## Example
 
 The following sample generates C3803:
 
