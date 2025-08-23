@@ -12,3 +12,18 @@ helpviewer_keywords: ["C2290"]
 ## Remarks
 
 The **`asm`** syntax is reserved for future use, try [`__asm`](../../assembler/inline/asm.md) instead. For more information, see [Inline Assembler](../../assembler/inline/inline-assembler.md).
+
+## Example
+
+The following example generates C2290:
+
+```cpp
+// C2290.cpp
+// processor: x86
+
+int main()
+{
+    asm("nop");   // C2290
+    __asm nop     // OK
+}
+```
