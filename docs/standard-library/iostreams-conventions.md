@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: iostreams Conventions"
 title: "iostreams Conventions"
-ms.date: "11/04/2016"
+description: "Learn more about: iostreams Conventions"
+ms.date: 11/04/2016
 helpviewer_keywords: ["iostream header", "C++ Standard Library, iostreams"]
-ms.assetid: 9fe5ded0-37a1-48d1-9671-c81ffc4760ad
 ---
 # iostreams Conventions
 
