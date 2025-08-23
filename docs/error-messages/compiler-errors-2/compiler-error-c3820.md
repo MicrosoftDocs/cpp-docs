@@ -4,7 +4,6 @@ description: "Microsoft C/C++ compiler error C3820 causes and remedies."
 ms.date: 09/26/2020
 f1_keywords: ["C3820"]
 helpviewer_keywords: ["C3820"]
-ms.assetid: 98638838-068f-4a62-b8d5-1068368a0ff1
 ---
 # Compiler Error C3820
 

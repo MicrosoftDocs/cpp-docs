@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3849"
 title: "Compiler Error C3849"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3849"
+ms.date: 11/04/2016
 f1_keywords: ["C3849"]
 helpviewer_keywords: ["C3849"]
-ms.assetid: 5347140e-1a81-4841-98c0-b63d98264b64
 ---
 # Compiler Error C3849
 
-function-style call on an expression of type 'type' would lose const and/or volatile qualifiers for all number available operator overloads
+> function-style call on an expression of type 'type' would lose const and/or volatile qualifiers for all number available operator overloads
+
+## Remarks
 
 A variable with a specified const-volatile type can only call member functions defined with same or greater const-volatile qualifications.
 
 To fix this error, provide an appropriate member function. You cannot execute a conversion on a const or volatile qualified object when the conversion causes loss of qualification. You can gain qualifiers but you cannot lose qualifiers in a conversion.
 
-The following samples generate C3849:
+## Example
+
+The following example generate C3849:
 
 ```cpp
 // C3849.cpp
