@@ -11,4 +11,4 @@ helpviewer_keywords: ["C2290"]
 
 ## Remarks
 
-The **`asm`** syntax is reserved for future use.
+The **`asm`** syntax is reserved for future use, try [`__asm`](../../assembler/inline/asm.md) instead. For more information, see [Inline Assembler](../../assembler/inline/inline-assembler.md).
