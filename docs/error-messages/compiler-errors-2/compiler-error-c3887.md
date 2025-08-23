@@ -16,7 +16,7 @@ A [literal](../../extensions/literal-cpp-component-extensions.md) data member ca
 
 ## Example
 
-The following sample generates C3887:
+The following example generates C3887:
 
 ```cpp
 // C3887.cpp

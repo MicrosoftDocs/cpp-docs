@@ -16,7 +16,7 @@ A generic or template argument list was ill formed.
 
 ## Examples
 
-The following sample generates C3860:
+The following example generates C3860:
 
 ```cpp
 // C3860.cpp

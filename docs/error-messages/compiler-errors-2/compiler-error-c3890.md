@@ -16,7 +16,7 @@ A literal data member exists on the garbage-collected heap.  An object on the ga
 
 ## Example
 
-The following sample generates C3890:
+The following example generates C3890:
 
 ```cpp
 // C3890.cpp

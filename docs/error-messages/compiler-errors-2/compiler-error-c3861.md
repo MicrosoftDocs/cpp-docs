@@ -23,7 +23,7 @@ If error C3861 appears after project migration from older versions of the compil
 
 ### Undefined identifier
 
-The following sample generates C3861 because the identifier isn't defined.
+The following example generates C3861 because the identifier isn't defined.
 
 ```cpp
 // C3861.cpp
@@ -36,7 +36,7 @@ int main() {
 
 ### Identifier not in scope
 
-The following sample generates C3861, because an identifier is only visible in the file scope of its definition, unless it's declared in other source files that use it.
+The following example generates C3861, because an identifier is only visible in the file scope of its definition, unless it's declared in other source files that use it.
 
 Source file `C3861_a1.cpp`:
 
@@ -97,7 +97,7 @@ int main() {
 
 ### ADL and friend functions
 
-The following sample generates C3861 because the compiler can't use argument dependent lookup for `FriendFunc`:
+The following example generates C3861 because the compiler can't use argument dependent lookup for `FriendFunc`:
 
 ```cpp
 namespace N {

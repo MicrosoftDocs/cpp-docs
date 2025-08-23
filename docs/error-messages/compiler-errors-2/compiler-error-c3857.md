@@ -16,7 +16,7 @@ More than one template or generic was specified for the same type, which is not 
 
 ## Examples
 
-The following sample generates C3857:
+The following example generates C3857:
 
 ```cpp
 // C3857.cpp

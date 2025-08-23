@@ -16,7 +16,7 @@ The compiler found nontype template or generic parameters with different names. 
 
 ## Examples
 
-The following sample generates C3855:
+The following example generates C3855:
 
 ```cpp
 // C3855.cpp

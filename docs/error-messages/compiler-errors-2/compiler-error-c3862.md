@@ -20,7 +20,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Example
 
-The following sample generates C3862:
+The following example generates C3862:
 
 ```cpp
 // C3862.cpp

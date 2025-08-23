@@ -16,7 +16,7 @@ A [literal](../../extensions/literal-cpp-component-extensions.md) variable must 
 
 ## Example
 
-The following sample generates C3886:
+The following example generates C3886:
 
 ```cpp
 // C3886.cpp

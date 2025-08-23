@@ -16,7 +16,7 @@ The most common cause for this error is when there are more generic or template 
 
 ## Examples
 
-The following sample generates C3856:
+The following example generates C3856:
 
 ```cpp
 // C3856.cpp

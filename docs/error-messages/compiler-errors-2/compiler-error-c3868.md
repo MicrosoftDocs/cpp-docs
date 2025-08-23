@@ -16,7 +16,7 @@ Multiple declarations must have the same generic constraints.  For more informat
 
 ## Example
 
-The following sample generates C3868.
+The following example generates C3868.
 
 ```cpp
 // C3868.cpp

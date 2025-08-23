@@ -22,7 +22,7 @@ The type of a [literal](../../extensions/literal-cpp-component-extensions.md) at
 
 ## Example
 
-The following sample generates C3880:
+The following example generates C3880:
 
 ```cpp
 // C3880.cpp

@@ -18,7 +18,7 @@ For more information, see [Calling Conventions](../../cpp/calling-conventions.md
 
 ## Example
 
-The following sample generates C3865:
+The following example generates C3865:
 
 ```cpp
 // C3865.cpp

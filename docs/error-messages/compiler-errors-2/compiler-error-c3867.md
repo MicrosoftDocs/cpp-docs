@@ -19,7 +19,7 @@ This error can also be generated as a result of compiler conformance work that w
 
 C3867 can be issued from the compiler with a misleading suggested resolution. Whenever possible, use the most derived class.
 
-The following sample generates C3867 and shows how to fix it.
+The following example generates C3867 and shows how to fix it.
 
 ```cpp
 // C3867_1.cpp
@@ -39,7 +39,7 @@ void Derived::Bar() {
 }
 ```
 
-The following sample generates C3867 and shows how to fix it.
+The following example generates C3867 and shows how to fix it.
 
 ```cpp
 // C3867_2.cpp
@@ -69,7 +69,7 @@ int main() {
 }
 ```
 
-The following sample generates C3867 and shows how to fix it.
+The following example generates C3867 and shows how to fix it.
 
 ```cpp
 // C3867_3.cpp
@@ -86,7 +86,7 @@ int main() {
 }
 ```
 
-The following sample generates C3867.
+The following example generates C3867.
 
 ```cpp
 // C3867_4.cpp
@@ -108,7 +108,7 @@ public:
 };
 ```
 
-The following sample generates C3867.
+The following example generates C3867.
 
 ```cpp
 // C3867_5.cpp

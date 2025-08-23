@@ -16,7 +16,7 @@ A reference cannot be reinitialized. Dereferencing a reference to a function yie
 
 ## Example
 
-The following sample generates C3854:
+The following example generates C3854:
 
 ```cpp
 // C3854.cpp

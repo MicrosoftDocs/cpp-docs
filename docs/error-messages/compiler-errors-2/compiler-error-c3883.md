@@ -15,7 +15,7 @@ A variable marked with [initonly](../../dotnet/initonly-cpp-cli.md) was not init
 
 ## Example
 
-The following sample generates C3883:
+The following example generates C3883:
 
 ```cpp
 // C3883.cpp
@@ -26,7 +26,7 @@ ref struct Y1 {
 };
 ```
 
-The following sample demonstrates a possible resolution:
+The following example demonstrates a possible resolution:
 
 ```cpp
 // C3883b.cpp
@@ -37,7 +37,7 @@ ref struct Y1 {
 };
 ```
 
-The following sample shows how to initialize in a static constructor:
+The following example shows how to initialize in a static constructor:
 
 ```cpp
 // C3883c.cpp

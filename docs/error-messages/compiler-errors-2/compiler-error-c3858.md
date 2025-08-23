@@ -16,7 +16,7 @@ The type cannot be declared twice in the same scope.
 
 ## Example
 
-The following sample generates C3858:
+The following example generates C3858:
 
 ```cpp
 // C3858.cpp

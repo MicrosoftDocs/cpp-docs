@@ -16,7 +16,7 @@ The **`gcnew`** special constraint was specified without the empty parameter lis
 
 ## Example
 
-The following sample generates C3869.
+The following example generates C3869.
 
 ```cpp
 // C3869.cpp

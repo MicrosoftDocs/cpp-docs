@@ -16,7 +16,7 @@ Inside a nonstatic member function, a destructor or finalizer call did not have 
 
 ## Example
 
-The following sample generates C3866:
+The following example generates C3866:
 
 ```cpp
 // C3866.cpp

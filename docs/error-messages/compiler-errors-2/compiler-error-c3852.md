@@ -16,7 +16,7 @@ An attempt was made to assign a default initialization as part of an aggregate i
 
 ## Example
 
-The following samples generate C3852:
+The following example generate C3852:
 
 ```cpp
 // C3852.cpp

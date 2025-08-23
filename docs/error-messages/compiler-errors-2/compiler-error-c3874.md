@@ -16,7 +16,7 @@ A function does not have the return type that was expected by the compiler.
 
 ## Example
 
-The following sample generates C3874:
+The following example generates C3874:
 
 ```cpp
 // C3874b.cpp

@@ -18,7 +18,7 @@ The range of characters allowed in an identifier is less restrictive when compil
 
 ## Example
 
-The following sample generates C3873:
+The following example generates C3873:
 
 ```cpp
 // C3873.cpp
