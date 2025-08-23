@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3809"
 title: "Compiler Error C3809"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3809"
+ms.date: 11/04/2016
 f1_keywords: ["C3809"]
 helpviewer_keywords: ["C3809"]
-ms.assetid: 37eca584-c20c-464e-8e45-a987214b7ce4
 ---
 # Compiler Error C3809
 

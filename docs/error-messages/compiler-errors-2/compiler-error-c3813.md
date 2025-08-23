@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3813"
 title: "Compiler Error C3813"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3813"
+ms.date: 11/04/2016
 f1_keywords: ["C3813"]
 helpviewer_keywords: ["C3813"]
-ms.assetid: ffdbc489-71bf-4cd6-988c-f824c9ab3ceb
 ---
 # Compiler Error C3813
 

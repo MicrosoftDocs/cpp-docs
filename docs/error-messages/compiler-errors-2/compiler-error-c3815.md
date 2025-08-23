@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3815"
 title: "Compiler Error C3815"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3815"
+ms.date: 11/04/2016
 f1_keywords: ["C3815"]
 helpviewer_keywords: ["C3815"]
-ms.assetid: c5a3b404-6341-4fd3-92af-152b404c4dde
 ---
 # Compiler Error C3815
 

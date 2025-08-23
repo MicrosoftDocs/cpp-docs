@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3836"
 title: "Compiler Error C3836"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3836"
+ms.date: 11/04/2016
 f1_keywords: ["C3836"]
 helpviewer_keywords: ["C3836"]
-ms.assetid: 254f851b-7b7d-4c34-a740-fcf72f6a636a
 ---
 # Compiler Error C3836
 

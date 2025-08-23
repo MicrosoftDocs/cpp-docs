@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3828"
 title: "Compiler Error C3828"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3828"
+ms.date: 11/04/2016
 f1_keywords: ["C3828"]
 helpviewer_keywords: ["C3828"]
-ms.assetid: 8d9cee75-9504-4bc8-88b6-2413618a3f45
 ---
 # Compiler Error C3828
 

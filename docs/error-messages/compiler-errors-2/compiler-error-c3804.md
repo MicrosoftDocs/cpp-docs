@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3804"
 title: "Compiler Error C3804"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3804"
+ms.date: 11/04/2016
 f1_keywords: ["C3804"]
 helpviewer_keywords: ["C3804"]
-ms.assetid: 7c4cda28-ec96-4d04-937b-36dbd9944722
 ---
 # Compiler Error C3804
 

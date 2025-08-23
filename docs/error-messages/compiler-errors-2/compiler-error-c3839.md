@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3839"
 title: "Compiler Error C3839"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3839"
+ms.date: 11/04/2016
 f1_keywords: ["C3839"]
 helpviewer_keywords: ["C3839"]
-ms.assetid: 0957faff-1e9f-439b-876b-85bd8d2c578d
 ---
 # Compiler Error C3839
 

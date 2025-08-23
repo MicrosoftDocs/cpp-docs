@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3816"
 title: "Compiler Error C3816"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3816"
+ms.date: 11/04/2016
 f1_keywords: ["C3816"]
 helpviewer_keywords: ["C3816"]
-ms.assetid: 2e52cc7f-e31c-41a3-8d6f-9f5fab3648c0
 ---
 # Compiler Error C3816
 

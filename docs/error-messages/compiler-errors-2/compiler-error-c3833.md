@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3833"
 title: "Compiler Error C3833"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3833"
+ms.date: 11/04/2016
 f1_keywords: ["C3833"]
 helpviewer_keywords: ["C3833"]
-ms.assetid: 8152be53-e01e-48cd-9eef-9de38723664c
 ---
 # Compiler Error C3833
 

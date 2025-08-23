@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3850"
 title: "Compiler Error C3850"
-ms.date: "09/05/2018"
+description: "Learn more about: Compiler Error C3850"
+ms.date: 09/05/2018
 f1_keywords: ["C3850"]
 helpviewer_keywords: ["C3850"]
-ms.assetid: 028f3a37-f3ad-4ebc-9168-3cdea47524d4
 ---
 # Compiler Error C3850
 

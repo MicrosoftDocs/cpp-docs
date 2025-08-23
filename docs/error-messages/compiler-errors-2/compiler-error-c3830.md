@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3830"
 title: "Compiler Error C3830"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3830"
+ms.date: 11/04/2016
 f1_keywords: ["C3830"]
 helpviewer_keywords: ["C3830"]
-ms.assetid: c9798f88-5001-4067-9fb1-09957ddc6fa8
 ---
 # Compiler Error C3830
 

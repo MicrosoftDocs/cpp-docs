@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3849"
 title: "Compiler Error C3849"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3849"
+ms.date: 11/04/2016
 f1_keywords: ["C3849"]
 helpviewer_keywords: ["C3849"]
-ms.assetid: 5347140e-1a81-4841-98c0-b63d98264b64
 ---
 # Compiler Error C3849
 

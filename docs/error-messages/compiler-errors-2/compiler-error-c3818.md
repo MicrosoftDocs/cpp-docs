@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3818"
 title: "Compiler Error C3818"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3818"
+ms.date: 11/04/2016
 f1_keywords: ["C3818"]
 helpviewer_keywords: ["C3818"]
-ms.assetid: f9502f6a-0690-4135-ab88-cc97cf490f5c
 ---
 # Compiler Error C3818
 

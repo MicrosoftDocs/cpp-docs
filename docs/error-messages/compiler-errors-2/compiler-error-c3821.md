@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3821"
 title: "Compiler Error C3821"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3821"
+ms.date: 11/04/2016
 f1_keywords: ["C3821"]
 helpviewer_keywords: ["C3821"]
-ms.assetid: 2b327c7a-5faf-443c-ae82-944fae25b4df
 ---
 # Compiler Error C3821
 

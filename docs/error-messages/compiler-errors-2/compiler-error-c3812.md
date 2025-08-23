@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3812"
 title: "Compiler Error C3812"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3812"
+ms.date: 11/04/2016
 f1_keywords: ["C3812"]
 helpviewer_keywords: ["C3812"]
-ms.assetid: 326ac706-9a5f-4851-b9d2-b90c64c75532
 ---
 # Compiler Error C3812
 

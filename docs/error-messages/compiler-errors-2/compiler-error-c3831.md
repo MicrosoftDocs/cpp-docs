@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3831"
 title: "Compiler Error C3831"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3831"
+ms.date: 11/04/2016
 f1_keywords: ["C3831"]
 helpviewer_keywords: ["C3831"]
-ms.assetid: a125d8dc-b75a-4ea0-b6c7-fe7b119dba25
 ---
 # Compiler Error C3831
 

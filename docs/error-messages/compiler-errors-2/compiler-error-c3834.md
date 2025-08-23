@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3834"
 title: "Compiler Error C3834"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3834"
+ms.date: 11/04/2016
 f1_keywords: ["C3834"]
 helpviewer_keywords: ["C3834"]
-ms.assetid: 059e0dc4-300b-4e74-b6c2-41a57831fe2a
 ---
 # Compiler Error C3834
 
