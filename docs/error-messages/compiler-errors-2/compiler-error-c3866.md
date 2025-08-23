@@ -8,7 +8,7 @@ ms.assetid: 685870af-2440-4cdf-a6cb-284a5b96ef9d
 ---
 # Compiler Error C3866
 
-function call missing argument list
+> function call missing argument list
 
 Inside a nonstatic member function, a destructor or finalizer call did not have an argument list.
 

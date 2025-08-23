@@ -8,7 +8,7 @@ ms.assetid: 519e95be-5641-40cc-894c-da4819506604
 ---
 # Compiler Error C3872
 
-'char': this character is not allowed in an identifier
+> 'char': this character is not allowed in an identifier
 
 The C++ compiler follows the C++11 standard on characters allowed in an identifier. Only certain ranges of characters and universal character names are allowed in an identifier. Additional restrictions apply to the initial character of an identifier. For more information and a list of allowed characters and universal character name ranges, see [Identifiers](../../cpp/identifiers-cpp.md).
 

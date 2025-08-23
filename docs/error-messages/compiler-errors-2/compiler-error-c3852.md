@@ -8,7 +8,7 @@ ms.assetid: 194e5c5e-0dfb-414e-86db-791c11eb610c
 ---
 # Compiler Error C3852
 
-'member' having type 'type': aggregate initialization could not initialize this member
+> 'member' having type 'type': aggregate initialization could not initialize this member
 
 An attempt was made to assign a default initialization as part of an aggregate initialization to a data member that cannot receive a default initialization in an aggregate initialization.
 

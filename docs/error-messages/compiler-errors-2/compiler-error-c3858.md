@@ -8,7 +8,7 @@ ms.assetid: 46e178d5-a55f-4ac6-a9dc-561fbcba5c1f
 ---
 # Compiler Error C3858
 
-'type': cannot be redeclared in current scope
+> 'type': cannot be redeclared in current scope
 
 The type cannot be declared twice in the same scope.
 

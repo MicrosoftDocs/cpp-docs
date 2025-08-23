@@ -8,7 +8,7 @@ ms.assetid: ed90f8c0-4154-4243-b066-493913df5727
 ---
 # Compiler Error C3855
 
-'class': type parameter 'param' is incompatible with the declaration
+> 'class': type parameter 'param' is incompatible with the declaration
 
 The compiler found nontype template or generic parameters with different names. This can occur when a specified template parameter in the definition of a template specialization is incompatible with its declaration.
 

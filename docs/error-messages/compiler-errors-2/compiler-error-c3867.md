@@ -7,7 +7,7 @@ helpviewer_keywords: ["C3867"]
 ---
 # Compiler Error C3867
 
-'func': function call missing argument list; use '&func' to create a pointer to member
+> 'func': function call missing argument list; use '&func' to create a pointer to member
 
 You tried to take the address of a member function without qualifying the member function with its class name and the address-of operator.
 

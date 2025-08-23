@@ -8,7 +8,7 @@ ms.assetid: a7e82426-ef99-437b-9562-2822004e18fe
 ---
 # Compiler Error C3887
 
-'var' : the initializer for a literal data member must be a constant expression
+> 'var' : the initializer for a literal data member must be a constant expression
 
 A [literal](../../extensions/literal-cpp-component-extensions.md) data member can only be initialized with a constant expresion.
 

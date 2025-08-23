@@ -8,7 +8,7 @@ ms.assetid: 242d9322-c325-4f20-be58-b2be6da56d60
 ---
 # Compiler Error C3856
 
-'type': class is not a class type
+> 'type': class is not a class type
 
 The most common cause for this error is when there are more generic or template parameter lists at the point of definition than there were at the point of declaration.
 

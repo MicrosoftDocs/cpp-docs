@@ -8,7 +8,7 @@ ms.assetid: 9bc62bb0-4fb8-4856-a5cf-c7cb4029a596
 ---
 # Compiler Error C3865
 
-'calling_convention' : can only be used on native member functions
+> 'calling_convention' : can only be used on native member functions
 
 A calling convention was used on a function that was either a global function or on a managed member function. The calling convention can only be used on a native (not managed) member function.
 

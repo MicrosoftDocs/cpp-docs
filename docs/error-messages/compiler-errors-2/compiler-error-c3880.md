@@ -8,7 +8,7 @@ ms.assetid: b0e05d1e-32d0-4034-9246-f37d23573ea9
 ---
 # Compiler Error C3880
 
-'var' : cannot be a literal data member
+> 'var' : cannot be a literal data member
 
 The type of a [literal](../../extensions/literal-cpp-component-extensions.md) attribute must be, or compile-time convertible to, one of the following types:
 
