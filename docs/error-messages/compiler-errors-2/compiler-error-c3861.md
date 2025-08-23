@@ -9,9 +9,9 @@ helpviewer_keywords: ["C3861"]
 
 > '*identifier*': identifier not found
 
-The compiler was unable to resolve a reference to an identifier, even using argument-dependent lookup.
-
 ## Remarks
+
+The compiler was unable to resolve a reference to an identifier, even using argument-dependent lookup.
 
 To fix this error, compare use of *identifier* to the identifier declaration for case and spelling. Verify that [scope resolution operators](../../cpp/scope-resolution-operator.md) and namespace [`using` directives](../../cpp/namespaces-cpp.md#using_directives) are used correctly. If the identifier is declared in a header file, verify that the header is included before the identifier is referenced. If the identifier is meant to be externally visible, make sure that it's declared in any source file that uses it. Also check that the identifier declaration or definition isn't excluded by [conditional compilation directives](../../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md).
 

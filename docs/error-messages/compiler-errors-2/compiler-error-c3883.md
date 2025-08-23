@@ -9,7 +9,11 @@ helpviewer_keywords: ["C3883"]
 
 > '*member*': an initonly static data member must be initialized
 
+## Remarks
+
 A variable marked with [initonly](../../dotnet/initonly-cpp-cli.md) was not initialized correctly.
+
+## Example
 
 The following sample generates C3883:
 

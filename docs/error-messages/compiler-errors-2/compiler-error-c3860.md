@@ -10,7 +10,11 @@ ms.assetid: 1fb5110d-594e-4f1c-8773-888233af1313
 
 > type argument list following class type name must list parameters in the order used in type parameter list
 
+## Remarks
+
 A generic or template argument list was ill formed.
+
+## Examples
 
 The following sample generates C3860:
 

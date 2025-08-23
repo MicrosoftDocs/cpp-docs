@@ -10,6 +10,8 @@ ms.assetid: 85b2ad72-95c1-4ed6-9761-6ef66c3802b7
 
 > gcnew constraint is missing empty parameter list '()'
 
+## Remarks
+
 The **`gcnew`** special constraint was specified without the empty parameter list. See [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md) for more information.
 
 ## Example

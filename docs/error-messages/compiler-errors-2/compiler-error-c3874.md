@@ -10,7 +10,11 @@ ms.assetid: fd55fc05-69a7-4237-b3b7-dca1d5400b4f
 
 > return type of 'function' should be 'int' instead of 'type'
 
+## Remarks
+
 A function does not have the return type that was expected by the compiler.
+
+## Example
 
 The following sample generates C3874:
 

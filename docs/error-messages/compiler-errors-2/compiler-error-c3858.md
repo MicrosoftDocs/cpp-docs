@@ -10,7 +10,11 @@ ms.assetid: 46e178d5-a55f-4ac6-a9dc-561fbcba5c1f
 
 > 'type': cannot be redeclared in current scope
 
+## Remarks
+
 The type cannot be declared twice in the same scope.
+
+## Example
 
 The following sample generates C3858:
 

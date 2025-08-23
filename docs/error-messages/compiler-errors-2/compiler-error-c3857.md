@@ -10,7 +10,11 @@ ms.assetid: 9f746d1e-9708-4945-bc29-3150d5371d3c
 
 > 'type': multiple type parameter lists are not allowed
 
+## Remarks
+
 More than one template or generic was specified for the same type, which is not allowed.
+
+## Examples
 
 The following sample generates C3857:
 

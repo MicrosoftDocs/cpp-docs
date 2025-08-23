@@ -10,7 +10,11 @@ ms.assetid: 2f22c2fd-c14e-45e1-b936-b739ffc0b135
 
 > 'var' : you cannot take the address of a literal data member
 
+## Remarks
+
 A literal data member exists on the garbage-collected heap.  An object on the garbage-collected heap can be moved, so taking the address is not useful.
+
+## Example
 
 The following sample generates C3890:
 

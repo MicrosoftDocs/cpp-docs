@@ -10,7 +10,11 @@ ms.assetid: 5b71805d-52b4-44ec-80ae-37c68d876f6a
 
 > '=': re-initializing a reference or assignment through a reference-to-function is illegal
 
+## Remarks
+
 Cannot assign to a reference through a function because functions are not lvalues.
+
+## Example
 
 The following samples generate C3853:
 

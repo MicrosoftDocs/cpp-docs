@@ -10,7 +10,11 @@ ms.assetid: a7e82426-ef99-437b-9562-2822004e18fe
 
 > 'var' : the initializer for a literal data member must be a constant expression
 
+## Remarks
+
 A [literal](../../extensions/literal-cpp-component-extensions.md) data member can only be initialized with a constant expresion.
+
+## Example
 
 The following sample generates C3887:
 

@@ -10,6 +10,8 @@ ms.assetid: b0e05d1e-32d0-4034-9246-f37d23573ea9
 
 > 'var' : cannot be a literal data member
 
+## Remarks
+
 The type of a [literal](../../extensions/literal-cpp-component-extensions.md) attribute must be, or compile-time convertible to, one of the following types:
 
 - integral type
@@ -17,6 +19,8 @@ The type of a [literal](../../extensions/literal-cpp-component-extensions.md) at
 - string
 
 - enum with an integral or underlying type
+
+## Example
 
 The following sample generates C3880:
 

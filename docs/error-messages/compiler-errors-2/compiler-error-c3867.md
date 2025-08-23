@@ -9,6 +9,8 @@ helpviewer_keywords: ["C3867"]
 
 > 'func': function call missing argument list; use '&func' to create a pointer to member
 
+## Remarks
+
 You tried to take the address of a member function without qualifying the member function with its class name and the address-of operator.
 
 This error can also be generated as a result of compiler conformance work that was done for Visual Studio 2005: enhanced pointer-to-member conformance. Code that compiled prior to Visual Studio 2005 will now generate C3867.
