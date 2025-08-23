@@ -16,7 +16,7 @@ Managed types and Windows Runtime types do not allow friends. To fix this error,
 
 ## Example
 
-The following sample generates C3809:
+The following example generates C3809:
 
 ```cpp
 // C3809a.cpp

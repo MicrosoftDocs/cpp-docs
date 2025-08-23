@@ -16,7 +16,7 @@ The specified `type` cannot act as a base class in any class.
 
 ## Example
 
-The following sample generates C3838:
+The following example generates C3838:
 
 ```cpp
 // C3838a.cpp

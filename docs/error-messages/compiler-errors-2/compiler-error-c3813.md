@@ -16,7 +16,7 @@ A [property](../../dotnet/how-to-use-properties-in-cpp-cli.md) can only be decla
 
 ## Example
 
-The following sample generates C3813 and shows how to fix it:
+The following example generates C3813 and shows how to fix it:
 
 ```cpp
 // C3813.cpp

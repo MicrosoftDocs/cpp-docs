@@ -16,7 +16,7 @@ The type of a property defined with [property](../../cpp/property-cpp.md) does n
 
 ## Example
 
-The following sample generates C3803:
+The following example generates C3803:
 
 ```cpp
 // C3803.cpp

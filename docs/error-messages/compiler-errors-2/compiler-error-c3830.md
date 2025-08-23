@@ -16,7 +16,7 @@ A value type cannot inherit a base class.  For more information, see [Classes an
 
 ## Example
 
-The following sample generates C3830:
+The following example generates C3830:
 
 ```cpp
 // C3830a.cpp

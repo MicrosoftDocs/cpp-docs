@@ -18,7 +18,7 @@ C3821 can also occur if you try to use automatic storage in a vararg function.  
 
 ## Examples
 
-The following sample generates C3821.
+The following example generates C3821.
 
 ```cpp
 // C3821a.cpp
@@ -29,7 +29,7 @@ void test1(...) {
 }
 ```
 
-The following sample generates C3821.
+The following example generates C3821.
 
 ```cpp
 // C3821b.cpp

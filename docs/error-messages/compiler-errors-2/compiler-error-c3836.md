@@ -16,7 +16,7 @@ A managed class cannot have a static constructor that also has a member initiali
 
 ## Example
 
-The following sample generates C3836:
+The following example generates C3836:
 
 ```cpp
 // C3836a.cpp

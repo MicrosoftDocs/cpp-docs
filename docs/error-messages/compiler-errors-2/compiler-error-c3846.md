@@ -16,7 +16,7 @@ A symbol could not be imported from a referenced assembly because it was previou
 
 ## Example
 
-The following sample generates C3846:
+The following example generates C3846:
 
 ```cpp
 // C3846a.cpp

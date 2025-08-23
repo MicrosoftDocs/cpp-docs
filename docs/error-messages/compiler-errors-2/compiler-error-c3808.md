@@ -18,7 +18,7 @@ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual St
 
 ## Example
 
-The following sample generates C3808.
+The following example generates C3808.
 
 ```cpp
 // C3808.cpp

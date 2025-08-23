@@ -16,7 +16,7 @@ Only .NET events are supported in managed classes. Only Windows Runtime events a
 
 ## Example
 
-The following sample generates C3825 and shows how to fix it:
+The following example generates C3825 and shows how to fix it:
 
 ```cpp
 // C3825a.cpp

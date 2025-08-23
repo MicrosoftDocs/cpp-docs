@@ -16,7 +16,7 @@ A variable with a specified const-volatile type can only call member functions d
 
 ## Example
 
-The following samples generate C3848:
+The following example generate C3848:
 
 ```cpp
 // C3848.cpp

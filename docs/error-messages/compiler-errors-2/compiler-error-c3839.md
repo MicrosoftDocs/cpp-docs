@@ -16,7 +16,7 @@ Alignment of variables in managed or Windows Runtime types is controlled by the 
 
 ## Example
 
-The following sample generates C3839:
+The following example generates C3839:
 
 ```cpp
 // C3839a.cpp

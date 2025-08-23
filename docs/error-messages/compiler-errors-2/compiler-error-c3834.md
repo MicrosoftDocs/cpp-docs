@@ -16,7 +16,7 @@ Explicit casts to a pinned pointer are not allowed.
 
 ## Example
 
-The following sample generates C3834.
+The following example generates C3834.
 
 ```cpp
 // C3834.cpp

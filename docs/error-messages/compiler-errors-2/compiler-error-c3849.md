@@ -18,7 +18,7 @@ To fix this error, provide an appropriate member function. You cannot execute a 
 
 ## Example
 
-The following samples generate C3849:
+The following example generate C3849:
 
 ```cpp
 // C3849.cpp

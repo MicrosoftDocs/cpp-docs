@@ -16,7 +16,7 @@ A forward declaration and an actual declaration require that there be no conflic
 
 ## Example
 
-The following sample generates C3816 and shows how to fix it:
+The following example generates C3816 and shows how to fix it:
 
 ```cpp
 // C3816a.cpp

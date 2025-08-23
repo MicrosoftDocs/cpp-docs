@@ -16,7 +16,7 @@ An [interior_ptr](../../extensions/interior-ptr-cpp-cli.md) or [pin_ptr](../../e
 
 ## Examples
 
-The following sample generates C3833:
+The following example generates C3833:
 
 ```cpp
 // C3833.cpp
@@ -38,7 +38,7 @@ int main() {
 }
 ```
 
-The following sample generates C3833:
+The following example generates C3833:
 
 ```cpp
 // C3833b.cpp

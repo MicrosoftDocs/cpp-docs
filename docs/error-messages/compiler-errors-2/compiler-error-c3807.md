@@ -16,7 +16,7 @@ A type that derived from <xref:System.Runtime.InteropServices.ComImportAttribute
 
 ## Example
 
-The following sample generates C3807.
+The following example generates C3807.
 
 ```cpp
 // C3807.cpp

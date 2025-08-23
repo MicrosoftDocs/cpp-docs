@@ -16,7 +16,7 @@ ms.assetid: 41a1a44a-c618-40a2-8d26-7da27d14095d
 
 ## Example
 
-The following sample generates C3842:
+The following example generates C3842:
 
 ```cpp
 // C3842a.cpp

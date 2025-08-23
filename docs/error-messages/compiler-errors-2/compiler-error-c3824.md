@@ -16,7 +16,7 @@ Pinning pointers cannot be function parameters, return types, or declared **`sta
 
 ## Example
 
-The following sample generates C3824:
+The following example generates C3824:
 
 ```cpp
 // C3824a.cpp

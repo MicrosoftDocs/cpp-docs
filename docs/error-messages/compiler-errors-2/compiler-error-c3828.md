@@ -16,7 +16,7 @@ When creating an object of a managed type or Windows Runtime type, you cannot us
 
 ## Example
 
-The following sample generates C3828 and shows how to fix it:
+The following example generates C3828 and shows how to fix it:
 
 ```cpp
 // C3828a.cpp

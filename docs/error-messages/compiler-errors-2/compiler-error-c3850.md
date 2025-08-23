@@ -20,7 +20,7 @@ In code compiled as C++, a universal character name may use any valid Unicode co
 
 ## Example
 
-The following sample generates C3850, and shows how to fix it:
+The following example generates C3850, and shows how to fix it:
 
 ```cpp
 // C3850.cpp
