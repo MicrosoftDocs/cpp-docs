@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3673"
 title: "Compiler Error C3673"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3673"
+ms.date: 11/04/2016
 f1_keywords: ["C3673"]
 helpviewer_keywords: ["C3673"]
-ms.assetid: bb6d2079-05af-4e2c-be0e-75c892e6c590
 ---
 # Compiler Error C3673
 
-'type' : class does not have a copy-constructor
+> 'type' : class does not have a copy-constructor
+
+## Remarks
 
 A user-defined constructor is needed to copy objects of CLR ref types. For more information, see [C++ Stack Semantics for Reference Types](../../dotnet/cpp-stack-semantics-for-reference-types.md).
 
 ## Examples
 
-The following sample generates C3673.
+The following example generates C3673.
 
 ```cpp
 // C3673.cpp
@@ -32,7 +33,7 @@ int main() {
 }
 ```
 
-The following sample generates C3673.
+The following example generates C3673.
 
 ```cpp
 // C3673_b.cpp
