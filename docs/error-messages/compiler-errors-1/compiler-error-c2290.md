@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2290"]
 ---
 # Compiler Error C2290
 
-> C++ asm syntax ignored. Use __asm.
+> C++ 'asm' syntax ignored. Use __asm.
 
 ## Remarks
 
