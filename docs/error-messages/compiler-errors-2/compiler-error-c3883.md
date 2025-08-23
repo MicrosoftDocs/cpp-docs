@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C3883"
 description: "Learn more about: Compiler Error C3883"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["C3883"]
 helpviewer_keywords: ["C3883"]
 ---

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3888"
 title: "Compiler Error C3888"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3888"
+ms.date: 11/04/2016
 f1_keywords: ["C3888"]
 helpviewer_keywords: ["C3888"]
-ms.assetid: 40820812-79c5-4dcd-a19d-b4164d25fc8a
 ---
 # Compiler Error C3888
 

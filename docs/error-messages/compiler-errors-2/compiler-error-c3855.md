@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3855"
 title: "Compiler Error C3855"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3855"
+ms.date: 11/04/2016
 f1_keywords: ["C3855"]
 helpviewer_keywords: ["C3855"]
-ms.assetid: ed90f8c0-4154-4243-b066-493913df5727
 ---
 # Compiler Error C3855
 

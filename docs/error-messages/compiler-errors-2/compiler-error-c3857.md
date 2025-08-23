@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3857"
 title: "Compiler Error C3857"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3857"
+ms.date: 11/04/2016
 f1_keywords: ["C3857"]
 helpviewer_keywords: ["C3857"]
-ms.assetid: 9f746d1e-9708-4945-bc29-3150d5371d3c
 ---
 # Compiler Error C3857
 

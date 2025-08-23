@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3887"
 title: "Compiler Error C3887"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3887"
+ms.date: 11/04/2016
 f1_keywords: ["C3887"]
 helpviewer_keywords: ["C3887"]
-ms.assetid: a7e82426-ef99-437b-9562-2822004e18fe
 ---
 # Compiler Error C3887
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3874"
 title: "Compiler Error C3874"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3874"
+ms.date: 11/04/2016
 f1_keywords: ["C3874"]
 helpviewer_keywords: ["C3874"]
-ms.assetid: fd55fc05-69a7-4237-b3b7-dca1d5400b4f
 ---
 # Compiler Error C3874
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3866"
 title: "Compiler Error C3866"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3866"
+ms.date: 11/04/2016
 f1_keywords: ["C3866"]
 helpviewer_keywords: ["C3866"]
-ms.assetid: 685870af-2440-4cdf-a6cb-284a5b96ef9d
 ---
 # Compiler Error C3866
 

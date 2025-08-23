@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C3859"
 title: "Compiler Error C3859"
+description: "Learn more about: Compiler Error C3859"
 ms.date: 02/22/2022
 f1_keywords: ["C3859"]
 helpviewer_keywords: ["C3859"]

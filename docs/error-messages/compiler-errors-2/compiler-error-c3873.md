@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3873"
 title: "Compiler Error C3873"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3873"
+ms.date: 11/04/2016
 f1_keywords: ["C3873"]
 helpviewer_keywords: ["C3873"]
-ms.assetid: e68fd3be-2391-492b-ac3f-d2428901b2e9
 ---
 # Compiler Error C3873
 

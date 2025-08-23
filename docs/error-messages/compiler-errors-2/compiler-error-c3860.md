@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3860"
 title: "Compiler Error C3860"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3860"
+ms.date: 11/04/2016
 f1_keywords: ["C3860"]
 helpviewer_keywords: ["C3860"]
-ms.assetid: 1fb5110d-594e-4f1c-8773-888233af1313
 ---
 # Compiler Error C3860
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3865"
 title: "Compiler Error C3865"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3865"
+ms.date: 11/04/2016
 f1_keywords: ["C3865"]
 helpviewer_keywords: ["C3865"]
-ms.assetid: 9bc62bb0-4fb8-4856-a5cf-c7cb4029a596
 ---
 # Compiler Error C3865
 

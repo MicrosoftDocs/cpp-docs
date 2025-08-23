@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3856"
 title: "Compiler Error C3856"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3856"
+ms.date: 11/04/2016
 f1_keywords: ["C3856"]
 helpviewer_keywords: ["C3856"]
-ms.assetid: 242d9322-c325-4f20-be58-b2be6da56d60
 ---
 # Compiler Error C3856
 

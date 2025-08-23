@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3890"
 title: "Compiler Error C3890"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3890"
+ms.date: 11/04/2016
 f1_keywords: ["C3890"]
 helpviewer_keywords: ["C3890"]
-ms.assetid: 2f22c2fd-c14e-45e1-b936-b739ffc0b135
 ---
 # Compiler Error C3890
 
