@@ -10,9 +10,13 @@ ms.assetid: cfcbe620-b463-463b-95ea-2d60ad33ebb5
 
 > 'event': must define member 'method'
 
+## Remarks
+
 An event was defined, but did not contain the specified, required accessor method.
 
 For more information, see [event](../../extensions/event-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3910:
 

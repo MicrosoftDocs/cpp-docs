@@ -10,7 +10,11 @@ ms.assetid: 83fff42c-ea48-442f-bc2e-b33a6b99d890
 
 > 'var' : you cannot assign to a variable that is const
 
+## Remarks
+
 A const variable cannot be changed after it is declared and initialized.
+
+## Example
 
 The following sample generates C3892:
 

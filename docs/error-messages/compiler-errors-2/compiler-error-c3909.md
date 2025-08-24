@@ -10,9 +10,13 @@ ms.assetid: 0a443132-e53f-42dc-a58b-f086da3e7bfd
 
 > aWinRT or managed event declaration must occur in a WinRT or managed type
 
+## Remarks
+
 A Windows Runtime event or managed event was declared in a native type. To fix this error, declare events in Windows Runtime types or managed types.
 
 For more information, see [event](../../extensions/event-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3909 and shows how to fix it:
 

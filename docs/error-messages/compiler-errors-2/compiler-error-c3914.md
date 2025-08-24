@@ -10,6 +10,8 @@ ms.assetid: 8f3190e6-ee50-4916-9ecc-3b8748b2e1e7
 
 > a default property cannot be static
 
+## Remarks
+
 A default property was declared incorrectly.  For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md).
 
 ## Example

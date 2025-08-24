@@ -10,9 +10,13 @@ ms.assetid: 6d5ac903-1dea-431d-8e3a-cebca4342983
 
 > 'var' : l-value use of initonly static data member is only allowed in the class constructor of class 'class'
 
+## Remarks
+
 Static [initonly](../../dotnet/initonly-cpp-cli.md) data members can only be used as l-values at their point of declaration, or in a static constructor.
 
 Instance (non-static) initonly data members can only be used as l-values at their point of declaration, or in instance (non-static) constructors.
+
+## Example
 
 The following sample generates C3894:
 

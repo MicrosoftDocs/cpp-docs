@@ -10,9 +10,13 @@ ms.assetid: a678bfce-9524-470d-9f23-7d08ecb972c8
 
 > default property must be indexed
 
+## Remarks
+
 A default property was defined incorrectly.
 
 For more information, see [property](../../extensions/property-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C3913:
 

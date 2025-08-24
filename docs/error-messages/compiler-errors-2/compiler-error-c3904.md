@@ -10,6 +10,8 @@ ms.assetid: 08297605-e4f2-4c6c-b637-011f1fd40631
 
 > 'property_accessor': must specify number parameter(s)
 
+## Remarks
+
 Check the number of parameters in your `get` and `set` methods against property dimensions.
 
 - The number of parameters for the `get` method must equal the number of dimensions of the property or be zero for nonindexed properties.

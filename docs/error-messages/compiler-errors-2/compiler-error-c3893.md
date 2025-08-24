@@ -10,9 +10,13 @@ ms.assetid: 90d52eae-6ef2-4db1-b7ad-92f9e8b140fb
 
 > 'var' : l-value use of initonly data member is only allowed in an instance constructor of class 'type_name'
 
+## Remarks
+
 Static [initonly](../../dotnet/initonly-cpp-cli.md) data members can only have their address taken in a static constructor.
 
 Instance (non-static) initonly data members can only have their address taken in instance (non-static) constructors.
+
+## Example
 
 The following sample generates C3893:
 

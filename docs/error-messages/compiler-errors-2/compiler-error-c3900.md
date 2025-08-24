@@ -10,9 +10,13 @@ ms.assetid: a94cc561-8fa8-4344-9e01-e81ff462fae5
 
 > 'member': not allowed in current scope
 
+## Remarks
+
 Property blocks can contain function declarations and inline function definitions only. No members other than functions are allowed in property blocks. No typedefs, operators, or friend functions are allowed. For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
 Event definitions can only contain access methods and functions.
+
+## Examples
 
 The following sample generates C3900:
 
