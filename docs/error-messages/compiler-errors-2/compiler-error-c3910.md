@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3910"
 title: "Compiler Error C3910"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3910"
+ms.date: 11/04/2016
 f1_keywords: ["C3910"]
 helpviewer_keywords: ["C3910"]
-ms.assetid: cfcbe620-b463-463b-95ea-2d60ad33ebb5
 ---
 # Compiler Error C3910
 
-'event': must define member 'method'
+> 'event': must define member 'method'
+
+## Remarks
 
 An event was defined, but did not contain the specified, required accessor method.
 
 For more information, see [event](../../extensions/event-cpp-component-extensions.md).
 
-The following sample generates C3910:
+## Example
+
+The following example generates C3910:
 
 ```cpp
 // C3910.cpp

@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3913"
 title: "Compiler Error C3913"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3913"
+ms.date: 11/04/2016
 f1_keywords: ["C3913"]
 helpviewer_keywords: ["C3913"]
-ms.assetid: a678bfce-9524-470d-9f23-7d08ecb972c8
 ---
 # Compiler Error C3913
 
-default property must be indexed
+> default property must be indexed
+
+## Remarks
 
 A default property was defined incorrectly.
 
 For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
-The following sample generates C3913:
+## Example
+
+The following example generates C3913:
 
 ```cpp
 // C3913.cpp
