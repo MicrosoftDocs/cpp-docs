@@ -139,7 +139,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1) C4537](compiler-warning-level-1-c4537.md)|'*object*': '`.`' applied to non-UDT type|
 |[Compiler warning (level 3) C4538](compiler-warning-level-3-c4538.md)|'*type*': `const`/`volatile` qualifiers on this type are not supported|
 |[Compiler warning (level 1) C4540](compiler-warning-level-1-c4540.md)|`dynamic_cast` used to convert to inaccessible or ambiguous base; run-time test will fail ('*type1*' to '*type2*')|
-|[Compiler warning (level 1) C4541](compiler-warning-level-1-c4541.md)|'*identifier*' used on polymorphic type '*type*' with `/GR-`; unpredictable behavior may result|
+|[Compiler warning (level 1) C4541](compiler-warning-level-1-c4541.md)|'*operator*' used on polymorphic type '*type*' with /GR-; unpredictable behavior may result|
 |Compiler warning (level 1) C4542|Skipping generation of merged injected text file, cannot write *filetype* file: '*issue*': *message*|
 |[Compiler warning (level 3) C4543](compiler-warning-level-3-c4543.md)|Injected text suppressed by attribute '`no_injected_text`'|
 |[Compiler warning (level 1) C4544](compiler-warning-level-1-c4544.md)|the default template argument for '*declaration*' is ignored on this template declaration|
