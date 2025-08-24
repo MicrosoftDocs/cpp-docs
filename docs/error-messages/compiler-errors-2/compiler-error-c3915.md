@@ -18,7 +18,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 ## Examples
 
-The following sample generates C3915.
+The following example generates C3915.
 
 ```cpp
 // C3915.cpp
@@ -43,7 +43,7 @@ int main() {
 
 C3915 can also occur if you attempt to consume a default indexer in the same compiland where it was defined with <xref:System.Reflection.DefaultMemberAttribute>.
 
-The following sample generates C3915.
+The following example generates C3915.
 
 ```cpp
 // C3915_b.cpp

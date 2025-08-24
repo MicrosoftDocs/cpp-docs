@@ -16,7 +16,7 @@ A const variable cannot be changed after it is declared and initialized.
 
 ## Example
 
-The following sample generates C3892:
+The following example generates C3892:
 
 ```cpp
 // C3892.cpp

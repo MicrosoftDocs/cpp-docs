@@ -18,7 +18,7 @@ For more information, see [event](../../extensions/event-cpp-component-extension
 
 ## Example
 
-The following sample generates C3911:
+The following example generates C3911:
 
 ```cpp
 // C3911.cpp

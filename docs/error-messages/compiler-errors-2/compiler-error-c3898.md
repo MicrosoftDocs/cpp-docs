@@ -16,7 +16,7 @@ An [initonly](../../dotnet/initonly-cpp-cli.md) data member was declared in a na
 
 ## Example
 
-The following sample generates C3898:
+The following example generates C3898:
 
 ```cpp
 // C3898.cpp

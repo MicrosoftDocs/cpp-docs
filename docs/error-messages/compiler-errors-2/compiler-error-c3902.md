@@ -16,7 +16,7 @@ The type of the last parameter of at least one set method must match the type of
 
 ## Example
 
-The following sample generates C3902:
+The following example generates C3902:
 
 ```cpp
 // C3902.cpp

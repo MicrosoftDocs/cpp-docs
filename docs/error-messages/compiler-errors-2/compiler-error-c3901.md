@@ -16,7 +16,7 @@ At least one get method's return type must match the property type. For more inf
 
 ## Example
 
-The following sample generates C3901:
+The following example generates C3901:
 
 ```cpp
 // C3901.cpp

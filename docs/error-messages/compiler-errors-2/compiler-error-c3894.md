@@ -18,7 +18,7 @@ Instance (non-static) initonly data members can only be used as l-values at thei
 
 ## Example
 
-The following sample generates C3894:
+The following example generates C3894:
 
 ```cpp
 // C3894.cpp

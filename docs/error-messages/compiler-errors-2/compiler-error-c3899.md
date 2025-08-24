@@ -18,7 +18,7 @@ To resolve, initialize the initonly data member in the constructor, but outside 
 
 ## Example
 
-The following sample generates C3899.
+The following example generates C3899.
 
 ```cpp
 // C3899.cpp

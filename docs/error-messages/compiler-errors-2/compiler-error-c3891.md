@@ -16,7 +16,7 @@ A [literal](../../extensions/literal-cpp-component-extensions.md) variable is co
 
 ## Example
 
-The following sample generates C3891:
+The following example generates C3891:
 
 ```cpp
 // C3891.cpp

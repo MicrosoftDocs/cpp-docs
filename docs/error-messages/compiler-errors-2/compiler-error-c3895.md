@@ -16,7 +16,7 @@ Certain kinds of data members, for example [literal](../../extensions/literal-cp
 
 ## Example
 
-The following sample generates C3895:
+The following example generates C3895:
 
 ```cpp
 // C3895.cpp

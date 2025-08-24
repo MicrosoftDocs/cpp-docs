@@ -18,7 +18,7 @@ Event definitions can only contain access methods and functions.
 
 ## Examples
 
-The following sample generates C3900:
+The following example generates C3900:
 
 ```cpp
 // C3900.cpp
@@ -31,7 +31,7 @@ ref class X {
 };
 ```
 
-The following sample generates C3900:
+The following example generates C3900:
 
 ```cpp
 // C3900b.cpp

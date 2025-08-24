@@ -18,7 +18,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 ## Example
 
-The following sample generates C3913:
+The following example generates C3913:
 
 ```cpp
 // C3913.cpp

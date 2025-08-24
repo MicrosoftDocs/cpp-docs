@@ -16,7 +16,7 @@ A [literal](../../extensions/literal-cpp-component-extensions.md) data member wa
 
 ## Example
 
-The following sample generates C3896:
+The following example generates C3896:
 
 ```cpp
 // C3896.cpp

@@ -16,7 +16,7 @@ The Windows Runtime and CLR do not support the postfix operator and user-defined
 
 ## Example
 
-The following sample generates C3920 and shows how to fix it:
+The following example generates C3920 and shows how to fix it:
 
 ```cpp
 // C3920.cpp

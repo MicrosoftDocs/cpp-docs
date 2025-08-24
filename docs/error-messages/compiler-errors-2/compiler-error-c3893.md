@@ -18,7 +18,7 @@ Instance (non-static) initonly data members can only have their address taken in
 
 ## Example
 
-The following sample generates C3893:
+The following example generates C3893:
 
 ```cpp
 // C3893.cpp

@@ -16,7 +16,7 @@ A property must have at least a `get` or a `set` method. For more information, s
 
 ## Example
 
-The following sample generates C3903:
+The following example generates C3903:
 
 ```cpp
 // C3903.cpp

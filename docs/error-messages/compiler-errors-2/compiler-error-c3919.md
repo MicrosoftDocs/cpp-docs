@@ -18,7 +18,7 @@ For more information about events, see [event](../../extensions/event-cpp-compon
 
 ## Example
 
-The following sample generates C3919:
+The following example generates C3919:
 
 ```cpp
 // C3919.cpp

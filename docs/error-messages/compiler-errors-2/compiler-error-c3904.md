@@ -22,7 +22,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 ## Examples
 
-The following sample generates C3904.
+The following example generates C3904.
 
 ```cpp
 // C3904.cpp
@@ -42,7 +42,7 @@ ref class X {
 };
 ```
 
-The following sample generates C3904.
+The following example generates C3904.
 
 ```cpp
 // C3904b.cpp
