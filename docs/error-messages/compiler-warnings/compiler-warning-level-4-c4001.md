@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4001"]
 
 > nonstandard extension 'single line comment' was used
 
+## Remarks
+
 > [!NOTE]
 > This warning is removed in Visual Studio 2017 version 15.5 because single-line comments are standard in C99.
 

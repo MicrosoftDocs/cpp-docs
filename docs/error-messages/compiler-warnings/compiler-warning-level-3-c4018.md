@@ -9,9 +9,9 @@ helpviewer_keywords: ["C4018"]
 
 > '*token*' : signed/unsigned mismatch
 
-Using the *token* operator to compare **`signed`** and **`unsigned`** numbers required the compiler to convert the **`signed`** value to **`unsigned`**.
-
 ## Remarks
+
+Using the *token* operator to compare **`signed`** and **`unsigned`** numbers required the compiler to convert the **`signed`** value to **`unsigned`**.
 
 One way to fix this warning is if you cast one of the two types when you compare **`signed`** and **`unsigned`** types.
 

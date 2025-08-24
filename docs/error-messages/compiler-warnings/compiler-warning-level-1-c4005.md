@@ -10,6 +10,8 @@ ms.assetid: 7f2dc79a-9fcb-4d5b-be61-120d9cb487ad
 
 > 'identifier' : macro redefinition
 
+## Remarks
+
 The macro identifier is defined twice. The compiler uses the second macro definition.
 
 ### To fix by checking the following possible causes
@@ -23,6 +25,8 @@ The macro identifier is defined twice. The compiler uses the second macro defini
 1. Remove one of the definitions.
 
 1. Use an [#undef](../../preprocessor/hash-undef-directive-c-cpp.md) directive before the second definition.
+
+## Example
 
 The following sample generates C4005:
 

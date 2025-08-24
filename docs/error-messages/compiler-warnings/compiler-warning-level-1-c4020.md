@@ -10,7 +10,11 @@ ms.assetid: 8c4cd6be-9371-4c8c-b0ff-a5ad367bbab0
 
 > 'function' : too many actual parameters
 
+## Remarks
+
 The number of actual parameters in a function call exceeds the number of formal parameters in the function prototype or definition. The compiler passes the extra actual parameters according to the calling convention of the function.
+
+## Example
 
 The following sample generates C4020:
 

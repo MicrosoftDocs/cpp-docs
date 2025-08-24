@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4027"]
 
 > function declared without formal parameter list
 
+## Remarks
+
 The function declaration had no formal parameters, but there are formal parameters in the function definition or actual parameters in a call.
 
 The compiler accepts, but warns, on an old C-style forward declaration of a function name without a parameter list. On later calls to this function, the compiler assumes that the function takes actual parameters of the types found in the function definition or call. We recommend you modify your function declaration

@@ -10,6 +10,8 @@ ms.assetid: 9f9afc71-6e78-463d-9d66-3012d6a3cd5d
 
 > 'function' undefined; assuming extern returning int
 
+## Remarks
+
 The compiler encountered a call to an undefined function.
 
 ### To fix by checking the following possible causes

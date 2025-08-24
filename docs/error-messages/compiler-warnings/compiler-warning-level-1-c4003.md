@@ -9,7 +9,11 @@ helpviewer_keywords: ["C4003"]
 
 > not enough arguments for function-like macro invocation '*identifier*'
 
+## Remarks
+
 The number of formal parameters in the macro definition exceeds the number of actual parameters in the macro. Macro expansion substitutes empty text for the missing parameters.
+
+## Example
 
 The following sample generates C4003:
 

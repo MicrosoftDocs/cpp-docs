@@ -9,9 +9,13 @@ helpviewer_keywords: ["C4002"]
 
 > too many arguments for function-like macro invocation '*identifier*'
 
+## Remarks
+
 The number of actual parameters in the macro exceeds the number of formal parameters in the macro definition. The preprocessor collects the extra parameters but ignores them during macro expansion.
 
 C4002 can occur when incorrectly using [variadic macros](../../preprocessor/variadic-macros.md).
+
+## Examples
 
 The following sample generates C4002:
 

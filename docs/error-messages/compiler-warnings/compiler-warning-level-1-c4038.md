@@ -10,4 +10,6 @@ ms.assetid: 54c7f4ed-9386-436e-b4be-bf6c338ded64
 
 > 'modifier' : illegal ambient class modifier
 
+## Remarks
+
 This modifier cannot be used for classes with **`dllimport`** or [dllexport](../../cpp/dllexport-dllimport.md) attributes.

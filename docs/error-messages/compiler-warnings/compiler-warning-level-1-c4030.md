@@ -10,4 +10,6 @@ ms.assetid: 155b290e-4777-4704-ad35-02968b1e4c5e
 
 > first formal parameter list longer than the second list
 
+## Remarks
+
 A function was redeclared with different formal parameters. The compiler uses the formal parameters given in the first declaration.

@@ -10,4 +10,6 @@ ms.assetid: c4f6a651-0641-4446-973e-8290065e49ad
 
 > 'number' : based pointer passed to function with variable arguments: parameter number
 
+## Remarks
+
 Passing a based pointer to a function with variable arguments causes the pointer to be normalized, with unpredictable results. Do not pass based pointers to functions with variable arguments.

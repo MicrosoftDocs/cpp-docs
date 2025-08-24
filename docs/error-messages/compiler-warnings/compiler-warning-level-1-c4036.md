@@ -10,6 +10,8 @@ ms.assetid: f0b15359-4d62-48ec-8cb1-a7b36587a47f
 
 > unnamed 'type' as actual parameter
 
+## Remarks
+
 No type name is given for a structure, union, enumeration, or class used as an actual parameter. If you are using [/Zg](../../build/reference/zg-generate-function-prototypes.md) to generate function prototypes, the compiler issues this warning and comments out the formal parameter in the generated prototype.
 
 Specify a type name to resolve this warning.

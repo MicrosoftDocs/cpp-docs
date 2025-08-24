@@ -10,6 +10,8 @@ ms.assetid: 70dd0c85-0239-43f9-bb06-507f6a57d206
 
 > formal parameter 'number' has different type when promoted
 
+## Remarks
+
 The parameter type is not compatible, through default promotions, with the type in a previous declaration.
 
 This is an error in ANSI C ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) and a warning under Microsoft extensions (/Ze).

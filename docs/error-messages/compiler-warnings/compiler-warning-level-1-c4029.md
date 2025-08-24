@@ -10,4 +10,6 @@ ms.assetid: a5c50bab-a189-44c9-aa5c-4377c7c8443a
 
 > declared formal parameter list different from definition
 
+## Remarks
+
 Formal parameter types in the function declaration do not agree with those in the function definition. The compiler uses the parameter list from the definition.

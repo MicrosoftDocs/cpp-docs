@@ -10,9 +10,13 @@ ms.assetid: d607a9ff-8f8f-45c0-b07b-3b2f439e5485
 
 > single-line comment contains line-continuation character
 
+## Remarks
+
 A single-line comment, which is introduced by //, contains a backslash (\\) that serves as a line-continuation character. The compiler considers the next line to be a continuation and treats it as a comment.
 
 Some syntax-directed editors do not indicate the line following the continuation character as a comment. Ignore syntax coloring on any lines that cause this warning.
+
+## Example
 
 The following sample generates C4010:
 

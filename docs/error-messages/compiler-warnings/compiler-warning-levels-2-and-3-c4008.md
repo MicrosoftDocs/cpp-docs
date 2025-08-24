@@ -10,6 +10,8 @@ ms.assetid: fb45e535-cb68-4743-80e9-a6e34cfffeca
 
 > 'identifier' : 'attribute' attribute ignored
 
+## Remarks
+
 The compiler ignored the **`__fastcall`**, **`static`**, or **`inline`** attribute for a function (level 3 warning) or data (level 2 warning).
 
 ### To fix by checking the following possible causes
