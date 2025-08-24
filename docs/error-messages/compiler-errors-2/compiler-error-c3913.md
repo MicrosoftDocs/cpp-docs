@@ -8,7 +8,7 @@ ms.assetid: a678bfce-9524-470d-9f23-7d08ecb972c8
 ---
 # Compiler Error C3913
 
-default property must be indexed
+> default property must be indexed
 
 A default property was defined incorrectly.
 

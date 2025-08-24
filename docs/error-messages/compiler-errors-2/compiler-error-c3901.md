@@ -8,7 +8,7 @@ ms.assetid: 19af4141-39ad-4c16-a68f-3ae76f648186
 ---
 # Compiler Error C3901
 
-'accessor_function': must have return type 'type'
+> 'accessor_function': must have return type 'type'
 
 At least one get method's return type must match the property type. For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 

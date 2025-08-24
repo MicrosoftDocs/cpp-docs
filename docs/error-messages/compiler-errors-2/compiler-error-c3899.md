@@ -8,7 +8,7 @@ ms.assetid: 14e07e4a-f7a7-4309-baaa-649d69e12e23
 ---
 # Compiler Error C3899
 
-'var' : l-value use of initonly data member is not allowed directly within a parallel region in class 'class'
+> 'var' : l-value use of initonly data member is not allowed directly within a parallel region in class 'class'
 
 An [initonly (C++/CLI)](../../dotnet/initonly-cpp-cli.md) data member cannot be initialized inside that part of a constructor that is in a [parallel](../../parallel/openmp/reference/openmp-directives.md#parallel) region.  This is because the compiler does an internal relocation of that code, such that, it is effectively no longer part of the constructor.
 

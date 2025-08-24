@@ -8,7 +8,7 @@ ms.assetid: 3c322482-c79e-4197-a578-2ad9bc379d1a
 ---
 # Compiler Error C3908
 
-access level less restrictive than 'construct'
+> access level less restrictive than 'construct'
 
 A property accessor method (get or set) cannot have less restrictive access than the access specified on the property itself.  Similarly, for event accessor methods.
 

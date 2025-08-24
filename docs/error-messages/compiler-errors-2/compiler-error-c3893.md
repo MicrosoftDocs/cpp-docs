@@ -8,7 +8,7 @@ ms.assetid: 90d52eae-6ef2-4db1-b7ad-92f9e8b140fb
 ---
 # Compiler Error C3893
 
-'var' : l-value use of initonly data member is only allowed in an instance constructor of class 'type_name'
+> 'var' : l-value use of initonly data member is only allowed in an instance constructor of class 'type_name'
 
 Static [initonly](../../dotnet/initonly-cpp-cli.md) data members can only have their address taken in a static constructor.
 

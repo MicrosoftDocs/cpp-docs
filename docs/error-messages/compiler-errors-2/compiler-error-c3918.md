@@ -8,7 +8,7 @@ ms.assetid: a8b3a90a-3fe1-4244-a5ff-a31cdae97d98
 ---
 # Compiler Error C3918
 
-usage requires 'member' to be a data member
+> usage requires 'member' to be a data member
 
 C3918 can occur for several reasons related to events.
 

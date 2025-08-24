@@ -8,7 +8,7 @@ ms.assetid: 6d5ac903-1dea-431d-8e3a-cebca4342983
 ---
 # Compiler Error C3894
 
-'var' : l-value use of initonly static data member is only allowed in the class constructor of class 'class'
+> 'var' : l-value use of initonly static data member is only allowed in the class constructor of class 'class'
 
 Static [initonly](../../dotnet/initonly-cpp-cli.md) data members can only be used as l-values at their point of declaration, or in a static constructor.
 

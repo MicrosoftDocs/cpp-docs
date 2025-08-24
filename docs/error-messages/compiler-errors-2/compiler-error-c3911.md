@@ -8,7 +8,7 @@ ms.assetid: b786da59-0e99-479d-bc0d-551126e940f2
 ---
 # Compiler Error C3911
 
-'event_accessor_method': function must have type 'signature'
+> 'event_accessor_method': function must have type 'signature'
 
 An event's accessor method was not properly declared.
 

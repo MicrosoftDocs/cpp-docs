@@ -8,7 +8,7 @@ ms.assetid: cfcbe620-b463-463b-95ea-2d60ad33ebb5
 ---
 # Compiler Error C3910
 
-'event': must define member 'method'
+> 'event': must define member 'method'
 
 An event was defined, but did not contain the specified, required accessor method.
 

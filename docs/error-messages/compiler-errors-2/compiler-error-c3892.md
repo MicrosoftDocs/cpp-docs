@@ -8,7 +8,7 @@ ms.assetid: 83fff42c-ea48-442f-bc2e-b33a6b99d890
 ---
 # Compiler Error C3892
 
-'var' : you cannot assign to a variable that is const
+> 'var' : you cannot assign to a variable that is const
 
 A const variable cannot be changed after it is declared and initialized.
 

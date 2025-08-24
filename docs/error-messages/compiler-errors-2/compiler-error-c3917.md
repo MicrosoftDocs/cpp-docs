@@ -8,7 +8,7 @@ ms.assetid: a24cd0c9-262f-46e5-9488-1c01f945933d
 ---
 # Compiler Error C3917
 
-'*property*': obsolete construct declaration style
+> '*property*': obsolete construct declaration style
 
 A property or event definition used syntax from a version before Visual Studio 2005.
 

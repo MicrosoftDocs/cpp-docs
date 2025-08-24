@@ -8,7 +8,7 @@ ms.assetid: 674e050c-11fb-4db1-8bdf-a3e95b41161d
 ---
 # Compiler Error C3912
 
-'event': type of event must be a delegate type
+> 'event': type of event must be a delegate type
 
 An event was declared but was not of the proper type.
 

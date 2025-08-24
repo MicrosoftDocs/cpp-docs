@@ -8,7 +8,7 @@ ms.assetid: eb8be0f6-5b4e-4d71-8285-8a2a94f8ba29
 ---
 # Compiler Error C3896
 
-'member' : improper initializer: this literal data member can only be initialized with 'nullptr'
+> 'member' : improper initializer: this literal data member can only be initialized with 'nullptr'
 
 A [literal](../../extensions/literal-cpp-component-extensions.md) data member was initialized incorrectly.  See [nullptr](../../extensions/nullptr-cpp-component-extensions.md) for more information.
 

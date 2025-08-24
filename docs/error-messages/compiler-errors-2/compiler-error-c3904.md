@@ -8,7 +8,7 @@ ms.assetid: 08297605-e4f2-4c6c-b637-011f1fd40631
 ---
 # Compiler Error C3904
 
-'property_accessor': must specify number parameter(s)
+> 'property_accessor': must specify number parameter(s)
 
 Check the number of parameters in your `get` and `set` methods against property dimensions.
 

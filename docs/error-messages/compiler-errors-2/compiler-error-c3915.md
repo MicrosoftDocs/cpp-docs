@@ -8,7 +8,7 @@ ms.assetid: 2b0a5e5f-3aec-4a4b-9157-233031817084
 ---
 # Compiler Error C3915
 
-'type' has no default indexed property (class indexer)
+> 'type' has no default indexed property (class indexer)
 
 A type does not have a default, indexed property.
 

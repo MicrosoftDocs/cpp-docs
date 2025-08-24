@@ -8,7 +8,7 @@ ms.assetid: db8838e9-6344-4cd6-83e0-a8abeb12c4c0
 ---
 # Compiler Error C3923
 
-'member' : local class, struct, or union definitions are not allowed in a member function of a WinRT or managed class
+> 'member' : local class, struct, or union definitions are not allowed in a member function of a WinRT or managed class
 
 ## Example
 

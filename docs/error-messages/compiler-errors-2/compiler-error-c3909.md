@@ -8,7 +8,7 @@ ms.assetid: 0a443132-e53f-42dc-a58b-f086da3e7bfd
 ---
 # Compiler Error C3909
 
-aWinRT or managed event declaration must occur in a WinRT or managed type
+> aWinRT or managed event declaration must occur in a WinRT or managed type
 
 A Windows Runtime event or managed event was declared in a native type. To fix this error, declare events in Windows Runtime types or managed types.
 

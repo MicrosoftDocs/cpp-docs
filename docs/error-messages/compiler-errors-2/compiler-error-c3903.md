@@ -8,7 +8,7 @@ ms.assetid: cf47d7ad-a3bd-4f75-a253-71586e7a3be6
 ---
 # Compiler Error C3903
 
-'property': does not have set or get method
+> 'property': does not have set or get method
 
 A property must have at least a `get` or a `set` method. For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 

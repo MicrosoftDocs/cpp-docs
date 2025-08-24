@@ -8,7 +8,7 @@ ms.assetid: 5f8eddda-d751-478b-930d-e18f7191ddfb
 ---
 # Compiler Error C3919
 
-'event_method': function must have type 'type'
+> 'event_method': function must have type 'type'
 
 An event accessor method was not declared correctly.
 
