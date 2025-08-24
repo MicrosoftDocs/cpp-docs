@@ -16,7 +16,7 @@ The `#undef` directive did not specify an identifier to undefine. The directive 
 
 ## Example
 
-The following sample generates C4006:
+The following example generates C4006:
 
 ```cpp
 // C4006.cpp

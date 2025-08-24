@@ -18,7 +18,7 @@ Some syntax-directed editors do not indicate the line following the continuation
 
 ## Example
 
-The following sample generates C4010:
+The following example generates C4010:
 
 ```cpp
 // C4010.cpp

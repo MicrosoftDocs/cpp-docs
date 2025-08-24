@@ -17,7 +17,7 @@ One way to fix this warning is if you cast one of the two types when you compare
 
 ## Example
 
-This sample generates C4018 and shows how to fix it:
+This example generates C4018 and shows how to fix it:
 
 ```cpp
 // C4018.cpp

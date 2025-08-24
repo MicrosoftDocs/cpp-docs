@@ -20,7 +20,7 @@ This error is for C language code.
 
 ## Example
 
-The following sample generates C4033:
+The following example generates C4033:
 
 ```c
 // C4033.c

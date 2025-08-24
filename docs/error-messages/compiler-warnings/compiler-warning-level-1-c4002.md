@@ -17,7 +17,7 @@ C4002 can occur when incorrectly using [variadic macros](../../preprocessor/vari
 
 ## Examples
 
-The following sample generates C4002:
+The following example generates C4002:
 
 ```cpp
 // C4002.cpp

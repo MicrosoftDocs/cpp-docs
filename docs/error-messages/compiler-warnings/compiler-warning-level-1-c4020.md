@@ -16,7 +16,7 @@ The number of actual parameters in a function call exceeds the number of formal 
 
 ## Example
 
-The following sample generates C4020:
+The following example generates C4020:
 
 ```c
 // C4020.c

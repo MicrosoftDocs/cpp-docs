@@ -15,7 +15,7 @@ The number of formal parameters in the macro definition exceeds the number of ac
 
 ## Example
 
-The following sample generates C4003:
+The following example generates C4003:
 
 ```cpp
 // C4003.cpp

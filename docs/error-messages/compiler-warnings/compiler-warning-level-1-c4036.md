@@ -18,7 +18,7 @@ Specify a type name to resolve this warning.
 
 ## Example
 
-The following sample generates C4036.
+The following example generates C4036.
 
 ```c
 // C4036.c

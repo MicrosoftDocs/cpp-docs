@@ -28,7 +28,7 @@ The macro identifier is defined twice. The compiler uses the second macro defini
 
 ## Example
 
-The following sample generates C4005:
+The following example generates C4005:
 
 ```cpp
 // C4005.cpp

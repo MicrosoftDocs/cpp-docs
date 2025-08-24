@@ -18,7 +18,7 @@ This warning is only valid for C source code.
 
 ## Example
 
-The following sample generates C4028.
+The following example generates C4028.
 
 ```c
 // C4028.c
