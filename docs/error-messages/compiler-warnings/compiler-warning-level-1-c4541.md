@@ -10,4 +10,6 @@ ms.assetid: b57b8f3e-117d-4fc2-bba6-faec17e5fa9d
 
 > '*operator*' used on polymorphic type '*type*' with /GR-; unpredictable behavior may result
 
-You tried to use a feature that requires run-time type information without enabling run-time type information. Recompile with [/GR](../../build/reference/gr-enable-run-time-type-information.md).
+## Remarks
+
+You tried to use the [`dynamic_cast` operator](../../cpp/dynamic-cast-operator.md) or [`typeid` operator](../../cpp/typeid-operator.md), which requires [Run-Time Type Information](../../cpp/run-time-type-information.md) (RTTI), without enabling it. To enable RTTI, recompile with [`/GR`](../../build/reference/gr-enable-run-time-type-information.md).
