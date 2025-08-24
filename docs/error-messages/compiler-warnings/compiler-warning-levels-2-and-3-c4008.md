@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (levels 2 and 3) C4008"
 title: "Compiler Warning (levels 2 and 3) C4008"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (levels 2 and 3) C4008"
+ms.date: 11/04/2016
 f1_keywords: ["C4008"]
 helpviewer_keywords: ["C4008"]
-ms.assetid: fb45e535-cb68-4743-80e9-a6e34cfffeca
 ---
 # Compiler Warning (levels 2 and 3) C4008
 

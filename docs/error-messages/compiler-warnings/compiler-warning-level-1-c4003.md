@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, Error) C4003"
 title: "Compiler Warning (level 1, Error) C4003"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1, Error) C4003"
+ms.date: 11/04/2016
 f1_keywords: ["C4003"]
 helpviewer_keywords: ["C4003"]
 ---

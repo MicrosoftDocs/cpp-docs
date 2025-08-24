@@ -1,6 +1,6 @@
 ---
-description: "Learn more about compiler warning (level 1) C4027"
 title: "Compiler Warning (level 1) C4027"
+description: "Learn more about compiler warning (level 1) C4027"
 ms.date: 12/16/2020
 f1_keywords: ["C4027"]
 helpviewer_keywords: ["C4027"]

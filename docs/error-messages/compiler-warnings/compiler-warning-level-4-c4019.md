@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4019"
 title: "Compiler Warning (level 4) C4019"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4019"
+ms.date: 11/04/2016
 f1_keywords: ["C4019"]
 helpviewer_keywords: ["C4019"]
-ms.assetid: 4ecfe85d-673f-4334-8154-36fe7f0b3444
 ---
 # Compiler Warning (level 4) C4019
 

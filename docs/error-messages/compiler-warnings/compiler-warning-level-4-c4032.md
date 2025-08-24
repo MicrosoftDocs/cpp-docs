@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4032"
 title: "Compiler Warning (level 4) C4032"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4032"
+ms.date: 11/04/2016
 f1_keywords: ["C4032"]
 helpviewer_keywords: ["C4032"]
-ms.assetid: 70dd0c85-0239-43f9-bb06-507f6a57d206
 ---
 # Compiler Warning (level 4) C4032
 

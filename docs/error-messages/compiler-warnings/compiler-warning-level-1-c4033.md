@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4033"
 title: "Compiler Warning (level 1) C4033"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4033"
+ms.date: 11/04/2016
 f1_keywords: ["C4033"]
 helpviewer_keywords: ["C4033"]
-ms.assetid: 189a9ec3-ff6d-49dd-b9b2-530b28bbb7c9
 ---
 # Compiler Warning (level 1) C4033
 

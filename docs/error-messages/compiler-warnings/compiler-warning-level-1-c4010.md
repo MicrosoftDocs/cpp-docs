@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4010"
 title: "Compiler Warning (level 1) C4010"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4010"
+ms.date: 11/04/2016
 f1_keywords: ["C4010"]
 helpviewer_keywords: ["C4010"]
-ms.assetid: d607a9ff-8f8f-45c0-b07b-3b2f439e5485
 ---
 # Compiler Warning (level 1) C4010
 

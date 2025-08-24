@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4036"
 title: "Compiler Warning (level 1) C4036"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4036"
+ms.date: 11/04/2016
 f1_keywords: ["C4036"]
 helpviewer_keywords: ["C4036"]
-ms.assetid: f0b15359-4d62-48ec-8cb1-a7b36587a47f
 ---
 # Compiler Warning (level 1) C4036
 

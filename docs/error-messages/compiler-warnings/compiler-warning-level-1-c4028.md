@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4028"
 title: "Compiler Warning (level 1) C4028"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4028"
+ms.date: 11/04/2016
 f1_keywords: ["C4028"]
 helpviewer_keywords: ["C4028"]
-ms.assetid: c3e8b70b-e870-416c-a285-bba5f71dbfc6
 ---
 # Compiler Warning (level 1) C4028
 
