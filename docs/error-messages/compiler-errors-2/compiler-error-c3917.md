@@ -17,6 +17,8 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 ## Example
 
+The following example generates C3917:
+
 ```cpp
 // C3917.cpp
 // compile with: /clr /c
