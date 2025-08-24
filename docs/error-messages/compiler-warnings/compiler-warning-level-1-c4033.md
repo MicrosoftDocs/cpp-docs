@@ -8,7 +8,7 @@ ms.assetid: 189a9ec3-ff6d-49dd-b9b2-530b28bbb7c9
 ---
 # Compiler Warning (level 1) C4033
 
-'function' must return a value
+> 'function' must return a value
 
 The function does not return a value. An undefined value is returned.
 

@@ -8,7 +8,7 @@ ms.assetid: 70dd0c85-0239-43f9-bb06-507f6a57d206
 ---
 # Compiler Warning (level 4) C4032
 
-formal parameter 'number' has different type when promoted
+> formal parameter 'number' has different type when promoted
 
 The parameter type is not compatible, through default promotions, with the type in a previous declaration.
 

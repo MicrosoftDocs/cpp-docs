@@ -8,7 +8,7 @@ ms.assetid: 9f9afc71-6e78-463d-9d66-3012d6a3cd5d
 ---
 # Compiler Warning (level 3) C4013
 
-'function' undefined; assuming extern returning int
+> 'function' undefined; assuming extern returning int
 
 The compiler encountered a call to an undefined function.
 

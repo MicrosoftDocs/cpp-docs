@@ -8,6 +8,6 @@ ms.assetid: 54c7f4ed-9386-436e-b4be-bf6c338ded64
 ---
 # Compiler Warning (level 1) C4038
 
-'modifier' : illegal ambient class modifier
+> 'modifier' : illegal ambient class modifier
 
 This modifier cannot be used for classes with **`dllimport`** or [dllexport](../../cpp/dllexport-dllimport.md) attributes.

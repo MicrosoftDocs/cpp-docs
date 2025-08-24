@@ -8,7 +8,7 @@ ms.assetid: 7f2dc79a-9fcb-4d5b-be61-120d9cb487ad
 ---
 # Compiler Warning (level 1) C4005
 
-'identifier' : macro redefinition
+> 'identifier' : macro redefinition
 
 The macro identifier is defined twice. The compiler uses the second macro definition.
 

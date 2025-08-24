@@ -8,7 +8,7 @@ ms.assetid: c3e8b70b-e870-416c-a285-bba5f71dbfc6
 ---
 # Compiler Warning (level 1) C4028
 
-formal parameter 'number' different from declaration
+> formal parameter 'number' different from declaration
 
 The type of the formal parameter does not agree with the corresponding parameter in the declaration. The type in the original declaration is used.
 

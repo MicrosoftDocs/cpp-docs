@@ -8,7 +8,7 @@ ms.assetid: 615d5374-d7c1-42eb-acfd-917c053270c8
 ---
 # Compiler Warning (level 3) C4023
 
-'symbol' : based pointer passed to unprototyped function : parameter number
+> 'symbol' : based pointer passed to unprototyped function : parameter number
 
 Passing a based pointer to an unprototyped function causes the pointer to be normalized, with unpredictable results.
 

@@ -8,7 +8,7 @@ ms.assetid: d607a9ff-8f8f-45c0-b07b-3b2f439e5485
 ---
 # Compiler Warning (level 1) C4010
 
-single-line comment contains line-continuation character
+> single-line comment contains line-continuation character
 
 A single-line comment, which is introduced by //, contains a backslash (\\) that serves as a line-continuation character. The compiler considers the next line to be a continuation and treats it as a comment.
 

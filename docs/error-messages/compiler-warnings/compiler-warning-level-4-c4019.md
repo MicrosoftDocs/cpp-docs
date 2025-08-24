@@ -8,7 +8,7 @@ ms.assetid: 4ecfe85d-673f-4334-8154-36fe7f0b3444
 ---
 # Compiler Warning (level 4) C4019
 
-empty statement at global scope
+> empty statement at global scope
 
 A semicolon at global scope isn't preceded by a statement.
 
