@@ -20,6 +20,8 @@ This warning may be fixed if you remove the extra semicolon.
 
 ## Example
 
+The following example generates C4019:
+
 ```c
 // C4019.c
 // compile with: /Za /W4
