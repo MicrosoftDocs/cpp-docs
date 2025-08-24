@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3891"
 title: "Compiler Error C3891"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3891"
+ms.date: 11/04/2016
 f1_keywords: ["C3891"]
 helpviewer_keywords: ["C3891"]
-ms.assetid: 6e1a9458-97f5-4580-bc0f-aa97a1bfd20d
 ---
 # Compiler Error C3891
 

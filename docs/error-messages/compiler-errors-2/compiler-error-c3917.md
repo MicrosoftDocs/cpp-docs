@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3917"
 title: "Compiler Error C3917"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3917"
+ms.date: 11/04/2016
 f1_keywords: ["C3917"]
 helpviewer_keywords: ["C3917"]
-ms.assetid: a24cd0c9-262f-46e5-9488-1c01f945933d
 ---
 # Compiler Error C3917
 

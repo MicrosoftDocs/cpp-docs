@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3900"
 title: "Compiler Error C3900"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3900"
+ms.date: 11/04/2016
 f1_keywords: ["C3900"]
 helpviewer_keywords: ["C3900"]
-ms.assetid: a94cc561-8fa8-4344-9e01-e81ff462fae5
 ---
 # Compiler Error C3900
 

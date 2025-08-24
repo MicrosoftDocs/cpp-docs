@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3908"
 title: "Compiler Error C3908"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3908"
+ms.date: 11/04/2016
 f1_keywords: ["C3908"]
 helpviewer_keywords: ["C3908"]
-ms.assetid: 3c322482-c79e-4197-a578-2ad9bc379d1a
 ---
 # Compiler Error C3908
 

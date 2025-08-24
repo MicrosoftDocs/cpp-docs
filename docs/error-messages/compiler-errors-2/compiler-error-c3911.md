@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3911"
 title: "Compiler Error C3911"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3911"
+ms.date: 11/04/2016
 f1_keywords: ["C3911"]
 helpviewer_keywords: ["C3911"]
-ms.assetid: b786da59-0e99-479d-bc0d-551126e940f2
 ---
 # Compiler Error C3911
 

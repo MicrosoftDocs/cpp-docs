@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3893"
 title: "Compiler Error C3893"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3893"
+ms.date: 11/04/2016
 f1_keywords: ["C3893"]
 helpviewer_keywords: ["C3893"]
-ms.assetid: 90d52eae-6ef2-4db1-b7ad-92f9e8b140fb
 ---
 # Compiler Error C3893
 

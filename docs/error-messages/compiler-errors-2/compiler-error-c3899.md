@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3899"
 title: "Compiler Error C3899"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3899"
+ms.date: 11/04/2016
 f1_keywords: ["C3899"]
 helpviewer_keywords: ["C3899"]
-ms.assetid: 14e07e4a-f7a7-4309-baaa-649d69e12e23
 ---
 # Compiler Error C3899
 

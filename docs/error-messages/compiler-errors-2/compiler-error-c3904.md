@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3904"
 title: "Compiler Error C3904"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3904"
+ms.date: 11/04/2016
 f1_keywords: ["C3904"]
 helpviewer_keywords: ["C3904"]
-ms.assetid: 08297605-e4f2-4c6c-b637-011f1fd40631
 ---
 # Compiler Error C3904
 

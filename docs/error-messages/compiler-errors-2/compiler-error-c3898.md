@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3898"
 title: "Compiler Error C3898"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3898"
+ms.date: 11/04/2016
 f1_keywords: ["C3898"]
 helpviewer_keywords: ["C3898"]
-ms.assetid: d9a90df6-87e4-4fe7-ab01-c226ee86bf10
 ---
 # Compiler Error C3898
 

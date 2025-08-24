@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3923"
 title: "Compiler Error C3923"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3923"
+ms.date: 11/04/2016
 f1_keywords: ["C3923"]
 helpviewer_keywords: ["C3923"]
-ms.assetid: db8838e9-6344-4cd6-83e0-a8abeb12c4c0
 ---
 # Compiler Error C3923
 

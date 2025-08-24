@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3892"
 title: "Compiler Error C3892"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3892"
+ms.date: 11/04/2016
 f1_keywords: ["C3892"]
 helpviewer_keywords: ["C3892"]
-ms.assetid: 83fff42c-ea48-442f-bc2e-b33a6b99d890
 ---
 # Compiler Error C3892
 

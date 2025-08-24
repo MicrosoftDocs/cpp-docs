@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3909"
 title: "Compiler Error C3909"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3909"
+ms.date: 11/04/2016
 f1_keywords: ["C3909"]
 helpviewer_keywords: ["C3909"]
-ms.assetid: 0a443132-e53f-42dc-a58b-f086da3e7bfd
 ---
 # Compiler Error C3909
 
