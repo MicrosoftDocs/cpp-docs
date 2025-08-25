@@ -24,11 +24,9 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`continue_on_error` | `0` | Allows an application to continue running while reporting unique memory safety errors. `0` - disabled, `1` - output to `stdout`, `2` - output to `stderr`. See [continue_on_error](asan-continue-on-error.md).|
 |`detect_container_overflow` | `true` | If `true`, honor the container overflow  annotations. See [ContainerOverflow](./error-container-overflow.md).|
 |`detect_invalid_pointer_pairs` | `0` | If `1`, ASan detects operations like <, <=, >, >=, and - on invalid pointer pairs, such as pointers that belong to different objects.|
-
 |`detect_stack_use_after_return` | `false` | Experimental. If `true`, ASan enables `stack-use-after-return` checking at runtime. Requires `/fsanitize-address-use-after-return`. See [stack-use-after-return](./error-stack-use-after-return.md).|
 |`exitcode` | `1` | Override the program exit status with this value if ASan found an error.|
 |`external_symbolizer_path` | `""` | Path to external symbolizer. If empty, ASan will search `$PATH` for the symbolizer.|
-
 |`fast_unwind_on_malloc` | `true` | If available, ASan uses the fast frame-pointer-based unwinder on `malloc`/`free`.|
 |`halt_on_error` | `true` | Not supported. Use `continue_on_error` for full support.|
 |`handle_segv` | `true` | If `true`, ASan handles `SEGV` errors.|
@@ -54,7 +52,6 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`redzone` | `16` | Minimal size (in bytes) of redzones around heap objects. Requirement: `redzone` >= 16, is a power of two.|
 |`replace_str` | `true` | If `true`, uses custom wrappers and replacements for libc string functions to find more errors.|
 |`report_globals` | `1` | Controls the way to handle globals: `0` - don't detect buffer overflow on globals, `1` - detect buffer overflow, `2` - detect buffer overflow and print data about registered globals.|
-
 |`sleep_before_dying` | `0` | Number of seconds to sleep between printing an error report and terminating the program.|
 |`stack_trace_format` | `DEFAULT` | Format string used to render stack frames.|
 |`strict_memcmp` | `true` | If `true`, assume that `memcmp(p1, p2, n)` always reads `n` bytes before comparing `p1` and `p2`.|
