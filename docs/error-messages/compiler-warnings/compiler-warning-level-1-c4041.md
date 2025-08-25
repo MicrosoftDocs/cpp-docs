@@ -8,7 +8,7 @@ ms.assetid: 107ee9fd-4b88-4f22-a18f-a20726831095
 ---
 # Compiler Warning (level 1) C4041
 
-compiler limit : terminating browser output
+> compiler limit : terminating browser output
 
 Browser information exceeded the compiler limit.
 

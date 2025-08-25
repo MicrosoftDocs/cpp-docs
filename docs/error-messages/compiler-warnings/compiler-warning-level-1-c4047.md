@@ -8,7 +8,7 @@ ms.assetid: b75ad6fb-5c93-4434-a85f-c4083051a5de
 ---
 # Compiler Warning (level 1) C4047
 
-'operator' : 'identifier1' differs in levels of indirection from 'identifier2'
+> 'operator' : 'identifier1' differs in levels of indirection from 'identifier2'
 
 A pointer can point to a variable (one level of indirection), to another pointer that points to a variable (two levels of indirection), and so on.
 

@@ -8,7 +8,7 @@ ms.assetid: cd510e66-c338-4a86-a4d7-bfa1df9b16c3
 ---
 # Compiler Warning (level 1) C4074
 
-initializers put in compiler reserved initialization area
+> initializers put in compiler reserved initialization area
 
 The compiler initialization area, which is specified by [#pragma init_seg](../../preprocessor/init-seg.md), is reserved by Microsoft. Code in this area may be executed before initialization of the C run-time library.
 

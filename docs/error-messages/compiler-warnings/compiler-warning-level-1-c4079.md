@@ -8,7 +8,7 @@ ms.assetid: 549759f0-e168-47e9-8c9a-de93ac843689
 ---
 # Compiler Warning (level 1) C4079
 
-unexpected token 'token'
+> unexpected token 'token'
 
 An unexpected separator token occurs in a pragma argument list. The remainder of the pragma was ignored.
 

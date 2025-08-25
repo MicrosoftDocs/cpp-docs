@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4066"]
 ---
 # Compiler Warning (level 3) C4066
 
-characters beyond first in wide-character constant ignored
+> characters beyond first in wide-character constant ignored
 
 The compiler processes only the first character of a wide-character constant.
 

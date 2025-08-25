@@ -8,7 +8,7 @@ ms.assetid: a3c3a9b8-ec30-452d-96cb-3694adcce789
 ---
 # Compiler Warning (level 2) C4056
 
-overflow in floating point constant arithmetic
+> overflow in floating point constant arithmetic
 
 Floating-point constant arithmetic generates a result that exceeds the maximum allowable value.
 

@@ -8,7 +8,7 @@ ms.assetid: 96a7397a-4eab-44ab-b3bb-36747503f7e5
 ---
 # Compiler Warning (level 1) C4068
 
-unknown pragma
+> unknown pragma
 
 The compiler ignored an unrecognized [pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md). Be sure the **pragma** is allowed by the compiler you are using. The following sample generates C4068:
 

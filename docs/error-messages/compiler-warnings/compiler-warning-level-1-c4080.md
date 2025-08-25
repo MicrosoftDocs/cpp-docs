@@ -8,7 +8,7 @@ ms.assetid: 964fb3f4-b9fd-450b-aa23-35cece126172
 ---
 # Compiler Warning (level 1) C4080
 
-expected identifier for segment name; found 'symbol'
+> expected identifier for segment name; found 'symbol'
 
 The name of the segment in [#pragma alloc_text](../../preprocessor/alloc-text.md) must be a string or an identifier. The compiler ignores the pragma if a valid identifier is not found.
 

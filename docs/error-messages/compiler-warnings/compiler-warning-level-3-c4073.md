@@ -8,7 +8,7 @@ ms.assetid: 50081a6e-6acd-45ff-8484-9b1ea926cc5c
 ---
 # Compiler Warning (level 3) C4073
 
-initializers put in library initialization area
+> initializers put in library initialization area
 
 Only third-party library developers should use the library initialization area, which is specified by [#pragma init_seg](../../preprocessor/init-seg.md). The following sample generates C4073:
 

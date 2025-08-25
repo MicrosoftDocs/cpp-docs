@@ -8,7 +8,7 @@ ms.assetid: e4bd861b-1194-426b-bf79-68c5b021eb0a
 ---
 # Compiler Warning (level 1) C4042
 
-'identifier' : has bad storage class
+> 'identifier' : has bad storage class
 
 The specified storage class cannot be used with this identifier in this context. The compiler uses the default storage class instead:
 

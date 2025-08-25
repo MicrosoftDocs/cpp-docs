@@ -8,6 +8,6 @@ ms.assetid: e3b8c46e-e36d-412c-99b9-3db860b6e307
 ---
 # Compiler Warning (level 4) C4053
 
-one void operand for '?:'
+> one void operand for '?:'
 
 The `?:` operator is given an expression of type **`void`**. The value of the **`void`** operand is undefined.

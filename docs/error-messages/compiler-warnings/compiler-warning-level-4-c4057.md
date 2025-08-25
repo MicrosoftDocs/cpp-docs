@@ -8,7 +8,7 @@ ms.assetid: e75d0645-84c9-4bef-a812-942ed9879aa3
 ---
 # Compiler Warning (level 4) C4057
 
-'operator' : 'identifier1' indirection to slightly different base types from 'identifier2'
+> 'operator' : 'identifier1' indirection to slightly different base types from 'identifier2'
 
 Two pointer expressions refer to different base types. The expressions are used without conversion.
 

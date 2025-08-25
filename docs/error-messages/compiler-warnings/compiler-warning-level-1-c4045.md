@@ -8,7 +8,7 @@ ms.assetid: 3c6f7373-da91-45cd-b224-f49f7d8b4df0
 ---
 # Compiler Warning (level 1) C4045
 
-'array' : array bounds overflow
+> 'array' : array bounds overflow
 
 The array has too many initializers. Extra initializers are ignored.
 

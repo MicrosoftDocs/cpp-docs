@@ -8,7 +8,7 @@ ms.assetid: d11c1870-bcfc-4d71-8945-b87ec6ec3514
 ---
 # Compiler Warning (level 1) C4049
 
-compiler limit : terminating line number emission
+> compiler limit : terminating line number emission
 
 The file contains more than 16,777,215 (2<sup>24</sup>-1) source lines. The compiler stops numbering at 16,777,215.
 

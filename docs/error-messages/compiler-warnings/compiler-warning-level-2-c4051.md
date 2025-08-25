@@ -8,7 +8,7 @@ ms.assetid: 8c964e70-df12-45ff-93b9-496ad4271191
 ---
 # Compiler Warning (level 2) C4051
 
-type conversion; possible loss of data
+> type conversion; possible loss of data
 
 An expression contains two data items with different base types. Converting one type causes the data item to be truncated.
 
