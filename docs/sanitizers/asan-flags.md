@@ -17,13 +17,13 @@ The following table lists actively supported options for the AddressSanitizer. T
 |------|---------------|-------------|
 |`abort_on_error` | `false` | If `true`, ASan calls `abort()` instead of `_exit()` after printing the error report.|
 |`alloc_dealloc_mismatch` | `false` | Enables detection of mismatched memory operations such as `malloc`/`delete`, `new[]`/`free`, etc.|
-|`allocator_frees_and_returns_null_on_realloc_zero` | `1` | If set to `1`, `realloc(p, 0)` is equivalent to `free(p)` by default (same as the POSIX standard). If set to `0`, `realloc(p, 0)` returns a pointer to an allocated space that can't be used. |
+|`allocator_frees_and_returns_null_on_realloc_zero` | `true` | If set to `true`, `realloc(p, 0)` is equivalent to `free(p)` by default (same as the POSIX standard). If set to `false`, `realloc(p, 0)` returns a pointer to an allocated space that can't be used. |
 |`allocator_may_return_null` | `false` | If `true`, the allocator returns `nullptr` when out of memory. Instead of crashing, ASan emits a warning about the allocator's failure and execution continues.|
 |`allow_user_poisoning` | `true` | If `true`, you may manually mark memory regions as poisoned or unpoisoned using [these](./asan-runtime.md#poisoning) APIs.|
 |`check_initialization_order` | `false` | If `true`, attempts to catch initialization order issues.|
 |`continue_on_error` | `0` | Allows an application to continue running while reporting unique memory safety errors. `0` - disabled, `1` - enabled, and error output is sent to `stdout`, `2` - enabled, and error output is sent to `stderr`. See [continue_on_error](asan-continue-on-error.md).|
 |`detect_container_overflow` | `true` | If `true`, honor the container overflow  annotations. See [ContainerOverflow](./error-container-overflow.md).|
-|`detect_invalid_pointer_pairs` | `0` | If `1`, ASan detects operations like `<`, `<=`, `>`, `>=`, and `-` on invalid pointer pairs, such as pointers that belong to different objects.|
+|`detect_invalid_pointer_pairs` | `false` | If `true`, ASan detects operations like `<`, `<=`, `>`, `>=`, and `-` on invalid pointer pairs, such as pointers that belong to different objects.|
 |`detect_stack_use_after_return` | `false` | Experimental. If `true`, ASan enables `stack-use-after-return` checking at runtime. Requires `/fsanitize-address-use-after-return`. See [stack-use-after-return](./error-stack-use-after-return.md).|
 |`exitcode` | `1` | Override the program exit status with this value if ASan found an error.|
 |`external_symbolizer_path` | `""` | Path to external symbolizer. If empty, ASan searches `$PATH` for the symbolizer.|
