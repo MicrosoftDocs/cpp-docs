@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2014"
 description: "Learn more about: Compiler Error C2014"
-ms.date: 11/04/2016
+ms.date: 08/25/2025
 f1_keywords: ["C2014"]
 helpviewer_keywords: ["C2014"]
 ---
@@ -11,7 +11,7 @@ helpviewer_keywords: ["C2014"]
 
 ## Remarks
 
-The `#` sign of a preprocessor directive must be the first character on a line that is not white space.
+The `#` sign of a [preprocessor directive](../../preprocessor/preprocessor-directives.md) must be the first character on a line that is not white space. Ensure that the previous line doesn't contain a trailing escape.
 
 ## Example
 
@@ -19,14 +19,13 @@ The following example generates C2014:
 
 ```cpp
 // C2014.cpp
-int k; #include <stdio.h>   // C2014
-```
-
-Possible resolution:
-
-```cpp
-// C2014b.cpp
 // compile with: /c
-int k;
-#include <stdio.h>
+
+int a; #define A   // C2014
+
+int b;\
+#define B   // C2014
+
+int c;
+#define C   // OK
 ```
