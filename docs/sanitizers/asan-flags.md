@@ -43,7 +43,7 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`malloc_fill_byte` | `0xbe` | Value used to fill the newly allocated memory.|
 |`max_malloc_fill_size` | `4096` | ASan allocator flag. `max_malloc_fill_size` is the maximal amount of bytes that will be filled with `malloc_fill_byte` on `malloc`.|
 |`max_redzone` | `2048` | Maximal size (in bytes) of redzones around heap objects.|
-|`new_delete_type_mismatch` | `true` | Report errors on mismatch betwen size of new and delete. See [new-delete-type-mismatch](./error-new-delete-type-mismatch.md).|
+|`new_delete_type_mismatch` | `true` | Report errors on mismatch between size of `new` and `delete`. See [new-delete-type-mismatch](./error-new-delete-type-mismatch.md).|
 |`poison_heap` | `true` | Poison (or not) the heap memory on (de-)allocation. Zero value is useful for benchmarking the allocator or instrumentator.|
 |`poison_partial` | `true` | If `true`, poison partially addressable 8-byte aligned words. This flag affects heap and global buffers, but not stack buffers.|
 |`print_cmdline` | `false` | Print command line on crash. With `continue_on_error` set >= `1`, print current working directory as `UTF-16` aware.|
