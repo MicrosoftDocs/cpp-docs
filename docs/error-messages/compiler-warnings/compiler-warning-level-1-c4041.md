@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4041"
 title: "Compiler Warning (level 1) C4041"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4041"
+ms.date: 11/04/2016
 f1_keywords: ["C4041"]
 helpviewer_keywords: ["C4041"]
-ms.assetid: 107ee9fd-4b88-4f22-a18f-a20726831095
 ---
 # Compiler Warning (level 1) C4041
 

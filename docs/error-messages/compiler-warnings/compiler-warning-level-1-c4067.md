@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4067"
 title: "Compiler Warning (level 1) C4067"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4067"
+ms.date: 11/04/2016
 f1_keywords: ["C4067"]
 helpviewer_keywords: ["C4067"]
-ms.assetid: 1d10353e-8cd5-4b01-9184-a06189b965a4
 ---
 # Compiler Warning (level 1) C4067
 

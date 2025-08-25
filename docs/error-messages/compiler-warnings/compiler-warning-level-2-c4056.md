@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4056"
 title: "Compiler Warning (level 2) C4056"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4056"
+ms.date: 11/04/2016
 f1_keywords: ["C4056"]
 helpviewer_keywords: ["C4056"]
-ms.assetid: a3c3a9b8-ec30-452d-96cb-3694adcce789
 ---
 # Compiler Warning (level 2) C4056
 

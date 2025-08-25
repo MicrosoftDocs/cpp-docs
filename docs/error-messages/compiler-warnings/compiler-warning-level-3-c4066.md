@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4066"
 title: "Compiler Warning (level 3) C4066"
-ms.date: "03/06/2024"
+description: "Learn more about: Compiler Warning (level 3) C4066"
+ms.date: 03/06/2024
 f1_keywords: ["C4066"]
 helpviewer_keywords: ["C4066"]
 ---

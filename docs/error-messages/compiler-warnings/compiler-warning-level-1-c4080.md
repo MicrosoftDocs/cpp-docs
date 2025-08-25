@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4080"
 title: "Compiler Warning (level 1) C4080"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4080"
+ms.date: 11/04/2016
 f1_keywords: ["C4080"]
 helpviewer_keywords: ["C4080"]
-ms.assetid: 964fb3f4-b9fd-450b-aa23-35cece126172
 ---
 # Compiler Warning (level 1) C4080
 

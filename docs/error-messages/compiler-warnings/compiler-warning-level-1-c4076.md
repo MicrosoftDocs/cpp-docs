@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4076"
 title: "Compiler Warning (level 1) C4076"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4076"
+ms.date: 11/04/2016
 f1_keywords: ["C4076"]
 helpviewer_keywords: ["C4076"]
-ms.assetid: 04581066-313a-4a11-bb60-721e6d038d75
 ---
 # Compiler Warning (level 1) C4076
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4073"
 title: "Compiler Warning (level 3) C4073"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4073"
+ms.date: 11/04/2016
 f1_keywords: ["C4073"]
 helpviewer_keywords: ["C4073"]
-ms.assetid: 50081a6e-6acd-45ff-8484-9b1ea926cc5c
 ---
 # Compiler Warning (level 3) C4073
 
