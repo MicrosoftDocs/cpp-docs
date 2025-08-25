@@ -58,7 +58,7 @@ The following table lists actively supported options for the AddressSanitizer. T
 |`strip_path_prefix` | `""` | Strips this prefix from file paths in error reports.|
 |`symbolize` | `true` | If `true`, use the `llvm-symbolizer` to turn virtual addresses to file or line locations.|
 |`symbolize_inline_frames` | `true` | Print inlined frames in stacktraces.|
-|`verbosity` | `0` | Verbosity level: `0` - default verbosity, `1` - more output, `2` - even more output.|
+|`verbosity` | `0` | Verbosity level: `0` - default verbosity, `1` - more output, `2` - even more output, `3` - current upper limit verbosity level |
 |`windows_fast_fail_on_error`|`false`|If `true`, enable the process to terminate with a `__fastfail(71)` after printing the error report. See [windows_fast_fail_on_error](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
 |`windows_hook_legacy_allocators`|`true`|If `true`, enable hooking of (`Global`/`Local`)(`Alloc`/`Free`/`Size`/`ReAlloc`/`Lock`/`Unlock`) functions.|
 
