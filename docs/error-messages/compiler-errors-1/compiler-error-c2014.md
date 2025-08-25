@@ -19,14 +19,13 @@ The following example generates C2014:
 
 ```cpp
 // C2014.cpp
-int k; #include <stdio.h>   // C2014
-```
-
-Possible resolution:
-
-```cpp
-// C2014b.cpp
 // compile with: /c
-int k;
-#include <stdio.h>
+
+int a; #define A   // C2014
+
+int b;\
+#define B   // C2014
+
+int c;
+#define C   // OK
 ```
