@@ -35,7 +35,7 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`help` | `false` | If `true`, ASan prints the flag options to console.|
 |`iat_overwrite`|`error`|`error` - report an error whenever an overwrite is detected, `protect` - attempt to avoid using the overwritten definition, `ignore` - never attempt to correct any overwritten functions. See [iat_overwrite](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
 |`include_if_exists` | `""` | Takes a path to a file, and reads options from the given file. ASan does not fail if file does not exist.|
-|`intercept_strpbrk` | `true` | If `true`, uses custom wrappers for strpbrk function to find more errors.|
+|`intercept_strpbrk` | `true` | If `true`, uses custom wrappers for `strpbrk` function to find more errors.|
 |`intercept_strspn` | `true` | If `true`, uses custom wrappers for strspn and strcspn function to find more errors.|
 |`intercept_strstr` | `true` | If `true`, uses custom wrappers for strstr and strcasestr functions to find more errors.|
 |`malloc_context_size` | `1` | Max number of stack frames kept for each allocation/deallocation.|
