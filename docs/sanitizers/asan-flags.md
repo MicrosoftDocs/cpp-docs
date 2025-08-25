@@ -19,7 +19,7 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`alloc_dealloc_mismatch` | `false` | Enables detection of mismatched memory operations such as `malloc`/`delete`, `new[]`/`free`, etc.|
 |`allocator_frees_and_returns_null_on_realloc_zero` | `1` | 1 - realloc(p, 0) is equivalent to free(p). 0 - realloc(p, 0) will return a non-`NULL` value.|
 |`allocator_may_return_null` | `false` | If `true`, the allocator will return `nullptr` when out of memory. Instead of crashing, ASan emits a warning about the allocator's failure and execution continues.|
-|`allow_user_poisoning` | `true` | If `true`, you may manually mark memory regions as poisoned or unpoisoned using [these](https://learn.microsoft.com/en-us/cpp/sanitizers/asan-runtime?view=msvc-170#poisoning) APIs.|
+|`allow_user_poisoning` | `true` | If `true`, you may manually mark memory regions as poisoned or unpoisoned using [these](./asan-runtime.md#poisoning) APIs.|
 |`check_initialization_order` | `false` | If `true`, attempts to catch initialization order issues.|
 |`continue_on_error` | `0` | Allows an application to continue running while reporting unique memory safety errors. `0` - disabled, `1` - output to `stdout`, `2` - output to `stderr`. See [continue_on_error](asan-continue-on-error.md).|
 |`detect_container_overflow` | `true` | If `true`, honor the container overflow  annotations. See [ContainerOverflow](./error-container-overflow.md).|
