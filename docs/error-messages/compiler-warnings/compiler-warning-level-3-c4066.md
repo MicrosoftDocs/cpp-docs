@@ -15,6 +15,8 @@ The compiler processes only the first character of a wide-character constant.
 
 ## Example
 
+The following example generates C4066:
+
 ```cpp
 // C4066.cpp
 // compile with: /W3

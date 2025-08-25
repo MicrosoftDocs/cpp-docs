@@ -17,6 +17,8 @@ The compiler ignores the pragma and leaves the stack checking unchanged.
 
 ## Example
 
+The following example generates C4077:
+
 ```cpp
 // C4077.cpp
 // compile with: /W1 /LD

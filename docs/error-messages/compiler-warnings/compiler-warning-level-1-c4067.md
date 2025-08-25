@@ -15,6 +15,8 @@ The compiler found and ignored extra characters following a preprocessor directi
 
 ## Example
 
+The following example generates C4067:
+
 ```cpp
 // C4067a.cpp
 // compile with: cl /EHsc /DX /W1 /Za C4067a.cpp
