@@ -17,7 +17,7 @@ The following table lists actively supported options for the AddressSanitizer. T
 |------|---------------|-------------|
 |`abort_on_error` | `false` | If `true`, ASan calls `abort()` instead of `_exit()` after printing the error report.|
 |`alloc_dealloc_mismatch` | `false` | Enables detection of mismatched memory operations such as `malloc`/`delete`, `new[]`/`free`, etc.|
-|`allocator_frees_and_returns_null_on_realloc_zero` | `1` | If set to `1`, realloc(p, 0) is equivalent to free(p) by default (same as the POSIX standard). If set to `0`, realloc(p, 0) will return a pointer to an allocated space which can not be used. |
+|`allocator_frees_and_returns_null_on_realloc_zero` | `1` | If set to `1`, `realloc(p, 0)` is equivalent to `free(p)` by default (same as the POSIX standard). If set to `0`, `realloc(p, 0)` returns a pointer to an allocated space that can't be used. |
 |`allocator_may_return_null` | `false` | If `true`, the allocator returns `nullptr` when out of memory. Instead of crashing, ASan emits a warning about the allocator's failure and execution continues.|
 |`allow_user_poisoning` | `true` | If `true`, you may manually mark memory regions as poisoned or unpoisoned using [these](./asan-runtime.md#poisoning) APIs.|
 |`check_initialization_order` | `false` | If `true`, attempts to catch initialization order issues.|
