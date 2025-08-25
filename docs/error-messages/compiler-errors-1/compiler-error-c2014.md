@@ -11,7 +11,7 @@ helpviewer_keywords: ["C2014"]
 
 ## Remarks
 
-The `#` sign of a preprocessor directive must be the first character on a line that is not white space.
+The `#` sign of a [preprocessor directive](../../preprocessor/preprocessor-directives.md) must be the first character on a line that is not white space. Ensure that the previous line doesn't contain a trailing escape.
 
 ## Example
 
