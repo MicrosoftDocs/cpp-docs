@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2014"
 description: "Learn more about: Compiler Error C2014"
-ms.date: 11/04/2016
+ms.date: 08/25/2025
 f1_keywords: ["C2014"]
 helpviewer_keywords: ["C2014"]
 ---
