@@ -37,14 +37,14 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`iat_overwrite`|`error`|`error` - report an error whenever an overwrite is detected, `protect` - attempt to avoid using the overwritten definition, `ignore` - never attempt to correct any overwritten functions. See [iat_overwrite](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
 |`include_if_exists` | `""` | Takes a path to a file, and reads options from the given file. ASan does not fail if file does not exist.|
 |`intercept_strpbrk` | `true` | If `true`, uses custom wrappers for `strpbrk` function to find more errors.|
-|`intercept_strspn` | `true` | If `true`, uses custom wrappers for strspn and strcspn function to find more errors.|
-|`intercept_strstr` | `true` | If `true`, uses custom wrappers for strstr and strcasestr functions to find more errors.|
+|`intercept_strspn` | `true` | If `true`, uses custom wrappers for `strspn` and `strcspn` function to find more errors.|
+|`intercept_strstr` | `true` | If `true`, uses custom wrappers for `strstr` and `strcasestr` functions to find more errors.|
 |`malloc_context_size` | `1` | Max number of stack frames kept for each allocation/deallocation.|
 |`malloc_fill_byte` | `0xbe` | Value used to fill the newly allocated memory.|
 |`max_malloc_fill_size` | `4096` | ASan allocator flag. `max_malloc_fill_size` is the maximal amount of bytes that will be filled with `malloc_fill_byte` on `malloc`.|
 |`max_redzone` | `2048` | Maximal size (in bytes) of redzones around heap objects.|
 |`new_delete_type_mismatch` | `true` | Report errors on mismatch between size of `new` and `delete`. See [new-delete-type-mismatch](./error-new-delete-type-mismatch.md).|
-|`poison_heap` | `true` | Poison (or not) the heap memory on (de-)allocation. Zero value is useful for benchmarking the allocator or instrumentator.|
+|`poison_heap` | `true` | If `true`, poison the heap memory on (de-)allocation. `false` is useful for benchmarking the allocator or instrumentator.|
 |`poison_partial` | `true` | If `true`, poison partially addressable 8-byte aligned words. This flag affects heap and global buffers, but not stack buffers.|
 |`print_cmdline` | `false` | Print command line on crash. With `continue_on_error` set >= `1`, print current working directory as `UTF-16` aware.|
 |`print_summary` | `true` | If `false`, disable printing error summaries in addition to error reports.|
@@ -61,7 +61,7 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`strip_path_prefix` | `""` | Strips this prefix from file paths in error reports.|
 |`symbolize` | `true` | If `true`, use the `llvm-symbolizer` to turn virtual addresses to file or line locations.|
 |`symbolize_inline_frames` | `true` | Print inlined frames in stacktraces.|
-|`verbosity` | `0` | Verbosity level: `0` - default, `1` - more, `2+` - even more output.|
+|`verbosity` | `0` | Verbosity level: `0` - default verbosity, `1` - more output, `2` - even more output.|
 |`windows_fast_fail_on_error`|`false`|If `true`, enable the process to terminate with a `__fastfail(71)` after printing the error report. See [windows_fast_fail_on_error](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
 |`windows_hook_legacy_allocators`|`true`|If `true`, enable hooking of (`Global`/`Local`)(`Alloc`/`Free`/`Size`/`ReAlloc`/`Lock`/`Unlock`) functions.|
 
