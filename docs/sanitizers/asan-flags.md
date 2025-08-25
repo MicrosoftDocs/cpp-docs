@@ -52,7 +52,8 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`quarantine_size_mb` | `-1` | Size (in Mb) of quarantine used to detect `use-after-free` errors. Lower value may increase the chance of false negatives.|
 |`redzone` | `16` | Minimal size (in bytes) of redzones around heap objects. Requirement: `redzone` >= 16, is a power of two.|
 |`replace_str` | `true` | If `true`, uses custom wrappers and replacements for libc string functions to find more errors.|
-|`report_globals` | `1` | Controls the way to handle globals (`0` - don't detect buffer overflow on globals, `1` - detect buffer overflow, `2` - detect buffer overflow and print data about registered globals).|
+|`report_globals` | `1` | Controls the way to handle globals: `0` - don't detect buffer overflow on globals, `1` - detect buffer overflow, `2` - detect buffer overflow and print data about registered globals.|
+
 |`sleep_before_dying` | `0` | Number of seconds to sleep between printing an error report and terminating the program.|
 |`stack_trace_format` | `DEFAULT` | Format string used to render stack frames.|
 |`strict_memcmp` | `true` | If `true`, assume that `memcmp(p1, p2, n)` always reads `n` bytes before comparing `p1` and `p2`.|
