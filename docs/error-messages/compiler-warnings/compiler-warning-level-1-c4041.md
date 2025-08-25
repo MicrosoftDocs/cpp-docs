@@ -10,6 +10,8 @@ ms.assetid: 107ee9fd-4b88-4f22-a18f-a20726831095
 
 > compiler limit : terminating browser output
 
+## Remarks
+
 Browser information exceeded the compiler limit.
 
 This warning can be caused by compiling with [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md) (browser information including local variables).

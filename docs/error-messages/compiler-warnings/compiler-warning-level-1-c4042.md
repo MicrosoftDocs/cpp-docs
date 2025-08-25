@@ -10,6 +10,8 @@ ms.assetid: e4bd861b-1194-426b-bf79-68c5b021eb0a
 
 > 'identifier' : has bad storage class
 
+## Remarks
+
 The specified storage class cannot be used with this identifier in this context. The compiler uses the default storage class instead:
 
 - **`extern`**, if *identifier* is a function.
@@ -19,6 +21,8 @@ The specified storage class cannot be used with this identifier in this context.
 - No storage class, if *identifier* is a global variable.
 
 This warning can be caused by specifying a storage class other than **`register`** in a parameter declaration.
+
+## Example
 
 The following sample generates C4042
 

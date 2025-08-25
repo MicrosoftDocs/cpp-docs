@@ -10,9 +10,13 @@ ms.assetid: a3c3a9b8-ec30-452d-96cb-3694adcce789
 
 > overflow in floating point constant arithmetic
 
+## Remarks
+
 Floating-point constant arithmetic generates a result that exceeds the maximum allowable value.
 
 This warning can be caused by compiler optimizations performed during constant arithmetic. You can safely ignore this warning if it goes away when you turn off optimization ([/Od](../../build/reference/od-disable-debug.md)).
+
+## Example
 
 The following sample generates C4056:
 

@@ -10,7 +10,13 @@ ms.assetid: 96a7397a-4eab-44ab-b3bb-36747503f7e5
 
 > unknown pragma
 
-The compiler ignored an unrecognized [pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md). Be sure the **pragma** is allowed by the compiler you are using. The following sample generates C4068:
+## Remarks
+
+The compiler ignored an unrecognized [pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md). Be sure the **pragma** is allowed by the compiler you are using.
+
+## Example
+
+The following sample generates C4068:
 
 ```cpp
 // C4068.cpp

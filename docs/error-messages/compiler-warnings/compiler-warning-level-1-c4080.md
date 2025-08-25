@@ -10,7 +10,11 @@ ms.assetid: 964fb3f4-b9fd-450b-aa23-35cece126172
 
 > expected identifier for segment name; found 'symbol'
 
+## Remarks
+
 The name of the segment in [#pragma alloc_text](../../preprocessor/alloc-text.md) must be a string or an identifier. The compiler ignores the pragma if a valid identifier is not found.
+
+## Example
 
 The following sample generates C4080:
 

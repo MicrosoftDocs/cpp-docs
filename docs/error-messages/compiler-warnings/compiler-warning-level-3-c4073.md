@@ -10,7 +10,13 @@ ms.assetid: 50081a6e-6acd-45ff-8484-9b1ea926cc5c
 
 > initializers put in library initialization area
 
-Only third-party library developers should use the library initialization area, which is specified by [#pragma init_seg](../../preprocessor/init-seg.md). The following sample generates C4073:
+## Remarks
+
+Only third-party library developers should use the library initialization area, which is specified by [#pragma init_seg](../../preprocessor/init-seg.md).
+
+## Example
+
+The following sample generates C4073:
 
 ```cpp
 // C4073.cpp

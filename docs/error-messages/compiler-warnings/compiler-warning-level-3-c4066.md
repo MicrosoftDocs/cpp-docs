@@ -9,7 +9,11 @@ helpviewer_keywords: ["C4066"]
 
 > characters beyond first in wide-character constant ignored
 
+## Remarks
+
 The compiler processes only the first character of a wide-character constant.
+
+## Example
 
 ```cpp
 // C4066.cpp

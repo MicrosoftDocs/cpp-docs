@@ -10,7 +10,11 @@ ms.assetid: cd510e66-c338-4a86-a4d7-bfa1df9b16c3
 
 > initializers put in compiler reserved initialization area
 
+## Remarks
+
 The compiler initialization area, which is specified by [#pragma init_seg](../../preprocessor/init-seg.md), is reserved by Microsoft. Code in this area may be executed before initialization of the C run-time library.
+
+## Example
 
 The following sample generates C4074:
 

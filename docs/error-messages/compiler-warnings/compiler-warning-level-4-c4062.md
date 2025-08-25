@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4062"]
 
 > enumerator '*identifier*' in switch of `enum` '*enumeration*' is not handled
 
+## Remarks
+
 The enumerator *identifier* doesn't have a `case` handler associated with it in a **`switch`** statement, and there's no **`default`** label that can catch it. The missing case may be an oversight, and is a potential error in your code. For a related warning on unused enumerators in **`switch`** statements that have a **`default`** case, see [C4061](compiler-warning-level-4-c4061.md).
 
 This warning is off by default. For more information about how to enable warnings that are off by default, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).

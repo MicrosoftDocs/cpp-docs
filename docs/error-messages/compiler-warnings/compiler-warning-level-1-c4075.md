@@ -10,7 +10,11 @@ ms.assetid: 19a700b6-f210-4b9d-a2f2-76cfe39ab178
 
 > initializers put in unrecognized initialization area
 
+## Remarks
+
 A [#pragma init_seg](../../preprocessor/init-seg.md) uses an unrecognized section name. The compiler ignores the **pragma** command.
+
+## Example
 
 The following sample generates C4075:
 

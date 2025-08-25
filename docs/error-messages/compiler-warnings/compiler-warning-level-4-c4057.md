@@ -10,6 +10,8 @@ ms.assetid: e75d0645-84c9-4bef-a812-942ed9879aa3
 
 > 'operator' : 'identifier1' indirection to slightly different base types from 'identifier2'
 
+## Remarks
+
 Two pointer expressions refer to different base types. The expressions are used without conversion.
 
 ### To fix by checking the following possible causes

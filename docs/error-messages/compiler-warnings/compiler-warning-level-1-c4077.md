@@ -10,6 +10,8 @@ ms.assetid: c2d28805-b33f-41ad-afba-33b3f788c649
 
 > unknown check_stack option
 
+## Remarks
+
 The old form of the **check_stack** pragma is used with an unknown argument. The argument must be `+`, `-`, `(on)`, `(off)`, or empty.
 
 The compiler ignores the pragma and leaves the stack checking unchanged.

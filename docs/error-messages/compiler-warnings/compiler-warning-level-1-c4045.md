@@ -10,6 +10,8 @@ ms.assetid: 3c6f7373-da91-45cd-b224-f49f7d8b4df0
 
 > 'array' : array bounds overflow
 
+## Remarks
+
 The array has too many initializers. Extra initializers are ignored.
 
 Make sure that array elements and initializers match in size and quantity.
