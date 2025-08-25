@@ -7,18 +7,18 @@ helpviewer_keywords: ["AddressSanitizer options", "AddressSanitizer flags", "Add
 
 # AddressSanitizer Runtime Options
 
-The following is a list of actively supported options for the AddressSanitizer. They can be enabled through the `ASAN_OPTIONS` environment variable or by overriding the `__asan_default_options()` user function, as described [here](./asan-runtime.md#runtime-options). 
+The following table lists actively supported options for the AddressSanitizer. They can be enabled through the `ASAN_OPTIONS` environment variable or by overriding the `__asan_default_options()` user function, as described [here](./asan-runtime.md#runtime-options). 
 
 > [!NOTE]
-> These descriptions may vary from those in Clang's ASan docs to account for MSVC specific behaviors.
+> These descriptions may vary from the runtime options in Clang's ASan docs to account for MSVC specific behaviors.
 
 
 | Flag | Default value | Description |
 |------|---------------|-------------|
 |`abort_on_error` | `false` | If `true`, ASan calls `abort()` instead of `_exit()` after printing the error report.|
 |`alloc_dealloc_mismatch` | `false` | Enables detection of mismatched memory operations such as `malloc`/`delete`, `new[]`/`free`, etc.|
-|`allocator_frees_and_returns_null_on_realloc_zero` | `1` | 1 - `realloc(p, 0)` is equivalent to `free(p)`. 0 - `realloc(p, 0)` will return a non-`NULL` value.|
-|`allocator_may_return_null` | `false` | If `true`, the allocator will return `nullptr` when out of memory. Instead of crashing, ASan emits a warning about the allocator's failure and execution continues.|
+|`allocator_frees_and_returns_null_on_realloc_zero` | `1` | 1 - `realloc(p, 0)` is equivalent to `free(p)`. 0 - `realloc(p, 0)` returns a non-`NULL` value.|
+|`allocator_may_return_null` | `false` | If `true`, the allocator returns `nullptr` when out of memory. Instead of crashing, ASan emits a warning about the allocator's failure and execution continues.|
 |`allow_user_poisoning` | `true` | If `true`, you may manually mark memory regions as poisoned or unpoisoned using [these](./asan-runtime.md#poisoning) APIs.|
 |`check_initialization_order` | `false` | If `true`, attempts to catch initialization order issues.|
 |`continue_on_error` | `0` | Allows an application to continue running while reporting unique memory safety errors. `0` - disabled, `1` - output to `stdout`, `2` - output to `stderr`. See [continue_on_error](asan-continue-on-error.md).|
@@ -26,12 +26,12 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`detect_invalid_pointer_pairs` | `0` | If `1`, ASan detects operations like <, <=, >, >=, and - on invalid pointer pairs, such as pointers that belong to different objects.|
 |`detect_stack_use_after_return` | `false` | Experimental. If `true`, ASan enables `stack-use-after-return` checking at runtime. Requires `/fsanitize-address-use-after-return`. See [stack-use-after-return](./error-stack-use-after-return.md).|
 |`exitcode` | `1` | Override the program exit status with this value if ASan found an error.|
-|`external_symbolizer_path` | `""` | Path to external symbolizer. If empty, ASan will search `$PATH` for the symbolizer.|
+|`external_symbolizer_path` | `""` | Path to external symbolizer. If empty, ASan searches `$PATH` for the symbolizer.|
 |`fast_unwind_on_malloc` | `true` | If available, ASan uses the fast frame-pointer-based unwinder on `malloc`/`free`.|
 |`halt_on_error` | `true` | Not supported. Use `continue_on_error` for full support.|
 |`handle_segv` | `true` | If `true`, ASan handles `SEGV` errors.|
-|`handle_sigfpe` | `true` | If `true`, ASan will handle `SIGFPE` errors.|
-|`handle_sigill` | `true` | If `true`, ASan will handle `SIGILL` errors.|
+|`handle_sigfpe` | `true` | If `true`, ASan handles `SIGFPE` errors.|
+|`handle_sigill` | `true` | If `true`, ASan handles `SIGILL` errors.|
 |`help` | `false` | If `true`, ASan prints the flag options to console.|
 |`iat_overwrite`|`error`|`error` - report an error whenever an overwrite is detected, `protect` - attempt to avoid using the overwritten definition, `ignore` - never attempt to correct any overwritten functions. See [iat_overwrite](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
 |`include_if_exists` | `""` | Takes a path to a file, and reads options from the given file. ASan does not fail if file does not exist.|
@@ -40,7 +40,7 @@ The following is a list of actively supported options for the AddressSanitizer. 
 |`intercept_strstr` | `true` | If `true`, uses custom wrappers for `strstr` and `strcasestr` functions to find more errors.|
 |`malloc_context_size` | `1` | Max number of stack frames kept for each allocation/deallocation.|
 |`malloc_fill_byte` | `0xbe` | Value used to fill the newly allocated memory.|
-|`max_malloc_fill_size` | `4096` | ASan allocator flag. `max_malloc_fill_size` is the maximal amount of bytes that will be filled with `malloc_fill_byte` on `malloc`.|
+|`max_malloc_fill_size` | `4096` | The ASan allocator fills an allocation with `malloc_fill_byte` up to `max_malloc_fill_size` on a call to `malloc`.|
 |`max_redzone` | `2048` | Maximal size (in bytes) of redzones around heap objects.|
 |`new_delete_type_mismatch` | `true` | Report errors on mismatch between size of `new` and `delete`. See [new-delete-type-mismatch](./error-new-delete-type-mismatch.md).|
 |`poison_heap` | `true` | If `true`, poison the heap memory on (de-)allocation. `false` is useful for benchmarking the allocator or instrumentator.|
