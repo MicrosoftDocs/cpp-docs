@@ -16,7 +16,7 @@ An unexpected separator token occurs in a pragma argument list. The remainder of
 
 ## Example
 
-The following sample generates C4079:
+The following example generates C4079:
 
 ```cpp
 // C4079.cpp

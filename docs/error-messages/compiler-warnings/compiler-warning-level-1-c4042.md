@@ -24,7 +24,7 @@ This warning can be caused by specifying a storage class other than **`register`
 
 ## Example
 
-The following sample generates C4042
+The following example generates C4042
 
 ```cpp
 // C4042.cpp

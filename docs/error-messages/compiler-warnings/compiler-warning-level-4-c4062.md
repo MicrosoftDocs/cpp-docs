@@ -17,7 +17,7 @@ This warning is off by default. For more information about how to enable warning
 
 ## Example
 
-The following sample generates C4062, and shows how to fix it:
+The following example generates C4062, and shows how to fix it:
 
 ```cpp
 // C4062.cpp

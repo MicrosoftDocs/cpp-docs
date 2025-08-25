@@ -18,7 +18,7 @@ A data pointer is cast (possibly incorrectly) to a function pointer. This is a l
 
 ## Example
 
-The following sample generates C4055:
+The following example generates C4055:
 
 ```C
 // C4055.c

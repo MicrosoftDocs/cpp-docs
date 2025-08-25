@@ -16,7 +16,7 @@ The compiler ignored an unrecognized [pragma](../../preprocessor/pragma-directiv
 
 ## Example
 
-The following sample generates C4068:
+The following example generates C4068:
 
 ```cpp
 // C4068.cpp

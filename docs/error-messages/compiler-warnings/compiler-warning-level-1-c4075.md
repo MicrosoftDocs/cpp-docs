@@ -16,7 +16,7 @@ A [#pragma init_seg](../../preprocessor/init-seg.md) uses an unrecognized sectio
 
 ## Example
 
-The following sample generates C4075:
+The following example generates C4075:
 
 ```cpp
 // C4075.cpp

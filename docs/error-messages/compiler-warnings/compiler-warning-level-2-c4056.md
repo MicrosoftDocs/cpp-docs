@@ -18,7 +18,7 @@ This warning can be caused by compiler optimizations performed during constant a
 
 ## Example
 
-The following sample generates C4056:
+The following example generates C4056:
 
 ```cpp
 // C4056.cpp

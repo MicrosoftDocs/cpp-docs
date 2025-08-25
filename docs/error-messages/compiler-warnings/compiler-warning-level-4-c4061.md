@@ -17,7 +17,7 @@ This warning is off by default. For more information about how to enable warning
 
 ## Example
 
-The following sample generates C4061; add a case for the missing enumerator to fix:
+The following example generates C4061; add a case for the missing enumerator to fix:
 
 ```cpp
 // C4061.cpp

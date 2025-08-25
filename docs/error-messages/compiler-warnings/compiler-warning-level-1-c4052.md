@@ -15,7 +15,7 @@ One declaration of the function doesn't contain variable arguments. The empty de
 
 ## Example
 
-The following sample generates C4052:
+The following example generates C4052:
 
 ```c
 // C4052.c

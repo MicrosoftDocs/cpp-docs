@@ -16,7 +16,7 @@ Only third-party library developers should use the library initialization area, 
 
 ## Example
 
-The following sample generates C4073:
+The following example generates C4073:
 
 ```cpp
 // C4073.cpp

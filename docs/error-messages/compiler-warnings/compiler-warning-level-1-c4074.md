@@ -16,7 +16,7 @@ The compiler initialization area, which is specified by [#pragma init_seg](../..
 
 ## Example
 
-The following sample generates C4074:
+The following example generates C4074:
 
 ```cpp
 // C4074.cpp

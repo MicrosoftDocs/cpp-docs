@@ -16,7 +16,7 @@ The name of the segment in [#pragma alloc_text](../../preprocessor/alloc-text.md
 
 ## Example
 
-The following sample generates C4080:
+The following example generates C4080:
 
 ```cpp
 // C4080.cpp

@@ -16,7 +16,7 @@ A type modifier, whether it is **`signed`** or **`unsigned`**, cannot be used wi
 
 ## Example
 
-The following sample generates C4076; to fix it, remove the **`unsigned`** type modifier:
+The following example generates C4076; to fix it, remove the **`unsigned`** type modifier:
 
 ```cpp
 // C4076.cpp
