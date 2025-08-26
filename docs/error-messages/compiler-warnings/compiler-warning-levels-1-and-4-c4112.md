@@ -17,7 +17,7 @@ If the specified parameter is less than 1, the line counter is reset to 1. If th
 
 ## Example
 
-The following sample generates C4112:
+The following example generates C4112:
 
 ```cpp
 // C4112.cpp

@@ -16,7 +16,7 @@ The pragma requires an **on** or **off** parameter. The pragma is ignored.
 
 ## Example
 
-The following sample generates C4085:
+The following example generates C4085:
 
 ```cpp
 // C4085.cpp

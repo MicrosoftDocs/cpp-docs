@@ -20,7 +20,7 @@ This warning is issued for C programs. In a C++ program, the compiler issues an 
 
 ## Example
 
-The following sample generates C4090:
+The following example generates C4090:
 
 ```c
 // C4090.c

@@ -17,7 +17,7 @@ C4100 can also be issued when code calls a destructor on an otherwise unreferenc
 
 ## Example
 
-The following sample generates C4100:
+The following example generates C4100:
 
 ```cpp
 // C4100.cpp

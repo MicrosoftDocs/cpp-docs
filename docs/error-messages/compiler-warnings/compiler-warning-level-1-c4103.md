@@ -18,7 +18,7 @@ Use #pragma [pack](../../preprocessor/pack.md)(pop) before exiting the header fi
 
 ## Example
 
-The following sample generates C4103:
+The following example generates C4103:
 
 ```cpp
 // C4103.h

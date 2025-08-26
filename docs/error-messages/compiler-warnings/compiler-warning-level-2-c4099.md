@@ -15,7 +15,7 @@ An object declared as a structure is defined as a class, or an object declared a
 
 ## Example
 
-The following sample generates C4099.
+The following example generates C4099.
 
 ```cpp
 // C4099.cpp

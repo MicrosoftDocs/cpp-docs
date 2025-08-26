@@ -16,7 +16,7 @@ A type declaration or definition uses a type qualifier (**`const`**, **`volatile
 
 ## Examples
 
-The following sample generates C4114:
+The following example generates C4114:
 
 ```cpp
 // C4114.cpp
@@ -24,7 +24,7 @@ The following sample generates C4114:
 volatile volatile int i;   // C4114
 ```
 
-The following sample generates C4114:
+The following example generates C4114:
 
 ```cpp
 // C4114_b.cpp

@@ -16,7 +16,7 @@ The label is defined but never referenced. The compiler ignores the label.
 
 ## Example
 
-The following sample generates C4102:
+The following example generates C4102:
 
 ```cpp
 // C4102.cpp

@@ -18,7 +18,7 @@ See [Interface Attributes](../../windows/attributes/interface-attributes.md) for
 
 ## Example
 
-The following sample generates C4096:
+The following example generates C4096:
 
 ```cpp
 // C4096.cpp

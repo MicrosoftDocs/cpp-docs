@@ -20,7 +20,7 @@ ms.assetid: c45aa281-4cc1-4dfd-bd32-bd7a60ddd577
 
 ## Example
 
-The following sample generates C4117:
+The following example generates C4117:
 
 ```cpp
 // C4117.cpp

@@ -16,7 +16,7 @@ A pragma was passed an invalid value.
 
 ## Example
 
-The following sample generates C4097:
+The following example generates C4097:
 
 ```cpp
 // C4097.cpp
