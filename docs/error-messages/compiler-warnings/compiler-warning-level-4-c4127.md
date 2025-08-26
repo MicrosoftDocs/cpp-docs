@@ -18,7 +18,7 @@ If the controlling expression of a **`while`** loop is a constant because the lo
 
 ## Examples
 
-The following sample shows two ways C4127 is generated, and shows how to use a for loop to avoid the warning:
+The following example shows two ways C4127 is generated, and shows how to use a for loop to avoid the warning:
 
 ```cpp
 // C4127.cpp

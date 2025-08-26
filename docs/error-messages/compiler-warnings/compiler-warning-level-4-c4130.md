@@ -16,7 +16,7 @@ Using the operator with the address of a string literal produces unexpected code
 
 ## Example
 
-The following sample generates C4130:
+The following example generates C4130:
 
 ```cpp
 // C4130.cpp

@@ -16,7 +16,7 @@ The array form of **`delete`** should be used to delete an array. This warning o
 
 ## Example
 
-The following sample generates C4155:
+The following example generates C4155:
 
 ```cpp
 // C4155.cpp

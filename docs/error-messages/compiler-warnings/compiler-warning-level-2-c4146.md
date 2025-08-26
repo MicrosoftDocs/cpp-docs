@@ -28,7 +28,7 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Example
 
-The following sample demonstrates the unexpected behavior that can happen when the compiler generates warning C4146:
+The following example demonstrates the unexpected behavior that can happen when the compiler generates warning C4146:
 
 ```cpp
 // C4146.cpp

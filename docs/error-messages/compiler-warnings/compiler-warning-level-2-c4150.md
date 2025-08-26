@@ -15,7 +15,7 @@ The `delete` operator is called to delete a type that was declared but not defin
 
 ## Example
 
-The following sample generates C4150 by declaring but not defining `class IncClass`:
+The following example generates C4150 by declaring but not defining `class IncClass`:
 
 ```cpp
 // compile with: /W2

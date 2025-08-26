@@ -16,7 +16,7 @@ The specified relational expression was used as the control expression of a [swi
 
 ## Example
 
-The following sample generates C4144:
+The following example generates C4144:
 
 ```cpp
 // C4144.cpp

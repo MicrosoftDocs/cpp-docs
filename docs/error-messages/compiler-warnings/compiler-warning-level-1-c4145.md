@@ -16,7 +16,7 @@ A **`switch`** statement uses a relational expression as its control expression,
 
 ## Example
 
-The following sample generates C4145:
+The following example generates C4145:
 
 ```cpp
 // C4145.cpp

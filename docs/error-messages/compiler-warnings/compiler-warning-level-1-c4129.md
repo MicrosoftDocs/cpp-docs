@@ -20,7 +20,7 @@ The C++ standard, in section 2.13.2 discusses escape sequences.
 
 ## Example
 
-The following sample generates C4129:
+The following example generates C4129:
 
 ```cpp
 // C4129.cpp

@@ -22,7 +22,7 @@ To fix by checking the following possible causes:
 
 ## Example
 
-The following sample generates C4142:
+The following example generates C4142:
 
 ```c
 // C4142.c
