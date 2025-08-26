@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 2 and level 4) C4200"
 title: "Compiler Warning (level 2 and level 4) C4200"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2 and level 4) C4200"
+ms.date: 11/04/2016
 f1_keywords: ["C4200"]
 helpviewer_keywords: ["C4200"]
 ---

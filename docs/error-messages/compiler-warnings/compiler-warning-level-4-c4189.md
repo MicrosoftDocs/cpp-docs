@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 3 and level 4) C4189"
 title: "Compiler Warning (level 3 and level 4) C4189"
+description: "Learn more about: Compiler Warning (level 3 and level 4) C4189"
 ms.date: 05/03/2021
 f1_keywords: ["C4189"]
 helpviewer_keywords: ["C4189"]

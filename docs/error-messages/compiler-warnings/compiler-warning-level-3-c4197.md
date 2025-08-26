@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4197"
 title: "Compiler Warning (level 3) C4197"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4197"
+ms.date: 11/04/2016
 f1_keywords: ["C4197"]
 helpviewer_keywords: ["C4197"]
-ms.assetid: f766feef-82b0-4d81-8a65-33628c7db196
 ---
 # Compiler Warning (level 3) C4197
 

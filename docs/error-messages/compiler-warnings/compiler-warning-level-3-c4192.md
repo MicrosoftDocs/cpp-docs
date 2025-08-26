@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4192"
 title: "Compiler Warning (level 3) C4192"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4192"
+ms.date: 11/04/2016
 f1_keywords: ["C4192"]
 helpviewer_keywords: ["C4192"]
-ms.assetid: ea5f91fa-8c96-4f3f-ac42-0c8a86d4e5df
 ---
 # Compiler Warning (level 3) C4192
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4179"
 title: "Compiler Warning (level 1) C4179"
+description: "Learn more about: Compiler Warning (level 1) C4179"
 ms.date: 05/03/2021
 f1_keywords: ["C4179"]
 helpviewer_keywords: ["C4179"]

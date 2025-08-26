@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4178"
 title: "Compiler Warning (level 1) C4178"
-ms.date: "03/06/2024"
+description: "Learn more about: Compiler Warning (level 1) C4178"
+ms.date: 03/06/2024
 f1_keywords: ["C4178"]
 helpviewer_keywords: ["C4178"]
 ---
