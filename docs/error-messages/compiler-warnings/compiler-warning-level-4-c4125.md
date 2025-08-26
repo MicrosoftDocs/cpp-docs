@@ -15,6 +15,8 @@ The compiler evaluates the octal number without the decimal digit and assumes th
 
 ## Example
 
+The following example generates C4125:
+
 ```cpp
 // C4125a.cpp
 // compile with: /W4

@@ -11,6 +11,8 @@ helpviewer_keywords: ["C4141"]
 
 ## Example
 
+The following example generates C4141:
+
 ```cpp
 // C4141.cpp
 // compile with: /W1 /LD

@@ -15,6 +15,8 @@ The closing-comment delimiter is not preceded by an opening-comment delimiter. T
 
 ## Example
 
+The following example generates C4138:
+
 ```cpp
 // C4138a.cpp
 // compile with: /W1

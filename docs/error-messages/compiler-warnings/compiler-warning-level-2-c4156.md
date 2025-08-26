@@ -17,6 +17,8 @@ This warning occurs only under Microsoft extensions (/Ze).
 
 ## Example
 
+The following example generates C4156:
+
 ```cpp
 // C4156.cpp
 // compile with: /W2
