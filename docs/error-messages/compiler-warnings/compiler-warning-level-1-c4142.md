@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4142"
 title: "Compiler Warning (level 1) C4142"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4142"
+ms.date: 11/04/2016
 f1_keywords: ["C4142"]
 helpviewer_keywords: ["C4142"]
-ms.assetid: 1fdfc3dc-60a2-4f00-b133-20e400f9b7a6
 ---
 # Compiler Warning (level 1) C4142
 

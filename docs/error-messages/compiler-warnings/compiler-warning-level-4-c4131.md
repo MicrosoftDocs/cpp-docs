@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4131"
 title: "Compiler Warning (level 4) C4131"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4131"
+ms.date: 11/04/2016
 f1_keywords: ["C4131"]
 helpviewer_keywords: ["C4131"]
-ms.assetid: 7903b3e1-454f-4be2-aa9b-230992f96a2d
 ---
 # Compiler Warning (level 4) C4131
 

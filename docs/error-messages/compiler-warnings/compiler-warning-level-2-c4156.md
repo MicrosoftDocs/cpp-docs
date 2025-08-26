@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4156"
 title: "Compiler Warning (level 2) C4156"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4156"
+ms.date: 11/04/2016
 f1_keywords: ["C4156"]
 helpviewer_keywords: ["C4156"]
-ms.assetid: 9adf3acb-c0fe-42a8-a4db-5822b1493f77
 ---
 # Compiler Warning (level 2) C4156
 

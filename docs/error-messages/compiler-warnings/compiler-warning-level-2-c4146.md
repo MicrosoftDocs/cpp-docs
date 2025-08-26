@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler warning (level 2) C4146"
 title: "Compiler warning (level 2) C4146"
+description: "Learn more about: Compiler warning (level 2) C4146"
 ms.date: 04/22/2025
 f1_keywords: ["C4146"]
 helpviewer_keywords: ["C4146"]

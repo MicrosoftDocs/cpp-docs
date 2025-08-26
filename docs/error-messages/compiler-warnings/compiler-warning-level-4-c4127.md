@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4127"
 title: "Compiler Warning (level 4) C4127"
-ms.date: "10/16/2019"
+description: "Learn more about: Compiler Warning (level 4) C4127"
+ms.date: 10/16/2019
 f1_keywords: ["C4127"]
 helpviewer_keywords: ["C4127"]
-ms.assetid: f59ded9e-5227-45bd-ac43-2aa861581363
 ---
 # Compiler Warning (level 4) C4127
 

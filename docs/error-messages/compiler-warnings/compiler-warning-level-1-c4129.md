@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4129"
 title: "Compiler Warning (level 1) C4129"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4129"
+ms.date: 11/04/2016
 f1_keywords: ["C4129"]
 helpviewer_keywords: ["C4129"]
-ms.assetid: a4190c64-4bfb-48fd-8e98-52720bc0d878
 ---
 # Compiler Warning (level 1) C4129
 
