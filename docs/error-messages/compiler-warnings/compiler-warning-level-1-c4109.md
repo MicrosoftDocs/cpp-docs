@@ -10,6 +10,8 @@ ms.assetid: 9e8d95c6-e05d-47e0-bd87-78974b3cc06c
 
 > unexpected identifier 'identifier'
 
+## Remarks
+
 The pragma containing the unexpected identifier is ignored.
 
 ## Example

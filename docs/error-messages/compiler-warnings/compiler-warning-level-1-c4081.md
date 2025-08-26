@@ -10,6 +10,8 @@ ms.assetid: 6f656373-a080-4989-bbc9-e2f894b03293
 
 > expected 'token1'; found 'token2'
 
+## Remarks
+
 The compiler expected a different token in this context.
 
 ## Example

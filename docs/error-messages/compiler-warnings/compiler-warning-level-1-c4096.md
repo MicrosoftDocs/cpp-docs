@@ -10,9 +10,13 @@ ms.assetid: abf3cca2-2f21-45d8-b025-6b513b00681e
 
 > 'a': interface is not a COM interface; will not be emitted to IDL
 
+## Remarks
+
 An interface definition that you may have intended as a COM interface was not defined as a COM interface and therefore will not be emitted to the IDL file.
 
 See [Interface Attributes](../../windows/attributes/interface-attributes.md) for a list attributes that indicate an interface is a COM interface.
+
+## Example
 
 The following sample generates C4096:
 

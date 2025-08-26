@@ -10,6 +10,8 @@ ms.assetid: f3f94e72-fc49-4d09-b3e7-23d68e61152f
 
 > 'type' : named type definition in parentheses
 
+## Remarks
+
 The given symbol is used to define a structure, union, or enumerated type inside a parenthetical expression. The scope of the definition may be unexpected.
 
 In a C function call, the definition has global scope. In a C++ call, the definition has the same scope as the function being called.

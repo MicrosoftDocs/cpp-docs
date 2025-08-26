@@ -9,7 +9,13 @@ helpviewer_keywords: ["C4101"]
 
 > '*identifier*': unreferenced local variable
 
-The local variable is never used. This warning occurs in the obvious situation:
+## Remarks
+
+The local variable is never used.
+
+## Examples
+
+This warning occurs in the obvious situation:
 
 ```cpp
 // C4101a.cpp

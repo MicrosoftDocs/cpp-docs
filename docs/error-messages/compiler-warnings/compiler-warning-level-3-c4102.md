@@ -10,7 +10,11 @@ ms.assetid: 349f308a-daf3-48c6-bd53-6c38b73f8880
 
 > 'label' : unreferenced label
 
+## Remarks
+
 The label is defined but never referenced. The compiler ignores the label.
+
+## Example
 
 The following sample generates C4102:
 

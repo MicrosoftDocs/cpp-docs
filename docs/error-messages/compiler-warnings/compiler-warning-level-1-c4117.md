@@ -10,11 +10,15 @@ ms.assetid: c45aa281-4cc1-4dfd-bd32-bd7a60ddd577
 
 > macro name 'name' is reserved; 'Command' ignored
 
+## Remarks
+
 ### To fix by checking the following possible causes
 
 1. Trying to define or undefine a predefined macro.
 
 1. Trying to define or undefine the preprocessor operator **defined**.
+
+## Example
 
 The following sample generates C4117:
 

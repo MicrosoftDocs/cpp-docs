@@ -10,6 +10,8 @@ ms.assetid: e7d3344e-5645-4d56-8460-d1acc9145ada
 
 > expected 'token'; found identifier 'identifier'
 
+## Remarks
+
 An identifier occurs in the wrong place in a **#pragma** statement.
 
 ## Example

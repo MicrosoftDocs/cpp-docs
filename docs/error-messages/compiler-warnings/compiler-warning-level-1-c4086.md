@@ -10,6 +10,8 @@ ms.assetid: 9248831b-22bf-47af-8684-bfadb17e94fc
 
 > expected pragma parameter to be '1', '2', '4', '8', or '16'
 
+## Remarks
+
 The pragma parameter does not have the required value (1, 2, 4, 8, or 16).
 
 ## Example

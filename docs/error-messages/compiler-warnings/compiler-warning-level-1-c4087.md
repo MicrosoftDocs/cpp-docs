@@ -10,6 +10,8 @@ ms.assetid: 546e4d57-5c8e-422c-8ef1-92657336dad5
 
 > 'function' : declared with 'void' parameter list
 
+## Remarks
+
 The function declaration has no formal parameters, but the function call has actual parameters. Extra parameters are passed according to the calling convention of the function.
 
 This warning is for the C compiler.

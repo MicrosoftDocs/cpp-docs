@@ -10,9 +10,13 @@ ms.assetid: 9021b514-375e-4d62-b261-ccb06f299e8e
 
 > 'filename' : alignment changed after including header, may be due to missing #pragma pack(pop)
 
+## Remarks
+
 Packing affects the layout of classes, and commonly, if packing changes across header files, there can be problems.
 
 Use #pragma [pack](../../preprocessor/pack.md)(pop) before exiting the header file to resolve this warning.
+
+## Example
 
 The following sample generates C4103:
 

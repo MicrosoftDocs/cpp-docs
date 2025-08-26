@@ -10,7 +10,11 @@ ms.assetid: 3983e1c6-e8bb-46dc-8894-e1827db48797
 
 > same type qualifier used more than once
 
+## Remarks
+
 A type declaration or definition uses a type qualifier (**`const`**, **`volatile`**, **`signed`**, or **`unsigned`**) more than once. This causes a warning with Microsoft extensions (/Ze) and an error under ANSI compatibility (/Za).
+
+## Examples
 
 The following sample generates C4114:
 

@@ -10,4 +10,6 @@ ms.assetid: ec7a7c4a-d2ee-431c-89dc-31b0f9bfd975
 
 > 'identifier1' differs in parameter lists from 'identifier2'
 
+## Remarks
+
 A function pointer is assigned to another function pointer, but the formal parameter lists of the functions do not agree. The assignment is compiled without modification.

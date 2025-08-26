@@ -9,9 +9,13 @@ helpviewer_keywords: ["C4100"]
 
 > 'identifier' : unreferenced formal parameter
 
+## Remarks
+
 The formal parameter is not referenced in the body of the function. The unreferenced parameter is ignored.
 
 C4100 can also be issued when code calls a destructor on an otherwise unreferenced parameter of primitive type.
+
+## Example
 
 The following sample generates C4100:
 

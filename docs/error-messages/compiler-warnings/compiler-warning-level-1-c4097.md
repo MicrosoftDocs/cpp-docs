@@ -10,7 +10,11 @@ ms.assetid: 2525be51-fac2-43b2-b57c-3bbf1a2268f7
 
 > expected pragma parameter to be 'restore' or 'off'
 
+## Remarks
+
 A pragma was passed an invalid value.
+
+## Example
 
 The following sample generates C4097:
 

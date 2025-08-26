@@ -10,7 +10,11 @@ ms.assetid: 2bc6eb25-058f-4597-b351-fd69587b5170
 
 > expected pragma parameter to be 'on' or 'off'
 
+## Remarks
+
 The pragma requires an **on** or **off** parameter. The pragma is ignored.
+
+## Example
 
 The following sample generates C4085:
 

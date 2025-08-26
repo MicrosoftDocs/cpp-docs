@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4091"]
 
 > '*keyword*': ignored on left of '*type*' when no variable is declared
 
+## Remarks
+
 The compiler detected a situation where the user probably intended a variable to be declared, but the compiler wasn't able to declare the variable.
 
 ## Examples

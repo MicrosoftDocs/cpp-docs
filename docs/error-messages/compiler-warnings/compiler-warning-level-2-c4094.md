@@ -10,6 +10,8 @@ ms.assetid: e68929fb-3a1c-4be7-920b-d5f79f534f99
 
 > untagged 'token' declared no symbols
 
+## Remarks
+
 The compiler detected an empty declaration using an untagged structure, union, or class. The declaration is ignored.
 
 ## Example

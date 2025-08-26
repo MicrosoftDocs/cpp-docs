@@ -10,4 +10,6 @@ ms.assetid: 9bab817c-16b2-4324-be5e-f9cbb06b702e
 
 > 'function' : pointer mismatch in actual parameter 'number', formal parameter 'number'
 
+## Remarks
+
 The corresponding formal and actual parameters have a different level of indirection. The actual parameter is passed without change. The called function interprets its value as a pointer.
