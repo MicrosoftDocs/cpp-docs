@@ -9,7 +9,11 @@ helpviewer_keywords: ["C4183"]
 
 > 'identifier': missing return type; assumed to be a member function returning 'int'
 
+## Remarks
+
 The inline definition of a member function in a class or a structure does not have a return type. This member function is assumed to have a default return type of **`int`**.
+
+## Example
 
 The following sample generates C4183:
 

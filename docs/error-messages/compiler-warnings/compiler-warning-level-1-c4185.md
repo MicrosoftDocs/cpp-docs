@@ -10,6 +10,8 @@ ms.assetid: 37e7063a-35b1-4e05-ae31-e811dced02b9
 
 > ignoring unknown #import attribute 'attribute'
 
+## Remarks
+
 The attribute is not a valid attribute of `#import`. It is ignored.
 
 ## Example

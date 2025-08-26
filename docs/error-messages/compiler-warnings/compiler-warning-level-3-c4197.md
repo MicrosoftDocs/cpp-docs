@@ -10,7 +10,11 @@ ms.assetid: f766feef-82b0-4d81-8a65-33628c7db196
 
 > 'type' : top-level volatile in cast is ignored
 
+## Remarks
+
 The compiler detected a cast to an r-value type which is qualified with [volatile](../../cpp/volatile-cpp.md), or a cast of an r-value type to some type that is qualified with volatile. According to the C standard (6.5.3), properties associated with qualified types are meaningful only for l-value expressions.
+
+## Example
 
 The following sample generates C4197:
 

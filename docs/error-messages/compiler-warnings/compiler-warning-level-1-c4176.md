@@ -10,6 +10,8 @@ ms.assetid: cfffb934-219a-4a63-9df6-ba54405bf766
 
 > 'subcomponent' : unknown subcomponent for #pragma component browser
 
+## Remarks
+
 The **component** pragma contains an invalid subcomponent. To exclude references to a particular name, you must use the **references** option before the name.
 
 ## Example

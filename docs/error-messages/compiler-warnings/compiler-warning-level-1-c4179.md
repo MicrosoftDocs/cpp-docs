@@ -9,13 +9,15 @@ helpviewer_keywords: ["C4179"]
 
 > '`//*`' : parsed as '`/`' and '`/*`': confusion with standard '`//`' comments
 
-In standard C89, **`//*`** is an incorrect comment delimiter. Use **`/*`** under **`/Za`** instead.
-
 ## Remarks
+
+In standard C89, **`//*`** is an incorrect comment delimiter. Use **`/*`** under **`/Za`** instead.
 
 Before Visual Studio 2017 version 15.5, under **`/Za`**, the C compiler emits C4179 for a non-standard comment delimiter.
 
 In Visual Studio 2017 version 15.5, the C compiler no longer emits warnings C4001 and C4179. The warnings aren't needed because single-line comments have been part of the C standard since C99.
+
+## Example
 
 ```C
 /* C only */

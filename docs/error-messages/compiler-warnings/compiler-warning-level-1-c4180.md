@@ -10,6 +10,8 @@ ms.assetid: 40c91bd4-37f1-4d59-a4f3-d5ddab68239b
 
 > qualifier applied to function type has no meaning; ignored
 
+## Remarks
+
 A qualifier, such as **`const`**, is applied to a function type defined by **`typedef`**.
 
 ## Example

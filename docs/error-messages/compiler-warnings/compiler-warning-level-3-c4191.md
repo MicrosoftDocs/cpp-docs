@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4191"]
 
 > '*operation*': unsafe conversion from '*type_of_expression*' to '*type_required*'<br/>Making a function call using the resulting pointer may cause your program to fail
 
+## Remarks
+
 Several operations involving function pointers are considered unsafe:
 
 - Function types with different calling conventions.
@@ -26,6 +28,8 @@ Several operations involving function pointers are considered unsafe:
 Calling this function through the result pointer might cause your program to crash.
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## Example
 
 The following sample generates C4191:
 

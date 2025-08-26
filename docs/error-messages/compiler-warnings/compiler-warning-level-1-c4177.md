@@ -10,7 +10,11 @@ ms.assetid: 2b05a5b3-696e-4f21-818e-227b9335e748
 
 > #pragma pragma should be at global scope
 
+## Remarks
+
 The [pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) pragma should not be used within a local scope. The **pragma** will not be valid until global scope is encountered after the current scope.
+
+## Example
 
 The following sample generates C4177:
 

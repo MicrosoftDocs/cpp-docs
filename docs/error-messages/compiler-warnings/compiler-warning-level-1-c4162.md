@@ -10,9 +10,13 @@ ms.assetid: 21ae3c92-501d-4689-ad7d-13753cb65eff
 
 > 'identifier' : no function with C linkage found
 
+## Remarks
+
 A function with C linkage is declared but cannot be found.
 
 To resolve this warning, compile in a .c file (invoke the C compiler).  If you must invoke the C++ compiler, place extern "C" before the function declaration.
+
+## Example
 
 The following sample generates C4162
 

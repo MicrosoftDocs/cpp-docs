@@ -10,6 +10,8 @@ ms.assetid: 74a420bd-9371-4167-b1ee-74dd8680f97b
 
 > function : only available as an intrinsic function
 
+## Remarks
+
 The **#pragma function** tries to force the compiler to use a conventional call to a function that must be used in intrinsic form. The pragma is ignored.
 
 To avoid this warning, remove the **#pragma function**.

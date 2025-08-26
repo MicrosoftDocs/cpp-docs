@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4189"]
 
 > '*identifier*' : local variable is initialized but not referenced
 
+## Remarks
+
 A variable is declared and initialized but not used.
 
 ## Examples
