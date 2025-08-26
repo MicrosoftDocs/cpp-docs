@@ -16,7 +16,7 @@ The compiler detected a cast to an r-value type which is qualified with [volatil
 
 ## Example
 
-The following sample generates C4197:
+The following example generates C4197:
 
 ```cpp
 // C4197.cpp

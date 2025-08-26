@@ -15,7 +15,7 @@ A variable is declared and initialized but not used.
 
 ## Examples
 
-The following sample generates C4189:
+The following example generates C4189:
 
 ```cpp
 // C4189.cpp

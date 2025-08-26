@@ -15,7 +15,7 @@ The inline definition of a member function in a class or a structure does not ha
 
 ## Example
 
-The following sample generates C4183:
+The following example generates C4183:
 
 ```cpp
 // C4183.cpp

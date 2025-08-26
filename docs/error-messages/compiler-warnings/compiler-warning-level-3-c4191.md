@@ -31,7 +31,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4191:
+The following example generates C4191:
 
 ```cpp
 // C4191.cpp

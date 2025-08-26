@@ -17,7 +17,7 @@ Warning C4165 is off by default. For more information, see [Compiler Warnings Th
 
 ## Example
 
-The following sample generates C4165:
+The following example generates C4165:
 
 ```cpp
 // C4165.cpp

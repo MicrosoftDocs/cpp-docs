@@ -16,7 +16,7 @@ The specified function cannot be used as an [intrinsic](../../preprocessor/intri
 
 ## Example
 
-The following sample generates C4163:
+The following example generates C4163:
 
 ```cpp
 // C4163.cpp

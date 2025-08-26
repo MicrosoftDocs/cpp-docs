@@ -16,7 +16,7 @@ The [pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) pra
 
 ## Example
 
-The following sample generates C4177:
+The following example generates C4177:
 
 ```cpp
 // C4177.cpp
