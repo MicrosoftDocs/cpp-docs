@@ -8,7 +8,7 @@ ms.assetid: cfffb934-219a-4a63-9df6-ba54405bf766
 ---
 # Compiler Warning (level 1) C4176
 
-'subcomponent' : unknown subcomponent for #pragma component browser
+> 'subcomponent' : unknown subcomponent for #pragma component browser
 
 The **component** pragma contains an invalid subcomponent. To exclude references to a particular name, you must use the **references** option before the name.
 

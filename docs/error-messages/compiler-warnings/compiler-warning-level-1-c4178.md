@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4178"]
 ---
 # Compiler Warning (level 1) C4178
 
-case constant 'constant' too big for the type of the switch expression
+> case constant 'constant' too big for the type of the switch expression
 
 A case constant in a **`switch`** expression does not fit in the type to which it is assigned.
 

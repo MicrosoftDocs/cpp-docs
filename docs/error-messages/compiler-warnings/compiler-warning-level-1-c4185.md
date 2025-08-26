@@ -8,7 +8,7 @@ ms.assetid: 37e7063a-35b1-4e05-ae31-e811dced02b9
 ---
 # Compiler Warning (level 1) C4185
 
-ignoring unknown #import attribute 'attribute'
+> ignoring unknown #import attribute 'attribute'
 
 The attribute is not a valid attribute of `#import`. It is ignored.
 

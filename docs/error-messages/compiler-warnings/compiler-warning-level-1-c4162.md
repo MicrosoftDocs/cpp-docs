@@ -8,7 +8,7 @@ ms.assetid: 21ae3c92-501d-4689-ad7d-13753cb65eff
 ---
 # Compiler Warning (level 1) C4162
 
-'identifier' : no function with C linkage found
+> 'identifier' : no function with C linkage found
 
 A function with C linkage is declared but cannot be found.
 

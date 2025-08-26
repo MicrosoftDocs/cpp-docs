@@ -8,7 +8,7 @@ ms.assetid: b08413fd-03fc-4f41-9167-a98976ac12f2
 ---
 # Compiler Warning (level 1) C4163
 
-'identifier' : not available as an intrinsic function
+> 'identifier' : not available as an intrinsic function
 
 The specified function cannot be used as an [intrinsic](../../preprocessor/intrinsic.md) function. The compiler ignores the invalid function name.
 

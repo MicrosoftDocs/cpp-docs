@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4183"]
 ---
 # Compiler Warning (level 1) C4183
 
-'identifier': missing return type; assumed to be a member function returning 'int'
+> 'identifier': missing return type; assumed to be a member function returning 'int'
 
 The inline definition of a member function in a class or a structure does not have a return type. This member function is assumed to have a default return type of **`int`**.
 

@@ -8,7 +8,7 @@ ms.assetid: 63301e51-24bc-43c4-bb11-252f7d513e9e
 ---
 # Compiler Warning (level 1) C4174
 
-'name' : not available as a #pragma component
+> 'name' : not available as a #pragma component
 
 ## Example
 

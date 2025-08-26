@@ -8,6 +8,6 @@ ms.assetid: 6d7e4a36-8227-4419-880f-44576033493e
 ---
 # Compiler Warning (level 1) C4164
 
-'identifier' : intrinsic function not declared
+> 'identifier' : intrinsic function not declared
 
 The specified intrinsic function is not declared; you may need to #include the appropriate header file.

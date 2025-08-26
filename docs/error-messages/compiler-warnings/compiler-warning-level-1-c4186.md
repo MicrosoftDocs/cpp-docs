@@ -8,7 +8,7 @@ ms.assetid: caf3f7d8-f305-426b-8d4e-2b96f5c269ea
 ---
 # Compiler Warning (level 1) C4186
 
-\#import attribute 'attribute' requires count arguments; ignored
+> #import attribute 'attribute' requires count arguments; ignored
 
 A `#import` attribute has the wrong number of arguments.
 
