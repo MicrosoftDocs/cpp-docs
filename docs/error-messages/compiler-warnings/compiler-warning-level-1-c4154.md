@@ -8,7 +8,7 @@ ms.assetid: 4511afeb-e893-4cc6-83b6-4c7a0477f76b
 ---
 # Compiler Warning (level 1) C4154
 
-deletion of an array expression; conversion to pointer supplied
+> deletion of an array expression; conversion to pointer supplied
 
 You cannot use **`delete`** on an array, so the compiler converts the array to a pointer.
 

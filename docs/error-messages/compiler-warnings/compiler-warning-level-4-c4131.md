@@ -8,7 +8,7 @@ ms.assetid: 7903b3e1-454f-4be2-aa9b-230992f96a2d
 ---
 # Compiler Warning (level 4) C4131
 
-'function' : uses old-style declarator
+> 'function' : uses old-style declarator
 
 The specified function declaration is not in prototype form.
 

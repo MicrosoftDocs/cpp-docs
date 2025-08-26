@@ -8,6 +8,6 @@ ms.assetid: 6dabc303-eba1-4a8e-a124-a6e1dc84f4bd
 ---
 # Compiler Warning (level 1) C4157
 
-pragma was ignored by C compiler
+> pragma was ignored by C compiler
 
 Only the C++ compiler recognizes **init_seg()**.

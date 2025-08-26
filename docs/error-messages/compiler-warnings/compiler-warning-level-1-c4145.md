@@ -8,7 +8,7 @@ ms.assetid: 0440777a-cca2-4159-aff5-e67a254ad64a
 ---
 # Compiler Warning (level 1) C4145
 
-'expression1' : relational expression as switch expression; possible confusion with 'expression2'
+> 'expression1' : relational expression as switch expression; possible confusion with 'expression2'
 
 A **`switch`** statement uses a relational expression as its control expression, which results in a Boolean value for the **`case`** statements. Did you mean *expression2*?
 

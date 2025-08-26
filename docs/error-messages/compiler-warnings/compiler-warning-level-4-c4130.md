@@ -8,7 +8,7 @@ ms.assetid: 45e4c7b2-6b51-41c7-ba5e-941aa5c7d3dc
 ---
 # Compiler Warning (level 4) C4130
 
-'operator' : logical operation on address of string constant
+> 'operator' : logical operation on address of string constant
 
 Using the operator with the address of a string literal produces unexpected code.
 

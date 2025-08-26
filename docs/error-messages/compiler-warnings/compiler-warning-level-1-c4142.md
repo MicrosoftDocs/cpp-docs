@@ -8,7 +8,7 @@ ms.assetid: 1fdfc3dc-60a2-4f00-b133-20e400f9b7a6
 ---
 # Compiler Warning (level 1) C4142
 
-benign redefinition of type
+> benign redefinition of type
 
 A type is redefined in a manner that has no effect on the generated code.
 

@@ -8,6 +8,6 @@ ms.assetid: 37a15754-9dba-470b-adda-c4b888064b3e
 ---
 # Compiler Warning (level 1) C4153
 
-function/data pointer conversion in expression
+> function/data pointer conversion in expression
 
 A function pointer is converted to or from a data pointer. This conversion is allowed under Microsoft extensions (/Ze) but not under ANSI C.
