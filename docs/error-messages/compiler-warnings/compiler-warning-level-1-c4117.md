@@ -8,7 +8,7 @@ ms.assetid: c45aa281-4cc1-4dfd-bd32-bd7a60ddd577
 ---
 # Compiler Warning (level 1) C4117
 
-macro name 'name' is reserved; 'Command' ignored
+> macro name 'name' is reserved; 'Command' ignored
 
 ### To fix by checking the following possible causes
 

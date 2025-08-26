@@ -8,7 +8,7 @@ ms.assetid: 546e4d57-5c8e-422c-8ef1-92657336dad5
 ---
 # Compiler Warning (level 1) C4087
 
-'function' : declared with 'void' parameter list
+> 'function' : declared with 'void' parameter list
 
 The function declaration has no formal parameters, but the function call has actual parameters. Extra parameters are passed according to the calling convention of the function.
 

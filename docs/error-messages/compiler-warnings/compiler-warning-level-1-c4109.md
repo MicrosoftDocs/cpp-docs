@@ -8,7 +8,7 @@ ms.assetid: 9e8d95c6-e05d-47e0-bd87-78974b3cc06c
 ---
 # Compiler Warning (level 1) C4109
 
-unexpected identifier 'identifier'
+> unexpected identifier 'identifier'
 
 The pragma containing the unexpected identifier is ignored.
 

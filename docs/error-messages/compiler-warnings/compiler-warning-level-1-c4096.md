@@ -8,7 +8,7 @@ ms.assetid: abf3cca2-2f21-45d8-b025-6b513b00681e
 ---
 # Compiler Warning (level 1) C4096
 
-'a': interface is not a COM interface; will not be emitted to IDL
+> 'a': interface is not a COM interface; will not be emitted to IDL
 
 An interface definition that you may have intended as a COM interface was not defined as a COM interface and therefore will not be emitted to the IDL file.
 

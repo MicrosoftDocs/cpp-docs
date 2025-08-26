@@ -8,7 +8,7 @@ ms.assetid: 2bc6eb25-058f-4597-b351-fd69587b5170
 ---
 # Compiler Warning (level 1) C4085
 
-expected pragma parameter to be 'on' or 'off'
+> expected pragma parameter to be 'on' or 'off'
 
 The pragma requires an **on** or **off** parameter. The pragma is ignored.
 

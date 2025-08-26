@@ -8,7 +8,7 @@ ms.assetid: baad469d-23d4-45aa-ad9c-305b32d61e9a
 ---
 # Compiler Warning (level 1) C4090
 
-'operation' : different 'modifier' qualifiers
+> 'operation' : different 'modifier' qualifiers
 
 A variable used in an operation is defined with a specified modifier that prevents it from being modified without detection by the compiler. The expression is compiled without modification.
 

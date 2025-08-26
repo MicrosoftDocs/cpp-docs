@@ -8,7 +8,7 @@ ms.assetid: 6f656373-a080-4989-bbc9-e2f894b03293
 ---
 # Compiler Warning (level 1) C4081
 
-expected 'token1'; found 'token2'
+> expected 'token1'; found 'token2'
 
 The compiler expected a different token in this context.
 

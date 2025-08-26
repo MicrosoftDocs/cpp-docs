@@ -8,7 +8,7 @@ ms.assetid: 349f308a-daf3-48c6-bd53-6c38b73f8880
 ---
 # Compiler Warning (level 3) C4102
 
-'label' : unreferenced label
+> 'label' : unreferenced label
 
 The label is defined but never referenced. The compiler ignores the label.
 

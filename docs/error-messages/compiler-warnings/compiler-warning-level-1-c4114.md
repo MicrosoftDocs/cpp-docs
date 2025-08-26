@@ -8,7 +8,7 @@ ms.assetid: 3983e1c6-e8bb-46dc-8894-e1827db48797
 ---
 # Compiler Warning (level 1) C4114
 
-same type qualifier used more than once
+> same type qualifier used more than once
 
 A type declaration or definition uses a type qualifier (**`const`**, **`volatile`**, **`signed`**, or **`unsigned`**) more than once. This causes a warning with Microsoft extensions (/Ze) and an error under ANSI compatibility (/Za).
 
