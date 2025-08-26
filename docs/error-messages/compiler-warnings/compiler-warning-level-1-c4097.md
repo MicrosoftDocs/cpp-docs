@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4097"
 title: "Compiler Warning (level 1) C4097"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4097"
+ms.date: 11/04/2016
 f1_keywords: ["C4097"]
 helpviewer_keywords: ["C4097"]
-ms.assetid: 2525be51-fac2-43b2-b57c-3bbf1a2268f7
 ---
 # Compiler Warning (level 1) C4097
 

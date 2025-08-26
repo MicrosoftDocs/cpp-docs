@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 2) C4099"
 description: "Learn more about: Compiler Warning (level 2) C4099"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["C4099"]
 helpviewer_keywords: ["C4099"]
 ---

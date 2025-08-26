@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4081"
 title: "Compiler Warning (level 1) C4081"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4081"
+ms.date: 11/04/2016
 f1_keywords: ["C4081"]
 helpviewer_keywords: ["C4081"]
-ms.assetid: 6f656373-a080-4989-bbc9-e2f894b03293
 ---
 # Compiler Warning (level 1) C4081
 

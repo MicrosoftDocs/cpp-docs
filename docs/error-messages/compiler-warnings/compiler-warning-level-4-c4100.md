@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4100"
 title: "Compiler Warning (level 4) C4100"
+description: "Learn more about: Compiler Warning (level 4) C4100"
 ms.date: 04/22/2025
 f1_keywords: ["C4100"]
 helpviewer_keywords: ["C4100"]

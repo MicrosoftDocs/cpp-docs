@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4088"
 title: "Compiler Warning (level 1) C4088"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4088"
+ms.date: 11/04/2016
 f1_keywords: ["C4088"]
 helpviewer_keywords: ["C4088"]
-ms.assetid: 9bab817c-16b2-4324-be5e-f9cbb06b702e
 ---
 # Compiler Warning (level 1) C4088
 

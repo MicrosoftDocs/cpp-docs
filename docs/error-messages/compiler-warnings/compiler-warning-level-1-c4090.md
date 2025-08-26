@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4090"
 title: "Compiler Warning (level 1) C4090"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4090"
+ms.date: 11/04/2016
 f1_keywords: ["C4090"]
 helpviewer_keywords: ["C4090"]
-ms.assetid: baad469d-23d4-45aa-ad9c-305b32d61e9a
 ---
 # Compiler Warning (level 1) C4090
 

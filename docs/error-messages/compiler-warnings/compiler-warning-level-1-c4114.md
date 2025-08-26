@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4114"
 title: "Compiler Warning (level 1) C4114"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4114"
+ms.date: 11/04/2016
 f1_keywords: ["C4114"]
 helpviewer_keywords: ["C4114"]
-ms.assetid: 3983e1c6-e8bb-46dc-8894-e1827db48797
 ---
 # Compiler Warning (level 1) C4114
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4102"
 title: "Compiler Warning (level 3) C4102"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4102"
+ms.date: 11/04/2016
 f1_keywords: ["C4102"]
 helpviewer_keywords: ["C4102"]
-ms.assetid: 349f308a-daf3-48c6-bd53-6c38b73f8880
 ---
 # Compiler Warning (level 3) C4102
 

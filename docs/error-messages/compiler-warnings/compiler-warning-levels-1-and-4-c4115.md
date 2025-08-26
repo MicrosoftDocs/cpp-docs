@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (levels 1 and 4) C4115"
 title: "Compiler Warning (levels 1 and 4) C4115"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (levels 1 and 4) C4115"
+ms.date: 11/04/2016
 f1_keywords: ["C4115"]
 helpviewer_keywords: ["C4115"]
-ms.assetid: f3f94e72-fc49-4d09-b3e7-23d68e61152f
 ---
 # Compiler Warning (levels 1 and 4) C4115
 

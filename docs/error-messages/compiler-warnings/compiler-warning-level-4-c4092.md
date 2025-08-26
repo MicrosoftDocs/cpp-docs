@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4092"
 title: "Compiler Warning (level 4) C4092"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4092"
+ms.date: 11/04/2016
 f1_keywords: ["C4092"]
 helpviewer_keywords: ["C4092"]
-ms.assetid: 396ae826-a892-4327-bd66-f4762376d72b
 ---
 # Compiler Warning (level 4) C4092
 
