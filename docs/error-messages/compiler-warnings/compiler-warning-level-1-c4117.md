@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4117"
 title: "Compiler Warning (level 1) C4117"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4117"
+ms.date: 11/04/2016
 f1_keywords: ["C4117"]
 helpviewer_keywords: ["C4117"]
-ms.assetid: c45aa281-4cc1-4dfd-bd32-bd7a60ddd577
 ---
 # Compiler Warning (level 1) C4117
 
-macro name 'name' is reserved; 'Command' ignored
+> macro name 'name' is reserved; 'Command' ignored
+
+## Remarks
 
 ### To fix by checking the following possible causes
 
@@ -16,7 +17,9 @@ macro name 'name' is reserved; 'Command' ignored
 
 1. Trying to define or undefine the preprocessor operator **defined**.
 
-The following sample generates C4117:
+## Example
+
+The following example generates C4117:
 
 ```cpp
 // C4117.cpp
