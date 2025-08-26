@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4161"
 title: "Compiler Warning (level 3) C4161"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 3) C4161"
+ms.date: 08/27/2018
 f1_keywords: ["C4161"]
 helpviewer_keywords: ["C4161"]
-ms.assetid: 03d3be61-83f1-4009-8310-8758ab67055f
 ---
 # Compiler Warning (level 3) C4161
 
