@@ -15,6 +15,8 @@ The pragma containing the unexpected identifier is ignored.
 
 ## Example
 
+The following example generates C4109:
+
 ```cpp
 // C4109.cpp
 // compile with: /W1 /LD

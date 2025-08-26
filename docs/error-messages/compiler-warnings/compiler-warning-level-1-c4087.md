@@ -17,6 +17,8 @@ This warning is for the C compiler.
 
 ## Example
 
+The following example generates C4087:
+
 ```c
 // C4087.c
 // compile with: /W1

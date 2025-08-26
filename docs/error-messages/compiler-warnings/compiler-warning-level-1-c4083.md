@@ -15,6 +15,8 @@ An identifier occurs in the wrong place in a **#pragma** statement.
 
 ## Example
 
+The following example generates C4083:
+
 ```cpp
 // C4083.cpp
 // compile with: /W1 /LD

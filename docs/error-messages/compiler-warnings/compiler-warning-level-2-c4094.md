@@ -15,6 +15,8 @@ The compiler detected an empty declaration using an untagged structure, union, o
 
 ## Example
 
+The following example generates C4094:
+
 ```cpp
 // C4094.cpp
 // compile with: /W2

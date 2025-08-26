@@ -15,6 +15,8 @@ The compiler expected a different token in this context.
 
 ## Example
 
+The following example generates C4081:
+
 ```cpp
 // C4081.cpp
 // compile with: /W1 /LD

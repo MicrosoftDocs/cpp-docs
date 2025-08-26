@@ -15,6 +15,8 @@ The pragma parameter does not have the required value (1, 2, 4, 8, or 16).
 
 ## Example
 
+The following example generates C4086:
+
 ```cpp
 // C4086.cpp
 // compile with: /W1 /LD
