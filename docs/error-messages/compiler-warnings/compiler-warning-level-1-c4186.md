@@ -15,6 +15,8 @@ A `#import` attribute has the wrong number of arguments.
 
 ## Example
 
+The following example generates C4186:
+
 ```cpp
 // C4186.cpp
 // compile with: /W1 /c

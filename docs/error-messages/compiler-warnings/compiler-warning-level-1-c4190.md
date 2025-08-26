@@ -19,6 +19,8 @@ A function or pointer to function has a UDT (user-defined type, which is a class
 
 ## Example
 
+The following example generates C4190:
+
 ```cpp
 // C4190.cpp
 // compile with: /W1 /LD

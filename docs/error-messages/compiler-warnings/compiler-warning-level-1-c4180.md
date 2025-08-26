@@ -15,6 +15,8 @@ A qualifier, such as **`const`**, is applied to a function type defined by **`ty
 
 ## Example
 
+The following example generates C4180:
+
 ```cpp
 // C4180.cpp
 // compile with: /W1 /c

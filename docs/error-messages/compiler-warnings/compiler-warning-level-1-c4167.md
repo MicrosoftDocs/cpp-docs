@@ -17,6 +17,8 @@ To avoid this warning, remove the **#pragma function**.
 
 ## Example
 
+The following example generates C4167:
+
 ```cpp
 // C4167.cpp
 // compile with: /W1

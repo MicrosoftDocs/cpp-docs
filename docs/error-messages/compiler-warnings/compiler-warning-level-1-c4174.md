@@ -11,6 +11,8 @@ helpviewer_keywords: ["C4174"]
 
 ## Example
 
+The following example generates C4174:
+
 ```cpp
 // C4174.cpp
 // compile with: /W1

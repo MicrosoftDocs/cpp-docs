@@ -19,6 +19,8 @@ In Visual Studio 2017 version 15.5, the C compiler no longer emits warnings C400
 
 ## Example
 
+The following example generates C4179:
+
 ```C
 /* C only */
 #pragma warning(disable:4001) // C4619

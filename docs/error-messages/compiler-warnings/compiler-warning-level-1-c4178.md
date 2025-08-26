@@ -15,6 +15,8 @@ A case constant in a **`switch`** expression does not fit in the type to which i
 
 ## Example
 
+The following example generates C4178:
+
 ```cpp
 // C4178.cpp
 // compile with: /W1 /permissive

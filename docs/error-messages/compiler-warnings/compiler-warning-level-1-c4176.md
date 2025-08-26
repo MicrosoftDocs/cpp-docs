@@ -15,6 +15,8 @@ The **component** pragma contains an invalid subcomponent. To exclude references
 
 ## Example
 
+The following example generates C4176:
+
 ```cpp
 // C4176.cpp
 // compile with: /W1 /LD
