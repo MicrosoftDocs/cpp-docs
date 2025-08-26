@@ -10,6 +10,8 @@ ms.assetid: 65ebf929-bba0-4237-923b-c1b66adfe17d
 
 > '*/' found outside of comment
 
+## Remarks
+
 The closing-comment delimiter is not preceded by an opening-comment delimiter. The compiler assumes a space between the asterisk (<strong>\*</strong>) and the forward slash (/).
 
 ## Example

@@ -10,6 +10,8 @@ ms.assetid: a081d1f4-0789-4915-91df-7ff0b28ca245
 
 > decimal digit terminates octal escape sequence
 
+## Remarks
+
 The compiler evaluates the octal number without the decimal digit and assumes the decimal digit is a character.
 
 ## Example

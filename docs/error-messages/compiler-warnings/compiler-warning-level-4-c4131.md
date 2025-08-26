@@ -10,9 +10,13 @@ ms.assetid: 7903b3e1-454f-4be2-aa9b-230992f96a2d
 
 > 'function' : uses old-style declarator
 
+## Remarks
+
 The specified function declaration is not in prototype form.
 
 Old-style function declarations should be converted to prototype form.
+
+## Example
 
 The following example shows an old-style function declaration:
 

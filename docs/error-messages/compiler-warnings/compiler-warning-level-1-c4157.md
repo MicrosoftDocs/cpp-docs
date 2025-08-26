@@ -10,4 +10,6 @@ ms.assetid: 6dabc303-eba1-4a8e-a124-a6e1dc84f4bd
 
 > pragma was ignored by C compiler
 
+## Remarks
+
 Only the C++ compiler recognizes **init_seg()**.

@@ -10,11 +10,15 @@ ms.assetid: a4190c64-4bfb-48fd-8e98-52720bc0d878
 
 > 'character' : unrecognized character escape sequence
 
+## Remarks
+
 The `character` following a backslash (\\) in a character or string constant is not recognized as a valid escape sequence. The backslash is ignored and not printed. The character following the backslash is printed.
 
 To print a single backslash, specify a double backslash (\\\\).
 
 The C++ standard, in section 2.13.2 discusses escape sequences.
+
+## Example
 
 The following sample generates C4129:
 

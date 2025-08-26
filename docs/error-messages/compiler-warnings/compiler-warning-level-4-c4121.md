@@ -10,7 +10,13 @@ ms.assetid: 8c5b85c9-2543-426b-88bc-319c50158c7e
 
 > 'symbol' : alignment of a member was sensitive to packing
 
-The compiler added padding to align a structure member on the packing boundary but the packing value is less than the member's size. For example, the following code snippet produces C4121:
+## Remarks
+
+The compiler added padding to align a structure member on the packing boundary but the packing value is less than the member's size.
+
+## Example
+
+For example, the following code snippet produces C4121:
 
 ```cpp
 // C4121.cpp

@@ -10,7 +10,11 @@ ms.assetid: 45e4c7b2-6b51-41c7-ba5e-941aa5c7d3dc
 
 > 'operator' : logical operation on address of string constant
 
+## Remarks
+
 Using the operator with the address of a string literal produces unexpected code.
+
+## Example
 
 The following sample generates C4130:
 

@@ -10,6 +10,8 @@ ms.assetid: 9a83eb0d-8708-42f7-988a-b0b6f2f646a0
 
 > 'function' : alloc_text applicable only to functions with C linkage
 
+## Remarks
+
 The **alloc_text** pragma applies only to functions declared with **extern c**. It cannot be used with external C++ functions.
 
 The pragma is ignored.

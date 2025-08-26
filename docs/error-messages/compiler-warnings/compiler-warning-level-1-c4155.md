@@ -10,6 +10,8 @@ ms.assetid: ba233353-09e3-4195-8127-13a27ddd8d70
 
 > deletion of an array expression without using the array form of 'delete'
 
+## Remarks
+
 The array form of **`delete`** should be used to delete an array. This warning occurs only under ANSI-compatibility (/Za).
 
 ## Example

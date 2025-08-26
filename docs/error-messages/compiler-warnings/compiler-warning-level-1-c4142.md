@@ -10,6 +10,8 @@ ms.assetid: 1fdfc3dc-60a2-4f00-b133-20e400f9b7a6
 
 > benign redefinition of type
 
+## Remarks
+
 A type is redefined in a manner that has no effect on the generated code.
 
 To fix by checking the following possible causes:
@@ -17,6 +19,8 @@ To fix by checking the following possible causes:
 - A member function of a derived class has a different return type from the corresponding member function of the base class.
 
 - A type defined with the **`typedef`** command is redefined using different syntax.
+
+## Example
 
 The following sample generates C4142:
 

@@ -10,6 +10,8 @@ ms.assetid: 4511afeb-e893-4cc6-83b6-4c7a0477f76b
 
 > deletion of an array expression; conversion to pointer supplied
 
+## Remarks
+
 You cannot use **`delete`** on an array, so the compiler converts the array to a pointer.
 
 ## Example

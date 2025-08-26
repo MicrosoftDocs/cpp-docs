@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4150"]
 
 > deletion of pointer to incomplete type 'type'; no destructor called
 
+## Remarks
+
 The `delete` operator is called to delete a type that was declared but not defined. The compiler can't find the destructor to call because the definition isn't in the same translation unit as the `delete`.
 
 ## Example
