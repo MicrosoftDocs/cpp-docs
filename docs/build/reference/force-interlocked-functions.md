@@ -1,7 +1,7 @@
 ---
-title:       "/forceInterlockedFunctions"
+title: "/forceInterlockedFunctions"
 description: "Learn more about /forceInterlockedFunctions"
-ms.date:     03/07/2025
+ms.date: 03/07/2025
 ---
 # `/forceInterlockedFunctions`
 

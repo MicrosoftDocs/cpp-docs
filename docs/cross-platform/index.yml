@@ -17,7 +17,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Learn how to build cross-platform mobile apps 
+  - title: Learn how to build cross-platform mobile apps
     linkLists:
       - linkListType: get-started
         links:

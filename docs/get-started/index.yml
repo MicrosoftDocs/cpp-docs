@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Visual Studio tutorials | C++ 
+title: Visual Studio tutorials | C++
 summary: Create C++ apps with Visual Studio.
 
 metadata:
@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/06/2021
   author: tylermsft
-  ms.author: twhitney 
+  ms.author: twhitney
   manager: coxford
   ms.service: visual-cpp
   dev_langs:
