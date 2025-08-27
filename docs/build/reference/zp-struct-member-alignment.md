@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /Zp (Struct Member Alignment)"
 title: "/Zp (Struct Member Alignment)"
-ms.date: "01/08/2021" 
+ms.date: "01/08/2021"
 f1_keywords: ["/zp", "VC.Project.VCCLCompilerTool.StructMemberAlignment", "VC.Project.VCCLWCECompilerTool.StructMemberAlignment"]
 helpviewer_keywords: ["Struct Member Alignment compiler option", "Zp compiler option", "/Zp compiler option [C++]", "-Zp compiler option [C++]"]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f

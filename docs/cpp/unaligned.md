@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: __unaligned"
 title: "__unaligned"
-ms.date: "12/17/2018" 
+ms.date: "12/17/2018"
 f1_keywords: ["__unaligned_cpp", "__unaligned", "_unaligned"]
 helpviewer_keywords: ["__unaligned keyword [C++]"]
 ---
