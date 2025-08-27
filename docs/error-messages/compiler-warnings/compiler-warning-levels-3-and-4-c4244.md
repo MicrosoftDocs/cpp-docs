@@ -7,6 +7,8 @@ ms.date: "11/6/2023"
 
 > 'conversion' conversion from 'type1' to 'type2', possible loss of data
 
+## Remarks
+
 An integer type is converted to a smaller integer type.
 - This is a level-4 warning if *type1* is a signed or unsigned **`int`** and *type2* is a smaller, such as a signed or unsigned **`short`**.
 - It's a level 3 warning if a value of type [`__int64`](../../cpp/int8-int16-int32-int64.md) or **`unsigned __int64`** is assigned to a signed or unsigned **`int`**. A possible loss of data may have occurred due to a narrowing conversion, which might lead to unexpected results.
@@ -14,6 +16,8 @@ An integer type is converted to a smaller integer type.
 To fix this warning, either change your program to use compatible types, or add logic that ensures that the range of possible values is compatible with the types you're using. If the conversion is intended, use an explicit cast to silence the warning.
 
 C4244 can also appear when the warning level is 2. For more information, see [Compiler Warning (level 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md).
+
+## Examples
 
 The following sample generates C4244:
 

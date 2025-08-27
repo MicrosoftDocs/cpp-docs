@@ -10,6 +10,8 @@ ms.assetid: f7fecd5c-8248-4fde-8446-502aedc357ca
 
 > nonstandard extension used: 'keyword' keyword reserved for future use
 
+## Remarks
+
 The compiler does not yet implement the keyword you used.
 
 This warning is automatically promoted to an error. If you wish to modify this behavior, use [#pragma warning](../../preprocessor/warning.md). For example, to make C4234 into a level 4 warning issue,

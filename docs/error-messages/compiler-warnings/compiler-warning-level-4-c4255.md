@@ -9,9 +9,13 @@ helpviewer_keywords: ["C4255"]
 
 > 'function' : no function prototype given: converting '()' to '(void)'
 
+## Remarks
+
 The compiler didn't find an explicit list of arguments to a function. This warning is for the C compiler only.
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## Example
 
 The following sample generates C4255:
 

@@ -10,6 +10,8 @@ ms.assetid: d0511e80-904f-4ee1-b4d7-39b5c0bd8234
 
 > 'identifier' : 'const' static/global data initialized with compiler generated default constructor fills the object with zeros
 
+## Remarks
+
 A **`const`** global or static instance of a non-trivial class is initialized with a compiler-generated default constructor.
 
 ## Example

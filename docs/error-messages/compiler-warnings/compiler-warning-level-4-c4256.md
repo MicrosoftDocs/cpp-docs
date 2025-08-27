@@ -10,6 +10,8 @@ ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
 
 > 'function' : constructor for class with virtual bases has '...'; calls may not be compatible with older versions of Visual C++
 
+## Remarks
+
 Possible incompatibility.
 
 Consider the following code example. If the definition of the constructor S2::S2( int i, ... ) was compiled by using a version of the Microsoft C++ compiler before version 7, but the following example is compiled by using the current version, the call to the constructor for S3 would not work correctly because of a special-case calling-convention change. If both were compiled by using Visual C++ 6.0, the call would not work quite right either, unless no parameters were passed for the ellipsis.
@@ -19,6 +21,8 @@ To fix this warning,
 1. Don't use ellipsis in a constructor.
 
 1. Make sure that all components in their project are built with the current version (including any libraries that may define or reference this class), then disable the warning using the [warning](../../preprocessor/warning.md) pragma.
+
+## Example
 
 The following sample generates C4256:
 

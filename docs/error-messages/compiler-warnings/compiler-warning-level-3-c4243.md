@@ -9,7 +9,11 @@ helpviewer_keywords: ["C4243"]
 
 > 'conversion type' conversion exists from 'type1' to 'type2', but is inaccessible
 
+## Remarks
+
 A pointer to a derived class is converted to a pointer to a base class, but the derived class inherits the base class with private or protected access.
+
+## Example
 
 The following sample generates C4243:
 

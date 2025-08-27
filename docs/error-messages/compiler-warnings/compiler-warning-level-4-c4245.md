@@ -10,7 +10,11 @@ ms.assetid: 85083d53-9cc2-4d12-b58c-6dad28f15cbe
 
 > '*conversion*' : conversion from '*type1*' to '*type2*', signed/unsigned mismatch
 
+## Remarks
+
 You tried to convert a **`signed const`** type that has a negative value to an **`unsigned`** type.
+
+## Example
 
 The following sample generates C4245:
 

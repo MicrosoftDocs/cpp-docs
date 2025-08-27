@@ -10,6 +10,8 @@ ms.assetid: d47f7249-6b5a-414b-b2d4-56e5d246a782
 
 > 'class1' : inherits 'class2::member' via dominance
 
+## Remarks
+
 Two or more members have the same name. The one in `class2` is inherited because it is a base class for the other classes that contained this member.
 
 To suppress C4250, use the [warning](../../preprocessor/warning.md) pragma.

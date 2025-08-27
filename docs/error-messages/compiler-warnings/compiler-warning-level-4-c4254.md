@@ -9,9 +9,13 @@ helpviewer_keywords: ["C4254"]
 
 > '*operator*': conversion from '*type1*':'*field_bits*' to '*type2*':'*field_bits*', possible loss of data
 
+## Remarks
+
 A larger bit field was assigned to a smaller bit field. There could be a loss of data.
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## Example
 
 The following sample generates C4254:
 

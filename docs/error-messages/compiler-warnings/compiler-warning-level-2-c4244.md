@@ -10,6 +10,8 @@ ms.assetid: 2c19d157-21d1-42c2-a6c0-3f30f2ce3813
 
 > 'argument' : conversion from 'type1' to 'type2', possible loss of data
 
+## Remarks
+
 A floating point type was converted to an integer type.  A possible loss of data may have occurred.
 
 If you get C4244, you should either change your program to use compatible types, or add some logic to your code, to ensure that the range of possible values will always be compatible with the types you are using.

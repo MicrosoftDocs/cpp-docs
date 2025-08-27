@@ -9,9 +9,13 @@ helpviewer_keywords: ["C4266"]
 
 > 'function' : no override available for virtual member function from base 'type'; function is hidden
 
+## Remarks
+
 A derived class didn't override all overloads of a virtual function.
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## Example
 
 The following sample generates C4266:
 
