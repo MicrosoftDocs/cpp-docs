@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4221"
 title: "Compiler Warning (level 4) C4221"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4221"
+ms.date: 11/04/2016
 f1_keywords: ["C4221"]
 helpviewer_keywords: ["C4221"]
-ms.assetid: 8532bd68-54dc-4526-8597-f61dcb0a0129
 ---
 # Compiler Warning (level 4) C4221
 

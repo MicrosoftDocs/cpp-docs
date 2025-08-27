@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4215"
 title: "Compiler Warning (level 1) C4215"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4215"
+ms.date: 11/04/2016
 f1_keywords: ["C4215"]
 helpviewer_keywords: ["C4215"]
-ms.assetid: f2aab64d-1bab-4f75-95ee-89e1263047b1
 ---
 # Compiler Warning (level 1) C4215
 

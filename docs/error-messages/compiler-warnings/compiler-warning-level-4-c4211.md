@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4211"
 title: "Compiler Warning (level 4) C4211"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4211"
+ms.date: 11/04/2016
 f1_keywords: ["C4211"]
 helpviewer_keywords: ["C4211"]
-ms.assetid: 3eea3455-6faa-4cdb-8730-73db7026bd1f
 ---
 # Compiler Warning (level 4) C4211
 

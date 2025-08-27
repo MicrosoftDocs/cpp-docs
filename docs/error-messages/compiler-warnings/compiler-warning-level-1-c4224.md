@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4224"
 title: "Compiler Warning (level 1) C4224"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4224"
+ms.date: 11/04/2016
 f1_keywords: ["C4224"]
 helpviewer_keywords: ["C4224"]
-ms.assetid: 1531cae0-5040-49fd-b149-005bb5085391
 ---
 # Compiler Warning (level 1) C4224
 

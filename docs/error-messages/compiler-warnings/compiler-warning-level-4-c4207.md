@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4207"
 title: "Compiler Warning (level 4) C4207"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4207"
+ms.date: 11/04/2016
 f1_keywords: ["C4207"]
 helpviewer_keywords: ["C4207"]
-ms.assetid: f4e09e3e-ac87-4489-8e3f-c8f76b82e721
 ---
 # Compiler Warning (level 4) C4207
 

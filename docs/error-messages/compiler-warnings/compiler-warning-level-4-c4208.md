@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4208"
 title: "Compiler Warning (level 4) C4208"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4208"
+ms.date: 11/04/2016
 f1_keywords: ["C4208"]
 helpviewer_keywords: ["C4208"]
-ms.assetid: 5cb0a36e-3fb5-422f-a5f9-e40b70776c27
 ---
 # Compiler Warning (level 4) C4208
 
