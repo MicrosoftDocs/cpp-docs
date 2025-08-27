@@ -11,7 +11,7 @@ helpviewer_keywords: ["C2277"]
 
 ## Remarks
 
-You cannot take the address of a member function.
+You cannot take the address of a [constructor](../../cpp/constructors-cpp.md) or [destructor](../../cpp/destructors-cpp.md). For more information, see [Address-of operator: `&`](../../cpp/address-of-operator-amp.md) and [Pointers to Members](../../cpp/pointers-to-members.md).
 
 ## Example
 
