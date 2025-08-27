@@ -16,7 +16,7 @@ The default Microsoft extensions (/Ze) treat **float long** as **`double`**. ANS
 
 ## Example
 
-The following sample generates C4216:
+The following example generates C4216:
 
 ```cpp
 // C4216.cpp

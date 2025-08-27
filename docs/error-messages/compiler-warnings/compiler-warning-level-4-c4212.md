@@ -16,7 +16,7 @@ The function prototype has a variable number of arguments. The function definiti
 
 ## Example
 
-The following sample generates C4212:
+The following example generates C4212:
 
 ```c
 // C4212.c
