@@ -19,9 +19,14 @@ The following example generates C2277:
 
 ```cpp
 // C2277.cpp
-class A {
-public:
-   A();
+// compile with: /c
+
+struct S
+{
+    S() {}
+    ~S() {}
 };
-(*pctor)() = &A::A;   // C2277
+
+void (S::* pointer_to_constructor)() = &S::S;   // C2277
+void (S::* pointer_to_destructor)() = &S::~S;   // C2277
 ```
