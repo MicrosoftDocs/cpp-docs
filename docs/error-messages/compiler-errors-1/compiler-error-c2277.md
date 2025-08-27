@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2277"]
 ---
 # Compiler Error C2277
 
-> 'identifier' : cannot take address of this member function
+> '*function*': cannot take address of this member function
 
 ## Remarks
 
