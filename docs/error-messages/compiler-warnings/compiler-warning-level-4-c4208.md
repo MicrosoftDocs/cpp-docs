@@ -1,16 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4208"
 title: "Compiler Warning (level 4) C4208"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4208"
+ms.date: 11/04/2016
 f1_keywords: ["C4208"]
 helpviewer_keywords: ["C4208"]
-ms.assetid: 5cb0a36e-3fb5-422f-a5f9-e40b70776c27
 ---
 # Compiler Warning (level 4) C4208
 
-nonstandard extension used : delete [exp] - exp evaluated but ignored
+> nonstandard extension used : delete [exp] - exp evaluated but ignored
+
+## Remarks
 
 With Microsoft extensions (/Ze), you can delete an array using a value within brackets with the [delete operator](../../cpp/delete-operator-cpp.md). The value is ignored.
+
+## Example
+
+The following example generates C4208:
 
 ```cpp
 // C4208.cpp
