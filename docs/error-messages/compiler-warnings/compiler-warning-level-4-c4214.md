@@ -15,6 +15,8 @@ With the default Microsoft extensions (/Ze), bitfield structure members can be o
 
 ## Example
 
+The following example generates C4214:
+
 ```c
 // C4214.c
 // compile with: /W4

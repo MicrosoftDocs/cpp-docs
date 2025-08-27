@@ -15,6 +15,8 @@ With the default Microsoft extensions (/Ze), you can redefine an **`extern`** id
 
 ## Example
 
+The following example generates C4211:
+
 ```c
 // C4211.c
 // compile with: /W4

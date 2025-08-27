@@ -15,6 +15,8 @@ With Microsoft extensions (/Ze), you can initialize an unsized array of **`char`
 
 ## Example
 
+The following example generates C4207:
+
 ```c
 // C4207.c
 // compile with: /W4

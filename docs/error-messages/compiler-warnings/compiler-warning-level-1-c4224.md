@@ -15,6 +15,8 @@ The identifier was previously used as a **`typedef`**. This causes a warning und
 
 ## Example
 
+The following example generates C4224:
+
 ```cpp
 // C4224.cpp
 // compile with: /Za /W1 /LD

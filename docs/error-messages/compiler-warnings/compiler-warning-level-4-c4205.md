@@ -15,6 +15,8 @@ With Microsoft extensions (/Ze), **`static`** functions can be declared inside a
 
 ## Example
 
+The following example generates C4205:
+
 ```c
 // C4205.c
 // compile with: /W4

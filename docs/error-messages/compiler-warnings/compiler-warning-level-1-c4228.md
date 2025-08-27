@@ -15,6 +15,8 @@ Use of qualifiers like **`const`** or **`volatile`** after a comma when declarin
 
 ## Example
 
+The following example generates C4228:
+
 ```cpp
 // C4228.cpp
 // compile with: /W1

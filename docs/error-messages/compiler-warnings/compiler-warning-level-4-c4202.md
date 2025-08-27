@@ -15,6 +15,8 @@ An old-style function definition contains variable arguments. These definitions 
 
 ## Example
 
+The following example generates C4202:
+
 ```c
 // C4202.c
 // compile with: /W4

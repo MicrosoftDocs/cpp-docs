@@ -15,6 +15,8 @@ Using a Microsoft modifier such as **`__cdecl`** on a data declaration is an out
 
 ## Example
 
+The following example generates C4229:
+
 ```cpp
 // C4229.cpp
 // compile with: /W1 /LD

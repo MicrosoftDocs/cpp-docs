@@ -15,6 +15,8 @@ With the default Microsoft extensions (/Ze), you can initialize an aggregate typ
 
 ## Example
 
+The following example generates C4221:
+
 ```c
 // C4221.c
 // compile with: /W4

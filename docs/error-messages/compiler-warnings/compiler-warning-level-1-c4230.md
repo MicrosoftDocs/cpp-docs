@@ -15,6 +15,8 @@ Using a qualifier before a Microsoft modifier such as **`__cdecl`** is an outdat
 
 ## Example
 
+The following example generates C4230:
+
 ```cpp
 // C4230.cpp
 // compile with: /W1 /LD

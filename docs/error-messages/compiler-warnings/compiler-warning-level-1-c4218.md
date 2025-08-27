@@ -15,6 +15,8 @@ With the default Microsoft extensions (`/Ze`), you can declare a variable withou
 
 ## Example
 
+The following example generates C4218:
+
 ```cpp
 // C4218.c
 // compile with: /W4

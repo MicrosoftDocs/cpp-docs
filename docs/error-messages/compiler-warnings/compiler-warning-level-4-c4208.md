@@ -15,6 +15,8 @@ With Microsoft extensions (/Ze), you can delete an array using a value within br
 
 ## Example
 
+The following example generates C4208:
+
 ```cpp
 // C4208.cpp
 // compile with: /W4

@@ -15,6 +15,8 @@ With the default Microsoft extensions (/Ze), you can use casts on the left side 
 
 ## Example
 
+The following example generates C4213:
+
 ```c
 // C4213.c
 // compile with: /W4

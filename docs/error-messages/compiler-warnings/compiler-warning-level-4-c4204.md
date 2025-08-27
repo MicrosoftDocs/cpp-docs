@@ -15,6 +15,8 @@ With Microsoft extensions (/Ze), you can initialize aggregate types (arrays, str
 
 ## Example
 
+The following example generates C4204:
+
 ```c
 // C4204.c
 // compile with: /W4

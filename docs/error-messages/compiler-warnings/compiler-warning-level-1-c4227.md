@@ -15,6 +15,8 @@ Using qualifiers like **`const`** or **`volatile`** with C++ references is an ou
 
 ## Example
 
+The following example generates C4227:
+
 ```cpp
 // C4227.cpp
 // compile with: /W1 /c

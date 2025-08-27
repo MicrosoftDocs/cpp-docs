@@ -15,6 +15,8 @@ With the default Microsoft extensions ([/Ze](../../build/reference/za-ze-disable
 
 ## Example
 
+The following example generates C4210:
+
 ```c
 // C4210.c
 // compile with: /W4 /c

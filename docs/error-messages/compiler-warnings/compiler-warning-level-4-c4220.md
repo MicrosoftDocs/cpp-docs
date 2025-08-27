@@ -15,6 +15,8 @@ Under the default Microsoft extensions (/Ze), a pointer to a function matches a 
 
 ## Example
 
+The following example generates C4220:
+
 ```c
 // C4220.c
 // compile with: /W4
