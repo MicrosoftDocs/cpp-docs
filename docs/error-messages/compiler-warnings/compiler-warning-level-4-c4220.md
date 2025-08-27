@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4220"]
 
 > varargs matches remaining parameters
 
+## Remarks
+
 Under the default Microsoft extensions (/Ze), a pointer to a function matches a pointer to a function with similar, but variable, arguments.
 
 ## Example

@@ -10,6 +10,8 @@ ms.assetid: 6156f508-9393-4d77-9e73-1ec3e1c32d0d
 
 > nonstandard extension used : nameless struct/union
 
+## Remarks
+
 Under Microsoft extensions (/Ze), you can specify a structure without a declarator as members of another structure or union. These structures generate an error under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
 
 ## Example

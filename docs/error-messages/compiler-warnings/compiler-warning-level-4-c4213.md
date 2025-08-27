@@ -10,6 +10,8 @@ ms.assetid: 59fc3f61-ebd2-499e-99d7-f57bec11eda1
 
 > nonstandard extension used : cast on l-value
 
+## Remarks
+
 With the default Microsoft extensions (/Ze), you can use casts on the left side of an assignment statement.
 
 ## Example

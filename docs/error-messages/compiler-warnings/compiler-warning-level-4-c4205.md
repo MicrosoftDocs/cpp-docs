@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4205"]
 
 > nonstandard extension used : static function declaration in function scope
 
+## Remarks
+
 With Microsoft extensions (/Ze), **`static`** functions can be declared inside another function. The function is given global scope.
 
 ## Example

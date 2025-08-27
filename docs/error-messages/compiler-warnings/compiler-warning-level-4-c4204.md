@@ -10,6 +10,8 @@ ms.assetid: 298d2880-6737-448e-b711-15572d540200
 
 > nonstandard extension used : non-constant aggregate initializer
 
+## Remarks
+
 With Microsoft extensions (/Ze), you can initialize aggregate types (arrays, structures, unions, and classes) with values that are not constants.
 
 ## Example

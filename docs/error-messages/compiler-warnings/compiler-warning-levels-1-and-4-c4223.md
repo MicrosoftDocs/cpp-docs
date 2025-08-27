@@ -10,4 +10,6 @@ ms.assetid: 6fc44336-0250-4432-928b-fc5dbe7b7c1c
 
 > nonstandard extension used: non-lvalue array converted to pointer
 
+## Remarks
+
 In standard C, you can't convert a nonlvalue array to a pointer. With the default Microsoft extensions ([`/Ze`](../../build/reference/za-ze-disable-language-extensions.md)), you can.

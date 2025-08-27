@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4229"]
 
 > anachronism used: modifiers on data are ignored
 
+## Remarks
+
 Using a Microsoft modifier such as **`__cdecl`** on a data declaration is an outdated practice.
 
 ## Example

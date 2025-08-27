@@ -10,6 +10,8 @@ ms.assetid: 78f98374-c00b-4000-aefa-1b1c67b4666b
 
 > anachronism used : qualifiers on reference are ignored
 
+## Remarks
+
 Using qualifiers like **`const`** or **`volatile`** with C++ references is an outdated practice.
 
 ## Example

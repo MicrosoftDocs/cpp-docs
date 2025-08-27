@@ -10,6 +10,8 @@ ms.assetid: 253293aa-97a3-4878-a2e8-c6cc9e20b1cb
 
 > nonstandard extension used : '...': prototype parameter in name list illegal
 
+## Remarks
+
 An old-style function definition contains variable arguments. These definitions generate an error under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
 
 ## Example

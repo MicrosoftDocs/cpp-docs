@@ -10,7 +10,11 @@ ms.assetid: df781ea1-182d-4f9f-9a31-55b6ce80c711
 
 > nonstandard extension used : function declaration used ellipsis
 
+## Remarks
+
 The function prototype has a variable number of arguments. The function definition does not.
+
+## Example
 
 The following sample generates C4212:
 

@@ -10,6 +10,8 @@ ms.assetid: a4be8729-74b6-44df-a5ea-e3f45aad0f8f
 
 > anachronism used : modifiers/qualifiers interspersed; qualifier ignored
 
+## Remarks
+
 Using a qualifier before a Microsoft modifier such as **`__cdecl`** is an outdated practice.
 
 ## Example

@@ -10,7 +10,11 @@ ms.assetid: f8600adf-dfe2-4022-a37a-3d4997641dfd
 
 > nonstandard extension used : function given file scope
 
+## Remarks
+
 With the default Microsoft extensions ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)), function declarations have file scope.
+
+## Example
 
 ```c
 // C4210.c

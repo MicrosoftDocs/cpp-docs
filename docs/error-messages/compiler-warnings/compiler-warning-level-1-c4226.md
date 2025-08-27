@@ -10,6 +10,8 @@ ms.assetid: 69d6bbde-1300-4e48-8a9c-3648c80ab441
 
 > nonstandard extension used : '*keyword*' is an obsolete keyword
 
+## Remarks
+
 The current version of Visual C++ does not use this keyword.
 
 This warning is automatically promoted to an error.

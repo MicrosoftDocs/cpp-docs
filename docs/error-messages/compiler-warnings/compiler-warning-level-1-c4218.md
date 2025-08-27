@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4218"]
 
 > nonstandard extension used: must specify at least a storage class or a type
 
+## Remarks
+
 With the default Microsoft extensions (`/Ze`), you can declare a variable without specifying a type or storage class. The default type is **`int`**.
 
 ## Example
