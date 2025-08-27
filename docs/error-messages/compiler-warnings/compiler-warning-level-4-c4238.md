@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4238"
 title: "Compiler Warning (level 4) C4238"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4238"
+ms.date: 11/04/2016
 f1_keywords: ["C4238"]
 helpviewer_keywords: ["C4238"]
-ms.assetid: 5d4051d3-7b0f-43ea-8c8d-d194bfdceb71
 ---
 # Compiler Warning (level 4) C4238
 

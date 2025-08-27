@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4240"
 title: "Compiler Warning (level 3) C4240"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4240"
+ms.date: 11/04/2016
 f1_keywords: ["C4240"]
 helpviewer_keywords: ["C4240"]
-ms.assetid: a2657cdb-18e1-493f-882b-4e10c0bca71d
 ---
 # Compiler Warning (level 3) C4240
 

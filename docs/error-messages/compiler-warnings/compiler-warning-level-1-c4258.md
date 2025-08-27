@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4258"
 title: "Compiler Warning (level 1) C4258"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4258"
+ms.date: 11/04/2016
 f1_keywords: ["C4258"]
 helpviewer_keywords: ["C4258"]
-ms.assetid: bbb75e6d-6693-4e62-8ed3-b006a0ec55e3
 ---
 # Compiler Warning (level 1) C4258
 

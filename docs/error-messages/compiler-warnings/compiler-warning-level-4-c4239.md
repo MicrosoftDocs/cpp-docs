@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4239"
 title: "Compiler Warning (level 4) C4239"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4239"
+ms.date: 11/04/2016
 f1_keywords: ["C4239"]
 helpviewer_keywords: ["C4239"]
-ms.assetid: a23dc16a-649e-4870-9a24-275de1584fcd
 ---
 # Compiler Warning (level 4) C4239
 

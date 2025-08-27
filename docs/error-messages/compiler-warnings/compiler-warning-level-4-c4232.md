@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4232"
 title: "Compiler Warning (level 4) C4232"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4232"
+ms.date: 11/04/2016
 f1_keywords: ["C4232"]
 helpviewer_keywords: ["C4232"]
-ms.assetid: f92028a5-4ddd-43c1-97f5-4f724e5e14af
 ---
 # Compiler Warning (level 4) C4232
 

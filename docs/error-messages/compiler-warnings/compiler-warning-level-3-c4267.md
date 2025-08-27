@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4267"
 title: "Compiler Warning (level 3) C4267"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4267"
+ms.date: 11/04/2016
 f1_keywords: ["C4267"]
 helpviewer_keywords: ["C4267"]
-ms.assetid: 2fa2f13f-fa4f-47bb-ad8f-6cb19cfc91e6
 ---
 # Compiler Warning (level 3) C4267
 

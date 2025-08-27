@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4237"
 title: "Compiler Warning (level 1) C4237"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4237"
+ms.date: 11/04/2016
 f1_keywords: ["C4237"]
 helpviewer_keywords: ["C4237"]
-ms.assetid: f2e86c4b-80d8-460e-9429-83c5f3f5d7ca
 ---
 # Compiler Warning (level 1) C4237
 

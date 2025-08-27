@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4256"
 title: "Compiler Warning (level 4) C4256"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4256"
+ms.date: 11/04/2016
 f1_keywords: ["C4256"]
 helpviewer_keywords: ["C4256"]
-ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
 ---
 # Compiler Warning (level 4) C4256
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4244"
 title: "Compiler Warning (level 2) C4244"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4244"
+ms.date: 11/04/2016
 f1_keywords: ["C4244"]
 helpviewer_keywords: ["C4244"]
-ms.assetid: 2c19d157-21d1-42c2-a6c0-3f30f2ce3813
 ---
 # Compiler Warning (level 2) C4244
 

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, Error) C4233"
 title: "Compiler Warning (level 1, Error) C4233"
-ms.date: "10/25/2017"
+description: "Learn more about: Compiler Warning (level 1, Error) C4233"
+ms.date: 10/25/2017
 f1_keywords: ["C4233"]
 helpviewer_keywords: ["C4233"]
 ---

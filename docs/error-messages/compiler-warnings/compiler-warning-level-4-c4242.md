@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 3, off) C4242"
 title: "Compiler Warning (level 3, off) C4242"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3, off) C4242"
+ms.date: 11/04/2016
 f1_keywords: ["C4242"]
 helpviewer_keywords: ["C4242"]
 ---

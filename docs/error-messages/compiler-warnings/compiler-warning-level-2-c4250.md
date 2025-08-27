@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4250"
 title: "Compiler Warning (level 2) C4250"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4250"
+ms.date: 11/04/2016
 f1_keywords: ["C4250"]
 helpviewer_keywords: ["C4250"]
-ms.assetid: d47f7249-6b5a-414b-b2d4-56e5d246a782
 ---
 # Compiler Warning (level 2) C4250
 

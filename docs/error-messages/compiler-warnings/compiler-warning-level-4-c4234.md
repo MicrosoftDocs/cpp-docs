@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4234"
 title: "Compiler Warning (level 4) C4234"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4234"
+ms.date: 11/04/2016
 f1_keywords: ["C4234"]
 helpviewer_keywords: ["C4234"]
-ms.assetid: f7fecd5c-8248-4fde-8446-502aedc357ca
 ---
 # Compiler Warning (level 4) C4234
 

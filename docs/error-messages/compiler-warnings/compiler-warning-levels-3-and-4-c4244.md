@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (levels 3 and 4) C4244"
 title: "Compiler Warning (levels 3 and 4) C4244"
-ms.date: "11/6/2023"
+description: "Learn more about: Compiler Warning (levels 3 and 4) C4244"
+ms.date: 11/6/2023
 ---
 # Compiler Warning (levels 3 and 4) C4244
 
