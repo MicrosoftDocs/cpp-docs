@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: alignof Operator"
 title: "alignof Operator"
-ms.date: "12/17/2018"
+description: "Learn more about: alignof Operator"
+ms.date: 12/17/2018
 f1_keywords: ["__alignof_cpp", "alignof_cpp", "__alignof", "_alignof"]
 helpviewer_keywords: ["alignas [C++]", "alignment of structures", "__alignof keyword [C++]", "alignof [C++]", "types [C++], alignment requirements"]
 ---

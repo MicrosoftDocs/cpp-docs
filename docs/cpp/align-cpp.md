@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: align (C++)"
 title: "align (C++)"
-ms.date: "12/17/2018"
+description: "Learn more about: align (C++)"
+ms.date: 12/17/2018
 f1_keywords: ["align_cpp"]
 helpviewer_keywords: ["align __declspec keyword", "__declspec keyword [C++], align"]
 ---

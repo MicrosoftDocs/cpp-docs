@@ -1,8 +1,8 @@
 ---
+title: "<list> functions"
 description: "Learn more about: <list> functions"
-title: <list> functions
+ms.date: 11/04/2016
 ms.custom: ""
-ms.date: "11/04/2016"
 ms.topic: "reference"
 f1_keywords: ["list/std::swap"]
 ---

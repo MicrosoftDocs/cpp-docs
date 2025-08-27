@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Argument Passing and Naming Conventions"
 title: "Argument Passing and Naming Conventions"
-ms.date: "12/17/2018"
+description: "Learn more about: Argument Passing and Naming Conventions"
+ms.date: 12/17/2018
 helpviewer_keywords: ["argument passing [C++], conventions", "arguments [C++], widening", "coding conventions, arguments", "arguments [C++], passing", "registers, return values", "thiscall keyword [C++]", "naming conventions [C++], arguments", "arguments [C++], naming", "passing arguments [C++], conventions", "conventions [C++], argument names"]
-ms.assetid: de468979-eab8-4158-90c5-c198932f93b9
 ---
 # Argument Passing and Naming Conventions
 
