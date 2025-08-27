@@ -8,7 +8,7 @@ ms.assetid: 3df97812-3ed7-4003-9769-057acf97ce3c
 ---
 # Compiler Warning (level 4) C4206
 
-**nonstandard extension used : translation unit is empty**
+> nonstandard extension used : translation unit is empty
 
 The file was empty after preprocessing.
 

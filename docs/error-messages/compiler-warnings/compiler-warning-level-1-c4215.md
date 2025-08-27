@@ -8,7 +8,7 @@ ms.assetid: f2aab64d-1bab-4f75-95ee-89e1263047b1
 ---
 # Compiler Warning (level 1) C4215
 
-nonstandard extension used : long float
+> nonstandard extension used : long float
 
 The default Microsoft extensions (/Ze) treat **long float** as **`double`**. ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) does not. Use **`double`** to maintain compatibility.
 

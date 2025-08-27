@@ -8,7 +8,7 @@ ms.assetid: 3eea3455-6faa-4cdb-8730-73db7026bd1f
 ---
 # Compiler Warning (level 4) C4211
 
-nonstandard extension used : redefined extern to static
+> nonstandard extension used : redefined extern to static
 
 With the default Microsoft extensions (/Ze), you can redefine an **`extern`** identifier as **`static`**.
 

@@ -8,7 +8,7 @@ ms.assetid: 5cb0a36e-3fb5-422f-a5f9-e40b70776c27
 ---
 # Compiler Warning (level 4) C4208
 
-nonstandard extension used : delete [exp] - exp evaluated but ignored
+> nonstandard extension used : delete [exp] - exp evaluated but ignored
 
 With Microsoft extensions (/Ze), you can delete an array using a value within brackets with the [delete operator](../../cpp/delete-operator-cpp.md). The value is ignored.
 

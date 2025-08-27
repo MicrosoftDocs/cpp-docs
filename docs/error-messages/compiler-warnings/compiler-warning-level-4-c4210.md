@@ -8,7 +8,7 @@ ms.assetid: f8600adf-dfe2-4022-a37a-3d4997641dfd
 ---
 # Compiler Warning (level 4) C4210
 
-nonstandard extension used : function given file scope
+> nonstandard extension used : function given file scope
 
 With the default Microsoft extensions ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)), function declarations have file scope.
 

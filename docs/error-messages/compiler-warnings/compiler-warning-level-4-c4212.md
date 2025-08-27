@@ -8,7 +8,7 @@ ms.assetid: df781ea1-182d-4f9f-9a31-55b6ce80c711
 ---
 # Compiler Warning (level 4) C4212
 
-nonstandard extension used : function declaration used ellipsis
+> nonstandard extension used : function declaration used ellipsis
 
 The function prototype has a variable number of arguments. The function definition does not.
 
