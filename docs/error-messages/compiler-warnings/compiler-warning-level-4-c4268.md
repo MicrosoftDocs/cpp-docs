@@ -15,6 +15,8 @@ A **`const`** global or static instance of a non-trivial class is initialized wi
 
 ## Example
 
+The following example generates C4268:
+
 ```cpp
 // C4268.cpp
 // compile with: /c /LD /W4

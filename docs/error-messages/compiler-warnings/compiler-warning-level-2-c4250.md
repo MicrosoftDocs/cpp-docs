@@ -19,6 +19,8 @@ Because a virtual base class is shared among multiple derived classes, a name in
 
 ## Examples
 
+The following example generates C4250:
+
 ```cpp
 // C4250.cpp
 // compile with: /c /W2

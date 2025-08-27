@@ -15,6 +15,8 @@ Under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-ext
 
 ## Example
 
+The following example generates C4240:
+
 ```cpp
 // C4240.cpp
 // compile with: /W3

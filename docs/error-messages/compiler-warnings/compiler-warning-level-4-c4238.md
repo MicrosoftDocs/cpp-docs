@@ -15,6 +15,8 @@ For compatibility with previous versions of Visual C++, Microsoft extensions (**
 
 ## Example
 
+The following example generates C4238:
+
 ```cpp
 // C4238.cpp
 // compile with: /W4 /c

@@ -15,6 +15,8 @@ A **`const`** automatic instance of a non-trivial class is initialized with a co
 
 ## Example
 
+The following example generates C4269:
+
 ```cpp
 // C4269.cpp
 // compile with: /c /LD /W1
