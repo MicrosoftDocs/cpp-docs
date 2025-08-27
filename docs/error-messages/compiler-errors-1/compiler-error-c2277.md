@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2277"
 description: "Learn more about: Compiler Error C2277"
-ms.date: 11/04/2016
+ms.date: 08/27/2025
 f1_keywords: ["C2277"]
 helpviewer_keywords: ["C2277"]
 ---
