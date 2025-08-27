@@ -8,7 +8,7 @@ ms.assetid: 2fa2f13f-fa4f-47bb-ad8f-6cb19cfc91e6
 ---
 # Compiler Warning (level 3) C4267
 
-'var' : conversion from 'size_t' to 'type', possible loss of data
+> 'var' : conversion from 'size_t' to 'type', possible loss of data
 
 The compiler detected a conversion from `size_t` to a smaller type.
 

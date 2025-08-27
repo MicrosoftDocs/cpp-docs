@@ -8,7 +8,7 @@ ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
 ---
 # Compiler Warning (level 4) C4256
 
-'function' : constructor for class with virtual bases has '...'; calls may not be compatible with older versions of Visual C++
+> 'function' : constructor for class with virtual bases has '...'; calls may not be compatible with older versions of Visual C++
 
 Possible incompatibility.
 

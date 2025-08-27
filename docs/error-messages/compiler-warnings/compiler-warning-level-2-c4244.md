@@ -8,7 +8,7 @@ ms.assetid: 2c19d157-21d1-42c2-a6c0-3f30f2ce3813
 ---
 # Compiler Warning (level 2) C4244
 
-'argument' : conversion from 'type1' to 'type2', possible loss of data
+> 'argument' : conversion from 'type1' to 'type2', possible loss of data
 
 A floating point type was converted to an integer type.  A possible loss of data may have occurred.
 

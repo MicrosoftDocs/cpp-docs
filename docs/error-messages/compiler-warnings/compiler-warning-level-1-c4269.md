@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4269"]
 ---
 # Compiler Warning (level 1) C4269
 
-'identifier' : 'const' automatic data initialized with compiler generated default constructor produces unreliable results
+> 'identifier' : 'const' automatic data initialized with compiler generated default constructor produces unreliable results
 
 A **`const`** automatic instance of a non-trivial class is initialized with a compiler-generated default constructor.
 

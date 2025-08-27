@@ -8,7 +8,7 @@ ms.assetid: a23dc16a-649e-4870-9a24-275de1584fcd
 ---
 # Compiler Warning (level 4) C4239
 
-nonstandard extension used : 'token' : conversion from 'type' to 'type'
+> nonstandard extension used : 'token' : conversion from 'type' to 'type'
 
 This type conversion is not allowed by the C++ standard, but it is permitted here as an extension. This warning is always followed by at least one line of explanation describing the language rule being violated.
 

@@ -8,7 +8,7 @@ ms.assetid: f7fecd5c-8248-4fde-8446-502aedc357ca
 ---
 # Compiler Warning (level 4) C4234
 
-nonstandard extension used: 'keyword' keyword reserved for future use
+> nonstandard extension used: 'keyword' keyword reserved for future use
 
 The compiler does not yet implement the keyword you used.
 

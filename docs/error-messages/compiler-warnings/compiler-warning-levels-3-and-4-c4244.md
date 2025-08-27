@@ -5,7 +5,7 @@ ms.date: "11/6/2023"
 ---
 # Compiler Warning (levels 3 and 4) C4244
 
-'conversion' conversion from 'type1' to 'type2', possible loss of data
+> 'conversion' conversion from 'type1' to 'type2', possible loss of data
 
 An integer type is converted to a smaller integer type.
 - This is a level-4 warning if *type1* is a signed or unsigned **`int`** and *type2* is a smaller, such as a signed or unsigned **`short`**.
