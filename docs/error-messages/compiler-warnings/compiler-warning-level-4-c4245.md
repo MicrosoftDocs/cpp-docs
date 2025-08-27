@@ -16,7 +16,7 @@ You tried to convert a **`signed const`** type that has a negative value to an *
 
 ## Example
 
-The following sample generates C4245:
+The following example generates C4245:
 
 ```cpp
 // C4245.cpp

@@ -19,7 +19,7 @@ C4244 can also appear when the warning level is 2. For more information, see [Co
 
 ## Examples
 
-The following sample generates C4244:
+The following example generates C4244:
 
 ```cpp
 // C4244_level4.cpp
@@ -56,7 +56,7 @@ int main() {
 
 Warning C4244 can occur when building code for 64-bit targets that doesn't generate the warning when building for 32-bit targets. For example, pointer arithmetic results in a 32-bit quantity on 32-bit platforms, but a 64-bit quantity on 64-bit platforms.
 
-The following sample generates C4244 when compiled for 64-bit targets:
+The following example generates C4244 when compiled for 64-bit targets:
 
 ```cpp
 // C4244_level3_b.cpp

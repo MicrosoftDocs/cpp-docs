@@ -16,7 +16,7 @@ This type conversion is not allowed by the C++ standard, but it is permitted her
 
 ## Examples
 
-The following sample generates C4239.
+The following example generates C4239.
 
 ```cpp
 // C4239.cpp
@@ -34,7 +34,7 @@ void func(void) {
 
 Conversion from integral type to enum type is not strictly allowed.
 
-The following sample generates C4239.
+The following example generates C4239.
 
 ```cpp
 // C4239b.cpp

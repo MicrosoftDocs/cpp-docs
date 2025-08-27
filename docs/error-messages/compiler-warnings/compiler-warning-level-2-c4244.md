@@ -20,7 +20,7 @@ C4244 can also fire at level 3, and 4; see [Compiler Warning (levels 3 and 4) C4
 
 ## Example
 
-The following sample generates C4244:
+The following example generates C4244:
 
 ```cpp
 // C4244_level2.cpp

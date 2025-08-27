@@ -17,7 +17,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4255:
+The following example generates C4255:
 
 ```c
 // C4255.c

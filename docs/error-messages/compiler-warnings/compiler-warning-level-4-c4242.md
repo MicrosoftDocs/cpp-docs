@@ -19,7 +19,7 @@ For more information on C4242, see [Common Compiler Errors](/windows/win32/WinPr
 
 ## Example
 
-The following sample generates C4242:
+The following example generates C4242:
 
 ```cpp
 // C4242.cpp

@@ -42,7 +42,7 @@ int main() {
 }
 ```
 
-The following sample generates C4250.
+The following example generates C4250.
 
 ```cpp
 // C4250_b.cpp
@@ -73,7 +73,7 @@ int main() {
 }
 ```
 
-This sample shows a more complex situation. The following sample generates C4250.
+This example shows a more complex situation. The following example generates C4250.
 
 ```cpp
 // C4250_c.cpp

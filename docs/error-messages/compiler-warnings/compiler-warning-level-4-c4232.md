@@ -16,7 +16,7 @@ Under Microsoft extensions (/Ze), you can give a nonstatic value as the address 
 
 ## Example
 
-The following sample generates C4232:
+The following example generates C4232:
 
 ```c
 // C4232.c

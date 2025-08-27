@@ -24,7 +24,7 @@ To fix this warning,
 
 ## Example
 
-The following sample generates C4256:
+The following example generates C4256:
 
 ```cpp
 // C4256.cpp

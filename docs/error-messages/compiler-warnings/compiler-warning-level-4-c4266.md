@@ -17,7 +17,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4266:
+The following example generates C4266:
 
 ```cpp
 // C4266.cpp

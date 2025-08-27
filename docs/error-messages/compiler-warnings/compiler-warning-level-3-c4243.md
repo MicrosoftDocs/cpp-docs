@@ -15,7 +15,7 @@ A pointer to a derived class is converted to a pointer to a base class, but the 
 
 ## Example
 
-The following sample generates C4243:
+The following example generates C4243:
 
 ```cpp
 // C4243.cpp

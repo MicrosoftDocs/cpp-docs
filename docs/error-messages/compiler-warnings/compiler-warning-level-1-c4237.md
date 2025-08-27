@@ -16,7 +16,7 @@ A keyword in the C++ specification is not implemented in the Microsoft C++ compi
 
 ## Example
 
-The following sample generates C4237:
+The following example generates C4237:
 
 ```cpp
 // C4237.cpp
