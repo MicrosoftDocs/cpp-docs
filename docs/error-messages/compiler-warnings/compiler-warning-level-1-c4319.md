@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4319"
 title: "Compiler Warning (level 1) C4319"
-ms.date: "01/18/2018"
+description: "Learn more about: Compiler Warning (level 1) C4319"
+ms.date: 01/18/2018
 f1_keywords: ["C4319"]
 helpviewer_keywords: ["C4319"]
-ms.assetid: 1fac8048-9bd6-4552-a21c-192c67772bb9
 ---
 # Compiler Warning (level 1) C4319
 

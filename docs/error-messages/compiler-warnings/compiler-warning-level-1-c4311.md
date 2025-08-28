@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4311"
 title: "Compiler Warning (level 1) C4311"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4311"
+ms.date: 11/04/2016
 f1_keywords: ["C4311"]
 helpviewer_keywords: ["C4311"]
-ms.assetid: ddc579d0-d051-47bc-915d-71ffb32323c9
 ---
 # Compiler Warning (level 1) C4311
 

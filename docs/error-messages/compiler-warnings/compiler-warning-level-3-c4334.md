@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4334"
 title: "Compiler Warning (level 3) C4334"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4334"
+ms.date: 11/04/2016
 f1_keywords: ["C4334"]
 helpviewer_keywords: ["C4334"]
-ms.assetid: d845857f-bc95-4faf-a079-626a0cf935ba
 ---
 # Compiler Warning (level 3) C4334
 

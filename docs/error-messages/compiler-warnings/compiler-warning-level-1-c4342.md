@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4342"
 title: "Compiler Warning (level 1) C4342"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4342"
+ms.date: 11/04/2016
 f1_keywords: ["C4342"]
 helpviewer_keywords: ["C4342"]
-ms.assetid: 47d4d5ab-069f-4cdc-98c3-10d649577a37
 ---
 # Compiler Warning (level 1) C4342
 

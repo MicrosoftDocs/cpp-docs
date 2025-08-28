@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4329"
 title: "Compiler Warning (level 1) C4329"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4329"
+ms.date: 11/04/2016
 f1_keywords: ["C4329"]
 helpviewer_keywords: ["C4329"]
 ---

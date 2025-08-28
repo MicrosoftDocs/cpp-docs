@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4337"
 title: "Compiler Warning (level 4) C4337"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4337"
+ms.date: 11/04/2016
 f1_keywords: ["C4337"]
 helpviewer_keywords: ["C4337"]
-ms.assetid: 70bc72d9-aac5-45cd-abd3-ebe42a05897b
 ---
 # Compiler Warning (level 4) C4337
 

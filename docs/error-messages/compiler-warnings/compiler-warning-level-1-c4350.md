@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4350"
 title: "Compiler Warning (level 1) C4350"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4350"
+ms.date: 11/04/2016
 f1_keywords: ["C4350"]
 helpviewer_keywords: ["C4350"]
-ms.assetid: 4cc8ed67-64c4-4da5-a7a5-a639232baa23
 ---
 # Compiler Warning (level 1) C4350
 

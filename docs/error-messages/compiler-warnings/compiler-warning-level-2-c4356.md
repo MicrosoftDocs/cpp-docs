@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4356"
 title: "Compiler Warning (level 2) C4356"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4356"
+ms.date: 11/04/2016
 f1_keywords: ["C4356"]
 helpviewer_keywords: ["C4356"]
-ms.assetid: 3af3defe-de33-43b6-bd6c-2c2e09e34f3f
 ---
 # Compiler Warning (level 2) C4356
 

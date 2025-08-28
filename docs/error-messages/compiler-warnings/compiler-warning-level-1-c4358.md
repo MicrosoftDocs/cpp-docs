@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4358"
 title: "Compiler Warning (level 1) C4358"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4358"
+ms.date: 11/04/2016
 f1_keywords: ["C4358"]
 helpviewer_keywords: ["C4358"]
-ms.assetid: a9848f84-14b3-405e-81bf-ee3e91a51511
 ---
 # Compiler Warning (level 1) C4358
 

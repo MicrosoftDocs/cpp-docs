@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4336"
 title: "Compiler Warning (level 4) C4336"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4336"
+ms.date: 11/04/2016
 f1_keywords: ["C4336"]
 helpviewer_keywords: ["C4336"]
-ms.assetid: 93f199dd-d6dd-42c0-82d8-c12d101a7235
 ---
 # Compiler Warning (level 4) C4336
 

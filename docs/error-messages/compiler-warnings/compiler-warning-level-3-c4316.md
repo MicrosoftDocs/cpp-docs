@@ -1,10 +1,9 @@
 ---
 title: "Compiler Warning (level 3) C4316"
 description: "Description of C++ compiler warning C4316"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["C4316"]
 helpviewer_keywords: ["C4316"]
-ms.assetid: 10371f01-aeb8-40ac-a290-59e63efa5ad4
 ---
 # Compiler Warning (level 3) C4316
 

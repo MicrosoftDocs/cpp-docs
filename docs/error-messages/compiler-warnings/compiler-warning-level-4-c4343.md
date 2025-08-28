@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4343"
 title: "Compiler Warning (level 4) C4343"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4343"
+ms.date: 11/04/2016
 f1_keywords: ["C4343"]
 helpviewer_keywords: ["C4343"]
-ms.assetid: a721b710-e04f-4d15-b678-e4a2c8fd0181
 ---
 # Compiler Warning (level 4) C4343
 
