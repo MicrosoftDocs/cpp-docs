@@ -16,7 +16,7 @@ The type conversion causes a constant to exceed the space allocated for it. You 
 
 ## Example
 
-The following sample generates C4309:
+The following example generates C4309:
 
 ```cpp
 // C4309.cpp

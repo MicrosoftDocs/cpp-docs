@@ -16,7 +16,7 @@ The specified **operator->()** function cannot return the type for which it is d
 
 ## Example
 
-The following sample generates C4285:
+The following example generates C4285:
 
 ```cpp
 // C4285.cpp

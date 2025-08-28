@@ -24,7 +24,7 @@ You can avoid this warning by using the [warning](../../preprocessor/warning.md)
 
 ## Example
 
-The following code sample generates C4290:
+The following example generates C4290:
 
 ```cpp
 // C4290.cpp

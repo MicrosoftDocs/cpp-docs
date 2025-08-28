@@ -16,7 +16,7 @@ The operator is used in an expression that results in an integer constant overfl
 
 ## Example
 
-The following sample generates C4307:
+The following example generates C4307:
 
 ```cpp
 // C4307.cpp

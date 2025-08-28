@@ -16,7 +16,7 @@ It is an error to export a function marked with the [__clrcall](../../cpp/clrcal
 
 ## Example
 
-The following sample generates C4272:
+The following example generates C4272:
 
 ```cpp
 // C4272.cpp

@@ -15,7 +15,7 @@ This warning is issued when a value is converted to a smaller type in an initial
 
 ## Example
 
-This sample shows two ways you might see this warning:
+This example shows two ways you might see this warning:
 
 ```cpp
 // C4305.cpp

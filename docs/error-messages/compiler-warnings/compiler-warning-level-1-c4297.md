@@ -22,7 +22,7 @@ This warning is also generated for __declspec([dllexport](../../cpp/dllexport-dl
 
 ## Example
 
-The following sample generates C4297:
+The following example generates C4297:
 
 ```cpp
 // C4297.cpp

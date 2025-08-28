@@ -16,7 +16,7 @@ Your code incorrectly allows **operator->** to call itself.
 
 ## Example
 
-The following sample generates C4280:
+The following example generates C4280:
 
 ```cpp
 // C4280.cpp

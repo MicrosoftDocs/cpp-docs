@@ -16,7 +16,7 @@ Your code allows **operator->** to call itself.
 
 ## Example
 
-The following sample generates C4281:
+The following example generates C4281:
 
 ```cpp
 // C4281.cpp

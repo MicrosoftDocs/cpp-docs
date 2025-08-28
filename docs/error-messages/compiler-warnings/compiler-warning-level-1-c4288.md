@@ -18,7 +18,7 @@ See [`/Zc:forScope`](../../build/reference/zc-forscope-force-conformance-in-for-
 
 ## Example
 
-The following sample generates C4288:
+The following example generates C4288:
 
 ```cpp
 // C4288.cpp

@@ -15,7 +15,7 @@ A constant value is cast to a smaller type. The compiler performs the cast, whic
 
 ## Example
 
-The following sample generates C4310:
+The following example generates C4310:
 
 ```cpp
 // C4310.cpp

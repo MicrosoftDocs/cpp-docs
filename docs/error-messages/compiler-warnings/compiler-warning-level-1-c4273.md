@@ -16,7 +16,7 @@ Two definitions in a file differ in their use of [`dllimport`](../../cpp/dllexpo
 
 ## Examples
 
-The following sample generates C4273, and shows how to fix it.
+The following example generates C4273, and shows how to fix it.
 
 ```cpp
 // C4273.cpp
@@ -25,7 +25,7 @@ char __declspec(dllimport) c;
 char c;   // C4273, delete this line or the line above to resolve
 ```
 
-The following sample generates C4273. To fix it, delete the redeclaration of `printf_s`.
+The following example generates C4273. To fix it, delete the redeclaration of `printf_s`.
 
 ```cpp
 // C4273_b.cpp

@@ -18,7 +18,7 @@ To resolve this issue, you can use a cast on the first operand to expand it to t
 
 ## Example
 
-The following sample generates C4293, and shows ways to fix it:
+The following example generates C4293, and shows ways to fix it:
 
 ```cpp
 // C4293.cpp
