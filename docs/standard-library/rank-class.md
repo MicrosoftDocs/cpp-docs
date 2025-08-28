@@ -13,18 +13,18 @@ Gets number of array dimensions.
 ## Syntax
 
 ```cpp
-template <class Ty>
+template <class Type>
 struct rank;
 ```
 
 ### Template parameters
 
-*`Ty`*\
+*`Type`*\
 The type to query.
 
 ## Remarks
 
-The type query holds the value of the number of dimensions of the array type *`Ty`*, or 0 if *`Ty`* is not an array type.
+The type query holds the value of the number of dimensions of the array type *`Type`*, or 0 if *`Type`* is not an array type.
 
 ## Example
 
