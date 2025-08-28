@@ -31,11 +31,12 @@ The type query holds the value of the number of dimensions of the array type *`T
 ```cpp
 // std__type_traits__rank.cpp
 // compile with: /EHsc
+
 #include <type_traits>
 #include <iostream>
 
 int main()
-    {
+{
     std::cout << "rank<int> == "
         << std::rank<int>::value << std::endl;
     std::cout << "rank<int[5]> == "
@@ -43,14 +44,23 @@ int main()
     std::cout << "rank<int[5][10]> == "
         << std::rank<int[5][10]>::value << std::endl;
 
-    return (0);
-    }
+    int single_dim_array[]{ 1, 2, 3 };
+    int double_dim_array[2][1]{ { 4 }, { 5 } };
+
+    std::cout << "\nrank<decltype(single_dim_array)> == "
+        << std::rank<decltype(single_dim_array)>::value << std::endl;
+    std::cout << "rank<decltype(double_dim_array)> == "
+        << std::rank<decltype(double_dim_array)>::value << std::endl;
+}
 ```
 
 ```Output
 rank<int> == 0
 rank<int[5]> == 1
 rank<int[5][10]> == 2
+
+rank<decltype(single_dim_array)> == 1
+rank<decltype(double_dim_array)> == 2
 ```
 
 ## Requirements
