@@ -71,5 +71,5 @@ rank<decltype(double_dim_array)> == 2
 
 ## See also
 
-[`<type_traits>`](../standard-library/type-traits.md)\
-[`extent` class](../standard-library/extent-class.md)
+[`<type_traits>`](type-traits.md)\
+[`extent` class](extent-class.md)
