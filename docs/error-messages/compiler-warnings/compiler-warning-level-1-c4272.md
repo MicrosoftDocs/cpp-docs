@@ -8,7 +8,7 @@ ms.assetid: 0d6c1de4-2eef-42c4-b861-c221f8b495ef
 ---
 # Compiler Warning (level 1) C4272
 
-'function' : is marked __declspec(dllimport); must specify native calling convention when importing a function.
+> 'function' : is marked __declspec(dllimport); must specify native calling convention when importing a function.
 
 It is an error to export a function marked with the [__clrcall](../../cpp/clrcall.md) calling convention, and the compiler issues this warning if you attempt to import a function marked `__clrcall`.
 

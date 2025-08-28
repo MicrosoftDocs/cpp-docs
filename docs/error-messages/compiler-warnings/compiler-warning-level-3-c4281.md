@@ -8,7 +8,7 @@ ms.assetid: a9771261-5725-4fc6-87b6-16cf92113a25
 ---
 # Compiler Warning (level 3) C4281
 
-'operator ->' recursion occurred through type 'type'
+> 'operator ->' recursion occurred through type 'type'
 
 Your code allows **operator->** to call itself.
 

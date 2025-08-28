@@ -8,6 +8,6 @@ ms.assetid: 155bef24-7bd1-497b-a24b-4a0d784b44cd
 ---
 # Compiler Warning (level 3) C4282
 
-then through type 'type'
+> then through type 'type'
 
 This continuation of warning C4281shows that **operator->** calls itself through `type`.

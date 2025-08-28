@@ -8,7 +8,7 @@ ms.assetid: 93eadd6c-6f36-413b-ba91-c9aa2314685a
 ---
 # Compiler Warning (level 1) C4286
 
-'type1' : is caught by base class ('type2') on line number
+> 'type1' : is caught by base class ('type2') on line number
 
 The specified exception type is handled by a previous handler. The type for the second catch is derived from the type of the first. Exceptions for a base class catch exceptions for a derived class.
 

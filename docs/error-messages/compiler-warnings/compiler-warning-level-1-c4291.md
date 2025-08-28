@@ -8,7 +8,7 @@ ms.assetid: c2b95dea-38f2-4609-9104-707c30798da4
 ---
 # Compiler Warning (level 1) C4291
 
-'declaration' : no matching operator delete found; memory will not be freed if initialization throws an exception
+> 'declaration' : no matching operator delete found; memory will not be freed if initialization throws an exception
 
 A placement [new](../../cpp/new-operator-cpp.md) is used for which there is no placement [delete](../../cpp/delete-operator-cpp.md).
 

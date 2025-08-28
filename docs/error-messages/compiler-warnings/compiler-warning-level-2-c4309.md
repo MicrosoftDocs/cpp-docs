@@ -8,7 +8,7 @@ ms.assetid: cb3f41ef-fd8a-4def-baa1-924e751fca68
 ---
 # Compiler Warning (level 2) C4309
 
-'conversion' : truncation of constant value
+> 'conversion' : truncation of constant value
 
 The type conversion causes a constant to exceed the space allocated for it. You may need to use a larger type for the constant.
 

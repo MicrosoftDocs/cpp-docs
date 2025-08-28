@@ -8,7 +8,7 @@ ms.assetid: d1c6d85b-28e0-4a1f-9d48-23593337a6fb
 ---
 # Compiler Warning (level 3) C4290
 
-C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+> C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
 
 A function is declared using exception specification, which Visual C++ accepts but does not implement. Code with exception specifications that are ignored during compilation may need to be recompiled and linked to be reused in future versions supporting exception specifications.
 

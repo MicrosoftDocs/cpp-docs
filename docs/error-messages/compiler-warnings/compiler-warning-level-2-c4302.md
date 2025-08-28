@@ -8,7 +8,7 @@ ms.assetid: f5e1c939-e134-4cca-ba1e-9b15a81549ae
 ---
 # Compiler Warning (level 2) C4302
 
-'conversion' : truncation from 'type 1' to 'type 2'
+> 'conversion' : truncation from 'type 1' to 'type 2'
 
 The compiler detected a conversion from a larger type to a smaller type. Information may be lost.
 

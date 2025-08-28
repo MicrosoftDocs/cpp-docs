@@ -8,7 +8,7 @@ ms.assetid: fa14de1f-fc19-4eec-8bea-81003636e12f
 ---
 # Compiler Warning (level 2) C4285
 
-return type for 'identifier::operator ->' is recursive if applied using infix notation
+> return type for 'identifier::operator ->' is recursive if applied using infix notation
 
 The specified **operator->()** function cannot return the type for which it is defined or a reference to the type for which it is defined.
 
