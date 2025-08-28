@@ -10,6 +10,8 @@ ms.assetid: d3763c52-6110-4da0-84db-5264e3f3f166
 
 > 'operator' : right shift by too large amount, data loss
 
+## Remarks
+
 A right shift operation was too large an amount.  All significant bits are shifted out and the result will always be zero.
 
 ## Example

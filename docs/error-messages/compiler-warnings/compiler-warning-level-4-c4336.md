@@ -10,7 +10,11 @@ ms.assetid: 93f199dd-d6dd-42c0-82d8-c12d101a7235
 
 > import cross-referenced type library 'type_lib1' before importing 'type_lib2'
 
+## Remarks
+
 A type library was referenced with the [#import](../../preprocessor/hash-import-directive-cpp.md) directive. However, the type library contained a reference to another type library that was not referenced with `#import`. This other .tlb file was found by the compiler.
+
+## Example
 
 Given two type libraries on disk created from the following two files (compiled with midl.exe):
 

@@ -12,7 +12,11 @@ ms.assetid: 8127a08c-d626-481b-aa7b-04a3fdc9a9ec
 
 ## Remarks
 
-You may not change the attributes of a standard section. For example:
+You may not change the attributes of a standard section.
+
+## Example
+
+For example:
 
 ```cpp
 #pragma section(".sdata", long)

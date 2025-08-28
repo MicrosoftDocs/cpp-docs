@@ -10,6 +10,8 @@ ms.assetid: 1fac8048-9bd6-4552-a21c-192c67772bb9
 
 > '~' : zero extending '*type1*' to '*type2*' of greater size
 
+## Remarks
+
 The result of the **~** (bitwise complement) operator is unsigned and then zero-extended when it is converted to a larger type.
 
 ## Example

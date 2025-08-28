@@ -10,7 +10,11 @@ ms.assetid: 9259c633-3c02-4900-b94a-2d8d366d61cd
 
 > param array argument in formal argument list for delegate 'del' ignored when generating 'function'
 
+## Remarks
+
 The `ParamArray` attribute was ignored, and `function` cannot be called with variable arguments.
+
+## Example
 
 The following sample generates C4357:
 

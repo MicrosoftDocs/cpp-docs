@@ -10,9 +10,13 @@ ms.assetid: 3af3defe-de33-43b6-bd6c-2c2e09e34f3f
 
 > 'member' : static data member cannot be initialized via derived class
 
+## Remarks
+
 The initialization of a static data member was ill formed. The compiler accepted the initialization. To avoid the warning, initialize the member through the base class.
 
 Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning.
+
+## Example
 
 The following sample generates C4356:
 

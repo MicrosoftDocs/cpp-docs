@@ -10,7 +10,11 @@ ms.assetid: 816010eb-6079-48d5-a41b-0fc4d67cfe4c
 
 > 'type' : redefinition of default parameter : parameter number
 
+## Remarks
+
 A template parameter was redefined.
+
+## Example
 
 The following sample generates C4348:
 

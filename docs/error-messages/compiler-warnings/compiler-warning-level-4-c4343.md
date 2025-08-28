@@ -10,7 +10,11 @@ ms.assetid: a721b710-e04f-4d15-b678-e4a2c8fd0181
 
 > #pragma optimize("g",off) overrides /Og option
 
+## Remarks
+
 This warning, only valid in the Itanium Processor Family (IPF) compiler, reports that a pragma [optimize](../../preprocessor/optimize.md) overrode a [/Og](../../build/reference/og-global-optimizations.md) compiler option.
+
+## Example
 
 The following sample generates C4343:
 

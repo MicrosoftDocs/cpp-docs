@@ -10,6 +10,8 @@ ms.assetid: 47d4d5ab-069f-4cdc-98c3-10d649577a37
 
 > behavior change: '*function*' called, but a member operator was called in previous versions
 
+## Remarks
+
 In versions of Visual C++ before Visual Studio 2002, a member was called, but this behavior has been changed and the compiler now finds the best match in namespace scope.
 
 If a member operator was found, the compiler would previously not consider any namespace scope operators. If there is a better match at namespace scope, the current compiler correctly calls it, whereas previous compilers wouldn't consider it.
@@ -17,6 +19,8 @@ If a member operator was found, the compiler would previously not consider any n
 This warning should be disabled after you successfully port your code to the current version.  The compiler may give false positives, generating this warning for code where there is no behavior change.
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## Example
 
 The following sample generates C4342:
 

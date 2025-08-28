@@ -10,6 +10,8 @@ ms.assetid: d845857f-bc95-4faf-a079-626a0cf935ba
 
 > 'operator': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
 
+## Remarks
+
 The result of 32-bit shift was converted to 64-bit, and the compiler suspects that a 64-bit shift was intended. Resolve this warning by using a 64-bit shift. If a 32-bit shift is intentional, then cast the shift result to 32-bit to make it clear to the compiler.
 
 ## Example

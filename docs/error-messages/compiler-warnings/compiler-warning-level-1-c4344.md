@@ -10,4 +10,6 @@ ms.assetid: cd20859d-f07f-4c70-904b-cb756a53b1ed
 
 > behavior change: use of explicit template arguments results in call to 'function'
 
+## Remarks
+
 A call to a function using explicit template arguments calls a different function than it would if explicit arguments had not been specified
