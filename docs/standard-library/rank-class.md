@@ -17,7 +17,7 @@ template <class Ty>
 struct rank;
 ```
 
-### Parameters
+### Template parameters
 
 *`Ty`*\
 The type to query.
