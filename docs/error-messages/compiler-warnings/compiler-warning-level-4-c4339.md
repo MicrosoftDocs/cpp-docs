@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 4, off) C4339"
 title: "Compiler Warning (level 4, off) C4339"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4, off) C4339"
+ms.date: 11/04/2016
 f1_keywords: ["C4339"]
 helpviewer_keywords: ["C4339"]
 ---
@@ -9,11 +9,15 @@ helpviewer_keywords: ["C4339"]
 
 > 'type' : use of undefined type detected in WinRT or CLR meta-data - use of this type may lead to a runtime exception
 
+## Remarks
+
 A type wasn't defined in code that was compiled for Windows Runtime or the common language runtime. Define the type to avoid a possible runtime exception.
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-The following sample generates C4339 and shows how to fix it:
+## Example
+
+The following example generates C4339 and shows how to fix it:
 
 ```cpp
 // C4339.cpp

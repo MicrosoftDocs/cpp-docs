@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4348"
 title: "Compiler Warning (level 1) C4348"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4348"
+ms.date: 11/04/2016
 f1_keywords: ["C4348"]
 helpviewer_keywords: ["C4348"]
-ms.assetid: 816010eb-6079-48d5-a41b-0fc4d67cfe4c
 ---
 # Compiler Warning (level 1) C4348
 
-'type' : redefinition of default parameter : parameter number
+> 'type' : redefinition of default parameter : parameter number
+
+## Remarks
 
 A template parameter was redefined.
 
-The following sample generates C4348:
+## Example
+
+The following example generates C4348:
 
 ```cpp
 // C4348.cpp
