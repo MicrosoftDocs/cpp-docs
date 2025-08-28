@@ -9,7 +9,13 @@ helpviewer_keywords: ["C4310"]
 
 > cast truncates constant value
 
-A constant value is cast to a smaller type. The compiler performs the cast, which truncates data. The following sample generates C4310:
+## Remarks
+
+A constant value is cast to a smaller type. The compiler performs the cast, which truncates data.
+
+## Example
+
+The following sample generates C4310:
 
 ```cpp
 // C4310.cpp

@@ -10,7 +10,11 @@ ms.assetid: a9771261-5725-4fc6-87b6-16cf92113a25
 
 > 'operator ->' recursion occurred through type 'type'
 
+## Remarks
+
 Your code allows **operator->** to call itself.
+
+## Example
 
 The following sample generates C4281:
 

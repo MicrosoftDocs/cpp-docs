@@ -10,9 +10,13 @@ ms.assetid: f5e1c939-e134-4cca-ba1e-9b15a81549ae
 
 > 'conversion' : truncation from 'type 1' to 'type 2'
 
+## Remarks
+
 The compiler detected a conversion from a larger type to a smaller type. Information may be lost.
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+## Example
 
 The following sample generates C4302:
 

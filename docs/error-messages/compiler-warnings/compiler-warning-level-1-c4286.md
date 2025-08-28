@@ -10,6 +10,8 @@ ms.assetid: 93eadd6c-6f36-413b-ba91-c9aa2314685a
 
 > 'type1' : is caught by base class ('type2') on line number
 
+## Remarks
+
 The specified exception type is handled by a previous handler. The type for the second catch is derived from the type of the first. Exceptions for a base class catch exceptions for a derived class.
 
 ## Example

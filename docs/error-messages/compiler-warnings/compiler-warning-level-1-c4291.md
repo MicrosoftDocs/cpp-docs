@@ -10,13 +10,19 @@ ms.assetid: c2b95dea-38f2-4609-9104-707c30798da4
 
 > 'declaration' : no matching operator delete found; memory will not be freed if initialization throws an exception
 
+## Remarks
+
 A placement [new](../../cpp/new-operator-cpp.md) is used for which there is no placement [delete](../../cpp/delete-operator-cpp.md).
 
 When memory is allocated for an object with operator **`new`**, the object's constructor is called. If the constructor throws an exception, any memory that was allocated for the object should be deallocated. This cannot take place unless an operator **`delete`** function exists that matches the operator **`new`**.
 
 If you use the operator **`new`** without any extra arguments and compile with [/GX](../../build/reference/gx-enable-exception-handling.md), [/EHs](../../build/reference/eh-exception-handling-model.md), or /EHa options to enable exception handling, the compiler will generate code to call operator **`delete`** if the constructor throws an exception.
 
-If you use the placement form of the **`new`** operator (the form with arguments in addition to the size of the allocation) and the object's constructor throws an exception, the compiler will still generate code to call operator **`delete`**; but it will only do so if a placement form of operator **`delete`** exists matching the placement form of the operator **`new`** that allocated the memory. For example:
+If you use the placement form of the **`new`** operator (the form with arguments in addition to the size of the allocation) and the object's constructor throws an exception, the compiler will still generate code to call operator **`delete`**; but it will only do so if a placement form of operator **`delete`** exists matching the placement form of the operator **`new`** that allocated the memory.
+
+## Example
+
+For example:
 
 ```cpp
 // C4291.cpp

@@ -10,6 +10,8 @@ ms.assetid: 5a948680-7ed1-469f-978d-ae99d154e161
 
 > #ident ignored; see documentation for #pragma comment(exestr, 'string')
 
+## Remarks
+
 The `#ident` directive, which inserts a user-specified string in the object or executable file, is deprecated. Consequently, the compiler ignores the directive.
 
 > [!CAUTION]

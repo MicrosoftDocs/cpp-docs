@@ -10,7 +10,11 @@ ms.assetid: cb3f41ef-fd8a-4def-baa1-924e751fca68
 
 > 'conversion' : truncation of constant value
 
+## Remarks
+
 The type conversion causes a constant to exceed the space allocated for it. You may need to use a larger type for the constant.
+
+## Example
 
 The following sample generates C4309:
 

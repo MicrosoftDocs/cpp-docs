@@ -10,7 +10,11 @@ ms.assetid: fa14de1f-fc19-4eec-8bea-81003636e12f
 
 > return type for 'identifier::operator ->' is recursive if applied using infix notation
 
+## Remarks
+
 The specified **operator->()** function cannot return the type for which it is defined or a reference to the type for which it is defined.
+
+## Example
 
 The following sample generates C4285:
 

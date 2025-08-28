@@ -9,9 +9,13 @@ helpviewer_keywords: ["C4296"]
 
 > 'operator' : expression is always false
 
+## Remarks
+
 An unsigned variable was used in a comparison operation with zero.
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## Example
 
 The following sample generates C4296:
 

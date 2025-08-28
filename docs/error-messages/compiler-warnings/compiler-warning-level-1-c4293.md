@@ -10,9 +10,9 @@ ms.assetid: babecd96-eb51-41a5-9835-462c7a46dbad
 
 > '*operator*' : shift count negative or too big, undefined behavior
 
-If a shift count is negative or too large, the behavior of the resulting image is undefined.
-
 ## Remarks
+
+If a shift count is negative or too large, the behavior of the resulting image is undefined.
 
 To resolve this issue, you can use a cast on the first operand to expand it to the size of the result type.
 

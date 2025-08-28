@@ -10,6 +10,8 @@ ms.assetid: 20dbff85-9f62-4ca3-8fe9-079d4512006d
 
 > '*array*' : array is too small to include a terminating null character
 
+## Remarks
+
 An array was initialized but the last character in the array is not a null; accessing the array as a string may produce unexpected results.
 
 ## Example

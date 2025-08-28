@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4287"]
 
 > 'operator' : unsigned/negative constant mismatch
 
+## Remarks
+
 An unsigned variable was used in an operation with a negative number.
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).

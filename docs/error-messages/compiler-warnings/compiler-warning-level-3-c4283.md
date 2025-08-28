@@ -10,4 +10,6 @@ ms.assetid: c8823f1f-e746-42e2-85ef-270745764c05
 
 > and through type 'type'
 
+## Remarks
+
 This continuation of warning [C4281](../../error-messages/compiler-warnings/compiler-warning-level-3-c4281.md) shows that **operator->** calls itself through `type`.

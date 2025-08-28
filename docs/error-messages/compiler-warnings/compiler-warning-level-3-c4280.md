@@ -10,7 +10,11 @@ ms.assetid: 153fb639-3ee1-4fee-baf9-71420abcf3f6
 
 > 'operator ->' was self recursive through type 'type'
 
+## Remarks
+
 Your code incorrectly allows **operator->** to call itself.
+
+## Example
 
 The following sample generates C4280:
 

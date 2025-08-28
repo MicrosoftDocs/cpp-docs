@@ -10,7 +10,11 @@ ms.assetid: 7cca11e9-be61-49e4-8b15-88b84f0cbf07
 
 > 'operator' : signed integral constant overflow
 
+## Remarks
+
 The operator is used in an expression that results in an integer constant overflowing the space allocated for it. You may need to use a larger type for the constant. A **`signed int`** holds a smaller value than an **`unsigned int`** because the **`signed int`** uses one bit to represent the sign.
+
+## Example
 
 The following sample generates C4307:
 

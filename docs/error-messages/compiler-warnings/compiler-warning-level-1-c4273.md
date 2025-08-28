@@ -10,6 +10,8 @@ ms.assetid: cc18611d-9454-40a4-ad73-69823d5888fb
 
 > '*function*' : inconsistent DLL linkage
 
+## Remarks
+
 Two definitions in a file differ in their use of [`dllimport`](../../cpp/dllexport-dllimport.md).
 
 ## Examples

@@ -10,4 +10,6 @@ ms.assetid: 155bef24-7bd1-497b-a24b-4a0d784b44cd
 
 > then through type 'type'
 
+## Remarks
+
 This continuation of warning C4281shows that **operator->** calls itself through `type`.
