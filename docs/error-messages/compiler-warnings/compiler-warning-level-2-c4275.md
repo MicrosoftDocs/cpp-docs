@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4275"
 title: "Compiler Warning (level 2) C4275"
-ms.date: "02/08/2019"
+description: "Learn more about: Compiler Warning (level 2) C4275"
+ms.date: 02/08/2019
 f1_keywords: ["C4275"]
 helpviewer_keywords: ["C4275"]
-ms.assetid: 18de967a-0a44-4dbc-a2e8-fc4c067ba909
 ---
 # Compiler Warning (level 2) C4275
 

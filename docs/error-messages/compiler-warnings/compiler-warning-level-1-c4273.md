@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4273"
 title: "Compiler Warning (level 1) C4273"
+description: "Learn more about: Compiler Warning (level 1) C4273"
 ms.date: 05/23/2022
 f1_keywords: ["C4273"]
 helpviewer_keywords: ["C4273"]
-ms.assetid: cc18611d-9454-40a4-ad73-69823d5888fb
 ---
 # Compiler Warning (level 1) C4273
 

@@ -4,7 +4,6 @@ description: "Describes the causes of MSVC compiler warning C4293, and shows how
 ms.date: 07/15/2020
 f1_keywords: ["C4293"]
 helpviewer_keywords: ["C4293"]
-ms.assetid: babecd96-eb51-41a5-9835-462c7a46dbad
 ---
 # Compiler Warning (level 1) C4293
 

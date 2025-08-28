@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4310"
 title: "Compiler Warning (level 4) C4310"
+description: "Learn more about: Compiler Warning (level 4) C4310"
 ms.date: 10/17/2023
 f1_keywords: ["C4310"]
 helpviewer_keywords: ["C4310"]

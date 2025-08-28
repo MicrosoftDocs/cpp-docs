@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4291"
 title: "Compiler Warning (level 1) C4291"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4291"
+ms.date: 11/04/2016
 f1_keywords: ["C4291"]
 helpviewer_keywords: ["C4291"]
-ms.assetid: c2b95dea-38f2-4609-9104-707c30798da4
 ---
 # Compiler Warning (level 1) C4291
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4290"
 title: "Compiler Warning (level 3) C4290"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4290"
+ms.date: 11/04/2016
 f1_keywords: ["C4290"]
 helpviewer_keywords: ["C4290"]
-ms.assetid: d1c6d85b-28e0-4a1f-9d48-23593337a6fb
 ---
 # Compiler Warning (level 3) C4290
 

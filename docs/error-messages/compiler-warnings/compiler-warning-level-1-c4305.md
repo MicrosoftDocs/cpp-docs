@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1 and level 2 and level 4) C4305"
 title: "Compiler Warning (level 1 and level 2 and level 4) C4305"
-ms.date: "01/17/2018"
+description: "Learn more about: Compiler Warning (level 1 and level 2 and level 4) C4305"
+ms.date: 01/17/2018
 f1_keywords: ["C4305"]
 helpviewer_keywords: ["C4305"]
 ---

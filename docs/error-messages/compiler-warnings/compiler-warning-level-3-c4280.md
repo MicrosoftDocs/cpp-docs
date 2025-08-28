@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4280"
 title: "Compiler Warning (level 3) C4280"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4280"
+ms.date: 11/04/2016
 f1_keywords: ["C4280"]
 helpviewer_keywords: ["C4280"]
-ms.assetid: 153fb639-3ee1-4fee-baf9-71420abcf3f6
 ---
 # Compiler Warning (level 3) C4280
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4308"
 title: "Compiler Warning (level 2) C4308"
+description: "Learn more about: Compiler Warning (level 2) C4308"
 ms.date: 08/30/2022
 f1_keywords: ["C4308"]
 helpviewer_keywords: ["C4308"]
-ms.assetid: d4e5c53c-71b2-4bbc-8a7c-3a2a3180d9d9
 ---
 # Compiler Warning (level 2) C4308
 

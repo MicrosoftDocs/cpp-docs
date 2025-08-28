@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4302"
 title: "Compiler Warning (level 2) C4302"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4302"
+ms.date: 11/04/2016
 f1_keywords: ["C4302"]
 helpviewer_keywords: ["C4302"]
-ms.assetid: f5e1c939-e134-4cca-ba1e-9b15a81549ae
 ---
 # Compiler Warning (level 2) C4302
 

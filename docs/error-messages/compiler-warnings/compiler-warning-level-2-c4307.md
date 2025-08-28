@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4307"
 title: "Compiler Warning (level 2) C4307"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4307"
+ms.date: 11/04/2016
 f1_keywords: ["C4307"]
 helpviewer_keywords: ["C4307"]
-ms.assetid: 7cca11e9-be61-49e4-8b15-88b84f0cbf07
 ---
 # Compiler Warning (level 2) C4307
 

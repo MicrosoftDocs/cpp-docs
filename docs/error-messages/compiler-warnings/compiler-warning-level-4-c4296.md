@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 4, off) C4296"
 title: "Compiler Warning (level 4, off) C4296"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4, off) C4296"
+ms.date: 11/04/2016
 f1_keywords: ["C4296"]
 helpviewer_keywords: ["C4296"]
 ---

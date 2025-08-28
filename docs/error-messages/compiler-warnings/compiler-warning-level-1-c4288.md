@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4288"
 title: "Compiler Warning (level 1) C4288"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4288"
+ms.date: 11/04/2016
 f1_keywords: ["C4288"]
 helpviewer_keywords: ["C4288"]
-ms.assetid: 6aaeb139-90cd-457a-9d37-65687042736f
 ---
 # Compiler Warning (level 1) C4288
 

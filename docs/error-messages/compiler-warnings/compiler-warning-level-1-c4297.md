@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4297"
 title: "Compiler Warning (level 1) C4297"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4297"
+ms.date: 11/04/2016
 f1_keywords: ["C4297"]
 helpviewer_keywords: ["C4297"]
-ms.assetid: ba92fcdc-9f70-4f60-abe6-281f9582ca59
 ---
 # Compiler Warning (level 1) C4297
 

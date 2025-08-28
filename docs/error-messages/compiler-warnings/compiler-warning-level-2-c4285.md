@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4285"
 title: "Compiler Warning (level 2) C4285"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4285"
+ms.date: 11/04/2016
 f1_keywords: ["C4285"]
 helpviewer_keywords: ["C4285"]
-ms.assetid: fa14de1f-fc19-4eec-8bea-81003636e12f
 ---
 # Compiler Warning (level 2) C4285
 

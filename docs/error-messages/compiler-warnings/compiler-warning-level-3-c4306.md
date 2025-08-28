@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4306"
 title: "Compiler Warning (level 4) C4306"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 4) C4306"
+ms.date: 08/27/2018
 f1_keywords: ["C4306"]
 helpviewer_keywords: ["C4306"]
 ---
