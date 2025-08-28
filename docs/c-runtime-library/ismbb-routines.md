@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _ismbb routines"
 title: "_ismbb routines"
+description: "Learn more about: _ismbb routines"
 ms.date: 01/11/2022
 helpviewer_keywords: ["ismbb routines", "_ismbb routines"]
 ---
