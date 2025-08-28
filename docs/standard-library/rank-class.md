@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: rank class"
 title: "rank class"
-ms.date: "11/04/2016"
+description: "Learn more about: rank class"
+ms.date: 08/28/2025
 f1_keywords: ["type_traits/std::rank"]
 helpviewer_keywords: ["rank class", "rank"]
-ms.assetid: bc9f1b8f-800f-46ca-b6f4-d8579ed5406a
 ---
 # `rank` class
 
