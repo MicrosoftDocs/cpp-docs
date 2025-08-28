@@ -8,7 +8,7 @@ ms.assetid: 9259c633-3c02-4900-b94a-2d8d366d61cd
 ---
 # Compiler Warning (level 3) C4357
 
-param array argument in formal argument list for delegate 'del' ignored when generating 'function'
+> param array argument in formal argument list for delegate 'del' ignored when generating 'function'
 
 The `ParamArray` attribute was ignored, and `function` cannot be called with variable arguments.
 

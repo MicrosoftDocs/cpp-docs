@@ -8,7 +8,7 @@ ms.assetid: a9848f84-14b3-405e-81bf-ee3e91a51511
 ---
 # Compiler Warning (level 1) C4358
 
-'operator': return type of combined delegates is not 'void'; returned value is undefined
+> 'operator': return type of combined delegates is not 'void'; returned value is undefined
 
 Two delegates were combined and the return value is not void. If two delegates with non-void return values are combined, the compiler will not be able to do a proper assignment if the return value of the delegate is used.
 

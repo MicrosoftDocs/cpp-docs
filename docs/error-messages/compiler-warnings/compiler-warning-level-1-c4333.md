@@ -8,7 +8,7 @@ ms.assetid: d3763c52-6110-4da0-84db-5264e3f3f166
 ---
 # Compiler Warning (level 1) C4333
 
-'operator' : right shift by too large amount, data loss
+> 'operator' : right shift by too large amount, data loss
 
 A right shift operation was too large an amount.  All significant bits are shifted out and the result will always be zero.
 

@@ -8,7 +8,7 @@ ms.assetid: 4cc8ed67-64c4-4da5-a7a5-a639232baa23
 ---
 # Compiler Warning (level 1) C4350
 
-behavior change: 'member1' called instead of 'member2'
+> behavior change: 'member1' called instead of 'member2'
 
 An rvalue cannot be bound to a non-const reference. In versions of Visual C++ before Visual Studio 2003, it was possible to bind an rvalue to a non-const reference in a direct initialization. This code now gives a warning.
 

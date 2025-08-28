@@ -8,7 +8,7 @@ ms.assetid: 70bc72d9-aac5-45cd-abd3-ebe42a05897b
 ---
 # Compiler Warning (level 4) C4337
 
-cross-referenced type library 'typelib1' in 'typelib2' is being automatically imported
+> cross-referenced type library 'typelib1' in 'typelib2' is being automatically imported
 
 The auto_search attribute of [the #import directive](../../preprocessor/hash-import-directive-cpp.md) caused a type library to be implicitly imported.
 

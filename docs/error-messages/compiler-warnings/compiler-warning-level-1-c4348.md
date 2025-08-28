@@ -8,7 +8,7 @@ ms.assetid: 816010eb-6079-48d5-a41b-0fc4d67cfe4c
 ---
 # Compiler Warning (level 1) C4348
 
-'type' : redefinition of default parameter : parameter number
+> 'type' : redefinition of default parameter : parameter number
 
 A template parameter was redefined.
 
