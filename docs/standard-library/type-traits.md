@@ -44,7 +44,7 @@ These are the provided aliases for the `type` members:
       `add_rvalue_reference_t`\
       `add_volatile_t`\
       `aligned_storage_t`\
-      `aligned_union_t`\
+      `aligned_union_t`
    :::column-end:::
    :::column:::
       `common_type_t`\
@@ -54,7 +54,7 @@ These are the provided aliases for the `type` members:
       `invoke_result_t`\
       `make_signed_t`\
       `make_unsigned_t`\
-      `remove_all_extents_t`\
+      `remove_all_extents_t`
    :::column-end:::
    :::column:::
       `remove_const_t`\
@@ -64,7 +64,7 @@ These are the provided aliases for the `type` members:
       `remove_reference_t`\
       `remove_volatile_t`\
       `result_of_t`\
-      `underlying_type_t`\
+      `underlying_type_t`
    :::column-end:::
 :::row-end:::
 

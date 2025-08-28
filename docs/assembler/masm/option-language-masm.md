@@ -20,11 +20,11 @@ Available languages include:
 :::row:::
    :::column span="":::
       **`C`**\
-      **`SYSCALL`**\
+      **`SYSCALL`**
    :::column-end:::
    :::column span="":::
       **`STDCALL`**\
-      **`PASCAL`**\
+      **`PASCAL`**
    :::column-end:::
    :::column span="":::
       **`FORTRAN`**\
