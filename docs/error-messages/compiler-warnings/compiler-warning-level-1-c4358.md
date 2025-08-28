@@ -16,7 +16,7 @@ Two delegates were combined and the return value is not void. If two delegates w
 
 ## Example
 
-The following sample generates C4358:
+The following example generates C4358:
 
 ```cpp
 // C4358.cpp

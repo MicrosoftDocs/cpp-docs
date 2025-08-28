@@ -22,7 +22,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4342:
+The following example generates C4342:
 
 ```cpp
 // C4342.cpp

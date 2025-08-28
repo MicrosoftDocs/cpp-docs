@@ -55,7 +55,7 @@ library C4337bLib
 };
 ```
 
-The following sample generates C4337:
+The following example generates C4337:
 
 ```cpp
 // C4337.cpp

@@ -16,7 +16,7 @@ The result of 32-bit shift was converted to 64-bit, and the compiler suspects th
 
 ## Example
 
-The following sample generates C4334.
+The following example generates C4334.
 
 ```cpp
 // C4334.cpp

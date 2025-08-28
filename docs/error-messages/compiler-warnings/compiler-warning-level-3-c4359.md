@@ -15,7 +15,7 @@ The alignment specified for a type is less than the alignment of the type of one
 
 ## Example
 
-The following sample generates C4359.
+The following example generates C4359.
 
 ```cpp
 // C4359.cpp

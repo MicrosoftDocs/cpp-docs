@@ -16,7 +16,7 @@ A right shift operation was too large an amount.  All significant bits are shift
 
 ## Example
 
-The following sample generates C4333.
+The following example generates C4333.
 
 ```cpp
 // C4333.cpp

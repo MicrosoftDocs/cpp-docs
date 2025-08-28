@@ -47,7 +47,7 @@ library C4336bLib
 };
 ```
 
-The following sample generates C4336:
+The following example generates C4336:
 
 ```cpp
 // C4336.cpp

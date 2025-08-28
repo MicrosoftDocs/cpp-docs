@@ -19,7 +19,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4355:
+The following example generates C4355:
 
 ```cpp
 // C4355.cpp

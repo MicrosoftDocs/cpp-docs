@@ -24,7 +24,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4350:
+The following example generates C4350:
 
 ```cpp
 // C4350.cpp

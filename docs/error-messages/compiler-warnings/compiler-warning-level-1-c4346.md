@@ -16,7 +16,7 @@ The [typename](../../cpp/typename.md) keyword is required if a dependent name is
 
 ## Examples
 
-The following sample generates C4346:
+The following example generates C4346:
 
 ```cpp
 // C4346.cpp
@@ -29,7 +29,7 @@ struct C {
 };
 ```
 
-The following samples shows other examples where the **`typename`** keyword is required:
+The following shows other examples where the **`typename`** keyword is required:
 
 ```cpp
 // C4346b.cpp

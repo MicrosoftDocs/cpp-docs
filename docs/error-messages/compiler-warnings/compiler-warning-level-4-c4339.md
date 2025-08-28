@@ -17,7 +17,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4339 and shows how to fix it:
+The following example generates C4339 and shows how to fix it:
 
 ```cpp
 // C4339.cpp

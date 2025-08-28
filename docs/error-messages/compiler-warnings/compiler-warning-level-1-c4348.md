@@ -16,7 +16,7 @@ A template parameter was redefined.
 
 ## Example
 
-The following sample generates C4348:
+The following example generates C4348:
 
 ```cpp
 // C4348.cpp

@@ -15,7 +15,7 @@ Use of the alignment specifiers on `enum` isn't allowed. This pattern includes t
 
 ## Example
 
-The following sample generates C4329:
+The following example generates C4329:
 
 ```cpp
 // C4329.cpp

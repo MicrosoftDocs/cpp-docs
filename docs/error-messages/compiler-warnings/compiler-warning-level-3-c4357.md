@@ -16,7 +16,7 @@ The `ParamArray` attribute was ignored, and `function` cannot be called with var
 
 ## Example
 
-The following sample generates C4357:
+The following example generates C4357:
 
 ```cpp
 // C4357.cpp

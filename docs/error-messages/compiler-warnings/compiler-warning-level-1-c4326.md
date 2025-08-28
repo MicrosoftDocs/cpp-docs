@@ -16,7 +16,7 @@ A function returned a type other than *type1*. For example, using [/Za](../../bu
 
 ## Example
 
-The following sample generates C4326 and shows how to fix it:
+The following example generates C4326 and shows how to fix it:
 
 ```cpp
 // C4326.cpp

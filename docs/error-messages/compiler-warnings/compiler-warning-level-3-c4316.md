@@ -16,7 +16,7 @@ An over-aligned object allocated by using `operator new` may not have the specif
 
 ## Example
 
-The following sample generates C4316:
+The following example generates C4316:
 
 ```cpp
 // C4316.cpp

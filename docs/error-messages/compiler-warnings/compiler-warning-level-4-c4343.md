@@ -16,7 +16,7 @@ This warning, only valid in the Itanium Processor Family (IPF) compiler, reports
 
 ## Example
 
-The following sample generates C4343:
+The following example generates C4343:
 
 ```cpp
 // C4343.cpp

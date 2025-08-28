@@ -15,7 +15,7 @@ You cannot use the constant zero (0) as a function expression. For more informat
 
 ## Example
 
-The following sample generates C4353:
+The following example generates C4353:
 
 ```cpp
 // C4353.cpp

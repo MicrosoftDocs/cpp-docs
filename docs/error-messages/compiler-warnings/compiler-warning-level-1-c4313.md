@@ -16,7 +16,7 @@ There is a conflict between the format specified and the value that you are pass
 
 ## Example
 
-The following code sample generates C4313 when it is compiled for a 64-bit target.
+The following code example generates C4313 when it is compiled for a 64-bit target.
 
 ```cpp
 // C4313.cpp
