@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _ismbb routines"
 title: "_ismbb routines"
+description: "Learn more about: _ismbb routines"
 ms.date: 01/11/2022
 helpviewer_keywords: ["ismbb routines", "_ismbb routines"]
 ---
@@ -21,7 +21,7 @@ Tests the given integer value `c` for a particular condition, by using the curre
       [`_ismbblead`, `_ismbblead_l`](./reference/ismbblead-ismbblead-l.md)\
       [`_ismbbprint`, `_ismbbprint_l`](./reference/ismbbprint-ismbbprint-l.md)\
       [`_ismbbpunct`, `_ismbbpunct_l`](./reference/ismbbpunct-ismbbpunct-l.md)\
-      [`_ismbbtrail`, `_ismbbtrail_l`](./reference/ismbbtrail-ismbbtrail-l.md)\
+      [`_ismbbtrail`, `_ismbbtrail_l`](./reference/ismbbtrail-ismbbtrail-l.md)
    :::column-end:::
 :::row-end:::
 
