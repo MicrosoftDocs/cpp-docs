@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: rank Class"
-title: "rank Class"
+description: "Learn more about: rank class"
+title: "rank class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::rank"]
 helpviewer_keywords: ["rank class", "rank"]
 ms.assetid: bc9f1b8f-800f-46ca-b6f4-d8579ed5406a
 ---
-# `rank` Class
+# `rank` class
 
 Gets number of array dimensions.
 
@@ -62,4 +62,4 @@ rank<int[5][10]> == 2
 ## See also
 
 [`<type_traits>`](../standard-library/type-traits.md)\
-[`extent` Class](../standard-library/extent-class.md)
+[`extent` class](../standard-library/extent-class.md)
