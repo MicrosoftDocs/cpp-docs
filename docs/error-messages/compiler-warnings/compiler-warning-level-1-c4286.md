@@ -15,6 +15,8 @@ The specified exception type is handled by a previous handler. The type for the 
 
 ## Example
 
+The following example generates C4286:
+
 ```cpp
 //C4286.cpp
 // compile with: /W1

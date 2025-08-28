@@ -17,6 +17,8 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Example
 
+The following example generates C4308:
+
 ```cpp
 // C4308.cpp
 // compile with: /W2

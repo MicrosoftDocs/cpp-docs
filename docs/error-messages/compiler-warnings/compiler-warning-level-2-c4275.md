@@ -31,6 +31,8 @@ C4275 can be ignored in Visual C++ if you are deriving from a type in the C++ St
 
 ## Example
 
+The following example generates C4275:
+
 ```cpp
 // C4275.cpp
 // compile with: /EHsc /MTd /W2 /c
