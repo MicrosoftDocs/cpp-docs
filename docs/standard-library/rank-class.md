@@ -6,7 +6,7 @@ f1_keywords: ["type_traits/std::rank"]
 helpviewer_keywords: ["rank class", "rank"]
 ms.assetid: bc9f1b8f-800f-46ca-b6f4-d8579ed5406a
 ---
-# rank Class
+# `rank` Class
 
 Gets number of array dimensions.
 
@@ -19,12 +19,12 @@ struct rank;
 
 ### Parameters
 
-*Ty*\
+*`Ty`*\
 The type to query.
 
 ## Remarks
 
-The type query holds the value of the number of dimensions of the array type *Ty*, or 0 if *Ty* is not an array type.
+The type query holds the value of the number of dimensions of the array type *`Ty`*, or 0 if *`Ty`* is not an array type.
 
 ## Example
 
@@ -55,11 +55,11 @@ rank<int[5][10]> == 2
 
 ## Requirements
 
-**Header:** \<type_traits>
+**Header:** `<type_traits>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)\
-[extent Class](../standard-library/extent-class.md)
+[`<type_traits>`](../standard-library/type-traits.md)\
+[`extent` Class](../standard-library/extent-class.md)
