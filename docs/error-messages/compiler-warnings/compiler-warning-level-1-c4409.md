@@ -10,4 +10,6 @@ ms.assetid: 2be63c86-d9c9-4073-ab71-e654dd9f450f
 
 > illegal instruction size
 
+## Remarks
+
 The instruction did not have a form with the specified size. The smallest legal size was used.

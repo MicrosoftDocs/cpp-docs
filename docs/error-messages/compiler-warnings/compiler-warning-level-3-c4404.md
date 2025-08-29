@@ -10,4 +10,6 @@ ms.assetid: 78ce9985-0ccd-4ec2-92bf-289475109cdd
 
 > period on directive ignored
 
+## Remarks
+
 The optional period preceding the directive is ignored.

@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4430"]
 
 > missing type specifier - int assumed. Note: C++ does not support default-int
 
+## Remarks
+
 This warning is issued when a type specifier is missing in a declaration. The compiler used to assume the type was `int` in this case. But due to compiler conformance work done for Visual Studio 2005, all declarations must explicitly specify the type.
 
 C4430 is always issued as an error. You can turn off this warning with the `#pragma warning` or `/wd`. For more information, see [`warning`](../../preprocessor/warning.md) or [`/w`, `/W0`, `/W1`, `/W2`, `/W3`, `/W4`, `/w1`, `/w2`, `/w3`, `/w4`, `/Wall`, `/wd`, `/we`, `/wo`, `/Wv`, `/WX` (Warning Level)](../../build/reference/compiler-option-warning-level.md).

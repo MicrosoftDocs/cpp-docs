@@ -10,6 +10,8 @@ ms.assetid: 02fd149a-917d-4f67-97a6-eb714572271f
 
 > declaration of '*identifier*' hides function parameter
 
+## Remarks
+
 The declaration of *identifier* in the local scope hides the declaration of the identically-named function parameter. This warning lets you know that references to *identifier* in the local scope resolve to the locally declared version, not the parameter, which may or may not be your intent. To fix this issue, we recommend you give local variables names that do not conflict with parameter names.
 
 ## Example

@@ -10,6 +10,8 @@ ms.assetid: c97ac1c9-598d-479e-bfff-c993690c4f3d
 
 > WinRT or CLR operator 'operator', has parameter passed by reference. WinRT or CLR operator 'operator' has different semantics from C++ operator 'operator', did you intend to pass by value?
 
+## Remarks
+
 You passed a value by reference to a user-defined Windows Runtime or CLR operator. If the value is changed inside the function, note that the value returned after the function call will be assigned the return value of the function. In standard C++, the changed value is reflected after the function call.
 
 ## Example

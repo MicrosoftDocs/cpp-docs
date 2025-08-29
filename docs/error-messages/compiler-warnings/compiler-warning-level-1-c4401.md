@@ -10,9 +10,15 @@ ms.assetid: 2e7ca136-f144-4b40-b847-82976e8643fc
 
 > 'bitfield' : member is bit field
 
+## Remarks
+
 Inline assembly code tries to access a bit-field member. Inline assembly cannot access bit-field members, so the last packing boundary before the bit-field member is used.
 
-To avoid this warning, cast the bit field to an appropriate type before making the reference in inline assembly code. The following sample generates C4401:
+To avoid this warning, cast the bit field to an appropriate type before making the reference in inline assembly code.
+
+## Example
+
+The following sample generates C4401:
 
 ```cpp
 // C4401.cpp

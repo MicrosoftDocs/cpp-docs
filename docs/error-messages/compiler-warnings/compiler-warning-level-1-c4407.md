@@ -9,9 +9,9 @@ helpviewer_keywords: ["C4407"]
 
 > cast between different pointer to member representations, compiler may generate incorrect code
 
-An incorrect cast between pointer-to-member types was detected.
-
 ## Remarks
+
+An incorrect cast between pointer-to-member types was detected.
 
 C4407 can be generated because of compiler conformance work that was done in Visual Studio 2005. Pointer-to-member now requires a qualified name and the address-of operator (&).
 

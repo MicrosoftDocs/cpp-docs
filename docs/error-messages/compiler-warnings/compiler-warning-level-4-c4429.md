@@ -10,7 +10,11 @@ ms.assetid: a3e4cf1f-a869-4e47-834a-850c21eb5297
 
 > possible incomplete or improperly formed universal-character-name
 
+## Remarks
+
 The compiler detected a character sequence that may be a badly formed universal character name. A universal character name is `\u` followed by four hex digits, or `\U` followed by eight hex digits.
+
+## Example
 
 The following sample generates C4429:
 

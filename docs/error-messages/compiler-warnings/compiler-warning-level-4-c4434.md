@@ -10,6 +10,8 @@ ms.assetid: 24b8785e-353a-4c37-8bed-ed61001a871d
 
 > a class constructor must have private accessibility; changing to private access
 
+## Remarks
+
 C4434 indicates that the compiler changed the accessibility of a static constructor. Static constructors must have private accessibility, as they are only meant to be called by the common language runtime. For more information, see [Static constructors](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Static_constructors).
 
 ## Example

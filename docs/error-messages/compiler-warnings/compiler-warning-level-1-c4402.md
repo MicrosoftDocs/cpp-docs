@@ -10,6 +10,8 @@ ms.assetid: 2aaecfae-1e79-4787-87e8-0973f7ec0efe
 
 > must use PTR operator
 
+## Remarks
+
 A type is used on an operand without a PTR operator when referring to or casting to a type in inline assembly code.
 
 The compiler assumes the PTR operator.

@@ -10,7 +10,11 @@ ms.assetid: 8488a186-ed1d-425c-aaeb-c72472c1da68
 
 > anonymousstruct or union did not declare any data members
 
+## Remarks
+
 An anonymous struct or union must have at least one data member.
+
+## Example
 
 The following sample generates C4408:
 

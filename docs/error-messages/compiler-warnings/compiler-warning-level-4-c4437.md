@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4437"]
 
 > `dynamic_cast` from virtual base '*base_class*' to '*derived_class*' could fail in some contexts
 
+## Remarks
+
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
 A `dynamic_cast` operation is used when:

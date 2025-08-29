@@ -10,6 +10,8 @@ ms.assetid: 7bdaa1b1-0caf-4d68-98c4-6bdd441c23fb
 
 > declaration of '*identifier*' hides class member
 
+## Remarks
+
 The declaration of *identifier* in the local scope hides the declaration of the identically-named *identifier* at class scope. This warning lets you know that references to *identifier* in this scope resolve to the locally declared version, not the class member version, which may or may not be your intent. To fix this issue, we recommend you give local variables names that do not conflict with class member names.
 
 ## Example

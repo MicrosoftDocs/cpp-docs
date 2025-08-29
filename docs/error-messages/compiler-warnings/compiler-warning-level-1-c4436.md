@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4436"]
 
 > `dynamic_cast` from virtual base '*base_class*' to '*derived_class*' in constructor or destructor could fail with partially-constructed object
 
+## Remarks
+
 A `dynamic_cast` operation is used when:
 
 - The cast is from a base class pointer to a derived class pointer.

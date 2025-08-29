@@ -10,6 +10,8 @@ ms.assetid: a3204731-2285-401c-b73b-af98586a86fa
 
 > operand on directive ignored
 
+## Remarks
+
 The directive does not take any operands, but an operand was specified.
 
 The compiler ignored the given operand or operands.

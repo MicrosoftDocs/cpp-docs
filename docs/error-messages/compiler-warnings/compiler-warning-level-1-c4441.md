@@ -10,6 +10,8 @@ ms.assetid: 7fc540a5-e41f-47cf-aa37-b2b699c2685e
 
 > calling convention of 'cc1' ignored; 'cc2' used instead
 
+## Remarks
+
 Member functions in managed user-defined types and global function generics must use the [__clrcall](../../cpp/clrcall.md) calling convention.  The compiler used `__clrcall`.
 
 ## Example

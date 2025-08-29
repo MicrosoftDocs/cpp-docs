@@ -10,7 +10,11 @@ ms.assetid: 78b9642a-a93e-401e-9d92-372f6451bc5d
 
 > calling convention redefinition from 'calling_convention1' to 'calling_convention2' ignored
 
+## Remarks
+
 An attempt to change the calling convention was ignored.
+
+## Example
 
 The following sample generates C4440:
 

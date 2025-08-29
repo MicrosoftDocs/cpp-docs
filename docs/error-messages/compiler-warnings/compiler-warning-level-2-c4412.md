@@ -23,7 +23,7 @@ C4412 is off by default. For more information, see [Compiler Warnings That Are O
 
 To resolve this warning, remove all functions from the type.
 
-## Example
+## Examples
 
 The following sample generates C4412:
 

@@ -10,6 +10,8 @@ ms.assetid: 5ab39fc1-0e19-461b-842b-4da80560b044
 
 > declaration of '*identifier*' hides previous local declaration
 
+## Remarks
+
 The declaration of *identifier* in the local scope hides the declaration of the previous local declaration of the same name. This warning lets you know that references to *identifier* in the local scope resolve to the locally declared version, not the previous local, which may or may not be your intent. To fix this issue, we recommend you give local variables names that do not conflict with other local names.
 
 ## Example

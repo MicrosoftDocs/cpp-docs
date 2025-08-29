@@ -10,6 +10,8 @@ ms.assetid: d95597c9-4762-4f33-86e4-1d98f0e80d52
 
 > illegal PTR operator
 
+## Remarks
+
 A PTR operator is used inappropriately in inline assembler code.
 
 The compiler ignored the PTR operator.
