@@ -1,13 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1 and level 4) C4436"
 title: "Compiler warning (level 1 and level 4) C4436"
-ms.date: "1/22/2025"
+description: "Learn more about: Compiler Warning (level 1 and level 4) C4436"
+ms.date: 1/22/2025
 f1_keywords: ["C4436"]
 helpviewer_keywords: ["C4436"]
 ---
 # Compiler warning (level 1) C4436
 
 > `dynamic_cast` from virtual base '*base_class*' to '*derived_class*' in constructor or destructor could fail with partially-constructed object
+
+## Remarks
 
 A `dynamic_cast` operation is used when:
 
@@ -20,7 +22,7 @@ This warning indicates that the `dynamic_cast` might not perform correctly if it
 
 ## Example
 
-The following sample generates C4436 and demonstrates the code generation issue due to the missing `vtordisp` field:
+The following example generates C4436 and demonstrates the code generation issue due to the missing `vtordisp` field:
 
 ```cpp
 // C4436.cpp
