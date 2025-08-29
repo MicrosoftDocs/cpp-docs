@@ -10,6 +10,8 @@ ms.assetid: 7cd6b283-db17-4574-b299-03e0b913ad70
 
 > "name" : the inline specifier cannot be used when a friend declaration refers to a specialization of a function template
 
+## Remarks
+
 A specialization of a function template cannot specify any of the [inline](../../cpp/inline-functions-cpp.md) specifiers. The compiler issues warning C4396 and ignores the inline specifier.
 
 ### To correct this error

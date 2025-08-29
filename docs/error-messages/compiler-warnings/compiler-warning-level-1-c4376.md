@@ -10,6 +10,8 @@ ms.assetid: 5f202c74-9489-48fe-b36f-19cd882b1589
 
 > access specifier 'old_specifier:' is no longer supported: please use 'new_specifier:' instead
 
+## Remarks
+
 For more information on specifying type and member accessibility in metadata, see [Type visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) and [Member visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Member_visibility) in [How to: Define and Consume Classes and Structs (C++/CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md).
 
 ## Example

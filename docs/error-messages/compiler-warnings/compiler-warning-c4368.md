@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4368"]
 
 > cannot define 'member' as a member of managed 'type': mixed types are not supported
 
+## Remarks
+
 You can't embed a native data member in a managed type.
 
 You can, however, declare a pointer to a native type and control its lifetime in the constructor and destructor and finalizer of your managed class. For more information, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).

@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4384"]
 
 > `#pragma` '*pragma_name*' should only be used at global scope
 
+## Remarks
+
 A `pragma` directive that must be applied at a global scope, was found in a different scope.
 
 The warning applies to the following `pragma` directives:

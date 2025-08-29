@@ -10,9 +10,13 @@ ms.assetid: 95c6182c-fae9-4174-8f7b-98aa352e68ca
 
 > 'signature' : incorrect return type for intrinsic function, expected 'type'
 
+## Remarks
+
 A function declaration for a compiler intrinsic had the wrong return type. The resulting image may not run correctly.
 
 To fix this warning, either correct the declaration or delete the declaration and simply #include the appropriate header file.
+
+## Example
 
 The following sample generates C4391:
 

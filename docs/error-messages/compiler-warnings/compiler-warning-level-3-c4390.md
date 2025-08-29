@@ -10,9 +10,13 @@ ms.assetid: c95c2f1b-9bce-4b1f-a80c-565d4cde0b1e
 
 > ';' : empty controlled statement found; is this the intent?
 
+## Remarks
+
 A semicolon was found after a control statement that contains no instructions.
 
 If you get C4390 because of a macro, you should use the [warning](../../preprocessor/warning.md) pragma to disable C4390 in the module containing the macro.
+
+## Example
 
 The following sample generates C4390:
 

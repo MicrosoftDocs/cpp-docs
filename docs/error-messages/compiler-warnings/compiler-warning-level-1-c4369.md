@@ -10,6 +10,8 @@ ms.assetid: ade87e84-36be-4e00-be99-2930af848feb
 
 > 'enumerator' :  enumerator value 'value' cannot be represented as 'type', value is 'new_value'
 
+## Remarks
+
 An enumerator was calculated to be greater than the greatest value for the specified underlying type.  This caused an overflow and the compiler wrapped the enumerator value to the lowest possible value for the type.
 
 ## Example

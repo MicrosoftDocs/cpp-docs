@@ -10,9 +10,11 @@ ms.assetid: d08e11ef-891a-4752-9a5e-360e7394acf7
 
 > Must obtain function pointers to run initializers; consider System::ModuleHandle::ResolveMethodHandle
 
+## Remarks
+
 Under **/clr**, initializer symbols contain function tokens, not functions pointers.  You need to convert tokens to pointers using <xref:System.ModuleHandle.ResolveMethodHandle%2A>.
 
-## Examples
+## Example
 
 The following sample generates C4378.
 

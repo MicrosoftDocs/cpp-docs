@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4394"]
 
 > 'function' : per-appdomain symbol should not be marked with __declspec(dllexport)
 
+## Remarks
+
 A function marked with the [appdomain](../../cpp/appdomain.md) **`__declspec`** modifier is compiled to MSIL (not native), and export tables ([export](../../windows/attributes/export.md) **`__declspec`** modifier) aren't supported for managed functions.
 
 You can declare a managed function to have public accessibility. For more information, see [Type visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) and [Member visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Member_visibility).

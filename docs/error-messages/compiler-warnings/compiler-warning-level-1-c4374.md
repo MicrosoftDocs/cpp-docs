@@ -10,7 +10,11 @@ ms.assetid: 4ac9aaec-d815-4b6e-825f-fa872092dd3b
 
 > 'function1': interface method will not be implemented by non-virtual method 'function2'
 
+## Remarks
+
 The compiler expected to find the [virtual](../../cpp/virtual-specifier.md) keyword on a method definition.
+
+## Example
 
 The following sample generates C4374:
 

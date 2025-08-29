@@ -10,6 +10,8 @@ ms.assetid: 65d2942f-3741-42f4-adf2-4920d5a055ca
 
 > The result of the unary 'operator' operator may be unaligned
 
+## Remarks
+
 If a structure member could ever be unaligned because of packing, the compiler will warn when that member's address is assigned to an aligned pointer. By default, all pointers are aligned.
 
 To resolve C4366, either change the alignment of the structure or declare the pointer with the [__unaligned](../../cpp/unaligned.md) keyword.

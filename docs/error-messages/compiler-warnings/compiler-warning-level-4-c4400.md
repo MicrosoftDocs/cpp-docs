@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4400"]
 
 > '*type*': `const`/`volatile` qualifiers on this type are not supported
 
+## Remarks
+
 The [`const`](../../cpp/const-cpp.md) and [`volatile`](../../cpp/volatile-cpp.md) qualifiers don't work with common language runtime typed variables.
 
 ## Example
