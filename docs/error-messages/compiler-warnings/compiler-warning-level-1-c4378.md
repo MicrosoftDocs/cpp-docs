@@ -8,7 +8,7 @@ ms.assetid: d08e11ef-891a-4752-9a5e-360e7394acf7
 ---
 # Compiler Warning (level 1) C4378
 
-Must obtain function pointers to run initializers; consider System::ModuleHandle::ResolveMethodHandle
+> Must obtain function pointers to run initializers; consider System::ModuleHandle::ResolveMethodHandle
 
 Under **/clr**, initializer symbols contain function tokens, not functions pointers.  You need to convert tokens to pointers using <xref:System.ModuleHandle.ResolveMethodHandle%2A>.
 

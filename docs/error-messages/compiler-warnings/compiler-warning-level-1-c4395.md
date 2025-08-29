@@ -8,7 +8,7 @@ ms.assetid: 8051469a-3a39-4677-80f7-1300fbffe8ea
 ---
 # Compiler Warning (level 1) C4395
 
-'function' : member function will be invoked on a copy of the initonly data member 'member'
+> 'function' : member function will be invoked on a copy of the initonly data member 'member'
 
 A member function was called on an [initonly (C++/CLI)](../../dotnet/initonly-cpp-cli.md) data member.  C4395 warns that the **initonly** data member cannot be modified by the function.
 

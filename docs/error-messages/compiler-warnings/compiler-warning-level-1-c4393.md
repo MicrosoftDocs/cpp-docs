@@ -8,7 +8,7 @@ ms.assetid: 353a0539-d1ea-4c1b-8849-c9b321ec9842
 ---
 # Compiler Warning (level 1) C4393
 
-'var' : const has no effect on literal data member; ignored
+> 'var' : const has no effect on literal data member; ignored
 
 A [literal](../../extensions/literal-cpp-component-extensions.md) data member was also specified as const.  Since a literal data member implies const, you do not need to add const to the declaration.
 

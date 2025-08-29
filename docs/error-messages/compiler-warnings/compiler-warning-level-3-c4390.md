@@ -8,7 +8,7 @@ ms.assetid: c95c2f1b-9bce-4b1f-a80c-565d4cde0b1e
 ---
 # Compiler Warning (level 3) C4390
 
-';' : empty controlled statement found; is this the intent?
+> ';' : empty controlled statement found; is this the intent?
 
 A semicolon was found after a control statement that contains no instructions.
 

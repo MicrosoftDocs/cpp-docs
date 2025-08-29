@@ -8,7 +8,7 @@ ms.assetid: 95c6182c-fae9-4174-8f7b-98aa352e68ca
 ---
 # Compiler Warning (level 1) C4391
 
-'signature' : incorrect return type for intrinsic function, expected 'type'
+> 'signature' : incorrect return type for intrinsic function, expected 'type'
 
 A function declaration for a compiler intrinsic had the wrong return type. The resulting image may not run correctly.
 

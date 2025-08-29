@@ -8,7 +8,7 @@ ms.assetid: 4ac9aaec-d815-4b6e-825f-fa872092dd3b
 ---
 # Compiler Warning (level 1) C4374
 
-'function1': interface method will not be implemented by non-virtual method 'function2'
+> 'function1': interface method will not be implemented by non-virtual method 'function2'
 
 The compiler expected to find the [virtual](../../cpp/virtual-specifier.md) keyword on a method definition.
 

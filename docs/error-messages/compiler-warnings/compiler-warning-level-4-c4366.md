@@ -8,7 +8,7 @@ ms.assetid: 65d2942f-3741-42f4-adf2-4920d5a055ca
 ---
 # Compiler Warning (level 4) C4366
 
-The result of the unary 'operator' operator may be unaligned
+> The result of the unary 'operator' operator may be unaligned
 
 If a structure member could ever be unaligned because of packing, the compiler will warn when that member's address is assigned to an aligned pointer. By default, all pointers are aligned.
 
