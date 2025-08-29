@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4382"
 title: "Compiler Warning (level 1) C4382"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4382"
+ms.date: 11/04/2016
 f1_keywords: ["C4382"]
 helpviewer_keywords: ["C4382"]
-ms.assetid: 34be9ad3-bae6-411a-8f80-0c8fd0d2c092
 ---
 # Compiler Warning (level 1) C4382
 
@@ -22,7 +21,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Example
 
-The following sample generates C4382.
+The following example generates C4382.
 
 ```cpp
 // C4382.cpp

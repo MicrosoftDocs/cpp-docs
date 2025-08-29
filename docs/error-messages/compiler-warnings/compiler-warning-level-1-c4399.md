@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, Error) C4399"
 title: "Compiler Warning (level 1, Error) C4399"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1, Error) C4399"
+ms.date: 11/04/2016
 f1_keywords: ["C4399"]
 helpviewer_keywords: ["C4399"]
-ms.assetid: f58d9ba7-71a0-4c3b-b26f-f946dda8af30
 ---
 # Compiler Warning (level 1, Error) C4399
 
@@ -20,7 +19,7 @@ This warning can be issued as an error. Use the [warning](../../preprocessor/war
 
 ## Example
 
-The following sample generates C4399.
+The following example generates C4399.
 
 ```cpp
 // C4399.cpp

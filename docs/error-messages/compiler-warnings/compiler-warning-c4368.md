@@ -1,13 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, Error) C4368"
 title: "Compiler Warning (level 1, Error) C4368"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1, Error) C4368"
+ms.date: 11/04/2016
 f1_keywords: ["C4368"]
 helpviewer_keywords: ["C4368"]
 ---
 # Compiler Warning (level 1, Error) C4368
 
 > cannot define 'member' as a member of managed 'type': mixed types are not supported
+
+## Remarks
 
 You can't embed a native data member in a managed type.
 
@@ -17,7 +19,7 @@ This warning is always issued as an error. Use the [warning](../../preprocessor/
 
 ## Example
 
-The following sample generates C4368.
+The following example generates C4368.
 
 ```cpp
 // C4368.cpp
