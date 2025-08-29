@@ -17,7 +17,7 @@ C4430 is always issued as an error. You can turn off this warning with the `#pra
 
 ## Example
 
-The following sample generates C4430:
+The following example generates C4430:
 
 ```cpp
 // compile with: /c

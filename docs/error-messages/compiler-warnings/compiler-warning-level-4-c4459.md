@@ -18,7 +18,7 @@ This warning was new in Visual Studio 2015, in Microsoft C++ compiler version 18
 
 ## Example
 
-The following sample generates C4459:
+The following example generates C4459:
 
 ```cpp
 // C4459_hide.cpp

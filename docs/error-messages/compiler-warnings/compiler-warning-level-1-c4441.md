@@ -16,7 +16,7 @@ Member functions in managed user-defined types and global function generics must
 
 ## Example
 
-The following sample generates C4441.
+The following example generates C4441.
 
 ```cpp
 // C4441.cpp

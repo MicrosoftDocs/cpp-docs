@@ -16,7 +16,7 @@ You passed a value by reference to a user-defined Windows Runtime or CLR operato
 
 ## Example
 
-The following sample generates C4460 and shows how to fix it.
+The following example generates C4460 and shows how to fix it.
 
 ```cpp
 // C4460.cpp

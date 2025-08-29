@@ -16,7 +16,7 @@ The declaration of *identifier* in the local scope hides the declaration of the 
 
 ## Example
 
-The following sample generates C4457 because the parameter `x` and the local variable `x` in `member_fn` have the same names. To fix this issue, use different names for the parameters and local variables.
+The following example generates C4457 because the parameter `x` and the local variable `x` in `member_fn` have the same names. To fix this issue, use different names for the parameters and local variables.
 
 ```cpp
 // C4457_hide.cpp

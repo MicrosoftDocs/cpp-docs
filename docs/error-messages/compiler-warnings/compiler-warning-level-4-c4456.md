@@ -16,7 +16,7 @@ The declaration of *identifier* in the local scope hides the declaration of the 
 
 ## Example
 
-The following sample generates C4456 because the loop control variable `int x` and the local variable `double x` in `member_fn` have the same names. To fix this issue, use different names for the local variables.
+The following example generates C4456 because the loop control variable `int x` and the local variable `double x` in `member_fn` have the same names. To fix this issue, use different names for the local variables.
 
 ```cpp
 // C4456_hide.cpp

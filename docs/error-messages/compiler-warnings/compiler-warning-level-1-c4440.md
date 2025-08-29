@@ -16,7 +16,7 @@ An attempt to change the calling convention was ignored.
 
 ## Example
 
-The following sample generates C4440:
+The following example generates C4440:
 
 ```cpp
 // C4440.cpp

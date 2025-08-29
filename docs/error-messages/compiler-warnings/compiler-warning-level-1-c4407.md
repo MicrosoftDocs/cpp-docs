@@ -19,7 +19,7 @@ C4407 can occur if you cast between a multiple inheritance pointer-to-member to 
 
 ## Example
 
-The following sample generates C4407 and shows how to fix it:
+The following example generates C4407 and shows how to fix it:
 
 ```cpp
 // C4407.cpp

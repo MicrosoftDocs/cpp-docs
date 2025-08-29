@@ -17,7 +17,7 @@ Under the default compile option of `/vd1`, the derived class doesn't have a `vt
 
 ## Example
 
-The following sample generates C4435.
+The following example generates C4435.
 
 ```cpp
 // C4435.cpp

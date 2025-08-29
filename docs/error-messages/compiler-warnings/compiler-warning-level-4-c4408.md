@@ -16,7 +16,7 @@ An anonymous struct or union must have at least one data member.
 
 ## Example
 
-The following sample generates C4408:
+The following example generates C4408:
 
 ```cpp
 // C4408.cpp

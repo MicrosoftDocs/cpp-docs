@@ -18,7 +18,7 @@ To avoid this warning, cast the bit field to an appropriate type before making t
 
 ## Example
 
-The following sample generates C4401:
+The following example generates C4401:
 
 ```cpp
 // C4401.cpp

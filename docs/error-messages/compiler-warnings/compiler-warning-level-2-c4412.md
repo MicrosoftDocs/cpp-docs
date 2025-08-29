@@ -25,7 +25,7 @@ To resolve this warning, remove all functions from the type.
 
 ## Examples
 
-The following sample generates C4412:
+The following example generates C4412:
 
 ```cpp
 // compile with: /c /W2 /clr:pure
@@ -50,7 +50,7 @@ int main() {
 }
 ```
 
-The following sample is a header file that declares two types. The `Unsafe` type is unsafe because it has a member function:
+The following example is a header file that declares two types. The `Unsafe` type is unsafe because it has a member function:
 
 ```cpp
 // C4412.h
@@ -68,7 +68,7 @@ struct Safe {
 };
 ```
 
-This sample exports functions with the types defined in the header file:
+This example exports functions with the types defined in the header file:
 
 ```cpp
 // C4412_2.cpp
@@ -85,7 +85,7 @@ __declspec(dllexport) Safe * __cdecl func2() { return new Safe; }
 
 The default calling convention in a `/clr:pure` compilation is different from a native compilation. When `C4412.h` is included, `Test` defaults to `__clrcall`.
 
-The following sample generates C4412 and throws an exception at runtime:
+The following example generates C4412 and throws an exception at runtime:
 
 ```cpp
 // C4412_3.cpp

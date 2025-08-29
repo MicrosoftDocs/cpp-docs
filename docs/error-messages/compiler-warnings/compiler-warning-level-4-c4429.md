@@ -16,7 +16,7 @@ The compiler detected a character sequence that may be a badly formed universal 
 
 ## Example
 
-The following sample generates C4429:
+The following example generates C4429:
 
 ```cpp
 // C4429.cpp

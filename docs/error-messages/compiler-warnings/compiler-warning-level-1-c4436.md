@@ -22,7 +22,7 @@ This warning indicates that the `dynamic_cast` might not perform correctly if it
 
 ## Example
 
-The following sample generates C4436 and demonstrates the code generation issue due to the missing `vtordisp` field:
+The following example generates C4436 and demonstrates the code generation issue due to the missing `vtordisp` field:
 
 ```cpp
 // C4436.cpp

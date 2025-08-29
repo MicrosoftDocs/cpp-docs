@@ -16,7 +16,7 @@ C4434 indicates that the compiler changed the accessibility of a static construc
 
 ## Example
 
-The following sample generates C4434.
+The following example generates C4434.
 
 ```cpp
 // C4434.cpp

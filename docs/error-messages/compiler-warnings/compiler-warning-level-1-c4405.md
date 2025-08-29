@@ -16,7 +16,7 @@ A word reserved for inline assembly is used as a variable name. This may cause u
 
 ## Example
 
-The following sample generates C4405:
+The following example generates C4405:
 
 ```cpp
 // C4405.cpp
