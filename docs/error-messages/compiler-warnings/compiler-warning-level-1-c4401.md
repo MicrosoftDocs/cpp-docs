@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4401"
 title: "Compiler Warning (level 1) C4401"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4401"
+ms.date: 11/04/2016
 f1_keywords: ["C4401"]
 helpviewer_keywords: ["C4401"]
-ms.assetid: 2e7ca136-f144-4b40-b847-82976e8643fc
 ---
 # Compiler Warning (level 1) C4401
 

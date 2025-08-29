@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4458"
 title: "Compiler Warning (level 4) C4458"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4458"
+ms.date: 11/04/2016
 f1_keywords: ["C4458"]
 helpviewer_keywords: ["C4458"]
-ms.assetid: 7bdaa1b1-0caf-4d68-98c4-6bdd441c23fb
 ---
 # Compiler Warning (level 4) C4458
 

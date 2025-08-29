@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4434"
 title: "Compiler Warning (level 4) C4434"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4434"
+ms.date: 11/04/2016
 f1_keywords: ["C4434"]
 helpviewer_keywords: ["C4434"]
-ms.assetid: 24b8785e-353a-4c37-8bed-ed61001a871d
 ---
 # Compiler Warning (level 4) C4434
 

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 2, off) C4412"
 title: "Compiler warning (level 2, off) C4412"
-ms.date: "1/22/2025"
+description: "Learn more about: Compiler Warning (level 2, off) C4412"
+ms.date: 1/22/2025
 f1_keywords: ["C4412"]
 helpviewer_keywords: ["C4412"]
 ---

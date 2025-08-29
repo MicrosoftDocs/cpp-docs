@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4420"
 title: "Compiler Warning (level 1) C4420"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4420"
+ms.date: 11/04/2016
 f1_keywords: ["C4420"]
 helpviewer_keywords: ["C4420"]
-ms.assetid: 44a37754-7ddd-4764-a5f7-d33e05c20091
 ---
 # Compiler Warning (level 1) C4420
 

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1 and level 4) C4436"
 title: "Compiler warning (level 1 and level 4) C4436"
-ms.date: "1/22/2025"
+description: "Learn more about: Compiler Warning (level 1 and level 4) C4436"
+ms.date: 1/22/2025
 f1_keywords: ["C4436"]
 helpviewer_keywords: ["C4436"]
 ---

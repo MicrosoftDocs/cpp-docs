@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4405"
 title: "Compiler Warning (level 1) C4405"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4405"
+ms.date: 11/04/2016
 f1_keywords: ["C4405"]
 helpviewer_keywords: ["C4405"]
-ms.assetid: 155c64d6-58ae-4455-b61f-ccd711c5da96
 ---
 # Compiler Warning (level 1) C4405
 

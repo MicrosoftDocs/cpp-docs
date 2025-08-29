@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, error) C4430"
 title: "Compiler warning (level 1, error) C4430"
+description: "Learn more about: Compiler Warning (level 1, error) C4430"
 ms.date: 04/22/2025
 f1_keywords: ["C4430"]
 helpviewer_keywords: ["C4430"]

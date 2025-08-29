@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4407"
 title: "Compiler Warning (level 1) C4407"
+description: "Learn more about: Compiler Warning (level 1) C4407"
 ms.date: 04/13/2021
 f1_keywords: ["C4407"]
 helpviewer_keywords: ["C4407"]

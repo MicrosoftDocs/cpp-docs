@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4414"
 title: "Compiler Warning (level 3) C4414"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4414"
+ms.date: 11/04/2016
 f1_keywords: ["C4414"]
 helpviewer_keywords: ["C4414"]
-ms.assetid: bc81d3ad-55dc-4a6b-a6f2-ec0ef38347df
 ---
 # Compiler Warning (level 3) C4414
 

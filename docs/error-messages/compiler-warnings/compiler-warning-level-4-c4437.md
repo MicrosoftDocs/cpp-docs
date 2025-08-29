@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1 and level 4, off) C4437"
 title: "Compiler warning (level 1 and level 4, off) C4437"
-ms.date: "1/22/2025"
+description: "Learn more about: Compiler Warning (level 1 and level 4, off) C4437"
+ms.date: 1/22/2025
 f1_keywords: ["C4437"]
 helpviewer_keywords: ["C4437"]
 ---

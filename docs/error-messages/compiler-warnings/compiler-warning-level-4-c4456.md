@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4456"
 title: "Compiler Warning (level 4) C4456"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4456"
+ms.date: 11/04/2016
 f1_keywords: ["C4456"]
 helpviewer_keywords: ["C4456"]
-ms.assetid: 5ab39fc1-0e19-461b-842b-4da80560b044
 ---
 # Compiler Warning (level 4) C4456
 

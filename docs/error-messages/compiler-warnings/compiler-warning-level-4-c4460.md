@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4460"
 title: "Compiler Warning (level 4) C4460"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4460"
+ms.date: 11/04/2016
 f1_keywords: ["C4460"]
 helpviewer_keywords: ["C4460"]
-ms.assetid: c97ac1c9-598d-479e-bfff-c993690c4f3d
 ---
 # Compiler Warning (level 4) C4460
 
