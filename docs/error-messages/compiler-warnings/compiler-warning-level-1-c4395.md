@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4395"
 title: "Compiler Warning (level 1) C4395"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4395"
+ms.date: 11/04/2016
 f1_keywords: ["C4395"]
 helpviewer_keywords: ["C4395"]
-ms.assetid: 8051469a-3a39-4677-80f7-1300fbffe8ea
 ---
 # Compiler Warning (level 1) C4395
 

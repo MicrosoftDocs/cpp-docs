@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4364"
 title: "Compiler Warning (level 1) C4364"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4364"
+ms.date: 11/04/2016
 f1_keywords: ["C4364"]
 helpviewer_keywords: ["C4364"]
-ms.assetid: 1477634c-d60f-4570-ad16-1aaeae24ac7f
 ---
 # Compiler Warning (level 1) C4364
 

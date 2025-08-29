@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4366"
 title: "Compiler Warning (level 4) C4366"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4366"
+ms.date: 11/04/2016
 f1_keywords: ["C4366"]
 helpviewer_keywords: ["C4366"]
-ms.assetid: 65d2942f-3741-42f4-adf2-4920d5a055ca
 ---
 # Compiler Warning (level 4) C4366
 

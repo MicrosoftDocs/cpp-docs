@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4397"
 title: "Compiler Warning (level 1) C4397"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4397"
+ms.date: 11/04/2016
 f1_keywords: ["C4397"]
 helpviewer_keywords: ["C4397"]
-ms.assetid: 6346fdc2-dbbf-4fba-803a-32b0d0a707be
 ---
 # Compiler Warning (level 1) C4397
 

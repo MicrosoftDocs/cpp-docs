@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4390"
 title: "Compiler Warning (level 3) C4390"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4390"
+ms.date: 11/04/2016
 f1_keywords: ["C4390"]
 helpviewer_keywords: ["C4390"]
-ms.assetid: c95c2f1b-9bce-4b1f-a80c-565d4cde0b1e
 ---
 # Compiler Warning (level 3) C4390
 

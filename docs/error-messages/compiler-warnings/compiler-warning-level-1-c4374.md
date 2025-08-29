@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4374"
 title: "Compiler Warning (level 1) C4374"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4374"
+ms.date: 11/04/2016
 f1_keywords: ["C4374"]
 helpviewer_keywords: ["C4374"]
-ms.assetid: 4ac9aaec-d815-4b6e-825f-fa872092dd3b
 ---
 # Compiler Warning (level 1) C4374
 

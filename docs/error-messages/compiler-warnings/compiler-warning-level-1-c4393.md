@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4393"
 title: "Compiler Warning (level 1) C4393"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4393"
+ms.date: 11/04/2016
 f1_keywords: ["C4393"]
 helpviewer_keywords: ["C4393"]
-ms.assetid: 353a0539-d1ea-4c1b-8849-c9b321ec9842
 ---
 # Compiler Warning (level 1) C4393
 

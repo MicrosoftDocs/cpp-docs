@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4398"
 title: "Compiler Warning (level 3) C4398"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4398"
+ms.date: 11/04/2016
 f1_keywords: ["C4398"]
 helpviewer_keywords: ["C4398"]
-ms.assetid: b6221432-9fed-4272-a547-a73f587904e6
 ---
 # Compiler Warning (level 3) C4398
 

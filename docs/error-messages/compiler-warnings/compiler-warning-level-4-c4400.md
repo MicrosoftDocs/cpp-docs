@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 4, error) C4400"
 title: "Compiler warning (level 4, error) C4400"
-ms.date: "1/22/2025"
+description: "Learn more about: Compiler Warning (level 4, error) C4400"
+ms.date: 1/22/2025
 f1_keywords: ["C4400"]
 helpviewer_keywords: ["C4400"]
 ---

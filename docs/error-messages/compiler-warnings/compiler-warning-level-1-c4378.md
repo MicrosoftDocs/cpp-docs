@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4378"
 title: "Compiler Warning (level 1) C4378"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4378"
+ms.date: 11/04/2016
 f1_keywords: ["C4378"]
 helpviewer_keywords: ["C4378"]
-ms.assetid: d08e11ef-891a-4752-9a5e-360e7394acf7
 ---
 # Compiler Warning (level 1) C4378
 

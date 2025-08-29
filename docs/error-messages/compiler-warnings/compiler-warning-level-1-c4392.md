@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, Error) C4392"
 title: "Compiler Warning (level 1, Error) C4392"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1, Error) C4392"
+ms.date: 11/04/2016
 f1_keywords: ["C4392"]
 helpviewer_keywords: ["C4392"]
 ---
