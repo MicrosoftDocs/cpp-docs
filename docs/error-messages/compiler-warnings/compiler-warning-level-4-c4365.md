@@ -17,7 +17,7 @@ C4365 is off by default. For more information, see [Compiler Warnings That Are O
 
 ## Example
 
-The following sample generates C4365.
+The following example generates C4365.
 
 ```cpp
 // C4365.cpp

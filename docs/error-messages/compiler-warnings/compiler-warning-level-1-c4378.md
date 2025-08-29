@@ -16,7 +16,7 @@ Under **/clr**, initializer symbols contain function tokens, not functions point
 
 ## Example
 
-The following sample generates C4378.
+The following example generates C4378.
 
 ```cpp
 // C4378.cpp
@@ -58,7 +58,7 @@ int main () {
 }
 ```
 
-The following sample shows how to resolve C4378.
+The following example shows how to resolve C4378.
 
 ```cpp
 // C4378_b.cpp

@@ -16,7 +16,7 @@ An enumerator was calculated to be greater than the greatest value for the speci
 
 ## Example
 
-The following sample generates C4369.
+The following example generates C4369.
 
 ```cpp
 // C4369.cpp

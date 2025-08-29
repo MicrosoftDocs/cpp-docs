@@ -19,7 +19,7 @@ C4394 is always issued as an error. You can turn off this warning or change its 
 
 ## Example
 
-The following sample generates C4394.
+The following example generates C4394.
 
 ```cpp
 // C4394.cpp

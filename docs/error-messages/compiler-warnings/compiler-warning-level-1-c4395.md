@@ -16,7 +16,7 @@ A member function was called on an [initonly (C++/CLI)](../../dotnet/initonly-cp
 
 ## Example
 
-The following sample generates C4395:
+The following example generates C4395:
 
 ```cpp
 // C4395.cpp

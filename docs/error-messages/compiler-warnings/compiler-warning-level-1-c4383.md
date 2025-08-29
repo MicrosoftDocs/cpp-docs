@@ -20,7 +20,7 @@ Also, an instance operator is not available to other language compilers via refe
 
 ## Example
 
-The following sample generates C4383.
+The following example generates C4383.
 
 ```cpp
 // C4383.cpp

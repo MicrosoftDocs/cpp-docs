@@ -20,7 +20,7 @@ For more information, see __unaligned and [pack](../../preprocessor/pack.md).
 
 ## Example
 
-The following sample generates C4366.
+The following example generates C4366.
 
 ```cpp
 // C4366.cpp

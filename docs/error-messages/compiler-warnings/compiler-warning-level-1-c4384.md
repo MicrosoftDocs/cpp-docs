@@ -20,7 +20,7 @@ The warning applies to the following `pragma` directives:
 
 ## Example
 
-The following sample generates C4384.
+The following example generates C4384.
 
 ```cpp
 // C4384.cpp

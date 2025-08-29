@@ -20,7 +20,7 @@ This warning can be issued as an error. Use the [warning](../../preprocessor/war
 
 ## Example
 
-The following sample generates C4399.
+The following example generates C4399.
 
 ```cpp
 // C4399.cpp

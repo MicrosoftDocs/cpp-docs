@@ -19,7 +19,7 @@ This warning is always issued as an error. Use the [warning](../../preprocessor/
 
 ## Example
 
-The following sample generates C4368.
+The following example generates C4368.
 
 ```cpp
 // C4368.cpp

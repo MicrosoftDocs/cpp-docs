@@ -18,7 +18,7 @@ To fix this warning, either correct the declaration or delete the declaration an
 
 ## Example
 
-The following sample generates C4391:
+The following example generates C4391:
 
 ```cpp
 // C4391.cpp

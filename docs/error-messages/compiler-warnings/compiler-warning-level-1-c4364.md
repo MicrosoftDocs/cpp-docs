@@ -18,7 +18,7 @@ For more information, see [Friend Assemblies (C++)](../../dotnet/friend-assembli
 
 ## Example
 
-The following sample creates a component.
+The following example creates a component.
 
 ```cpp
 // C4364.cpp
@@ -26,7 +26,7 @@ The following sample creates a component.
 ref class A {};
 ```
 
-The following sample generates C4364.
+The following example generates C4364.
 
 ```cpp
 // C4364_b.cpp

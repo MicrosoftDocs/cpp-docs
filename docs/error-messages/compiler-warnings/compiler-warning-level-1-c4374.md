@@ -16,7 +16,7 @@ The compiler expected to find the [virtual](../../cpp/virtual-specifier.md) keyw
 
 ## Example
 
-The following sample generates C4374:
+The following example generates C4374:
 
 ```cpp
 // C4374.cpp

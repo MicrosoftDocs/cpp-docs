@@ -22,7 +22,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Example
 
-The following sample generates C4382.
+The following example generates C4382.
 
 ```cpp
 // C4382.cpp

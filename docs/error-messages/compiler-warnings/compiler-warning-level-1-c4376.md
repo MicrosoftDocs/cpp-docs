@@ -16,7 +16,7 @@ For more information on specifying type and member accessibility in metadata, se
 
 ## Example
 
-The following sample generates C4376.
+The following example generates C4376.
 
 ```cpp
 // C4376.cpp

@@ -18,7 +18,7 @@ All types, native and CLR, are now private by default in an assembly, so **/d1Pr
 
 ## Example
 
-The following sample generates C4377.
+The following example generates C4377.
 
 ```cpp
 // C4377.cpp

@@ -17,7 +17,7 @@ This warning is always issued as an error. Use the [warning](../../preprocessor/
 
 ## Example
 
-The following sample generates C4392:
+The following example generates C4392:
 
 ```cpp
 // C4392.cpp

@@ -20,7 +20,7 @@ For more information, see [appdomain](../../cpp/appdomain.md) and [Application D
 
 ## Example
 
-The following sample generates C4398.
+The following example generates C4398.
 
 ```cpp
 // C4398.cpp

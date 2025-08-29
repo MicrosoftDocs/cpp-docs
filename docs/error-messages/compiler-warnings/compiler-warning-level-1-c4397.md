@@ -16,7 +16,7 @@ ms.assetid: 6346fdc2-dbbf-4fba-803a-32b0d0a707be
 
 ## Example
 
-The following sample generates C4397.
+The following example generates C4397.
 
 ```cpp
 // C4397.cpp

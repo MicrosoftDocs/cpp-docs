@@ -15,7 +15,7 @@ The [`const`](../../cpp/const-cpp.md) and [`volatile`](../../cpp/volatile-cpp.md
 
 ## Example
 
-The following sample generates C4400.
+The following example generates C4400.
 
 ```cpp
 // C4400.cpp
