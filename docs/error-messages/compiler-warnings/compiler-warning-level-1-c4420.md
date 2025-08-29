@@ -8,7 +8,7 @@ ms.assetid: 44a37754-7ddd-4764-a5f7-d33e05c20091
 ---
 # Compiler Warning (level 1) C4420
 
-'operator' : operator not available, using 'operator' instead; run-time checking may be compromised
+> 'operator' : operator not available, using 'operator' instead; run-time checking may be compromised
 
 This warning is generated when you use the [/RTCv](../../build/reference/rtc-run-time-error-checks.md) (vector new/delete checking) and when no vector form is found. In this case, the non-vector form is used.
 

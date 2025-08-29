@@ -8,7 +8,7 @@ ms.assetid: a3e4cf1f-a869-4e47-834a-850c21eb5297
 ---
 # Compiler Warning (level 4) C4429
 
-possible incomplete or improperly formed universal-character-name
+> possible incomplete or improperly formed universal-character-name
 
 The compiler detected a character sequence that may be a badly formed universal character name. A universal character name is `\u` followed by four hex digits, or `\U` followed by eight hex digits.
 

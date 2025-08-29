@@ -8,7 +8,7 @@ ms.assetid: 58434ab6-dd8d-427b-953a-602fb7453ae6
 ---
 # Compiler Warning (level 4) C4431
 
-missing type specifier - int assumed. Note: C no longer supports default-int
+> missing type specifier - int assumed. Note: C no longer supports default-int
 
 This error can be generated as a result of compiler conformance work that was done for Visual Studio 2005: Visual C++ no longer creates untyped identifiers as int by default. The type of an identifier must be specified explicitly.
 

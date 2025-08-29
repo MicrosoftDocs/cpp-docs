@@ -8,7 +8,7 @@ ms.assetid: 78b9642a-a93e-401e-9d92-372f6451bc5d
 ---
 # Compiler Warning (level 1) C4440
 
-calling convention redefinition from 'calling_convention1' to 'calling_convention2' ignored
+> calling convention redefinition from 'calling_convention1' to 'calling_convention2' ignored
 
 An attempt to change the calling convention was ignored.
 

@@ -8,7 +8,7 @@ ms.assetid: d95597c9-4762-4f33-86e4-1d98f0e80d52
 ---
 # Compiler Warning (level 1) C4403
 
-illegal PTR operator
+> illegal PTR operator
 
 A PTR operator is used inappropriately in inline assembler code.
 

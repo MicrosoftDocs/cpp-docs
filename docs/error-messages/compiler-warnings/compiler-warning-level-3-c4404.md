@@ -8,6 +8,6 @@ ms.assetid: 78ce9985-0ccd-4ec2-92bf-289475109cdd
 ---
 # Compiler Warning (level 3) C4404
 
-period on directive ignored
+> period on directive ignored
 
 The optional period preceding the directive is ignored.

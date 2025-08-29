@@ -8,7 +8,7 @@ ms.assetid: 8488a186-ed1d-425c-aaeb-c72472c1da68
 ---
 # Compiler Warning (level 4) C4408
 
-anonymousstruct or union did not declare any data members
+> anonymousstruct or union did not declare any data members
 
 An anonymous struct or union must have at least one data member.
 

@@ -8,7 +8,7 @@ ms.assetid: 2e7ca136-f144-4b40-b847-82976e8643fc
 ---
 # Compiler Warning (level 1) C4401
 
-'bitfield' : member is bit field
+> 'bitfield' : member is bit field
 
 Inline assembly code tries to access a bit-field member. Inline assembly cannot access bit-field members, so the last packing boundary before the bit-field member is used.
 

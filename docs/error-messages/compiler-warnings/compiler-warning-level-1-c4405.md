@@ -8,7 +8,7 @@ ms.assetid: 155c64d6-58ae-4455-b61f-ccd711c5da96
 ---
 # Compiler Warning (level 1) C4405
 
-'identifier' : identifier is reserved word
+> 'identifier' : identifier is reserved word
 
 A word reserved for inline assembly is used as a variable name. This may cause unpredictable results. To fix this warning, avoid naming variables with words reserved for inline assembly. The following sample generates C4405:
 

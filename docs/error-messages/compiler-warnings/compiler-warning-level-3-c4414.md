@@ -8,7 +8,7 @@ ms.assetid: bc81d3ad-55dc-4a6b-a6f2-ec0ef38347df
 ---
 # Compiler Warning (level 3) C4414
 
-'function' : short jump to function converted to near
+> 'function' : short jump to function converted to near
 
 Short jumps generate compact instruction which branches to an address within a limited range from the instruction. The instruction includes a short offset that represents the distance between the jump and the target address, the function definition. During linking a function may be moved or subject to link-time optimizations that cause the function to be moved out of the range reachable from a short offset. The compiler must generate a special record for the jump, which requires the jmp instruction to be either NEAR or FAR. The compiler made the conversion.
 
