@@ -15,6 +15,8 @@ A dereferenced pointer to a function is missing an argument list.
 
 ## Example
 
+The following example generates C4550:
+
 ```cpp
 // C4550.cpp
 // compile with: /W1
