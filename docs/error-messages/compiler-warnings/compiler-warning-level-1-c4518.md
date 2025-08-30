@@ -10,6 +10,8 @@ ms.assetid: 4ad21004-f076-43fd-99f4-4bf1f9be4c0b
 
 > 'specifier' : storage-class or type specifier(s) unexpected here; ignored
 
+## Example
+
 The following sample generates C4518:
 
 ```cpp

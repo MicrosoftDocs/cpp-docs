@@ -10,7 +10,11 @@ ms.assetid: 167b5177-3f89-418b-b6c8-7de634f6b28f
 
 > 'namespace' : namespace uses itself
 
+## Remarks
+
 A namespace is used recursively.
+
+## Example
 
 The following sample generates C4515:
 

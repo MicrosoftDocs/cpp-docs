@@ -10,6 +10,8 @@ ms.assetid: f52a3eaa-a235-4747-a47d-9ec4ad4cb0ea
 
 > floating-point control pragmas ignored under /clr
 
+## Remarks
+
 The float-control pragmas:
 
 - [fenv_access](../../preprocessor/fenv-access.md)
@@ -19,6 +21,8 @@ The float-control pragmas:
 - [fp_contract](../../preprocessor/fp-contract.md)
 
 have no effect under [/clr](../../build/reference/clr-common-language-runtime-compilation.md).
+
+## Example
 
 The following sample generates C4470:
 

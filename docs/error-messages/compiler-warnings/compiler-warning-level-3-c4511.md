@@ -10,4 +10,6 @@ ms.assetid: a01286b2-3dd9-4a97-a5ee-dd0e7b63ef8b
 
 > 'class' : copy constructor could not be generated
 
+## Remarks
+
 The compiler could not generate a default copy-constructor for a class; a base class may have a private copy-constructor.

@@ -10,6 +10,8 @@ ms.assetid: 43b51c8c-27b5-44c9-b974-fe4b48f4896f
 
 > 'specifier' : not allowed on interface method 'method'; override specifiers are only allowed on ref class and value class methods
 
+## Remarks
+
 A specifier keyword was incorrectly used on an interface method.
 
 For more information, see [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md).

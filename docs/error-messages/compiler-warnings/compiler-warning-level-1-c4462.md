@@ -10,6 +10,8 @@ ms.assetid: 4e20aca4-293e-4c75-a83d-961c27ab7840
 
 > cannot determine the GUID of the type. Program may fail at runtime.
 
+## Remarks
+
 Warning C4462 occurs in a Windows Runtime app or component when a public `TypedEventHandler` has as one of its type parameters a reference to the enclosing class.
 
 This warning is automatically promoted to an error. If you wish to modify this behavior, use [#pragma warning](../../preprocessor/warning.md). For example, to make C4462 into a level 4 warning issue, add this line to your source code file:

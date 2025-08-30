@@ -10,6 +10,8 @@ ms.assetid: f9b03ecf-41a1-4f4d-a74c-2c1e88234ccc
 
 > 'override' : incorrect use of override specifier; 'function' does not match a base ref class method
 
+## Remarks
+
 An override specifier was used incorrectly. For example, you do not override an interface function, you implement it.
 
 For more information, see [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md).

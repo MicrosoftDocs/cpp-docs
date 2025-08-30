@@ -10,6 +10,8 @@ ms.assetid: 7bfd4e0c-b452-4e6c-b7c4-ac5cc93fe4ea
 
 > nonstandard extension used: override specifier 'keyword'
 
+## Remarks
+
 A keyword was used that is not in the C++ standard, for example, one of the override specifiers that also works under /clr.  For more information, see,
 
 - [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)

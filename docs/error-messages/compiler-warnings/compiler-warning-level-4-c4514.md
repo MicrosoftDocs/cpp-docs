@@ -10,9 +10,13 @@ ms.assetid: cdae966a-9cd4-4e31-af30-2a014e68f614
 
 > 'function' : unreferenced inline function has been removed
 
+## Remarks
+
 The optimizer removed an inline function that is not called.
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+## Example
 
 The following sample generates C4514:
 

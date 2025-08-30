@@ -10,6 +10,8 @@ ms.assetid: 104ffecc-3dd4-4cb1-89a8-81154fbe46d9
 
 > 'type' : this class has a finalizer 'finalizer' but no destructor 'dtor'
 
+## Remarks
+
 The presence of a finalizer in a type implies resources to delete. Unless a finalizer is explicitly called from the type's destructor, the common language runtime determines when to run the finalizer, after your object goes out of scope.
 
 If you define a destructor in the type and explicitly call the finalizer from the destructor, you can deterministically run your finalizer.

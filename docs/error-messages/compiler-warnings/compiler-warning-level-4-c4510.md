@@ -10,6 +10,8 @@ ms.assetid: fd28d1d4-ad27-4dad-94c0-9dba46c93180
 
 > '*class*' : default constructor could not be generated
 
+## Remarks
+
 The compiler can't generate a default constructor for the specified class, which has no user-defined constructors. Objects of this type can't be created.
 
 There are several situations that prevent the compiler from generating a default constructor, including:

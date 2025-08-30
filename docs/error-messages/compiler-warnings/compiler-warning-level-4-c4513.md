@@ -10,4 +10,6 @@ ms.assetid: 6877334a-f30a-4184-9483-dac3348737a4
 
 > 'class' : destructor could not be generated
 
+## Remarks
+
 The compiler cannot generate a default destructor for the given class; no destructor was created. The destructor is in a base class that is not accessible to the derived class. If the base class has a private destructor, make it public or protected.

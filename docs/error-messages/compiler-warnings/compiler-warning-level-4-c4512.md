@@ -10,6 +10,8 @@ ms.assetid: afb68995-684a-4be5-a73a-38d7a16dc030
 
 > 'class' : assignment operator could not be generated
 
+## Remarks
+
 The compiler cannot generate an assignment operator for the given class. No assignment operator was created.
 
 An assignment operator for the base class that is not accessible by the derived class can cause this warning.

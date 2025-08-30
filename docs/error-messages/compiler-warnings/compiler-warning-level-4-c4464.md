@@ -9,9 +9,9 @@ helpviewer_keywords: ["C4464"]
 
 > relative include path contains '..'
 
-A `#include` directive has a path that includes a parent directory specifier (a `..` path segment).
-
 ## Remarks
+
+A `#include` directive has a path that includes a parent directory specifier (a `..` path segment).
 
 In Visual Studio 2015 Update 1 and later versions, if enabled, the compiler can detect and issue a warning for a `#include` directive that contains a parent directory path segment (`..`). Code is sometimes written that uses parent directory relative paths to include headers from external libraries. When these parent directory-relative header paths are specified in source files, it creates a risk: The program could be compiled by including a different header file than the programmer intends. These relative paths may not be portable to other developers' build environments.
 

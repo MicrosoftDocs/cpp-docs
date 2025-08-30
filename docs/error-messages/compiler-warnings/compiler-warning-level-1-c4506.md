@@ -10,6 +10,8 @@ ms.assetid: aa682869-65d1-4dad-ba32-198f10b44f91
 
 > no definition for inline function 'function'
 
+## Remarks
+
 The given function was declared and marked for inlining but was not defined.
 
 The compiler did not inline the function.
