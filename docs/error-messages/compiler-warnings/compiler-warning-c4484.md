@@ -26,7 +26,7 @@ C4484 is always issued as an error. Use the [warning](../../preprocessor/warning
 
 ## Example
 
-The following sample generates C4484.
+The following example generates C4484.
 
 ```cpp
 // C4484.cpp

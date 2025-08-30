@@ -12,7 +12,7 @@ ms.assetid: 4ad21004-f076-43fd-99f4-4bf1f9be4c0b
 
 ## Example
 
-The following sample generates C4518:
+The following example generates C4518:
 
 ```cpp
 // C4518.cpp

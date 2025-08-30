@@ -18,7 +18,7 @@ For more information, see [Override Specifiers](../../extensions/override-specif
 
 ## Example
 
-The following sample generates C4490.
+The following example generates C4490.
 
 ```cpp
 // C4490.cpp

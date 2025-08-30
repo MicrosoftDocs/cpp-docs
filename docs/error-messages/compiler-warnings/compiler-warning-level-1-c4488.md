@@ -16,7 +16,7 @@ A class must implement all members of an interface from which it directly inheri
 
 ## Examples
 
-C4488 can occur if an implemented member is not public. The following sample generates C4488.
+C4488 can occur if an implemented member is not public. The following example generates C4488.
 
 ```cpp
 // C4488.cpp
@@ -35,7 +35,7 @@ public:
 };
 ```
 
-C4488 can occur if an implemented member is not marked virtual. The following sample generates C4488.
+C4488 can occur if an implemented member is not marked virtual. The following example generates C4488.
 
 ```cpp
 // C4488_b.cpp

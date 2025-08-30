@@ -16,7 +16,7 @@ Since a private virtual member function of a managed class or struct cannot be a
 
 ## Example
 
-The following sample generates C4486.
+The following example generates C4486.
 
 ```cpp
 // C4486.cpp
@@ -28,7 +28,7 @@ private:
 };
 ```
 
-The following sample shows one possible use of a private sealed, virtual function.
+The following example shows one possible use of a private sealed, virtual function.
 
 ```cpp
 // C4486_b.cpp

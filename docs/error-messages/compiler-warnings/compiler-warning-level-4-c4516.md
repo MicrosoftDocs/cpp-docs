@@ -16,7 +16,7 @@ The ANSI C++ committee has declared access declarations (changing the access of 
 
 ## Example
 
-The following sample generates C4516:
+The following example generates C4516:
 
 ```cpp
 // C4516.cpp

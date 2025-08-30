@@ -20,7 +20,7 @@ C4485 is always issued as an error. Use the [warning](../../preprocessor/warning
 
 ## Example
 
-The following sample generates C4485
+The following example generates C4485
 
 ```cpp
 // C4485.cpp

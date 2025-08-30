@@ -16,7 +16,7 @@ A namespace is used recursively.
 
 ## Example
 
-The following sample generates C4515:
+The following example generates C4515:
 
 ```cpp
 // C4515.cpp

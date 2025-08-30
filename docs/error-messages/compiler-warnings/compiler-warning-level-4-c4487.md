@@ -18,7 +18,7 @@ For more information, see [new (new slot in vtable)](../../extensions/new-new-sl
 
 ## Example
 
-The following sample generates C4487.
+The following example generates C4487.
 
 ```cpp
 // C4487.cpp

@@ -22,7 +22,7 @@ You might, however, decide to not restructure your code.  It is possible to ship
 
 ## Example
 
-The following sample generates C4503 in compilers before Visual Studio 2017:
+The following example generates C4503 in compilers before Visual Studio 2017:
 
 ```cpp
 // C4503.cpp
@@ -40,7 +40,7 @@ typedef std::map<std::string, WebAppTest> Hello;
 Hello MyWAT;
 ```
 
-This sample shows one way to rewrite your code to resolve C4503:
+This example shows one way to rewrite your code to resolve C4503:
 
 ```cpp
 // C4503b.cpp

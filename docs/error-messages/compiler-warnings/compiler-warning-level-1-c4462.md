@@ -22,7 +22,7 @@ This warning is automatically promoted to an error. If you wish to modify this b
 
 ## Example
 
-This sample generates warning C4462:
+This example generates warning C4462:
 
 ```cpp
 namespace N

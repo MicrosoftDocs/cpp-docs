@@ -24,7 +24,7 @@ have no effect under [/clr](../../build/reference/clr-common-language-runtime-co
 
 ## Example
 
-The following sample generates C4470:
+The following example generates C4470:
 
 ```cpp
 // C4470.cpp

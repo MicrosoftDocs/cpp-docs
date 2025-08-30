@@ -18,7 +18,7 @@ To resolve this warning, explicitly declare the return type of functions.
 
 ## Example
 
-The following sample generates C4508:
+The following example generates C4508:
 
 ```cpp
 // C4508.cpp
