@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4533"
 title: "Compiler Warning (level 1) C4533"
+description: "Learn more about: Compiler Warning (level 1) C4533"
 ms.date: 08/30/2022
 f1_keywords: ["C4533"]
 helpviewer_keywords: ["C4533"]
-ms.assetid: 359fecda-d540-46e5-b214-dbabe9ef50d2
 ---
 # Compiler Warning (level 1) C4533
 
@@ -18,7 +17,7 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Example
 
-The following sample generates C4533. To resolve the issue, move the initialization before the jump instruction or after the target of the jump.
+The following example generates C4533. To resolve the issue, move the initialization before the jump instruction or after the target of the jump.
 
 ```cpp
 // C4533.cpp
