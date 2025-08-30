@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Regular Expressions (C++)"
 title: "Regular Expressions (C++)"
+description: "Learn more about: Regular Expressions (C++)"
 ms.date: 07/15/2021
 helpviewer_keywords: ["regular expressions [C++]"]
 no-loc: [ECMAScript, basic, extended, awk, grep, egrep]
