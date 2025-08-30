@@ -16,7 +16,7 @@ If an expression statement has an operator with no side effect as the top of the
 
 ## Example
 
-The following sample generates C4553:
+The following example generates C4553:
 
 ```cpp
 // C4553.cpp

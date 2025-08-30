@@ -18,7 +18,7 @@ To override this warning, put the expression in parentheses.
 
 ## Example
 
-The following sample generates C4552:
+The following example generates C4552:
 
 ```cpp
 // C4552.cpp

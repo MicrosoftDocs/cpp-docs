@@ -26,7 +26,7 @@ If no exceptions can possibly be thrown in your executable, you may safely ignor
 
 ## Example
 
-The following sample generates C4530:
+The following example generates C4530:
 
 ```cpp
 // C4530.cpp
@@ -36,4 +36,4 @@ int main() {
 }
 ```
 
-Compile the sample with **`/EHsc`** to resolve the warning.
+Compile the example with **`/EHsc`** to resolve the warning.

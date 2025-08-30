@@ -16,7 +16,7 @@ A function was redefined or redeclared and the second definition or declaration 
 
 ## Example
 
-The following sample generates C4559:
+The following example generates C4559:
 
 ```cpp
 // C4559.cpp

@@ -18,7 +18,7 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Example
 
-The following sample generates C4533. To resolve the issue, move the initialization before the jump instruction or after the target of the jump.
+The following example generates C4533. To resolve the issue, move the initialization before the jump instruction or after the target of the jump.
 
 ```cpp
 // C4533.cpp

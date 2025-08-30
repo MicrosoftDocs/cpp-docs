@@ -18,7 +18,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4547:
+The following example generates C4547:
 
 ```cpp
 // C4547.cpp

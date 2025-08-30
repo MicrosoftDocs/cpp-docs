@@ -16,7 +16,7 @@ A function call must include the open and close parentheses after the function n
 
 ## Example
 
-The following sample generates C4551:
+The following example generates C4551:
 
 ```cpp
 // C4551.cpp

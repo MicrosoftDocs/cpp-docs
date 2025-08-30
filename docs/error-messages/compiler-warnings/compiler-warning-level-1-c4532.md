@@ -30,7 +30,7 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Example
 
-The following sample generates C4532; delete or comment out the jump statements to resolve the warnings.
+The following example generates C4532; delete or comment out the jump statements to resolve the warnings.
 
 ```cpp
 // C4532.cpp

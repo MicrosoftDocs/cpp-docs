@@ -16,7 +16,7 @@ The use of [_set_se_translator](../../c-runtime-library/reference/set-se-transla
 
 ## Example
 
-The following sample generates C4535.
+The following example generates C4535.
 
 ```cpp
 // C4535.cpp

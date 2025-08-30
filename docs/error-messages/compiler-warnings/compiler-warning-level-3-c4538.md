@@ -16,7 +16,7 @@ A qualifier keyword was applied to an array incorrectly. For more information, s
 
 ## Example
 
-The following sample generates C4538:
+The following example generates C4538:
 
 ```cpp
 // C4538.cpp

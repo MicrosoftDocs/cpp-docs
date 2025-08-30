@@ -16,7 +16,7 @@ A reference was passed where an object (user-defined type) was expected. A refer
 
 ## Example
 
-The following sample generates C4537 and shows how to fix it:
+The following example generates C4537 and shows how to fix it:
 
 ```cpp
 // C4537.cpp

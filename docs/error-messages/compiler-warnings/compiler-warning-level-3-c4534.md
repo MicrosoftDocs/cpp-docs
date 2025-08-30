@@ -17,7 +17,7 @@ For more information, see [Classes and Structs](../../extensions/classes-and-str
 
 ## Example
 
-The following sample generates C4534:
+The following example generates C4534:
 
 ```cpp
 // C4534.cpp
