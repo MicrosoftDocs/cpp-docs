@@ -12,7 +12,7 @@ The C++ standard library supports multiple regular expression grammars. This top
 
 ## <a name="regexgrammar"></a> Regular expression grammar
 
-The regular expression grammar to use is by specified by the use of one of the `std::regex_constants::syntax_option_type` enumeration values. These regular expression grammars are defined in `std::regex_constants`:
+The regular expression grammar to use is specified by the use of one of the `std::regex_constants::syntax_option_type` enumeration values. These regular expression grammars are defined in `std::regex_constants`:
 
 - ECMAScript: This is closest to the grammar used by JavaScript and the .NET languages.
 - basic: The POSIX basic regular expressions or BRE.
@@ -56,7 +56,7 @@ An element can be one of the following:
 
 - An *anchor*. Anchor `^` matches the beginning of the target sequence. Anchor `$` matches the end of the target sequence.
 
-A *capture group* of the form (*subexpression*), or \\(*subexpression*\\) in basic and grep, which matches the sequence of characters in the target sequence that is matched by the pattern between the delimiters.
+- A *capture group* of the form (*subexpression*), or \\(*subexpression*\\) in basic and grep, which matches the sequence of characters in the target sequence that is matched by the pattern between the delimiters.
 
 - An *identity escape* of the form `\k`, which matches the character `k` in the target sequence.
 
@@ -92,7 +92,7 @@ In ECMAScript, an element can also be one of the following:
 
 - A *control escape sequence* of the form `\ck`. Matches the control character that is named by the character `k`.
 
-- A *word boundary assert* of the form`\b`. Matches when the current position in the target sequence is immediately after a *word boundary*.
+- A *word boundary assert* of the form `\b`. Matches when the current position in the target sequence is immediately after a *word boundary*.
 
 - A *negative word boundary assert* of the form `\B`. Matches when the current position in the target sequence isn't immediately after a *word boundary*.
 
