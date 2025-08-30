@@ -8,7 +8,7 @@ ms.assetid: d8aacbe0-3cb5-4367-a6e5-fd7e28f0ff9d
 ---
 # Compiler Warning (level 1) C4553
 
-'operator' : operator has no effect; did you intend 'operator'?
+> 'operator' : operator has no effect; did you intend 'operator'?
 
 If an expression statement has an operator with no side effect as the top of the expression, it's probably a mistake.
 

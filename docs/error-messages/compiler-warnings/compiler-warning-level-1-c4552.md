@@ -8,7 +8,7 @@ ms.assetid: ebbbb5ee-1c19-45bd-b386-41a19630fc76
 ---
 # Compiler Warning (level 1) C4552
 
-'operator' : operator has no effect; expected operator with side-effect
+> 'operator' : operator has no effect; expected operator with side-effect
 
 If an expression statement has an operator with no side effect as the top of the expression, it's probably a mistake.
 

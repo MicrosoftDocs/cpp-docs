@@ -8,7 +8,7 @@ ms.assetid: 43f8f34f-ed46-4661-95c0-c588c577ff73
 ---
 # Compiler Warning (level 1) C4545
 
-expression before comma evaluates to a function which is missing an argument list
+> expression before comma evaluates to a function which is missing an argument list
 
 The compiler detected an ill-formed comma expression.
 

@@ -8,7 +8,7 @@ ms.assetid: 81a07676-625b-4f58-9b0c-3ee22830b04a
 ---
 # Compiler Warning (level 1) C4549
 
-'operator' : operator before comma has no effect; did you intend 'operator'?
+> 'operator' : operator before comma has no effect; did you intend 'operator'?
 
 The compiler detected an ill-formed comma expression.
 

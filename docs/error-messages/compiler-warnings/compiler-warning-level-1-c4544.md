@@ -8,7 +8,7 @@ ms.assetid: 11ee04df-41ae-435f-af44-881e801315a8
 ---
 # Compiler Warning (level 1) C4544
 
-'declaration': Default template argument ignored on this template declaration
+> 'declaration': Default template argument ignored on this template declaration
 
 A default template argument was specified in an incorrect location and was ignored. A default template argument for a class template can only be specified in the declaration or definition of the class template and not on a member of the class template.
 

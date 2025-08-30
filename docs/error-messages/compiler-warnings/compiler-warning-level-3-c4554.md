@@ -8,7 +8,7 @@ ms.assetid: 55bb68f0-2e80-4330-8921-51083c4f8d53
 ---
 # Compiler Warning (level 3) C4554
 
-'operator' : check operator precedence for possible error; use parentheses to clarify precedence
+> 'operator' : check operator precedence for possible error; use parentheses to clarify precedence
 
 The following sample generates C4554:
 

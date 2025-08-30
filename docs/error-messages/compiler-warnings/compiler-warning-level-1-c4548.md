@@ -8,7 +8,7 @@ ms.assetid: 2cee817e-e463-4d90-bbd2-de120d48c101
 ---
 # Compiler Warning (level 1) C4548
 
-expression before comma has no effect; expected expression with side-effect
+> expression before comma has no effect; expected expression with side-effect
 
 The compiler detected an ill-formed comma expression.
 

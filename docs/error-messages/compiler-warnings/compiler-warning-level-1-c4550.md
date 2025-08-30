@@ -8,7 +8,7 @@ ms.assetid: f902b4ed-5f17-48ea-b693-92f4fb8c8054
 ---
 # Compiler Warning (level 1) C4550
 
-expression evaluates to a function which is missing an argument list
+> expression evaluates to a function which is missing an argument list
 
 A dereferenced pointer to a function is missing an argument list.
 

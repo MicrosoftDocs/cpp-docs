@@ -8,7 +8,7 @@ ms.assetid: 458b59bd-e2d7-425f-9ba6-268ff200424f
 ---
 # Compiler Warning (level 1) C4551
 
-function call missing argument list
+> function call missing argument list
 
 A function call must include the open and close parentheses after the function name even if the function takes no parameters.
 

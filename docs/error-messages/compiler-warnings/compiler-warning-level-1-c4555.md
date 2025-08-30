@@ -8,7 +8,7 @@ ms.assetid: 50b286c1-f7bf-4292-b1fa-baaac9538611
 ---
 # Compiler Warning (level 1) C4555
 
-expression has no effect; expected expression with side-effect
+> expression has no effect; expected expression with side-effect
 
 This warning informs you when an expression has no effect.
 

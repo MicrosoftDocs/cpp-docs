@@ -8,7 +8,7 @@ ms.assetid: 7d9db716-03b2-4ee5-9b09-ba8aa5aa7e4c
 ---
 # Compiler Warning (level 3) C4557
 
-'__assume' contains effect 'effect'
+> '__assume' contains effect 'effect'
 
 The value passed to an [__assume](../../intrinsics/assume.md) statement2 was modified.
 

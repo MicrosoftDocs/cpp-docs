@@ -8,7 +8,7 @@ ms.assetid: 7065dc27-0b6c-4e68-a345-c51cdb99a20b
 ---
 # Compiler Warning (level 3) C4522
 
-'class' : multiple assignment operators specified
+> 'class' : multiple assignment operators specified
 
 The class has multiple assignment operators of a single type. This warning is informational; the constructors are callable in your program.
 

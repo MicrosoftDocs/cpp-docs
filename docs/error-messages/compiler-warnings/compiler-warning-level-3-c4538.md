@@ -8,7 +8,7 @@ ms.assetid: 747e3d51-b6d0-41c1-a726-7af3253b59d7
 ---
 # Compiler Warning (level 3) C4538
 
-'type' : const/volatile qualifiers on this type are not supported
+> 'type' : const/volatile qualifiers on this type are not supported
 
 A qualifier keyword was applied to an array incorrectly. For more information, see [array](../../extensions/arrays-cpp-component-extensions.md).
 

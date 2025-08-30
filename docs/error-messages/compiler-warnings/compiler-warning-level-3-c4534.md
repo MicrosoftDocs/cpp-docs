@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4534"]
 ---
 # Compiler Warning (level 3) C4534
 
-'constructor' will not be a default constructor for class 'class' due to the default argument
+> 'constructor' will not be a default constructor for class 'class' due to the default argument
 
 An unmanaged class can have a constructor with parameters that have default values and the compiler will use this as the default constructor. A class marked with the `value` keyword will not use a constructor with default values for its parameters as a default constructor.
 

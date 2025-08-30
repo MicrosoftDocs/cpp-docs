@@ -8,7 +8,7 @@ ms.assetid: 057d770c-ebcf-44cd-b943-1b1bb1ceaa8c
 ---
 # Compiler Warning (level 3) C4521
 
-'class' : multiple copy constructors specified
+> 'class' : multiple copy constructors specified
 
 The class has multiple copy constructors of a single type. This warning is informational; the constructors are callable in your program.
 

@@ -8,7 +8,7 @@ ms.assetid: 490f8916-5fdc-4cad-b412-76c3382a5976
 ---
 # Compiler Warning (level 1) C4526
 
-'function' : static member function cannot override virtual function 'virtual function'override ignored, virtual function will be hidden
+> 'function' : static member function cannot override virtual function 'virtual function'override ignored, virtual function will be hidden
 
 The static member function meets the criteria to override the virtual function, which makes the member function both virtual and static.
 
