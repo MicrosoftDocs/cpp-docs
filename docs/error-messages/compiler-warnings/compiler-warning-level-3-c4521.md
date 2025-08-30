@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4521"
 title: "Compiler Warning (level 3) C4521"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4521"
+ms.date: 11/04/2016
 f1_keywords: ["C4521"]
 helpviewer_keywords: ["C4521"]
-ms.assetid: 057d770c-ebcf-44cd-b943-1b1bb1ceaa8c
 ---
 # Compiler Warning (level 3) C4521
 

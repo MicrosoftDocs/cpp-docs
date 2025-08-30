@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4552"
 title: "Compiler Warning (level 1) C4552"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4552"
+ms.date: 11/04/2016
 f1_keywords: ["C4552"]
 helpviewer_keywords: ["C4552"]
-ms.assetid: ebbbb5ee-1c19-45bd-b386-41a19630fc76
 ---
 # Compiler Warning (level 1) C4552
 

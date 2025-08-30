@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4549"
 title: "Compiler Warning (level 1) C4549"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4549"
+ms.date: 11/04/2016
 f1_keywords: ["C4549"]
 helpviewer_keywords: ["C4549"]
-ms.assetid: 81a07676-625b-4f58-9b0c-3ee22830b04a
 ---
 # Compiler Warning (level 1) C4549
 

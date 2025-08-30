@@ -1,10 +1,9 @@
 ---
 title: "Compiler Warning (level 1) C4530"
 description: "Reference guide to Microsoft C++ compiler warning C4530."
-ms.date: "04/02/2020"
+ms.date: 04/02/2020
 f1_keywords: ["C4530"]
 helpviewer_keywords: ["C4530"]
-ms.assetid: a04dcdb2-84db-459d-9e5e-4e743887465f
 ---
 # Compiler Warning (level 1) C4530
 

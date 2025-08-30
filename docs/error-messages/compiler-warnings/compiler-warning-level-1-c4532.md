@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4532"
 title: "Compiler Warning (level 1) C4532"
+description: "Learn more about: Compiler Warning (level 1) C4532"
 ms.date: 08/30/2022
 f1_keywords: ["C4532"]
 helpviewer_keywords: ["C4532"]
-ms.assetid: 4e2a286a-d233-4106-9f65-29be1a94ca02
 ---
 # Compiler Warning (level 1) C4532
 

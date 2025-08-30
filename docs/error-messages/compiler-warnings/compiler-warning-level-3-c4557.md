@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4557"
 title: "Compiler Warning (level 3) C4557"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4557"
+ms.date: 11/04/2016
 f1_keywords: ["C4557"]
 helpviewer_keywords: ["C4557"]
-ms.assetid: 7d9db716-03b2-4ee5-9b09-ba8aa5aa7e4c
 ---
 # Compiler Warning (level 3) C4557
 

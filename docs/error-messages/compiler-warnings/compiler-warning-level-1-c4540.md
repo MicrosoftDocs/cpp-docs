@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4540"
 title: "Compiler Warning (level 1) C4540"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4540"
+ms.date: 11/04/2016
 f1_keywords: ["C4540"]
 helpviewer_keywords: ["C4540"]
-ms.assetid: 8085e748-5f4d-43c2-b06d-eaf794edbf72
 ---
 # Compiler Warning (level 1) C4540
 

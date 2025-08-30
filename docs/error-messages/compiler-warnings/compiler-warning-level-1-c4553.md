@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4553"
 title: "Compiler Warning (level 1) C4553"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4553"
+ms.date: 11/04/2016
 f1_keywords: ["C4553"]
 helpviewer_keywords: ["C4553"]
-ms.assetid: d8aacbe0-3cb5-4367-a6e5-fd7e28f0ff9d
 ---
 # Compiler Warning (level 1) C4553
 

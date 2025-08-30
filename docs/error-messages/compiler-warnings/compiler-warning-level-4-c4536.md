@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4536"
 title: "Compiler Warning (level 4) C4536"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4536"
+ms.date: 11/04/2016
 f1_keywords: ["C4536"]
 helpviewer_keywords: ["C4536"]
-ms.assetid: ab4d0686-f813-4e88-a264-b40d3630ed6c
 ---
 # Compiler Warning (level 4) C4536
 

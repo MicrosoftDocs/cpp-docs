@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4546"
 title: "Compiler Warning (level 1) C4546"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4546"
+ms.date: 11/04/2016
 f1_keywords: ["C4546"]
 helpviewer_keywords: ["C4546"]
-ms.assetid: 071e1709-3841-46c1-8e71-96109cd22041
 ---
 # Compiler Warning (level 1) C4546
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4537"
 title: "Compiler Warning (level 1) C4537"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 1) C4537"
+ms.date: 08/27/2018
 f1_keywords: ["C4537"]
 helpviewer_keywords: ["C4537"]
-ms.assetid: 9454493c-d419-475e-8f35-9c00233c9329
 ---
 # Compiler Warning (level 1) C4537
 

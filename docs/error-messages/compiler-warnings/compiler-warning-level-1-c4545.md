@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4545"
 title: "Compiler Warning (level 1) C4545"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4545"
+ms.date: 11/04/2016
 f1_keywords: ["C4545"]
 helpviewer_keywords: ["C4545"]
-ms.assetid: 43f8f34f-ed46-4661-95c0-c588c577ff73
 ---
 # Compiler Warning (level 1) C4545
 

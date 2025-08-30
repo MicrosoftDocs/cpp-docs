@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4533"
 title: "Compiler Warning (level 1) C4533"
+description: "Learn more about: Compiler Warning (level 1) C4533"
 ms.date: 08/30/2022
 f1_keywords: ["C4533"]
 helpviewer_keywords: ["C4533"]
-ms.assetid: 359fecda-d540-46e5-b214-dbabe9ef50d2
 ---
 # Compiler Warning (level 1) C4533
 
