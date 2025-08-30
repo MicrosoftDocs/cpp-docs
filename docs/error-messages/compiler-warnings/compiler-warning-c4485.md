@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning C4485"
 title: "Compiler Warning C4485"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4485"
+ms.date: 11/04/2016
 f1_keywords: ["C4485"]
 helpviewer_keywords: ["C4485"]
-ms.assetid: a6f2b437-ca93-4dcd-b9cb-df415e10df86
 ---
 # Compiler Warning C4485
 
-'override_function' : matches base ref class method 'base_class_function ', but is not marked 'new' or 'override'; 'new' (and 'virtual') is assumed
+> 'override_function' : matches base ref class method 'base_class_function ', but is not marked 'new' or 'override'; 'new' (and 'virtual') is assumed
+
+## Remarks
 
 An accessor overrides, with or without the **`virtual`** keyword, a base class accessor function, but the `override` or **`new`** specifier was not part of the overriding function signature. Add the **`new`** or `override` specifier to resolve this warning.
 
@@ -18,7 +19,7 @@ C4485 is always issued as an error. Use the [warning](../../preprocessor/warning
 
 ## Example
 
-The following sample generates C4485
+The following example generates C4485
 
 ```cpp
 // C4485.cpp

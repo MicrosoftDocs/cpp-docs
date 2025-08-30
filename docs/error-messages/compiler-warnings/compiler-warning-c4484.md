@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning C4484"
 title: "Compiler Warning C4484"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4484"
+ms.date: 11/04/2016
 f1_keywords: ["C4484"]
 helpviewer_keywords: ["C4484"]
-ms.assetid: 3d30e5b3-2297-45b7-a37a-1360056fdd0e
 ---
 # Compiler Warning C4484
 
-'override_function' : matches base ref class method 'base_class_function', but is not marked 'virtual', 'new' or 'override'; 'new' (and not 'virtual') is assumed
+> 'override_function' : matches base ref class method 'base_class_function', but is not marked 'virtual', 'new' or 'override'; 'new' (and not 'virtual') is assumed
+
+## Remarks
 
 When compiling with **/clr**, the compiler will not implicitly override a base class function, which means the function will get a new slot in the vtable. To resolve, explicitly specify whether a function is an override.
 
@@ -24,7 +25,7 @@ C4484 is always issued as an error. Use the [warning](../../preprocessor/warning
 
 ## Example
 
-The following sample generates C4484.
+The following example generates C4484.
 
 ```cpp
 // C4484.cpp
