@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4486"
 title: "Compiler Warning (level 1) C4486"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4486"
+ms.date: 11/04/2016
 f1_keywords: ["C4486"]
 helpviewer_keywords: ["C4486"]
-ms.assetid: 2c0c59e3-d025-4d97-8da2-fa27df1402fc
 ---
 # Compiler Warning (level 1) C4486
 

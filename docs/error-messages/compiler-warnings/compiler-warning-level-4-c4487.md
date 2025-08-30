@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4487"
 title: "Compiler Warning (level 4) C4487"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4487"
+ms.date: 11/04/2016
 f1_keywords: ["C4487"]
 helpviewer_keywords: ["C4487"]
-ms.assetid: 796144cf-cd3c-4edc-b6a4-96192b7eb4f0
 ---
 # Compiler Warning (level 4) C4487
 

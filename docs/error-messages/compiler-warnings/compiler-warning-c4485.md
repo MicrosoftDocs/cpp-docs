@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4485"
 title: "Compiler Warning C4485"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4485"
+ms.date: 11/04/2016
 f1_keywords: ["C4485"]
 helpviewer_keywords: ["C4485"]
-ms.assetid: a6f2b437-ca93-4dcd-b9cb-df415e10df86
 ---
 # Compiler Warning C4485
 

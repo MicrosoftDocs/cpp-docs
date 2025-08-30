@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4484"
 title: "Compiler Warning C4484"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4484"
+ms.date: 11/04/2016
 f1_keywords: ["C4484"]
 helpviewer_keywords: ["C4484"]
-ms.assetid: 3d30e5b3-2297-45b7-a37a-1360056fdd0e
 ---
 # Compiler Warning C4484
 

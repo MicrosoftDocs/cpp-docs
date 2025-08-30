@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4512"
 title: "Compiler Warning (level 4) C4512"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4512"
+ms.date: 11/04/2016
 f1_keywords: ["C4512"]
 helpviewer_keywords: ["C4512"]
-ms.assetid: afb68995-684a-4be5-a73a-38d7a16dc030
 ---
 # Compiler Warning (level 4) C4512
 

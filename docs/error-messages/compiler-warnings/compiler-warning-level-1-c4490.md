@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4490"
 title: "Compiler Warning (level 1) C4490"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4490"
+ms.date: 11/04/2016
 f1_keywords: ["C4490"]
 helpviewer_keywords: ["C4490"]
-ms.assetid: f9b03ecf-41a1-4f4d-a74c-2c1e88234ccc
 ---
 # Compiler Warning (level 1) C4490
 

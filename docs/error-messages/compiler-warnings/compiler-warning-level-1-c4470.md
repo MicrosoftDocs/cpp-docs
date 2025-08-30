@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4470"
 title: "Compiler Warning (level 1) C4470"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4470"
+ms.date: 11/04/2016
 f1_keywords: ["C4470"]
 helpviewer_keywords: ["C4470"]
-ms.assetid: f52a3eaa-a235-4747-a47d-9ec4ad4cb0ea
 ---
 # Compiler Warning (level 1) C4470
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4503"
 title: "Compiler Warning (level 1) C4503"
-ms.date: "05/14/2018"
+description: "Learn more about: Compiler Warning (level 1) C4503"
+ms.date: 05/14/2018
 f1_keywords: ["C4503"]
 helpviewer_keywords: ["C4503"]
-ms.assetid: 7c5a98ae-5b6d-41d8-b881-12d3ffd5e392
 ---
 # Compiler Warning (level 1) C4503
 

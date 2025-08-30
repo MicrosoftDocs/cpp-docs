@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4471"
 title: "Compiler Warning (level 4) C4471"
-ms.date: "04/24/2017"
+description: "Learn more about: Compiler Warning (level 4) C4471"
+ms.date: 04/24/2017
 f1_keywords: ["C4471"]
 helpviewer_keywords: ["C4471"]
-ms.assetid: ccfd8bd5-bc1b-4be7-a6ea-0e3a7add6607
 ---
 # Compiler Warning (level 4) C4471
 

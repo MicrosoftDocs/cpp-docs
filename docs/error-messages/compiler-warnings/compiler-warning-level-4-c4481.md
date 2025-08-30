@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4481"
 title: "Compiler Warning (level 4) C4481"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4481"
+ms.date: 11/04/2016
 f1_keywords: ["C4481"]
 helpviewer_keywords: ["C4481"]
-ms.assetid: 7bfd4e0c-b452-4e6c-b7c4-ac5cc93fe4ea
 ---
 # Compiler Warning (level 4) C4481
 

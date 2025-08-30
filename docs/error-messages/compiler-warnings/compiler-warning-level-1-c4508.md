@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4508"
 title: "Compiler Warning (level 1) C4508"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4508"
+ms.date: 11/04/2016
 f1_keywords: ["C4508"]
 helpviewer_keywords: ["C4508"]
-ms.assetid: c05f113b-b789-4df0-a4ef-78bce4767021
 ---
 # Compiler Warning (level 1) C4508
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4517"
 title: "Compiler Warning (level 4) C4517"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4517"
+ms.date: 11/04/2016
 f1_keywords: ["C4517"]
 helpviewer_keywords: ["C4517"]
-ms.assetid: 87cc12b8-7331-4f3a-a863-d6a75d9599c3
 ---
 # Compiler Warning (level 4) C4517
 

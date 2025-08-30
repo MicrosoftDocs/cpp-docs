@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4506"
 title: "Compiler Warning (level 1) C4506"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4506"
+ms.date: 11/04/2016
 f1_keywords: ["C4506"]
 helpviewer_keywords: ["C4506"]
-ms.assetid: aa682869-65d1-4dad-ba32-198f10b44f91
 ---
 # Compiler Warning (level 1) C4506
 
