@@ -8,7 +8,7 @@ ms.assetid: f9b03ecf-41a1-4f4d-a74c-2c1e88234ccc
 ---
 # Compiler Warning (level 1) C4490
 
-'override' : incorrect use of override specifier; 'function' does not match a base ref class method
+> 'override' : incorrect use of override specifier; 'function' does not match a base ref class method
 
 An override specifier was used incorrectly. For example, you do not override an interface function, you implement it.
 

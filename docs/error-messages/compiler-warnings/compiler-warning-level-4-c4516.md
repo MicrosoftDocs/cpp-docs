@@ -8,7 +8,7 @@ ms.assetid: 6677bb1f-d26e-4ab9-8644-6b5a2a8f4ff8
 ---
 # Compiler Warning (level 4) C4516
 
-'class::symbol' : access-declarations are deprecated; member using-declarations provide a better alternative
+> 'class::symbol' : access-declarations are deprecated; member using-declarations provide a better alternative
 
 The ANSI C++ committee has declared access declarations (changing the access of a member in a derived class without the [using](../../cpp/using-declaration.md) keyword) to be outdated. Access declarations may not be supported by future versions of C++.
 

@@ -8,7 +8,7 @@ ms.assetid: c05f113b-b789-4df0-a4ef-78bce4767021
 ---
 # Compiler Warning (level 1) C4508
 
-'function' : function should return a value; 'void' return type assumed
+> 'function' : function should return a value; 'void' return type assumed
 
 The function has no return type specified. In this case, C4430 should also fire and the compiler implements the fix reported by C4430 (default value is int).
 

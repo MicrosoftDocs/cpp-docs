@@ -8,7 +8,7 @@ ms.assetid: 7bfd4e0c-b452-4e6c-b7c4-ac5cc93fe4ea
 ---
 # Compiler Warning (level 4) C4481
 
-nonstandard extension used: override specifier 'keyword'
+> nonstandard extension used: override specifier 'keyword'
 
 A keyword was used that is not in the C++ standard, for example, one of the override specifiers that also works under /clr.  For more information, see,
 

@@ -8,7 +8,7 @@ ms.assetid: aa682869-65d1-4dad-ba32-198f10b44f91
 ---
 # Compiler Warning (level 1) C4506
 
-no definition for inline function 'function'
+> no definition for inline function 'function'
 
 The given function was declared and marked for inlining but was not defined.
 

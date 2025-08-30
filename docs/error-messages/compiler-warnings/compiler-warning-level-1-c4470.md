@@ -8,7 +8,7 @@ ms.assetid: f52a3eaa-a235-4747-a47d-9ec4ad4cb0ea
 ---
 # Compiler Warning (level 1) C4470
 
-floating-point control pragmas ignored under /clr
+> floating-point control pragmas ignored under /clr
 
 The float-control pragmas:
 

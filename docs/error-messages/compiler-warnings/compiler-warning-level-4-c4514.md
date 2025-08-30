@@ -8,7 +8,7 @@ ms.assetid: cdae966a-9cd4-4e31-af30-2a014e68f614
 ---
 # Compiler Warning (level 4) C4514
 
-'function' : unreferenced inline function has been removed
+> 'function' : unreferenced inline function has been removed
 
 The optimizer removed an inline function that is not called.
 

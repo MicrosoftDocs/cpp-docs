@@ -8,7 +8,7 @@ ms.assetid: 55625e46-ddb5-4c7c-99c7-cd4aa9f879bd
 ---
 # Compiler Warning (level 1) C4488
 
-'function' : requires 'keyword' keyword to implement the interface method 'interface_method'
+> 'function' : requires 'keyword' keyword to implement the interface method 'interface_method'
 
 A class must implement all members of an interface from which it directly inherits. An implemented member must have public accessibility, and must be marked virtual.
 

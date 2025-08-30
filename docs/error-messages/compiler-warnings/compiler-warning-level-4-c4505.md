@@ -8,7 +8,7 @@ ms.assetid: 068716a0-7dd2-40af-abf4-478f893b48c5
 ---
 # Compiler Warning (level 4) C4505
 
-'function' : unreferenced local function has been removed
+> 'function' : unreferenced local function has been removed
 
 The given function is local and not referenced in the body of the module; therefore, the function is dead code.
 

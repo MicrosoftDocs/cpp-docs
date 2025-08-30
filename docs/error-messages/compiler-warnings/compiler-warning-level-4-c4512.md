@@ -8,7 +8,7 @@ ms.assetid: afb68995-684a-4be5-a73a-38d7a16dc030
 ---
 # Compiler Warning (level 4) C4512
 
-'class' : assignment operator could not be generated
+> 'class' : assignment operator could not be generated
 
 The compiler cannot generate an assignment operator for the given class. No assignment operator was created.
 

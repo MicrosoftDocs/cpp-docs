@@ -8,7 +8,7 @@ ms.assetid: 3d30e5b3-2297-45b7-a37a-1360056fdd0e
 ---
 # Compiler Warning C4484
 
-'override_function' : matches base ref class method 'base_class_function', but is not marked 'virtual', 'new' or 'override'; 'new' (and not 'virtual') is assumed
+> 'override_function' : matches base ref class method 'base_class_function', but is not marked 'virtual', 'new' or 'override'; 'new' (and not 'virtual') is assumed
 
 When compiling with **/clr**, the compiler will not implicitly override a base class function, which means the function will get a new slot in the vtable. To resolve, explicitly specify whether a function is an override.
 

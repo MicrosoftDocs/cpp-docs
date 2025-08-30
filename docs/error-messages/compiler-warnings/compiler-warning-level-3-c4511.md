@@ -8,6 +8,6 @@ ms.assetid: a01286b2-3dd9-4a97-a5ee-dd0e7b63ef8b
 ---
 # Compiler Warning (level 3) C4511
 
-'class' : copy constructor could not be generated
+> 'class' : copy constructor could not be generated
 
 The compiler could not generate a default copy-constructor for a class; a base class may have a private copy-constructor.

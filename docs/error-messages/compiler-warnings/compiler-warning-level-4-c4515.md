@@ -8,7 +8,7 @@ ms.assetid: 167b5177-3f89-418b-b6c8-7de634f6b28f
 ---
 # Compiler Warning (level 4) C4515
 
-'namespace' : namespace uses itself
+> 'namespace' : namespace uses itself
 
 A namespace is used recursively.
 
