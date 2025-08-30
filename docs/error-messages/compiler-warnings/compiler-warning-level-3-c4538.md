@@ -10,7 +10,11 @@ ms.assetid: 747e3d51-b6d0-41c1-a726-7af3253b59d7
 
 > 'type' : const/volatile qualifiers on this type are not supported
 
+## Remarks
+
 A qualifier keyword was applied to an array incorrectly. For more information, see [array](../../extensions/arrays-cpp-component-extensions.md).
+
+## Example
 
 The following sample generates C4538:
 

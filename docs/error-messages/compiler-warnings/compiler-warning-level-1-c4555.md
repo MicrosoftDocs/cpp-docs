@@ -10,9 +10,13 @@ ms.assetid: 50b286c1-f7bf-4292-b1fa-baaac9538611
 
 > expression has no effect; expected expression with side-effect
 
+## Remarks
+
 This warning informs you when an expression has no effect.
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+## Example
 
 For example:
 

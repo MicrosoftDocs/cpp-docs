@@ -10,4 +10,6 @@ ms.assetid: 0f28761d-999f-43fe-9481-d02afd9b4f60
 
 > 'class' : multiple destructors specified
 
+## Remarks
+
 The class has multiple destructors.

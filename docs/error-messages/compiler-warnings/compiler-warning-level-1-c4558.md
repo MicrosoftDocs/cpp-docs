@@ -10,7 +10,11 @@ ms.assetid: 52bb0324-7bec-468c-b35b-13a08d38e578
 
 > value of operand 'value' is out of range 'lowerbound - upperbound'
 
+## Remarks
+
 The value passed to an assembly language instruction is out of the range specified for the parameter. The value will be truncated.
+
+## Example
 
 The following sample generates C4558:
 

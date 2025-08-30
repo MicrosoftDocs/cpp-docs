@@ -10,6 +10,8 @@ ms.assetid: 7065dc27-0b6c-4e68-a345-c51cdb99a20b
 
 > 'class' : multiple assignment operators specified
 
+## Remarks
+
 The class has multiple assignment operators of a single type. This warning is informational; the constructors are callable in your program.
 
 Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning.

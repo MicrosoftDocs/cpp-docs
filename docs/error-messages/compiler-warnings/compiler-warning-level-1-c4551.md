@@ -10,7 +10,11 @@ ms.assetid: 458b59bd-e2d7-425f-9ba6-268ff200424f
 
 > function call missing argument list
 
+## Remarks
+
 A function call must include the open and close parentheses after the function name even if the function takes no parameters.
+
+## Example
 
 The following sample generates C4551:
 

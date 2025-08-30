@@ -10,9 +10,13 @@ ms.assetid: 2cee817e-e463-4d90-bbd2-de120d48c101
 
 > expression before comma has no effect; expected expression with side-effect
 
+## Remarks
+
 The compiler detected an ill-formed comma expression.
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## Example
 
 The following sample generates C4548:
 

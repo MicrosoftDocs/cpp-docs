@@ -10,6 +10,8 @@ ms.assetid: 057d770c-ebcf-44cd-b943-1b1bb1ceaa8c
 
 > 'class' : multiple copy constructors specified
 
+## Remarks
+
 The class has multiple copy constructors of a single type. This warning is informational; the constructors are callable in your program.
 
 Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning.

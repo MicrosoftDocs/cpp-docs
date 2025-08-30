@@ -10,7 +10,11 @@ ms.assetid: d8aacbe0-3cb5-4367-a6e5-fd7e28f0ff9d
 
 > 'operator' : operator has no effect; did you intend 'operator'?
 
+## Remarks
+
 If an expression statement has an operator with no side effect as the top of the expression, it's probably a mistake.
+
+## Example
 
 The following sample generates C4553:
 

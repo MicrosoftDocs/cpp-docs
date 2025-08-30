@@ -10,9 +10,13 @@ ms.assetid: 7d9db716-03b2-4ee5-9b09-ba8aa5aa7e4c
 
 > '__assume' contains effect 'effect'
 
+## Remarks
+
 The value passed to an [__assume](../../intrinsics/assume.md) statement2 was modified.
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+## Example
 
 The following sample generates C4557:
 

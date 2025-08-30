@@ -10,9 +10,13 @@ ms.assetid: 3edf1c2e-c0d5-444d-ae83-44a7cce24bb2
 
 > 'operator' : operator before comma has no effect; expected operator with side-effect
 
+## Remarks
+
 The compiler detected an ill-formed comma expression.
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## Example
 
 The following sample generates C4547:
 

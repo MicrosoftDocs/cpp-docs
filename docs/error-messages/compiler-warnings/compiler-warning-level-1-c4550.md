@@ -10,6 +10,8 @@ ms.assetid: f902b4ed-5f17-48ea-b693-92f4fb8c8054
 
 > expression evaluates to a function which is missing an argument list
 
+## Remarks
+
 A dereferenced pointer to a function is missing an argument list.
 
 ## Example
