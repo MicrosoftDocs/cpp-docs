@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3293"
 title: "Compiler Error C3293"
-ms.date: "07/21/2017"
+description: "Learn more about: Compiler Error C3293"
+ms.date: 07/21/2017
 f1_keywords: ["C3293"]
 helpviewer_keywords: ["C3293"]
-ms.assetid: b772cf98-52e0-4e24-be23-1f5d87d999ac
 ---
 # Compiler Error C3293
 
-'accessor': use 'default' to access the default property (indexer) for class 'type'
+> 'accessor': use 'default' to access the default property (indexer) for class 'type'
+
+## Remarks
 
 An indexed property was accessed incorrectly.  See [How to: Use Properties in C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md) for more information.
 
@@ -16,7 +17,7 @@ An indexed property was accessed incorrectly.  See [How to: Use Properties in C+
 
 ## Example
 
-The following sample generates C3293 in Visual Studio 2015 and earlier.
+The following example generates C3293 in Visual Studio 2015 and earlier.
 
 ```cpp
 // C3293.cpp
