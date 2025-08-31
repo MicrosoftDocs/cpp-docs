@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4656"
 title: "Compiler Warning (level 1) C4656"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4656"
+ms.date: 11/04/2016
 f1_keywords: ["C4656"]
 helpviewer_keywords: ["C4656"]
-ms.assetid: b5aaef74-2320-4345-a6ae-b813881a491c
 ---
 # Compiler Warning (level 1) C4656
 
-'symbol' : data type is new or has changed since the last build, or is defined differently elsewhere
+> 'symbol' : data type is new or has changed since the last build, or is defined differently elsewhere
+
+## Remarks
 
 You added or changed a data type, making it new to your source code since the last successful build. Edit and Continue does not support changes to existing data types.
 

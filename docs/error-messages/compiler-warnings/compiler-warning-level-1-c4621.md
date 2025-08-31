@@ -1,16 +1,19 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4621"
 title: "Compiler Warning (level 1) C4621"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4621"
+ms.date: 11/04/2016
 f1_keywords: ["C4621"]
 helpviewer_keywords: ["C4621"]
-ms.assetid: 40931bd9-cb89-497e-86f0-cec9f016c63c
 ---
 # Compiler Warning (level 1) C4621
 
-no postfix form of 'operator --' found for type 'type', using prefix form
+> no postfix form of 'operator --' found for type 'type', using prefix form
+
+## Remarks
 
 There was no postfix decrement operator defined for the given type. The compiler used the overloaded prefix operator.
+
+## Example
 
 This warning can be avoided by defining a postfix `--` operator. Create a two-argument version of the `--` operator as shown below:
 

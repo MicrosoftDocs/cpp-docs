@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4623"
 title: "Compiler Warning (level 4) C4623"
+description: "Learn more about: Compiler Warning (level 4) C4623"
 ms.date: 10/27/2022
 f1_keywords: ["C4623"]
 helpviewer_keywords: ["C4623"]
-ms.assetid: e630d8d0-f6ea-469c-a74f-07b027587225
 ---
 # Compiler Warning (level 4) C4623
 
 > '`derived class`' : default constructor was implicitly defined as deleted
+
+## Remarks
 
 Because the default constructor is deleted or inaccessible in a base class, the compiler can't generate a default constructor for the derived class. Attempts to create an object of this type by using the default constructor (for example, in an array) cause a compiler error.
 
@@ -16,7 +17,7 @@ This warning is off by default. For more information, see [Compiler warnings tha
 
 ## Example
 
-The following sample generates C4623.
+The following example generates C4623.
 
 ```cpp
 // C4623.cpp

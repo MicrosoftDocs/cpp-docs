@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4641"
 title: "Compiler Warning (level 3) C4641"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4641"
+ms.date: 11/04/2016
 f1_keywords: ["C4641"]
 helpviewer_keywords: ["C4641"]
-ms.assetid: 28fe5c3e-6039-42da-9100-1312b5b15aea
 ---
 # Compiler Warning (level 3) C4641
 
-XML document comment has an ambiguous cross reference
+> XML document comment has an ambiguous cross reference
+
+## Remarks
 
 The compiler was unable to unambiguously resolve a reference. To resolve this warning, specify the parameter information necessary to make the reference unambiguous.
 
@@ -16,7 +17,7 @@ For more information, see [XML Documentation](../../build/reference/xml-document
 
 ## Example
 
-The following sample generates C4641.
+The following example generates C4641.
 
 ```cpp
 // C4641.cpp
