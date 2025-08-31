@@ -123,7 +123,7 @@ Specifies which environment to target ([/env](/windows/win32/midl/-env) arm32|wi
 
 ### Generate Stubless Proxies
 
-Generate fully interpreted stubs with extensions and stubless proxies for object interfaces ([/Oicf](/windows/win32/midl/-oi), [/Oif](/windows/win32/midl/-oi) ).
+Generate fully interpreted stubs with extensions and stubless proxies for object interfaces ([/Oicf](/windows/win32/midl/-oi), [/Oif](/windows/win32/midl/-oi)).
 
 ### Suppress Compiler Warnings
 

@@ -16,7 +16,7 @@ One way to diagnose this problem is to run **ildasm -tokens** on the object file
 
 One reason for LNK2022 is when a type (such as a struct) exists in multiple compilands with the same name, but with conflicting definitions, and when you compile with [/clr](../../build/reference/clr-common-language-runtime-compilation.md).  In this case, make sure that the type has an identical definition in all compilands.  The type name is listed in `error_message`.
 
-Another possible cause for LNK2022 is when the linker finds a metadata file in a different location than was specified to the compiler (with [#using](../../preprocessor/hash-using-directive-cpp.md) ). Make sure that the metadata file (.dll or .netmodule) is in the same location when passed to the linker, as it was when it was passed to the compiler.
+Another possible cause for LNK2022 is when the linker finds a metadata file in a different location than was specified to the compiler (with [#using](../../preprocessor/hash-using-directive-cpp.md)). Make sure that the metadata file (.dll or .netmodule) is in the same location when passed to the linker, as it was when it was passed to the compiler.
 
 When building an ATL application, the use of the macro `_ATL_MIXED` is required in all compilands, if it is used in at least one.
 
