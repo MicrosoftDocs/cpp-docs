@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4580"
 title: "Compiler Warning (level 3) C4580"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4580"
+ms.date: 11/04/2016
 f1_keywords: ["C4580"]
 helpviewer_keywords: ["C4580"]
-ms.assetid: fef6e8e0-0d6a-44fa-b22a-2fe7ba2ef379
 ---
 # Compiler Warning (level 3) C4580
 

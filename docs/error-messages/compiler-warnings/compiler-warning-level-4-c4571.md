@@ -4,7 +4,6 @@ description: "Documents the Microsoft C++ compiler warning C4571."
 ms.date: 08/24/2020
 f1_keywords: ["C4571"]
 helpviewer_keywords: ["C4571"]
-ms.assetid: 07aa17bd-b15c-4266-824c-57cc445e8edd
 ---
 # Compiler Warning (level 4) C4571
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4570"
 title: "Compiler Warning (level 3) C4570"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4570"
+ms.date: 11/04/2016
 f1_keywords: ["C4570"]
 helpviewer_keywords: ["C4570"]
-ms.assetid: feec1225-e6ad-4995-8d96-c22e864a77bd
 ---
 # Compiler Warning (level 3) C4570
 

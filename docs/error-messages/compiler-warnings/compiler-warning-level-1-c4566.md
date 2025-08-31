@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4566"
 title: "Compiler Warning (level 1) C4566"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4566"
+ms.date: 11/04/2016
 f1_keywords: ["C4566"]
 helpviewer_keywords: ["C4566"]
-ms.assetid: 65f40730-e86f-447c-b37b-16caadcfe311
 ---
 # Compiler Warning (level 1) C4566
 

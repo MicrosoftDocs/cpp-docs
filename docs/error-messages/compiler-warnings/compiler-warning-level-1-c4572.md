@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4572"
 title: "Compiler Warning (level 1) C4572"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4572"
+ms.date: 11/04/2016
 f1_keywords: ["C4572"]
 helpviewer_keywords: ["C4572"]
-ms.assetid: 482dee5a-29bd-4fc3-b769-9dfd4cd2a964
 ---
 # Compiler Warning (level 1) C4572
 

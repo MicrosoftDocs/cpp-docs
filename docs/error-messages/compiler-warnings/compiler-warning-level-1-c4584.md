@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4584"
 title: "Compiler Warning (level 1) C4584"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4584"
+ms.date: 11/04/2016
 f1_keywords: ["C4584"]
 helpviewer_keywords: ["C4584"]
-ms.assetid: ad86582f-cb8c-4d21-8c4c-a6c800059e25
 ---
 # Compiler Warning (level 1) C4584
 

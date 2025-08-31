@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4616"
 title: "Compiler Warning (level 1) C4616"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4616"
+ms.date: 11/04/2016
 f1_keywords: ["C4616"]
 helpviewer_keywords: ["C4616"]
-ms.assetid: 71e15265-c5bc-42ce-a6a9-4879892472b1
 ---
 # Compiler Warning (level 1) C4616
 

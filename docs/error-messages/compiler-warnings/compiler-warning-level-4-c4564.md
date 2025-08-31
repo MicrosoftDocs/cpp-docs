@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4564"
 title: "Compiler Warning (level 4) C4564"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4564"
+ms.date: 11/04/2016
 f1_keywords: ["C4564"]
 helpviewer_keywords: ["C4564"]
-ms.assetid: 555b301b-313e-4262-9f81-eb878674be60
 ---
 # Compiler Warning (level 4) C4564
 
