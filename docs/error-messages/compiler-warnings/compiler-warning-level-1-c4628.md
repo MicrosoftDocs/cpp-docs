@@ -18,7 +18,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 ## Example
 
-The following sample generates C4628:
+The following example generates C4628:
 
 ```cpp
 // C4628.cpp

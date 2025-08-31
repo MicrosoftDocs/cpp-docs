@@ -16,7 +16,7 @@ The compiler was unable to resolve a symbol (*symbol*). The symbol must be valid
 
 ## Example
 
-The following sample generates C4638:
+The following example generates C4638:
 
 ```cpp
 // C4638.cpp

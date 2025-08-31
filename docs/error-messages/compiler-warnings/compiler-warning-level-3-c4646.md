@@ -16,7 +16,7 @@ A function marked with the [noreturn](../../cpp/noreturn.md) **`__declspec`** mo
 
 ## Example
 
-The following sample generates C4646:
+The following example generates C4646:
 
 ```cpp
 // C4646.cpp

@@ -16,7 +16,7 @@ A [return](../../cpp/program-termination.md) statement was found in a function t
 
 ## Example
 
-The following sample generates C4645:
+The following example generates C4645:
 
 ```cpp
 // C4645.cpp

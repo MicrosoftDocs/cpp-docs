@@ -18,7 +18,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 ## Example
 
-The following sample generates C4625 and shows how to fix it.
+The following example generates C4625 and shows how to fix it.
 
 ```cpp
 // C4625.cpp

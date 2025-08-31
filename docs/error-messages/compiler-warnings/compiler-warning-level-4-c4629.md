@@ -16,7 +16,7 @@ Under [/Za](../../build/reference/za-ze-disable-language-extensions.md), the com
 
 ## Example
 
-The following sample generates C4629:
+The following example generates C4629:
 
 ```cpp
 // C4629.cpp

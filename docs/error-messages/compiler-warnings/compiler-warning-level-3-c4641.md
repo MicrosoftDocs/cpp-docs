@@ -18,7 +18,7 @@ For more information, see [XML Documentation](../../build/reference/xml-document
 
 ## Example
 
-The following sample generates C4641.
+The following example generates C4641.
 
 ```cpp
 // C4641.cpp

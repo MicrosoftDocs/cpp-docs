@@ -16,7 +16,7 @@ A name passed to the [\<param>](../../build/reference/param-visual-cpp.md) tag w
 
 ## Example
 
-The following sample generates C4633:
+The following example generates C4633:
 
 ```cpp
 // C4633.cpp

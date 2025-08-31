@@ -18,7 +18,7 @@ For more information, see [XML Documentation](../../build/reference/xml-document
 
 ## Examples
 
-The following sample generates C4634.
+The following example generates C4634.
 
 ```cpp
 // C4634.cpp
@@ -29,7 +29,7 @@ namespace hello {
 };
 ```
 
-The following sample generates C4634.
+The following example generates C4634.
 
 ```cpp
 // C4634_b.cpp

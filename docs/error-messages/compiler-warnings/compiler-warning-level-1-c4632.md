@@ -16,7 +16,7 @@ The path to .xdc file (`file`) was not valid, and no .xdc file created.
 
 ## Example
 
-The following sample generates C4632:
+The following example generates C4632:
 
 ```cpp
 // C4632.cpp

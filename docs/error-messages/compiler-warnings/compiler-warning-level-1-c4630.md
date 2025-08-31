@@ -16,7 +16,7 @@ A data member or member function is defined as **`extern`**. Members cannot be e
 
 ## Example
 
-The following sample generates C4630:
+The following example generates C4630:
 
 ```cpp
 // C4630.cpp

@@ -16,7 +16,7 @@ If the current source file has the [/Yu \(Use precompiled header file)](../../bu
 
 ## Example
 
-This sample demonstrates how the error can occur, and shows how to fix it:
+This example demonstrates how the error can occur, and shows how to fix it:
 
 ```cpp
 // c4627.cpp
