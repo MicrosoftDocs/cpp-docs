@@ -8,7 +8,7 @@ ms.assetid: f065994e-e3e5-4694-b868-c124472b3342
 ---
 # Compiler Warning (level 1) C4603
 
-'\<identifier>' : macro is not defined or definition is different after precompiled header use
+> '\<identifier>' : macro is not defined or definition is different after precompiled header use
 
 The macro specified by the *identifier* placeholder is either different or no longer defined after the precompiler header is used.
 

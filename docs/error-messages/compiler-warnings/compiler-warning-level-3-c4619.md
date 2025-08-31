@@ -8,7 +8,7 @@ ms.assetid: 701fea21-01aa-4bea-93d4-1cb8824170b0
 ---
 # Compiler Warning (level 3) C4619
 
-\#pragma warning : there is no warning number 'number'
+> #pragma warning : there is no warning number 'number'
 
 An attempt was made to disable a warning that does not exist.
 

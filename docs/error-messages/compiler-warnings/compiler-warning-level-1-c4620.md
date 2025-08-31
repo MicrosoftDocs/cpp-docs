@@ -8,7 +8,7 @@ ms.assetid: fed29934-b797-47e8-bbea-c7e5f8dd6e93
 ---
 # Compiler Warning (level 1) C4620
 
-no postfix form of 'operator ++' found for type 'type', using prefix form
+> no postfix form of 'operator ++' found for type 'type', using prefix form
 
 There is no postfix increment operator defined for the given type. The compiler used the overloaded prefix operator.
 

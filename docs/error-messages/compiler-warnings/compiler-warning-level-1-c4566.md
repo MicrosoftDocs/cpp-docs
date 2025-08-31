@@ -8,7 +8,7 @@ ms.assetid: 65f40730-e86f-447c-b37b-16caadcfe311
 ---
 # Compiler Warning (level 1) C4566
 
-character represented by universal-character-name 'char' cannot be represented in the current code page (page)
+> character represented by universal-character-name 'char' cannot be represented in the current code page (page)
 
 Not every Unicode character can be represented in your current ANSI code page.
 

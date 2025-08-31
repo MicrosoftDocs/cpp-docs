@@ -8,7 +8,7 @@ ms.assetid: ad86582f-cb8c-4d21-8c4c-a6c800059e25
 ---
 # Compiler Warning (level 1) C4584
 
-'class1' : base-class 'class2' is already a base-class of 'class3'
+> 'class1' : base-class 'class2' is already a base-class of 'class3'
 
 The class you defined inherits from two classes, one of which inherits from the other. For example:
 

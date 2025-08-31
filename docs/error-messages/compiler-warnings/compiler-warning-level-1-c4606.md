@@ -8,7 +8,7 @@ ms.assetid: c1b45fb6-672b-42eb-9e1c-c67b3e4150d3
 ---
 # Compiler Warning (level 1) C4606
 
-\#pragma warning : 'warning_number' ignored; Code Analysis warnings are not associated with warning levels
+> #pragma warning : 'warning_number' ignored; Code Analysis warnings are not associated with warning levels
 
 For Code Analysis warnings, only `error`, `once`, and `default` are supported with the [warning](../../preprocessor/warning.md) pragma.
 

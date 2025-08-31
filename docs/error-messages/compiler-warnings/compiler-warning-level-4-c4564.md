@@ -8,7 +8,7 @@ ms.assetid: 555b301b-313e-4262-9f81-eb878674be60
 ---
 # Compiler Warning (level 4) C4564
 
-method 'method' of class 'class' defines unsupported default parameter 'parameter'
+> method 'method' of class 'class' defines unsupported default parameter 'parameter'
 
 The compiler detected a method with one or more parameters with default values. The default value(s) for the parameters will be ignored when the method is invoked; explicitly specify values for those parameters. If you do not explicitly specify values for those parameters, the C++ compiler will generate an error.
 

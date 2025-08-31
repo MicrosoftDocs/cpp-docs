@@ -8,7 +8,7 @@ ms.assetid: bd90d0a6-75f9-4e97-968d-dda6773e9fd8
 ---
 # Compiler Warning (level 4) C4611
 
-interaction between 'function' and C++ object destruction is non-portable
+> interaction between 'function' and C++ object destruction is non-portable
 
 On some platforms, functions that include **`catch`** may not support C++ object semantics of destruction when out of scope.
 

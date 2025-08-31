@@ -8,7 +8,7 @@ ms.assetid: 6ff10d0a-6d5b-4373-8196-1d57bb6b1611
 ---
 # Compiler Warning (level 1) C4618
 
-pragma parameters included an empty string; pragma ignored
+> pragma parameters included an empty string; pragma ignored
 
 A null string was given as an argument to a **#pragma**.
 
