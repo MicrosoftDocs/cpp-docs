@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4623"
 title: "Compiler Warning (level 4) C4623"
+description: "Learn more about: Compiler Warning (level 4) C4623"
 ms.date: 10/27/2022
 f1_keywords: ["C4623"]
 helpviewer_keywords: ["C4623"]
-ms.assetid: e630d8d0-f6ea-469c-a74f-07b027587225
 ---
 # Compiler Warning (level 4) C4623
 

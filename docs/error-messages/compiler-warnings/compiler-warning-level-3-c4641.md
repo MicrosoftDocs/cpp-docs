@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4641"
 title: "Compiler Warning (level 3) C4641"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4641"
+ms.date: 11/04/2016
 f1_keywords: ["C4641"]
 helpviewer_keywords: ["C4641"]
-ms.assetid: 28fe5c3e-6039-42da-9100-1312b5b15aea
 ---
 # Compiler Warning (level 3) C4641
 

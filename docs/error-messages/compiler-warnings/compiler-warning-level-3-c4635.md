@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4635"
 title: "Compiler Warning (level 3) C4635"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4635"
+ms.date: 11/04/2016
 f1_keywords: ["C4635"]
 helpviewer_keywords: ["C4635"]
-ms.assetid: b2ba90de-c093-4a76-8076-b65878467574
 ---
 # Compiler Warning (level 3) C4635
 

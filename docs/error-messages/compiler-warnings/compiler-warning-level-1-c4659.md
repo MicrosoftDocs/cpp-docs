@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4659"
 title: "Compiler Warning (level 1) C4659"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4659"
+ms.date: 11/04/2016
 f1_keywords: ["C4659"]
 helpviewer_keywords: ["C4659"]
-ms.assetid: e29ba8db-7917-43f6-8e34-868b752279ae
 ---
 # Compiler Warning (level 1) C4659
 

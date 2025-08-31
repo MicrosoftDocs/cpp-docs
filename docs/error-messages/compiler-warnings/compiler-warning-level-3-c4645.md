@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4645"
 title: "Compiler Warning (level 3) C4645"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4645"
+ms.date: 11/04/2016
 f1_keywords: ["C4645"]
 helpviewer_keywords: ["C4645"]
-ms.assetid: fd7c1ddf-f0d0-4e10-bab9-ccb4c3476298
 ---
 # Compiler Warning (level 3) C4645
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4636"
 title: "Compiler Warning (level 3) C4636"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4636"
+ms.date: 11/04/2016
 f1_keywords: ["C4636"]
 helpviewer_keywords: ["C4636"]
-ms.assetid: 59112a0f-850f-41c6-bd84-8ae8dc84706a
 ---
 # Compiler Warning (level 3) C4636
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4622"
 title: "Compiler Warning (level 3) C4622"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4622"
+ms.date: 11/04/2016
 f1_keywords: ["C4622"]
 helpviewer_keywords: ["C4622"]
-ms.assetid: d3c879f0-4492-4f4b-b26d-230993f3a933
 ---
 # Compiler Warning (level 3) C4622
 

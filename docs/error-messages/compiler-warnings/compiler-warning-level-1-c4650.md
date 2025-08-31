@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4650"
 title: "Compiler Warning (level 1) C4650"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4650"
+ms.date: 11/04/2016
 f1_keywords: ["C4650"]
 helpviewer_keywords: ["C4650"]
-ms.assetid: 3190b3e3-dcd6-4846-939b-f900ab652b2a
 ---
 # Compiler Warning (level 1) C4650
 

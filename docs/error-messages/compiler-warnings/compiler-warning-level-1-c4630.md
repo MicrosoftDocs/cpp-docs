@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4630"
 title: "Compiler Warning (level 1) C4630"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4630"
+ms.date: 11/04/2016
 f1_keywords: ["C4630"]
 helpviewer_keywords: ["C4630"]
-ms.assetid: d8926376-7acc-4fc7-8438-6f0de3468870
 ---
 # Compiler Warning (level 1) C4630
 

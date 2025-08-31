@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4624"
 title: "Compiler Warning (level 1) C4624"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4624"
+ms.date: 11/04/2016
 f1_keywords: ["C4624"]
 helpviewer_keywords: ["C4624"]
-ms.assetid: 14f61769-d92e-482b-9515-debd87b30a66
 ---
 # Compiler Warning (level 1) C4624
 

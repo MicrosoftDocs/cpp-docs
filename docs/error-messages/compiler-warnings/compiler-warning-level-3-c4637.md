@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4637"
 title: "Compiler Warning (level 3) C4637"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4637"
+ms.date: 11/04/2016
 f1_keywords: ["C4637"]
 helpviewer_keywords: ["C4637"]
-ms.assetid: 5fd347c1-2de9-408f-9136-1bf1ff273622
 ---
 # Compiler Warning (level 3) C4637
 

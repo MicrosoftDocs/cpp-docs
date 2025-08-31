@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4640"
 title: "Compiler Warning (level 3) C4640"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4640"
+ms.date: 11/04/2016
 f1_keywords: ["C4640"]
 helpviewer_keywords: ["C4640"]
-ms.assetid: f76871f6-e436-4c35-9793-d2f22f7e1c7f
 ---
 # Compiler Warning (level 3) C4640
 

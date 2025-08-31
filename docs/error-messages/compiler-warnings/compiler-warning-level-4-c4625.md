@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4625"
 title: "Compiler Warning (level 4) C4625"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4625"
+ms.date: 11/04/2016
 f1_keywords: ["C4625"]
 helpviewer_keywords: ["C4625"]
-ms.assetid: 4cc99e50-846c-4784-97da-48b977067851
 ---
 # Compiler Warning (level 4) C4625
 
