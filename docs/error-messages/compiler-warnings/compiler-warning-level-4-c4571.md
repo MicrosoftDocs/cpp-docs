@@ -28,7 +28,7 @@ You can resolve C4571 in one of the following ways:
 
 ## Example
 
-The following sample generates C4571.
+The following example generates C4571.
 
 ```cpp
 // C4571.cpp

@@ -16,7 +16,7 @@ The warning number specified in the [warning](../../preprocessor/warning.md) pra
 
 ## Example
 
-The following sample generates C4616:
+The following example generates C4616:
 
 ```cpp
 // C4616.cpp

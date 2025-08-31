@@ -16,7 +16,7 @@ For Code Analysis warnings, only `error`, `once`, and `default` are supported wi
 
 ## Example
 
-The following sample generates C4606.
+The following example generates C4606.
 
 ```cpp
 // C4606.cpp

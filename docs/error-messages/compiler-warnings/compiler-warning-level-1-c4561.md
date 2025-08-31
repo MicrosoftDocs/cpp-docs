@@ -16,7 +16,7 @@ The [__fastcall](../../cpp/fastcall.md) function-calling convention cannot be us
 
 ## Example
 
-The following sample generates C4561:
+The following example generates C4561:
 
 ```cpp
 // C4561.cpp

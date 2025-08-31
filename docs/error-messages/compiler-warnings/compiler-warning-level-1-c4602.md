@@ -16,7 +16,7 @@ If you use [pop_macro](../../preprocessor/pop-macro.md) for a particular macro, 
 
 ## Example
 
-For example, the following sample generates C4602:
+For example, the following example generates C4602:
 
 ```cpp
 // C4602.cpp

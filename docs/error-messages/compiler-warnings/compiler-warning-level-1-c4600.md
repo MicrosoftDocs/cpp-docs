@@ -16,7 +16,7 @@ You cannot specify an empty string when you push or pop a macro name with either
 
 ## Example
 
-The following sample generates C4600:
+The following example generates C4600:
 
 ```cpp
 // C4600.cpp

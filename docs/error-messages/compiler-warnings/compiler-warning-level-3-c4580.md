@@ -16,7 +16,7 @@ ms.assetid: fef6e8e0-0d6a-44fa-b22a-2fe7ba2ef379
 
 ## Example
 
-The following sample generates C3454 and shows how to fix it.
+The following example generates C3454 and shows how to fix it.
 
 ```cpp
 // C4580.cpp

@@ -16,7 +16,7 @@ The class has no user-defined or default constructors. No instantiation is perfo
 
 ## Example
 
-The following sample generates C4610:
+The following example generates C4610:
 
 ```cpp
 // C4610.cpp

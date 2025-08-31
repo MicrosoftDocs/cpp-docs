@@ -16,7 +16,7 @@ A symbol was redefined or redeclared and the second definition or declaration, u
 
 ## Example
 
-The following sample generates C4565:
+The following example generates C4565:
 
 ```cpp
 // C4565.cpp

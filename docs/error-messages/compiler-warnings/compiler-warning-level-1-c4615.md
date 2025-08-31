@@ -16,7 +16,7 @@ An invalid warning specifier was used with **pragma** [warning](../../preprocess
 
 ## Example
 
-The following sample generates C4615:
+The following example generates C4615:
 
 ```cpp
 // C4615.cpp

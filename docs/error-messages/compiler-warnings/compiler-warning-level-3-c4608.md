@@ -16,7 +16,7 @@ Two members of the same union were initialized in an initialization list. You ca
 
 ## Example
 
-The following sample generates C4608:
+The following example generates C4608:
 
 ```cpp
 // C4608.cpp

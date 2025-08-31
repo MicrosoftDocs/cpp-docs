@@ -28,7 +28,7 @@ Public class TestClass
 End class
 ```
 
-And the following C++ sample that uses the .dll created with Visual Basic,
+And the following C++ example that uses the .dll created with Visual Basic,
 
 ```cpp
 // C4564.cpp

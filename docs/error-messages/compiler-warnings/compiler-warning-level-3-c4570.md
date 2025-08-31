@@ -16,7 +16,7 @@ A type that contains [abstract](../../extensions/abstract-cpp-component-extensio
 
 ## Example
 
-The following sample generates C4570.
+The following example generates C4570.
 
 ```cpp
 // C4570.cpp

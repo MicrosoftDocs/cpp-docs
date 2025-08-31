@@ -16,7 +16,7 @@ An obsolete style for specifying a variable argument list was used. When compili
 
 ## Example
 
-The following sample generates C4572.
+The following example generates C4572.
 
 ```cpp
 // C4572.cpp

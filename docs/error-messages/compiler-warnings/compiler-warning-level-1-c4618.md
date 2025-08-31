@@ -18,7 +18,7 @@ The pragma was processed without the argument.
 
 ## Example
 
-The following sample generates C4618:
+The following example generates C4618:
 
 ```cpp
 // C4618.cpp

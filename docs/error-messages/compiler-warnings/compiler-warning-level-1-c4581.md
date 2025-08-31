@@ -18,7 +18,7 @@ In previous versions, attribute values were accepted whether or not they were en
 
 ## Example
 
-The following sample generates C4581.
+The following example generates C4581.
 
 ```cpp
 // C4581.cpp
