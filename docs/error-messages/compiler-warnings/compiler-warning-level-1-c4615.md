@@ -10,7 +10,11 @@ ms.assetid: 7b107c01-0da2-4e01-8b40-93813e30b94c
 
 > #pragma warning : unknown user warning type
 
+## Remarks
+
 An invalid warning specifier was used with **pragma** [warning](../../preprocessor/warning.md). To resolve the error, use a valid warning specifier.
+
+## Example
 
 The following sample generates C4615:
 

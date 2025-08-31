@@ -10,7 +10,11 @@ ms.assetid: 71e15265-c5bc-42ce-a6a9-4879892472b1
 
 > #pragma warning : warning number 'number' not a valid compiler warning
 
+## Remarks
+
 The warning number specified in the [warning](../../preprocessor/warning.md) pragma cannot be reassigned. The pragma was ignored.
+
+## Example
 
 The following sample generates C4616:
 

@@ -10,6 +10,8 @@ ms.assetid: c1b45fb6-672b-42eb-9e1c-c67b3e4150d3
 
 > #pragma warning : 'warning_number' ignored; Code Analysis warnings are not associated with warning levels
 
+## Remarks
+
 For Code Analysis warnings, only `error`, `once`, and `default` are supported with the [warning](../../preprocessor/warning.md) pragma.
 
 ## Example

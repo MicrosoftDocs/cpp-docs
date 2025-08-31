@@ -10,7 +10,13 @@ ms.assetid: 23c1a16c-9ca9-4bf6-9911-a72b785560c2
 
 > object 'class' can never be instantiated - user-defined constructor required
 
-The class has no user-defined or default constructors. No instantiation is performed. The following sample generates C4610:
+## Remarks
+
+The class has no user-defined or default constructors. No instantiation is performed.
+
+## Example
+
+The following sample generates C4610:
 
 ```cpp
 // C4610.cpp

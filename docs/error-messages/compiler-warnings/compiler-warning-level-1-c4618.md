@@ -10,9 +10,13 @@ ms.assetid: 6ff10d0a-6d5b-4373-8196-1d57bb6b1611
 
 > pragma parameters included an empty string; pragma ignored
 
+## Remarks
+
 A null string was given as an argument to a **#pragma**.
 
 The pragma was processed without the argument.
+
+## Example
 
 The following sample generates C4618:
 

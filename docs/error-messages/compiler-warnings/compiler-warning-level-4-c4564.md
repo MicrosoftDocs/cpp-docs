@@ -10,7 +10,11 @@ ms.assetid: 555b301b-313e-4262-9f81-eb878674be60
 
 > method 'method' of class 'class' defines unsupported default parameter 'parameter'
 
+## Remarks
+
 The compiler detected a method with one or more parameters with default values. The default value(s) for the parameters will be ignored when the method is invoked; explicitly specify values for those parameters. If you do not explicitly specify values for those parameters, the C++ compiler will generate an error.
+
+## Example
 
 Given the following .dll created with Visual Basic, which allows default parameters on method arguments:
 

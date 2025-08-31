@@ -10,9 +10,13 @@ ms.assetid: 65f40730-e86f-447c-b37b-16caadcfe311
 
 > character represented by universal-character-name 'char' cannot be represented in the current code page (page)
 
+## Remarks
+
 Not every Unicode character can be represented in your current ANSI code page.
 
 Narrow strings (one-byte characters) are converted to multi-byte characters whereas wide strings (two-byte characters) are not.
+
+## Example
 
 The following sample generates C4566:
 

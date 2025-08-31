@@ -10,7 +10,11 @@ ms.assetid: 8b8f5f28-8ce9-457e-9d3d-a8c0efce9b6a
 
 > 'union_member' has already been initialized by another union member in the initializer list, 'union_member'
 
+## Remarks
+
 Two members of the same union were initialized in an initialization list. You can only access one member of the union.
+
+## Example
 
 The following sample generates C4608:
 

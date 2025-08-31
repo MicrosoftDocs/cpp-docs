@@ -10,9 +10,13 @@ ms.assetid: 701fea21-01aa-4bea-93d4-1cb8824170b0
 
 > #pragma warning : there is no warning number 'number'
 
+## Remarks
+
 An attempt was made to disable a warning that does not exist.
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+## Example
 
 The following sample generates C4619:
 

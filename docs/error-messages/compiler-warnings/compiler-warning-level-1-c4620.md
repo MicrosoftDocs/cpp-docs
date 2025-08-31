@@ -10,7 +10,11 @@ ms.assetid: fed29934-b797-47e8-bbea-c7e5f8dd6e93
 
 > no postfix form of 'operator ++' found for type 'type', using prefix form
 
+## Remarks
+
 There is no postfix increment operator defined for the given type. The compiler used the overloaded prefix operator.
+
+## Example
 
 This warning can be avoided by defining a postfix `++` operator. Create a two-argument version of the `++` operator as shown here:
 

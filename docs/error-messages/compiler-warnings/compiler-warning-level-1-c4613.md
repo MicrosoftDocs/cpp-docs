@@ -10,4 +10,6 @@ ms.assetid: 399f521b-651c-4997-bc91-f40198e9a4d4
 
 > 'segment' : class of segment cannot be changed
 
+## Remarks
+
 You tried to create a segment with the same class name as a segment used by the compiler. No new segment class was created.
