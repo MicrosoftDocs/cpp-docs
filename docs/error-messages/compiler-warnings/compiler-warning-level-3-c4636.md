@@ -8,7 +8,7 @@ ms.assetid: 59112a0f-850f-41c6-bd84-8ae8dc84706a
 ---
 # Compiler Warning (level 3) C4636
 
-XML document comment applied to 'construct': tag requires non-empty '' attribute.
+> XML document comment applied to 'construct': tag requires non-empty '' attribute.
 
 A tag, such as `cref`, did not have a value.
 

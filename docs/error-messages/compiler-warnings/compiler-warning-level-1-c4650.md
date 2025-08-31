@@ -8,7 +8,7 @@ ms.assetid: 3190b3e3-dcd6-4846-939b-f900ab652b2a
 ---
 # Compiler Warning (level 1) C4650
 
-debugging information not in precompiled header; only global symbols from the header will be available
+> debugging information not in precompiled header; only global symbols from the header will be available
 
 The precompiled header file was not compiled with Microsoft symbolic debugging information.
 

@@ -8,7 +8,7 @@ ms.assetid: f1ea82aa-4dc1-4972-b55a-57fdb962f0dd
 ---
 # Compiler Warning (level 1) C4651
 
-'definition' specified for precompiled header but not for current compile
+> 'definition' specified for precompiled header but not for current compile
 
 The definition was specified when the precompiled header was generated, but not in this compilation.
 

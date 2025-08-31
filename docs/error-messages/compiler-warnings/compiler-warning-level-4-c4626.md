@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4626"]
 ---
 # Compiler Warning (level 4) C4626
 
-'derived class' : assignment operator was implicitly defined as deleted because a base class assignment operator is inaccessible or deleted
+> 'derived class' : assignment operator was implicitly defined as deleted because a base class assignment operator is inaccessible or deleted
 
 An assignment operator was deleted or not accessible in a base class and was therefore not generated for a derived class. Any attempt to assign objects of this type will cause a compiler error.
 

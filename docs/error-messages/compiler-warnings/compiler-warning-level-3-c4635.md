@@ -8,7 +8,7 @@ ms.assetid: b2ba90de-c093-4a76-8076-b65878467574
 ---
 # Compiler Warning (level 3) C4635
 
-XML document comment target: badly-formed XML: reason
+> XML document comment target: badly-formed XML: reason
 
 The compiler found some problem with the XML tags.  Fix the problem and recompile
 

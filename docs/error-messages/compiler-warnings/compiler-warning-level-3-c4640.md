@@ -8,7 +8,7 @@ ms.assetid: f76871f6-e436-4c35-9793-d2f22f7e1c7f
 ---
 # Compiler Warning (level 3) C4640
 
-'instance' : construction of local static object is not thread-safe
+> 'instance' : construction of local static object is not thread-safe
 
 A static instance of an object is not thread safe.
 

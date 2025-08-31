@@ -8,7 +8,7 @@ ms.assetid: 9e35d205-cf21-4e34-8bd5-e1e7b0e2cdd3
 ---
 # Compiler Warning (level 1) C4632
 
-XML document comment: file - access denied: reason
+> XML document comment: file - access denied: reason
 
 The path to .xdc file (`file`) was not valid, and no .xdc file created.
 

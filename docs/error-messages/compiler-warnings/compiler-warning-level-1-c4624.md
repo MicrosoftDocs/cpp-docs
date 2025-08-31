@@ -8,7 +8,7 @@ ms.assetid: 14f61769-d92e-482b-9515-debd87b30a66
 ---
 # Compiler Warning (level 1) C4624
 
-'derived class' : destructor was implicitly defined as deleted because a base class destructor is inaccessible or deleted
+> 'derived class' : destructor was implicitly defined as deleted because a base class destructor is inaccessible or deleted
 
 A destructor was not accessible or deleted in a base class and was therefore not generated for a derived class. Any attempt to create an object of this type on the stack will cause a compiler error.
 

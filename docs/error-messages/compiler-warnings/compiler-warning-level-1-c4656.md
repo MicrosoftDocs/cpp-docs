@@ -8,7 +8,7 @@ ms.assetid: b5aaef74-2320-4345-a6ae-b813881a491c
 ---
 # Compiler Warning (level 1) C4656
 
-'symbol' : data type is new or has changed since the last build, or is defined differently elsewhere
+> 'symbol' : data type is new or has changed since the last build, or is defined differently elsewhere
 
 You added or changed a data type, making it new to your source code since the last successful build. Edit and Continue does not support changes to existing data types.
 

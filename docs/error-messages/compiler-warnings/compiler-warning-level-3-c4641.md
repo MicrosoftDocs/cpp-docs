@@ -8,7 +8,7 @@ ms.assetid: 28fe5c3e-6039-42da-9100-1312b5b15aea
 ---
 # Compiler Warning (level 3) C4641
 
-XML document comment has an ambiguous cross reference
+> XML document comment has an ambiguous cross reference
 
 The compiler was unable to unambiguously resolve a reference. To resolve this warning, specify the parameter information necessary to make the reference unambiguous.
 

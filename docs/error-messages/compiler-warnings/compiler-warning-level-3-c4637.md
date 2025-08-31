@@ -8,7 +8,7 @@ ms.assetid: 5fd347c1-2de9-408f-9136-1bf1ff273622
 ---
 # Compiler Warning (level 3) C4637
 
-XML document comment target: \<include> tag discarded.  reason
+> XML document comment target: \<include> tag discarded.  reason
 
 The syntax of an [\<include>](../../build/reference/include-visual-cpp.md) tag was not correct.
 
