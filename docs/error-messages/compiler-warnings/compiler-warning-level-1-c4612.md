@@ -17,6 +17,8 @@ The arguments to the **#pragma include_alias** statement can use the quote form 
 
 ## Example
 
+The following example generates C4612:
+
 ```cpp
 // C4612.cpp
 // compile with: /W1 /LD
