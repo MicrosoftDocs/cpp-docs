@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: /LN (Create MSIL Module)"
 title: "/LN (Create MSIL Module)"
-ms.date: "11/04/2016"
+description: "Learn more about: /LN (Create MSIL Module)"
+ms.date: 11/04/2016
 f1_keywords: ["/LN"]
 helpviewer_keywords: ["-LN compiler option [C++]", "/LN compiler option [C++]"]
 ---

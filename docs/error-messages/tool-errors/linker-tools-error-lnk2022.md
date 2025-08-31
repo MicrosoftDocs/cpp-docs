@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2022"
 title: "Linker Tools Error LNK2022"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2022"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2022"]
 helpviewer_keywords: ["LNK2022"]
-ms.assetid: d2128c73-dde3-4b8e-a9b2-0a153acefb3b
 ---
 # Linker Tools Error LNK2022
 

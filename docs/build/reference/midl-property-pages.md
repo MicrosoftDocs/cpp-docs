@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: MIDL Property Pages"
 title: "MIDL Compiler Property Pages"
-ms.date: "07/24/2019"
+description: "Learn more about: MIDL Property Pages"
+ms.date: 07/24/2019
 ms.topic: "article"
-ms.assetid: 57498a01-fccc-4a0e-a036-6ff702f83126
 f1_keywords:
   - VC.Project.VCMidlTool.PreprocessorDefinitions
   - VC.Project.VCMidlTool.AdditionalIncludeDirectories

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /fpcvt (Floating-point to integer conversion compatibility)"
 title: "/fpcvt (Floating-point to unsigned integer conversion compatibility)"
+description: "Learn more about: /fpcvt (Floating-point to integer conversion compatibility)"
 ms.date: 11/03/2021
 f1_keywords: ["/fpcvt", "-fpcvt"]
 helpviewer_keywords: ["-fpcvt compiler option [C++]", "/fpcvt compiler option [C++]"]
