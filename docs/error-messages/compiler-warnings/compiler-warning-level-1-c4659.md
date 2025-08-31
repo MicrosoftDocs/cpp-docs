@@ -15,6 +15,8 @@ The .drectve option was used to pass an option to the linker. Instead use pragma
 
 ## Example
 
+The following example generates C4659:
+
 ```cpp
 // C4659.cpp
 // compile with: /W1 /LD
