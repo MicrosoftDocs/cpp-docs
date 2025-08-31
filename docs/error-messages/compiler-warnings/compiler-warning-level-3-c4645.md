@@ -10,7 +10,11 @@ ms.assetid: fd7c1ddf-f0d0-4e10-bab9-ccb4c3476298
 
 > function declared with __declspec(noreturn) has a return statement
 
+## Remarks
+
 A [return](../../cpp/program-termination.md) statement was found in a function that is marked with the [noreturn](../../cpp/noreturn.md) **`__declspec`** modifier. The **`return`** statement was ignored.
+
+## Example
 
 The following sample generates C4645:
 

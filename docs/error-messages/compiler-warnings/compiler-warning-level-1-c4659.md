@@ -10,7 +10,11 @@ ms.assetid: e29ba8db-7917-43f6-8e34-868b752279ae
 
 > #pragma 'pragma' : use of reserved segment 'segment' has undefined behavior, use #pragma comment(linker, ...)
 
+## Remarks
+
 The .drectve option was used to pass an option to the linker. Instead use pragma [comment](../../preprocessor/comment-c-cpp.md) for passing a linker option.
+
+## Example
 
 ```cpp
 // C4659.cpp

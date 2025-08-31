@@ -10,7 +10,11 @@ ms.assetid: b2ba90de-c093-4a76-8076-b65878467574
 
 > XML document comment target: badly-formed XML: reason
 
+## Remarks
+
 The compiler found some problem with the XML tags.  Fix the problem and recompile
+
+## Example
 
 The following sample generates C4635:
 

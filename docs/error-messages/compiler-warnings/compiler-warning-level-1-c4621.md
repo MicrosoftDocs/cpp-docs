@@ -10,7 +10,11 @@ ms.assetid: 40931bd9-cb89-497e-86f0-cec9f016c63c
 
 > no postfix form of 'operator --' found for type 'type', using prefix form
 
+## Remarks
+
 There was no postfix decrement operator defined for the given type. The compiler used the overloaded prefix operator.
+
+## Example
 
 This warning can be avoided by defining a postfix `--` operator. Create a two-argument version of the `--` operator as shown below:
 

@@ -10,6 +10,8 @@ ms.assetid: 28fe5c3e-6039-42da-9100-1312b5b15aea
 
 > XML document comment has an ambiguous cross reference
 
+## Remarks
+
 The compiler was unable to unambiguously resolve a reference. To resolve this warning, specify the parameter information necessary to make the reference unambiguous.
 
 For more information, see [XML Documentation](../../build/reference/xml-documentation-visual-cpp.md).

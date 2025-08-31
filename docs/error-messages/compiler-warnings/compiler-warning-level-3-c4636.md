@@ -10,6 +10,8 @@ ms.assetid: 59112a0f-850f-41c6-bd84-8ae8dc84706a
 
 > XML document comment applied to 'construct': tag requires non-empty '' attribute.
 
+## Remarks
+
 A tag, such as `cref`, did not have a value.
 
 ## Example

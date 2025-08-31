@@ -10,6 +10,8 @@ ms.assetid: f1ea82aa-4dc1-4972-b55a-57fdb962f0dd
 
 > 'definition' specified for precompiled header but not for current compile
 
+## Remarks
+
 The definition was specified when the precompiled header was generated, but not in this compilation.
 
 The definition will be in effect inside the precompiled header, but not in the rest of the code.

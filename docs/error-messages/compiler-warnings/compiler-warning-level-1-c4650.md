@@ -10,6 +10,8 @@ ms.assetid: 3190b3e3-dcd6-4846-939b-f900ab652b2a
 
 > debugging information not in precompiled header; only global symbols from the header will be available
 
+## Remarks
+
 The precompiled header file was not compiled with Microsoft symbolic debugging information.
 
 When linked, the resulting executable or dynamic-link library file will not include debugging information for local symbols contained in the precompiled header.

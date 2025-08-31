@@ -10,9 +10,13 @@ ms.assetid: f76871f6-e436-4c35-9793-d2f22f7e1c7f
 
 > 'instance' : construction of local static object is not thread-safe
 
+## Remarks
+
 A static instance of an object is not thread safe.
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+## Example
 
 The following sample generates C4640:
 

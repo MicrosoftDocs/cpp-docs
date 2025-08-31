@@ -10,4 +10,6 @@ ms.assetid: d8636ff6-29a7-4fec-b9a6-e201d121c3ca
 
 > MSXML or XPath unavailable, XML document comments will not be processed. reason
 
+## Remarks
+
 Your common language runtime installation did not have the necessary files to support processing doc comment. Reinstall the common language runtime.

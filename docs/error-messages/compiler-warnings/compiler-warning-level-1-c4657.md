@@ -10,6 +10,8 @@ ms.assetid: eb750050-cea6-4ead-b80c-d5dcd4971cfc
 
 > expression involves a data type that is new since the last build
 
+## Remarks
+
 You added or changed a data type, making it new to your source code since the last successful build. Edit and Continue does not support changes to existing data types.
 
 This warning will always be followed by [Fatal Error C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md). For further information, see the [Supported Code Changes](/visualstudio/debugger/supported-code-changes-cpp).
