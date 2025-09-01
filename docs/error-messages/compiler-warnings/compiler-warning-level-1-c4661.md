@@ -10,6 +10,8 @@ ms.assetid: 603bb8b7-356d-4eef-924b-64d769bac5bd
 
 > 'identifier' : no suitable definition provided for explicit template instantiation request
 
+## Remarks
+
 A member of the template class is not defined.
 
 ## Example

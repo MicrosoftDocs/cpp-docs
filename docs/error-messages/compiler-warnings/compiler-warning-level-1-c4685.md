@@ -10,4 +10,6 @@ ms.assetid: 16e859b8-a8e8-4a0d-a1d0-37ec4e59a9d7
 
 > expecting '> >' found '>>' when parsing template parameters
 
+## Remarks
+
 A template definition was not terminated correctly.

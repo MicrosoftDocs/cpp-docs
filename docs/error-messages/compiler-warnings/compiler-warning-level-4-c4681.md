@@ -10,7 +10,11 @@ ms.assetid: a4e6d85f-3e21-4b45-a551-c23d3c554d3f
 
 > 'class' : coclass does not specify a default interface that is an event source
 
+## Remarks
+
 A [source](../../windows/attributes/source-cpp.md) interface was not specified for a class.
+
+## Example
 
 The following sample generates C4681:
 

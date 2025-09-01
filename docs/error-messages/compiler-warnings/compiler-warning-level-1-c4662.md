@@ -10,6 +10,8 @@ ms.assetid: 7efda273-d04a-47b7-ad65-ff1ff94b5ffc
 
 > explicit instantiation; template-class 'identifier1' has no definition from which to specialize 'identifier2'
 
+## Remarks
+
 The specified template-class was declared, but not defined.
 
 ## Example

@@ -10,4 +10,6 @@ ms.assetid: 3ae1b9cd-e53e-41e7-a330-7238b7aa0679
 
 > 'identifier1' : ambiguous. First seen as 'identifier2'
 
+## Remarks
+
 The specified object to be thrown in a **`try`** block is ambiguous. The object cannot be disambiguated if it is thrown.

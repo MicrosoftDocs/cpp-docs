@@ -10,6 +10,8 @@ ms.assetid: f6fb3acc-8228-491a-9c30-ce302d8a9c75
 
 > 'function': signature of non-private member contains assembly private native type 'native_type'
 
+## Remarks
+
 A type that is visible outside the assembly contains a member function whose signature contains a native type that is not visible outside the assembly. Therefore, the member function should not be called if its containing type is instantiated outside the assembly.
 
 For more information, see [Type visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility).

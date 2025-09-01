@@ -10,6 +10,8 @@ ms.assetid: 5ca122bb-34f3-43ee-a21f-95802cd515f7
 
 > '*class*': a sealed abstract class cannot have a base-class '*base_class*'
 
+## Remarks
+
 An abstract and sealed class cannot inherit from a reference type; a sealed and abstract class can neither implement the base class functions nor allow itself to be used as a base class.
 
 For more information, see [abstract](../../extensions/abstract-cpp-component-extensions.md), [sealed](../../extensions/sealed-cpp-component-extensions.md), and [Classes and Structs](../../extensions/classes-and-structs-cpp-component-extensions.md).

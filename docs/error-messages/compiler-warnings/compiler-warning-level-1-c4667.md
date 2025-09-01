@@ -10,7 +10,11 @@ ms.assetid: 5d2b7fe0-4f0e-4cd6-b432-ca02c3d194ab
 
 > 'function' : no function template defined that matches forced instantiation
 
+## Remarks
+
 You cannot instantiate a function template that has not been declared.
+
+## Example
 
 The following sample will cause C4667:
 

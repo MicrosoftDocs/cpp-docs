@@ -10,7 +10,11 @@ ms.assetid: e95f1a83-2784-4b05-ae94-12148e056e26
 
 > 'attribute' : WARNING!! attribute may cause invalid code generation: use with caution
 
+## Remarks
+
 You used an attribute that should not commonly be used.
+
+## Example
 
 The following sample generates C4684:
 
