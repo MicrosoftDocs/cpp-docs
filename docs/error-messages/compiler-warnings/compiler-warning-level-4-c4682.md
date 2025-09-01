@@ -8,7 +8,7 @@ ms.assetid: 858ea157-1244-4a61-85df-97b3de43d418
 ---
 # Compiler Warning (level 4) C4682
 
-'parameter' : no directional parameter attribute specified, defaulting to [in]
+> 'parameter' : no directional parameter attribute specified, defaulting to [in]
 
 A method on a parameter in an attributed interface does not have one of the directional attributes: [in](../../windows/attributes/in-cpp.md) or [out](../../windows/attributes/out-cpp.md). The parameter defaults to in.
 

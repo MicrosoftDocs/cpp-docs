@@ -8,7 +8,7 @@ ms.assetid: 97730679-e3dc-44d4-b2a8-aa65badc17f2
 ---
 # Compiler Warning (level 1) C4669
 
-'cast' : unsafe conversion: 'class' is a managed or WinRT type object
+> 'cast' : unsafe conversion: 'class' is a managed or WinRT type object
 
 A cast contains a Windows Runtime or managed type. The compiler completes the cast by performing a bit-wise copy of one pointer to the other, but provides no other checking. To resolve this warning, do not cast classes containing managed members or Windows Runtime types.
 

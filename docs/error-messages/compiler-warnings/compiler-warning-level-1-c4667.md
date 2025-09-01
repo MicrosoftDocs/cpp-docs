@@ -8,7 +8,7 @@ ms.assetid: 5d2b7fe0-4f0e-4cd6-b432-ca02c3d194ab
 ---
 # Compiler Warning (level 1) C4667
 
-'function' : no function template defined that matches forced instantiation
+> 'function' : no function template defined that matches forced instantiation
 
 You cannot instantiate a function template that has not been declared.
 

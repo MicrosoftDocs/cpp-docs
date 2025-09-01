@@ -8,7 +8,7 @@ ms.assetid: 638dae0b-b82c-4865-9599-72630827ca09
 ---
 # Compiler Warning (level 1) C4674
 
-'method' should be declared 'static' and have exactly one parameter
+> 'method' should be declared 'static' and have exactly one parameter
 
 The signature of a conversion operator was not correct. The method is not considered a user-defined conversion. For more information on defining operators, see [User-Defined Operators (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md) and [User-Defined Conversions (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md).
 

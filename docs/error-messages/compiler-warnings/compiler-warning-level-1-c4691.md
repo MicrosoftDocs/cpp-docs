@@ -8,7 +8,7 @@ ms.assetid: 722133d9-87f6-46c1-9e86-9825453d6999
 ---
 # Compiler Warning (level 1) C4691
 
-'type' : type referenced was expected in unreferenced assembly 'file', type defined in current translation unit used instead
+> 'type' : type referenced was expected in unreferenced assembly 'file', type defined in current translation unit used instead
 
 The metadata file containing the original type definition is not referenced, and the compiler is using a local type definition.
 

@@ -8,7 +8,7 @@ ms.assetid: 0c588f34-595d-4e5c-9470-8723fca2cc06
 ---
 # Compiler Warning (level 1) C4678
 
-base class 'base_type' is less accessible than 'derived_type'
+> base class 'base_type' is less accessible than 'derived_type'
 
 A public type derives from a private type. If the public type is instantiated in a referenced assembly, members of the private base type will not be accessible.
 

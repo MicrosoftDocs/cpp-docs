@@ -8,7 +8,7 @@ ms.assetid: f6fb3acc-8228-491a-9c30-ce302d8a9c75
 ---
 # Compiler Warning (level 1) C4692
 
-'function': signature of non-private member contains assembly private native type 'native_type'
+> 'function': signature of non-private member contains assembly private native type 'native_type'
 
 A type that is visible outside the assembly contains a member function whose signature contains a native type that is not visible outside the assembly. Therefore, the member function should not be called if its containing type is instantiated outside the assembly.
 

@@ -8,7 +8,7 @@ ms.assetid: c6585460-bc4a-4a15-9242-4cbfce53c961
 ---
 # Compiler Warning (level 4) C4668
 
-'symbol' is not defined as a preprocessor macro, replacing with '0' for 'directives'
+> 'symbol' is not defined as a preprocessor macro, replacing with '0' for 'directives'
 
 A symbol that was not defined was used with a preprocessor directive. The symbol will evaluate to false. To define a symbol, you can use either the [#define directive](../../preprocessor/hash-define-directive-c-cpp.md) or [/D](../../build/reference/d-preprocessor-definitions.md) compiler option.
 
