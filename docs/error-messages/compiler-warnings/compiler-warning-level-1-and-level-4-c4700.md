@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1 and level 4) C4700"
 title: "Compiler Warning (level 1 and level 4) C4700"
+description: "Learn more about: Compiler Warning (level 1 and level 4) C4700"
 ms.date: 08/30/2022
 f1_keywords: ["C4700"]
 helpviewer_keywords: ["C4700"]
-ms.assetid: 2da0deb4-77dd-4b05-98d3-b78d74ac4ca7
 ---
 # Compiler Warning (level 1 and level 4) C4700
 

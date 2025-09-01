@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4674"
 title: "Compiler Warning (level 1) C4674"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4674"
+ms.date: 11/04/2016
 f1_keywords: ["C4674"]
 helpviewer_keywords: ["C4674"]
-ms.assetid: 638dae0b-b82c-4865-9599-72630827ca09
 ---
 # Compiler Warning (level 1) C4674
 

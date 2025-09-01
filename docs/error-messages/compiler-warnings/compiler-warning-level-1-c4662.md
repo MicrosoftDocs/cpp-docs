@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4662"
 title: "Compiler Warning (level 1) C4662"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4662"
+ms.date: 11/04/2016
 f1_keywords: ["C4662"]
 helpviewer_keywords: ["C4662"]
-ms.assetid: 7efda273-d04a-47b7-ad65-ff1ff94b5ffc
 ---
 # Compiler Warning (level 1) C4662
 

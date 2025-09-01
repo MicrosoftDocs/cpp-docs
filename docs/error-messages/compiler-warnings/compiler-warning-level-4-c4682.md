@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4682"
 title: "Compiler Warning (level 4) C4682"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4682"
+ms.date: 11/04/2016
 f1_keywords: ["C4682"]
 helpviewer_keywords: ["C4682"]
-ms.assetid: 858ea157-1244-4a61-85df-97b3de43d418
 ---
 # Compiler Warning (level 4) C4682
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4680"
 title: "Compiler Warning (level 4) C4680"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4680"
+ms.date: 11/04/2016
 f1_keywords: ["C4680"]
 helpviewer_keywords: ["C4680"]
-ms.assetid: 6e043f4c-c601-4b77-8130-920cff1d912e
 ---
 # Compiler Warning (level 4) C4680
 

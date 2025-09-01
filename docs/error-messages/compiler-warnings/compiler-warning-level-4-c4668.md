@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4668"
 title: "Compiler Warning (level 4) C4668"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4668"
+ms.date: 11/04/2016
 f1_keywords: ["C4668"]
 helpviewer_keywords: ["C4668"]
-ms.assetid: c6585460-bc4a-4a15-9242-4cbfce53c961
 ---
 # Compiler Warning (level 4) C4668
 

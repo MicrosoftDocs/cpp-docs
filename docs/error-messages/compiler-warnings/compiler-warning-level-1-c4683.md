@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4683"
 title: "Compiler Warning (level 1) C4683"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 1) C4683"
+ms.date: 08/27/2018
 f1_keywords: ["C4683"]
 helpviewer_keywords: ["C4683"]
-ms.assetid: e6e77364-dba1-46dd-ae1d-03da23070bce
 ---
 # Compiler Warning (level 1) C4683
 

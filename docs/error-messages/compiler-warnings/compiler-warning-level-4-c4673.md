@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4673"
 title: "Compiler Warning (level 4) C4673"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4673"
+ms.date: 11/04/2016
 f1_keywords: ["C4673"]
 helpviewer_keywords: ["C4673"]
-ms.assetid: 95626ec6-f05b-43c7-8b9a-a60a6f98dd30
 ---
 # Compiler Warning (level 4) C4673
 

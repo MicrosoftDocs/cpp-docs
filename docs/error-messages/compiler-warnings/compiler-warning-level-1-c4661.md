@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4661"
 title: "Compiler Warning (level 1) C4661"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4661"
+ms.date: 11/04/2016
 f1_keywords: ["C4661"]
 helpviewer_keywords: ["C4661"]
-ms.assetid: 603bb8b7-356d-4eef-924b-64d769bac5bd
 ---
 # Compiler Warning (level 1) C4661
 

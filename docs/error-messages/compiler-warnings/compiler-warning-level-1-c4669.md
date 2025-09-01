@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4669"
 title: "Compiler Warning (level 1) C4669"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4669"
+ms.date: 11/04/2016
 f1_keywords: ["C4669"]
 helpviewer_keywords: ["C4669"]
-ms.assetid: 97730679-e3dc-44d4-b2a8-aa65badc17f2
 ---
 # Compiler Warning (level 1) C4669
 

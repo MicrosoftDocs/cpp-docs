@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4694"
 title: "Compiler Warning C4694"
-ms.date: "10/25/2017"
+description: "Learn more about: Compiler Warning C4694"
+ms.date: 10/25/2017
 f1_keywords: ["C4694"]
 helpviewer_keywords: ["C4694"]
-ms.assetid: 5ca122bb-34f3-43ee-a21f-95802cd515f7
 ---
 # Compiler Warning C4694
 

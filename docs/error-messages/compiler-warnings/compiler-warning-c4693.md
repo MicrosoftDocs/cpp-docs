@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4693"
 title: "Compiler Warning C4693"
-ms.date: "10/25/2017"
+description: "Learn more about: Compiler Warning C4693"
+ms.date: 10/25/2017
 f1_keywords: ["C4693"]
 helpviewer_keywords: ["C4693"]
-ms.assetid: 72d8db01-5e6f-4794-8731-76107e8f064a
 ---
 # Compiler Warning C4693
 

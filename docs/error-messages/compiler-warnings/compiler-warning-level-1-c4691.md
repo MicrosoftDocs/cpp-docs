@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4691"
 title: "Compiler Warning (level 1) C4691"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4691"
+ms.date: 11/04/2016
 f1_keywords: ["C4691"]
 helpviewer_keywords: ["C4691"]
-ms.assetid: 722133d9-87f6-46c1-9e86-9825453d6999
 ---
 # Compiler Warning (level 1) C4691
 

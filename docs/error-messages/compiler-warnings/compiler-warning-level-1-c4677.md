@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4677"
 title: "Compiler Warning (level 1) C4677"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4677"
+ms.date: 11/04/2016
 f1_keywords: ["C4677"]
 helpviewer_keywords: ["C4677"]
-ms.assetid: a8d656a1-e2ff-4f8b-9028-201765131026
 ---
 # Compiler Warning (level 1) C4677
 

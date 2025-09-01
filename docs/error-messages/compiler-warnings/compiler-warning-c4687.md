@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4687"
 title: "Compiler Warning C4687"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4687"
+ms.date: 11/04/2016
 f1_keywords: ["C4687"]
 helpviewer_keywords: ["C4687"]
-ms.assetid: 2f28e0b1-7358-4c88-bd70-aad8f0aa004c
 ---
 # Compiler Warning C4687
 
