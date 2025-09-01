@@ -20,7 +20,7 @@ However, unexpected behavior can occur if the compiler uses a definition that is
 
 ## Example
 
-This sample contains the original type definition.
+This example contains the original type definition.
 
 ```cpp
 // C4691_a.cpp
@@ -28,7 +28,7 @@ This sample contains the original type definition.
 public ref class Original_Type {};
 ```
 
-This sample references C4691_a.dll and declares a field of type Original_Type.
+This example references C4691_a.dll and declares a field of type Original_Type.
 
 ```cpp
 // C4691_b.cpp
@@ -40,7 +40,7 @@ public:
 };
 ```
 
-The following sample generates C4691.  Notice this sample contains a definition for Original_Type and does not reference C4691a.dll.
+The following example generates C4691.  Notice this example contains a definition for Original_Type and does not reference C4691a.dll.
 
 To resolve, reference the metadata file that contains the original type definition and remove the local declaration and definition.
 

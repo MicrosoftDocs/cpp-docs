@@ -16,7 +16,7 @@ The signature of a conversion operator was not correct. The method is not consid
 
 ## Example
 
-The following sample generates C4674.
+The following example generates C4674.
 
 ```cpp
 // C4674.cpp

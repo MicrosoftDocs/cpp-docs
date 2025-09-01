@@ -16,7 +16,7 @@ A [source](../../windows/attributes/source-cpp.md) interface was not specified f
 
 ## Example
 
-The following sample generates C4681:
+The following example generates C4681:
 
 ```cpp
 // C4681.cpp

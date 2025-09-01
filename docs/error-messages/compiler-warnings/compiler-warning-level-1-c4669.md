@@ -16,7 +16,7 @@ A cast contains a Windows Runtime or managed type. The compiler completes the ca
 
 ## Example
 
-The following sample generates C4669 and shows how to fix it:
+The following example generates C4669 and shows how to fix it:
 
 ```cpp
 // C4669.cpp

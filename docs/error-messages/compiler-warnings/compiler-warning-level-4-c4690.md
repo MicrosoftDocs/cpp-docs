@@ -16,7 +16,7 @@ The [emitidl](../../windows/attributes/emitidl.md) attribute was popped one more
 
 ## Example
 
-The following sample generates C4690. To fix this issue, make sure the attribute is popped exactly as many times as it is pushed.
+The following example generates C4690. To fix this issue, make sure the attribute is popped exactly as many times as it is pushed.
 
 ```cpp
 // C4690.cpp

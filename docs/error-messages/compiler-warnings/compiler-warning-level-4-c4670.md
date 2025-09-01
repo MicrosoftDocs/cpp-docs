@@ -16,7 +16,7 @@ The specified base class of an object to be thrown in a **`try`** block is not a
 
 ## Example
 
-The following sample generates C4670:
+The following example generates C4670:
 
 ```cpp
 // C4670.cpp

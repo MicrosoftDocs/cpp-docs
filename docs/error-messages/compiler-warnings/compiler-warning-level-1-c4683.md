@@ -24,7 +24,7 @@ The reason for the leak is that the out parameter will be set by more than one h
 
 ## Example
 
-The following sample generates C4683 and shows how to fix it:
+The following example generates C4683 and shows how to fix it:
 
 ```cpp
 // C4683.cpp

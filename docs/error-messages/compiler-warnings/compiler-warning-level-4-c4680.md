@@ -16,7 +16,7 @@ A [default](../../windows/attributes/default-cpp.md) interface was not specified
 
 ## Example
 
-The following sample generates C4680:
+The following example generates C4680:
 
 ```cpp
 // C4680.cpp

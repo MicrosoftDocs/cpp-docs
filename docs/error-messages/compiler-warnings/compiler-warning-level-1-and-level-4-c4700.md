@@ -20,7 +20,7 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Example
 
-This sample generates C4700 when variables `t`, `u`, and `v` are used before they're initialized, and shows the kind of garbage value that can result. Variables `x`, `y`, and `z` don't cause the warning, because they're initialized before use:
+This example generates C4700 when variables `t`, `u`, and `v` are used before they're initialized, and shows the kind of garbage value that can result. Variables `x`, `y`, and `z` don't cause the warning, because they're initialized before use:
 
 ```cpp
 // c4700.cpp

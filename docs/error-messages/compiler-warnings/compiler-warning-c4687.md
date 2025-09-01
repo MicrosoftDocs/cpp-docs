@@ -20,7 +20,7 @@ C4687 is issued as an error by default. You can suppress C4687 with the [warning
 
 ## Example
 
-The following sample generates C4687.
+The following example generates C4687.
 
 ```cpp
 // C4687.cpp

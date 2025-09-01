@@ -16,7 +16,7 @@ You cannot instantiate a function template that has not been declared.
 
 ## Example
 
-The following sample will cause C4667:
+The following example will cause C4667:
 
 ```cpp
 // C4667a.cpp

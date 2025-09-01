@@ -18,7 +18,7 @@ This warning is automatically promoted to an error. If you wish to modify this b
 
 ## Example
 
-The following sample generates C4693.
+The following example generates C4693.
 
 ```cpp
 // C4693.cpp

@@ -16,7 +16,7 @@ You used an attribute that should not commonly be used.
 
 ## Example
 
-The following sample generates C4684:
+The following example generates C4684:
 
 ```cpp
 // C4684.cpp

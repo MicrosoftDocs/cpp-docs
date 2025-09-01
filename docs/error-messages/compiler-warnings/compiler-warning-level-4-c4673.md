@@ -16,7 +16,7 @@ A throw object cannot be handled in the **`catch`** block. Each type that cannot
 
 ## Example
 
-The following sample generates C4673:
+The following example generates C4673:
 
 ```cpp
 // C4673.cpp

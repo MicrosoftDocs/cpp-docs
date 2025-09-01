@@ -16,7 +16,7 @@ A type that has public accessibility outside the assembly uses a type that has p
 
 ## Example
 
-The following sample generates C4677.
+The following example generates C4677.
 
 ```cpp
 // C4677.cpp
