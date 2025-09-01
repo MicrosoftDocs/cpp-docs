@@ -15,6 +15,8 @@ A member of the template class is not defined.
 
 ## Example
 
+The following example generates C4661:
+
 ```cpp
 // C4661.cpp
 // compile with: /W1 /LD

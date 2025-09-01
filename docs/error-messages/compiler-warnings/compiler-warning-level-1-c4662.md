@@ -15,6 +15,8 @@ The specified template-class was declared, but not defined.
 
 ## Example
 
+The following example generates C4662:
+
 ```cpp
 // C4662.cpp
 // compile with: /W1 /LD
