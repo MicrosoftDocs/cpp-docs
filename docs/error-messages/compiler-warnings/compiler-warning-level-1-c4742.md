@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (Level 1) C4742"
 title: "Compiler Warning (Level 1) C4742"
+description: "Learn more about: Compiler Warning (Level 1) C4742"
 ms.date: 07/22/2020
 f1_keywords: ["C4742"]
 helpviewer_keywords: ["C4742"]
-ms.assetid: e520881d-1eeb-48b1-9df0-8017ee8ba076
 ---
 # Compiler Warning (Level 1) C4742
 

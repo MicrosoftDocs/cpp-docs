@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4710"
 title: "Compiler Warning (level 4) C4710"
+description: "Learn more about: Compiler Warning (level 4) C4710"
 ms.date: 10/19/2021
 f1_keywords: ["C4710"]
 helpviewer_keywords: ["C4710"]
-ms.assetid: 76381ec7-3fc1-4bee-9a0a-c2c8307b92e2
 ---
 # Compiler Warning (level 4) C4710
 

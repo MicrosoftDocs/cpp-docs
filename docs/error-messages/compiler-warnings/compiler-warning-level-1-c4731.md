@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (Level 1) C4731"
 title: "Compiler Warning (Level 1) C4731"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (Level 1) C4731"
+ms.date: 11/04/2016
 f1_keywords: ["C4731"]
 helpviewer_keywords: ["C4731"]
-ms.assetid: 5658c24c-3e6f-4505-835b-1fb92d47cab0
 ---
 # Compiler Warning (Level 1) C4731
 

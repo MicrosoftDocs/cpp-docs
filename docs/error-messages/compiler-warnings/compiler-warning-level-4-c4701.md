@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4701"
 title: "Compiler Warning (level 4) C4701"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4701"
+ms.date: 11/04/2016
 f1_keywords: ["C4701"]
 helpviewer_keywords: ["C4701"]
-ms.assetid: d7c76c66-1f3f-4d3c-abe4-5d94c84a5a1f
 ---
 # Compiler Warning (level 4) C4701
 

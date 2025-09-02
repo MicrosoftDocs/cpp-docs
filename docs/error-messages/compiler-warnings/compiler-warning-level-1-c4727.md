@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4727"
 title: "Compiler Warning (level 1) C4727"
-ms.date: "08/19/2019"
+description: "Learn more about: Compiler Warning (level 1) C4727"
+ms.date: 08/19/2019
 f1_keywords: ["C4727"]
 helpviewer_keywords: ["C4727"]
-ms.assetid: 991b0087-3a50-40f5-9cdb-cdc367cd472c
 ---
 # Compiler Warning (level 1) C4727
 

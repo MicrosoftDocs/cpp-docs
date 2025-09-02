@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4714"
 title: "Compiler Warning (level 4) C4714"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4714"
+ms.date: 11/04/2016
 f1_keywords: ["C4714"]
 helpviewer_keywords: ["C4714"]
-ms.assetid: 22c7fd0c-899d-4e9b-95f3-725b2c49fb46
 ---
 # Compiler Warning (level 4) C4714
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (Level 1) C4739"
 title: "Compiler Warning (Level 1) C4739"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (Level 1) C4739"
+ms.date: 11/04/2016
 f1_keywords: ["C4739"]
 helpviewer_keywords: ["C4739"]
-ms.assetid: 600873b3-7c85-4cd4-944e-cd8e01bfcbb0
 ---
 # Compiler Warning (Level 1) C4739
 

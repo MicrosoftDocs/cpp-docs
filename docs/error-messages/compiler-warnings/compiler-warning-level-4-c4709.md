@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4709"
 title: "Compiler Warning (level 4) C4709"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4709"
+ms.date: 11/04/2016
 f1_keywords: ["C4709"]
 helpviewer_keywords: ["C4709"]
-ms.assetid: 8abfdd45-8c70-4c27-b0fb-ca0c3f0fccf9
 ---
 # Compiler Warning (level 4) C4709
 

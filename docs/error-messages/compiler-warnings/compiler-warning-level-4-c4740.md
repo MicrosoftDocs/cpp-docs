@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (Level 4) C4740"
 title: "Compiler Warning (Level 4) C4740"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (Level 4) C4740"
+ms.date: 11/04/2016
 f1_keywords: ["C4740"]
 helpviewer_keywords: ["C4740"]
-ms.assetid: 85528969-966a-44b4-8a2f-971704c64477
 ---
 # Compiler Warning (Level 4) C4740
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (Level 1) C4743"
 title: "Compiler Warning (Level 1) C4743"
+description: "Learn more about: Compiler Warning (Level 1) C4743"
 ms.date: 06/16/2022
 f1_keywords: ["C4743"]
 helpviewer_keywords: ["C4743"]
-ms.assetid: 2ee76ea3-77f3-4c2f-9a57-0751823c89fd
 ---
 # Compiler Warning (Level 1) C4743
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (Level 3) C4738"
 title: "Compiler Warning (Level 3) C4738"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (Level 3) C4738"
+ms.date: 11/04/2016
 f1_keywords: ["C4738"]
 helpviewer_keywords: ["C4738"]
-ms.assetid: 9094895f-7eec-46c2-83d3-249b761d585e
 ---
 # Compiler Warning (Level 3) C4738
 

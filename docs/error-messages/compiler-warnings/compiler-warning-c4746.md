@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4746"
 title: "Compiler Warning C4746"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4746"
+ms.date: 11/04/2016
 f1_keywords: ["C4746"]
 helpviewer_keywords: ["C4746"]
-ms.assetid: 5e79ab46-6031-499a-a986-716c866b6c0e
 ---
 # Compiler Warning C4746
 

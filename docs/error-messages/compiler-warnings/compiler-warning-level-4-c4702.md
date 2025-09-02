@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4702"
 title: "Compiler Warning (level 4) C4702"
+description: "Learn more about: Compiler Warning (level 4) C4702"
 ms.date: 09/20/2021
 f1_keywords: ["C4702"]
 helpviewer_keywords: ["C4702"]
-ms.assetid: d8198c1e-8762-42a6-9e6b-cb568b7a1686
 ---
 # Compiler Warning (level 4) C4702
 

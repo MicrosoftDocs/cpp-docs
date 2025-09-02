@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4718"
 title: "Compiler Warning (level 4) C4718"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4718"
+ms.date: 11/04/2016
 f1_keywords: ["C4718"]
 helpviewer_keywords: ["C4718"]
-ms.assetid: 29507f8a-b024-42c1-a3b8-f35d1f2641f3
 ---
 # Compiler Warning (level 4) C4718
 
