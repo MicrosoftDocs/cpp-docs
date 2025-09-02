@@ -16,7 +16,7 @@ A friend function in an inner class was not declared in the outer class.
 
 ## Example
 
-The following sample generates C4813:
+The following example generates C4813:
 
 ```cpp
 // C4813.cpp

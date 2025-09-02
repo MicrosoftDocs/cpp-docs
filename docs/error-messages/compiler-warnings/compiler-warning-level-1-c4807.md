@@ -16,7 +16,7 @@ This warning is generated when comparing a one-bit signed bit field to a **`bool
 
 ## Example
 
-The following sample generates C4807:
+The following example generates C4807:
 
 ```cpp
 // C4807.cpp

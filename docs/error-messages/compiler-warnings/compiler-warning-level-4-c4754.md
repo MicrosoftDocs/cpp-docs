@@ -18,7 +18,7 @@ Integer conversion rules are complex and there are many subtle pitfalls. As an a
 
 ## Examples
 
-This sample generates C4754:
+This example generates C4754:
 
 ```cpp
 // C4754a.cpp
@@ -54,7 +54,7 @@ unsigned long long x =
    (unsigned long long)a + (unsigned long long)b;
 ```
 
-The next sample also generates C4754.
+The next example also generates C4754.
 
 ```cpp
 // C4754b.cpp

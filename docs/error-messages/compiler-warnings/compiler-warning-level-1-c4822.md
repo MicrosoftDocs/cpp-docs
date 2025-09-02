@@ -20,7 +20,7 @@ In Visual Studio 2019 and later, C4822 is an [off-by-default](../../preprocessor
 
 ## Example
 
-The following sample generates C4822:
+The following example generates C4822:
 
 ```cpp
 // C4822.cpp

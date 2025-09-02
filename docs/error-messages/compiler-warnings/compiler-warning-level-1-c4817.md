@@ -16,7 +16,7 @@ The wrong member access operator was used.
 
 ## Example
 
-The following sample generates C4817.
+The following example generates C4817.
 
 ```cpp
 // C4817.cpp

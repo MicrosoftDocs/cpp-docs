@@ -38,7 +38,7 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Examples
 
-The following sample generates C4789:
+The following example generates C4789:
 
 ```cpp
 // C4789.cpp
@@ -60,7 +60,7 @@ int main()
 }
 ```
 
-The following sample also generates C4789:
+The following example also generates C4789:
 
 ```cpp
 // C4789b.cpp

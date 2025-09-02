@@ -16,7 +16,7 @@ The compiler generated an exception while doing constant arithmetic during compi
 
 ## Example
 
-The following sample generates C4756:
+The following example generates C4756:
 
 ```cpp
 // C4756.cpp

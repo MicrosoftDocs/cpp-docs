@@ -16,7 +16,7 @@ An alignment greater than 16 was specified, but on some platforms, if the functi
 
 ## Example
 
-The following sample generates C4764:
+The following example generates C4764:
 
 ```cpp
 // C4764.cpp

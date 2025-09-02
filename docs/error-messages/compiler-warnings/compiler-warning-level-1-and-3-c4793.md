@@ -32,7 +32,7 @@ The following table lists all possible continuation messages.
 
 ## Examples
 
-The following sample generates C4793.
+The following example generates C4793.
 
 ```cpp
 // C4793.cpp
@@ -50,7 +50,7 @@ warning C4793: 'asmfunc' : function is compiled as native code:
         Inline native assembly ('__asm') is not supported in managed code
 ```
 
-The following sample generates C4793.
+The following example generates C4793.
 
 ```cpp
 // C4793_b.cpp

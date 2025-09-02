@@ -16,7 +16,7 @@ Certain functions, such as main, cannot take reference type parameters. While co
 
 ## Example
 
-The following sample generates C4829:
+The following example generates C4829:
 
 ```cpp
 // C4829.cpp

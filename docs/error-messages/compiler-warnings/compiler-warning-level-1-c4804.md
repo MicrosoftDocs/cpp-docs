@@ -16,7 +16,7 @@ This warning is for when you used a **`bool`** variable or value in an unexpecte
 
 ## Example
 
-The following sample generates C4804:
+The following example generates C4804:
 
 ```cpp
 // C4804.cpp

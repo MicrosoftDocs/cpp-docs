@@ -20,7 +20,7 @@ See [warning](../../preprocessor/warning.md) pragma for information on how to tu
 
 ## Example
 
-The following sample generates C4803.
+The following example generates C4803.
 
 ```cpp
 // C4803.cpp

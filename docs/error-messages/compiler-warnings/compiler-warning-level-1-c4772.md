@@ -53,7 +53,7 @@ library C4772bLib
 };
 ```
 
-The following sample generates C4772:
+The following example generates C4772:
 
 ```cpp
 // C4772.cpp

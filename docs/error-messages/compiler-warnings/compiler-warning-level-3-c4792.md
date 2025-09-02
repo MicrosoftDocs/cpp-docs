@@ -18,7 +18,7 @@ This warning cannot be resolved in code or by changing the way you compile. Use 
 
 ## Example
 
-The following sample generates C4792:
+The following example generates C4792:
 
 ```cpp
 // C4792.cpp

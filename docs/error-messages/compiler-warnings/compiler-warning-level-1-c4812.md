@@ -16,7 +16,7 @@ In the current release of Visual C++, the explicit constructor specialization is
 
 ## Example
 
-The following sample generates C4812:
+The following example generates C4812:
 
 ```cpp
 // C4812.cpp

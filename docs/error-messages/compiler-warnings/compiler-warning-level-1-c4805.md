@@ -16,7 +16,7 @@ This warning is generated for comparison operations between [bool](../../cpp/boo
 
 ## Example
 
-The following sample generates C4805:
+The following example generates C4805:
 
 ```cpp
 // C4805.cpp

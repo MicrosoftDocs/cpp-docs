@@ -30,7 +30,7 @@ This warning is off by default starting in Visual Studio 2019. Use __/w__*n*__48
 
 ## Example
 
-The following sample generates C4800 and shows how to fix it:
+The following example generates C4800 and shows how to fix it:
 
 ```cpp
 // C4800.cpp

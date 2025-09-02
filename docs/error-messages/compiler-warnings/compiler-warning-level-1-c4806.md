@@ -16,7 +16,7 @@ This message warns against code such as `b == 3`, where `b` has type **`bool`**.
 
 ## Example
 
-The following sample generates C4806:
+The following example generates C4806:
 
 ```cpp
 // C4806.cpp

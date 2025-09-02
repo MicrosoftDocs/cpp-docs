@@ -18,7 +18,7 @@ The .tls$*x* section will exist in the object file where [__declspec(thread)](..
 
 ## Example
 
-The following sample generates C4794:
+The following example generates C4794:
 
 ```cpp
 // C4794.cpp
