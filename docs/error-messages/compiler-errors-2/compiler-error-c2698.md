@@ -30,5 +30,5 @@ struct B {
 struct C : A, B {
    using A::x;
    using B::x;   // C2698
-}
+};
 ```

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: slice_array class"
 title: "slice_array class"
+description: "Learn more about: slice_array class"
 ms.date: 01/12/2022
 f1_keywords: ["valarray/std::slice_array"]
 helpviewer_keywords: ["slice_array class"]
-ms.assetid: a182d5f7-f35c-4e76-86f2-b5ac64ddc846
 ---
 # `slice_array` class
 
@@ -30,7 +29,7 @@ public:
     void operator<<=(const valarray<Type>& x) const;
     void operator>>=(const valarray<Type>& x) const;
     // The rest is private or implementation defined
-}
+};
 ```
 
 ## Remarks

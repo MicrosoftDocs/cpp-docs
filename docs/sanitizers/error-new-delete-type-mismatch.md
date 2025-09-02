@@ -48,7 +48,7 @@ To fix the example, add:
 ```cpp
 struct Base {
   virtual ~Base() = default;
-}
+};
 ```
 
 To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
