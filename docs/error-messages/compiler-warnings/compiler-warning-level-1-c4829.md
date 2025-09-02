@@ -10,7 +10,11 @@ ms.assetid: 4ffabe2b-2ddc-4c52-8564-d1355c93cfa6
 
 > Possibly incorrect parameters to function main. Consider 'intmain(Platform::Array\<Platform::String^>^ argv)'
 
+## Remarks
+
 Certain functions, such as main, cannot take reference type parameters. While compilation will succeed, the resulting image will probably not run.
+
+## Example
 
 The following sample generates C4829:
 

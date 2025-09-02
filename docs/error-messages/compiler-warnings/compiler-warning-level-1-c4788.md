@@ -10,11 +10,17 @@ ms.assetid: 47d75bda-f833-4bdd-93a0-a134df0cd303
 
 > 'identifier' : identifier was truncated to 'number' characters
 
+## Remarks
+
 The compiler limits the maximum length allowed for a function name. When the compiler generates funclets for EH/SEH code, it forms the funclet name by prepending the function name with some text, for example "__catch", "\__unwind", or another string.
 
 The resulting funclet name can be too long, and the compiler will truncate it and generate C4788.
 
-To resolve this warning, shorten the original function name. If the function is a C++ function template or method, use a typedef for part of the name. For example:
+To resolve this warning, shorten the original function name. If the function is a C++ function template or method, use a typedef for part of the name.
+
+## Example
+
+For example:
 
 ```cpp
 C1<x, y, z<T>>::C2<a,b,c>::f

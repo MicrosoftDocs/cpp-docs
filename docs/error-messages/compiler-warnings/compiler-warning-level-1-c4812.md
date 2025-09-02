@@ -10,7 +10,11 @@ ms.assetid: a7f5721f-2019-44de-ad62-ed30bac8b1f3
 
 > obsolete declaration style: please use 'new_syntax' instead
 
+## Remarks
+
 In the current release of Visual C++, the explicit constructor specialization is still supported, but it may not be supported in a future release.
+
+## Example
 
 The following sample generates C4812:
 

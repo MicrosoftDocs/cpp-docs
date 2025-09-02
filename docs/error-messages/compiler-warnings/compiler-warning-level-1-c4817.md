@@ -10,6 +10,8 @@ ms.assetid: a68f5486-6940-4934-9f93-bfd4d71f92a9
 
 > 'member' : illegal use of '.' to access this member; compiler replaced with '->'
 
+## Remarks
+
 The wrong member access operator was used.
 
 ## Example

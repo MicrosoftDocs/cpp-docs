@@ -10,7 +10,11 @@ ms.assetid: 5a16df83-6b82-4619-83bd-319af4ef1d1d
 
 > overflow in constant arithmetic
 
+## Remarks
+
 The compiler generated an exception while doing constant arithmetic during compilation.
+
+## Example
 
 The following sample generates C4756:
 

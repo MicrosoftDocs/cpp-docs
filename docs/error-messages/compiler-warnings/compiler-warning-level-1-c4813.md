@@ -10,7 +10,11 @@ ms.assetid: c30bf877-ab04-4fe4-897e-8162092426f0
 
 > 'function' : a friend function of a local class must have been previously declared
 
+## Remarks
+
 A friend function in an inner class was not declared in the outer class.
+
+## Example
 
 The following sample generates C4813:
 

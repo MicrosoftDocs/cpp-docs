@@ -10,9 +10,13 @@ ms.assetid: 17aa29f4-c287-49b8-bc43-8ed82ffed5ea
 
 > 'bytes' bytes padding added after construct 'member_name'
 
+## Remarks
+
 The type and order of elements caused the compiler to add padding to the end of a struct. See [align](../../cpp/align-cpp.md) for more information on padding in a struct.
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+
+## Example
 
 The following sample generates C4820:
 

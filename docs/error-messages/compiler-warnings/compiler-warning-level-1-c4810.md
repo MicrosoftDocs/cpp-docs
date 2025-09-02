@@ -10,7 +10,11 @@ ms.assetid: 39e2cae0-9c1c-4ac1-aaa0-5f661d06085b
 
 > value of pragma pack(show) == n
 
+## Remarks
+
 This warning is issued when you use the **show** option of the [pack](../../preprocessor/pack.md) pragma. *n* is the current pack value.
+
+## Example
 
 For example, the following code shows how the C4810 warning works with the pack pragma:
 

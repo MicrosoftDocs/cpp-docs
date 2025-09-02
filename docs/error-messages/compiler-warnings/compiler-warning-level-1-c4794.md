@@ -10,6 +10,8 @@ ms.assetid: badc9c36-fa1a-4fec-929b-7bfda7a7b79f
 
 > segment of thread local storage variable 'variable' changed from 'section name' to '.tls$'
 
+## Remarks
+
 You used [#pragma data_seg](../../preprocessor/data-seg.md) to put a tls variable in a section not starting with .tls$.
 
 The .tls$*x* section will exist in the object file where [__declspec(thread)](../../cpp/thread.md) variables are defined. A .tls section in the EXE or DLL will result from these sections.

@@ -10,6 +10,8 @@ ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
 
 > #import referenced a type from a missing type library; '*missing-type*' used as a placeholder
 
+## Remarks
+
 A type library was referenced with the [#import](../../preprocessor/hash-import-directive-cpp.md) directive. However, the type library contained a reference to another type library that was not referenced with `#import`. This other .tlb file was not found by the compiler.
 
 Note that the compiler will not find type libraries in different directories if you use the [/I (Additional Include Directories)](../../build/reference/i-additional-include-directories.md) compiler option to specify those directories. If you want the compiler to find type libraries in different directories, add those directories to the PATH environment variable.

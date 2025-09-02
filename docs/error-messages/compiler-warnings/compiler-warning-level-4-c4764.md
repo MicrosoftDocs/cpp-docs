@@ -10,6 +10,8 @@ ms.assetid: 7bd4296f-966b-484c-bf73-8dbc8e85b4a9
 
 > Cannot align catch objects to greater than 16 bytes
 
+## Remarks
+
 An alignment greater than 16 was specified, but on some platforms, if the function throws an exception, the stack will force an alignment of not greater than 16.
 
 ## Example

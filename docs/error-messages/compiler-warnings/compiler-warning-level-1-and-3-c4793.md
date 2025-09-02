@@ -30,7 +30,7 @@ The following table lists all possible continuation messages.
 |A non-__clrcall virtual function thunk must be compiled as native|A non-[__clrcall](../../cpp/clrcall.md) virtual function thunk must use an unmanaged address.|
 |A function using '_setjmp' must be compiled as native|The CLR must be able to control program execution. However, the [setjmp](../../cpp/using-setjmp-longjmp.md) function bypasses regular program execution by saving and restoring low-level information such as registers and execution state.|
 
-## Example
+## Examples
 
 The following sample generates C4793.
 

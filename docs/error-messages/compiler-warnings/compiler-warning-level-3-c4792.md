@@ -10,9 +10,13 @@ ms.assetid: c047ce69-a622-44e1-9425-d41aa9261c61
 
 > function 'function' declared using sysimport and referenced from native code; import library required to link
 
+## Remarks
+
 A native function that was imported into the program with DllImport was called from an unmanaged function. Therefore, you must link to the import library for the DLL.
 
 This warning cannot be resolved in code or by changing the way you compile. Use the [warning](../../preprocessor/warning.md) pragma to disable this warning.
+
+## Example
 
 The following sample generates C4792:
 

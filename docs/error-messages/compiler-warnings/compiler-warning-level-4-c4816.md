@@ -10,6 +10,8 @@ ms.assetid: 60f730ae-d942-4db9-ab97-41d4a874d8da
 
 > 'param' : parameter has a zero-sized array which will be truncated (unless the object is passed by reference)
 
+## Remarks
+
 A parameter to an object with a zero-size array was not passed by reference. The array will not get copied when the object is passed.
 
 ## Example
