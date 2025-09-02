@@ -16,7 +16,7 @@ Every path through a function contains a call to the function. Since there is no
 
 ## Example
 
-The following sample generates C4717:
+The following example generates C4717:
 
 ```cpp
 // C4717.cpp

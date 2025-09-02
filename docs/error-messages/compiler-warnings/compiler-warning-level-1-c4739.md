@@ -18,7 +18,7 @@ To resolve this warning, only assign a value to a variable whose size can accomm
 
 ## Example
 
-The following sample generates C4739:
+The following example generates C4739:
 
 ```cpp
 // C4739.cpp

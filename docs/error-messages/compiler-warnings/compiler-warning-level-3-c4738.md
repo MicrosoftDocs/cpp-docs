@@ -22,7 +22,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4738:
+The following example generates C4738:
 
 ```cpp
 // C4738.cpp

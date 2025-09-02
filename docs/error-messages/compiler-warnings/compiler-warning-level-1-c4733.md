@@ -18,7 +18,7 @@ To resolve this warning, either remove the FS:0 definition or turn off this warn
 
 ## Example
 
-The following sample generates C4733:
+The following example generates C4733:
 
 ```cpp
 // C4733.cpp

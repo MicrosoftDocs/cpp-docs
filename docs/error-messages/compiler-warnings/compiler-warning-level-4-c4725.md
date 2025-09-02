@@ -16,7 +16,7 @@ Your code contains an inline assembly instruction that may not produce accurate 
 
 ## Example
 
-The following sample generates C4725:
+The following example generates C4725:
 
 ```cpp
 // C4725.cpp

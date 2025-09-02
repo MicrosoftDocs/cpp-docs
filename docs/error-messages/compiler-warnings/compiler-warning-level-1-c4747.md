@@ -23,7 +23,7 @@ For more information, see [Initialization of Mixed Assemblies](../../dotnet/init
 
 ## Example
 
-The following sample generates C4747.
+The following example generates C4747.
 
 ```cpp
 // C4747.cpp

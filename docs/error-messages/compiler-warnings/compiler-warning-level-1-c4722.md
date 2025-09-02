@@ -17,7 +17,7 @@ To resolve, remove the function call that causes the destructor to not return.
 
 ## Example
 
-The following sample generates C4722:
+The following example generates C4722:
 
 ```cpp
 // C4722.cpp

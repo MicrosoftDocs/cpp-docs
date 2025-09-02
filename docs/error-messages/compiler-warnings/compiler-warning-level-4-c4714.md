@@ -32,7 +32,7 @@ In some cases, the compiler will not inline a particular function for mechanical
 
 ## Example
 
-The following sample generates C4714:
+The following example generates C4714:
 
 ```cpp
 // C4714.cpp

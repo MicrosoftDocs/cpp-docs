@@ -20,7 +20,7 @@ To resolve this warning, either use the same type definition or use different na
 
 ## Example
 
-The following sample generates C4743. To compile it, place both files in the same folder, then run this command in a developer command prompt:  
+The following example generates C4743. To compile it, place both files in the same folder, then run this command in a developer command prompt:  
 
 ```cmd
 cl /EHsc /W1 /GL /O2 C4743a.cpp C4743b.cpp

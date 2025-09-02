@@ -17,7 +17,7 @@ An assignment has a value (the value on the left side of the assignment) that ca
 
 ## Example
 
-The following sample generates C4706:
+The following example generates C4706:
 
 ```cpp
 // compile with: /W4

@@ -16,7 +16,7 @@ When there is a jump in to or out of an **`asm`** block, global optimizations ar
 
 ## Example
 
-The following sample generates C4740:
+The following example generates C4740:
 
 ```cpp
 // C4740.cpp

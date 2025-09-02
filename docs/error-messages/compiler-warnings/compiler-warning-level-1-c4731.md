@@ -16,7 +16,7 @@ A frame pointer register was modified. You must save and restore the register in
 
 ## Example
 
-The following sample generates C4731:
+The following example generates C4731:
 
 ```cpp
 // C4731.cpp

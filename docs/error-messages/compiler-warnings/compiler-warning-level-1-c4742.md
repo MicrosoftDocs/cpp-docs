@@ -32,7 +32,7 @@ struct X {
 } global;
 ```
 
-The following sample generates C4742.
+The following example generates C4742.
 
 ```c
 // C4742b.c

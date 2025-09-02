@@ -18,7 +18,7 @@ To address this warning, remove the unreachable code or assure that all source c
 
 ## Examples
 
-The following sample generates C4702. To fix it, remove the unreachable code.
+The following example generates C4702. To fix it, remove the unreachable code.
 
 ```cpp
 // C4702.cpp
@@ -35,7 +35,7 @@ Error C4702 can occur in some versions of the compiler when you compile using th
 
 For more information, see [`/EH` (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md).
 
-The following sample generates C4702:
+The following example generates C4702:
 
 ```cpp
 // C4702b.cpp

@@ -22,7 +22,7 @@ This warning is automatically promoted to an error. If you wish to modify this b
 
 ## Example
 
-The following sample generates C4716:
+The following example generates C4716:
 
 ```cpp
 // C4716.cpp

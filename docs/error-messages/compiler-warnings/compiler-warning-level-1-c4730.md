@@ -18,7 +18,7 @@ To safely use **`__m64`** types and floating-point types in the same function, e
 
 ## Example
 
-The following sample generates C4730:
+The following example generates C4730:
 
 ```cpp
 // C4730.cpp
