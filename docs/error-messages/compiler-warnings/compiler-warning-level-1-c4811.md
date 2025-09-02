@@ -8,6 +8,6 @@ ms.assetid: fbd79351-3dc1-45cf-b5b3-411f48c1590f
 ---
 # Compiler Warning (level 1) C4811
 
-value of pragma conform(forScope, show) == value
+> value of pragma conform(forScope, show) == value
 
 This warning is issued when you use the **show** option of the [conform](../../preprocessor/conform.md) pragma. *value* is the current conform value.

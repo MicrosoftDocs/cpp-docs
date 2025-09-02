@@ -8,7 +8,7 @@ ms.assetid: c047ce69-a622-44e1-9425-d41aa9261c61
 ---
 # Compiler Warning (level 3) C4792
 
-function 'function' declared using sysimport and referenced from native code; import library required to link
+> function 'function' declared using sysimport and referenced from native code; import library required to link
 
 A native function that was imported into the program with DllImport was called from an unmanaged function. Therefore, you must link to the import library for the DLL.
 

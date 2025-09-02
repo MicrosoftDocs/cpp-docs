@@ -8,7 +8,7 @@ ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
 ---
 # Compiler Warning (level 4) C4754
 
-Conversion rules for arithmetic operations in a comparison mean that one branch cannot be executed.
+> Conversion rules for arithmetic operations in a comparison mean that one branch cannot be executed.
 
 The C4754 warning is issued because the result of the comparison is always the same. This indicates that one of the branches of the condition is never executed, most likely because the associated integer expression is incorrect. This code defect often occurs in incorrect integer overflow checks on 64-bit architectures.
 

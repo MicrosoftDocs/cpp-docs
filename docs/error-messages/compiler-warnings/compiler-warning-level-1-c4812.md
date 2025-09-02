@@ -8,7 +8,7 @@ ms.assetid: a7f5721f-2019-44de-ad62-ed30bac8b1f3
 ---
 # Compiler Warning (level 1) C4812
 
-obsolete declaration style: please use 'new_syntax' instead
+> obsolete declaration style: please use 'new_syntax' instead
 
 In the current release of Visual C++, the explicit constructor specialization is still supported, but it may not be supported in a future release.
 

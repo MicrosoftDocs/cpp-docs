@@ -8,7 +8,7 @@ ms.assetid: 5a16df83-6b82-4619-83bd-319af4ef1d1d
 ---
 # Compiler Warning (level 2) C4756
 
-overflow in constant arithmetic
+> overflow in constant arithmetic
 
 The compiler generated an exception while doing constant arithmetic during compilation.
 

@@ -8,7 +8,7 @@ ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
 ---
 # Compiler Warning (level 1) C4772
 
-> \#import referenced a type from a missing type library; '*missing-type*' used as a placeholder
+> #import referenced a type from a missing type library; '*missing-type*' used as a placeholder
 
 A type library was referenced with the [#import](../../preprocessor/hash-import-directive-cpp.md) directive. However, the type library contained a reference to another type library that was not referenced with `#import`. This other .tlb file was not found by the compiler.
 

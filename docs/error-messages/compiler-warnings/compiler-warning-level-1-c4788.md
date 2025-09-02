@@ -8,7 +8,7 @@ ms.assetid: 47d75bda-f833-4bdd-93a0-a134df0cd303
 ---
 # Compiler Warning (Level 1) C4788
 
-'identifier' : identifier was truncated to 'number' characters
+> 'identifier' : identifier was truncated to 'number' characters
 
 The compiler limits the maximum length allowed for a function name. When the compiler generates funclets for EH/SEH code, it forms the funclet name by prepending the function name with some text, for example "__catch", "\__unwind", or another string.
 

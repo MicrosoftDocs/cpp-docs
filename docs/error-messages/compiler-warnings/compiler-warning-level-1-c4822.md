@@ -8,7 +8,7 @@ ms.assetid: 0f231a30-2eb0-4722-aaa0-e2d19d3e7eea
 ---
 # Compiler Warning (level 1) C4822
 
-'member' : local class member function does not have a body
+> 'member' : local class member function does not have a body
 
 ## Remarks
 

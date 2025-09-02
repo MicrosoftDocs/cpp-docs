@@ -8,7 +8,7 @@ ms.assetid: badc9c36-fa1a-4fec-929b-7bfda7a7b79f
 ---
 # Compiler Warning (level 1) C4794
 
-segment of thread local storage variable 'variable' changed from 'section name' to '.tls$'
+> segment of thread local storage variable 'variable' changed from 'section name' to '.tls$'
 
 You used [#pragma data_seg](../../preprocessor/data-seg.md) to put a tls variable in a section not starting with .tls$.
 

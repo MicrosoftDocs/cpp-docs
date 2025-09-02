@@ -8,7 +8,7 @@ ms.assetid: c30bf877-ab04-4fe4-897e-8162092426f0
 ---
 # Compiler Warning (level 1) C4813
 
-'function' : a friend function of a local class must have been previously declared
+> 'function' : a friend function of a local class must have been previously declared
 
 A friend function in an inner class was not declared in the outer class.
 
