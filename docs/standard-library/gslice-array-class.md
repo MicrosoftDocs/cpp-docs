@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: gslice_array class"
 title: "gslice_array class"
+description: "Learn more about: gslice_array class"
 ms.date: 01/12/2022
 f1_keywords: ["valarray/std::gslice_array"]
 helpviewer_keywords: ["gslice_array class"]
-ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75
 ---
 # `gslice_array` class
 
