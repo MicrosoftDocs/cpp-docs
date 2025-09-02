@@ -8,7 +8,7 @@ ms.assetid: d95ecfe5-870f-461f-a746-7913af98414b
 ---
 # Compiler Warning (level 1) C4716
 
-'function' must return a value
+> 'function' must return a value
 
 The given function did not return a value.
 

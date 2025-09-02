@@ -8,7 +8,7 @@ ms.assetid: 11303e3f-162b-4b19-970a-479686123a68
 ---
 # Compiler Warning (Level 1) C4730
 
-'main' : mixing _m64 and floating point expressions may result in incorrect code
+> 'main' : mixing _m64 and floating point expressions may result in incorrect code
 
 A function uses [__m64](../../cpp/m64.md) and **`float`**/**`double`** types. Because the MMX and floating-point registers share the same physical register space (cannot be used simultaneously), using **`__m64`** and **`float`**/**`double`** types in the same function can result in data corruption, possibly causing an exception.
 

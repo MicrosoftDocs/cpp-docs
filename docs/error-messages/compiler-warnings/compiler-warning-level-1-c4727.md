@@ -8,7 +8,7 @@ ms.assetid: 991b0087-3a50-40f5-9cdb-cdc367cd472c
 ---
 # Compiler Warning (level 1) C4727
 
-"PCH named pch_file with same timestamp found in obj_file_1 and obj_file_2.  Using first PCH.
+> "PCH named pch_file with same timestamp found in obj_file_1 and obj_file_2.  Using first PCH.
 
 > [!NOTE]
 > In Visual Studio 2017 and earlier, the precompiled header is called *stdafx.h* by default, and in Visual Studio 2019 and later, it is called *pch.h* by default.

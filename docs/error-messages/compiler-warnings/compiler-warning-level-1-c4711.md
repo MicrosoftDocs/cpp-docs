@@ -8,7 +8,7 @@ ms.assetid: 270506ab-fead-4328-b714-2978113be238
 ---
 # Compiler Warning (level 1) C4711
 
-function 'function' selected for inline expansion
+> function 'function' selected for inline expansion
 
 The compiler performed inlining on the given function, although it was not marked for inlining.
 

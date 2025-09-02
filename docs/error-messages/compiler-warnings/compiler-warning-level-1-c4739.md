@@ -8,7 +8,7 @@ ms.assetid: 600873b3-7c85-4cd4-944e-cd8e01bfcbb0
 ---
 # Compiler Warning (Level 1) C4739
 
-reference to variable 'var' exceeds its storage space
+> reference to variable 'var' exceeds its storage space
 
 A value was assigned to a variable, but the value is greater than the size of the variable. Memory will be written beyond the variable's memory location, and data loss is possible.
 

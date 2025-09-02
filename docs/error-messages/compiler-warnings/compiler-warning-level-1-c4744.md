@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4744"]
 ---
 # Compiler Warning (Level 1) C4744
 
-'var' has different type in 'file1' and 'file2': 'type1' and 'type2'
+> 'var' has different type in 'file1' and 'file2': 'type1' and 'type2'
 
 An external variable referenced or defined in two files has different types in those files.  To resolve, either make the type definitions the same, or change variable name in one of the files.
 

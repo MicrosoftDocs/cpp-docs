@@ -8,7 +8,7 @@ ms.assetid: 07669d14-3fd8-4a43-94bc-b61c50e58460
 ---
 # Compiler Warning (level 3) C4723
 
-> `potential divide by 0`
+> potential divide by 0
 
 The second operand in a divide operation evaluated to zero at compile time, giving undefined results.
 

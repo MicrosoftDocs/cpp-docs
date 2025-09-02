@@ -8,7 +8,7 @@ ms.assetid: d7c76c66-1f3f-4d3c-abe4-5d94c84a5a1f
 ---
 # Compiler Warning (level 4) C4701
 
-Potentially uninitialized local variable 'name' used
+> Potentially uninitialized local variable 'name' used
 
 The local variable *name* might have been used without being assigned a value. This could lead to unpredictable results.
 

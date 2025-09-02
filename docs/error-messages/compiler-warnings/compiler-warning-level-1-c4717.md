@@ -8,7 +8,7 @@ ms.assetid: 5ef3c6c7-8599-4714-a973-0f5b69cdab3c
 ---
 # Compiler Warning (level 1) C4717
 
-'function' : recursive on all control paths, function will cause runtime stack overflow
+> 'function' : recursive on all control paths, function will cause runtime stack overflow
 
 Every path through a function contains a call to the function. Since there is no way to exit the function without first calling itself recursively, the function will never exit.
 

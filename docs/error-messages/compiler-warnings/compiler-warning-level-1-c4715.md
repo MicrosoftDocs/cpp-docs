@@ -8,7 +8,7 @@ ms.assetid: 1c819bf7-0d8b-4f5e-b338-9cc292870439
 ---
 # Compiler Warning (level 1) C4715
 
-'function' : not all control paths return a value
+> 'function' : not all control paths return a value
 
 The specified function can potentially not return a value.
 

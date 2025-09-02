@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4722"]
 ---
 # Compiler Warning (level 1) C4722
 
-'function' : destructor never returns, potential memory leak
+> 'function' : destructor never returns, potential memory leak
 
 The flow of control terminates in a destructor. The thread or the entire program will terminate and allocated resources may not be released.  Furthermore, if a destructor will be called for stack unwinding during exception processing, the behavior of executable is undefined.
 

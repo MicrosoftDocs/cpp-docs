@@ -8,7 +8,7 @@ ms.assetid: effa0335-71c3-4b3b-8618-da4b9b46a95d
 ---
 # Compiler Warning (level 4) C4725
 
-instruction may be inaccurate on some Pentiums
+> instruction may be inaccurate on some Pentiums
 
 Your code contains an inline assembly instruction that may not produce accurate results on some Pentium microprocessors.
 

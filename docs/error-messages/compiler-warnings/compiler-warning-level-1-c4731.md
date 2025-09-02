@@ -8,7 +8,7 @@ ms.assetid: 5658c24c-3e6f-4505-835b-1fb92d47cab0
 ---
 # Compiler Warning (Level 1) C4731
 
-'pointer' : frame pointer register 'register' modified by inline assembly code
+> 'pointer' : frame pointer register 'register' modified by inline assembly code
 
 A frame pointer register was modified. You must save and restore the register in your inline assembly block or frame variable (local or parameter, depending on the register modified), or your code may not work properly.
 

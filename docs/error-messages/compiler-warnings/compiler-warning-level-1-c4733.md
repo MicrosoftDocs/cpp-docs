@@ -8,7 +8,7 @@ ms.assetid: 7ef4f577-772d-4b66-a7bf-8958a6b250bc
 ---
 # Compiler Warning (Level 1) C4733
 
-Inline asm assigning to 'FS:0' : handler not registered as safe handler
+> Inline asm assigning to 'FS:0' : handler not registered as safe handler
 
 A function modifying the value at FS:0 to add a new exception handler may not work with Safe Exceptions, because the handler may not be registered as a valid exception handler (see [/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md)).
 
