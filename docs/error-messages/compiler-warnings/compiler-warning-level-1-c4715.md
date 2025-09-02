@@ -15,6 +15,8 @@ The specified function can potentially not return a value.
 
 ## Example
 
+The following example generates C4715:
+
 ```cpp
 // C4715a.cpp
 // compile with: /W1 /LD
