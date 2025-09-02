@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1 and 3) C4793"
 title: "Compiler Warning (level 1 and 3) C4793"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1 and 3) C4793"
+ms.date: 11/04/2016
 f1_keywords: ["C4793"]
 helpviewer_keywords: ["C6634", "C6635", "C6640", "C6630", "C6639", "C6636", "C6638", "C6631", "C6637", "C4793"]
-ms.assetid: 819ada53-1d9c-49b8-a629-baf8c12314e6
 ---
 # Compiler Warning (level 1 and 3) C4793
 

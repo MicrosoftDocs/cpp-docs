@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4816"
 title: "Compiler Warning (level 4) C4816"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4816"
+ms.date: 11/04/2016
 f1_keywords: ["C4816"]
 helpviewer_keywords: ["C4816"]
-ms.assetid: 60f730ae-d942-4db9-ab97-41d4a874d8da
 ---
 # Compiler Warning (level 4) C4816
 

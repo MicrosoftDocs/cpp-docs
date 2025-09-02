@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4819"
 title: "Compiler Warning (level 1) C4819"
-ms.date: "04/08/2019"
+description: "Learn more about: Compiler Warning (level 1) C4819"
+ms.date: 04/08/2019
 f1_keywords: ["C4819"]
 helpviewer_keywords: ["C4819"]
-ms.assetid: c0316e85-249c-414d-9df0-622d077c6bc2
 ---
 # Compiler Warning (level 1) C4819
 

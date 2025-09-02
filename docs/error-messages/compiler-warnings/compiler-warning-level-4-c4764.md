@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4764"
 title: "Compiler Warning (level 4) C4764"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4764"
+ms.date: 11/04/2016
 f1_keywords: ["C4764"]
 helpviewer_keywords: ["C4764"]
-ms.assetid: 7bd4296f-966b-484c-bf73-8dbc8e85b4a9
 ---
 # Compiler Warning (level 4) C4764
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4817"
 title: "Compiler Warning (level 1) C4817"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4817"
+ms.date: 11/04/2016
 f1_keywords: ["C4817"]
 helpviewer_keywords: ["C4817"]
-ms.assetid: a68f5486-6940-4934-9f93-bfd4d71f92a9
 ---
 # Compiler Warning (level 1) C4817
 

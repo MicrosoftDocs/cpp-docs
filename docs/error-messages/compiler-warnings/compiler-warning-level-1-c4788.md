@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (Level 1) C4788"
 title: "Compiler Warning (Level 1) C4788"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (Level 1) C4788"
+ms.date: 11/04/2016
 f1_keywords: ["C4788"]
 helpviewer_keywords: ["C4788"]
-ms.assetid: 47d75bda-f833-4bdd-93a0-a134df0cd303
 ---
 # Compiler Warning (Level 1) C4788
 

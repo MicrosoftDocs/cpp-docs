@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4792"
 title: "Compiler Warning (level 3) C4792"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4792"
+ms.date: 11/04/2016
 f1_keywords: ["C4792"]
 helpviewer_keywords: ["C4792"]
-ms.assetid: c047ce69-a622-44e1-9425-d41aa9261c61
 ---
 # Compiler Warning (level 3) C4792
 

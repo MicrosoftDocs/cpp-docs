@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4822"
 title: "Compiler Warning (level 1) C4822"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4822"
+ms.date: 11/04/2016
 f1_keywords: ["C4822"]
 helpviewer_keywords: ["C4822"]
-ms.assetid: 0f231a30-2eb0-4722-aaa0-e2d19d3e7eea
 ---
 # Compiler Warning (level 1) C4822
 

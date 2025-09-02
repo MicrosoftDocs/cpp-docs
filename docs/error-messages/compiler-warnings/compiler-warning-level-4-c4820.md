@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4820"
 title: "Compiler Warning (level 4) C4820"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4820"
+ms.date: 11/04/2016
 f1_keywords: ["C4820"]
 helpviewer_keywords: ["C4820"]
-ms.assetid: 17aa29f4-c287-49b8-bc43-8ed82ffed5ea
 ---
 # Compiler Warning (level 4) C4820
 

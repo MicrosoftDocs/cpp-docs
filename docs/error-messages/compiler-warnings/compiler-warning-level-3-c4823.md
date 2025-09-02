@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4823"
 title: "Compiler Warning (level 3) C4823"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4823"
+ms.date: 11/04/2016
 f1_keywords: ["C4823"]
 helpviewer_keywords: ["C4823"]
-ms.assetid: 8a77560d-dcea-4cae-aebb-8ebf1b4cef85
 ---
 # Compiler Warning (level 3) C4823
 

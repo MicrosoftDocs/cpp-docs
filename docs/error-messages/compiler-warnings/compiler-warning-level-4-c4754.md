@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4754"
 title: "Compiler Warning (level 4) C4754"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4754"
+ms.date: 11/04/2016
 f1_keywords: ["C4754"]
 helpviewer_keywords: ["C4754"]
-ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
 ---
 # Compiler Warning (level 4) C4754
 

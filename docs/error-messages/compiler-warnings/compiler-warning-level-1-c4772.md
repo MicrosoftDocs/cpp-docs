@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4772"
 title: "Compiler Warning (level 1) C4772"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4772"
+ms.date: 11/04/2016
 f1_keywords: ["C4772"]
 helpviewer_keywords: ["C4772"]
-ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
 ---
 # Compiler Warning (level 1) C4772
 

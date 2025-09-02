@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4800"
 title: "Compiler Warning (level 4) C4800"
-ms.date: "03/14/2019"
+description: "Learn more about: Compiler Warning (level 4) C4800"
+ms.date: 03/14/2019
 f1_keywords: ["C4800"]
 helpviewer_keywords: ["C4800"]
-ms.assetid: 4f409799-a250-45ed-bb5f-657691b0d9f7
 ---
 # Compiler Warning (level 4) C4800
 

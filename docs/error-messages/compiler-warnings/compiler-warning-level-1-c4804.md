@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4804"
 title: "Compiler Warning (level 1) C4804"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4804"
+ms.date: 11/04/2016
 f1_keywords: ["C4804"]
 helpviewer_keywords: ["C4804"]
-ms.assetid: 069e8f44-3ef6-43bb-8524-4116fc6eea83
 ---
 # Compiler Warning (level 1) C4804
 

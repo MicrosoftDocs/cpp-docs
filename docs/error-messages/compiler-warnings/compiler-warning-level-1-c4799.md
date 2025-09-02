@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) C4799"
 description: "Learn more about: Compiler Warning (level 1) C4799"
-ms.date: "03/28/2025"
+ms.date: 03/28/2025
 f1_keywords: ["C4799"]
 helpviewer_keywords: ["C4799"]
 ---
