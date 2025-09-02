@@ -30,7 +30,7 @@ public:
     void operator<<=(const valarray<Type>& x) const;
     void operator>>=(const valarray<Type>& x) const;
     // The rest is private or implementation defined
-}
+};
 ```
 
 ## Remarks

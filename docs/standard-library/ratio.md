@@ -24,7 +24,7 @@ struct ratio // holds the ratio of Numerator to Denominator
    static constexpr std::intmax_t num;
    static constexpr std::intmax_t den;
    typedef ratio<num, den> type;
-}
+};
 ```
 
 The template `ratio` defines the static constants `num` and `den` such that `num` / `den` == Numerator / Denominator and `num` and `den` have no common factors. `num` / `den` is the value that is represented by the class template. Therefore, `type` designates the instantiation `ratio<num, den>`.

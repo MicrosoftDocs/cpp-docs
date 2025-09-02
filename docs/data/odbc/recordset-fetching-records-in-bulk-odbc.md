@@ -74,7 +74,7 @@ public:
    .
    .
    .
-}
+};
 ```
 
 You can either allocate these storage buffers manually or have the framework do the allocation. To allocate the buffers yourself, you must specify the `CRecordset::userAllocMultiRowBuffers` option of the *dwOptions* parameter in the `Open` member function. Be sure to set the sizes of the arrays at least equal to the rowset size. If you want to have the framework do the allocation, you should initialize your pointers to NULL. This is typically done in the recordset object's constructor:
