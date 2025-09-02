@@ -10,6 +10,8 @@ ms.assetid: 22c7fd0c-899d-4e9b-95f3-725b2c49fb46
 
 > function 'function' marked as __forceinline not inlined
 
+## Remarks
+
 The given function was selected for inline expansion, but the compiler did not perform the inlining.
 
 Although **`__forceinline`** is a stronger indication to the compiler than **`__inline`**, inlining is still performed at the compiler's discretion, but no heuristics are used to determine the benefits from inlining this function.
@@ -27,6 +29,8 @@ In some cases, the compiler will not inline a particular function for mechanical
 - Functions with a variable argument list.
 
 - A function with a **`try`** (C++ exception handling) statement.
+
+## Example
 
 The following sample generates C4714:
 

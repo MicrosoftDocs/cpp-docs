@@ -10,6 +10,8 @@ ms.assetid: 07669d14-3fd8-4a43-94bc-b61c50e58460
 
 > potential divide by 0
 
+## Remarks
+
 The second operand in a divide operation evaluated to zero at compile time, giving undefined results.
 
 This warning is issued only when optimizations are enabled.

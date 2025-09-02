@@ -10,9 +10,9 @@ ms.assetid: e520881d-1eeb-48b1-9df0-8017ee8ba076
 
 > '*variable*' has different alignment in '*file1*' and '*file2*': *number1* and *number2*
 
-An external variable that was referenced or defined in two files has different alignment in those files.
-
 ## Remarks
+
+An external variable that was referenced or defined in two files has different alignment in those files.
 
 This warning is emitted when compiler finds that **`alignof`** for the variable in *file1* differs from **`alignof`** for the variable in *file2*. This can be caused by using incompatible types when declaring variable in different files, or by using non-matching `#pragma pack` in different files.
 

@@ -10,7 +10,11 @@ ms.assetid: 85528969-966a-44b4-8a2f-971704c64477
 
 > flow in or out of inline asm code suppresses global optimization
 
+## Remarks
+
 When there is a jump in to or out of an **`asm`** block, global optimizations are disabled for that function.
+
+## Example
 
 The following sample generates C4740:
 

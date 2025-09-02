@@ -10,6 +10,8 @@ ms.assetid: 76381ec7-3fc1-4bee-9a0a-c2c8307b92e2
 
 > '*function*' : function not inlined
 
+## Remarks
+
 The specified function was marked for inline expansion, but the compiler didn't inline the function.
 
 Inlining is done at the compiler's discretion. The **`inline`** keyword, like the deprecated (and, in C++17 and later standards, removed) **`register`** keyword, is used as a hint for the compiler. The compiler uses heuristics to determine if it should inline a particular function to speed up the code when it optimizes for speed, or if it should inline a particular function to make the code smaller when it optimizes for space. The compiler inlines only the smallest functions when compiling for space.

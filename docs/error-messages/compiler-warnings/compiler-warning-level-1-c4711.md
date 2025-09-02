@@ -10,6 +10,8 @@ ms.assetid: 270506ab-fead-4328-b714-2978113be238
 
 > function 'function' selected for inline expansion
 
+## Remarks
+
 The compiler performed inlining on the given function, although it was not marked for inlining.
 
 C4711 is enabled if [/Ob2](../../build/reference/ob-inline-function-expansion.md) is specified.

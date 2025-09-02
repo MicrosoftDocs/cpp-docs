@@ -10,9 +10,13 @@ ms.assetid: 600873b3-7c85-4cd4-944e-cd8e01bfcbb0
 
 > reference to variable 'var' exceeds its storage space
 
+## Remarks
+
 A value was assigned to a variable, but the value is greater than the size of the variable. Memory will be written beyond the variable's memory location, and data loss is possible.
 
 To resolve this warning, only assign a value to a variable whose size can accommodate the value.
+
+## Example
 
 The following sample generates C4739:
 

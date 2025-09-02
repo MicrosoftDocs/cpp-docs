@@ -10,6 +10,8 @@ ms.assetid: d8198c1e-8762-42a6-9e6b-cb568b7a1686
 
 > unreachable code
 
+## Remarks
+
 When the compiler back end detects unreachable code, it generates C4702 as a level 4 warning.
 
 To address this warning, remove the unreachable code or assure that all source code is reachable by some flow of execution.

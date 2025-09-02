@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4747"]
 
 > Calling managed 'entrypoint': Managed code may not be run under loader lock, including the DLL entrypoint and calls reached from the DLL entrypoint
 
+## Remarks
+
 The compiler found a (probable) DLL entry point compiled to MSIL.  Because of potential problems with loading a DLL whose entry point has been compiled to MSIL, you are strongly discouraged from compiling a DLL entry point function to MSIL.
 
 For more information, see [Initialization of Mixed Assemblies](../../dotnet/initialization-of-mixed-assemblies.md) and [Linker Tools Error LNK1306](../../error-messages/tool-errors/linker-tools-error-lnk1306.md).

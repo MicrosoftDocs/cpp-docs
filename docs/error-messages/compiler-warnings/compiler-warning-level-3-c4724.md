@@ -10,4 +10,6 @@ ms.assetid: 3be4305b-e8fe-49a9-abbf-b20dfbd71a19
 
 > potential mod by 0
 
+## Remarks
+
 The second operand in a remainder operation evaluated to zero at compile time, giving undefined results.

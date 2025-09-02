@@ -9,9 +9,13 @@ helpviewer_keywords: ["C4706"]
 
 > assignment used as a condition
 
+## Remarks
+
 The test value in a conditional expression is the result of an assignment.
 
 An assignment has a value (the value on the left side of the assignment) that can be used legally in another expression, including a test expression.
+
+## Example
 
 The following sample generates C4706:
 

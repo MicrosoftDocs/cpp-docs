@@ -10,9 +10,13 @@ ms.assetid: 7ef4f577-772d-4b66-a7bf-8958a6b250bc
 
 > Inline asm assigning to 'FS:0' : handler not registered as safe handler
 
+## Remarks
+
 A function modifying the value at FS:0 to add a new exception handler may not work with Safe Exceptions, because the handler may not be registered as a valid exception handler (see [/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md)).
 
 To resolve this warning, either remove the FS:0 definition or turn off this warning and use [.SAFESEH](../../assembler/masm/dot-safeseh.md) to specify the safe exception handlers.
+
+## Example
 
 The following sample generates C4733:
 

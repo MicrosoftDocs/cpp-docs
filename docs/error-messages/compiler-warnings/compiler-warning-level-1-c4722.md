@@ -9,6 +9,8 @@ helpviewer_keywords: ["C4722"]
 
 > 'function' : destructor never returns, potential memory leak
 
+## Remarks
+
 The flow of control terminates in a destructor. The thread or the entire program will terminate and allocated resources may not be released.  Furthermore, if a destructor will be called for stack unwinding during exception processing, the behavior of executable is undefined.
 
 To resolve, remove the function call that causes the destructor to not return.

@@ -10,6 +10,8 @@ ms.assetid: 1c819bf7-0d8b-4f5e-b338-9cc292870439
 
 > 'function' : not all control paths return a value
 
+## Remarks
+
 The specified function can potentially not return a value.
 
 ## Example

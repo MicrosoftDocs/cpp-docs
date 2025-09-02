@@ -10,6 +10,8 @@ ms.assetid: 9094895f-7eec-46c2-83d3-249b761d585e
 
 > storing 32-bit float result in memory, possible loss of performance
 
+## Remarks
+
 C4738 warns that the result of an assignment, cast, passed argument, or other operation may need to be rounded or that the operation ran out of registers and needed to use memory (spilling). This can result in performance loss.
 
 To resolve this warning and avoid rounding, compile with [/fp:fast](../../build/reference/fp-specify-floating-point-behavior.md) or use **`double`** instead of **`float`**.

@@ -10,6 +10,8 @@ ms.assetid: 8abfdd45-8c70-4c27-b0fb-ca0c3f0fccf9
 
 > comma operator within array index expression
 
+## Remarks
+
 When a comma occurs in an array index expression, the compiler uses the value after the last comma.
 
 ## Example
