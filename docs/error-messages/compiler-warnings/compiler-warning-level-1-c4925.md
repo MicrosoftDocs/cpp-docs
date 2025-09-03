@@ -8,7 +8,7 @@ ms.assetid: a4b206c0-016a-4f28-873a-bb8bb41bad50
 ---
 # Compiler Warning (level 1) C4925
 
-'method': dispinterface method cannot be called from script
+> 'method': dispinterface method cannot be called from script
 
 Scripting languages cannot create a VT_BYREF 'in' parameter, it can only create VT_BYREF 'out' parameters.
 

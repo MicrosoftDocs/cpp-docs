@@ -8,7 +8,7 @@ ms.assetid: 77235d7f-9360-45cb-8348-d148c605c4a3
 ---
 # Compiler Warning (level 1) C4928
 
-illegal copy-initialization; more than one user-defined conversion has been implicitly applied
+> illegal copy-initialization; more than one user-defined conversion has been implicitly applied
 
 More than one user-defined conversion routine was found. The compiler executed the code in all such routines.
 

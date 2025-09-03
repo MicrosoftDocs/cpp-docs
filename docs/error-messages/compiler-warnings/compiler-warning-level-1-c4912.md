@@ -8,7 +8,7 @@ ms.assetid: ba1f1a66-8c20-4792-9ac8-43e49f729ae2
 ---
 # Compiler Warning (level 1) C4912
 
-'attribute': attribute has undefined behavior on a nested UDT
+> 'attribute': attribute has undefined behavior on a nested UDT
 
 Attributes that apply to nested UDTs (user-defined type, which could be a typedef, union, or struct) may be ignored.
 

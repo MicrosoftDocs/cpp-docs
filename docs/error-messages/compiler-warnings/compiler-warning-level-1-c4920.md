@@ -8,7 +8,7 @@ ms.assetid: 1e501f2e-93c1-4d27-a4fa-54fc86271ae7
 ---
 # Compiler Warning (level 1) C4920
 
-enum enum member member=value already seen in enum enum as member=value
+> enum enum member member=value already seen in enum enum as member=value
 
 If a .tlb that you pass to #import has the same symbol defined in two or more enums, this warning indicates that subsequent identical symbols are ignored and will be commented out in the .tlh file.
 

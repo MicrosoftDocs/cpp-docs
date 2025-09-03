@@ -8,7 +8,7 @@ ms.assetid: 8a257d70-c3a7-462d-b285-e57c952a8bf7
 ---
 # Compiler Warning C4867
 
-'function': function call missing argument list; use 'call' to create a pointer to member
+> 'function': function call missing argument list; use 'call' to create a pointer to member
 
 A pointer to member function was initialized incorrectly.
 

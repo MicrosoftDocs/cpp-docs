@@ -8,7 +8,7 @@ ms.assetid: 7009e740-a2ef-4130-96ba-482e092f717a
 ---
 # Compiler Warning (level 1) C4927
 
-illegal conversion; more than one user-defined conversion has been implicitly applied
+> illegal conversion; more than one user-defined conversion has been implicitly applied
 
 More than one user-defined conversion is implicitly applied to a single value -- the compiler did not find an explicit conversion but did find a conversion, which it used.
 

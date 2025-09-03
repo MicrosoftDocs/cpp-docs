@@ -8,7 +8,7 @@ ms.assetid: fea07924-5feb-4ed4-99b5-1a8c41d28db6
 ---
 # Compiler Warning (level 1) C4838
 
-conversion from 'type_1' to 'type_2' requires a narrowing conversion
+> conversion from 'type_1' to 'type_2' requires a narrowing conversion
 
 An implicit narrowing conversion was found when using aggregate or list initialization.
 

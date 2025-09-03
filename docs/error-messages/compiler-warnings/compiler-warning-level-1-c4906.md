@@ -8,7 +8,7 @@ ms.assetid: 05318e74-799b-412a-9dce-f02b8161d762
 ---
 # Compiler Warning (level 1) C4906
 
-string literal cast to 'LPWSTR'
+> string literal cast to 'LPWSTR'
 
 The compiler detected an unsafe cast. The cast did succeed, but you should use a conversion routine.
 

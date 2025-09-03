@@ -8,7 +8,7 @@ ms.assetid: 1bcf6d35-3467-4aa8-b2ef-cb33f4e70238
 ---
 # Compiler Warning (level 4) C4918
 
-'character' : invalid character in pragma optimization list
+> 'character' : invalid character in pragma optimization list
 
 An unknown character was found in the optimization list of an [optimize](../../preprocessor/optimize.md) pragma statement.
 

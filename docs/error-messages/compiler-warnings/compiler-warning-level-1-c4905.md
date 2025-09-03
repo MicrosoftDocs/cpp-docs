@@ -8,7 +8,7 @@ ms.assetid: 40240bf4-b14e-4c22-aeb2-52f2851532f6
 ---
 # Compiler Warning (level 1) C4905
 
-wide string literal cast to 'LPSTR'
+> wide string literal cast to 'LPSTR'
 
 The compiler detected an unsafe cast. The cast did succeed, but you should use a conversion routine.
 

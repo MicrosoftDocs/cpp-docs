@@ -8,7 +8,7 @@ ms.assetid: c05e2610-4a5d-4f4b-a99b-c15fd7f1d5f1
 ---
 # Compiler Warning (level 1) C4917
 
-'declarator' : a GUID can only be associated with a class, interface or namespace
+> 'declarator' : a GUID can only be associated with a class, interface or namespace
 
 A user-defined structure other than [class](../../cpp/class-cpp.md), [interface](../../cpp/interface.md), or [namespace](../../cpp/namespaces-cpp.md) cannot have a GUID.
 
