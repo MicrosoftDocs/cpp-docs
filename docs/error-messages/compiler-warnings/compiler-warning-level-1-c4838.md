@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4838"
 title: "Compiler Warning (level 1) C4838"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4838"
+ms.date: 11/04/2016
 f1_keywords: ["C4838"]
 helpviewer_keywords: ["C4838"]
-ms.assetid: fea07924-5feb-4ed4-99b5-1a8c41d28db6
 ---
 # Compiler Warning (level 1) C4838
 

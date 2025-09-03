@@ -4,7 +4,6 @@ description: "Describes Microsoft C/C++ compiler warning C4932."
 ms.date: 08/25/2020
 f1_keywords: ["C4932"]
 helpviewer_keywords: ["C4932"]
-ms.assetid: 0b8d88cc-21f6-45cb-a9f5-1795b7db0dfa
 ---
 # Compiler Warning (level 4) C4932
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4935"
 title: "Compiler Warning (level 1) C4935"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4935"
+ms.date: 11/04/2016
 f1_keywords: ["C4935"]
 helpviewer_keywords: ["C4935"]
-ms.assetid: a36c56d3-571a-44dd-bb0f-bcc6b020e134
 ---
 # Compiler Warning (level 1) C4935
 

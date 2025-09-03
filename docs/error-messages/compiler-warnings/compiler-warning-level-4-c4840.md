@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4840"
 title: "Compiler Warning (level 4) C4840"
-ms.date: "09/13/2018"
+description: "Learn more about: Compiler Warning (level 4) C4840"
+ms.date: 09/13/2018
 f1_keywords: ["C4840"]
 helpviewer_keywords: ["C4840"]
 ---

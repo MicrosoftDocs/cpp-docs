@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4839"
 title: "Compiler Warning (level 3) C4839"
-ms.date: "09/13/2018"
+description: "Learn more about: Compiler Warning (level 3) C4839"
+ms.date: 09/13/2018
 f1_keywords: ["C4839"]
 helpviewer_keywords: ["C4839"]
-ms.assetid: f4f99066-9258-4330-81a8-f4a75a1d95ee
 ---
 # Compiler Warning (level 3) C4839
 

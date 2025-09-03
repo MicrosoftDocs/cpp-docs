@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4936"
 title: "Compiler Warning C4936"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4936"
+ms.date: 11/04/2016
 f1_keywords: ["C4936"]
 helpviewer_keywords: ["C4936"]
-ms.assetid: 6676de35-bf1b-4d0b-a70f-b5734130336c
 ---
 # Compiler Warning C4936
 

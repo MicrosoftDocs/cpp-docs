@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4906"
 title: "Compiler Warning (level 1) C4906"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4906"
+ms.date: 11/04/2016
 f1_keywords: ["C4906"]
 helpviewer_keywords: ["C4906"]
-ms.assetid: 05318e74-799b-412a-9dce-f02b8161d762
 ---
 # Compiler Warning (level 1) C4906
 

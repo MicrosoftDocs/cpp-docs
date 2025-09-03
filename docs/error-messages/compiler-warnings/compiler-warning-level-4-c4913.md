@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4913"
 title: "Compiler Warning (level 4) C4913"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4913"
+ms.date: 11/04/2016
 f1_keywords: ["C4913"]
 helpviewer_keywords: ["C4913"]
-ms.assetid: b94aa52e-6029-4170-9134-017714931546
 ---
 # Compiler Warning (level 4) C4913
 

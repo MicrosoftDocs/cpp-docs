@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4905"
 title: "Compiler Warning (level 1) C4905"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4905"
+ms.date: 11/04/2016
 f1_keywords: ["C4905"]
 helpviewer_keywords: ["C4905"]
-ms.assetid: 40240bf4-b14e-4c22-aeb2-52f2851532f6
 ---
 # Compiler Warning (level 1) C4905
 

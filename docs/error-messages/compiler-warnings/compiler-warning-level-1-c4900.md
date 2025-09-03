@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4900"
 title: "Compiler Warning (level 1) C4900"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4900"
+ms.date: 11/04/2016
 f1_keywords: ["C4900"]
 helpviewer_keywords: ["C4900"]
-ms.assetid: 826997ec-0803-4794-ad35-bb463f679658
 ---
 # Compiler Warning (level 1) C4900
 

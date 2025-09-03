@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4929"
 title: "Compiler Warning (level 1) C4929"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4929"
+ms.date: 11/04/2016
 f1_keywords: ["C4929"]
 helpviewer_keywords: ["C4929"]
-ms.assetid: 95f8ab4f-4468-4caa-acd5-8f4592f03b3c
 ---
 # Compiler Warning (level 1) C4929
 

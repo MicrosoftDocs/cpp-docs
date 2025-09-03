@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4937"
 title: "Compiler Warning (level 4) C4937"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4937"
+ms.date: 11/04/2016
 f1_keywords: ["C4937"]
 helpviewer_keywords: ["C4937"]
-ms.assetid: 2bb9f0e7-bbd6-4697-84de-95955e32ae29
 ---
 # Compiler Warning (level 4) C4937
 

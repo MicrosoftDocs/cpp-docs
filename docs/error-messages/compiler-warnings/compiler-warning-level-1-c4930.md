@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4930"
 title: "Compiler Warning (level 1) C4930"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4930"
+ms.date: 11/04/2016
 f1_keywords: ["C4930"]
 helpviewer_keywords: ["C4930"]
-ms.assetid: 89a206c9-c536-4186-8e81-1cde3e7f4f5b
 ---
 # Compiler Warning (level 1) C4930
 
