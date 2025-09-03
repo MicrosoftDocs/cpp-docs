@@ -10,9 +10,13 @@ ms.assetid: 2bb9f0e7-bbd6-4697-84de-95955e32ae29
 
 > 'text1' and 'text2' are indistinguishable as arguments to 'directive'
 
+## Remarks
+
 Because of the way the compiler processes arguments to directives, names that have meaning to the compiler, such as keywords with multiple text representations (single and double underscore forms), cannot be distinguished.
 
 Examples of such strings are __cdecl and \__forceinline.  Note, under /Za, only the double underscore forms are enabled.
+
+## Example
 
 The following sample generates C4937:
 

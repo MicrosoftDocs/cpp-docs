@@ -10,6 +10,8 @@ ms.assetid: c05e2610-4a5d-4f4b-a99b-c15fd7f1d5f1
 
 > 'declarator' : a GUID can only be associated with a class, interface or namespace
 
+## Remarks
+
 A user-defined structure other than [class](../../cpp/class-cpp.md), [interface](../../cpp/interface.md), or [namespace](../../cpp/namespaces-cpp.md) cannot have a GUID.
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.

@@ -10,7 +10,11 @@ ms.assetid: 89a206c9-c536-4186-8e81-1cde3e7f4f5b
 
 > 'prototype': prototyped function not called (was a variable definition intended?)
 
+## Remarks
+
 The compiler detected an unused function prototype. If the prototype was intended as a variable declaration, remove the open/close parentheses.
+
+## Examples
 
 The following sample generates C4930:
 

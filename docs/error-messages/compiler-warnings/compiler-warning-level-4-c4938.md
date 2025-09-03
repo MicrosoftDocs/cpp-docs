@@ -10,7 +10,11 @@ ms.assetid: 6acac81a-9d23-465e-b700-ed4b6e8edcd0
 
 > 'var' : Floating point reduction variable may cause inconsistent results under /fp:strict or #pragma fenv_access
 
+## Remarks
+
 You should not use [/fp:strict](../../build/reference/fp-specify-floating-point-behavior.md) or [fenv_access](../../preprocessor/fenv-access.md) with OpenMP floating-point reductions, because the sum is computed in a different order. Thus, results can differ from the results without /openmp.
+
+## Example
 
 The following sample generates C4938:
 

@@ -10,6 +10,8 @@ ms.assetid: d2e44c62-7b0e-4a45-943d-97903e27ed9d
 
 > 'variable' : the initializer for exported data will not be run until managed code is first executed in the host assembly
 
+## Remarks
+
 When accessing data between managed components, it is recommended that you not use native C++ import and export mechanisms. Instead, declare your data members inside a managed type and reference the metadata with `#using` in the client. For more information, see [#using Directive](../../preprocessor/hash-using-directive-cpp.md).
 
 ## Examples

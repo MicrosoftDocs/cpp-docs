@@ -10,6 +10,8 @@ ms.assetid: f4f99066-9258-4330-81a8-f4a75a1d95ee
 
 > non-standard use of class '*type*' as an argument to a variadic function
 
+## Remarks
+
 Classes or structs that are passed to a variadic function such as `printf` must be trivially copyable. When passing such objects, the compiler simply makes a bitwise copy and does not call the constructor or destructor.
 
 This warning is available beginning in Visual Studio 2017.

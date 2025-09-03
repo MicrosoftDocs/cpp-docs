@@ -10,7 +10,11 @@ ms.assetid: 5717fce0-146f-4ef2-bde0-e9a01c0922d1
 
 > 'identifier': symbol is already defined: attributes ignored
 
+## Remarks
+
 A forward declaration was found but an attributed construct with the same name already exists. The attributes for the forward declaration are ignored.
+
+## Example
 
 The following sample generates C4926:
 

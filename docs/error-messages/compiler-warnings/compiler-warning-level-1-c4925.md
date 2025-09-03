@@ -10,9 +10,13 @@ ms.assetid: a4b206c0-016a-4f28-873a-bb8bb41bad50
 
 > 'method': dispinterface method cannot be called from script
 
+## Remarks
+
 Scripting languages cannot create a VT_BYREF 'in' parameter, it can only create VT_BYREF 'out' parameters.
 
 Another way to resolve this warning is not make the parameter (in the definition and implementation) a pointer type.
+
+## Example
 
 The following sample generates C4925:
 

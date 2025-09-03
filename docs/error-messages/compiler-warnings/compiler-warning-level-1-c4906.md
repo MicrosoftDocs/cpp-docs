@@ -10,6 +10,8 @@ ms.assetid: 05318e74-799b-412a-9dce-f02b8161d762
 
 > string literal cast to 'LPWSTR'
 
+## Remarks
+
 The compiler detected an unsafe cast. The cast did succeed, but you should use a conversion routine.
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.

@@ -10,7 +10,11 @@ ms.assetid: 1bcf6d35-3467-4aa8-b2ef-cb33f4e70238
 
 > 'character' : invalid character in pragma optimization list
 
+## Remarks
+
 An unknown character was found in the optimization list of an [optimize](../../preprocessor/optimize.md) pragma statement.
+
+## Example
 
 For example, the following statement generates C4918:
 

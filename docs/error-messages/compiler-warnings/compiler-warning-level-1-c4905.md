@@ -10,6 +10,8 @@ ms.assetid: 40240bf4-b14e-4c22-aeb2-52f2851532f6
 
 > wide string literal cast to 'LPSTR'
 
+## Remarks
+
 The compiler detected an unsafe cast. The cast did succeed, but you should use a conversion routine.
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
