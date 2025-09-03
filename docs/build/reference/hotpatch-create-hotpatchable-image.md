@@ -25,7 +25,6 @@ When **/hotpatch** is used in compilation, the compiler ensures that the first i
 
 To complete the preparation for making an image hotpatchable, after you use **/hotpatch** to compile, you must use [/FUNCTIONPADMIN (Create Hotpatchable Image)](functionpadmin-create-hotpatchable-image.md) to link. When you compile and link an image by using one invocation of cl.exe, **/hotpatch** implies **/functionpadmin**.
 
-
 > [!TIP]
 > ARM and x64 architechtures are always treated as hotpatchable; however, you must still link by using **/functionpadmin** to create hotpatchable images for them.
 
