@@ -33,9 +33,9 @@ The following table lists the options for the AddressSanitizer. Enable them via 
 |`handle_sigfpe` | `true` | If `true`, ASan handles `SIGFPE` errors.|
 |`handle_sigill` | `true` | If `true`, ASan handles `SIGILL` errors.|
 |`help` | `false` | If `true`, ASan prints the flag options to console.|
-|`iat_overwrite`|`error`|`error`-report an error whenever an overwrite is detected.<br>`protect`-attempt to avoid using the overwritten definition.<br>`ignore` - don't attempt to correct any overwritten functions. For more information, see [`iat_overwrite`](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
+|`iat_overwrite`|`error`|`error` - reports an error whenever an overwrite is detected.<br>`protect` - trys to avoid using the overwritten definition.<br>`ignore` - doesn't try to correct any overwritten functions. For more information, see [`iat_overwrite`](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
 |`include_if_exists` | "" | Reads options from the specified file. ASan doesn't fail if the file doesn't exist.|
-|`intercept_strpbrk` | `true` | If `true`, uses custom wrappers for `strpbrk` function to find more errors.|
+|`intercept_strpbrk` | `true` | If `true`, uses custom wrappers for `strpbrk` to find more errors.|
 |`intercept_strspn` | `true` | If `true`, uses custom wrappers for `strspn` and `strcspn` to find more errors.|
 |`intercept_strstr` | `true` | If `true`, uses custom wrappers for `strstr` and `strcasestr` to find more errors.|
 |`malloc_context_size` | 1 | Maximum number of stack frames to keep for each allocation/deallocation.|
@@ -50,7 +50,7 @@ The following table lists the options for the AddressSanitizer. Enable them via 
 |`quarantine_size_mb` | -1 | Size (in Mb) of quarantine used to detect `use-after-free` errors. A lower value may increase the chance of false negatives.|
 |`redzone` | 16 | Minimum size (in bytes) of redzones around heap objects. Requirement: `redzone >= 16` and must be a power of two.|
 |`replace_str` | `true` | If `true`, uses custom wrappers and replacements for `libc` string functions to find more errors.|
-|`report_globals` | 1 | How to respond to buffer overflow for globals: 0-don't detect buffer overflow on globals, 1-detect buffer overflow, 2-detect buffer overflow and print data about registered globals.|
+|`report_globals` | 1 | How to respond to buffer overflow for globals:<br>0-don't detect buffer overflow on globals.<br>1 - detect buffer overflow.<br>2 - detect buffer overflow and print registered globals data.|
 |`sleep_before_dying` | 0 | Number of seconds to sleep between printing an error report and terminating the program.|
 |`stack_trace_format` | `DEFAULT` | Format string used to render stack frames. `DEFAULT` - `    #%n %p %F %L`. List of available placeholders:<br> `%%` - represents a `'%'` character<br> `%n` - frame number (copy of `frame_no`)<br> `%p` - `PC`<br> `%m` - path to module<br> `%o` - offset in the module<br> `%f` - function name<br> `%q` - if available, offset in the function<br> `%s` - path to source file<br> `%l` - line in the source file<br> `%c` - column in the source file<br> `%F` - if the function is known, ASan prints `in <func name>` followed by the offset in this function if source is unknown<br> `%S` - ASan prints file/line/column information<br> `%L` - If file information is available, ASan prints the file name, line, and column. If module information is available, ASan prints the module name, offset, and architecture. If neither are available, ASan prints `(<unknown module>)`<br> `%M` - If known, ASan prints module basename and offset, or `PC`|
 |`strict_memcmp` | `true` | If `true`, assumes that `memcmp(p1, p2, n)` always reads `n` bytes before comparing `p1` and `p2`.|
@@ -58,7 +58,7 @@ The following table lists the options for the AddressSanitizer. Enable them via 
 |`strip_path_prefix` | "" | Strips this prefix from file paths in error reports.|
 |`symbolize` | `true` | If `true`, use the `llvm-symbolizer` to turn virtual addresses into file or line locations.|
 |`symbolize_inline_frames` | `true` | Print inlined frames in stacktraces.|
-|`verbosity` | 0 | Verbosity level: 0-default verbosity, 1-more output, 2-even more output, 3-maximum verbosity. |
+|`verbosity` | 0 | Verbosity level:<br>0 - default verbosity.<br>1 - more output.<br>2 - even more output.<br>3 - maximum verbosity. |
 |`windows_fast_fail_on_error`| `false` | If `true`, the process can terminate with a `__fastfail(71)` after printing the error report. For more information, see [`windows_fast_fail_on_error`](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
 |`windows_hook_legacy_allocators`| `true` |If `true`, enables hooking of (`Global`/`Local`)(`Alloc`/`Free`/`Size`/`ReAlloc`/`Lock`/`Unlock`) functions.|
 
