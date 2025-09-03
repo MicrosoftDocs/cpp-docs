@@ -59,8 +59,12 @@ int main() {
 
 AddressSanitizer (ASan) uses a custom version of `operator new` and `operator delete` to find allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Running the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) ensures that ASan's `new`/`delete` override has low precedence, so that the linker chooses any `operator new` or `operator delete` overrides in other libraries over ASan's custom versions. When this happens, ASan may not be able to catch some errors that rely on its custom `operator new` and `operator delete`.
 
-[MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete` and might miss errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md).
-
+[MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete`. Any operation that utilizes these provided operators instead of the ASan provided `operator new` and `operator delete` might miss errors entirely or classify them incorrectly as a result:
+ - [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md)
+ - [`double-free`](error-double-free.md)
+ - [`heap-use-after-free`](error-heap-use-after-free.md)
+ - [`heap-buffer-overflow`](error-heap-buffer-overflow.md)
+ - [`new-delete-type-mismatch`](error-new-delete-type-mismatch.md)
 
 ## Memory usage
 
