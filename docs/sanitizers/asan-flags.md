@@ -32,7 +32,7 @@ The following table lists the options for the AddressSanitizer. Enable them via 
 |`handle_segv` | `true` | If `true`, ASan handles `SEGV` errors.|
 |`handle_sigfpe` | `true` | If `true`, ASan handles `SIGFPE` errors.|
 |`handle_sigill` | `true` | If `true`, ASan handles `SIGILL` errors.|
-|`help` | `false` | If `true`, ASan prints the flag options to console.|
+|`help` | `false` | If `true`, ASan prints the flag options to the console.|
 |`iat_overwrite`|`error`|`error` - reports an error whenever an overwrite is detected.<br>`protect` - trys to avoid using the overwritten definition.<br>`ignore` - doesn't try to correct any overwritten functions. For more information, see [`iat_overwrite`](./asan-runtime.md#msvc-specific-addresssanitizer-runtime-options).|
 |`include_if_exists` | `""` | Reads options from the specified file. ASan doesn't fail if the file doesn't exist.|
 |`intercept_strpbrk` | `true` | If `true`, uses custom wrappers for `strpbrk` to find more errors.|
