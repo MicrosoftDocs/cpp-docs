@@ -10,7 +10,7 @@ helpviewer_keywords: ["AddressSanitizer options", "AddressSanitizer flags", "Add
 The following table lists the options for the AddressSanitizer. Enable them via the `ASAN_OPTIONS` environment variable or by overriding the `__asan_default_options()` user function described [here](./asan-runtime.md#runtime-options). 
 
 > [!NOTE]
-> These descriptions account for MSVC specific behaviors which may vary from Clang's runtime options.
+> These descriptions account for Microsoft Visual C++ (MSVC) specific behaviors, which may vary from Clang's runtime options.
 
 
 | Flag | Default value | Description |
@@ -21,7 +21,7 @@ The following table lists the options for the AddressSanitizer. Enable them via 
 |`allocator_may_return_null` | `false` | If `true`, the allocator returns `nullptr` when out of memory. Instead of crashing, ASan emits a warning about the allocator's failure and execution continues.|
 |`allow_user_poisoning` | `true` | If `true`, you may manually mark memory regions as poisoned or unpoisoned using the [Manual AddressSanitizer poising interface](./asan-runtime.md#poisoning).|
 |`check_initialization_order` | `false` | If `true`, attempts to catch initialization order issues.|
-|`continue_on_error` | 0 | Allows an application to continue running while reporting memory safety errors. 0-disabled, 1-enabled and error output is sent to `stdout`, 2-enabled and error output is sent to `stderr`. For more information, see [continue_on_error](asan-continue-on-error.md).|
+|`continue_on_error` | 0 | Allows an application to continue running while reporting memory safety errors.<br>0-disabled.<br>1-enabled; errors are sent to `stdout`.<br>2-enabled; errors are sent to `stderr`.<br>For more information, see [continue_on_error](asan-continue-on-error.md).|
 |`detect_container_overflow` | `true` | If `true`, honor the container overflow annotations. For more information, see [ContainerOverflow](./error-container-overflow.md).|
 |`detect_invalid_pointer_pairs` | `false` | If `true`, ASan detects operations like `<`, `<=`, `>`, `>=`, and `-` on invalid pointer pairs such as pointers that belong to different objects.|
 |`detect_stack_use_after_return` | `false` | Experimental. If `true`, ASan enables `stack-use-after-return` checking at runtime. Requires `/fsanitize-address-use-after-return`. For more information, see [stack-use-after-return](./error-stack-use-after-return.md).|
