@@ -10,10 +10,10 @@ items:
       href: ../sanitizers/asan-continue-on-error.md
     - name: "Build and language reference"
       href: ../sanitizers/asan-building.md
-    - name: "Runtime reference"
-      href: ../sanitizers/asan-runtime.md
     - name: "Runtime options"
       href: ../sanitizers/asan-flags.md
+    - name: "Runtime reference"
+      href: ../sanitizers/asan-runtime.md
     - name: "Debugger integration"
       href: ../sanitizers/asan-debugger-integration.md
     - name: "Shadow bytes"
