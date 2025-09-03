@@ -18,7 +18,7 @@ Another way to resolve this warning is not make the parameter (in the definition
 
 ## Example
 
-The following sample generates C4925:
+The following example generates C4925:
 
 ```cpp
 // C4925.cpp

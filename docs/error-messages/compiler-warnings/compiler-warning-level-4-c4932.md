@@ -16,7 +16,7 @@ The compiler is unable to distinguish between **`_finally`** and **`__finally`**
 
 ## Example
 
-The following sample generates C4932:
+The following example generates C4932:
 
 ```cpp
 // C4932.cpp

@@ -22,7 +22,7 @@ C4936 is always issued as an error.  You can disable C4936 with the [warning](..
 
 ## Example
 
-The following sample generates C4936:
+The following example generates C4936:
 
 ```cpp
 // C4936.cpp

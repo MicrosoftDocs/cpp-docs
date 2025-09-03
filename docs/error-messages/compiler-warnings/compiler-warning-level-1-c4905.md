@@ -18,7 +18,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 ## Example
 
-The following sample generates C4905.
+The following example generates C4905.
 
 ```cpp
 // C4905.cpp

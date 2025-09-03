@@ -18,7 +18,7 @@ This warning is available beginning in Visual Studio 2017.
 
 ## Example
 
-The following sample generates C4839:
+The following example generates C4839:
 
 ```cpp
 // C4839.cpp

@@ -17,7 +17,7 @@ This warning is available beginning in Visual Studio 2017.
 
 ## Example
 
-The following sample generates C4840 and shows how to fix it:
+The following example generates C4840 and shows how to fix it:
 
 ```cpp
 // C4840.cpp

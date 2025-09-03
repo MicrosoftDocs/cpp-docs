@@ -20,7 +20,7 @@ This warning is always issued as an error. Use the [warning](../../preprocessor/
 
 ## Example
 
-The following sample generates C4867.
+The following example generates C4867.
 
 ```cpp
 // C4867.cpp

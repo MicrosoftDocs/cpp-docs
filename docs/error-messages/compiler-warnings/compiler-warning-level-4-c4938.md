@@ -16,7 +16,7 @@ You should not use [/fp:strict](../../build/reference/fp-specify-floating-point-
 
 ## Example
 
-The following sample generates C4938:
+The following example generates C4938:
 
 ```cpp
 // C4938.cpp

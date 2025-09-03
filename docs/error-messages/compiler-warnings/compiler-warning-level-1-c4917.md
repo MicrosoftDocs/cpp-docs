@@ -18,7 +18,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 ## Example
 
-The following code sample generates C4917:
+The following code example generates C4917:
 
 ```cpp
 // C4917.cpp

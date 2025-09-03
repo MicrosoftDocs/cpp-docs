@@ -16,7 +16,7 @@ The embedded_idl attribute of [#import](../../preprocessor/hash-import-directive
 
 ## Example
 
-The following sample defines a component.
+The following example defines a component.
 
 ```cpp
 // C4929a.cpp
@@ -48,7 +48,7 @@ struct C : I {
 };
 ```
 
-The following sample generates C4929.
+The following example generates C4929.
 
 ```cpp
 // C4929b.cpp

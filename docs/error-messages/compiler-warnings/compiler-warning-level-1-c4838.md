@@ -20,7 +20,7 @@ A narrowing conversion can be okay when you know the possible range of converted
 
 ## Example
 
-The following sample generates C4838 and shows one way to fix it:
+The following example generates C4838 and shows one way to fix it:
 
 ```cpp
 // C4838.cpp -- C++ narrowing conversion diagnostics

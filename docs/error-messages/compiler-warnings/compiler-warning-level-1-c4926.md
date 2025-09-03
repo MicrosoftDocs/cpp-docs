@@ -16,7 +16,7 @@ A forward declaration was found but an attributed construct with the same name a
 
 ## Example
 
-The following sample generates C4926:
+The following example generates C4926:
 
 ```cpp
 // C4926.cpp

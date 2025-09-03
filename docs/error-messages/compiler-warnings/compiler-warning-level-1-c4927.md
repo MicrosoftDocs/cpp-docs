@@ -16,7 +16,7 @@ More than one user-defined conversion is implicitly applied to a single value --
 
 ## Example
 
-The following sample generates C4927:
+The following example generates C4927:
 
 ```cpp
 // C4927.cpp

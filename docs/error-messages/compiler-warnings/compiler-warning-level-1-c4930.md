@@ -16,7 +16,7 @@ The compiler detected an unused function prototype. If the prototype was intende
 
 ## Examples
 
-The following sample generates C4930:
+The following example generates C4930:
 
 ```cpp
 // C4930.cpp
@@ -38,7 +38,7 @@ int main() {
 
 C4930 can also occur when the compiler cannot distinguish between a function prototype declaration and a function call.
 
-The following sample generates C4930:
+The following example generates C4930:
 
 ```cpp
 // C4930b.cpp
@@ -109,4 +109,4 @@ int main()
 }
 ```
 
-In the above sample, the result of a method that takes zero arguments is passed as an argument to the constructor of an unnamed local class variable. The call can be disambiguated by either naming the local variable or prefixing the method call with an object instance along with the appropriate pointer-to-member operator.
+In the above example, the result of a method that takes zero arguments is passed as an argument to the constructor of an unnamed local class variable. The call can be disambiguated by either naming the local variable or prefixing the method call with an object instance along with the appropriate pointer-to-member operator.

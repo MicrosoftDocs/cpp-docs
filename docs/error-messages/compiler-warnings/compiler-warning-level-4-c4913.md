@@ -16,7 +16,7 @@ A call to the built-in comma operator occurred in a program that also had an ove
 
 ## Example
 
-The following code sample generates C4913:
+The following code example generates C4913:
 
 ```cpp
 // C4913.cpp

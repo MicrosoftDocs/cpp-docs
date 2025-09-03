@@ -31,7 +31,7 @@ library MyLib
 };
 ```
 
-the following samples generates C4920,
+the following example generates C4920,
 
 ```cpp
 // C4920.cpp

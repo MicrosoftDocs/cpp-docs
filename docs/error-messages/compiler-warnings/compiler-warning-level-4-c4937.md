@@ -18,7 +18,7 @@ Examples of such strings are __cdecl and \__forceinline.  Note, under /Za, only 
 
 ## Example
 
-The following sample generates C4937:
+The following example generates C4937:
 
 ```cpp
 // C4937.cpp

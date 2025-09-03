@@ -18,7 +18,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 ## Example
 
-The following sample generates C4906:
+The following example generates C4906:
 
 ```cpp
 // C4906.cpp
