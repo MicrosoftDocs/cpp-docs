@@ -21,12 +21,12 @@ Prepares an image for hot patching.
 
 ## Remarks
 
-When **/hotpatch** is used in compilation, the compiler ensures that the first instruction of each function is at least two bytes, and no jump within the function goes to the first instruction. These conditions are required for hot patching.
+When **/hotpatch** is used in compilation, the compiler ensures that the first instruction of each function is at least 2 bytes, and no jump within the function goes to the first instruction. These conditions are required for hot patching.
 
 To complete the preparation for making an image hotpatchable, after you use **/hotpatch** to compile, you must use [/FUNCTIONPADMIN (Create Hotpatchable Image)](functionpadmin-create-hotpatchable-image.md) to link. When you compile and link an image by using one invocation of cl.exe, **/hotpatch** implies **/functionpadmin**.
 
 > [!TIP]
-> ARM and x64 architechtures are always treated as hotpatchable; however, you must still link by using **/functionpadmin** to create hotpatchable images for them.
+> ARM and x64 architectures are always treated as hotpatchable; however, you must still link by using **/functionpadmin** to create hotpatchable images for them.
 
 ### To set this compiler option in the Visual Studio development environment
 
