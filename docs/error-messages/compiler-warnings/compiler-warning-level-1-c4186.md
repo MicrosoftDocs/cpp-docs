@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4186"
 title: "Compiler Warning (level 1) C4186"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4186"
+ms.date: 11/04/2016
 f1_keywords: ["C4186"]
 helpviewer_keywords: ["C4186"]
-ms.assetid: caf3f7d8-f305-426b-8d4e-2b96f5c269ea
 ---
 # Compiler Warning (level 1) C4186
 
-\#import attribute 'attribute' requires count arguments; ignored
+> #import attribute 'attribute' requires count arguments; ignored
+
+## Remarks
 
 A `#import` attribute has the wrong number of arguments.
 
 ## Example
+
+The following example generates C4186:
 
 ```cpp
 // C4186.cpp
