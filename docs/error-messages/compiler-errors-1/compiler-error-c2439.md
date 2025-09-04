@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2439"
 title: "Compiler Error C2439"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2439"
+ms.date: 11/04/2016
 f1_keywords: ["C2439"]
 helpviewer_keywords: ["C2439"]
-ms.assetid: 3c5dbe5c-b7d3-4bb0-8619-92f6e280461e
 ---
 # Compiler Error C2439
 
-'identifier' : member could not be initialized
+> 'identifier' : member could not be initialized
+
+## Remarks
 
 A class, structure, or union member cannot be initialized.
 
