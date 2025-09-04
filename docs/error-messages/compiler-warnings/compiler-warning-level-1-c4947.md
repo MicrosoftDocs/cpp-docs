@@ -10,6 +10,8 @@ ms.assetid: 5a1d484e-b4c7-4de2-a145-d8dcfc2fc1d2
 
 > 'type_or_member' : marked as obsolete
 
+## Remarks
+
 A member or type was marked as obsolete with the <xref:System.ObsoleteAttribute> class.
 
 ## Example

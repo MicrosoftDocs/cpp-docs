@@ -20,7 +20,7 @@ The **/clr:safe** compiler option is deprecated in Visual Studio 2015 and unsupp
 
 This warning is issued as an error and can be disabled with the [warning](../../preprocessor/warning.md) pragma or the [/wd](../../build/reference/compiler-option-warning-level.md) compiler option.
 
-## Example
+## Examples
 
 The following sample generates C4958:
 

@@ -10,6 +10,8 @@ ms.assetid: 50226a5c-c664-4d09-ac59-e9e874ca244f
 
 > 'type_or_member' : marked as obsolete
 
+## Remarks
+
 A member or type was marked as obsolete with the <xref:System.ObsoleteAttribute> attribute.
 
 C4950 is always issued as an error. You can turn off this warning by using the [warning](../../preprocessor/warning.md) pragma directive or the [/wd](../../build/reference/compiler-option-warning-level.md) compiler option.

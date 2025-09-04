@@ -10,9 +10,11 @@ ms.assetid: e2905eb1-2e3b-4fab-a48b-c0cae0fd997f
 
 > 'symbol' : cannot import symbol from 'assembly1': as 'symbol' already exists in the current scope
 
+## Remarks
+
 A symbol was defined in a source code file and then a #using statement referenced an assembly that also defined the symbol. The symbol in the assembly is ignored.
 
-## Examples
+## Example
 
 The following sample creates a component with a type called ClassA.
 

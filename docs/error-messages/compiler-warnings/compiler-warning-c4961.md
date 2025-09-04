@@ -10,4 +10,6 @@ ms.assetid: fe22d99f-5a12-45d3-a7cf-867773a71e16
 
 > No profile data was merged into '.pgd file', profile-guided optimizations disabled
 
+## Remarks
+
 No profile data (.pgc files) were available, so profile-guided optimizations cannot take place.

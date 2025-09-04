@@ -10,7 +10,11 @@ ms.assetid: 6d2079ea-dc59-4611-bc68-9a22c06f7587
 
 > 'symbol' : cannot import symbol from 'assembly2': as 'symbol' has already been imported from another assembly 'assembly1'
 
+## Remarks
+
 A symbol was imported from a referenced assembly but that symbol was already imported from another referenced assembly. Either do not reference one of the assemblies or get the symbol name changed in one of the assemblies.
+
+## Example
 
 The following samples generate C4945.
 

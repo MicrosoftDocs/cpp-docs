@@ -10,6 +10,8 @@ ms.assetid: 593324f0-5cfe-42fb-b221-2f71308765dd
 
 > '*function*' : no profile data found in program database '*pgd_file*'
 
+## Remarks
+
 When using [/LTCG:PGUPDATE](../../build/reference/ltcg-link-time-code-generation.md), the compiler detected an input module that was recompiled after `/LTCG:PGINSTRUMENT` and has a new function (*function*) present.
 
 This warning is informational. To resolve this warning, run `/LTCG:PGINSTRUMENT`, redo all test runs, and run `/LTCG:PGOPTIMIZE`.
