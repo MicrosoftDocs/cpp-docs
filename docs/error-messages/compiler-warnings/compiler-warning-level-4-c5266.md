@@ -18,7 +18,7 @@ This warning was introduced in Visual Studio 17.6
 
 ## Example
 
-The following sample generates C5266:
+The following example generates C5266:
 
 ```cpp
 // compile with: /W4 /c
