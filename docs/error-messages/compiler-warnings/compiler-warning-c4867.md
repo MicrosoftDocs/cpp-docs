@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning C4867"
 title: "Compiler Warning C4867"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4867"
+ms.date: 11/04/2016
 f1_keywords: ["C4867"]
 helpviewer_keywords: ["C4867"]
-ms.assetid: 8a257d70-c3a7-462d-b285-e57c952a8bf7
 ---
 # Compiler Warning C4867
 
-'function': function call missing argument list; use 'call' to create a pointer to member
+> 'function': function call missing argument list; use 'call' to create a pointer to member
+
+## Remarks
 
 A pointer to member function was initialized incorrectly.
 
@@ -18,7 +19,7 @@ This warning is always issued as an error. Use the [warning](../../preprocessor/
 
 ## Example
 
-The following sample generates C4867.
+The following example generates C4867.
 
 ```cpp
 // C4867.cpp

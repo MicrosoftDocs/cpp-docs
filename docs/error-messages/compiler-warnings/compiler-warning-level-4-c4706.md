@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4706"
 title: "Compiler Warning (level 4) C4706"
-ms.date: "3/5/2025"
+description: "Learn more about: Compiler Warning (level 4) C4706"
+ms.date: 3/5/2025
 f1_keywords: ["C4706"]
 helpviewer_keywords: ["C4706"]
 ---
@@ -9,11 +9,15 @@ helpviewer_keywords: ["C4706"]
 
 > assignment used as a condition
 
+## Remarks
+
 The test value in a conditional expression is the result of an assignment.
 
 An assignment has a value (the value on the left side of the assignment) that can be used legally in another expression, including a test expression.
 
-The following sample generates C4706:
+## Example
+
+The following example generates C4706:
 
 ```cpp
 // compile with: /W4
