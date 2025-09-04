@@ -183,7 +183,7 @@ Or, you can right-click a file in the **Include Tree** view to jump to it in the
 
 [Build Insights tips and tricks](build-insights-tips.md)\
 [Compare header units, modules, and precompiled headers](../../build/compare-inclusion-methods.md)\
-[Build Insights in Visual Studio video - Pure Virtual C++ 2023](/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
+[Build Insights in Visual Studio video - Pure Virtual C++ 2023](/shows/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
 [Faster C++ builds, simplified: a new metric for time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time)\
 [Troubleshoot function inlining on build time](build-insights-function-view.md)\
 [vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)
