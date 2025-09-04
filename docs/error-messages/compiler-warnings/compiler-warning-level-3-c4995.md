@@ -18,7 +18,7 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Example
 
-The following sample generates C4995. Uncomment the `#pragma warning` line to disable the warning.
+The following example generates C4995. Uncomment the `#pragma warning` line to disable the warning.
 
 ```cpp
 // C4995.cpp

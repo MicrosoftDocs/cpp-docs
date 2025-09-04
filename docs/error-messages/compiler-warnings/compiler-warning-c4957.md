@@ -24,7 +24,7 @@ This warning is issued as an error and can be disabled with the [warning](../../
 
 ## Example
 
-The following sample generates C4957:
+The following example generates C4957:
 
 ```cpp
 // C4957.cpp

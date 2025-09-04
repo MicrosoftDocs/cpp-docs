@@ -16,7 +16,7 @@ A member or type was marked as obsolete with the <xref:System.ObsoleteAttribute>
 
 ## Example
 
-The following sample generates C4947:
+The following example generates C4947:
 
 ```cpp
 // C4947.cpp

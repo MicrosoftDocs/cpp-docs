@@ -20,7 +20,7 @@ This warning is issued as an error and can be disabled with the [warning](../../
 
 ## Example
 
-The following sample generates C4956:
+The following example generates C4956:
 
 ```cpp
 // C4956.cpp

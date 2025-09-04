@@ -18,7 +18,7 @@ For more information, see [Boxing](../../extensions/boxing-cpp-component-extensi
 
 ## Example
 
-The following sample generates C4972.
+The following example generates C4972.
 
 ```cpp
 // C4972.cpp

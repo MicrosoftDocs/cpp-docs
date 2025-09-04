@@ -18,7 +18,7 @@ If you want .pgc files to be generated when you run your application, specify on
 
 ## Example
 
-The following sample generates C4964:
+The following example generates C4964:
 
 ```cpp
 // C4964.cpp

@@ -19,7 +19,7 @@ This warning is available starting in Visual Studio 2017 version 15.3. For infor
 
 ## Example
 
-This sample generates C4984, and shows ways to fix it:
+This example generates C4984, and shows ways to fix it:
 
 ```cpp
 // C4984.cpp

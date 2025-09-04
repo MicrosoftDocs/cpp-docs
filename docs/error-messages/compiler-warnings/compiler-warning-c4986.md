@@ -18,7 +18,7 @@ By default, C4986 is off. For more information, see [Compiler Warnings That Are 
 
 ## Example
 
-The following sample generates C4986.
+The following example generates C4986.
 
 ```cpp
 class X { };
@@ -30,7 +30,7 @@ void f1()
 }
 ```
 
-The following sample eliminates this warning.
+The following example eliminates this warning.
 
 ```cpp
 class X { };

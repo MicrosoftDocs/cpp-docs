@@ -16,7 +16,7 @@ A symbol was defined in a source code file and then a #using statement reference
 
 ## Example
 
-The following sample creates a component with a type called ClassA.
+The following example creates a component with a type called ClassA.
 
 ```csharp
 // C4944.cs
@@ -27,7 +27,7 @@ public class ClassA {
 }
 ```
 
-The following samples generate C4944.
+The following example generate C4944.
 
 ```cpp
 // C4944b.cpp

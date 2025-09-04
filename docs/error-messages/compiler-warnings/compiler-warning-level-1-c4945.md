@@ -16,7 +16,7 @@ A symbol was imported from a referenced assembly but that symbol was already imp
 
 ## Example
 
-The following samples generate C4945.
+The following example generate C4945.
 
 ```csharp
 // C4945a.cs

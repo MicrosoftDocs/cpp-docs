@@ -22,7 +22,7 @@ This warning is issued as an error and can be disabled with the [warning](../../
 
 ## Examples
 
-The following sample generates C4958:
+The following example generates C4958:
 
 ```cpp
 // C4958.cpp
@@ -39,7 +39,7 @@ int main( ) {
 
 The compiler implements array operations with pointer arithmetic. Therefore, native arrays are not verifiable; use a CLR array instead. For more information, see [array](../../extensions/arrays-cpp-component-extensions.md).
 
-The following sample generates C4958:
+The following example generates C4958:
 
 ```cpp
 // C4958b.cpp

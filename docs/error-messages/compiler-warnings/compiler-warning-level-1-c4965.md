@@ -18,7 +18,7 @@ For more information, see [Boxing](../../extensions/boxing-cpp-component-extensi
 
 ## Example
 
-The following sample generates C4965.
+The following example generates C4965.
 
 ```cpp
 // C4965.cpp

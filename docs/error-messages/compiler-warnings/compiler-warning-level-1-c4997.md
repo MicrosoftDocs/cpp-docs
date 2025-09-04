@@ -16,7 +16,7 @@ A class marked with the [coclass](../../windows/attributes/coclass.md) attribute
 
 ## Example
 
-The following sample generates C4997:
+The following example generates C4997:
 
 ```cpp
 // C4997.cpp

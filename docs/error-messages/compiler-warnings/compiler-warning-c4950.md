@@ -18,7 +18,7 @@ C4950 is always issued as an error. You can turn off this warning by using the [
 
 ## Example
 
-The following sample generates C4950:
+The following example generates C4950:
 
 ```cpp
 // C4950.cpp
