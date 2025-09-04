@@ -1,17 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2487"
 title: "Compiler Error C2487"
-ms.date: "03/04/2024"
+description: "Learn more about: Compiler Error C2487"
+ms.date: 03/04/2024
 f1_keywords: ["C2487"]
 helpviewer_keywords: ["C2487"]
 ---
 # Compiler Error C2487
 
-'identifier' : member of dll interface class may not be declared with dll interface
+> 'identifier' : member of dll interface class may not be declared with dll interface
+
+## Remarks
 
 You can declare a whole class, or certain members of a non-DLL interface class, with DLL interface. You cannot declare a class with DLL interface and then declare a member of that class with DLL interface.
 
-The following sample generates C2487:
+## Example
+
+The following example generates C2487:
 
 ```cpp
 // C2487.cpp
