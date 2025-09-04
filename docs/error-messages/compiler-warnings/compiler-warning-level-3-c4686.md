@@ -4,7 +4,6 @@ description: "Microsoft C++ compiler warning C4686."
 ms.date: 08/29/2020
 f1_keywords: ["C4686"]
 helpviewer_keywords: ["C4686"]
-ms.assetid: 767c83c2-9e4b-4f9e-88c8-02128ba563f4
 ---
 # Compiler Warning (level 3) C4686
 

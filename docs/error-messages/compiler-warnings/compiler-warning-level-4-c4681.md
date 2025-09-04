@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4681"
 title: "Compiler Warning (level 4) C4681"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4681"
+ms.date: 11/04/2016
 f1_keywords: ["C4681"]
 helpviewer_keywords: ["C4681"]
-ms.assetid: a4e6d85f-3e21-4b45-a551-c23d3c554d3f
 ---
 # Compiler Warning (level 4) C4681
 
-'class' : coclass does not specify a default interface that is an event source
+> 'class' : coclass does not specify a default interface that is an event source
+
+## Remarks
 
 A [source](../../windows/attributes/source-cpp.md) interface was not specified for a class.
 
-The following sample generates C4681:
+## Example
+
+The following example generates C4681:
 
 ```cpp
 // C4681.cpp
