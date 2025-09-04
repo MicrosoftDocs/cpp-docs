@@ -8,7 +8,7 @@ ms.assetid: 5a1d484e-b4c7-4de2-a145-d8dcfc2fc1d2
 ---
 # Compiler Warning (level 1) C4947
 
-'type_or_member' : marked as obsolete
+> 'type_or_member' : marked as obsolete
 
 A member or type was marked as obsolete with the <xref:System.ObsoleteAttribute> class.
 

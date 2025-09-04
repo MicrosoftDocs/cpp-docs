@@ -8,7 +8,7 @@ ms.assetid: d39678fd-0c1a-4104-8a45-9e3f20de0407
 ---
 # Compiler Warning (level 1) C4997
 
-'class': coclass does not implement a COM interface or pseudo-interface
+> 'class': coclass does not implement a COM interface or pseudo-interface
 
 A class marked with the [coclass](../../windows/attributes/coclass.md) attribute did not implement an interface.
 

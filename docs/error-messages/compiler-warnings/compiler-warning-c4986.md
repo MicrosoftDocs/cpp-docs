@@ -8,7 +8,7 @@ ms.assetid: a3a7b008-29dd-4203-85f3-7740ab6790bb
 ---
 # Compiler Warning C4986
 
-'function': exception specification does not match previous declaration
+> 'function': exception specification does not match previous declaration
 
 This warning can be generated when there is an exception specification in one declaration and not the other.
 

@@ -8,7 +8,7 @@ ms.assetid: b89c9274-8a92-4b7c-aa30-3fbb1b68ac73
 ---
 # Compiler Warning (level 1) C4964
 
-No optimization options were specified; profile info will not be collected
+> No optimization options were specified; profile info will not be collected
 
 [/GL](../../build/reference/gl-whole-program-optimization.md) and [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) were specified, but no optimizations were requested, so no .pgc files will be generated and, therefore, no profile-guided optimizations will be possible.
 

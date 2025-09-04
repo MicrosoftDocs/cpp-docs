@@ -8,7 +8,7 @@ ms.assetid: e2905eb1-2e3b-4fab-a48b-c0cae0fd997f
 ---
 # Compiler Warning (level 1) C4944
 
-'symbol' : cannot import symbol from 'assembly1': as 'symbol' already exists in the current scope
+> 'symbol' : cannot import symbol from 'assembly1': as 'symbol' already exists in the current scope
 
 A symbol was defined in a source code file and then a #using statement referenced an assembly that also defined the symbol. The symbol in the assembly is ignored.
 

@@ -8,7 +8,7 @@ ms.assetid: b85cbef0-e053-4de6-9b14-7b0f82d40495
 ---
 # Compiler Warning (level 1) C4946
 
-reinterpret_cast used between related classes: 'class1' and 'class2'
+> reinterpret_cast used between related classes: 'class1' and 'class2'
 
 Do not use [reinterpret_cast](../../cpp/reinterpret-cast-operator.md) to cast between related types. Use [static_cast](../../cpp/static-cast-operator.md) instead, or for polymorphic types, use [dynamic_cast](../../cpp/dynamic-cast-operator.md).
 

@@ -8,7 +8,7 @@ ms.assetid: 34f45a05-c115-49cb-9f67-0bd4f0735d9b
 ---
 # Compiler Warning (level 1 and level 4) C4949
 
-pragmas 'managed' and 'unmanaged' are meaningful only when compiled with '/clr[:option]'
+> pragmas 'managed' and 'unmanaged' are meaningful only when compiled with '/clr[:option]'
 
 The compiler ignores the [managed](../../preprocessor/managed-unmanaged.md) and unmanaged pragmas if the source code is not compiled with [/clr](../../build/reference/clr-common-language-runtime-compilation.md). This warning is informational.
 

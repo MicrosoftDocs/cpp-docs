@@ -8,7 +8,7 @@ ms.assetid: d18e8e65-b2ef-4d75-a207-fbd0c17c9060
 ---
 # Compiler Warning C4972
 
-Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable
+> Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable
 
 Dereferencing a handle to a value type, also known as unboxing, and then assigning to it is not verifiable.
 
