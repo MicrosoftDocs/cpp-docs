@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4957"
 title: "Compiler Warning C4957"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4957"
+ms.date: 11/04/2016
 f1_keywords: ["C4957"]
 helpviewer_keywords: ["C4957"]
-ms.assetid: a18c52d4-23e2-44f1-b4b5-f7fa5a7f3987
 ---
 # Compiler Warning C4957
 

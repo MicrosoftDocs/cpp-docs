@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4972"
 title: "Compiler Warning C4972"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4972"
+ms.date: 11/04/2016
 f1_keywords: ["C4972"]
 helpviewer_keywords: ["C4972"]
-ms.assetid: d18e8e65-b2ef-4d75-a207-fbd0c17c9060
 ---
 # Compiler Warning C4972
 

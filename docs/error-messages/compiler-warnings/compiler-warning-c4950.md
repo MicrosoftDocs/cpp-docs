@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4950"
 title: "Compiler Warning C4950"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4950"
+ms.date: 11/04/2016
 f1_keywords: ["C4950"]
 helpviewer_keywords: ["C4950"]
-ms.assetid: 50226a5c-c664-4d09-ac59-e9e874ca244f
 ---
 # Compiler Warning C4950
 

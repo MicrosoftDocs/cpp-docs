@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4959"
 title: "Compiler Warning C4959"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4959"
+ms.date: 11/04/2016
 f1_keywords: ["C4959"]
 helpviewer_keywords: ["C4959"]
-ms.assetid: 3a128f3e-4d8a-4565-ba1a-5d32fdeb5982
 ---
 # Compiler Warning C4959
 

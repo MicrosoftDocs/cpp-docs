@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4965"
 title: "Compiler Warning (level 1) C4965"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4965"
+ms.date: 11/04/2016
 f1_keywords: ["C4965"]
 helpviewer_keywords: ["C4965"]
-ms.assetid: 47f3f6dc-459b-4a25-9947-f394c8966cb5
 ---
 # Compiler Warning (level 1) C4965
 

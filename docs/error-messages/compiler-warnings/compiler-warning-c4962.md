@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4962"
 title: "Compiler Warning C4962"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4962"
+ms.date: 11/04/2016
 f1_keywords: ["C4962"]
 helpviewer_keywords: ["C4962"]
-ms.assetid: 62b156fe-04e5-4a6e-9339-6ab148185f87
 ---
 # Compiler Warning C4962
 

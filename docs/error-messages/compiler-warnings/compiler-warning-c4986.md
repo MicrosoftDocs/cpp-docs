@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4986"
 title: "Compiler Warning C4986"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4986"
+ms.date: 11/04/2016
 f1_keywords: ["C4986"]
 helpviewer_keywords: ["C4986"]
-ms.assetid: a3a7b008-29dd-4203-85f3-7740ab6790bb
 ---
 # Compiler Warning C4986
 

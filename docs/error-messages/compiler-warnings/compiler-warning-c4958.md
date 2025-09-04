@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4958"
 title: "Compiler Warning C4958"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4958"
+ms.date: 11/04/2016
 f1_keywords: ["C4958"]
 helpviewer_keywords: ["C4958"]
-ms.assetid: e79b9e9c-d572-4a3a-a3b6-60962b70864a
 ---
 # Compiler Warning C4958
 

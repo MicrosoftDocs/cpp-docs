@@ -4,7 +4,6 @@ description: "Explains why Compiler warning C4996 happens, and describes what to
 ms.date: 08/30/2022
 f1_keywords: ["C4996"]
 helpviewer_keywords: ["C4996"]
-ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
 ---
 # Compiler Warning (level 3) C4996
 

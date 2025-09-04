@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4948"
 title: "Compiler Warning (level 2) C4948"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4948"
+ms.date: 11/04/2016
 f1_keywords: ["C4948"]
 helpviewer_keywords: ["C4948"]
-ms.assetid: d006cb17-754a-4c70-ba7f-c3200e2cd8fa
 ---
 # Compiler Warning (level 2) C4948
 

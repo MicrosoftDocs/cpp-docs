@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4953"
 title: "Compiler Warning (level 1) C4953"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 1) C4953"
+ms.date: 08/27/2018
 f1_keywords: ["C4953"]
 helpviewer_keywords: ["C4953"]
-ms.assetid: 3c4f6ac6-3976-41ab-8a27-3c41d7472ea7
 ---
 # Compiler Warning (level 1) C4953
 

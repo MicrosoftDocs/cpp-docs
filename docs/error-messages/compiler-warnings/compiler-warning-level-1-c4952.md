@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4952"
 title: "Compiler Warning (level 1) C4952"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 1) C4952"
+ms.date: 08/27/2018
 f1_keywords: ["C4952"]
 helpviewer_keywords: ["C4952"]
-ms.assetid: 593324f0-5cfe-42fb-b221-2f71308765dd
 ---
 # Compiler Warning (level 1) C4952
 

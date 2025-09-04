@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4951"
 title: "Compiler Warning (level 1) C4951"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 1) C4951"
+ms.date: 08/27/2018
 f1_keywords: ["C4951"]
 helpviewer_keywords: ["C4951"]
-ms.assetid: 669d8bb7-5efa-4ba9-99db-4e65addbf054
 ---
 # Compiler Warning (level 1) C4951
 
