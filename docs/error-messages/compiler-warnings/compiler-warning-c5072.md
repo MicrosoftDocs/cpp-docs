@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C5072"
 title: "Compiler Warning (level 1) C5072"
+description: "Learn more about: Compiler Warning (level 1) C5072"
 ms.date: 02/09/2024
 f1_keywords: ["C5072"]
 helpviewer_keywords: ["C5072"]

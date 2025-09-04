@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C5266"
 title: "Compiler Warning (level 4) C5266"
+description: "Learn more about: Compiler Warning (level 4) C5266"
 ms.date: 01/18/2024
 f1_keywords: ["C5266"]
 helpviewer_keywords: ["C5266"]
