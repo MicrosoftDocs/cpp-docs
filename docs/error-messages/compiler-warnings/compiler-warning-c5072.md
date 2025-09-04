@@ -9,6 +9,8 @@ helpviewer_keywords: ["C5072"]
 
 > ASAN enabled without debug information emission. Enable debug info for better ASAN error reporting
 
+## Remarks
+
 This warning occurs when you compile with [Address Sanitizer](/cpp/sanitizers/asan) (ASAN) turned on, but you don't also instruct the compiler to emit debug info. ASAN uses debug info to provide better diagnostics.
 
 ## Example

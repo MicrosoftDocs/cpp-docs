@@ -9,6 +9,8 @@ helpviewer_keywords: ["C5266"]
 
 > 'const' qualifier on return type has no effect
 
+## Remarks
+
 The C++ Standard specifies that a top-level const (or volatile) qualification on a function return type is ignored.
 
 This warning is off by default.\
