@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4159"
 title: "Compiler Warning (level 3) C4159"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4159"
+ms.date: 11/04/2016
 f1_keywords: ["C4159"]
 helpviewer_keywords: ["C4159"]
-ms.assetid: e2cf964e-f4b8-4b2c-9569-1abb94307232
 ---
 # Compiler Warning (level 3) C4159
 

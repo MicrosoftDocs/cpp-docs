@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler warning (level 2) C4146"
 title: "Compiler warning (level 2) C4146"
+description: "Learn more about: Compiler warning (level 2) C4146"
 ms.date: 04/22/2025
 f1_keywords: ["C4146"]
 helpviewer_keywords: ["C4146"]
@@ -9,9 +9,9 @@ helpviewer_keywords: ["C4146"]
 
 > unary minus operator applied to unsigned type, result still unsigned
 
-Unsigned types only hold non-negative values. So unary minus (negation) usually doesn't make sense when applied to an unsigned type. Both the operand and the result are non-negative.
-
 ## Remarks
+
+Unsigned types only hold non-negative values. So unary minus (negation) usually doesn't make sense when applied to an unsigned type. Both the operand and the result are non-negative.
 
 When you express a negative integer literal, the **`-`** in front of the value is parsed as a [unary negation](../../cpp/unary-plus-and-negation-operators-plus-and.md) operator. The compiler applies the operator after it parses the numeric value. If the numeric value fits in the range of an unsigned integer type, but not the corresponding signed integer type, the compiler interprets the value as unsigned.
 
@@ -28,7 +28,7 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Example
 
-The following sample demonstrates the unexpected behavior that can happen when the compiler generates warning C4146:
+The following example demonstrates the unexpected behavior that can happen when the compiler generates warning C4146:
 
 ```cpp
 // C4146.cpp
