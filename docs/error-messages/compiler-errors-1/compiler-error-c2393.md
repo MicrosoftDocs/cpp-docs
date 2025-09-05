@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2393"
 title: "Compiler Error C2393"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2393"
+ms.date: 11/04/2016
 f1_keywords: ["C2393"]
 helpviewer_keywords: ["C2393"]
-ms.assetid: 4bd95728-e813-4ce8-844a-c6ebe235ca82
 ---
 # Compiler Error C2393
 
@@ -20,7 +19,7 @@ See [/clr (Common Language Runtime Compilation)](../../build/reference/clr-commo
 
 ## Example
 
-The following sample generates C2393. To fix this issue, do not create a data segment.
+The following example generates C2393. To fix this issue, do not create a data segment.
 
 ```cpp
 // C2393.cpp

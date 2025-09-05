@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2386"
 title: "Compiler Error C2386"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2386"
+ms.date: 11/04/2016
 f1_keywords: ["C2386"]
 helpviewer_keywords: ["C2386"]
-ms.assetid: aaaa1284-34a0-4da2-8547-9fcbb559dae0
 ---
 # Compiler Error C2386
 
-'symbol' : a symbol with this name already exists in the current scope
+> 'symbol' : a symbol with this name already exists in the current scope
+
+## Remarks
 
 You tried to create a namespace alias, but the name you chose already exists.
 
-The following sample generates C2386:
+## Example
+
+The following example generates C2386:
 
 ```cpp
 // C2386.cpp
