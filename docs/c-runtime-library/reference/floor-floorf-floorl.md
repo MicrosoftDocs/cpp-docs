@@ -1,6 +1,6 @@
 ---
 title: "floor, floorf, floorl"
-description: "API reference for floor, floorf, and floorl; which calculates the floor of a value." 
+description: "API reference for floor, floorf, and floorl; which calculates the floor of a value."
 ms.date: 9/1/2020
 api_name: ["floorf", "floorl", "floor", "_o_floor", "_o_floorf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
