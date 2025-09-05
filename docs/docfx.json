@@ -273,7 +273,7 @@
         "standard-library/**.yml": "TylerMSFT",
         "text/**.md": "TylerMSFT",
         "text/**.yml": "TylerMSFT",
-        "windows/**.md": "TylerMSFT"
+        "windows/**.md": "TylerMSFT",
         "windows/**.yml": "TylerMSFT"
       },
       "ms.author": {
