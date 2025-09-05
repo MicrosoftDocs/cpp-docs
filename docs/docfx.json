@@ -206,7 +206,7 @@
         "standard-library/**.yml": "3650-days",
         "text/**.md": "3650-days",
         "text/**.yml": "3650-days",
-        "windows/**.md": "1825-days"
+        "windows/**.md": "1825-days",
         "windows/**.yml": "1825-days"
       },
       "author": {
