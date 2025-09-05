@@ -175,7 +175,7 @@
         "c-runtime-library/**.md": "3650-days",
         "c-runtime-library/**.yml": "3650-days",
         "cpp/**.md": "1095-days",
-		"cpp/**.yml": "1095-days",
+	"cpp/**.yml": "1095-days",
         "cppcx/**.md": "3650-days",
         "cppcx/**.yml": "3650-days",
         "cross-platform/**.md": "1825-days",
@@ -340,7 +340,7 @@
         "standard-library/**.yml": "twhitney",
         "text/**.md": "twhitney",
         "text/**.yml": "twhitney",
-        "windows/**.md": "twhitney"
+        "windows/**.md": "twhitney",
         "windows/**.yml": "twhitney"
       }
     },
