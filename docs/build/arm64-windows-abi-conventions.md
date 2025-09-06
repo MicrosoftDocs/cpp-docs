@@ -123,7 +123,7 @@ To determine if an ARM CPU supports exceptions, write a value that enables excep
 
 On ARM64, Windows delivers exceptions for processors that support hardware floating-point exceptions.
 
-The [`_set_controlfp`](/cpp/c-runtime-library/reference/controlfp-s) function on ARM platforms correctly changes the FPCR register when unmasking floating-point exceptions. However, instead of raising an unmasked exception, Windows resets the FPCR register to its defaults every time an FP exception is about to be raised.
+The [`_set_controlfp`](../c-runtime-library/reference/controlfp-s.md) function on ARM platforms correctly changes the FPCR register when unmasking floating-point exceptions. However, instead of raising an unmasked exception, Windows resets the FPCR register to its defaults every time an FP exception is about to be raised.
 
 ## Parameter passing
 
