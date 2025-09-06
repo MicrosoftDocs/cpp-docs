@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: C++ Attributes for COM and .NET"
 title: "C++ Attributes for COM and .NET"
+description: "Learn more about: C++ Attributes for COM and .NET"
+ms.date: 11/19/2018
 ms.custom: "index-page"
-ms.date: "11/19/2018"
 ms.topic: "concept-article"
 helpviewer_keywords: ["attributes [C++/CLI], reference topics"]
-ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
 ---
 # C++ Attributes for COM and .NET
 

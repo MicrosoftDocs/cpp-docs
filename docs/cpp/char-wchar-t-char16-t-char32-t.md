@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: char, wchar_t, char8_t, char16_t, char32_t"
 title: "char, wchar_t, char8_t, char16_t, char32_t"
+description: "Learn more about: char, wchar_t, char8_t, char16_t, char32_t"
 ms.date: 04/23/2021
 ---
 # char, wchar_t, char8_t, char16_t, char32_t
