@@ -163,7 +163,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1) C4383](compiler-warning-level-1-c4383.md)|'*instance_dereference_operator*': the meaning of dereferencing a handle can change, when a user-defined '*instance_dereference_operator*' operator exists; write the operator as a static function to be explicit about the operand|
 |[Compiler warning (level 1) C4384](compiler-warning-level-1-c4384.md)|`#pragma` '*pragma_name*' should only be used at global scope|
 |Compiler warning (level 3) C4387|'*alternative*': was considered|
-|[Compiler warning (level 4, off) C4388](./c4388.md))|'*expression*': signed/unsigned mismatch|
+|[Compiler warning (level 4, off) C4388](./c4388.md)|'*expression*': signed/unsigned mismatch|
 |[Compiler warning (level 4) C4389](compiler-warning-level-4-c4389.md)|'*operator*': signed/unsigned mismatch|
 |[Compiler warning (level 3) C4390](compiler-warning-level-3-c4390.md)|';': empty controlled statement found; is this the intent?|
 |[Compiler warning (level 1) C4391](compiler-warning-level-1-c4391.md)|'*function_signature*': incorrect return type for intrinsic function, expected '*type*'|
