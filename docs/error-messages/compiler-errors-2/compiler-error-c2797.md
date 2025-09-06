@@ -7,9 +7,13 @@ helpviewer_keywords: ["C2797"]
 ---
 # Compiler Error C2797
 
-(Obsolete) List initialization inside member initializer list or non-static data member initializer is not implemented.
+> (Obsolete) List initialization inside member initializer list or non-static data member initializer is not implemented.
+
+## Remarks
 
 This warning is obsolete in Visual Studio 2015. In Visual Studio 2013 and earlier versions, the Microsoft C++ compiler does not implement list initialization inside either a member initializer list or a non-static data member initializer. Before Visual Studio 2013 Update 3, this was silently converted to a function call, which could lead to bad code generation. Visual Studio 2013 Update 3 reports this as an error.
+
+## Examples
 
 This example generates C2797:
 
