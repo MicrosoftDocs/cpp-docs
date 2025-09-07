@@ -53,7 +53,7 @@ Set the optimization level to maximum optimizations:
 
 ## Run Build Insights
 
-On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files may be dirty right now.
+On a project of your choosing, and using the **Release** build options set in the previous section, run Build Insights by choosing from the main menu **Build** > **Run Build Insights on Selection** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. Choose **Rebuild** instead of **Build** to measure the build time for the entire project and not for just the few files that may be dirty right now.
 
 :::image type="content" source="./media/build-insights-rebuild-project.png" alt-text="Screenshot of the main menu with Run Build Insights on Selection > Rebuild selected.":::
 
@@ -69,9 +69,9 @@ In the Function Name column, performPhysicsCalculations() is highlighted and mar
 
 The **Time [sec, %]** column shows how long it took to compile each function in [wall clock responsibility time (WCTR)](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/#:~:text=Today%2C%20we%E2%80%99d%20like%20to%20teach%20you%20about%20a,your%20build%2C%20even%20in%20the%20presence%20of%20parallelism). This metric distributes the wall clock time among functions based on their use of parallel compiler threads. For example, if two different threads are compiling two different functions simultaneously within a one-second period, each function's WCTR is recorded as 0.5 seconds. This reflects each function's proportional share of the total compilation time, taking into account the resources each consumed during parallel execution. Thus, WCTR provides a better measure of the impact each function has on the overall build time in environments where multiple compilation activities occur simultaneously.
 
-The **Forceinline Size** column shows roughly how many instructions were generated for the function. Click the chevron before the function name to see the individual inlined functions that were expanded in that function how roughly how many instructions were generated for each.
+The **Forceinline Size** column shows roughly how many instructions were generated for the function. Click the chevron before the function name to see the individual inlined functions that were expanded in that function and roughly how many instructions were generated for each.
 
-You can sort the list by clicking on the **Time** column to see which functions are taking the most time to compile. A 'fire' icon indicates that cost of generating that function is high and is worth investigating. Excessive use of `__forceinline` functions can significantly slow compilation.
+You can sort the list by clicking on the **Time** column to see which functions are taking the most time to compile. A 'fire' icon indicates that the cost of generating that function is high and is worth investigating. Excessive use of `__forceinline` functions can significantly slow compilation.
 
 You can search for a specific function by using the **Filter Functions** box. If a function's code generation time is too small, it doesn't appear in the **Functions** View.
 
@@ -89,7 +89,7 @@ By selecting the chevron before that function, and then sorting the **Forceinlin
 performPhysicsCalculations() is expanded and shows a long list of functions that were inlined inside it. There are multiple instances of functions such as complexOperation(), recursiveHelper(), and sin() shown. The Forceinline Size column shows that complexOperation() is the largest inlined function at 315 instructions. recursiveHelper() has 119 instructions. Sin() has 75 instructions, but there are many more instances of it than the other functions.
 :::image-end:::
 
-There are some larger inlined functions, such as `Vector2D<float>::complexOperation()` and `Vector2D<float>::recursiveHelper()` that are contributing to the problem. But there are many more instances (not all shown here) of `Vector2d<float>::sin(float)`, `Vector2d<float>::cos(float)`, `Vector2D<float>::power(float,int)`, and `Vector2D<float>::factorial(int)`. When you add those up, the total number of generated instructions quickly exceeds the few larger generated functions.
+There are some larger inlined functions, such as `Vector2D<float>::complexOperation()` and `Vector2D<float>::recursiveHelper()` that are contributing to the problem. But there are many more instances (not all shown here) of `Vector2D<float>::sin(float)`, `Vector2D<float>::cos(float)`, `Vector2D<float>::power(float,int)`, and `Vector2D<float>::factorial(int)`. When you add those up, the total number of generated instructions quickly exceeds the few larger generated functions.
 
 Looking at those functions in the source code, we see that execution time is going to be spent inside loops. For example, here's the code for `factorial()`:
 
@@ -108,7 +108,7 @@ static __forceinline T factorial(int n)
 
 Perhaps the overall cost of calling this function is insignificant compared to the cost of the function itself. Making a function inline is most beneficial when the time it takes to call the function (pushing arguments on the stack, jumping to the function, popping return arguments, and returning from the function) is roughly similar to the time it takes to execute the function, and when the function is called a lot. When that's not the case, there may be diminishing returns on making it inline. We can try removing the `__forceinline` directive from it to see if it helps the build time. The code for `power`, `sin()`, and `cos()` is similar in that the code consists of a loop that executes many times. We can try removing the `__forceinline` directive from those functions as well.
 
-We rerun Build Insights from the main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project, as before, and not for just the few files may be dirty right now.
+We rerun Build Insights from the main menu by choosing **Build** > **Run Build Insights on Selection** > **Rebuild**. You can also right-click a project in the solution explorer and choose **Run Build Insights** > **Rebuild**. We choose **Rebuild** instead of **Build** to measure the build time for the entire project, as before, and not for just the few files that may be dirty right now.
 
 The build time goes from 25.181 seconds to 13.376 seconds and the `performPhysicsCalculations` function doesn't show up anymore in the **Functions** view because it doesn't contribute enough to the build time to be counted.
 
@@ -116,7 +116,7 @@ The build time goes from 25.181 seconds to 13.376 seconds and the `performPhysic
 In the Function Name column, performPhysicsCalculations() is highlighted and marked with a fire icon.
 :::image-end:::
 
-The Diagnostics Session time is the overall time it took do the build plus any overhead for gathering the Build Insights data.
+The Diagnostics Session time is the overall time it took to do the build plus any overhead for gathering the Build Insights data.
 
 The next step would be to profile the application to see if the performance of the application is negatively impacted by the change. If it is, we can selectively add `__forceinline` back as needed.
 
