@@ -21,7 +21,7 @@ To simplify code development for various international markets, the Microsoft ru
 | `_MBCS` | Multibyte-character | `_tcsrev` maps to `_mbsrev` |
 | None (the default: both `_UNICODE` and `_MBCS` not defined) | SBCS (ASCII) | `_tcsrev` maps to `strrev` |
 
-For example, the generic-text function `_tcsrev`, defined in TCHAR.H, maps to `mbsrev` if `MBCS` has been defined in your program, or to `_wcsrev` if `_UNICODE` has been defined. Otherwise `_tcsrev` maps to `strrev`.
+For example, the generic-text function `_tcsrev`, defined in TCHAR.H, maps to `_mbsrev` if `_MBCS` has been defined in your program, or to `_wcsrev` if `_UNICODE` has been defined. Otherwise `_tcsrev` maps to `strrev`.
 
 The generic-text data type `_TCHAR`, also defined in TCHAR.H, maps to type **`char`** if `_MBCS` is defined, to type **`wchar_t`** if `_UNICODE` is defined, and to type **`char`** if neither constant is defined. Other data type mappings are provided in TCHAR.H for programming convenience, but `_TCHAR` is the type that is most useful.
 
@@ -45,7 +45,7 @@ _TCHAR *RetVal, *szString;
 RetVal = _tcsrev(szString);
 ```
 
-If `MBCS` has been defined, the preprocessor maps the preceding fragment to the following code:
+If `_MBCS` has been defined, the preprocessor maps the preceding fragment to the following code:
 
 ```C
 char *RetVal, *szString;
