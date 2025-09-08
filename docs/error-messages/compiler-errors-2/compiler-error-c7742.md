@@ -10,7 +10,11 @@ helpviewer_keywords: ["C7742"]
 
 > *Identifier*: a forward declaration of an enum can only use a simple identifier
 
+## Remarks
+
 The C++ Standard doesn't allow declaring an opaque enumeration using a qualified-id. An opaque enum declaration specifies the name and the underlying type, but doesn't list the enumerators or their values.
+
+## Example
 
 The following example generates C7742:
 
