@@ -10,6 +10,8 @@ ms.assetid: af74db02-a64d-49ca-8363-3e044a107580
 
 > symbol not found
 
+## Remarks
+
 A symbol specified in an expression could not be found.
 
 One possible cause of this error is a case mismatch in the symbol name. Because C and C++ are case-sensitive languages, a symbol name must be given in the exact case in which it is defined in the source.

@@ -10,6 +10,8 @@ ms.assetid: b5bc15f2-f179-4b87-ae88-a57e08e43bfa
 
 > bad format string
 
+## Remarks
+
 A format string was improperly specified. Check the syntax of the expression.
 
 This error is identical to CAN0026.

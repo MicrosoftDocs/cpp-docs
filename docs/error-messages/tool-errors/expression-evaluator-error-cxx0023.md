@@ -10,6 +10,8 @@ ms.assetid: 2de27692-dfb5-433f-82b3-80f118756eec
 
 > bad radix
 
+## Remarks
+
 The C expression evaluator does not recognize the radix specified. Only decimal, hexadecimal, and octal radixes are valid.
 
 This error is identical to CAN0023.

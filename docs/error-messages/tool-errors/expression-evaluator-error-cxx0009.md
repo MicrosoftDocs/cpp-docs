@@ -10,6 +10,8 @@ ms.assetid: b6f26a46-56f3-430f-a6db-b42934ddf331
 
 > missing ' after character constant
 
+## Remarks
+
 The single quote expected at the end of the character constant was missing. Retype the expression, enclosing the character constant in single quotation marks.
 
 This error is identical to CAN0009.

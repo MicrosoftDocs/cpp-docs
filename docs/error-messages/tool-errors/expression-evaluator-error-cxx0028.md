@@ -10,6 +10,8 @@ ms.assetid: 172eb81f-c0b0-43b1-b418-766f35f1a561
 
 > not struct/union element
 
+## Remarks
+
 An expression of the form 'Struct.Member' or 'pStruct->Member' was specified, but \<member> is not an element of the structure.
 
 The expression may not be parenthesized correctly.

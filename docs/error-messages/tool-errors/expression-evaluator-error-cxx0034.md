@@ -10,6 +10,8 @@ ms.assetid: afcee5f1-beff-489f-aea6-04f55e76364f
 
 > types incompatible with operator
 
+## Remarks
+
 The operand types specified are not legal for the operation.
 
 For example, a pointer cannot be multiplied by any value.

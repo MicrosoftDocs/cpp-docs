@@ -10,6 +10,8 @@ ms.assetid: 35efaf77-d578-48d8-bfc5-fdeb2a46a8b5
 
 > expression too complex (stack overflow)
 
+## Remarks
+
 The expression entered was too complex or nested too deeply for the amount of storage available to the C expression evaluator.
 
 Overflow usually occurs because of too many pending calculations.

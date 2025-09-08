@@ -10,6 +10,8 @@ ms.assetid: 3bb0278d-3dd6-4626-9945-3cf29afbbacb
 
 > missing operand
 
+## Remarks
+
 An operator was specified without a required operand. Check the syntax of the expression.
 
 This error is identical to CAN0014.

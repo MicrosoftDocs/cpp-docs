@@ -10,6 +10,8 @@ ms.assetid: adafbcb7-982f-495f-a34d-72e95d7e54c7
 
 > expression not expandable
 
+## Remarks
+
 The expression evaluator encountered an internal error.
 
 You may be able to write an equivalent expression that can be evaluated correctly.

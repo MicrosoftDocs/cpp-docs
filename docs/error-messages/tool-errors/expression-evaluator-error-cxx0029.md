@@ -10,6 +10,8 @@ ms.assetid: 562b2132-e9cb-4591-a5bf-bc7179a7f40e
 
 > not struct pointer
 
+## Remarks
+
 The member-selection operator (**->**) was applied to an expression that is not a pointer to a structure.
 
 Check that the entire expression is parenthesized correctly, or type cast the address expression to the appropriate structure pointer type.

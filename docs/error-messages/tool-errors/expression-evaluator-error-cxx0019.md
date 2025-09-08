@@ -10,6 +10,8 @@ ms.assetid: 4c6431fd-3310-4a61-934d-58b070b330fe
 
 > bad type cast
 
+## Remarks
+
 The C expression evaluator cannot perform the type cast as written.
 
 This error is identical to CAN0019.

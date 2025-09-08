@@ -10,6 +10,8 @@ ms.assetid: a4063eda-0335-4ae7-9595-29cf10669376
 
 > syntax error
 
+## Remarks
+
 The syntax of the expression is incorrect.
 
 Retype the expression with the correct syntax.

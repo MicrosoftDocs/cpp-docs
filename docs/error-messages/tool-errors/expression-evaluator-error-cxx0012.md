@@ -10,6 +10,8 @@ ms.assetid: bf547e21-6708-4854-ad23-2ae5a889fd82
 
 > missing left curly brace
 
+## Remarks
+
 The expression contains an unbalanced curly brace. Retype the expression with balanced curly braces.
 
 This error is identical to CAN0012.

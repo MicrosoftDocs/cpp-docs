@@ -10,6 +10,8 @@ ms.assetid: f6b299ac-a4ee-492c-bd9f-6fff005bc537
 
 > function call before _main
 
+## Remarks
+
 The C expression evaluator cannot evaluate a function before the debugger has entered the function **_main**. The program is not properly initialized until **_main** has been called.
 
 This error is identical to CAN0022.

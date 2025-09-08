@@ -10,6 +10,8 @@ ms.assetid: 5f136470-505f-4224-a29a-2d34e896d78b
 
 > error accessing user memory
 
+## Remarks
+
 The expression attempts to reference memory that is not allocated to the program being debugged.
 
 This error is identical to CAN0002.

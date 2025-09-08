@@ -10,6 +10,8 @@ ms.assetid: d3d115d6-8981-4651-b615-566de867a263
 
 > bad register name
 
+## Remarks
+
 A specified register does not exist or cannot be displayed.
 
 The Watch window can display the following registers:

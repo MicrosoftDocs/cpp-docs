@@ -10,6 +10,8 @@ ms.assetid: 270a6d2d-ea6b-4a94-9871-841a6a133292
 
 > missing right parenthesis
 
+## Remarks
+
 Unbalanced parentheses were found in the expression. Retype the expression with balanced parentheses.
 
 This error is identical to CAN0007.

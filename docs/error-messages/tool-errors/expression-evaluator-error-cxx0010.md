@@ -10,6 +10,8 @@ ms.assetid: 8bd474b0-da12-4990-8569-6392f09f05f6
 
 > missing left bracket
 
+## Remarks
+
 The expression contains unbalanced square brackets. Retype the expression with balanced square brackets.
 
 This error is identical to CAN0010.
