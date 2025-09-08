@@ -1,6 +1,6 @@
 ---
 title: "Compiler error C7688"
-description: Compiler error C7688 description and solution.
+description: "Compiler error C7688 description and solution."
 ms.date: 03/01/2023
 f1_keywords: ["C7688"]
 helpviewer_keywords: ["C7688"]

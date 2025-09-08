@@ -1,6 +1,6 @@
 ---
-description: "Learn about the causes of Compiler error C7536 and how to fix it."
 title: "Compiler Error C7536"
+description: "Learn about the causes of Compiler error C7536 and how to fix it."
 ms.date: 05/03/2021
 f1_keywords: ["C7536"]
 helpviewer_keywords: ["C7536"]

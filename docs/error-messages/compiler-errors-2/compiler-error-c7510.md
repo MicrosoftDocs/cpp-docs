@@ -1,6 +1,6 @@
 ---
-description: "Learn about the causes of Compiler error C7510 and how to fix it."
 title: "Compiler Error C7510"
+description: "Learn about the causes of Compiler error C7510 and how to fix it."
 ms.date: 04/21/2021
 f1_keywords: ["C7510"]
 helpviewer_keywords: ["C7510"]

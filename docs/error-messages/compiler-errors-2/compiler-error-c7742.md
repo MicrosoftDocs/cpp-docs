@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Error C7742"
 title: "Compiler Error C7742"
-ms.date: "07/02/2025"
+description: "Learn more about: Compiler Error C7742"
+ms.date: 07/02/2025
 ai-usage: ai-assisted
 f1_keywords: ["C7742"]
 helpviewer_keywords: ["C7742"]
