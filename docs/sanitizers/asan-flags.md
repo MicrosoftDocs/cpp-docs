@@ -45,7 +45,7 @@ The following table lists the options for the AddressSanitizer. Enable them via 
 |`poison_heap` | `true` | If `true`, poison the heap memory on allocation and deallocation. `false` is useful for benchmarking the allocator or instrumentator.|
 |`poison_partial` | `true` | If `true`, poison partially addressable 8-byte aligned words. This flag affects heap and global buffers, but not stack buffers.|
 |`print_cmdline` | `false` | Print the command line on crash. With `continue_on_error` set >= 1, prints the current working directory and is `UTF-16` aware.|
-|`print_legend` | `true` | If `true`, print the shadow memory map legend. |
+|`print_legend` | `true` | If `true`, print the shadow memory map legend to accompany the ASan report. |
 |`print_stats`| `false` | If `true`, print allocator stats after printing ASan report. |
 |`print_summary` | `true` | If `false`, disables showing error summaries that accompany error reports.|
 |`quarantine_size_mb` | -1 | Size (in Mb) of quarantine used to detect `use-after-free` errors. A lower value may increase the chance of false negatives.|
