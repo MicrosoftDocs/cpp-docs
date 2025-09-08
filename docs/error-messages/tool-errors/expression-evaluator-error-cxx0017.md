@@ -8,7 +8,7 @@ ms.assetid: af74db02-a64d-49ca-8363-3e044a107580
 ---
 # Expression Evaluator Error CXX0017
 
-symbol not found
+> symbol not found
 
 A symbol specified in an expression could not be found.
 

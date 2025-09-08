@@ -8,7 +8,7 @@ ms.assetid: cf571e37-008d-47cd-80fa-59e96b1146e1
 ---
 # Expression Evaluator Error CXX0013
 
-missing operator
+> missing operator
 
 An operator was expected in the expression but was not found. Check the syntax of the expression.
 

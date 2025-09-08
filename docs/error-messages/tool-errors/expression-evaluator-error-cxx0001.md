@@ -8,6 +8,6 @@ ms.assetid: 39cdf175-e4b8-49c1-bf84-ed41e0fd8600
 ---
 # Expression Evaluator Error CXX0001
 
-exception executing user function
+> exception executing user function
 
 The code being executed caused a general protection fault. This error is identical to CAN0001.

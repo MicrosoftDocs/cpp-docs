@@ -8,7 +8,7 @@ ms.assetid: adafbcb7-982f-495f-a34d-72e95d7e54c7
 ---
 # Expression Evaluator Error CXX0031
 
-expression not expandable
+> expression not expandable
 
 The expression evaluator encountered an internal error.
 

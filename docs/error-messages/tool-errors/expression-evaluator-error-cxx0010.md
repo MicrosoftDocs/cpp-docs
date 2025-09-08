@@ -8,7 +8,7 @@ ms.assetid: 8bd474b0-da12-4990-8569-6392f09f05f6
 ---
 # Expression Evaluator Error CXX0010
 
-missing left bracket
+> missing left bracket
 
 The expression contains unbalanced square brackets. Retype the expression with balanced square brackets.
 

@@ -8,7 +8,7 @@ ms.assetid: 35efaf77-d578-48d8-bfc5-fdeb2a46a8b5
 ---
 # Expression Evaluator Error CXX0015
 
-expression too complex (stack overflow)
+> expression too complex (stack overflow)
 
 The expression entered was too complex or nested too deeply for the amount of storage available to the C expression evaluator.
 

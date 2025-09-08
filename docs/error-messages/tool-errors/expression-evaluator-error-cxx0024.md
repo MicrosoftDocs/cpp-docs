@@ -8,7 +8,7 @@ ms.assetid: eca6adbd-8ff2-4f51-a1cc-a2e9d5d0a47d
 ---
 # Expression Evaluator Error CXX0024
 
-operation needs l-value
+> operation needs l-value
 
 An expression that does not evaluate to an l-value was specified for an operation that requires an l-value.
 

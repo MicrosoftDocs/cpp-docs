@@ -8,7 +8,7 @@ ms.assetid: afcee5f1-beff-489f-aea6-04f55e76364f
 ---
 # Expression Evaluator Error CXX0034
 
-**types incompatible with operator**
+> types incompatible with operator
 
 The operand types specified are not legal for the operation.
 

@@ -8,7 +8,7 @@ ms.assetid: 0127cfc0-c292-4923-a58b-25542343cdad
 ---
 # Expression Evaluator Error CXX0027
 
-tp addr not l-value
+> tp addr not l-value
 
 Check the syntax of the expression.
 

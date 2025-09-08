@@ -8,7 +8,7 @@ ms.assetid: 49e0968c-a6ce-4ba9-9762-02a55c08124e
 ---
 # Expression Evaluator Error CXX0008
 
-**missing " at end of string**
+> missing " at end of string
 
 The double quote expected at the end of the string literal was missing. Retype the expression, enclosing the string literal in double quotation marks.
 

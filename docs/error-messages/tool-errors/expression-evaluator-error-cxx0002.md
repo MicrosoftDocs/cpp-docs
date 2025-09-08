@@ -8,7 +8,7 @@ ms.assetid: 5f136470-505f-4224-a29a-2d34e896d78b
 ---
 # Expression Evaluator Error CXX0002
 
-error accessing user memory
+> error accessing user memory
 
 The expression attempts to reference memory that is not allocated to the program being debugged.
 

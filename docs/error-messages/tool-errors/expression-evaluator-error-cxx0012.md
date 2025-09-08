@@ -8,7 +8,7 @@ ms.assetid: bf547e21-6708-4854-ad23-2ae5a889fd82
 ---
 # Expression Evaluator Error CXX0012
 
-missing left curly brace
+> missing left curly brace
 
 The expression contains an unbalanced curly brace. Retype the expression with balanced curly braces.
 

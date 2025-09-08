@@ -8,7 +8,7 @@ ms.assetid: d3d115d6-8981-4651-b615-566de867a263
 ---
 # Expression Evaluator Error CXX0018
 
-bad register name
+> bad register name
 
 A specified register does not exist or cannot be displayed.
 

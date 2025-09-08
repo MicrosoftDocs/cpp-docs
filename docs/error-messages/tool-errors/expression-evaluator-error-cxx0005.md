@@ -8,7 +8,7 @@ ms.assetid: b88e83e4-10aa-4e9c-94d3-92aa8c688748
 ---
 # Expression Evaluator Error CXX0005
 
-operator not supported
+> operator not supported
 
 An unsupported C operator was specified in an expression. Write an equivalent expression using the supported C operators.
 

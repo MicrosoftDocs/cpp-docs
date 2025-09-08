@@ -8,7 +8,7 @@ ms.assetid: 95a7f17d-88ea-4a6c-a3af-2289bf0529fe
 ---
 # Expression Evaluator Error CXX0000
 
-no error condition
+> no error condition
 
 No error has occurred. You can continue debugging normally.
 

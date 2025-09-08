@@ -8,7 +8,7 @@ ms.assetid: 4c6431fd-3310-4a61-934d-58b070b330fe
 ---
 # Expression Evaluator Error CXX0019
 
-bad type cast
+> bad type cast
 
 The C expression evaluator cannot perform the type cast as written.
 

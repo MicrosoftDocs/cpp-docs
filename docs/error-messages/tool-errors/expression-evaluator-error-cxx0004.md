@@ -8,7 +8,7 @@ ms.assetid: a4063eda-0335-4ae7-9595-29cf10669376
 ---
 # Expression Evaluator Error CXX0004
 
-syntax error
+> syntax error
 
 The syntax of the expression is incorrect.
 

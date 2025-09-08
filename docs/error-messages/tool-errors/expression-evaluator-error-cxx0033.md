@@ -8,7 +8,7 @@ ms.assetid: 0bd62c5b-de89-481f-9b12-88fe84805afe
 ---
 # Expression Evaluator Error CXX0033
 
-error in OMF type information
+> error in OMF type information
 
 The executable file did not have a valid object module format (OMF) for debugging.
 

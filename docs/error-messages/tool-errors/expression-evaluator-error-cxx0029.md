@@ -8,7 +8,7 @@ ms.assetid: 562b2132-e9cb-4591-a5bf-bc7179a7f40e
 ---
 # Expression Evaluator Error CXX0029
 
-not struct pointer
+> not struct pointer
 
 The member-selection operator (**->**) was applied to an expression that is not a pointer to a structure.
 

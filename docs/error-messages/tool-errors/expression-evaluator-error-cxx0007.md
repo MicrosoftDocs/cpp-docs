@@ -8,7 +8,7 @@ ms.assetid: 270a6d2d-ea6b-4a94-9871-841a6a133292
 ---
 # Expression Evaluator Error CXX0007
 
-missing right parenthesis
+> missing right parenthesis
 
 Unbalanced parentheses were found in the expression. Retype the expression with balanced parentheses.
 

@@ -8,7 +8,7 @@ ms.assetid: 3e2fb541-63b3-46ac-9f93-3dadb253bcf6
 ---
 # Expression Evaluator Error CXX0025
 
-operator needs struct/union
+> operator needs struct/union
 
 An operator that takes an expression of **`struct`** or **`union`** type was applied to an expression that is not a **`struct`** or **`union`**.
 

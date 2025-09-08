@@ -8,7 +8,7 @@ ms.assetid: d6c0c35a-16c2-42c0-a7d2-e910350a47f0
 ---
 # Expression Evaluator Error CXX0021
 
-struct or union used as scalar
+> struct or union used as scalar
 
 A structure or union was used in an expression, but no element was specified.
 

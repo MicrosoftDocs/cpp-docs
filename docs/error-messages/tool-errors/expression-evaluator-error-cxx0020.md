@@ -8,7 +8,7 @@ ms.assetid: 9dc57c25-e976-44e8-9a4e-db5a79e35bd7
 ---
 # Expression Evaluator Error CXX0020
 
-operand types bad for this operation
+> operand types bad for this operation
 
 An operator was applied to an expression with an invalid type for that operator.
 
