@@ -17,7 +17,7 @@ Compiler error C7688 is new in Visual Studio 2022 version 17.4. In previous comp
 
 ## Example
 
-The sample code shows diagnostics generated for non-scalar types in `#pragma omp atomic` constructs.
+The example code shows diagnostics generated for non-scalar types in `#pragma omp atomic` constructs.
 
 ```cpp
 // C7688.cpp
