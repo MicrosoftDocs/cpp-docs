@@ -10,6 +10,8 @@ ms.assetid: 8e4165c4-7753-4f45-90e9-4542cbb9fc7a
 
 > constructor calls not supported
 
+## Remarks
+
 An expression made a call to a constructor. Expressions cannot make explicit calls to constructors or make conversions that require a call to a constructor.
 
 This error is identical to CAN0062.

@@ -10,4 +10,6 @@ ms.assetid: cf334b23-1e17-4d37-acc5-18597ee84164
 
 > variable needs stack frame
 
+## Remarks
+
 The expression evaluator cannot evaluate the variable because it does not occur in a stack frame. This may be caused by variables declared as part of an inline function.

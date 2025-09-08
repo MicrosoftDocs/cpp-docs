@@ -10,6 +10,8 @@ ms.assetid: 6dcfece4-39ed-489d-b7be-2a17c7b94656
 
 > obsolete OMF - please relink program
 
+## Remarks
+
 The program used an old OMF (Object Module Format).
 
 Relink the program using the current linker version.

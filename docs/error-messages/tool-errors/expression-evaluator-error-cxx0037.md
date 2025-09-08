@@ -10,6 +10,8 @@ ms.assetid: 8059ad65-78b7-465a-98fa-387fd5873ea6
 
 > out of memory
 
+## Remarks
+
 The C expression evaluator ran out of memory evaluating the expression.
 
 This error is identical to CAN0037.

@@ -10,6 +10,8 @@ ms.assetid: 9a3e642b-4746-41ac-b665-bd98a6fa0cb3
 
 > function evaluation not supported
 
+## Remarks
+
 The expression contained a function call. Some expression evaluators do not support function calls.
 
 This error is identical to CAN0067.

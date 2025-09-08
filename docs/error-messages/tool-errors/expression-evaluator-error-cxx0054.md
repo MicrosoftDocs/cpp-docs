@@ -10,6 +10,8 @@ ms.assetid: d5d4a093-6a7a-45c0-8aa7-e555023353ef
 
 > register in breakpoint expression illegal
 
+## Remarks
+
 A register cannot be used in a breakpoint expression.
 
 This error is identical to CAN0054.

@@ -10,6 +10,8 @@ ms.assetid: a76e657b-c018-415b-b426-ce9e72eb645d
 
 > argument list required for member function
 
+## Remarks
+
 An expression called a member function but did not specify any actual parameters.
 
 This error is identical to CAN0046.

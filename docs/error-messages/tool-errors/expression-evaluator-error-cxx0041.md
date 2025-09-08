@@ -10,6 +10,8 @@ ms.assetid: ce8a2366-758f-481b-8c03-ed7d779091b2
 
 > class element must be static member or member function
 
+## Remarks
+
 A nonstatic member of a class (or structure or union) was used without specifying which instantiation of the class to use.
 
 Only static data members or member functions can be used without specifying an instantiation.

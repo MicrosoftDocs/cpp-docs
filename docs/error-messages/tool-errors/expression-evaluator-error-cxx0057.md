@@ -10,6 +10,8 @@ ms.assetid: b1a86998-c642-4061-9f37-9c493f3852cc
 
 > no code at line number
 
+## Remarks
+
 No code was generated for the specified line number. It cannot be used as a breakpoint.
 
 This error is identical to CAN0057.

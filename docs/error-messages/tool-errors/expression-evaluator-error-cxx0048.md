@@ -10,6 +10,8 @@ ms.assetid: 294416f9-5e38-4450-8713-c13bcbaaf615
 
 > calling sequence not supported
 
+## Remarks
+
 A function specified in the expression uses a calling sequence not supported by the C expression evaluator. You cannot call this function in a Watch window expression.
 
 This error is identical to CAN0048.

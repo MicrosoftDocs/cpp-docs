@@ -10,6 +10,8 @@ ms.assetid: 031cd2ed-d9bb-4aa5-9858-71581bcca49c
 
 > more than one overloaded symbol specified in breakpoint
 
+## Remarks
+
 The expression evaluator could not determine which of more than one overloaded symbol to use as a breakpoint.
 
 This error is identical to CAN0051.

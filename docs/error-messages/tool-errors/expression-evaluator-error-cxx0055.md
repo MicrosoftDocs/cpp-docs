@@ -10,6 +10,8 @@ ms.assetid: bb2a81f9-35ea-4b02-a49e-6b2c7023aebd
 
 > ambiguous symbol in context operator
 
+## Remarks
+
 A symbol in the context operator (**{}**) referred to more than one symbol in the program.
 
 The scope resolution operator (`::`) may be able to resolve the ambiguity.

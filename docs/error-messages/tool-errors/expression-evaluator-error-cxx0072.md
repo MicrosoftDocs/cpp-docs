@@ -10,6 +10,8 @@ ms.assetid: fd04e197-cfa9-4097-a070-8fa2111e876d
 
 > Error: type information missing or unknown
 
+## Remarks
+
 The .pch file did not get linked in, or the code has a reference to a type that is in a module not compiled with /Zi.
 
 This error is identical to CAN0067.

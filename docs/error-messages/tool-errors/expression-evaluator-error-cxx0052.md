@@ -10,6 +10,8 @@ ms.assetid: 5060d479-d0a4-4682-b858-c8b9a4f324e6
 
 > member function not present
 
+## Remarks
+
 A member function was specified as a breakpoint but could not be found. Setting a breakpoint at a function that has been inlined can cause this error.
 
 Recompile the file with inlining forced off (/Ob0) to set a breakpoint in this function.

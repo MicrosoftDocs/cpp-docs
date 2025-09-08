@@ -10,6 +10,8 @@ ms.assetid: b6246c6e-5845-4ad5-ac2a-e6c4faf8f3f9
 
 > overloaded operator not found
 
+## Remarks
+
 A class type was specified as the left operand in an expression, but an overloaded operator was not defined for the class.
 
 This error is identical to CAN0058.

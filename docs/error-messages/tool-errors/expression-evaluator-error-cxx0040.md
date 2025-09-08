@@ -10,6 +10,8 @@ ms.assetid: 1914e605-d80b-4abc-9e8f-dbcbefec095b
 
 > function requires implicit conversion
 
+## Remarks
+
 The C expression evaluator does not support implicit conversions involving constructor calls.
 
 This error is identical to CAN0040.
