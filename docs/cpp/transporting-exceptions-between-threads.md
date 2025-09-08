@@ -65,7 +65,7 @@ For more information about the C++ Standards committee proposal, search the Inte
 
 ### Exception-handling models and compiler options
 
-Your application's exception-handling model determines whether it can catch and transport an exception. Visual C++ supports three models for handling C++ exceptions: [ISO-standard C++ exception handling](/cpp/cpp/errors-and-exception-handling-modern-cpp), [structured exception handling (SEH)](/windows/win32/debug/structured-exception-handling), and [common language runtime (CLR) exceptions](/cpp/extensions/exception-handling-cpp-component-extensions). Use the [`/EH`](../build/reference/eh-exception-handling-model.md) and [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler options to specify your application's exception-handling model.
+Your application's exception-handling model determines whether it can catch and transport an exception. Visual C++ supports three models for handling C++ exceptions: [ISO-standard C++ exception handling](errors-and-exception-handling-modern-cpp.md), [structured exception handling (SEH)](/windows/win32/debug/structured-exception-handling), and [common language runtime (CLR) exceptions](../extensions/exception-handling-cpp-component-extensions.md). Use the [`/EH`](../build/reference/eh-exception-handling-model.md) and [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler options to specify your application's exception-handling model.
 
 Only the following combination of compiler options and programming statements can transport an exception. Other combinations either can't catch exceptions, or can catch but can't transport exceptions.
 

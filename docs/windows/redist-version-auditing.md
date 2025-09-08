@@ -16,7 +16,7 @@ ms.topic: how-to
 
 The Microsoft Visual C++ Redistributable and the Visual Studio C++ Runtime (collectively, "VC Runtime") are critical components of many applications. Across your network, machines may still be running applications that install and use an out-of-support version of the VC Runtime. You can use NTFS file auditing to identify such usage as a step towards replacing those applications with ones that use a supported version of the VC Runtime. This guide walks you through setting up NTFS file auditing, provides troubleshooting tips, and highlights the benefits of regular audits.
 
-For more information about the versions of VC Runtime that are no longer supported, see [Microsoft Visual C++ Redistributable latest supported downloads](/cpp/windows/latest-supported-vc-redist).
+For more information about the versions of VC Runtime that are no longer supported, see [Microsoft Visual C++ Redistributable latest supported downloads](latest-supported-vc-redist.md).
 
 ## Enable NTFS file auditing to determine VC Runtime usage
 
