@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Expression Evaluator Error CXX0039"
 title: "Expression Evaluator Error CXX0039"
-ms.date: "11/04/2016"
+description: "Learn more about: Expression Evaluator Error CXX0039"
+ms.date: 11/04/2016
 f1_keywords: ["CXX0039"]
 helpviewer_keywords: ["CXX0039", "CAN0039"]
-ms.assetid: 8bf698d2-e015-4595-944f-72b81aa43d22
 ---
 # Expression Evaluator Error CXX0039
 

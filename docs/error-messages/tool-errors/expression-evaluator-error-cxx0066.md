@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Expression Evaluator Error CXX0066"
 title: "Expression Evaluator Error CXX0066"
-ms.date: "11/04/2016"
+description: "Learn more about: Expression Evaluator Error CXX0066"
+ms.date: 11/04/2016
 f1_keywords: ["CXX0066"]
 helpviewer_keywords: ["CXX0066", "CAN0066"]
-ms.assetid: 1321e4e1-b441-424b-9e76-c208d4a6f6ea
 ---
 # Expression Evaluator Error CXX0066
 

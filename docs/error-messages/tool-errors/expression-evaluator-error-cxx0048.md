@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Expression Evaluator Error CXX0048"
 title: "Expression Evaluator Error CXX0048"
-ms.date: "11/04/2016"
+description: "Learn more about: Expression Evaluator Error CXX0048"
+ms.date: 11/04/2016
 f1_keywords: ["CXX0048"]
 helpviewer_keywords: ["CAN0048", "CXX0048"]
-ms.assetid: 294416f9-5e38-4450-8713-c13bcbaaf615
 ---
 # Expression Evaluator Error CXX0048
 

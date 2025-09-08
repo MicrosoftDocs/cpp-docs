@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Expression Evaluator Error CXX0036"
 title: "Expression Evaluator Error CXX0036"
-ms.date: "11/04/2016"
+description: "Learn more about: Expression Evaluator Error CXX0036"
+ms.date: 11/04/2016
 f1_keywords: ["CXX0036"]
 helpviewer_keywords: ["CXX0036", "CAN0036"]
-ms.assetid: 383404be-df5b-4eec-b113-df21bb5d269d
 ---
 # Expression Evaluator Error CXX0036
 
