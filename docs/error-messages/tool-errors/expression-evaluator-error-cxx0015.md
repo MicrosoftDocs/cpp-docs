@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Expression Evaluator Error CXX0015"
 title: "Expression Evaluator Error CXX0015"
-ms.date: "11/04/2016"
+description: "Learn more about: Expression Evaluator Error CXX0015"
+ms.date: 11/04/2016
 f1_keywords: ["CXX0015"]
 helpviewer_keywords: ["CXX0015", "CAN0015"]
-ms.assetid: 35efaf77-d578-48d8-bfc5-fdeb2a46a8b5
 ---
 # Expression Evaluator Error CXX0015
 
