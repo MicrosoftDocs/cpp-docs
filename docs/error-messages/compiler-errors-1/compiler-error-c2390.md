@@ -23,7 +23,7 @@ Possible resolutions:
 
 ## Example
 
-- The following example generates C2390:
+The following example generates C2390:
 
 ```cpp
 // C2390.cpp
