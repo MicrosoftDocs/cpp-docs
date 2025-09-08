@@ -8,7 +8,7 @@ ms.assetid: 3327dc4e-1726-4924-a519-6ffd766a389c
 ---
 # Expression Evaluator Error CXX0038
 
-function argument count and/or type mismatch
+> function argument count and/or type mismatch
 
 The function call as specified does not match the prototype for the function.
 

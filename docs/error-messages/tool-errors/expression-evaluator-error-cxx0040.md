@@ -8,7 +8,7 @@ ms.assetid: 1914e605-d80b-4abc-9e8f-dbcbefec095b
 ---
 # Expression Evaluator Error CXX0040
 
-function requires implicit conversion
+> function requires implicit conversion
 
 The C expression evaluator does not support implicit conversions involving constructor calls.
 

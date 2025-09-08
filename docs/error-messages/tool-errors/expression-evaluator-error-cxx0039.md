@@ -8,7 +8,7 @@ ms.assetid: 8bf698d2-e015-4595-944f-72b81aa43d22
 ---
 # Expression Evaluator Error CXX0039
 
-symbol is ambiguous
+> symbol is ambiguous
 
 The C expression evaluator cannot determine which instance of a symbol to use in an expression. The symbol occurs more than once in the inheritance tree.
 

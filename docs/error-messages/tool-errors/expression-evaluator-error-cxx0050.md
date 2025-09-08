@@ -8,7 +8,7 @@ ms.assetid: 214cd193-c6dc-41b9-9ebe-5a4b1689d3ab
 ---
 # Expression Evaluator Error CXX0050
 
-left side of :: must be class/struct/union
+> left side of :: must be class/struct/union
 
 The symbol on the left side of the scope-resolution operator (`::`) was not a class, structure, or union.
 

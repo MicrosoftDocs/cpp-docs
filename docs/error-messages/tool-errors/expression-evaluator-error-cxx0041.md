@@ -8,7 +8,7 @@ ms.assetid: ce8a2366-758f-481b-8c03-ed7d779091b2
 ---
 # Expression Evaluator Error CXX0041
 
-class element must be static member or member function
+> class element must be static member or member function
 
 A nonstatic member of a class (or structure or union) was used without specifying which instantiation of the class to use.
 

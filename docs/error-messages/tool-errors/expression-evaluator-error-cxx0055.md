@@ -8,7 +8,7 @@ ms.assetid: bb2a81f9-35ea-4b02-a49e-6b2c7023aebd
 ---
 # Expression Evaluator Error CXX0055
 
-ambiguous symbol in context operator
+> ambiguous symbol in context operator
 
 A symbol in the context operator (**{}**) referred to more than one symbol in the program.
 

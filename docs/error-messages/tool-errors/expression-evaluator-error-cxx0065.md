@@ -8,7 +8,7 @@ ms.assetid: aac68f87-0b90-4c19-afa6-1c587625a5fd
 ---
 # Expression Evaluator Error CXX0065
 
-variable needs stack frame
+> variable needs stack frame
 
 An expression contained a variable that exists within the current scope but hasn't been created yet.
 

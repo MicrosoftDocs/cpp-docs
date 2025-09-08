@@ -8,7 +8,7 @@ ms.assetid: db23d0db-fce2-4d86-b391-6e1d6ad13fd4
 ---
 # Expression Evaluator Error CXX0047
 
-argument list does not match a function
+> argument list does not match a function
 
 An expression called a function with an actual parameter list that did not match the formal parameter list of any function with the same name defined in the program.
 

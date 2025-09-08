@@ -8,7 +8,7 @@ ms.assetid: fa84dcca-87ef-4546-9dce-636ed39e0713
 ---
 # Expression Evaluator Error CXX0061
 
-function nesting depth exceeded
+> function nesting depth exceeded
 
 The expression contains a function nesting depth greater than the limit. Modify the expression to reduce the nesting depth.
 

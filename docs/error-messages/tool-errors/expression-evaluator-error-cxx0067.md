@@ -8,7 +8,7 @@ ms.assetid: 9a3e642b-4746-41ac-b665-bd98a6fa0cb3
 ---
 # Expression Evaluator Error CXX0067
 
-function evaluation not supported
+> function evaluation not supported
 
 The expression contained a function call. Some expression evaluators do not support function calls.
 

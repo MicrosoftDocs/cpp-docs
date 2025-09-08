@@ -8,7 +8,7 @@ ms.assetid: 8059ad65-78b7-465a-98fa-387fd5873ea6
 ---
 # Expression Evaluator Error CXX0037
 
-out of memory
+> out of memory
 
 The C expression evaluator ran out of memory evaluating the expression.
 

@@ -8,7 +8,7 @@ ms.assetid: a76e657b-c018-415b-b426-ce9e72eb645d
 ---
 # Expression Evaluator Error CXX0046
 
-argument list required for member function
+> argument list required for member function
 
 An expression called a member function but did not specify any actual parameters.
 

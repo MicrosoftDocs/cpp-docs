@@ -8,7 +8,7 @@ ms.assetid: d5d4a093-6a7a-45c0-8aa7-e555023353ef
 ---
 # Expression Evaluator Error CXX0054
 
-register in breakpoint expression illegal
+> register in breakpoint expression illegal
 
 A register cannot be used in a breakpoint expression.
 

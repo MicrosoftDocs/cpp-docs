@@ -8,7 +8,7 @@ ms.assetid: 031cd2ed-d9bb-4aa5-9858-71581bcca49c
 ---
 # Expression Evaluator Error CXX0051
 
-more than one overloaded symbol specified in breakpoint
+> more than one overloaded symbol specified in breakpoint
 
 The expression evaluator could not determine which of more than one overloaded symbol to use as a breakpoint.
 

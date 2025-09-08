@@ -8,7 +8,7 @@ ms.assetid: 6dcfece4-39ed-489d-b7be-2a17c7b94656
 ---
 # Expression Evaluator Error CXX0049
 
-obsolete OMF - please relink program
+> obsolete OMF - please relink program
 
 The program used an old OMF (Object Module Format).
 

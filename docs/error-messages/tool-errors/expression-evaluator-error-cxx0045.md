@@ -8,7 +8,7 @@ ms.assetid: 32181bc8-e79c-4ad7-a82f-47c62ec06d7d
 ---
 # Expression Evaluator Error CXX0045
 
-not a function
+> not a function
 
 An argument list was supplied for a symbol in the program that is not the name of a function.
 
