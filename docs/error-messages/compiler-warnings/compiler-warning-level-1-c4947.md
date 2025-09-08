@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4947"
 title: "Compiler Warning (level 1) C4947"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4947"
+ms.date: 11/04/2016
 f1_keywords: ["C4947"]
 helpviewer_keywords: ["C4947"]
-ms.assetid: 5a1d484e-b4c7-4de2-a145-d8dcfc2fc1d2
 ---
 # Compiler Warning (level 1) C4947
 
-'type_or_member' : marked as obsolete
+> 'type_or_member' : marked as obsolete
+
+## Remarks
 
 A member or type was marked as obsolete with the <xref:System.ObsoleteAttribute> class.
 
 ## Example
 
-The following sample generates C4947:
+The following example generates C4947:
 
 ```cpp
 // C4947.cpp
