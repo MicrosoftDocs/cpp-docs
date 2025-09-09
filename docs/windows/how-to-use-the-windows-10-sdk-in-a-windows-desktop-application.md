@@ -40,7 +40,7 @@ To retarget your projects to use the latest Windows SDK when you upgrade from a 
 
    This action changes the values of project macros that include paths to header files and library files. To see what changed, open the **Visual C++ Directories** section of the **Project Properties** dialog. Select one of the properties, such as **Include Directories**. Then, open the property value's dropdown list, and choose **\<Edit>**. The **Include Directories** dialog appears.
 
-   :::image type="content" source="media/retargetingwindowssdk4.PNG" alt-text="Screenshot of the Include Directories dialog showing paths to Windows SDK includes such as C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/Include." lightbox="media/retargetingwindowssdk4.PNG":::
+   :::image type="content" source="media/retargetingwindowssdk4.PNG" alt-text="Screenshot of the Include Directories dialog showing paths to Windows SDK includes such as C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/Include, and so on." lightbox="media/retargetingwindowssdk4.PNG":::
 
    Choose the **Macros >>** button, and scroll down the list of macros to the Windows SDK macros to see all the new values.
 

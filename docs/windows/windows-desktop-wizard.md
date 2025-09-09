@@ -10,9 +10,7 @@ ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
 
 The Windows Desktop Wizard replaces the Win32 Application Wizard in Visual Studio 2017 and later. The wizard allows you to create any of four types of C++ projects (listed in the heading in the table below). In each case, you can specify additional options that are appropriate for the type of project you open.
 
-   ![Screenshot of the Windows Desktop Project wizard.](media/windows-desktop-wizard.png)
-
-:::image type="content" source="media/windows-desktop-wizard.png" alt-text="Screenshot of the Windows Desktop Project wizard. Application type is set to Console Application (.exe) Precompiled Header and Security Development Lifecycle (SDL) checks are selected.":::
+:::image type="content" source="media/windows-desktop-wizard.png" alt-text="Screenshot of the Windows Desktop Project wizard. Application type is set to Console Application (.exe). The Precompiled Header and the Security Development Lifecycle (SDL) checkboxes are selected." Lightbox="media/windows-desktop-wizard.png":::
 
 The following table indicates which options are available for each application type.
 
