@@ -10,4 +10,6 @@ ms.assetid: 49b9bd9e-f1bc-4b55-a171-c748e40b195e
 
 > syntax error : ')' missing in macro invocation
 
+## Remarks
+
 A left parenthesis, **(**, appeared without a matching right parenthesis, **)**, in a macro invocation. The correct form is **$(**<em>name</em>**)**; **$**<em>n</em> is allowed for one-character names.

@@ -10,6 +10,8 @@ ms.assetid: 68f0cc59-007e-4109-ac30-7ac4ac447e6d
 
 > syntax error : expected ':' or '=' separator
 
+## Remarks
+
 Either a colon (**:**) or an equal sign (**=**) was expected.
 
 ### To fix by checking the following possible causes

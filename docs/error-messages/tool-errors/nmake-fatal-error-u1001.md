@@ -10,6 +10,8 @@ ms.assetid: 5d7da559-6cbd-44d6-848c-aaf54cae0d1a
 
 > syntax error : illegal character 'character' in macro
 
+## Remarks
+
 The given character appears in a macro but is not a letter, number, or underscore.
 
 This error can be caused by a missing colon in a macro expansion:

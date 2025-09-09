@@ -10,6 +10,8 @@ ms.assetid: 8639fc39-b4b1-48f5-ac91-0e9fb61680fd
 
 > cycle in macro definition 'macroname'
 
+## Remarks
+
 The given macro definition contained a macro whose definition contained the given macro. Circular macro definitions are invalid.
 
 ## Example

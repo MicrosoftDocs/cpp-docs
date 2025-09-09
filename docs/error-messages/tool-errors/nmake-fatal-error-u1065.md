@@ -10,4 +10,6 @@ ms.assetid: bc890f20-ff46-4073-ab3b-4a5db879f9bd
 
 > invalid option 'option'
 
+## Remarks
+
 The option is not valid for NMAKE.

@@ -10,6 +10,8 @@ ms.assetid: c146f7b5-7d5c-4329-a522-28a648546016
 
 > syntax error : 'string' unexpected
 
+## Remarks
+
 The string is not part of the valid syntax for a makefile.
 
 ### To fix by checking the following possible causes

@@ -10,4 +10,6 @@ ms.assetid: b1d03b6b-ce82-4bbb-9904-d392ba72b437
 
 > syntax error : too many names to left of '='
 
+## Remarks
+
 Only one string is allowed to the left of a macro definition.

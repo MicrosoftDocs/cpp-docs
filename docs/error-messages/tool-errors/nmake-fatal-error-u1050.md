@@ -10,4 +10,6 @@ ms.assetid: 3bb2937e-a804-4592-a9e6-afb63360f554
 
 > message
 
+## Remarks
+
 The message specified with the **!ERROR** directive was displayed.

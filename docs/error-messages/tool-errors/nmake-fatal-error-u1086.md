@@ -10,6 +10,8 @@ ms.assetid: 6d3cd68a-ead6-4a6d-a205-01324785de7e
 
 > inference rule cannot have dependents
 
+## Remarks
+
 The colon (**:**) in an inference rule must be followed by one of these:
 
 - Newline character
