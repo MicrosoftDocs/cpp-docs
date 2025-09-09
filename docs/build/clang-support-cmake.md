@@ -50,7 +50,7 @@ To add a new Clang configuration to a CMake project:
 
 1. Choose the desired Clang configuration (note that separate Clang configurations are provided for Windows and Linux), then press **Select**:
 
-   :::image type="content" source="media/cmake-clang-configuration.png" alt-text="Screenshot of the Add Configuration to C Make Settings dialog for Clang configuration. Contains entries such as Mingw64-Release, x86-Debug, x64-Debug, x86-Clang Debug/Release, and so on.":::
+   :::image type="content" source="media/cmake-clang-configuration.png" alt-text="Screenshot of the Add Configuration to C Make Settings dialog for Clang configuration. Contains entries such as Mingw64-Release, x86-Debug, x64-Debug, x86-Clang Debug, and so on.":::
 
 1. To make modifications to this configuration, use the **CMake Settings Editor**. For more information, see [Customize CMake build settings in Visual Studio](customize-cmake-settings.md).
 
@@ -73,7 +73,7 @@ By default, Visual Studio looks for Clang in two places:
 
 You can specify another location by setting the **CMAKE_C_COMPILER** and **CMAKE_CXX_COMPILER** CMake variables in **CMake Settings**:
 
-:::image type="content" source="media/clang-location-cmake.png" alt-text="Screenshot of the C Make Settings dialog box with the C Make C X X Compiler highlighted. C Make configurations are listed such as x64-Clang-Debug, Linx-Clang-Release, and so on." Lightbox="media/clang-location-cmake.png":::
+:::image type="content" source="media/clang-location-cmake.png" alt-text="Screenshot of the C Make Settings dialog box with the C Make C X X Compiler highlighted. C Make configurations are listed such as x64-Clang-Debug, Linux-Clang-Release, and so on." Lightbox="media/clang-location-cmake.png":::
 
 ## Clang compatibility modes
 
@@ -87,6 +87,6 @@ After you have set up a Clang configuration, you can build and debug the project
 
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features. Some compiler-dependent features such as Edit and Continue aren't available for Clang configurations.
 
-:::image type="content" source="media/clang-debug-visualize.png" alt-text="Screenshot of the Visual Studio debugger debugging a CMake Clang project. The Autos window is visible, showing variables and their values.":::
+:::image type="content" source="media/clang-debug-visualize.png" alt-text="Screenshot of the Visual Studio debugger debugging a CMake Clang project.":::
 
 ::: moniker-end

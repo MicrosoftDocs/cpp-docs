@@ -44,7 +44,7 @@ If you have Visual Studio installed, but you don't have the C++ or MFC component
 
 1. In the Manage Extensions dialog, expand **Online** > **Visual Studio Marketplace** > **Tools** and select **Setup & Deployment**.
 
-   :::image type="content" source="media/vs2019-extension-dialog-installer-project.png" alt-text="Screenshot of the Manage Extensions dialog Microsoft Visual Studio Installer Projects item selected." Lightbox="media/vs2019-extension-dialog-installer-project.png":::
+   :::image type="content" source="media/vs2019-extension-dialog-installer-project.png" alt-text="Screenshot of the Manage Extensions dialog with Microsoft Visual Studio Installer Projects selected." Lightbox="media/vs2019-extension-dialog-installer-project.png":::
 
 1. In the list of extensions, select **Microsoft Visual Studio Installer Projects 2022**. Choose the **Download** button.
 
@@ -84,7 +84,7 @@ If you have Visual Studio installed, but you don't have the C++ or MFC component
 
 1. In the Manage Extensions dialog, expand **Online** > **Visual Studio Marketplace** > **Tools** and select **Setup & Deployment**.
 
-   :::image type="content" source="media/vs2019-extension-dialog-installer-project.png" alt-text="Screenshot of the Manage Extensions dialog Microsoft Visual Studio Installer Projects item selected." Lightbox="media/vs2019-extension-dialog-installer-project.png":::
+   :::image type="content" source="media/vs2019-extension-dialog-installer-project.png" alt-text="Screenshot of the Manage Extensions dialog with Microsoft Visual Studio Installer Projects selected." Lightbox="media/vs2019-extension-dialog-installer-project.png":::
 
 1. In the list of extensions, select **Microsoft Visual Studio Installer Projects**. Choose the **Download** button.
 
@@ -124,7 +124,7 @@ If you have Visual Studio 2017 installed, but you don't have the C++ or MFC comp
 
 1. In the Extensions and Updates dialog, expand **Online** > **Visual Studio Marketplace** > **Tools** and select **Setup & Deployment**. Set the **Sort by** dropdown to **Most Downloads**.
 
-   :::image type="content" source="media/vs2019-extension-dialog-installer-project.png" alt-text="Screenshot of the Manage Extensions dialog Microsoft Visual Studio Installer Projects item selected." Lightbox="media/vs2019-extension-dialog-installer-project.png":::
+   :::image type="content" source="media/vs2019-extension-dialog-installer-project.png" alt-text="Screenshot of the Manage Extensions dialog with Microsoft Visual Studio Installer Projects selected." Lightbox="media/vs2019-extension-dialog-installer-project.png":::
 
 1. In the list of extensions, select **Microsoft Visual Studio Installer Projects**. Choose the **Download** button.
 
