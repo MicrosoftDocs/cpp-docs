@@ -205,14 +205,14 @@ The official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cm
 
 ### Select your compilers
 
-You can set C and C++ compilers by using `environmentVariables.CC` and `environmentVariables.CXX` in a Configure Preset. For more information, see [`CC`](https://cmake.org/cmake/help/latest/envvar/CC.html)/[`CXX`](https://cmake.org/cmake/help/latest/envvar/CXX.html).
+You can set C and C++ compilers by using `environment.CC` and `environment.CXX` in a Configure Preset. For more information, see [`CC`](https://cmake.org/cmake/help/latest/envvar/CC.html)/[`CXX`](https://cmake.org/cmake/help/latest/envvar/CXX.html).
 
 Use the following examples to build with `cl.exe` and `clang-cl.exe` from Visual Studio. The C++ Clang tools for Windows components must be installed for you to build with `clang-cl`.
 
 Build with `cl.exe`:
 
 ```json
-"environmentVariables": {
+"environment": {
   "CC": "cl",
   "CXX": "cl"
 },
@@ -225,7 +225,7 @@ Build with `cl.exe`:
 Build with `clang`:
 
 ```json
-"environmentVariables": {
+"environment": {
   "CC": "clang-cl",
   "CXX": "clang-cl"
 },
@@ -268,7 +268,7 @@ To reproduce these builds outside Visual Studio, see [Run CMake from the command
 To build on Linux or without the Visual C++ toolset, specify the name of a compiler on your `PATH` instance, or an environment variable that evaluates to the full path of a compiler. Full paths are discouraged so that the file can remain shareable. A preset that builds with GCC version 8 might look like this:
 
 ```json
-"environmentVariables": {
+"environment": {
   "CC": "gcc-8",
   "CXX": "g++-8"
 },
