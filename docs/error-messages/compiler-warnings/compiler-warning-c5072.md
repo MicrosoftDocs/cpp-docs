@@ -11,7 +11,7 @@ helpviewer_keywords: ["C5072"]
 
 ## Remarks
 
-This warning occurs when you compile with [Address Sanitizer](/cpp/sanitizers/asan) (ASAN) turned on, but you don't also instruct the compiler to emit debug info. ASAN uses debug info to provide better diagnostics.
+This warning occurs when you compile with [Address Sanitizer](../../sanitizers/asan.md) (ASAN) turned on, but you don't also instruct the compiler to emit debug info. ASAN uses debug info to provide better diagnostics.
 
 ## Example
 
@@ -21,8 +21,8 @@ The following command line generates warning `C5072`:
  cl /fsanitize=address /EHsc test.cpp
 ```
 
-To fix it, have the compiler generate debug information by using a switch like [`/Zi`](/cpp/build/reference/z7-zi-zi-debug-information-format#zi) or [`/Z7`](/cpp/build/reference/z7-zi-zi-debug-information-format#z7), like this: `cl /fsanitize=address /EHsc /Zi test.cpp`
+To fix it, have the compiler generate debug information by using a switch like [`/Zi`](../../build/reference/z7-zi-zi-debug-information-format.md#zi) or [`/Z7`](../../build/reference/z7-zi-zi-debug-information-format.md#z7), like this: `cl /fsanitize=address /EHsc /Zi test.cpp`
 
 ## See also
 
-[Address Sanitizer (ASAN)](/cpp/sanitizers/asan)
+[Address Sanitizer (ASAN)](../../sanitizers/asan.md)
