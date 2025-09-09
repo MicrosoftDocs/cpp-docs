@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (Level 3) C4738"
 title: "Compiler Warning (Level 3) C4738"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (Level 3) C4738"
+ms.date: 11/04/2016
 f1_keywords: ["C4738"]
 helpviewer_keywords: ["C4738"]
-ms.assetid: 9094895f-7eec-46c2-83d3-249b761d585e
 ---
 # Compiler Warning (Level 3) C4738
 
-storing 32-bit float result in memory, possible loss of performance
+> storing 32-bit float result in memory, possible loss of performance
+
+## Remarks
 
 C4738 warns that the result of an assignment, cast, passed argument, or other operation may need to be rounded or that the operation ran out of registers and needed to use memory (spilling). This can result in performance loss.
 
@@ -20,7 +21,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4738:
+The following example generates C4738:
 
 ```cpp
 // C4738.cpp

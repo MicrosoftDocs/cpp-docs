@@ -4,7 +4,6 @@ description: "Explains why Compiler warning C4996 happens, and describes what to
 ms.date: 08/30/2022
 f1_keywords: ["C4996"]
 helpviewer_keywords: ["C4996"]
-ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
 ---
 # Compiler Warning (level 3) C4996
 
@@ -63,7 +62,7 @@ Here are some of the common sources of C4996 warnings and errors:
 
 ## POSIX function names
 
-**`The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name:`** _`new-name.`_ **`See online help for details.`**
+> The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: *`new-name`*. See online help for details.
 
 Microsoft renamed some POSIX and Microsoft-specific library functions in the CRT to conform with C99 and C++03 constraints on reserved and global implementation-defined names. *Only the names are deprecated, not the functions themselves*. In most cases, a leading underscore was added to the function name to create a conforming name. The compiler issues a deprecation warning for the original function name, and suggests the preferred name.
 
@@ -73,7 +72,7 @@ To turn off deprecation warnings for these functions, define the preprocessor ma
 
 ## Unsafe CRT Library functions
 
-**`This function or variable may be unsafe. Consider using`** _`safe-version`_ **`instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.`**
+> This function or variable may be unsafe. Consider using *`safe-version`* instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 
 Microsoft deprecated some CRT and C++ Standard Library functions and globals because more secure versions are available. Most of the deprecated functions allow unchecked read or write access to buffers. Their misuse can lead to serious security issues. The compiler issues a deprecation warning for these functions, and suggests the preferred function.
 
@@ -87,7 +86,7 @@ For more information about these deprecated functions and globals, see [Security
 
 ## Unsafe Standard Library functions
 
-**`'std::`** *`function_name`* **`::_Unchecked_iterators::_Deprecate' Call to std::`** *`function_name`* **`with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'`**
+> 'std:: *`function_name`* ::_Unchecked_iterators::_Deprecate' Call to std:: *`function_name`* with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
 
 In Visual Studio 2015, this warning appears in debug builds because certain C++ Standard Library function templates don't check parameters for correctness. Often it's because not enough information is available to the function to check container bounds. Or, because iterators may be used incorrectly with the function. This warning helps you identify these functions, because they may be a source of serious security holes in your program. For more information, see [Checked iterators](../../standard-library/checked-iterators.md).
 
@@ -248,7 +247,7 @@ For information on how to suppress these warnings, see [`_AFX_SECURE_NO_WARNINGS
 
 ## Obsolete CRT functions and variables
 
-**`This function or variable has been superseded by newer library or operating system functionality. Consider using`** *`new_item`* **`instead. See online help for details.`**
+> This function or variable has been superseded by newer library or operating system functionality. Consider using *`new_item`* instead. See online help for details.
 
 Some library functions and global variables are deprecated as obsolete. These functions and variables may be removed in a future version of the library. The compiler issues a deprecation warning for these items, and suggests the preferred alternative.
 

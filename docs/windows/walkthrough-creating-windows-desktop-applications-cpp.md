@@ -216,7 +216,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
    // szTitle: the text that appears in the title bar
    // WS_OVERLAPPEDWINDOW: the type of window to create
    // CW_USEDEFAULT, CW_USEDEFAULT: initial position (x, y)
-   // 500, 100: initial size (width, length)
+   // 500, 100: initial size (width, height)
    // NULL: the parent of this window
    // NULL: this application does not have a menu bar
    // hInstance: the first parameter from WinMain
@@ -250,7 +250,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
 
    ```cpp
    // The parameters to ShowWindow explained:
-   // hWnd: the value returned from CreateWindow
+   // hWnd: the value returned from CreateWindowEx
    // nCmdShow: the fourth parameter from WinMain
    ShowWindow(hWnd,
       nCmdShow);
@@ -316,9 +316,9 @@ Next, learn how to create the code for a Windows desktop application in Visual S
       // szTitle: the text that appears in the title bar
       // WS_OVERLAPPEDWINDOW: the type of window to create
       // CW_USEDEFAULT, CW_USEDEFAULT: initial position (x, y)
-      // 500, 100: initial size (width, length)
+      // 500, 100: initial size (width, height)
       // NULL: the parent of this window
-      // NULL: this application dows not have a menu bar
+      // NULL: this application does not have a menu bar
       // hInstance: the first parameter from WinMain
       // NULL: not used in this application
       HWND hWnd = CreateWindowEx(
@@ -337,7 +337,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
       if (!hWnd)
       {
          MessageBox(NULL,
-            _T("Call to CreateWindow failed!"),
+            _T("Call to CreateWindowEx failed!"),
             _T("Windows Desktop Guided Tour"),
             NULL);
 
@@ -345,7 +345,7 @@ Next, learn how to create the code for a Windows desktop application in Visual S
       }
 
       // The parameters to ShowWindow explained:
-      // hWnd: the value returned from CreateWindow
+      // hWnd: the value returned from CreateWindowEx
       // nCmdShow: the fourth parameter from WinMain
       ShowWindow(hWnd, nCmdShow);
       UpdateWindow(hWnd);
@@ -503,7 +503,7 @@ As promised, the complete code for the working application follows.
       // szTitle: the text that appears in the title bar
       // WS_OVERLAPPEDWINDOW: the type of window to create
       // CW_USEDEFAULT, CW_USEDEFAULT: initial position (x, y)
-      // 500, 100: initial size (width, length)
+      // 500, 100: initial size (width, height)
       // NULL: the parent of this window
       // NULL: this application does not have a menu bar
       // hInstance: the first parameter from WinMain
@@ -524,7 +524,7 @@ As promised, the complete code for the working application follows.
       if (!hWnd)
       {
          MessageBox(NULL,
-            _T("Call to CreateWindow failed!"),
+            _T("Call to CreateWindowEx failed!"),
             _T("Windows Desktop Guided Tour"),
             NULL);
 
@@ -532,7 +532,7 @@ As promised, the complete code for the working application follows.
       }
 
       // The parameters to ShowWindow explained:
-      // hWnd: the value returned from CreateWindow
+      // hWnd: the value returned from CreateWindowEx
       // nCmdShow: the fourth parameter from WinMain
       ShowWindow(hWnd,
          nCmdShow);
