@@ -3,7 +3,6 @@ description: "Learn more about: MIDL Property Pages"
 title: "MIDL Compiler Property Pages"
 ms.date: "07/24/2019"
 ms.topic: "article"
-ms.assetid: 57498a01-fccc-4a0e-a036-6ff702f83126
 f1_keywords:
   - VC.Project.VCMidlTool.PreprocessorDefinitions
   - VC.Project.VCMidlTool.AdditionalIncludeDirectories
@@ -111,6 +110,9 @@ Specifies the default character type of the C compiler that will be used to comp
 ### Target Environment
 
 Specifies which environment to target ([/env](/windows/win32/midl/-env) arm32|win32|ia64|x64).
+
+> [!NOTE]
+> Starting with Visual Studio 2026, the **`/env:arm32`** option is deprecated and removed. If you need to target ARM32, use the Visual Studio 2022 v143 build tools.
 
 **Choices**
 
