@@ -9,6 +9,8 @@ helpviewer_keywords: ["stack-use-after-return error", "AddressSanitizer error st
 
 > Address Sanitizer Error: Use of stack memory after return
 
+## Remarks
+
 This check requires code generation that's activated by an extra compiler option, [`/fsanitize-address-use-after-return`](../build/reference/fsanitize.md), and by setting the environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.
 
 This check can slow your application down substantially. Consider the [Clang summary](https://github.com/google/sanitizers/wiki/AddressSanitizerUseAfterReturn) of the algorithm that supports use after return, and the larger performance costs.

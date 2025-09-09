@@ -9,6 +9,8 @@ helpviewer_keywords: ["strncat-param-overlap error", "AddressSanitizer error str
 
 > Address Sanitizer Error: strncat-param-overlap
 
+## Remarks
+
 Code that moves memory in overlapping buffer can cause hard-to-diagnose errors.
 
 ## Example

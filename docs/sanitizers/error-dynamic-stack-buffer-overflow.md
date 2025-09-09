@@ -9,6 +9,8 @@ helpviewer_keywords: ["dynamic-stack-buffer-overflow error", "AddressSanitizer e
 
 > Address Sanitizer Error: dynamic-stack-buffer-overflow
 
+## Remarks
+
 This example shows the error that results from a buffer access outside the bounds of a stack-allocated object.
 
 ## Example - `alloca` overflow (right)

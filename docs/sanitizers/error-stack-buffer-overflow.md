@@ -9,6 +9,8 @@ helpviewer_keywords: ["stack-buffer-overflow error", "AddressSanitizer error sta
 
 > Address Sanitizer Error: Stack buffer overflow
 
+## Remarks
+
 A stack buffer overflow can happen many ways in C or C++. We provide several examples for this category of error that you can catch by a simple recompile.
 
 ## Example - stack buffer overflow

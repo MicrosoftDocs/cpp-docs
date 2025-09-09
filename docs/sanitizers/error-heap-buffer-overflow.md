@@ -9,6 +9,8 @@ helpviewer_keywords: ["heap-buffer-overflow error", "AddressSanitizer error heap
 
 > Address Sanitizer Error: Heap buffer overflow
 
+## Remarks
+
 This example demonstrates the error that results when a memory access occurs outside the bounds of a heap-allocated object.
 
 ## Example - classic heap buffer overflow

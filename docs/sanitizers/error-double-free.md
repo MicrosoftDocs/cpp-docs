@@ -11,6 +11,8 @@ ms.custom: sfi-image-nochange
 
 > Address Sanitizer Error: Deallocation of freed memory
 
+## Remarks
+
 In C, you can call `free` erroneously. In C++, you can call `delete` more than once. In these examples, we show errors with `delete`, `free`, and `HeapCreate`.
 
 ## Example C++ - double `operator delete`

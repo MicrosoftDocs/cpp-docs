@@ -9,6 +9,8 @@ helpviewer_keywords: ["invalid-allocation-alignment error", "AddressSanitizer er
 
 > Address Sanitizer Error: invalid-allocation-alignment
 
+## Remarks
+
 The [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md) function requires a power of 2 for expressing the alignment. We simulate the "external" calculation of some alignment factor using an unoptimized global variable.
 
 ## Example

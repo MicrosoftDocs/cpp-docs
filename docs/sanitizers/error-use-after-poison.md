@@ -9,6 +9,8 @@ helpviewer_keywords: ["use-after-poison error", "AddressSanitizer error use-afte
 
 > Address Sanitizer Error: Use of poisoned memory
 
+## Remarks
+
 A developer can manually poison memory to customize debugging.
 
 ## Example

@@ -9,6 +9,8 @@ helpviewer_keywords: ["alloc-dealloc-mismatch error", "AddressSanitizer error al
 
 > Address Sanitizer Error: Mismatch between allocation and deallocation APIs
 
+## Remarks
+
 Enables runtime detection of mismatched memory operations that may lead to undefined behavior, such as:
 - `malloc` must be paired with `free`, not `delete` or `delete[]`.
 - `new` must be paired with `delete`, not `free` or `delete[]`.

@@ -9,6 +9,8 @@ helpviewer_keywords: ["stack-use-after-scope error", "AddressSanitizer error sta
 
 > Address Sanitizer Error: Use of out-of-scope stack memory
 
+## Remarks
+
 The use of a stack address outside the lexical scope of a variable's lifetime can happen many ways in C or C++.
 
 ## Example 1 - simple nested local
