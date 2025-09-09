@@ -13,7 +13,7 @@ You can use Visual Studio to edit, compile, and build any C++ code base with ful
 
 ## C++ compilation
 
-To *build* a C++ program means to compile source code from one or more files and then link those files into an executable file (.exe), a dynamic-load library (.dll) or a static library (.lib).
+To *build* a C++ program means to compile source code from one or more files and then link those files into an executable file (.exe), a dynamic-link library (.dll) or a static library (.lib).
 
 Basic C++ compilation involves three main steps:
 
@@ -39,13 +39,13 @@ Most real-world programs use some kind of *build system* to manage complexities 
 
 The following list shows various options for Visual Studio Projects - C++:
 
-- create a Visual Studio project by using the Visual Studio IDE and configure it by using property pages. Visual Studio projects produce programs that run on Windows. For an overview, see [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio) in the Visual Studio documentation.
+- Create a Visual Studio project by using the Visual Studio IDE and configure it by using property pages. Visual Studio projects produce programs that run on Windows. For an overview, see [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio) in the Visual Studio documentation.
 
-- open a folder that contains a CMakeLists.txt file. CMake support is integrated into Visual Studio. You can use the IDE to edit, test, and debug without modifying the CMake files in any way. This enables you to work in the same CMake project as others who might be using different editors. CMake is the recommended approach for cross-platform development. For more information, see [CMake projects](cmake-projects-in-visual-studio.md).
+- Open a folder that contains a CMakeLists.txt file. CMake support is integrated into Visual Studio. You can use the IDE to edit, test, and debug without modifying the CMake files in any way. This enables you to work in the same CMake project as others who might be using different editors. CMake is the recommended approach for cross-platform development. For more information, see [CMake projects](cmake-projects-in-visual-studio.md).
 
-- open a loose folder of source files with no project file. Visual Studio will use heuristics to build the files. This is an easy way to compile and run small console applications. For more information, see [Open Folder projects](open-folder-projects-cpp.md).
+- Open a loose folder of source files with no project file. Visual Studio will use heuristics to build the files. This is an easy way to compile and run small console applications. For more information, see [Open Folder projects](open-folder-projects-cpp.md).
 
-- open a folder that contains a makefile, or any other build system configuration file. You can configure Visual Studio to invoke any arbitrary build commands by adding JSON files to the folder. For more information, see [Open Folder projects](open-folder-projects-cpp.md).
+- Open a folder that contains a makefile, or any other build system configuration file. You can configure Visual Studio to invoke any arbitrary build commands by adding JSON files to the folder. For more information, see [Open Folder projects](open-folder-projects-cpp.md).
 
 - Open a Windows makefile in Visual Studio. For more information, see [NMAKE Reference](reference/nmake-reference.md).
 
@@ -86,7 +86,7 @@ How to target 64-bit x64 hardware with the MSVC build tools.
 How to use the MSVC build tools to target ARM hardware.
 
 [Optimizing Your Code](optimizing-your-code.md)\
-How to optimize your code in various ways including program guided optimizations.
+How to optimize your code in various ways including profile-guided optimization (PGO).
 
 [Configuring Programs for Windows XP](configuring-programs-for-windows-xp.md)\
 How to target Windows XP with the MSVC build tools.
