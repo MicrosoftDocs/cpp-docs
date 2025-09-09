@@ -3,7 +3,6 @@ title: "How to: Use the Windows SDK in a Windows Desktop application"
 description: "How to set the target SDK version in a Windows Desktop application project to use the latest Windows SDK."
 ms.custom: "get-started-article"
 ms.date: "01/22/2020"
-ms.assetid: eed6421e-9355-44a6-9582-3f1d453a6d44
 ---
 # How to: Use the Windows SDK in a Windows Desktop application
 
@@ -25,7 +24,7 @@ To retarget your projects to use the latest Windows SDK when you upgrade from a 
 
 1. Open the shortcut menu for the project node, and choose **Retarget projects**. (In earlier versions of Visual Studio, choose **Retarget SDK Version**.) The **Review Solution Actions** dialog appears.
 
-   ![Review Solution Actions.](../windows/media/retargetingwindowssdk2.PNG "RetargetingWindowsSDK2")
+   :::image type="content" source="../windows/media/retargetingwindowssdk2.PNG" alt-text="Screenshot of the Review Solution Actions dialog. Target Platform Versions is set to 10.0.10156.0":::
 
 1. In the **Target Platform Version** dropdown list, choose the version of the Windows SDK you want to target. Generally speaking, we recommend you choose the latest installed version. Choose the **OK** button to apply the change.
 
@@ -37,15 +36,15 @@ To retarget your projects to use the latest Windows SDK when you upgrade from a 
 
 1. Open the project properties dialog. In the **Configuration Properties** > **General** section, notice the values of **Windows Target Platform Version**. Changing the value here has the same effect as following this procedure. For more information, see [General Property Page (Project)](../build/reference/general-property-page-project.md).
 
-   ![Target Platform property in the Property Pages dialog.](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
+   :::image type="content" source="../windows/media/retargetingwindowssdk3.PNG" alt-text="Screenshot of the Property Pages dialog. Target Platform Version is set to 8.1." lightbox="../windows/media/retargetingwindowssdk3.PNG":::
 
    This action changes the values of project macros that include paths to header files and library files. To see what changed, open the **Visual C++ Directories** section of the **Project Properties** dialog. Select one of the properties, such as **Include Directories**. Then, open the property value's dropdown list, and choose **\<Edit>**. The **Include Directories** dialog appears.
 
-   ![Include Directories dialog box.](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")
+   :::image type="content" source="../windows/media/retargetingwindowssdk4.PNG" alt-text="Screenshot of the Include Directories dialog showing paths to Windows SDK includes such as C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/Include." lightbox="../windows/media/retargetingwindowssdk4.PNG":::
 
    Choose the **Macros >>** button, and scroll down the list of macros to the Windows SDK macros to see all the new values.
 
-   ![List of Windows SDK Macros.](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
+    :::image type="content" source="../windows/media/retargetingwindowssdk5.PNG" alt-text="Screenshot of the macros dialog showing Windows SDK-related macros and their values. For example, $(windir) is c:/Windows." lightbox="../windows/media/retargetingwindowssdk5.PNG":::
 
 1. Repeat the retargeting procedure for other solution projects, as needed, and rebuild the solution.
 

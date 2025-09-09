@@ -12,6 +12,8 @@ The Windows Desktop Wizard replaces the Win32 Application Wizard in Visual Studi
 
    ![Screenshot of the Windows Desktop Project wizard.](media/windows-desktop-wizard.png)
 
+:::image type="content" source="media/windows-desktop-wizard.png" alt-text="Screenshot of the Windows Desktop Project wizard. Application type is set to Console Application (.exe) Precompiled Header and Security Development Lifecycle (SDL) checks are selected.":::
+
 The following table indicates which options are available for each application type.
 
 |Type of support|Console application|Executable (Windows) application|Dynamic-link library|Static library|
