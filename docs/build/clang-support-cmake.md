@@ -38,7 +38,6 @@ For the best IDE support in Visual Studio, we recommend using the latest Clang c
 ::: moniker-end
 ::: moniker range=">=msvc-160"
 
-
 ## Create a new configuration
 
 To add a new Clang configuration to a CMake project:
@@ -47,11 +46,11 @@ To add a new Clang configuration to a CMake project:
 
 1. Under **Configurations**, press the **Add Configuration** button:
 
-   :::image type="content" source="media/cmake-add-config-icon.png" alt-text="Screenshot of the controls at the top of the C Make Settings dialog, with the Add Configuration button highlighted.":::
+   :::image type="content" source="media/cmake-add-config-icon.png" alt-text="Screenshot of the controls at the top of the C Make Settings dialog. The Add Configuration button is highlighted.":::
 
 1. Choose the desired Clang configuration (note that separate Clang configurations are provided for Windows and Linux), then press **Select**:
 
-   :::image type="content" source="media/cmake-clang-configuration.png" alt-text="Screenshot of the Add Configuration to C Make Settings dialog for Clang configuration. Contains entries such as Mingw64-Release, x86-Debug/Release, x64-Debug/Release, x86-Clang Debug/Release.":::
+   :::image type="content" source="media/cmake-clang-configuration.png" alt-text="Screenshot of the Add Configuration to C Make Settings dialog for Clang configuration. Contains entries such as Mingw64-Release, x86-Debug, x64-Debug, x86-Clang Debug/Release, and so on.":::
 
 1. To make modifications to this configuration, use the **CMake Settings Editor**. For more information, see [Customize CMake build settings in Visual Studio](customize-cmake-settings.md).
 
