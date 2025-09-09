@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1064"
 title: "NMAKE Fatal Error U1064"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1064"
+ms.date: 11/04/2016
 f1_keywords: ["U1064"]
 helpviewer_keywords: ["U1064"]
-ms.assetid: 7141e66e-cde6-4173-84df-a391f3ebcdd1
 ---
 # NMAKE Fatal Error U1064
 

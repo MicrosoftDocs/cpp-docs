@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1045"
 title: "NMAKE Fatal Error U1045"
-ms.date: "08/11/2019"
+description: "Learn more about: NMAKE Fatal Error U1045"
+ms.date: 08/11/2019
 f1_keywords: ["U1045"]
 helpviewer_keywords: ["U1045"]
-ms.assetid: dc70d162-14b9-4107-9237-7514044d72e3
 ---
 # NMAKE Fatal Error U1045
 

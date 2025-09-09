@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1083"
 title: "NMAKE Fatal Error U1083"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1083"
+ms.date: 11/04/2016
 f1_keywords: ["U1083"]
 helpviewer_keywords: ["U1083"]
-ms.assetid: b09bc34d-35d5-4676-b000-fd7d434400d9
 ---
 # NMAKE Fatal Error U1083
 

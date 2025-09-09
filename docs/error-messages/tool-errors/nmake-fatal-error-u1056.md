@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1056"
 title: "NMAKE Fatal Error U1056"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1056"
+ms.date: 11/04/2016
 f1_keywords: ["U1056"]
 helpviewer_keywords: ["U1056"]
-ms.assetid: da855728-b69e-413c-83ed-df912126215e
 ---
 # NMAKE Fatal Error U1056
 

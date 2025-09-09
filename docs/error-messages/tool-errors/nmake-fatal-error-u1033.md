@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1033"
 title: "NMAKE Fatal Error U1033"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1033"
+ms.date: 11/04/2016
 f1_keywords: ["U1033"]
 helpviewer_keywords: ["U1033"]
-ms.assetid: c146f7b5-7d5c-4329-a522-28a648546016
 ---
 # NMAKE Fatal Error U1033
 

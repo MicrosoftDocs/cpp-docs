@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1001"
 title: "NMAKE Fatal Error U1001"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1001"
+ms.date: 11/04/2016
 f1_keywords: ["U1001"]
 helpviewer_keywords: ["U1001"]
-ms.assetid: 5d7da559-6cbd-44d6-848c-aaf54cae0d1a
 ---
 # NMAKE Fatal Error U1001
 

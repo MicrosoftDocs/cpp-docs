@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1035"
 title: "NMAKE Fatal Error U1035"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1035"
+ms.date: 11/04/2016
 f1_keywords: ["U1035"]
 helpviewer_keywords: ["U1035"]
-ms.assetid: 68f0cc59-007e-4109-ac30-7ac4ac447e6d
 ---
 # NMAKE Fatal Error U1035
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1078"
 title: "NMAKE Fatal Error U1078"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1078"
+ms.date: 11/04/2016
 f1_keywords: ["U1078"]
 helpviewer_keywords: ["U1078"]
-ms.assetid: 24087955-9362-4ddf-9966-e0de43ea4647
 ---
 # NMAKE Fatal Error U1078
 

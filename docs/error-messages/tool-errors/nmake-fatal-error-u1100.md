@@ -4,7 +4,6 @@ description: "A description of the causes of Microsoft NMAKE fatal error U1100."
 ms.date: 07/17/2020
 f1_keywords: ["U1100"]
 helpviewer_keywords: ["U1100"]
-ms.assetid: c71910a7-c581-4d9c-a38c-d2d557d56289
 ---
 # NMAKE Fatal Error U1100
 

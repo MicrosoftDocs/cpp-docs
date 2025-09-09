@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1095"
 title: "NMAKE Fatal Error U1095"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1095"
+ms.date: 11/04/2016
 f1_keywords: ["U1095"]
 helpviewer_keywords: ["U1095"]
-ms.assetid: a392582b-06db-4568-9c13-450293a4fbda
 ---
 # NMAKE Fatal Error U1095
 
