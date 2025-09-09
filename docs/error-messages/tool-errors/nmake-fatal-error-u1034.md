@@ -8,6 +8,6 @@ ms.assetid: 27e678c2-23e2-4247-87f7-66493784af33
 ---
 # NMAKE Fatal Error U1034
 
-syntax error : separator missing
+> syntax error : separator missing
 
 The colon (**:**) that separates targets and dependents is missing.

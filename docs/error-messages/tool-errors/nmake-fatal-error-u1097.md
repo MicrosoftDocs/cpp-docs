@@ -8,6 +8,6 @@ ms.assetid: dc6868b3-8425-4920-858a-774ad0c4c5f1
 ---
 # NMAKE Fatal Error U1097
 
-filename-parts syntax requires dependent
+> filename-parts syntax requires dependent
 
 The current dependency does not have either an explicit dependent or an implicit dependent. Filename-parts syntax, which uses the percent (`%`) specifier, represents components of the first dependent of the current target.

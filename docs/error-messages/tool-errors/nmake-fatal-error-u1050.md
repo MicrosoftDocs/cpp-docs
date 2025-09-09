@@ -8,6 +8,6 @@ ms.assetid: 3bb2937e-a804-4592-a9e6-afb63360f554
 ---
 # NMAKE Fatal Error U1050
 
-message
+> message
 
 The message specified with the **!ERROR** directive was displayed.

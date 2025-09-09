@@ -8,7 +8,7 @@ ms.assetid: 70d989f8-ef34-4ad7-8fe0-5b800556b2a1
 ---
 # NMAKE Fatal Error U1077
 
-'program' : return code 'value'
+> 'program' : return code 'value'
 
 The given command or program called by NMAKE failed and returned the given exit code.
 

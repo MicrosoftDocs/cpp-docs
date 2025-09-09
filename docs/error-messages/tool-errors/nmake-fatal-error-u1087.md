@@ -8,7 +8,7 @@ ms.assetid: 5236ab54-e117-484d-99c3-852b061fd3d0
 ---
 # NMAKE Fatal Error U1087
 
-cannot have : and :: dependents for same target
+> cannot have : and :: dependents for same target
 
 A target cannot be specified in both a single-colon (**:**) and a double-colon (`::`) dependency.
 

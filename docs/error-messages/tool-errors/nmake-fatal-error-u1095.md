@@ -8,7 +8,7 @@ ms.assetid: a392582b-06db-4568-9c13-450293a4fbda
 ---
 # NMAKE Fatal Error U1095
 
-expanded command line 'commandline' too long
+> expanded command line 'commandline' too long
 
 After macro expansion, the given command line exceeded the limit on length of command lines for the operating system.
 

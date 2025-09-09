@@ -8,6 +8,6 @@ ms.assetid: 75f3527b-9923-408b-a66e-701322c63803
 ---
 # NMAKE Fatal Error U1088
 
-invalid separator '::' on inference rule
+> invalid separator '::' on inference rule
 
 An inference rule must be followed by a single colon (**:**).

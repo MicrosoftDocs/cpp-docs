@@ -8,7 +8,7 @@ ms.assetid: c146f7b5-7d5c-4329-a522-28a648546016
 ---
 # NMAKE Fatal Error U1033
 
-syntax error : 'string' unexpected
+> syntax error : 'string' unexpected
 
 The string is not part of the valid syntax for a makefile.
 

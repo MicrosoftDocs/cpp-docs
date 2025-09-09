@@ -8,7 +8,7 @@ ms.assetid: d46bf2dd-400a-4802-9db2-f832e1c97f02
 ---
 # NMAKE Fatal Error U1073
 
-don't know how to make 'targetname'
+> don't know how to make 'targetname'
 
 The specified target does not exist, and there is no command to execute or inference rule to apply.
 

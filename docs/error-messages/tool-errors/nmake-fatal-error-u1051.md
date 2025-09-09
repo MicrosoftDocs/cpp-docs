@@ -8,7 +8,7 @@ ms.assetid: fede5cd5-dac3-47b7-b86d-e1acfb78699f
 ---
 # NMAKE Fatal Error U1051
 
-out of memory
+> out of memory
 
 NMAKE ran out of memory, including virtual memory, because the makefile was too large or complex.
 

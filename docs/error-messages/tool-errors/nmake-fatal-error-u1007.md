@@ -8,7 +8,7 @@ ms.assetid: 64fd78a6-5b27-4aa8-92ea-f1c55e6e5edd
 ---
 # NMAKE Fatal Error U1007
 
-double quotation mark not allowed in name
+> double quotation mark not allowed in name
 
 The specified target name or filename contained a double quotation mark (**"**).
 

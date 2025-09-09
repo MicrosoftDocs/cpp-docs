@@ -8,7 +8,7 @@ ms.assetid: 1d453922-ba7e-497f-a795-d8d959c40555
 ---
 # NMAKE Fatal Error U1055
 
-out of environment space
+> out of environment space
 
 The operating system ran out of room for environment variables.
 

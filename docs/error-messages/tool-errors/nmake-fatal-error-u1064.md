@@ -8,7 +8,7 @@ ms.assetid: 7141e66e-cde6-4173-84df-a391f3ebcdd1
 ---
 # NMAKE Fatal Error U1064
 
-MAKEFILE not found and no target specified
+> MAKEFILE not found and no target specified
 
 The NMAKE command line did not specify a makefile or a target, and the current directory did not contain a file named MAKEFILE.
 

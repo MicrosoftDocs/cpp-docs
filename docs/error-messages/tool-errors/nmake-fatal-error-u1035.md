@@ -8,7 +8,7 @@ ms.assetid: 68f0cc59-007e-4109-ac30-7ac4ac447e6d
 ---
 # NMAKE Fatal Error U1035
 
-syntax error : expected ':' or '=' separator
+> syntax error : expected ':' or '=' separator
 
 Either a colon (**:**) or an equal sign (**=**) was expected.
 

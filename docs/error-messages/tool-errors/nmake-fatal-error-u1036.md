@@ -8,6 +8,6 @@ ms.assetid: b1d03b6b-ce82-4bbb-9904-d392ba72b437
 ---
 # NMAKE Fatal Error U1036
 
-syntax error : too many names to left of '='
+> syntax error : too many names to left of '='
 
 Only one string is allowed to the left of a macro definition.

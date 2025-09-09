@@ -8,7 +8,7 @@ ms.assetid: f8a6c646-0c49-4ee3-bb74-ab916a7aa6ff
 ---
 # NMAKE Fatal Error U1076
 
-name too long
+> name too long
 
 A string exceeded one of the following limits:
 

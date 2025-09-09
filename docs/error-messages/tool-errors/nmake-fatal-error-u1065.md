@@ -8,6 +8,6 @@ ms.assetid: bc890f20-ff46-4073-ab3b-4a5db879f9bd
 ---
 # NMAKE Fatal Error U1065
 
-invalid option 'option'
+> invalid option 'option'
 
 The option is not valid for NMAKE.

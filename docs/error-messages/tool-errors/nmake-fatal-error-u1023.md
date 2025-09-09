@@ -8,7 +8,7 @@ ms.assetid: 22d4c469-85da-43ee-86d1-171b1b99217d
 ---
 # NMAKE Fatal Error U1023
 
-syntax error in expression
+> syntax error in expression
 
 An expression is invalid.
 
