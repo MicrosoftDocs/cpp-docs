@@ -26,14 +26,14 @@ You can use Visual Studio with Clang to edit and debug C++ CMake projects that t
 
 For the best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose the **C++ Clang-cl for v142 build tools** or **C++ Clang-cl for v143 build tools** component.
 
-![Screenshot of the Visual Studio Installer Individual Components page that shows Clang components available for installation.](media/clang-install-vs2019.png)
+:::image type="content" source="media/clang-install-vs2019.png" alt-text="Screenshot of the Visual Studio Installer Individual Components page. C++ Clang Compiler For Windows and C++ Clang-cl for v142 build tools are selected.":::
 
 ::: moniker-end
 ::: moniker range="msvc-170"
 
 For the best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. You may prefer to use an existing Clang installation on your machine; if so, choose the **MSBuild support for LLVM (clang-cl) toolset** component.
 
-![Screenshot of the Visual Studio Installer Individual Components page that shows Clang components available for installation.](media/clang-install-vs2022.png)
+:::image type="content" source="media/clang-install-vs2022.png" alt-text="Screenshot of the Visual Studio Installer Individual Components page. C++ Clang Compiler For Windows and MSBuild support for LLVM are selected.":::
 
 ::: moniker-end
 ::: moniker range=">=msvc-160"
@@ -47,11 +47,11 @@ To add a new Clang configuration to a CMake project:
 
 1. Under **Configurations**, press the **Add Configuration** button:
 
-   ![Screenshot of the controls at the top of the C Make Settings dialog, with the Add Configuration control highlighted.](media/cmake-add-config-icon.png)
+   :::image type="content" source="media/cmake-add-config-icon.png" alt-text="Screenshot of the controls at the top of the C Make Settings dialog, with the Add Configuration button highlighted.":::
 
 1. Choose the desired Clang configuration (note that separate Clang configurations are provided for Windows and Linux), then press **Select**:
 
-   ![Screenshot of the Add Configuration to C Make Settings dialog for Clang configuration.](media/cmake-clang-configuration.png)
+   :::image type="content" source="media/cmake-clang-configuration.png" alt-text="Screenshot of the Add Configuration to C Make Settings dialog for Clang configuration. Contains entries such as Mingw64-Release, x86-Debug/Release, x64-Debug/Release, x86-Clang Debug/Release.":::
 
 1. To make modifications to this configuration, use the **CMake Settings Editor**. For more information, see [Customize CMake build settings in Visual Studio](customize-cmake-settings.md).
 
@@ -63,7 +63,7 @@ To modify an existing configuration to use Clang, follow these steps:
 
 1. Under **General** select the **Toolset** dropdown and choose the desired Clang toolset:
 
-   ![Screenshot of the General dialog box showing that the Toolset is selected and clang cl x 86 is highlighted.](media/cmake-clang-toolset.png)
+   ![Screenshot of the General dialog box showing the Toolset drop-down and clang cl x 86 is highlighted.](media/cmake-clang-toolset.png)
 
 ## Custom Clang locations
 
@@ -74,7 +74,7 @@ By default, Visual Studio looks for Clang in two places:
 
 You can specify another location by setting the **CMAKE_C_COMPILER** and **CMAKE_CXX_COMPILER** CMake variables in **CMake Settings**:
 
-![Screenshot of the C Make Settings dialog box with the C Make C X X Compiler highlighted.](media/clang-location-cmake.png)
+:::image type="content" source="media/clang-location-cmake.png" alt-text="Screenshot of the C Make Settings dialog box with the C Make C X X Compiler highlighted. C Make configurations are listed such as x64-Clang-Debug, Linx-Clang-Release, and so on." Lightbox="media/clang-location-cmake.png":::
 
 ## Clang compatibility modes
 
@@ -88,6 +88,6 @@ After you have set up a Clang configuration, you can build and debug the project
 
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features. Some compiler-dependent features such as Edit and Continue aren't available for Clang configurations.
 
-![Screenshot of the Visual Studio debugger debugging a CMake Clang project.](media/clang-debug-visualize.png)
+:::image type="content" source="media/clang-debug-visualize.png" alt-text="Screenshot of the Visual Studio debugger debugging a CMake Clang project. The Autos window is visible, showing variables and their values.":::
 
 ::: moniker-end
