@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: C++ Attributes for COM and .NET"
 title: "C++ Attributes for COM and .NET"
+description: "Learn more about: C++ Attributes for COM and .NET"
+ms.date: 11/19/2018
 ms.custom: "index-page"
-ms.date: "11/19/2018"
 ms.topic: "concept-article"
 helpviewer_keywords: ["attributes [C++/CLI], reference topics"]
-ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
 ---
 # C++ Attributes for COM and .NET
 
@@ -96,11 +95,11 @@ This field lists other attributes that are incompatible with the specified attri
 
 ## Debug injected code
 
-Using attributes can greatly simplify C++ programming. For more information, see [Concepts](/cpp/windows/attributed-programming-concepts). Some attributes are interpreted directly by the compiler. Other attributes inject code into the program source, which the compiler then compiles. This injected code makes programming easier by reducing the amount of code you have to write. Sometimes, however, a bug may cause your application to fail while it is executing injected code. When this happens, you will probably want to look at the injected code. Visual Studio provides two ways for you to see injected code:
+Using attributes can greatly simplify C++ programming. Some attributes are interpreted directly by the compiler. Other attributes inject code into the program source, which the compiler then compiles. This injected code makes programming easier by reducing the amount of code you have to write. Sometimes, however, a bug may cause your application to fail while it is executing injected code. When this happens, you will probably want to look at the injected code. Visual Studio provides two ways for you to see injected code:
 
 - You can view injected code in the **Disassembly** window.
 
-- Using [/Fx](/cpp/build/reference/fx-merge-injected-code), you can create a merged source file that contains original and injected code.
+- Using [/Fx](../../build/reference/fx-merge-injected-code.md), you can create a merged source file that contains original and injected code.
 
 The **Disassembly** window shows assembly-language instructions that correspond to the source code and the code injected by attributes. In addition, the **Disassembly** window can show the source-code annotation.
 
