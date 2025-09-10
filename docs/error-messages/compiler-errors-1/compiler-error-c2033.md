@@ -11,7 +11,7 @@ helpviewer_keywords: ["C2033"]
 
 ## Remarks
 
-The bit field was declared as a pointer, which is not allowed.
+Bit fields can't be declared as a pointer, reference, or array. For more information, see [C++ Bit Fields](../../cpp/cpp-bit-fields.md).
 
 ## Example
 
