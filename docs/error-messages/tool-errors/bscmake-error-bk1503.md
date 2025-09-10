@@ -8,7 +8,7 @@ ms.assetid: e6582344-b91e-486f-baf3-4f9028d83c3b
 ---
 # BSCMAKE Error BK1503
 
-cannot write to file 'filename' [: reason]
+> cannot write to file 'filename' [: reason]
 
 BSCMAKE combines the .sbr files generated during compilation into one browser database. If the resulting browser database exceeds 64 MB, or if the number of input (.sbr) files exceeds 4092, this error will be emitted.
 

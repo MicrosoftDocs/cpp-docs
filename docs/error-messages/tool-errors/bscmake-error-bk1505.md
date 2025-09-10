@@ -8,7 +8,7 @@ ms.assetid: a25765f8-e950-4ca8-9f16-419d779e2744
 ---
 # BSCMAKE Error BK1505
 
-cannot read from file 'filename' [: reason]
+> cannot read from file 'filename' [: reason]
 
 BSCMAKE cannot read from the file.
 

@@ -8,7 +8,7 @@ ms.assetid: e6d1a171-1472-4b7e-a04b-1a68a561675f
 ---
 # BSCMAKE Error BK1504
 
-cannot position in file 'filename' [: reason]
+> cannot position in file 'filename' [: reason]
 
 BSCMAKE could not move to a location in the file.
 

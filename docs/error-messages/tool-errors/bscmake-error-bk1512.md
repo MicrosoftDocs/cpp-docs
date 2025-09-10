@@ -8,7 +8,7 @@ ms.assetid: 0a626ff3-63db-4797-abe4-31545ce2c2c1
 ---
 # BSCMAKE Error BK1512
 
-filename: capacity exceeded
+> filename: capacity exceeded
 
 BSCMAKE cannot build a browse information file because the number of definitions, references, modules, or other information exceeds the limit.
 

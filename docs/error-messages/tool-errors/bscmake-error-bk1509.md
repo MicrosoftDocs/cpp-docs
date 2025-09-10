@@ -8,7 +8,7 @@ ms.assetid: 53df7037-1913-4b63-b425-c0bf44081792
 ---
 # BSCMAKE Error BK1509
 
-out of heap space
+> out of heap space
 
 BSCMAKE ran out of memory, including virtual memory.
 
