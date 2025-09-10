@@ -28,3 +28,7 @@ struct S
     int arr[3] : 1;   // C2033
 };
 ```
+
+## See also
+
+[Compiler Error C2531](../compiler-errors-2/compiler-error-c2531.md)
