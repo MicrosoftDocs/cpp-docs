@@ -115,7 +115,7 @@ You can reduce the installation footprint of Visual Studio on your system drive.
 
 1. Visual Studio opens your new project, and you're ready to code!
 
-### Step 9 - Learn how to use GitHub Copilot
+### Step 9 - Install GitHub Copilot
 
 You can use GitHub Copilot in Visual Studio to help with your C++ development. Copilot is an AI-powered coding assistant that helps you write code faster, reduce errors, and explore new solutions.
 
@@ -128,7 +128,7 @@ Some benefits of using Copilot for your C++ coding scenarios:
 - Debug errors in your code.
 - Simplify and refactor existing code.
 
-To get started, see [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states). 
+To install GitHub Copilot, see [Manage GitHub Copilot installation and state](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
 
 ::: moniker-end
 
