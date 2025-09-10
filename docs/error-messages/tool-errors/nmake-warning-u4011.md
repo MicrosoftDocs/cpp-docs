@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Warning U4011"
 title: "NMAKE Warning U4011"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Warning U4011"
+ms.date: 11/04/2016
 f1_keywords: ["U4011"]
 helpviewer_keywords: ["U4011"]
-ms.assetid: e8244514-eba6-4285-8853-7baeefdcd8a4
 ---
 # NMAKE Warning U4011
 

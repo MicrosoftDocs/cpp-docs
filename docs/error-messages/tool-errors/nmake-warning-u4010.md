@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: NMAKE Warning U4010"
 title: "NMAKE Warning U4010"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Warning U4010"
+ms.date: 11/04/2016
 f1_keywords: ["U4010"]
 helpviewer_keywords: ["U4010"]
-ms.assetid: 99d8eb9a-ae31-40d1-b8c5-8c66732127d3
 ---
 # NMAKE Warning U4010
 
