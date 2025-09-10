@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: BSCMAKE Error BK1509"
 title: "BSCMAKE Error BK1509"
-ms.date: "11/04/2016"
+description: "Learn more about: BSCMAKE Error BK1509"
+ms.date: 11/04/2016
 f1_keywords: ["BK1509"]
 helpviewer_keywords: ["BK1509"]
-ms.assetid: 53df7037-1913-4b63-b425-c0bf44081792
 ---
 # BSCMAKE Error BK1509
 

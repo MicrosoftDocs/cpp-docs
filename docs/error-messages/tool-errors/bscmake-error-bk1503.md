@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: BSCMAKE Error BK1503"
 title: "BSCMAKE Error BK1503"
-ms.date: "11/04/2016"
+description: "Learn more about: BSCMAKE Error BK1503"
+ms.date: 11/04/2016
 f1_keywords: ["BK1503"]
 helpviewer_keywords: ["BK1503"]
-ms.assetid: e6582344-b91e-486f-baf3-4f9028d83c3b
 ---
 # BSCMAKE Error BK1503
 
