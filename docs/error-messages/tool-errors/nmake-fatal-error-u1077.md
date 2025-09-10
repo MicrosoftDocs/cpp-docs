@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1077"
 title: "NMAKE Fatal Error U1077"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1077"
+ms.date: 11/04/2016
 f1_keywords: ["U1077"]
 helpviewer_keywords: ["U1077"]
-ms.assetid: 70d989f8-ef34-4ad7-8fe0-5b800556b2a1
 ---
 # NMAKE Fatal Error U1077
 
-'program' : return code 'value'
+> 'program' : return code 'value'
+
+## Remarks
 
 The given command or program called by NMAKE failed and returned the given exit code.
 

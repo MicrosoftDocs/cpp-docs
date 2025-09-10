@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1095"
 title: "NMAKE Fatal Error U1095"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1095"
+ms.date: 11/04/2016
 f1_keywords: ["U1095"]
 helpviewer_keywords: ["U1095"]
-ms.assetid: a392582b-06db-4568-9c13-450293a4fbda
 ---
 # NMAKE Fatal Error U1095
 
-expanded command line 'commandline' too long
+> expanded command line 'commandline' too long
+
+## Remarks
 
 After macro expansion, the given command line exceeded the limit on length of command lines for the operating system.
 

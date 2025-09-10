@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: NMAKE Fatal Error U1051"
 title: "NMAKE Fatal Error U1051"
-ms.date: "11/04/2016"
+description: "Learn more about: NMAKE Fatal Error U1051"
+ms.date: 11/04/2016
 f1_keywords: ["U1051"]
 helpviewer_keywords: ["U1051"]
-ms.assetid: fede5cd5-dac3-47b7-b86d-e1acfb78699f
 ---
 # NMAKE Fatal Error U1051
 
-out of memory
+> out of memory
+
+## Remarks
 
 NMAKE ran out of memory, including virtual memory, because the makefile was too large or complex.
 
