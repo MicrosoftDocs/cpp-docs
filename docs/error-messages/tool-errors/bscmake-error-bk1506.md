@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: BSCMAKE Error BK1506"
 title: "BSCMAKE Error BK1506"
-ms.date: "11/04/2016"
+description: "Learn more about: BSCMAKE Error BK1506"
+ms.date: 11/04/2016
 f1_keywords: ["BK1506"]
 helpviewer_keywords: ["BK1506"]
-ms.assetid: f51f8cea-f8fc-4323-bcf2-b7bd119792ee
 ---
 # BSCMAKE Error BK1506
 
-cannot open file 'filename' [: reason]
+> cannot open file 'filename' [: reason]
+
+## Remarks
 
 BSCMAKE cannot open the file.
 
