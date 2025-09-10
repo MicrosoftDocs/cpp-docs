@@ -8,6 +8,6 @@ ms.assetid: 830ad63c-d454-47a3-840c-c272f29ef3d2
 ---
 # NMAKE Warning U4006
 
-special macro undefined : 'macroname'
+> special macro undefined : 'macroname'
 
 The given special macro name is undefined and expands to nothing.

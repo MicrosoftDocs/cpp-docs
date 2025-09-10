@@ -8,7 +8,7 @@ ms.assetid: e8244514-eba6-4285-8853-7baeefdcd8a4
 ---
 # NMAKE Warning U4011
 
-'target' : not all dependents available; target not built
+> 'target' : not all dependents available; target not built
 
 A dependent of the given target either did not exist or was out-of-date, and a command for updating the dependent returned a nonzero exit code. The /K option told NMAKE to continue processing unrelated parts of the build and to issue an exit code 1 when the NMAKE session is finished.
 

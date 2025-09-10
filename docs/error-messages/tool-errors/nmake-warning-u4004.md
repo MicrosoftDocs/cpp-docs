@@ -8,7 +8,7 @@ ms.assetid: 5086bbcb-42d7-4677-a877-1a02202a86a2
 ---
 # NMAKE Warning U4004
 
-too many rules for target 'targetname'
+> too many rules for target 'targetname'
 
 More than one description block was specified for the given target using single colons (**:**) as separators. NMAKE executed the commands in the first description block and ignored later blocks.
 
