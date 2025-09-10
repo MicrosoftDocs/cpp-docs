@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2033"]
 ---
 # Compiler Error C2033
 
-> 'identifier' : bit field cannot have indirection
+> '*identifier*': bit field cannot have indirection
 
 ## Remarks
 
