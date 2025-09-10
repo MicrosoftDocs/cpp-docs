@@ -10,6 +10,8 @@ ms.assetid: 03ea22b8-c7b4-4e73-8553-35b41112e066
 
 > cannot delete temporary file 'filename' [: reason]
 
+## Remarks
+
 BSCMAKE cannot delete one of its temporary files.
 
 ### To fix by checking the following possible causes

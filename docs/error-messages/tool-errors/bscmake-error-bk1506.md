@@ -10,6 +10,8 @@ ms.assetid: f51f8cea-f8fc-4323-bcf2-b7bd119792ee
 
 > cannot open file 'filename' [: reason]
 
+## Remarks
+
 BSCMAKE cannot open the file.
 
 ### To fix by checking the following possible causes

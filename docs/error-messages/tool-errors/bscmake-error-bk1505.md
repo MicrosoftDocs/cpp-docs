@@ -10,6 +10,8 @@ ms.assetid: a25765f8-e950-4ca8-9f16-419d779e2744
 
 > cannot read from file 'filename' [: reason]
 
+## Remarks
+
 BSCMAKE cannot read from the file.
 
 ### To fix by checking the following possible causes

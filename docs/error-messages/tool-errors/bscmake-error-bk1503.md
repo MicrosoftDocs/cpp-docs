@@ -10,6 +10,8 @@ ms.assetid: e6582344-b91e-486f-baf3-4f9028d83c3b
 
 > cannot write to file 'filename' [: reason]
 
+## Remarks
+
 BSCMAKE combines the .sbr files generated during compilation into one browser database. If the resulting browser database exceeds 64 MB, or if the number of input (.sbr) files exceeds 4092, this error will be emitted.
 
 If the problem is caused by more than 4092 .sbr files, you must reduce the number of input files. From within Visual Studio, this can be accomplished by [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md) your entire project, then recheck on a file by file basis.

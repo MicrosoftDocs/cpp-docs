@@ -10,4 +10,6 @@ ms.assetid: 4cf2aedb-10c4-4ae8-abe6-c681fd4d617d
 
 > bscfile: incompatible version: cannot incrementally update
 
+## Remarks
+
 The .bsc file was created with another version of BSCMAKE. Recreate the .bsc file.

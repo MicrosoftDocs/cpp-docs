@@ -10,4 +10,6 @@ ms.assetid: e67290c0-58cf-44da-ad01-f8dffc34ea2d
 
 > corrupt .SBR file filename
 
+## Remarks
+
 The given .sbr file does not have the expected format. Recompile to create a new .sbr.

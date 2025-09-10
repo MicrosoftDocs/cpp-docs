@@ -10,6 +10,8 @@ ms.assetid: 53df7037-1913-4b63-b425-c0bf44081792
 
 > out of heap space
 
+## Remarks
+
 BSCMAKE ran out of memory, including virtual memory.
 
 ### To fix by using the following possible solutions

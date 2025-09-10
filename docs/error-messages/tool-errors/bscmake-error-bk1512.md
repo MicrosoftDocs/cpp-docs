@@ -10,6 +10,8 @@ ms.assetid: 0a626ff3-63db-4797-abe4-31545ce2c2c1
 
 > filename: capacity exceeded
 
+## Remarks
+
 BSCMAKE cannot build a browse information file because the number of definitions, references, modules, or other information exceeds the limit.
 
 ### To fix by using the following possible solutions

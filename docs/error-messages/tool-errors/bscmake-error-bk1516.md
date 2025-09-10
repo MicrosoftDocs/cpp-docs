@@ -10,4 +10,6 @@ ms.assetid: 7f4a8391-f857-4ee8-8e26-34868ca84e29
 
 > bscfile corrupt; cannot incrementally update
 
+## Remarks
+
 The .bsc file was corrupted, possibly due to a system failure during the build. Delete the .bsc file, rebuild all .sbr files, then rebuild the .bsc file.
