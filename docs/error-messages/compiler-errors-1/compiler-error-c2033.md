@@ -19,17 +19,12 @@ The following example generates C2033:
 
 ```cpp
 // C2033.cpp
-struct S {
-   int *b : 1;  // C2033
-};
-```
-
-Possible resolution:
-
-```cpp
-// C2033b.cpp
 // compile with: /c
-struct S {
-   int b : 1;
+
+struct S
+{
+    int* ptr : 1;     // C2033
+    int& ref : 1;     // C2033
+    int arr[3] : 1;   // C2033
 };
 ```
