@@ -10,4 +10,6 @@ ms.assetid: 830ad63c-d454-47a3-840c-c272f29ef3d2
 
 > special macro undefined : 'macroname'
 
+## Remarks
+
 The given special macro name is undefined and expands to nothing.
