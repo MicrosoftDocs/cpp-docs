@@ -145,7 +145,7 @@ Double-click, right-click, or press **Enter** while on a file in the **Functions
 [Build Insights tips and tricks](build-insights-tips.md)\
 [Inline functions (C++)](../../cpp/inline-functions-cpp.md)\
 [Faster C++ builds, simplified: a new metric for time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time)\
-[Build Insights in Visual Studio video - Pure Virtual C++ 2023](/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
+[Build Insights in Visual Studio video - Pure Virtual C++ 2023](/shows/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
 [Troubleshoot header file impact on build time](build-insights-included-files-view.md)\
 [Functions View for Build Insights in Visual Studio 2022 17.8](https://devblogs.microsoft.com/cppblog/functions-view-for-build-insights-in-visual-studio-2022-17-8/)\
 [Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)\
