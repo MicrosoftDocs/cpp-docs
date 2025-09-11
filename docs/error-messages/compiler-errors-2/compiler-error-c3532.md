@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3532"
 title: "Compiler Error C3532"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3532"
+ms.date: 11/04/2016
 f1_keywords: ["C3532"]
 helpviewer_keywords: ["C3532"]
-ms.assetid: 51067853-eda8-4f59-86e8-8924e16d3a95
 ---
 # Compiler Error C3532
 
-'type': incorrect usage of 'auto'
+> 'type': incorrect usage of 'auto'
+
+## Remarks
 
 The indicated type cannot be declared with the **`auto`** keyword. For example, you cannot use the **`auto`** keyword to declare an array or a method return type.
 

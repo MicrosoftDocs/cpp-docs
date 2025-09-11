@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3531"
 title: "Compiler Error C3531"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3531"
+ms.date: 11/04/2016
 f1_keywords: ["C3531"]
 helpviewer_keywords: ["C3531"]
-ms.assetid: 2bdb9fdc-9ddf-403e-8b92-02763d434487
 ---
 # Compiler Error C3531
 
-'symbol': a symbol whose type contains 'auto' must have an initializer
+> 'symbol': a symbol whose type contains 'auto' must have an initializer
+
+## Remarks
 
 The specified variable does not have an initializer expression.
 
