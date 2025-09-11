@@ -9,6 +9,8 @@ helpviewer_keywords: ["stack-use-after-return error", "AddressSanitizer error st
 
 > Address Sanitizer Error: Use of stack memory after return
 
+## Remarks
+
 This check requires code generation that's activated by an extra compiler option, [`/fsanitize-address-use-after-return`](../build/reference/fsanitize.md), and by setting the environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.
 
 This check can slow your application down substantially. Consider the [Clang summary](https://github.com/google/sanitizers/wiki/AddressSanitizerUseAfterReturn) of the algorithm that supports use after return, and the larger performance costs.
@@ -109,11 +111,11 @@ ASAN is a form of dynamic analysis, which means it can only detect bad code that
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

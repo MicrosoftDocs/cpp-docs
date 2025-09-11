@@ -9,6 +9,8 @@ helpviewer_keywords: ["stack-buffer-overflow error", "AddressSanitizer error sta
 
 > Address Sanitizer Error: Stack buffer overflow
 
+## Remarks
+
 A stack buffer overflow can happen many ways in C or C++. We provide several examples for this category of error that you can catch by a simple recompile.
 
 ## Example - stack buffer overflow
@@ -112,11 +114,11 @@ devenv /debugexe example3.exe
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

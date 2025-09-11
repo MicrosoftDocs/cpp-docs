@@ -9,6 +9,8 @@ helpviewer_keywords: ["memcpy-param-overlap error", "AddressSanitizer error memc
 
 > Address Sanitizer Error: memcpy-param-overlap
 
+## Remarks
+
 > [!NOTE]
 > The `/Oi` flag is required to reliably detect `memcpy-param-overlap` errors. This flag tells the compiler to treat `memcpy` and other functions as intrinsics, which is necessary because some versions of the standard library implement them as such. Since ASan is a dynamic analysis tool, it can only detect errors with an observable runtime effect. Note that when `/O2` is also set, ASan may not be able to reliably detect `memcpy-param-overlap` errors because the intrinsic variant of these functions isn't guaranteed to be used. For more information, see [`/Oi` docs](../build/reference/oi-generate-intrinsic-functions.md).
 
@@ -48,11 +50,11 @@ devenv /debugexe example1.exe
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)
