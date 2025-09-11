@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2452"
 title: "Compiler Error C2452"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2452"
+ms.date: 11/04/2016
 f1_keywords: ["C2452"]
 helpviewer_keywords: ["C2452"]
-ms.assetid: a4ec7642-6660-4c7a-9866-853d1cc67daf
 ---
 # Compiler Error C2452
 
-'type' : invalid source type for safe_cast
+> 'type' : invalid source type for safe_cast
+
+## Remarks
 
 The source type for [safe_cast](../../extensions/safe-cast-cpp-component-extensions.md) was not valid.  For example, all types in a `safe_cast` operation must be CLR types.
 
-The following sample generates C2452:
+## Example
+
+The following example generates C2452:
 
 ```cpp
 // C2452.cpp
