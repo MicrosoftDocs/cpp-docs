@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4537"
 title: "Compiler Warning (level 1) C4537"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 1) C4537"
+ms.date: 08/27/2018
 f1_keywords: ["C4537"]
 helpviewer_keywords: ["C4537"]
-ms.assetid: 9454493c-d419-475e-8f35-9c00233c9329
 ---
 # Compiler Warning (level 1) C4537
 
@@ -16,7 +15,7 @@ A reference was passed where an object (user-defined type) was expected. A refer
 
 ## Example
 
-The following sample generates C4537 and shows how to fix it:
+The following example generates C4537 and shows how to fix it:
 
 ```cpp
 // C4537.cpp

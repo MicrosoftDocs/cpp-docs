@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4546"
 title: "Compiler Warning (level 1) C4546"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4546"
+ms.date: 11/04/2016
 f1_keywords: ["C4546"]
 helpviewer_keywords: ["C4546"]
-ms.assetid: 071e1709-3841-46c1-8e71-96109cd22041
 ---
 # Compiler Warning (level 1) C4546
 
-function call before comma missing argument list
+> function call before comma missing argument list
+
+## Remarks
 
 The compiler detected an ill-formed comma expression.
 
@@ -16,7 +17,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 ## Example
 
-The following sample generates C4546:
+The following example generates C4546:
 
 ```cpp
 // C4546.cpp
