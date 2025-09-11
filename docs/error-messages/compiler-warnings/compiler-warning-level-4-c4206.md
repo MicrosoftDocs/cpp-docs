@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4206"
 title: "Compiler Warning (level 4) C4206"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4206"
+ms.date: 11/04/2016
 f1_keywords: ["C4206"]
 helpviewer_keywords: ["C4206"]
-ms.assetid: 3df97812-3ed7-4003-9769-057acf97ce3c
 ---
 # Compiler Warning (level 4) C4206
 
-**nonstandard extension used : translation unit is empty**
+> nonstandard extension used : translation unit is empty
+
+## Remarks
 
 The file was empty after preprocessing.
 

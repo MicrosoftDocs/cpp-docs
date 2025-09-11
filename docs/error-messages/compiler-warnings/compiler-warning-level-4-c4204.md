@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4204"
 title: "Compiler Warning (level 4) C4204"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4204"
+ms.date: 11/04/2016
 f1_keywords: ["C4204"]
 helpviewer_keywords: ["C4204"]
-ms.assetid: 298d2880-6737-448e-b711-15572d540200
 ---
 # Compiler Warning (level 4) C4204
 
-nonstandard extension used : non-constant aggregate initializer
+> nonstandard extension used : non-constant aggregate initializer
+
+## Remarks
 
 With Microsoft extensions (/Ze), you can initialize aggregate types (arrays, structures, unions, and classes) with values that are not constants.
 
 ## Example
+
+The following example generates C4204:
 
 ```c
 // C4204.c
