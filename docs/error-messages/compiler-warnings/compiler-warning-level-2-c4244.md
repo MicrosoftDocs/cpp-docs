@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4244"
 title: "Compiler Warning (level 2) C4244"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4244"
+ms.date: 11/04/2016
 f1_keywords: ["C4244"]
 helpviewer_keywords: ["C4244"]
-ms.assetid: 2c19d157-21d1-42c2-a6c0-3f30f2ce3813
 ---
 # Compiler Warning (level 2) C4244
 
-'argument' : conversion from 'type1' to 'type2', possible loss of data
+> 'argument' : conversion from 'type1' to 'type2', possible loss of data
+
+## Remarks
 
 A floating point type was converted to an integer type.  A possible loss of data may have occurred.
 
@@ -18,7 +19,7 @@ C4244 can also fire at level 3, and 4; see [Compiler Warning (levels 3 and 4) C4
 
 ## Example
 
-The following sample generates C4244:
+The following example generates C4244:
 
 ```cpp
 // C4244_level2.cpp
