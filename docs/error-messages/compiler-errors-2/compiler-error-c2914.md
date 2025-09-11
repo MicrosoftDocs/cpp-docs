@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2914"
 title: "Compiler Error C2914"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2914"
+ms.date: 11/04/2016
 f1_keywords: ["C2914"]
 helpviewer_keywords: ["C2914"]
-ms.assetid: fc6a0592-f53e-4f5a-88cb-780bbed4acf2
 ---
 # Compiler Error C2914
 
-'identifier' : cannot deduce type argument as function argument is ambiguous
+> 'identifier' : cannot deduce type argument as function argument is ambiguous
+
+## Remarks
 
 The compiler cannot determine which overloaded functions to use for a generic or template argument.
 
-The following sample generates C2914:
+## Examples
+
+The following example generates C2914:
 
 ```cpp
 // C2914.cpp
@@ -25,7 +28,7 @@ void h() { g(f); }   // C2914
 // void h() { g<int>(f); }
 ```
 
-C2914 can also occur when using generics.  The following sample generates C2914:
+C2914 can also occur when using generics.  The following example generates C2914:
 
 ```cpp
 // C2914b.cpp
