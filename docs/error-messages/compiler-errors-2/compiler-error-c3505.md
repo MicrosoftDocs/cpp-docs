@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3505"
 title: "Compiler Error C3505"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3505"
+ms.date: 11/04/2016
 f1_keywords: ["C3505"]
 helpviewer_keywords: ["C3505"]
-ms.assetid: ed73c99e-93a1-4f3a-bac7-ba7ed5d836e4
 ---
 # Compiler Error C3505
 
 > cannot load type library '*guid*'
+
+## Remarks
 
 C3505 can be caused if you are running the 32-bit, x86-hosted cross-compiler for 64-bit, x64 targets on a 64-bit machine, because the compiler is running under WOW64 and can only read from the 32-bit registry hive.
 

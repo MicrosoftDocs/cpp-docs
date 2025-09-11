@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3510"
 title: "Compiler Error C3510"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3510"
+ms.date: 11/04/2016
 f1_keywords: ["C3510"]
 helpviewer_keywords: ["C3510"]
-ms.assetid: c48387bc-0300-4a4d-97f7-3fb90f82a451
 ---
 # Compiler Error C3510
 
-cannot locate dependent type library 'type_lib'
+> cannot locate dependent type library 'type_lib'
+
+## Remarks
 
 [no_registry](../../preprocessor/no-registry.md) and [auto_search](../../preprocessor/auto-search.md) were passed to `#import` but the compiler was not able to find a referenced type library.
 
 To resolve this error, make sure that all type libraries and referenced type libraries are available to the compiler.
 
-The following sample generates C3510:
+## Example
+
+The following example generates C3510:
 
 Assume that the following two type libraries were built, and that C3510a.tlb was deleted or not on the path.
 
