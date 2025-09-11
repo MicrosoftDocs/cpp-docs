@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3192"
 title: "Compiler Error C3192"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3192"
+ms.date: 11/04/2016
 f1_keywords: ["C3192"]
 helpviewer_keywords: ["C3192"]
-ms.assetid: 8b0083d4-706f-46f6-858a-e1d9af464cf8
 ---
 # Compiler Error C3192
 
-syntax error : '^' is not a prefix operator (did you mean '*'?)
+> syntax error : '^' is not a prefix operator (did you mean '*'?)
+
+## Remarks
 
 A handle cannot be used as a dereference operator.
 
-The following sample generates C3192:
+## Example
+
+The following example generates C3192:
 
 ```cpp
 // C3192.cpp
