@@ -14,7 +14,7 @@ These are the global template functions defined in `<ostream>`. For member funct
 Terminates a line and flushes the buffer.
 
 ```cpp
-template class<Elem, Tr>
+template <class Elem, class Tr>
 basic_ostream<Elem, Tr>& endl(
    basic_ostream<Elem, Tr>& Ostr);
 ```
@@ -61,7 +61,7 @@ testing
 Terminates a string.
 
 ```cpp
-template class<Elem, Tr>
+template <class Elem, class Tr>
 basic_ostream<Elem, Tr>& ends(
    basic_ostream<Elem, Tr>& Ostr);
 ```
@@ -110,7 +110,7 @@ ab c
 Flushes the buffer.
 
 ```cpp
-template class<Elem, Tr>
+template <class Elem, class Tr>
 basic_ostream<Elem, Tr>& flush(
    basic_ostream<Elem, Tr>& Ostr);
 ```
