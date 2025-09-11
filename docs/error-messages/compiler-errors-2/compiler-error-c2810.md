@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2810"
 title: "Compiler Error C2810"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2810"
+ms.date: 11/04/2016
 f1_keywords: ["C2810"]
 helpviewer_keywords: ["C2810"]
-ms.assetid: f63e8f24-d7f6-42ac-904f-72ff49592ba6
 ---
 # Compiler Error C2810
 
-'interface' : an interface can only inherit from another interface
+> 'interface' : an interface can only inherit from another interface
+
+## Remarks
 
 An [interface](../../cpp/interface.md) may only inherit from another interface and may not inherit from a class or struct.
 
-The following sample generates C2810:
+## Example
+
+The following example generates C2810:
 
 ```cpp
 // C2810.cpp
