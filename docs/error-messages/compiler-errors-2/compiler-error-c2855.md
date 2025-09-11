@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2855"
 title: "Compiler Error C2855"
+description: "Learn more about: Compiler Error C2855"
 ms.date: 02/16/2021
 f1_keywords: ["C2855"]
 helpviewer_keywords: ["C2855"]
@@ -9,9 +9,9 @@ helpviewer_keywords: ["C2855"]
 
 > command-line option '*option*' inconsistent with precompiled header
 
-This error occurs when a command-line option differs from the options used to create the precompiled header.
-
 ## Remarks
+
+This error occurs when a command-line option differs from the options used to create the precompiled header.
 
 Error C2855 can occur when you make an incremental build after changing a compiler option. It can also happen if you set specific compiler options for individual source files.
 
