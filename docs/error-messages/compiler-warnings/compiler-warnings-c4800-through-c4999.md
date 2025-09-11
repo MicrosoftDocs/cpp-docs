@@ -2,8 +2,8 @@
 title: "Microsoft C/C++ compiler (MSVC) warnings C4800 through C4999"
 description: "Table of Microsoft C/C++ compiler (MSVC) warnings C4800 through C4999."
 ms.date: 04/17/2024
-f1_keywords: ["C4801", "C4808", "C4809", "C4815", "C4826", "C4827", "C4828", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4849", "C4854", "C4855", "C4856", "C4857", "C4858", "C4859", "C4860", "C4861", "C4869", "C4872", "C4880", "C4881", "C4882", "C4883", "C4907", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4975", "C4976", "C4981", "C4983", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998"]
-helpviewer_keywords: ["C4801", "C4808", "C4809", "C4815", "C4826", "C4827", "C4828", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4849", "C4854", "C4855", "C4856", "C4857", "C4858", "C4859", "C4860", "C4861", "C4869", "C4872", "C4880", "C4881", "C4882", "C4883", "C4907", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4975", "C4976", "C4981", "C4983", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998"]
+f1_keywords: ["C4801", "C4808", "C4809", "C4815", "C4826", "C4827", "C4828", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4849", "C4854", "C4855", "C4856", "C4857", "C4858", "C4859", "C4860", "C4861", "C4862", "C4869", "C4872", "C4880", "C4881", "C4882", "C4883", "C4907", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4975", "C4976", "C4981", "C4983", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998"]
+helpviewer_keywords: ["C4801", "C4808", "C4809", "C4815", "C4826", "C4827", "C4828", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4849", "C4854", "C4855", "C4856", "C4857", "C4858", "C4859", "C4860", "C4861", "C4862", "C4869", "C4872", "C4880", "C4881", "C4882", "C4883", "C4907", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4975", "C4976", "C4981", "C4983", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998"]
 ---
 # Microsoft C/C++ compiler warnings C4800 through C4999
 
@@ -63,6 +63,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 | Compiler warning (level 4) C4859 | '*value*' is not a valid argument for '`/presetWarn`': it must be a decimal value > 0. Command-line flag ignored |
 | Compiler warning (level 4) C4860 | '*object name*': compiler zero initialized '*number*' bytes of storage |
 | Compiler warning (level 4) C4861 | compiler zero initialized '*number*' bytes of storage |
+| Compiler warning (level 1) C4862 | justification property is not allowed with more than one warning number |
 | [Compiler warning (level 4) C4866](c4866.md) | compiler may not enforce left-to-right evaluation order for call to *operator_name* |
 | [Compiler warning (level 1, error) C4867](compiler-warning-c4867.md) |'*function name*': non-standard syntax; use '`&`' to create a pointer to member|
 | [Compiler warning (level 4) C4868](compiler-warning-c4868.md) | '*file*(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list |
