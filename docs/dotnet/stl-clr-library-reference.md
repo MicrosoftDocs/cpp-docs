@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: STL/CLR Library Reference"
 title: "STL/CLR Library Reference"
+description: "Learn more about: STL/CLR Library Reference"
 ms.date: 09/18/2018
 ms.topic: "reference"
 helpviewer_keywords: ["STL/CLR Library", "STL/CLR, redistribution", "cliext directory"]
-ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
 ---
 # STL/CLR Library Reference
 
@@ -51,7 +50,7 @@ In addition, this section also describes the following components of STL/CLR:
       [`hash_multimap` (STL/CLR)](../dotnet/hash-multimap-stl-clr.md)\
       [`hash_multiset` (STL/CLR)](../dotnet/hash-multiset-stl-clr.md)\
       [`hash_set` (STL/CLR)](../dotnet/hash-set-stl-clr.md)\
-      [`list` (STL/CLR)](../dotnet/list-stl-clr.md)\
+      [`list` (STL/CLR)](../dotnet/list-stl-clr.md)
    :::column-end:::
    :::column span="":::
       [`map` (STL/CLR)](../dotnet/map-stl-clr.md)\
@@ -63,7 +62,7 @@ In addition, this section also describes the following components of STL/CLR:
       [`set` (STL/CLR)](../dotnet/set-stl-clr.md)\
       [`stack` (STL/CLR)](../dotnet/stack-stl-clr.md)\
       [`utility` (STL/CLR)](../dotnet/utility-stl-clr.md)\
-      [`vector` (STL/CLR)](../dotnet/vector-stl-clr.md)\
+      [`vector` (STL/CLR)](../dotnet/vector-stl-clr.md)
    :::column-end:::
 :::row-end:::
 
