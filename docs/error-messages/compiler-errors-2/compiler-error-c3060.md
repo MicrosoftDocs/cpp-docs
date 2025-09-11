@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3060"
 title: "Compiler Error C3060"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3060"
+ms.date: 11/04/2016
 f1_keywords: ["C3060"]
 helpviewer_keywords: ["C3060"]
-ms.assetid: 6282bb92-0546-4b59-9435-d3840bf93bdb
 ---
 # Compiler Error C3060
 
-'member' : a friend function may not be defined inside a class using a qualified name (it may only be declared)
+> 'member' : a friend function may not be defined inside a class using a qualified name (it may only be declared)
+
+## Remarks
 
 A friend function was defined using a qualified name, which is not allowed.
 
-The following sample generates C3060:
+## Example
+
+The following example generates C3060:
 
 ```cpp
 // C3060.cpp
