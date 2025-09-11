@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: BSCMAKE Warning BK4504"
 title: "BSCMAKE Warning BK4504"
-ms.date: "11/04/2016"
+description: "Learn more about: BSCMAKE Warning BK4504"
+ms.date: 11/04/2016
 f1_keywords: ["BK4504"]
 helpviewer_keywords: ["BK4504"]
-ms.assetid: b56ee2d4-ad44-40f4-98c0-75934ea44a6c
 ---
 # BSCMAKE Warning BK4504
 
