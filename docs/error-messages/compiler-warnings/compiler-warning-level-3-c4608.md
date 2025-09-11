@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4608"
 title: "Compiler Warning (level 3) C4608"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3) C4608"
+ms.date: 11/04/2016
 f1_keywords: ["C4608"]
 helpviewer_keywords: ["C4608"]
-ms.assetid: 8b8f5f28-8ce9-457e-9d3d-a8c0efce9b6a
 ---
 # Compiler Warning (level 3) C4608
 
-'union_member' has already been initialized by another union member in the initializer list, 'union_member'
+> 'union_member' has already been initialized by another union member in the initializer list, 'union_member'
+
+## Remarks
 
 Two members of the same union were initialized in an initialization list. You can only access one member of the union.
 
-The following sample generates C4608:
+## Example
+
+The following example generates C4608:
 
 ```cpp
 // C4608.cpp

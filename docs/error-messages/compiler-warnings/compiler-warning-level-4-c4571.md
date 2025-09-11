@@ -4,15 +4,14 @@ description: "Documents the Microsoft C++ compiler warning C4571."
 ms.date: 08/24/2020
 f1_keywords: ["C4571"]
 helpviewer_keywords: ["C4571"]
-ms.assetid: 07aa17bd-b15c-4266-824c-57cc445e8edd
 ---
 # Compiler Warning (level 4) C4571
 
 > Informational: `catch(...)` semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
 
-C4571 is generated for every `catch(...)` block when you specify the **`/EHs`** compiler option.
-
 ## Remarks
+
+C4571 is generated for every `catch(...)` block when you specify the **`/EHs`** compiler option.
 
 When you specify the **`/EHs`** compiler option, `catch(...)` blocks don't catch structured exceptions. (Divide by zero, or null pointer exceptions, for example.) A `catch(...)` block only catches explicitly thrown C++ exceptions. For more information, see [Exception Handling](../../cpp/exception-handling-in-visual-cpp.md).
 
@@ -28,7 +27,7 @@ You can resolve C4571 in one of the following ways:
 
 ## Example
 
-The following sample generates C4571.
+The following example generates C4571.
 
 ```cpp
 // C4571.cpp
