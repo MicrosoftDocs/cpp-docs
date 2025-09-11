@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2991"
 title: "Compiler Error C2991"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2991"
+ms.date: 11/04/2016
 f1_keywords: ["C2991"]
 helpviewer_keywords: ["C2991"]
-ms.assetid: a87e4404-26e8-4927-b3ee-5d02b3b8bee1
 ---
 # Compiler Error C2991
 
-redefinition of type parameter 'parameter'
+> redefinition of type parameter 'parameter'
+
+## Remarks
 
 There was a type conflict between two generic or template definitions of `parameter`. When defining multiple generic or template parameters, you must use equivalent types.
 
-The following sample generates C2991:
+## Examples
+
+The following example generates C2991:
 
 ```cpp
 // C2991.cpp
