@@ -1,7 +1,7 @@
 ---
 title: "Platform::COMException Class"
 description: "Learn more about: Platform::COMException Class"
-ms.date: "12/30/2016"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::COMException", "VCCORLIB/Platform::COMException::HResult", "VCCORLIB/Platform::COMException::Message"]
 helpviewer_keywords: ["Platform::COMException Class"]
@@ -73,7 +73,7 @@ The following predefined exceptions are derived from COMException. They differ f
 
 ## <a name="ctor"></a> COMException::COMException Constructor
 
-Intializes a new instance of the COMException class.
+Initializes a new instance of the COMException class.
 
 ### Syntax
 
