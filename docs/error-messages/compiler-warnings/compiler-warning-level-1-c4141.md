@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, Error) C4141"
 title: "Compiler Warning (level 1, Error) C4141"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1, Error) C4141"
+ms.date: 11/04/2016
 f1_keywords: ["C4141"]
 helpviewer_keywords: ["C4141"]
 ---
@@ -10,6 +10,8 @@ helpviewer_keywords: ["C4141"]
 > '*modifier*': used more than once
 
 ## Example
+
+The following example generates C4141:
 
 ```cpp
 // C4141.cpp

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4131"
 title: "Compiler Warning (level 4) C4131"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4131"
+ms.date: 11/04/2016
 f1_keywords: ["C4131"]
 helpviewer_keywords: ["C4131"]
-ms.assetid: 7903b3e1-454f-4be2-aa9b-230992f96a2d
 ---
 # Compiler Warning (level 4) C4131
 
-'function' : uses old-style declarator
+> 'function' : uses old-style declarator
+
+## Remarks
 
 The specified function declaration is not in prototype form.
 
 Old-style function declarations should be converted to prototype form.
+
+## Example
 
 The following example shows an old-style function declaration:
 
