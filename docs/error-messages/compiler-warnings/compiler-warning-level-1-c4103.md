@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4103"
 title: "Compiler Warning (level 1) C4103"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4103"
+ms.date: 11/04/2016
 f1_keywords: ["C4103"]
 helpviewer_keywords: ["C4103"]
-ms.assetid: 9021b514-375e-4d62-b261-ccb06f299e8e
 ---
 # Compiler Warning (level 1) C4103
 
-'filename' : alignment changed after including header, may be due to missing #pragma pack(pop)
+> 'filename' : alignment changed after including header, may be due to missing #pragma pack(pop)
+
+## Remarks
 
 Packing affects the layout of classes, and commonly, if packing changes across header files, there can be problems.
 
 Use #pragma [pack](../../preprocessor/pack.md)(pop) before exiting the header file to resolve this warning.
 
-The following sample generates C4103:
+## Example
+
+The following example generates C4103:
 
 ```cpp
 // C4103.h

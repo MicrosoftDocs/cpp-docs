@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 3 and level 4) C4101"
 title: "Compiler Warning (level 3 and level 4) C4101"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 3 and level 4) C4101"
+ms.date: 11/04/2016
 f1_keywords: ["C4101"]
 helpviewer_keywords: ["C4101"]
 ---
@@ -9,7 +9,13 @@ helpviewer_keywords: ["C4101"]
 
 > '*identifier*': unreferenced local variable
 
-The local variable is never used. This warning occurs in the obvious situation:
+## Remarks
+
+The local variable is never used.
+
+## Examples
+
+This warning occurs in the obvious situation:
 
 ```cpp
 // C4101a.cpp
