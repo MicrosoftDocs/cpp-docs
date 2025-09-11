@@ -67,8 +67,8 @@ To avoid the errors, insert a space in the offending line before the final angle
 
 ### References to types with mismatched cv-qualifiers
 
->[!Note]
-> This change only affects Visual Studio 2019 versions 16.0 through 16.8. It was reverted starting in Visual Studio 2019 version 16.9
+> [!NOTE]
+> This change only affects Visual Studio 2019 versions 16.0 through 16.8. It was reverted starting in Visual Studio 2019 version 16.9.
 
 Previously, MSVC allowed direct binding of a reference from a type with mismatched cv-qualifiers below the top level. This binding could allow modification of supposedly const data referred to by the reference.
 
@@ -455,7 +455,7 @@ The `std::bitset` constructor no longer reads the ones and zeroes in reverse ord
 
 ### `std::pair::operator=` regression
 
-We fixed a regression in the `std::pair` assignment operator introduced when implementing [LWG 2729 "Missing SFINAE on `std::pair::operator=`";](https://cplusplus.github.io/LWG/issue2729). It now correctly accepts types convertible to `std::pair` again.
+We fixed a regression in the `std::pair` assignment operator introduced when implementing [LWG 2729 "Missing SFINAE on `std::pair::operator=`"](https://cplusplus.github.io/LWG/issue2729). It now correctly accepts types convertible to `std::pair` again.
 
 ### Non-deduced contexts for `add_const_t`
 
@@ -579,8 +579,8 @@ int main()
     // The conversion from 'E' to the fixed underlying type 'unsigned char' is better than the
     // conversion from 'E' to the promoted type 'unsigned int'.
     f(e);
-  
-    // Error C2666. This call is ambiguous, but previously called f(unsigned int, const B&). 
+
+    // Error C2666. This call is ambiguous, but previously called f(unsigned int, const B&).
     f(e, B{});
 }
 ```
@@ -694,7 +694,7 @@ std::equal(std::begin(a), std::end(a), std::begin(b), std::end(b));
 
 ### Effect of defining spaceship operator on `==` and `!=`
 
-A definition of the spaceship operator (**`<=>`**) alone will no longer rewrite expressions involving **`==`** or **`!=`** unless the spaceship operator is marked as **`= default`** ([P1185R2](https://wg21.link/p1185r2)). The following example compiles in Visual Studio 2019 RTW and version 16.1, but produces C2678 in Visual Studio 2019 version 16.2:
+A definition of the spaceship operator (**`<=>`**) alone will no longer rewrite expressions involving **`==`** or **`!=`** unless the spaceship operator is marked as **`= default`** ([P1185R2](https://wg21.link/p1185r2)). The following example compiles in Visual Studio 2019 RTW and version 16.1, but produces C2676 in Visual Studio 2019 version 16.2:
 
 ```cpp
 #include <compare>
@@ -885,7 +885,7 @@ The non-standard headers \<stdexcpt.h> and \<typeinfo.h> have been removed. Code
 
 Two-phase name lookup requires that non-dependent names used in template bodies must be visible to the template at definition time. Previously, such names may have been found when the template is instantiated. This change makes it easier to write portable and conforming code in MSVC under the [`/permissive-`](../build/reference/permissive-standards-conformance.md) flag.
 
-In Visual Studio 2019 version 16.4 with the **`/permissive-`**  flag set, the following example produces an error, because `N::f` isn't visible when the `f<T>` template is defined:
+In Visual Studio 2019 version 16.4 with the **`/permissive-`** flag set, the following example produces an error, because `N::f` isn't visible when the `f<T>` template is defined:
 
 ```cpp
 template <class T>
@@ -1424,7 +1424,7 @@ In Visual Studio 2019 version 16.6 and later, the behavior of **`typedef`** decl
 
 The same restrictions are applied recursively to each nested class. The restriction is meant to ensure the simplicity of structs that have **`typedef`** names for linkage purposes. They must be simple enough that no linkage calculations are necessary before the compiler gets to the **`typedef`** name for linkage.
 
-This change affects all standards modes of the compiler. In default (**`/std:c++14`**) and  **`/std:c++17`** modes, the compiler emits warning C5208 for non-conforming code. If **`/permissive-`** is specified, the compiler emits warning C5208 as an error under **`/std:c++14`** and emits error C7626 under **`/std:c++17`**. The compiler emits error C7626 for non-conforming code when **`/std:c++20`** or **`/std:c++latest`** is specified.
+This change affects all standards modes of the compiler. In default (**`/std:c++14`**) and **`/std:c++17`** modes, the compiler emits warning C5208 for non-conforming code. If **`/permissive-`** is specified, the compiler emits warning C5208 as an error under **`/std:c++14`** and emits error C7626 under **`/std:c++17`**. The compiler emits error C7626 for non-conforming code when **`/std:c++20`** or **`/std:c++latest`** is specified.
 
 The following sample shows the constructs that are no longer allowed in unnamed structs. Depending on the standards mode specified, C5208 or C7626 errors or warnings are emitted:
 
@@ -2101,7 +2101,7 @@ The update may change program behavior that relied on an introduced temporary:
 int func() {
     int i1 = 13;
     int i2 = 23;
-    
+
     int* iptr = &i1;
     int const * const&  iptrcref = iptr;
 
@@ -2110,7 +2110,7 @@ int func() {
     {
         return 1;
     }
-    
+
     // Now change what iptr points to.
 
     // Prior to CWG 2352 iptrcref should be bound to a temporary and still points to the value 13.
@@ -2151,7 +2151,7 @@ class B {
 
 template <typename T>
 B<T>::~B() { /* ... */ } // Before: no diagnostic.
-// Now diagnoses a definition mismatch. To fix, define the implementation by 
+// Now diagnoses a definition mismatch. To fix, define the implementation by
 // using the same noexcept-specifier. For example,
 // B<T>::~B() noexcept { /* ... */ }
 ```
@@ -2254,7 +2254,7 @@ Earlier versions of the compiler would incorrectly convert the argument of `f` f
 This change can also correct the chosen overload in some other situations:
 
 ```cpp
-struct Base 
+struct Base
 {
     operator char *();
 };
