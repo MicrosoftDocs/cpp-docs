@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4655"
 title: "Compiler Warning (level 1) C4655"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 1) C4655"
+ms.date: 08/27/2018
 f1_keywords: ["C4655"]
 helpviewer_keywords: ["C4655"]
-ms.assetid: 540f2c7a-e4a1-49af-84b4-03eeea1bbf41
 ---
 # Compiler Warning (level 1) C4655
 

@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4657"
 title: "Compiler Warning (level 1) C4657"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4657"
+ms.date: 11/04/2016
 f1_keywords: ["C4657"]
 helpviewer_keywords: ["C4657"]
-ms.assetid: eb750050-cea6-4ead-b80c-d5dcd4971cfc
 ---
 # Compiler Warning (level 1) C4657
 
-expression involves a data type that is new since the last build
+> expression involves a data type that is new since the last build
+
+## Remarks
 
 You added or changed a data type, making it new to your source code since the last successful build. Edit and Continue does not support changes to existing data types.
 
