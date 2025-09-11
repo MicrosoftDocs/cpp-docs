@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4274"
 title: "Compiler Warning (level 1) C4274"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4274"
+ms.date: 11/04/2016
 f1_keywords: ["C4274"]
 helpviewer_keywords: ["C4274"]
-ms.assetid: 5a948680-7ed1-469f-978d-ae99d154e161
 ---
 # Compiler Warning (level 1) C4274
 
-\#ident ignored; see documentation for #pragma comment(exestr, 'string')
+> #ident ignored; see documentation for #pragma comment(exestr, 'string')
+
+## Remarks
 
 The `#ident` directive, which inserts a user-specified string in the object or executable file, is deprecated. Consequently, the compiler ignores the directive.
 
