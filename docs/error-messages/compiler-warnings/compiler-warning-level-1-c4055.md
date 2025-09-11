@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4055"
 title: "Compiler Warning (level 1) C4055"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4055"
+ms.date: 11/04/2016
 f1_keywords: ["C4055"]
 helpviewer_keywords: ["C4055"]
-ms.assetid: f9955421-16ab-46e5-8f9d-bf1639a519ef
 ---
 # Compiler Warning (level 1) C4055
 
@@ -18,7 +17,7 @@ A data pointer is cast (possibly incorrectly) to a function pointer. This is a l
 
 ## Example
 
-The following sample generates C4055:
+The following example generates C4055:
 
 ```C
 // C4055.c
