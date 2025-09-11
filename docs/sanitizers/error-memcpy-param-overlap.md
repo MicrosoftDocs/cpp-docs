@@ -10,7 +10,7 @@ helpviewer_keywords: ["memcpy-param-overlap error", "AddressSanitizer error memc
 > Address Sanitizer Error: memcpy-param-overlap
 
 > [!NOTE]
-> The `/Oi` flag is required to reliably detect `memcpy-param-overlap` errors. This flag tells the compiler to treat `memcpy` and other functions as intrinsics, which is necessary because some versions of the standard library implement them as such. Since ASan is a dynamic analysis tool, it can only detect errors with an observable runtime effect. Note that when `/O2` is also set, ASan may not be able to reliably detect `memcpy-param-overlap` errors because the intrinsic variant of these functions isn't guaranteed to be used. For more information, see [`/Oi` docs](../build/reference/oi-generate-intrinsic-functions.md).
+> The `/Oi` flag is required to reliably detect `memcpy-param-overlap` errors. This flag tells the compiler to treat `memcpy` and other functions as intrinsics, which is necessary because some versions of the standard library implement them as such. Since ASan is a dynamic analysis tool, it can only detect errors with an observable runtime effect. Note that when `/O2` is also set, ASan may not be able to reliably detect `memcpy-param-overlap` errors because the intrinsic variant of these functions isn't guaranteed to be used. For more information, see [`/Oi` (Generate Intrinsic Functions)](../build/reference/oi-generate-intrinsic-functions.md).
 
 The CRT function [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md) **doesn't support** overlapping memory. The CRT provides an alternative to `memcpy` that does support overlapping memory: [`memmove`](../c-runtime-library/reference/memmove-wmemmove.md).
 
