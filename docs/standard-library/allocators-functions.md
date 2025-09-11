@@ -7,21 +7,7 @@ helpviewer_keywords: ["std::ALLOCATOR_DECL [C++]", "std::CACHE_CHUNKLIST [C++]",
 ---
 # `<allocators>` macros
 
-:::row:::
-   :::column span="":::
-      [`ALLOCATOR_DECL`](#allocator_decl)\
-      [`CACHE_CHUNKLIST`](#cache_chunklist)
-   :::column-end:::
-   :::column span="":::
-      [`CACHE_FREELIST`](#cache_freelist)
-   :::column-end:::
-   :::column span="":::
-      [`CACHE_SUBALLOC`](#cache_suballoc)
-   :::column-end:::
-   :::column span="":::
-      [`SYNC_DEFAULT`](#sync_default)
-   :::column-end:::
-:::row-end:::
+The `<allocators>` header provides the following macros:
 
 ## <a name="allocator_decl"></a> ALLOCATOR_DECL
 
