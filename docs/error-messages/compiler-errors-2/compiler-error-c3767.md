@@ -1,22 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3767"
 title: "Compiler Error C3767"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3767"
+ms.date: 11/04/2016
 f1_keywords: ["C3767"]
 helpviewer_keywords: ["C3767"]
-ms.assetid: 5247cdcd-639c-4527-bd37-37e74c4e8fab
 ---
 # Compiler Error C3767
 
-'function' candidate function(s) not accessible
+> 'function' candidate function(s) not accessible
+
+## Remarks
 
 A friend function defined in a class is not supposed to be treated as if it were defined and declared in the global namespace scope. It can, however, be found by argument-dependent lookup.
 
 C3767 may also be caused by a breaking change: native types are now private by default in a **/clr** compilation; see [Type visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) for more information.
 
-## Example
+## Examples
 
-The following sample generates C3767:
+The following example generates C3767:
 
 ```cpp
 // C3767a.cpp
@@ -47,7 +48,7 @@ int main() {
 };
 ```
 
-The following sample generates C3767:
+The following example generates C3767:
 
 ```cpp
 // C3767c.cpp

@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3764"
 title: "Compiler Error C3764"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3764"
+ms.date: 11/04/2016
 f1_keywords: ["C3764"]
 helpviewer_keywords: ["C3764"]
-ms.assetid: af5d254c-8d4a-4dda-aad9-3c5c1257c868
 ---
 # Compiler Error C3764
 
-'override_function': cannot override base class method 'base_class_function'
+> 'override_function': cannot override base class method 'base_class_function'
+
+## Remarks
 
 The compiler detected an ill-formed override. For example, the base class function was not **`virtual`**. For more information, see [override](../../extensions/override-cpp-component-extensions.md).
 
 ## Examples
 
-The following sample generates C3764.
+The following example generates C3764.
 
 ```cpp
 // C3764.cpp
@@ -30,7 +31,7 @@ public ref struct B : A {
 };
 ```
 
-C3764 can also occur when a base class method is both explicitly and named overridden. The following sample generates C3764.
+C3764 can also occur when a base class method is both explicitly and named overridden. The following example generates C3764.
 
 ```cpp
 // C3764_b.cpp

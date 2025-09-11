@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3754"
 title: "Compiler Error C3754"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3754"
+ms.date: 11/04/2016
 f1_keywords: ["C3754"]
 helpviewer_keywords: ["C3754"]
-ms.assetid: 14b877bc-9277-40ec-af1c-196a58b45f10
 ---
 # Compiler Error C3754
 
-delegate constructor: member function 'function' cannot be called on an instance of type 'type'
+> delegate constructor: member function 'function' cannot be called on an instance of type 'type'
+
+## Remarks
 
 A call was made to a function through a pointer to a type that does not contain the function.
 
 ## Example
 
-The following sample generates C3754:
+The following example generates C3754:
 
 ```cpp
 // C3754a.cpp

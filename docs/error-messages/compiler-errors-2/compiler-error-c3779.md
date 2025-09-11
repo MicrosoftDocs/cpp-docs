@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C3779"
 title: "Compiler Error C3779"
+description: "Learn more about: Compiler Error C3779"
 ms.date: 05/19/2021
 f1_keywords: ["C3779"]
 helpviewer_keywords: ["C3779"]
@@ -9,15 +9,15 @@ helpviewer_keywords: ["C3779"]
 
 > '*function*': a function that returns '*auto or decltype(auto)*' cannot be used before it is defined
 
-The **`auto`** return type of the specified function call couldn't be deduced. The compiler didn't have enough information at the call site.
-
 ## Remarks
+
+The **`auto`** return type of the specified function call couldn't be deduced. The compiler didn't have enough information at the call site.
 
 This error can occur when you call a forward-declared member function that has an **`auto`** return type but no body or trailing return type. You can also get this error when the compiler can't find a candidate return type when it instantiates a template specialization. A common cause of this error is a missing interface header. The missing type can often be determined from the typename mentioned in a note that follows this error. To resolve this issue, for every type you use, include the header for the namespace the type is in.
 
-## Examples
+## Example
 
-The following C++/WinRT sample generates C3779:
+The following C++/WinRT example generates C3779:
 
 ```cpp
 // C3779.cpp
