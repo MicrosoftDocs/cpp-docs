@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3280"
 title: "Compiler Error C3280"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3280"
+ms.date: 11/04/2016
 f1_keywords: ["C3280"]
 helpviewer_keywords: ["C3280"]
-ms.assetid: 86dc5bbc-8818-4786-a728-9334268d308b
 ---
 # Compiler Error C3280
 
-'class' : a member-function of a managed type cannot be compiled as an unmanaged function
+> 'class' : a member-function of a managed type cannot be compiled as an unmanaged function
+
+## Remarks
 
 Managed class member functions cannot be compiled as unmanaged functions.
 
-The following sample generates C3280:
+## Example
+
+The following example generates C3280:
 
 ```cpp
 // C3280_2.cpp

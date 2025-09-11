@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3265"
 title: "Compiler Error C3265"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3265"
+ms.date: 11/04/2016
 f1_keywords: ["C3265"]
 helpviewer_keywords: ["C3265"]
-ms.assetid: 10ab3e17-4a9f-4120-bab5-21473869b70f
 ---
 # Compiler Error C3265
 
-cannot declare a managed 'managed construct' in an unmanaged 'unmanaged construct'
+> cannot declare a managed 'managed construct' in an unmanaged 'unmanaged construct'
+
+## Remarks
 
 You cannot include a managed object in an unmanaged context.
 
-The following sample reproduces C3265:
+## Example
+
+The following example reproduces C3265:
 
 ```cpp
 // C3265_2.cpp
