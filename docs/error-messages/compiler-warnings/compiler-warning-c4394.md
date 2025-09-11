@@ -1,13 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, Error) C4394"
 title: "Compiler Warning (level 1, Error) C4394"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1, Error) C4394"
+ms.date: 11/04/2016
 f1_keywords: ["C4394"]
 helpviewer_keywords: ["C4394"]
 ---
 # Compiler Warning (level 1, Error) C4394
 
 > 'function' : per-appdomain symbol should not be marked with __declspec(dllexport)
+
+## Remarks
 
 A function marked with the [appdomain](../../cpp/appdomain.md) **`__declspec`** modifier is compiled to MSIL (not native), and export tables ([export](../../windows/attributes/export.md) **`__declspec`** modifier) aren't supported for managed functions.
 
@@ -17,7 +19,7 @@ C4394 is always issued as an error. You can turn off this warning or change its 
 
 ## Example
 
-The following sample generates C4394.
+The following example generates C4394.
 
 ```cpp
 // C4394.cpp
