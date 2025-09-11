@@ -1,7 +1,7 @@
 ---
 title: "modf, modff, modfl"
 description: "API reference for modf, modff, and modfl; which split a floating-point value into fractional and integer parts."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["modff", "modf", "modfl", "_o_modf", "_o_modff"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -52,7 +52,7 @@ By default, this function's global state is scoped to the application. To change
 
 | Routine | Required header |
 |---|---|
-| **`modf`**, **`modff`**, **`modfl`** | C: `<math.h>`<br /><br /> C++: , `<cmath>` or `<math.h>` |
+| **`modf`**, **`modff`**, **`modfl`** | C: `<math.h>`<br /><br /> C++: `<cmath>` or `<math.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
