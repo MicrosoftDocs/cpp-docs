@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3115"
 title: "Compiler Error C3115"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3115"
+ms.date: 11/04/2016
 f1_keywords: ["C3115"]
 helpviewer_keywords: ["C3115"]
-ms.assetid: 51726145-9782-4ec9-84b9-286f366d9cbd
 ---
 # Compiler Error C3115
 
-'attribute': this attribute is not allowed on 'construct'
+> 'attribute': this attribute is not allowed on 'construct'
+
+## Remarks
 
 An attribute was applied to a construct for which it was not intended.  See [Attributes by Usage](../../windows/attributes/attributes-by-usage.md) for more information.
 
 ## Example
 
-The following sample generates C3115.
+The following example generates C3115.
 
 ```cpp
 // C3115.cpp
