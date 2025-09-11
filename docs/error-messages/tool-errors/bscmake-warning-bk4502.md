@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: BSCMAKE Warning BK4502"
 title: "BSCMAKE Warning BK4502"
-ms.date: "11/04/2016"
+description: "Learn more about: BSCMAKE Warning BK4502"
+ms.date: 11/04/2016
 f1_keywords: ["BK4502"]
 helpviewer_keywords: ["BK4502"]
-ms.assetid: ee412ec8-df03-4cdb-91ee-5d609ded8691
 ---
 # BSCMAKE Warning BK4502
 
-truncated .SBR file 'filename' not in filename
+> truncated .SBR file 'filename' not in filename
+
+## Remarks
 
 A zero-length .sbr file that was not originally part of the .bsc file was specified during an update.
 
