@@ -8,7 +8,7 @@ ms.assetid: ee412ec8-df03-4cdb-91ee-5d609ded8691
 ---
 # BSCMAKE Warning BK4502
 
-truncated .SBR file 'filename' not in filename
+> truncated .SBR file 'filename' not in filename
 
 A zero-length .sbr file that was not originally part of the .bsc file was specified during an update.
 

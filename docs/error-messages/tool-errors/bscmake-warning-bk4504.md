@@ -8,7 +8,7 @@ ms.assetid: b56ee2d4-ad44-40f4-98c0-75934ea44a6c
 ---
 # BSCMAKE Warning BK4504
 
-file contains too many references; ignoring further references from this source
+> file contains too many references; ignoring further references from this source
 
 The .cpp file contains more than 64,000 symbol references. When BSCMAKE has encountered 64,000 references in a file, it ignores all further references.
 
