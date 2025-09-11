@@ -1,13 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4, no longer emitted) C4001"
 title: "Compiler Warning (level 4, no longer emitted) C4001"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4, no longer emitted) C4001"
+ms.date: 11/04/2016
 f1_keywords: ["C4001"]
 helpviewer_keywords: ["C4001"]
 ---
 # Compiler Warning (level 4, no longer emitted) C4001
 
 > nonstandard extension 'single line comment' was used
+
+## Remarks
 
 > [!NOTE]
 > This warning is removed in Visual Studio 2017 version 15.5 because single-line comments are standard in C99.
