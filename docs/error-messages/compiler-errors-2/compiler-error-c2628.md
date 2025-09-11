@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2628"
 title: "Compiler Error C2628"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2628"
+ms.date: 11/04/2016
 f1_keywords: ["C2628"]
 helpviewer_keywords: ["C2628"]
-ms.assetid: 19a25e77-d5be-4107-88d5-0745b6281f98
 ---
 # Compiler Error C2628
 
-'type1' followed by 'type2' is illegal (did you forget a ';'?)
+> 'type1' followed by 'type2' is illegal (did you forget a ';'?)
+
+## Remarks
 
 A semicolon may be missing.
 
-The following sample generates C2628:
+## Example
+
+The following example generates C2628:
 
 ```cpp
 // C2628.cpp
