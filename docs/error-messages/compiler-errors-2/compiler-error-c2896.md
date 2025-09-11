@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2896"
 title: "Compiler Error C2896"
+description: "Learn more about: Compiler Error C2896"
 ms.date: 06/01/2022
 f1_keywords: ["C2896"]
 helpviewer_keywords: ["C2896"]
-ms.assetid: b600407b-cb05-42e3-9069-2aa6960f0eaa
 ---
 # Compiler Error C2896
 
 > '*function1*' : cannot use function template '*function2*' as argument
 
+## Remarks
+
 A function template can't be an argument to another function template.
 
 This error is obsolete in Visual Studio 2022 and later versions.
 
-The following sample generates C2896:
+## Examples
+
+The following example generates C2896:
 
 ```cpp
 // C2896.cpp

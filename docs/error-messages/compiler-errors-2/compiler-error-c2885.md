@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2885"
 title: "Compiler Error C2885"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2885"
+ms.date: 11/04/2016
 f1_keywords: ["C2885"]
 helpviewer_keywords: ["C2885"]
-ms.assetid: 7743e5f3-a034-44b4-9ee8-5a6254c27f8c
 ---
 # Compiler Error C2885
 
-'class::identifier' : not a valid using-declaration at non-class scope
+> 'class::identifier' : not a valid using-declaration at non-class scope
+
+## Remarks
 
 You used a [using](../../cpp/using-declaration.md) declaration incorrectly.
 
@@ -16,7 +17,7 @@ This error can be generated as a result of compiler conformance work that was do
 
 ## Examples
 
-The following sample generates C2885.
+The following example generates C2885.
 
 ```cpp
 // C2885.cpp
@@ -47,7 +48,7 @@ int main () {
 
 If you use the **`using`** keyword with a class member, C++ requires you to define that member inside another class (a derived class).
 
-The following sample generates C2885.
+The following example generates C2885.
 
 ```cpp
 // C2885_b.cpp
