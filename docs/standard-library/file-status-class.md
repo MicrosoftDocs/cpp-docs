@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: file_status Class"
 title: "file_status Class"
-ms.date: "09/10/2018"
+description: "Learn more about: file_status Class"
+ms.date: 09/10/2018
 f1_keywords: ["filesystem/std::experimental::filesystem::file_status", "filesystem/std::experimental::filesystem::file_status::operator=", "filesystem/std::experimental::filesystem::file_status::type", "filesystem/std::experimental::filesystem::file_status::permissions"]
-ms.assetid: 9781840e-ad22-44dd-ad79-0fabaa94bac4
 helpviewer_keywords: ["std::experimental::filesystem::file_status", "std::experimental::filesystem::file_status::operator=", "std::experimental::filesystem::file_status::type", "std::experimental::filesystem::file_status::permissions"]
 ---
 # file_status Class
