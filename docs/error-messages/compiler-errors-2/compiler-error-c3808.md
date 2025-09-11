@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3808"
 title: "Compiler Error C3808"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3808"
+ms.date: 11/04/2016
 f1_keywords: ["C3808"]
 helpviewer_keywords: ["C3808"]
-ms.assetid: 2ee8ac97-3ea4-417a-8710-be73a7f98cf4
 ---
 # Compiler Error C3808
 
@@ -18,7 +17,7 @@ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual St
 
 ## Example
 
-The following sample generates C3808.
+The following example generates C3808.
 
 ```cpp
 // C3808.cpp

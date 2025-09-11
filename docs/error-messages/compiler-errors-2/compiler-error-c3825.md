@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3825"
 title: "Compiler Error C3825"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3825"
+ms.date: 11/04/2016
 f1_keywords: ["C3825"]
 helpviewer_keywords: ["C3825"]
-ms.assetid: 18e204a1-f26e-42c6-8d74-2b49cc95f940
 ---
 # Compiler Error C3825
 
-'class': a managed or WinRTclass can only support managed or WinRTevents
+> 'class': a managed or WinRTclass can only support managed or WinRTevents
+
+## Remarks
 
 Only .NET events are supported in managed classes. Only Windows Runtime events are supported in Windows Runtime classes. To fix this error in managed code, change type parameter of `event_source` and `event_receiver` from `native` to `managed`. Alternatively, remove the attribute.
 
 ## Example
 
-The following sample generates C3825 and shows how to fix it:
+The following example generates C3825 and shows how to fix it:
 
 ```cpp
 // C3825a.cpp
