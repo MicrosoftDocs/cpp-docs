@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3731"
 title: "Compiler Error C3731"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3731"
+ms.date: 11/04/2016
 f1_keywords: ["C3731"]
 helpviewer_keywords: ["C3731"]
-ms.assetid: 45f89fcd-464c-4bc8-8a42-edcb5416d26c
 ---
 # Compiler Error C3731
 
-incompatible event 'function1' and handler 'function2'; event source and event handler must be the same type
+> incompatible event 'function1' and handler 'function2'; event source and event handler must be the same type
+
+## Remarks
 
 The event source and event receiver must have the same type (for example `native` vs. `com` types). To fix this error, make the types of the event source and the event handler match.
 
-The following sample generates C3731:
+## Example
+
+The following example generates C3731:
 
 ```cpp
 // C3731.cpp
