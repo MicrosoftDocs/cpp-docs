@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3855"
 title: "Compiler Error C3855"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3855"
+ms.date: 11/04/2016
 f1_keywords: ["C3855"]
 helpviewer_keywords: ["C3855"]
-ms.assetid: ed90f8c0-4154-4243-b066-493913df5727
 ---
 # Compiler Error C3855
 
-'class': type parameter 'param' is incompatible with the declaration
+> 'class': type parameter 'param' is incompatible with the declaration
+
+## Remarks
 
 The compiler found nontype template or generic parameters with different names. This can occur when a specified template parameter in the definition of a template specialization is incompatible with its declaration.
 
-The following sample generates C3855:
+## Examples
+
+The following example generates C3855:
 
 ```cpp
 // C3855.cpp

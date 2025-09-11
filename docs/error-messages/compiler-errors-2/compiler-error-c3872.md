@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3872"
 title: "Compiler Error C3872"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3872"
+ms.date: 11/04/2016
 f1_keywords: ["C3872"]
 helpviewer_keywords: ["C3872"]
-ms.assetid: 519e95be-5641-40cc-894c-da4819506604
 ---
 # Compiler Error C3872
 
-'char': this character is not allowed in an identifier
+> 'char': this character is not allowed in an identifier
+
+## Remarks
 
 The C++ compiler follows the C++11 standard on characters allowed in an identifier. Only certain ranges of characters and universal character names are allowed in an identifier. Additional restrictions apply to the initial character of an identifier. For more information and a list of allowed characters and universal character name ranges, see [Identifiers](../../cpp/identifiers-cpp.md).
 
 The range of characters allowed in an identifier is less restrictive when compiling C++/CLI code. Identifiers in code compiled by using /clr should follow  [Standard ECMA-335: Common Language Infrastructure (CLI)](https://ecma-international.org/publications-and-standards/standards/ecma-335/).
 
-The following sample generates C3872:
+## Example
+
+The following example generates C3872:
 
 ```cpp
 // C3872.cpp

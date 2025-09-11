@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3860"
 title: "Compiler Error C3860"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3860"
+ms.date: 11/04/2016
 f1_keywords: ["C3860"]
 helpviewer_keywords: ["C3860"]
-ms.assetid: 1fb5110d-594e-4f1c-8773-888233af1313
 ---
 # Compiler Error C3860
 
-type argument list following class type name must list parameters in the order used in type parameter list
+> type argument list following class type name must list parameters in the order used in type parameter list
+
+## Remarks
 
 A generic or template argument list was ill formed.
 
-The following sample generates C3860:
+## Examples
+
+The following example generates C3860:
 
 ```cpp
 // C3860.cpp
