@@ -267,11 +267,11 @@ int main( )
    cout << ")." << endl;
 
    insert_iterator<vector<int> > ii ( vec, vec.begin ( ) );
-*ii = 30;
+   *ii = 30;
    ii++;
-*ii = 40;
+   *ii = 40;
    ii++;
-*ii = 50;
+   *ii = 50;
 
    cout << "After the insertions, the vector vec becomes:\n ( ";
    for ( vIter = vec.begin ( ) ; vIter != vec.end ( ); vIter++ )
