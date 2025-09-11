@@ -1,16 +1,19 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4337"
 title: "Compiler Warning (level 4) C4337"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4337"
+ms.date: 11/04/2016
 f1_keywords: ["C4337"]
 helpviewer_keywords: ["C4337"]
-ms.assetid: 70bc72d9-aac5-45cd-abd3-ebe42a05897b
 ---
 # Compiler Warning (level 4) C4337
 
-cross-referenced type library 'typelib1' in 'typelib2' is being automatically imported
+> cross-referenced type library 'typelib1' in 'typelib2' is being automatically imported
+
+## Remarks
 
 The auto_search attribute of [the #import directive](../../preprocessor/hash-import-directive-cpp.md) caused a type library to be implicitly imported.
+
+## Example
 
 Given two type libraries on disk created from the following two files (compiled with midl.exe):
 
@@ -51,7 +54,7 @@ library C4337bLib
 };
 ```
 
-The following sample generates C4337:
+The following example generates C4337:
 
 ```cpp
 // C4337.cpp

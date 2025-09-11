@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4350"
 title: "Compiler Warning (level 1) C4350"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4350"
+ms.date: 11/04/2016
 f1_keywords: ["C4350"]
 helpviewer_keywords: ["C4350"]
-ms.assetid: 4cc8ed67-64c4-4da5-a7a5-a639232baa23
 ---
 # Compiler Warning (level 1) C4350
 
-behavior change: 'member1' called instead of 'member2'
+> behavior change: 'member1' called instead of 'member2'
+
+## Remarks
 
 An rvalue cannot be bound to a non-const reference. In versions of Visual C++ before Visual Studio 2003, it was possible to bind an rvalue to a non-const reference in a direct initialization. This code now gives a warning.
 
@@ -20,7 +21,9 @@ If you get this warning, examine your code to see if it depends on binding rvalu
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-The following sample generates C4350:
+## Example
+
+The following example generates C4350:
 
 ```cpp
 // C4350.cpp

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1 and level 3) C4359"
 title: "Compiler Warning (level 1 and level 3) C4359"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1 and level 3) C4359"
+ms.date: 11/04/2016
 f1_keywords: ["C4359"]
 helpviewer_keywords: ["C4359"]
 ---
@@ -9,11 +9,13 @@ helpviewer_keywords: ["C4359"]
 
 > 'type': actual alignment (8) is greater than the value specified in __declspec(align())
 
+## Remarks
+
 The alignment specified for a type is less than the alignment of the type of one of its data members. For more information, see [align](../../cpp/align-cpp.md).
 
 ## Example
 
-The following sample generates C4359.
+The following example generates C4359.
 
 ```cpp
 // C4359.cpp
