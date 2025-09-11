@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3409"
 title: "Compiler Error C3409"
-ms.date: "11/06/2018"
+description: "Learn more about: Compiler Error C3409"
+ms.date: 11/06/2018
 f1_keywords: ["C3409"]
 helpviewer_keywords: ["C3409"]
-ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
 ---
 # Compiler Error C3409
 

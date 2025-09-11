@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3382"
 title: "Compiler Error C3382"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3382"
+ms.date: 11/04/2016
 f1_keywords: ["C3382"]
 helpviewer_keywords: ["C3382"]
-ms.assetid: a7603abd-ac4e-4ae6-a02b-3bdc6d1908a6
 ---
 # Compiler Error C3382
 
-'sizeof' is not supported with /clr:safe
+> 'sizeof' is not supported with /clr:safe
+
+## Remarks
 
 The output file of a **/clr:safe** compilation is a file that is verifiably type safe, and sizeof is not supported because the return value of the sizeof operator is size_t, whose size varies depending on the operating system.
 
@@ -22,7 +23,7 @@ For more information, see,
 
 ## Example
 
-The following sample generates C3382.
+The following example generates C3382.
 
 ```cpp
 // C3382.cpp
