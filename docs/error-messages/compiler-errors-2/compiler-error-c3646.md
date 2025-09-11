@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3646"
 title: "Compiler Error C3646"
-ms.date: "06/14/2018"
+description: "Learn more about: Compiler Error C3646"
+ms.date: 06/14/2018
 f1_keywords: ["C3646"]
 helpviewer_keywords: ["C3646"]
-ms.assetid: 4391ead2-9637-4ca3-aeda-5a991b18d66d
 ---
 # Compiler Error C3646
 
@@ -20,7 +19,7 @@ For more information, see [Override Specifiers](../../extensions/override-specif
 
 ## Example
 
-The following sample generates C3646 and shows a way to fix it:
+The following example generates C3646 and shows a way to fix it:
 
 ```cpp
 // C3646.cpp
