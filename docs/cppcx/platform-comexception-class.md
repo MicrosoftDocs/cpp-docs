@@ -73,7 +73,7 @@ The following predefined exceptions are derived from COMException. They differ f
 
 ## <a name="ctor"></a> COMException::COMException Constructor
 
-Intializes a new instance of the COMException class.
+Initializes a new instance of the COMException class.
 
 ### Syntax
 

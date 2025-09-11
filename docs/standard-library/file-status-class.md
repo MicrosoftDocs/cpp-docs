@@ -74,7 +74,7 @@ The defaulted member assignment operators behave as expected.
 
 ```cpp
 file_status& operator=(const file_status&) noexcept = default;
-file_status& operator=(file_status&&) nexcept = default;
+file_status& operator=(file_status&&) noexcept = default;
 ```
 
 ### Parameters

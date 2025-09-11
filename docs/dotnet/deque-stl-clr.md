@@ -1567,7 +1567,7 @@ Position of element to access.
 
 ### Remarks
 
-The member operator returns a referene to the element at position *pos*. You use it to access an element whose position you know.
+The member operator returns a reference to the element at position *pos*. You use it to access an element whose position you know.
 
 ### Example
 

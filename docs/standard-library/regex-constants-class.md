@@ -199,7 +199,7 @@ The syntax modifiers are:
 
 `icase` -- make matches case-insensitive
 
-`nosubs` -- the implementaton need not keep track of the contents of capture groups
+`nosubs` -- the implementation need not keep track of the contents of capture groups
 
 `optimize` -- the implementation should emphasize speed of matching rather than speed of regular expression compilation
 

@@ -176,7 +176,7 @@ The number of items retrieved.
 
 ### Remarks
 
-This function is not intended for use directly by client code. It is used internally in the [to_vector Function](../cppcx/to-vector-function.md) to enable efficient conversion of Platform::Vector intances to std::vector instances.
+This function is not intended for use directly by client code. It is used internally in the [to_vector Function](../cppcx/to-vector-function.md) to enable efficient conversion of Platform::Vector instances to std::vector instances.
 
 ## <a name="getview"></a> Vector::GetView Method
 

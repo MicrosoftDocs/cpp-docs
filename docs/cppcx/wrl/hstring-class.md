@@ -340,7 +340,7 @@ The second parameter to compare. *rhs* can be a reference to an `HString`.
 
 ## <a name="release"></a> HString::Release
 
-Deletes the underlying string value and intializes the current `HString` object to an empty value.
+Deletes the underlying string value and initializes the current `HString` object to an empty value.
 
 ```cpp
 void Release() throw()

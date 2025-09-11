@@ -86,7 +86,7 @@ It is strongly recommended to use CreateException to create a strongly-typed exc
 
 ## <a name="ctor"></a> Exception::Exception Constructor
 
-Intializes a new instance of the Exception class.
+Initializes a new instance of the Exception class.
 
 ### Syntax
 
