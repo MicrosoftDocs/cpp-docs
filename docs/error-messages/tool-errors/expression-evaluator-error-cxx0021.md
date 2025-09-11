@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Expression Evaluator Error CXX0021"
 title: "Expression Evaluator Error CXX0021"
-ms.date: "11/04/2016"
+description: "Learn more about: Expression Evaluator Error CXX0021"
+ms.date: 11/04/2016
 f1_keywords: ["CXX0021"]
 helpviewer_keywords: ["CXX0021", "CAN0021"]
-ms.assetid: d6c0c35a-16c2-42c0-a7d2-e910350a47f0
 ---
 # Expression Evaluator Error CXX0021
 
-struct or union used as scalar
+> struct or union used as scalar
+
+## Remarks
 
 A structure or union was used in an expression, but no element was specified.
 

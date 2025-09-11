@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Expression Evaluator Error CXX0018"
 title: "Expression Evaluator Error CXX0018"
-ms.date: "11/04/2016"
+description: "Learn more about: Expression Evaluator Error CXX0018"
+ms.date: 11/04/2016
 f1_keywords: ["CXX0018"]
 helpviewer_keywords: ["CAN0018", "CXX0018"]
-ms.assetid: d3d115d6-8981-4651-b615-566de867a263
 ---
 # Expression Evaluator Error CXX0018
 
-bad register name
+> bad register name
+
+## Remarks
 
 A specified register does not exist or cannot be displayed.
 
