@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4803"
 title: "Compiler Warning (level 1) C4803"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4803"
+ms.date: 11/04/2016
 f1_keywords: ["C4803"]
 helpviewer_keywords: ["C4803"]
-ms.assetid: 2552f3a6-c418-49f4-98a2-a929857be658
 ---
 # Compiler Warning (level 1) C4803
 
-'method' : the raise method has a different storage class from that of the event, 'event'
+> 'method' : the raise method has a different storage class from that of the event, 'event'
+
+## Remarks
 
 Event methods must have the same storage class as the event declaration. The compiler adjusts the event's methods so that the storage classes are the same.
 
@@ -18,7 +19,7 @@ See [warning](../../preprocessor/warning.md) pragma for information on how to tu
 
 ## Example
 
-The following sample generates C4803.
+The following example generates C4803.
 
 ```cpp
 // C4803.cpp

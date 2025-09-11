@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4800"
 title: "Compiler Warning (level 4) C4800"
-ms.date: "03/14/2019"
+description: "Learn more about: Compiler Warning (level 4) C4800"
+ms.date: 03/14/2019
 f1_keywords: ["C4800"]
 helpviewer_keywords: ["C4800"]
-ms.assetid: 4f409799-a250-45ed-bb5f-657691b0d9f7
 ---
 # Compiler Warning (level 4) C4800
 
@@ -15,6 +14,8 @@ Visual Studio 2019 and later:
 
 C4800 is a level 3 warning in Visual Studio 2015 and earlier:
 > '*type*' : forcing value to bool 'true' or 'false' (performance warning)
+
+## Remarks
 
 This warning is generated when a value is implicitly converted into type **`bool`**. Typically, this message is caused by assigning **`int`** variables to **`bool`** variables where the **`int`** variable contains only values **`true`** and **`false`**, and could be redeclared as type **`bool`**. If you can't rewrite the expression to use type **`bool`**, then you can add "`!=0`" to the expression, which gives the expression type **`bool`**. Casting the expression to type **`bool`** doesn't disable the warning, which is by design.
 
@@ -28,7 +29,7 @@ This warning is off by default starting in Visual Studio 2019. Use __/w__*n*__48
 
 ## Example
 
-The following sample generates C4800 and shows how to fix it:
+The following example generates C4800 and shows how to fix it:
 
 ```cpp
 // C4800.cpp
