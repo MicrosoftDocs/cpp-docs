@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2084"
 title: "Compiler Error C2084"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2084"
+ms.date: 11/04/2016
 f1_keywords: ["C2084"]
 helpviewer_keywords: ["C2084"]
-ms.assetid: 990b107f-3721-4851-ae8b-4b69a8c149ed
 ---
 # Compiler Error C2084
 
-function '*function*' already has a body
+> function '*function*' already has a body
+
+## Remarks
 
 The function has already been defined.
 
@@ -20,7 +21,7 @@ Before Visual Studio 2002,
 
 ## Example
 
-The following sample generates C2084:
+The following example generates C2084:
 
 ```cpp
 // C2084.cpp

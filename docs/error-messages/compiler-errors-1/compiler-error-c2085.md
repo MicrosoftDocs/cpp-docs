@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2085"
 title: "Compiler Error C2085"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2085"
+ms.date: 11/04/2016
 f1_keywords: ["C2085"]
 helpviewer_keywords: ["C2085"]
-ms.assetid: 0a86785c-8e6f-481b-8c7b-412220c1950d
 ---
 # Compiler Error C2085
 
-'identifier' : not in formal parameter list
+> 'identifier' : not in formal parameter list
+
+## Remarks
 
 The identifier was declared in a function definition but not in the formal parameter list. (ANSI C only)
 
-The following sample generates C2085:
+## Example
+
+The following example generates C2085:
 
 ```c
 // C2085.c
