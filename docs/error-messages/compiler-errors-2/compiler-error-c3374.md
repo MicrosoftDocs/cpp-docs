@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3374"
 title: "Compiler Error C3374"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3374"
+ms.date: 11/04/2016
 f1_keywords: ["C3374"]
 helpviewer_keywords: ["C3374"]
-ms.assetid: 41431299-bd20-47d4-a0c8-1334dd79018b
 ---
 # Compiler Error C3374
 
-can't take address of 'function' unless creating delegate instance
+> can't take address of 'function' unless creating delegate instance
+
+## Remarks
 
 The address of a function was taken in a context other than the creation of a delegate instance.
 
-The following sample generates C3374:
+## Example
+
+The following example generates C3374:
 
 ```cpp
 // C3374.cpp

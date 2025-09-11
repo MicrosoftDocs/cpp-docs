@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3358"
 title: "Compiler Error C3358"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3358"
+ms.date: 11/04/2016
 f1_keywords: ["C3358"]
 helpviewer_keywords: ["C3358"]
-ms.assetid: 180b93df-e78f-441a-91fb-1594c681f7f0
 ---
 # Compiler Error C3358
 
-'symbol': symbol not found
+> 'symbol': symbol not found
+
+## Remarks
 
 The required symbol was not found.
 
-The following sample generates C3358:
+## Example
+
+The following example generates C3358:
 
 ```cpp
 // C3358.cpp
