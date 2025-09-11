@@ -7,7 +7,7 @@ ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2017
 
-Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the improvements by major release, then by version. To jump directly to the changes for a specific version, use list below **In this article**.
+Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the improvements by major release, then by version. To jump directly to the changes for a specific version, use the list below **In this article**.
 
 This document lists the changes in Visual Studio 2017. For a guide to the changes in Visual Studio 2022, see [C++ conformance improvements in Visual Studio 2022](cpp-conformance-improvements.md). For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md). For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
@@ -611,7 +611,7 @@ To fix the warning, put `extern "C"` first:
 extern "C" __declspec(noinline) HRESULT __stdcall
 ```
 
-This warning is off by default in Visual Studio 2017 version 15.3, and only impacts code compiled with  **`/Wall`** **`/WX`**. Starting in Visual Studio 2017 version 15.5, it's enabled by default as a level 3 warning.
+This warning is off by default in Visual Studio 2017 version 15.3, and only impacts code compiled with **`/Wall`** **`/WX`**. Starting in Visual Studio 2017 version 15.5, it's enabled by default as a level 3 warning.
 
 ### `decltype` and calls to deleted destructors
 
@@ -805,7 +805,7 @@ In earlier versions of Visual Studio, the compiler always gave a **`constexpr`**
 
 ### Removing allocator support in `std::function`
 
-[P0302R1](https://wg21.link/p0302r1) Prior to C++17, the class template `std::function` had several constructors that took an allocator argument. However, the use of allocators in this context was problematic, and the semantics were unclear. The problem contructors have been removed.
+[P0302R1](https://wg21.link/p0302r1) Prior to C++17, the class template `std::function` had several constructors that took an allocator argument. However, the use of allocators in this context was problematic, and the semantics were unclear. The problematic constructors have been removed.
 
 ### Fixes for `not_fn()`
 
@@ -1022,7 +1022,7 @@ To fix the error, remove the unused variable.
 
 ### Single-line comments
 
-In Visual Studio 2017 version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the **`/Za`** compiler switch.  The warnings are no longer needed because single-line comments have been part of the C standard since C99.
+In Visual Studio 2017 version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the **`/Za`** compiler switch. The warnings are no longer needed because single-line comments have been part of the C standard since C99.
 
 ```cpp
 /* C only */
@@ -1051,7 +1051,7 @@ When the code doesn't need to be backwards compatible, avoid the warning by remo
 
 ### `__declspec` attributes with `extern "C"` linkage
 
-In earlier versions of Visual Studio, the compiler ignored `__declspec(...)` attributes when `__declspec(...)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that user didn't intend, with possible runtime implications. The [C4768](../error-messages/compiler-warnings/c4768.md) warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio 2017 version 15.5, the warning is enabled by default.
+In earlier versions of Visual Studio, the compiler ignored `__declspec(...)` attributes when `__declspec(...)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that the user didn't intend, with possible runtime implications. The [C4768](../error-messages/compiler-warnings/c4768.md) warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio 2017 version 15.5, the warning is enabled by default.
 
 ```cpp
 __declspec(noinline) extern "C" HRESULT __stdcall // C4768
@@ -1116,7 +1116,7 @@ error C2027: use of undefined type 'S'
 
 ### `std::is_convertible` target type
 
-`std::is_convertible` requires the target type to be a valid return type. In earlier versions of Visual Studio, the compiler incorrectly allowed abstract types, which might lead to incorrect overload resolution and unintended runtime behavior.  The following code now correctly raises C2338:
+`std::is_convertible` requires the target type to be a valid return type. In earlier versions of Visual Studio, the compiler incorrectly allowed abstract types, which might lead to incorrect overload resolution and unintended runtime behavior. The following code now correctly raises C2338:
 
 ```cpp
 #include <type_traits>
@@ -1193,7 +1193,7 @@ The warning was added in Visual Studio 2017 version 15.3, but was off by default
 
 ### Defaulted functions and `__declspec(nothrow)`
 
-The compiler previously allowed defaulted functions to be declared with `__declspec(nothrow)` when the corresponding base/member functions permitted exceptions. This behavior is contrary to the C++ standard and can cause undefined behavior at runtime. The standard requires such functions to be defined as deleted if there's an exception specification mismatch.  Under **`/std:c++17`**, the following code raises C2280:
+The compiler previously allowed defaulted functions to be declared with `__declspec(nothrow)` when the corresponding base/member functions permitted exceptions. This behavior is contrary to the C++ standard and can cause undefined behavior at runtime. The standard requires such functions to be defined as deleted if there's an exception specification mismatch. Under **`/std:c++17`**, the following code raises C2280:
 
 ```cpp
 struct A {
@@ -1441,7 +1441,7 @@ void sample(A<0> *p)
 
 ### C++20: Avoiding unnecessary decay (partial)
 
-[P0777R1](https://wg21.link/p0777r1) Adds differentiation between the concept of "decay" and that of simply removing const or reference qualifiers.  New type trait `remove_reference_t` replaces `decay_t` in some contexts. Support for `remove_cvref_t` is implemented in Visual Studio 2019.
+[P0777R1](https://wg21.link/p0777r1) Adds differentiation between the concept of "decay" and that of simply removing const or reference qualifiers. New type trait `remove_reference_t` replaces `decay_t` in some contexts. Support for `remove_cvref_t` is implemented in Visual Studio 2019.
 
 ### C++17: Parallel algorithms
 
@@ -1457,7 +1457,7 @@ void sample(A<0> *p)
 
 ### C++17: Mathematical special functions
 
-[P0226R1](https://wg21.link/p0220r1) Adopts previous technical specifications for Mathematical Special Functions into the standard *`<cmath>`* header.
+[P0226R1](https://wg21.link/p0226r1) Adopts previous technical specifications for Mathematical Special Functions into the standard *`<cmath>`* header.
 
 ### C++17: Deduction guides for the standard library
 
@@ -1613,7 +1613,7 @@ In [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode
 
 ```cpp
 template <typename T>
-using  X = typename T; // C7511: 'T': 'typename' keyword must be 
+using  X = typename T; // C7511: 'T': 'typename' keyword must be
                        // followed by a qualified name
 ```
 
@@ -1632,7 +1632,7 @@ using X = __declspec(deprecated("msg")) T; // C2760: syntax error:
                                            // expected 'type specifier'
 ```
 
-To fix the error, change to code to the following (with the attribute placed before the '=' of the alias definition):
+To fix the error, change the code to the following (with the attribute placed before the '=' of the alias definition):
 
 ```cpp
 template <typename T>
