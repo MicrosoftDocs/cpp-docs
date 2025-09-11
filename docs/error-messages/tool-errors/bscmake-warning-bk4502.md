@@ -10,6 +10,8 @@ ms.assetid: ee412ec8-df03-4cdb-91ee-5d609ded8691
 
 > truncated .SBR file 'filename' not in filename
 
+## Remarks
+
 A zero-length .sbr file that was not originally part of the .bsc file was specified during an update.
 
 ### To fix by checking the following possible causes
