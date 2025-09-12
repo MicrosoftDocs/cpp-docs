@@ -8,7 +8,7 @@ ms.assetid: 5390a62b-aacf-4bc8-b9d7-08f1e0233423
 ---
 # Project Build Error PRJ0019
 
-A tool returned an error code from
+> A tool returned an error code from
 
 An error level was nonzero for a custom build step or build event.
 

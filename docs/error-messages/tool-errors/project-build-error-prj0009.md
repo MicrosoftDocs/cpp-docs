@@ -8,7 +8,7 @@ ms.assetid: 89291778-cda4-495d-983f-ddcc06dfc98b
 ---
 # Project Build Error PRJ0009
 
-Build log could not be opened for writing.
+> Build log could not be opened for writing.
 
 **Make sure that the file is not open by another process and is not write-protected.**
 

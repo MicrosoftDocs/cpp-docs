@@ -8,7 +8,7 @@ ms.assetid: 85d73a78-4b9e-4553-9f5d-2d76c48a790a
 ---
 # Project Build Error PRJ0027
 
-Unicode log message 'contents' contains content that could not be translated to the user's ANSI code page.
+> Unicode log message 'contents' contains content that could not be translated to the user's ANSI code page.
 
 You will typically only see this warning in conjunction with errors in creating batch and/or response files.
 

@@ -8,7 +8,7 @@ ms.assetid: 2096c8f1-e96c-49a4-a690-1cb893a8bf6f
 ---
 # Project Build Error PRJ0015
 
-The NULL device is missing from your system. We are unable to launch a build.
+> The NULL device is missing from your system. We are unable to launch a build.
 
 This error can be caused by low system resources. Close some applications or reboot.
 

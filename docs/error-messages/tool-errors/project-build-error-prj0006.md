@@ -8,7 +8,7 @@ ms.assetid: ce092be4-1652-414f-8cb5-b97ef5841f89
 ---
 # Project Build Error PRJ0006
 
-Could not open the temporary file 'file'. Make sure the file exists and that the directory is not write-protected.
+> Could not open the temporary file 'file'. Make sure the file exists and that the directory is not write-protected.
 
 Visual C++ could not create a temporary file during the build process. Reasons for this include:
 

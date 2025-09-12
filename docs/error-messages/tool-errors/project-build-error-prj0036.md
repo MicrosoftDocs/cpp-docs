@@ -8,7 +8,7 @@ ms.assetid: ee215cd1-2d66-474d-9a63-b9096f1c4923
 ---
 # Project Build Error PRJ0036
 
-The 'Additional Files' property for the Web Deployment Tool contained an invalid entry.
+> The 'Additional Files' property for the Web Deployment Tool contained an invalid entry.
 
 The Additional Files property on the Web Deployment property page contained an error, possibly due to a macro evaluation problem. This error could also mean that the path is badly formed, containing characters or combinations of characters that are illegal in a file path.
 

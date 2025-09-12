@@ -8,7 +8,7 @@ ms.assetid: 6bf7f17a-d2a8-4826-99c7-d600d846952f
 ---
 # Project Build Error PRJ0008
 
-Could not delete file 'file'.
+> Could not delete file 'file'.
 
 **Make sure that the file is not open by another process and is not write-protected.**
 

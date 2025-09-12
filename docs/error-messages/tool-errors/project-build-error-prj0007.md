@@ -8,7 +8,7 @@ ms.assetid: d923948b-acc9-498f-bf3b-f14e41bed61a
 ---
 # Project Build Error PRJ0007
 
-Could not create output directory 'directory'.
+> Could not create output directory 'directory'.
 
 Visual C++ failed to create an output directory. Possible reasons include:
 
