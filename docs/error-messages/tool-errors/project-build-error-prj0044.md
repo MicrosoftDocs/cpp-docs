@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Project Build Error PRJ0044"
 title: "Project Build Error PRJ0044"
-ms.date: "11/04/2016"
+description: "Learn more about: Project Build Error PRJ0044"
+ms.date: 11/04/2016
 f1_keywords: ["PRJ0044"]
 helpviewer_keywords: ["PRJ0044"]
-ms.assetid: 5d78c45a-f9e9-4d2b-a3b6-5a5d1421ab84
 ---
 # Project Build Error PRJ0044
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Project Build Error PRJ0022"
 title: "Project Build Error PRJ0022"
-ms.date: "08/27/2018"
+description: "Learn more about: Project Build Error PRJ0022"
+ms.date: 08/27/2018
 f1_keywords: ["PRJ0022"]
 helpviewer_keywords: ["PRJ0022"]
-ms.assetid: 691344a8-fc70-4aeb-9372-dde72f4588a4
 ---
 # Project Build Error PRJ0022
 

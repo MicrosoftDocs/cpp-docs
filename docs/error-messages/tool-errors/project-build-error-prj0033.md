@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Project Build Error PRJ0033"
 title: "Project Build Error PRJ0033"
-ms.date: "11/04/2016"
+description: "Learn more about: Project Build Error PRJ0033"
+ms.date: 11/04/2016
 f1_keywords: ["PRJ0033"]
 helpviewer_keywords: ["PRJ0033"]
-ms.assetid: 84d4a052-0586-4b78-9315-81c1e8386c1e
 ---
 # Project Build Error PRJ0033
 

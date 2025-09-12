@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Project Build Error PRJ0008"
 title: "Project Build Error PRJ0008"
-ms.date: "11/04/2016"
+description: "Learn more about: Project Build Error PRJ0008"
+ms.date: 11/04/2016
 f1_keywords: ["PRJ0008"]
 helpviewer_keywords: ["PRJ0008"]
-ms.assetid: 6bf7f17a-d2a8-4826-99c7-d600d846952f
 ---
 # Project Build Error PRJ0008
 

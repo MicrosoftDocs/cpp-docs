@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Project Build Error PRJ0050"
 title: "Project Build Error PRJ0050"
-ms.date: "11/04/2016"
+description: "Learn more about: Project Build Error PRJ0050"
+ms.date: 11/04/2016
 f1_keywords: ["PRJ0050"]
 helpviewer_keywords: ["PRJ0050"]
-ms.assetid: ceef3b37-0acf-4abd-ac62-aa830b4fa145
 ---
 # Project Build Error PRJ0050
 

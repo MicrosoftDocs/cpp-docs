@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Project Build Error PRJ0023"
 title: "Project Build Error PRJ0023"
-ms.date: "08/27/2018"
+description: "Learn more about: Project Build Error PRJ0023"
+ms.date: 08/27/2018
 f1_keywords: ["PRJ0023"]
 helpviewer_keywords: ["PRJ0023"]
-ms.assetid: ed55a320-e7c8-489f-886e-825feee0d576
 ---
 # Project Build Error PRJ0023
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Project Build Error PRJ0025"
 title: "Project Build Error PRJ0025"
-ms.date: "08/27/2018"
+description: "Learn more about: Project Build Error PRJ0025"
+ms.date: 08/27/2018
 f1_keywords: ["PRJ0025"]
 helpviewer_keywords: ["PRJ0025"]
-ms.assetid: 57725c78-bc63-44f3-9667-2969b2d7c41d
 ---
 # Project Build Error PRJ0025
 

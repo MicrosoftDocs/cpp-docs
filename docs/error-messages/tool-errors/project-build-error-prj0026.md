@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Project Build Error PRJ0026"
 title: "Project Build Error PRJ0026"
-ms.date: "08/27/2018"
+description: "Learn more about: Project Build Error PRJ0026"
+ms.date: 08/27/2018
 f1_keywords: ["PRJ0026"]
 helpviewer_keywords: ["PRJ0026"]
-ms.assetid: c52bc9b5-8b22-4015-b477-8645ae56c489
 ---
 # Project Build Error PRJ0026
 
