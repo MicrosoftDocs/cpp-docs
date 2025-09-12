@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2735"]
 ---
 # Compiler Error C2735
 
-> 'keyword' keyword is not permitted in formal parameter type specifier
+> '*keyword*' keyword is not permitted in formal parameter type specifier
 
 ## Remarks
 
