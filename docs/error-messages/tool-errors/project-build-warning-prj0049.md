@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Project Build Warning PRJ0049"
 title: "Project Build Warning PRJ0049"
-ms.date: "11/04/2016"
+description: "Learn more about: Project Build Warning PRJ0049"
+ms.date: 11/04/2016
 helpviewer_keywords: ["PRJ0049"]
-ms.assetid: 8b38afa1-e080-4efd-ae89-776cfd044413
 ---
 # Project Build Warning PRJ0049
 

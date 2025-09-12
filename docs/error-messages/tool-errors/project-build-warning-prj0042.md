@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Project Build Warning PRJ0042"
 title: "Project Build Warning PRJ0042"
-ms.date: "08/27/2018"
+description: "Learn more about: Project Build Warning PRJ0042"
+ms.date: 08/27/2018
 f1_keywords: ["PRJ0042"]
 helpviewer_keywords: ["PRJ0042"]
-ms.assetid: 682c9999-6f85-409f-b102-00c93243f74f
 ---
 # Project Build Warning PRJ0042
 
