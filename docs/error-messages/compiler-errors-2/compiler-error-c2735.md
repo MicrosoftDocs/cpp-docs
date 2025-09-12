@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2735"
 description: "Learn more about: Compiler Error C2735"
-ms.date: 11/04/2016
+ms.date: 09/12/2025
 f1_keywords: ["C2735"]
 helpviewer_keywords: ["C2735"]
 ---
