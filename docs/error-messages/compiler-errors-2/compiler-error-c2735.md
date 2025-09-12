@@ -19,5 +19,7 @@ The following example generates C2735:
 
 ```cpp
 // C2735.cpp
-void f(inline int){}   // C2735
+// compile with: /c
+
+void func(virtual int) {}   // C2735
 ```
