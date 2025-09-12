@@ -10,6 +10,8 @@ ms.assetid: 54bb8cd4-af7c-4d62-8125-3ab5ff5f2cc4
 
 > Tool '*tool*', Property '*property*' contains invalid file name '*file*'.
 
+## Remarks
+
 The file name *file*, specified in the property *property* for the tool *tool*, was invalid.
 
 You may have used an unknown or invalid macro.

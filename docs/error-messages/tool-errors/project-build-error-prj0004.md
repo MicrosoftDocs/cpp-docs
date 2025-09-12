@@ -10,6 +10,8 @@ ms.assetid: 1858769f-0be4-40ed-ab70-2cee550488c7
 
 > Could not generate command line for the '*tool*' tool.
 
+## Remarks
+
 One or more properties were specified in such a way as to make the syntax of the call to *tool* illegal:
 
 - You may have specified badly formed or unknown macros.

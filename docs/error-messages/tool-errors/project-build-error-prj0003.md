@@ -10,6 +10,8 @@ ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
 
 > Error spawning '*command line*'.
 
+## Remarks
+
 The *command line* command formed from input in the **Property Pages** dialog box returned an error code, but no information appears in the **Output** window.
 
 Possible reasons for this error include:

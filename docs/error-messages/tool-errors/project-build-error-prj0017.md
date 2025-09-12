@@ -10,4 +10,6 @@ ms.assetid: a192729f-bb10-486a-bfda-a7843fa259b2
 
 > The current working directory is invalid.
 
+## Remarks
+
 The path to the current working directory is longer than _MAXPATH. To resolve this error, do not create your project at such a deep level.

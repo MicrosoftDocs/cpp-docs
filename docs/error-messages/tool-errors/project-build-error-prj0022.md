@@ -10,6 +10,8 @@ ms.assetid: 691344a8-fc70-4aeb-9372-dde72f4588a4
 
 > Unknown Tool, Property '*property*' contains invalid file name '*file*'.
 
+## Remarks
+
 The file name *file* specified in the property *property* was invalid.
 
 You may have used an unknown or invalid macro.

@@ -12,6 +12,8 @@ ms.assetid: 57725c78-bc63-44f3-9667-2969b2d7c41d
 >
 > *UNICODE contents of file*
 
+## Remarks
+
 The project system found Unicode contents in a custom build rule or build event that cannot be translated properly to the user's current ANSI code page.
 
 The resolution for this error is to update the contents of the build rule or build event to use ANSI or to install the code page on your computer and set it as the system default.

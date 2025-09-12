@@ -10,6 +10,8 @@ ms.assetid: 6549ac62-c87b-4edf-b541-32221abe97ec
 
 > Internal error on build. Cannot continue. Please reload project and try again.
 
+## Remarks
+
 The project system was unable to process your project.
 
 Try reloading the project.

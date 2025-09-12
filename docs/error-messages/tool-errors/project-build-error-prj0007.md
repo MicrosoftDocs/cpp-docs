@@ -10,6 +10,8 @@ ms.assetid: d923948b-acc9-498f-bf3b-f14e41bed61a
 
 > Could not create output directory 'directory'.
 
+## Remarks
+
 Visual C++ failed to create an output directory. Possible reasons include:
 
 - The directory in which the output directory was to be created is read-only.

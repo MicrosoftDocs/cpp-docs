@@ -10,6 +10,8 @@ ms.assetid: e9745336-883a-4c70-9c40-7753e02f0325
 
 > The user's security settings prevent the process from being created. These settings are required for building.
 
+## Remarks
+
 You are logged in as a user who does not have permissions to create processes using a process. You must change the permission levels for this user account, or contact your account administrator.
 
 This error can also occur if the following registry key is set:

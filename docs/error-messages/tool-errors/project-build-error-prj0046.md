@@ -10,4 +10,6 @@ ms.assetid: 59442319-4481-4b97-a4a5-16f52fc718e7
 
 > Could not spawn command line because the one specified was empty.
 
+## Remarks
+
 An empty command line was specified for a makefile configuration; the command line is required.

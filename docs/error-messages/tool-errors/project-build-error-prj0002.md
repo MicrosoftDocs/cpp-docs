@@ -10,6 +10,8 @@ ms.assetid: 1c820b1f-9a24-4681-80ed-4fcbfd7caa00
 
 > error result returned from '*command line*'.
 
+## Remarks
+
 A command, *command line*, which was formed from user input in the **Property Pages** dialog box, returned an error code but no information will appear in the **Output** window.
 
 The resolution to this error depends on which tool generated the error. For MIDL, you will get an idea of what went wrong if /o (Redirect Output) is defined.

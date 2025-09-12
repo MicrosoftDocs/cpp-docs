@@ -10,6 +10,8 @@ ms.assetid: 89291778-cda4-495d-983f-ddcc06dfc98b
 
 > Build log could not be opened for writing.
 
+## Remarks
+
 **Make sure that the file is not open by another process and is not write-protected.**
 
 After setting the **Build Logging** property to **Yes** and performing a build or rebuild, Visual C++ was unable to open the build log in exclusive mode.

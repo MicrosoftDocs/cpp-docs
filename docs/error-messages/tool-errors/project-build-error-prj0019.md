@@ -10,6 +10,8 @@ ms.assetid: 5390a62b-aacf-4bc8-b9d7-08f1e0233423
 
 > A tool returned an error code from
 
+## Remarks
+
 An error level was nonzero for a custom build step or build event.
 
 You will also see PRJ0019 when a tool returned an error code but no error message. This can happen, for example, if you redirect the output of MIDL to NUL.

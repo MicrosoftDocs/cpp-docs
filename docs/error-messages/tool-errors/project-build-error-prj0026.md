@@ -12,6 +12,8 @@ ms.assetid: c52bc9b5-8b22-4015-b477-8645ae56c489
 >
 > *UNICODE contents of file*
 
+## Remarks
+
 The project system found Unicode contents in a response file that cannot be translated properly to the user's current ANSI code page.
 
 The resolution for this error is to update the contents of the response file to use ANSI or to install the code page on your computer and set it as the system default.
