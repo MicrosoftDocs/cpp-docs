@@ -10,6 +10,8 @@ ms.assetid: 1a3d9e40-6a35-4a74-b6ba-8079f7a82217
 
 > The following environment variables were not found:
 
+## Remarks
+
 An environment variable is not defined. This error lists the environment variables that were not defined.
 
 See [Macros for Custom Build Commands](../../build/reference/common-macros-for-build-commands-and-properties.md) for information on macros in the build process.

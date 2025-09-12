@@ -10,6 +10,8 @@ ms.assetid: 682c9999-6f85-409f-b102-00c93243f74f
 
 > The 'Outputs' property for the custom build step for file '*file*' is not set. The custom build step will be skipped.
 
+## Remarks
+
 A custom build step was not executed because no output was specified.
 
 To resolve this error, do one the following:

@@ -10,6 +10,8 @@ ms.assetid: f02c09c6-09f3-4d44-8cd4-9a25336be1ea
 
 > The 'Outputs' property for the project-level custom build step is not set. The custom build step will be skipped.
 
+## Remarks
+
 A custom build step was not executed because no output was specified.
 
 To resolve this error, do one the following:
