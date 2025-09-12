@@ -2,6 +2,7 @@
 title: "Project Build Warning PRJ0049"
 description: "Learn more about: Project Build Warning PRJ0049"
 ms.date: 11/04/2016
+f1_keywords: ["PRJ0049"]
 helpviewer_keywords: ["PRJ0049"]
 ---
 # Project Build Warning PRJ0049
