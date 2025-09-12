@@ -8,7 +8,7 @@ ms.assetid: dc9f4cf9-6bd5-4222-89e8-7802a59bb96b
 ---
 # Project Build Warning PRJ0041
 
-Cannot find missing dependency 'dependency' for file 'file'. Your project may still build, but may continue to appear out of date until this file is found.
+> Cannot find missing dependency 'dependency' for file 'file'. Your project may still build, but may continue to appear out of date until this file is found.
 
 A file (resource file or .idl/.odl file, for example, contained an include statement that the project system could not resolve.
 
