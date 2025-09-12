@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Project Build Error PRJ0003"
 title: "Project Build Error PRJ0003"
-ms.date: "11/04/2016"
+description: "Learn more about: Project Build Error PRJ0003"
+ms.date: 11/04/2016
 f1_keywords: ["PRJ0003"]
 helpviewer_keywords: ["PRJ0003"]
-ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
 ---
 # Project Build Error PRJ0003
 
 > Error spawning '*command line*'.
+
+## Remarks
 
 The *command line* command formed from input in the **Property Pages** dialog box returned an error code, but no information appears in the **Output** window.
 

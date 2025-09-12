@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Project Build Error PRJ0019"
 title: "Project Build Error PRJ0019"
-ms.date: "11/04/2016"
+description: "Learn more about: Project Build Error PRJ0019"
+ms.date: 11/04/2016
 f1_keywords: ["PRJ0019"]
 helpviewer_keywords: ["PRJ0019"]
-ms.assetid: 5390a62b-aacf-4bc8-b9d7-08f1e0233423
 ---
 # Project Build Error PRJ0019
 
-A tool returned an error code from
+> A tool returned an error code from
+
+## Remarks
 
 An error level was nonzero for a custom build step or build event.
 
