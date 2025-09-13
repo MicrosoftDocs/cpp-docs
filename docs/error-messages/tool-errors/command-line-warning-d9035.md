@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Command-Line Warning D9035"
 title: "Command-Line Warning D9035"
-ms.date: "12/10/2018"
+description: "Learn more about: Command-Line Warning D9035"
+ms.date: 12/10/2018
 f1_keywords: ["D9035"]
 helpviewer_keywords: ["D9035"]
-ms.assetid: 6254f933-e37a-45ba-b860-1a870d1bc8e8
 ---
 # Command-Line Warning D9035
 
