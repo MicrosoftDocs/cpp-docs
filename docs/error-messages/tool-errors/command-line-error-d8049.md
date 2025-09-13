@@ -9,9 +9,9 @@ helpviewer_keywords: ["D8049"]
 
 > cannot execute '*compiler-component*': command line is too long to fit in debug record
 
-An internal length limit on debug record include paths was exceeded.
-
 ## Remarks
+
+An internal length limit on debug record include paths was exceeded.
 
 When the compiler creates debug records in an object file, it uses the full path for each included file. Absolute paths are recorded as specified. For relative include paths, the debug record prepends the build's current working directory to the relative path. If your build runs in a relatively deep path, the corresponding path records get longer. The total length of too many long paths can exceed the internal limits of the compiler.
 

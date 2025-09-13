@@ -10,4 +10,6 @@ ms.assetid: 8ec85441-d0d8-42d8-b777-1e4636ea9878
 
 > invalid numeric argument 'number'
 
+## Remarks
+
 A number greater than 65,534 was specified as a numeric argument.

@@ -10,6 +10,8 @@ ms.assetid: eec51312-7471-4f92-94b2-d517cafc8ef5
 
 > 'option1' and 'option2' command-line options are incompatible
 
+## Remarks
+
 The command-line options cannot be specified together.
 
 Check environment variables, such as CL, for option specifications.

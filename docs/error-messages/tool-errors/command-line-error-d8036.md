@@ -10,6 +10,8 @@ ms.assetid: 420a8daf-1873-49cd-95ea-a603d77b9410
 
 > '/option' not allowed with multiple source files
 
+## Remarks
+
 These compiler options cannot be used with multiple source files:
 
 - Name assembly file listing (/Fa)

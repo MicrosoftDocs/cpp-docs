@@ -10,6 +10,8 @@ ms.assetid: f228220f-0c7f-49a6-a6e0-1f7bd4745aa6
 
 > cannot execute 'component'
 
+## Remarks
+
 The compiler could not run the given compiler component or linker.
 
 ### To fix by checking the following possible causes
