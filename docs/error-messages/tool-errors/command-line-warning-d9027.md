@@ -7,7 +7,7 @@ helpviewer_keywords: ["D9027"]
 ---
 # Command-Line Warning D9027
 
-source file '\<filename>' ignored
+> source file '\<filename>' ignored
 
 CL.exe ignored the input source file.
 

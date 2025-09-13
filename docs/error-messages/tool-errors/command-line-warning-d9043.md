@@ -8,7 +8,7 @@ ms.assetid: 9263e28d-217b-414c-bfb6-86efd3c27a77
 ---
 # Command-Line Warning D9043
 
-invalid value 'warning_level' for 'compiler_option'; assuming '4999'; Code Analysis warnings are not associated with warning levels
+> invalid value 'warning_level' for 'compiler_option'; assuming '4999'; Code Analysis warnings are not associated with warning levels
 
 ## Example
 

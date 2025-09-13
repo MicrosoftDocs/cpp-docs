@@ -8,7 +8,7 @@ ms.assetid: daf4896d-223d-4af0-9b6d-89109cf3d1bb
 ---
 # Command-Line Warning D9024
 
-unrecognized source file type 'filename', object file assumed
+> unrecognized source file type 'filename', object file assumed
 
 The extension of the specified file was not recognized. The file was assumed to be an object file and was passed to the linker.
 
