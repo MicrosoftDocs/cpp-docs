@@ -8,7 +8,7 @@ ms.assetid: eb18ec34-d32d-4636-a852-abf2063e886b
 ---
 # Command-Line Error D8022
 
-cannot open 'messagefile'
+> cannot open 'messagefile'
 
 The given file was not in the current directory or in a directory specified in the PATH environment variable. The message file contains a brief summary of compiler command-line syntax and options.
 

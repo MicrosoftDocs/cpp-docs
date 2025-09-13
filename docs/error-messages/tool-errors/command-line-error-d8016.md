@@ -8,7 +8,7 @@ ms.assetid: eec51312-7471-4f92-94b2-d517cafc8ef5
 ---
 # Command-Line Error D8016
 
-'option1' and 'option2' command-line options are incompatible
+> 'option1' and 'option2' command-line options are incompatible
 
 The command-line options cannot be specified together.
 

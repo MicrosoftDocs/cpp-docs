@@ -8,7 +8,7 @@ ms.assetid: f228220f-0c7f-49a6-a6e0-1f7bd4745aa6
 ---
 # Command-Line Error D8027
 
-cannot execute 'component'
+> cannot execute 'component'
 
 The compiler could not run the given compiler component or linker.
 
