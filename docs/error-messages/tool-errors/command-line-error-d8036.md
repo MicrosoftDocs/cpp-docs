@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Command-Line Error D8036"
 title: "Command-Line Error D8036"
-ms.date: "11/04/2016"
+description: "Learn more about: Command-Line Error D8036"
+ms.date: 11/04/2016
 f1_keywords: ["D8036"]
 helpviewer_keywords: ["D8036"]
-ms.assetid: 420a8daf-1873-49cd-95ea-a603d77b9410
 ---
 # Command-Line Error D8036
 

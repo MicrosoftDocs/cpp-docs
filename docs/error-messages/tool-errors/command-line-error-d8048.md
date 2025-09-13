@@ -1,6 +1,6 @@
 ---
-description: "Learn about causes and solutions for command-line error D8048"
 title: "Command-Line Error D8048"
+description: "Learn about causes and solutions for command-line error D8048"
 ms.date: 04/18/2021
 f1_keywords: ["D8048"]
 helpviewer_keywords: ["D8048"]

@@ -1,6 +1,6 @@
 ---
-description: "Learn about the cause and solutions for command-line error D8049"
 title: "Command-Line Error D8049"
+description: "Learn about the cause and solutions for command-line error D8049"
 ms.date: 10/28/2021
 f1_keywords: ["D8049"]
 helpviewer_keywords: ["D8049"]

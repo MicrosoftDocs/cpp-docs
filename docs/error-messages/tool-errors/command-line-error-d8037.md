@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Command-Line Error D8037"
 title: "Command-Line Error D8037"
-ms.date: "11/04/2016"
+description: "Learn more about: Command-Line Error D8037"
+ms.date: 11/04/2016
 f1_keywords: ["D8037"]
 helpviewer_keywords: ["D8037"]
-ms.assetid: acddaaa0-bd84-426f-a37b-8f680b379c9d
 ---
 # Command-Line Error D8037
 
