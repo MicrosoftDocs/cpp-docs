@@ -12,7 +12,7 @@ ms.assetid: 9263e28d-217b-414c-bfb6-86efd3c27a77
 
 ## Example
 
-The following sample generates C9043.
+The following example generates C9043.
 
 ```cpp
 // D9043.cpp
