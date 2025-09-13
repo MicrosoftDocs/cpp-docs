@@ -10,6 +10,8 @@ ms.assetid: 6edff72c-1508-46c2-99f4-0e4b3c5e60c9
 
 > overriding 'option1' with 'option2'
 
+## Remarks
+
 The *option1* option was specified but was then overridden by *option2*. The *option2* option was used.
 
 If two options specify contradictory or incompatible directives, the directive specified or implied in the option farthest to the right on the command line is used.

@@ -10,6 +10,8 @@ ms.assetid: 415e7f04-c1bd-4ac1-924a-03efa4645140
 
 > ignoring option '/analyze'; Code Analysis warnings are not available in this edition of the compiler
 
+## Remarks
+
 The **`/analyze`** command line option is not available in all editions of Visual Studio. To remedy this warning, either switch to a supported edition of Visual Studio, or remove the command line option.
 
 ## See also

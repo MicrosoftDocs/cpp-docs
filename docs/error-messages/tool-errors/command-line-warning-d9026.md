@@ -10,7 +10,11 @@ ms.assetid: 149fe5e3-5329-4be8-b871-49dfd423aaba
 
 > options apply to entire command line
 
+## Remarks
+
 A global option was specified after one or more filenames were specified. The option was also applied to the files that preceded it.
+
+## Example
 
 For example, consider this command line:
 

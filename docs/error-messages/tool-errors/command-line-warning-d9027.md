@@ -9,9 +9,15 @@ helpviewer_keywords: ["D9027"]
 
 > source file '\<filename>' ignored
 
+## Remarks
+
 CL.exe ignored the input source file.
 
-This warning can be caused by a space between the /Fo option and an output filename on a command line with the /c option. For example:
+This warning can be caused by a space between the /Fo option and an output filename on a command line with the /c option.
+
+## Example
+
+For example:
 
 ```cmd
 cl /c /Fo output.obj input.c

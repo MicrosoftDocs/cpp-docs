@@ -10,6 +10,8 @@ ms.assetid: ada8815f-4246-4e25-b57d-a7f16fa107cc
 
 > invalid value '*option-value*' for '/*option-name*'; assuming '*assumed-value*'; add '/analyze' to command-line options when specifying this warning
 
+## Remarks
+
 A Code Analysis warning number was added to the **`/wd`**, **`/we`**, **`/wo`**, or **`/wl`** command line option without also specifying the **`/analyze`** command line option. To remedy this error, either add the **`/analyze`** command line option, or remove the invalid warning number from the appropriate **`/w`** command line option.
 
 ## Example
