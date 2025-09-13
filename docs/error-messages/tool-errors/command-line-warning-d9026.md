@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Command-line warning D9026"
 title: "Command-line warning D9026"
+description: "Learn more about: Command-line warning D9026"
 ms.date: 12/09/2021
 f1_keywords: ["D9026"]
 helpviewer_keywords: ["D9026"]
-ms.assetid: 149fe5e3-5329-4be8-b871-49dfd423aaba
 ---
 # Command-line warning D9026
 

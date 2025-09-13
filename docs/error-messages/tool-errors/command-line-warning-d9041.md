@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Command-Line Warning D9041"
 title: "Command-Line Warning D9041"
-ms.date: "11/04/2016"
+description: "Learn more about: Command-Line Warning D9041"
+ms.date: 11/04/2016
 f1_keywords: ["D9041"]
 helpviewer_keywords: ["D9041"]
-ms.assetid: ada8815f-4246-4e25-b57d-a7f16fa107cc
 ---
 # Command-Line Warning D9041
 

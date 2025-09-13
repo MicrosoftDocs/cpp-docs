@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Command-Line Warning D9024"
 title: "Command-Line Warning D9024"
-ms.date: "11/04/2016"
+description: "Learn more about: Command-Line Warning D9024"
+ms.date: 11/04/2016
 f1_keywords: ["D9024"]
 helpviewer_keywords: ["D9024"]
-ms.assetid: daf4896d-223d-4af0-9b6d-89109cf3d1bb
 ---
 # Command-Line Warning D9024
 

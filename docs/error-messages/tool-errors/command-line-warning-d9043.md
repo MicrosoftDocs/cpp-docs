@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Command-Line Warning D9043"
 title: "Command-Line Warning D9043"
-ms.date: "11/04/2016"
+description: "Learn more about: Command-Line Warning D9043"
+ms.date: 11/04/2016
 f1_keywords: ["D9043"]
 helpviewer_keywords: ["D9043"]
-ms.assetid: 9263e28d-217b-414c-bfb6-86efd3c27a77
 ---
 # Command-Line Warning D9043
 

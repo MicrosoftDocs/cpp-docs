@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Command-Line Warning D9025"
 title: "Command-Line Warning D9025"
-ms.date: "11/04/2016"
+description: "Learn more about: Command-Line Warning D9025"
+ms.date: 11/04/2016
 f1_keywords: ["D9025"]
 helpviewer_keywords: ["D9025"]
-ms.assetid: 6edff72c-1508-46c2-99f4-0e4b3c5e60c9
 ---
 # Command-Line Warning D9025
 
