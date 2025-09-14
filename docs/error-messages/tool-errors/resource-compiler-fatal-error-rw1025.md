@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Fatal Error RW1025"
 title: "Resource Compiler Fatal Error RW1025"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Fatal Error RW1025"
+ms.date: 11/04/2016
 f1_keywords: ["RW1025"]
 helpviewer_keywords: ["RW1025"]
-ms.assetid: 561a02af-e7e0-442a-8ad3-a00b2ca1b62e
 ---
 # Resource Compiler Fatal Error RW1025
 

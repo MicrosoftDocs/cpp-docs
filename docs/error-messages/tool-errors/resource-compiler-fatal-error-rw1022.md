@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Fatal Error RW1022"
 title: "Resource Compiler Fatal Error RW1022"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Fatal Error RW1022"
+ms.date: 11/04/2016
 f1_keywords: ["RW1022"]
 helpviewer_keywords: ["RW1022"]
-ms.assetid: 6747c8a9-9c9b-4422-b414-0645d22092d0
 ---
 # Resource Compiler Fatal Error RW1022
 

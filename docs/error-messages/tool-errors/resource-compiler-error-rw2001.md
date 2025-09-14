@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Error RW2001"
 title: "Resource Compiler Error RW2001"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Error RW2001"
+ms.date: 11/04/2016
 f1_keywords: ["RW2001"]
 helpviewer_keywords: ["RW2001"]
-ms.assetid: 963bdc7d-6ebe-4378-8bbc-47dfcf5d330c
 ---
 # Resource Compiler Error RW2001
 

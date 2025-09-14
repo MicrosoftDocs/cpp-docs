@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Error RW2003"
 title: "Resource Compiler Error RW2003"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Error RW2003"
+ms.date: 11/04/2016
 f1_keywords: ["RW2003"]
 helpviewer_keywords: ["RW2003"]
-ms.assetid: 9dc0ba70-6776-4aef-b316-5f1711d8e42e
 ---
 # Resource Compiler Error RW2003
 
