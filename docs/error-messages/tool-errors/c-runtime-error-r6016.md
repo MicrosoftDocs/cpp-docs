@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6016"
 title: "C Runtime Error R6016"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6016"
+ms.date: 11/04/2016
 f1_keywords: ["R6016"]
 helpviewer_keywords: ["R6016"]
-ms.assetid: 7bd3f274-d9c4-4bc4-8252-80bf168c4c3a
 ---
 # C Runtime Error R6016
 

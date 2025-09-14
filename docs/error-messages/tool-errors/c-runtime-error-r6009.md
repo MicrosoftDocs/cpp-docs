@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6009"
 title: "C Runtime Error R6009"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6009"
+ms.date: 11/04/2016
 f1_keywords: ["R6009"]
 helpviewer_keywords: ["R6009"]
-ms.assetid: edfb1f8b-3807-48f4-a994-318923b747ae
 ---
 # C Runtime Error R6009
 

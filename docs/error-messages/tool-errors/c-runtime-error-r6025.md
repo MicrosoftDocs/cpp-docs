@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6025"
 title: "C Runtime Error R6025"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6025"
+ms.date: 11/04/2016
 f1_keywords: ["R6025"]
 helpviewer_keywords: ["R6025"]
-ms.assetid: afa06d98-9c36-445b-b3e7-b6409bc8e779
 ---
 # C Runtime Error R6025
 

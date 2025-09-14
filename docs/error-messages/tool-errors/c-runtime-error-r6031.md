@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6031"
 title: "C Runtime Error R6031"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6031"
+ms.date: 11/04/2016
 f1_keywords: ["R6031"]
 helpviewer_keywords: ["R6031"]
-ms.assetid: 805d4cd1-cb2f-43fe-87e6-e7bd5b7329c5
 ---
 # C Runtime Error R6031
 

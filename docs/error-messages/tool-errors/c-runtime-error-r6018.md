@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6018"
 title: "C Runtime Error R6018"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6018"
+ms.date: 11/04/2016
 f1_keywords: ["R6018"]
 helpviewer_keywords: ["R6018"]
-ms.assetid: f6dd40d1-a119-4d8b-b39e-97350ea23349
 ---
 # C Runtime Error R6018
 

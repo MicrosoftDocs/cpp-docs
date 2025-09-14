@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6028"
 title: "C Runtime Error R6028"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6028"
+ms.date: 11/04/2016
 f1_keywords: ["R6028"]
 helpviewer_keywords: ["R6028"]
-ms.assetid: 81e99079-4388-4244-a4f7-4641c508871c
 ---
 # C Runtime Error R6028
 

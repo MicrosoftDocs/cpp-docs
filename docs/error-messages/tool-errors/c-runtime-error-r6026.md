@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6026"
 title: "C Runtime Error R6026"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6026"
+ms.date: 11/04/2016
 f1_keywords: ["R6026"]
 helpviewer_keywords: ["R6026"]
-ms.assetid: 7ea751f8-fc20-46ab-99ef-84c95ca0b6b4
 ---
 # C Runtime Error R6026
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6035"
 title: "C Runtime Error R6035"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6035"
+ms.date: 11/04/2016
 f1_keywords: ["R6035"]
 helpviewer_keywords: ["R6035"]
-ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
 ---
 # C Runtime Error R6035
 

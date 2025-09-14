@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6008"
 title: "C Runtime Error R6008"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6008"
+ms.date: 11/04/2016
 f1_keywords: ["R6008"]
 helpviewer_keywords: ["R6008"]
-ms.assetid: f0f304fc-709a-4843-bc7e-bad1ae0d1649
 ---
 # C Runtime Error R6008
 

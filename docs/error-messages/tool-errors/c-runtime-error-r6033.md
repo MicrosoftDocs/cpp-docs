@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6033"
 title: "C Runtime Error R6033"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6033"
+ms.date: 11/04/2016
 f1_keywords: ["R6033"]
 helpviewer_keywords: ["R6033"]
-ms.assetid: f9cffdc9-81bd-4a64-a698-02762cbd82c9
 ---
 # C Runtime Error R6033
 

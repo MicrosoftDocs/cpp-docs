@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6024"
 title: "C Runtime Error R6024"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6024"
+ms.date: 11/04/2016
 f1_keywords: ["R6024"]
 helpviewer_keywords: ["R6024"]
-ms.assetid: 0fb11c0f-9b81-4cab-81bd-4785742946a5
 ---
 # C Runtime Error R6024
 

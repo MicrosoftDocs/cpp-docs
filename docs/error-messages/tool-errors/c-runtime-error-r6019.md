@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: C Runtime Error R6019"
 title: "C Runtime Error R6019"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6019"
+ms.date: 11/04/2016
 f1_keywords: ["R6019"]
 helpviewer_keywords: ["R6019"]
-ms.assetid: 8129923e-7db2-40ee-9602-def9365f8d28
 ---
 # C Runtime Error R6019
 
