@@ -10,6 +10,8 @@ ms.assetid: 963bdc7d-6ebe-4378-8bbc-47dfcf5d330c
 
 > Invalid directive in preprocessed RC file
 
+## Remarks
+
 The RC file contains a **#pragma** directive.
 
 Use the **#ifndef** preprocessor directive with the **RC_INVOKED** constant that the Resource Compiler defines when it processes an include file. Place the **#pragma** directive inside a block of code that is not processed when the **RC_INVOKED** constant is defined. Code in the block is processed only by the C/C++ compiler and not by the Resource Compiler. The following sample code demonstrates this technique:
