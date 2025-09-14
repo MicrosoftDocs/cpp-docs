@@ -8,7 +8,7 @@ ms.assetid: 0238a6c3-a033-4046-8adc-f8f99d961153
 ---
 # C Runtime Error R6030
 
-CRT not initialized
+> CRT not initialized
 
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal problem. This problem is most often caused by certain security software programs, or rarely, by a bug in the program.

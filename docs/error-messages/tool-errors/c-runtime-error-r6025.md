@@ -8,7 +8,7 @@ ms.assetid: afa06d98-9c36-445b-b3e7-b6409bc8e779
 ---
 # C Runtime Error R6025
 
-pure virtual function call
+> pure virtual function call
 
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal problem. The most common reason for this error is a bug in the app, or a corrupted installation.

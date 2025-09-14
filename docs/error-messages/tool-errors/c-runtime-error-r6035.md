@@ -8,7 +8,7 @@ ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
 ---
 # C Runtime Error R6035
 
-Microsoft Visual C++ Runtime Library, Error R6035 - A module in this application is initializing the module's global security cookie while a function relying on that security cookie is active.  Call __security_init_cookie earlier.
+> Microsoft Visual C++ Runtime Library, Error R6035 - A module in this application is initializing the module's global security cookie while a function relying on that security cookie is active.  Call __security_init_cookie earlier.
 
 [__security_init_cookie](../../c-runtime-library/reference/security-init-cookie.md) must be called before the first use of the global security cookie.
 
