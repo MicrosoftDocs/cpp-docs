@@ -8,6 +8,6 @@ ms.assetid: 1fe0964a-a8cc-4ffa-a427-dbce39f23173
 ---
 # Resource Compiler Fatal Error RW1023
 
-I/O error writing file, drive full
+> I/O error writing file, drive full
 
 Free space must equal at least twice the size of the executable file you are creating.

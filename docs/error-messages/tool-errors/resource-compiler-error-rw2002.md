@@ -8,7 +8,7 @@ ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
 ---
 # Resource Compiler Error RW2002
 
-Parsing error
+> Parsing error
 
 ### To fix by checking the following possible causes
 

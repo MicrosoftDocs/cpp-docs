@@ -8,7 +8,7 @@ ms.assetid: 6747c8a9-9c9b-4422-b414-0645d22092d0
 ---
 # Resource Compiler Fatal Error RW1022
 
-**I/O error writing file**
+> I/O error writing file
 
 The Resource Compiler could not write to a file.
 

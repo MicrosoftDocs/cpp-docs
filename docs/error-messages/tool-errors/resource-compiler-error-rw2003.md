@@ -8,7 +8,7 @@ ms.assetid: 9dc0ba70-6776-4aef-b316-5f1711d8e42e
 ---
 # Resource Compiler Error RW2003
 
-Generation Error
+> Generation Error
 
 ### To fix by checking the following possible causes
 
