@@ -10,6 +10,8 @@ ms.assetid: 52092a63-cc51-444a-bfc3-fad965a3558e
 
 > Not enough space for locale information
 
+## Remarks
+
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are several possible reasons for this error, but often it's caused by an extremely low memory condition, or by a bug in the program.
 >

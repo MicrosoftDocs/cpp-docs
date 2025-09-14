@@ -10,6 +10,8 @@ ms.assetid: 8fbbe65a-9c43-459e-8342-e1f6d1cef7d0
 
 > floating-point support not loaded
 
+## Remarks
+
 The necessary floating-point library was not linked.
 
 > [!NOTE]

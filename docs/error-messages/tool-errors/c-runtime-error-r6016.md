@@ -10,6 +10,8 @@ ms.assetid: 7bd3f274-d9c4-4bc4-8252-80bf168c4c3a
 
 > not enough space for thread data
 
+## Remarks
+
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are many possible reasons for this error, but often it's caused by an extremely low memory condition, a bug in the app, or by a bug in an add-in or extension used by the app.
 >

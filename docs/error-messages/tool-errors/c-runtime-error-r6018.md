@@ -10,6 +10,8 @@ ms.assetid: f6dd40d1-a119-4d8b-b39e-97350ea23349
 
 > unexpected heap error
 
+## Remarks
+
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal problem. There are several possible reasons for this error, but often it's caused by a defect in the app's code.
 >

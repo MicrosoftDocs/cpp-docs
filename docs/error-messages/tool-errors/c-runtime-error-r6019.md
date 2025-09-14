@@ -10,6 +10,8 @@ ms.assetid: 8129923e-7db2-40ee-9602-def9365f8d28
 
 > unable to open console device
 
+## Remarks
+
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it attempted to access the console, but it didn't have sufficient permission. There are several possible reasons for this error, but it's usually because the program must be run as an administrator, or there is a bug in the program.
 >

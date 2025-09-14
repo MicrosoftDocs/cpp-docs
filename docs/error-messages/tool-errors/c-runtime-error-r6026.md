@@ -10,6 +10,8 @@ ms.assetid: 7ea751f8-fc20-46ab-99ef-84c95ca0b6b4
 
 > not enough space for stdio initialization
 
+## Remarks
+
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are several possible reasons for this error, but usually it's caused by an extremely low memory condition. It can also be caused by a bug in the app, by corruption of the Visual C++ libraries that it uses, or by a driver.
 >

@@ -10,6 +10,8 @@ ms.assetid: f9cffdc9-81bd-4a64-a698-02762cbd82c9
 
 > Attempt to use MSIL code from this assembly during native code initialization. This indicates a bug in your application. It is most likely the result of calling an MSIL-compiled (/clr) function from a native constructor or from DllMain.
 
+## Remarks
+
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal problem. This error can be caused by a bug in the app, or by a bug in an add-in or extension that it uses.
 >
