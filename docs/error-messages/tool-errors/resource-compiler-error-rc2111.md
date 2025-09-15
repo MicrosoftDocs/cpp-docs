@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Error RC2111"
 title: "Resource Compiler Error RC2111"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Error RC2111"
+ms.date: 11/04/2016
 f1_keywords: ["RC2111"]
 helpviewer_keywords: ["RC2111"]
-ms.assetid: 118cba57-82a4-4199-acf4-9d9561946218
 ---
 # Resource Compiler Error RC2111
 

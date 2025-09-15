@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Error RC2169"
 title: "Resource Compiler Error RC2169"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Error RC2169"
+ms.date: 11/04/2016
 f1_keywords: ["RC2169"]
 helpviewer_keywords: ["RC2169"]
-ms.assetid: 832c19ad-a2e2-4f50-b493-26b791877600
 ---
 # Resource Compiler Error RC2169
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Error RC2164"
 title: "Resource Compiler Error RC2164"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Error RC2164"
+ms.date: 11/04/2016
 f1_keywords: ["RC2164"]
 helpviewer_keywords: ["RC2164"]
-ms.assetid: 23d7691d-80f3-4979-a519-378e5498d2d1
 ---
 # Resource Compiler Error RC2164
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Error RC2144"
 title: "Resource Compiler Error RC2144"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Error RC2144"
+ms.date: 11/04/2016
 f1_keywords: ["RC2144"]
 helpviewer_keywords: ["RC2144"]
-ms.assetid: 1b3ff39a-92cd-4a04-b1a3-b1fa6a805813
 ---
 # Resource Compiler Error RC2144
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Error RC2175"
 title: "Resource Compiler Error RC2175"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Error RC2175"
+ms.date: 11/04/2016
 f1_keywords: ["RC2175"]
 helpviewer_keywords: ["RC2175"]
-ms.assetid: 3864a371-dba8-41a7-962c-e792709774f1
 ---
 # Resource Compiler Error RC2175
 
