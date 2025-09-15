@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Fatal Error RC1120"
 title: "Resource Compiler Fatal Error RC1120"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Fatal Error RC1120"
+ms.date: 11/04/2016
 f1_keywords: ["RC1120"]
 helpviewer_keywords: ["RC1120"]
-ms.assetid: 4e462931-e42e-42e3-8bfc-847677194286
 ---
 # Resource Compiler Fatal Error RC1120
 

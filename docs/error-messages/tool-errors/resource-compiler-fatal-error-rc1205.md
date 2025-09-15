@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Fatal Error RC1205"
 title: "Resource Compiler Fatal Error RC1205"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Fatal Error RC1205"
+ms.date: 11/04/2016
 f1_keywords: ["RC1205"]
 helpviewer_keywords: ["RC1205"]
-ms.assetid: 6cfbe019-ad8a-4267-b4b9-0d675bb3819a
 ---
 # Resource Compiler Fatal Error RC1205
 

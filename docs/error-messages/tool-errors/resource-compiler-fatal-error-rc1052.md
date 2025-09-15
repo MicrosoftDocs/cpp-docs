@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Fatal Error RC1052"
 title: "Resource Compiler Fatal Error RC1052"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Fatal Error RC1052"
+ms.date: 11/04/2016
 f1_keywords: ["RC1052"]
 helpviewer_keywords: ["RC1052"]
-ms.assetid: 59803673-492b-44fa-80fa-df93b8aaf9fb
 ---
 # Resource Compiler Fatal Error RC1052
 
