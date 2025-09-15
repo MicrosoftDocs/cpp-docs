@@ -8,7 +8,7 @@ ms.assetid: 6ea80c98-0942-41a8-b0b2-2c16c255adf5
 ---
 # Resource Compiler Error RC2170
 
-bitmap file filename is not in 3.00 format
+> bitmap file filename is not in 3.00 format
 
 Bitmaps using the Windows version 2.x format cannot be used in version 3.x resource files.
 

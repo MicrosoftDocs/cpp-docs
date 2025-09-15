@@ -8,7 +8,7 @@ ms.assetid: 0290065c-35d3-4815-80c5-40bf7132ae1d
 ---
 # Resource Compiler Error RC2148
 
-SUBLANGUAGE ID too large
+> SUBLANGUAGE ID too large
 
 The SUBLANGUAGE ID value was out of range.
 

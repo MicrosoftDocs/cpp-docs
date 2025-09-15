@@ -8,7 +8,7 @@ ms.assetid: 792a3bd8-cb4c-4817-b288-4ce37082b582
 ---
 # Resource Compiler Error RC2104
 
-undefined keyword or key name: key
+> undefined keyword or key name: key
 
 The specified keyword or key name is not defined.
 

@@ -8,6 +8,6 @@ ms.assetid: 4ac713b7-3067-436c-83fd-4180438c4f2c
 ---
 # Resource Compiler Error RC2162
 
-expected macro formal parameter
+> expected macro formal parameter
 
 The token following a stringizing operator (**#**) was not a formal parameter name.

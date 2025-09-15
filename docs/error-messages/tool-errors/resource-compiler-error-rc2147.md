@@ -8,7 +8,7 @@ ms.assetid: 09974f06-1731-4e70-b373-f9218e0ee8d9
 ---
 # Resource Compiler Error RC2147
 
-SUBLANGUAGE ID not a number
+> SUBLANGUAGE ID not a number
 
 The SUBLANGUAGE ID value must be a number.
 

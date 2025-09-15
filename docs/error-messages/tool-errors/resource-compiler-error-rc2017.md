@@ -8,7 +8,7 @@ ms.assetid: 5fcc0135-cd60-4b1d-a7dd-8a4f2312697b
 ---
 # Resource Compiler Error RC2017
 
-illegal escape sequence
+> illegal escape sequence
 
 An escape sequence appeared where one was not expected.
 
