@@ -10,6 +10,8 @@ ms.assetid: 09974f06-1731-4e70-b373-f9218e0ee8d9
 
 > SUBLANGUAGE ID not a number
 
+## Remarks
+
 The SUBLANGUAGE ID value must be a number.
 
 The **LANGUAGE** statement must use the following syntax:

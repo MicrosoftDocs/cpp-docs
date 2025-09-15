@@ -10,6 +10,8 @@ ms.assetid: 5fcc0135-cd60-4b1d-a7dd-8a4f2312697b
 
 > illegal escape sequence
 
+## Remarks
+
 An escape sequence appeared where one was not expected.
 
 An escape sequence — a backslash ( **\\** ) followed by a number or letter — may occur only in a character or string constant.

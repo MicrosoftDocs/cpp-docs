@@ -10,4 +10,6 @@ ms.assetid: 4eb5c4ec-ca9b-46a0-805b-35e040e9ed41
 
 > empty menus not allowed
 
+## Remarks
+
 An **END** keyword appears before any menu items are defined in the **MENU** statement. The Resource Compiler does not permit empty menus. Make sure you do not have any open quotation marks within the **MENU** statement.

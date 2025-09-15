@@ -10,4 +10,6 @@ ms.assetid: abdfdc46-6601-451f-8e81-81e92bcd2208
 
 > expected control class name
 
+## Remarks
+
 The `class` field of a CONTROL statement in the **DIALOG** statement must be one of the following types: BUTTON, COMBOBOX, EDIT, LISTBOX, SCROLLBAR, STATIC, or user-defined. Make sure the class is spelled correctly.

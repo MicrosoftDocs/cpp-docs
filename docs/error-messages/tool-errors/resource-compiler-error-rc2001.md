@@ -10,6 +10,8 @@ ms.assetid: 92bfb4c0-1879-4606-bb9f-ef7368707b4a
 
 > newline in constant
 
+## Remarks
+
 A string constant was continued on a second line without either a backslash (**\\**) or closing and opening double quotation marks (**"**).
 
 To break a string constant that is on two lines in the source file, do one of the following:

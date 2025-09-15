@@ -10,4 +10,6 @@ ms.assetid: 0c959938-e744-43f3-b460-f05547ffea2a
 
 > unknown DIB header format
 
+## Remarks
+
 The bitmap header is not a **BITMAPCOREHEADER** or **BITMAPINFOHEADER** structure.

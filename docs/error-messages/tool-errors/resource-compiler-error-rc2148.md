@@ -10,6 +10,8 @@ ms.assetid: 0290065c-35d3-4815-80c5-40bf7132ae1d
 
 > SUBLANGUAGE ID too large
 
+## Remarks
+
 The SUBLANGUAGE ID value was out of range.
 
 The **LANGUAGE** statement must use the following syntax:

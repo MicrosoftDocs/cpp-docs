@@ -10,6 +10,8 @@ ms.assetid: bf7d4630-9355-47e3-87fa-6693fcf0ef0d
 
 > string not found in DLGINCLUDE statement
 
+## Remarks
+
 The statement did not specify a valid include file.
 
 The **DLGINCLUDE** statement must use the following syntax:

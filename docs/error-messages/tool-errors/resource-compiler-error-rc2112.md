@@ -10,4 +10,6 @@ ms.assetid: e9f29540-a90d-4989-a6e8-5f8f32015bd9
 
 > BEGIN expected in dialog
 
+## Remarks
+
 The **BEGIN** keyword must immediately follow the **DIALOG** keyword.

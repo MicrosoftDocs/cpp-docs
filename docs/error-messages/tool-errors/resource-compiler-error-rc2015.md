@@ -10,6 +10,8 @@ ms.assetid: 99691683-fb9e-4e61-beb1-12e484858570
 
 > too many chars in constant
 
+## Remarks
+
 A character constant contained more than two characters.
 
 Character constants are limited to one character (standard character constants) or two characters (long character constants).

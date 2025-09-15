@@ -10,4 +10,6 @@ ms.assetid: eedf2366-d1c3-4e7e-815c-d367d976b3f6
 
 > unexpected end of file in string literal
 
+## Remarks
+
 An end of file was found before the end of a string. The string is probably missing a closing double quotation mark (**"**).

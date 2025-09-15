@@ -10,4 +10,6 @@ ms.assetid: 13c1599d-ac4c-4044-a59a-48e69511ef7e
 
 > version WORDs separated by commas expected
 
+## Remarks
+
 Version numbers in a version resource should be of type **WORD**, and separated by commas.

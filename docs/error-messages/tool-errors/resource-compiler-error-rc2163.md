@@ -10,4 +10,6 @@ ms.assetid: a7e95939-9267-4262-9b49-90dc4157a7da
 
 > accelerator type required [ASCII or VIRTKEY]
 
+## Remarks
+
 The `type` field in the **ACCELERATORS** statement must contain either the ASCII or VIRTKEY value.

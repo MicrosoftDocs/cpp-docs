@@ -10,6 +10,8 @@ ms.assetid: 792a3bd8-cb4c-4817-b288-4ce37082b582
 
 > undefined keyword or key name: key
 
+## Remarks
+
 The specified keyword or key name is not defined.
 
 This error is often caused by a typo in the resource definition, or in the included header file. It can also be caused by a missing header file.
