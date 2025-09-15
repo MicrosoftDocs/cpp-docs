@@ -8,6 +8,6 @@ ms.assetid: 6b23677d-428d-47c6-9207-8b85f7718e03
 ---
 # Resource Compiler Fatal Error RC1067
 
-compiler limit : identifier overflowed internal buffer
+> compiler limit : identifier overflowed internal buffer
 
 An internal compiler limit was exceeded.

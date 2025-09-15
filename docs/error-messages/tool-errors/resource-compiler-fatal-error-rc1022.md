@@ -8,7 +8,7 @@ ms.assetid: 30a0f3c7-08a8-4c40-b0de-46ee5feb789d
 ---
 # Resource Compiler Fatal Error RC1022
 
-expected '#endif'
+> expected '#endif'
 
 An `#if`, **#ifdef**, or **#ifndef** directive was not terminated with an `#endif` directive.
 

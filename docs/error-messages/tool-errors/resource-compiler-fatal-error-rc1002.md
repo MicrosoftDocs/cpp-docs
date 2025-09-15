@@ -8,7 +8,7 @@ ms.assetid: b43dfece-0dc3-4d0b-9d8f-509699b9ae80
 ---
 # Resource Compiler Fatal Error RC1002
 
-out of heap space
+> out of heap space
 
 ### To fix by using the following possible solutions
 

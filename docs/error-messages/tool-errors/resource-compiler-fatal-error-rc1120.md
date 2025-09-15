@@ -8,7 +8,7 @@ ms.assetid: 4e462931-e42e-42e3-8bfc-847677194286
 ---
 # Resource Compiler Fatal Error RC1120
 
-out of memory, needed number bytes
+> out of memory, needed number bytes
 
 The Resource Compiler ran out of storage for items that it stores in its heap. Usually this is the result of having too many symbols.
 

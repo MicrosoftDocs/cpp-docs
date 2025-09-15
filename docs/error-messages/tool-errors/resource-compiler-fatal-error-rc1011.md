@@ -8,6 +8,6 @@ ms.assetid: ae0b89ec-0a31-4f8e-b9d0-f974152c185e
 ---
 # Resource Compiler Fatal Error RC1011
 
-compiler limit : 'identifier' : macro definition too big
+> compiler limit : 'identifier' : macro definition too big
 
 Try to split the definition into shorter definitions.

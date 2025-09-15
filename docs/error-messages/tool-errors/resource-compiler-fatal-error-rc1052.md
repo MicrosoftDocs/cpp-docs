@@ -8,7 +8,7 @@ ms.assetid: 59803673-492b-44fa-80fa-df93b8aaf9fb
 ---
 # Resource Compiler Fatal Error RC1052
 
-compiler limit : #if or #ifdef blocks nested too deeply
+> compiler limit : #if or #ifdef blocks nested too deeply
 
 The program exceeded the maximum allowable nesting levels for `#if` and `#ifdef` directives.
 

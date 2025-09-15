@@ -8,7 +8,7 @@ ms.assetid: 3e073ebf-9136-4bf8-ac6a-3c642ed64594
 ---
 # Resource Compiler Fatal Error RC1020
 
-unexpected '#endif'
+> unexpected '#endif'
 
 An `#endif` directive appeared without a matching `#if`, **#ifdef**, or **#ifndef** directive.
 

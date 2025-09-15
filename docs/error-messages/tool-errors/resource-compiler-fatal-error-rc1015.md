@@ -8,7 +8,7 @@ ms.assetid: 23f187e1-5538-40b5-9042-edd2888f55c2
 ---
 # Resource Compiler Fatal Error RC1015
 
-cannot open include file 'filename'
+> cannot open include file 'filename'
 
 The given include file does not exist, could not be opened, or was not found.
 
