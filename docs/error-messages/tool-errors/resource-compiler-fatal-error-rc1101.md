@@ -10,6 +10,8 @@ ms.assetid: ff273384-b819-464a-8c0e-d5951e4a28b4
 
 > no resource binary filename specified
 
+## Remarks
+
 The Rename Output (/fo) option was not followed by a filename.
 
 Use the following syntax for the /fo option:

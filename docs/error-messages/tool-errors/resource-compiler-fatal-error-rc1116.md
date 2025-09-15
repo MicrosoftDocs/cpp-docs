@@ -10,4 +10,6 @@ ms.assetid: 1eacc5c3-d946-4615-83e4-1b8ebd472139
 
 > RC terminating after preprocessor errors
 
+## Remarks
+
 The Resource Compiler halted due to other errors. Fix the other errors and recompile.

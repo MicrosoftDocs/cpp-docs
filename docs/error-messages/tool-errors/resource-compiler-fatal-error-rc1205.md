@@ -10,4 +10,6 @@ ms.assetid: 6cfbe019-ad8a-4267-b4b9-0d675bb3819a
 
 > invalid code page
 
+## Remarks
+
 The Specify Code Page (/c) option was followed by an invalid code page. See [Code Pages](../../c-runtime-library/code-pages.md) in the *Run-Time Library Reference* for more information.

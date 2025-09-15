@@ -10,6 +10,8 @@ ms.assetid: 59803673-492b-44fa-80fa-df93b8aaf9fb
 
 > compiler limit : #if or #ifdef blocks nested too deeply
 
+## Remarks
+
 The program exceeded the maximum allowable nesting levels for `#if` and `#ifdef` directives.
 
 This error can be caused by include files that use these preprocessor directives.

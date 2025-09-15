@@ -10,4 +10,6 @@ ms.assetid: ae0b89ec-0a31-4f8e-b9d0-f974152c185e
 
 > compiler limit : 'identifier' : macro definition too big
 
+## Remarks
+
 Try to split the definition into shorter definitions.

@@ -10,4 +10,6 @@ ms.assetid: 7dacc4ec-3ebd-49b3-ba4c-1a2982bac720
 
 > input file has .RES extension
 
+## Remarks
+
 The .RES extension is used for Resource Compiler output. The .RC extension should be used for Resource Compiler scripts.

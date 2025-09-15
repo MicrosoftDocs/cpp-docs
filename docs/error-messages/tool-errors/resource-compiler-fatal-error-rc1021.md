@@ -10,6 +10,8 @@ ms.assetid: 9bc8858c-aa50-4b94-b60e-daf75ab45d77
 
 > invalid preprocessor command 'string'
 
+## Remarks
+
 The characters following the number sign (**#**) did not form a valid preprocessor directive.
 
 The number sign cannot be used as the first character in an identifier.

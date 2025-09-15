@@ -10,6 +10,8 @@ ms.assetid: 4e462931-e42e-42e3-8bfc-847677194286
 
 > out of memory, needed number bytes
 
+## Remarks
+
 The Resource Compiler ran out of storage for items that it stores in its heap. Usually this is the result of having too many symbols.
 
 ### To fix by using the following possible solutions

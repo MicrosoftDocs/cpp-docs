@@ -10,4 +10,6 @@ ms.assetid: 80ce18e7-44ee-4844-bede-321fe0844d56
 
 > invalid switch, option: too many /d switches
 
+## Remarks
+
 Too many symbols were defined using the Define Symbols (/d) option. Define some symbols in your source and recompile.

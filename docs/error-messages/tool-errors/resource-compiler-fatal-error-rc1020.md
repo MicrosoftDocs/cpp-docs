@@ -10,6 +10,8 @@ ms.assetid: 3e073ebf-9136-4bf8-ac6a-3c642ed64594
 
 > unexpected '#endif'
 
+## Remarks
+
 An `#endif` directive appeared without a matching `#if`, **#ifdef**, or **#ifndef** directive.
 
 Make sure that there is a matching `#endif` for each `#if`, **#ifdef**, and **#ifndef** statement.

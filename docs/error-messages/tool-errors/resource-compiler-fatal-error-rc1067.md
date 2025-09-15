@@ -10,4 +10,6 @@ ms.assetid: 6b23677d-428d-47c6-9207-8b85f7718e03
 
 > compiler limit : identifier overflowed internal buffer
 
+## Remarks
+
 An internal compiler limit was exceeded.

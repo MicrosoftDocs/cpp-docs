@@ -10,4 +10,6 @@ ms.assetid: f9b703d4-6767-4721-9450-37079bcc7152
 
 > unexpected end of file found
 
+## Remarks
+
 This error can be caused by missing line feed and carriage return characters on the last line of a text file.

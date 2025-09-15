@@ -10,6 +10,8 @@ ms.assetid: 23f187e1-5538-40b5-9042-edd2888f55c2
 
 > cannot open include file 'filename'
 
+## Remarks
+
 The given include file does not exist, could not be opened, or was not found.
 
 Make sure that the environment settings are valid and that the correct path for the file is specified. Ensure that sufficient file handles are available to the Resource Compiler. If the file is on a network drive, make sure that you have permissions to open the file.
