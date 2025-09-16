@@ -10,6 +10,8 @@ ms.assetid: 71f03b4a-c9a9-415d-920f-bf2e58507f93
 
 > 'identifier' : macro redefinition
 
+## Remarks
+
 The identifier is defined twice. The compiler used the second macro definition.
 
 This warning can be caused by defining a macro on the command line and in the code with a `#define` directive. It also can be caused by macros imported from include files.
