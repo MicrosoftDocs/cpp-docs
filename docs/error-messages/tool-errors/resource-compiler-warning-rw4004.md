@@ -8,7 +8,7 @@ ms.assetid: 596b6a89-9ce7-4ba7-bdcb-e8054c7efafa
 ---
 # Resource Compiler Warning RW4004
 
-ASCII character not equivalent to virtual key code
+> ASCII character not equivalent to virtual key code
 
 A string literal was used for the virtual key code in a VIRTKEY type accelerator.
 
