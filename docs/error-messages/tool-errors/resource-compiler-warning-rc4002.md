@@ -8,7 +8,7 @@ ms.assetid: a157bc55-1a75-4337-aee4-e2ba61ff8cfa
 ---
 # Resource Compiler Warning RC4002
 
-too many actual parameters for macro 'identifier'
+> too many actual parameters for macro 'identifier'
 
 The number of actual parameters specified with the given identifier was greater than the number of formal parameters given in the macro definition of the identifier.
 

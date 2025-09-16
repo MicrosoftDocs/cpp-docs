@@ -8,7 +8,7 @@ ms.assetid: 3c61b4a4-b418-465b-a4fd-cb1ff0adb8dd
 ---
 # Resource Compiler Warning RC4093
 
-unescaped newline in character constant in inactive code
+> unescaped newline in character constant in inactive code
 
 The constant expression of an `#if`, `#elif`, **#ifdef**, or **#ifndef** preprocessor directive evaluated to zero, making the code that follows inactive. Within that inactive code, a newline character appeared within a set of single or double quotation marks.
 

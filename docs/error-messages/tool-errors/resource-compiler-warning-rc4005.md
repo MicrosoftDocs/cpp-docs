@@ -8,7 +8,7 @@ ms.assetid: 71f03b4a-c9a9-415d-920f-bf2e58507f93
 ---
 # Resource Compiler Warning RC4005
 
-'identifier' : macro redefinition
+> 'identifier' : macro redefinition
 
 The identifier is defined twice. The compiler used the second macro definition.
 
