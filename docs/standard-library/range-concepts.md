@@ -1,6 +1,6 @@
 ---
-description: "Learn more about range concepts."
 title: "<ranges> concepts"
+description: "Learn more about range concepts."
 ms.date: 12/16/2022
 f1_keywords: ["ranges/std::ranges::range", "ranges/std::ranges::bidirectional_range", "ranges/std::ranges::borrowed_range", "ranges/std::ranges::common_range", "ranges/std::ranges::contiguous_range", "ranges/std::ranges::forward_range", "ranges/std::ranges::input_range", "ranges/std::ranges::output_range", "ranges/std::ranges::random_access_range", "ranges/std::ranges::simple_view", "ranges/std::ranges::sized_range", "ranges/std::ranges::view", "ranges/std::ranges::viewable_range"]
 helpviewer_keywords: ["std::ranges [C++], ranges::range", "std::ranges [C++], ranges::bidirectional_range", "std::ranges [C++], ranges::borrowed_range", "std::ranges [C++], ranges::common_range", "std::ranges [C++], ranges::contiguous_range", "std::ranges [C++], ranges::forward_range", "std::ranges [C++], ranges::input_range", "std::ranges [C++], ranges::output_range", "std::ranges [C++], ranges::random_access_range", "std::ranges [C++], ranges::simple_view", "std::ranges [C++], ranges::sized_range", "std::ranges [C++], ranges::view", "std::ranges [C++], ranges::viewable_range"]
