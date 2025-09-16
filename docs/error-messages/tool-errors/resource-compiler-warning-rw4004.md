@@ -10,6 +10,8 @@ ms.assetid: 596b6a89-9ce7-4ba7-bdcb-e8054c7efafa
 
 > ASCII character not equivalent to virtual key code
 
+## Remarks
+
 A string literal was used for the virtual key code in a VIRTKEY type accelerator.
 
 This warning allows you to continue, but be aware that the accelerator keys generated may not match the string you indicated. (VIRTKEYs use different key codes than ASCII accelerators.)
