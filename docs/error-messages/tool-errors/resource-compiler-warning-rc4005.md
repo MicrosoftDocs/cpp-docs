@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Warning RC4005"
 title: "Resource Compiler Warning RC4005"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Warning RC4005"
+ms.date: 11/04/2016
 f1_keywords: ["RC4005"]
 helpviewer_keywords: ["RC4005"]
-ms.assetid: 71f03b4a-c9a9-415d-920f-bf2e58507f93
 ---
 # Resource Compiler Warning RC4005
 
