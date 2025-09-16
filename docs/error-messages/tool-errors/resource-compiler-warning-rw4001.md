@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Resource Compiler Warning RW4001"
 title: "Resource Compiler Warning RW4001"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Warning RW4001"
+ms.date: 11/04/2016
 f1_keywords: ["RW4001"]
 helpviewer_keywords: ["RW4001"]
-ms.assetid: 7c2d35eb-9899-46f5-848d-7ef49c39d706
 ---
 # Resource Compiler Warning RW4001
 
