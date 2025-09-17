@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: overflow_error class"
 title: "overflow_error class"
-ms.date: "09/09/2021"
+description: "Learn more about: overflow_error class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::overflow_error"]
 helpviewer_keywords: ["overflow_error class"]
-ms.assetid: bae7128d-e36b-4a45-84f1-2f89da441d20
 ---
 # `overflow_error` class
 

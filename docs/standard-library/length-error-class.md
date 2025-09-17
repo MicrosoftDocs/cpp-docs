@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: length_error class"
 title: "length_error class"
-ms.date: "09/09/2021"
+description: "Learn more about: length_error class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::length_error"]
 helpviewer_keywords: ["length_error class"]
-ms.assetid: d53c46c5-4626-400d-bd76-bf3e1e0f64ae
 ---
 # `length_error` class
 

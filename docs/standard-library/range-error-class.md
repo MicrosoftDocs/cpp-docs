@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: range_error class"
 title: "range_error class"
-ms.date: "09/09/2021"
+description: "Learn more about: range_error class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::range_error"]
 helpviewer_keywords: ["range_error class"]
-ms.assetid: 8afb3e88-fc49-4213-b096-ed63d7aea37c
 ---
 # `range_error` class
 

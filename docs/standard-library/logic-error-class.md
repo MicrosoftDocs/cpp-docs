@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: logic_error class"
 title: "logic_error class"
-ms.date: "09/09/2021"
+description: "Learn more about: logic_error class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::logic_error"]
 helpviewer_keywords: ["logic_error class"]
-ms.assetid: b290d73d-94e1-4288-af86-2bb5d71f677a
 ---
 # `logic_error` class
 

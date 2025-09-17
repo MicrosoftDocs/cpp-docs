@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: runtime_error class"
 title: "runtime_error class"
-ms.date: "09/09/2021"
+description: "Learn more about: runtime_error class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::runtime_error"]
 helpviewer_keywords: ["runtime_error class"]
-ms.assetid: 4d0227bf-847b-45a2-a320-2351ebf98368
 ---
 # `runtime_error` class
 

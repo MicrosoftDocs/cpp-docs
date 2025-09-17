@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: domain_error class"
 title: "domain_error class"
-ms.date: "09/09/2021"
+description: "Learn more about: domain_error class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::domain_error"]
 helpviewer_keywords: ["domain_error class"]
-ms.assetid: a1d8245d-61c2-4d1e-973f-073bd5dd5fa3
 ---
 # `domain_error` class
 

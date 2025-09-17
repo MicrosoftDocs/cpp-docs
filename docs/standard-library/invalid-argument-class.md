@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: invalid_argument class"
 title: "invalid_argument class"
-ms.date: "09/09/2021"
+description: "Learn more about: invalid_argument class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::invalid_argument"]
 helpviewer_keywords: ["invalid_argument class"]
-ms.assetid: af6c227d-ad7c-4e63-9dee-67af81d83506
 ---
 # `invalid_argument` class
 
