@@ -18,7 +18,6 @@ public:
     explicit domain_error(const string& message);
 
     explicit domain_error(const char *message);
-
 };
 ```
 

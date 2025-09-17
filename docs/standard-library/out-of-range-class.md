@@ -18,7 +18,6 @@ public:
     explicit out_of_range(const string& message);
 
     explicit out_of_range(const char *message);
-
 };
 ```
 

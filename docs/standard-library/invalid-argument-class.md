@@ -18,7 +18,6 @@ public:
     explicit invalid_argument(const string& message);
 
     explicit invalid_argument(const char *message);
-
 };
 ```
 

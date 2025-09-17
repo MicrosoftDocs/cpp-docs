@@ -18,7 +18,6 @@ public:
     explicit overflow_error(const string& message);
 
     explicit overflow_error(const char *message);
-
 };
 ```
 

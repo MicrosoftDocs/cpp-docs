@@ -18,7 +18,6 @@ public:
     explicit length_error(const string& message);
 
     explicit length_error(const char *message);
-
 };
 ```
 

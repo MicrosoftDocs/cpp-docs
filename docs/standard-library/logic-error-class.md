@@ -18,7 +18,6 @@ public:
     explicit logic_error(const string& message);
 
     explicit logic_error(const char *message);
-
 };
 ```
 

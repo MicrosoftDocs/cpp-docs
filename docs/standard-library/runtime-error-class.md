@@ -18,7 +18,6 @@ public:
     explicit runtime_error(const string& message);
 
     explicit runtime_error(const char *message);
-
 };
 ```
 

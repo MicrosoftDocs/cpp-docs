@@ -18,7 +18,6 @@ public:
     explicit underflow_error(const string& message);
 
     explicit underflow_error(const char *message);
-
 };
 ```
 
