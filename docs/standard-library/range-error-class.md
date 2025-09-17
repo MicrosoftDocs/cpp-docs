@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: range_error Class"
-title: "range_error Class"
+description: "Learn more about: range_error class"
+title: "range_error class"
 ms.date: "09/09/2021"
 f1_keywords: ["stdexcept/std::range_error"]
 helpviewer_keywords: ["range_error class"]
 ms.assetid: 8afb3e88-fc49-4213-b096-ed63d7aea37c
 ---
-# `range_error` Class
+# `range_error` class
 
 The class serves as the base class for all exceptions thrown to report a range error (as in mathematics, not iterators).
 
@@ -62,5 +62,5 @@ Type: class std::range_error
 
 ## See also
 
-[`runtime_error` Class](../standard-library/runtime-error-class.md)\
+[`runtime_error` class](../standard-library/runtime-error-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: domain_error Class"
-title: "domain_error Class"
+description: "Learn more about: domain_error class"
+title: "domain_error class"
 ms.date: "09/09/2021"
 f1_keywords: ["stdexcept/std::domain_error"]
 helpviewer_keywords: ["domain_error class"]
 ms.assetid: a1d8245d-61c2-4d1e-973f-073bd5dd5fa3
 ---
-# `domain_error` Class
+# `domain_error` class
 
 The class serves as the base class for all exceptions thrown to report a domain error (as in mathematics, not networking).
 
@@ -66,5 +66,5 @@ Type: class std::domain_error
 
 ## See also
 
-[`logic_error` Class](../standard-library/logic-error-class.md)\
+[`logic_error` class](../standard-library/logic-error-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: out_of_range Class"
-title: "out_of_range Class"
+description: "Learn more about: out_of_range class"
+title: "out_of_range class"
 ms.date: "09/09/2021"
 f1_keywords: ["stdexcept/std::out_of_range"]
 helpviewer_keywords: ["out_of_range class"]
 ms.assetid: d0e14dc0-065e-4666-9ac9-51e52223c503
 ---
-# `out_of_range` Class
+# `out_of_range` class
 
 The class serves as the base class for all exceptions thrown to report an argument that is out of its valid range.
 
@@ -67,5 +67,5 @@ Type: class std::out_of_range
 
 ## See also
 
-[`logic_error` Class](../standard-library/logic-error-class.md)\
+[`logic_error` class](../standard-library/logic-error-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
