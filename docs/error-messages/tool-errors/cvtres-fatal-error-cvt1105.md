@@ -10,6 +10,8 @@ ms.assetid: 6fb98e2b-836e-4e1e-9bd8-4e1465ad4e85
 
 > cannot seek in file
 
+## Remarks
+
 CVTRES could not go to a location in the file.
 
 This error can be caused by file corruption.
