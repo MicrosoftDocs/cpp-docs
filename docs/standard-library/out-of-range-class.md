@@ -24,7 +24,7 @@ public:
 
 ## Remarks
 
-The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](../standard-library/exception-class.md) and [`data`](../standard-library/basic-string-class.md#data).
+The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](exception-class.md) and [`data`](basic-string-class.md#data).
 
 ## Example
 
@@ -67,5 +67,5 @@ Type: class std::out_of_range
 
 ## See also
 
-[`logic_error` class](../standard-library/logic-error-class.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`logic_error` class](logic-error-class.md)\
+[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)

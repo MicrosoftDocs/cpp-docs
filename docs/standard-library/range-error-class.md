@@ -22,7 +22,7 @@ public:
 
 ## Remarks
 
-The value returned by [`what`](../standard-library/exception-class.md) is a copy of `message.data()`. For more information, see [`basic_string::data`](../standard-library/basic-string-class.md#data).
+The value returned by [`what`](exception-class.md) is a copy of `message.data()`. For more information, see [`basic_string::data`](basic-string-class.md#data).
 
 ## Example
 
@@ -62,5 +62,5 @@ Type: class std::range_error
 
 ## See also
 
-[`runtime_error` class](../standard-library/runtime-error-class.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`runtime_error` class](runtime-error-class.md)\
+[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)
