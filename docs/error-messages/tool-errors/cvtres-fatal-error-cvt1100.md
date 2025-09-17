@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CVTRES Fatal Error CVT1100"
 title: "CVTRES Fatal Error CVT1100"
-ms.date: "11/04/2016"
+description: "Learn more about: CVTRES Fatal Error CVT1100"
+ms.date: 11/04/2016
 f1_keywords: ["CVT1100"]
 helpviewer_keywords: ["CVT1100"]
-ms.assetid: 886e88dd-5818-4b5f-84f2-d2a3d75f0aaf
 ---
 # CVTRES Fatal Error CVT1100
 
