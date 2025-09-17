@@ -8,7 +8,7 @@ ms.assetid: 886e88dd-5818-4b5f-84f2-d2a3d75f0aaf
 ---
 # CVTRES Fatal Error CVT1100
 
-duplicate resource — type:type, name:name, language:language, flags:flags, size:size
+> duplicate resource — type:type, name:name, language:language, flags:flags, size:size
 
 The given resource was specified more than once.
 
