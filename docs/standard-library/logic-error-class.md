@@ -6,7 +6,7 @@ f1_keywords: ["stdexcept/std::logic_error"]
 helpviewer_keywords: ["logic_error class"]
 ms.assetid: b290d73d-94e1-4288-af86-2bb5d71f677a
 ---
-# logic_error Class
+# `logic_error` Class
 
 The class serves as the base class for all exceptions thrown to report errors presumably detectable before the program executes, such as violations of logical preconditions.
 
@@ -57,11 +57,11 @@ Type: class std::logic_error
 
 ## Requirements
 
-**Header:** \<stdexcept>
+**Header:** `<stdexcept>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[exception Class](../standard-library/exception-class.md)\
+[`exception` Class](../standard-library/exception-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

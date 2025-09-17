@@ -6,7 +6,7 @@ f1_keywords: ["stdexcept/std::underflow_error"]
 helpviewer_keywords: ["underflow_error class"]
 ms.assetid: d632f1f9-9c6c-4954-b96b-03041bfab22d
 ---
-# underflow_error Class
+# `underflow_error` Class
 
 The class serves as the base class for all exceptions thrown to report an arithmetic underflow.
 
@@ -59,11 +59,11 @@ Type: class std::underflow_error
 
 ## Requirements
 
-**Header:** \<stdexcept>
+**Header:** `<stdexcept>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[runtime_error Class](../standard-library/runtime-error-class.md)\
+[`runtime_error` Class](../standard-library/runtime-error-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -6,7 +6,7 @@ f1_keywords: ["stdexcept/std::runtime_error"]
 helpviewer_keywords: ["runtime_error class"]
 ms.assetid: 4d0227bf-847b-45a2-a320-2351ebf98368
 ---
-# runtime_error Class
+# `runtime_error` Class
 
 The class serves as the base class for all exceptions thrown to report errors presumably detectable only when the program executes.
 
@@ -57,11 +57,11 @@ Type: class std::runtime_error
 
 ## Requirements
 
-**Header:** \<stdexcept>
+**Header:** `<stdexcept>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[exception Class](../standard-library/exception-class.md)\
+[`exception` Class](../standard-library/exception-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

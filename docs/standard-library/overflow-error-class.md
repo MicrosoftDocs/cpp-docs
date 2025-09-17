@@ -6,7 +6,7 @@ f1_keywords: ["stdexcept/std::overflow_error"]
 helpviewer_keywords: ["overflow_error class"]
 ms.assetid: bae7128d-e36b-4a45-84f1-2f89da441d20
 ---
-# overflow_error Class
+# `overflow_error` Class
 
 The class serves as the base class for all exceptions thrown to report an arithmetic overflow.
 
@@ -60,11 +60,11 @@ Type: class std::overflow_error
 
 ## Requirements
 
-**Header:** \<stdexcept>
+**Header:** `<stdexcept>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[runtime_error Class](../standard-library/runtime-error-class.md)\
+[`runtime_error` Class](../standard-library/runtime-error-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

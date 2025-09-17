@@ -6,7 +6,7 @@ f1_keywords: ["stdexcept/std::length_error"]
 helpviewer_keywords: ["length_error class"]
 ms.assetid: d53c46c5-4626-400d-bd76-bf3e1e0f64ae
 ---
-# length_error Class
+# `length_error` Class
 
 The class serves as the base class for all exceptions thrown to report an attempt to generate an object too long to be specified.
 
@@ -58,11 +58,11 @@ Type: class std::length_error
 
 ## Requirements
 
-**Header:** \<stdexcept>
+**Header:** `<stdexcept>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[logic_error Class](../standard-library/logic-error-class.md)\
+[`logic_error` Class](../standard-library/logic-error-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

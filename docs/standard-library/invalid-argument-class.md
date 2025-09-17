@@ -6,7 +6,7 @@ f1_keywords: ["stdexcept/std::invalid_argument"]
 helpviewer_keywords: ["invalid_argument class"]
 ms.assetid: af6c227d-ad7c-4e63-9dee-67af81d83506
 ---
-# invalid_argument Class
+# `invalid_argument` Class
 
 The class serves as the base class for all exceptions thrown to report an invalid argument.
 
@@ -57,11 +57,11 @@ Type: class std::invalid_argument
 
 ## Requirements
 
-**Header:** \<stdexcept>
+**Header:** `<stdexcept>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[logic_error Class](../standard-library/logic-error-class.md)\
+[`logic_error` Class](../standard-library/logic-error-class.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
