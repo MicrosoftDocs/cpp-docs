@@ -49,10 +49,11 @@ int main()
       cerr << "Type: " << typeid(e).name() << endl;
    }
 }
-/* Output:
+```
+
+```Output
 Caught: bad locale name
 Type: class std::runtime_error
-*/
 ```
 
 ## Requirements

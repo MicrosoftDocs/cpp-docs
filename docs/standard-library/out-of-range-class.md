@@ -52,10 +52,11 @@ int main()
       cerr << "Type: " << typeid(e).name() << endl;
    }
 }
-/* Output:
+```
+
+```Output
 Caught: invalid string position
 Type: class std::out_of_range
-*/
 ```
 
 ## Requirements

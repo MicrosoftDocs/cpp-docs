@@ -50,10 +50,11 @@ int main()
       cerr << "Type: " << typeid(e).name() << endl;
    }
 }
-/* Output:
+```
+
+```Output
 Caught: vector too long
 Type: class std::length_error
-*/
 ```
 
 ## Requirements

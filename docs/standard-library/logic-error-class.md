@@ -49,10 +49,11 @@ int main()
       cerr << "Type: " << typeid(e).name() << endl;
    }
 }
-/* Output:
+```
+
+```Output
 Caught: Does not compute!
 Type: class std::logic_error
-*/
 ```
 
 ## Requirements

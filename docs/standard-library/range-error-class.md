@@ -47,10 +47,11 @@ int main()
       cerr << "Type: " << typeid(e).name() << endl;
    }
 }
-/* Output:
+```
+
+```Output
 Caught: The range is in error!
 Type: class std::range_error
-*/
 ```
 
 ## Requirements

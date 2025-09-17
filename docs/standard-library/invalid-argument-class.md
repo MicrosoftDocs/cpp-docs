@@ -49,10 +49,11 @@ int main()
       cerr << "Type: " << typeid(e).name() << endl;
    }
 }
-/* Output:
+```
+
+```Output
 Caught: invalid bitset char
 Type: class std::invalid_argument
-*/
 ```
 
 ## Requirements
