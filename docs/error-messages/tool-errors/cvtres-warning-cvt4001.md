@@ -10,4 +10,6 @@ ms.assetid: 39c13bc2-92fa-4d79-8171-039b27329dcc
 
 > machine type not specified; assumed *type*
 
+## Remarks
+
 CVTRES did not find a machine specification. It assumed the given machine type. If the default is incorrect, rerun CVTRES using the /MACHINE option.
