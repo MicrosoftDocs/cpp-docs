@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2514"
 title: "Compiler Error C2514"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2514"
+ms.date: 11/04/2016
 f1_keywords: ["C2514"]
 helpviewer_keywords: ["C2514"]
-ms.assetid: 4b7085e5-6714-4261-80b7-bc72e64ab3e8
 ---
 # Compiler Error C2514
 
-'class' : class has no constructors
+> 'class' : class has no constructors
+
+## Remarks
 
 The class, structure, or union has no constructor with a parameter list that matches the parameters being used to instantiate it.
 
 A class must be fully declared before it can be instantiated.
 
-The following sample generates C2514:
+## Example
+
+The following example generates C2514:
 
 ```cpp
 // C2514.cpp
