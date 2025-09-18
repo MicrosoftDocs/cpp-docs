@@ -8,7 +8,7 @@ ms.assetid: fd28e7c9-a463-4a9c-a863-cc9e75315550
 ---
 # Math Error M6205
 
-'function' : _TLOSS error
+> 'function' : _TLOSS error
 
 A total loss of significance (precision) occurred.
 

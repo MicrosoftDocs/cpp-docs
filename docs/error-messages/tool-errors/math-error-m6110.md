@@ -8,7 +8,7 @@ ms.assetid: aac9ae37-6a6d-46e9-85d4-dfe03f1c3e11
 ---
 # Math Error M6110
 
-stack overflow
+> stack overflow
 
 A floating-point expression caused a floating-point stack overflow.
 

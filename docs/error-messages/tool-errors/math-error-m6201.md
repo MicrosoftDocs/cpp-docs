@@ -8,7 +8,7 @@ ms.assetid: 4041c331-d9aa-4dd4-b565-7dbe0218538c
 ---
 # Math Error M6201
 
-'function' : _DOMAIN error
+> 'function' : _DOMAIN error
 
 An argument to the given function was outside the domain of legal input values for that function.
 

@@ -8,7 +8,7 @@ ms.assetid: 054893b4-49bc-45d9-882f-7cb50ba387c0
 ---
 # Math Error M6108
 
-square root
+> square root
 
 The operand in a square-root operation was negative.
 

@@ -8,7 +8,7 @@ ms.assetid: 8c8d5097-d725-4a2c-92e9-fcf28c871d74
 ---
 # Math Error M6101
 
-invalid
+> invalid
 
 Invalid operation.
 

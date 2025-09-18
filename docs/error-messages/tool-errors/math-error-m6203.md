@@ -8,7 +8,7 @@ ms.assetid: bd7fdd1c-83e4-4d6a-901e-10a0308bf5be
 ---
 # Math Error M6203
 
-'function' : _OVERFLOW error
+> 'function' : _OVERFLOW error
 
 The given function result was too large to be represented.
 
