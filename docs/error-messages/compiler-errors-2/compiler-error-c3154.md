@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3154"
 title: "Compiler Error C3154"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3154"
+ms.date: 11/04/2016
 f1_keywords: ["C3154"]
 helpviewer_keywords: ["C3154"]
-ms.assetid: 78005c74-eaaf-4ac2-88ae-6c25d01a302a
 ---
 # Compiler Error C3154
 
-Expected ',' before ellipsis. Non-comma separated ellipsis not supported on parameter array functions.
+> Expected ',' before ellipsis. Non-comma separated ellipsis not supported on parameter array functions.
+
+## Remarks
 
 A variable argument function was not declared correctly.
 
@@ -16,7 +17,7 @@ For more information, see [Variable Argument Lists (...) (C++/CLI)](../../extens
 
 ## Example
 
-The following sample generates C3154.
+The following example generates C3154.
 
 ```cpp
 // C3154.cpp
