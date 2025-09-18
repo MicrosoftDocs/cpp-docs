@@ -10,6 +10,8 @@ ms.assetid: aac9ae37-6a6d-46e9-85d4-dfe03f1c3e11
 
 > stack overflow
 
+## Remarks
+
 A floating-point expression caused a floating-point stack overflow.
 
 Stack-overflow floating-point exceptions are trapped up to a limit of seven levels in addition to the eight levels usually supported by the 8087/287/387 coprocessor.

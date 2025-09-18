@@ -10,6 +10,8 @@ ms.assetid: 4041c331-d9aa-4dd4-b565-7dbe0218538c
 
 > 'function' : _DOMAIN error
 
+## Remarks
+
 An argument to the given function was outside the domain of legal input values for that function.
 
 ## Example

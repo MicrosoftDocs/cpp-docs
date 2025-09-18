@@ -10,6 +10,8 @@ ms.assetid: 8c8d5097-d725-4a2c-92e9-fcf28c871d74
 
 > invalid
 
+## Remarks
+
 Invalid operation.
 
 This error can be caused when an operand is NaN (not a number) or infinity.
