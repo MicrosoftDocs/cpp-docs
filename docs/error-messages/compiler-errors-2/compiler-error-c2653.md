@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2653"]
 
 > '*identifier*' : is not a class or namespace name
 
+## Remarks
+
 The language syntax requires a class, structure, union, or namespace name here.
 
 This error can occur when you use a name that has not been declared as a class, structure, union, or namespace in front of a scope operator. To fix this issue, declare the name or include the header that declares the name before it is used.
@@ -17,7 +19,7 @@ C2653 is also possible if you try to define a *compound namespace*, a namespace 
 
 ## Examples
 
-This sample generates C2653 because a scope name is used but not declared. The compiler expects a class, structure, union, or namespace name before a scope operator (::).
+This example generates C2653 because a scope name is used but not declared. The compiler expects a class, structure, union, or namespace name before a scope operator (::).
 
 ```cpp
 // C2653.cpp
