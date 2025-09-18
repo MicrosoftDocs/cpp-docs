@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Math Error M6102"
 title: "Math Error M6102"
-ms.date: "11/04/2016"
+description: "Learn more about: Math Error M6102"
+ms.date: 11/04/2016
 f1_keywords: ["M6102"]
 helpviewer_keywords: ["M6102"]
-ms.assetid: dbd2241f-6595-431e-9597-d9dbdb3a0ca2
 ---
 # Math Error M6102
 

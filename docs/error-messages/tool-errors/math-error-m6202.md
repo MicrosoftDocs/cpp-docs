@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Math Error M6202"
 title: "Math Error M6202"
-ms.date: "11/04/2016"
+description: "Learn more about: Math Error M6202"
+ms.date: 11/04/2016
 f1_keywords: ["M6202"]
 helpviewer_keywords: ["M6202"]
-ms.assetid: 4d17045f-c6dc-4705-9512-e9af12c35fb4
 ---
 # Math Error M6202
 

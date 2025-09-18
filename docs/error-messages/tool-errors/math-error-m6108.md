@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Math Error M6108"
 title: "Math Error M6108"
-ms.date: "11/04/2016"
+description: "Learn more about: Math Error M6108"
+ms.date: 11/04/2016
 f1_keywords: ["M6108"]
 helpviewer_keywords: ["M6108"]
-ms.assetid: 054893b4-49bc-45d9-882f-7cb50ba387c0
 ---
 # Math Error M6108
 
