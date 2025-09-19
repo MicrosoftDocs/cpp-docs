@@ -7,13 +7,13 @@ helpviewer_keywords: ["Vector Algorithms", "Vectorization", "SIMD"]
 # Vectorized STL Algorithms
 
 Under certain conditions, STL algorithms execute not element-wise, but multiple element at once on a single CPU core. This is possible due to SIMD (single instruction, multiple data). The use of such approach instead of 
-element-wise approach is called vectorization. The implementation that is not vectorized is called scalar.
+element-wise approach is called vectorization. An implementation that is not vectorized is called scalar.
 
 The conditions for vectorization are:
- - The container or range is contigous. `array`, `vector`, and `basic_string` are contigous containers, `span` and `basic_string_view` provide conditions ranges.
- - There are such SIMD insstructions available for the target platform that implement the particular algorithm on particular element types efficiently. Usually this is true for plain types (like built-in integers) and simple operations.
+ - The container or range is contigous. `array`, `vector`, and `basic_string` are contigous containers, `span` and `basic_string_view` provide contiguous ranges.
+ - There are such SIMD instructions available for the target platform that implement the particular algorithm on particular element types efficiently. Often this is true for plain types (like built-in integers) and simple operations.
  - Either of the following:
-     - The compiler is capable emiting vectorized machine code for an implementation written as scalar code (auto-vectorization)
+     - The compiler is capable of emitting vectorized machine code for an implementation written as scalar code (auto-vectorization)
      - The implementation itself is written as vectorized code (manual vectorization)
 
 ## Auto-vectorization in STL
@@ -76,7 +76,7 @@ Vectorization of floating point types is connected with extra difficulties:
 
 The STL deals with the first two difficulties safely. Only `minmax_element`, `minmax`, `is_sorted`, and `is_sorted_until` are manually vectorized. These algorithms:
  - Do not compute new floating point values, only compare the existing values, so different order does not affect precision.
- - As sorting algorithms, require elements transitivity, so NaNs are not allowed as elements.
+ - As sorting algorithms, require transitivity of comparisons, so NaNs are not allowed as elements.
 
 There's `_USE_STD_VECTOR_FLOATING_ALGORITHMS` to control the use of these vectorized algorithms for floating point types. Set it to 0 to disable the vectorization. The macro has no effect if `_USE_STD_VECTOR_ALGORITHMS` is set to 0.
 
