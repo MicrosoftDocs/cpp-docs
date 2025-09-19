@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Math Error M6201"
 title: "Math Error M6201"
-ms.date: "11/04/2016"
+description: "Learn more about: Math Error M6201"
+ms.date: 11/04/2016
 f1_keywords: ["M6201"]
 helpviewer_keywords: ["M6201"]
-ms.assetid: 4041c331-d9aa-4dd4-b565-7dbe0218538c
 ---
 # Math Error M6201
 
-'function' : _DOMAIN error
+> 'function' : _DOMAIN error
+
+## Remarks
 
 An argument to the given function was outside the domain of legal input values for that function.
 

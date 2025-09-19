@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Math Error M6110"
 title: "Math Error M6110"
-ms.date: "11/04/2016"
+description: "Learn more about: Math Error M6110"
+ms.date: 11/04/2016
 f1_keywords: ["M6110"]
 helpviewer_keywords: ["M6110"]
-ms.assetid: aac9ae37-6a6d-46e9-85d4-dfe03f1c3e11
 ---
 # Math Error M6110
 
-stack overflow
+> stack overflow
+
+## Remarks
 
 A floating-point expression caused a floating-point stack overflow.
 
