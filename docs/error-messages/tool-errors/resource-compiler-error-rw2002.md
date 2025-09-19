@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: Resource Compiler Error RW2002"
 title: "Resource Compiler Error RW2002"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Error RW2002"
+ms.date: 11/04/2016
 f1_keywords: ["RW2002"]
 helpviewer_keywords: ["RW2002"]
-ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
 ---
 # Resource Compiler Error RW2002
 
-Parsing error
+> Parsing error
 
 ### To fix by checking the following possible causes
 
