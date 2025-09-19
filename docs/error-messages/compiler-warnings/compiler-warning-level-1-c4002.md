@@ -15,7 +15,7 @@ The number of actual parameters in the macro exceeds the number of formal parame
 
 C4002 can occur when incorrectly using [variadic macros](../../preprocessor/variadic-macros.md).
 
-## Examples
+## Example
 
 The following example generates C4002:
 
