@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Resource Compiler Error RC2104"
 title: "Resource Compiler Error RC2104"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Error RC2104"
+ms.date: 11/04/2016
 f1_keywords: ["RC2104"]
 helpviewer_keywords: ["RC2104"]
-ms.assetid: 792a3bd8-cb4c-4817-b288-4ce37082b582
 ---
 # Resource Compiler Error RC2104
 
-undefined keyword or key name: key
+> undefined keyword or key name: key
+
+## Remarks
 
 The specified keyword or key name is not defined.
 
