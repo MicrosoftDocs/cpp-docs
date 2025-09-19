@@ -15,7 +15,7 @@ In code compiled as C++, you cannot use a universal character name that represen
 
 ## Example
 
-The following example generate C3851, and show how to fix it:
+The following example generates C3851, and show how to fix it:
 
 ```cpp
 // C3851.cpp
