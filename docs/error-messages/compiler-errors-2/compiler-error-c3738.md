@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3738"
 title: "Compiler Error C3738"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3738"
+ms.date: 11/04/2016
 f1_keywords: ["C3738"]
 helpviewer_keywords: ["C3738"]
-ms.assetid: dd3ee011-e204-4264-bf3a-da32c4ef7038
 ---
 # Compiler Error C3738
 
-'calling_convention': the calling convention of the explicit instantiation must match that of the template being instantiated
+> 'calling_convention': the calling convention of the explicit instantiation must match that of the template being instantiated
+
+## Remarks
 
 It is recommended that you do not specify a calling convention on an explicit instantiation. If you must, though, the calling conventions must match.
 
 ## Example
 
-The following sample generates C3738.
+The following example generates C3738.
 
 ```cpp
 // C3738.cpp
