@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3499"
 title: "Compiler Error C3499"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3499"
+ms.date: 11/04/2016
 f1_keywords: ["C3499"]
 helpviewer_keywords: ["C3499"]
-ms.assetid: 6717de5c-ae0f-4024-bdf2-b5598009e7b6
 ---
 # Compiler Error C3499
 
-a lambda that has been specified to have a void return type cannot return a value
+> a lambda that has been specified to have a void return type cannot return a value
+
+## Remarks
 
 The compiler generates this error when a lambda expression that specifies **`void`** as the return type returns a value; or when a lambda expression contains more than one statement and returns a value, but does not specify its return type.
 
@@ -20,7 +21,7 @@ The compiler generates this error when a lambda expression that specifies **`voi
 
 - Combine the statements that make up the body of the lambda expression into a single statement.
 
-## Examples
+## Example
 
 The following example generates C3499 because the body of a lambda expression contains multiple statements and returns a value, but the lambda expression does not specify the return type:
 
