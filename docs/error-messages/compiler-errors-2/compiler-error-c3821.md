@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3821"
 title: "Compiler Error C3821"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3821"
+ms.date: 11/04/2016
 f1_keywords: ["C3821"]
 helpviewer_keywords: ["C3821"]
-ms.assetid: 2b327c7a-5faf-443c-ae82-944fae25b4df
 ---
 # Compiler Error C3821
 
-'function': managed type or function cannot be used in an unmanaged function
+> 'function': managed type or function cannot be used in an unmanaged function
+
+## Remarks
 
 Functions with inline assembly or [setjmp](../../c-runtime-library/reference/setjmp.md) cannot contain value types or managed classes. To fix this error, remove the inline assembly and `setjmp` or remove the managed objects.
 
@@ -16,7 +17,7 @@ C3821 can also occur if you try to use automatic storage in a vararg function.  
 
 ## Examples
 
-The following sample generates C3821.
+The following example generates C3821.
 
 ```cpp
 // C3821a.cpp
@@ -27,7 +28,7 @@ void test1(...) {
 }
 ```
 
-The following sample generates C3821.
+The following example generates C3821.
 
 ```cpp
 // C3821b.cpp

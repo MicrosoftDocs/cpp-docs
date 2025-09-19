@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3100"
 title: "Compiler Error C3100"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3100"
+ms.date: 11/04/2016
 f1_keywords: ["C3100"]
 helpviewer_keywords: ["C3100"]
-ms.assetid: 7a9c9eaf-08ef-442d-94a0-e457beee8549
 ---
 # Compiler Error C3100
 
-'target' : unknown attribute qualifier
+> 'target' : unknown attribute qualifier
+
+## Remarks
 
 An invalid attribute target was specified.
 
@@ -16,7 +17,7 @@ For more information, see [User-Defined Attributes](../../extensions/user-define
 
 ## Example
 
-The following sample generates C3100.
+The following example generates C3100.
 
 ```cpp
 // C3100.cpp

@@ -1,11 +1,13 @@
 ---
-description: "Learn more about: Compiler Warning (levels 3 and 4) C4244"
 title: "Compiler Warning (levels 3 and 4) C4244"
-ms.date: "11/6/2023"
+description: "Learn more about: Compiler Warning (levels 3 and 4) C4244"
+ms.date: 11/6/2023
 ---
 # Compiler Warning (levels 3 and 4) C4244
 
-'conversion' conversion from 'type1' to 'type2', possible loss of data
+> 'conversion' conversion from 'type1' to 'type2', possible loss of data
+
+## Remarks
 
 An integer type is converted to a smaller integer type.
 - This is a level-4 warning if *type1* is a signed or unsigned **`int`** and *type2* is a smaller, such as a signed or unsigned **`short`**.
@@ -15,7 +17,9 @@ To fix this warning, either change your program to use compatible types, or add 
 
 C4244 can also appear when the warning level is 2. For more information, see [Compiler Warning (level 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md).
 
-The following sample generates C4244:
+## Examples
+
+The following example generates C4244:
 
 ```cpp
 // C4244_level4.cpp
@@ -52,7 +56,7 @@ int main() {
 
 Warning C4244 can occur when building code for 64-bit targets that doesn't generate the warning when building for 32-bit targets. For example, pointer arithmetic results in a 32-bit quantity on 32-bit platforms, but a 64-bit quantity on 64-bit platforms.
 
-The following sample generates C4244 when compiled for 64-bit targets:
+The following example generates C4244 when compiled for 64-bit targets:
 
 ```cpp
 // C4244_level3_b.cpp

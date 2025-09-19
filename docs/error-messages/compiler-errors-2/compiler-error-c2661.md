@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2661"
 title: "Compiler Error C2661"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2661"
+ms.date: 11/04/2016
 f1_keywords: ["C2661"]
 helpviewer_keywords: ["C2661"]
-ms.assetid: 60021467-71cd-451b-9877-23840c69309f
 ---
 # Compiler Error C2661
 
-'function' : no overloaded function takes number parameters
+> 'function' : no overloaded function takes number parameters
+
+## Remarks
 
 Possible causes:
 
@@ -16,7 +17,9 @@ Possible causes:
 
 1. Missing function declaration.
 
-The following sample generates C2661:
+## Example
+
+The following example generates C2661:
 
 ```cpp
 // C2661.cpp

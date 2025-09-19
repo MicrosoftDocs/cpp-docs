@@ -1,17 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2537"
 title: "Compiler Error C2537"
-ms.date: "03/08/2024"
+description: "Learn more about: Compiler Error C2537"
+ms.date: 03/08/2024
 f1_keywords: ["C2537"]
 helpviewer_keywords: ["C2537"]
 ---
 # Compiler Error C2537
 
-'specifier' : illegal linkage specification
+> 'specifier' : illegal linkage specification
+
+## Remarks
 
 The linkage specifier is not supported. Only the "C" and "C++" linkage specifiers are supported.
 
-The following sample generates C2537:
+## Example
+
+The following example generates C2537:
 
 ```cpp
 // C2537.cpp

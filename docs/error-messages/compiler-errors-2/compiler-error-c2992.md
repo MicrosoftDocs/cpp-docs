@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2992"
 title: "Compiler Error C2992"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2992"
+ms.date: 11/04/2016
 f1_keywords: ["C2992"]
 helpviewer_keywords: ["C2992"]
-ms.assetid: 01b16447-43fe-4e91-9a5a-af884a166a31
 ---
 # Compiler Error C2992
 
-'class' : invalid or missing type parameter list
+> 'class' : invalid or missing type parameter list
+
+## Remarks
 
 The class is preceded by a **`template`** or **generic** keyword with missing or invalid parameters.
 
-## Example
+## Examples
 
-The following sample generates C2992:
+The following example generates C2992:
 
 ```cpp
 // C2992.cpp

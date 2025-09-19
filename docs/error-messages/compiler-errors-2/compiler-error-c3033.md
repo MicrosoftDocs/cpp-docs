@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3033"
 title: "Compiler Error C3033"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3033"
+ms.date: 11/04/2016
 f1_keywords: ["C3033"]
 helpviewer_keywords: ["C3033"]
-ms.assetid: 8628b6bb-a650-4ed2-af13-57acd2f7ddbb
 ---
 # Compiler Error C3033
 
-'var' : variable in 'clause' clause cannot have const-qualified type
+> 'var' : variable in 'clause' clause cannot have const-qualified type
+
+## Remarks
 
 Values passed to certain clauses cannot be **`const`** variables.
 
-The following sample generates C3033:
+## Example
+
+The following example generates C3033:
 
 ```cpp
 // C3033.cpp

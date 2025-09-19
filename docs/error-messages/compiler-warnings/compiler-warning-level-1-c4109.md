@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4109"
 title: "Compiler Warning (level 1) C4109"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4109"
+ms.date: 11/04/2016
 f1_keywords: ["C4109"]
 helpviewer_keywords: ["C4109"]
-ms.assetid: 9e8d95c6-e05d-47e0-bd87-78974b3cc06c
 ---
 # Compiler Warning (level 1) C4109
 
-unexpected identifier 'identifier'
+> unexpected identifier 'identifier'
+
+## Remarks
 
 The pragma containing the unexpected identifier is ignored.
 
 ## Example
+
+The following example generates C4109:
 
 ```cpp
 // C4109.cpp
