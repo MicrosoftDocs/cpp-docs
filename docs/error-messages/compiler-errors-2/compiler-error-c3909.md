@@ -7,7 +7,7 @@ helpviewer_keywords: ["C3909"]
 ---
 # Compiler Error C3909
 
-> aWinRT or managed event declaration must occur in a WinRT or managed type
+> a WinRT or managed event declaration must occur in a WinRT or managed type
 
 ## Remarks
 
