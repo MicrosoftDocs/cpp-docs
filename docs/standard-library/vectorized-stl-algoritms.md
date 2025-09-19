@@ -1,4 +1,5 @@
 ---
+description: "Vectorized STL Algorithms"
 title: "Vectorized STL Algorithms"
 ms.date: "09/19/2025"
 helpviewer_keywords: ["Vector Algorithms", "Vectorization", "SIMD"]

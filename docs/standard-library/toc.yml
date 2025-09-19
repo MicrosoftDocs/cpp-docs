@@ -1589,6 +1589,7 @@ items:
 - name: Algorithms
   href: algorithms.md
   expanded: false
+      items: 
     - name: Vectorized STL Algorithms
       href: vectorized-stl-algorithms.md
 - name: Allocators
