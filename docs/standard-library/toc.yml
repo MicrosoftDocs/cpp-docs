@@ -1588,10 +1588,8 @@ items:
   href: iterators.md
 - name: Algorithms
   href: algorithms.md
-  expanded: false
-      items: 
-    - name: Vectorized STL Algorithms
-      href: vectorized-stl-algorithms.md
+- name: Vectorized STL Algorithms
+  href: vectorized-stl-algorithms.md
 - name: Allocators
   href: allocators.md
 - name: Function objects in the C++ Standard Library
