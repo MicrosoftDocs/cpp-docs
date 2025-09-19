@@ -1,7 +1,7 @@
 ---
 title: "Platform::Exception Class"
 description: "Learn more about: Platform::Exception Class"
-ms.date: "12/30/2016"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Exception::Exception", "VCCORLIB/Platform::Exception::CreateException", "VCCORLIB/Platform::Exception::HResult", "VCCORLIB/Platform::Exception::Message"]
 helpviewer_keywords: ["Platform::Exception Class"]
@@ -86,7 +86,7 @@ It is strongly recommended to use CreateException to create a strongly-typed exc
 
 ## <a name="ctor"></a> Exception::Exception Constructor
 
-Intializes a new instance of the Exception class.
+Initializes a new instance of the Exception class.
 
 ### Syntax
 
