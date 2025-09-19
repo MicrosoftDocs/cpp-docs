@@ -11,6 +11,6 @@ helpviewer_keywords: ["M6102"]
 
 ## Remarks
 
-An operation generated a very small floating-point number, which be invalid due loss of significance. Denormal floating-point exceptions are usually masked, causing them to be trapped and operated upon.
+An operation generated a very small floating-point number, which may be invalid due to loss of significance. Denormal floating-point exceptions are usually masked, causing them to be trapped and operated upon.
 
 Program terminates with exit code 130.
