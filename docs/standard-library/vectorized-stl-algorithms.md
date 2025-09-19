@@ -28,7 +28,7 @@ For x64 and x86 targets, certain algorithms have manual vectorization implemente
 
 The manually vectorized algorithms use template meta-programming to detect the suitable element types, so they only vectorized for simple types, like standard integer types.
 
-Generally, programs either benefit in performance from this manual vectorization or are unaffected by it. In case of any problem, you can disable manual vectorization by defining `_USE_STD_VECTOR_ALGORITHMS` macro set to 0.
+Generally, programs either benefit in performance from this manual vectorization or are unaffected by it. In case of any problem, you can disable manual vectorization by defining `_USE_STD_VECTOR_ALGORITHMS` macro set to 0. It defaults to 1 on x64 and x86, which means that manually vectorized algorithms are enabled by default.
 
 The following algorithms have manual vectorization controlled via `_USE_STD_VECTOR_ALGORITHMS` macro:
  - `contains`
