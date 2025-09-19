@@ -9,15 +9,15 @@ helpviewer_keywords: ["C4389"]
 
 > '*equality-operator*' : signed/unsigned mismatch
 
-An **`==`** or **`!=`** operation involved **`signed`** and **`unsigned`** variables. This could result in a loss of data.
-
 ## Remarks
+
+An **`==`** or **`!=`** operation involved **`signed`** and **`unsigned`** variables. This could result in a loss of data.
 
 One way to fix this warning is if you cast one of the two types when you compare **`signed`** and **`unsigned`** types.
 
 ## Example
 
-The following sample generates C4389:
+The following example generates C4389:
 
 ```cpp
 // C4389.cpp
