@@ -7,18 +7,20 @@ helpviewer_keywords: ["C2548"]
 ---
 # Compiler error C2548
 
-'class::member' : missing default parameter for parameter parameter
+> 'class::member' : missing default parameter for parameter parameter
+
+## Remarks
 
 The default parameter list is missing a parameter. If you supply a default parameter anywhere in a parameter list, you must define default parameters for all subsequent parameters in the current declaration or any previous declarations within the same scope.
 
 ## Example
 
-The following sample generates C2548 for:
+The following example generates C2548 for:
 
 - `func1` because it's missing the default argument `b`.
 - `func3` because it's missing the default argument `c`.
 
-The following sample doesn't generate C2548 for:
+The following example doesn't generate C2548 for:
 
 - `func2` because all the required default arguments are supplied.
 - The second `func4` declaration because the default argument `c` is supplied in the preceding declaration and is in the same scope.

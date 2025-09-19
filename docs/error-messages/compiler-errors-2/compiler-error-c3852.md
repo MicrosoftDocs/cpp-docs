@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3852"
 title: "Compiler Error C3852"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3852"
+ms.date: 11/04/2016
 f1_keywords: ["C3852"]
 helpviewer_keywords: ["C3852"]
-ms.assetid: 194e5c5e-0dfb-414e-86db-791c11eb610c
 ---
 # Compiler Error C3852
 
-'member' having type 'type': aggregate initialization could not initialize this member
+> 'member' having type 'type': aggregate initialization could not initialize this member
+
+## Remarks
 
 An attempt was made to assign a default initialization as part of an aggregate initialization to a data member that cannot receive a default initialization in an aggregate initialization.
 
-The following samples generate C3852:
+## Example
+
+The following example generate C3852:
 
 ```cpp
 // C3852.cpp

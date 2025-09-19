@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4256"
 title: "Compiler Warning (level 4) C4256"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4256"
+ms.date: 11/04/2016
 f1_keywords: ["C4256"]
 helpviewer_keywords: ["C4256"]
-ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
 ---
 # Compiler Warning (level 4) C4256
 
-'function' : constructor for class with virtual bases has '...'; calls may not be compatible with older versions of Visual C++
+> 'function' : constructor for class with virtual bases has '...'; calls may not be compatible with older versions of Visual C++
+
+## Remarks
 
 Possible incompatibility.
 
@@ -20,7 +21,9 @@ To fix this warning,
 
 1. Make sure that all components in their project are built with the current version (including any libraries that may define or reference this class), then disable the warning using the [warning](../../preprocessor/warning.md) pragma.
 
-The following sample generates C4256:
+## Example
+
+The following example generates C4256:
 
 ```cpp
 // C4256.cpp

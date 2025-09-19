@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3217"
 title: "Compiler Error C3217"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3217"
+ms.date: 11/04/2016
 f1_keywords: ["C3217"]
 helpviewer_keywords: ["C3217"]
-ms.assetid: 99070417-c23a-4d82-bdd2-04be1a07adea
 ---
 # Compiler Error C3217
 
-'param' : generic parameter cannot be constrained in this declaration
+> 'param' : generic parameter cannot be constrained in this declaration
+
+## Remarks
 
 A constraint was ill formed; the constraint generic parameter must agree with the generic class template parameter.
 
-The following sample generates C3217:
+## Example
+
+The following example generates C3217:
 
 ```cpp
 // C3217.cpp
@@ -27,7 +30,7 @@ ref class C {
 };
 ```
 
-The following sample demonstrates a possible resolution:
+The following example demonstrates a possible resolution:
 
 ```cpp
 // C3217b.cpp

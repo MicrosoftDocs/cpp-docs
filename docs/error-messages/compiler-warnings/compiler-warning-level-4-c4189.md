@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 3 and level 4) C4189"
 title: "Compiler Warning (level 3 and level 4) C4189"
+description: "Learn more about: Compiler Warning (level 3 and level 4) C4189"
 ms.date: 05/03/2021
 f1_keywords: ["C4189"]
 helpviewer_keywords: ["C4189"]
@@ -9,11 +9,13 @@ helpviewer_keywords: ["C4189"]
 
 > '*identifier*' : local variable is initialized but not referenced
 
+## Remarks
+
 A variable is declared and initialized but not used.
 
 ## Examples
 
-The following sample generates C4189:
+The following example generates C4189:
 
 ```cpp
 // C4189.cpp

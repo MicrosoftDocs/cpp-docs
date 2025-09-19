@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3509"
 title: "Compiler Error C3509"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3509"
+ms.date: 11/04/2016
 f1_keywords: ["C3509"]
 helpviewer_keywords: ["C3509"]
-ms.assetid: cc2db39a-2f98-4e40-b803-496e585494e6
 ---
 # Compiler Error C3509
 
-'type': invalid Automation return type; when a parameter is marked 'retval', the return type must be 'void', 'HRESULT' or 'SCODE'
+> 'type': invalid Automation return type; when a parameter is marked 'retval', the return type must be 'void', 'HRESULT' or 'SCODE'
+
+## Remarks
 
 A method in a COM interface must return either void or an HRESULT.
 
-The following sample generates C3509:
+## Example
+
+The following example generates C3509:
 
 ```cpp
 // C3509.cpp

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3857"
 title: "Compiler Error C3857"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3857"
+ms.date: 11/04/2016
 f1_keywords: ["C3857"]
 helpviewer_keywords: ["C3857"]
-ms.assetid: 9f746d1e-9708-4945-bc29-3150d5371d3c
 ---
 # Compiler Error C3857
 
-'type': multiple type parameter lists are not allowed
+> 'type': multiple type parameter lists are not allowed
+
+## Remarks
 
 More than one template or generic was specified for the same type, which is not allowed.
 
-The following sample generates C3857:
+## Examples
+
+The following example generates C3857:
 
 ```cpp
 // C3857.cpp

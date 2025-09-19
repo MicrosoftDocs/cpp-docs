@@ -7,7 +7,9 @@ helpviewer_keywords: ["C3068"]
 ---
 # Compiler Error C3068
 
-'function' : a 'naked' function cannot contain objects that would require unwinding if a C++ exception occurred
+> 'function' : a 'naked' function cannot contain objects that would require unwinding if a C++ exception occurred
+
+## Remarks
 
 The compiler was unable to perform stack unwinding on a [naked](../../cpp/naked-cpp.md) function that threw an exception because a temporary object was created in the function and C++ exception handling ([/EHsc](../../build/reference/eh-exception-handling-model.md)) was specified.
 
@@ -25,7 +27,7 @@ When an exception is thrown, compiler generated code, called the prolog and epil
 
 ## Example
 
-The following sample generates C3068:
+The following example generates C3068:
 
 ```cpp
 // C3068.cpp

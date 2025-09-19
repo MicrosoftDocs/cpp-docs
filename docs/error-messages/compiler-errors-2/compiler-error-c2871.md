@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2871"
 title: "Compiler Error C2871"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2871"
+ms.date: 11/04/2016
 f1_keywords: ["C2871"]
 helpviewer_keywords: ["C2871"]
-ms.assetid: 44aeb84d-61f0-45e0-8dad-22a3cd46b7f8
 ---
 # Compiler Error C2871
 
-'name' : a namespace with this name does not exist
+> 'name' : a namespace with this name does not exist
+
+## Remarks
 
 This error will occur when you pass an identifier that is not a namespace to a [using](../../cpp/namespaces-cpp.md#using_directives) directive.
 
 ## Example
 
-The following sample generates C2871:
+The following example generates C2871:
 
 ```cpp
 // C2871.cpp

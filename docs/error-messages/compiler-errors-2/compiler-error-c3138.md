@@ -1,16 +1,19 @@
 ---
-description: "Learn more about: Compiler Error C3138"
 title: "Compiler Error C3138"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3138"
+ms.date: 11/04/2016
 f1_keywords: ["C3138"]
 helpviewer_keywords: ["C3138"]
-ms.assetid: 364ee9e8-9358-410e-bd35-9c4a226a3753
 ---
 # Compiler Error C3138
 
-'interface' : a 'attribute' interface must inherit from IDispatch, or from an interface that inherits from IDispatch
+> 'interface' : a 'attribute' interface must inherit from IDispatch, or from an interface that inherits from IDispatch
+
+## Remarks
 
 An interface with the [dual](../../windows/attributes/dual.md) or [dispinterface](../../windows/attributes/dispinterface.md) attributes does not have `IDispatch` as a direct or indirect base interface.
+
+## Example
 
 The following example generates C3138:
 

@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4156"
 title: "Compiler Warning (level 2) C4156"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 2) C4156"
+ms.date: 11/04/2016
 f1_keywords: ["C4156"]
 helpviewer_keywords: ["C4156"]
-ms.assetid: 9adf3acb-c0fe-42a8-a4db-5822b1493f77
 ---
 # Compiler Warning (level 2) C4156
 
-deletion of an array expression without using the array form of 'delete'; array form substituted
+> deletion of an array expression without using the array form of 'delete'; array form substituted
+
+## Remarks
 
 The non-array form of **`delete`** cannot delete an array. The compiler translated **`delete`** to the array form.
 
 This warning occurs only under Microsoft extensions (/Ze).
 
 ## Example
+
+The following example generates C4156:
 
 ```cpp
 // C4156.cpp
