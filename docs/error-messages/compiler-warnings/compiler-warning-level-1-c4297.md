@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4297"
 title: "Compiler Warning (level 1) C4297"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4297"
+ms.date: 11/04/2016
 f1_keywords: ["C4297"]
 helpviewer_keywords: ["C4297"]
-ms.assetid: ba92fcdc-9f70-4f60-abe6-281f9582ca59
 ---
 # Compiler Warning (level 1) C4297
 
-'function' : function assumed not to throw an exception but does
+> 'function' : function assumed not to throw an exception but does
+
+## Remarks
 
 A function declaration contains a (possibly implicit) **`noexcept`** specifier, an empty **`throw`** exception specifier, or a [__declspec(nothrow)](../../cpp/nothrow-cpp.md) attribute, and the definition contains one or more [throw](../../cpp/try-throw-and-catch-statements-cpp.md) statements. To resolve C4297, do not attempt to throw exceptions in functions that are declared `__declspec(nothrow)`, `noexcept(true)` or `throw()`. Alternatively, remove the **`noexcept`**, `throw()`, or `__declspec(nothrow)` specification.
 
@@ -18,7 +19,9 @@ For more information on exception specifications, see [Exception Specifications 
 
 This warning is also generated for __declspec([dllexport](../../cpp/dllexport-dllimport.md)) functions marked extern "C", even if they are C++ functions.
 
-The following sample generates C4297:
+## Example
+
+The following example generates C4297:
 
 ```cpp
 // C4297.cpp
