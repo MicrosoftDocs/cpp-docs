@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Expression Evaluator Error CXX0065"
 title: "Expression Evaluator Error CXX0065"
-ms.date: "11/04/2016"
+description: "Learn more about: Expression Evaluator Error CXX0065"
+ms.date: 11/04/2016
 f1_keywords: ["CXX0065"]
 helpviewer_keywords: ["CAN0065", "CXX0065"]
-ms.assetid: aac68f87-0b90-4c19-afa6-1c587625a5fd
 ---
 # Expression Evaluator Error CXX0065
 
-variable needs stack frame
+> variable needs stack frame
+
+## Remarks
 
 An expression contained a variable that exists within the current scope but hasn't been created yet.
 
