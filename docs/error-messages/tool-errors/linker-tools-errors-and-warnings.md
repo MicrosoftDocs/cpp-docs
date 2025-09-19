@@ -68,7 +68,7 @@ The linker tools LINK, LIB, DUMPBIN, and EDITBIN share a common executable that 
 | [Linker Tools Error LNK1313](linker-tools-error-lnk1313.md) | ijw/native module detected; cannot link with pure modules |
 | [Linker Tools Error LNK1314](linker-tools-error-lnk1314.md) | corrupt or invalid COFF symbol table (undefined static or label symbol) |
 | [Linker Tools Error LNK1318](linker-tools-error-lnk1318.md) | Unexpected PDB error; *cause* '*details*' |
-| [Linker Tools Error LNK1332](linker-tools-error-lnk1332.md) | detected\<count> Windows Runtime types imported in one module and defined in another module |
+| [Linker Tools Error LNK1332](linker-tools-error-lnk1332.md) | detected \<count> Windows Runtime types imported in one module and defined in another module |
 | [Linker Tools Error LNK1352](linker-tools-error-lnk1352.md) | '*section_name_1*' and '*section_name_2*' cannot be merged into different sections |
 | [Linker Tools Error LNK1561](linker-tools-error-lnk1561.md) | entry point must be defined |
 | [Linker Tools Error LNK2001](linker-tools-error-lnk2001.md) | unresolved external symbol "*symbol*" |
@@ -88,7 +88,7 @@ The linker tools LINK, LIB, DUMPBIN, and EDITBIN share a common executable that 
 | [Linker Tools Error LNK2031](linker-tools-error-lnk2031.md) | unable to generate p/invoke for "*function_declaration*" *decorated_name*; calling convention missing in metadata |
 | [Linker Tools Error LNK2033](linker-tools-error-lnk2033.md) | unresolved typeref token (token) for 'type' |
 | [Linker Tools Error LNK2038](linker-tools-error-lnk2038.md) | mismatch detected for '*name*': value '*value_1*' doesn't match value '*value_2*' in *filename.obj* |
-| [Linker Tools Error LNK2039](linker-tools-error-lnk2039.md) | importing ref class '\<type>' that is defined in another.obj; it should be either imported or defined, but not both |
+| [Linker Tools Error LNK2039](linker-tools-error-lnk2039.md) | importing ref class \<type> that is defined in another.obj; it should be either imported or defined, but not both |
 
 ## Linker tools warnings
 
