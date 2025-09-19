@@ -17,7 +17,7 @@ To resolve this warning, compile in a .c file (invoke the C compiler).  If you m
 
 ## Example
 
-The following example generates C4162
+The following example generates C4162:
 
 ```cpp
 // C4162.cpp
