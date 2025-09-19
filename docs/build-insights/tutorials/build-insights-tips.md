@@ -73,7 +73,7 @@ To see a short description for the tabs in the Build Insights window, along with
 
 ## See also
 
-[Build Insights in Visual Studio video - Pure Virtual C++ 2023](/events/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
+[Build Insights in Visual Studio video - Pure Virtual C++ 2023](/shows/pure-virtual-cpp-2023/build-insights-in-visual-studio)\
 [Improving code generation time with C++ Build Insights](https://devblogs.microsoft.com/cppblog/improving-code-generation-time-with-cpp-build-insights)\
 [Troubleshoot header file impact on build time](build-insights-included-files-view.md)\
 [Tutorial: Troubleshoot function inlining on build time](build-insights-function-view.md)
