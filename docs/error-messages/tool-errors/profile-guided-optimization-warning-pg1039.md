@@ -10,4 +10,6 @@ ms.assetid: a67dfd66-b610-4d78-9658-2bcf7a506b9f
 
 > Failed waiting for quiet time to sweep.
 
+## Remarks
+
 The application did not allow [pgosweep](../../build/pgosweep.md) to run.  If possible, run pgosweep when the application is in an idle state.
