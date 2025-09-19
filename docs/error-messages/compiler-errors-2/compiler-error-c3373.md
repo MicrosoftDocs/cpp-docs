@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3373"
 title: "Compiler Error C3373"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3373"
+ms.date: 11/04/2016
 f1_keywords: ["C3373"]
 helpviewer_keywords: ["C3373"]
-ms.assetid: 6e7586c3-1a15-4773-ad20-f90090a400dc
 ---
 # Compiler Error C3373
 
-attribute 'attribute' takes no arguments except on a coclass
+> attribute 'attribute' takes no arguments except on a coclass
+
+## Remarks
 
 Some attributes can be applied to more than one C++ construct, but arguments to the attribute may only be allowed on some constructs.
 
-The following sample generates C3373:
+## Example
+
+The following example generates C3373:
 
 ```cpp
 // C3373.cpp
