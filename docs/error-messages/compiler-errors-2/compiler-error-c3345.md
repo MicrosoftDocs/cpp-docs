@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3345"
 title: "Compiler Error C3345"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3345"
+ms.date: 11/04/2016
 f1_keywords: ["C3345"]
 helpviewer_keywords: ["C3345"]
-ms.assetid: 1dda4c79-73bb-441b-b939-746154c3afba
 ---
 # Compiler Error C3345
 
-'identifier': invalid identifier for module name
+> 'identifier': invalid identifier for module name
+
+## Remarks
 
 The *identifier* for a module contains one or more unacceptable characters. An identifier is valid if the first character is an alphabetical, underscore, or high ANSI (0x80-FF) character, and any subsequent character is an alphanumeric, underscore, or high ANSI character.
 
