@@ -8,7 +8,7 @@ ms.assetid: d69548a8-0efb-44e1-90b7-b27636a4b575
 ---
 # Linker Tools Error LNK1166
 
-cannot adjust code at offset=offset, va=value
+> cannot adjust code at offset=offset, va=value
 
 LINK was unable to pad the code as required.
 

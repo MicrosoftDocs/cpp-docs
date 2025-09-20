@@ -8,7 +8,7 @@ ms.assetid: 45febf16-d9e1-42db-af91-532e2717fd6a
 ---
 # Linker Tools Error LNK1158
 
-cannot run 'filename'
+> cannot run 'filename'
 
 The given executable file called by [LINK](../../build/reference/linking.md) is not in the directory that contains LINK nor in a directory specified in the PATH environment variable.
 

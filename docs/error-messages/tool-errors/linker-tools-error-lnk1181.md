@@ -8,7 +8,7 @@ ms.assetid: 984b0db6-e331-4284-b2a7-a212fe96c486
 ---
 # Linker Tools Error LNK1181
 
-cannot open input file 'filename'
+> cannot open input file 'filename'
 
 The linker could not find `filename` because it does not exist or the path was not found.
 

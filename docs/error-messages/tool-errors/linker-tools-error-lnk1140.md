@@ -8,7 +8,7 @@ ms.assetid: 468d7651-a7cd-47b9-aead-5bb2fab56121
 ---
 # Linker Tools Error LNK1140
 
-too many modules for program database; link with /PDB:NONE
+> too many modules for program database; link with /PDB:NONE
 
 The project contains more than 4096 modules.
 

@@ -8,7 +8,7 @@ ms.assetid: 55771145-915e-4006-ac6c-ac702041eb2f
 ---
 # Linker Tools Error LNK1200
 
-error reading program database 'filename'
+> error reading program database 'filename'
 
 The program database (PDB) could not be read.
 

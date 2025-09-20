@@ -8,7 +8,7 @@ ms.assetid: 528f7e65-04be-4966-b8af-9276837c7cda
 ---
 # Linker Tools Error LNK1106
 
-invalid file or disk full: cannot seek to location
+> invalid file or disk full: cannot seek to location
 
 The tool could not read or write to `location` in a memory-mapped file.
 

@@ -8,7 +8,7 @@ ms.assetid: 97ead151-fd99-46fe-9a1d-7e84dc0b8cc8
 ---
 # Linker Tools Error LNK1168
 
-cannot open filename for writing
+> cannot open filename for writing
 
 The linker can't write to `filename`. The file may be in use and its file handle locked by another process, or you may not have write permission for the file, or for the directory or network share it is located in. This error is often caused by a transient condition—for example, a lock held by an anti-virus program, a file search indexing process, or a delay in releasing a lock held by the Visual Studio build system.
 

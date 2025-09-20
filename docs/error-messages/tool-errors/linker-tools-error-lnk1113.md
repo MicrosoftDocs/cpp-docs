@@ -8,7 +8,7 @@ ms.assetid: 269ff166-b143-48e9-bdf7-db6a0db59fe4
 ---
 # Linker Tools Error LNK1113
 
-invalid machine type type
+> invalid machine type type
 
 The machine type specified in the object header is not valid.
 

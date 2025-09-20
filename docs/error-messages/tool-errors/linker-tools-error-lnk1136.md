@@ -8,7 +8,7 @@ ms.assetid: 40c6d909-eb3f-4045-a0fc-4caa2f6db506
 ---
 # Linker Tools Error LNK1136
 
-invalid or corrupt file
+> invalid or corrupt file
 
 The input file either has a corrupt header or is zero size or abnormally small.
 

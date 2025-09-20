@@ -8,7 +8,7 @@ ms.assetid: 83b78606-6dd3-43a7-88e2-152f5359cbd8
 ---
 # Linker Tools Error LNK1141
 
-failure during build of exports file
+> failure during build of exports file
 
 [LINK](../../build/reference/linking.md) could not build the exports (.exp) file.
 

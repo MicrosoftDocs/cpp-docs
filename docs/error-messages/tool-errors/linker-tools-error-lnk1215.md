@@ -8,7 +8,7 @@ ms.assetid: 0774d8e6-f0c1-4efb-8723-7e1be6863d81
 ---
 # Linker Tools Error LNK1215
 
-metadata operation failed (HRESULT) : error
+> metadata operation failed (HRESULT) : error
 
 The linker received an error from the .NET runtime while attempting to do a metadata update through the .NET runtime.
 

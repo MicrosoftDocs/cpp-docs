@@ -8,7 +8,7 @@ ms.assetid: c8e9bc54-6a71-471c-899e-6f98122ee3c4
 ---
 # Linker Tools Error LNK1103
 
-debugging information corrupt; recompile module
+> debugging information corrupt; recompile module
 
 This error can be caused because the compilation was terminated before a valid object file was created.
 

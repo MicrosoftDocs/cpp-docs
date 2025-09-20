@@ -8,7 +8,7 @@ ms.assetid: 4b1536d7-0d3d-4f29-a9c1-6fa5cf6cb665
 ---
 # Linker Tools Error LNK1179
 
-invalid or corrupt file: duplicate COMDAT 'filename'
+> invalid or corrupt file: duplicate COMDAT 'filename'
 
 An object module contains two or more COMDATs with the same name.
 

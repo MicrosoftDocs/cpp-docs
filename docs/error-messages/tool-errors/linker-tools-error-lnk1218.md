@@ -8,7 +8,7 @@ ms.assetid: bf599350-be03-4344-be43-91e29c4f1556
 ---
 # Linker Tools Error LNK1218
 
-warning treated as error; no output file generated
+> warning treated as error; no output file generated
 
 When you link with **/WX**, any linker warnings will be treated as errors, and no output file will be created.
 
