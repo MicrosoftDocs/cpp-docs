@@ -10,7 +10,7 @@ Under certain conditions, STL algorithms execute not element-wise, but multiple 
 element-wise approach is called vectorization. An implementation that is not vectorized is called scalar.
 
 The conditions for vectorization are:
- - The container or range is contigous. `array`, `vector`, and `basic_string` are contigous containers, `span` and `basic_string_view` provide contiguous ranges.
+ - The container or range is contiguous. `array`, `vector`, and `basic_string` are contiguous containers, `span` and `basic_string_view` provide contiguous ranges.
  - There are such SIMD instructions available for the target platform that implement the particular algorithm on particular element types efficiently. Often this is true for plain types (like built-in integers) and simple operations.
  - Either of the following:
      - The compiler is capable of emitting vectorized machine code for an implementation written as scalar code (auto-vectorization)
@@ -70,7 +70,7 @@ In addition to algorithms, the macro controls the manual vectorization of:
 ## Manually vectorized algorithms for floating point types
 
 Vectorization of floating point types is connected with extra difficulties:
- - For floating point results, the order of operations may matter. Some reordering may yield a different result, whether more precise, or less precise. Vecotization may need operations reordering, so it may affect that.
+ - For floating point results, the order of operations may matter. Some reordering may yield a different result, whether more precise, or less precise. Vectotization may need operations reordering, so it may affect that.
  - Floating point types may contain NaN values, which don't behave transitively while comparing.
  - Floating point operations may raise exceptions.
 
