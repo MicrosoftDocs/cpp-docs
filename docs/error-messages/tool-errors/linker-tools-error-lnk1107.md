@@ -9,9 +9,9 @@ helpviewer_keywords: ["LNK1107"]
 
 > invalid or corrupt file: cannot read at location *address*
 
-The tool couldn't read the file. The file may be corrupt, or have an unexpected file type.
-
 ## Remarks
+
+The tool couldn't read the file. The file may be corrupt, or have an unexpected file type.
 
 LNK1107 can occur if a file passed to the linker or related tools is corrupt. To resolve this issue, rebuild the file.
 

@@ -10,6 +10,8 @@ ms.assetid: 4b1536d7-0d3d-4f29-a9c1-6fa5cf6cb665
 
 > invalid or corrupt file: duplicate COMDAT 'filename'
 
+## Remarks
+
 An object module contains two or more COMDATs with the same name.
 
 This error can be caused by using [/H](../../build/reference/h-restrict-length-of-external-names.md), which limits the length of external names, and [/Gy](../../build/reference/gy-enable-function-level-linking.md), which packages functions in COMDATs.

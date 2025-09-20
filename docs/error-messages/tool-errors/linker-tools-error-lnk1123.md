@@ -9,6 +9,8 @@ helpviewer_keywords: ["LNK1123"]
 
 > failure during conversion to COFF: file invalid or corrupt
 
+## Remarks
+
 Input files must have the Common Object File Format (COFF) format. If an input file is not COFF, the linker automatically tries to convert 32-bit OMF objects to COFF, or runs CVTRES.EXE to convert resource files. This message indicates that the linker could not convert the file. This can also occur when using an incompatible version of CVTRES.EXE from another installation of Visual Studio, the Windows Development Kit, or .NET Framework.
 
 > [!NOTE]

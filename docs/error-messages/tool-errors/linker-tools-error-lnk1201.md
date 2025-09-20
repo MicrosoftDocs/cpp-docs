@@ -10,6 +10,8 @@ ms.assetid: 64c3f496-a428-4b54-981e-faa82ef9c8a1
 
 > error writing to program database 'filename'; check for insufficient disk space, invalid path, or insufficient privilege
 
+## Remarks
+
 LINK could not write to the program database (PDB) for the output file.
 
 ### To fix by checking the following possible causes

@@ -10,6 +10,8 @@ ms.assetid: d69548a8-0efb-44e1-90b7-b27636a4b575
 
 > cannot adjust code at offset=offset, va=value
 
+## Remarks
+
 LINK was unable to pad the code as required.
 
 Certain instructions are not allowed to cross page boundaries on some processors. LINK attempts to add pads to correct this situation. In this case, LINK could not work around the problem.

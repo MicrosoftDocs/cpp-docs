@@ -10,6 +10,8 @@ ms.assetid: 5dc6b634-d142-4448-b5ea-48e8fb10c10a
 
 > invalid or corrupt file: no symbol for COMDAT section number
 
+## Remarks
+
 This error can be caused if the object file is corrupt.
 
 Rebuild the file.

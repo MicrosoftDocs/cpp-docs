@@ -10,6 +10,8 @@ ms.assetid: 56aa7d36-921f-4daf-b44d-cca0d4fb1b51
 
 > *number* unresolved externals
 
+## Remarks
+
 Error LNK1120 reports the number of [unresolved external symbol](linker-tools-error-lnk2001.md#what-is-an-unresolved-external-symbol) errors in the current link.
 
 Each unresolved external symbol first gets reported by a [LNK2001](linker-tools-error-lnk2001.md) or [LNK2019](linker-tools-error-lnk2019.md) error. The LNK1120 message comes last, and shows the unresolved symbol error count.

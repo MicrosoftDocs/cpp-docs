@@ -10,4 +10,6 @@ ms.assetid: 45404700-1420-4f24-97e1-efb7252ffd8f
 
 > library is corrupt
 
+## Remarks
+
 The library file is corrupt. Rebuild the library.

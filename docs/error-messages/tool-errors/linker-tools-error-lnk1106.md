@@ -10,6 +10,8 @@ ms.assetid: 528f7e65-04be-4966-b8af-9276837c7cda
 
 > invalid file or disk full: cannot seek to location
 
+## Remarks
+
 The tool could not read or write to `location` in a memory-mapped file.
 
 ### To fix by checking the following possible causes

@@ -10,6 +10,8 @@ ms.assetid: 607400eb-4180-4892-817f-eedfa628af61
 
 > precompiled type information not found; '*filename*' not linked or overwritten
 
+## Remarks
+
 The *filename* object file, compiled by using [/Yc](../../build/reference/yc-create-precompiled-header-file.md), was not specified in the LINK command or was overwritten.
 
 If you are creating a debug library that uses precompiled headers and if you specify **/Yc** and [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md), Visual C++ generates a precompiled object file that contains debug information. The error occurs only when you store the precompiled object file in a library, use the library to build an executable image, and the object files that are referenced have no transitive references to any of the functions the precompiled object file defines.

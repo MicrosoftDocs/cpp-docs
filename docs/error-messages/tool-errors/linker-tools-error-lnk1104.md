@@ -10,6 +10,8 @@ ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
 
 > cannot open file '*filename*'
 
+## Remarks
+
 This error is reported when the linker fails to open a file, either for reading or for writing. The two most common causes of the issue are:
 
 - your program is already running or is loaded in the debugger, and

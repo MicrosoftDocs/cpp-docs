@@ -10,6 +10,8 @@ ms.assetid: 984b0db6-e331-4284-b2a7-a212fe96c486
 
 > cannot open input file 'filename'
 
+## Remarks
+
 The linker could not find `filename` because it does not exist or the path was not found.
 
 Some common causes for error LNK1181 include:

@@ -10,4 +10,6 @@ ms.assetid: d0c6859b-85aa-45cc-9f5f-fc1f7070ab5a
 
 > invalid or corrupt import object: unknown version
 
+## Remarks
+
 The import library is corrupted. Rebuild the library.

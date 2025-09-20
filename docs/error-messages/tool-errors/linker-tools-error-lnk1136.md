@@ -10,6 +10,8 @@ ms.assetid: 40c6d909-eb3f-4045-a0fc-4caa2f6db506
 
 > invalid or corrupt file
 
+## Remarks
+
 The input file either has a corrupt header or is zero size or abnormally small.
 
 LNK1136 may also be caused if the file was incorrectly specified as an additional dependency.
