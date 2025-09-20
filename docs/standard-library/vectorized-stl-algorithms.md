@@ -49,10 +49,15 @@ The following algorithms have manual vectorization controlled via `_USE_STD_VECT
  - `unique`
  - `unique_copy`
  - `reverse`
+ - `reverse_copy`
  - `rotate`
  - `is_sorted` 
  - `is_sorted_until`
+ - `max_element`
+ - `min_element`
  - `minmax_element`
+ - `max`
+ - `min`
  - `minmax`
  - `lexicographical_compare`
  - `lexicographical_compare_three_way`
@@ -74,7 +79,7 @@ Vectorization of floating point types is connected with extra difficulties:
  - Floating point types may contain NaN values, which don't behave transitively while comparing.
  - Floating point operations may raise exceptions.
 
-The STL deals with the first two difficulties safely. Only `minmax_element`, `minmax`, `is_sorted`, and `is_sorted_until` are manually vectorized. These algorithms:
+The STL deals with the first two difficulties safely. Only `max_element`, `min_element`, `minmax_element`, `max`, `min`, `minmax`, `is_sorted`, and `is_sorted_until` are manually vectorized. These algorithms:
  - Do not compute new floating point values, only compare the existing values, so different order does not affect precision.
  - As sorting algorithms, require transitivity of comparisons, so NaNs are not allowed as elements.
 
