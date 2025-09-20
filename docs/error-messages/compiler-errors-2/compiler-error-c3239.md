@@ -15,7 +15,7 @@ The compiler encountered an invalid type.
 
 ## Example
 
-The following example generates C3229:
+The following example generates C3239:
 
 ```cpp
 // C3239.cpp
