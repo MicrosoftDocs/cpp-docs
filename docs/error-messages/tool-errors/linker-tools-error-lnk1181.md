@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1181"
 title: "Linker Tools Error LNK1181"
-ms.date: "08/22/2018"
+description: "Learn more about: Linker Tools Error LNK1181"
+ms.date: 08/22/2018
 f1_keywords: ["LNK1181"]
 helpviewer_keywords: ["LNK1181"]
-ms.assetid: 984b0db6-e331-4284-b2a7-a212fe96c486
 ---
 # Linker Tools Error LNK1181
 

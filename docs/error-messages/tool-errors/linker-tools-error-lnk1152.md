@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1152"
 title: "Linker Tools Error LNK1152"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1152"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1152"]
 helpviewer_keywords: ["LNK1152"]
-ms.assetid: 2523b61a-1359-4612-9c16-7d1f705f32e6
 ---
 # Linker Tools Error LNK1152
 

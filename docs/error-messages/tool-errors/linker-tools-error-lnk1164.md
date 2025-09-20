@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1164"
 title: "Linker Tools Error LNK1164"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1164"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1164"]
 helpviewer_keywords: ["LNK1164"]
-ms.assetid: da89765c-affa-4f88-b170-6d6b19a577cf
 ---
 # Linker Tools Error LNK1164
 

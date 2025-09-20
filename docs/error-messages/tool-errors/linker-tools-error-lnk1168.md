@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1168"
 title: "Linker Tools Error LNK1168"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1168"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1168"]
 helpviewer_keywords: ["LNK1168"]
-ms.assetid: 97ead151-fd99-46fe-9a1d-7e84dc0b8cc8
 ---
 # Linker Tools Error LNK1168
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1166"
 title: "Linker Tools Error LNK1166"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1166"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1166"]
 helpviewer_keywords: ["LNK1166"]
-ms.assetid: d69548a8-0efb-44e1-90b7-b27636a4b575
 ---
 # Linker Tools Error LNK1166
 

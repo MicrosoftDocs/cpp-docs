@@ -1,10 +1,9 @@
 ---
 title: "Linker tools error LNK1120"
 description: "Describes the LNK1120 linker error, which reports the number of unresolved external symbol errors in the link."
-ms.date: "10/31/2019"
+ms.date: 10/31/2019
 f1_keywords: ["LNK1120"]
 helpviewer_keywords: ["LNK1120"]
-ms.assetid: 56aa7d36-921f-4daf-b44d-cca0d4fb1b51
 ---
 # Linker tools error LNK1120
 

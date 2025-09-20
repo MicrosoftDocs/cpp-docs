@@ -1,10 +1,9 @@
 ---
 title: "Linker Tools Error LNK1104"
 description: "Describes the Microsoft C and C++ (MSVC) linker error LNK1104, its causes, and possible solutions."
-ms.date: "12/13/2019"
+ms.date: 12/13/2019
 f1_keywords: ["LNK1104"]
 helpviewer_keywords: ["LNK1104"]
-ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
 ---
 # Linker Tools Error LNK1104
 

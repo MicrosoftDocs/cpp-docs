@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1188"
 title: "Linker Tools Error LNK1188"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1188"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1188"]
 helpviewer_keywords: ["LNK1188"]
-ms.assetid: 4af574b0-5b41-4580-9a37-52a634add995
 ---
 # Linker Tools Error LNK1188
 

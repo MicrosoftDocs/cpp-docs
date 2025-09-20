@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1123"
 title: "Linker Tools Error LNK1123"
-ms.date: "12/29/2017"
+description: "Learn more about: Linker Tools Error LNK1123"
+ms.date: 12/29/2017
 f1_keywords: ["LNK1123"]
 helpviewer_keywords: ["LNK1123"]
 ---

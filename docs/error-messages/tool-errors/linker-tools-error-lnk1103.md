@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1103"
 title: "Linker Tools Error LNK1103"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1103"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1103"]
 helpviewer_keywords: ["LNK1103"]
-ms.assetid: c8e9bc54-6a71-471c-899e-6f98122ee3c4
 ---
 # Linker Tools Error LNK1103
 

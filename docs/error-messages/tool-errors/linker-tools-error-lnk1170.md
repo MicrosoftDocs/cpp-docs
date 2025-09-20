@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker tools Error LNK1170"
 title: "Linker tools Error LNK1170"
+description: "Learn more about: Linker tools Error LNK1170"
 ms.date: 05/17/2022
 f1_keywords: ["LNK1170"]
 helpviewer_keywords: ["LNK1170"]
-ms.assetid: e079d518-f184-48cd-8b38-969bf137af54
 ---
 # Linker tools Error LNK1170
 

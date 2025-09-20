@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1218"
 title: "Linker Tools Error LNK1218"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1218"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1218"]
 helpviewer_keywords: ["LNK1218"]
-ms.assetid: bf599350-be03-4344-be43-91e29c4f1556
 ---
 # Linker Tools Error LNK1218
 

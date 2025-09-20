@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1179"
 title: "Linker Tools Error LNK1179"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1179"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1179"]
 helpviewer_keywords: ["LNK1179"]
-ms.assetid: 4b1536d7-0d3d-4f29-a9c1-6fa5cf6cb665
 ---
 # Linker Tools Error LNK1179
 

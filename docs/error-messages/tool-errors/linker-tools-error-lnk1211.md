@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1211"
 title: "Linker Tools Error LNK1211"
-ms.date: "12/05/2017"
+description: "Learn more about: Linker Tools Error LNK1211"
+ms.date: 12/05/2017
 f1_keywords: ["LNK1211"]
 helpviewer_keywords: ["LNK1211"]
-ms.assetid: 607400eb-4180-4892-817f-eedfa628af61
 ---
 # Linker Tools Error LNK1211
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Linker tools error LNK1107"
 title: "Linker tools error LNK1107"
+description: "Learn more about: Linker tools error LNK1107"
 ms.date: 12/10/2021
 f1_keywords: ["LNK1107"]
 helpviewer_keywords: ["LNK1107"]

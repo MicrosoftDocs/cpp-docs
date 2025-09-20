@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1136"
 title: "Linker Tools Error LNK1136"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1136"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1136"]
 helpviewer_keywords: ["LNK1136"]
-ms.assetid: 40c6d909-eb3f-4045-a0fc-4caa2f6db506
 ---
 # Linker Tools Error LNK1136
 

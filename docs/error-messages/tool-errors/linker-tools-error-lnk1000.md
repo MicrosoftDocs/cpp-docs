@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1000"
 title: "Linker Tools Error LNK1000"
-ms.date: "06/18/2018"
+description: "Learn more about: Linker Tools Error LNK1000"
+ms.date: 06/18/2018
 f1_keywords: ["LNK1000"]
 helpviewer_keywords: ["LNK1000"]
-ms.assetid: 86421b9a-460a-4285-8dce-9b8257d78122
 ---
 # Linker Tools Error LNK1000
 
