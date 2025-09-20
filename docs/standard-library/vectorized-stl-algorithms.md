@@ -1,8 +1,9 @@
 ---
-description: "Vectorized STL Algorithms"
 title: "Vectorized STL Algorithms"
-ms.date: "09/19/2025"
-helpviewer_keywords: ["Vector Algorithms", "Vectorization", "SIMD"]
+description: "Learn more about: Vectorized STL Algorithms"
+ms.date: 09/19/2025
+f1_keywords: ["_USE_STD_VECTOR_ALGORITHMS", "_USE_STD_VECTOR_FLOATING_ALGORITHMS"]
+helpviewer_keywords: ["_USE_STD_VECTOR_ALGORITHMS", "_USE_STD_VECTOR_FLOATING_ALGORITHMS", "Vector Algorithms", "Vectorization", "SIMD"]
 ---
 # Vectorized STL Algorithms
 
