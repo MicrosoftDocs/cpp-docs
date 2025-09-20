@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Resource Compiler Fatal Error RC1120"
 title: "Resource Compiler Fatal Error RC1120"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Fatal Error RC1120"
+ms.date: 11/04/2016
 f1_keywords: ["RC1120"]
 helpviewer_keywords: ["RC1120"]
-ms.assetid: 4e462931-e42e-42e3-8bfc-847677194286
 ---
 # Resource Compiler Fatal Error RC1120
 
-out of memory, needed number bytes
+> out of memory, needed number bytes
+
+## Remarks
 
 The Resource Compiler ran out of storage for items that it stores in its heap. Usually this is the result of having too many symbols.
 
