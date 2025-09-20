@@ -28,7 +28,7 @@ public ref class GR {};
 public ref class GR2 {};
 ```
 
-The following example generates C3466.
+The following example generates C3469.
 
 ```cpp
 // C3469_b.cpp
