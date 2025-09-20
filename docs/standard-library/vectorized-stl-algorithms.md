@@ -7,8 +7,7 @@ helpviewer_keywords: ["_USE_STD_VECTOR_ALGORITHMS", "_USE_STD_VECTOR_FLOATING_AL
 ---
 # Vectorized STL Algorithms
 
-Under certain conditions, STL algorithms execute not element-wise, but multiple element at once on a single CPU core. This is possible due to SIMD (single instruction, multiple data). The use of such approach instead of 
-element-wise approach is called vectorization. An implementation that is not vectorized is called scalar.
+Under certain conditions, STL algorithms execute not element-wise, but multiple element at once on a single CPU core. This is possible due to SIMD (single instruction, multiple data). The use of such approach instead of element-wise approach is called vectorization. An implementation that is not vectorized is called scalar.
 
 The conditions for vectorization are:
  - The container or range is contiguous. `array`, `vector`, and `basic_string` are contiguous containers, `span` and `basic_string_view` provide contiguous ranges.
@@ -52,7 +51,7 @@ The following algorithms have manual vectorization controlled via `_USE_STD_VECT
  - `reverse`
  - `reverse_copy`
  - `rotate`
- - `is_sorted` 
+ - `is_sorted`
  - `is_sorted_until`
  - `max_element`
  - `min_element`
@@ -76,7 +75,7 @@ In addition to algorithms, the macro controls the manual vectorization of:
 ## Manually vectorized algorithms for floating point types
 
 Vectorization of floating point types is connected with extra difficulties:
- - For floating point results, the order of operations may matter. Some reordering may yield a different result, whether more precise, or less precise. Vectotization may need operations reordering, so it may affect that.
+ - For floating point results, the order of operations may matter. Some reordering may yield a different result, whether more precise, or less precise. Vectorization may need operations reordering, so it may affect that.
  - Floating point types may contain NaN values, which don't behave transitively while comparing.
  - Floating point operations may raise exceptions.
 
@@ -86,7 +85,7 @@ The STL deals with the first two difficulties safely. Only `max_element`, `min_e
 
 There's `_USE_STD_VECTOR_FLOATING_ALGORITHMS` to control the use of these vectorized algorithms for floating point types. Set it to 0 to disable the vectorization. The macro has no effect if `_USE_STD_VECTOR_ALGORITHMS` is set to 0.
 
-`_USE_STD_VECTOR_FLOATING_ALGORITHMS` defaults to 0 when `/fp:except` option is set. This is to avoid problems with exceptions.
+`_USE_STD_VECTOR_FLOATING_ALGORITHMS` defaults to 0 when [`/fp:except`](../build/reference/fp-specify-floating-point-behavior.md#except) option is set. This is to avoid problems with exceptions.
 
 ## See also
 
