@@ -1,6 +1,6 @@
 ---
 title: "<string_view> operators"
-description: "API reference for the `string_view` operators, which are used to compare two `string_view` objects, or a `string_view` and some other string object" 
+description: "API reference for the `string_view` operators, which are used to compare two `string_view` objects, or a `string_view` and some other string object"
 ms.date: 01/15/2021
 f1_keywords: ["xstring/basic_string_view::operator!=", "xstring/basic_string_view::operator>", "xstring/basic_string_view::operator>=", "xstring/basic_string_view::operator<", "xstring/basic_string_view::operator<<", "xstring/basic_string_view::operator<=", "xstring/basic_string_view::operator+", "xstring/basic_string_view::operator==", 'xstring/std::literals::string_view_literals::operator "sv', 'std::literals::string_view_literals::operator sv', 'std::literals::string_view_literals', 'string_view_literals']
 helpviewer_keywords: ["std::basic_string_view::operator!=", "std::basic_string_view::operator>", "std::basic_string_view::operator>=", "std::basic_string_view::operator<", "std::basic_string_view::operator<<", "std::basic_string_view::operator<=, std::basic_string_view::operator=="]
