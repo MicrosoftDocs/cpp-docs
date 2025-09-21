@@ -8,7 +8,7 @@ ms.assetid: 55b64b2b-a56b-436c-a55e-ec9c6dcb050e
 ---
 # Linker Tools Error LNK1256
 
-ALINK operation failed : reason
+> ALINK operation failed : reason
 
 A common reason for LNK1256 is an incorrect version number for an assembly. The value 65535 is not allowed for any part of the assembly version number. The valid range for assembly versions is 0 - 65534.
 

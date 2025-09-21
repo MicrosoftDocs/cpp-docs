@@ -8,7 +8,7 @@ ms.assetid: c4728c36-daee-462f-a1c7-8733dcdec88e
 ---
 # Linker Tools Error LNK1223
 
-invalid or corrupt file: file contains invalid .pdata contributions
+> invalid or corrupt file: file contains invalid .pdata contributions
 
 For RISC platforms that use pdata, this error will occur if the compiler emitted a .pdata section with unsorted entries.
 

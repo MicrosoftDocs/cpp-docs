@@ -8,7 +8,7 @@ ms.assetid: 179c8165-ffbb-44cd-9f24-5250f29577cc
 ---
 # Linker Tools Error LNK1245
 
-invalid subsystem 'subsystem' specified; /SUBSYSTEM must be WINDOWS, WINDOWSCE, or CONSOLE
+> invalid subsystem 'subsystem' specified; /SUBSYSTEM must be WINDOWS, WINDOWSCE, or CONSOLE
 
 [/clr](../../build/reference/clr-common-language-runtime-compilation.md) was used to compile the object and one of the following conditions was true:
 

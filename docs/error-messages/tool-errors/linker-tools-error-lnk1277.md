@@ -8,7 +8,7 @@ ms.assetid: afca3de0-50cc-4140-af7a-13493a170835
 ---
 # Linker Tools Error LNK1277
 
-object record not found in pgd (filename)
+> object record not found in pgd (filename)
 
 When using [/LTCG:PGOPTIMZE](../../build/reference/ltcg-link-time-code-generation.md), the path of one of the input .lib, def, or .obj files was different from the path on which they were found during /LTCG:PGINSTRUMENT. This may be explained by a change in the LIB environment variable after /LTCG:PGINSTRUMENT. The full path to the input files is stored in the .pgd file.
 

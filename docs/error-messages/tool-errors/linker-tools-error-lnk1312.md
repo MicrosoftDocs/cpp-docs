@@ -8,7 +8,7 @@ ms.assetid: 48284abb-d849-43fc-ab53-45aded14fd8a
 ---
 # Linker Tools Error LNK1312
 
-invalid or corrupt file: unable to import assembly
+> invalid or corrupt file: unable to import assembly
 
 When building an assembly, a file other than a module or assembly compiled with **/clr** was passed to the **/ASSEMBLYMODULE** linker option.  If you passed an object file to **/ASSEMBLYMODULE**, just pass the object directly to the linker, instead of to **/ASSEMBLYMODULE**.
 

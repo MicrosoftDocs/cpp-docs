@@ -8,7 +8,7 @@ ms.assetid: f94a3d18-5411-456b-966f-89810fdcfe60
 ---
 # Linker Tools Error LNK1296
 
-unable to load filename
+> unable to load filename
 
 The given DLL was unavailable.
 
