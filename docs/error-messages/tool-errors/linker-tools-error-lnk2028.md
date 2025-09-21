@@ -18,7 +18,7 @@ The **/clr:pure** compiler option is deprecated in Visual Studio 2015 and unsupp
 
 ## Examples
 
-This code sample generates a component with an exported, native, function whose calling convention is implicitly [__cdecl](../../cpp/cdecl.md).
+This code example generates a component with an exported, native, function whose calling convention is implicitly [__cdecl](../../cpp/cdecl.md).
 
 ```cpp
 // LNK2028.cpp
@@ -28,7 +28,7 @@ __declspec(dllexport) int func() {
 }
 ```
 
-The following sample creates a pure client that consumes the native function. However, the calling convention under **/clr:pure** is [__clrcall](../../cpp/clrcall.md). The following sample generates LNK2028.
+The following example creates a pure client that consumes the native function. However, the calling convention under **/clr:pure** is [__clrcall](../../cpp/clrcall.md). The following example generates LNK2028.
 
 ```cpp
 // LNK2028_b.cpp

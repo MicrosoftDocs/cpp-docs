@@ -145,7 +145,7 @@ Unless `i` and `g` are defined in one of the files included in the build, the li
 
 ### A static data member is declared but not defined
 
-LNK2019 can also occur when a static data member is declared but not defined. The following sample generates LNK2019, and shows how to fix it.
+LNK2019 can also occur when a static data member is declared but not defined. The following example generates LNK2019, and shows how to fix it.
 
 ```cpp
 // LNK2019b.cpp
@@ -166,7 +166,7 @@ int main() {
 
 ### Declaration parameters don't match the definition
 
-Code that invokes function templates must have matching function template declarations. Declarations must include the same template parameters as the definition. The following sample generates LNK2019 on a user-defined operator, and shows how to fix it.
+Code that invokes function templates must have matching function template declarations. Declarations must include the same template parameters as the definition. The following example generates LNK2019 on a user-defined operator, and shows how to fix it.
 
 ```cpp
 // LNK2019e.cpp
@@ -196,7 +196,7 @@ int main() {
 
 ### Inconsistent wchar_t type definitions
 
-This sample creates a DLL that has an export that uses `WCHAR`, which resolves to **`wchar_t`**.
+This example creates a DLL that has an export that uses `WCHAR`, which resolves to **`wchar_t`**.
 
 ```cpp
 // LNK2019g.cpp
@@ -206,7 +206,7 @@ This sample creates a DLL that has an export that uses `WCHAR`, which resolves t
 __declspec(dllexport) void func(WCHAR*) {}
 ```
 
-The next sample uses the DLL in the previous sample, and generates LNK2019 because the types `unsigned short*` and `WCHAR*` aren't the same.
+The next example uses the DLL in the previous example, and generates LNK2019 because the types `unsigned short*` and `WCHAR*` aren't the same.
 
 ```cpp
 // LNK2019h.cpp

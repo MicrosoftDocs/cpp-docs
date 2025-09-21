@@ -21,7 +21,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Example
 
-The following sample generates LNK2033.
+The following example generates LNK2033.
 
 ```cpp
 // LNK2033.cpp

@@ -21,7 +21,7 @@ To resolve:
 
 ## Examples
 
-The following sample generates LNK2020.
+The following example generates LNK2020.
 
 ```cpp
 // LNK2020.cpp
@@ -40,7 +40,7 @@ ref struct B {
 
 LNK2020 will also occur if you create a variable of a managed template type, but do not also instantiate the type.
 
-The following sample generates LNK2020.
+The following example generates LNK2020.
 
 ```cpp
 // LNK2020_b.cpp
