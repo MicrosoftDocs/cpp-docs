@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2154"
 description: "Learn more about: Compiler Error C2154"
-ms.date: 11/04/2016
+ms.date: 09/21/2025
 f1_keywords: ["C2154"]
 helpviewer_keywords: ["C2154"]
 ---
