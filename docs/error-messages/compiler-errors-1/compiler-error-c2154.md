@@ -11,6 +11,4 @@ helpviewer_keywords: ["C2154"]
 
 ## Remarks
 
-You can only get the underlying type of an enumeration type.
-
-For more information, see [Compiler Support for Type Traits](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).
+You can only get the underlying type of an [enumeration](../../cpp/enumerations-cpp.md) type.
