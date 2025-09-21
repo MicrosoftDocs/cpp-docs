@@ -10,6 +10,8 @@ ms.assetid: e2f857a8-8e8a-4697-bbff-12ccb84a35c1
 
 > unresolved module reference 'module'
 
+## Remarks
+
 A file passed to the linker has a dependency on a module that was neither specified with **/ASSEMBLYMODULE** nor passed directly to the linker.
 
 To resolve LNK2027, do one of the following:

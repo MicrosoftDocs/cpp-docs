@@ -10,6 +10,8 @@ ms.assetid: bbcd83c5-c8ae-439e-a033-63643a5bb373
 
 > Fixup target is not aligned 'symbol_name'
 
+## Remarks
+
 LINK found a fixup target in your object file that was not aligned properly.
 
 This error can be caused by custom secton alignment (for example, #pragma [pack](../../preprocessor/pack.md)), [align](../../cpp/align-cpp.md) modifier, or by using assembly language code that modifies secton alignment.

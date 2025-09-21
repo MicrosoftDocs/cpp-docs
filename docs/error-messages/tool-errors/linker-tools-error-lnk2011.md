@@ -9,7 +9,11 @@ helpviewer_keywords: ["LNK2011"]
 
 > precompiled object not linked in; image may not run
 
+## Remarks
+
 If you use precompiled headers, LINK requires that all of the object files created with precompiled headers must be linked in. If you have a source file that you use to generate a precompiled header for use with other source files, you now must include the object file created along with the precompiled header.
+
+## Example
 
 For example, if you compile a file called STUB.cpp to create a precompiled header for use with other source files, you must link with STUB.obj or you will get this error. In the following command lines, line one is used to create a precompiled header, COMMON.pch, which is used with PROG1.cpp and PROG2.cpp in lines two and three. The file STUB.cpp contains only `#include` lines (the same `#include` lines as in PROG1.cpp and PROG2.cpp) and is used only to generate precompiled headers. In the last line, STUB.obj must be linked in to avoid LNK2011.
 

@@ -10,6 +10,8 @@ no-loc: [main, WinMain, wmain, wWinMain, __cdecl, __stdcall, __fastcall, __vecto
 
 > unresolved external symbol '*symbol*' referenced in function '*function*'
 
+## Remarks
+
 The compiled code for *function* makes a reference or call to *symbol*, but the linker can't find the symbol definition in any of the libraries or object files.
 
 This error message is followed by fatal error [LNK1120](../../error-messages/tool-errors/linker-tools-error-lnk1120.md). To fix error LNK1120, you must fix all LNK2001 and LNK2019 errors first.

@@ -10,6 +10,8 @@ ms.assetid: f7c21733-b0fb-4888-a295-9b453ba6ee77
 
 > 'symbol' relocation to 'segment' invalid without /LARGEADDRESSAWARE:NO
 
+## Remarks
+
 You are trying to build a 64-bit image with 32-bit addresses. To do this, you must:
 
 - Use a fixed load address.

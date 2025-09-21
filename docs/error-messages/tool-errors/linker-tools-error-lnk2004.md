@@ -10,6 +10,8 @@ ms.assetid: 07645371-e67b-4a2c-b0e0-dde24c94ef7e
 
 > gp relative fixup overflow to 'target'; short section 'section' is too large or out of range.
 
+## Remarks
+
 The section was too large.
 
 To resolve this error, reduce the size of the short section, either by explicitly putting data in the long sections via #pragma section(".sectionname", read, write, long) and using `__declspec(allocate(".sectionname"))` on data definitions and declarations.  For example,

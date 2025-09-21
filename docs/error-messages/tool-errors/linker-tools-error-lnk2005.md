@@ -10,6 +10,8 @@ ms.assetid: d9587adc-68be-425c-8a30-15dbc86717a4
 
 > *symbol* already defined in object
 
+## Remarks
+
 The symbol *symbol* was defined more than once.
 
 This error is followed by fatal error [LNK1169](../../error-messages/tool-errors/linker-tools-error-lnk1169.md).

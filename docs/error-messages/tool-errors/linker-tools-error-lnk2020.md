@@ -9,6 +9,8 @@ helpviewer_keywords: ["LNK2020"]
 
 > unresolved token 'token'
 
+## Remarks
+
 Similar to an undefined external error, except that the reference is via metadata. In metadata, all functions and data must be defined.
 
 To resolve:

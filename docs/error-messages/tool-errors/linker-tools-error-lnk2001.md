@@ -10,6 +10,8 @@ ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
 
 > unresolved external symbol "*symbol*"
 
+## Remarks
+
 The compiled code makes a reference or call to *symbol*. The symbol isn't defined in any libraries or object files searched by the linker.
 
 This error message is followed by fatal error [LNK1120](../../error-messages/tool-errors/linker-tools-error-lnk1120.md). To fix error LNK1120, first fix all LNK2001 and LNK2019 errors.

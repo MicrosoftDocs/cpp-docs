@@ -10,6 +10,8 @@ ms.assetid: c99e35a8-739a-4a20-a715-29b8c3744703
 
 > bad dll or entry point \<dll or entry point>
 
+## Remarks
+
 The linker is loading an incorrect version of msobj90.dll. Ensure that link.exe and msobj90.dll in your path have the same version.
 
 A dependency of msobj90.dll may not be present. The dependency list for msobj90.dll is:
