@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1223"
 title: "Linker Tools Error LNK1223"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1223"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1223"]
 helpviewer_keywords: ["LNK1223"]
-ms.assetid: c4728c36-daee-462f-a1c7-8733dcdec88e
 ---
 # Linker Tools Error LNK1223
 

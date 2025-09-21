@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1313"
 title: "Linker Tools Error LNK1313"
+description: "Learn more about: Linker Tools Error LNK1313"
 ms.date: 06/29/2022
 f1_keywords: ["LNK1313"]
 helpviewer_keywords: ["LNK1313"]
-ms.assetid: 5df0b72e-bb3f-428c-8d84-6084238f9827
 ---
 # Linker Tools Error LNK1313
 

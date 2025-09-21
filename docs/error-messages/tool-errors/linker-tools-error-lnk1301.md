@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1301"
 title: "Linker Tools Error LNK1301"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1301"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1301"]
 helpviewer_keywords: ["LNK1301"]
-ms.assetid: 760da428-7182-4b25-b20a-de90d4b9a9cd
 ---
 # Linker Tools Error LNK1301
 

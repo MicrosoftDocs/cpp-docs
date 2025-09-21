@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1332"
 title: "Linker Tools Error LNK1332"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1332"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1332"]
 helpviewer_keywords: ["LNK1332"]
-ms.assetid: b31d5ca0-c27f-4177-896b-2637dccbde24
 ---
 # Linker Tools Error LNK1332
 

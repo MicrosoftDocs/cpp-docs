@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1306"
 title: "Linker Tools Error LNK1306"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1306"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1306"]
 helpviewer_keywords: ["LNK1306"]
-ms.assetid: fad1df6a-0bd9-412f-b0d1-7c9bc749c584
 ---
 # Linker Tools Error LNK1306
 

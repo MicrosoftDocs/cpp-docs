@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1256"
 title: "Linker Tools Error LNK1256"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1256"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1256"]
 helpviewer_keywords: ["LNK1256"]
-ms.assetid: 55b64b2b-a56b-436c-a55e-ec9c6dcb050e
 ---
 # Linker Tools Error LNK1256
 

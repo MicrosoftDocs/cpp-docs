@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1302"
 title: "Linker Tools Error LNK1302"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1302"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1302"]
 helpviewer_keywords: ["LNK1302"]
-ms.assetid: aea3c753-c2c4-4249-bbc3-f2d4f0164b5e
 ---
 # Linker Tools Error LNK1302
 

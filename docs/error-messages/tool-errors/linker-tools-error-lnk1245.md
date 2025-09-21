@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1245"
 title: "Linker Tools Error LNK1245"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1245"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1245"]
 helpviewer_keywords: ["LNK1245"]
-ms.assetid: 179c8165-ffbb-44cd-9f24-5250f29577cc
 ---
 # Linker Tools Error LNK1245
 

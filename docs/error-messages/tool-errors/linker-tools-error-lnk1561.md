@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1561"
 title: "Linker Tools Error LNK1561"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1561"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1561"]
 helpviewer_keywords: ["LNK1561"]
-ms.assetid: cb0b709b-7c9c-4496-8a4e-9e1e4aefe447
 ---
 # Linker Tools Error LNK1561
 

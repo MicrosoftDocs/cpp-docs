@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1312"
 title: "Linker Tools Error LNK1312"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1312"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1312"]
 helpviewer_keywords: ["LNK1312"]
-ms.assetid: 48284abb-d849-43fc-ab53-45aded14fd8a
 ---
 # Linker Tools Error LNK1312
 

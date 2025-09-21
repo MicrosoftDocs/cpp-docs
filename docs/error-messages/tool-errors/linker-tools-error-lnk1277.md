@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1277"
 title: "Linker Tools Error LNK1277"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1277"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1277"]
 helpviewer_keywords: ["LNK1277"]
-ms.assetid: afca3de0-50cc-4140-af7a-13493a170835
 ---
 # Linker Tools Error LNK1277
 

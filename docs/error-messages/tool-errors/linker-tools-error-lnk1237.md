@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1237"
 title: "Linker Tools Error LNK1237"
+description: "Learn more about: Linker Tools Error LNK1237"
 ms.date: 06/29/2022
 f1_keywords: ["LNK1237"]
 helpviewer_keywords: ["LNK1237"]
-ms.assetid: 8722ffa8-096a-4bb0-85f9-f3aa0e10872a
 ---
 # Linker Tools Error LNK1237
 
