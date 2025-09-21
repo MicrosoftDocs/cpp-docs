@@ -8,7 +8,7 @@ ms.assetid: f7c21733-b0fb-4888-a295-9b453ba6ee77
 ---
 # Linker Tools Error LNK2017
 
-'symbol' relocation to 'segment' invalid without /LARGEADDRESSAWARE:NO
+> 'symbol' relocation to 'segment' invalid without /LARGEADDRESSAWARE:NO
 
 You are trying to build a 64-bit image with 32-bit addresses. To do this, you must:
 

@@ -7,7 +7,7 @@ helpviewer_keywords: ["LNK2033"]
 ---
 # Linker Tools Error LNK2033
 
-unresolved typeref token (token) for 'type'
+> unresolved typeref token (token) for 'type'
 
 A type doesn't have a definition in MSIL metadata.
 

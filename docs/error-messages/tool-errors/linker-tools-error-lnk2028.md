@@ -8,7 +8,7 @@ ms.assetid: e2b03293-6066-464d-a050-ce747bcf7f0e
 ---
 # Linker Tools Error LNK2028
 
-"*exported_function*" (*decorated_name*) referenced in function "*function_containing_function_call*" (*decorated_name*)
+> "*exported_function*" (*decorated_name*) referenced in function "*function_containing_function_call*" (*decorated_name*)
 
 ## Remarks
 

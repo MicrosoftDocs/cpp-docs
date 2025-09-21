@@ -8,7 +8,7 @@ ms.assetid: bbcd83c5-c8ae-439e-a033-63643a5bb373
 ---
 # Linker Tools Error LNK2008
 
-Fixup target is not aligned 'symbol_name'
+> Fixup target is not aligned 'symbol_name'
 
 LINK found a fixup target in your object file that was not aligned properly.
 

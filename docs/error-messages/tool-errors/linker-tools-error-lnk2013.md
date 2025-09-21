@@ -8,7 +8,7 @@ ms.assetid: 21408e2d-3f56-4d1f-a031-00df70785ed4
 ---
 # Linker Tools Error LNK2013
 
-fixup type fixup overflow. Target 'symbol name' is out of range
+> fixup type fixup overflow. Target 'symbol name' is out of range
 
 The linker cannot fit the necessary address or offset into the given instruction because the target symbol is too far away from the instruction's location.
 

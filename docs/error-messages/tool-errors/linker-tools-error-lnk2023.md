@@ -8,7 +8,7 @@ ms.assetid: c99e35a8-739a-4a20-a715-29b8c3744703
 ---
 # Linker Tools Error LNK2023
 
-bad dll or entry point \<dll or entry point>
+> bad dll or entry point \<dll or entry point>
 
 The linker is loading an incorrect version of msobj90.dll. Ensure that link.exe and msobj90.dll in your path have the same version.
 

@@ -7,7 +7,7 @@ helpviewer_keywords: ["LNK2020"]
 ---
 # Linker Tools Error LNK2020
 
-unresolved token 'token'
+> unresolved token 'token'
 
 Similar to an undefined external error, except that the reference is via metadata. In metadata, all functions and data must be defined.
 
