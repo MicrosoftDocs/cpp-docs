@@ -32,7 +32,7 @@ For more information, see:
 
 ## Example
 
-The following sample generates LNK1306.
+The following example generates LNK1306.
 
 ```cpp
 // LNK1306.cpp

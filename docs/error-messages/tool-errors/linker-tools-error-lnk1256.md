@@ -20,7 +20,7 @@ Another reason for LNK1256 is a version mismatch between the linker and Alink.dl
 
 ## Example
 
-The following sample generates LNK1256:
+The following example generates LNK1256:
 
 ```cpp
 // LNK1256.cpp

@@ -16,7 +16,7 @@ When building an assembly, a file other than a module or assembly compiled with 
 
 ## Example
 
-The following sample created the .obj file.
+The following example created the .obj file.
 
 ```cpp
 // LNK1312.cpp
@@ -27,7 +27,7 @@ public:
 };
 ```
 
-The following sample generates LNK1312.
+The following example generates LNK1312.
 
 ```cpp
 // LNK1312_b.cpp

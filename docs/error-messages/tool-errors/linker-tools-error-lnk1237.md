@@ -20,7 +20,7 @@ To resolve LNK1237, don't use **`/GL`** to compile the symbol, or use [`/INCLUDE
 
 ## Example
 
-The following sample generates LNK1237. To resolve this error, don't initialize the array in `LNK1237_a.cpp` and add **`/include:__chkstk`** to the link command.
+The following example generates LNK1237. To resolve this error, don't initialize the array in `LNK1237_a.cpp` and add **`/include:__chkstk`** to the link command.
 
 Source file `LNK1237_a.cpp`:
 

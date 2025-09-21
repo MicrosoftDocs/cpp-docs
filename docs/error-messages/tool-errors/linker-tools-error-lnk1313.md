@@ -36,7 +36,7 @@ Source file `LNK1313_b.cpp`:
 void test(){}
 ```
 
-The following sample will generate LNK1313.
+The following example will generate LNK1313.
 
 ```cpp
 // LNK1313_c.cpp

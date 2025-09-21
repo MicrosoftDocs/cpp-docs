@@ -26,7 +26,7 @@ When building an app, the linker looks for an entry point function to call to st
 
 ## Example
 
-The following sample generates LNK1561:
+The following example generates LNK1561:
 
 ```cpp
 // LNK1561.cpp
