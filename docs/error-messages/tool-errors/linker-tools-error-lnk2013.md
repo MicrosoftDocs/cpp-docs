@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2013"
 title: "Linker Tools Error LNK2013"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2013"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2013"]
 helpviewer_keywords: ["LNK2013"]
-ms.assetid: 21408e2d-3f56-4d1f-a031-00df70785ed4
 ---
 # Linker Tools Error LNK2013
 

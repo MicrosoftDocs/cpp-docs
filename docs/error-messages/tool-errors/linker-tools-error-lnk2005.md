@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2005"
 title: "Linker Tools Error LNK2005"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2005"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2005"]
 helpviewer_keywords: ["LNK2005"]
-ms.assetid: d9587adc-68be-425c-8a30-15dbc86717a4
 ---
 # Linker Tools Error LNK2005
 

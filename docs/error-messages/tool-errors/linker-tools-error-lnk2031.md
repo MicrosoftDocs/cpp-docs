@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2031"
 title: "Linker Tools Error LNK2031"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2031"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2031"]
 helpviewer_keywords: ["LNK2031"]
-ms.assetid: 18ed4b6e-3e75-443c-bbd8-2f6030dc89ee
 ---
 # Linker Tools Error LNK2031
 

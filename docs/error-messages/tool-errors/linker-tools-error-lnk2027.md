@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2027"
 title: "Linker Tools Error LNK2027"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2027"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2027"]
 helpviewer_keywords: ["LNK2027"]
-ms.assetid: e2f857a8-8e8a-4697-bbff-12ccb84a35c1
 ---
 # Linker Tools Error LNK2027
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2028"
 title: "Linker Tools Error LNK2028"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2028"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2028"]
 helpviewer_keywords: ["LNK2028"]
-ms.assetid: e2b03293-6066-464d-a050-ce747bcf7f0e
 ---
 # Linker Tools Error LNK2028
 

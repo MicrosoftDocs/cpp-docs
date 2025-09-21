@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2001"
 title: "Linker Tools Error LNK2001"
+description: "Learn more about: Linker Tools Error LNK2001"
 ms.date: 10/22/2021
 f1_keywords: ["LNK2001"]
 helpviewer_keywords: ["LNK2001"]
-ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
 ---
 # Linker Tools Error LNK2001
 

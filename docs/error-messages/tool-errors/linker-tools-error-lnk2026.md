@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2026"
 title: "Linker Tools Error LNK2026"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2026"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2026"]
 helpviewer_keywords: ["LNK2026"]
-ms.assetid: 9955bf7c-59b5-4fa1-8481-147db0d7df45
 ---
 # Linker Tools Error LNK2026
 

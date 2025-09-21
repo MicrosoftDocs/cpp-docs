@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2039"
 title: "Linker Tools Error LNK2039"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2039"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2039"]
 helpviewer_keywords: ["LNK2039"]
-ms.assetid: eaa296bd-4901-41f6-8410-6d03ee827144
 ---
 # Linker Tools Error LNK2039
 
