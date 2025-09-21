@@ -10,4 +10,6 @@ ms.assetid: 7d0e065d-1015-4df0-8370-79c3cf045e1c
 
 > failed to compile IDL content
 
+## Remarks
+
 The linker spawned MIDL to compile embedded IDL but there was a problem. Check the errors specified by MIDL.

@@ -10,6 +10,8 @@ ms.assetid: cb0b709b-7c9c-4496-8a4e-9e1e4aefe447
 
 > entry point must be defined
 
+## Remarks
+
 The linker did not find an *entry point*, the initial function to call in your executable. By default, the linker looks for a `main` or `wmain` function for a console app, a `WinMain` or `wWinMain` function for a Windows app, or `DllMain` for a DLL that requires initialization. You can specify another function by using the [/ENTRY](../../build/reference/entry-entry-point-symbol.md) linker option.
 
 This error can have several causes:

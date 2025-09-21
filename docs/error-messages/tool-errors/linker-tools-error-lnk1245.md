@@ -10,6 +10,8 @@ ms.assetid: 179c8165-ffbb-44cd-9f24-5250f29577cc
 
 > invalid subsystem 'subsystem' specified; /SUBSYSTEM must be WINDOWS, WINDOWSCE, or CONSOLE
 
+## Remarks
+
 [/clr](../../build/reference/clr-common-language-runtime-compilation.md) was used to compile the object and one of the following conditions was true:
 
 - A custom entry point was defined ([/ENTRY](../../build/reference/entry-entry-point-symbol.md)), such that, the linker could not infer a subsystem.

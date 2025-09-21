@@ -10,6 +10,8 @@ ms.assetid: aea3c753-c2c4-4249-bbc3-f2d4f0164b5e
 
 > only support linking safe .netmodules; unable to link file .netmodule
 
+## Remarks
+
 A .netmodule (compiled with **/LN**) was passed to the linker in a user attempt to invoke MSIL linking.  A C++ module is valid for MSIL linking if it is compiled with **/clr:safe**.
 
 To correct this error, compile with **/clr:safe** to enable MSIL linking, or pass the **/clr** or **/clr:pure** .obj file to the linker instead of the module.

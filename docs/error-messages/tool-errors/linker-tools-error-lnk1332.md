@@ -10,6 +10,8 @@ ms.assetid: b31d5ca0-c27f-4177-896b-2637dccbde24
 
 > detected\<count> Windows Runtime types imported in one module and defined in another module
 
+## Remarks
+
 When it produced the current target, the linker detected <`count`> Windows Runtime types, each of which is imported in one module and also defined in another module.
 
 ### To correct this error

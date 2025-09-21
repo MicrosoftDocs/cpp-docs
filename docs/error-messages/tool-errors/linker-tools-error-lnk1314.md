@@ -10,6 +10,8 @@ ms.assetid: 0b5cd599-61ea-4ac7-8f25-c6d3a8b14655
 
 > corrupt or invalid COFF symbol table (undefined static or label symbol)
 
+## Remarks
+
 The compiler-generated content for a section in the given object appears to be corrupt.
 
 This error may represent a failure of the compiler.

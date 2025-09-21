@@ -9,6 +9,8 @@ helpviewer_keywords: ["LNK1318"]
 
 > Unexpected PDB error; *cause* '*details*'
 
+## Remarks
+
 The linker encountered an unexpected error when opening, reading, or writing to a PDB file.
 
 This error message is produced for uncommon issues in PDB files. The *cause* and *details* represent the information available to the linker when the failure occurred. This may not be very useful, as common errors when dealing with PDB files have separate, more informative error messages.

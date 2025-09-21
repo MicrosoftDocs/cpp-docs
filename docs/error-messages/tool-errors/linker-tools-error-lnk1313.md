@@ -16,7 +16,7 @@ The current version of Visual C++ does not support linking native or mixed manag
 
 The **`/clr:pure`** compiler option is deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later.
 
-## Examples
+## Example
 
 Source file `LNK1313.cpp`:
 

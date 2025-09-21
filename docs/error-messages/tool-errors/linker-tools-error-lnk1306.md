@@ -10,6 +10,8 @@ ms.assetid: fad1df6a-0bd9-412f-b0d1-7c9bc749c584
 
 > DLL entry point function cannot be managed; compile to native
 
+## Remarks
+
 `DllMain` cannot be compiled to MSIL; it must be compiled to native.
 
 To resolve this issue,

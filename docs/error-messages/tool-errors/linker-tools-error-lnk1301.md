@@ -10,6 +10,8 @@ ms.assetid: 760da428-7182-4b25-b20a-de90d4b9a9cd
 
 > LTCG clr modules found, incompatible with /LTCG:parameter
 
+## Remarks
+
 A module compiled with /clr and /GL was passed to the linker along with one of the profile guided optimizations (PGO) parameters of /LTCG.
 
 Profile guided optimizations are not supported for /clr modules.
