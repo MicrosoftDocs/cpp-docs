@@ -30,3 +30,7 @@ __underlying_type(int) i;   // C2154
 __underlying_type(E) e;     // OK
 __underlying_type(EC) ec;   // OK
 ```
+
+## See also
+
+[`underlying_type` class](../../standard-library/underlying-type-class.md)
