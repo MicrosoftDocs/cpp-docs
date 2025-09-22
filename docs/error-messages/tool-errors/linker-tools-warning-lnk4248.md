@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4248"
 title: "Linker Tools Warning LNK4248"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4248"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4248"]
 helpviewer_keywords: ["LNK4248"]
-ms.assetid: e40523ff-e3cb-4ba6-ab79-23f0f339f6cf
 ---
 # Linker Tools Warning LNK4248
 

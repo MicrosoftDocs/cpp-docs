@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4247"
 title: "Linker Tools Warning LNK4247"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4247"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4247"]
 helpviewer_keywords: ["LNK4247"]
-ms.assetid: 085d7fdf-9eaf-4641-8473-6eaadd073c7b
 ---
 # Linker Tools Warning LNK4247
 

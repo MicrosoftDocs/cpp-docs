@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Linker tools warning LNK4306"
 title: "Linker tools warning LNK4306"
+description: "Learn more about: Linker tools warning LNK4306"
 ms.date: 01/30/2024
 f1_keywords: ["LNK4306"]
 helpviewer_keywords: ["LNK4306"]

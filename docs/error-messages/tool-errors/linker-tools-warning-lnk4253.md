@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4253"
 title: "Linker Tools Warning LNK4253"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4253"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4253"]
 helpviewer_keywords: ["LNK4253"]
-ms.assetid: ec7433a9-aa9c-495a-a9f2-075e7bc3e7bc
 ---
 # Linker Tools Warning LNK4253
 

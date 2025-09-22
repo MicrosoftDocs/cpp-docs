@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4222"
 title: "Linker Tools Warning LNK4222"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4222"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4222"]
 helpviewer_keywords: ["LNK4222"]
-ms.assetid: b7bb1794-41fb-4c83-b9b0-59c0d786a7da
 ---
 # Linker Tools Warning LNK4222
 

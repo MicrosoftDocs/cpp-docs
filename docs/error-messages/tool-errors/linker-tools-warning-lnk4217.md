@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4217"
 title: "Linker Tools Warning LNK4217"
-ms.date: "07/23/2019"
+description: "Learn more about: Linker Tools Warning LNK4217"
+ms.date: 07/23/2019
 f1_keywords: ["LNK4217"]
 helpviewer_keywords: ["LNK4217"]
-ms.assetid: 280dc03e-5933-4e8d-bb8c-891fbe788738
 ---
 # Linker Tools Warning LNK4217
 
