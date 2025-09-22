@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-In a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts), run the following commands to see an exampe of `alloc_dealloc_mismatch`:
+In a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts), run the following commands to see an example of `alloc_dealloc_mismatch`:
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
