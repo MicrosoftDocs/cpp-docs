@@ -10,6 +10,8 @@ ms.assetid: 8a976fd7-a74b-4c83-ab66-a9e7d7073c4a
 
 > export '*exportname*' specified multiple times; using first specification
 
+## Remarks
+
 An export is specified in multiple and different ways. The linker uses the first specification and ignores the rest.
 
 If you are rebuilding the C run-time library, you can ignore this message.

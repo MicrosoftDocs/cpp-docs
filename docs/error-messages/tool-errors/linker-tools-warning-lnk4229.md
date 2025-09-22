@@ -10,4 +10,6 @@ ms.assetid: 00e70d09-efd8-4e4e-8d48-6ba282c32ec1
 
 > invalid directive /directive found; ignored
 
+## Remarks
+
 A directive passed via the [comment](../../preprocessor/comment-c-cpp.md) pragma was not valid. The linker ignores `/directive`.

@@ -10,6 +10,8 @@ ms.assetid: b7bb1794-41fb-4c83-b9b0-59c0d786a7da
 
 > exported symbol 'symbol' should not be assigned an ordinal
 
+## Remarks
+
 The following symbols should not be exported by ordinal:
 
 - `DllCanUnloadNow`

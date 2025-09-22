@@ -10,4 +10,6 @@ ms.assetid: a45f437e-33b5-487e-b3cd-ff1560041e7e
 
 > /DELAYLOAD:dll name ignored
 
+## Remarks
+
 The linker cannot [delay load](../../build/reference/delayload-delay-load-import.md) the requested DLL.

@@ -10,6 +10,8 @@ ms.assetid: 941a0414-9964-4e02-8487-f9daa42ef7f9
 
 > metadata operation warning (*HRESULT*) : *warning_message*
 
+## Remarks
+
 The linker detected metadata differences when merging:
 
 - One or more referenced assemblies with the assembly currently being built.

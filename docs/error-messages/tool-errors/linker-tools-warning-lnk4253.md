@@ -10,6 +10,8 @@ ms.assetid: ec7433a9-aa9c-495a-a9f2-075e7bc3e7bc
 
 > section 'section1' not merged into 'section2'; already merged into 'section3'
 
+## Remarks
+
 The linker detected multiple, conflicting merge requests. The linker will ignore one of the requests.
 
 A **/MERGE** option or directive is encountered and the `from` section has already been merged into a different section due to a previous **/MERGE** option or directive (or due to an implicit merge from the linker).

@@ -10,6 +10,8 @@ ms.assetid: 8e2eb2de-9532-4b85-908a-8c9ff5c4cccb
 
 > This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
 
+## Example
+
 Consider the following two code snippets, `a.cpp`:
 
 ```cpp

@@ -10,4 +10,6 @@ ms.assetid: ba0cddfc-9c56-4a09-8207-f7b840a24b4d
 
 > invalid 'linker option' value 'value'; assumed default
 
+## Remarks
+
 An out-of-range value was specified with the [/TLBID](../../build/reference/tlbid-specify-resource-id-for-typelib.md) option. The default value for **/TLBID** is 1.

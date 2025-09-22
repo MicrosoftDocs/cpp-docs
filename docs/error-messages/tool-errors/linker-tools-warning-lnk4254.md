@@ -10,6 +10,8 @@ ms.assetid: 6f41dfb3-ca21-40d3-bac7-b637e578efa4
 
 > section 'section1' (offset) merged into 'section2' (offset) with different attributes
 
+## Remarks
+
 The contents of one section were merged into another, but the attributes of the two sections are different. Your program may give unexpected results. For example, data you wanted to be read only may now be in a writable section.
 
 To resolve LNK4254, modify or remove the merge request.

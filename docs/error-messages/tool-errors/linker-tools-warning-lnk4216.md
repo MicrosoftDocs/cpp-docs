@@ -10,4 +10,6 @@ ms.assetid: 68512095-acbc-47aa-96bf-9eb0e73b24a3
 
 > Exported entry point entry
 
+## Remarks
+
 An entry point was exported from a DLL. The entry point of a DLL does not need to be exported.
