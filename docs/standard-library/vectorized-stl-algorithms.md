@@ -74,14 +74,14 @@ In addition to algorithms, the macro controls the manual vectorization of:
 
 ## Manually vectorized algorithms for floating point types
 
-Vectorization of floating point types is connected with extra difficulties:
+Vectorization of floating point types comes with extra difficulties:
  - Vectorization may reorder operations, which can affect the precision of floating point results.
- - Floating point types may contain NaN values, which don't behave transitively while comparing.
+ - Floating point types may contain `NaN` values, which don't behave transitively on comparisons.
  - Floating point operations may raise exceptions.
 
 The STL deals with the first two difficulties safely. Only `max_element`, `min_element`, `minmax_element`, `max`, `min`, `minmax`, `is_sorted`, and `is_sorted_until` are manually vectorized. These algorithms:
  - Do not compute new floating point values, only compare the existing values, so different order does not affect precision.
- - As sorting algorithms, require transitivity of comparisons, so NaNs are not allowed as elements.
+ - Because they are sorting algorithms, `NaNs` are not allowed amongst the operands.
 
 There's `_USE_STD_VECTOR_FLOATING_ALGORITHMS` to control the use of these vectorized algorithms for floating point types. Set it to 0 to disable the vectorization. The macro has no effect if `_USE_STD_VECTOR_ALGORITHMS` is set to 0.
 
