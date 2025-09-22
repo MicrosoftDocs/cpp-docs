@@ -8,6 +8,6 @@ ms.assetid: 724f1ca8-ee9a-4ca3-b5c6-c0284a5195e7
 ---
 # Linker Tools Warning LNK4199
 
-/DELAYLOAD:dllname ignored; no imports found from dllname
+> /DELAYLOAD:dllname ignored; no imports found from dllname
 
 The linker ignores `dllname` because it does not need any of the functions that `dllname` exports.

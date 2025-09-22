@@ -8,6 +8,6 @@ ms.assetid: 00e70d09-efd8-4e4e-8d48-6ba282c32ec1
 ---
 # Linker Tools Warning LNK4229
 
-invalid directive /directive found; ignored
+> invalid directive /directive found; ignored
 
 A directive passed via the [comment](../../preprocessor/comment-c-cpp.md) pragma was not valid. The linker ignores `/directive`.

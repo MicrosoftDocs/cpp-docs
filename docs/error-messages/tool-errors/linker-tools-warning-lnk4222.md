@@ -8,7 +8,7 @@ ms.assetid: b7bb1794-41fb-4c83-b9b0-59c0d786a7da
 ---
 # Linker Tools Warning LNK4222
 
-exported symbol 'symbol' should not be assigned an ordinal
+> exported symbol 'symbol' should not be assigned an ordinal
 
 The following symbols should not be exported by ordinal:
 

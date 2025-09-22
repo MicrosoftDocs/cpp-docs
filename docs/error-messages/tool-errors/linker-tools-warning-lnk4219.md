@@ -8,7 +8,7 @@ ms.assetid: 363fedf4-b10c-4985-811a-55a9fba688d6
 ---
 # Linker Tools Warning LNK4219
 
-fixup name fixup overflow. Target 'target symbol name' is out of range, inserting thunk
+> fixup name fixup overflow. Target 'target symbol name' is out of range, inserting thunk
 
 The linker inserted a thunk in a situation where the address or offset was unable to fit in the given instruction because the target symbol is too far away from the instruction's location.
 

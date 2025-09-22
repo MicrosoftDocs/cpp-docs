@@ -8,7 +8,7 @@ ms.assetid: e40523ff-e3cb-4ba6-ab79-23f0f339f6cf
 ---
 # Linker Tools Warning LNK4248
 
-unresolved typeref token (token) for 'type'; image may not run
+> unresolved typeref token (token) for 'type'; image may not run
 
 A type doesn't have a definition in MSIL metadata.
 

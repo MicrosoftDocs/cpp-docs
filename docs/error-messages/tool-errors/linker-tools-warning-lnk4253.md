@@ -8,7 +8,7 @@ ms.assetid: ec7433a9-aa9c-495a-a9f2-075e7bc3e7bc
 ---
 # Linker Tools Warning LNK4253
 
-section 'section1' not merged into 'section2'; already merged into 'section3'
+> section 'section1' not merged into 'section2'; already merged into 'section3'
 
 The linker detected multiple, conflicting merge requests. The linker will ignore one of the requests.
 
