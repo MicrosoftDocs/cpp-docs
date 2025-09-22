@@ -8,7 +8,7 @@ ms.assetid: ca6728db-d616-419a-a570-65e8445c6079
 ---
 # Linker Tools Warning LNK4104
 
-export of symbol 'symbol' should be PRIVATE
+> export of symbol 'symbol' should be PRIVATE
 
 The `symbol` can be one of the following:
 

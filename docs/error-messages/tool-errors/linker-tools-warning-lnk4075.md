@@ -8,7 +8,7 @@ ms.assetid: f39ad3f9-c263-4cf0-9d70-259fc56ac96d
 ---
 # Linker Tools Warning LNK4075
 
-ignoring "option1" due to "option2" specification
+> ignoring "option1" due to "option2" specification
 
 The second option overrides the first.
 

@@ -8,7 +8,7 @@ ms.assetid: f3a67a15-98c0-42ed-afcb-f5f9540e2671
 ---
 # Linker Tools Warning LNK4044
 
-unrecognized option 'option'; ignored
+> unrecognized option 'option'; ignored
 
 The given option is not a valid option for this tool. The tool ignored the option.
 

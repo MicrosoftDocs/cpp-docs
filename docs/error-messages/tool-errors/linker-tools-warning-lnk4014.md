@@ -8,7 +8,7 @@ ms.assetid: 394903e9-3ded-4ea4-b7c0-a3535d4b4da4
 ---
 # Linker Tools Warning LNK4014
 
-cannot find member object "objectname"
+> cannot find member object "objectname"
 
 LIB could not find `objectname` in the library.
 

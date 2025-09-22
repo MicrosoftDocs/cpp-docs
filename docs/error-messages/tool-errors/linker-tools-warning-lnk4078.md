@@ -8,7 +8,7 @@ ms.assetid: 5a16796d-6caf-42d9-8f65-b042843eafb8
 ---
 # Linker Tools Warning LNK4078
 
-multiple 'section name' sections found with different attributes
+> multiple 'section name' sections found with different attributes
 
 LINK found two or more sections that have the same name but different attributes.
 

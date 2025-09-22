@@ -8,7 +8,7 @@ ms.assetid: 0a8b1c3a-64ce-4311-b7c0-065995059246
 ---
 # Linker Tools Warning LNK4001
 
-no object files specified; libraries used
+> no object files specified; libraries used
 
 The linker was passed one or more .lib files, but no .obj files.
 

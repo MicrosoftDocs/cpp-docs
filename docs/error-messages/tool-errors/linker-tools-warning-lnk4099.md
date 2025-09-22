@@ -8,7 +8,7 @@ ms.assetid: 358170a4-07cd-43fe-918f-82c32757ffc5
 ---
 # Linker Tools Warning LNK4099
 
-PDB 'filename' was not found with 'object/library' or at 'path'; linking object as if no debug info
+> PDB 'filename' was not found with 'object/library' or at 'path'; linking object as if no debug info
 
 The linker was unable to find your .pdb file. Copy it into the directory that contains `object/library`.
 
