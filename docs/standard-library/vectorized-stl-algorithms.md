@@ -75,7 +75,7 @@ In addition to algorithms, the macro controls the manual vectorization of:
 ## Manually vectorized algorithms for floating point types
 
 Vectorization of floating point types is connected with extra difficulties:
- - For floating point results, the order of operations may matter. Some reordering may yield a different result, whether more precise, or less precise. Vectorization may need operations reordering, so it may affect that.
+ - Vectorization may reorder operations, which can affect the precision of floating point results.
  - Floating point types may contain NaN values, which don't behave transitively while comparing.
  - Floating point operations may raise exceptions.
 
