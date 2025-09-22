@@ -20,7 +20,7 @@ If possible, modify the source for the .obj and remove the pragma. If you do ign
 
 ## Example
 
-The following sample generates LNK4224.
+The following example generates LNK4224.
 
 ```cpp
 // LNK4224.cpp

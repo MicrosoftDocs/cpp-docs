@@ -28,7 +28,7 @@ The metadata problems must be fixed to resolve the warning.
 
 LNK4227 is generated when a referenced assembly was signed differently than the assembly that references it.
 
-The following sample generates LNK4227:
+The following example generates LNK4227:
 
 ```cpp
 // LNK4227.cpp
@@ -59,7 +59,7 @@ ref class MyClass
 
 LNK4227 can also be generated when version numbers in the wrong format are passed to assembly attributes.  The '*' notation is specific to the `AssemblyVersionAttribute`.  To resolve this warning, use only numbers in the version attributes other than `AssemblyVersionAttribute`.
 
-The following sample generates LNK4227:
+The following example generates LNK4227:
 
 ```cpp
 // LNK4227e.cpp

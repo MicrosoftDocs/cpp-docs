@@ -30,7 +30,7 @@ To resolve this warning:
 
 ## Example
 
-The following sample generates LNK4247
+The following example generates LNK4247
 
 ```cpp
 // LNK4247.cpp

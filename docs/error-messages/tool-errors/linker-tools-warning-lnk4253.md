@@ -28,7 +28,7 @@ For more information, see,
 
 ## Example
 
-In the following sample, the linker is instructed to merge the `.rdata` section twice, but into different sections. The following sample generates LNK4253.
+In the following example, the linker is instructed to merge the `.rdata` section twice, but into different sections. The following example generates LNK4253.
 
 ```cpp
 // LNK4253.cpp

@@ -26,7 +26,7 @@ For more information, see,
 
 ## Example
 
-The following sample generates LNK4254.
+The following example generates LNK4254.
 
 ```cpp
 // LNK4254.cpp
