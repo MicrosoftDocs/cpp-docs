@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4754"
 title: "Compiler Warning (level 4) C4754"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4754"
+ms.date: 11/04/2016
 f1_keywords: ["C4754"]
 helpviewer_keywords: ["C4754"]
-ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
 ---
 # Compiler Warning (level 4) C4754
 
-Conversion rules for arithmetic operations in a comparison mean that one branch cannot be executed.
+> Conversion rules for arithmetic operations in a comparison mean that one branch cannot be executed.
+
+## Remarks
 
 The C4754 warning is issued because the result of the comparison is always the same. This indicates that one of the branches of the condition is never executed, most likely because the associated integer expression is incorrect. This code defect often occurs in incorrect integer overflow checks on 64-bit architectures.
 
@@ -16,7 +17,7 @@ Integer conversion rules are complex and there are many subtle pitfalls. As an a
 
 ## Examples
 
-This sample generates C4754:
+This example generates C4754:
 
 ```cpp
 // C4754a.cpp
@@ -52,7 +53,7 @@ unsigned long long x =
    (unsigned long long)a + (unsigned long long)b;
 ```
 
-The next sample also generates C4754.
+The next example also generates C4754.
 
 ```cpp
 // C4754b.cpp

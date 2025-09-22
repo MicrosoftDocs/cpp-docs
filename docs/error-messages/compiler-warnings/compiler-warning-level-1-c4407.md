@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4407"
 title: "Compiler Warning (level 1) C4407"
+description: "Learn more about: Compiler Warning (level 1) C4407"
 ms.date: 04/13/2021
 f1_keywords: ["C4407"]
 helpviewer_keywords: ["C4407"]
@@ -9,9 +9,9 @@ helpviewer_keywords: ["C4407"]
 
 > cast between different pointer to member representations, compiler may generate incorrect code
 
-An incorrect cast between pointer-to-member types was detected.
-
 ## Remarks
+
+An incorrect cast between pointer-to-member types was detected.
 
 C4407 can be generated because of compiler conformance work that was done in Visual Studio 2005. Pointer-to-member now requires a qualified name and the address-of operator (&).
 
@@ -19,7 +19,7 @@ C4407 can occur if you cast between a multiple inheritance pointer-to-member to 
 
 ## Example
 
-The following sample generates C4407 and shows how to fix it:
+The following example generates C4407 and shows how to fix it:
 
 ```cpp
 // C4407.cpp

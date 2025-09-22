@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: C Runtime Error R6009"
 title: "C Runtime Error R6009"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6009"
+ms.date: 11/04/2016
 f1_keywords: ["R6009"]
 helpviewer_keywords: ["R6009"]
-ms.assetid: edfb1f8b-3807-48f4-a994-318923b747ae
 ---
 # C Runtime Error R6009
 
-not enough space for environment
+> not enough space for environment
+
+## Remarks
 
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are several possible reasons for this error, but often it's caused by an extremely low memory condition, too much memory taken by environment variables, or a bug in the program.

@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4634"
 title: "Compiler Warning (level 4) C4634"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4634"
+ms.date: 11/04/2016
 f1_keywords: ["C4634"]
 helpviewer_keywords: ["C4634"]
-ms.assetid: 3e3496ce-2ac7-43d0-a48a-f514c950e81d
 ---
 # Compiler Warning (level 4) C4634
 
-XML document comment: cannot be applied:  reason
+> XML document comment: cannot be applied:  reason
+
+## Remarks
 
 XML documentation tags can not be applied to all C++ constructs.  For example, you cannot add a documentation comment to a namespace or template.
 
@@ -16,7 +17,7 @@ For more information, see [XML Documentation](../../build/reference/xml-document
 
 ## Examples
 
-The following sample generates C4634.
+The following example generates C4634.
 
 ```cpp
 // C4634.cpp
@@ -27,7 +28,7 @@ namespace hello {
 };
 ```
 
-The following sample generates C4634.
+The following example generates C4634.
 
 ```cpp
 // C4634_b.cpp
