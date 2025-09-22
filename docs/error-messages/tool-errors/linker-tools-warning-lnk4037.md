@@ -10,6 +10,8 @@ ms.assetid: 9ba02fd3-b04f-4679-bab9-26fa82cf09bb
 
 > '*symbol*' does not exist; ignored
 
+## Remarks
+
 The decorated name *symbol* could not be ordered by using the [/ORDER](../../build/reference/order-put-functions-in-order.md) option because it could not be found in the program. Check the specification of *symbol* in the order response file. For more information, see the [/ORDER (Put functions in order)](../../build/reference/order-put-functions-in-order.md) linker option.
 
 > [!NOTE]

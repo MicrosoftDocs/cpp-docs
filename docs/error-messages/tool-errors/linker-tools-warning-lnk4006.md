@@ -10,6 +10,8 @@ ms.assetid: 3a637d17-1676-4ea6-bd8b-290137d28d3b
 
 > symbol already defined in object; second definition ignored
 
+## Remarks
+
 The given `symbol`, displayed in its decorated form, was multiply defined. When this warning is encountered, `symbol` will be added twice, but only its first form will be used.
 
 You can get this warning if you try to merge two import libs into one.

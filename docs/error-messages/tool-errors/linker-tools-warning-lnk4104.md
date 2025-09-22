@@ -10,6 +10,8 @@ ms.assetid: ca6728db-d616-419a-a570-65e8445c6079
 
 > export of symbol 'symbol' should be PRIVATE
 
+## Remarks
+
 The `symbol` can be one of the following:
 
 - `DllCanUnloadNow`

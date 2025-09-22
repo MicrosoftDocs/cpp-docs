@@ -10,4 +10,6 @@ ms.assetid: a0c80242-3395-45bd-bbe7-4f31d7ac9e3a
 
 > cannot create map for .ilk file; linking nonincrementally
 
+## Remarks
+
 There was not a large enough contiguous space in shared memory for LINK to create the incremental status (.ilk) file. LINK performed a nonincremental build.

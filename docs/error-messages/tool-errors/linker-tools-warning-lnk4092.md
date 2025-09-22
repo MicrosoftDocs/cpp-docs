@@ -10,6 +10,8 @@ ms.assetid: d569ec47-a338-40e1-940b-8a8061459acb
 
 > shared writable section 'section' contains relocations; image may not run correctly
 
+## Remarks
+
 The linker emits this warning whenever you have a shared section to warn you of a potentially serious problem.
 
 One way to share data between multiple processes is to mark a section as "shared." However, marking a section as shared can cause problems. For example, you have a DLL that contains declarations like this in a shared data section:

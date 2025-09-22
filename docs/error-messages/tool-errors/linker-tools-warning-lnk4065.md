@@ -10,4 +10,6 @@ ms.assetid: aa5c9e2c-9ad3-4460-8605-4c12bbc6d423
 
 > 'function' cannot be ordered; ignored
 
+## Remarks
+
 The given function was not compiled as a packaged function. Recompile using [/Gy](../../build/reference/gy-enable-function-level-linking.md).

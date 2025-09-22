@@ -10,6 +10,8 @@ ms.assetid: f3a67a15-98c0-42ed-afcb-f5f9540e2671
 
 > unrecognized option 'option'; ignored
 
+## Remarks
+
 The given option is not a valid option for this tool. The tool ignored the option.
 
 To see a list of valid options, run the tool with no arguments or options.

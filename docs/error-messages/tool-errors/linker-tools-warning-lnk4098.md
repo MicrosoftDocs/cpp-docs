@@ -10,6 +10,8 @@ ms.assetid: 1f1b1408-1316-4e34-80f5-6a02f2db0ac1
 
 > defaultlib '*library*' conflicts with use of other libs; use /NODEFAULTLIB:*library*
 
+## Remarks
+
 You're trying to link with incompatible libraries.
 
 > [!NOTE]

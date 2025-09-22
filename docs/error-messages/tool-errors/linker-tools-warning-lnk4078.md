@@ -10,6 +10,8 @@ ms.assetid: 5a16796d-6caf-42d9-8f65-b042843eafb8
 
 > multiple 'section name' sections found with different attributes
 
+## Remarks
+
 LINK found two or more sections that have the same name but different attributes.
 
 This warning can be caused by an import library or exports file that was created by a previous version of LINK or LIB.

@@ -10,6 +10,8 @@ ms.assetid: f39ad3f9-c263-4cf0-9d70-259fc56ac96d
 
 > ignoring "option1" due to "option2" specification
 
+## Remarks
+
 The second option overrides the first.
 
 Mutually exclusive linker options are being specified.  Examine your linker options.  Where linker options are specified depends on how you are building your project.
