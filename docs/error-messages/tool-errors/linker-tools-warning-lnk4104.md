@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4104"
 title: "Linker Tools Warning LNK4104"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4104"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4104"]
 helpviewer_keywords: ["LNK4104"]
-ms.assetid: ca6728db-d616-419a-a570-65e8445c6079
 ---
 # Linker Tools Warning LNK4104
 

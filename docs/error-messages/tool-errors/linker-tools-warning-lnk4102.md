@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4102"
 title: "Linker Tools Warning LNK4102"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4102"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4102"]
 helpviewer_keywords: ["LNK4102"]
-ms.assetid: bfd1b17e-05c7-4bc2-80d6-2888b1a425b2
 ---
 # Linker Tools Warning LNK4102
 

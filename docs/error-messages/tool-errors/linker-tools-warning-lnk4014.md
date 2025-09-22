@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4014"
 title: "Linker Tools Warning LNK4014"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4014"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4014"]
 helpviewer_keywords: ["LNK4014"]
-ms.assetid: 394903e9-3ded-4ea4-b7c0-a3535d4b4da4
 ---
 # Linker Tools Warning LNK4014
 

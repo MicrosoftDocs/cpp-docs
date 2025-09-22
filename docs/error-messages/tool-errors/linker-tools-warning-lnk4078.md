@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4078"
 title: "Linker Tools Warning LNK4078"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4078"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4078"]
 helpviewer_keywords: ["LNK4078"]
-ms.assetid: 5a16796d-6caf-42d9-8f65-b042843eafb8
 ---
 # Linker Tools Warning LNK4078
 

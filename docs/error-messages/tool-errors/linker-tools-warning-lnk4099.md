@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4099"
 title: "Linker Tools Warning LNK4099"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4099"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4099"]
 helpviewer_keywords: ["LNK4099"]
-ms.assetid: 358170a4-07cd-43fe-918f-82c32757ffc5
 ---
 # Linker Tools Warning LNK4099
 

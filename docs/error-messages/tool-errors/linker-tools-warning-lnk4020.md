@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4020"
 title: "Linker Tools Warning LNK4020"
-ms.date: "05/29/2018"
+description: "Learn more about: Linker Tools Warning LNK4020"
+ms.date: 05/29/2018
 f1_keywords: ["LNK4020"]
 helpviewer_keywords: ["LNK4020"]
 ---

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4086"
 title: "Linker Tools Warning LNK4086"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4086"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4086"]
 helpviewer_keywords: ["LNK4086"]
-ms.assetid: ea1eecbb-ba2c-41bb-9a4f-fa0808a4b92d
 ---
 # Linker Tools Warning LNK4086
 

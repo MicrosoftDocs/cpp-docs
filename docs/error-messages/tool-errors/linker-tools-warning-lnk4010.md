@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4010"
 title: "Linker Tools Warning LNK4010"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4010"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4010"]
 helpviewer_keywords: ["LNK4010"]
-ms.assetid: 2824cf99-4174-4b60-a6e2-c01e9f1ee52d
 ---
 # Linker Tools Warning LNK4010
 

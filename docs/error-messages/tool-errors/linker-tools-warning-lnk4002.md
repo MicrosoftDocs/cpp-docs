@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4002"
 title: "Linker Tools Warning LNK4002"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4002"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4002"]
 helpviewer_keywords: ["LNK4002"]
-ms.assetid: 09f81af5-e51c-496c-a6eb-2863e85375c3
 ---
 # Linker Tools Warning LNK4002
 

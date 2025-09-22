@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4070"
 title: "Linker Tools Warning LNK4070"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4070"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4070"]
 helpviewer_keywords: ["LNK4070"]
-ms.assetid: f95f179a-fff9-427e-bd51-466b3934517f
 ---
 # Linker Tools Warning LNK4070
 

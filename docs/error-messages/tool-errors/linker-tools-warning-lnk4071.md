@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4071"
 title: "Linker Tools Warning LNK4071"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4071"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4071"]
 helpviewer_keywords: ["LNK4071"]
-ms.assetid: 803f8c34-8219-4f55-a4ae-7133ceff2ba3
 ---
 # Linker Tools Warning LNK4071
 

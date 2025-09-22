@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4037"
 title: "Linker Tools Warning LNK4037"
-ms.date: "10/04/2017"
+description: "Learn more about: Linker Tools Warning LNK4037"
+ms.date: 10/04/2017
 f1_keywords: ["LNK4037"]
 helpviewer_keywords: ["LNK4037"]
-ms.assetid: 9ba02fd3-b04f-4679-bab9-26fa82cf09bb
 ---
 # Linker Tools Warning LNK4037
 
