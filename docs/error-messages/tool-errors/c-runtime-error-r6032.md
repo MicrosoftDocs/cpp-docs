@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: C Runtime Error R6032"
 title: "C Runtime Error R6032"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6032"
+ms.date: 11/04/2016
 f1_keywords: ["R6032"]
 helpviewer_keywords: ["R6032"]
-ms.assetid: 52092a63-cc51-444a-bfc3-fad965a3558e
 ---
 # C Runtime Error R6032
 
-Not enough space for locale information
+> Not enough space for locale information
+
+## Remarks
 
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are several possible reasons for this error, but often it's caused by an extremely low memory condition, or by a bug in the program.

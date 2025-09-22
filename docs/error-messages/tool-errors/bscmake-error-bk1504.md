@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: BSCMAKE Error BK1504"
 title: "BSCMAKE Error BK1504"
-ms.date: "11/04/2016"
+description: "Learn more about: BSCMAKE Error BK1504"
+ms.date: 11/04/2016
 f1_keywords: ["BK1504"]
 helpviewer_keywords: ["BK1504"]
-ms.assetid: e6d1a171-1472-4b7e-a04b-1a68a561675f
 ---
 # BSCMAKE Error BK1504
 
-cannot position in file 'filename' [: reason]
+> cannot position in file 'filename' [: reason]
+
+## Remarks
 
 BSCMAKE could not move to a location in the file.
 

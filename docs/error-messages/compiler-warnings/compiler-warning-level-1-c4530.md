@@ -1,18 +1,17 @@
 ---
 title: "Compiler Warning (level 1) C4530"
 description: "Reference guide to Microsoft C++ compiler warning C4530."
-ms.date: "04/02/2020"
+ms.date: 04/02/2020
 f1_keywords: ["C4530"]
 helpviewer_keywords: ["C4530"]
-ms.assetid: a04dcdb2-84db-459d-9e5e-4e743887465f
 ---
 # Compiler Warning (level 1) C4530
 
 > C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
 
-The code uses C++ exception handling, but [/EHsc](../../build/reference/eh-exception-handling-model.md) wasn't included in the compiler options.
-
 ## Remarks
+
+The code uses C++ exception handling, but [/EHsc](../../build/reference/eh-exception-handling-model.md) wasn't included in the compiler options.
 
 The compiler requires the **`/EHsc`** option to build C++ code that follows the C++ standard for exception handling. Standard C++ *unwind semantics* specifies that objects and stack frames constructed between where an exception is thrown and where it's caught must be destroyed and their resources recovered. This process is known as *unwinding the stack*.
 
@@ -26,7 +25,7 @@ If no exceptions can possibly be thrown in your executable, you may safely ignor
 
 ## Example
 
-The following sample generates C4530:
+The following example generates C4530:
 
 ```cpp
 // C4530.cpp
@@ -36,4 +35,4 @@ int main() {
 }
 ```
 
-Compile the sample with **`/EHsc`** to resolve the warning.
+Compile the example with **`/EHsc`** to resolve the warning.
