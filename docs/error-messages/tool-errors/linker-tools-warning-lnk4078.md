@@ -22,7 +22,7 @@ Recreate the file and relink.
 
 LNK4078 can also be caused by a breaking change: the section named by [init_seg](../../preprocessor/init-seg.md) on x86 was read/write, it is now read only.
 
-The following sample generates LNK4078.
+The following example generates LNK4078.
 
 ```cpp
 // LNK4078.cpp
