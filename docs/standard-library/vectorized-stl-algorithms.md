@@ -10,7 +10,7 @@ helpviewer_keywords: ["_USE_STD_VECTOR_ALGORITHMS", "_USE_STD_VECTOR_FLOATING_AL
 Under certain conditions, STL algorithms execute not element-wise, but multiple element at once on a single CPU core. This is possible due to SIMD (single instruction, multiple data). The use of such approach instead of element-wise approach is called vectorization. An implementation that is not vectorized is called scalar.
 
 The conditions for vectorization are:
- - The container or range is contiguous. `array`, `vector`, and `basic_string` are contiguous containers, `span` and `basic_string_view` provide contiguous ranges.
+ - The container or range is contiguous. `array`, `vector`, and `basic_string` are contiguous containers, `span` and `basic_string_view` provide contiguous ranges. Built-in array elements also form contiguous range. In contrast, `list` and `map` are not contiguous containers.
  - There are such SIMD instructions available for the target platform that implement the particular algorithm on particular element types efficiently. Often this is true for plain types (like built-in integers) and simple operations.
  - Either of the following:
      - The compiler is capable of emitting vectorized machine code for an implementation written as scalar code (auto-vectorization)
@@ -18,15 +18,15 @@ The conditions for vectorization are:
 
 ## Auto-vectorization in STL
 
-See [Auto-Vectorizer](../parallel/auto-parallelization-and-auto-vectorization.md#auto-vectorizer). It applies to the STL implementation code the same way as to user code.
+See [Auto-Vectorizer](../parallel/auto-parallelization-and-auto-vectorization.md#auto-vectorizer) and the discussion of [`/arch`](../build/reference/arch-minimum-cpu-architecture.md) switch there. It applies to the STL implementation code the same way as to user code.
 
 Algorithms like `transform`, `reduce`, `accumulate` heavily benefit from auto-vectorization.
 
 ## Manual vectorization in STL
 
-For x64 and x86 targets, certain algorithms have manual vectorization implemented. This implementation is pre-compiled, and uses runtime CPU dispatch, so it is engaged on suitable CPUs only.
+For x64 and x86 targets, certain algorithms have manual vectorization implemented. This implementation is separately compiled, and uses runtime CPU dispatch, so it is engaged on suitable CPUs only.
 
-The manually vectorized algorithms use template meta-programming to detect the suitable element types, so they only vectorized for simple types, like standard integer types.
+The manually vectorized algorithms use template meta-programming to detect the suitable element types, so they are only vectorized for simple types, like standard integer types.
 
 Generally, programs either benefit in performance from this manual vectorization or are unaffected by it. In case of any problem, you can disable manual vectorization by defining `_USE_STD_VECTOR_ALGORITHMS` macro set to 0. It defaults to 1 on x64 and x86, which means that manually vectorized algorithms are enabled by default.
 
