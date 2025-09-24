@@ -7,10 +7,10 @@ helpviewer_keywords: ["_USE_STD_VECTOR_ALGORITHMS", "_USE_STD_VECTOR_FLOATING_AL
 ---
 # Vectorized STL Algorithms
 
-Under certain conditions, STL algorithms execute not element-wise, but multiple element at once on a single CPU core. This is possible due to SIMD (single instruction, multiple data). The use of such approach instead of element-wise approach is called vectorization. An implementation that is not vectorized is called scalar.
+Under certain conditions, STL algorithms execute not element-wise, but multiple elements at once on a single CPU core. This is possible due to SIMD (single instruction, multiple data). The use of such an approach instead of element-wise approach is called vectorization. An implementation that is not vectorized is called scalar.
 
 The conditions for vectorization are:
- - The container or range is contiguous. `array`, `vector`, and `basic_string` are contiguous containers, `span` and `basic_string_view` provide contiguous ranges. Built-in array elements also form contiguous range. In contrast, `list` and `map` are not contiguous containers.
+ - The container or range is contiguous. `array`, `vector`, and `basic_string` are contiguous containers, `span` and `basic_string_view` provide contiguous ranges. Built-in array elements also form contiguous ranges. In contrast, `list` and `map` are not contiguous containers.
  - There are such SIMD instructions available for the target platform that implement the particular algorithm on particular element types efficiently. Often this is true for plain types (like built-in integers) and simple operations.
  - Either of the following:
      - The compiler is capable of emitting vectorized machine code for an implementation written as scalar code (auto-vectorization)
@@ -28,7 +28,7 @@ For x64 and x86 targets, certain algorithms have manual vectorization implemente
 
 The manually vectorized algorithms use template meta-programming to detect the suitable element types, so they are only vectorized for simple types, like standard integer types.
 
-Generally, programs either benefit in performance from this manual vectorization or are unaffected by it. In case of any problem, you can disable manual vectorization by defining `_USE_STD_VECTOR_ALGORITHMS` macro set to 0. It defaults to 1 on x64 and x86, which means that manually vectorized algorithms are enabled by default.
+Generally, programs either benefit in performance from this manual vectorization or are unaffected by it. In case of any problem, you can disable manual vectorization by defining the `_USE_STD_VECTOR_ALGORITHMS` macro set to 0. It defaults to 1 on x64 and x86, which means that manually vectorized algorithms are enabled by default.
 
 The following algorithms have manual vectorization controlled via `_USE_STD_VECTOR_ALGORITHMS` macro:
  - `contains`
