@@ -201,7 +201,7 @@ HRESULT Open(LPCSTR szProgID,
 [in] The user's password.
 
 *nInitMode*<br/>
-[in] Database initialization mode. See [Initialization Properties](/previous-versions/windows/desktop/ms723127(v=vs.85))in the *OLE DB Programmer's Reference* in the Windows SDK for a list of valid initialization modes. If *nInitMode* is zero, no initialization mode is included in the property set used to open the connection.
+[in] Database initialization mode. See [Initialization Properties](/previous-versions/windows/desktop/ms723127(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK for a list of valid initialization modes. If *nInitMode* is zero, no initialization mode is included in the property set used to open the connection.
 
 *szProgID*<br/>
 [in] A program identifier.

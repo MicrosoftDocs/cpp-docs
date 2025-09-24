@@ -770,7 +770,7 @@ Key value to search for.
 
 ### Remarks
 
-If at least one element in the controlled sequence has equivalent ordering with *`key`*, the member function returns an iterator designating one of those elements; otherwise it returns[`end()`](#end). You use it to locate an element currently in the controlled sequence that matches a specified key.
+If at least one element in the controlled sequence has equivalent ordering with *`key`*, the member function returns an iterator designating one of those elements; otherwise it returns [`end()`](#end). You use it to locate an element currently in the controlled sequence that matches a specified key.
 
 ### Example
 
