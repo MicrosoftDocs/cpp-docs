@@ -15,7 +15,7 @@ The class template istreambuf_iterator describes an input iterator object that e
 ## Syntax
 
 ```cpp
-template <class CharType class Traits = char_traits <CharType>>
+template <class CharType, class Traits = char_traits <CharType>>
 class istreambuf_iterator
 : public iterator<input_iterator_tag, CharType, typename Traits ::off_type, CharType*, CharType&>
 ```
