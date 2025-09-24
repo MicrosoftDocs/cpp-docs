@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: _expand_dbg"
 title: "_expand_dbg"
-ms.date: "11/04/2016"
+description: "Learn more about: _expand_dbg"
+ms.date: 11/04/2016
 api_name: ["_expand_dbg"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["expand_dbg", "_expand_dbg"]
 helpviewer_keywords: ["memory blocks, changing size", "expand_dbg function", "_expand_dbg function"]
-ms.assetid: dc58c91f-72a8-48c6-b643-fe130fb6c1fd
 ---
 # `_expand_dbg`
 
