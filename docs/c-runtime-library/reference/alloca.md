@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _alloca"
 title: "_alloca"
+description: "Learn more about: _alloca"
 ms.date: 01/05/2022
 api_name: ["_alloca"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
