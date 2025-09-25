@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4221"
 title: "Linker Tools Warning LNK4221"
+description: "Learn more about: Linker Tools Warning LNK4221"
 ms.date: 06/29/2022
 f1_keywords: ["LNK4221"]
 helpviewer_keywords: ["LNK4221"]
-ms.assetid: 8e2eb2de-9532-4b85-908a-8c9ff5c4cccb
 ---
 # Linker Tools Warning LNK4221
 
 > This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+
+## Example
 
 Consider the following two code snippets, `a.cpp`:
 

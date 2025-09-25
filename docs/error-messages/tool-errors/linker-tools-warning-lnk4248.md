@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4248"
 title: "Linker Tools Warning LNK4248"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4248"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4248"]
 helpviewer_keywords: ["LNK4248"]
-ms.assetid: e40523ff-e3cb-4ba6-ab79-23f0f339f6cf
 ---
 # Linker Tools Warning LNK4248
 
-unresolved typeref token (token) for 'type'; image may not run
+> unresolved typeref token (token) for 'type'; image may not run
+
+## Remarks
 
 A type doesn't have a definition in MSIL metadata.
 
@@ -26,7 +27,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Examples
 
-The following sample generates LNK4248. Define struct A to resolve.
+The following example generates LNK4248. Define struct A to resolve.
 
 ```cpp
 // LNK4248.cpp
@@ -40,7 +41,7 @@ int main() {
 }
 ```
 
-The following sample has a forward definition of a type.
+The following example has a forward definition of a type.
 
 ```cpp
 // LNK4248_2.cpp
@@ -55,7 +56,7 @@ int main() {
 }
 ```
 
-The following sample generates LNK4248.
+The following example generates LNK4248.
 
 ```cpp
 // LNK4248_3.cpp

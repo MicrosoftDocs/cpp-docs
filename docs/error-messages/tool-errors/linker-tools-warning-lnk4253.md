@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4253"
 title: "Linker Tools Warning LNK4253"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4253"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4253"]
 helpviewer_keywords: ["LNK4253"]
-ms.assetid: ec7433a9-aa9c-495a-a9f2-075e7bc3e7bc
 ---
 # Linker Tools Warning LNK4253
 
-section 'section1' not merged into 'section2'; already merged into 'section3'
+> section 'section1' not merged into 'section2'; already merged into 'section3'
+
+## Remarks
 
 The linker detected multiple, conflicting merge requests. The linker will ignore one of the requests.
 
@@ -26,7 +27,7 @@ For more information, see,
 
 ## Example
 
-In the following sample, the linker is instructed to merge the `.rdata` section twice, but into different sections. The following sample generates LNK4253.
+In the following example, the linker is instructed to merge the `.rdata` section twice, but into different sections. The following example generates LNK4253.
 
 ```cpp
 // LNK4253.cpp

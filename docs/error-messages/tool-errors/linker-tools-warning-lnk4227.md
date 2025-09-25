@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4227"
 title: "Linker Tools Warning LNK4227"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4227"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4227"]
 helpviewer_keywords: ["LNK4227"]
-ms.assetid: 941a0414-9964-4e02-8487-f9daa42ef7f9
 ---
 # Linker Tools Warning LNK4227
 
 > metadata operation warning (*HRESULT*) : *warning_message*
+
+## Remarks
 
 The linker detected metadata differences when merging:
 
@@ -26,7 +27,7 @@ The metadata problems must be fixed to resolve the warning.
 
 LNK4227 is generated when a referenced assembly was signed differently than the assembly that references it.
 
-The following sample generates LNK4227:
+The following example generates LNK4227:
 
 ```cpp
 // LNK4227.cpp
@@ -57,7 +58,7 @@ ref class MyClass
 
 LNK4227 can also be generated when version numbers in the wrong format are passed to assembly attributes.  The '*' notation is specific to the `AssemblyVersionAttribute`.  To resolve this warning, use only numbers in the version attributes other than `AssemblyVersionAttribute`.
 
-The following sample generates LNK4227:
+The following example generates LNK4227:
 
 ```cpp
 // LNK4227e.cpp

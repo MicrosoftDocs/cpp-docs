@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4286"
 title: "Linker Tools Warning LNK4286"
-ms.date: "04/15/2019"
+description: "Learn more about: Linker Tools Warning LNK4286"
+ms.date: 04/15/2019
 f1_keywords: ["LNK4286"]
 helpviewer_keywords: ["LNK4286"]
 ---
@@ -9,9 +9,9 @@ helpviewer_keywords: ["LNK4286"]
 
 > symbol '*symbol*' defined in '*filename_1.obj*' is imported by '*filename_2.obj*'
 
-[__declspec(dllimport)](../../cpp/dllexport-dllimport.md) was specified for *symbol* even though the symbol is defined in object file *filename_1.obj* in the same image. Remove the `__declspec(dllimport)` modifier to resolve this warning.
-
 ## Remarks
+
+[__declspec(dllimport)](../../cpp/dllexport-dllimport.md) was specified for *symbol* even though the symbol is defined in object file *filename_1.obj* in the same image. Remove the `__declspec(dllimport)` modifier to resolve this warning.
 
 Warning LNK4286 is a more general version of [Linker Tools Warning LNK4217](linker-tools-warning-lnk4217.md). The linker generates Warning LNK4286 when it can tell which object file referenced the symbol, but not which function.
 

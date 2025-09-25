@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Linker tools warning LNK4306"
 title: "Linker tools warning LNK4306"
+description: "Learn more about: Linker tools warning LNK4306"
 ms.date: 01/30/2024
 f1_keywords: ["LNK4306"]
 helpviewer_keywords: ["LNK4306"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["LNK4306"]
 # Linker tools warning LNK4306
 
 > The auxiliary delayload import address table is not properly aligned with the primary delayload import address table. This may have negative perf impact.
+
+## Remarks
 
 This warning indicates a problem has occurred within the linker.
 
