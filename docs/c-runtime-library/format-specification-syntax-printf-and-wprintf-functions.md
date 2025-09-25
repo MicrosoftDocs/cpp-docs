@@ -1,9 +1,8 @@
 ---
 title: "Format Specification Syntax: `printf` and `wprintf` Functions"
-description: "Describes the format specifier syntax for the Microsoft C runtime `printf` and `wprintf` functions" 
-ms.date: "10/26/2020"
+description: "Describes the format specifier syntax for the Microsoft C runtime `printf` and `wprintf` functions"
+ms.date: 10/26/2020
 helpviewer_keywords: ["format specification fields for printf function", "printf function format specification fields", "flag directives, printf function", "type fields, printf function", "width fields, printf function", "precision fields, printf function"]
-ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
 ---
 # Format specification syntax: `printf` and `wprintf` functions
 
