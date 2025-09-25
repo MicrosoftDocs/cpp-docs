@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: restrict (C++ AMP)"
 title: "restrict (C++ AMP)"
-ms.date: "11/04/2016"
+description: "Learn more about: restrict (C++ AMP)"
+ms.date: 11/04/2016
 f1_keywords: ["cpu_CPP", "amp_CPP"]
 helpviewer_keywords: ["restrict clause (C++ AMP)"]
-ms.assetid: 07d3291f-7edf-456b-8828-283ac8673661
 ---
 # restrict (C++ AMP)
 

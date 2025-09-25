@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /guard (Enable Control Flow Guard)"
 title: "/guard (Enable Control Flow Guard)"
+description: "Learn more about: /guard (Enable Control Flow Guard)"
 ms.date: 2/24/2025
 f1_keywords: ["/guard", "VC.Project.VCCLCompilerTool.ControlFlowGuard"]
 ---

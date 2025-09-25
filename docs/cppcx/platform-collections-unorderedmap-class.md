@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Platform::Collections::UnorderedMap Class"
 title: "Platform::Collections::UnorderedMap Class"
-ms.date: "12/30/2016"
+description: "Learn more about: Platform::Collections::UnorderedMap Class"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::UnorderedMap"]
-ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
 ---
 # Platform::Collections::UnorderedMap Class
 

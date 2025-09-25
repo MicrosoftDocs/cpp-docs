@@ -1,6 +1,6 @@
 ---
-description: "Learn more about the pack pragma directive in Microsoft C/C++"
 title: "pack pragma"
+description: "Learn more about the pack pragma directive in Microsoft C/C++"
 ms.date: 01/22/2021
 f1_keywords: ["pack_CPP", "vc-pragma.pack"]
 helpviewer_keywords: ["pragma, pack", "pack pragma"]

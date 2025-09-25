@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: _cgets, _cgetws"
 title: "_cgets, _cgetws"
-ms.date: "4/2/2020"
+description: "Learn more about: _cgets, _cgetws"
+ms.date: 4/2/2020
 api_name: ["_cgetws", "_cgets", "_o__cgets", "_o__cgetws"]
 api_location: ["msvcr100.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cgetws", "_cgetws", "_cgets"]
 helpviewer_keywords: ["_cgetws function", "strings [C++], getting from console", "console, getting strings from", "_cgets function", "cgetws function", "cgets function"]
-ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
 ---
 # `_cgets`, `_cgetws`
 

@@ -1,6 +1,6 @@
 ---
 title: "ARM64 exception handling"
-description: Describes the exception handling conventions and data used by windows on ARM64.
+description: "Describes the exception handling conventions and data used by windows on ARM64."
 ms.date: 01/13/2023
 ---
 # ARM64 exception handling

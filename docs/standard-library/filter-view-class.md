@@ -1,5 +1,5 @@
 ---
-title: filter_view class (C++ Standard Library)
+title: "filter_view class (C++ Standard Library)"
 description: "API reference for the Standard Template Library (STL) <ranges> filter_view class, which is a view that filters out elements of a range that don't match a predicate."
 ms.date: 09/27/2022
 f1_keywords: ["ranges/std::filter_view", "ranges/std::filter_view::base", "ranges/std::filter_view::begin", "ranges/std::filter_view::empty", "ranges/std::filter_view::end", "ranges/std::filter_view::operator bool", "ranges/std::filter_view::pred", "ranges/std::filter_view::back", "ranges/std::filter_view::front"]

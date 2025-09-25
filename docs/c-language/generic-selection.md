@@ -1,7 +1,7 @@
 ---
 title: "Generic selection (C11)"
 description: "Describes the C11 _Generic keyword used in the Microsoft Visual C compiler"
-ms.date: "6/29/2021"
+ms.date: 6/29/2021
 helpviewer_keywords: ["_Generic keyword [C]"]
 ---
 

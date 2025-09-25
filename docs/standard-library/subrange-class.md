@@ -1,5 +1,5 @@
 ---
-title: subrange class (C++ Standard Library)
+title: "subrange class (C++ Standard Library)"
 description: "API reference for the Standard Template Library (STL) <ranges> subrange class, which is a view of the elements of a range as defined by a begin iterator and a sentinel."
 ms.date: 10/05/2022
 f1_keywords: ["ranges/std::subrange", "ranges/std::subrange::begin", "ranges/std::subrange::data", "ranges/std::subrange::empty", "ranges/std::subrange::end", "ranges/std::subrange::get", "ranges/std::subrange::size", "ranges/std::subrange::operator bool", "ranges/std::subrange::operator PairLike", "ranges/std::subrange::back", "ranges/std::subrange::front", "ranges/std::subrange::operator[]", "ranges/std::subrange::advance", "ranges/std::subrange::prev", "ranges/std::subrange::next"]

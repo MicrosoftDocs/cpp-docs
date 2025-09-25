@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Templates (C++)"
 title: "Templates (C++)"
-ms.date: "12/27/2019"
+description: "Learn more about: Templates (C++)"
+ms.date: 12/27/2019
 f1_keywords: ["template_cpp"]
 helpviewer_keywords: ["templates, C++", "templates [C++]"]
-ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
 ---
 # Templates (C++)
 

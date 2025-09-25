@@ -1,14 +1,13 @@
 ---
 title: "ctan, ctanf, ctanl"
 description: "API reference for ctan, ctanf, and ctanl; which retrieve the tangent of a complex number."
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 api_name: ["ctan", "ctanf", "ctanl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ctan", "ctanf", "ctanl", "complex/ctan", "complex/ctanf", "complex/ctanl"]
 helpviewer_keywords: ["ctan function", "ctanf function", "ctanl function"]
-ms.assetid: d3cbd25c-1e93-4a6d-8154-da42921f7223
 ---
 # `ctan`, `ctanf`, `ctanl`
 
