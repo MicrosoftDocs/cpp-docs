@@ -88,7 +88,7 @@ A *`whitespace`* may consist of space and tab characters, which are ignored. *`d
 
 | Routine | Required header |
 |---|---|
-| **`strtoumax`**, **`wcstoumax`**, **`_strtoumax_l`**,  **`_wcstoumax_l`** | \<inttypes.h> |
+| **`strtoumax`**, **`wcstoumax`**, **`_strtoumax_l`**, **`_wcstoumax_l`** | \<inttypes.h> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

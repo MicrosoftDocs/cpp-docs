@@ -8,7 +8,7 @@ ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
 ---
 # Parameter validation
 
-Most of the security-enhanced CRT functions, and many that aren't, validate their parameters for things like checking pointers for `NULL`,  that integers fall into a valid range, or that enumeration values are valid. If an invalid parameter is found, the invalid parameter handler is called.
+Most of the security-enhanced CRT functions, and many that aren't, validate their parameters for things like checking pointers for `NULL`, that integers fall into a valid range, or that enumeration values are valid. If an invalid parameter is found, the invalid parameter handler is called.
 
 ## Invalid parameter handler routine
 

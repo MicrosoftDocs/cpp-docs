@@ -107,7 +107,7 @@ The following sample shows how to use the *push*, *pop*, and *show* syntax.
 
 // pop to the identifier and then set
 // the value of the current packing alignment:
-#pragma pack(pop, r1, 2)   // n = 2 , stack popped
+#pragma pack(pop, r1, 2)   // n = 2, stack popped
 #pragma pack(show)   // C4810
 ```
 

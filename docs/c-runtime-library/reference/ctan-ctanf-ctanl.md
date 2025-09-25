@@ -56,7 +56,7 @@ Because C++ allows overloading, you can call overloads of **`ctan`** that take a
 
 | Routine | C header | C++ header |
 |---|---|---|
-| **`ctan`**,  **`ctanf`**, **`ctanl`** | \<complex.h> | \<ccomplex> |
+| **`ctan`**, **`ctanf`**, **`ctanl`** | \<complex.h> | \<ccomplex> |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

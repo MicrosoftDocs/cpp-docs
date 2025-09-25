@@ -17,7 +17,7 @@ using file_clock = std::filesystem::_File_time_clock; // C++20
 
 ## Remarks
 
-In the Microsoft implementation, the epoch, or the time from which the `file_clock` starts measuring time,  is 1/1/1601 00:00:00.
+In the Microsoft implementation, the epoch, or the time from which the `file_clock` starts measuring time, is 1/1/1601 00:00:00.
 
 The ISO C++ Standard provides a choice between providing `to_sys()` and `from_sys()`, or `to_utc()` and `from_utc()`. The Microsoft implementation chose [to_utc](#to_utc) and [from_utc](#from_utc).
 

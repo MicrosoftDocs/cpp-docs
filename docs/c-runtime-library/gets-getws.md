@@ -14,7 +14,7 @@ helpviewer_keywords: ["getws function", "getts function", "_getws function", "li
 Gets a line from the **`stdin`** stream. More secure versions of these functions are available; see [`gets_s`, `_getws_s`](./reference/gets-s-getws-s.md).
 
 > [!IMPORTANT]
-> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT. The secure versions of these functions,  `gets_s` and `_getws_s`, are still available. For information on these alternative functions, see [`gets_s`, `_getws_s`](./reference/gets-s-getws-s.md).
+> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT. The secure versions of these functions, `gets_s` and `_getws_s`, are still available. For information on these alternative functions, see [`gets_s`, `_getws_s`](./reference/gets-s-getws-s.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

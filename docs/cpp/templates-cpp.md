@@ -157,7 +157,7 @@ class MyClass2
 };
 ```
 
-Because the *Arr* parameter itself has no body, its parameter names are not needed. In fact, it is an error to refer to *Arr*'s typename or class parameter names from within the body of `MyClass2`. For this reason,  *Arr*'s type parameter names can be omitted, as shown in this example:
+Because the *Arr* parameter itself has no body, its parameter names are not needed. In fact, it is an error to refer to *Arr*'s typename or class parameter names from within the body of `MyClass2`. For this reason, *Arr*'s type parameter names can be omitted, as shown in this example:
 
 ```cpp
 template<typename T, template<typename, int> class Arr>

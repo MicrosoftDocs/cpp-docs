@@ -243,7 +243,7 @@ Schema element details:
 | `TIncludeAll` | Rule action for all rules |
 | `TRule` | Rule ID with rule action |
 | `TRules` | Collection of one or more rules |
-| `TRuleSet` | Ruleset file format consisting of localization information, rule hint paths, include all information, include information,  rules information, name, description, and tools version information |
+| `TRuleSet` | Ruleset file format consisting of localization information, rule hint paths, include all information, include information, rules information, name, description, and tools version information |
 | `TRuleAction` | Enumeration describing a rule action such as an error, warning, info, hidden, or none |
 | `TIncludeAction` | Enumeration describing a rule action such as an error, warning, info, hidden, none, or default |
 | `TIncludeAllAction` | Enumeration describing a rule action such as an error, warning, info, or hidden |

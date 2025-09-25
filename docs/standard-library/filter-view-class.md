@@ -2,7 +2,7 @@
 title: filter_view class (C++ Standard Library)
 description: "API reference for the Standard Template Library (STL) <ranges> filter_view class, which is a view that filters out elements of a range that don't match a predicate."
 ms.date: 09/27/2022
-f1_keywords: ["ranges/std::filter_view", "ranges/std::filter_view::base", "ranges/std::filter_view::begin", "ranges/std::filter_view::empty", "ranges/std::filter_view::end", "ranges/std::filter_view::operator bool",  "ranges/std::filter_view::pred", "ranges/std::filter_view::back", "ranges/std::filter_view::front"]
+f1_keywords: ["ranges/std::filter_view", "ranges/std::filter_view::base", "ranges/std::filter_view::begin", "ranges/std::filter_view::empty", "ranges/std::filter_view::end", "ranges/std::filter_view::operator bool", "ranges/std::filter_view::pred", "ranges/std::filter_view::back", "ranges/std::filter_view::front"]
 helpviewer_keywords: ["std::ranges::filter_view [C++]", "std::ranges::filter_view::base [C++]", "std::ranges::filter_view::begin [C++]", "std::ranges::filter_view::empty [C++]", "std::ranges::filter_view::end [C++]", "std::ranges::filter_view::pred [C++]", "std::ranges::filter_view::back [C++]", "std::ranges::filter_view::front [C++]", "std::ranges::filter_view::operator bool [C++]"]
 dev_langs: ["C++"]
 ---

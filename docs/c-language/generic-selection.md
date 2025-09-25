@@ -26,7 +26,7 @@ For example, the expression `_Generic(42, int: "integer", char: "character", def
 
 The first *`assignment-expression`* is called the controlling expression. The type of the controlling expression is determined at compile time and matched against the *`assoc-list`* to find which expression to evaluate and return. The controlling expression isn't evaluated. For example, `_Generic(intFunc(), int: "integer", default: "error");` doesn't result in a call at runtime to `intFunc`.
 
-When the type of the controlling expression is determined, `const`,  `volatile`, and `restrict` are removed before matching against *`assoc-list`*.
+When the type of the controlling expression is determined, `const`, `volatile`, and `restrict` are removed before matching against *`assoc-list`*.
 
 Entries in the `assoc-list` that aren't chosen aren't evaluated.
 

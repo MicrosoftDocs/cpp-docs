@@ -15,7 +15,7 @@ The following table lists the limits on the values of floating-point constants. 
 
 |Constant|Meaning|Value|
 |--------------|-------------|-----------|
-|`FLT_DIG`<br/>`DBL_DIG`<br/>`LDBL_DIG`|Number of digits, q,  such that a floating-point number with q decimal digits can be rounded  into a floating-point representation and back without loss of precision.|6<br/>15<br/>15|
+|`FLT_DIG`<br/>`DBL_DIG`<br/>`LDBL_DIG`|Number of digits, q, such that a floating-point number with q decimal digits can be rounded  into a floating-point representation and back without loss of precision.|6<br/>15<br/>15|
 |`FLT_EPSILON`<br/>`DBL_EPSILON`<br/>`LDBL_EPSILON`|Smallest positive number  x, such that x + 1.0 is  not equal to 1.0.|1.192092896e-07F<br/>2.2204460492503131e-016<br/>2.2204460492503131e-016|
 |`FLT_GUARD`||0|
 |`FLT_MANT_DIG`<br/>`DBL_MANT_DIG`<br/>`LDBL_MANT_DIG`|Number of digits in the  radix specified by `FLT_RADIX` in the  floating-point significand. The radix is 2; hence  these values specify bits.|24<br/>53<br/>53|

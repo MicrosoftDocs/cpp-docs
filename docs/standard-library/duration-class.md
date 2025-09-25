@@ -156,7 +156,7 @@ A duration type `D1` is *incommensurable* with another duration type `D2` if `D2
 
 Unless *`Rep2`* is implicitly convertible to `rep` and either `treat_as_floating_point<rep>`*holds true* or `treat_as_floating_point<Rep2>`*holds false*, the second constructor doesn't participate in overload resolution. For more information, see [<type_traits>](type-traits.md).
 
-Unless no overflow is induced in the conversion and `treat_as_floating_point<rep>`*holds true*,  or both `ratio_divide<Period2, period>::den` equals 1 and `treat_as_floating_point<Rep2>`*holds false*, the third constructor doesn't participate in overload resolution. For more information, see [<type_traits>](type-traits.md).
+Unless no overflow is induced in the conversion and `treat_as_floating_point<rep>`*holds true*, or both `ratio_divide<Period2, period>::den` equals 1 and `treat_as_floating_point<Rep2>`*holds false*, the third constructor doesn't participate in overload resolution. For more information, see [<type_traits>](type-traits.md).
 
 ## Example: Create a `duration`
 

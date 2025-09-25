@@ -30,7 +30,7 @@ The type of the key in the key-value pair.
 The type of the value in the key-value pair.
 
 *C*<br/>
-A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default,  [std::equal_to\<K>](../standard-library/equal-to-struct.md).
+A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default, [std::equal_to\<K>](../standard-library/equal-to-struct.md).
 
 ### Remarks
 
