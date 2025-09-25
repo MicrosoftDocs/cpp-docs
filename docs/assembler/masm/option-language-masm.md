@@ -1,6 +1,6 @@
 ---
-description: Learn more about the alternatives for the OPTION LANGUAGE directive
 title: "OPTION LANGUAGE"
+description: "Learn more about the alternatives for the OPTION LANGUAGE directive"
 ms.date: 09/21/2021
 f1_keywords: ["language"]
 helpviewer_keywords: ["OPTION LANGUAGE directive"]
@@ -20,11 +20,11 @@ Available languages include:
 :::row:::
    :::column span="":::
       **`C`**\
-      **`SYSCALL`**\
+      **`SYSCALL`**
    :::column-end:::
    :::column span="":::
       **`STDCALL`**\
-      **`PASCAL`**\
+      **`PASCAL`**
    :::column-end:::
    :::column span="":::
       **`FORTRAN`**\
