@@ -40,7 +40,7 @@ A type name.
 
 ### Remarks
 
-In C++/CX,  typeid returns a [Platform::Type](../cppcx/platform-type-class.md) that is constructed from runtime type information.
+In C++/CX, typeid returns a [Platform::Type](../cppcx/platform-type-class.md) that is constructed from runtime type information.
 
 ### Requirements
 

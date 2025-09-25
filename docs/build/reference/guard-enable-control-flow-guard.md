@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: /guard (Enable Control Flow Guard)"
 title: "/guard (Enable Control Flow Guard)"
+description: "Learn more about: /guard (Enable Control Flow Guard)"
 ms.date: 2/24/2025
 f1_keywords: ["/guard", "VC.Project.VCCLCompilerTool.ControlFlowGuard"]
 ---
@@ -21,7 +21,7 @@ The **`/guard:cf`** option causes the compiler to analyze control flow for indir
 
 When the **`/guard:cf`** Control Flow Guard (CFG) option is specified, the compiler and linker insert extra runtime security checks to detect attempts to compromise your code. During compiling and linking, all indirect calls in your code are analyzed to find every location that the code can reach when it runs correctly. This information is stored in extra structures in the headers of your binaries. The compiler also injects a check before every indirect call in your code that ensures the target is one of the verified locations. If the check fails at runtime on a CFG-aware operating system, the operating system closes the program.
 
-A common attack on software takes advantage of bugs in handling extreme or unexpected inputs. Carefully crafted input to the application may overwrite a location that contains a pointer to executable code. This technique can be used to redirect control flow to code controlled by the attacker. The CFG runtime checks don't fix the data corruption bugs in your executable. They instead make it more difficult for an attacker to use them to execute arbitrary code. CFG is a mitigation tool that prevents calls to locations other than function entry points in your code. It's similar to how Data Execution Prevention (DEP),  [/GS](gs-buffer-security-check.md) stack checks, and [`/DYNAMICBASE`](dynamicbase-use-address-space-layout-randomization.md) and [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md) address space layout randomization (ASLR) lower the chances that your code becomes an exploit vector.
+A common attack on software takes advantage of bugs in handling extreme or unexpected inputs. Carefully crafted input to the application may overwrite a location that contains a pointer to executable code. This technique can be used to redirect control flow to code controlled by the attacker. The CFG runtime checks don't fix the data corruption bugs in your executable. They instead make it more difficult for an attacker to use them to execute arbitrary code. CFG is a mitigation tool that prevents calls to locations other than function entry points in your code. It's similar to how Data Execution Prevention (DEP), [/GS](gs-buffer-security-check.md) stack checks, and [`/DYNAMICBASE`](dynamicbase-use-address-space-layout-randomization.md) and [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md) address space layout randomization (ASLR) lower the chances that your code becomes an exploit vector.
 
 To use the CFG exploit mitigation technique, pass **`/guard:cf`** to the compiler and **`/GUARD:CF`** to the linker.
 

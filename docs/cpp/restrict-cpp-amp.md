@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: restrict (C++ AMP)"
 title: "restrict (C++ AMP)"
-ms.date: "11/04/2016"
+description: "Learn more about: restrict (C++ AMP)"
+ms.date: 11/04/2016
 f1_keywords: ["cpu_CPP", "amp_CPP"]
 helpviewer_keywords: ["restrict clause (C++ AMP)"]
-ms.assetid: 07d3291f-7edf-456b-8828-283ac8673661
 ---
 # restrict (C++ AMP)
 
@@ -19,7 +18,7 @@ The **`restrict`** clause takes the following forms:
 |------------|-----------------|
 |`restrict(cpu)`|The function can use the full C++ language. Only other functions that are declared by using restrict(cpu) functions can call the function.|
 |`restrict(amp)`|The function can only use the subset of the C++ language that C++ AMP can accelerate.|
-|A sequence of `restrict(cpu)` and `restrict(amp)`.|The function must adhere to the limitations of both `restrict(cpu)` and   `restrict(amp)`. The function can be called by functions that are declared by using `restrict(cpu)`,  `restrict(amp)`, `restrict(cpu, amp)`, or `restrict(amp, cpu)`.<br /><br /> The form `restrict(A) restrict(B)` can be written as `restrict(A,B)`.|
+|A sequence of `restrict(cpu)` and `restrict(amp)`.|The function must adhere to the limitations of both `restrict(cpu)` and   `restrict(amp)`. The function can be called by functions that are declared by using `restrict(cpu)`, `restrict(amp)`, `restrict(cpu, amp)`, or `restrict(amp, cpu)`.<br /><br /> The form `restrict(A) restrict(B)` can be written as `restrict(A,B)`.|
 
 ## Remarks
 

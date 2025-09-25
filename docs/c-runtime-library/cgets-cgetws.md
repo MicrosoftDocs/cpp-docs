@@ -1,21 +1,20 @@
 ---
-description: "Learn more about: _cgets, _cgetws"
 title: "_cgets, _cgetws"
-ms.date: "4/2/2020"
+description: "Learn more about: _cgets, _cgetws"
+ms.date: 4/2/2020
 api_name: ["_cgetws", "_cgets", "_o__cgets", "_o__cgetws"]
 api_location: ["msvcr100.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cgetws", "_cgetws", "_cgets"]
 helpviewer_keywords: ["_cgetws function", "strings [C++], getting from console", "console, getting strings from", "_cgets function", "cgetws function", "cgets function"]
-ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
 ---
 # `_cgets`, `_cgetws`
 
 Gets a character string from the console. More secure versions of these functions are available; see [`_cgets_s`, `_cgetws_s`](./reference/cgets-s-cgetws-s.md).
 
 > [!IMPORTANT]
-> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT. The secure versions of these functions,  _cgets_s and _cgetws_s, are still available. For information on these alternative functions, see [`_cgets_s`, `_cgetws_s`](./reference/cgets-s-cgetws-s.md).
+> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT. The secure versions of these functions, _cgets_s and _cgetws_s, are still available. For information on these alternative functions, see [`_cgets_s`, `_cgetws_s`](./reference/cgets-s-cgetws-s.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

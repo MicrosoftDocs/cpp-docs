@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: gets, _getws"
 title: "gets, _getws"
-ms.date: "4/2/2020"
+description: "Learn more about: gets, _getws"
+ms.date: 4/2/2020
 api_name: ["_getws", "gets", "_o__getws", "_o_gets"]
 api_location: ["msvcr80.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr100.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -14,7 +14,7 @@ helpviewer_keywords: ["getws function", "getts function", "_getws function", "li
 Gets a line from the **`stdin`** stream. More secure versions of these functions are available; see [`gets_s`, `_getws_s`](./reference/gets-s-getws-s.md).
 
 > [!IMPORTANT]
-> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT. The secure versions of these functions,  `gets_s` and `_getws_s`, are still available. For information on these alternative functions, see [`gets_s`, `_getws_s`](./reference/gets-s-getws-s.md).
+> These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT. The secure versions of these functions, `gets_s` and `_getws_s`, are still available. For information on these alternative functions, see [`gets_s`, `_getws_s`](./reference/gets-s-getws-s.md).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

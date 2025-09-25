@@ -175,7 +175,7 @@ In C++, these functions have template overloads that invoke the newer, more secu
 
 | Routine | Required header |
 |---|---|
-| **`snprintf`**, **`_snprintf`**,  **`_snprintf_l`** | `<stdio.h>` |
+| **`snprintf`**, **`_snprintf`**, **`_snprintf_l`** | `<stdio.h>` |
 | **`_snwprintf`**, **`_snwprintf_l`** | `<stdio.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).

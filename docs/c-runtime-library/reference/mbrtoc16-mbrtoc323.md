@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: mbrtoc16, mbrtoc32"
 title: "mbrtoc16, mbrtoc323"
-ms.date: "4/2/2020"
+description: "Learn more about: mbrtoc16, mbrtoc32"
+ms.date: 4/2/2020
 api_name: ["mbrtoc16", "mbrtoc32", "_o_mbrtoc16", "_o_mbrtoc32"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbrtoc16", "mbrtoc32", "uchar/mbrtoc16", "uchar/mbrtoc32"]
 helpviewer_keywords: ["mbrtoc16 function", "mbrtoc32 function"]
-ms.assetid: 099ade4d-56f7-4e61-8b45-493f1d7a64bd
 ---
 # `mbrtoc16`, `mbrtoc32`
 
@@ -62,7 +61,7 @@ On success, returns the value of the first of these conditions that applies, giv
 
 The **`mbrtoc16`** function reads up to *`max_bytes`* bytes from *`source`* to find the first complete, valid UTF-8 multibyte character, and then stores the equivalent UTF-16 character in *`destination`*. If the character requires more than one UTF-16 output character, such as a surrogate pair, then the *`state`* value is set to store the next UTF-16 character in *`destination`* on the next call to **`mbrtoc16`**. The **`mbrtoc32`** function is identical, but output is stored as a UTF-32 character.
 
-If *`source`* is null, these functions return the equivalent of a call made using arguments of `NULL` for *`destination`*, `""` (an empty, null-terminated string) for *`source`*,  and 1 for *`max_bytes`*. The passed values of *`destination`* and *`max_bytes`* are ignored.
+If *`source`* is null, these functions return the equivalent of a call made using arguments of `NULL` for *`destination`*, `""` (an empty, null-terminated string) for *`source`*, and 1 for *`max_bytes`*. The passed values of *`destination`* and *`max_bytes`* are ignored.
 
 If *`source`* isn't null, the function starts at the beginning of the string and inspects up to *`max_bytes`* bytes to determine the number of bytes required to complete the next UTF-8 multibyte character, including any shift sequences. If the examined bytes contain a valid and complete UTF-8 multibyte character, the function converts the character into the equivalent 16-bit or 32-bit wide character or characters. If *`destination`* isn't null, the function stores the first (and possibly only) result character in destination. If extra output characters are required, a value is set in *`state`*, so that subsequent calls to the function output the extra characters and return the value -3. If no more output characters are required, then *`state`* is set to the initial shift state.
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Platform::Collections::UnorderedMap Class"
 title: "Platform::Collections::UnorderedMap Class"
-ms.date: "12/30/2016"
+description: "Learn more about: Platform::Collections::UnorderedMap Class"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::UnorderedMap"]
-ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
 ---
 # Platform::Collections::UnorderedMap Class
 
@@ -30,7 +29,7 @@ The type of the key in the key-value pair.
 The type of the value in the key-value pair.
 
 *C*<br/>
-A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default,  [std::equal_to\<K>](../standard-library/equal-to-struct.md).
+A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default, [std::equal_to\<K>](../standard-library/equal-to-struct.md).
 
 ### Remarks
 

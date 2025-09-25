@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: exit, _Exit, _exit"
 title: "exit, _Exit, _exit"
-ms.date: "4/2/2020"
+description: "Learn more about: exit, _Exit, _exit"
+ms.date: 4/2/2020
 api_name: ["_exit", "exit", "_o__exit", "_o_exit"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -52,7 +52,7 @@ The **`exit`**, **`_Exit`**, **`_exit`**, **`quick_exit`**, **`_cexit`**, and **
 | **`_cexit`** | Performs complete C library termination procedures and returns to the caller. Doesn't terminate the process. |
 | **`_c_exit`** | Performs minimal C library termination procedures and returns to the caller. Doesn't terminate the process. |
 
-When you call the **`exit`**,  **`_Exit`** or **`_exit`** function, the destructors for any temporary or automatic objects that exist at the time of the call aren't called. An automatic object is a non-static local object defined in a function. A temporary object is an object that's created by the compiler, such as a value returned by a function call. To destroy an automatic object before you call **`exit`**, **`_Exit`**, or **`_exit`**, explicitly call the destructor for the object, as shown here:
+When you call the **`exit`**, **`_Exit`** or **`_exit`** function, the destructors for any temporary or automatic objects that exist at the time of the call aren't called. An automatic object is a non-static local object defined in a function. A temporary object is an object that's created by the compiler, such as a value returned by a function call. To destroy an automatic object before you call **`exit`**, **`_Exit`**, or **`_exit`**, explicitly call the destructor for the object, as shown here:
 
 ```cpp
 void last_fn() {}

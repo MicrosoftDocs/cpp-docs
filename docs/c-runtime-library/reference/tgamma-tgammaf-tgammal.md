@@ -78,7 +78,7 @@ By default, this function's global state is scoped to the application. To change
 
 | Function | C header | C++ header |
 |---|---|---|
-| **`tgamma`**, **`tgammaf`**,  **`tgammal`** | \<math.h> | \<cmath> |
+| **`tgamma`**, **`tgammaf`**, **`tgammal`** | \<math.h> | \<cmath> |
 | **`tgamma`** macro | \<tgmath.h> |  |
 
 For more compatibility information, see [Compatibility](../compatibility.md).

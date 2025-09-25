@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Templates (C++)"
 title: "Templates (C++)"
-ms.date: "12/27/2019"
+description: "Learn more about: Templates (C++)"
+ms.date: 12/27/2019
 f1_keywords: ["template_cpp"]
 helpviewer_keywords: ["templates, C++", "templates [C++]"]
-ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
 ---
 # Templates (C++)
 
@@ -157,7 +156,7 @@ class MyClass2
 };
 ```
 
-Because the *Arr* parameter itself has no body, its parameter names are not needed. In fact, it is an error to refer to *Arr*'s typename or class parameter names from within the body of `MyClass2`. For this reason,  *Arr*'s type parameter names can be omitted, as shown in this example:
+Because the *Arr* parameter itself has no body, its parameter names are not needed. In fact, it is an error to refer to *Arr*'s typename or class parameter names from within the body of `MyClass2`. For this reason, *Arr*'s type parameter names can be omitted, as shown in this example:
 
 ```cpp
 template<typename T, template<typename, int> class Arr>

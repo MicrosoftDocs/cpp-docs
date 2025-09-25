@@ -1,6 +1,6 @@
 ---
 title: "ARM64 exception handling"
-description: Describes the exception handling conventions and data used by windows on ARM64.
+description: "Describes the exception handling conventions and data used by windows on ARM64."
 ms.date: 01/13/2023
 ---
 # ARM64 exception handling
@@ -287,7 +287,7 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 |--|--|
 | `alloc_s` | 000xxxxx: allocate small stack with size \< 512 (2^5 * 16). |
 | `save_r19r20_x` | 001zzzzz: save `<x19,x20>` pair at `[sp-#Z*8]!`, pre-indexed offset >= -248 |
-| `save_fplr` | 01zzzzzz: save `<x29,lr>` pair at `[sp+#Z*8]`,  offset \<= 504. |
+| `save_fplr` | 01zzzzzz: save `<x29,lr>` pair at `[sp+#Z*8]`, offset \<= 504. |
 | `save_fplr_x` | 10zzzzzz: save `<x29,lr>` pair at `[sp-(#Z+1)*8]!`, pre-indexed offset >= -512 |
 | `alloc_m` | 11000xxx'xxxxxxxx: allocate large stack with size \< 32K (2^11 * 16). |
 | `save_regp` | 110010xx'xxzzzzzz: save `x(19+#X)` pair at `[sp+#Z*8]`, offset \<= 504 |

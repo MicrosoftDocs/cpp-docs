@@ -675,7 +675,7 @@ A reference to the string object that is being constructed by the constructors.
 
 All constructors store a [`basic_string::allocator_type`](#allocator_type) and initialize the controlled sequence. The allocator object is the argument `al`, if present. For the copy constructor, it's `right.get_allocator()`, a call to [`basic_string::get_allocator`](#get_allocator). Otherwise, the allocator is `Alloc()`.
 
-The controlled sequence is initialized to a copy of the operand sequence specified by the remaining operands. A constructor without an operand sequence specifies an empty initial controlled sequence. If `InputIterator` is an integer type in a template constructor, the operand sequence `first,  last` behaves the same as `(size_type) first, (value_type) last`.
+The controlled sequence is initialized to a copy of the operand sequence specified by the remaining operands. A constructor without an operand sequence specifies an empty initial controlled sequence. If `InputIterator` is an integer type in a template constructor, the operand sequence `first, last` behaves the same as `(size_type) first, (value_type) last`.
 
 ### Example
 
