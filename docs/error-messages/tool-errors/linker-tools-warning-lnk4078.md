@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4078"
 title: "Linker Tools Warning LNK4078"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4078"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4078"]
 helpviewer_keywords: ["LNK4078"]
-ms.assetid: 5a16796d-6caf-42d9-8f65-b042843eafb8
 ---
 # Linker Tools Warning LNK4078
 
-multiple 'section name' sections found with different attributes
+> multiple 'section name' sections found with different attributes
+
+## Remarks
 
 LINK found two or more sections that have the same name but different attributes.
 
@@ -20,7 +21,7 @@ Recreate the file and relink.
 
 LNK4078 can also be caused by a breaking change: the section named by [init_seg](../../preprocessor/init-seg.md) on x86 was read/write, it is now read only.
 
-The following sample generates LNK4078.
+The following example generates LNK4078.
 
 ```cpp
 // LNK4078.cpp

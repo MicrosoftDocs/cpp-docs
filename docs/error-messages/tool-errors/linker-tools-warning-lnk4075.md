@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4075"
 title: "Linker Tools Warning LNK4075"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4075"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4075"]
 helpviewer_keywords: ["LNK4075"]
-ms.assetid: f39ad3f9-c263-4cf0-9d70-259fc56ac96d
 ---
 # Linker Tools Warning LNK4075
 
-ignoring "option1" due to "option2" specification
+> ignoring "option1" due to "option2" specification
+
+## Remarks
 
 The second option overrides the first.
 

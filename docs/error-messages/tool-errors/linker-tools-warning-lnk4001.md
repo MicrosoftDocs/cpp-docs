@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4001"
 title: "Linker Tools Warning LNK4001"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4001"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4001"]
 helpviewer_keywords: ["LNK4001"]
-ms.assetid: 0a8b1c3a-64ce-4311-b7c0-065995059246
 ---
 # Linker Tools Warning LNK4001
 
-no object files specified; libraries used
+> no object files specified; libraries used
+
+## Remarks
 
 The linker was passed one or more .lib files, but no .obj files.
 

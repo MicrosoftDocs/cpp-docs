@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4092"
 title: "Linker Tools Warning LNK4092"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4092"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4092"]
 helpviewer_keywords: ["LNK4092"]
-ms.assetid: d569ec47-a338-40e1-940b-8a8061459acb
 ---
 # Linker Tools Warning LNK4092
 
-shared writable section 'section' contains relocations; image may not run correctly
+> shared writable section 'section' contains relocations; image may not run correctly
+
+## Remarks
 
 The linker emits this warning whenever you have a shared section to warn you of a potentially serious problem.
 

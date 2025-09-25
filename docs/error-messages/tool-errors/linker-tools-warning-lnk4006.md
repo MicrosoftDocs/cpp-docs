@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4006"
 title: "Linker Tools Warning LNK4006"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4006"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4006"]
 helpviewer_keywords: ["LNK4006"]
-ms.assetid: 3a637d17-1676-4ea6-bd8b-290137d28d3b
 ---
 # Linker Tools Warning LNK4006
 
-symbol already defined in object; second definition ignored
+> symbol already defined in object; second definition ignored
+
+## Remarks
 
 The given `symbol`, displayed in its decorated form, was multiply defined. When this warning is encountered, `symbol` will be added twice, but only its first form will be used.
 
