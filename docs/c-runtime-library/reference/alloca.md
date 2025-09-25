@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _alloca"
 title: "_alloca"
+description: "Learn more about: _alloca"
 ms.date: 01/05/2022
 api_name: ["_alloca"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -49,7 +49,7 @@ However, **`_alloca`** can be called directly from within an EH routine or from 
 > [!IMPORTANT]
 > If **`_alloca`** is called inside a try block, you must call [`_resetstkoflw`](resetstkoflw.md) in the catch block.
 
-In addition to the above restrictions, when using the[`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) option, **`_alloca`** can't be used in **`__except`** blocks. For more information, see [`/clr` Restrictions](../../build/reference/clr-restrictions.md).
+In addition to the above restrictions, when using the [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) option, **`_alloca`** can't be used in **`__except`** blocks. For more information, see [`/clr` Restrictions](../../build/reference/clr-restrictions.md).
 
 ## Requirements
 
