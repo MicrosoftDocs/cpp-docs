@@ -30,6 +30,8 @@ The manually vectorized algorithms use template meta-programming to detect the s
 
 Generally, programs either benefit in performance from this manual vectorization or are unaffected by it. In case of any problem, you can disable manual vectorization by defining the `_USE_STD_VECTOR_ALGORITHMS` macro set to 0. It defaults to 1 on x64 and x86, which means that manually vectorized algorithms are enabled by default.
 
+When overriding `_USE_STD_VECTOR_ALGORITHMS` make sure to set the same value for all linked translation units that use algorithms. Reliable way to achieve that is using project properties rather than defining it in the source.
+
 The following algorithms have manual vectorization controlled via `_USE_STD_VECTOR_ALGORITHMS` macro:
  - `contains`
  - `contains_subrange`
@@ -86,6 +88,8 @@ The STL deals with the first two difficulties safely. Only `max_element`, `min_e
 There's `_USE_STD_VECTOR_FLOATING_ALGORITHMS` to control the use of these vectorized algorithms for floating point types. Set it to 0 to disable the vectorization. The macro has no effect if `_USE_STD_VECTOR_ALGORITHMS` is set to 0.
 
 `_USE_STD_VECTOR_FLOATING_ALGORITHMS` defaults to 0 when [`/fp:except`](../build/reference/fp-specify-floating-point-behavior.md#except) option is set. This is to avoid problems with exceptions.
+
+When overriding `_USE_STD_VECTOR_FLOATING_ALGORITHMS` make sure to set the same value for all linked translation units that use algorithms. Reliable way to achieve that is using project properties rather than defining it in the source.
 
 ## See also
 
