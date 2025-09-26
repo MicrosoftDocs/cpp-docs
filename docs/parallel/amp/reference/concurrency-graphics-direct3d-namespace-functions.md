@@ -1,27 +1,12 @@
 ---
-description: "Learn more about: Concurrency::graphics::direct3d namespace functions"
 title: "Concurrency::graphics::direct3d namespace functions"
-ms.date: "11/04/2016"
+description: "Learn more about: Concurrency::graphics::direct3d namespace functions"
+ms.date: 11/04/2016
 f1_keywords: ["amp_graphics/Concurrency::graphics::direct3d::get_sampler", "amp_graphics/Concurrency::graphics::direct3d::make_sampler", "amp_graphics/Concurrency::graphics::direct3d::make_texture"]
-ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
 ---
 # Concurrency::graphics::direct3d namespace functions
 
-:::row:::
-   :::column span="":::
-      [`get_sampler`](#get_sampler)\
-      [`get_texture`](#get_texture)
-   :::column-end:::
-   :::column span="":::
-      [`make_sampler`](#make_sampler)
-   :::column-end:::
-   :::column span="":::
-      [`make_texture`](#make_texture)
-   :::column-end:::
-   :::column span="":::
-      [`msad4`](#msad4)
-   :::column-end:::
-:::row-end:::
+The following functions are available in the `Concurrency::graphics::direct3d` namespace:
 
 ## <a name="get_sampler"></a> get_sampler
 
