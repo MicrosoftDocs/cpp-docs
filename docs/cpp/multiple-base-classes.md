@@ -11,8 +11,7 @@ A class can be derived from more than one base class. In a multiple-inheritance 
 ```cpp
 // deriv_MultipleBaseClasses.cpp
 // compile with: /LD
-class Collection {
-};
+class Collection {};
 class Book {};
 class CollectionOfBook : public Book, public Collection {
     // New members
@@ -26,7 +25,7 @@ The order in which base classes are specified isn't significant except in certai
 - The order in which destructors are invoked to clean up. Again, if a particular "part" of the class must be present when the other part is being destroyed, the order is significant. Destructors are called in the reverse order of the classes specified in the *base-list*.
 
     > [!NOTE]
-    >  The order of specification of base classes can affect the memory layout of the class. Do not make any programming decisions based on the order of base members in memory.
+    > The order of specification of base classes can affect the memory layout of the class. Do not make any programming decisions based on the order of base members in memory.
 
 When specifying the *base-list*, you can't specify the same class name more than once. However, it's possible for a class to be an indirect base to a derived class more than once.
 
@@ -188,7 +187,7 @@ Explicit and implicit conversions from pointers or references to class types can
 
 - The declaration of an object of type `D`.
 
-- The effect of applying the address-of operator (**&**) to that object. The address-of operator always supplies the base address of the object.
+- The effect of applying the address-of operator (`&`) to that object. The address-of operator always supplies the base address of the object.
 
 - The effect of explicitly converting the pointer obtained using the address-of operator to the base-class type `A`. Coercing the address of the object to type `A*` doesn't always provide the compiler with enough information as to which subobject of type `A` to select; in this case, two subobjects exist.
 
