@@ -15,7 +15,7 @@ A default template argument was specified in an incorrect location and was ignor
 
 ## Example
 
-This example generates C4545, and the next example shows how to fix it:
+This example generates C4544, and the next example shows how to fix it:
 
 ```cpp
 // C4544.cpp
