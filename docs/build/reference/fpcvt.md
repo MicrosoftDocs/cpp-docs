@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /fpcvt (Floating-point to integer conversion compatibility)"
 title: "/fpcvt (Floating-point to unsigned integer conversion compatibility)"
-ms.date: 11/03/2021
+ms.date: 09/25/2025
 f1_keywords: ["/fpcvt", "-fpcvt"]
 helpviewer_keywords: ["-fpcvt compiler option [C++]", "/fpcvt compiler option [C++]"]
 ---
@@ -29,6 +29,8 @@ The **`/fpcvt:BC`** option tells the compiler to convert floating point values t
 In Visual Studio 2019 version 16.8 and later versions, the **`/fpcvt`** compiler option can be used to control the results of floating-point to integer conversions. The **`/fpcvt:BC`** option specifies the default behavior of Visual Studio 2022, which is the same as the behavior of Visual Studio 2017 and earlier versions. The **`/fpcvt:IA`** option specifies behavior compatible with Intel Architecture (IA) AVX-512 conversion instruction behavior. This option can be used with either 32-bit x86 or 64-bit x64 targets, and it applies whether [`/arch:AVX512`](arch-x86.md) is specified or not.
 
 For Visual Studio 2019, the default behavior for x64 targets is consistent with **`/fpcvt:BC`** unless **`/arch:AVX512`** is specified. Usually, the behavior for x86 targets is consistent with **`/fpcvt:IA`**, except under **`/arch:IA32`**, **`/arch:SSE`**, or sometimes where the result of a function call is directly converted to an unsigned integer. Use of **`/fpcvt`** overrides the default, so all conversions are handled consistently on either target. The behavior of conversions for ARM and ARM64 targets isn't consistent with either **`/fpcvt:BC`** or **`/fpcvt:IA`**.
+
+Starting with Visual Studio 2022, the default behavior for x64 targets is consistent with `/fpcvt:BC` even when `/arch:AVX512` is specified. To use AVX512 conversion behavior with `/arch:AVX512`, specify `/fpcvt:IA`.
 
 Standard C++ specifies that if a truncated floating-point value is exactly representable in an integer type, it must have that value when converted to that type. Otherwise, any behavior at all is allowed. Both **`/fpcvt`** options conform with Standard C++. The only difference is in what values are returned for invalid source values.
 
