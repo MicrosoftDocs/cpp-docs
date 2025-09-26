@@ -1,7 +1,7 @@
 ---
 title: "Linker Tools Error LNK1352"
-description: Linker Tools Error LNK1352 occurs when an unsupported section merge is attempted.
-ms.date: "09/10/2019"
+description: "Linker Tools Error LNK1352 occurs when an unsupported section merge is attempted."
+ms.date: 09/10/2019
 f1_keywords: ["LNK1352"]
 helpviewer_keywords: ["LNK1352"]
 ---

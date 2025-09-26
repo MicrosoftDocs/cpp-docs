@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1561"
 title: "Linker Tools Error LNK1561"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1561"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1561"]
 helpviewer_keywords: ["LNK1561"]
-ms.assetid: cb0b709b-7c9c-4496-8a4e-9e1e4aefe447
 ---
 # Linker Tools Error LNK1561
 
-entry point must be defined
+> entry point must be defined
+
+## Remarks
 
 The linker did not find an *entry point*, the initial function to call in your executable. By default, the linker looks for a `main` or `wmain` function for a console app, a `WinMain` or `wWinMain` function for a Windows app, or `DllMain` for a DLL that requires initialization. You can specify another function by using the [/ENTRY](../../build/reference/entry-entry-point-symbol.md) linker option.
 
@@ -24,7 +25,7 @@ When building an app, the linker looks for an entry point function to call to st
 
 ## Example
 
-The following sample generates LNK1561:
+The following example generates LNK1561:
 
 ```cpp
 // LNK1561.cpp

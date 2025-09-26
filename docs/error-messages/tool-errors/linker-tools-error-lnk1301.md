@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1301"
 title: "Linker Tools Error LNK1301"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1301"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1301"]
 helpviewer_keywords: ["LNK1301"]
-ms.assetid: 760da428-7182-4b25-b20a-de90d4b9a9cd
 ---
 # Linker Tools Error LNK1301
 
-LTCG clr modules found, incompatible with /LTCG:parameter
+> LTCG clr modules found, incompatible with /LTCG:parameter
+
+## Remarks
 
 A module compiled with /clr and /GL was passed to the linker along with one of the profile guided optimizations (PGO) parameters of /LTCG.
 
@@ -30,7 +31,7 @@ For more information, see:
 
 ## Example
 
-The following sample generates LNK1301:
+The following example generates LNK1301:
 
 ```cpp
 // LNK1301.cpp

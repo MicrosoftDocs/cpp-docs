@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1248"
 title: "Linker Tools Error LNK1248"
+description: "Learn more about: Linker Tools Error LNK1248"
 ms.date: 08/31/2022
 f1_keywords: ["LNK1248"]
 helpviewer_keywords: ["LNK1248"]
