@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: length_error Class"
-title: "length_error Class"
-ms.date: "09/09/2021"
+title: "length_error class"
+description: "Learn more about: length_error class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::length_error"]
 helpviewer_keywords: ["length_error class"]
-ms.assetid: d53c46c5-4626-400d-bd76-bf3e1e0f64ae
 ---
-# length_error Class
+# `length_error` class
 
 The class serves as the base class for all exceptions thrown to report an attempt to generate an object too long to be specified.
 
@@ -18,13 +17,12 @@ public:
     explicit length_error(const string& message);
 
     explicit length_error(const char *message);
-
 };
 ```
 
 ## Remarks
 
-The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](../standard-library/exception-class.md) and [`data`](../standard-library/basic-string-class.md#data).
+The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](exception-class.md) and [`data`](basic-string-class.md#data).
 
 ## Example
 
@@ -50,19 +48,20 @@ int main()
       cerr << "Type: " << typeid(e).name() << endl;
    }
 }
-/* Output:
+```
+
+```Output
 Caught: vector too long
 Type: class std::length_error
-*/
 ```
 
 ## Requirements
 
-**Header:** \<stdexcept>
+**Header:** `<stdexcept>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[logic_error Class](../standard-library/logic-error-class.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`logic_error` class](logic-error-class.md)\
+[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)

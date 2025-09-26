@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: underflow_error Class"
-title: "underflow_error Class"
-ms.date: "09/09/2021"
+title: "underflow_error class"
+description: "Learn more about: underflow_error class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::underflow_error"]
 helpviewer_keywords: ["underflow_error class"]
-ms.assetid: d632f1f9-9c6c-4954-b96b-03041bfab22d
 ---
-# underflow_error Class
+# `underflow_error` class
 
 The class serves as the base class for all exceptions thrown to report an arithmetic underflow.
 
@@ -18,13 +17,12 @@ public:
     explicit underflow_error(const string& message);
 
     explicit underflow_error(const char *message);
-
 };
 ```
 
 ## Remarks
 
-The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](../standard-library/exception-class.md) and [`data`](../standard-library/basic-string-class.md#data).
+The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](exception-class.md) and [`data`](basic-string-class.md#data).
 
 `underflow_error` isn't thrown by any functions in the Microsoft implementation of the C++ Standard Library, but it might be thrown by third-party libraries or user code.
 
@@ -51,19 +49,20 @@ int main()
       cerr << "Type: " << typeid(e).name() << endl;
    }
 }
-/* Output:
+```
+
+```Output
 Caught: The number's a bit small, captain!
 Type: class std::underflow_error
-*/
 ```
 
 ## Requirements
 
-**Header:** \<stdexcept>
+**Header:** `<stdexcept>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[runtime_error Class](../standard-library/runtime-error-class.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`runtime_error` class](runtime-error-class.md)\
+[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)
