@@ -20,11 +20,11 @@ ms.author: msaleh
 > [!NOTE]
 > Are you here to download Visual Studio? Go to [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/).
 
-This topic is for developers who need to install the Visual C++ runtime libraries on the system that their apps runs on. If you're an end user trying to fix an app by updating the Visual C++ runtime libraries, contact the app vendor for instructions.
+This topic is for developers who need to install the Visual C++ runtime libraries with their app. If you're an end user trying to fix an app by updating the Visual C++ runtime libraries, contact the app vendor for instructions.
 
-To quickly find the download you need, choose your version of Visual Studio from the table below. Each link takes you to the appropriate download section.
+To find the download you need, choose your version of Visual Studio from the table below. Each link takes you to the appropriate download section.
 
-| Visual Studio version | Download section |
+| Visual Studio version | Section |
 |--|--|
 | Latest supported (2015–2022) | [Latest supported Redistributable version](#latest-supported-redistributable-version) |
 | Visual Studio 2013 | [Visual Studio 2013 (VC++ 12.0)](#visual-studio-2013-vc-120-no-longer-supported) |
