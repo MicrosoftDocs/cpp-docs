@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: _msize_dbg"
 title: "_msize_dbg"
-ms.date: "11/04/2016"
+description: "Learn more about: _msize_dbg"
+ms.date: 11/04/2016
 api_name: ["_msize_dbg"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
@@ -36,7 +36,7 @@ On successful completion, **`_msize_dbg`** returns the size (in bytes) of the sp
 
 ## Remarks
 
-**`_msize_dbg`** is a debug version of the _[`msize`](msize.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **`_msize_dbg`** is reduced to a call to `_msize`. Both `_msize` and **`_msize_dbg`** calculate the size of a memory block in the base heap, but **`_msize_dbg`** adds two debugging features: It includes the buffers on either side of the user portion of the memory block in the returned size and it allows size calculations for specific block types.
+**`_msize_dbg`** is a debug version of the [`_msize`](msize.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **`_msize_dbg`** is reduced to a call to `_msize`. Both `_msize` and **`_msize_dbg`** calculate the size of a memory block in the base heap, but **`_msize_dbg`** adds two debugging features: It includes the buffers on either side of the user portion of the memory block in the returned size and it allows size calculations for specific block types.
 
 For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT debug heap details](../crt-debug-heap-details.md). For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap). For information about the differences between standard heap functions and the debug versions, see [Debug versions of heap allocation functions](../debug-versions-of-heap-allocation-functions.md).
 
