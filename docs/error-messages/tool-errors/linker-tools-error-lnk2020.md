@@ -7,7 +7,9 @@ helpviewer_keywords: ["LNK2020"]
 ---
 # Linker Tools Error LNK2020
 
-unresolved token 'token'
+> unresolved token 'token'
+
+## Remarks
 
 Similar to an undefined external error, except that the reference is via metadata. In metadata, all functions and data must be defined.
 
@@ -19,7 +21,7 @@ To resolve:
 
 ## Examples
 
-The following sample generates LNK2020.
+The following example generates LNK2020.
 
 ```cpp
 // LNK2020.cpp
@@ -38,7 +40,7 @@ ref struct B {
 
 LNK2020 will also occur if you create a variable of a managed template type, but do not also instantiate the type.
 
-The following sample generates LNK2020.
+The following example generates LNK2020.
 
 ```cpp
 // LNK2020_b.cpp

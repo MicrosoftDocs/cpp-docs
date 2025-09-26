@@ -1,13 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2038"
 title: "Linker Tools Error LNK2038"
-ms.date: "12/15/2017"
+description: "Learn more about: Linker Tools Error LNK2038"
+ms.date: 12/15/2017
 f1_keywords: ["LNK2038"]
 helpviewer_keywords: ["LNK2038"]
 ---
 # Linker Tools Error LNK2038
 
 > mismatch detected for '*name*': value '*value_1*' doesn't match value '*value_2*' in *filename.obj*
+
+## Remarks
 
 A symbol mismatch has been detected by the linker. This error indicates that different parts of an app, including libraries or other object code that the app links to, use conflicting definitions of the symbol. The [detect mismatch](../../preprocessor/detect-mismatch.md) pragma is used to define such symbols and detect their conflicting values.
 
