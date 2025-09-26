@@ -96,7 +96,7 @@ The `/vd` compiler option affects an entire compilation module. Use the `vtordis
 ```cpp
 #pragma vtordisp( off )
 class GetReal : virtual public { ... };
-\#pragma vtordisp( on )
+#pragma vtordisp( on )
 ```
 
 ## Name ambiguities
