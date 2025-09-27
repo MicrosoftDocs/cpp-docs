@@ -156,7 +156,7 @@ pc->B::a();
 
 ### Dominance
 
-it's possible for more than one name (function, object, or enumerator) to be reached through an inheritance graph. Such cases are considered ambiguous with nonvirtual base classes. They're also ambiguous with virtual base classes, unless one of the names "dominates" the others.
+It's possible for more than one name (function, object, or enumerator) to be reached through an inheritance graph. Such cases are considered ambiguous with nonvirtual base classes. They're also ambiguous with virtual base classes, unless one of the names "dominates" the others.
 
 A name dominates another name if it's defined in both classes and one class is derived from the other. The dominant name is the name in the derived class; this name is used when an ambiguity would otherwise have arisen, as shown in the following example:
 
