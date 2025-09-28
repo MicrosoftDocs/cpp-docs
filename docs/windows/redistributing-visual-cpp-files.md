@@ -102,3 +102,6 @@ Links to examples that demonstrate how to deploy Visual C++ applications.
 
 [Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)\
 Introduces Visual C++ deployment concepts and technologies.
+
+[Latest supported Visual C++ Redistributable downloads](latest-supported-vc-redist.md)\
+Links to the latest supported Visual C++ Redistributable downloads.
