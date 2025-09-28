@@ -443,7 +443,7 @@ Instead, enable and disable AddressSanitizer by setting the required compiler an
 
 You can add the following sample to *`CMakeLists.txt`* to enable or disable AddressSanitizer for a target:
 
-```cmd
+```cmake
 option(ASAN_ENABLED "Build this target with AddressSanitizer" ON)
 
 if(ASAN_ENABLED)

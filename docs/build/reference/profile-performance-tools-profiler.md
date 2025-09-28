@@ -51,7 +51,7 @@ Because a **CMake** project doesn't have the usual **Property Pages** support, t
 
 1. Add the code below. For more information, see the CMake [`set_target_properties`](https://cmake.org/cmake/help/latest/command/set_target_properties.html) documentation.
 
-   ```txt
+   ```cmake
    SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/PROFILE")
    ```
 
