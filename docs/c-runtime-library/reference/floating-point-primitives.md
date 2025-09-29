@@ -235,7 +235,7 @@ These floating-point primitives normalize the fractional part of an underflowed 
 ```C
 double __cdecl _dpoly(double x, double const* table, int n);
 long double __cdecl _ldpoly(long double x, long double const* table, int n);
-float __cdecl _fdpoly(float x, _float const* table, int n);
+float __cdecl _fdpoly(float x, float const* table, int n);
 ```
 
 ### Parameters
