@@ -32,7 +32,7 @@ Floating-point function argument.
 
 ### Remarks
 
-These floating-point primitives implement the C versions of the CRT macro [`fpclassify`](fpclassify.md) for floating-point types. The classification of the argument *`x`* is returned as one of these constants, defined in math.h:
+These floating-point primitives implement the C versions of the CRT macro [`fpclassify`](fpclassify.md) for floating-point types. The classification of the argument *`x`* is returned as one of these constants, defined in `math.h`:
 
 | Value | Description |
 |---|---|
@@ -63,7 +63,7 @@ Floating-point function argument.
 
 These floating-point primitives implement the [`signbit`](signbit.md) macro or function in the CRT. They return a non-zero value if the sign bit is set in the significand (mantissa) of the argument *`x`*. Otherwise, they return 0 if the sign bit isn't set.
 
-## _dpcomp, _ldpcomp, _fdpcomp
+## `_dpcomp`, `_ldpcomp`, `_fdpcomp`
 
 ### Syntax
 
@@ -80,7 +80,7 @@ Floating-point function arguments.
 
 ### Remarks
 
-These floating-point primitives take two arguments, *`x`* and *`y`*, and return a value that shows their ordering relationship, expressed as the bitwise or of these constants, defined in math.h:
+These floating-point primitives take two arguments, *`x`* and *`y`*, and return a value that shows their ordering relationship, expressed as the bitwise or of these constants, defined in `math.h`:
 
 | Value | Description |
 |------------|-----------------|
@@ -90,7 +90,7 @@ These floating-point primitives take two arguments, *`x`* and *`y`*, and return 
 
 These primitives implement the [`isgreater`, `isgreaterequal`, `isless`, `islessequal`, `islessgreater`, and `isunordered`](floating-point-ordering.md) macros and functions in the CRT.
 
-## _dtest, _ldtest, _fdtest
+## `_dtest`, `_ldtest`, `_fdtest`
 
 ### Syntax
 
@@ -107,7 +107,7 @@ Pointer to a floating-point argument.
 
 ### Remarks
 
-These floating-point primitives implement the C++ versions of the CRT function [`fpclassify`](fpclassify.md) for floating-point types. The argument *`x`* is evaluated and the classification is returned as one of these constants, defined in math.h:
+These floating-point primitives implement the C++ versions of the CRT function [`fpclassify`](fpclassify.md) for floating-point types. The argument *`x`* is evaluated and the classification is returned as one of these constants, defined in `math.h`:
 
 | Value | Description |
 |---|---|
@@ -119,7 +119,7 @@ These floating-point primitives implement the C++ versions of the CRT function [
 
 For more detail, you can use the Microsoft-specific [`_fpclass`, `_fpclassf`](fpclass-fpclassf.md) functions. Use the [`fpclassify`](fpclassify.md) function for portability.
 
-## _d_int, _ld_int, _fd_int
+## `_d_int`, `_ld_int`, `_fd_int`
 
 ### Syntax
 
@@ -141,7 +141,7 @@ An exponent as an integral type.
 
 These floating-point primitives take a pointer to a floating-point value *`px`* and an exponent value *`exp`*, and remove the fractional part of the floating-point value below the given exponent, if possible. The value returned is the result of `fpclassify` on the input value in *`px`* if it's a NaN or infinity, and on the output value in *`px`* otherwise.
 
-## _dscale, _ldscale, _fdscale
+## `_dscale`, `_ldscale`, `_fdscale`
 
 ### Syntax
 
@@ -163,7 +163,7 @@ An exponent as an integral type.
 
 These floating-point primitives take a pointer to a floating-point value *`px`* and an exponent value *`exp`*, and scale the value in *`px`* by 2<sup>*`exp`*</sup>, if possible. The value returned is the result of `fpclassify` on the input value in *`px`* if it's a NaN or infinity, and on the output value in *`px`* otherwise. For portability, prefer the [`ldexp`, `ldexpf`, `ldexpl`](ldexp.md) functions.
 
-## _dunscale, _ldunscale, _fdunscale
+## `_dunscale`, `_ldunscale`, `_fdunscale`
 
 ### Syntax
 
@@ -185,7 +185,7 @@ Pointer to a floating-point argument.
 
 These floating-point primitives break down the floating-point value pointed at by *`px`* into a significand (mantissa) and an exponent, if possible. The significand is scaled such that the absolute value is greater than or equal to 0.5 and less than 1.0. The exponent is the value *`n`*, where the original floating-point value is equal to the scaled significand times 2<sup>n</sup>. This integer exponent *`n`* is stored at the location pointed to by *`pexp`*. The value returned is the result of `fpclassify` on the input value in *`px`* if it's a NaN or infinity, and on the output value otherwise. For portability, prefer the [`frexp`, `frexpf`, `frexpl`](frexp.md) functions.
 
-## _dexp, _ldexp, _fdexp
+## `_dexp`, `_ldexp`, `_fdexp`
 
 ### Syntax
 
@@ -210,7 +210,7 @@ An exponent as an integral type.
 
 These floating-point primitives construct a floating-point value in the location pointed at by *`px`* equal to *`y`* * 2<sup>exp</sup>. The value returned is the result of `fpclassify` on the input value in *`y`* if it's a NaN or infinity, and on the output value in *`px`* otherwise. For portability, prefer the [`ldexp`, `ldexpf`, `ldexpl`](ldexp.md) functions.
 
-## _dnorm, _fdnorm
+## `_dnorm`, `_fdnorm`
 
 ### Syntax
 
@@ -226,9 +226,9 @@ Pointer to the bitwise representation of a floating-point value expressed as an 
 
 ### Remarks
 
-These floating-point primitives normalize the fractional part of an underflowed floating-point value and adjust the *characteristic*, or biased exponent, to match. The value is passed as the bitwise representation of the floating-point type converted to an array of **`unsigned short`** through the `_double_val`, `_ldouble_val`, or `_float_val` type-punning union declared in math.h. The return value is the result of `fpclassify` on the input floating-point value if it's a NaN or infinity, and on the output value otherwise.
+These floating-point primitives normalize the fractional part of an underflowed floating-point value and adjust the *characteristic*, or biased exponent, to match. The value is passed as the bitwise representation of the floating-point type converted to an array of **`unsigned short`** through the `_double_val`, `_ldouble_val`, or `_float_val` type-punning union declared in `math.h`. The return value is the result of `fpclassify` on the input floating-point value if it's a NaN or infinity, and on the output value otherwise.
 
-## _dpoly, _ldpoly, _fdpoly
+## `_dpoly`, `_ldpoly`, `_fdpoly`
 
 ### Syntax
 
@@ -253,7 +253,7 @@ Order of the polynomial to evaluate.
 
 These floating-point primitives return the evaluation of *`x`* in the polynomial of order *`n`* whose coefficients are represented by the corresponding constant values in *`table`*. For example, if *`table[0]`* = 3.0, *`table[1]`* = 4.0, *`table[2]`* = 5.0, and *`n`* = 2, it represents the polynomial 5.0x<sup>2</sup> + 4.0x + 3.0. If this polynomial is evaluated for *`x`* of 2.0, the result is 31.0. These functions aren't used internally.
 
-## _dlog, _ldlog, _fdlog
+## `_dlog`, `_ldlog`, `_fdlog`
 
 ### Syntax
 
@@ -275,7 +275,7 @@ Flag that controls the base to use, 0 for base *e* and non-zero for base 10.
 
 These floating-point primitives return the natural log of *`x`* (ln(x) or log<sub>*e*</sub>(x)), when *`base_flag`* is 0. They return the log base 10 of *`x`*, or log<sub>10</sub>(x), when *`base_flag`* is non-zero. These functions aren't used internally. For portability, prefer the functions [`log`, `logf`, `logl`, `log10`, `log10f`, and `log10l`](log-logf-log10-log10f.md).
 
-## _dsin, _ldsin, _fdsin
+## `_dsin`, `_ldsin`, `_fdsin`
 
 ### Syntax
 
@@ -299,7 +299,7 @@ These floating-point primitives return the sine of *`x`* offset by the *`quadran
 
 ## Requirements
 
-Header: \<math.h>
+Header: `<math.h>`
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
