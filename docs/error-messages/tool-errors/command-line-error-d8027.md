@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Command-Line Error D8027"
 title: "Command-Line Error D8027"
-ms.date: "11/04/2016"
+description: "Learn more about: Command-Line Error D8027"
+ms.date: 11/04/2016
 f1_keywords: ["D8027"]
 helpviewer_keywords: ["D8027"]
-ms.assetid: f228220f-0c7f-49a6-a6e0-1f7bd4745aa6
 ---
 # Command-Line Error D8027
 
-cannot execute 'component'
+> cannot execute 'component'
+
+## Remarks
 
 The compiler could not run the given compiler component or linker.
 

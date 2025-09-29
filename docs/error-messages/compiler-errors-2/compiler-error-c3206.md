@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3206"
 title: "Compiler Error C3206"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3206"
+ms.date: 11/04/2016
 f1_keywords: ["C3206"]
 helpviewer_keywords: ["C3206"]
-ms.assetid: d62995b5-e349-4418-bbe8-8a5e776ca7b0
 ---
 # Compiler Error C3206
 
-'function' : invalid type argument for 'param', missing type argument list on class type 'typename'
+> 'function' : invalid type argument for 'param', missing type argument list on class type 'typename'
+
+## Remarks
 
 A function template is defined as taking a template type argument. However, a template template argument was passed.
 
-The following sample generates C3206:
+## Examples
+
+The following example generates C3206:
 
 ```cpp
 // C3206.cpp
@@ -77,7 +80,7 @@ int main() {
 }
 ```
 
-A class template is not allowed as a template type argument. The following sample raises C3206:
+A class template is not allowed as a template type argument. The following example raises C3206:
 
 ```cpp
 // C3206e.cpp

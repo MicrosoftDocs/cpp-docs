@@ -9,6 +9,8 @@ helpviewer_keywords: ["C2433"]
 
 > '*identifier*': '*modifier*' not permitted on data declarations
 
+## Remarks
+
 The **`friend`**, **`virtual`**, and **`inline`** modifiers cannot be used for data declarations.
 
 ## Example

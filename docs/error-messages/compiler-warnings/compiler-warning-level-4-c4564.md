@@ -1,16 +1,19 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4564"
 title: "Compiler Warning (level 4) C4564"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4564"
+ms.date: 11/04/2016
 f1_keywords: ["C4564"]
 helpviewer_keywords: ["C4564"]
-ms.assetid: 555b301b-313e-4262-9f81-eb878674be60
 ---
 # Compiler Warning (level 4) C4564
 
-method 'method' of class 'class' defines unsupported default parameter 'parameter'
+> method 'method' of class 'class' defines unsupported default parameter 'parameter'
+
+## Remarks
 
 The compiler detected a method with one or more parameters with default values. The default value(s) for the parameters will be ignored when the method is invoked; explicitly specify values for those parameters. If you do not explicitly specify values for those parameters, the C++ compiler will generate an error.
+
+## Example
 
 Given the following .dll created with Visual Basic, which allows default parameters on method arguments:
 
@@ -24,7 +27,7 @@ Public class TestClass
 End class
 ```
 
-And the following C++ sample that uses the .dll created with Visual Basic,
+And the following C++ example that uses the .dll created with Visual Basic,
 
 ```cpp
 // C4564.cpp

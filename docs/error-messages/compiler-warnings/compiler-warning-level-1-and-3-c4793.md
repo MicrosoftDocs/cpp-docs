@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1 and 3) C4793"
 title: "Compiler Warning (level 1 and 3) C4793"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1 and 3) C4793"
+ms.date: 11/04/2016
 f1_keywords: ["C4793"]
 helpviewer_keywords: ["C6634", "C6635", "C6640", "C6630", "C6639", "C6636", "C6638", "C6631", "C6637", "C4793"]
-ms.assetid: 819ada53-1d9c-49b8-a629-baf8c12314e6
 ---
 # Compiler Warning (level 1 and 3) C4793
 
@@ -30,9 +29,9 @@ The following table lists all possible continuation messages.
 |A non-__clrcall virtual function thunk must be compiled as native|A non-[__clrcall](../../cpp/clrcall.md) virtual function thunk must use an unmanaged address.|
 |A function using '_setjmp' must be compiled as native|The CLR must be able to control program execution. However, the [setjmp](../../cpp/using-setjmp-longjmp.md) function bypasses regular program execution by saving and restoring low-level information such as registers and execution state.|
 
-## Example
+## Examples
 
-The following sample generates C4793.
+The following example generates C4793.
 
 ```cpp
 // C4793.cpp
@@ -50,7 +49,7 @@ warning C4793: 'asmfunc' : function is compiled as native code:
         Inline native assembly ('__asm') is not supported in managed code
 ```
 
-The following sample generates C4793.
+The following example generates C4793.
 
 ```cpp
 // C4793_b.cpp

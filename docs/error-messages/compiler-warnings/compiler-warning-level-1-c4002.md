@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, Error) C4002"
 title: "Compiler Warning (level 1, Error) C4002"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1, Error) C4002"
+ms.date: 11/04/2016
 f1_keywords: ["C4002"]
 helpviewer_keywords: ["C4002"]
 ---
@@ -9,11 +9,15 @@ helpviewer_keywords: ["C4002"]
 
 > too many arguments for function-like macro invocation '*identifier*'
 
+## Remarks
+
 The number of actual parameters in the macro exceeds the number of formal parameters in the macro definition. The preprocessor collects the extra parameters but ignores them during macro expansion.
 
 C4002 can occur when incorrectly using [variadic macros](../../preprocessor/variadic-macros.md).
 
-The following sample generates C4002:
+## Example
+
+The following example generates C4002:
 
 ```cpp
 // C4002.cpp

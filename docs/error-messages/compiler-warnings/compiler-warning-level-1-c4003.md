@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 1, Error) C4003"
 title: "Compiler Warning (level 1, Error) C4003"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1, Error) C4003"
+ms.date: 11/04/2016
 f1_keywords: ["C4003"]
 helpviewer_keywords: ["C4003"]
 ---
@@ -9,9 +9,13 @@ helpviewer_keywords: ["C4003"]
 
 > not enough arguments for function-like macro invocation '*identifier*'
 
+## Remarks
+
 The number of formal parameters in the macro definition exceeds the number of actual parameters in the macro. Macro expansion substitutes empty text for the missing parameters.
 
-The following sample generates C4003:
+## Example
+
+The following example generates C4003:
 
 ```cpp
 // C4003.cpp

@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2660"
 title: "Compiler Error C2660"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2660"
+ms.date: 11/04/2016
 f1_keywords: ["C2660"]
 helpviewer_keywords: ["C2660"]
-ms.assetid: 2e01a1db-4f00-4df6-a04d-cb6f70a6922b
 ---
 # Compiler Error C2660
 
-'function' : function does not take number parameters
+> 'function' : function does not take number parameters
+
+## Remarks
 
 The function is called with an incorrect number of parameters.
 
@@ -20,7 +21,7 @@ C2660 can occur if you accidentally call a Windows API function rather than an M
 
 ## Examples
 
-The following sample generates C2660.
+The following example generates C2660.
 
 ```cpp
 // C2660.cpp
@@ -32,7 +33,7 @@ int main() {
 }
 ```
 
-C2660 can also occur if you attempt to directly call the Dispose method of a managed type. For more information, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). The following sample generates C2660.
+C2660 can also occur if you attempt to directly call the Dispose method of a managed type. For more information, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). The following example generates C2660.
 
 ```cpp
 // C2660_a.cpp

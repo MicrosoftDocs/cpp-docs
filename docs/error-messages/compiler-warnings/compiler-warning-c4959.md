@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4959"
 title: "Compiler Warning C4959"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4959"
+ms.date: 11/04/2016
 f1_keywords: ["C4959"]
 helpviewer_keywords: ["C4959"]
-ms.assetid: 3a128f3e-4d8a-4565-ba1a-5d32fdeb5982
 ---
 # Compiler Warning C4959
 
@@ -22,7 +21,7 @@ This warning is issued as an error and can be disabled with the [warning](../../
 
 ## Example
 
-The following sample generates C4959:
+The following example generates C4959:
 
 ```cpp
 // C4959.cpp

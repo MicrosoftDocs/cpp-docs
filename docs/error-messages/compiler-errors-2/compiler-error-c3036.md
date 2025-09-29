@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3036"
 title: "Compiler Error C3036"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3036"
+ms.date: 11/04/2016
 f1_keywords: ["C3036"]
 helpviewer_keywords: ["C3036"]
-ms.assetid: 10c6993e-bc42-4a07-85c7-cdc34ac30906
 ---
 # Compiler Error C3036
 
-'operator' : invalid operator token in OpenMP 'reduction' clause
+> 'operator' : invalid operator token in OpenMP 'reduction' clause
+
+## Remarks
 
 A [reduction](../../parallel/openmp/reference/openmp-clauses.md#reduction) clause was not specified correctly.
 
-The following sample generates C3036:
+## Example
+
+The following example generates C3036:
 
 ```cpp
 // C3036.cpp

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: char, wchar_t, char8_t, char16_t, char32_t"
 title: "char, wchar_t, char8_t, char16_t, char32_t"
+description: "Learn more about: char, wchar_t, char8_t, char16_t, char32_t"
 ms.date: 04/23/2021
 ---
 # char, wchar_t, char8_t, char16_t, char32_t
@@ -26,6 +26,6 @@ The **`wchar_t`** type is an implementation-defined wide character type. In the 
 
 The **`char8_t`**, **`char16_t`**, and **`char32_t`** types represent 8-bit, 16-bit, and 32-bit wide characters, respectively. (**`char8_t`** is new in C++20 and requires the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or **`/std:c++latest`** compiler option.) Unicode encoded as UTF-8 can be stored in the **`char8_t`** type. Strings of **`char8_t`** and **`char`** type are referred to as *narrow* strings, even when used to encode Unicode or multi-byte characters. Unicode encoded as UTF-16 can be stored in the **`char16_t`** type, and Unicode encoded as UTF-32 can be stored in the **`char32_t`** type. Strings of these types and **`wchar_t`** are all referred to as *wide* strings, though the term often refers specifically to strings of **`wchar_t`** type.
 
-In the C++ standard library, the [`basic_string`](/cpp/standard-library/basic-string-class) type is specialized for both narrow and wide strings. Use `std::string` when the characters are of type **`char`**, `std::u8string` when the characters are of type **`char8_t`**, `std::u16string` when the characters are of type **`char16_t`**, `std::u32string` when the characters are of type **`char32_t`**, and `std::wstring` when the characters are of type **`wchar_t`**.
+In the C++ standard library, the [`basic_string`](../standard-library/basic-string-class.md) type is specialized for both narrow and wide strings. Use `std::string` when the characters are of type **`char`**, `std::u8string` when the characters are of type **`char8_t`**, `std::u16string` when the characters are of type **`char16_t`**, `std::u32string` when the characters are of type **`char32_t`**, and `std::wstring` when the characters are of type **`wchar_t`**.
 
-Other types that represent text, including [`std::stringstream`](/cpp/standard-library/sstream-typedefs/#stringstream) and [`std::cout`](/cpp/standard-library/iostream#cout) have specializations for narrow and wide strings.
+Other types that represent text, including [`std::stringstream`](../standard-library/sstream-typedefs.md#stringstream) and [`std::cout`](../standard-library/iostream.md#cout) have specializations for narrow and wide strings.

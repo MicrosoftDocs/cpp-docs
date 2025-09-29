@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3367"
 title: "Compiler Error C3367"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3367"
+ms.date: 11/04/2016
 f1_keywords: ["C3367"]
 helpviewer_keywords: ["C3367"]
-ms.assetid: e675d42b-f5b0-4d43-aab1-1f5024233102
 ---
 # Compiler Error C3367
 
-'static_member_function' : cannot use static function to create an unbound delegate
+> 'static_member_function' : cannot use static function to create an unbound delegate
+
+## Remarks
 
 When you call an unbound delegate, you must pass an instance of an object. Since a static member function is called through the class name, you can only instantiate an unbound delegate with an instance member function.
 
@@ -16,7 +17,7 @@ For more information about unbound delegates, see [How to: Define and Use Delega
 
 ## Example
 
-The following sample generates C3367.
+The following example generates C3367.
 
 ```cpp
 // C3367.cpp

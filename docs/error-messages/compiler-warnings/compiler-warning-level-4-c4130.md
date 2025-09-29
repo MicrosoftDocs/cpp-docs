@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4130"
 title: "Compiler Warning (level 4) C4130"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4130"
+ms.date: 11/04/2016
 f1_keywords: ["C4130"]
 helpviewer_keywords: ["C4130"]
-ms.assetid: 45e4c7b2-6b51-41c7-ba5e-941aa5c7d3dc
 ---
 # Compiler Warning (level 4) C4130
 
-'operator' : logical operation on address of string constant
+> 'operator' : logical operation on address of string constant
+
+## Remarks
 
 Using the operator with the address of a string literal produces unexpected code.
 
-The following sample generates C4130:
+## Example
+
+The following example generates C4130:
 
 ```cpp
 // C4130.cpp

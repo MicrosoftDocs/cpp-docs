@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2977"
 title: "Compiler Error C2977"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2977"
+ms.date: 11/04/2016
 f1_keywords: ["C2977"]
 helpviewer_keywords: ["C2977"]
-ms.assetid: 3c4218e0-5d03-4a2b-b757-c507c35f3542
 ---
 # Compiler Error C2977
 
-'identifier' : too many type arguments
+> 'identifier' : too many type arguments
+
+## Remarks
 
 A generic or template has too many actual arguments. Check the generic or template declaration to find the correct number of parameters.
 
-The following sample generates C2977:
+## Examples
+
+The following example generates C2977:
 
 ```cpp
 // C2977.cpp
