@@ -253,7 +253,7 @@ Order of the polynomial to evaluate.
 
 These floating-point primitives return the evaluation of *`x`* in the polynomial of order *`n`* whose coefficients are represented by the corresponding constant values in *`table`*. For example, if *`table[0]`* = 3.0, *`table[1]`* = 4.0, *`table[2]`* = 5.0, and *`n`* = 2, it represents the polynomial 5.0x<sup>2</sup> + 4.0x + 3.0. If this polynomial is evaluated for *`x`* of 2.0, the result is 31.0. These functions aren't used internally.
 
-## _dlog, _dlog, _dlog
+## _dlog, _ldlog, _fdlog
 
 ### Syntax
 
