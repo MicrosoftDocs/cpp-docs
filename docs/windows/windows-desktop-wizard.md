@@ -58,7 +58,7 @@ Defines the support and options for the application, depending on its type.
 |**Precompiled header**|Specifies that the static library project uses a pre-compiled header.|
 |**Security Development Lifecycle (SDL) checks**|For more information about SDL, see [Microsoft Security Development Lifecycle (SDL)  Process Guidance](../build/reference/sdl-enable-additional-security-checks.md)|
 
-## Add common headers for:
+## Add common headers for
 
 Add support for one of the libraries supplied in Visual C++.
 

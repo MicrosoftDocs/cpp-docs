@@ -13,7 +13,7 @@ You can add a generic C++ class by using **Class View**. A generic C++ class is 
 
 ::: moniker range="msvc-140"
 
-## To add a generic C++ class to a project:
+## To add a generic C++ class to a project
 
 1. In **Class View**, right-click the project to which you want to add the new class, choose **Add**, and then choose **Class**.
 

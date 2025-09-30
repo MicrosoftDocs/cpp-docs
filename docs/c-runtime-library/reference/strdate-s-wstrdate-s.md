@@ -76,7 +76,7 @@ The debug library versions of these functions first fill the buffer with 0xFE. T
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-text routine mapping:
+### Generic-text routine mapping
 
 | TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|

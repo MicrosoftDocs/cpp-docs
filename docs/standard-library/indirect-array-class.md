@@ -20,7 +20,7 @@ You construct an `indirect_array<Type>` object only by writing an expression of 
 
 The sequence consists of [`xa.size`](../standard-library/valarray-class.md#size) elements, where element `I` becomes the index `xa[I]` within `va`.
 
-## Example:
+## Example
 
 ```cpp
 // indirect_array.cpp

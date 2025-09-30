@@ -30,7 +30,7 @@ In a CMake project, build configurations are stored in a *`CMakeSettings.json`* 
 
 When you choose a configuration, it's added to the *`CMakeSettings.json`* file in the project's root folder. You can then use it to build your project. For information about the configuration properties, see [CMakeSettings reference](cmakesettings-reference.md).
 
-## Linux predefined build configurations:
+## Linux predefined build configurations
 
 ```json
 {

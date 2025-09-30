@@ -20,7 +20,7 @@ This sample continues the work you did in [How to: Do DDX/DDV Data Binding with 
 
 Now, you will associate your MFC control (`m_MyControl`) with a managed event handler delegate called `OnClick` for the managed <xref:System.Windows.Forms.Control.Click> event.
 
-### To attach the OnClick event handler:
+### To attach the OnClick event handler
 
 1. Add the following code to the implementation of BOOL CMFC01Dlg::OnInitDialog:
 
