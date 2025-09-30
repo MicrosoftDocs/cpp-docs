@@ -16,7 +16,7 @@ Converts a `time_t` time value to a `tm` structure. More secure versions of thes
 ## Syntax
 
 ```C
-struct tm *gmtime( const time_t *sourceTime );
+struct tm *gmtime( const time_t *sourceTime ); // See note in remarks section about linkage
 struct tm *_gmtime32( const __time32_t *sourceTime );
 struct tm *_gmtime64( const __time64_t *sourceTime );
 ```
@@ -55,6 +55,13 @@ These functions validate their parameters. If *`sourceTime`* is a `NULL` pointer
 The **`_gmtime32`** function breaks down the *`sourceTime`* value and stores it in a statically allocated structure of type `tm`, defined in `TIME.H`. The value of *`sourceTime`* is typically obtained from a call to the [`time`](time-time32-time64.md) function.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> Starting in Visual Studio 2025 and the Windows SDK 26000, this function changes from declaring the function (or functions for multi-function pages) with `static inline` to `inline`.\
+> You can opt-out of the change for your project by defining `_STATIC_INLINE_UCRT_FUNCTIONS=1`.\
+> You can adopt the change early by defining `_STATIC_INLINE_UCRT_FUNCTIONS=0`.\
+> This change improves conformance and helps avoid One Definition Rule (ODR) violations, especially when using modules.\
+> This applies to the following functions: gmtime
 
 ## Requirements
 

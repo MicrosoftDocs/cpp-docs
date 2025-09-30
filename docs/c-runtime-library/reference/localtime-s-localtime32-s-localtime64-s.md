@@ -17,7 +17,7 @@ Converts a **`time_t`** time value to a **`tm`** structure, and corrects for the
 ## Syntax
 
 ```C
-errno_t localtime_s(
+errno_t localtime_s( // See note in remarks section about linkage
    struct tm* const tmDest,
    time_t const* const sourceTime
 );
@@ -83,6 +83,13 @@ The fields of the structure type [`tm`](../standard-types.md) store the followin
 If the **`TZ`** environment variable is set, the C run-time library assumes rules appropriate to the United States for implementing the calculation of daylight saving time (DST).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> Starting in Visual Studio 2025 and the Windows SDK 26000, this function changes from declaring the function (or functions for multi-function pages) with `static inline` to `inline`.\
+> You can opt-out of the change for your project by defining `_STATIC_INLINE_UCRT_FUNCTIONS=1`.\
+> You can adopt the change early by defining `_STATIC_INLINE_UCRT_FUNCTIONS=0`.\
+> This change improves conformance and helps avoid One Definition Rule (ODR) violations, especially when using modules.\
+> This applies to the following functions: localtime_s
 
 ## Requirements
 

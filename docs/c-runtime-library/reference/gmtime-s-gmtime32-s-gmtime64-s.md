@@ -16,7 +16,7 @@ Converts a time value to a `tm` structure. These functions are versions of [`_gm
 ## Syntax
 
 ```C
-errno_t gmtime_s(
+errno_t gmtime_s( // See note in remarks section about linkage
    struct tm* tmDest,
    const __time_t* sourceTime
 );
@@ -75,6 +75,13 @@ Each of the structure fields is of type **`int`**, as shown in the following tab
 **`gmtime_s`** is an inline function that evaluates to **`_gmtime64_s`** and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. `_USE_32BIT_TIME_T` causes **`gmtime_s`** to be inlined as **`_gmtime32_s`**. We don't recommend `_USE_32BIT_TIME_T`, because your application may fail after January 18, 2038, and because it isn't allowed on 64-bit platforms.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> Starting in Visual Studio 2025 and the Windows SDK 26000, this function changes from declaring the function (or functions for multi-function pages) with `static inline` to `inline`.\
+> You can opt-out of the change for your project by defining `_STATIC_INLINE_UCRT_FUNCTIONS=1`.\
+> You can adopt the change early by defining `_STATIC_INLINE_UCRT_FUNCTIONS=0`.\
+> This change improves conformance and helps avoid One Definition Rule (ODR) violations, especially when using modules.\
+> This applies to the following functions: gmtime_s
 
 ## Requirements
 

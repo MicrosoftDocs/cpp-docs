@@ -16,7 +16,7 @@ Convert a time value to a string and adjust for local time zone settings. These 
 ## Syntax
 
 ```C
-errno_t ctime_s(
+errno_t ctime_s( // See note in remarks section about linkage
    char* buffer,
    size_t numberOfElements,
    const time_t *sourceTime
@@ -31,7 +31,7 @@ errno_t _ctime64_s(
    size_t numberOfElements,
    const __time64_t *sourceTime
 );
-errno_t _wctime_s(
+errno_t _wctime_s( // See note in remarks section about linkage
    wchar_t* buffer,
    size_t numberOfElements,
    const time_t *sourceTime
@@ -123,6 +123,12 @@ In C++, using these functions is simplified by template overloads; the overloads
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> Starting with Windows SDK version 10.0.xxxxx.xxxx and Visual Studio 2026 or later, the following functions are no longer declared as `static inline` (internal linkage). Instead, they are now declared as `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1`before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard, while also improving compatibility with C++ modules.\
+> This applies to the following functions: ctime_s, _wctime_s
 
 ### Generic-text routine mappings
 

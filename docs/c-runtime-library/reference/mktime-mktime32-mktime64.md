@@ -16,7 +16,7 @@ Convert the local time to a calendar value.
 ## Syntax
 
 ```C
-time_t mktime(
+time_t mktime( // See note in remarks section about linkage
    struct tm *timeptr
 );
 __time32_t _mktime32(
@@ -61,6 +61,13 @@ The **`gmtime`** and **`localtime`** (and **`_gmtime32`**, **`_gmtime64`**, **`_
 These functions validate their parameter. If *`timeptr`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> Starting in Visual Studio 2025 and the Windows SDK 26000, this function changes from declaring the function (or functions for multi-function pages) with `static inline` to `inline`.\
+> You can opt-out of the change for your project by defining `_STATIC_INLINE_UCRT_FUNCTIONS=1`.\
+> You can adopt the change early by defining `_STATIC_INLINE_UCRT_FUNCTIONS=0`.\
+> This change improves conformance and helps avoid One Definition Rule (ODR) violations, especially when using modules.\
+> This applies to the following functions: mktime
 
 ## Requirements
 

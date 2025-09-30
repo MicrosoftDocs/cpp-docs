@@ -17,7 +17,7 @@ Finds the difference between two times.
 ## Syntax
 
 ```C
-double difftime( time_t timeEnd, time_t timeStart );
+double difftime( time_t timeEnd, time_t timeStart ); // See note in remarks section about linkage
 double _difftime32( __time32_t timeEnd, __time32_t timeStart );
 double _difftime64( __time64_t timeEnd, __time64_t timeStart );
 ```
@@ -45,6 +45,13 @@ The time value supplied must fit within the range of `time_t`. `time_t` is a 64-
 These functions validate their parameters. If either of the parameters is zero or negative, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return 0 and set `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> Starting in Visual Studio 2025 and the Windows SDK 26000, this function changes from declaring the function (or functions for multi-function pages) with `static inline` to `inline`.\
+> You can opt-out of the change for your project by defining `_STATIC_INLINE_UCRT_FUNCTIONS=1`.\
+> You can adopt the change early by defining `_STATIC_INLINE_UCRT_FUNCTIONS=0`.\
+> This change improves conformance and helps avoid One Definition Rule (ODR) violations, especially when using modules.\
+> This applies to the following functions: difftime
 
 ## Requirements
 

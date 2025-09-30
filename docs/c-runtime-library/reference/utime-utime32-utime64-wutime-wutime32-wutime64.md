@@ -17,7 +17,7 @@ Set the file modification time.
 ## Syntax
 
 ```C
-int _utime(
+int _utime( // See note in remarks section about linkage
    const char *filename,
    struct _utimbuf *times
 );
@@ -29,7 +29,7 @@ int _utime64(
    const char *filename,
    struct __utimbuf64 *times
 );
-int _wutime(
+int _wutime( // See note in remarks section about linkage
    const wchar_t *filename,
    struct _utimbuf *times
 );
@@ -84,6 +84,13 @@ Specific versions of the `_utimbuf` structure (`__utimbuf32` and `__utimbuf64`) 
 **`_wutime`** is a wide-character version of **`_utime`**; the *`filename`* argument to **`_wutime`** is a wide-character string. These functions behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> Starting in Visual Studio 2025 and the Windows SDK 26000, this function changes from declaring the function (or functions for multi-function pages) with `static inline` to `inline`.\
+> You can opt-out of the change for your project by defining `_STATIC_INLINE_UCRT_FUNCTIONS=1`.\
+> You can adopt the change early by defining `_STATIC_INLINE_UCRT_FUNCTIONS=0`.\
+> This change improves conformance and helps avoid One Definition Rule (ODR) violations, especially when using modules.\
+> This applies to the following functions: _utime, _wutime
 
 ### Generic-text routine mappings
 

@@ -17,7 +17,7 @@ Sets the modification time on an open file.
 ## Syntax
 
 ```C
-int _futime(
+int _futime( // See note in remarks section about linkage
    int fd,
    struct _utimbuf *filetime
 );
@@ -50,6 +50,12 @@ The **`_futime`** routine sets the modification date and the access time on the 
 **`_futime64`**, which uses the `__utimbuf64` structure, can read and modify file dates through 23:59:59, December 31, 3000, UTC; whereas a call to **`_futime32`** fails if the date on the file is later than 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for these functions.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> Starting with Windows SDK version 10.0.xxxxx.xxxx and Visual Studio 2026 or later, the following functions are no longer declared as `static inline` (internal linkage). Instead, they are now declared as `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1`before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard, while also improving compatibility with C++ modules.\
+> This applies to the following functions: _futime
 
 ## Requirements
 

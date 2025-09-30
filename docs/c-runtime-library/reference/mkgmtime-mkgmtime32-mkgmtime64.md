@@ -16,7 +16,7 @@ Converts a UTC time represented by a **`struct tm`** to a UTC time represented b
 ## Syntax
 
 ```C
-time_t _mkgmtime(
+time_t _mkgmtime( // See note in remarks section about linkage
    struct tm* timeptr
 );
 __time32_t _mkgmtime32(
@@ -47,6 +47,13 @@ The time structure passed in is changed as follows, in the same way as it's chan
 The range of the **`_mkgmtime32`** function is from midnight, January 1, 1970, UTC to 23:59:59 January 18, 2038, UTC. The range of **`_mkgmtime64`** is from midnight, January 1, 1970, UTC to 23:59:59, December 31, 3000, UTC. An out-of-range date results in a return value of -1. The range of **`_mkgmtime`** depends on whether `_USE_32BIT_TIME_T` is defined. When it's not defined, which is the default, the range is the same as **`_mkgmtime64`**. Otherwise, the range is limited to the 32-bit range of **`_mkgmtime32`**.
 
 Both **`gmtime`** and **`localtime`** use a common static buffer for the conversion. If you supply this buffer to **`_mkgmtime`**, the previous contents are destroyed.
+
+> [!Note]
+> Starting in Visual Studio 2025 and the Windows SDK 26000, this function changes from declaring the function (or functions for multi-function pages) with `static inline` to `inline`.\
+> You can opt-out of the change for your project by defining `_STATIC_INLINE_UCRT_FUNCTIONS=1`.\
+> You can adopt the change early by defining `_STATIC_INLINE_UCRT_FUNCTIONS=0`.\
+> This change improves conformance and helps avoid One Definition Rule (ODR) violations, especially when using modules.\
+> This applies to the following functions: _mkgmtime
 
 ## Examples
 

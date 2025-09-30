@@ -17,7 +17,7 @@ Get the current time. More secure versions of these functions are available; see
 ## Syntax
 
 ```C
-void _ftime( struct _timeb *timeptr );
+void _ftime( struct _timeb *timeptr ); // See note in remarks section about linkage
 void _ftime32( struct __timeb32 *timeptr );
 void _ftime64( struct __timeb64 *timeptr );
 ```
@@ -45,6 +45,12 @@ The **`_ftime`** function is equivalent to **`_ftime64`**, and `_timeb` contains
 **`_ftime`** validates its parameters. If passed a null pointer as *`timeptr`*, the function invokes the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> Starting with Windows SDK version 10.0.xxxxx.xxxx and Visual Studio 2026 or later, the following functions are no longer declared as `static inline` (internal linkage). Instead, they are now declared as `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1`before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard, while also improving compatibility with C++ modules.\
+> This applies to the following functions: _ftime
 
 ## Requirements
 

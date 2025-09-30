@@ -17,7 +17,7 @@ Converts a time value and corrects for the local time zone. More secure versions
 ## Syntax
 
 ```C
-struct tm *localtime( const time_t *sourceTime );
+struct tm *localtime( const time_t *sourceTime ); // See note in remarks section about linkage
 struct tm *_localtime32( const __time32_t *sourceTime );
 struct tm *_localtime64( const __time64_t *sourceTime );
 ```
@@ -71,6 +71,13 @@ Both the 32-bit and 64-bit versions of [`gmtime`](gmtime-gmtime32-gmtime64.md), 
 These functions validate their parameters. If *`sourceTime`* is a null pointer, or if the *`sourceTime`* value is negative, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return `NULL` and set `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> Starting in Visual Studio 2025 and the Windows SDK 26000, this function changes from declaring the function (or functions for multi-function pages) with `static inline` to `inline`.\
+> You can opt-out of the change for your project by defining `_STATIC_INLINE_UCRT_FUNCTIONS=1`.\
+> You can adopt the change early by defining `_STATIC_INLINE_UCRT_FUNCTIONS=0`.\
+> This change improves conformance and helps avoid One Definition Rule (ODR) violations, especially when using modules.\
+> This applies to the following functions: localtime
 
 ## Requirements
 
