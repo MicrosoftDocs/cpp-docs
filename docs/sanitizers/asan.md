@@ -137,7 +137,7 @@ AddressSanitizer is integrated with the Visual Studio IDE. To turn on AddressSan
 
 To build from the IDE, opt out of any [incompatible options](./asan-known-issues.md#incompatible-options). For an existing project compiled by using **`/Od`** (or Debug mode), you may need to turn off these options:
 
-- Turn off [edit and continue](/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue)
+- Turn off [`/ZI` (Debug Information Format)](../build/reference/z7-zi-zi-debug-information-format.md)
 - Turn off [`/RTC1` (runtime checks)](../build/reference/rtc-run-time-error-checks.md)
 - Turn off [`/INCREMENTAL` (incremental linking)](../build/reference/incremental-link-incrementally.md)
 

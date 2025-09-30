@@ -519,7 +519,7 @@ The responsiveness of **Go To All** is improved. Previously, results appeared af
 A partial list of new features in 17.2:
 
 - Added compiler support for C++23 feature [deducing `this`](https://wg21.link/p0847), available under the **`/std:c++latest`** option.
-- Added IntelliSense support for C++23 features [deducing `this`](https://wg21.link/p0847) and [`if consteval`](http://wg21.link/p1938).
+- Added IntelliSense support for C++23 features [deducing `this`](https://wg21.link/p0847) and [`if consteval`](https://wg21.link/p1938).
 - Added inline parameter name and type hint support, toggled by pressing **Alt+F1** or double-tapping **Ctrl**. This behavior can be customized under **Tools > Options > Text Editors > C/C++ > IntelliSense**.
 - Added experimental support for C++20 modules in CMake projects. This support is currently only available with the Visual Studio (MSBuild) generator.
 - In 17.1, we introduced peripheral register and RTOS views for embedded developers. We continue to improve the capabilities of those views with usability improvements in 17.2:
