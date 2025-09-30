@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Windows Desktop Wizard"
 title: "Windows Desktop Wizard"
-ms.date: "03/29/2019"
+description: "Learn more about: Windows Desktop Wizard"
+ms.date: 03/29/2019
 f1_keywords: ["vc.appwiz.win32.overview", "vc.appwiz.win32.appset"]
 helpviewer_keywords: ["Windows Desktop Wizard", "Win32 Project Wizard"]
-ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
 ---
 # Windows Desktop Wizard
 
