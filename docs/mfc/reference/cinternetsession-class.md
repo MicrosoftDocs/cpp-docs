@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: CInternetSession Class"
 title: "CInternetSession Class"
+description: "Learn more about: CInternetSession Class"
 ms.date: "06/20/2018"
 f1_keywords: ["CInternetSession", "AFXINET/CInternetSession", "AFXINET/CInternetSession::CInternetSession", "AFXINET/CInternetSession::Close", "AFXINET/CInternetSession::EnableStatusCallback", "AFXINET/CInternetSession::GetContext", "AFXINET/CInternetSession::GetCookie", "AFXINET/CInternetSession::GetCookieLength", "AFXINET/CInternetSession::GetFtpConnection", "AFXINET/CInternetSession::GetGopherConnection", "AFXINET/CInternetSession::GetHttpConnection", "AFXINET/CInternetSession::OnStatusCallback", "AFXINET/CInternetSession::OpenURL", "AFXINET/CInternetSession::SetCookie", "AFXINET/CInternetSession::SetOption"]
 helpviewer_keywords: ["CInternetSession [MFC], CInternetSession", "CInternetSession [MFC], Close", "CInternetSession [MFC], EnableStatusCallback", "CInternetSession [MFC], GetContext", "CInternetSession [MFC], GetCookie", "CInternetSession [MFC], GetCookieLength", "CInternetSession [MFC], GetFtpConnection", "CInternetSession [MFC], GetGopherConnection", "CInternetSession [MFC], GetHttpConnection", "CInternetSession [MFC], OnStatusCallback", "CInternetSession [MFC], OpenURL", "CInternetSession [MFC], SetCookie", "CInternetSession [MFC], SetOption"]
@@ -540,7 +540,7 @@ A pointer to a string containing the actual string data to associate with the UR
 
 ### Return Value
 
-Returns `TRUE` if successful, or `FALSE` otherwise. To get the specific error code, call `GetLastError.`
+Returns `TRUE` if successful, or `FALSE` otherwise. To get the specific error code, call `GetLastError`.
 
 ### Remarks
 

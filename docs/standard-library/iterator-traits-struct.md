@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: iterator_traits Struct"
 title: "iterator_traits Struct"
-ms.date: "11/04/2016"
+description: "Learn more about: iterator_traits Struct"
+ms.date: 11/04/2016
 f1_keywords: ["xutility/std::iterator_traits"]
 helpviewer_keywords: ["iterator_traits struct", "iterator_traits class"]
-ms.assetid: 8b92c2c5-f658-402f-8ca1-e7ae301b8514
 ---
 # iterator_traits Struct
 
@@ -33,7 +32,7 @@ The template struct defines the member types
 
 - `difference_type`: a synonym for `Iterator::difference_type`.
 
-- `distance_type`: a synonym for `Iterator::difference_type.`
+- `distance_type`: a synonym for `Iterator::difference_type`.
 
 - `pointer`: a synonym for `Iterator::pointer`.
 
@@ -89,7 +88,7 @@ function( it i1, it i2 )
       x = *i1;
       cout << x << " ";
       i1++;
-   };
+   }
    cout << endl;
 };
 

@@ -1,8 +1,8 @@
 ---
-description: "Learn more about: zoned_time class"
 title: "zoned_time class"
+description: "Learn more about: zoned_time class"
 ms.date: 05/31/2022
-f1_keywords: ["chrono/std::chrono::zoned_time::get_info", "chrono/std::chrono::zoned_time::get_local_time", "chrono/std::chrono::zoned_time::get_sys_time", "chrono/std::chrono::zoned_time::get_time_zone","chrono/std::chrono::zoned_time:operator=", "chrono/std::chrono::zoned_time:operator local_time", "chrono/std::chrono::zoned_time:operator sys_time"]
+f1_keywords: ["chrono/std::chrono::zoned_time::get_info", "chrono/std::chrono::zoned_time::get_local_time", "chrono/std::chrono::zoned_time::get_sys_time", "chrono/std::chrono::zoned_time::get_time_zone","chrono/std::chrono::zoned_time::operator=", "chrono/std::chrono::zoned_time::operator local_time", "chrono/std::chrono::zoned_time::operator sys_time"]
 helpviewer_keywords: ["std::chrono [C++], zoned_time class", "std::chrono::zoned_time::get_info function", "std::chrono::zoned_time::get_local_time function", "std::chrono::zoned_time::get_sys_time function", "std::chrono::zoned_time::get_time_zone function"]
 dev_langs: ["C++"]
 ---
@@ -131,7 +131,7 @@ A `zoned_time` pointer that is `std::move(zt)`'d into the constructed `zoned_tim
 
 ### Example: construct a `zoned_time`
 
-The following shows how to create a `zoned_time` instance for the time zone `"Antartica/Casey"`, on 9/15/2021 at 4:45pm:
+The following shows how to create a `zoned_time` instance for the time zone `"Antarctica/Casey"`, on 9/15/2021 at 4:45pm:
 
 ```cpp
 // compile using: /std:c++latest
@@ -345,7 +345,7 @@ int main()
 
 1\) The default copy assignment operator. Copies (doesn't move) the stored [`time_point`](time-point-class.md) and [time_zone](time-zone-class.md) pointer from the other `zoned_time` into this `zoned_time`.
 2\) Assigns `st` to the [`time_point`](time-point-class.md) in this `zoned_time`.  After the assignment, `*this->get_sys_time() == st;`
-3\) Converts `lt` (a `local_time`) to a `sys_time`. It does this essentially as `timeZone->to_sys(lt)`, and assigns the result to the [`time_point`] in this `zoned_time`. After the assignment, `*this->get_local_time() == lt;`
+3\) Converts `lt` (a `local_time`) to a `sys_time`. It does this essentially as `timeZone->to_sys(lt)`, and assigns the result to the [`time_point`](time-point-class.md) in this `zoned_time`. After the assignment, `*this->get_local_time() == lt;`
 
 ## <a name="op_local_time"></a> `operator local_time`
 

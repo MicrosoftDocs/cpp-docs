@@ -4,6 +4,7 @@ title: "Destroying the List Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["list controls [MFC], destroying", "CListCtrl class [MFC], destroying controls"]
 ms.assetid: 513ec820-3a02-49d2-b073-a6a7a3fc91b3
+ms.topic: concept-article
 ---
 # Destroying the List Control
 

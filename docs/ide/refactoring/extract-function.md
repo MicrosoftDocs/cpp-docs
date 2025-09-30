@@ -2,6 +2,7 @@
 description: "Learn more about: Extract Function"
 title: "Extract Function"
 ms.date: "09/18/2022"
+f1_keywords: ["vc.pkg.refactoring.extractfuncdlg"]
 ---
 # Extract Function
 

@@ -3,7 +3,10 @@ description: "Learn more about: Install and configure tools to build using iOS"
 title: "Install and configure tools to build using iOS"
 ms.date: 12/18/2022
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-ms.custom: intro-installation
+ms.topic: install-set-up-deploy
+ms.custom:
+  - intro-installation
+  - sfi-image-nochange
 ---
 # Install and configure tools to build using iOS
 
@@ -26,7 +29,7 @@ To install and use the vcremote remote agent to develop code for iOS, you must f
 
    You can get a free account that allows sideloading apps to an iOS device for testing only but not for distribution.
 
-- [Xcode](https://developer.apple.com/xcode/downloads/) version 10.2.1 or later
+- [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12/) version 10.2.1 or later
 
    Xcode can be downloaded from the App Store.
 

@@ -114,7 +114,6 @@ void set_mode_and_report(char * filename, int mask)
 
 int main( void )
 {
-
    // Create or append to a file.
    system( "echo /* End of file */ >> crt_chmod.c_input" );
 

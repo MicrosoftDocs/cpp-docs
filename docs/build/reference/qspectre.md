@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: /Qspectre"
 title: "/Qspectre"
+description: "Learn more about: /Qspectre"
 ms.date: 07/02/2021
 f1_keywords: ["VC.Project.VCCLCompilerTool.SpectreMitigation"]
 helpviewer_keywords: ["/Qspectre"]
 ---
-# /Qspectre
+# `/Qspectre`
 
 Specifies compiler generation of instructions to mitigate certain Spectre variant 1 security vulnerabilities.
 
@@ -23,7 +23,7 @@ The **`/Qspectre`** option is off by default.
 
 In its initial release, the **`/Qspectre`** option only worked on optimized code. Starting in Visual Studio 2017 version 15.7, the **`/Qspectre`** option is supported at all optimization levels.
 
-Several Microsoft C++ libraries are also available in versions with Spectre mitigation. The Spectre-mitigated libraries for Visual Studio can be downloaded in the Visual Studio Installer. They're found in the **Individual Components** tab under **Compilers, build tools, and runtimes**, and have "Libs for Spectre" in the name. Both DLL and static runtime libraries with mitigation enabled are available for a subset of the Visual C++ runtimes: VC++ start-up code, vcruntime140, msvcp140, concrt140, and vcamp140. The DLLs are supported for application-local deployment only. The contents of the Visual C++ Runtime Libraries Redistributable haven't been modified.
+Several Microsoft C++ libraries are also available in versions with Spectre mitigation. The Spectre-mitigated libraries for Visual Studio can be downloaded in the Visual Studio Installer. They're found in the **Individual Components** tab under **Compilers, build tools, and runtimes**, and have "Libs for Spectre" in the name. Both DLL and static runtime libraries with mitigation enabled are available for a subset of the Visual C++ runtimes: VC++ start-up code, vcruntime140, msvcp140, concrt140, and vcamp140. The DLLs are supported for application-local deployment only. The contents of the Visual C++ Runtime Libraries Redistributable are unmodified.
 
 You can also install Spectre-mitigated libraries for MFC and ATL. They're found in the **Individual Components** tab under **SDKs, libraries, and frameworks**.
 
@@ -38,7 +38,7 @@ If your code operates on data that crosses a trust boundary, then we recommend y
 
 The **`/Qspectre`** option is available starting in Visual Studio 2017 version 15.5.5, and in all updates to Microsoft C/C++ compilers (MSVC) made on or after January 23, 2018. Use the Visual Studio Installer to update the compiler, and to install the Spectre-mitigated libraries as individual components. The **`/Qspectre`** option is also available in Visual Studio 2015 Update 3 through a patch. For more information, see [KB 4338871](https://support.microsoft.com/help/4338871).
 
-All versions of Visual Studio 2017 version 15.5, and all Previews of Visual Studio 2017 version 15.6. include an undocumented option, **/`d2guardspecload`**. It's equivalent to the initial behavior of **`/Qspectre`**. You can use **`/d2guardspecload`** to apply the same mitigations to your code in these versions of the compiler. We recommend you update your build to use **`/Qspectre`** in compilers that support the option. The **`/Qspectre`** option may also support new mitigations in later versions of the compiler.
+All versions of Visual Studio 2017 version 15.5, and all Previews of Visual Studio 2017 version 15.6. include an undocumented option, **`/d2guardspecload`**. It's equivalent to the initial behavior of **`/Qspectre`**. You can use **`/d2guardspecload`** to apply the same mitigations to your code in these versions of the compiler. We recommend you update your build to use **`/Qspectre`** in compilers that support the option. The **`/Qspectre`** option may also support new mitigations in later versions of the compiler.
 
 ### Effect
 
@@ -72,7 +72,7 @@ The default MSBuild-based project system in the Visual Studio IDE lets you speci
 
 ::: moniker range="msvc-150"
 
-The default MSBuild-based project system in the Visual Studio IDE lets you specify a [Spectre Mitigation](./c-cpp-prop-page.md#spectre-mitigation) property for your projects. This property sets the **`/Qspectre`** compiler option and changes the library paths to link the Spectre-mitigated runtime libraries. If these libraries aren't installed when you build your code, the build system reports warning MSB8038: "Spectre mitigation is enabled but Spectre mitigated libraries are not found". If your MFC or ATL code fails to build, and the linker reports an error such as "fatal error LNK1104: cannot open file 'oldnames.lib'", these missing libraries may be the cause.
+The default MSBuild-based project system in the Visual Studio IDE lets you specify a [Spectre Mitigation](./c-cpp-prop-page.md#spectre-mitigation) property for your projects. This property sets the **`/Qspectre`** compiler option and changes the library paths to link the Spectre-mitigated runtime libraries. If these libraries aren't installed when you build your code, the build system reports warning MSB8038: "Spectre mitigation is enabled but Spectre mitigated libraries are not found." If your MFC or ATL code fails to build, and the linker reports an error such as "fatal error LNK1104: cannot open file 'oldnames.lib'", these missing libraries may be the cause.
 
 ::: moniker-end
 
@@ -134,6 +134,9 @@ For an overview of Spectre vulnerabilities addressed by the MSVC mitigations, se
 
 ## See also
 
+[`/Qspectre-jmp`](qspectre-jmp.md)\
+[`/Qspectre-load`](qspectre-load.md)\
+[`/Qspectre-load-cf`](qspectre-load-cf.md)\
 [`/Q` options (Low-level operations)](q-options-low-level-operations.md)\
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)

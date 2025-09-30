@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: year_month_day_last class"
 title: "year_month_day_last class"
-ms.date: "06/28/2021"
+description: "Learn more about: year_month_day_last class"
+ms.date: 06/28/2021
 f1_keywords: ["chrono/std::chrono::year_month_day_last", "chrono/std::chrono::year_month_day_last::operator+=", "chrono/std::chrono::year_month_day_last::operator-=", "chrono/std::chrono::year_month_day_last::sysdays", "chrono/std::chrono::year_month_day_last::local_days", "chrono/std::chrono::year_month_day_last::day", "chrono/std::chrono::year_month_day_last::year", "chrono/std::chrono::year_month_day_last::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month_day_last"]
 dev_langs: ["C++"]
 ---
-# `year_month_day_last` class  
+# `year_month_day_last` class
 
  Represents the last day of a specific year and month.
 
@@ -70,7 +70,7 @@ The [`year`](year-class.md) value is stored in the constructed `year_month_day_l
 
 ## Remarks
 
-For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_day_last`
 

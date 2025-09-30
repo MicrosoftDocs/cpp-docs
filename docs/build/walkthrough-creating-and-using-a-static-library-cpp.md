@@ -290,5 +290,4 @@ The instructions for how to create the project vary depending on your version of
 
 ## See also
 
-[Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
-[Desktop Applications (Visual C++)](../windows/desktop-applications-visual-cpp.md)<br/>
+[Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)

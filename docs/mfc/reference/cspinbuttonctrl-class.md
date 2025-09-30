@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CSpinButtonCtrl Class"
 title: "CSpinButtonCtrl Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CSpinButtonCtrl Class"
+ms.date: 11/04/2016
 f1_keywords: ["CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl::CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl::Create", "AFXCMN/CSpinButtonCtrl::CreateEx", "AFXCMN/CSpinButtonCtrl::GetAccel", "AFXCMN/CSpinButtonCtrl::GetBase", "AFXCMN/CSpinButtonCtrl::GetBuddy", "AFXCMN/CSpinButtonCtrl::GetPos", "AFXCMN/CSpinButtonCtrl::GetRange", "AFXCMN/CSpinButtonCtrl::SetAccel", "AFXCMN/CSpinButtonCtrl::SetBase", "AFXCMN/CSpinButtonCtrl::SetBuddy", "AFXCMN/CSpinButtonCtrl::SetPos", "AFXCMN/CSpinButtonCtrl::SetRange"]
 helpviewer_keywords: ["CSpinButtonCtrl [MFC], CSpinButtonCtrl", "CSpinButtonCtrl [MFC], Create", "CSpinButtonCtrl [MFC], CreateEx", "CSpinButtonCtrl [MFC], GetAccel", "CSpinButtonCtrl [MFC], GetBase", "CSpinButtonCtrl [MFC], GetBuddy", "CSpinButtonCtrl [MFC], GetPos", "CSpinButtonCtrl [MFC], GetRange", "CSpinButtonCtrl [MFC], SetAccel", "CSpinButtonCtrl [MFC], SetBase", "CSpinButtonCtrl [MFC], SetBuddy", "CSpinButtonCtrl [MFC], SetPos", "CSpinButtonCtrl [MFC], SetRange"]
-ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
 ---
 # CSpinButtonCtrl Class
 
@@ -71,7 +70,7 @@ For more information on using `CSpinButtonCtrl`, see [Controls](../../mfc/contro
 
 ## <a name="create"></a> CSpinButtonCtrl::Create
 
-Creates a spin button control and attaches it to a `CSpinButtonCtrl` object..
+Creates a spin button control and attaches it to a `CSpinButtonCtrl` object.
 
 ```
 virtual BOOL Create(
@@ -202,7 +201,8 @@ A pointer to the current buddy window.
 Retrieves the current position of a spin button control.
 
 ```
-int GetPos() const;  int GetPos32(LPBOOL lpbError = NULL) const;
+int GetPos() const;
+int GetPos32(LPBOOL lpbError = NULL) const;
 ```
 
 ### Parameters
@@ -366,7 +366,7 @@ The member function `SetRange32` sets the 32-bit range for the spin button contr
 
 ## See also
 
-[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)\
+[CWnd Class](../../mfc/reference/cwnd-class.md)\
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
 [CSliderCtrl Class](../../mfc/reference/csliderctrl-class.md)

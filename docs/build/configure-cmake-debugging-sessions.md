@@ -1,8 +1,9 @@
 ---
 title: "Configure CMake debugging sessions in Visual Studio"
 description: "Describes how to use Visual Studio to configure CMake debugger settings."
-ms.date: 12/16/2020
+ms.date: 10/26/2023
 helpviewer_keywords: ["CMake debugging"]
+ms.topic: how-to
 ---
 # Configure CMake debugging sessions
 
@@ -16,13 +17,27 @@ Native CMake support is available in Visual Studio 2017 and later. To see the do
 
 All executable CMake targets are shown in the **Startup Item** dropdown in the toolbar. Select one to start a debugging session and launch the debugger.
 
-![Screenshot of the CMake startup item dropdown.](media/cmake-startup-item-dropdown.png "CMake startup item dropdown")
+:::image type="complex" source="media/new-dropdowns.png" alt-text="Screenshot of the CMake startup items dropdown.":::
+The dropdown provides a list of debug targets to choose from. The selected item appears as a play button followed by the name of the selected debug target to run. In this example, the selected debug target is Hello World .exe.
+:::image-end:::
 
 You can also start a debug session from Solution Explorer. First, switch to **CMake Targets View** in the **Solution Explorer** window.
 
-![Screenshot of the CMake targets view command.](media/cmake-targets-view.png  "CMake Targets View menu item")
+:::image type="complex" source="media/switch-to-targets-view.png" alt-text="Screenshot of the CMake Targets View menu.":::
+The solution explorer is shown. A right-click on an item in the Folder View has opened a menu that shows options such as Open, Open with, Compare with, and so on. The Switch to Targets View menu item is highlighted.
+:::image-end:::
 
 Then, right-click on an executable and select **Debug**. This command automatically starts debugging the selected target based on your active configuration.
+
+:::image type="complex" source="media/debug-targets-view.png" alt-text="Screenshot of the CMake Targets View debug option menu.":::
+A right-click on a target in the CMake Targets view has opened a menu with options such as Set as Startup item, Build, Clean All, and so on. The Debug menu option is highlighted.
+:::image-end:::
+
+Starting in Visual Studio 2022 Version 17.6, you can also start a debugging session on your CMakeLists.txt file. To do so, just set a breakpoint in your CMakeLists.txt file and run **Configure Project with CMake Debugger** from the **Project** dropdown.
+
+:::image type="complex" source="media/cmake-debugger-entry.png" alt-text="Screenshot of the CMake Debugger dropdown.":::
+The Project dropdown is shown. The menu option to Configure Project with CMake debugger is highlighted.
+:::image-end:::
 
 ## Customize debugger settings
 
@@ -111,7 +126,8 @@ In Visual Studio 2019 version 16.6, we added a new debug configuration of `type:
 
 - `remoteMachineName`:  Defaults to `"${debugInfo.remoteMachineName}"`. Name of the remote system that hosts the program to debug. Only required if different than the build system. Must have an existing entry in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). Press **Ctrl+Space** to view a list of all existing remote connections.
 - `cwd`: Defaults to `"${debugInfo.defaultWorkingDirectory}"`. Full Unix path to the directory on the remote system where `program` is run. The directory must exist.
-- `gdbPath`: Defaults to `${debugInfo.vsInstalledGdb}`. Full Windows path to the `gdb` used to debug. Defaults to the `gdb` installed with the Linux development with C/C++ workload.
+- `gdbPath`: Full Windows path to the `gdb` used to debug.
+
 - `gdbserverPath`: Defaults to `usr/bin/gdbserver`. Full Unix path to the `gdbserver` used to debug.
 - `preDebugCommand`: A Linux command to run immediately before starting `gdbserver`. `gdbserver` doesn't start until the command completes.
 

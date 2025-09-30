@@ -12,7 +12,7 @@ A predefined function object that performs the logical not operation (`operator!
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct logical_not : public unary_function<Type, bool>
 {
@@ -24,7 +24,7 @@ template <>
 struct logical_not<void>
 {
   template <class Type>
-  auto operator()(Type&& Left) const`
+  auto operator()(Type&& Left) const
      -> decltype(!std::forward<Type>(Left));
 };
 ```

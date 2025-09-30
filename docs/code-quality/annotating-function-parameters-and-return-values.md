@@ -2,7 +2,7 @@
 title: Annotating function parameters and return values
 description: "Reference guide to function parameter and return value annotations."
 ms.date: 10/15/2019
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 f1_keywords:
   - "_Outptr_opt_result_bytebuffer_to_"
   - "_Inout_updates_all_opt_"

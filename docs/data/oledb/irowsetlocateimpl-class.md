@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: IRowsetLocateImpl Class"
 title: "IRowsetLocateImpl Class"
+description: "Learn more about: IRowsetLocateImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IRowsetLocateImpl", "ATL.IRowsetLocateImpl.Compare", "IRowsetLocateImpl::Compare", "IRowsetLocateImpl.Compare", "ATL::IRowsetLocateImpl::Compare", "GetRowsAt", "IRowsetLocateImpl.GetRowsAt", "ATL::IRowsetLocateImpl::GetRowsAt", "IRowsetLocateImpl::GetRowsAt", "ATL.IRowsetLocateImpl.GetRowsAt", "IRowsetLocateImpl::GetRowsByBookmark", "IRowsetLocateImpl.GetRowsByBookmark", "GetRowsByBookmark", "IRowsetLocateImpl::Hash", "IRowsetLocateImpl.Hash", "m_rgBookmarks", "IRowsetLocateImpl::m_rgBookmarks", "ATL.IRowsetLocateImpl.m_rgBookmarks", "ATL::IRowsetLocateImpl::m_rgBookmarks", "IRowsetLocateImpl.m_rgBookmarks"]
 helpviewer_keywords: ["providers, bookmarks", "IRowsetLocateImpl class", "bookmarks, OLE DB", "Compare method", "GetRowsAt method", "GetRowsByBookmark method", "Hash method", "m_rgbookmarks"]
-ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
 ---
 # IRowsetLocateImpl Class
 
@@ -202,8 +201,8 @@ CAtlArray<DBROWCOUNT> m_rgBookmarks;
 
 ## See also
 
-[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
-[IRowsetLocate:IRowset](/previous-versions/windows/desktop/ms721190(v=vs.85))
-[Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md)<br/>
+[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)\
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)\
+[IRowsetLocate:IRowset](/previous-versions/windows/desktop/ms721190(v=vs.85))\
+[Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md)\
 [Bookmarks](/previous-versions/windows/desktop/ms709728(v=vs.85))

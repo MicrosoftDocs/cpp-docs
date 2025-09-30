@@ -1,6 +1,6 @@
 ---
 title: "Error: stack-buffer-underflow"
-description: "Source examples and live debug screenshots for Stack buffer underflow errors."
+description: "Learn about the stack-buffer-underflow Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["stack-buffer-underflow"]
 helpviewer_keywords: ["stack-buffer-underflow error", "AddressSanitizer error stack-buffer-underflow"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["stack-buffer-underflow error", "AddressSanitizer error st
 # Error: `stack-buffer-underflow`
 
 > Address Sanitizer Error: Stack buffer underflow
+
+## Remarks
 
 These error messages indicate a memory access to somewhere before the beginning of a stack variable.
 
@@ -31,9 +33,11 @@ int main() {
 To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
-cl example1.cpp /fsanitize=address /Zi
+cl example1.cpp /fsanitize=address /Zi /Od
 devenv /debugexe example1.exe
 ```
+
+ASAN is a form of dynamic analysis, which means it can only detect bad code that is actually executed. An optimizer will remove the assignment to `buffer[subscript]` because `buffer[subscript]` is never read from. As a result, this example requires the `/Od` flag.
 
 ### Resulting error
 
@@ -72,17 +76,17 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
-### Resulting error  - stack underflow on thread
+### Resulting error - stack underflow on thread
 
 :::image type="content" source="media/stack-buffer-underflow-example-2.png" alt-text="Screenshot of debugger displaying stack-buffer-underflow error in example 2.":::
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

@@ -4,6 +4,7 @@ title: "Using CStatusBarCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CStatusBarCtrl class [MFC], using", "status bar controls [MFC], about status bar controls"]
 ms.assetid: 08b39f83-580d-439a-b93e-7ef9e2a5702a
+ms.topic: concept-article
 ---
 # Using CStatusBarCtrl
 

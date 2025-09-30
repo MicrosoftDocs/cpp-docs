@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Fix your dependencies on C++ library internals"
 title: "Fix your dependencies on C++ library internals"
-ms.date: "05/24/2017"
+description: "Learn more about: Fix your dependencies on C++ library internals"
+ms.date: 05/24/2017
 helpviewer_keywords: ["library internals in an upgraded Visual Studio C++ project", "_Hash_seq in an upgraded Visual Studio C++ project"]
-ms.assetid: 493e0452-6ecb-4edc-ae20-b6fce2d7d3c5
 ---
 # Fix your dependencies on C++ library internals
 
@@ -13,13 +12,13 @@ In most cases, the What's New or Breaking Changes document for each release of V
 
 ## _Hash_seq
 
-The internal hash function `std::_Hash_seq(const unsigned char *, size_t)`, used to implement `std::hash` on some string types, was visible in recent versions of the Standard Library. This function implemented an [FNV-1a hash]( https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) on a character sequence.
+The internal hash function `std::_Hash_seq(const unsigned char *, size_t)`, used to implement `std::hash` on some string types, was visible in recent versions of the Standard Library. This function implemented an [FNV-1a hash](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) on a character sequence.
 
 To remove this dependency, you have a couple of options.
 
 - If your intent is to put a `const char *` sequence into an unordered container by using the same hash code machinery as `basic_string`, you can do that by using the `std::hash` template overload that takes a `std::string_view`, which returns that hash code in a portable way. The string library code may or may not rely on use of an FNV-1a hash in the future, so this is the best way to avoid a dependency on a particular hash algorithm.
 
-- If your intent is to generate an FNV-1a hash over arbitrary memory, we've made that code available on GitHub in the [VCSamples]( https://github.com/Microsoft/vcsamples) repository in a stand-alone header file, [fnv1a.hpp](https://github.com/Microsoft/VCSamples/tree/master/VC2015Samples/_Hash_seq), under an [MIT license](https://github.com/Microsoft/VCSamples/blob/master/license.txt). We've also included a copy here for your convenience. You can copy this code into a header file, add the header to any affected code, and then find and replace `_Hash_seq` by `fnv1a_hash_bytes`. You'll get identical behavior to the internal implementation in `_Hash_seq`.
+- If your intent is to generate an FNV-1a hash over arbitrary memory, we've made that code available on GitHub in the [VCSamples](https://github.com/Microsoft/vcsamples) repository in a stand-alone header file, [fnv1a.hpp](https://github.com/Microsoft/VCSamples/tree/master/VC2015Samples/_Hash_seq), under an [MIT license](https://github.com/Microsoft/VCSamples/blob/master/license.txt). We've also included a copy here for your convenience. You can copy this code into a header file, add the header to any affected code, and then find and replace `_Hash_seq` by `fnv1a_hash_bytes`. You'll get identical behavior to the internal implementation in `_Hash_seq`.
 
 ```cpp
 /*

@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Output File Stream Member Functions"
 title: "Output File Stream Member Functions"
-ms.date: "08/25/2021"
+description: "Learn more about: Output File Stream Member Functions"
+ms.date: 08/25/2021
 helpviewer_keywords: ["output streams [C++], member functions"]
 ---
 # Output File Stream Member Functions
@@ -12,7 +12,7 @@ Output stream member functions have three types: those that are equivalent to ma
 
 To use an output file stream ([`ofstream`](../standard-library/basic-ofstream-class.md)), you must associate that stream with a specific disk file in the constructor or the `open` function. If you use the `open` function, you can reuse the same stream object with a series of files. In either case, the arguments describing the file are the same.
 
-When you open the file associated with an output stream, you generally specify an `open_mode` flag. You can combine these flags, which are defined as enumerators in the `ios` class, with the bitwise OR ( `|` ) operator. See [`ios_base::openmode`](../standard-library/ios-base-class.md#openmode) for a list of the enumerators.
+When you open the file associated with an output stream, you generally specify an `open_mode` flag. You can combine these flags, which are defined as enumerators in the `ios` class, with the bitwise OR (`|`) operator. See [`ios_base::openmode`](../standard-library/ios-base-class.md#openmode) for a list of the enumerators.
 
 Three common output stream situations involve mode options:
 
@@ -102,7 +102,7 @@ Use these member functions to test for errors while writing to a stream:
 |[`good`](basic-ios-class.md#good)|Returns **`true`** if there's no error condition (unrecoverable or otherwise) and the end-of-file flag isn't set.|
 |[`eof`](basic-ios-class.md#eof)|Returns **`true`** on the end-of-file condition.|
 |[`clear`](basic-ios-class.md#clear)|Sets the internal error state. If called with the default arguments, it clears all error bits.|
-|[`rdstate`](basic-ios-class.md#rdstate|Returns the current error state.|
+|[`rdstate`](basic-ios-class.md#rdstate)|Returns the current error state.|
 
 The **`!`** operator is overloaded to perform the same function as the `fail` function. Thus the expression:
 

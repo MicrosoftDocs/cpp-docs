@@ -1,22 +1,26 @@
 ---
-description: "Learn more about: Compiler Error C2860"
 title: "Compiler Error C2860"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2860"
+ms.date: 03/16/2024
 f1_keywords: ["C2860"]
 helpviewer_keywords: ["C2860"]
-ms.assetid: ccc83553-90ed-4e94-b5e9-38b58ae38e31
 ---
 # Compiler Error C2860
 
-'void' cannot be an argument type, except for '(void)'
+> 'void' cannot be used as a function parameter except for '(void)'
 
-Type **`void`** cannot be used as an argument type with other arguments.
+## Remarks
 
-The following sample generates C2860:
+A function parameter cannot be of type **`void`**.
+
+## Example
+
+The following example generates C2860:
 
 ```cpp
 // C2860.cpp
 // compile with: /c
-void profunc1(void, int i);   // C2860
-void func10(void);   // OK
+void func1(void x);   // C2860
+void func2(void, int y);   // C2860
+void func3(void);   // OK
 ```

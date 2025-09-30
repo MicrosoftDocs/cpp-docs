@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning C4950"
 title: "Compiler Warning C4950"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4950"
+ms.date: 11/04/2016
 f1_keywords: ["C4950"]
 helpviewer_keywords: ["C4950"]
-ms.assetid: 50226a5c-c664-4d09-ac59-e9e874ca244f
 ---
 # Compiler Warning C4950
 
-'type_or_member' : marked as obsolete
+> 'type_or_member' : marked as obsolete
+
+## Remarks
 
 A member or type was marked as obsolete with the <xref:System.ObsoleteAttribute> attribute.
 
@@ -16,7 +17,7 @@ C4950 is always issued as an error. You can turn off this warning by using the [
 
 ## Example
 
-The following sample generates C4950:
+The following example generates C4950:
 
 ```cpp
 // C4950.cpp

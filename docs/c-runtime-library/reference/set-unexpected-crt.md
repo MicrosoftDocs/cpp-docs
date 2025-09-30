@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: set_unexpected (CRT)"
 title: "set_unexpected (CRT)"
+description: "Learn more about: set_unexpected (CRT)"
 ms.date: "1/14/2021"
 api_name: ["set_unexpected"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["set_unexpected"]
 helpviewer_keywords: ["set_unexpected function", "unexpected function", "exception handling, termination"]
-ms.assetid: ebcef032-4771-48e5-88aa-2a1ab8750aa6
 ---
 # `set_unexpected` (CRT)
 
@@ -62,4 +61,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 [`_get_unexpected`](get-unexpected.md)\
 [`set_terminate`](set-terminate-crt.md)\
 [`terminate`](terminate-crt.md)\
-[`unexpected`](unexpected-crt.md)\
+[`unexpected`](unexpected-crt.md)

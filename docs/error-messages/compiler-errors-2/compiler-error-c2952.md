@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2952"
 title: "Compiler Error C2952"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2952"
+ms.date: 11/04/2016
 f1_keywords: ["C2952"]
 helpviewer_keywords: ["C2952"]
-ms.assetid: a40e18a2-d02c-4511-854f-6c6fd6789a1a
 ---
 # Compiler Error C2952
 
-'declaration' : type declaration missing template parameter list
+> 'declaration' : type declaration missing template parameter list
+
+## Remarks
 
 A template declaration was ill formed.
 
-The following sample generates C2952:
+## Examples
+
+The following example generates C2952:
 
 ```cpp
 // C2952.cpp

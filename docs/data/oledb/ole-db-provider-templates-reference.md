@@ -4,6 +4,7 @@ title: "OLE DB Provider Templates Reference"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE DB provider templates"]
 ms.assetid: 518358f0-bab1-4de9-bce9-4062cc87c11f
+ms.custom: sfi-ropc-nochange
 ---
 # OLE DB Provider Templates Reference
 

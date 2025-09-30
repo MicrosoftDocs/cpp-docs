@@ -4,6 +4,7 @@ title: "Initializing and Cleaning Up Documents and Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["initializing documents [MFC]", "views [MFC], cleaning up", "documents [MFC], initializing", "documents [MFC], cleaning up", "views [MFC], initializing", "initializing objects [MFC], document objects", "document objects [MFC], life cycle of", "initializing views [MFC]"]
 ms.assetid: 95d6f09b-a047-4079-856a-ae7d0548e9d2
+ms.topic: how-to
 ---
 # Initializing and Cleaning Up Documents and Views
 

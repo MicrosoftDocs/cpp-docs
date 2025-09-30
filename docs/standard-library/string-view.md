@@ -1,12 +1,12 @@
 ---
 title: "<string_view>"
 description: "Overview of `basic_string_view`, which refers to a constant contiguous sequence of char-like objects."
-ms.date: "9/4/2020"
+ms.date: 9/4/2020
 helpviewer_keywords: ["string_view header"]
 ---
 # `<string_view>`
 
-Defines the class template `basic_string_view` and related types and operators. (Requires compiler option [`std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.)
+Defines the class template `basic_string_view` and related types and operators. (Requires compiler option [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.)
 
 ## Syntax
 
@@ -37,7 +37,7 @@ The `<string_view>` operators can compare `string_view` objects to objects of an
 |[`operator==`](../standard-library/string-view-operators.md#op_eq_eq)|Tests if the object on the left side of the operator is equal to the object on the right side.|
 |[`operator<`](../standard-library/string-view-operators.md#op_lt)|Tests if the object on the left side of the operator is less than to the object on the right side.|
 |[`operator<=`](../standard-library/string-view-operators.md#op_lt_eq)|Tests if the object on the left side of the operator is less than or equal to the object on the right side.|
-|[`operator<\<`](../standard-library/string-view-operators.md#op_lt_lt)|A template function that inserts a `string_view` into an output stream.|
+|[`operator<<`](../standard-library/string-view-operators.md#op_lt_lt)|A template function that inserts a `string_view` into an output stream.|
 |[`operator>`](../standard-library/string-view-operators.md#op_gt)|Tests if the object on the left side of the operator is greater than to the object on the right side.|
 |[`operator>=`](../standard-library/string-view-operators.md#op_gt_eq)|Tests if the object on the left side of the operator is greater than or equal to the object on the right side.|
 
@@ -60,7 +60,7 @@ The `<string_view>` operators can compare `string_view` objects to objects of an
 
 - **Namespace:** `std`
 
-- **Compiler Option:** [`std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.
+- **Compiler Option:** [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.
 
 ## See also
 

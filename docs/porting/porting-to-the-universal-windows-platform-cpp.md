@@ -3,6 +3,7 @@ description: "Learn more about: Porting to the Universal Windows Platform (C++)"
 title: "Porting to the Universal Windows Platform (C++)"
 ms.date: "10/23/2019"
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
+ms.topic: how-to
 ---
 # Porting to the Universal Windows Platform (C++)
 

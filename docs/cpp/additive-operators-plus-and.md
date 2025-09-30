@@ -6,7 +6,7 @@ f1_keywords: ["+", "-"]
 helpviewer_keywords: ["operators [C++], addition", "subtraction operator [C++], additive operators", "+ operator [C++], additive operators", "additive operators [C++]", "arithmetic operators [C++], additive operators", "- operator [C++], additive operators in C++"]
 ms.assetid: d4afafe7-e201-4c69-a649-37f17756e784
 ---
-# Additive Operators: + and -
+# Additive Operators: `+` and `-`
 
 ## Syntax
 
@@ -102,6 +102,6 @@ One of the operands can be of integral type, as long as it is the second operand
 
 ## See also
 
-[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)\
+[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [C Additive Operators](../c-language/c-additive-operators.md)

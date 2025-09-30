@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: basic_fstream Class"
 title: "basic_fstream Class"
-ms.date: "11/04/2016"
+description: "Learn more about: basic_fstream Class"
+ms.date: 11/04/2016
 f1_keywords: ["fstream/std::basic_fstream", "fstream/std::basic_fstream::close", "fstream/std::basic_fstream::is_open", "fstream/std::basic_fstream::open", "fstream/std::basic_fstream::rdbuf", "fstream/std::basic_fstream::swap"]
 helpviewer_keywords: ["std::basic_fstream [C++]", "std::basic_fstream [C++], close", "std::basic_fstream [C++], is_open", "std::basic_fstream [C++], open", "std::basic_fstream [C++], rdbuf", "std::basic_fstream [C++], swap"]
-ms.assetid: 8473817e-42a4-430b-82b8-b476c86bcf8a
 ---
 # basic_fstream Class
 
@@ -204,7 +203,7 @@ The default file opening protection, equivalent to the *shflag* parameter in [_f
 
 ### Remarks
 
-The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode`). If that function returns a null pointer, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)( `failbit`).
+The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode`). If that function returns a null pointer, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`).
 
 ### Example
 

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <stack> operators"
 title: "<stack> operators"
+description: "Learn more about: <stack> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["stack/std::operator!=", "stack/std::operator>", "stack/std::operator>=", "stack/std::operator<", "stack/std::operator<=", "stack/std::operator=="]
-ms.assetid: 9c1fc282-2f61-4727-9e80-84ea5d4934a2
 helpviewer_keywords: ["std::operator!= (stack)", "std::operator> (stack)", "std::operator>= (stack)", "std::operator< (stack)", "std::operator<= (stack)", "std::operator== (stack)"]
 ---
 # `<stack>` operators
@@ -13,7 +12,7 @@ helpviewer_keywords: ["std::operator!= (stack)", "std::operator> (stack)", "std:
 Tests if the stack object on the left side of the operator is not equal to stack object on the right side.
 
 ```cpp
-bool operator!=(const stack <Type, Container>& left, const stack <Type, Container>& right,);
+bool operator!=(const stack <Type, Container>& left, const stack <Type, Container>& right);
 ```
 
 ### Parameters

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: tuple_size class;"
-title: "tuple_size class;"
+title: "tuple_size class"
+description: "Learn more about: tuple_size class"
 ms.date: 06/29/2022
 f1_keywords: ["tuple_size", "std::tuple_size", "utility/std::tuple_size"]
 helpviewer_keywords: ["std::tuple_size"]
-ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a
 ---
 # `tuple_size` class
 

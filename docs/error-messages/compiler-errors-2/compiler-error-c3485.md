@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C3485"
 title: "Compiler Error C3485"
+description: "Learn more about: Compiler Error C3485"
 ms.date: 06/01/2022
 f1_keywords: ["C3485"]
 helpviewer_keywords: ["C3485"]
-ms.assetid: d67536f9-67a1-4ad9-9a94-d8bbbca3d0dc
 ---
 # Compiler Error C3485
 

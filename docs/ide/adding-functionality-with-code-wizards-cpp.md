@@ -4,6 +4,7 @@ title: "Adding Functionality with Code Wizards (C++)"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["code wizards [C++]"]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
+ms.topic: concept-article
 ---
 # Adding Functionality with Code Wizards (C++)
 

@@ -1,9 +1,9 @@
 ---
-description: "Learn more about: Parallel Algorithms"
 title: "Parallel Algorithms"
-ms.date: "11/19/2018"
+description: "Learn more about: Parallel Algorithms"
+ms.date: 11/19/2018
 helpviewer_keywords: ["parallel algorithms [Concurrency Runtime]"]
-ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
+ms.topic: how-to
 ---
 # Parallel Algorithms
 
@@ -143,7 +143,7 @@ You can use the `parallel transform` algorithm to perform many data parallelizat
 
 - Perform 3-D ray tracing, where each iteration refers to one pixel that must be rendered.
 
-The following example shows the basic structure that is used to call the `parallel_transform` algorithm. This example negates each element of a std::[vector](../../standard-library/vector-class.md) object in two ways. The first way uses a lambda expression. The second way uses [std::negate](../../standard-library/negate-struct.md), which derives from [std::unary_function](../../standard-library/unary-function-struct.md).
+The following example shows the basic structure that is used to call the `parallel_transform` algorithm. This example negates each element of a [std::vector](../../standard-library/vector-class.md) object in two ways. The first way uses a lambda expression. The second way uses [std::negate](../../standard-library/negate-struct.md), which derives from [std::unary_function](../../standard-library/unary-function-struct.md).
 
 [!code-cpp[concrt-basic-parallel-transform#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_4.cpp)]
 
@@ -206,7 +206,7 @@ Divides work into ranges such that each range has at least the number of iterati
 Divides work into a fixed number of ranges (typically the number of worker threads that are available to work on the loop). This partitioner type can improve performance because it does not use work-stealing and therefore has less overhead. Use this partitioner type when each iteration of a parallel loop performs a fixed and uniform amount of work and you do not require support for cancellation or forward cooperative blocking.
 
 > [!WARNING]
-> The `parallel_for_each` and `parallel_transform` algorithms support only containers that use random access iterators (such as std::[vector](../../standard-library/vector-class.md)) for the static, simple, and affinity partitioners. The use of containers that use bidirectional and forward iterators produces a compile-time error. The default partitioner, `auto_partitioner`, supports all three of these iterator types.
+> The `parallel_for_each` and `parallel_transform` algorithms support only containers that use random access iterators (such as [std::vector](../../standard-library/vector-class.md)) for the static, simple, and affinity partitioners. The use of containers that use bidirectional and forward iterators produces a compile-time error. The default partitioner, `auto_partitioner`, supports all three of these iterator types.
 
 Typically, these partitioners are used in the same way, except for `affinity_partitioner`. Most partitioner types do not maintain state and are not modified by the runtime. Therefore you can create these partitioner objects at the call site, as shown in the following example.
 
@@ -262,7 +262,7 @@ This example shows how to provide a hash function to the `parallel_radixsort` al
 
 For illustration, this example uses a relatively small data set. You can increase the initial size of the vector to experiment with performance improvements over larger sets of data.
 
-This example uses a lambda expression as the hash function. You can also use one of the built-in implementations of the std::[hash class](../../standard-library/hash-class.md) or define your own specialization. You can also use a custom hash function object, as shown in this example:
+This example uses a lambda expression as the hash function. You can also use one of the built-in implementations of the [std::hash class](../../standard-library/hash-class.md) or define your own specialization. You can also use a custom hash function object, as shown in this example:
 
 [!code-cpp[concrt-parallel-sort-points#2](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_13.cpp)]
 &nbsp;

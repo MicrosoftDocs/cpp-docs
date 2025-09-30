@@ -4,11 +4,14 @@ title: "CDaoDatabase Class"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoDatabase", "AFXDAO/CDaoDatabase", "AFXDAO/CDaoDatabase::CDaoDatabase", "AFXDAO/CDaoDatabase::CanTransact", "AFXDAO/CDaoDatabase::CanUpdate", "AFXDAO/CDaoDatabase::Close", "AFXDAO/CDaoDatabase::Create", "AFXDAO/CDaoDatabase::CreateRelation", "AFXDAO/CDaoDatabase::DeleteQueryDef", "AFXDAO/CDaoDatabase::DeleteRelation", "AFXDAO/CDaoDatabase::DeleteTableDef", "AFXDAO/CDaoDatabase::Execute", "AFXDAO/CDaoDatabase::GetConnect", "AFXDAO/CDaoDatabase::GetName", "AFXDAO/CDaoDatabase::GetQueryDefCount", "AFXDAO/CDaoDatabase::GetQueryDefInfo", "AFXDAO/CDaoDatabase::GetQueryTimeout", "AFXDAO/CDaoDatabase::GetRecordsAffected", "AFXDAO/CDaoDatabase::GetRelationCount", "AFXDAO/CDaoDatabase::GetRelationInfo", "AFXDAO/CDaoDatabase::GetTableDefCount", "AFXDAO/CDaoDatabase::GetTableDefInfo", "AFXDAO/CDaoDatabase::GetVersion", "AFXDAO/CDaoDatabase::IsOpen", "AFXDAO/CDaoDatabase::Open", "AFXDAO/CDaoDatabase::SetQueryTimeout", "AFXDAO/CDaoDatabase::m_pDAODatabase", "AFXDAO/CDaoDatabase::m_pWorkspace"]
 helpviewer_keywords: ["CDaoDatabase [MFC], CDaoDatabase", "CDaoDatabase [MFC], CanTransact", "CDaoDatabase [MFC], CanUpdate", "CDaoDatabase [MFC], Close", "CDaoDatabase [MFC], Create", "CDaoDatabase [MFC], CreateRelation", "CDaoDatabase [MFC], DeleteQueryDef", "CDaoDatabase [MFC], DeleteRelation", "CDaoDatabase [MFC], DeleteTableDef", "CDaoDatabase [MFC], Execute", "CDaoDatabase [MFC], GetConnect", "CDaoDatabase [MFC], GetName", "CDaoDatabase [MFC], GetQueryDefCount", "CDaoDatabase [MFC], GetQueryDefInfo", "CDaoDatabase [MFC], GetQueryTimeout", "CDaoDatabase [MFC], GetRecordsAffected", "CDaoDatabase [MFC], GetRelationCount", "CDaoDatabase [MFC], GetRelationInfo", "CDaoDatabase [MFC], GetTableDefCount", "CDaoDatabase [MFC], GetTableDefInfo", "CDaoDatabase [MFC], GetVersion", "CDaoDatabase [MFC], IsOpen", "CDaoDatabase [MFC], Open", "CDaoDatabase [MFC], SetQueryTimeout", "CDaoDatabase [MFC], m_pDAODatabase", "CDaoDatabase [MFC], m_pWorkspace"]
-ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
+ms.custom: sfi-ropc-nochange
 ---
 # CDaoDatabase Class
 
-Represents a connection to an Access database using Data Access Objects (DAO). DAO is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
+Represents a connection to an Access database using Data Access Objects (DAO).
+
+> [!NOTE]
+> Data Access Object (DAO) is supported through Office 2013. DAO 3.6 is the final version, and is obsolete.
 
 ## Syntax
 
@@ -41,7 +44,7 @@ class CDaoDatabase : public CObject
 |[CDaoDatabase::GetName](#getname)|Returns the name of the database currently in use.|
 |[CDaoDatabase::GetQueryDefCount](#getquerydefcount)|Returns the number of queries defined for the database.|
 |[CDaoDatabase::GetQueryDefInfo](#getquerydefinfo)|Returns information about a specified query defined in the database.|
-|[CDaoDatabase::GetQueryTimeout](#getquerytimeout)|Returns the number of seconds after which database query operations will time out. Affects all subsequent open, add new, update, and edit operations and other operations on ODBC data sources (only) such as `Execute` calls.|
+|[CDaoDatabase::GetQueryTimeout](#getquerytimeout)|Returns the number of seconds after which database query operations time out. Affects all subsequent open, add new, update, and edit operations and other operations on ODBC data sources (only) such as `Execute` calls.|
 |[CDaoDatabase::GetRecordsAffected](#getrecordsaffected)|Returns the number of records affected by the last update, edit, or add operation or by a call to `Execute`.|
 |[CDaoDatabase::GetRelationCount](#getrelationcount)|Returns the number of relations defined between tables in the database.|
 |[CDaoDatabase::GetRelationInfo](#getrelationinfo)|Returns information about a specified relation defined between tables in the database.|
@@ -50,7 +53,7 @@ class CDaoDatabase : public CObject
 |[CDaoDatabase::GetVersion](#getversion)|Returns the version of the database engine associated with the database.|
 |[CDaoDatabase::IsOpen](#isopen)|Returns nonzero if the `CDaoDatabase` object is currently connected to a database.|
 |[CDaoDatabase::Open](#open)|Establishes a connection to a database.|
-|[CDaoDatabase::SetQueryTimeout](#setquerytimeout)|Sets the number of seconds after which database query operations (on ODBC data sources only) will time out. Affects all subsequent open, add new, update, and delete operations.|
+|[CDaoDatabase::SetQueryTimeout](#setquerytimeout)|Sets the number of seconds after which database query operations (on ODBC data sources only) time out. Affects all subsequent open, add new, update, and delete operations.|
 
 ### Public Data Members
 
@@ -75,15 +78,15 @@ To create a new Microsoft Jet (.MDB) database, construct a `CDaoDatabase` object
 
 To open an existing database, construct a `CDaoDatabase` object and call its [Open](#open) member function.
 
-Any of these techniques appends the DAO database object to the workspace's Databases collection and opens a connection to the data. When you then construct [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md), [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md), or [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) objects for operating on the connected database, pass the constructors for these objects a pointer to your `CDaoDatabase` object. When you finish using the connection, call the [Close](#close) member function and destroy the `CDaoDatabase` object. `Close` closes any recordsets you have not closed previously.
+Any of these techniques appends the DAO database object to the workspace's Databases collection and opens a connection to the data. When you then construct [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md), [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md), or [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) objects for operating on the connected database, pass the constructors for these objects a pointer to your `CDaoDatabase` object. When you finish using the connection, call the [Close](#close) member function and destroy the `CDaoDatabase` object. `Close` closes any recordsets you have not already closed.
 
 ## Transactions
 
-Database transaction processing is supplied at the workspace level — see the [BeginTrans](../../mfc/reference/cdaoworkspace-class.md#begintrans), [CommitTrans](../../mfc/reference/cdaoworkspace-class.md#committrans), and [Rollback](../../mfc/reference/cdaoworkspace-class.md#rollback) member functions of class `CDaoWorkspace`.
+Database transaction processing is supplied at the workspace level—see the [BeginTrans](../../mfc/reference/cdaoworkspace-class.md#begintrans), [CommitTrans](../../mfc/reference/cdaoworkspace-class.md#committrans), and [Rollback](../../mfc/reference/cdaoworkspace-class.md#rollback) member functions of class `CDaoWorkspace`.
 
 ## ODBC Connections
 
-The recommended way to work with ODBC data sources is to attach external tables to a Microsoft Jet (.MDB) database.
+The recommended way to work with Open Database Base Connectivity (ODBC) data sources is to attach external tables to a Microsoft Jet (`.MDB`) database.
 
 ## Collections
 
@@ -94,7 +97,7 @@ Each database maintains its own collections of tabledef, querydef, recordset, an
 
 ## Inheritance Hierarchy
 
-[CObject](../../mfc/reference/cobject-class.md)
+[`CObject`](../../mfc/reference/cobject-class.md)
 
 `CDaoDatabase`
 
@@ -168,15 +171,15 @@ virtual void Close();
 
 ### Remarks
 
-It is good practice to close these objects yourself before you call this member function. Closing a `CDaoDatabase` object removes it from the Databases collection in the associated [workspace](../../mfc/reference/cdaoworkspace-class.md). Because `Close` does not destroy the `CDaoDatabase` object, you can reuse the object by opening the same database or a different database.
+It's good practice to close these objects yourself before you call this member function. Closing a `CDaoDatabase` object removes it from the Databases collection in the associated [workspace](../../mfc/reference/cdaoworkspace-class.md). Because `Close` doesn't destroy the `CDaoDatabase` object, you can reuse the object by opening the same database or a different database.
 
 > [!CAUTION]
 > Call the [Update](../../mfc/reference/cdaorecordset-class.md#update) member function (if there are pending edits) and the `Close` member function on all open recordset objects before you close a database. If you exit a function that declares [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) or `CDaoDatabase` objects on the stack, the database is closed, any unsaved changes are lost, all pending transactions are rolled back, and any pending edits to your data are lost.
 
 > [!CAUTION]
-> If you try to close a database object while any recordset objects are open, or if you try to close a workspace object while any database objects belonging to that specific workspace are open, those recordset objects will be closed and any pending updates or edits will be rolled back. If you try to close a workspace object while any database objects belonging to it are open, the operation closes all database objects belonging to that specific workspace object, which may result in unclosed recordset objects being closed. If you do not close your database object, MFC reports an assertion failure in debug builds.
+> If you try to close a database object while any recordset objects are open, or if you try to close a workspace object while any database objects belonging to that specific workspace are open, those recordset objects will be closed and any pending updates or edits will be rolled back. If you try to close a workspace object while any database objects belonging to it are open, the operation closes all database objects belonging to that specific workspace object, which may result in unclosed recordset objects being closed. If you don't close your database object, MFC reports an assertion failure in debug builds.
 
-If the database object is defined outside the scope of a function, and you exit the function without closing it, the database object will remain open until explicitly closed or the module in which it is defined is out of scope.
+If the database object is defined outside the scope of a function, and you exit the function without closing it, the database object will remain open until explicitly closed or the module in which it's defined is out of scope.
 
 ## <a name="create"></a> CDaoDatabase::Create
 
@@ -192,7 +195,7 @@ virtual void Create(
 ### Parameters
 
 *lpszName*<br/>
-A string expression that is the name of the database file that you are creating. It can be the full path and filename, such as "C:\\\MYDB.MDB". You must supply a name. If you do not supply a filename extension, .MDB is appended. If your network supports the uniform naming convention (UNC), you can also specify a network path, such as "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB". Only Microsoft Jet (.MDB) database files can be created using this member function. (Double backslashes are required in string literals because "\\" is the C++ escape character.)
+A string expression that is the name of the database file that you are creating. It can be the full path and filename, such as "C:\\\MYDB.MDB". You must supply a name. If you don't supply a filename extension, .MDB is appended. If your network supports the uniform naming convention (UNC), you can also specify a network path, such as "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB". Only Microsoft Jet (.MDB) database files can be created using this member function. (Double backslashes are required in string literals because "\\" is the C++ escape character.)
 
 *lpszLocale*<br/>
 A string expression used to specify collating order for creating the database. The default value is `dbLangGeneral`. Possible values are:
@@ -243,11 +246,11 @@ An integer that indicates one or more options. Possible values are:
 If you omit the encryption constant, an unencrypted database is created. You can specify only one version constant. If you omit a version constant, a database that uses the Microsoft Jet database version 3.0 is created.
 
 > [!CAUTION]
-> If a database is not encrypted, it is possible, even if you implement user/password security, to directly read the binary disk file that constitutes the database.
+> If a database is not encrypted, it's possible, even if you implement user/password security, to directly read the binary disk file that constitutes the database.
 
 ### Remarks
 
-`Create` creates the database file and the underlying DAO database object and initializes the C++ object. The object is appended to the associated workspace's Databases collection. The database object is in an open state; do not call `Open*` after `Create`.
+`Create` creates the database file and the underlying DAO database object and initializes the C++ object. The object is appended to the associated workspace's Databases collection. The database object is in an open state; don't call `Open*` after `Create`.
 
 > [!NOTE]
 > With `Create`, you can create only Microsoft Jet (.MDB) databases. You cannot create ISAM databases or ODBC databases.
@@ -274,10 +277,10 @@ void CreateRelation(CDaoRelationInfo& relinfo);
 The unique name of the relation object. The name must start with a letter and can contain a maximum of 40 characters. It can include numbers and underscore characters but cannot include punctuation or spaces.
 
 *lpszTable*<br/>
-The name of the primary table in the relation. If the table does not exist, MFC throws an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md).
+The name of the primary table in the relation. If the table doesn't exist, MFC throws an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md).
 
 *lpszForeignTable*<br/>
-The name of the foreign table in the relation. If the table does not exist, MFC throws an exception of type `CDaoException`.
+The name of the foreign table in the relation. If the table doesn't exist, MFC throws an exception of type `CDaoException`.
 
 *lAttributes*<br/>
 A long value that contains information about the relationship type. You can use this value to enforce referential integrity, among other things. You can use the bitwise-OR operator (**`|`**) to combine any of the following values (as long as the combination makes sense):
@@ -307,7 +310,7 @@ The relationship cannot involve a query or an attached table from an external da
 
 Use the first version of the function when the relation involves one field in each of the two tables. Use the second version when the relation involves multiple fields. The maximum number of fields in a relation is 14.
 
-This action creates an underlying DAO relation object, but this is an MFC implementation detail since MFC's encapsulation of relation objects is contained within class `CDaoDatabase`. MFC does not supply a class for relations.
+This action creates an underlying DAO relation object, but this is an MFC implementation detail since MFC's encapsulation of relation objects is contained within class `CDaoDatabase`. MFC doesn't supply a class for relations.
 
 If you set the relation object's attributes to activate cascade operations, the database engine automatically updates or deletes records in one or more other tables when changes are made to related primary key tables.
 
@@ -317,7 +320,7 @@ For related information, see the topic "CreateRelation Method" in DAO Help.
 
 ## <a name="deletequerydef"></a> CDaoDatabase::DeleteQueryDef
 
-Call this member function to delete the specified querydef — saved query — from the `CDaoDatabase` object's QueryDefs collection.
+Call this member function to delete the specified querydef—saved query—from the `CDaoDatabase` object's QueryDefs collection.
 
 ```cpp
 void DeleteQueryDef(LPCTSTR lpszName);
@@ -393,7 +396,7 @@ void Execute(
 Pointer to a null-terminated string containing a valid SQL command to execute.
 
 *nOptions*<br/>
-An integer that specifies options relating to the integrity of the query. You can use the bitwise-OR operator (**`|`**) to combine any of the following constants (provided the combination makes sense — for example, you would not combine `dbInconsistent` with `dbConsistent`):
+An integer that specifies options relating to the integrity of the query. You can use the bitwise-OR operator (**`|`**) to combine any of the following constants provided the combination makes sense. For example, you would not combine `dbInconsistent` with `dbConsistent`:
 
 - `dbDenyWrite` Deny write permission to other users.
 
@@ -412,16 +415,16 @@ An integer that specifies options relating to the integrity of the query. You ca
 
 ### Remarks
 
-`Execute` works only for action queries or SQL pass-through queries that do not return results. It does not work for select queries, which return records.
+`Execute` works only for action queries or SQL pass-through queries that don't return results. It doesn't work for select queries, which return records.
 
 For a definition and information about action queries, see the topics "Action Query" and "Execute Method" in DAO Help.
 
 > [!TIP]
-> Given a syntactically correct SQL statement and proper permissions, the `Execute` member function will not fail even if not a single row can be modified or deleted. Therefore, always use the `dbFailOnError` option when using the `Execute` member function to run an update or delete query. This option causes MFC to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md) and rolls back all successful changes if any of the records affected are locked and cannot be updated or deleted. Note that you can always call `GetRecordsAffected` to see how many records were affected.
+> Given a syntactically correct SQL statement and proper permissions, the `Execute` member function won't fail even if not a single row can be modified or deleted. Therefore, always use the `dbFailOnError` option when using the `Execute` member function to run an update or delete query. This option causes MFC to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md) and rolls back all successful changes if any of the records affected are locked and cannot be updated or deleted. Note that you can always call `GetRecordsAffected` to see how many records were affected.
 
-Call the [GetRecordsAffected](#getrecordsaffected) member function of the database object to determine the number of records affected by the most recent `Execute` call. For example, `GetRecordsAffected` returns information about the number of records deleted, updated, or inserted when executing an action query. The count returned will not reflect changes in related tables when cascade updates or deletes are in effect.
+Call the [GetRecordsAffected](#getrecordsaffected) member function of the database object to determine the number of records affected by the most recent `Execute` call. For example, `GetRecordsAffected` returns information about the number of records deleted, updated, or inserted when executing an action query. The count returned doesn't reflect changes in related tables when cascade updates or deletes are in effect.
 
-`Execute` does not return a recordset. Using `Execute` on a query that selects records causes MFC to throw an exception of type `CDaoException`. (There is no `ExecuteSQL` member function analogous to `CDatabase::ExecuteSQL`.)
+`Execute` doesn't return a recordset. Using `Execute` on a query that selects records causes MFC to throw an exception of type `CDaoException`. (There is no `ExecuteSQL` member function analogous to `CDatabase::ExecuteSQL`.)
 
 ## <a name="getconnect"></a> CDaoDatabase::GetConnect
 
@@ -443,7 +446,7 @@ The string provides information about the source of an open database or a databa
 > Using the MFC DAO classes to connect to a data source via ODBC is less efficient than connecting via an attached table.
 
 > [!NOTE]
-> The connection string is used to pass additional information to ODBC and certain ISAM drivers as needed. It is not used for .MDB databases. For Microsoft Jet database base tables, the connection string is an empty string ("") except when you use it for a SQL pass-through query as described under Return Value above.
+> The connection string is used to pass additional information to ODBC and certain ISAM drivers as needed. It's not used for .MDB databases. For Microsoft Jet database base tables, the connection string is an empty string ("") except when you use it for a SQL pass-through query as described under Return Value above.
 
 See the [Open](#open) member function for a description of how the connection string is created. Once the connection string has been set in the `Open` call, you can later use it to check the setting to determine the type, path, user ID, Password, or ODBC data source of the database.
 
@@ -552,7 +555,7 @@ A short integer containing the timeout value in seconds.
 
 ### Remarks
 
-An operation might time out due to network access problems, excessive query processing time, and so on. While the setting is in effect, it affects all open, add new, update, and delete operations on any recordsets associated with this `CDaoDatabase` object. You can change the current timeout setting by calling [SetQueryTimeout](#setquerytimeout). Changing the query timeout value for a recordset after opening does not change the value for the recordset. For example, subsequent [Move](../../mfc/reference/cdaorecordset-class.md#move) operations do not use the new value. The default value is initially set when the database engine is initialized.
+An operation might time out due to network access problems, excessive query processing time, and so on. While the setting is in effect, it affects all open, add new, update, and delete operations on any recordsets associated with this `CDaoDatabase` object. You can change the current timeout setting by calling [SetQueryTimeout](#setquerytimeout). Changing the query timeout value for a recordset after opening doesn't change the value for the recordset. For example, subsequent [Move](../../mfc/reference/cdaorecordset-class.md#move) operations don't use the new value. The default value is initially set when the database engine is initialized.
 
 The default value for query timeouts is taken from the Windows registry. If there is no registry setting, the default is 60 seconds. Not all databases support the ability to set a query timeout value. If you set a query timeout value of 0, no timeout occurs; and communication with the database may stop responding. This behavior may be useful during development. If the call fails, MFC throws an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md).
 
@@ -572,7 +575,7 @@ A long integer containing the number of records affected.
 
 ### Remarks
 
-The value returned includes the number of records deleted, updated, or inserted by an action query run with `Execute`. The count returned will not reflect changes in related tables when cascade updates or deletes are in effect.
+The value returned includes the number of records deleted, updated, or inserted by an action query run with `Execute`. The count returned doesn't reflect changes in related tables when cascade updates or deletes are in effect.
 
 For related information, see the topic "RecordsAffected Property" in DAO Help.
 
@@ -746,7 +749,7 @@ Contains a pointer to the [CDaoWorkspace](../../mfc/reference/cdaoworkspace-clas
 
 ### Remarks
 
-Use this pointer if you need to access the workspace directly — for example, to obtain pointers to other database objects in the workspace's Databases collection.
+Use this pointer if you need to access the workspace directly. For example, to obtain pointers to other database objects in the workspace's Databases collection.
 
 ## <a name="open"></a> CDaoDatabase::Open
 
@@ -763,7 +766,7 @@ virtual void Open(
 ### Parameters
 
 *lpszName*<br/>
-A string expression that is the name of an existing Microsoft Jet (.MDB) database file. If the filename has an extension, it is required. If your network supports the uniform naming convention (UNC), you can also specify a network path, such as "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB.MDB". (Double backslashes are required in string literals because "\\" is the C++ escape character.)
+A string expression that is the name of an existing Microsoft Jet (.MDB) database file. If the filename has an extension, it's required. If your network supports the uniform naming convention (UNC), you can also specify a network path, such as "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB.MDB". (Double backslashes are required in string literals because "\\" is the C++ escape character.)
 
 Some considerations apply when using *lpszName*. If it:
 
@@ -771,7 +774,7 @@ Some considerations apply when using *lpszName*. If it:
 
 - Is an empty string ("") and *lpszConnect* is "ODBC;", a dialog box listing all registered ODBC data source names is displayed so the user can select a database. You should avoid direct connections to ODBC data sources; use an attached table instead.
 
-- Otherwise does not refer to an existing database or valid ODBC data source name, MFC throws an exception of type `CDaoException`.
+- Otherwise doesn't refer to an existing database or valid ODBC data source name, MFC throws an exception of type `CDaoException`.
 
 > [!NOTE]
 > For details about DAO error codes, see the DAOERR.H file. For related information, see the topic "Trappable Data Access Errors" in DAO Help.
@@ -783,11 +786,11 @@ A Boolean value that is TRUE if the database is to be opened for exclusive (nons
 A Boolean value that is TRUE if the database is to be opened for read-only access and FALSE if the database is to be opened for read/write access. If you omit this argument, the database is opened for read/write access. All dependent recordsets inherit this attribute.
 
 *lpszConnect*<br/>
-A string expression used for opening the database. This string constitutes the ODBC connect arguments. You must supply the exclusive and read-only arguments to supply a source string. If the database is a Microsoft Jet database (.MDB), this string is empty (""). The syntax for the default value — **_T**("") — provides portability for Unicode as well as ANSI builds of your application.
+A string expression used for opening the database. This string constitutes the ODBC connect arguments. You must supply the exclusive and read-only arguments to supply a source string. If the database is a Microsoft Jet database (.MDB), this string is empty (""). The syntax for the default value—**_T**("")—provides portability for Unicode as well as ANSI builds of your application.
 
 ### Remarks
 
-`Open` associates the database with the underlying DAO object. You cannot use the database object to construct recordset, tabledef, or querydef objects until it is initialized. `Open` appends the database object to the associated workspace's Databases collection.
+`Open` associates the database with the underlying DAO object. You cannot use the database object to construct recordset, tabledef, or querydef objects until it's initialized. `Open` appends the database object to the associated workspace's Databases collection.
 
 Use the parameters as follows:
 
@@ -798,13 +801,13 @@ Use the parameters as follows:
 For related information, see the topic "OpenDatabase Method" in DAO Help.
 
 > [!NOTE]
-> For better performance when accessing external databases, including ISAM databases and ODBC data sources, it is recommended that you attach external database tables to a Microsoft Jet engine database (.MDB) rather than connecting directly to the data source.
+> For better performance when accessing external databases, including ISAM databases and ODBC data sources, it's recommended that you attach external database tables to a Microsoft Jet engine database (.MDB) rather than connecting directly to the data source.
 
-It is possible for a connection attempt to time out if, for example, the DBMS host is unavailable. If the connection attempt fails, `Open` throws an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md).
+It's possible for a connection attempt to time out if, for example, the DBMS host is unavailable. If the connection attempt fails, `Open` throws an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md).
 
 The remaining remarks apply only to ODBC databases:
 
-If the database is an ODBC database and the parameters in your `Open` call do not contain enough information to make the connection, the ODBC driver opens a dialog box to obtain the necessary information from the user. When you call `Open`, your connection string, *lpszConnect*, is stored privately and is available by calling the [GetConnect](#getconnect) member function.
+If the database is an ODBC database and the parameters in your `Open` call don't contain enough information to make the connection, the ODBC driver opens a dialog box to obtain the necessary information from the user. When you call `Open`, your connection string, *lpszConnect*, is stored privately and is available by calling the [GetConnect](#getconnect) member function.
 
 If you wish, you can open your own dialog box before you call `Open` to get information from the user, such as a password, then add that information to the connection string you pass to `Open`. Or you might want to save the connection string you pass (perhaps in the Windows registry) so you can reuse it the next time your application calls `Open` on a `CDaoDatabase` object.
 
@@ -825,7 +828,7 @@ The number of seconds to allow before a query attempt times out.
 
 ### Remarks
 
-An operation might time out because of network access problems, excessive query processing time, and so on. Call `SetQueryTimeout` before opening your recordset or before calling the recordset's [AddNew](../../mfc/reference/cdaorecordset-class.md#addnew), [Update](../../mfc/reference/cdaorecordset-class.md#update), or [Delete](../../mfc/reference/cdaorecordset-class.md#delete) member functions if you want to change the query timeout value. The setting affects all subsequent [Open](../../mfc/reference/cdaorecordset-class.md#open), `AddNew`, `Update`, and `Delete` calls to any recordsets associated with this `CDaoDatabase` object. Changing the query timeout value for a recordset after opening does not change the value for the recordset. For example, subsequent [Move](../../mfc/reference/cdaorecordset-class.md#move) operations do not use the new value.
+An operation might time out because of network access problems, excessive query processing time, and so on. Call `SetQueryTimeout` before opening your recordset or before calling the recordset's [AddNew](../../mfc/reference/cdaorecordset-class.md#addnew), [Update](../../mfc/reference/cdaorecordset-class.md#update), or [Delete](../../mfc/reference/cdaorecordset-class.md#delete) member functions if you want to change the query timeout value. The setting affects all subsequent [Open](../../mfc/reference/cdaorecordset-class.md#open), `AddNew`, `Update`, and `Delete` calls to any recordsets associated with this `CDaoDatabase` object. Changing the query timeout value for a recordset after opening doesn't change the value for the recordset. For example, subsequent [Move](../../mfc/reference/cdaorecordset-class.md#move) operations don't use the new value.
 
 The default value for query timeouts is 60 seconds. Not all databases support the ability to set a query timeout value. If you set a query timeout value of 0, no timeout occurs; the communication with the database may stop responding. This behavior may be useful during development.
 

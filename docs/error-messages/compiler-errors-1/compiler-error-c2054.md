@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2054"
 title: "Compiler Error C2054"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2054"
+ms.date: 11/04/2016
 f1_keywords: ["C2054"]
 helpviewer_keywords: ["C2054"]
-ms.assetid: 37f7c612-0d7d-4728-9e67-ac4160555f48
 ---
 # Compiler Error C2054
 
-expected '(' to follow 'identifier'
+> expected '(' to follow 'identifier'
+
+## Remarks
 
 The function identifier is used in a context that requires trailing parentheses.
 
 This error can be caused by omitting an equal sign (=) on a complex initialization.
 
-The following sample generates C2054:
+## Example
+
+The following example generates C2054:
 
 ```c
 // C2054.c

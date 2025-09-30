@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2133"
 title: "Compiler Error C2133"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2133"
+ms.date: 11/04/2016
 f1_keywords: ["C2133"]
 helpviewer_keywords: ["C2133"]
-ms.assetid: 8942f9e8-9818-468f-97db-09dbd124fcae
 ---
 # Compiler Error C2133
 
-'identifier' : unknown size
+> 'identifier' : unknown size
+
+## Remarks
 
 An unsized array is declared as a member of a class, structure, union, or enumeration. The /Za (ANSI C) option does not allow unsized member arrays.
 
-The following sample generates C2133:
+## Example
+
+The following example generates C2133:
 
 ```cpp
 // C2133.cpp

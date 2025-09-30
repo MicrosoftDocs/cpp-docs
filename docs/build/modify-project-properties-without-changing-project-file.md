@@ -1,8 +1,9 @@
 ---
 description: "Learn more about: How to: Modify C++ project properties and targets without changing the project file"
 title: "How to: Modify C++ project properties and targets without changing the project file"
-ms.date: "11/28/2018"
+ms.date: "7/28/2023"
 helpviewer_keywords: ["project properties [C++], modifying outside project file"]
+ms.topic: how-to
 ---
 # How to: Modify C++ project properties and targets without changing the project file
 
@@ -13,27 +14,27 @@ You can override project properties and targets from the MSBuild command prompt 
 
 *To override project properties:*
 
-1. Create a .props file that specifies the properties you want to override.
+1. Create a `.props` file that specifies the properties you want to override.
 
-1. From the command prompt: set ForceImportBeforeCppTargets="C:\sources\my_props.props"
+1. From the command prompt: `set ForceImportBeforeCppTargets="C:\sources\my_props.props"`
 
 *To override project targets:*
 
-1. Create a .targets file with their implementation or a particular target
+1. Create a `.targets` file with their implementation or a particular target
 
-2. From the command prompt: set ForceImportAfterCppTargets ="C:\sources\my_target.targets"
+2. From the command prompt: `set ForceImportAfterCppTargets ="C:\sources\my_target.targets"`
 
-You can also set either option on the msbuild command line by using the /p: option:
+You can also set either option on the msbuild command line by using the `/p:` option:
 
 ```cmd
-> msbuild myproject.sln /p:ForceImportBeforeCppTargets="C:\sources\my_props.props"
-> msbuild myproject.sln /p:ForceImportAfterCppTargets="C:\sources\my_target.targets"
+msbuild myproject.sln /p:ForceImportBeforeCppTargets="C:\sources\my_props.props"
+msbuild myproject.sln /p:ForceImportAfterCppTargets="C:\sources\my_target.targets"
 ```
 
-Overriding properties and targets in this way is equivalent to adding the following imports to all .vcxproj files in the solution:
+Overriding properties and targets in this way is equivalent to adding the following imports to all `.vcxproj` files in the solution:
 
-```cmd
-<Import Project=="C:\sources\my_props.props" />
+```xml
+<Import Project="C:\sources\my_props.props" />
 <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-<Import Project==" C:\sources\my_target.targets"" />
+<Import Project="C:\sources\my_target.targets" />
 ```

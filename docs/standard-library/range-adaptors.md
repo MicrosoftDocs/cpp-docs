@@ -1,6 +1,6 @@
 ---
-description: "Learn more about range adaptors, which create views on ranges."
 title: "Range adaptors"
+description: "Learn more about range adaptors, which create views on ranges."
 ms.date: 11/3/2022
 f1_keywords: ["ranges/std::all", "ranges/std::all_t", "ranges/std::common", "ranges/std::counted", "ranges/std::drop", "ranges/std::drop_while", "ranges/std::elements", "ranges/std::empty", "ranges/std::filter", "ranges/std::iota", "ranges/std::istream", "ranges/std::join", "ranges/std::keys", "ranges/std::lazy_split", "ranges/std::reverse", "ranges/std::single", "ranges/std::split", "ranges/std::subrange", "ranges/std::take", "ranges/std::take_while", "ranges/std::transform", "ranges/std::values"]
 helpviewer_keywords: ["std::ranges [C++], all", "std::ranges [C++], all_t", "std::ranges [C++], common", "std::ranges [C++], counted", "std::ranges [C++], drop", "std::ranges [C++], drop_while", "std::ranges [C++], elements", "std::ranges [C++], empty", "std::ranges [C++], filter", "std::ranges [C++], iota", "std::ranges [C++], istream", "std::ranges [C++], join", "std::ranges [C++], keys", "std::ranges [C++], lazy_split", "std::ranges [C++], reverse", "std::ranges [C++], single", "std::ranges [C++], split", "std::ranges [C++], subrange", "std::ranges [C++], take", "std::ranges [C++], take_while", "std::ranges [C++], transform", "std::ranges [C++], values"]
@@ -217,7 +217,7 @@ When an API requires the begin iterator and end sentinel to have the same type, 
 ### Example: `common`
 
 ```cpp
-// requires /std:c++20 or higher
+// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 #include <numeric>
@@ -551,7 +551,7 @@ An `empty_view` can be useful when you're calling code that requires a view but 
 ### Example: `empty`
 
 ```cpp
-// requires /std:c++20 or higher
+// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 
@@ -573,7 +573,7 @@ Create a view that contains the elements of a range that match the specified con
 
 ```cpp
 1) template<ranges::viewable_range R, class P>
-    requires requires {filter_view(forward<R>(rg), forward<P>(predicate));}
+    requires {filter_view(forward<R>(rg), forward<P>(predicate));}
 constexpr ranges::view auto filter(R&& rg, P&& predicate);
 
 2) template<class P>
@@ -724,7 +724,6 @@ The type of the elements to extract from the stream.
 
 A [`basic_istream_view`](basic-istream-view-class.md).
 
-
 This range adaptor is equivalent to `ranges::basic_istream_view<Val, typename U::char_type, typename U::traits_type>(str)`, where `U` is the type of `str`.
 
 ### Example: `istream`
@@ -784,7 +783,7 @@ A [`join_view`](join-view-class.md) that contains the elements of all the ranges
 int main()
 {
     // a range of two ranges
-    std::vector<std::string> rangeOfRanges[2]{{"C++", "20", "contains:"}, {"ranges", "modules", "concepts & more."}};
+    std::vector<std::string> rangeOfRanges[2]{{"C++20", "contains:"}, {"ranges", "modules", "concepts & more."}};
 
     for (const auto& elem : std::views::join(rangeOfRanges))
     {
@@ -794,7 +793,7 @@ int main()
 ```
 
 ```output
-C++ 20 contains: ranges modules concepts & more.
+C++20 contains: ranges modules concepts & more.
 ```
 
 ### Remarks
@@ -914,7 +913,7 @@ A [`lazy_split_view`](lazy-split-view-class.md) that contains one or more subran
 
 The delimiter isn't part of the result. For example, if you split the range `1,2,3` on the value `2`, you get two subranges: `1` and `3`.
 
-A related adaptor is [`split`](#split). The primary differences between [`split_view](split-view-class.md) and `lazy_split_view` are:
+A related adaptor is [`split`](#split). The primary differences between [`split_view`](split-view-class.md) and `lazy_split_view` are:
 
 | View | Can split a `const` range | Range iterator |
 |--|--|--|
@@ -1063,7 +1062,7 @@ This view is useful for test purposes, for calling code that needs to be provide
 ### Example: `single`
 
 ```cpp
-// requires /std:c++20 or higher
+// requires /std:c++20 or later
 #include <ranges>
 #include <string>
 #include <tuple>
@@ -1390,7 +1389,7 @@ int main()
 Create a [`values_view`](values-view-class.md) that consists of the second index into each tuple-like value in a collection. This is useful for making a view of the values in an associative container. For example, given a range of `std::tuple<string, int>` values, create a view that consists of all the `int` elements from each tuple.
 
 ```cpp
-template <range::viewable_range R>
+template <ranges::viewable_range R>
 constexpr ranges::view auto values(R&& rg);
 ```
 

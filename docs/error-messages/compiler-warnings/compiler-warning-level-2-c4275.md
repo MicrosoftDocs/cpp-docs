@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 2) C4275"
 title: "Compiler Warning (level 2) C4275"
-ms.date: "02/08/2019"
+description: "Learn more about: Compiler Warning (level 2) C4275"
+ms.date: 02/08/2019
 f1_keywords: ["C4275"]
 helpviewer_keywords: ["C4275"]
-ms.assetid: 18de967a-0a44-4dbc-a2e8-fc4c067ba909
 ---
 # Compiler Warning (level 2) C4275
 
 > non - DLL-interface class '*class_1*' used as base for DLL-interface class '*class_2*'
+
+## Remarks
 
 An exported class was derived from a class that wasn't exported.
 
@@ -27,6 +28,10 @@ To minimize the possibility of data corruption when exporting a class with [__de
 You can avoid exporting classes by defining a DLL that defines a class with virtual functions, and functions you can call to instantiate and delete objects of the type.  You can then just call virtual functions on the type.
 
 C4275 can be ignored in Visual C++ if you are deriving from a type in the C++ Standard Library, compiling a debug release (**/MTd**) and where the compiler error message refers to `_Container_base`.
+
+## Example
+
+The following example generates C4275:
 
 ```cpp
 // C4275.cpp

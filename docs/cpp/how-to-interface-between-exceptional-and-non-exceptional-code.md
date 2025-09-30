@@ -3,7 +3,6 @@ description: "Learn more about: How to: Interface between exceptional and non-ex
 title: "How to: Interface between exceptional and non-exceptional code"
 ms.custom: "how-to"
 ms.date: 03/02/2022
-ms.topic: "conceptual"
 ---
 # How to: Interface between exceptional and non-exceptional code
 

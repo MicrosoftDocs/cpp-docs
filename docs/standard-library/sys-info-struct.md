@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: sys_info struct"
 title: "sys_info struct"
+description: "Learn more about: sys_info struct"
 ms.date: 09/08/2021
 f1_keywords: ["chrono/std::chrono::sys_info"]
 helpviewer_keywords: ["std::chrono [C++], sys_info"]
@@ -24,9 +24,9 @@ Provides a low-level interface to time zone information about the result of conv
 
 |Function|Description|
 |---------|-------------|
-|[`abbrev`](#abbrev)|The abbreviation used for the associated `time_zone` and `time_point.`|
+|[`abbrev`](#abbrev)|The abbreviation used for the associated `time_zone` and `time_point`.|
 |[`begin`, `end`](#beginend)|The range that the `offset` and `abbrev` apply to for the associated time zone.|
-|[`offset`](#offset)|The Universal Time Coordinated (UTC) offset in effect for the associated `time_zone` and `time_point.`|
+|[`offset`](#offset)|The Universal Time Coordinated (UTC) offset in effect for the associated `time_zone` and `time_point`.|
 |[`save`](#save)|Daylight savings time adjustment offset.|
 
 ## Non-members

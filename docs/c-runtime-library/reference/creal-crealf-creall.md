@@ -1,14 +1,13 @@
 ---
 title: "creal, crealf, creall"
 description: "API reference for creal, crealf, creall; which retrieve the real part of a complex number."
-ms.date: "9/2/2020"
+ms.date: 9/2/2020
 api_name: ["creal", "crealf", "creall"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["creal", "crealf", "creall", "complex/creal", "complex/crealf", "complex/creall"]
 helpviewer_keywords: ["creal function", "crealf function", "creall function"]
-ms.assetid: fa3ac62f-7aa3-4238-a71f-d6b00cd0c7c8
 ---
 # `creal`, `crealf`, `creall`
 
@@ -20,7 +19,7 @@ Retrieves the real part of a complex number.
 double creal( _Dcomplex z );
 float crealf( _Fcomplex z );
 long double creall( _Lcomplex z );
-#define creal(X) // Requires C11 or higher
+#define creal(X) // Requires C11 or later
 
 float creal( _Fcomplex z );  // C++ only
 long double creal( _Lcomplex z );  // C++ only

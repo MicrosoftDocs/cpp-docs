@@ -1,14 +1,13 @@
 ---
 title: "cimag, cimagf, cimagl"
 description: "API reference for cimag, cimagf, and cimagl; which retrieve the imaginary part of a complex number."
-ms.date: "9/2/2020"
+ms.date: 9/2/2020
 api_name: ["cimag", "cimagf", "cimagl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cimagf", "cimagl", "complex/cimag", "complex/cimagf", "complex/cimagl", "cimag"]
 helpviewer_keywords: ["cimag function", "cimagf function", "cimagl function"]
-ms.assetid: 0d8836f5-d61d-44cd-8731-6f75cb776def
 ---
 # `cimag`, `cimagf`, `cimagl`
 
@@ -20,7 +19,7 @@ Retrieves the imaginary part of a complex number.
 double cimag( _Dcomplex z );
 float cimagf( _Fcomplex z );
 long double cimagl( _Lcomplex z );
-#define cimag(X) // Requires C11 or higher
+#define cimag(X) // Requires C11 or later
 
 float cimag( _Fcomplex z );  // C++ only
 long double cimag( _Lcomplex z );  // C++ only

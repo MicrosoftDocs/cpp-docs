@@ -3,7 +3,7 @@ description: "Learn more about: Working with Resource Files"
 title: "Working with Resource Files (C++)"
 ms.date: "02/14/2019"
 helpviewer_keywords: ["resources [C++], about resources", "resources [C++], about resource files", "resource files [C++], about resource files"]
-ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
+ms.topic: concept-article
 ---
 # Working with Resource Files
 
@@ -30,24 +30,23 @@ To globalize and localize resources in managed apps, see [Globalizing and Locali
 
 ## In This Section
 
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)\
 Describes resource files and how they're used in Windows desktop applications. Also provides links to articles that describe how to use resource files.
 
-[Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
+[Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)\
 Describes symbols and provides information on using the **Resource Symbols** dialog box to manage symbols in your projects.
 
-[Resource Editors](../windows/resource-editors.md)<br/>
+[Resource Editors](../windows/resource-editors.md)\
 Describes the resource editors provided in Visual Studio and the types of resources you can modify with each editor. Also provides links to detailed information on using each editor.
 
 ## Related Sections
 
-[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)<br/>
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)\
 Provides links into the Visual C++ documentation.
 
-[Talk to Us](/visualstudio/ide/talk-to-us)<br/>
+[Talk to Us](/visualstudio/ide/talk-to-us)\
 Provides links to information on using the documentation set, contacting product support, and employing accessibility features.
 
 ## See also
 
-[Windows Desktop Applications](./desktop-applications-visual-cpp.md)<br/>
 [Menus and Other Resources](/windows/win32/menurc/resources)

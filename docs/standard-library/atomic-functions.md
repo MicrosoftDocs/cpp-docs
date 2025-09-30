@@ -1,41 +1,13 @@
 ---
-description: "Learn more about: <atomic> functions"
 title: "<atomic> functions"
-ms.date: "07/11/2018"
+description: "Learn more about: <atomic> functions"
+ms.date: 07/11/2018
 f1_keywords: ["atomic/std::atomic_compare_exchange_strong", "atomic/std::atomic_compare_exchange_strong_explicit", "atomic/std::atomic_compare_exchange_weak", "atomic/std::atomic_compare_exchange_weak_explicit", "atomic/std::atomic_exchange", "atomic/std::atomic_exchange_explicit", "atomic/std::atomic_fetch_add", "atomic/std::atomic_fetch_add_explicit", "atomic/std::atomic_fetch_and", "atomic/std::atomic_fetch_and_explicit", "atomic/std::atomic_fetch_or", "atomic/std::atomic_fetch_or_explicit", "atomic/std::atomic_fetch_sub", "atomic/std::atomic_fetch_sub_explicit", "atomic/std::atomic_fetch_xor", "atomic/std::atomic_fetch_xor_explicit", "atomic/std::atomic_flag_clear", "atomic/std::atomic_flag_clear_explicit", "atomic/std::atomic_flag_test_and_set", "atomic/std::atomic_flag_test_and_set_explicit", "atomic/std::atomic_init", "atomic/std::atomic_is_lock_free", "atomic/std::atomic_load", "atomic/std::atomic_load_explicit", "atomic/std::atomic_signal_fence", "atomic/std::atomic_store", "atomic/std::atomic_store_explicit", "atomic/std::atomic_thread_fence", "atomic/std::kill_dependency"]
 helpviewer_keywords: ["std::atomic_compare_exchange_strong [C++]", "std::atomic_compare_exchange_strong_explicit [C++]", "std::atomic_compare_exchange_weak [C++]", "std::atomic_compare_exchange_weak_explicit [C++]", "std::atomic_exchange [C++]", "std::atomic_exchange_explicit [C++]", "std::atomic_fetch_add [C++]", "std::atomic_fetch_add_explicit [C++]", "std::atomic_fetch_and [C++]", "std::atomic_fetch_and_explicit [C++]", "std::atomic_fetch_or [C++]", "std::atomic_fetch_or_explicit [C++]", "std::atomic_fetch_sub [C++]", "std::atomic_fetch_sub_explicit [C++]", "std::atomic_fetch_xor [C++]", "std::atomic_fetch_xor_explicit [C++]", "std::atomic_flag_clear [C++]", "std::atomic_flag_clear_explicit [C++]", "std::atomic_flag_test_and_set [C++]", "std::atomic_flag_test_and_set_explicit [C++]", "std::atomic_init [C++]", "std::atomic_is_lock_free [C++]", "std::atomic_load [C++]", "std::atomic_load_explicit [C++]", "std::atomic_signal_fence [C++]", "std::atomic_store [C++]", "std::atomic_store_explicit [C++]", "std::atomic_thread_fence [C++]", "std::kill_dependency [C++]"]
 ---
 # `<atomic>` functions
 
-[atomic_compare_exchange_strong](#atomic_compare_exchange_strong)\
-[atomic_compare_exchange_strong_explicit](#atomic_compare_exchange_strong_explicit)\
-[atomic_compare_exchange_weak](#atomic_compare_exchange_weak)\
-[atomic_compare_exchange_weak_explicit](#atomic_compare_exchange_weak_explicit)\
-[atomic_exchange](#atomic_exchange)\
-[atomic_exchange_explicit](#atomic_exchange_explicit)\
-[atomic_fetch_add](#atomic_fetch_add)\
-[atomic_fetch_add_explicit](#atomic_fetch_add_explicit)\
-[atomic_fetch_and](#atomic_fetch_and)\
-[atomic_fetch_and_explicit](#atomic_fetch_and_explicit)\
-[atomic_fetch_or](#atomic_fetch_or)\
-[atomic_fetch_or_explicit](#atomic_fetch_or_explicit)\
-[atomic_fetch_sub](#atomic_fetch_sub)\
-[atomic_fetch_sub_explicit](#atomic_fetch_sub_explicit)\
-[atomic_fetch_xor](#atomic_fetch_xor)\
-[atomic_fetch_xor_explicit](#atomic_fetch_xor_explicit)\
-[atomic_flag_clear](#atomic_flag_clear)\
-[atomic_flag_clear_explicit](#atomic_flag_clear_explicit)\
-[atomic_flag_test_and_set](#atomic_flag_test_and_set)\
-[atomic_flag_test_and_set_explicit](#atomic_flag_test_and_set_explicit)\
-[atomic_init](#atomic_init)\
-[atomic_is_lock_free](#atomic_is_lock_free)\
-[atomic_load](#atomic_load)\
-[atomic_load_explicit](#atomic_load_explicit)\
-[atomic_signal_fence](#atomic_signal_fence)\
-[atomic_store](#atomic_store)\
-[atomic_store_explicit](#atomic_store_explicit)\
-[atomic_thread_fence](#atomic_thread_fence)\
-[kill_dependency](#kill_dependency)
+The `<atomic>` header provides the following functions:
 
 ## <a name="atomic_compare_exchange_strong"></a> `atomic_compare_exchange_strong`
 
@@ -676,8 +648,8 @@ A [`memory_order`](../standard-library/atomic-enums.md#memory_order_enum).
 Sets the **`bool`** flag in an [`atomic_flag`](../standard-library/atomic-flag-structure.md) object to **`true`**, within the constraints of the [`memory_order.memory_order_seq_cst`](../standard-library/atomic-enums.md#memory_order_enum).
 
 ```cpp
-inline bool atomic_flag_test_and_set(volatile atomic_flag* Flag,) noexcept;
-inline bool atomic_flag_test_and_set(atomic_flag* Flag,) noexcept;
+inline bool atomic_flag_test_and_set(volatile atomic_flag* Flag) noexcept;
+inline bool atomic_flag_test_and_set(atomic_flag* Flag) noexcept;
 ```
 
 ### Parameters

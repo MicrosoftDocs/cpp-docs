@@ -1,17 +1,19 @@
 ---
-description: "Learn more about: fprintf, _fprintf_l, fwprintf, _fwprintf_l"
-title: "fprintf, _fprintf_l, fwprintf, _fwprintf_l"
-ms.date: "3/9/2021"
-api_name: ["fwprintf", "fprintf", "_fprintf_l", "_fwprintf_l"]
+title: "fprintf, _fprintf_l, fwprintf, _fwprintf_l, _ftprintf, _ftprintf_l"
+description: "Learn more about: fprintf, _fprintf_l, fwprintf, _ftprintf, _ftprintf_l"
+ms.date: 3/9/2021
+api_name: ["fwprintf", "fprintf", "_fprintf_l", "_fwprintf_l", "_ftprintf", "_ftprintf_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["fprintf", "fwprintf", "_ftprintf"]
-helpviewer_keywords: ["_fwprintf_l function", "fprintf function", "fprintf_l function", "_fprintf_l function", "_ftprintf function", "fwprintf function", "ftprintf_l function", "ftprintf function", "_ftprintf_l function", "print formatted data to streams", "fwprintf_l function"]
+f1_keywords: ["fprintf", "fwprintf", "_ftprintf", "_fwprintf_l", "_ftprintf_l"]
+helpviewer_keywords: ["fprintf function", "fprintf_l function", "_fprintf_l function", "_ftprintf function", "fwprintf function", "ftprintf_l function", "ftprintf function", "print formatted data to streams", "fwprintf_l function", "_ftprintf_l function"]
 ---
-# `fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`
+# `fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`, `_ftprintf`, `_ftprintf_l`
 
 Print formatted data to a stream. More secure versions of these functions are available; see [`fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
+
+For `_ftprintf` and `_ftprintf_l`, see [Generic-text function mappings](#generic-text-function-mappings).
 
 ## Syntax
 
@@ -71,14 +73,16 @@ The versions of these functions with the **`_l`** suffix are identical except th
 > [!IMPORTANT]
 > Ensure that *`format`* is not a user-defined string.
 >
-> Starting in Windows 10 version 2004  (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
+> Starting in Windows 10 version 2004  (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with [`legacy_stdio_float_rounding.obj`](../link-options.md).
 
-### Generic-text routine mappings
+### Generic-text function mappings
 
-| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+The function in the `tchar.h` column maps to the function in the other columns depending on the character set that is defined at compile time.
+
+| `tchar.h` function | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
-| **`_ftprintf`** | **`fprintf`** | **`fprintf`** | **`fwprintf`** |
-| **`_ftprintf_l`** | **`_fprintf_l`** | **`_fprintf_l`** | **`_fwprintf_l`** |
+| `_ftprintf` | `fprintf` | `fprintf` | `fwprintf` |
+| `_ftprintf_l` | `_fprintf_l` | `_fprintf_l` | `_fwprintf_l` |
 
 For more information, see [Format specification syntax](../format-specification-syntax-printf-and-wprintf-functions.md).
 

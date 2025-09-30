@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4266"
-title: "Compiler Warning (level 4) C4266"
-ms.date: "11/04/2016"
+title: "Compiler Warning (level 4, off) C4266"
+description: "Learn more about: Compiler Warning (level 4, off) C4266"
+ms.date: 11/04/2016
 f1_keywords: ["C4266"]
 helpviewer_keywords: ["C4266"]
-ms.assetid: 90ec5f5b-3451-4c16-bb1b-c30a626bdaa0
 ---
-# Compiler Warning (level 4) C4266
+# Compiler Warning (level 4, off) C4266
 
-'function' : no override available for virtual member function from base 'type'; function is hidden
+> 'function' : no override available for virtual member function from base 'type'; function is hidden
 
-A derived class did not override all overloads of a virtual function.
+## Remarks
 
-This warning is off by default.  See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+A derived class didn't override all overloads of a virtual function.
 
-The following sample generates C4266:
+This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## Example
+
+The following example generates C4266:
 
 ```cpp
 // C4266.cpp

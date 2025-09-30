@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <allocators> macros"
 title: "<allocators> macros"
-ms.date: "11/04/2016"
+description: "Learn more about: <allocators> macros"
+ms.date: 11/04/2016
 f1_keywords: ["allocators/std::ALLOCATOR_DECL", "allocators/std::CACHE_CHUNKLIST", "allocators/std::CACHE_FREELIST", "allocators/std::CACHE_SUBALLOC", "allocators/std::SYNC_DEFAULT"]
-ms.assetid: 9cb5ee07-1ff9-4594-ae32-3c8c6efb511a
 helpviewer_keywords: ["std::ALLOCATOR_DECL [C++]", "std::CACHE_CHUNKLIST [C++]", "std::CACHE_FREELIST [C++]", "std::CACHE_SUBALLOC [C++]", "std::SYNC_DEFAULT [C++]"]
 ---
 # `<allocators>` macros
@@ -72,8 +71,6 @@ Yields `stdext::allocators::cache_chunklist<sizeof(Type)>`.
 #define CACHE_CHUNKLIST <cache_class>
 ```
 
-### Remarks
-
 ## <a name="cache_freelist"></a> CACHE_FREELIST
 
 Yields `stdext::allocators::cache_freelist<sizeof(Type), max>`.
@@ -82,8 +79,6 @@ Yields `stdext::allocators::cache_freelist<sizeof(Type), max>`.
 #define CACHE_FREELIST(max) <cache_class>
 ```
 
-### Remarks
-
 ## <a name="cache_suballoc"></a> CACHE_SUBALLOC
 
 Yields `stdext::allocators::cache_suballoc<sizeof(Type)>`.
@@ -91,8 +86,6 @@ Yields `stdext::allocators::cache_suballoc<sizeof(Type)>`.
 ```cpp
 #define CACHE_SUBALLOC <cache_class>
 ```
-
-### Remarks
 
 ## <a name="sync_default"></a> SYNC_DEFAULT
 

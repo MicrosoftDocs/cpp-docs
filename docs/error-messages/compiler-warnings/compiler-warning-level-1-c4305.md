@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4305"
-title: "Compiler Warning (level 1) C4305"
-ms.date: "01/17/2018"
+title: "Compiler Warning (level 1 and level 2 and level 4) C4305"
+description: "Learn more about: Compiler Warning (level 1 and level 2 and level 4) C4305"
+ms.date: 01/17/2018
 f1_keywords: ["C4305"]
 helpviewer_keywords: ["C4305"]
 ---
 # Compiler Warning (level 1) C4305
 
-> '*context*' : truncation from '*type1*' to '*type2*'
+> '*conversion*': truncation from '*type1*' to '*type2*'
 
 ## Remarks
 
@@ -15,7 +15,7 @@ This warning is issued when a value is converted to a smaller type in an initial
 
 ## Example
 
-This sample shows two ways you might see this warning:
+This example shows two ways you might see this warning:
 
 ```cpp
 // C4305.cpp

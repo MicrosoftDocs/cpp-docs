@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: year Class"
 title: "year class"
-ms.date: "06/28/2021"
+description: "Learn more about: year Class"
+ms.date: 06/28/2021
 f1_keywords: ["chrono/std::chrono::year", "chrono/std::chrono::year::operator++", "chrono/std::chrono::year::operator--", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::operator int", "chrono/std::chrono::year::is_leap", "chrono/std::chrono::year::max", "chrono/std::chrono::min", "chrono/std::chrono::year::ok"]
 helpviewer_keywords: ["std::chrono [C++], year"]
 ---
-# `year` class  
+# `year` class
 
 Represents a year in the [Gregorian calendar](https://en.wikipedia.org/wiki/Proleptic_Gregorian_calendar).
 
@@ -230,7 +230,7 @@ If the incremented result exceeds 32767, it overflows to -32768
 Unary minus. Negate the `year`.
 
 ```cpp
-constexpr year operator-() const noexcept; // C++ 20
+constexpr year operator-() const noexcept; // C++20
 ```
 
 ### Return value

@@ -7,7 +7,7 @@ helpviewer_keywords: ["align __declspec keyword", "__declspec keyword [C++], ali
 ---
 # `align` (C++)
 
-In Visual Studio 2015 and later, use the C++11 standard **`alignas`** specifier to control alignment. For more information, see [Alignment](../cpp/alignment-cpp-declarations.md).
+In Visual Studio 2015 and later, use [**`alignas`** specifier](../cpp/alignas-specifier.md) (C++11) to control alignment. For more information, see [Alignment](../cpp/alignment-cpp-declarations.md).
 
 **Microsoft Specific**
 
@@ -19,7 +19,7 @@ Use `__declspec(align(#))` to precisely control the alignment of user-defined da
 
 ## Remarks
 
-Writing applications that use the latest processor instructions introduces some new constraints and issues. Many new instructions require data that's aligned to 16-byte boundaries. Aligning frequently used data to the processor's cache line size improves cache performance. For example, if you define a structure whose size is less than 32 bytes, you may want 32-byte alignment to make sure that objects of that structure type are efficiently cached.
+Writing applications that use the latest processor instructions introduces some new constraints and issues. Many new instructions require data be aligned to 16-byte boundaries. Aligning frequently used data to the processor's cache line size improves cache performance. For example, if you define a structure whose size is less than 32 bytes, you might want 32-byte alignment to make sure that objects of that structure type are efficiently cached.
 
 \# is the alignment value. Valid entries are integer powers of two from 1 to 8192 (bytes), such as 2, 4, 8, 16, 32, or 64. `declarator` is the data that you're declaring as aligned.
 
@@ -27,9 +27,9 @@ For information about how to return a value of type `size_t` that is the alignme
 
 You can use `__declspec(align(#))` when you define a **`struct`**, **`union`**, or **`class`**, or when you declare a variable.
 
-The compiler doesn't guarantee or attempt to preserve the alignment attribute of data during a copy or data transform operation. For example, [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md) can copy a struct declared with `__declspec(align(#))` to any location. Ordinary allocators (for example, [`malloc`](../c-runtime-library/reference/malloc.md), C++ [`operator new`](new-operator-cpp.md), and the Win32 allocators) typically return memory that isn't sufficiently aligned for `__declspec(align(#))` structures or arrays of structures. To guarantee that the destination of a copy or data transformation operation is correctly aligned, use [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md). Or, write your own allocator.
+The compiler doesn't guarantee, or attempt to preserve, the alignment attribute of data during a copy or data transform operation. For example, [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md) can copy a struct declared with `__declspec(align(#))` to any location. Ordinary allocators (for example, [`malloc`](../c-runtime-library/reference/malloc.md), C++ [`operator new`](new-operator-cpp.md), and the Win32 allocators) typically return memory that isn't aligned for `__declspec(align(#))` structures or arrays of structures. To guarantee that the destination of a copy or data transformation operation is correctly aligned, use [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md). Or, write your own allocator.
 
-You can't specify alignment for function parameters. When you pass data that has an alignment attribute by value on the stack, its alignment is controlled by the calling convention. If data alignment is important in the called function, copy the parameter into correctly aligned memory before use.
+You can't specify alignment for function parameters. When you pass data that has an alignment attribute by value on the stack, the calling convention controls its alignment. If data alignment is important in the called function, copy the parameter into correctly aligned memory before use.
 
 Without `__declspec(align(#))`, the compiler generally aligns data on natural boundaries based on the target processor and the size of the data, up to 4-byte boundaries on 32-bit processors, and 8-byte boundaries on 64-bit processors. Data in classes or structures is aligned in the class or structure at the minimum of its natural alignment and the current packing setting (from `#pragma pack` or the `/Zp` compiler option).
 

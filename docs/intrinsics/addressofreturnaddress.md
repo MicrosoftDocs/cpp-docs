@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: _AddressOfReturnAddress"
 title: "_AddressOfReturnAddress"
+description: "Learn more about: _AddressOfReturnAddress"
 ms.date: "09/02/2019"
 f1_keywords: ["_AddressOfReturnAddress_cpp", "_AddressOfReturnAddress"]
 helpviewer_keywords: ["_AddressOfReturnAddress intrinsic", "AddressOfReturnAddress intrinsic"]
-ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
 ---
 # _AddressOfReturnAddress
 
@@ -41,7 +40,7 @@ This routine is only available as an intrinsic.
 #include <intrin.h>
 
 // This function will print three values:
-//   (1) The address retrieved from _AddressOfReturnAdress
+//   (1) The address retrieved from _AddressOfReturnAddress
 //   (2) The return address stored at the location returned in (1)
 //   (3) The return address retrieved the _ReturnAddress* intrinsic
 // Note that (2) and (3) should be the same address.

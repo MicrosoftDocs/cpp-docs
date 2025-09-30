@@ -8,7 +8,7 @@ ms.assetid: c1017a35-8d71-4ad9-934b-a3e3ea037fa0
 ---
 # /FILEALIGN (Align sections in files)
 
-The **/FILEALIGN** linker option lets you specify the alignment of sections written to your output file as a multiple of an specified size.
+The **/FILEALIGN** linker option lets you specify the alignment of sections written to your output file as a multiple of a specified size.
 
 ## Syntax
 

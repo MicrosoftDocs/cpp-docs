@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3450"
 title: "Compiler Error C3450"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3450"
+ms.date: 11/04/2016
 f1_keywords: ["C3450"]
 helpviewer_keywords: ["C3450"]
-ms.assetid: 78892cf7-0b82-4589-90d0-e06666247003
 ---
 # Compiler Error C3450
 
-'type': not an attribute; cannot specify [System::AttributeUsageAttribute] or [Windows::Foundation::Metadata::AttributeUsageAttribute]
+> 'type': not an attribute; cannot specify [System::AttributeUsageAttribute] or [Windows::Foundation::Metadata::AttributeUsageAttribute]
+
+## Remarks
 
 A user-defined managed attribute must inherit from <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>. A Windows Runtime attribute must be defined in the `Windows::Foundation::Metadata` namespace.
 
@@ -16,7 +17,7 @@ For more information, see [User-Defined Attributes](../../extensions/user-define
 
 ## Example
 
-The following sample generates C3450 and shows how to fix it.
+The following example generates C3450 and shows how to fix it.
 
 ```cpp
 // C3450.cpp

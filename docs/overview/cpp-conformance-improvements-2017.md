@@ -2,7 +2,8 @@
 title: "C++ conformance improvements in Visual Studio 2017"
 description: "Microsoft C/C++ in Visual Studio 2017 is progressing toward full conformance with the C++20 language standard."
 ms.date: 04/18/2021
-ms.technology: "cpp-language"
+ms.service: "visual-cpp"
+ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2017
 
@@ -464,7 +465,7 @@ int main()
     // understand C++ and uses BitBlt, which results in a double-free later.
     f(A()); // C4606 'A': passing argument by value across native and managed
     // boundary requires valid copy constructor. Otherwise, the runtime
-    // behavior is undefined.`
+    // behavior is undefined.
 }
 ```
 
@@ -1628,7 +1629,7 @@ The standard C++ attribute [`[[deprecated]]`](../cpp/attributes.md) may be used 
 template <typename T>
 using X = __declspec(deprecated("msg")) T; // C2760: syntax error:
                                            // unexpected token '__declspec',
-                                           // expected 'type specifier'`
+                                           // expected 'type specifier'
 ```
 
 To fix the error, change to code to the following (with the attribute placed before the '=' of the alias definition):
@@ -1677,7 +1678,7 @@ The following code now raises C4643:
 namespace std {
     template<typename T> class vector;  // C4643: Forward declaring 'vector'
                                         // in namespace std is not permitted
-                                        // by the C++ Standard`
+                                        // by the C++ Standard
 }
 ```
 

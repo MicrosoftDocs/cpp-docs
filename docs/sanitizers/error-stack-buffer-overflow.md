@@ -1,6 +1,6 @@
 ---
 title: "Error: stack-buffer-overflow"
-description: "Source examples and live debug screenshots for Stack buffer overflow errors."
+description: "Learn about the stack-buffer-overflow Address Sanitizer error."
 ms.date: 09/29/2021
 f1_keywords: ["stack-buffer-overflow"]
 helpviewer_keywords: ["stack-buffer-overflow error", "AddressSanitizer error stack-buffer-overflow"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["stack-buffer-overflow error", "AddressSanitizer error sta
 # Error: `stack-buffer-overflow`
 
 > Address Sanitizer Error: Stack buffer overflow
+
+## Remarks
 
 A stack buffer overflow can happen many ways in C or C++. We provide several examples for this category of error that you can catch by a simple recompile.
 
@@ -86,7 +88,7 @@ public:
 
 class Child : public Parent {
 public:
-    int extra_field;
+    volatile int extra_field;
 };
 
 int main(void) {
@@ -95,7 +97,7 @@ int main(void) {
     Child *c = (Child*)&p;
     c->extra_field = 42;  // Boom !
 
-    return 0;
+    return (c->extra_field == 42);
 }
 ```
 
@@ -112,11 +114,11 @@ devenv /debugexe example3.exe
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

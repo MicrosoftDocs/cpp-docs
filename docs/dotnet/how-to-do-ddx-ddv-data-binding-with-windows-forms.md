@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: How to: Do DDX/DDV Data Binding with Windows Forms"
 title: "How to: Do DDX-DDV Data Binding with Windows Forms"
+description: "Learn more about: How to: Do DDX/DDV Data Binding with Windows Forms"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC [C++], hosting a Windows Forms Control", "Windows Forms [C++], MFC support"]
-ms.assetid: b2957370-cf1f-4779-94ac-228cd393686c
 ---
 # How to: Do DDX/DDV Data Binding with Windows Forms
 
@@ -53,7 +52,7 @@ void CMFC01Dlg::DoDataExchange(CDataExchange* pDX)
 
 ## Example: Add handler method
 
-Now we will add the handler method for a click on the OK button. Click the **Resource View** tab. In Resource View, double-click on `IDD_MFC01_DIALOG`. The dialog resource appears in Resource Editor. Then double click the OK button..
+Now we will add the handler method for a click on the OK button. Click the **Resource View** tab. In Resource View, double-click on `IDD_MFC01_DIALOG`. The dialog resource appears in Resource Editor. Then double click the OK button.
 
 Define the handler as follows.
 
@@ -77,6 +76,6 @@ You can now build and run the application. Notice that any text in the text box 
 
 ## See also
 
-[CWinFormsControl Class](../mfc/reference/cwinformscontrol-class.md)<br/>
-[DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)<br/>
+[CWinFormsControl Class](../mfc/reference/cwinformscontrol-class.md)\
+[DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)\
 [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange)

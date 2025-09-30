@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: money_get Class"
 title: "money_get Class"
-ms.date: "11/04/2016"
+description: "Learn more about: money_get Class"
+ms.date: 11/04/2016
 f1_keywords: ["xlocmon/std::money_get", "xlocmon/std::money_get::char_type", "xlocmon/std::money_get::iter_type", "xlocmon/std::money_get::string_type", "xlocmon/std::money_get::do_get", "xlocmon/std::money_get::get"]
 helpviewer_keywords: ["std::money_get [C++]", "std::money_get [C++], char_type", "std::money_get [C++], iter_type", "std::money_get [C++], string_type", "std::money_get [C++], do_get", "std::money_get [C++], get"]
-ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
 ---
 # money_get Class
 
@@ -112,7 +111,7 @@ An input iterator addressing the first element beyond the monetary input field.
 
 ### Remarks
 
-The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty monetary input field. If successful, it converts this field to a sequence of one or more decimal digits, optionally preceded by a minus sign ( `-`), to represent the amount and stores the result in the [string_type](#string_type) object *val*. It returns an iterator designating the first element beyond the monetary input field. Otherwise, the function stores an empty sequence in *val* and sets `ios_base::failbit` in *State*. It returns an iterator designating the first element beyond any prefix of a valid monetary input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `State`.
+The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty monetary input field. If successful, it converts this field to a sequence of one or more decimal digits, optionally preceded by a minus sign (`-`), to represent the amount and stores the result in the [string_type](#string_type) object *val*. It returns an iterator designating the first element beyond the monetary input field. Otherwise, the function stores an empty sequence in *val* and sets `ios_base::failbit` in *State*. It returns an iterator designating the first element beyond any prefix of a valid monetary input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `State`.
 
 The second virtual protected member function behaves the same as the first, except that if successful it converts the optionally signed digit sequence to a value of type **`long double`** and stores that value in *val*.
 
@@ -242,7 +241,7 @@ int main( )
    else
       cout << "money_get(" << psz2.str( ) << ", intl = 0) = "
            << fVal/100.0 << endl;
-};
+}
 ```
 
 ## <a name="iter_type"></a> money_get::iter_type

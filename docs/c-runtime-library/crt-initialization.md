@@ -1,10 +1,9 @@
 ---
 title: "CRT Initialization"
 description: "Describes how the CRT initializes global state in native code."
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 ms.date: 08/02/2021
 helpviewer_keywords: ["CRT initialization [C++]"]
-ms.assetid: e7979813-1856-4848-9639-f29c86b74ad7
 ---
 # CRT initialization
 
@@ -16,9 +15,9 @@ It's possible, though not recommended, to take advantage of Microsoft-specific l
 
 ## Initializing a global object
 
-Consider the following code:
+Consider the following C++ code (C won't allow this code because it doesn't allow a function call in a constant expression).
 
-```C
+```cpp
 int func(void)
 {
     return 3;
@@ -69,7 +68,6 @@ Offset    Type              Applied To         Index     Name
 The CRT defines two pointers:
 
 - `__xc_a` in `.CRT$XCA`
-
 - `__xc_z` in `.CRT$XCZ`
 
 Neither group has any other symbols defined except `__xc_a` and `__xc_z`.
@@ -88,7 +86,7 @@ The section should resemble this example:
             __xc_z
 ```
 
-So, the CRT library uses both `__xc_a` and `__xc_z` to determine the start and end of the global initializers list because of the way in which they're laid out in memory after the image is loaded.
+The CRT library uses both `__xc_a` and `__xc_z` to determine the start and end of the global initializers list because of the way in which they're laid out in memory after the image is loaded.
 
 ## Linker features for initialization
 
@@ -112,4 +110,5 @@ The names `.CRT$XCT` and `.CRT$XCV` aren't used by either the compiler or the CR
 
 ## See also
 
+[`_initterm, _initterm_e`](./reference/initterm-initterm-e.md)\
 [C runtime (CRT) and C++ Standard Library (STL) `.lib` files](./crt-library-features.md)

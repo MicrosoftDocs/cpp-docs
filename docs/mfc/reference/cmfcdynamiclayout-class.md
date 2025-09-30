@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: CMFCDynamicLayout Class"
 title: "CMFCDynamicLayout Class"
+description: "Learn more about: CMFCDynamicLayout Class"
 ms.date: "08/29/2019"
 f1_keywords: ["CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout::AddItem", "AFXLAYOUT/CMFCDynamicLayout::Adjust", "AFXLAYOUT/CMFCDynamicLayout::Create", "AFXLAYOUT/CMFCDynamicLayout::GetHostWnd", "AFXLAYOUT/CMFCDynamicLayout::GetMinSize", "AFXLAYOUT/CMFCDynamicLayout::GetWindowRect", "AFXLAYOUT/CMFCDynamicLayout::HasItem", "AFXLAYOUT/CMFCDynamicLayout::IsEmpty", "AFXLAYOUT/CMFCDynamicLayout::LoadResource", "AFXLAYOUT/CMFCDynamicLayout::SetMinSize"]
-ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
 ---
 # CMFCDynamicLayout Class
 
@@ -170,7 +169,7 @@ The position and size of a child control is changed dynamically when a hosting w
 Retrieves the rectangle for the window's current client area.
 
 ```cpp
-void GetHostWndRect(CRect& rect,);
+void GetHostWndRect(CRect& rect);
 ```
 
 ### Parameters
@@ -503,5 +502,5 @@ A [SizeSettings](#sizesettings_structure) value that encapsulates the requested 
 
 ## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
 [Classes](../../mfc/reference/mfc-classes.md)

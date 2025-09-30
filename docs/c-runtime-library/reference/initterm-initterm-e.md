@@ -25,8 +25,8 @@ void __cdecl _initterm(
 );
 
 int __cdecl _initterm_e(
-   PVFV *,
-   PVFV *
+   PIFV *,
+   PIFV *
 );
 ```
 

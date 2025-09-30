@@ -10,7 +10,7 @@ monikerRange: ">=msvc-160"
 
 Local variables should be initialized when they're declared.
 
-This guidance comes from the [C++ Core Guideline ES.20](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es20-always-initialize-an-object).
+This guidance comes from [ES.20: Always initialize an object](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es20-always-initialize-an-object) in the C++ Core Guidelines.
 
 The `lnt-uninitialized-local` check is controlled by the **Uninitialized Local Variable** setting in the C/C++ Code Style options. For information on how to change this setting, see [Configure the linter](cpp-linter-overview.md#configure-the-linter).
 
@@ -25,7 +25,7 @@ void example() {
   std::string s;  // OK: The type is default initialized.
 
   int j;     // OK: The local is immediately assigned after declaration.
-  j = 0;     // This is allowed as as a slight relaxation of the C++ Core Guideline.
+  j = 0;     // This is allowed as a slight relaxation of the C++ Core Guideline.
 }
 ```
 
@@ -55,5 +55,5 @@ Using "Almost Always Auto" for declarations requires initialization at declarati
 ## See also
 
 [IntelliSense code linter for C++ overview](cpp-linter-overview.md)\
-[C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es20-always-initialize-an-object)\
+[ES.20: Always initialize an object](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es20-always-initialize-an-object)\
 [Almost Always Auto - Herb Sutter](https://herbsutter.com/2013/08/12/gotw-94-solution-aaa-style-almost-always-auto/)

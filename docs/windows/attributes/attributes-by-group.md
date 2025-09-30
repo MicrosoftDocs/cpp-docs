@@ -3,7 +3,7 @@ description: "Learn more about: Attributes by Group"
 title: "Attributes by Group"
 ms.custom: "index-page"
 ms.date: "10/02/2018"
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 helpviewer_keywords: ["attributes [C++/CLI]"]
 ms.assetid: 9f4dd43f-9909-43d6-91d2-05734643876e
 ---

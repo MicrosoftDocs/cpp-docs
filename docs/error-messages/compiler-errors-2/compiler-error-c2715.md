@@ -1,16 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2715"
 title: "Compiler Error C2715"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2715"
+ms.date: 11/04/2016
 f1_keywords: ["C2715"]
 helpviewer_keywords: ["C2715"]
-ms.assetid: c81567a7-5b65-468f-aaf9-835f91e468e4
 ---
 # Compiler Error C2715
 
-'type' : cannot throw or catch this type
+> 'type' : cannot throw or catch this type
+
+## Remarks
 
 Value types are not valid arguments when using exception handling in managed code (see [Exception Handling](../../extensions/exception-handling-cpp-component-extensions.md) for more information).
+
+## Example
+
+The following example generates C2715 and shows how to fix it:
 
 ```cpp
 // C2715a.cpp

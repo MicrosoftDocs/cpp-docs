@@ -58,7 +58,7 @@ For a description of the following entries, see [View class characteristics](vie
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 
@@ -95,7 +95,7 @@ The best way to create an `elements_view` is by using the [`elements`](range-ada
 1\) Create an `elements_view` from the specified view.\
 2\) Default construct an `elements_view`.
 
-### Example:  `elements_view`
+### Example: `elements_view`
 
 ```cpp
 // requires /std:c++20 or later
@@ -118,7 +118,7 @@ int main()
         {"C++11", 2011},
         {"C++14", 2014},
         {"C++17", 2017},
-        {"c++20", 2020}
+        {"C++20", 2020}
     };
 
     // create an elements_view of all the string elements (<1>) from each tuple
@@ -132,7 +132,7 @@ int main()
     // Another way to call the range adaptor using pipe (|) syntax
     for (auto&& name : cpp_standards | std::views::elements<0>)
     {
-        std::cout << name << ' '; // C++03 C++11 C++14 C++17 C++98 c++20
+        std::cout << name << ' '; // C++03 C++11 C++14 C++17 C++98 C++20
     }
     std::cout << '\n';
 

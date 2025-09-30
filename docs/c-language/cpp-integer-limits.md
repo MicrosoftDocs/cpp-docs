@@ -23,7 +23,7 @@ Microsoft C also permits the declaration of sized integer variables, which are i
 |**UCHAR_MAX**|Maximum value for a variable of type **`unsigned char`**.|255 (0xff)|
 |**CHAR_MIN**|Minimum value for a variable of type **`char`**.|-128; 0 if /J option used|
 |**CHAR_MAX**|Maximum value for a variable of type **`char`**.|127; 255 if /J option used|
-|**MB_LEN_MAX**|Maximum number of bytes in a multicharacter constant.|5|
+|**MB_LEN_MAX**|Maximum number of bytes in a multibyte character.|5|
 |**SHRT_MIN**|Minimum value for a variable of type **`short`**.|-32768|
 |**SHRT_MAX**|Maximum value for a variable of type **`short`**.|32767|
 |**USHRT_MAX**|Maximum value for a variable of type **`unsigned short`**.|65535 (0xffff)|

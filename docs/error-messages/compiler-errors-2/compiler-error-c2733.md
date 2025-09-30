@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2733"
 title: "Compiler Error C2733"
+description: "Learn more about: Compiler Error C2733"
 ms.date: 12/02/2021
 f1_keywords: ["C2733"]
 helpviewer_keywords: ["C2733"]
-ms.assetid: 67f83561-c633-407c-a2ee-f9fd16e165bf
 ---
 # Compiler Error C2733
 
 > you cannot overload a function with 'C' linkage
+
+## Remarks
 
 More than one overloaded function is declared with `extern "C"` linkage. When using `"C"` linkage, only one form of a specified function can be external. Since overloaded functions have the same undecorated name, they can't be used with C programs.
 
@@ -16,7 +17,7 @@ This error may occur after an upgrade because of conformance changes in Visual S
 
 ## Example
 
-The following sample generates C2733:
+The following example generates C2733:
 
 ```cpp
 // C2733.cpp

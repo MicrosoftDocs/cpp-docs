@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: insert_iterator Class"
 title: "insert_iterator Class"
+description: "Learn more about: insert_iterator Class"
 ms.date: 06/15/2022
 f1_keywords: ["iterator/std::insert_iterator", "iterator/std::insert_iterator::container_type", "iterator/std::insert_iterator::reference"]
 helpviewer_keywords: ["std::insert_iterator [C++]", "std::insert_iterator [C++], container_type", "std::insert_iterator [C++], reference"]
-ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
 ms.custom: devdivchpfy22
 ---
 
@@ -293,7 +292,7 @@ Inserts a value into the container and returns the iterator updated to point to 
 
 ```cpp
 insert_iterator<Container>& operator=(
-    typename Container::const_reference val,);
+    typename Container::const_reference val);
 
 insert_iterator<Container>& operator=(
     typename Container::value_type&& val);

@@ -4,6 +4,7 @@ title: "Printing in Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["printing [MFC], CRichEditCtrl", "rich edit controls [MFC], printing", "CRichEditCtrl class [MFC], printing"]
 ms.assetid: dbda0e40-018f-424e-b5d8-7b489aaf27af
+ms.topic: concept-article
 ---
 # Printing in Rich Edit Controls
 

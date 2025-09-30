@@ -1,6 +1,6 @@
 ---
-description: "Learn more about the free functions for use with the std::any class in the C++ Standard Library."
 title: "<any> functions"
+description: "Learn more about the free functions for use with the std::any class in the C++ Standard Library."
 ms.date: 09/20/2021
 f1_keywords: ["any/std::any_cast", "any/std::make_any", "any/std::swap"]
 no-loc: ["any", "std", "class"]
@@ -11,7 +11,7 @@ The [`<any>`](any.md) header declares several free functions for working with th
 
 ## Functions
 
-| &nbsp; | &nbsp; |
+| Name | Description |
 |--|--|
 | [`any_cast`](#any_cast) | Makes an object into an `any`. |
 | [`make_any`](#make_any) | Takes values and creates an `any` object. |

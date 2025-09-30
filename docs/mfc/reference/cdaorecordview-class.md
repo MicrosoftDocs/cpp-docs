@@ -4,11 +4,13 @@ title: "CDaoRecordView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDaoRecordView", "AFXDAO/CDaoRecordView", "AFXDAO/CDaoRecordView::CDaoRecordView", "AFXDAO/CDaoRecordView::IsOnFirstRecord", "AFXDAO/CDaoRecordView::IsOnLastRecord", "AFXDAO/CDaoRecordView::OnGetRecordset", "AFXDAO/CDaoRecordView::OnMove"]
 helpviewer_keywords: ["CDaoRecordView [MFC], CDaoRecordView", "CDaoRecordView [MFC], IsOnFirstRecord", "CDaoRecordView [MFC], IsOnLastRecord", "CDaoRecordView [MFC], OnGetRecordset", "CDaoRecordView [MFC], OnMove"]
-ms.assetid: 5aa7d0e2-bd05-413e-b216-80c404ce18ac
 ---
 # CDaoRecordView Class
 
 A view that displays database records in controls.
+
+> [!NOTE]
+> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -70,7 +72,7 @@ For more information about declaring and using your record view and recordset cl
 
 ## Requirements
 
-**Header:** afxdao.h
+**Header:** `afxdao.h`
 
 ## <a name="cdaorecordview"></a> CDaoRecordView::CDaoRecordView
 

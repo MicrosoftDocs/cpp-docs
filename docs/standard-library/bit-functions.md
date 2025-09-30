@@ -1,7 +1,7 @@
 ---
 title: "<bit> functions"
 description: "Functions to access, manipulate, and process individual bits and sequences of bits"
-ms.date: "08/28/2020"
+ms.date: 08/28/2020
 f1_keywords: ["bit/std::bit_cast", "bit/std::has_single_bit", "bit/std::bit_ceil", "bit/std::bit_floor", "bit/std::bit_width", "bit/std::rotl", "bit/std::rotr", "bit/std::countl_zero", "bit/std::countl_one","bit/std::countr_zero","bit/std::countr_one","bit/std::popcount"]
 helpviewer_keywords: ["std::bit [C++], bit_cast", "std::bit [C++], has_single_bit", "std::bit [C++], bit_ceil", "std::bit [C++], bit_floor", "std::bit [C++], bit_width", "std::bit [C++], rotl", "std::bit [C++], rotr", "std::bit [C++], countl_zero", "std::bit [C++], countl_one", "std::bit [C++], countr_zero", "std::bit [C++], countr_one", "std::bit [C++], popcount"]
 ---
@@ -24,7 +24,7 @@ The `<bit>` header includes the following non-member template functions:
 |[`rotl`](#rotl) | Compute the result of a bitwise left rotation. |
 |[`rotr`](#rotr) | Compute the result of a bitwise right rotation. |
 
-## <a name="bit_cast"></a>`bit_cast`
+## <a name="bit_cast"></a> `bit_cast`
 
 Copy a bit pattern from an object of type `From` to a new object of type `To`.
 
@@ -92,7 +92,7 @@ This function template is `constexpr` if and only if `To`, `From`, and the types
 - Not volatile-qualified
 - Have no non-static data member that is a reference type
 
-## <a name="bit_ceil"></a>`bit_ceil`
+## <a name="bit_ceil"></a> `bit_ceil`
 
 Find the smallest power of two greater than or equal to a value. For example, given `3`, returns `4`.
 
@@ -142,7 +142,7 @@ bit_ceil(0b0101) = 0b1000
 
 This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
-## <a name="bit_floor"></a>`bit_floor`
+## <a name="bit_floor"></a> `bit_floor`
 
 Find the largest power of two not greater than a value. For example, given `5`, returns `4`.
 
@@ -193,7 +193,7 @@ bit_floor(0b0101) = 0b0100
 
 This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
-## <a name="bit_width"></a>`bit_width`
+## <a name="bit_width"></a> `bit_width`
 
 Find the smallest number of bits needed to represent a value.
 
@@ -247,7 +247,7 @@ bit_width(8) = 4
 
 This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
-## <a name="countl_zero"></a>`countl_zero`
+## <a name="countl_zero"></a> `countl_zero`
 
 Count the number of consecutive bits set to zero, starting from the most significant bit.
 
@@ -300,7 +300,7 @@ countl_zero(0b10000000) = 0
 
 This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
-## <a name="countl_one"></a>`countl_one`
+## <a name="countl_one"></a> `countl_one`
 
 Count the number of consecutive bits set to one, starting from the most significant bit.
 
@@ -353,7 +353,7 @@ countl_one(0b11111111) = 8
 
 This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
-## <a name="countr_zero"></a>`countr_zero`
+## <a name="countr_zero"></a> `countr_zero`
 
 Count the number of consecutive bits set to zero, starting from the least significant bit.
 
@@ -407,7 +407,7 @@ countr_zero(0b10000000) = 7
 
 This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
-## <a name="countr_one"></a>`countr_one`
+## <a name="countr_one"></a> `countr_one`
 
 Count the number of consecutive bits set to one, starting from the least significant bit.
 
@@ -460,7 +460,7 @@ countr_one(0b11111111) = 8
 
 This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
-## <a name="has_single_bit"></a>`has_single_bit`
+## <a name="has_single_bit"></a> `has_single_bit`
 
 Check if a value has only one bit set.This is the same as testing whether a value is a power of two.
 
@@ -514,7 +514,7 @@ has_single_bit(0b1001) = false
 
 This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
-## <a name="popcount"></a>`popcount`
+## <a name="popcount"></a> `popcount`
 
 Count the number of bits set to one in an unsigned integer value.
 
@@ -573,7 +573,7 @@ popcount(0b1111) = 4
 
 This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
-## <a name="rotl"></a>`rotl`
+## <a name="rotl"></a> `rotl`
 
 Rotates the bits of  an unsigned integer value left the specified number of times. Bits that "fall out" of the leftmost bit are rotated into the rightmost bit.
 
@@ -635,7 +635,7 @@ rotl(0b00000001,-1) = 0b10000000
 
 This template function only participates in overload resolution if `T` is an unsigned integer type. For example: `unsigned int`, `unsigned long`, `unsigned short`, `unsigned char`, and so on.
 
-## <a name="rotr"></a>`rotr`
+## <a name="rotr"></a> `rotr`
 
 Rotates the bits of `value` right the specified number of times. Bits that 'fall out' of the rightmost bit are rotated back into the leftmost bit.
 

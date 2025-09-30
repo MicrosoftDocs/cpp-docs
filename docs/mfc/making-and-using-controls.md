@@ -4,6 +4,7 @@ title: "Making and Using Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], creating for dialog boxes", "Windows common controls [MFC], about common controls", "common controls [MFC], about common controls"]
 ms.assetid: a252acad-3cc0-440e-bbc6-43eaaf8cb7bb
+ms.topic: concept-article
 ---
 # Making and Using Controls
 

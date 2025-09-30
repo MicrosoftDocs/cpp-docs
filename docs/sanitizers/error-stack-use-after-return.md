@@ -1,6 +1,6 @@
 ---
 title: "Error: stack-use-after-return"
-description: "Source examples and live debug screenshots for Stack Use After Return errors."
+description: "Learn about the stack-use-after-return Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["stack-use-after-return"]
 helpviewer_keywords: ["stack-use-after-return error", "AddressSanitizer error stack-use-after-return"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["stack-use-after-return error", "AddressSanitizer error st
 # Error: `stack-use-after-return`
 
 > Address Sanitizer Error: Use of stack memory after return
+
+## Remarks
 
 This check requires code generation that's activated by an extra compiler option, [`/fsanitize-address-use-after-return`](../build/reference/fsanitize.md), and by setting the environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.
 
@@ -21,7 +23,7 @@ This check can slow your application down substantially. Consider the [Clang sum
 ```cpp
 // example1.cpp
 // stack-use-after-return error
-char* x;
+volatile char* x;
 
 void foo() {
     char stack_buffer[42];
@@ -33,7 +35,7 @@ int main() {
     foo();
     *x = 42; // Boom!
 
-    return 0;
+    return (*x == 42);
 }
 ```
 
@@ -96,10 +98,12 @@ int main(int argc, char* argv[]) {
 To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
-cl example2.cpp /fsanitize=address /fsanitize-address-use-after-return /Zi
+cl example2.cpp /fsanitize=address /fsanitize-address-use-after-return /Zi /Od
 set ASAN_OPTIONS=detect_stack_use_after_return=1
 devenv /debugexe example2.exe 1
 ```
+
+ASAN is a form of dynamic analysis, which means it can only detect bad code that is actually executed. An optimizer may determine that the value of `t[100 + Idx]` or `sink` is never used and elide the assignment. As a result, this example requires the `/Od` flag.
 
 ### Resulting error - C++ and templates
 
@@ -107,11 +111,11 @@ devenv /debugexe example2.exe 1
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

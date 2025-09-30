@@ -4,6 +4,7 @@ title: "Modifying the ATL DHTML Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTML controls, modifying", "DHTML controls", "DHTML controls, modifying"]
 ms.assetid: c053f35f-8629-4600-9595-721f5956777a
+ms.topic: how-to
 ---
 # Modifying the ATL DHTML Control
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: COleVariant Class"
 title: "COleVariant Class"
-ms.date: "11/04/2016"
+description: "Learn more about: COleVariant Class"
+ms.date: 11/04/2016
 f1_keywords: ["COleVariant", "AFXDISP/COleVariant", "AFXDISP/COleVariant::COleVariant", "AFXDISP/COleVariant::Attach", "AFXDISP/COleVariant::ChangeType", "AFXDISP/COleVariant::Clear", "AFXDISP/COleVariant::Detach", "AFXDISP/COleVariant::GetByteArrayFromVariantArray", "AFXDISP/COleVariant::SetString"]
 helpviewer_keywords: ["COleVariant [MFC], COleVariant", "COleVariant [MFC], Attach", "COleVariant [MFC], ChangeType", "COleVariant [MFC], Clear", "COleVariant [MFC], Detach", "COleVariant [MFC], GetByteArrayFromVariantArray", "COleVariant [MFC], SetString"]
-ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
 ---
 # COleVariant Class
 
@@ -52,7 +51,7 @@ This data type is used in OLE automation. Specifically, the [DISPPARAMS](/window
 > [!NOTE]
 > This class is derived from the `VARIANT` structure. This means you can pass a `COleVariant` in a parameter that calls for a `VARIANT` and that the data members of the `VARIANT` structure are accessible data members of `COleVariant`.
 
-The two related MFC classes [COleCurrency](../../mfc/reference/colecurrency-class.md) and [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) encapsulate the variant data types CURRENCY ( `VT_CY`) and DATE ( `VT_DATE`). The `COleVariant` class is used extensively in the DAO classes; see these classes for typical usage of this class, for example [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) and [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).
+The two related MFC classes [COleCurrency](../../mfc/reference/colecurrency-class.md) and [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) encapsulate the variant data types CURRENCY (`VT_CY`) and DATE (`VT_DATE`). The `COleVariant` class is used extensively in the DAO classes; see these classes for typical usage of this class, for example [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) and [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).
 
 For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy-r1), [DISPPARAMS](/windows/win32/api/oaidl/ns-oaidl-dispparams), and [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) entries in the Windows SDK.
 
@@ -150,7 +149,7 @@ A [CByteArray](../../mfc/reference/cbytearray-class.md) object to be copied into
 A [CLongBinary](../../mfc/reference/clongbinary-class.md) object to be copied into the new `COleVariant` object.
 
 *pidl*<br/>
-A pointer to a [ITEMIDLIST](/windows/win32/api/shtypes/ns-shtypes-itemidlist) structure to be copied into the new `COleVariant` object.
+A pointer to an [ITEMIDLIST](/windows/win32/api/shtypes/ns-shtypes-itemidlist) structure to be copied into the new `COleVariant` object.
 
 ### Remarks
 

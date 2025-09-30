@@ -25,6 +25,10 @@ landingContent:
             url: get-started-with-cpp-build-insights.md
       - linkListType: tutorial
         links:
+          - text: Build Insights function view
+            url: tutorials/build-insights-function-view.md
+          - text: Build Insights included files view
+            url: tutorials/build-insights-included-files-view.md
           - text: vcperf and Windows Performance Analyzer
             url: tutorials/vcperf-and-wpa.md
           - text: Windows Performance Analyzer basics

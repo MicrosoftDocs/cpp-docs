@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: bad_alloc Class"
 title: "bad_alloc Class"
+description: "Learn more about: bad_alloc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::bad_alloc"]
 helpviewer_keywords: ["bad_alloc class"]
-ms.assetid: 6429a8e6-5a49-4907-8d56-f4a4ec8131d0
 ---
 # bad_alloc Class
 
@@ -31,8 +30,8 @@ The value returned by `what` is an implementation-defined C string. None of the 
 ```cpp
 // bad_alloc.cpp
 // compile with: /EHsc
-#include<new>
-#include<iostream>
+#include <new>
+#include <iostream>
 using namespace std;
 
 int main() {

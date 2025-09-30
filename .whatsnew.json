@@ -1,5 +1,5 @@
 {
-  "$schema": "https://whatsnewapi.azurewebsites.net/schema",
+  "$schema": "https://github.com/dotnet/docs-tools/blob/main/WhatsNew.Infrastructure/Configuration/reposettings.schema.json",
   "docSetProductName": "C++, C, and Assembler",
   "rootDirectory": "docs/",
   "docLinkSettings": {
@@ -10,9 +10,17 @@
     "minAdditionsToFile": 2,
     "pullRequestTitlesToIgnore": [
       "^Confirm merge from FromPublicMasterBranch",
-      "^Repo sync for protected CLA branch"
+      "^Repo sync for protected CLA branch",
+      "^Repo sync for protected branch"
     ],
     "omitPullRequestTitles": false
+  },
+  "navigationOptions": {
+        "maximumNumberOfArticles": 2,
+        "tocParentNode": " ",
+        "repoTocFolder": " ",
+        "indexParentNode": " ", 
+        "repoIndexFolder": " "
   },
   "areas": [
       {"names": ["assembler", "intrinsics"], "heading": "C/C++ compiler intrinsics and assembly language"},

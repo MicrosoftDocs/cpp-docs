@@ -96,7 +96,7 @@ Nonzero if successful; otherwise 0.
 ### Remarks
 
 > [!NOTE]
-> Calling this function locks the Clipboard until this data object is released. The data object is released in the destructor for the `COleDataObject`. For more information, see [OpenClipboard](/windows/win32/api/winuser/nf-winuser-openclipboard) and [CloseClipboard](/windows/win32/api/winuser/nf-winuser-closeclipboard) in the Win32 documention.
+> Calling this function locks the Clipboard until this data object is released. The data object is released in the destructor for the `COleDataObject`. For more information, see [OpenClipboard](/windows/win32/api/winuser/nf-winuser-openclipboard) and [CloseClipboard](/windows/win32/api/winuser/nf-winuser-closeclipboard) in the Win32 documentation.
 
 ## <a name="beginenumformats"></a> COleDataObject::BeginEnumFormats
 

@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2021"
 title: "Compiler Error C2021"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2021"
+ms.date: 11/04/2016
 f1_keywords: ["C2021"]
 helpviewer_keywords: ["C2021"]
-ms.assetid: 064f32e2-3794-48d5-9767-991003dcb36a
 ---
 # Compiler Error C2021
 
-expected exponent value, not 'character'
+> expected exponent value, not 'character'
+
+## Remarks
 
 The character used as the exponent of a floating-point constant is not a valid number. Be sure to use an exponent that is in range.
 
-## Examples
+## Example
 
-The following sample generates C2021:
+The following example generates C2021:
 
 ```cpp
 // C2021.cpp

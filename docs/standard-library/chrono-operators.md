@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: <chrono> operators"
 title: "<chrono> operators"
+description: "Learn more about: <chrono> operators"
 ms.date: 09/17/2021
 f1_keywords: ["chrono/std::operator modulo", "chrono/std::operator+", "chrono/std::chrono::day::operator+", "chrono/std::chrono::duration::operator+", "chrono/std::chrono::month::operator+", "chrono/std::chrono::time_point::operator+", "chrono/std::chrono::weekday::operator+", "chrono/std::chrono::year_month::operator+", "chrono/std::chrono::year::operator+", "chrono/std::chrono::year_month_day::operator+", "chrono/std::chrono::year_month_day_last::operator+", "chrono/std::chrono::year_month_weekday::operator+", "chrono/std::chrono::year_month_weekday_last::operator+", "chrono/std::operator!=", "chrono/std::operator*", "chrono/std::operator/", "chrono/std::operator-", "chrono/std::operator<", "chrono/std::operator<=", "chrono/std::operator<", "chrono/std::operator==", "chrono/std::operator>>", "chrono/std::operator<=>", "chrono/std::chrono::day::operator<=>", "chrono/std::chrono::month::operator<=>", "chrono/std::chrono::year::operator<=>", "chrono/std::chrono::year_month::operator<=>", "chrono/std::chrono::time_point::operator<=>", "chrono/std::chrono::time_zone_link::operator<=>", "chrono/std::chrono::time_zone_link::operator==", "chrono/std::chrono::duration::operator<=>", "chrono/std::chrono::month_day_last::operator<=>", "chrono/std::chrono::year_month_day_last::operator<=>", "chrono/std::operator==", "chrono/std::chrono::year::operator<==>", "chrono/std::chrono::day::operator==", "chrono/std::chrono::duration::operator==", "chrono/std::chrono::month::operator==", "chrono/std::chrono::month_day::operator==", "chrono/std::chrono::month_day_last::operator==", "chrono/std::chrono::month_weekday::operator==", "chrono/std::chrono::month_weekday_last::operator==", "chrono/std::chrono::time_point::operator==", "chrono/std::chrono::weekday::operator==", "chrono/std::chrono::year_month::operator==", "chrono/std::chrono::year::operator==", "chrono/std::chrono::year_month_day::operator==", "chrono/std::chrono::year_month_day_last::operator==", "chrono/std::chrono::year_month_weekday_last::operator==", "chrono/std::chrono::year_month_weekday::operator==", "chrono/std::chrono::month_weekday_last::operator==", "chrono/std::chrono::weekday::operator==", "chrono/std::chrono::weekday_last::operator==", "chrono/std::chrono::year_month_weekday_indexed::operator==", "chrono/std::chrono::year_month_weekday_last::operator==", "chrono/std::chrono::year::operator==", "chrono/std::chrono::year_month::operator==",  "chrono/std::chrono::year_month_day::operator==", "chrono/std::chrono::year_month_day_last::operator==", "chrono/std::chrono::zoned_time::operator==", "chrono/std::operator-", "chrono/std::chrono::day::operator-", "chrono/std::chrono::duration::operator-", "chrono/std::chrono::month::operator-", "chrono/std::chrono::time_point::operator-", "chrono/std::chrono::weekday::operator-", "chrono/std::chrono::year_month::operator-", "chrono/std::chrono::year::operator-", "chrono/std::chrono::year_month_day::operator-", "chrono/std::chrono::year_month_day_last::operator-", "chrono/std::chrono::year_month_weekday::operator-", "chrono/std::chrono::year_month_weekday_last::operator-", "chrono/std::chrono::day::operator<<", "chrono/std::chrono::hh_mm_ss::operator<<", "chrono/std::chrono::month_day::operator<<", "chrono/std::chrono::month_day_last::operator<<", "chrono/std::chrono::month_weekday::operator<<", "chrono/std::chrono::month_weekday_last::operator<<", "chrono/std::chrono::weekday::operator<<", "chrono/std::chrono::weekday_indexed::operator<<", "chrono/std::chrono::weekday_last::operator<<", "chrono/std::chrono::year::operator<<", "chrono/std::chrono::year_month_day::operator<<", "chrono/std::chrono::year_month_day_last::operator<<", "chrono/std::chrono::year_month_weekday::operator<<", "chrono/std::chrono::utc_time::operator<<", "chrono/std::chrono::tai_time::operator<<", "chrono/std::chrono::gps_time::operator<<", "chrono/std::chrono::local_time::operator<<", "chrono/std::chrono::file_time::operator<<", "chrono/std::chrono::sys_info::operator<<", "chrono/std::chrono::local_info::operator<<", "chrono/std::chrono::zoned_time::operator<<"]
 ---
@@ -45,60 +45,60 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
       const time_point<Clock, Duration2>& Time);
 
 4)
-constexpr day operator+(const day& d, const days& ds) noexcept; // C++ 20
-constexpr day operator+(const days& ds, const day&  d) noexcept; // C++ 20
+constexpr day operator+(const day& d, const days& ds) noexcept; // C++20
+constexpr day operator+(const days& ds, const day&  d) noexcept; // C++20
 
 5)
-constexpr month operator+(const month& m, const months& ms) noexcept; // C++ 20
-constexpr month operator+(const months& ms, const month& m) noexcept; // C++ 20
+constexpr month operator+(const month& m, const months& ms) noexcept; // C++20
+constexpr month operator+(const months& ms, const month& m) noexcept; // C++20
 
 6)
-constexpr weekday operator+(const weekday& wd, const days& wds) noexcept // C++ 20
-constexpr weekday operator+(const days& ds, const weekday& wd) noexcept; // C++ 20
+constexpr weekday operator+(const weekday& wd, const days& wds) noexcept // C++20
+constexpr weekday operator+(const days& ds, const weekday& wd) noexcept; // C++20
 
 7)
-constexpr year operator+(const year& y, const years& ys) noexcept; // C++ 20
-constexpr year operator+(const years& ys, const year& y) noexcept; // C++ 20
+constexpr year operator+(const year& y, const years& ys) noexcept; // C++20
+constexpr year operator+(const years& ys, const year& y) noexcept; // C++20
 
 8)
-constexpr year_month operator+(const year_month& ym, const months& dm) noexcept; // C++ 20
-constexpr year_month operator+(const months& dm, const year_month& ym) noexcept; // C++ 20
-constexpr year_month operator+(const year_month& ym, const years& dy) noexcept; // C++ 20
-constexpr year_month operator+(const years& dy, const year_month& ym) noexcept; // C++ 20
+constexpr year_month operator+(const year_month& ym, const months& dm) noexcept; // C++20
+constexpr year_month operator+(const months& dm, const year_month& ym) noexcept; // C++20
+constexpr year_month operator+(const year_month& ym, const years& dy) noexcept; // C++20
+constexpr year_month operator+(const years& dy, const year_month& ym) noexcept; // C++20
 
 9)
-constexpr year_month_day operator+(const year_month_day& ymd, const months& dm) noexcept; // C++ 20
-constexpr year_month_day operator+(const months& dm, const year_month_day& ymd) noexcept; // C++ 20
-constexpr year_month_day operator+(const year_month_day& ymd, const years& dy) noexcept; // C++ 20
-constexpr year_month_day operator+(const years& dy, const year_month_day& ymd) noexcept; // C++ 20
+constexpr year_month_day operator+(const year_month_day& ymd, const months& dm) noexcept; // C++20
+constexpr year_month_day operator+(const months& dm, const year_month_day& ymd) noexcept; // C++20
+constexpr year_month_day operator+(const year_month_day& ymd, const years& dy) noexcept; // C++20
+constexpr year_month_day operator+(const years& dy, const year_month_day& ymd) noexcept; // C++20
 
 10)
-constexpr year_month_day_last operator+(const year_month_day_last& ymdl, const months& dm) noexcept; // C++ 20
+constexpr year_month_day_last operator+(const year_month_day_last& ymdl, const months& dm) noexcept; // C++20
 
 11)
-constexpr year_month_day_last operator+(const months& dm, const year_month_day_last& ymdl) noexcept; // C++ 20
+constexpr year_month_day_last operator+(const months& dm, const year_month_day_last& ymdl) noexcept; // C++20
 
 12)
-constexpr year_month_day_last operator+(const year_month_day_last& ymdl, const years& dy) noexcept; // C++ 20
-constexpr year_month_day_last operator+(const years& dy, const year_month_day_last& ymdl) noexcept; // C++ 20
+constexpr year_month_day_last operator+(const year_month_day_last& ymdl, const years& dy) noexcept; // C++20
+constexpr year_month_day_last operator+(const years& dy, const year_month_day_last& ymdl) noexcept; // C++20
 
 13)
-constexpr year_month_weekday operator+(const year_month_weekday& ymwd, const months& dm) noexcept; // C++ 20
-constexpr year_month_weekday operator+(const months& dm, const year_month_weekday& ymwd) noexcept; // C++ 20
+constexpr year_month_weekday operator+(const year_month_weekday& ymwd, const months& dm) noexcept; // C++20
+constexpr year_month_weekday operator+(const months& dm, const year_month_weekday& ymwd) noexcept; // C++20
 
 14)
-constexpr year_month_weekday operator+(const year_month_weekday& ymwd, const years& dy) noexcept; // C++ 20
+constexpr year_month_weekday operator+(const year_month_weekday& ymwd, const years& dy) noexcept; // C++20
 
 15)
-constexpr year_month_weekday operator+(const years& dy, const year_month_weekday& ymwd) noexcept; // C++ 20
+constexpr year_month_weekday operator+(const years& dy, const year_month_weekday& ymwd) noexcept; // C++20
 
 16)
-constexpr year_month_weekday_last operator+(const year_month_weekday_last& ymwdl, const months& dm) noexcept; // C++ 20
-constexpr year_month_weekday_last operator+(const months& dm, const year_month_weekday_last& ymwdl) noexcept; // C++ 20
+constexpr year_month_weekday_last operator+(const year_month_weekday_last& ymwdl, const months& dm) noexcept; // C++20
+constexpr year_month_weekday_last operator+(const months& dm, const year_month_weekday_last& ymwdl) noexcept; // C++20
 
 17)
-constexpr year_month_weekday_last operator+(const year_month_weekday_last& ymwdl, const years& dy) noexcept; // C++ 20
-constexpr year_month_weekday_last operator+(const years& dy, const year_month_weekday_last& ymwdl) noexcept; // C++ 20
+constexpr year_month_weekday_last operator+(const year_month_weekday_last& ymwdl, const years& dy) noexcept; // C++20
+constexpr year_month_weekday_last operator+(const years& dy, const year_month_weekday_last& ymwdl) noexcept; // C++20
 ```
 
 ### Return value
@@ -193,7 +193,7 @@ Apply unary plus to the following types:
 
 ```cpp
 // duration
-constexpr common_type_t<duration> operator+() const // C++ 20
+constexpr common_type_t<duration> operator+() const // C++20
 ```
 
 ### Return value
@@ -236,53 +236,53 @@ constexpr typename common_type<Duration1, Duration2>::type
        const time_point<Clock, Duration1>& Left,
        const time_point<Clock, Duration2>& Right);
 4)
-constexpr day operator-(const day& d,  days& ds) noexcept; // C++ 20
-constexpr day operator-(const day& d, const day& d) noexcept; // C++ 20
+constexpr day operator-(const day& d,  days& ds) noexcept; // C++20
+constexpr day operator-(const day& d, const day& d) noexcept; // C++20
 
 5)
-constexpr month operator-(const month& m, const months& ms) noexcept; // C++ 20
-constexpr month operator-(const month& m, const month& ms) noexcept; // C++ 20
+constexpr month operator-(const month& m, const months& ms) noexcept; // C++20
+constexpr month operator-(const month& m, const month& ms) noexcept; // C++20
 
 6)
-constexpr months operator-(const year_month& Left, const year_month& Right) noexcept; // C++ 20
+constexpr months operator-(const year_month& Left, const year_month& Right) noexcept; // C++20
 
 7)
-constexpr weekday operator-(const weekday& Left, const days& Right) noexcept; // C++ 20
+constexpr weekday operator-(const weekday& Left, const days& Right) noexcept; // C++20
 
 8)
-constexpr days operator-(const weekday& Left, const weekday& Right) noexcept; // C++ 20
+constexpr days operator-(const weekday& Left, const weekday& Right) noexcept; // C++20
 
 9)
-constexpr year operator-(const year& y, const years& ys) noexcept; // C++ 20
+constexpr year operator-(const year& y, const years& ys) noexcept; // C++20
 
 10)
-constexpr years operator-(const year& y, const year& y2) noexcept; // C++ 20
+constexpr years operator-(const year& y, const year& y2) noexcept; // C++20
 
 11)
-constexpr year_month operator-(const year_month& ym, const months& dm) noexcept; // C++ 20
-constexpr year_month operator-(const year_month& ym, const years& dy) noexcept; // C++ 20
+constexpr year_month operator-(const year_month& ym, const months& dm) noexcept; // C++20
+constexpr year_month operator-(const year_month& ym, const years& dy) noexcept; // C++20
 
 12)
-constexpr year_month_day operator-(const year_month_day& ymd, const months& dm) noexcept; // C++ 20
-constexpr year_month_day operator-(const year_month_day& ymd, const years& dy) noexcept; // C++ 20
+constexpr year_month_day operator-(const year_month_day& ymd, const months& dm) noexcept; // C++20
+constexpr year_month_day operator-(const year_month_day& ymd, const years& dy) noexcept; // C++20
 
 13)
-constexpr year_month_day_last operator-(const year_month_day_last& ymdl, const months& dm) noexcept;  // C++ 20
+constexpr year_month_day_last operator-(const year_month_day_last& ymdl, const months& dm) noexcept;  // C++20
 
 14)
-constexpr year_month_day_last operator-(const year_month_day_last& ymdl, const years& dy) noexcept;  // C++ 20
+constexpr year_month_day_last operator-(const year_month_day_last& ymdl, const years& dy) noexcept;  // C++20
 
 15)
-constexpr year_month_weekday operator-(const year_month_weekday& ymwd, const months& dm) noexcept; // C++ 20
+constexpr year_month_weekday operator-(const year_month_weekday& ymwd, const months& dm) noexcept; // C++20
 
 16)
-constexpr year_month_weekday operator-(const year_month_weekday& ymwd, const years& dy) noexcept; // C++ 20
+constexpr year_month_weekday operator-(const year_month_weekday& ymwd, const years& dy) noexcept; // C++20
 
 17)
-constexpr year_month_weekday_last operator-(const year_month_weekday_last& ymwdl, const months& dm) noexcept; // C++ 20
+constexpr year_month_weekday_last operator-(const year_month_weekday_last& ymwdl, const months& dm) noexcept; // C++20
 
 18)
-constexpr year_month_weekday_last operator-(const year_month_weekday_last& ymwdl, const years& dy) noexcept; // C++ 20
+constexpr year_month_weekday_last operator-(const year_month_weekday_last& ymwdl, const years& dy) noexcept; // C++20
 ```
 
 ### Return value
@@ -431,7 +431,7 @@ int main()
 Determines whether:
 
 1\) Two [`duration`](duration-class.md) objects don't represent the same number of ticks.\
-2\) Two [`time_point`](time-point-class.md) objects don't represent the same point in time.\
+2\) Two [`time_point`](time-point-class.md) objects don't represent the same point in time.
 
 ```cpp
 1)
@@ -458,7 +458,7 @@ The right `duration` or `time_point` object.
 ### Return value
 
 1\) Returns **`true`** if the number of ticks for the type common to *`Left`* and *`Right`* aren't equal. Otherwise, returns **`false`**.\
-2\) Returns **`true`**  if the two [`time_point`](time-point-class.md) objects don't represent the same point in time. Otherwise, returns **`false`**.\
+2\) Returns **`true`**  if the two [`time_point`](time-point-class.md) objects don't represent the same point in time. Otherwise, returns **`false`**.
 
 ## <a name="op_star"></a> `operator*`
 
@@ -603,56 +603,56 @@ constexpr bool operator==(
     const time_point<Clock, Duration2>& Right);
 
 // 3) day
-constexpr bool operator==(const day& Left, const day& Right) noexcept; // C++ 20
+constexpr bool operator==(const day& Left, const day& Right) noexcept; // C++20
 
 // 4) month
-constexpr bool operator==(const month& Left, const month& Right) noexcept; // C++ 20
+constexpr bool operator==(const month& Left, const month& Right) noexcept; // C++20
 
 // 5) month_day
-constexpr bool operator==(const month_day& Left, const month_day& Right) noexcept; // C++ 20
+constexpr bool operator==(const month_day& Left, const month_day& Right) noexcept; // C++20
 
 // 6) month_day_last
-constexpr bool operator==(const month_day_last& Left, const month_day_last& Right) noexcept; // C++ 20
+constexpr bool operator==(const month_day_last& Left, const month_day_last& Right) noexcept; // C++20
 
 // 7) month_weekday
-constexpr bool operator==(const month_weekday& Left, const month_weekday& Right) noexcept; // C++ 20
+constexpr bool operator==(const month_weekday& Left, const month_weekday& Right) noexcept; // C++20
 
 // 8) month_weekday_last
-constexpr bool operator==(const month_weekday_last& Left, const month_weekday_last& Right) noexcept; // C++ 20
+constexpr bool operator==(const month_weekday_last& Left, const month_weekday_last& Right) noexcept; // C++20
 
 // 9) weekday
-constexpr bool operator==(const weekday& Left, const weekday& Right) noexcept; // C++ 20
+constexpr bool operator==(const weekday& Left, const weekday& Right) noexcept; // C++20
 
 // 10) weekday_last
-constexpr bool operator==(const weekday_last& Left, const weekday_last& Right) noexcept; // C++ 20
+constexpr bool operator==(const weekday_last& Left, const weekday_last& Right) noexcept; // C++20
 
 // 11) weekday_indexed
-constexpr bool operator==(const weekday_indexed& x, const weekday_indexed& y) noexcept; // C++ 20
+constexpr bool operator==(const weekday_indexed& x, const weekday_indexed& y) noexcept; // C++20
 
 // 12) year
-constexpr bool operator==(const year& Left, const year& y ) noexcept; // C++ 20
+constexpr bool operator==(const year& Left, const year& y ) noexcept; // C++20
 
 // 13) year_month
-constexpr bool operator==(const year_month& Left, const year_month& Right) noexcept; // C++ 20
+constexpr bool operator==(const year_month& Left, const year_month& Right) noexcept; // C++20
 
 // 14) year_month_day
-constexpr bool operator==(const year_month_day& Left, const year_month_day& Right) noexcept; // C++ 20
+constexpr bool operator==(const year_month_day& Left, const year_month_day& Right) noexcept; // C++20
 
 // 15) year_month_day_last
-constexpr bool operator==(const year_month_day_last& Left, const year_month_day_last& Right) noexcept; // C++ 20
+constexpr bool operator==(const year_month_day_last& Left, const year_month_day_last& Right) noexcept; // C++20
 
 // 16) year_month_weekday
-constexpr bool operator==(const year_month_weekday& Left, const year_month_weekday& Right) noexcept; // C++ 20
+constexpr bool operator==(const year_month_weekday& Left, const year_month_weekday& Right) noexcept; // C++20
 
 // 17)  year_month_weekday_last
-constexpr bool operator==(const year_month_weekday_last& Left, const year_month_weekday_last& Right) noexcept; // C++ 20
+constexpr bool operator==(const year_month_weekday_last& Left, const year_month_weekday_last& Right) noexcept; // C++20
 
 // 18) time_zone_link
-bool operator==(const time_zone_link& Left, const time_zone_link& Right) noexcept;
+bool operator==(const time_zone_link& Left, const time_zone_link& Right) noexcept; // C++20
 
 // 19) zoned_time
 template <class Duration1, class Duration2, class TimeZonePtr>
-bool operator==(const zoned_time<Duration1, TimeZonePtr>& Left, const zoned_time<Duration2, TimeZonePtr>& Right); // C++ 20
+bool operator==(const zoned_time<Duration1, TimeZonePtr>& Left, const zoned_time<Duration2, TimeZonePtr>& Right); // C++20
 ```
 
 ### Parameters
@@ -668,7 +668,7 @@ The right object to compare.
 1\) Returns **`true`** if the number of ticks for the type common to *`Left`* and *`Right`* are equal. Otherwise, returns **`false`**.\
 2\) Returns **`true`** if *`Left`* and *`Right`* represent the same point in time. Otherwise, returns **`false`**.\
 3-17\) Returns **`true`** if *`Left`* and *`Right`* have the same value. Otherwise, returns **`false`**.\
-18\) Returns **`true`** if `Left.name() == Right.name()`. Otherwise, returns `*false*`.\
+18\) Returns **`true`** if `Left.name() == Right.name()`. Otherwise, returns **`false`**.\
 19\) Returns **`true`** if `Left.get_time_zone() == _Right.get_time_zone() && Left.get_sys_time() == Right.get_sys_time();`
 
 ## <a name="op_gt"></a> `operator>`
@@ -756,18 +756,18 @@ The spaceship operator, with `operator==`, synthesizes operators for `<`, `<=`, 
 
 ```cpp
 1)
-constexpr bool operator<=>(const day& Left, const day& Right) noexcept; // C++ 20
+constexpr bool operator<=>(const day& Left, const day& Right) noexcept; // C++20
 
-constexpr std::strong_ordering operator<=>(const month& Left, const month& Right) noexcept; // C++ 20
+constexpr std::strong_ordering operator<=>(const month& Left, const month& Right) noexcept; // C++20
 
-constexpr strong_ordering operator<=>(const month_day& Left, const month_day& Right) noexcept; // C++ 20
+constexpr strong_ordering operator<=>(const month_day& Left, const month_day& Right) noexcept; // C++20
 
-constexpr std::strong_ordering operator<=>(const year& Left, const year& Right ) noexcept; // C++ 20
+constexpr std::strong_ordering operator<=>(const year& Left, const year& Right ) noexcept; // C++20
 
-constexpr strong_ordering operator<=>(const year_month& Left, const year_month& Right) noexcept; // C++ 20
+constexpr strong_ordering operator<=>(const year_month& Left, const year_month& Right) noexcept; // C++20
 
 template<class Clock, class Duration1, three_­way_­comparable_­with<Duration1> Duration2>
-    constexpr auto operator<=>(const time_point<Clock, Duration1>& Left, const time_point<Clock, Duration2>& Right); // C++ 20
+    constexpr auto operator<=>(const time_point<Clock, Duration1>& Left, const time_point<Clock, Duration2>& Right); // C++20
 
 template<class Rep1, class Period1, class Rep2, class Period2>
   requires three_­way_­comparable<typename CT::rep>
@@ -883,102 +883,102 @@ Output the following types to a stream:
 // 1) day
 template <class CharT, class Traits>
 std::basic_ostream<CharT, Traits>&
-operator<<(std::basic_ostream<CharT, Traits>& os, const day& d); // C++ 20
+operator<<(std::basic_ostream<CharT, Traits>& os, const day& d); // C++20
 
 // 2) hh_mm_ss
 template<class CharT, class traits, class Duration>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const hh_mm_ss<Duration>& hms); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const hh_mm_ss<Duration>& hms); // C++20
 
 // 3) month
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const month& m); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const month& m); // C++20
 
 // 4) month_day
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const month_day& md); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const month_day& md); // C++20
 
 // 5) month_day_last
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const month_day_last& mdl); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const month_day_last& mdl); // C++20
 
 // 6) month_weekday
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const month_weekday& mwd); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const month_weekday& mwd); // C++20
 
 // 7) month_weekday_last
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const month_weekday_last& mwdl); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const month_weekday_last& mwdl); // C++20
 
 // 8) weekday
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const weekday& wd); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const weekday& wd); // C++20
 
 // 9) weekday_indexed
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const weekday_indexed& wdi); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const weekday_indexed& wdi); // C++20
 
 // 10) weekday_last
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const weekday_last& wdl); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const weekday_last& wdl); // C++20
 
 // 11) year
 template <class CharT, class Traits>
 std::basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const year& y); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const year& y); // C++20
 
 // 12) year_month
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const year_month& ym); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const year_month& ym); // C++20
 
 // 13) year_month_day
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const year_month_day& ymd); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const year_month_day& ymd); // C++20
 
 // 14) year_month_day_last
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const year_month_day_last& ymdl); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const year_month_day_last& ymdl); // C++20
 
 // 15) year_month_weekday
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday& ymwd); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday& ymwd); // C++20
 
 // 16) year_month_weekday_last
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday_last& ymwdl); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday_last& ymwdl); // C++20
 
 // 17) tai_time
 template<class CharT, class Traits, class Duration>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const tai_time<Duration>& t); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const tai_time<Duration>& t); // C++20
 
 // 18) utc_time
 template<class CharT, class Traits, class Duration>
 basic_ostream<CharT, traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const utc_time<Duration>& t); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const utc_time<Duration>& t); // C++20
 
 // 19) gps_time
 template<class CharT, class Traits, class Duration>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const gps_time<Duration>& t); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const gps_time<Duration>& t); // C++20
 
 // 20) local_time
 template<class CharT, class Traits, class Duration>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const local_time<Duration>& t); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const local_time<Duration>& t); // C++20
 
 // 21) sys_info
 template<class CharT, class Traits>
@@ -1257,179 +1257,179 @@ Integers can be used as long as the interpretation isn't ambiguous.
 
 // 1
 constexpr year_month
-operator/(const year& y, const month& m) noexcept; // C++ 20
+operator/(const year& y, const month& m) noexcept; // C++20
 
 // 2
 constexpr year_month
-operator/(const year& y, int m) noexcept; // C++ 20
+operator/(const year& y, int m) noexcept; // C++20
  
 /////////  returns month_day
 
 // 3
 constexpr month_day
-operator/(const month& m, const day& d) noexcept; // C++ 20
+operator/(const month& m, const day& d) noexcept; // C++20
 
 // 4
 constexpr month_day
-operator/(const month& m, int d) noexcept; // C++ 20
+operator/(const month& m, int d) noexcept; // C++20
 
 // 5
 constexpr month_day
-operator/(int m, const day& d) noexcept; // C++ 20
+operator/(int m, const day& d) noexcept; // C++20
 
 // 6
 constexpr month_day
-operator/(const day& d, const month& m) noexcept; // C++ 20
+operator/(const day& d, const month& m) noexcept; // C++20
 
 // 7
 constexpr month_day
-operator/(const day& d, int m) noexcept; // C++ 20
+operator/(const day& d, int m) noexcept; // C++20
 
 /////////  returns month_day_last
 
 // 8
 constexpr month_day_last
-operator/(const month& m, last_spec) noexcept; // C++ 20
+operator/(const month& m, last_spec) noexcept; // C++20
 
 // 9
 constexpr month_day_last
-operator/(int m, last_spec) noexcept; // C++ 20
+operator/(int m, last_spec) noexcept; // C++20
 
 // 10
 constexpr month_day_last
-operator/(last_spec, const month& m) noexcept; // C++ 20
+operator/(last_spec, const month& m) noexcept; // C++20
 
 // 11
 constexpr month_day_last
-operator/(last_spec, int m) noexcept; // C++ 20
+operator/(last_spec, int m) noexcept; // C++20
 
 /////////  returns month_weekday
 
 // 12
 constexpr month_weekday
-operator/(const month& m, const weekday_indexed& wdi) noexcept; // C++ 20
+operator/(const month& m, const weekday_indexed& wdi) noexcept; // C++20
 
 // 13
 constexpr month_weekday
-operator/(int m, const weekday_indexed& wdi) noexcept; // C++ 20
+operator/(int m, const weekday_indexed& wdi) noexcept; // C++20
 
 // 14
 constexpr month_weekday
-operator/(const weekday_indexed& wdi, const month& m) noexcept; // C++ 20
+operator/(const weekday_indexed& wdi, const month& m) noexcept; // C++20
 
 // 15
 constexpr month_weekday
-operator/(const weekday_indexed& wdi, int m) noexcept; // C++ 20
+operator/(const weekday_indexed& wdi, int m) noexcept; // C++20
 
 /////////  returns month_weekday_last
 
 // 16
 constexpr month_weekday_last
-operator/(const month& m, const weekday_last& wdl) noexcept; // C++ 20
+operator/(const month& m, const weekday_last& wdl) noexcept; // C++20
 
 // 17
 constexpr month_weekday_last
-operator/(int m, const weekday_last& wdl) noexcept; // C++ 20
+operator/(int m, const weekday_last& wdl) noexcept; // C++20
 
 // 18
 constexpr month_weekday_last
-operator/(const weekday_last& wdl, const month& m) noexcept; // C++ 20
+operator/(const weekday_last& wdl, const month& m) noexcept; // C++20
 
 // 19
 constexpr month_weekday_last
-operator/(const weekday_last& wdl, int m) noexcept; // C++ 20
+operator/(const weekday_last& wdl, int m) noexcept; // C++20
 
 /////////  returns year_month_day
 
 // 20
 constexpr year_month_day
-operator/(const year_month& ym, const day& d) noexcept; // C++ 20
+operator/(const year_month& ym, const day& d) noexcept; // C++20
 
 // 21
 constexpr year_month_day
-operator/(const year_month& ym, int d) noexcept; // C++ 20
+operator/(const year_month& ym, int d) noexcept; // C++20
 
 // 22
 constexpr year_month_day
-operator/(const year& y, const month_day& md) noexcept; // C++ 20
+operator/(const year& y, const month_day& md) noexcept; // C++20
 
 // 23
 constexpr year_month_day
-operator/(int y, const month_day& md) noexcept; // C++ 20
+operator/(int y, const month_day& md) noexcept; // C++20
 
 // 24
 constexpr year_month_day
-operator/(const month_day& md, const year& y) noexcept; // C++ 20
+operator/(const month_day& md, const year& y) noexcept; // C++20
 
 // 25
 constexpr year_month_day
-operator/(const month_day& md, int y) noexcept; // C++ 20
+operator/(const month_day& md, int y) noexcept; // C++20
 
 /////////  returns year_month_day_last
 
 // 26
 constexpr year_month_day_last
-operator/(const year_month& ym, last_spec) noexcept; // C++ 20
+operator/(const year_month& ym, last_spec) noexcept; // C++20
 
 // 27
 constexpr year_month_day_last
-operator/(const year& y, const month_day_last& mdl) noexcept; // C++ 20
+operator/(const year& y, const month_day_last& mdl) noexcept; // C++20
 
 // 28
 constexpr year_month_day_last
-operator/(int y, const month_day_last& mdl) noexcept; // C++ 20
+operator/(int y, const month_day_last& mdl) noexcept; // C++20
 
 // 29
 constexpr year_month_day_last
-operator/(const month_day_last& mdl, const year& y) noexcept; // C++ 20
+operator/(const month_day_last& mdl, const year& y) noexcept; // C++20
 
 // 30
 constexpr year_month_day_last
-operator/(const month_day_last& mdl, int y) noexcept; // C++ 20
+operator/(const month_day_last& mdl, int y) noexcept; // C++20
 
 /////////  returns year_month_weekday
 
 // 31
 constexpr year_month_weekday
-operator/(const year_month& ym, const weekday_indexed& wdi) noexcept; // C++ 20
+operator/(const year_month& ym, const weekday_indexed& wdi) noexcept; // C++20
 
 // 32
 constexpr year_month_weekday
-operator/(const year& y, const month_weekday& mwd) noexcept; // C++ 20
+operator/(const year& y, const month_weekday& mwd) noexcept; // C++20
 
 // 33
 constexpr year_month_weekday
-operator/(int y, const month_weekday& mwd) noexcept; // C++ 20
+operator/(int y, const month_weekday& mwd) noexcept; // C++20
 
 // 34
 constexpr year_month_weekday
-operator/(const month_weekday& mwd, const year& y) noexcept; // C++ 20
+operator/(const month_weekday& mwd, const year& y) noexcept; // C++20
 
 // 35
 constexpr year_month_weekday
-operator/(const month_weekday& mwd, int y) noexcept; // C++ 20
+operator/(const month_weekday& mwd, int y) noexcept; // C++20
 
 /////////  returns year_month_weekday_last
 
 // 36
 constexpr year_month_weekday_last
-operator/(const year_month& ym, const weekday_last& wdl) noexcept; // C++ 20
+operator/(const year_month& ym, const weekday_last& wdl) noexcept; // C++20
 
 // 37
 constexpr year_month_weekday_last
-operator/(const year& y, const month_weekday_last& mwdl) noexcept; // C++ 20
+operator/(const year& y, const month_weekday_last& mwdl) noexcept; // C++20
 
 // 38
 constexpr year_month_weekday_last
-operator/(int y, const month_weekday_last& mwdl) noexcept; // C++ 20
+operator/(int y, const month_weekday_last& mwdl) noexcept; // C++20
 
 // 39
 constexpr year_month_weekday_last
-operator/(const month_weekday_last& mwdl, const year& y) noexcept; // C++ 20
+operator/(const month_weekday_last& mwdl, const year& y) noexcept; // C++20
 
 // 40
 constexpr year_month_weekday_last
-operator/(const month_weekday_last& mwdl, int y) noexcept; // C++ 20
+operator/(const month_weekday_last& mwdl, int y) noexcept; // C++20
 ```
 
 ### Parameters
@@ -1504,9 +1504,9 @@ The year and month.
 33\) `year_month_weekday(year(y), mwd.month(), mwd.weekday_indexed())`\
 34\) `year_month_weekday(y, mwd.month(), mwd.weekday_indexed())`\
 35\) `year_month_weekday(year(y), mwd.month(), mwd.weekday_indexed())`\
-36) `year_month_weekday_last(ym.year(), ym.month(), wdl)`\
+36\) `year_month_weekday_last(ym.year(), ym.month(), wdl)`\
 37\) `year_month_weekday_last(y, mwdl.month(), mwdl.weekday_last())`\
-38) `year_month_weekday_last(year(y), mwdl.month(), mwdl.weekday_last())`\
+38\) `year_month_weekday_last(year(y), mwdl.month(), mwdl.weekday_last())`\
 39\) `year_month_weekday_last(y, mwdl.month(), mwdl.weekday_last())`\
 40\) `year_month_weekday_last(year(y), mwdl.month(), mwdl.weekday_last())`
 

@@ -1,10 +1,9 @@
 ---
 description: "Learn more about: /DEF (Specify module-definition file)"
 title: "/DEF (Specify module-definition file)"
-ms.date: 09/09/2022
+ms.date: 03/27/2025
 f1_keywords: ["VC.Project.VCLinkerTool.ModuleDefinitionFile", "/def"]
 helpviewer_keywords: ["module definition files, specifying", "DEF linker option", "-DEF linker option", "module definition files", "/DEF linker option"]
-ms.assetid: 6497fa68-65f0-48ca-8f66-b87166fc631a
 ---
 # `/DEF` (Specify module-definition file)
 
@@ -17,7 +16,7 @@ Specifies a module-definition file to the linker.
 ## Arguments
 
 *`filename`*\
-The name of a module-definition file (*`.def`*) to be passed to the linker.
+The name of a module-definition file (*`.def`*) to be passed to the linker. When expanded, the fully qualified filename must not exceed `MAX_PATH` (260 characters).
 
 ## Remarks
 
@@ -28,9 +27,7 @@ To specify a *`.def`* file from within the development environment, add it to th
 ### To set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
-
 1. Select the **Configuration Properties** > **Linker** > **Input** property page.
-
 1. Modify the **Module Definition File** property. Choose **OK** or **Apply** to save your changes.
 
 ### To set this linker option programmatically

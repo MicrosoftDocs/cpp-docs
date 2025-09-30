@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: thread Class"
 title: "thread Class"
-ms.date: 06/20/2022
+ms.date: 09/11/2024
 f1_keywords: ["thread/std::thread", "thread/std::thread::id Class", "thread/std::thread::thread", "thread/std::thread::detach", "thread/std::thread::get_id", "thread/std::thread::hardware_concurrency", "thread/std::thread::join", "thread/std::thread::joinable", "thread/std::thread::native_handle", "thread/std::thread::swap"]
 helpviewer_keywords: ["std::thread [C++]", "std::thread [C++], thread", "std::thread [C++], detach", "std::thread [C++], get_id", "std::thread [C++], hardware_concurrency", "std::thread [C++], join", "std::thread [C++], joinable", "std::thread [C++], native_handle", "std::thread [C++], swap"]
 ms.custom: devdivchpfy22
@@ -73,9 +73,9 @@ void detach();
 
 After a call to `detach`, subsequent calls to [`get_id`](#get_id) return [`id`](#id_class).
 
-If the thread that's associated with the calling object isn't joinable, the function throws a [`system_error`](../standard-library/system-error-class.md) that has an error code of `invalid_argument`.
+If the thread associated with the calling object isn't joinable, the function throws a [`system_error`](../standard-library/system-error-class.md) that has an error code of `invalid_argument`.
 
-If the thread that's associated with the calling object is invalid, the function throws a `system_error` that has an error code of `no_such_process`.
+If the thread associated with the calling object is invalid, the function throws a `system_error` that has an error code of `no_such_process`.
 
 ## <a name="get_id"></a> `get_id`
 
@@ -85,9 +85,9 @@ Returns a unique identifier for the associated thread.
 id get_id() const noexcept;
 ```
 
-### Return Value
+### Return value
 
-A [`id`](#id_class) object that uniquely identifies the associated thread, or `id()` if no thread is associated with the object.
+An [`id`](#id_class) object that uniquely identifies the associated thread, or `id()` if no thread is associated with the object.
 
 ## <a name="hardware_concurrency"></a> `hardware_concurrency`
 
@@ -97,15 +97,17 @@ Static method that returns an estimate of the number of hardware thread contexts
 static unsigned int hardware_concurrency() noexcept;
 ```
 
-### Return Value
+### Return value
 
 An estimate of the number of hardware thread contexts. If the value can't be computed or isn't well defined, this method returns 0.
 
-### Microsoft Specific
+**Microsoft specific**
 
-`hardware_concurrency` is currently defined to return the number of logical processors, which corresponds to the number of hardware threads that can execute simultaneously. It takes into account the number of physical processors, the number of cores in each physical processor, and simultaneous multithreading on each single core.
- 
-However, on systems with more than 64 logical processors this number is capped by the number of logical processors in a single group; see [Processor Groups](/windows/win32/procthread/processor-groups).
+`hardware_concurrency` returns the number of logical processors, which corresponds to the number of hardware threads that can execute simultaneously. It takes into account the number of physical processors, the number of cores in each physical processor, and simultaneous multithreading on each single core.
+
+Before Windows 11 and Windows Server 2022, applications were limited by default to a single processor group, having at most 64 logical processors. This limited the number of concurrently executing threads to 64. For more information, see [Processor Groups](/windows/win32/procthread/processor-groups).
+
+Starting with Windows 11 and Windows Server 2022, processes and their threads have processor affinities that by default span all processors in the system and across multiple groups on machines with more than 64 processors. The limit on the number of concurrent threads is now the total number of logical processors in the system.
 
 ## <a name="id_class"></a> `id` class
 
@@ -125,7 +127,7 @@ All default-constructed `thread::id` objects compare equal.
 
 ## <a name="join"></a> `join`
 
-Blocks until the thread of execution that's associated with the calling object completes.
+Blocks until the thread of execution associated with the calling object completes.
 
 ```cpp
 void join();
@@ -143,7 +145,7 @@ Specifies whether the associated thread is joinable.
 bool joinable() const noexcept;
 ```
 
-### Return Value
+### Return value
 
 **`true`** if the associated thread is joinable; otherwise, **`false`**.
 
@@ -159,9 +161,9 @@ Returns the implementation-specific type that represents the thread handle. The 
 native_handle_type native_handle();
 ```
 
-### Return Value
+### Return value
 
-`native_handle_type` is defined as a Win32 `HANDLE` that's cast as `void *`.
+`native_handle_type` is defined as a Win32 `HANDLE` cast as `void *`.
 
 ## <a name="op_eq"></a> `thread::operator=`
 
@@ -176,7 +178,7 @@ thread& operator=(thread&& Other) noexcept;
 *`Other`*\
 A `thread` object.
 
-### Return Value
+### Return value
 
 `*this`
 
@@ -214,7 +216,7 @@ thread(thread&& Other) noexcept;
 ### Parameters
 
 *`F`*\
-An application-defined function to be executed by the thread.
+An application-defined function to execute on the thread.
 
 *`A`*\
 A list of arguments to be passed to *`F`*.
@@ -224,9 +226,9 @@ An existing `thread` object.
 
 ### Remarks
 
-The first constructor constructs an object that's not associated with a thread of execution. The value that's returned by a call to `get_id` for the constructed object is `thread::id()`.
+The first constructor constructs an object that's not associated with a thread of execution. The value returned by `get_id` for the constructed object is `thread::id()`.
 
-The second constructor constructs an object that's associated with a new thread of execution and executes the pseudo-function `INVOKE` that's defined in [`<functional>`](../standard-library/functional.md). If not enough resources are available to start a new thread, the function throws a [`system_error`](../standard-library/system-error-class.md) object that has an error code of `resource_unavailable_try_again`. If the call to *`F`* terminates with an uncaught exception, [`terminate`](../standard-library/exception-functions.md#terminate) is called.
+The second constructor constructs an object that's associated with a new thread of execution. It executes the pseudo-function `INVOKE` defined in [`<functional>`](../standard-library/functional.md). If not enough resources are available to start a new thread, the function throws a [`system_error`](../standard-library/system-error-class.md) object that has an error code of `resource_unavailable_try_again`. If the call to *`F`* terminates with an uncaught exception, [`terminate`](../standard-library/exception-functions.md#terminate) is called. The call to *`F`* must not cause the thread to exit prematurely, such as by calling `ExitThread` or `_endthreadex`.
 
 The third constructor constructs an object that's associated with the thread that's associated with `Other`. `Other` is then set to a default-constructed state.
 

@@ -18,7 +18,7 @@ To create the file, right-click on an executable file in **Solution Explorer** a
 | `buildConfigurations` | array | A key-value pair that specifies the name of the build mode to apply the configurations. For example, `Debug` or `Release` and the configurations to use according to the selected build mode. |
 | `currentDir` | string | Specifies the full directory path to the Build Target. The directory is detected automatically unless this parameter is set. |
 | `cwd` | string | Full path to the directory on the remote system where the program will run. Defaults to `"${debugInfo.defaultWorkingDirectory}"` |
-| `debugType` | string | Specifies the debugging mode according to the type of code (native, managed, or mixed). The mode is automatically detected unless this parameter is set. Allowed values: `"native"`", `"managed"`, `"mixed"`. |
+| `debugType` | string | Specifies the debugging mode according to the type of code (native, managed, or mixed). The mode is automatically detected unless this parameter is set. Allowed values: `"native"`, `"managed"`, `"mixed"`. |
 | `env` | array | Specifies a key-value list of custom environment variables. For example: `env:{"myEnv":"myVal"}`. |
 | `inheritEnvironments` | array | Specifies a set of environment variables inherited from multiple sources. You can define some variables in files like *`CMakeSettings.json`* or *`CppProperties.json`* and make them available to debug context.  **Visual Studio 16.4:** Specify environment variables on a per-target basis using the `env.VARIABLE_NAME` syntax. To unset a variable, set it to `"null"`. |
 | `name` | string | Specifies the name of the entry in the **Startup Item** dropdown. |
@@ -55,7 +55,7 @@ To create the file, right-click on an executable file in **Solution Explorer** a
 | `debugServerArgs` | string | Optional debug server args. Defaults to null. |
 | `filterStderr` | boolean | Search stderr stream for server-started pattern and log stderr to debug output. Defaults to **`false`**. |
 | `coreDumpPath` | string | Optional full path to a core dump file for the specified program. Defaults to null. |
-| externalConsole | boolean | If true, a console is launched for the debuggee. If **`false`**, no console is launched. The default for this setting is **`false`**. This option is ignored in some cases for technical reasons. |
+| `externalConsole` | boolean | If true, a console is launched for the debuggee. If **`false`**, no console is launched. The default for this setting is **`false`**. This option is ignored in some cases for technical reasons. |
 | `pipeTransport` | string | When present, this value tells the debugger to connect to a remote computer using another executable as a pipe that will relay standard input/output between Visual Studio and the MI-enabled debugger (such as gdb). Allowed values: one or more [Pipe Transport Options](#pipe_transport_options). |
 
 ## debugInfo macros

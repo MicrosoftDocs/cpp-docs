@@ -4,10 +4,20 @@ items:
   items: 
     - name: Read and understand C++ code
       href: ../ide/read-and-understand-code-cpp.md
+    - name: Visualize macro expansions
+      href: ../ide/visualize-macro-expansion.md
     - name: Edit and refactor C++ code
       href: ../ide/writing-and-refactoring-code-cpp.md
     - name: Navigate C++ code
       href: ../ide/navigate-code-cpp.md
+    - name: C/C++ Include Cleanup overview
+      href: ../ide/include-cleanup-overview.md
+    - name: Configure C/C++ Include Cleanup
+      href: ../ide/include-cleanup-config.md
+    - name: Include Cleanup messages
+      href: ../ide/include-cleanup-messages.md
+    - name: C++ Include Diagnostics
+      href: include-diagnostics.md
     - name: Set your C++ coding preferences
       href: ../ide/how-to-set-preferences.md
     - name: Collaborate using Live Share for C++
@@ -30,6 +40,10 @@ items:
         href: ../ide/lnt-integer-float-division.md
       - name: lnt-logical-bitwise-mismatch
         href: ../ide/lnt-logical-bitwise-mismatch.md
+      - name: lnt-make-member-function-const
+        href: ../ide/lnt-make-member-function-const.md
+      - name: lnt-naming-convention
+        href: ../ide/lnt-naming-convention.md
       - name: lnt-uninitialized-local
         href: ../ide/lnt-uninitialized-local.md
     - name: Change signature
@@ -79,7 +93,7 @@ items:
     - name: Add a method
       href: ../ide/adding-a-method-visual-cpp.md
     - name: Add an IDL method
-      href: ../ide/add-interface-definition-library-method-wizard.md 
+      href: ../ide/add-interface-definition-library-method-wizard.md
     - name: Add a property
       href: ../ide/adding-a-property-visual-cpp.md
     - name: Add an IDL property

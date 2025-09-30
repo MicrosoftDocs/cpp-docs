@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3883"
 title: "Compiler Error C3883"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3883"
+ms.date: 11/04/2016
 f1_keywords: ["C3883"]
 helpviewer_keywords: ["C3883"]
-ms.assetid: cdd1c1f4-f268-4469-9c62-d52303114b0c
 ---
 # Compiler Error C3883
 
-'var' : an initonly static data member must be initialized
+> '*member*': an initonly static data member must be initialized
+
+## Remarks
 
 A variable marked with [initonly](../../dotnet/initonly-cpp-cli.md) was not initialized correctly.
 
-The following sample generates C3883:
+## Example
+
+The following example generates C3883:
 
 ```cpp
 // C3883.cpp
@@ -23,7 +26,7 @@ ref struct Y1 {
 };
 ```
 
-The following sample demonstrates a possible resolution:
+The following example demonstrates a possible resolution:
 
 ```cpp
 // C3883b.cpp
@@ -34,7 +37,7 @@ ref struct Y1 {
 };
 ```
 
-The following sample shows how to initialize in a static constructor:
+The following example shows how to initialize in a static constructor:
 
 ```cpp
 // C3883c.cpp

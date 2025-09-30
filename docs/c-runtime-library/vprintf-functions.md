@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: vprintf Functions"
 title: "vprintf Functions"
+description: "Learn more about: vprintf Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["vprintf functions", "formatted text [C++]"]
-ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
 ---
 # `vprintf` functions
 
@@ -17,7 +16,7 @@ Each of the `vprintf` functions takes a pointer to an argument list, then format
 [`_vprintf_p`, `_vprintf_p_l`, `_vwprintf_p`, `_vwprintf_p_l`](./reference/vprintf-p-vprintf-p-l-vwprintf-p-vwprintf-p-l.md)\
 [`vprintf_s`, `_vprintf_s_l`, `vwprintf_s`, `_vwprintf_s_l`](./reference/vprintf-s-vprintf-s-l-vwprintf-s-vwprintf-s-l.md)\
 [`_vscprintf`, `_vscprintf_l`, `_vscwprintf`, `_vscwprintf_l`](./reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)\
-[`_vsnprintf`, `_vsnwprintf`](./reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md)
+[`_vsnprintf`, `_vsnwprintf`](./reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md)\
 [`vsprintf`, `vswprintf`](./reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md)\
 [`_vsprintf_p`, `_vsprintf_p_l`, `_vswprintf_p`, `_vswprintf_p_l`](./reference/vsprintf-p-vsprintf-p-l-vswprintf-p-vswprintf-p-l.md)\
 [`vsprintf_s`, `_vsprintf_s_l`, `vswprintf_s`, `_vswprintf_s_l`](./reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md)

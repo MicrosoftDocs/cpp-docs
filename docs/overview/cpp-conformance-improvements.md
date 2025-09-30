@@ -1,18 +1,550 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2022"
 description: "Microsoft C++ in Visual Studio is improving standards conformance and fixing bugs regularly."
-ms.date: 06/19/2023
-ms.technology: "cpp-language"
+ms.date: 05/13/2025
+ms.service: "visual-cpp"
+ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022
 
-Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use **In this article** links, above.
+Microsoft C/C++ in Visual Studio (MSVC) makes conformance improvements and bug fixes in every release. This article lists the significant improvements by major release, then by version. To jump directly to the changes for a specific version, use the **In this article** links at the top of this article.
 
-This document lists the changes in Visual Studio 2022:
+This document lists the changes in Visual Studio 2022.
 
-- For a guide to the changes in Visual Studio 2019, see [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).
-- For changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
-- For a complete list of previous conformance improvements, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+For changes in earlier versions of Visual Studio:
+
+| Version  | Conformance improvements link |
+|---|---|
+| 2019 | [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md) |
+| 2017 | [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) |
+| 2003-2015 | [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md) |
+
+## <a name="improvements_1714"></a> Conformance improvements in Visual Studio 2022 version 17.14
+
+Visual Studio 2022 version 17.14 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+### Conformance improvements
+
+- Standard library hardening ([P3471R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/p3471r4.html)) turns some instances of undefined behavior in the standard library into a call to [__fastfail](../intrinsics/fastfail.md). Off by default. Define `_MSVC_STL_HARDENING=1` project-wide to enable.
+
+### Enhanced behavior
+
+- Implemented "destructor tombstones" to mitigate use-after-free mistakes. Off by default. Define `_MSVC_STL_DESTRUCTOR_TOMBSTONES=1` project-wide to enable.
+
+### Bug fixes
+
+- Fixed errant compiler errors when using `<format>` in a CUDA project.
+- Fixed a compiler issue where the address of a local variable could "leak" during `constexpr` evaluation. For example:
+
+    ```cpp
+    const unsigned & func() 
+    {
+      const int x = 0;
+      constexpr const unsigned & r1 = x; // Previously accepted, now an error
+      return r1;
+    }
+    
+    auto r = func();  // Previously, the local address leaked
+    ```
+
+    **Example #2**
+
+    ```cpp
+    #include <initializer_list>
+    
+    void test()
+    {
+        constexpr std::initializer_list<int> xs { 1, 2, 3 };        // Previously accepted, now an error
+    
+        static constexpr std::initializer_list<int> ys { 1, 2, 3 }; // Correct usage - note use of static
+    }
+    ```
+
+- Code compiled with `/permissive-` no longer accepts a combination of `friend` and `static` on a declaration. The fix is usually to remove `static` from the declaration. For example:
+
+    ```cpp
+    struct S
+    {
+        friend static void f(); // Previously accepted, now emits error C2440: 'static' cannot be used with 'friend'
+    };
+    ```
+
+- Reference binding to volatile-qualified types fixed when referring to a base or derived class. For example:
+
+    ```cpp
+    struct A {};
+    struct B : public A {};
+    
+    void f(A&);                 // 1
+    void f(const volatile A&);  // 2
+    
+    f(B{}); // Previously called 2. This is ill-formed under /permissive- or /Zc:referenceBinding. Chooses 1 if relaxed reference binding rules are enabled.
+    ```
+
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.14](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1714).
+
+## <a name="improvements_1713"></a> Conformance improvements in Visual Studio 2022 version 17.13
+
+Visual Studio 2022 version 17.13 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.13](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1713).
+
+### Argument-dependent lookup (ADL)
+
+Language constructs such as range-for and structured bindings have special argument-dependent lookup rules for certain identifiers such as `begin`, `end`, or `get`. Previously, this lookup included candidates from the `std` namespace, even when namespace `std` isn't part of the ordinary set of associated namespaces for argument-dependent lookup.
+
+Programs that introduced declarations to `std` for these constructs no longer compile. Instead, the declarations should be in a normal associated namespace for the types involved (possibly including the global namespace).
+
+```cpp
+template <typename T>
+struct Foo {};
+
+namespace std
+{
+    // To correct the program, move these declarations from std to the global namespace
+    template <typename T>
+    T* begin(Foo<T>& f);
+    template <typename T>
+    T* end(Foo<T>& f);
+}
+
+void f(Foo<int> foo)
+{
+   for (auto x : foo) // Previously compiled. Now emits error C3312: no callable 'begin' function found for type 'Foo<int>'
+   {
+      ...
+   }
+}
+```
+
+### Can't modify implementation-reserved macros
+
+Previously, the compiler permitted changing or undefining certain implementation-provided macros such as `_MSC_EXTENSIONS`. Altering the definition of certain macros can result in undefined behavior.
+
+Attempting to alter or undefine certain reserved macro names now results in the level-1 warning `C5308`. In `/permissive-` mode, this warning is treated as an error.
+
+```cpp
+#undef _MSC_EXTENSIONS // Warning C5308: Modifying reserved macro name `_MSC_EXTENSIONS` may cause undefined behavior
+```
+
+## <a name="improvements_1712"></a> Conformance improvements in Visual Studio 2022 version 17.12
+
+Visual Studio 2022 version 17.12 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.12](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1712).
+
+### `_com_ptr_t::operator bool()` is now explicit
+
+This is a source/binary breaking change.
+
+The implicit conversion to `bool` from `_com_ptr_t` instances can be surprising or lead to compiler errors. [C.164: Avoid implicit conversion operators](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c164-avoid-implicit-conversion-operators) in the C++ Core Guidelines discourage implicit conversion functions. And `_com_ptr_t` contained implicit conversions to both `bool` and `Interface*`. These two implicit conversions can lead to ambiguities.
+
+To address this, the conversion to `bool` is now explicit. The conversion to `Interface*` is unchanged.
+
+A macro is provided to opt-out of this new behavior and restore the previous implicit conversion. Compile with `/D_COM_DISABLE_EXPLICIT_OPERATOR_BOOL` to opt-out of this change. We recommend that you modify the code to not rely on implicit conversions.
+
+For example:
+
+```cpp
+#include <comip.h>
+
+template<class Iface>
+using _com_ptr = _com_ptr_t<_com_IIID<Iface, &__uuidof(Iface)>>;
+
+int main()
+{
+   _com_ptr<IUnknown> unk;
+   if (unk) // Still valid
+   { 
+      // ...
+   }
+   bool b = unk; // Still valid.
+   int v = unk; // Previously permitted, now emits C2240: cannot convert from '_com_ptr_t<_com_IIID<IUnknown,& _GUID_00000000_0000_0000_c000_000000000046>>' to 'int'
+}
+```
+
+### Constant expressions are no longer always `noexcept` in permissive mode
+
+This is a source/binary breaking change.
+
+A constant expression was always `noexcept`, even if it involved a function call to a function declared with a potentially throwing exception specification. This wording was removed in C++17, although the Microsoft Visual C++ compiler still supported it in `/permissive` mode in all C++ language versions.
+
+This `/permissive` mode behavior is removed. Constant expressions are no longer given special implicit behavior.
+
+The `noexcept` specifier on `constexpr` functions is now respected in all modes. This change is required for correct implementation of later core issue resolutions that rely on the standard `noexcept` behavior.
+
+For example:
+
+```cpp
+constexpr int f(bool b) noexcept(false)
+{ 
+    if (b)
+    {
+        throw 1;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+void g(bool b)
+{
+   noexcept(f(b)); // false. No change to behavior
+   noexcept(f(true)); // false. No change to behavior
+   noexcept(f(false)); // false. Was true in /permissive mode only in previous versions.
+}
+```
+
+## <a name="improvements_1711"></a> Conformance improvements in Visual Studio 2022 version 17.11
+
+Visual Studio 2022 version 17.11 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.11](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1711).
+
+### Print blank lines with `println`
+
+Per [P3142R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3142r0.pdf), it's now easy to generate a blank line with `println`. This feature is available when compiling with `/std:c++latest`.
+Before this change, you wrote: `println("");` Now you write: `println();`.
+- `println();` is equivalent to `println(stdout);`
+- `println(FILE* stream);` is equivalent to `println(stream, "\n");`
+
+### Implemented `range_formatter`
+
+Per [P2286R8](https://wg21.link/P2286R8), `range_formatter` is now implemented. This feature is available when compiling with `/std:c++latest`.
+
+## <a name="improvements_1710"></a> Conformance improvements in Visual Studio 2022 version 17.10
+
+Visual Studio 2022 version 17.10 includes the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For an in-depth summary of changes made to the Standard Template Library, including conformance changes, bug fixes, and performance improvements, see [STL Changelog VS 2022 17.10](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1710).
+
+### Conversion operator specialization with explicitly specified return type
+
+The compiler used to specialize conversion operators incorrectly in some cases, which could lead to a mismatched return type. These invalid specializations no longer happen. This is a source code breaking change.
+
+```cpp
+// Example 1
+struct S
+{
+    template<typename T> operator const T*();
+};
+
+void test()
+{
+    S{}.operator int*(); // this is invalid now
+    S{}.operator const int*(); // this is valid
+}
+```
+
+```cpp
+// Example 2
+// In some cases, the overload resolution result may change
+struct S
+{
+    template <typename T> operator T*(); // overload 1
+    template <typename T> operator const T*(); // overload 2
+};
+
+void test()
+{
+    S{}.operator int*(); // this used to call overload 2, now it calls overload 1
+}
+```
+
+### Added Support for `#elifdef` and `#elifndef`
+
+Support added for WG21 [P2334R1](https://www.open-std.org/JTC1/SC22/WG21/docs/papers/2021/p2334r1.pdf) (C++23) and WG14 [N2645](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2645.pdf) (C++23) which introduced the `#elifdef` and `#elifndef` preprocessor directives.
+Requires `/std:clatest` or `/std:c++latest`.
+
+Before:
+
+```cpp
+#ifdef __cplusplus
+  #include <atomic>
+#elif !defined(__STDC_NO_ATOMICS__)
+  #include <stdatomic.h>
+#else
+  #include <custom_atomics_library.h>
+#endif
+```
+
+After:
+
+```cpp
+#ifdef __cplusplus
+  #include <atomic>
+#elifndef __STDC_NO_ATOMICS__
+  #include <stdatomic.h>
+#else
+  #include <custom_atomics_library.h>
+#endif
+```
+
+### Application of `_Alignas` on a structured type in C
+
+Applies to the C language (C17 and later). Also added to Microsoft Visual Studio 17.9
+
+In versions of Visual C++ before Visual Studio 2022 version 17.9, if the `_Alignas` specifier appeared next to a structured type in a declaration, it wasn't applied correctly according to the ISO-C Standard.
+
+```cpp
+// compile with /std:c17
+#include <stddef.h>
+
+struct Outer
+{
+    _Alignas(32) struct Inner { int i; } member1;
+    struct Inner member2;
+};
+static_assert(offsetof(struct Outer, member2)==4, "incorrect alignment");
+```
+
+According to the ISO-C Standard, this code should compile without `static_assert` emitting a diagnostic.
+
+The `_Alignas` directive applies only to the member variable `member1`. It must not change the alignment of `struct Inner`. However, before Visual Studio 17.9.1, the diagnostic "incorrect alignment" was emitted. The compiler aligned `member2` to an offset of 32 bytes within the `struct Outer` type.
+
+This is a binary breaking change, so a warning is now emitted when this change takes effect. Warning C5274 is now emitted at warning level 1 for the previous example: `
+warning C5274: behavior change: _Alignas no longer applies to the type 'Inner' (only applies to declared data objects)`.
+
+Also, in previous versions of Visual Studio, when the `_Alignas` specifier appeared next to an anonymous type declaration, it was ignored.
+
+```cpp
+// compile with /std:c17
+#include <stddef.h>
+struct S
+{
+    _Alignas(32) struct { int anon_member; };
+    int k;
+};
+
+static_assert(offsetof(struct S, k)==4, "incorrect offsetof");
+static_assert(sizeof(struct S)==32, "incorrect size");
+```
+
+Previously, both `static_assert` statements failed when compiling this code. Now the code compiles, but emits the following level 1 warnings:
+
+```c
+warning C5274: behavior change: _Alignas no longer applies to the type '<unnamed-tag>' (only applies to declared data objects)
+warning C5273: behavior change: _Alignas on anonymous type no longer ignored (promoted members will align)
+```
+
+To get the previous behavior, replace `_Alignas(N)` with `__declspec(align(N))`. Unlike `_Alignas`, `declspec(align)` applies to the type.
+
+### Improved warning C4706
+
+This is a source code breaking change. Previously, the compiler didn't detect the convention of wrapping an assignment in parentheses, if assignment was intended, to suppress [warning C4706](../error-messages/compiler-warnings/compiler-warning-level-4-c4706.md) about assignment within a conditional expression. The compiler now detects the parentheses and suppresses the warning.
+
+```cpp
+#pragma warning(error: 4706)
+
+struct S
+{
+   auto mf()
+   {
+      if (value = 9)
+         return value + 4;
+      else
+         return value;
+   }
+
+   int value = 9;
+};
+```
+
+The compiler now also emits the warning in cases where the function isn't referenced. Previously, because `mf` is an inline function that isn't referenced, warning C4706 wasn't emitted for this code. Now the warning is emitted:
+
+```cpp
+error C4706: assignment used as a condition
+note: if an assignment is intended you can enclose it in parentheses, '(e1 = e2)', to silence this warning
+```
+
+To fix this warning, either use an equality operator, `value == 9`, if this is what was intended. Or, wrap the assignment in parentheses, `(value = 9)`, if assignment is intended. Otherwise, since the function is unreferenced, remove it.
+
+## <a name="improvements_179"></a> Conformance improvements in Visual Studio 2022 version 17.9
+
+Visual Studio 2022 version 17.9 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.9](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-179).
+
+### Application of `_Alignas` on a structured type in C
+
+In versions of Visual C++ before Visual Studio 2022 version 17.9, when `_Alignas` appeared next to a structure type in a declaration, it wasn't applied correctly according to the ISO-C Standard. For example:
+
+```c
+// compile with /std:c17
+#include <stddef.h>
+struct Outer
+{
+    _Alignas(32) struct Inner { int i; } member1;
+    struct Inner member2;
+};
+static_assert(offsetof(struct Outer, member2)==4, "incorrect alignment");
+```
+
+According to the ISO-C Standard, this code should compile without the `static_assert` emitting a diagnostic. The `_Alignas` directive applies only to the member variable `member1`. It must not change the alignment of `struct Inner`. However, before release 17.9.1 of Visual Studio, the diagnostic "incorrect alignment" was  emitted. The compiler aligned `member2` to a 32 byte offset within `struct Outer`.
+
+Fixing this is a binary breaking change, so when this change in behavior is applied a warning is emitted. For the preceding code, Warning C5274, "`_Alignas` no longer applies to the type 'Inner' (only applies to declared data objects)" is now emitted at warning level 1.
+
+In previous versions of Visual Studio, `_Alignas` was ignored when it appeared next to an anonymous type declaration. For example:
+
+```c
+// compile with /std:c17
+#include <stddef.h>
+struct S {
+    _Alignas(32) struct { int anon_member; };
+    int k;
+};
+static_assert(offsetof(struct S, k)==4, "incorrect offsetof");
+static_assert(sizeof(struct S)==32, "incorrect size");
+```
+
+Previously, both `static_assert` statements failed when compiling this code. The code now compiles, but with the following level 1 warnings:
+
+```c
+warning C5274: behavior change: _Alignas no longer applies to the type '<unnamed-tag>' (only applies to declared data objects)
+warning C5273: behavior change: _Alignas on anonymous type no longer ignored (promoted members will align)
+```
+
+If you want the earlier behavior, replace `_Alignas(N)` with `__declspec(align(N))`. Unlike `_Alignas`, `declspec(align)` can be applied to a type.
+
+### `__VA_OPT__` is enabled as an extension under `/Zc:preprocessor`
+
+`__VA_OPT__` was added to C++20 and C23. Previous to its addition, there wasn't a standard way to elide a comma in a variadic macro. To provide better backward compatibility, `__VA_OPT__` is enabled under the token based preprocessor `/Zc:preprocessor` across all language versions.
+
+For example, this now compiles without error:
+
+```cpp
+#define LOG_WRAPPER(message, ...) WRITE_LOG(__LINE__, message __VA_OPT__(, __VA_ARGS__))
+
+// Failed to build under /std:c11, now succeeds.
+LOG_WRAPPER("Log message");
+LOG_WRAPPER("Log message with %s", "argument")
+```
+
+### C23 language ###
+
+For C23, the following are available when using the `/std:clatest` compiler switch:
+
+[`typeof`](../c-language/typeof-c.md)\
+[`typeof_unqual`](../c-language/typeof-unqual-c.md)
+
+The following are available for all C language versions:
+
+[`__typeof__`](../c-language/typeof-c.md)\
+[`__typeof_unqual__`](../c-language/typeof-unqual-c.md)
+
+### C++ Standard Library
+
+**C++23 features**
+
+- `formattable`, `range_format`, `format_kind`, and `set_debug_format()` as part of [P2286R8 Formatting Ranges](https://wg21.link/P2286R8)
+- `<mdspan>` per [P0009R18](https://wg21.link/P0009R18) and subsequent wording changes that were applied to the C++23 Standard.
+- `format()` pointers per [P2510R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2510r3.pdf).
+
+## <a name="improvements_178"></a> Conformance improvements in Visual Studio 2022 version 17.8
+
+Visual Studio 2022 version 17.8 contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+### `/FU` issues an error
+
+The C compiler used to accept the `/FU` option, even though it hasn't support managed compilation for some time. It now issues an error. Projects that pass this option need to restrict it to C++/CLI projects only.
+
+### C++ Standard Library
+
+The C++23 named modules `std` and `std.compat` are now available when compiling with `/std:c++20`.
+
+For a broader summary of changes made to the C++ Standard Library, see [STL Changelog VS 2022 17.8](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-178).
+
+## <a name="improvements_177"></a> Conformance improvements in Visual Studio 2022 version 17.7
+
+Visual Studio 2022 version 17.7 contains the following highlighted conformance improvements, bug fixes, and behavior changes in the Microsoft C/C++ compiler.
+
+### Added `/std:clatest` to the C compiler
+
+This switch behaves like the `/std:c++latest` switch for the C++ compiler. The switch enables all currently implemented compiler and standard library features proposed for the next draft C standard, as well as some in-progress and experimental features.
+
+### C++ Standard Library
+
+The `<print>` library is now supported. See [P2093R14 Formatted output](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2093r14.html).
+
+Implemented `views::cartesian_product`.
+
+For a broader summary of changes made to the Standard Template Library, see [STL Changelog VS 2022 17.7](https://github.com/microsoft/STL/wiki/VS-2022-Changelog#vs-2022-177).
+
+### `using` conformance
+
+Previously, the `using` directive could cause names from used namespaces to remain visible when they shouldn't. This could cause unqualified name lookup to find a name in a namespace even when there's no `using` directive active.
+
+Here are some examples of the new and old behavior.\
+References in the following comments to "(1)" mean the call to `f<K>(t)` in namespace `A`:
+
+```cpp
+namespace A
+{ 
+    template<typename K, typename T> 
+    auto f2(T t)
+    { 
+        return f<K>(t); // (1) Unqualified lookup should not find anything
+    } 
+} 
+
+namespace B
+{ 
+    template<typename K, typename T> 
+    auto f(T t) noexcept
+    { // Previous behavior: This function was erroneously found during unqualified lookup at (1)
+        return A::f2<K>(t); 
+    } 
+} 
+
+namespace C
+{ 
+    template<typename T> 
+    struct S {}; 
+
+    template<typename, typename U> 
+    U&& f(U&&) noexcept; // New behavior: ADL at (1) correctly finds this function 
+} 
+
+namespace D
+{ 
+    using namespace B; 
+
+    void h()
+    { 
+        D::f<void>(C::S<int>()); 
+    } 
+} 
+```
+
+The same underlying issue can cause code that previously compiled to now be rejected:
+
+```cpp
+#include <memory>
+namespace Addin {}
+namespace Gui
+{
+    using namespace Addin;
+}
+
+namespace Addin
+{
+    using namespace std;
+}
+
+// This previously compiled, but now emits error C2065 for undeclared name 'allocator'.
+// This should be declared as 'std::allocator<T*>' because the using directive nominating
+// 'std' is not active at this point.
+template <class T, class U = allocator<T*>>
+class resource_list
+{
+};
+
+namespace Gui
+{
+    typedef resource_list<int> intlist;
+}
+```
 
 ## <a name="improvements_176"></a> Conformance improvements in Visual Studio 2022 version 17.6
 
@@ -57,7 +589,7 @@ bool b = S{} != S{};
 
 The compiler accepts this code, which means that the compiler is more strict with code such as:
 
-```c++
+```cpp
 struct S
 {
   operator bool() const;
@@ -94,7 +626,7 @@ In versions of Visual Studio before Visual Studio 2022 version 17.4, the C++ com
 
 The C++ Standard requires the underlying type of an **`enum`** to be large enough to hold all enumerators in that **`enum`**. Sufficiently large enumerators can set the underlying type of the **`enum`** to **`unsigned int`**, **`long long`**, or **`unsigned long long`**. Previously, such **`enum`** types always had an underlying type of **`int`** in the Microsoft compiler, regardless of enumerator values.
 
-When enabled, the **`/Zc:enumTypes`** option is a potential source and binary breaking change. It's off by default, and not enabled by **`/permissive-`**, because the fix may affect binary compatibility. Some enumeration types change size when the conformant fix is enabled. Certain Windows SDK headers include such enumeration definitions.
+When enabled, the **`/Zc:enumTypes`** option is a potential source and binary breaking change. It's off by default, and not enabled by **`/permissive-`**, because the fix might affect binary compatibility. Some enumeration types change size when the conformant fix is enabled. Certain Windows SDK headers include such enumeration definitions.
 
 #### Example
 
@@ -134,7 +666,7 @@ In versions of Visual Studio before Visual Studio 2022 version 17.4, the C++ com
 
 The C++ Standard specifies that within an enumeration definition of no fixed underlying type, initializers determine the types of enumerators. Or, for the enumerators with no initializer, by the type of the previous enumerator (accounting for overflow). Previously, such enumerators were always given the deduced type of the enumeration, with a placeholder for the underlying type (typically **`int`**).
 
-When enabled, the **`/Zc:enumTypes`** option is a potential source and binary breaking change. It's off by default, and not enabled by **`/permissive-`**, because the fix may affect binary compatibility. Some enumeration types change size when the conformant fix is enabled. Certain Windows SDK headers include such enumeration definitions.
+When enabled, the **`/Zc:enumTypes`** option is a potential source and binary breaking change. It's off by default, and not enabled by **`/permissive-`**, because the fix might affect binary compatibility. Some enumeration types change size when the conformant fix is enabled. Certain Windows SDK headers include such enumeration definitions.
 
 #### Example
 
@@ -147,7 +679,7 @@ enum Enum {
 static_assert(B == 1); // previously failed, now succeeds under /Zc:enumTypes
 ```
 
-In this example the enumerator `A` should have type **`char`** prior to the closing brace of the enumeration, so `B` should be initialized using `sizeof(char)`. Before the **`/Zc:enumTypes`** fix, `A` had enumeration type `Enum` with a deduced underlying type **`int`**, and `B` was initialized using `sizeof(Enum)`, or 4.
+In this example the enumerator `A` should have type **`char`** before the closing brace of the enumeration, so `B` should be initialized using `sizeof(char)`. Before the **`/Zc:enumTypes`** fix, `A` had enumeration type `Enum` with a deduced underlying type **`int`**, and `B` was initialized using `sizeof(Enum)`, or 4.
 
 ## <a name="improvements_173"></a> Conformance improvements in Visual Studio 2022 version 17.3
 
@@ -209,9 +741,9 @@ bidi.cpp(8): warning C5255: unterminated bidirectional character encountered: 'U
 
 ### `from_chars()` `float` tiebreaker
 
-Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even" and "even" happened to be "down", but the implementation incorrectly rounded "up". (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
+Visual Studio 2022 version 17.2 fixes a bug in `<charconv>` `from_chars()` `float` tiebreaker rules that produced incorrect results. This bug affected decimal strings that were at the exact midpoint of consecutive `float` values, within a narrow range. (The smallest and largest affected values were `32768.009765625` and `131071.98828125`, respectively.) The tiebreaker rule wanted to round to "even," and "even" happened to be "down," but the implementation incorrectly rounded "up" (`double` was unaffected.) For more information and implementation details, see [microsoft/STL#2366](https://github.com/microsoft/STL/pull/2366).
 
-This change affects runtime behavior in the specified range of cases.
+This change affects runtime behavior in the specified range of cases:
 
 #### Example
 
@@ -256,7 +788,7 @@ This rounded DOWN.
 
 The C standard requires that a conforming C implementation defines `__STDC__` as `1`. Due to the behavior of the UCRT, which doesn't expose POSIX functions when `__STDC__` is `1`, it isn't possible to define this macro for C by default without introducing breaking changes to the stable language versions. Visual Studio 2022 version 17.2 and later add a conformance option [`/Zc:__STDC__`](../build/reference/zc-stdc.md) that defines this macro. There's no negative version of the option. Currently, we plan to use this option by default for future versions of C.
 
-This change is a source breaking change. It applies when C11 or C17 mode is enabled, **`/std:c11`** or **`/std:c17`**, together with **`/Zc:__STDC__`**.
+This change is a source breaking change. It applies when C11 or C17 mode is enabled (**`/std:c11`** or **`/std:c17`**) and **`/Zc:__STDC__`** is specified.
 
 #### Example
 
@@ -377,9 +909,9 @@ int main(void)
 
 ### Error on a nondependent `static_assert`
 
-In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression as soon as it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
+In Visual Studio 2022 version 17.1 and later, if the expression associated with a `static_assert` isn't a dependent expression, the compiler evaluates the expression when it's parsed. If the expression evaluates to `false`, the compiler emits an error. Previously, if the `static_assert` was within the body of a function template (or within the body of a member function of a class template), the compiler wouldn't perform this analysis.
 
-This change is a source breaking change. It applies in any mode that implies **`/permissive-`** or **`/Zc:static_assert`**.  This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
+This change is a source breaking change. It applies in any mode that implies **`/permissive-`** or **`/Zc:static_assert`**. This change in behavior can be disabled by using the **`/Zc:static_assert-`** compiler option.
 
 #### Example
 
@@ -449,7 +981,7 @@ bool f(int *p)
 }
 ```
 
-WG21 paper [N3478](https://wg21.link/n3478) removed this oversight. MSVC has now implemented this change. When the example is compiled by using **`/permissive-`** (and **`/diagnostics:caret`**), it emits the following error:
+WG21 paper [N3478](https://wg21.link/n3478) removed this oversight. This change is implemented in MSVC. When the example is compiled by using **`/permissive-`** (and **`/diagnostics:caret`**), it emits the following error:
 
 ```Output
 t.cpp(3,14): error C7664: '>=': ordered comparison of pointer and integer zero ('int *' and 'int')

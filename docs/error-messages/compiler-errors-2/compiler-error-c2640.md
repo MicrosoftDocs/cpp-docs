@@ -1,23 +1,29 @@
 ---
-description: "Learn more about: Compiler Error C2640"
 title: "Compiler Error C2640"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2640"
+ms.date: 03/17/2025
 f1_keywords: ["C2640"]
 helpviewer_keywords: ["C2640"]
-ms.assetid: e4d137ab-ed1d-457c-9eec-b70d97f1b0b4
 ---
 # Compiler Error C2640
 
-'identifier' : __based modifier illegal on reference
+> 'abstract declarator': __based modifier illegal on reference
 
-The **`__based`** modifier can be used on pointers only.
+## Remarks
 
-The following sample generates C2640:
+The [**`__based`**](../../cpp/based-pointers-cpp.md) modifier can be used on pointers only.
+
+## Example
+
+The following example generates C2640:
 
 ```cpp
 // C2640.cpp
-void f(int i) {
-    void *vp;
-    int _based(vp) &vr = I;  // C2640
+int* ptr;
+
+int main()
+{
+    int __based(ptr)& based_ref;   // C2640
+    int __based(ptr)* based_ptr;   // OK
 }
 ```

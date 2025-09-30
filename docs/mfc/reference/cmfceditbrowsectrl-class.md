@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMFCEditBrowseCtrl Class"
 title: "CMFCEditBrowseCtrl Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CMFCEditBrowseCtrl Class"
+ms.date: 11/04/2016
 f1_keywords: ["CMFCEditBrowseCtrl", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFileBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFolderBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::GetMode", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnAfterUpdate", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnBrowse", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnChangeLayout", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnDrawBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnIllegalFileName", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::SetBrowseButtonImage"]
 helpviewer_keywords: ["CMFCEditBrowseCtrl [MFC], EnableBrowseButton", "CMFCEditBrowseCtrl [MFC], EnableFileBrowseButton", "CMFCEditBrowseCtrl [MFC], EnableFolderBrowseButton", "CMFCEditBrowseCtrl [MFC], GetMode", "CMFCEditBrowseCtrl [MFC], OnAfterUpdate", "CMFCEditBrowseCtrl [MFC], OnBrowse", "CMFCEditBrowseCtrl [MFC], OnChangeLayout", "CMFCEditBrowseCtrl [MFC], OnDrawBrowseButton", "CMFCEditBrowseCtrl [MFC], OnIllegalFileName", "CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage"]
-ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
 ---
 # CMFCEditBrowseCtrl Class
 
@@ -69,7 +68,7 @@ Perform the following steps to incorporate an edit browse control in your applic
 
 1. Embed either the `CMFCEditBrowseCtrl` object or the derived edit browse control object into the parent window object.
 
-1. If you use the **Class Wizard** to create a dialog box, add an edit control ( `CEdit`) to the dialog box form. Also, add a variable to access the control in your header file. In your header file, change the type of the variable from `CEdit` to `CMFCEditBrowseCtrl`. The edit browse control will be created automatically. If you do not use the **Class Wizard**, add a `CMFCEditBrowseCtrl` variable to your header file and then call its `Create` method.
+1. If you use the **Class Wizard** to create a dialog box, add an edit control (`CEdit`) to the dialog box form. Also, add a variable to access the control in your header file. In your header file, change the type of the variable from `CEdit` to `CMFCEditBrowseCtrl`. The edit browse control will be created automatically. If you do not use the **Class Wizard**, add a `CMFCEditBrowseCtrl` variable to your header file and then call its `Create` method.
 
 1. If you add an edit browse control to a dialog box, use the **ClassWizard** tool to set up data exchange.
 
@@ -306,7 +305,7 @@ Specifies the illegal file name.
 
 ### Return Value
 
-Should return FALSE if this file name can not be passed further to the file dialog. In this case, focus is set back to the edit control and the user should continue editing. The default implementation displays a message box telling the user about the illegal file name and returns FALSE. You can override this method, correct the file name, and return TRUE for further processing.
+Should return FALSE if this file name cannot be passed further to the file dialog. In this case, focus is set back to the edit control and the user should continue editing. The default implementation displays a message box telling the user about the illegal file name and returns FALSE. You can override this method, correct the file name, and return TRUE for further processing.
 
 ### Remarks
 

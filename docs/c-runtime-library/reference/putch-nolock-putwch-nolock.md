@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _putch_nolock, _putwch_nolock"
 title: "_putch_nolock, _putwch_nolock"
+description: "Learn more about: _putch_nolock, _putwch_nolock"
 ms.date: "4/2/2020"
 api_name: ["_putwch_nolock", "_putch_nolock", "_o__putch_nolock", "_o__putwch_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
@@ -8,11 +8,10 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_putch_nolock", "_puttch_nolock", "putch_nolock", "putwch_nolock", "_putwch_nolock"]
 helpviewer_keywords: ["putwch_nolock function", "puttch_nolock function", "characters, writing", "putch_nolock function", "_putch_nolock function", "_puttch_nolock function", "console, writing characters to", "_putwch_nolock function"]
-ms.assetid: edbc811d-bac6-47fa-a872-fe4f3a1590b0
 ---
 # `_putch_nolock`, `_putwch_nolock`
 
-Writes a character to the console without locking the thread.
+Writes a character to the console without locking.
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

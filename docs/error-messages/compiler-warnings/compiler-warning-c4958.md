@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4958"
 title: "Compiler Warning C4958"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4958"
+ms.date: 11/04/2016
 f1_keywords: ["C4958"]
 helpviewer_keywords: ["C4958"]
-ms.assetid: e79b9e9c-d572-4a3a-a3b6-60962b70864a
 ---
 # Compiler Warning C4958
 
@@ -20,9 +19,9 @@ The **/clr:safe** compiler option is deprecated in Visual Studio 2015 and unsupp
 
 This warning is issued as an error and can be disabled with the [warning](../../preprocessor/warning.md) pragma or the [/wd](../../build/reference/compiler-option-warning-level.md) compiler option.
 
-## Example
+## Examples
 
-The following sample generates C4958:
+The following example generates C4958:
 
 ```cpp
 // C4958.cpp
@@ -39,7 +38,7 @@ int main( ) {
 
 The compiler implements array operations with pointer arithmetic. Therefore, native arrays are not verifiable; use a CLR array instead. For more information, see [array](../../extensions/arrays-cpp-component-extensions.md).
 
-The following sample generates C4958:
+The following example generates C4958:
 
 ```cpp
 // C4958b.cpp

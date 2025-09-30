@@ -11,10 +11,12 @@ Represents a **`struct`** that is used with the template function [call_once](..
 
 ## Syntax
 
+```cpp
 struct once_flag
-   {
+{
    constexpr once_flag() noexcept;
-   };
+};
+```
 
 ## Remarks
 

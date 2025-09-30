@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: <random>"
 title: "<random>"
-ms.date: "08/24/2017"
+description: "Learn more about: <random>"
+ms.date: 08/24/2017
 f1_keywords: ["<random>"]
 helpviewer_keywords: ["random header"]
-ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
 ---
 # `<random>`
 
@@ -17,7 +16,7 @@ Defines facilities for random number generation, allowing creation of uniformly 
 **Namespace:** std
 
 > [!NOTE]
-> The `<random>` library uses the `#include <initializer_list>' statement.
+> The `<random>` library uses the `#include <initializer_list>` statement.
 
 ## Summary
 
@@ -45,7 +44,7 @@ Here are some tips to keep in mind when using `<random>`:
 
 - The most useful pairing for most applications is the `mt19937` engine with `uniform_int_distribution`, as shown in the [code example](#code) later in this article.
 
-There are many options to choose from in the `<random>` header, and any of them is preferable to the outdated C Runtime function `rand()`. For information about what's wrong with `rand()` and how `<random>` addresses these shortcomings, see [this video](/events/goingnative-2013/rand-considered-harmful).
+There are many options to choose from in the `<random>` header, and any of them is preferable to the outdated C Runtime function `rand()`. For information about what's wrong with `rand()` and how `<random>` addresses these shortcomings, see [this video](/shows/goingnative-2013/rand-considered-harmful).
 
 ## <a name="code"></a> Examples
 

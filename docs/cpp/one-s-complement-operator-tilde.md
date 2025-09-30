@@ -6,7 +6,7 @@ f1_keywords: ["~", "compl_cpp"]
 helpviewer_keywords: ["tilde (~) one's complement operator", "one's complement operator", "bitwise-complement operator", "compl operator", "~ operator [C++], syntax"]
 ms.assetid: 4bf81967-34f7-4b4b-aade-fd03d5da0174
 ---
-# One's complement operator: ~
+# One's complement operator: `~`
 
 ## Syntax
 
@@ -45,6 +45,6 @@ Integral promotion is performed on integral operands. The type the operand is pr
 
 ## See also
 
-[Expressions with unary operators](expressions-with-unary-operators.md)<br/>
-[C++ built-in operators, precedence, and associativity](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Expressions with unary operators](expressions-with-unary-operators.md)\
+[C++ built-in operators, precedence, and associativity](cpp-built-in-operators-precedence-and-associativity.md)\
 [Unary arithmetic operators](../c-language/unary-arithmetic-operators.md)

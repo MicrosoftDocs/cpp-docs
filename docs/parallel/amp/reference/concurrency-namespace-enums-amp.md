@@ -1,18 +1,14 @@
 ---
-description: "Learn more about: Concurrency namespace enums (AMP)"
 title: "Concurrency namespace enums (AMP)"
-ms.date: "11/04/2016"
+description: "Learn more about: Concurrency namespace enums (AMP)"
+ms.date: 11/04/2016
 f1_keywords: ["amp/Concurrency::access_type", "amp/Concurrency::queuing_mode"]
-ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
 ---
-# Concurrency namespace enums (AMP)
+# `Concurrency` namespace enums (AMP)
 
-[access_type Enumeration](#access_type)\
-[queuing_mode Enumeration](#queuing_mode)
+The following enumerations are available in the `Concurrency` namespace:
 
-## <a name="access_type"></a> access_type Enumeration
-
-Enumeration type used to denote the various types of access to data.
+## <a name="access_type"></a> `access_type` enumeration
 
 ```cpp
 enum access_type;
@@ -28,7 +24,7 @@ enum access_type;
 |`access_type_read_write`|Shared. The allocation is accessible on the accelerator and is writable on the CPU.|
 |`access_type_write`|Shared. The allocation is accessible on the accelerator and is both readable and writable on the CPU.|
 
-## <a name="queuing_mode"></a> queuing_mode Enumeration
+## <a name="queuing_mode"></a> `queuing_mode` enumeration
 
 Specifies the queuing modes that are supported on the accelerator.
 

@@ -1,26 +1,29 @@
 ---
-description: "Learn more about: Compiler Error C2751"
 title: "Compiler Error C2751"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2751"
+ms.date: 03/11/2024
 f1_keywords: ["C2751"]
 helpviewer_keywords: ["C2751"]
-ms.assetid: 44a3abdf-8a87-4a09-b34b-532c220c310a
 ---
 # Compiler Error C2751
 
-'parameter' : the name of a function parameter cannot be qualified
+> 'parameter' : the name of a function parameter cannot be qualified
+
+## Remarks
 
 You cannot use a qualified name as a function parameter.
 
-The following sample generates C2751:
+## Example
+
+The following example generates C2751:
 
 ```cpp
 // C2751.cpp
-namespace std {
-   template<typename T>
-   class list {};
+// compile with: /c
+namespace NS
+{
+    class C {};
 }
 
-#define list std::list
-void f(int &list){}   // C2751
+void func(int NS::C) {}   // C2751
 ```

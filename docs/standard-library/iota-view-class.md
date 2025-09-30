@@ -67,13 +67,13 @@ This view is typically used to iterate over a series of values. For example:
 ```cpp
 for (int i : iota_view{1, 10}) // iterate over a view of the integers 1 through 9
 {
-    std::cout << i << ’ ’; // 1 2 3 4 5 6 7 8 9
+    std::cout << i << ' '; // 1 2 3 4 5 6 7 8 9
 }
 ```
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 
@@ -116,7 +116,7 @@ When you use one of the constructors that value-initializes the bound, the bound
 ## `iota_view` constructor example
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 #include <vector>

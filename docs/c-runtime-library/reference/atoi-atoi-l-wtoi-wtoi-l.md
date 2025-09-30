@@ -53,7 +53,7 @@ These functions convert a character string to an integer value (**`atoi`** and *
 
 The *`str`* argument to **`atoi`** and **`_wtoi`** has the following form:
 
-> [*`whitespace`*] [*`sign`*] [*`digits`*]]
+> [*`whitespace`*] [*`sign`*] [*`digits`*]
 
 A *`whitespace`* consists of space or tab characters, which are ignored; *`sign`* is either plus (+) or minus (-); and *`digits`* are one or more digits.
 

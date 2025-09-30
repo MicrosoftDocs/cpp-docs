@@ -1,7 +1,7 @@
 ---
 title: "gmtime, _gmtime32, _gmtime64"
 description: "API reference for gmtime, _gmtime32, and _gmtime64, which convert a time_t value."
-ms.date: "10/27/2020"
+ms.date: 02/23/2024
 api_name: ["_gmtime32", "gmtime", "_gmtime64", "_o__gmtime32", "_o__gmtime64"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -53,9 +53,6 @@ These functions validate their parameters. If *`sourceTime`* is a `NULL` pointer
 ## Remarks
 
 The **`_gmtime32`** function breaks down the *`sourceTime`* value and stores it in a statically allocated structure of type `tm`, defined in `TIME.H`. The value of *`sourceTime`* is typically obtained from a call to the [`time`](time-time32-time64.md) function.
-
-> [!NOTE]
-> In most cases, the target environment tries to determine whether daylight savings time is in effect. The C run-time library assumes that the United States rules for implementing the calculation of Daylight Saving Time (DST) are used.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

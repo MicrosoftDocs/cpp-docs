@@ -1,11 +1,12 @@
 ---
-description: "Learn more about: Using accelerator and accelerator_view Objects"
 title: "Using accelerator and accelerator_view Objects"
+description: "Learn more about: Using accelerator and accelerator_view Objects"
 ms.date: "11/04/2016"
+ms.topic: how-to
 ---
 # Using accelerator and accelerator_view Objects
 
-You can use the [accelerator](../../parallel/amp/reference/accelerator-class.md) and [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) classes to specify the device or emulator to run your C++ AMP code on. A system might have several devices or emulators that differ by amount of memory, shared memory support, debugging support, or double-precision support. C++ Accelerated Massive Parallelism (C++ AMP) provides APIs that you can use to examine the available accelerators, set one as the default, specify multiple accelerator_views for multiple calls to parallel_for_each, and perform special debugging tasks.
+You can use the [accelerator](reference/accelerator-class.md) and [accelerator_view](reference/accelerator-view-class.md) classes to specify the device or emulator to run your C++ AMP code on. A system might have several devices or emulators that differ by amount of memory, shared memory support, debugging support, or double-precision support. C++ Accelerated Massive Parallelism (C++ AMP) provides APIs that you can use to examine the available accelerators, set one as the default, specify multiple accelerator_views for multiple calls to parallel_for_each, and perform special debugging tasks.
 
 > [!NOTE]
 > C++ AMP headers are deprecated starting with Visual Studio 2022 version 17.0.
@@ -45,7 +46,7 @@ void default_properties() {
 
 ### CPPAMP_DEFAULT_ACCELERATOR Environment Variable
 
-You can set the CPPAMP_DEFAULT_ACCELERATOR environment variable to specify the `accelerator::device_path` of the default accelerator. The path is hardware-dependent. The following code uses the `accelerator::get_all` function to retrieve a list of the available accelerators and then displays the path and characteristics of each accelerator.
+You can set the `CPPAMP_DEFAULT_ACCELERATOR` environment variable to specify the `accelerator::device_path` of the default accelerator. The path is hardware-dependent. The following code uses the `accelerator::get_all` function to retrieve a list of the available accelerators and then displays the path and characteristics of each accelerator.
 
 ```cpp
 void list_all_accelerators()
@@ -160,7 +161,7 @@ There are two ways to use multiple accelerators in your app:
 
 - You can pass `accelerator_view` objects to the calls to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) method.
 
-- You can construct an **array** object using a specific `accelerator_view` object. The C+AMP runtime will pick up the `accelerator_view` object from the captured **array** object in the lambda expression.
+- You can construct an **array** object using a specific `accelerator_view` object. The C++ AMP runtime will pick up the `accelerator_view` object from the captured **array** object in the lambda expression.
 
 ## Special Accelerators
 
@@ -178,6 +179,6 @@ The C++ AMP runtime supports interoperability between the `accelerator_view` cla
 
 ## See also
 
-[C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
-[Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)<br/>
-[accelerator_view Class](../../parallel/amp/reference/accelerator-view-class.md)
+[C++ AMP (C++ Accelerated Massive Parallelism)](cpp-amp-cpp-accelerated-massive-parallelism.md)\
+[Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)\
+[accelerator_view Class](reference/accelerator-view-class.md)

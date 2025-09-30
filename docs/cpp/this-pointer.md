@@ -1,10 +1,9 @@
 ---
 title: "The this pointer"
 description: "The this pointer is a compiler-generated pointer to the current object in nonstatic member functions."
-ms.date: "01/22/2020"
+ms.date: 12/11/2023
 f1_keywords: ["this_cpp"]
 helpviewer_keywords: ["nonstatic member functions [C++]", "pointers, to class instance", "this pointer"]
-ms.assetid: 92e3256a-4ad9-4d46-8be1-d77fad90791f
 no-loc: [this, class, struct, union, sizeof, const, volatile]
 ---
 # The `this` pointer
@@ -20,7 +19,7 @@ this->member-identifier
 
 ## Remarks
 
-An object's **`this`** pointer isn't part of the object itself. It's not reflected in the result of a **`sizeof`** statement on the object. When a nonstatic member function is called for an object, the compiler passes the object's address to the function as a hidden argument. For example, the following function call:
+An object's **`this`** pointer isn't part of the object itself. It's not part of the result of a **`sizeof`** statement on the object. When a nonstatic member function is called for an object, the compiler passes the object's address to the function as a hidden argument. For example, the following function call:
 
 ```cpp
 myDate.setMonth( 3 );
@@ -59,7 +58,7 @@ if (&Object != this) {
 > [!NOTE]
 > Because the **`this`** pointer is nonmodifiable, assignments to the **`this`** pointer are not allowed. Earlier implementations of C++ allowed assignment to **`this`**.
 
-Occasionally, the **`this`** pointer is used directly — for example, to manipulate self-referential data structures, where the address of the current object is required.
+Occasionally, the **`this`** pointer is used directly—for example, to manipulate self-referential data structures, where the address of the current object is required.
 
 ## Example
 
@@ -133,41 +132,22 @@ your buffer
 
 ## Type of the `this` pointer
 
-The **`this`** pointer's type can be modified in the function declaration by the **`const`** and **`volatile`** keywords. To declare a function that has either of these attributes, add the keyword(s) after the function argument list.
-
-Consider an example:
-
-```cpp
-// type_of_this_pointer1.cpp
-class Point
-{
-    unsigned X() const;
-};
-int main()
-{
-}
-```
-
-The preceding code declares a member function, `X`, in which the **`this`** pointer is treated as a **`const`** pointer to a **`const`** object. Combinations of *cv-mod-list* options can be used, but they always modify the object pointed to by the **`this`** pointer, not the pointer itself. The following declaration declares function `X`, where the **`this`** pointer is a **`const`** pointer to a **`const`** object:
-
-```cpp
-// type_of_this_pointer2.cpp
-class Point
-{
-    unsigned X() const;
-};
-int main()
-{
-}
-```
-
-The type of **`this`** in a member function is described by the following syntax. The *`cv-qualifier-list`* is determined from the member function's declarator. It can be **`const`** or **`volatile`** (or both). *`class-type`* is the name of the class:
+The **`this`** pointer's type changes depending on whether the function declaration includes the **`const`** and/or **`volatile`** keywords. The following syntax describes the type of **`this`** in a member function:
 
 [*`cv-qualifier-list`*] *`class-type`* **`* const this`**
 
-In other words, the **`this`** pointer is always a **`const`** pointer. It can't be reassigned.  The **`const`** or **`volatile`** qualifiers used in the member function declaration apply to the class instance the **`this`** pointer points at, in the scope of that function.
+The member function's declarator determines *`cv-qualifier-list`*. It can be **`const`** or **`volatile`** (or both). *`class-type`* is the name of the class.
 
-The following table explains more about how these modifiers work.
+The **`this`** pointer can't be reassigned. The **`const`** or **`volatile`** qualifiers used in the member function declaration apply to the class instance the **`this`** pointer points at, in the scope of that function, as shown in the following table:
+
+| Member function declaration | type of `this` pointer for a class named `myClass` |
+|---|---|
+| `void Func()` | `myClass *` |
+| `void Func() const` | `const myClass *` |
+| `void Func() volatile` | `volatile myClass *` |
+| `void Func() const volatile` | `const volatile myClass *` |
+
+The following table explains more about `const` and `volatile`.
 
 ### Semantics of `this` modifiers
 
@@ -180,7 +160,7 @@ It's an error to pass a **`const`** object to a member function that isn't **`co
 
 Similarly, it's also an error to pass a **`volatile`** object to a member function that isn't **`volatile`**.
 
-Member functions declared as **`const`** can't change member data — in such functions, the **`this`** pointer is a pointer to a **`const`** object.
+Member functions declared as **`const`** can't change member data. In `const` functions, the **`this`** pointer is a pointer to a **`const`** object.
 
 > [!NOTE]
 > Constructors and destructors can't be declared as **`const`** or **`volatile`**. They can, however, be invoked on **`const`** or **`volatile`** objects.

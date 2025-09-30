@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Platform::StringReference Class"
 title: "Platform::StringReference Class"
-ms.date: "12/30/2016"
+description: "Learn more about: Platform::StringReference Class"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::StringReference::StringReference", "VCCORLIB/Platform::StringReference::Data", "VCCORLIB/Platform::StringReference::Length", "VCCORLIB/Platform::StringReference::GetHSTRING", "VCCORLIB/Platform::StringReference::GetString"]
-ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
 ---
 # Platform::StringReference Class
 
@@ -15,8 +14,6 @@ An optimization type that you can use to pass string data from `Platform::String
 ```cpp
 class StringReference
 ```
-
-### Remarks
 
 ### Members
 
@@ -80,8 +77,6 @@ __abi_HSTRING GetHSTRING() const;
 
 An `__abi_HSTRING` that contains the string data.
 
-### Remarks
-
 ## <a name="getstring"></a> StringReference::GetString Method
 
 Returns the contents of the string as a `Platform::String^`.
@@ -111,8 +106,6 @@ unsigned int Length() const;
 
 An unsigned integer that specifies the number of characters in the string.
 
-### Remarks
-
 ## <a name="operator-assign"></a> StringReference::operator= Operator
 
 Assigns the specified object to the current `StringReference` object.
@@ -140,7 +133,7 @@ A reference to an object of type `StringReference`.
 
 Because `StringReference` is a standard C++ class and not a ref class, it does not appear in the **Object Browser**.
 
-## <a name="operator-call"></a> StringReference::operator()  Operator
+## <a name="operator-call"></a> StringReference::operator() Operator
 
 Converts a `StringReference` object to a `Platform::String^` object.
 

@@ -6,8 +6,12 @@ items:
   items:
     - name: "AddressSanitizer overview"
       href: ../sanitizers/asan.md
+    - name: Continue on error walkthrough
+      href: ../sanitizers/asan-continue-on-error.md
     - name: "Build and language reference"
       href: ../sanitizers/asan-building.md
+    - name: "Runtime options"
+      href: ../sanitizers/asan-flags.md
     - name: "Runtime reference"
       href: ../sanitizers/asan-runtime.md
     - name: "Debugger integration"
@@ -57,5 +61,5 @@ items:
           href: ../sanitizers/error-strncat-param-overlap.md
         - name: "use-after-poison error"
           href: ../sanitizers/error-use-after-poison.md
-    - name: "Known issues"
+    - name: "Known issues and limitations"
       href: ../sanitizers/asan-known-issues.md

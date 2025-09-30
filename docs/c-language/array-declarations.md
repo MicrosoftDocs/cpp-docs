@@ -25,7 +25,7 @@ An "array declaration" names the array and specifies the type of its elements. I
 *`declarator`*:\
 &emsp;*`pointer`*<sub>opt</sub> *`direct-declarator`*
 
-*`direct-declarator`*: /\* A function declarator \*/\
+*`direct-declarator`*:\
 &emsp;*`direct-declarator`*  **`[`**  *`constant-expression`*<sub>opt</sub> **`]`**
 
 Because *`constant-expression`* is optional, the syntax has two forms:

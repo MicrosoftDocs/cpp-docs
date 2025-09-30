@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Project Build Error PRJ0004"
 title: "Project Build Error PRJ0004"
-ms.date: "08/27/2018"
+description: "Learn more about: Project Build Error PRJ0004"
+ms.date: 08/27/2018
 f1_keywords: ["PRJ0004"]
 helpviewer_keywords: ["PRJ0004"]
-ms.assetid: 1858769f-0be4-40ed-ab70-2cee550488c7
 ---
 # Project Build Error PRJ0004
 
 > Could not generate command line for the '*tool*' tool.
+
+## Remarks
 
 One or more properties were specified in such a way as to make the syntax of the call to *tool* illegal:
 

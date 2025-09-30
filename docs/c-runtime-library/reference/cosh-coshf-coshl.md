@@ -1,7 +1,7 @@
 ---
 title: "cosh, coshf, coshl"
 description: "API reference for cosh, coshf, and coshl; which calculate the hyperbolic cosine of a floating-point value."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["cosh", "coshf", "coshl", "_o_cosh", "_o_coshf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,7 +19,7 @@ Calculates the hyperbolic cosine.
 double cosh( double x );
 float coshf( float x );
 long double coshl( long double x );
-#define cosh(X) // Requires C11 or higher
+#define cosh(X) // Requires C11 or later
 
 float cosh( float x );  // C++ only
 long double cosh( long double x );  // C++ only

@@ -1,26 +1,22 @@
 ---
 title: "MSVC Linker options"
 description: "A list of the options supported by the Microsoft LINK linker."
-ms.date: 09/27/2022
+ms.date: 03/14/2025
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
-ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
 ---
 # Linker options
 
 LINK.exe links Common Object File Format (COFF) object files and libraries to create an executable (EXE) file or a dynamic-link library (DLL).
 
-The following table lists options for LINK.exe. For more information about LINK, see:
+The following table lists options for `LINK.exe`. For more information about LINK, see:
 
 - [Compiler-controlled LINK options](compiler-controlled-link-options.md)
-
 - [LINK input files](link-input-files.md)
-
 - [LINK output](link-output.md)
-
 - [Reserved words](reserved-words.md)
 
-On the command line, linker options aren't case-sensitive; for example, `/base` and `/BASE` mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
+Linker options aren't case-sensitive; for example, `/base` and `/BASE` mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
 
 You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to specify some linker options.
 
@@ -33,6 +29,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/ALLOWBIND`](allowbind-prevent-dll-binding.md) | Specifies that a DLL can't be bound. |
 | [`/ALLOWISOLATION`](allowisolation-manifest-lookup.md) | Specifies behavior for manifest lookup. |
 | [`/APPCONTAINER`](appcontainer-windows-store-app.md) | Specifies whether the app must run within an appcontainer process environment. |
+| [`/ARM64XFUNCTIONPADMINX64`](arm64-function-pad-min-x64.md) | Specifies the minimum number of bytes of padding between x64 functions in ARM64X images.<sup>17.8</sup> |
 | [`/ASSEMBLYDEBUG`](assemblydebug-add-debuggableattribute.md) | Adds the <xref:System.Diagnostics.DebuggableAttribute> to a managed image. |
 | [`/ASSEMBLYLINKRESOURCE`](assemblylinkresource-link-to-dotnet-framework-resource.md) | Creates a link to a managed resource. |
 | [`/ASSEMBLYMODULE`](assemblymodule-add-a-msil-module-to-the-assembly.md) | Specifies that a Microsoft intermediate language (MSIL) module should be imported into the assembly. |
@@ -43,7 +40,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/CLRIMAGETYPE`](clrimagetype-specify-type-of-clr-image.md) | Sets the type (IJW, pure, or safe) of a CLR image. |
 | [`/CLRSUPPORTLASTERROR`](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md) | Preserves the last error code of functions that are called through the P/Invoke mechanism. |
 | [`/CLRTHREADATTRIBUTE`](clrthreadattribute-set-clr-thread-attribute.md) | Specifies the threading attribute to apply to the entry point of your CLR program. |
-| [`/CLRUNMANAGEDCODECHECK`](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md) | Specifies whether the linker will apply the `SuppressUnmanagedCodeSecurity` attribute to linker-generated P/Invoke stubs that call from managed code into native DLLs. |
+| [`/CLRUNMANAGEDCODECHECK`](clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md) | Specifies whether the linker applies the `SuppressUnmanagedCodeSecurity` attribute to linker-generated P/Invoke stubs that call from managed code into native DLLs. |
 | [`/DEBUG`](debug-generate-debug-info.md) | Creates debugging information. |
 | [`/DEBUGTYPE`](debugtype-debug-info-options.md) | Specifies which data to include in debugging information. |
 | [`/DEF`](def-specify-module-definition-file.md) | Passes a module-definition (.def) file to the linker. |
@@ -55,6 +52,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/DLL`](dll-build-a-dll.md) | Builds a DLL. |
 | [`/DRIVER`](driver-windows-nt-kernel-mode-driver.md) | Creates a kernel mode driver. |
 | [`/DYNAMICBASE`](dynamicbase-use-address-space-layout-randomization.md) | Specifies whether to generate an executable image that's rebased at load time by using the address space layout randomization (ASLR) feature. |
+| [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) | Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) and step in anywhere with on-demand function deoptimization. |
 | [`/ENTRY`](entry-entry-point-symbol.md) | Sets the starting address. |
 | [`/ERRORREPORT`](errorreport-report-internal-linker-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 | [`/EXPORT`](export-exports-a-function.md) | Exports a function. |
@@ -75,11 +73,13 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/INCREMENTAL`](incremental-link-incrementally.md) | Controls incremental linking. |
 | [`/INFERASANLIBS`](inferasanlibs.md) | Uses inferred sanitizer libraries. |
 | [`/INTEGRITYCHECK`](integritycheck-require-signature-check.md) | Specifies that the module requires a signature check at load time. |
+| [`/KERNEL`](link-code-for-kernel-mode.md) | Create a kernel mode binary. |
 | [`/KEYCONTAINER`](keycontainer-specify-a-key-container-to-sign-an-assembly.md) | Specifies a key container to sign an assembly. |
 | [`/KEYFILE`](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) | Specifies a key or key pair to sign an assembly. |
 | [`/LARGEADDRESSAWARE`](largeaddressaware-handle-large-addresses.md) | Tells the compiler that the application supports addresses larger than 2 gigabytes |
 | [`/LIBPATH`](libpath-additional-libpath.md) | Specifies a path to search before the environmental library path. |
 | [`/LINKREPRO`](linkrepro.md) | Specifies a path to generate link repro artifacts in. |
+| [`/LINKREPROFULLPATHRSP`](link-repro-full-path-rsp.md) | Generates a response file containing the absolute paths to all the files that the linker took as input. |
 | [`/LINKREPROTARGET`](linkreprotarget.md) | Generates a link repro only when producing the specified target.<sup>16.1</sup> |
 | [`/LTCG`](ltcg-link-time-code-generation.md) | Specifies link-time code generation. |
 | [`/MACHINE`](machine-specify-target-platform.md) | Specifies the target platform. |
@@ -96,6 +96,7 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/NOASSEMBLY`](noassembly-create-a-msil-module.md) | Suppresses the creation of a .NET Framework assembly. |
 | [`/NODEFAULTLIB`](nodefaultlib-ignore-libraries.md) | Ignores all (or the specified) default libraries when external references are resolved. |
 | [`/NOENTRY`](noentry-no-entry-point.md) | Creates a resource-only DLL. |
+| [`/NOFUNCTIONPADSECTION`](no-function-pad-section.md) | Disables function padding for functions in the specified section.<sup>17.8</sup> |
 | [`/NOLOGO`](nologo-suppress-startup-banner-linker.md) | Suppresses the startup banner. |
 | [`/NXCOMPAT`](nxcompat-compatible-with-data-execution-prevention.md) | Marks an executable as verified to be compatible with the Windows Data Execution Prevention feature. |
 | [`/OPT`](opt-optimizations.md) | Controls LINK optimizations. |
@@ -130,7 +131,8 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/WINMDDELAYSIGN`](winmddelaysign-partially-sign-a-winmd.md) | Partially signs a Windows Runtime Metadata (*`.winmd`*) file by placing the public key in the winmd file. |
 | [`/WX`](wx-treat-linker-warnings-as-errors.md) | Treats linker warnings as errors. |
 
-<sup>16.1</sup> This option is available starting in Visual Studio 2019 version 16.1.
+<sup>16.1</sup> This option is available starting in Visual Studio 2019 version 16.1.\
+<sup>17.8</sup> This option is available starting in Visual Studio 2022 version 17.8.
 
 ## See also
 

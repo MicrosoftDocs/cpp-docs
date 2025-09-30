@@ -1,19 +1,19 @@
 ---
-description: "Learn more about: day Class"
 title: "day class"
+description: "Learn more about: day Class"
 ms.date: 09/07/2021
-f1_keywords: ["chrono/std::chrono::day", "chrono/std::chrono::day::ok", "chrono/std::chrono::day:operator++", "chrono/std::chrono::day::operator--", "chrono/std::chrono::day::operator unsigned"]
+f1_keywords: ["chrono/std::chrono::day", "chrono/std::chrono::day::ok", "chrono/std::chrono::day::operator++", "chrono/std::chrono::day::operator--", "chrono/std::chrono::day::operator unsigned"]
 helpviewer_keywords: ["std::chrono [C++], day"]
 dev_langs: ["C++"]
 ---
-# `day` class  
+# `day` class
 
 Represents a day of the month. For example, the 25th day of the month.
 
 ## Syntax
 
 ```cpp
-class day; // C++ 20
+class day; // C++20
 ```
 
 ## Remarks

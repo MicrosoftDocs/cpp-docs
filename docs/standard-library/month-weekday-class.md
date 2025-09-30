@@ -1,20 +1,20 @@
 ---
-description: "Learn more about: month_weekday Class"
 title: "month_weekday class"
-ms.date: "06/28/2021"
+description: "Learn more about: month_weekday Class"
+ms.date: 06/28/2021
 f1_keywords: ["chrono/std::chrono::month_weekday", "chrono/std::chrono::month_weekday::weekday", "chrono/std::chrono::month_weekday::month", "chrono/std::chrono::month_weekday::ok", "chrono/std::chrono::month_weekday::weekday_indexed"]
 helpviewer_keywords: ["std::chrono [C++], month_weekday"]
 dev_langs: ["C++"]
 ---
 
-# `month_weekday` class  
+# `month_weekday` class
 
 Represents the nth weekday of a specific month.
 
 ## Syntax
 
 ```cpp
-class month_weekday; // C++ 20
+class month_weekday; // C++20
 ```
 
 ## Remarks
@@ -64,7 +64,7 @@ Construct a `month_weekday` with a weekday value of *`wdi`*.
 
 ### Remarks: Constructor
 
-For information about C++ 20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `month_weekday`
 

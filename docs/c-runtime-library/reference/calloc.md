@@ -96,4 +96,4 @@ Allocated 40 long integers
 [Memory allocation](../memory-allocation.md)\
 [`free`](free.md)\
 [`malloc`](malloc.md)\
-[`realloc`](realloc.md)\
+[`realloc`](realloc.md)

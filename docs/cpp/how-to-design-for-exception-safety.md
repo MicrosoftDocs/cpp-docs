@@ -3,7 +3,6 @@ description: "Learn more about: How to: Design for exception safety"
 title: "How to: Design for exception safety"
 ms.custom: "how-to"
 ms.date: "11/19/2019"
-ms.topic: "conceptual"
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
 ---
 # How to: Design for exception safety

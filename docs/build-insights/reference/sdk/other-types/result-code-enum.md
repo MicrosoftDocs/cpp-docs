@@ -3,6 +3,7 @@ title: "RESULT_CODE enum"
 description: "The C++ Build Insights SDK RESULT_CODE enum reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "RESULT_CODE", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.topic: reference
 ---
 # RESULT_CODE enum
 

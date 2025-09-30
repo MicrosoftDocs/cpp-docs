@@ -16,9 +16,9 @@ When you debug a program that uses the C run-time library, these debugging techn
 
 ## CRT debug library use
 
-The C runtime (CRT) library provides extensive debugging support. To use one of the CRT debug libraries, you must link with [`/DEBUG`](/cpp/build/reference/debug-generate-debug-info) and compile with [`/MDd`, `/MTd`, or `/LDd`](../build/reference/md-mt-ld-use-run-time-library.md).
+The C runtime (CRT) library provides extensive debugging support. To use one of the CRT debug libraries, you must link with [`/DEBUG`](../build/reference/debug-generate-debug-info.md) and compile with [`/MDd`, `/MTd`, or `/LDd`](../build/reference/md-mt-ld-use-run-time-library.md).
 
-The main definitions and macros for CRT debugging can be found in the`<crtdbg.h>` header file.
+The main definitions and macros for CRT debugging can be found in the `<crtdbg.h>` header file.
 
 The functions in the CRT debug libraries are compiled with debug information ([/Z7, /Zd, /Zi, /ZI (Debug Information Format)](../build/reference/z7-zi-zi-debug-information-format.md)) and without optimization. Some functions contain assertions to verify parameters that are passed to them, and source code is provided. With this source code, you can step into CRT functions to confirm that the functions are working as you expect and check for bad parameters or memory states. (Some CRT technology is proprietary and doesn't provide source code for exception handling, floating point, and a few other routines.)
 
@@ -26,7 +26,7 @@ For more information on the various run-time libraries you can use, see [C Run-T
 
 ## Macros for reporting
 
-For debugging, you can use the `_RPTn` and `_RPTFn` macros, defined in`<crtdbg.h>`, to replace the use of `printf` statements. You don't need to enclose them in `#ifdef` directives, because they automatically disappear in your release build when `_DEBUG` isn't defined.
+For debugging, you can use the `_RPTn` and `_RPTFn` macros, defined in `<crtdbg.h>`, to replace the use of `printf` statements. You don't need to enclose them in `#ifdef` directives, because they automatically disappear in your release build when `_DEBUG` isn't defined.
 
 | Macro | Description |
 |---|---|
@@ -81,7 +81,7 @@ You can write several kinds of custom debug hook functions that allow you to ins
 
 ### Client block hook functions
 
-If you want to validate or report the contents of the data stored in `_CLIENT_BLOCK` blocks, you can write a function specifically for this purpose. The function that you write must have a prototype similar to the following, as defined in`<crtdbg.h>`:
+If you want to validate or report the contents of the data stored in `_CLIENT_BLOCK` blocks, you can write a function specifically for this purpose. The function that you write must have a prototype similar to the following, as defined in `<crtdbg.h>`:
 
 ```cpp
 void YourClientDump(void *, size_t)
@@ -91,7 +91,7 @@ In other words, your hook function should accept a `void` pointer to the beginni
 
 Once you've installed your hook function using [_CrtSetDumpClient](./reference/crtsetdumpclient.md), it will be called every time a `_CLIENT_BLOCK` block is dumped. You can then use [_CrtReportBlockType](./reference/crtreportblocktype.md) to get information on the type or subtype of dumped blocks.
 
-The pointer to your function that you pass to `_CrtSetDumpClient` is of type `_CRT_DUMP_CLIENT`, as defined in`<crtdbg.h>`:
+The pointer to your function that you pass to `_CrtSetDumpClient` is of type `_CRT_DUMP_CLIENT`, as defined in `<crtdbg.h>`:
 
 ```cpp
 typedef void (__cdecl *_CRT_DUMP_CLIENT)
@@ -113,7 +113,7 @@ int YourAllocHook(int nAllocType, void *pvData,
         const unsigned char * szFileName, int nLine )
 ```
 
-The pointer that you pass to [`_CrtSetAllocHook`](./reference/crtsetallochook.md) is of type `_CRT_ALLOC_HOOK`, as defined in`<crtdbg.h>`:
+The pointer that you pass to [`_CrtSetAllocHook`](./reference/crtsetallochook.md) is of type `_CRT_ALLOC_HOOK`, as defined in `<crtdbg.h>`:
 
 ```cpp
 typedef int (__cdecl * _CRT_ALLOC_HOOK)
@@ -169,5 +169,5 @@ If the hook handles the message in question completely, so that no further repor
 
 ## See also
 
-- [Debugging Native Code](/visualstudio/debugger/debugging-native-code.md)
-- [Debugger Security](/visualstudio/debugger/debugger-security.md)
+- [Debugging Native Code](/visualstudio/debugger/debugging-native-code)
+- [Debugger Security](/visualstudio/debugger/debugger-security)

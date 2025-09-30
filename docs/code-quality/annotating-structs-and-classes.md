@@ -1,8 +1,8 @@
 ---
-description: "Learn more about: Annotating Structs and Classes"
 title: Annotating Structs and Classes
+description: "Learn more about: Annotating Structs and Classes"
 ms.date: 06/28/2019
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 f1_keywords:
   - "_Field_size_bytes_part_"
   - "_Field_size_bytes_full_opt_"
@@ -19,7 +19,6 @@ f1_keywords:
   - "_Field_size_full_"
   - "_Field_size_full_opt_"
   - "_Field_z_"
-ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 ---
 # Annotating Structs and Classes
 
@@ -52,13 +51,11 @@ You can annotate struct and class members by using annotations that act like inv
      Applies to struct or class declaration.  Indicates that a valid object of that type may be larger than the declared type, with the number of bytes being specified by `size`.  For example:
 
     ```cpp
-
     typedef _Struct_size_bytes_(nSize)
     struct MyStruct {
         size_t nSize;
         ...
     };
-
     ```
 
      The buffer size in bytes of a parameter `pM` of type `MyStruct *` is then taken to be:

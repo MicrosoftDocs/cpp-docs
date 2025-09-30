@@ -1,14 +1,13 @@
 ---
 title: "conj, conjf, conjl"
 description: "API reference for conj, conjf, and conjl; which retrieve the complex conjugate of a complex number."
-ms.date: "9/2/2020"
+ms.date: 9/2/2020
 api_name: ["conj", "conjf", "conjl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["conj", "conjf", "conjl", "complex/conj", "complex/conjf", "complex/conjl"]
 helpviewer_keywords: ["conj function", "conjf function", "conjl function"]
-ms.assetid: 792fccfa-19c6-4890-99f9-a3b89effccd6
 ---
 # `conj`, `conjf`, `conjl`
 
@@ -32,7 +31,7 @@ _Fcomplex conjf(
 _Lcomplex conjl(
    _Lcomplex z
 );
-#define conj(X) // Requires C11 or higher
+#define conj(X) // Requires C11 or later
 ```
 
 ### Parameters

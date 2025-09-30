@@ -64,7 +64,7 @@ Another use for `empty_view` is splitting a [`split_view`](split-view-class.md) 
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 
@@ -91,7 +91,7 @@ The best way to create a `empty_view` is by using the [`empty`](range-adaptors.m
 ### Example `empty_view`
 
 ```cpp
-// requires /std:c++20 or higher
+// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 
@@ -256,7 +256,7 @@ Returns `false`.
 ### Example `(bool)`
 
 ```cpp
-// requires /std:c++20 or higher
+// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 

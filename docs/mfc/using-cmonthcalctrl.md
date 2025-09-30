@@ -4,6 +4,7 @@ title: "Using CMonthCalCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], about CMonthCalCtrl class"]
 ms.assetid: 2be0e8c2-ed03-4853-aea1-4461eba18611
+ms.topic: concept-article
 ---
 # Using CMonthCalCtrl
 

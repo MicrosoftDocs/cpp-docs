@@ -1,14 +1,13 @@
 ---
 description: "Learn more about: Mutable Data Members (C++)"
 title: "Mutable Data Members (C++)"
-ms.date: "11/04/2016"
+ms.date: "03/14/2024"
 f1_keywords: ["mutable_cpp"]
 helpviewer_keywords: ["mutable keyword [C++]"]
-ms.assetid: ebe89746-3d36-43a8-8d69-f426af23f551
 ---
 # Mutable Data Members (C++)
 
-This keyword can only be applied to non-static and non-const data members of a class. If a data member is declared **`mutable`**, then it is legal to assign a value to this data member from a **`const`** member function.
+This keyword can only be applied to non-static, non-const, and non-reference data members of a class. If a data member is declared **`mutable`**, then it is legal to assign a value to this data member from a **`const`** member function.
 
 ## Syntax
 
@@ -25,19 +24,15 @@ For example, the following code will compile without error because `m_accessCoun
 class X
 {
 public:
-   bool GetFlag() const
-   {
-      m_accessCount++;
-      return m_flag;
-   }
+    bool GetFlag() const
+    {
+        m_accessCount++;
+        return m_flag;
+    }
 private:
-   bool m_flag;
-   mutable int m_accessCount;
+    bool m_flag;
+    mutable int m_accessCount;
 };
-
-int main()
-{
-}
 ```
 
 ## See also

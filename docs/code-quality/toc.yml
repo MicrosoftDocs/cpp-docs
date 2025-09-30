@@ -6,6 +6,8 @@ items:
   href: ../code-quality/code-analysis-for-c-cpp-overview.md
 - name: Quickstart
   href: ../code-quality/quick-start-code-analysis-for-c-cpp.md
+- name: Build reliable and secure programs
+  href: ../code-quality/build-reliable-secure-programs.md
 - name: Analyze C/C++ code for defects
   href: ../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md
 - name: Sample project
@@ -39,7 +41,7 @@ items:
     href: ../code-quality/intrinsic-functions.md
   - name: Best practices and examples (SAL)
     href: ../code-quality/best-practices-and-examples-sal.md
-- name: Specify additional code information by using _Analysis_assume_
+- name: Specify more code information by using _Analysis_assume_
   href: ../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md
 - name: C++ Core Guidelines checker warnings
   items:
@@ -140,6 +142,8 @@ items:
     href: ../code-quality/c26456.md
   - name: Warning C26457
     href: ../code-quality/c26457.md
+  - name: Warning C26459
+    href: ../code-quality/c26459.md
   - name: Warning C26460
     href: ../code-quality/c26460.md
   - name: Warning C26461
@@ -170,6 +174,8 @@ items:
     href: ../code-quality/c26477.md
   - name: Warning C26478
     href: ../code-quality/c26478.md
+  - name: Warning C26479
+    href: ../code-quality/c26479.md
   - name: Warning C26481
     href: ../code-quality/c26481.md
   - name: Warning C26482
@@ -477,6 +483,20 @@ items:
     href: ../code-quality/c6389.md
   - name: Warning C6390
     href: ../code-quality/c6390.md
+  - name: Warning C6392
+    href: ../code-quality/c6392.md
+  - name: Warning C6393
+    href: ../code-quality/c6393.md
+  - name: Warning C6394
+    href: ../code-quality/c6394.md
+  - name: Warning C6395
+    href: ../code-quality/c6395.md
+  - name: Warning C6396
+    href: ../code-quality/c6396.md
+  - name: Warning C6397
+    href: ../code-quality/c6397.md
+  - name: Warning C6398
+    href: ../code-quality/c6398.md
   - name: Warning C6400
     href: ../code-quality/c6400.md
   - name: Warning C6401
@@ -571,6 +591,10 @@ items:
     href: ../code-quality/c26117.md
   - name: Warning C26130
     href: ../code-quality/c26130.md
+  - name: Warning C26132
+    href: c26132.md
+  - name: Warning C26133
+    href: c26133.md
   - name: Warning C26135
     href: ../code-quality/c26135.md
   - name: Warning C26138
@@ -613,16 +637,30 @@ items:
     href: ../code-quality/c26830.md
   - name: Warning C26831
     href: ../code-quality/c26831.md
+  - name: Warning C26838
+    href: ../code-quality/c26838.md
+  - name: Warning C26839
+    href: ../code-quality/c26839.md
   - name: Warning C26832
     href: ../code-quality/c26832.md
   - name: Warning C26833
     href: ../code-quality/c26833.md
   - name: Warning C26835
     href: ../code-quality/c26835.md
+  - name: Warning C26837
+    href: ../code-quality/c26837.md
   - name: Warning C26859
     href: ../code-quality/c26859.md
   - name: Warning C26860
     href: ../code-quality/c26860.md
+  - name: Warning C26861
+    href: ../code-quality/c26861.md
+  - name: Warning C26862
+    href: ../code-quality/c26862.md
+  - name: Warning C26863
+    href: ../code-quality/c26863.md
+  - name: Warning C26864
+    href: ../code-quality/c26864.md
   - name: Warning C28020
     href: ../code-quality/c28020.md
   - name: Warning C28021

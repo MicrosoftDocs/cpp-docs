@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: high_resolution_clock struct"
 title: high_resolution_clock struct
+description: "Learn more about: high_resolution_clock struct"
 ms.custom: ""
 ms.date: 08/19/2021
-ms.technology: "cpp-standard-libraries"
 ms.topic: "reference"
-f1_keywords: ["chrono/std::chrono::high_resolution_clock", chrono/std::chrono::high_resolution_clock::now", "chrono/std::chrono::high_resolution_clock::is_steady constant"]
+f1_keywords: ["chrono/std::chrono::high_resolution_clock", "chrono/std::chrono::high_resolution_clock::now", "chrono/std::chrono::high_resolution_clock::is_steady constant"]
 helpviewer_keywords: ["std::chrono [C++], high_resolution_clock"]
 dev_langs: ["C++"]
 author: "tylermsft"

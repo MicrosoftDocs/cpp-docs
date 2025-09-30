@@ -67,8 +67,8 @@ If you don't want to convert ticks yourself, the `RawEvent` class provides membe
 [CPUTime](#cpu-time)\
 [Data](#data)\
 [Duration](#duration)\
-[EventId](#event-id)
-[EventInstanceId](#event-instance-id)
+[EventId](#event-id)\
+[EventInstanceId](#event-instance-id)\
 [EventName](#event-name)\
 [EventWideName](#event-wide-name)\
 [ExclusiveCPUTicks](#exclusive-cpu-ticks)\

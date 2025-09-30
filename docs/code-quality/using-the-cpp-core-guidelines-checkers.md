@@ -2,7 +2,7 @@
 title: Using the C++ Core Guidelines checkers
 description: "How to set up and use the Microsoft C++ Code Analysis rules for C++ Core Guidelines."
 ms.date: 06/21/2023
-ms.topic: "conceptual"
+ms.topic: "how-to"
 dev_langs:
  - CPP
 ---
@@ -30,7 +30,7 @@ A subset of C++ Core Check rules is included in the Microsoft Native Recommended
 
 ![Property page for Code Analysis General settings.](media/cppcorecheck_codeanalysis_general.png)
 
-To enable additional Core Check rules, open the dropdown list and choose which rule sets you want to include:
+To enable more Core Check rules, open the dropdown list and choose which rule sets you want to include:
 
 ![Dropdown for additional C++ Core Check rule sets.](media/cppcorecheck_codeanalysis_extensions.png)
 
@@ -49,7 +49,7 @@ A subset of C++ Core Check rules is included in the Microsoft Native Recommended
 
 You can also choose to run all the supported C++ Core Check rules, or select your own subset to run:
 
-### To enable additional Core Check rules
+### To enable more Core Check rules
 
 1. Open the  **Property Pages** dialog for your project.
 
@@ -74,7 +74,7 @@ int main()
     int arr[10];           // warning C26494
     int* p = arr;          // warning C26485
 
-    [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1
+    [[gsl::suppress("bounds.1", justification : "This attribute suppresses Bounds rules #1")]]
     {
         int* q = p + 1;    // warning C26481 (suppressed)
         p = q++;           // warning C26481 (suppressed)
@@ -104,50 +104,50 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-The C++ Core Guidelines are there to help you write better and safer code. However, you may find an instance where a rule or a profile shouldn't be applied. It's easy to suppress it directly in the code. You can use the `[[gsl::suppress]]` attribute to keep C++ Core Check from detecting and reporting any violation of a rule in the following code block. You can mark individual statements to suppress specific rules. You can even suppress the entire bounds profile by writing `[[gsl::suppress(bounds)]]` without including a specific rule number.
+The C++ Core Guidelines are there to help you write better and safer code. However, you might find an instance where a rule or a profile shouldn't be applied. It's easy to suppress it directly in the code. You can use the `[[gsl::suppress]]` attribute to keep C++ Core Check from detecting and reporting any violation of a rule in the following code block. You can mark individual statements to suppress specific rules. You can even suppress the entire bounds profile by writing `[[gsl::suppress("bounds")]]` without including a specific rule number.
 
 ## Supported rule sets
 
-As new rules are added to the C++ Core Guidelines Checker, the number of warnings that are produced for pre-existing code may increase. You can use predefined rule sets to filter which kinds of rules to enable. You'll find reference articles for most rules under
+As new rules are added to the C++ Core Guidelines Checker, the number of warnings that are produced for pre-existing code might increase. You can use predefined rule sets to filter which kinds of rules to enable. You'll find reference articles for most rules under
 [Visual Studio C++ Core Check Reference](code-analysis-for-cpp-corecheck.md).
 
-- **Arithmetic Rules**: Rules to detect arithmetic [overflow](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [signed-unsigned operations](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned), and [bit manipulation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).<sup>15.6</sup>
+- **Arithmetic Rules**: Rules to detect arithmetic [overflow](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-overflow), [signed-unsigned operations](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-unsigned), and [bit manipulation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-nonnegative).<sup>15.6</sup>
 
-- **Bounds Rules**: Enforce the [Bounds profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).<sup>15.3</sup>
+- **Bounds Rules**: Enforce the [Bounds profile of the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#probounds-bounds-safety-profile).<sup>15.3</sup>
 
-- **Class Rules**: A few rules that focus on proper use of special member functions and virtual specifications. They're a subset of the checks recommended for [classes and class hierarchies](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).<sup>15.5</sup>
+- **Class Rules**: A few rules that focus on proper use of special member functions and virtual specifications. They're a subset of the checks recommended for [classes and class hierarchies](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-class).<sup>15.5</sup>
 
-- **Concurrency Rules**: A single rule, which catches bad guard object declarations. For more information, see [guidelines related to concurrency](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).<sup>15.5</sup>
+- **Concurrency Rules**: A single rule, which catches bad guard object declarations. For more information, see [guidelines related to concurrency](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-concurrency).<sup>15.5</sup>
 
-- **Const Rules**: Enforce [const-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).<sup>15.3</sup>
+- **Const Rules**: Enforce [const-related checks from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con-constants-and-immutability).<sup>15.3</sup>
 
-- **Declaration Rules**: A couple of rules from the [interfaces guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) that focus on how global variables are declared.<sup>15.5</sup>
+- **Declaration Rules**: A couple of rules from the [interfaces guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-interfaces) that focus on how global variables are declared.<sup>15.5</sup>
 
-- **Enum Rules**: These rules enforce [enum-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum).<sup>16.3</sup>
+- **Enum Rules**: These rules enforce [enum-related checks from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-enum).<sup>16.3</sup>
 
 - **Experimental Rules** These are experimental C++ Core Check rules that are useful but not ready for everyday use. Try them out and [provide feedback](https://aka.ms/feedback/suggest?space=62).<sup>16.0</sup>
 
-- **Function Rules**: Two checks that help with adoption of the **`noexcept`** specifier. They're part of the guidelines for [clear function design and implementation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).<sup>15.5</sup>
+- **Function Rules**: Two checks that help with adoption of the **`noexcept`** specifier. They're part of the guidelines for [clear function design and implementation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-functions).<sup>15.5</sup>
 
-- **GSL Rules**: These rules enforce checks related to the [Guidelines Support Library from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl).<sup>15.7</sup>
+- **GSL Rules**: These rules enforce checks related to the [Guidelines Support Library from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-gsl).<sup>15.7</sup>
 
-- **Lifetime Rules**: These rules enforce the [Lifetime profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile).<sup>15.7</sup>
+- **Lifetime Rules**: These rules enforce the [Lifetime profile of the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#prolifetime-lifetime-safety-profile).<sup>15.7</sup>
 
-- **Owner Pointer Rules**: Enforce [resource-management checks related to owner\<T> from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).<sup>15.3</sup>
+- **Owner Pointer Rules**: Enforce [resource-management checks related to owner\<T> from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management).<sup>15.3</sup>
 
-- **Raw Pointer Rules**: Enforce [resource-management checks related to raw pointers from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).<sup>15.3</sup>
+- **Raw Pointer Rules**: Enforce [resource-management checks related to raw pointers from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management).<sup>15.3</sup>
 
-- **Shared pointer Rules**: It's part of [resource management](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) guidelines enforcement.<sup>15.5</sup> We added a few rules specific to how shared pointers are passed into functions or used locally.
+- **Shared pointer Rules**: It's part of [resource management](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-resource) guidelines enforcement.<sup>15.5</sup> We added a few rules specific to how shared pointers are passed into functions or used locally.
 
-- **STL Rules**: These rules enforce checks related to the [C++ Standard Library (STL) from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib).<sup>15.7</sup>
+- **STL Rules**: These rules enforce checks related to the [C++ Standard Library (STL) from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-stdlib).<sup>15.7</sup>
 
-- **Style Rules**: One simple but important check, which bans use of [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto).<sup>15.5</sup> It's the first step to improve your coding style and use of expressions and statements in C++.
+- **Style Rules**: One simple but important check, which bans use of [goto](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-goto).<sup>15.5</sup> It's the first step to improve your coding style and use of expressions and statements in C++.
 
-- **Type Rules**: Enforce the [Type profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).<sup>15.3</sup>
+- **Type Rules**: Enforce the [Type profile of the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#prosafety-type-safety-profile).<sup>15.3</sup>
 
-- **Unique Pointer Rules**: Enforce [resource-management checks related to types with unique pointer semantics from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).<sup>15.3</sup>
+- **Unique Pointer Rules**: Enforce [resource-management checks related to types with unique pointer semantics from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management).<sup>15.3</sup>
 
-- **C++ Core Check Rules**: This rule set contains all the currently implemented checks from the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-core-guidelines), except for the Experimental rules.
+- **C++ Core Check Rules**: This rule set contains all the currently implemented checks from the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c-core-guidelines), except for the Experimental rules.
 
 <sup>15.3</sup> These rules first appeared in Visual Studio 2017 version 15.3\
 <sup>15.5</sup> These rules first appeared in Visual Studio 2017 version 15.5\
@@ -197,19 +197,19 @@ The Microsoft C++ compiler has limited support for the `[[gsl::suppress]]` attri
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
-[[gsl::suppress(r.11)]] new int;
+[[gsl::suppress("r.11")]] new int;
 
 // Suppress all warnings from the 'r' rule group (resource management) in block.
-[[gsl::suppress(r)]]
+[[gsl::suppress("r")]]
 {
     new int;
 }
 
 // Suppress only one specific warning number.
-// For declarations, you may need to use the surrounding block.
+// For declarations, you might need to use the surrounding block.
 // Macros are not expanded inside of attributes.
 // Use plain numbers instead of macros from the warnings.h.
-[[gsl::suppress(26400)]]
+[[gsl::suppress("26400")]]
 {
     int *p = new int;
 }
@@ -243,7 +243,7 @@ Sometimes it's useful to do focused code analysis and still use the Visual Studi
 
 1. Choose **Configuration Properties** > **C/C++** > **Command Line** > **Additional Options** and add *`/analyze:plugin EspXEngine.dll`*
 
-1. Disable the use of precompiled header (**Configuration Properties** > **C/C++** > **Precompiled Headers**). It's necessary because the extensions engine may attempt to read its internal information from the precompiled header (PCH). If the PCH was compiled with default project options, it won't be compatible.
+1. Disable the use of precompiled header (**Configuration Properties** > **C/C++** > **Precompiled Headers**). It's necessary because the extensions engine might attempt to read its internal information from the precompiled header (PCH). If the PCH was compiled with default project options, it won't be compatible.
 
 1. Rebuild the project. The common PREFast checks should run on all files. Because the C++ Core Guidelines Checker isn't enabled by default, it should only run on the file that's configured to use it.
 
@@ -299,13 +299,13 @@ Code Analysis requires a few environment variables and compiler command-line opt
 
 ## Use the Guideline Support Library
 
-The Guideline Support Library (GSL) is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL project is available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL). The library is open-source, so you can view the sources, make comments, or contribute. You can also use the [vcpkg](https://vcpkg.io/) package manager to download and install the library locally.
+The Guideline Support Library (GSL) is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL project is available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL). The library is open-source, so you can view the sources, make comments, or contribute. You can also use the [vcpkg](/vcpkg/) package manager to download and install the library locally.
 
 ::: moniker range="msvc-140"
 
 ## <a name="vs2015_corecheck"></a> Use the C++ Core Check guidelines in Visual Studio 2015 projects
 
-If you use Visual Studio 2015, the C++ Core Check code analysis rule sets aren't installed by default. Additional steps are needed before you can enable the C++ Core Check code analysis tools in Visual Studio 2015. Microsoft provides support for Visual Studio 2015 projects by using a NuGet package. The package is named Microsoft.CppCoreCheck, and it's available at [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). This package requires you have at least Visual Studio 2015 with Update 1 installed.
+If you use Visual Studio 2015, the C++ Core Check code analysis rule sets aren't installed by default. Other steps are needed before you can enable the C++ Core Check code analysis tools in Visual Studio 2015. Microsoft provides support for Visual Studio 2015 projects by using a NuGet package. The package is named Microsoft.CppCoreCheck, and it's available at [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). This package requires you have at least Visual Studio 2015 with Update 1 installed.
 
 The package also installs another package as a dependency, the header-only Guideline Support Library (GSL). The GSL is also available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
@@ -317,11 +317,11 @@ Because of the way the code analysis rules get loaded within Visual Studio 2015,
 
 1. In the **NuGet Package Manager** window, search for Microsoft.CppCoreCheck.
 
-    ![Nuget Package Manager window showing the CppCoreCheck package.](../code-quality/media/cppcorecheck_nuget_window.png)
+    ![Nuget Package Manager window showing the CppCoreCheck package.](media/cppcorecheck_nuget_window.png)
 
 1. Select the Microsoft.CppCoreCheck package and then choose the **Install** button to add the rules to your project.
 
-   The NuGet package adds an additional MSBuild *`.targets`* file to your project that is invoked when you enable code analysis on your project. The *`.targets`* file adds the C++ Core Check rules as an additional extension to the Visual Studio code analysis tool. When the package is installed, you can use the Property Pages dialog to enable or disable the released and experimental rules.
+   The NuGet package adds an MSBuild *`.targets`* file to your project that is invoked when you enable code analysis on your project. The *`.targets`* file adds the C++ Core Check rules as another extension to the Visual Studio code analysis tool. When the package is installed, you can use the Property Pages dialog to enable or disable the released and experimental rules.
 
 ::: moniker-end
 

@@ -143,7 +143,7 @@ catch(CMemoryException* pEx)
    pEx->Delete();
    AfxAbort();
 }
-// If an exception occurrs in the CFile constructor,
+// If an exception occurs in the CFile constructor,
 // the language will free the memory allocated by new
 // and will not complete the assignment to pFile.
 // Thus, our clean-up code needs to test for NULL.

@@ -76,7 +76,7 @@ When a file is opened with the **"`a`"** or **"`a+`"** access type, all write op
 If **`t`** or **`b`** isn't given in *`mode`*, the translation mode is defined by the default-mode variable **`_fmode`**. If **`t`** or **`b`** is prefixed to the argument, the function fails and returns `NULL`. For a discussion of text and binary modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
 
 Regarding `T` and `D`:
-- `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](https://learn.microsoft.com/archive/blogs/larryosterman/its-only-temporary).
+- `T` avoids writing the file to disk as long as memory pressure doesn't require it. For more information, see `FILE_ATTRIBUTE_TEMPORARY` in [File attribute constants](/windows/win32/fileio/file-attribute-constants), and also this blog post [It's only temporary](/archive/blogs/larryosterman/its-only-temporary).
 - `D` specifies a regular file that is written to disk. The difference is that it's automatically deleted when it's closed.
 You can combine `TD` to get both semantics.
 
@@ -90,7 +90,6 @@ The argument *`shflag`* is a constant expression consisting of one of the follow
 | `_SH_DENYRD` | Denies read access to the file. |
 | `_SH_DENYRW` | Denies read and write access to the file. |
 | `_SH_DENYWR` | Denies write access to the file. |
-
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 

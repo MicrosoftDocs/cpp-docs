@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2050"
 title: "Compiler Error C2050"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2050"
+ms.date: 11/04/2016
 f1_keywords: ["C2050"]
 helpviewer_keywords: ["C2050"]
-ms.assetid: 66aaed7d-00db-4ce1-a9d6-4447c1cf07ce
 ---
 # Compiler Error C2050
 
-switch expression not integral
+> switch expression not integral
+
+## Remarks
 
 The **`switch`** expression evaluates to a noninteger value. To resolve the error, use only integral values in switch statements.
 
-The following sample generates C2050:
+## Example
+
+The following example generates C2050:
 
 ```cpp
 // C2050.cpp

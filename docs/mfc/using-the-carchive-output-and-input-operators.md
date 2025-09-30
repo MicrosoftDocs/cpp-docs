@@ -4,6 +4,7 @@ title: "Using the CArchive << and >> Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], loading from previously stored values", "CArchive class [MFC], storing and loading objects", "CArchive class [MFC], operators"]
 ms.assetid: 56aef326-02dc-4992-8282-f0a4b78a064e
+ms.topic: how-to
 ---
 # Using the CArchive `<<` and `>>` Operators
 

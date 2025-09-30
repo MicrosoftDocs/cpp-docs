@@ -1,14 +1,13 @@
 ---
 title: "fdim, fdimf, fdiml"
 description: "API reference for fdim, fdimf, and fdiml; which determines the positive difference between two values."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["fdim", "fdimf", "fdiml"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fdim", "fdimf", "fdiml", "math/fdim", "math/fdimf", "math/fdiml"]
 helpviewer_keywords: ["fdim function", "fdimf function", "fdiml function"]
-ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
 ---
 # `fdim`, `fdimf`, `fdiml`
 
@@ -42,7 +41,7 @@ long double fdiml(
    long double y
 );
 
-#define fdim(X) // Requires C11 or higher
+#define fdim(X) // Requires C11 or later
 ```
 
 ### Parameters
@@ -93,4 +92,4 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
 [`fmax`, `fmaxf`, `fmaxl`](fmax-fmaxf-fmaxl.md)\
-[`abs`, `labs`, `llabs`, `_abs64`](abs-labs-llabs-abs64.md)\
+[`abs`, `labs`, `llabs`, `_abs64`](abs-labs-llabs-abs64.md)

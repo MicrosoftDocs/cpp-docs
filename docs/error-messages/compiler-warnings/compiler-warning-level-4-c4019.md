@@ -1,20 +1,26 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4019"
 title: "Compiler Warning (level 4) C4019"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4019"
+ms.date: 11/04/2016
 f1_keywords: ["C4019"]
 helpviewer_keywords: ["C4019"]
-ms.assetid: 4ecfe85d-673f-4334-8154-36fe7f0b3444
 ---
 # Compiler Warning (level 4) C4019
 
-empty statement at global scope
+> empty statement at global scope
 
-A semicolon at global scope is not preceded by a statement.
+## Remarks
+
+A semicolon at global scope isn't preceded by a statement.
 
 This warning may be fixed if you remove the extra semicolon.
 
+> [!Important] 
+> This warning only applies to C programs.
+
 ## Example
+
+The following example generates C4019:
 
 ```c
 // C4019.c

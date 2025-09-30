@@ -62,7 +62,7 @@ The value in the `single_view` can be modified unless the template value is `con
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 
@@ -100,7 +100,7 @@ The best way to create a `single_view` is by using the [`views::single`](range-a
 ### Example `single_view`
 
 ```cpp
-/// requires /std:c++20 or higher
+/// requires /std:c++20 or later
 #include <ranges>
 #include <iostream>
 #include <string>

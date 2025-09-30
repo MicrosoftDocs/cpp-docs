@@ -245,7 +245,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_ocint"></a> DDX_OCInt
 
-The `DDX_OCInt` function manages the transfer of **`int`** (or **`long`**) data between a property of an OLE control in a dialog box, form view, or control view object and a **`int`** (or **`long`**) data member of the dialog box, form view, or control view object.
+The `DDX_OCInt` function manages the transfer of **`int`** (or **`long`**) data between a property of an OLE control in a dialog box, form view, or control view object and an **`int`** (or **`long`**) data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_OCInt(

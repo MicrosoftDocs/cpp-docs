@@ -7,7 +7,7 @@ helpviewer_keywords: ["Shadow bytes", "AddressSanitizer shadow bytes","Address S
 
 # AddressSanitizer shadow bytes
 
-We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of [`/fsanitize=address`](../build/reference/fsanitize.md). For further details, we refer you to the [seminal paper](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) and the [AddressSanitizer algorithm](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm).
+We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of [`/fsanitize=address`](../build/reference/fsanitize.md). For further details, we refer you to the initial research [AddressSanitizer - Serebryany, et al](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) and the [current AddressSanitizer algorithm documentation](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm).
 
 ## Core concept
 
@@ -18,6 +18,9 @@ One shadow byte describes how many bytes are currently accessible as follows:
 - 0 means all 8 bytes
 - 1-7 means one to seven bytes
 - Negative numbers encode context for the runtime to use for reporting diagnostics.
+
+> [!NOTE]
+> By default, entries in the shadow memory are zero-initialized. Therefore, ASan assumes that the memory is _addressable_ by default, i.e. valid to read and write. The shadow bytes will be populated with non-zero values as the program executes and the lifetime of variables and other allocations come to an end.
 
 ### Shadow byte legend
 

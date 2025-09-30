@@ -1,6 +1,6 @@
 ---
 title: "Error: heap-use-after-free"
-description: "Source examples and live debug screenshots for heap use after free errors."
+description: "Learn about the heap-use-after-free Address Sanitizer error."
 ms.date: 04/06/2023
 f1_keywords: ["heap-use-after-free"]
 helpviewer_keywords: ["heap-use-after-free error", "AddressSanitizer error heap-use-after-free"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["heap-use-after-free error", "AddressSanitizer error heap-
 # Error: `heap-use-after-free`
 
 > Address Sanitizer Error: Use of deallocated memory
+
+## Remarks
 
 We show three examples where storage in the heap can be allocated via `malloc`, `realloc` (C), and `new` (C++), along with a mistaken use of `volatile`.
 
@@ -144,11 +146,11 @@ The exception thrown dialog points to line 12, *x = 42, and says: Address Saniti
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

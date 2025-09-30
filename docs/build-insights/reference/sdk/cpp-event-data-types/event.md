@@ -43,7 +43,7 @@ public:
 
 ### Functions
 
-[Data](#data)
+[Data](#data)\
 [EventId](#event-id)\
 [EventInstanceId](#event-instance-id)\
 [EventName](#event-name)\

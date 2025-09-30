@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3867"
 title: "Compiler Error C3867"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3867"
+ms.date: 11/04/2016
 f1_keywords: ["C3867"]
 helpviewer_keywords: ["C3867"]
-ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
 ---
 # Compiler Error C3867
 
-'func': function call missing argument list; use '&func' to create a pointer to member
+> 'func': function call missing argument list; use '&func' to create a pointer to member
+
+## Remarks
 
 You tried to take the address of a member function without qualifying the member function with its class name and the address-of operator.
 
@@ -18,7 +19,7 @@ This error can also be generated as a result of compiler conformance work that w
 
 C3867 can be issued from the compiler with a misleading suggested resolution. Whenever possible, use the most derived class.
 
-The following sample generates C3867 and shows how to fix it.
+The following example generates C3867 and shows how to fix it.
 
 ```cpp
 // C3867_1.cpp
@@ -38,11 +39,11 @@ void Derived::Bar() {
 }
 ```
 
-The following sample generates C3867 and shows how to fix it.
+The following example generates C3867 and shows how to fix it.
 
 ```cpp
 // C3867_2.cpp
-#include<stdio.h>
+#include <stdio.h>
 
 struct S {
    char *func() {
@@ -68,7 +69,7 @@ int main() {
 }
 ```
 
-The following sample generates C3867 and shows how to fix it.
+The following example generates C3867 and shows how to fix it.
 
 ```cpp
 // C3867_3.cpp
@@ -85,7 +86,7 @@ int main() {
 }
 ```
 
-The following sample generates C3867.
+The following example generates C3867.
 
 ```cpp
 // C3867_4.cpp
@@ -107,7 +108,7 @@ public:
 };
 ```
 
-The following sample generates C3867.
+The following example generates C3867.
 
 ```cpp
 // C3867_5.cpp

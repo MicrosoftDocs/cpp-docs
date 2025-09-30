@@ -8,7 +8,7 @@ helpviewer_keywords: ["AgileEventSource class"]
 ---
 # AgileEventSource Class
 
-Represents an event that is raised by a agile component, which is a component that can be accessed from any thread. Inherits from [EventSource](eventsource-class.md) and overrides the `Add` member function with an additional type parameter for specifying options for how to invoke the agile event.
+Represents an event that is raised by an agile component, which is a component that can be accessed from any thread. Inherits from [EventSource](eventsource-class.md) and overrides the `Add` member function with an additional type parameter for specifying options for how to invoke the agile event.
 
 ## Syntax
 

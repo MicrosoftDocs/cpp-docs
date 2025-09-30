@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <set> functions"
 title: "<set> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <set> functions"
+ms.date: 11/04/2016
 f1_keywords: ["set/std::swap (map)", "set/std::swap (multiset)"]
-ms.assetid: d1277d14-8502-46c0-b820-bcda820f9406
 ---
 # `<set>` functions
 
@@ -63,4 +62,4 @@ in the algorithm class works by assignment and is a slow operation. The speciali
 
 ### Example
 
-See the code example for the member class [multiset::swap](../standard-library/multiset-class.md#swap)for an example of the use of the template version of `swap`.
+See the code example for the member class [multiset::swap](../standard-library/multiset-class.md#swap) for an example of the use of the template version of `swap`.

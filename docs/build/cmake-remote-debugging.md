@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Debug a CMake project on a remote Windows machine"
+description: "How to use Visual Studio C++ on Windows to create and build a CMake project. You'll then deploy and debug it on a remote Windows machine."
 ms.date: "12/4/2020"
 ms.topic: tutorial
-description: "How to use Visual Studio C++ on Windows to create and build a CMake project. You'll then deploy and debug it on a remote Windows machine."
 ---
 
 # Tutorial: Debug a CMake project on a remote Windows machine
@@ -115,7 +115,7 @@ For example, on the remote machine, from the Visual Studio Remote Debugger menu 
 
 Then, in Visual Studio on the host machine, update the *`launch.vs.json`* file to match. For example, if you choose **No Authentication** on the remote debugger, update the *`launch.vs.json`* file in your project by adding `"authenticationType": "none"` to the `configurations` section *`launch.vs.json`*. Otherwise, `"authenticationType"` defaults to `"windows"` and doesn't need to be explicitly stated. This example shows a *`launch.vs.json`* file configured for no authentication:
 
-``` XAML
+```XAML
 {
   "version": "0.2.1",
   "defaults": {},

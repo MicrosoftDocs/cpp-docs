@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _calloc_dbg"
 title: "_calloc_dbg"
+description: "Learn more about: _calloc_dbg"
 ms.date: "11/04/2016"
 api_name: ["_calloc_dbg"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_calloc_dbg", "calloc_dbg"]
 helpviewer_keywords: ["_calloc_dbg function", "calloc_dbg function"]
-ms.assetid: 7f62c42b-eb9f-4de5-87d0-df57036c87de
 ---
 # `_calloc_dbg`
 
@@ -37,7 +36,7 @@ Requested size of each memory block (bytes).
 *`blockType`*\
 Requested type of memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-For information about the allocation block types and how they're used, see[Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap).
+For information about the allocation block types and how they're used, see [Types of blocks on the debug heap](../crt-debug-heap-details.md#types-of-blocks-on-the-debug-heap).
 
 *`filename`*\
 Pointer to name of the source file that requested allocation operation or `NULL`.
@@ -100,7 +99,7 @@ int main( void )
     else
         printf( "Problem allocating memory\n" );
 
-    / _free_dbg must be called to free CLIENT type blocks
+    // _free_dbg must be called to free CLIENT type blocks
     free( bufferN );
     _free_dbg( bufferC, _CLIENT_BLOCK );
 }

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Dynamic Object Creation"
 title: "Dynamic Object Creation"
+description: "Learn more about: Dynamic Object Creation"
 ms.date: "03/27/2020"
 helpviewer_keywords: ["object creation [MFC], dynamically at run time", "CObject class [MFC], dynamic object creation", "objects [MFC], creating dynamically at run time", "dynamic object creation [MFC]"]
-ms.assetid: 3e0f51cb-3e24-4231-817f-1c0ce9f2d5df
 ---
 # Dynamic Object Creation
 
@@ -17,5 +16,5 @@ This article explains how to create an object dynamically at run time. The proce
 
 ## See also
 
-[Destroying Window Objects](tn017-destroying-window-objects.md)
+[Destroying Window Objects](tn017-destroying-window-objects.md)\
 [Using CObject](using-cobject.md)

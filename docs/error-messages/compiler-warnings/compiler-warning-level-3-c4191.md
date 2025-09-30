@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4191"
-title: "Compiler Warning (level 3) C4191"
-ms.date: "11/04/2016"
+title: "Compiler Warning (level 3, off) C4191"
+description: "Learn more about: Compiler Warning (level 3, off) C4191"
+ms.date: 11/04/2016
 f1_keywords: ["C4191"]
 helpviewer_keywords: ["C4191"]
-ms.assetid: 576d3bc6-95b7-448a-af31-5d798452df09
 ---
-# Compiler Warning (level 3) C4191
+# Compiler Warning (level 3, off) C4191
 
-'operator/operation' : unsafe conversion from 'type of expression' to 'type required'
+> '*operation*': unsafe conversion from '*type_of_expression*' to '*type_required*'<br/>Making a function call using the resulting pointer may cause your program to fail
+
+## Remarks
 
 Several operations involving function pointers are considered unsafe:
 
@@ -18,17 +19,19 @@ Several operations involving function pointers are considered unsafe:
 
 - Argument or return types with different sizes, type categories, or classifications.
 
-- Differing argument list lengths (on **`__cdecl`**, only on cast from longer list to shorter list, even if shorter is varargs).
+- Different argument list lengths (on **`__cdecl`**, only on cast from longer list to shorter list, even if shorter is varargs).
 
-- Pointer to data (other than **`void`**<strong>\*</strong>) aliased against a pointer to function.
+- Pointer to data (other than **`void*`**) aliased against a pointer to function.
 
 - Any other type difference that would yield an error or warning on a **`reinterpret_cast`**.
 
 Calling this function through the result pointer might cause your program to crash.
 
-This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-The following sample generates C4191:
+## Example
+
+The following example generates C4191:
 
 ```cpp
 // C4191.cpp
@@ -47,5 +50,5 @@ int main() {
 
    fnptr1 fp3 = (fnptr1) &f2;   // C4191
    fnptr2 fp4 = (fnptr2) &f1;   // C4191
-};
+}
 ```

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: error_condition Class"
 title: "error_condition Class"
-ms.date: "11/04/2016"
+description: "Learn more about: error_condition Class"
+ms.date: 11/04/2016
 f1_keywords: ["system_error/std::error_condition", "system_error/std::error_condition::value_type", "system_error/std::error_condition::assign", "system_error/std::error_condition::category", "system_error/std::error_condition::clear", "system_error/std::error_condition::message", "system_error/std::error_condition::operator bool"]
 helpviewer_keywords: ["std::error_condition", "std::error_condition::value_type", "std::error_condition::assign", "std::error_condition::category", "std::error_condition::clear", "std::error_condition::message"]
-ms.assetid: 6690f481-97c9-4554-a0ff-851dc96b7a06
 ---
 # error_condition Class
 
@@ -85,8 +84,6 @@ const error_category& category() const;
 
 A reference to the stored error category
 
-#### Remarks
-
 ### <a name="clear"></a> clear
 
 Clears the error code value and category.
@@ -160,7 +157,7 @@ bool operator==(const error_condition& right) const;
 #### Parameters
 
 *right*\
-The ojbect to be tested for equality.
+The object to be tested for equality.
 
 #### Return Value
 
@@ -264,8 +261,6 @@ value_type value() const;
 #### Return Value
 
 The stored error code value of type [value_type](#value_type).
-
-#### Remarks
 
 ### <a name="value_type"></a> value_type
 

@@ -1,66 +1,65 @@
 ---
-description: "Learn more about: Compiler Error C2385"
 title: "Compiler Error C2385"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2385"
+ms.date: 1/19/2024
 f1_keywords: ["C2385"]
 helpviewer_keywords: ["C2385"]
-ms.assetid: 6d3dd1f2-e56d-49d7-865c-6a9acdb17417
 ---
 # Compiler Error C2385
 
-ambiguous access of 'member'
+> ambiguous access of 'member'
 
-The member can derive from more than one object (it is inherited from more than one object).  To resolve this error,
+## Remarks
 
-- Make the member unambiguous by providing a cast.
+A member is inherited from more than one base type, making unqualified access to that member ambiguous. To resolve this error:
 
-- Rename the ambiguous members in the base classes.
+- Explicitly qualify access to the member.
+- Cast the object to the base class containing the member before accessing the member.
+- Rename the ambiguous member in the base class.
+- Bring the member into scope.
 
 ## Example
 
-The following sample generates C2385.
+The following example generates C2385:
 
 ```cpp
 // C2385.cpp
-// C2385 expected
-#include <stdio.h>
-
 struct A
 {
-    void x(int i)
-    {
-        printf_s("\nIn A::x");
-    }
+    void func1(int i) {}
+    void func2() {}
 };
 
 struct B
 {
-    void x(char c)
-    {
-        printf_s("\nIn B::x");
-    }
+    void func1(char c) {}
+    void func2() {}
 };
-
-// Delete the following line to resolve.
-struct C : A, B {}
-
-// Uncomment the following 4 lines to resolve.
-// struct C : A, B
-// {
-//     using B::x;
-//     using A::x;
-// };
-
-int main()
-{
-    C aC;
-    aC.x(100);
-    aC.x('c');
-}
 
 struct C : A, B
 {
-    using B::x;
-    using A::x;
+    // Uncomment the following lines to resolve the first 2 errors
+    // The error below for the call to c.func2() will remain
+    // using A::func1;
+    // using B::func1;
 };
+
+int main()
+{
+    C c;
+
+    c.func1(123); // C2385
+    c.func1('a'); // C2385
+    c.func2(); // C2385
+
+    c.A::func2(); // OK because explicitly qualified
+    c.B::func2(); // OK because explicitly qualified
+    static_cast<A>(c).func2(); // OK because of the cast
+    static_cast<B>(c).func2(); // OK because of the cast
+}
 ```
+
+You can resolve the ambiguous calls to `func1` by bringing both overloads into scope. However, this doesn't work for `func2` because `A::func2` and `B::func2` don't take arguments, so calling them can't be differentiated by their parameters. You can resolve the issue by:
+- Introduce the one you want to use into scope
+- Explicitly qualify the call with the base type
+- Cast the object before calling the function.

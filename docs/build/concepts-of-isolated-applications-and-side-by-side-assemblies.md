@@ -4,6 +4,7 @@ title: "Concepts of Isolated Applications and Side-by-side Assemblies"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["side-by-side assemblies [C++]", "isolated assemblies [C++]"]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
+ms.topic: concept-article
 ---
 # Concepts of Isolated Applications and Side-by-side Assemblies
 

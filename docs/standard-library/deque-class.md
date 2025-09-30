@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: deque Class"
 title: "deque Class"
+description: "Learn more about: deque Class"
 ms.date: "11/04/2016"
 f1_keywords: ["deque/std::deque", "deque/std::deque::allocator_type", "deque/std::deque::const_iterator", "deque/std::deque::const_pointer", "deque/std::deque::const_reference", "deque/std::deque::const_reverse_iterator", "deque/std::deque::difference_type", "deque/std::deque::iterator", "deque/std::deque::pointer", "deque/std::deque::reference", "deque/std::deque::reverse_iterator", "deque/std::deque::size_type", "deque/std::deque::value_type", "deque/std::deque::assign", "deque/std::deque::at", "deque/std::deque::back", "deque/std::deque::begin", "deque/std::deque::cbegin", "deque/std::deque::cend", "deque/std::deque::clear", "deque/std::deque::crbegin", "deque/std::deque::crend", "deque/std::deque::emplace", "deque/std::deque::emplace_back", "deque/std::deque::emplace_front", "deque/std::deque::empty", "deque/std::deque::end", "deque/std::deque::erase", "deque/std::deque::front", "deque/std::deque::get_allocator", "deque/std::deque::insert", "deque/std::deque::max_size", "deque/std::deque::pop_back", "deque/std::deque::pop_front", "deque/std::deque::push_back", "deque/std::deque::push_front", "deque/std::deque::rbegin", "deque/std::deque::rend", "deque/std::deque::resize", "deque/std::deque::shrink_to_fit", "deque/std::deque::size", "deque/std::deque::swap"]
 helpviewer_keywords: ["std::deque [C++]", "std::deque [C++], allocator_type", "std::deque [C++], const_iterator", "std::deque [C++], const_pointer", "std::deque [C++], const_reference", "std::deque [C++], const_reverse_iterator", "std::deque [C++], difference_type", "std::deque [C++], iterator", "std::deque [C++], pointer", "std::deque [C++], reference", "std::deque [C++], reverse_iterator", "std::deque [C++], size_type", "std::deque [C++], value_type", "std::deque [C++], assign", "std::deque [C++], at", "std::deque [C++], back", "std::deque [C++], begin", "std::deque [C++], cbegin", "std::deque [C++], cend", "std::deque [C++], clear", "std::deque [C++], crbegin", "std::deque [C++], crend", "std::deque [C++], emplace", "std::deque [C++], emplace_back", "std::deque [C++], emplace_front", "std::deque [C++], empty", "std::deque [C++], end", "std::deque [C++], erase", "std::deque [C++], front", "std::deque [C++], get_allocator", "std::deque [C++], insert", "std::deque [C++], max_size", "std::deque [C++], pop_back", "std::deque [C++], pop_front", "std::deque [C++], push_back", "std::deque [C++], push_front", "std::deque [C++], rbegin", "std::deque [C++], rend", "std::deque [C++], resize", "std::deque [C++], shrink_to_fit", "std::deque [C++], size", "std::deque [C++], swap"]
@@ -11,9 +11,9 @@ Arranges elements of a given type in a linear arrangement and, like a vector, en
 
 ## Syntax
 
-```unstlib
-template <class Type, class Allocator =allocator<Type>>
-class deque
+```cpp
+template <class Type, class Allocator = allocator<Type>>
+class deque;
 ```
 
 ### Parameters
@@ -56,8 +56,8 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 |-|-|
 |[`allocator_type`](#allocator_type)|A type that represents the `allocator` class for the `deque` object.|
 |[`const_iterator`](#const_iterator)|A type that provides a random-access iterator that can access and read elements in the `deque` as **`const`**|
-|[`const_pointer`](#const_pointer)|A type that provides a pointer to an element in a `deque` as a `const.`|
-|[`const_reference`](#const_reference)|A type that provides a reference to an element in a `deque` for reading and other operations as a `const.`|
+|[`const_pointer`](#const_pointer)|A type that provides a pointer to an element in a `deque` as **`const`**.|
+|[`const_reference`](#const_reference)|A type that provides a reference to an element in a `deque` for reading and other operations as **`const`**.|
 |[`const_reverse_iterator`](#const_reverse_iterator)|A type that provides a random-access iterator that can access and read elements in the `deque` as **`const`**. The `deque` is viewed in reverse. For more information, see [`reverse_iterator` Class](../standard-library/reverse-iterator-class.md)|
 |[`difference_type`](#difference_type)|A type that provides the difference between two random-access iterators that refer to elements in the same `deque`.|
 |[`iterator`](#iterator)|A type that provides a random-access iterator that can read or modify any element in a `deque`.|
@@ -720,7 +720,7 @@ None of the constructors perform any interim reallocations.
 ### Example
 
 ```cpp
-/ compile with: /EHsc
+// compile with: /EHsc
 #include <deque>
 #include <iostream>
 #include <forward_list>
@@ -1634,7 +1634,7 @@ int main( )
 
 Provides a pointer to an element in a [`deque`](../standard-library/deque-class.md).
 
-```unstlib
+```cpp
 typedef typename Allocator::pointer pointer;
 ```
 

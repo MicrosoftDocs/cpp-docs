@@ -331,7 +331,10 @@ const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);
 
 Notice that `strlen()` and `wcslen()` don't include the size of the terminating null character, whose size is equal to the element size of the string type: one byte on a `char*` or `char8_t*` string, two bytes on `wchar_t*` or `char16_t*` strings, and four bytes on `char32_t*` strings.
 
-In versions of Visual Studio before Visual Studio 2022 version 17.0, the maximum length of a string literal is 65,535 bytes. This limit applies to both narrow string literals and wide string literals. In Visual Studio 2022 version 17.0 and later, this restriction is lifted and string length is limited by available resources.
+Maximum length of a string literal after concatenation:
+
+* Visual Studio prior to 2022 version 17.0: the maximum length of a string literal after concatenation is 65,535 bytes. This applies to both narrow and wide string literals.
+* From Visual Studio 2022 version 17.0 onwards: the maximum length of a string literal after concatenation is only limited by available memory. However, the size limit before concatenation is still 16,384 bytes
 
 ### Modifying string literals
 

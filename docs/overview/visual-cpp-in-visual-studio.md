@@ -2,7 +2,8 @@
 title: "C and C++ in Visual Studio"
 description: "Learn how to use the Microsoft C/C++ compiler and related tools to develop C++ and assembly programs for Windows, Linux, Android, and iOS."
 ms.date: 09/29/2022
-ms.technology: "cpp-ide"
+ms.service: "visual-cpp"
+ms.subservice: "ide"
 helpviewer_keywords: ["Visual C++, home page"]
 ---
 # C and C++ in Visual Studio
@@ -120,7 +121,7 @@ Create unit tests using the Microsoft Unit Testing Framework for C++, Google Tes
 
 ## Write C/C++ applications using Visual Studio
 
-[Desktop applications (C++)](../windows/desktop-applications-visual-cpp.md)\
+[Windows C++ desktop application types](../windows/overview-of-windows-programming-in-cpp.md)\
 Learn how to create traditional native C++ desktop applications for Windows.
 
 [.NET programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)\
@@ -200,7 +201,7 @@ Programming for the common language runtime (CLR).
 
 ## Third-party open source C++ libraries in Visual Studio
 
-The cross-platform **vcpkg** command-line tool greatly simplifies the discovery and installation of over 900 C++ open source libraries. For more information, see [vcpkg](https://vcpkg.io/).
+The cross-platform **vcpkg** command-line tool greatly simplifies the discovery and installation of over 900 C++ open source libraries. For more information, see [vcpkg](/vcpkg/).
 
 ## Visual Studio C++ feedback and community
 

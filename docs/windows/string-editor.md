@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: String Editor (C++)"
 title: "String Editor (C++)"
+description: "Learn more about: String Editor (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.string.F1", "vc.editors.string"]
 helpviewer_keywords: ["String editor", "string tables", "string tables [C++], String editor", "string editing", "string editing, string tables", "resource editors [C++], String editor", "strings [C++], editing", "strings [C++], searching", "strings [C++]", "strings [C++], adding to string tables", "string tables [C++], deleting strings", "strings [C++], deleting in string tables", "string tables [C++], adding strings", "strings [C++], moving between files", "resource script files [C++], moving strings", "string editing, moving strings between resources", "String editor [C++], moving strings between files", "resource identifiers, string properties", "string tables [C++], changing strings", "strings [C++], properties", "String editor [C++], changing properties of multiple strings", "string tables [C++], changing caption of multiple strings", "special characters, adding to strings", "ASCII characters, adding to strings", "strings [C++], formatting", "strings [C++], special characters"]
-ms.assetid: f71ab8de-3068-4e29-8e28-5a33d18dd416
+ms.topic: how-to
 ---
 # String Editor (C++)
 
@@ -137,7 +137,7 @@ Win32
 
 ## See also
 
-[Resource Editors](../windows/resource-editors.md)
-[Strings](/windows/win32/menurc/strings)<br/>
-[About Strings](/windows/win32/menurc/about-strings)<br/>
+[Resource Editors](../windows/resource-editors.md)\
+[Strings](/windows/win32/menurc/strings)\
+[About Strings](/windows/win32/menurc/about-strings)\
 [Customizing window layouts](/visualstudio/ide/customizing-window-layouts-in-visual-studio)

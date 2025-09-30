@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::COMException Class"
 title: "Platform::COMException Class"
-ms.date: "12/30/2016"
+description: "Learn more about: Platform::COMException Class"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::COMException", "VCCORLIB/Platform::COMException::HResult", "VCCORLIB/Platform::COMException::Message"]
 helpviewer_keywords: ["Platform::COMException Class"]
-ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
 ---
 # Platform::COMException Class
 
@@ -14,7 +13,7 @@ Represents COM errors that occur during application execution. COMException is t
 ## Syntax
 
 ```cpp
-public ref class COMException : Exception,    IException,    IPrintable,    IEquatable
+public ref class COMException : Exception, IException, IPrintable, IEquatable
 ```
 
 ### Members
@@ -74,17 +73,17 @@ The following predefined exceptions are derived from COMException. They differ f
 
 ## <a name="ctor"></a> COMException::COMException Constructor
 
-Intializes a new instance of the COMException class.
+Initializes a new instance of the COMException class.
 
 ### Syntax
 
 ```cpp
-COMException( int hresult )
+COMException(int hresult);
 ```
 
 ### Parameters
 
-*hresult*<br/>
+*hresult*\
 The error HRESULT that is represented by the exception.
 
 ## <a name="hresult"></a> COMException::HResult Property
@@ -95,7 +94,7 @@ The HRESULT that corresponds to the exception.
 
 ```cpp
 public:
-    property int HResult { int get();}
+    property int HResult { int get(); }
 ```
 
 ## Property Value
@@ -113,7 +112,8 @@ Message that describes the exception.
 ### Syntax
 
 ```cpp
-public:property String^ Message {    String^ get();}
+public:
+    property String^ Message { String^ get(); }
 ```
 
 ### Property Value

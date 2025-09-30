@@ -4,6 +4,7 @@ title: "Creating the Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], creating image lists for", "image lists [MFC], creating for CListCtrl", "lists [MFC], image"]
 ms.assetid: c2768515-deba-49e8-a6f3-5be6482afb19
+ms.topic: concept-article
 ---
 # Creating the Image Lists
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: CRecordset Class"
 title: "CRecordset Class"
+description: "Learn more about: CRecordset Class"
 ms.date: "05/11/2022"
 f1_keywords: ["CRecordset", "AFXDB/CRecordset", "AFXDB/CRecordset::CRecordset", "AFXDB/CRecordset::AddNew", "AFXDB/CRecordset::CanAppend", "AFXDB/CRecordset::CanBookmark", "AFXDB/CRecordset::Cancel", "AFXDB/CRecordset::CancelUpdate", "AFXDB/CRecordset::CanRestart", "AFXDB/CRecordset::CanScroll", "AFXDB/CRecordset::CanTransact", "AFXDB/CRecordset::CanUpdate", "AFXDB/CRecordset::CheckRowsetError", "AFXDB/CRecordset::Close", "AFXDB/CRecordset::Delete", "AFXDB/CRecordset::DoBulkFieldExchange", "AFXDB/CRecordset::DoFieldExchange", "AFXDB/CRecordset::Edit", "AFXDB/CRecordset::FlushResultSet", "AFXDB/CRecordset::GetBookmark", "AFXDB/CRecordset::GetDefaultConnect", "AFXDB/CRecordset::GetDefaultSQL", "AFXDB/CRecordset::GetFieldValue", "AFXDB/CRecordset::GetODBCFieldCount", "AFXDB/CRecordset::GetODBCFieldInfo", "AFXDB/CRecordset::GetRecordCount", "AFXDB/CRecordset::GetRowsetSize", "AFXDB/CRecordset::GetRowsFetched", "AFXDB/CRecordset::GetRowStatus", "AFXDB/CRecordset::GetSQL", "AFXDB/CRecordset::GetStatus", "AFXDB/CRecordset::GetTableName", "AFXDB/CRecordset::IsBOF", "AFXDB/CRecordset::IsDeleted", "AFXDB/CRecordset::IsEOF", "AFXDB/CRecordset::IsFieldDirty", "AFXDB/CRecordset::IsFieldNull", "AFXDB/CRecordset::IsFieldNullable", "AFXDB/CRecordset::IsOpen", "AFXDB/CRecordset::Move", "AFXDB/CRecordset::MoveFirst", "AFXDB/CRecordset::MoveLast", "AFXDB/CRecordset::MoveNext", "AFXDB/CRecordset::MovePrev", "AFXDB/CRecordset::OnSetOptions", "AFXDB/CRecordset::OnSetUpdateOptions", "AFXDB/CRecordset::Open", "AFXDB/CRecordset::RefreshRowset", "AFXDB/CRecordset::Requery", "AFXDB/CRecordset::SetAbsolutePosition", "AFXDB/CRecordset::SetBookmark", "AFXDB/CRecordset::SetFieldDirty", "AFXDB/CRecordset::SetFieldNull", "AFXDB/CRecordset::SetLockingMode", "AFXDB/CRecordset::SetParamNull", "AFXDB/CRecordset::SetRowsetCursorPosition", "AFXDB/CRecordset::SetRowsetSize", "AFXDB/CRecordset::Update", "AFXDB/CRecordset::m_hstmt", "AFXDB/CRecordset::m_nFields", "AFXDB/CRecordset::m_nParams", "AFXDB/CRecordset::m_pDatabase", "AFXDB/CRecordset::m_strFilter", "AFXDB/CRecordset::m_strSort"]
 helpviewer_keywords: ["CRecordset [MFC], CRecordset", "CRecordset [MFC], AddNew", "CRecordset [MFC], CanAppend", "CRecordset [MFC], CanBookmark", "CRecordset [MFC], Cancel", "CRecordset [MFC], CancelUpdate", "CRecordset [MFC], CanRestart", "CRecordset [MFC], CanScroll", "CRecordset [MFC], CanTransact", "CRecordset [MFC], CanUpdate", "CRecordset [MFC], CheckRowsetError", "CRecordset [MFC], Close", "CRecordset [MFC], Delete", "CRecordset [MFC], DoBulkFieldExchange", "CRecordset [MFC], DoFieldExchange", "CRecordset [MFC], Edit", "CRecordset [MFC], FlushResultSet", "CRecordset [MFC], GetBookmark", "CRecordset [MFC], GetDefaultConnect", "CRecordset [MFC], GetDefaultSQL", "CRecordset [MFC], GetFieldValue", "CRecordset [MFC], GetODBCFieldCount", "CRecordset [MFC], GetODBCFieldInfo", "CRecordset [MFC], GetRecordCount", "CRecordset [MFC], GetRowsetSize", "CRecordset [MFC], GetRowsFetched", "CRecordset [MFC], GetRowStatus", "CRecordset [MFC], GetSQL", "CRecordset [MFC], GetStatus", "CRecordset [MFC], GetTableName", "CRecordset [MFC], IsBOF", "CRecordset [MFC], IsDeleted", "CRecordset [MFC], IsEOF", "CRecordset [MFC], IsFieldDirty", "CRecordset [MFC], IsFieldNull", "CRecordset [MFC], IsFieldNullable", "CRecordset [MFC], IsOpen", "CRecordset [MFC], Move", "CRecordset [MFC], MoveFirst", "CRecordset [MFC], MoveLast", "CRecordset [MFC], MoveNext", "CRecordset [MFC], MovePrev", "CRecordset [MFC], OnSetOptions", "CRecordset [MFC], OnSetUpdateOptions", "CRecordset [MFC], Open", "CRecordset [MFC], RefreshRowset", "CRecordset [MFC], Requery", "CRecordset [MFC], SetAbsolutePosition", "CRecordset [MFC], SetBookmark", "CRecordset [MFC], SetFieldDirty", "CRecordset [MFC], SetFieldNull", "CRecordset [MFC], SetLockingMode", "CRecordset [MFC], SetParamNull", "CRecordset [MFC], SetRowsetCursorPosition", "CRecordset [MFC], SetRowsetSize", "CRecordset [MFC], Update", "CRecordset [MFC], m_hstmt", "CRecordset [MFC], m_nFields", "CRecordset [MFC], m_nParams", "CRecordset [MFC], m_pDatabase", "CRecordset [MFC], m_strFilter", "CRecordset [MFC], m_strSort"]
@@ -205,7 +205,7 @@ void Cancel();
 
 ### Remarks
 
-The MFC ODBC classes no longer use asynchronous processing; to perform an asychronous operation, you must directly call the ODBC API function `SQLSetConnectOption`. For more information, see "Executing Functions Asynchronously" in the *ODBC SDK Programmer's Guide*.
+The MFC ODBC classes no longer use asynchronous processing; to perform an asynchronous operation, you must directly call the ODBC API function `SQLSetConnectOption`. For more information, see "Executing Functions Asynchronously" in the *ODBC SDK Programmer's Guide*.
 
 ## <a name="cancelupdate"></a> `CRecordset::CancelUpdate`
 
@@ -728,7 +728,7 @@ The number of records in the recordset; 0 if the recordset contains no records; 
 ### Remarks
 
 > [!CAUTION]
-> The record count is maintained as a "high water mark," the highest-numbered record yet seen as the user moves through the records. The total number of records is only known after the user has moved beyond the last record. For performance reasons, the count isn't updated when you call `MoveLast`. To count the records yourself, call `MoveNext` repeatedly until `IsEOF` returns nonzero. Adding a record via `CRecordset:AddNew` and `Update` increases the count; deleting a record via `CRecordset::Delete` decreases the count.
+> The record count is maintained as a "high water mark," the highest-numbered record yet seen as the user moves through the records. The total number of records is only known after the user has moved beyond the last record. For performance reasons, the count isn't updated when you call `MoveLast`. To count the records yourself, call `MoveNext` repeatedly until `IsEOF` returns nonzero. Adding a record via `CRecordset::AddNew` and `Update` increases the count; deleting a record via `CRecordset::Delete` decreases the count.
 
 ## <a name="getrowsetsize"></a> `CRecordset::GetRowsetSize`
 
@@ -1474,7 +1474,7 @@ When you call `Open`, a query, usually a SQL **`SELECT`** statement, selects rec
 |**`SELECT`** column-list **`FROM`** table-list|The specified columns from the specified table(s).|`"SELECT CustId, CustName FROM`<br /><br /> `Customer"`|
 
 > [!CAUTION]
-> Don't insert extra whitespace in your SQL string. For example, if you insert whitespace between the curly brace and the **`CALL`** keyword, MFC will misinterpret the SQL string as a table name and incorporate it into a **`SELECT`** statement, which will result in an exception being thrown. Similarly, if your predefined query uses an output parameter, don't insert whitespace between the curly brace and the '' symbol. Finally, you must not insert whitespace before the curly brace in a **`CALL`** statement or before the **`SELECT`** keyword in a **`SELECT`** statment.
+> Don't insert extra whitespace in your SQL string. For example, if you insert whitespace between the curly brace and the **`CALL`** keyword, MFC will misinterpret the SQL string as a table name and incorporate it into a **`SELECT`** statement, which will result in an exception being thrown. Similarly, if your predefined query uses an output parameter, don't insert whitespace between the curly brace and the '' symbol. Finally, you must not insert whitespace before the curly brace in a **`CALL`** statement or before the **`SELECT`** keyword in a **`SELECT`** statement.
 
 The usual procedure is to pass `NULL` to `Open`; in this case, `Open` calls [GetDefaultSQL](#getdefaultsql). If you're using a derived `CRecordset` class, `GetDefaultSQL` gives the table name(s) you specified in `ClassWizard`. You can instead specify other information in the `lpszSQL` parameter.
 
@@ -1624,7 +1624,7 @@ void SetFieldDirty(void* pv, BOOL bDirty = TRUE);
 ### Parameters
 
 *`pv`*\
-Contains the address of a field data member in the recordset or `NUL`L. If `NULL`, all field data members in the recordset are flagged. (C++ `NULL` isn't the same as Null in database terminology, which means "having no value.")
+Contains the address of a field data member in the recordset or `NULL`. If `NULL`, all field data members in the recordset are flagged. (C++ `NULL` isn't the same as Null in database terminology, which means "having no value.")
 
 *`bDirty`*\
 `TRUE` if the field data member is to be flagged as "dirty" (changed). Otherwise `FALSE` if the field data member is to be flagged as "clean" (unchanged).

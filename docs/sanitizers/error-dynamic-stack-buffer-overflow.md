@@ -1,6 +1,6 @@
 ---
 title: "Error: dynamic-stack-buffer-overflow"
-description: "Source examples and live debug screenshots for alloca errors."
+description: "Learn about the dynamic-stack-buffer-overflow Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["dynamic-stack-buffer-overflow"]
 helpviewer_keywords: ["dynamic-stack-buffer-overflow error", "AddressSanitizer error dynamic-stack-buffer-overflow"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["dynamic-stack-buffer-overflow error", "AddressSanitizer e
 # Error: `dynamic-stack-buffer-overflow`
 
 > Address Sanitizer Error: dynamic-stack-buffer-overflow
+
+## Remarks
 
 This example shows the error that results from a buffer access outside the bounds of a stack-allocated object.
 
@@ -170,11 +172,11 @@ devenv /debugexe example3.exe
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

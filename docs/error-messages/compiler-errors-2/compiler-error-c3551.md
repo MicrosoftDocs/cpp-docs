@@ -1,21 +1,30 @@
 ---
-description: "Learn more about: Compiler Error C3551"
 title: "Compiler Error C3551"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3551"
+ms.date: 10/07/2023
 f1_keywords: ["C3551"]
 helpviewer_keywords: ["C3551"]
-ms.assetid: c8ee23da-6568-40db-93a6-3ddb7ac47712
 ---
 # Compiler Error C3551
 
-"expected a late specified return type"
+> if a trailing return type is used then the leading return type shall be the single type-specifier 'auto' (not 'type')
 
-If you use the **`auto`** keyword as a placeholder for the return type of a function, you must provide a late-specified return type. In the following example, the late-specified return type of function `myFunction` is a pointer to an array of four elements of type **`int`**.
+## Remarks
 
+The leading return type in [trailing return type](../../cpp/functions-cpp.md#trailing-return-types) syntax must contain only `auto`.
+
+## Example
+
+The following example generates C3551:
+
+```cpp
+// C3551.cpp
+// compile with: /c
+const auto func1() -> const int;   // C3551
+auto* func2() -> int*;   // C3551
+auto& func3() -> int&;   // C3551
+auto&& func4() -> int&&;   // C3551
+decltype(auto) func5() -> int;   // C3551
+
+auto func6() -> int;   // OK
 ```
-auto myFunction()->int(*)[4];
-```
-
-## See also
-
-[auto](../../cpp/auto-cpp.md)

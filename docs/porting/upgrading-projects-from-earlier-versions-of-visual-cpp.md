@@ -4,6 +4,7 @@ description: "How to upgrade Microsoft C++ projects from older versions of Visua
 ms.date: 04/07/2022
 helpviewer_keywords: ["32-bit code porting", "upgrading Visual C++ applications, 32-bit code"]
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
+ms.topic: upgrade-and-migration-article
 ---
 # Upgrade C++ projects from earlier versions of Visual Studio
 

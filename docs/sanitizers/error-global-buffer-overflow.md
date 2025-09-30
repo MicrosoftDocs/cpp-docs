@@ -1,6 +1,6 @@
 ---
 title: "Error: global-buffer-overflow"
-description: "Source examples and live debug screenshots for global variable overflow errors."
+description: "Learn about the global-buffer-overflow Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["global-buffer-overflow"]
 helpviewer_keywords: ["global-buffer-overflow error", "AddressSanitizer error global-buffer-overflow"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["global-buffer-overflow error", "AddressSanitizer error gl
 # Error: `global-buffer-overflow`
 
 > Address Sanitizer Error: Global buffer overflow
+
+## Remarks
 
 The compiler generates metadata for any variable in the `.data` or `.bss` sections. These variables have language scope of global or file static. They're allocated in memory before `main()` starts. Global variables in C are treated much differently than in C++. This difference is because of the complex rules for linking C.
 
@@ -126,9 +128,10 @@ int main(int argc, char **argv) {
     case 'g': return global[one * 11];     //Boom! simple global
     case 'c': return C::array[one * 11];   //Boom! class static
     case 'f':
-        static int array[10];
-        memset(array, 0, 10);
+    {
+        static int array[10] = {};
         return array[one * 11];            //Boom! function static
+    }
     case 'l':
         // literal global ptr created by compiler
         const char *str = "0123456789";
@@ -151,11 +154,11 @@ devenv /debugexe example3.exe -l
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

@@ -62,4 +62,5 @@ int main()
 
 ## See also
 
+[__rdtscp](../intrinsics/rdtscp.md)\
 [Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

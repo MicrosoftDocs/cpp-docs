@@ -169,9 +169,9 @@ items:
           href: gps-clock-class.md
         - name: hh_mm_ss class
           href: hhmmss-class.md
-        - name: high_resolution_clock struct 
+        - name: high_resolution_clock struct
           href: high-resolution-clock-struct.md
-        - name: is_clock struct 
+        - name: is_clock struct
           href: is-clock-struct.md
         - name: last_spec
           href: last-spec-struct.md
@@ -797,6 +797,8 @@ items:
           href: recursive-mutex-class.md
         - name: recursive_timed_mutex class
           href: recursive-timed-mutex-class.md
+        - name: scoped_lock class
+          href: scoped-lock-class.md
         - name: timed_mutex class
           href: timed-mutex-class.md
         - name: try_to_lock_t struct
@@ -1447,6 +1449,8 @@ items:
           href: utility-operators.md
         - name: identity struct
           href: identity-structure.md
+        - name: in_place_t, in_place_type_t, in_place_index_t struct
+          href: in-place-t-struct.md
         - name: pair struct
           href: pair-structure.md
     - name: <valarray>

@@ -60,7 +60,7 @@ This view is useful when you want to combine multiple ranges into a single view.
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 
@@ -90,7 +90,7 @@ For information about the template parameter type, see [Template parameters](#te
 ### Example: `join_view`
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 #include <iostream>
 #include <vector>
 #include <ranges>

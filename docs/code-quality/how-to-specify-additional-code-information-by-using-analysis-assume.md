@@ -2,7 +2,6 @@
 description: "Learn more about how to specify additional code information by using _Analysis_assume_."
 title: "Use _Analysis_assume_ for code analysis hints"
 ms.date: 12/16/2020
-ms.topic: "conceptual"
 f1_keywords:
   - "_Analysis_assume_"
 helpviewer_keywords:
@@ -10,7 +9,7 @@ helpviewer_keywords:
 ---
 # How to specify additional code information by using `_Analysis_assume_`
 
-You can provide hints to the code analysis tool for C/C++ code that will help the analysis process and reduce warnings. To provide additional information, use the following function macro:
+You can provide hints to the code analysis tool for C/C++ code that help the analysis process and reduce warnings. To provide additional information, use the following function macro:
 
 `_Analysis_assume_( expr )`
 
@@ -27,21 +26,40 @@ The following code uses `_Analysis_assume_` to correct the code analysis warning
 
 ```cpp
 #include <windows.h>
-#include <codeanalysis\sourceannotations.h>
+#include <sal.h>
 
-using namespace vc_attributes;
+// Requires pc to be null.
+void f(_Pre_null_ char* pc);
 
-//requires pc to be null
-void f([Pre(Null=Yes)] char* pc);
-
-// calls free and sets ch to null
+// Calls free and sets ch to null.
 void FreeAndNull(char** ch);
 
 void test()
 {
-    char pc = (char)malloc(5);
+    char* pc = (char*)malloc(5);
     FreeAndNull(&pc);
     _Analysis_assume_(pc == NULL);
+    f(pc);
+}
+```
+
+`_Analysis_assume_` should be used as a last resort. We should first try to make the contracts of the functions more precise. In this case we could improve the contract of `FreeAndNull` instead of using `_Analysis_assume_`:
+
+```cpp
+#include <windows.h>
+#include <sal.h>
+
+// Requires pc to be null.
+void f(_Pre_null_ char* pc);
+
+// Calls free and sets ch to null.
+_At_(*ch, _Post_null_)
+void FreeAndNull(char** ch);
+
+void test()
+{
+    char* pc = (char*)malloc(5);
+    FreeAndNull(&pc);
     f(pc);
 }
 ```

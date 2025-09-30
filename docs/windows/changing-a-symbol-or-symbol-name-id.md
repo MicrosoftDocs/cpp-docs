@@ -5,6 +5,7 @@ ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.symbol.changing", "vc.editors.symbol.restrictions.name", "vc.editors.symbol.changing.value", "vc.editors.symbol.restrictions.value", "vc.editors.symbol.changing.header", "vc.editors.symbol.changing.unassigned", "vc.editors.symbol.shared.calculated"]
 helpviewer_keywords: ["symbol names", "symbols [C++], names", "restrictions, symbol names", "numeric values", "symbols [C++], numeric values", "numeric values, changing symbols", "symbols [C++], value restrictions", "restrictions, symbol values", "resource files [C++], multiple", "Resource Includes dialog box [C++]", "symbol header files [C++], changing names", "symbols [C++], symbol header files", "Resource.h", "symbols [C++], unassigned", "Change Symbol dialog box [C++]", "unassigned symbols", "symbols [C++], deleting", "symbols [C++], read-only", "symbols [C++], shared", "symbols [C++], calculated", "read-only symbols", "symbol directives", "calculated symbols", "shared symbols"]
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
+ms.topic: how-to
 ---
 # How to: Manage Symbols
 

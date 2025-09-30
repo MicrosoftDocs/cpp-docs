@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <new> functions"
 title: "<new> functions"
+description: "Learn more about: <new> functions"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::get_new_handler", "new/std::nothrow", "new/std::set_new_handler"]
-ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
 ---
 # `<new>` functions
 
@@ -93,8 +92,8 @@ The function stores *`Pnew`* in a static [`new` handler](../standard-library/new
 ```cpp
 // new_set_new_handler.cpp
 // compile with: /EHsc
-#include<new>
-#include<iostream>
+#include <new>
+#include <iostream>
 
 using namespace std;
 void __cdecl newhandler( )

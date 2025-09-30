@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: month_weekday_last Class"
 title: "month_weekday_last class"
-ms.date: "6/28/2021"
+description: "Learn more about: month_weekday_last Class"
+ms.date: 6/28/2021
 f1_keywords: ["chrono/std::chrono::month_weekday_last", "chrono/std::chrono::month_weekday_last::ok", "std::chrono::month_weekday_last::month_weekday_last", "chrono/std::chrono::month_weekday_last::ok", "chrono/std::chrono::month_weekday_last::month"]
 helpviewer_keywords: ["std::chrono [C++], month_weekday_last"]
 dev_langs: ["C++"]
 ---
-# `month_weekday_last` class  
+# `month_weekday_last` class
 
 Represents the last weekday of a month.
 
@@ -39,7 +39,7 @@ The year is unspecified.\
 
 ## Requirements
 
-**Header:** `<chrono>` Since C++ 20
+**Header:** `<chrono>` Since C++20
 
 **Namespace:** `std::chrono`
 
@@ -59,11 +59,11 @@ constexpr month_weekday_last(const month& m, const weekday_last& wdl) noexcept;
 The `month` value for the created `month_weekday_last` class.
 
 *`wdl`*\
-The` weekday_last` value for the created `month_weekday_last` class.
+The `weekday_last` value for the created `month_weekday_last` class.
 
 ## Remarks: Constructor
 
-For information about C++ 20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `month_weekday_last`
 

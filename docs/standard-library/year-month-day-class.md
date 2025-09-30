@@ -1,19 +1,19 @@
 ---
-description: "Learn more about: year_month_day class"
 title: "year_month_day class"
-ms.date: "06/28/2021"
+description: "Learn more about: year_month_day class"
+ms.date: 06/28/2021
 f1_keywords: ["chrono/std::chrono::year_month_day", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::sysdays", "chrono/std::chrono::year::localdays", "chrono/std::chrono::year::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month_day"]
 ---
 
-# `year_month_day` class  
+# `year_month_day` class
 
 Represents a month, year, and day.
 
 ## Syntax
 
 ```cpp
-class year_month_day; // C++ 20
+class year_month_day; // C++20
 ```
 
 ## Members
@@ -43,7 +43,7 @@ class year_month_day; // C++ 20
 
 ## Requirements
 
-**Header:** `<chrono>` (since C++ 20)
+**Header:** `<chrono>` (since C++20)
 
 **Namespace:** `std::chrono`
 
@@ -81,12 +81,12 @@ A `year_month_day_last` value.
 ### Remarks
 
 1\) The default constructor doesn't initialize the month or day.\
-2\) Constructs a `year_month_day`with the specified year, month, and day.\
-3\) Constructs a `year_month_day`with the specified year, month, and day from *`ymdl`*\
-4\) Constructs a `year_month_day`with the same date as *`dp`*.\
-5\) Constructs a `year_month_day`with the same date as *`dp`* but as though constructed by `year_month_day(sys_days(dp.time_since_epoch()))`.
+2\) Constructs a `year_month_day` with the specified year, month, and day.\
+3\) Constructs a `year_month_day` with the specified year, month, and day from *`ymdl`*\
+4\) Constructs a `year_month_day` with the same date as *`dp`*.\
+5\) Constructs a `year_month_day` with the same date as *`dp`* but as though constructed by `year_month_day(sys_days(dp.time_since_epoch()))`.
 
-For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_day`
 

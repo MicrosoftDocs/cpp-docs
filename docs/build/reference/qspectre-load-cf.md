@@ -15,7 +15,7 @@ Specifies compiler generation of serializing instructions for every control-flow
 
 ## Remarks
 
-**/Qspectre-load-cf** causes the compiler to detect `JMP`, `RET`, and `CALL` control-flow instructions that load from memory, and to insert serializing instructions after the load. Where possible, these instructions are split into a load and a control flow transfer. The load is followed by an `LFENCE` to ensure the load is protected. There are cases where the compiler can't split instructions, such as the `JMP` instruction, so it uses an alternate mitigation technique. For example, the compiler mitigates `jmp [rax]` by adding instructions to load the target non-destructively before inserting an LFENCE, as shown here:
+**/Qspectre-load-cf** causes the compiler to detect `JMP`, `RET`, and `CALL` control-flow instructions that load from memory, and to insert serializing instructions after the load. Where possible, these instructions are split into a load and a control flow transfer. The load is followed by an `LFENCE` to ensure the load is protected. There are cases where the compiler can't split instructions, such as the `JMP` instruction, so it uses an alternate mitigation technique. For example, the compiler mitigates `jmp [rax]` by adding instructions to load the target nondestructively before inserting an LFENCE, as shown here:
 
 ```asm
     xor rbx, [rax]
@@ -44,6 +44,9 @@ The **/Qspectre-load-cf** option is available in Visual Studio 2019 version 16.5
 
 ## See also
 
+[`/Qspectre`](qspectre.md)\
+[`/Qspectre-jmp`](qspectre-jmp.md)\
+[`/Qspectre-load`](qspectre-load.md)\
 [/Q options (Low-level operations)](q-options-low-level-operations.md)\
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)

@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Initializing Scalar Types"
 title: "Initializing Scalar Types"
-ms.date: "11/04/2016"
+description: "Learn more about: Initializing Scalar Types"
+ms.date: 11/04/2016
 helpviewer_keywords: ["initializing scalar types", "register variables", "initialization, scalar types", "initializing variables, scalar types", "scalar types", "static variables, initializing", "automatic storage class, initializing scalar types", "automatic storage class", "types [C], initializing"]
-ms.assetid: 73c516f5-c3ad-4d56-ab3b-f2a82b621104
 ---
 # Initializing Scalar Types
 
@@ -38,7 +37,7 @@ You can initialize variables of any type, as long as you obey the following rule
 
 - Variables declared with the **`auto`** or **`register`** storage-class specifier are initialized each time execution control passes to the block in which they're declared. If you omit an initializer from the declaration of an **`auto`** or **`register`** variable, the initial value of the variable is undefined. For automatic and register values, the initializer isn't restricted to being a constant; it can be any expression involving previously defined values, even function calls.
 
-- The initial values for external variable declarations and for all **`static`** variables, whether external or internal, must be constant expressions. (For more information, see [Constant Expressions](../c-language/c-constant-expressions.md).) Since the address of any externally declared or static variable is constant, it can be used to initialize an internally declared **`static`** pointer variable. However, the address of an **`auto`** variable can't be used as a static initializer because it may be different for each execution of the block. You can use either constant or variable values to initialize **`auto`** and **`register`** variables.
+- The initial values for external variable declarations and for all **`static`** variables, whether external or internal, must be constant expressions. For more information, see [Constant Expressions](../c-language/c-constant-expressions.md). Since the address of any externally declared or static variable is constant, it can be used to initialize an internally declared **`static`** pointer variable. However, the address of an **`auto`** variable can't be used as a static initializer because it may be different for each execution of the block. You can use either constant or variable values to initialize **`auto`** and **`register`** variables.
 
 - If the declaration of an identifier has block scope, and the identifier has external linkage, the declaration can't have an initialization.
 

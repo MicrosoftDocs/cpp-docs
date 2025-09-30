@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2617"
 title: "Compiler Error C2617"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2617"
+ms.date: 11/04/2016
 f1_keywords: ["C2617"]
 helpviewer_keywords: ["C2617"]
-ms.assetid: d6a435d2-7d95-4dbf-ad4a-abe4744f63e8
 ---
 # Compiler Error C2617
 
-'function' : inconsistent return statement
+> 'function' : inconsistent return statement
+
+## Remarks
 
 The specified function does not have a declared return type, and a previous return statement did not supply a value.
 
-The following sample generates C2617:
+## Example
+
+The following example generates C2617:
 
 ```cpp
 // C2617.cpp

@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3481"
 title: "Compiler Error C3481"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3481"
+ms.date: 11/04/2016
 f1_keywords: ["C3481"]
 helpviewer_keywords: ["C3481"]
-ms.assetid: 5d09375a-5ed3-4b61-86ed-45e91fd734c7
 ---
 # Compiler Error C3481
 
-'var': lambda capture variable not found
+> 'var': lambda capture variable not found
+
+## Remarks
 
 The compiler could not find the definition of a variable that you passed to the capture list of a lambda expression.
 

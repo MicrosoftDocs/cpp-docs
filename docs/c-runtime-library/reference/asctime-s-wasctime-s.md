@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: asctime_s, _wasctime_s"
 title: "asctime_s, _wasctime_s"
-ms.date: "4/2/2020"
+description: "Learn more about: asctime_s, _wasctime_s"
+ms.date: 4/2/2020
 api_name: ["_wasctime_s", "asctime_s", "_o__wasctime_s", "_o_asctime_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["asctime_s", "_wasctime_s", "_tasctime_s"]
 helpviewer_keywords: ["tasctime_s function", "_tasctime_s function", "time structure conversion", "wasctime_s function", "time, converting", "_wasctime_s function", "asctime_s function"]
-ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
 ---
 # `asctime_s`, `_wasctime_s`
 
@@ -24,7 +23,7 @@ errno_t asctime_s(
 );
 errno_t _wasctime_s(
    wchar_t* buffer,
-   size_t numberOfElements
+   size_t numberOfElements,
    const struct tm *tmSource
 );
 template <size_t size>

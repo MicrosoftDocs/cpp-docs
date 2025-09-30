@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::Exception Class"
 title: "Platform::Exception Class"
-ms.date: "12/30/2016"
+description: "Learn more about: Platform::Exception Class"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Exception::Exception", "VCCORLIB/Platform::Exception::CreateException", "VCCORLIB/Platform::Exception::HResult", "VCCORLIB/Platform::Exception::Message"]
 helpviewer_keywords: ["Platform::Exception Class"]
-ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
 ---
 # Platform::Exception Class
 
@@ -14,7 +13,7 @@ Represents errors that occur during application execution. Custom exception clas
 ## Syntax
 
 ```cpp
-public ref class Exception : Object,    IException,    IPrintable,    IEquatable
+public ref class Exception : Object, IException, IPrintable, IEquatable
 ```
 
 ### Members
@@ -31,7 +30,7 @@ The `Exception` class also has the following kinds of members.
 
 ### Methods
 
-The `Exception` class inherits the `Equals()`, `Finalize()`,`GetHashCode()`,`GetType()`,`MemberwiseClose()`, and `ToString()` methods from the [Platform::Object Class](../cppcx/platform-object-class.md). The `Exception` class also has the following method.
+The `Exception` class inherits the `Equals()`, `Finalize()`, `GetHashCode()`, `GetType()`, `MemberwiseClose()`, and `ToString()` methods from the [Platform::Object Class](../cppcx/platform-object-class.md). The `Exception` class also has the following method.
 
 |Member|Description|
 |------------|-----------------|
@@ -69,10 +68,10 @@ Exception^ CreateException(int32 hr, Platform::String^ message);
 
 ### Parameters
 
-*hr*<br/>
+*hr*\
 An HRESULT value that you typically get from a call to a COM method. If the value is 0, which is equal to S_OK, this method throws [Platform::InvalidArgumentException](../cppcx/platform-invalidargumentexception-class.md) because COM methods that succeed should not throw exceptions.
 
-*message*<br/>
+*message*\
 A string that describes the error.
 
 ### Return Value
@@ -87,7 +86,7 @@ It is strongly recommended to use CreateException to create a strongly-typed exc
 
 ## <a name="ctor"></a> Exception::Exception Constructor
 
-Intializes a new instance of the Exception class.
+Initializes a new instance of the Exception class.
 
 ### Syntax
 
@@ -98,10 +97,10 @@ Exception(int32 hresult, ::Platform::String^ message);
 
 ### Parameters
 
-*hresult*<br/>
+*hresult*\
 The error HRESULT that is represented by the exception.
 
-*message*<br/>
+*message*\
 A user-specified message, such as prescriptive text, that is associated with the exception. In general you should prefer the second overload in order to provide a descriptive message that is as specific as possible about how and why the error has occurred.
 
 ## <a name="hresult"></a> Exception::HResult Property
@@ -130,7 +129,8 @@ Message that describes the error.
 ### Syntax
 
 ```cpp
-public:property String^ Message;
+public:
+    property String^ Message;
 ```
 
 ### Property Value

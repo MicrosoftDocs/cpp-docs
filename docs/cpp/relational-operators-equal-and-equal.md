@@ -21,13 +21,13 @@ expression >= expression
 
 The binary relational operators determine the following relationships:
 
-- Less than (**\<**)
+- Less than (**`<`**)
 
-- Greater than (**>**)
+- Greater than (**`>`**)
 
-- Less than or equal to (**\<=**)
+- Less than or equal to (**`<=`**)
 
-- Greater than or equal to (**>=**)
+- Greater than or equal to (**`>=`**)
 
 The relational operators have left-to-right associativity. Both operands of relational operators must be of arithmetic or pointer type. They yield values of type **`bool`**. The value returned is **`false`** (0) if the relationship in the expression is false; otherwise, the value returned is **`true`** (1).
 
@@ -48,7 +48,7 @@ int main() {
 }
 ```
 
-The expressions in the preceding example must be enclosed in parentheses because the stream insertion operator (**<<**) has higher precedence than the relational operators. Therefore, the first expression without the parentheses would be evaluated as:
+The expressions in the preceding example must be enclosed in parentheses because the stream insertion operator (**`<<`**) has higher precedence than the relational operators. Therefore, the first expression without the parentheses would be evaluated as:
 
 ```cpp
 (cout << "The true expression 3 > 2 yields: " << 3) < (2 << "\n");
@@ -78,6 +78,6 @@ If two pointers point to elements of the same array or to the element one beyond
 
 ## See also
 
-[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)\
+[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [C Relational and Equality Operators](../c-language/c-relational-and-equality-operators.md)

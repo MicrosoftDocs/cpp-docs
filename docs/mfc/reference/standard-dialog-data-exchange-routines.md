@@ -34,7 +34,7 @@ This topic lists the standard dialog data exchange (DDX) routines used for commo
 
 ## <a name="ddx_cbindex"></a> `DDX_CBIndex`
 
-The `DDX_CBIndex` function manages the transfer of **`int`** data between a combo box control in a dialog box, form view, or control view object and a **`int`** data member of the dialog box, form view, or control view object.
+The `DDX_CBIndex` function manages the transfer of **`int`** data between a combo box control in a dialog box, form view, or control view object and an **`int`** data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_CBIndex(

@@ -5,6 +5,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.debug"]
 helpviewer_keywords: ["debugging [MFC], exception classes", "debugging [MFC], classes for debugging"]
 ms.assetid: 0d158efd-2e62-452e-9d2a-d3c30dfee7f9
+ms.topic: concept-article
 ---
 # Debugging and Exception Classes
 

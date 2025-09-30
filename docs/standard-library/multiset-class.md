@@ -1,7 +1,7 @@
 ---
 title: "multiset Class"
 description: "API reference for the C++ Standard Template Library (STL) `multiset` class, which  is used for the storage and retrieval of data from a collection in which the values of the elements contained need not be unique and in which they serve as the key values according to which the data is automatically ordered."
-ms.date: "9/9/2020"
+ms.date: 9/9/2020
 f1_keywords: ["set/std::multiset", "set/std::multiset::allocator_type", "set/std::multiset::const_iterator", "set/std::multiset::const_pointer", "set/std::multiset::const_reference", "set/std::multiset::const_reverse_iterator", "set/std::multiset::difference_type", "set/std::multiset::iterator", "set/std::multiset::key_compare", "set/std::multiset::key_type", "set/std::multiset::pointer", "set/std::multiset::reference", "set/std::multiset::reverse_iterator", "set/std::multiset::size_type", "set/std::multiset::value_compare", "set/std::multiset::value_type", "set/std::multiset::begin", "set/std::multiset::cbegin", "set/std::multiset::cend", "set/std::multiset::clear", "set/std::multiset::contains", "set/std::multiset::count", "set/std::multiset::crbegin", "set/std::multiset::crend", "set/std::multiset::emplace", "set/std::multiset::emplace_hint", "set/std::multiset::empty", "set/std::multiset::end", "set/std::multiset::equal_range", "set/std::multiset::erase", "set/std::multiset::find", "set/std::multiset::get_allocator", "set/std::multiset::insert", "set/std::multiset::key_comp", "set/std::multiset::lower_bound", "set/std::multiset::max_size", "set/std::multiset::rbegin", "set/std::multiset::rend", "set/std::multiset::size", "set/std::multiset::swap", "set/std::multiset::upper_bound", "set/std::multiset::value_comp"]
 helpviewer_keywords: ["std::multiset [C++]", "std::multiset [C++], allocator_type", "std::multiset [C++], const_iterator", "std::multiset [C++], const_pointer", "std::multiset [C++], const_reference", "std::multiset [C++], const_reverse_iterator", "std::multiset [C++], difference_type", "std::multiset [C++], iterator", "std::multiset [C++], key_compare", "std::multiset [C++], key_type", "std::multiset [C++], pointer", "std::multiset [C++], reference", "std::multiset [C++], reverse_iterator", "std::multiset [C++], size_type", "std::multiset [C++], value_compare", "std::multiset [C++], value_type", "std::multiset [C++], begin", "std::multiset [C++], cbegin", "std::multiset [C++], cend", "std::multiset [C++], clear", "std::multiset [C++], contains", "std::multiset [C++], count", "std::multiset [C++], crbegin", "std::multiset [C++], crend", "std::multiset [C++], emplace", "std::multiset [C++], emplace_hint", "std::multiset [C++], empty", "std::multiset [C++], end", "std::multiset [C++], equal_range", "std::multiset [C++], erase", "std::multiset [C++], find", "std::multiset [C++], get_allocator", "std::multiset [C++], insert", "std::multiset [C++], key_comp", "std::multiset [C++], lower_bound", "std::multiset [C++], max_size", "std::multiset [C++], rbegin", "std::multiset [C++], rend", "std::multiset [C++], size", "std::multiset [C++], swap", "std::multiset [C++], upper_bound", "std::multiset [C++], value_comp"]
 ---
@@ -24,7 +24,7 @@ The element data type to be stored in the `multiset`.
 *`Compare`*\
 The type that provides a function object that can compare two element values as sort keys to determine their relative order in the `multiset`. The binary predicate **less**\<Key> is the default value.
 
-In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers) for more information.
+In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
 
 *`Allocator`*\
 The type that represents the stored allocator object that encapsulates details about the `multiset`'s allocation and deallocation of memory. The default value is `allocator<Key>`.
@@ -53,7 +53,7 @@ The `multiset` should be the associative container of choice when the conditions
 
 The `multiset` orders the sequence it controls by calling a stored function object of type *`Compare`*. This stored object is a comparison function that may be accessed by calling the member function [`key_comp`](#key_comp). In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they're equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*(*x*, *y*) is a function object that has two argument objects *x* and *y* and a return value of **`true`** or **`false`**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both *f*(*x,y*) and *f*(*y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
-In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers) for more information.
+In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
 
 ### Constructors
 
@@ -399,12 +399,12 @@ The element's key value to look for.
 
 `contains()` is new in C++20. To use it, specify the [/std:c++20](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
-`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](./stl-containers.md#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
 
 ### Example
 
 ```cpp
-// Requires /std:c++20 or /std:c++latest
+// Requires /std:c++20 or later
 #include <set>
 #include <iostream>
 
@@ -836,7 +836,7 @@ The argument key to be compared with the sort key of an element from the `multis
 
 A pair of iterators such that the first is the [`lower_bound`](#lower_bound) of the key and the second is the [`upper_bound`](#upper_bound) of the key.
 
-To access the first iterator of a pair `pr` returned by the member function, use `pr`. **`first`**, and to dereference the lower bound iterator, use \*( `pr`. **`first`**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **`second`**, and to dereference the upper bound iterator, use \*( `pr`. **`second`**).
+To access the first iterator of a pair `pr` returned by the member function, use `pr`. **`first`**, and to dereference the lower bound iterator, use \*(`pr`. **`first`**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **`second`**, and to dereference the upper bound iterator, use \*(`pr`. **`second`**).
 
 ### Example
 
@@ -953,7 +953,7 @@ The key value to be matched by the sort key of an element from the `multiset` be
 
 ### Return Value
 
-An iterator that refers to the location of an element with a specified key, or the location succeeding the last element in the `multiset` ( `multiset::end()`) if no match is found for the key.
+An iterator that refers to the location of an element with a specified key, or the location succeeding the last element in the `multiset`(`multiset::end()`) if no match is found for the key.
 
 ### Remarks
 
@@ -1195,7 +1195,6 @@ template <typename S> void print(const S& s) {
 
 int main()
 {
-
     // insert single values
     multiset<int> s1;
     // call insert(const value_type&) version
@@ -1295,7 +1294,7 @@ The stored object defines the member function:
 
 which returns true if *x* strictly precedes *y* in the sort order.
 
-Both [`key_compare`](#key_compare) and [`value_compare`](#value_compare) are synonyms for the template parameter ``Compare``. Both types are provided for the classes set and multiset, where they're identical, for compatibility with the classes map and multimap, where they're distinct.
+Both [`key_compare`](#key_compare) and [`value_compare`](#value_compare) are synonyms for the template parameter `Compare`. Both types are provided for the classes set and multiset, where they're identical, for compatibility with the classes map and multimap, where they're distinct.
 
 ### Example
 
@@ -1382,7 +1381,7 @@ For more information on `Key`, see the Remarks section of the [`multiset` Class]
 
 ### Example
 
-See the example for [`value_type`](#value_type) for an example of how to declare and use ``key_type``.
+See the example for [`value_type`](#value_type) for an example of how to declare and use `key_type`.
 
 ## <a name="lower_bound"></a> `multiset::lower_bound`
 

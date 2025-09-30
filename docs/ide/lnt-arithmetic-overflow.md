@@ -17,6 +17,8 @@ The `lnt-arithmetic-overflow` check is controlled by the **Arithmetic Overflow**
 ## Examples
 
 ```cpp
+#include <cstdint>
+
 void overflow(int a, int b) {
     int64_t mul = a * b;      // Flagged: 32-bit operation may overflow.
     int64_t shift = a << 34;  // Flagged: Shift would overflow.

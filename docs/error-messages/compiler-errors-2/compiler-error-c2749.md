@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2749"
 title: "Compiler Error C2749"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2749"
+ms.date: 11/04/2016
 f1_keywords: ["C2749"]
 helpviewer_keywords: ["C2749"]
-ms.assetid: a81aef36-cdca-4d78-89d5-b72eff2500b2
 ---
 # Compiler Error C2749
 
-'type' : can only throw or catch handle to a managed class with /clr:safe
+> 'type' : can only throw or catch handle to a managed class with /clr:safe
+
+## Remarks
 
 When using **/clr:safe**, you can only throw or catch a reference type.
 
@@ -16,7 +17,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Example
 
-The following sample generates C2749:
+The following example generates C2749:
 
 ```cpp
 // C2749.cpp

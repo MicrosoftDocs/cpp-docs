@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Walkthrough: Creating a Custom Message Block"
 title: "Walkthrough: Creating a Custom Message Block"
-ms.date: "04/25/2019"
+description: "Learn more about: Walkthrough: Creating a Custom Message Block"
+ms.date: 04/25/2019
 helpviewer_keywords: ["creating custom message blocks Concurrency Runtime]", "custom message blocks, creating [Concurrency Runtime]"]
-ms.assetid: 4c6477ad-613c-4cac-8e94-2c9e63cd43a1
 ---
 # Walkthrough: Creating a Custom Message Block
 
@@ -57,7 +56,7 @@ The runtime calls the `propagate_message` method to asynchronously transfer a me
 
 The `priority_buffer` class is a custom message block type that orders incoming messages first by priority, and then by the order in which messages are received. The `priority_buffer` class resembles the [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) class because it holds a queue of messages, and also because it acts as both a source and a target message block and can have both multiple sources and multiple targets. However, `unbounded_buffer` bases message propagation only on the order in which it receives messages from its sources.
 
-The `priority_buffer` class receives messages of type std::[tuple](../../standard-library/tuple-class.md) that contain `PriorityType` and `Type` elements. `PriorityType` refers to the type that holds the priority of each message; `Type` refers to the data portion of the message. The `priority_buffer` class sends messages of type `Type`. The `priority_buffer` class also manages two message queues: a [std::priority_queue](../../standard-library/priority-queue-class.md) object for incoming messages and a std::[queue](../../standard-library/queue-class.md) object for outgoing messages. Ordering messages by priority is useful when a `priority_buffer` object receives multiple messages simultaneously or when it receives multiple messages before any messages are read by consumers.
+The `priority_buffer` class receives messages of type [std::tuple](../../standard-library/tuple-class.md) that contain `PriorityType` and `Type` elements. `PriorityType` refers to the type that holds the priority of each message; `Type` refers to the data portion of the message. The `priority_buffer` class sends messages of type `Type`. The `priority_buffer` class also manages two message queues: a [std::priority_queue](../../standard-library/priority-queue-class.md) object for incoming messages and a [std::queue](../../standard-library/queue-class.md) object for outgoing messages. Ordering messages by priority is useful when a `priority_buffer` object receives multiple messages simultaneously or when it receives multiple messages before any messages are read by consumers.
 
 In addition to the seven methods that a class that derives from `propagator_block` must implement, the `priority_buffer` class also overrides the `link_target_notification` and `send_message` methods. The `priority_buffer` class also defines two public helper methods, `enqueue` and `dequeue`, and a private helper method, `propagate_priority_order`.
 
@@ -71,7 +70,7 @@ The following procedure describes how to implement the `priority_buffer` class.
 
     [!code-cpp[concrt-priority-buffer#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_2.h)]
 
-1. In the `std` namespace, define specializations of [std::less](../../standard-library/less-struct.md) and [std::greater](../../standard-library/greater-struct.md) that act on concurrency::[message](../../parallel/concrt/reference/message-class.md) objects.
+1. In the `std` namespace, define specializations of [std::less](../../standard-library/less-struct.md) and [std::greater](../../standard-library/greater-struct.md) that act on [concurrency::message](../../parallel/concrt/reference/message-class.md) objects.
 
     [!code-cpp[concrt-priority-buffer#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_3.h)]
 

@@ -1,49 +1,54 @@
 ---
-description: "Learn more about: Compiler Error C2992"
 title: "Compiler Error C2992"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2992"
+ms.date: 11/04/2016
 f1_keywords: ["C2992"]
 helpviewer_keywords: ["C2992"]
-ms.assetid: 01b16447-43fe-4e91-9a5a-af884a166a31
 ---
 # Compiler Error C2992
 
-'class' : invalid or missing type parameter list
+> 'class' : invalid or missing type parameter list
+
+## Remarks
 
 The class is preceded by a **`template`** or **generic** keyword with missing or invalid parameters.
 
-## Example
+## Examples
 
-The following sample generates C2992:
+The following example generates C2992:
 
 ```cpp
 // C2992.cpp
 // compile with: /c
 template <class T>
-struct TC1 {
+struct Outer {
    template <class U>
-   struct TC2;
+   struct Inner;
 };
 
-template <class T>   struct TC1<T>::TC2 {};   // C2992
+template <class T>   // C2992
+struct Outer<T>::Inner {};
 
-// OK
 template <class T>
-template <class U>
-struct TC1<T>::TC2 {};
-// C2992 can also occur when using generics:
-// C2992c.cpp
-// compile with: /clr /c
+template <class U>   // OK
+struct Outer<T>::Inner {};
+```
+
+C2992 can also occur when using generics:
+
+```cpp
+// C2992b.cpp
+// compile with: /c /clr
 generic <class T>
-ref struct GC1 {
+ref struct Outer {
    generic <class U>
-   ref struct GC2;
+   ref struct Inner;
 };
 
-generic <class T> ref struct GC1<T>::GC2 {};   // C2992
+generic <class T>   // C2992
+ref struct Outer<T>::Inner {};
 
-// OK
 generic <class T>
-generic <class U>
-ref struct GC1<T>::GC2 {};
+generic <class U>   // OK
+ref struct Outer<T>::Inner {};
 ```

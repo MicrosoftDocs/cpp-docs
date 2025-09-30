@@ -5,6 +5,7 @@ ms.date: "08/30/2018"
 f1_keywords: ["_emit"]
 helpviewer_keywords: ["byte defining (inline assembly)", "_emit pseudoinstruction"]
 ms.assetid: 004c48f3-364c-4e82-9a51-e326f9cc7b2b
+ms.topic: reference
 ---
 # _emit Pseudoinstruction
 

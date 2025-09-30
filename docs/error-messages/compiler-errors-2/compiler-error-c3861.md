@@ -1,18 +1,17 @@
 ---
-description: "Learn more about: Compiler Error C3861"
 title: "Compiler Error C3861"
+description: "Learn more about: Compiler Error C3861"
 ms.date: 06/29/2022
 f1_keywords: ["C3861"]
 helpviewer_keywords: ["C3861"]
-ms.assetid: 0a1eee30-b3db-41b1-b1e5-35949c3924d7
 ---
 # Compiler Error C3861
 
 > '*identifier*': identifier not found
 
-The compiler was unable to resolve a reference to an identifier, even using argument-dependent lookup.
-
 ## Remarks
+
+The compiler was unable to resolve a reference to an identifier, even using argument-dependent lookup.
 
 To fix this error, compare use of *identifier* to the identifier declaration for case and spelling. Verify that [scope resolution operators](../../cpp/scope-resolution-operator.md) and namespace [`using` directives](../../cpp/namespaces-cpp.md#using_directives) are used correctly. If the identifier is declared in a header file, verify that the header is included before the identifier is referenced. If the identifier is meant to be externally visible, make sure that it's declared in any source file that uses it. Also check that the identifier declaration or definition isn't excluded by [conditional compilation directives](../../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md).
 
@@ -24,7 +23,7 @@ If error C3861 appears after project migration from older versions of the compil
 
 ### Undefined identifier
 
-The following sample generates C3861 because the identifier isn't defined.
+The following example generates C3861 because the identifier isn't defined.
 
 ```cpp
 // C3861.cpp
@@ -37,7 +36,7 @@ int main() {
 
 ### Identifier not in scope
 
-The following sample generates C3861, because an identifier is only visible in the file scope of its definition, unless it's declared in other source files that use it.
+The following example generates C3861, because an identifier is only visible in the file scope of its definition, unless it's declared in other source files that use it.
 
 Source file `C3861_a1.cpp`:
 
@@ -98,7 +97,7 @@ int main() {
 
 ### ADL and friend functions
 
-The following sample generates C3767 because the compiler can't use argument dependent lookup for `FriendFunc`:
+The following example generates C3861 because the compiler can't use argument dependent lookup for `FriendFunc`:
 
 ```cpp
 namespace N {

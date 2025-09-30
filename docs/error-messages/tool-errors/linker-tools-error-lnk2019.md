@@ -16,7 +16,7 @@ This error message is followed by fatal error [LNK1120](../../error-messages/too
 
 ## Possible causes
 
-There are many ways to get this error. All of them involve a reference to a function or variable that the linker couldn't *resolve*, or find a definition for. The compiler can identify when a symbol isn't *declared*, but it can't tell when the symbol isn't *defined*. It's because the definition may be in a different source file or library. If a symbol is referred to but never defined, the linker generates an unresolved external symbol error.
+There are many ways to get this error. All of them involve a reference to a function or variable that the linker couldn't *resolve*, or find a definition for. The compiler can identify when a symbol isn't *declared*, but it can't tell when the symbol isn't *defined*. It's because the definition might be in a different source file or library. If a symbol is referred to but never defined, the linker generates an unresolved external symbol error.
 
 Here are some common problems that cause LNK2019:
 
@@ -58,7 +58,7 @@ A static class member must have a unique definition, or it will violate the one-
 
 ### A build dependency is only defined as a project dependency in the solution
 
-In earlier versions of Visual Studio, this level of dependency was sufficient. However, starting with Visual Studio 2010, Visual Studio requires a [project-to-project reference](/visualstudio/ide/managing-references-in-a-project). If your project doesn't have a project-to-project reference, you may receive this linker error. Add a project-to-project reference to fix it.
+In earlier versions of Visual Studio, this level of dependency was sufficient. However, starting with Visual Studio 2010, Visual Studio requires a [project-to-project reference](/visualstudio/ide/managing-references-in-a-project). If your project doesn't have a project-to-project reference, you might receive this linker error. Add a project-to-project reference to fix it.
 
 ### An entry point isn't defined
 
@@ -86,15 +86,15 @@ For example, if you use an AVX2 intrinsic, but don't specify the [`/ARCH:AVX2`](
 
 ### You mix code that uses native `wchar_t` with code that doesn't
 
-C++ language conformance work that was done in Visual Studio 2005 made **`wchar_t`** a native type by default. If not all files have been compiled by using the same **`/Zc:wchar_t`** settings, type references may not resolve to compatible types. Make sure **`wchar_t`** types in all library and object files are compatible. Either update from a **`wchar_t`** typedef, or use consistent **/Zc:wchar_t** settings when you compile.
+C++ language conformance work that was done in Visual Studio 2005 made **`wchar_t`** a native type by default. If not all files have been compiled by using the same **`/Zc:wchar_t`** settings, type references might not resolve to compatible types. Make sure **`wchar_t`** types in all library and object files are compatible. Either update from a **`wchar_t`** typedef, or use consistent **/Zc:wchar_t** settings when you compile.
 
-### You get errors for `*printf*` and `*scanf*` functions when you link a legacy static library
+### You get errors for *`printf`* and *`scanf`* functions when you link a legacy static library
 
-A static library that was built using a version of Visual Studio before Visual Studio 2015 may cause LNK2019 errors when linked with the UCRT. The UCRT header files `<stdio.h>`, `<conio.h>`, and `<wchar.h>`now define many `*printf*` and `*scanf*` variations as **`inline`** functions. The inlined functions are implemented by a smaller set of common functions. Individual exports for the inlined functions aren't available in the standard UCRT libraries, which only export the common functions. There are a couple of ways to resolve this issue. The method we recommend is to rebuild the legacy library with your current version of Visual Studio. Make sure the library code uses the standard headers for the definitions of the `*printf*` and `*scanf*` functions that caused the errors. Another option for a legacy library that you can't rebuild is to add `legacy_stdio_definitions.lib` to the list of libraries you link. This library file provides symbols for the `*printf*` and `*scanf*` functions that are inlined in the UCRT headers. For more information, see the **Libraries** section in [Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md#libraries).
+A static library that was built using a version of Visual Studio before Visual Studio 2015 might cause LNK2019 errors when linked with the UCRT. The UCRT header files `<stdio.h>`, `<conio.h>`, and `<wchar.h>`now define many *`printf`* and *`scanf`* variations as **`inline`** functions. The inlined functions are implemented by a smaller set of common functions. Individual exports for the inlined functions aren't available in the standard UCRT libraries, which only export the common functions. There are a couple of ways to resolve this issue. The method we recommend is to rebuild the legacy library with your current version of Visual Studio. Make sure the library code uses the standard headers for the definitions of the *`printf`* and *`scanf`* functions that caused the errors. Another option for a legacy library that you can't rebuild is to add `legacy_stdio_definitions.lib` to the list of libraries you link. This library file provides symbols for the *`printf`* and *`scanf`* functions that are inlined in the UCRT headers. For more information, see the **Libraries** section in [Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md#libraries).
 
 ## Third-party library issues and vcpkg
 
-If you see this error when you're trying to configure a third-party library as part of your build, consider using [vcpkg](https://vcpkg.io/). **vcpkg** is a C++ package manager that uses your existing Visual Studio tools to install and build the library. **vcpkg** supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports). It sets all the configuration properties and dependencies required for successful builds as part of your project.
+If you see this error when you're trying to configure a third-party library as part of your build, consider using [vcpkg](/vcpkg/). **vcpkg** is a C++ package manager that uses your existing Visual Studio tools to install and build the library. **vcpkg** supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports). It sets all the configuration properties and dependencies required for successful builds as part of your project.
 
 ## Diagnosis tools
 

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2268"
 title: "Compiler Error C2268"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2268"
+ms.date: 11/04/2016
 f1_keywords: ["C2268"]
 helpviewer_keywords: ["C2268"]
-ms.assetid: 0ed055c9-3c6f-4df2-a5b6-85cf0e01a249
 ---
 # Compiler Error C2268
 
-'function' is a compiler predefined library helper. Library helpers are not supported with /GL; compile object file 'file' without /GL.
+> 'function' is a compiler predefined library helper. Library helpers are not supported with /GL; compile object file 'file' without /GL.
+
+## Remarks
 
 A function defined in your source code has the same name as an internal compiler function. Compile the module containing the function without [/GL](../../build/reference/gl-whole-program-optimization.md).
 
-The following sample generates C2268:
+## Example
+
+The following example generates C2268:
 
 ```c
 // C2268.c

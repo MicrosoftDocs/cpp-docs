@@ -1,21 +1,22 @@
 ---
-title: "x64 calling convention"
-description: "Learn about the details of the default x64 calling convention."
-ms.date: 05/17/2022
+title: "x64 Calling Convention"
+description: "Learn about the default x64 calling convention that one function uses to make calls into another function."
+ms.date: 03/19/2025
+ms.topic: concept-article
 ---
 # x64 calling convention
 
-This section describes the standard processes and conventions that one function (the caller) uses to make calls into another function (the callee) in x64 code.
+This article describes the standard processes and conventions that one function (the caller) uses to make calls into another function (the callee) in x64 code.
 
-For more information on the `__vectorcall` calling convention, see [__vectorcall](../cpp/vectorcall.md).
+For more information about the `__vectorcall` calling convention, see [__vectorcall](../cpp/vectorcall.md).
 
 ## Calling convention defaults
 
-The x64 Application Binary Interface (ABI) uses a four-register fast-call calling convention by default. Space is allocated on the call stack as a shadow store for callees to save those registers.
+The x64 Application Binary Interface (ABI) uses a four-register, fast-call calling convention by default. Space is allocated on the call stack as a shadow store for callees to save those registers.
 
 There's a strict one-to-one correspondence between a function call's arguments and the registers used for those arguments. Any argument that doesn't fit in 8 bytes, or isn't 1, 2, 4, or 8 bytes, must be passed by reference. A single argument is never spread across multiple registers.
 
-The x87 register stack is unused. It may be used by the callee, but consider it volatile across function calls. All floating point operations are done using the 16 XMM registers.
+The x87 register stack is unused. It might be used by the callee, but consider it volatile across function calls. All floating point operations are done using the 16 XMM registers.
 
 Integer arguments are passed in registers RCX, RDX, R8, and R9. Floating point arguments are passed in XMM0L, XMM1L, XMM2L, and XMM3L. 16-byte arguments are passed by reference. Parameter passing is described in detail in [Parameter passing](#parameter-passing). These registers, and RAX, R10, R11, XMM4, and XMM5, are considered *volatile*, or potentially changed by a callee on return. Register usage is documented in detail in [x64 register usage](x64-software-conventions.md#x64-register-usage) and [Caller/callee saved registers](#callercallee-saved-registers).
 
@@ -27,13 +28,13 @@ Most structures are aligned to their natural alignment. The primary exceptions a
 
 ## Unwindability
 
-Leaf functions are functions that don't change any non-volatile registers. A non-leaf function may change non-volatile RSP, for example, by calling a function. Or, it could change RSP by allocating additional stack space for local variables. To recover non-volatile registers when an exception is handled, non-leaf functions are annotated with static data. The data describes how to properly unwind the function at an arbitrary instruction. This data is stored as *pdata*, or procedure data, which in turn refers to *xdata*, the exception handling data. The xdata contains the unwinding information, and can point to additional pdata or an exception handler function.
+Leaf functions are functions that don't change any nonvolatile registers. A nonleaf function might change nonvolatile RSP, for example, by calling a function. Or, it could change RSP by allocating more stack space for local variables. To recover nonvolatile registers when an exception is handled, nonleaf functions are annotated with static data. The data describes how to properly unwind the function at an arbitrary instruction. This data is stored as *pdata*, or procedure data, which in turn refers to *xdata*, the exception handling data. The xdata contains the unwinding information, and can point to additional pdata or an exception handler function.
 
 Prologs and epilogs are highly restricted so that they can be properly described in xdata. The stack pointer must remain 16-byte aligned in any region of code that isn't part of an epilog or prolog, except within leaf functions. Leaf functions can be unwound simply by simulating a return, so pdata and xdata aren't required. For details about the proper structure of function prologs and epilogs, see [x64 prolog and epilog](../build/prolog-and-epilog.md). For more information about exception handling, and the exception handling and unwinding of pdata and xdata, see [x64 exception handling](../build/exception-handling-x64.md).
 
 ## Parameter passing
 
-By default, the x64 calling convention passes the first four arguments to a function in registers. The registers used for these arguments depend on the position and type of the argument. Remaining arguments get pushed on the stack in right-to-left order.
+By default, the x64 calling convention passes the first four arguments to a function in registers. The registers used for these arguments depend on the position and type of the argument. Remaining arguments get pushed on the stack in right-to-left order. All arguments passed on the stack are 8-byte aligned.
 
 Integer valued arguments in the leftmost four positions are passed in left-to-right order in RCX, RDX, R8, and R9, respectively. The fifth and higher arguments are passed on the stack as previously described. All integer arguments in registers are right-justified, so the callee can ignore the upper bits of the register and access only the portion of the register necessary.
 
@@ -92,7 +93,7 @@ If parameters are passed via varargs (for example, ellipsis arguments), then the
 
 For functions not fully prototyped, the caller passes integer values as integers and floating-point values as double precision. For floating-point values only, both the integer register and the floating-point register contain the float value in case the callee expects the value in the integer registers.
 
-```cpp
+```c
 func1();
 func2() {   // RCX = 2, RDX = XMM1 = 1.0, and R8 = 7
    func1(2, 1.0, 7);
@@ -101,15 +102,15 @@ func2() {   // RCX = 2, RDX = XMM1 = 1.0, and R8 = 7
 
 ## Return values
 
-A scalar return value that can fit into 64 bits, including the **`__m64`** type, is returned through RAX. Non-scalar types including floats, doubles, and vector types such as [`__m128`](../cpp/m128.md), [`__m128i`](../cpp/m128i.md), [`__m128d`](../cpp/m128d.md) are returned in XMM0. The state of unused bits in the value returned in RAX or XMM0 is undefined.
+A scalar return value that can fit into 64 bits, including the `__m64` type, is returned through RAX. Nonscalar types including floats, doubles, and vector types such as [`__m128`](../cpp/m128.md), [`__m128i`](../cpp/m128i.md), [`__m128d`](../cpp/m128d.md) are returned in XMM0. The state of unused bits in the value returned in RAX or XMM0 is undefined.
 
-User-defined types can be returned by value from global functions and static member functions. To return a user-defined type by value in RAX, it must have a length of 1, 2, 4, 8, 16, 32, or 64 bits. It must also have no user-defined constructor, destructor, or copy assignment operator. It can have no private or protected non-static data members, and no non-static data members of reference type. It can't have base classes or virtual functions. And, it can only have data members that also meet these requirements. (This definition is essentially the same as a C++03 POD type. Because the definition has changed in the C++11 standard, we don't recommend using `std::is_pod` for this test.) Otherwise, the caller must allocate memory for the return value and pass a pointer to it as the first argument. The remaining arguments are then shifted one argument to the right. The same pointer must be returned by the callee in RAX.
+User-defined types can be returned by value from global functions and static member functions. To return a user-defined type by value in RAX, it must have a length of 1, 2, 4, 8, 16, 32, or 64 bits. It must also have no user-defined constructor, destructor, or copy assignment operator. It can have no private or protected nonstatic data members, and no nonstatic data members of reference type. It can't have base classes or virtual functions. And, it can only have data members that also meet these requirements. This definition is essentially the same as a C++03 POD type. Because the definition has changed in the C++11 standard, we don't recommend using `std::is_pod` for this test. Otherwise, the caller must allocate memory for the return value and pass a pointer to it as the first argument. The remaining arguments are then shifted one argument to the right. The same pointer must be returned by the callee in RAX.
 
 These examples show how parameters and return values are passed for functions with the specified declarations:
 
 ### Example of return value 1 - 64-bit result
 
-```Output
+```cpp
 __int64 func1(int a, float b, int c, int d, int e);
 // Caller passes a in RCX, b in XMM1, c in R8, d in R9, e pushed on stack,
 // callee returns __int64 result in RAX.
@@ -117,7 +118,7 @@ __int64 func1(int a, float b, int c, int d, int e);
 
 ### Example of return value 2 - 128-bit result
 
-```Output
+```cpp
 __m128 func2(float a, double b, int c, __m64 d);
 // Caller passes a in XMM0, b in XMM1, c in R8, d in R9,
 // callee returns __m128 result in XMM0.
@@ -125,7 +126,7 @@ __m128 func2(float a, double b, int c, __m64 d);
 
 ### Example of return value 3 - user type result by pointer
 
-```Output
+```cpp
 struct Struct1 {
    int j, k, l;    // Struct1 exceeds 64 bits.
 };
@@ -137,7 +138,7 @@ Struct1 func3(int a, double b, int c, float d);
 
 ### Example of return value 4 - user type result by value
 
-```Output
+```cpp
 struct Struct2 {
    int j, k;    // Struct2 fits in 64 bits, and meets requirements for return by value.
 };
@@ -168,7 +169,7 @@ The x87 FPU control word register gets set using the following standard values a
 
 | Register\[bits] | Setting |
 |-|-|
-| FPCSR\[0:6] | Exception masks all 1's (all exceptions masked) |
+| FPCSR\[0:6] | Exception masks all 1s (all exceptions masked) |
 | FPCSR\[7] | Reserved - 0 |
 | FPCSR\[8:9] | Precision Control - 10B (double precision) |
 | FPCSR\[10:11] | Rounding  control - 0 (round to nearest) |
@@ -176,7 +177,7 @@ The x87 FPU control word register gets set using the following standard values a
 
 A callee that modifies any of the fields within FPCSR must restore them before returning to its caller. Furthermore, a caller that has modified any of these fields must restore them to their standard values before invoking a callee, unless by agreement the callee expects the modified values.
 
-There are two exceptions to the rules about the non-volatility of the control flags:
+There are two exceptions to the rules about the nonvolatility of the control flags:
 
 - In functions where the documented purpose of the given function is to modify the nonvolatile FPCSR flags.
 
@@ -191,13 +192,13 @@ The nonvolatile portion is set to the following standard values at the start of 
 | Register\[bits] | Setting |
 |-|-|
 | MXCSR\[6] | Denormals are zeros - 0 |
-| MXCSR\[7:12] | Exception masks all 1's (all exceptions masked) |
+| MXCSR\[7:12] | Exception masks all 1s (all exceptions masked) |
 | MXCSR\[13:14] | Rounding  control - 0 (round to nearest) |
 | MXCSR\[15] | Flush to zero for masked underflow - 0 (off) |
 
 A callee that modifies any of the nonvolatile fields within MXCSR must restore them before returning to its caller. Furthermore, a caller that has modified any of these fields must restore them to their standard values before invoking a callee, unless by agreement the callee expects the modified values.
 
-There are two exceptions to the rules about the non-volatility of the control flags:
+There are two exceptions to the rules about the nonvolatility of the control flags:
 
 - In functions where the documented purpose of the given function is to modify the nonvolatile MXCSR flags.
 
@@ -207,10 +208,10 @@ Make no assumptions about the MXCSR register's volatile portion state across a f
 
 ## setjmp/longjmp
 
-When you include setjmpex.h or setjmp.h, all calls to [`setjmp`](../c-runtime-library/reference/setjmp.md) or [`longjmp`](../c-runtime-library/reference/longjmp.md) result in an unwind that invokes destructors and **`__finally`** calls.  This behavior differs from x86, where including setjmp.h results in **`__finally`** clauses and destructors not being invoked.
+When you include `setjmpex.h` or `setjmp.h`, all calls to [`setjmp`](../c-runtime-library/reference/setjmp.md) or [`longjmp`](../c-runtime-library/reference/longjmp.md) result in an unwind that invokes destructors and `__finally` calls. This behavior differs from x86, where including `setjmp.h` results in `__finally` clauses and destructors not being invoked.
 
-A call to `setjmp` preserves the current stack pointer, non-volatile registers, and MXCSR registers.  Calls to `longjmp` return to the most recent `setjmp` call site and resets the stack pointer, non-volatile registers, and MXCSR registers, back to the state as preserved by the most recent `setjmp` call.
+A call to `setjmp` preserves the current stack pointer, nonvolatile registers, and MXCSR registers. Calls to `longjmp` return to the most recent `setjmp` call site and resets the stack pointer, nonvolatile registers, and MXCSR registers, back to the state as preserved by the most recent `setjmp` call.
 
 ## See also
 
-[x64 software conventions](../build/x64-software-conventions.md)
+- [Overview of x64 ABI conventions](../build/x64-software-conventions.md)

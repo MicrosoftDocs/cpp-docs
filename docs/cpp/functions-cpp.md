@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Functions (C++)"
 title: "Functions (C++)"
-ms.date: "11/19/2018"
+description: "Learn more about: Functions (C++)"
+ms.date: 11/19/2018
 helpviewer_keywords: ["defaults, arguments", "function definitions", "function definitions, about function definitions", "default arguments", "declarators, functions"]
 ---
 # Functions (C++)
@@ -77,7 +77,6 @@ Optional parts of a function declaration are:
     ```cpp
     //Declare printf with C linkage.
     extern "C" int printf( const char *fmt, ... );
-
     ```
 
    For more information, see [Translation units and linkage](../cpp/program-and-linkage-cpp.md).
@@ -180,7 +179,7 @@ When a function modifies an argument that is passed by reference, it modifies th
 void DoSomething(const std::string& input){...}
 ```
 
-**C++ 11:**  To explicitly handle arguments that are passed by rvalue-reference or lvalue-reference, use a double-ampersand on the parameter to indicate a universal reference:
+**C++11:**  To explicitly handle arguments that are passed by rvalue-reference or lvalue-reference, use a double-ampersand on the parameter to indicate a universal reference:
 
 ```cpp
 void DoSomething(const std::string&& input){...}

@@ -1,10 +1,9 @@
 ---
 title: "Code Pages"
 description: "A description of code page support in the Microsoft C runtime."
-ms.topic: "conceptual"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
+ms.topic: "concept-article"
 helpviewer_keywords: ["character sets [C++], code pages", "ANSI [C++], code pages", "system-default code page", "multibyte code pages [C++]", "localization [C++], code pages", "code pages [C++], types of", "locale code pages [C++]"]
-ms.assetid: 4a26fc42-185a-4add-98bf-a7b314ae6186
 ---
 # Code pages
 
@@ -22,7 +21,7 @@ The Microsoft runtime library uses the following types of code pages:
 
    also sets the locale to the system-default ANSI code page.
 
-- Locale code page. The behavior of several run-time routines is dependent on the current locale setting, which includes the locale code page. (For more information, see [Locale](./locale.md).) By default, all locale-dependent routines in the Microsoft run-time library use the code page that corresponds to the "C" locale. At run time, you can change or query the locale code page in use with a call to [`setlocale`](./reference/setlocale-wsetlocale.md).
+- Locale code page. The behavior of several run-time routines is dependent on the current locale setting, which includes the locale code page. For more information, see [Locale](./locale.md). By default, all locale-dependent routines in the Microsoft run-time library use the code page that corresponds to the "C" locale. At run time, you can change or query the locale code page in use with a call to [`setlocale`](./reference/setlocale-wsetlocale.md).
 
 - Multibyte code page. The behavior of most of the multibyte-character routines in the run-time library depends on the current multibyte code page setting. By default, these routines use the system-default ANSI code page. At run-time you can query and change the multibyte code page with [`_getmbcp`](./reference/getmbcp.md) and [`_setmbcp`](./reference/setmbcp.md), respectively.
 

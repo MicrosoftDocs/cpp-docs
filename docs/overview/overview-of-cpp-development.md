@@ -1,7 +1,7 @@
 ---
 title: "Overview of C++ development in Visual Studio"
 description: "The Visual Studio IDE supports C++ development on Windows, Linux, Android and iOS with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
-ms.date: "12/02/2019"
+ms.date: 12/02/2019
 helpviewer_keywords: ["Visual C++, development tools"]
 author: "tylermsft"
 ms.author: "twhitney"
@@ -44,13 +44,13 @@ Source control enables you to coordinate work among multiple developers, isolate
 
 ::: moniker range=">=msvc-160"
 
-![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png )
+![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png)
 
 ::: moniker-end
 
 ::: moniker range="<=msvc-150"
 
-![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png )
+![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png)
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ For more information about Git integration with repos in Azure, see [Share your 
 
 ## Obtain libraries
 
-Use the [vcpkg](https://vcpkg.io/) package manager to obtain and install third-party libraries. Over 1700 open-source library packages are currently available in the catalog.
+Use the [vcpkg](/vcpkg/) package manager to obtain and install third-party libraries. Over 1700 open-source library packages are currently available in the catalog.
 
 ## Create user interfaces with designers
 
@@ -66,9 +66,9 @@ If your program has a user interface, you can use a designer to quickly populate
 
 ![Screenshot of the Designer and Toolbox windows.](media/vs2017-toolbox-designer.png "Visual Studio 2017 Toolbox and designer")
 
-For more information about designing a user interface for a Universal Windows Platform app, see [Design and UI](https://developer.microsoft.com/windows/design).
-
-For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For information about Win32 Windows programs, see [Windows Desktop Applications](../windows/desktop-applications-visual-cpp.md).
+- For more information about designing a user interface for a Universal Windows Platform app, see [Design and UI](https://developer.microsoft.com/windows/design).
+- For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](../mfc/mfc-desktop-applications.md).
+- For information about Win32 Windows programs, see [Windows C++ desktop application types](../windows/overview-of-windows-programming-in-cpp.md).
 
 ## Write code
 
@@ -110,7 +110,7 @@ For more information, see [Verifying Code by Using Unit Tests](/visualstudio/tes
 
 ## Analyze
 
-Visual Studio includes static code analysis tools that can detect potential problems in your source code. These tools include an implementation of the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) rules checkers. For more information, see [Code analysis for C/C++ overview](../code-quality/code-analysis-for-c-cpp-overview.md).
+Visual Studio includes static code analysis tools that can detect potential problems in your source code. These tools include an implementation of the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) rules checkers. For more information, see [Code analysis for C/C++ overview](../code-quality/code-analysis-for-c-cpp-overview.md).
 
 ## Deploy completed applications
 

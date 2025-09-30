@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2786"
 title: "Compiler Error C2786"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2786"
+ms.date: 11/04/2016
 f1_keywords: ["C2786"]
 helpviewer_keywords: ["C2786"]
-ms.assetid: 6676d8c0-86dd-4a39-bdda-b75a35f4d137
 ---
 # Compiler Error C2786
 
-'type' : invalid operand for __uuidof
+> 'type' : invalid operand for __uuidof
+
+## Remarks
 
 The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type with a GUID attached or an object of such a user-defined type.  Possible causes:
 
@@ -16,7 +17,9 @@ The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type 
 
 1. **`__uuidof`** cannot extract the GUID from the argument.
 
-The following sample generates C2786:
+## Example
+
+The following example generates C2786:
 
 ```cpp
 // C2786.cpp

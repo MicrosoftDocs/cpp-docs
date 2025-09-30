@@ -12,7 +12,7 @@ A binary predicate that performs the inequality operation (`operator!=`) on its 
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct not_equal_to : public binary_function<Type, Type, bool>
 {
@@ -24,7 +24,7 @@ template <>
 struct not_equal_to<void>
 {
   template <class T, class U>
-  auto operator()(T&& Left, U&& Right) const`
+  auto operator()(T&& Left, U&& Right) const
     -> decltype(std::forward<T>(Left) != std::forward<U>(Right));
 };
 ```
@@ -93,7 +93,7 @@ int main( )
    transform ( v1.begin( ), v1.end( ), v2.begin( ), v3.begin ( ),
       not_equal_to<double>( ) );
 
-   cout << "The result of the element-wise not_equal_to comparsion\n"
+   cout << "The result of the element-wise not_equal_to comparison\n"
       << "between v1 & v2 is: ( " ;
    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
       cout << *Iter3 << " ";
@@ -104,6 +104,6 @@ int main( )
 ```Output
 The vector v1 = ( 0 1 4 5 8 9 )
 The vector v2 = ( -0 1 -4 5 -8 9 )
-The result of the element-wise not_equal_to comparsion
+The result of the element-wise not_equal_to comparison
 between v1 & v2 is: ( 0 0 1 0 1 0 )
 ```

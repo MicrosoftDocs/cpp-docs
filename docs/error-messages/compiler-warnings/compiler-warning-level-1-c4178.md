@@ -1,31 +1,34 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4178"
 title: "Compiler Warning (level 1) C4178"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4178"
+ms.date: 03/06/2024
 f1_keywords: ["C4178"]
 helpviewer_keywords: ["C4178"]
-ms.assetid: 2c2c8f97-a5c4-47cd-8dd2-beea172613f3
 ---
 # Compiler Warning (level 1) C4178
 
-case constant 'constant' too big for the type of the switch expression
+> case constant 'constant' too big for the type of the switch expression
+
+## Remarks
 
 A case constant in a **`switch`** expression does not fit in the type to which it is assigned.
 
 ## Example
 
+The following example generates C4178:
+
 ```cpp
 // C4178.cpp
-// compile with: /W1
+// compile with: /W1 /permissive
 int main()
 {
-    int i;  // maximum size of unsigned long int is 4294967295
-    switch( i )
+    unsigned int u = 1;
+    switch (u)
     {
-        case 4294967295:   // OK
-            break;
-        case 4294967296:   // C4178
-            break;
+    case 4294967295:   // OK, maximum value for type unsigned int
+        break;
+    case 4294967296:   // C4178, exceeded maximum value
+        break;
     }
 }
 ```

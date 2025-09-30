@@ -4,6 +4,7 @@ title: "Incrementing and Decrementing Pointers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["incrementing pointers", "MBCS [C++], pointers", "pointers [C++], multibyte characters", "decrementing pointers"]
 ms.assetid: 0872b4a0-e2bd-4004-8319-070efb76f2fd
+ms.topic: concept-article
 ---
 # Incrementing and Decrementing Pointers
 

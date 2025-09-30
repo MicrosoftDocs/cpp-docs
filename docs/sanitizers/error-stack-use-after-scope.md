@@ -1,6 +1,6 @@
 ---
 title: "Error: stack-use-after-scope"
-description: "Source examples and live debug screenshots for stack use after scope errors."
+description: "Learn about the stack-use-after-scope Address Sanitizer error."
 ms.date: 02/05/2021
 f1_keywords: ["stack-use-after-scope"]
 helpviewer_keywords: ["stack-use-after-scope error", "AddressSanitizer error stack-use-after-scope"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["stack-use-after-scope error", "AddressSanitizer error sta
 # Error: `stack-use-after-scope`
 
 > Address Sanitizer Error: Use of out-of-scope stack memory
+
+## Remarks
 
 The use of a stack address outside the lexical scope of a variable's lifetime can happen many ways in C or C++.
 
@@ -80,7 +82,7 @@ devenv /debugexe example2.exe
 struct IntHolder {
     explicit IntHolder(int* val = 0) : val_(val) { }
     ~IntHolder() {
-        printf("Value: %d\n", *val_);  // Bom!
+        printf("Value: %d\n", *val_);  // Boom!
     }
     void set(int* val) { val_ = val; }
     int* get() { return val_; }
@@ -138,7 +140,7 @@ void temp_from_conversion() {
     a.print();
 }
 
-void main() {
+int main() {
     explicit_temp();
     temp_from_conversion(); 
 }
@@ -147,9 +149,11 @@ void main() {
 To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
-cl example4.cpp /EHsc /fsanitize=address /Zi
+cl example4.cpp /EHsc /fsanitize=address /Zi /Od
 devenv /debugexe example4.exe
 ```
+
+ASAN is a form of dynamic analysis, which means it can only detect bad code that is actually executed. An optimizer may propagate the value of `v` in these cases instead of reading from the address stored in `p`. As a result, this example requires the `/Od` flag.
 
 ### Resulting error - temporaries
 
@@ -157,11 +161,11 @@ devenv /debugexe example4.exe
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

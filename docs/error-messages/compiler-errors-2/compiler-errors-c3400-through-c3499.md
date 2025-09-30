@@ -3,8 +3,7 @@ description: "Learn more about: Compiler errors C3400 Through C3499"
 title: "Compiler errors C3400 Through C3499"
 ms.date: 06/01/2022
 f1_keywords: ["C3401", "C3402", "C3403", "C3404", "C3405", "C3406", "C3407", "C3410", "C3411", "C3416", "C3419", "C3422", "C3423", "C3424", "C3425", "C3426", "C3427", "C3428", "C3429", "C3430", "C3431", "C3432", "C3433", "C3434", "C3435", "C3436", "C3437", "C3438", "C3439", "C3440", "C3441", "C3442", "C3443", "C3444", "C3447", "C3448", "C3449", "C3471", "C3472", "C3473", "C3474", "C3475", "C3476", "C3477", "C3478", "C3479", "C3486", "C3494", "C3497"]
-helpviewer_keywords: ["C3401", "C3402", "C3403", "C3404", "C3405", "C3406", "C3407", "C3410", "C3411", "C3416", "C3419", "C3422", "C3424", "C3425", "C3426", "C3427", "C3428", "C3429", "C3430", "C3431", "C3432", "C3433", "C3434", "C3435", "C3436", "C3437", "C3438", "C3439", "C3440", "C3441", "C3442", "C3443", "C3444", "C3471", "C3472", "C3473", "C3474", "C3475", "C3476", "C3477", "C3478", "C3479", "C3486", "C3494", "C3497"]
-ms.assetid: a5651dfb-c402-4e01-b3ae-28f371e51d6a
+helpviewer_keywords: ["C3401", "C3402", "C3403", "C3404", "C3405", "C3406", "C3407", "C3410", "C3411", "C3416", "C3419", "C3422", "C3423", "C3424", "C3425", "C3426", "C3427", "C3428", "C3429", "C3430", "C3431", "C3432", "C3433", "C3434", "C3435", "C3436", "C3437", "C3438", "C3439", "C3440", "C3441", "C3442", "C3443", "C3444", "C3447", "C3448", "C3449", "C3471", "C3472", "C3473", "C3474", "C3475", "C3476", "C3477", "C3478", "C3479", "C3486", "C3494", "C3497"]
 ---
 # Compiler errors C3400 Through C3499
 
@@ -44,7 +43,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C3425 | cannot throw pointer to object of incomplete type '*type*' |
 | Compiler error C3426 | cannot throw object of incomplete type '*type*' |
 | Compiler error C3427 | '*context*': '*keyword*' cannot be used with layout_version(*number*) |
-| Compiler error C3428 | '*context*': '*keyword*' can only be applied to class declarations or definitions |
+| Compiler error C3428 | '`__declspec(`*keyword*`)`' can only be applied to class declarations or definitions |
 | Compiler error C3429 | '*context*': '*keyword*' cannot be applied to a union |
 | Compiler error C3430 | a scoped enumeration must have a name |
 | Compiler error C3431 | '*identifier*': *type1* cannot be redeclared as *type2* |
@@ -93,8 +92,8 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C3474 | could not open output file '*filename*' |
 | Compiler error C3475 | syntax error in input file '*filename*' |
 | Compiler error C3476 | could not open file '*filename*' for input |
-| Compiler error C3477 | a lambda cannot appear in an unevaluated context |
-| Compiler error C3478 | '*identifier*': an array cannot be captured by copy |
+| Compiler error C3477 | a lambda can only appear in an unevaluated context with '*C++ version*' or later |
+| Compiler error C3478 | '*identifier*': an array of unknown bounds cannot be captured by copy |
 | Compiler error C3479 | SAL annotations on lambdas are not supported |
 | [Compiler error C3480](compiler-error-c3480.md) | '*variable*': a lambda capture variable must be from an enclosing function scope |
 | [Compiler error C3481](compiler-error-c3481.md) | '*identifier*': lambda capture variable not found |
@@ -104,16 +103,16 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C3485](compiler-error-c3485.md) | a lambda definition cannot have any cv-qualifiers (Obsolete in Visual Studio 2022.) |
 | Compiler error C3486 | a parameter for a lambda cannot have a default argument (Obsolete in Visual Studio 2022.) |
 | [Compiler error C3487](compiler-error-c3487.md) | '*type*': all return expressions must deduce to the same type: previously it was '*type*' |
-| [Compiler error C3488](compiler-error-c3488.md) | '&*identifier*' is not allowed when the default capture mode is by-reference |
-| [Compiler error C3489](compiler-error-c3489.md) | '&*identifier*' is required when the default capture mode is by copy |
+| [Compiler error C3488](compiler-error-c3488.md) | '`&`*identifier*' cannot be explicitly captured when the default capture mode is by reference (`&`) |
+| [Compiler error C3489](compiler-error-c3489.md) | '`&`*identifier*' is required when the default capture mode is by copy (`=`) |
 | [Compiler error C3490](compiler-error-c3490.md) | '*identifier*' cannot be modified because it is being accessed through a const object |
 | [Compiler error C3491](compiler-error-c3491.md) | '*identifier*': a by copy capture cannot be modified in a non-mutable lambda |
 | [Compiler error C3492](compiler-error-c3492.md) | '*identifier*': you cannot capture a member of an anonymous union |
 | [Compiler error C3493](compiler-error-c3493.md) | '*identifier*' cannot be implicitly captured because no default capture mode has been specified |
 | Compiler error C3494 | 'this' cannot be explicitly captured because an enclosing capture mode does not allow it |
-| [Compiler error C3495](compiler-error-c3495.md) | '*identifier*': identifier in capture must be a variable with automatic storage duration declared in the reaching scope of the lambda |
-| [Compiler error C3496](compiler-error-c3496.md) | 'this' is always captured by value: '&' ignored |
-| Compiler error C3497 | you cannot construct an instance of a lambda |
+| [Compiler error C3495](compiler-error-c3495.md) | '*identifier*': a simple capture must be a variable with automatic storage duration declared in the reaching scope of the lambda |
+| [Compiler error C3496](compiler-error-c3496.md) | '`this`' is always captured by copy: '`&`' ignored |
+| Compiler error C3497 | cannot construct an instance of this lambda |
 | [Compiler error C3498](compiler-error-c3498.md) | '*identifier*': you cannot capture a variable that has a managed/WinRT type |
 | [Compiler error C3499](compiler-error-c3499.md) | a lambda that has been specified to have a void return type cannot return a value |
 

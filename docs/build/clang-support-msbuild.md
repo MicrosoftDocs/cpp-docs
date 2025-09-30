@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Clang/LLVM support in Visual Studio projects"
 title: "Clang/LLVM support in Visual Studio projects"
-ms.date: 09/20/2022
+description: "Learn more about: Clang/LLVM support in Visual Studio projects"
+ms.date: 03/13/2024
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 ---
@@ -34,10 +34,16 @@ The Microsoft C++ Standard Library requires at least Clang 8.0.0.
 ::: moniker-end
 
 ::: moniker range="=msvc-160"
-![Screenshot of the Visual Studio installer with the Individual components tab selected and the C plus plus Clang components visible.](media/clang-install-vs2019.png)
+:::image type="complex" source="media/clang-install-vs2019.png" alt-text="Screenshot of the Visual Studio 2019 installer":::
+The Individual components tab is selected in the installer. C++ Clang Compiler for Windows is selected. C++ Clang-cl for v142 build tools (x64/x86) is also selected.
+:::image-end:::
+
 ::: moniker-end
 ::: moniker range=">=msvc-170"
-![Screenshot of the Visual Studio installer with the Individual components tab selected and the C plus plus Clang components visible.](media/clang-install-vs2022.png)
+:::image type="complex" source="media/clang-install-vs2022.png" alt-text="Screenshot of the Visual Studio 2022 installer."
+The Individual components tab is selected in the installer. C++ Clang Compiler for Windows is selected. MSBuild support for LLVM (clang-cl) toolset is also selected.
+::: image-end :::
+
 ::: moniker-end
 
 ::: moniker range=">=msvc-160"
@@ -47,9 +53,11 @@ Later versions of Visual Studio provide newer versions of the Clang toolset. The
 
 To configure a Visual Studio project to use Clang, right-click on the project node in **Solution Explorer** and choose **Properties**. Typically, you should first choose **All configurations** at the top of the dialog. Then, under **General** > **Platform Toolset**, choose **LLVM (clang-cl)** and then **OK**.
 
-![Screenshot of the Property Pages dialog box with Configuration Properties > General selected and the Platform Toolset and LLVM (clang-cl) option highlighted.](media/llvm-msbuild-prop-page.png)
+:::image type="complex" source="media/llvm-msbuild-prop-page.png" alt-text="Screenshot of the Visual Studio project Property Pages dialog box.":::
+The project properties page is open to the Configuration Properties > General page. The Platform Toolset dropdown is selected, on which LLVM (clang-cl) is selected.
+:::image-end:::
 
-If you're using the Clang tools that are bundled with Visual Studio, no extra steps are required. For Windows projects, Visual Studio by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode. It links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in *%VCINSTALLDIR%\\Tools\\Llvm\\bin\\* and *%VCINSTALLDIR%\\Tools\\Llvm\\x64\\bin\\*.
+If you're using the Clang tools that are bundled with Visual Studio, no extra steps are required. For Windows projects, Visual Studio by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode. It links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in *`%VCINSTALLDIR%\Tools\Llvm\bin\`* and *`%VCINSTALLDIR%\Tools\Llvm\x64\bin\`*.
 
 If you're using a custom Clang installation, you can change the value of the `LLVMInstallDir` property. For more information, see [Set a custom LLVM location](#custom_llvm_location).
 
@@ -64,7 +72,9 @@ To configure a Visual Studio Linux project to use Clang:
 1. Under **General** > **Platform Toolset**, choose **Clang for Windows Subsystem for Linux** if you're using Windows Subsystem for Linux (WSL). Choose **Clang for Remote Linux** if you're using a remote machine or VM.
 1. Press **OK**.
 
-![Screenshot of the Console App clang Visual Studio 2019 Property Pages dialog box with Configuration Properties > General selected and the Platform Toolset and L L V M (clang c l) options highlighted.](media/clang-msbuild-prop-page.png)
+:::image type="complex" source="media/clang-msbuild-prop-page.png" alt-text="Screenshot of the Visual Studio 2019 project Property Pages dialog box":::
+The project properties page is open to the Configuration Properties > General page. Platform Toolset is selected and from the list of options, LLVM (clang- c l) is selected."
+:::image-end:::
 
 On Linux, Visual Studio by default uses the first Clang location that it finds in the PATH environment property. If you're using a custom Clang installation, then either change the value of the `LLVMInstallDir` property or else enter the path under **Project** > **Properties** > **Configuration Properties** > **VC++ DIrectories** > **Executable Directories**. For more information, see [Set a custom LLVM location](#custom_llvm_location).
 
@@ -97,7 +107,7 @@ Starting in Visual Studio 2019 version 16.9, you can set a custom toolset versio
 
 The **LLVM Toolset Version** property only appears when the LLVM platform toolset is selected.
 
-When you add a *Directory.build.props* file to a project or solution, the settings appear as the default in the project Property Pages dialog. However, changes to these properties in Visual Studio override the settings in the *Directory.build.props* file.
+When you add a `Directory.build.props` file to a project or solution, the settings appear as the default in the project Property Pages dialog. However, changes to these properties in Visual Studio override the settings in the `Directory.build.props` file.
 
 ## Set properties, edit, build, and debug
 
@@ -105,6 +115,8 @@ After you have set up a Clang configuration, right-click again on the project no
 
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features.  
 
-![Screenshot of Visual Studio showing Clang debugging.](media/clang-debug-msbuild.png)
+:::image type="complex" source="media/clang-debug-msbuild.png" alt-text="Screenshot of Visual Studio debugging a sample app":::
+The portion of the app that is visible creates a string vector and adds some strings to it. Execution has stopped on a breakpoint for the code: v.push_back("Clang/LLVM");.
+:::image-end:::
 
 ::: moniker-end

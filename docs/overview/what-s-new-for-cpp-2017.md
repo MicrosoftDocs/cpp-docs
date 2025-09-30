@@ -2,14 +2,15 @@
 title: "What's new for C++ in Visual Studio 2017"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio 2017."
 ms.date: 10/04/2021
-ms.technology: "cpp-ide"
+ms.service: "visual-cpp"
+ms.subservice: "ide"
 ms.custom: intro-whats-new
 ---
 # What's new for C++ in Visual Studio 2017
 
 Visual Studio 2017 brings many updates and fixes to the C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools. Many were submitted by customers through the [Report a Problem and Provide a Suggestion](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2017&preserve-view=true) options under **Send Feedback**. Thank you for reporting bugs!
 
-For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017&preserve-view=true). For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-visual-cpp-in-visual-studio.md?preserve-view=true&view=msvc-160). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For information about what's new in the C++ docs, see [Microsoft C++ docs: What's new](whats-new-cpp-docs.md).
+For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017&preserve-view=true). For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](what-s-new-for-visual-cpp-in-visual-studio.md?preserve-view=true&view=msvc-160). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ## Visual Studio 2017 C++ compiler
 
@@ -54,11 +55,11 @@ This release brings several improvements in optimization, code generation, tools
 - Versioning: The value of the built-in preprocessor macro **\_MSC\_VER** is now being monotonically updated at every Visual C++ toolset update. For more information, see [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/).
 - New toolset layout: The compiler and related build tools have a new location and directory structure on your development machine. The new layout enables side-by-side installations of multiple versions of the compiler. For more information, see [Compiler Tools Layout in Visual Studio 2017](https://devblogs.microsoft.com/cppblog/compiler-tools-layout-in-visual-studio-15/).
 - Improved diagnostics: The output window now shows the column where an error occurs. For more information, see [C++ compiler diagnostics improvements in VS "15" Preview 5](https://devblogs.microsoft.com/cppblog/c-compiler-diagnostics-improvements-in-vs-15-rc/).
-- When using coroutines, the experimental keyword **yield** (available under the **`/await`** option) has been removed. Your code should be updated to use `co_yield` instead. For more information, see [`yield` keyword to become `co_yield` in VS 2017](https://devblogs.microsoft.com/cppblog/yield-keyword-to-become-co_yield-in-vs-2017/).
+- When using coroutines, the experimental keyword **yield** (available under the **`/await`** option) was removed. Your code should be updated to use `co_yield` instead. For more information, see [`yield` keyword to become `co_yield` in VS 2017](https://devblogs.microsoft.com/cppblog/yield-keyword-to-become-co_yield-in-vs-2017/).
 
 ##### Visual Studio 2017 version 15.3
 
-Additional improvements to diagnostics in the compiler. For more information, see [Diagnostic Improvements in Visual Studio 2017 15.3.0](https://devblogs.microsoft.com/cppblog/diagnostic-improvements-in-vs2017-15-3-0/).
+Improvements to diagnostics in the compiler. For more information, see [Diagnostic Improvements in Visual Studio 2017 15.3.0](https://devblogs.microsoft.com/cppblog/diagnostic-improvements-in-vs2017-15-3-0/).
 
 ##### Visual Studio 2017 version 15.5
 
@@ -80,7 +81,7 @@ The [`/Zc:noexceptTypes-`](../build/reference/zc-noexcepttypes.md) option can be
 
 ##### Visual Studio 2017 RTM (version 15.0)
 
-- Minor `basic_string` `_ITERATOR_DEBUG_LEVEL != 0` diagnostics improvements. When an IDL check gets tripped in string machinery, it will now report the specific behavior that caused the trip. For example, instead of "string iterator not dereferencable" you'll get "cannot dereference string iterator because it is out of range (e.g. an end iterator)".
+- Minor `basic_string` `_ITERATOR_DEBUG_LEVEL != 0` diagnostics improvements. When an IDL check gets tripped in string machinery, it now reports the specific behavior that caused the trip. For example, instead of "string iterator not dereferencable" you get "cannot dereference string iterator because it is out of range (e.g. an end iterator)".
 - Fixed the `std::promise` move assignment operator, which previously could cause code to block forever.
 - Fixed compiler errors with the `atomic<T*>` implicit conversion to `T*`.
 - `pointer_traits<Ptr>` now correctly detects `Ptr::rebind<U>`.
@@ -95,7 +96,7 @@ There are more standard library improvements in Visual Studio 2017 RTM. For a co
 
 - Standard library containers now clamp their `max_size()` to `numeric_limits<difference_type>::max()` rather than the `max()` of `size_type`. This change ensures that the result of `distance()` on iterators from that container is representable in the return type of `distance()`.
 - Fixed missing specialization `auto_ptr<void>`.
-- The `for_each_n()`, `generate_n()`, and `search_n()` algorithms previously failed to compile if the length argument wasn't an integral type. They now attempt to convert non-integral lengths to the iterators' `difference_type`.
+- The `for_each_n()`, `generate_n()`, and `search_n()` algorithms previously failed to compile if the length argument wasn't an integral type. They now attempt to convert nonintegral lengths to the iterators' `difference_type`.
 - `normal_distribution<float>` no longer emits warnings inside the standard library about narrowing from double to float.
 - Fixed some `basic_string` operations that used `npos` instead of `max_size()` when checking for maximum size overflow.
 - `condition_variable::wait_for(lock, relative_time, predicate)` would wait for the entire relative time if there was a spurious wake. Now it waits for only a single interval of the relative time.
@@ -107,19 +108,19 @@ There are more standard library improvements in Visual Studio 2017 RTM. For a co
 - The unordered containers didn't swap their hash functions or predicates when the containers themselves were swapped. Now they do.
 - Many container swap operations are now marked **`noexcept`** (as our standard library never intends to throw an exception when detecting the non-`propagate_on_container_swap` non-equal-allocator undefined behavior condition).
 - Many `vector<bool>` operations are now marked **`noexcept`**.
-- The standard library will now enforce matching allocator `value_type` (in C++17 mode) with an opt-out escape hatch.
+- The standard library now enforces matching allocator `value_type` (in C++17 mode) with an opt-out escape hatch.
 - Fixed some conditions where self-range-insert into `basic_string` would scramble the strings contents. (Note: self-range-insert into vectors is still prohibited by the Standard.)
 - `basic_string::shrink_to_fit()` is no longer affected by the allocator's `propagate_on_container_swap`.
 - `std::decay` now handles abominable function types, that is, function types that are cv-qualified, ref-qualified, or both.
 - Changed include directives to use proper case sensitivity and forward slashes, improving portability.
-- Fixed warning C4061 "enumerator '*enumerator*' in switch of enum '*enumeration*' is not explicitly handled by a case label". This warning is off-by-default and was fixed as an exception to the standard library's general policy for warnings. (The standard library is **`/W4`** clean, but doesn't attempt to be **`/Wall`** clean. Many off-by-default warnings are unusually noisy, and aren't intended to be used on a regular basis.)
+- Fixed warning C4061 "enumerator '*enumerator*' in switch of enum '*enumeration*' is not explicitly handled by a case label." This warning is off-by-default and was fixed as an exception to the standard library's general policy for warnings. (The standard library is **`/W4`** clean, but doesn't attempt to be **`/Wall`** clean. Many off-by-default warnings are unusually noisy, and aren't intended to be used on a regular basis.)
 - Improved `std::list` debug checks. List iterators now check `operator->()`, and `list::unique()` now marks iterators as invalidated.
 - Fixed uses-allocator metaprogramming in `tuple`.
 
 ##### Visual Studio 2017 version 15.5
 
 - `std::partition` now calls the predicate `N` times instead of `N + 1` times, as the standard requires.
-- Attempts to avoid magic statics in version 15.3 have been repaired in version 15.5.
+- Attempts to avoid magic statics in version 15.3 are repaired in version 15.5.
 - `std::atomic<T>` no longer requires `T` to be default constructible.
 - Heap algorithms that take logarithmic time behave differently when iterator debugging is enabled. They no longer do a linear time assertion that the input is in fact a heap.
 - `__declspec(allocator)` is now guarded for C1XX only, to prevent warnings from Clang, which doesn't understand this declspec.
@@ -136,18 +137,18 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 
 ##### Visual Studio 2017 version 15.3
 
-- Several additional C++17 features have been implemented. For more information, see [Microsoft C++ language conformance table](cpp-conformance-improvements-2017.md#improvements_153).
+- Several other C++17 features have been implemented. For more information, see [Microsoft C++ language conformance table](cpp-conformance-improvements-2017.md#improvements_153).
 - Implemented P0602R0 "variant and optional should propagate copy/move triviality".
 - The standard library now officially tolerates dynamic RTTI being disabled via the [/GR-](../build/reference/gr-enable-run-time-type-information.md) option. Both `dynamic_pointer_cast()` and `rethrow_if_nested()` inherently require **`dynamic_cast`**, so the standard library now marks them as `=delete` under **`/GR-`**.
-- Even when dynamic RTTI has been disabled via **`/GR-`**, "static RTTI" in the form of `typeid(SomeType)` is still available, and powers several standard library components. The standard library now supports disabling this feature too, via **`/D_HAS_STATIC_RTTI=0`**. This flag also disables `std::any`, the `target()` and `target_type()` member functions of `std::function`, and the `get_deleter()` friend member function of `std::shared_ptr` and `std::weak_ptr`.
+- Even when dynamic RTTI is disabled via **`/GR-`**, "static RTTI" in the form of `typeid(SomeType)` is still available, and powers several standard library components. The standard library now supports disabling this feature too, via **`/D_HAS_STATIC_RTTI=0`**. This flag also disables `std::any`, the `target()` and `target_type()` member functions of `std::function`, and the `get_deleter()` friend member function of `std::shared_ptr` and `std::weak_ptr`.
 - The standard library now uses C++14 **`constexpr`** unconditionally, instead of conditionally defined macros.
 - The standard library now uses alias templates internally.
-- The standard library now uses **`nullptr`** internally, instead of `nullptr_t{}`. (Internal usage of NULL has been eradicated. Internal usage of 0-as-null is being cleaned up gradually.)
+- The standard library now uses **`nullptr`** internally, instead of `nullptr_t{}`. (Internal usage of NULL is eradicated. Internal usage of 0-as-null is being cleaned up gradually.)
 - The standard library now uses `std::move()` internally, instead of stylistically misusing `std::forward()`.
 - Changed `static_assert(false, "message")` to `#error message`. This change improves compiler diagnostics because `#error` immediately stops compilation.
 - The standard library no longer marks functions as `__declspec(dllimport)`. Modern linker technology no longer requires it.
 - Extracted SFINAE to default template arguments, which reduced clutter compared to return types and function argument types.
-- Debug checks in \<random\> now use the standard library's usual machinery, instead of the internal function `_Rng_abort()`, which called `fputs()` to `stderr`. This function's implementation has been kept for binary compatibility. We'll remove it in the next binary-incompatible version of the standard library.
+- Debug checks in \<random\> now use the standard library's usual machinery, instead of the internal function `_Rng_abort()`, which called `fputs()` to `stderr`. This function's implementation is kept for binary compatibility. We'll remove it in the next binary-incompatible version of the standard library.
 
 ##### Visual Studio 2017 version 15.5
 
@@ -201,7 +202,7 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 - Made `basic_string::find(char)` overloads only call `traits::find` once. Previously, it was implemented as a general string search for a string of length 1.
 - `basic_string::operator==` now checks the string's size before comparing the strings' contents.
 - Removed control coupling in `basic_string`, which was difficult for the compiler optimizer to analyze. For all short strings, calling `reserve` still has a nonzero cost to do nothing.
-- `std::vector` has been overhauled for correctness and performance: aliasing during insert and emplace operations is now correctly handled as required by the Standard, the strong exception guarantee is now provided when required by the Standard via `move_if_noexcept()` and other logic, and insert and emplace do fewer element operations.
+- `std::vector` was overhauled for correctness and performance: aliasing during insert and emplace operations is now correctly handled as required by the Standard, the strong exception guarantee is now provided when required by the Standard via `move_if_noexcept()` and other logic, and insert and emplace do fewer element operations.
 - The C++ standard library now avoids dereferencing null fancy pointers.
 - Improved `weak_ptr::lock()` performance.
 - To increase compiler throughput, C++ standard library headers now avoid including declarations for unnecessary compiler intrinsics.
@@ -239,7 +240,7 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 - `std::inplace_merge` now skips over elements that are already in position.
 - Constructing `std::random_device` no longer constructs and then destroys a `std::string`.
 - `std::equal` and `std::partition` had a jump-threading optimization pass that saves an iterator comparison.
-- When `std::reverse` is passed pointers to trivially copyable `T`, it will now dispatch to a handwritten vectorized implementation.
+- When `std::reverse` is passed pointers to trivially copyable `T`, it now dispatches to a handwritten vectorized implementation.
 - `std::fill`, `std::equal`, and `std::lexicographical_compare` were taught how to dispatch to `memset` and `memcmp` for `std::byte` and `gsl::byte` (and other char-like enums and enum classes). Since `std::copy` dispatches using `is_trivially_copyable`, it didn't need any changes.
 - The standard library no longer contains empty-braces destructors whose only behavior was to make types non-trivially-destructible.
 
@@ -247,20 +248,20 @@ For more information, see [Microsoft C/C++ language conformance](./visual-cpp-la
 
 ### Open-source library support
 
-**Vcpkg** is an open-source command-line tool that greatly simplifies the process of acquiring and building open-source C++ static libs and DLLS in Visual Studio. For more information, see [vcpkg](https://vcpkg.io/).
+**Vcpkg** is an open-source command-line tool that greatly simplifies the process of acquiring and building open-source C++ static libs and DLLS in Visual Studio. For more information, see [vcpkg](/vcpkg/).
 
 ### CPPRest SDK 2.9.0
 
 ##### Visual Studio 2017 version 15.5
 
-The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.9.0. For more information, see [CppRestSDK 2.9.0 is available on GitHub](https://devblogs.microsoft.com/cppblog/cpprestsdk-2-9-0-is-available-on-github/).
+The CPPRestSDK, a cross-platform web API for C++, is updated to version 2.9.0. For more information, see [CppRestSDK 2.9.0 is available on GitHub](https://devblogs.microsoft.com/cppblog/cpprestsdk-2-9-0-is-available-on-github/).
 
 ### ATL
 
 ##### Visual Studio 2017 version 15.5
 
 - Yet another set of name-lookup conformance fixes
-- Existing move constructors and move assignment operators are now properly marked as non-throwing
+- Existing move constructors and move assignment operators are now properly marked as nonthrowing
 - Unsuppress valid warning C4640 about thread safe init of local statics in atlstr.h
 - Thread-safe initialization of local statics was automatically turned off in the XP toolset when using ATL to build a DLL. Now it's not. You can add **`/Zc:threadSafeInit-`** in your Project settings if you don't want thread-safe initialization.
 
@@ -270,7 +271,7 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 ## Visual Studio 2017 C++ IDE
 
-- Configuration change performance is now better for C++ native projects and much better for C++/CLI projects. When a solution configuration is activated for the first time, it will now be faster, and all later activations of this solution configuration will be almost instantaneous.
+- Configuration change performance is now better for C++ native projects and much better for C++/CLI projects. When a solution configuration is activated for the first time, it is faster, and all later activations of this solution configuration is almost instantaneous.
 
 ##### Visual Studio 2017 version 15.3
 
@@ -293,11 +294,11 @@ C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to def
 
 ## IntelliSense
 
-- The new SQLite-based database engine is now being used by default. The new engine speeds up database operations like **Go To Definition** and **Find All References**. It significantly improves initial solution parse time. The setting has moved to **Tools > Options > Text Editor > C/C++ > Advanced**. (It was formerly under ...C/C++ > Experimental.)
+- The new SQLite-based database engine is now being used by default. The new engine speeds up database operations like **Go To Definition** and **Find All References**. It significantly improves initial solution parse time. The setting moved to **Tools > Options > Text Editor > C/C++ > Advanced**. (It was formerly under ...C/C++ > Experimental.)
 
-- We've improved IntelliSense performance on projects and files not using precompiled headers - an Automatic Precompiled Header will be created for headers in the current file.
+- We've improved IntelliSense performance on projects and files not using precompiled headers - an Automatic Precompiled Header is created for headers in the current file.
 
-- We've added error filtering and help for IntelliSense errors in the error list. Clicking on the error column now allows for filtering. Also, clicking on the specific errors or pressing F1 will launch an online search for the error message.
+- We've added error filtering and help for IntelliSense errors in the error list. Clicking on the error column now allows for filtering. Also, clicking on the specific errors or pressing F1 launches an online search for the error message.
 
   ![Error List.](media/ErrorList1.png "Error List")
 
@@ -309,7 +310,7 @@ C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to def
 
 - Added a new experimental Predictive IntelliSense feature that provides contextually aware filtering of what appears in the Member List. For more information, see [C++ IntelliSense Improvements - Predictive IntelliSense & Filtering](https://devblogs.microsoft.com/cppblog/c-intellisense-improvements-predictive-intellisense-filtering/).
 - **Find All References** (Shift+F12) now helps you get around easily, even in complex codebases. It provides advanced grouping, filtering, sorting, searching within results, and (for some languages) colorization, so you can get a clear understanding of your references. For C++, the new UI includes information about whether we're reading from or writing to a variable.
-- The Dot-to-Arrow IntelliSense feature has been moved from experimental to advanced, and is now enabled by default. The editor features **Expand Scopes** and **Expand Precedence** have also been moved from experimental to advanced.
+- The Dot-to-Arrow IntelliSense feature moved from experimental to advanced, and is now enabled by default. The editor features **Expand Scopes** and **Expand Precedence** moved from experimental to advanced.
 - The experimental refactoring features **Change Signature** and **Extract Function** are now available by default.
 - Added an experimental 'Faster project load' feature for C++ projects. The next time you open a C++ project it will load faster, and the time after that it will load *much* faster!
 - Some of these features are common to other languages, and some are specific to C++. For more information about these new features, see [Announcing Visual Studio "15" Preview 5](https://devblogs.microsoft.com/visualstudio/announcing-visual-studio-15-preview-5/).
@@ -320,7 +321,7 @@ C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to def
 
 ## Non-MSBuild projects with Open Folder
 
-Visual Studio 2017 introduces the **Open Folder** feature. It enables you to code, build, and debug in a folder containing source code without the need to create any solutions or projects. Now it's much simpler to get started with Visual Studio, even if your project isn't an MSBuild-based project. **Open Folder** gives you access to powerful code understanding, editing, building, and debugging capabilities. They're the same ones that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md).
+Visual Studio 2017 introduces the **Open Folder** feature. It enables you to code, build, and debug in a folder containing source code without the need to create any solutions or projects. Now it's simpler to get started with Visual Studio, even if your project isn't an MSBuild-based project. **Open Folder** gives you access to powerful code understanding, editing, building, and debugging capabilities. They're the same ones that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md).
 
 - Improvements to the Open Folder experience. You can customize the experience through these .json files:
   - CppProperties.json to customize the IntelliSense and browsing experience.
@@ -337,7 +338,7 @@ Visual Studio 2017 introduces the **Open Folder** feature. It enables you to cod
 
 Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md). Opening CMake projects with **Open Folder** automatically configures the environment for C++ editing, building, and debugging.
 
-- C++ IntelliSense works without the need to create a CppProperties.json file in the root folder. We've also added a new dropdown to allow users to easily switch between configurations provided by CMake and CppProperties.json files.
+- C++ IntelliSense works without the need to create a CppProperties.json file in the root folder. We added a new dropdown to allow users to easily switch between configurations provided by CMake and CppProperties.json files.
 
 - Further configuration is supported via a CMakeSettings.json file that sits in the same folder as the CMakeLists.txt file.
 
@@ -357,9 +358,9 @@ Visual Studio 2017 introduces support for using CMake projects without convertin
 
 ## Windows desktop development
 
-We now provide a more granular installation experience for installing the original C++ workload. We have added selectable components that enable you to install just the tools that you need. The indicated installation sizes for the components listed in the installer UI are incorrect, and underestimate the total size.
+We now provide a more granular installation experience for installing the original C++ workload. We added selectable components that enable you to install just the tools that you need. The indicated installation sizes for the components listed in the installer UI are incorrect, and underestimate the total size.
 
-To successfully create Win32 projects in the C++ desktop workload, you must install both a toolset and a Windows SDK. Install the recommended (selected) components **VC++ 2017 v141 toolset (x86, x64)** and **Windows 10 SDK (10.0.nnnnn)** to make sure it works. If the necessary tools aren't installed, projects won't be created successfully, and the wizard will stop responding.
+To successfully create Win32 projects in the C++ desktop workload, you must install both a toolset and a Windows SDK. Install the recommended (selected) components **VC++ 2017 v141 toolset (x86, x64)** and **Windows 10 SDK (10.0.nnnnn)** to make sure it works. If the necessary tools aren't installed, projects won't be created successfully, and the wizard stops responding.
 
 ##### Visual Studio 2017 version 15.5
 
@@ -371,11 +372,11 @@ The popular extension [Visual C++ for Linux Development](https://marketplace.vis
 
 ##### Visual Studio 2017 version 15.2
 
-Improvements have been made in cross-platform code sharing and type visualization. For more information, see [Linux C++ improvements for cross-platform code sharing and type visualization](https://devblogs.microsoft.com/cppblog/linux-cross-platform-and-type-visualization/).
+Improvements were made in cross-platform code sharing and type visualization. For more information, see [Linux C++ improvements for cross-platform code sharing and type visualization](https://devblogs.microsoft.com/cppblog/linux-cross-platform-and-type-visualization/).
 
 ##### Visual Studio 2017 version 15.5
 
-- The Linux workload has added support for **rsync** as an alternative to **sftp** for synchronizing files to remote Linux machines.
+- The Linux workload added support for **rsync** as an alternative to **sftp** for synchronizing files to remote Linux machines.
 - Support is added for cross compilation targeting ARM microcontrollers. To enable it in the installation, choose the **Linux development with C++** workload and select the option for **Embedded and IoT Development**. This option adds the ARM GCC cross compilation tools and Make to your installation. For more information, see [ARM GCC Cross Compilation in Visual Studio](https://devblogs.microsoft.com/cppblog/arm-gcc-cross-compilation-in-visual-studio/).
 - Support added for CMake. You can now work on your existing CMake code base without having to convert it to a Visual Studio project. For more information, see [Configure a Linux CMake Project](../linux/cmake-linux-project.md).
 - Support added for running remote tasks. This capability allows you to run any command on a remote system that is defined in Visual Studio's Connection Manager. Remote tasks also provide the capability to copy files to the remote system.
@@ -419,7 +420,7 @@ The Clang/C2 toolset that ships with Visual Studio 2017 now supports the **`/big
 
 The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) are now distributed with Visual Studio. Enable the checkers in the **Code Analysis Extensions** page in the project's property pages. The extensions are then included when you run code analysis. For more information, see [Using the C++ Core Guidelines checkers](../code-quality/using-the-cpp-core-guidelines-checkers.md).
 
-![Screenshot of the Property Pages dialog box showing Configuration Properties > Code Analysis > General selected and a number of Core Checks listed in teh Run this rule set section.](media/CppCoreCheck.png "CppCoreCheck properties page")
+![Screenshot of the Property Pages dialog box showing Configuration Properties > Code Analysis > General selected and a number of Core Checks listed in the Run this rule set section.](media/CppCoreCheck.png "CppCoreCheck properties page")
 
 ##### Visual Studio 2017 version 15.3
 
@@ -429,7 +430,7 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 
 - New C++ Core Guidelines checks cover smart pointer correctness, correct use of global initializers, and flagging uses of constructs like **`goto`** and bad casts.
 
-- Some warning numbers you may find in 15.3 are no longer available in 15.5. These warnings were replaced with more specific checks.
+- Some warning numbers you might find in 15.3 are no longer available in 15.5. These warnings were replaced with more specific checks.
 
 ##### Visual Studio 2017 version 15.6
 
@@ -438,7 +439,7 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 ##### Visual Studio 2017 version 15.7
 
 - Support added for [`/analyze:ruleset`](../build/reference/analyze-code-analysis.md), which lets you specify the code analysis rules to run.
-- Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](../code-quality/using-the-cpp-core-guidelines-checkers.md).
+- Support added for more C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](../code-quality/using-the-cpp-core-guidelines-checkers.md).
 
 ## Unit testing in Visual Studio 2017
 
@@ -479,7 +480,7 @@ Visual Studio Graphics Diagnostics tools: You can use them to record and analyze
 
   You can capture frames with full call stack capturing enabled. That lets you quickly deduce the context of each change event, and inspect it within your Visual Studio project. Set the full stack capture option in the Visual Studio **Tools > Options** dialog under **Graphics Diagnostics**.
 
-- **API Statistics:** View a high-level summary of API usage in your frame. It's handy for discovering calls you may not realize you're making at all, or calls you're making too often. This window is available via **View > API Statistics** in Visual Studio Graphics Analyzer.
+- **API Statistics:** View a high-level summary of API usage in your frame. It's handy for discovering calls you might not realize you're making at all, or calls you're making too often. This window is available via **View > API Statistics** in Visual Studio Graphics Analyzer.
 
   ![API stats.](media/api-stats.png)
 
@@ -495,10 +496,10 @@ Visual Studio Graphics Diagnostics tools: You can use them to record and analyze
 
   ![Frame analysis.](media/frame-analysis.png)
 
-- **GPU Usage Improvements:** Open traces can be taken via the Visual Studio GPU Usage profiler with either GPU View or the Windows Performance Analyzer (WPA) tool for more detailed analysis. If you have the Windows Performance Toolkit installed, there are two hyperlinks: one for WPA and another for GPU View, at the bottom right of the session overview.
+- **GPU Usage Improvements:** Open traces can be taken via the Visual Studio GPU Usage profiler with either GPUView or the Windows Performance Analyzer (WPA) tool for more detailed analysis. If you have the Windows Performance Toolkit installed, there are two hyperlinks: one for WPA and another for GPUView, at the bottom right of the session overview.
 
   ![GPU usage.](media/gpu-usage.png)
 
-  Traces you open in GPU View via this link support synchronized VS and GPU View timeline zooming and panning. A checkbox in VS controls whether synchronization is enabled or not.
+  Traces you open in GPUView via this link support synchronized VS and GPUView timeline zooming and panning. A checkbox in VS controls whether synchronization is enabled or not.
 
-  ![GPU View.](media/gpu-view.png)
+  ![GPUView.](media/gpu-view.png)

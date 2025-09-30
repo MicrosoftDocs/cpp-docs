@@ -4,11 +4,13 @@ title: "CDaoDatabaseInfo Structure"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoDatabaseInfo"]
 helpviewer_keywords: ["CDaoDatabaseInfo structure [MFC]", "DAO (Data Access Objects), Databases collection"]
-ms.assetid: 68e9e0da-8382-4fc6-8115-1b1519392ddb
 ---
 # CDaoDatabaseInfo Structure
 
-The `CDaoDatabaseInfo` structure contains information about a database object defined for data access objects (DAO). DAO 3.6 is the final version, and it is considered obsolete.
+The `CDaoDatabaseInfo` structure contains information about a database object defined for data access objects (DAO).
+
+> [!NOTE]
+> DAO is supported through Office 2013. DAO 3.6 is the final version, and it's considered obsolete.
 
 ## Syntax
 
@@ -94,7 +96,7 @@ Information retrieved by the [CDaoWorkspace::GetDatabaseInfo](../../mfc/referenc
 
 ## Requirements
 
-**Header:** afxdao.h
+**Header:** `afxdao.h`
 
 ## See also
 

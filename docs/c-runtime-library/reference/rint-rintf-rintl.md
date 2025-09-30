@@ -1,14 +1,13 @@
 ---
 title: "rint, rintf, rintl"
 description: "API reference for rint, rintf, and rintl; which round a floating-point value to the nearest integer in floating-point format."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["rintf", "rintl", "rint", "_o_rint", "_o_rintf", "_o_rintl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["rintf", "rintl", "rint"]
 helpviewer_keywords: ["rintf function", "rint function", "rintl function"]
-ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
 ---
 # `rint`, `rintf`, `rintl`
 
@@ -20,7 +19,7 @@ Rounds a floating-point value to the nearest integer in floating-point format.
 double rint( double x );
 float rintf( float x );
 long double rintl( long double x );
-#define rint(X) // Requires C11 or higher
+#define rint(X) // Requires C11 or later
 
 float rint( float x );  // C++ only
 long double rint( long double x );  // C++ only

@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4265"
-title: "Compiler Warning (level 3) C4265"
-ms.date: "11/04/2016"
+title: "Compiler Warning (level 3, off) C4265"
+description: "Learn more about: Compiler Warning (level 3, off) C4265"
+ms.date: 11/04/2016
 f1_keywords: ["C4265"]
 helpviewer_keywords: ["C4265"]
-ms.assetid: 20547159-6f30-4cc4-83aa-927884c8bb4c
 ---
-# Compiler Warning (level 3) C4265
+# Compiler Warning (level 3, off) C4265
 
-'class' : class has virtual functions, but destructor is not virtual
+> '*classname*': class has virtual functions, but its non-trivial destructor is not virtual; instances of this class may not be destructed correctly
+
+## Remarks
 
 When a class has virtual functions but a nonvirtual destructor, objects of the type might not be destroyed properly when the class is destroyed through a base class pointer.
 
-This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-The following sample generates C4265:
+## Example
+
+The following example generates C4265:
 
 ```cpp
 // C4265.cpp

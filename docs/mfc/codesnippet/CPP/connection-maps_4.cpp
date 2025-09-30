@@ -6,4 +6,4 @@ IUnknown* pUnkSink = mysink.GetInterface(&iid);
 //Terminate a connection between source and sink.
 //pUnkSrc is IUnknown of server obtained by CoCreateInstance().
 //dwCookie is a value obtained through AfxConnectionAdvise().
-AfxConnectionUnadvise(pUnkSrc, IID_ISampleSink, pUnkSink, FALSE, dwCookie);
+AfxConnectionUnadvise(pUnkSrc, IID_ISampleSink, pUnkSink, TRUE, dwCookie);

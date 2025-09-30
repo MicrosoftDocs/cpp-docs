@@ -4,6 +4,7 @@ description: "When and how to update WINVER and _WIN32_WINNT macros in upgraded 
 ms.date: "06/19/2020"
 helpviewer_keywords: ["WINVER in an upgraded Visual Studio C++ project", "_WIN32_WINNT in an upgraded Visual Studio C++ project"]
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
+ms.topic: how-to
 ---
 # Update WINVER and _WIN32_WINNT
 

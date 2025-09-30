@@ -22,11 +22,11 @@ int _fstat(
 );
 int _fstat32(
    int fd,
-   struct __stat32 *buffer
+   struct _stat32 *buffer
 );
 int _fstat64(
    int fd,
-   struct __stat64 *buffer
+   struct _stat64 *buffer
 );
 int _fstati64(
    int fd,
@@ -73,7 +73,7 @@ If *`fd`* refers to a device, the **`st_atime`**, **`st_ctime`**, **`st_mtime`**
 
 Because `Stat.h` uses the [`_dev_t`](../standard-types.md) type, which is defined in `Types.h`, you must include `Types.h` before `Stat.h` in your code.
 
-**`_fstat64`**, which uses the `__stat64` structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas the other functions only represent dates through 23:59:59 January 18, 2038, UTC. The lower bound of the date range for all these functions is Midnight, January 1, 1970.
+**`_fstat64`**, which uses the `_stat64` structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas the other functions only represent dates through 23:59:59 January 18, 2038, UTC. The lower bound of the date range for all these functions is Midnight, January 1, 1970.
 
 Variations of these functions support 32-bit or 64-bit time types and 32-bit or 64-bit file lengths. The first numerical suffix (**`32`** or **`64`**) indicates the size of the time type used; the second suffix is either **`i32`** or **`i64`**, indicating whether the file size is represented as a 32-bit or 64-bit integer.
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _set_se_translator"
 title: "_set_se_translator"
+description: "Learn more about: _set_se_translator"
 ms.date: "1/14/2021"
 api_name: ["_set_se_translator"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -212,4 +212,4 @@ Caught SE_Exception, error c0000094
 [`set_terminate`](set-terminate-crt.md)\
 [`set_unexpected`](set-unexpected-crt.md)\
 [`terminate`](terminate-crt.md)\
-[`unexpected`](unexpected-crt.md)\
+[`unexpected`](unexpected-crt.md)

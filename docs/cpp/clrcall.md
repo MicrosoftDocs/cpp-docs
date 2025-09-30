@@ -20,7 +20,7 @@ When `/clr` (not `/clr:pure` or `/clr:safe`) is used and **__clrcall** is not us
 
 [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) implies that all functions and function pointers are **__clrcall** and the compiler will not permit a function inside the compiland to be marked anything other than **__clrcall**. When **/clr:pure** is used, **__clrcall** can only be specified on function pointers and external declarations.
 
-You can directly call **__clrcall** functions from existing C++ code that was compiled by using **/clr** as long as that function has an MSIL implementation. **__clrcall** functions cannot be called directly from functions that have inline asm and call CPU-specific intrinisics, for example, even if those functions are compiled with `/clr`.
+You can directly call **__clrcall** functions from existing C++ code that was compiled by using **/clr** as long as that function has an MSIL implementation. **__clrcall** functions cannot be called directly from functions that have inline asm and call CPU-specific intrinsics, for example, even if those functions are compiled with `/clr`.
 
 **__clrcall** function pointers are only meant to be used in the application domain in which they were created.  Instead of passing **__clrcall** function pointers across application domains, use <xref:System.CrossAppDomainDelegate>. For more information, see [Application Domains and Visual C++](../dotnet/application-domains-and-visual-cpp.md).
 
@@ -38,7 +38,7 @@ int __clrcall Func1() {
 }
 
 // Func1 hasn't been used at this point (code has not been generated),
-// so runtime returns the adddress of a stub to the function
+// so runtime returns the address of a stub to the function
 int (__clrcall *pf)() = &Func1;
 
 // code calls the function, code generated at difference address

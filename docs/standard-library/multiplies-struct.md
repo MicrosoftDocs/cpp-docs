@@ -12,7 +12,7 @@ A predefined function object that performs the multiplication operation (binary 
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct multiplies : public binary_function <Type, Type, Type>
 {
@@ -24,7 +24,7 @@ template <>
 struct multiplies<void>
 {
   template <class T, class U>
-  auto operator()(T&& Left, U&& Right) const`
+  auto operator()(T&& Left, U&& Right) const
     -> decltype(std::forward<T>(Left) * std::forward<U>(Right));
 };
 ```

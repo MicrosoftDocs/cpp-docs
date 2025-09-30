@@ -24,7 +24,7 @@ class CRichEditDoc : public COleServerDoc
 |----------|-----------------|
 |[CRichEditDoc::CreateClientItem](#createclientitem)|Called to perform cleanup of the document.|
 |[CRichEditDoc::GetStreamFormat](#getstreamformat)|Indicates whether stream input and output should include formatting information.|
-|[CRichEditDoc::GetView](#getview)|Retrieves the asssociated [CRichEditView](../../mfc/reference/cricheditview-class.md) object.|
+|[CRichEditDoc::GetView](#getview)|Retrieves the associated [CRichEditView](../../mfc/reference/cricheditview-class.md) object.|
 
 ### Public Data Members
 

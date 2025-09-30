@@ -1,10 +1,11 @@
 ---
-description: "Learn more about: Attributes in C++"
 title: "Attributes in C++"
-f1_keywords: ["deprecated", "no_return", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::intrinsic", "msvc::no_tls_guard"]
-helpviewer_keywords: ["deprecated", "no_return", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::intrinsic", "msvc::no_tls_guard"]
+description: "Learn more about: Attributes in C++"
+f1_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard"]
+helpviewer_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard"]
 ms.date: 4/13/2023
 ---
+
 # Attributes in C++
 
 The C++ Standard defines a common set of attributes. It also allows compiler vendors to define their own attributes within a vendor-specific namespace. However, compilers are only required to recognize the attributes defined in the standard.
@@ -76,16 +77,18 @@ The `[[noreturn]]` attribute specifies that a function never returns; in other w
 
 ## Microsoft-specific attributes
 
-### `[[gsl::suppress(rules)]]`
+### `[[gsl::suppress(<tag> [, justification: <narrow-string-literal>])]]`
 
-The Microsoft-specific `[[gsl::suppress(rules)]]` attribute is used to suppress warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules in code. For example, consider this code snippet:
+`<tag>` is a string that specifies the name of the rule to suppress. The optional `justification` field allows you to explain why a warning is being disabled or suppressed. This value will appear in the SARIF output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. The `[[gsl::suppress]]` attribute is available in Visual Studio 2022 version 17.14 and later versions.
+
+The Microsoft-specific `[[gsl::suppress]]` attribute is used to suppress warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules in code. For example, consider this code snippet:
 
 ```cpp
 int main()
 {
     int arr[10]; // GSL warning C26494 will be fired
     int* p = arr; // GSL warning C26485 will be fired
-    [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1
+    [[gsl::suppress("bounds.1", justification: "This attribute suppresses Bounds rule #1")]]
     {
         int* q = p + 1; // GSL warning C26481 suppressed
         p = q--; // GSL warning C26481 suppressed
@@ -101,7 +104,7 @@ The example raises these warnings:
 
 - [C26481](../code-quality/c26481.md) (Bounds Rule 1: Don't use pointer arithmetic. Use span instead.)
 
-The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing `[[gsl::suppress(bounds)]]` without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they aren't wanted.
+The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing `[[gsl::suppress("bounds")]]` without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they aren't wanted.
 
 ### `[[msvc::flatten]]`
 
@@ -134,13 +137,13 @@ The first call to `foo`, and both calls to `bar`, are treated as if they were de
 
 ### `[[msvc::intrinsic]]`
 
-The Microsoft-specific `[[msvc::intrinsic]]` attribute tells the compiler to inline a metafunction that acts as a named cast from the parameter type to the return type. When the attribute is present on a function definition, the compiler replaces all calls to that function with a simple cast. The `[[msvc::intrinsic]]` attribute is available in Visual Studio 2022 version 17.5 preview 2 and later versions. This attribute applies only to the specific function that follows it.
-
 The `[[msvc::intrinsic]]` attribute has three constraints on the function it's applied to:
 
-- The function can't be recursive; its body must only have a return statement with a cast.
+- The function can't be recursive; its body must only have a return statement with a `static_cast` from the parameter type to the return type.
 - The function can only accept a single parameter.
 - The **`/permissive-`** compiler option is required. (The **`/std:c++20`** and later options imply **`/permissive-`** by default.)
+
+The Microsoft-specific `[[msvc::intrinsic]]` attribute tells the compiler to inline a metafunction that acts as a named cast from the parameter type to the return type. When the attribute is present on a function definition, the compiler replaces all calls to that function with a simple cast. The `[[msvc::intrinsic]]` attribute is available in Visual Studio 2022 version 17.5 preview 2 and later versions. This attribute applies only to the specific function that follows it.
 
 #### Example
 
@@ -158,7 +161,7 @@ void f() {
 
 ### `[[msvc::noinline]]`
 
-When placed before a function declaration, the Microsoft-specific attribute `[[msvc::noinline]]` has the same meaning as `declspec(noinline)`.
+When placed before a function declaration, the Microsoft-specific attribute `[[msvc::noinline]]` has the same meaning as `__declspec(noinline)`.
 
 ### `[[msvc::noinline_calls]]`
 

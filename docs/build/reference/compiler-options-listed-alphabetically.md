@@ -1,7 +1,7 @@
 ---
 title: "Compiler options listed alphabetically"
 description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
-ms.date: 06/02/2023
+ms.date: 2/5/2025
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
@@ -16,7 +16,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/?`](help-compiler-command-line-help.md) | Lists the compiler options. |
 | [`/AI<dir>`](ai-specify-metadata-directories.md) | Specifies a directory to search to resolve file references passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
 | [`/analyze`](analyze-code-analysis.md) | Enables code analysis. |
-| [`/arch:<IA32|SSE|SSE2|AVX|AVX2|AVX512>`](arch-x86.md) | Minimum CPU architecture requirements. IA32, SSE, and SSE2 are x86 only. |
+| [`/arch`](arch-minimum-cpu-architecture.md) | Minimum CPU architecture requirements. |
 | `/arm64EC` | Generate code compatible with the arm64EC ABI. |
 | [`/await`](await-enable-coroutine-support.md) | Enable coroutines (resumable functions) extensions. |
 | [`/await:strict`](await-enable-coroutine-support.md) | Enable standard C++20 coroutine support with earlier language versions. |
@@ -35,8 +35,9 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/clr:safe`](clr-common-language-runtime-compilation.md) | Produce an IL-only verifiable output file. |
 | [`/constexpr:backtrace<N>`](constexpr-control-constexpr-evaluation.md) | Show N `constexpr` evaluations in diagnostics (default: 10). |
 | [`/constexpr:depth<N>`](constexpr-control-constexpr-evaluation.md) | Recursion depth limit for `constexpr` evaluation (default: 512). |
-| [`/constexpr:steps<N>`](constexpr-control-constexpr-evaluation.md) | Terminate `constexpr` evaluation after N steps (default: 100000) |
+| [`/constexpr:steps<N>`](constexpr-control-constexpr-evaluation.md) | Terminate `constexpr` evaluation after N steps (default: 100000). |
 | [`/D<name>{=|#}<text>`](d-preprocessor-definitions.md) | Defines constants and macros. |
+| [`/dynamicdeopt`](dynamic-deopt.md) | Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) and step in anywhere with on-demand function deoptimization. |
 | [`/diagnostics`](diagnostics-compiler-diagnostic-options.md) | Diagnostics format: prints column information. |
 | [`/diagnostics:caret[-]`](diagnostics-compiler-diagnostic-options.md) | Diagnostics format: prints column and the indicated line of source. |
 | [`/diagnostics:classic`](diagnostics-compiler-diagnostic-options.md) | Use legacy diagnostics format. |
@@ -49,6 +50,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/EP`](ep-preprocess-to-stdout-without-hash-line-directives.md) | Copies preprocessor output to standard output. |
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings control error reporting. |
 | [`/execution-charset`](execution-charset-set-execution-character-set.md) | Set execution character set. |
+| [`/experimental:log`](experimental-log.md) | Enables experimental structured SARIF output. |
 | [`/experimental:module`](experimental-module.md) | Enables experimental module support. |
 | [`/exportHeader`](module-exportheader.md) | Create the header units files (*`.ifc`*) specified by the input arguments. |
 | [`/external:anglebrackets`](external-external-headers-diagnostics.md) | Treat all headers included via `<>` as external. |
@@ -64,6 +66,8 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Displays the full path of source code files passed to *cl.exe* in diagnostic text. |
 | [`/Fd`](fd-program-database-file-name.md) | Renames program database file. |
 | [`/Fe`](fe-name-exe-file.md) | Renames the executable file. |
+| [`/feature`](feature-arm64.md) | Enable architecture features.<sup>17.10</sup> |
+| [`/forceInterlockedFunctions`](force-interlocked-functions.md) | Dynamically selects between Armv8.0 load, store exclusive instructions or Armv8.1 LSE atomic instructions based on target CPU.<sup>17.14</sup> |
 | [`/FI<file>`](fi-name-forced-include-file.md) | Preprocesses the specified include file. |
 | [`/Fi`](fi-preprocess-output-file-name.md) | Specifies the preprocessed output file name. |
 | [`/Fm`](fm-name-mapfile.md) | Creates a mapfile. |
@@ -81,7 +85,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/fsanitize`](fsanitize.md) | Enables compilation of sanitizer instrumentation such as AddressSanitizer. |
 | [`/fsanitize-coverage`](fsanitize-coverage.md) | Enables compilation of code coverage instrumentation for libraries such as LibFuzzer. |
 | `/Ft<dir>` | Location of the header files generated for `#import`. |
-| [`/FU<file>`](fu-name-forced-hash-using-file.md) | Forces the use of a file name, as if it had been passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
+| [`/FU<file>`](fu-name-forced-hash-using-file.md) | Forces the use of a file name, as if it were passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
 | [`/Fx`](fx-merge-injected-code.md) | Merges injected code with the source file. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Optimizes for Windows applications. |
 | [`/Gd`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__cdecl`** calling convention. (x86 only) |
@@ -176,6 +180,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/std:c++latest`](std-specify-language-standard-version.md) | The latest draft C++ standard preview features. |
 | [`/std:c11`](std-specify-language-standard-version.md) | C11 standard ISO/IEC 9899:2011. |
 | [`/std:c17`](std-specify-language-standard-version.md) | C17 standard ISO/IEC 9899:2018. |
+| [`/std:clatest`](std-specify-language-standard-version.md) | The latest draft C standard preview features. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C source file. |
 | [`/TP`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C++. |
@@ -187,6 +192,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/V`](v-version-number.md) | Deprecated. Sets the version string. |
 | [`/validate-charset`](validate-charset-validate-for-compatible-characters.md) | Validate UTF-8 files for only compatible characters. |
 | [`/vd{0|1|2}`](vd-disable-construction-displacements.md) | Suppresses or enables hidden `vtordisp` class members. |
+| [`/vlen`](vlen.md) | Specifies vector length. |
 | [`/vmb`](vmb-vmg-representation-method.md) | Uses best base for pointers to members. |
 | [`/vmg`](vmb-vmg-representation-method.md) | Uses full generality for pointers to members. |
 | [`/vmm`](vmm-vms-vmv-general-purpose-representation.md) | Declares multiple inheritance. |
@@ -194,7 +200,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/vmv`](vmm-vms-vmv-general-purpose-representation.md) | Declares virtual inheritance. |
 | [`/volatile:iso`](volatile-volatile-keyword-interpretation.md) | Acquire/release semantics not guaranteed on volatile accesses. |
 | [`/volatile:ms`](volatile-volatile-keyword-interpretation.md) | Acquire/release semantics guaranteed on volatile accesses. |
-| `/volatileMetadata` | Generate metadata on volatile memory accesses. |
+| [`/volatileMetadata`](volatile.md) | Generate metadata on volatile memory accesses. |
 | [`/w`](compiler-option-warning-level.md) | Disable all warnings. |
 | [`/W0`, `/W1`, `/W2`, `/W3`, `/W4`](compiler-option-warning-level.md) | Set output warning level. |
 | [`/w1<n>`, `/w2<n>`, `/w3<n>`, `/w4<n>`](compiler-option-warning-level.md) | Set warning level for the specified warning. |
@@ -223,7 +229,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables (off by default). |
 | [`/Zc:forScope[-]`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |
 | [`/Zc:gotoScope`](zc-gotoscope.md) | Enforce Standard C++ **`goto`** rules around local variable initialization (implied by **`/permissive-`**). |
-| [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by **`/permissive-`**) |
+| [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by **`/permissive-`**). |
 | [`/Zc:implicitNoexcept[-]`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions (on by default). |
 | [`/Zc:inline[-]`](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced functions or data if they're COMDAT or have internal linkage only (off by default). |
 | [`/Zc:lambda[-]`](zc-lambda.md) | Enable new lambda processor for conformance-mode syntactic checks in generic lambdas. |
@@ -254,6 +260,9 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Zp[n]`](zp-struct-member-alignment.md) | Packs structure members. |
 | [`/Zs`](zs-syntax-check-only.md) | Checks syntax only. |
 | [`/ZW`](zw-windows-runtime-compilation.md) | Produces an output file to run on the Windows Runtime. |
+
+<sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.\
+<sup>17.14</sup> This option is available starting in Visual Studio 2022 version 17.14.
 
 ## See also
 

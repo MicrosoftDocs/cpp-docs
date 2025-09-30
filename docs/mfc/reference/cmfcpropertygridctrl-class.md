@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMFCPropertyGridCtrl Class"
 title: "CMFCPropertyGridCtrl Class"
+description: "Learn more about: CMFCPropertyGridCtrl Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCPropertyGridCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::CMFCPropertyGridCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::accSelect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::AddProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::AlwaysShowUserToolTip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::CloseColorPopup", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::Create", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::DeleteProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::DrawControlBarColors", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EnableDescriptionArea", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EnableHeaderCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EnsureVisible", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ExpandAll", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::FindItemByData", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accChildCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accFocus", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accHelp", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accHelpTopic", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accKeyboardShortcut", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetBkColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetBoldFont", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetCurSel", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetCustomColors", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetDescriptionHeight", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetDescriptionRows", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetHeaderCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetHeaderHeight", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetLeftColumnWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetListRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetPropertyColumnWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetPropertyCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetRowHeight", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetScrollBarCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetTextColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::HitTest", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::InitHeader", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsAlphabeticMode", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsAlwaysShowUserToolTip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsDescriptionArea", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsGroupNameFullWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsHeaderCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsMarkModifiedProperties", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsShowDragContext", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsVSDotNetLook", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::MarkModifiedProperties", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::RemoveAll", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ResetOriginalValues", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetAlphabeticMode", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetBoolLabels", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetCurSel", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetCustomColors", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetDescriptionRows", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetGroupNameFullWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetListDelimiter", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetShowDragContext", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetVSDotNetLook", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::UpdateColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::AdjustLayout", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::CompareProps", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EditItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EndEditItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::Init", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnChangeSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnClickButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawBorder", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawList", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnPropertyChanged", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnSelectCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ValidateItemData"]
 helpviewer_keywords: ["CMFCPropertyGridCtrl [MFC], CMFCPropertyGridCtrl", "CMFCPropertyGridCtrl [MFC], accSelect", "CMFCPropertyGridCtrl [MFC], AddProperty", "CMFCPropertyGridCtrl [MFC], AlwaysShowUserToolTip", "CMFCPropertyGridCtrl [MFC], CloseColorPopup", "CMFCPropertyGridCtrl [MFC], Create", "CMFCPropertyGridCtrl [MFC], DeleteProperty", "CMFCPropertyGridCtrl [MFC], DrawControlBarColors", "CMFCPropertyGridCtrl [MFC], EnableDescriptionArea", "CMFCPropertyGridCtrl [MFC], EnableHeaderCtrl", "CMFCPropertyGridCtrl [MFC], EnsureVisible", "CMFCPropertyGridCtrl [MFC], ExpandAll", "CMFCPropertyGridCtrl [MFC], FindItemByData", "CMFCPropertyGridCtrl [MFC], get_accChildCount", "CMFCPropertyGridCtrl [MFC], get_accFocus", "CMFCPropertyGridCtrl [MFC], get_accHelp", "CMFCPropertyGridCtrl [MFC], get_accHelpTopic", "CMFCPropertyGridCtrl [MFC], get_accKeyboardShortcut", "CMFCPropertyGridCtrl [MFC], get_accSelection", "CMFCPropertyGridCtrl [MFC], GetBkColor", "CMFCPropertyGridCtrl [MFC], GetBoldFont", "CMFCPropertyGridCtrl [MFC], GetCurSel", "CMFCPropertyGridCtrl [MFC], GetCustomColors", "CMFCPropertyGridCtrl [MFC], GetDescriptionHeight", "CMFCPropertyGridCtrl [MFC], GetDescriptionRows", "CMFCPropertyGridCtrl [MFC], GetHeaderCtrl", "CMFCPropertyGridCtrl [MFC], GetHeaderHeight", "CMFCPropertyGridCtrl [MFC], GetLeftColumnWidth", "CMFCPropertyGridCtrl [MFC], GetListRect", "CMFCPropertyGridCtrl [MFC], GetProperty", "CMFCPropertyGridCtrl [MFC], GetPropertyColumnWidth", "CMFCPropertyGridCtrl [MFC], GetPropertyCount", "CMFCPropertyGridCtrl [MFC], GetRowHeight", "CMFCPropertyGridCtrl [MFC], GetScrollBarCtrl", "CMFCPropertyGridCtrl [MFC], GetTextColor", "CMFCPropertyGridCtrl [MFC], HitTest", "CMFCPropertyGridCtrl [MFC], InitHeader", "CMFCPropertyGridCtrl [MFC], IsAlphabeticMode", "CMFCPropertyGridCtrl [MFC], IsAlwaysShowUserToolTip", "CMFCPropertyGridCtrl [MFC], IsDescriptionArea", "CMFCPropertyGridCtrl [MFC], IsGroupNameFullWidth", "CMFCPropertyGridCtrl [MFC], IsHeaderCtrl", "CMFCPropertyGridCtrl [MFC], IsMarkModifiedProperties", "CMFCPropertyGridCtrl [MFC], IsShowDragContext", "CMFCPropertyGridCtrl [MFC], IsVSDotNetLook", "CMFCPropertyGridCtrl [MFC], MarkModifiedProperties", "CMFCPropertyGridCtrl [MFC], RemoveAll", "CMFCPropertyGridCtrl [MFC], ResetOriginalValues", "CMFCPropertyGridCtrl [MFC], SetAlphabeticMode", "CMFCPropertyGridCtrl [MFC], SetBoolLabels", "CMFCPropertyGridCtrl [MFC], SetCurSel", "CMFCPropertyGridCtrl [MFC], SetCustomColors", "CMFCPropertyGridCtrl [MFC], SetDescriptionRows", "CMFCPropertyGridCtrl [MFC], SetGroupNameFullWidth", "CMFCPropertyGridCtrl [MFC], SetListDelimiter", "CMFCPropertyGridCtrl [MFC], SetShowDragContext", "CMFCPropertyGridCtrl [MFC], SetVSDotNetLook", "CMFCPropertyGridCtrl [MFC], UpdateColor", "CMFCPropertyGridCtrl [MFC], AdjustLayout", "CMFCPropertyGridCtrl [MFC], CompareProps", "CMFCPropertyGridCtrl [MFC], EditItem", "CMFCPropertyGridCtrl [MFC], EndEditItem", "CMFCPropertyGridCtrl [MFC], Init", "CMFCPropertyGridCtrl [MFC], OnChangeSelection", "CMFCPropertyGridCtrl [MFC], OnClickButton", "CMFCPropertyGridCtrl [MFC], OnDrawBorder", "CMFCPropertyGridCtrl [MFC], OnDrawDescription", "CMFCPropertyGridCtrl [MFC], OnDrawList", "CMFCPropertyGridCtrl [MFC], OnDrawProperty", "CMFCPropertyGridCtrl [MFC], OnPropertyChanged", "CMFCPropertyGridCtrl [MFC], OnSelectCombo", "CMFCPropertyGridCtrl [MFC], ValidateItemData"]
-ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
 ---
 # CMFCPropertyGridCtrl Class
 
@@ -179,7 +178,7 @@ virtual HRESULT accSelect(
 ### Parameters
 
 [in] *`flagsSelect`*\
-[in] *`varChild`*\
+[in] *`varChild`*
 
 ### Return Value
 
@@ -235,7 +234,7 @@ void AlwaysShowUserToolTip(BOOL bShow = TRUE);
 
 ### Parameters
 
-[in] *`bShow`*\
+[in] *`bShow`*
 
 ### Remarks
 
@@ -524,7 +523,7 @@ virtual HRESULT get_accChildCount(long* pcountChildren);
 
 ### Parameters
 
-[in] *`pcountChildren`*\
+[in] *`pcountChildren`*
 
 ### Return Value
 
@@ -538,7 +537,7 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
 
 ### Parameters
 
-[in] *`pvarChild`*\
+[in] *`pvarChild`*
 
 ### Return Value
 
@@ -555,7 +554,7 @@ virtual HRESULT get_accHelp(
 ### Parameters
 
 [in] *`varChild`*\
-[in] *`pszHelp`*\
+[in] *`pszHelp`*
 
 ### Return Value
 
@@ -574,7 +573,7 @@ virtual HRESULT get_accHelpTopic(
 
 [in] *`pszHelpFile`*\
 [in] *`varChild`*\
-[in] *`pidTopic`*\
+[in] *`pidTopic`*
 
 ### Return Value
 
@@ -591,7 +590,7 @@ virtual HRESULT get_accKeyboardShortcut(
 ### Parameters
 
 [in] *`varChild`*\
-[in] *`pszKeyboardShortcut`*\
+[in] *`pszKeyboardShortcut`*
 
 ### Return Value
 
@@ -605,7 +604,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 
 ### Parameters
 
-[in] *`pvarChildren`*\
+[in] *`pvarChildren`*
 
 ### Return Value
 
@@ -781,7 +780,7 @@ CRect GetListRect() const;
 
 ### Return Value
 
-The bounding rectangle of the property grid control. This rectange doesn't include the description area and header.
+The bounding rectangle of the property grid control. This rectangle doesn't include the description area and header.
 
 ### Remarks
 

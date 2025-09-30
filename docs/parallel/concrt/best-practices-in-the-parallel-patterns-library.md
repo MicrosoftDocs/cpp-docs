@@ -4,6 +4,7 @@ title: "Best Practices in the Parallel Patterns Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Parallel Patterns Library, practices to avoid", "practices to avoid, Parallel Patterns Library", "best practices, Parallel Patterns Library", "Parallel Patterns Library, best practices"]
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
+ms.topic: best-practice
 ---
 # Best Practices in the Parallel Patterns Library
 

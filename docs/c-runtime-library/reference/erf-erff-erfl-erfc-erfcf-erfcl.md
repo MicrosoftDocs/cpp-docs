@@ -1,14 +1,13 @@
 ---
 title: "erf, erff, erfl, erfc, erfcf, erfcl"
 description: "API reference for erf, erff, erfl, erfc, erfcf, and erfcl; which computes the error function or the complementary error function of a value."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["erff", "erfl", "erf", "erfc", "erfcf", "erfcl", "_o_erf", "_o_erfc", "_o_erfcf", "_o_erfcl", "_o_erff", "_o_erfl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["erfl", "erf", "erff", "erfc", "erfcf", "erfcl"]
 helpviewer_keywords: ["erfl function", "erff function", "erf function", "erfcl function", "erfcf function", "erfc function"]
-ms.assetid: 144d90d3-e437-41c2-a659-cd57596023b5
 ---
 # `erf`, `erff`, `erfl`, `erfc`, `erfcf`, `erfcl`
 
@@ -47,8 +46,8 @@ float erfcf(
 long double erfcl(
    long double x
 );
-#define erf(X) // Requires C11 or higher
-#define erfc(X) // Requires C11 or higher
+#define erf(X) // Requires C11 or later
+#define erfc(X) // Requires C11 or later
 ```
 
 ### Parameters

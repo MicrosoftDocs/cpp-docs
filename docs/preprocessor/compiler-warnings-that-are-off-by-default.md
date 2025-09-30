@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Compiler warnings that are off by default"
 title: "Compiler warnings that are off by default"
-ms.date: 02/28/2023
+description: "Learn more about: Compiler warnings that are off by default"
+ms.date: 01/18/2024
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
-ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---
 # Compiler warnings that are off by default
 
@@ -159,7 +158,7 @@ The following warnings are turned off by default in Visual Studio 2019 and later
 
 | Warning | Message |
 |--|--|
-| C5052 (level 3) | Keyword '*keyword-name*' was introduced in C++ *version* and requires use of the '*option*' command-line option` <sup>16.1</sup> |
+| C5052 (level 3) | Keyword '*keyword-name*' was introduced in C++ *version* and requires use of the '*option*' command-line option <sup>16.1</sup> |
 | C5204 (level 3) | A class with virtual functions has non-virtual trivial destructor. <sup>16.5</sup> |
 | C5214 (level 4) | applying '*keyword*' to an operand with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
 | C5215 (level 4) | '*function-parameter*' a function parameter with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
@@ -191,6 +190,8 @@ The following warnings are turned off by default in Visual Studio 2022 and later
 | [C5262](../error-messages/compiler-warnings/c5262.md) (level 1, error) | implicit fall-through occurs here; are you missing a `break` statement? Use `[[fallthrough]]` when a `break` statement is intentionally omitted between cases <sup>17.4</sup> |
 | C5263 (level 4) | calling '`std::move`' on a temporary object prevents copy elision <sup>17.4</sup> |
 | C5264 (level 4) | '*variable-name*': 'const' variable is not used <sup>17.4</sup> |
+| [C5266 (level 4)](../error-messages/compiler-warnings/compiler-warning-level-4-c5266.md) | 'const' qualifier on return type has no effect <sup>17.6</sup> |
+| [C5267](../error-messages/compiler-warnings/c5267.md) (level 4) | definition of implicit copy constructor/assignment operator for '*type*' is deprecated because it has a user-provided assignment operator/copy constructor <sup>17.7</sup> |
 
 <sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.\
 <sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.\
@@ -209,6 +210,9 @@ The following warnings are turned off by default in Visual Studio 2022 and later
 <sup>17.2</sup> This warning is available starting in Visual Studio 2022 version 17.2.\
 <sup>17.3</sup> This warning is available starting in Visual Studio 2022 version 17.3.\
 <sup>17.4</sup> This warning is available starting in Visual Studio 2022 version 17.4.\
+<sup>17.5</sup> This warning is available starting in Visual Studio 2022 version 17.5.\
+<sup>17.6</sup> This warning is available starting in Visual Studio 2022 version 17.6.\
+<sup>17.7</sup> This warning is available starting in Visual Studio 2022 version 17.7.\
 <sup>Perm</sup> This warning is off unless the [`/permissive-`](../build/reference/permissive-standards-conformance.md) compiler option is set.
 
 ## Warnings off by default in earlier versions

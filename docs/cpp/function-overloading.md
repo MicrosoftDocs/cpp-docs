@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Function Overloading"
 title: "Function Overloading"
+description: "Learn more about: Function Overloading"
 ms.date: 02/01/2023
 helpviewer_keywords: ["function overloading [C++], about function overloading", "function overloading", "declaring functions [C++], overloading"]
 ---
@@ -307,7 +307,7 @@ public:
 
 void Print( int i )
 {
-};
+}
 
 UDC udc;
 
@@ -401,7 +401,6 @@ using namespace std;
 
 class C
 {
-
 public:
     C() {/*expensive initialization*/}
     vector<unsigned> get_data() &

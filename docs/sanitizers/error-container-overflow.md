@@ -1,6 +1,6 @@
 ---
 title: "Error: container-overflow"
-description: "Source examples and live debug screenshots for container overflow errors."
+description: "Learn about the container-overflow Address Sanitizer error."
 ms.date: 06/30/2023
 f1_keywords: ["container-overflow", "mismatch detected for 'annotate_vector'", "_DISABLE_VECTOR_ANNOTATION"]
 helpviewer_keywords: ["container-overflow error", "AddressSanitizer error container-overflow", "mismatch detected for 'annotate_vector'", "_DISABLE_VECTOR_ANNOTATION"]
@@ -9,6 +9,8 @@ helpviewer_keywords: ["container-overflow error", "AddressSanitizer error contai
 # Error: `container-overflow`
 
 > Address Sanitizer Error: Container overflow
+
+## Remarks
 
 In Visual Studio 2022 version 17.2 and later, the Microsoft Visual C++ standard library (STL) is partially enlightened to work with the AddressSanitizer. The following container types have annotations to detect memory access issues:
 
@@ -90,11 +92,11 @@ If you want the implementation to trust that your custom allocator is handling t
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

@@ -34,7 +34,7 @@ class COleCmdUI : public CCmdUI
 
 ## Remarks
 
-In an application that is not enabled for DocObjects, when the user views a menu in the application, MFC processes UPDATE_COMMAND_UI notifcations. Each notification is given a [CCmdUI](../../mfc/reference/ccmdui-class.md) object that can be manipulated to reflect the state of a particular command. However, when your application is enabled for DocObjects, MFC processes UPDATE_OLE_COMMAND_UI notifications and assigns `COleCmdUI` objects.
+In an application that is not enabled for DocObjects, when the user views a menu in the application, MFC processes UPDATE_COMMAND_UI notifications. Each notification is given a [CCmdUI](../../mfc/reference/ccmdui-class.md) object that can be manipulated to reflect the state of a particular command. However, when your application is enabled for DocObjects, MFC processes UPDATE_OLE_COMMAND_UI notifications and assigns `COleCmdUI` objects.
 
 `COleCmdUI` allows a DocObject to receive commands that originate in its container's user interface (such as FileNew, Open, Print, and so on), and allows a container to receive commands that originate in the DocObject's user interface. Although `IDispatch` could be used to dispatch the same commands, `IOleCommandTarget` provides a simpler way to query and execute because it relies on a standard set of commands, usually without arguments, and no type information is involved. `COleCmdUI` can be used to enable, update, and set other properties of DocObject user interface commands. When you want to invoke the command, call [COleServerDoc::OnExecOleCmd](../../mfc/reference/coleserverdoc-class.md#onexecolecmd).
 

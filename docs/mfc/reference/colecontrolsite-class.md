@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: COleControlSite Class"
 title: "COleControlSite Class"
-ms.date: "11/04/2016"
+description: "Learn more about: COleControlSite Class"
+ms.date: 11/04/2016
 f1_keywords: ["COleControlSite", "AFXOCC/COleControlSite", "AFXOCC/COleControlSite::COleControlSite", "AFXOCC/COleControlSite::BindDefaultProperty", "AFXOCC/COleControlSite::BindProperty", "AFXOCC/COleControlSite::CreateControl", "AFXOCC/COleControlSite::DestroyControl", "AFXOCC/COleControlSite::DoVerb", "AFXOCC/COleControlSite::EnableDSC", "AFXOCC/COleControlSite::EnableWindow", "AFXOCC/COleControlSite::FreezeEvents", "AFXOCC/COleControlSite::GetDefBtnCode", "AFXOCC/COleControlSite::GetDlgCtrlID", "AFXOCC/COleControlSite::GetEventIID", "AFXOCC/COleControlSite::GetExStyle", "AFXOCC/COleControlSite::GetProperty", "AFXOCC/COleControlSite::GetStyle", "AFXOCC/COleControlSite::GetWindowText", "AFXOCC/COleControlSite::InvokeHelper", "AFXOCC/COleControlSite::InvokeHelperV", "AFXOCC/COleControlSite::IsDefaultButton", "AFXOCC/COleControlSite::IsWindowEnabled", "AFXOCC/COleControlSite::ModifyStyle", "AFXOCC/COleControlSite::ModifyStyleEx", "AFXOCC/COleControlSite::MoveWindow", "AFXOCC/COleControlSite::QuickActivate", "AFXOCC/COleControlSite::SafeSetProperty", "AFXOCC/COleControlSite::SetDefaultButton", "AFXOCC/COleControlSite::SetDlgCtrlID", "AFXOCC/COleControlSite::SetFocus", "AFXOCC/COleControlSite::SetProperty", "AFXOCC/COleControlSite::SetPropertyV", "AFXOCC/COleControlSite::SetWindowPos", "AFXOCC/COleControlSite::SetWindowText", "AFXOCC/COleControlSite::ShowWindow", "AFXOCC/COleControlSite::GetControlInfo", "AFXOCC/COleControlSite::m_bIsWindowless", "AFXOCC/COleControlSite::m_ctlInfo", "AFXOCC/COleControlSite::m_dwEventSink", "AFXOCC/COleControlSite::m_dwMiscStatus", "AFXOCC/COleControlSite::m_dwPropNotifySink", "AFXOCC/COleControlSite::m_dwStyle", "AFXOCC/COleControlSite::m_hWnd", "AFXOCC/COleControlSite::m_iidEvents", "AFXOCC/COleControlSite::m_nID", "AFXOCC/COleControlSite::m_pActiveObject", "AFXOCC/COleControlSite::m_pCtrlCont", "AFXOCC/COleControlSite::m_pInPlaceObject", "AFXOCC/COleControlSite::m_pObject", "AFXOCC/COleControlSite::m_pWindowlessObject", "AFXOCC/COleControlSite::m_pWndCtrl", "AFXOCC/COleControlSite::m_rect"]
 helpviewer_keywords: ["COleControlSite [MFC], COleControlSite", "COleControlSite [MFC], BindDefaultProperty", "COleControlSite [MFC], BindProperty", "COleControlSite [MFC], CreateControl", "COleControlSite [MFC], DestroyControl", "COleControlSite [MFC], DoVerb", "COleControlSite [MFC], EnableDSC", "COleControlSite [MFC], EnableWindow", "COleControlSite [MFC], FreezeEvents", "COleControlSite [MFC], GetDefBtnCode", "COleControlSite [MFC], GetDlgCtrlID", "COleControlSite [MFC], GetEventIID", "COleControlSite [MFC], GetExStyle", "COleControlSite [MFC], GetProperty", "COleControlSite [MFC], GetStyle", "COleControlSite [MFC], GetWindowText", "COleControlSite [MFC], InvokeHelper", "COleControlSite [MFC], InvokeHelperV", "COleControlSite [MFC], IsDefaultButton", "COleControlSite [MFC], IsWindowEnabled", "COleControlSite [MFC], ModifyStyle", "COleControlSite [MFC], ModifyStyleEx", "COleControlSite [MFC], MoveWindow", "COleControlSite [MFC], QuickActivate", "COleControlSite [MFC], SafeSetProperty", "COleControlSite [MFC], SetDefaultButton", "COleControlSite [MFC], SetDlgCtrlID", "COleControlSite [MFC], SetFocus", "COleControlSite [MFC], SetProperty", "COleControlSite [MFC], SetPropertyV", "COleControlSite [MFC], SetWindowPos", "COleControlSite [MFC], SetWindowText", "COleControlSite [MFC], ShowWindow", "COleControlSite [MFC], GetControlInfo", "COleControlSite [MFC], m_bIsWindowless", "COleControlSite [MFC], m_ctlInfo", "COleControlSite [MFC], m_dwEventSink", "COleControlSite [MFC], m_dwMiscStatus", "COleControlSite [MFC], m_dwPropNotifySink", "COleControlSite [MFC], m_dwStyle", "COleControlSite [MFC], m_hWnd", "COleControlSite [MFC], m_iidEvents", "COleControlSite [MFC], m_nID", "COleControlSite [MFC], m_pActiveObject", "COleControlSite [MFC], m_pCtrlCont", "COleControlSite [MFC], m_pInPlaceObject", "COleControlSite [MFC], m_pObject", "COleControlSite [MFC], m_pWindowlessObject", "COleControlSite [MFC], m_pWndCtrl", "COleControlSite [MFC], m_rect"]
-ms.assetid: 43970644-5eab-434a-8ba6-56d144ff1e3f
 ---
 # COleControlSite Class
 
@@ -358,7 +357,7 @@ Specifies whether the control site wishes to stop accepting events. Nonzero if t
 
 ### Remarks
 
-If *bFreeze* is TRUE, the control site requests the control to stop fring events. If *bFreeze* is FALSE, the control site requests the control to continue firing events.
+If *bFreeze* is TRUE, the control site requests the control to stop firing events. If *bFreeze* is FALSE, the control site requests the control to continue firing events.
 
 > [!NOTE]
 > The control is not required to stop firing events if requested by the control site. It can continue firing but all subsequent events will be ignored by the control site.
@@ -646,7 +645,7 @@ DWORD m_dwMiscStatus;
 
 ### Remarks
 
-For more information, see [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc)in the Windows SDK.
+For more information, see [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc) in the Windows SDK.
 
 ## <a name="m_dwpropnotifysink"></a> COleControlSite::m_dwPropNotifySink
 
@@ -722,7 +721,7 @@ LPOLEOBJECT m_pObject;
 
 ## <a name="m_pwindowlessobject"></a> COleControlSite::m_pWindowlessObject
 
-Contains the `IOleInPlaceObjectWindowless`[IOleInPlaceObjectWindowless](/windows/win32/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) interface of the control.
+Contains the [`IOleInPlaceObjectWindowless`](/windows/win32/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) interface of the control.
 
 ```
 IOleInPlaceObjectWindowless* m_pWindowlessObject;
@@ -1012,7 +1011,7 @@ Pointer to the list of arguments.
 
 ### Remarks
 
-Extra parameters for the method or property being invoked can be passeed using the *arg_list* parameter. If `SetProperty` encounters an error, an exception is thrown.
+Extra parameters for the method or property being invoked can be passed using the *arg_list* parameter. If `SetProperty` encounters an error, an exception is thrown.
 
 The type of exception is determined by the return value of the attempt to set the property or method. If the return value is `DISP_E_EXCEPTION`, a `COleDispatchExcpetion` is thrown; otherwise a `COleException`.
 

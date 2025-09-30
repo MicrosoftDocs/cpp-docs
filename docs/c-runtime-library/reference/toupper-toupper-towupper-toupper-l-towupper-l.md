@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CTYPE/toupper", "CTYPE/_toupper", "CTYPE/_toupper_l", "CORECRT_WCTYPE/towupper", "CORECRT_WCTYPE/_towupper_l", "TCHAR/_totupper", "TCHAR/_totupper_l", "toupper", "_toupper", "_toupper_l", "towupper", "_towupper_l", "_totupper", "_totupper_l"]
 helpviewer_keywords: ["_toupper function", "towupper function", "uppercase, converting strings to", "totupper function", "string conversion, to different characters", "towupper_l function", "toupper_l function", "string conversion, case", "_toupper_l function", "_towupper_l function", "_totupper function", "case, converting", "characters, converting", "toupper function"]
-ms.assetid: cdef1b0f-b19c-4d11-b7d2-cf6334c9b6cc
 ---
 # `toupper`, `_toupper`, `towupper`, `_toupper_l`, `_towupper_l`
 
@@ -52,19 +51,17 @@ If *`c`* is a wide character for which `iswlower` is nonzero and there's a corre
 
 There's no return value reserved to indicate an error.
 
-In order for **`toupper`** to give the expected results, [`__isascii`](isascii-isascii-iswascii.md) and [`islower`](islower-iswlower-islower-l-iswlower-l.md) must both return nonzero.
-
 ## Remarks
 
 Each of these routines converts a given lowercase letter to an uppercase letter if possible and appropriate. The case conversion of **`towupper`** is locale-specific. Only the characters relevant to the current locale are changed in case. The functions without the `_l` suffix use the currently set locale. The versions of these functions with the `_l` suffix take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../locale.md).
 
-In order for **`toupper`** to give the expected results, [`__isascii`](isascii-isascii-iswascii.md) and [`isupper`](isupper-isupper-l-iswupper-iswupper-l.md) must both return nonzero.
+For **`toupper`** to give the expected results, [`__isascii`](isascii-isascii-iswascii.md) must return nonzero.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 ### Generic-text routine mappings
 
-| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_totupper` | **`toupper`** | **`_mbctoupper`** | **`towupper`** |
 | `_totupper_l` | **`_toupper_l`** | **`_mbctoupper_l`** | **`_towupper_l`** |

@@ -4,6 +4,7 @@ title: "Writing MFC Applications"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["Internet applications [MFC], MFC", "MFC, Internet applications", "application wizards [MFC], Internet applications", "MFC, application development"]
 ms.assetid: 6a8d8a03-abfa-4976-86c2-c5773a4b7179
+ms.topic: concept-article
 ---
 # Writing MFC Applications
 

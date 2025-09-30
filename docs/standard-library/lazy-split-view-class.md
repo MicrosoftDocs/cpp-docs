@@ -71,7 +71,7 @@ For a description of the following entries, see [View class characteristics](vie
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 
@@ -236,6 +236,6 @@ The sentinel that follows the last element in the view:
 ## See also
 
 [`<ranges>`](ranges.md)\
-[`lazy_split` range adaptor](range-adaptors.md#lazy_split)
+[`lazy_split` range adaptor](range-adaptors.md#lazy_split)\
 [`split_view` class](split-view-class.md)\
 [view classes](view-classes.md)

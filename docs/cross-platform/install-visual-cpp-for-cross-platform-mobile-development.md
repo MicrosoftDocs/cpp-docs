@@ -2,12 +2,12 @@
 description: "Learn more about: Install cross-platform mobile development with C++"
 title: "Install cross-platform mobile development with C++"
 ms.date: "10/17/2019"
-ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 ms.custom: intro-installation
+ms.topic: install-set-up-deploy
 ---
 # Install cross-platform mobile development with C++
 
-You can use C++ in Visual Studio to build Windows Desktop apps, Universal Windows Platform (UWP) apps, and Linux apps. And now, you can build C++ apps for Android and iOS. The **Mobile development with C++** workload is an installable set of components in Visual Studio. It includes cross-platform iOS, Android, and UWP Visual Studio templates. The workload installs the cross-platform tools and SDKs you need to get started quickly. You won't have to locate, download, and configure them yourself. You can use these tools in Visual Studio to easily create, edit, debug, and test your cross-platform projects.
+You can use C++ in Visual Studio to build Windows Desktop apps, Universal Windows Platform (UWP) apps, and Linux apps. And now, you can build C++ apps for Android and iOS. The **Mobile development with C++** workload is an installable set of components in Visual Studio. It includes cross-platform iOS, Android, and UWP Visual Studio templates. The workload installs the cross-platform tools and SDKs you need to get started quickly. You don't have to locate, download, and configure them yourself. You can use these tools in Visual Studio to easily create, edit, debug, and test your cross-platform projects.
 
 This article describes how to install the tools and third-party software required to develop cross-platform apps in C++ using Visual Studio. For an overview, see [Visual C++ cross-platform mobile](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)
 
@@ -30,9 +30,9 @@ This article describes how to install the tools and third-party software require
 
 ::: moniker-end
 
-To build apps for specific device platforms, there are some additional requirements:
+To build apps for specific device platforms, there are some other requirements:
 
-- The x86 Android emulators that come with the Android SDK work best on computers that can use hardware acceleration, such as the Intel Hardware Accelerated Execution Manager (HAXM). For more information, see [Hardware acceleration for emulator performance (Hyper-V & HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin&pivots=windows).
+- The x86 Android emulators that come with the Android SDK work best on computers that can use hardware acceleration. For more information, see [How to enable hardware acceleration with Android emulators (Hyper-V & AEHD)](/dotnet/maui/android/emulator/hardware-acceleration).
 
 - Building code for iOS requires an Apple ID, an iOS Developer Program account, and a Mac computer that can run [Xcode](https://developer.apple.com/xcode/) version 10.2 or later on OS X Mavericks (version 10.9) or later versions. For a link to installation steps, see [Install tools for iOS](#install-tools-for-ios).
 
@@ -62,13 +62,13 @@ The Visual Studio Installer includes a **Mobile development with C++** workload.
 
 1. Run the **Visual Studio Installer** from the **Start** menu.
 
-1. If you've already installed Visual Studio, choose the **Modify** button for the installed version of Visual Studio you'd like to modify. Otherwise, choose **Install** to install Visual Studio.
+1. If you've installed Visual Studio, choose the **Modify** button for the installed version of Visual Studio you'd like to modify. Otherwise, choose **Install** to install Visual Studio.
 
 1. With the **Workloads** tab selected, scroll down and select the **Mobile development with C++** workload in the Visual Studio Installer. When this workload is selected, other required components for C++ development are also selected. You can also choose other workloads and individual components to install at the same time. To build cross-platform code that also targets UWP, select the **Universal Windows Platform development** workload.
 
-1. In the **Installation details** pane, expand **Mobile development with C++**. In the **Optional** section, you can choose additional versions of the NDK, the Google Android Emulator, the Intel Hardware Accelerated Execution Manager, and the IncrediBuild build acceleration tool.
+1. In the **Installation details** pane, expand **Mobile development with C++**. In the **Optional** section, you can choose other versions of the NDK, the Google Android Emulator, the Intel Hardware Accelerated Execution Manager, and the IncrediBuild build acceleration tool.
 
-1. By default, one or more Android SDK setup components are included by the workload. Additional versions of the Android SDK are available. To add one to your installation, choose the **Individual components** tab, then scroll down to the **SDKs, libraries, and frameworks** section to make your selection.
+1. By default, one or more Android SDK setup components are included by the workload. More versions of the Android SDK are available. To add one to your installation, choose the **Individual components** tab, then scroll down to the **SDKs, libraries, and frameworks** section to make your selection.
 
 1. Choose the **Modify** or **Install** button to install the **Mobile development with C++** workload and your other selected workloads and optional components.
 
@@ -87,11 +87,11 @@ You can use Visual Studio to edit, debug, and deploy iOS code to the iOS Simulat
 
 You don't have to install all the third-party dependencies when you install the **Mobile development with C++** workload (or in Visual Studio 2015, the Visual C++ Mobile Development option). Install them later by using the steps in [Install the tools](#install-the-tools). The Visual Studio Installer is updated regularly to install the latest third-party components. Use it to install updated SDKs and NDKs. You can also install or update them independently of Visual Studio.
 
-You can run the SDK Manager app in the Android SDK directory again to update the SDK. And, to install optional tools and additional API levels. Updates may fail to install unless you use **Run as administrator** to run the SDK Manager app. If you have problems building an Android app, check the SDK Manager for updates to your installed SDKs.
+You can run the SDK Manager app in the Android SDK directory again to update the SDK. And, to install optional tools and other API levels. Updates may fail to install unless you use **Run as administrator** to run the SDK Manager app. If you have problems building an Android app, check the SDK Manager for updates to your installed SDKs.
 
-To use some of the Android SDK emulators, you may need to set up hardware acceleration. For more information, see [Hardware acceleration for emulator performance (Hyper-V & HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+To use some of the Android SDK emulators, you may need to set up hardware acceleration. For more information, see [How to enable hardware acceleration with Android emulators (Hyper-V & AEHD)](/dotnet/maui/android/emulator/hardware-acceleration).
 
-In most cases, Visual Studio can detect the configurations for the third-party software you've installed. It maintains the installation paths in internal environment variables. You can override the default paths of these cross-platform development tools in the Visual Studio IDE.
+In most cases, Visual Studio can detect the configurations for installed third-party software. It maintains the installation paths in internal environment variables. You can override the default paths of these cross-platform development tools in the Visual Studio IDE.
 
 ### To set the paths for third-party tools
 

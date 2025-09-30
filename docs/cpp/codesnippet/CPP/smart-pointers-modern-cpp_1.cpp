@@ -9,7 +9,6 @@ void UseRawPointer()
     delete pSong;   
 }
 
-
 void UseSmartPointer()
 {
     // Declare a smart pointer on stack and pass it the raw pointer.

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about the ranges view classes, which allow you to inexpensively transform ranges."
 title: "View classes"
+description: "Learn more about the ranges view classes, which allow you to inexpensively transform ranges."
 ms.date: 12/20/2022
 f1_keywords: ["RANGES/std::ranges::views", "RANGES/std::views"]
 helpviewer_keywords: ["RANGES/VIEWS/std", "VIEWS/std"]
@@ -51,7 +51,7 @@ Using a view after the range that it's based on is modified can lead to undefine
 Because views are cheap to create, you should generally re-create a view if you modify the underlying range. The following example demonstrates how to store a view pipeline in a variable so that you can reuse it.
 
 ```cpp
-// requires /std:c++20, or later
+// requires /std:c++20 or later
 #include <iostream>
 #include <ranges>
 #include <vector>
@@ -123,7 +123,7 @@ The following view classes are defined in the `std::ranges` namespace.
 | [`transform_view`](transform-view-class.md)<sup>C++20</sup> | A view of an underlying sequence after a transformation function is applied to each element. |
 | [`values_view`](values-view-class.md)<sup>C++20</sup> | A view over the second index into each tuple-like value in a collection. For example, given a range of `std::tuple<string, int>` values, create a view that consists of the `int` elements from each tuple. |
 
-Many of these classes have corresponding [range adaptors](range-adaptors.md) in the `std:views` namespace that creates instances of them. Prefer using an adaptor to create a view instead of creating view classes directly. The range adaptors are the intended way to create views, are easier to use, and in some cases are more efficient.
+Many of these classes have corresponding [range adaptors](range-adaptors.md) in the `std::views` namespace that creates instances of them. Prefer using an adaptor to create a view instead of creating view classes directly. The range adaptors are the intended way to create views, are easier to use, and in some cases are more efficient.
 
 ## View classes characteristics
 

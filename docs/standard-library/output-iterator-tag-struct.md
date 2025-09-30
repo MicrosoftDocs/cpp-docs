@@ -12,7 +12,9 @@ A class that provides a return type for `iterator_category` function that repres
 
 ## Syntax
 
+```cpp
 struct output_iterator_tag {};
+```
 
 ## Remarks
 

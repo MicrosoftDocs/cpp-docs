@@ -5,6 +5,7 @@ ms.date: "11/12/2018"
 f1_keywords: ["vc.codewiz.impl.interface.overview"]
 helpviewer_keywords: ["interfaces, implementing", "implement interface wizard [C++]"]
 ms.assetid: 72f8731b-7e36-45db-8b10-7ef211a773cd
+ms.topic: how-to
 ---
 # Implement an interface
 

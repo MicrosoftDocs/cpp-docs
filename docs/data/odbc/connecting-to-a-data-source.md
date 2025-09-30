@@ -4,6 +4,7 @@ title: "Connecting to a Data Source"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["database connections [C++], ODBC", "ODBC connections [C++], using", "connections [C++], data source", "databases [C++], connecting to", "data sources [C++], connecting to", "ODBC data sources [C++], connections", "database connections [C++], MFC ODBC classes"]
 ms.assetid: ef6c8c98-5979-43a8-9fb5-5bb06fc59f36
+ms.topic: concept-article
 ---
 # Connecting to a Data Source
 

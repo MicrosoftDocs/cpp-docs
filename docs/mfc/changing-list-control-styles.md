@@ -4,6 +4,7 @@ title: "Changing List Control Styles"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["styles [MFC], CListCtrl", "CListCtrl class [MFC], styles", "CListCtrl class [MFC], changing styles"]
 ms.assetid: be74a005-0795-417c-9056-f6342aa74b26
+ms.topic: concept-article
 ---
 # Changing List Control Styles
 

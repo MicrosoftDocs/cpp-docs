@@ -102,14 +102,11 @@ typedef struct _CrtMemBlockHeader
 
 The `no_mans_land` buffers on either side of the user data area of the block are currently 4 bytes in size, and are filled with a known byte value used by the debug heap routines to verify that the limits of the user's memory block haven't been overwritten. The debug heap also fills new memory blocks with a known value. If you elect to keep freed blocks in the heap's linked list, these freed blocks are also filled with a known value. Currently, the actual byte values used are as follows:
 
-`no_mans_land` (0xFD)\
-The "no_mans_land" buffers on either side of the memory used by an application are currently filled with 0xFD.
-
-Freed blocks (0xDD)\
-The freed blocks kept unused in the debug heap's linked list when the `_CRTDBG_DELAY_FREE_MEM_DF` flag is set are currently filled with 0xDD.
-
-New objects (0xCD)\
-New objects are filled with 0xCD when they're allocated.
+|Code  |Description  |
+|---------|---------|
+|`no_mans_land` (0xFD) | The "no_mans_land" buffers on either side of the memory used by an application are currently filled with 0xFD. |
+|Freed blocks (0xDD) | The freed blocks kept unused in the debug heap's linked list when the `_CRTDBG_DELAY_FREE_MEM_DF` flag is set are currently filled with 0xDD. |
+|New objects (0xCD) | New objects are filled with 0xCD when they're allocated.|
 
 ## Types of blocks on the debug heap
 
@@ -170,7 +167,7 @@ All calls to heap functions such as `malloc`, `free`, `calloc`, `realloc`, `new`
 
 ### To use the debug heap
 
-- Link the debug build of your application with a debug version of the C runtime library.
+Link the debug build of your application with a debug version of the C runtime library.
 
 ### To change one or more `_crtDbgFlag` bit fields and create a new state for the flag
 
@@ -275,9 +272,9 @@ Knowing the source file name and line number of an assert or reporting macro is 
 
 ### Unique allocation request numbers and `_crtBreakAlloc`
 
-There's a simple way to identify the specific heap allocation call that went bad. It takes advantage of the unique allocation request number associated with each block in the debug heap. When information about a block is reported by one of the dump functions, this allocation request number is enclosed in braces (for example, "{36}").
+There's a simple way to identify the specific heap allocation call that went bad. It takes advantage of the unique allocation request number associated with each block in the debug heap. When information about a block is reported by one of the dump functions, this allocation request number is enclosed in braces. For example, `{36}`.
 
-Once you know the allocation request number of an improperly allocated block, you can pass this number to [`_CrtSetBreakAlloc`](./reference/crtsetbreakalloc.md) to create a breakpoint. Execution will break just before allocating the block, and you can backtrack to determine what routine was responsible for the bad call. To avoid recompiling, you can accomplish the same thing in the debugger by setting `_crtBreakAlloc` to the allocation request number you're interested in.
+Once you know the allocation request number of an improperly allocated block, you can pass this number to [`_CrtSetBreakAlloc`](./reference/crtsetbreakalloc.md) to create a breakpoint. Execution will break just before allocating the block and you can backtrack to determine what routine was responsible for the bad call. To avoid recompiling, you can accomplish the same thing in the debugger by setting `_crtBreakAlloc` to the allocation request number you're interested in.
 
 ### Creating debug versions of your allocation routines
 

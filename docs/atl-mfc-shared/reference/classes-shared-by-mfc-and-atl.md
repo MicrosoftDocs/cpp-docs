@@ -21,7 +21,7 @@ The following table lists the classes shared between MFC and ATL.
 |[CRect](../../atl-mfc-shared/reference/crect-class.md)|A class similar to a Windows [RECT](/windows/win32/api/windef/ns-windef-rect) structure that also includes member functions to manipulate `CRect` objects and Windows `RECT` structures.|atltypes.h|
 |[CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)|Represents a `CSimpleStringT` object.|atlsimpstr.h|
 |[CSize](../../atl-mfc-shared/reference/csize-class.md)|A class similar to the Windows [SIZE](/windows/win32/api/windef/ns-windef-size) structure, which implements a relative coordinate or position.|atltypes.h|
-|[CStrBufT](../../atl-mfc-shared/reference/cstrbuft-class.md)|Provides automatic resource cleanup for `GetBuffer` and `ReleaseBuffer` calls on a existing `CStringT` object.|atlsimpstr.h|
+|[CStrBufT](../../atl-mfc-shared/reference/cstrbuft-class.md)|Provides automatic resource cleanup for `GetBuffer` and `ReleaseBuffer` calls on an existing `CStringT` object.|atlsimpstr.h|
 |[CStringData](../../atl-mfc-shared/reference/cstringdata-class.md)|Represents the data of a string object.|atlsimpstr.h|
 |[CStringT](../../atl-mfc-shared/reference/cstringt-class.md)|Represents a `CStringT` object.|cstringt.h (MFC dependent) atlstr.h (MFC independent)|
 |[CTime](../../atl-mfc-shared/reference/ctime-class.md)|Represents an absolute time and date.|atltime.h|

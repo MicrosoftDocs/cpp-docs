@@ -526,7 +526,7 @@ Retrieves an element from the array.
 
 ```cpp
 T& operator[](long lindex) const;
-T& operator[]int nindex) const;
+T& operator[](int nindex) const;
 ```
 
 ### Parameters

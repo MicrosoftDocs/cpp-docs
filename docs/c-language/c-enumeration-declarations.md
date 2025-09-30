@@ -103,7 +103,7 @@ enum BOOLEAN end_flag, match_flag; /* Two variables of type BOOLEAN */
 This declaration can also be specified as
 
 ```C
-enum BOOLEAN { false, true } end_flag, match_flag;\
+enum BOOLEAN { false, true } end_flag, match_flag;
 ```
 
 or as
@@ -133,4 +133,4 @@ enum { yes, no } response;
 
 ## See also
 
-[Enumerations](../cpp/enumerations-cpp.md)
+[Enumerations(C++)](../cpp/enumerations-cpp.md)

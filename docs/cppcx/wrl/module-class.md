@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Module Class"
 title: "Module Class"
-ms.date: "10/18/2018"
+description: "Learn more about: Module Class"
+ms.date: 10/18/2018
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module", "module/Microsoft::WRL::Module::Create", "module/Microsoft::WRL::Module::DecrementObjectCount", "module/Microsoft::WRL::Module::GetActivationFactory", "module/Microsoft::WRL::Module::GetClassObject", "module/Microsoft::WRL::Module::GetModule", "module/Microsoft::WRL::Module::GetObjectCount", "module/Microsoft::WRL::Module::IncrementObjectCount", "module/Microsoft::WRL::Module::Module", "module/Microsoft::WRL::Module::objectCount_Data", "module/Microsoft::WRL::Module::RegisterCOMObject", "module/Microsoft::WRL::Module::RegisterObjects", "module/Microsoft::WRL::Module::RegisterWinRTObject", "module/Microsoft::WRL::Module::releaseNotifier_", "module/Microsoft::WRL::Module::Terminate", "module/Microsoft::WRL::Module::~Module", "module/Microsoft::WRL::Module::UnregisterCOMObject", "module/Microsoft::WRL::Module::UnregisterObjects", "module/Microsoft::WRL::Module::UnregisterWinRTObject"]
 helpviewer_keywords: ["Microsoft::WRL::Module class", "Microsoft::WRL::Module::Create method", "Microsoft::WRL::Module::DecrementObjectCount method", "Microsoft::WRL::Module::GetActivationFactory method", "Microsoft::WRL::Module::GetClassObject method", "Microsoft::WRL::Module::GetModule method", "Microsoft::WRL::Module::GetObjectCount method", "Microsoft::WRL::Module::IncrementObjectCount method", "Microsoft::WRL::Module::Module, constructor", "Microsoft::WRL::Module::objectCount_ data member", "Microsoft::WRL::Module::RegisterCOMObject method", "Microsoft::WRL::Module::RegisterObjects method", "Microsoft::WRL::Module::RegisterWinRTObject method", "Microsoft::WRL::Module::releaseNotifier_ data member", "Microsoft::WRL::Module::Terminate method", "Microsoft::WRL::Module::~Module, destructor", "Microsoft::WRL::Module::UnregisterCOMObject method", "Microsoft::WRL::Module::UnregisterObjects method", "Microsoft::WRL::Module::UnregisterWinRTObject method"]
-ms.assetid: dd67e3b8-c2e1-4f53-8c0f-565a140ba649
 ---
 # Module Class
 
@@ -189,7 +188,7 @@ S_OK if successful; otherwise, the HRESULT returned by GetActivationFactory.
 
 ## <a name="getclassobject"></a> Module::GetClassObject
 
-Retreives a cache of class factories.
+Retrieves a cache of class factories.
 
 ```cpp
 HRESULT GetClassObject(
@@ -309,7 +308,7 @@ The number of CLSIDs to register.
 
 ### Return Value
 
-S_OK if successfu; otherwise, an HRESULT such as CO_E_OBJISREG that indicates the reason the operation failed.
+S_OK if successful; otherwise, an HRESULT such as CO_E_OBJISREG that indicates the reason the operation failed.
 
 ### Remarks
 
@@ -396,7 +395,7 @@ Unregisters one or more COM objects, which prevents other applications from conn
 virtual HRESULT UnregisterCOMObject(
    const wchar_t* serverName,
    DWORD* cookies,
-   unsigned int count
+   unsigned int count);
 ```
 
 ### Parameters

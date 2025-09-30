@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: memmove, wmemmove"
 title: "memmove, wmemmove"
+description: "Learn more about: memmove, wmemmove"
 ms.date: "1/14/2021"
 api_name: ["memmove", "wmemmove"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
@@ -47,9 +47,9 @@ The value of *`dest`*.
 
 Copies *`count`* bytes (**`memmove`**) or characters (**`wmemmove`**) from *`src`* to *`dest`*. If some portions of the source and the destination regions overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.
 
-**Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+**Security Note** Make sure that the destination buffer is large enough to accommodate the number of moved characters. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-The **`memmove`** and **`wmemmove`** functions will only be deprecated if the constant `_CRT_SECURE_DEPRECATE_MEMORY` is defined before the inclusion statement in order for the functions to be deprecated, such as in the example below:
+The **`memmove`** and **`wmemmove`** functions are only deprecated if the constant `_CRT_SECURE_DEPRECATE_MEMORY` is defined before the `#include` statement, as shown in the following example:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
@@ -114,4 +114,4 @@ New string: aaaabb
 [`_memccpy`](memccpy.md)\
 [`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
 [`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)\
-[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
+[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)

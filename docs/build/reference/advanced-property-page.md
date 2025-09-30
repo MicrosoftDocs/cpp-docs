@@ -4,6 +4,7 @@ title: "Advanced Property Page (Project)"
 ms.date: 08/31/2022
 f1_keywords: ["VC.Project.VCConfiguration.TargetExt", "VC.Project.VCConfiguration.DeleteExtensionsOnClean", "VC.Project.VCConfiguration.BuildLogFile", "VC.Project.VCConfiguration.PreferredToolArchitecture", "VC.Project.VCConfiguration.UseDebugLibraries", "VC.Project.VCConfiguration.EnableUnitySupport", "VC.Project.VCConfiguration.CopyLocalDeploymentContent", "VC.Project.VCConfiguration.CopyLocalProjectReference", "VC.Project.VCConfiguration.CopyLocalDebugSymbols", "VC.Project.VCConfiguration.CopyCppRuntimeToOutputDir", "VC.Project.VCConfiguration.useOfMfc", "VC.Project.VCConfiguration.CharacterSet", "VC.Project.VCConfiguration.WholeProgramOptimization", "VC.Project.VCConfiguration.VCToolsVersion", "VC.Project.VCConfiguration.LLVMToolsVersion", "VC.Project.VCConfiguration.ManagedExtensions", "VC.Project.TargetFrameworkVersion", "VC.Project.VCConfiguration.EnableManagedIncrementalBuild", "VC.Project.VCConfiguration.ManagedAssembly"]
 ---
+
 # Advanced Property Page
 
 ::: moniker range="<=msvc-150"
@@ -96,6 +97,10 @@ Specifies the full version of the MSVC toolset that's used to build the project.
 
 Specifies the full version of the LLVM toolset that's used to build the project. This property is available when **LLVM (clang-cl)** is selected as the platform toolset, starting in Visual Studio 2019 version 16.9. For more information, see [Set a custom LLVM toolset version](..\clang-support-msbuild.md#custom_llvm_toolset).
 
+### Enable MSVC Structured Output
+
+Specifies whether to enable [structured SARIF output](sarif-output.md), which enables the [**Problem Details** window](/visualstudio/ide/reference/problem-details-window) and hierarchical output in the [**Output** window](/visualstudio/ide/reference/output-window) in Visual Studio.  
+
 ## C++/CLI Properties
 
 ### Common Language Runtime support
@@ -106,7 +111,13 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 ### .NET Target Framework Version
 
-In managed projects, specifies the .NET framework version to target.
+This property only applies when the **Common Language Runtime support** property is set to **.NET Framework Runtime Support**, that is the project targets [.NET Framework](/dotnet/standard/glossary#net-framework), and it specifies the version of the .NET Framework.
+
+### .NET Target Framework
+
+This property only applies when the **Common Language Runtime support** property is set to **.NET Runtime Support**, that is the project targets [.NET](/dotnet/standard/glossary#net).
+
+This property specifies the .NET 5+ Target Framework Moniker this project targets, for example `net6.0-windows` or `net7.0-windows8.0`.
 
 ### Enable Managed Incremental Build
 
@@ -116,4 +127,11 @@ For managed projects, this option enables detection of external visibility when 
 
 This option sets a `ManagedAssembly` build property that enables building only some files in the project as managed code. You must set **Enable CLR Support for Individual Files** to **Yes** if some but not all of your project files are built as managed code. This property is only available in projects that use the v143 or later toolset in Visual Studio 2022 and later versions.
 
+### .NET Target Windows Version
+
+This property only applies when the **Common Language Runtime support** property is set to **.NET Runtime Support**, that is the project targets [.NET](/dotnet/standard/glossary#net).
+
+This property specifies the minimum Windows version that the project supports. This value is used by NuGet to determine the compatibility of projects and NuGet package dependencies. If a project A depends on project B, project A's .NET target Windows version must be greater or equal to project B's.
+
 ::: moniker-end
+

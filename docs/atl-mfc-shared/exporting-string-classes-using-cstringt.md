@@ -27,7 +27,7 @@ To resolve this problem, do the following:
 
 Export `CStringA` and `CStringW` (and the necessary base classes) from MFC90.DLL. Projects that include MFC will always use the MFC DLL exported `CStringA` and `CStringW`, as in previous MFC implementations.
 
-Then create a exportable derived class using the `CStringT` template, as `CStringT_Exported` is below, for example:
+Then create an exportable derived class using the `CStringT` template, as `CStringT_Exported` is below, for example:
 
 [!code-cpp[NVC_MFC_DLL#7](../atl-mfc-shared/codesnippet/cpp/exporting-string-classes-using-cstringt_2.cpp)]
 

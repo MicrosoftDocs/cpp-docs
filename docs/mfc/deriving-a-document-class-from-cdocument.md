@@ -4,6 +4,7 @@ title: "Deriving a Document Class from CDocument"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CDocument class [MFC], deriving from", "classes [MFC], deriving from CDocument", "document objects [MFC], derived", "derived classes [MFC], functions often overridden", "document classes [MFC], functions often overridden"]
 ms.assetid: e6a198e0-9799-43c0-83c5-04174d8b532c
+ms.topic: concept-article
 ---
 # Deriving a Document Class from CDocument
 

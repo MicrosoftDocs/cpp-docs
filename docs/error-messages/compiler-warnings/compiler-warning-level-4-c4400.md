@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4400"
-title: "Compiler Warning (level 4) C4400"
-ms.date: "11/04/2016"
+title: "Compiler warning (level 4, error) C4400"
+description: "Learn more about: Compiler Warning (level 4, error) C4400"
+ms.date: 1/22/2025
 f1_keywords: ["C4400"]
 helpviewer_keywords: ["C4400"]
-ms.assetid: f135fe98-4f92-4e07-9d71-2621b36ee755
 ---
-# Compiler Warning (level 4) C4400
+# Compiler warning (level 4, error) C4400
 
-'type' : const/volatile qualifiers on this type are not supported
+> '*type*': `const`/`volatile` qualifiers on this type are not supported
 
-The [const](../../cpp/const-cpp.md)and [volatile](../../cpp/volatile-cpp.md)qualifiers will not work with variables of common language runtime types.
+## Remarks
+
+The [`const`](../../cpp/const-cpp.md) and [`volatile`](../../cpp/volatile-cpp.md) qualifiers don't work with common language runtime typed variables.
 
 ## Example
 
-The following sample generates C4400.
+The following example generates C4400.
 
 ```cpp
 // C4400.cpp

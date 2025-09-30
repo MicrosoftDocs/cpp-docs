@@ -4,6 +4,7 @@ title: "Using the Dialog Editor to Add Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows common controls [MFC], adding", "dialog box controls [MFC], adding to dialog boxes", "controls [MFC], adding to dialog boxes", "Dialog editor, creating controls", "common controls [MFC], adding"]
 ms.assetid: d3f9f994-7e54-4656-a545-42c204557c36
+ms.topic: concept-article
 ---
 # Using the Dialog Editor to Add Controls
 

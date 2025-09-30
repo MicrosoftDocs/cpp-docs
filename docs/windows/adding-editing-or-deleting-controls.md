@@ -1,10 +1,10 @@
 ---
-description: "Learn more about: How To: Add, Edit, or Delete Controls (C++)"
 title: "How To: Add, Edit, or Delete Controls (C++)"
+description: "Learn more about: How To: Add, Edit, or Delete Controls (C++)"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.controls.activex", "vc.editors.dialog.insertActiveXControls"]
 helpviewer_keywords: ["Dialog Editor [C++], creating controls", "dialog boxes [C++], adding controls to", "Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls in dialog boxes", "custom controls [C++], dialog boxes", "controls [C++], standard", "Dialog Editor [C++], creating controls", "controls [C++], adding to dialog boxes", "controls [C++], adding multiple", "dialog box controls [C++], size", "controls [C++], sizing", "dialog boxes [C++], adding ActiveX controls", "ActiveX controls [C++], adding to dialog boxes", "Insert ActiveX Control dialog box [C++]", "controls [C++], editing properties", "ActiveX controls [C++], properties", "controls [C++], undoing changes", "controls [C++], editing properties", "dialog box controls [C++], editing properties", "dialog box controls [C++], deleting", "controls [C++], deleting", "Dialog Editor [C++], default control events", "controls [C++], default control events", "events [C++], controls", "dialog box controls [C++], events", "member variables, defining for controls", "variables, dialog box control member variables", "controls [C++], member variables", "Dialog Editor [C++], defining member variables for controls", "controls [C++], troubleshooting", "Dialog Editor [C++], troubleshooting", "dialog boxes [C++], troubleshooting", "InitCommonControls", "RichEdit 1.0 control", "rich edit controls [C++], RichEdit 1.0"]
-ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
+ms.topic: how-to
 ---
 # How To: Add, Edit, or Delete Controls (C++)
 
@@ -204,17 +204,17 @@ Win32
 
 ## See also
 
-[Manage Dialog Box Controls](controls-in-dialog-boxes.md)<br/>
-[How To: Layout Controls](arrangement-of-controls-on-dialog-boxes.md)<br/>
+[Manage Dialog Box Controls](controls-in-dialog-boxes.md)\
+[How To: Layout Controls](arrangement-of-controls-on-dialog-boxes.md)\
 [How to: Define Control Access and Values](defining-mnemonics-access-keys.md)
 
 <!-- excluded links
-[Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)<br/>
-[Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Adding a Class](../ide/adding-a-class-visual-cpp.md)<br/>
-[Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)<br/>
-[Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)<br/>
-[Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
-[MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)
-[Declaring a Variable Based on Your New Control Class](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)<br/>
+[Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)\
+[Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)\
+[Adding a Class](../ide/adding-a-class-visual-cpp.md)\
+[Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)\
+[Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)\
+[Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)\
+[MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)\
+[Declaring a Variable Based on Your New Control Class](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)
 -->

@@ -5,6 +5,7 @@ ms.custom: "get-started-article"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["partially trusted applications [C++]", "mixed assemblies [C++], partially trusted applications", "msvcm90[d].dll", "interoperability [C++], partially trusted applications", "interop [C++], partially trusted applications", "/clr compiler option [C++], partially trusted applications"]
 ms.assetid: 4760cd0c-4227-4f23-a7fb-d25b51bf246e
+ms.topic: how-to
 ---
 # How to: Create a Partially Trusted Application by Removing Dependency on the CRT Library DLL
 

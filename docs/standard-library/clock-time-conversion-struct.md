@@ -1,6 +1,6 @@
 ---
-description: "Learn more about clock_conversion trait"
 title: "clock_conversion struct"
+description: "Learn more about clock_conversion trait"
 ms.date: 10/12/2021
 f1_keywords: ["chrono/std::chrono::clock_time_conversion"]
 helpviewer_keywords: ["std::chrono [C++], clock_time_conversion"]
@@ -44,7 +44,7 @@ The traits provide the following conversions:
 2-4\) Identity conversions. Returns the same clock you pass in.\
 5-6\) Converting between `sys_time` and `utc_time` calls `utc_clock::to_sys` or `utc_clock::from_sys` depending on the direction of the conversion.\
 7-8\) Converting between `sys_time` and the specified clock, when the specified clock supports `to_sys` and `from_sys`, results in a call to `Clock::to_sys` or `Clock::from_sys`, depending on the direction of the conversion.\
-9-10\) Converting between `utc_time`and the specified clock, when the specified clock supports `from_utc` and `to_sys`, results in a call to `Clock::to_utc` or `Clock::from_utc`, depending on the direction of the conversion.
+9-10\) Converting between `utc_time` and the specified clock, when the specified clock supports `from_utc` and `to_sys`, results in a call to `Clock::to_utc` or `Clock::from_utc`, depending on the direction of the conversion.
 
 ## Members
 
@@ -94,14 +94,14 @@ utc_time<Duration> operator()(const sys_time<Duration>& t) const;
 
 ### Parameters
 
-**`t`**
+*`t`*\
 The `time_point` to convert.
 
 ### Return value
 
 1-3\) Identity conversions. No conversion. Returns `t` without any changes.\
 4\) Returns `utc_clock::to_sys(t)`.\
-5\) Returns` utc_clock::from_sys(t)`.
+5\) Returns `utc_clock::from_sys(t)`.
 
 ### Deduction guides
 

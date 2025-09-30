@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options Listed by Category"
 description: "Reference listing by category of the Microsoft C/C++ compiler command-line options."
-ms.date: 06/02/2023
+ms.date: 2/5/2025
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed by category
@@ -12,6 +12,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 | Option | Purpose |
 |--|--|
+| [`/dynamicdeopt`](dynamic-deopt.md) | Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) to debug optimized code as if it had been compiled deoptimized. |
 | [`/favor:<blend|AMD64|INTEL64|ATOM>`](favor-optimize-for-architecture-specifics.md) | Produces code that is optimized for a specified architecture, or for a range of architectures. |
 | [`/O1`](o1-o2-minimize-size-maximize-speed.md) | Creates small code. |
 | [`/O2`](o1-o2-minimize-size-maximize-speed.md) | Creates fast code. |
@@ -28,7 +29,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 | Option | Purpose |
 |--|--|
-| [`/arch:<IA32|SSE|SSE2|AVX|AVX2|AVX512>`](arch-x86.md) | Minimum CPU architecture requirements. IA32, SSE, and SSE2 are x86 only. |
+| [`/arch`](arch-minimum-cpu-architecture.md) | Minimum CPU architecture requirements. |
 | [`/clr`](clr-common-language-runtime-compilation.md) | Produces an output file to run on the common language runtime. |
 | [`/clr:implicitKeepAlive-`](clr-common-language-runtime-compilation.md) | Turn off implicit emission of `System::GC::KeepAlive(this)`. |
 | [`/clr:initialAppDomain`](clr-common-language-runtime-compilation.md) | Enable initial AppDomain behavior of Visual C++ 2002. |
@@ -42,6 +43,8 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/EHc`](eh-exception-handling-model.md) | `extern "C"` defaults to `nothrow`. |
 | [`/EHr`](eh-exception-handling-model.md) | Always generate `noexcept` runtime termination checks. |
 | [`/EHs`](eh-exception-handling-model.md) | Enable C++ exception handling (no SEH exceptions). |
+| [`/feature`](feature-arm64.md) | Enable architecture features.<sup>17.10</sup> |
+| [`/forceInterlockedFunctions`](force-interlocked-functions.md) | Dynamically selects between Armv8.0 load, store exclusive instructions or Armv8.1 LSE atomic instructions based on target CPU.<sup>17.14</sup> |
 | [`/fp:contract`](fp-specify-floating-point-behavior.md) | Consider floating-point contractions when generating code. |
 | [`/fp:except[-]`](fp-specify-floating-point-behavior.md) | Consider floating-point exceptions when generating code. |
 | [`/fp:fast`](fp-specify-floating-point-behavior.md) | "fast" floating-point model; results are less predictable. |
@@ -91,6 +94,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/RTCc`](rtc-run-time-error-checks.md) | Convert to smaller type checks at run-time. |
 | [`/RTCs`](rtc-run-time-error-checks.md) | Enable stack frame runtime checks. |
 | [`/RTCu`](rtc-run-time-error-checks.md) | Enables uninitialized local usage checks. |
+| [`/vlen`](vlen.md) | Specifies vector length. |
 | [`/volatile:iso`](volatile-volatile-keyword-interpretation.md) | Acquire/release semantics not guaranteed on volatile accesses. |
 | [`/volatile:ms`](volatile-volatile-keyword-interpretation.md) | Acquire/release semantics guaranteed on volatile accesses. |
 
@@ -154,7 +158,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/await:strict`](await-enable-coroutine-support.md) | Enable standard C++20 coroutine support with earlier language versions. |
 | [`/constexpr:backtrace<N>`](constexpr-control-constexpr-evaluation.md) | Show N `constexpr` evaluations in diagnostics (default: 10). |
 | [`/constexpr:depth<N>`](constexpr-control-constexpr-evaluation.md) | Recursion depth limit for `constexpr` evaluation (default: 512). |
-| [`/constexpr:steps<N>`](constexpr-control-constexpr-evaluation.md) | Terminate `constexpr` evaluation after N steps (default: 100000) |
+| [`/constexpr:steps<N>`](constexpr-control-constexpr-evaluation.md) | Terminate `constexpr` evaluation after N steps (default: 100000). |
 | [`/openmp`](openmp-enable-openmp-2-0-support.md) | Enables [`#pragma omp`](../../preprocessor/omp.md) in source code. |
 | [`/openmp:experimental`](openmp-enable-openmp-2-0-support.md) | Enable OpenMP 2.0 language extensions plus select OpenMP 3.0+ language extensions. |
 | [`/openmp:llvm`](openmp-enable-openmp-2-0-support.md) | OpenMP language extensions using LLVM runtime. |
@@ -165,6 +169,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/std:c++latest`](std-specify-language-standard-version.md) | The latest draft C++ standard preview features. |
 | [`/std:c11`](std-specify-language-standard-version.md) | C11 standard ISO/IEC 9899:2011. |
 | [`/std:c17`](std-specify-language-standard-version.md) | C17 standard ISO/IEC 9899:2018. |
+| [`/std:clatest`](std-specify-language-standard-version.md) | The latest draft C standard preview features. |
 | [`/vd{0|1|2}`](vd-disable-construction-displacements.md) | Suppresses or enables hidden `vtordisp` class members. |
 | [`/vmb`](vmb-vmg-representation-method.md) | Uses best base for pointers to members. |
 | [`/vmg`](vmb-vmg-representation-method.md) | Uses full generality for pointers to members. |
@@ -178,12 +183,12 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/Zc:alignedNew[-]`](zc-alignednew.md) | Enable C++17 over-aligned dynamic allocation (on by default in C++17). |
 | [`/Zc:auto[-]`](zc-auto-deduce-variable-type.md) | Enforce the new Standard C++ meaning for **`auto`** (on by default). |
 | [`/Zc:char8_t[-]`](zc-char8-t.md) | Enable or disable C++20 native `u8` literal support as `const char8_t` (off by default, except under **`/std:c++20`**). |
-| [`/Zc:enumTypes[-]`](zc-enumtypes.md) | Enable Standard C++ rules for inferred `enum` base types (Off b y default, not implied by **`/permissive-`**). |
+| [`/Zc:enumTypes[-]`](zc-enumtypes.md) | Enable Standard C++ rules for inferred `enum` base types (Off by default, not implied by **`/permissive-`**). |
 | [`/Zc:externC[-]`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions (implied by **`/permissive-`**). |
 | [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables (off by default). |
 | [`/Zc:forScope[-]`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |
 | [`/Zc:gotoScope`](zc-gotoscope.md) | Enforce Standard C++ **`goto`** rules around local variable initialization (implied by **`/permissive-`**). |
-| [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by **`/permissive-`**) |
+| [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by **`/permissive-`**). |
 | [`/Zc:implicitNoexcept[-]`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions (on by default). |
 | [`/Zc:inline[-]`](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced functions or data if they're COMDAT or have internal linkage only (off by default). |
 | [`/Zc:lambda[-]`](zc-lambda.md) | Enable new lambda processor for conformance-mode syntactic checks in generic lambdas. |
@@ -205,7 +210,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for 0-size arrays of objects (on by default). |
 | [`/Ze`](za-ze-disable-language-extensions.md) | Deprecated. Enables C89 language extensions. |
 | [`/Zf`](zf.md) | Improves PDB generation time in parallel builds. |
-| [`/ZH:[MD5|SHA1|SHA_256]`](zh.md) | Specifies MD5, SHA-1, or SHA-256 for checksums in debug info. |
+| [`/ZH`:[MD5|SHA1|SHA_256]](zh.md) | Specifies MD5, SHA-1, or SHA-256 for checksums in debug info. |
 | [`/ZI`](z7-zi-zi-debug-information-format.md) | Includes debug information in a program database compatible with Edit and Continue. (x86 only) |
 | [`/Zi`](z7-zi-zi-debug-information-format.md) | Generates complete debugging information. |
 | [`/Zl`](zl-omit-default-library-name.md) | Removes the default library name from the *`.obj`* file. |
@@ -260,7 +265,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/utf-8`](utf-8-set-source-and-executable-character-sets-to-utf-8.md) | Set source and execution character sets to UTF-8. |
 | [`/V`](v-version-number.md) | Deprecated. Sets the version string. |
 | [`/validate-charset`](validate-charset-validate-for-compatible-characters.md) | Validate UTF-8 files for only compatible characters. |
-| `/volatileMetadata` | Generate metadata on volatile memory accesses. |
+| [`/volatileMetadata`](volatile.md) | Generate metadata on volatile memory accesses. |
 | [`/Yc`](yc-create-precompiled-header-file.md) | Create *`.PCH`* file. |
 | [`/Yd`](yd-place-debug-information-in-object-file.md) | Deprecated. Places complete debugging information in all object files. Use [`/Zi`](z7-zi-zi-debug-information-format.md) instead. |
 | [`/Yl`](yl-inject-pch-reference-for-debug-library.md) | Injects a PCH reference when creating a debug library. |
@@ -299,6 +304,7 @@ Experimental options may only be supported by certain versions of the compiler. 
 
 | Option | Purpose |
 |--|--|
+| [`/experimental:log`](experimental-log.md) | Enables experimental structured SARIF output. |
 | [`/experimental:module`](experimental-module.md) | Enables experimental module support. |
 
 ## Deprecated and removed compiler options
@@ -307,7 +313,7 @@ Experimental options may only be supported by certain versions of the compiler. 
 |--|--|
 | [`/clr:noAssembly`](clr-common-language-runtime-compilation.md) | Deprecated. Use [`/LN` (Create MSIL Module)](ln-create-msil-module.md) instead. |
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
-| [`/experimental:preprocessor`](experimental-preprocessor.md) | Deprecated. Enables experimental conforming preprocessor support. Use [`/Zc:preprocessor`](zc-preprocessor.md) |
+| [`/experimental:preprocessor`](experimental-preprocessor.md) | Deprecated. Enables experimental conforming preprocessor support. Use [`/Zc:preprocessor`](zc-preprocessor.md) instead. |
 | [`/Fr`](fr-fr-create-dot-sbr-file.md) | Deprecated. Creates a browse information file without local variables. |
 | [`/Ge`](ge-enable-stack-probes.md) | Deprecated. Activates stack probes. On by default. |
 | [`/Gm`](gm-enable-minimal-rebuild.md) | Deprecated. Enables minimal rebuild. |
@@ -322,6 +328,9 @@ Experimental options may only be supported by certain versions of the compiler. 
 | [`/Zc:forScope-`](zc-forscope-force-conformance-in-for-loop-scope.md) | Deprecated. Disables conformance in for loop scope. |
 | [`/Ze`](za-ze-disable-language-extensions.md) | Deprecated. Enables language extensions. |
 | [`/Zg`](zg-generate-function-prototypes.md) | Removed in Visual Studio 2015. Generates function prototypes. |
+
+<sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.\
+<sup>17.14</sup> This option is available starting in Visual Studio 2022 version 17.14.
 
 ## See also
 

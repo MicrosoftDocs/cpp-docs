@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CWindowDC Class"
 title: "CWindowDC Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CWindowDC Class"
+ms.date: 11/04/2016
 f1_keywords: ["CWindowDC", "AFXWIN/CWindowDC", "AFXWIN/CWindowDC::CWindowDC", "AFXWIN/CWindowDC::m_hWnd"]
 helpviewer_keywords: ["CWindowDC [MFC], CWindowDC", "CWindowDC [MFC], m_hWnd"]
-ms.assetid: 876a3641-4cde-471c-b0d1-fe58b32af79c
 ---
 # CWindowDC Class
 
@@ -32,7 +31,7 @@ class CWindowDC : public CDC
 
 ## Remarks
 
-Calls the Windows function [GetWindowDC](/windows/win32/api/winuser/nf-winuser-getwindowdc)at construction time and [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) at destruction time. This means that a `CWindowDC` object accesses the entire screen area of a [CWnd](../../mfc/reference/cwnd-class.md) (both client and nonclient areas).
+Calls the Windows function [GetWindowDC](/windows/win32/api/winuser/nf-winuser-getwindowdc) at construction time and [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) at destruction time. This means that a `CWindowDC` object accesses the entire screen area of a [CWnd](../../mfc/reference/cwnd-class.md) (both client and nonclient areas).
 
 For more information on using `CWindowDC`, see [Device Contexts](../../mfc/device-contexts.md).
 

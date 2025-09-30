@@ -2,8 +2,7 @@
 description: "Learn more about: C++ type system"
 title: "C++ type system"
 ms.date: 11/04/2022
-ms.topic: "conceptual"
-ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
+ms.topic: "concept-article"
 ---
 # C++ type system
 
@@ -56,7 +55,7 @@ The compiler recognizes these built-in types, and it has built-in rules that gov
 
 The following illustration shows the relative sizes of the built-in types in the Microsoft C++ implementation:
 
-![Diagram of the relative size in bytes of several built in types.](../cpp/media/built-intypesizes.png)
+:::image type="content" source="../cpp/media/built-intypesizes.png" alt-text="Diagram showing the relative sizes in bytes of C++ built-in types: bool and char (1 byte), short (2 bytes), int, long, and float (4 bytes), double and long long (8 bytes)":::
 
 The following table lists the most frequently used fundamental types, and their sizes in the Microsoft C++ implementation:
 

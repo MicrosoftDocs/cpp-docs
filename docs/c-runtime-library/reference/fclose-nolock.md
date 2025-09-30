@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _fclose_nolock"
 title: "_fclose_nolock"
+description: "Learn more about: _fclose_nolock"
 ms.date: "4/2/2020"
 api_name: ["_fclose_nolock", "_o__fclose_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -8,11 +8,10 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fclose_nolock", "_fclose_nolock"]
 helpviewer_keywords: ["streams, closing", "fclose_nolock function", "_fclose_nolock function"]
-ms.assetid: b4af4392-5fc8-49bb-9fe2-ca7293d3ce04
 ---
 # `_fclose_nolock`
 
-Closes a stream without thread-locking.
+Closes a stream without locking.
 
 ## Syntax
 

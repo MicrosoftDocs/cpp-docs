@@ -6,6 +6,14 @@ items:
 - name: "Tutorials"
   expanded: true
   items:
+    - name: "Troubleshoot function inlining impact on build time"
+      href: ../build-insights/tutorials/build-insights-function-view.md
+    - name: "Troubleshoot template instantiation impact on build time"
+      href: ../build-insights/tutorials/build-insights-template-view.md
+    - name: "Troubleshoot header file impact on build time"
+      href: ../build-insights/tutorials/build-insights-included-files-view.md
+    - name: "Build Insights tips and tricks"
+      href: ../build-insights/tutorials/build-insights-tips.md
     - name: "vcperf and Windows Performance Analyzer"
       href: ../build-insights/tutorials/vcperf-and-wpa.md
     - name: "Windows Performance Analyzer basics"

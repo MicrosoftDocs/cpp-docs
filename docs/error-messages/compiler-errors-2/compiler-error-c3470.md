@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3470"
 title: "Compiler Error C3470"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3470"
+ms.date: 11/04/2016
 f1_keywords: ["C3470"]
 helpviewer_keywords: ["C3470"]
-ms.assetid: 170c7a9d-214d-41b1-8f15-d4a4fc38aaa5
 ---
 # Compiler Error C3470
 
-'type' : a class cannot have both an indexer (default indexed property) and an operator[]
+> 'type' : a class cannot have both an indexer (default indexed property) and an operator[]
+
+## Remarks
 
 A type cannot define both a default indexer and an operator[].
 
 ## Example
 
-The following sample generates C3470
+The following example generates C3470
 
 ```cpp
 // C3470.cpp

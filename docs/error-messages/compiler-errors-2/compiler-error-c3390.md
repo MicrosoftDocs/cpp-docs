@@ -4,21 +4,20 @@ description: "Microsoft C++ compiler error C3390, its causes and how to resolve 
 ms.date: 09/26/2020
 f1_keywords: ["C3390"]
 helpviewer_keywords: ["C3390"]
-ms.assetid: 84800a87-c8e6-45aa-82ae-02f816dc8d97
 ---
 # Compiler Error C3390
 
 > '*type_arg*' : invalid type argument for generic parameter '*param*' of generic '*generic_type*', must be a reference type
 
-A generic type was instantiated incorrectly. Check the type definition.
-
 ## Remarks
+
+A generic type was instantiated incorrectly. Check the type definition.
 
 For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 
-The first sample uses C# to create a component that contains a generic type. This type has certain constraints that aren't supported when authoring generic types in C++/CLI. For more information, see [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).
+The first example uses C# to create a component that contains a generic type. This type has certain constraints that aren't supported when authoring generic types in C++/CLI. For more information, see [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).
 
 ```csharp
 // C3390.cs
@@ -30,7 +29,7 @@ where V : struct
 where N : new() {}
 ```
 
-When the C3390.dll component is available, the following sample generates C3390.
+When the C3390.dll component is available, the following example generates C3390.
 
 ```cpp
 // C3390_b.cpp

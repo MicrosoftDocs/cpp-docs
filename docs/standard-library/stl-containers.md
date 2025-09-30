@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: C++ Standard Library Containers"
 title: "C++ Standard Library Containers"
-ms.date: "11/04/2016"
+description: "Learn more about: C++ Standard Library Containers"
+ms.date: 11/04/2016
 helpviewer_keywords: ["C++ Standard Library, class template containers", "containers, C++ Standard Library"]
-ms.assetid: 8e915ca1-19ba-4f0d-93c8-e2c3bfd638eb
 ---
 # C++ Standard Library Containers
 
@@ -39,11 +38,11 @@ Both `map` and `set` only allow one instance of a key or element to be inserted 
 
 Ordered maps and sets support bi-directional iterators, and their unordered counterparts support forward iterators. For more information, see [Iterators](../standard-library/iterators.md).
 
-### Heterogeneous Lookup in Associative Containers (C++14)
+### <a name="heterogeneous-lookup-in-associative-containers"></a> Heterogeneous Lookup in Associative Containers (C++14)
 
 The ordered associative containers (map, multimap, set, and multiset) now support heterogeneous lookup, which means that you're no longer required to pass the exact same object type as the key or element in member functions such as `find()` and `lower_bound()`. Instead, you can pass any type for which an overloaded `operator<` is defined that enables comparison to the key type.
 
-Heterogenous lookup is enabled on an opt-in basis when you specify the `std::less<>` or `std::greater<>` "diamond functor" comparator when declaring the container variable, as shown here:
+Heterogeneous lookup is enabled on an opt-in basis when you specify the `std::less<>` or `std::greater<>` "diamond functor" comparator when declaring the container variable, as shown here:
 
 ```cpp
 std::set<BigObject, std::less<>> myNewSet;

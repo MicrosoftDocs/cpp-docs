@@ -106,7 +106,6 @@ void wprint_to_console(wchar_t* wbuffer)
 
 int main()
 {
-
    // String to print at console.
    // Notice the \r (return) character.
    char* buffer = "Hello world (courtesy of _cputs)!\r\n";

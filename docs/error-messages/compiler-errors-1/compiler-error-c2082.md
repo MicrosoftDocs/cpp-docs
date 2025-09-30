@@ -1,23 +1,29 @@
 ---
-description: "Learn more about: Compiler Error C2082"
 title: "Compiler Error C2082"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2082"
+ms.date: 11/04/2016
 f1_keywords: ["C2082"]
 helpviewer_keywords: ["C2082"]
-ms.assetid: 87a6d442-157c-46e8-9bff-8388f8338ae0
 ---
 # Compiler Error C2082
 
-redefinition of formal parameter 'identifier'
+> redefinition of formal parameter 'identifier'
+
+## Remarks
 
 A formal parameter to a function is redeclared within the function body. To resolve the error, remove the redefinition.
 
-The following sample generates C2082:
+## Example
+
+The following example generates C2082:
 
 ```cpp
 // C2082.cpp
-void func(int i) {
-   int i;   // C2082
-   int ii;   // OK
+void func(int num1) {
+   int num1;   // C2082
+   int num2;   // OK
+
+   auto lambda1 = [](int num1){ int num1; };   // C2082
+   auto lambda2 = [](int num1){ int num2; };   // OK
 }
 ```

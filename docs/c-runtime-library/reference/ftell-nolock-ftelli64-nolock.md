@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _ftell_nolock, _ftelli64_nolock"
 title: "_ftell_nolock, _ftelli64_nolock"
+description: "Learn more about: _ftell_nolock, _ftelli64_nolock"
 ms.date: "4/2/2020"
 api_name: ["_ftelli64_nolock", "_ftell_nolock", "_o__ftell_nolock", "_o__ftelli64_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -8,11 +8,10 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftelli64_nolock", "ftelli64_nolock", "ftell_nolock", "_ftell_nolock"]
 helpviewer_keywords: ["ftelli64_nolock function", "_ftelli64_nolock function", "_ftell_nolock function", "ftell_nolock function", "file pointers [C++], getting current position"]
-ms.assetid: 84e68b0a-32f8-4c4a-90ad-3f2387685ede
 ---
 # `_ftell_nolock`, `_ftelli64_nolock`
 
-Gets the current position of a file pointer, without locking the thread.
+Gets the current position of a file pointer without locking.
 
 ## Syntax
 

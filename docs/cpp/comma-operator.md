@@ -6,7 +6,7 @@ f1_keywords: ["%2C"]
 helpviewer_keywords: ["comma operator"]
 ms.assetid: 38e0238e-19da-42ba-ae62-277bfdab6090
 ---
-# Comma Operator: ,
+# Comma Operator: `,`
 
 Allows grouping two statements where one is expected.
 
@@ -55,6 +55,6 @@ int main () {
 
 ## See also
 
-[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)\
+[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [Sequential-Evaluation Operator](../c-language/sequential-evaluation-operator.md)

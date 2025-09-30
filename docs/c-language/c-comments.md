@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: C Comments"
 title: "C Comments"
-ms.date: "06/25/2018"
+description: "Learn more about: C Comments"
+ms.date: 06/25/2018
 helpviewer_keywords: ["code comments, C code", "comments, documenting code", "comments, C code", "/* */ comment delimiters", "comments"]
-ms.assetid: 0f5f2825-e673-49e7-8669-94e2f5294989
 ---
 # C Comments
 
@@ -57,7 +56,7 @@ The Microsoft compiler also supports single-line comments preceded by two forwar
 // This is a valid comment
 ```
 
-Comments beginning with two forward slashes (**`//`**) are terminated by the next newline character that isn't preceded by an escape character. In the next example, the newline character is preceded by a backslash (**`\`**), creating an "escape sequence." This escape sequence causes the compiler to treat the next line as part of the previous line. (For more information, see [Escape Sequences](../c-language/escape-sequences.md).)
+Comments beginning with two forward slashes (**`//`**) are terminated by the next newline character that isn't preceded by an escape character. In the next example, the newline character is preceded by a backslash (**`\`**), creating an "escape sequence." This escape sequence causes the compiler to treat the next line as part of the previous line. For more information, see [Escape Sequences](../c-language/escape-sequences.md).
 
 ```C
 // my comment \

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2888"
 title: "Compiler Error C2888"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2888"
+ms.date: 11/04/2016
 f1_keywords: ["C2888"]
 helpviewer_keywords: ["C2888"]
-ms.assetid: 244f593e-ff25-4dad-b31f-84dafa3bc84a
 ---
 # Compiler Error C2888
 
-'identifier' : symbol cannot be defined within namespace 'namespace'
+> 'identifier' : symbol cannot be defined within namespace 'namespace'
+
+## Remarks
 
 A symbol belonging to namespace A must be defined in a namespace that encloses A.
 
-The following sample generates C2888:
+## Example
+
+The following example generates C2888:
 
 ```cpp
 // C2888.cpp
@@ -23,7 +26,7 @@ namespace M {
       void f2();
    }
 
-   void N::f1() {}   // OK: namspace M encloses N
+   void N::f1() {}   // OK: namespace M encloses N
 }
 
 namespace O {

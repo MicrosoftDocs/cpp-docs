@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::AccessDeniedException Class"
 title: "Platform::AccessDeniedException Class"
+description: "Learn more about: Platform::AccessDeniedException Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::AccessDeniedException", "VCCORLIB/Platform::AccessDeniedException::AccessDeniedException"]
 helpviewer_keywords: ["Platform::AccessDeniedException"]
-ms.assetid: 6ae2155b-7b16-4587-8d2d-da05eab4c7e9
 ---
 # Platform::AccessDeniedException Class
 
@@ -14,7 +13,7 @@ Thrown when access to a resource or feature is denied.
 ## Syntax
 
 ```cpp
-public ref class AccessDeniedException : COMException,    IException,    IPrintable,   IEquatable
+public ref class AccessDeniedException : COMException, IException, IPrintable, IEquatable
 ```
 
 ### Remarks

@@ -38,7 +38,7 @@ Along with the inherited members from its [SimpleEvent](simple-event.md) base cl
 
 ### Functions
 
-[Name](#name)
+[Name](#name)\
 [Size](#size)
 
 ## <a name="force-inlinee"></a> ForceInlinee

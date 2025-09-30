@@ -1,25 +1,13 @@
 ---
-description: "Learn more about: <string> functions"
 title: "<string> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <string> functions"
+ms.date: 11/04/2016
 f1_keywords: ["string/std::getline", "string/std::stod", "string/std::stof", "string/std::stoi", "string/std::stol", "string/std::stold", "string/std::stoll", "string/std::stoul", "string/std::stoull", "string/std::swap", "string/std::to_string", "string/std::to_wstring"]
-ms.assetid: 1a4ffd11-dce5-4cc6-a043-b95de034c7c4
 helpviewer_keywords: ["std::getline [C++]", "std::stod [C++]", "std::stof [C++]", "std::stoi [C++]", "std::stol [C++]", "std::stold [C++]", "std::stoll [C++]", "std::stoul [C++]", "std::stoull [C++]", "std::swap [C++]", "std::to_string [C++]", "std::to_wstring [C++]"]
 ---
 # `<string>` functions
 
-[`getline`](#getline)\
-[`stod`](#stod)\
-[`stof`](#stof)\
-[`stoi`](#stoi)\
-[`stol`](#stol)\
-[`stold`](#stold)\
-[`stoll`](#stoll)\
-[`stoul`](#stoul)\
-[`stoull`](#stoull)\
-[`swap`](#swap)\
-[`to_string`](#to_string)\
-[`to_wstring`](#to_wstring)
+The `<string>` header provides the following functions:
 
 ## <a name="getline"></a> `getline`
 
@@ -144,8 +132,7 @@ double stod(
 
 double stod(
     const wstring& str,
-    size_t* idx = 0
-;
+    size_t* idx = 0);
 ```
 
 ### Parameters
@@ -162,7 +149,7 @@ The **`double`** value.
 
 ### Remarks
 
-The function converts the sequence of elements in *`str`* to a value of type **`double`** as if by calling `strtod( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *`idx`* isn't a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns the value.
+The function converts the sequence of elements in *`str`* to a value of type **`double`** as if by calling `strtod( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *`idx`* isn't a null pointer, the function stores `*_Eptr - str.c_str()` in `*idx` and returns the value.
 
 ## <a name="stof"></a> `stof`
 
@@ -192,7 +179,7 @@ The **`float`** value.
 
 ### Remarks
 
-The function converts the sequence of elements in *`str`* to a value of type **`float`** as if by calling `strtof( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *`idx`* isn't a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns the value.
+The function converts the sequence of elements in *`str`* to a value of type **`float`** as if by calling `strtof( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *`idx`* isn't a null pointer, the function stores `*_Eptr - str.c_str()` in `*idx` and returns the value.
 
 ## <a name="stoi"></a> `stoi`
 
@@ -266,7 +253,7 @@ The long-integer value.
 
 ### Remarks
 
-The function converts the sequence of elements in *str* to a value of type **`long`** as if by calling `strtol( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *`idx`* isn't a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns the value.
+The function converts the sequence of elements in *str* to a value of type **`long`** as if by calling `strtol( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *`idx`* isn't a null pointer, the function stores `*_Eptr - str.c_str()` in `*idx` and returns the value.
 
 ## <a name="stold"></a> `stold`
 
@@ -296,7 +283,7 @@ The **`long double`** value.
 
 ### Remarks
 
-The function converts the sequence of elements in *str* to a value of type **`long double`** as if by calling `strtold( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *`idx`* isn't a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns the value.
+The function converts the sequence of elements in *str* to a value of type **`long double`** as if by calling `strtold( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *`idx`* isn't a null pointer, the function stores `*_Eptr - str.c_str()` in `*idx` and returns the value.
 
 ## <a name="stoll"></a> `stoll`
 
@@ -331,7 +318,7 @@ The **`long long`** value.
 
 ### Remarks
 
-The function converts the sequence of elements in *str* to a value of type **`long long`** as if by calling `strtoll( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *idx* isn't a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns the value.
+The function converts the sequence of elements in *str* to a value of type **`long long`** as if by calling `strtoll( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *idx* isn't a null pointer, the function stores `*_Eptr - str.c_str()` in `*idx` and returns the value.
 
 ## <a name="stoul"></a> `stoul`
 
@@ -366,7 +353,7 @@ The unsigned long-integer value.
 
 ### Remarks
 
-The function converts the sequence of elements in *str* to a value of type **`unsigned long`** as if by calling `strtoul( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *idx* isn't a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns the value.
+The function converts the sequence of elements in *str* to a value of type **`unsigned long`** as if by calling `strtoul( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *idx* isn't a null pointer, the function stores `*_Eptr - str.c_str()` in `*idx` and returns the value.
 
 ## <a name="stoull"></a> `stoull`
 
@@ -401,7 +388,7 @@ The **`unsigned long long`** value.
 
 ### Remarks
 
-The function converts the sequence of elements in *str* to a value of type **`unsigned long long`** as if by calling `strtoull( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *`idx`* isn't a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns the value.
+The function converts the sequence of elements in *str* to a value of type **`unsigned long long`** as if by calling `strtoull( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If `str.c_str() == *_Eptr`, it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if *`idx`* isn't a null pointer, the function stores `*_Eptr - str.c_str()` in `*idx` and returns the value.
 
 ## <a name="swap"></a> `swap`
 

@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2664"
 title: "Compiler Error C2664"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2664"
+ms.date: 11/04/2016
 f1_keywords: ["C2664"]
 helpviewer_keywords: ["C2664"]
-ms.assetid: 3595d66e-cf87-4fda-a896-c0cd81f95db4
 ---
 # Compiler Error C2664
 
-'function' : cannot convert argument n from 'type1' to 'type2'
+> 'function' : cannot convert argument n from 'type1' to 'type2'
+
+## Remarks
 
 This parameter conversion problem might happen if an instance of a class is created and an implicit conversion is attempted on a constructor marked with the **`explicit`** keyword. For more information about explicit conversions, see [User-Defined Type Conversions](../../cpp/user-defined-type-conversions-cpp.md).
 
@@ -28,19 +29,19 @@ For more information, see [How to: Convert System::String to wchar_t* or char\*]
 
 ## Examples
 
-The following sample generates C2664 and shows how to fix it.
+The following example generates C2664 and shows how to fix it.
 
 ```cpp
 // C2664.cpp
 // C2664
 struct A {
-   void f(int i) {};
+   void f(int i) {}
 };
 
 struct B : public A {
    // To fix, uncomment the following line.
    // using A::f;
-   void f(A a) {};
+   void f(A a) {}
 };
 
 int main() {
@@ -50,7 +51,7 @@ int main() {
 }
 ```
 
-This sample also generates C2664 and shows how to fix it.
+This example also generates C2664 and shows how to fix it.
 
 ```cpp
 // C2664b.cpp
@@ -67,7 +68,7 @@ int main() {
 }
 ```
 
-The next sample demonstrates C2664 by using a string literal to call `Test`, and shows how to fix it. Because the parameter is an `szString` reference, an object must be created by the appropriate constructor. The result is a temporary object that cannot be used to initialize the reference.
+The next example demonstrates C2664 by using a string literal to call `Test`, and shows how to fix it. Because the parameter is an `szString` reference, an object must be created by the appropriate constructor. The result is a temporary object that cannot be used to initialize the reference.
 
 ```cpp
 // C2664c.cpp
@@ -106,7 +107,7 @@ int main() {
 }
 ```
 
-The compiler enforces the C++ standard requirements for applying **`const`**. This sample generates C2664:
+The compiler enforces the C++ standard requirements for applying **`const`**. This example generates C2664:
 
 ```cpp
 // C2664d.cpp
@@ -172,7 +173,7 @@ int main( ) {
 }
 ```
 
-An enum variable is not converted to its underlying type such that a function call will be satisfied. For more information, see [enum class](../../extensions/enum-class-cpp-component-extensions.md). The following sample generates C2664 and shows how to fix it.
+An enum variable is not converted to its underlying type such that a function call will be satisfied. For more information, see [enum class](../../extensions/enum-class-cpp-component-extensions.md). The following example generates C2664 and shows how to fix it.
 
 ```cpp
 // C2664f.cpp
@@ -215,7 +216,7 @@ library myproj1 {
 
 C2664 is also raised by using **`wchar_t`** when porting code from Visual C++ 6.0 to later versions. In Visual C++ 6.0 and earlier, **`wchar_t`** was a **`typedef`** for **`unsigned short`** and was therefore implicitly convertible to that type. After Visual C++ 6.0, **`wchar_t`** is its own built-in type, as specified in the C++ standard, and is no longer implicitly convertible to **`unsigned short`**. See [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
-The following sample generates C2664 and shows how to fix it.
+The following example generates C2664 and shows how to fix it.
 
 ```cpp
 // C2664h.cpp

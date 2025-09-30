@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3833"
 title: "Compiler Error C3833"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3833"
+ms.date: 11/04/2016
 f1_keywords: ["C3833"]
 helpviewer_keywords: ["C3833"]
-ms.assetid: 8152be53-e01e-48cd-9eef-9de38723664c
 ---
 # Compiler Error C3833
 
-'type' : invalid target type for pointer_type
+> 'type' : invalid target type for pointer_type
+
+## Remarks
 
 An [interior_ptr](../../extensions/interior-ptr-cpp-cli.md) or [pin_ptr](../../extensions/pin-ptr-cpp-cli.md) was declared incorrectly.
 
-The following sample generates C3833:
+## Examples
+
+The following example generates C3833:
 
 ```cpp
 // C3833.cpp
@@ -34,7 +37,7 @@ int main() {
 }
 ```
 
-The following sample generates C3833:
+The following example generates C3833:
 
 ```cpp
 // C3833b.cpp

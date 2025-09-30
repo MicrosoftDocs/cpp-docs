@@ -30,7 +30,7 @@ The **`protected`** keyword specifies access to class members in the *member-lis
 
 When preceding the name of a base class, the **`protected`** keyword specifies that the public and protected members of the base class are protected members of its derived classes.
 
-Protected members are not as private as **`private`** members, which are accessible only to members of the class in which they are declared, but they are not as public as **`public`** members, which are accessible in any function.
+Protected members are not as private as **`private`** members, which are accessible only to members of the class in which they are declared but they are not as public as **`public`** members, which are accessible in any function.
 
 Protected members that are also declared as **`static`** are accessible to any friend or member function of a derived class. Protected members that are not declared as **`static`** are accessible to friends and member functions in a derived class only through a pointer to, reference to, or object of the derived class.
 
@@ -75,7 +75,7 @@ int main() {
    y.Display();
    // x.Protfunc();         error, Protfunc() is protected
    y.useProtfunc();      // OK, uses public access function
-                        // in derived class
+                         // in the derived class
 }
 ```
 

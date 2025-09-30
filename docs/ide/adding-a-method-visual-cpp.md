@@ -5,6 +5,7 @@ ms.date: "03/31/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add method wizard [C++]", "methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add method wizard"]
 ms.custom: devdivchpfy22
+ms.topic: how-to
 ---
 # Add a method
 

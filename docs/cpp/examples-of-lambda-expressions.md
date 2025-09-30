@@ -3,7 +3,6 @@ description: "Learn more about: Examples of Lambda Expressions"
 title: "Examples of Lambda Expressions"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["lambda expressions [C++], examples"]
-ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
 ---
 # Examples of Lambda Expressions
 
@@ -23,7 +22,6 @@ Because a lambda expression is typed, you can assign it to an **`auto`** variabl
 
 int main()
 {
-
     using namespace std;
 
     // Assign the lambda expression that adds two numbers to an auto variable.
@@ -53,7 +51,7 @@ Although lambda expressions are most often declared in the body of a function, y
 
 ### Example 2
 
-The Microsoft C++ compiler binds a lambda expression to its captured variables when the expression is declared instead of when the expression is called. The following example shows a lambda expression that captures the local variable `i` by value and the local variable `j` by reference. Because the lambda expression captures `i` by value, the reassignment of `i` later in the program does not affect the result of the expression. However, because the lambda expression captures `j` by reference, the reassignment of `j` does affect the result of the expression.
+The Microsoft C++ compiler binds a lambda expression to its captured variables when the expression is declared instead of when the expression is called. The following example shows a lambda expression that captures the local variable `i` by value and the local variable `j` by reference. Because the lambda expression captures `i` by value, the reassignment of `i` later in the program doesn't affect the result of the expression. However, because the lambda expression captures `j` by reference, the reassignment of `j` does affect the result of the expression.
 
 ```cpp
 // declaring_lambda_expressions2.cpp
@@ -320,7 +318,7 @@ int main()
     values.push_back(4);
 
     // Create a Scale object that scales elements by 3 and apply
-    // it to the vector object. Does not modify the vector.
+    // it to the vector object. doesn't modify the vector.
     Scale s(3);
     s.ApplyScale(values);
 }
@@ -425,7 +423,7 @@ int main()
     // Create another vector that contains index values.
     vector<int> indices(3);
     indices[0] = 0;
-    indices[1] = -1; // This is not a valid subscript. It will trigger an exception.
+    indices[-1] = 1; // This is not a valid subscript. It will trigger an exception.
     indices[2] = 2;
 
     // Use the values from the vector of index values to
@@ -461,7 +459,7 @@ For more information about exception handling, see [Exception Handling](../cpp/e
 
 ### Example
 
-The capture clause of a lambda expression cannot contain a variable that has a managed type. However, you can pass an argument that has a managed type to the parameter list of a lambda expression. The following example contains a lambda expression that captures the local unmanaged variable `ch` by value and takes a <xref:System.String?displayProperty=fullName> object as its parameter.
+The capture clause of a lambda expression can't contain a variable that has a managed type. However, you can pass an argument that has a managed type to the parameter list of a lambda expression. The following example contains a lambda expression that captures the local unmanaged variable `ch` by value and takes a <xref:System.String?displayProperty=fullName> object as its parameter.
 
 ```cpp
 // managed_lambda_expression.cpp

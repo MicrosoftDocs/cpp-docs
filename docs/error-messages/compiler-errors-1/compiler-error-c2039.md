@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2039"
 title: "Compiler Error C2039"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2039"
+ms.date: 8/1/2023
 f1_keywords: ["C2039"]
 helpviewer_keywords: ["C2039"]
-ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
 ---
 # Compiler Error C2039
 
-'identifier1' : is not a member of 'identifier2'
+> 'identifier1' : is not a member of 'identifier2'
+
+## Remarks
 
 The code incorrectly calls or refers to a member of a structure, class, or union.
 
 ## Examples
 
-The following sample generates C2039.
+The following example generates C2039:
 
 ```cpp
 // C2039.cpp
@@ -28,7 +29,7 @@ int main() {
 }
 ```
 
-The following sample generates C2039.
+The following example generates C2039:
 
 ```cpp
 // C2039_b.cpp
@@ -41,7 +42,7 @@ int main() {
 }
 ```
 
-The following sample generates C2039.
+The following example generates C2039:
 
 ```cpp
 // C2039_c.cpp
@@ -57,9 +58,9 @@ int S::get_Count() { return 0; }   // C2039
 int S::Count::get() { return 0; }   // OK
 ```
 
-C2039 can also occur if you attempt to access a default indexer incorrectly. The following sample defines a component authored in C#.
+C2039 can also occur if you attempt to access a default indexer incorrectly. To demonstrate, this code defines a C# component that is used by the C++/CLI code that follows:
 
-```
+```c#
 // C2039_d.cs
 // compile with: /target:library
 // a C# program
@@ -72,7 +73,7 @@ public class B {
 };
 ```
 
-The following sample generates C2039.
+The following example generates C2039 when it uses the previously defined C# component's default indexer incorrectly from C++/CLI:
 
 ```cpp
 // C2039_e.cpp
@@ -89,7 +90,7 @@ int main() {
 }
 ```
 
-C2039 can also occur if you use generics. The following sample generates C2039.
+C2039 can also occur if you use generics. The following example generates C2039:
 
 ```cpp
 // C2039_f.cpp
@@ -114,7 +115,7 @@ int main() {
 
 C2039 can occur when you try to release managed or unmanaged resources. For more information, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
 
-The following sample generates C2039.
+The following example generates C2039:
 
 ```cpp
 // C2039_g.cpp

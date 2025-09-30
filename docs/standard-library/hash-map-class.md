@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: hash_map Class"
 title: "hash_map Class"
-ms.date: "11/04/2016"
+description: "Learn more about: hash_map Class"
+ms.date: 11/04/2016
 f1_keywords: ["hash_map/stdext::hash_map", "hash_map/stdext::hash_map::allocator_type", "hash_map/stdext::hash_map::const_iterator", "hash_map/stdext::hash_map::const_pointer", "hash_map/stdext::hash_map::const_reference", "hash_map/stdext::hash_map::const_reverse_iterator", "hash_map/stdext::hash_map::difference_type", "hash_map/stdext::hash_map::iterator", "hash_map/stdext::hash_map::key_compare", "hash_map/stdext::hash_map::key_type", "hash_map/stdext::hash_map::mapped_type", "hash_map/stdext::hash_map::pointer", "hash_map/stdext::hash_map::reference", "hash_map/stdext::hash_map::reverse_iterator", "hash_map/stdext::hash_map::size_type", "hash_map/stdext::hash_map::value_type", "hash_map/stdext::hash_map::at", "hash_map/stdext::hash_map::begin", "hash_map/stdext::hash_map::cbegin", "hash_map/stdext::hash_map::cend", "hash_map/stdext::hash_map::clear", "hash_map/stdext::hash_map::count", "hash_map/stdext::hash_map::crbegin", "hash_map/stdext::hash_map::crend", "hash_map/stdext::hash_map::emplace", "hash_map/stdext::hash_map::emplace_hint", "hash_map/stdext::hash_map::empty", "hash_map/stdext::hash_map::end", "hash_map/stdext::hash_map::equal_range", "hash_map/stdext::hash_map::erase", "hash_map/stdext::hash_map::find", "hash_map/stdext::hash_map::get_allocator", "hash_map/stdext::hash_map::insert", "hash_map/stdext::hash_map::key_comp", "hash_map/stdext::hash_map::lower_bound", "hash_map/stdext::hash_map::max_size", "hash_map/stdext::hash_map::rbegin", "hash_map/stdext::hash_map::rend", "hash_map/stdext::hash_map::size", "hash_map/stdext::hash_map::swap", "hash_map/stdext::hash_map::upper_bound", "hash_map/stdext::hash_map::value_comp"]
 helpviewer_keywords: ["stdext::hash_map", "stdext::hash_map::allocator_type", "stdext::hash_map::const_iterator", "stdext::hash_map::const_pointer", "stdext::hash_map::const_reference", "stdext::hash_map::const_reverse_iterator", "stdext::hash_map::difference_type", "stdext::hash_map::iterator", "stdext::hash_map::key_compare", "stdext::hash_map::key_type", "stdext::hash_map::mapped_type", "stdext::hash_map::pointer", "stdext::hash_map::reference", "stdext::hash_map::reverse_iterator", "stdext::hash_map::size_type", "stdext::hash_map::value_type", "stdext::hash_map::at", "stdext::hash_map::begin", "stdext::hash_map::cbegin", "stdext::hash_map::cend", "stdext::hash_map::clear", "stdext::hash_map::count", "stdext::hash_map::crbegin", "stdext::hash_map::crend", "stdext::hash_map::emplace", "stdext::hash_map::emplace_hint", "stdext::hash_map::empty", "stdext::hash_map::end", "stdext::hash_map::equal_range", "stdext::hash_map::erase", "stdext::hash_map::find", "stdext::hash_map::get_allocator", "stdext::hash_map::insert", "stdext::hash_map::key_comp", "stdext::hash_map::lower_bound", "stdext::hash_map::max_size", "stdext::hash_map::rbegin", "stdext::hash_map::rend", "stdext::hash_map::size", "stdext::hash_map::swap", "stdext::hash_map::upper_bound", "stdext::hash_map::value_comp"]
 ---
@@ -58,7 +58,7 @@ The choice of container type should be based in general on the type of searching
 
 The `hash_map` should be the associative container of choice when the conditions associating the values with their keys are satisfied by the application. A model for this type of structure is an ordered list of uniquely occurring keywords with associated string values providing, say, definitions. If, instead, the words had more than one correct definition, so that keys weren't unique, then a `hash_multimap` would be the container of choice. If, on the other hand, just the list of words were being stored, then a `hash_set` would be the correct container. If multiple occurrences of the words were allowed, then a `hash_multiset` would be the appropriate container structure.
 
-The `hash_map` orders the sequence it controls by calling a stored hash *`Traits`* object of class [`value_compare`](../standard-library/value-compare-class.md). This stored object may be accessed by calling the member function [`key_comp`](#key_comp). Such a function object must behave the same as an object of class `hash_compare<Key, less<Key>>`. Specifically, for all values *`Key`* of type *`Key`*, the call `Traits`( `Key` ) yields a distribution of values of type `size_t`. For more information, see [`hash_compare`](../standard-library/hash-compare-class.md).
+The `hash_map` orders the sequence it controls by calling a stored hash *`Traits`* object of class [`value_compare`](../standard-library/value-compare-class.md). This stored object may be accessed by calling the member function [`key_comp`](#key_comp). Such a function object must behave the same as an object of class `hash_compare<Key, less<Key>>`. Specifically, for all values *`Key`* of type *`Key`*, the call `Traits`(`Key`) yields a distribution of values of type `size_t`. For more information, see [`hash_compare`](../standard-library/hash-compare-class.md).
 
 In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they're equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate f(x y) is a function object that has two argument objects `x` and `y` and a return value of **`true`** or **`false`**. An ordering imposed on a `hash_map` is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects `x` and `y` are defined to be equivalent when both f(x, y) and f(y, x) are `false`. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
@@ -371,8 +371,6 @@ Erases all the elements of a `hash_map`.
 void clear();
 ```
 
-### Remarks
-
 ### Example
 
 The following example demonstrates the use of the `hash_map::clear` member function.
@@ -463,8 +461,6 @@ A type that provides a reference to a **`const`** element stored in a `hash_map`
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_reference const_reference;
 ```
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -516,7 +512,7 @@ The data value of the first element in the hash_map is 10.
 A type that provides a bidirectional iterator that can read any **`const`** element in the `hash_map`.
 
 ```cpp
-typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse)iterator const_reverse_iterator;
+typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse_iterator const_reverse_iterator;
 ```
 
 ### Remarks
@@ -817,8 +813,8 @@ The [`hash_map::value_type`](#value_type) of an element is a pair, so that the v
 ```cpp
 // hash_map_emplace.cpp
 // compile with: /EHsc
-#include<hash_map>
-#include<iostream>
+#include <hash_map>
+#include <iostream>
 #include <string>
 
 int main()
@@ -878,8 +874,8 @@ Insertion can occur in amortized constant time, instead of logarithmic time, if 
 ```cpp
 // hash_map_emplace_hint.cpp
 // compile with: /EHsc
-#include<hash_map>
-#include<iostream>
+#include <hash_map>
+#include <iostream>
 #include <string>
 
 int main()
@@ -916,8 +912,6 @@ bool empty() const;
 ### Return Value
 
 **`true`** if the `hash_map` is empty; **`false`** if the `hash_map` is nonempty.
-
-### Remarks
 
 ### Example
 
@@ -1047,8 +1041,6 @@ The argument key value to be compared with the sort key of an element from the `
 A pair of iterators such that the first is the [`lower_bound`](#lower_bound) of the key and the second is the [`upper_bound`](#upper_bound) of the key.
 
 To access the first iterator of a pair `pr` returned by the member function, use `pr.first` and to dereference the lower bound iterator, use `*(pr.first)`. To access the second iterator of a pair `pr` returned by the member function, use `pr.second` and to dereference the upper bound iterator, use `*(pr.second)`.
-
-### Remarks
 
 ### Example
 
@@ -1526,7 +1518,7 @@ The position just beyond the last element to be copied from a `hash_map`.
 
 The first `insert` member function returns a pair whose `bool` component returns `true` if an insertion was made and `false` if the `hash_map` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
 
-To access the iterator component of a pair `pr` returned by this member function, use `pr.first`, and to dereference it, use `(pr.first)`. To access the **`bool`** component of a pair `pr` returned by this member function, use `pr.second`, and to dereference it, use `\(pr.second)`.
+To access the iterator component of a pair `pr` returned by this member function, use `pr.first`, and to dereference it, use `(pr.first)`. To access the **`bool`** component of a pair `pr` returned by this member function, use `pr.second`, and to dereference it, use `(pr.second)`.
 
 The second `insert` member function, the hint version, returns an iterator that points to the position where the new element was inserted into the `hash_map`.
 
@@ -1545,8 +1537,8 @@ The third member function inserts the sequence of element values into a `hash_ma
 ```cpp
 // hash_map_insert.cpp
 // compile with: /EHsc
-#include<hash_map>
-#include<iostream>
+#include <hash_map>
+#include <iostream>
 #include <string>
 
 int main()
@@ -1815,8 +1807,6 @@ An [`iterator`](#iterator) or [`const_iterator`](#const_iterator) that addresses
 
 If the return value of `lower_bound` is assigned to a `const_iterator`, the `hash_map` object can't be modified. If the return value of `lower_bound` is assigned to a `iterator`, the `hash_map` object can be modified.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -1903,8 +1893,6 @@ size_type max_size() const;
 ### Return Value
 
 The maximum possible length of the `hash_map`.
-
-### Remarks
 
 ### Example
 
@@ -2196,8 +2184,6 @@ A type that provides a reference to an element stored in a `hash_map`.
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::reference reference;
 ```
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -2378,8 +2364,6 @@ size_type size() const;
 
 The current length of the `hash_map`.
 
-### Remarks
-
 ### Example
 
 The following example demonstrates the use of the `hash_map::size` member function.
@@ -2423,8 +2407,6 @@ An unsigned integer type that can represent the number of elements in a `hash_ma
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::size_type size_type;
 ```
-
-### Remarks
 
 ### Example
 
@@ -2527,8 +2509,6 @@ The argument key value to be compared with the sort key value of an element from
 An [`iterator`](#iterator) or [`const_iterator`](#const_iterator) that addresses the location of an element in a `hash_map` that with a key that is greater than the argument key, or that addresses the location succeeding the last element in the `hash_map` if no match is found for the key.
 
 If the return value is assigned to a `const_iterator`, the `hash_map` object can't be modified. If the return value is assigned to an `iterator`, the `hash_map` object can be modified.
-
-### Remarks
 
 ### Example
 

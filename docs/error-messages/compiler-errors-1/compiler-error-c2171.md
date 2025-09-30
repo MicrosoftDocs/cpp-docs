@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2171"
 title: "Compiler Error C2171"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2171"
+ms.date: 11/04/2016
 f1_keywords: ["C2171"]
 helpviewer_keywords: ["C2171"]
-ms.assetid: a80343b5-ab3f-4413-b6f1-3ce9d7e519e5
 ---
 # Compiler Error C2171
 
-'operator' : illegal on operands of type 'type'
+> 'operator' : illegal on operands of type 'type'
+
+## Remarks
 
 A unary operator is used with an invalid operand type.
 
 ## Examples
 
-The following sample generates C2171.
+The following example generates C2171.
 
 ```cpp
 // C2171.cpp
@@ -28,7 +29,7 @@ int main() {
 }
 ```
 
-The following sample generates C2171.
+The following example generates C2171.
 
 ```cpp
 // C2171_b.cpp

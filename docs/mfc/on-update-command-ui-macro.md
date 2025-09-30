@@ -5,6 +5,7 @@ ms.date: "09/06/2019"
 f1_keywords: ["ON_UPDATE_COMMAND_UI"]
 helpviewer_keywords: ["ON_UPDATE_COMMAND_UI macro [MFC]", "update handlers [MFC]", "command-handler macros", "updating user-interface objects [MFC]"]
 ms.assetid: 3e72b50f-4119-4c82-81cf-6e09b132de05
+ms.topic: reference
 ---
 # ON_UPDATE_COMMAND_UI Macro
 

@@ -61,7 +61,7 @@ For a description of the following entries, see [View class characteristics](vie
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 
@@ -143,7 +143,7 @@ int main()
         {"Music", Thursday}
     };
 
-    // lambda to get a reference to the the day of the week for a class
+    // lambda to get a reference to the day of the week for a class
     auto getDay = [](classes& c) -> weekday&
     {
         return c.startDay;

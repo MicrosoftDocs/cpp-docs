@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::Collections::Vector Class"
 title: "Platform::Collections::Vector Class"
-ms.date: "12/04/2019"
+description: "Learn more about: Platform::Collections::Vector Class"
+ms.date: 12/04/2019
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Vector::Vector", "COLLECTION/Platform::Collections::Vector::Append", "COLLECTION/Platform::Collections::Vector::Clear", "COLLECTION/Platform::Collections::Vector::First", "COLLECTION/Platform::Collections::Vector::GetAt", "COLLECTION/Platform::Collections::Vector::GetMany", "COLLECTION/Platform::Collections::Vector::GetView", "COLLECTION/Platform::Collections::Vector::IndexOf", "COLLECTION/Platform::Collections::Vector::InsertAt", "COLLECTION/Platform::Collections::Vector::ReplaceAll", "COLLECTION/Platform::Collections::Vector::RemoveAt", "COLLECTION/Platform::Collections::Vector::RemoveAtEnd", "COLLECTION/Platform::Collections::Vector::SetAt", "COLLECTION/Platform::Collections::Vector::Size", "COLLECTION/Platform::Collections::Vector::VectorChanged"]
 helpviewer_keywords: ["Vector Class (C++/Cx)"]
-ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
 ---
 # Platform::Collections::Vector Class
 
@@ -176,7 +175,7 @@ The number of items retrieved.
 
 ### Remarks
 
-This function is not intended for use directly by client code. It is used internally in the [to_vector Function](../cppcx/to-vector-function.md) to enable efficient conversion of Platform::Vector intances to std::vector instances.
+This function is not intended for use directly by client code. It is used internally in the [to_vector Function](../cppcx/to-vector-function.md) to enable efficient conversion of Platform::Vector instances to std::vector instances.
 
 ## <a name="getview"></a> Vector::GetView Method
 

@@ -4,7 +4,6 @@ description: "Describes MSVC compiler warning C4750 about a possible stack overf
 ms.date: 07/08/2020
 f1_keywords: ["C4750"]
 helpviewer_keywords: ["C4750"]
-ms.assetid: b0b2c938-7d2a-4c36-8270-7daee15ffee3
 ---
 # Compiler Warning (level 1) C4750
 

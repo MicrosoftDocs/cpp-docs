@@ -6,6 +6,7 @@ ms.custom: intro-installation
 author: gcampbell-msft
 ms.author: gcampbell
 monikerRange: '>=msvc-170'
+ms.topic: install-set-up-deploy
 ---
 
 # Download and install the Embedded tooling

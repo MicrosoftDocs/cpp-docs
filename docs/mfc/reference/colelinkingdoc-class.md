@@ -130,7 +130,7 @@ A pointer to the specified item; NULL if the item is not found.
 
 ### Remarks
 
-The default `COleLinkingDoc` implementation always returns NULL. This function is overriden in the derived class `COleServerDoc` to search the list of OLE server items for a linked item with the specified name (the name comparison is case sensitive). Override this function if you have implemented your own method of storing or retrieving linked server items.
+The default `COleLinkingDoc` implementation always returns NULL. This function is overridden in the derived class `COleServerDoc` to search the list of OLE server items for a linked item with the specified name (the name comparison is case sensitive). Override this function if you have implemented your own method of storing or retrieving linked server items.
 
 ## <a name="register"></a> COleLinkingDoc::Register
 

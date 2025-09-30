@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: COleIPFrameWndEx Class"
 title: "COleIPFrameWndEx Class"
-ms.date: "11/04/2016"
+description: "Learn more about: COleIPFrameWndEx Class"
+ms.date: 11/04/2016
 f1_keywords: ["COleIPFrameWndEx", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::AddDockSite", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::AddPane", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::AdjustDockingLayout", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::DockPane", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::DockPaneLeftOf", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::EnableAutoHidePanes", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::EnableDocking", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::EnablePaneMenu", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetActivePopup", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetContainerFrameWindow", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetDefaultResId", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetDockFrame", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetDockingManager", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetMainFrame", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetMenuBar", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetPane", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetTearOffBars", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetToolbarButtonToolTipText", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::InsertPane", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::IsMenuBarAvailable", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::IsPointNearDockSite", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::LoadFrame", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnCloseDockingPane", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnCloseMiniFrame", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnClosePopupMenu", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnCmdMsg", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnDrawMenuImage", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnDrawMenuLogo", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnMenuButtonToolHitTest", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnMoveMiniFrame", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnSetPreviewMode", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnShowCustomizePane", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnShowPanes", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnShowPopupMenu", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnTearOffMenu", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::PaneFromPoint", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::PreTranslateMessage", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::RecalcLayout", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::RemovePaneFromDockManager", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::SetDockState", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::SetupToolbarMenu", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::ShowPane", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::WinHelpA", "AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::InitUserToobars"]
 helpviewer_keywords: ["COleIPFrameWndEx [MFC], AddDockSite", "COleIPFrameWndEx [MFC], AddPane", "COleIPFrameWndEx [MFC], AdjustDockingLayout", "COleIPFrameWndEx [MFC], DockPane", "COleIPFrameWndEx [MFC], DockPaneLeftOf", "COleIPFrameWndEx [MFC], EnableAutoHidePanes", "COleIPFrameWndEx [MFC], EnableDocking", "COleIPFrameWndEx [MFC], EnablePaneMenu", "COleIPFrameWndEx [MFC], GetActivePopup", "COleIPFrameWndEx [MFC], GetContainerFrameWindow", "COleIPFrameWndEx [MFC], GetDefaultResId", "COleIPFrameWndEx [MFC], GetDockFrame", "COleIPFrameWndEx [MFC], GetDockingManager", "COleIPFrameWndEx [MFC], GetMainFrame", "COleIPFrameWndEx [MFC], GetMenuBar", "COleIPFrameWndEx [MFC], GetPane", "COleIPFrameWndEx [MFC], GetTearOffBars", "COleIPFrameWndEx [MFC], GetToolbarButtonToolTipText", "COleIPFrameWndEx [MFC], InsertPane", "COleIPFrameWndEx [MFC], IsMenuBarAvailable", "COleIPFrameWndEx [MFC], IsPointNearDockSite", "COleIPFrameWndEx [MFC], LoadFrame", "COleIPFrameWndEx [MFC], OnCloseDockingPane", "COleIPFrameWndEx [MFC], OnCloseMiniFrame", "COleIPFrameWndEx [MFC], OnClosePopupMenu", "COleIPFrameWndEx [MFC], OnCmdMsg", "COleIPFrameWndEx [MFC], OnDrawMenuImage", "COleIPFrameWndEx [MFC], OnDrawMenuLogo", "COleIPFrameWndEx [MFC], OnMenuButtonToolHitTest", "COleIPFrameWndEx [MFC], OnMoveMiniFrame", "COleIPFrameWndEx [MFC], OnSetPreviewMode", "COleIPFrameWndEx [MFC], OnShowCustomizePane", "COleIPFrameWndEx [MFC], OnShowPanes", "COleIPFrameWndEx [MFC], OnShowPopupMenu", "COleIPFrameWndEx [MFC], OnTearOffMenu", "COleIPFrameWndEx [MFC], PaneFromPoint", "COleIPFrameWndEx [MFC], PreTranslateMessage", "COleIPFrameWndEx [MFC], RecalcLayout", "COleIPFrameWndEx [MFC], RemovePaneFromDockManager", "COleIPFrameWndEx [MFC], SetDockState", "COleIPFrameWndEx [MFC], SetupToolbarMenu", "COleIPFrameWndEx [MFC], ShowPane", "COleIPFrameWndEx [MFC], WinHelpA", "COleIPFrameWndEx [MFC], InitUserToobars"]
-ms.assetid: ebff1560-a1eb-4854-af00-95d4a192bd55
 ---
 # COleIPFrameWndEx Class
 
-The `COleIPFrameWndEx` class implements an OLE container that supports MFC. You must derive the in-place frame window class for your application from the `COleIPFrameWndEx` class, instead of deriving it from the [COleIPFrameWnd](../../mfc/reference/coleipframewnd-class.md)class.
+The `COleIPFrameWndEx` class implements an OLE container that supports MFC. You must derive the in-place frame window class for your application from the `COleIPFrameWndEx` class, instead of deriving it from the [COleIPFrameWnd](../../mfc/reference/coleipframewnd-class.md) class.
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
 ## Syntax
@@ -50,8 +49,8 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 |[COleIPFrameWndEx::OnClosePopupMenu](#onclosepopupmenu)|Called by the framework when an active pop-up menu processes a WM_DESTROY message.|
 |[COleIPFrameWndEx::OnCmdMsg](#oncmdmsg)|(Overrides `CFrameWnd::OnCmdMsg`.)|
 |[COleIPFrameWndEx::OnDrawMenuImage](#ondrawmenuimage)|Called by the framework when the image associated with a menu item is drawn.|
-|[COleIPFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)object processes a WM_PAINT message.|
-|[COleIPFrameWndEx::OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes WM_NCHITTEST message.|
+|[COleIPFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) object processes a WM_PAINT message.|
+|[COleIPFrameWndEx::OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) object processes WM_NCHITTEST message.|
 |[COleIPFrameWndEx::OnMoveMiniFrame](#onmoveminiframe)||
 |[COleIPFrameWndEx::OnSetPreviewMode](#onsetpreviewmode)|Call this member function to set the application's main frame window into and out of print-preview mode. (Overrides [CFrameWnd::OnSetPreviewMode](../../mfc/reference/cframewnd-class.md#onsetpreviewmode).)|
 |[COleIPFrameWndEx::OnShowCustomizePane](#onshowcustomizepane)||
@@ -571,7 +570,7 @@ Override this method if you want to customize image drawing for the menu items t
 
 ## <a name="ondrawmenulogo"></a> COleIPFrameWndEx::OnDrawMenuLogo
 
-Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)object processes a WM_PAINT message.
+Called by the framework when a [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) object processes a WM_PAINT message.
 
 ```
 virtual void OnDrawMenuLogo(
@@ -597,7 +596,7 @@ Override this method to display a logo on the pop-up menu associated with the me
 
 ## <a name="onmenubuttontoolhittest"></a> COleIPFrameWndEx::OnMenuButtonToolHitTest
 
-Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)object processes a WM_NCHITTEST message.
+Called by the framework when a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) object processes a WM_NCHITTEST message.
 
 ```
 virtual BOOL OnMenuButtonToolHitTest(

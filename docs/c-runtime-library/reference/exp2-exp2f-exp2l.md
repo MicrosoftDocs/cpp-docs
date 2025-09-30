@@ -1,14 +1,13 @@
 ---
 title: "exp2, exp2f, exp2l"
 description: "API ref for exp2(), exp2f(), and exp2l() which compute 2 raised to the specified value."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["exp2", "exp2f", "exp2l", "_o_exp2", "_o_exp2f", "_o_exp2l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["exp2", "math/exp2", "exp2f", "math/exp2f", "exp2l", "math/exp2l"]
 helpviewer_keywords: ["exp2 function", "exp2f function", "exp2l function"]
-ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
 ---
 # `exp2`, `exp2f`, `exp2l`
 
@@ -36,7 +35,7 @@ float exp2f(
 long double exp2l(
    long double x
 );
-#define exp2(X) // Requires C11 or higher
+#define exp2(X) // Requires C11 or later
 ```
 
 ### Parameters
@@ -79,5 +78,5 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 ## See also
 
 [Alphabetical function reference](crt-alphabetical-function-reference.md)\
-[`exp`, `expf`, `expl`](exp-expf.md)
+[`exp`, `expf`, `expl`](exp-expf.md)\
 [`log2`, `log2f`, `log2l`](log2-log2f-log2l.md)

@@ -1,20 +1,20 @@
 ---
-description: "Learn more about: year_month_weekday class"
 title: "year_month_weekday class"
-ms.date: "06/30/2021"
+description: "Learn more about: year_month_weekday class"
+ms.date: 06/30/2021
 f1_keywords: ["chrono/std::chrono::year_month_weekday", "chrono/std::chrono::year_month_weekday::weekday", "chrono/std::chrono::year_month_weekday::month", "chrono/std::chrono::year_month_weekday::index", "chrono/std::chrono::year_month_weekday::year", "chrono/std::chrono::year_month_weekday::weekday", "chrono/std::chrono::year_month_weekday::weekday_indexed", "chrono/std::chrono::year_month_weekday::sys_days", "chrono/std::chrono::year_month_weekday::local_days", "chrono/std::chrono::year_month_weekday::ok", "chrono/std::chrono::year_month_weekday::operator+=", "chrono/std::chrono::year_month_weekday::operator-=", "chrono/std::chrono::year_month_weekday::operator local_days", "chrono/std::chrono::year_month_weekday::operator sys_days"]
 helpviewer_keywords: ["std::chrono [C++], year_month_weekday"]
 dev_langs: ["C++"]
 ---
 
-# `year_month_weekday` class  
+# `year_month_weekday` class
 
 Represents a specific year, month, and nth weekday of the month.
 
 ## Syntax
 
 ```cpp
-class year_month_weekday; // C++ 20
+class year_month_weekday; // C++20
 ```
 
 ## Remarks
@@ -36,7 +36,7 @@ class year_month_weekday; // C++ 20
 | [`operator local_days`](#local_days) | Get the count of days from the `system_clock` epoch to this `year_month_weekday` as [`local_days`](chrono.md#typedefs). |
 | [`operator sys_days`](#sys_days) | Get the count of days from the `system_clock` epoch to this `year_month_weekday` as [`sys_days`](chrono.md#typedefs). |
 | [`weekday`](#weekday) | Get the weekday. |
-| [`weekday_indexed`](#weekday_indexed) | Get the [`weekday_indexed`] stored in this `year_month_weekday`. |
+| [`weekday_indexed`](#weekday_indexed) | Get the [`weekday_indexed`](weekdayindexed-class.md) stored in this `year_month_weekday`. |
 | [`year`](#year) | Get the year. |
 
 ## Non-members
@@ -98,7 +98,7 @@ The [`year`](year-class.md) value.
 
 4\) Constructs a `year_month_weekday` that corresponds to the date represented by *`dp`*.  For any `year_month_weekday` (ymdl) for which `ok()` is `true`, comparison with `operator==` to `year_month_weekday{sys_days{ymdl}}` will be `true`.
 
-For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_weekday`
 
@@ -325,5 +325,5 @@ The [`year`](year-class.md) value.
 [`year_month_day`](year-month-day-class.md)\
 [`year_month_day_last`](year-month-day-last-class.md)\
 [`year_month_weekday_last`](year-month-weekday-last-class.md)\
-[`operator/`](chrono-operators.md#op_/)
+[`operator/`](chrono-operators.md#op_/)\
 [Header Files Reference](cpp-standard-library-header-files.md)

@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: year_month class"
 title: "year_month class"
-ms.date: "06/28/2021"
+description: "Learn more about: year_month class"
+ms.date: 06/28/2021
 f1_keywords: ["chrono/std::chrono::year_month", "chrono/std::chrono::year_month::operator+=", "chrono/std::chrono::year_month::operator-=", "chrono/std::chrono::year_month::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month"]
 dev_langs: ["C++"]
 ---
-# `year_month` class  
+# `year_month` class
 
 Represents a month and year. The day isn't specified.
 
@@ -68,7 +68,7 @@ The [`month`](month-class.md) value.
 1\) The default constructor doesn't initialize the `year` or `month` value.\
 2\) Construct a `year_month` with the specified values.
 
-For information about C++ 20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
+For information about C++20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month`
 

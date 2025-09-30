@@ -239,7 +239,7 @@ BOOL ComputePointAtLength(
 ### Parameters
 
 *length*<br/>
-The distance along the geometry of the point and tangent to find. If this distance is less then 0, this method calculates the first point in the geometry. If this distance is greater than the length of the geometry, this method calculates the last point in the geometry.
+The distance along the geometry of the point and tangent to find. If this distance is less than 0, this method calculates the first point in the geometry. If this distance is greater than the length of the geometry, this method calculates the last point in the geometry.
 
 *worldTransform*<br/>
 The transform to apply to the geometry before calculating the specified point and tangent.

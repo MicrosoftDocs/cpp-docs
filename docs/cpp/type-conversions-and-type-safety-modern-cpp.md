@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Type conversions and type safety"
 title: "Type conversions and type safety"
+description: "Learn more about: Type conversions and type safety"
 ms.date: "11/19/2019"
-ms.topic: "conceptual"
-ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
+ms.topic: "concept-article"
 ---
 # Type conversions and type safety
 
@@ -105,7 +104,7 @@ The C-style cast operator is identical to the call operator () and is therefore 
     int i = d;  // warning C4244 possible loss of data
     int j = static_cast<int>(d);       // No warning.
     string s = static_cast<string>(d); // Error C2440:cannot convert from
-                                       // double to std:string
+                                       // double to std::string
 
     // No error but not necessarily safe.
     Base* b = new Base();
@@ -173,7 +172,7 @@ The C-style cast operator is identical to the call operator () and is therefore 
 
 ## See also
 
-[C++ type system](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
+[C++ type system](../cpp/cpp-type-system-modern-cpp.md)\
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)\
+[C++ Language Reference](../cpp/cpp-language-reference.md)\
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

@@ -4,6 +4,7 @@ title: "Concurrency Runtime Best Practices"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["best practices [Concurrency Runtime]", "Concurrency Runtime, practices to avoid", "practices to avoid [Concurrency Runtime]", "Concurrency Runtime, best practices"]
 ms.assetid: 7231d4be-d1e3-401d-8b66-94fd51b587c9
+ms.topic: best-practice
 ---
 # Concurrency Runtime Best Practices
 

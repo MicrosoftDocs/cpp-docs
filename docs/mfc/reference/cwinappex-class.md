@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: CWinAppEx Class"
 title: "CWinAppEx Class"
+description: "Learn more about: CWinAppEx Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWinAppEx", "AFXWINAPPEX/CWinAppEx", "AFXWINAPPEX/CWinAppEx::CWinAppEx", "AFXWINAPPEX/CWinAppEx::CleanState", "AFXWINAPPEX/CWinAppEx::EnableLoadWindowPlacement", "AFXWINAPPEX/CWinAppEx::EnableTearOffMenus", "AFXWINAPPEX/CWinAppEx::EnableUserTools", "AFXWINAPPEX/CWinAppEx::ExitInstance", "AFXWINAPPEX/CWinAppEx::GetBinary", "AFXWINAPPEX/CWinAppEx::GetContextMenuManager", "AFXWINAPPEX/CWinAppEx::GetDataVersion", "AFXWINAPPEX/CWinAppEx::GetDataVersionMajor", "AFXWINAPPEX/CWinAppEx::GetDataVersionMinor", "AFXWINAPPEX/CWinAppEx::GetInt", "AFXWINAPPEX/CWinAppEx::GetKeyboardManager", "AFXWINAPPEX/CWinAppEx::GetMouseManager", "AFXWINAPPEX/CWinAppEx::GetObject", "AFXWINAPPEX/CWinAppEx::GetRegSectionPath", "AFXWINAPPEX/CWinAppEx::GetRegistryBase", "AFXWINAPPEX/CWinAppEx::GetSectionBinary", "AFXWINAPPEX/CWinAppEx::GetSectionInt", "AFXWINAPPEX/CWinAppEx::GetSectionObject", "AFXWINAPPEX/CWinAppEx::GetSectionString", "AFXWINAPPEX/CWinAppEx::GetShellManager", "AFXWINAPPEX/CWinAppEx::GetString", "AFXWINAPPEX/CWinAppEx::GetTooltipManager", "AFXWINAPPEX/CWinAppEx::GetUserToolsManager", "AFXWINAPPEX/CWinAppEx::InitContextMenuManager", "AFXWINAPPEX/CWinAppEx::InitKeyboardManager", "AFXWINAPPEX/CWinAppEx::InitMouseManager", "AFXWINAPPEX/CWinAppEx::InitShellManager", "AFXWINAPPEX/CWinAppEx::InitTooltipManager", "AFXWINAPPEX/CWinAppEx::IsResourceSmartUpdate", "AFXWINAPPEX/CWinAppEx::IsStateExists", "AFXWINAPPEX/CWinAppEx::LoadState", "AFXWINAPPEX/CWinAppEx::OnAppContextHelp", "AFXWINAPPEX/CWinAppEx::OnViewDoubleClick", "AFXWINAPPEX/CWinAppEx::OnWorkspaceIdle", "AFXWINAPPEX/CWinAppEx::SaveState", "AFXWINAPPEX/CWinAppEx::SetRegistryBase", "AFXWINAPPEX/CWinAppEx::ShowPopupMenu", "AFXWINAPPEX/CWinAppEx::WriteBinary", "AFXWINAPPEX/CWinAppEx::WriteInt", "AFXWINAPPEX/CWinAppEx::WriteObject", "AFXWINAPPEX/CWinAppEx::WriteSectionBinary", "AFXWINAPPEX/CWinAppEx::WriteSectionInt", "AFXWINAPPEX/CWinAppEx::WriteSectionObject", "AFXWINAPPEX/CWinAppEx::WriteSectionString", "AFXWINAPPEX/CWinAppEx::WriteString", "AFXWINAPPEX/CWinAppEx::LoadCustomState", "AFXWINAPPEX/CWinAppEx::LoadWindowPlacement", "AFXWINAPPEX/CWinAppEx::OnClosingMainFrame", "AFXWINAPPEX/CWinAppEx::PreLoadState", "AFXWINAPPEX/CWinAppEx::PreSaveState", "AFXWINAPPEX/CWinAppEx::ReloadWindowPlacement", "AFXWINAPPEX/CWinAppEx::SaveCustomState", "AFXWINAPPEX/CWinAppEx::StoreWindowPlacement", "AFXWINAPPEX/CWinAppEx::m_bForceImageReset"]
 helpviewer_keywords: ["CWinAppEx [MFC], CWinAppEx", "CWinAppEx [MFC], CleanState", "CWinAppEx [MFC], EnableLoadWindowPlacement", "CWinAppEx [MFC], EnableTearOffMenus", "CWinAppEx [MFC], EnableUserTools", "CWinAppEx [MFC], ExitInstance", "CWinAppEx [MFC], GetBinary", "CWinAppEx [MFC], GetContextMenuManager", "CWinAppEx [MFC], GetDataVersion", "CWinAppEx [MFC], GetDataVersionMajor", "CWinAppEx [MFC], GetDataVersionMinor", "CWinAppEx [MFC], GetInt", "CWinAppEx [MFC], GetKeyboardManager", "CWinAppEx [MFC], GetMouseManager", "CWinAppEx [MFC], GetObject", "CWinAppEx [MFC], GetRegSectionPath", "CWinAppEx [MFC], GetRegistryBase", "CWinAppEx [MFC], GetSectionBinary", "CWinAppEx [MFC], GetSectionInt", "CWinAppEx [MFC], GetSectionObject", "CWinAppEx [MFC], GetSectionString", "CWinAppEx [MFC], GetShellManager", "CWinAppEx [MFC], GetString", "CWinAppEx [MFC], GetTooltipManager", "CWinAppEx [MFC], GetUserToolsManager", "CWinAppEx [MFC], InitContextMenuManager", "CWinAppEx [MFC], InitKeyboardManager", "CWinAppEx [MFC], InitMouseManager", "CWinAppEx [MFC], InitShellManager", "CWinAppEx [MFC], InitTooltipManager", "CWinAppEx [MFC], IsResourceSmartUpdate", "CWinAppEx [MFC], IsStateExists", "CWinAppEx [MFC], LoadState", "CWinAppEx [MFC], OnAppContextHelp", "CWinAppEx [MFC], OnViewDoubleClick", "CWinAppEx [MFC], OnWorkspaceIdle", "CWinAppEx [MFC], SaveState", "CWinAppEx [MFC], SetRegistryBase", "CWinAppEx [MFC], ShowPopupMenu", "CWinAppEx [MFC], WriteBinary", "CWinAppEx [MFC], WriteInt", "CWinAppEx [MFC], WriteObject", "CWinAppEx [MFC], WriteSectionBinary", "CWinAppEx [MFC], WriteSectionInt", "CWinAppEx [MFC], WriteSectionObject", "CWinAppEx [MFC], WriteSectionString", "CWinAppEx [MFC], WriteString", "CWinAppEx [MFC], LoadCustomState", "CWinAppEx [MFC], LoadWindowPlacement", "CWinAppEx [MFC], OnClosingMainFrame", "CWinAppEx [MFC], PreLoadState", "CWinAppEx [MFC], PreSaveState", "CWinAppEx [MFC], ReloadWindowPlacement", "CWinAppEx [MFC], SaveCustomState", "CWinAppEx [MFC], StoreWindowPlacement", "CWinAppEx [MFC], m_bForceImageReset"]
 ---
-# `CWinAppEx` Class
+# `CWinAppEx` class
 
 `CWinAppEx` handles the application state, saves the state to the registry, loads the state from the registry, initializes application managers, and provides links to those same application managers.
 
@@ -13,7 +13,7 @@ For more detail, see the source code located in the `mfc` folder of your Visual 
 
 ## Syntax
 
-```
+```cpp
 class CWinAppEx : public CWinApp
 ```
 
@@ -402,7 +402,7 @@ A pointer to the global `CMouseManager` object.
 
 ### Remarks
 
-If the mouse manager isn't initialized,, this function calls [`CWinAppEx::InitMouseManager`](#initmousemanager) before it returns a pointer.
+If the mouse manager isn't initialized, this function calls [`CWinAppEx::InitMouseManager`](#initmousemanager) before it returns a pointer.
 
 ## <a name="getobject"></a> `CWinAppEx::GetObject`
 
@@ -970,7 +970,7 @@ virtual BOOL OnWorkspaceIdle(CWnd*);
 
 ### Parameters
 
-[in] *`CWnd*`*\
+[in] *`CWnd*`*
 
 ### Return Value
 

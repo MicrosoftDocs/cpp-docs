@@ -137,7 +137,7 @@ hand = account_num; // error C2440: '=' : cannot convert from 'int' to 'Suit'
 A cast is required to convert an **`int`** to a scoped or unscoped enumerator. However, you can promote an unscoped enumerator to an integer value without a cast.
 
 ```cpp
-int account_num = Hearts; //OK if Hearts is in a unscoped enum
+int account_num = Hearts; //OK if Hearts is in an unscoped enum
 ```
 
 Using implicit conversions in this way can lead to unintended side-effects. To help eliminate programming errors associated with unscoped enums, scoped enum values are strongly typed. Scoped enumerators must be qualified by the enum type name (identifier) and can't be implicitly converted, as shown in the following example:

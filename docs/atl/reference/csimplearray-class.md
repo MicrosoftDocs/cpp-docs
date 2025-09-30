@@ -252,7 +252,7 @@ Removes all elements currently stored in the array.
 Removes the specified element from the array.
 
 ```
-BOOL RemoveAtint nIndex);
+BOOL RemoveAt(int nIndex);
 ```
 
 ### Parameters

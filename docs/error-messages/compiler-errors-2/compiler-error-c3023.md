@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3023"
 title: "Compiler Error C3023"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3023"
+ms.date: 11/04/2016
 f1_keywords: ["C3023"]
 helpviewer_keywords: ["C3023"]
-ms.assetid: 89dcce98-3cd7-4931-a50f-87df1d2ebc9b
 ---
 # Compiler Error C3023
 
-'value' : unexpected token encountered in argument to OpenMP 'clause' clause
+> 'value' : unexpected token encountered in argument to OpenMP 'clause' clause
+
+## Remarks
 
 The values passed to a clause were not valid.
 
-The following sample generates C3023:
+## Example
+
+The following example generates C3023:
 
 ```cpp
 // C3023.cpp

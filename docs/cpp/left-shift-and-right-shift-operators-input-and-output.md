@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: Left shift and right shift operators ('<<' and '>>')"
-title: "Left shift and right shift operators ('<<' and '>>')"
+description: "Learn more about: Left shift and right shift operators: << and >>"
+title: "Left shift and right shift operators: << and >>"
 ms.date: 12/09/2021
 f1_keywords: ["<<", ">>"]
 helpviewer_keywords: ["<< operator [C++], with specific objects", "left shift operators [C++]", "right shift operators [C++]", "bitwise-shift operators [C++]", ">> operator", "shift operators [C++]", "operators [C++], shift"]
-ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
 ---
-# Left shift and right shift operators (`<<` and `>>`)
+# Left shift and right shift operators: `<<` and `>>`
 
 The bitwise shift operators are the right-shift operator (**`>>`**), which moves the bits of an integer or enumeration type expression to the right, and the left-shift operator (**`<<`**), which moves the bits to the left. <sup>1</sup>
 
@@ -218,5 +217,5 @@ The value of `E1 >> E2` is `E1` right-shifted `E2` bit positions. If `E1` has an
 
 ## See also
 
-[Expressions with binary operators](../cpp/expressions-with-binary-operators.md)<br/>
+[Expressions with binary operators](../cpp/expressions-with-binary-operators.md)\
 [C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

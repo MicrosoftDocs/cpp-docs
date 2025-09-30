@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: scoped_allocator_adaptor Class"
 title: "scoped_allocator_adaptor Class"
+description: "Learn more about: scoped_allocator_adaptor Class"
 ms.date: 06/20/2022
 f1_keywords: ["scoped_allocator/std::scoped_allocator_adaptor", "scoped_allocator/std::scoped_allocator_adaptor::rebind Struct", "scoped_allocator/std::scoped_allocator_adaptor::allocate", "scoped_allocator/std::scoped_allocator_adaptor::construct", "scoped_allocator/std::scoped_allocator_adaptor::deallocate", "scoped_allocator/std::scoped_allocator_adaptor::destroy", "scoped_allocator/std::scoped_allocator_adaptor::inner_allocator", "scoped_allocator/std::scoped_allocator_adaptor::max_size", "scoped_allocator/std::scoped_allocator_adaptor::outer_allocator", "scoped_allocator/std::scoped_allocator_adaptor::select_on_container_copy_construction"]
 helpviewer_keywords: ["std::scoped_allocator_adaptor", "std::scoped_allocator_adaptor::allocate", "std::scoped_allocator_adaptor::construct", "std::scoped_allocator_adaptor::deallocate", "std::scoped_allocator_adaptor::destroy", "std::scoped_allocator_adaptor::inner_allocator", "std::scoped_allocator_adaptor::max_size", "std::scoped_allocator_adaptor::outer_allocator", "std::scoped_allocator_adaptor::select_on_container_copy_construction"]
-ms.assetid: 0d9b06a1-9a4a-4669-9470-8805cae48e89
 ms.custom: devdivchpfy22
 ---
 
@@ -68,7 +67,7 @@ Three types are defined for the sake of exposition:
 
 |Name|Description|
 |----------|-----------------|
-|[scoped_allocator_adaptor::rebind Struct](#rebind_struct)|Defines the type `Outer::rebind\<Other>::other` as a synonym for `scoped_allocator_adaptor\<Other, Inner...>`.|
+|[scoped_allocator_adaptor::rebind Struct](#rebind_struct)|Defines the type `Outer::rebind<Other>::other` as a synonym for `scoped_allocator_adaptor<Other, Inner...>`.|
 
 ### Methods
 
@@ -240,14 +239,14 @@ size_type max_size();
 
 `Outer_traits::max_size(outer_allocator())`
 
-## <a name="op_as">  scoped_allocator_adaptor::operator=
+## <a name="op_as"></a> scoped_allocator_adaptor::operator=
 
 ```cpp
 scoped_allocator_adaptor& operator=(const scoped_allocator_adaptor&) = default;
 scoped_allocator_adaptor& operator=(scoped_allocator_adaptor&&) = default;
 ```
 
-## <a name="op_eq_eq">  scoped_allocator_adaptor::operator==
+## <a name="op_eq_eq"></a> scoped_allocator_adaptor::operator==
 
 ```cpp
 template <class OuterA1, class OuterA2, class... InnerAllocs>
@@ -255,7 +254,7 @@ bool operator==(const scoped_allocator_adaptor<OuterA1, InnerAllocs...>& a,
 const scoped_allocator_adaptor<OuterA2, InnerAllocs...>& b) noexcept;
 ```
 
-## <a name="op_noeq">  scoped_allocator_adaptor::operator!=
+## <a name="op_noeq"></a> scoped_allocator_adaptor::operator!=
 
 ```cpp
 template <class OuterA1, class OuterA2, class... InnerAllocs>
@@ -278,7 +277,7 @@ A reference to the stored object of type `outer_allocator_type`.
 
 ## <a name="rebind_struct"></a> scoped_allocator_adaptor::rebind Struct
 
-Defines the type `Outer::rebind\<Other>::other` as a synonym for `scoped_allocator_adaptor\<Other, Inner...>`.
+Defines the type `Outer::rebind<Other>::other` as a synonym for `scoped_allocator_adaptor<Other, Inner...>`.
 
 struct rebind{
    typedef Other_traits::rebind\<Other>

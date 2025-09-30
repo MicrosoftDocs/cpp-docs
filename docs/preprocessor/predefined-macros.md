@@ -2,17 +2,19 @@
 title: "Predefined macros"
 description: "Lists and describes the Microsoft C++ compiler predefined preprocessor macros."
 ms.custom: "update_every_version"
-ms.date: 07/07/2022
-f1_keywords: ["_ATL_VER", "__ATOM__", "__AVX__", "__AVX2__", "__AVX512BW__", "__AVX512CD__", "__AVX512DQ__", "__AVX512F__", "__AVX512VL__", "_CHAR_UNSIGNED", "__CLR_VER", "_CONTROL_FLOW_GUARD", "__COUNTER__", "__cplusplus", "__cplusplus_cli", "__cplusplus_winrt", "_CPPRTTI", "_CPPUNWIND", "__DATE__", "_DEBUG", "_DLL", "__FILE__", "__FUNCDNAME__", "__FUNCSIG__", "__FUNCTION__", "_INTEGRAL_MAX_BITS", "_ISO_VOLATILE", "_KERNEL_MODE", "__LINE__", "_M_AMD64", "_M_ARM", "_M_ARM_ARMV7VE", "_M_ARM_FP", "_M_ARM64", "_M_CEE", "_M_CEE_PURE", "_M_CEE_SAFE", "_M_FP_EXCEPT", "_M_FP_FAST", "_M_FP_PRECISE", "_M_FP_STRICT", "_M_IX86", "_M_IX86_FP", "_M_X64", "_MANAGED", "_MFC_VER", "_MSC_BUILD", "_MSC_EXTENSIONS", "_MSC_FULL_VER", "_MSC_VER", "_MSVC_LANG", "__MSVC_RUNTIME_CHECKS", "_MT", "_NATIVE_WCHAR_T_DEFINED", "_NO_SIZED_DEALLOCATION", "_OPENMP", "_PREFAST_", "_RESUMABLE_FUNCTIONS_SUPPORTED", "_RTC_CONVERSION_CHECKS_ENABLED", "__SANITIZE_ADDRESS__", "__STDC__", "__STDC_HOSTED__", "__STDC_NO_ATOMICS__", "__STDC_NO_COMPLEX__", "__STDC_NO_THREADS__", "__STDC_NO_VLA__", "__STDC_VERSION__", "__STDCPP_DEFAULT_NEW_ALIGNMENT__", "__STDCPP_THREADS__", "__TIME__", "__TIMESTAMP__", "__VA_ARGS__", "_VC_NODEFAULTLIB", "_WCHAR_T_DEFINED", "_WIN32", "_WIN64", "_WINRT_DLL"]
-helpviewer_keywords: ["timestamps, preprocessor macro", "cl.exe compiler, version number", "version numbers, C/C++ compiler (cl.exe)", "macros, predefined C++", "preprocessor, macros", "predefined macros", "_ATL_VER macro", "__ATOM__ macro", "__AVX__ macro", "__AVX2__ macro", "__AVX512BW__ macro", "__AVX512CD__ macro", "__AVX512DQ__ macro", "__AVX512F__ macro", "__AVX512VL__ macro", "_CHAR_UNSIGNED macro", "__CLR_VER macro", "_CONTROL_FLOW_GUARD macro", "__COUNTER__ macro", "__cplusplus macro", "__cplusplus_cli macro", "__cplusplus_winrt macro", "_CPPRTTI macro", "_CPPUNWIND macro", "__DATE__ macro", "_DEBUG macro", "_DLL macro", "__FILE__ macro", "__FUNCDNAME__ macro", "__FUNCSIG__ macro", "__FUNCTION__ macro", "_INTEGRAL_MAX_BITS macro", "_ISO_VOLATILE macro", "_KERNEL_MODE macro", "__LINE__ macro", "_M_AMD64 macro", "_M_ARM macro", "_M_ARM_ARMV7VE macro", "_M_ARM_FP macro", "_M_ARM64 macro", "_M_ARM64EC macro", "_M_CEE macro", "_M_CEE_PURE macro", "_M_CEE_SAFE macro", "_M_FP_EXCEPT macro", "_M_FP_FAST macro", "_M_FP_PRECISE macro", "_M_FP_STRICT macro", "_M_IX86 macro", "_M_IX86_FP macro", "_M_X64 macro", "_MANAGED macro", "_MFC_VER macro", "_MSC_BUILD macro", "_MSC_EXTENSIONS macro", "_MSC_FULL_VER macro", "_MSC_VER macro", "_MSVC_LANG macro", "__MSVC_RUNTIME_CHECKS macro", "_MT macro", "_NATIVE_WCHAR_T_DEFINED macro", "_NO_SIZED_DEALLOCATION macro", "_OPENMP macro", "_PREFAST_ macro", "_RESUMABLE_FUNCTIONS_SUPPORTED macro", "_RTC_CONVERSION_CHECKS_ENABLED macro", "__SANITIZE_ADDRESS__ macro", "__STDC__ macro", "__STDC_HOSTED__ macro", "__STDC_NO_ATOMICS__ macro", "__STDC_NO_COMPLEX__ macro", "__STDC_NO_THREADS__ macro", "__STDC_NO_VLA__ macro", "__STDC_VERSION__ macro", "__STDCPP_DEFAULT_NEW_ALIGNMENT__", "__STDCPP_THREADS__ macro", "__TIME__ macro", "__TIMESTAMP__ macro", "__VA_ARGS__ macro", "_VC_NODEFAULTLIB macro", "_WCHAR_T_DEFINED macro", "_WIN32 macro", "_WIN64 macro", "_WINRT_DLL macro", "__func__ identifier"]
+ms.date: 06/18/2025
+f1_keywords: ["__ARM_ARCH", "_ATL_VER", "__ATOM__", "__AVX__", "__AVX2__", "__AVX512BW__", "__AVX512CD__", "__AVX512DQ__", "__AVX512F__", "__AVX512VL__", "_CHAR_UNSIGNED", "__CLR_VER", "_CONTROL_FLOW_GUARD", "__COUNTER__", "__cplusplus", "__cplusplus_cli", "__cplusplus_winrt", "_CPPRTTI", "_CPPUNWIND", "__DATE__", "_DEBUG", "_DLL", "__FILE__", "__FUNCDNAME__", "__FUNCSIG__", "__FUNCTION__", "_INTEGRAL_MAX_BITS", "_ISO_VOLATILE", "_KERNEL_MODE", "__LINE__", "_M_AMD64", "_M_ARM", "_M_ARM_ARMV7VE", "_M_ARM_FP", "_M_ARM64", "_M_CEE", "_M_CEE_PURE", "_M_CEE_SAFE", "_M_FP_EXCEPT", "_M_FP_FAST", "_M_FP_PRECISE", "_M_FP_STRICT", "_M_IX86", "_M_IX86_FP", "_M_X64", "_MANAGED", "_MFC_VER", "_MSC_BUILD", "_MSC_EXTENSIONS", "_MSC_FULL_VER", "_MSC_VER", "_MSVC_LANG", "__MSVC_RUNTIME_CHECKS", "_MT", "_NATIVE_WCHAR_T_DEFINED", "_NO_SIZED_DEALLOCATION", "_OPENMP", "_PREFAST_", "_RESUMABLE_FUNCTIONS_SUPPORTED", "_RTC_CONVERSION_CHECKS_ENABLED", "__SANITIZE_ADDRESS__", "__STDC__", "__STDC_HOSTED__", "__STDC_NO_ATOMICS__", "__STDC_NO_COMPLEX__", "__STDC_NO_THREADS__", "__STDC_NO_VLA__", "__STDC_VERSION__", "__STDCPP_DEFAULT_NEW_ALIGNMENT__", "__STDCPP_THREADS__", "__TIME__", "__TIMESTAMP__", "__VA_ARGS__", "_VC_NODEFAULTLIB", "_WCHAR_T_DEFINED", "_WIN32", "_WIN64", "_WINRT_DLL"]
+helpviewer_keywords: ["__ARM_ARCH macro", "timestamps, preprocessor macro", "cl.exe compiler, version number", "version numbers, C/C++ compiler (cl.exe)", "macros, predefined C++", "preprocessor, macros", "predefined macros", "_ATL_VER macro", "__ATOM__ macro", "__AVX__ macro", "__AVX2__ macro", "__AVX512BW__ macro", "__AVX512CD__ macro", "__AVX512DQ__ macro", "__AVX512F__ macro", "__AVX512VL__ macro", "_CHAR_UNSIGNED macro", "__CLR_VER macro", "_CONTROL_FLOW_GUARD macro", "__COUNTER__ macro", "__cplusplus macro", "__cplusplus_cli macro", "__cplusplus_winrt macro", "_CPPRTTI macro", "_CPPUNWIND macro", "__DATE__ macro", "_DEBUG macro", "_DLL macro", "__FILE__ macro", "__FUNCDNAME__ macro", "__FUNCSIG__ macro", "__FUNCTION__ macro", "_INTEGRAL_MAX_BITS macro", "_ISO_VOLATILE macro", "_KERNEL_MODE macro", "__LINE__ macro", "_M_AMD64 macro", "_M_ARM macro", "_M_ARM_ARMV7VE macro", "_M_ARM_FP macro", "_M_ARM64 macro", "_M_ARM64EC macro", "_M_CEE macro", "_M_CEE_PURE macro", "_M_CEE_SAFE macro", "_M_FP_EXCEPT macro", "_M_FP_FAST macro", "_M_FP_PRECISE macro", "_M_FP_STRICT macro", "_M_IX86 macro", "_M_IX86_FP macro", "_M_X64 macro", "_MANAGED macro", "_MFC_VER macro", "_MSC_BUILD macro", "_MSC_EXTENSIONS macro", "_MSC_FULL_VER macro", "_MSC_VER macro", "_MSVC_LANG macro", "__MSVC_RUNTIME_CHECKS macro", "_MT macro", "_NATIVE_WCHAR_T_DEFINED macro", "_NO_SIZED_DEALLOCATION macro", "_OPENMP macro", "_PREFAST_ macro", "_RESUMABLE_FUNCTIONS_SUPPORTED macro", "_RTC_CONVERSION_CHECKS_ENABLED macro", "__SANITIZE_ADDRESS__ macro", "__STDC__ macro", "__STDC_HOSTED__ macro", "__STDC_NO_ATOMICS__ macro", "__STDC_NO_COMPLEX__ macro", "__STDC_NO_THREADS__ macro", "__STDC_NO_VLA__ macro", "__STDC_VERSION__ macro", "__STDCPP_DEFAULT_NEW_ALIGNMENT__", "__STDCPP_THREADS__ macro", "__TIME__ macro", "__TIMESTAMP__ macro", "__VA_ARGS__ macro", "_VC_NODEFAULTLIB macro", "_WCHAR_T_DEFINED macro", "_WIN32 macro", "_WIN64 macro", "_WINRT_DLL macro", "__func__ identifier"]
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
 no-loc: [_ATL_VER, __ATOM__, __AVX__, __AVX2__, __AVX512BW__, __AVX512CD__, __AVX512DQ__, __AVX512F__, __AVX512VL__, _CHAR_UNSIGNED, __CLR_VER, _CONTROL_FLOW_GUARD, __COUNTER__, __cplusplus, __cplusplus_cli, __cplusplus_winrt, _CPPRTTI, _CPPUNWIND, __DATE__, _DEBUG, _DLL, __FILE__, __FUNCDNAME__, __FUNCSIG__, __FUNCTION__, _INTEGRAL_MAX_BITS, _ISO_VOLATILE, _KERNEL_MODE, __LINE__, _M_AMD64, _M_ARM, _M_ARM_ARMV7VE, _M_ARM_FP, _M_ARM64, _M_ARM64EC, _M_CEE, _M_CEE_PURE, _M_CEE_SAFE, _M_FP_EXCEPT, _M_FP_FAST, _M_FP_PRECISE, _M_FP_STRICT, _M_IX86, _M_IX86_FP, _M_X64, _MANAGED, _MFC_VER, _MSC_BUILD, _MSC_EXTENSIONS, _MSC_FULL_VER, _MSC_VER, _MSVC_LANG, __MSVC_RUNTIME_CHECKS, _MT, _NATIVE_WCHAR_T_DEFINED, _NO_SIZED_DEALLOCATION, _OPENMP, _PREFAST_, _RESUMABLE_FUNCTIONS_SUPPORTED, _RTC_CONVERSION_CHECKS_ENABLED, __SANITIZE_ADDRESS__, __STDC__, __STDC_HOSTED__, __STDC_NO_ATOMICS__, __STDC_NO_COMPLEX__, __STDC_NO_THREADS__, __STDC_NO_VLA__, __STDC_VERSION__, __STDCPP_DEFAULT_NEW_ALIGNMENT__, __STDCPP_THREADS__, __TIME__, __TIMESTAMP__, __VA_ARGS__, _VC_NODEFAULTLIB, _WCHAR_T_DEFINED, _WIN32, _WIN64, _WINRT_DLL, __func__]
 ---
 # Predefined macros
 
-The Microsoft C/C++ compiler (MSVC) predefines certain preprocessor macros, depending on the language (C or C++), the compilation target, and the chosen compiler options.
+The Microsoft C/C++ compiler (MSVC) predefines certain preprocessor macros depending on the language (C or C++), the compilation target, and the chosen compiler options.
 
-MSVC supports the predefined preprocessor macros required by the ANSI/ISO C99, C11, and C17 standards, and the ISO C++14, C++17, and C++20 standards. The implementation also supports several more Microsoft-specific preprocessor macros. Some macros are defined only for specific build environments or compiler options. Except where noted, the macros are defined throughout a translation unit as if they were specified as **`/D`** compiler option arguments. When defined, the macros are expanded to the specified values by the preprocessor before compilation. The predefined macros take no arguments and can't be redefined.
+MSVC supports the predefined preprocessor macros required by the ANSI/ISO C99, C11, and C17 standards, and the ISO C++14, C++17, and C++20 standards. The implementation also supports several more Microsoft-specific preprocessor macros.
+
+Some macros are defined only for specific build environments or compiler options. Except where noted, the macros are defined throughout a translation unit as if they were specified as **`/D`** compiler option arguments. When defined, the preprocessor expands macros their specified values before compilation. The predefined macros take no arguments and can't be redefined.
 
 ## Standard predefined identifier
 
@@ -21,7 +23,8 @@ The compiler supports this predefined identifier specified by ISO C99 and ISO C+
 - `__func__` The unqualified and unadorned name of the enclosing function as a function-local **static const** array of **`char`**.
 
     ```cpp
-    void example(){
+    void example()
+    {
         printf("%s\n", __func__);
     } // prints "example"
     ```
@@ -36,9 +39,9 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 - `__FILE__` The name of the current source file. `__FILE__` expands to a character string literal. To ensure that the full path to the file is displayed, use [**`/FC`** (Full Path of Source Code File in Diagnostics)](../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md). This macro is always defined.
 
-- `__LINE__` Defined as the integer line number in the current source file. The value of the `__LINE__` macro can be changed by using a `#line` directive. The integral type of the value of `__LINE__` can vary depending on context. This macro is always defined.
+- `__LINE__` Defined as the integer line number in the current source file. The value of this macro can be changed by using a `#line` directive. The integral type of the value of `__LINE__` can vary depending on context. This macro is always defined.
 
-- `__STDC__` Defined as 1 when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Starting in Visual Studio 2022 version 17.2, it's also defined as 1 when compiled as C and if the [`/std:c11`](../build/reference/std-specify-language-standard-version.md) or [`/std:c17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. Otherwise, undefined.
+- `__STDC__` Defined as 1 when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Starting in Visual Studio 2022 version 17.2, it's defined as 1 when compiled as C and if the [`/Zc:__STDC__`](../build/reference/zc-stdc.md) compiler option is specified. Otherwise, undefined.
 
 - `__STDC_HOSTED__` Defined as 1 if the implementation is a *hosted implementation*, one that supports the entire required standard library. Otherwise, defined as 0.
 
@@ -60,23 +63,27 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 ## Microsoft-specific predefined macros
 
-MSVC supports these additional predefined macros.
+MSVC supports other predefined macros:
+
+- `__ARM_ARCH` Defined as an integer literal that represents the ARM architecture version. The value is defined as 8 for the Armv8-A architecture. For 8.1 and onwards, the value is scaled for minor versions, such as X.Y, by using the formula X * 100 + Y as defined by the ARM C language extension. For example, for Armv8.1, `__ARM_ARCH` is 8 * 100 + 1 or 801. To set the ARM architecture version, see [`/arch (ARM64)`](../build/reference/arch-arm64.md). This macro was introduced in Visual Studio 2022 version 17.10.
 
 - `__ATOM__` Defined as 1 when the [`/favor:ATOM`](../build/reference/favor-optimize-for-architecture-specifics.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX__` Defined as 1 when the [`/arch:AVX`](../build/reference/arch-x86.md), [`/arch:AVX2`](../build/reference/arch-x86.md), or [`/arch:AVX512`](../build/reference/arch-x86.md) compiler options are set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX__` Defined as 1 when the [`/arch:AVX`](../build/reference/arch-x86.md), [`/arch:AVX2`](../build/reference/arch-x86.md), [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler options are set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX2__` Defined as 1 when the [`/arch:AVX2`](../build/reference/arch-x86.md) or [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX2__` Defined as 1 when the [`/arch:AVX2`](../build/reference/arch-x86.md), [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512BW__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512BW__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512CD__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512CD__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512DQ__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512DQ__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512F__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512F__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512VL__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512VL__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) or [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+
+- `__AVX10_VER__` Defined as an integer that represents version of AVX10 when the [`/arch:AVX10.1`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
 - `_CHAR_UNSIGNED` Defined as 1 if the default **`char`** type is unsigned. This value is defined when the [**`/J`** (Default char type is unsigned)](../build/reference/j-default-char-type-is-unsigned.md) compiler option is set. Otherwise, undefined.
 
@@ -93,7 +100,7 @@ MSVC supports these additional predefined macros.
 
 - `_CONTROL_FLOW_GUARD` Defined as 1 when the [**`/guard:cf`** (Enable Control Flow Guard)](../build/reference/guard-enable-control-flow-guard.md) compiler option is set. Otherwise, undefined.
 
-- `__COUNTER__` Expands to an integer literal that starts at 0. The value is incremented by 1 every time it's used in a source file, or in included headers of the source file. `__COUNTER__` remembers its state when you use precompiled headers. This macro is always defined.
+- `__COUNTER__` Expands to an integer literal that starts at 0. The value increments by 1 every time it's used in a source file, or in included headers of the source file. `__COUNTER__` remembers its state when you use precompiled headers. This macro is always defined.
 
   This example uses `__COUNTER__` to assign unique identifiers to three different objects of the same type. The `exampleClass` constructor takes an integer as a parameter. In `main`, the application declares three objects of type `exampleClass`, using `__COUNTER__` as the unique identifier parameter:
 
@@ -230,7 +237,7 @@ MSVC supports these additional predefined macros.
 
   - 1 if the `/arch:SSE` compiler option was set.
 
-  - 2 if the `/arch:SSE2`, `/arch:AVX`, `/arch:AVX2`, or `/arch:AVX512` compiler option was set. This value is the default if an `/arch` compiler option wasn't specified. When `/arch:AVX` is specified, the macro `__AVX__` is also defined. When `/arch:AVX2` is specified, both `__AVX__` and `__AVX2__` are also defined. When `/arch:AVX512` is specified, `__AVX__`, `__AVX2__`, `__AVX512BW__`, `__AVX512CD__`, `__AVX512DQ__`, `__AVX512F__`, and `__AVX512VL__` are also defined.
+  - 2 if the `/arch:SSE2`, `/arch:AVX`, `/arch:AVX2`, `/arch:AVX512` or `/arch:AVX10.1` compiler option was set. This value is the default if an `/arch` compiler option wasn't specified. When `/arch:AVX` is specified, the macro `__AVX__` is also defined. When `/arch:AVX2` is specified, both `__AVX__` and `__AVX2__` are also defined. When `/arch:AVX512` is specified, `__AVX__`, `__AVX2__`, `__AVX512BW__`, `__AVX512CD__`, `__AVX512DQ__`, `__AVX512F__`, and `__AVX512VL__` are also defined. When `/arch:AVX10.1` is specified, `__AVX__`, `__AVX2__`, `__AVX512BW__`, `__AVX512CD__`, `__AVX512DQ__`, `__AVX512F__`, `__AVX512VL__` and `__AVX10_VER__` are also defined.
 
   - For more information, see [**`/arch`** (x86)](../build/reference/arch-x86.md).
 
@@ -238,50 +245,17 @@ MSVC supports these additional predefined macros.
 
 - `_MANAGED` Defined as 1 when the [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
 
-- `_MSC_BUILD` Defined as an integer literal that contains the revision number element of the compiler's version number. The revision number is the fourth element of the period-delimited version number. For example, if the version number of the Microsoft C/C++ compiler is 15.00.20706.01, the `_MSC_BUILD` macro evaluates to 1. This macro is always defined.
+- `_MSC_BUILD` Defined as an integer literal that contains the revision number element of the compiler's version number. The revision number is the last element of the period-delimited version number. For example, if the version number of the Microsoft C/C++ compiler is 15.00.20706.01, the `_MSC_BUILD` macro is 1. This macro is always defined.
 
 - `_MSC_EXTENSIONS` Defined as 1 if the on-by-default [**`/Ze`** (Enable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md) compiler option is set. Otherwise, undefined.
 
-- `_MSC_FULL_VER` Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element. For example, if the version number of the Microsoft C/C++ compiler is 15.00.20706.01, the `_MSC_FULL_VER` macro evaluates to 150020706. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
+- `_MSC_FULL_VER` Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element.
 
-- `_MSC_VER` Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Microsoft C/C++ compiler is 17.00.51106.1, the `_MSC_VER` macro evaluates to 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
+   For example, if the Microsoft C/C++ compiler version is 19.39.33519, `_MSC_FULL_VER` is 193933519. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined. For more information about compiler versioning, see [C++ compiler versioning](../overview/compiler-versions.md) and specifically [Service releases starting with Visual Studio 2017](../overview/compiler-versions.md#service-releases-starting-with-visual-studio-2017) for more information about Visual Studio 2019 16.8, 16.9, 16.10 and 16.11, which require `_MSC_FULL_VER` to tell them apart.
 
-   | Visual Studio version | `_MSC_VER` |
-   |--|--|
-   | Visual Studio 6.0 | 1200 |
-   | Visual Studio .NET 2002 (7.0) | 1300 |
-   | Visual Studio .NET 2003 (7.1) | 1310 |
-   | Visual Studio 2005 (8.0) | 1400 |
-   | Visual Studio 2008 (9.0) | 1500 |
-   | Visual Studio 2010 (10.0) | 1600 |
-   | Visual Studio 2012 (11.0) | 1700 |
-   | Visual Studio 2013 (12.0) | 1800 |
-   | Visual Studio 2015 (14.0) | 1900 |
-   | Visual Studio 2017 RTW (15.0) | 1910 |
-   | Visual Studio 2017 version 15.3 | 1911 |
-   | Visual Studio 2017 version 15.5 | 1912 |
-   | Visual Studio 2017 version 15.6 | 1913 |
-   | Visual Studio 2017 version 15.7 | 1914 |
-   | Visual Studio 2017 version 15.8 | 1915 |
-   | Visual Studio 2017 version 15.9 | 1916 |
-   | Visual Studio 2019 RTW (16.0) | 1920 |
-   | Visual Studio 2019 version 16.1 | 1921 |
-   | Visual Studio 2019 version 16.2 | 1922 |
-   | Visual Studio 2019 version 16.3 | 1923 |
-   | Visual Studio 2019 version 16.4 | 1924 |
-   | Visual Studio 2019 version 16.5 | 1925 |
-   | Visual Studio 2019 version 16.6 | 1926 |
-   | Visual Studio 2019 version 16.7 | 1927 |
-   | Visual Studio 2019 version 16.8, 16.9 | 1928 |
-   | Visual Studio 2019 version 16.10, 16.11 | 1929 |
-   | Visual Studio 2022 RTW (17.0) | 1930 |
-   | Visual Studio 2022 version 17.1 | 1931 |
-   | Visual Studio 2022 version 17.2 | 1932 |
-   | Visual Studio 2022 version 17.3 | 1933 |
-   | Visual Studio 2022 version 17.4 | 1934 |
-   | Visual Studio 2022 version 17.5 | 1935 |
+- `_MSC_VER` Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Microsoft C/C++ compiler is 17.00.51106.1, the value of `_MSC_VER` is 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
 
-   To test for compiler releases or updates in a given version of Visual Studio or after, use the `>=` operator. You can use it in a conditional directive to compare `_MSC_VER` against that known version. If you have several mutually exclusive versions to compare, order your comparisons in descending order of version number. For example, this code checks for compilers released in Visual Studio 2017 and later. Next, it checks for compilers released in or after Visual Studio 2015. Then it checks for all compilers released before Visual Studio 2015:
+   To test for compiler releases or updates in a given version of Visual Studio or later, use the `>=` operator. You can use it in a conditional directive to compare `_MSC_VER` against that known version. If you have several mutually exclusive versions to compare, order your comparisons in descending order of version number. For example, this code checks for compilers released in Visual Studio 2017 and later. Next, it checks for compilers released in or after Visual Studio 2015. Then it checks for all compilers released before Visual Studio 2015:
 
    ```cpp
    #if _MSC_VER >= 1910
@@ -293,11 +267,11 @@ MSVC supports these additional predefined macros.
    #endif
    ```
 
-   To test for compiler versions that share major and minor numbers, use the major, minor, and build numbers in `_MSC_FULL_VER` for comparisons. The compilers in Visual Studio 2019 version 16.9 have an `_MSC_FULL_VER` value of 192829500 or greater. The compilers in Visual Studio 2019 version 16.11 have an `_MSC_FULL_VER` value of 192930100 or greater.
+   For more information about Visual Studio 2019 16.8 and 16.9, and 16.10 and 16.11, which share the same major and minor versions (and so have the same value for `_MSC_VER`), see [Service releases starting with Visual Studio 2017](../overview/compiler-versions.md#service-releases-starting-with-visual-studio-2017).
 
-   For more information, see [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) in the Microsoft C++ Team Blog.
+   For more information about the history of compiler versioning, and compiler version numbers and the Visual Studio versions they correspond to, see [C++ compiler versioning](../overview/compiler-versions.md). Also, [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) on the Microsoft C++ team blog.
 
-- `_MSVC_LANG` Defined as an integer literal that specifies the C++ language standard targeted by the compiler. It's set only in code compiled as C++. The macro is the integer literal value `201402L` by default, or when the [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `201703L` if the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `202002L` if the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. It's set to a higher, unspecified value when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) option is specified. Otherwise, the macro is undefined. The `_MSVC_LANG` macro and [`/std` (Specify language standard version)](../build/reference/std-specify-language-standard-version.md) compiler options are available beginning in Visual Studio 2015 Update 3.
+- `_MSVC_LANG` Defined as an integer literal that specifies the C++ language standard targeted by the compiler. Only code compiled as C++ sets it. The macro is the integer literal value `201402L` by default, or when the [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `201703L` if the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to `202002L` if the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. It's set to a higher, unspecified value when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) option is specified. Otherwise, the macro is undefined. The `_MSVC_LANG` macro and [`/std` (Specify language standard version)](../build/reference/std-specify-language-standard-version.md) compiler options are available beginning in Visual Studio 2015 Update 3.
 
 - `__MSVC_RUNTIME_CHECKS` Defined as 1 when one of the [`/RTC`](../build/reference/rtc-run-time-error-checks.md) compiler options is set. Otherwise, undefined.
 
@@ -338,17 +312,17 @@ MSVC supports these additional predefined macros.
 
 - `_WCHAR_T_DEFINED` Defined as 1 when the default [`/Zc:wchar_t`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option is set. The `_WCHAR_T_DEFINED` macro is defined but has no value if the **`/Zc:wchar_t-`** compiler option is set, and **`wchar_t`** is defined in a system header file included in your project. Otherwise, undefined.
 
-- `_WIN32` Defined as 1 when the compilation target is 32-bit ARM, 64-bit ARM, x86, or x64. Otherwise, undefined.
+- `_WIN32` Defined as 1 when the compilation target is 32-bit ARM, 64-bit ARM, x86, x64, or ARM64EC. Otherwise, undefined.
 
-- `_WIN64` Defined as 1 when the compilation target is 64-bit ARM or x64. Otherwise, undefined.
+- `_WIN64` Defined as 1 when the compilation target is 64-bit ARM, x64, or ARM64EC. Otherwise, undefined.
 
 - `_WINRT_DLL` Defined as 1 when compiled as C++ and both [**`/ZW`** (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md) and [**`/LD`** or **`/LDd`**](../build/reference/md-mt-ld-use-run-time-library.md) compiler options are set. Otherwise, undefined.
 
 No preprocessor macros that identify the ATL or MFC library version are predefined by the compiler. ATL and MFC library headers define these version macros internally. They're undefined in preprocessor directives made before the required header is included.
 
-- `_ATL_VER` Defined in \<atldef.h> as an integer literal that encodes the ATL version number.
+- `_ATL_VER` Defined in `<atldef.h>` as an integer literal that encodes the ATL version number.
 
-- `_MFC_VER` Defined in \<afxver_.h> as an integer literal that encodes the MFC version number.
+- `_MFC_VER` Defined in `<afxver_.h>` as an integer literal that encodes the MFC version number.
 
 ## See also
 

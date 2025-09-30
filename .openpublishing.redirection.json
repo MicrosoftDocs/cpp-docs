@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/windows/desktop-applications-visual-cpp.md",
+      "redirect_url": "/cpp/windows/overview-of-windows-programming-in-cpp",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/cpp-conformance-improvements-2017.md",
       "redirect_url": "/cpp/overview/cpp-conformance-improvements",
       "redirect_document_id": true
@@ -16,7 +21,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/supported-platforms-visual-cpp.md.md",
+      "source_path": "docs/supported-platforms-visual-cpp.md",
       "redirect_url": "/cpp/overview/supported-platforms-visual-cpp",
       "redirect_document_id": true
     },
@@ -7431,7 +7436,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/dotnet/how-to-enumerate-data-types-in-assemblies-using-reflection-cpp-cli.md.md",
+      "source_path": "docs/dotnet/how-to-enumerate-data-types-in-assemblies-using-reflection-cpp-cli.md",
       "redirect_url": "/cpp/dotnet/reflection-cpp-cli#enumerate",
       "redirect_document_id": false
     },
@@ -7743,6 +7748,21 @@
     {
       "source_path": "docs/error-messages/compiler-errors-2/index.md",
       "redirect_url": "/cpp/error-messages/compiler-errors-2/compiler-errors-c2500-through-c2599",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/error-messages/compiler-errors-1/fatal-error-c999.md",
+      "redirect_url": "/cpp/error-messages/compiler-errors-1/c-cpp-build-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/error-messages/compiler-errors-1/fatal-error-c1000-c1999.md",
+      "redirect_url": "/cpp/error-messages/compiler-errors-1/c-cpp-build-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/error-messages/compiler-warnings/compiler-warning-level-1-c4999.md",
+      "redirect_url": "/cpp/error-messages/compiler-errors-1/c-cpp-build-errors",
       "redirect_document_id": false
     },
     {
@@ -13732,12 +13752,17 @@
     },
     {
       "source_path": "docs/c-runtime-library/operator-delete-crt.md",
-      "redirect_url": "docs/c-runtime-library/delete-operator-crt",
+      "redirect_url": "/cpp/c-runtime-library/delete-operator-crt",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/c-runtime-library/operator-new-crt.md",
-      "redirect_url": "docs/c-runtime-library/new-operator-crt",
+      "redirect_url": "/cpp/c-runtime-library/new-operator-crt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/overview/whats-new-cpp-docs.md",
+      "redirect_url": "../../cpp/overview/what-s-new-for-visual-cpp-in-visual-studio",
       "redirect_document_id": false
     }
   ]

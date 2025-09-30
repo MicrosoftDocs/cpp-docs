@@ -57,7 +57,7 @@ For a description of the following entries, see [View class characteristics](vie
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 
@@ -102,7 +102,7 @@ The best way to create an `values_view` is by using the [`values`](range-adaptor
 #include <iostream>
 #include <map>
 #include <string>
-#include <utililty>
+#include <utility>
 #include <vector>
 
 int main()
@@ -116,7 +116,7 @@ int main()
         {"C++11", 2011},
         {"C++14", 2014},
         {"C++17", 2017},
-        {"c++20", 2020}
+        {"C++20", 2020}
     };
 
     // Extract all of the values from the map

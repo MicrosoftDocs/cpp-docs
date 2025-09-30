@@ -1,15 +1,14 @@
 ---
-description: "Learn more about: Platform::Metadata::RuntimeClassName"
 title: "Platform::Metadata::RuntimeClassName"
+description: "Learn more about: Platform::Metadata::RuntimeClassName"
 ms.date: "12/30/2016"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Metadata::RuntimeClassName"]
 helpviewer_keywords: ["RuntimeClassName", "Platform::Metadata::RuntimeClassName"]
-ms.assetid: fdef8f85-ab94-4edd-ba50-ee0da9358ff6
 ---
 # Platform::Metadata::RuntimeClassName
 
-When applied to a class definition, ensures that a private class returns a valid name from the GetRuntimeClassName function..
+When applied to a class definition, ensures that a private class returns a valid name from the GetRuntimeClassName function.
 
 ## Syntax
 

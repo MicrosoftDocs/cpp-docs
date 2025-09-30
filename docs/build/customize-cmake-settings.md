@@ -3,6 +3,7 @@ description: "Learn more about: Customize CMake build settings"
 title: "Customize CMake build settings in Visual Studio"
 ms.date: 12/15/2021
 helpviewer_keywords: ["CMake build settings"]
+ms.topic: how-to
 ---
 # Customize CMake build settings
 
@@ -14,11 +15,13 @@ If you maintain projects that use a *`CMakeSettings.json`* file for CMake build 
 
 To open the CMake settings editor, select the **Configuration** drop-down in the main toolbar and choose **Manage Configurations**.
 
-![Screenshot of the CMake configuration drop-down that highlights the Manage Configurations selection.](media/vs2019-cmake-manage-configurations.png)
+![Screenshot of the CMake configuration drop-down. Manage Configurations is highlighted.](media/vs2019-cmake-manage-configurations.png)
 
 Now you see the **Settings Editor** with the installed configurations on the left.
 
-![Screenshot of the CMake settings editor.](media/cmake-settings-editor.png)
+:::image type="complex" source="media/cmake-settings-editor.png" alt-text="Screenshot of the CMake settings editor.":::
+The left pane shows the installed configurations (x86-Debug). The right pane shows the settings for the selected configuration. The settings include the configuration name, configuration type (set to Debug), toolset (set to msvc_x86), CMake toolchain file (empty), build root (contains ${env:USERPROFILE}\CMakeBuilds\${workspaceHash}\build\${name}), CMake command arguments (empty), and build command arguments (-v).
+:::image-end:::
 
 Visual Studio provides one `x64-Debug` configuration by default. You can add more configurations by choosing the green plus sign. The settings that you see in the editor might vary depending on which configuration is selected.
 
@@ -34,7 +37,7 @@ Corresponds to the **name** setting. This name appears in the C++ configuration 
 
 ### Configuration type
 
-Corresponds to the **configurationType** setting. Defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo". It maps to [`CMAKE_BUILD_TYPE`](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html).
+Corresponds to the **configurationType** setting. Defines the build configuration type for the selected generator. Currently supported values are Debug, MinSizeRel, Release, and RelWithDebInfo. It maps to [`CMAKE_BUILD_TYPE`](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html).
 
 ### Toolset
 
@@ -42,7 +45,7 @@ Corresponds to the **inheritedEnvironments** setting. Defines the compiler envir
 
 ### CMake toolchain file
 
-Path to the [CMake toolchain file](https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html). This path is passed to CMake as "-DCMAKE_TOOLCHAIN_FILE = \<filepath>". Toolchain files specify locations of compilers and toolchain utilities, and other target platform and compiler-related information. By default, Visual Studio uses the [vcpkg toolchain file](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md#cmake) if this setting is unspecified.
+Path to the [CMake toolchain file](https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html). This path is passed to CMake as `"-DCMAKE_TOOLCHAIN_FILE = <filepath>`. Toolchain files specify locations of compilers and toolchain utilities, and other target platform and compiler-related information. By default, Visual Studio uses the [vcpkg toolchain file](https://github.com/microsoft/vcpkg-docs/blob/main/vcpkg/examples/installing-and-using-packages.md#cmake) if this setting is unspecified.  
 
 ### Build root
 
@@ -70,7 +73,7 @@ For configurations such as Linux that use remote builds, the following settings 
 
 ### `rsync` command arguments
 
-Extra command-line options passed to [`rsync`](https://download.samba.org/pub/rsync/rsync.html), a fast, versatile file-copying tool.
+Extra command-line options passed to [`rsync`](https://download.samba.org/pub/rsync/), a fast, versatile file-copying tool.
 
 ## CMake variables and cache
 
@@ -96,7 +99,7 @@ Corresponds to **generator**. Maps to the CMake **`-G`** switch, and specifies t
 - "Visual Studio 14 2015 Win64"
 - "Visual Studio 14 2015 ARM"
   
-Because Ninja is designed for fast build speeds instead of flexibility and function, it's set as the default. However, some CMake projects may be unable to correctly build using Ninja. If that occurs, you can instruct CMake to generate a Visual Studio project instead.
+Because Ninja is designed for fast build speeds instead of flexibility and function, it's set as the default. However, some CMake projects might be unable to correctly build using Ninja. If that occurs, you can instruct CMake to generate a Visual Studio project instead.
 
 ### IntelliSense mode
 
@@ -190,8 +193,10 @@ You can also directly edit *`CMakeSettings.json`* to create custom configuration
 
 JSON IntelliSense helps you edit the *`CMakeSettings.json`* file:
 
-   ![Screenshot of the CMake JSON IntelliSense pop-up in the editor.](media/cmake-json-intellisense.png "CMake JSON IntelliSense")
-
+   :::image type="complex" source="media/cmake-json-intellisense.png" alt-text="Screenshot of the CMake JSON IntelliSense pop-up in the editor.":::
+   The JSON IntelliSense pop-up for "configurations" shows buildCommandArgs, buildRoot, cmakeCommandArgs, configurationType, among several others.
+   :::image-end:::
+    
 For more information about each of the properties in the file, see [`CMakeSettings.json` schema reference](cmakesettings-reference.md).
 
 ::: moniker-end

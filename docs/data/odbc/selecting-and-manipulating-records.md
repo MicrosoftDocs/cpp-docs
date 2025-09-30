@@ -4,6 +4,7 @@ title: "Selecting and Manipulating Records"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["records, selecting", "record selection, MFC ODBC classes", "ODBC recordsets, selecting records"]
 ms.assetid: 7f0b3a4a-9941-4475-a612-9ec8d15b7691
+ms.topic: concept-article
 ---
 # Selecting and Manipulating Records
 

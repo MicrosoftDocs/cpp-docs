@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Event Sink Maps"
 title: "Event Sink Maps"
-ms.date: "11/04/2016"
+description: "Learn more about: Event Sink Maps"
+ms.date: 11/04/2016
 helpviewer_keywords: ["event sink maps [MFC]"]
-ms.assetid: a9757eb2-5f4a-45ec-a2cd-ce5eec85b16f
 ---
 # Event Sink Maps
 
@@ -158,7 +157,7 @@ For a list of the **VTS_** constants, see [EVENT_CUSTOM](event-maps.md#event_cus
 
 ### Example
 
-The following example demonstrates an event handler, for the MouseDown event, implemented for three controls ( IDC_MYCTRL1 through IDC_MYCTRL3). The event handler function, `OnRangeMouseDown`, is declared in the header file of the dialog class ( `CMyDlg`) as:
+The following example demonstrates an event handler, for the MouseDown event, implemented for three controls ( IDC_MYCTRL1 through IDC_MYCTRL3). The event handler function, `OnRangeMouseDown`, is declared in the header file of the dialog class (`CMyDlg`) as:
 
 [!code-cpp[NVC_MFCAutomation#12](../../mfc/codesnippet/cpp/event-sink-maps_2.h)]
 

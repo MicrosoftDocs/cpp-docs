@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: basic_istringstream Class"
 title: "basic_istringstream Class"
+description: "Learn more about: basic_istringstream Class"
 ms.date: 06/10/2022
 f1_keywords: ["sstream/std::basic_istringstream", "sstream/std::basic_istringstream::allocator_type", "sstream/std::basic_istringstream::rdbuf", "sstream/std::basic_istringstream::str", "sstream/std::basic_istringstream::swap"]
 helpviewer_keywords: ["std::basic_istringstream [C++]", "std::basic_istringstream [C++], allocator_type", "std::basic_istringstream [C++], rdbuf", "std::basic_istringstream [C++], str", "std::basic_istringstream [C++], swap"]
-ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915
 ms.custom: devdivchpfy22
 ---
 
@@ -103,7 +102,7 @@ An rvalue reference of a `basic_istringstream` object.
 
 ### Remarks
 
-The first constructor initializes the base class by calling `basic_istream]( sb )`, where `sb` is the stored object of class `basic_stringbuf< Elem, Tr, Alloc>`. It also initializes `sb` by calling `basic_stringbuf< Elem, Tr, Alloc >( _Mode | ios_base::in )`. For more information, see [`basic_istream`](../standard-library/basic-istream-class.md) and [`basic_stringbuf`](../standard-library/basic-stringbuf-class.md).
+The first constructor initializes the base class by calling `basic_istream( sb )`, where `sb` is the stored object of class `basic_stringbuf< Elem, Tr, Alloc>`. It also initializes `sb` by calling `basic_stringbuf< Elem, Tr, Alloc >( _Mode | ios_base::in )`. For more information, see [`basic_istream`](../standard-library/basic-istream-class.md) and [`basic_stringbuf`](../standard-library/basic-stringbuf-class.md).
 
 The second constructor initializes the base class by calling `basic_istream( sb )`. It also initializes `sb` by calling `basic_stringbuf< Elem, Tr, Alloc >( str, _Mode | ios_base::in )`.
 
@@ -164,7 +163,7 @@ Returns an object of class [basic_string](../standard-library/basic-string-class
 
 ### Remarks
 
-The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**( `_Newstr`).
+The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**(`_Newstr`).
 
 ### Example
 

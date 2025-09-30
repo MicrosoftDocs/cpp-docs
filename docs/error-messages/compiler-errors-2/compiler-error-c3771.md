@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3771"
 title: "Compiler Error C3771"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3771"
+ms.date: 11/04/2016
 f1_keywords: ["C3771"]
 helpviewer_keywords: ["C3771"]
-ms.assetid: 68c23b25-7f21-4eaa-8f7e-38fda1130a69
 ---
 # Compiler Error C3771
 
-"identifier" : friend declaration cannot be found in the nearest namespace scope
+> "identifier" : friend declaration cannot be found in the nearest namespace scope
+
+## Remarks
 
 The class template declaration for the specified template *identifier* cannot be found within the current namespace.
 
@@ -26,7 +27,7 @@ The following code example declares a class template and function in namespace `
 
 namespace NA {
 template<class T> class A {
-    void aFunction(T t) {};
+    void aFunction(T t) {}
     };
 }
 // using namespace NA;

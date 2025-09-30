@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: Using SAL Annotations to Reduce C/C++ Code Defects"
 title: Using SAL Annotations to Reduce C/C++ Code Defects
+description: "Learn more about: Using SAL Annotations to Reduce C/C++ Code Defects"
 ms.date: 11/04/2016
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 helpviewer_keywords:
   - "annotations"
   - "SAL annotations"
   - "code analysis, annotation"
-ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
 ---
 # Using SAL Annotations to Reduce C/C++ Code Defects
 
@@ -47,6 +46,6 @@ The articles in this section of the documentation discuss aspects of SAL, provid
 
      Provides examples that show how to use SAL annotations. Also explains common pitfalls.
 
-## See Also
+## See also
 
 [SAL 2.0 Annotations for Windows Drivers](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers)

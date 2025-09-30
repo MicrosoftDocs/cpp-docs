@@ -1,10 +1,9 @@
 ---
 title: "set Class"
 description: "API reference for the C++ Standard Library container class `set`, which is used to store and retrieve data from a collection."
-ms.date: "9/9/2020"
+ms.date: 9/9/2020
 f1_keywords: ["set/std::set", "set/std::set::allocator_type", "set/std::set::const_iterator", "set/std::set::const_pointer", "set/std::set::const_reference", "set/std::set::const_reverse_iterator", "set/std::set::difference_type", "set/std::set::iterator", "set/std::set::key_compare", "set/std::set::key_type", "set/std::set::pointer", "set/std::set::reference", "set/std::set::reverse_iterator", "set/std::set::size_type", "set/std::set::value_compare", "set/std::set::value_type", "set/std::set::begin", "set/std::set::cbegin", "set/std::set::cend", "set/std::set::clear", "set/std::set::contains", "set/std::set::count", "set/std::set::crbegin", "set/std::set::crend", "set/std::set::emplace", "set/std::set::emplace_hint", "set/std::set::empty", "set/std::set::end", "set/std::set::equal_range", "set/std::set::erase", "set/std::set::find", "set/std::set::get_allocator", "set/std::set::insert", "set/std::set::key_comp", "set/std::set::lower_bound", "set/std::set::max_size", "set/std::set::rbegin", "set/std::set::rend", "set/std::set::size", "set/std::set::swap", "set/std::set::upper_bound", "set/std::set::value_comp"]
 helpviewer_keywords: ["std::set [C++]", "std::set [C++], allocator_type", "std::set [C++], const_iterator", "std::set [C++], const_pointer", "std::set [C++], const_reference", "std::set [C++], const_reverse_iterator", "std::set [C++], difference_type", "std::set [C++], iterator", "std::set [C++], key_compare", "std::set [C++], key_type", "std::set [C++], pointer", "std::set [C++], reference", "std::set [C++], reverse_iterator", "std::set [C++], size_type", "std::set [C++], value_compare", "std::set [C++], value_type", "std::set [C++], begin", "std::set [C++], cbegin", "std::set [C++], cend", "std::set [C++], clear", "std::set [C++], contains", "std::set [C++], count", "std::set [C++], crbegin", "std::set [C++], crend", "std::set [C++], emplace", "std::set [C++], emplace_hint", "std::set [C++], empty", "std::set [C++], end", "std::set [C++], equal_range", "std::set [C++], erase", "std::set [C++], find", "std::set [C++], get_allocator", "std::set [C++], insert", "std::set [C++], key_comp", "std::set [C++], lower_bound", "std::set [C++], max_size", "std::set [C++], rbegin", "std::set [C++], rend", "std::set [C++], size", "std::set [C++], swap", "std::set [C++], upper_bound", "std::set [C++], value_comp"]
-ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
 ---
 # `set` Class
 
@@ -27,7 +26,7 @@ The element data type to be stored in the set.
 *`Traits`*\
 The type that provides a function object that can compare two element values as sort keys to determine their relative order in the set. This argument is optional, and the binary predicate `less <Key>` is the default value.
 
-In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers) for more information.
+In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
 
 *`Allocator`*\
 The type that represents the stored allocator object that encapsulates details about the set's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<Key>`.
@@ -52,7 +51,7 @@ The set should be the associative container of choice when the conditions associ
 
 The set orders the sequence it controls by calling a stored function object of type [`key_compare`](#key_compare). This stored object is a comparison function that may be accessed by calling the member function [`key_comp`](#key_comp). In general, the elements need to be merely less than comparable to establish this order so that, given any two elements, it may be determined either that they're equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*(*x,y*) is a function object that has two argument objects *x* and *y* and a return value of **`true`** or **`false`**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects *x* and *y* are defined to be equivalent when both *f* *x,y*) and *f*(*y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
-In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers) for more information.
+In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
 
 The iterator provided by the set class is a bidirectional iterator, but the class member functions [`insert`](#insert) and [`set`](#set) have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own set of requirements, and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal set of functionality, but it's enough to be able to talk meaningfully about a range of iterators [ `First`, `Last`) in the context of the class's member functions.
 
@@ -400,12 +399,12 @@ The element's key value to look for.
 
 `contains()` is new in C++20. To use it, specify the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
-`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](./stl-containers.md#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
 
 ### Example
 
 ```cpp
-// Requires /std:c++20 or /std:c++latest
+// Requires /std:c++20 or later
 #include <set>
 #include <iostream>
 
@@ -886,7 +885,7 @@ The argument key to be compared with the sort key of an element from the set bei
 
 A pair of iterators where the first is the [`lower_bound`](#lower_bound) of the key and the second is the [`upper_bound`](#upper_bound) of the key.
 
-To access the first iterator of a pair `pr` returned by the member function, use `pr`. **first**, and to dereference the lower bound iterator, use \*( `pr`. **first**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **second**, and to dereference the upper bound iterator, use \*( `pr`. **second**).
+To access the first iterator of a pair `pr` returned by the member function, use `pr`. **first**, and to dereference the lower bound iterator, use \*(`pr`. **first**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **second**, and to dereference the upper bound iterator, use \*(`pr`. **second**).
 
 ### Example
 
@@ -1327,7 +1326,6 @@ template <typename S> void print(const S& s) {
 
 int main()
 {
-
     // insert single values
     set<int> s1;
     // call insert(const value_type&) version

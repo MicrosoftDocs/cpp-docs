@@ -1,20 +1,19 @@
 ---
 title: "if-else statement (C++)"
 description: "Use if-else, if-else with initializer, and if-constexpr statements to control conditional branching."
-ms.date: 10/02/2020
+ms.date: 10/16/2023
 f1_keywords: ["else_cpp", "if_cpp"]
 helpviewer_keywords: ["if keyword [C++]", "else keyword [C++]"]
-ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
 ---
 # if-else statement (C++)
 
-An if-else statement controls conditional branching. Statements in the *`if-branch`* are executed only if the *`condition`* evaluates to a non-zero value (or **`true`**). If the value of *`condition`* is nonzero, the following statement gets executed, and the statement following the optional **`else`** gets skipped. Otherwise, the following statement gets skipped, and if there's an **`else`** then the statement following the **`else`** gets executed.
+An if-else statement controls conditional branching. Statements in the *`if-branch`* are executed only if the *`condition`* evaluates to a nonzero value (or **`true`**). If the value of *`condition`* is nonzero, the following statement gets executed, and the statement following the optional **`else`** gets skipped. Otherwise, the following statement gets skipped, and if there's an **`else`** then the statement following the **`else`** gets executed.
 
-*`condition`* expressions that evaluate to non-zero are:
+*`condition`* expressions that evaluate to nonzero are:
 
 - **`true`**
 - a non-null pointer,
-- any non-zero arithmetic value, or
+- any nonzero arithmetic value, or
 - a class type that defines an unambiguous conversion to an arithmetic, boolean, or pointer type. (For information about conversions, see [Standard Conversions](../cpp/standard-conversions.md).)
 
 ## Syntax
@@ -69,52 +68,54 @@ This sample code shows several **`if`** statements in use, both with and without
 
 using namespace std;
 
-class C
-{
-    public:
-    void do_something(){}
-};
-void init(C){}
-bool is_true() { return true; }
-int x = 10;
-
 int main()
 {
-    if (is_true())
+    int x = 10;
+
+    if (x < 11)
     {
-        cout << "b is true!\n";  // executed
+        cout << "x < 11 is true!\n";  // executed
     }
     else
     {
-        cout << "b is false!\n";
+        cout << "x < 11 is false!\n"; // not executed
     }
 
     // no else statement
-    if (x == 10)
+    bool flag = false;
+    if (flag == true)
     {
-        x = 0;
+        x = 100; // not executed
     }
 
-    C* c;
-    init(c);
-    if (c)
+    int *p = new int(25);
+    if (p)
     {
-        c->do_something();
+        cout << *p << "\n"; // outputs 25
     }
     else
     {
-        cout << "c is null!\n";
+        cout << "p is null!\n"; // executed if memory allocation fails
     }
 }
 ```
 
+Output:
+
+```output
+x < 11 is true!
+25
+```
+
 ## <a name="if_with_init"></a> if statement with an initializer
 
-Starting in C++17, an **`if`** statement may also contain an *`init-statement`* expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-statement. **Microsoft-specific**: This form is available starting in Visual Studio 2017 version 15.3, and requires at least the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option.
+Starting in C++17, an **`if`** statement might also contain an *`init-statement`* expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-statement. **Microsoft-specific**: This form is available starting in Visual Studio 2017 version 15.3, and requires at least the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
 ### Example
 
 ```cpp
+// Compile with /std:c++17
+
 #include <iostream>
 #include <mutex>
 #include <map>
@@ -123,28 +124,26 @@ Starting in C++17, an **`if`** statement may also contain an *`init-statement`* 
 
 using namespace std;
 
-map<int, string> m;
+map<int, string> m{ {1, "one"}, {2, "two"}, {10,"ten"} };
 mutex mx;
-bool shared_flag; // guarded by mx
-void unsafe_operation() {}
+bool shared_flag = true; // guarded by mx
+int getValue() { return 42; }
 
 int main()
 {
-
     if (auto it = m.find(10); it != m.end())
     {
-        cout << it->second;
-        return 0;
+        cout << it->second << "\n";
     }
 
-    if (char buf[10]; fgets(buf, 10, stdin))
+    if (int x = getValue(); x == 42)
     {
-        m[0] += buf;
+        cout << "x is 42\n";
     }
 
     if (lock_guard<mutex> lock(mx); shared_flag)
     {
-        unsafe_operation();
+        cout << "setting shared_flag to false\n";
         shared_flag = false;
     }
 
@@ -156,31 +155,62 @@ int main()
 }
 ```
 
-## <a name="if_constexpr"> if constexpr statements
+Output:
+
+```Output
+ten
+x is 42
+setting shared_flag to false
+Error! Token must not be a keyword
+```
+
+## <a name="if_constexpr"></a> if constexpr statements
 
 Starting in C++17, you can use an **`if constexpr`** statement in function templates to make compile-time branching decisions without having to resort to multiple function overloads. **Microsoft-specific**: This form is available starting in Visual Studio 2017 version 15.3, and requires at least the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
 ### Example
 
-This example shows how you can write a single function that handles parameter unpacking. No zero-parameter overload is needed:
+This example shows how you can conditionally compile a template based on the type sent to it:
 
 ```cpp
-template <class T, class... Rest>
-void f(T&& t, Rest&&... r)
-{
-    // handle t
-    do_something(t);
+// Compile with /std:c++17
+#include <iostream>
 
-    // handle r conditionally
-    if constexpr (sizeof...(r))
+template<typename T>
+auto Show(T t)
+{
+    //if (std::is_pointer_v<T>) // Show(a) results in compiler error for return *t. Show(b) results in compiler error for return t.
+    if constexpr (std::is_pointer_v<T>) // This statement goes away for Show(a)
     {
-        f(r...);
+        return *t;
     }
     else
     {
-        g(r...);
+        return t;
     }
 }
+
+int main()
+{
+    int a = 42;
+    int* pB = &a;
+
+    std::cout << Show(a) << "\n"; // prints "42"
+    std::cout << Show(pB) << "\n"; // prints "42"
+}
+```
+
+The **`if constexpr`** statement is evaluated at compile time, and the compiler only generates code for the **`if`** branch that matches the type of the argument sent to the function template. If you comment out the **`if constexpr`** statement and uncomment the **`if`** statement, the compiler generates code for both branches. That means you get an error:
+- If you call `ShowValue(a);` you get an error on `return *t` because `t` isn't a pointer, even though the **`if`** statement is false and the code is never executed. 
+- If you call `ShowValue(pB);` you get an error on `return t` because `t` is a pointer, even though the **`if`** statement is true and the code is never executed.
+ 
+Using `if constexpr` solves this problem because only the statement that matches the type of the argument sent to the function template is compiled.
+
+Output:
+
+```output
+42
+42
 ```
 
 ## See also

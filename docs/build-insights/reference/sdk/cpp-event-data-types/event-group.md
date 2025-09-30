@@ -42,11 +42,11 @@ The activity type contained in the group.
 
 ### Functions
 
-[Back](#back)
-[begin](#begin)
-[end](#end)
-[Front](#front)
-[operator[]](#subscript-operator)
+[Back](#back)\
+[begin](#begin)\
+[end](#end)\
+[Front](#front)\
+[operator[]](#subscript-operator)\
 [Size](#size)
 
 ## <a name="back"></a> Back

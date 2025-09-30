@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: <iterator> functions"
 title: "<iterator> functions"
-ms.date: "11/04/2016"
+description: "Learn more about: <iterator> functions"
+ms.date: 11/04/2016
 f1_keywords: ["xutility/std::advance", "xutility/std::back_inserter", "xutility/std::begin", "xutility/std::cbegin", "xutility/std::cend", "xutility/std::distance", "xutility/std::end", "xutility/std::front_inserter", "xutility/std::inserter", "xutility/std::make_checked_array_iterator", "xutility/std::make_move_iterator", "xutility/std::make_unchecked_array_iterator", "xutility/std::next", "xutility/std::prev"]
 helpviewer_keywords: ["std::advance [C++]", "std::back_inserter [C++]", "std::begin [C++]", "std::cbegin [C++]", "std::cend [C++]", "std::distance [C++]", "std::end [C++]", "std::front_inserter [C++]", "std::inserter [C++]", "std::make_checked_array_iterator [C++]", "std::make_move_iterator [C++]", "std::make_unchecked_array_iterator [C++]", "std::next [C++]", "std::prev [C++]"]
 ---
@@ -159,11 +159,11 @@ Retrieves an iterator to the first element in a specified container.
 
 ```cpp
 template <class Container>
-auto begin(Container& cont)  `
+auto begin(Container& cont)
    -> decltype(cont.begin());
 
 template <class Container>
-auto begin(const Container& cont)   `
+auto begin(const Container& cont)
    -> decltype(cont.begin());
 
 template <class Ty, class Size>
@@ -386,7 +386,7 @@ The sentinel follows the last element in a reversed view of the container.
 
 :::image type="content" source="media/crbegin-crend-sentinel.png" alt-text="Picture of a vector containing the elements 10, 20, and 30. There's an imaginary box before the leftmost element (the leftmost element contains the number 10) that represents the sentinel. It's labeled crend(). The first element in the vector contains the number 10, and is labeled 'last element'. The rightmost element in the vector contains 30 and is labeled crbegin().":::
 
-### `crend`example
+### `crend` example
 
 ```cpp
 #include <vector>
@@ -570,7 +570,7 @@ The type of the data in the array.
 
 ### Return value
 
-Returns `true` if the container has no elements; otherwise `false.`
+Returns `true` if the container has no elements; otherwise `false`.
 
 ### Example
 
@@ -1096,7 +1096,7 @@ A reverse iterator to the sentinel at the end of the container. The sentinel fol
 
 :::image type="content" source="media/rbegin-rend-sentinel.png" alt-text="Picture of a vector containing the elements 10, 20, and 30. There's an imaginary box before the leftmost element (the leftmost element contains the number 10) that represents the sentinel. It's labeled rend(). The first element in the vector contains the number 10, and is labeled 'last element'. The rightmost element in the vector contains 30 and is labeled rbegin().":::
 
-### `rend`example
+### `rend` example
 
 ```cpp
 #include <vector>

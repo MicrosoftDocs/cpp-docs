@@ -328,7 +328,7 @@ enum Selection {
     };
 ```
 
-Brief desccriptions of these values follow:
+Brief descriptions of these values follow:
 
 - `COlePasteSpecialDialog::pasteLink` The Paste Link radio button was checked and the chosen format was a standard OLE format.
 

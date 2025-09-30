@@ -81,7 +81,6 @@ void func_B(MyClass mc)
     mc.print(); // "Erika, 21"
 }
 
-
 int main()
 {
     // Use the * operator to declare a pointer type
@@ -150,7 +149,6 @@ void func(int arr[], int length)
 
 int main()
 {
-
     int i[5]{ 1,2,3,4,5 };
     // sizeof(i) = total bytes
     int j = sizeof(i) / sizeof(i[0]);
@@ -170,7 +168,6 @@ using namespace std;
 
 int main()
 {
-
     BITMAPINFOHEADER header;
     header.biHeight = 100; // Multiple of 4 for simplicity.
     header.biWidth = 100;
@@ -337,7 +334,7 @@ int main()
 
 ## See also
 
-[Smart pointers](smart-pointers-modern-cpp.md)
-[Indirection Operator: *](indirection-operator-star.md)<br/>
-[Address-of Operator: &](address-of-operator-amp.md)</br>
+[Smart pointers](smart-pointers-modern-cpp.md)\
+[Indirection Operator: *](indirection-operator-star.md)\
+[Address-of Operator: &](address-of-operator-amp.md)\
 [Welcome back to C++](welcome-back-to-cpp-modern-cpp.md)

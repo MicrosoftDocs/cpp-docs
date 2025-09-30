@@ -4,6 +4,7 @@ title: "Working with Dialog Boxes in MFC"
 ms.date: "09/27/2019"
 helpviewer_keywords: ["dialog boxes [MFC], life cycle", "modal dialog boxes [MFC], life cycle", "modeless dialog boxes [MFC], life cycle", "MFC dialog boxes [MFC], life cycle", "life cycle of dialog boxes [MFC]"]
 ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
+ms.topic: concept-article
 ---
 # Working with Dialog Boxes in MFC
 

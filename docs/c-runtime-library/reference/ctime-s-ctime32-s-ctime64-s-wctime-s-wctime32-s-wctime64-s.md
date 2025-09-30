@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s"
 title: "ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s"
-ms.date: "4/2/2020"
+description: "Learn more about: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s"
+ms.date: 4/2/2020
 api_name: ["_ctime64_s", "_wctime32_s", "ctime_s", "_wctime64_s", "_ctime32_s", "_wctime_s", "_o__ctime32_s", "_o__ctime64_s", "_o__wctime32_s", "_o__wctime64_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ctime64_s", "_ctime32_s", "_tctime32_s", "_ctime64_s", "_wctime_s", "_tctime_s", "_tctime64_s", "ctime_s", "ctime32_s"]
 helpviewer_keywords: ["_wctime32_s function", "ctime64_s function", "_tctime64_s function", "_wctime_s function", "tctime_s function", "_wctime64_s function", "ctime_s function", "ctime32_s function", "_ctime64_s function", "tctime64_s function", "wctime64_s function", "wctime_s function", "_tctime_s function", "tctime32_s function", "wctime32_s function", "time, converting", "_ctime32_s function", "_tctime32_s function"]
-ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
 ---
 # `ctime_s`, `_ctime32_s`, `_ctime64_s`, `_wctime_s`, `_wctime32_s`, `_wctime64_s`
 
@@ -30,8 +29,8 @@ errno_t _ctime32_s(
 errno_t _ctime64_s(
    char* buffer,
    size_t numberOfElements,
-   const __time64_t *sourceTime )
-;
+   const __time64_t *sourceTime
+);
 errno_t _wctime_s(
    wchar_t* buffer,
    size_t numberOfElements,
@@ -109,7 +108,7 @@ Zero if successful. If there's a failure due to an invalid parameter, the invali
 
 The **`ctime_s`** function converts a time value stored as a [`time_t`](../standard-types.md) structure into a character string. The *`sourceTime`* value is typically obtained from a call to [`time`](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
-`Wed Jan 02 02:03:55 1980\n\0`
+`Wed Jan  2 02:03:55 1980\n\0`
 
 A 24-hour clock is used. All fields have a constant width. The new line character ('\n') and the null character ('\0') occupy the last two positions of the string.
 

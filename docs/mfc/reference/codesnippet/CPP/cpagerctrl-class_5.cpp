@@ -1,4 +1,3 @@
-
 void CCSplitButton_s2Dlg::OnXIsbuttoninvisible()
 {
    BOOL bLeft = m_pager.IsButtonInvisible(PGB_TOPORLEFT);

@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Microsoft-specific modifiers"
 title: "Microsoft-specific modifiers"
+description: "Learn more about: Microsoft-specific modifiers"
 ms.date: "08/16/2018"
-ms.assetid: 22c7178c-f854-47fa-9de6-07d23fda58e1
 ---
 # Microsoft-specific modifiers
 
@@ -29,7 +28,7 @@ Many of the Microsoft-specific keywords can be used to modify declarators to for
 |[__restrict](extension-restrict.md)|Similar to __declspec([restrict](restrict.md)), but for use on variables.|No|
 |[__stdcall](stdcall.md)|The name that follows specifies a function that observes the standard calling convention.|Yes|
 |[__w64](w64.md)|Marks a data type as being larger on a 64-bit compiler.|No|
-|[__unaligned](unaligned.md)|Specifies that a pointer to a type or other data is not aligned..|No|
+|[__unaligned](unaligned.md)|Specifies that a pointer to a type or other data is not aligned.|No|
 |[__vectorcall](vectorcall.md)|The name that follows declares a function that uses registers, including SSE registers, when available, instead of the stack for argument passing.|Yes|
 
 ## See also

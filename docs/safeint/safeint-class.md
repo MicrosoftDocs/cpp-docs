@@ -224,7 +224,7 @@ There are two options to customize the error policy. The first option is to set 
 **Header:** SafeInt.hpp
 > [!NOTE]
 > The latest version of this library is located at [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt). Clone the library and include SafeInt.hpp to use the SafeInt library.
-> Prefer this github repo to <safeint.h>. it's a modern version of <safeint.h> that includes a small number of bug fixes, uses modern features of C++ resulting in more efficient code, and is portable to any platform using gcc, clang, or Intel compilers.
+> Prefer this GitHub repo to <safeint.h>. it's a modern version of <safeint.h> that includes a small number of bug fixes, uses modern features of C++ resulting in more efficient code, and is portable to any platform using gcc, clang, or Intel compilers.
 
 ### Example
 

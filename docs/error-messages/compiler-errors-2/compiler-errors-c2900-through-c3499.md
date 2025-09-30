@@ -2,9 +2,8 @@
 description: "Learn more about: Compiler errors C2900 Through C2999"
 title: "Compiler errors C2900 Through C2999"
 ms.date: 06/01/2022
-f1_keywords: ["C2900", "C2901", "C2905", "C2907", "C2915", "C2916", "C2922", "C2924", "C2925", "C2926", "C2938", "C2949", "C2950", "C2954", "C2956", "C2960", "C2961", "C2963", "C2964", "C2965", "C2966", "C2967", "C2968", "C2972", "C2980", "C2981", "C2982", "C2983", "C2984", "C2985", "C2986", "C2987", "C2997", "C2999"]
-helpviewer_keywords: ["C2900", "C2901", "C2905", "C2907", "C2915", "C2916", "C2922", "C2924", "C2925", "C2926", "C2938", "C2949", "C2950", "C2954", "C2956", "C2960", "C2961", "C2963", "C2964", "C2965", "C2966", "C2967", "C2968", "C2972", "C2980", "C2981", "C2982", "C2983", "C2984", "C2985", "C2986", "C2987", "C2997", "C2999"]
-ms.assetid: e3440738-e11b-4878-9ae3-6bc6c53ba461
+f1_keywords: ["C2900", "C2901", "C2905", "C2907", "C2915", "C2916", "C2922", "C2924", "C2925", "C2926", "C2938", "C2949", "C2950", "C2954", "C2960", "C2961", "C2963", "C2964", "C2965", "C2966", "C2967", "C2968", "C2972", "C2980", "C2981", "C2982", "C2983", "C2984", "C2985", "C2986", "C2987", "C2997"]
+helpviewer_keywords: ["C2900", "C2901", "C2905", "C2907", "C2915", "C2916", "C2922", "C2924", "C2925", "C2926", "C2938", "C2949", "C2950", "C2954", "C2960", "C2961", "C2963", "C2964", "C2965", "C2966", "C2967", "C2968", "C2972", "C2980", "C2981", "C2982", "C2983", "C2984", "C2985", "C2986", "C2987", "C2997"]
 ---
 # Compiler errors C2900 Through C2999
 
@@ -99,10 +98,10 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C2980 | C++ exception handling is not supported with /kernel |
 | Compiler error C2981 | the dynamic form of '*keyword*' is not supported with /kernel |
 | Compiler error C2982 | '*declaration*': different __declspec(code_seg(...)) used: was '*identifier1*' now '*identifier2*' |
-| Compiler error C2983 | '*declaration*': all declarations must have an identical __declspec(code_seg(...)) |
+| Compiler error C2983 | '*name*': a definition must have the same `__declspec(code_seg(...))` as the prior declaration |
 | Compiler error C2984 | Obsolete. |
 | Compiler error C2985 | '*argument*': the argument to __declspec(code_seg(...)) must be a text section |
-| Compiler error C2986 | '*identifier*': __declspec(code_seg(...)) can only be applied to a class or a function |
+| Compiler error C2986 | '`__declspec(code_seg(...))`' can only be applied to a class or a function |
 | Compiler error C2987 | a declaration cannot have both __declspec(code_seg('*identifier*')) and __declspec(code_seg('*value*')) |
 | [Compiler error C2988](compiler-error-c2988.md) | unrecognizable template declaration/definition |
 | [Compiler error C2989](compiler-error-c2989.md) | '*class*': class template/generic has already been declared as a non-class template/generic |
@@ -114,8 +113,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C2995](compiler-error-c2995.md) | '*declaration*': function template has already been defined |
 | [Compiler error C2996](compiler-error-c2996.md) | '*function*': recursive function template definition |
 | Compiler error C2997 | '*function*': array bound cannot be deduced from a default member initializer |
-| [Compiler error C2998](compiler-error-c2998.md) | '*declarator*': cannot be a template definition |
-| Compiler error C2999 | UNKNOWN ERROR  Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information |
+| [Compiler error C2998](compiler-error-c2998.md) | '*identifier*': cannot be a template definition |
 
 ## See also
 

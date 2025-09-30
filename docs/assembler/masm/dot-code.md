@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: .CODE"
 title: ".CODE"
+description: "Learn more about: .CODE"
 ms.date: "12/17/2019"
 f1_keywords: [".CODE"]
 helpviewer_keywords: [".CODE directive"]
-ms.assetid: 2b8c882c-c0d2-4fa3-8335-e6b12717a4f4
 ---
 # .CODE
 
-(32-bit MASM only.) When used with [.MODEL](dot-model.md), indicates the start of a code segment.
+Indicates the start of a code segment.
+
+When using 32-bit MASM, this should be used along with [.MODEL](dot-model.md).
 
 ## Syntax
 
 > **.CODE** ⟦*name*⟧\
 > ⟦ *segmentItem* ⟧...\
-> ⟦ *codesegmentnameId* **ENDS**;;⟧\
+> ⟦ *codesegmentnameId* **ENDS**;;⟧
 
 ### Parameters
 

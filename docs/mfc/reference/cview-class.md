@@ -494,7 +494,7 @@ The drop effect that resulted from the drop attempt at the location specified by
 
 The default implementation is to do nothing and return a dummy value ( -1 ) to indicate that the framework should call the [`OnDrop`](#ondrop) handler.
 
-Override this function to implement the effect of an right mouse-button drag and drop. Right mouse-button drag and drop typically displays a menu of choices when the right mouse-button is released.
+Override this function to implement the effect of a right mouse-button drag and drop. Right mouse-button drag and drop typically displays a menu of choices when the right mouse-button is released.
 
 Your override of `OnDropEx` should query for the right mouse-button. You can call [`GetKeyState`](/windows/win32/api/winuser/nf-winuser-getkeystate) or store the right mouse-button state from your [`OnDragEnter`](#ondragenter) handler.
 

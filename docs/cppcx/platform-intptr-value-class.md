@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Platform::IntPtr value class"
 title: "Platform::IntPtr value class"
-ms.date: "12/30/2016"
+description: "Learn more about: Platform::IntPtr value class"
+ms.date: 12/30/2016
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/PlatformIntPtr::IntPtr", "VCCORLIB/PlatformIntPtr::op_explicit Operator", "VCCORLIB/PlatformIntPtr::ToInt32"]
 helpviewer_keywords: ["Platform::IntPtr Struct"]
-ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
 ---
 # Platform::IntPtr value class
 
@@ -37,14 +36,16 @@ IntPtr has the following members:
 
 **Metadata:** platform.winmd
 
-## <a name="ctor"> </a> IntPtr::IntPtr Constructor
+## <a name="ctor"></a> IntPtr::IntPtr Constructor
 
 Initializes a new instance of an IntPtr with the specified value.
 
 ### Syntax
 
 ```cpp
-IntPtr( __int64 handle-or-pointer );   IntPtr( void* value );   IntPtr( int 32-bit_value );
+IntPtr( __int64 handle-or-pointer );
+IntPtr( void* value );
+IntPtr( int 32-bit_value );
 ```
 
 ### Parameters
@@ -52,14 +53,16 @@ IntPtr( __int64 handle-or-pointer );   IntPtr( void* value );   IntPtr( int 32-b
 *value*<br/>
 A 64-bit handle or pointer, or a pointer to a 64-bit value, or a 32-bit value that can be converted to a 64-bit value.
 
-## <a name="op-explicit"> </a> IntPtr::op_explicit Operator
+## <a name="op-explicit"></a> IntPtr::op_explicit Operator
 
 Converts the specified parameter to an IntPtr or a pointer to an IntPtr value.
 
 ### Syntax
 
 ```cpp
-static IntPtr::operator IntPtr( void* value1);   static IntPtr::operator IntPtr( int value2);   static IntPtr::operator void*( IntPtr value3 );
+static IntPtr::operator IntPtr( void* value1);
+static IntPtr::operator IntPtr( int value2);
+static IntPtr::operator void*( IntPtr value3 );
 ```
 
 ### Parameters
@@ -68,7 +71,7 @@ static IntPtr::operator IntPtr( void* value1);   static IntPtr::operator IntPtr(
 A pointer to a handle or IntPtr.
 
 *value2*<br/>
-An 32-bit integer that can be converted to an IntPtr.
+A 32-bit integer that can be converted to an IntPtr.
 
 *value3*<br/>
 An IntPtr.
@@ -77,7 +80,7 @@ An IntPtr.
 
 The first and second operators return an IntPtr. The third operator returns a pointer to the value represented by the current IntPtr.
 
-## <a name="toint32"> </a> IntPtr::ToInt32 Method
+## <a name="toint32"></a> IntPtr::ToInt32 Method
 
 Converts the current IntPtr value to a 32-bit integer.
 

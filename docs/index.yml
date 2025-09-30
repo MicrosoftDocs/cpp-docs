@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 title: Microsoft C++, C, and Assembler documentation
 summary: Learn how to use C++, C, and assembly language to develop applications, services, and tools for your platforms and devices.
-# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows
 brand: visual-studio
 metadata:
   title: Microsoft C/C++ Documentation
   description: Learn how to use C++ to develop applications, services, and tools for your platforms and devices.
-  ms.prod: visual-cpp
+  ms.service: visual-cpp
   ms.topic: hub-page
   author: tylermsft
   ms.author: twhitney
@@ -118,7 +118,7 @@ conceptualContent:
         - text: Use C++ on Linux
           url: https://code.visualstudio.com/docs/cpp/config-linux
           itemType: tutorial
-        - text: Use C++ on MacOS
+        - text: Use C++ on macOS
           url: https://code.visualstudio.com/docs/cpp/config-clang-mac
           itemType: tutorial
 
@@ -164,7 +164,7 @@ additionalContent:
             - text: Universal Windows Platform development
               url: cppcx/universal-windows-apps-cpp.md
             - text: Windows Desktop development
-              url: ./windows/desktop-applications-visual-cpp.md
+              url: windows/overview-of-windows-programming-in-cpp.md
             - text: Linux development
               url: linux/index.yml
             - text: Embedded development
@@ -172,10 +172,12 @@ additionalContent:
             - text: Mobile development
               url: cross-platform/index.yml
             - text: Game development
-              url: /windows/uwp/gaming/e2e/
+              url: /visualstudio/gamedev/
         # Card
         - title: Features
           links:
+            - text: Build reliable and secure programs
+              url: code-quality/build-reliable-secure-programs.md
             - text: Edit and refactor code
               url: ide/writing-and-refactoring-code-cpp.md
             - text: Build code projects
@@ -205,5 +207,7 @@ additionalContent:
               url: cloud/cloud-and-web-programming-in-visual-cpp.md
             - text: Universal Windows Platform libraries
               url: cppcx/namespaces-reference-c-cx.md
+            - text: vcpkg package manager
+              url: /vcpkg/
   # footer (optional)
   footer: "[Microsoft Learn Q&A](/answers/topics/c%2B%2B.html) - [C++ Team Blog](https://devblogs.microsoft.com/cppblog/) - [Twitter](https://twitter.com/visualc) - [Developer Community](https://aka.ms/vsfeedback/browsecpp) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++) - [How to report an issue](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [Suggest a feature](https://aka.ms/feedback/suggest?space=62) - Contribute to C++ docs: Read our [contributor guide](/contribute/)."

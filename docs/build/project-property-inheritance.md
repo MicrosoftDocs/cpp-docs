@@ -24,7 +24,7 @@ Project properties are stored in several files. Some are stored directly in the 
 
 ::: moniker range=">=msvc-160"
 
-Project properties are stored in several files. Some are stored directly in the *`.vcxproj`* project file. Others come from other *`.targets`* or *`.props`* files that the project file imports and which supply default values. You'll find the Visual Studio project files in a locale-specific folder under the base directory, *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>`*. The `<version>` is specific to the version of Visual Studio. It's *`v160`* for Visual Studio 2019.
+Project properties are stored in several files. Some are stored directly in the *`.vcxproj`* project file. Others come from other *`.targets`* or *`.props`* files that the project file imports and which supply default values. You'll find the Visual Studio project files in a locale-specific folder under the base directory, *`%VSINSTALLDIR%\MSBuild\Microsoft\VC\<version>`*. The `<version>` is specific to the version of Visual Studio. It's *`v160`* for Visual Studio 2019.
 
 ::: moniker-end
 

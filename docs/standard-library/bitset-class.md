@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: bitset Class"
 title: "bitset Class"
+description: "Learn more about: bitset Class"
 ms.date: 06/10/2022
 f1_keywords: ["bitset/std::bitset", "bitset/std::bitset::element_type", "bitset/std::bitset::all", "bitset/std::bitset::any", "bitset/std::bitset::count", "bitset/std::bitset::flip", "bitset/std::bitset::none", "bitset/std::bitset::reset", "bitset/std::bitset::set", "bitset/std::bitset::size", "bitset/std::bitset::test", "bitset/std::bitset::to_string", "bitset/std::bitset::to_ullong", "bitset/std::bitset::to_ulong", "bitset/std::bitset::reference"]
 helpviewer_keywords: ["std::bitset [C++]", "std::bitset [C++], element_type", "std::bitset [C++], all", "std::bitset [C++], any", "std::bitset [C++], count", "std::bitset [C++], flip", "std::bitset [C++], none", "std::bitset [C++], reset", "std::bitset [C++], set", "std::bitset [C++], size", "std::bitset [C++], test", "std::bitset [C++], to_string", "std::bitset [C++], to_ullong", "std::bitset [C++], to_ulong", "std::bitset [C++], reference"]
 ms.custom: devdivchpfy22
-
 ---
 # `bitset` class
 
@@ -246,9 +245,9 @@ int main( )
    cout << "The set of bits in bitset<5> b1( 6 ) is: ( "
         << b1 << " )." << endl;
 
-   // The template parameter N can be an expresssion
+   // The template parameter N can be an expression
    bitset< 2 * sizeof ( int ) > b2;
-   cout << "The set of bits in bitset<2 * sizeof ( int ) > b2 is: ( "
+   cout << "The set of bits in bitset< 2 * sizeof ( int ) > b2 is: ( "
         << b2 << " )." << endl;
 
    // The base two representation will be truncated
@@ -1321,7 +1320,7 @@ int main( )
 
    bitset<5> b1r3;
    b1r3 = b1.reset( 2 );
-   cout << "The collecion of bits obtained from resetting the\n"
+   cout << "The collection of bits obtained from resetting the\n"
         << "third bit of bitset b1 is: ( "<< b1r3 << " )"
         << endl;
 

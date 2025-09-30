@@ -1,14 +1,17 @@
 ---
 title: "Error: double-free"
-description: "Source examples and live debug screenshots for double free errors."
+description: "Learn about the double-free Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["double-free"]
 helpviewer_keywords: ["double-free error", "AddressSanitizer error double-free"]
+ms.custom: sfi-image-nochange
 ---
 
 # Error: `double-free`
 
 > Address Sanitizer Error: Deallocation of freed memory
+
+## Remarks
 
 In C, you can call `free` erroneously. In C++, you can call `delete` more than once. In these examples, we show errors with `delete`, `free`, and `HeapCreate`.
 
@@ -105,11 +108,11 @@ devenv /debugexe example3.exe
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

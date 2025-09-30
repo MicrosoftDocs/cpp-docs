@@ -70,7 +70,7 @@ A `subrange` is useful when you have a begin and end iterator, but you want to p
 
 ## Requirements
 
-**Header:** `<ranges>` (since C++ 20)
+**Header:** `<ranges>` (since C++20)
 
 **Namespace:** `std::ranges`
 
@@ -111,7 +111,7 @@ For information about template parameter types, see [Template parameters](#templ
 
 ### Return value
 
-A `subrange`instance.
+A `subrange` instance.
 
 ### Remarks
 
@@ -332,7 +332,7 @@ Returns `true` if the `subrange` has no elements. Otherwise, returns `false`.
 Get the sentinel at the end of the `subrange`
 
 ```cpp
-[[NODISCARD]] constexpr S end() const;
+[[nodiscard]] constexpr S end() const;
 ```
 
 ### Parameters

@@ -6,7 +6,7 @@ f1_keywords: ["!"]
 helpviewer_keywords: ["! operator", "NOT operator", "logical negation"]
 ms.assetid: 650add9f-a7bc-426c-b01d-5fc6a81c8b62
 ---
-# Logical negation operator: !
+# Logical negation operator: `!`
 
 ## Syntax
 
@@ -39,6 +39,6 @@ int main() {
 
 ## See also
 
-[Expressions with unary operators](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Unary arithmetic operators](../c-language/unary-arithmetic-operators.md)<br/>
+[Expressions with unary operators](../cpp/expressions-with-unary-operators.md)\
+[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
+[Unary arithmetic operators](../c-language/unary-arithmetic-operators.md)

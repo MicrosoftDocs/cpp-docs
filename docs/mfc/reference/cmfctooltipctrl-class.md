@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMFCToolTipCtrl Class"
 title: "CMFCToolTipCtrl Class"
+description: "Learn more about: CMFCToolTipCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCToolTipCtrl", "AFXTOOLTIPCTRL/CMFCToolTipCtrl", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetIconSize", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetParams", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawBorder", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawDescription", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawIcon", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawLabel", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawSeparator", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnFillBackground", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetDescription", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetFixedWidth", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetHotRibbonButton", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetLocation", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetParams"]
 helpviewer_keywords: ["CMFCToolTipCtrl [MFC], GetIconSize", "CMFCToolTipCtrl [MFC], GetParams", "CMFCToolTipCtrl [MFC], OnDrawBorder", "CMFCToolTipCtrl [MFC], OnDrawDescription", "CMFCToolTipCtrl [MFC], OnDrawIcon", "CMFCToolTipCtrl [MFC], OnDrawLabel", "CMFCToolTipCtrl [MFC], OnDrawSeparator", "CMFCToolTipCtrl [MFC], OnFillBackground", "CMFCToolTipCtrl [MFC], SetDescription", "CMFCToolTipCtrl [MFC], SetFixedWidth", "CMFCToolTipCtrl [MFC], SetHotRibbonButton", "CMFCToolTipCtrl [MFC], SetLocation", "CMFCToolTipCtrl [MFC], SetParams"]
-ms.assetid: 9fbfcfb1-a8ab-417f-ae29-9a9ca85ee58f
 ---
 # CMFCToolTipCtrl Class
 
@@ -149,7 +148,7 @@ const CMFCToolTipInfo& GetParams() const;
 
 ### Return Value
 
-The current tooltip display settings , which are stored in a [CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md) object.
+The current tooltip display settings, which are stored in a [CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md) object.
 
 ## <a name="ondrawborder"></a> CMFCToolTipCtrl::OnDrawBorder
 
@@ -391,9 +390,9 @@ Whenever the tooltip is displayed, it is drawn by using the colors and visual st
 
 ## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md)<br/>
-[CTooltipManager Class](../../mfc/reference/ctooltipmanager-class.md)<br/>
-[CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
+[Classes](../../mfc/reference/mfc-classes.md)\
+[CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md)\
+[CTooltipManager Class](../../mfc/reference/ctooltipmanager-class.md)\
+[CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md)\
 [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)

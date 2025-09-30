@@ -2,7 +2,7 @@
 title: "String and I/O Formatting (Modern C++)"
 description: "Choices for formatted string I/O available in modern C++."
 ms.date: "05/30/2019"
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
 ---
 # String and I/O Formatting (Modern C++)

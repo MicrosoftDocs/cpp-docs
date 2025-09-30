@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l"
 title: "vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l"
-ms.date: "3/9/2021"
+description: "Learn more about: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l"
+ms.date: 3/9/2021
 api_name: ["_vswprintf_l", "_vsprintf_l", "vsprintf", "vswprintf", "__vswprintf_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -95,6 +95,10 @@ The locale to use.
 
 **`vsprintf`** and **`vswprintf`** return the number of characters written, not including the terminating `NULL` character, or a negative value if an output error occurs. If *`buffer`* or *`format`* is a `NULL` pointer, these functions invoke the invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
+If *`buffer`* is a `NULL` pointer and *`count`* is zero, **`vswprintf`** and **`_vswprintf_l`** return the number of characters that would have been written not including the terminating NULL.
+
+If *`buffer`* is valid and *`count`* is zero, **`vswprintf`** and **`_vswprintf_l`** return -1. The contents of *`buffer`* are unchanged.
+
 For information on these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
@@ -105,7 +109,7 @@ The versions of these functions with the **`_l`** suffix are identical except th
 
 > [!IMPORTANT]
 > Using **`vsprintf`**, there is no way to limit the number of characters written, which means that code using this function is susceptible to buffer overruns. Use [`_vsnprintf`](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) instead, or call [`_vscprintf`](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) to determine how large a buffer is needed. Also, ensure that *`format`* is not a user-defined string. For more information, see [Avoiding buffer overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
-> Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
+> Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with [`legacy_stdio_float_rounding.obj`](../link-options.md).
 
 **`vswprintf`** conforms to the ISO C Standard, which requires the second parameter, *`count`*, of type **`size_t`**. To force the old nonstandard behavior, define `_CRT_NON_CONFORMING_SWPRINTFS`. The old behavior may not be in a future version, so code should be changed to use the new conformant behavior.
 

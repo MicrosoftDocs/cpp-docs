@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3853"
 title: "Compiler Error C3853"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3853"
+ms.date: 11/04/2016
 f1_keywords: ["C3853"]
 helpviewer_keywords: ["C3853"]
-ms.assetid: 5b71805d-52b4-44ec-80ae-37c68d876f6a
 ---
 # Compiler Error C3853
 
-'=': re-initializing a reference or assignment through a reference-to-function is illegal
+> '=': re-initializing a reference or assignment through a reference-to-function is illegal
+
+## Remarks
 
 Cannot assign to a reference through a function because functions are not lvalues.
 
-The following samples generate C3853:
+## Example
+
+The following example generates C3853:
 
 ```cpp
 // C3853.cpp

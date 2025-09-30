@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Overview of ARM64EC ABI conventions"
 title: "Overview of ARM64EC ABI conventions"
+description: "Learn more about: Overview of ARM64EC ABI conventions"
 ms.date: "06/03/2022"
 ---
 # Overview of ARM64EC ABI conventions
@@ -50,7 +50,7 @@ Special helper routines like `__chkstk_arm64ec` use custom calling conventions a
 | `x15` | `mm7` (low 64 bits of x87 `R7` register) | volatile | volatile | volatile |
 | `x16` | High 16 bits of each of the x87 `R0`-`R3` registers | volatile(`xip0`) | volatile(`xip0`) | volatile |
 | `x17` | High 16 bits of each of the x87 `R4`-`R7` registers | volatile(`xip1`) | volatile(`xip1`) | volatile |
-| `x18` | N/A | fixed(TEB) | fixed(TEB) | volatile |
+| `x18` | GS.base | fixed(TEB) | fixed(TEB) | fixed(TEB) |
 | `x19` | `r12` | non-volatile | non-volatile | non-volatile |
 | `x20` | `r13` | non-volatile | non-volatile | non-volatile |
 | `x21` | `r14` | non-volatile | non-volatile | non-volatile |
@@ -62,7 +62,7 @@ Special helper routines like `__chkstk_arm64ec` use custom calling conventions a
 | `x27` | `rbx` | non-volatile | non-volatile | non-volatile |
 | `x28` | N/A | disallowed | disallowed | N/A |
 | `fp` | `rbp` | non-volatile | non-volatile | non-volatile |
-| `lr` | `mm0` (low 64 bits of x87 `R0` register) | volatile | volatile | N/A |
+| `lr` | `mm0` (low 64 bits of x87 `R0` register) | both | both | both |
 | `sp` | `rsp` | non-volatile | non-volatile | non-volatile |
 | `pc` | `rip` | instruction pointer | instruction pointer | instruction pointer |
 | `PSTATE` subset: `N`/`Z`/`C`/`V`/`SS` <sup>1, 2</sup> | `RFLAGS` subset: `SF`/`ZF`/`CF`/`OF`/`TF` | volatile | volatile | volatile |
@@ -73,7 +73,7 @@ Special helper routines like `__chkstk_arm64ec` use custom calling conventions a
 
 <sup>2</sup> The ARM64EC carry flag `C` is the inverse of the x64 carry flag `CF` for subtraction operations. There's no special handling, because the flag is volatile and is therefore trashed when transitioning between (ARM64EC and x64) functions.
 
-## <a name="register-mapping-for-vector-registers"/> Register mapping for vector registers
+## <a name="register-mapping-for-vector-registers"></a> Register mapping for vector registers
 
 | ARM64EC register | x64 register | ARM64EC calling convention | ARM64 calling convention | x64 calling convention |
 |--|--|--|--|--|
@@ -91,6 +91,12 @@ Special helper routines like `__chkstk_arm64ec` use custom calling conventions a
 ## Struct packing
 
 ARM64EC follows the same struct packing rules used for x64 to ensure interoperability between ARM64EC code and x64 code. For more information and examples of x64 struct packing, see [Overview of x64 ABI conventions](x64-software-conventions.md).
+
+## Floating-point exceptions
+
+To determine if an ARM CPU supports exceptions, write a value that enables exceptions to the FPCR register and then read it back. If the CPU supports floating-point exceptions, the bits corresponding to supported exceptions remain set, while the CPU resets the bits for unsupported exceptions.
+
+On ARM64EC, Windows catches processor floating-point exceptions and disables them in the FPCR register. This ensures consistent behavior across different processor variants.
 
 ## Emulation helper ABI routines
 

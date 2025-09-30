@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4263"
-title: "Compiler Warning (level 4) C4263"
-ms.date: "11/04/2016"
+title: "Compiler Warning (level 4, off) C4263"
+description: "Learn more about: Compiler Warning (level 4, off) C4263"
+ms.date: 11/04/2016
 f1_keywords: ["C4263"]
 helpviewer_keywords: ["C4263"]
-ms.assetid: daabb05d-ab56-460f-ab6c-c74d222ef649
 ---
-# Compiler Warning (level 4) C4263
+# Compiler Warning (level 4, off) C4263
 
-'function' : member function does not override any base class virtual member function
+> 'function' : member function does not override any base class virtual member function
 
-A class function definition has the same name as a virtual function in a base class but not the same number or type of arguments. This effectively hides the virtual function in the base class.
+## Remarks
 
-This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+A class function definition has the same name as a virtual function in a base class but not the same number or type of arguments. This pattern effectively hides the virtual function in the base class.
 
-The following sample generates C4263:
+This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+
+## Example
+
+The following example generates C4263:
 
 ```cpp
 // C4263.cpp

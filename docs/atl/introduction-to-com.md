@@ -5,6 +5,7 @@ ms.custom: "index-page"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["COM"]
 ms.assetid: 120735d9-db71-4ad3-a730-ce576ea2354e
+ms.topic: concept-article
 ---
 # Introduction to COM
 

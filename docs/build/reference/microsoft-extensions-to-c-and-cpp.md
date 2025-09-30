@@ -205,7 +205,6 @@ The C compiler supports the following data declaration and definition features.
    //     error C2059: syntax error: 'empty declaration'
    ```
 
-
 ## Intrinsic floating-point functions
 
 Both the x86 C++ compiler and C compiler support inline generation of the `atan`, `atan2`, `cos`, `exp`, `log`, `log10`, `sin`, `sqrt`, and `tan` functions when **`/Oi`** is specified. These intrinsics don't conform to the standard, because they don't set the `errno` variable.

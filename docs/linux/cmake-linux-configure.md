@@ -2,6 +2,7 @@
 title: "Configure a Linux CMake project in Visual Studio"
 description: "How to configure Linux CMake settings in Visual Studio"
 ms.date: 01/03/2022
+ms.topic: how-to
 ---
 # Configure a Linux CMake project in Visual Studio
 
@@ -129,7 +130,7 @@ To target WSL, select **Manage Configurations** in the configuration dropdown in
 
 The **CMakeSettings.json** window appears.
 
-![CMake settings dialog with the plus button highlighted which adds the selected configuration, which is Linux-GCC-debug.](media/cmake-linux-configurations.png )
+![CMake settings dialog with the plus button highlighted which adds the selected configuration, which is Linux-GCC-debug.](media/cmake-linux-configurations.png)
 
 Press **Add Configuration** (the green '+' button) and then choose **Linux-GCC-Debug** or **Linux-GCC-Release** if using GCC. Use the Clang variants if you're using the Clang/LLVM toolset.  Press **Select** and then **Ctrl+S** to save the configuration.
 

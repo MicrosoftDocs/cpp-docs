@@ -4,6 +4,7 @@ title: "Managing Data with Document Data Variables"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["documents [MFC], data storage", "friend classes [MFC]", "classes [MFC], friend", "data [MFC]", "data [MFC], documents", "collection classes [MFC], used by document object", "document data [MFC]", "member variables [MFC], document class [MFC]"]
 ms.assetid: e70b87f4-8c30-49e5-8986-521c2ff91704
+ms.topic: concept-article
 ---
 # Managing Data with Document Data Variables
 

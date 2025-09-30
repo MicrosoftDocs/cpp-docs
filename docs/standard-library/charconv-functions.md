@@ -236,6 +236,6 @@ int main()
 
 ## See also
 
-[\<charconv>](charconv.md)  
-[The shortest decimal string that round-trips](https://www.exploringbinary.com/the-shortest-decimal-string-that-round-trips-examples/)
+[\<charconv>](charconv.md)\
+[The shortest decimal string that round-trips](https://www.exploringbinary.com/the-shortest-decimal-string-that-round-trips-examples/)\
 [printf() format specifiers](..\c-runtime-library\format-specification-syntax-printf-and-wprintf-functions.md)

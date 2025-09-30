@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: weekday Class"
 title: "weekday class"
-ms.date: "6/25/2021"
+description: "Learn more about: weekday Class"
+ms.date: 6/25/2021
 f1_keywords: ["chrono/std::chrono::weekday", "chrono/std::chrono::weekday::January", "chrono/std::chrono::weekday::February", "chrono/std::chrono::weekday::March","chrono/std::chrono::weekday::April","chrono/std::chrono::weekday::May","chrono/std::chrono::weekday::June","chrono/std::chrono::weekday::July","chrono/std::chrono::weekday::August","chrono/std::chrono::weekday::September","chrono/std::chrono::weekday::October","chrono/std::chrono::weekday::November","chrono/std::chrono::weekday::December","chrono/std::chrono::weekday::operator++", "chrono/std::chrono::weekday::operator--", "chrono/std::chrono::weekday::operator unsigned", "chrono/std::chrono::weekday::ok", "chrono/std::chrono::weekday::iso_encoding", "chrono/std::chrono::weekday::c_encoding"]
 helpviewer_keywords: ["std::chrono [C++], weekday"]
 ---
-# `weekday` class  
+# `weekday` class
 
 Represents a day of the week in the [Gregorian calendar](https://en.wikipedia.org/wiki/Proleptic_Gregorian_calendar). For example, Tuesday.
 
@@ -46,7 +46,7 @@ See [Weekday constants](#weekday-constants), below, for constants that you can u
 
 ## Requirements
 
-**Header:** `<chrono>` Since C++ 20
+**Header:** `<chrono>` Since C++20
 
 **Namespace:** `std::chrono`
 
@@ -238,7 +238,7 @@ constexpr weekday& operator+=(const days& d) noexcept;
 
 ### Parameters
 
-`*d*`\
+*`d`*\
 The number of days to add.
 
 ### Return value
@@ -255,7 +255,7 @@ constexpr weekday& operator-=(const days& d) noexcept;
 
 ### Parameters
 
-`*d*`\
+*`d`*\
 The number of days to subtract.
 
 ### Return value
@@ -267,8 +267,8 @@ The value of `*this - d`. The result will be modulo 7, in the range \[0, 6].
 Create a [weekday_indexed](weekdayindexed-class.md) or [weekday_last](weekdaylast-class.md) from this `weekday`.
 
 ```cpp
-1) std::chrono::weekday_indexed(*this, index) // C++ 20
-2) std::chrono::weekday_last(*this) // C++ 20
+1) std::chrono::weekday_indexed(*this, index) // C++20
+2) std::chrono::weekday_last(*this) // C++20
 ```
 
 ### Return value

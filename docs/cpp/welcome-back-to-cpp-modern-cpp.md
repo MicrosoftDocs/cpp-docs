@@ -2,8 +2,7 @@
 title: "Welcome back to C++ - Modern C++"
 description: "Describes the new programming idioms in Modern C++ and their rationale."
 ms.date: 06/02/2022
-ms.topic: "conceptual"
-ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
+ms.topic: "concept-article"
 ---
 # Welcome back to C++ - Modern C++
 
@@ -64,10 +63,7 @@ apple_color["Granny Smith"] = "Green";
 
 When performance optimization is needed, consider using:
 
-- The [`array`](../standard-library/array-class-stl.md) type when embedding is important, for example, as a class member.
-
 - Unordered associative containers such as [`unordered_map`](../standard-library/unordered-map-class.md). These have lower per-element overhead and constant-time lookup, but they can be harder to use correctly and efficiently.
-
 - Sorted `vector`. For more information, see [Algorithms](../standard-library/algorithms.md).
 
 Don't use C-style arrays. For older APIs that need direct access to the data, use accessor methods such as `f(vec.data(), vec.size());` instead. For more information about containers, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
@@ -79,11 +75,8 @@ Before you assume that you need to write a custom algorithm for your program, fi
 Here are some important examples:
 
 - `for_each`, the default traversal algorithm (along with range-based `for` loops).
-
 - `transform`, for not-in-place modification of container elements
-
 - `find_if`, the default search algorithm.
-
 - `sort`, `lower_bound`, and the other default sorting and searching algorithms.
 
 To write a comparator, use strict **`<`** and use *named lambdas* when you can.

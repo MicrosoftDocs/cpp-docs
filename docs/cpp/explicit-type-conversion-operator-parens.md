@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["explicit data type conversion operator", "conversions [C++], explicit", "operators [C++], explicit type conversion", "data type conversion [C++], explicit", "type conversion [C++], explicit conversions"]
 ms.assetid: 54272006-5ffb-45ed-8283-27152ab97529
 ---
-# Explicit Type Conversion Operator: ()
+# Explicit Type Conversion Operator: `()`
 
 C++ allows explicit type conversion using syntax similar to the function-call syntax.
 
@@ -117,5 +117,5 @@ Type definition within casts is illegal.
 
 ## See also
 
-[Postfix Expressions](../cpp/postfix-expressions.md)<br/>
+[Postfix Expressions](../cpp/postfix-expressions.md)\
 [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

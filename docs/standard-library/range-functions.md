@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: <ranges> helper functions"
 title: "<ranges> helper functions"
+description: "Learn more about: <ranges> helper functions"
 ms.date: 06/16/2022
 f1_keywords: ["ranges/std::ranges::begin", "ranges/std::ranges::end", "ranges/std::ranges::cbegin", "ranges/std::ranges::cend", "ranges/std::ranges::rbegin", "ranges/std::ranges::rend", "ranges/std::ranges::crbegin", "ranges/std::ranges::crend", "ranges/std::ranges::size","ranges/std::ranges::ssize","ranges/std::ranges::empty","ranges/std::ranges::data","ranges/std::ranges::cdata"]
 helpviewer_keywords: ["std::ranges [C++], ranges::begin", "std::ranges [C++], ranges::end", "std::ranges [C++], ranges::cbegin", "std::ranges [C++], ranges::cend", "std::ranges [C++], ranges::rbegin", "std::ranges [C++], ranges::rend", "std::ranges [C++], ranges::crbegin", "std::ranges [C++], ranges::crend", "std::ranges [C++], ranges::size","std::ranges [C++], ranges::ssize","std::ranges [C++], ranges::empty","std::ranges [C++], ranges::data","std::ranges [C++], ranges::cdata"]
@@ -289,7 +289,7 @@ The sentinel at the end of what `cbegin()` returns. The sentinel follows the las
 
 `ranges::crend()` works on all bidirectional ranges, whereas `std::crend()` may not.
 
-### `crend`example
+### `crend` example
 
 ```cpp
 // requires /std:c++20 or later
@@ -370,7 +370,7 @@ A range.
 
 ### Return value
 
-Returns `true` if the range has no elements; otherwise `false.`
+Returns `true` if the range has no elements; otherwise `false`.
 
 ### Example
 
@@ -482,7 +482,7 @@ int main()
 }
 ```
 
-## <a name="rend"></a>`rend`
+## <a name="rend"></a> `rend`
 
 Get a reverse iterator to the sentinel at the end of a reversed view of the range.
 A reverse iterator returns the elements of the range in reverse order.
@@ -571,7 +571,7 @@ int main()
 }
 ```
 
-## <a name="ssize"></a>`ssize`
+## <a name="ssize"></a> `ssize`
 
 Get the size of the range as a signed value.
 

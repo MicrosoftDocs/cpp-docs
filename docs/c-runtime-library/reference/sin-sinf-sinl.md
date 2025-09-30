@@ -1,7 +1,7 @@
 ---
 title: "sin, sinf, sinl"
 description: "API reference for sin, sinf, and sinl; which calculate the sine of a floating-point value."
-ms.date: "08/31/2020"
+ms.date: 08/31/2020
 api_name: ["sinl", "sinf", "sin", "_o_sin", "_o_sinf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,7 +19,7 @@ Calculates the sine of a floating-point value.
 double sin(double x);
 float sinf(float x);
 long double sinl(long double x);
-#define sin(x) // Requires C11 or higher
+#define sin(x) // Requires C11 or later
 ```
 
 ```cpp
@@ -96,4 +96,4 @@ cos( 1.570796 ) = 0.000000
 [`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
 [`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
 [`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)\
-[`_CIsin`](../cisin.md)\
+[`_CIsin`](../cisin.md)

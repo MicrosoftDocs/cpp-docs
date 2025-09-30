@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: CMonthCalCtrl Class"
 title: "CMonthCalCtrl Class"
-ms.date: "11/04/2016"
+description: "Learn more about: CMonthCalCtrl Class"
+ms.date: 11/04/2016
 f1_keywords: ["CMonthCalCtrl", "AFXDTCTL/CMonthCalCtrl", "AFXDTCTL/CMonthCalCtrl::CMonthCalCtrl", "AFXDTCTL/CMonthCalCtrl::Create", "AFXDTCTL/CMonthCalCtrl::GetCalendarBorder", "AFXDTCTL/CMonthCalCtrl::GetCalendarCount", "AFXDTCTL/CMonthCalCtrl::GetCalendarGridInfo", "AFXDTCTL/CMonthCalCtrl::GetCalID", "AFXDTCTL/CMonthCalCtrl::GetColor", "AFXDTCTL/CMonthCalCtrl::GetCurrentView", "AFXDTCTL/CMonthCalCtrl::GetCurSel", "AFXDTCTL/CMonthCalCtrl::GetFirstDayOfWeek", "AFXDTCTL/CMonthCalCtrl::GetMaxSelCount", "AFXDTCTL/CMonthCalCtrl::GetMaxTodayWidth", "AFXDTCTL/CMonthCalCtrl::GetMinReqRect", "AFXDTCTL/CMonthCalCtrl::GetMonthDelta", "AFXDTCTL/CMonthCalCtrl::GetMonthRange", "AFXDTCTL/CMonthCalCtrl::GetRange", "AFXDTCTL/CMonthCalCtrl::GetSelRange", "AFXDTCTL/CMonthCalCtrl::GetToday", "AFXDTCTL/CMonthCalCtrl::HitTest", "AFXDTCTL/CMonthCalCtrl::IsCenturyView", "AFXDTCTL/CMonthCalCtrl::IsDecadeView", "AFXDTCTL/CMonthCalCtrl::IsMonthView", "AFXDTCTL/CMonthCalCtrl::IsYearView", "AFXDTCTL/CMonthCalCtrl::SetCalendarBorder", "AFXDTCTL/CMonthCalCtrl::SetCalendarBorderDefault", "AFXDTCTL/CMonthCalCtrl::SetCalID", "AFXDTCTL/CMonthCalCtrl::SetCenturyView", "AFXDTCTL/CMonthCalCtrl::SetColor", "AFXDTCTL/CMonthCalCtrl::SetCurrentView", "AFXDTCTL/CMonthCalCtrl::SetCurSel", "AFXDTCTL/CMonthCalCtrl::SetDayState", "AFXDTCTL/CMonthCalCtrl::SetDecadeView", "AFXDTCTL/CMonthCalCtrl::SetFirstDayOfWeek", "AFXDTCTL/CMonthCalCtrl::SetMaxSelCount", "AFXDTCTL/CMonthCalCtrl::SetMonthDelta", "AFXDTCTL/CMonthCalCtrl::SetMonthView", "AFXDTCTL/CMonthCalCtrl::SetRange", "AFXDTCTL/CMonthCalCtrl::SetSelRange", "AFXDTCTL/CMonthCalCtrl::SetToday", "AFXDTCTL/CMonthCalCtrl::SetYearView", "AFXDTCTL/CMonthCalCtrl::SizeMinReq", "AFXDTCTL/CMonthCalCtrl::SizeRectToMin"]
 helpviewer_keywords: ["CMonthCalCtrl [MFC], CMonthCalCtrl", "CMonthCalCtrl [MFC], Create", "CMonthCalCtrl [MFC], GetCalendarBorder", "CMonthCalCtrl [MFC], GetCalendarCount", "CMonthCalCtrl [MFC], GetCalendarGridInfo", "CMonthCalCtrl [MFC], GetCalID", "CMonthCalCtrl [MFC], GetColor", "CMonthCalCtrl [MFC], GetCurrentView", "CMonthCalCtrl [MFC], GetCurSel", "CMonthCalCtrl [MFC], GetFirstDayOfWeek", "CMonthCalCtrl [MFC], GetMaxSelCount", "CMonthCalCtrl [MFC], GetMaxTodayWidth", "CMonthCalCtrl [MFC], GetMinReqRect", "CMonthCalCtrl [MFC], GetMonthDelta", "CMonthCalCtrl [MFC], GetMonthRange", "CMonthCalCtrl [MFC], GetRange", "CMonthCalCtrl [MFC], GetSelRange", "CMonthCalCtrl [MFC], GetToday", "CMonthCalCtrl [MFC], HitTest", "CMonthCalCtrl [MFC], IsCenturyView", "CMonthCalCtrl [MFC], IsDecadeView", "CMonthCalCtrl [MFC], IsMonthView", "CMonthCalCtrl [MFC], IsYearView", "CMonthCalCtrl [MFC], SetCalendarBorder", "CMonthCalCtrl [MFC], SetCalendarBorderDefault", "CMonthCalCtrl [MFC], SetCalID", "CMonthCalCtrl [MFC], SetCenturyView", "CMonthCalCtrl [MFC], SetColor", "CMonthCalCtrl [MFC], SetCurrentView", "CMonthCalCtrl [MFC], SetCurSel", "CMonthCalCtrl [MFC], SetDayState", "CMonthCalCtrl [MFC], SetDecadeView", "CMonthCalCtrl [MFC], SetFirstDayOfWeek", "CMonthCalCtrl [MFC], SetMaxSelCount", "CMonthCalCtrl [MFC], SetMonthDelta", "CMonthCalCtrl [MFC], SetMonthView", "CMonthCalCtrl [MFC], SetRange", "CMonthCalCtrl [MFC], SetSelRange", "CMonthCalCtrl [MFC], SetToday", "CMonthCalCtrl [MFC], SetYearView", "CMonthCalCtrl [MFC], SizeMinReq", "CMonthCalCtrl [MFC], SizeRectToMin"]
-ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
 ---
 # CMonthCalCtrl Class
 
@@ -305,7 +304,8 @@ The next code example reports which view the month calendar control currently di
 Retrieves the system time as indicated by the currently-selected date.
 
 ```
-BOOL GetCurSel(COleDateTime& refDateTime) const;  BOOL GetCurSel(CTime& refDateTime) const;
+BOOL GetCurSel(COleDateTime& refDateTime) const;
+BOOL GetCurSel(CTime& refDateTime) const;
 
 BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
 ```
@@ -320,7 +320,7 @@ A pointer to a [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemti
 
 ### Return Value
 
-Nonzero if successful; otherwize 0.
+Nonzero if successful; otherwise 0.
 
 ### Remarks
 
@@ -596,7 +596,8 @@ In MFC's implementation of `GetSelRange`, you can specify `COleDateTime` usage, 
 Retrieves the date information for the date specified as "today" for a month calendar control.
 
 ```
-BOOL GetToday(COleDateTime& refDateTime) const;  BOOL GetToday(COleDateTime& refDateTime) const;
+BOOL GetToday(COleDateTime& refDateTime) const;
+BOOL GetToday(COleDateTime& refDateTime) const;
 
 BOOL GetToday(LPSYSTEMTIME pDateTime) const;
 ```

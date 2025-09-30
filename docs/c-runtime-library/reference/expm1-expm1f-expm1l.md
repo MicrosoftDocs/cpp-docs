@@ -1,14 +1,13 @@
 ---
 title: "expm1, expm1f, expm1l"
 description: "API reference for expm1, expm1f, and expm1; which compute the base-e exponential of a value, minus one."
-ms.date: "9/1/2020"
+ms.date: 9/1/2020
 api_name: ["expm1l", "expm1", "expm1f"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["expm1l", "expm1", "expm1f"]
 helpviewer_keywords: ["expm1f function", "expm1l function", "expm1 function"]
-ms.assetid: 2a4dd2d9-370c-42b0-9067-0625efa272e0
 ---
 # `expm1`, `expm1f`, `expm1l`
 
@@ -32,7 +31,7 @@ float expm1f(
 long double expm1l(
    long double x
 );
-#define expm1(X) // Requires C11 or higher
+#define expm1(X) // Requires C11 or later
 ```
 
 ### Parameters

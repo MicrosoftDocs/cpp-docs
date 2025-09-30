@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: concurrent_unordered_multiset Class"
 title: "concurrent_unordered_multiset Class"
-ms.date: "11/04/2016"
+description: "Learn more about: concurrent_unordered_multiset Class"
+ms.date: 11/04/2016
 f1_keywords: ["concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::hash_function", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::insert", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::key_eq", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::swap", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::unsafe_erase"]
 helpviewer_keywords: ["concurrent_unordered_multiset class"]
-ms.assetid: 219d7d67-1ff0-45f4-9400-e9cc272991a4
 ---
 # concurrent_unordered_multiset Class
 
@@ -16,15 +15,8 @@ The `concurrent_unordered_multiset` class is an concurrency-safe container that 
 template <typename K,
     typename _Hasher = std::hash<K>,
     typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<K>
->,
-    typename key_equality = std::equal_to<K>,
-    typename _Allocator_type = std::allocator<K>> class concurrent_unordered_multiset : public details::_Concurrent_hash<details::_Concurrent_unordered_set_traits<K,
-    details::_Hash_compare<K,
-_Hasher,
-    key_equality>,
-_Allocator_type,
-    true>>;
+    typename _Allocator_type = std::allocator<K>>
+class concurrent_unordered_multiset : public details::_Concurrent_hash<details::_Concurrent_unordered_set_traits<K, details::_Hash_compare<K, _Hasher, key_equality>, _Allocator_type, true>>;
 ```
 
 ### Parameters
@@ -391,7 +383,7 @@ An iterator pointing to the insertion location.
 
 The first member function inserts the element `value` in the controlled sequence, then returns the iterator that designates the inserted element.
 
-The second member function returns insert( `value`), using `_Where` as a starting place within the controlled sequence to search for the insertion point.
+The second member function returns insert(`value`), using `_Where` as a starting place within the controlled sequence to search for the insertion point.
 
 The third member function inserts the sequence of element values from the range [ `first`, `last`).
 
@@ -437,7 +429,7 @@ void max_load_factor(float _Newmax);
 
 ### Return Value
 
-The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid..
+The first member function returns the stored maximum load factor. The second member function does not return a value but throws an [out_of_range](../../../standard-library/out-of-range-class.md) exception if the supplied load factor is invalid.
 
 ## <a name="max_size"></a> max_size
 
@@ -694,5 +686,5 @@ The maximum number of buckets in this container.
 
 ## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
+[concurrency Namespace](concurrency-namespace.md)\
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)

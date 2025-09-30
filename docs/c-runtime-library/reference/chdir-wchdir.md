@@ -78,7 +78,6 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 int main( int argc, char *argv[] )
 {
-
    if(_chdir( argv[1] ) )
    {
       switch (errno)

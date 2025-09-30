@@ -102,6 +102,8 @@ items:
           href: ../cpp/declarations-and-definitions-cpp.md
         - name: Storage classes
           href: ../cpp/storage-classes-cpp.md
+        - name: alignas
+          href: ../cpp/alignas-specifier.md
         - name: auto
           href: ../cpp/auto-cpp.md
         - name: const
@@ -158,7 +160,7 @@ items:
           href: ../cpp/function-call-operator-parens.md
         - name: "Indirection operator: *"
           href: ../cpp/indirection-operator-star.md
-        - name: Left shift and right shift operators (>> and <<)
+        - name: "Left shift and right shift operators: << and >>"
           href: ../cpp/left-shift-and-right-shift-operators-input-and-output.md
         - name: "Logical AND operator: &&"
           href: ../cpp/logical-and-operator-amp-amp.md
@@ -186,7 +188,7 @@ items:
           href: ../cpp/scope-resolution-operator.md
         - name: sizeof operator
           href: ../cpp/sizeof-operator.md
-        - name: "Subscript operator:"
+        - name: "Subscript operator: []"
           href: ../cpp/subscript-operator.md
         - name: typeid operator
           href: ../cpp/typeid-operator.md
@@ -367,7 +369,7 @@ items:
         - name: Pimpl idiom for compile-time encapsulation
           href: ../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
         - name: Portability at ABI boundaries
-          href: ../cpp/portability-at-abi-boundaries-modern-cpp.md 
+          href: ../cpp/portability-at-abi-boundaries-modern-cpp.md
         - name: Constructors
           items: 
             - name: Constructors
@@ -694,6 +696,8 @@ items:
                   href: ../cpp/using-dllimport-and-dllexport-in-cpp-classes.md
             - name: empty_bases
               href: ../cpp/empty-bases.md
+            - name: hybrid_patchable
+              href: ../cpp/hybrid-patchable.md
             - name: jitintrinsic
               href: ../cpp/jitintrinsic.md
             - name: naked

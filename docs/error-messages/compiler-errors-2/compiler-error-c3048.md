@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3048"
 title: "Compiler Error C3048"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3048"
+ms.date: 11/04/2016
 f1_keywords: ["C3048"]
 helpviewer_keywords: ["C3048"]
-ms.assetid: 48e07091-94d9-471d-befe-7e2507631edd
 ---
 # Compiler Error C3048
 
-Expression following '#pragma omp atomic' has improper form
+> Expression following '#pragma omp atomic' has improper form
+
+## Remarks
 
 An atomic directive was incorrectly specified.
 
-The following sample generates C3048:
+## Example
+
+The following example generates C3048:
 
 ```cpp
 // C3048.cpp

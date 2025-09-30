@@ -1,15 +1,14 @@
 ---
-description: "Learn more about: Compiler Command-Line Syntax"
 title: "MSVC Compiler Command-Line Syntax"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Command-Line Syntax"
+ms.date: 11/04/2016
 helpviewer_keywords: ["syntax, CL compiler command line", "cl.exe compiler, command-line syntax"]
-ms.assetid: acba2c1c-0803-4a3a-af25-63e849b930a2
 ---
 # Compiler Command-Line Syntax
 
 The CL command line uses the following syntax:
 
-```
+```cmd
 CL [option...] file... [option | file]... [lib...] [@command-file] [/link link-opt...]
 ```
 
@@ -17,7 +16,7 @@ The following table describes input to the CL command.
 
 |Entry|Meaning|
 |-----------|-------------|
-|*option*|One or more [CL options](compiler-options.md). Note that all options apply to all specified source files. Options are specified by either a forward slash (/) or a dash (-). If an option takes an argument, the option's description documents whether a space is allowed between the option and the arguments. Option names (except for the /HELP option) are case sensitive. For more information, see [Order of CL Options](order-of-cl-options.md).|
+|*option*|One or more [CL options](compiler-options.md). All options apply to all specified source files. Specify options using either a forward slash (/) or a dash (-). Generally, there can't be a space between the option and argument. The option's description states when a space is allowed. Options are case-sensitive--except for `/HELP`. For more information, see [Order of CL Options](order-of-cl-options.md).|
 |`file`|The name of one or more source files, .obj files, or libraries. CL compiles source files and passes the names of the .obj files and libraries to the linker. For more information, see [CL Filename Syntax](cl-filename-syntax.md).|
 |*lib*|One or more library names. CL passes these names to the linker.|
 |*command-file*|A file that contains multiple options and filenames. For more information, see [CL Command Files](cl-command-files.md).|

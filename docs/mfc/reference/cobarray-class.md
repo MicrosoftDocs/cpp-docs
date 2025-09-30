@@ -1,10 +1,9 @@
 ---
 title: "CObArray Class"
-description: "API reference for the `CObArray` `MFC` class which stores `CObject` pointers in an array."
-ms.date: "08/27/2020"
+description: "API reference for the `CObArray` MFC class which stores `CObject` pointers in an array."
+ms.date: 08/27/2020
 f1_keywords: ["CObArray", "AFXCOLL/CObArray", "AFXCOLL/CObArray::CObArray", "AFXCOLL/CObArray::Add", "AFXCOLL/CObArray::Append", "AFXCOLL/CObArray::Copy", "AFXCOLL/CObArray::ElementAt", "AFXCOLL/CObArray::FreeExtra", "AFXCOLL/CObArray::GetAt", "AFXCOLL/CObArray::GetCount", "AFXCOLL/CObArray::GetData", "AFXCOLL/CObArray::GetSize", "AFXCOLL/CObArray::GetUpperBound", "AFXCOLL/CObArray::InsertAt", "AFXCOLL/CObArray::IsEmpty", "AFXCOLL/CObArray::RemoveAll", "AFXCOLL/CObArray::RemoveAt", "AFXCOLL/CObArray::SetAt", "AFXCOLL/CObArray::SetAtGrow", "AFXCOLL/CObArray::SetSize"]
 helpviewer_keywords: ["CObArray [MFC], CObArray", "CObArray [MFC], Add", "CObArray [MFC], Append", "CObArray [MFC], Copy", "CObArray [MFC], ElementAt", "CObArray [MFC], FreeExtra", "CObArray [MFC], GetAt", "CObArray [MFC], GetCount", "CObArray [MFC], GetData", "CObArray [MFC], GetSize", "CObArray [MFC], GetUpperBound", "CObArray [MFC], InsertAt", "CObArray [MFC], IsEmpty", "CObArray [MFC], RemoveAll", "CObArray [MFC], RemoveAt", "CObArray [MFC], SetAt", "CObArray [MFC], SetAtGrow", "CObArray [MFC], SetSize"]
-ms.assetid: 27894efd-2370-4776-9ed9-24a98492af17
 ---
 # `CObArray` Class
 
@@ -294,7 +293,7 @@ The following table shows other member functions that are similar to `CObArray::
 
 ### Example
 
-  See the example for [`CObArray::GetData`](#getdata).
+See the example for [`CObArray::GetData`](#getdata).
 
 ## <a name="getat"></a> `CObArray::GetAt`
 
@@ -325,7 +324,7 @@ The following table shows other member functions that are similar to `CObArray::
 |[`CByteArray`](../../mfc/reference/cbytearray-class.md)|`BYTE GetAt(INT_PTR nIndex) const;`|
 |[`CDWordArray`](../../mfc/reference/cdwordarray-class.md)|`DWORD GetAt(INT_PTR nIndex) const;`|
 |[`CPtrArray`](../../mfc/reference/cptrarray-class.md)|`void* GetAt(INT_PTR nIndex) const;`|
-|[`CStringArray`](../../mfc/reference/cstringarray-class.md)|`CString GetAt(INT_PTR nIndex) const;`|
+|[`CStringArray`](../../mfc/reference/cstringarray-class.md)|`const CString& GetAt(INT_PTR nIndex) const;`|
 |[`CUIntArray`](../../mfc/reference/cuintarray-class.md)|`UINT GetAt(INT_PTR nIndex) const;`|
 |[`CWordArray`](../../mfc/reference/cwordarray-class.md)|`WORD GetAt(INT_PTR nIndex) const;`|
 

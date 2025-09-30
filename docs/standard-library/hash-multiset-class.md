@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: hash_multiset Class"
 title: "hash_multiset Class"
-ms.date: "11/04/2016"
+description: "Learn more about: hash_multiset Class"
+ms.date: 11/04/2016
 f1_keywords: ["hash_set/stdext::hash_multiset", "hash_set/stdext::hash_multiset::allocator_type", "hash_set/stdext::hash_multiset::const_iterator", "hash_set/stdext::hash_multiset::const_pointer", "hash_set/stdext::hash_multiset::const_reference", "hash_set/stdext::hash_multiset::const_reverse_iterator", "hash_set/stdext::hash_multiset::difference_type", "hash_set/stdext::hash_multiset::iterator", "hash_set/stdext::hash_multiset::key_compare", "hash_set/stdext::hash_multiset::key_type", "hash_set/stdext::hash_multiset::pointer", "hash_set/stdext::hash_multiset::reference", "hash_set/stdext::hash_multiset::reverse_iterator", "hash_set/stdext::hash_multiset::size_type", "hash_set/stdext::hash_multiset::value_compare", "hash_set/stdext::hash_multiset::value_type", "hash_set/stdext::hash_multiset::begin", "hash_set/stdext::hash_multiset::cbegin", "hash_set/stdext::hash_multiset::cend", "hash_set/stdext::hash_multiset::clear", "hash_set/stdext::hash_multiset::count", "hash_set/stdext::hash_multiset::crbegin", "hash_set/stdext::hash_multiset::crend", "hash_set/stdext::hash_multiset::emplace", "hash_set/stdext::hash_multiset::emplace_hint", "hash_set/stdext::hash_multiset::empty", "hash_set/stdext::hash_multiset::end", "hash_set/stdext::hash_multiset::equal_range", "hash_set/stdext::hash_multiset::erase", "hash_set/stdext::hash_multiset::find", "hash_set/stdext::hash_multiset::get_allocator", "hash_set/stdext::hash_multiset::insert", "hash_set/stdext::hash_multiset::key_comp", "hash_set/stdext::hash_multiset::lower_bound", "hash_set/stdext::hash_multiset::max_size", "hash_set/stdext::hash_multiset::rbegin", "hash_set/stdext::hash_multiset::rend", "hash_set/stdext::hash_multiset::size", "hash_set/stdext::hash_multiset::swap", "hash_set/stdext::hash_multiset::upper_bound", "hash_set/stdext::hash_multiset::value_comp"]
 helpviewer_keywords: ["stdext::hash_multiset", "stdext::hash_multiset::allocator_type", "stdext::hash_multiset::const_iterator", "stdext::hash_multiset::const_pointer", "stdext::hash_multiset::const_reference", "stdext::hash_multiset::const_reverse_iterator", "stdext::hash_multiset::difference_type", "stdext::hash_multiset::iterator", "stdext::hash_multiset::key_compare", "stdext::hash_multiset::key_type", "stdext::hash_multiset::pointer", "stdext::hash_multiset::reference", "stdext::hash_multiset::reverse_iterator", "stdext::hash_multiset::size_type", "stdext::hash_multiset::value_compare", "stdext::hash_multiset::value_type", "stdext::hash_multiset::begin", "stdext::hash_multiset::cbegin", "stdext::hash_multiset::cend", "stdext::hash_multiset::clear", "stdext::hash_multiset::count", "stdext::hash_multiset::crbegin", "stdext::hash_multiset::crend", "stdext::hash_multiset::emplace", "stdext::hash_multiset::emplace_hint", "stdext::hash_multiset::empty", "stdext::hash_multiset::end", "stdext::hash_multiset::equal_range", "stdext::hash_multiset::erase", "stdext::hash_multiset::find", "stdext::hash_multiset::get_allocator", "stdext::hash_multiset::insert", "stdext::hash_multiset::key_comp", "stdext::hash_multiset::lower_bound", "stdext::hash_multiset::max_size", "stdext::hash_multiset::rbegin", "stdext::hash_multiset::rend", "stdext::hash_multiset::size", "stdext::hash_multiset::swap", "stdext::hash_multiset::upper_bound", "stdext::hash_multiset::value_comp"]
-ms.assetid: 0580397a-a76e-40ad-aea2-5c6f3a9d0a21
 ---
 # hash_multiset Class
 
@@ -309,8 +308,6 @@ Erases all the elements of a hash_multiset.
 void clear();
 ```
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -388,8 +385,6 @@ A type that provides a reference to a **`const`** element stored in a hash_multi
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_reference const_reference;
 ```
-
-### Remarks
 
 ### Example
 
@@ -713,8 +708,6 @@ The value of an element to be inserted into the [hash_multiset](../standard-libr
 
 The `emplace` member function returns an iterator that points to the position where the new element was inserted.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -811,8 +804,6 @@ bool empty() const;
 ### Return Value
 
 **`true`** if the hash_multiset is empty; **`false`** if the hash_multiset is nonempty.
-
-### Remarks
 
 ### Example
 
@@ -931,7 +922,7 @@ The argument key to be compared with the sort key of an element from the hash_mu
 
 A pair of iterators where the first is the [lower_bound](#lower_bound) of the key and the second is the [upper_bound](#upper_bound) of the key.
 
-To access the first iterator of a pair `pr` returned by the member function, use `pr`. **first** and to dereference the lower bound iterator, use \*( `pr`. **first**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **second** and to dereference the upper bound iterator, use \*( `pr`. **second**).
+To access the first iterator of a pair `pr` returned by the member function, use `pr`. **first** and to dereference the lower bound iterator, use \*(`pr`. **first**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **second** and to dereference the upper bound iterator, use \*(`pr`. **second**).
 
 ### Example
 
@@ -1295,11 +1286,11 @@ hash_multiset(
 
 hash_multiset(
     hash_multiset&& Right
-};
+);
 hash_multiset (initializer_list<Type> IList);
 
 hash_multiset(
-    initializer_list<Tu[e> IList, const Compare& Comp):
+    initializer_list<Type> IList, const Compare& Comp):
 hash_multiset(
     initializer_list<Type> IList, const Compare& Comp, const Allocator& Al);
 
@@ -1592,8 +1583,6 @@ The argument key to be compared with the sort key of an element from the hash_mu
 
 An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of the first element in a hash_multiset with a key that is equal to or greater than the argument key, or that addresses the location succeeding the last element in the hash_multiset if no match is found for the key.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -1651,8 +1640,6 @@ size_type max_size() const;
 ### Return Value
 
 The maximum possible length of the hash_multiset.
-
-### Remarks
 
 ### Example
 
@@ -1846,8 +1833,6 @@ A type that provides a reference to an element stored in a hash_multiset.
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::reference reference;
 ```
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -2005,8 +1990,6 @@ size_type size() const;
 
 The current length of the hash_multiset.
 
-### Remarks
-
 ### Example
 
 ```cpp
@@ -2047,8 +2030,6 @@ An unsigned integer type that can represent the number of elements in a hash_mul
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::size_type size_type;
 ```
-
-### Remarks
 
 ### Example
 
@@ -2149,8 +2130,6 @@ The argument key to be compared with the sort key of an element from the hash_mu
 ### Return Value
 
 An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of the first element in a hash_multiset with a key greater than the argument key, or that addresses the location succeeding the last element in the hash_multiset if no match is found for the key.
-
-### Remarks
 
 ### Example
 

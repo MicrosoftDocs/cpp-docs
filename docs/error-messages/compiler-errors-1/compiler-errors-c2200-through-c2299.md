@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler errors C2200 through C2299"
 title: "Compiler errors C2200 through C2299"
+description: "Learn more about: Compiler errors C2200 through C2299"
 ms.date: "04/21/2019"
-f1_keywords: ["C2202", "C2209", "C2210", "C2211", "C2214", "C2215", "C2221", "C2225", "C2230", "C2235", "C2237", "C2239", "C2240", "C2257", "C2260", "C2263", "C2265", "C2269", "C2278", "C2281", "C2282", "C2288", "C2291", "C2294"]
-helpviewer_keywords: ["C2202", "C2209", "C2210", "C2211", "C2214", "C2215", "C2221", "C2225", "C2230", "C2235", "C2237", "C2239", "C2240", "C2257", "C2260", "C2263", "C2265", "C2269", "C2278", "C2281", "C2282", "C2288", "C2291", "C2294"]
-ms.assetid: 9b36d11b-9510-4390-96f1-0c9235124d14
+f1_keywords: ["C2202", "C2209", "C2210", "C2211", "C2214", "C2215", "C2221", "C2225", "C2230", "C2235", "C2237", "C2239", "C2240", "C2257", "C2260", "C2263", "C2265", "C2269", "C2278", "C2281", "C2282", "C2284", "C2288", "C2291", "C2294"]
+helpviewer_keywords: ["C2202", "C2209", "C2210", "C2211", "C2214", "C2215", "C2221", "C2225", "C2230", "C2235", "C2237", "C2239", "C2240", "C2257", "C2260", "C2263", "C2265", "C2269", "C2278", "C2281", "C2282", "C2284", "C2288", "C2291", "C2294"]
 ---
 # Compiler errors C2200 through C2299
 
@@ -36,7 +35,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2217](compiler-error-c2217.md)|'*attribute1*' requires '*attribute2*'|
 |[Compiler error C2218](compiler-error-c2218.md)|'*calltype*' cannot be used with '/arch:IA32'|
 |[Compiler error C2219](compiler-error-c2219.md)|syntax error: type qualifier must be after '*'|
-|[Compiler error C2220](compiler-error-c2220.md)|warning treated as error - no '*filetype*' file generated|
+|[Compiler error C2220](compiler-error-c2220.md)|the following warning is treated as an error|
 |Compiler error C2221|Obsolete.|
 |[Compiler error C2222](compiler-error-c2222.md)|unexpected type '*type*': a base-class or member was expected|
 |[Compiler error C2223](compiler-error-c2223.md)|left of '->*identifier*' must point to struct/union|
@@ -51,7 +50,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2232](compiler-error-c2232.md)|'->*identifier*': left operand has 'class/struct/union' type, use '.'|
 |[Compiler error C2233](compiler-error-c2233.md)|'*identifier*': arrays of objects containing zero-size arrays are illegal|
 |[Compiler error C2234](compiler-error-c2234.md)|*identifier*': arrays of references are illegal|
-|Compiler error C2235|Obsolete.|
+|Compiler error C2235|mismatching target architecture for compiled module interface for '*architecture 1*' from '*architecture 2*'|
 |[Compiler error C2236](compiler-error-c2236.md)|unexpected token '*token*'. Did you forget a ';'?|
 |Compiler error C2237|multiple module declaration|
 |[Compiler error C2238](compiler-error-c2238.md)|unexpected token(s) preceding '*token*'|
@@ -79,7 +78,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C2260|'*specifier*': invalid InternalsVisibleToAttribute friend assembly specifier|
 |[Compiler error C2261](compiler-error-c2261.md)|'*string*': assembly reference is invalid and cannot be resolved|
 |[Compiler error C2262](compiler-error-c2262.md)|'*specifier*': InternalsVisibleTo declarations cannot have a version, culture, or processor architecture specified|
-|Compiler error C2263|Obsolete.|
+|Compiler error C2263|'*module name*': a translation unit cannot be imported into itself|
 |[Compiler error C2264](compiler-error-c2264.md)|'*function*': error in function definition or declaration; function not called|
 |Compiler error C2265|Obsolete.|
 |[Compiler error C2266](compiler-error-c2266.md)|'*identifier*': reference to a non-constant bounded array is illegal|
@@ -91,20 +90,20 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2272](compiler-error-c2272.md)|'*function*': modifiers not allowed on static member functions|
 |[Compiler error C2273](compiler-error-c2273.md)|'*type*': illegal as right side of '->' operator|
 |[Compiler error C2274](compiler-error-c2274.md)|'*type*': illegal as right side of '.' operator|
-|[Compiler error C2275](compiler-error-c2275.md)|'*type*': illegal use of this type as an expression|
+|[Compiler error C2275](compiler-error-c2275.md)|'*type*': expected an expression instead of a type|
 |[Compiler error C2276](compiler-error-c2276.md)|'*operator*': illegal operation on bound member function expression|
 |[Compiler error C2277](compiler-error-c2277.md)|'*function*': cannot take address of this member function|
-|Compiler error C2278|Obsolete.|
+|Compiler error C2278|'*token*': unexpected token. Format is '`__has_cpp_attribute( identifier )`'|
 |[Compiler error C2279](compiler-error-c2279.md)|exception specification cannot appear in a typedef declaration|
 |[Compiler error C2280](compiler-error-c2280.md)|'*class*::*function*': attempting to reference a deleted function|
 |Compiler error C2281|'*class*::*function*': a function can only be deleted on the first declaration|
 |Compiler error C2282|'*function1*' cannot override '*function2*'|
-|[Compiler error C2283](compiler-error-c2283.md)|'*identifer*': pure specifier or abstract override specifier not allowed on unnamed class/struct|
+|[Compiler error C2283](compiler-error-c2283.md)|'*identifier*': pure specifier or abstract override specifier not allowed on unnamed struct|
 |Compiler error C2284|'*function*': illegal argument to intrinsic function, parameter *number*|
 |[Compiler error C2285](compiler-error-c2285.md)|pointers to members representation has already been determined - pragma ignored|
 |[Compiler error C2286](compiler-error-c2286.md)|pointers to members of '*identifier*' representation is already set to *inheritance* - declaration ignored|
 |[Compiler error C2287](compiler-error-c2287.md)|'*identifier*': inheritance representation: '*inheritiance*' is less general than the required '*inheritance*'|
-|Compiler error C2288|Obsolete.|
+|Compiler error C2288|preprocessing number '*number*' is not a valid integer or floating literal|
 |[Compiler error C2289](compiler-error-c2289.md)|same type qualifier used more than once|
 |[Compiler error C2290](compiler-error-c2290.md)|C++ 'asm' syntax ignored. Use __asm.|
 |Compiler error C2291|An anonymous namespace cannot be exported.|
@@ -120,4 +119,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2001 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

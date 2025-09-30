@@ -4,7 +4,7 @@ title: "Consuming libraries and components in C++ projects"
 ms.date: 12/18/2020
 f1_keywords: ["VC.Project.References"]
 helpviewer_keywords: ["Add References Dialog Box (C++)", ".NET Framework (C++), Add References Dialog Box"]
-ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
+ms.topic: how-to
 ---
 # Consuming libraries and components
 
@@ -12,19 +12,23 @@ C++ projects often need to call functions or access data in a binary file such a
 
 ## Consuming libraries downloaded via vcpkg
 
-To consume a library that you have downloaded by using the **vcpkg** package manager, you can ignore the instructions below. For more information, see [vcpkg.io](https://vcpkg.io/).
+To consume a library that you have downloaded by using the **vcpkg** package manager, you can ignore the instructions below. For more information, see:
+- [vcpkg in CMake projects](/vcpkg/users/buildsystems/cmake-integration)
+- [Install and use packages with CMake in Visual Studio](/vcpkg/get_started/get-started-vs)
+- [vcpkg in MSBuild projects](/vcpkg/users/buildsystems/msbuild-integration)
+- [Tutorial: Install and use packages with MSBuild in Visual Studio](/vcpkg/get_started/get-started-msbuild)
 
 ## Consuming static libraries
 
 If your static library project gets built in the same solution:
 
-1. #include the header file(s) for the static library using quotation marks. In a typical solution, the path starts with `../<library project name>`. IntelliSense will help you find it.
+1. `#include` the header file(s) for the static library using quotation marks. In a typical solution, the path starts with `../<library project name>`. IntelliSense will help you find it.
 2. Add a reference to the static library project. Right-click on **References** under the application project node in **Solution Explorer** and choose **Add Reference**.
 
 If the static library isn't part of the solution:
 
 1. Right-click on the application project node in **Solution Explorer** and then choose **Properties**.
-2. In the **VC++ Directories** property page, add the path to the directory that contains the LIB file to **Library Paths**. Then, add the path to the library header file(s) to **Include Directories**.  
+2. In the **VC++ Directories** property page, add the path to the directory that contains the LIB file to **Library Directories**. Then, add the path to the library header file(s) to **Include Directories**.  
 3. In the **Linker > Input** property page, add the name of the LIB file to **Additional Dependencies**.
 
 ## Dynamic link libraries
@@ -158,5 +162,5 @@ The following properties exist on COM and .NET assembly references, and aren't m
 
 ## See also
 
-[C++ project property page reference](reference/property-pages-visual-cpp.md)<br>
+[C++ project property page reference](reference/property-pages-visual-cpp.md)\
 [Set C++ compiler and build properties in Visual Studio](working-with-project-properties.md)

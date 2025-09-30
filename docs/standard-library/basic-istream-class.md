@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: basic_istream Class"
 title: "basic_istream Class"
+description: "Learn more about: basic_istream Class"
 ms.date: 06/10/2022
 f1_keywords: ["istream/std::basic_istream", "istream/std::basic_istream::gcount", "istream/std::basic_istream::get", "istream/std::basic_istream::getline", "istream/std::basic_istream::", "istream/std::basic_istream::peek", "istream/std::basic_istream::putback", "istream/std::basic_istream::read", "istream/std::basic_istream::readsome", "istream/std::basic_istream::seekg", "istream/std::basic_istream::sentry", "istream/std::basic_istream::swap", "istream/std::basic_istream::sync", "istream/std::basic_istream::tellg", "istream/std::basic_istream::unget"]
 helpviewer_keywords: ["std::basic_istream [C++]", "std::basic_istream [C++], gcount", "std::basic_istream [C++], get", "std::basic_istream [C++], getline", "std::basic_istream [C++], OVERWRITE", "std::basic_istream [C++], peek", "std::basic_istream [C++], putback", "std::basic_istream [C++], read", "std::basic_istream [C++], readsome", "std::basic_istream [C++], seekg", "std::basic_istream [C++], sentry", "std::basic_istream [C++], swap", "std::basic_istream [C++], sync", "std::basic_istream [C++], tellg", "std::basic_istream [C++], unget"]
@@ -410,7 +410,7 @@ Type 'abcdef': abcdef
 def
 ```
 
-## <a name="op_gt_gt"></a> `basic\_istream::operator>>`
+## <a name="op_gt_gt"></a> `basic_istream::operator>>`
 
 Calls a function on the input stream or reads formatted data from the input stream.
 
@@ -451,7 +451,7 @@ The stream (`*this`).
 
 ### Remarks
 
-The `<istream>` header also defines several global extraction operators. For more information, see [`operator>> (\<istream>)`](../standard-library/istream-operators.md#op_gt_gt).
+The `<istream>` header also defines several global extraction operators. For more information, see [`operator>> (<istream>)`](../standard-library/istream-operators.md#op_gt_gt).
 
 The first member function ensures that an expression of the form `istr >> ws` calls `ws(istr)`, and then returns `*this`. For more information, see [`ws`](../standard-library/istream-functions.md#ws).
 

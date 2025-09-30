@@ -2,7 +2,7 @@
 title: "Compatibility"
 description: "Describes the compatibility of the Microsoft Universal C runtime library (UCRT) with the Standard C library, POSIX, the Safe CRT, and Store apps."
 ms.date: 1/19/2022
-ms.topic: "conceptual"
+ms.topic: "concept-article"
 helpviewer_keywords: ["CRT, compatibility", "compatibility, C runtime libraries", "compatibility"]
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
 ---
@@ -33,6 +33,6 @@ Except as noted within the documentation for specific functions, the UCRT is com
 | [UWP apps, the Windows Runtime, and the C runtime](./windows-store-apps-the-windows-runtime-and-the-c-run-time.md) | Describes when UCRT routines aren't compatible with Universal Windows apps or Microsoft Store apps. |
 | [ANSI C conformance](./ansi-c-compliance.md) | Describes standard-conforming names in the UCRT. |
 | [UNIX](./unix.md) | Provides guidelines for porting programs to UNIX. |
-| [Windows platforms (CRT)](./windows-platforms-crt.md) | Lists the operating systems that are the CRT supports. |
+| [Windows platforms (CRT)](./windows-platforms-crt.md) | Lists the operating systems that CRT supports. |
 | [Backward compatibility](./backward-compatibility.md) | Describes how to map old CRT names to the new ones. |
 | [C runtime (CRT) and C++ Standard Library (STL) `.lib` files](./crt-library-features.md) | Provides an overview of the CRT library (.lib) files and the associated compiler options. |

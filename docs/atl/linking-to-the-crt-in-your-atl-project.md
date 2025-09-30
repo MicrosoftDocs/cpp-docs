@@ -4,6 +4,7 @@ title: "Linking to the CRT in Your ATL Project"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CRT, linking with ATL", "WinMainCRTStartup method", "DllMainCRTStartup method", "wWinMainCRTStartup method", "ATL, C Run-Time library (CRT)"]
 ms.assetid: 650957ae-362c-4ecf-8b03-5d49138e8b5b
+ms.topic: concept-article
 ---
 # Linking to the CRT in Your ATL Project
 

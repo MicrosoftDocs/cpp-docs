@@ -1,6 +1,6 @@
 ---
 title: "Error: use-after-poison"
-description: "Source examples and live debug screenshots for use after poison errors."
+description: "Learn about the use-after-poison Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["use-after-poison"]
 helpviewer_keywords: ["use-after-poison error", "AddressSanitizer error use-after-poison"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["use-after-poison error", "AddressSanitizer error use-afte
 # Error: `use-after-poison`
 
 > Address Sanitizer Error: Use of poisoned memory
+
+## Remarks
 
 A developer can manually poison memory to customize debugging.
 
@@ -45,11 +47,11 @@ devenv /debugexe example1.exe
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

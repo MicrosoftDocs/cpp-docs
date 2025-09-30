@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: accelerator Class"
 title: "accelerator Class"
-ms.date: "11/04/2016"
+description: "Learn more about: accelerator Class"
+ms.date: 11/04/2016
 f1_keywords: ["AMPRT/accelerator", "AMPRT/Concurrency::accelerator::accelerator", "AMPRT/Concurrency::accelerator::create_view", "AMPRT/Concurrency::accelerator::get_all", "AMPRT/Concurrency::accelerator::get_auto_selection_view", "AMPRT/Concurrency::accelerator::get_dedicated_memory", "AMPRT/Concurrency::accelerator::get_default_cpu_access_type", "AMPRT/Concurrency::accelerator::get_default_view", "AMPRT/Concurrency::accelerator::get_description", "AMPRT/Concurrency::accelerator::get_device_path", "AMPRT/Concurrency::accelerator::get_has_display", "AMPRT/Concurrency::accelerator::get_is_debug", "AMPRT/Concurrency::accelerator::get_is_emulated", "AMPRT/Concurrency::accelerator::get_supports_cpu_shared_memory", "AMPRT/Concurrency::accelerator::get_supports_double_precision", "AMPRT/Concurrency::accelerator::get_supports_limited_double_precision", "AMPRT/Concurrency::accelerator::get_version", "AMPRT/Concurrency::accelerator::set_default", "AMPRT/Concurrency::accelerator::set_default_cpu_access_type", "AMPRT/Concurrency::accelerator::cpu_accelerator", "AMPRT/Concurrency::accelerator::dedicated_memory", "AMPRT/Concurrency::accelerator::default_accelerator", "AMPRT/Concurrency::accelerator::default_cpu_access_type", "AMPRT/Concurrency::accelerator::default_view", "AMPRT/Concurrency::accelerator::description", "AMPRT/Concurrency::accelerator::device_path", "AMPRT/Concurrency::accelerator::direct3d_ref", "AMPRT/Concurrency::accelerator::direct3d_warp", "AMPRT/Concurrency::accelerator::has_display", "AMPRT/Concurrency::accelerator::is_debug", "AMPRT/Concurrency::accelerator::is_emulated", "AMPRT/Concurrency::accelerator::supports_cpu_shared_memory", "AMPRT/Concurrency::accelerator::supports_double_precision", "AMPRT/Concurrency::accelerator::supports_limited_double_precision", "AMPRT/Concurrency::accelerator::version"]
 helpviewer_keywords: ["accelerator class"]
-ms.assetid: 37eed593-cf87-4611-9cdc-e98df6c2377a
 ---
 # accelerator Class
 
@@ -45,7 +44,7 @@ class accelerator;
 |[get_supports_limited_double_precision](#get_supports_limited_double_precision)|Determines whether the `accelerator` has limited support for double-precision math.|
 |[get_version](#get_version)|Returns the version of the `accelerator`.|
 |[set_default](#set_default)|Returns the path of the default accelerator.|
-|[set_default_cpu_access_type](#set_default_cpu_access_type)|Sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.|
+|[set_default_cpu_access_type](#set_default_cpu_access_type)|Sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type) for arrays and implicit memory allocations made on this `accelerator`.|
 
 ### Public Operators
 
@@ -62,7 +61,7 @@ class accelerator;
 |[cpu_accelerator](#cpu_accelerator)|Gets a string constant for the CPU `accelerator`.|
 |[dedicated_memory](#dedicated_memory)|Gets the dedicated memory for the `accelerator`, in kilobytes.|
 |[default_accelerator](#default_accelerator)|Gets a string constant for the default `accelerator`.|
-|[default_cpu_access_type](#default_cpu_access_type)|Gets or sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.|
+|[default_cpu_access_type](#default_cpu_access_type)|Gets or sets the default CPU [access_type](concurrency-namespace-enums-amp.md#access_type) for arrays and implicit memory allocations made on this `accelerator`.|
 |[default_view](#default_view)|Gets the default `accelerator_view` object that is associated with the `accelerator`.|
 |[description](#description)|Gets a short description of the `accelerator` device.|
 |[device_path](#device_path)|Gets the path of the device.|
@@ -165,7 +164,7 @@ static const wchar_t default_accelerator[];
 
 ## <a name="default_cpu_access_type"></a> default_cpu_access_type
 
-The default cpu [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.
+The default cpu [access_type](concurrency-namespace-enums-amp.md#access_type) for arrays and implicit memory allocations made on this `accelerator`.
 
 ```cpp
 __declspec(property(get= get_default_cpu_access_type)) access_type default_cpu_access_type;

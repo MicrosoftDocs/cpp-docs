@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <bitset> operators"
 title: "<bitset> operators"
+description: "Learn more about: <bitset> operators"
 ms.date: "11/04/2016"
 f1_keywords: ["bitset/std::operator&", "bitset/std::operator>>", "bitset/std::operator<<", "bitset/std::operator^", "bitset/std::operator|"]
-ms.assetid: 84fe6a13-6f6e-4cdc-bf8f-6f65ab1134d4
 helpviewer_keywords: ["std::operator& (bitset)", "std::operator>> (bitset)", "std::operator<< (bitset)"]
 ---
 # `<bitset>` operators
@@ -107,7 +106,7 @@ int main( )
         << b1 << " )" << endl;
 
    // Compare converting bitset to a string before
-   // inserting it into the output steam
+   // inserting it into the output stream
    string s1;
    s1 =  b1.template to_string<char,
       char_traits<char>, allocator<char> >( );
@@ -162,7 +161,6 @@ The template function extracts elements from *i_str* and inserts them into the b
 using namespace std;
 int main()
 {
-
    bitset<5> b1;
    cout << "Enter string of (0 or 1) bits for input into bitset<5>.\n"
         << "Try bit string of length less than or equal to 5,\n"

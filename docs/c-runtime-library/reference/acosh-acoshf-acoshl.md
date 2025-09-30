@@ -1,14 +1,13 @@
 ---
 title: "acosh, acoshf, acoshl"
 description: "API reference for acosh, acoshf, and acoshl; which calculate the inverse hyperbolic cosine of a floating-point value."
-ms.date: "08/31/2020"
+ms.date: 08/31/2020
 api_name: ["acoshf", "acosh", "acoshl", "_o_acosh", "_o_acoshf", "_o_acoshl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["acosh", "acoshf", "acoshl", "math/acosh", "math/acoshf", "math/acoshl"]
 helpviewer_keywords: ["acoshf function", "acosh function", "acoshl function"]
-ms.assetid: 6985c4d7-9e2a-44ce-9a9b-5a43015f15f7
 ---
 # `acosh`, `acoshf`, `acoshl`
 
@@ -20,7 +19,7 @@ Calculates the inverse hyperbolic cosine.
 double acosh( double x );
 float acoshf( float x );
 long double acoshl( long double x );
-#define acosh(X) // Requires C11 or higher
+#define acosh(X) // Requires C11 or later
 
 float acosh( float x );  // C++ only
 long double acosh( long double x );  // C++ only

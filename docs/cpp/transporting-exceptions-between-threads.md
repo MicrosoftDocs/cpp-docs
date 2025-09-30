@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Transporting exceptions between threads"
 title: "Transporting exceptions between threads"
+description: "Learn more about: Transporting exceptions between threads"
 ms.date: 05/02/2023
 helpviewer_keywords: ["std::current_exception", "transporting exceptions between threads", "std::copy_exception", "exception_ptr", "std::exception_ptr", "std::rethrow_exception", "current_exception", "transport exceptions between threads", "copy_exception", "rethrow_exception", "move exceptions between threads"]
 ---
@@ -65,7 +65,7 @@ For more information about the C++ Standards committee proposal, search the Inte
 
 ### Exception-handling models and compiler options
 
-Your application's exception-handling model determines whether it can catch and transport an exception. Visual C++ supports three models for handling C++ exceptions: [ISO-standard C++ exception handling](/cpp/cpp/errors-and-exception-handling-modern-cpp), [structured exception handling (SEH)](/windows/win32/debug/structured-exception-handling), and [common language runtime (CLR) exceptions](/cpp/extensions/exception-handling-cpp-component-extensions). Use the [`/EH`](../build/reference/eh-exception-handling-model.md) and [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler options to specify your application's exception-handling model.
+Your application's exception-handling model determines whether it can catch and transport an exception. Visual C++ supports three models for handling C++ exceptions: [ISO-standard C++ exception handling](errors-and-exception-handling-modern-cpp.md), [structured exception handling (SEH)](/windows/win32/debug/structured-exception-handling), and [common language runtime (CLR) exceptions](../extensions/exception-handling-cpp-component-extensions.md). Use the [`/EH`](../build/reference/eh-exception-handling-model.md) and [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler options to specify your application's exception-handling model.
 
 Only the following combination of compiler options and programming statements can transport an exception. Other combinations either can't catch exceptions, or can catch but can't transport exceptions.
 
@@ -244,6 +244,6 @@ exception_ptr 1: Caught a  myException exception.
 
 ## See also
 
-[Exception Handling](../cpp/exception-handling-in-visual-cpp.md)
+[Exception Handling](../cpp/exception-handling-in-visual-cpp.md)\
 [`/EH` (Exception Handling Model)](../build/reference/eh-exception-handling-model.md)\
 [`/clr` (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)

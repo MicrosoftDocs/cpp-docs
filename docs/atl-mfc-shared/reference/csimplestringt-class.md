@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: CSimpleStringT Class"
 title: "CSimpleStringT Class"
-ms.date: 10/04/2021
+description: "Learn more about: CSimpleStringT class"
+ms.date: 01/26/2024
 f1_keywords: ["CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::PCXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::PXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::Append", "ATLSIMPSTR/ATL::CSimpleStringT::AppendChar", "ATLSIMPSTR/ATL::CSimpleStringT::CopyChars", "ATLSIMPSTR/ATL::CSimpleStringT::CopyCharsOverlapped", "ATLSIMPSTR/ATL::CSimpleStringT::Empty", "ATLSIMPSTR/ATL::CSimpleStringT::FreeExtra", "ATLSIMPSTR/ATL::CSimpleStringT::GetAllocLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetAt", "ATLSIMPSTR/ATL::CSimpleStringT::GetBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::GetBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetManager", "ATLSIMPSTR/ATL::CSimpleStringT::GetString", "ATLSIMPSTR/ATL::CSimpleStringT::IsEmpty", "ATLSIMPSTR/ATL::CSimpleStringT::LockBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::Preallocate", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::SetAt", "ATLSIMPSTR/ATL::CSimpleStringT::SetManager", "ATLSIMPSTR/ATL::CSimpleStringT::SetString", "ATLSIMPSTR/ATL::CSimpleStringT::StringLength", "ATLSIMPSTR/ATL::CSimpleStringT::Truncate", "ATLSIMPSTR/ATL::CSimpleStringT::UnlockBuffer"]
 helpviewer_keywords: ["shared classes, CSimpleStringT", "strings [C++], ATL class", "CSimpleStringT class"]
 ---
@@ -18,7 +18,7 @@ class CSimpleStringT
 
 ### Parameters
 
-*`BaseType`*<br/>
+*`BaseType`*\
 The character type of the string class. Can be one of the following:
 
 - **`char`** (for ANSI character strings).
@@ -445,7 +445,7 @@ An `PXSTR` pointer to the object's (null-terminated) character buffer.
 
 Call this method to return the buffer contents of the `CSimpleStringT` object. The returned `PXSTR` is not a constant and therefore allows direct modification of `CSimpleStringT` contents.
 
-If you use the pointer returned by `GetBuffer` to change the string contents, you must call [`ReleaseBuffer`](#releasebuffer) before you use any other `CSimpleStringT` member methods.
+If you use the pointer returned by `GetBuffer` to change the string contents, you must call [`ReleaseBuffer`](#releasebuffer) to update the internal state of `CSimpleStringT` before you use any other `CSimpleStringT` methods.
 
 The address returned by `GetBuffer` may not be valid after the call to `ReleaseBuffer` because additional `CSimpleStringT` operations can cause the `CSimpleStringT` buffer to be reallocated. The buffer is not reallocated if you do not change the length of the `CSimpleStringT`.
 
@@ -491,7 +491,7 @@ A `PXSTR` pointer to the object's (null-terminated) character buffer.
 
 Call this method to retrieve a specified length of the internal buffer of the `CSimpleStringT` object. The returned `PXSTR` pointer is not **`const`** and thus allows direct modification of `CSimpleStringT` contents.
 
-If you use the pointer returned by [`GetBufferSetLength`](#getbuffersetlength) to change the string contents, call `ReleaseBuffer` to update the internal state of `CsimpleStringT` before you use any other `CSimpleStringT` methods.
+If you use the pointer returned by [`GetBufferSetLength`](#getbuffersetlength) to change the string contents, call `ReleaseBuffer` to update the internal state of `CSimpleStringT` before you use any other `CSimpleStringT` methods.
 
 The address returned by `GetBufferSetLength` may not be valid after the call to `ReleaseBuffer` because additional `CSimpleStringT` operations can cause the `CSimpleStringT` buffer to be reallocated. The buffer is not reassigned if you do not change the length of the `CSimpleStringT`.
 
@@ -502,9 +502,7 @@ If you keep track of the string length yourself, do not append the terminating n
 For more information about reference counting, see the following articles:
 
 - [Managing Object Lifetimes through Reference Counting](/windows/win32/com/managing-object-lifetimes-through-reference-counting) in the Windows SDK.
-
 - [Implementing Reference Counting](/windows/win32/com/implementing-reference-counting) in the Windows SDK.
-
 - [Rules for Managing Reference Counts](/windows/win32/com/rules-for-managing-reference-counts) in the Windows SDK.
 
 ### Example
@@ -517,9 +515,7 @@ LPTSTR pstr = str.GetBufferSetLength(3);
 pstr[0] = _T('C');
 pstr[1] = _T('u');
 pstr[2] = _T('p');
-
-// No need for trailing zero or call to ReleaseBuffer()
-// because GetBufferSetLength() set it for us.
+str.ReleaseBuffer();
 
 str += _T(" soccer is best!");
 ASSERT(_tcscmp(str, _T("Cup soccer is best!")) == 0);
@@ -719,28 +715,6 @@ The following example demonstrates the use of `CSimpleStringT::operator []`.
 CSimpleString s(_T("abc"), pMgr);
 ASSERT(s[1] == _T('b'));
 ```
-
-## <a name="operator_at"></a> `CSimpleStringT::operator []`
-
-Call this function to access a single character of the character array.
-
-### Syntax
-
-```cpp
-XCHAR operator[](int iChar) const;
-```
-
-### Parameters
-
-*`iChar`*<br/>
-Zero-based index of a character in the string.
-
-### Remarks
-
-The overloaded subscript (**`[]`**) operator returns a single character specified by the zero-based index in *`iChar`*. This operator is a convenient substitute for the [`GetAt`](#getat) member function.
-
-> [!NOTE]
-> You can use the subscript (**`[]`**) operator to get the value of a character in a `CSimpleStringT`, but you cannot use it to change the value of a character in a `CSimpleStringT`.
 
 ## <a name="operator_add_eq"></a> `CSimpleStringT::operator +=`
 
@@ -1166,19 +1140,19 @@ The following example demonstrates the use of `CSimpleStringT::Truncate`.
 CAtlString basestr;
 IAtlStringMgr* pMgr = basestr.GetManager();
 CSimpleString str(_T("abcdefghi"), pMgr);
-_tprintf_s(_T("Allocated length: %d\n"), str.GetLength());
-_tprintf_s(_T("Contents: %s\n"), str);
+_tprintf_s(_T("String length: %d / Allocated length: %d\n"), str.GetLength(), str.GetAllocLength());
+_tprintf_s(_T("Contents: %s\n"), (LPCTSTR)str);
 str.Truncate(4);
-_tprintf_s(_T("Allocated length: %d\n"), str.GetLength());
-_tprintf_s(_T("Contents: %s\n"), str);
+_tprintf_s(_T("String length: %d / Allocated length: %d\n"), str.GetLength(), str.GetAllocLength());
+_tprintf_s(_T("Contents: %s\n"), (LPCTSTR)str);
 ```
 
 The output from this example is:
 
 ```Output
-Allocated length: 9
+String length: 9 / Allocated length: 15
 Contents: abcdefghi
-Allocated length: 4
+String length: 4 / Allocated length: 15
 Contents: abcd
 ```
 
@@ -1214,5 +1188,5 @@ Call this method to destroy the `CSimpleStringT` object.
 
 ## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

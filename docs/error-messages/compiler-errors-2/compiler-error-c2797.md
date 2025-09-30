@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2797"
 title: "Compiler Error C2797"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2797"
+ms.date: 11/04/2016
 f1_keywords: ["C2797"]
 helpviewer_keywords: ["C2797"]
-ms.assetid: 9fb26d35-eb5c-46fc-9ff5-756fba5bdaff
 ---
 # Compiler Error C2797
 
-(Obsolete) List initialization inside member initializer list or non-static data member initializer is not implemented.
+> (Obsolete) List initialization inside member initializer list or non-static data member initializer is not implemented.
+
+## Remarks
 
 This warning is obsolete in Visual Studio 2015. In Visual Studio 2013 and earlier versions, the Microsoft C++ compiler does not implement list initialization inside either a member initializer list or a non-static data member initializer. Before Visual Studio 2013 Update 3, this was silently converted to a function call, which could lead to bad code generation. Visual Studio 2013 Update 3 reports this as an error.
 
+## Examples
+
 This example generates C2797:
 
-```
+```cpp
 #include <vector>
 struct S {
     S() : v1{1} {} // C2797, VS2013 RTM incorrectly calls 'vector(size_type)'
@@ -26,7 +29,7 @@ struct S {
 
 This example also generates C2797:
 
-```
+```cpp
 struct S1 {
     int i;
 };
@@ -40,7 +43,7 @@ struct S2 {
 
 To fix this issue, you can use explicit construction of inner lists. For example:
 
-```
+```cpp
 #include <vector>
 typedef std::vector<int> Vector;
 struct S {
@@ -53,7 +56,7 @@ struct S {
 
 If you do not require list initialization:
 
-```
+```cpp
 struct S {
     S() : s1("") {}
 

@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: ctype<char> Class"
 title: "ctype<char> Class"
-ms.date: "11/04/2016"
+description: "Learn more about: ctype<char> Class"
+ms.date: 11/04/2016
 f1_keywords: ["ctype<char>", "locale/std::ctype<char>"]
 helpviewer_keywords: ["ctype<char> class"]
-ms.assetid: ee30acb4-a743-405e-b3d4-13602092da84
 ---
 # `ctype<char>` Class
 
-The class is an explicit specialization of class template `ctype\<CharType>` to type **`char`**, describing an object that can serve as a locale facet to characterize various properties of a character of type **`char`**.
+The class is an explicit specialization of class template `ctype<CharType>` to type **`char`**, describing an object that can serve as a locale facet to characterize various properties of a character of type **`char`**.
 
 ## Syntax
 
@@ -108,7 +107,7 @@ The explicit specialization differs from the class template in several ways:
 
 - The static member object `table_size` specifies the minimum number of elements in a ctype mask table.
 
-- The protected static member function `classic_table`( returns the ctype mask table appropriate to the "C" locale.
+- The protected static member function `classic_table` returns the ctype mask table appropriate to the "C" locale.
 
 - There are no protected virtual member functions [do_is](../standard-library/ctype-class.md#do_is), [do_scan_is](../standard-library/ctype-class.md#do_scan_is), or [do_scan_not](../standard-library/ctype-class.md#do_scan_not). The corresponding public member functions perform the equivalent operations themselves.
 

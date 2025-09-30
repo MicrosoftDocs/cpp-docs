@@ -1,7 +1,7 @@
 ---
 title: "acos, acosf, acosl"
 description: "API reference for acos, acosf, and acosl; which calculate the arccosine of a floating-point value."
-ms.date: "1/15/2021"
+ms.date: 1/15/2021
 api_name: ["acosf", "acos", "acosl", "_o_acos", "_o_acosf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,7 +19,7 @@ Calculates the arccosine.
 double acos( double x );
 float acosf( float x );
 long double acosl( long double x );
-#define acos(X) // Requires C11 or higher
+#define acos(X) // Requires C11 or later
 
 float acos( float x );   // C++ only
 long double acos( long double x );   // C++ only

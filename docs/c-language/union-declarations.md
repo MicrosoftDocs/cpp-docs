@@ -81,7 +81,7 @@ Nested unions can be declared anonymously when they're members of another struct
 struct str
 {
     int a, b;
-    union            / * Unnamed union */
+    union            /* Unnamed union */
     {
       char c[4];
       long l;

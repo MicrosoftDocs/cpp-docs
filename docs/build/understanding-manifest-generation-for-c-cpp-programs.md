@@ -1,9 +1,9 @@
 ---
-description: "Learn more about: Understanding manifest generation for C/C++ programs"
 title: "Understanding manifest generation for C/C++ programs"
+description: "Learn more about: Understanding manifest generation for C/C++ programs"
 ms.date: 06/10/2022
 helpviewer_keywords: ["manifests [C++]"]
-ms.assetid: a1f24221-5b09-4824-be48-92eae5644b53
+ms.topic: how-to
 ---
 # Understanding manifest generation for C/C++ programs
 
@@ -181,7 +181,7 @@ clean :
 #^^^^^^^^^^^^^^^^^^^^^^^^^ Change #4. (Add full path if necessary.)
 ```
 
-The makefiles now include two files that do the real work,*` makefile.inc`* and *`makefile.target.inc`*.
+The makefiles now include two files that do the real work, *`makefile.inc`* and *`makefile.target.inc`*.
 
 Create *`makefile.inc`* and copy the following content into it:
 

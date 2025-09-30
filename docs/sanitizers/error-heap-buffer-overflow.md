@@ -1,6 +1,6 @@
 ---
 title: "Error: heap-buffer-overflow"
-description: "Source examples and live debug screenshots for heap variable overflow errors."
+description: "Learn about the heap-buffer-overflow Address Sanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["heap-buffer-overflow"]
 helpviewer_keywords: ["heap-buffer-overflow error", "AddressSanitizer error heap-buffer-overflow"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["heap-buffer-overflow error", "AddressSanitizer error heap
 # Error: `heap-buffer-overflow`
 
 > Address Sanitizer Error: Heap buffer overflow
+
+## Remarks
 
 This example demonstrates the error that results when a memory access occurs outside the bounds of a heap-allocated object.
 
@@ -109,11 +111,11 @@ devenv /debugexe example3.exe
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

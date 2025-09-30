@@ -97,7 +97,7 @@ If you use **`reinterpret_cast`** to convert from one Windows Runtime interface 
 
 - Conversions between a Windows Runtime interface type and its equivalent ABI type are always safe—that is, `IBuffer^` to `ABI::IBuffer*`.
 
-- A Windows Runtime runtime class should always be converted to `IInspectable*` or its default interface, if that is known.
+- A Windows Runtime class should always be converted to `IInspectable*` or its default interface, if that is known.
 
 - After you convert to ABI types, you own the lifetime of the type and must follow the COM rules. We recommend that you use `WRL::ComPtr` to simplify lifetime management of ABI pointers.
 

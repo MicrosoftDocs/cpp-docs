@@ -171,6 +171,10 @@ items:
             href: ../c-language/c-type-specifiers.md
           - name: Data type specifiers and equivalents
             href: ../c-language/data-type-specifiers-and-equivalents.md
+          - name: typeof
+            href: typeof-c.md
+          - name: typeof_unqual
+            href: typeof-unqual-c.md
       - name: Type qualifiers
         href: ../c-language/type-qualifiers.md
       - name: Declarators and variable declarations
@@ -440,7 +444,7 @@ items:
               - name: Inline assembler (C)
                 href: ../c-language/inline-assembler-c.md
               - name: _Noreturn (C)
-                href: ../c-language/noreturn.md                
+                href: ../c-language/noreturn.md
           - name: DLL import and export functions
             items: 
               - name: DLL import and export functions

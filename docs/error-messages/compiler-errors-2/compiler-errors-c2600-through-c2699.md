@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler errors C2600 Through C2699"
 title: "Compiler errors C2600 Through C2699"
+description: "Learn more about: Compiler errors C2600 Through C2699"
 ms.date: "04/21/2019"
 f1_keywords: ["C2604", "C2606", "C2607", "C2608", "C2609", "C2610", "C2615", "C2618", "C2620", "C2621", "C2622", "C2623", "C2625", "C2629", "C2631", "C2639", "C2641", "C2642", "C2643", "C2644", "C2684", "C2685", "C2686", "C2697"]
 helpviewer_keywords: ["C2604", "C2606", "C2607", "C2608", "C2609", "C2610", "C2615", "C2618", "C2620", "C2621", "C2622", "C2623", "C2625", "C2629", "C2631", "C2639", "C2641", "C2642", "C2643", "C2644", "C2684", "C2685", "C2686", "C2697"]
-ms.assetid: 73c6319f-cbea-4a2f-913b-90dc1af61f64
 ---
 # Compiler errors C2600 Through C2699
 
@@ -24,17 +23,17 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2605](compiler-error-c2605.md)|'*identifier*': this method is reserved within a managed/WinRT class|
 |Compiler error C2606|'*class1*': cannot re-implement '*member*', as it is inherited from runtime base '*class2*'|
 |Compiler error C2607|static assertion failed|
-|Compiler error C2608|Obsolete.|
-|Compiler error C2609|Obsolete.|
+|Compiler error C2608|invalid token '*token*' in macro parameter list|
+|Compiler error C2609|missing ')' in macro parameter list|
 |Compiler error C2610|'*class*::*member*': is not a special member function which can be defaulted|
 |[Compiler error C2611](compiler-error-c2611.md)|'*token*': illegal following '~' (expected identifier)|
 |[Compiler error C2612](compiler-error-c2612.md)|trailing '*character*' illegal in base/member initializer list|
 |[Compiler error C2613](compiler-error-c2613.md)|trailing '*character*' illegal in base class list|
 |[Compiler error C2614](compiler-error-c2614.md)|'*class*': illegal member initialization: '*identifier*' is not a base or member|
-|Compiler error C2615|Obsolete.|
+|Compiler error C2615|'`offsetof`' cannot be applied to non-class type '*type*'|
 |[Compiler error C2616](compiler-error-c2616.md)|'*conversion*': cannot implicitly convert a non-lvalue '*type1*' to a '*type2*' that is not const|
 |[Compiler error C2617](compiler-error-c2617.md)|'*function*': inconsistent return statement|
-|Compiler error C2618|Obsolete.|
+|Compiler error C2618|illegal member designator in `offsetof`|
 |[Compiler error C2619](compiler-error-c2619.md)|'*identifier*': a static data member is not allowed in an anonymous struct/union|
 |Compiler error C2620|Obsolete.|
 |Compiler error C2621|Obsolete.|
@@ -55,12 +54,12 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2636](compiler-error-c2636.md)|'*identifier*': pointer to reference member is illegal|
 |[Compiler error C2637](compiler-error-c2637.md)|'*identifier*': cannot modify pointers to data members|
 |[Compiler error C2638](compiler-error-c2638.md)|'*identifier*': __based modifier illegal on pointer to member|
-|Compiler error C2639|Obsolete.|
-|[Compiler error C2640](compiler-error-c2640.md)|'*identifier*': __based modifier illegal on reference|
-|Compiler error C2641|Obsolete.|
-|Compiler error C2642|Obsolete.|
-|Compiler error C2643|Obsolete.|
-|Compiler error C2644|Obsolete.|
+|Compiler error C2639|trailing return type '*type*' of deduction guide should be a specialization of '*class template*'|
+|[Compiler error C2640](compiler-error-c2640.md)|'abstract declarator': __based modifier illegal on reference|
+|Compiler error C2641|cannot deduce template arguments for '*template name*'|
+|Compiler error C2642|two deduction guide declarations for the same class template cannot have equivalent parameter list and template head|
+|Compiler error C2643|deduction guide should be declared in the same scope as the corresponding class template '*template name*'|
+|Compiler error C2644|deduction guide should have the same access as the corresponding class template '*template name*'|
 |[Compiler error C2645](compiler-error-c2645.md)|no qualified name for pointer to member (found ':: *')|
 |[Compiler error C2646](compiler-error-c2646.md)|an anonymous struct/union at global or namespace scope must be declared static|
 |[Compiler error C2647](compiler-error-c2647.md)|'*operator*': cannot dereference a '*type1*' on a '*type2*'|
@@ -79,11 +78,11 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2660](compiler-error-c2660.md)|'*function*': function does not take *number* arguments|
 |[Compiler error C2661](compiler-error-c2661.md)|'*function*': no overloaded function takes *number* arguments|
 |[Compiler error C2662](compiler-error-c2662.md)|'*function*': cannot convert 'this' pointer from '*type1*' to '*type2*'|
-|[Compiler error C2663](compiler-error-c2663.md)|'*function*': *number* overloads have no legal conversion for 'this' pointer|
+|[Compiler error C2663](compiler-error-c2663.md)|'*function*': no overloaded function has valid conversion for '`this`' pointer|
 |[Compiler error C2664](compiler-error-c2664.md)|'*function*': cannot convert argument *number* from '*type1*' to '*type2*'|
-|[Compiler error C2665](compiler-error-c2665.md)|'*function*': none of the *number* overloads could convert all the argument types|
-|[Compiler error C2666](compiler-error-c2666.md)|'*function*': *number* overloads have similar conversions|
-|[Compiler error C2667](compiler-error-c2667.md)|'*function*': none of *number* overloads have a best conversion|
+|[Compiler error C2665](compiler-error-c2665.md)|'*function*': no overloaded function could convert all the argument types|
+|[Compiler error C2666](compiler-error-c2666.md)|'*function*': overloaded functions have similar conversions|
+|[Compiler error C2667](compiler-error-c2667.md)|'*function*': no overloaded function has a best conversion|
 |[Compiler error C2668](compiler-error-c2668.md)|'*function*': ambiguous call to overloaded function|
 |[Compiler error C2669](compiler-error-c2669.md)|member function not allowed in anonymous union|
 |[Compiler error C2670](compiler-error-c2670.md)|'*function*': the function template cannot convert parameter *number* from type '*type*'|

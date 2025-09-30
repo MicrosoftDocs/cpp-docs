@@ -1,9 +1,9 @@
 ---
-description: "Learn more about: Testing Properties and Events with Test Container"
 title: "Testing Properties and Events with Test Container"
-ms.date: "11/04/2016"
+description: "Learn more about: Testing Properties and Events with Test Container"
+ms.date: 11/04/2016
 helpviewer_keywords: ["testing, test containers", "tstcon32.exe", "debugging ActiveX controls", "test container", "ActiveX Control Test Container", "ActiveX controls [MFC], testing", "properties [MFC], testing"]
-ms.assetid: 626867cf-fe53-4c30-8973-55bb93ef3917
+ms.topic: how-to
 ---
 # Testing Properties and Events with Test Container
 
@@ -36,7 +36,7 @@ At this point you can test your control's properties or events.
 
    The property now contains the new value.
 
-#### To test events and specify the destination of event information.
+#### To test events and specify the destination of event information
 
 1. On the **Options** menu, click **Logging**.
 

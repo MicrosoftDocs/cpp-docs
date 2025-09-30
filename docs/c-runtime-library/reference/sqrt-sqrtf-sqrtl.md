@@ -1,7 +1,7 @@
 ---
 title: "sqrt, sqrtf, sqrtl"
 description: "API reference for sqrt, sqrtf, and sqrtl; which calculate a square root of a floating point number."
-ms.date: "08/31/2020"
+ms.date: 08/31/2020
 api_name: ["sqrtl", "sqrtf", "sqrt", "_o_sqrt", "_o_sqrtf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -31,7 +31,7 @@ float sqrtf(
 long double sqrtl(
    long double x
 );
-#define sqrt(x) // Requires C11 or higher
+#define sqrt(x) // Requires C11 or later
 ```
 
 ### Parameters
@@ -97,4 +97,4 @@ The square root of 45.35 is 6.73
 [`exp`, `expf`, `expl`](exp-expf.md)\
 [`log`, `logf`, `log10`, `log10f`](log-logf-log10-log10f.md)\
 [`pow`, `powf`, `powl`](pow-powf-powl.md)\
-[`_CIsqrt`](../cisqrt.md)\
+[`_CIsqrt`](../cisqrt.md)

@@ -1,28 +1,26 @@
 ---
-description: "Learn more about: Compiler Error C2006"
 title: "Compiler Error C2006"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2006"
+ms.date: 01/28/2025
 f1_keywords: ["C2006"]
 helpviewer_keywords: ["C2006"]
-ms.assetid: caaed6f7-ceb9-4742-8820-d66657c0b04d
 ---
 # Compiler Error C2006
 
-'directive' expected a filename, found 'token'
+> 'directive': expected "FILENAME" or \<FILENAME>
 
-Directives such as [#include](../../preprocessor/hash-include-directive-c-cpp.md) or [#import](../../preprocessor/hash-import-directive-cpp.md) require a filename. To resolve the error, make sure *token* is a valid filename. Also, put the filename in double quotes or angle brackets.
+## Remarks
 
-The following sample generates C2006:
+Directives such as [#include](../../preprocessor/hash-include-directive-c-cpp.md) or [#import](../../preprocessor/hash-import-directive-cpp.md) require a filename. To resolve the error, ensure the filename is valid and enclosed in either double quotes or angle brackets.
+
+## Example
+
+The following example generates C2006:
 
 ```cpp
 // C2006.cpp
-#include stdio.h   // C2006
-```
-
-Possible resolution:
-
-```cpp
-// C2006b.cpp
 // compile with: /c
-#include <stdio.h>
+#include iostream     // C2006
+#include 'iostream'   // C2006
+#include <iostream>   // OK
 ```

@@ -1,7 +1,7 @@
 ---
 title: "qsort"
 description: "Describes the Microsoft C runtime quick sort API `qsort`"
-ms.date: "10/23/2020"
+ms.date: "8/2/2023"
 api_name: ["qsort", "_o_qsort"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -45,7 +45,7 @@ The **`qsort`** function implements a quick-sort algorithm to sort an array of *
 **`qsort`** calls the *`compare`* routine one or more times during the sort, and passes pointers to two array elements on each call. If *`compare`* indicates two elements are the same, their order in the resulting sorted array is unspecified.
 
 ```C
-compare( (void *) & elem1, (void *) & elem2 );
+compare(const void *elem1, const void *elem2);
 ```
 
 The routine compares the elements and returns one of the following values.

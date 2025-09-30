@@ -1,8 +1,8 @@
 ---
-description: "Learn more about: local_t struct"
 title: "local_t struct"
+description: "Learn more about: local_t struct"
 ms.date: 09/02/2021
-f1_keywords: ["chrono/std::chrono::local_t", chrono/std::chrono::local_t:local_time", "chrono/std::chrono::local_days", "chrono/std::chrono::local_seconds"]
+f1_keywords: ["chrono/std::chrono::local_t", "chrono/std::chrono::local_time", "chrono/std::chrono::local_days", "chrono/std::chrono::local_seconds"]
 helpviewer_keywords: ["std::chrono [C++], local_t"]
 dev_langs: ["C++"]
 ---
@@ -34,7 +34,7 @@ As an example of how `local_t` is used, consider the declaration `local_days ld{
 
 |Name|Description|
 |----------|-----------------|
-|`local_days`|A synonym for l`local_time<days>`. Defined in `std::chrono`.|
+|`local_days`|A synonym for `local_time<days>`. Defined in `std::chrono`.|
 |`local_seconds`|A synonym for `local_time<seconds>`. Defined in `std::chrono`.|
 |`local_time`|A synonym for `template <class Duration> using local_time = time_point<local_t, Duration>`. Useful for representing a `time_point` for a local time. You specify the `Duration`. Defined in `std::chrono`.|
 

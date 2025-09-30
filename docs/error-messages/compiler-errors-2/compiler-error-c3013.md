@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3013"
 title: "Compiler Error C3013"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3013"
+ms.date: 11/04/2016
 f1_keywords: ["C3013"]
 helpviewer_keywords: ["C3013"]
-ms.assetid: f896777d-27e6-4b6d-baab-1567317f3374
 ---
 # Compiler Error C3013
 
-'clause' : clause may only appear once on OpenMP 'directive' directive
+> 'clause' : clause may only appear once on OpenMP 'directive' directive
+
+## Remarks
 
 A clause appeared twice on the same directive. Delete one occurrence of the clause.
 
-The following sample generates C3013:
+## Example
+
+The following example generates C3013:
 
 ```cpp
 // C3013.cpp

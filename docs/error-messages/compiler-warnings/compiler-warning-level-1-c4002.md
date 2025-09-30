@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4002"
-title: "Compiler Warning (level 1) C4002"
-ms.date: "11/04/2016"
+title: "Compiler Warning (level 1, Error) C4002"
+description: "Learn more about: Compiler Warning (level 1, Error) C4002"
+ms.date: 11/04/2016
 f1_keywords: ["C4002"]
 helpviewer_keywords: ["C4002"]
-ms.assetid: 6bda1dfe-e2e4-4771-9794-5a404c466dd5
 ---
-# Compiler Warning (level 1) C4002
+# Compiler Warning (level 1, Error) C4002
 
-too many actual parameters for macro 'identifier'
+> too many arguments for function-like macro invocation '*identifier*'
+
+## Remarks
 
 The number of actual parameters in the macro exceeds the number of formal parameters in the macro definition. The preprocessor collects the extra parameters but ignores them during macro expansion.
 
-C4002 can occur when incorrectly using [Variadic Macros](../../preprocessor/variadic-macros.md).
+C4002 can occur when incorrectly using [variadic macros](../../preprocessor/variadic-macros.md).
 
-The following sample generates C4002:
+## Example
+
+The following example generates C4002:
 
 ```cpp
 // C4002.cpp
@@ -32,7 +35,7 @@ int main() {
 
 This error can also be generated as a result of compiler conformance work that was done for Visual Studio .NET 2003: extra commas in macro no longer accepted.
 
-The compiler will no longer accept extra commas in a macro. For code to be valid in both the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++, remove the extra commas.
+The compiler no longer accepts extra commas in a macro. For code to be valid in both the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++, remove the extra commas.
 
 ```cpp
 // C4002b.cpp

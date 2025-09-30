@@ -41,5 +41,5 @@ int main() {
 
 ## See also
 
-[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)\
 [C bitwise operators](../c-language/c-bitwise-operators.md)

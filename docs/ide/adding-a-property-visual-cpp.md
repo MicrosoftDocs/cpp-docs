@@ -1,10 +1,11 @@
 ---
-description: "Learn more about: Add a property to an interface in a Microsoft Visual Studio C++ project"
 title: "Add a property"
+description: "Learn more about: Add a property to an interface in a Microsoft Visual Studio C++ project"
 ms.date: 04/12/2022
 f1_keywords: ["vc.codewiz.prop.overview"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "add property wizard", "stock properties, about stock properties", "stock properties"]
 ms.custom: devdivchpfy22
+ms.topic: how-to
 ---
 
 # Add a property
@@ -52,7 +53,7 @@ The following section describes the UI that you'll use to add a property:
 
   For ATL interfaces **Put function** makes the property writable; that is, it creates the `Put` method for setting, or "putting," this property of the object. Select **Get**, **Put**, or both.
 
-## See Also
+## See also
 
 [Add IDL Property](add-interface-definition-library-property-wizard.md)
 

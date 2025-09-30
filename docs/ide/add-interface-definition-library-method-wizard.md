@@ -1,10 +1,11 @@
 ---
-description: "Learn more about: Use a Microsoft Visual Studio wizard to add a method to an interface definition language (IDL) interface in your project"
 title: "Add an IDL method"
+description: "Learn more about: Use a Microsoft Visual Studio wizard to add a method to an interface definition language (IDL) interface in your project"
 ms.date: "04/13/2022"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add IDL method wizard [C++]", "IDL methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add an IDL method wizard"]
 ms.custom: devdivchpfy22
+ms.topic: how-to
 ---
 
 # Add an IDL method
@@ -20,7 +21,7 @@ This wizard differs from the [**Add method**](adding-a-method-visual-cpp.md) wiz
 
 1. On the **View** menu, select **Class View**.
 
-1. In the **Class View** pane, expand the project node to display the IDL interface (`.idl`file) to which you want to add the method.
+1. In the **Class View** pane, expand the project node to display the IDL interface (`.idl` file) to which you want to add the method.
 
 1. Right-click the name of the interface.
 
@@ -42,7 +43,7 @@ The following section describes the wizard interface that you'll use to add a me
 
 - **Return type**
 
-  The data type returned by the method. The standard way to return error codes from methods defined in an interface is with a `HRESULT`.
+  The data type returned by the method. The standard way to return error codes from methods defined in an interface is with an `HRESULT`.
 
   The following table describes the different kinds of interfaces that you can add a method to, and the allowed return type. For dual and custom interfaces, the return type must be `HRESULT` and the wizard won't allow you to change it.
 

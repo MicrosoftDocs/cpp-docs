@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Sentinel floating-point conversion functions"
 title: "Sentinel conversion functions"
-ms.date: 11/18/2021
+ms.date: 10/16/2023
 f1_keywords: ["intrin/_cvt_dtoi_sent", "intrin/_cvt_dtoll_sent", "intrin/_cvt_dtoui_sent", "intrin/_cvt_dtoull_sent", "intrin/_cvt_ftoi_sent", "intrin/_cvt_ftoll_sent", "intrin/_cvt_ftoui_sent", "intrin/_cvt_ftoull_sent"]
 helpviewer_keywords: ["_cvt_dtoi_sent", "_cvt_dtoll_sent", "_cvt_dtoui_sent", "_cvt_dtoull_sent", "_cvt_ftoi_sent", "_cvt_ftoll_sent", "_cvt_ftoui_sent", "_cvt_ftoull_sent"]
 ---
@@ -35,20 +35,20 @@ The integer-typed result of the conversion.
 
 ## Requirements
 
-**Header**: \<intrin.h>
+**Header**: `<intrin.h>`
 
 **Architecture**: x86, x64
 
 ## Remarks
 
-These intrinsics are floating-point to integral type conversion functions that use a *sentinel* strategy: They return the result value farthest from zero as a proxy sentinel value for NaN. Any invalid conversion returns this sentinel value. The specific sentinel value returned depends on the result type.
+These intrinsics are floating-point to integral type conversion functions that use a *sentinel* strategy: They return the result value farthest from zero as a proxy sentinel value for `NaN`. Any invalid conversion returns this sentinel value. The specific sentinel value returned depends on the result type.
 
 | Result type | Sentinel | *`<limits.h>`* constant |
 |--|--|
-| `int` | -2147483648 (0xFFFFFFFF) | `INT_MIN` |
+| `int` | -2147483648 (0x80000000) | `INT_MIN` |
 | `unsigned int` | 4294967295 (0xFFFFFFFF) | `UINT_MAX` |
-| `long long` | -9223372036854775808 (0xFFFFFFFF'FFFFFFFF) | `LLONG_MIN` |
-| `unsigned long long` | 18446744073709551615 (0xFFFFFFFF'FFFFFFFF) | `ULLONG_MAX` |
+| `long long` | -9223372036854775808 (0x8000000000000000) | `LLONG_MIN` |
+| `unsigned long long` | 18446744073709551615 (0xFFFFFFFFFFFFFFFF) | `ULLONG_MAX` |
 
 The sentinel conversion intrinsics are available starting in Visual Studio 2019 version 16.10.
 

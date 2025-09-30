@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3019"
 title: "Compiler Error C3019"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3019"
+ms.date: 11/04/2016
 f1_keywords: ["C3019"]
 helpviewer_keywords: ["C3019"]
-ms.assetid: 31a6d9b6-d29f-4499-9ad8-48dd751e87c7
 ---
 # Compiler Error C3019
 
-increment in OpenMP 'for' statement has improper form
+> increment in OpenMP 'for' statement has improper form
+
+## Remarks
 
 The increment part of an OpenMP **`for`** loop must use the index variable both on the left and right side of the operator.
 
-The following sample generates C3019:
+## Example
+
+The following example generates C3019:
 
 ```cpp
 // C3019.cpp
