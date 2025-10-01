@@ -362,7 +362,7 @@ int main()
 
     // year_month_day_last
     year_month_day_last ymdl = June / last / 2021;
-    std::cout << ymdl - years{1} - months{1} << '\n'; // 2022/Jul/last
+    std::cout << ymdl - years{1} - months{1} << '\n'; // 2020/May/last
 
     // year_month_weekday
     year_month_weekday ymw{ year(1997) / January / Wednesday[1] };
