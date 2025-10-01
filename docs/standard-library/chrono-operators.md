@@ -23,7 +23,7 @@ Addition operator for the following types:
 - [`year_month_weekday_last`](year-month-weekday-last-class.md)
 
 ```cpp
-1) 
+1)
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr typename common_type<duration<Rep1, Period1>, duration<Rep2, Period2>>::type
    operator+(
@@ -46,7 +46,7 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
 
 4)
 constexpr day operator+(const day& d, const days& ds) noexcept; // C++20
-constexpr day operator+(const days& ds, const day&  d) noexcept; // C++20
+constexpr day operator+(const days& ds, const day& d) noexcept; // C++20
 
 5)
 constexpr month operator+(const month& m, const months& ms) noexcept; // C++20
@@ -107,7 +107,7 @@ constexpr year_month_weekday_last operator+(const years& dy, const year_month_we
 
 2-3\) Return a `time_point` object that represents a point in time that is displaced by the interval *`Dur`* from the point in time *`Time`*.
 
-4\) Returns the result of `d+ds.count()`. If the  result is out of the range [0, 255], then the result is unspecified.
+4\) Returns the result of `d+ds.count()`. If the result is out of the range [0, 255], then the result is unspecified.
 
 5\) Returns the result of `m+ms.count()`. If the result is out of the range [1, 12], it's reduced modulo 12 and then +1.
 
@@ -117,13 +117,13 @@ constexpr year_month_weekday_last operator+(const years& dy, const year_month_we
 
 8\) Returns the result of adding the number of months and years to the specified month and year.
 
-9\) Returns the result of adding months or years to a `year_month_day`.  If `ymd.month()` is `February` and `ymd.day()` is not in the range [1d, 28d], `ok()` may return `false` for the result of the addition.
+9\) Returns the result of adding months or years to a `year_month_day`. If `ymd.month()` is `February` and `ymd.day()` is not in the range [1d, 28d], `ok()` may return `false` for the result of the addition.
 
 10\) Returns `(ymdl.year() / ymdl.month() + dm) / last`. Note: The `/` used here isn't a division operator. It's the date operator.
 
 11\) Returns `ymdl + dm`.
 
-12\) Returns  `{ymdl.year()+dy, ymdl.month_day_last()}`
+12\) Returns `{ymdl.year()+dy, ymdl.month_day_last()}`
 
 13\) Returns `ymwd + dm.count()`.
 
@@ -163,12 +163,12 @@ int main()
     // year_month_weekday
     year_month_weekday ymw{ year(1997) / January / Wednesday[1] };
     std::cout << ymw + months{1} << '\n'; // 1997/Feb/Wed[1]
-    std::cout << ymw + years{1} << '\n'; // 1998/Jan/Wed[1] 
+    std::cout << ymw + years{1} << '\n'; // 1998/Jan/Wed[1]
 
     // year_month_weekday_last
     year_month_weekday_last ymwl{ year(1997) / January / Wednesday[last] };
     std::cout << ymwl + months{ 1 } << '\n'; // 1997/Feb/Wed[last]
-    std::cout << ymwl + years{ 1 } << '\n'; // 1998/Jan/Wed[last] 
+    std::cout << ymwl + years{ 1 } << '\n'; // 1998/Jan/Wed[last]
 
     return 0;
 }
@@ -295,7 +295,7 @@ constexpr year_month_weekday_last operator-(const year_month_weekday_last& ymwdl
 
 4\) Returns the result of `d-ds.count()`. If the result is out of the range [0, 255], then the result is unspecified.
 
-5\) If `m.ok() == true` and `ms.ok() == true`, returns the result of subtracting the two month values, or subtracting the number of months. The result will be in the range  [1, 12]. If the result is negative, it wraps around. For example, subtracting one month from January (`month m1{1} - months{1};` results in 12 (December).
+5\) If `m.ok() == true` and `ms.ok() == true`, returns the result of subtracting the two month values, or subtracting the number of months. The result will be in the range [1, 12]. If the result is negative, it wraps around. For example, subtracting one month from January (`month m1{1} - months{1};` results in 12 (December).
 
 6\) Returns the difference in months between *`Left`* and *`Right`*
 
@@ -336,10 +336,10 @@ int main()
 {
     // day
     day d{10};
-    d = d - days(5);  
+    d = d - days(5);
     std::cout << d << '\n'; // 05
 
-    // month 
+    // month
     month m{2};
     m = m - months{1};
     std::cout << m << '\n'; // Jan
@@ -367,13 +367,13 @@ int main()
     // year_month_weekday
     year_month_weekday ymw{ year(1997) / January / Wednesday[1] };
     std::cout << ymw - months{1} << '\n'; // 1996/Dec/Wed[1]
-    std::cout << ymw - years{1} << '\n'; // 1996/Jan/Wed[1] 
+    std::cout << ymw - years{1} << '\n'; // 1996/Jan/Wed[1]
 
     // year_month_weekday_last
     year_month_weekday_last ymwl{ year(1997) / January / Wednesday[last] };
     std::cout << ymwl - months{ 1 } << '\n'; // 1996/Dec/Wed[last]
     std::cout << ymwl - years{ 1 } << '\n'; // 1996/Jan/Wed[last]
-    
+
     return 0;
 }
 ```
@@ -458,7 +458,7 @@ The right `duration` or `time_point` object.
 ### Return value
 
 1\) Returns **`true`** if the number of ticks for the type common to *`Left`* and *`Right`* aren't equal. Otherwise, returns **`false`**.\
-2\) Returns **`true`**  if the two [`time_point`](time-point-class.md) objects don't represent the same point in time. Otherwise, returns **`false`**.
+2\) Returns **`true`** if the two [`time_point`](time-point-class.md) objects don't represent the same point in time. Otherwise, returns **`false`**.
 
 ## <a name="op_star"></a> `operator*`
 
@@ -644,7 +644,7 @@ constexpr bool operator==(const year_month_day_last& Left, const year_month_day_
 // 16) year_month_weekday
 constexpr bool operator==(const year_month_weekday& Left, const year_month_weekday& Right) noexcept; // C++20
 
-// 17)  year_month_weekday_last
+// 17) year_month_weekday_last
 constexpr bool operator==(const year_month_weekday_last& Left, const year_month_weekday_last& Right) noexcept; // C++20
 
 // 18) time_zone_link
@@ -678,7 +678,7 @@ The right object to compare.
 2\) Determines if the point in time since the epoch of the `Left`[`time_point`](../standard-library/time-point-class.md) is greater than the time since the epoch of the `time_point` in `Right`.
 
 ```cpp
-1) 
+1)
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator>(
     const duration<Rep1, Period1>& Left,
@@ -1262,7 +1262,7 @@ operator/(const year& y, const month& m) noexcept; // C++20
 // 2
 constexpr year_month
 operator/(const year& y, int m) noexcept; // C++20
- 
+
 /////////  returns month_day
 
 // 3
