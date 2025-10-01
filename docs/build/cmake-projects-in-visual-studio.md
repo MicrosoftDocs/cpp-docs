@@ -153,7 +153,7 @@ When you build for Windows using the MSVC compiler, CMake projects have support 
 
 When you build for Windows with the MSVC compiler, CMake projects have support for Edit and Continue. Add the following code to your *`CMakeLists.txt`* file to enable Edit and Continue.
 
-```
+```txt
 if(MSVC)
   target_compile_options(<target> PUBLIC "/ZI")
   target_link_options(<target> PUBLIC "/INCREMENTAL")
