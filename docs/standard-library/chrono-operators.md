@@ -1438,7 +1438,7 @@ operator/(const month_weekday_last& mwdl, int y) noexcept; // C++20
 The day. Provided either as an integer in the range [1,31], or as a [`day`](day-class.md).
 
 *`lastspec`*\
-An empty tag type that indicates the last item in s sequence. For example, `2021y/May/last` is the last day of May 2021.
+An empty tag type that indicates the last item in a sequence. For example, `2021y/May/last` is the last day of May 2021.
 
 *`m`*\
 The month. Provided either as an integer in the range [1,12], or as a [`month`](month-class.md).
