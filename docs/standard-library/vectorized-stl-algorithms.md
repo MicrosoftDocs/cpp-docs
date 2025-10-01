@@ -30,7 +30,7 @@ The manually vectorized algorithms use template meta-programming to detect the s
 
 Generally, programs either benefit in performance from this manual vectorization or are unaffected by it. In case of any problem, you can disable manual vectorization by defining the `_USE_STD_VECTOR_ALGORITHMS` macro set to 0. It defaults to 1 on x64 and x86, which means that manually vectorized algorithms are enabled by default.
 
-When overriding `_USE_STD_VECTOR_ALGORITHMS` make sure to set the same value for all linked translation units that use algorithms. Reliable way to achieve that is using project properties rather than defining it in the source.
+When overriding `_USE_STD_VECTOR_ALGORITHMS` make sure to set the same value for all linked translation units that use algorithms. Reliable way to achieve that is using project properties rather than defining it in the source. See [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md) compiler option.
 
 The following algorithms have manual vectorization controlled via `_USE_STD_VECTOR_ALGORITHMS` macro:
  - `contains`
