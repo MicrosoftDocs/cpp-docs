@@ -846,8 +846,8 @@ int main()
 ```
 
 ```output
-d1 < d2
-true true false 
+d1 > d2
+true true false
 ```
 
 ## <a name="op_left_shift"></a> `operator<<`
