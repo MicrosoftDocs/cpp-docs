@@ -303,7 +303,7 @@ constexpr year_month_weekday_last operator-(const year_month_weekday_last& ymwdl
 
 8\) Returns the number of days between two weekdays.
 
-9\) Returns `year(int(y)-ys.count)())`
+9\) Returns `year(int(y)-ys.count())`
 
 10\) Returns `years(int(y) - int(y2))`. Subtracting two `year` values results in a `std::chrono::years`, which represents the difference in years between `y` and `y2`. For example, `2021y-2000y` produces `years(21)`.
 
@@ -669,7 +669,7 @@ The right object to compare.
 2\) Returns **`true`** if *`Left`* and *`Right`* represent the same point in time. Otherwise, returns **`false`**.\
 3-17\) Returns **`true`** if *`Left`* and *`Right`* have the same value. Otherwise, returns **`false`**.\
 18\) Returns **`true`** if `Left.name() == Right.name()`. Otherwise, returns **`false`**.\
-19\) Returns **`true`** if `Left.get_time_zone() == _Right.get_time_zone() && Left.get_sys_time() == Right.get_sys_time();`
+19\) Returns **`true`** if `Left.get_time_zone() == Right.get_time_zone() && Left.get_sys_time() == Right.get_sys_time();`
 
 ## <a name="op_gt"></a> `operator>`
 
@@ -1118,7 +1118,7 @@ The output stream you passed in, `os`
 
 21\) In Microsoft's implementation, a `sys_info` is output as its `begin`, `end`, `offset`, `save`, and `abbrev` fields. For example: `begin: 2021-03-14 10:00:00, end: 2021-11-07 09:00:00, offset: -25200s, save: 60min, abbrev: PDT`
 
-22\) In Microsoft's implementation, a `local_info` is output as yyyy-mm-dd hh:mm::ss.ssssss. For example, `2021-09-17 13:55:59.6590120`
+22\) In Microsoft's implementation, a `local_info` is output as yyyy-mm-dd hh:mm:ss.ssssss. For example, `2021-09-17 13:55:59.6590120`
 
 23\) The local time in the `zoned_time` (obtained as `zt.get_local_time()`) is output using the format yyyy-mm-dd hh:mm:ss timezone. For example, `2021-09-15 10:45:00 GMT-6`
 
@@ -1160,7 +1160,7 @@ constexpr duration<Rep1, Period1, Rep2>::type
 
 2)
 template <class Rep1, class Period1, class Rep2, class Period2>
-constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>>::type
+constexpr typename common_type<duration<Rep1, Period1>, duration<Rep2, Period2>>::type
    operator%(
      const duration<Rep1, Period1>& Left,
      const duration<Rep2, Period2>& Right);
@@ -1214,7 +1214,7 @@ A `duration` object.
 *`Div`*\
 An integral value.
 
-*`Left`*\w
+*`Left`*\
 The left `duration` object.
 
 *`Right`*\
