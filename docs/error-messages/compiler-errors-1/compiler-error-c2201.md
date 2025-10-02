@@ -15,7 +15,7 @@ The exported identifier is **`static`**.
 
 ## Example
 
-The following example generates C2286, and shows how to fix it:
+The following example generates C2201, and shows how to fix it:
 
 ```cpp
 // C2201.cpp

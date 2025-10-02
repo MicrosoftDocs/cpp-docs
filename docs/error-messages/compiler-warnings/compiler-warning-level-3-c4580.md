@@ -15,7 +15,7 @@ helpviewer_keywords: ["C4580"]
 
 ## Example
 
-The following example generates C3454 and shows how to fix it.
+The following example generates C4580 and shows how to fix it.
 
 ```cpp
 // C4580.cpp
