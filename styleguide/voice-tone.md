@@ -19,14 +19,14 @@ like when you don't follow our guidelines. Here are the details on what we recom
 
 ## Use a conversational tone
 
-### Appropriate style:
+### Appropriate style
 
 We want our documentation to have a conversational tone. Hopefully, you'll feel as though you're
 having a conversation with the author as you read any of our tutorials or explanations.
 For you, the experience ought to be informal, conversational, and informative. Readers should
 feel as though they're listening to the author explain the concepts to them.
 
-### Inappropriate style:
+### Inappropriate style
 
 One might see the contrast between a conversational style, and the style one finds with
 more academic treatments of technical subjects. Those resources are useful, but the authors
@@ -39,14 +39,14 @@ is a more academic style. You can see the difference immediately.
 
 ## Write in second person
 
-### Appropriate style:
+### Appropriate style
 
 Write your articles as though you're speaking directly to the reader. Use the second person
 often as you write (as I just have in these two sentences). Second person doesn't always mean
 using the word 'you'. Write directly to the reader. Write imperative sentences. Tell your
 reader what you want them to learn.
 
-### Inappropriate style:
+### Inappropriate style
 
 An author could also choose to write in third person. In that model, an author must find some
 pronoun or noun to use when referring to the reader. A reader might often find this third

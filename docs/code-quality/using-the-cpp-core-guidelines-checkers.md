@@ -39,7 +39,7 @@ To enable more Core Check rules, open the dropdown list and choose which rule se
 
 A subset of C++ Core Check rules is included in the Microsoft Native Recommended rule set. It's the ruleset that runs by default when Microsoft code analysis is enabled.
 
-### To enable code analysis on your project:
+### To enable code analysis on your project
 
 1. Open the  **Property Pages** dialog for your project.
 
