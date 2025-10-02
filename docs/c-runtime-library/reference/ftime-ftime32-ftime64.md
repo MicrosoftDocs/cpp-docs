@@ -48,9 +48,9 @@ By default, this function's global state is scoped to the application. To change
 
 > [!Note]
 > Starting with Windows SDK version 10.0.xxxxx.xxxx and Visual Studio 2026 or later, the following functions are no longer declared as `static inline` (internal linkage). Instead, they are now declared as `inline` (external linkage).\
-> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1`before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
 > This change increases UCRT conformance with the C++ standard, while also improving compatibility with C++ modules.\
-> This applies to the following functions: _ftime
+> This applies to the following function: _ftime
 
 ## Requirements
 

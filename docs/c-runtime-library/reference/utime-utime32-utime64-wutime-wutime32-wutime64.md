@@ -90,7 +90,7 @@ By default, this function's global state is scoped to the application. To change
 > You can opt-out of the change for your project by defining `_STATIC_INLINE_UCRT_FUNCTIONS=1`.\
 > You can adopt the change early by defining `_STATIC_INLINE_UCRT_FUNCTIONS=0`.\
 > This change improves conformance and helps avoid One Definition Rule (ODR) violations, especially when using modules.\
-> This applies to the following functions: _utime, _wutime
+> This applies to the following functions: `_utime`, `_wutime`
 
 ### Generic-text routine mappings
 

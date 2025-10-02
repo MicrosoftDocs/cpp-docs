@@ -64,13 +64,13 @@ By default, this function's global state is scoped to the application. To change
 
 > [!Note]
 > Starting with Windows SDK version 10.0.xxxxx.xxxx and Visual Studio 2026 or later, the following functions are no longer declared as `static inline` (internal linkage). Instead, they are now declared as `inline` (external linkage).\
-> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1`before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
 > This change increases UCRT conformance with the C++ standard, while also improving compatibility with C++ modules.\
-> This applies to the following functions: ctime, _wctime
+> This applies to the following functions: `ctime`, `_wctime`
 
 ### Generic-text routine mappings
 
-| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_tctime` | **`ctime`** | **`ctime`** | **`_wctime`** |
 | `_tctime32` | **`_ctime32`** | **`_ctime32`** | **`_wctime32`** |
@@ -80,12 +80,12 @@ By default, this function's global state is scoped to the application. To change
 
 | Routine | Required header |
 |---|---|
-| **`ctime`** | \<time.h> |
-| **`_ctime32`** | \<time.h> |
-| **`_ctime64`** | \<time.h> |
-| **`_wctime`** | \<time.h> or \<wchar.h> |
-| **`_wctime32`** | \<time.h> or \<wchar.h> |
-| **`_wctime64`** | \<time.h> or \<wchar.h> |
+| **`ctime`** | `<time.h>` |
+| **`_ctime32`** | `<time.h>` |
+| **`_ctime64`** | `<time.h>` |
+| **`_wctime`** | `<time.h>` or `<wchar.h>` |
+| **`_wctime32`** | `<time.h>` or `<wchar.h>` |
+| **`_wctime64`** | `<time.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
