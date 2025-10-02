@@ -903,9 +903,10 @@ int main( )
 {
    locale loc1 ( "German_Germany" ), loc2 ( "English_Australia" );
    bool result1 = use_facet<ctype<char> > ( loc1 ).is(
-   ctype_base::alpha, 'a'
-);
-   bool result2 = use_facet<ctype<char> > ( loc2 ).is( ctype_base::alpha, '!'
+      ctype_base::alpha, 'a'
+   );
+   bool result2 = use_facet<ctype<char> > ( loc2 ).is(
+      ctype_base::alpha, '!'
    );
 
    if ( result1 )
