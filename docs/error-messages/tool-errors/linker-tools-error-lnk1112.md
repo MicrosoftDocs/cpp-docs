@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1112"
 title: "Linker Tools Error LNK1112"
+description: "Learn more about: Linker Tools Error LNK1112"
 ms.date: 05/23/2022
 f1_keywords: ["LNK1112"]
 helpviewer_keywords: ["LNK1112"]
-ms.assetid: 425793d8-37e6-4072-9b6e-c3d4e9c12562
 ---
 # Linker Tools Error LNK1112
 
