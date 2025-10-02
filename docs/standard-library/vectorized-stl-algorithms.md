@@ -7,7 +7,7 @@ helpviewer_keywords: ["_USE_STD_VECTOR_ALGORITHMS", "_USE_STD_VECTOR_FLOATING_AL
 ---
 # Vectorized STL Algorithms
 
-Under specific conditions, algorithms in the C++ Standard Template Library (STL) can process multiple elements simultaneously on a single CPU core, rather than handling each element individually. This optimization leverages single instruction, multiple data (SIMD) instructions provided by the CPU, a technique known as vectorization. When this optimization isn't applied, the implementation is referred to as scalar.
+Under specific conditions, algorithms in the C++ Standard Template Library (STL) can process multiple elements simultaneously on a single CPU core, rather than handling each element individually. This optimization uses single instruction, multiple data (SIMD) instructions provided by the CPU, a technique known as vectorization. When this optimization isn't applied, the implementation is referred to as scalar.
 
 The conditions required for vectorization are:
  - The container or range must be contiguous. Examples of contiguous containers include `array`, `vector`, and `basic_string`. Contiguous ranges are provided by types like `span` and `basic_string_view`. Built-in arrays also form contiguous ranges. In contrast, containers like `list` and `map` aren't contiguous.
@@ -24,15 +24,16 @@ Algorithms like `transform`, `reduce`, `accumulate` heavily benefit from auto-ve
 
 ## Manual vectorization in the STL
 
-For x64 and x86, certain algorithms include manual vectorization. This implementation is separately compiled, and uses runtime CPU dispatch, so it's only used on suitable CPUs.
+For x64 and x86, certain algorithms include manual vectorization. This implementation is separately compiled and relies on runtime CPU dispatch, so it applies only to suitable CPUs.
 
 Manually vectorized algorithms use template meta-programming to detect whether the element type is suitable for vectorization. As a result, they're only vectorized for simple types such as standard integer types.
 
 Generally, programs either benefit in performance from this manual vectorization or are unaffected by it. You can disable manual vectorization with `#define _USE_STD_VECTOR_ALGORITHMS=0'. Manually vectorized algorithms are enabled by default on x64 and x86 because it defaults to 1 on those platforms.
 
-To set `_USE_STD_VECTOR_ALGORITHMS` ensure that it's set to the same value for all linked translation units that use algorithms. A reliable way to achieve this to set it using in the project properties instead of in source. For more information about how to do that, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).
+Ensure that you assign the same value to `_USE_STD_VECTOR_ALGORITHMS` for all linked translation units that use algorithms. A reliable way to do this is by configuring it in the project properties instead of in the source code. For more information about how to configure it, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).
 
-The following algorithms are manually vectorized and their behavior is controlled by the `_USE_STD_VECTOR_ALGORITHMS` macro:
+
+The `_USE_STD_VECTOR_ALGORITHMS` macro determines the behavior of the following manually vectorized algorithms:
  - `contains`, `contains_subrange`
  - `find`, `find_last`, `find_end`, `find_first_of`, `adjacent_find`
  - `count`
@@ -60,7 +61,7 @@ In addition to algorithms, the `_USE_STD_VECTOR_ALGORITHMS` macro controls the m
 
 ## Manually vectorized algorithms for floating point types
 
-Vectorization of floating point types requires additional considerations:
+Vectorization of floating-point types involves specific considerations:
  - Vectorization may reorder operations, which can affect the precision of floating point results.
  - Floating point types may contain `NaN` values, which don't behave transitively on comparisons.
  - Floating point operations may raise exceptions.
@@ -73,7 +74,7 @@ Use `_USE_STD_VECTOR_FLOATING_ALGORITHMS` to control the use of these vectorized
 
 `_USE_STD_VECTOR_FLOATING_ALGORITHMS` defaults to 0 when [`/fp:except`](../build/reference/fp-specify-floating-point-behavior.md#except) is set.
 
-To set `_USE_STD_VECTOR_FLOATING_ALGORITHMS` ensure that it's set to the same value for all linked translation units that use algorithms. A reliable way to achieve this to set it using in the project properties instead of in source. For more information about how to do that, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).
+Ensure that you assign the same value to `_USE_STD_VECTOR_FLOATING_ALGORITHMS` for all linked translation units that use algorithms. A reliable way to do this is by configuring it in the project properties instead of in the source code. For more information about how to configure it, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).
 
 ## See also
 
