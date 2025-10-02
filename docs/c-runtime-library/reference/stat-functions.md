@@ -16,7 +16,7 @@ Get status information on a file.
 ## Syntax
 
 ```C
-int _stat( // See note in remarks section about linkage
+int _stat(
    const char *path,
    struct _stat *buffer
 );
@@ -99,12 +99,6 @@ Variations of these functions support 32-bit or 64-bit time types, and 32-bit or
 This function validates its parameters. If either *`path`* or *`buffer`* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter validation](../parameter-validation.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
-
-> [!Note]
-> Starting with Windows SDK version 10.0.xxxxx.xxxx and Visual Studio 2026 or later, the following functions are no longer declared as `static inline` (internal linkage). Instead, they are now declared as `inline` (external linkage).\
-> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1`before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
-> This change increases UCRT conformance with the C++ standard, while also improving compatibility with C++ modules.\
-> This applies to the following functions: _stat
 
 ### Time type and file length type variations of `_stat`
 

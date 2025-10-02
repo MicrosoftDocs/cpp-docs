@@ -16,7 +16,7 @@ Gets information about an open file.
 ## Syntax
 
 ```C
-int _fstat( // See note in remarks section about linkage
+int _fstat(
    int fd,
    struct _stat *buffer
 );
@@ -80,12 +80,6 @@ Variations of these functions support 32-bit or 64-bit time types and 32-bit or 
 Unless `_USE_32BIT_TIME_T` is defined, **`_fstat`** is equivalent to **`_fstat64i32`**, and `_stat` contains a 64-bit time. When `_USE_32BIT_TIME_T` is defined, **`_fstat`** uses a 32-bit time, and `_stat` contains a 32-bit time. The same is true for **`_fstati64`**.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
-
-> [!Note]
-> Starting with Windows SDK version 10.0.xxxxx.xxxx and Visual Studio 2026 or later, the following functions are no longer declared as `static inline` (internal linkage). Instead, they are now declared as `inline` (external linkage).\
-> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1`before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
-> This change increases UCRT conformance with the C++ standard, while also improving compatibility with C++ modules.\
-> This applies to the following functions: _fstat
 
 ### Time type and file length type variations of `_stat`
 
