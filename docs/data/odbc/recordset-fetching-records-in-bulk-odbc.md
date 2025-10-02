@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Recordset: Fetching Records in Bulk (ODBC)"
 title: "Recordset: Fetching Records in Bulk (ODBC)"
-ms.date: "11/04/2016"
+description: "Learn more about: Recordset: Fetching Records in Bulk (ODBC)"
+ms.date: 11/04/2016
 helpviewer_keywords: ["bulk row fetching, implementing", "ODBC recordsets, bulk row fetching", "bulk record field exchange", "bulk row fetching", "bulk RFX functions", "recordsets, bulk row fetching", "DoBulkFieldExchange method", "fetching ODBC records in bulk", "RFX (ODBC), bulk", "rowsets, bulk row fetching", "RFX (ODBC), bulk row fetching"]
-ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
 ---
 # Recordset: Fetching Records in Bulk (ODBC)
 
@@ -74,7 +73,7 @@ public:
    .
    .
    .
-}
+};
 ```
 
 You can either allocate these storage buffers manually or have the framework do the allocation. To allocate the buffers yourself, you must specify the `CRecordset::userAllocMultiRowBuffers` option of the *dwOptions* parameter in the `Open` member function. Be sure to set the sizes of the arrays at least equal to the rowset size. If you want to have the framework do the allocation, you should initialize your pointers to NULL. This is typically done in the recordset object's constructor:
