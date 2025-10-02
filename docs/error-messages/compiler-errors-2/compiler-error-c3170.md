@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3170"
 title: "Compiler Error C3170"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3170"
+ms.date: 11/04/2016
 f1_keywords: ["C3170"]
 helpviewer_keywords: ["C3170"]
-ms.assetid: ca9a59d6-7df3-42f0-b028-c09d0af3ac2a
 ---
 # Compiler Error C3170
 
-cannot have different module identifiers in a project
+> cannot have different module identifiers in a project
+
+## Remarks
 
 [module](../../windows/attributes/module-cpp.md) attributes with different names were found in two of the files in a compilation. Only one unique `module` attribute can be specified per compilation.
 
 Identical `module` attributes can be specified in more than one source code file.
+
+## Example
 
 For example, if the following module attributes were found:
 

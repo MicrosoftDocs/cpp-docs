@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Resource Compiler Error RC2015"
 title: "Resource Compiler Error RC2015"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Error RC2015"
+ms.date: 11/04/2016
 f1_keywords: ["RC2015"]
 helpviewer_keywords: ["RC2015"]
-ms.assetid: 99691683-fb9e-4e61-beb1-12e484858570
 ---
 # Resource Compiler Error RC2015
 
-too many chars in constant
+> too many chars in constant
+
+## Remarks
 
 A character constant contained more than two characters.
 

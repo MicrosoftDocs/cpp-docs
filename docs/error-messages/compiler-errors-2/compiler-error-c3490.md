@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3490"
 title: "Compiler Error C3490"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3490"
+ms.date: 11/04/2016
 f1_keywords: ["C3490"]
 helpviewer_keywords: ["C3490"]
-ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
 ---
 # Compiler Error C3490
 
-'var' cannot be modified because it is being accessed through a const object
+> 'var' cannot be modified because it is being accessed through a const object
+
+## Remarks
 
 A lambda expression that is declared in a **`const`** method cannot modify non-mutable member data.
 
@@ -16,7 +17,7 @@ A lambda expression that is declared in a **`const`** method cannot modify non-m
 
 - Remove the **`const`** modifier from your method declaration.
 
-## Examples
+## Example
 
 The following example generates C3490 because it modifies the member variable `_i` in a **`const`** method:
 

@@ -1,14 +1,16 @@
 ---
 description: "Learn more about: /await (Enable coroutine support)"
 title: "/await (Enable coroutine support)"
-ms.date: "08/15/2017"
+ms.date: 09/08/2025
 f1_keywords: ["/await", "-await"]
 helpviewer_keywords: ["/await enable coroutine support [C++]", "-await enable coroutine support [C++]", "await enable coroutine support [C++]"]
-ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
 ---
-# `/await` (Enable coroutine support)
+# `/await` (Enable coroutine support) Deprecated.
 
 Use the **`/await`** compiler option to enable compiler support for coroutines.
+
+> [!NOTE]
+> The **`/await`** option is deprecated starting with Visual Studio 2026 and will be removed in a future release. Standard C++ coroutines are available by default in C++20 or later. Or use **`/await:strict`** option when using earlier versions of the C++ language.
 
 ## Syntax
 
@@ -19,7 +21,7 @@ Use the **`/await`** compiler option to enable compiler support for coroutines.
 
 The **`/await`** compiler option enables compiler support for C++ coroutines and the keywords **`co_await`**, **`co_yield`**, and **`co_return`**. This option is off by default. For information about support for coroutines in Visual Studio, see the [Visual Studio Team Blog](https://devblogs.microsoft.com/cppblog/category/coroutine/). For more information about the coroutines standard proposal, see [N4628 Working Draft, Technical Specification for C++ Extensions for Coroutines](https://wg21.link/n4628).
 
-The **`/await`** option is available beginning in Visual Studio 2015.
+The **`/await`** option is available beginning in Visual Studio 2015 and is deprecated starting with Visual Studio 2026.
 
 Starting in Visual Studio 2019 version 16.10, the **`/await:strict`** option can be used in place of **`/await`**. The option provides C++20-compatible coroutine support in projects that build in C++14 or C++17 mode. In **`/await:strict`** mode, library support is provided in \<coroutine> and in the `std` namespace.
 

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4393"
 title: "Compiler Warning (level 1) C4393"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4393"
+ms.date: 11/04/2016
 f1_keywords: ["C4393"]
 helpviewer_keywords: ["C4393"]
-ms.assetid: 353a0539-d1ea-4c1b-8849-c9b321ec9842
 ---
 # Compiler Warning (level 1) C4393
 
-'var' : const has no effect on literal data member; ignored
+> 'var' : const has no effect on literal data member; ignored
+
+## Remarks
 
 A [literal](../../extensions/literal-cpp-component-extensions.md) data member was also specified as const.  Since a literal data member implies const, you do not need to add const to the declaration.
 
-The following sample generates C4393:
+## Example
+
+The following example generates C4393:
 
 ```cpp
 // C4393.cpp

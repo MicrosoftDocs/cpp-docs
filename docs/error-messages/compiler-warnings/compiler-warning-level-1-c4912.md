@@ -1,16 +1,19 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4912"
 title: "Compiler Warning (level 1) C4912"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4912"
+ms.date: 11/04/2016
 f1_keywords: ["C4912"]
 helpviewer_keywords: ["C4912"]
-ms.assetid: ba1f1a66-8c20-4792-9ac8-43e49f729ae2
 ---
 # Compiler Warning (level 1) C4912
 
-'attribute': attribute has undefined behavior on a nested UDT
+> 'attribute': attribute has undefined behavior on a nested UDT
+
+## Remarks
 
 Attributes that apply to nested UDTs (user-defined type, which could be a typedef, union, or struct) may be ignored.
+
+## Example
 
 The following code shows how this warning would be generated:
 

@@ -9,6 +9,8 @@ helpviewer_keywords: ["global-buffer-overflow error", "AddressSanitizer error gl
 
 > Address Sanitizer Error: Global buffer overflow
 
+## Remarks
+
 The compiler generates metadata for any variable in the `.data` or `.bss` sections. These variables have language scope of global or file static. They're allocated in memory before `main()` starts. Global variables in C are treated much differently than in C++. This difference is because of the complex rules for linking C.
 
 In C, a global variable can be declared in several source files, and each definition can have different types. The compiler can't see all the possible definitions at once, but the linker can. For C, the linker defaults to selecting the largest-sized variable out of all the different declarations.
@@ -152,11 +154,11 @@ devenv /debugexe example3.exe -l
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

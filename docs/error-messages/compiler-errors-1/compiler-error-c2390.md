@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2390"
 title: "Compiler Error C2390"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2390"
+ms.date: 11/04/2016
 f1_keywords: ["C2390"]
 helpviewer_keywords: ["C2390"]
-ms.assetid: 06b749ee-d072-4db1-b229-715f2c0728b5
 ---
 # Compiler Error C2390
 
-'identifier' : incorrect storage class 'specifier'
+> 'identifier' : incorrect storage class 'specifier'
+
+## Remarks
 
 The storage class is not valid for the global-scope identifier. The default storage class is used in place of the invalid class.
 
@@ -22,7 +23,7 @@ Possible resolutions:
 
 ## Example
 
-- The following sample generates C2390:
+The following example generates C2390:
 
 ```cpp
 // C2390.cpp

@@ -128,10 +128,10 @@ The **`/fsanitize=address`** compiler option marks objects to specify which Addr
 
 | CRT option | AddressSanitizer runtime library (.lib) | Address runtime binary (.dll)
 |--|--|--|
-| `/MT` or `/MTd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_static_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
-| `/MD` or `/MDd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
+| `/MT` or `/MTd` | *`clang_rt.asan_dynamic-{arch}.lib`*, *`/wholearchive:clang_rt.asan_static_runtime_thunk-{arch}.lib`* | *`clang_rt.asan_dynamic-{arch}.dll`*
+| `/MD` or `/MDd` | *`clang_rt.asan_dynamic-{arch}.lib`*, *`/wholearchive:clang_rt.asan_dynamic_runtime_thunk-{arch}.lib`* | *`clang_rt.asan_dynamic-{arch}.dll`*
 
-The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error.
+The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error. The runtime thunk libraries **must** be linked with the `/wholearchive` option applied.
 
 **Previous Versions**
 
@@ -140,12 +140,12 @@ Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`*
 
 | CRT runtime option | DLL or EXE | AddressSanitizer runtime libraries |
 |--|--|--|
-| **`/MT`** | EXE | *`clang_rt.asan-{arch}`*, *`clang_rt.asan_cxx-{arch}`* |
-| **`/MT`** | DLL | *`clang_rt.asan_dll_thunk-{arch}`* |
-| **`/MD`** | Either | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* |
-| **`/MTd`**  | EXE | *`clang_rt.asan_dbg-{arch}`*, *`clang_rt.asan_dbg_cxx-{arch}`* |
-| **`/MTd`**  | DLL | *`clang_rt.asan_dbg_dll_thunk-{arch}`* |
-| **`/MDd`**  | Either | *`clang_rt.asan_dbg_dynamic-{arch}`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}`* |
+| **`/MT`** | EXE | *`/wholearchive:clang_rt.asan-{arch}.lib`*, *`clang_rt.asan_cxx-{arch}.lib`* |
+| **`/MT`** | DLL | *`/wholearchive:clang_rt.asan_dll_thunk-{arch}.lib`* |
+| **`/MD`** | Either | *`clang_rt.asan_dynamic-{arch}.lib`*, *`/wholearchive:clang_rt.asan_dynamic_runtime_thunk-{arch}.lib`* |
+| **`/MTd`**  | EXE | *`/wholearchive:clang_rt.asan_dbg-{arch}.lib`*, *`clang_rt.asan_cxx_dbg-{arch}.lib`* |
+| **`/MTd`**  | DLL | *`/wholearchive:clang_rt.asan_dbg_dll_thunk-{arch}.lib`* |
+| **`/MDd`**  | Either | *`/wholearchive:clang_rt.asan_dbg_dynamic-{arch}.lib`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}.lib`* |
 
 ## Visual Studio integration
 

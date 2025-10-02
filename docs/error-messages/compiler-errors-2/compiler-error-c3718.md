@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3718"
 title: "Compiler Error C3718"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3718"
+ms.date: 11/04/2016
 f1_keywords: ["C3718"]
 helpviewer_keywords: ["C3718"]
-ms.assetid: 346b5205-c44d-49d3-b66a-96417d3d6986
 ---
 # Compiler Error C3718
 
 > can only call '*event*' in the context of a member function of the receiving class
 
+## Remarks
+
 The event can only be called from the receiving class.
 
 ## Example
 
-The following sample generates C3718:
+The following example generates C3718:
 
 ```cpp
 // C3718.cpp

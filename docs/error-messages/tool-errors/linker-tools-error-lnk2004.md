@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2004"
 title: "Linker Tools Error LNK2004"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2004"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2004"]
 helpviewer_keywords: ["LNK2004"]
-ms.assetid: 07645371-e67b-4a2c-b0e0-dde24c94ef7e
 ---
 # Linker Tools Error LNK2004
 
-gp relative fixup overflow to 'target'; short section 'section' is too large or out of range.
+> gp relative fixup overflow to 'target'; short section 'section' is too large or out of range.
+
+## Remarks
 
 The section was too large.
 

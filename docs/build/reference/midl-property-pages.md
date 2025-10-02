@@ -111,6 +111,9 @@ Specifies the default character type of the C compiler that will be used to comp
 
 Specifies which environment to target ([/env](/windows/win32/midl/-env) arm32|win32|ia64|x64).
 
+> [!NOTE]
+> Starting with Visual Studio 2026, the **`/env:arm32`** option is deprecated and removed. If you need to target ARM32, use the Visual Studio 2022 v143 build tools.
+
 **Choices**
 
 - **Not Set** - Win32

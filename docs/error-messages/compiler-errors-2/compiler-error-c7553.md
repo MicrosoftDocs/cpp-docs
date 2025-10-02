@@ -1,6 +1,6 @@
 ---
 title: "Compiler Error C7553"
-description: Compiler Error C7553 description and solution.
+description: "Compiler Error C7553 description and solution."
 ms.date: 02/22/2022
 f1_keywords: ["C7553"]
 helpviewer_keywords: ["C7553"]

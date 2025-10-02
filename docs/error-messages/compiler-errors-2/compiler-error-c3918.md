@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3918"
 title: "Compiler Error C3918"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3918"
+ms.date: 11/04/2016
 f1_keywords: ["C3918"]
 helpviewer_keywords: ["C3918"]
-ms.assetid: a8b3a90a-3fe1-4244-a5ff-a31cdae97d98
 ---
 # Compiler Error C3918
 
-usage requires 'member' to be a data member
+> usage requires 'member' to be a data member
+
+## Remarks
 
 C3918 can occur for several reasons related to events.
 
 ## Examples
 
-C3918 can occur because a class member is required in the current context. The following sample generates C3918.
+C3918 can occur because a class member is required in the current context. The following example generates C3918.
 
 ```cpp
 // C3918.cpp
@@ -36,7 +37,7 @@ public:
 
 C3918 is also caused if you try to check a trivial event for null (the event name will no longer provide direct access to the backing store delegate for the event).
 
-The following sample generates C3918.
+The following example generates C3918.
 
 ```cpp
 // C3918_2.cpp
@@ -57,7 +58,7 @@ ref struct EventSource : public IEFace {
 };
 ```
 
-C3918 can also occur if you incorrectly subscribe to an event. The following sample generates C3918.
+C3918 can also occur if you incorrectly subscribe to an event. The following example generates C3918.
 
 ```cpp
 // C3918_3.cpp

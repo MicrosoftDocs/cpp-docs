@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4127"
 title: "Compiler Warning (level 4) C4127"
-ms.date: "10/16/2019"
+description: "Learn more about: Compiler Warning (level 4) C4127"
+ms.date: 10/16/2019
 f1_keywords: ["C4127"]
 helpviewer_keywords: ["C4127"]
-ms.assetid: f59ded9e-5227-45bd-ac43-2aa861581363
 ---
 # Compiler Warning (level 4) C4127
 
@@ -16,9 +15,9 @@ The controlling expression of an **`if`** statement or **`while`** loop evaluate
 
 If the controlling expression of a **`while`** loop is a constant because the loop exits in the middle, consider replacing the **`while`** loop with a **`for`** loop. You can omit the initialization, termination test and loop increment of a **`for`** loop, which causes the loop to be infinite, just like `while(1)`, and you can exit the loop from the body of the **`for`** statement.
 
-## Example
+## Examples
 
-The following sample shows two ways C4127 is generated, and shows how to use a for loop to avoid the warning:
+The following example shows two ways C4127 is generated, and shows how to use a for loop to avoid the warning:
 
 ```cpp
 // C4127.cpp

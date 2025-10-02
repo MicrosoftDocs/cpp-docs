@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4905"
 title: "Compiler Warning (level 1) C4905"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4905"
+ms.date: 11/04/2016
 f1_keywords: ["C4905"]
 helpviewer_keywords: ["C4905"]
-ms.assetid: 40240bf4-b14e-4c22-aeb2-52f2851532f6
 ---
 # Compiler Warning (level 1) C4905
 
-wide string literal cast to 'LPSTR'
+> wide string literal cast to 'LPSTR'
+
+## Remarks
 
 The compiler detected an unsafe cast. The cast did succeed, but you should use a conversion routine.
 
@@ -16,7 +17,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 ## Example
 
-The following sample generates C4905.
+The following example generates C4905.
 
 ```cpp
 // C4905.cpp

@@ -1,6 +1,6 @@
 ---
-description: "Learn about the causes of Compiler error C7510 and how to fix it."
 title: "Compiler Error C7510"
+description: "Learn about the causes of Compiler error C7510 and how to fix it."
 ms.date: 04/21/2021
 f1_keywords: ["C7510"]
 helpviewer_keywords: ["C7510"]
@@ -10,9 +10,9 @@ helpviewer_keywords: ["C7510"]
 > '*type-name*': use of dependent template name must be prefixed with 'template'\
 > '*type-name*': use of dependent type name must be prefixed with 'typename'
 
-In [`/permissive-`](../../build/reference/permissive-standards-conformance.md) mode, the compiler requires the **`template`** keyword to precede a template name when it comes after a dependent [`nested-name-specifier`](../../cpp/scope-resolution-operator.md). Similar rules hold for types qualified by **`typename`**.
-
 ## Remarks
+
+In [`/permissive-`](../../build/reference/permissive-standards-conformance.md) mode, the compiler requires the **`template`** keyword to precede a template name when it comes after a dependent [`nested-name-specifier`](../../cpp/scope-resolution-operator.md). Similar rules hold for types qualified by **`typename`**.
 
 Compiler behavior has changed starting in Visual Studio 2017 version 15.8 under [`/permissive-`](../../build/reference/permissive-standards-conformance.md) mode. The compiler requires the **`template`** or **`typename`** keyword to precede a template or type name when it comes after a dependent *`nested-name-specifier`*. For more information, see [Name resolution for dependent types](../../cpp/name-resolution-for-dependent-types.md) and [Templates and name resolution](../../cpp/templates-and-name-resolution.md).
 

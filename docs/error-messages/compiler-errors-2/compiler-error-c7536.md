@@ -1,6 +1,6 @@
 ---
-description: "Learn about the causes of Compiler error C7536 and how to fix it."
 title: "Compiler Error C7536"
+description: "Learn about the causes of Compiler error C7536 and how to fix it."
 ms.date: 05/03/2021
 f1_keywords: ["C7536"]
 helpviewer_keywords: ["C7536"]
@@ -8,6 +8,8 @@ helpviewer_keywords: ["C7536"]
 # Compiler Error C7536
 
 > ifc failed integrity checks.  Expected SHA2: '*hash-value*'
+
+## Remarks
 
 The compiler raises C7536 whenever the *`.ifc`* file has been tampered with. The header of the module interface contains an SHA2 hash of the contents below it. On import, the *`.ifc`* file is hashed, then checked against the hash provided in the header. If these don't match, error C7536 is raised:
 

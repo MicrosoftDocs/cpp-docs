@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4160"
 title: "Compiler Warning (level 1) C4160"
-ms.date: "08/27/2018"
+description: "Learn more about: Compiler Warning (level 1) C4160"
+ms.date: 08/27/2018
 f1_keywords: ["C4160"]
 helpviewer_keywords: ["C4160"]
-ms.assetid: a9610cb7-cac4-4a74-8b4e-049030ebb92b
 ---
 # Compiler Warning (level 1) C4160
 

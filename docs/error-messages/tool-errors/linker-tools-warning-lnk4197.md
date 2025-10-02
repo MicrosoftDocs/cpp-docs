@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4197"
 title: "Linker Tools Warning LNK4197"
-ms.date: "09/05/2018"
+description: "Learn more about: Linker Tools Warning LNK4197"
+ms.date: 09/05/2018
 f1_keywords: ["LNK4197"]
 helpviewer_keywords: ["LNK4197"]
-ms.assetid: 8a976fd7-a74b-4c83-ab66-a9e7d7073c4a
 ---
 # Linker Tools Warning LNK4197
 
 > export '*exportname*' specified multiple times; using first specification
+
+## Remarks
 
 An export is specified in multiple and different ways. The linker uses the first specification and ignores the rest.
 
