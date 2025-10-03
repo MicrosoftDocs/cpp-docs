@@ -1,11 +1,11 @@
 ---
-title: "Vectorized STL Algorithms"
+title: "Vectorized MSVC STL Algorithms"
 description: "Learn more about: Vectorized STL Algorithms"
 ms.date: 10/03/2025
 f1_keywords: ["_USE_STD_VECTOR_ALGORITHMS", "_USE_STD_VECTOR_FLOATING_ALGORITHMS"]
 helpviewer_keywords: ["_USE_STD_VECTOR_ALGORITHMS", "_USE_STD_VECTOR_FLOATING_ALGORITHMS", "Vector Algorithms", "Vectorization", "SIMD"]
 ---
-# Vectorized STL Algorithms
+# Vectorized MSVC STL Algorithms
 
 Under specific conditions, algorithms in the MSVC Standard Template Library (STL) can process multiple elements simultaneously on a single CPU core, rather than handling each element individually. This optimization uses single instruction, multiple data (SIMD) instructions provided by the CPU, a technique called vectorization. When this optimization isn't applied, the implementation is referred to as scalar.
 
@@ -16,13 +16,13 @@ The conditions required for vectorization are:
     - The compiler can emit vectorized machine code for an implementation written as scalar code (auto-vectorization).
     - The algorithm's implementation explicitly uses vectorized code (manual vectorization).
 
-## Auto-vectorization in the STL
+## Auto-vectorization in the MSVC STL
 
 For more information about automatic vectorization, see [Auto-Vectorizer](../parallel/auto-parallelization-and-auto-vectorization.md#auto-vectorizer) and the discussion in that article about the [`/arch`](../build/reference/arch-minimum-cpu-architecture.md) switch. This applies to the STL implementation code the same way it applies to user code.
 
 Algorithms like `transform`, `reduce`, and `accumulate` benefit heavily from auto-vectorization.
 
-## Manual vectorization in the STL
+## Manual vectorization in the MSVC STL
 
 Certain algorithms for x64 and x86 include manual vectorization. This implementation is separately compiled and relies on runtime CPU dispatch, so it applies only to suitable CPUs.
 
