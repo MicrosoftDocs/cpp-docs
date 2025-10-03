@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: Add a generic C++ class"
 title: "Add a generic C++ class"
-ms.date: "11/09/2018"
+description: "Learn more about: Add a generic C++ class"
+ms.date: 11/09/2018
+ms.topic: how-to
 f1_keywords: ["vc.codewiz.classes.adding.generic", "vc.codewiz.class.generic"]
 helpviewer_keywords: ["Visual C++, classes", "generic classes, adding", "generic classes", "generic C++ class wizard [C++]"]
-ms.assetid: e95a5a14-dbed-4edc-8551-344fe48613cb
-ms.topic: how-to
 ---
 # Add a generic C++ class
 
@@ -13,7 +12,7 @@ You can add a generic C++ class by using **Class View**. A generic C++ class is 
 
 ::: moniker range="msvc-140"
 
-## To add a generic C++ class to a project:
+## To add a generic C++ class to a project
 
 1. In **Class View**, right-click the project to which you want to add the new class, choose **Add**, and then choose **Class**.
 

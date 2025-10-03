@@ -1,8 +1,8 @@
 ---
 title: "Global state in the CRT"
-description: "Describes how shared global state is handled in the Microsoft Universal C Runtime." 
+description: "Describes how shared global state is handled in the Microsoft Universal C Runtime."
+ms.date: 10/02/2020
 ms.topic: "concept-article"
-ms.date: "10/02/2020"
 helpviewer_keywords: ["CRT global state"]
 ---
 
@@ -29,7 +29,7 @@ There are two ways to isolate your component's CRT state from an app's CRT state
 - Starting in Windows versions beginning with Windows 10 version 2004, dynamically link to the CRT but call the OS-mode exports (the functions that begin with _o_). To call the OS-mode exports, statically link as before, but ignore the static UCRT by using linker option `/NODEFAULTLIB:libucrt.lib` (release) or `/NODEFAULTLIB:libucrtd.lib` (debug). And add `ucrt.osmode.lib` to the linker input. See [`/NODEFAULTLIB` (Ignore Libraries)](../build/reference/nodefaultlib-ignore-libraries.md) for details.
 
 > [!NOTE]
-> In source code,  write `setlocale()`, not `_o_setlocale()`. When you link against `ucrt.osmode.lib`, the linker will automatically substitute the OS-specific version of the function. That is, `setlocale()` will be substituted with `_o_setlocale()`.
+> In source code, write `setlocale()`, not `_o_setlocale()`. When you link against `ucrt.osmode.lib`, the linker will automatically substitute the OS-specific version of the function. That is, `setlocale()` will be substituted with `_o_setlocale()`.
 
 Linking against `ucrt.osmode.lib` disables some UCRT calls that are only available in app mode. Attempting to call these functions will result in a link error.
 

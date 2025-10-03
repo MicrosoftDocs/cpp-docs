@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: CMake predefined build configurations"
 title: "CMake predefined configuration reference"
+description: "Learn more about: CMake predefined build configurations"
 ms.description: "Visual Studio provides several predefined build configurations for CMake projects on Linux, Windows, ARM, and IoT."
 ms.date: 08/03/2021
 helpviewer_keywords: ["CMake redefined configurations"]
@@ -30,7 +30,7 @@ In a CMake project, build configurations are stored in a *`CMakeSettings.json`* 
 
 When you choose a configuration, it's added to the *`CMakeSettings.json`* file in the project's root folder. You can then use it to build your project. For information about the configuration properties, see [CMakeSettings reference](cmakesettings-reference.md).
 
-## Linux predefined build configurations:
+## Linux predefined build configurations
 
 ```json
 {

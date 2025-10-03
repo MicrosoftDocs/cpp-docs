@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: <type_traits>"
 title: "<type_traits>"
-ms.date: "02/21/2019"
+description: "Learn more about: <type_traits>"
+ms.date: 02/21/2019
 f1_keywords: ["<type_traits>"]
 helpviewer_keywords: ["typetrait header", "type_traits"]
-ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
 ---
 # `<type_traits>`
 
@@ -44,7 +43,7 @@ These are the provided aliases for the `type` members:
       `add_rvalue_reference_t`\
       `add_volatile_t`\
       `aligned_storage_t`\
-      `aligned_union_t`\
+      `aligned_union_t`
    :::column-end:::
    :::column:::
       `common_type_t`\
@@ -54,7 +53,7 @@ These are the provided aliases for the `type` members:
       `invoke_result_t`\
       `make_signed_t`\
       `make_unsigned_t`\
-      `remove_all_extents_t`\
+      `remove_all_extents_t`
    :::column-end:::
    :::column:::
       `remove_const_t`\
@@ -64,7 +63,7 @@ These are the provided aliases for the `type` members:
       `remove_reference_t`\
       `remove_volatile_t`\
       `result_of_t`\
-      `underlying_type_t`\
+      `underlying_type_t`
    :::column-end:::
 :::row-end:::
 

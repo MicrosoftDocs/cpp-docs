@@ -1,14 +1,15 @@
 ---
 title: "Linker Tools Warning LNK4098"
 description: "Describes how incompatible libraries cause linker tools warning LNK4098, and how to use /NODEFAULTLIB to fix it."
-ms.date: "12/02/2019"
+ms.date: 12/02/2019
 f1_keywords: ["LNK4098"]
 helpviewer_keywords: ["LNK4098"]
-ms.assetid: 1f1b1408-1316-4e34-80f5-6a02f2db0ac1
 ---
 # Linker Tools Warning LNK4098
 
 > defaultlib '*library*' conflicts with use of other libs; use /NODEFAULTLIB:*library*
+
+## Remarks
 
 You're trying to link with incompatible libraries.
 

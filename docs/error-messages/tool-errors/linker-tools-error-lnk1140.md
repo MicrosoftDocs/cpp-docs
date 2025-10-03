@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1140"
 title: "Linker Tools Error LNK1140"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1140"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1140"]
 helpviewer_keywords: ["LNK1140"]
-ms.assetid: 468d7651-a7cd-47b9-aead-5bb2fab56121
 ---
 # Linker Tools Error LNK1140
 
-too many modules for program database; link with /PDB:NONE
+> too many modules for program database; link with /PDB:NONE
+
+## Remarks
 
 The project contains more than 4096 modules.
 

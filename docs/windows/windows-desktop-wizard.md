@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Windows Desktop Wizard"
 title: "Windows Desktop Wizard"
-ms.date: "03/29/2019"
+description: "Learn more about: Windows Desktop Wizard"
+ms.date: 03/29/2019
 f1_keywords: ["vc.appwiz.win32.overview", "vc.appwiz.win32.appset"]
 helpviewer_keywords: ["Windows Desktop Wizard", "Win32 Project Wizard"]
-ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
 ---
 # Windows Desktop Wizard
 
@@ -58,7 +57,7 @@ Defines the support and options for the application, depending on its type.
 |**Precompiled header**|Specifies that the static library project uses a pre-compiled header.|
 |**Security Development Lifecycle (SDL) checks**|For more information about SDL, see [Microsoft Security Development Lifecycle (SDL)  Process Guidance](../build/reference/sdl-enable-additional-security-checks.md)|
 
-## Add common headers for:
+## Add common headers for
 
 Add support for one of the libraries supplied in Visual C++.
 
