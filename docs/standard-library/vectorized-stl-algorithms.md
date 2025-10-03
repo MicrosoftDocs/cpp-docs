@@ -67,7 +67,7 @@ Vectorization of floating-point types involves specific considerations:
  - Floating point operations may raise exceptions.
 
 The STL deals with the first two considerations safely. Only `max_element`, `min_element`, `minmax_element`, `max`, `min`, `minmax`, `is_sorted`, and `is_sorted_until` are manually vectorized. These algorithms:
-- Avoid computing new floating-point values; instead, they compare existing values to ensure that differences in operation order don't impact precision.
+- Don’t compute new floating-point values. Instead, they only compare existing values to ensure that differences in operation order don't impact precision.
 - Since these are sorting algorithms, `NaN` values aren't allowed inputs.
 
 Use `_USE_STD_VECTOR_FLOATING_ALGORITHMS` to control the use of these vectorized algorithms for floating point types. Set it to 0 to disable vectorization. `_USE_STD_VECTOR_FLOATING_ALGORITHMS` has no effect if `_USE_STD_VECTOR_ALGORITHMS` is set to 0.
