@@ -1,7 +1,7 @@
 ---
 title: "Vectorized STL Algorithms"
 description: "Learn more about: Vectorized STL Algorithms"
-ms.date: 10/1/2025
+ms.date: 10/03/2025
 f1_keywords: ["_USE_STD_VECTOR_ALGORITHMS", "_USE_STD_VECTOR_FLOATING_ALGORITHMS"]
 helpviewer_keywords: ["_USE_STD_VECTOR_ALGORITHMS", "_USE_STD_VECTOR_FLOATING_ALGORITHMS", "Vector Algorithms", "Vectorization", "SIMD"]
 ---
@@ -11,14 +11,14 @@ Under specific conditions, algorithms in the C++ Standard Template Library (STL)
 
 The conditions required for vectorization are:
  - The container or range must be contiguous. Examples of contiguous containers include `array`, `vector`, and `basic_string`. Contiguous ranges are provided by types like `span` and `basic_string_view`. Built-in arrays also form contiguous ranges. In contrast, containers like `list` and `map` aren't contiguous.
- - The target platform must support the necessary SIMD instructions to implement the algorithm for the element types. This is typically true for intrinsic types (like built-in integers) and simple operations.
+ - The target platform must support the necessary SIMD instructions to implement the algorithm for the element types. This is typically true for arithmetic types and simple operations.
  - One of the following conditions must be met:
   - The compiler can emit vectorized machine code for an implementation written as scalar code (auto-vectorization).
   - The algorithm's implementation is explicitly written to use vectorized code (manual vectorization).
 
 ## Auto-vectorization in the STL
 
-For more information about automatic vectorization, see [Auto-Vectorizer](../parallel/auto-parallelization-and-auto-vectorization.md#auto-vectorizer) and the discussion about in that article about the [`/arch`](../build/reference/arch-minimum-cpu-architecture.md) switch. This applies to the STL implementation code the same way as to user code.
+For more information about automatic vectorization, see [Auto-Vectorizer](../parallel/auto-parallelization-and-auto-vectorization.md#auto-vectorizer) and the discussion  in that article about the [`/arch`](../build/reference/arch-minimum-cpu-architecture.md) switch. This applies to the STL implementation code the same way it does to user code.
 
 Algorithms like `transform`, `reduce`, `accumulate` heavily benefit from auto-vectorization.
 
@@ -28,7 +28,7 @@ For x64 and x86, certain algorithms include manual vectorization. This implement
 
 Manually vectorized algorithms use template meta-programming to detect whether the element type is suitable for vectorization. As a result, they're only vectorized for simple types such as standard integer types.
 
-Generally, programs either benefit in performance from this manual vectorization or are unaffected by it. You can disable manual vectorization with `#define _USE_STD_VECTOR_ALGORITHMS=0'. Manually vectorized algorithms are enabled by default on x64 and x86 because it defaults to 1 on those platforms.
+Generally, programs either benefit in performance from this manual vectorization or are unaffected by it. You can disable manual vectorization by defining  `_USE_STD_VECTOR_ALGORITHMS=0` in your project. Manually vectorized algorithms are enabled by default on x64 and x86 because it defaults to 1 on those platforms.
 
 Ensure that you assign the same value to `_USE_STD_VECTOR_ALGORITHMS` for all linked translation units that use algorithms. A reliable way to do this is by configuring it in the project properties instead of in the source code. For more information about how to configure it, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).
 
@@ -67,8 +67,8 @@ Vectorization of floating-point types involves specific considerations:
  - Floating point operations may raise exceptions.
 
 The STL deals with the first two considerations safely. Only `max_element`, `min_element`, `minmax_element`, `max`, `min`, `minmax`, `is_sorted`, and `is_sorted_until` are manually vectorized. These algorithms:
- - Don't compute new floating point values, only compare the existing values, so different order does not affect precision.
- - Because they're sorting algorithms, `NaNs` isn't an allowed operand.
+- Avoid computing new floating-point values; instead, they compare existing values to ensure that differences in operation order don't impact precision.
+- Since these are sorting algorithms, `NaN` values aren't allowed inputs.
 
 Use `_USE_STD_VECTOR_FLOATING_ALGORITHMS` to control the use of these vectorized algorithms for floating point types. Set it to 0 to disable vectorization. `_USE_STD_VECTOR_FLOATING_ALGORITHMS` has no effect if `_USE_STD_VECTOR_ALGORITHMS` is set to 0.
 
