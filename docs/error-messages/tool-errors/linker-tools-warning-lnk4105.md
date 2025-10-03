@@ -7,7 +7,9 @@ helpviewer_keywords: ["LNK4105"]
 ---
 # Linker Tools Warning LNK4105
 
-no argument specified with option 'option'; ignoring option
+> no argument specified with option 'option'; ignoring option
+
+## Remarks
 
 This warning occurs only when the [/LIBPATH](../../build/reference/libpath-additional-libpath.md) option is set. If no directory is specified with this option, then the linker ignores the option and generates this warning message.
 

@@ -1,14 +1,13 @@
 ---
 title: "_strdate_s, _wstrdate_s"
 description: "_strdate_s and _wstrdate_s are secure CRT versions of the _strdate and _wstrdate functions that put the current date in a buffer."
-ms.date: "4/2/2020"
+ms.date: 4/2/2020
 api_name: ["_strdate_s", "_wstrdate_s", "_o__strdate_s", "_o__wstrdate_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_strdate_s", "wstrdate_s", "_wstrdate_s", "strdate_s", "_tstrdate_s"]
 helpviewer_keywords: ["dates, copying", "tstrdate_s function", "wstrdate_s function", "_tstrdate_s function", "strdate_s function", "copying dates", "_strdate_s function", "_wstrdate_s function"]
-ms.assetid: d41d8ea9-e5ce-40d4-864e-1ac29b455991
 ---
 # `_strdate_s`, `_wstrdate_s`
 
@@ -76,7 +75,7 @@ The debug library versions of these functions first fill the buffer with 0xFE. T
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
-### Generic-text routine mapping:
+### Generic-text routine mapping
 
 | TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|

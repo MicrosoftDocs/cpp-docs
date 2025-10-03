@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: /fpcvt (Floating-point to integer conversion compatibility)"
 title: "/fpcvt (Floating-point to unsigned integer conversion compatibility)"
-ms.date: 09/25/2025
+description: "Learn more about: /fpcvt (Floating-point to integer conversion compatibility)"
+ms.date: 11/03/2021
 f1_keywords: ["/fpcvt", "-fpcvt"]
 helpviewer_keywords: ["-fpcvt compiler option [C++]", "/fpcvt compiler option [C++]"]
 ---
@@ -42,7 +42,7 @@ The **`/fpcvt`** options are new in Visual Studio 2019 version 16.8. If you spec
 
 ### Intrinsic functions for conversions
 
-You can specify the behavior of a specific conversion independently of the **`/fpcvt `** option, which applies globally. The compiler provides intrinsic sentinel conversion functions for conversions compatible with **`/fpcvt:IA`**. For more information, see [Sentinel conversion functions](../../intrinsics/sentinel-conversion-functions.md). The compiler also provides saturation conversion functions compatible with conversions on ARM or ARM64 target architectures. For more information, see [Saturation conversion functions](../../intrinsics/saturation-conversion-functions.md).
+You can specify the behavior of a specific conversion independently of the **`/fpcvt`** option, which applies globally. The compiler provides intrinsic sentinel conversion functions for conversions compatible with **`/fpcvt:IA`**. For more information, see [Sentinel conversion functions](../../intrinsics/sentinel-conversion-functions.md). The compiler also provides saturation conversion functions compatible with conversions on ARM or ARM64 target architectures. For more information, see [Saturation conversion functions](../../intrinsics/saturation-conversion-functions.md).
 
 The compiler also supports intrinsic conversion functions that execute as quickly as possible for valid conversions. These functions may generate any value or throw an exception for an invalid conversion. The results depend on the target platform, compiler options, and context. They're useful for handling values that have already been range-checked, or values generated in a way that can't cause an invalid conversion. For more information, see [Fast conversion functions](../../intrinsics/fast-conversion-functions.md).
 
