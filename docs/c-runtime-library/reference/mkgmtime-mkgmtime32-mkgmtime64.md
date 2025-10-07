@@ -51,7 +51,7 @@ Both **`gmtime`** and **`localtime`** use a common static buffer for the convers
 > [!Note]
 > When you use Windows SDK version 10.0.xxxxx.xxxx and Visual Studio 2026 or later together, `_mkgmtime` is no longer `static inline` (internal linkage). Instead, it's `inline` (external linkage).\
 > To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
-> This change increases UCRT conformance with the C++ standard, while also improving compatibility with C++ modules.
+> This change increases UCRT conformance with the C++ standard and improves compatibility with C++ modules.
 
 ## Examples
 
