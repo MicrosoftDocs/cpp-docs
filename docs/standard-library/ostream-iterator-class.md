@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: ostream_iterator Class"
 title: "ostream_iterator Class"
+description: "Learn more about: ostream_iterator Class"
 ms.date: 06/17/2022
 f1_keywords: ["iterator/std::ostream_iterator", "iterator/std::ostream_iterator::char_type", "iterator/std::ostream_iterator::ostream_type", "iterator/std::ostream_iterator::traits_type"]
 helpviewer_keywords: ["std::ostream_iterator [C++]", "std::ostream_iterator [C++], char_type", "std::ostream_iterator [C++], ostream_type", "std::ostream_iterator [C++], traits_type"]
-ms.assetid: 24d842d3-9f45-4bf6-a697-62f5968f5a03
 ms.custom: devdivchpfy22
 ---
 
@@ -145,10 +144,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
-*intOut = 10;
+   *intOut = 10;
    intOut++;      // No effect on iterator position
-*intOut = 20;
-*intOut = 30;
+   *intOut = 20;
+   *intOut = 30;
 }
 /* Output:
 Elements written to output stream:
@@ -195,10 +194,10 @@ int main( )
    // standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
-*intOut = 10;
+   *intOut = 10;
    intOut++;      // No effect on iterator position
-*intOut = 20;
-*intOut = 30;
+   *intOut = 20;
+   *intOut = 30;
 }
 /* Output:
 Elements written to output stream:
@@ -249,10 +248,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
-*intOut = 10;
+   *intOut = 10;
    intOut++;      // No effect on iterator position
-*intOut = 20;
-*intOut = 30;
+   *intOut = 20;
+   *intOut = 30;
 }
 /* Output:
 Elements written to output stream:
@@ -304,9 +303,9 @@ int main( )
 
    // ostream_iterator for stream cout
    ostream_iterator<int> intOut ( cout , "\n" );
-*intOut = 10;
+   *intOut = 10;
    intOut++;
-*intOut = 20;
+   *intOut = 20;
    intOut++;
 
    int i;

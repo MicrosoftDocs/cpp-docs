@@ -134,9 +134,9 @@ int main( void)
 {
    Int *pInt = ( Int* ) malloc( sizeof( Int ) );
    memset( pInt, 0, sizeof( Int ) ); // Set bIsConstructed to false;
-*pInt = 5;
+   *pInt = 5;
    raw_storage_iterator< Int*, Int > it( pInt );
-*it = 5;
+   *it = 5;
 }
 ```
 

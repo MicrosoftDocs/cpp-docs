@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: back_insert_iterator Class"
 title: "back_insert_iterator Class"
+description: "Learn more about: back_insert_iterator Class"
 ms.date: 06/07/2022
 f1_keywords: ["iterator/std::back_insert_iterator", "iterator/std::back_insert_iterator::container_type", "iterator/std::back_insert_iterator::reference"]
 helpviewer_keywords: ["std::back_insert_iterator [C++]", "std::back_insert_iterator [C++], container_type", "std::back_insert_iterator [C++], reference"]
-ms.assetid: a1ee07f2-cf9f-46a1-8608-cfaf207f9713
 ms.custom: devdivchpfy22
 ---
 # back_insert_iterator Class
@@ -103,9 +102,9 @@ int main( )
 
    // Alternatively, insertions can be done with template function
    back_insert_iterator<vector<int> > backiter ( vec );
-*backiter = 600;
+   *backiter = 600;
    backiter++;
-*backiter = 700;
+   *backiter = 700;
 
    cout << "After the insertions, the vector vec is: ( ";
    for ( vIter = vec.begin ( ) ; vIter != vec.end ( ); vIter++)
@@ -216,9 +215,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
-*backiter = 10;
+   *backiter = 10;
    backiter++;      // Increment to the next element
-*backiter = 20;
+   *backiter = 20;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
@@ -277,9 +276,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
-*backiter = 30;
+   *backiter = 30;
    backiter++;      // Increment to the next element
-*backiter = 40;
+   *backiter = 40;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
@@ -349,9 +348,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
-*backiter = 10;
+   *backiter = 10;
    backiter++;      // Increment to the next element
-*backiter = 20;
+   *backiter = 20;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
