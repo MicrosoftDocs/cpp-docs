@@ -73,10 +73,9 @@ These functions validate their parameters. If *`sourceTime`* is a null pointer, 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
 > [!Note]
-> Starting in Visual Studio 2025 and the Windows SDK 26000, this function changes from declaring the function (or functions for multi-function pages) with `static inline` to `inline`.\
-> You can opt-out of the change for your project by defining `_STATIC_INLINE_UCRT_FUNCTIONS=1`.\
-> You can adopt the change early by defining `_STATIC_INLINE_UCRT_FUNCTIONS=0`.\
-> This change improves conformance and helps avoid One Definition Rule (ODR) violations, especially when using modules.\
+> When you use Windows SDK version 10.0.xxxxx.xxxx and Visual Studio 2026 or later together, the following functions are no longer declared as `static inline` (internal linkage). Instead, they are declared as `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard, while also improving compatibility with C++ modules.\
 > This applies to the following function: `localtime`
 
 ## Requirements
