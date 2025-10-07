@@ -347,7 +347,7 @@ If the parse fails, `is.setstate`(`ios_base::failbit`) is called and the output 
 
 ```cpp
 // 1) day - C++20
-template<class charT class traits, class Alloc = allocator<charT>>
+template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
     basic_istream<charT, traits>& is, const charT* fmt,
