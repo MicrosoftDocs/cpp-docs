@@ -126,7 +126,7 @@ The IDE expects to find a project configuration for any combination of `Configur
 
 - Debug|Win32
 
-- Retail|Win32
+- Retail|x64
 
 - Special 32-bit Optimization|Win32
 
@@ -134,7 +134,7 @@ then it must also have these configurations, even though "Special 32-bit Optimiz
 
 - Debug|x64
 
-- Retail|x64
+- Retail|Win32
 
 - Special 32-bit Optimization|x64
 
