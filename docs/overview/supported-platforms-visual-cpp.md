@@ -39,7 +39,7 @@ Apps built by using Visual Studio can be targeted to various platforms.
 
 <sup>d</sup> You can install the **Linux development with C++** workload in the installer for Visual Studio 2017 and later to target Linux platforms. For instructions, see [Download, install, and setup the Linux Workload](../linux/download-install-and-setup-the-linux-development-workload.md). This toolset compiles your executable on the target machine, so you can build for any supported architecture.
 
-<sup>e</sup> Visual Studio 2026 18.0 and later no longer support targeting Windows 7/8/8.1 or Windows Server 2008 R2/2012/2012 R2. The minimum OS version that Visual Studio 2026 and later can target is Windows 10 or later and Windows Server 2016 or later.
+<sup>e</sup> Visual Studio 2026 18.0 and later no longer support targeting Windows 7/8/8.1 or Windows Server 2008 R2/2012/2012 R2. Visual Studio 2026 and later target Windows 10 or later and Windows Server 2016 or later.
 
 For information about how to set the target platform configuration, see [How to: Configure Visual C++ projects to target 64-bit, x64 platforms](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
 
