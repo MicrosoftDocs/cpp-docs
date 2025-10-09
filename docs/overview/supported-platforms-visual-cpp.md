@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Supported Platforms (Visual C++)"
 title: "Supported Platforms (Visual C++)"
-ms.date: 11/09/2021
+ms.date: 10/09/2025
 ms.service: "visual-cpp"
 ms.subservice: "tools"
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
@@ -16,7 +16,7 @@ Apps built by using Visual Studio can be targeted to various platforms.
 |--|--|--|--|--|
 | Windows XP <sup>b</sup> | X | X |  |  |
 | Windows Vista | X | X |  |  |
-| Windows 7 | X | X |  |  |
+| Windows 7 | X<sup>e</sup> | X<sup>e</sup> |  |  |
 | Windows 8 | X | X | X |  |
 | Windows 8.1 | X | X | X |  |
 | Windows 10 | X | X | X | X |
@@ -38,6 +38,8 @@ Apps built by using Visual Studio can be targeted to various platforms.
 <sup>c</sup> You can install the **Mobile development with C++** workload in the installer for Visual Studio 2017 and later. In Visual Studio 2015 setup, choose the optional **Visual C++ for Cross Platform Mobile Development** component to target iOS or Android platforms. For instructions, see [Install Visual C++ for Cross-Platform Mobile Development](/visualstudio/cross-platform/install-visual-cpp-for-cross-platform-mobile-development). To build iOS code, you must have a Mac computer and meet other requirements. For a list of prerequisites and installation instructions, see [Install And Configure Tools to Build using iOS](/visualstudio/cross-platform/install-and-configure-tools-to-build-using-ios). You can build x86 or ARM code to match the target hardware. Use x86 configurations to build for some Android devices. Use ARM configurations to build for iOS devices and most Android devices.
 
 <sup>d</sup> You can install the **Linux development with C++** workload in the installer for Visual Studio 2017 and later to target Linux platforms. For instructions, see [Download, install, and setup the Linux Workload](../linux/download-install-and-setup-the-linux-development-workload.md). This toolset compiles your executable on the target machine, so you can build for any supported architecture.
+
+<sup>e</sup> Visual Studio 2026 18.0 and later no longer support targeting Windows 7 and Windows Server 2008 R2, which have stopped receiving security updates.
 
 For information about how to set the target platform configuration, see [How to: Configure Visual C++ projects to target 64-bit, x64 platforms](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
 
