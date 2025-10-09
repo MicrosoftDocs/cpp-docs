@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4366"
 title: "Compiler Warning (level 4) C4366"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4366"
+ms.date: 11/04/2016
 f1_keywords: ["C4366"]
 helpviewer_keywords: ["C4366"]
-ms.assetid: 65d2942f-3741-42f4-adf2-4920d5a055ca
 ---
 # Compiler Warning (level 4) C4366
 
-The result of the unary 'operator' operator may be unaligned
+> The result of the unary 'operator' operator may be unaligned
+
+## Remarks
 
 If a structure member could ever be unaligned because of packing, the compiler will warn when that member's address is assigned to an aligned pointer. By default, all pointers are aligned.
 
@@ -18,7 +19,7 @@ For more information, see __unaligned and [pack](../../preprocessor/pack.md).
 
 ## Example
 
-The following sample generates C4366.
+The following example generates C4366.
 
 ```cpp
 // C4366.cpp

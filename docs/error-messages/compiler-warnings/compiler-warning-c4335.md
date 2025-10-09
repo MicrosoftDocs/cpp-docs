@@ -1,13 +1,15 @@
 ---
+title: "Compiler Warning (level 1) C4335"
 description: "Learn more about: Compiler Warning (level 1) C4335"
-title: "Compiler Warning(level 1)  C4335"
-ms.date: "11/04/2016"
+ms.date: 11/04/2016
 f1_keywords: ["C4335"]
 helpviewer_keywords: ["C4335"]
 ---
 # Compiler Warning (level 1) C4335
 
 > Mac file format detected: please convert the source file to either DOS or UNIX format
+
+## Remarks
 
 The line termination character of the first line of a source file is the old Macintosh style ('\r') as opposed to UNIX ('\n') or DOS ('\r\n').
 
@@ -17,7 +19,7 @@ One way to generate files in Macintosh format is by using the **Advanced Save Op
 
 ## Example
 
-The following sample generates C4335.
+The following example generates C4335:
 
 ```cpp
 // C4335 expected

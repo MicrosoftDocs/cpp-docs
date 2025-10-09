@@ -19,6 +19,9 @@ One shadow byte describes how many bytes are currently accessible as follows:
 - 1-7 means one to seven bytes
 - Negative numbers encode context for the runtime to use for reporting diagnostics.
 
+> [!NOTE]
+> By default, entries in the shadow memory are zero-initialized. Therefore, ASan assumes that the memory is _addressable_ by default, i.e. valid to read and write. The shadow bytes will be populated with non-zero values as the program executes and the lifetime of variables and other allocations come to an end.
+
 ### Shadow byte legend
 
 Consider this shadow byte legend where all negative numbers are defined:

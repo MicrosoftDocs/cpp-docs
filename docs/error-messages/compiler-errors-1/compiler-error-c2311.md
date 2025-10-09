@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2311"
 title: "Compiler Error C2311"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2311"
+ms.date: 11/04/2016
 f1_keywords: ["C2311"]
 helpviewer_keywords: ["C2311"]
-ms.assetid: 1aff9bd5-ed0b-4db6-bbc0-01ac89850cf2
 ---
 # Compiler Error C2311
 
-'exception' : is caught by '...' on line number
+> 'exception' : is caught by '...' on line number
+
+## Remarks
 
 The catch handler for the ellipsis (...) must be the last handler for a throw.
 
-The following sample generates C2311:
+## Example
+
+The following example generates C2311:
 
 ```cpp
 // C2311.cpp

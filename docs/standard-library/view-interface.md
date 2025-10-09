@@ -1,9 +1,9 @@
 ---
-title: view_interface class (C++ Standard Library)
+title: "view_interface class (C++ Standard Library)"
 description: "API reference for the Standard Template Library (STL) <ranges> view_interface class, which is the base class for the ranges view classes."
 ms.date: 10/07/2022
 f1_keywords: ["ranges/std::view_interface::back", "ranges/std::view_interface::data","ranges/std::view_interface::empty", "ranges/std::view_interface::front", "ranges/std::view_interface::size", "ranges/std::view_interface::operator[]", "ranges/std::view_interface::operator bool"]
-helpviewer_keywords: ["std::ranges::view_interface [C++]", "std::ranges::view_interface [C++], back",  "std::ranges::view_interface [C++], data", "std::ranges::view_interface [C++], empty", "std::ranges::view_interface [C++], front", "std::ranges::view_interface [C++], size", "std::ranges::view_interface [C++], operator[]", "std::ranges::view_interface [C++], operator bool"]
+helpviewer_keywords: ["std::ranges::view_interface [C++]", "std::ranges::view_interface [C++], back", "std::ranges::view_interface [C++], data", "std::ranges::view_interface [C++], empty", "std::ranges::view_interface [C++], front", "std::ranges::view_interface [C++], size", "std::ranges::view_interface [C++], operator[]", "std::ranges::view_interface [C++], operator bool"]
 dev_langs: ["C++"]
 ---
 # `view_interface` class (C++ Standard Library)

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /Fe (Name EXE File)"
 title: "/Fe (Name EXE File)"
-ms.date: "11/04/2016"
+description: "Learn more about: /Fe (Name EXE File)"
+ms.date: 11/04/2016
 f1_keywords: ["/fe"]
 helpviewer_keywords: ["-Fe compiler option [C++]", "executable files, renaming", "rename file compiler option [C++]", "/Fe compiler option [C++]", "Fe compiler option [C++]"]
-ms.assetid: 49f594fd-5e94-45fe-a1bf-7c9f2abb6437
 ---
 # /Fe (Name EXE File)
 
@@ -44,13 +43,13 @@ If you specify the [/c (Compile Without Linking)](c-compile-without-linking.md) 
 
 The following command line compiles and links all C source files in the current directory. The resulting executable file is named PROCESS.exe and is created in the directory "C:\Users\User Name\repos\My Project\bin".
 
-```
+```cmd
 CL /Fe"C:\Users\User Name\repos\My Project\bin\PROCESS" *.C
 ```
 
 The following command line creates an executable file in `C:\BIN` with the same base name as the first source file in the current directory:
 
-```
+```cmd
 CL /FeC:\BIN\ *.C
 ```
 

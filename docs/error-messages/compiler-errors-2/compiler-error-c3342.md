@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3342"
 title: "Compiler Error C3342"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3342"
+ms.date: 11/04/2016
 f1_keywords: ["C3342"]
 helpviewer_keywords: ["C3342"]
-ms.assetid: 5c6d784f-bebe-4f7e-8615-44ca6f78bfba
 ---
 # Compiler Error C3342
 
-'attribute': ambiguous attribute
+> 'attribute': ambiguous attribute
+
+## Remarks
 
 The compiler found more than one definition of an attribute.
 
@@ -18,7 +19,7 @@ For more information, see [User-Defined Attributes](../../extensions/user-define
 
 ## Example
 
-The following sample generates C3342.
+The following example generates C3342.
 
 ```cpp
 // C3342.cpp

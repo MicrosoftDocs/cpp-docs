@@ -1,13 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2385"
 title: "Compiler Error C2385"
-ms.date: "1/19/2024"
+description: "Learn more about: Compiler Error C2385"
+ms.date: 1/19/2024
 f1_keywords: ["C2385"]
 helpviewer_keywords: ["C2385"]
 ---
 # Compiler Error C2385
 
 > ambiguous access of 'member'
+
+## Remarks
 
 A member is inherited from more than one base type, making unqualified access to that member ambiguous. To resolve this error:
 
@@ -18,7 +20,7 @@ A member is inherited from more than one base type, making unqualified access to
 
 ## Example
 
-The following sample generates C2385:
+The following example generates C2385:
 
 ```cpp
 // C2385.cpp

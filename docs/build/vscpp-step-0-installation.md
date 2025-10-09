@@ -1,13 +1,14 @@
 ---
 title: Install C and C++ support in Visual Studio
 description: "Learn how to install Visual Studio with support for Microsoft C and C++ and related workloads."
-ms.date: 03/18/2025
+ms.date: 09/09/2025
 ms.topic: tutorial
 ms.devlang: "cpp"
 ms.custom:
   - vs-acquisition
   - intro-installation
   - sfi-image-nochange
+  - copilot-scenario-highlight
 ---
 # Install C and C++ support in Visual Studio
 
@@ -113,6 +114,21 @@ You can reduce the installation footprint of Visual Studio on your system drive.
    You can also filter your search for a specific programming language by using the **Language** dropdown list. You can filter by using the **Platform** list and the **Project type** list, too.
 
 1. Visual Studio opens your new project, and you're ready to code!
+
+### Step 9 - Install GitHub Copilot
+
+You can use GitHub Copilot in Visual Studio to help with your C++ development. Copilot is an AI-powered coding assistant that helps you write code faster, reduce errors, and explore new solutions.
+
+Some benefits of using Copilot for your C++ coding scenarios:
+- Generate entire C++ functions or classes as you type.
+- Suggest code completions based on plain-language comments or prompts.
+- Get help with complex algorithms, data structures, and standard library usage.
+- Learn new APIs and modern C++ patterns through in-context examples.
+- Receive context-aware suggestions based on your comments or code.
+- Debug errors in your code.
+- Simplify and refactor existing code.
+
+To install GitHub Copilot, see [Manage GitHub Copilot installation and state](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
 
 ::: moniker-end
 

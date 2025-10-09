@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2504"
 title: "Compiler Error C2504"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2504"
+ms.date: 11/04/2016
 f1_keywords: ["C2504"]
 helpviewer_keywords: ["C2504"]
-ms.assetid: c9e002a6-a4ee-4ba7-970e-edf4adb83692
 ---
 # Compiler Error C2504
 
-'class' : base class undefined
+> 'class' : base class undefined
+
+## Remarks
 
 The base class is declared but never defined. Possible causes:
 
@@ -16,7 +17,9 @@ The base class is declared but never defined. Possible causes:
 
 1. External base class not declared with [extern](../../cpp/extern-cpp.md).
 
-The following sample generates C2504:
+## Example
+
+The following example generates C2504:
 
 ```cpp
 // C2504.cpp

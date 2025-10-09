@@ -3,9 +3,10 @@ title: "CMake projects in Visual Studio"
 description: "Learn how to create and build C++ projects using CMake in Visual Studio."
 ms.date: 03/18/2025
 ms.topic: concept-article
-f1_keywords: ["VS.ToolsOptionsPages.CMake.General", "VS.ToolsOptionsPages.CMake.LanguageServices"] 
+f1_keywords: ["VS.ToolsOptionsPages.CMake.General", "VS.ToolsOptionsPages.CMake.LanguageServices"]
 ms.custom: sfi-image-nochange
 ---
+
 # CMake projects in Visual Studio
 
 [CMake](https://cmake.org) is a cross-platform, open-source tool for defining build processes that run on multiple platforms. This article assumes you're familiar with CMake. For more information about CMake, see the [CMake documentation](https://cmake.org/cmake/help/latest/index.html#). The [CMake tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html#guide:CMake%20Tutorial) is a good starting point to learn more.
@@ -49,6 +50,10 @@ The dialog offers these options: clone a repository, open a project or solution,
 Once CMake cache generation has succeeded, you can also view your projects organized logically by targets. Choose the **Select View** button on the **Solution Explorer** toolbar. From the list in **Solution Explorer - Views**, select **CMake Targets View** and press **Enter** to open the targets view:
 
 :::image type="content" source="media/cmake-targets-view2.png" alt-text="Screenshot of the Solution Explorer Views window. The folder view is open. The C Make Targets View option is highlighted.":::
+
+You can also switch views by right-clicking on any file or folder in your Solution Explorer and selecting **Switch to CMake Targets View**.
+
+![A screenshot of right-clicking a file or folder in the Solution explorer. The context menu item to Switch to CMake Targets View is visible.](media/visual-studio-switch-cmake-targets-view.png)
 
 Choose the **Show All Files** button at the top of **Solution Explorer** to see all the CMake-generated output in the *`out/build/<config>`* folders.
 
@@ -148,7 +153,7 @@ When you build for Windows using the MSVC compiler, CMake projects have support 
 
 When you build for Windows with the MSVC compiler, CMake projects have support for Edit and Continue. Add the following code to your *`CMakeLists.txt`* file to enable Edit and Continue.
 
-```
+```txt
 if(MSVC)
   target_compile_options(<target> PUBLIC "/ZI")
   target_link_options(<target> PUBLIC "/INCREMENTAL")

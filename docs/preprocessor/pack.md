@@ -1,6 +1,6 @@
 ---
-description: "Learn more about the pack pragma directive in Microsoft C/C++"
 title: "pack pragma"
+description: "Learn more about the pack pragma directive in Microsoft C/C++"
 ms.date: 01/22/2021
 f1_keywords: ["pack_CPP", "vc-pragma.pack"]
 helpviewer_keywords: ["pragma, pack", "pack pragma"]
@@ -107,7 +107,7 @@ The following sample shows how to use the *push*, *pop*, and *show* syntax.
 
 // pop to the identifier and then set
 // the value of the current packing alignment:
-#pragma pack(pop, r1, 2)   // n = 2 , stack popped
+#pragma pack(pop, r1, 2)   // n = 2, stack popped
 #pragma pack(show)   // C4810
 ```
 

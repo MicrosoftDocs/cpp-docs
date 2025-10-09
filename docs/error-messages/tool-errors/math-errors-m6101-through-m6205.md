@@ -1,5 +1,5 @@
 ---
-title: "Learn about math errors M6101 through M6205"
+title: "Math errors (M6101 through M6205)"
 description: "Learn more about: Math errors (Mxxxx)"
 ms.date: 04/16/2019
 ---

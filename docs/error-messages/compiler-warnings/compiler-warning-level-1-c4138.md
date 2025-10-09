@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4138"
 title: "Compiler Warning (level 1) C4138"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4138"
+ms.date: 11/04/2016
 f1_keywords: ["C4138"]
 helpviewer_keywords: ["C4138"]
-ms.assetid: 65ebf929-bba0-4237-923b-c1b66adfe17d
 ---
 # Compiler Warning (level 1) C4138
 
-'*/' found outside of comment
+> '*/' found outside of comment
+
+## Remarks
 
 The closing-comment delimiter is not preceded by an opening-comment delimiter. The compiler assumes a space between the asterisk (<strong>\*</strong>) and the forward slash (/).
 
 ## Example
+
+The following example generates C4138:
 
 ```cpp
 // C4138a.cpp

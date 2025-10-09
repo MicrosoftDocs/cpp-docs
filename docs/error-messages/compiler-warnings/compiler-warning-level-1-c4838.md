@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4838"
 title: "Compiler Warning (level 1) C4838"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4838"
+ms.date: 11/04/2016
 f1_keywords: ["C4838"]
 helpviewer_keywords: ["C4838"]
-ms.assetid: fea07924-5feb-4ed4-99b5-1a8c41d28db6
 ---
 # Compiler Warning (level 1) C4838
 
-conversion from 'type_1' to 'type_2' requires a narrowing conversion
+> conversion from 'type_1' to 'type_2' requires a narrowing conversion
+
+## Remarks
 
 An implicit narrowing conversion was found when using aggregate or list initialization.
 
@@ -16,7 +17,9 @@ The C language allows implicit narrowing conversions in assignments and initiali
 
 A narrowing conversion can be okay when you know the possible range of converted values can fit in the target. In this case, you know more than the compiler does. If you make a narrowing conversion intentionally, make your intentions explicit by using a static cast. Otherwise, this warning message almost always indicates that you have a bug in your code. You can fix it by making sure the objects you initialize have types that are large enough to handle the inputs.
 
-The following sample generates C4838 and shows one way to fix it:
+## Example
+
+The following example generates C4838 and shows one way to fix it:
 
 ```cpp
 // C4838.cpp -- C++ narrowing conversion diagnostics

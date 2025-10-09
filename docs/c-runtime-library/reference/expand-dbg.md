@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: _expand_dbg"
 title: "_expand_dbg"
-ms.date: "11/04/2016"
+description: "Learn more about: _expand_dbg"
+ms.date: 11/04/2016
 api_name: ["_expand_dbg"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["expand_dbg", "_expand_dbg"]
 helpviewer_keywords: ["memory blocks, changing size", "expand_dbg function", "_expand_dbg function"]
-ms.assetid: dc58c91f-72a8-48c6-b643-fe130fb6c1fd
 ---
 # `_expand_dbg`
 
@@ -51,7 +50,7 @@ On successful completion, **`_expand_dbg`** returns a pointer to the resized mem
 
 ## Remarks
 
-The **`_expand_dbg`** function is a debug version of the _[`expand`](expand.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **`_expand_dbg`** is reduced to a call to `_expand`. Both `_expand` and **`_expand_dbg`** resize a memory block in the base heap, but **`_expand_dbg`** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *`filename`*/*`lineNumber`* information to determine the origin of allocation requests.
+The **`_expand_dbg`** function is a debug version of the [`_expand`](expand.md) function. When [`_DEBUG`](../debug.md) isn't defined, each call to **`_expand_dbg`** is reduced to a call to `_expand`. Both `_expand` and **`_expand_dbg`** resize a memory block in the base heap, but **`_expand_dbg`** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *`filename`*/*`lineNumber`* information to determine the origin of allocation requests.
 
 **`_expand_dbg`** resizes the specified memory block with slightly more space than the requested *`newSize`*. *`newSize`* might be greater or less than the size of the originally allocated memory block. The extra space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The resize is accomplished by either expanding or contracting the original memory block. **`_expand_dbg`** doesn't move the memory block, as does the [`_realloc_dbg`](realloc-dbg.md) function.
 

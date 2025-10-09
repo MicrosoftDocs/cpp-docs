@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4460"
 title: "Compiler Warning (level 4) C4460"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4460"
+ms.date: 11/04/2016
 f1_keywords: ["C4460"]
 helpviewer_keywords: ["C4460"]
-ms.assetid: c97ac1c9-598d-479e-bfff-c993690c4f3d
 ---
 # Compiler Warning (level 4) C4460
 
-WinRT or CLR operator 'operator', has parameter passed by reference. WinRT or CLR operator 'operator' has different semantics from C++ operator 'operator', did you intend to pass by value?
+> WinRT or CLR operator 'operator', has parameter passed by reference. WinRT or CLR operator 'operator' has different semantics from C++ operator 'operator', did you intend to pass by value?
+
+## Remarks
 
 You passed a value by reference to a user-defined Windows Runtime or CLR operator. If the value is changed inside the function, note that the value returned after the function call will be assigned the return value of the function. In standard C++, the changed value is reflected after the function call.
 
 ## Example
 
-The following sample generates C4460 and shows how to fix it.
+The following example generates C4460 and shows how to fix it.
 
 ```cpp
 // C4460.cpp

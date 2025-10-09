@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4678"
 title: "Compiler Warning (level 1) C4678"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4678"
+ms.date: 11/04/2016
 f1_keywords: ["C4678"]
 helpviewer_keywords: ["C4678"]
-ms.assetid: 0c588f34-595d-4e5c-9470-8723fca2cc06
 ---
 # Compiler Warning (level 1) C4678
 
-base class 'base_type' is less accessible than 'derived_type'
+> base class 'base_type' is less accessible than 'derived_type'
+
+## Remarks
 
 A public type derives from a private type. If the public type is instantiated in a referenced assembly, members of the private base type will not be accessible.
 

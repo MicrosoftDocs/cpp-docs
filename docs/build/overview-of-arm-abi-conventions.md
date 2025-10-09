@@ -2,11 +2,13 @@
 description: "Learn more about: Overview of ARM32 ABI Conventions"
 title: "Overview of ARM ABI Conventions"
 ms.date: "07/11/2018"
-ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
 ---
 # Overview of ARM32 ABI Conventions
 
 The application binary interface (ABI) for code compiled for Windows on ARM processors is based on the standard ARM EABI. This article highlights key differences between Windows on ARM and the standard. This document covers the ARM32 ABI. For information about the ARM64 ABI, see [Overview of ARM64 ABI conventions](arm64-windows-abi-conventions.md). For more information about the standard ARM EABI, see [Application Binary Interface (ABI) for the ARM Architecture](https://github.com/ARM-software/abi-aa) (external link).
+
+> [!NOTE]
+> Using the Microsoft Visual C++ (MSVC) build tools to target ARM32 is deprecated starting with Visual Studio 2026. If you need to target ARM32, use the Visual Studio 2022 v143 build tools.
 
 ## Base Requirements
 
@@ -124,7 +126,7 @@ Initialization is performed exactly once, before argument processing begins:
 
 For each argument in the list, the first matching rule from the following list is applied:
 
-1. If the argument is a composite type whose size cannot be statically determined by both the caller and the callee, the argument is copied to memory and replaced by a pointer to the copy.
+1. If the argument is a composite type whose size can't be statically determined by both the caller and the callee, the argument is copied to memory and replaced by a pointer to the copy.
 
 1. If the argument is a byte or 16-bit half-word, then it is zero-extended or sign-extended to a 32-bit full word and treated as a 4-byte argument.
 
@@ -136,11 +138,11 @@ For each argument in the list, the following rules are applied in turn until the
 
 1. If the argument is a VFP type and there are enough consecutive unallocated VFP registers of the appropriate type, then the argument is allocated to the lowest-numbered sequence of such registers.
 
-1. If the argument is a VFP type, all remaining unallocated registers are marked as unavailable. The NSAA is adjusted upwards until it is correctly aligned for the argument type and the argument is copied to the stack at the adjusted NSAA. The NSAA is then incremented by the size of the argument.
+1. If the argument is a VFP type, all remaining unallocated registers are marked as unavailable. The NSAA is adjusted upwards until it's correctly aligned for the argument type and the argument is copied to the stack at the adjusted NSAA. The NSAA is then incremented by the size of the argument.
 
 1. If the argument requires 8-byte alignment, the NCRN is rounded up to the next even register number.
 
-1. If the size of the argument in 32-bit words is not more than r4 minus NCRN, the argument is copied into core registers, starting at the NCRN, with the least significant bits occupying the lower-numbered registers. The NCRN is incremented by the number of registers used.
+1. If the size of the argument in 32-bit words isn't more than r4 minus NCRN, the argument is copied into core registers, starting at the NCRN, with the least significant bits occupying the lower-numbered registers. The NCRN is incremented by the number of registers used.
 
 1. If the NCRN is less than r4 and the NSAA is equal to the SP, the argument is split between core registers and the stack. The first part of the argument is copied into the core registers, starting at the NCRN, up to and including r3. The rest of the argument is copied onto the stack, starting at the NSAA. The NCRN is set to r4 and the NSAA is incremented by the size of the argument minus the amount passed in registers.
 
@@ -148,7 +150,7 @@ For each argument in the list, the following rules are applied in turn until the
 
 1. The argument is copied into memory at the NSAA. The NSAA is incremented by the size of the argument.
 
-The VFP registers aren't used for variadic functions, and Stage C rules 1 and 2 are ignored. It means that a variadic function can begin with an optional push {r0-r3} to prepend the register arguments to any additional arguments passed by the caller, and then access the entire argument list directly from the stack.
+The VFP registers aren't used for variadic functions, and Stage C rules 1 and 2 are ignored. It means that a variadic function can begin with an optional push {r0-r3} to prepend the register arguments to any other arguments passed by the caller, and then access the entire argument list directly from the stack.
 
 Integer type values are returned in r0, optionally extended to r1 for 64-bit return values. VFP/NEON floating-point or SIMD type values are returned in s0, d0, or q0, as appropriate.
 
@@ -158,7 +160,7 @@ The stack must always remain 4-byte aligned, and must be 8-byte aligned at any f
 
 Functions that have to use a frame pointer—for example, functions that call `alloca` or that change the stack pointer dynamically—must set up the frame pointer in r11 in the function prologue and leave it unchanged until the epilogue. Functions that don't require a frame pointer must perform all stack updates in the prologue and leave the stack pointer unchanged until the epilogue.
 
-Functions that allocate 4 KB or more on the stack must ensure that each page prior to the final page is touched in order. This order ensures that no code can "leap over" the guard pages that Windows uses to expand the stack. Typically, the expansion is done by the `__chkstk` helper, which is passed the total stack allocation in bytes divided by 4 in r4, and which returns the final stack allocation amount in bytes back in r4.
+Functions that allocate 4 KB or more on the stack must ensure that each page before the final page is touched in order. This order ensures that no code can "leap over" the guard pages that Windows uses to expand the stack. Typically, the expansion is done by the `__chkstk` helper, which is passed the total stack allocation in bytes divided by 4 in r4, and which returns the final stack allocation amount in bytes back in r4.
 
 ### Red zone
 

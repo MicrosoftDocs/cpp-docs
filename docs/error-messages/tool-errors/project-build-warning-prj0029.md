@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Project Build Warning PRJ0029"
 title: "Project Build Warning PRJ0029"
-ms.date: "11/04/2016"
+description: "Learn more about: Project Build Warning PRJ0029"
+ms.date: 11/04/2016
 f1_keywords: ["PRJ0029"]
 helpviewer_keywords: ["PRJ0029"]
-ms.assetid: f02c09c6-09f3-4d44-8cd4-9a25336be1ea
 ---
 # Project Build Warning PRJ0029
 
-The 'Outputs' property for the project-level custom build step is not set. The custom build step will be skipped.
+> The 'Outputs' property for the project-level custom build step is not set. The custom build step will be skipped.
+
+## Remarks
 
 A custom build step was not executed because no output was specified.
 

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4213"
 title: "Compiler Warning (level 4) C4213"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4213"
+ms.date: 11/04/2016
 f1_keywords: ["C4213"]
 helpviewer_keywords: ["C4213"]
-ms.assetid: 59fc3f61-ebd2-499e-99d7-f57bec11eda1
 ---
 # Compiler Warning (level 4) C4213
 
-nonstandard extension used : cast on l-value
+> nonstandard extension used : cast on l-value
+
+## Remarks
 
 With the default Microsoft extensions (/Ze), you can use casts on the left side of an assignment statement.
 
 ## Example
+
+The following example generates C4213:
 
 ```c
 // C4213.c
