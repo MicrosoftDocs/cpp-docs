@@ -125,18 +125,11 @@ The following snippet shows a project configuration. In this example, 'Debug|x64
 The IDE expects to find a project configuration for any combination of `Configuration` and `Platform` values used in all `ProjectConfiguration` items. Often, it means that a project might have meaningless project configurations to fulfill this requirement. For instance, if a project has these configurations:
 
 - Debug|Win32
-
+- Retail|x64
+- Debug|x64
 - Retail|Win32
 
-- Special 32-bit Optimization|Win32
-
-then it must also have these configurations, even though "Special 32-bit Optimization" is meaningless for x64:
-
-- Debug|x64
-
-- Retail|x64
-
-- Special 32-bit Optimization|x64
+Then if you add a new configuration to the project, say "Special 32-bit Optimization|Win32", then you must also add the configuration "Special 32-bit Optimization|x64", even though "Special 32-bit Optimization" is meaningless for x64.
 
 You can disable the build and deploy commands for any configuration in the **Solution Configuration Manager**.
 
