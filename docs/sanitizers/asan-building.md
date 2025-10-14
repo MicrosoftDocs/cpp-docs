@@ -35,18 +35,24 @@ int main() {
 The [`__declspec(no_sanitize_address)`](../cpp/no-sanitize-address.md) specifier can be used to selectively disable the sanitizer on functions, local variables, or global variables. This `__declspec` affects _compiler_ behavior, not _runtime_ behavior.
 
 ```cpp
-__declspec(no_sanitize_address)
+#ifdef __SANITIZE_ADDRESS__
+#define NO_SANITIZE_ADDRESS __declspec(no_sanitize_address)
+#else
+#define NO_SANITIZE_ADDRESS
+#endif
+
+NO_SANITIZE_ADDRESS
 void test1() {
     int x[100];
     x[100] = 5; // ASan exception not caught
 }
 
 void test2() {
-    __declspec(no_sanitize_address) int x[100];
+    NO_SANITIZE_ADDRESS int x[100];
     x[100] = 5; // ASan exception not caught
 }
 
-__declspec(no_sanitize_address) int g[100];
+NO_SANITIZE_ADDRESS int g[100];
 void test3() {
     g[100] = 5; // ASan exception not caught
 }
