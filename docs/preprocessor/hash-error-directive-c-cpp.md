@@ -4,11 +4,10 @@ title: "#error directive (C/C++)"
 ms.date: "08/29/2019"
 f1_keywords: ["#error"]
 helpviewer_keywords: ["#error directive", "preprocessor, directives", "error directive (#error directive)"]
-ms.assetid: d550a802-ff19-4347-9597-688935d23b2b
 ---
 # #error directive (C/C++)
 
-The **#error** directive emits a user-specified error message at compile time, and then terminates the compilation.
+The `#error` directive emits a user-specified error message at compile time. Then it terminates the compilation.
 
 ## Syntax
 
@@ -26,4 +25,5 @@ The error message that this directive emits includes the *token-string* paramete
 
 ## See also
 
-[Preprocessor directives](../preprocessor/preprocessor-directives.md)
+[Preprocessor directives](../preprocessor/preprocessor-directives.md)\
+[#warning directive](../preprocessor/hash-warning-directive-c-cpp.md)
