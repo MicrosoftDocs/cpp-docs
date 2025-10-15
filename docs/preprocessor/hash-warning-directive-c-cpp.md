@@ -15,7 +15,8 @@ The **#warning** directive emits a user-specified warning message at compile tim
 
 ## Remarks
 
-The warning message is the *token-string* parameter. The *token-string* parameter isn't subject to macro expansion and can be optionally enclosed in quotes.\
+The warning message is the *token-string* parameter. The *token-string* parameter isn't subject to macro expansion and can be optionally enclosed in quotes.
+
 Use this directive to inform the developer of a nonfatal issue or to communicate other important information during compilation.
 
 The following example shows how to use the **#warning** directive:
