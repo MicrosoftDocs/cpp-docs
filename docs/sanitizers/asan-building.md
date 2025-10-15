@@ -36,6 +36,9 @@ The [`__declspec(no_sanitize_address)`](../cpp/no-sanitize-address.md) specifier
 
 ```cpp
 #ifdef __SANITIZE_ADDRESS__
+// `no_sanitize_address` is only defined when compiling with ASan.
+// You can guard against this by checking if `__SANITIZE_ADDRESS__`
+// is defined.
 #define NO_SANITIZE_ADDRESS __declspec(no_sanitize_address)
 #else
 #define NO_SANITIZE_ADDRESS
