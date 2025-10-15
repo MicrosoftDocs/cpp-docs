@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: #warning directive (C/C++)"
 title: "#warning directive (C/C++)"
-ms.date: "11/08/2023"
+ms.date: 10/15/2025
 f1_keywords: ["#warning"]
 helpviewer_keywords: ["#warning directive", "preprocessor, directives", "warning directive (#warning directive)"]
 ---
 # #warning directive (C/C++)
 
-The **#warning** directive emits a user-specified warning message at compile time, and doesn't stop compilation. This directive is available starting in C23 and C++23.
+The **#warning** directive emits a user-specified warning message at compile time. It doesn't stop compilation. This directive is available starting in C23 and C++23.
 
 ## Syntax
 
@@ -15,7 +15,10 @@ The **#warning** directive emits a user-specified warning message at compile tim
 
 ## Remarks
 
-The warning message that this directive emits includes the *token-string* parameter. The *token-string* parameter isn't subject to macro expansion and can be optionally enclosed in quotes. This directive is used to inform the developer of a nonfatal issue that may occur, or to disseminate important information. The following example shows how to use the **#warning** directive:
+The warning message is the *token-string* parameter. The *token-string* parameter isn't subject to macro expansion and can be optionally enclosed in quotes.\
+Use this directive to inform the developer of a nonfatal issue or to communicate other important information during compilation.
+
+The following example shows how to use the **#warning** directive:
 
 ```cpp
 #if defined(_LEGACY_FEATURE_FLAG)
