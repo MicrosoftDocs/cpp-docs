@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Import the standard library (STL) using modules from the command line (C++)"
-description: "Learn how to import the C++ standard library (STL) using modules from the command line"
+description: "Learn how to import the C++ standard library (STL) using modules from the command line."
 ms.date: 01/29/2024
 ms.topic: "tutorial"
 author: "tylermsft"
