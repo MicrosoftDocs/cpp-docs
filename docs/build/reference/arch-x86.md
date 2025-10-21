@@ -1,9 +1,9 @@
 ---
 description: "Learn more about: /arch (x86)"
 title: "/arch (x86)"
-ms.date: 06/30/2022
-f1_keywords: ["/arch:IA32", "/arch:SSE", "/arch:SSE2", "/arch:AVX", "/arch:AVX2", "/arch:AVX512", "/arch:AVX10.1"]
-helpviewer_keywords: ["/arch:IA32 compiler option [C++]", "/arch:SSE compiler option [C++]", "/arch:SSE2 compiler option [C++]", "/arch:AVX compiler option [C++]", "/arch:AVX2 compiler option [C++]", "/arch:AVX512 compiler option [C++]", "/arch:AVX10.1 compiler option [C++]"]
+ms.date: 10/21/2025
+f1_keywords: ["/arch:IA32", "/arch:SSE", "/arch:SSE2", "/arch:AVX", "/arch:AVX2", "/arch:AVX512", "/arch:AVX10.1", /arch:AVX10.2"]
+helpviewer_keywords: ["/arch:IA32 compiler option [C++]", "/arch:SSE compiler option [C++]", "/arch:SSE2 compiler option [C++]", "/arch:AVX compiler option [C++]", "/arch:AVX2 compiler option [C++]", "/arch:AVX512 compiler option [C++]", "/arch:AVX10.1 compiler option [C++]", "/arch:AVX10.2 compiler option [C++]"]
 ---
 # `/arch` (x86)
 
@@ -11,7 +11,7 @@ Specifies the architecture for code generation on x86. These switches apply to t
 
 ## Syntax
 
-> **`/arch:`**\[**`IA32`**|**`SSE`**|**`SSE2`**|**`AVX`**|**`AVX2`**|**`AVX512`**|**`AVX10.1`**]
+> **`/arch:`**\[**`IA32`**|**`SSE`**|**`SSE2`**|**`AVX`**|**`AVX2`**|**`AVX512`**|**`AVX10.1`**|**`AVX10.2`**]
 
 ## Arguments
 
@@ -36,6 +36,9 @@ Enables Intel Advanced Vector Extensions 512.
 **`/arch:AVX10.1`**\
 Enables Intel Advanced Vector Extensions 10 version 1.
 
+**`/arch:AVX10.2`**\
+Enables Intel Advanced Vector Extensions 10 version 2.
+
 ## Remarks
 
 The **`/arch`** option enables or disables the use of certain instruction set extensions, particularly for vector calculation, available in processors from Intel and AMD. In general, more recently introduced processors may support extensions beyond the ones supported by older processors. You should consult the documentation for a particular processor or test for instruction set extension support using [`__cpuid`](../../intrinsics/cpuid-cpuidex.md) before executing code using an instruction set extension. You can also use the [`__check_isa_support`](../../intrinsics/check-isa-arch-support.md) intrinsic to check for more frequently used CPU features.
@@ -56,7 +59,10 @@ The **`/arch`** options refer to instruction set extensions with the following c
 
 - **`AVX512`** introduced another instruction encoding form that allows 512-bit vectors, masking, embedded rounding/broadcast, and new instructions. The default vector length for **`AVX512`** is 512 bits and can be changed to 256 bits using the [`/vlen`](vlen.md) flag.
 
-- **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256 bits and can be changed to 512 bits using the [`/vlen`](vlen.md) flag.
+- **`AVX10.1`** adds more instructions on top of **`AVX-512`**. The default vector length for **`AVX10.1`** is 256 bits and can be changed to 512 bits using the [`/vlen`](vlen.md) flag. This option was introduced in Visual Studio 2022 17.13.
+
+- **`AVX10.2`** expands the instruction set introduced in `AVX10.1`. The default vector length for **`AVX10.2`** is 256 bits and can be increased to 512 bits using the [`/vlen`](vlen.md) flag.
+`AVX10.2` adds instructions that are enhancements of legacy instructions and media acceleration instructions. For more information about the new instructions, see section 3.1.4 in the [Intel Advanced Vector Extensions 10.2 Architecture Specification](https://www.intel.com/content/www/us/en/content-details/856721/intel-advanced-vector-extensions-10-2-intel-avx10-2-architecture-specification.html) The AI related instructions in that document are supported via MSVC intrinsics instead of being directly emitted because their data types aren’t supported by MSVC. This compiler option was introduced in Visual Studio 2026.
 
 The optimizer chooses when and how to use vector instructions depending on which **`/arch`** is specified. Scalar floating-point computations are usually performed with SSE or AVX instructions when available. Some calling conventions specify passing floating-point arguments on the x87 stack, and as a result, your code may use a mixture of both x87 and SSE/AVX instructions for floating-point computations. Integer vector instructions can also be used for some 64-bit integer operations when available.
 

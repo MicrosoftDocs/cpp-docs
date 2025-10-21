@@ -9,6 +9,7 @@ helpviewer_keywords: ["specify vector length", "-vlen compiler option [C++]", "v
 
 Specifies the vector length for code generation on x86 and x64. For more information about **`/arch`** for x86 and x64, see [`/arch` (x86)](arch-x86.md) and [`/arch` (x64)](arch-x64.md).
 
+
 ## Syntax
 
 > **`/vlen=`**\[**`256`**|**`512`**]
@@ -28,14 +29,16 @@ Specify the default vector length for the selected **`/arch`** setting.
 
 ## Remarks
 
-If a specific **`/vlen`** value isn't specified, the default vector length depends on the **`/arch`** flag setting. The **`/vlen`** flag can override the default vector length specified by **`/arch:AVX512`** or **`/arch:AVX10.1`** flag. For example:
+This compiler option was introduced in Visual Studio 2022 17.13.
+
+If a specific **`/vlen`** value isn't specified, the default vector length depends on the **`/arch`** compiler option setting. The **`/vlen`** compiler option can override the default vector length specified by **`/arch:AVX512`**, **`/arch:AVX10.1`**, or **`/arch:AVX10.2`** compiler option. For example:
 
 - **`/arch:AVX512 /vlen=256`** overrides the default vector length of 512 bits specified by **`/arch:AVX512`** to be 256 bits.
 - **`/arch:AVX10.1 /vlen=512`** overrides the default vector length of 256 bits specified by **`/arch:AVX10.1`** to be 512 bits.
 
-When the specified **`/vlen`** value is incompatible with specified **`/arch`** flag, a warning is generated and default vector length for the **`/arch`** setting is used. For example:
+When the specified **`/vlen`** value is incompatible with specified **`/arch`** compiler option, a warning is generated and default vector length for the **`/arch`** setting is used. For example:
 
-- **`/arch:AVX2 /vlen=512`** generates a warning because AVX2 doesn't support 512-bit vectors. Vector length of 256 bits is used in this case.
+- **`/arch:AVX2 /vlen=512`** generates a warning because AVX2 doesn't support 512-bit vectors. A 256-bit vector length is used in this case.
 
 ### To set the `/vlen=256` or `/vlen=512` compiler option in Visual Studio
 
