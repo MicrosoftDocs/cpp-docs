@@ -10,11 +10,11 @@ ai-usage: ai-assisted
 
 # What's new for C++ in Visual Studio
 
-MSVC now ships on it's own cadence, independent of Visual Studio. For the latest updates to MSVC, see [What's new for MSVC](/cpp/overview/what-s-new-for-msvc.md).
+MSVC now ships on its own cadence, independent of Visual Studio. For the latest updates to MSVC, see [What's new for MSVC](/cpp/overview/what-s-new-for-msvc.md).
 
 # What's new for C++ in Visual Studio 2026
 
-VS 2026 18.0 and later no longer support targeting Windows 7 and Windows Server 2008 R2, which have stopped receiving security updates.
+VS 2026 18.0 and later no longer support targeting Windows 7/8/8.1 or Windows Server 2008 R2/2012/2012 R2, which have stopped receiving security updates.
 
 # What's new for C++ in Visual Studio 2022
 

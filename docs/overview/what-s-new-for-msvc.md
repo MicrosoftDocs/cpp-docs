@@ -9,7 +9,7 @@ ms.custom: intro-whats-new
 
 # What's new for MSVC
 
-Microsoft C++ (MSVC) brings many updates and fixes to the Microsoft C++ compiler and tools.
+Version x.y.z. brings many updates and fixes to the Microsoft C++ compiler and tools.
 
 - For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2022](/visualstudio/ide/whats-new-visual-studio-2022).
 - For information about version build dates, see [Visual Studio 2022 Release History](/visualstudio/releases/2022/release-history).
@@ -21,7 +21,7 @@ Microsoft C++ (MSVC) brings many updates and fixes to the Microsoft C++ compiler
 | For more information about | See |
 |---|---|
 | What's new for C++ developers | [What's New for C++ Developers in Visual Studio 2022 17.14](https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2022-17-14/) |
-| Standard Library (STL) merged C++26 and C++23 features, Language Working Group (LWG) issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.14](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1714) |
+| Standard Library (STL) merged C++26 and C++23 features, Language Working Group (CWG) issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog 17.14](https://github.com/microsoft/STL/wiki/Changelog#vs-2022-1714) |
 | C++ language updates  | [C++ Language Updates in MSVC in Visual Studio 2022 17.14](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-in-visual-studio-2022-17-14/) |
 | C++ language conformance improvements | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.14](cpp-conformance-improvements.md#improvements_1714) |
 

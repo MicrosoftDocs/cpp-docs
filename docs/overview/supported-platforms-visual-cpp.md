@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Supported Platforms (Visual C++)"
 title: "Supported Platforms (Visual C++)"
-ms.date: 10/09/2025
+ms.date: 10/17/2025
 ms.service: "visual-cpp"
 ms.subservice: "tools"
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
