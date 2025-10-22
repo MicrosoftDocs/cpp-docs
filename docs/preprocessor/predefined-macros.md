@@ -83,7 +83,7 @@ MSVC supports other predefined macros:
 
 - `__AVX512VL__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md), [`/arch:AVX10.1`](../build/reference/arch-x86.md), or [`/arch:AVX10.2`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX10_VER__` Defined as an integer that represents version of AVX10 when the [`/arch:AVX10.1`](../build/reference/arch-x86.md) or or [`/arch:AVX10.2`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX10_VER__` Defined as an integer that represents version of AVX10 when the [`/arch:AVX10.1`](../build/reference/arch-x86.md) or [`/arch:AVX10.2`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
 - `_CHAR_UNSIGNED` Defined as 1 if the default **`char`** type is unsigned. This value is defined when the [**`/J`** (Default char type is unsigned)](../build/reference/j-default-char-type-is-unsigned.md) compiler option is set. Otherwise, undefined.
 
