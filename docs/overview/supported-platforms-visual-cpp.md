@@ -38,7 +38,7 @@ Support for targeting 32-bit ARM was permanently removed in VS 2026 18.0.
 
 <sup>a</sup> ARM64 support is available in Visual Studio 2017 and later.
 
-<sup>b</sup> Visual Studio no longer supports targeting Windows XP. If you must target Windows XP, use the Windows XP platform toolsets included in Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, and Visual Studio 2012 Update 1 to build Windows XP and Windows Server 2003 projects.
+<sup>b</sup> Visual Studio no longer supports targeting Windows XP or Windows Server 2003. Use the Windows XP platform toolsets included in Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, and Visual Studio 2012 Update 1 to build Windows XP and Windows Server 2003 projects.
 
 <sup>c</sup> Visual Studio 2022 17.0 and later no longer support targeting Windows Vista or Windows Server 2008.
 
