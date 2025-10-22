@@ -19,10 +19,10 @@ Specifies the vector length for code generation on x86 and x64. For more informa
 ## Arguments
 
 **`/vlen=256`**\
-Specify a vector length of 256 bits for auto-vectorization and other optimizations.
+Specify a vector length of 256 bits for autovectorization and other optimizations.
 
 **`/vlen=512`**\
-Specify a vector length of 512 bits for auto-vectorization and other optimizations.
+Specify a vector length of 512 bits for autovectorization and other optimizations.
 
 **`/vlen`**\
 Specify the default vector length for the selected **`/arch`** setting.

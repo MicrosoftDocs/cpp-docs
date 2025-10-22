@@ -69,7 +69,7 @@ MSVC supports other predefined macros:
 
 - `__ATOM__` Defined as 1 when the [`/favor:ATOM`](../build/reference/favor-optimize-for-architecture-specifics.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX__` Defined as 1 when the [`/arch:AVX`](../build/reference/arch-x86.md), [`/arch:AVX2`](../build/reference/arch-x86.md), [`/arch:AVX512`](../build/reference/arch-x86.md), [`/arch:AVX10.1`](../build/reference/arch-x86.md) or [`/arch:AVX10.2`](../build/reference/arch-x86.md) compiler options are set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX__` Defined as 1 when the [`/arch:AVX`](../build/reference/arch-x86.md), [`/arch:AVX2`](../build/reference/arch-x86.md), [`/arch:AVX512`](../build/reference/arch-x86.md), [`/arch:AVX10.1`](../build/reference/arch-x86.md), or [`/arch:AVX10.2`](../build/reference/arch-x86.md) compiler options are set and the compiler target is x86 or x64. Otherwise, undefined.
 
 - `__AVX2__` Defined as 1 when the [`/arch:AVX2`](../build/reference/arch-x86.md), [`/arch:AVX512`](../build/reference/arch-x86.md), [`/arch:AVX10.1`](../build/reference/arch-x86.md), or [`/arch:AVX10.2`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
@@ -179,7 +179,7 @@ MSVC supports other predefined macros:
 
 - `__FUNCTION__` Defined as a string literal that contains the undecorated name of the enclosing function. The macro is defined only within a function. The `__FUNCTION__` macro isn't expanded if you use the [`/EP`](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [`/P`](../build/reference/p-preprocess-to-a-file.md) compiler option. For an example of usage, see the `__FUNCDNAME__` macro.
 
-- `_INTEGRAL_MAX_BITS` Defined as the integer literal value 64, the maximum size (in bits) for a non-vector integral type. This macro is always defined.
+- `_INTEGRAL_MAX_BITS` Defined as the integer literal value 64, the maximum size (in bits) for a nonvector integral type. This macro is always defined.
 
    ```cpp
    // integral_max_bits.cpp
