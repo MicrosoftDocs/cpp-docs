@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["UTIME/_utime", "UTIME/_utime32", "UTIME/_utime64", "UTIME/_wutime", "UTIME/_wutime32", "UTIME/_wutime64", "TCHAR/_tutime", "TCHAR/_tutime32", "TCHAR/_tutime64", "_utime", "_utime32", "_utime64", "_wutime", "_wutime32", "_wutime64", "_tutime", "_tutime32", "_tutime64"]
 helpviewer_keywords: ["tutime function", "utime32 function", "utime64 function", "_utime function", "_tutime32 function", "time [C++], file modification", "wutime function", "_wutime function", "_wutime32 function", "_tutime64 function", "_tutime function", "files [C++], modification time", "_wutime64 function", "_utime32 function", "utime function", "_utime64 function", "wutime64 function", "wutime32 function", "tutime64 function", "tutime32 function"]
-ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
 ---
 # `_utime`, `_utime32`, `_utime64`, `_wutime`, `_wutime32`, `_wutime64`
 
@@ -17,7 +16,7 @@ Set the file modification time.
 ## Syntax
 
 ```C
-int _utime(
+int _utime( // See note in remarks section about linkage
    const char *filename,
    struct _utimbuf *times
 );
@@ -29,7 +28,7 @@ int _utime64(
    const char *filename,
    struct __utimbuf64 *times
 );
-int _wutime(
+int _wutime( // See note in remarks section about linkage
    const wchar_t *filename,
    struct _utimbuf *times
 );
@@ -84,6 +83,11 @@ Specific versions of the `_utimbuf` structure (`__utimbuf32` and `__utimbuf64`) 
 **`_wutime`** is a wide-character version of **`_utime`**; the *`filename`* argument to **`_wutime`** is a wide-character string. These functions behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> When you use Windows SDK version 10.0.26100.6901 and Visual Studio 2026 or later together, `_utime` and `_wutime` are no longer `static inline` (internal linkage). Instead, they're `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard and improves compatibility with C++ modules.
 
 ### Generic-text routine mappings
 
