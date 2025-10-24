@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: __vectorcall"
 title: "__vectorcall"
-ms.date: "12/17/2018" 
+description: "Learn more about: __vectorcall"
+ms.date: 12/17/2018
 f1_keywords: ["__vectorcall_cpp", "__vectorcall", "_vectorcall"]
 helpviewer_keywords: ["__vectorcall keyword", "__vectorcall"]
-ms.assetid: 1c95ed59-86c6-4857-b4ed-10519193f851
 ---
 # __vectorcall
 

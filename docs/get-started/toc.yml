@@ -6,6 +6,8 @@ items:
       href: ../build/vscpp-step-0-installation.md
     - name: Visual Studio guided tour
       href: /visualstudio/get-started/visual-studio-ide
+    - name: Use AI to create a C++ console application in Visual Studio
+      href: ../build/use-github-copilot-create-cpp-console-app.md
     - name: Create and edit a C++ console app project
       href: ../build/vscpp-step-1-create.md
     - name: Build and run a C++ console app project

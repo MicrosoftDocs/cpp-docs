@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1200"
 title: "Linker Tools Error LNK1200"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1200"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1200"]
 helpviewer_keywords: ["LNK1200"]
-ms.assetid: 55771145-915e-4006-ac6c-ac702041eb2f
 ---
 # Linker Tools Error LNK1200
 
-error reading program database 'filename'
+> error reading program database 'filename'
+
+## Remarks
 
 The program database (PDB) could not be read.
 

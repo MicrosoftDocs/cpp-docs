@@ -17,7 +17,7 @@ To create the file, right-click on an executable file in **Solution Explorer** a
 | `args` | array | Specifies the command-line arguments passed to the launched program. |
 | `buildConfigurations` | array | A key-value pair that specifies the name of the build mode to apply the configurations. For example, `Debug` or `Release` and the configurations to use according to the selected build mode. |
 | `currentDir` | string | Specifies the full directory path to the Build Target. The directory is detected automatically unless this parameter is set. |
-| `cwd` | string | Full path to the directory on the remote system where the program will run. Defaults to `"${debugInfo.defaultWorkingDirectory}"` |
+| `cwd` | string | Full path to the directory on the remote system where the program will run. Defaults to `"${debugInfo.defaultWorkingDirectory}"`. |
 | `debugType` | string | Specifies the debugging mode according to the type of code (native, managed, or mixed). The mode is automatically detected unless this parameter is set. Allowed values: `"native"`, `"managed"`, `"mixed"`. |
 | `env` | array | Specifies a key-value list of custom environment variables. For example: `env:{"myEnv":"myVal"}`. |
 | `inheritEnvironments` | array | Specifies a set of environment variables inherited from multiple sources. You can define some variables in files like *`CMakeSettings.json`* or *`CppProperties.json`* and make them available to debug context.  **Visual Studio 16.4:** Specify environment variables on a per-target basis using the `env.VARIABLE_NAME` syntax. To unset a variable, set it to `"null"`. |
@@ -27,9 +27,9 @@ To create the file, right-click on an executable file in **Solution Explorer** a
 | `program` | string | The debug command to execute. Defaults to `"${debugInfo.fullTargetPath}"`. |
 | `project` | string | Specifies the relative path to the project file. Normally, you don't need to change this value when debugging a CMake project. |
 | `projectTarget` | string | Specifies the optional target invoked when building `project`. The target must match the name in the **Startup Item** dropdown. |
-| `stopOnEntry` | boolean | Specifies whether to break a soon as the process is launched and the debugger attaches. The default value for this parameter is **`false`**. |
+| `stopOnEntry` | boolean | Specifies whether to break as soon as the process is launched and the debugger attaches. The default value for this parameter is **`false`**. |
 | `remoteMachine` | string | Specifies the name of the remote machine where the program is launched. |
-| `type` | string | Specifies whether the project is a `dll` or `exe` Defaults to .exe |
+| `type` | string | Specifies whether the project is a `dll` or `exe`. Defaults to `"exe"`. |
 
 ## C++ Linux properties
 
@@ -64,7 +64,7 @@ The following macros provide information about the debugging environment. They'r
 
 | Macro | Description | Example |
 |--|--|--|
-| `addressSanitizerRuntimeFlags` | Runtime flags used to customize behavior of the address sanitizer. Used to set the environment variable `"ASAN_OPTIONS"`. | `"env": {"ASAN_OPTIONS": "${addressSanitizerRuntimeFlags}:anotherFlag=true"`} |
+| `addressSanitizerRuntimeFlags` | Runtime flags used to customize behavior of the address sanitizer. Used to set the environment variable `"ASAN_OPTIONS"`. | `"env": {"ASAN_OPTIONS": "${addressSanitizerRuntimeFlags}:anotherFlag=true"}` |
 | `defaultWorkingDirectory` | Set to the directory part of `"fullTargetPath"`. If the CMake variable `VS_DEBUGGER_WORKING_DIRECTORY` is defined, then `defaultWorkingDirectory` is set to that value, instead. | `"cwd":"${debugInfo.defaultWorkingDirectory}"` |
 | `fullTargetPath` | The full path to the binary being debugged. | `"program": "${debugInfo.fullTargetPath}"` |
 | `linuxNatvisPath` | The full windows path to the VS linux `.natvis` file. Usually appears as the value `"visualizerFile"`. | |
@@ -98,7 +98,7 @@ The pipeTransport example below shows how to use some of the `debugInfo` macros 
         "/c",
         "${debuggerCommand}"
     ]
-    }
+}
 ```
 
 ## <a name="remote_deploy_debug"></a> C++ Windows remote debug and deploy properties
@@ -109,8 +109,8 @@ Used when debugging and deploying an app on a remote machine.
 |--|--|--|
 | `cwd` | string | The working directory of the target on the remote machine. When using CMake, the macro `${debugInfo.defaultWorkingDirectory}` can be used as the value of this field. The default value is the directory of the debug program/command. |
 | `deploy` | string | Specifies extra files or directories to deploy. For example:<br> `"deploy": {"sourcePath":"<Full path to source file/directory on host machine>", "targetPath":"<Full destination path to file/directory on target machine>"}` |
-| `deployDirectory` | string | The location on the remote machine where project outputs are automatically deployed to. Defaults to "`C:\Windows Default Deploy Directory\<name of app>` |
-| `deployDebugRuntimeLibraries` | string | Specifies whether to deploy the debug runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"Debug"` |
+| `deployDirectory` | string | The location on the remote machine where project outputs are automatically deployed to. Defaults to `"C:\Windows Default Deploy Directory\<name of app>"`. |
+| `deployDebugRuntimeLibraries` | string | Specifies whether to deploy the debug runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"Debug"`. |
 | `deployRuntimeLibraries` | string | Specifies whether to deploy the runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"MinSizeRel"`, `"RelWithDebInfo"`, or `"Release"`. |
 | `disableDeploy` | boolean | Specifies whether files should be deployed. |
 | `remoteMachineName` | string | Specifies the name of the remote ARM64 Windows machine where the program is launched. May be the server name or the remote machine's IP address. |

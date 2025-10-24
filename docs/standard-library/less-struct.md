@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: less Struct"
 title: "less Struct"
-ms.date: "11/04/2016"
+description: "Learn more about: less Struct"
+ms.date: 11/04/2016
 f1_keywords: ["functional/std::less"]
 helpviewer_keywords: ["less struct", "less function"]
-ms.assetid: 39349da3-11cd-4774-b2cc-b46af5aae5d7
 ---
 # less Struct
 
@@ -80,7 +79,7 @@ int main() {
 
    cout << "Original vector v1 = ( " ;
    for ( Iter1 = v1.begin() ; Iter1 != v1.end() ; Iter1++ )
-cout << Iter1->m_i << " ";
+      cout << Iter1->m_i << " ";
    cout << ")" << endl;
 
    // To sort in ascending order,
@@ -88,7 +87,7 @@ cout << Iter1->m_i << " ";
 
    cout << "Sorted vector v1 = ( " ;
    for ( Iter1 = v1.begin() ; Iter1 != v1.end() ; Iter1++ )
-cout << Iter1->m_i << " ";
+      cout << Iter1->m_i << " ";
    cout << ")" << endl;
 }
 ```
