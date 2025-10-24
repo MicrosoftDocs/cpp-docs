@@ -62,7 +62,7 @@ You prompt Copilot by describing the functionality you want. In this section, yo
 
 1. Open the Copilot chat window by selecting the Copilot icon in the toolbar:
 
-    :::image type="content" source="media/github-copilot-open-chat.png" alt-text="Screenshot of the Github icon dropdown. Open Chat Window is selected.":::
+    :::image type="content" source="media/github-copilot-open-chat.png" alt-text="Screenshot of the GitHub icon dropdown. Open Chat Window is selected.":::
 
 1. In the chat window, enter the following prompt:
     ```copilot-prompt
@@ -244,6 +244,6 @@ To install **Desktop development with C++**, you can run the installer right fro
 
 ## Next steps
 
-- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)\
-- [GitHub Copilot documentation](https://docs.github.com/en/copilot) - Dive deeper into AI-assisted development\
+- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot) - Dive deeper into AI-assisted development
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) - Community-driven prompting examples for inspiration
