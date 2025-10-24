@@ -1,14 +1,14 @@
 ---
-title: Use GitHub Copilot to create a C++ console application in Visual Studio
+title: Use AI to create a C++ console application in Visual Studio
 description: "Learn how to use GitHub Copilot to create a C++ app using Microsoft C++ in Visual Studio."
-ms.date: 10/23/2025
+ms.date: 10/24/2025
 ms.topic: "tutorial"
 ms.custom:
   - ai-assisted
   - copilot-scenario-highlight
 ---
 
-# Use GitHub Copilot to create a C++ console application in Visual Studio
+# Use AI to create a C++ console application in Visual Studio
 
 This tutorial shows you how to use GitHub Copilot to quickly create a C++ console application in Visual Studio. You create a console version of Conway's Game of Life, a classic cellular automaton.
 
@@ -24,20 +24,22 @@ Github Copilot is an AI-powered coding assistant that helps you write code faste
 ## Prerequisites
 
 - Visual Studio 2022 or later with the **Desktop development with C++** workload installed.
-- GitHub Copilot subscription. For more information about a free GitHub Copilot subscription, see [Use GitHub Copilot for free in Visual Studio](/visualstudio/ide/copilot-free-plan).
+- GitHub Copilot. For more information, see [Get started with GitHub Copilot](/visualstudio/ide/visual-studio-github-copilot-get-started).
 
 To verify you have the C++ workload installed:
 1. Open Visual Studio Installer
 1. Select **Modify** next to your Visual Studio installation
 1. Ensure **Desktop development with C++** is checked:
 
-    :::image type="content" source="./media/desktop-development-cpp-workload.png" alt-text="Screenshot of the Visual Studio Installer with the Workloads tab selected. Desktop development with c++ is selected.":::
+    :::image type="content" source="media/desktop-development-cpp-workload.png" alt-text="Screenshot of the Visual Studio Installer with the Workloads tab selected. Desktop development with c++ is selected.":::
 
 1. If it isn't installed, select it and choose **Modify**.
 
-For more information about installing GitHub Copilot, see [Manage GitHub Copilot installation and state](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
+For more information about installing Copilot, see [Manage GitHub Copilot installation and state](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
 
 ## Create a project
+
+Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It manages the relationship between all the project's files and any external files. To create your app, first, create a new project and solution.
 
 1. Open Visual Studio and select **Create a new project**.
 1. Search for "Console App" and select the **Console App** template for C++.
@@ -50,35 +52,33 @@ For more information about installing GitHub Copilot, see [Manage GitHub Copilot
 1. Set the project name to **ConwayLife** and choose the location for the project.
 1. Select **Create**.
 1. Once the project opens, find the `ConwayLife.cpp` file in Solution Explorer.
-1. Open `ConwayLife.cpp` and delete all the existing code to start with a clean slate.
+1. Open `ConwayLife.cpp` and delete the default "Hello, World!" code to start with a clean slate.
 
 ## Use Copilot to create an app
 
-Use GitHub Copilot to generate the Conway's Game of Life implementation.
+You prompt Copilot by describing the functionality you want. Here's an example of how to prompt Copilot to generate an implementation of Conway's Game of Life.
 
 1. Open the Copilot chat window by selecting the Copilot icon in the toolbar:
 
     :::image type="content" source="media/github-copilot-open-chat.png" alt-text="Screenshot of the Github icon dropdown. Open Chat Window is selected.":::
 
 1. In the chat window, enter the following prompt:
-
-```
-Create a C++ console application that implements Conway's Game of Life. The program should:
-- Use a 40x20 grid displayed with asterisks (*) for live cells and spaces for dead cells
-- Start with a random initial pattern
-- Display each generation for 500ms before showing the next
-- Allow the user to press any key to exit the program
-- Include proper headers and use standard C++ practices
-- Clear the console between generations to provide an animation effect
-```
-
+    ```copilot-prompt
+    Create a C++ console application that implements Conway's Game of Life. The program should:
+    - Use a 40x20 grid displayed with asterisks (*) for live cells and spaces for dead cells
+    - Start with a random initial pattern
+    - Display each generation for 500ms before showing the next
+    - Allow the user to press any key to exit the program
+    - Include proper headers and use standard C++ practices
+    - Clear the console between generations to provide an animation effect
+    ```
 1. Copilot generates C++ code for Conway's Game of Life.
 1. Copy the generated code and paste it into your empty `life.cpp` file.
 1. Build the project by pressing **F6** or selecting **Build > Build Solution**.
 1. Run the program by pressing **F5** or **Ctrl+F5**.
 
 > [!NOTE]
-> The exact code generated by Copilot may vary slightly from run to run and model to model, but the core functionality should be consistent. If the generated code doesn't compile immediately, you can ask Copilot to fix any compilation errors. GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+> The exact code generated by Copilot may vary slightly from run to run and model to model, but the core functionality should be consistent. If the generated code doesn't compile immediately, you can ask Copilot to fix any compilation errors. Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 ### Example of typical generated code structure
 
@@ -89,7 +89,7 @@ Your generated code likely includes these components:
 - Functions to initialize the grid, apply Conway's rules, and display the current state
 - A main loop that continues until a key is pressed
 
-Here is an example of the code that GitHub Copilot generated given the previous prompt:
+Here is an example of the code that Copilot generated given the previous prompt:
 
 ```cpp
 // Code generated by GitHub Copilot
@@ -198,15 +198,15 @@ int main()
 ```
 When you run the application, you should see an animated display of Conway's Game of Life with patterns evolving over time. To exit the program, press a key.
 
-:::image type="content" source="./media/conway-life-exe.png" alt-text="Screenshot of Conway Life running in a command window, displaying the evolving grid of cells.":::
+:::image type="content" source="./media/life-exe.png" alt-text="Screenshot of Conway Life running in a command window, displaying the evolving grid of cells.":::
 
-In the code example, the code generates a warning: `Return value ignored: '_getch'`. You can ask GitHub Copilot to fix it. Select the code editor and press **Alt+/** (Windows) to open the Copilot chat, then enter:
+In the code example, the code generates a warning: `Return value ignored: '_getch'`. You can ask Copilot to fix it. Select the code editor and press **Alt+/** (Windows) to open the Copilot chat, then enter:
 
-:::image type="content" source="./media/github-copilot-fix-warning.png" alt-text="Screenshot of the GitHub Copilot chat window. The text: Fix warning C6031 is in the chat window.":::
+:::image type="content" source="./media/github-copilot-fix-warning.png" alt-text="Screenshot of the Copilot chat window. The text: Fix warning C6031 is in the chat window.":::
 
-GitHub Copilot suggests a fix to handle the return value properly. To accept the changes, press the Tab key:
+Copilot suggests a fix to handle the return value properly. To accept the changes, press the Tab key:
 
-:::image type="content" source="./media/github-copilot-fix-warning-accept.png" alt-text="Screenshot of the GitHub Copilot proposed changes. Tab to accept. Alt+Del to discard.":::
+:::image type="content" source="./media/github-copilot-fix-warning-accept.png" alt-text="Screenshot of the Copilot proposed changes. Tab to accept. Alt+Del to discard.":::
 
 Congratulations! You successfully used GitHub Copilot to create a fully functional Conway's Game of Life console application in C++. You learned how to:
 
@@ -216,7 +216,7 @@ Congratulations! You successfully used GitHub Copilot to create a fully function
 
 ## Improve your prompting skills
 
-For better results with GitHub Copilot, consider these prompting resources:
+For better results with Copilot, see these prompting resources:
 
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot) - Official best practices and tips
 - [OpenAI's GPT best practices](https://platform.openai.com/docs/guides/prompt-engineering) - General AI prompting techniques
@@ -224,20 +224,21 @@ For better results with GitHub Copilot, consider these prompting resources:
 
 ## Troubleshooting
 
-### Missing C++ desktop workload
-If you can't find the Console App template:
-1. Install the **Desktop development with C++** workload through Visual Studio Installer
-2. Restart Visual Studio after installation
+### Missing console app template
+
+The **New Project** dialog should show a **Console App** template that has **C++**, **Windows**, and **Console** tags. If you don't see it, it might be filtered out of the list, or it might not be installed. First, check the filter dropdowns at the top of the list of templates. Set them to **C++**, **Windows**, and **Console**. The C++ **Console App** template should appear; otherwise, the **Desktop development with C++** workload isn't installed.
+
+To install **Desktop development with C++**, you can run the installer right from the **Create a new project** dialog. Choose the **Install more tools and features** link at the bottom of the **Create a new project** dialog, beneath the list of templates. If the **User Account Control** dialog requests permissions, choose **Yes**. In the installer, make sure the **Desktop development with C++** workload is checked. Then choose **Modify** to update your Visual Studio installation.
 
 ### Copilot not responding
-- Ensure you have an active GitHub Copilot subscription
-- Check that the GitHub Copilot extension is enabled in Visual Studio
+
+- Ensure you have an active GitHub Copilot subscription.
 - Try signing out and back into your GitHub account in Visual Studio
 
 ### Generated code doesn't compile
+
 - Ask Copilot to fix specific compilation errors by pasting the error message into Copilot chat.
-- Try refining your prompt to be more specific about C++ standards or requirements.
-- Ensure all necessary headers are included (Copilot usually handles this automatically).
+- Try refining your prompt to be more specific about what you want the app to do.
 
 ## Next steps
 
