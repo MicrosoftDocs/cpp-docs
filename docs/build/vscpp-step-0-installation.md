@@ -128,7 +128,7 @@ Some benefits of using Copilot for your C++ coding scenarios:
 - Debug errors in your code.
 - Simplify and refactor existing code.
 
-To install GitHub Copilot, see [Manage GitHub Copilot installation and state](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
+To try GitHub copilot to create a C++ app, follow the instructions in [Use AI to create a C++ console application in Visual Studio](../build/use-github-copilot-create-cpp-console-app.md).
 
 ::: moniker-end
 
@@ -225,9 +225,7 @@ You can reduce the installation footprint of Visual Studio on your system drive.
 ### Step 8 - Start developing
 
 1. After Visual Studio installation is complete, choose the **Launch** button to get started developing with Visual Studio.
-
 1. On the start window, choose **Create a new project**.
-
 1. In the search box, enter the type of app you want to create to see a list of available templates. The list of templates depends on the workloads that you chose during installation. To see different templates, choose different workloads.
 
    You can also filter your search for a specific programming language by using the **Language** dropdown list. You can filter by using the **Platform** list and the **Project type** list, too.
