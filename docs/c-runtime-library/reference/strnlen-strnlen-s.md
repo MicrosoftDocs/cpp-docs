@@ -24,7 +24,7 @@ size_t strnlen(
    const char *str,
    size_t numberOfElements
 );
-size_t strnlen_s(
+size_t strnlen_s( // See note in remarks section about linkage
    const char *str,
    size_t numberOfElements
 );
@@ -32,7 +32,7 @@ size_t wcsnlen(
    const wchar_t *str,
    size_t numberOfElements
 );
-size_t wcsnlen_s(
+size_t wcsnlen_s( // See note in remarks section about linkage
    const wchar_t *str,
    size_t numberOfElements
 );
@@ -87,6 +87,11 @@ Each of these functions returns the number of characters in *`str`*, not includi
 **`_mbstrnlen`** also validates its parameters. If *`str`* is `NULL`, or if *`numberOfElements`* is greater than `INT_MAX`, **`_mbstrnlen`** generates an invalid parameter exception, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, **`_mbstrnlen`** sets `errno` to `EINVAL` and returns -1.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> When you use Windows SDK version 10.0.26100.6901 and Visual Studio 2026 or later together, `strnlen_s` and `wcsnlen_s` are no longer `static inline` (internal linkage). Instead, they are `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard and improves compatibility with C++ modules.
 
 ### Generic-text routine mappings
 

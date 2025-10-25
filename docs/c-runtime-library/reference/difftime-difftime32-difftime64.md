@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_difftime64", "difftime", "difftime64", "_difftime32", "difftime32"]
 helpviewer_keywords: ["_difftime32 function", "difftime function", "time, finding the difference", "difftime64 function", "_difftime64 function", "difftime32 function"]
-ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
 ---
 # `difftime`, `_difftime32`, `_difftime64`
 
@@ -17,7 +16,7 @@ Finds the difference between two times.
 ## Syntax
 
 ```C
-double difftime( time_t timeEnd, time_t timeStart );
+double difftime( time_t timeEnd, time_t timeStart ); // See note in remarks section about linkage
 double _difftime32( __time32_t timeEnd, __time32_t timeStart );
 double _difftime64( __time64_t timeEnd, __time64_t timeStart );
 ```
@@ -46,13 +45,18 @@ These functions validate their parameters. If either of the parameters is zero o
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
+> [!Note]
+> If you use Windows SDK version 10.0.26100.6901 and Visual Studio 2026 or later together, `difftime` is no longer `static inline` (internal linkage). Instead, it's `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard and improves compatibility with C++ modules.
+
 ## Requirements
 
 | Routine | Required header |
 |---|---|
-| **`difftime`** | \<time.h> |
-| **`_difftime32`** | \<time.h> |
-| **`_difftime64`** | \<time.h> |
+| **`difftime`** | `<time.h>` |
+| **`_difftime32`** | `<time.h>` |
+| **`_difftime64`** | `<time.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
