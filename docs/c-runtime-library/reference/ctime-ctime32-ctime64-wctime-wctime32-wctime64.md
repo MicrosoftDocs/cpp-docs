@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wctime64", "_ctime32", "_tctime", "_wctime", "_wctime32", "_tctime64", "_ctime64", "ctime"]
 helpviewer_keywords: ["tctime64 function", "_ctime32 function", "ctime32 function", "_wctime function", "wctime64 function", "_tctime64 function", "_tctime32 function", "_ctime64 function", "_wctime64 function", "ctime function", "wctime32 function", "ctime64 function", "_wctime32 function", "_tctime function", "tctime32 function", "tctime function", "wctime function", "time, converting"]
-ms.assetid: 2423de37-a35c-4f0a-a378-3116bc120a9d
 ---
 # `ctime`, `_ctime32`, `_ctime64`, `_wctime`, `_wctime32`, `_wctime64`
 
@@ -17,10 +16,10 @@ Convert a time value to a string and adjust for local time zone settings. More s
 ## Syntax
 
 ```C
-char *ctime( const time_t *sourceTime );
+char *ctime( const time_t *sourceTime ); // See note in remarks section about linkage
 char *_ctime32( const __time32_t *sourceTime );
 char *_ctime64( const __time64_t *sourceTime );
-wchar_t *_wctime( const time_t *sourceTime );
+wchar_t *_wctime( const time_t *sourceTime ); // See note in remarks section about linkage
 wchar_t *_wctime32( const __time32_t *sourceTime );
 wchar_t *_wctime64( const __time64_t *sourceTime );
 ```
@@ -62,9 +61,14 @@ These functions validate their parameters. If *`sourceTime`* is a null pointer, 
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
 
+> [!Note]
+> When you use Windows SDK version 10.0.26100.6901 and Visual Studio 2026 or later together, `ctime` and `_wctime` are no longer `static inline` (internal linkage). Instead, they're `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard and improves compatibility with C++ modules.
+
 ### Generic-text routine mappings
 
-| TCHAR.H routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
 |---|---|---|---|
 | `_tctime` | **`ctime`** | **`ctime`** | **`_wctime`** |
 | `_tctime32` | **`_ctime32`** | **`_ctime32`** | **`_wctime32`** |
@@ -74,12 +78,12 @@ By default, this function's global state is scoped to the application. To change
 
 | Routine | Required header |
 |---|---|
-| **`ctime`** | \<time.h> |
-| **`_ctime32`** | \<time.h> |
-| **`_ctime64`** | \<time.h> |
-| **`_wctime`** | \<time.h> or \<wchar.h> |
-| **`_wctime32`** | \<time.h> or \<wchar.h> |
-| **`_wctime64`** | \<time.h> or \<wchar.h> |
+| **`ctime`** | `<time.h>` |
+| **`_ctime32`** | `<time.h>` |
+| **`_ctime64`** | `<time.h>` |
+| **`_wctime`** | `<time.h>` or `<wchar.h>` |
+| **`_wctime32`** | `<time.h>` or `<wchar.h>` |
+| **`_wctime64`** | `<time.h>` or `<wchar.h>` |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 
