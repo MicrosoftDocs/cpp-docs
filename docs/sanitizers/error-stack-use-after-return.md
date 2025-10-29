@@ -1,13 +1,13 @@
 ---
 title: "Error: stack-use-after-return"
-description: "Learn about the stack-use-after-return Address Sanitizer error."
+description: "Learn about the stack-use-after-return AddressSanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["stack-use-after-return"]
 helpviewer_keywords: ["stack-use-after-return error", "AddressSanitizer error stack-use-after-return"]
 ---
 # Error: `stack-use-after-return`
 
-> Address Sanitizer Error: Use of stack memory after return
+> AddressSanitizer Error: Use of stack memory after return
 
 ## Remarks
 

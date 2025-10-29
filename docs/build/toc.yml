@@ -83,7 +83,7 @@ items:
 - name: "Header units"
   expanded: false
   items:
-    - name: "Walkthrough: Build and import header units in Visual C++ projects"
+    - name: "Walkthrough: Build and import header units in Microsoft C++ projects"
       href: ../build/walkthrough-header-units.md
     - name: "Walkthrough: Import STL libraries as header units"
       href: ../build/walkthrough-import-stl-header-units.md

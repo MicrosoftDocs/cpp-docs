@@ -9,7 +9,7 @@ ms.custom: intro-overview
 ---
 # C/C++ projects and build systems in Visual Studio
 
-You can use Visual Studio to edit, compile, and build any C++ code base with full IntelliSense support without having to convert that code into a Visual Studio project or compile with the MSVC toolset. For example, you can edit a cross-platform CMake project in Visual Studio on a Windows machine, then compile it for Linux using g++ on a remote Linux machine.
+You can use Visual Studio to edit, compile, and build any C++ code base with full IntelliSense support without having to convert that code into a Visual Studio project or compile with the Microsoft C++ (MSVC) Build Tools. For example, you can edit a cross-platform CMake project in Visual Studio on a Windows machine, then compile it for Linux using g++ on a remote Linux machine.
 
 ## C++ compilation
 
@@ -21,9 +21,9 @@ Basic C++ compilation involves three main steps:
 - The C++ compiler compiles each translation unit into object files (.obj), applying whatever compiler options have been set.
 - The *linker* merges the object files into a single executable, applying the linker options that have been set.
 
-## The MSVC toolset
+## The Microsoft C++ (MSVC) Build Tools
 
-The Microsoft C++ compiler, linker, standard libraries, and related utilities make up the MSVC compiler toolset (also called a toolchain or "build tools"). These are included in Visual Studio. You can also download and use the command-line toolset as a free standalone package. For more information, see [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) on the Visual Studio Downloads page.
+The Microsoft C++ compiler, linker, standard libraries, and related utilities make up the Microsoft C++ (MSVC) Build Tools (also called a toolchain or toolset). These are included in Visual Studio. You can also download and use the command-line toolset as a free standalone package. For more information, see [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) on the Visual Studio Downloads page.
 
 You can build simple programs by invoking the MSVC compiler (cl.exe) directly from the command line. The following command accepts a single source code file, and invokes cl.exe to build an executable called *hello.exe*:
 
@@ -83,7 +83,7 @@ Describes the deployment model for Windows Desktop applications, based on the id
 How to target 64-bit x64 hardware with the MSVC build tools.
 
 [Configure C++ projects for ARM processors](configuring-programs-for-arm-processors-visual-cpp.md)\
-How to use the MSVC build tools to target ARM hardware.
+How to use the MSVC Build Tools to target ARM hardware.
 
 [Optimizing Your Code](optimizing-your-code.md)\
 How to optimize your code in various ways including program guided optimizations.

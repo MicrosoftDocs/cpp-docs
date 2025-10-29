@@ -10,7 +10,7 @@ You can edit a Visual Studio C++ project file to target different versions of th
 
 ## Platform toolset
 
-The platform toolset consists of the C++ compiler (cl.exe) and linker (link.exe), along with the C/C++ standard libraries. Visual Studio 2015, Visual Studio 2017, and Visual Studio 2019 are binary-compatible. It's shown by the major version of the toolset, which has remained at 14. Projects compiled in Visual Studio 2019 or Visual Studio 2017 are ABI-backwards-compatible with 2017 and 2015 projects. The minor version has updated by 1 for each version since Visual Studio 2015:
+The platform toolset consists of the Microsoft C++ (MSVC) compiler (cl.exe) and linker (link.exe), along with the C/C++ standard libraries. Visual Studio 2015, Visual Studio 2017, and Visual Studio 2019 are binary-compatible. It's shown by the major version of the toolset, which has remained at 14. Projects compiled in Visual Studio 2019 or Visual Studio 2017 are ABI-backwards-compatible with 2017 and 2015 projects. The minor version has updated by 1 for each version since Visual Studio 2015:
 
 - Visual Studio 2015: v140
 - Visual Studio 2017: v141
@@ -25,7 +25,7 @@ Visual Studio also supports multitargeting for C++ projects. You can use the lat
 
 When you change the target Framework, also change the platform toolset to a version that supports that Framework. For example, to target the .NET Framework 4.5, you must use a compatible platform toolset. These toolsets include Visual Studio 2015 (v140), Visual Studio 2013 (v120), or Visual Studio 2012 (v110). You can use the [Windows 7.1 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=8442) to target .NET Framework 2.0, 3.0, 3.5, and 4.
 
-You can extend the target platform further by creating a custom platform toolset. For more information, see [C++ Native Multi-Targeting](https://devblogs.microsoft.com/cppblog/c-native-multi-targeting/) on the Visual C++ blog.
+You can extend the target platform further by creating a custom platform toolset. For more information, see [C++ Native Multi-Targeting](https://devblogs.microsoft.com/cppblog/c-native-multi-targeting/) on the Microsoft C++ Team blog.
 
 ### To change the target Framework
 

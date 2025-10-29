@@ -32,7 +32,7 @@ items:
       href: ../overview/visual-cpp-samples.md
     - name: Help and community
       href: ../overview/visual-cpp-help-and-community.md
-    - name: How to report a problem with the Visual C++ toolset
+    - name: How to report a problem with the Microsoft C++ Build Tools
       href: ../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md
 - name: Visual Studio C++ Tutorials
   expanded: false

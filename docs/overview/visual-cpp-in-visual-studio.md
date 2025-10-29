@@ -44,9 +44,9 @@ helpviewer_keywords: ["Visual C++, home page"]
 
 :::moniker-end
 
-Microsoft Visual C++ (MSVC) refers to the C++, C, and assembly language development tools and libraries available as part of Visual Studio on Windows. These tools and libraries let you create native Windows desktop and server applications, Universal Windows Platform (UWP) apps, or managed apps and libraries that use the .NET Framework. Create cross-platform libraries and apps that run on Windows, Linux, Android, and iOS. You can use MSVC to write anything from simple console apps to the most sophisticated and complex apps for Windows desktop. Write device drivers and operating system components or cross-platform games for mobile devices. Target anything from the smallest IoT devices to multi-server high performance computing in the Azure cloud.
+Microsoft C++ (MSVC) refers to the C++, C, and assembly language development tools and libraries available as part of Visual Studio on Windows. These tools and libraries let you create native Windows desktop and server applications, Universal Windows Platform (UWP) apps, or managed apps and libraries that use the .NET Framework. Create cross-platform libraries and apps that run on Windows, Linux, Android, and iOS. You can use MSVC to write anything from simple console apps to the most sophisticated and complex apps for Windows desktop. Write device drivers and operating system components or cross-platform games for mobile devices. Target anything from the smallest IoT devices to multi-server high performance computing in the Azure cloud.
 
-Visual Studio 2015, 2017, 2019, and 2022 can be installed side-by-side. You can use Visual Studio 2019 (compiler toolset v142) or Visual Studio 2017 (v141) to edit and build programs using the toolset from Visual Studio 2017 (v141) and Visual Studio 2015 (v140).
+You can install Visual Studio 2015 and later side-by-side. For example, you can use Visual Studio 2019 (compiler toolset v142) or Visual Studio 2017 (v141) to edit and build programs using the toolset from Visual Studio 2017 (v141) and Visual Studio 2015 (v140).
 
 ## What's new for C++ in Visual Studio
 
@@ -74,7 +74,7 @@ Learn about the breaking changes in previous versions.
 ## Install Visual Studio C++ and upgrade from earlier versions
 
 [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md)\
-Download Visual Studio and install the Microsoft C/C++ toolset.
+Download Visual Studio and install the Microsoft C++ Build Tools.
 
 [Microsoft C++ porting and upgrading guide](../porting/visual-cpp-porting-and-upgrading-guide.md)\
 Guidance for porting code and upgrading projects to Visual Studio 2015 or later. Take advantage of greater compiler conformance to the C++ standard, greatly improved compilation times, and security features such as Spectre mitigation.
