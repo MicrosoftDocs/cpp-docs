@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: Supported Platforms (Visual C++)"
-title: "Supported Platforms (Visual C++)"
+description: "Learn more about: Supported Platforms (Microsoft C++)"
+title: "Supported Platforms (Microsoft C++)"
 ms.date: 10/22/2025
 ms.service: "visual-cpp"
 ms.subservice: "tools"
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
 ---
-# Supported platforms (Visual C++)
+# Supported platforms (Microsoft C++)
 
 Apps built by using Visual Studio can be targeted to various platforms.
 
@@ -48,9 +48,9 @@ Support for targeting 32-bit ARM was permanently removed in VS 2026 18.0.
 
 <sup>f</sup> You can install the **Linux development with C++** workload in the installer for Visual Studio 2017 and later to target Linux platforms. For instructions, see [Download, install, and setup the Linux Workload](../linux/download-install-and-setup-the-linux-development-workload.md). This toolset compiles your executable on the target machine, so you can build for any supported architecture.
 
-For information about how to set the target platform configuration, see [How to: Configure Visual C++ projects to target 64-bit, x64 platforms](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
+For information about how to set the target platform configuration, see [How to: Configure Microsoft C++ projects to target 64-bit, x64 platforms](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
 
 ## See also
 
-[Visual C++ tools and features in Visual Studio editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)\
+[Microsoft C++ tools and features in Visual Studio editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)\
 [Getting Started](/visualstudio/ide/getting-started-with-cpp-in-visual-studio)

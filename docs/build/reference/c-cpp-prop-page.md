@@ -387,7 +387,7 @@ Experimental support for the C++ Modules TS and Standard Library modules.
 
 ### Build ISO C++23 Standard Library Modules
 
-Starting in Visual Studio 17.6, when this property is enabled and [C++ Language Standard](#cpplang) is set to `/std:c++latest`, Visual C++ projects automatically find and build ISO C++23 Standard Library modules. This enables you to `import std` or `import std.compat` in your C++ code.
+Starting in Visual Studio 17.6, when this property is enabled and [C++ Language Standard](#cpplang) is set to `/std:c++latest`, Microsoft C++ projects automatically find and build ISO C++23 Standard Library modules. This enables you to `import std` or `import std.compat` in your C++ code.
 
 ## C/C++ Precompiled Headers Properties
 

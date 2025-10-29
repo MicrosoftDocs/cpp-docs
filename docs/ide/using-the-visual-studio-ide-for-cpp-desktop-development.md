@@ -16,7 +16,7 @@ If you haven't installed Visual Studio yet, now is the time. For download links 
 
 These walkthroughs assume that you've installed Visual Studio and the C++ components required for Windows Desktop development. We also assume you understand the fundamentals of the C++ language. If you need to learn C++, there are many books and web resources available. One good place to start is the [Get Started](https://isocpp.org/get-started) page of the Standard C++ Foundation website.
 
-In general, we highly recommend that you use the latest version of Visual Studio even if you need to compile your code using an earlier version of the compiler toolset. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
+In general, we highly recommend that you use the latest version of Visual Studio even if you need to compile your code using an earlier version of the Microsoft C++ (MSVC) Build Tools. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
 Once your Visual Studio installation is complete, you are ready to continue.
 
@@ -36,7 +36,7 @@ To get started using the Visual Studio IDE to build C++ apps, work through each 
 
 ## Next steps
 
-Once you've completed these walkthroughs, you're ready to start building your own projects. For more information and resources for C++ development, see [Visual C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md).
+Once you've completed these walkthroughs, you're ready to start building your own projects. For more information and resources for C++ development, see [Microsoft C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md).
 
 ## See also
 

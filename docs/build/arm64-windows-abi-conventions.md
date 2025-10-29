@@ -260,5 +260,5 @@ The cycle counter here is a true cycle counter, not a wall clock. The counting f
 
 ## See also
 
-[Common Visual C++ ARM Migration Issues](common-visual-cpp-arm-migration-issues.md)<br/>
+[Common Microsoft C++ ARM Migration Issues](common-visual-cpp-arm-migration-issues.md)<br/>
 [ARM64 exception handling](arm64-exception-handling.md)

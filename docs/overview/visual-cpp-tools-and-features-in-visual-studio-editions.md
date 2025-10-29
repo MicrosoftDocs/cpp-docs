@@ -15,7 +15,7 @@ The following C++ features are available in Visual Studio. Unless stated otherwi
 
 ::: moniker range="<=msvc-150"
 
-The following tables show Visual C++ features that are available in Visual Studio 2017. An X in a cell indicates that the feature is available; an empty cell indicates that the feature is not available. Notes in parentheses indicate that a feature is available, but restricted.
+The following tables show C++ features that are available in Visual Studio 2017. An X in a cell indicates that the feature is available; an empty cell indicates that the feature is not available. Notes in parentheses indicate that a feature is available, but restricted.
 
 ::: moniker-end
 

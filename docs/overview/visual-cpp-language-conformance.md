@@ -9,7 +9,7 @@ ms.subservice: "cpp-lang"
 
 Standards conformance for the Microsoft C/C++ compiler in Visual Studio (MSVC) is a work in progress. Here's a summary of ISO Standard C and C++ language and library conformance by Visual Studio version. Each C++ compiler and standard library feature name has a link to the ISO Standard C++ proposal paper that describes the feature, when one is available at publication time. The **Supported** column lists the Visual Studio version in which support for the feature first appeared.
 
-For details on conformance improvements, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md). For a list of other changes, see [What's New for Visual C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [C++ team blog](https://devblogs.microsoft.com/cppblog/).
+For details on conformance improvements, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md). For a list of other changes, see [What's New for Microsoft C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [C++ team blog](https://devblogs.microsoft.com/cppblog/).
 
 > [!NOTE]
 > There are no binary breaking changes between Visual Studio 2015, 2017, 2019, and 2022. For more information, see [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
@@ -652,7 +652,7 @@ These algorithms aren't presently parallelized:
 [C++ Language Reference](../cpp/cpp-language-reference.md)\
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)\
 [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md)\
-[What's New for Visual C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)\
+[What's New for Microsoft C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)\
 [Visual C++ change history 2003 through 2015](../porting/visual-cpp-change-history-2003-2015.md)\
 [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)\
 [C++ team blog](https://devblogs.microsoft.com/cppblog/)

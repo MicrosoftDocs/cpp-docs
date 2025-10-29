@@ -40,7 +40,7 @@ Even when statically linking, the ASan runtime DLL must be present at runtime--u
 
 Before Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds didn't use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality.
 
-Dynamically linked projects (**`/MD`** or **`/MDd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
+Dynamically linked projects (**`/MD`** or **`/MDd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC AddressSanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
 
 The following table describes the previous behavior of the AddressSanitizer runtime library linking, before Visual Studio 17.7 Preview 3:
 
@@ -101,7 +101,7 @@ For an illustration of the alignment requirement and potential issues, see the p
 
 ## Runtime options
 
-The MSVC AddressSanitizer is a regularly synced fork of the [Clang AddressSanitizer runtime](https://github.com/llvm/llvm-project). As a result, MSVC implicitly inherits many of Clang's ASan runtime options. A complete list of options that we actively maintain and test can be found [here](./asan-flags.md). If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
+MSVC AddressSanitizer is a regularly synced fork of the [Clang AddressSanitizer runtime](https://github.com/llvm/llvm-project). As a result, MSVC implicitly inherits many of Clang's ASan runtime options. A complete list of options that we actively maintain and test can be found [here](./asan-flags.md). If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
 
 
 ### Configure runtime options

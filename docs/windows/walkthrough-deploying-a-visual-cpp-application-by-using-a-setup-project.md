@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: Walkthrough: Deploy a Visual C++ application by using a setup project"
-title: "Deploy a Visual C++ application by using a setup project"
+description: "Learn more about: Walkthrough: Deploy a Microsoft C++ application by using a setup project"
+title: "Deploy a Microsoft C++ application by using a setup project"
 ms.date: 06/28/2022
-helpviewer_keywords: ["deployment for Visual C++"]
+helpviewer_keywords: ["deployment for Microsoft C++"]
 ms.custom: intro-deployment
 ms.topic: install-set-up-deploy
 ---
-# Walkthrough: Deploy a Visual C++ application by using a setup project
+# Walkthrough: Deploy a Microsoft C++ application by using a setup project
 
 In this walkthrough, you'll create a sample app in Visual Studio, then create a setup project to deploy your app to another computer.
 
@@ -22,7 +22,7 @@ You need the following components to complete this walkthrough:
 
 - The Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio.
 
-- To test your deployment, another computer that doesn't have the Visual C++ libraries installed.
+- To test your deployment, another computer that doesn't have the Microsoft C++ libraries installed.
 
 ### <a name="install-mfc-2022"></a> To install C++ and MFC in Visual Studio 2022
 
@@ -62,7 +62,7 @@ If you have Visual Studio installed, but you don't have the C++ or MFC component
 
 - The Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio.
 
-- To test your deployment, another computer that doesn't have the Visual C++ libraries installed.
+- To test your deployment, another computer that doesn't have the Microsoft C++ libraries installed.
 
 ### <a name="install-mfc-2019"></a> To install C++ and MFC in Visual Studio 2019
 
@@ -330,7 +330,7 @@ The setup project lets you specify where the components of your app are installe
 
 ## Test your deployment
 
-To test your deployment, copy the deployment files to a second computer that doesn't have the Visual C++ libraries installed. Run the setup program. If your app loads and runs normally, and you don't get a runtime error about missing libraries or components, then your deployment is successful.
+To test your deployment, copy the deployment files to a second computer that doesn't have the Microsoft C++ libraries installed. Run the setup program. If your app loads and runs normally, and you don't get a runtime error about missing libraries or components, then your deployment is successful.
 
 For application testing, you can create a deployment setup program that installs a debug version of your app, along with debug libraries, on machines you control. Debug apps and debug libraries aren't licensed for redistribution, and can't be deployed to customer machines. For more information, see [Preparing a test machine to run a debug executable](../windows/preparing-a-test-machine-to-run-a-debug-executable.md).
 

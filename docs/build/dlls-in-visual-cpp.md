@@ -68,7 +68,7 @@ Describes explicit and implicit linking to a DLL.
 [Initialize a DLL](run-time-library-behavior.md#initializing-a-dll)\
 Discusses DLL initialization code that must execute when your DLL loads.
 
-[DLLs and Visual C++ run-time library behavior](run-time-library-behavior.md)\
+[DLLs and Microsoft C++ run-time library behavior](run-time-library-behavior.md)\
 Describes the run-time library DLL startup sequence.
 
 [LoadLibrary and AfxLoadLibrary](loadlibrary-and-afxloadlibrary.md)\
