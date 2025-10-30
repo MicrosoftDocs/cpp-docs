@@ -72,7 +72,7 @@ For hard-to-fix errors, you can search for solutions or post a question on [Micr
 
 ## See also
 
-[What's New for Visual C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)\
+[What's New for Microsoft C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)\
 [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)\
 [Nonstandard Behavior](../cpp/nonstandard-behavior.md)\
 [Port data applications](../data/data-access-programming-mfc-atl.md)

@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: Overview of potential upgrade issues (Visual C++)"
-title: "Overview of potential upgrade issues (Visual C++)"
-ms.date: 10/22/2021
+description: "Learn more about: Overview of potential upgrade issues (Microsoft C++)"
+title: "Overview of potential upgrade issues (Microsoft C++)"
+ms.date: 10/29/2025
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
 ms.topic: upgrade-and-migration-article
 ---
-# Overview of potential upgrade issues (Visual C++)
+# Overview of potential upgrade issues (Microsoft C++)
 
-Over the years, the Microsoft C++ compiler has undergone many changes, along with changes in the C++ language itself, the C++ Standard Library, the C runtime (CRT), and other libraries such as MFC and ATL. As a result, when you upgrade an application from an earlier version of Visual Studio you might see compiler and linker errors and warnings in code that previously compiled cleanly. The older the original code base, the greater the potential for such errors. This overview summarizes the most common classes of issues you're likely to see, and provides links to more detailed information.
+Over the years, the Microsoft C++ (MSVC) compiler has undergone many changes, along with changes in the C++ language itself, the C++ Standard Library (STL), the C runtime (CRT), and other libraries such as MFC and ATL. As a result, when you upgrade an application from an earlier version of Visual Studio you might see compiler and linker errors and warnings in code that previously compiled cleanly. The older the original code base, the greater the potential for such errors. This overview summarizes the most common classes of issues you're likely to see, and provides links to more detailed information.
 
 > [!NOTE]
 > In the past, we've recommended that upgrades that span several versions of Visual Studio should be performed incrementally one version at a time. We no longer recommend this approach. We've found that it's almost always simpler to upgrade to the most current version of Visual Studio no matter how old the code base.
@@ -25,17 +25,17 @@ When you upgrade an app from Visual Studio 2013 or before to a newer version, it
 
 The *`.obj`* and *`.lib`* file formats are well defined and rarely change. Sometimes additions are made to these file formats, but these additions generally don't affect the ability of newer toolsets to consume object files and libraries produced by older toolsets. The major exception is if you compile using [`/GL` (Whole Program Optimization)](../build/reference/gl-whole-program-optimization.md). If you compile using `/GL`, you can only link the resulting object file by using the same toolset that was used to produce it. So, if you produce an object file with `/GL` and use a Visual Studio 2017 (v141) compiler, you must link it using the Visual Studio 2017 (v141) linker. It's because the internal data structures within the object files aren't stable across major versions of the toolset. Newer toolsets don't understand the older data formats.
 
-C++ doesn't have a stable application binary interface (ABI). But Visual Studio maintains a stable C++ ABI for all minor versions of a release. Visual Studio 2015 (v140), Visual Studio 2017 (v141), Visual Studio 2019 (v142), and Visual Studio 2022 (v143) toolsets vary only in their minor version. They all have the same major version number, which is 14. For more information, see [C++ Binary Compatibility between Visual Studio versions](binary-compat-2015-2017.md).
+C++ doesn't have a stable application binary interface (ABI). But Visual Studio maintains a stable C++ ABI for all minor versions of a release. Visual Studio 2015 (v140), Visual Studio 2017 (v141), Visual Studio 2019 (v142), Visual Studio 2022 (v143), and Visual Studio 2026 (v145) toolsets vary only in their minor version. They all have the same major version number, which is 14. For more information, see [C++ Binary Compatibility between Visual Studio versions](binary-compat-2015-2017.md).
 
 If you have an object file that has external symbols with C++ linkage, that object file may not link correctly with object files produced by a different major version of the toolset. There are many possible outcomes: the link might fail entirely (for example, if name decoration changed). The link could succeed, but the app could fail at runtime (for example, if type layouts changed). Or your app might continue to work and nothing will go wrong. Also note, while the C++ ABI isn't stable, the C ABI and the subset of the C++ ABI required for COM are stable.
 
-If you link to an import library, any later version of the Visual Studio redistributable libraries that preserve ABI compatibility may be used at runtime. For example, if you compile and link your app by using the Visual Studio 2015 Update 3 toolset, you can use any later redistributable. That's because the 2015, 2017, 2019, and 2022 libraries have preserved backward binary compatibility. The reverse isn't true: You can't use a redistributable for an earlier version of the toolset than you used to build any component of your code.
+If you link to an import library, any later version of the Visual Studio redistributable libraries that preserve ABI compatibility may be used at runtime. For example, if you compile and link your app by using the Visual Studio 2015 Update 3 toolset, you can use any later redistributable. That's because the 2015, 2017, 2019, 2022, and 2026 libraries have preserved backward binary compatibility. The reverse isn't true: You can't use a redistributable for an earlier version of the toolset than you used to build any component of your code.
 
 ### Libraries
 
 If you `#include` a particular version of the header files, you must link the resulting object file to the same version of the libraries. So, for example, if your source file includes the Visual Studio 2015 Update 3 `<immintrin.h>`, you must link with the Visual Studio 2015 Update 3 *`vcruntime`* library. Similarly, if your source file includes the Visual Studio 2017 version 15.5 `<iostream>`, you must link with the Visual Studio 2017 version 15.5 Standard C++ library, *`msvcprt`*. Mixing-and-matching isn't supported.
 
-For the C++ Standard Library, mixing-and-matching has been explicitly disallowed by use of `#pragma detect_mismatch` in the standard headers since Visual Studio 2010. If you try to link incompatible object files, or if you link with the wrong standard library, the link fails.
+For the Microsoft C++ Standard Library (STL), mixing-and-matching has been explicitly disallowed by use of `#pragma detect_mismatch` in the standard headers since Visual Studio 2010. If you try to link incompatible object files, or if you link with the wrong standard library, the link fails.
 
 Older CRT version mixing-and-matching was never supported, but it often just worked because the API surface didn't change much over time. The Universal CRT broke backwards compatibility so that in the future we can maintain backwards compatibility. We have no plans to introduce new, versioned Universal CRT binaries in the future. Instead, the existing Universal CRT is now updated in-place.
 
@@ -155,7 +155,7 @@ Windows API documentation lists the minimum or maximum supported operating syste
 
 ### Windows version
 
-When upgrading a program that uses the Windows API either directly or indirectly, you need to decide the minimum Windows version to support. In most cases, Windows 7 is a good choice. For more information, see [Header file problems](porting-guide-spy-increment.md#header_file_problems). The `WINVER` macro defines the oldest version of Windows that your program is designed to run on. If your MFC program sets `WINVER` to 0x0501 (Windows XP) you'll get a warning because MFC no longer supports XP, even if the compiler toolset itself has an XP mode. Compiler toolset support for Windows XP ended in Visual Studio 2017.
+When upgrading a program that uses the Windows API either directly or indirectly, you need to decide the minimum Windows version to support. In most cases, Windows 7 is a good choice. For more information, see [Header file problems](porting-guide-spy-increment.md#header_file_problems). The `WINVER` macro defines the oldest version of Windows that your program is designed to run on. If your MFC program sets `WINVER` to 0x0501 (Windows XP) you'll get a warning because MFC no longer supports XP, even if the compiler toolset itself has an XP mode. Compiler toolset support for Windows XP ended in Visual Studio 2017, and support for Windows 7, 8.0 and 8.1 ended in Visual Studio 2026.
 
 For more information, see [Updating the target windows version](porting-guide-spy-increment.md#updating_winver) and [More outdated header files](porting-guide-spy-increment.md#outdated_header_files).
 
@@ -171,15 +171,15 @@ This error can occur in MFC applications. It indicates an ordering issue between
 
 If your original code is compiled for 32-bit systems, you have the option of creating a 64-bit version instead of (or in addition to) a new 32-bit app. In general, you should get your program compiling in 32-bit mode first, and then attempt 64-bit. Compiling for 64-bit is straightforward, but in some cases it can reveal bugs that were hidden by 32-bit builds.
 
-Also, you should be aware of possible compile-time and runtime issues relating to pointer size, time and size values, and size-specific format specifiers in `printf` and `scanf` functions. For more information, see [Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md) and [Common Visual C++ 64-bit migration issues](../build/common-visual-cpp-64-bit-migration-issues.md). For more migration tips, see [Programming guide for 64-bit Windows](/windows/win32/WinProg64/programming-guide-for-64-bit-windows).
+Also, you should be aware of possible compile-time and runtime issues relating to pointer size, time and size values, and size-specific format specifiers in `printf` and `scanf` functions. For more information, see [Configure Microsoft C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md) and [Common Microsoft C++ 64-bit migration issues](../build/common-visual-cpp-64-bit-migration-issues.md). For more migration tips, see [Programming guide for 64-bit Windows](/windows/win32/WinProg64/programming-guide-for-64-bit-windows).
 
 ## Unicode vs MBCS/ASCII
 
 Before Unicode was standardized, many programs used the Multibyte Character Set (MBCS) to represent characters that weren't included in the ASCII character set. In older MFC projects, MBCS was the default setting. When you upgrade such a program, you'll see warnings that advise to use Unicode instead. If you decide the conversion to Unicode isn't worth the development cost, you may choose to disable or ignore the warning. To disable it for all projects in your solution, open **View** > **Property Manager**, select all projects for which you want to disable the warning, then right-click on the selected items and choose **Properties**. In the **Property Pages** dialog, select **Configuration Properties** > **C/C++** > **Advanced**. In the  **Disable Specific Warnings** property, open the drop-down arrow, and then choose **Edit**. Enter 4996 into the text box. (Don't include the 'C' prefix.) Choose **OK** to save the property, then choose **OK** to save your changes.
 
-For more information, see [Porting from MBCS to Unicode](porting-guide-spy-increment.md#porting_to_unicode). For general information about MBCS vs. Unicode, see [Text and Strings in Visual C++](../text/text-and-strings-in-visual-cpp.md) and [Internationalization](../c-runtime-library/internationalization.md) .
+For more information, see [Porting from MBCS to Unicode](porting-guide-spy-increment.md#porting_to_unicode). For general information about MBCS vs. Unicode, see [Text and Strings in Microsoft C++](../text/text-and-strings-in-visual-cpp.md) and [Internationalization](../c-runtime-library/internationalization.md) .
 
 ## See also
 
-[Upgrading projects from earlier versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Upgrading projects from earlier versions of Microsoft C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)

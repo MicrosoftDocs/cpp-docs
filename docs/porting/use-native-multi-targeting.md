@@ -1,21 +1,21 @@
 ---
 description: "Learn more about: Use native multi-targeting in Visual Studio to build old projects"
 title: "Use native multi-targeting in Visual Studio to build old projects"
-ms.date: 02/22/2022
+ms.date: 10/29/2025
 helpviewer_keywords: ["C++ native multi-targeting", "upgrading Visual C++ applications, retargeting"]
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
 ---
 # Use native multi-targeting in Visual Studio to build old projects
 
-Normally, we recommend that you update your projects when you install the latest version of Visual Studio. The cost of updating your projects and code is often more than offset by the benefits of the new IDE, compiler, libraries, and tools. However, we know that you may not be able to update some projects. You may have binaries that are tied to older libraries or platforms that for maintenance reasons you can't upgrade. Your code may use non-standard language constructs that would break if you moved to a more recent compiler. Your code might rely on third-party libraries compiled for a specific version of Visual C++. Or you may produce libraries for others that must target a specific older version of Visual C++.
+Normally, we recommend that you update your projects when you install the latest version of Visual Studio. The cost of updating your projects and code is often more than offset by the benefits of the new IDE, compiler, libraries, and tools. However, we know that you may not be able to update some projects. You may have binaries that are tied to older libraries or platforms that for maintenance reasons you can't upgrade. Your code may use non-standard language constructs that would break if you moved to a more recent compiler. Your code might rely on third-party libraries compiled for a specific version of Microsoft C++ (MSVC). Or you may produce libraries for others that must target a specific older version of MSVC.
 
 Fortunately, you can use Visual Studio to build projects that target older compiler toolsets and libraries. If you still have the original tools installed, you don't have to upgrade a project from as far back as Visual Studio 2010 to take advantage of new features in the IDE:
 
-- New C++ refactoring capabilities and editor experimental features
+- New C++ refactoring capabilities and editor features
 - New Diagnostics tools debugger window and Error List window
 - Revamped breakpoints, exceptions window and new PerfTips
 - New code navigation and search tools
-- New C++ Quick fixes and the Productivity Power Tools extensions.
+- New C++ Quick fixes
 
 You can also target Visual Studio 2008 projects, but they can't be used unchanged. For details, see the **Instructions for Visual Studio 2008** section.
 
@@ -23,7 +23,11 @@ The latest versions of Visual Studio support native multi-targeting and round-tr
 
 When you use an older toolset, you can take advantage of many of the latest IDE features, but not the latest advances in the C++ compiler, libraries and build tools. For example, you won't be able to use the new language conformance improvements, new debugging and code analysis features, or get the faster build throughput of the latest toolset. There are also some IDE features that are incompatible with older toolsets. For example, type information may be missing in the Memory Profiler, and the refactoring operation **Convert to Raw string literals** generates C++11-conformant code that won't compile when you use Visual Studio 2012 or older toolsets.
 
-## How to use native multi-targeting in Visual Studio
+## How to use native multi-targeting in Visual Studio 2026
+
+Visual Studio 2026 includes a new **Setup assistant**. You can load an existing solution, right-click it in Solution Explorer, and select *Retarget solution* to open the assistant. You can use the assistant to install missing C++ build tools (MSVC components and Windows SDKs) compatible with the projects you are loading, including tools originally shipped with older Visual Studio versions. This allows you to continue working with your existing projects without losing compatibility with your previous Visual Studio version. Later, when you are ready to fully upgrade, you can use the assistant to retarget these projects to the newest version of the IDE.
+
+## How to use native multi-targeting in Visual Studio 2010-2022
 
 Once you have installed Visual Studio side-by-side with your older version, open your existing project in the new version of Visual Studio. When the project is loaded, Visual Studio asks you whether you want to upgrade it to use the latest C++ compiler and libraries. Since you want the project to keep the older compiler and libraries, choose the **Cancel** button.
 
@@ -62,5 +66,5 @@ When these products are installed, the **Platform Toolset** property drop-down i
 
 ## See also
 
-[Upgrading projects from earlier versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)\
+[Upgrading projects from earlier versions of Microsoft C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)\
 [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)
