@@ -476,17 +476,22 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P2166R1 Prohibit basic_string and basic_string_view from being constructed from nullptr`](https://wg21.link/P2166R1) | VS 2022 17.0 <sup>[23](#note_23), [R](#note_R)</sup> |
 | &emsp;[`P2186R2 Removed garbage collection support`](https://wg21.link/P2186R2) | VS 2022 17.0 <sup>[23](#note_23), [Q](#note_Q)</sup> |
 | &emsp;[`P2251R1 Require span And basic_string_view To Be Trivially Copyable`](https://wg21.link/p2251r1) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2266R3 Simpler implicit move`](https://wg21.link/p2266r3) | MSVC 14.50 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2273R3 constexpr unique_ptr`](https://wg21.link/p2273r3) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2280R4 Using unknown pointers and references in constant expressions`](https://wg21.link/p2280r4) | MSVC 14.50 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2290R3 Delimited escape sequences`](https://wg21.link/p2290r3) | MSVC 14.50 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2291R3 constexpr Integral <charconv>`](https://wg21.link/p2291r3) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2302R4 ranges::contains, ranges::contains_subrange`](https://wg21.link/p2302r4) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2321R2 std::zip`](https://wg21.link/p2321r2) | partial in VS 2022 17.5 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2322R6 ranges::fold_left, ranges::fold_right, etc.`](https://wg21.link/p2322r6) | VS 2022 17.5 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2360R0 Extend init-statement to allow alias-declaration`](https://wg21.link/p2360r0) | MSVC 14.50 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2387R3 Pipe Support For User-Defined Range Adaptors`](https://wg21.link/p2387r3) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2393R1 Cleaning Up Integer-Class Types`](https://wg21.link/p2393r1) | VS 2022 17.2 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2401R0 Conditional noexcept For exchange()`](https://wg21.link/p2401r0) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2408R5 Ranges Iterators As Inputs To Non-Ranges Algorithms`](https://wg21.link/p2408r5) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2417R2 More constexpr bitset`](https://wg21.link/p2417r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2419R2 Clarify Handling Of Encodings In Localized Formatting Of chrono Types`](https://wg21.link/p2419r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
+| &emsp;[`P2437R1 Support for #warning`](https://wg21.link/p2437r1) | MSVC 14.50 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2438R2 string::substr() &&`](https://wg21.link/p2438r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2440R1 ranges::iota, ranges::shift_left, ranges::shift_right`](https://wg21.link/p2440r1) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2441R2 views::join_with`](https://wg21.link/p2441r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
