@@ -26,6 +26,9 @@ Microsoft C/C++ in Visual Studio (MSVC) Build Tools v14.50 introduces significan
 
 This document details the C++ language conformance improvements and compiler enhancements included in MSVC Build Tools v14.50. For more information about updates in the Standard Library, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog), which is regularly updated.
 
+The Microsoft C++ standard library (STL) no longer supports targeting Windows 7 / Server 2008 R2, Windows 8 / Server 2012, or Windows 8.1 / Server 2012 R2.\
+Windows 10 / Server 2016 are the minimum supported operating systems. 
+
 ## C++23 Features
 
 MSVC Build Tools v14.50 adds support for several C++23 features, bringing the compiler closer to full C++23 conformance.
@@ -136,11 +139,16 @@ Improved adherence to C++ standards:
 - Added `/Zc:enumEncoding` switch to [correctly encode enum non-type template parameters](https://developercommunity.visualstudio.com/t/Overload-resolution-fails-for-enum-non-t/10398088).
 - Fixed issues with [missing 'template' keyword diagnostics](https://developercommunity.visualstudio.com/t/No-diagnostic-for-missing-template-in-d/10501221)
 
-
 #### C++20 and C++23 Features
 
 - Enhanced [multidimensional operator[] support](https://developercommunity.visualstudio.com/t/Multidimensional-operator-with-Wall-r/10876026)
 - Improved [concept and constraint evaluation](https://developercommunity.visualstudio.com/t/VS-1714-if-constexpr-requires--does/10905731)
+
+## Bug fixes
+
+Bug fixes for C++ Modules, `constexpr`, and others were made in v14.50. For a detailed list of bug fixes, see [Compiler Improvements in v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/#compiler-improvements-in-v14.50)
+
+https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/#constexpr
 
 ## Migrating to MSVC Build Tools v14.50
 
