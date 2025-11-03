@@ -7,9 +7,7 @@ ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Microsoft C/C++ (MSVC)
 
-Microsoft C/C++ makes conformance improvements and bug fixes in every release. This article lists the significant improvements by MSVC Build Tools version. To jump directly to the changes for a specific version, use the **In this article** links at the top of this article.
-
-This document lists changes starting in November 2025 when Visual Studio and the MSVC toolset versioning diverged. 
+Microsoft C/C++ makes conformance improvements and bug fixes in every release. Starting with Visual Studio 2026 18.0, major improvements are organized by MSVC Build Tools version number. To jump directly to the changes for a specific version, use the **In this article** links at the top of this article.
 
 For changes in earlier versions of Visual Studio:
 
@@ -22,18 +20,18 @@ For changes in earlier versions of Visual Studio:
 
 ## <a name="msvc_14_50"></a> C++ conformance improvements, behavior changes, and bug fixes in MSVC Build Tools v14.50
 
-MSVC Build Tools v14.50 represents a significant advancement to the MSVC compiler, bringing substantial improvements in C++23 conformance, reliability, and correctness. The extensive bug fixes and enhancements make this release particularly valuable for large-scale C++ development projects.
+MSVC Build Tools v14.50 introduces improvements to the MSVC compiler and Standard Library, including better C++23 standards conformance, enhanced reliability, and improved correctness. This release also includes numerous bug fixes and updates that benefit large-scale C++ development.
 
 This version shipped first with Visual Studio 2026 version 18.0 and includes version 19.50 of the MSVC compiler.
 
-Key highlights include:
-- Advanced C++23 feature support including `auto(x)` decay-copy and `#warning` directive
-- Comprehensive `constexpr` improvements, particularly for virtual functions
-- Major stability improvements for C++ modules
-- Extensive reliability fixes reducing internal compiler errors
-- Enhanced C++/CLI support for managed code scenarios
-- The Microsoft C++ standard library (STL) no longer supports targeting Windows 7/Server 2008 R2, Windows 8/Server 2012, or Windows 8.1/Server 2012 R2.\
-- Windows 10/Server 2016 are the minimum supported operating systems.\
+Key highlights of this release include:
+- Advanced C++23 feature support including `auto(x)` decay-copy and `#warning` directive.
+- Comprehensive `constexpr` improvements, particularly for virtual functions.
+- Major stability improvements for C++ modules.
+- Extensive reliability fixes reducing internal compiler errors.
+- Enhanced C++/CLI support for managed code scenarios.
+- The Microsoft C++ standard library (MSVC STL) no longer supports targeting Windows 7/Server 2008 R2, Windows 8/Server 2012, or Windows 8.1/Server 2012 R2.
+- Windows 10/Server 2016 are the minimum supported operating systems.
 
 For more information about performance improvements, bug fixes, and conformance updates in the Standard Library, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog), which is updated regularly.
 
@@ -45,10 +43,10 @@ MSVC Build Tools v14.50 adds support for several C++23 features, bringing the co
 
 [P0849R8](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p0849r8.html) introduces the `auto(x)` syntax for decay-copy operations directly in the language, providing a more concise way to express decay-copy semantics.
 
-Prior to P0849R8, you needed to explicitly perform decay operations:
+Before P0849R8, you needed to explicitly perform decay operations:
 
 ```cpp
-// Prior to P0849R8:
+// Before P0849R8:
 void pop_front_alike(auto& x)
 {
     using T = std::decay_t<decltype(x.front())>;
@@ -73,7 +71,7 @@ This feature provides a standardized way to perform decay-copy operations, makin
 [P2437R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2437r1.pdf) implements the C++23 `#warning` preprocessor directive, providing a standard way to emit warnings during compilation.
 
 ```cpp
-// Valid prior to C++23.
+// Valid before C++23.
 #error bad configuration...
 
 // Valid after C++23.
@@ -118,7 +116,7 @@ void g()
 }
 ```
 
-In C++20, and earlier, this code would have compiled because even though the type of `t` is `S&&` the use of `t` in `return t` is treated as a glvalue and so it can bind to the return type.\
+In C++20, and earlier, this code compiled because even though the type of `t` is `S&&` the use of `t` in `return t` is treated as a glvalue and so it can bind to the return type.\
 With C++23, `t` is treated as an xvalue and so it can't bind to an lvalue reference.\
 One fix is to change to the return type of the function from `T&` to `T&&` but this may affect code that calls this function. An alternative is to use the feature test macro that is associated with this change. For example:
 
@@ -157,27 +155,27 @@ void check(int const (&param)[3])
 
 This improvement allows more code to be evaluated at compile time, particularly when dealing with function parameters in template contexts.
 
-## Conformance Enhancements
+## Conformance enhancements
 
-Improved adherence to C++ standards:
+Improved adherence to C++ standards includes better handling of attributes, templates, and C++20/C++23 features.
 
-### Attribute Support
+### Attribute support
 
 - Added support for [`[[maybe_unused]]` on labels](https://developercommunity.visualstudio.com/t/unreferenced-label-when-ref-hidden-by-if/102076).
 - Fixed warning C4102 (unreferenced label) when the only reference was from a discarded `if constexpr` branch.
 
-### Template and Specialization Fixes
+### Template and specialization fixes
 
 - [Diagnosed ill-formed friend explicit specializations](https://developercommunity.visualstudio.com/t/Defining-explicit-function-template-spec/10933841) that were incorrectly accepted in C++20 or later.
-- Added `/Zc:enumEncoding` switch to [correctly encode enum non-type template parameters](https://developercommunity.visualstudio.com/t/Overload-resolution-fails-for-enum-non-t/10398088).
+- Added `/Zc:enumEncoding` switch to [correctly encode enum nontype template parameters](https://developercommunity.visualstudio.com/t/Overload-resolution-fails-for-enum-non-t/10398088).
 - Fixed issues with [missing 'template' keyword diagnostics](https://developercommunity.visualstudio.com/t/No-diagnostic-for-missing-template-in-d/10501221)
 
 ### C++20 and C++23 Features
 
 - Enhanced [multidimensional operator[] support](https://developercommunity.visualstudio.com/t/Multidimensional-operator-with-Wall-r/10876026)
-- Improved [concept and constraint evaluation](https://developercommunity.visualstudio.com/t/VS-1714-if-constexpr-requires--does/10905731)- 
+- Improved [concept and constraint evaluation](https://developercommunity.visualstudio.com/t/VS-1714-if-constexpr-requires--does/10905731)
 
-### Smaller Conformance Updates
+### Smaller conformance updates
 
 MSVC Build Tools v14.50 includes numerous smaller conformance improvements that enhance C++ standard compliance:
 
@@ -196,15 +194,15 @@ MSVC Build Tools v14.50 includes numerous smaller conformance improvements that 
 
 ## Bug fixes
 
-Bug fixes for C++ Modules, `constexpr`, and other fixes were made in v14.50.
+Bug fixes for C++ Modules, `constexpr`, and other fixes were made in MSVC v14.50.
 
-For a detailed list of bug fixes, see [Compiler Improvements in v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/#compiler-improvements-in-v14.50)
+For a detailed list of bug fixes, see [Compiler Improvements in v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/#compiler-improvements-in-v14.50).
 
-**Encoding of certain non-type template arguments corrected**
+**Encoding of certain nontype template arguments corrected**
 
 Affects `/stdc++20` or later.
 
-Certain non-type pointer type template arguments involving sub-objects could lead to linking issues or in some cases silent bad code generation where what should be distinct specializations collide.
+Certain nontype pointer type template arguments involving subobjects could lead to linking issues or in some cases silent bad code generation where what should be distinct specializations collide.
 
 ```cpp
 struct A
@@ -236,33 +234,34 @@ With this fix, the two calls to `f` get distinct encodings, as required.
 
 When upgrading to MSVC Build Tools v14.50, consider the following potential breaking changes and migration guidance:
 
-### C++23 Feature Adoption
+### C++23 feature adoption
 - Update code to take advantage of new `auto(x)` decay-copy syntax for cleaner template code
 - Consider using `#warning` directives for deprecation notices instead of error-prone conditional compilation
 - Review explicit object parameter usage in operators for improved consistency
 
-### `constexpr` Improvements
+### `constexpr` improvements
 - Existing `constexpr` code may now compile that previously failed, particularly with virtual functions
 - Review constant evaluation code for potential new optimization opportunities
 - Update CRTP patterns that may now work correctly with static constexpr members
 
-### Modules Migration
+### Modules migration
 - Projects using C++20 modules should see improved stability and compatibility
 - Header units now work more reliably with large codebases like Unreal Engine 5
 - Consider migrating from traditional headers to modules for better compilation performance
 
-### Compiler Diagnostics
+### Compiler diagnostics
 - New warnings may appear for previously undiagnosed issues
 - Review enum type usage if using `/Zc:enumTypes`
 - Update code that relies on implicit conversions that may now be flagged
 
-### C Code Updates
+### C code updates
 - C23 features are available with `/std:clatest`
 - `typeof` behavior changes may affect existing code
 - Review preprocessor usage for new `__VA_OPT__` availability
 
+## Provide feedback
 
-For the latest updates and to provide feedback, please visit the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) or contact the team at [visualcpp@microsoft.com](mailto:visualcpp@microsoft.com). Follow us on Twitter [@visualc](https://twitter.com/visualc) or BlueSky [@msftcpp.bsky.social](https://bsky.app/profile/msftcpp.bsky.social).
+For the latest updates and to provide feedback, visit the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) or contact the team at [visualcpp@microsoft.com](mailto:visualcpp@microsoft.com). Follow us on Twitter [@visualc](https://twitter.com/visualc) or BlueSky [@msftcpp.bsky.social](https://bsky.app/profile/msftcpp.bsky.social).
 
 If you encounter problems with MSVC in Visual Studio 2026, please let us know via the [Report a Problem](how-to-report-a-problem-with-the-visual-cpp-toolset.md) option, either from the installer or the Visual Studio IDE itself.
 
