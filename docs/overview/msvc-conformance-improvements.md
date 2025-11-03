@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Microsoft C/C++ (MSVC)"
 description: "Summary of conformance improvements in Microsoft C/C++ (MSVC)"
-ms.date: 10/31/2025
+ms.date: 11/03/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -22,12 +22,20 @@ For changes in earlier versions of Visual Studio:
 
 ## <a name="msvc_14_50"></a> C++ conformance improvements, behavior changes, and bug fixes in MSVC Build Tools v14.50
 
-Microsoft C/C++ in Visual Studio (MSVC) Build Tools v14.50 introduces significant C++ language updates, conformance improvements, and bug fixes. This version shipped first with Visual Studio 2026 version 18.0 and includes version 19.50 of the MSVC compiler.
+MSVC Build Tools v14.50 represents a significant advancement to the MSVC compiler, bringing substantial improvements in C++23 conformance, reliability, and correctness. The extensive bug fixes and enhancements make this release particularly valuable for large-scale C++ development projects.
 
-This document details the C++ language conformance improvements and compiler enhancements included in MSVC Build Tools v14.50. For more information about updates in the Standard Library, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog), which is regularly updated.
+This version shipped first with Visual Studio 2026 version 18.0 and includes version 19.50 of the MSVC compiler.
 
-The Microsoft C++ standard library (STL) no longer supports targeting Windows 7 / Server 2008 R2, Windows 8 / Server 2012, or Windows 8.1 / Server 2012 R2.\
-Windows 10 / Server 2016 are the minimum supported operating systems. 
+Key highlights include:
+- Advanced C++23 feature support including `auto(x)` decay-copy and `#warning` directive
+- Comprehensive `constexpr` improvements, particularly for virtual functions
+- Major stability improvements for C++ modules
+- Extensive reliability fixes reducing internal compiler errors
+- Enhanced C++/CLI support for managed code scenarios
+- The Microsoft C++ standard library (STL) no longer supports targeting Windows 7/Server 2008 R2, Windows 8/Server 2012, or Windows 8.1/Server 2012 R2.\
+- Windows 10/Server 2016 are the minimum supported operating systems.\
+
+For more information about performance improvements, bug fixes, and conformance updates in the Standard Library, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog), which is updated regularly.
 
 ## C++23 Features
 
@@ -88,7 +96,6 @@ struct S
 
 This change allows you to use the explicit object parameter syntax (deducing `this`) in assignment and comparison operators, providing more consistent syntax across different types of member functions.
 
-
 ### P2266R1 : Simpler implicit move
 
 The introduction of [P2266R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2266r1.html) may cause code that was previously treated as an lvalue to be treated as an xvalue or a prvalue. For example:
@@ -111,10 +118,8 @@ void g()
 }
 ```
 
-In C++20, and earlier, this code would have compiled because even though the type of `t` is `S&&` the use of `t` in `return t` is treated as a glvalue and so it can bind to the return type.
-
-With C++23, `t` is treated as an xvalue and so it can't bind to an lvalue reference.
-
+In C++20, and earlier, this code would have compiled because even though the type of `t` is `S&&` the use of `t` in `return t` is treated as a glvalue and so it can bind to the return type.\
+With C++23, `t` is treated as an xvalue and so it can't bind to an lvalue reference.\
 One fix is to change to the return type of the function from `T&` to `T&&` but this may affect code that calls this function. An alternative is to use the feature test macro that is associated with this change. For example:
 
 ```cpp
@@ -152,25 +157,6 @@ void check(int const (&param)[3])
 
 This improvement allows more code to be evaluated at compile time, particularly when dealing with function parameters in template contexts.
 
-## Smaller Conformance Updates
-
-MSVC Build Tools v14.50 includes numerous smaller conformance improvements that enhance C++ standard compliance:
-
-- [CWG2635](https://cplusplus.github.io/CWG/issues/2635): Constrained structured bindings support
-- [CWG2465](https://cplusplus.github.io/CWG/issues/2465): Coroutine parameters passed to promise constructor improvements
-- [CWG2496](https://cplusplus.github.io/CWG/issues/2496): Ref-qualifiers and virtual overriding corrections
-- [CWG2506](https://cplusplus.github.io/CWG/issues/2506): Structured bindings and array cv-qualifiers fixes
-- [CWG2507](https://cplusplus.github.io/CWG/issues/2507): Default arguments for `operator[]` support
-- [CWG2585](https://cplusplus.github.io/CWG/issues/2585): Behavior alignment with standard requirements
-- [CWG2521](https://cplusplus.github.io/CWG/issues/2521): Deprecation of 'operator string-literal identifier'
-- [CWG2528](https://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#2528): Relaxed conversion rules for the spaceship operator
-- [P2360R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2360r0.html): Extended init-statement definition to allow alias-declarations
-- [P2290R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2290r3.pdf): C++23 hexadecimal/octal delimited escape sequence support in string literals
-- [P2797R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2797r0.html): Resolution for CWG2692 regarding static and explicit object member functions with the same parameter-type-lists
-- [P2266R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2266r3.html): Simpler implicit move semantics
-
-For more information about compiler improvements and bug fixes in MSVC Build Tools v14.50, see [C++ Language Updates in MSVC Build Tools v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/)
-
 ## Conformance Enhancements
 
 Improved adherence to C++ standards:
@@ -189,11 +175,30 @@ Improved adherence to C++ standards:
 ### C++20 and C++23 Features
 
 - Enhanced [multidimensional operator[] support](https://developercommunity.visualstudio.com/t/Multidimensional-operator-with-Wall-r/10876026)
-- Improved [concept and constraint evaluation](https://developercommunity.visualstudio.com/t/VS-1714-if-constexpr-requires--does/10905731)
+- Improved [concept and constraint evaluation](https://developercommunity.visualstudio.com/t/VS-1714-if-constexpr-requires--does/10905731)- 
+
+### Smaller Conformance Updates
+
+MSVC Build Tools v14.50 includes numerous smaller conformance improvements that enhance C++ standard compliance:
+
+- [CWG2635](https://cplusplus.github.io/CWG/issues/2635): Constrained structured bindings support
+- [CWG2465](https://cplusplus.github.io/CWG/issues/2465): Coroutine parameters passed to promise constructor improvements
+- [CWG2496](https://cplusplus.github.io/CWG/issues/2496): Ref-qualifiers and virtual overriding corrections
+- [CWG2506](https://cplusplus.github.io/CWG/issues/2506): Structured bindings and array cv-qualifiers fixes
+- [CWG2507](https://cplusplus.github.io/CWG/issues/2507): Default arguments for `operator[]` support
+- [CWG2585](https://cplusplus.github.io/CWG/issues/2585): Behavior alignment with standard requirements
+- [CWG2521](https://cplusplus.github.io/CWG/issues/2521): Deprecation of 'operator string-literal identifier'
+- [CWG2528](https://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#2528): Relaxed conversion rules for the spaceship operator
+- [P2360R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2360r0.html): Extended init-statement definition to allow alias-declarations
+- [P2290R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2290r3.pdf): C++23 hexadecimal/octal delimited escape sequence support in string literals
+- [P2797R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2797r0.html): Resolution for CWG2692 regarding static and explicit object member functions with the same parameter-type-lists
+- [P2266R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2266r3.html): Simpler implicit move semantics
 
 ## Bug fixes
 
-Bug fixes for C++ Modules, `constexpr`, and other fixes were made in v14.50. For a detailed list of bug fixes, see [Compiler Improvements in v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/#compiler-improvements-in-v14.50)
+Bug fixes for C++ Modules, `constexpr`, and other fixes were made in v14.50.
+
+For a detailed list of bug fixes, see [Compiler Improvements in v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/#compiler-improvements-in-v14.50)
 
 **Encoding of certain non-type template arguments corrected**
 
@@ -256,16 +261,6 @@ When upgrading to MSVC Build Tools v14.50, consider the following potential brea
 - `typeof` behavior changes may affect existing code
 - Review preprocessor usage for new `__VA_OPT__` availability
 
-## Conclusion
-
-MSVC Build Tools v14.50 represents a significant advancement to the MSVC compiler, bringing substantial improvements in C++23 conformance, reliability, and correctness. The extensive bug fixes and enhancements make this release particularly valuable for large-scale C++ development projects.
-
-Key highlights include:
-- Advanced C++23 feature support including `auto(x)` decay-copy and `#warning` directive
-- Comprehensive `constexpr` improvements, particularly for virtual functions
-- Major stability improvements for C++ modules
-- Extensive reliability fixes reducing internal compiler errors
-- Enhanced C++/CLI support for managed code scenarios
 
 For the latest updates and to provide feedback, please visit the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) or contact the team at [visualcpp@microsoft.com](mailto:visualcpp@microsoft.com). Follow us on Twitter [@visualc](https://twitter.com/visualc) or BlueSky [@msftcpp.bsky.social](https://bsky.app/profile/msftcpp.bsky.social).
 
@@ -273,6 +268,6 @@ If you encounter problems with MSVC in Visual Studio 2026, please let us know vi
 
 ## See also
 
-[Microsoft C/C++ language conformance](visual-cpp-language-conformance.md)  
-[What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)  
+[Microsoft C/C++ language conformance](visual-cpp-language-conformance.md)\
+[What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)\
 [C++ conformance improvements in Visual Studio 2022](cpp-conformance-improvements.md)
