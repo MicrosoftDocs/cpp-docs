@@ -7,7 +7,7 @@ ms.subservice: "cpp-lang"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Microsoft C/C++ (MSVC)
 
-Microsoft C/C++ makes conformance improvements and bug fixes in every release. Starting with Visual Studio 2026 18.0, major improvements are organized by MSVC Build Tools version number. To jump directly to the changes for a specific version, use the **In this article** links at the top of this article.
+Microsoft C++ (MSVC) Build Tools makes conformance improvements and bug fixes in every release. Starting with Visual Studio 2026 version 18.0, major improvements are organized by MSVC Build Tools version number. To jump directly to the changes for a specific version, use the **In this article** links at the top of this article.
 
 For changes in earlier versions of Visual Studio:
 
