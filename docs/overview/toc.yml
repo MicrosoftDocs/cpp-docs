@@ -12,7 +12,7 @@ items:
       href: ../overview/what-s-new-for-cpp-2019.md
     - name: What's new for C++ in Visual Studio 2017
       href: ../overview/what-s-new-for-cpp-2017.md
-    - name: C++ Conformance improvements in Microsoft C/C++ (MSVC)
+    - name: C/C++ conformance improvements in Microsoft C++ (MSVC) Build Tools
       href: ../overview/msvc-conformance-improvements.md
     - name: C++ conformance improvements in Visual Studio 2022
       href: ../overview/cpp-conformance-improvements.md
