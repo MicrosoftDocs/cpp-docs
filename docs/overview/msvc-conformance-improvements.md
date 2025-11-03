@@ -20,7 +20,7 @@ For changes in earlier versions of Visual Studio:
 
 ## <a name="msvc_14_50"></a> C++ conformance improvements, behavior changes, and bug fixes in MSVC Build Tools v14.50
 
-MSVC Build Tools v14.50 introduces improvements to the MSVC compiler and Standard Library, including better C++23 standards conformance, enhanced reliability, and improved correctness. This release also includes numerous bug fixes and updates that benefit large-scale C++ development.
+MSVC Build Tools v14.50 introduces improvements to the MSVC compiler and standard library, including better C++23 standards conformance, enhanced reliability, and improved correctness. This release also includes numerous bug fixes and updates that benefit large-scale C++ development.
 
 This version shipped first with Visual Studio 2026 version 18.0 and includes version 19.50 of the MSVC compiler.
 
