@@ -33,7 +33,7 @@ Key highlights of this release include:
 - The Microsoft C++ standard library (MSVC STL) no longer supports targeting Windows 7/Server 2008 R2, Windows 8/Server 2012, or Windows 8.1/Server 2012 R2.
 - Windows 10/Server 2016 are the minimum supported operating systems.
 
-For more information about performance improvements, bug fixes, and conformance updates in the Standard Library, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog), which is updated regularly.
+For more information about performance improvements, bug fixes, and conformance updates in the standard library, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog), which is updated regularly.
 
 ## C++23 Features
 
