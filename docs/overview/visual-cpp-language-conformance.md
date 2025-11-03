@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ language conformance"
 description: "Microsoft C and C++ conformance updates by Visual Studio version."
-ms.date: 10/31/2025
+ms.date: 11/03/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -197,6 +197,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P2173R1 Attributes on Lambda-Expressions`](https://wg21.link/p2173r1) | no |
 | &emsp;[`P2186R2 Remove Garbage Collection Support`](https://wg21.link/p2186r2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2201R1 Mixed string literal concatenation`](https://wg21.link/p2201r1) | no |
+| &emsp;[`P2266R1 Simpler implicit move`](https://wg21.link/p2266r1) | VS 2026 18.0 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2223R2 Trimming whitespaces before line splicing`](https://wg21.link/p2223r2) | no |
 | &emsp;[`P2242R3 Non-literal variables (and labels and gotos) in constexpr functions`](https://wg21.link/p2242r3) | no |
 | &emsp;[`P2246R1 Character encoding of diagnostic text`](https://wg21.link/p2246r1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
@@ -575,7 +576,8 @@ A group of papers listed together indicates a Standard feature along with one or
 **VS 2022 17.2** Supported in Visual Studio 2022 version 17.2.\
 **VS 2022 17.3** Supported in Visual Studio 2022 version 17.3.\
 **VS 2022 17.4** Supported in Visual Studio 2022 version 17.4.\
-**VS 2022 17.5** Supported in Visual Studio 2022 version 17.5.
+**VS 2022 17.5** Supported in Visual Studio 2022 version 17.5.\
+**VS 2022 18** Supported in Visual Studio 2026 and beyond.
 
 ### Notes
 
@@ -645,6 +647,8 @@ These algorithms aren't presently parallelized:
 <a name="note_20abi"></a> **20abi** Because of ongoing post-release work on the C++20 standard, `<format>`, the formatting parts of `<chrono>` (which rely on `<format>`), and the range factories and range adaptors from `<ranges>` (everything that needs the `view` concept) are only available under **`/std:c++latest`**. Expect these features under **`/std:c++20`** after agreement is reached with WG21 that no further ABI-breaking changes are necessary. The remaining parts of `<chrono>` and the algorithms that apply to ranges are enabled under the **`/std:c++20`** compiler option in Visual Studio 2019 version 16.11 and later versions.
 
 <a name="note_23"></a> **23** In Visual Studio 2022 version 17.0 and up, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+<a name="note_24"></a> **24** In Visual Studio 2026 version 18.0 and up, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
 <a name="note_C11"></a> **C11** Compiler support for C11 and C17 requires Visual Studio 2019 version 16.8 or higher. Except as noted, C11 and C17 library support requires Windows SDK build 10.0.20211.0 or higher. For more information on how to install support for C11 and C17, see [Install C11 and C17 support in Visual Studio](./install-c17-support.md).
 

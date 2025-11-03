@@ -88,6 +88,51 @@ struct S
 
 This change allows you to use the explicit object parameter syntax (deducing `this`) in assignment and comparison operators, providing more consistent syntax across different types of member functions.
 
+
+### P2266R1 : Simpler implicit move
+
+The introduction of [P2266R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2266r1.html) may cause code that was previously treated as an lvalue to be treated as an xvalue or a prvalue. For example:
+
+```cpp
+#include <utility>
+
+template<typename T>
+T& f(T&& t)
+{
+   return t;
+}
+
+struct S { };
+
+void g()
+{
+   S s1{ };
+   S& s2 = f(std::move(s1));
+}
+```
+
+In C++20, and earlier, this code would have compiled because even though the type of `t` is `S&&` the use of `t` in `return t` is treated as a glvalue and so it can bind to the return type.
+
+With C++23, `t` is treated as an xvalue and so it can't bind to an lvalue reference.
+
+One fix is to change to the return type of the function from `T&` to `T&&` but this may affect code that calls this function. An alternative is to use the feature test macro that is associated with this change. For example:
+
+```cpp
+#include <type_traits>
+
+template<typename T>
+T& f(T&& t)
+{
+#if defined(__cpp_implicit_move)
+   return static_cast<std::remove_reference_t<T>&>(t);
+#else
+   return t;
+#endif
+}
+```
+
+Adding the cast means that the value-category of the return expression is now an lvalue and so it can bind to the return type.
+
 ### P2280R4: References to unknown values during constant evaluation
 
 [P2280R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2280r4.html) allows references to unknown values during constant evaluation, relaxing restrictions on `constexpr` evaluation.
@@ -126,29 +171,61 @@ MSVC Build Tools v14.50 includes numerous smaller conformance improvements that 
 
 For more information about compiler improvements and bug fixes in MSVC Build Tools v14.50, see [C++ Language Updates in MSVC Build Tools v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/)
 
-### Conformance Enhancements
+## Conformance Enhancements
 
 Improved adherence to C++ standards:
 
-#### Attribute Support
+### Attribute Support
+
 - Added support for [`[[maybe_unused]]` on labels](https://developercommunity.visualstudio.com/t/unreferenced-label-when-ref-hidden-by-if/102076).
 - Fixed warning C4102 (unreferenced label) when the only reference was from a discarded `if constexpr` branch.
 
-#### Template and Specialization Fixes
+### Template and Specialization Fixes
+
 - [Diagnosed ill-formed friend explicit specializations](https://developercommunity.visualstudio.com/t/Defining-explicit-function-template-spec/10933841) that were incorrectly accepted in C++20 or later.
 - Added `/Zc:enumEncoding` switch to [correctly encode enum non-type template parameters](https://developercommunity.visualstudio.com/t/Overload-resolution-fails-for-enum-non-t/10398088).
 - Fixed issues with [missing 'template' keyword diagnostics](https://developercommunity.visualstudio.com/t/No-diagnostic-for-missing-template-in-d/10501221)
 
-#### C++20 and C++23 Features
+### C++20 and C++23 Features
 
 - Enhanced [multidimensional operator[] support](https://developercommunity.visualstudio.com/t/Multidimensional-operator-with-Wall-r/10876026)
 - Improved [concept and constraint evaluation](https://developercommunity.visualstudio.com/t/VS-1714-if-constexpr-requires--does/10905731)
 
 ## Bug fixes
 
-Bug fixes for C++ Modules, `constexpr`, and others were made in v14.50. For a detailed list of bug fixes, see [Compiler Improvements in v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/#compiler-improvements-in-v14.50)
+Bug fixes for C++ Modules, `constexpr`, and other fixes were made in v14.50. For a detailed list of bug fixes, see [Compiler Improvements in v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/#compiler-improvements-in-v14.50)
 
-https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/#constexpr
+**Encoding of certain non-type template arguments corrected**
+
+Affects `/stdc++20` or later.
+
+Certain non-type pointer type template arguments involving sub-objects could lead to linking issues or in some cases silent bad code generation where what should be distinct specializations collide.
+
+```cpp
+struct A
+{
+    int x;
+};
+
+struct B
+{
+    int y;
+};
+
+template <auto p> void f();
+
+int main()
+{
+    static A a;
+    static B b;
+    constexpr auto px = &a.x;
+    constexpr auto py = &b.y;
+    f<px>(); // incorrect encoding of argument 'px'
+    f<py>(); // incorrect encoding of argument 'py', collided with 'px'.
+}
+```
+
+With this fix, the two calls to `f` get distinct encodings, as required. 
 
 ## Migrating to MSVC Build Tools v14.50
 
