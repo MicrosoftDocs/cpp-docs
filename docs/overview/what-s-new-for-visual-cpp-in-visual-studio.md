@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 # What's new for C++ in Visual Studio
 
-Microsoft C++ Build Tools (MSVC Build Tools) versioning is no longer synchronized with Visual Studio versioning starting with Visual Studio 2026 version 18.0 and Microsoft C++ Build Tools version 14.50. For the latest updates to MSVC going forward, see [What's new for MSVC](/cpp/overview/what-s-new-for-msvc.md).
+Microsoft C++ Build Tools (MSVC Build Tools) versioning is no longer synchronized with Visual Studio versioning starting with Visual Studio 2026 version 18.0 and Microsoft C++ Build Tools version 14.50. For the latest updates to MSVC going forward, see [What's new for MSVC](what-s-new-for-msvc.md).
 
 ## What's new for C++ in Visual Studio 2022
 
