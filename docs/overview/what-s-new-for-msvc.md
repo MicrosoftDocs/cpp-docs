@@ -3,7 +3,7 @@ title: "What's new for MSVC"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools (MSVC)."
 ms.date: 11/03/2025
 ms.service: "visual-cpp"
-ms.subservice: "compiler"
+ms.subservice: "cpp-lang"
 ms.custom: intro-whats-new
 ---
 
@@ -31,19 +31,24 @@ A quick highlight of some of the new features:
 
     With this release, the Build Tools no longer target:
     
-    Windows 7 / Windows Server 2008 R2
-    Windows 8 / Windows Server 2012
-    Windows 8.1 / Windows Server 2012 R2
+    - Windows 7 / Windows Server 2008 R2
+    - Windows 8 / Windows Server 2012
+    - Windows 8.1 / Windows Server 2012 R2
     
     To build applications using the latest C++ tools, your target platform must be Windows 10 or Windows Server 2016 (or later). These changes allow for better performance, enhanced security, and alignment with the most recent Windows platform capabilities.
-- Notices of removals for C++AMP, ARM32 toolchain, and `/DEBUG:FASTLINK` and the deprecation of `/await`:
-    The deprecations and removal of C++ feature support impact developers using C++AMP, ARM32-targeting MSVC build tools, and the `/DEBUG:FASTLINK` linker option.
-    If you're using `/DEBUG:FASTLINK`, switch to `/DEBUG:FULL` for improved debugging support.
-    To target ARM32, continue using the Visual Studio 2022 v143 build tools. For more information, see [Side-by-side Minor Version MSVC Toolsets in Visual Studio 2019](https://devblogs.microsoft.com/cppblog/side-by-side-minor-version-msvc-toolsets-in-visual-studio-2019/).
-    
-    Moreover, the /await switch is deprecated and will be removed in a future release. Developers are encouraged to use Standard C++ coroutines, available by default in C++20 or later. For projects in earlier language modes, consider using /await:strict to maintain compatibility until the switch is removed.    
- - Better AI code completions for C++. GitHub Copilot uses context from relevant files to improve inline autocomplete for C++. We've updated GitHub Copilot to include other relevant files as context. This reduces hallucinations while offering more relevant and accurate suggestions. It's aligned with the current GitHub Copilot experience for C++ in VS Code.
- - Clang-Tidy code analysis improvements supercharge your C++ code analysis with enhanced configuration options for faster builds and custom workflows. Code analysis has new configuration options. You can now allocate more processors to run code analysis as part of your build, speeding up your development workflow. Plus, you can add custom arguments to the command line used to invoke `clang-tidy`, giving you complete control over your analysis setup. Access these powerful new options from **Project Properties > Code Analysis > Clang-Tidy**. ![Screenshot of Project Properties dialog showing clang-tidy configuration options including processor allocation and custom command line arguments.](./media/clang-tidy-improvements.png)
+
+- C++20 is the default for new Console App, Windows Desktop Application, Dynamic-Link Library, and Static Library C++ projects. 
+- Easily set debugger command line arguments for any C++ project using the toolbar for `.vcxproj`, CMake, and Unreal Engine projects. This feature is no longer tied to the Game Development with C++ workload, and is available to all C++ developers without needing to install any additional workloads or components. For more information, see [Pass command-line arguments](/visualstudio/debugger/getting-started-with-the-debugger-cpp?view=visualstudio).
+- C++ Standard Library
+    - <regex> addressed several issues, enhancing both reliability and speed. [LWG-2503](https://cplusplus.github.io/LWG/issue2503) multiline option should be added to `syntax_option_type`. This is a `regex` behavioral change. By default, `_REGEX_LEGACY_MULTILINE_MODE` is 0, which requests Standard behavior. Set `_REGEX_LEGACY_MULTILINE_MODE` to 1 to request legacy behavior. For more information, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1450-insiders).
+- Generate preprocessed output for any C++ file. In Visual Studio, right-click a C++ file to instantly generate its preprocessed output, making it easy to debug macros and includes, and see errors immediately. ![Screenshot showing the right-click context menu for a C++ file with the Preprocess option highlighted.](./media/cpp-preprocess-menu-entry.png) 
+- In the Visual Studio installer, the C++ Linux workload is renamed to 'Linux, Mac, and embedded development with C++'.
+- The following have been removed: C++AMP, ARM32 toolchain, and `/DEBUG:FASTLINK`.
+    - If you use `/DEBUG:FASTLINK`, switch to `/DEBUG:FULL` for improved debugging support.
+    - To target ARM32, continue using the Visual Studio 2022 v143 build tools. For more information, see [Side-by-side Minor Version MSVC Toolsets in Visual Studio 2019](https://devblogs.microsoft.com/cppblog/side-by-side-minor-version-msvc-toolsets-in-visual-studio-2019/).
+- The `/await` switch is deprecated and will be removed in a future release. Use Standard C++ coroutines, available by default in C++20 or later. For projects in earlier language modes, consider using `/await:strict` to maintain compatibility until the switch is removed.    
+- Better AI code completions for C++. GitHub Copilot uses context from relevant files to improve inline autocomplete for C++. We've updated GitHub Copilot to include other relevant files as context. This reduces hallucinations while offering more relevant and accurate suggestions. It's aligned with the current GitHub Copilot experience for C++ in VS Code.
+- Clang-Tidy code analysis improvements supercharge your C++ code analysis with enhanced configuration options for faster builds and custom workflows. Code analysis has new configuration options: You can now allocate more processors to run code analysis as part of your build, speeding up your development workflow. Plus, you can add custom arguments to the command line used to invoke `clang-tidy`, giving you complete control over your analysis setup. Access these powerful new options from **Project Properties** > **Code Analysis** > **Clang-Tidy**: ![Screenshot of Project Properties dialog showing clang-tidy configuration options including processor allocation and custom command line arguments](./media/clang-tidy-improvements.png).
 - Inline post-return values: The Visual Studio debugger now shows the actual return values of functions. This provides real-time visibility into function behavior without stepping into code or setting up watches, making it faster to catch logic issues or unexpected results. ![Screenshot showing inline post-return values displayed in the debugger next to function call."](./media/inline-post-return-value.png)
 
 
