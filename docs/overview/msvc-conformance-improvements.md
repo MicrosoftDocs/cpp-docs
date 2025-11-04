@@ -1,5 +1,5 @@
 ---
-title: "C/C++ conformance improvements in Microsoft C++ (MSVC) Build Tools"
+title: "/C++ Conformance improvements, behavior changes, and bug fixes in Microsoft C++ (MSVC) Build Tools"
 description: "Summary of conformance improvements in Microsoft C/C++ (MSVC)"
 ms.date: 11/03/2025
 ms.service: "visual-cpp"
