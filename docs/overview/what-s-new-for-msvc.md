@@ -12,15 +12,14 @@ ms.custom: intro-whats-new
 Version 14.50 brings many updates and fixes to the Microsoft C++ compiler and tools.
 
 - For more information on what's new in all of Visual Studio, see [What's new in Visual Studio](/visualstudio/ide/whats-new-visual-studio).
-- For information about version build dates, see [Visual Studio 2022 Release History](/visualstudio/releases/2022/release-history).
 
-## What's new for MSVC version 14.50
+## What's new for MSVC Build Tools version 14.50
 
-*Released November 2025*
+* Introduced in Visual Studio 2026 version 18.0 Released November 2025.*
 
-| For more information about | See |
+| For detailed information about | See |
 |---|---|
-| What's new for C++ developers | [Augustin blog TBD](augustin blog) |
+| What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2026 version 18.0](augustin blog TBD) |
 | Standard Library (STL) merged C++26 and C++23 features, Language Working Group (CWG) issue resolutions, performance improvements, enhanced behavior, and fixed bugs | [STL Changelog MSVC Build Tools 14.50](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1450) |
 | C++ language updates | [C++ Language Updates in MSVC Build Tools v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/) |
 | C++ language conformance improvements | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.14](cpp-conformance-improvements.md#improvements_1714) | 
@@ -28,6 +27,7 @@ Version 14.50 brings many updates and fixes to the Microsoft C++ compiler and to
 A quick highlight of some of the new features:
 
 - The minimum supported operating systems for the MSVC Build Tools are Windows 10 or Windows Server 2016. 
+    - VS 2026 18.0 and later, MSVC Build Tools 14.50  no longer support targeting Windows 7/8/8.1 or Windows Server 2008 R2/2012/2012 R2, which have stopped receiving security updates.
 
     With this release, the Build Tools no longer target:
     
