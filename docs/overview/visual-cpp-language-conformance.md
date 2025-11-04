@@ -475,7 +475,6 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P2166R1 Prohibit basic_string and basic_string_view from being constructed from nullptr`](https://wg21.link/P2166R1) | VS 2022 17.0 <sup>[23](#note_23), [R](#note_R)</sup> |
 | &emsp;[`P2186R2 Removed garbage collection support`](https://wg21.link/P2186R2) | VS 2022 17.0 <sup>[23](#note_23), [Q](#note_Q)</sup> |
 | &emsp;[`P2251R1 Require span And basic_string_view To Be Trivially Copyable`](https://wg21.link/p2251r1) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
-| &emsp;[`P2266R3 Simpler implicit move`](https://wg21.link/p2266r3) | MSVC 19.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2273R3 constexpr unique_ptr`](https://wg21.link/p2273r3) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2280R4 Using unknown pointers and references in constant expressions`](https://wg21.link/p2280r4) | MSVC 19.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2290R3 Delimited escape sequences`](https://wg21.link/p2290r3) | MSVC 19.50 <sup>[24](#note_24)</sup> |
