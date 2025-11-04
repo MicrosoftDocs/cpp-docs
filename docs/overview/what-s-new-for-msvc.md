@@ -28,29 +28,47 @@ Visual Studio 2026 version 18.0 ships with Microsoft C++ (MSVC) Build Tools vers
 
 **A quick highlight of some of the new features in MSVC Build Tools version 14.50 and Visual Studio 2026 version 18.0:**
 
+**C++ language enhancements**
+
 - C++20 is the default for new Console App, Windows Desktop Application, Dynamic-Link Library, and Static Library C++ projects. 
 - C++23 preprocessing directive `#warning` allows you to generate a diagnostic message without stopping translation like `#error` does. For more information, see [`#warning` directive](/cpp/preprocessor/hash-warning-directive-c-cpp).
 - Easily set debugger command line arguments for any C++ project using the toolbar for `.vcxproj`, CMake, and Unreal Engine projects. This feature is no longer tied to the Game Development with C++ workload, and is available to all C++ developers without installing any other workloads or components. For more information, see [Pass command-line arguments](/visualstudio/debugger/getting-started-with-the-debugger-cpp?view=visualstudio&preserve-view=true).
-- C++ Standard Library
-    - `<regex>` addressed several issues, enhancing both reliability and speed. [LWG-2503](https://cplusplus.github.io/LWG/issue2503) added a multiline option to `syntax_option_type`. This is a `regex` behavioral change. By default, `_REGEX_LEGACY_MULTILINE_MODE` is 0, which requests Standard behavior. Set `_REGEX_LEGACY_MULTILINE_MODE` to 1 to request legacy behavior. For more information, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1450-insiders).
-    - Added and improved vectorized implementations of many types and functions.
-- GitHub Copilot:
-    - Copilot Chat allows you to use natural language to get answers to questions (Ask mode) or even implement changes for you automatically (Agent Mode).
-    - Copilot Chat is smarter with improved context for everyday tasks. Expect better results when searching your codebase and referencing specific lines in your code.
-    - A **Copilot Actions** option was added to the right-click context menu in the Visual Studio editor. Use it to quickly bring a specific file or lines of code you select to the attention of Copilot Chat. You can then ask Copilot to explain what the code does, make optimizations, generate comments, unit tests, and so on.
-    - Better AI code completions for C++. GitHub Copilot uses context from relevant files to improve inline autocomplete for C++. GitHub Copilot includes other relevant files as context which reduces hallucinations while offering more relevant and accurate suggestions.
+
+**Standard Library enhancements**
+
+- `<regex>` addressed several issues, enhancing both reliability and speed. [LWG-2503](https://cplusplus.github.io/LWG/issue2503) added a multiline option to `syntax_option_type`. This is a `regex` behavioral change. By default, `_REGEX_LEGACY_MULTILINE_MODE` is 0, which requests Standard behavior. Set `_REGEX_LEGACY_MULTILINE_MODE` to 1 to request legacy behavior. For more information, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1450-insiders).
+- Added and improved vectorized implementations of many types and functions.
+
+**GitHub Copilot enhancements**
+
+- Copilot Chat allows you to use natural language to get answers to questions (Ask mode) or even implement changes for you automatically (Agent Mode).
+- Copilot Chat is smarter with improved context for everyday tasks. Expect better results when searching your codebase and referencing specific lines in your code.
+- A **Copilot Actions** option was added to the right-click context menu in the Visual Studio editor. Use it to quickly bring a specific file or lines of code you select to the attention of Copilot Chat. You can then ask Copilot to explain what the code does, make optimizations, generate comments, unit tests, and so on.
+- Better AI code completions for C++. GitHub Copilot uses context from relevant files to improve inline autocomplete for C++. GitHub Copilot includes other relevant files as context which reduces hallucinations while offering more relevant and accurate suggestions.
+
+**Build enhancements**
+
 - Visual Studio 2026 now includes CMake 4.1.2 by default. CMake also includes a Visual Studio 2026 generator and modern SLNX projects, so you can build Visual Studio C++ projects directly from CMake.
+- Added IncrediBuild support for Visual Studio 2026, including the latest IncrediBuild engine and updated extension. Includes the latest version of the IncrediBuild engine and an updated extension that works with Visual Studio 2016 version 18.0. 
 - Compiler backend runtime performance improvements.
-- AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools have supported building projects targeting x64 and x86 with AddressSanitizer, which allows you to identify hard-to-find bugs with zero false positives at runtime and increase memory safety. You can now use AddressSanitizer to target ARM64. This feature is in preview, 
-- Generate preprocessed output for any C++ file. In Visual Studio, right-click a C++ file to instantly generate its preprocessed output, making it easy to debug macros and includes, and see errors immediately. ![Screenshot showing the right-click context menu for a C++ file with the Preprocess option highlighted.](./media/cpp-preprocess-menu-entry.png) 
-- In the Visual Studio installer, the C++ Linux workload is renamed to "Linux, Mac, and embedded development with C++".
+
+**Code analysis enhancements**
+
 - Clang-Tidy code analysis improvements provide enhanced configuration options for faster builds and custom workflows.
     - Code analysis has new configuration options: You can now allocate more processors to run code analysis as part of your build, speeding up your development workflow. Plus, you can add custom arguments to the command line used to invoke `clang-tidy`, giving you complete control over your analysis setup.
     - Access the new options from **Project Properties** > **Code Analysis** > **Clang-Tidy**: ![Screenshot of Project Properties dialog showing clang-tidy configuration options including processor allocation and custom command line arguments](./media/clang-tidy-improvements.png).
-- Inline post-return values: The Visual Studio debugger now shows the actual return values of functions. This provides real-time visibility into function behavior without stepping into code or setting up watches, making it faster to catch logic issues or unexpected results. ![Screenshot showing inline post-return values displayed in the debugger next to function call."](./media/inline-post-return-value.png)
-- Added IncrediBuild support for Visual Studio 2026, including the latest IncrediBuild engine and updated extension. Includes the latest version of the IncrediBuild engine and an updated extension that works with Visual Studio 2016 version 18.0. 
+- AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools have supported building projects targeting x64 and x86 with AddressSanitizer, which allows you to identify hard-to-find bugs with zero false positives at runtime and increase memory safety. You can now use AddressSanitizer to target ARM64. This feature is in preview, 
 
-**Deprecations and Removals**
+**Productivity enhancements**
+
+- Generate preprocessed output for any C++ file. In Visual Studio, right-click a C++ file to instantly generate its preprocessed output, making it easy to debug macros and includes, and see errors immediately. ![Screenshot showing the right-click context menu for a C++ file with the Preprocess option highlighted.](./media/cpp-preprocess-menu-entry.png) 
+- Inline post-return values: The Visual Studio debugger now shows the actual return values of functions. This provides real-time visibility into function behavior without stepping into code or setting up watches, making it faster to catch logic issues or unexpected results. ![Screenshot showing inline post-return values displayed in the debugger next to function call."](./media/inline-post-return-value.png)
+
+**Other**
+
+- In the Visual Studio installer, the C++ Linux workload is renamed to "Linux, Mac, and embedded development with C++".
+
+**Deprecations**
 
 - The minimum supported operating systems for the MSVC Build Tools version 14.50 are Windows 10 or Windows Server 2016. 
 - MSVC Build Tools version 14.50 no longer targets:
@@ -62,6 +80,8 @@ Visual Studio 2026 version 18.0 ships with Microsoft C++ (MSVC) Build Tools vers
     To build applications using the latest C++ tools, your target platform must be Windows 10 or Windows Server 2016 (or later). These changes allow for better performance, enhanced security, and alignment with the most recent Windows platform capabilities.
 
 - The `/await` switch is deprecated, no longer receives support, and will be removed in a future release. Use Standard C++ coroutines, available by default in C++20 or later. For projects in earlier language modes, consider using `/await:strict` to maintain compatibility until the switch is removed.
+
+The mobile development and embedded and IoT development tools are now out of support.
 
 **The following features have been removed and are no longer available:**
 
