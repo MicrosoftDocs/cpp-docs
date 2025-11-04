@@ -172,7 +172,7 @@ Improved adherence to C++ standards includes better handling of attributes, temp
 
 ### C++20 and C++23 Features
 
-- Enhanced [multidimensional operator[] support](https://developercommunity.visualstudio.com/t/Multidimensional-operator-with-Wall-r/10876026)
+- Enhanced [multidimensional `operator[]` support](https://developercommunity.visualstudio.com/t/Multidimensional-operator-with-Wall-r/10876026)
 - Improved [concept and constraint evaluation](https://developercommunity.visualstudio.com/t/VS-1714-if-constexpr-requires--does/10905731)
 
 ### Smaller conformance updates
@@ -186,7 +186,7 @@ MSVC Build Tools v14.50 includes numerous smaller conformance improvements that 
 - [CWG2507](https://cplusplus.github.io/CWG/issues/2507): Default arguments for `operator[]` support
 - [CWG2585](https://cplusplus.github.io/CWG/issues/2585): Behavior alignment with standard requirements
 - [CWG2521](https://cplusplus.github.io/CWG/issues/2521): Deprecation of 'operator string-literal identifier'
-- [CWG2528](https://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#2528): Relaxed conversion rules for the spaceship operator
+- [CWG2528](https://cplusplus.github.io/CWG/issues/2528): Relaxed conversion rules for the spaceship operator
 - [P2360R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2360r0.html): Extended init-statement definition to allow alias-declarations
 - [P2290R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2290r3.pdf): C++23 hexadecimal/octal delimited escape sequence support in string literals
 - [P2797R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/p2797r0.html): Resolution for CWG2692 regarding static and explicit object member functions with the same parameter-type-lists
@@ -194,13 +194,13 @@ MSVC Build Tools v14.50 includes numerous smaller conformance improvements that 
 
 ## Bug fixes
 
-Bug fixes for C++ Modules, `constexpr`, and other fixes were made in MSVC v14.50.
+Bug fixes for C++ Modules, `constexpr`, and other fixes were made in MSVC Build Tools v14.50.
 
 For a detailed list of bug fixes, see [Compiler Improvements in v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/#compiler-improvements-in-v14.50).
 
 **Encoding of certain nontype template arguments corrected**
 
-Affects `/stdc++20` or later.
+Affects `/std:c++20` or later.
 
 Certain nontype pointer type template arguments involving subobjects could lead to linking issues or in some cases silent bad code generation where what should be distinct specializations collide.
 
@@ -261,7 +261,7 @@ When upgrading to MSVC Build Tools v14.50, consider the following potential brea
 
 ## Provide feedback
 
-For the latest updates and to provide feedback, visit the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) or contact the team at [visualcpp@microsoft.com](mailto:visualcpp@microsoft.com). Follow us on Twitter [@visualc](https://twitter.com/visualc) or BlueSky [@msftcpp.bsky.social](https://bsky.app/profile/msftcpp.bsky.social).
+For the latest updates and to provide feedback, visit the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) or contact the team at [visualcpp@microsoft.com](mailto:visualcpp@microsoft.com). Follow us on X [@visualc](https://x.com/visualc) or BlueSky [@msftcpp.bsky.social](https://bsky.app/profile/msftcpp.bsky.social).
 
 If you encounter problems with MSVC in Visual Studio 2026, please let us know via the [Report a Problem](how-to-report-a-problem-with-the-visual-cpp-toolset.md) option, either from the installer or the Visual Studio IDE itself.
 

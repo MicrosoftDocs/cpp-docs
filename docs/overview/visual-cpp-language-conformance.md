@@ -197,11 +197,9 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P2173R1 Attributes on Lambda-Expressions`](https://wg21.link/p2173r1) | no |
 | &emsp;[`P2186R2 Remove Garbage Collection Support`](https://wg21.link/p2186r2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2201R1 Mixed string literal concatenation`](https://wg21.link/p2201r1) | no |
-| &emsp;[`P2266R1 Simpler implicit move`](https://wg21.link/p2266r1) | MSVC 14.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2223R2 Trimming whitespaces before line splicing`](https://wg21.link/p2223r2) | no |
 | &emsp;[`P2242R3 Non-literal variables (and labels and gotos) in constexpr functions`](https://wg21.link/p2242r3) | no |
 | &emsp;[`P2246R1 Character encoding of diagnostic text`](https://wg21.link/p2246r1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
-| &emsp;[`P2266R3 Simpler implicit move`](https://wg21.link/p2266r3) | no |
 | &emsp;[`P2280R4 Using unknown pointers and references in constant expressions`](https://wg21.link/p2280r4) | no |
 | &emsp;[`P2290R3 Delimited escape sequences`](https://wg21.link/p2290r3) | no |
 | &emsp;[`P2295R6 Support for UTF-8 as a portable source file encoding`](https://wg21.link/p2295r6) | no |
@@ -477,22 +475,22 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P2166R1 Prohibit basic_string and basic_string_view from being constructed from nullptr`](https://wg21.link/P2166R1) | VS 2022 17.0 <sup>[23](#note_23), [R](#note_R)</sup> |
 | &emsp;[`P2186R2 Removed garbage collection support`](https://wg21.link/P2186R2) | VS 2022 17.0 <sup>[23](#note_23), [Q](#note_Q)</sup> |
 | &emsp;[`P2251R1 Require span And basic_string_view To Be Trivially Copyable`](https://wg21.link/p2251r1) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
-| &emsp;[`P2266R3 Simpler implicit move`](https://wg21.link/p2266r3) | MSVC 14.50 <sup>[24](#note_24)</sup> |
+| &emsp;[`P2266R3 Simpler implicit move`](https://wg21.link/p2266r3) | MSVC 19.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2273R3 constexpr unique_ptr`](https://wg21.link/p2273r3) | VS 2022 17.3 <sup>[23](#note_23)</sup> |
-| &emsp;[`P2280R4 Using unknown pointers and references in constant expressions`](https://wg21.link/p2280r4) | MSVC 14.50 <sup>[24](#note_24)</sup> |
-| &emsp;[`P2290R3 Delimited escape sequences`](https://wg21.link/p2290r3) | MSVC 14.50 <sup>[24](#note_24)</sup> |
+| &emsp;[`P2280R4 Using unknown pointers and references in constant expressions`](https://wg21.link/p2280r4) | MSVC 19.50 <sup>[24](#note_24)</sup> |
+| &emsp;[`P2290R3 Delimited escape sequences`](https://wg21.link/p2290r3) | MSVC 19.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2291R3 constexpr Integral <charconv>`](https://wg21.link/p2291r3) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2302R4 ranges::contains, ranges::contains_subrange`](https://wg21.link/p2302r4) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2321R2 std::zip`](https://wg21.link/p2321r2) | partial in VS 2022 17.5 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2322R6 ranges::fold_left, ranges::fold_right, etc.`](https://wg21.link/p2322r6) | VS 2022 17.5 <sup>[23](#note_23)</sup> |
-| &emsp;[`P2360R0 Extend init-statement to allow alias-declaration`](https://wg21.link/p2360r0) | MSVC 14.50 <sup>[24](#note_24)</sup> |
+| &emsp;[`P2360R0 Extend init-statement to allow alias-declaration`](https://wg21.link/p2360r0) | MSVC 19.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2387R3 Pipe Support For User-Defined Range Adaptors`](https://wg21.link/p2387r3) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2393R1 Cleaning Up Integer-Class Types`](https://wg21.link/p2393r1) | VS 2022 17.2 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2401R0 Conditional noexcept For exchange()`](https://wg21.link/p2401r0) | VS 2022 17.1 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2408R5 Ranges Iterators As Inputs To Non-Ranges Algorithms`](https://wg21.link/p2408r5) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2417R2 More constexpr bitset`](https://wg21.link/p2417r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2419R2 Clarify Handling Of Encodings In Localized Formatting Of chrono Types`](https://wg21.link/p2419r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
-| &emsp;[`P2437R1 Support for #warning`](https://wg21.link/p2437r1) | MSVC 14.50 <sup>[24](#note_24)</sup> |
+| &emsp;[`P2437R1 Support for #warning`](https://wg21.link/p2437r1) | MSVC 19.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2438R2 string::substr() &&`](https://wg21.link/p2438r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2440R1 ranges::iota, ranges::shift_left, ranges::shift_right`](https://wg21.link/p2440r1) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2441R2 views::join_with`](https://wg21.link/p2441r2) | VS 2022 17.4 <sup>[23](#note_23)</sup> |
@@ -577,7 +575,7 @@ A group of papers listed together indicates a Standard feature along with one or
 **VS 2022 17.3** Supported in Visual Studio 2022 version 17.3.\
 **VS 2022 17.4** Supported in Visual Studio 2022 version 17.4.\
 **VS 2022 17.5** Supported in Visual Studio 2022 version 17.5.\
-**MSVC 14.50** Supported in MSVC Compiler 14.50 and beyond. Support first shipped with Visual Studio 2026 18.0.
+**MSVC 19.50** Supported in MSVC Compiler 19.50 and beyond. Support first shipped with Visual Studio 2026 18.0.
 
 ### Notes
 
@@ -648,7 +646,7 @@ These algorithms aren't presently parallelized:
 
 <a name="note_23"></a> **23** In Visual Studio 2022 version 17.0 and up, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-<a name="note_24"></a> **24** In MSVC 14.50 and up, first shipped with Visual Studio 2026 version 18.0, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+<a name="note_24"></a> **24** In MSVC 19.50 and up, first shipped with Visual Studio 2026 version 18.0, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
 <a name="note_C11"></a> **C11** Compiler support for C11 and C17 requires Visual Studio 2019 version 16.8 or higher. Except as noted, C11 and C17 library support requires Windows SDK build 10.0.20211.0 or higher. For more information on how to install support for C11 and C17, see [Install C11 and C17 support in Visual Studio](./install-c17-support.md).
 
