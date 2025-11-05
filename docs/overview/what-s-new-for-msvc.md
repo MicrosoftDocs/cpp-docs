@@ -19,7 +19,7 @@ Version 14.50 brings many updates and fixes to the Microsoft C++ compiler and ot
 
 Visual Studio 2026 version 18.0 ships with the v145 platform toolset for MSBuild C++ projects and Microsoft C++ (MSVC) Build Tools version 14.50, which offers the best conformance, build performance, and runtime performance story yet. To access to all the new language features, build with `/std:c++latest`, or use `/std:c++23preview` if you want to be restricted to features up to C++23.
 
-MSVC Build Tools version 14.50 preserves binary compatibility with code built with MSVC tools shipped in Visual Studio 2015 or later. For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](https://learn.microsoft.com/en-us/cpp/porting/binary-compat-2015-2017).
+MSVC Build Tools version 14.50 preserves binary compatibility with code built with MSVC tools shipped in Visual Studio 2015 or later. For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](/cpp/porting/binary-compat-2015-2017).
 
 | For detailed information about | See |
 |---|---|
@@ -60,7 +60,7 @@ MSVC Build Tools version 14.50 preserves binary compatibility with code built wi
 - Clang-Tidy code analysis improvements provide enhanced configuration options for faster builds and custom workflows.
     - Code analysis has new configuration options: You can now allocate more processors to run code analysis as part of your build, speeding up your development workflow. Plus, you can add custom arguments to the command line used to invoke `clang-tidy`, giving you complete control over your analysis setup.
     - Access the new options from **Project Properties** > **Code Analysis** > **Clang-Tidy**: ![Screenshot of Project Properties dialog showing clang-tidy configuration options including processor allocation and custom command line arguments](./media/clang-tidy-improvements.png).
-- AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools have supported building projects that target x64 and x86 with [AddressSanitizer](https://learn.microsoft.com/cpp/sanitizers/asan?view=msvc-170), which allows you to identify hard-to-find bugs with zero false positives at runtime and increase memory safety. You can now use AddressSanitizer to target ARM64. This feature is in preview.
+- AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools have supported building projects that target x64 and x86 with [AddressSanitizer](/cpp/sanitizers/asan), which allows you to identify hard-to-find bugs with zero false positives at runtime and increase memory safety. You can now use AddressSanitizer to target ARM64. This feature is in preview.
 
 **Productivity enhancements**
 
@@ -90,7 +90,7 @@ The mobile development and embedded and IoT development tools are no longer supp
 
 - C++AMP
 - ARM32 toolchain: if you still need to build for ARM32, use an older version of the MSVC Build Tools. For more information, see [Side-by-side Minor Version MSVC Toolsets in Visual Studio 2019](https://devblogs.microsoft.com/cppblog/side-by-side-minor-version-msvc-toolsets-in-visual-studio-2019/).
-- `/DEBUG:FASTLINK` compiler switch. Use [`/DEBUG:FULL`](https://learn.microsoft.com/cpp/build/reference/debug-generate-debug-info) for improved debugging support.
+- `/DEBUG:FASTLINK` compiler switch. Use [`/DEBUG:FULL`](/cpp/build/reference/debug-generate-debug-info) for improved debugging support.
 
 ## Feedback and suggestions
 
