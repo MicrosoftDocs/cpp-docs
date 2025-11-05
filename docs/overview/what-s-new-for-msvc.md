@@ -50,7 +50,7 @@ MSVC Build Tools version 14.50 preserves binary compatibility with code built wi
 
 **Build enhancements**
 
-- Visual Studio 2026 now includes CMake 4.1.2 by default. CMake also includes a Visual Studio 2026 generator and modern SLNX projects, so you can build Visual Studio C++ projects directly from CMake.
+- Visual Studio 2026 now includes CMake 4.1.1 by default. CMake also includes a Visual Studio 2026 generator and modern SLNX projects, so you can build Visual Studio C++ projects directly from CMake.
 - Includes the latest version of the IncrediBuild engine and an updated extension that works with Visual Studio 2026 version 18.0. 
 - Compiler backend runtime performance improvements. Up to 6% as measured on Unreal Engine's City Sample RenderThread. For more information, see [Why you should upgrade your C++ build tools](https://devblogs.microsoft.com/cppblog/upgrading-c-projects-to-visual-studio-2026/#why-you-should-upgrade-your-c++-build-tools).
 - The Visual Studio setup assistant can help you retarget your projects, so they build with the latest MSVC Build Tools. For more information, see [Retarget your projects with the setup assistant](https://devblogs.microsoft.com/cppblog/upgrading-c-projects-to-visual-studio-2026/#retarget-your-projects-with-the-setup-assistant).
@@ -60,7 +60,7 @@ MSVC Build Tools version 14.50 preserves binary compatibility with code built wi
 - Clang-Tidy code analysis improvements provide enhanced configuration options for faster builds and custom workflows.
     - Code analysis has new configuration options: You can now allocate more processors to run code analysis as part of your build, speeding up your development workflow. Plus, you can add custom arguments to the command line used to invoke `clang-tidy`, giving you complete control over your analysis setup.
     - Access the new options from **Project Properties** > **Code Analysis** > **Clang-Tidy**: ![Screenshot of Project Properties dialog showing clang-tidy configuration options including processor allocation and custom command line arguments](./media/clang-tidy-improvements.png).
-- AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools have supported building projects that target x64 and x86 with [AddressSanitizer](/cpp/sanitizers/asan), which allows you to identify hard-to-find bugs with zero false positives at runtime and increase memory safety. You can now use AddressSanitizer to target ARM64. This feature is in preview.
+- AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools have supported building projects that target x64 and x86 with [AddressSanitizer](/cpp/sanitizers/asan), which allows you to identify hard-to-find memory safety issues with zero false positives at runtime and increase memory safety. Now you can use AddressSanitizer to target ARM64. This feature is in preview.
 
 **Productivity enhancements**
 
@@ -82,7 +82,7 @@ MSVC Build Tools version 14.50 preserves binary compatibility with code built wi
     
     These changes allow for better performance, enhanced security, and alignment with the most recent Windows platform capabilities.
 
-The MSVC compiler switch `/await` is being deprecated and will be removed in a future release. This switch enabled an early draft implementation of C++ coroutines using the `<experimental/coroutine>` header. Developers should transition to standard C++ coroutines by using the `<coroutine>` header available in C++20 and later. For C++14/17 projects, use `/await:strict` (which isn't being deprecated) to access the standard `<coroutine>` header without enabling other C++20 features.
+The MSVC compiler switch [`/await`](/cpp/build/reference/await-enable-coroutine-support) is being deprecated and will be removed in a future release. This switch enabled an early draft implementation of C++ coroutines using the `<experimental/coroutine>` header. Developers should transition to standard C++ coroutines by using the `<coroutine>` header available in C++20 and later. For C++14/17 projects, use `/await:strict` (which isn't being deprecated) to access the standard `<coroutine>` header without enabling other C++20 features.
 
 The mobile development and embedded and IoT development tools are no longer supported. The mobile development with C++ workload and Android NDK component in the Visual Studio installer are no longer supported and will be removed in a future Visual Studio update. This impacts tooling support for iOS and Android development, including new projects, building, and debugging.
 
@@ -90,7 +90,7 @@ The mobile development and embedded and IoT development tools are no longer supp
 
 - C++AMP
 - ARM32 toolchain: if you still need to build for ARM32, use an older version of the MSVC Build Tools. For more information, see [Side-by-side Minor Version MSVC Toolsets in Visual Studio 2019](https://devblogs.microsoft.com/cppblog/side-by-side-minor-version-msvc-toolsets-in-visual-studio-2019/).
-- `/DEBUG:FASTLINK` compiler switch. Use [`/DEBUG:FULL`](/cpp/build/reference/debug-generate-debug-info) for improved debugging support.
+- `/DEBUG:FASTLINK` linker switch. Use [`/DEBUG:FULL`](/cpp/build/reference/debug-generate-debug-info) for improved debugging support.
 
 ## Feedback and suggestions
 
