@@ -21,7 +21,7 @@ Visual Studio 2026 version 18.0 ships with Microsoft C++ (MSVC) Build Tools vers
 
 | For detailed information about | See |
 |---|---|
-| What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2026 version 18.0](augustin blog TBD) |
+| What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2026 version 18.0](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2026-version-18-0) |
 | Standard Library (STL) improvements | [STL Changelog MSVC Build Tools 14.50](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1450) |
 | C++ language updates | [C++ Language Updates in MSVC Build Tools v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/) |
 | C++ language conformance improvements | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.14](cpp-conformance-improvements.md#improvements_1714) | 
