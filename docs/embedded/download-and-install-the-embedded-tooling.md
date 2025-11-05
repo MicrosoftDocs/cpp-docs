@@ -25,7 +25,7 @@ To use the embedded development tools in Visual Studio, you must install the req
 
 1. Open the Visual Studio Installer. In Visual Studio Installer, choose **Modify** next to your installation of Visual Studio, and then select the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux and embedded development with C++** workload.
 
-   ![Screenshot showing the Visual C++ for Linux Development workload item in Visual Studio Installer.](media/linux-and-embedded-workload.png)
+   ![Screenshot showing the Microsoft C++ for Linux Development workload item in Visual Studio Installer.](media/linux-and-embedded-workload.png)
 
 1. Choose **Modify** to continue with the installation.
 

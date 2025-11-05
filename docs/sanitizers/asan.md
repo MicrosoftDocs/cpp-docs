@@ -157,7 +157,7 @@ To enable AddressSanitizer for a [CMake project created to target Windows](../bu
 
 1. Choose the **Edit JSON** link in the editor. This selection switches the view to raw JSON.
 
-1. Add the following snippet to the `"windows-base"` preset, inside `"configurePresets":` to turn on Address Sanitizer:
+1. Add the following snippet to the `"windows-base"` preset, inside `"configurePresets":` to turn on AddressSanitizer:
 
     ```json
     "environment": {
@@ -192,7 +192,7 @@ To enable AddressSanitizer for a [CMake project created to target Windows](../bu
           },
     ```
 
-1. Address sanitizer doesn't work if edit-and-continue is specified (`/ZI`), which is enabled by default for new CMake projects. In `CMakeLists.txt`, comment out (prefix with `#`) the line that starts with `set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT"`. That line looks something like this, afterwards:
+1. AddressSanitizer doesn't work if edit-and-continue is specified (`/ZI`), which is enabled by default for new CMake projects. In `CMakeLists.txt`, comment out (prefix with `#`) the line that starts with `set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT"`. That line looks something like this, afterwards:
 
     ```json
     # set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")

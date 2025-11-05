@@ -8,7 +8,7 @@ ms.topic: how-to
 ---
 # Understanding Custom Build Steps and Build Events
 
-From within the Visual C++ development environment, there are three basic ways to customize the build process:
+Within the C++ development environment, there are three basic ways to customize the build process:
 
 - **Custom Build Steps**
 

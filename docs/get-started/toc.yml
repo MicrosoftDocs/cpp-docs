@@ -1,5 +1,5 @@
 items: 
-- name: Get started with Visual C++
+- name: Get started with Microsoft C++
   expanded: true
   items:
     - name: Install C++ support in Visual Studio

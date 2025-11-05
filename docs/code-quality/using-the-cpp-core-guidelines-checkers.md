@@ -8,7 +8,7 @@ dev_langs:
 ---
 # Use the C++ Core Guidelines checkers
 
-The C++ Core Guidelines are a portable set of guidelines, rules, and best practices about coding in C++ created by C++ experts and designers. Visual Studio currently supports a subset of these rules as part of its code analysis tools for C++. The core guideline checkers are installed by default in Visual Studio 2017 and Visual Studio 2019. They're [available as a NuGet package for Visual Studio 2015](#vs2015_corecheck).
+The C++ Core Guidelines are a portable set of guidelines, rules, and best practices about coding in C++ created by C++ experts and designers. Visual Studio currently supports a subset of these rules as part of its Microsoft C++ Code Analysis tools. The core guideline checkers are installed by default in Visual Studio 2017 and Visual Studio 2019. They're [available as a NuGet package for Visual Studio 2015](#vs2015_corecheck).
 
 ## The C++ Core Guidelines Project
 

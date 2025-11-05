@@ -24,7 +24,7 @@ If your application has no manifest and depends on a DLL that Windows can't find
 
 If your application is deployed on a computer that doesn't have Visual Studio, and it crashes with error messages that resemble the previous ones, check these things:
 
-1. Follow the steps that are described in [Understanding the Dependencies of a Visual C++ Application](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md). The dependency walker can show most dependencies for an application or DLL. If you observe that some DLLs are missing, install them on the computer on which you are trying to run your application.
+1. Follow the steps that are described in [Understanding the Dependencies of a Microsoft C++ Application](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md). The dependency walker can show most dependencies for an application or DLL. If you observe that some DLLs are missing, install them on the computer on which you are trying to run your application.
 
 1. The operating system loader uses the application manifest to load assemblies that the application depends on. The manifest can either be embedded in the binary as a resource, or installed as a separate file in the application folder. To check whether the manifest is embedded in the binary, open the binary in Visual Studio and look for RT_MANIFEST in its list of resources. If you can't find an embedded manifest, look in the application folder for a file that's named something like <binary_name>.\<extension>.manifest.
 
@@ -41,7 +41,7 @@ If your application is deployed on a computer that doesn't have Visual Studio, a
 
 ## Example
 
-Assume we have an application, appl.exe, that's built by using Visual C++. The application manifest either is embedded in appl.exe as the binary resource RT_MANIFEST, which has an ID equal to 1, or is stored as the separate file appl.exe.manifest. The content of this manifest resembles this:
+Assume we have an application, appl.exe, that's built using Microsoft C++ Build Tools. The application manifest either is embedded in appl.exe as the binary resource RT_MANIFEST, which has an ID equal to 1, or is stored as the separate file appl.exe.manifest. The content of this manifest resembles this:
 
 ```
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">

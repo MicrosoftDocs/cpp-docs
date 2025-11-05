@@ -77,7 +77,7 @@ The *`clang_rt.asan*.dll`* runtime files are installed next to the compilers in 
 
 ## Custom property sheet support
 
-The Visual Studio Property Manager window allows you to add custom *`.props`* files to your projects. Even though the **Enable Address Sanitizer** property (`<EnableASAN>`) is shown, the build doesn't honor it. The build doesn't honor it because the custom *`.props`* files are included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
+The Visual Studio Property Manager window allows you to add custom *`.props`* files to your projects. Even though the **Enable AddressSanitizer** property (`<EnableASAN>`) is shown, the build doesn't honor it. The build doesn't honor it because the custom *`.props`* files are included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
 
 As a workaround, create a *`Directory.Build.props`* file in the root of your project to define the `<EnableASAN>` property. For more information, see [Customize C++ builds](/visualstudio/msbuild/customize-your-build#customize-c-builds).
 

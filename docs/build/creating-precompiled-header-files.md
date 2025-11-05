@@ -348,5 +348,5 @@ int main( void )
 [MSVC compiler options](reference/compiler-options.md)\
 [Overview of modules in C++](../cpp/modules-cpp.md)\
 [Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md)\
-[Walkthrough: Build and import header units in your Visual C++ projects](walkthrough-header-units.md)\
+[Walkthrough: Build and import header units in your Microsoft C++ projects](walkthrough-header-units.md)\
 [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1)

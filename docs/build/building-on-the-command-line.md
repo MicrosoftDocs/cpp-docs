@@ -1,15 +1,15 @@
 ---
-title: "Use the Microsoft C++ toolset from the command line"
-description: "Use the Microsoft C++ (MSVC) compiler toolset from the command line outside of the Visual Studio IDE."
+title: "Use the Microsoft C++ Build Tools from the command line"
+description: "Use the Microsoft C++ (MSVC) Build Tools from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
 ms.date: 04/07/2022
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ms.topic: how-to
 ---
-# Use the Microsoft C++ toolset from the command line
+# Use the Microsoft C++ Build Tools from the command line
 
-You can build C and C++ applications on the command line by using tools that are included in Visual Studio. The Microsoft C++ (MSVC) compiler toolset is also downloadable as a standalone package. You don't need to install the Visual Studio IDE if you don't plan to use it.
+You can build C and C++ applications on the command line by using tools that are included in Visual Studio. The Microsoft C++ (MSVC) Build Tools are also downloadable as a standalone package. You don't need to install the Visual Studio IDE if you don't plan to use it.
 
 > [!NOTE]
 > This article is about how to set up an environment to use the individual compilers, linkers, librarian, and other basic tools. The native project build system in Visual Studio, based on MSBuild, doesn't use the environment as described in this article. For more information on how to use MSBuild from the command line, see [MSBuild on the command line - C++](msbuild-visual-cpp.md).
@@ -23,13 +23,13 @@ If you've installed Visual Studio and a C++ workload, you have all the command-l
 ::: moniker-end
 ::: moniker range="<=msvc-150"
 
-If you've installed Visual Studio and a C++ workload, you have all the command-line tools. For information on how to install C++ and Visual Studio, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md). If you only want the command-line toolset, download the [Build Tools for Visual Studio 2017](https://my.visualstudio.com/Downloads?q=2017). When you run the downloaded executable, it updates and runs the Visual Studio Installer. To install only the tools you need for C++ development, select the **Visual C++ build tools** workload. You can select optional libraries and toolsets to include under **Installation details**. To build code by using the Visual Studio 2015 toolset, select the optional MSVC v140 build tools. When you're satisfied with your selections, choose **Install**.
+If you've installed Visual Studio and a C++ workload, you have all the command-line tools. For information on how to install C++ and Visual Studio, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md). If you only want the command-line toolset, download the [Build Tools for Visual Studio 2017](https://my.visualstudio.com/Downloads?q=2017). When you run the downloaded executable, it updates and runs the Visual Studio Installer. To install only the tools you need for C++ development, select the **Desktop development with C++** workload. You can select optional libraries and toolsets to include under **Installation details**. To build code by using the Visual Studio 2015 toolset, select the optional MSVC v140 build tools. When you're satisfied with your selections, choose **Install**.
 
 ::: moniker-end
 
 ## How to use the command-line tools
 
-When you choose one of the C++ workloads in the Visual Studio Installer, it installs the Visual Studio *platform toolset*. A platform toolset has all the C and C++ tools for a specific Visual Studio version. The tools include the C/C++ compilers, linkers, assemblers, and other build tools, and matching libraries and header files. You can use all of these tools at the command line. They're also used internally by the Visual Studio IDE. There are separate x86-hosted and x64-hosted compilers and tools to build code for x86, x64, ARM, and ARM64 targets. Each set of tools for a particular host and target build architecture is stored in its own directory.
+When you choose one of the C++ workloads in the Visual Studio Installer, by default, it installs a particular version of the MSVC Build Tools package. For Visual Studio 2022 and earlier, this is organized by a *platform toolset* (v### version format) that has all the C and C++ tools for a specific version of Visual Studio. For Visual Studio 2026 and later, this consists of the MSVC version (v##.## version format), which has all the C and C++ tools for that particular MSVC package. The MSVC version is decoupled from the Visual Studio version. The tools include the C/C++ compilers, linkers, assemblers, and other build tools, and matching libraries and header files. You can use all of these tools at the command-line. They're also used internally by the Visual Studio IDE. There are separate x86-hosted and x64-hosted compilers and tools that build code for x86, x64, ARM, and ARM64 targets. Each set of tools for a particular host and target build architecture is stored in its own directory.
 
 To work correctly, the tools require several specific environment variables to be set. These variables are used to add the tools to the path, and to set the locations of include files, library files, and SDKs. To make it easy to set these environment variables, the installer creates customized *command files*, or batch files, during installation. You can run one of these command files to set a specific host and target build architecture, Windows SDK version, and platform toolset. For convenience, the installer also creates shortcuts in your Start menu. The shortcuts open developer command prompt windows by using these command files for specific combinations of host and target. These shortcuts ensure all the required environment variables are set and ready to use.
 
