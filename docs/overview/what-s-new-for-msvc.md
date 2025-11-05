@@ -57,7 +57,7 @@ Visual Studio 2026 version 18.0 ships with Microsoft C++ (MSVC) Build Tools vers
 - Clang-Tidy code analysis improvements provide enhanced configuration options for faster builds and custom workflows.
     - Code analysis has new configuration options: You can now allocate more processors to run code analysis as part of your build, speeding up your development workflow. Plus, you can add custom arguments to the command line used to invoke `clang-tidy`, giving you complete control over your analysis setup.
     - Access the new options from **Project Properties** > **Code Analysis** > **Clang-Tidy**: ![Screenshot of Project Properties dialog showing clang-tidy configuration options including processor allocation and custom command line arguments](./media/clang-tidy-improvements.png).
-- AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools have supported building projects targeting x64 and x86 with AddressSanitizer, which allows you to identify hard-to-find bugs with zero false positives at runtime and increase memory safety. You can now use AddressSanitizer to target ARM64. This feature is in preview, 
+- AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools have supported building projects that target x64 and x86 with AddressSanitizer, which allows you to identify hard-to-find bugs with zero false positives at runtime and increase memory safety. You can now use AddressSanitizer to target ARM64. This feature is in preview.
 
 **Productivity enhancements**
 
