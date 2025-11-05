@@ -9,7 +9,7 @@ ms.custom: intro-whats-new
 
 # What's new for MSVC Build Tools
 
-Version 14.50 brings many updates and fixes to the Microsoft C++ compiler and tools.
+Version 14.50 brings many updates and fixes to the Microsoft C++ compiler and other build tools.
 
 - For more information on what's new in all of Visual Studio, see [What's new in Visual Studio](/visualstudio/ide/whats-new-visual-studio).
 
