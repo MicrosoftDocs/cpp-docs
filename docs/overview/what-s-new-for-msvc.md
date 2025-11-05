@@ -1,7 +1,7 @@
 ---
 title: "What's new for MSVC Build Tools"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools (MSVC)."
-ms.date: 11/04/2025
+ms.date: 11/05/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ms.custom: intro-whats-new
@@ -19,14 +19,14 @@ Version 14.50 brings many updates and fixes to the Microsoft C++ compiler and ot
 
 Visual Studio 2026 version 18.0 ships with the v145 platform toolset for MSBuild C++ projects and Microsoft C++ (MSVC) Build Tools version 14.50, which offers the best conformance, build performance, and runtime performance story yet. To access to all the new language features, build with `/std:c++latest`, or use `/std:c++23preview` if you want to be restricted to features up to C++23.
 
-MSVC Build Tools version 14.50 preserves binary compatibility with code built with MSVC tools shipped in Visual Studio 2015 or later. 
+MSVC Build Tools version 14.50 preserves binary compatibility with code built with MSVC tools shipped in Visual Studio 2015 or later. For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](https://learn.microsoft.com/en-us/cpp/porting/binary-compat-2015-2017).
 
 | For detailed information about | See |
 |---|---|
 | What's new for C++ developers | [What’s New for C++ Developers in Visual Studio 2026 version 18.0](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2026-version-18-0) |
 | Standard Library (STL) improvements | [STL Changelog MSVC Build Tools 14.50](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1450) |
 | C++ language updates | [C++ Language Updates in MSVC Build Tools v14.50](https://devblogs.microsoft.com/cppblog/c-language-updates-in-msvc-build-tools-v14-50/) |
-| C++ language conformance improvements | [C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2022 17.14](cpp-conformance-improvements.md#improvements_1714) | 
+| C++ language conformance improvements | [C/C++ Conformance improvements, behavior changes, and bug fixes in Microsoft C++ (MSVC) Build Tools](msvc-conformance-improvements.md) | 
 
 **A quick highlight of some of the new features in MSVC Build Tools version 14.50 and Visual Studio 2026 version 18.0:**
 
@@ -38,7 +38,7 @@ MSVC Build Tools version 14.50 preserves binary compatibility with code built wi
 
 **Standard Library enhancements**
 
-- `<regex>` addressed several issues, enhancing both reliability and speed. [LWG-2503](https://cplusplus.github.io/LWG/issue2503) added a multiline option to `syntax_option_type`. This is a `regex` behavioral change. By default, `_REGEX_LEGACY_MULTILINE_MODE` is 0, which requests Standard behavior. Set `_REGEX_LEGACY_MULTILINE_MODE` to 1 to request legacy behavior. For more information, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1450-insiders).
+- `<regex>` addressed several issues, enhancing both reliability and speed. [LWG-2503](https://cplusplus.github.io/LWG/issue2503) added a multiline option to `syntax_option_type`. This is a `regex` behavioral change. By default, `_REGEX_LEGACY_MULTILINE_MODE` is 0, which requests Standard behavior. Set `_REGEX_LEGACY_MULTILINE_MODE` to 1 to request legacy behavior. For more information, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1450).
 - Added and improved vectorized implementations of many types and functions.
 
 **GitHub Copilot enhancements**
@@ -51,7 +51,7 @@ MSVC Build Tools version 14.50 preserves binary compatibility with code built wi
 **Build enhancements**
 
 - Visual Studio 2026 now includes CMake 4.1.2 by default. CMake also includes a Visual Studio 2026 generator and modern SLNX projects, so you can build Visual Studio C++ projects directly from CMake.
-- Added IncrediBuild support for Visual Studio 2026, including the latest IncrediBuild engine and updated extension. Includes the latest version of the IncrediBuild engine and an updated extension that works with Visual Studio 2016 version 18.0. 
+- Includes the latest version of the IncrediBuild engine and an updated extension that works with Visual Studio 2026 version 18.0. 
 - Compiler backend runtime performance improvements. Up to 6% as measured on Unreal Engine's City Sample RenderThread. For more information, see [Why you should upgrade your C++ build tools](https://devblogs.microsoft.com/cppblog/upgrading-c-projects-to-visual-studio-2026/#why-you-should-upgrade-your-c++-build-tools).
 - The Visual Studio setup assistant can help you retarget your projects, so they build with the latest MSVC Build Tools. For more information, see [Retarget your projects with the setup assistant](https://devblogs.microsoft.com/cppblog/upgrading-c-projects-to-visual-studio-2026/#retarget-your-projects-with-the-setup-assistant).
 
@@ -73,16 +73,16 @@ MSVC Build Tools version 14.50 preserves binary compatibility with code built wi
 
 **Deprecations**
 
-- The minimum supported operating systems for the MSVC Build Tools version 14.50 are Windows 10 or Windows Server 2016. 
+- The minimum supported target operating systems for the MSVC Build Tools version 14.50 are Windows 10 or Windows Server 2016. 
 - MSVC Build Tools version 14.50 no longer targets:
     
     - Windows 7 / Windows Server 2008 R2
     - Windows 8 / Windows Server 2012
     - Windows 8.1 / Windows Server 2012 R2
     
-    To build applications using the latest C++ tools, your target platform must be Windows 10 or Windows Server 2016 (or later). These changes allow for better performance, enhanced security, and alignment with the most recent Windows platform capabilities.
+    These changes allow for better performance, enhanced security, and alignment with the most recent Windows platform capabilities.
 
-- The `/await` switch is deprecated, no longer receives support, and will be removed in a future release. Use Standard C++ coroutines, available by default in C++20 or later. For projects in earlier language modes, consider using `/await:strict` to maintain compatibility until the switch is removed.
+The MSVC compiler switch `/await` is being deprecated and will be removed in a future release. This switch enabled an early draft implementation of C++ coroutines using the `<experimental/coroutine>` header. Developers should transition to standard C++ coroutines by using the `<coroutine>` header available in C++20 and later. For C++14/17 projects, use `/await:strict` (which isn't being deprecated) to access the standard `<coroutine>` header without enabling other C++20 features.
 
 The mobile development and embedded and IoT development tools are no longer supported. The mobile development with C++ workload and Android NDK component in the Visual Studio installer are no longer supported and will be removed in a future Visual Studio update. This impacts tooling support for iOS and Android development, including new projects, building, and debugging.
 
