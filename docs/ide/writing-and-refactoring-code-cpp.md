@@ -22,7 +22,7 @@ search for "IntelliSense" in **Quick Launch** (Ctrl + Q) and choose the **Text E
 
 The **Member List Filter Mode** option controls what kinds of IntelliSense autocomplete suggestions you see. By default, it's set to **Fuzzy**. In a fuzzy search, if you have a symbol called *MyAwesomeClass*, you can type "MAC" and find the class in your autocomplete suggestions. The fuzzy algorithm sets a minimum threshold that symbols must meet to show up in the list. **Smart** filtering displays all symbols containing substrings that match what you typed. **Prefix** filtering searches for strings that begin with what you typed.
 
-For more information about C++ IntelliSense, see [Visual C++ IntelliSense](/visualstudio/ide/visual-cpp-intellisense) and [Configure a C++ project for IntelliSense](/visualstudio/ide/visual-cpp-intellisense-configuration).
+For more information about C++ IntelliSense, see [Visual Studio C++ IntelliSense](/visualstudio/ide/visual-cpp-intellisense) and [Configure a C++ project for IntelliSense](/visualstudio/ide/visual-cpp-intellisense-configuration).
 
 ## IntelliCode
 

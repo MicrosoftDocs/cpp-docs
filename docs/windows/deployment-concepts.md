@@ -19,11 +19,11 @@ You package your application by adding a Setup project to your solution; when bu
 
 ## Library Dependencies
 
-When a C/C++ application is built using functionality provided by the Visual C++ libraries, it becomes dependent on the presence of those libraries at runtime. In order for the application to run, it must link, either statically or dynamically, to the necessary Visual C++ libraries. If an application dynamically links to a Visual C++ library, then when it runs that library must be present so it can be loaded. On the other hand, if the application statically links to a Visual C++ library, then it does not need the corresponding DLLs to be present on the user's computer. Static linking, however, has some negative effects, such as the increasing the size of the application files, and making maintenance potentially more difficult. For more information, see [Advantages of using DLLs](../build/dlls-in-visual-cpp.md#advantages-of-using-dlls).
+When a C/C++ application is built using functionality provided by the Microsoft C++ libraries, it becomes dependent on the presence of those libraries at runtime. In order for the application to run, it must link, either statically or dynamically, to the necessary Microsoft C++ libraries. If an application dynamically links to a Microsoft C++ library, then when it runs that library must be present so it can be loaded. On the other hand, if the application statically links to a Microsoft C++ library, then it does not need the corresponding DLLs to be present on the user's computer. Static linking, however, has some negative effects, such as the increasing the size of the application files, and making maintenance potentially more difficult. For more information, see [Advantages of using DLLs](../build/dlls-in-visual-cpp.md#advantages-of-using-dlls).
 
 ## Packaging and Redistributing
 
-Visual C++ libraries are packaged as DLLs, and all necessary libraries for C/C++ applications are installed by Visual Studio on the developer's computer. However, when deploying your application to your users, it is not feasible in most cases to require them to install Visual Studio in order to run your application. It is important to be able to redistribute just the parts of Visual C++ that are required by your application to run correctly.
+Microsoft C++ libraries are packaged as DLLs, and all necessary libraries for C/C++ applications are installed by Visual Studio on the developer's computer. However, when deploying your application to your users, it is not feasible in most cases to require them to install Visual Studio in order to run your application. It is important to be able to redistribute just the parts of Microsoft C++ that are required by your application to run correctly.
 
 For more information about packaging and redistributing, see the following topics:
 
@@ -42,4 +42,4 @@ For deployment examples and suggestions about troubleshooting, see:
 ## See also
 
 - [Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)
-- [Understanding the Dependencies of a Visual C++ Application](understanding-the-dependencies-of-a-visual-cpp-application.md)
+- [Understanding the Dependencies of a Microsoft C++ Application](understanding-the-dependencies-of-a-visual-cpp-application.md)

@@ -1,6 +1,6 @@
 ---
 title: "AddressSanitizer Runtime Options"
-description: "List of runtime options for the Microsoft C/C++ Address Sanitizer"
+description: "List of runtime options for the Microsoft C/C++ AddressSanitizer"
 ms.date: 8/08/2025
 helpviewer_keywords: ["AddressSanitizer options", "AddressSanitizer flags", "Address sanitizer options", "Address sanitizer flags", "asan options", "asan flags", "sanitizer flags", "asan_options", "AddressSanitizerFlags", "SanitizerCommonFlags"]
 ---

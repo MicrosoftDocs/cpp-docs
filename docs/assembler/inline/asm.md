@@ -13,7 +13,7 @@ helpviewer_keywords: ["__asm keyword [C++], vs. asm blocks", "__asm keyword [C++
 The **`__asm`** keyword invokes the inline assembler and can appear wherever a C or C++ statement is legal. It can't appear by itself. It must be followed by an assembly instruction, a group of instructions enclosed in braces, or, at minimum, an empty pair of braces. The term "**`__asm`** block" here refers to any instruction or group of instructions, whether or not in braces.
 
 > [!NOTE]
-> Visual C++ support for the Standard C++ **`asm`** keyword is limited to the fact that the compiler will not generate an error on the keyword. However, an **`asm`** block will not generate any meaningful code. Use **`__asm`** instead of **`asm`**.
+> MSVC support for the Standard C++ **`asm`** keyword is limited to the fact that the compiler will not generate an error on the keyword. However, an **`asm`** block will not generate any meaningful code. Use **`__asm`** instead of **`asm`**.
 
 ## Grammar
 

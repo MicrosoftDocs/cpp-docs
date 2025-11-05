@@ -68,8 +68,8 @@ link /dll @objlist.txt @liblist.txt @exports.txt
 The linker recognizes the following environment variables:
 
 - `LINK` and `_LINK_`, if defined. The linker prepends the options and arguments defined in the `LINK` environment variable and appends the options and arguments defined in the `_LINK_` environment variable to the command line arguments before processing.
-- `LIB`, if defined. The linker uses the `LIB` path when it searches for an object, library, or other file specified on the command line or by the [`/BASE`](base-base-address.md) option. It also uses the `LIB` path to find a `.pdb` file named in an object. The `LIB` variable can contain one or more path specifications, separated by semicolons. One path must point to the `\lib` subdirectory of your Visual C++ installation.
-- `PATH`, if the tool needs to run `CVTRES` and can't find the file in the same directory as `link.exe` itself. (`link.exe` requires `CVTRES` to link a `.res` file.) `PATH` must point to the `\bin` subdirectory of your Visual C++ installation.
+- `LIB`, if defined. The linker uses the `LIB` path when it searches for an object, library, or other file specified on the command line or by the [`/BASE`](base-base-address.md) option. It also uses the `LIB` path to find a `.pdb` file named in an object. The `LIB` variable can contain one or more path specifications, separated by semicolons. One path must point to the `\lib` subdirectory of your Microsoft C++ installation.
+- `PATH`, if the tool needs to run `CVTRES` and can't find the file in the same directory as `link.exe` itself. (`link.exe` requires `CVTRES` to link a `.res` file.) `PATH` must point to the `\bin` subdirectory of your Microsoft C++ installation.
 - `TMP`, to specify a directory when linking OMF or `.res` files.
 
 ## See also

@@ -7,7 +7,7 @@ ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93
 ---
 # x64 exception handling
 
-An overview of structured exception handling and C++ exception handling coding conventions and behavior on the x64. For general information on exception handling, see [Exception Handling in Visual C++](../cpp/exception-handling-in-visual-cpp.md).
+An overview of structured exception handling and C++ exception handling coding conventions and behavior on the x64. For general information on exception handling, see [Exception Handling in Microsoft C++](../cpp/exception-handling-in-visual-cpp.md).
 
 ## Unwind data for exception handling, debugger support
 

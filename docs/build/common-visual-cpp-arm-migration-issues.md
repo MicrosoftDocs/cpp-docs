@@ -1,9 +1,9 @@
 ---
-description: "Learn more about: Common Visual C++ ARM Migration Issues"
-title: "Common Visual C++ ARM Migration Issues"
+description: "Learn more about: Common Microsoft C++ ARM Migration Issues"
+title: "Common Microsoft C++ ARM Migration Issues"
 ms.date: "05/06/2019"
 ---
-# Common Visual C++ ARM migration issues
+# Common Microsoft C++ ARM migration issues
 
 This document describes some of the common issues that you might encounter when you migrate code from x86 or x64 architectures to the ARM architecture. It also describes how to avoid these issues, and how to use the compiler to help identify them.
 
@@ -89,7 +89,7 @@ And if there's a dependency between `operator->(memory_handle)` and `operator*(p
 
 ### `volatile` keyword default behavior
 
-The MSVC compiler supports two different interpretations of the **`volatile`** storage qualifier that you can specify by using compiler switches. The [/volatile:ms](reference/volatile-volatile-keyword-interpretation.md) switch selects the Microsoft extended volatile semantics that guarantee strong ordering, as has been the traditional case for x86 and x64 because of the strong memory model on those architectures. The [/volatile:iso](reference/volatile-volatile-keyword-interpretation.md) switch selects the strict C++ standard volatile semantics that don't guarantee strong ordering.
+The Microsoft C++ (MSVC) compiler supports two different interpretations of the **`volatile`** storage qualifier that you can specify by using compiler switches. The [/volatile:ms](reference/volatile-volatile-keyword-interpretation.md) switch selects the Microsoft extended volatile semantics that guarantee strong ordering, as has been the traditional case for x86 and x64 because of the strong memory model on those architectures. The [/volatile:iso](reference/volatile-volatile-keyword-interpretation.md) switch selects the strict C++ standard volatile semantics that don't guarantee strong ordering.
 
 On the ARM architecture (except ARM64EC), the default is **/volatile:iso** because ARM processors have a weakly ordered memory model, and because ARM software doesn't have a legacy of relying on the extended semantics of **/volatile:ms** and doesn't usually have to interface with software that does. However, it's still sometimes convenient or even required to compile an ARM program to use the extended semantics. For example, it may be too costly to port a program to use the ISO C++ semantics, or driver software might have to adhere to the traditional semantics to function correctly. In these cases, you can use the **/volatile:ms** switch; however, to recreate the traditional volatile semantics on ARM targets, the compiler must insert memory barriers around each read or write of a **`volatile`** variable to enforce strong ordering, which can have a negative impact on performance.
 
@@ -97,4 +97,4 @@ On the x86, x64, and ARM64EC architectures, the default is **/volatile:ms** beca
 
 ## See also
 
-[Configure Visual C++ for ARM processors](configuring-programs-for-arm-processors-visual-cpp.md)
+[Configure Microsoft C++ for ARM processors](configuring-programs-for-arm-processors-visual-cpp.md)

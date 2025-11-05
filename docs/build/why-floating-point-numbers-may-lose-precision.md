@@ -17,7 +17,7 @@ This behavior is the result of one of the following:
 
 To resolve the behavior, most programmers either ensure that the value is greater or less than what is needed, or they get and use a Binary Coded Decimal (BCD) library that will maintain the precision.
 
-Binary representation of floating-point values affects the precision and accuracy of floating-point calculations. Microsoft Visual C++ uses [IEEE floating-point format](ieee-floating-point-representation.md).
+Binary representation of floating-point values affects the precision and accuracy of floating-point calculations. Microsoft C++ uses [IEEE floating-point format](ieee-floating-point-representation.md).
 
 ## Example
 

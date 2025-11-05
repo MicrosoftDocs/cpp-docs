@@ -1,11 +1,11 @@
 ---
-title: "Cloud and Web Programming in Visual C++"
-description: "Learn more about: Cloud and Web Programming in Visual C++"
+title: "Cloud and Web Programming in Microsoft C++"
+description: "Learn more about: Cloud and Web Programming in Microsoft C++"
 ms.date: "05/14/2019"
 ms.topic: "overview"
 ms.custom: intro-overview
 ---
-# Cloud and Web Programming in Visual C++
+# Cloud and Web Programming in Microsoft C++
 
 In C++, you have several options for connecting to the web and the cloud.
 

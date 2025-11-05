@@ -122,7 +122,7 @@ By default, when the active configuration specifies a Visual Studio generator, i
 - `remotePreGenerateCommand`: Specifies the command to run before running CMake to parse the *`CMakeLists.txt`* file.
 - `remotePrebuildCommand`: Specifies the command to run on the remote machine before building.
 - `remotePostbuildCommand`: Specifies the command to run on the remote machine after building.
-- `variables`: Contains a name-value pair of CMake variables that get passed as **`-D name=value`** to CMake. If your CMake project build instructions specify the addition of any variables directly to the *`CMakeCache.txt`* file, we recommend you add them here instead. This example shows how to specify the name-value pairs to use the 14.14.26428 MSVC toolset:
+- `variables`: Contains a name-value pair of CMake variables that get passed as **`-D name=value`** to CMake. If your CMake project build instructions specify the addition of any variables directly to the *`CMakeCache.txt`* file, we recommend you add them here instead. This example shows how to specify the name-value pairs to use the 14.14.26428 MSVC Build Tools:
 
 ```json
 "variables": [

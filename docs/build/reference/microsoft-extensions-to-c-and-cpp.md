@@ -6,7 +6,7 @@ helpviewer_keywords: ["or_eq operator", "~ operator, extensions to C/C++", "& op
 ---
 # Microsoft extensions to C and C++
 
-Microsoft Visual C++ (MSVC) extends the C and C++ language standards in several ways, detailed in this article.
+Microsoft C++ (MSVC) extends the C and C++ language standards in several ways, detailed in this article.
 
 The MSVC C++ compiler defaults to support for ISO C++14 with some ISO C++17 features and some Microsoft-specific language extensions. For more information on supported features, see [Microsoft C/C++ language conformance by Visual Studio version](../../overview/visual-cpp-language-conformance.md). You can use the **`/std`** compiler option to enable full support for ISO C++17 and ISO C++20 language features. For more information, see [`/std` (Specify language standard version)](std-specify-language-standard-version.md).
 
