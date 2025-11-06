@@ -25,7 +25,7 @@ When you use an older build tools version, you can take advantage of many of the
 
 ## How to use native multi-targeting in Visual Studio 2026
 
-Visual Studio 2026 includes a new **Setup assistant**. You can load an existing solution, right-click it in Solution Explorer, and select *Retarget solution* to open the assistant. You can use the assistant to install missing C++ build tools (MSVC components and Windows SDKs) compatible with the projects you are loading, including tools originally shipped with older Visual Studio versions. This allows you to continue working with your existing projects without losing compatibility with your previous Visual Studio version. Later, when you are ready to fully upgrade, you can use the assistant to retarget these projects to the newest version of the IDE.
+Visual Studio 2026 includes a new **Setup assistant**. You can load an existing solution, and in **Solution Explorer** select **Retarget solution** to open the assistant. You can use the assistant to install missing C++ build tools (MSVC components and Windows SDKs) compatible with the projects you are loading, including tools originally shipped with older Visual Studio versions. This allows you to continue working with your existing projects without losing compatibility with your previous Visual Studio version. Later, when you are ready to fully upgrade, you can use the assistant to retarget these projects to the newest version of the IDE.
 
 ## How to use native multi-targeting in Visual Studio 2010-2022
 
