@@ -32,7 +32,7 @@ Visual Studio 2026 deprecated the `/await` switch, which will be removed in a fu
 
 ### Support for Windows 7, 8, and 8.1 for Microsoft C++ Build Tools
 
-In Visual Studio 2026, the Microsoft C++ (MSVC) Build Tools have updated their minimum supported operating systems. With this release, the Build Tools no longer support targeting:
+In Visual Studio 2026, the Microsoft C++ (MSVC) Build Tools raised the minimum supported operating system requirements. With this release, the Build Tools no longer target:
 
 - Windows 7 / Windows Server 2008 R2  
 - Windows 8 / Windows Server 2012  
