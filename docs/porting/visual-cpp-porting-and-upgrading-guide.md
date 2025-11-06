@@ -13,6 +13,16 @@ ms.author: twhitney
 **Transform your legacy C++ applications with confidence.** Whether you're upgrading from Visual Studio 2008 or modernizing to take advantage of the latest C++ features, this comprehensive guide provides everything you need for a successful upgrade journey.
 
 :::row:::
+:::column span="":::
+:::column-end:::
+:::column span="2":::
+![C++ logo with an upward arrow and abstract code on a blue background suggesting improvements from upgrading.](media/upgrade-cpp.png)
+:::column-end:::
+:::column span="":::
+:::column-end:::
+:::row-end:::
+
+:::row:::
 :::column span="2":::
 ## 🚀 Quick start
 
@@ -82,16 +92,6 @@ ms.author: twhitney
 :::row-end:::
 
 [📚 Read more case studies](porting-and-upgrading-examples-and-case-studies.md)
-
-:::row:::
-:::column span="":::
-:::column-end:::
-:::column span="2":::
-![C++ logo with an upward arrow and abstract code on a blue background suggesting improvements from upgrading.](media/upgrade-cpp.png)
-:::column-end:::
-:::column span="":::
-:::column-end:::
-:::row-end:::
 
 ## 🛠️ Upgrade benefits
 
