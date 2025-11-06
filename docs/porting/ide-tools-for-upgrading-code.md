@@ -1,14 +1,14 @@
 ---
 title: "Visual Studio IDE tools for upgrading C++ code"
 description: "The C++ code editor and code analysis tools in Visual Studio help you to modernize your C++ code base."
-ms.date: "11/13/2019"
+ms.date: "11/06/2025"
 ms.topic: "concept-article"
 ---
 # Visual Studio IDE tools for upgrading C++ code
 
 Visual Studio helps you upgrade legacy C++ code with compiler options, code analysis warnings, and editor features such as Quick Fixes, Quick Info, and the enhanced scroll bar. The term "legacy code" refers to any of these categories:
 
-- Code that was formerly allowed by the Microsoft C++ compiler (MSVC) but never conformed to the C++ standard.
+- Code that was formerly allowed by the Microsoft C++ (MSVC) compiler but never conformed to the C++ standard.
 
    To upgrade older non-conforming MSVC code, turn on the [`/permissive-`](../build/reference/permissive-standards-conformance.md) compiler option. All instances of non-conforming usages are underlined with red squiggles in the code editor. The error messages in the **Error List** window include a recommendation for how to fix the error. Click on the error code to go to its help page in the documentation. If fixing all the errors at once is impractical, you can upgrade non-conforming code in stages by turning on the **`/permissive-`** option, fixing some errors, then turning the option off again. The code will compile with the new improvements, and you can go back and fix the remaining issues at a later time. See the [`/permissive-`](../build/reference/permissive-standards-conformance.md) page for examples of non-conforming MSVC code.
 
@@ -22,19 +22,15 @@ Visual Studio helps you upgrade legacy C++ code with compiler options, code anal
 
 ## Open and convert a legacy project
 
-If your legacy project is based on an older version of Visual Studio, you can open it in Visual Studio 2017 or Visual Studio 2019. Visual Studio automatically converts it to the current project schema with support for all the latest compiler and IDE features.
+If your legacy projects are based on an older version of Visual Studio, you can still load them in a newer version and work on it there while maintaining backwards compatibility with the older version. When you are ready to permanently move to the new version of Visual Studio, you can retarget your projects. This will enable you to use the latest build tools and project features in the IDE, but you will no longer be able to load the retargeted projects in the older version of Visual Studio.
 
-![Screenshot of the Upgrade a project dialog.](media/upgrade-dialog-v142.png "Upgrade a project")
+To retarget projects to the Visual Studio 2026 format, you can use the setup assistant which appears the first time you open a solution with older projects. You can also access it by right-clicking the solution in Solution Explorer and selecting *Retarget solution*.
+
+![Screenshot of the Visual Studio 2026 setup assistant.](media/vs-2026-setup-assistant.png "Upgrade projects")
+
+The setup assistant then gives you the choice to either stay on the older version and install any missing build tools or Windows SDKs to be able to build, or retarget the projects to upgrade them. You can make retargeting selections for each project in the solution or click *Retarget all*, then click *Apply* to perform the upgrade.
 
 For more information, see [Upgrade C++ projects from earlier versions of Visual Studio](upgrading-projects-from-earlier-versions-of-visual-cpp.md).
-
-## Search the code base
-
-Upgrading a code base often involves searching through multiple files. To search for anything in your code base, press **Ctrl+T** to bring up the **Go to All** search box.
-
-![Screenshot of the Go to all dialog.](media/go-to-all.png "Go to all")
-
-To narrow the search scope, type one of the 1-letter filters, followed by a space and then the thing you are looking for.
 
 ## Error List
 

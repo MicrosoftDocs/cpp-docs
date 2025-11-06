@@ -12,7 +12,7 @@ This article is a non-exhaustive list of C++ features deprecated in Visual Studi
 
 ### Support for Windows XP development
 
-Visual Studio 2019 and later versions don't include current toolset support for creating code for Windows XP. Support for Windows XP development by using the v141_xp toolset that shipped in Visual Studio 2017 is still available as an optional component in the Visual Studio Installer. For information on how to install the v141_xp Windows XP platform toolset, see [Configuring programs for Windows XP](../build/configuring-programs-for-windows-xp.md).
+Visual Studio 2019 and later versions don't include current build tools support for creating code for Windows XP. Support for Windows XP development by using the v141_xp build tools that shipped in Visual Studio 2017 is still available as an optional component in the Visual Studio Installer. For information on how to install the v141_xp Windows XP platform toolset, see [Configuring programs for Windows XP](../build/configuring-programs-for-windows-xp.md).
 
 ## Visual Studio 2022
 

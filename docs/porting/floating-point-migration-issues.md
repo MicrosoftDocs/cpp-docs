@@ -22,7 +22,7 @@ Code-generation correctness improvements in different floating point modes in Vi
 
 ## How to get identical results
 
-In most cases, the floating-point changes in the newest compilers and libraries result in faster or more correct behavior, or both. You may even see better processor power performance when SSE2 instructions replace x87 instructions. However, if you have code that must precisely replicate the floating point behavior of an older compiler, consider using Visual Studio native multi-targeting capabilities, and build the affected project with the older toolset. For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
+In most cases, the floating-point changes in the newest compilers and libraries result in faster or more correct behavior, or both. You may even see better processor power performance when SSE2 instructions replace x87 instructions. However, if you have code that must precisely replicate the floating point behavior of an older compiler, consider using Visual Studio native multi-targeting capabilities, and build the affected project with the older build tools. For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
 
 ## See also
 
