@@ -1,13 +1,13 @@
 ---
-title: "How to report a problem with the Microsoft C++ toolset"
-description: "How to create a good problem report and repro information for the Microsoft C++ toolset."
-ms.date: 09/24/2019
+title: "How to report a problem with the Microsoft C++ Build Tools"
+description: How to create a good problem report and repro information for the Microsoft C++ toolset.
+ms.date: "09/24/2019"
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 author: "tylermsft"
 ms.author: "twhitney"
 ---
-# How to report a problem with the Microsoft C++ toolset or documentation
+# How to report a problem with the Microsoft C++ Build Tools or documentation
 
 If you find problems in the Microsoft C++ compiler (MSVC), the linker, or other tools and libraries, we want to know about them. When the issue is in our documentation, we want to know about that, too.
 
@@ -382,7 +382,7 @@ For issues with the C++ compiler, linker, and other tools and libraries, first s
 > Information in the initial Developer Community report will always be public. If this is a concern, see the next section about [Reports and privacy](#reports-and-privacy).
 
 > [!TIP]
-> For other kinds of problems you might find in Visual Studio that are unrelated to the C++ toolset (For example, UI issues, broken IDE functionality, or general crashes), use the **Report a Problem** tool in the IDE. This is the best choice, due to its screenshot capabilities and its ability to record UI actions that lead to the problem you found. These kinds of errors can also be looked up on the Visual Studio [Developer Community](https://aka.ms/feedback/report?space=8) site. For more information, see [How to report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+> For other kinds of problems you might find in Visual Studio that are unrelated to the Microsoft C++ Build Tools (For example, UI issues, broken IDE functionality, or general crashes), use the **Report a Problem** tool in the IDE. This is the best choice, due to its screenshot capabilities and its ability to record UI actions that lead to the problem you found. These kinds of errors can also be looked up on the Visual Studio [Developer Community](https://aka.ms/feedback/report?space=8) site. For more information, see [How to report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Reports and privacy
 

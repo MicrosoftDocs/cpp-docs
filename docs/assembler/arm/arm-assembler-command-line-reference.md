@@ -5,7 +5,7 @@ ms.date: 05/09/2022
 ---
 # ARM Assembler command-line reference
 
-The Microsoft ARM assemblers, **armasm** and **armasm64**, support several command-line options. By default, **armasm** assembles ARMv7 Thumb assembly language into the Microsoft implementation of the Common Object File Format (COFF). The **armasm64** assembler creates COFF object code for ARM64 and ARM64EC targets. The linker can link COFF code objects produced by both the ARM assembler and the C/C++ compiler. It can link either together with object libraries created by the librarian.
+The Microsoft ARM assemblers, **armasm** and **armasm64**, support several command-line options. By default, **armasm** assembles ARMv7 Thumb assembly language into the Microsoft implementation of the Common Object File Format (COFF). The **armasm64** assembler creates COFF object code for ARM64 and ARM64EC targets. The linker can link COFF code objects produced by both the ARM assembler and the MSVC compiler. It can link either together with object libraries created by the librarian.
 
 ## Syntax
 

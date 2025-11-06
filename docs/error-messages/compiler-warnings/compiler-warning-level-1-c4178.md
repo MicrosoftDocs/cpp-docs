@@ -1,17 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4178"
 title: "Compiler Warning (level 1) C4178"
-ms.date: "03/06/2024"
+description: "Learn more about: Compiler Warning (level 1) C4178"
+ms.date: 03/06/2024
 f1_keywords: ["C4178"]
 helpviewer_keywords: ["C4178"]
 ---
 # Compiler Warning (level 1) C4178
 
-case constant 'constant' too big for the type of the switch expression
+> case constant 'constant' too big for the type of the switch expression
+
+## Remarks
 
 A case constant in a **`switch`** expression does not fit in the type to which it is assigned.
 
 ## Example
+
+The following example generates C4178:
 
 ```cpp
 // C4178.cpp

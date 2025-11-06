@@ -1,6 +1,6 @@
 ---
-title: CRT debugging techniques
-description: There are various techniques you can use to debug a program that uses the C run-time (CRT) library. Use this article and its links to learn about such techniques. 
+title: "CRT debugging techniques"
+description: "There are various techniques you can use to debug a program that uses the C run-time (CRT) library. Use this article and its links to learn about such techniques."
 ms.custom: SEO-VS-2020
 ms.date: 02/03/2023
 f1_keywords:
@@ -16,7 +16,7 @@ When you debug a program that uses the C run-time library, these debugging techn
 
 ## CRT debug library use
 
-The C runtime (CRT) library provides extensive debugging support. To use one of the CRT debug libraries, you must link with [`/DEBUG`](/cpp/build/reference/debug-generate-debug-info) and compile with [`/MDd`, `/MTd`, or `/LDd`](../build/reference/md-mt-ld-use-run-time-library.md).
+The C runtime (CRT) library provides extensive debugging support. To use one of the CRT debug libraries, you must link with [`/DEBUG`](../build/reference/debug-generate-debug-info.md) and compile with [`/MDd`, `/MTd`, or `/LDd`](../build/reference/md-mt-ld-use-run-time-library.md).
 
 The main definitions and macros for CRT debugging can be found in the `<crtdbg.h>` header file.
 

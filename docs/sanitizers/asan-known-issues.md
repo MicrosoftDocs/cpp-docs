@@ -23,11 +23,11 @@ The following options and functionality are incompatible with [`/fsanitize=addre
 - [C++ AMP](../parallel/amp/cpp-amp-overview.md) is unsupported, and should be disabled.
 - [Universal Windows Platform](../cppcx/universal-windows-apps-cpp.md) (UWP) applications are unsupported.
 - [Special case list](https://clang.llvm.org/docs/SanitizerSpecialCaseList.html) files are unsupported.
-- [Precompiled headers built without `/fsanitize`address`](../build/creating-precompiled-header-files.md#consistency-rules-for-yc-and-yu) are unsupported.
+- [Precompiled headers built without `/fsanitize=address`](../build/creating-precompiled-header-files.md#consistency-rules-for-yc-and-yu) are unsupported.
 
 ## Standard library support
 
-The MSVC standard library (STL) makes partial use of the AddressSanitizer and provides other code safety checks. For more information, see [container-overflow error](./error-container-overflow.md).
+The Microsoft Visual C++ (MSVC) standard library (STL) makes partial use of the AddressSanitizer and provides other code safety checks. For more information, see [`container-overflow` error](./error-container-overflow.md).
 
 When annotations are disabled, or in versions of the Standard Library that don't support them, AddressSanitizer exceptions raised in STL code still identify real bugs. However, they're more precise if annotations are enabled and you use a version of the Standard Library that supports them.
 
@@ -37,7 +37,8 @@ This example demonstrates the lack of precision and the benefits of enabling ann
 // Compile with: cl /fsanitize=address /Zi
 #include <vector>
 
-int main() {   
+int main()
+{   
     // Create a vector of size 10, but with a capacity of 20.    
     std::vector<int> v(10);
     v.reserve(20);
@@ -55,12 +56,16 @@ int main() {
 }
 ```
 
-## Overriding operator new and delete
+## Overriding `operator new` and `delete`
 
-AddressSanitizer (ASan) uses a custom version of `operator new` and `operator delete` to find allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Running the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) ensures that ASan's `new`/`delete` override has low precedence, so that the linker chooses any `operator new` or `operator delete` overrides in other libraries over ASan's custom versions. When this happens, ASan may not be able to catch some errors that rely on its custom `operator new` and `operator delete`.
+AddressSanitizer (ASan) uses a custom version of `operator new` and `operator delete` to find allocation errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md). Run the linker with [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) to ensure that ASan's `new`/`delete` override has lower precedence, so that the linker chooses `operator new` or `operator delete` overrides in other libraries over ASan's custom versions. When this happens, ASan might not catch some errors that rely on its custom `operator new` and `operator delete`.
 
-[MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete` and might miss errors like [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md).
-
+[MFC](../mfc/mfc-concepts.md) includes custom overrides for `operator new` and `operator delete`. When Microsoft Foundation Classes (MFC) overrides are used instead of the ASan provided `operator new` and `operator delete`, ASan might miss errors entirely or classify them incorrectly as a result. The following errors may be missed or incorrectly classified:
+ - [`alloc_dealloc_mismatch`](error-alloc-dealloc-mismatch.md)
+ - [`double-free`](error-double-free.md)
+ - [`heap-use-after-free`](error-heap-use-after-free.md)
+ - [`heap-buffer-overflow`](error-heap-buffer-overflow.md)
+ - [`new-delete-type-mismatch`](error-new-delete-type-mismatch.md)
 
 ## Memory usage
 
@@ -72,7 +77,7 @@ The *`clang_rt.asan*.dll`* runtime files are installed next to the compilers in 
 
 ## Custom property sheet support
 
-The Visual Studio Property Manager window allows you to add custom *`.props`* files to your projects. Even though the **Enable Address Sanitizer** property (`<EnableASAN>`) is shown, the build doesn't honor it. The build doesn't honor it because the custom *`.props`* files are included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
+The Visual Studio Property Manager window allows you to add custom *`.props`* files to your projects. Even though the **Enable AddressSanitizer** property (`<EnableASAN>`) is shown, the build doesn't honor it. The build doesn't honor it because the custom *`.props`* files are included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
 
 As a workaround, create a *`Directory.Build.props`* file in the root of your project to define the `<EnableASAN>` property. For more information, see [Customize C++ builds](/visualstudio/msbuild/customize-your-build#customize-c-builds).
 

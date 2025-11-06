@@ -4,9 +4,9 @@ description: "A walkthrough that shows how to create a command-line MSBuild C++ 
 ms.date: 10/08/2020
 helpviewer_keywords: ["MSBuild (C++), walkthrough: create a project"]
 ---
-# Walkthrough: Using MSBuild to Create a Visual C++ Project
+# Walkthrough: Using MSBuild to Create a Visual Studio C++ Project
 
-This walkthrough demonstrates how to use MSBuild in a command prompt to build a Visual Studio C++ project. You'll learn how to create an XML-based *`.vcxproj`* project file for a Visual C++ console application. After building the project, you'll learn how to customize the build process.
+This walkthrough demonstrates how to use MSBuild in a command prompt to build a Visual Studio C++ project. You'll learn how to create an XML-based *`.vcxproj`* project file for a C++ console application. After building the project, you'll learn how to customize the build process.
 
 > [!IMPORTANT]
 > Don't use this approach if you intend to edit the project file later by using the Visual Studio IDE. If you create a *`.vcxproj`* file manually, the Visual Studio IDE might not be able to edit or load it, especially if the project uses wildcards in project items. For more information, see [`.vcxproj` and `.props` file structure](./reference/vcxproj-file-structure.md) and [`.vcxproj` files and wildcards](./reference/vcxproj-files-and-wildcards.md).
@@ -78,7 +78,7 @@ In this walkthrough, you'll create a project that has a source file and a header
 An MSBuild project file is an XML file that contains a project root element (`<Project>`). In the example project you'll build, the `<Project>` element contains seven child elements:
 
 - Three item group tags (`<ItemGroup>`) that specify project configuration and platform, source file name, and header file name.
-- Three import tags (`<Import>`) that specify the location of Microsoft Visual C++ settings.
+- Three import tags (`<Import>`) that specify the location of Microsoft C++ settings.
 - A property group tag (`<PropertyGroup>`) that specifies project settings.
 
 ### To create the MSBuild project file
@@ -249,7 +249,7 @@ At the command prompt, enter this command to use the 64-bit tools to build your 
 
 ### Using MSBuild with a different toolset
 
-If you have the toolsets and libraries for other versions of Visual C++ installed, MSBuild can build applications for either the current Visual C++ version or for the other installed versions. For example, if you have installed Visual Studio 2012, to specify the Visual C++ 11.0 toolset for Windows XP, add this property group element to the *`Myproject.vcxproj`* project file after the *`Microsoft.Cpp.props`* file `<Import />` element:
+If you have the toolsets and libraries for other versions of Microsoft C++ (MSVC) installed, MSBuild can build applications for either the current MSVC version or for the other installed versions. For example, if you have installed Visual Studio 2012, to specify the Visual C++ 11.0 toolset for Windows XP, add this property group element to the *`Myproject.vcxproj`* project file after the *`Microsoft.Cpp.props`* file `<Import />` element:
 
 ```xml
 <PropertyGroup>

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _open, _wopen"
 title: "_open, _wopen"
+description: "Learn more about: _open, _wopen"
 ms.date: 05/18/2022
 api_name: ["_open", "_wopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
@@ -8,7 +8,6 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CORECRT_IO/_open", "CORECRT_WIO/_wopen", "TCHAR/_topen", "_open", "_wopen", "_topen"]
 helpviewer_keywords: ["opening files, for file I/O", "topen function", "_open function", "_topen function", "_wopen function", "files [C++], opening", "wopen function", "open function"]
-ms.assetid: 13f6a0c3-d1aa-450d-a7aa-74abc91b163e
 ---
 # `_open`, `_wopen`
 
@@ -79,7 +78,7 @@ The **`_open`** function opens the file specified by *`filename`* and prepares i
 | `_O_RDONLY` | Opens a file for reading only. Can't be specified with `_O_RDWR` or `_O_WRONLY`. |
 | `_O_RDWR` | Opens a file for both reading and writing. Can't be specified with `_O_RDONLY` or `_O_WRONLY`. |
 | `_O_SEQUENTIAL` | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
-| `_O_TEXT` | Opens a file in ANSI text (translated) mode. (For more information, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [`fopen`](fopen-wfopen.md).) |
+| `_O_TEXT` | Opens a file in ANSI text (translated) mode. For more information, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md) and [`fopen`](fopen-wfopen.md). |
 | `_O_TRUNC` | Opens a file and truncates it to zero length; the file must have write permission. Can't be specified with `_O_RDONLY`. `_O_TRUNC` used with `_O_CREAT` opens an existing file or creates a file. **Note:** The `_O_TRUNC` flag destroys the contents of the specified file. |
 | `_O_WRONLY` | Opens a file for writing only. Can't be specified with `_O_RDONLY` or `_O_RDWR`. |
 | `_O_U16TEXT` | Opens a file in Unicode UTF-16 mode. |
@@ -96,7 +95,7 @@ If **`_open`** is called with **`_O_WRONLY | _O_APPEND`** (append mode) and `_O_
 
 When two or more manifest constants are used to form the *`oflag`* argument, the constants are combined with the bitwise-OR operator ( **`|`** ). For a discussion of binary and text modes, see [Text and binary mode file I/O](../text-and-binary-mode-file-i-o.md).
 
-The *`pmode`* argument is required only when `_O_CREAT` is specified. If the file already exists, *`pmode`* is ignored. Otherwise, *`pmode`* specifies the file permission settings, which are set when the new file is closed the first time. **`_open`** applies the current file-permission mask to *`pmode`* before the permissions are set. (For more information, see [`_umask`](umask.md).) *`pmode`* is an integer expression that contains one or both of the following manifest constants, which are defined in `<sys\stat.h>`.
+The *`pmode`* argument is required only when `_O_CREAT` is specified. If the file already exists, *`pmode`* is ignored. Otherwise, *`pmode`* specifies the file permission settings, which are set when the new file is closed the first time. **`_open`** applies the current file-permission mask to *`pmode`* before the permissions are set. For more information, see [`_umask`](umask.md). *`pmode`* is an integer expression that contains one or both of the following manifest constants, which are defined in `<sys\stat.h>`.
 
 | *`pmode`* | Meaning |
 |--|--|

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4224"
 title: "Linker Tools Warning LNK4224"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4224"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4224"]
 helpviewer_keywords: ["LNK4224"]
-ms.assetid: 8624b70e-0b93-43cf-b457-834d38632d0b
 ---
 # Linker Tools Warning LNK4224
 
@@ -20,7 +19,7 @@ If possible, modify the source for the .obj and remove the pragma. If you do ign
 
 ## Example
 
-The following sample generates LNK4224.
+The following example generates LNK4224.
 
 ```cpp
 // LNK4224.cpp

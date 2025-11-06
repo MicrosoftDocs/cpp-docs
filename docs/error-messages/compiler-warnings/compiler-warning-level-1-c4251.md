@@ -32,6 +32,8 @@ Think carefully about adding `__declspec(dllexport)` or `__declspec(dllimport)` 
 
 ## Example
 
+The following example generates C4251:
+
 ```cpp
 // C4251.cpp
 // Compile with /std:c++20 /EHsc /W2 /c C4251.cpp

@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2422"
 title: "Compiler Error C2422"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2422"
+ms.date: 11/04/2016
 f1_keywords: ["C2422"]
 helpviewer_keywords: ["C2422"]
-ms.assetid: ef0ec302-4028-4778-b134-0b8cea4bcad9
 ---
 # Compiler Error C2422
 
-illegal segment override in 'operand'
+> illegal segment override in 'operand'
+
+## Remarks
 
 Inline assembly code incorrectly uses a segment override operator (colon) on an operand.  Possible causes include:
 
@@ -20,7 +21,9 @@ Inline assembly code incorrectly uses a segment override operator (colon) on an 
 
 - The expression following the segment override operator is not an immediate operand or a memory operand.
 
-The following sample generates C2422:
+## Example
+
+The following example generates C2422:
 
 ```cpp
 // C2422.cpp

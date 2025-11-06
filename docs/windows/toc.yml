@@ -120,11 +120,11 @@ items:
   items: 
     - name: Deploy native desktop applications
       href: ../windows/deploying-native-desktop-applications-visual-cpp.md
-    - name: Deployment in Visual C++
+    - name: Deployment in Microsoft C++
       href: ../windows/deployment-in-visual-cpp.md
     - name: Deployment Concepts
       href: ../windows/deployment-concepts.md
-    - name: Understand the dependencies of a Visual C++ application
+    - name: Understand the dependencies of a Microsoft C++ application
       href: ../windows/understanding-the-dependencies-of-a-visual-cpp-application.md
     - name: Determine which DLLs to redistribute
       href: ../windows/determining-which-dlls-to-redistribute.md
@@ -132,7 +132,7 @@ items:
       href: ../windows/choosing-a-deployment-method.md
     - name: Universal CRT deployment
       href: ../windows/universal-crt-deployment.md
-    - name: Redistribute Visual C++ Files
+    - name: Redistribute Microsoft C++ Files
       expanded: false
       items: 
         - name: Redistribute Visual C++ Files
@@ -154,17 +154,17 @@ items:
       items: 
         - name: Deployment examples
           href: ../windows/deployment-examples.md
-        - name: "Walkthrough: Deploy a Visual C++ application by using a setup project"
+        - name: "Walkthrough: Deploy a Microsoft C++ application by using a setup project"
           href: ../windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md
-        - name: "Walkthrough: Deploy a Visual C++ application to an application-local folder"
+        - name: "Walkthrough: Deploy a Microsoft C++ application to an application-local folder"
           href: ../windows/walkthrough-deploying-a-visual-cpp-application-to-an-application-local-folder.md
-        - name: "Walkthrough: Deploy a Visual C++ application by using the Visual C++ Redistributable package"
+        - name: "Walkthrough: Deploy a Microsoft C++ application by using the Visual C++ Redistributable package"
           href: ../windows/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md
         - name: Prepare a test machine to run a debug executable
           href: ../windows/preparing-a-test-machine-to-run-a-debug-executable.md
     - name: Redistribute web client applications
       href: ../windows/redistributing-web-client-applications.md
-    - name: ClickOnce deployment for Visual C++ applications
+    - name: ClickOnce deployment for Microsoft C++ applications
       href: ../windows/clickonce-deployment-for-visual-cpp-applications.md
     - name: Run a C++ -clr application on a previous runtime version
       href: ../windows/running-a-cpp-clr-application-on-a-previous-runtime-version.md

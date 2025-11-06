@@ -205,29 +205,33 @@ The official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cm
 
 ### Select your compilers
 
-You can set C and C++ compilers by using `cacheVariables.CMAKE_C_COMPILER` and `cacheVariables.CMAKE_CXX_COMPILER` in a Configure Preset. It's equivalent to passing `-D CMAKE_C_COMPILER=<value>` and `-D CMAKE_CXX_COMPILER=<value>` to CMake from the command line. For more information, see [`CMAKE_<LANG>_COMPILER`](https://cmake.org/cmake/help/latest/variable/CMAKE_LANG_COMPILER.html#cmake-lang-compiler).
+You can set C and C++ compilers by using `environment.CC` and `environment.CXX` in a Configure Preset. For more information, see [`CC`](https://cmake.org/cmake/help/latest/envvar/CC.html)/[`CXX`](https://cmake.org/cmake/help/latest/envvar/CXX.html).
 
 Use the following examples to build with `cl.exe` and `clang-cl.exe` from Visual Studio. The C++ Clang tools for Windows components must be installed for you to build with `clang-cl`.
 
 Build with `cl.exe`:
 
 ```json
+"environment": {
+  "CC": "cl",
+  "CXX": "cl"
+},
 "cacheVariables": {
   "CMAKE_BUILD_TYPE": "Debug",
-  "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
-  "CMAKE_C_COMPILER": "cl",
-  "CMAKE_CXX_COMPILER": "cl"
+  "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
 },
 ```
 
 Build with `clang`:
 
 ```json
+"environment": {
+  "CC": "clang-cl",
+  "CXX": "clang-cl"
+},
 "cacheVariables": {
   "CMAKE_BUILD_TYPE": "Debug",
   "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
-  "CMAKE_C_COMPILER": "clang-cl",
-  "CMAKE_CXX_COMPILER": "clang-cl"
 },
 
 "vendor": {
@@ -261,14 +265,16 @@ For more information on generators that support the `toolset` specification, see
 
 To reproduce these builds outside Visual Studio, see [Run CMake from the command line or a CI pipeline](#run-cmake-from-the-command-line-or-a-ci-pipeline).
 
-To build on Linux or without the Visual C++ toolset, specify the name of a compiler on your `PATH` instance, or an environment variable that evaluates to the full path of a compiler. Full paths are discouraged so that the file can remain shareable. A preset that builds with GCC version 8 might look like this:
+To build on Linux or without the Microsoft C++ (MSVC) Build Tools, specify the name of a compiler on your `PATH` instance, or an environment variable that evaluates to the full path of a compiler. Full paths are discouraged so that the file can remain shareable. A preset that builds with GCC version 8 might look like this:
 
 ```json
+"environment": {
+  "CC": "gcc-8",
+  "CXX": "g++-8"
+},
 "cacheVariables": {
   "CMAKE_BUILD_TYPE": "Debug",
-  "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
-  "CMAKE_C_COMPILER": "gcc-8",
-  "CMAKE_CXX_COMPILER": "g++-8"
+  "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
 },
 ```
 
@@ -284,7 +290,7 @@ Set `architecture.strategy` and `toolset.strategy` to `set` when you're building
 
 You can set the configuration type (`Debug` or `Release`) for single configuration generators by using `cacheVariables.CMAKE_BUILD_TYPE`. It's equivalent to passing `-D CMAKE_BUILD_TYPE=<value>` to CMake from the command line. For more information, see [`CMAKE_BUILD_TYPE`](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html).
 
-### Select your target and host architecture when building with the Visual C++ toolset
+### Select your target and host architecture when building with the Microsoft C++ Build Tools
 
 You can set the target architecture (x64, Win32, ARM64, or ARM) by using `architecture.value`. It's equivalent to passing `-A` to CMake from the command line. For more information, see [Platform Selection](https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2016%202019.html#platform-selection).
 
@@ -437,7 +443,7 @@ Instead, enable and disable AddressSanitizer by setting the required compiler an
 
 You can add the following sample to *`CMakeLists.txt`* to enable or disable AddressSanitizer for a target:
 
-```cmd
+```txt
 option(ASAN_ENABLED "Build this target with AddressSanitizer" ON)
 
 if(ASAN_ENABLED)
@@ -460,7 +466,7 @@ You can use the same *`CMakePresets.json`* and *`CMakeUserPresets.json`* files t
 
 ### Sourcing the environment when building with command-line generators on Windows
 
-It's up to the user to configure the environment before CMake is invoked in building with a command-line generator. If you're building with Ninja and the Visual C++ toolset on Windows, set the environment before CMake is called to generate the build system. You can do it by calling *`vcvarsall.bat`* with the `architecture` argument. The `architecture` argument specifies the host and target architecture to use. For more information, see [`vcvarsall` syntax](./building-on-the-command-line.md#vcvarsall-syntax). If you build on Linux or on Windows with a Visual Studio Generator, you don't need to take this step.
+It's up to the user to configure the environment before CMake is invoked in building with a command-line generator. If you're building with Ninja and the Microsoft C++ Build Tools on Windows, set the environment before CMake is called to generate the build system. You can do it by calling *`vcvarsall.bat`* with the `architecture` argument. The `architecture` argument specifies the host and target architecture to use. For more information, see [`vcvarsall` syntax](./building-on-the-command-line.md#vcvarsall-syntax). If you build on Linux or on Windows with a Visual Studio Generator, you don't need to take this step.
 
 It's the same step that Visual Studio takes for you when the IDE invokes CMake. Visual Studio parses the active Configure Preset for the host and target architecture specified by `toolset` and `architecture`. Visual Studio then sources the specified environment from *`vcvarsall.bat`*. When you build from the Windows command line with Ninja, you'll need to take this step yourself.
 
@@ -479,7 +485,7 @@ cmake --build --preset <buildPreset-name>
 
 ## Example *`CMakePresets.json`* file
 
-The *`CMakePresets.json`* file in [box2d-lite](https://github.com/esweet431/box2d-lite/blob/vs-launch/CMakePresets.json) contains examples of Configure Presets, Build Presets, and Test Presets. For more information about this example, see the presentation [An Introduction to CMakePresets.json](/events/cpp-pure-virtual-cpp-2021/an-introduction-to-cmakepresetsjson). You can see another example in the [DirectXTK](https://github.com/microsoft/DirectXTK/blob/main/CMakePresets.json) project, which shows many build targets in its `configurePresets` section.
+The *`CMakePresets.json`* file in [box2d-lite](https://github.com/esweet431/box2d-lite/blob/vs-launch/CMakePresets.json) contains examples of Configure Presets, Build Presets, and Test Presets. For more information about this example, see the presentation [An Introduction to CMakePresets.json](/shows/cpp-pure-virtual-cpp-2021/an-introduction-to-cmakepresetsjson). You can see another example in the [DirectXTK](https://github.com/microsoft/DirectXTK/blob/main/CMakePresets.json) project, which shows many build targets in its `configurePresets` section.
 
 ## Next steps
 

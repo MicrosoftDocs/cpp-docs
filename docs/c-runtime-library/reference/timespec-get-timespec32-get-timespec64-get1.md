@@ -17,7 +17,7 @@ Sets the interval pointed to by the first argument to the current calendar time,
 ## Syntax
 
 ```C
-int timespec_get(
+int timespec_get( // See note in remarks section about linkage
     struct timespec* const time_spec,
     int const base
 );
@@ -54,6 +54,11 @@ These functions support only `TIME_UTC` as the *`base`* value. `TIME_UTC` sets t
 **End Microsoft Specific**
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> When you use Windows SDK version 10.0.26100.6901 and Visual Studio 2026 or later together, `timespec_get` is no longer `static inline` (internal linkage). Instead, it's `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard and improves compatibility with C++ modules.
 
 ## Requirements
 

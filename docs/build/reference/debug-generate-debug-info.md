@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /DEBUG (Generate debug info)"
 title: "/DEBUG (Generate Debug Info)"
-ms.date: 10/26/2023
+ms.date: 09/08/2025
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateDebugInformation", "/debug"]
 helpviewer_keywords: ["DEBUG linker option", "/DEBUG linker option", "-DEBUG linker option", "PDB files", "debugging [C++], debug information files", "generate debug info linker option", "pdb files, generating debug info", ".pdb files, generating debug info", "debugging [C++], linker option", "program databases [C++]"]
 ms.assetid: 1af389ae-3f8b-4d76-a087-1cdf861e9103
@@ -20,7 +20,10 @@ The **`/DEBUG`** option puts the debugging information from linked object and li
 
 An executable (an EXE or DLL file) created for debugging contains the name and path of the corresponding PDB. The debugger reads the embedded name and uses the PDB when you debug the program. The linker uses the base name of the program and the extension *`.pdb`* to name the program database, and embeds the path where it was created. To override this default, set the [`/PDB`](pdb-use-program-database.md) option and specify a different file name.
 
-The **`/DEBUG:FASTLINK`** option is available in Visual Studio 2017 and later. This option generates a limited PDB that indexes into the debug information in the object files and libraries used to build the executable instead of making a full copy. You can only use this limited PDB to debug from the computer where the binary and its libraries were built. If you deploy the binary elsewhere, you may debug it remotely from the build computer, but not directly on the test computer. Since Visual Studio 2019, **`/DEBUG:FULL`** linking times have improved significantly, and **`/DEBUG:FASTLINK`** isn't always faster than **`/DEBUG:FULL`**. Since **`/DEBUG:FASTLINK`** no longer provides large build time improvements and results in a slower debugging experience versus **`/DEBUG:FULL`**, this option is no longer recommended.
+> [!Note]
+> The **`/DEBUG:FASTLINK`** option is **deprecated and removed** starting in Visual Studio 2026. It was available in Visual Studio 2017 through Visual Studio 2022.
+
+**`/DEBUG:FASTLINK`** generated a limited PDB that indexes into the debug information in the object files and libraries used to build the executable instead of making a full copy. You can only use this limited PDB to debug from the computer where the binary and its libraries were built. If you deploy the binary elsewhere, you may debug it remotely from the build computer, but not directly on the test computer. Since Visual Studio 2019, **`/DEBUG:FULL`** linking times have improved significantly, and **`/DEBUG:FASTLINK`** isn't always faster than **`/DEBUG:FULL`**. Since **`/DEBUG:FASTLINK`** no longer provides large build time improvements and results in a slower debugging experience versus **`/DEBUG:FULL`**, this option is no longer recommended, and is removed in Visual Studio 2026. Prefer using **`/DEBUG:FULL`**.
 
 A **`/DEBUG:FASTLINK`** PDB can be converted to a full PDB that you can deploy to a test machine for local debugging. In Visual Studio, use the **Property Pages** dialog as described below to create a full PDB for the project or solution. In a developer command prompt, you can use the `mspdbcmf.exe` tool to create a full PDB.
 
@@ -41,11 +44,8 @@ It isn't possible to create an EXE or DLL that contains debug information. Debug
 ### To set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
 1. Select the **Linker** > **Debugging** property page.
-
 1. Modify the **Generate Debug Info** property to enable or disable PDB generation. This property enables **`/DEBUG:FASTLINK`** by default in Visual Studio 2017 and later.
-
 1. Modify the **Generate Full Program Database File** property to enable **`/DEBUG:FULL`** for full PDB generation for every incremental build.
 
 ### To set this linker option programmatically

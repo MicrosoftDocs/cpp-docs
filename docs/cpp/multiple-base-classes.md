@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Multiple Base Classes"
 title: "Multiple Base Classes"
-ms.date: "11/19/2018"
+description: "Learn more about: Multiple Base Classes"
+ms.date: 11/19/2018
 helpviewer_keywords: ["base classes [C++], multiple", "derived classes [C++], multiple bases", "multiple inheritance, class declaration", "multiple base classes [C++]"]
 ---
 # Multiple Base Classes
@@ -11,8 +11,7 @@ A class can be derived from more than one base class. In a multiple-inheritance 
 ```cpp
 // deriv_MultipleBaseClasses.cpp
 // compile with: /LD
-class Collection {
-};
+class Collection {};
 class Book {};
 class CollectionOfBook : public Book, public Collection {
     // New members
@@ -26,7 +25,7 @@ The order in which base classes are specified isn't significant except in certai
 - The order in which destructors are invoked to clean up. Again, if a particular "part" of the class must be present when the other part is being destroyed, the order is significant. Destructors are called in the reverse order of the classes specified in the *base-list*.
 
     > [!NOTE]
-    >  The order of specification of base classes can affect the memory layout of the class. Do not make any programming decisions based on the order of base members in memory.
+    > The order of specification of base classes can affect the memory layout of the class. Do not make any programming decisions based on the order of base members in memory.
 
 When specifying the *base-list*, you can't specify the same class name more than once. However, it's possible for a class to be an indirect base to a derived class more than once.
 
@@ -42,14 +41,14 @@ When declaring a virtual base class, the **`virtual`** keyword appears in the ba
 
 Consider the class hierarchy in the following figure, which illustrates a simulated lunch line:
 
-:::image type="complex" source="../cpp/media/vc38xp1.gif" alt-text="Diagram of a simulated lunch line." border="false":::
+:::image type="complex" source="media/vc38xp1.gif" alt-text="Diagram of a simulated lunch line." border="false":::
 The base class is Queue. Cashier Queue and Lunch Queue both inherit from Queue. Finally, Lunch Cashier Queue inherits from both Cashier Queue and Lunch Queue.
 :::image-end:::
 *Simulated lunch-line graph*
 
 In the figure, `Queue` is the base class for both `CashierQueue` and `LunchQueue`. However, when both classes are combined to form `LunchCashierQueue`, the following problem arises: the new class contains two subobjects of type `Queue`, one from `CashierQueue` and the other from `LunchQueue`. The following figure shows the conceptual memory layout (the actual memory layout might be optimized):
 
-:::image type="complex" source="../cpp/media/vc38xp2.gif" alt-text="Diagram of a simulated lunch line object." border="false":::
+:::image type="complex" source="media/vc38xp2.gif" alt-text="Diagram of a simulated lunch line object." border="false":::
 The figure shows a Lunch Cashier Queue object with two subobjects in it: Cashier Queue and Lunch Queue. Both Cashier Queue and Lunch Queue contain a Queue subobject."
 :::image-end:::
 *Simulated lunch-line object*
@@ -67,21 +66,21 @@ class LunchCashierQueue : public LunchQueue, public CashierQueue {};
 
 The **`virtual`** keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).
 
-:::image type="complex" source="../cpp/media/vc38xp3.gif" alt-text="Diagram of a simulated lunch line object, with virtual base classes depicted." border="false":::
+:::image type="complex" source="media/vc38xp3.gif" alt-text="Diagram of a simulated lunch line object, with virtual base classes depicted." border="false":::
 The diagram shows a Lunch Cashier Queue object, which contains a Cashier Queue subobject and a Lunch Queue subobject. Both Cashier Queue and Lunch Queue share the same Queue subobject.
 :::image-end:::
 *Simulated lunch-line object with virtual base classes*
 
 A class can have both a virtual component and a nonvirtual component of a given type. This happens in the conditions illustrated in the following figure:
 
-:::image type="complex" source="../cpp/media/vc38xp4.gif" alt-text="Diagram of virtual and non virtual components of a class." border="false":::
+:::image type="complex" source="media/vc38xp4.gif" alt-text="Diagram of virtual and non virtual components of a class." border="false":::
 The diagram shows a queue base class. A Cashier Queue class and Lunch Queue class inherit virtually from Queue. A third class, Takeout Queue, inherits non virtually from queue. Lunch Cashier Queue inherits from both Cashier Queue and Lunch Queue. Lunch Takeout Cashier Queue inherits from both Lunch Cashier Queue and Takeout Queue.
 :::image-end:::
 *Virtual and nonvirtual components of the same class*
 
 In the figure, `CashierQueue` and `LunchQueue` use `Queue` as a virtual base class. However, `TakeoutQueue` specifies `Queue` as a base class, not a virtual base class. Therefore, `LunchTakeoutCashierQueue` has two subobjects of type `Queue`: one from the inheritance path that includes `LunchCashierQueue` and one from the path that includes `TakeoutQueue`. This is illustrated in the following figure.
 
-:::image type="complex" source="../cpp/media/vc38xp5.gif" alt-text="Diagram of the object layout for virtual and non virtual inheritance." border="false":::
+:::image type="complex" source="media/vc38xp5.gif" alt-text="Diagram of the object layout for virtual and non virtual inheritance." border="false":::
 A Lunch Takeout Cashier Queue object is shown that contains two subobjects: a Takeout Queue (which contains a Queue subobject) and a Lunch Cashier Queue. The Lunch Cashier Queue subobject contains a Cashier Queue subobject and a Lunch Queue subobject, both of which share a Queue sub object.
 :::image-end:::
 *Object layout with virtual and nonvirtual inheritance*
@@ -96,7 +95,7 @@ The `/vd` compiler option affects an entire compilation module. Use the `vtordis
 ```cpp
 #pragma vtordisp( off )
 class GetReal : virtual public { ... };
-\#pragma vtordisp( on )
+#pragma vtordisp( on )
 ```
 
 ## Name ambiguities
@@ -142,7 +141,7 @@ The compiler detects ambiguities by performing tests in this order:
 
 1. If overloaded functions are unambiguous, they're resolved.
 
-1. If access to the name violates member-access permission, an error message is generated. (For more information, see [Member-Access Control](../cpp/member-access-control-cpp.md).)
+1. If access to the name violates member-access permission, an error message is generated. For more information, see [Member-Access Control](member-access-control-cpp.md).
 
 When an expression produces an ambiguity through inheritance, you can manually resolve it by qualifying the name in question with its class name. To make the preceding example compile properly with no ambiguities, use code such as:
 
@@ -157,7 +156,7 @@ pc->B::a();
 
 ### Dominance
 
-it's possible for more than one name (function, object, or enumerator) to be reached through an inheritance graph. Such cases are considered ambiguous with nonvirtual base classes. They're also ambiguous with virtual base classes, unless one of the names "dominates" the others.
+It's possible for more than one name (function, object, or enumerator) to be reached through an inheritance graph. Such cases are considered ambiguous with nonvirtual base classes. They're also ambiguous with virtual base classes, unless one of the names "dominates" the others.
 
 A name dominates another name if it's defined in both classes and one class is derived from the other. The dominant name is the name in the derived class; this name is used when an ambiguity would otherwise have arisen, as shown in the following example:
 
@@ -188,11 +187,11 @@ Explicit and implicit conversions from pointers or references to class types can
 
 - The declaration of an object of type `D`.
 
-- The effect of applying the address-of operator (**&**) to that object. The address-of operator always supplies the base address of the object.
+- The effect of applying the address-of operator (`&`) to that object. The address-of operator always supplies the base address of the object.
 
 - The effect of explicitly converting the pointer obtained using the address-of operator to the base-class type `A`. Coercing the address of the object to type `A*` doesn't always provide the compiler with enough information as to which subobject of type `A` to select; in this case, two subobjects exist.
 
-:::image type="complex" source="../cpp/media/vc38xt1.gif" alt-text="Diagram showing how the conversion of pointers to base classes can be ambiguous." border="false":::
+:::image type="complex" source="media/vc38xt1.gif" alt-text="Diagram showing how the conversion of pointers to base classes can be ambiguous." border="false":::
 The diagram first shows an inheritance hierarchy: A is the base class. B and C inherit from A. D inherits from B and C. Then, the memory layout is shown for object D. There are three subobjects in D: B (which includes a subobject A) and C (which includes a subobject A). The code & d points to the A in subobject B. The code ( * A ) & d points to both subobject B and subobject C.
 :::image-end:::
 *Ambiguous conversion of pointers to base classes*
@@ -210,7 +209,7 @@ If virtual base classes are used, functions, objects, types, and enumerators can
 
 The following figure shows how objects are composed using virtual and nonvirtual inheritance.
 
-:::image type="complex" source="../cpp/media/vc38xr1.gif" alt-text="Diagram showing virtual derivation and nonvirtual derivation." border="false":::
+:::image type="complex" source="media/vc38xr1.gif" alt-text="Diagram showing virtual derivation and nonvirtual derivation." border="false":::
 The diagram first shows an inheritance hierarchy: A is the base class. B and C virtually inherit from A. D virtually inherits from B and C. Then, the layout of D is shown. D contains subobjects B and C, which share subobject A. Then the layout is shown as though the same hierarchy had been derived using nonvirtual inheritance. In that case, D contains the subobjects B and C. Both B and C contain their own copy of subobject A.
 :::image-end:::
 *Virtual and nonvirtual derivation*
@@ -219,4 +218,4 @@ In the figure, accessing any member of class `A` through nonvirtual base classes
 
 ## See also
 
-[Inheritance](../cpp/inheritance-cpp.md)
+[Inheritance](inheritance-cpp.md)

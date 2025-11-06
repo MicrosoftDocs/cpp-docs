@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s"
 title: "ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s"
-ms.date: "4/2/2020"
+description: "Learn more about: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s"
+ms.date: 4/2/2020
 api_name: ["_ctime64_s", "_wctime32_s", "ctime_s", "_wctime64_s", "_ctime32_s", "_wctime_s", "_o__ctime32_s", "_o__ctime64_s", "_o__wctime32_s", "_o__wctime64_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ctime64_s", "_ctime32_s", "_tctime32_s", "_ctime64_s", "_wctime_s", "_tctime_s", "_tctime64_s", "ctime_s", "ctime32_s"]
 helpviewer_keywords: ["_wctime32_s function", "ctime64_s function", "_tctime64_s function", "_wctime_s function", "tctime_s function", "_wctime64_s function", "ctime_s function", "ctime32_s function", "_ctime64_s function", "tctime64_s function", "wctime64_s function", "wctime_s function", "_tctime_s function", "tctime32_s function", "wctime32_s function", "time, converting", "_ctime32_s function", "_tctime32_s function"]
-ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
 ---
 # `ctime_s`, `_ctime32_s`, `_ctime64_s`, `_wctime_s`, `_wctime32_s`, `_wctime64_s`
 
@@ -17,7 +16,7 @@ Convert a time value to a string and adjust for local time zone settings. These 
 ## Syntax
 
 ```C
-errno_t ctime_s(
+errno_t ctime_s( // See note in remarks section about linkage
    char* buffer,
    size_t numberOfElements,
    const time_t *sourceTime
@@ -30,9 +29,9 @@ errno_t _ctime32_s(
 errno_t _ctime64_s(
    char* buffer,
    size_t numberOfElements,
-   const __time64_t *sourceTime )
-;
-errno_t _wctime_s(
+   const __time64_t *sourceTime
+);
+errno_t _wctime_s( // See note in remarks section about linkage
    wchar_t* buffer,
    size_t numberOfElements,
    const time_t *sourceTime
@@ -124,6 +123,11 @@ In C++, using these functions is simplified by template overloads; the overloads
 The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [`_CrtSetDebugFillThreshold`](crtsetdebugfillthreshold.md).
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> When you use Windows SDK version 10.0.26100.6901 and Visual Studio 2026 or later together, `ctime_s` and `_wctime_s` are no longer `static inline` (internal linkage). Instead, they're `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard and improves compatibility with C++ modules.
 
 ### Generic-text routine mappings
 

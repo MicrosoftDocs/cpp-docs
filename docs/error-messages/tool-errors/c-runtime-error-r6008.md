@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: C Runtime Error R6008"
 title: "C Runtime Error R6008"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6008"
+ms.date: 11/04/2016
 f1_keywords: ["R6008"]
 helpviewer_keywords: ["R6008"]
-ms.assetid: f0f304fc-709a-4843-bc7e-bad1ae0d1649
 ---
 # C Runtime Error R6008
 
-not enough space for arguments
+> not enough space for arguments
+
+## Remarks
 
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are several possible reasons for this error, but often it's caused by an extremely low memory condition, too much memory taken by environment variables, or a bug in the program.

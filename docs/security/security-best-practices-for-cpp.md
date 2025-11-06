@@ -10,7 +10,7 @@ ms.topic: best-practice
 
 This article contains information about security tools and practices. Using them does not make applications immune from attack, but it makes successful attacks less likely.
 
-## Visual C++ Security Features
+## Microsoft C++ Security Features
 
 These security features are built into the Microsoft C++ compiler and linker:
 

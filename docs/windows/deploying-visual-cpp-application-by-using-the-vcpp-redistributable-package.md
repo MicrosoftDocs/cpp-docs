@@ -1,6 +1,6 @@
 ---
-title: "Deploy a Visual C++ App by Using the Redistributable"
-description: "Learn how to deploy a Visual C++ application by using the Visual C++ Redistributable package."
+title: "Deploy a Microsoft C++ App by Using the Redistributable"
+description: "Learn how to deploy a Microsoft C++ application by using the Visual C++ Redistributable package."
 ms.date: 03/20/2025
 ms.topic: tutorial
 helpviewer_keywords: ["walkthrough, deploying a Visual C++ application by using the redistributable package"]

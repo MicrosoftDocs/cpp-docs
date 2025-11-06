@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3069"
 title: "Compiler Error C3069"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3069"
+ms.date: 11/04/2016
 f1_keywords: ["C3069"]
 helpviewer_keywords: ["C3069"]
-ms.assetid: ca94291b-2bb4-4e3f-9acf-534234b83513
 ---
 # Compiler Error C3069
 
-'operator': not allowed for enumeration type
+> 'operator': not allowed for enumeration type
+
+## Remarks
 
 An operator is not supported for CLR enumerations.  For more information, see [How to: Define and consume enums in C++/CLI](../../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md).
 
 ## Example
 
-The following sample generates C3069:
+The following example generates C3069:
 
 ```cpp
 // C3069.cpp

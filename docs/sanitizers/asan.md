@@ -137,7 +137,7 @@ AddressSanitizer is integrated with the Visual Studio IDE. To turn on AddressSan
 
 To build from the IDE, opt out of any [incompatible options](./asan-known-issues.md#incompatible-options). For an existing project compiled by using **`/Od`** (or Debug mode), you may need to turn off these options:
 
-- Turn off [edit and continue](/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue)
+- Turn off [`/ZI` (Debug Information Format)](../build/reference/z7-zi-zi-debug-information-format.md)
 - Turn off [`/RTC1` (runtime checks)](../build/reference/rtc-run-time-error-checks.md)
 - Turn off [`/INCREMENTAL` (incremental linking)](../build/reference/incremental-link-incrementally.md)
 
@@ -157,7 +157,7 @@ To enable AddressSanitizer for a [CMake project created to target Windows](../bu
 
 1. Choose the **Edit JSON** link in the editor. This selection switches the view to raw JSON.
 
-1. Add the following snippet to the `"windows-base"` preset, inside `"configurePresets":` to turn on Address Sanitizer:
+1. Add the following snippet to the `"windows-base"` preset, inside `"configurePresets":` to turn on AddressSanitizer:
 
     ```json
     "environment": {
@@ -192,7 +192,7 @@ To enable AddressSanitizer for a [CMake project created to target Windows](../bu
           },
     ```
 
-1. Address sanitizer doesn't work if edit-and-continue is specified (`/ZI`), which is enabled by default for new CMake projects. In `CMakeLists.txt`, comment out (prefix with `#`) the line that starts with `set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT"`. That line looks something like this, afterwards:
+1. AddressSanitizer doesn't work if edit-and-continue is specified (`/ZI`), which is enabled by default for new CMake projects. In `CMakeLists.txt`, comment out (prefix with `#`) the line that starts with `set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT"`. That line looks something like this, afterwards:
 
     ```json
     # set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")

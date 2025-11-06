@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: How to: Sink Windows Forms Events from Native C++ Classes"
 title: "How to: Sink Windows Forms Events from Native C++ Classes"
+description: "Learn more about: How to: Sink Windows Forms Events from Native C++ Classes"
+ms.date: 11/04/2016
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
 helpviewer_keywords: ["event handling, managed/native interop", "event handling, sinking .NET in C++", "event handling, .NET/native interop", "event handling, Windows Forms in C++"]
-ms.assetid: 6e30ddee-d058-4c8d-9956-2a43d86f19d5
 ---
 # How to: Sink Windows Forms Events from Native C++ Classes
 
@@ -20,7 +19,7 @@ This sample continues the work you did in [How to: Do DDX/DDV Data Binding with 
 
 Now, you will associate your MFC control (`m_MyControl`) with a managed event handler delegate called `OnClick` for the managed <xref:System.Windows.Forms.Control.Click> event.
 
-### To attach the OnClick event handler:
+### To attach the OnClick event handler
 
 1. Add the following code to the implementation of BOOL CMFC01Dlg::OnInitDialog:
 

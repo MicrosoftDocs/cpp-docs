@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: Walkthrough: Deploy a Visual C++ application by using a setup project"
-title: "Deploy a Visual C++ application by using a setup project"
+description: "Learn more about: Walkthrough: Deploy a Microsoft C++ application by using a setup project"
+title: "Deploy a Microsoft C++ application by using a setup project"
 ms.date: 06/28/2022
-helpviewer_keywords: ["deployment for Visual C++"]
-ms.assetid: 66735cda-8fe3-4211-a19a-2cf717a12a3f
+helpviewer_keywords: ["deployment for Microsoft C++"]
 ms.custom: intro-deployment
 ms.topic: install-set-up-deploy
 ---
-# Walkthrough: Deploy a Visual C++ application by using a setup project
+# Walkthrough: Deploy a Microsoft C++ application by using a setup project
 
 In this walkthrough, you'll create a sample app in Visual Studio, then create a setup project to deploy your app to another computer.
 
@@ -23,7 +22,7 @@ You need the following components to complete this walkthrough:
 
 - The Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio.
 
-- To test your deployment, another computer that doesn't have the Visual C++ libraries installed.
+- To test your deployment, another computer that doesn't have the Microsoft C++ libraries installed.
 
 ### <a name="install-mfc-2022"></a> To install C++ and MFC in Visual Studio 2022
 
@@ -45,7 +44,7 @@ If you have Visual Studio installed, but you don't have the C++ or MFC component
 
 1. In the Manage Extensions dialog, expand **Online** > **Visual Studio Marketplace** > **Tools** and select **Setup & Deployment**.
 
-   ![The Manage Extensions dialog showing the Visual Studio setup project extension.](media/vs2019-extension-dialog-installer-project.png "Name the client project")
+   :::image type="content" source="media/vs2019-extension-dialog-installer-project.png" alt-text="Screenshot of the Manage Extensions dialog with Microsoft Visual Studio Installer Projects selected." Lightbox="media/vs2019-extension-dialog-installer-project.png":::
 
 1. In the list of extensions, select **Microsoft Visual Studio Installer Projects 2022**. Choose the **Download** button.
 
@@ -63,7 +62,7 @@ If you have Visual Studio installed, but you don't have the C++ or MFC component
 
 - The Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio.
 
-- To test your deployment, another computer that doesn't have the Visual C++ libraries installed.
+- To test your deployment, another computer that doesn't have the Microsoft C++ libraries installed.
 
 ### <a name="install-mfc-2019"></a> To install C++ and MFC in Visual Studio 2019
 
@@ -85,7 +84,7 @@ If you have Visual Studio installed, but you don't have the C++ or MFC component
 
 1. In the Manage Extensions dialog, expand **Online** > **Visual Studio Marketplace** > **Tools** and select **Setup & Deployment**.
 
-   ![The Manage Extensions dialog showing the Visual Studio setup project extension.](media/vs2019-extension-dialog-installer-project.png "Name the client project")
+   :::image type="content" source="media/vs2019-extension-dialog-installer-project.png" alt-text="Screenshot of the Manage Extensions dialog with Microsoft Visual Studio Installer Projects selected." Lightbox="media/vs2019-extension-dialog-installer-project.png":::
 
 1. In the list of extensions, select **Microsoft Visual Studio Installer Projects**. Choose the **Download** button.
 
@@ -125,7 +124,7 @@ If you have Visual Studio 2017 installed, but you don't have the C++ or MFC comp
 
 1. In the Extensions and Updates dialog, expand **Online** > **Visual Studio Marketplace** > **Tools** and select **Setup & Deployment**. Set the **Sort by** dropdown to **Most Downloads**.
 
-   ![The Manage Extensions dialog showing the Visual Studio setup project extension.](media/vs2019-extension-dialog-installer-project.png "Name the client project")
+   :::image type="content" source="media/vs2019-extension-dialog-installer-project.png" alt-text="Screenshot of the Manage Extensions dialog with Microsoft Visual Studio Installer Projects selected." Lightbox="media/vs2019-extension-dialog-installer-project.png":::
 
 1. In the list of extensions, select **Microsoft Visual Studio Installer Projects**. Choose the **Download** button.
 
@@ -183,7 +182,7 @@ To create a deployable application setup, first you'll create a sample app to de
 
 1. Launch Visual Studio. By default, it opens the **Create a New Project** dialog box. If Visual Studio is already open, on the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-   ![Screenshot of the Create a new project dialog showing an MFC App project template.](media/vs2019-mfc-app-new-project.png "New MFC app")
+   :::image type="content" source="media/vs2019-mfc-app-new-project.png" alt-text="Screenshot of the Create a new project dialog in Visual Studio with MFC entered in the search box and the MFC App project template selected." lightbox="media/vs2019-mfc-app-new-project.png":::
 
 1. At the top of the dialog, type `MFC` in the search box and then choose **MFC App** from the results list. (If the MFC App template is missing, see [To install C++ and MFC in Visual Studio 2022](#install-mfc-2022).) Choose the **Next** button to continue.
 
@@ -203,7 +202,7 @@ To create a deployable application setup, first you'll create a sample app to de
 
 1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-   ![Screenshot of the Create a new project dialog showing an MFC App project template.](media/vs2019-mfc-app-new-project.png "New MFC app")
+   :::image type="content" source="media/vs2019-mfc-app-new-project.png" alt-text="Screenshot of the Create a new project dialog in Visual Studio with MFC entered in the search box and the MFC App project template selected." lightbox="media/vs2019-mfc-app-new-project.png":::
 
 1. At the top of the dialog, type `MFC` in the search box and then choose **MFC App** from the results list. (If the MFC App template is missing, see [To install C++ and MFC in Visual Studio 2019](#install-mfc-2019).) Choose the **Next** button to continue.
 
@@ -331,7 +330,7 @@ The setup project lets you specify where the components of your app are installe
 
 ## Test your deployment
 
-To test your deployment, copy the deployment files to a second computer that doesn't have the Visual C++ libraries installed. Run the setup program. If your app loads and runs normally, and you don't get a runtime error about missing libraries or components, then your deployment is successful.
+To test your deployment, copy the deployment files to a second computer that doesn't have the Microsoft C++ libraries installed. Run the setup program. If your app loads and runs normally, and you don't get a runtime error about missing libraries or components, then your deployment is successful.
 
 For application testing, you can create a deployment setup program that installs a debug version of your app, along with debug libraries, on machines you control. Debug apps and debug libraries aren't licensed for redistribution, and can't be deployed to customer machines. For more information, see [Preparing a test machine to run a debug executable](../windows/preparing-a-test-machine-to-run-a-debug-executable.md).
 

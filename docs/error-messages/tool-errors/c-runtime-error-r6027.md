@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: C Runtime Error R6027"
 title: "C Runtime Error R6027"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6027"
+ms.date: 11/04/2016
 f1_keywords: ["R6027"]
 helpviewer_keywords: ["R6027"]
-ms.assetid: c06a62b3-08d9-4bf5-bcad-8340ec552f69
 ---
 # C Runtime Error R6027
 
-not enough space for lowio initialization
+> not enough space for lowio initialization
+
+## Remarks
 
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are several possible reasons for this error, but usually it's caused by an extremely low memory condition. It can also be caused by a bug in the app, by corruption of the Visual C++ libraries that it uses, or by a driver.

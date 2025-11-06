@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: /PGD (Specify Database for Profile-Guided Optimizations)"
 title: "/PGD (Specify Database for Profile-Guided Optimizations)"
+description: "Learn more about: /PGD (Specify Database for Profile-Guided Optimizations)"
 ms.date: 03/24/2025
 f1_keywords: ["VC.Project.VCLinkerTool.ProfileGuidedDatabase"]
 helpviewer_keywords: ["-PGD linker option", "/PGD linker option"]
 ---
 # /PGD (Specify Database for Profile-Guided Optimizations)
 
-**The /PGD option is deprecated.** Starting in Visual Studio 2015, prefer the [`/GENPROFILE`or `/FASTGENPROFILE`](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) linker options instead. This option is used to specify the name of the .pgd file used by the profile-guided optimization process.
+**The /PGD option is deprecated.** Starting in Visual Studio 2015, prefer the [`/GENPROFILE` or `/FASTGENPROFILE`](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) linker options instead. This option is used to specify the name of the .pgd file used by the profile-guided optimization process.
 
 ## Syntax
 

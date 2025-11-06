@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4715"
 title: "Compiler Warning (level 1) C4715"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4715"
+ms.date: 11/04/2016
 f1_keywords: ["C4715"]
 helpviewer_keywords: ["C4715"]
-ms.assetid: 1c819bf7-0d8b-4f5e-b338-9cc292870439
 ---
 # Compiler Warning (level 1) C4715
 
-'function' : not all control paths return a value
+> 'function' : not all control paths return a value
+
+## Remarks
 
 The specified function can potentially not return a value.
 
 ## Example
+
+The following example generates C4715:
 
 ```cpp
 // C4715a.cpp

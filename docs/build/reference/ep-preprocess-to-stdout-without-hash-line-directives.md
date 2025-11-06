@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /EP (Preprocess to stdout Without #line Directives)"
 title: "/EP (Preprocess to stdout Without #line Directives)"
-ms.date: "11/04/2016"
+description: "Learn more about: /EP (Preprocess to stdout Without #line Directives)"
+ms.date: 11/04/2016
 f1_keywords: ["/ep", "VC.Project.VCCLCompilerTool.GeneratePreprocessedFileNoLines"]
 helpviewer_keywords: ["copy preprocessor output to stdout", "preprocessor output, copy to stdout", "-EP compiler option [C++]", "EP compiler option [C++]", "/EP compiler option [C++]"]
-ms.assetid: 6ec411ae-e33d-4ef5-956e-0054635eabea
 ---
 # /EP (Preprocess to stdout Without #line Directives)
 
@@ -46,7 +45,7 @@ You cannot use precompiled headers with the **/EP** option.
 
 The following command line preprocesses file `ADD.C`, preserves comments, and displays the result on the standard output device:
 
-```
+```cmd
 CL /EP /C ADD.C
 ```
 

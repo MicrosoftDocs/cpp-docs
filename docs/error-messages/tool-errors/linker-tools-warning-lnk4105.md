@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4105"
 title: "Linker Tools Warning LNK4105"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4105"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4105"]
 helpviewer_keywords: ["LNK4105"]
-ms.assetid: 6c7bebf4-4ea6-4533-a6ed-e563d43abbd7
 ---
 # Linker Tools Warning LNK4105
 
-no argument specified with option 'option'; ignoring option
+> no argument specified with option 'option'; ignoring option
+
+## Remarks
 
 This warning occurs only when the [/LIBPATH](../../build/reference/libpath-additional-libpath.md) option is set. If no directory is specified with this option, then the linker ignores the option and generates this warning message.
 
@@ -16,7 +17,7 @@ If you do not need to override the existing environmental library settings, remo
 
 ## Example
 
-```
+```cmd
 link /libpath:c:\filepath\lib bar.obj
 ```
 

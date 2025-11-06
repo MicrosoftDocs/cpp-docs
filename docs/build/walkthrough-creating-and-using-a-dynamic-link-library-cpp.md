@@ -571,7 +571,7 @@ Press any key to dismiss the command window.
 
 Now that you've created a DLL and a client application, you can experiment. Try setting breakpoints in the code of the client app, and run the app in the debugger. See what happens when you step into a library call. Add other functions to the library, or write another client app that uses your DLL.
 
-When you deploy your app, you must also deploy the DLLs it uses. The simplest way to make the DLLs that you build, or that you include from third parties, available is to put them in the same directory as your app. It's known as *app-local deployment*. For more information about deployment, see [Deployment in Visual C++](../windows/deployment-in-visual-cpp.md).
+When you deploy your app, you must also deploy the DLLs it uses. The simplest way to make the DLLs that you build, or that you include from third parties, available is to put them in the same directory as your app. It's known as *app-local deployment*. For more information about deployment, see [Deployment in Microsoft C++](../windows/deployment-in-visual-cpp.md).
 
 ## See also
 

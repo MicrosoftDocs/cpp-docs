@@ -70,7 +70,7 @@ const A& a2{ 1 };
 In Visual Studio 2015, the compiler erroneously treated copy-list-initialization in the same way as regular copy-initialization: it considered only converting constructors for overload resolution. In the following example, Visual Studio 2015 chooses `MyInt(23)`. Visual Studio 2017 correctly raises the error.
 
 ```cpp
-// From http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#1228
+// From https://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#1228
 struct MyStore {
     explicit MyStore(int initialCapacity);
 };

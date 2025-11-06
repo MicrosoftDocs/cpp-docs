@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2087"
 title: "Compiler Error C2087"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2087"
+ms.date: 11/04/2016
 f1_keywords: ["C2087"]
 helpviewer_keywords: ["C2087"]
-ms.assetid: 89761e83-415a-4468-a4c6-b6dedfd1dd6a
 ---
 # Compiler Error C2087
 
-'identifier' : missing subscript
+> 'identifier' : missing subscript
+
+## Remarks
 
 The definition of an array with multiple subscripts is missing a subscript value for a dimension higher than one.
 
-The following sample generates C2087:
+## Example
+
+The following example generates C2087:
 
 ```cpp
 // C2087.cpp

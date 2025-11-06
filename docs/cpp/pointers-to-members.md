@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Pointers to Members"
 title: "Pointers to Members"
-ms.date: "11/04/2016"
+description: "Learn more about: Pointers to Members"
+ms.date: 11/04/2016
 helpviewer_keywords: ["declarations, pointers", "class members [C++], pointers to", "pointers, to members", "members [C++], pointers to", "pointers, declarations"]
-ms.assetid: f42ddb79-9721-4e39-95b1-c56b55591f68
 ---
 # Pointers to Members
 
@@ -121,7 +120,7 @@ The address of a static member isn't a pointer to a member. It's a regular point
 
 Invoking a virtual function through a pointer-to-member function works as if the function had been called directly. The correct function is looked up in the v-table and invoked.
 
-The key to virtual functions working, as always, is invoking them through a pointer to a base class. (For more information about virtual functions, see [Virtual Functions](../cpp/virtual-functions.md).)
+The key to virtual functions working, as always, is invoking them through a pointer to a base class. For more information about virtual functions, see [Virtual Functions](../cpp/virtual-functions.md).
 
 The following code shows how to invoke a virtual function through a pointer-to-member function:
 

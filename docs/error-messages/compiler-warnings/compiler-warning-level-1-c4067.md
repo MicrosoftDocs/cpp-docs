@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4067"
 title: "Compiler Warning (level 1) C4067"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4067"
+ms.date: 11/04/2016
 f1_keywords: ["C4067"]
 helpviewer_keywords: ["C4067"]
-ms.assetid: 1d10353e-8cd5-4b01-9184-a06189b965a4
 ---
 # Compiler Warning (level 1) C4067
 
@@ -15,6 +14,8 @@ ms.assetid: 1d10353e-8cd5-4b01-9184-a06189b965a4
 The compiler found and ignored extra characters following a preprocessor directive. This can be caused by any unexpected characters, though a common cause is a stray semicolon after the directive. Comments do not cause this warning. The **/Za** compiler option enables this warning for more preprocessor directives than the default setting.
 
 ## Example
+
+The following example generates C4067:
 
 ```cpp
 // C4067a.cpp

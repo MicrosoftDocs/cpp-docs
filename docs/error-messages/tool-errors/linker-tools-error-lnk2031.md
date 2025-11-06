@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2031"
 title: "Linker Tools Error LNK2031"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2031"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2031"]
 helpviewer_keywords: ["LNK2031"]
-ms.assetid: 18ed4b6e-3e75-443c-bbd8-2f6030dc89ee
 ---
 # Linker Tools Error LNK2031
 
@@ -18,7 +17,7 @@ The **/clr:pure** compiler option is deprecated in Visual Studio 2015 and unsupp
 
 ## Examples
 
-This code sample generates a component with an exported, native, function whose calling convention is implicitly [__cdecl](../../cpp/cdecl.md).
+This code example generates a component with an exported, native, function whose calling convention is implicitly [__cdecl](../../cpp/cdecl.md).
 
 ```cpp
 // LNK2031.cpp
@@ -28,7 +27,7 @@ extern "C" {
 };
 ```
 
-The following sample creates a pure client that consumes the native function. However, the calling convention under **/clr:pure** is [__clrcall](../../cpp/clrcall.md). The following sample generates LNK2031.
+The following example creates a pure client that consumes the native function. However, the calling convention under **/clr:pure** is [__clrcall](../../cpp/clrcall.md). The following example generates LNK2031.
 
 ```cpp
 // LNK2031_b.cpp
@@ -41,7 +40,7 @@ int main() {
 }
 ```
 
-The following sample shows how to consume the native function from a pure image. Note the explicit **`__cdecl`** calling convention specifier.
+The following example shows how to consume the native function from a pure image. Note the explicit **`__cdecl`** calling convention specifier.
 
 ```cpp
 // LNK2031_c.cpp
