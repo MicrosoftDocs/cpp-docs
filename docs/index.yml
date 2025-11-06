@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: tylermsft
   ms.author: twhitney
-  ms.date: 06/04/2020
+  ms.date: 11/06/2025
   ms.custom: intro-landing-hub
 
 # highlightedContent section (optional)
@@ -205,6 +205,8 @@ additionalContent:
               url: parallel/parallel-programming-in-visual-cpp.md
             - text: Cloud and networking libraries
               url: cloud/cloud-and-web-programming-in-visual-cpp.md
+            - text: Azure SDK for C++
+              url: /azure/developer/cpp/sdk/overview/
             - text: Universal Windows Platform libraries
               url: cppcx/namespaces-reference-c-cx.md
             - text: vcpkg package manager

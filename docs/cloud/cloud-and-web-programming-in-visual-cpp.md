@@ -1,7 +1,7 @@
 ---
 title: "Cloud and Web Programming in Visual C++"
 description: "Learn more about: Cloud and Web Programming in Visual C++"
-ms.date: "05/14/2019"
+ms.date: "11/06/2025"
 ms.topic: "overview"
 ms.custom: intro-overview
 ---
@@ -10,6 +10,19 @@ ms.custom: intro-overview
 In C++, you have several options for connecting to the web and the cloud.
 
 ## Microsoft Azure SDKs and REST services
+
+- [Azure SDK for C++](/azure/developer/cpp/sdk/overview)
+
+  The Azure SDK for C++ provides a set of client libraries that enable your C++ applications to interact seamlessly with Azure services, whether in local or cloud environments. These libraries, built on top of the Azure REST API, offer familiar C++ syntax and implement common cloud patterns such as authentication, logging, and retries.The SDK provides a consistent interface for working with Azure services including:
+
+  - Azure Core
+  - Azure Identity
+  - Azure Attestation
+  - Azure Event Hubs
+  - Azure Storage
+  - Azure Key Vault
+
+  To get started, see [Install and integrate from the Azure SDK for C++](/azure/developer/cpp/sdk/install-and-integrate-the-sdk/).
 
 - [Microsoft Azure Storage Client Library for C++](https://azure.github.io/azure-storage-cpp/)
 
