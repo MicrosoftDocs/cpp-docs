@@ -1,60 +1,151 @@
 ---
 title: "Microsoft C++ porting and upgrading guide"
-description: "Upgrade Microsoft C++ code to the latest version of Visual Studio."
-ms.date: 09/10/2020
-ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
+description: "Your comprehensive hub for upgrading and modernizing Microsoft C++ code to the latest version of Visual Studio. Find tools, guides, success stories, and best practices."
+ms.date: 11/06/2025
 ms.topic: "overview"
-ms.custom: intro-overview
+ms.custom: intro-hub
+author: tylermsft
+ms.author: twhitney
 ---
+
 # Microsoft C++ porting and upgrading guide
 
-This article provides a guide for upgrading Microsoft C++ code to the latest version of Visual Studio. For projects created in Visual Studio 2010 through 2017, just open the project in Visual Studio 2019. You can upgrade a Visual Studio 2008 or earlier project in two steps. Use Visual Studio 2010 to convert the project to MSBuild format first. Then open the project in Visual Studio 2019. For complete instructions, see [Upgrading C++ projects from earlier versions of Visual Studio](upgrading-projects-from-earlier-versions-of-visual-cpp.md).
+**Transform your legacy C++ applications with confidence.** Whether you're upgrading from Visual Studio 2008 or modernizing to take advantage of the latest C++ features, this comprehensive guide provides everything you need for a successful upgrade journey.
 
-The toolsets in Visual Studio 2015, Visual Studio 2017, and Visual Studio 2019 are binary-compatible. Now you can upgrade to a more recent version of the compiler without having to upgrade your library dependencies. For more information, see [C++ binary compatibility between Visual Studio versions](binary-compat-2015-2017.md).
+:::row:::
+:::column span="2":::
+## 🚀 Quick start
 
-When upgrading projects that use open-source libraries or are meant to run on multiple platforms, we recommended migrating to a CMake-based project. For more information, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md)
+**Most projects upgrade seamlessly:** For projects created in Visual Studio 2010-2017, simply open them in the latest Visual Studio. For Visual Studio 2008 or earlier projects, use our [two-step upgrade process](upgrading-projects-from-earlier-versions-of-visual-cpp.md).
 
-## Reasons to upgrade C++ code
+**Binary compatibility:** Visual Studio 2015, 2017, 2019, 2022, and 2026 build tools are binary-compatible, so you can upgrade without rebuilding library dependencies. [Learn more](binary-compat-2015-2017.md).
 
-If a legacy application is running satisfactorily, in a secure environment, and isn't under active development, there might not be much incentive to upgrade it. However, consider an upgrade in these cases: Your application requires ongoing maintenance. Or, you're doing new feature development, or making performance or security improvements. An upgrade brings these benefits:
+**CMake projects:** For projects using open-source libraries or targeting multiple platforms, consider migrating to CMake. [Learn more](../build/cmake-projects-in-visual-studio.md).
+:::column-end:::
+:::column span="2":::
+## 💡 Why upgrade?
 
-- The same code can run faster, because we've improved compiler optimizations.
+- **🏃‍♂️ Better Performance:** Faster execution and build times
+- **🔒 Enhanced Security:** Address sanitizers and security features  
+- **📐 Standards Compliance:** Modern C++ features and conformance
+- **🛠️ Better Tools:** Advanced debugging and analysis capabilities
+:::column-end:::
+:::row-end:::
 
-- Modern C++ features and programming practices eliminate many common causes of bugs, and produce code that's far easier to maintain than older C-style idioms.
+## 🎯 Choose your upgrade path
 
-- Build times are faster, because of performance improvements in the compiler and linker.
+:::row:::
+:::column:::
+### 📋 Assess & plan
+**Evaluate your current codebase and plan your strategy**
 
-- Better standards conformance. The [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option helps you identify code that doesn't conform to the current C++ standard. The [new preprocessor](../preprocessor/preprocessor-experimental-overview.md) supports code conformance, too.
+- [🔍 Overview of potential upgrade issues](overview-of-potential-upgrade-issues-visual-cpp.md)
+- [🔗 C++ binary compatibility between versions](binary-compat-2015-2017.md)  
+- [📜 Visual C++ change history 2003-2015](visual-cpp-change-history-2003-2015.md)
+- [⚠️ Features deprecated in Visual Studio](features-deprecated-in-visual-studio.md)
+- [🎯 Use native multi-targeting for old projects](use-native-multi-targeting.md)
+:::column-end:::
+:::column:::
+### 🔧 Upgrade & modernize  
+**Step-by-step guides and tools for upgrading**
 
-- Better run-time security, including more secure [C Runtime library](../c-runtime-library/security-features-in-the-crt.md) features. And, compiler features such as [guard checking](../build/reference/guard-enable-guard-checks.md) and address sanitizers (new in Visual Studio 2019 version 16.4).
+- [⬆️ Upgrade projects from earlier versions](upgrading-projects-from-earlier-versions-of-visual-cpp.md)
+- [🛠️ IDE tools for upgrading C++ code](ide-tools-for-upgrading-code.md)
+- [🔄 Upgrade to Universal CRT](upgrade-your-code-to-the-universal-crt.md)
+- [🔧 Update WINVER and _WIN32_WINNT](modifying-winver-and-win32-winnt.md)
+- [🔗 Fix dependencies on library internals](fix-your-dependencies-on-library-internals.md)
+- [📊 Floating-point migration issues](floating-point-migration-issues.md)
+:::column-end:::
+:::row-end:::
 
-## Multitargeting vs. upgrading
+:::row:::
+:::column:::
+### 🌐 Platform migration
+**Move your applications to modern platforms**
 
-Perhaps upgrading your code base to a new toolset isn't an option for you. You can still use the latest Visual Studio to build and edit projects that use older toolsets and libraries. In Visual Studio 2019, you can take advantage of features such as:
+- [📱 Port to Universal Windows Platform](porting-to-the-universal-windows-platform-cpp.md)
+- [🔗 Use existing C++ code in UWP apps](how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md)
+- [🐧 Visual C++ for UNIX users](introduction-to-visual-cpp-for-unix-users.md)
+- [🪟 Running Linux programs on Windows](porting-from-unix-to-win32.md)
+- [📦 Port third-party libraries](porting-third-party-libraries.md)
+:::column-end:::
+:::column:::
+### ✨ Success stories & examples
+**Learn from real-world upgrade experiences**
 
-- modern static analysis tools, including the C++ Core Guidelines checkers and Clang-Tidy, to help identify potential problems in your source code.
+- [📖 Examples and case studies overview](porting-and-upgrading-examples-and-case-studies.md)
+- [📝 Case study: MFC Scribble upgrade](porting-guide-mfc-scribble.md)
+- [🕵️ Case study: COM Spy upgrade](porting-guide-com-spy.md)
+- [🔍 Case study: Spy++ upgrade](porting-guide-spy-increment.md)
+- [🏗️ VCBuild vs. MSBuild migration](build-system-changes.md)
+:::column-end:::
+:::row-end:::
 
-- automatic formatting according to your choice of modern styles can help make legacy code much more readable.
+[📚 Read more case studies](porting-and-upgrading-examples-and-case-studies.md)
 
-For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
+:::row:::
+:::column span="":::
+:::column-end:::
+:::column span="2":::
+![C++ logo with an upward arrow and abstract code on a blue background suggesting improvements from upgrading.](media/upgrade-cpp.png)
+:::column-end:::
+:::column span="":::
+:::column-end:::
+:::row-end:::
 
-## In this section
+## 🛠️ Upgrade benefits
 
-| Title | Description |
-|--|--|
-| [Upgrading C++ projects from earlier versions of Visual Studio](upgrading-projects-from-earlier-versions-of-visual-cpp.md) | How to upgrade your code base to the latest version of Visual Studio and the compiler. |
-| [IDE tools for upgrading C++ code](ide-tools-for-upgrading-code.md) | Useful IDE features that help in the upgrade process. |
-| [C++ binary compatibility between Visual Studio versions](binary-compat-2015-2017.md) | Consume v140 and later libraries as-is from v140 and later projects. |
-| [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md) | Use Visual Studio with older compilers and libraries. |
-| [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) | A list of all the changes in the Microsoft C++ libraries and build tools from Visual Studio 2003 through 2015 that might require changes in your code. |
-| [Visual C++ What's New 2003 through 2015](visual-cpp-what-s-new-2003-through-2015.md) | All the "what's new" information for Microsoft C++ from Visual Studio 2003 through Visual Studio 2015. |
-| [Porting and Upgrading: Examples and Case Studies](porting-and-upgrading-examples-and-case-studies.md) | For this section, we ported and upgrades several samples and applications and discussed the experiences and results. These articles give you a sense of what's involved in the porting and upgrading process. Throughout the process, we discuss tips and tricks for upgrading and show how specific errors were fixed. |
-| [Porting to the Universal Windows Platform](porting-to-the-universal-windows-platform-cpp.md) | Contains information about porting app code to Windows 10 and later |
-| [Introduction to Visual C++ for UNIX Users](introduction-to-visual-cpp-for-unix-users.md) | Provides information for UNIX users who are new to Visual C++ and want to become productive with it. |
-| [Running Linux programs on Windows](porting-from-unix-to-win32.md) | Discusses options for migrating UNIX applications to Windows. |
+:::row:::
+:::column span="2":::
+### Performance & optimization
+- **Faster execution** with improved compiler optimizations
+- **Reduced build times** through compiler and linker improvements  
+- **Better memory usage** with modern runtime optimizations
+:::column-end:::
+:::column span="2":::
+### Security & reliability
+- **Enhanced security** with address sanitizers and [guard checking](../build/reference/guard-enable-guard-checks.md)
+- **Secure runtime libraries** with improved [CRT security features](../c-runtime-library/security-features-in-the-crt.md))
+- **Better error detection** with static analysis tools
+:::column-end:::
+:::row-end:::
+
+:::row:::
+:::column span="2":::
+### Developer experience
+- **Modern IDE features** with IntelliSense improvements
+- **Advanced debugging** with better visualizers and diagnostics
+- **Code analysis** with Core Guidelines checkers and Clang-Tidy
+:::column-end:::
+:::column span="2":::
+### Standards & compatibility
+- **Better C++ standards conformance** with [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode
+- **Modern preprocessor** for improved code conformance. [Learn more](../preprocessor/preprocessor-experimental-overview.md)
+- **Cross-platform support** with CMake integration
+:::column-end:::
+:::row-end:::
+
+## 🤔 Multitargeting vs. upgrading
+
+**Not ready for a full upgrade?** You can still use the latest Visual Studio with older build tools and libraries:
+
+- ✅ **Modern static analysis tools** including C++ Core Guidelines checkers and Clang-Tidy
+- ✅ **Automatic code formatting** to improve legacy code readability  
+- ✅ **Latest IDE features** while maintaining compatibility
+
+[Learn about native multi-targeting →](use-native-multi-targeting.md)
+
+## 🚀 Ready to start?
+
+1. **📊 Assess your current project** with our [upgrade issues overview](overview-of-potential-upgrade-issues-visual-cpp.md)
+2. **🔄 Follow our step-by-step guide** to [upgrade from earlier versions](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
+3. **🛠️ Use our IDE tools** to [streamline the upgrade process](ide-tools-for-upgrading-code.md)
+4. **📖 Learn from others** with our [real-world case studies](porting-and-upgrading-examples-and-case-studies.md)
+
+**Questions?** Join the conversation in [Microsoft Learn Q&A](/answers/topics/c%2B%2B.html) or check out the [C++ Team Blog](https://devblogs.microsoft.com/cppblog/) for the latest updates.
 
 ## See also
 
-[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)<br/>
-[What's New for The C++ compiler in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-[C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)<br/>
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)\
+[What's new for the C++ compiler in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)\
+[C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)
