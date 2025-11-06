@@ -68,5 +68,5 @@ In C++, you have several options for connecting to the web and the cloud.
 ## See also
 
 [C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)\
-[Microsoft Azure C++ Developer Center](https://learn.microsoft.com/developer/cpp/)\
+[Microsoft Azure C++ Developer Center](/azure/developer/cpp/)\
 [Networks and web services (UWP)](/windows/uwp/networking/)
