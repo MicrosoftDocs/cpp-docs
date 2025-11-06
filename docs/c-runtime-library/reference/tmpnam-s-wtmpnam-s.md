@@ -96,7 +96,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 int main( void )
 {
-   char name1[L_tmpnam_s];
+   char name1[L_tmpnam_s + 1];
    errno_t err;
    int i;
 
