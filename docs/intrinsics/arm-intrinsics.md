@@ -7,7 +7,7 @@ helpviewer_keywords: ["cl.exe compiler, ARM intrinsics", "intrinsics, ARM", "__c
 ---
 # ARM intrinsics
 
-The Microsoft C++ compiler (MSVC) makes the following intrinsics available on the ARM architecture. For more information about ARM, see the Architecture and Software Development Tools sections of the [ARM Developer Documentation](https://developer.arm.com/docs) website.
+The Microsoft C++ (MSVC) compiler makes the following intrinsics available on the ARM architecture. For more information about ARM, see the Architecture and Software Development Tools sections of the [ARM Developer Documentation](https://developer.arm.com/docs) website.
 
 ## <a name="top"></a> NEON
 

@@ -221,5 +221,5 @@ The main consideration for whether to use this approach is the balance between c
 
 [Compare header units, modules, and precompiled headers](compare-inclusion-methods.md)\
 [Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md)\
-[Walkthrough: Build and import header units in your Visual C++ projects](walkthrough-header-units.md)\
+[Walkthrough: Build and import header units in your Microsoft C++ projects](walkthrough-header-units.md)\
 [`/translateInclude`](./reference/translateinclude.md)

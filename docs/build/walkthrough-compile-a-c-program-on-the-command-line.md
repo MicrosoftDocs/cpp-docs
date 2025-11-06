@@ -9,7 +9,7 @@ ms.topic: how-to
 ---
 # Walkthrough: Compile a C program on the command line
 
-The Visual Studio build tools include a C compiler that you can use to create everything from basic console programs to full Windows desktop applications and mobile apps. Microsoft C/C++ (MSVC) is a C and C++ compiler that, in its latest versions, conforms to some of the latest C language standards, including C11 and C17.
+The Visual Studio Build Tools include a C compiler that you can use to create everything from basic console programs to full Windows desktop applications and mobile apps. Microsoft C++ (MSVC) Build Tools contains a C and C++ compiler that, in its latest versions, conforms to some of the latest C language standards, including C11 and C17.
 
 This guide explains how to create a basic *Hello, World*-style C program by using a text editor, and then compile it on the command line. If you'd rather work in C++ on the command line, see [Walkthrough: Compiling a Native C++ Program on the Command Line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md). If you'd like to try the Visual Studio IDE instead of using the command line, see [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) or [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 

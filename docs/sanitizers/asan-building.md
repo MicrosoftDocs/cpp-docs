@@ -149,7 +149,6 @@ The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) pre
 
 Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds didn't use a DLL dependency. Instead, the MSVC AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Also, dynamically linked projects (**`/MD`** or **`/MTd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC AddressSanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
 
-
 | CRT runtime option | DLL or EXE | MSVC AddressSanitizer runtime libraries |
 |--|--|--|
 | **`/MT`** | EXE | *`/wholearchive:clang_rt.asan-{arch}.lib`*, *`clang_rt.asan_cxx-{arch}.lib`* |

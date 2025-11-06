@@ -5,7 +5,7 @@ ms.date: "11/06/2025"
 ms.topic: "overview"
 ms.custom: intro-overview
 ---
-# Cloud and Web Programming in Visual C++
+# Cloud and Web Programming in Microsoft C++
 
 In C++, you have several options for connecting to the web and the cloud.
 

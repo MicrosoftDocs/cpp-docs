@@ -147,7 +147,7 @@ You can customize a CMake debugging session by setting properties in the *`launc
 
 ### Just My Code for CMake projects
 
-When you build for Windows using the MSVC compiler, CMake projects have support for Just My Code debugging. To change the Just My Code setting, go to **Tools** > **Options** > **Debugging** > **General**. For more information on Just My Code debugging, see [Debug only user code with Just My Code](/visualstudio/debugger/just-my-code).
+When you build for Windows using the Microsoft C++ (MSVC) compiler, CMake projects have support for Just My Code debugging. To change the Just My Code setting, go to **Tools** > **Options** > **Debugging** > **General**. For more information on Just My Code debugging, see [Debug only user code with Just My Code](/visualstudio/debugger/just-my-code).
 
 ### Edit and Continue for CMake projects
 

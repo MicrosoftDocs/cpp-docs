@@ -8,7 +8,7 @@ ms.date: "07/11/2018"
 The application binary interface (ABI) for code compiled for Windows on ARM processors is based on the standard ARM EABI. This article highlights key differences between Windows on ARM and the standard. This document covers the ARM32 ABI. For information about the ARM64 ABI, see [Overview of ARM64 ABI conventions](arm64-windows-abi-conventions.md). For more information about the standard ARM EABI, see [Application Binary Interface (ABI) for the ARM Architecture](https://github.com/ARM-software/abi-aa) (external link).
 
 > [!NOTE]
-> Using the Microsoft Visual C++ (MSVC) build tools to target ARM32 is deprecated starting with Visual Studio 2026. If you need to target ARM32, use the Visual Studio 2022 v143 build tools.
+> Using the Microsoft C++ (MSVC) Build Tools to target ARM32 is deprecated starting with Visual Studio 2026. If you need to target ARM32, use the Visual Studio 2022 v143 build tools.
 
 ## Base Requirements
 
@@ -196,5 +196,5 @@ The counter is a true cycle counter, not a clock; therefore, the counting freque
 
 ## See also
 
-[Common Visual C++ ARM Migration Issues](common-visual-cpp-arm-migration-issues.md)<br/>
+[Common Microsoft C++ ARM Migration Issues](common-visual-cpp-arm-migration-issues.md)<br/>
 [ARM Exception Handling](arm-exception-handling.md)

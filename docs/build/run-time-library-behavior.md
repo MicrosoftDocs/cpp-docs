@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: DLLs and Visual C++ run-time library behavior"
+description: "Learn more about: DLLs and Microsoft C++ run-time library behavior"
 title: "DLLs and Visual C++ run-time library behavior"
 ms.date: "08/19/2019"
 f1_keywords: ["_DllMainCRTStartup", "CRT_INIT"]
