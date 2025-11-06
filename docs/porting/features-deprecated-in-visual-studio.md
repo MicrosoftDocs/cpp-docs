@@ -24,7 +24,7 @@ Visual Studio 2022 and later versions don't support upgrades from Visual C++ 6 W
 
 ### Support for C++AMP, ARM32 toolchain, and /DEBUG:FASTLINK
 
-Visual Studio 2026 and later versions don't support C++AMP, the ARM32 toolchain, and /DEBUG:FASTLINK. If you're utilizing `/DEBUG:FASTLINK`, it's recommended to switch to [`/DEBUG:FULL`](https://learn.microsoft.com/cpp/build/reference/debug-generate-debug-info) for improved debugging support. Developers needing to target ARM32 can continue using the Visual Studio 2022 v143 build tools as detailed in this [Microsoft blog post](https://devblogs.microsoft.com/cppblog/side-by-side-minor-version-msvc-toolsets-in-visual-studio-2019/).
+Visual Studio 2026 and later versions don't support C++AMP, the ARM32 toolchain, and /DEBUG:FASTLINK. If you're utilizing `/DEBUG:FASTLINK`, it's recommended to switch to [`/DEBUG:FULL`](/cpp/build/reference/debug-generate-debug-info) for improved debugging support. Developers needing to target ARM32 can continue using the Visual Studio 2022 v143 build tools as detailed in this [Microsoft blog post](https://devblogs.microsoft.com/cppblog/side-by-side-minor-version-msvc-toolsets-in-visual-studio-2019/).
 
 ### Deprecation of `/await`
 
