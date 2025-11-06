@@ -8,11 +8,11 @@ ms.topic: upgrade-and-migration-article
 ---
 # Upgrade C++ projects from earlier versions of Visual Studio
 
-To upgrade a project created in an earlier version of Visual Studio, start by opening the project in the latest version of Visual Studio. If you are still using the older version of Visual Studio side-by-side, you can choose not to upgrade your projects until you're ready to maintain compatibility with both versions.
+To upgrade a project created in an earlier version of Visual Studio, open the project in the latest version of Visual Studio. If you're still using an older version of Visual Studio side-by-side, you can choose not to upgrade your projects until you're ready to maintain compatibility with both versions.
 
-In Visual Studio 2026, this experience has been enhanced with a **setup assistant**. The setup assistant offers you the chance to install missing tools using the Visual Studio installer and stay on an older version or retarget your projects to the latest version. If you lose track of the setup assistant, you can open it by right-clicking your solution in Solution Explorer and selecting *Retarget solution*.
+In Visual Studio 2026, this experience is enhanced with a setup assistant. The setup assistant offers to install missing tools using the Visual Studio installer, and to stay on an older version or retarget your projects to the latest version. You can open the setup assistant in **Solution Explorer** by right-clicking your solution and selecting **Retarget solution**.
 
-With the setup assistant opened, you can choose an action for each target or select the *Retarget all* button at the top to set all projects at once. Then click *Apply* to complete the upgrade in place. Once your projects have been retargeted, they can't be converted back to the earlier version. In upgrade scenarios, that's why it's good practice to make a backup copy of the existing project and solution files.
+With the setup assistant open, choose an action for each target or select **Retarget all** to set all projects at once. Then select **Apply** to complete the upgrade in place. Once your projects are retargeted, they can't be converted back to the earlier version. It's good practice to make a backup copy of the existing project and solution files before upgrading them.
 
 > [!NOTE]
 > Visual Studio 2022 and later have deprecated support for the upgrade of project types that have *`.dsw`* or *`.dsp`* extensions. You can use an earlier version of Visual Studio, such as Visual Studio 2019, to upgrade these projects, then upgrade them again in Visual Studio 2022 or later to use the latest tools and features of Visual Studio.
