@@ -26,7 +26,7 @@ If your legacy projects are based on an older version of Visual Studio, you can 
 
 To retarget projects to the Visual Studio 2026 format, you can use the setup assistant which appears the first time you open a solution with older projects. You can also access it by right-clicking the solution in Solution Explorer and selecting *Retarget solution*.
 
-![Screenshot of the Visual Studio 2026 setup assistant.](media/vs-2026-setup-assistant.png "Upgrade projects")
+![Screenshot of the Visual Studio 2026 setup assistant showing a list of projects selected for retargeting to the latest MSVC Build Tools and v145 Platform Toolset.](media/vs-2026-setup-assistant.png "Upgrade projects")
 
 The setup assistant then gives you the choice to either stay on the older version and install any missing build tools or Windows SDKs to be able to build, or retarget the projects to upgrade them. You can make retargeting selections for each project in the solution or click *Retarget all*, then click *Apply* to perform the upgrade.
 

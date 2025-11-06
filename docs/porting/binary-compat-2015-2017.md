@@ -25,7 +25,7 @@ There are three important restrictions on binary compatibility between the v140,
 
 We've kept the Microsoft Visual C++ Redistributable major version number the same for Visual Studio 2015, 2017, 2019, 2022, and 2026. That means only one instance of the Redistributable can be installed at a time. A newer version overwrites any older version that's already installed. For example, one app may install the Redistributable from Visual Studio 2015. Then, another app installs the Redistributable from Visual Studio 2026. The 2026 version overwrites the older version, but because they're binary-compatible, the earlier app still works fine. We make sure the latest version of the Redistributable has all the newest features, security updates, and bug fixes. That's why we always recommend you upgrade to the latest available version.
 
-Similarly, you can't install an older Redistributable when a newer version is already installed. The installer reports an error if you try. You'll see an error like this if you install the 2019 or 2022 Redistributable on a machine that already has the 2026 version:
+Similarly, you can't install an older Redistributable when a newer version is already installed. The installer reports an error if you try. For example, you'll see an error like this if you install the 2022 Redistributable on a machine that already has the 2026 version:
 
 ```Output
 0x80070666 - Another version of this product is already installed. Installation of this version cannot continue. To configure or remove the existing version of this product, use Add/Remove Programs on the Control Panel.

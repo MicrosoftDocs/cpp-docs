@@ -27,7 +27,9 @@ The retail and debug UCRT DLLs are found in separate locations. The retail DLLs 
 
 The C and C++ compiler-specific runtime support library, `vcruntime`, contains the code required to support program startup and features such as exception handling and intrinsics. The library and its header files are still found in the version-specific Microsoft Visual Studio folder in your *Program Files* or *Program Files (x86)* directory.
 
-In Visual Studio 2017 and later, the header files are found under `Microsoft Visual Studio\[version]\[edition]\VC\Tools\MSVC\[lib-version]\include`. Here, `[version]` is the year (Visual Studio 2017 - 2022) or major version number (Visual Studio 2026 or later), `[edition]` is the edition or nickname for Visual Studio, and `[lib-version]` is the build version of the libraries.
+In Visual Studio 2017-2022, the header files are found under `Microsoft Visual Studio\[year]\[edition]\VC\Tools\MSVC\[lib-version]\include`. Here, `[year]` is the version of Visual Studio, `[edition]` is the edition or nickname for Visual Studio, and `[lib-version]` is the build version of the libraries.
+
+In Visual Studio 2026, the header files are found under `Microsoft Visual Studio\[version]\[channel]\VC\Tools\MSVC\[lib-version]\include`. Here, `[version]` is the major version number, `[channel]` is Insiders or Stable (depending on your Visual Studio build), and `[lib-version]` is the build version of the libraries.
 
 The link libraries are found under `Microsoft Visual Studio\[version]\[edition]\VC\Tools\MSVC\[lib-version]\lib\[architecture]`, where `[version]` is the year (Visual Studio 2017 - 2022) or major version number (Visual Studio 2026 or later), `[edition]` is the edition or nickname for Visual Studio, `[lib-version]` is the build version of the libraries, and `[architecture]` is the target processor architecture. Link libraries for OneCore and Store are also found in the libraries folder.
 
