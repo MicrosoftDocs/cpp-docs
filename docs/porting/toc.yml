@@ -17,7 +17,7 @@ items:
       href: ../porting/floating-point-migration-issues.md
     - name: Use native multi-targeting in Visual Studio to build old projects
       href: ../porting/use-native-multi-targeting.md
-    - name: C++ features deprecated in Visual Studio 2019
+    - name: C++ features deprecated in Visual Studio
       href: ../porting/features-deprecated-in-visual-studio.md
     - name: VCBuild vs. MSBuild
       href: ../porting/build-system-changes.md
