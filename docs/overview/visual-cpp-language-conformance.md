@@ -222,9 +222,11 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 
 ## C++ Standard library features
 
-A more detailed listing of Standard Library features and bug fixes by product version is available on the [GitHub Microsoft STL wiki Changelog](https://github.com/microsoft/STL/wiki/Changelog) page.\
-For the latest details on ongoing C++23 Standard Library conformance work, see [STL C++23 Features](https://github.com/orgs/microsoft/projects/1142/views/2).\
-For the latest details on ongoing C++26 Standard Library conformance work, see [STL C++26 Features](https://github.com/orgs/microsoft/projects/1142/views/2).
+A more detailed listing of Standard Library features and bug fixes by product version is available on the [GitHub Microsoft STL wiki Changelog](https://github.com/microsoft/STL/wiki/Changelog) page.
+
+For the latest details about ongoing conformance work, see:
+- [STL C++23 Features](https://github.com/orgs/microsoft/projects/1142/views/2).
+- [STL C++26 Features](https://github.com/orgs/microsoft/projects/1143/views/2).
 
 | Feature | Supported |
 |--|--|
