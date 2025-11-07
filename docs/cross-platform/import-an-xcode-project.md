@@ -7,7 +7,7 @@ ms.topic: how-to
 # Import an Xcode project
 
 > [!IMPORTANT]
-> Starting with Visual Studio 2026 (version 18.0), the **Mobile development with C++** workload for iOS and Android targeting in the Visual Studio installer and the **Embedded and IoT tools**--including RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import--are no longer supported and will be removed in a future update. However, the Android NDKs listed in the Mobile development with C++ workload continue to be supported.
+> Starting with Visual Studio 2026 (version 18.0), the Mobile development with C++ workload for iOS and Android, as well as the Embedded and IoT tools (RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import), are no longer supported and will be removed in a future update. The Android NDKs included in the Mobile development with C++ workload remain supported.
 
 The Visual Studio tools for cross-platform mobile development with C++ include support for moving your Xcode projects into Visual Studio, where you can create cross-platform libraries and share code with other projects. The Import from Xcode wizard simplifies the process of importing projects and splitting out the C++ code in your Xcode targets for use as a static library or shared code project. You can manage your iOS-specific code in Visual Studio and still use Xcode to do storyboards and builds. For information on how to easily move code back and forth between Visual Studio and Xcode, see [Sync changes between Xcode and Visual Studio](sync-changes-between-xcode-and-visual-studio.md).
 

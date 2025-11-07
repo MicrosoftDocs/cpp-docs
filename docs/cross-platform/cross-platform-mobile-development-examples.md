@@ -6,7 +6,7 @@ ms.date: 03/04/2024
 # Cross-platform mobile development examples
 
 > [!IMPORTANT]
-> Starting with Visual Studio 2026 (version 18.0), the **Mobile development with C++** workload for iOS and Android targeting in the Visual Studio installer and the **Embedded and IoT tools**--including RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import--are no longer supported and will be removed in a future update. However, the Android NDKs listed in the Mobile development with C++ workload continue to be supported.
+> Starting with Visual Studio 2026 (version 18.0), the Mobile development with C++ workload for iOS and Android, as well as the Embedded and IoT tools (RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import), are no longer supported and will be removed in a future update. The Android NDKs included in the Mobile development with C++ workload remain supported.
 
 Several of the templates installed by the **Mobile development with C++** workload generate complete examples that you can use to learn from. Additionally, here are some example applications that you can download and try out in Visual Studio.
 

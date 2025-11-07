@@ -9,7 +9,7 @@ ms.custom: sfi-image-nochange
 # Build an OpenGL ES application on Android and iOS
 
 > [!IMPORTANT]
-> Starting with Visual Studio 2026 (version 18.0), the **Mobile development with C++** workload for iOS and Android targeting in the Visual Studio installer and the **Embedded and IoT tools**--including RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import--are no longer supported and will be removed in a future update. However, the Android NDKs listed in the Mobile development with C++ workload continue to be supported.
+> Starting with Visual Studio 2026 (version 18.0), the Mobile development with C++ workload for iOS and Android, as well as the Embedded and IoT tools (RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import), are no longer supported and will be removed in a future update. The Android NDKs included in the Mobile development with C++ workload remain supported.
 > OpenGL support is no longer available. It was last available in Visual Studio 17.3.
 
 You can create Visual Studio solutions and projects for iOS apps and Android apps that share common code. This article guides you through a combined solution template. It creates both an iOS app, and an Android Native Activity app. The apps have C++ code in common that uses OpenGL ES to display the same animated rotating cube on each platform. OpenGL ES (OpenGL for Embedded Systems or GLES) is a 2D and 3D graphics API. It's supported on many mobile devices.

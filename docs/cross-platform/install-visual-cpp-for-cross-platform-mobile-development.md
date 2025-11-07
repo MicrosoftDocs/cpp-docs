@@ -8,7 +8,7 @@ ms.topic: install-set-up-deploy
 # Install cross-platform mobile development with C++
 
 > [!IMPORTANT]
-> Starting with Visual Studio 2026 (version 18.0), the **Mobile development with C++** workload for iOS and Android targeting in the Visual Studio installer and the **Embedded and IoT tools**--including RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import--are no longer supported and will be removed in a future update. However, the Android NDKs listed in the Mobile development with C++ workload continue to be supported.
+> Starting with Visual Studio 2026 (version 18.0), the Mobile development with C++ workload for iOS and Android, as well as the Embedded and IoT tools (RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import), are no longer supported and will be removed in a future update. The Android NDKs included in the Mobile development with C++ workload remain supported.
 
 You can use C++ in Visual Studio to build Windows Desktop apps, Universal Windows Platform (UWP) apps, and Linux apps. And now, you can build C++ apps for Android and iOS. The **Mobile development with C++** workload is an installable set of components in Visual Studio. It includes cross-platform iOS, Android, and UWP Visual Studio templates. The workload installs the cross-platform tools and SDKs you need to get started quickly. You don't have to locate, download, and configure them yourself. You can use these tools in Visual Studio to easily create, edit, debug, and test your cross-platform projects.
 
