@@ -2,7 +2,6 @@
 description: "Learn more about: General Project Properties (Android C++)"
 title: "General Project Properties (Android C++)"
 ms.date: "10/23/2017"
-ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
 f1_keywords:
   - VC.Project.VCConfiguration.Android.OutputDirectory
   - VC.Project.VCConfiguration.Android.IntermediateDirectory
@@ -16,6 +15,9 @@ f1_keywords:
   - VC.Project.VCConfiguration.ThumbMode
 ---
 # General Project Properties (Android C++)
+
+> [!IMPORTANT]
+> Starting with Visual Studio 2026 (version 18.0), the **Mobile development with C++** workload for iOS and Android targeting in the Visual Studio installer and the **Embedded and IoT tools**--including RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import--are no longer supported and will be removed in a future update. However, the Android NDKs listed in the Mobile development with C++ workload continue to be supported.
 
 | Property | Description | Choices |
 |--|--|--|

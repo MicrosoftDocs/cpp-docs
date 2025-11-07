@@ -3,12 +3,14 @@ description: "Learn more about: Introduction to Microsoft C++ for UNIX Users"
 title: "Introduction to Microsoft C++ for UNIX Users"
 ms.date: 06/22/2021
 helpviewer_keywords: ["UNIX [C++]"]
-ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
 ms.topic: concept-article
 ---
 # Introduction to Microsoft C++ for UNIX Users
 
 This topic provides information for users of all flavors of UNIX who are new to Visual Studio and want to become productive with C++ either from the command line or by using Visual Studio. You can use Visual Studio with the Microsoft C++ compiler to target Windows. You can also use the Visual Studio IDE with GCC or Clang in UNIX environments such as remote Linux machines, MinGW-w64, and Windows Subsystem for Linux. To use C++ in Visual Studio, the **Desktop Development with C++** workload must be installed. Open the Visual Studio Installer to install the workload or add or remove optional components. Also install the **Linux Development with C++** workload if you'll be targeting a remote Linux machine. For Android or iOS development, install the **Mobile Development with C++** workload.
+
+> [!IMPORTANT]
+> Starting with Visual Studio 2026 (version 18.0), the **Mobile development with C++** workload for iOS and Android targeting in the Visual Studio installer and the **Embedded and IoT tools**--including RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import--are no longer supported and will be removed in a future update. However, the Android NDKs listed in the Mobile development with C++ workload continue to be supported.
 
 ## Getting started on the command line
 

@@ -3,7 +3,6 @@ description: "Learn more about: C++ Tools and Features in Visual Studio Editions
 title: "C++ Tools and Features in Visual Studio Editions"
 ms.date: 10/27/2021
 helpviewer_keywords: ["tools and platforms [C++]"]
-ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ---
 # C++ Tools and Features in Visual Studio Editions
 
@@ -28,6 +27,9 @@ The following tables show C++ features that are available in Visual Studio 2017.
 - Linux
 - Android
 - iOS
+
+> [!IMPORTANT]
+> Starting with Visual Studio 2026 (version 18.0), the **Mobile development with C++** workload for iOS and Android targeting in the Visual Studio installer and the **Embedded and IoT tools**--including RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import--are no longer supported and will be removed in a future update. However, the Android NDKs listed in the Mobile development with C++ workload continue to be supported.
 
 ::: moniker-end
 
@@ -256,6 +258,9 @@ Optional Components:
 ::: moniker range=">=msvc-160"
 
 ### Mobile development with C++
+
+> [!IMPORTANT]
+> Starting with Visual Studio 2026 (version 18.0), the **Mobile development with C++** workload for iOS and Android targeting in the Visual Studio installer and the **Embedded and IoT tools**--including RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import--are no longer supported and will be removed in a future update. However, the Android NDKs listed in the Mobile development with C++ workload continue to be supported.
 
 Included:
 
