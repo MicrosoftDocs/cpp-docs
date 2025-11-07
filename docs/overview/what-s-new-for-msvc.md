@@ -52,7 +52,7 @@ MSVC Build Tools version 14.50 preserves binary compatibility with code built wi
 
 - Visual Studio 2026 now includes CMake 4.1.1 by default. CMake also includes a Visual Studio 2026 generator and modern SLNX projects, so you can build Visual Studio C++ projects directly from CMake.
 - Includes the latest version of the IncrediBuild engine and an updated extension that works with Visual Studio 2026 version 18.0. 
-- Compiler backend runtime performance improvements. Up to 6% as measured on Unreal Engine's City Sample RenderThread. For more information, see [Why you should upgrade your C++ build tools](https://devblogs.microsoft.com/cppblog/upgrading-c-projects-to-visual-studio-2026/#why-you-should-upgrade-your-c++-build-tools).
+- Compiler backend runtime performance improvements. Compared to Visual Studio version 17.14, up to 6% improvement on Unreal Engine's City Sample RenderThread and up to +3% improvements on Unreal Engine's City Sample GameThread benchmark. For more information, see [Why you should upgrade your C++ build tools](https://devblogs.microsoft.com/cppblog/upgrading-c-projects-to-visual-studio-2026/#why-you-should-upgrade-your-c++-build-tools).
 - The Visual Studio setup assistant can help you retarget your projects, so they build with the latest MSVC Build Tools. For more information, see [Retarget your projects with the setup assistant](https://devblogs.microsoft.com/cppblog/upgrading-c-projects-to-visual-studio-2026/#retarget-your-projects-with-the-setup-assistant).
 
 **Code analysis enhancements**
