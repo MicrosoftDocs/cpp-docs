@@ -1,7 +1,7 @@
 ---
 title: "What's new for MSVC Build Tools"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools (MSVC)."
-ms.date: 11/06/2025
+ms.date: 11/07/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ms.custom: intro-whats-new
@@ -85,7 +85,7 @@ MSVC Build Tools version 14.50 preserves binary compatibility with code built wi
 
 The MSVC compiler switch [`/await`](/cpp/build/reference/await-enable-coroutine-support) is being deprecated and will be removed in a future release. This switch enabled an early draft implementation of C++ coroutines using the `<experimental/coroutine>` header. Developers should transition to standard C++ coroutines by using the `<coroutine>` header available in C++20 and later. For C++14/17 projects, use `/await:strict` (which isn't being deprecated) to access the standard `<coroutine>` header without enabling other C++20 features.
 
-The mobile development and embedded and IoT development tools are no longer supported. The mobile development with C++ workload and Android NDK component in the Visual Studio installer are no longer supported and will be removed in a future Visual Studio update. This impacts tooling support for iOS and Android development, including new projects, building, and debugging.
+The Mobile development with C++ workload for iOS and Android, as well as the Embedded and IoT tools (RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import), are no longer supported and will be removed in a future update. The Android NDKs included in the Mobile development with C++ workload remain supported. This impacts tooling support for iOS and Android development, including new projects, building, and debugging.
 
 **The following features have been removed and are no longer available:**
 
