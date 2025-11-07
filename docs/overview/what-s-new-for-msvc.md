@@ -1,7 +1,7 @@
 ---
 title: "What's new for MSVC Build Tools"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools (MSVC)."
-ms.date: 11/05/2025
+ms.date: 11/06/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ms.custom: intro-whats-new
@@ -47,6 +47,7 @@ MSVC Build Tools version 14.50 preserves binary compatibility with code built wi
 - Copilot Chat is smarter with improved context for everyday tasks. Expect better results when searching your codebase and referencing specific lines in your code.
 - A **Copilot Actions** option was added to the right-click context menu in the Visual Studio editor. Use it to quickly bring a specific file or lines of code you select to the attention of Copilot Chat. You can then ask Copilot to explain what the code does, make optimizations, generate comments, unit tests, and so on.
 - Better AI code completions for C++. GitHub Copilot uses context from relevant files to improve inline autocomplete for C++. GitHub Copilot includes other relevant files as context which reduces hallucinations while offering more relevant and accurate suggestions.
+- Read about [New GitHub Copilot capabilities for C++ developers: Upgrade MSVC, improve build performance, and refactor C++ code](https://devblogs.microsoft.com/cppblog/new-github-copilot-capabilities-for-c-developers-upgrade-msvc-improve-build-performance-and-refactor-c-code/).
 
 **Build enhancements**
 
