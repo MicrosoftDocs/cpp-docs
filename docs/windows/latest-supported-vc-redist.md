@@ -36,33 +36,33 @@ To find the download you need, choose your version of Visual Studio from the tab
 
 Redistribution is permitted only for licensed Visual Studio users, as described in the [Visual Studio license terms](https://visualstudio.microsoft.com/license-terms/). For details on redistributing Visual C++ files, see [Redistributing Visual C++ Files](redistributing-visual-cpp-files.md).
 
-A Visual C++ Redistributable installs Microsoft C and C++ runtime libraries. Many applications built using Microsoft C++ (MSVC) Build Tools require these libraries. If your app is built using those libraries, a Microsoft Visual C++ Redistributable package at least as recent as the build tools used to build your app must be installed on the target system along with the app. The Redistributable package architecture must match your app's target architecture (you can't install an ARM64 redistributable on an x86 system, or an x64 redistributable on an x86 system, for example). We recommend you use the latest Redistributable available for your version of Visual Studio.
+A Visual C++ Redistributable installs Microsoft C and C++ runtime libraries. Many applications built using Microsoft C++ (MSVC) Build Tools require these libraries. If your app is built using those libraries, a Microsoft Visual C++ Redistributable package at least as recent as the build tools used to build your app must be installed on the target system along with the app. The Redistributable package architecture must match your app's target architecture (you can't install an ARM64 Redistributable on an x86 system, or an x64 Redistributable on an x86 system, for example). We recommend you use the latest Redistributable available for your version of Visual Studio.
 
 ## Visual C++ Redistributable v14
 
-This table lists the latest supported Microsoft Visual C++ Redistributable v14 packages. The latest supported version has the most recently implemented C++ features, security, reliability, and performance improvements. It also includes the latest C++ standard language and library standards conformance updates. We recommend that you install this version for all applications created using MSVC C and C++ build tools available in Visual Studio 2017, 2019, 2022, or 2026.
+This table lists the latest supported Microsoft Visual C++ Redistributable v14 packages. The latest supported version has the most recently implemented C++ features, security, reliability, and performance improvements. It also includes the latest C++ standard language and library standards conformance updates. We recommend that you install this version for all applications created using MSVC C and C++ Build Tools available in Visual Studio 2017, 2019, 2022, or 2026.
 
-Unlike older versions of Visual Studio that have infrequent redist updates, the version number isn't listed in the following table for Visual C++ redistributable v14 because the redist is updated frequently. To find the version number of the latest redist, download the redist you're interested in using one of the following links. Then, look at its properties using Windows File Explorer. In the **Details** pane, the **File version** contains the version of the redist.
+Unlike older versions of Visual Studio that have infrequent redistributable updates, the version number isn't listed in the following table for the Visual C++ v14 Redistributable because it is updated frequently. To find the version number of the latest redistributable, download the one you're interested in using one of the following links. Then, look at its properties using Windows File Explorer. In the **Details** pane, the **File version** contains the version of the redistributable.
 
 ### Latest supported redistributable version
 
 | Architecture | Link | Notes |
 |--|--|--|
-| ARM64 | [https://aka.ms/vs/18/release/vc_redist.arm64.exe](https://aka.ms/vs/18/release/vc_redist.arm64.exe) | Permalink for latest supported ARM64 version |
-| X86 | [https://aka.ms/vs/18/release/vc_redist.x86.exe](https://aka.ms/vs/18/release/vc_redist.x86.exe) | Permalink for latest supported x86 version |
-| X64 | [https://aka.ms/vs/18/release/vc_redist.x64.exe](https://aka.ms/vs/18/release/vc_redist.x64.exe) | Permalink for latest supported x64 version. The X64 Redistributable package contains both ARM64 and X64 binaries. This package makes it easy to install required Visual C++ ARM64 binaries when the X64 Redistributable is installed on an ARM64 device. |
+| ARM64 | [https://aka.ms/vc14/release/vc_redist.arm64.exe](https://aka.ms/vc14/release/vc_redist.arm64.exe) | Permalink for latest supported ARM64 version |
+| X86 | [https://aka.ms/vc14/release/vc_redist.x86.exe](https://aka.ms/vc14/release/vc_redist.x86.exe) | Permalink for latest supported x86 version |
+| X64 | [https://aka.ms/vc14/release/vc_redist.x64.exe](https://aka.ms/vc14/release/vc_redist.x64.exe) | Permalink for latest supported x64 version. The X64 Redistributable package contains both ARM64 and X64 binaries. This package makes it easy to install required Visual C++ ARM64 binaries when the X64 Redistributable is installed on an ARM64 device. |
 
 Download other versions, including long term servicing release channel (LTSC) versions, from [my.visualstudio.com](https://my.visualstudio.com/).
 
 ### Notes
 
-- The Visual C++ Redistributable v14 doesn't have separate packages for different languages. License terms for different languages are available at https://aka.ms/VCRedistLicense.
 - Some of the downloads that are mentioned in this article are currently available on [my.visualstudio.com](https://my.visualstudio.com/). Log in using a Visual Studio Subscription account so that you can access the download links. If you're asked for credentials, use your existing Visual Studio subscription account. Or, create a free account by choosing the [**No account? Create one!**](https://my.visualstudio.com/).
-- Visual Studio versions since Visual Studio 2017 share the same Redistributable files. Any apps built by MSVC build tools v14.* available in Visual Studio 2017, 2019, 2022, or 2026 can use the latest Visual C++ Redistributable v14. However, the version of the Microsoft Visual C++ Redistributable installed on the machine must be the same or higher than the version of the Visual C++ toolset used to create your application. For more information about which version of the Redistributable to install, see [Determining which DLLs to redistribute](determining-which-dlls-to-redistribute.md). For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md).
-- The latest version of the Visual C++ Redistributable v14 distributed with Visual Studio 2026 only supports the following operating systems:
+- The Visual C++ v14 Redistributable doesn't have separate packages for different languages. License terms for different languages are available at [https://aka.ms/VCRedistLicense](https://aka.ms/VCRedistLicense).
+- Visual Studio 2017 and later share the same Redistributable files. Any apps built by Microsoft C++ (MSVC) Build Tools v14.* available in Visual Studio 2017, 2019, 2022, or 2026 can use the latest Visual C++ v14 Redistributable. However, the version of the redistributable installed on the machine must be the same or higher than the version of the MSVC Build Tools used to create your application. For more information about which version of the Redistributable to install, see [Determining which DLLs to redistribute](determining-which-dlls-to-redistribute.md). For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md).
+- The latest version of the Visual C++ v14 Redistributable included with Visual Studio 2026 only supports the following operating systems:
   * Windows 10 and 11
   * Windows Server 2016, 2019, 2022, and 2025
-- Support for Visual Studio 2015 ended on October 15, 2025. Because support for the Visual C++ Redistributable is connected to the version of Visual Studio in which they first ship, support for Visual C++ Redistributable 2015 (version 14.0.24212) also ended October 15, 2025. See [Visual Studio 2015 (VC++ 14.0)](#visual-studio-2015-vc-140-no-longer-supported) section below for the latest available version.
+- Support for Visual Studio 2015 ended on October 15, 2025. Because support for the Visual C++ Redistributable is connected to the version of Visual Studio in which it first ships, support for Visual C++ 2015 Redistributable (version 14.0.24212) also ended October 15, 2025. See [Visual Studio 2015 (VC++ 14.0)](#visual-studio-2015-vc-140-no-longer-supported) section below for the latest available version.
 -  The Visual C++ Redistributable supports several command-line options. For more information, see [Command-line options for the Redistributable packages](./redistributing-visual-cpp-files.md#command-line-options-for-the-redistributable-packages).
 
 ## Unsupported legacy versions
@@ -146,7 +146,6 @@ Download Redistributable files for other languages and architectures from:
 - [Visual Studio 2026 release notes](/visualstudio/releases/2026/release-notes)
 - [What's new for C++ in Visual Studio](../overview//what-s-new-for-visual-cpp-in-visual-studio.md)
 - [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)
-- [MSVC Backend Updates since Visual Studio 2022 version 17.3](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-since-visual-studio-2022-version-17-3/)
 - [Standard Template Library (STL) changelog](https://github.com/microsoft/STL/wiki/Changelog)
 - [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg)
 - [Microsoft Visual C++ compiler versioning](../overview/compiler-versions.md)
