@@ -23,7 +23,7 @@
          for (int i = 0; i < 1000; ++i)
          {
             // To reduce overhead, occasionally check for 
-            // cancelation.
+            // cancellation.
             if ((i%100) == 0)
             {
                if (tg2.is_canceling())

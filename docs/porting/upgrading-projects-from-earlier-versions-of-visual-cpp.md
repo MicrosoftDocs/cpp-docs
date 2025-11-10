@@ -1,21 +1,21 @@
 ---
 title: "Upgrade C++ projects from earlier versions of Visual Studio"
 description: "How to upgrade Microsoft C++ projects from older versions of Visual Studio."
-ms.date: 04/07/2022
+ms.date: 11/05/2025
 helpviewer_keywords: ["32-bit code porting", "upgrading Visual C++ applications, 32-bit code"]
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
 ms.topic: upgrade-and-migration-article
 ---
 # Upgrade C++ projects from earlier versions of Visual Studio
 
-To upgrade a project created in an earlier version of Visual Studio, just open the project in the latest version of Visual Studio. Visual Studio offers to upgrade the project to the current schema.
+To upgrade a project created in an earlier version of Visual Studio, open the project in the latest version of Visual Studio. If you're still using an older version of Visual Studio side-by-side, you can choose not to upgrade your projects until you're ready to maintain compatibility with both versions.
 
-If you choose **No**, the project doesn't get upgraded. For projects created in Visual Studio 2010 and later, you can still use the project in the newer version of Visual Studio. Just set your project properties to continue to target the older toolset. If you leave the older version of Visual Studio on your computer, its toolset is available in later versions. For example, if your project must continue to run on Windows XP, you can upgrade to Visual Studio 2019. You then specify the toolset as v141_xp or earlier in your project properties. For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
+In Visual Studio 2026, this experience is enhanced with a setup assistant. The setup assistant offers to install missing tools using the Visual Studio installer, and to stay on an older version or retarget your projects to the latest version. You can open the setup assistant in **Solution Explorer** by right-clicking your solution and selecting **Retarget solution**.
 
-If you choose **Yes**, then the project gets upgraded in place. It can't be converted back to the earlier version. In upgrade scenarios, that's why it's good practice to make a backup copy of the existing project and solution files.
+With the setup assistant open, choose an action for each target or select **Retarget all** to set all projects at once. Then select **Apply** to complete the upgrade in place. Once your projects are retargeted, they can't be converted back to the earlier version. It's good practice to make a backup copy of the existing project and solution files before upgrading them.
 
 > [!NOTE]
-> Visual Studio 2022 has deprecated support for the upgrade of project types that have *`.dsw`* or *`.dsp`* extensions. You can use an earlier version of Visual Studio, such as Visual Studio 2019, to upgrade these projects, then upgrade them in Visual Studio 2022 to use the latest tools and features of Visual Studio.
+> Visual Studio 2022 and later have deprecated support for the upgrade of project types that have *`.dsw`* or *`.dsp`* extensions. You can use an earlier version of Visual Studio, such as Visual Studio 2019, to upgrade these projects, then upgrade them again in Visual Studio 2022 or later to use the latest tools and features of Visual Studio.
 
 ## Upgrade reports
 
@@ -37,7 +37,7 @@ When you upgrade a project, you get an upgrade report. The report is also saved 
 
 - Runtime errors or unexpected results because of behavior changes.
 
-- Errors that were introduced in the tools. If you find an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio C++ Developer Community](https://aka.ms/feedback/report?space=62) page.
+- Errors that were introduced in the tools. If you find an issue, report it to the Microsoft C++ team through your normal support channels or by using the [Visual Studio C++ Developer Community](https://aka.ms/feedback/report?space=62) page.
 
 Some upgraded projects and solutions can be built successfully without modification. However, most projects will likely require changes to both project settings and your source code. There's no single correct way to go about fixing these issues, but we recommend using a phased approach. Before you start, review [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md) for more information on many kinds of common errors.
 
@@ -72,7 +72,7 @@ For hard-to-fix errors, you can search for solutions or post a question on [Micr
 
 ## See also
 
-[What's New for Visual C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)\
+[What's New for Microsoft C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)\
 [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)\
 [Nonstandard Behavior](../cpp/nonstandard-behavior.md)\
 [Port data applications](../data/data-access-programming-mfc-atl.md)
