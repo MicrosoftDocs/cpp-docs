@@ -196,7 +196,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P2156R1 Allow Duplicate Attributes`](https://wg21.link/p2156r1) | MSVC Build Tools version 14.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2173R1 Attributes on Lambda-Expressions`](https://wg21.link/p2173r1) | VS 2022 17.14 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2186R2 Remove Garbage Collection Support`](https://wg21.link/p2186r2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
-| &emsp;[`P2201R1 Mixed string literal concatenation`](https://wg21.link/p2201r1) | No change required |
+| &emsp;[`P2201R1 Mixed string literal concatenation`](https://wg21.link/p2201r1) | VS 2022 17.14 |
 | &emsp;[`P2223R2 Trimming whitespaces before line splicing`](https://wg21.link/p2223r2) | MSVC Build Tools version 14.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2242R3 Non-literal variables (and labels and gotos) in constexpr functions`](https://wg21.link/p2242r3) | VS 2022 17.14 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2246R1 Character encoding of diagnostic text`](https://wg21.link/p2246r1) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
@@ -224,7 +224,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 
 A more detailed listing of Standard Library features and bug fixes by product version is available on the [GitHub Microsoft STL wiki Changelog](https://github.com/microsoft/STL/wiki/Changelog) page.
 
-For the latest details about ongoing conformance work, see:
+For the latest information about ongoing conformance work, see:
 - [STL C++23 Features](https://github.com/orgs/microsoft/projects/1142/views/2).
 - [STL C++26 Features](https://github.com/orgs/microsoft/projects/1143/views/2).
 
@@ -640,7 +640,7 @@ These algorithms aren't presently parallelized:
 
 <a name="note_T"></a> **T** `<stdatomic.h>` is currently supported when compiled as C++ (`/std:c++latest`). It isn't yet supported when compiled as C (`/std:c11` and `/std:c17`)
 
-<a name="note_U"></a> **U** Extended floating-point types are an optional C++23 feature. MSVC doesn't plan to support this feature before the completion of C++23 standardization.
+<a name="note_U"></a> **U** Extended floating-point types are an optional C++23 feature. This feature won't be implemented until C++23 standardization is finalized.
 
 <a name="note_V"></a> **V** Use the compiler options `/source-charset:utf-8` and `/we4828` to treat source files as UTF-8 encoded.
 
