@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ language conformance"
 description: "Microsoft C and C++ conformance updates by Visual Studio version."
-ms.date: 11/07/2025
+ms.date: 11/10/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -174,8 +174,8 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P1073R3 Immediate functions`](https://wg21.link/P1073R3) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1143R2 constinit`](https://wg21.link/P1143R2) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1353R0 Missing feature-test macros`](https://wg21.link/P1353R0) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
-| &emsp;[`P0735R1 Interaction of memory_order_consume with release sequences`](https://wg21.link/P0735R1) | N/A |
-| &emsp;[`P1236R1 Signed integers are two's complement`](https://wg21.link/P1236R1) | N/A |
+| &emsp;[`P0735R1 Interaction of memory_order_consume with release sequences`](https://wg21.link/P0735R1) | VS 2022 v17.14 |
+| &emsp;[`P1236R1 Signed integers are two's complement`](https://wg21.link/P1236R1) | VS 2022 v17.14 |
 | **C++23 Core language features** | **Supported** |
 | &emsp;[`P0330R8 Literal Suffix for (signed) size_t`](https://wg21.link/p0330r8) | VS 2022 17.13 <sup>[23](#note_23)</sup> |
 | &emsp;[`P0847R7 Deducing this`](https://wg21.link/p0847r7) | VS 2022 17.13 <sup>[23](#note_23)</sup> |
@@ -207,13 +207,13 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P2314R4 Character sets and encodings`](https://wg21.link/p2314r4) | no |
 | &emsp;[`P2316R2 Consistent character literal encoding`](https://wg21.link/p2316r2) | VS 2022 17.0 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2324R2 Labels at the end of compound statements (C compatibility)`](https://wg21.link/p2324r2) | no |
-| &emsp;[`P2327R1 De-deprecating volatile compound operations`](https://wg21.link/p2327r1) | N/A |
+| &emsp;[`P2327R1 De-deprecating volatile compound operations`](https://wg21.link/p2327r1) | VS 2022 v17.14 |
 | &emsp;[`P2334R1 preprocessing directives elifdef and elifndef`](https://wg21.link/p2334r1) | VS 2022 17.10 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2360R0 Extend init-statement to allow alias-declaration`](https://wg21.link/p2360r0) | MSVC Build Tools version 14.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2362R3 Remove non-encodable wide character literals and multicharacter wide character literals`](https://wg21.link/p2362r3) | no |
 | &emsp;[`P2437R1 Support for #warning`](https://wg21.link/p2437r1) | MSVC Build Tools version 14.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2448R2 Relaxing some constexpr restrictions`](https://wg21.link/p2448r2) | no |
-| &emsp;[`P2460R2 Relax requirements on wchar_t to match existing practices`](https://wg21.link/p2460r2) | N/A |
+| &emsp;[`P2460R2 Relax requirements on wchar_t to match existing practices`](https://wg21.link/p2460r2) | VS 2022 v17.14 |
 | &emsp;[`P2468R2 The Equality Operator You Are Looking For`](https://wg21.link/p2468r2) | VS 2022 17.6 <sup>[23](#note_23)</sup> |
 | &emsp;[`P2493R0 Missing feature test macros for C++20 core papers`](https://wg21.link/p2493r0) | MSVC Build Tools version 14.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2513R4 char8_t Compatibility and Portability Fix`](https://wg21.link/p2513r4) | VS 2022 17.4 <sup>[DR](#note_DR)</sup> |
@@ -442,7 +442,7 @@ For the latest details about ongoing conformance work, see:
 | &emsp;[`P1208R6 <source_location>`](https://wg21.link/P1208R6) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1502R1 Standard Library Header Units`](https://wg21.link/P1502R1) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1614R2 Adding Spaceship <=> To The Library`](https://wg21.link/P1614R2) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
-| &emsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | N/A |
+| &emsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | VS 2022 v17.14 |
 | **C++20 Standard library features (Defect reports)** | **Supported** |
 | &emsp;[`P2325R3 Views Should Not Be Required To Be Default Constructible`](https://wg21.link/P2325r3) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup> |
 | &emsp;[`P2328R1 join_view should join all views of ranges`](https://wg21.link/P2328R1) | VS 2022 17.0 <sup>[20abi](#note_20abi)</sup> |
