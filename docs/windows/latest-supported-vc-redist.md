@@ -48,9 +48,9 @@ Unlike older versions of Visual Studio that have infrequent redistributable upda
 
 | Architecture | Link | Notes |
 |--|--|--|
-| ARM64 | [https://aka.ms/vc14/release/vc_redist.arm64.exe](https://aka.ms/vc14/release/vc_redist.arm64.exe) | Permalink for latest supported ARM64 version |
-| X86 | [https://aka.ms/vc14/release/vc_redist.x86.exe](https://aka.ms/vc14/release/vc_redist.x86.exe) | Permalink for latest supported x86 version |
-| X64 | [https://aka.ms/vc14/release/vc_redist.x64.exe](https://aka.ms/vc14/release/vc_redist.x64.exe) | Permalink for latest supported x64 version. The X64 Redistributable package contains both ARM64 and X64 binaries. This package makes it easy to install required Visual C++ ARM64 binaries when the X64 Redistributable is installed on an ARM64 device. |
+| ARM64 | [https://aka.ms/vc14/vc_redist.arm64.exe](https://aka.ms/vc14/vc_redist.arm64.exe) | Permalink for latest supported ARM64 version |
+| X86 | [https://aka.ms/vc14/vc_redist.x86.exe](https://aka.ms/vc14/vc_redist.x86.exe) | Permalink for latest supported x86 version |
+| X64 | [https://aka.ms/vc14/vc_redist.x64.exe](https://aka.ms/vc14/vc_redist.x64.exe) | Permalink for latest supported x64 version. The X64 Redistributable package contains both ARM64 and X64 binaries. This package makes it easy to install required Visual C++ ARM64 binaries when the X64 Redistributable is installed on an ARM64 device. |
 
 Download other versions, including long term servicing release channel (LTSC) versions, from [my.visualstudio.com](https://my.visualstudio.com/).
 
