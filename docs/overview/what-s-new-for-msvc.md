@@ -1,7 +1,7 @@
 ---
 title: "What's new for MSVC Build Tools"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools (MSVC)."
-ms.date: 11/10/2025
+ms.date: 11/11/2025
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ms.custom: intro-whats-new
@@ -11,7 +11,7 @@ ms.custom: intro-whats-new
 
 Version 14.50 brings many updates and fixes to the Microsoft C++ compiler and other build tools.
 
-- For more information about what's new in all of Visual Studio, see [What's new in Visual Studio](/visualstudio/ide/whats-new-visual-studio).
+- For more information about what's new in all of Visual Studio, see [Visual Studio 2026 release notes](/visualstudio/releases/2026/release-notes).
 
 ## What's new for MSVC Build Tools version 14.50
 
