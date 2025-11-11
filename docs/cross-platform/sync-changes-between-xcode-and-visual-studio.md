@@ -2,9 +2,11 @@
 description: "Learn more about: Sync changes between Xcode and Visual Studio"
 title: "Sync changes between Xcode and Visual Studio"
 ms.date: "10/17/2019"
-ms.assetid: c71a4d7c-120e-4559-a114-3a99c4b860a9
 ---
 # Sync changes between Xcode and Visual Studio
+
+> [!IMPORTANT]
+> Starting with Visual Studio 2026 (version 18.0), the Mobile development with C++ workload for iOS and Android, as well as the Embedded and IoT tools (RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import), are no longer supported and will be removed in a future update. The Android NDKs included in the Mobile development with C++ workload remain supported.
 
 The mobile development with C++ components in Visual Studio include remote capabilities for syncing your work between your PC and your Mac. When your Visual Studio and Mac machines are paired, new options are available for iOS Application projects in Visual Studio that you can use to open your project in Xcode, move your code between Xcode and Visual Studio, and clean the temporary Xcode project directory.
 
