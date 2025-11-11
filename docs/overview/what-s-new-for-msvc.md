@@ -61,7 +61,9 @@ Here's a quick highlight of some of the new features in MSVC Build Tools version
 - Clang-Tidy code analysis improvements provide enhanced configuration options for faster builds and custom workflows:
     - Code analysis has new configuration options. You can now allocate more processors to run code analysis as part of your build, speeding up your development workflow.
     - You can add custom arguments to the command line used to invoke `clang-tidy`, giving you complete control over your analysis setup.
-    - Access the new options from **Project Properties** > **Code Analysis** > **Clang-Tidy**: ![Screenshot of Project Properties dialog showing clang-tidy configuration options including processor allocation and custom command line arguments](./media/clang-tidy-improvements.png).
+    - Access the new options from **Project Properties** > **Code Analysis** > **Clang-Tidy**:
+
+![Screenshot of Project Properties dialog showing clang-tidy configuration options including processor allocation and custom command line arguments](./media/clang-tidy-improvements.png)
 - AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools have supported building projects that target x64 and x86 with [AddressSanitizer](/cpp/sanitizers/asan), which allows you to identify hard-to-find memory safety issues with zero false positives at runtime and increase memory safety. Now you can use AddressSanitizer to target ARM64. This feature is in preview.
 
 ### Productivity enhancements
