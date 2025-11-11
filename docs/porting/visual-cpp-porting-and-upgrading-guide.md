@@ -59,6 +59,7 @@ ms.author: twhitney
 ### 🔧 Upgrade & modernize  
 **Step-by-step guides and tools for upgrading**
 
+- [⬆️ Upgrading C++ Projects to Visual Studio 2026](https://devblogs.microsoft.com/cppblog/upgrading-c-projects-to-visual-studio-2026/)
 - [⬆️ Upgrade projects from earlier versions](upgrading-projects-from-earlier-versions-of-visual-cpp.md)
 - [🛠️ IDE tools for upgrading C++ code](ide-tools-for-upgrading-code.md)
 - [🔄 Upgrade to Universal CRT](upgrade-your-code-to-the-universal-crt.md)

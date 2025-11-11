@@ -6,6 +6,8 @@ items:
       href: ../overview/visual-cpp-in-visual-studio.md
     - name: Overview of C++ development in Visual Studio
       href: ../overview/overview-of-cpp-development.md
+    - name: What's new for MSVC Build Tools
+      href: ../overview/what-s-new-for-msvc.md
     - name: What's new for C++ in Visual Studio 2022
       href: ../overview/what-s-new-for-visual-cpp-in-visual-studio.md
     - name: What's new for C++ in Visual Studio 2019

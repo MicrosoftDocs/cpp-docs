@@ -2,10 +2,12 @@
 description: "Learn more about: Create an Android Native Activity App"
 title: "Create an Android Native Activity App"
 ms.date: "10/17/2019"
-ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
 ms.topic: how-to
 ---
 # Create an Android Native Activity App
+
+> [!IMPORTANT]
+> Starting with Visual Studio 2026 (version 18.0), the Mobile development with C++ workload for iOS and Android, as well as the Embedded and IoT tools (RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import), are no longer supported and will be removed in a future update. The Android NDKs included in the Mobile development with C++ workload remain supported.
 
 When you install the cross-platform **Mobile development with C++** workload, Visual Studio can be used to create fully functional Android Native Activity apps. The Android Native Development Kit (NDK) is a toolset that allows you to implement the majority of your Android app using pure C/C++ code. Some Java JNI code acts as glue to allow your C/C++ code to interact with Android. The Android NDK introduced the ability to create Native Activity apps with Android API Level 9. Native Activity code is popular for creating gaming and graphic intensive apps that use Unreal Engine or OpenGL. This topic will guide you through creation of a simple Native Activity app that uses OpenGL. Additional topics walk through the developer lifecycle of editing, building, debugging and deploying Native Activity code.
 

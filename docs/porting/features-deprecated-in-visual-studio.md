@@ -42,10 +42,6 @@ To build applications using the latest C++ tools, your target platform must be *
 
 These changes allow for better performance, enhanced security, and alignment with the most recent Windows platform capabilities.
 
-### Support for Mobile development with C++ workload
+### Support for Mobile development with C++ and Embedded and IoT tools
 
-The Mobile development with C++ workload for iOS and Android targeting in the Visual Studio installer is no longer being supported and will be removed in a future Visual Studio update. This includes new projects, building, and debugging.
-
-### Support for Embedded and IoT tools
-
-The Embedded and IoT tools component in the Visual Studio installer is no longer being supported and will be removed in a future Visual Studio update. This includes the RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import.
+Starting with Visual Studio 2026 (version 18.0), the **Mobile development with C++** workload for iOS and Android targeting in the Visual Studio installer and the **Embedded and IoT tools**--including RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import--are no longer supported and will be removed in a future update. However, the Android NDKs listed in the Mobile development with C++ workload continue to be supported.
