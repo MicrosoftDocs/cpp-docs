@@ -94,30 +94,6 @@ Some of these predefined facets are used by the `iostream` classes, to control t
 
 An object of class locale also stores a locale name as an object of class [string](../standard-library/string-typedefs.md#string). Using an invalid locale name to construct a locale facet or a locale object throws an object of class [runtime_error](../standard-library/runtime-error-class.md). The stored locale name is `"*"` if the locale object can't be certain that a C-style locale corresponds exactly to the one represented by the object. Otherwise, you can establish a matching locale within the Standard C Library, for some locale object `locale_object`, by calling `setlocale(LC_ALL , locale_object.`[name](#name)`().c_str())`.
 
-In this implementation, you can also call the static member function:
-
-```cpp
-static locale empty();
-```
-
-to construct a locale object that has no facets. It's also a transparent locale. If the template functions [has_facet](../standard-library/locale-functions.md#has_facet) and [use_facet](../standard-library/locale-functions.md#use_facet) can't find the requested facet in a transparent locale, they consult first the global locale and then, if that is transparent, the classic locale. So, you can write:
-
-```cpp
-cout.imbue(locale::empty());
-```
-
-Subsequent insertions to [`cout`](../standard-library/iostream.md#cout) are mediated by the current state of the global locale. You can even write:
-
-```cpp
-locale loc(locale::empty(),
-    locale::classic(),
-    locale::numeric);
-
-cout.imbue(loc);
-```
-
-Numeric formatting rules for subsequent insertions to `cout` remain the same as in the C locale, even as the global locale supplies changing rules for inserting dates and monetary amounts.
-
 ### Constructors
 
 |Constructor|Description|
