@@ -20,7 +20,7 @@ Describes legacy data access programming with Visual C++, where the preferred wa
 The Microsoft Foundation Classes (MFC) library supplies classes for programming with Open Database Connectivity (ODBC).
 
 [OLE DB Programming](oledb/ole-db-programming.md)<br/>
-A mostly legacy interface which is still required in some scenarios, specifically when you are programming against linked servers.
+A mostly legacy interface which is still required in some scenarios, specifically when you're programming against linked servers.
 
 ## Related Topics
 
