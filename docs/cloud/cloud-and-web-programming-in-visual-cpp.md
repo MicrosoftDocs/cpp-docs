@@ -24,16 +24,6 @@ In C++, you have several options for connecting to the web and the cloud.
 
   To get started, see [Install and integrate from the Azure SDK for C++](/azure/developer/cpp/sdk/install-and-integrate-the-sdk/).
 
-- [Microsoft Azure Storage Client Library for C++](https://azure.github.io/azure-storage-cpp/)
-
-  The Azure Storage Client Library for C++ provides a comprehensive API for working with Azure storage, including but not limited to the following abilities:
-
-  - Create, read, delete, and list blob containers, tables, and queues.
-  - Create, read, delete, list, and copy blobs plus read and write blob ranges.
-  - Insert, delete, replace, merge, and query entities in an Azure table.
-  - Enqueue and dequeue messages in an Azure queue.
-  - Lazily list containers, blobs, tables, and queues, and lazily query entities
-
 - The ANSI C99 [Azure IoT Hub SDKs](/azure/iot-hub/iot-hub-devguide-sdks) for Internet of Things enable IoT applications to run on the device or on the backend.
 
 - [OneDrive and SharePoint in Microsoft Graph](https://dev.onedrive.com/README.htm)
