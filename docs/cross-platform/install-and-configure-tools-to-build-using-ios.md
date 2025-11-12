@@ -2,13 +2,15 @@
 description: "Learn more about: Install and configure tools to build using iOS"
 title: "Install and configure tools to build using iOS"
 ms.date: 12/18/2022
-ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 ms.topic: install-set-up-deploy
 ms.custom:
   - intro-installation
   - sfi-image-nochange
 ---
 # Install and configure tools to build using iOS
+
+> [!IMPORTANT]
+> Starting with Visual Studio 2026 (version 18.0), the Mobile development with C++ workload for iOS and Android, as well as the Embedded and IoT tools (RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import), are no longer supported and will be removed in a future update. The Android NDKs included in the Mobile development with C++ workload remain supported.
 
 You can use Visual Studio with the cross-platform **Mobile development with C++** tools to edit, debug, and deploy iOS code to the iOS Simulator or to an iOS device. But, because of licensing restrictions, the code must be built and run remotely on a Mac. To build and run iOS apps using Visual Studio, you need to set up and configure the remote agent, [vcremote](https://www.npmjs.com/package/vcremote), on your Mac. The vcremote remote agent handles build requests from Visual Studio and runs the app on an iOS device connected to the Mac, or in the iOS Simulator on the Mac.
 

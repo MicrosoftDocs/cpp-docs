@@ -3,7 +3,7 @@ title: "How to report a problem with the Microsoft C++ Build Tools"
 description: How to create a good problem report and repro information for the Microsoft C++ toolset.
 ms.date: "09/24/2019"
 ms.service: "visual-cpp"
-ms.subservice: "ide"
+ms.subservice: "cpp-lang"
 author: "tylermsft"
 ms.author: "twhitney"
 ---
@@ -408,6 +408,6 @@ To maintain your privacy and keep your sensitive information out of public view,
 
 ## How to report a C++ documentation issue
 
-We use GitHub issues to track problems reported in our documentation. You can now create GitHub issues directly from a content page, which enables you interact in a richer way with writers and product teams. If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know. Scroll to the bottom of the page and select **Sign in to give documentation feedback**. You need to create a GitHub account if you don't have one already. When you have a GitHub account, you can see all of our documentation issues and their status. You also get notifications when changes are made for the issue you reported. For more information, see our [Feedback System blog entry](/teamblog/a-new-feedback-system-is-coming-to-docs).
+If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know by using the feedback buttons on the page. Since 2024, we no longer use GitHub issues to track problems reported. For more information, see [Announcing a new way to give feedback on Microsoft Learn](https://techcommunity.microsoft.com/blog/microsoftlearnblog/announcing-a-new-way-to-give-feedback-on-microsoft-learn/4027635).
 
-You create a documentation issue on GitHub when you use the documentation feedback button. The issue is automatically filled in with some information about the page you created the issue on. That's how we know where the problem is located, so don't edit this information. Just append the details about what's wrong, and if you like, a suggested fix. [Our C++ docs are open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to submit a fix yourself, you can. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/main/CONTRIBUTING.md) on GitHub.
+[Our C++ docs are open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to submit a fix yourself, you can. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/main/CONTRIBUTING.md) on GitHub.

@@ -1,4 +1,4 @@
-   // To enable cancelation, call parallel_for in a task group.
+   // To enable cancellation, call parallel_for in a task group.
    structured_task_group tg;
 
    task_group_status status = tg.run_and_wait([&] {

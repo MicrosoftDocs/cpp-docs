@@ -1,4 +1,4 @@
-   // Create a Boolean flag to coordinate cancelation.
+   // Create a Boolean flag to coordinate cancellation.
    bool canceled = false;
 
    parallel_for(0, 100, [&](int i) {
