@@ -1,25 +1,28 @@
 ---
 title: "Cloud and Web Programming in Microsoft C++"
 description: "Learn more about: Cloud and Web Programming in Microsoft C++"
-ms.date: "05/14/2019"
+ms.date: "11/06/2025"
 ms.topic: "overview"
 ms.custom: intro-overview
 ---
-# Cloud and Web Programming in Microsoft C++
+# Cloud and web programming in Microsoft C++
 
 In C++, you have several options for connecting to the web and the cloud.
 
 ## Microsoft Azure SDKs and REST services
 
-- [Microsoft Azure Storage Client Library for C++](https://azure.github.io/azure-storage-cpp/)
+- [Azure SDK for C++](/azure/developer/cpp/sdk/overview)
 
-  The Azure Storage Client Library for C++ provides a comprehensive API for working with Azure storage, including but not limited to the following abilities:
+  The Azure SDK for C++ provides a set of client libraries that enable your C++ applications to interact seamlessly with Azure services, whether in local or cloud environments. These libraries, built on top of the Azure REST API, offer familiar C++ syntax and implement common cloud patterns such as authentication, logging, and retries. The SDK provides a consistent interface for working with Azure services including:
 
-  - Create, read, delete, and list blob containers, tables, and queues.
-  - Create, read, delete, list and copy blobs plus read and write blob ranges.
-  - Insert, delete, replace, merge, and query entities in an Azure table.
-  - Enqueue and dequeue messages in an Azure queue.
-  - Lazily list containers, blobs, tables, and queues, and lazily query entities
+  - Azure Core
+  - Azure Identity
+  - Azure Attestation
+  - Azure Event Hubs
+  - Azure Storage
+  - Azure Key Vault
+
+  To get started, see [Install and integrate from the Azure SDK for C++](/azure/developer/cpp/sdk/install-and-integrate-the-sdk/).
 
 - The ANSI C99 [Azure IoT Hub SDKs](/azure/iot-hub/iot-hub-devguide-sdks) for Internet of Things enable IoT applications to run on the device or on the backend.
 
@@ -42,7 +45,7 @@ In C++, you have several options for connecting to the web and the cloud.
 
 - [Windows::Web::Http::HttpClient](/uwp/api/windows.web.http.httpclient)
 
-  A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more. For apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web::Http::HttpClient` class.
+  A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more. For apps that target only Universal Windows Platform, use the `Windows::Web::Http::HttpClient` class.
 
 - [IXMLHTTPRequest2 interface](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2)
 
@@ -55,5 +58,5 @@ In C++, you have several options for connecting to the web and the cloud.
 ## See also
 
 [C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)\
-[Microsoft Azure C and C++ Developer Center](https://azure.microsoft.com/develop/cpp/)\
+[Microsoft Azure C++ Developer Center](/azure/developer/cpp/)\
 [Networks and web services (UWP)](/windows/uwp/networking/)
