@@ -46,11 +46,11 @@ Unlike older versions of Visual Studio that have infrequent redistributable upda
 
 ### Latest supported redistributable version
 
-| Architecture | Link | Notes |
-|--|--|--|
-| ARM64 | [https://aka.ms/vc14/vc_redist.arm64.exe](https://aka.ms/vc14/vc_redist.arm64.exe) | Permalink for latest supported ARM64 version |
-| X86 | [https://aka.ms/vc14/vc_redist.x86.exe](https://aka.ms/vc14/vc_redist.x86.exe) | Permalink for latest supported x86 version |
-| X64 | [https://aka.ms/vc14/vc_redist.x64.exe](https://aka.ms/vc14/vc_redist.x64.exe) | Permalink for latest supported x64 version. The X64 Redistributable package contains both ARM64 and X64 binaries. This package makes it easy to install required Visual C++ ARM64 binaries when the X64 Redistributable is installed on an ARM64 device. |
+| Architecture | Version | Link | Notes |
+|--|--|--|--|
+| ARM64 | 14.50.35710.0 | [https://aka.ms/vc14/vc_redist.arm64.exe](https://aka.ms/vc14/vc_redist.arm64.exe) | Permalink for latest supported ARM64 version |
+| X86 | 14.50.35710.0 | [https://aka.ms/vc14/vc_redist.x86.exe](https://aka.ms/vc14/vc_redist.x86.exe) | Permalink for latest supported x86 version |
+| X64 | 14.50.35710.0 | [https://aka.ms/vc14/vc_redist.x64.exe](https://aka.ms/vc14/vc_redist.x64.exe) | Permalink for latest supported x64 version. The X64 Redistributable package contains both ARM64 and X64 binaries. This package makes it easy to install required Visual C++ ARM64 binaries when the X64 Redistributable is installed on an ARM64 device. |
 
 Download other versions, including long term servicing release channel (LTSC) versions, from [my.visualstudio.com](https://my.visualstudio.com/).
 
@@ -78,8 +78,8 @@ The latest version of Visual C++ Redistributable for Visual Studio 2015 is `14.0
 These links download the latest available en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2013.
 You can download other versions and languages from [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from [my.visualstudio.com](https://my.visualstudio.com/).
 
-| Architecture |   Version    | Link |
-| ------------ | :----------: | ------------------------------------------------------: |
+| Architecture | Version | Link |
+|--|--|--|
 | X86          | 12.0.40664.0 | [vcredist_x86.exe](https://aka.ms/highdpimfc2013x86enu) |
 | X64          | 12.0.40664.0 | [vcredist_x64.exe](https://aka.ms/highdpimfc2013x64enu) |
 
@@ -96,7 +96,7 @@ You can download other versions and languages from [Update for Visual C++ 2013 R
 These links download the latest available en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2012 Update 4. You can download other versions and languages from [Microsoft Visual C++ Redistributable Packages for Visual Studio 2012 Update 4](https://www.microsoft.com/download/details.aspx?id=30679) or from [my.visualstudio.com](https://my.visualstudio.com/Downloads?pid=1452).
 
 | Architecture | Version | Link |
-|--|:-:|-:|
+|--|--|--|
 | X86 | 11.0.61030.0 | [en_visual_cpp_redistributable_for_visual_studio_2012_update_4_x86_3161523.exe](https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe) |
 | X64 | 11.0.61030.0 | [en_visual_cpp_redistributable_for_visual_studio_2012_update_4_x64_3161523.exe](https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe) |
 
@@ -106,7 +106,7 @@ These links download the latest available en-US Microsoft Visual C++ Redistribut
 > Visual Studio 2010 Service Pack 1 [reached end of extended support on July 14, 2020](/lifecycle/products/visual-studio-2010)
 
 | Architecture | Version | Link |
-|--|:-:|-:|
+|--|--|--|
 | X86 | 10.0.40219.325 | [vcredist_x86.exe](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe) |
 | X64 | 10.0.40219.325 | [vcredist_x64.exe](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe) |
 
@@ -120,7 +120,7 @@ Download Redistributable files for other languages and architectures from:
 > Visual Studio 2008 Service Pack 1 [reached end of extended support on April 10, 2018](/lifecycle/products/visual-studio-2008)
 
 | Architecture | Version | Link |
-|--|:-:|-:|
+|--|--|--|
 | X86 | 9.0.30729.5677 | [vcredist_x86.exe](https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe) |
 | X64 | 9.0.30729.5677 | [vcredist_x64.exe](https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe) |
 
